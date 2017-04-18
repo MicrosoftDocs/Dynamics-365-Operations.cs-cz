@@ -1,0 +1,43 @@
+# Power BI obsahu pack
+## [Náklady na správu obsahu pack](/dynamics365/operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/operations/supply-chain/toc.json)
+# Předem stanovené ceny
+## [Costing sheet](costing-sheets.md)
+## [Costing version](costing-versions.md)
+## [Simulovat změnu ceny pomocí ocenění verze pro plánované náklady](simulate-cost-changes-costing-version-planned-costs.md)
+# Výpočet nákladů zásob
+## [Upravit hodnotu nákladů na skladě](adjust-hand-inventory-cost-values.md)
+## [Cost object](cost-object.md)
+## [Cost entry](cost-entries.md)
+## [Cost group](cost-groups.md)
+## [Metoda FIFO s fyzickou hodnotou a označením](fifo-physical-value-marking.md)
+## [Include physical value](include-physical-value.md)
+## [Objekt hodnoty zásob](physical-quantity.md)
+## [Inventory close](inventory-close.md)
+## [Datum LIFO s fyzickou hodnotou a označením](lifo-date-physical-value-marking.md)
+## [LIFO with physical value and marking](lifo-physical-value-marking.md)
+## [Moving average](moving-average.md)
+## [Fyzické a finanční aktualizaci](physical-financial-updates.md)
+## [Running average cost price](running-average-cost-price.md)
+## [Tracking running average cost per inventory dimension](track-running-average-cost-per-inventory-dimension.md)
+## [Weighted average date](weighted-average-date.md)
+## [Vážený průměr s fyzickou hodnotou a označením](weighted-average-physical-value-marking.md)
+# Výrobní náklady
+## [Skupina výpočtu Kusovníku](bom-calculation-groups.md)
+## [Běžných zdrojů výrobní odchylka](common-sources-of-production-variances.md)
+## [Nákladová kategorie použitá v TNG postupu](cost-categories-used-production-routings.md)
+## [Nákladová kategorie použitá v řízení a účetnictví projektu správy](cost-categories-used-production-control-project-management-accounting.md)
+## [Production order cost analysis](production-order-cost-analysis.md)
+## [Production order cost estimation](production-order-cost-estimation.md)
+## [Production posting](production-posting.md)
+## [Nastavit produkt, který může být vyrobené nebo získané](manufactured-items-treated-as-purchased-items.md)
+## [Total cost allocation method](methodology-total-cost-allocation.md)
+# Standardní náklady
+## [Kalkulace Kusovníku pomocí standardních nákladů](information-used-bom-calculations-standard-costs.md)
+## [Spravovat aktualizace standardních nákladů](manage-standard-cost-updates.md)
+## [Předpokladem pro převod standardních nákladů](prerequisites-standard-cost-conversion.md)
+## [Standard cost conversion overview](standard-cost-conversion-overview.md)
+## [Aktualizace pevné ceny ve výrobním prostředí](update-standard-costs-manufacturing-environment.md)
+## [Aktualizace pevné ceny pro nové vyrobeného zboží](update-standard-costs-new-manufactured-item.md)
+## [Aktualizace standardní náklady v prostředí bez výroby](update-standard-costs-non-manufacturing-environment.md)
+
+
