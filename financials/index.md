@@ -41,3 +41,5 @@ Vyberte oblast funkce, o které chcete získat informace.
 - [Public sector](public-sector\public-sector-functionality.md) 
 - [Budgeting](budgeting\budgeting-overview.md) 
 
+
+

@@ -55,3 +55,5 @@ Například se dozvíte nejnovější příspěvky:
 ## <a name="elearning-courses"></a>Kurzy e-učení
 Informace o 365 Microsoft Dynamics pro operace školení, viz <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics vzdělávací portál</a>. (vyžaduje účet CustomerSource) 
 
+
+

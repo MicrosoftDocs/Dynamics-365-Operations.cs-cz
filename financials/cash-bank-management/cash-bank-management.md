@@ -27,6 +27,9 @@ ms.lasthandoff: 04/12/2017
 
 # <a name="cash-and-bank-management-home-page"></a>Domovská stránka Pokladna a banka
 
+[!include[banner](../includes/banner.md)]
+
+
 Pomocí nástroje Správa hotovosti a banky spravujte bankovní účty a finanční nástroje právnické osoby, které jsou přidruženy k těmto bankovním účtům. 
 
 Tyto nástroje zahrnují vkladové složenky, šeky, cizí směnky a dlužní úpisy. Dále je možné odsouhlasit bankovní výpisy a vytisknout bankovní data ve standardních sestavách.
@@ -69,4 +72,6 @@ Tyto nástroje zahrnují vkladové složenky, šeky, cizí směnky a dlužní ú
 -   [Scenario: Settle a partial customer payment that has discounts on credit notes](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
 -   [Scenario: Settle a partial customer payment that has multiple discount periods](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
 -   [Scénář: Jednu platbu zákazníka slouží k vyrovnání více faktur, zahrnující více období slev](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+
+
 

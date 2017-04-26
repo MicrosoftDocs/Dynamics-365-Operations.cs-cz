@@ -98,3 +98,5 @@ Můžete navrhovat a rozdávat dotazníky, které slouží ke shromažďování 
 -   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
 
 
+
+
