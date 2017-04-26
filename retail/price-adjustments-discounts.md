@@ -1,0 +1,51 @@
+---
+title: "Úpravy ceny a slevy"
+description: "Tento článek obsahuje informace týkající se úpravy ceny a slevy v maloobchodní commerce v 365 Microsoft Dynamics pro operace."
+author: josaw1
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+audience: Application User
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 15891
+ms.assetid: bab5adf3-ddf0-4c22-a2eb-b4d25b88de99
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: scotttuc
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
+ms.openlocfilehash: 01f249cbdabc6febf23dcd7103d4587cecdaad08
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="price-adjustments-and-discounts"></a>Úpravy ceny a slevy
+
+[!include[banner](includes/banner.md)]
+
+
+Tento článek obsahuje informace týkající se úpravy ceny a slevy v maloobchodní commerce v 365 Microsoft Dynamics pro operace.
+
+V 365 Dynamics pro operace - maloobchod, můžete provádět úpravy cen produktů a umožňuje také nastavit slevy, které jsou použity pro řádek položky nebo transakce v místě prodeje (POS) v prodejní objednávce volání centrum nebo v online objednávky. Úpravy ceny i slevy lze propojit s cenovými skupinami. Pro úpravy ceny a slevy můžete určit jedno počáteční a koncové datum nebo opakované období, kód slevy a další atributy. Úpravy ceny a slevy lze použít pro produkty, varianty nebo kategorie. Pokud je pro produkt platná více než jedna sleva, odběratel může obdržet buď jednu ze slev nebo kombinovanou slevu, a to v závislosti na konfiguraci slevy. Dynamics 365 pro operace automaticky platí sleva nebo kombinace slev, která nabízí nejlepší cenu pro zákazníka. Při nastavení úpravy ceny nebo slevy je nutné zkontrolovat, zda jsou cenové skupiny přiřazeny pro správné kanály, katalogy, umístění nebo věrnostní programy, u kterých mají být použity slevy. Dále, pokud potřebujete automaticky vygenerovat ID slevy, můžete před definováním nové slevy nebo úpravy ceny nastavit číselné řady na stránce **Parametry maloobchodu**. **Poznámka:** Úpravu ceny nebo slevu můžete odstranit. Dojde však ke ztrátě statistických údajů.
+
+### <a name="types-of-discounts"></a>Typy slev
+
+Existují čtyři typy maloobchodních slev:
+
+-   **Jednoduchá sleva** – jedno procento nebo částka.
+-   **Množstevní sleva** – sleva, která se použije při zakoupení dvou nebo více produktů.
+-   **Kombinační sleva** – sleva je uplatněna v případě, že se zakoupí určitá kombinace položek.
+-   **Mezní sleva** – sleva, která se použije, když celková částka transakce je větší než zadaná částka.
+
+Úpravy ceny i slevy lze propojit s cenovými skupinami. Skupiny cen lze pak přidružit s kanály, katalogy, umístěním a věrnostními programy.
+
+
+
+

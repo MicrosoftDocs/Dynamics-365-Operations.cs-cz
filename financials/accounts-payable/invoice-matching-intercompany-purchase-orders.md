@@ -1,0 +1,75 @@
+---
+title: "Párování faktur a mezipodnikové nákupní objednávky"
+description: "Nakupující právnická osoba, která se účastní mezipodnikové obchodní transakce, je pravděpodobně nastavena pro použití párování faktur závazků. V tomto případě požadavky zaúčtování pro párování mezipodnikových obchodních účtů a účtů závazků je třeba splnit dříve, než lze zaúčtovat mezipodnikové faktury dodavatele."
+author: twheeloc
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: PurchLineMatchingPolicy
+audience: Application User
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 3101
+ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf
+ms.search.region: Global
+ms.author: abruer
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
+ms.openlocfilehash: 45d0b24ed0a79176803a6efefc216f7e30fec86c
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="invoice-matching-and-intercompany-purchase-orders"></a>Párování faktur a mezipodnikové nákupní objednávky
+
+[!include[banner](../includes/banner.md)]
+
+
+Nakupující právnická osoba, která se účastní mezipodnikové obchodní transakce, je pravděpodobně nastavena pro použití párování faktur závazků. V tomto případě požadavky zaúčtování pro párování mezipodnikových obchodních účtů a účtů závazků je třeba splnit dříve, než lze zaúčtovat mezipodnikové faktury dodavatele.
+
+V příkladech v tomto tématu je pro mezipodnikový obchod použito toto nastavení:
+-   Fabrikam Purchase je nakupující právnická osoba.
+-   Fabrikam Sales je prodávající právnická osoba.
+-   Ve společnosti Fabrikam Sales existuje odběratel 4020.
+-   Ve společnosti Fabrikam Purchase existuje dodavatel 3024.
+-   V nákupu Fabrikam mezipodnikových informací je určeno pro dodavatele 3024. Prodejů společnost Fabrikam je zadán jako zákazník společnosti a 4020 odběratel je určen jako účet odběratele, který odpovídá právnická osoba Fabrikam nákupní.
+-   Prodeje společnosti Ramo mezipodnikových informací je určeno pro odběratele 4020. Zadán jako dodavatele společnosti Fabrikam nákupní a 3024 dodavatel je zadán jako účet dodavatele, který odpovídá právnické prodejů společnost Fabrikam.
+
+V těchto příkladech je pro společnost Fabrikam Purchase použito následující nastavení párování faktur závazků:
+-   Na stránce Parametry závazků je zvolena možnost Povolit ověření párování faktur.
+-   Na stránce Parametry závazků je v poli Zaúčtovat fakturu s odchylkami zvolena možnost Vyžadovat schválení.
+-   Procentuální tolerance ceny u právnických osob činí 2 procenta.
+
+## <a name="example-price-matching-and-intercompany-trade"></a> Příklad: Párování cen a mezipodnikový obchod
+Čisté částky na mezipodnikové faktuře dodavatele a mezipodnikové faktuře odběratele se musí shodovat. Tento požadavek má větší důležitost než všechna použitá schválení párování faktur a všechny použité procentuální hodnoty tolerance cen. Postupujte například podle těchto kroků.
+1.  V nákupu Fabrikam vytvoření prodejní objednávky pro zákazníka 4020 SO888. Mezipodnikové nákupní objednávky, kterou ICPO222 je automaticky vytvořena dodavatele 3024 Fabrikam nákupní a prodejní objednávky v prodejní společnosti Fabrikam je automaticky vytvořena ICSO888.
+2.  Ve společnosti Fabrikam Sales zaregistrujte fakt, že byly přijaty položky a zaúčtován dodací list . Stav objednávky ICSO888 se změní na Dodáno. Stav objednávky ICPO222 se změní na Přijato.
+3.  Ve společnosti Fabrikam Sales aktualizujte fakturu pro objednávku ICSO888. Jednotková cena je 0,45 a bylo aktualizováno 100 položek.
+4.  Ve společnosti Fabrikam Purchase vytvořte fakturu pro objednávku ICPO222. Změňte čistou cenu z hodnoty 45,00 na hodnotu 54,00 (simulace omylu). Zobrazí se ikona upozorňující na skutečnost, že cena překročila přípustnou 2procentní toleranci.
+5.  Na stránce Podrobnosti o párování faktur zvolte možnost pro schválení zaúčtování s odlišnostmi v párování. Na stránce Faktura dodavatele klikněte na tlačítko OK. Pokud faktura dodavatele nebyla mezipodnikovou fakturou dodavatele, proběhne zaúčtování úspěšně. Nicméně vzhledem k tomu, že pracujete s mezipodnikovou fakturou dodavatele, zaúčtování neproběhne úspěšně. U mezipodnikového obchodu se musí celková fakturovaná částka na mezipodnikové prodejní objednávce shodovat s celkovou fakturovanou částkou na odpovídající mezipodnikové nákupní objednávce. Tento problém je nutné vyřešit tak, že opravíte čistou cenu na faktuře zpět na výchozí částku 45,00.
+
+## <a name="example-quantity-matching-with-intercompany-trade"></a> Příklad: Párování množství v rámci mezipodnikového obchodu
+Množství na mezipodnikové nákupní objednávce a na mezipodnikové prodejní objednávce se musí shodovat. Tento požadavek má větší důležitost než všechna použitá schválení párování faktur. V tomto příkladu je pro mezipodnikový obchod použito toto dodatečné nastavení:
+-   Ve společnosti Fabrikam Purchase jsou zásady akcí pro nákupní objednávku pro dodavatele 3024 nastaveny na automatické zaúčtování původní faktury odběratele i mezipodnikové faktury dodavatele.
+
+V tomto příkladu je pro společnost Fabrikam Purchase použito následující dodatečné nastavení pro párování faktur závazků:
+-   Na stránce Skupiny modelů položek pro skupinu modelů, která je použita položkou B-R14, je zvolena možnost Přijetí požadavků.
+-   Množství na skladě pro položku B-R14 je 0 (nula).
+
+Postupujte například podle těchto kroků.
+1.  V nákupu Fabrikam vytvoření prodejní objednávky pro zákazníka 4020 SO999. Objednávka obsahuje jednu položku řádku: 100 (položka B R14) baterie na jednotkovou cenu 1.00 každý. Ve společnosti Fabrikam Purchase bude automaticky vytvořena mezipodniková nákupní objednávka ICPO333 pro dodavatele 3024 a ve společnosti Fabrikam Sales bude automaticky vytvořena prodejní objednávka ICSO999.
+2.  Ve společnosti Fabrikam Sales aktualizujte fakturu pro objednávku ICSO999. Zaúčtování skončí neúspěchem, protože položka není na skladě a nebyla dosud přijata. Z tohoto důvodu nelze finanční informace aktualizovat.
+3.  Ve společnosti Fabrikam Sales zaregistrujte přijetí a zaúčtujte dodací list pro objednávku ICSO999. Příjemka produktu pro objednávku ICPO333 se automaticky zaúčtuje ve společnosti Fabrikam Purchase. Ve společnosti Fabrikam Purchase se přijaté množství pro položku B-R14 změní na hodnotu 100.
+4.  Ve společnosti Fabrikam Sales aktualizujte fakturu pro objednávku ICSO999. Zaúčtování proběhne u obou právnických osob úspěšně. Ve společnosti Fabrikam Purchase se zakoupené množství pro položku B-R14 změní na hodnotu 100. 
+
+
+
+
+
+

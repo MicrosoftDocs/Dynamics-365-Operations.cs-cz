@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="125-percent-reducing-balance-depreciation"></a>Degresivní odpis 125 procent
 
+[!include[banner](../includes/banner.md)]
+
+
 Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 125 procent“.
 
 Pokud nastavujete odpisový profil dlouhodobého majetku a zaškrtnete volbu **Degresivní 125 %** v poli **Metoda** na stránce **Odpisové profily**, dlouhodobý majetek, který je přiřazen k tomuto odpisovému profilu, bude odpisován o stejný procentní podíl v každém období odpisu. Tato procentuální hodnota se vypočte na základě životnosti majetku. Když má například majetek životnost pět let, procentuální hodnota se vypočte jako 25 procent (125 % ÷ 5).
@@ -82,5 +85,7 @@ Metoda degresivního odepisování 125 % vydělí 125 procent počtem roků živ
 
 > [!NOTE] 
 > Obvykle, když částka, která se vypočítá pomocí 125 % degresivní metody odpisu se stává menší než částka, kterou by vypočítat pomocí lineární metody nedojde k převodu metody přímou čáru pro zbývající životnost.
+
+
 
 
