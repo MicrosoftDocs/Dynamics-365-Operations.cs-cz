@@ -1,6 +1,6 @@
 ---
 title: "Přidělování dat plánování rozpočtu"
-description: "Tento článek popisuje různé metody přidělení, které jsou k dispozici v Microsoft Dynamics 365 pro operace a jak je lze použít."
+description: "Tento článek popisuje různé metody přidělení, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Operations, a jejich použití."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -31,15 +31,15 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje různé metody přidělení, které jsou k dispozici v Microsoft Dynamics 365 pro operace a jak je lze použít.  
+Tento článek popisuje různé metody přidělení, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Operations, a jejich použití.  
 
 Data lze rozdělit do plánu rozpočtu různými způsoby za účelem přesného zobrazení předpokládaných částek.
 
 ## <a name="allocation-methods"></a>Metody přidělení
 Tři metody přidělení (Přidělit napříč obdobími, Přidělit k dimenzím a Použít pravidla přidělení hlavní knihy) umožňují vytvořit řádky plánu rozpočtu, které jsou založeny na řádcích ve stejném plánu rozpočtu. Tři další metody (Agregovat, Rozdělit a Kopírovat z plánu rozpočtu) umožňují vytvořit řádky plánu rozpočtu v jiných plánech rozpočtu. U všech šesti metod přidělení je třeba zadat cílový scénář. Cílový scénář může být buď stejný jako zdrojový scénář, nebo odlišný od zdrojového scénáře. Dále můžete určit, zda budou nové řádky připojeny k plánu rozpočtu, nebo nahradí aktuální řádky plánu rozpočtu.
 
-[![AllocateAcrossPeriods](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)<ph id="t1">
-</ph>**přidělit napříč obdobími** – kategorie přidělení období se používá k přidělení řádků plánu rozpočtu ze zdrojového scénáře plánu rozpočtu v období v cílovém scénáři. Zdrojová částka je přiřazena k více řádkům v cílovém scénáři na základě procenta a data, které jsou definované v rámci kategorie přidělení období.         
+[![AllocateAcrossPeriods](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
+**Přidělit napříč obdobími** – kategorie přidělení období slouží k přidělení řádků plánu rozpočtu ze zdrojového scénáře plánu rozpočtu napříč obdobími k cílovému scénáři. Zdrojová částka je přiřazena k více řádkům v cílovém scénáři na základě procenta a data, které jsou definované v rámci kategorie přidělení období.         
 
 [![AllocateToDimensions](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
 **Přidělit k dimenzím** – řádky plánu rozpočtu jsou přiřazeny ze zdrojového scénáře plánování rozpočtu k jednomu nebo více řádkům v cílovém scénáři na základě procent a finančních dimenzí, které jsou definovány ve vybrané podmínce přidělení rozpočtu.           
@@ -59,7 +59,7 @@ Tři metody přidělení (Přidělit napříč obdobími, Přidělit k dimenzím
 ## <a name="using-allocation-methods-in-a-budget-plan"></a>Použití metod přidělení v plánu rozpočtu
 Pokud chcete provést přidělení na stránce plánu rozpočtu, vyberte řádky k přidělení a klikněte na tlačítko **Přidělit rozpočet**.
 
-[![AllocateBudgetButton](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
+[![Tlačítko přidělení rozpočtu](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
 
 Dále vyberte metodu přidělení. Zbývající pole se poté nastaví na základě metody, kterou jste vybrali. Tato pole zahrnují zdrojová a cílová data plánu rozpočtu a možnosti, které umožňují znásobit zdroj určeným koeficientem při vytváření cílových částek za účelem usnadnění hromadných úprav. Můžete také nastavit možnost **Připojit k plánu**. Výběrem možnosti **Ne** nahraďte existující řádky plánu rozpočtu, nebo výběrem možnosti **Ano** zachovejte existující řádky plánu rozpočtu a přidejte nové řádky pro přidělené částky.
 
@@ -72,7 +72,7 @@ Dále vytvořte přidělení fáze na stránce **Konfigurace plánování rozpo�
 
 Nakonec přidejte automatizovanou úlohu pro přidělení fáze plánování rozpočtu v požadované fázi workflowu. V následujícím příkladu byla do workflowu vložena dvě přidělení fází plánování rozpočtu (červený okraj).
 
-[![BudgetPlanningStageAllocations](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+[![Přidělení fází plánování rozpočtu](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
 
 
 

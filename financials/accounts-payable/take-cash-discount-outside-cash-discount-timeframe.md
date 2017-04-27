@@ -1,5 +1,5 @@
 ---
-title: "Přijmout platební slevy mimo období platební slevy"
+title: "Provedení platební slevy mimo období platební slevy"
 description: "Tento článek obsahuje dva scénáře, které zobrazují způsob využití platební slevy i v případě, že bude platba provedena mimo období platební slevy."
 author: twheeloc
 manager: AnnBe
@@ -26,29 +26,29 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Přijmout platební slevy mimo období platební slevy
+# <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Provedení platební slevy mimo období platební slevy
 
 [!include[banner](../includes/banner.md)]
 
 
 Tento článek obsahuje dva scénáře, které zobrazují způsob využití platební slevy i v případě, že bude platba provedena mimo období platební slevy.
 
-Na dne 28. dubna vytvoří faktury pro dodavatele 3052 2,000.00. Faktura má platební sleva 1 % Pokud je faktura zaplacena do 14 dnů.
+28. června Anežka vytvoří fakturu na 2 000,00 pro dodavatele 3052. Faktura obsahuje platební slevu 1 %, pokud je splacena do 14 dní.
 
 ## <a name="use-cash-discount-option--always"></a>Použití možnosti platební slevy = vždy
 April vytvoří platbu k 1. červenci, které následuje po datu slevy. April otevře stránku **Vyrovnat transakce** pro zobrazení transakcí, které lze vyrovnat. 
 
-April označí fakturu k platbě. Není možná žádná platební sleva, protože je platba provedena po ukončení datu slevy. Dodavatele však poskytl dne schválení přesto přijmout platební slevy. Proto dne změní hodnotu **použít platební slevu** na **vždy**.
+April označí fakturu k platbě. Není možná žádná platební sleva, protože je platba provedena po ukončení datu slevy. Dodavatele však poskytl Anežce schválení přesto provést platební slevu. Proto změní hodnotu v poli **Použít platební slevu** na **vždy**.
 
 | Označit     | Použít platební slevu | Doklad   | Účet | Datum platební slevy | Datum splatnosti  | Faktura | Částka v měně transakce | Měna | Částka k vyrovnání |
 |----------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
-| Vybrané | Vždy            | Fakt-10030 | 3052    | 6/28/2015          | 7/12/2015 | 10030   | -2 000,00                      | USD      | -1 980,00        |
+| Vybrané | Vždy            | Fakt-10030 | 3052    | 28. 6. 2015          | 12. 7. 2015 | 10030   | -2 000,00                      | USD      | -1 980,00        |
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat transakce**.
 
 |                              |           |
 |------------------------------|-----------|
-| Datum platební slevy           | 7/12/2015 |
+| Datum platební slevy           | 12. 7. 2015 |
 | Částka platební slevy         | -20,00    |
 | Použít platební slevu            | Vždy    |
 | Přijatá platební sleva          | 0,00      |
@@ -59,14 +59,14 @@ Pokud byla zaúčtována faktura a platba, platební sleva stále se stále mů�
 
 | Označit                     | Použít platební slevu | Doklad   | Účet | Datum platební slevy | Datum splatnosti  | Faktura | Částka v měně transakce | Měna | Částka k vyrovnání |
 |--------------------------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
-| Vybrané a zvýrazněné | Normální            | Fakt-10030 | 3052    | 6/28/2015          | 7/12/2015 | 10030   | -2 000,00                      | USD      | -1 980,00        |
+| Vybrané a zvýrazněné | Normální            | Fakt-10030 | 3052    | 28. 6. 2015          | 12. 7. 2015 | 10030   | -2 000,00                      | USD      | -1 980,00        |
 | Vybrané                 | Normální            | APP-10030 | 3052    | 7/15/2015          | 7/15/2015 |         | 500,00                         | USD      | 500,00           |
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**. Částka slevy, která je přijatá, je 20,00, protože částka k vyrovnání faktury je výchozí částka, 1 980,00.
 
 |                              |           |
 |------------------------------|-----------|
-| Datum platební slevy           | 7/12/2015 |
+| Datum platební slevy           | 12. 7. 2015 |
 | Částka platební slevy         | -20,00    |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 0,00      |
@@ -76,14 +76,14 @@ April aktualizuje hodnoty v poli **Částka k vyrovnání** na **500,00**. Hodno
 
 | Označit                     | Použít platební slevu | Doklad   | Účet | Datum      | Datum splatnosti  | Faktura | Částka v měně transakce | Měna | Částka k vyrovnání |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Vybrané a zvýrazněné | Normální            | Fakt-10030 | 3052    | 6/28/2015 | 7/12/2015 | 10030   | 2 000,00                       | USD      | -500,00          |
+| Vybrané a zvýrazněné | Normální            | Fakt-10030 | 3052    | 28. 6. 2015 | 12. 7. 2015 | 10030   | 2 000,00                       | USD      | -500,00          |
 | Vybrané                 | Normální            | APP-10030 | 3052    | 7/15/2015 | 7/15/2015 |         | 500,00                         | USD      | 500,00           |
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**. Hodnota v poli **Částka platební slevy k přijetí** je **5,05**, protože částka k vyrovnání faktury byla změněna na částku platby 500,00.
 
 |                              |           |
 |------------------------------|-----------|
-| Datum platební slevy           | 7/12/2015 |
+| Datum platební slevy           | 12. 7. 2015 |
 | Částka platební slevy         | -20,00    |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 0,00      |

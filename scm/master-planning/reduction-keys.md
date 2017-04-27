@@ -42,7 +42,7 @@ Tento příklad ukazuje, jak redukční klíč snižuje požadavky na prognózu 
 1.  Na stránce **Redukční klíče** nastavte následující řádky.
     | Vrácená hotovost | Jednotka  | Procento |
     |--------|-------|---------|
-    | 1      | Měsíc | 1597     |
+    | 1      | Měsíc | 100     |
     | 2      | Měsíc | 75      |
     | 3      | Měsíc | 50      |
     | 4      | Měsíc | 25      |
@@ -61,7 +61,7 @@ Pokud spustíte plánování prognózy 1. ledna, požadavky prognózy poptávky 
 | Duben                | 750                       |
 | Květen až prosinec | 1 000                     |
 
-## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Příklad 2: Redukční klíč transakce prognózy Metoda redukce
+## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Příklad 2: Transakce – princip redukce prognózy redukčního klíče
 Tento příklad ukazuje, jak jsou skutečné objednávky prováděné v období definovány podle redukčního klíče pro snížení požadavků prognózy poptávky.
 
 -   Na stránce **Hlavní plány**v poli **Metoda redukce** vyberte **Transakce – redukční klíč**.
@@ -85,7 +85,7 @@ Pokud použijete stejnou prognózu poptávky pro 1000 kusů za měsíc, následu
 | Duben                | 881                       |
 | Květen až prosinec | 1 000                     |
 
-## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Příklad 3: Dynamické období transakce prognózy Metoda redukce
+## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Příklad 3: Transakce – princip redukce prognózy dynamického období
 Ve většině případů jsou systémy nastaveny tak, aby transakce snižovaly prognózu poptávky v rámci konkrétních obdobích prognózy: týdny, měsíce a tak dále. Tato období jsou definována v redukčním klíči. Čas mezi dvěma řádky však prognózy poptávky může také *vyjadřovat* období.
 
 1.  Vytvořte prognózu poptávky pro následující data a množství.
@@ -100,7 +100,7 @@ Ve většině případů jsou systémy nastaveny tak, aby transakce snižovaly p
     | Datum                             | Množství prodejní objednávky |
     |----------------------------------|----------------------|
     | 15. prosince v minulém roce | 500                  |
-    | 3. leden                        | 1597                  |
+    | 3. leden                        | 100                  |
     | 10. leden                       | 200                  |
 
 Prognóza bude snížena následujícím způsobem:
@@ -132,7 +132,7 @@ Zde je souhrn snížení **Transakce – dynamické období**:
 <a name="see-also"></a>Viz také
 --------
 
-[Master plans](master-plans.md)
+[Hlavní plány](master-plans.md)
 
 
 

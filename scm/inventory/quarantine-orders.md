@@ -32,9 +32,9 @@ ms.lasthandoff: 03/31/2017
 
 Tento článek popisuje použití karanténních příkazů k blokování zásob. 
 
-Karanténní příkazy lze použít k blokování zásob. Můžete například umístit do karantény položky z důvodů kontroly kvality. Sklad, který byl umístěn do karantény přenesena do karanténního skladu. **Poznámka:** Pokud používáte rozšířené procesy správy skladu (v modulu Řízení skladu), zpracování karanténní objednávky se používá pouze pro vrácení prodejní objednávky.
+Karanténní příkazy lze použít k blokování zásob. Můžete například chtít umístit do karantény položky z důvodů kontroly kvality. Sklad, který byl umístěn do karantény, je převeden do karanténního skladu. **Poznámka:** Pokud používáte rozšířené procesy správy skladu (v modulu Řízení skladu), zpracování karanténní objednávky se používá pouze pro vrácení prodejní objednávky.
 
-## <a name="quarantine-onhand-inventory-items"></a>Karanténní skladových položek množství na skladě
+## <a name="quarantine-onhand-inventory-items"></a>Karanténní zásoby položek na skladě
 Při umístění položek do karantény můžete vytvořit karanténní příkazy ručně nebo systém nastavit tak, aby vytvářel karanténní příkazy automaticky při zpracování příchozích. Pokud chcete automaticky vytvořit karanténní příkazy, zaškrtněte možnost **Řízení karantény** na kartě **Zásady zásob** na stránce **Skupiny modelů položek**. Je nutné také určit výchozí karanténní sklad v poli **Karanténní sklad** pro přijímací sklady. Když jsou zásoby fyzicky na skladě zaznamenány v nákupní objednávce nebo výrobní zakázce, položky umístěné do karantény jsou automaticky přesunuty do karanténního skladu v aplikaci Microsoft Dynamics 365 for Operations. K tomuto pohybu dochází, pokud se změní stav karanténního příkazu na **Zahájeno**. Při ručním vytváření karanténních příkazů, není požadováno, aby v přidružené skupině modelů položek položka byla nastavena pro řízení karantény. Za tímto účelem je nutné zadat zásob na skladě, která mají být umístěny do karantény, a karanténní sklad, který má být použit. Můžete použít stavy karanténních příkazů pro usnadnění plánování procesu.
 
 ## <a name="quarantine-order-statuses"></a>Stavy karanténního příkazu
@@ -67,7 +67,7 @@ Jako součást procesu karanténní objednávky je možné zásoby vyřadit. Př
 <a name="see-also"></a>Viz také
 --------
 
-[Inventory blocking](inventory-blocking.md)
+[Blokování zásob](inventory-blocking.md)
 
 
 

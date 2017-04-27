@@ -1,5 +1,5 @@
 ---
-title: "Přehled lean manufacturing"
+title: "Lean manufacturing - přehled"
 description: "Tento článek poskytuje přehled a popis funkcí lean manufacturing v aplikaci Microsoft Dynamics AX."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="lean-manufacturing-overview"></a>Přehled lean manufacturing
+# <a name="lean-manufacturing-overview"></a>Lean manufacturing - přehled
 
 [!include[banner](../includes/banner.md)]
 
@@ -52,7 +52,7 @@ Základ pro lean manufacturing lze vytvořit modelováním výroby a logistický
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a> Použití kanbanů k signalizaci požadavků poptávky
 U poptávkového systému se zboží vyrobí jen tehdy, když je potřeba. Tento postup zkracuje dodací lhůtu a omezuje nadbytečné množství zásob. Kanbany můžete použít k plánování, sledování a zpracování požadavků, které jsou založeny na výrobních tocích. Kanbanové prostředí vytvoříte tak, že vytvoříte kanbanová pravidla, která definují, kdy se kanbany vytváří a jak jsou splněny požadavky. Můžete vytvářet dva typy kanbanových pravidel. Výrobní pravidla vytváří kanbanové úlohy procesu a odvolací kanbanová pravidla vytváří kanbanové úlohy převodu. Můžete nastavit následující strategie doplnění:
--   Kanbanová pravidla **Pevné množství** se vztahují k pevnému počtu manipulačních jednotek, což znamená, že počet aktivních kanbanů je konstantní. Vždy, když jsou spotřebovány všechny výrobky z Kanban a manipulačních jednotek jsou ručně vyprázdnit, je vytvořen nový kanban stejného typu. Při vytváření pevné množství kanban pravidla, můžete vypočítat optimální kanbanové množství a množství produktů, které jsou používány. Výpočet zohledňuje prognózy, skutečnou poptávku z otevřených objednávek, dobu realizace doplňování položek a historické požadavky.
+-   Kanbanová pravidla **Pevné množství** se vztahují k pevnému počtu manipulačních jednotek, což znamená, že počet aktivních kanbanů je konstantní. Vždy, když jsou spotřebovány všechny výrobky z Kanban a manipulační jednotky jsou ručně vyprázdněny, je vytvořen nový kanban stejného typu. Při vytváření pravidel pevného množství kanban můžete vypočítat optimální kanbanová množství a množství produktů, které jsou používány. Výpočet zohledňuje prognózy, skutečnou poptávku z otevřených objednávek, dobu realizace doplňování položek a historické požadavky.
 -   Kanbanová pravidla **Plánováno** doplňují požadavky, které jsou vypočítány hlavním plánováním. Hlavní plánování generuje plánované kanbany, které mohou být potvrzeny na kanbany.
 -   Kanbanová pravidla **Událost** doplňují požadavky, které pocházejí z řádků prodejní objednávky, řádků výrobního kusovníku, řádků kanbanu nebo nastaveného skladového minima. Při vygenerování se kanbany události propojí s požadavky na zdroj.
 

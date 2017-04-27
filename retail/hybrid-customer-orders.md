@@ -1,6 +1,6 @@
 ---
-title: "Hybrid objednávky zákazníka"
-description: "Objednávka zákazníka hybrid je jediné objednávky, která obsahuje produkty, které lze přenášet z úložiště zákazníkem, jakož i výrobky, které budou dodány později nebo vyzvednutí."
+title: "Hybridní objednávky odběratele"
+description: "Hybridní objednávka odběratele je jedna objednávka, která obsahuje produkty, které si může zákazník odnést z obchodu, jakož i výrobky, které budou dodány nebo vyzvednuty později."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,24 +25,24 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="hybrid-customer-orders"></a>Hybrid objednávky zákazníka
+# <a name="hybrid-customer-orders"></a>Hybridní objednávky odběratele
 
 [!include[banner](includes/banner.md)]
 
 
-Objednávka zákazníka hybrid je jediné objednávky, která obsahuje produkty, které lze přenášet z úložiště zákazníkem, jakož i výrobky, které budou dodány později nebo vyzvednutí.
+Hybridní objednávka odběratele je jedna objednávka, která obsahuje produkty, které si může zákazník odnést z obchodu, jakož i výrobky, které budou dodány nebo vyzvednuty později.
 
-V 365 Microsoft Dynamics pro operace - maloobchod, můžete vybrat buď provést všechny produkty nebo provádět vybrané produkty pro objednávky zákazníka. Produkt, který řádky, které jsou označeny jako provádět automaticky fakturovaných po vytvoření objednávky, podobně to je stejné pro objednávky, které má být vydáno až po vytvoření objednávky. Splatná částka hybrid objednávky je stanovena přidáním procento zálohy na vyskladnění a řádky dodávky výrobku se provádí řádky v plné výši. Pro objednávky hybridní systém přepínat mezi režimem objednávky zákazníka a převzetím takto:
+V 365 Microsoft Dynamics 365 for Operations - Retail můžete vybrat buď realizaci všech produktů nebo vybraných produkty pro objednávku zákazníka. Řádky produktu označené jako řádky k provedení, jsou automaticky fakturovány po vytvoření objednávky. Podobně to platí pro objednávku, která má být vyzvednuta po vytvoření objednávky. Částka splatná u hybridních objednávek je určena přidáním procenta zálohy k řádkám produktu pro vyskladnění a dodávku s plnou částkou prováděcích linek. U hybridních objednávek systém přepíná mezi režimem objednávky zákazníka a režimem Cash and Carry takto:
 
--   Pokud mají všechny produkty v košíku **provádět dodávky**, pořadí bude zpracováván jako transakce převzetím.
--   Pokud některé nebo všechny řádky v košíku jsou nastaven na hodnotu **vybrat** nebo **expedice dodávky**, pořadí bude zpracováván jako transakce objednávky zákazníka.
+-   Pokud mají všechny produkty v košíku hodnotu **Provádět dodávku**, objednávka bude zpracovávána jako transakce Cash and Carry.
+-   Pokud některé nebo všechny řádky v košíku jsou nastaveny na hodnotu **Vybrat** nebo **Expedice dodávky**, objednávka bude zpracovávána jako transakce objednávky zákazníka.
 
-Pokud je vybrán řádek nákupního košíku a **zvolené vyskladnění**, **loď vybrána**, nebo **provádět vybrané** je zaškrtnuto, pouze konkrétní vozík řádek je nastavena s tuto metodu doručení. V takovém případě po proudu toku operace bude pokračovat obvyklým způsobem. Však-li **zvolené vyskladnění**, **loď vybrána**, nebo **provádět vybrané** je vybrán bez řádku nákupního košíku je vybrána, nový otevře stránku, která obsahuje seznam všech řádků nákupního košíku. Na této obrazovce můžete vybrat více řádků najednou k nastavení způsobu dodání. Při použití této metody pro výběr řádků, bude přepsána předchozí metody doručení, který byl přiřazen k řádku.
+Pokud je vybrán řádek nákupního košíku a je vybraná možnost **Zvolené vyskladnění**, **Vybraná expedice**, nebo **Vyvézt vybrané**, je s touto metodu doručení nastaven pouze konkrétní řádek košíku. V takovém případě bude tok operace pokračovat obvyklým způsobem. Pokud jsou ale možnost **Zvolené vyskladnění**, **Vybraná expedice**, nebo **Vyvézt vybrané** vybrány bez výběru řádku košíku, otevře se nová stránka se seznamem všech řádků košíku. Na této obrazovce můžete vybrat více řádků najednou k nastavení způsobu dodání. Při použití této metody pro výběr řádků bude přepsána jakákoli předchozí metoda doručení, která byla přiřazena k řádku.
 
 <a name="see-also"></a>Viz také
 --------
 
-[Přehled objednávek zákazníka](customer-orders-overview.md)
+[Přehled objednávek odběratele](customer-orders-overview.md)
 
 
 

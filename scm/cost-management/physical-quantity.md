@@ -1,5 +1,5 @@
 ---
-title: "Objekt hodnoty zásob"
+title: "Hodnoty objektu zásob"
 description: "Tento článek obsahuje informace o výpočtu hodnot objektu zásob."
 author: YuyuScheller
 manager: AnnBe
@@ -27,14 +27,14 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="inventory-object-values"></a>Objekt hodnoty zásob
+# <a name="inventory-object-values"></a>Hodnoty objektu zásob
 
 Tento článek obsahuje informace o výpočtu hodnot objektu zásob. 
 
-Nová funkce, která je s názvem ** fyzické množství ** umožňuje zobrazit hodnoty zásob konkrétní objekt. Nákladový objekt představuje úroveň entity, kde bude probíhat účtování zásob. Další informace o nákladových objektech naleznete v tématu [Nákladové objekty](cost-object.md). Zobrazit hodnoty zásob konkrétní objekt, klepněte na tlačítko **fyzické množství** v **objekt** stránky. Zde je způsob výpočtu hodnoty zásob objektu: objekt Inventory. Hodnota = náklady objektu. Průměrná pořizovací cena x skladového objektu. Množství následující příklad ukazuje způsob výpočtu hodnoty zásob objektu a objekt náklady. U položky A jsou registrovány dvě události příjemky produktu:
+Nová funkce nazvaná ** fyzické množství ** umožňuje zobrazit hodnoty určitého objektu zásob. Nákladový objekt představuje úroveň entity, kde bude probíhat účtování zásob. Další informace o nákladových objektech naleznete v tématu [Nákladové objekty](cost-object.md). Pokud chcete zobrazit hodnoty konkrétního objektu zásob, klikněte na tlačítko **Fyzické množství** na stránce **Objekt nákladů**. Toto je postup, jak se počítá hodnota objektu zásob: Objekt zásob.Hodnota = Nákladový objekt.Průměrné náklady na jednotku x Objekt zásob.Množství Následující příklad ukazuje způsob výpočtu hodnoty objektu zásob a nákladového objektu. U položky A jsou registrovány dvě události příjemky produktu:
 
--   Příjemka produktu 1: množství = 100 pcs., částka = $1,000.00 webu = 1, sklad = 11, číslo dávky. = B1
--   Příjemka produktu 2: množství = 50 pcs., částka = $800.00 webu = 1, sklad = 11, číslo dávky. = B2
+-   Příjemka produktu 1: Množství = 100 kusů., Množství = 1 000,00 Kč, Pracoviště = 1, Sklad = 11, Č. dávky = B1
+-   Příjemka produktu 2: Množství = 50 kusů., Množství = 800,00 Kč, Pracoviště = 1, Sklad = 11, Č. dávky = B2
 
 Následující tabulka zobrazuje výsledek výpočtu nákladového objektu. Výsledky lze zobrazit na stránce **Nákladový objekt**.
 
@@ -106,7 +106,7 @@ Následující tabulka zobrazuje výsledek výpočtu objektu zásob. Výsledky l
 <td>1</td>
 <td>11</td>
 <td>B1</td>
-<td>1597</td>
+<td>100</td>
 <td>Ks</td>
 <td><p>1 200,00 Kč.</p></td>
 <td><p>12,00 Kč</p></td>
@@ -130,10 +130,10 @@ Následující tabulka zobrazuje výsledek výpočtu objektu zásob. Výsledky l
 <a name="see-also"></a>Viz také
 --------
 
-[Cost objects](cost-object.md)
+[Nákladové objekty](cost-object.md)
 
-[Cost entries](cost-entries.md)
+[Položky nákladů](cost-entries.md)
 
-[Novinky a změny v aplikaci Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Co je nového a co se změnilo v aplikaci Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
 

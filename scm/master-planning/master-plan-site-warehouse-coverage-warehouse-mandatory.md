@@ -1,5 +1,5 @@
 ---
-title: "Hlavní plánování disponibility pracoviště a sklad, sklad povinné"
+title: "Hlavní plánování pro disponibilitu pracoviště a skladu, sklad je povinný"
 description: "Toto téma popisuje, jak je plánována položka, která má pracoviště a sklad, jako dimenze disponibility. Dimenze skladu je povinná."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="master-planning-for-site-and-warehouse-coverage-warehouse-mandatory"></a>Hlavní plánování disponibility pracoviště a sklad, sklad povinné
+# <a name="master-planning-for-site-and-warehouse-coverage-warehouse-mandatory"></a>Hlavní plánování pro disponibilitu pracoviště a skladu, sklad je povinný
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,19 +41,19 @@ Pro tento scénář hlavního plánování platí následující podmínky:
 -   Dimenze pracoviště a skladová dimenze není nastavena pro plánování disponibility. Pro disponibilitu lze nastavit také další dimenze. Ty však nejsou ovlivněny funkcí více pracovišť.
 
 Následující obrázek ilustruje postup hlavního plánování. V obrázku jsou odkazy na následující parametry (v popisu je informace, kde je najdete):
--   The warehouse is set to **Manual**. Klepněte na tlačítko **řízení zásob &gt;nastavení &gt;rozdělení zásob &gt;sklady**. Na pevné záložce **Hlavní plánování** zkontrolujte pole **Ruční**.
--   Je definovaná disponibilita položky. Klepněte na tlačítko **řízení informací o produktech &gt;produkty&gt; uvolněných produktů**. Vyberte položku a pak v podokně akcí na **plán** karta, klepněte na tlačítko **Disponibilita položky**.
--   Pro sklad jsou definovány vztahy doplnění. Klepněte na tlačítko **řízení zásob &gt;nastavení &gt;rozdělení zásob &gt;sklady**. Na pevné záložce **Hlavní plánování** zkontrolujte skupinu polí **Hlavní sklad**.
--   Výchozí typ objednávky je nastaven na možnost Výroba, Nákupní objednávka nebo Kanban. Klepněte na tlačítko **řízení informací o produktech &gt;produkty&gt; uvolněných produktů**. Vyberte položku a pak v podokně akcí na **plán** karta, klepněte na tlačítko **výchozí nastavení objednávky**. Ve formuláři **Výchozí nastavení objednávky** zkontrolujte pole **Výchozí typ objednávky**.
+-   Sklad je nastaven na možnost **Ruční**. Klikněte postupně na možnosti **Řízení zásob &gt; Nastavení &gt; Rozdělení zásob &gt; Sklady**. Na pevné záložce **Hlavní plánování** zkontrolujte pole **Ruční**.
+-   Je definovaná disponibilita položky. Klikněte na možnosti **Řízení informací o produktech &gt; Produkty&gt; Uvolněné produkty**. Zvolte položku a poté v podokně Akce na kartě **Plán** klikněte na **Disponibilita položky**.
+-   Pro sklad jsou definovány vztahy doplnění. Klikněte postupně na možnosti **Řízení zásob &gt; Nastavení &gt; Rozdělení zásob &gt; Sklady**. Na pevné záložce **Hlavní plánování** zkontrolujte skupinu polí **Hlavní sklad**.
+-   Výchozí typ objednávky je nastaven na možnost Výroba, Nákupní objednávka nebo Kanban. Klikněte na možnosti **Řízení informací o produktech &gt; Produkty&gt; Uvolněné produkty**. Zvolte položku a poté v podokně Akce na kartě **Plán** klikněte na možnost **Výchozí nastavení objednávky**. Ve formuláři **Výchozí nastavení objednávky** zkontrolujte pole **Výchozí typ objednávky**.
 
-![Poptávka krytí pracoviště a sklad, co je povinné](./media/multisitedemandexplosionscenarioforsiteandwarehousecoveragewarehousemandatory.jpg)
+![Požadavek na pokrytí pracoviště a skladu, povinný](./media/multisitedemandexplosionscenarioforsiteandwarehousecoveragewarehousemandatory.jpg)
 
 
 
 <a name="see-also"></a>Viz také
 --------
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[Hlavní plánování a funkce více pracovišť](master-plan-multisite-functionality.md)
 
 [Hlavní plánování – disponibilita pracoviště, sklad povinný](master-plan-site-coverage-warehouse-mandatory.md)
 

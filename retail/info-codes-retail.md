@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.region: global
@@ -41,7 +41,7 @@ Informační kódy poskytují způsob zaznamenání dat na registrační pokladn
 -   Vyzvat pokladního k zadání hodnoty nebo výběru ze seznamu subkódů při otevření zásuvky pokladny bez provedení prodejní operace.
 
 ## <a name="info-codes-group-in-retail-and-commerce"></a>Skupina informačních kódů v části Maloobchodní a velkoobchodní prodej
-V 365 Dynamics pro operace - maloobchod, můžete vytvořit skupiny kódů info. Skupiny informačních kódů přidávají flexibilitu tím, že umožňují definovat méně informačních kódů a poté je používat univerzálněji. Skupiny informačních kódů lze použít následujícími způsoby:
+V aplikaci Dynamics 365 for Operations - Retail můžete vytvářet skupiny informačních kódů. Skupiny informačních kódů přidávají flexibilitu tím, že umožňují definovat méně informačních kódů a poté je používat univerzálněji. Skupiny informačních kódů lze použít následujícími způsoby:
 -   Definovat méně informačních kódů a snadno ke znovu použít. Informační kódy, které jsou součástí skupiny informačních kódů, nemají žádné předdefinované závislosti na jiných informačních kódech. Stejný informační kód lze zahrnout do více skupin informačních kódů a poté podle priorit ukazovat stejné informační kódy v pořadí, které dává v konkrétní situaci smysl.
 -   Spojit informační kódy s jinými informačními kódy nebo skupinami informačních kódů ke shromažďování informací o produktu nebo transakci, aniž by bylo nutné definovat samostatný informační kód nebo propojený informační kód pro každý scénář.
 

@@ -1,6 +1,6 @@
 ---
 title: "Zobrazení a zhodnocení výsledků dotazníku"
-description: "Toto téma vysvětluje, jak lze zobrazit a hodnotit výsledky dotazníků, které respondenti vyplnit."
+description: "Toto téma vysvětluje způsob, jakým lze zobrazit a vyhodnotit výsledky dotazníků, které respondenti dokončí."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>Zobrazení a zhodnocení výsledků dotazníku
 
-Toto téma vysvětluje, jak lze zobrazit a hodnotit výsledky dotazníků, které respondenti vyplnit. 
+Toto téma vysvětluje způsob, jakým lze zobrazit a vyhodnotit výsledky dotazníků, které respondenti dokončí. 
 
 Jakmile respondenti vyplní dotazník, existuje několik způsobů, jak můžete výsledky dotazníku zobrazit a vyhodnotit:
 

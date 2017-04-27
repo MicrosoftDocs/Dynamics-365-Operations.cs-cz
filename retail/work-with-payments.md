@@ -1,5 +1,5 @@
 ---
-title: "Způsoby plateb v telefonickém centru"
+title: "Platební metody v kontaktním středisku"
 description: "Toto téma popisuje různé platební metody, které lze použít v telefonickém centru v části Maloobchodní a velkoobchodní prodej."
 author: josaw1
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="payment-methods-in-a-call-center"></a>Způsoby plateb v telefonickém centru
+# <a name="payment-methods-in-a-call-center"></a>Platební metody v kontaktním středisku
 
 [!include[banner](includes/banner.md)]
 

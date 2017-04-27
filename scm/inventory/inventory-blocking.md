@@ -56,18 +56,18 @@ V následujícím příkladu je generována objednávka kvality po zaúčtován�
 | Přiřazení kvality určuje, že při zaúčtování dodacího listu nákupní objednávky musí být vygenerovaná objednávky kvality. Nastavení vzorkování položky objednávky kvality určuje, že musí být zkontrolováno 10 % z počtu řádků nákupní objednávky. Kromě toho vybraná možnost **Úplné blokování** v nastavení položky vzorkování značí, že musí být blokován celý počet řádků nákupní objednávky při inventuře bez ohledu na množství, které je odesláno ke kontrole. | Dodací list bude zaúčtován. | Objednávka kvality bude vygenerována. 10 % z množství položky na nákupní objednávce bude odesláno ke kontrole. Plný počet řádků nákupní objednávky bude blokován. |
 
 ## <a name="blocking-items-by-using-inventory-status-blocking"></a>Blokování položek použitím blokování stavu zásob
-Můžete určit, jaké stavy zásob jsou stavy blokování pomocí **blokování zásob** parametr **stavy zásob** stránky.  Stavy zásob nelze použít jako stavy blokování pro výrobní zakázky, prodejní objednávky, převodní příkazy, výstupní transakce nebo integrace projektu. Pro výstupní práci používejte položky, které mají stav zásob „dostupné“. Pokud máte položky se stavem **Zničeno** a použijete u těchto položek hlavní plánování, položky budou považovány za chybějící a sklad se automaticky doplní.
+Můžete určit, jaké stavy zásob jsou stavy blokování, pomocí parametru **Blokování zásob** na stránce **Stavy zásob**.  Stavy zásob nelze použít jako stavy blokování pro výrobní zakázky, prodejní objednávky, převodní příkazy, výstupní transakce nebo integrace projektu. Pro výstupní práci používejte položky, které mají stav zásob „dostupné“. Pokud máte položky se stavem **Zničeno** a použijete u těchto položek hlavní plánování, položky budou považovány za chybějící a sklad se automaticky doplní.
 
 
 
 <a name="see-also"></a>Viz také
 --------
 
-[Vytvořit a udržovat seznam blokování (úkol guide)](https://ax.help.dynamics.com/en/wiki/create-and-maintain-an-inventory-blocking/)
+[Vytvoření a správa blokování zásob (Průvodce záznamem úloh)](https://ax.help.dynamics.com/en/wiki/create-and-maintain-an-inventory-blocking/)
 
-[Quality management processes](quality-management-processes.md)
+[Procesy správy kvality](quality-management-processes.md)
 
-[Kontrolovat kvalitu zboží (úkol guide)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+[Kontrola kvality zboží (průvodce záznamem úloh)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
 
 
 

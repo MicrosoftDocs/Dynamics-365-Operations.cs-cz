@@ -1,6 +1,6 @@
 ---
 title: "Nedávno přidané funkce úprav v Záznamníku úkolů"
-description: "Je-li vytvořit vodítka úloh pomocí Záznamníku úkolů, můžete upravit soubory více efektivně používat funkce popsané v tomto wikiwebu."
+description: "Pokud používáte Záznamník úkolů k vytváření průvodců úlohami, můžete upravit soubory efektivněji pomocí funkce popsané v tomto wiki článku."
 author: josaw1
 manager: AnnBe
 ms.date: 2017-01-09 19 - 16 - 36
@@ -27,56 +27,56 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="recently-added-editing-features-in-task-recorder"></a>Nedávno přidané funkce úprav v Záznamníku úkolů
 
-Je-li vytvořit vodítka úloh pomocí Záznamníku úkolů, můžete upravit soubory více efektivně používat funkce popsané v tomto wikiwebu.
+Pokud používáte Záznamník úkolů k vytváření průvodců úlohami, můžete upravit soubory efektivněji pomocí funkce popsané v tomto wiki článku.
 
-Tyto funkce jsou k dispozici na **nastavení &gt;Záznamník úkolů &gt;upravit záznam** nabídky.
+Tyto funkce jsou k dispozici v nabídce **Nastavení &gt; Záznamník úloh &gt; Upravit záznam**.
 
--   Vložte kroky bez opětovné nahrávání celého souboru.
--   Kroky v rámci dílčího úkolu přesunete bez opětovné nahrávání celého souboru.
--   Sbalení polí název a popis záznamu.
+-   Vložte kroky bez opětovného nahrávání celého souboru.
+-   Přesuňte kroky v rámci dílčího úkolu bez opětovného nahrávání celého souboru.
+-   Sbalte pole pro název a popis záznamu
 
-## <a name="insert-steps-without-rerecording-the-entire-file"></a>Vložit kroky bez rerecording celý soubor
-Nyní můžete přidat krok kdekoli v příručce úkolu bez přehrávání nebo nahrávání znovu celý soubor.
+## <a name="insert-steps-without-rerecording-the-entire-file"></a>Vložte kroky bez opětovného nahrávání celého souboru.
+Nyní můžete přidat krok kamkoli v průvodci záznamem úloh bez přehrávání nebo opětovného nahrávání celého souboru.
 
-1.  Vyberte krok po kterém chcete, aby nový krok, který má být vložen. Zkontrolujte, zda že je zvýrazněný krok.
+1.  Vyberte krok, za který se má vložit nový krok. Zkontrolujte, zda je krok zvýrazněný.
 
-Záznamník úkolů, které chcete vložit krok, musí mít správnou stránku otevřít. Správná stránka je stránka, kdy dojde k nový krok. Záznamník úkolů má mechanismus, který určuje, co aktivní stránky je a bude zakázat funkci, pokud není otevřen správnou stránku. 
+Aby záznamník úkolů mohl vložit krok, musí mít otevřenou správnou stránku. Správná stránka je stránka, na které se nový krok objeví. Záznamník úkolů má mechanismus, který určuje, co je aktivní stránka, a zakáže funkci, pokud není otevřena správná stránka. 
 
 [![tg1](./media/tg1.png)](./media/tg1.png) 
 
 
-Pokud jste na správné stránce **vložit krok** jsou k dispozici.
+Pokud jste na správné stránce, je k dispozici možnost **Vložit krok**.
 
 [![tg2](./media/tg2-231x300.png)](./media/tg2.png)
 
-2. Klepněte na tlačítko **vložit krok**.
+2. Klikněte na **Vložit krok**.
 
-Po klepnutí na tlačítko **vložit krok**, Záznamník úkolů se přepne do režimu záznamu. Jakákoli akce provedená v uživatelském rozhraní nyní budou zaznamenány a doplňuje kroky na místě.
+Po klepnutí na tlačítko **Vložit krok** Záznamník úkolů se přepne do režimu záznamu. Jakákoli akce provedená v uživatelském rozhraní nyní budou zaznamenány a doplněny jako kroky.
 
 3. Klepněte na tlačítko **Stop**.
 
-Můžete opakovat proces, počet kroků pro přidávání nebo přesouvání tolik dílčích úkolů podle potřeby (viz níže pro dílčí úkoly).
+Můžete opakovat proces a přidat tolik kroků nebo přesunout tolik dílčích úkolů, kolik potřebujete (viz níže pro dílčí úkoly).
 
-4. Po dokončení úprav televize úkolu, klepněte na **provést úpravy**a pak zvolte jednu z možností uložení nebo publikování průvodce úkolu.
+4. Po dokončení úprav Průvodce záznamem úloh klikněte na **Úpravy byly dokončeny**a pak zvolte jednu z možností uložení nebo publikování Průvodce záznamem úloh.
 
-## <a name="move-steps-under-a-subtask-without-rerecording-the-entire-file"></a>Postup přesunutí v rámci dílčího úkolu bez rerecording celý soubor
-Kroky v rámci dílčího úkolu lze přesunout bez přehrávání nebo nahrávání znovu celý soubor. Můžete také přesunout krok dílčího úkolu nebo dílčího úkolu kroku end Pokud chcete seskupit stávajícího bloku kroků.
+## <a name="move-steps-under-a-subtask-without-rerecording-the-entire-file"></a>Přesuňte kroky v rámci dílčího úkolu bez opětovného nahrávání celého souboru.
+Kroky můžete v rámci dílčího úkolu přesouvat bez opětovného nahrávání celého souboru. Můžete také přesunout krok dílčího úkolu nebo koncového dílčího úkolu, pokud chcete seskupit stávající blok kroků.
 
-1.  Vyberte krok nebo dílčí úloha krok, který chcete přesunout. Ujistěte se, zda je zvýrazněný krok.
-2.  Klikněte na tři tečky a potom klepněte na tlačítko **přesunout krok po**.
+1.  Vyberte krok nebo krok dílčího úkolu, který chcete přesunout. Zkontrolujte, zda je krok zvýrazněný.
+2.  Klikněte na tři tečky a potom na tlačítko **Přesunout krok za**.
 
 [![tg3](./media/tg3.png)](./media/tg3.png)
 
-3. Vyberte krok nebo dílčích úkolů krok, který chcete přesunout krok krok nebo dílčí úkol po. Záznamník úkolů bude přesunout krok.
+3. Vyberte krok nebo krok dílčího úkolu, za který chcete přesunout krok nebo krok dílčího úkolu. Záznamník úkolů krok přesune.
 
-4. Chcete-li přesunout konec dílčího úkolu krok, vyberte jej, klepněte na tlačítko se třemi tečkami, klepněte na **přesunout krok po**a potom vyberte krok, po kterém má dílčí úloha krok konec bude.
+4. Chcete-li přesunout koncový krok dílčího úkolu, klikněte na tři tečky, klikněte na **Přesunout krok za** a potom vyberte krok, za který chcete krok dílčího úkolu přesunout.
 
-Pokud chcete, aby první krok v příručce úkolu musí být v dílčích úkolů, dílčí úkol krok jako druhý krok vytvoření a do něj přesuňte první krok. Můžete přidat nebo přesunout tolik kroků nebo dílčí úkoly podle potřeby.
+Pokud chcete, aby první krok v průvodci záznamem úloh spadal do rámce dílčího úkolu, vytvořte krok dílčího úkolu jako druhý a pak do něj přesuňte první krok. Můžete přidat nebo přesunout tolik kroků nebo dílčích úkolů, kolik potřebujete.
 
-5. Po dokončení úprav televize úkolu, klepněte na **provést úpravy**a pak zvolte jednu z možností uložení nebo publikování průvodce úkolu.
+5. Po dokončení úprav Průvodce záznamem úloh klikněte na **Úpravy byly dokončeny**a pak zvolte jednu z možností uložení nebo publikování Průvodce záznamem úloh.
 
-## <a name="collapse-recording-name-and-description"></a>Sbalit záznam názvu a popisu
-Můžete rozbalit nebo sbalit **název záznamu** a **popis záznamu** pole. Pokud tato pole jsou sbaleny, další kroky budou zobrazeny v Záznamníku úkolů úpravy podokna. 
+## <a name="collapse-recording-name-and-description"></a>Sbalení pole pro název a popis záznamu
+Můžete rozbalit a sbalit pole **Název záznamu** a **Popis záznamu**. Pokud jsou tato pole sbalena, další kroky budou zobrazeny v podokně úprav záznamníku úloh. 
 
 [![tg4](./media/tg4-300x252.png)](./media/tg4.png)  
 
@@ -85,6 +85,6 @@ Můžete rozbalit nebo sbalit **název záznamu** a **popis záznamu** pole. Pok
 
 [Vytváření dokumentace nebo školení pomocí záznamu úkolů](/dynamics365/operations/dev-itpro/user-interface/task-recorder)
 
-[Stručná referenční záznam úkolu](/dynamics365/operations/dev-itpro/user-interface/task-recorder-quick-reference)
+[Stručná reference pro záznamník úloh](/dynamics365/operations/dev-itpro/user-interface/task-recorder-quick-reference)
 
 

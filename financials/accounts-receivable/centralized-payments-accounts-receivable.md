@@ -35,7 +35,7 @@ Organizace zahrnující více právnických osob mohou vytvářet a spravovat pl
 
 Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Proto není nutné zadat stejné transakce pro více právnických osob. Kromě toho organizace ušetří čas, jelikož je zjednodušen proces návrhů plateb, vyrovnání a úpravy otevřených a uzavřených transakcí pro centralizované platby. 
 
-V organizaci centralizované platby existuje mnoho právnických osob pro operace a každý provozní právnická osoba spravuje vlastní informace faktur pohledávek. Platby za provozní právní subjekty jsou přijímány právnickou osobou, která je známa jako právnická osoba platby. Během procesu vyrovnání jsou generovány odpovídající kreditní a debetní transakce. Můžete určit, která právnická osoba v organizaci přijímá transakce realizovaného zisku nebo realizované ztráty a také způsob, jakým mají být zpracovány transakce platebních slev, které souvisejí s centralizovanou platbou. 
+V organizaci s centralizovanými platbami existuje mnoho právnických osob pro operace a každá provozní právnická osoba spravuje své vlastní pohledávky. Platby pro všechny provozní právnické osoby jsou přijímány jednou právnickou osobou, která se nazývá právnická osoba platby. Během procesu vyrovnání jsou generovány odpovídající kreditní a debetní transakce. Můžete určit, která právnická osoba v organizaci přijímá transakce realizovaného zisku nebo realizované ztráty a také způsob, jakým mají být zpracovány transakce platebních slev, které souvisejí s centralizovanou platbou. 
 
 Následující příklady ilustrují způsob zaúčtování při různých scénářích. U všech těchto příkladů se předpokládá následující konfigurace:
 
@@ -46,7 +46,7 @@ Následující příklady ilustrují způsob zaúčtování při různých scén
 
 | ID adresáře | Účet odběratele | Název              | Právnická osoba  |
 |-----------------|------------------|-------------------|---------------|
-| 4050            | 4000             | Northwind Traders | Společnost Fabrikam      |
+| 4050            | 4000             | Northwind Traders | Fabrikam      |
 | 4050            | 4000             | Northwind Traders | Fabrikam-východ |
 | 4050            | 10000            | Northwind Traders | Fabrikam-západ |
 
@@ -69,14 +69,14 @@ Společnost Fabrikam obdrží platbu ve výši 600,00 od odběratele číslo 400
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Úhrada přijatá společností Fabrikam je vyrovnána s fakturou společnosti Fabrikam-východ.
 
-**Fabrikam posting**
+**Účetnictví společnosti Fabrikam**
 
 | Účet                         | Částka Má dáti | Částka Dal |
 |---------------------------------|--------------|---------------|
 | Pohledávky (Fabrikam)  | 600,00       |               |
 | Závazky Fabrikam-východ (Fabrikam) |              | 600,00        |
 
-**Fabrikam East posting**
+**Účetnictví společnosti Fabrikam East**
 
 | Účet                             | Částka Má dáti | Částka Dal |
 |-------------------------------------|--------------|---------------|
@@ -84,7 +84,7 @@ Společnost Fabrikam obdrží platbu ve výši 600,00 od odběratele číslo 400
 | Pohledávky (Fabrikam-východ) |              | 600,00        |
 
 ## <a name="example-2-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a>Příklad 2: Odběratel platí fakturu od jiné právnické osoby s platební slevou
-Společnost Fabrikam obdrží platbu 580,00 na účet odběratele 4000 – Northwind Traders. Společnost Fabrikam východ má otevřenou fakturu pro zákazníka 4000. Na faktuře je k dispozici platební sleva 20,00. Platba je vyrovnána s otevřenými fakturami společnosti Fabrikam-východ. Platební sleva je zaúčtována právnické osobě, která vystavila fakturu, což je Fabrikam East.
+Společnost Fabrikam obdrží platbu 580,00 na účet odběratele 4000 – Northwind Traders. Společnost Fabrikam East má otevřenou fakturu pro dodavatele 4000. Na faktuře je k dispozici platební sleva 20,00. Platba je vyrovnána s otevřenými fakturami společnosti Fabrikam-východ. Platební sleva je zaúčtována právnické osobě, která vystavila fakturu, což je Fabrikam East.
 
 ### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a>Zaúčtování faktury vystavené odběrateli číslo 4000 ve společnosti Fabrikam-východ. Jedná se o odběratele společnosti Fabrikam-východ.
 
@@ -102,14 +102,14 @@ Společnost Fabrikam obdrží platbu 580,00 na účet odběratele 4000 – North
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Úhrada přijatá společností Fabrikam je vyrovnána s fakturou společnosti Fabrikam-východ.
 
-**Fabrikam posting**
+**Účetnictví společnosti Fabrikam**
 
 | Účet                         | Částka Má dáti | Částka Dal |
 |---------------------------------|--------------|---------------|
 | Pohledávky (Fabrikam)  | 580,00       |               |
 | Závazky Fabrikam-východ (Fabrikam) |              | 580,00        |
 
-**Fabrikam East posting**
+**Účetnictví společnosti Fabrikam East**
 
 | Účet                             | Částka Má dáti | Částka Dal |
 |-------------------------------------|--------------|---------------|
@@ -140,7 +140,7 @@ Společnost Fabrikam obdrží platbu ve výši 600,00 eur (EUR) pro odběratele 
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Úhrada přijatá společností Fabrikam je vyrovnána s fakturou společnosti Fabrikam-východ.
 
-**Fabrikam posting**
+**Účetnictví společnosti Fabrikam**
 
 | Účet                         | Částka Má dáti            | Částka Dal           |
 |---------------------------------|-------------------------|-------------------------|
@@ -149,7 +149,7 @@ Společnost Fabrikam obdrží platbu ve výši 600,00 eur (EUR) pro odběratele 
 | Závazky Fabrikam-východ (Fabrikam) | 0 EUR / 12,90 USD    |                         |
 | Kurzové zisky (Fabrikam)        |                         | 0 EUR / 12,90 USD    |
 
-**Fabrikam East posting**
+**Účetnictví společnosti Fabrikam East**
 
 | Účet                             | Částka Má dáti            | Částka Dal           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -181,7 +181,7 @@ Společnost Fabrikam zaúčtuje úhradu otevřené faktury společnosti Fabrikam
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Úhrada přijatá společností Fabrikam je vyrovnána s fakturou společnosti Fabrikam-východ.
 
-**Fabrikam posting**
+**Účetnictví společnosti Fabrikam**
 
 | Účet                         | Částka Má dáti            | Částka Dal           |
 |---------------------------------|-------------------------|-------------------------|
@@ -190,7 +190,7 @@ Společnost Fabrikam zaúčtuje úhradu otevřené faktury společnosti Fabrikam
 | Závazky Fabrikam-východ (Fabrikam) | 0 EUR / 13,46 USD    |                         |
 | Kurzové zisky (Fabrikam)        |                         | 0 EUR / 13,46 USD    |
 
-**Fabrikam East posting**
+**Účetnictví společnosti Fabrikam East**
 
 | Účet                             | Částka Má dáti            | Částka Dal           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -202,7 +202,7 @@ Společnost Fabrikam zaúčtuje úhradu otevřené faktury společnosti Fabrikam
 | Pohledávky (Fabrikam-východ) |                         | 12,00 EUR tj. 14,47 USD   |
 
 ## <a name="example-5-customer-credit-note-with-primary-payment"></a>Příklad 5: Odběratelský dobropis s hlavní platbou.
-Společnost Fabrikam obdrží platbu ve výši 75,00 od odběratele číslo 4000 – Northwind Traders. Platba je vyrovnána s otevřenou fakturou vystavenou společností Fabrikam-západ odběrateli číslo 10000 a otevřeným dobropisem od odběratele číslo 4000 (odběratel společnosti Fabrikam-východ). Platba je vybrána jako hlavní platba na **vyrovnat transakce** stránky.
+Společnost Fabrikam obdrží platbu ve výši 75,00 od odběratele číslo 4000 – Northwind Traders. Platba je vyrovnána s otevřenou fakturou vystavenou společností Fabrikam-západ odběrateli číslo 10000 a otevřeným dobropisem od odběratele číslo 4000 (odběratel společnosti Fabrikam-východ). Tato platba je vybrána jako hlavní platba na stránce **Vyrovnat transakce**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Zaúčtování faktury vystavené odběrateli číslo 10000 ve společnosti Fabrikam-západ.
 
@@ -227,7 +227,7 @@ Společnost Fabrikam obdrží platbu ve výši 75,00 od odběratele číslo 4000
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Platba přijatá společností Fabrikam je vyrovnaná s fakturou společnosti Fabrikam-západ a dobropisem společnosti Fabrikam-východ.
 
-**Fabrikam posting**
+**Účetnictví společnosti Fabrikam**
 
 | Účet                           | Částka Má dáti | Částka Dal |
 |-----------------------------------|--------------|---------------|
@@ -236,14 +236,14 @@ Společnost Fabrikam obdrží platbu ve výši 75,00 od odběratele číslo 4000
 | Pohledávky (Fabrikam)    | 100,00       |               |
 | Závazky Fabrikam-západ (Fabrikam)   |              | 100,00        |
 
-**Fabrikam East posting**
+**Účetnictví společnosti Fabrikam East**
 
 | Účet                             | Částka Má dáti | Částka Dal |
 |-------------------------------------|--------------|---------------|
 | Pohledávky (Fabrikam-východ) | 25,00        |               |
 | Závazky Fabrikam (Fabrikam-východ)     |              | 25,00         |
 
-**Fabrikam West posting**
+**Účetnictví společnosti Fabrikam West**
 
 | Účet                             | Částka Má dáti | Částka Dal |
 |-------------------------------------|--------------|---------------|
@@ -251,7 +251,7 @@ Společnost Fabrikam obdrží platbu ve výši 75,00 od odběratele číslo 4000
 | Pohledávky (Fabrikam-západ) |              | 100,00        |
 
 ## <a name="example-6-customer-credit-note-without-primary-payment"></a>Příklad 6: Odběratelský dobropis bez hlavní platby.
-Společnost Fabrikam obdrží platbu ve výši 75,00 od odběratele číslo 4000 – Northwind Traders. Platba je vyrovnána s otevřenou fakturou vystavenou společností Fabrikam-západ odběrateli číslo 10000 a otevřeným dobropisem od odběratele číslo 4000 (odběratel společnosti Fabrikam-východ). Platba není vybrána jako hlavní platba na **vyrovnat transakce** stránky.
+Společnost Fabrikam obdrží platbu ve výši 75,00 od odběratele číslo 4000 – Northwind Traders. Platba je vyrovnána s otevřenou fakturou vystavenou společností Fabrikam-západ odběrateli číslo 10000 a otevřeným dobropisem od odběratele číslo 4000 (odběratel společnosti Fabrikam-východ). Tato platba není vybrána jako hlavní platba na stránce **Vyrovnat transakce**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Zaúčtování faktury vystavené odběrateli číslo 10000 ve společnosti Fabrikam-západ.
 
@@ -276,21 +276,21 @@ Společnost Fabrikam obdrží platbu ve výši 75,00 od odběratele číslo 4000
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Platba přijatá společností Fabrikam je vyrovnaná s fakturou společnosti Fabrikam-západ a dobropisem společnosti Fabrikam-východ.
 
-**Fabrikam posting**
+**Účetnictví společnosti Fabrikam**
 
 | Účet                         | Částka Má dáti | Částka Dal |
 |---------------------------------|--------------|---------------|
 | Pohledávky (Fabrikam)  | 75,00        |               |
 | Závazky Fabrikam-západ (Fabrikam) |              | 75,00         |
 
-**Fabrikam East posting**
+**Účetnictví společnosti Fabrikam East**
 
 | Účet                              | Částka Má dáti | Částka Dal |
 |--------------------------------------|--------------|---------------|
 | Pohledávky (Fabrikam-východ)  | 25,00        |               |
 | Závazky Fabrikam-západ (Fabrikam-východ) |              | 25,00         |
 
-**Fabrikam West posting**
+**Účetnictví společnosti Fabrikam West**
 
 | Účet                                | Částka Má dáti | Částka Dal |
 |----------------------------------------|--------------|---------------|

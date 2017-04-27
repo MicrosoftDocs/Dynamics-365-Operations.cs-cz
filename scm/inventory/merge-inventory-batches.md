@@ -51,7 +51,7 @@ Ano, jsou některé záležitosti, které je nutné nastavit před použitím n�
 <tbody>
 <tr class="odd">
 <td>Názvy deníků, Sklad</td>
-<td>Je nutné vytvořit název deníku, které bude použito jako výchozí při zaúčtování sloučení dávek v denících zásob. Volitelně, přestože se doporučuje, můžete určit automatické rezervace, které se provedou při převodu sloučení dávek do deníku zásob. V ostatních případech je nebezpečí, že změna je provedená na straně zásob poté, co jsou nastaveny podrobnosti sloučení dávek a deník je zaúčtován. Chcete-li povolit automatické rezervace pro název deníku, vyberte <strong>automaticky</strong> v <strong><strong>rezervace</strong></strong> pole.</td>
+<td>Je nutné vytvořit název deníku, které bude použito jako výchozí při zaúčtování sloučení dávek v denících zásob. Volitelně, přestože se doporučuje, můžete určit automatické rezervace, které se provedou při převodu sloučení dávek do deníku zásob. V ostatních případech je nebezpečí, že změna je provedená na straně zásob poté, co jsou nastaveny podrobnosti sloučení dávek a deník je zaúčtován. Chcete-li povolit automatické rezervace pro název deníku, vyberte hodnotu <strong>Automaticky</strong> v poli <strong><strong>Rezervace</strong></strong>.</td>
 </tr>
 <tr class="even">
 <td>Parametry modulu Řízení zásob a skladu</td>
@@ -101,7 +101,7 @@ Zdrojové dávky mají následující hodnoty atributů pro atribut **Dávka tř
 | Dávka | Množství | Atribut | Hodnota atributu |
 |-------|----------|-----------|-----------------|
 | B1    | 10       | Třída     | Prázdné           |
-| B2    | září       | Třída     | září              |
+| B2    | 15       | Třída     | 15              |
 | B3    | 20       | Třída     | 20              |
 | B4    | 25       | Třída     | Prázdné           |
 | B5    | 30       | Třída     | 25              |
@@ -116,7 +116,7 @@ Hodnoty a množství pro dávky B1 a B4 nejsou zahrnuty ve výpočtu váženého
 
 | Hodnota | Množství (hmotnost)                              | Relativní hmotnost | Relativní hmotnost x Hodnota                                               |
 |-------|------------------------------------------------|-----------------|-----------------------------------------------------------------------|
-| září    | září                                             | 0,230769231     | 3,461538462                                                           |
+| 15    | 15                                             | 0,230769231     | 3,461538462                                                           |
 | 20    | 20                                             | 0,307692308     | 6,153846154                                                           |
 | 25    | 30                                             | 0,461538462     | 11,53846154                                                           |
 |       | **Celkem:** 65, tj. celkový počet hmotnosti |                 | **Celkem:** 21,5384615, zaokrouhleno na 21, což je nejbližší přírůstek. |
@@ -137,9 +137,9 @@ Zaúčtování funguje dvěma způsoby v závislosti na tom, zda používáte pr
 -   **Převod do deníku**: Přenese podrobnosti o sloučení dávky do nového deníku zásob. Pokud jste nastavili automatické rezervace, jsou rezervována množství ve zdrojových dávkách. Podrobné informace o sloučení dávky nelze změnit. Pokud musíte upravit sloučení dávky, je nutné odstranit deník. Deník lze použít jako úkol, který jiný zaměstnanec provede později. Rezervace množství dávky na řádku deníku je zabezpečena. Toto přidělení umožňuje plánovači kvality nebo manažerovi skladu vytvoření úkolů pro jeho zaměstnance.
 -   **Zaúčtovat sloučení dávky**: Zaúčtuje sloučení dávky přímo. Tuto akci můžete provést až po fyzickém slučování.
 
-Můžete schválit deník zásob pro sloučení dávky ze stránky se seznamem **Všechna sloučení dávek**. Klepněte na tlačítko **deníku**&gt;**Post**. Podrobnosti ve sloučené dávce nelze změnit po zaúčtování deníku. Po přenesení sloučení dávky do deníku zásob můžete změnit údaje pouze v případě, že dojde k odstranění deníku.
+Můžete schválit deník zásob pro sloučení dávky ze stránky se seznamem **Všechna sloučení dávek**. Klikněte na **Deník** &gt; **Zaúčtovat**. Podrobnosti ve sloučené dávce nelze změnit po zaúčtování deníku. Po přenesení sloučení dávky do deníku zásob můžete změnit údaje pouze v případě, že dojde k odstranění deníku.
 
-## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Poté, co byly sloučeny položky catchweight, Proč nevidím catchweight informace v deníku zásob?
+## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Poté, co byly sloučeny položky se skutečnou hmotností, proč nejsou zobrazeny údaje o skutečné hmotnosti v deníku zásob?
 Lze sloučit dávky položek se skutečnou hmotností stejně jako všech ostatních položek. Údaje o skutečné hmotnosti však nejsou zobrazeny v deníku zásob. Doporučujeme ověřit údaje o skutečné hmotnosti před přenesením sloučení dávky do deníku zásob.
 
 

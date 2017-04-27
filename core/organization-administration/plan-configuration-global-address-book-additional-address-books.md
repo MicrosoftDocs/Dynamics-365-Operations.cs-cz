@@ -1,6 +1,6 @@
 ---
-title: "Konfigurace globálního adresáře."
-description: "Tento článek popisuje důležité informace a rozhodnutí, které je nutno provést během procesu plánování si před nastavit a nakonfigurovat globální adresář a všechny další adresáře v 365 Microsoft Dynamics pro operace. Některá rozhodnutí vyžadují potvrzení rozhodnutí, která byla učiněna pro další oblasti produktu, jako je například hierarchie organizace."
+title: "Konfigurace globálních adresářů"
+description: "Tento článek popisuje, co je třeba zvážit a jaká rozhodnutí je třeba učinit během procesu plánování, před nastavením a konfigurací globálního adresáře a jakéhokoli dalšího adresáře v aplikaci Microsoft Dynamics 365 for Operations. Některá rozhodnutí vyžadují potvrzení rozhodnutí, která byla učiněna pro další oblasti produktu, jako je například hierarchie organizace."
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,12 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-global-address-books"></a>Konfigurace globálního adresáře.
+# <a name="configure-global-address-books"></a>Konfigurace globálních adresářů
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje důležité informace a rozhodnutí, které je nutno provést během procesu plánování si před nastavit a nakonfigurovat globální adresář a všechny další adresáře v 365 Microsoft Dynamics pro operace. Některá rozhodnutí vyžadují potvrzení rozhodnutí, která byla učiněna pro další oblasti produktu, jako je například hierarchie organizace.
+Tento článek popisuje, co je třeba zvážit a jaká rozhodnutí je třeba učinit během procesu plánování, před nastavením a konfigurací globálního adresáře a jakéhokoli dalšího adresáře v aplikaci Microsoft Dynamics 365 for Operations. Některá rozhodnutí vyžadují potvrzení rozhodnutí, která byla učiněna pro další oblasti produktu, jako je například hierarchie organizace.
 
 <a name="global-address-book"></a>Globální adresář
 -------------------

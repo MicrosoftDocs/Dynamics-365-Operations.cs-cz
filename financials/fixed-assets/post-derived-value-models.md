@@ -52,12 +52,12 @@ Níže naleznete informace popisující nastavení transakcí pořízení s funk
 
 Knihy lze potom připojit k určitému dlouhodobému majetku. 
 
-Když je zaúčtováno pořízení pro dlouhodobý majetek s knihou OM 1, pořízení účtován pouze v OM 1, ale také v odvozené knize OM 2. Stav obou knihy dlouhodobého majetku se aktualizuje na otevřeno.
+Když je zaúčtováno pořízení pro dlouhodobý majetek s knihou OM 1, pořízení se nezaúčtuje pouze v modelu OM 1, ale také v odvozené knize OM 2. Stav obou knih dlouhodobého majetku je aktualizován na Otevřeno.
 
 > [!NOTE]                                                                                                         
 > Pokud nepoužíváte odvozené knihy, je nutné zaúčtovat pořízení dlouhodobého majetku pro knihu OM 1 i knihu OM 2.
 
-Další informace naleznete v tématu [odvozených knih](derived-books.md)
+Další informace naleznete v tématu [Odvozené knihy](derived-books.md)
 
 
 

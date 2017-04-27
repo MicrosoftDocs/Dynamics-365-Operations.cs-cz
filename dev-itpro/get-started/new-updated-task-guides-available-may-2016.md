@@ -1,6 +1,6 @@
 ---
-title: "Nové nebo aktualizované úkoly vodítka (květen 2016)"
-description: "Tento článek obsahuje seznam nových nebo aktualizovaných úkolů, vodítka, které byly vydány pro Microsoft (může 2016 - všechny jazyky) knihovna Unified APQC pro aplikaci Microsoft Dynamics AX. Nebyly vydány žádné nové knihovny Začínáme."
+title: "Noví nebo aktualizovaní průvodci úkolem (květen 2016)"
+description: "Tento článek uvádí seznam nových nebo aktualizovaných průvodců úkolem vydaných pro knihovnu Microsoft APQC Unified Library (květen 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics AX. Nebyly vydány žádné nové knihovny Začínáme."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,17 +24,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-may-2016"></a>Nové nebo aktualizované úkoly vodítka (květen 2016)
+# <a name="new-or-updated-task-guides-may-2016"></a>Noví nebo aktualizovaní průvodci úkolem (květen 2016)
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek obsahuje seznam nových nebo aktualizovaných úkolů, vodítka, které byly vydány pro Microsoft (může 2016 - všechny jazyky) knihovna Unified APQC pro aplikaci Microsoft Dynamics AX. Nebyly vydány žádné nové knihovny Začínáme. 
+Tento článek uvádí seznam nových nebo aktualizovaných průvodců úkolem vydaných pro knihovnu Microsoft APQC Unified Library (květen 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics AX. Nebyly vydány žádné nové knihovny Začínáme. 
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Úloha provede v (květen 2016 - všechny jazyky) knihovna Unified APQC pro aplikaci Microsoft Dynamics AX
+<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Průvodci úkolem v knihovně APQC Unified Library pro Microsoft Dynamics AX (květen 2016 – všechny jazyky)
 ------------------------------------------------------------------------------------------------
 
-(Květen 2016) APQC Unified knihovna obsahuje pokyny, které jsou určeny k použití pro nápovědu aplikace Microsoft Dynamics AX může 2016 aktualizace úkolu a vydání únor 2016 aplikace Microsoft Dynamics AX. Lokalizované verze úkolu vodítek, které byly vydány v (únor 2016) APQC Unified knihovny jsou k dispozici v této knihovně. Další informace o tom, jak připojit systém nápovědy ke knihovně příručka úloh naleznete v tématu [seznámení s pomocí](help-overview.md). **Poznámka:** hvězdička (**\***) vedle názvu obchodní modelování procesů (BPM) čára označuje, že průvodce úkolu pro tento obchodní proces byl vytvořen pro Dynamics AX aktualizovat 2016 a není podporován v dřívějších verzích aplikace Microsoft Dynamics AX.
+Knihovna APQC Unified Library (květen 2016) obsahuje průvodce úkolem, kteří jsou určeni k použití pro nápovědu v aktualizaci aplikace Microsoft Dynamics AX pro květen 2016 a vydání aplikace Microsoft Dynamics AX pro únor 2016. Lokalizované verze průvodců úkolem vydaných v knihovně APQC Unified Library (únor 2016) jsou momentálně k dispozici v této knihovně. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Začínáme s nápovědou](help-overview.md). **Poznámka:** Hvězdička (**\***) vedle názvu řádku pro modelování podnikových procesů (BPM) označuje, že průvodce úkolem pro tento obchodní proces byl vytvořen pro aktualizaci Dynamics AX pro květen 2016 a není podporován v dřívějších verzích aplikace Microsoft Dynamics AX.
 
 ### <a name="countryregion-functionality"></a>Funkce země nebo oblasti
 
@@ -68,7 +68,7 @@ Tento článek obsahuje seznam nových nebo aktualizovaných úkolů, vodítka, 
 | Návrh konfigurace ER pro generování sestav ve formátu OPENXML         | Globální         |
 | Generování elektronických dokumentů ER pro platby za použití konfigurace formátu | Globální         |
 | Import konfigurace ER ze služby Lifecycle Services                          | Globální         |
-| **\***ER Select service provider                                           | Globální         |
+| **\***Elektronické vykazování – volba poskytovatele služeb                                           | Globální         |
 | Upgrade formátu ER přijetím nové základní verze tohoto formátu      | Globální         |
 | Odeslání konfigurace ER do služby Lifecycle Services                          | Globální         |
 
@@ -129,7 +129,7 @@ Tento článek obsahuje seznam nových nebo aktualizovaných úkolů, vodítka, 
 | Řádek BPM                                                 | Země nebo oblast |
 |----------------------------------------------------------|----------------|
 | Vytvořit nový produkt                                     | Globální         |
-| Vytvořit. Konfigurace \financial-dimensions\dimension-Based                    | Globální         |
+| Vytvoření..\financial-dimensions\dimension-based configurations                    | Globální         |
 | Vytvoření předem definovaných variant produktů                       | Globální         |
 | Vytvoření kritérií pro výběr prodejní ceny                    | Globální         |
 | Zadání objednávky pro konfigurovatelné produkty                   | Globální         |
@@ -179,23 +179,23 @@ Tento článek obsahuje seznam nových nebo aktualizovaných úkolů, vodítka, 
 | Řádek BPM                                                            | Země nebo oblast |
 |---------------------------------------------------------------------|----------------|
 | Konfigurace zpracování vlny                                           | Globální         |
-| **\***Dokončená na kontrolované místo SPZ jednoznačně | Globální         |
+| **\***Ohlášení za dokončené pro umístění bez řízení na základě registračních značek | Globální         |
 | Vytvoření procesu doplnění metodou min/max                              | Globální         |
 | Nastavení vytváření kontejnerů                                             | Globální         |
 | Nastavení ručního balení                                               | Globální         |
 | Nastavení omezení přepravy pro položku                       | Globální         |
-| **\***Set up warehouse work policies                                | Globální         |
+| **\***Nastavení zásad práce ve skladu                                | Globální         |
 
 
 
 <a name="see-also"></a>Viz také
 --------
 
-[Nový úkol provede (únor 2016)](new-task-guides-available-february-2016.md)
+[Noví průvodci úkolem (únor 2016)](new-task-guides-available-february-2016.md)
 
-[Nové nebo aktualizované úkoly provede (srpen 2016)](new-updated-task-guides-available-august-2016.md)
+[Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)](new-updated-task-guides-available-august-2016.md)
 
-[Nové nebo aktualizované úkoly provede (listopad 2016)](new-task-guides-november-2016.md)
+[Noví nebo aktualizovaní dostupní průvodci úkolem (listopad 2016)](new-task-guides-november-2016.md)
 
 
 

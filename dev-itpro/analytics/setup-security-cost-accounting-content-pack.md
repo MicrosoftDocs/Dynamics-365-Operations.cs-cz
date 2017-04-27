@@ -1,6 +1,6 @@
 ---
-title: "Nastavení zabezpečení pro analýzu obsahu Power BI nákladového účetnictví"
-description: "Toto téma vysvětluje, jak můžete rozšířit zabezpečení úroveň přístupu v nákladovém účetnictví pro řádek úroveň zabezpečení v aplikaci Microsoft Power BI. Tato funkce pomáhá zajistit, aby uživatelé viděli pouze data BI napájení, které je udělen přístup k."
+title: "Nastavení zabezpečení pro obsah Power BI analýzy nákladového účetnictví"
+description: "Toto téma vysvětluje, jak můžete rozšířit zabezpečení na úrovni přístupu v nákladovém účetnictví na zabezpečení na úrovni řádku v aplikaci Microsoft Power BI. Tato funkce pomáhá zajistit, aby uživatelé viděli pouze Power BI data, ke kterým mají udělen přístup."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,42 +24,42 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Nastavení zabezpečení pro analýzu obsahu Power BI nákladového účetnictví
+# <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Nastavení zabezpečení pro obsah Power BI analýzy nákladového účetnictví
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma vysvětluje, jak můžete rozšířit zabezpečení úroveň přístupu v nákladovém účetnictví pro řádek úroveň zabezpečení v aplikaci Microsoft Power BI. Tato funkce pomáhá zajistit, aby uživatelé viděli pouze data BI napájení, které je udělen přístup k.
+Toto téma vysvětluje, jak můžete rozšířit zabezpečení na úrovni přístupu v nákladovém účetnictví na zabezpečení na úrovni řádku v aplikaci Microsoft Power BI. Tato funkce pomáhá zajistit, aby uživatelé viděli pouze Power BI data, ke kterým mají udělen přístup.
 
 <a name="overview"></a>Přehled
 --------
 
-**Analýzy nákladového účetnictví** obsah Microsoft Power BI můžete omezit přístup uživatele používá zabezpečení na úrovni řádku Power BI. Zabezpečení je založeno na hierarchii organizační úroveň přístupu, která je nastavena v parametry nákladového účetnictví. Další informace o **analýzy nákladového účetnictví** obsahu, viz Power BI [nákladového účetnictví analýzy obsahu Power BI](cost-accounting-analysis-content-pack.md).
+Obsah **Analýza nákladového účetnictví** v Microsoft Power BI používá Power BI zabezpečení na úrovni řádku k omezení přístupu uživatelů. Zabezpečení je založeno na organizační hierarchii úrovně přístupu, která je nastavena v parametrech nákladového účetnictví. Další informace o obsahu **Analýza nákladového účetnictví** v Power BI najdete v tématu [Obsah analýzy nákladového účetnictví v Power BI](cost-accounting-analysis-content-pack.md).
 
 ## <a name="setup"></a>Nastavení
-Chcete-li rozšířit zabezpečení úroveň přístupu k Power BI, musí vlastník obsahu Power BI postupujte takto. **Poznámka:** uživatel, který publikuje **analýzy nákladového účetnictví** obsahu Power BI automaticky stane vlastníkem. Pouze vlastník může nastavit zabezpečení v Power BI. Navíc dokud vlastník přidá ostatním uživatelům na PowerBI.com, nikdo kromě vlastníka můžete zobrazit všechna data v **analýzy nákladového účetnictví** obsahu Power BI.
+Chcete-li rozšířit Power BI o zabezpečení na úrovni přístupu, musí vlastník obsahu Power BI postupovat podle následujících kroků. **Poznámka:** Uživatel, který publikuje obsah **Analýzy nákladového účetnictví** v Power BI se automaticky stane vlastníkem. Pouze vlastník může nastavit zabezpečení v Power BI. Navíc dokud vlastník nepřidá další uživatele na PowerBI.com, nikdo kromě vlastníka nemůže zobrazit jakákoliv data v obsahu **Analýzy nákladového účetnictví** v Power BI.
 
-1.  Publikujte soubor definice Power BI.
-2.  Přihlásit se k PowerBI.com.
-3.  Najít datové sady pro **analýzy nákladového účetnictví** obsahu Power BI.
+1.  Publikujte soubor definice do Power BI.
+2.  Přihlaste se k PowerBI.com.
+3.  Vyhledejte soubor dat pro obsah **Analýzy nákladového účetnictví** v Power BI.
 4.  Otevřete stránku zabezpečení. 
 
-    [![Otevřete stránku zabezpečení](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)
+    [![Otevření stránky zabezpečení](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)
 
-5.  **Cena objektu řadiče** role je již vytvořena. Přidáte další členy, kteří jsou součástí nákladového účetnictví organizační hierarchii úroveň přístupu. 
+5.  Role **Kontrolor objektu nákladů** role je již vytvořena. Přidejte další členy, kteří jsou součástí organizační hierarchie na úrovni přístupu pro nákladové účetnictví. 
 
     [![Přidání členů](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-2.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-2.png)
 
-Uživatelé, kteří jsou přidáni do **cena objektu řadiče** roli uvidí pouze data, která mohou vidět, podle definice v organizační hierarchii úroveň přístupu nákladového účetnictví. **Poznámka:** zabezpečení na úrovni řádku platí pro dlaždice a sestavy v Microsoft Dynamics 365 pro operace, které jsou vloženy v Power BI.
+Uživatelé, kteří jsou přidáni do role **Kontrolor objektu nákladů** uvidí pouze data, která mohou vidět, podle definice v organizační hierarchii úrovně přístupu nákladového účetnictví. **Poznámka:** Zabezpečení na úrovni řádku platí pro dlaždice a sestavy v aplikaci Microsoft Dynamics 365 for Operations, které jsou vloženy z Power BI.
 
 ## <a name="updating-security"></a>Aktualizace zabezpečení
-Aktualizace provedené v zabezpečení úrovně přístupu v nákladovém účetnictví a vy chcete BI napájení tak, aby odrážely tyto aktualizace, je nutné aktualizovat úložiště entita pro **analýzy nákladového účetnictví** obsahu Power BI. Po dokončení aktualizace úložiště entita z 365 Dynamics pro operace, je nutné aktualizovat artefakty na PowerBI.com. Další informace o postupu aktualizace entity úložiště naleznete v tématu [úložiště entita aktualizace](power-bi-integration-entity-store.md#update-entity-store). Vlastník **analýzy nákladového účetnictví** obsahu Power BI také nutné provést aktualizaci úložiště entita, je-li novým uživatelům jsou udělena přístupová práva k organizační hierarchii. Navíc musí vlastník přidání nových uživatelů do **cena objektu řadiče** roli na PowerBI.com, takže tento řádek úroveň zabezpečení platí pro ně.
+Pokud provedete aktualizace zabezpečení na úrovni přístupu v nákladovém účetnictví a chcete, aby Power BI odráželo tyto aktualizace, je nutné aktualizovat úložiště entit pro obsah **Analýzy nákladového účetnictví** v Power BI. Po dokončení aktualizace úložiště entit z aplikace Dynamics 365 for Operation je nutné aktualizovat artefakty na PowerBI.com. Další informace o postupu aktualizace úložiště entit naleznete v tématu [Aktualizace úložiště entit](power-bi-integration-entity-store.md#update-entity-store). Vlastník obsahu **Analýzy nákladového účetnictví** v Power BI musí také provést aktualizaci úložiště entit, je-li novým uživatelům udělen přístup k organizační hierarchii. Navíc musí vlastník přidat nové uživatele do role **Kontrolor objektu nákladů** roli na PowerBI.com, aby se na ně vztahovalo zabezpečení na úrovni řádku.
 
 ## <a name="disabling-security"></a>Zakázání zabezpečení
-Předpokládáme, že vaše organizace chce omezit přístup k datům. Pokud z nějakého důvodu parametry zabezpečení jsou zakázány, pokud spustíte nákladového účetnictví, musí vlastník přidat uživatele **účetní náklady** role v Power BI místo. Pokud změníte zabezpečení z povoleného stavu zakázána, je vhodné odebrat uživatele ze **cena objektu řadiče** roli. A naopak, pokud znovu povolit zabezpečení. Uživatelé mohou patřit k oběma rolím. Společný přístup je unie obě role. U **analýzy nákladového účetnictví** Power BI obsahu uživatelům, kteří mají společný přístup mají neomezený přístup k datům. Chcete-li použít s omezeným přístupem, je-li uživatelům musí být přiřazena pouze **náklady objektu řadiče** role. Tyto aktualizace zabezpečení na úrovni řádku se projeví okamžitě. Příslušné uživatele by mělo obnovit zobrazení prohlížeče.
+Předpokládáme, že vaše organizace chce omezit přístup k datům. Pokud jsou z nějakého důvodu parametry zabezpečení zakázány, pokud spustíte nákladové účetnictví, musí vlastník místo toho přidat uživatele do role **Nákladový účetní** v Power BI. Pokud změníte zabezpečení ze stavu povoleno na stav zakázáno, je vhodné odebrat uživatele z role **Kontrolor objektu nákladů**. A naopak, pokud znovu zabezpečení povolíte. Uživatelé mohou patřit k oběma rolím. Společný přístup je spojení obou rolí. U případě obsahu **Analýzy nákladového účetnictví** v Power BI mají uživatelé, kteří mají společný přístup, neomezený přístup k datům. Chcete-li použít omezený přístup, uživatelé musí být přiřazeni pouze k roli **Kontrolor objektu nákladů**. Tyto aktualizace zabezpečení na úrovni řádku se projeví okamžitě. Příslušní uživatele by měli obnovit zobrazení prohlížeče.
 
 ## <a name="additional-resources"></a>Další prostředky
-Další informace o zabezpečení na úrovni řádku BI napájení, viz [spravovat zabezpečení v modelu v Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+Další informace o zabezpečení na úrovni řádku v Power BI naleznete v tématu [Správa zabezpečení na vašem modelu v Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model).
 
 
 

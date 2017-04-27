@@ -32,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 
 
 
-365 Microsoft Dynamics pro operace poskytuje dva způsoby, jak spravovat a řídit projekty: prognózy projektu a rozpočty projektu. 
+Aplikace Microsoft Dynamics 365 for Operations poskytuje dva způsoby, jak spravovat a řídit projekty: prognózy projektu a rozpočty projektu. 
 
 Prognózu projektu můžete použít, má-li vaše organizace operační perspektivu a zaměřuje se na výnosy a náklady, které jsou odvozeny od specifických transakcí. Rozpočty projektu můžete použít, pokud se vaše organizace více zaměřuje na finanční částky. 
 
@@ -48,9 +48,9 @@ Každá metoda má své výhody. Měli byste zvážit následující body, než 
 | **Proměnné transakcí ** | Po zadání transakcí prognózy můžete využít každý atribut, který existuje, pro skutečnou transakci. To umožňuje větší podrobnosti v prognóze. Například můžete zadat podrobnosti o množství, pracovnících, zboží nebo vlastnostech řádku.         | Když zadáte podrobnosti rozpočtu, můžete použít pouze částky, kategorie a aktivity.                                                                                    |
 | **Zabezpečení **              | Prognóza je založena na transakcích, které zadáte ve formuláři prognózy, a nezahrnuje žádný mechanismus kontroly procesu. Jakýkoli pracovník, který má oprávnění pro formulář prognózy, může informace revidovat bez schválení.                                        | Rozpočtování využívá systém workflow, který umožňuje správu změn a zachování historie revizí.                                                       |
 | **Typy položek **           | Položky transakcí prognózy jsou založeny na počtu jednotek a na nákladových a prodejních jednotkových cenách.                                                                                                                                                       | Podrobnosti rozpočtu jsou založeny na částkách, které jsou rozděleny mezi náklady a výnosy.                                                                                        |
-| **Forecast models**       | Vzhledem k tomu, že každá prognóza musí být přidružena modelu, lze vytvořit několik modelů prognózy a rovněž nastavit dílčí modely.                                                                                                                               | Rozpočty projektu omezují modely prognózy, které se používají pro rozpočtování. Méně modelů prognózy může přispět ke zvýšení konzistence v projekcích.                           |
+| **Modely prognóz**       | Vzhledem k tomu, že každá prognóza musí být přidružena modelu, lze vytvořit několik modelů prognózy a rovněž nastavit dílčí modely.                                                                                                                               | Rozpočty projektu omezují modely prognózy, které se používají pro rozpočtování. Méně modelů prognózy může přispět ke zvýšení konzistence v projekcích.                           |
 | **Překročení nákladů **         | Můžete povolit nebo zakázat pouze položky transakcí, které způsobí překročení nákladů.                                                                                                                                                                | Sestavování rozpočtu projektu poskytuje další možnosti kontroly pro uživatele. Můžete povolit upozornění a překročení.                                                                   |
-| **Control**               | Ovládací prvek prognózy se provádí pomocí snížení prognózy. Skutečné částky jsou odečteny od zůstatků transakcí prognózy bez jakéhokoli záznamu pro audit. Proto může být složitější sledovat, kde ke skutečným transakcím došlo.                   | V kontrole rozpočtu projektu jsou skutečné částky odečteny od částek ve zbývajícím rozpočtu. To umožňuje lepší sledování auditu.                                   |
+| **Kontrola**               | Ovládací prvek prognózy se provádí pomocí snížení prognózy. Skutečné částky jsou odečteny od zůstatků transakcí prognózy bez jakéhokoli záznamu pro audit. Proto může být složitější sledovat, kde ke skutečným transakcím došlo.                   | V kontrole rozpočtu projektu jsou skutečné částky odečteny od částek ve zbývajícím rozpočtu. To umožňuje lepší sledování auditu.                                   |
 
 ## <a name="project-forecasts"></a>Prognózy projektu
 Použijete-li prognózu projektu, můžete transakce prognóz zadat ve formulářích prognózy pro každý typ transakce. Každý atribut, který je k dispozici pro aktuální transakcím lze použít pro transakci prognóz, jako například ziskovosti řádku, atributy řádku, zaměstnance nebo popis. Můžete také projektovat, jak dlouho po výdeji nákladů bude odběrateli odeslána faktura. 
@@ -65,7 +65,7 @@ Modely prognóz mohou využívat snížení prognózy jako ovládací prvek pro 
 
 Prognózy projektu je možné opravit, kopírovat, odstraňovat nebo přenášet do rozpočtu hlavní knihy. Neexistuje však žádná kontrola procesů. Kterýkoli pracovník s oprávněním pro přístup k formuláři prognózy můžete provést jednotlivé opravy bez kontroly.
 
--   ** Zkontrolujte ** – můžete upravit transakce prognózy do stejného formuláře, kde byly vytvořeny původní položky.
+-   **Opravit ** – Umožňuje provést revizi transakcí prognóz ve stejných formulářích, kde byly vytvořeny původní záznamy.
 -   **Kopírovat nebo odstranit** – Při kopírování transakcí prognóz můžete zkopírovat řádky transakce jednoho modelu prognóz do jiného modelu prognózy. Při odstraňování prognóz dochází k odstranění transakcí prognózy z modelu prognózy. Pokud chcete omezit transakce prognóz, které jsou zkopírovány nebo odstraněny, vyberte vhodné typy a data transakce. Tímto způsobem lze zkopírovat nebo odstranit pouze konkrétní části prognózy.
 -   **Převod** – Při přenosu prognózy projektu do rozpočtu hlavní knihy přenášíte transakce prognózy modelu prognózy do rozpočtu hlavní knihy. Transakce, které byly dříve přeneseny do rozpočtu hlavní knihy, do kterého přenášíte prognózu projektu, je možné přepsat.
 
@@ -81,7 +81,7 @@ Rozpočty projektu jsou automaticky spojeny se dvěma modely prognózy, jedním 
 ## <a name="forecast-models"></a>Modely prognóz
 Modely prognóz mají jednovrstvou hierarchii. To znamená, že jedna prognóza projektu musí být přidružena k jednomu modelu prognózy.
 
-Pokud používáte prognózy projektu, můžete identifikovat modelů jako dílčí modely. Poté můžete vytvořit předpovědi oddělení, časové období nebo oblasti. Můžete například vytvořit model prognózy pro rok a poté vytvořit dílčí modely pro regionální prognózy severovýchodu, jihovýchodu, severozápadu a jihovýchodu, které odešle regionální vedoucí. Výběrem různých možností v dostupných sestav lze zobrazit informace Prognóza celkové nebo dílčí model.
+Pokud používáte prognózy projektu, můžete identifikovat modely jako dílčí modely. Pak můžete vytvářet prognózy podle oddělení, časového období nebo regionu. Můžete například vytvořit model prognózy pro rok a poté vytvořit dílčí modely pro regionální prognózy severovýchodu, jihovýchodu, severozápadu a jihovýchodu, které odešle regionální vedoucí. Výběrem různých možností v dostupných sestavách můžete zobrazit informace dle celkové prognózy nebo dílčího modelu.
 
 
 

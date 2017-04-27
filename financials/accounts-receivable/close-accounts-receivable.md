@@ -34,9 +34,9 @@ ms.lasthandoff: 03/31/2017
 V následující tabulce jsou uvedeny stránky, které podporují obchodní proces uzavření pohledávek.
 
 > [!NOTE] 
-> Otevření některých stránek v tabulce, je nutné zadat informace nebo nastavení parametrů.
+> Některé stránky tabulky lze otevřít až po zadání informací nebo určení nastavení parametrů.
 
-**Obchodní proces komponenta úlohu**                   
+**Úloha komponenty obchodního procesu**                   
 
 Uzávěrka období v hlavní knize
 
@@ -46,15 +46,15 @@ Uzávěrka období v hlavní knize
 |Potvrdit prodejní objednávku                   | Aktualizace prodejních objednávek.                                                                       |
 |Přecenění cizí měny          | Generování transakcí, které aktualizují hodnotu otevřených transakcí odběratelů v cizí měně.                                                                                                                         |
 | Deník                              | Zaúčtování faktur, plateb a směnek.                                             |
-| Doklad deníku                      | -   **Payment journal** – Generate, process, and post payments.
+| Doklad deníku                      | -   **Deník plateb** – generování, zpracování a zaúčtování plateb.
                                          -   **Draw bill of exchange journal** – Post bills of exchange.
                                          -   **Protest bill of exchange journal** – Post protested bills of exchange.
                                          -   **Redraw bill of exchange journal** – Post redrawn bills of exchange.
                                          -   **Remittance journal** – Post remittances.
                                          -   **Settle bill of exchange journal** – Post settled bills of exchange                   |
-| Dodací list účtování | Aktualizujte dodací listy pro prodejní objednávky.                                                     | | Zaúčtovat volnou fakturu | Zaúčtování volné faktury.                                                                   | | Účtování faktury | Při účtování faktury pro prodejní objednávky.                                                            | | Zaúčtování výdejky | Aktualizace výdejky pro prodejní objednávky.                                                      |
+| Zaúčtování dodacího listu                 | Aktualizace dodacích listů pro prodejní objednávky.                                                     | | Zaúčtovat volnou fakturu               | Zaúčtovat volné faktury.                                                                   | | Zaúčtování faktury                      | Zaúčtování faktur prodejních objednávek.                                                            | | Zaúčtování výdejky                 |Aktualizace výdejek k prodejním objednávkám.                                                      |
 
-**Obchodní proces komponenta úlohu**   
+**Úloha komponenty obchodního procesu**   
 
 Vytvoření a odeslání souhrnného hlášení (EU)
 

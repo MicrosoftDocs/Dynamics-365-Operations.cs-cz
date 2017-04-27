@@ -33,9 +33,9 @@ ms.lasthandoff: 03/31/2017
 
 Tento článek popisuje, jak vyloučit odlehlé hodnoty z historických dat, která se používají k výpočtu prognózy poptávky. Vyloučením odlehlých hodnot můžete zlepšit přesnost prognózy.
 
-Můžete vyloučit odlehlé hodnoty pro zvýšení přesnosti prognózy. Tato úloha je volitelná. Přehled procesu:
+Přesnost prognózy můžete zlepšit vyloučením odlehlých hodnot. Tato úloha je volitelná. Přehled procesu:
 
-1.  Klepněte na tlačítko **Master planning**&gt;**nastavení**&gt;**prognózy poptávky**&gt;**odlehlou odstranění** otevřete **odlehlou odstranění** stránku, kde můžete použít dotaz k výběru transakcí, které chcete vyloučit.
+1.  Klikněte na **Hlavní plánování** &gt; **Nastavení** &gt; **Prognóza poptávky** &gt; **Odebrání odlehlé hodnoty**. Otevře se stránka **Odebrání odlehlé hodnoty**, na které můžete pomocí dotazu vybrat transakce k vyloučení.
 2.  Vyberte společnost, pro kterou se použije dotaz, a pak zadejte název a popis. Pole **Datum dotazu** je automaticky nastaveno na aktuální datum.
 3.  Zaškrtněte políčko **Aktivní**, chcete-li vyloučit transakce, které byly nalezeny dotazem, z historických dat. Toto nastavení se projeví při vytváření základní prognózy.
 4.  Na stránce **Dotaz na odebrání odlehlé hodnoty** lze přidat, odebrat a vybrat kritéria, která definují transakce, které budou vyloučeny při výpočtu základní prognózy. Například vyberte konkrétní položku nebo transakci zakázky, kterou chcete vyloučit.
@@ -46,9 +46,9 @@ Můžete vyloučit odlehlé hodnoty pro zvýšení přesnosti prognózy. Tato ú
 <a name="see-also"></a>Viz také
 --------
 
-[Introduction to demand forecasting](introduction-demand-forecasting.md)
+[Úvod do prognózy poptávky](introduction-demand-forecasting.md)
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Měření přesnosti prognózy](monitor-forecast-accuracy.md)
 
 
 

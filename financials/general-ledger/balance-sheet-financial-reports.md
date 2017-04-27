@@ -1,6 +1,6 @@
 ---
 title: "Finanční sestavy rozvah"
-description: "Tento článek popisuje výchozích sestav rozvahy. Popisuje také stavební bloky, které jsou přidruženy k tyto zprávy."
+description: "Tento článek popisuje výchozí sestavy pro rozvahy. Popisuje také stavební bloky, které jsou přidruženy k těmto sestavám."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje výchozích sestav rozvahy. Popisuje také stavební bloky, které jsou přidruženy k tyto zprávy. 
+Tento článek popisuje výchozí sestavy pro rozvahy. Popisuje také stavební bloky, které jsou přidruženy k těmto sestavám. 
 
 <a name="default-balance-sheet-reports"></a>Výchozí finanční sestavy rozvah
 -----------------------------
@@ -75,11 +75,11 @@ Definice sloupců obsahují různé typy sloupců, které poskytují různé úr
 <a name="see-also"></a>Viz také
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Finanční výkaznictví](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Zobrazit finanční sestavy](view-financial-reports.md)
 
-[Finanční vykazování blogu Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Blog o finančním výkaznictví v Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

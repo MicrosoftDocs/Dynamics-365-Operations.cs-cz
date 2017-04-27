@@ -1,5 +1,5 @@
 ---
-title: "Nastavení mobilních zařízení pro práci, sklad"
+title: "Nastavení mobilních zařízení pro práci ve skladu"
 description: "Tento článek popisuje způsob konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Nastavení mobilních zařízení pro práci, sklad
+# <a name="set-up-mobile-devices-for-warehouse-work"></a>Nastavení mobilních zařízení pro práci ve skladu
 
 Tento článek popisuje způsob konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení.
 
@@ -35,7 +35,7 @@ Tento článek popisuje způsob konfigurace položek nabídky, které pracovníc
 -   Vytvořte práci, která se provede prostřednictvím jiného procesu. Například přijetím položky pro nákupní objednávku můžete vytvořit pracovní vyskladnění pro jiného pracovníka.
 -   Provedení práce, která byla vytvořena jiným procesem (existující práce), jako je například vyskladnění, které bylo vytvořeno při přijetí položky pro nákupní objednávku.
 
-Pokud chcete vytvořit položku nabídky pro aktivity nebo dotaz **režim** na **nepřímé**. Seznam **kód aktivity** možnosti pak jsou k dispozici, takže můžete vybrat typ dotazu nebo činnost, která je položka nabídky pro. Chcete-li vytvořit položku nabídky pro generování práce skladu, nastavte **režim** na **práce**. Seznam **pracovní proces vytváření** možnosti pak jsou k dispozici. Pokud chcete vytvořit položku nabídky ke zpracování existující skladové práce, nastavte pole **Režim** na **Práce** a nastavte možnost **Použít stávající práci** na **Ano**. **Poznámka:** další pole mohou být k dispozici pro položky nabídky, v závislosti na režimu, který vyberete pro nabídku zboží a zda položky nabídky slouží k provádění stávající práce. Informace o výběru dalších polí naleznete v části "Další položky Možnosti nabídky" dále v tomto článku.
+Pokud chcete vytvořit položku nabídky pro aktivitu nebo dotaz, nastavte pole **Režim** na **Nepřímý**. Seznam možností **Kód aktivity** potom bude zpřístupněn a vy tak můžete vybrat typ dotazu nebo aktivity, pro kterou je položka nabídky určena. Pokud chcete vytvořit položku nabídky ke generování skladu, nastavte pole **Režim** na **Práce**. Seznam možností **Proces pro vytvoření práce** bude k dispozici. Pokud chcete vytvořit položku nabídky ke zpracování existující skladové práce, nastavte pole **Režim** na **Práce** a nastavte možnost **Použít stávající práci** na **Ano**. **Poznámka:** další pole mohou být k dispozici pro položky nabídky v závislosti na režimu, který vyberete pro položku nabídky a v závislosti na tom, zda položka nabídky slouží k provádění existující práce. Informace o výběru dalších polí naleznete v části „Další možnosti pro položky nabídky“ později v tomto článku.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurace položek nabídky pro aktivity a dotazy
 Pokud pole **Režim** pro položku nabídky je nastaveno na **Nepřímé**, můžete vytvořit položku nabídky pro provádění hlavní aktivity nebo dotazu, který nevytváří práci. Příklady zahrnují opakovaný tisk popisků registrační značky vozidel a dotaz na položky ve skladovém místě. V následující tabulce jsou uvedeny možnosti, které jsou k dispozici.
@@ -190,7 +190,7 @@ Po provedení počáteční akce pro mobilním zařízení můžete nastavit pol
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurace položek nabídky ke zpracování existující práce
-Kromě nastavení položek nabídky pro vytvoření skladové práce můžete nastavit položky nabídky pro zpracování práce, která již byla vytvořena. Nastavte pole **Režim** na **Práce** a vyberte možnost **Použít stávající práci**. Další možnosti pak budou k dispozici na **Obecné** kartu. Můžete řídit přístup k položce nabídky tak, že přiřadíte jednu nebo více tříd práce na **práce třídy** s náhledem. Pracovní třídy definují práci, kterou položka nabídky může zpracovat. Pracovní třídu lze také použít pro přidělení přístupu k určitým uživatelským rolím nebo samostatnému zpracování pro různé typy operací. V následující tabulce jsou popsány možnosti, které jsou k dispozici.
+Kromě nastavení položek nabídky pro vytvoření skladové práce můžete nastavit položky nabídky pro zpracování práce, která již byla vytvořena. Nastavte pole **Režim** na **Práce** a vyberte možnost **Použít stávající práci**. Některé další možnosti pak budou k dispozici na kartě **Hlavní**. Můžete řídit přístup k položce nabídky přiřazením některé pracovní třídy na pevné záložce **Pracovní třída**. Pracovní třídy definují práci, kterou položka nabídky může zpracovat. Pracovní třídu lze také použít pro přidělení přístupu k určitým uživatelským rolím nebo samostatnému zpracování pro různé typy operací. V následující tabulce jsou popsány možnosti, které jsou k dispozici.
 
 <table>
 
@@ -210,7 +210,7 @@ Kromě nastavení položek nabídky pro vytvoření skladové práce můžete na
 </tr>
 <tr class="even">
 <td>Řízeno systémem</td>
-<td>365 Microsoft Dynamics pro operace určuje druh práce, který je přiřazen pracovník a pracovník vykonává práci v uvedeném pořadí. Když vyberete tuto možnost, klepněte <strong>systém řízené práce</strong> v podokně Akce otevřete <strong>systém řízené pořadí řazení</strong> stránku, kde můžete nastavit kritéria pro práci řazení. Kritéria řazení řídí pořadí, ve kterém pracovník vykonává práci v. Můžete přidat tolik kritérií, jak požadujete.</td>
+<td>Aplikace Microsoft Dynamics 365 for Operations určuje typ práce, která je přiřazena k pracovníkovi, a pořadí, ve kterém pracovník provádí práci. Pokud vyberete tuto možnost, můžete klepnout na <strong>Práce řízená systémem</strong> v podokně Akce a otevřít tak stránku <strong>Pořadí řazení řízené systémem</strong>, kde můžete nastavit kritéria pro pracovní třídění. Kritéria třídění řídí pořadí, ve kterém pracovník provádí práci. Můžete přidat tolik kritérií, kolik potřebujete.</td>
 </tr>
 <tr class="odd">
 <td>Řízeno uživatelem</td>
@@ -230,7 +230,7 @@ Kromě nastavení položek nabídky pro vytvoření skladové práce můžete na
 </tr>
 <tr class="even">
 <td>Ověřený uživatel přesměrován</td>
-<td>Pracovník vybere práci určenou k vykonání, když je práci přiřazeno větší množství, jako např. při vytížení nebo dodávce. Pracovník určuje pořadí, ve kterém jsou vybrány položky v. Pokud tuto možnost vyberete, budou k dispozici následující pole:
+<td>Pracovník vybere práci určenou k vykonání, když je práci přiřazeno větší množství, jako např. při vytížení nebo dodávce. Pracovník určuje pořadí, ve kterém jsou položky vyskladněny. Pokud tuto možnost vyberete, budou k dispozici následující pole:
 <ul>
 <li><strong>Pole Ověřený uživatel přesměrován</strong> – vyberte pole, které pracovník naskenuje pro seskupení práce.</li>
 <li><strong>Štítek Ověřený uživatel přesměrován</strong> – zadejte text, který informuje o tom, jakou práci naskenovat při seskupení práce výdeje podle systému.</li>
@@ -271,7 +271,7 @@ Následující tabulka obsahuje popis těchto možností.
 </tr>
 <tr class="even">
 <td>Ukotvení</td>
-<td>Výběrem této možnosti můžete povolit pracovníkům určit umístění, které přepíše navrhovaná místa pro dodávku nebo nakládku. Všechna zbývající práce výdeje bude přesměrována na nové umístění. Tato možnost je užitečná například v případě, kdy se zaměstnanec chystá na vložení zboží v rámci objednávky 1 do přechodného skladového místa v překladišti 1, což ale není možné, protože předchozí vytížení zatím neopustilo skladové místo. Namísto čekání pro Dock 1 pracovní místo k dispozici, pracovník můžete rozhodnout použít pracovní místo pro Dock 2. V tomto případě pracovník přepíše navrhované pracovní umístění. Skladové místo pro všechny zbývající položky v rámci pracovní objednávky se aktualizuje a použije jako přechodné skladové místo 2. překladiště. Pokud vyberete tuto možnost, je nutné nastavit pole <strong>Ukotvil</strong>.</td>
+<td>Výběrem této možnosti můžete povolit pracovníkům určit umístění, které přepíše navrhovaná místa pro dodávku nebo nakládku. Všechna zbývající práce výdeje bude přesměrována na nové umístění. Tato možnost je užitečná například v případě, kdy se zaměstnanec chystá na vložení zboží v rámci objednávky 1 do přechodného skladového místa v překladišti 1, což ale není možné, protože předchozí vytížení zatím neopustilo skladové místo. Pracovník se může rozhodnout namísto čekání na uvolnění přechodného skladového místa překladiště 1 použít přechodné skladové místo překladiště 2. V tomto případě pracovník přepíše navrhované přechodné skladové místo. Skladové místo pro všechny zbývající položky v rámci pracovní objednávky se aktualizuje a použije jako přechodné skladové místo 2. překladiště. Pokud vyberete tuto možnost, je nutné nastavit pole <strong>Ukotvil</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Ukotvil</td>
@@ -380,7 +380,7 @@ Následující tabulka obsahuje popis těchto možností.
 </tr>
 <tr class="odd">
 <td>Kód šablony práce</td>
-<td>Vyberte šablonu práce, která v procesu vytvoří práci. Například pokud obdržíte zboží pro nákupní objednávku, zaskladnění práce bude vygenerován na základě šablony práce. Pokud nevyberete šablonu práce, 365 Microsoft Dynamics pro operace přiřadí šablonu na základě kritérií dotazu. Další informace týkající se šablon práce naleznete v tématu <a href="control-warehouse-location-directives.md">Řízení práce ve skladu pomocí šablon práce a směrnic umístění</a>.</td>
+<td>Vyberte šablonu práce, která v procesu vytvoří práci. Pokud například obdržíte položku pro nákupní objednávku, práce vyskladnění se vytvoří na základě šablony práce. Pokud nevyberete šablonu práce, aplikace Microsoft Dynamics 365 for Operations přiřadí šablonu na základě kritérií dotazu. Další informace týkající se šablon práce naleznete v tématu <a href="control-warehouse-location-directives.md">Řízení práce ve skladu pomocí šablon práce a směrnic umístění</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -409,8 +409,8 @@ Následující tabulka popisuje různé typy práce, se kterým můžete použí
 
 [Nastavení displeje mobilního zařízení skladu](change-warehouse-mobile-device-displays.md)
 
-[Nastavit položku nabídky mobilního zařízení pro dokončení práce typ nákupní objednávky (úkol guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
+[Nastavení položky nabídky v mobilním zařízení pro dokončení práce typu Nákupní objednávka (průvodce úkolem)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
 
-[Nastavit položku nabídky mobilního zařízení k registraci přijatého zboží (úkol guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
+[Nastavení položky nabídky v mobilním zařízení pro registraci přijatých položek (průvodce úkolem)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
 
 

@@ -51,7 +51,7 @@ Když je plánovaná objednávka potvrzena, přesune se do částí objednávek 
 <a name="see-also"></a>Viz také
 --------
 
-[Master plans](master-plans.md)
+[Hlavní plány](master-plans.md)
 
 
 

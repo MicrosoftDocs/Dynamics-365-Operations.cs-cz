@@ -1,6 +1,6 @@
 ---
-title: "Podle činností subdodavatelů"
-description: "Toto téma popisuje podrobně, jak používat subdodavatelských činností ve výrobním toku pro lean manufacturing."
+title: "Subdodávky na základě aktivit"
+description: "Toto téma podrobně popisuje, jak používat subdodavatelské aktivity ve výrobním toku pro lean manufacturing."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,84 +26,84 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="activity-based-subcontracting"></a>Podle činností subdodavatelů
+# <a name="activity-based-subcontracting"></a>Subdodávky na základě aktivit
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje podrobně, jak používat subdodavatelských činností ve výrobním toku pro lean manufacturing.
+Toto téma podrobně popisuje, jak používat subdodavatelské aktivity ve výrobním toku pro lean manufacturing.
 
-V Microsoft Dynamics 365 pro operace, existují dva přístupy pro subdodávky: výrobní zakázky a štíhlé výroby. V metodě lean manufacturing subdodavatelské práce je modelována jako službu, která souvisí s aktivity výrobního toku. Zvláštní typ typ nákladové skupiny s názvem **přímý outsourcing** byl zaveden, a subdodavatelské služby jsou již součástí kusovníku (BOM). Subdodavatelské práce nákladového účetnictví je plně integrována do ocenění řešení pro lean manufacturing.
+V aplikaci Microsoft Dynamics 365 for Operations existují dva přístupy k subdodávkám: výrobní zakázky a lean manufacturing. V přístupu lean manufacturing je subdodavatelská práce modelována jako služba, která souvisí s aktivitou výrobního toku. Zavádíme speciální typ nákladové skupiny s názvem **Přímý outsourcing** a subdodavatelské služby již nebudou součástí kusovníku. Nákladové účetnictví subdodavatelské práce je plně integrováno do řešení výpočtu nákladů pro lean manufacturing.
 
-## <a name="production-flows-that-involve-subcontractors"></a>Výrobní toky, které se týkají subdodavatelů
-Při činnosti jsou předmětem subdodávky, nezmění se základním principem výrobního toku. Materiál stále toky mezi lokacemi, proces aktivity převést materiál na výrobky a převodu činnosti přesunout materiál nebo výrobky z jednoho umístění do jiného. Můžete umístění modelu a pracovní buňky jako spravované dodavatele přiřazením účtu dodavatele, skladu nebo prostředku skupiny prostředků.  
+## <a name="production-flows-that-involve-subcontractors"></a>Výrobní toky, které zahrnují subdodavatele
+Základní princip výrobního toku se při subdodavatelských aktivitách nijak nemění. Materiál se stále pohybuje mezi lokacemi, aktivity proces převádí materiál na výrobky a aktivity převodu přesouvají materiál nebo výrobky z jednoho místa do druhého. Můžete modelovat lokace a pracovní buňky jako spravované dodavateli přiřazením účtu dodavatele ke skladu nebo prostředku skupiny prostředků.  
 
-Na základě těchto schopností, lean manufacturing nevyžaduje, žádné zvláštní funkce pro podporu toku materiálu a výrobků. Všechny možné scénáře zahrnující dodavatele lze modelovat poskytovatelům služeb na výrobu nebo přepravu na základě architektury výrobní tok a činností.  
+Na základě těchto schopností nevyžaduje lean manufacturing žádné zvláštní funkce pro podporu toku materiálu a výrobků. Všechny možné scénáře zahrnující dodavatele jako poskytovatele výroby nebo přepravních služeb lze modelovat na základě architektury výrobního toku a činností.  
 
-Subdodavatele lze použít mimo zásobník materiálu, který je umístěn na subdodavatele. Při manipulačních jednotek jsou vyprázdněny na subdodavatele, kanbanové karty jsou vráceny do buňky sestavení společně s další dodávkou. Zásobník materiálu na subdodavatele, jsou pak doplněny. Převody z subdodavatele a je možné modelovat jako explicitní převod činností na podporu procesu dodávky a vyskladnění. Pokud explicitní registrace není vyžadována k podpoře fyzické přepravy, činnost přenosu lze vynechat.  
+Například subdodavatel vychází ze zásobníku materiálu, který je umístěn na straně subdodavatele. Když jsou manipulační jednotky vyprázdněny na straně subdodavatele, kanbanové karty jsou vráceny do buňky sestavení společně s další dodávkou. Zásobník materiálu na straně subdodavatele je poté doplněn. Převody k subdodavateli a od něj je možné modelovat jako explicitní aktivity převodu na podporu procesu dodávky a vyskladnění. Pokud není explicitní registrace vyžadována k podpoře fyzické přepravy, aktivity převodu lze vynechat.  
 
-Vyrovnání celkové kapacity výrobního toku zatížení lze použít subdodavatele. Například výrobní tok je modelována pomocí naplánované kanban pravidla. Plánovači používá Rada plánovat a načíst úroveň plánování kanbanu obě pracovní buňky na požádání. Plánování také sleduje plán konsolidované dodávky zásobníku materiálu na **plán dodávek** stránky. Více subdodavatelům lze modelovat v jedné nebo více výrobních toků a může být více kanbanových pravidel, které lze použít k zadání stejného produktu do stejného umístění prostřednictvím různých aktivit. Plánování alternativní kanbanové pravidlo kanbanu, který byl původně vytvořen pro interní výrobu alternativní proces přeplánovat převést kanbany. Ve skutečnosti subdodávek povahu pracovní buňka nemá žádný vliv na výrobní tok. Stejné pracovní princip platí pro dva paralelní vnitřní pracovní buňky nebo dvě buňky subdodávek.   
+K vyrovnání zatížení celkové kapacity výrobního toku lze použít subdodavatele. Například výrobní tok je modelován pomocí plánových pravidel kanbanu. Plánovač používá desku kanbanového plánování pro naplánování a vyrovnání zátěže obou pracovních buněk poptávky. Plánovač také sleduje plán konsolidované dodávky pro zásobník materiálu na stránce **Plán dodávek**. Více subdodavatelů lze modelovat v jednom nebo více výrobních tocích a může existovat více kanbanových pravidel, která lze použít k dodání stejného produktu do stejného umístění prostřednictvím různých aktivit. Plánovač může převést kanbany na alternativní kanbanové pravidlo, aby došlo k přeplánování kanbanu, který byl původně vytvořen pro interní výrobu, na alternativní proces. Ve skutečnosti nemá subdodavatelská povaha pracovní buňky žádný vliv na výrobní tok. Stejné pracovní principy platí pro dvě paralelní interní pracovní buňky nebo pro dvě subdodavatelské buňky.   
 
-Stejně jako jakékoli jiné činnosti ve výrobním toku subdodavatelské aktivity spotřebovat a zadání zanesených v inventurách, než se nedostalo do inventur (rozpracované \[NV\]) a materiálu polotovarů a výrobků. Postupy pro plánování a provádění subdodavatelských činností ve všech případech jsou stejné. Navíc tyto zpracovat stejné jako postupy pro vnitřní práce.
+Stejně jako jakékoli jiné aktivity ve výrobním toku mohou subdodavatelské aktivity spotřebovávat a dodávat materiály a výrobky, které jsou uvedeny v zásobách, nejsou uvedeny v zásobách (nedokončená výroba \[NV\]) nebo mají podobu polotovarů. Postupy pro plánování a provádění subdodavatelských aktivit jsou ve všech případech stejné. Navíc jsou tyto procesy stejné jako procesy pro interní práci.
 
 ## <a name="purchase-process-for-subcontracted-activities-services"></a>Nákupní proces pro subdodavatelské aktivity (služby)
-Nákupní proces pro subdodavatelské aktivity je založena na fyzický tok materiálu, je registrovanou pokroku kanbanové úlohy, například, spustit nebo dokončit. Finanční tok, například náklady na práce subdodavatele je sekundární tok, který následuje fyzický tok. Ve stejnou dobu nákupní proces je nezávislý proces, který umožňuje ruční úpravy nákupních dokladů u každého kroku. Zde je nákupní proces pro subdodavatelské aktivity:
+Nákupní proces pro subdodavatelské aktivity je založen na fyzickém toku materiálu, který je registrovaný postupem kanbanové úlohy, například Spustit nebo Dokončit. Například finanční tok, náklady na dodavatelskou práci, je sekundární tok, který následuje fyzický tok. Ve stejnou dobu je nákupní proces nezávislým procesem, který umožňuje ruční úpravy nákupních dokladů u každého kroku. Zde je nákupní proces pro subdodavatelské aktivity (služby):
 
-1.  Vytvořte nákupní smlouvy. Nákupní smlouva je vytvořena pro službu a připojen k aktivity výrobního toku.
-2.  Vytvoření nákupní objednávky. Dílčí nákupní objednávky lze vytvořit pro služby, založené na plánované kanbanové úlohy. Úlohy pro stejné služby mohou být seskupeny do řádků nákupní objednávky podle dne, týdne nebo měsíce. Řádky nákupní objednávky lze vytvořit kdykoli po vytvoření kanbanových úloh. Řádky nákupní objednávky lze vytvořit i ve skutečnosti. Tato možnost je obvykle zaškrtnuto, pokud subdodavatele poskytuje služby bez dalších upozornění, podle kanbany nebo kanbanové karty, které obdrží subdodavatele. V tomto případě lze minimalizovat odchylky mezi nákupní objednávky a faktury.
-3.  Generovat kanbanové karty, materiál a výdejky k odeslání subdodavateli Příprava na zpracování. Založen na detailní modelování výrobní tok, Příprava se provádí na kanbanové desce pro aktivity procesu pomocí výdejky a příprava funkce. Příprava se provádí také Kanbanová deska pro úlohy převodu pomocí výdejky a zahájení nebo dokončení. Materiál na skladě oba procesy mohou být podporována WMS vyskladnění a dodávky procesu. Na požádání lze vytvořit přepravní doklad.
-4.  Generovat kanban manipulačních jednotek a kanbanové karty. Po zpracování, jsou vráceny karty od subdodavatele. Karty obsahují obvykle dodací list, který určuje fyzický materiál, který byl dodán. Odkaz na služby poskytované není vyžadováno. Dodání materiálu nebo produktu u zákazníka, je registrována na kanbanové desce, v závislosti na kanbanové karty. (Pro aktivity procesu kanbanu nebo Kanbanová deska pro úlohy převodu používá, v závislosti na Modelovaný činnosti.).
-5.  Vytvoření oznámení o poradní. Poradní příjmu lze nahradit dodacího listu dokumentu pro přijaté služby. Informační zpravodaje příjmu mohou být generovány založené na dokončení kanbanových úloh pro subdodavatelské aktivity pro vybrané období. Pro příjem každé úlohy jsou vytvořeny informační zpravodaje řádku související nákupní objednávky. Poradní oznámení můžete vytisknout a subdodavateli odeslána jako potvrzení o přijetí.
-6.  Generování faktury.
+1.  Vytvořte nákupní smlouvy. Nákupní smlouva je vytvořena pro službu a připojena k aktivitě výrobního toku.
+2.  Vytvoření nákupní objednávky. Dílčí nákupní objednávky lze vytvořit pro služby, na základě plánovaných kanbanových úloh. Úlohy pro stejnou službu mohou být seskupeny do řádků nákupní objednávky podle dne, týdne nebo měsíce. Řádky nákupní objednávky lze vytvořit kdykoli po vytvoření kanbanových úloh. Řádky nákupní objednávky lze dokonce vytvořit i poté. Tato možnost je obvykle zvolena tehdy, když subdodavatel poskytuje služby bez dalších upozornění, podle kanbanů nebo kanbanových karet, které subdodavatele obdrží. V tomto případě lze minimalizovat odchylky mezi nákupní objednávkou a fakturou.
+3.  Vygenerujte kanbanové karty, materiál a výdejky pro odeslání subdodavateli na přípravu ke zpracování. Na základě detailního modelování výrobního toku se příprava provádí na kanbanové desce pro aktivity procesu pomocí výdejky a funkce přípravy. Případně se příprava provádí také na kanbanová desce pro úlohy převodu pomocí výdejky a zahájení nebo dokončení. Pro materiál na skladě lze oba procesy podporovat pomocí procesu WMS-výdejky a dodávky. Na požádání lze vytvořit přepravní doklad.
+4.  Vygenerujte manipulační jednotky kanbanu a kanbanové karty. Po zpracování jsou vráceny karty od subdodavatele. Karty obsahují obvykle poznámku k dodání, která určuje fyzický dodaný materiál. Odkaz na poskytované služby není vyžadován. Doručení materiálu nebo produktu u zákazníka je registrováno na kanbanové desce, v závislosti na kanbanových kartých. (V závislosti na modelovaných aktivitách se použije buď kanbanová deska pro aktivity procesu nebo kanbanová deska pro úlohy převodu.).
+5.  Vytvořte avízo o přijetí. Avízo o přijetí lze pro přijaté služby použít jako náhradu ze dokument dodacího listu. Avíza o přijetí lze vygenerovat na základě dokončených kanbanových úloh pro subdodavatelské aktivity za vybrané období. Pro příjem každé úlohy jsou vytvořena avíza pro související řádky nákupní objednávky. Avízo o přijetí můžete vytisknout a odeslat subdodavateli jako potvrzení o přijetí.
+6.  Vygenerujte fakturu.
 
-Při fakturaci subdodavatele na dobu ukončení procesu. Odpovídající faktury se provádí proti příjem informačních zpravodajů, které jsou vytvořeny. Vzhledem k tomu, že přijetí zpravodaje představují přesné fyzického příjmu materiálu, třícestné párování je zjednodušeno.
+Proces skončí, když je dodavatel za období vyfakturován. Párování faktury se provádí proti vytvořeným avízům o přijetí. Vzhledem k tomu, že avíza o přijetí představují přesné fyzické přijetí materiálu, je zjednodušené třícestné párování.
 
-## <a name="configuring-activities-for-subcontracting"></a>Konfigurace aktivity pro subdodávky
-Následující části popisují, jak nakonfigurovat pro subdodavatelské aktivity.
+## <a name="configuring-activities-for-subcontracting"></a>Konfigurace aktivit pro subdodávky
+Následující části popisují, jak nakonfigurovat aktivity pro subdodávky.
 
 ### <a name="subcontracted-services"></a>Subdodavatelské služby
 
-Platba zboží, který je používán podle činností subdodavatelů, musí být produkt, který má následující vlastnosti:
+Platební položka, která se používá u subdodávek na základě aktivit, musí být produktem, který má následující vlastnosti:
 
--   **Typ přípravku:** služby
--   **Skupina skladových modelů:** není na skladě
+-   **Typ produktu:** Služba
+-   **Skupina modelů zásob::** Neskladová
 
-Tento požadavek zajišťuje použití první v první out (FIFO) skladový model. **Poznámka:** výpočet ceny produktů vyžaduje definovat standardní náklady na servis. Nákupní smlouva s dodavatelem je vyžadován. Službu nelze jinak podle činností subdodavatelů.
+Tento požadavek zajišťuje použití modelu zásob FIFO. **Poznámka:** Výpočet nákladů na produkt vyžaduje, aby byly definovány standardní náklady na službu. Nákupní smlouva s dodavatelem je vyžadována. Službu nelze jinak použít u subdodávek na základě aktivit.
 
-### <a name="subcontracted-process-activities"></a>Proces subdodavatelských činností
+### <a name="subcontracted-process-activities"></a>Aktivity subdodavatelského procesu
 
-Chcete-li konfigurovat aktivitu procesu jako aktivitu subdodávek, postupujte takto.
+Chcete-li konfigurovat aktivitu procesu jako subdodavatelskou aktivitu, postupujte takto.
 
-1.  Nastavte buňku práce subdodavatele. Ke konfiguraci pracovní buňky zadána, je nutné vytvořit prostředek **dodavatele** zadejte a přidružit pracovní buňka (skupina prostředků). Kategorie nákladů za běhu **přímý outsourcing** by měl být přiřazen typ nákladové skupiny pracovní buňku. Nákladové kategorie pro nastavení a množství nejsou povinné.
-2.  Po vytvoření aktivity procesu a související s buňkou práce subdodavatele, je nutné nakonfigurovat služby pro aktivitu před aktivací verze výrobního toku. Na dokončení tohoto kroku **aktivity****podrobnosti** stránky. U činností, které jsou přidruženy k buňce subdodavatelské práce **podmínky služby** s náhledem se zobrazí. Na této záložce s náhledem přidáte výchozí služba, která je platná pro všechny položky výstup. Vyžadují-li konkrétní výstupní položky různých služeb nebo jinou službu parametry výpočtu (například poměr různých služeb), můžete přidat další služby k aktivitě.
+1.  Nakonfigurujte subdodavatelskou pracovní buňku. Ke konfiguraci pracovní buňky jako subdodavatelské je nutné vytvořit prostředek typu **Dodavatel** a přidružit ho k pracovní buňce (skupině prostředků). Nákladová kategorie typu nákladové skupiny **Přímý outsourcing** musí být přiřazena k pracovní buňce. Nákladové kategorie pro nastavení a množství nejsou povinné.
+2.  Po vytvoření aktivity procesu a navázání na subdodavatelskou pracovní buňku je nutné nakonfigurovat službu pro aktivitu před tím, než můžete aktivovat verzi výrobního toku. Tento krok dokončíte na stránce **Podrobnosti o** **aktivitě**. U činností, které jsou přidruženy k subdodavatelské pracovní buňce, se zobrazí pevná záložka **Podmínky služby**. Na této pevné záložce přidejte výchozí službu, která je platná pro všechny výstupní položky. Vyžadují-li konkrétní výstupní položky různé služby nebo různé parametry výpočtu služby (například poměr různých služeb), můžete přidat další služby k aktivitě.
 
-## <a name="subcontracted-transfer-activities"></a>Na činnost přenosu subdodávek
-Aktivita převodu je nakonfigurován jako subdodavatelské aktivity, v závislosti na **dopravce** nastavení převodu činnosti. Existují tyto možnosti:
+## <a name="subcontracted-transfer-activities"></a>Aktivity subdodavatelského převodu
+Aktivita převodu je nakonfigurován jako subdodavatelská aktivita, v závislosti na nastavení aktivity převodu **Dopravce**. Existují tyto možnosti:
 
--   **Přepravce** – aktivita je zadána Pokud spravuje přenos ze skladu dodavatele (jak je definován vlastností skladu). Všechny vybrané nákupní smlouvy pro služby musí mít stejné ID dodavatele jako sklad.
--   **Příjemce** – aktivita je zadána Pokud převod na sklad spravuje dodavatele (jak je definován vlastností skladu). Všechny vybrané nákupní smlouvy pro služby musí mít stejné ID dodavatele jako sklad.
--   **Carrier** – aktivita je zadána dodavateli, který poskytuje službu. Platit, dopravce musí být vytvořen pro řízení skladu a musíte mít účet přiřazený dodavatel.
+-   **Přepravce** – Aktivita je subdodavatelská, pokud je převod ze skladu řízen dodavatelem (jak je definováno vlastností skladu). Všechny vybrané nákupní smlouvy pro služby musí mít stejné ID dodavatele jako sklad.
+-   **Příjemce** – Aktivita je subdodavatelská, pokud je převod do skladu řízen dodavatelem (jak je definováno vlastností skladu). Všechny vybrané nákupní smlouvy pro služby musí mít stejné ID dodavatele jako sklad.
+-   **Dopravce** – Aktivita je zadána dodavateli, který poskytuje službu. Aby byl dopravce platný, musí být vytvořen pro řízení skladu a musí mít přiřazený dodavatelský účet.
 
-Pro aktivity procesu, je nutné nakonfigurovat výchozí služby pro subdodavatelské přepravní činnost na **podmínky služby** s náhledem **aktivity****podrobnosti** stránky.
+Pokud jde o aktivity procesu, je nutné nakonfigurovat výchozí službu pro aktivity subdodavatelského převodu na pevné záložce **Podmínky služby** stránky **Podrobnosti o****aktivitě**.
 
 ## <a name="service-quantity-calculation"></a>Výpočet množství služby
-Celý nákupní proces je založen na odkaz na položku služby. Odkaz na tuto položku se měří v měrných služby. Služby se obvykle měří v počtu služeb (jednotky) nebo v čase. Pro výpočet množství servisu na základě registrovaných dokončení kanbanových úloh, můžete použít následující metody:
+Celý nákupní proces je založen na odkazu položky pro službu. Tento odkaz položky se měří v měrné jednotce služby. Služby se obvykle měří buď v počtu služeb (jednotky) nebo v čase. Pro výpočet množství služeb na základě registrovaných dokončení kanbanových úloh můžete použít následující metody:
 
--   **Výpočet, který je založen na počet úloh** – se rovná jedné kanbanové úlohy *n* jednotky bez ohledu na množství produktu, který je součástí služby. V lean manufacturing, jedna úloha odpovídá jeden manipulační jednotky. Tento způsob výpočtu se vztahuje na všechny služby, které mají pevnou cenu na manipulační jednotku. Proto tato metoda se obvykle týká aktivit převodu. Však můžete také použít proces činností, které zpracovávají celé manipulační jednotky.
--   **Výpočet, který je založen na množství produktu** – množství servisu je vzhledem k množství produktu, které je naplánováno dodány. Při výpočtu množství produktu dodané množství chyb můžete buď zahrnuty nebo vyloučeny. Tento způsob výpočtu se vztahuje na všechny případy, kdy dohodnuté služby cena za jednotku zpracovaných produktů.
--   **Výpočet, který je založen na čas aktivity** – časy teoretické činnosti se počítají, založené na době zpracování aktivity zpracování celkové množství a poměr propustnosti zpracovaného produktu. Tento způsob výpočtu se vztahuje na služby, které jsou placené hodiny a mají odchylky v každém zpracovaného produktu.
+-   **Výpočet, který je založen na počtu úloh** – Jedna kanbanová úloha se rovná počtu *n* jednotek služby, bez ohledu na množství dodaného produktu. V lean manufacturingu odpovídá jedna úloha jedné manipulační jednotce. Tato metoda výpočtu se vztahuje na všechny služby, které mají pevnou cenu za manipulační jednotku. Proto se tato metoda obvykle používá na aktivity převodu. Lze však rovněž použít na aktivity procesu, které zpracovávají manipulační jednotky.
+-   **Výpočet, který je založen na množství produktu** – Množství služeb je relativní vzhledem k množství produktu, které je naplánováno/dodáno. Při výpočtu dodaného množství produktu lze buď zahrnout nebo vyloučit množství chyb. Tato metoda výpočtu se vztahuje na všechny případy, kdy je cena služby za jednotku zpracovaného produktu odsouhlasená.
+-   **Výpočet, který je založen na času aktivity** – Časy teoretické aktivity se počítají na základě času zpracování aktivity, celkového zpracovaného množství a poměru propustnosti zpracovaného produktu. Tato metoda výpočtu se vztahuje na služby, které jsou placené hodinově a mají odchylky v čase na zpracovaný produkt.
 
-## <a name="cost-accounting-of-subcontracted-services"></a>Účtování nákladů služeb subdodavatele
-Při zaúčtování příjemky poradní nebo dodavatele dodacího listu nákupní objednávky, která byla vytvořena pro výrobní tok (jinými slovy, nákupní objednávky, která byla generována na základě kanbanových úloh pro subdodavatelské aktivity), je hodnota příjmu zaúčtovány na účty nedokončené výroby výrobního toku. Odchylek faktur jsou také zaúčtovány do výrobní tok. Nákladová kategorie pro subdodavatelské práce byly zavedeny. Tuto nákladovou kategorii povolit průhledné sledování hodnoty subdodavatelské práce, která je přidělena NV a spotřebovaného za období.  
+## <a name="cost-accounting-of-subcontracted-services"></a>Nákladové účetnictví subdodavatelských služeb
+Když je zaúčtováno avízo o přijetí nebo dodací list dodavatele na nákupní objednávce, která byla vytvořená pro výrobní tok (jinými slovy, na nákupní objednávce, která byla generována na základě kanbanových úloh pro subdodavatelské aktivity), je hodnota přijetí zaúčtována v účtech NV výrobního toku. Odchylky faktur jsou také zaúčtovány do výrobního toku. Byla zavedena nákladová kategorie pro subdodavatelské práce. Tato nákladová kategorie umožňuje jasnější sledování hodnoty subdodavatelské práce, která je přidělena do NV a spotřebována za období.  
 
-Zpětné účtování nákladů pro lean manufacturing konci ocenění období vypočte skutečné odchylky výrobků, které jsou vyrobeny z výrobního toku během období ocenění.
+Zpětné účtování nákladů pro lean manufacturing na konci nákladového období vypočte skutečné odchylky výrobků, které jsou vyrobeny z výrobního toku během nákladového období.
 
-## <a name="modeling-transfers-as-subcontracted-activities"></a>Modelování přenosu jako subdodavatelské aktivity
-Uživatelé často považují za nevýrobních dopravy a domníváte se přidá žádnou hodnotu. Srovnání nákladů na subdodávky pro interní výrobní náklady však musí být zvážen aktivit dodatečné dopravní náklady. Přepravní náklady v rámci nákladů na dodání výrobků k zákazníkovi by model výrobního toku, které rozložena na více místech a vyžaduje dopravu. 
+## <a name="modeling-transfers-as-subcontracted-activities"></a>Modelování převodů jako subdodavatelských aktivit
+Lidé často považují dopravu za nevýrobní a domnívají se, že nepřináší žádnou přidanou hodnotu. Nicméně při srovnání nákladů na subdodávky s náklady interní výroby je třeba vzít náklady na dodatečné přepravní aktivity do úvahy. Výrobní tok, který zahrnuje více lokací a vyžaduje přepravní služby, musí modelovat náklady na dopravu jako součást nákladů na dodání výrobků odběrateli. 
 
-Podle činností subdodavatelů v lean manufacturing umožňuje integrovat dopravci a dopravy dodavatele, které se přesouvají mezi umístění výrobní tok materiálu a výrobků. Modelování přenosu činnost, můžete přiřadit dopravce nebo dodavatele. Aktivity nebo úlohy převod je založen na služby a nákupní smlouvy a můžete vytvořit nákupní objednávky a příjem informačních zpravodajů, na základě skutečných přenos úloh. Tato funkce je stejná jako funkce pro proces subdodavatelských činností.  
+Subdodávky na základě aktivit v lean manufacturingu vám umožňují integrovat dopravce a dodavatele přepravy, kteří přesouvají materiál a výrobky mezi místy výrobního toku. Modelováním aktivity převodu můžete přiřadit dopravce nebo dodavatele. Aktivity/úlohy převodu jsou založeny na službě a nákupní smlouvě a lze vytvořit nákupní objednávky a avíza o přijetí na základě skutečných úloh převodu. Tato funkce je stejná jako funkce pro proces subdodavatelských aktivit.  
 
-Proto Dynamics 365 pro operace nyní podporuje výpočet Kusovníku, která zahrnuje dopravu, vytvoření související nákupní objednávky, integrované potvrzení registrace a integraci dopravní náklady na servis do nákladů výrobní tok.
+Proto Dynamics 365 for Operations nyní podporuje výpočet kusovníku, který zahrnuje přepravní služby, vytvoření souvisejících nákupních objednávek, integrovanou registraci příjmu a integraci nákladů na přepravní služby do výpočtu nákladů výrobního toku.
 
 
 

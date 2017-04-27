@@ -1,5 +1,5 @@
 ---
-title: "Rozdělit období v periodických denících."
+title: "Rozdělení období do periodických deníků"
 description: "Periodické deníky se někdy nazývají opakované deníky, protože částka, text a ostatní informace se opakují při každém zaúčtování deníku. Při vytváření deníku zadáte interval pro opakování, například dny nebo měsíce. Můžete také určit počet období, pro které bude deník účtován."
 author: ShylaThompson
 manager: AnnBe
@@ -24,28 +24,28 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="split-periods-in-periodic-journals"></a>Rozdělit období v periodických denících.
+# <a name="split-periods-in-periodic-journals"></a>Rozdělení období do periodických deníků
 
 [!include[banner](../includes/banner.md)]
 
 
 Periodické deníky se někdy nazývají opakované deníky, protože částka, text a ostatní informace se opakují při každém zaúčtování deníku. Při vytváření deníku zadáte interval pro opakování, například dny nebo měsíce. Můžete také určit počet období, pro které bude deník účtován.
 
-Chcete-li opakovaně načíst a zaúčtování řádků transakcí, můžete použít **periodické deníky** stránky. Pro právnické osoby v České republice, Estonsko, Maďarsko, Lotyšsko, Litvu, Polsko a Rusko **periodické deníky** stránky je prodloužena o rozdělení období funkce. <!---For more information, see [Create and process a periodic journal](http://ax.help.dynamics.com/en/wiki/create-and-process-a-periodic-journal/).-->
+Pro opakované načtení a zaúčtování řádků transakcí můžete použít stránku **Periodické deníky**. Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsku, Polsku a Rusku je stránka **Periodické deníky** rozšířena o funkci rozdělení na období. <!---For more information, see [Create and process a periodic journal](http://ax.help.dynamics.com/en/wiki/create-and-process-a-periodic-journal/).-->
 
-### <a name="example-split-for-periods-in-periodic-journals"></a>Příklad: Rozdělit mezi období v periodických denících.
+### <a name="example-split-for-periods-in-periodic-journals"></a>Příklad: Rozdělení na období do periodických deníků
 
-Pojišťovna nabízí slevy pro prepaying pojistné za celý rok organizaci. Platba je zaúčtována do majetkového účtu, například jako předplatné pojistného. Potom umoříte vaše měsíční náklady na pojistné během celého roku vytvořením periodického deníku, který obsahuje kredit na předplaceném účtu pojištění a debet na výdajovém účtu pojištění. V takovém případě můžete rozdělit období funkce. Klepněte **rozdělit mezi období** tlačítka v podokně akcí **periodického deníku****řádky** stránku a potom zadejte následující pole.
+Pojišťovna nabízí organizaci slevu při předplacení pojistného za celý rok. Platba je zaúčtována do majetkového účtu, například jako předplatné pojistného. Potom umoříte vaše měsíční náklady na pojistné během celého roku vytvořením periodického deníku, který obsahuje kredit na předplaceném účtu pojištění a debet na výdajovém účtu pojištění. V takovém případě můžete použít funkci rozdělení na období. Klikněte na tlačítko **Rozdělit mezi období** v podokně akcí na stránce **Řádky periodického****deníku** a potom zadejte následující pole.
 
 |                       |                                                                                                                                                                                                             |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Field**             | **Description**                                                                                                                                                                                             |
-| **Start date**        | Vyberte datum pro první řádek periodického deníku.                                                                                                                                                        |
-| **Number of periods** | Zadejte počet období, na které chcete rozdělit řádek deníku. Tato hodnota určuje, kolik nových transakcí je generováno. Částka transakce je rovnoměrně rozložena mezi nové transakce. |
-| **Unit**              | Vyberte měrnou jednotku pro období.                                                                                                                                                                  |
-| **Interval období**   | Určete interval mezi účetní období.                                                                                                                                                              |
+| **Pole**             | **Popis**                                                                                                                                                                                             |
+| **Počáteční datum**        | Vyberte datum pro první řádek periodického deníku.                                                                                                                                                        |
+| **Počet období** | Zadejte počet období, napříč kterými má být řádek deníku rozdělen. Tato hodnota určuje, kolik nových transakcí je generováno. Částka transakce je rovnoměrně rozložena mezi nové transakce. |
+| **Jednotka**              | Vyberte měrnou jednotku pro dané období.                                                                                                                                                                  |
+| **Interval období**   | Určete interval mezi účetními obdobími.                                                                                                                                                              |
 
-Generovat čtvrtletní zaúčtování, zadejte **4** v **počet období** pole: vyberte **měsíců** v **jednotky** pole a zadejte **3** v **interval období** pole. Systém generuje čtyři řádky deníku, každý pro jednu čtvrtinu částky řádku deníku, který jste zadali v intervalech 3 měsíce. Podobná funkce je také k dispozici pro finanční deník. Při zobrazení řádky finančního deníku, vyberte **periodický deník**&gt;**deníku Uložit**.
+Chcete-li například generovat čtvrtletní zaúčtování, zadejte hodnotu **4** do pole **Počet období**, vyberte možnost **Měsíce** v poli **Jednotka** a zadejte hodnotu **3** do pole **Interval období**. Systém generuje čtyři řádky deníku, každý pro jednu čtvrtinu částky řádku deníku, který jste zadali ve 3měsíčních intervalech. Podobná funkce je také k dispozici pro hlavní deník. Při zobrazení řádků hlavního deníku vyberte **Periodický deník**&gt;**Uložit deník**.
 
 
 

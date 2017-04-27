@@ -1,6 +1,6 @@
 ---
 title: "Analýza trendů a vzorců prodeje"
-description: "Mohou studovat prodejní trendy a vzorce v reálném čase v Microsoft Dynamics 365 pro operace - Retail."
+description: "Můžete studovat trendy prodeje a vzory v reálném čase v aplikaci Microsoft Dynamics 365 for Operations - Retail."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 85183
 ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
 ms.search.region: Global
@@ -30,19 +30,19 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](includes/banner.md)]
 
 
-Mohou studovat prodejní trendy a vzorce v reálném čase v Microsoft Dynamics 365 pro operace - Retail.
+Můžete studovat trendy prodeje a vzory v reálném čase v aplikaci Microsoft Dynamics 365 for Operations - Retail.
 
-Jako součást Dynamics 365 operací, uživatelé mohou studovat prodejní trendy a vzorce v reálném čase přes různé úrovně hierarchie organizace v období let pomocí out-of-box **kanál prodeje podle roku** sestavy. Tuto sestavu můžete otevřít z některého z následujících umístění:
+Jako součást aplikace Dynamics 365 for Operations mohou uživatelé studovat prodejní trendy a vzorce v reálném čase napříč rozdílnými úrovněmi organizační hierarchie v rozsahu několika let, a to pomocí standardní sestavy **Sestava kanálu prodeje podle roku**. Tuto sestavu můžete otevřít z některého z následujících umístění:
 
--   **Retail store management** prostoru Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**kanály**&gt;**Retail store management**&gt;**zprávy**&gt;**kanál prodeje podle roku**
--   **Retail store Finance** prostoru Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**kanály**&gt;**Retail store Finance**&gt;**zprávy**&gt;**kanál prodeje podle roku**
--   **Dotazy a sestavy** sekci Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**dotazy a sestavy**&gt;**sestavy prodeje**&gt;**kanál prodeje podle roku**
+-   **Řízení maloobchodu** – pracovní prostor aplikace Dynamics 365 for Operations &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava kanálu prodeje podle roku**
+-   **Finance maloobchodu** – pracovní prostor aplikace Dynamics 365 for Operations &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Kanály** &gt; **Finance maloobchodu** &gt; **Sestavy** &gt; **Sestava kanálu prodeje podle roku**
+-   **Dotazy a sestavy** - oddíl aplikace Dynamics 365 for Operation &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava kanálu prodeje podle roku**
 
 Uživatelé mohou také studovat prodejní trendy a vzorce v hodinovém grafu napříč rozdílnými úrovněmi organizační hierarchie v rozsahu určitého období, a to pomocí standardní sestavy **Sestava prodejního kanálu podle hodin**. Tuto sestavu můžete otevřít z některého z následujících umístění:
 
--   **Retail store management** prostoru Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**kanály**&gt;**Retail store management**&gt;**zprávy**&gt;**kanálu prodej sestavou hodinu**
--   **Retail store Finance** prostoru Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**kanály**&gt;**Retail store Finance**&gt;**zprávy**&gt;**kanálu prodej sestavou hodinu**
--   **Dotazy a sestavy** sekci Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**dotazy a sestavy**&gt;**sestavy prodeje**&gt;**kanálu prodej sestavou hodinu**
+-   **Řízení maloobchodu** – pracovní prostor aplikace Dynamics 365 for Operations &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava kanálu prodeje podle hodin**
+-   **Finance maloobchodu** – pracovní prostor aplikace Dynamics 365 for Operations &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Kanály** &gt; **Finance maloobchodu** &gt; **Sestavy** &gt; **Sestava kanálu prodeje podle hodin**
+-   **Dotazy a sestavy** - oddíl aplikace Dynamics 365 for Operation &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava kanálu prodeje podle hodin**
 
 
 

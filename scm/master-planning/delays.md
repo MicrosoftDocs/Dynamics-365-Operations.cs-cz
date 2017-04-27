@@ -44,7 +44,7 @@ Způsob výpočtu zpoždění pro skupinu disponibility lze upravit. Skupinu dis
 
 Na stránce **Parametry hlavního plánování** můžete nastavit čas zahájení výpočtu zpoždění. Pokud je objednávka splněna po tomto termínu, k datu zpoždění objednávky se přičte jeden den. 
 
-**Poznámka:** v dřívějších verzích, byly nazývány zpoždění vypočtené *termínové zprávy*, zpožděné datum byla označována jako *termínu*, a zpožděné transakce byla označována jako *transakce, který byl budoucí sada*.
+**Poznámka:** V předchozích verzích se vypočtená zpoždění nazývala *termínové zprávy*, datum zpoždění se nazývalo *datum termínu* a zpožděná transakce se označovala jako *transakce nastavená na budoucí datum*.
 
 <a name="see-also"></a>Viz také
 --------

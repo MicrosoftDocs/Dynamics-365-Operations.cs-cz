@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16081
 ms.assetid: 426a9be7-a931-4780-b372-e06f6083dd60
 ms.search.region: global
@@ -36,11 +36,11 @@ Tento článek popisuje, jak lze nastavit program trvání pro kontaktní střed
 V rámci programu trvání, který je znám také jako program opakování objednávky, mohou odběratelé přijímat pravidelné dodávky produktu podle předem určeného plánu. Jednotlivé dodávky mohou obsahovat různé produkty, stejně jako v případě klub „kniha měsíce“ nebo je možné opakovaně odesílat stejný výrobek. K nastavení programu trvání je třeba dokončit následující úlohy.
 
 1.  Nastavte parametry programu trvání na stránce **Parametry kontaktního střediska**.
-2.  Vytvořte program trvání, který určuje podrobnosti, jako je platební kalendář, časové období dodávky a zda probíhá účtování předem. Je také nutné přidat seznam produktů, které spadají do programu trvání. Každý výrobek obdrží číslo ID události přiřazené postupně, počínaje 1. Událost ID určit pořadí, ve kterém jsou výrobky odeslány v.
+2.  Vytvořte program trvání, který určuje podrobnosti, jako je platební kalendář, časové období dodávky a zda probíhá účtování předem. Je také nutné přidat seznam produktů, které spadají do programu trvání. Každý výrobek obdrží číslo ID události přiřazené postupně, počínaje 1. ID události určí pořadí, ve kterém jsou výrobky odesílány.
     -   Pokud zákazníci obdrží různé produkty v rámci jednotlivých dodávek, produkty jsou odeslány v postupném pořadí podle jejich ID události a počínaje aktuální událostí.
     -   Pokud odběratelé přijímají stejný produkt v rámci každé dodávky, bude seznam obsahovat pouze jeden produkt, který má jedno ID události. Stejná událost se děje opakovaně. Můžete zadat počet opakování každé události.
 
-3.  Vytvořte nadřazený produkt, který představuje kontinuitu program vytvořený úkol 2. Pokud přidáte tento produkt do prodejní objednávky, **kontinuity** otevření stránky. Tuto stránku můžete poté použít k vytvoření samotné trvalé objednávky. Nadřazený produkt neurčuje jednotlivé produkty, které odběratel obdrží v jednotlivých dodávkách.
+3.  Vytvořte nadřazený produkt, který představuje program trvání vytvořený v úkolu 2. Pokud přidáte tento produkt do prodejní objednávky, otevře se stránka **Trvání**. Tuto stránku můžete poté použít k vytvoření samotné trvalé objednávky. Nadřazený produkt neurčuje jednotlivé produkty, které odběratel obdrží v jednotlivých dodávkách.
 
 Poté, co jste nastavili program trvání podle pokynů výše, můžete vytvořit trvalou objednávku pro odběratele. Je také třeba provádět následující úlohy údržby.
 

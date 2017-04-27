@@ -1,6 +1,6 @@
 ---
 title: "Domovská stránka nákladového účetnictví"
-description: "Toto téma obsahuje seznam témat nápovědy a další prostředky, které jsou k dispozici pro nákladové účetnictví."
+description: "V tomto tématu je seznam témat nápovědy a dalších zdrojů, které jsou k dispozici pro nákladové účetnictví."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,12 +29,12 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma obsahuje seznam témat nápovědy a další prostředky, které jsou k dispozici pro nákladové účetnictví.
+V tomto tématu je seznam témat nápovědy a dalších zdrojů, které jsou k dispozici pro nákladové účetnictví.
 
-Modul Nákladové účetnictví umožňuje proveďte následující kroky:
+Modul Nákladové účetnictví vám umožní provádět následující kroky:
 
--   Definice rozměrů prvku nákladů, import členů dimenze prvek nákladů a mapování rozměrů prvku nákladů.
--   Definovat náklady rozměry objektu a import nákladů členů dimenze objektu.
+-   Definovat dimenze prvku nákladů, importovat členy dimenze prvku nákladů a mapovat dimenze prvku nákladů.
+-   Definovat dimenze objektu nákladů a importovat členy dimenze objektu nákladů.
 -   Definování nebo import statistických dimenzí.
 -   Tvorba šablon poskytovatelů statistického měření.
 -   Tvorba hlavní knihy nákladového účetnictví
@@ -49,29 +49,29 @@ Modul Nákladové účetnictví umožňuje proveďte následující kroky:
 
 ## <a name="get-started"></a>Začínáme
 
-Praktická cvičení pro nákladové účetnictví poskytuje základní kroky konfigurace Microsoft Dynamics 365 pro operace – nákladového účetnictví tak, aby Analýza skutečných nákladů. Poskytuje také řadu postupů, které lze dokončit v pořadí, které jsou uvedeny.
+Praktický seminář pro nákladové účetnictví poskytuje základní kroky konfigurace aplikace Microsoft Dynamics 365 for Operations – Cost Accounting, abyste mohli provést analýzu skutečných nákladů. Poskytuje také řadu postupů, které lze dokončit v pořadí, ve kterém se zobrazují.
 
--   [Seznámení s nákladového účetnictví](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc) (bílý papír a vyžaduje účet CustomerSource)
+-   [Začínáme s nákladovým účetnictvím](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc) (technický dokument vyžadující účet CustomerSource)
 
-Porozumět použití nákladového účetnictví pro denní práci, je třeba pochopit tyto koncepty.
+K pochopení způsobu použití nákladového účetnictví pro každodenní práci je nutné těmto postupům rozumět.
 
--   [Key terms in Cost accounting](terms-cost-accounting.md)
--   [Prvky nákladů a nákladů rozměry prvku](cost-elements.md)
--   [Map different cost element dimension members to a common set of cost element dimension members](map-cost-elements-dimension-members.md)
--   [Vytváření nákladových položek](http://ax.help.dynamics.com/en/wiki/create-cost-elements/) (úkol guide)
--   [Cost object dimensions](cost-objects.md)
--   [Vytvoření objektů náklady](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (úkol guide)
+-   [Klíčové termíny v nákladovém účetnictví](terms-cost-accounting.md)
+-   [Prvky nákladů a dimenze prvku nákladů](cost-elements.md)
+-   [Mapování různých členů dimenze prvku nákladů do běžné sady členů dimenze prvku nákladů](map-cost-elements-dimension-members.md)
+-   [Vytváření prvků nákladů](http://ax.help.dynamics.com/en/wiki/create-cost-elements/) (průvodce úkolem)
+-   [Dimenze objektu nákladů](cost-objects.md)
+-   [Vytváření objektů nákladů](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (průvodce úkolem)
 
-## <a name="cost-control-mobile-workspace"></a>Mobilní pracovní prostor řízení nákladů
-S mobilní pracovní náklady řízení náklady center manažeři mohou zobrazit výkon náklady center kdykoli a kdekoli.
+## <a name="cost-control-mobile-workspace"></a>Mobilní pracovní prostor kontroly nákladů
+Díky mobilnímu pracovní prostoru řízení nákladů mohou manažeři nákladových středisek kdykoliv a kdekoliv vidět výkonnost středisek.
 
--   [Cost control mobile workspace](cost-controlling-mobile-workspace.md)
+-   [Mobilní pracovní prostor kontroly nákladů](cost-controlling-mobile-workspace.md)
 
-## <a name="cost-accounting-analysis-power-bi-content"></a>Nákladové účetnictví analýzy obsahu Power BI
-Analýza obsahu Microsoft Power BI nákladového účetnictví je určena pro náklady řadičů a každý, kdo je odpovědný za provádění řízení nákladů organizace. Zahrnuje klíčové metriky, jako jsou náklady, velikost a nákladové sazby podle skutečných nákladů, rozpočtové náklady a Náklady pružného rozpočtu. Používá data transakce nákladového účetnictví do Microsoft Dynamics 365 pro operace a poskytuje agregované zobrazení nákladů pro celou organizaci, v jedné měně pro hlášení. Vedoucí data můžete filtrovat podle nákladové objekty pro provádění řízení nákladů organizačních jednotek, i v případě, že organizace může mít více právních subjektů.
+## <a name="cost-accounting-analysis-power-bi-content"></a>Obsah analýzy nákladového účetnictví v Power BI
+Obsah analýzy nákladového účetnictví v sadě nástrojů Microsoft Power BI je určen pro kontrolory nákladů nebo jakoukoli osobu, která je odpovědná za provádění kontroly nákladů organizace. Zahrnuje klíčové metriky, jako jsou náklady, velikost a nákladové sazby podle skutečných nákladů, rozpočtových nákladů a nákladů pružného rozpočtu. Používá data transakce z nákladového účetnictví v aplikaci Microsoft Dynamics 365 for Operations a poskytuje agregované zobrazení nákladů pro celou organizaci v jedné měně vykazování. Manažeři mohou data filtrovat podle objektů nákladů pro provádění kontroly nákladů jejich organizačních jednotek, a to i v případě, že organizace má několik právnických osob.
 
--   [Nákladové účetnictví analýzy obsahu Power BI](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)
--   [Set up security for the Cost accounting analysis Power BI content](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
+-   [Obsah analýzy nákladového účetnictví v Power BI](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)
+-   [Nastavení zabezpečení pro obsah analýzy nákladového účetnictví v Power BI](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
 
 
 

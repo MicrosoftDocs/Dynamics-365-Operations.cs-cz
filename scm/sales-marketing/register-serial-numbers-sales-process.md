@@ -1,5 +1,5 @@
 ---
-title: "Registrovat sériová čísla v prodejním procesu"
+title: "Registrace sériových čísel v prodejním procesu"
 description: "Tento článek vysvětluje, jak lze registrovat sériová čísla v dodacích listech nebo fakturách během prodejního procesu. Tato funkce je užitečná, pokud mnoho společností chce jednoduše zaznamenat sériová čísla pro účely záruky a služeb, a nepotřebuje udržovat sériová čísla v zásobách od příjmu po vydání."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="register-serial-numbers-in-the-sales-process"></a>Registrovat sériová čísla v prodejním procesu
+# <a name="register-serial-numbers-in-the-sales-process"></a>Registrace sériových čísel v prodejním procesu
 
 [!include[banner](../includes/banner.md)]
 
@@ -68,7 +68,7 @@ Ano, můžete spustit dotaz na řádek deníku dodacího listu nebo řádek den�
 ## <a name="can-i-view-the-serialized-items-that-i-have-on-hand"></a>Mohu zobrazit serializované položky, které jsou na skladě?
 Ne, nelze zobrazit serializované položky, které máte na skladě, protože sériová čísla nejsou zaregistrována pro položky, dokud se položky neprodají.
 
-## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Můžete zaregistrovat sériová čísla pro položky catchweight
+## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Mohu zaregistrovat sériová čísla pro položky se skutečnou hmotností?
 Ne, v prodejním procesu nemůžete registrovat sériová čísla pro položky skutečné hmotnosti. Dále pokud je produkt nastaven jako položka skutečné hmotnosti, nelze produkt přiřadit do skupiny sledovací dimenze, která je nastavena pro použití sériových čísel pouze během prodejního procesu.
 Je možné registrovat sériová čísla v maloobchodním pokladním systému?
 ------------------------------------------------

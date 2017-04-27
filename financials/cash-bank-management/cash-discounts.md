@@ -64,8 +64,8 @@ Zúčtovací měna vaší právnické osoby je EUR a pro USD jsou zadány násle
 -   1. únor = 110
 -   1. březen = 80
 
-Zaúčtování faktury pro 1000 USD s podmínky platební slevy 20 D 2 % na dne 15. Účetní částka měny faktury je 1100EUR $2. Platba za 980 USD je vyrovnána s fakturou na dne 1. Částka platební slevy je 20 USD. Částka v zúčtovací měně u dané platby činí 784 EUR. Částka měny účetnictví platební slevy se vypočte pomocí směnného kurzu ke dni dne 1:20 \*80 / 100 = 16EUR $2.
-| **Note**                                                                                                                                                                                                                             |
+Faktura na 1000 USD s podmínkou platební slevy 20D2% je zaúčtována 15. února. Částka v zúčtovací měně faktury činí 1100 EUR. Platba za 980 USD je vyrovnána s fakturou 1. března. Částka platební slevy je 20 USD. Částka v zúčtovací měně u dané platby činí 784 EUR. Částka v zúčtovací měně u platební slevy je vypočítána pomocí směnného kurzu ke dni 1. března: 20 \* 80 / 100 = 16 EUR.
+| **Poznámka**                                                                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Je-li na stránce Parametry pohledávek nebo na stránce Parametry závazků zvolena možnost Vypočítat platební slevy pro částečné platby, použije se směnný kurz platný k datu jednotlivých částečných plateb. |
 

@@ -42,10 +42,10 @@ Zásady auditu se spouští v dávkovém režimu. Při spuštění zásad auditu
 
 Každé pravidlo zásad vyhodnocuje sadu dokumentů. Pravidlo zásad vybere dokumenty, které se nacházejí v rozsahu dat pro výběr dokumentu, a přiřadí zadaná kritériím. Například jedno pravidlo zásad může vybrat výkazy výdajů, které mají stravování překračující 50,00. Jiné pravidlo zásad může vybrat dodavatelské faktury, které jsou splatné určitému dodavateli. Pro každý dokument, který je vybrán v sadě, se generuje porušení. Toto porušení je záznam, že určitý dokument, jako je například faktura 12345, nesplňuje pravidlo zásad. 
 
-Vícenásobné záznamy o porušení auditu seskupeny a přidruženy k auditním případům. Ve výchozím nastavení se případy pro každou zásadu auditu seskupí podle pravidla zásad auditu. V případě potřeby můžete vybrat další kritéria pro seskupování pomocí stránky **Kritéria seskupování případu**. Záhlaví výdajů můžete například seskupit podle faktur projektu ID a dodavatele podle účtu dodavatele. V tomto případě všechny porušení záhlaví výdajů, které mají stejné ID projektu budou seskupeny ve stejném případě a ve stejném případě budou seskupeny všechny faktury dodavatele, které mají stejný účet dodavatele. 
+Vícenásobné záznamy o porušení auditu seskupeny a přidruženy k auditním případům. Ve výchozím nastavení se případy pro každou zásadu auditu seskupí podle pravidla zásad auditu. V případě potřeby můžete vybrat další kritéria pro seskupování pomocí stránky **Kritéria seskupování případu**. Můžete například seskupit záhlaví výdajů podle ID projektu a faktury dodavatele podle účtu dodavatele. V takovém případě se všechna porušení záhlaví výdajů se stejným ID projektu seskupí do stejného případu a všechny faktury dodavatele, které mají stejný účet dodavatele, se seskupí do stejného případu. 
 
 > [!NOTE]
-> Pro pravidla zásad auditu, které jsou založeny na **duplicitní** dotaz typu porušení nejsou seskupeny pomocí pravidla zásady nebo kritéria, která jsou určena na **kritéria seskupování případu** stránky. Místo toho se seskupují podle kritérií, která jsou součástí pravidla zásad auditu. Pokud například pravidlo zásad vyhodnocuje ve výkazech výdajů duplicitní výdaje se stelnou částkou, ID obchodníka a datem, všechny výdaje, které mají stejné hodnoty v těchto polích, budou jeden případ. Veškeré výdaje, které mají různé hodnoty, budou samostatný případ.
+> U pravidel zásad auditu, která jsou založena na dotazu typu **Duplicitní**, se porušení neseskupují podle pravidla zásad nebo kritérií zadaných na stránce **Kritéria seskupování případu**. Místo toho se seskupují podle kritérií, která jsou součástí pravidla zásad auditu. Pokud například pravidlo zásad vyhodnocuje ve výkazech výdajů duplicitní výdaje se stelnou částkou, ID obchodníka a datem, všechny výdaje, které mají stejné hodnoty v těchto polích, budou jeden případ. Veškeré výdaje, které mají různé hodnoty, budou samostatný případ.
 
 Auditní případy se po vygenerování zpracují pomocí typických procesů správy případů.
 
@@ -59,7 +59,7 @@ Zde je několik dalších způsobů, které zásady auditu používají u rozsah
 -   Pro pravidla zásad, která jsou založena na typu dotazu **Vyhledávání seznamu**, pravidla vyhodnocují v dokumentech sledované entity, které jsou účinné v poslední den rozsahu dat pro výběr dokumentu.
 
 
-Další informace naleznete v tématu [pravidla zásad auditu](audit-policy-rules.md)
+Další informace naleznete v tématu [Pravidla zásad auditu](audit-policy-rules.md)
 
 
 

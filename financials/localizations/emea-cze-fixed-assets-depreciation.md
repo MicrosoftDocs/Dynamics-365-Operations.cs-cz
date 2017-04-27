@@ -1,5 +1,5 @@
 ---
-title: "Metody odpisů dlouhodobého majetku pro Českou republiku"
+title: "Metody odpisu dlouhodobého majetku pro Českou republiku"
 description: "Toto téma obsahuje informace o odpisech dlouhodobého majetku pro právnické osoby v České republice."
 author: ShylaThompson
 manager: AnnBe
@@ -25,91 +25,91 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="fixed-assets-depreciation-methods-for-the-czech-republic"></a>Metody odpisů dlouhodobého majetku pro Českou republiku
+# <a name="fixed-assets-depreciation-methods-for-the-czech-republic"></a>Metody odpisu dlouhodobého majetku pro Českou republiku
 
 [!include[banner](../includes/banner.md)]
 
 
 Toto téma obsahuje informace o odpisech dlouhodobého majetku pro právnické osoby v České republice. 
 
-Odpisy dlouhodobého majetku pro požadavky právních předpisů v České republice patří:
+Odpis dlouhodobého majetku pro požadavky právních předpisů v České republice zahrnuje:
 
--   Procenta odpisu
--   Odpisové metody, které jsou specifické pro Českou republiku
+-   Procentuální hodnota odpisu
+-   Metody odpisu, které jsou specifické pro Českou republiku
 
 ## <a name="depreciation-percentages-and-coefficients"></a>Procenta odpisu a koeficienty
-Podle právních předpisů České republiky jsou seskupeny dlouhodobý majetek do odpisové skupiny. Pro každou odpisovou skupinu definoval právní předpisy specifické hodnoty pro Odpisová sazba pro první rok, Odpisová sazba pro další roky a upravená pořizovací cena. Sazba pro první rok, pro další roky a upravená pořizovací cena musí splňovat požadavky právních předpisů v České republice, různé hodnoty odpisu nastavit v různých odpisových skupin. **Odpisové skupiny** stránku obsahuje následující volby.
+Podle právních předpisů České republiky je dlouhodobý majetek seskupen do odpisových skupin. Pro každou odpisovou skupinu definují právní předpisy specifické hodnoty pro odpisovou sazbu za první rok, odpisovou sazbu za další roky a upravenou pořizovací cenu. Pro splnění právních požadavků v České republice je třeba nastavit různé hodnoty odpisové sazby za první rok, za další roky a za upravenou pořizovací cenu v různých odpisových skupinách. Stránka **Odpisové skupiny** obsahuje následující volby.
 
 | |  |
 |-----|------|
-| **Field**                                | **Description**|
-| **Start date**                           | Zadejte datum zahájení depreciate skupiny.|
-| **Depreciation rate for the first year** | Zadejte procento odpisu pro odpisovou metodu pravidelné CZ nebo odpisu koeficient pro zrychlené odpisování CZ používá v prvním roce odpisování této skupiny. |
-| **Depreciation rate for next years**     | Zadejte procento odpisu pro pravidelné CZ metoda odpisu a odpisu koeficient pro zrychlené odpisování CZ pro odpis v letech následujících po roce pořízení.|
-| **Adjusted acquisition price**           | Zadejte procento odpisu pro odpisovou metodu pravidelné CZ nebo koeficient amortizace pro zrychlenou metodu odpisu CZ rozšířený o opravu pořizovací ceny. Toto procento nebo koeficient platí rok opravy pořizovací ceny. Všechny kladné a záporné úpravy jsou součástí upravená pořizovací cena. |
+| **Pole**                                | **Popis**|
+| **Počáteční datum**                           | Zadejte datum, kdy začne odpisová skupina|
+| **Míra odpisu za první rok** | Zadejte procento odpisu pro běžnou českou odpisovou metodu nebo koeficient odpisu pro zrychlenou českou odpisovou metodu používané v prvním roce odpisování této skupiny. |
+| **Odpisová sazba pro další roky**     | Zadejte procento odpisu pro běžnou českou odpisovou metodu nebo koeficient odpisu pro zrychlenou českou odpisovou metodu používané v dalších letech po roce pořízení.|
+| **Upravená pořizovací cena**           | Zadejte procento odpisu pro běžnou českou odpisovou metodu nebo koeficient odpisu pro zrychlenou českou odpisovou metodu, rozšířené o úpravu pořizovací ceny. Toto procento nebo koeficient platí od roku úpravy pořizovací ceny. Všechny kladné a záporné úpravy jsou součástí upravené pořizovací ceny. |
 
-## <a name="czech-republicspecific-depreciation-methods"></a>České Republicspecific metod odpisů
-Pro uživatele v právnických osob v České republice existují další odpisové metody k dispozici. Další pravidla a nastavení se používá ke splnění požadavků účtování konkrétní dlouhodobý majetek. Podle předpisů České republiky jsou v České republice použita následující odpisové metody:
+## <a name="czech-republicspecific-depreciation-methods"></a>Odpisové metody specifické pro Českou republiku
+Pro uživatele v právnických osobách v České republice existují další odpisové metody. Další pravidla a nastavení se používají ke splnění specifických požadavků účtování dlouhodobého majetku. Podle předpisů České republiky se v České republice používají následující odpisové metody:
 
 -   Rovnoměrně CZ
 -   Zrychleně CZ
 
-Další informace o metody odpisu, viz [odpisy dlouhodobého majetku](../fixed-assets/fixed-asset-depreciation.md).
+Další informace o metodách odpisu naleznete v tématu [Odpisy dlouhodobého majetku](../fixed-assets/fixed-asset-depreciation.md).
 
-### <a name="regular-cz-depreciation-method"></a>Běžné metody odpisu CZ
+### <a name="regular-cz-depreciation-method"></a>Běžná česká metoda odpisování
 
-Pravidelné CZ metoda odpisu vypočítá odpisy s použitím následujícího vzorce:
+Běžná česká metoda odpisování vypočítá odpisy s použitím následujícího vzorce:
 
--   Částka odpisu v prvním roce = Pořizovací hodnota \*procento odpisu pro první rok
--   Částka odpisu v příštích let = Pořizovací hodnota \*procento odpisu pro další roky
--   Částka odpisu po úpravě pořízení = (Pořizovací hodnota + úprava pořízení) \*procento odpisu po opravy pořizovací ceny
+-   Částka odpisu v prvním roce = Pořizovací hodnota \* procento odpisu za první rok
+-   Částka odpisu v dalších letech = Pořizovací hodnota \* procento odpisu za další roky
+-   Částka odpisu po úpravě pořizovací ceny = (Pořizovací hodnota + Úprava pořizovací ceny) \* procento odpisu po úpravě pořizovací ceny
 
-Následující příklad ukazuje regulární CZ způsob výpočtu odpisů.
+Následující příklad ukazuje výpočet běžné české metody odpisu.
 
 |                                                      |                     |
 |------------------------------------------------------|---------------------|
-| **Field**                                            | **Value**           |
+| **Pole**                                            | **Hodnota**           |
 | Pořizovací hodnota                                    | 100 000             |
-| Oprava pořizovací ceny                               | 50 000 (v roce 3d) |
-| Procento odpisu pro první rok           | 14.2%               |
-| Procento odpisu pro další roky           | 28.6%               |
-| Procento odpisu po opravy pořizovací ceny | 25.0%               |
+| Oprava pořizovací ceny                               | 50 000 (ve třetím roce) |
+| Procento odpisu za první rok           | 14,2 %               |
+| Procento odpisu za další roky           | 28,6 %               |
+| Procento odpisu po úpravě pořizovací ceny | 25,0 %               |
 
-Tento příklad ukazuje odpisu vypočteného pomocí pravidelných CZ metoda odpisu.
+Tento příklad ukazuje odpis vypočítaný pomocí běžné české metody odpisu.
 
 |                     |                           |
 |---------------------|---------------------------|
-| **Počet let** | **Calculation**           |
-| 1                   | 100 000 \* 14.2% = 14 200 |
-| 2                   | 100 000 \* 28.6% = 28 600 |
-| 3                   | 150 000 \* 25% = 37 500   |
-| 4                   | 150 000 \* 25% = 37 500   |
+| **Počet roků** | **Výpočet**           |
+| 1                   | 100 000 \* 14 2 % = 14 200 |
+| 2                   | 100 000 \* 28,6 % = 28 600 |
+| 3                   | 150 000 \* 25 % = 37 500   |
+| 4                   | 150 000 \* 25 % = 37 500   |
 
-### <a name="accelerated-cz-depreciation-method"></a>Metoda odpisu Zrychlený CZ
+### <a name="accelerated-cz-depreciation-method"></a>Zrychlená česká metoda odpisování
 
-Zrychlenou metodu CZ odmítání příznaku používá koeficienty pro výpočet odpisů pomocí následujících vzorců:
+Zrychlená česká metoda odpisu používá koeficienty pro výpočet odpisů pomocí následujících vzorců:
 
--   Částka odpisu v prvním roce = Pořizovací hodnota / koeficient odpisování v prvním roce
--   Částka odpisu v příštích let = (2 \*zůstatková účetní hodnota) / (odpisu koeficient pro další roky - již odepsán období)
--   Částka odpisu po úpravě pořízení = (2 \*zůstatková účetní hodnota) / (koeficient amortizace po pořízení úpravy – období po určité opravy pořizovací ceny již odepsán)
+-   Částka odpisu v prvním roce = Pořizovací hodnota / koeficient odpisu za první rok
+-   Částka odpisu v dalších letech = (2 \* Zůstatková účetní hodnota) / (koeficient odpisu za další roky - již odepsaná období)
+-   Částka odpisu po úpravě pořizovací ceny = (2 \* Zůstatková účetní hodnota) / (koeficient odpisu po úpravě pořizovací ceny – již odepsaná období po určité úpravě pořizovací ceny)
 
-Následující příklad ukazuje zrychlené CZ způsob výpočtu odpisů.
+Následující příklad ukazuje výpočet zrychlené české metody odpisu.
 
 |                                                       |           |
 |-------------------------------------------------------|-----------|
-| **Field**                                             | **Value** |
+| **Pole**                                             | **Hodnota** |
 | Pořizovací hodnota                                     | 100 000   |
-| Opravy pořizovací ceny (v 3roky $2)                    | 50 000    |
-| Opravy pořizovací ceny (do 5let $2)                    | 60 000    |
-| Odpis koeficientem pro první rok           | 4         |
-| Odpisu koeficient pro další roky           | 5         |
-| Koeficient amortizace po opravy pořizovací ceny | 4         |
+| Úpravy pořizovací ceny (ve třetím roce)                    | 50 000    |
+| Úpravy pořizovací ceny (ve pátém roce)                    | 60 000    |
+| Koeficient odpisu za první rok           | 4         |
+| Koeficient odpisu za další roky           | 5         |
+| Koeficient odpisu po úpravě pořizovací ceny | 4         |
 
-Tento příklad ukazuje odpisu vypočteného pomocí zrychlené CZ metoda odpisu.
+Tento příklad ukazuje odpis vypočítaný pomocí zrychlené české metody odpisu.
 
 |                     |                                  |
 |---------------------|----------------------------------|
-| **Počet let** | **Calculation**                  |
+| **Počet roků** | **Výpočet**                  |
 | 1                   | 100 000 /4 = 25 000              |
 | 2                   | (2 \* 75 000) / (5 - 1) = 37 500 |
 | 3                   | (2 \* 87 500) / (4 - 0) = 43 750 |

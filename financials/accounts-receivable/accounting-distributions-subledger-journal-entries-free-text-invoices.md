@@ -38,7 +38,7 @@ Rozúčtování slouží k definování, jak budou zaúčtovány částky, např
 
 Na stránce Volné faktury můžete použít následující tlačítka k zobrazení a případné změně rozúčtování pro každou částku na volné faktuře.
 
--   **Distribuovat částky**– zobrazit a změnit rozúčtování pro každý řádek a všechny podřízené řádky, jako například daní a poplatků. Lze také zobrazit a změnit rozúčtování pro podřízený řádek přímo na stránce Transakcí DPH nebo na stránce Transakce nákladů.
+-   **Distribuovat částky**—Zobrazení a změna rozúčtování pro každý řádek a také všechny podřízené řádky, jako jsou například daně a poplatky. Lze také zobrazit a změnit rozúčtování pro podřízený řádek přímo na stránce Transakcí DPH nebo na stránce Transakce nákladů.
     -   Změna částek v záhlaví volných faktur, například náklady nebo měnové zaokrouhlení částky.
     -   Změna částek na řádcích volné faktury.
 -   **Zobrazit distribuce** – Zobrazení rozúčtování pro všechny řádky v dokumentu. V tomto zobrazení nelze měnit rozúčtování.

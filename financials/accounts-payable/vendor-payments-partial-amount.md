@@ -36,20 +36,20 @@ Někdy provedete platbu dodavateli, která je nižší než částka faktury. Te
 <a name="cash-discount-amounts"></a>Částka platebních slev
 ---------------------
 
-Dodavatel vám může nabídnout platební slevu za úhradu faktury před datem splatnosti. Například zadáte fakturu na částku 100,00, která určuje 2% platební slevu, pokud bude faktura zaplacena do 10 dní. Doba splatnosti dle podmínek je 30 dnů. Pokud návrh platby používá platební slevy jako kritérium pro výběr faktury a návrh je spustit nebo dřívější než datum platební slevy, je zaškrtnuto faktura pro platbu a platby je vytvořen pro 98.00. Platební slevy lze brát pro jednorázovou platbu, která byla vytvořena ručně.
+Dodavatel vám může nabídnout platební slevu za úhradu faktury před datem splatnosti. Například zadáte fakturu na částku 100,00, která určuje 2% platební slevu, pokud bude faktura zaplacena do 10 dní. Doba splatnosti dle podmínek je 30 dnů. Pokud návrh platby používá jako kritérium pro výběr faktury platební slevu a k aktivaci návrhu dojde v den platební slevy nebo dříve, faktura se vybere k platbě a vytvoří se platba v částce 98,00. Platební slevy lze také uplatnit jako ručně vytvořenou jednorázovou platbu.
 
 ## <a name="partial-payments-with-cash-discounts"></a>Částečné platby s platebními slevami
-Když provedete částečnou úhradu, můžete plánovat uskutečnění další částečné platby k úplnému vyrovnání faktury. Aby platební slevy pro částečné platby, je nutné nastavit ** vypočítat platební slevy pro částečné platby ** možnost na **Ano** na **účet parametry závazků** stránky. 
+Když provedete částečnou úhradu, můžete plánovat uskutečnění další částečné platby k úplnému vyrovnání faktury. Chcete-li aplikovat platební slevu za částečnou platbu, je nutné nastavit možnost **Vypočítat platební slevy pro částečné platby** na hodnotu **Ano** **na stránce Parametry závazku**. 
 
-Například můžete přijmout platební slevu 2 %, pokud bude faktura proplacena do 10 dnů po vydání. Je zaúčtována faktura na 100,00. Pokud provádíte platby 49.00 do 10 dnů, zadáte MD 49.00 v deníku plateb. Při vyrovnání částečné platby na **vyrovnání otevřených transakcí** stránku, **1.00** se zobrazí v **částka platební slevy se** pole. 
+Například můžete přijmout platební slevu 2 %, pokud bude faktura proplacena do 10 dnů po vydání. Je zaúčtována faktura na 100,00. Pokud provedete platbu ve výši 49,00 do 10 dnů, zadáte do deníku plateb částku Má dáti ve výši 49,00. Při vyrovnání částečné platby na stránce **Vyrovnat otevřené transakce** bude uvedena hodnota **1,00** v poli **Částka platební slevy k přijetí**. 
 
 > [!NOTE] 
-> Pokud zadáte dílčí platby a nechat celou fakturovanou částku v **částka k vyrovnání** pole, **částka platební slevy se** pole je automaticky přepočítán při zaúčtování transakcí.
+> Pokud zadáte částečnou platbu a ponecháte úplnou fakturovanou částku v poli **Částka k vyrovnání**, pole **Částka platební slevy k přijetí** bude automaticky přepočítáno při zaúčtování transakcí.
 
 ## <a name="credit-notes-with-cash-discounts"></a>Dobropisy s platebními slevami
-Můžete vrátit některé položky na faktuře a přijmout dobropis. Pokud pro původní fakturu byla využita platební sleva, můžete odečíst hodnotu slevy a přijmout refundaci pro správnou částku. Pokud ** vypočítat platební slevy pro dobropisy ** možnost je nastavena na **Ano** na **parametry závazků** stránky slevu vypočítá automaticky pro dobropis. 
+Můžete vrátit některé položky na faktuře a přijmout dobropis. Pokud pro původní fakturu byla využita platební sleva, můžete odečíst hodnotu slevy a přijmout refundaci pro správnou částku. Pokud je možnost **Vypočítat platební slevy pro dobropisy** nastavena na hodnotu **Ano** na stránce **Parametry závazku**, sleva se pro dobropis vypočítá automaticky. 
 
-Například můžete přijmout platební slevu 2 %, pokud bude faktura proplacena do 10 dnů po vydání. Je zaúčtována faktura na 100,00. Pokud vrátit zboží a obdržet dobropis, můžete zadat dobropisu pro celou částku původní faktury 100,00 a 2 procenta platební slevy, která je také definován v tomto dobropise.  Při zobrazení dobropis na **vyrovnat transakce** stránku, **98.00** se zobrazí v **částka k vyrovnání** pole a **-2.00** se zobrazí v **částka platební slevy** pole. Částka slevy je zaúčtována na účet platební slevy.
+Například můžete přijmout platební slevu 2 %, pokud bude faktura proplacena do 10 dnů po vydání. Je zaúčtována faktura na 100,00. Pokud vrátíte zboží a obdržíte dobropis, můžete zadat dobropis za celou částku původní faktury (100,00) spolu s dvouprocentní platební slevou, která je v dobropisu také určena.  Při prohlížení dobropisu na stránce **Vyrovnat transakce** se zobrazí částka** 98,00** v poli **Částka k vyrovnání** a částka **-2,00** v poli **Částka platební slevy**. Částka slevy je zaúčtována na účet platební slevy.
 
 ## <a name="overpaymentunderpayment-amounts"></a>Částky přeplatku nebo nedoplatku
 Můžete provést částečnou úhradu, když je částka, která musí být vyrovnána, příliš malá. Například faktura dodavatele je pro 1 000,00 a vy platíte 999,90 Je-li zůstatek nižší než částka zadaná pro přeplatky nebo nedoplatky na stránce **Parametry závazků**, rozdíl se automaticky zaúčtuje na účet hlavní knihy pro přeplatky a nedoplatky.

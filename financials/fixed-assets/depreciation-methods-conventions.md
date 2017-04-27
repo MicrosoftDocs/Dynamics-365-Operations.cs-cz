@@ -69,27 +69,27 @@ Můžete vybírat z následujících metod odpisování:
 <a name="see-also"></a>Viz také
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation.md)
+[Odpisy dlouhodobého majetku](fixed-asset-depreciation.md)
 
-[Straight line service life depreciation](Straight-line-service-life-depreciation.md)
+[Lineární odpisování](Straight-line-service-life-depreciation.md)
 
-[Reducing balance depreciation](reduce-balance-depreciation.md)
+[Degresivní odpis](reduce-balance-depreciation.md)
 
-[Manual depreciation](manual-depreciation.md)
+[Ruční odpis](manual-depreciation.md)
 
-[Factor depreciation](factor-depreciation.md)
+[Odpis koeficientem](factor-depreciation.md)
 
-[Consumption depreciation](consumption-depreciation.md)
+[Odpis spotřeby](consumption-depreciation.md)
 
-[Straight line life remaining depreciation](straight-line-life-remaining-depreciation.md)
+[Lineární odpis s vyrovnáním na konci životnosti](straight-line-life-remaining-depreciation.md)
 
-[125 % degresivní odpisování](125-percent-reducing-balance-depreciation.md)
+[Degresivní odpis 125 procent](125-percent-reducing-balance-depreciation.md)
 
-[150 % degresivního odpisování](150-percent-reducing-balance-depreciation.md)
+[Degresivní odpis 150 procent](150-percent-reducing-balance-depreciation.md)
 
-[175 % degresivní odpisování](175-percent-reducing-balance-depreciation.md)
+[Degresivní odpis 175 procent](175-percent-reducing-balance-depreciation.md)
 
-[200 % degresivní odpisování](200-percent-reducing-balance-depreciation.md)
+[Degresivní odpis 200 procent](200-percent-reducing-balance-depreciation.md)
 
 
 

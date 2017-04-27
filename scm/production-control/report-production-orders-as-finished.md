@@ -1,6 +1,6 @@
 ---
-title: "Ohlášení výrobní zakázky jako dokončené"
-description: "Dokončená výroba je výrobní fáze. V této fázi je konečného přípravku hlášeny a přesunuta do skladu ve výrobní zakázce."
+title: "Vykázat výrobní zakázky jako dokončené"
+description: "Vykázat jako dokončené je ve fázi výroby. V této fázi je vykázán hotový výrobek a je přesunut z výrobní zakázky do zásob."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,12 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="report-production-orders-as-finished"></a>Ohlášení výrobní zakázky jako dokončené
+# <a name="report-production-orders-as-finished"></a>Vykázat výrobní zakázky jako dokončené
 
 [!include[banner](../includes/banner.md)]
 
 
-Dokončená výroba je výrobní fáze. V této fázi je konečného přípravku hlášeny a přesunuta do skladu ve výrobní zakázce.
+Vykázat jako dokončené je ve fázi výroby. V této fázi je vykázán hotový výrobek a je přesunut z výrobní zakázky do zásob.
 
 Je-li výrobní zakázka vykázána jako dokončená, jsou ve skladu zásob aktualizována množství dokončeného zboží. Částečné množství původně plánovaného množství objednávky může být hlášeno jako dokončené. Je také možné nahlásit množství chyb se přidruženými důvody chyb při vykazování množství jako dokončeného. Když výrobní zakázka dosáhne stavu Ohlášeno jako dokončené, znamená to, že ve výrobní zakázce nebude uváděné žádné další množství.
 Tyto následující vlastnosti jsou také přidruženy k procesu **Ohlásit jako dokončené**:

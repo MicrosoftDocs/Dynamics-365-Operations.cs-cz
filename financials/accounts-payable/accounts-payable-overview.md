@@ -43,7 +43,7 @@ Před nastavením modulu Závazky je nutné provést tyto úkoly:
     -   Pokud máte v úmyslu spouštět vyrovnání kurzových rozdílů, na stránce Měny nastavte kódy měn, na stránce Typy směnného kurzu nastavte typy směnných kurzů a na stránce Směnné kurzy měn nastavte směnné kurzy měn.
 -   V modulu Pokladna a banka nastavte bankovní účty, které se mají používat pro metody platby.
 
-## <a name="setup-pages-for-accounts-payable"></a>Nastavení stránky pro závazky
+## <a name="setup-pages-for-accounts-payable"></a>Stránky k nastavení modulu Závazky
 
 Následující stránky slouží k nastavení základních funkcí modulu Závazky pro jednotlivé právní osoby. Stránky jsou uvedeny v doporučeném pořadí nastavení. Pro zjednodušení procesu nastavení si můžete z prvních vytvořených záznamů vytvořit šablony. Šablona obvykle obsahuje hodnoty pro velký počet polí, které odpovídají funkcím, jež chce organizace implementovat pro určitý typ dodavatelů.
 1.  Stránka Platební podmínky slouží k určení platebních podmínek, které chcete přiřadit prodejním objednávkám, nákupním objednávkám, odběratelům a dodavatelům a které určují data splatnosti faktur.
@@ -54,15 +54,15 @@ Následující stránky slouží k nastavení základních funkcí modulu Závaz
 6.  Stránka Nastavení formuláře slouží k určení formátu různých dokumentů souvisejících s dodavateli, které organizace používá ke sledování příjemek od dodavatelů a k zadávání důvodů pro toky plateb k dodavatelům.
 7.  Stránka Dodavatelé slouží k vytváření a údržbě účtů dodavatelů a také finančních úřadů, jimž vaše organizace odevzdává výkazy DPH.
 
-## <a name="optional-setup-pages-for-accounts-payable"></a>Volitelné nastavení stránky pro závazky
+## <a name="optional-setup-pages-for-accounts-payable"></a>Volitelné stránky pro nastavení závazků
 Kromě základních funkcí má modul Závazky další funkce, které lze nastavit.
 
 Další stránky pro nastavení jsou uspořádány podle funkcí.
 
-**Policies**
+**Zásady**
 -   Stránka Zásada faktur dodavatele slouží k nastavení zásad pro faktury dodavatele.
 
-**Invoice matching**
+**Párování faktur**
 
 -   Stránka Tolerance součtu faktur slouží k nastavení tolerancí pro celkové hodnoty faktur.
 -   Stránka Zásady párování slouží k nastavení zásad dvoucestného a třícestného párování.
@@ -75,35 +75,35 @@ Další stránky pro nastavení jsou uspořádány podle funkcí.
 
 -   Stránka Workflowy závazků slouží k úpravě konfigurace workflowu pro schvalování deníků a nákupních žádanek.
 
-**Reasons**
+**Důvody**
 
 -   Stránka Dodavatel – důvody slouží k nastavení kódů důvodů.
 
-**Charges**
+**Poplatky**
 
 -   Stránka Kód nákladů slouží k nastavení kódů pro náklady, které se používají v nákupních objednávkách.
--   Na stránce skupina nákladů dodavatele vytvoření a udržování skupin nákladů pro dodavatele.
+-   Stránka Skupina nákladů dodavatele slouží k vytvoření a správě skupin nákladů pro dodavatele.
 -   Stránka Skupiny nákladů zboží slouží k vytváření a správě skupin nákladů pro položky..
 -   Stránka Automatické doprovodné náklady slouží k určení nákladů, které jsou automaticky přiřazeny k objednávkám.
 
-**Supplementary items**
+**Doplňkové položky**
 
 -   Stránka Skupiny doplňkových položek – dodavatel slouží k vytváření a správě skupin doplňkových položek pro dodavatele.
 -   Stránka Skupiny doplňkových položek – zásoby slouží k vytváření a správě skupin doplňkových položek pro položky.
 
-**Distribution**
+**Distribuce**
 
 -   Stránka Dodací podmínky slouží k vytvoření a správě podmínek pro převod položky od prodávajícího ke kupujícímu.
 -   Stránka Způsoby dodání slouží k vytváření a správě způsobů přepravy, které se používají při doručování objednávky od prodávajícího ke kupujícímu.
 -   Stránka Kódy místa určení slouží k vytváření a správě identifikátorů a popisů míst určení.
 
-**Forms**
+**Formuláře**
 
 -   Stránka Poznámky na formulářích slouží k vytváření a správě standardního textu, který se zobrazuje na různých stránkách.
 -   Stránka Parametry třídění formuláře slouží k nastavení pořadí řazení požadavků, příjemek, dodacích listů a faktur.
 -   Stránka Nastavení správy tisku slouží k nastavení informací správy tisku pro originály a kopie stránek.
 
-**Payments**
+**Platby**
 
 -   Stránka Platební slevy slouží k nastavení a správě podmínek pro získání platebních slev. Kódy platebních slev jsou propojeny s dodavateli a použity v nákupních objednávkách.
 -   Stránka Platební kalendáře slouží k nastavení platebních kalendářů, které se používají ke správě splátkových plateb dodavatelům.
@@ -111,17 +111,17 @@ Další stránky pro nastavení jsou uspořádány podle funkcí.
 -   Stránka Platební poplatek slouží k vytváření a správě platebních poplatků přiřazených k dodavatelům.
 -   Stránka Platební instrukce slouží k vytváření a správě platebních instrukcí.
 
-**Statistics**
+**Statistika**
 
 -   Stránka Definice období pro sledování splatnosti slouží k nastavení uživatelem definovaných intervalů, které se používají pro analýzu rozložení splatnosti dodavatelských účtů.
 -   Stránka Odvětví obchodu slouží k vytváření kódů odvětví obchodu (LOB), které jsou přiřazeny k dodavatelům.
 
-**Daně 1099**
+**Daň 1099**
 
--   Na **polí 1099** stránky, ověření a aktualizaci minimální částky, které musí být uvedeny na interní výnosy služby (finanční úřad), podle nejnovějších požadavků finančního úřadu.
+-   Stránka **Pole 1099** slouží k ověření a aktualizaci minimálních částek, které musí být ohlášeny finančnímu úřadu IRS (Internal Revenue Service) v souladu s nejnovějšími požadavky tohoto úřadu.
 
-## <a name="optional-setup-for-other-modules"></a>**Volitelné nastavení pro ostatní moduly**
-**Organization administration**
+## <a name="optional-setup-for-other-modules"></a>**Volitelné nastavení pro jiné moduly**
+**Správa organizace**
 
 -   Stránka Číselné řady slouží k nastavení skupin číselných řad pro čísla faktur.
 -   Na následujících stránkách nastavíte informace o adrese:
@@ -129,7 +129,7 @@ Další stránky pro nastavení jsou uspořádány podle funkcí.
     -   Kódy NAF
     -   Importovat PSČ
 
-**General ledger**
+**Hlavní kniha**
 
 -   Stránka Finanční dimenze slouží k nastavení finančních dimenzí.
 -   Na následujících stránkách nastavíte informace o daních:
@@ -142,7 +142,7 @@ Další stránky pro nastavení jsou uspořádány podle funkcí.
     -   Finanční úřady
     -   Období vyrovnání DPH
 
-**Cash and bank management**
+**Pokladna a správa banky**
 
 -   Stránka Kódy účelu platby slouží k nastavení kódu účelu centrální banky.
 

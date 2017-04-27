@@ -35,7 +35,7 @@ Tento článek popisuje na nejvyšší úrovni, jak mohou odborníci na nákup n
 Nákupčí mohou vytvářet a udržovat katalogy položek a služeb, které lze zakoupit pro interní použití v organizaci. Po nastavení katalogů může zaměstnanec společnosti vytvořit nákupní žádanky k vytvoření objednávky. Katalogy lze použít k vynucení zásady nákupu, aby zaměstnanci mohli objednat pouze položky a služby, které jsou povoleny pro jejich kupující právnickou osobu. Při vytváření zásobovacího katalogu doporučujeme zvážit provedení následujících úkolů:
 
 -   Vytvořte hierarchii kategorií zásobování před vytvořením katalogu.
--   Určete produkty, které chcete mít objednané vašimi zaměstnanci. Můžete zobrazit nebo skrýt určité produkty v katalogu uzlu nebo můžete zobrazit nebo skrýt všechny produkty v uzlu.
+-   Určete produkty, které chcete mít objednané vašimi zaměstnanci. Můžete zobrazit nebo skrýt určité produkty v uzlu katalogu nebo můžete zobrazit nebo skrýt všechny produkty v uzlu.
 -   Určete, kolik zásobovacích katalogů požadujete. Přístup k zásobovacímu katalogu je určen pravidly zásad katalogu, který konfigurujete pro právnickou osobu a provozní jednotky, která je přiřazena konkrétnímu zaměstnanci.
 
 To, které produkty, mohou zaměstnanci objednávat, a které kategorie zásobování mohou používat při vytváření nákupních žádanek, je určeno několika faktory:
@@ -55,7 +55,7 @@ V následující tabulce jsou uvedeny úkoly, které je nutné dokončit před t
 ## <a name="setting-up-a-catalog"></a>Nastavení katalogu.
 Poté, co byly splněny požadavky, můžete nastavit katalogy. Můžete vytvořit jeden katalog, který se používá v celé organizaci, nebo více katalogů, které používají různé divize v organizaci. Pokud vytvoříte jeden katalog pro celou organizaci, přístup do katalogu je řízen pravidly zásad nákupu.  
 
-Katalog definuje, které produkty jsou k dispozici při vytváření nákupních žádanek, můžete ale použít pravidla zásad přístupu ke kategorii k uplatnění dalších omezení. Vzhledem k tomu, že uzly v katalogu jsou kategorie zásobování, lze je potlačit pravidlem zásad přístupu ke kategorii. V případě produktů v této kategorii nejsou k dispozici pro zaměstnance na žádanky. Definovat pravidla zásad přístupu ke kategorii na **zásady nákupu** stránky. V následující tabulce jsou popsány úkony, které je nutné dokončit pro nastavení katalogu.
+Katalog definuje, které produkty jsou k dispozici při vytváření nákupních žádanek, můžete ale použít pravidla zásad přístupu ke kategorii k uplatnění dalších omezení. Vzhledem k tomu, že uzly v katalogu jsou kategorie zásobování, lze je potlačit pravidlem zásad přístupu ke kategorii. V takovém případě nejsou produkty v této kategorii nejsou k dispozici, aby je zaměstnanci mohli používat na žádankách. Pravidla zásad přístupu ke kategorii definujete na stránce **Zásady nákupu**. V následující tabulce jsou popsány úkony, které je nutné dokončit pro nastavení katalogu.
 
 | Úkol                                                   | Role             | Popis                                                                                                                                                                                                                                                                                                                  |
 |--------------------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -73,7 +73,7 @@ Aktualizace jsou publikovány automaticky nebo ručně v závislosti na možnost
 <a name="see-also"></a>Viz také
 --------
 
-[Nastavte hierarchii kategorií zásobování (úkol guide)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+[Nastavit hierarchii kategorií zásobování (Průvodce záznamem úloh)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
 
 
 

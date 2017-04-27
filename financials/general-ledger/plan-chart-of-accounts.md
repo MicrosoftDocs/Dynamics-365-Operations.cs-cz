@@ -37,7 +37,7 @@ Pro sledování a správu finančních informací v organizaci můžete nastavit
 
 Účtová osnova představuje strukturovaný seznam účtů hlavní knihy právnické osoby. Tento seznam se používá pro přípravu finančního vykazování pro úřady a majitele. Účty se seskupují do typů účtů a obecných kategorií. Nejobecnější úroveň účty třídí jako výnosy a náklady (účty provozních nákladů) a aktiva a pasiva (rozvahový účet). 
 
-Účtovou osnovu mohou sdílet a používat všechny právnické osoby v rámci organizace. Účtové osnovy, který používá právní subjekt je definováno na **knihy** stránky. 
+Účtovou osnovu mohou sdílet a používat všechny právnické osoby v rámci organizace. Účtové osnovy, které používá právnická osoba, jsou definovány na stránce **Kniha**. 
 
 Zde je několik faktorů, které je třeba brát v potaz při plánování struktury účtové osnovy ve vaší organizaci:
 
@@ -51,11 +51,11 @@ Je vhodné propojit hlavní účty s kategoriemi hlavních účtů, abyste mohli
 
 Pomocí stránky **Konfigurovat účetní struktury** vytvořte účetní struktury. Účetní struktury definují platné kombinace. Kombinace, společně s hlavními účty, tvoří účtové osnovy. 
 
-**Legal entity overrides** 
+**Přepisy právnických osob** 
 
-Všechny hlavní účty, které jsou platné pro všechny právnické osoby a některé může být pouze relevantní pro určité časové období. V tomto případě lze část Přepisy právnických osob použít k určení, u kterých společností by mělo být použití hlavního účtu pozastaveno, kdo je vlastníkem a časové období aktivity dimenze. Přepisy na sdílené úrovni nemohou být více omezující než přepisy na úrovni právnické osoby.
+Ne všechny hlavní účty platí pro všechny právnické osoby a některé mohou být relevantní pouze pro určité časové období. V tomto případě lze část Přepisy právnických osob použít k určení, u kterých společností by mělo být použití hlavního účtu pozastaveno, kdo je vlastníkem a časové období aktivity dimenze. Přepisy na sdílené úrovni nemohou být více omezující než přepisy na úrovni právnické osoby.
 
-Další informace naleznete v tématu [finanční dimenze](financial-dimensions.md).
+Další informace naleznete v tématu [Finanční dimenze](financial-dimensions.md).
 
 
 

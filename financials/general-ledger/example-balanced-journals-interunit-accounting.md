@@ -1,5 +1,5 @@
 ---
-title: "Deníky Balanced pro mezijednotkové účetnictví"
+title: "Vyrovnávací deníky pro mezijednotkové účetnictví"
 description: "Tento článek ukazuje, jak je deník automaticky vyrovnán pro výběru možnosti vyrovnávací finanční dimenzi na stránce hlavní knihy."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="balanced-journals-for-interunit-accounting"></a>Deníky Balanced pro mezijednotkové účetnictví
+# <a name="balanced-journals-for-interunit-accounting"></a>Vyrovnávací deníky pro mezijednotkové účetnictví
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,9 +37,9 @@ Pokud účetní zápisy nejsou vyrovnány na úrovni hodnot finančních dimenz�
 
 |                      |           |
 |----------------------|-----------|
-| 6100 – MSP – OU\_256 | 100,00 DR |
-| 6100 – Petřiny – OU\_249  | 100,00 DR |
-| 2100 – MSP – OU\_256 | 200,00 CR |
+| 6100 – MSP – OU\_256 | 100.00 OŘ |
+| 6100 – NY – OU\_249  | 100.00 OŘ |
+| 2100 – MSP – OU\_256 | 200.00 CR |
 
 V tomto případě dojde k určení následujících zůstatků:
 
@@ -50,8 +50,8 @@ Následující účetní položky jsou proto vytvořeny automaticky tak, aby vyr
 
 |                                   |           |
 |-----------------------------------|-----------|
-| (Mezijednotkové MD) – MSP – OU\_256 | 100,00 DR |
-| (Mezijednotkové Dal) – Petřiny – OU\_249 | 100,00 CR |
+| (Mezijednotkový debit) – MSP – OU\_256 | 100.00 OŘ |
+| (Interunit Credit) – NY – OU\_249 | 100.00 CR |
 
 
 

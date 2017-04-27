@@ -85,7 +85,7 @@ Pro každý řádek objednávky je integrace aktivována na kartě **Dlouhodobý
 ## <a name="project-management-and-accounting"></a>Řízení a účetnictví projektů
 Můžete spojit projekt s majetkem, který projekt ovlivňuje. Můžete také spojit každou fázi, úkol nebo dílčí projekt s různým majetkem. Jeden majetek lze přidružit k záznamu jednotlivých projektů. Spojení vytváříte zadáním čísla majetku do pole **Číslo dlouhodobého majetku** na stránce **Projekty**. Typ projektu musí být **interní** nebo **nákladový projekt**. 
 
-Stránku **Projekty** lze rovněž použít k zobrazení podrobných informací o majetku, který je přidružený k projektům. Pokud chcete zobrazit záznam o dlouhodobém majetku, klepnutím na odkaz na majetek na pevné záložce **Nastavení** otevřete stránku **Dlouhodobý majetek**. Klepněte na tlačítko **projekty**&gt;**všechny projekty** Chcete-li zobrazit projekty, které jsou přidruženy k dlouhodobému majetku. 
+Stránku **Projekty** lze rovněž použít k zobrazení podrobných informací o majetku, který je přidružený k projektům. Pokud chcete zobrazit záznam o dlouhodobém majetku, klepnutím na odkaz na majetek na pevné záložce **Nastavení** otevřete stránku **Dlouhodobý majetek**. Poté klepnutím na možnost **Projekty** &gt; **Všechny projekty** zobrazíte projekty, které jsou s tímto dlouhodobým majetkem spojené. 
 
 Obvykle přidružíte dlouhodobý majetek k projektům, když se projekt týká práce, údržby nebo zlepšení majetku. Po dokončení projektu nebude navýšení hodnoty majetku vytvořeno automaticky. Proto je nutné vytvořit navýšení hodnoty ručně, je-li navýšením vyžadováno. 
 
@@ -93,7 +93,7 @@ Jestliže chcete odstranit propojení mezi projektem a majetkem, vymažte pole *
 
 Vytvářený nebo vyráběný dlouhodobý majetek lze rovněž identifikovat v rámci projektu odhadu. Na konci projektu odhadu můžete automaticky zaúčtovat transakci pořízení majetku.
 
-Další informace naleznete v tématu [získání majetku prostřednictvím zadávání veřejných zakázek](acquire-assets-procurement.md)
+Další informace naleznete v tématu [Pořízení majetku pomocí zásobování](acquire-assets-procurement.md).
 
 
 

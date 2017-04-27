@@ -37,7 +37,7 @@ Použijte stránku Finanční dimenze pro vytváření finančních dimenzí, kt
 
 Po vytvoření finančních dimenzí použijte stránku Hodnoty finanční dimenze k přiřazení dalších vlastností ke každé finanční dimenzi. 
 
-Přestože finanční dimenze můžete použít k reprezentaci právnických osob bez vytvoření právnických osob v 365 Microsoft Dynamics pro operace, finanční dimenze nejsou určeny k provozním adresa nebo obchodních potřeb právnických osob. Mezijednotkové účetnictví funkce v Microsoft Dynamics 365 pro operace je určena adresovat pouze účetní položky vytvořené pro každou transakci. 
+Ačkoliv lze finanční dimenze použít k reprezentaci právnických osob bez vytvoření právnických osob v aplikaci Microsoft Dynamics 365 for Operations, finanční dimenze nejsou určeny řešení provozních ani obchodních potřeb právnických osob. Funkce mezijednotkového účetnictví v aplikaci Microsoft Dynamics 365 for Operations umožňuje pracovat pouze s účetními položkami vytvořenými jednotlivými transakcemi. 
 
 Předtím než nastavíte finanční dimenze jako právnické osoby, ohodnoťte obchodní procesy v následujících oblastech pro určení, zda toto nastavení bude fungovat ve vaší organizaci:
 
@@ -51,29 +51,29 @@ Níže jsou uvedeny některé příklady omezení:
 -   Funkci DPH lze používat pouze s právnickými osobami, ale ne s finančními dimenzemi.
 -   Některé sestavy nezahrnují finanční dimenze, takže nemůžete vždy vykazovat podle finančních dimenzí není-li tato sestava změněna.
 
-**Custom dimensions** 
+**Vlastní dimenze** 
 
-Chcete-li vytvořit finanční dimenze definované uživatelem, použijte hodnoty z pole, vyberte &lt;vlastní dimenze&gt;. Můžete také učit účetní masku pro omezení množství a typů informací, které můžete zadat pro hodnoty dimenze. Můžete zadat znaky, které zůstávají pro každou hodnotu dimenze stejné, například písmena nebo pomlčky. Můžete také zadat znaky čísel (\#) a znaky ampersand (&) jako zástupné symboly pro písmena a čísla, která se změní pokaždé, když je vytvořena hodnota dimenze. Použijte znak čísla (\#) jako zástupný znak pro čísla a znak ampersand (&) jako zástupný symbol pro písmeno. 
+Pokud chcete vytvořit hodnoty definované uživatelem, vyberte v poli Použít formulář hodnot možnost &lt; Vlastní dimenze &gt;. Můžete také učit účetní masku pro omezení množství a typů informací, které můžete zadat pro hodnoty dimenze. Můžete zadat znaky, které zůstávají pro každou hodnotu dimenze stejné, například písmena nebo pomlčky. Můžete také zadat znaky čísel (\#) a znak ampersand (&) jako zástupné symboly pro písmena a čísla, která se změní pokaždé, když je hodnota dimenze vytvořena. Použijte znak čísla (\#) jako zástupný symbol pro číslo a ampersand (&) jako zástupný symbol pro písmeno. 
 
 **Příklad** 
 
-Chcete-li omezit hodnoty dimenze na písmena CC a tři čísla, zadejte CC -\#\#\# jako masku formátu. Toto pole je dostupné pouze pokud vyberete &lt;vlastní dimenze &gt;v poli použít hodnoty z pole. 
+K omezení hodnoty dimenze na písmena CC a tři čísla zadejte jako masku formátu CC-\#\#\#. Toto pole je k dispozici pouze tehdy, pokud vyberete možnost &lt; Vlastní dimenze &gt; v poli Použít hodnoty od. 
 
-**Dimenze entity zálohování** 
+**Dimenze zálohované entitou** 
 
-Vytvářet finanční dimenzi entity zálohy použít hodnoty z pole, vyberte entitu systémem definované na základě finančních dimenzí. Hodnoty finanční dimenze jsou vytvořené z tohoto výběru. Chcete-li například vytvořit hodnoty dimenze pro projekty, vyberte Projekty. Hodnota dimenze se vytvoří pro každý název projektu. Stránka s hodnotami dimenzí zobrazuje hodnoty pro entitu, a když jsou konkrétní pro společnost, tak také hodnoty společnosti. 
+Pokud chcete použít dimenze zálohované entitami, v poli Použít hodnoty od vyberte systémem definovanou entitu, která bude základ pro finanční dimenze. Hodnoty finanční dimenze jsou vytvořené z tohoto výběru. Chcete-li například vytvořit hodnoty dimenze pro projekty, vyberte Projekty. Hodnota dimenze se vytvoří pro každý název projektu. Stránka s hodnotami dimenzí zobrazuje hodnoty pro entitu, a když jsou konkrétní pro společnost, tak také hodnoty společnosti. 
 
-**Aktivace dimenzí** 
+**Aktivační dimenze** 
 
 Aktivace finanční dimenze aktualizuje tabulku s názvem finanční dimenze a odstraněné dimenze odebere. Dříve než aktivujete finanční dimenzi, můžete zadat hodnoty dimenze, ale finanční dimenzi lze použít až po aktivaci. Například tuto finanční dimenzi nelze přidat do účetní struktury, dokud se neaktivuje finanční dimenze. Klepnutím na tlačítko Aktivovat budou u všech dimenzí aktualizovány změny stavu. 
 
-**Translations** 
+**Překlady** 
 
-Stránka Překlad textu můžete zadat text zobrazený v různých jazycích pro vybranou finanční dimenzi. Stránka Převod hlavního účtu je místo, kde můžete zadat text zobrazený v různých jazycích pro hlavní účet. 
+Stránka Překlad textu umožňuje zadat text zobrazený v různých jazycích pro vybranou finanční dimenzi. Stránka Převod hlavního účtu je místo, kde můžete zadat text zobrazený v různých jazycích pro hlavní účet. 
 
-**Legal entity overrides** 
+**Přepisy právnických osob** 
 
-Všechny rozměry jsou platné pro všechny právnické osoby a některé může být pouze relevantní pro určité časové období. V tomto případě lze část Přepisy právnických osob použít k určení, u kterých společností by mělo být použití dimenze pozastaveno, kdo je vlastníkem a časové období aktivity dimenze.
+Ne všechny dimenze platí pro všechny právnické osoby a některé mohou být relevantní pouze pro určité časové období. V tomto případě lze část Přepisy právnických osob použít k určení, u kterých společností by mělo být použití dimenze pozastaveno, kdo je vlastníkem a časové období aktivity dimenze.
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Půl roku odpisu při vyřazení dlouhodobého majetku pro Českou republiku"
-description: "Toto téma vysvětluje, jak nastavit pololetní odpisy, tak, že použijete poloviční roční odpisy dlouhodobého majetku, které jsou prodávány nebo jinak."
+title: "Pololetní odpisy vyřazení dlouhodobého majetku pro Českou republiku"
+description: "Toto téma vysvětluje, jak nastavit pololetní odpisy, tak abyste mohli použít pololetní odpisy dlouhodobého majetku, který je prodaný nebo jinak vyřazený."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,31 +29,31 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma vysvětluje, jak nastavit pololetní odpisy, tak, že použijete poloviční roční odpisy dlouhodobého majetku, které jsou prodávány nebo jinak.
+Toto téma vysvětluje, jak nastavit pololetní odpisy, tak abyste mohli použít pololetní odpisy dlouhodobého majetku, který je prodaný nebo jinak vyřazený.
 
-Při prodeji dlouhodobého majetku nebo převedl, můžete použít poloviční roční odpisy majetku pro daňové účely. Pololetní odpisy lze použít bez ohledu na datum vyřazení.
+Při prodeji nebo jiném vyřazení dlouhodobého majetku můžete použít pololetní odpisy majetku pro daňové účely. Pololetní odpisy lze použít bez ohledu na datum vyřazení.
 
 ## <a name="set-up-depreciation-methods-for-the-depreciation-profile"></a>Nastavení metod odpisů pro odpisový profil
 Použijte metody odpisů Rovnoměrné CZ a Zrychlené CZ pro uplatnění pololetních odpisů pro dlouhodobý majetek.
 
-1.  Klepněte na tlačítko **dlouhodobého majetku**&gt;**nastavení**&gt;**odpisy**&gt;**Odpisové plány**.
+1.  Klikněte na **Dlouhodobý majetek** &gt; **Nastavení** &gt; **Odpisy** &gt; **Odpisové plány**.
 2.  Klepněte na tlačítko **Nový** a vytvořte odpisový plán.
-3.  V **metoda** pole: vyberte **Rovnoměrně CZ** nebo **Zrychleně CZ**.
-4.  V **Odpisový rok** pole: vyberte **kalendář** jako základ pro výpočet odpisů.
-5.  V **frekvence období** pole: vyberte **roční**.
+3.  V poli **Metoda** vyberte **Rovnoměrné CZ** nebo **Zrychlené CZ**.
+4.  V poli **Odpisový rok** vyberte jako základ pro výpočet odpisů možnost **Kalendář**.
+5.  V poli **Frekvence období** vyberte **Roční**.
 
-## <a name="apply-the-halfyearly-depreciation-method"></a>Použití halfyearly metoda odpisu
+## <a name="apply-the-halfyearly-depreciation-method"></a>Použití pololetní metody odpisů
 Po nastavení metod odpisů lze použít pololetní odpisy majetku pro vyřazený majetek.
 
-1.  Klepněte na tlačítko **dlouhodobého majetku**&gt;**deníky**&gt;**dlouhodobého majetku**.
-2.  Na **přehled** karta, klepněte na tlačítko **nové** vytvořte deník a poté zadejte požadované podrobnosti.
-3.  Klepněte na tlačítko **řádky** otevřete **doklad deníku** stránky.
+1.  Klikněte na **Dlouhodobý majetek** &gt; **Deníky** &gt; **Dlouhodobý majetek**.
+2.  Na kartě **Přehled** kliknutím na možnost **Nový** vytvořte deník a zadejte požadované podrobnosti.
+3.  Kliknutím na možnost **Řádky** otevřete stránku **Doklad deníku**.
 4.  Vytvořte řádek deníku pro dlouhodobý majetek, který byl prodán nebo jinak vyřazen.
-5.  Klepněte na tlačítko **návrhy**&gt;**návrh odpisu** otevřete **návrh odpisu** stránky.
-6.  V **datum** zadejte datum deníku.
-7.  Vyberte **vypočítat částku odpisu pololetní** políčko pololetní odpisy počítají. Je-li toto políčko zaškrtnuto, je roční částka odpisu vydělených dvěma a zaokrouhlena podle zaokrouhlení nastavení pro knihy odpisů.
-8.  Volitelné: Vyberte **Shrnout odpisy** políčko, chcete-li shrnutí vypočteného odpisu pro každý dlouhodobý majetek nebo pro každý oceňovací model.
-9.  Klepněte na tlačítko **OK** zavřete **návrh odpisu** stránky.
+5.  Klepnutím na **Návrhy** &gt; **Návrh odpisu** otevřete stránku **Návrh odpisu**.
+6.  Do pole **Do data** zadejte datum deníku.
+7.  Zaškrtněte políčko **Vypočítat půlroční částku odpisu**, aby byla vypočítána pololetní částka odpisu. Pokud je toto políčko zaškrtnuto, je roční částka odpisu vydělena dvěma a zaokrouhlena podle nastavení zaokrouhlení knihy odpisů.
+8.  Volitelné: Zaškrtněte políčko **Shrnout odpisy** pro shrnutí vypočteného odpisu pro každý dlouhodobý majetek nebo pro každý oceňovací model.
+9.  Kliknutím na tlačítko **OK** zavřete stránku **Návrh odpisu**.
 10. Zaúčtovat deník
 
 

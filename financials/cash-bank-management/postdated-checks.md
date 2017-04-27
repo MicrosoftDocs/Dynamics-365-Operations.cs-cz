@@ -1,6 +1,6 @@
 ---
 title: "Postdatované šeky"
-description: "Tento článek obsahuje informace o podpoře pro postdatované šeky ve 365 Microsoft Dynamics pro operace. Postdatované šeky jsou šeky, které jsou vydány za účelem provedení a přijetí platby v budoucí datu. Takže lze šek proplatit až od určeného data."
+description: "Tento článek obsahuje informace o podpoře pro postdatované šeky v aplikaci Microsoft Dynamics 365 for Operations. Postdatované šeky jsou šeky, které jsou vydány za účelem provedení a přijetí platby v budoucí datu. Takže lze šek proplatit až od určeného data."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -30,9 +30,9 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek obsahuje informace o podpoře pro postdatované šeky ve 365 Microsoft Dynamics pro operace. Postdatované šeky jsou šeky, které jsou vydány za účelem provedení a přijetí platby v budoucí datu. Takže lze šek proplatit až od určeného data.
+Tento článek obsahuje informace o podpoře pro postdatované šeky v aplikaci Microsoft Dynamics 365 for Operations. Postdatované šeky jsou šeky, které jsou vydány za účelem provedení a přijetí platby v budoucí datu. Takže lze šek proplatit až od určeného data.
 
-365 Microsoft Dynamics pro operace podporuje úplné řízení cyklu pro postdatované šeky do pohledávek a závazků, jak je znázorněno v následující tabulce.
+Microsoft Dynamics 365 for Operations podporuje úplné řízení cyklu postdatovaných šeků v pohledávkách i závazcích, jak znázorňuje následující tabulka.
 <table>
 <colgroup>
 <col width="50%" />
@@ -51,14 +51,14 @@ Tento článek obsahuje informace o podpoře pro postdatované šeky ve 365 Micr
 </tr>
 <tr class="even">
 <td>Registrace a účtování postdatovaného šeku pro dodavatele</td>
-<td>Zaregistrujte podrobnosti postdatovaného šeku, který vydáte dodavateli. Při zaúčtování platby odpovědnost dodavatele je rozpoznána, ale na bankovní účet není ještě Dal. Místo toho se pro tento účel používá clearingový účet.</td>
+<td>Zaregistrujte podrobnosti postdatovaného šeku, který vydáte dodavateli. Při zaúčtování platby je uznán pasiv dodavatele, avšak bankovní účet není dosud Dal. Místo toho se pro tento účel používá clearingový účet.</td>
 </tr>
 <tr class="odd">
 <td>Registrace a zaúčtování postdatovaného šeku pro odběratele</td>
-<td>Zaregistruje podrobnosti postdatovaného šeku přijatého od odběratele. Při zaúčtování platby pohledávek zákazníka je Dal, ale na bankovní účet není ještě MD. Místo toho se pro tento účel používá clearingový účet.</td>
+<td>Zaregistruje podrobnosti postdatovaného šeku přijatého od odběratele. Při zaúčtování platby je pohledávka odběratele Dal, avšak bankovní účet není ještě Má dáti. Místo toho se pro tento účel používá clearingový účet.</td>
 </tr>
 <tr class="even">
-<td>Registrovat a zaúčtovat náhradní postdatovaný šek pro zákazníka nebo dodavatele</td>
+<td>Zaregistruje a zaúčtujte náhradní postdatovaný šek pro odběratele nebo dodavatele.</td>
 <td>
 V případě ztráty nebo poškození původního šeku pro dodavatele nebo od odběratele můžete vydat náhradní postdatovaný šek. Při registraci detailů šeku zadejte odkaz na původní šek a označte, že nový šek je náhrada za původní. Náhradní šek můžete také zaúčtovat.</td>
 </tr>
@@ -72,14 +72,14 @@ V případě ztráty nebo poškození původního šeku pro dodavatele nebo od o
 </tr>
 <tr class="odd">
 <td>Zrušení postdatovaného šeku pro dodavatele</td>
-<td>Zaúčtovaný postdatovaný šek v těchto situacích můžete zrušit:-kontrola je vrácen bankou.
--Kontrola je nesprávná faktura vyrovnána.
--Hotovostní platby provádí proti šeku.
+<td>Zaúčtovaný postdatovaný šek v těchto situacích můžete zrušit - šek je vrácen bankou.
+- Šek je použit k nesprávné faktuře.
+- Proti šeku je provedena hotovostní platba.
 </td>
 </tr>
 <tr class="even">
-<td>Zastavit platbu postdatovaného šeku</td>
-<td>Můžete zastavit platbu na postdatovaném šeku vystaveném dodavateli z důvodů, jako je nedostatek finančních prostředků, změna podmínek smlouvy s dodavatelem, vadné zboží u dodavatele, dodání nebo vrácení zboží dodavateli. Můžete zastavit platbu pouze na kontroly, které nebyly vymazány.</td>
+<td>Zastavte platbu postdatovaného šeku.</td>
+<td>Můžete zastavit platbu na postdatovaném šeku vystaveném dodavateli z důvodů, jako je nedostatek finančních prostředků, změna podmínek smlouvy s dodavatelem, vadné zboží u dodavatele, dodání nebo vrácení zboží dodavateli. Můžete zastavit platbu pouze u šeků, které nebyly proplaceny.</td>
 </tr>
 </tbody>
 </table>

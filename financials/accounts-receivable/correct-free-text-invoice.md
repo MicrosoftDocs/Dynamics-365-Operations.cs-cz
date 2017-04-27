@@ -33,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 Tento článek vysvětluje, jak opravit volnou fakturu, která byla zaúčtována, a znovu ji vystavit jako opravenou fakturu.
 
-Chcete-li volné faktury, které již byly zaúčtovány, otevření zaúčtované faktury s volným. Na **faktury** stránky, vyberte **zrušení**a potom vyberte **správná faktura**. Vyberte kód důvodu, přidejte poznámky a vyberte datum pro novou, opravenou fakturu. Můžete upravit opravenou fakturu a zaúčtovat ji. 
+Pokud chcete upravit volnou fakturu, která již byla zaúčtována, otevřete ji. Na stránce **Faktura** vyberte možnost **Zrušit** a poté vyberte možnost **Správná faktura**. Vyberte kód důvodu, přidejte poznámky a vyberte datum pro novou, opravenou fakturu. Můžete upravit opravenou fakturu a zaúčtovat ji. 
 
 Po zaúčtování opravené faktury se vytvoří zrušení faktury pro kreditní částku, která se rovná původní částce faktury. Kombinovaný zůstatek původní faktury a zrušení faktury je tedy 0 (nula). Zrušení faktury je vyrovnáno oproti původní faktuře. 
 
@@ -46,10 +46,10 @@ Po zaúčtování opravené fakturu budete mít tři faktury:
 Zrušení faktury a opravnou fakturu lze určit dvěma způsoby:
 
 -   Na stránce **Všechny volné faktury** je sloupec **Oprava**, ve kterém můžete vidět, které faktury jsou zrušeny a které jsou opravné.
--   Hlavičku faktury s volným textem zobrazí stav **Cancelling faktury '\[číslo faktury\]'** nebo **Corrected faktury '\[číslo faktury\]'**.
+-   Záhlaví volné faktury zobrazuje stav **Zrušení faktury '\[číslo faktury\]'** nebo **Opravená faktura '\[číslo faktury\]'**.
 
 > [!NOTE]
-> Tato funkce je dostupná pouze tehdy, pokud **volného textu faktury korekce** je vybrán konfigurační klíč.
+> Tato funkce je k dispozici pouze tehdy, je-li vybrán konfigurační klíč **Oprava volné faktury**.
 
 
 

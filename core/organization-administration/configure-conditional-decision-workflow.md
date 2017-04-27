@@ -1,5 +1,5 @@
 ---
-title: "Konfigurace podmíněného rozhodnutí v pracovním postupu"
+title: "Konfigurace podmíněného rozhodnutí ve workflowu"
 description: "Následně nakonfigurujte vlastnosti podmíněného rozhodnutí pomocí následujícího postupu."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-conditional-decision-in-a-workflow"></a>Konfigurace podmíněného rozhodnutí v pracovním postupu
+# <a name="configure-a-conditional-decision-in-a-workflow"></a>Konfigurace podmíněného rozhodnutí ve workflowu
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,14 +41,14 @@ Pomocí následujících kroků zadejte název podmíněného rozhodnutí.
 ## <a name="set-conditions"></a> Stanovení podmínek
 V tomto okamžiku systém určí, která větev se použije, vyhodnocením odeslaného dokumentu k určení, zda vyhovuje konkrétním podmínkám.
 1.  V levém podokně klepněte na tlačítko **Základní nastavení**.
-2.  Click **Add condition**.
+2.  Klikněte na možnost **Přidat podmínku**.
 3.  Zadání podmínky
 4.  Zadejte všechny další podmínky, pokud jsou požadovány.
 5.  Chcete-li ověřit, zda jsou zadané podmínky nastaveny správně, postupujte následovně:
     1.  Klepnutím na tlačítko **Test** otevřete formulář **Podmínka testovacího workflowu**.
     2.  Vyberte v oblasti **Ověřit podmínku** formuláře záznam.
     3.  Klepněte na možnost **Test**. Systém záznam vyhodnotí a určí, zda odpovídá zadaným podmínkám.
-    4.  Klepněte na tlačítko **OK** nebo **zrušení** se vraťte **vlastnosti** formulář.
+    4.  Kliknutím na tlačítko **OK** nebo **Zrušit** se vraťte do formuláře **Vlastnosti**.
 
 
 

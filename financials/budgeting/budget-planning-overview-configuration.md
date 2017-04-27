@@ -37,7 +37,7 @@ Tento článek představuje plánování rozpočtu a obsahuje informace, které 
 
 Můžete provádět plánování rozpočtu, zatímco připravujete rozpočty, které bude organizace implementovat. Organizace může nastavit plánování rozpočtu a poté nastavit procesy plánování rozpočtu pro potřeby splnění zásad a postupů a požadavků pro přípravu rozpočtu. 
 
-Pokud porozumíte pojmů a terminologie používané v Microsoft Dynamics 365 pro operace, bude snadněji implementovat v organizaci plánování rozpočtu.
+Pokud rozumíte konceptům a terminologii, které se používají v aplikaci Microsoft Dynamics 365 for Operations, je bude pro vás snazší provádět plánování rozpočtu ve vaší organizaci.
 
 ### <a name="key-terms"></a>Klíčové podmínky
 
@@ -47,7 +47,7 @@ Pokud porozumíte pojmů a terminologie používané v Microsoft Dynamics 365 pr
 -   **Fáze plánování rozpočtu** – fáze plánování rozpočtu definují postup, který plán rozpočtu dodržuje od počátku do konečného schválení. Fáze plánování rozpočtu jsou uspořádány do workflowu plánování rozpočtu.
 -   **Workflowy plánování rozpočtu** – workflowy plánování rozpočtu se skládají z fází plánování rozpočtu a definují je. Workflowy rozpočtového plánování jsou přidruženy k workflowům rozpočtování. Workflowy rozpočtování jsou automatizované a ruční procesy, které posunují plány rozpočtu do dalších fází plánování rozpočtu.
 
-[![Terminologie pro plánování rozpočtu](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
+[![Terminologie plánování rozpočtu](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
 ### <a name="common-tasks"></a>Společné úlohy
 
@@ -58,7 +58,7 @@ Pomocí plánování rozpočtu můžete provádět následující úkony:
 -   Automaticky směrujte plány rozpočtu společně s listy, dokumenty odůvodnění a jinými přílohami ke kontrole a schválení.
 -   Konsolidujte více plánů rozpočtu z nižší úrovně organizace do jediného nadřazeného plánu rozpočtu na vyšší úrovni organizace. Lze také vyvinout jeden plán rozpočtu na vyšší úrovni v organizaci a přidělit rozpočet nižším úrovním organizace.
 
-Plánování rozpočtu je integrováno s jinými 365 Microsoft Dynamics pro operace moduly. Lze tedy přenést informace z předchozích rozpočtů, skutečných výdajů, dlouhodobého majetku a lidských zdrojů. Protože je plánování rozpočtu také integrováno s aplikacemi Microsoft Excel a Microsoft Word, můžete tyto aplikace využít k práci s daty plánování rozpočtu. Například správce rozpočtu může exportovat požadavek oddělení rozpočtu ze scénáře plánu rozpočtu do listu aplikace Excel. Data lze analyzovat, aktualizovat a zobrazit na listě a pak opět publikovat do řádků plánu rozpočtu.
+Plánování rozpočtu je integrováno s jinými moduly v aplikaci Microsoft Dynamics 365 for Operations. Lze tedy přenést informace z předchozích rozpočtů, skutečných výdajů, dlouhodobého majetku a lidských zdrojů. Protože je plánování rozpočtu také integrováno s aplikacemi Microsoft Excel a Microsoft Word, můžete tyto aplikace využít k práci s daty plánování rozpočtu. Například správce rozpočtu může exportovat požadavek oddělení rozpočtu ze scénáře plánu rozpočtu do listu aplikace Excel. Data lze analyzovat, aktualizovat a zobrazit na listě a pak opět publikovat do řádků plánu rozpočtu.
 
 ## <a name="configuring-budget-planning"></a>Konfigurace plánování rozpočtu
 Stránka **Konfigurace plánování rozpočtu** obsahuje nastavení, která jsou vyžadována pro nastavení plánování rozpočtu. Následující části popisují některé klíčové faktory, které byste měli zvážit při konfiguraci plánování rozpočtu. Po dokončení konfigurace nastavte procesy plánování rozpočtu.
@@ -67,9 +67,9 @@ Stránka **Konfigurace plánování rozpočtu** obsahuje nastavení, která jsou
 
 Volitelný doporučený první krok je vytvořit schéma zobrazující postupy organizace k vypracování rozpočtu. K vytvoření tohoto schématu můžete použít jakoukoli metodu. Následující obrázek znázorňuje obecný příkladu, kde jsou oddělené workflowy plánování rozpočtu vytvořené pro různé úrovně organizace. Fáze jsou definovány v rámci každého workflowu a konkrétní scénáře jsou přiřazené jednotlivým fázím k uchování dat rozpočtu. Úlohy jsou prováděny k přesunu dat z jedné fáze do druhé. Například částky můžete přidělit nebo agregovat do různých účtů, schválení nebo jiných hodnocení. V tomto příkladu kurzíva označuje scénář, který nelze upravit během fáze, nebo data, která jsou z minulosti nebo byla schválena v dřívější fázi, a proto by neměla být změněna. 
 
-[![Rozpočtové plánování obecného schématu.](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
+[![Obecné schéma plánování rozpočtu](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
 
-V následujícím příkladu podnikovému ředitelství odhaduje množství podle směrného plánu původní rozpočet a rovnoměrně je prodejní oddělení. Prodejní oddělení pak odhadují a odesílají vlastní předpovědi zpět na ústředí, kde správce rozpočtu agreguje a upraví předpovědi. Správce rozpočtu nakonec odešle upravené částky rozpočtu finančnímu řediteli pro kontrolu, konečné úpravy k schválení. 
+V následujícím příkladu ředitelství podniku odhaduje částky prvotního základu rozpočtu a distribuuje je pro prodejní oddělení. Prodejní oddělení pak odhadují a odesílají vlastní předpovědi zpět na ústředí, kde správce rozpočtu agreguje a upraví předpovědi. Správce rozpočtu nakonec odešle upravené částky rozpočtu finančnímu řediteli pro kontrolu, konečné úpravy k schválení. 
 
 [![Příklad schématu plánování rozpočtu](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
@@ -87,17 +87,17 @@ Plánování rozpočtu může dodržovat jeden ze dvou modelů zabezpečení k d
 
 Workflowy plánování rozpočtu se používají v kombinaci s workflowy rozpočtování pro správu tvorby a vývoje plánů rozpočtů.
 
-Workflow plánování rozpočtu je tvořen uspořádanou sadou fází, kterými plán rozpočtu prochází. Každý workflow rozpočtového plánování je přidružen k workflowu rozpočtování. Workflowy rozpočtování jsou jedním z typů pracovního postupu, které se používají v celém Microsoft Dynamics 365 pro operace. Workflow rozpočtování směruje plány rozpočtu spolu s listy, odůvodněním a přílohami prostřednictvím organizace k revizi a schválení. 
+Workflow plánování rozpočtu je tvořen uspořádanou sadou fází, kterými plán rozpočtu prochází. Každý workflow rozpočtového plánování je přidružen k workflowu rozpočtování. Workflowy rozpočtování jsou jedním z typů workflowů, které se používají v aplikaci Microsoft Dynamics 365 for Operations. Workflow rozpočtování směruje plány rozpočtu spolu s listy, odůvodněním a přílohami prostřednictvím organizace k revizi a schválení. 
 
 Workflow plánování rozpočtu vytváříte v části **Fáze workflowu** na stránce **Konfigurace plánování rozpočtu**. Zde můžete vybrat fáze a workflowu rozpočtování, který bude použit, a také nakonfigurovat další nastavení. 
 
 Je vhodné vytvořit workflow plánování rozpočtu pro každou úroveň hierarchie rozpočtování. Poté můžete přiřadit workflow rozpočtování, který obsahuje prvky, které odpovídají fázím workflowu plánování rozpočtu. V příkladu schématu zobrazeném v tomto článku by byl jeden workflow plánování rozpočtu vytvořen pro prodejní oddělení a jiný pro ústředí. Workflow rozpočtování přesune plány rozpočtu jednotlivými fázemi. 
 
-Workflow rozpočtování můžete vytvořit pro plánování rozpočtu na stránce **Workflowy rozpočtování**. Proces je podobný procesu pro vytváření jiných pracovních postupů v 365 Microsoft Dynamics pro operace. Následující obrázek znázorňuje příklad workflowu ústředí. 
+Workflow rozpočtování můžete vytvořit pro plánování rozpočtu na stránce **Workflowy rozpočtování**. Tento proces se podobá procesu vytváření jiných workflowů v aplikaci Microsoft Dynamics 365 for Operations. Následující obrázek znázorňuje příklad workflowu ústředí. 
 
-[![Rozpočtování workflowu plánování rozpočtu](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
+[![Workflow rozpočtování pro plánování rozpočtu](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
-Pracovní postup obsahuje prvky pro přidělení prodejních útvarů a jejich odeslání revize rozpočtu správce, schválení CFO a fáze přechodů mezi každou fázi agregace. 
+Tento workflow obsahuje prvky k přidělení k prodejním oddělením a agregaci jejich odeslání, kontrolu správcem rozpočtu, schválení finančním ředitelem a fáze přechodů mezi každou fází. 
 
 Workflow rozpočtování přiřazujete v každému workflow plánování rozpočtu v části **Fáze workflowu** na stránce **Konfigurace plánování rozpočtu**.
 
@@ -115,8 +115,8 @@ Ve plánování rozpočtu můžete přidělit částky nebo množství na řádc
 
 Plány přidělení automaticky přiřazují řádky plánu rozpočtu během workflowu zpracování. Přidělení lze provádět pomocí některé z následujících metod v seznamu **Metody přidělení**:
 
--   **Přidělit napříč obdobími** – alokační klíč období se používá k přidělení řádků plánu rozpočtu ze zdrojového scénáře plánu rozpočtu napříč obdobími v cílovém scénáři. **Poznámka:** dříve, než můžete přidělit napříč obdobími, musíte nastavit přídělové klíče období na *** přidělení období kategorie *** stránky.
--   **Přidělit k dimenzím** – řádky plánu rozpočtu jsou přiděleny ze zdrojového scénáře plánu rozpočtu napříč finančními dimenzemi v cílovém scénáři. **Poznámka:** před lze přidělit k dimenzím, musíte nastavit podmínky přidělení rozpočtu na *** přidělení rozpočtu podmínky *** stránky.
+-   **Přidělit napříč obdobími** – alokační klíč období se používá k přidělení řádků plánu rozpočtu ze zdrojového scénáře plánu rozpočtu napříč obdobími v cílovém scénáři. **Poznámka:** Před přidělením napříč obdobími je nutné nastavit alokační klíče období na stránce ****Kategorie přidělení období****.
+-   **Přidělit k dimenzím** – řádky plánu rozpočtu jsou přiděleny ze zdrojového scénáře plánu rozpočtu napříč finančními dimenzemi v cílovém scénáři. **Poznámka:** Dříve než začnete přidělovat dimenze, je nutné nastavit podmínky přidělení rozpočtu na stránce ****Podmínky přidělení rozpočtu****.
 -   **Agregovat** – řádky plánu rozpočtu jsou agregovány ze zdrojového scénáře plánu rozpočtu v přidruženém plánu rozpočtu do cílového scénáře v nadřazeném rozpočtovém plánu.
 -   **Rozdělit** – řádky plánu rozpočtu jsou distribuovány ze zdrojového scénáře plánu rozpočtu v nadřazeném plánu rozpočtu do cílového scénáře v souvisejících rozpočtových plánech.
 -   **Použít pravidla přidělení hlavní knihy** – řádky plánu rozpočtu jsou rozděleny ze zdrojového scénáře plánu rozpočtu do cílového scénáře na základě vybraného pravidla přidělení hlavní knihy.
@@ -126,15 +126,15 @@ Plány přidělení automaticky přiřazují řádky plánu rozpočtu během wor
 
 Fáze přidělení lze použít k automatickému přidělení řádků plánu rozpočtu během zpracování workflowu. Když se používají fáze přidělení, řádky plánu rozpočtu v cílovém scénáři lze vytvořit a upravit bez zásahu pořizovatele plánu rozpočtu nebo kontrolora.
 
-Při nastavení přidělení fáze můžete přiřadit workflow a fázi plánu rozpočtu k plánu přidělení. Workflow plánování rozpočtu musí být přidruženy k workflowu rozpočtování, který používá *** rozpočtové plánovací fáze přidělení *** automatickou úlohu pracovního postupu. Když workflow dosáhne určité fáze, dojde k automatickému přidělení. Tato automatizovaná úloha slouží k vytvoření řádků plánu rozpočtu v novém scénáři. 
+Při nastavení přidělení fáze můžete přiřadit workflow a fázi plánu rozpočtu k plánu přidělení. Workflow plánování rozpočtu je nutné přiřadit k workflowu rozpočtování, který používá automatickou úlohu workflowu ****Přidělení fáze plánování rozpočtu****. Když workflow dosáhne určité fáze, dojde k automatickému přidělení. Tato automatizovaná úloha slouží k vytvoření řádků plánu rozpočtu v novém scénáři. 
 
 V příkladu schématu zobrazeném dříve v tomto tématu je přidělení provedeno k převodu částek z plánu rozpočtu a scénářů v základní fázi ústředí do jiného plánu rozpočtu a scénářů obchodních oddělení ve fázi odhadu. Následující obrázek ukazuje příslušnou část ilustračního schématu.
 
-[![Přidělení fáze](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
+[![Přidělení fází](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 
-Navíc ve schématu například agregaci se provádí v scénáře v prodejním oddělení fáze odesláno a plánů rozpočtu k nadřazenému plánu ve fázi HQ kumulativní. Následující obrázek ukazuje příslušnou část ilustračního schématu.
+Navíc se v příkladu schématu provádí agregace z plánů rozpočtu a scénářů obchodních oddělení ve fázi odesláno v nadřazeném plánu v kumulativní fázi ústředí. Následující obrázek ukazuje příslušnou část ilustračního schématu.
 
-[![Aggregation](./media/aggregation-109x300.png)](./media/aggregation.png)
+[![Agregace](./media/aggregation-109x300.png)](./media/aggregation.png)
 
 ### <a name="priorities"></a>Priority
 
@@ -152,9 +152,9 @@ Kromě sloupce částek rozpočtu můžete definovat sloupce pro pole projekt, n
 
 V příkladovém schématu můžete vytvořit sloupce pro prodeje PY, smlouvy a prognózy scénáře (následující obrázek ukazuje příslušnou část schématu). Můžete pak rozdělit jeden nebo všechny z uvedených scénářů do samostatných sloupců za každé čtvrtletí fiskálního roku, takže správce oddělení prodeje může přesně zadávat prognózy částek pro každé období.
 
-[![Columns](./media/columns.png)](./media/columns.png) 
+[![Sloupce](./media/columns.png)](./media/columns.png) 
 
-Také určíte, zda lze upravit každý prvek rozložení (sloupec) a zda je k dispozici v libovolnou šablonu listu, který je vytvořen pro toto rozložení. V příkladovém schématu v rozložení použitém pro fáze odhadu lze upravovat sloupce prognózy, zatímco sloupce Prodeje PY a Smlouvy jsou jen pro čtení.
+Rovněž určujete, zda každý prvek rozvržení (sloupec), lze upravit a zda je k dispozici v kterékoli šabloně listu, která je vytvořená pro toto rozvržení. V příkladovém schématu v rozložení použitém pro fáze odhadu lze upravovat sloupce prognózy, zatímco sloupce Prodeje PY a Smlouvy jsou jen pro čtení.
 
 ### <a name="templates"></a>Šablony
 
@@ -163,7 +163,7 @@ V části **Rozvržení** na stránce **Konfigurace plánování rozpočtu** lze
 Generujete, zobrazujete nebo ukládáte šablonu pro každé rozvržení. Když se šablona generuje, rozvržení je uzamčeno a nelze jej upravit. Toto uzamknutí pomáhá zajistit, aby formát šablony odpovídal rozvržení plánu rozpočtu a obsahovat stejné údaje. Po vygenerování šablony ji lze zobrazit a upravit. Můžete například do šablony přidat grafy nebo dále upravit její vzhled.
 
 > [!NOTE] 
-> Šablony by měl být uložen do umístění, které má uživatel přístup, tak, aby bylo možné načíst rozložení po dokončení úprav. Tímto způsobem se šablona použije s plány rozpočtu, které používají rozvržení.
+> Šablona by měla být uložena do umístění, ke kterému má uživatel přístup, aby ji bylo možné odeslat do rozvržení po dokončení úprav. Tímto způsobem se šablona použije s plány rozpočtu, které používají rozvržení.
 
 ### <a name="descriptions"></a>Popisy
 
@@ -187,7 +187,7 @@ V nabídce **Akce** je také možné vytvořit proces zkopírováním existujíc
 
 Další užitečný příkaz v nabídce **Akce** je **Zobrazit stav zpracování rozpočtu**. Tento příkaz graficky zobrazí plány rozpočtu v rámci procesu spolu s odpovídajícími daty, jako jsou například stav workflowu plánů, souhrny podle množství a jednotky a navigace jedním kliknutím k samotným plánům rozpočtu.
 
-[![Budget planning process status](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+[![Stav procesu plánování rozpočtu](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
 
 
 

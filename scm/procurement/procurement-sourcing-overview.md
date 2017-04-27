@@ -40,14 +40,14 @@ Potřeba produktů nebo služeb může vzniknout ze *žádanek*, například kdy
   
 Oddělení zásobování identifikuje dodavatelé pro požadované produkty a služby, a tento výpočet může zahrnovat *požadavek na nabídku *odesílaný několika potenciálním dodavatelům. Je možné sdílet specifikace produktu, které jsou požadovány a potenciální dodavatelé mohou zobrazit, zda mohou dodat produkt, který je v souladu s jejich požadavky. Dodavatelé vracejí své nabídky, které jsou pak kontrolovány oddělením zásobování, předtím, než vyberou dodavatele, kteří je budou zásobovat.  
 
-Nákupní objednávky zahrnují možnost odesílat *nákupní žádanku *dodavateli jako alternativu ke komplexnějšímu zpracování požadavku na nabídku. Nákupní žádanku lze použít při vytváření podmínek, jako jsou ceny, slevy a datum dodání objednávky. Pokud dodavatelé jsou nastaveny pro použití **dodavatele** portálu, * * nákupní vyšetřovací funkce zakázána. Namísto toho je objednávka sdílena v** dodavatelském portálu**, a když je *potvrzení požadavku* odesláno dodavateli, lze přímo objednávku potvrdit.  
+Nákupní objednávky zahrnují možnost odesílat *nákupní žádanku *dodavateli jako alternativu ke komplexnějšímu zpracování požadavku na nabídku. Nákupní žádanku lze použít při vytváření podmínek, jako jsou ceny, slevy a datum dodání objednávky. Pokud jsou dodavatelé nastavení na používání portálu **Dodavatel**,* * je funkce nákupní žádanky zakázaná. Namísto toho je objednávka sdílena v** dodavatelském portálu**, a když je *potvrzení požadavku* odesláno dodavateli, lze přímo objednávku potvrdit.  
 
 *Katalogy dodavatelů *slouží ke shromažďování informací o sortimentu produktů, které dodavatelé mohou dodávat. Dodavatele mohou publikovat vlastní katalog, a tak je možné katalog udržovat lépe aktuální. K produktu je možné připojit *seznam schválených dodavatelů*, a díky tomu je možné dodavateli pomoci s výběrem, když jsou otevřené nové nákupní objednávky a zabránit použití nežádoucích dodavatelů.
 
 ## <a name="procurement"></a>Zásobování
 *Nákupní objednávky *lze vytvořit v různém množství různými způsoby včetně:
 
--   Jako výsledky hlavního plánování, která stanovila požadavek, který vyžaduje nákup. Tento proces generuje plánované nákupní objednávky a po těchto uvolnění nákupních objednávek jsou generovány.
+-   Jako výsledek hlavního plánování, které stanovilo požadavek vyžadující nákup. Tento proces generuje plánované nákupní objednávky a po jejich uvolnění jsou generovány nákupní objednávky.
 -   Prostřednictvím zpracování nákupních žádanek, jejichž výsledkem je zásobování.
 -   Prostřednictvím zpracování nákupní smlouvy, kde nákupní objednávky jsou vytvořeny jako výdejky z dohod. Používá se běžně při nákupních smlouvách, které se používají k vyjádření paušální objednávky.
 -   Ručně, když nákupní objednávka není vytvořena na základě jiného dokumentu.
@@ -56,7 +56,7 @@ Nákupní objednávky, které jsou konfigurovány s *nákupním workflowů pro s
 
 *Potvrzení* nákupních objednávek představuje zjištěnou smlouvu s dodavatelem. Nákupní objednávka bude poté postupně průběhu v odlišných stavech, dokud nebude finálně vyfakturovaná nebo zrušená.  
 
-Při vytvoření nákupní objednávky, počet polí se zaplní z uložených informací o dodavateli v výchozí hodnoty **dodavatele** stránky. To znamená, že je omezený počet polí, která je nutné v nákupní objednávce vyplnit, ačkoliv je možné přepsat výchozí hodnoty.
+Při vytvoření nákupní objednávky jsou v řadě polí předem naplněny hodnoty odvozené z uložených informací o dodavateli na stránce **Dodavatelé**. To znamená, že je omezený počet polí, která je nutné v nákupní objednávce vyplnit, ačkoliv je možné přepsat výchozí hodnoty.
 
 ### <a name="prices-and-discounts"></a>Ceny a slevy
 

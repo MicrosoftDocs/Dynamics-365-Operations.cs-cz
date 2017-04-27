@@ -1,6 +1,6 @@
 ---
 title: "Přerušení odpisování (svátky)"
-description: "Toto téma obsahuje informace o pozastavení nebo odložení odpisů pro Českou republiku."
+description: "Toto téma obsahuje informace o přerušení nebo odložení odpisů pro Českou republiku."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,15 +29,15 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma obsahuje informace o pozastavení nebo odložení odpisů pro Českou republiku.
+Toto téma obsahuje informace o přerušení nebo odložení odpisů pro Českou republiku.
 
-Odpisování odloží odpisy vypočtené pro pozastavené období. Místo toho odpis dochází v období po době pozastaven. Odpisování můžete použít pouze u knih, které mají účtovací vrstvu daň nebo None, které používají následující odpisové metody:
+Přerušení odpisování odloží odpis, který by měl být vypočítán pro pozastavené období. Místo toho dochází k odpisu v období po době pozastavení. Přerušení odpisování můžete použít pouze u knih, které mají účtovací vrstvu Daň nebo Žádná a které používají následující odpisové metody:
 
 -   Lineární
 -   Rovnoměrně CZ
 -   Zrychleně CZ
 
-Pozastavit na odpisy dlouhodobého majetku **dlouhodobého majetku** stránky, vyberte dlouhodobý majetek a poté klepněte na tlačítko **knihy**&gt;**pozastavení**. Na **odpisování** klepněte na tlačítko **vytvořit novou suspenzí**a potom vyberte rok suspenze. Na **suspenze** stránky, nový záznam je vytvořen, který obsahuje informace o pozastavení. Chcete-li zrušit pozastavení, vyberte záznam na **pozastavení** stránku a potom klepněte na tlačítko **Zrušit přerušení odpisování**.
+Za účelem přerušení odpisu dlouhodobého majetku vyberte na stránce **Dlouhodobý majetek** dlouhodobý majetek a poté klikněte na tlačítko **Knihy**&gt;**Přerušení**. Na stránce **Přerušení odpisování** klikněte na možnost **Vytvořit nové přerušení**a potom vyberte rok přerušení. Na stránce **Přerušení** dojde k vytvoření nového záznamu, který obsahuje informace o přerušení. Chcete-li zrušit operaci přerušení, vyberte záznam na stránce **Přerušení** a potom klikněte na tlačítko **Zrušit přerušení odpisování**.
 
 
 

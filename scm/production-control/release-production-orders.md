@@ -1,5 +1,5 @@
 ---
-title: "Vydání výrobních zakázek"
+title: "Uvolnění výrobních zakázek"
 description: "Uvolněná výrobní zakázka je objednávka, která byla schválena k výrobě. Výraz Uvolněná popisuje stav v životním cyklu výrobní zakázky, kde je výrobní zakázka k dispozici ke spuštění v rámci dílenské výroby a skladových procesů."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="release-production-orders"></a>Vydání výrobních zakázek
+# <a name="release-production-orders"></a>Uvolnění výrobních zakázek
 
 [!include[banner](../includes/banner.md)]
 
@@ -45,7 +45,7 @@ Stav **Uvolněno** je jeden ze stavů životního cyklu výrobní zakázky. Výr
 -   Pro materiály, které jsou fyzicky rezervovány, se vytvoří skladová práce pro výdej materiálu pro výrobní zakázku.
 
 ## <a name="releasing-jobs-to-the-shop-floor"></a>Uvolnění úloh do výroby
-Po uvolnění výrobní zakázky jsou výrobní úlohy, které se vztahují k objednávce, viditelné a připravené pro registraci. Operátory můžete provádět registrace úlohy, například Start, Stop a dokončení, buď **úlohu karty terminál** stránky nebo **úlohu karty zařízení** stránky. Zaznamenat čas a množství automaticky převedeny z registračních stránek deníky výroby ke sledování spotřebovaný čas a množství.
+Po uvolnění výrobní zakázky jsou výrobní úlohy, které se vztahují k objednávce, viditelné a připravené pro registraci. Operátoři mohou provádět registrace úloh, jako je začátek, konec a dokončení, na stránce **Terminál úkolových lístků** nebo **Zařízení úkolového lístku**. Zaregistrovaná doba a množství jsou automaticky převedeny ze stránek registrace na výrobní deníky, aby byl sledován spotřebovaný čas a množství.
 
 ## <a name="route-cards"></a>Karty technologického postupu
 Karta technologického postupu poskytuje souhrn informací pocházejících z nastavení operací a technologických postupů a z metod plánování úloh.
@@ -57,7 +57,7 @@ Operace technologického postupu obsahuje podrobný seznam všech úloh určité
 Na úkolových lístcích jsou uvedena čísla jednotlivých úloh pro určitou operaci. (Vždy jedna úloha na stránku.) Úlohy uvedené na úkolovém lístku a jejich odhadované doby pocházejí z konfiguračních údajů na kartách technologického postupu a z údajů pro operace technologického postupu. Z úkolového lístku můžete otevřít stránku **Řádky výr. deníku**, **úkolový lístek**. Zpětnou vazbu ohledně výrobního procesu mohou poskytnout osoby používající provozní prostředky. K dispozici jsou pole, do nichž můžete zadat statistické údaje o spotřebě a informace, jako jsou například chyby v množství.
 
 ## <a name="warehouse-work-for-raw-material-picking"></a>Skladová práce pro výdej surovin
-Práce pro výdej surovin je vytvořena v průběhu uvolnění. Práce je generován pouze pro množství materiálů, která byla fyzicky rezervována pro výrobní zakázky před vydáním objednávky. Následující nastavení je vyžadováno ke generování práce skladu pro výdej suroviny:
+Práce pro výdej surovin je vytvořena v průběhu uvolnění. Práce je generována pouze pro množství materiálů, které byly fyzicky rezervovány pro výrobní zakázku před vydáním objednávky. Následující nastavení je vyžadováno ke generování práce skladu pro výdej surovin:
 
 -   Směrnice skladového místa pro výdej surovin, které určují, ve kterém umístění skladu chcete vydat materiál
 -   Šablona vlny pro suroviny, kde jsou konfigurovány zásady provedení skladové práce

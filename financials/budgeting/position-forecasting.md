@@ -36,9 +36,9 @@ Výdaje, které souvisejí s pracovníky, často tvoří velkou část nákladů
 
 ## <a name="position-forecasting-in-budget-planning"></a>Prognóza pozic v plánování rozpočtu
 
-[![Obrázek nahoře](./media/graphic-top.png)](./media/graphic-top.png) 
+[![Grafika nahoře](./media/graphic-top.png)](./media/graphic-top.png) 
 
-Stanovit přesný rozpočet výdajů pozice pozice prognózy používá tři hlavní součásti. Tyto částky mohou být potom přeneseny do plánu rozpočtu pro výpočty rozpočtu. 
+Prognóza pozic používá tři hlavní složky pro zajištění přesných rozpočtových částek pro výdaje na pozice. Tyto částky mohou být potom přeneseny do plánu rozpočtu pro výpočty rozpočtu. 
 
 Primární komponenta je **prognóza pozice**, která představuje všechna data nákladů, která se vztahují k jedné pozici. Přiřazením jiných scénářů plánu rozpočtu pro každou verzi můžete vytvořit několik verzí prognózy pozic. Více verzí umožňuje opakovaný přístup k rozpočtování a porovnávání pravděpodobnostních scénářů. Jednotlivé prognózy pozic mají odpovídající pozici v modulu Lidské zdroje.
 
@@ -50,7 +50,7 @@ Primární komponenta je **prognóza pozice**, která představuje všechna data
 
 [![graphic1b](./media/graphic1b.png)](./media/graphic1b.png) 
 
-V typické procesu pro pozice prognózy nejprve vytvořit komponenty instalačního programu (rozpočtu nákladových položek a skupiny kompenzace). Pozice prognóz, které se pak vytvoří, jsou založené na existujících pozicích. Poté můžete provést úpravy. Můžete například přidat nebo ukončit pozice, změnit mzdové sazby a náklady na zaměstnanecké výhody a přidat zvyšování mzdy. Můžete vytvořit více verzí prognózy pozic a usnadnit tak porovnání různých scénářů rozpočtování. Dále lze zahrnout pozice prognózy do plánů rozpočtu a přinést náklady z pozic prognózy jako řádky plánu rozpočtu.
+V typickém procesu prognózy pozic nejprve vytvoříte součásti nastavení (prvky rozpočtových nákladů a skupiny kompenzací). Pozice prognóz, které se pak vytvoří, jsou založené na existujících pozicích. Poté můžete provést úpravy. Můžete například přidat nebo ukončit pozice, změnit mzdové sazby a náklady na zaměstnanecké výhody a přidat zvyšování mzdy. Můžete vytvořit více verzí prognózy pozic a usnadnit tak porovnání různých scénářů rozpočtování. Dále lze zahrnout pozice prognózy do plánů rozpočtu a přinést náklady z pozic prognózy jako řádky plánu rozpočtu.
 
 Můžete vytvořit další verze pozic prognózy v rámci revize plánů rozpočtu. Tyto nové verze poskytují základ pro revize.
 
@@ -67,9 +67,9 @@ Výpočet částky nákladů pro prvek rozpočtových nákladů používá data 
 
 Pokud je nákladový prvek určen na základě procenta, je nutné zadat prvky rozpočtových nákladů, které se používají jako základ pro výpočet.
 
-**Example** 
+**Příklad** 
 
-Jodi na organizace poskytuje vzdělávání příspěvek ve výši 5procent $2 základní mzdy zaměstnance. Jodi chce vytvořit prvek rozpočtových nákladů pro tyto náklady. Vytvoří nový prvek rozpočtových nákladů a přiřadí typ rozpočtových nákladů **Zaměstnanecké výhody**.
+Organizace Jodi poskytuje náhrady na školení v rozsahu 5 procent základní mzdy zaměstnance. Jodi chce vytvořit prvek rozpočtových nákladů pro tyto náklady. Vytvoří nový prvek rozpočtových nákladů a přiřadí typ rozpočtových nákladů **Zaměstnanecké výhody**.
 
 Jodi nechce, aby vedoucí pracovníci měnili množství zaměstnanecké výhody. Proto vybere **Nepovolovat změny nákladů** v poli **Přepsání pozice prognózy**. Organizace chce tyto náklady rozdělit rovnoměrně do každého měsíce. Jodi proto vybere **Čtvrtletně** v poli **Metoda přidělení**. 
 
@@ -85,7 +85,7 @@ Základní funkce skupin kompenzací je přiřazení sady prvků rozpočtových 
 
 Skupiny kompenzací mohou také určit sazby příjmů pro pozici prognózy. Provedete nastavení skupiny tak, aby používala hodinovou nebo roční mzdu pro výpočet příjmů pozice prognózy. Na kartě **Tabulky sazeb kompenzací** mřížka kompenzací mzdové sazby určuje příjmy, které jsou přidány do pozice prognózy, na základě přiřazené úroveň a kroku. Tyto mřížky mohou být založeny na existujících kompenzačních mřížkách v modulu Lidské zdroje. Můžete také vytvořit nové mřížky kompenzací pro plánování rozpočtu. 
 
-Data platnosti a data vypršení platnosti v tabulkách sazeb kompenzace umožňují změnit mzdové sazby na libovolné datum. Tato funkce je užitečná zejména když oddělení pro vyjednávání sjednalo obecné navýšení uprostřed rozpočtového cyklu. V tomto případě den před datem změny sazby změnit datum vypršení platnosti existující tabulky a přidat novou tabulku kurz, který začíná na nové datum. Když vytvoříte novou tabulku sazeb, pokud vyberete **z existující mřížku vytvořit novou mřížku kompenzace**, můžete vybrat existující tabulky sazeb z lidských zdrojů. V tabulce sazeb, které byla vytvořena, umožňuje možnost **Hromadná změna** použít procento nebo přímý objem zvýšení nebo snížení všech sazeb v mřížce. 
+Data platnosti a data vypršení platnosti v tabulkách sazeb kompenzace umožňují změnit mzdové sazby na libovolné datum. Tato funkce je užitečná zejména když oddělení pro vyjednávání sjednalo obecné navýšení uprostřed rozpočtového cyklu. V tomto případě změníte datum vypršení platnosti existující tabulky na den před datem změny sazby a přidat novou tabulku sazeb, která začíná novým datem. Když vytvoříte novou tabulku sazeb a vyberete **Vytvořit novou mřížku kompenzací z existující mřížky**, můžete vybrat existující tabulku sazeb z lidských zdrojů. V tabulce sazeb, které byla vytvořena, umožňuje možnost **Hromadná změna** použít procento nebo přímý objem zvýšení nebo snížení všech sazeb v mřížce. 
 
 Pole **Plán zvýšení** a **Datum zvýšení** ve skupině kompenzací se používá, když musíte vytvořit zvyšování mzdy, protože pozice přechází z jednoho kroku na další. Roční zvýšení mzdy je typický scénář. Plán zvýšení určuje, zda se pro zvýšení kroku použije datum výročí pozice nebo jedno společné datum. Plán zvýšení platí pro všechny pozice prognózy ve skupině kompenzací. 
 
@@ -96,7 +96,7 @@ Nákladový prvek příjmů vybraný ve skupině kompenzací se používá při 
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Vytváření pozic prognózy pro existující pozice
 
-Pro velmi přesné plánování rozpočtu, můžete vytvořit pomocí informace z existující pozice v aplikaci Microsoft Dynamics 365 pro operace bez ohledu na to, zda je pozice aktuálně vyplněný nebo nevyplněný pozice prognóz. 
+Pro nejpřesnější plánování rozpočtu můžete vytvořit pozice prognózy využívající podrobných údajů z aplikace Microsoft Dynamics 365 for Operations, bez ohledu na to, zda je pozice aktuálně zaplněna nebo nezaplněna. 
 
 Funkce **Přidat existující pozice** zobrazí všechny pozice pro organizaci. Pomocí nastavení pole** K datu** lze seznam pozic změnit tak, aby obsahoval pozice, které existovaly k datu v minulosti nebo, běžněji, v budoucnosti (například k začátku dalšího rozpočtového cyklu). Vyberte proces plánování rozpočtu a scénář plánu rozpočtu, vyberte pozice v seznamu a klepněte na tlačítko **OK** pro vytvoření pozic prognózy pro vybrané pozice. Všimněte si, že lze vytvořit pouze jednu pozici prognózy pro každou existující pozici v procesu plánování rozpočtu a scénáři. Přiřazením odlišných scénářů plánu rozpočtu však můžete vytvořit další verze. 
 
@@ -106,11 +106,11 @@ Je-li vybrán prvek rozpočtových nákladů, roční částka fixní kompenzace
 
 Pokud je možnost **Přiřadit skupinu kompenzací** nastavena na **Ano** a pokud pracovník, který je přiřazený k pozici, má plán fixní kompenzace na základě kroku, který je připojen ke skupině kompenzací (popsané dříve), úroveň a krok pracovníka jsou přiřazeny k pozici prognózy spolu se skupinou kompenzací. Prvek rozpočtových nákladů příjmů ze skupiny kompenzací je přidán k pozici prognózy a používá se mzdová sazba na úrovni a kroku ze skupiny kompenzací. 
 
-Nastavení možnosti **Přiřadit skupinu kompenzací** má přednost před nastavením **Přiřazení prvku rozpočtových nákladů**. Dvě nastavení lze použít současně. 
+Nastavení možnosti **Přiřadit skupinu kompenzací** má přednost před nastavením **Přiřazení prvku rozpočtových nákladů**. Tato dvě nastavení lze použít současně. 
 
 [![graphic4](./media/graphic4.png)](./media/graphic4.png) 
 
-Další možností je přiřadit datu výročí. Vybrané datum (upravené datum zahájení, počáteční datum pracovníka, počátečním datum zaměstnání nebo datum zahájení služebního věku) přiřazeného pracovníka je nastaveno jako datum výročí pozice prognózy a slouží pouze pro informativní účely při vygenerování navýšení platby.
+Další možností je přiřadit datum výročí. Vybrané datum (upravené datum zahájení, počáteční datum pracovníka, počátečním datum zaměstnání nebo datum zahájení služebního věku) přiřazeného pracovníka je nastaveno jako datum výročí pozice prognózy a slouží pouze pro informativní účely při vygenerování navýšení platby.
 
 ### <a name="creating-new-forecast-positions"></a>Vytváření nových pozic prognózy
 
@@ -141,9 +141,9 @@ Například řádek prvku rozpočtových nákladů od 1. ledna 2017 do 30. červ
 
 Při změně hodnoty FTE v pozici prognózy je nutno přepočítat řádky prvku rozpočtových nákladů. Řádky musí být přepočítány také při změně dat aktivace nebo dat odchodu do důchodu. Změny těchto dat mohou způsobit aktualizaci počátečního a koncového data prvku rozpočtových nákladů, které musí spadat do rozsahu dat v pozici prognózy. Pokud je vyžadováno přepočítání, tlačítko **Přepočítat** bude k dispozici a bude zobrazena zpráva "Vyžaduje se výpočet". Přepočítání je také vyžadováno, pokud chcete přidat nebo odebrat prvek rozpočtových nákladů.
 
-**Example** 
+**Příklad** 
 
-Organizace zvažuje dvě možnosti pro snížení nákladů pozici účetní. Jedna z možností je ukončení pozice v průběhu roku. Další možností je změna pozice na poloviční dobu pro celý rok. Brad vytvořil pozici prognózy pro existující pozici účetní v základním scénáři. Zkopíroval tuto základní pozici prognózy do scénáře A, nastavil datum vyřazení na 31. května a provedl přepočet. Poté Brad zkopíroval základní pozici prognózy do scénáře B, změnil hodnotu FTE na **0,50**a provedl přepočet. Brad má nyní tři verze, z nichž každá má celkové náklady, které jsou zarovnány s jeho možnostmi.
+Organizace zvažuje dvě možnosti snížení nákladů na účetní pozici. Jedna z možností je ukončení pozice v průběhu roku. Další možností je změna pozice na poloviční dobu pro celý rok. Brad vytvořil pozici prognózy pro existující pozici účetní v základním scénáři. Zkopíroval tuto základní pozici prognózy do scénáře A, nastavil datum vyřazení na 31. května a provedl přepočet. Poté Brad zkopíroval základní pozici prognózy do scénáře B, změnil hodnotu FTE na **0,50**a provedl přepočet. Brad má nyní tři verze, z nichž každá má celkové náklady, které jsou zarovnány s jeho možnostmi.
 
 #### <a name="assigning-a-compensation-group"></a>Přiřazení skupiny kompenzací
 
@@ -163,9 +163,9 @@ Pokud klepnete na tlačítko **Generovat zvýšení** podruhé, proces se spust�
 
 Aktualizace pozic prognózy mohou také pocházet z ostatních oblastí, jako jsou stránky s nastavením prvků rozpočtových nákladů a skupiny vyrovnání. Můžete také upravit pozice prognózy pomocí procesu hromadné aktualizace. 
 
-Dvě možnosti jsou k dispozici na **prvkem nákladů rozpočtu** stránku nastavení: **přidat do pozice** a **aktualizovat pozice**. Možnost **Přidat do pozic** přidá prvek rozpočtových nákladů do vybraných pozic prognózy. Pokud prvek již byl přiřazen k pozici prognózy, tato pozice prognózy bude vynechána. Možnost **Aktualizovat pozice** použije aktuální hodnoty (hlavní účet, procento, roční částku a tak dále) na vybrané pozice prognózy. 
+Na stránce s nastavením **Prvek rozpočtových nákladů** jsou dostupné dvě možnosti: **Přidat do pozic** a **Aktualizovat pozice**. Možnost **Přidat do pozic** přidá prvek rozpočtových nákladů do vybraných pozic prognózy. Pokud prvek již byl přiřazen k pozici prognózy, tato pozice prognózy bude vynechána. Možnost **Aktualizovat pozice** použije aktuální hodnoty (hlavní účet, procento, roční částku a tak dále) na vybrané pozice prognózy. 
 
-Každý proces má podobnou stránku, kde můžete vybrat pozice prognózy. Na stránce **Přidat do pozic** se zobrazují všechny pozice prognózy, které jsou k dispozici pro výběr, zatímco na stránce **Aktualizovat pozice** se zobrazí pouze ty pozice prognózy, které již mají přiřazen prvek rozpočtových nákladů. (Tedy **aktualizovat pozice** stránka poskytuje způsob, jak zjistit, které prognózy pozice již připojen prvek nákladů.) Přesunutí pozice prognóz z horní mřížky dolní Mřížka pro zahrnutí do aktualizace. 
+Každý proces má podobnou stránku, kde můžete vybrat pozice prognózy. Na stránce **Přidat do pozic** se zobrazují všechny pozice prognózy, které jsou k dispozici pro výběr, zatímco na stránce **Aktualizovat pozice** se zobrazí pouze ty pozice prognózy, které již mají přiřazen prvek rozpočtových nákladů. (Stránka **Aktualizovat pozice** tak poskytuje způsob, jak zjistit, které prognózy pozice již mají připojený prvek nákladů.) Pozice prognózy můžete přesunout z horní mřížky do dolní a zahrnout je do aktualizace. 
 
 Všimněte si, že funkce **Změnit data** na kartě **Výpočtu nákladů** okamžitě změní počáteční a koncové datum pro prvek rozpočtových nákladů v pozicích prognózy. Nejsou k dispozici žádné možností výběru. 
 
@@ -179,7 +179,7 @@ Proces přepočtu je automaticky použit pro všechny pozice prognózy, které s
 
 [![graphic6](./media/graphic6-1024x327.png)](./media/graphic6.png)
 
-Účelem vytváření a úpravy pozice prognóz je přidáte k plánům rozpočtu tak, aby plány rozpočtu zahrnují nejpřesnější částky rozpočtu. Existují dvě metody přidání pozic prognózy k plánům rozpočtu. Můžete použít proces generování nebo proces výběru pro plán rozpočtu.
+Účelem vytváření a úpravy pozic prognózy je jejich přidání k plánům rozpočtu tak, aby plány rozpočtu zahrnovaly nejaktuálnější částky rozpočtu. Existují dvě metody přidání pozic prognózy k plánům rozpočtu. Můžete použít proces generování nebo proces výběru pro plán rozpočtu.
 
 ### <a name="generating-a-budget-plan-from-forecast-positions"></a>Generování plánu rozpočtu z pozic prognózy
 

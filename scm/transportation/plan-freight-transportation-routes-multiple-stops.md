@@ -1,5 +1,5 @@
 ---
-title: "Plánování tras nákladní dopravu s více zarážkami"
+title: "Plánování tras nákladní dopravy s více zastávkami"
 description: "Tento článek popisuje různé prvky, které slouží k plánování tras přepravy v aplikaci Microsoft Dynamics AX."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Plánování tras nákladní dopravu s více zarážkami
+# <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Plánování tras nákladní dopravy s více zastávkami
 
 [!include[banner](../includes/banner.md)]
 

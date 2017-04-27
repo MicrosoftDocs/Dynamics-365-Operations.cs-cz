@@ -51,7 +51,7 @@ Ve zprávě **Skutečnost versus rozpočet** můžete změnit datum sestavy, pou
 
 -   Chcete-li změnit základní období a základní rok sestavy, vyberte základní období a základní rok a klikněte na tlačítko **OK**.
 -   Chcete-li v sestavě použít filtry atributů, vyberte možnost **Přidat filtr atributu**. Vyberte atribut, zadejte hodnotu atributu a klikněte na tlačítko **OK**. Vyberete-li například atribut **Kategorie účtů**, zadejte hodnotu atributu **PRODEJE**. Chcete-li filtr atributu odebrat, klikněte na tlačítko **Vymazat**.
--   Chcete-li použít filtry dimenzí sestavy, vyberte **přidat filtr dimenze**. Vyberte dimenzi a poté zadejte ID dimenze nebo dimenze vyberte ze seznamu. Chcete-li filtr dimenze odebrat, klikněte na tlačítko **Vymazat**.
+-   Chcete-li v sestavě použít filtry dimenzí, vyberte možnost **Přidat filtr dimenze**. Vyberte dimenzi a poté zadejte ID dimenze nebo vyberte dimenzi ze seznamu. Chcete-li filtr dimenze odebrat, klikněte na tlačítko **Vymazat**.
 -   Chcete-li změnit scénář na sestavu **Skutečnost versus rozpočet**, vyberte nový scénář a klikněte na tlačítko **OK**. Je-li vybraný scénář pro jiný rok, je nutné aktualizovat základní rok. Například pokud je aktuální scénář pro fiskální rok 2015 a vy vyberete nový scénář pro fiskální rok 2016, musíte měnit základní rok na **2016**.
 
 Po kliknutí na tlačítko **OK** se vybrané možnosti použijí pro sestavu. Pokud se rozhodnete, že nechcete použít vybrané možnosti, klikněte na tlačítko **Storno**.
@@ -69,7 +69,7 @@ Finanční sestavu lze kdykoli zobrazit v jiné měně. Chcete-li sestavu zobraz
 Finanční sestava může obsahovat řádky podrobností a řádky souhrnů. Řádky podrobností jsou řádky, které obsahují hlavní účty nebo dimenze. Řádky souhrnů jsou řádky popisu, součtu a výpočtu. Chcete-li v sestavě zobrazit pouze řádky souhrnu, klikněte na možnost **Zobrazit** a poté na tlačítko **Pouze řádky souhrnu**. Sestava se sbalí a zobrazí se pouze řádky souhrnu. Chcete-li zobrazit řádky podrobností spolu s řádky souhrnu, klikněte na tlačítko **Zobrazit** na poté znovu na tlačítko **Pouze řádky souhrnu**.
 
 ## <a name="open-a-financial-report-from-a-previous-month"></a>Otevření finanční sestavy z předchozího měsíce
-Sestavy pro aktuální nebo předchozí měsíc můžete zobrazit, aniž byste museli sestavu generovat znovu. K otevření sestavy pro předchozí měsíc, klepněte na tlačítko **zobrazí**a potom klepněte na tlačítko **předchozí zprávy**. Zobrazí se seznam předchozích měsíců generované sestavy pro. Rozbalte měsíc k zobrazení sestavy, vyberte datum a klikněte na tlačítko **OK**. Zobrazí se sestava pro předchozí měsíc. Chcete-li se vrátit k sestavě aktuálního měsíce, klikněte na tlačítko **Storno**.
+Sestavy pro aktuální nebo předchozí měsíc můžete zobrazit, aniž byste museli sestavu generovat znovu. K otevření sestavy pro předchozí měsíc klikněte na možnost **Zobrazit**a potom na tlačítko **Předchozí sestavy**. Zobrazí se seznam předchozích měsíců vygenerované sestavy. Rozbalte měsíc k zobrazení sestavy, vyberte datum a klikněte na tlačítko **OK**. Zobrazí se sestava pro předchozí měsíc. Chcete-li se vrátit k sestavě aktuálního měsíce, klikněte na tlačítko **Storno**.
 
 ## <a name="print-a-financial-report"></a>Tisk finanční sestavy
 Chcete-li vytisknout finanční sestavu, v podokně akcí klikněte na tlačítko **Tisk** a poté proveďte jeden nebo více z následujících kroků, abyste nastavili volby tisku:

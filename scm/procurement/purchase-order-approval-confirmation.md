@@ -76,9 +76,9 @@ Jakmile je objednávka potvrzena, nemůžete ji již odstranit. Můžete však z
 <a name="see-also"></a>Viz také
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Přehled nákupních objednávek](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Vytvoření nákupní objednávky](purchase-order-creation.md)
 
 [Příjem produktů proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
 

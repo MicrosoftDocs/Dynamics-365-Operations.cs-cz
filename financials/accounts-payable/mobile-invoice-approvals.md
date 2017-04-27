@@ -1,6 +1,6 @@
 ---
-title: "Schválení faktury mobilních"
-description: "Mobilní funkce v Microsoft Dynamics 365 pro operace může uživatel obchodní návrh mobilní zkušenosti. Pro pokročilé scénáře platformu také Řekněme vývojáři rozšířit možnosti jak nadcházejících událostech. Nejúčinnějším způsobem naučit některé nové pojmy v mobile je projít proces navrhování několik scénářů. Toto téma je určen k poskytování praktického přístupu k navrhování mobilních scénářů převzetím dodavatele schválení faktury pro mobilní telefon jako případu použití. V tomto tématu vám pomohou navrhnout jiné varianty scénářů a lze také použít další scénáře, které nesouvisejí s faktury dodavatele."
+title: "Mobilní schvalování faktur"
+description: "Mobilní funkce v Microsoft Dynamics 365 for Operations umožňují podnikovým uživatelům navrhovat mobilní prostředí. Pro pokročilé scénáře platforma také vývojářům umožňuje rozšířit možnosti podle vlastních potřeb. Nejúčinnějším způsobem, jak se naučit některé nové pojmy v oblasti mobilních zařízení, je projít proces navrhování několik scénářů. Toto téma poskytuje praktický přístup k navrhování mobilních scénářů převzetím schválení faktur dodavatele pro mobilní zařízení jako příklad použití. Toto téma by vám mělo pomoci navrhnout jiné varianty scénářů a lze je také použít pro další scénáře, které nesouvisejí s fakturami dodavatele."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,45 +24,45 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="mobile-invoice-approvals"></a>Schválení faktury mobilních
+# <a name="mobile-invoice-approvals"></a>Mobilní schvalování faktur
 
 [!include[banner](../includes/banner.md)]
 
 
-Mobilní funkce v Microsoft Dynamics 365 pro operace může uživatel obchodní návrh mobilní zkušenosti. Pro pokročilé scénáře platformu také Řekněme vývojáři rozšířit možnosti jak nadcházejících událostech. Nejúčinnějším způsobem naučit některé nové pojmy v mobile je projít proces navrhování několik scénářů. Toto téma je určen k poskytování praktického přístupu k navrhování mobilních scénářů převzetím dodavatele schválení faktury pro mobilní telefon jako případu použití. V tomto tématu vám pomohou navrhnout jiné varianty scénářů a lze také použít další scénáře, které nesouvisejí s faktury dodavatele.
+Mobilní funkce v Microsoft Dynamics 365 for Operations umožňují podnikovým uživatelům navrhovat mobilní prostředí. Pro pokročilé scénáře platforma také vývojářům umožňuje rozšířit možnosti podle vlastních potřeb. Nejúčinnějším způsobem, jak se naučit některé nové pojmy v oblasti mobilních zařízení, je projít proces navrhování několik scénářů. Toto téma poskytuje praktický přístup k navrhování mobilních scénářů převzetím schválení faktur dodavatele pro mobilní zařízení jako příklad použití. Toto téma by vám mělo pomoci navrhnout jiné varianty scénářů a lze je také použít pro další scénáře, které nesouvisejí s fakturami dodavatele.
 
 <a name="prerequisites"></a>Předpoklady
 -------------
 
 | Předpoklad                                                                                            | popis                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mobilní handbook předem přečíst.                                                                                |(/ dynamics365/operace/dev-itpro/mobilní telefon apps / mobile-platform.md)                                                                                                  |
-| Dynamics 365 pro operace                                                                             | Prostředí, které má Microsoft Dynamics 365 pro verzi operace 1611 a Microsoft Dynamics pro operace platformy aktualizace 3 (listopad 2016)                   |
-| Instalace opravy hotfix KB 3204341.                                                                              | Záznamník úkolů můžete zaznamenat omylem dva příkazy zavřít dialogová okna rozevírací seznam, který bude obsažen v Dynamics 365 pro operace aktualizace platformy 3 (aktualizace dne 2016) |
-| Instalace opravy hotfix KB 3207800.                                                                              | Tato oprava hotfix umožňuje přílohy v mobilní klient, který bude obsažen v Dynamics 365 pro operace aktualizace platformy 3 (aktualizace dne 2016).           |
-| Instalace opravy hotfix KB 3208224.                                                                              | Kód aplikace pro použití schválení faktury dodavatele mobilních to je zahrnuta v aplikaci Microsoft Dynamics AX 7.0.1 (květen 2016).                          |
-| Android nebo iOS nebo zařízení systému Windows, který má mobilní aplikace nainstalována Dynamics 365 pro operace | Vyhledat aplikace v úložišti příslušné aplikace.                                                                                                                     |
+| Předběžná verze mobilní příručky                                                                                |(/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform.md)                                                                                                  |
+| Dynamics 365 for Operations                                                                             | Prostředí, které má Microsoft Dynamics 365 for Operations verzi 1611 a Microsoft Dynamics for Operations aktualizaci platformy 3 (listopad 2016)                   |
+| Nainstalujte opravu hotfix KB 3204341.                                                                              | Záznamník úloh může omylem zaznamenat dva příkazy k zavření rozevíracích dialogových oken, které jsou součástí aktualizace 3 Dynamics 365 for Operations (aktualizace z listopadu 2016) |
+| Nainstalujte opravu hotfix KB 3207800.                                                                              | Tato oprava hotfix umožňuje zobrazovat přílohy v mobilním klientovi, který je zahrnutý v aktualizaci 3 platformy Dynamics 365 for Operations (aktualizace z listopadu 2016).           |
+| Nainstalujte opravu hotfix KB 3208224.                                                                              | Kód aplikace pro mobilní aplikaci schvalování faktur dodavatele je zahrnut v aplikaci Microsoft Dynamics AX 7.0.1 (květen 2016).                          |
+| Zařízení se systémem Android nebo iOS nebo zařízení se systémem Windows, které má nainstalovanou mobilní aplikaci Dynamics 365 for Operations | Vyhledejte aplikaci v příslušném obchodě s aplikacemi.                                                                                                                     |
 
 ## <a name="introduction"></a>Úvod
-Mobilní schválení faktur dodavatele vyžadují tři opravy hotfix, které jsou uvedeny v části "Předpoklady". Tyto opravy hotfix nepřinesou pracovní prostor pro schválení faktury. Chcete-li zjistit, co je pracovní prostor v souvislosti s mobilní, číst mobilní příručka, která je uvedena v části "Předpoklady". V pracovním prostoru schválení faktury musí být řešeny. 
+Mobilní schválení faktur dodavatele vyžadují tři opravy hotfix, které jsou uvedeny v části "Předpoklady". Tyto opravy hotfix neposkytují pracovní prostor pro schválení faktury. Chcete-li zjistit, co je pracovní prostor v souvislosti s mobilními zařízeními, přečtěte si příručku pro mobilní zařízení, která je uvedena v části "Předpoklady". Musí být navržen pracovní prostor schválení faktury. 
 
-Každá organizace orchestrates a jiným způsobem definuje svůj obchodní proces pro faktury dodavatele. Dříve, než vytvoříte mobilní prostředí pro schválení faktury dodavatele, měli byste zvážit následující aspekty obchodního procesu. Myšlenka je použití těchto datových bodů co nejvíce k optimalizování uživatelského prostředí v zařízení.
+Každá organizace ladí a definuje svůj svůj obchodní proces pro faktury dodavatele jinak. Dříve, než navrhnete mobilní prostředí pro schválení faktury dodavatele, měli byste zvážit následující aspekty obchodního procesu. Základem je využívat tyto datové body co nejvíce, aby se optimalizovalo uživatelské prostředí v zařízení.
 
--   Která pole z hlavičky faktury uživatel chtít vidět do mobilního prostředí a v jakém pořadí?
--   Která pole z řádků fakturace uživatel chtít vidět do mobilního prostředí a v jakém pořadí?
--   Kolik řádků faktury jsou ve faktuře? Platí zde pravidlo 80-20 a optimalizovat 80procent $2.
--   Budou uživatelé chtějí vidět rozúčtování (kódování faktury) v mobilním zařízení během recenze? Pokud je odpověď na tuto otázku Ano, zvažte následující otázky:
-    -   Kolik rozúčtování (rozšířená cena, DPH, poplatky, rozdělení atd.) jsou pro řádek faktury? Znovu použít pravidlo 80-20.
-    -   Faktury také mají rozúčtování v hlavičce faktury? V takovém případě by tyto rozúčtování k dispozici v zařízení?
+-   Která pole z hlavičky faktury bude uživatel chtít vidět v mobilním prostředí a v jakém pořadí?
+-   Která pole z řádek faktury bude uživatel chtít vidět v mobilního prostředí a v jakém pořadí?
+-   Kolik má faktura řádků? Uplatněte zde pravidlo 80-20 a optimalizujte pro 80 procent.
+-   Budou uživatelé chtít vidět rozúčtování (kódování faktury) v mobilním zařízení během kontrol? Pokud je odpověď na tuto otázku Ano, zvažte následující otázky:
+    -   Kolik rozúčtování (rozšířená cena, DPH, poplatky, rozdělení atd.) je pro řádek faktury k dispozici? Znovu použijte pravidlo 80-20.
+    -   Mají faktury také rozúčtování v hlavičce faktury? Pokud ano, budou tato rozúčtování k dispozici v zařízení?
 
 > [!NOTE]
-> Toto téma není vysvětlují, jak upravit rozúčtování, protože tato funkce není aktuálně podporována pro mobilní scénáře.
+> Toto téma nevysvětluje, jak upravit rozúčtování, protože tato funkce není aktuálně podporována pro mobilní scénáře.
 
--   Budou uživatelé chtějí vidět přílohy pro fakturu na zařízení?
+-   Budou uživatelé chtít vidět přílohy pro fakturu na zařízení?
 
-Návrh mobilního prostředí schválení faktury se liší v závislosti na odpovědi na tyto otázky. Cílem je optimalizovat uživatelské prostředí pro obchodní proces Mobile v organizaci. Ve zbývající části tohoto tématu se podíváme na dvě varianty scénáře, které jsou založeny na různé odpovědi na předchozí dotazy. 
+Návrh mobilního prostředí pro schválení faktur se liší v závislosti na odpovědích na tyto otázky. Cílem je optimalizovat uživatelské prostředí pro obchodní proces na mobilních zařízeních v organizaci. Ve zbývající části tohoto tématu se podíváme na dvě varianty scénáře, které jsou založeny na různých odpovědích na předchozí dotazy. 
 
-Jako obecné vodítko, při práci s návrhářem mobilní Ujistěte se, chcete-li publikovat změny, aby se zabránilo ztrátě aktualizací.
+Platí zásada, abyste při práci s návrhářem mobilních aplikací nezapomněli publikovat změny, aby se zabránilo ztrátě aktualizací.
 
 ## <a name="designing-a-simple-invoice-approval-scenario-for-contoso"></a>Návrh scénáře schválení jednoduché faktury pro společnosti Contoso
 <table>
@@ -78,7 +78,7 @@ Jako obecné vodítko, při práci s návrhářem mobilní Ujistěte se, chcete-
 </thead>
 <tbody>
 <tr class="odd">
-<td>Která pole z hlavičky faktury uživatel chtít vidět do mobilního prostředí a v jakém pořadí?</td>
+<td>Která pole z hlavičky faktury bude uživatel chtít vidět v mobilním prostředí a v jakém pořadí?</td>
 <td><ol>
 <li>Název dodavatele</li>
 <li>Faktura celkem</li>
@@ -91,7 +91,7 @@ Jako obecné vodítko, při práci s návrhářem mobilní Ujistěte se, chcete-
 </ol></td>
 </tr>
 <tr class="even">
-<td>Která pole z řádků fakturace uživatel chtít vidět do mobilního prostředí a v jakém pořadí?</td>
+<td>Která pole z řádek faktury bude uživatel chtít vidět v mobilního prostředí a v jakém pořadí?</td>
 <td><ol>
 <li>Kategorie zásobování</li>
 <li>Množství</li>
@@ -101,23 +101,23 @@ Jako obecné vodítko, při práci s návrhářem mobilní Ujistěte se, chcete-
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Kolik řádků faktury jsou ve faktuře? Platí zde pravidlo 80-20 a optimalizovat 80procent $2.</td>
+<td>Kolik má faktura řádků? Uplatněte zde pravidlo 80-20 a optimalizujte pro 80 procent.</td>
 <td>1</td>
 </tr>
 <tr class="even">
-<td>Budou uživatelé chtějí vidět rozúčtování (kódování faktury) v mobilním zařízení během recenze?</td>
+<td>Budou uživatelé chtít vidět rozúčtování (kódování faktury) v mobilním zařízení během kontrol?</td>
 <td>Ano</td>
 </tr>
 <tr class="odd">
-<td>Kolik rozúčtování (rozšířená cena, DPH, poplatky atd.) jsou pro řádek faktury? Znovu použít pravidlo 80-20.</td>
-<td>Rozšířená cena: DPH 2: poplatky 0: 0</td>
+<td>Kolik rozúčtování (rozšířená cena, DPH, poplatky atd.) je pro řádek faktury k dispozici? Znovu použijte pravidlo 80-20.</td>
+<td>Rozšířená cena: 2 DPH 2: 0 Poplatky: 0</td>
 </tr>
 <tr class="even">
-<td>Faktury také mají rozúčtování v hlavičce faktury? V takovém případě by tyto rozúčtování k dispozici v zařízení?</td>
+<td>Mají faktury také rozúčtování v hlavičce faktury? Pokud ano, budou tato rozúčtování k dispozici v zařízení?</td>
 <td>Nepoužito</td>
 </tr>
 <tr class="odd">
-<td>Budou uživatelé chtějí vidět přílohy pro fakturu na zařízení?</td>
+<td>Budou uživatelé chtít vidět přílohy pro fakturu na zařízení?</td>
 <td>Ano</td>
 </tr>
 </tbody>
@@ -125,61 +125,61 @@ Jako obecné vodítko, při práci s návrhářem mobilní Ujistěte se, chcete-
 
 ### <a name="create-the-workspace"></a>Vytvoření pracovního prostoru
 
-1.  V prohlížeči otevřete 365 Dynamics pro operace a přihlaste se.
-2.  Poté, co jste přihlášeni, připojit **& režim = mobilní** na adresu URL, jak je znázorněno v následujícím příkladu a aktualizace stránky: https://&lt;yoururl&gt;/? cmp = usmf & mi = DefaultDashboard**& režim = mobilní**
-3.  Klepněte **nastavení** (zařízení) tlačítko v pravém horním rohu stránky a poté klepněte na **mobilní aplikace**. Mobilní aplikace Návrhář musí zobrazí stejně jako úkol záznam se zobrazí.
-4.  Klepněte na tlačítko **přidat** Chcete-li vytvořit nový pracovní prostor. V tomto příkladu název pracovního prostoru **schválení**.
+1.  V prohlížeči otevřete Dynamics 365 for Operations a přihlaste se.
+2.  Po přihlášení přidejte k adrese URL text **&mode=mobile**, jak ukazuje následující příklad, a aktualizujte stránku: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
+3.  Klikněte na tlačítko **Nastavení** (ozubené kolo) v pravém horním rohu stránky, a pak klikněte na **Mobilní aplikace**. Návrhář mobilní aplikace se musí zobrazit stejně jako Záznam úloh.
+4.  Kliknutím na tlačítko **Přidat** vytvořte nový pracovní prostor. V tomto příkladu pojmenujte pracovní prostor **Moje schválení**.
 5.  Zadejte popis.
-6.  Vyberte barvu prostoru. Barevný prostor bude použit pro celkový styl mobilního prostředí pro tento pracovní prostor.
-7.  Vyberte ikonu pro pracovní prostor.
-8.  Klepněte na **v**
-9.  Klepněte na tlačítko **publikovat pracovního prostoru** uložit změny
+6.  Vyberte barvu pracovního prostoru. Barva pracovního prostoru bude použita pro celkový styl mobilního prostředí pro tento pracovní prostor.
+7.  Vyberte ikonu pracovního prostoru.
+8.  Klikněte na tlačítko **Hotovo**.
+9.  Kliknutím na **Publikovat pracovní prostor** uložte změny
 
 ### <a name="vendor-invoices-assigned-to-me"></a>Faktury dodavatele přiřazené mně
 
-První mobilní stránka, která by měla navrhnout je seznam faktur, které jsou přiřazeny uživatelům na revizi. Navrhnout tuto stránku mobilní, použít **VendMobileInvoiceAssignedToMeListPage** stránku 365 Dynamics pro operace. Před provedením tohoto postupu, ujistěte se, že alespoň jeden dodavatelské faktury je přiřazen k recenzi, a má dva rozdělení řádku faktury. Toto nastavení splňuje požadavky pro tento scénář.
+První mobilní stránka, kterou byste měli navrhnout, je seznam faktur, které jsou přiřazeny uživateli na revizi. Při navrhování této mobilní stránky použijte stránku **VendMobileInvoiceAssignedToMeListPage** v Dynamics 365 for Operations. Před provedením tohoto postupu se ujistěte, že alespoň jedna dodavatelská faktura je vám přiřazena na revizi a že má řádek faktury dvě rozkontace. Toto nastavení splňuje požadavky pro tento scénář.
 
-1.  V 365 Dynamics pro adresu URL operace, nahraďte název položky nabídky s **VendMobileInvoiceAssignedToMeListPage** otevřete mobilní verzi **nevyřízené faktury dodavatele přiřazené mně** stránku seznamu **závazků** modulu. V závislosti na počtu faktur, které jste ve vašem systému přiřadili jste na této stránce se zobrazí tyto faktury. Chcete-li najít konkrétní fakturu, můžete použít filtr na levé straně. Jsme však nevyžadují, aby konkrétní fakturu pro tento příklad. Vyžadujeme pouze některé faktury přiřazen, která bude umožňují navrhnout stránku mobilní. Nové stránky, které jsou k dispozici byly navrženy speciálně pro vývoj mobilních scénářů pro faktury dodavatele. Proto je nutné použít tyto stránky. Adresa URL by se měla podobat následující adresu URL a po jeho zadání, musí být uvedeny na stránce, která je znázorněno na obrázku: https://&lt;yourURL&gt;/? cmp = usmf & mi =**VendMobileInvoiceAssignedToMeListPage**& režim = mobilní [![stránku nevyřízené faktury dodavatele přiřazené mně](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
-2.  Klepněte **nastavení** (zařízení) tlačítko v pravém horním rohu stránky a poté klepněte na **mobilní aplikace**
-3.  Vyberte pracovní prostor a klikněte na **úpravy**
-4.  Klepněte na tlačítko **stránku přidat** vytvořte první stránku mobilní.
-5.  Zadejte název, jako například **Moje faktury dodavatele**a popis, jako například **faktury dodavatele přiřazené mně k recenzi**.
-6.  Click **Done**.
-7.  V Návrháři mobilní na **pole** karta, klepněte na tlačítko **vyberte pole**. Sloupce na stránce seznamu musí vypadat podobně jako na následujícím obrázku. [![Sloupců nevyřízené faktury dodavatele přiřazené mně stránky](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
-8.  Přidejte požadované sloupce na stránce seznamu, musí být uvedeny pro uživatele na mobilní stránce. Pořadí, ve kterém můžete přidat je pořadí, ve kterém se pole zobrazí koncovému uživateli. Jediný způsob, jak změnit pořadí polí, budou znovu vyberte všechna pole. Na základě požadavků pro tento scénář, jsou vyžadovány následující osmi polí. Nicméně někteří uživatelé zvážit osmi polí příliš mnoho informací v mobilním zařízení. Nejdůležitější pole proto ukážeme mobilního seznamu zobrazení. Zbývající pole se zobrazí v zobrazení Podrobnosti, které můžeme navrhnout později. Nyní přidáme následující pole. Klepněte na znaménko plus (**+**) v těchto sloupcích, chcete-li přidat na stránku mobilní.
+1.  V adrese URL aplikace 365 Dynamics for Operations nahraďte název položky nabídky hodnotou **VendMobileInvoiceAssignedToMeListPage** k otevření mobilní verze stránky se seznamem **Nevyřízené faktury dodavatele přiřazené mně** v modulu **Závazky**. V závislosti na počtu faktur, které máte v systému přidělené, se na této stránce se zobrazí tyto faktury. Pokud chcete najít konkrétní fakturu, můžete použít filtr vlevo. Nevyžadujeme ale použití konkrétní faktury pro tento příklad. Vyžadujeme pouze, aby vám byly přiřazeny některé faktury, které vám umožní navrhnout mobilní stránku. Nové stránky, které jsou k dispozici, byly navrženy speciálně pro vývoj mobilních scénářů pro faktury dodavatele. Proto je nutné použít tyto stránky. Adresa URL by měla vypadat jako následující adresa URL a po jejím zadání se musí zobrazit stránka, která je ukázána na obrázku: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Stránka Nevyřízené faktury, které jsou přiřazeny mně](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+2.  Klikněte na tlačítko **Nastavení** (ozubené kolo) v pravém horním rohu stránky, a pak klikněte na **Mobilní aplikace**.
+3.  Vyberte pracovní prostor a klikněte na **Úpravy**
+4.  Klepněte na tlačítko **Přidat stránku** pro vytvoření první mobilní stránky.
+5.  Zadejte název jako například **Moje faktury dodavatele** a popis jako například **Faktury dodavatele přiřazené mně ke kontrole**.
+6.  Klepněte na tlačítko **Hotovo**.
+7.  V mobilním návrháři na kartě **Pole** klepněte na tlačítko **Vybrat pole**. Sloupce na stránce seznamu musí vypadat podobně jako na následujícím obrázku. [![Sloupce na stránce Čekající faktury dodavatele přiřazené mně](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+8.  Přidejte požadované sloupce ze stránky seznamu, které musí být zobrazeny pro uživatele na mobilní stránce. Pořadí, ve kterém přidáváte, je pořadí, ve kterém se pole zobrazí koncovému uživateli. Jediný způsob, jak změnit pořadí polí, je opětovný výběr všech polí. Na základě požadavků pro tento scénář je vyžadováno následující osm polí. Nicméně někteří uživatelé mohou považovat osm polí za příliš mnoho informací v mobilním zařízení. Nejdůležitější pole proto ukážeme v zobrazení mobilního seznamu. Zbývající pole se zobrazí v zobrazení podrobností, které můžeme navrhnout později. Nyní přidáme následující pole. Klepněte na znaménko plus (**+**) v těchto sloupcích pro přidání na mobilní stránku.
     1.  Název dodavatele
     2.  Faktura celkem
     3.  Účet faktury
     4.  Číslo faktury
     5.  Datum fakturace
 
-    Po přidání pole, mobilní stránky, vypadat podobně jako na následujícím obrázku. [![Stránka po přidání polí](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
-9.  Následující sloupce musí také přidat nyní, takže jsme později povolit akce pracovního postupu.
-    1.  Zobrazit dokončit úkol
-    2.  Zobrazit delegovat úkol
+    Po přidání polí musí mobilní stránka vypadat podobně jako na následujícím obrázku. [![Stránka po přidání polí](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+9.  Nyní také musíte přidat následující sloupce, abychom mohli později povolit akce pracovního postupu.
+    1.  Zobrazit dokončené úkoly
+    2.  Zobrazit úkol delegování
     3.  Zobrazit úkol odvolání
-    4.  Zobrazit úkol odmítnout
-    5.  Zobrazit požadavek na dokončení úkolu
-    6.  Zobrazit úlohu opětovného odeslání
+    4.  Zobrazit úkol odmítnutí
+    5.  Zobrazit úkol požadavku na dokončení
+    6.  Zobrazit úkol opětovného odeslání
 
-10. Klepněte na **v** Chcete-li ukončit režim úprav.
-11. Klepněte na tlačítko **zpět** a **v** ukončení pracovního prostoru
-12. Klepněte na tlačítko **publikovat pracovního prostoru** uložit práci.
-13. Povolit **seznam faktur Zobrazit fakturu na celkovou nevyřízené dodavatele** ve formuláři Parametry závazků podle **fakturace**. Všimněte si, že pouze tím, že tento parametr součty faktury bude vypočtena zobrazený na stránce seznamu faktur dodavatele čekající na vyřízení. Toto je nová funkce v rámci předem nezbytná oprava hotfix 3208224.
+10. Kliknutím na **Hotovo** ukončete režim úprav.
+11. Klikněte na **Zpět** a potom na **Hotovo** pro odchod z pracovního prostoru
+12. Kliknutím na **Publikovat pracovní prostor** uložte práci.
+13. Povolte možnost **Zobrazit souhrn faktur u nevyřízených faktur dodavatele** ve formuláři Parametry závazků pod možností **Faktura**. Všimněte si, že pouze tím, že tento parametr povolíte, budou součty faktury vypočteny tak, aby se zobrazovaly na stránce seznamu faktur dodavatele čekajících na vyřízení. To je nová funkce v rámci nezbytné opravy hotfix 3208224.
 
-### <a name="vendor-invoice-details"></a>Podrobnosti faktury dodavatele
+### <a name="vendor-invoice-details"></a>Detaily faktury dodavatele
 
-Navrhovat stránky podrobnosti faktury pro mobilní telefon, použijte **VendMobileInvoiceHeaderDetails** stránku 365 Dynamics pro operace. Všimněte si, že v závislosti na počtu faktur, které máte ve vašem systému, tato stránka zobrazuje nejstarší faktury (faktura, která byla vytvořena jako první). Chcete-li najít konkrétní fakturu, můžete použít filtr na levé straně. Jsme však nevyžadují, aby konkrétní fakturu pro tento příklad. Vyžadujeme pouze některá data faktury tak, že můžeme navrhnout stránku mobilní. [![Pracovní postup](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+Pokud chcete navrhnout stránky podrobností faktury pro mobilní zařízení, použijte stránku **VendMobileInvoiceHeaderDetails** v aplikaci Dynamics 365 for Operations. Všimněte si, že v závislosti na počtu faktur, které máte v systému, tato stránka zobrazuje nejstarší faktury (faktura, která byla vytvořena jako první). Pokud chcete najít konkrétní fakturu, můžete použít filtr vlevo. Nevyžadujeme ale použití konkrétní faktury pro tento příklad. Vyžadujeme pouze některá data faktury, abychom mohli navrhnout mobilní stránku. [![Stránka workflowu](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
-1.  V 365 Dynamics pro adresu URL operace, nahraďte název položky nabídky s **VendMobileInvoiceHeaderDetails** k otevření formuláře
-2.  Otevřete Mobilní návrhář z **nastavení** tlačítko (zařízení).
-3.  Klepněte **úprava** tlačítka spusťte režim úprav v pracovním prostoru.
-4.  Vyberte ** Moje faktury dodavatele ** stránky, kterou jste dříve vytvořili a potom klepněte na tlačítko **úprava**.
-5.  Na **pole** karta, klepněte **mřížka** záhlaví sloupce.
-6.  Klepněte na tlačítko **vlastnosti**&gt;**stránku přidat**. **Poznámka:** po klepnutí **mřížka** čísla a přidat na stránku Podrobnosti stránka je automaticky navázán vztah.
-7.  Zadejte název stránky, například **detaily faktury**a popis, jako například **zobrazení záhlaví faktury a podrobnosti řádku**.
-8.  Klepněte na tlačítko **vyberte pole**. Všimněte si, že pořadí, ve kterém můžete přidat je pořadí, ve kterém se pole zobrazí koncovému uživateli. Jediný způsob, jak změnit pořadí polí, budou znovu vyberte všechna pole.
-9.  Přidejte následující pole v záhlaví na základě požadavků pro tento scénář:
+1.  V adrese URL Dynamics 365 for Operations operace nahraďte název položky nabídky názvem **VendMobileInvoiceHeaderDetails** k otevření formuláře
+2.  Otevřete mobilní návrhář z tlačítka **Nastavení** (ozubené kolečko).
+3.  Kliknutím na tlačítko **Upravit** spusťte režim úprav v pracovním prostoru.
+4.  Vyberte stránku ** Moje faktury dodavatele **, kterou jste dříve vytvořili, a potom klepněte na tlačítko **Upravit**.
+5.  Na kartě **Pole** klikněte na záhlaví sloupce **Mřížka**.
+6.  Klikněte na **Vlastnosti** &gt; **Přidat stránku**. **Poznámka:** Po klepnutí na záhlaví **Mřížka** a přidání stránky je automaticky navázán vztah.
+7.  Zadejte název stránky, například **Detaily faktury** a popis, jako například **Zobrazení záhlaví faktury a podrobností řádku**.
+8.  Klikněte na **Vybrat pole**. Všimněte si, že pořadí, ve kterém přidáváte, je pořadí, ve kterém se pole zobrazí koncovému uživateli. Jediný způsob, jak změnit pořadí polí, je opětovný výběr všech polí.
+9.  Na základě požadavků pro tento scénář přidejte následující pole ze záhlaví:
     1.  Název dodavatele
     2.  Faktura celkem
     3.  Účet faktury
@@ -196,34 +196,34 @@ Navrhovat stránky podrobnosti faktury pro mobilní telefon, použijte **VendMob
     4.  Čistá částka řádku
     5.  Částka sestavy 1099
 
-11. Po přidání všech polí z předchozích dvou kroků, klepněte na **v**. Stránka musí vypadat podobně jako na následujícím obrázku. [![Stránka po přidání polí](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
-12. Klepněte na **v** Chcete-li ukončit režim úprav.
-13. Klepněte na tlačítko **zpět** a **v** ukončení pracovního prostoru
-14. Klepněte na tlačítko **publikovat pracovního prostoru** uložit práci
+11. Po přidání všech polí z předchozích dvou kroků klepněte na **Hotovo**. Stránka musí vypadat podobně jako na následujícím obrázku. [![Stránka po přidání polí](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+12. Kliknutím na **Hotovo** ukončete režim úprav.
+13. Klikněte na **Zpět** a potom na **Hotovo** pro odchod z pracovního prostoru
+14. Kliknutím na **Publikovat pracovní prostor** uložte práci.
 
 ### <a name="workflow-actions"></a>Akce workflowu
 
-Chcete-li přidat akce pracovního postupu, použijte **VendMobileInvoiceHeaderDetails** stránku 365 Dynamics pro operace. Chcete-li tuto stránku otevřít, nahraďte název položky nabídky v adrese URL, stejně jako dříve. Potom otevřete Mobilní návrhář z **nastavení** tlačítko (zařízení). Postupujte takto Chcete-li přidat akce pracovního postupu na stránce Podrobnosti.
+Chcete-li přidat akce pracovního postupu, použijte stránku **VendMobileInvoiceHeaderDetails** v aplikaci Dynamics 365 for Operations. Chcete-li tuto stránku otevřít, nahraďte název položky nabídky v adrese URL, stejně jako dříve. Pak otevřete mobilní návrhář z tlačítka **Nastavení** (ozubené kolečko). Chcete-li přidat akce workflowu na stránce Podrobnosti, postupujte následovně.
 
-1.  Klepněte **úprava** tlačítka spusťte režim úprav v pracovním prostoru.
-2.  Vyberte **detaily faktury** stránky, kterou jste dříve vytvořili a potom klepněte na tlačítko **úprava**.
-3.  Na **akcí** karta, klepněte na tlačítko **přidat akci**.
-4.  Zadejte název akce, jako například **schválit**a popis, jako například **Schválit fakturu**. Všimněte si, že změní název akce, kterou zde zadáte název akce, která se zobrazí uživateli v mobilní aplikace.
-5.  Click **Done**.
-6.  Klepněte na tlačítko **vyberte pole**.
-7.  V procesu pracovního postupu, přejděte **VendMobileInvoiceHeaderDetails** stránku a provést akci, kterou chcete nahrát. Ujistěte se, zadejte komentáře pracovního postupu během tohoto procesu tak, aby pole komentáře je také součástí mobilního prostředí.
-8.  Po spuštění akcí pracovního postupu, klepněte na **v** k dokončení úkolu vyberte pole.
-9.  Klepněte na **v** Chcete-li ukončit režim úprav.
-10. Klepněte na tlačítko **zpět** a **v** ukončení pracovního prostoru
-11. Klepněte na tlačítko **publikovat pracovního prostoru** uložit práci
-12. Opakujte kroky 3 až 11 k zaznamenání všech akcí pracovního postupu požadováno. Všimněte si, že je povinnost mít faktury přiřazen ve stavu ke zpřístupnění akce pracovního postupu, chcete-li navrhnout pro.
-13. Otevřete Poznámkový blok nebo Microsoft Visual Studio a vložte následující kód. Uložte soubor jako soubor JS. Tento kód provádí dvě věci:
-    1.  Skryje sloupce extra týkající se pracovního postupu, které jsme přidali dříve na stránce Mobilní seznam. Můžeme přidat tyto sloupce tak, aby aplikace má tyto informace v kontextu a provést další krok.
-    2.  Podle kroku pracovního postupu, který je aktivní, použije logiku, chcete-li zobrazit pouze akce.
+1.  Kliknutím na tlačítko **Upravit** spusťte režim úprav v pracovním prostoru.
+2.  Vyberte stránku **Podrobnosti o faktuře** , kterou jste dříve vytvořili, a potom klepněte na tlačítko **Upravit**.
+3.  Na kartě **Akce** klikněte na **Přidat akci**.
+4.  Zadejte název akce, jako například **Schválit** a popis jako například **Schválit fakturu**. Všimněte si, že změní název akce, kterou zde zadáte, na název akce, která se zobrazí uživateli v mobilní aplikaci.
+5.  Klepněte na tlačítko **Hotovo**.
+6.  Klikněte na **Vybrat pole**.
+7.  V procesu pracovního postupu, přejděte an stránku **VendMobileInvoiceHeaderDetails** a proveďte akci, kterou chcete nahrát. Zadejte komentáře pracovního postupu během tohoto procesu tak, aby pole komentáře bylo také součástí mobilního prostředí.
+8.  Po spuštění akce pracovního postupu klepněte na **Hotovo** k dokončení úkolu Vybrat pole.
+9.  Kliknutím na **Hotovo** ukončete režim úprav.
+10. Klikněte na **Zpět** a potom na **Hotovo** pro odchod z pracovního prostoru
+11. Kliknutím na **Publikovat pracovní prostor** uložte práci.
+12. Opakujte kroky 3 až 11 k zaznamenání všech požadovaných akcí pracovního postupu. Všimněte si, že je musíte mít přiřazené faktury, které jsou v daném stavu, abyste mohli provádět dostupné akce pracovního postupu.
+13. Otevřete Poznámkový blok nebo Microsoft Visual Studio a vložte následující kód. Uložit soubor jako soubor .js Tento kód provádí dvě věci:
+    1.  Skryje sloupce týkající se pracovního postupu, které jsou navíc a které jsme přidali dříve na stránce Mobilní seznam. Můžeme přidat tyto sloupce tak, aby aplikace měla tyto informace v kontextu a provést další krok.
+    2.  Podle kroku pracovního postupu, který je aktivní, použije logiku, aby se zobrazily pouze akce.
 
-Všimněte si, že název stránky a další ovládací prvky v JS kódu musí být shodné z pracovního prostoru.
+Všimněte si, že název stránky a další ovládací prvky v JS kódu musí být z pracovního prostoru stejné.
 
-1.  Hlavní funkce (MetadataService, které byly dataService, cacheService, $q) {vrátit {Applnit: funkce (appMetadata) {/ / skrýt ovládací prvky, které musí být přítomny, ale nejsou viditelné metadataService.configureControl ("My--faktury dodavatele, 'ShowAccept' {skryté: PRAVDA}); metadataService.configureControl (" My--faktury dodavatele, "ShowApprove" {skryté: PRAVDA}); metadataService.configureControl ("My--faktury dodavatele,"ShowReject"{skryté: true}); metadataService.configureControl (" My--faktury dodavatele, 'ShowDelegate' {skryté: PRAVDA}); metadataService.configureControl ("My--faktury dodavatele, 'ShowRequestChange' {skryté: PRAVDA}); metadataService.configureControl (" My--faktury dodavatele, "ShowRecall" {skryté: PRAVDA}); metadataService.configureControl ("My--faktury dodavatele,"ShowComplete"{skryté: PRAVDA}); metadataService.configureControl (" My--faktury dodavatele, 'ShowResubmit' { skryté: true}); }, pageInit: funkce (pageMetadata, params) {Pokud (pageMetadata.Name == "Podrobnosti faktury") {/ / akce pracovního postupu zobrazit nebo skrýt podle pracovního postupu krok metadataService.configureAction ("Přijmout", {viditelné: true}); metadataService.configureAction ("Schválit" {viditelné: PRAVDA}); metadataService.configureAction ("Odmítnout", {viditelné: PRAVDA}); metadataService.configureAction ("Delegát" {viditelné: PRAVDA}); metadataService.configureAction ("požádat o změnu", {viditelné: PRAVDA}); metadataService.configureAction ("Odvolání" {viditelné: PRAVDA}); metadataService.configureAction ('Dokončit' {viditelné: true}); metadataService.configureAction (znovu "odešle", {viditelné: true});
+1.  function main(metadataService, dataService, cacheService, $q) {        return {            appInit: function (appMetadata) {                // Hide controls that need to be present, but not visible                metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });              metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });            metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });            },            pageInit: function (pageMetadata, params) {     if (pageMetadata.Name == 'Invoice-details') {                    // Show/hide workflow actions based on workflow step                    metadataService.configureAction('Accept', { visible: true });                    metadataService.configureAction('Approve', { visible: true });                    metadataService.configureAction('Reject', { visible: true });                    metadataService.configureAction('Delegate', { visible: true });                    metadataService.configureAction('Request-change', { visible: true });                    metadataService.configureAction('Recall', { visible: true });                    metadataService.configureAction('Complete', { visible: true });                    metadataService.configureAction('Resubmit', { visible: true });
 
                        var entityContextParts = params.pageContext.split(':');
                        var data = dataService.getEntityData(entityContextParts[0], entityContextParts[1]);
@@ -259,56 +259,56 @@ Všimněte si, že název stránky a další ovládací prvky v JS kódu musí b
            };
         }
 
-2.  Odeslat kód souboru do pracovního prostoru výběrem **logiky** kartu
-3.  Klepněte na **v** Chcete-li ukončit režim úprav.
-4.  Klepněte na tlačítko **zpět** a **v** ukončení pracovního prostoru
-5.  Klepněte na tlačítko **publikovat pracovního prostoru** uložit práci
+2.  Nahrajte kód souboru do pracovního prostoru výběrem karty **Logika**
+3.  Kliknutím na **Hotovo** ukončete režim úprav.
+4.  Klikněte na **Zpět** a potom na **Hotovo** pro odchod z pracovního prostoru
+5.  Kliknutím na **Publikovat pracovní prostor** uložte práci.
 
-### <a name="vendor-invoice-attachments"></a>Přílohy pro faktury dodavatele
+### <a name="vendor-invoice-attachments"></a>Přílohy faktury dodavatele
 
-1.  Klepněte **nastavení** (zařízení) tlačítko v pravém horním rohu stránky a poté klepněte na **mobilní aplikace**
-2.  Klepněte **úprava** tlačítka spusťte režim úprav v pracovním prostoru.
-3.  Vyberte ** detaily faktury ** stránky, kterou jste dříve vytvořili a potom klepněte na tlačítko **úprava**.
-4.  Nastavit **Správa dokumentů** možnost na **Ano** jak je ukázáno níže. **Poznámka:** Pokud neexistují žádné požadavky na mobilním zařízení zobrazit přílohy, můžete nechat tuto možnost nastavte na **č**, což je výchozí nastavení.
+1.  Klikněte na tlačítko **Nastavení** (ozubené kolo) v pravém horním rohu stránky, a pak klikněte na **Mobilní aplikace**.
+2.  Kliknutím na tlačítko **Upravit** spusťte režim úprav v pracovním prostoru.
+3.  Vyberte stránku **Podrobnosti o faktuře **, kterou jste dříve vytvořili, a potom klepněte na tlačítko **Upravit**.
+4.  Nastavte možnost **Správa dokumentů** na **Ano**, jak je ukázáno níže. **Poznámka:** Pokud neexistují žádné požadavky na mobilním zařízení, můžete nechat tuto možnost nastavenou na **Ne**, což je výchozí nastavení.
 5.  [![docmanagement](./media/docmanagement-216x300.png)](./media/docmanagement.png)
-6.  Klepněte na **v** Chcete-li ukončit režim úprav.
-7.  Klepněte na tlačítko **zpět** a **v** ukončení pracovního prostoru
-8.  Klepněte na tlačítko **publikovat pracovního prostoru** uložit práci
+6.  Kliknutím na **Hotovo** ukončete režim úprav.
+7.  Klikněte na **Zpět** a potom na **Hotovo** pro odchod z pracovního prostoru
+8.  Kliknutím na **Publikovat pracovní prostor** uložte práci.
 
-### <a name="vendor-invoice-line-distributions"></a>Distribuce pro řádek faktury dodavatele
+### <a name="vendor-invoice-line-distributions"></a>Distribuce řádky faktury dodavatele
 
-Požadavky pro tento scénář potvrďte, že bude pouze řádek úrovně distribuce a faktury budou mít vždy pouze jeden řádek. Vzhledem k tomu, že tento scénář je jednoduchý, musí být natolik jednoduché, že uživatel nemá k zobrazení podrobností k zobrazení distribucí několik úrovní uživatelského prostředí na mobilním zařízení. Faktury dodavatele v 365 Dynamics pro operace patří možnost zobrazení všech distribucí z hlavičky faktury. Tyto zkušenosti je potřebujeme pro mobilní scénář. Proto použijeme **VendMobileInvoiceAllDistributionTree** stránku Navrhnout tuto část mobilní scénář. 
+Požadavky pro tento scénář potvrzují, že budou existovat pouze distribuce na úrovni řádku a faktura bude mít vždy pouze jeden řádek. Vzhledem k tomu, že tento scénář je jednoduchý, musí být natolik jednoduché, že uživatel nemusí zobrazit podrobnosti k zobrazení distribucí několik úrovní uživatelského prostředí na mobilním zařízení. Faktury dodavatele v Dynamics 365 for Operations zahrnují možnost zobrazení všech distribucí z hlavičky faktury. Toto prostředí potřebujeme pro mobilní scénář. Proto použijeme stránku **VendMobileInvoiceAllDistributionTree** k navržení této části mobilního scénáře. 
 
 > [!NOTE] 
-> Znalost požadavků nám rozhodněte, které konkrétní stránky používat a jak přesně optimalizovat mobilního prostředí pro uživatele, když navrhujeme scénář. Ve druhém scénáři použijeme jinou stránku Zobrazit rozúčtování, protože se liší požadavky pro tento scénář.
+> Znalost požadavků nám pomáhá určit, které konkrétní stránky používat a jak přesně optimalizovat mobilní prostředí pro uživatele, když navrhujeme scénář. Ve druhém scénáři použijeme jinou stránku k zobrazení rozúčtování, protože se liší požadavky pro tento scénář.
 
-1.  V adrese URL nahraďte název položky nabídky, stejně jako před. Stránky, které se objeví, měl by vypadat jako na následujícím obrázku. [![Všechny stránky distribucí](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
-2.  Otevřete Mobilní návrhář z **nastavení** tlačítko (zařízení).
-3.  Klepněte **úprava** tlačítka spusťte režim úprav v pracovním prostoru. **Poznámka:**, byly automaticky vytvořeny dvě nové stránky se zobrazí. Systém vytvoří tyto stránky, protože je zapnuta správa dokumentů v předchozí části. Tyto nové stránky můžete ignorovat.
-4.  Klepněte na tlačítko **stránku přidat**.
-5.  Zadejte název stránky, například **zobrazení účetních**a popis, jako například **zobrazení účtování faktury**.
-6.  Click **Done**.
-7.  Na **pole** karta, klepněte na tlačítko **vyberte pole**, z rozdělení stránky zaškrtněte následující políčka a potom klepněte na tlačítko **v**:
+1.  V adrese URL nahraďte název položky nabídky jako předtím. Stránky, které se objeví, by měly vypadat jako na následujícím obrázku. [![Stránka Všechny distribuce](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+2.  Otevřete mobilní návrhář z tlačítka **Nastavení** (ozubené kolečko).
+3.  Kliknutím na tlačítko **Upravit** spusťte režim úprav v pracovním prostoru. **Poznámka:** uvidíte, že byly automaticky vytvořeny dvě nové stránky. Systém vytvoří tyto stránky, protože jste v předchozí části aktivovali správu dokumentů. Tyto nové stránky můžete ignorovat.
+4.  Klikněte na **Přidat stránku**.
+5.  Zadejte název stránky, například **zobrazení účetních** a popis, jako například **zobrazení účtování faktury**.
+6.  Klepněte na tlačítko **Hotovo**.
+7.  Na kartě **Pole** klikněte na **Vybrat pole**, ze stránek distribuce vyberte následující pole a potom klepněte na tlačítko **Hotovo**:
     1.  Částka
     2.  Měna
     3.  Účet hlavní knihy
 
 > [!NOTE] 
-> Jsme nevybrali **popis** sloupec z mřížky distribuce, protože požadavky pro tento scénář potvrdila, že výsledná cena je pouze částku, která bude rozúčtování. Uživatel proto nebude vyžadovat další pole k určení typu částky, který je rozdělení. V dalším scénáři však jsme **bude** tyto informace použít, protože požadavky na tuto situaci, že mají jiné typy částku rozdělení (například DPH).
-8.  Klepněte na **v** Chcete-li ukončit režim úprav.
-9.  Klepněte na tlačítko **zpět** a **v** ukončení pracovního prostoru
-10. Klepněte na tlačítko **publikovat pracovního prostoru** uložit práci
+> Nevybrali jsme slupec **Popis** z mřížky distribuce, protože požadavky pro tento scénář potvrdily, že výsledná cena je jediná částka, pro kterou bude existovat rozúčtování. Uživatel proto nebude vyžadovat další pole k určení typu částky, pro niž je distribuce určená. V dalším scénáři však **budeme** tyto informace používat, protože požadavky na tuto situaci určují, že jiné typy částek mají rozdělení (například DPH).
+8.  Kliknutím na **Hotovo** ukončete režim úprav.
+9.  Klikněte na **Zpět** a potom na **Hotovo** pro odchod z pracovního prostoru
+10. Kliknutím na **Publikovat pracovní prostor** uložte práci.
 
-**Poznámka:****zobrazení účetních** mobilní stránku není propojen právě některý z mobilních stránek, které jsme doposud vytvořili. Protože má být uživatel moci přejít na **zobrazení účetních** stránky z **detaily faktury** stránky na mobilním zařízení, musí nabízíme navigaci z **detaily faktury** stránce **zobrazení účetních** stránky. Můžeme navázat tato navigace pomocí další logiku pomocí jazyka JavaScript.
+**Poznámka:** Mobilní stránka **Zobrazení účetnictví** není momentálně propojena s žádnou z mobilních stránek, které jsme doposud vytvořili. Protože by měl uživatel být schopen přejít na stránku **zobrazení účetnictví** stránky ze stránky **Detaily faktury** na mobilním zařízení, musíme poskytnout navigaci ze stránky **Detaily faktury** na stránku **Zobrazit účetnictví**. Můžeme navázat tuto navigaci pomocí další logiky pomocí jazyka JavaScript.
 
-1.  Otevření souboru .js, který jste vytvořili dříve a přidat zvýrazněné řádky v následujícím kódu. Tento kód provádí dvě věci:
-    1.  Pomáhá zajistit, že uživatelům nebude umožněno přejít přímo z pracovního prostoru, chcete-li **zobrazení účetních** stránky.
-    2.  Zjistí-li ovládací prvek navigace z **detaily faktury** stránce **zobrazení účetních** stránky.
+1.  Otevřete soubor .js, který jste vytvořili dříve a přidejte zvýrazněné řádky v následujícím kódu. Tento kód provádí dvě věci:
+    1.  Pomáhá zajistit, že uživatelé nebudou moci přejít přímo z pracovního prostor na stránku **Zobrazení účtování**.
+    2.  Naváže ovládání navigace ze stránky **Detaily faktury** na stránku**Zobrazení účetnictví**.
 
 > [!NOTE] 
-> Název stránky a další ovládací prvky v JS kódu musí být stejné z pracovního prostoru.
+> Všimněte si, že název stránky a další ovládací prvky v JS kódu musí být z pracovního prostoru stejné.
 
-1.  Hlavní funkce (MetadataService, které byly dataService, cacheService, $q) {vrátit {Applnit: funkce (appMetadata) {/ / skrýt ovládací prvky, které musí být přítomny, ale nejsou viditelné metadataService.configureControl ("My--faktury dodavatele, 'ShowAccept' {skryté: PRAVDA}); metadataService.configureControl (" My--faktury dodavatele, "ShowApprove" {skryté: PRAVDA}); metadataService.configureControl ("My--faktury dodavatele,"ShowReject"{skryté: true}); metadataService.configureControl (" My--faktury dodavatele, 'ShowDelegate' {skryté: PRAVDA}); metadataService.configureControl ("My--faktury dodavatele, 'ShowRequestChange' {skryté: PRAVDA}); metadataService.configureControl (" My--faktury dodavatele, "ShowRecall" {skryté: PRAVDA}); metadataService.configureControl ("My--faktury dodavatele,"ShowComplete"{skryté: PRAVDA}); metadataService.configureControl (" My--faktury dodavatele, 'ShowResubmit' { skryté: true}); Skrytí stránek pro kořenový navigační metadataService.hideNavigation('View-accounting'); Odkaz zobrazíte účetní metadataService.addLink ("faktury podrobnosti" účetní zobrazení "," zobrazení účetní nav řízení ","Zobrazení účetní", true); }, pageInit: funkce (pageMetadata, params) {Pokud (pageMetadata.Name == "Podrobnosti faktury") {/ / akce pracovního postupu zobrazit nebo skrýt podle pracovního postupu krok metadataService.configureAction ("Přijmout", {viditelné: true}); metadataService.configureAction ("Schválit" {viditelné: PRAVDA}); metadataService.configureAction ("Odmítnout", {viditelné: PRAVDA}); metadataService.configureAction ("Delegát" {viditelné: PRAVDA}); metadataService.configureAction ("požádat o změnu", {viditelné: PRAVDA}); metadataService.configureAction ("Odvolání" {viditelné: PRAVDA}); metadataService.configureAction ('Dokončit' {viditelné: true}); metadataService.configureAction (znovu "odešle", {viditelné: true});
+1.  function main(metadataService, dataService, cacheService, $q) {        return {            appInit: function (appMetadata) {                // Hide controls that need to be present, but not visible                metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });              metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });            metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });                // Hide pages not applicable for root navigation                metadataService.hideNavigation('View-accounting');                //Link to view accounting                metadataService.addLink('Invoice-details', 'View-accounting', 'View-accounting-nav-control', 'View accounting', true);            },            pageInit: function (pageMetadata, params) {     if (pageMetadata.Name == 'Invoice-details') {                    // Show/hide workflow actions based on workflow step                    metadataService.configureAction('Accept', { visible: true });                    metadataService.configureAction('Approve', { visible: true });                    metadataService.configureAction('Reject', { visible: true });                    metadataService.configureAction('Delegate', { visible: true });                    metadataService.configureAction('Request-change', { visible: true });                    metadataService.configureAction('Recall', { visible: true });                    metadataService.configureAction('Complete', { visible: true });                    metadataService.configureAction('Resubmit', { visible: true });
 
                        var entityContextParts = params.pageContext.split(':');
                        var data = dataService.getEntityData(entityContextParts[0], entityContextParts[1]);
@@ -344,24 +344,24 @@ Požadavky pro tento scénář potvrďte, že bude pouze řádek úrovně distri
            };
         }
 
-2.  Odeslat kód souboru do pracovního prostoru výběrem **logiky** kartu přepsat předchozí kód
-3.  Klepněte na **v** Chcete-li ukončit režim úprav.
-4.  Klepněte na tlačítko **zpět** a **v** ukončení pracovního prostoru
-5.  Klepněte na tlačítko **publikovat pracovního prostoru** uložit práci
+2.  Nahrajte kód souboru do pracovního prostoru výběrem karty **Logika** pro přepis předchozího kódu
+3.  Kliknutím na **Hotovo** ukončete režim úprav.
+4.  Klikněte na **Zpět** a potom na **Hotovo** pro odchod z pracovního prostoru
+5.  Kliknutím na **Publikovat pracovní prostor** uložte práci.
 
 ### <a name="validation"></a>Ověření
 
-Z mobilního zařízení otevřete aplikace a připojit se k vaší Dynamics 365 instance operace. Ujistěte se, přihlásit se do společnosti, kde faktury dodavatele vám byly přiřazeny k revizi. Je třeba provést následující akce:
+Z mobilního zařízení otevřete aplikace a připojte se k vaší instanci aplikace Dynamics 365 for Operations. Ujistěte se, že jste přihlášení se do společnosti, kde vám byly faktury dodavatele přiřazeny k revizi. Je třeba provést následující akce:
 
--   Najdete **schválení** prostoru.
--   Přejít k podrobnostem **schválení** prostoru a viz **Moje faktury dodavatele** stránky.
--   Přejít k podrobnostem **Moje faktury dodavatele** stránku a zobrazit seznam faktur, které vám byly přiřazeny.
--   Jedné z faktur k podrobnostem a zobrazit podrobnosti faktury záhlaví a podrobností řádků.
+-   Viz pracovní prostor **Moje schválení**.
+-   Přejděte do pracovního prostoru **Moje schválení** a zobrazte stránku **Moje faktury dodavatele**.
+-   Přejděte k podrobnostem na stránce **Moje faktury dodavatele** a zobrazte seznam faktur, které vám byly přiřazeny.
+-   přejděte na podrobnosti jedné z faktu a zobrazte podrobnosti faktury záhlaví a podrobností řádků.
 -   Na stránce Podrobnosti viz odkaz na přílohy a pomocí tohoto odkazu můžete přejít na seznam příloh a přílohy zobrazit.
--   Na stránce Podrobnosti viz odkaz **zobrazení účetních** stránku a pomocí tohoto odkazu můžete přejít na stránku distribuce a zobrazení distribucí.
--   Na stránce Podrobnosti klepněte **akce** nabídky v dolní části a provádět akce pracovního postupu, které jsou použitelné pro krok pracovního postupu.
+-   na stránce podrobností zobrazte odkaz na stránku **Zobrazit účetnictví**  a pomocí tohoto odkazu můžete přejít na seznam příloh a přílohy zobrazit.
+-   Na stránce Podrobnosti klepněte na nabídku **akce** a proveďte akce pracovního postupu, které jsou použitelné pro krok pracovního postupu.
 
-## <a name="designing-a-complex-invoice-approval-scenario-for-fabrikam"></a>Návrh scénáře schválení komplexní faktury Fabrikam
+## <a name="designing-a-complex-invoice-approval-scenario-for-fabrikam"></a>Návrh scénáře schválení složité faktury pro společnosti Fabrikam
 <table>
 <colgroup>
 <col width="50%" />
@@ -375,7 +375,7 @@ Z mobilního zařízení otevřete aplikace a připojit se k vaší Dynamics 365
 </thead>
 <tbody>
 <tr class="odd">
-<td>Která pole z hlavičky faktury uživatel chtít vidět do mobilního prostředí a v jakém pořadí?</td>
+<td>Která pole z hlavičky faktury bude uživatel chtít vidět v mobilním prostředí a v jakém pořadí?</td>
 <td><ol>
 <li>Název dodavatele</li>
 <li>Fakturovaná částka</li>
@@ -388,7 +388,7 @@ Z mobilního zařízení otevřete aplikace a připojit se k vaší Dynamics 365
 </ol></td>
 </tr>
 <tr class="even">
-<td>Která pole z řádků fakturace uživatel chtít vidět do mobilního prostředí a v jakém pořadí?</td>
+<td>Která pole z řádek faktury bude uživatel chtít vidět v mobilního prostředí a v jakém pořadí?</td>
 <td><ol>
 <li>Kategorie zásobování</li>
 <li>Množství</li>
@@ -398,23 +398,23 @@ Z mobilního zařízení otevřete aplikace a připojit se k vaší Dynamics 365
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Kolik řádků faktury jsou ve faktuře? Platí zde pravidlo 80-20 a optimalizovat 80procent $2.</td>
+<td>Kolik má faktura řádků? Uplatněte zde pravidlo 80-20 a optimalizujte pro 80 procent.</td>
 <td>5</td>
 </tr>
 <tr class="even">
-<td>Budou uživatelé chtějí vidět rozúčtování (kódování faktury) v mobilním zařízení během recenze?</td>
+<td>Budou uživatelé chtít vidět rozúčtování (kódování faktury) v mobilním zařízení během kontrol?</td>
 <td>Ano</td>
 </tr>
 <tr class="odd">
-<td>Kolik rozúčtování (rozšířená cena, DPH, poplatky atd.) jsou pro řádek faktury? Znovu použít pravidlo 80-20.</td>
-<td>Rozšířená cena: DPH 2: 2 poplatky: 2</td>
+<td>Kolik rozúčtování (rozšířená cena, DPH, poplatky atd.) je pro řádek faktury k dispozici? Znovu použijte pravidlo 80-20.</td>
+<td>Rozšířená cena: 2 DPH 2: 2 Poplatky: 2</td>
 </tr>
 <tr class="even">
-<td>Faktury také mají rozúčtování v hlavičce faktury? V takovém případě by tyto rozúčtování k dispozici v zařízení?</td>
+<td>Mají faktury také rozúčtování v hlavičce faktury? Pokud ano, budou tato rozúčtování k dispozici v zařízení?</td>
 <td>Nepoužito</td>
 </tr>
 <tr class="odd">
-<td>Budou uživatelé chtějí vidět přílohy pro fakturu na zařízení?</td>
+<td>Budou uživatelé chtít vidět přílohy pro fakturu na zařízení?</td>
 <td>Ano</td>
 </tr>
 </tbody>
@@ -424,15 +424,15 @@ Z mobilního zařízení otevřete aplikace a připojit se k vaší Dynamics 365
 
 Tyto změny lze provést pro scénář 1, na základě požadavků pro scénář 2. Tato část slouží jako cvičení, které můžete provést pro studijní účely.
 
-1.  Vzhledem k tomu, že další řádky faktury jsou očekávány v scénář 2, vám pomůže následující změny návrhu optimalizování uživatelského prostředí na mobilním zařízení:
-    1.  Místo zobrazení řádků faktury na stránce Podrobnosti (jako v scénář 1), uživatelé mohou zobrazit řádky na samostatnou stránku mobilní.
-    2.  Vzhledem k tomu, že v tomto případě se očekává více než jeden řádek faktury, pokud **VendMobileInvoiceAllDistributionTree** stránka slouží k vytvoření stránky distribucí pro mobilní telefon (jako v scénář 1), může být matoucí pro uživatele ke korelaci na rozdělování řádků. Proto použít **VendMobileInvoiceLineDistributionTree** stránku navrhnout rozložení stránky.
-    3.  V ideálním případě by rozdělení se mají v rámci řádku faktury v tomto scénáři. Proto se ujistěte, že uživatel můžete přejít k podrobnostem linku najdete na stránce distribuce. Použijte funkci odkaz stránky navázat procházení, stejně jako stránek záhlaví a podrobností v scénář 1.
+1.  Vzhledem k tomu, že další řádky faktury jsou očekávány ve scénáři 2, následující změny návrhu vám pomohou optimalizovat uživatelské prostředí na mobilním zařízení:
+    1.  Místo zobrazení řádků faktury na stránce Podrobnosti (jako v scénáři 1), mohou uživatelé zobrazit řádky na samostatné mobilní stránce.
+    2.  Vzhledem k tomu, že v tomto případě se očekává více než jeden řádek faktury, pokud je použita stránka **VendMobileInvoiceAllDistributionTree** k vytvoření stránky distribucí pro mobilní telefon (jako v scénáři 1), může být matoucí pro uživatele při korelaci na rozdělování řádků. Proto k návrhu stránek distribuce použijte stránku **VendMobileInvoiceLineDistributionTree**.
+    3.  V ideálním případě by rozdělení v tomto scénáři měla zobrazovat v kontextu řádku faktury. Proto se ujistěte, že uživatel může přejít k podrobnostem řádky, aby viděl stránku distribuce. Použijte možnost odkazu stránky k navázat procházení na detaily, stejně jako u stránek záhlaví a podrobností v scénáři 1.
 
-2.  Vzhledem k tomu, že na rozdělení v scénář 2 (prodejní daně, poplatky a tak dále) se očekává více než jeden typ částky, je užitečné, chcete-li zobrazit popis typu Částka. (Můžeme vynechat tuto informaci v scénář 1).
+2.  Vzhledem k tomu, že na rozdělení v scénáři 2 (prodejní daně, poplatky a tak dále) se očekává více než jeden typ částky, je užitečné zobrazit popis typu Částka. (Tyto informace jsme v scénáři 1 vynechali).
 
 ## <a name="conclusion"></a>Závěr
-Mobilní platformy a možnosti aplikace umožňují navrhnout mobilních scénářů, které jsou optimalizovány pro základní organizace uživatele. Na základě příkladů uvedených v tomto tématu, můžete zkusit další varianty a vytvořit různé zkušenosti, které splňují specifické potřeby.
+Mobilní platformy a možnosti aplikace umožňují navrhnout mobilní scénáře, které jsou optimalizovány pro základní organizace uživatele. Na základě příkladů uvedených v tomto tématu můžete zkusit další varianty a vytvořit různé zkušenosti, které splňují specifické potřeby.
 
 
 

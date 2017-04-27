@@ -1,6 +1,6 @@
 ---
-title: "Prodejní objednávky mobilní pracovní prostor pro Microsoft Dynamics 365 pro provoz aplikace"
-description: "S mobilním prostoru prodejní objednávky zůstali aktuálních prodejních objednávek kdekoli a kdykoli."
+title: "Mobilní pracovní prostor prodejních objednávek pro aplikaci Microsoft Dynamics 365 for Operations"
+description: "S mobilním pracovním prostorem prodejních objednávek můžete mít stále aktuální přehled o svých prodejních objednávkách kdekoli a kdykoli."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2017-01-12 16 - 53 - 31
@@ -25,93 +25,93 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="sales-orders-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Prodejní objednávky mobilní pracovní prostor pro Microsoft Dynamics 365 pro provoz aplikace
+# <a name="sales-orders-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Mobilní pracovní prostor prodejních objednávek pro aplikaci Microsoft Dynamics 365 for Operations
 
-S mobilním prostoru prodejní objednávky zůstali aktuálních prodejních objednávek kdekoli a kdykoli. 
+S mobilním pracovním prostorem prodejních objednávek můžete mít stále aktuální přehled o svých prodejních objednávkách kdekoli a kdykoli. 
 
 <a name="prerequisites"></a>Předpoklady
 -------------
 
 | Předpoklad                                                         | popis                                                                                                                                                                   |
 |----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Přečtěte si informace o Microsoft Dynamics 365 pro provoz mobilní platformu | [Dynamics 365 pro mobilní platformu operace](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                                              |
-| Dynamics 365 pro operace                                          | Ujistěte se, že používáte prostředí, které má Microsoft Dynamics 365 pro verzi operace 1611 a Microsoft Dynamics pro operace platformy aktualizace 3 (listopad 2016). |
-| Opravy hotfix KB 3215650                                                    | Nainstalujte opravu hotfix Chcete-li povolit pracovní prostory, které jsou součástí Microsoft Dynamics 365 pro operace.                                                                       |
-| Mobilní zařízení, které má 365 Dynamics pro operace aplikace nainstalována | Stáhněte 365 Dynamics pro operace aplikace z úložiště vaše mobilní aplikace.                                                                                                      |
+| Přečtěte si o mobilní platformě Microsoft Dynamics 365 for Operations | [Mobilní platforma Microsoft Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                                              |
+| Dynamics 365 for Operations                                          | Ujistěte se, že používáte prostředí, které má Microsoft Dynamics 365 for Operations verzi 1611 a aktualizaci platformy Microsoft Dynamics for Operations 3 (listopad 2016). |
+| Oprava KB 3215650                                                    | Nainstalujte opravu hotfix, abyste povolili pracovní prostory, které jsou součástí Microsoft Dynamics 365 for Operations.                                                                       |
+| Mobilní zařízení, které má nainstalovanou aplikaci Dynamics 365 for Operations | Stáhněte aplikaci Dynamics 365 for Operations z vašeho obchodu mobilních aplikací.                                                                                                      |
 
 ## <a name="overview"></a>Přehled
-Tento mobilní pracovní prostor přistupuje k 365 Dynamics operací aplikace a umožňuje zobrazit podrobné informace o jednotlivých prodejních objednávkách, například stav objednávky, informace o kontaktu zákazníka a kontaktní informace pro příjemce objednávky. Mobilní pracovní prostor poskytuje okamžitý přehled o prodejních objednávkách. Zobrazit prodejní objednávky podle zákazníka, nebo zobrazit všechny prodejní objednávky nebo zobrazení informací o konkrétní prodejní objednávku. Mobilní pracovní prostor obsahuje dvě zobrazení, které vám umožní analyzovat prodejní objednávky do hloubky.
+Tento mobilní pracovní prostor přistupuje k aplikaci Dynamics 365 for Operations a umožňuje zobrazit podrobné informace o jednotlivých prodejních objednávkách, například stav objednávky, informace o kontaktu zákazníka a kontaktní informace pro příjemce objednávky. Mobilní pracovní prostor poskytuje okamžitý přehled o prodejních objednávkách. Můžete zobrazit prodejní objednávky podle zákazníka nebo zobrazit všechny prodejní objednávky o konkrétní prodejní objednávce. Mobilní pracovní prostor obsahuje dvě zobrazení, která vám umožní analyzovat prodejní objednávky do hloubky.
 
 ### <a name="view-all-sales-orders"></a>Zobrazit všechny prodejní objednávky
 
 Toto zobrazení obsahuje seznam všech prodejních objednávek.
 
--   Použijte jeden z následujících filtrů vyberte prodejní objednávky, které chcete zobrazit.
+-   Použijte jeden z následujících filtrů pro výběr prodejních objednávek, které chcete zobrazit.
     -   Hledat podle prodejní objednávky
-    -   Hledání podle účtu odběratele
-    -   Hledat podle jména zákazníka
-    -   Hledání podle stavu
-    -   Hledání podle stavu uvolnění
-    -   Hledat datum a čas vytvoření
+    -   Hledat podle odběratele
+    -   Hledat podle jména odběratele
+    -   Hledat podle stavu
+    -   Hledat podle stavu storna
+    -   Hledat podle data a času vytvoření
 
 <!-- -->
 
--   Po výběru prodejní objednávky můžete zobrazit podrobnosti o konkrétní objednávky. Konkrétně můžete zobrazit:
-    -   Informace o názvu a adresy odběratele
+-   Po výběru prodejní objednávky můžete zobrazit podrobnosti o konkrétní objednávce. Konkrétně můžete zobrazit:
+    -   Informace o názvu a adrese zákazníka
     -   Data různých prodejních objednávek jako požadované datum expedice a potvrzené datum expedice
-    -   Kontaktní informace pro příjemce objednávky
-    -   Informace o kontaktu zákazníka
+    -   Kontaktní informace objednatele
+    -   Kontaktní informace odběratele
     -   Řádky objednávky
     -   Dodávky, které ukazují, jak a kdy byla prodejní objednávka dodána
 
-### <a name="view-orders-for-a-customer-"></a>Zobrazit objednávky pro zákazníka ** **
+### <a name="view-orders-for-a-customer-"></a>Zobrazení objednávek pro odběratele** **
 
-Toto zobrazení obsahuje seznam prodejních objednávek podle odběratele.
+Toto zobrazení uvádí seznam prodejních objednávek na odběratele.
 
--   Chcete-li zobrazit objednávky pro zákazníka, použijte jednu z následující filtry.
-    -   Hledání podle názvu
-    -   Hledání podle účtu
+-   Chcete-li zobrazit objednávky pro odběratele, použijte jeden z následujících filtrů.
+    -   Hledat podle jména
+    -   Hledat podle účtu
 
 <!-- -->
 
 -   Po výběru zákazníka můžete zobrazit:
-    -   Jméno zákazníka a skupiny
-    -   Informace o kontaktu zákazníka
+    -   Název skupinu odběratelů
+    -   Kontaktní informace odběratele
     -   Prodejní objednávky zákazníka a podrobnosti prodejní objednávky:
-        -   Informace o názvu a adresy odběratele
-        -   Kalendářní data v různých prodejních objednávek
-        -   Kontaktní informace pro příjemce objednávky
-        -   Informace o kontaktu zákazníka
+        -   Informace o názvu a adrese zákazníka
+        -   Různá data prodejních objednávek
+        -   Kontaktní informace objednatele
+        -   Kontaktní informace odběratele
         -   Řádky objednávky
-        -   Dodávky, které ukazují, jak a kdy bylo dodáno prodejních objednávek
+        -   Dodávky, které ukazují, jak a kdy byly prodejní objednávky dodány
 
 ## <a name="get-started"></a>Začínáme
-Postupujte při seznamování s mobilním prostoru prodejní objednávky v mobilním zařízení.
+Abyste mohli začít používat mobilní pracovní prostor prodejních objednávek na svém mobilním zařízení, postupuje podle následujících kroků.
 
-1.  V úložišti mobilní aplikace stáhnout a nainstalovat 365 Microsoft Dynamics pro operace app.
-2.  Spuštění aplikace v zařízení.
+1.  Stáhněte aplikaci Microsoft Dynamics 365 for Operations z obchodu mobilních aplikací.
+2.  Spusťte aplikaci na svém zařízení.
 3.  Zadejte adresu URL aplikace Dynamics 365.
-4.  Zadejte přihlášení do společnosti. Například zadejte **USMF**.
-5.  Při prvním přihlášení, budete vyzváni pro uživatelské jméno a heslo pro vaše 365 Microsoft Dynamics pro účet operací. Zadejte svá pověření. Po přihlášení, zobrazí se dostupné pracovní prostory pro vaši firmu.
+4.  Zadejte společnost, do které se chcete přihlásit. Například zadejte **USMF**.
+5.  Při prvním přihlášení budete vyzváni k zadání uživatelského jména a hesla pro váš účet aplikace Microsoft Dynamics 365 for Operations. Zadejte své přihlašovací údaje. Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost.
 
-Zobrazení pracovní plochy na mobilní aplikace, musíte nejprve publikovat požadované pracovní prostory do 365 Dynamics pro operace app.
+Pro zobrazení pracovního prostoru ve své mobilní aplikaci musíte nejprve publikovat požadovaný pracovní prostor do aplikace Dynamics 365 for Operations.
 
-1.  Spusťte Dynamics 365 pro operace.
-2.  Přejít na **Správa systému**&gt;**nastavení**&gt;**parametry systému**.
-3.  Vyberte **Správa mobilní aplikace**.
-4.  Vyberte pracovní prostor k publikování na mobilní platformy.
-5.  Vyberte **publikovat pracovního prostoru**.
-6.  Aktualizujte zařízení zobrazit publikované pracovní prostory.
+1.  Spusťte aplikaci Dynamics 365 for Operations.
+2.  Přejděte do nabídky **Správa systému** &gt; **Nastavení** &gt; **systémových parametrů**.
+3.  Zvolte **Spravovat aplikaci pro mobilní zařízení**.
+4.  Vyberte pracovní prostor pro publikování na mobilní platformu.
+5.  Vyberte **Publikovat pracovní prostor**.
+6.  Aktualizujte zařízení pro zobrazení publikovaných pracovních prostorů.
 
-## <a name="view-information-about-sales-orders-for-a-customer"></a>Zobrazení informací o prodejní objednávky pro zákazníka
-1.  V mobilním zařízení, vyberte **prodejní objednávky** prostoru.
-2.  Vyberte **zobrazit objednávky pro zákazníka,**.
-3.  Použití ** účtu ** nebo ** jméno zákazníka ** informace k nalezení požadovaného zákazníka.
-4.  Vyberte odběratele.
-5.  Vyberte **kontaktní informace** nebo **prodejní objednávky**.
-6.  Pokud **prodejní objednávky** je vybrali, se zobrazí seznam prodejních objednávek pro zákazníka.
-7.  Vyberte **prodeje**.
-8.  Zde můžete zobrazit informace o řádcích prodejní objednávky, dodávky, kontaktní informace zákazníka a kontaktní informace pro příjemce objednávky.
+## <a name="view-information-about-sales-orders-for-a-customer"></a>Zobrazení informací o prodejních objednávkách pro určitého zákazníka
+1.  Na svém mobilním zařízení vyberte pracovní prostor **Prodejní objednávky**.
+2.  Vyberte **Zobrazení objednávek pro odběratele**
+3.  Pomocí informací v poli Účet nebo Název zákazníka vyhledejte požadovaného zákazníka.
+4.  Vyberte zákazníka.
+5.  Vyberte **Kontaktní informace** nebo **Prodejní objednávky**.
+6.  Pokud je vybraná možnost **Prodejní objednávky**, zobrazí se seznam prodejních objednávek pro zákazníka.
+7.  Vyberte **Prodejní objednávka**.
+8.  Zde můžete zobrazit informace o řádcích prodejní objednávky, dodávkách, kontaktní informace zákazníka a kontaktní informace příjemce objednávky.
 
 
 

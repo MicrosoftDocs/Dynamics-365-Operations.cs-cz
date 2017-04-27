@@ -1,5 +1,5 @@
 ---
-title: "Výchozí pořadí výroby při výrobě spuštění"
+title: "Výchozí nastavení výrobní zakázky v modulu Výroba"
 description: 
 author: YuyuScheller
 manager: AnnBe
@@ -27,14 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="production-order-defaults-in-manufacturing-execution"></a>Výchozí pořadí výroby při výrobě spuštění
+# <a name="production-order-defaults-in-manufacturing-execution"></a>Výchozí nastavení výrobní zakázky v modulu Výroba
 
 [!include[banner](../includes/banner.md)]
 
 
 
 
-Měli byste pečlivě zvážit všechna nastavení na **výchozí pořadí výroby** stránky nejprve zaměstnanci provést registrací o výrobních úlohách. Pokud vaše společnost používá funkce více pracovišť, můžete nastavit různé výchozí hodnoty pro výrobní zakázky pro každý web. Výchozí nastavení pro integraci s řízením výroby se nastavují na následujících kartách na stránce **Výchozí hodnoty pro výrobní objednávku**:
+Měli byste pečlivě zvážit všechna nastavení na stránce **Výchozí hodnoty výrobní zakázky** předtím, než začnou zaměstnanci provádět registraci výrobních úloh. Pokud vaše společnost používá funkci více pracovišť, můžete nastavit různé výchozí hodnoty pro výrobní zakázky pro každé pracoviště. Výchozí nastavení pro integraci s řízením výroby se nastavují na následujících kartách na stránce **Výchozí hodnoty pro výrobní objednávku**:
 
 -   **Hlavní** – hlavní zakázky vychází z výrobních prací v modulu Provádění výroby.
 -   **Spustit** – výchozí hodnoty objednávky jsou použity při zahájení výrobní práce nebo operace.

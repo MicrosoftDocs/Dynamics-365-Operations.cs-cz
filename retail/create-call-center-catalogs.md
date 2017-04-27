@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16212
 ms.assetid: c9d1b9df-82e8-4b3a-a13c-166df8b9718e
 ms.search.region: global
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 Tento článek podává přehled procesu vytvoření katalogu pro kontaktní středisko. 
 
-V kontaktním středisku můžete pomocí katalogů produktů identifikovat produkty, které chcete nabízet odběratelům. Kontaktní střediska obvykle používají tištěné katalogy. Návrh a výroba tištěného katalogu je zpracována mimo 365 Microsoft Dynamics pro operace. Však můžete vytvořit a uložit digitální formě katalogu maloobchodní a obchodování v 365 Dynamics pro operace pomocí stejných formulářů, které můžete použít k nastavení online maloobchodní katalogy. Před vytvořením katalogu musíte nastavit sortiment produktů a přiřadit sortiment kontaktnímu středisku. Poté přidáte produkty do katalogu výběrem produktů z těchto sortimentů. Poté, co byly produkty přidány do katalogu a katalog je dokončeno, je třeba ověřit katalog pro ověření dat. Poté musíte odeslat katalog ke kontrole a schválení. Po schválení katalogu jej můžete publikovat. Při vytvoření katalogu kontaktního střediska můžete pořídit snímek dat katalogu v době publikování katalogu. Tato funkce snímku vám umožňuje přístup k určité verzi katalogu i v případě, že je katalog později změněn a aktualizován. Katalogy kontaktního střediska lze rovněž nastavit tak, aby obsahovaly následující volitelné prvky.
+V kontaktním středisku můžete pomocí katalogů produktů identifikovat produkty, které chcete nabízet odběratelům. Kontaktní střediska obvykle používají tištěné katalogy. Návrhy a výroba tištěného katalogu jsou zpracovány mimo aplikaci Microsoft Dynamics 365 for Operations. Můžete však vytvořit a uložit digitální kopii katalogu v aplikaci Retail and commerce v Dynamics 365 for Operations s použitím stejných formulářů, které slouží k nastavení online maloobchodních katalogů. Před vytvořením katalogu musíte nastavit sortiment produktů a přiřadit sortiment kontaktnímu středisku. Poté přidáte produkty do katalogu výběrem produktů z těchto sortimentů. Poté, co byly produkty přidány do katalogu a katalog je dokončeno, je třeba ověřit katalog pro ověření dat. Poté musíte odeslat katalog ke kontrole a schválení. Po schválení katalogu jej můžete publikovat. Při vytvoření katalogu kontaktního střediska můžete pořídit snímek dat katalogu v době publikování katalogu. Tato funkce snímku vám umožňuje přístup k určité verzi katalogu i v případě, že je katalog později změněn a aktualizován. Katalogy kontaktního střediska lze rovněž nastavit tak, aby obsahovaly následující volitelné prvky.
 
 -   **Zdrojové kódy**: Kódy, které se používají ke sledování reakcí odběratele na konkrétní poštu katalogu.
 -   **Produkty zdarma**: Produkty, které jsou zahrnuty do objednávky zákazníka bez dalších příplatků. Tyto produkty jsou přidány do objednávky automaticky při zadání zdrojového kódu katalogu do objednávky.
@@ -65,7 +65,7 @@ Po ověření katalogu jej můžete odeslat na revizi a schválení. Katalog mus
 ## <a name="optional-add-source-codes-free-products-and-scripts"></a>Volitelné: Přidání zdrojových kódů, bezplatných produktů a skriptů
 Následující položky lze také přidat do katalogu kontaktního střediska. Tyto položky jsou volitelné.
 
--   **Zdrojové kódy** mohou společnosti, které poskytují tištěné katalogy, používat ke sledování odezvy odběratelů na konkrétní katalog. Zdrojové kódy jsou často vytištěny na zadní straně katalogu a jsou zadány do prodejní objednávky, pokud zákazník provede nákup. Chcete-li přidat zdrojový kód do katalogu, je nutné nejprve vytvořit cílový trh. Cílový trh je obvykle mapován na poštovní seznam vlastněných nebo pronajatých.
+-   **Zdrojové kódy** mohou společnosti, které poskytují tištěné katalogy, používat ke sledování odezvy odběratelů na konkrétní katalog. Zdrojové kódy se často tisknou na zadní straně katalogu a jsou zadány do prodejní objednávky, když zákazník uskuteční nákup. Zdrojový kód přidáte do katalogu tak, že nejprve vytvoříte cílový trh. Cílový trh je obvykle mapován na vlastní nebo pronajatý seznam poštovních adres.
 -   **Bezplatné produkty** jsou propagační položky, které jsou zahrnuty zdarma do objednávky odběratele při odkazování na tento katalog.
 -   **Skripty** lze použít při interakci pracovníka se zákazníky v kontextu katalogu nebo produktu v katalogu.
 

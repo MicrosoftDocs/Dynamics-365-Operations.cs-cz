@@ -1,6 +1,6 @@
 ---
 title: "Definice účtování"
-description: "Tento článek obsahuje příklady, které ukazují způsob použití definice účtování břemen nákupních objednávek a položek rozpočtu."
+description: "Tento článek obsahuje příklady, které ukazují způsob použití definice zaúčtování břemen nákupních objednávek a přidělení rozpočtu."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,12 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="posting-definition-examples"></a>Příklady účtování definice
+# <a name="posting-definition-examples"></a>Příklady definice účtování
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek obsahuje příklady, které ukazují způsob použití definice účtování břemen nákupních objednávek a položek rozpočtu.
+Tento článek obsahuje příklady, které ukazují způsob použití definice zaúčtování břemen nákupních objednávek a přidělení rozpočtu.
 
 než si přečtete obsah tohoto tématu, měli byste se seznámit s účtovacími definicemi a definicemi účtování transakcí. Informace naleznete v tématu [Definice účtování](posting-definitions.md). Následující příklady lze nastavit na stránce **Definice účtování**. Každý příklad obsahuje tyto oddíly:
 
@@ -42,7 +42,7 @@ než si přečtete obsah tohoto tématu, měli byste se seznámit s účtovacím
 
 Když dojde ke shodě mezi účty a hodnotami dimenze v podokně **Kritéria shody** pro definici účtování a účty a hodnoty dimenze v transakci, záznamy v hlavní knize jsou generovány na základě podokna **Vytvořené položky** pro definice účtování. 
 > [!NOTE]
-> Chcete-li přidružit definice účtování transakce určitého typu, použijte **definice účtování transakce** stránky. Po můžete přidružit definice účtování transakce typu a vyberte **použít definice účtování** na **parametry hlavní knihy** stránce, všechny transakce typu vybrané transakce musí použít definice účtování.
+> Pokud chcete přidružit definice účtování ke konkrétnímu typu transakce, použijte stránku **Definice účtování transakcí**. Po přidružení definice účtování k typu transakce a výběru možnost **Použít definice účtování** na stránce **Parametry hlavní knihy** musí všechny transakce vybraného typu používat definice účtování.
 
 ## <a name="example-purchase-order-encumbrances"></a>Příklad: břemeno nákupní objednávky
 Jestliže povolíte zpracování břemene výběrem možnosti **Povolit proces břemena** na stránce **Parametry hlavní knihy**, definice účtování musí být použity pro záznam břemen do hlavní knihy pro všechny účty, které budou rezervovány. Ve většině případů jsou rezervovány všechny účty nákladů v rozvaze. 
@@ -72,7 +72,7 @@ Hodnoty pro účty a dimenze pochází z rozúčtování zadaného pro řádek n
 
 | Účet + dimenze           | Má Dáti  | Kreditní | Komentář |
 |--------------------------------|--------|--------|---------|
-| 606400-OU\_1-OU\_školení 3566 | 250,00 |        |         |
+| 606400-OU\_1-OU\_3566-Training | 250.00 |        |         |
 
 ### <a name="ledger-entries-generated-from-the-posting-definition"></a>Položky hlavní knihy generované z definice účtování
 
@@ -80,10 +80,10 @@ Generované položky hlavní knihy se vytvářejí pro záznam břemen.
 
 | Účet + dimenze           | Má Dáti  | Kreditní | Komentář |
 |--------------------------------|--------|--------|---------|
-| 300143-OU\_1-OU\_školení 3566 | 250,00 |        |         |
-| 300144-OU\_1-OU\_školení 3566 |        | 250,00 |         |
+| 300143-OU\_1-OU\_3566-Training | 250.00 |        |         |
+| 300144-OU\_1-OU\_3566-Training |        | 250.00 |         |
 
-V tomto příkladu je jakékoli účet součástí účetní struktury – zisky a ztráty odpovídají kritériím definice účtování. Proto, když 606500-OU\_1-OU\_je vyhodnocena 3566 školení, vygenerované položky jsou vytvářeny pro účty, které jsou definovány v **vytvořené položky** podokno pro definici účtování.
+V tomto příkladu je jakékoli účet součástí účetní struktury – zisky a ztráty odpovídají kritériím definice účtování. Z toho vyplývá, při vyhodnocení 606500-OU\_1-OU\_3566-Training jsou generované položky vytvořeny pro účty, které jsou definovány v podokně **Generované položky** pro definici účtování.
 
 ## <a name="example-budget-appropriations"></a>Příklad: rozdělení rozpočtu
 Když povolíte rozdělení rozpočtu výběrem možnosti **Povolit rozdělení rozpočtu** na stránce **Parametry hlavní knihy**, je nutné použít definice účtování pro záznam položek registru rozpočtu do hlavní knihy. Když je konfigurace kontroly rozpočtu aktivní a zapnutá, definice účtování a definice účtování transakcí lze použít k podpoře záznamu položek pro odhady, revize, převody, projekty, dlouhodobý majetek a prognózy nabídky a poptávky v hlavní knize. 
@@ -113,7 +113,7 @@ Pokud jsou povoleny rozdělení příjmů rozpočtu a definice účtování, pol
 
 | Účet + dimenze           | Má Dáti | Kreditní | Komentář |
 |--------------------------------|-------|--------|---------|
-| 606400-OU\_1-OU\_školení 3566 |       | 250,00 |         |
+| 606400-OU\_1-OU\_3566-Training |       | 250.00 |         |
 
 ### <a name="ledger-entries-generated-from-the-posting-definition"></a>Položky hlavní knihy generované z definice účtování
 
@@ -121,10 +121,10 @@ Generované položky v hlavní knize se vytvoří pro záznam původního rozpo�
 
 | Účet + dimenze           | Má Dáti  | Kreditní | Komentář |
 |--------------------------------|--------|--------|---------|
-| 300145-OU\_1-OU\_školení 3566 |        | 250,00 |         |
-| 300146-OU\_1-OU\_školení 3566 | 250,00 |        |         |
+| 300145-OU\_1-OU\_3566-Training |        | 250.00 |         |
+| 300146-OU\_1-OU\_3566-Training | 250.00 |        |         |
 
-V tomto příkladu je jakékoli účet součástí účetní struktury – zisky a ztráty odpovídají kritériím definice účtování. Proto, když 606400-OU\_1-OU\_je vyhodnocena 3566 školení, vygenerované položky jsou vytvářeny.
+V tomto příkladu je jakékoli účet součástí účetní struktury – zisky a ztráty odpovídají kritériím definice účtování. Z toho vyplývá při vyhodnocení 606400-OU\_1-OU\_3566-Training se vytvoří generované položky hlavní knihy.
 
 
 

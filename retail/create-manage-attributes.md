@@ -1,6 +1,6 @@
 ---
 title: "Vytvoření a správa atributů"
-description: "Tento článek popisuje atributy v 365 Microsoft Dynamics pro operace. Atributy umožňují popis produktu a jeho charakteristik prostřednictvím uživatelem definovaných polí."
+description: "Tento článek popisuje atributy v aplikaci Microsoft Dynamics 365 for Operations. Atributy umožňují popis produktu a jeho charakteristik prostřednictvím uživatelem definovaných polí."
 author: josaw1
 manager: AnnBe
 ms.date: 2015-12-04 02 - 16 - 20
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-and-manage-attributes"></a>Vytvoření a správa atributů
 
-Tento článek popisuje atributy v 365 Microsoft Dynamics pro operace. Atributy umožňují popis produktu a jeho charakteristik prostřednictvím uživatelem definovaných polí.
+Tento článek popisuje atributy v aplikaci Microsoft Dynamics 365 for Operations. Atributy umožňují popis produktu a jeho charakteristik prostřednictvím uživatelem definovaných polí.
 
 Atributy umožňují popis produktu a jeho charakteristik prostřednictvím uživatelem definovaných polí. Například lze zadat velikost paměti produktu a kapacitu pevného disku a uvést, zda je produkt kompatibilní se standardem Energy Star. Atributy lze přidružit k různým maloobchodním entitám, jako jsou kategorie produktů a maloobchodní sítě, a lze jim nastavit výchozí hodnoty. Produkty dědí atributy a výchozí hodnoty pro tyto atributy při přidružení ke kategorii produktu nebo maloobchodní síti. Výchozí hodnoty lze přepsat na úrovni jednotlivých produktů na úrovni maloobchodní sítě nebo v maloobchodním katalogu.
 
@@ -50,7 +50,7 @@ Libovolná platná hodnota **Značka**
 
 Žádné
 
-TELEVIZE
+TV
 
 Velikost obrazovky
 
@@ -130,49 +130,49 @@ Záruka
 
 **12**
 
-\#Projekce trubek
+Počet trubic: \#
 
 **1**–**5**
 
 **3**
 
 ## <a name="attribute-type"></a>Typ atributu
-  [![atributy pevné kopie](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) atributy jsou založeny na typy atributů. Typy atributů určují typ dat, který lze zadat pro určitý atribut. V současné době 365 Microsoft Dynamics pro operace podporuje následující typy atributů:
+  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) Atributy jsou založeny na typech atributů. Typy atributů určují typ dat, který lze zadat pro určitý atribut. Aplikace Microsoft Dynamics 365 for Operations v současné době podporují následující typy atributů:
 
 -   **Měna** – tento typ atributu podporuje měnové hodnoty. Mohou být vázané (může tedy podporovat rozsah hodnot), nebo mohou být otevřené.
 -   **Datum a čas** – tento typ atributu podporuje hodnoty data a času. Mohou být vázané (může tedy podporovat rozsah hodnot), nebo mohou být otevřené.
 -   **Desetinné číslo** – tento typ atributu podporuje číselné hodnoty, které obsahují desetinná místa. Podporuje také měrné jednotky. Mohou být vázané (může tedy podporovat rozsah hodnot), nebo mohou být otevřené.
 -   **Celé číslo** – tento typ atributu podporuje číselné hodnoty. Podporuje také měrné jednotky. Mohou být vázané (může tedy podporovat rozsah hodnot), nebo mohou být otevřené.
 -   **Text** – tento typ atributu podporuje textové hodnoty. Podporuje také předdefinovanou sadu možných hodnot (výčtů).
--   **Logická** – tento typ atribut podporuje binární hodnoty (**true**/**false**).
+-   **Logická hodnota** – tento typ atributu podporuje binární hodnoty (**pravda**/**nepravda**).
 -   **Odkaz**.
 
 ## <a name="attribute"></a>Atribut
-  [![createandmanageattribute-8](./media/createandmanageattribute-8.png)](./media/createandmanageattribute-8.png) kromě název, popisný název, popis a text nápovědy, jeden nebo více z následujících typů informací lze zachytit atributu:
+  [![createandmanageattribute-8](./media/createandmanageattribute-8.png)](./media/createandmanageattribute-8.png) Kromě názvu, popisného názvu, popisu a textu nápovědy lze zaznamenat pro atribut jeden nebo více z následujících typů informací:
 
 -   Výchozí hodnota
 -   Metadata atributu, jako jsou například metadata, která určují, zda lze atributu vyhledávat, upřesňovat a řadit
 
 ## <a name="attribute-group"></a>Skupina atributů
-  [![createandmanageattribute-10](./media/createandmanageattribute-10.png)](./media/createandmanageattribute-10.png) poté, co byly definovány atributy mohou být seskupeny do skupiny atributů. Skupiny atributů poskytují seskupení jednotlivých atributů a mohou být přiřazeny kategoriím maloobchodu nebo maloobchodním sítím.
+  [![createandmanageattribute-10](./media/createandmanageattribute-10.png)](./media/createandmanageattribute-10.png) Po definování lze atributy seskupovat do skupin atributů. Skupiny atributů poskytují seskupení jednotlivých atributů a mohou být přiřazeny kategoriím maloobchodu nebo maloobchodním sítím.
 
 ## <a name="assigning-attribute-groups-to-retail-categories"></a>Přiřazení skupin atributů ke kategoriím maloobchodu
-  [![createandmanageattribute 12](./media/createandmanageattribute-12.png)](./media/createandmanageattribute-12.png) jednu nebo více skupin atributů lze přiřadit kategorie uzly v hierarchii kategorií produktů maloobchodu. Po zařazení produktů do kategorií, zdědí produkty atributy, které jsou zahrnuty ve skupinách atributů.
+  [![createandmanageattribute-12](./media/createandmanageattribute-12.png)](./media/createandmanageattribute-12.png) Jednu nebo více skupin atributů lze přiřadit k uzlům kategorií v hierarchii kategorií produktů maloobchodu. Po zařazení produktů do kategorií, zdědí produkty atributy, které jsou zahrnuty ve skupinách atributů.
 
 ## <a name="assigning-attribute-groups-to-retail-stores"></a>Přiřazení skupin atributů k maloobchodním prodejnám
-  [![createandmanageattribute-13-1024 x 576](./media/createandmanageattribute-13-1024x576.png)](./media/createandmanageattribute-13-1024x576.png) jednu nebo více skupin atributů mohou být přidruženy k jedné nebo více maloobchodních prodejen v hierarchii maloobchodní obchody. Po upravení produktů pro konkrétní maloobchodní prodejny, zdědí produkty atributy, které jsou zahrnuty ve skupinách atributů.
+  [![createandmanageattribute-13-1024x576](./media/createandmanageattribute-13-1024x576.png)](./media/createandmanageattribute-13-1024x576.png) Jednu nebo více skupin atributů lze přiřadit k jedné nebo více maloobchodním prodejnám v hierarchii maloobchodních prodejen. Po upravení produktů pro konkrétní maloobchodní prodejny, zdědí produkty atributy, které jsou zahrnuty ve skupinách atributů.
 
 ## <a name="overriding-attribute-values"></a>Přepsání hodnot atributů
 ### <a name="at-the-product-level"></a>Na úrovni produktu
 
-  [![createandmanageattribute-14-1024 x 576](./media/createandmanageattribute-14-1024x576.png)](./media/createandmanageattribute-14-1024x576.png) lze přepsat výchozí hodnoty atributů na úrovni produktu (který je pro jednotlivé produkty).
+  [![createandmanageattribute-14-1024x576](./media/createandmanageattribute-14-1024x576.png)](./media/createandmanageattribute-14-1024x576.png) Výchozí hodnoty atributů lze přepsat na úrovni produktu (tedy pro jednotlivé výrobky).
 
 ### <a name="in-a-retail-catalog"></a>V maloobchodním katalogu
 
-  [![createandmanageattribute-2](./media/createandmanageattribute-2.png)](./media/createandmanageattribute-2.png) výchozí hodnoty atributů mohou být potlačeny pro jednotlivé produkty v konkrétní katalogy, které jsou určené pro konkrétní maloobchodní sítě.
+  [![createandmanageattribute-2](./media/createandmanageattribute-2.png)](./media/createandmanageattribute-2.png) Výchozí hodnoty atributů lze přepsat pro jednotlivé produkty v určitých katalozích, které jsou určeny pro konkrétní maloobchodní sítě.
 
 ### <a name="at-the-retail-channel-level"></a>Na úrovni maloobchodní sítě
 
-  [![createandmanageattribute 1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) výchozí hodnoty atributů mohou být potlačeny pro jednotlivé produkty v konkrétní katalogy, které jsou určené pro konkrétní maloobchodní sítě.
+  [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) Výchozí hodnoty atributů lze přepsat pro jednotlivé produkty v určitých katalozích, které jsou určeny pro konkrétní maloobchodní sítě.
 
 

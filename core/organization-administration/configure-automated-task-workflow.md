@@ -1,5 +1,5 @@
 ---
-title: "Konfigurovat automatické úlohy pracovního postupu"
+title: "Konfigurace automatizované úlohy ve workflowu"
 description: "Toto téma vysvětluje, jak nakonfigurovat vlastnosti automatizovaného úkolu."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-an-automated-task-in-a-workflow"></a>Konfigurovat automatické úlohy pracovního postupu
+# <a name="configure-an-automated-task-in-a-workflow"></a>Konfigurace automatizované úlohy ve workflowu
 
 [!include[banner](../includes/banner.md)]
 
@@ -95,10 +95,10 @@ Lze odeslat oznámení uživatelům, kteří automatizovanou úlohu spustili neb
     </tr>
     <tr class="odd">
     <td>Uživatel</td>
-    <td>Zvláštní 365 Microsoft Dynamics pro operace uživatele</td>
+    <td>Konkrétní uživatelé aplikace Microsoft Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
-    <li><strong>k dispozici uživatelům</strong> seznam obsahuje všechny Dynamics 365 uživatelům operací. Vyberte uživatele, kterým chcete odeslat oznámení, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    <li>Seznam <strong>Dostupní uživatelé</strong>: obsahuje všechny uživatele aplikace Dynamics 365 for Operations. Vyberte uživatele, kterým chcete odeslat oznámení, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
     </ol></td>
     </tr>
     </tbody>

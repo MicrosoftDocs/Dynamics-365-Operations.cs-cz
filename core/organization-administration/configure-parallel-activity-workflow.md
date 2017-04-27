@@ -1,5 +1,5 @@
 ---
-title: "Konfigurovat paralelní aktivity v pracovním postupu"
+title: "Konfigurace paralelních aktivit ve workflowu"
 description: "Pokud chcete nakonfigurovat paralelní aktivitu, postupujte následovně v editoru workflowu."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-parallel-activity-in-a-workflow"></a>Konfigurovat paralelní aktivity v pracovním postupu
+# <a name="configure-a-parallel-activity-in-a-workflow"></a>Konfigurace paralelních aktivit ve workflowu
 
 Pokud chcete nakonfigurovat paralelní aktivitu, postupujte následovně v editoru workflowu.
 
@@ -32,7 +32,7 @@ Paralelní aktivita je tvořena větvemi workflowu, které běží ve stejnou do
 
 ## <a name="name-a-parallel-activity"></a>Pojmenování paralelní aktivity
 Pomocí následujících kroků zadejte název paralelní aktivity.
-1.  Paralelní aktivity klepněte pravým tlačítkem myši a potom klepněte na tlačítko **vlastnosti** otevřete **vlastnosti** formulář.
+1.  Klikněte pravým tlačítkem na paralelní aktivitu a poté klikněte na tlačítko **Vlastnosti** k otevření formuláře **Vlastnosti**.
 2.  V levém podokně klepněte na tlačítko **Základní nastavení**.
 3.  V poli **Název** zadejte jedinečný název paralelní aktivity.
 4.  Klepněte na tlačítko **Zavřít**.

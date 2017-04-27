@@ -102,7 +102,7 @@ Existují dva způsoby, jak lze naplánovat opakované vytvoření cyklické inv
 
 ### <a name="create-cycle-counting-work-based-on-threshold-parameters-for-items"></a>Vytvoření cyklické inventury na základě parametrů prahové hodnoty pro položky
 
-Cyklickou inventuru lze vytvořit, pokud počet položek klesne pod určitou prahovou hodnotu pro dané umístění. V umístění, které má periodickou práh 40 jsou například 60 položek. Během transakce prodejní objednávky jsou 25 položek vyskladněno z umístění a umístěte na pracovní místo. Nový počet položek je o 35 menší, než jaká je prahová hodnota množství, a pro skladové místo je tak automaticky vytvořena cyklická inventura.
+Cyklickou inventuru lze vytvořit, pokud počet položek klesne pod určitou prahovou hodnotu pro dané umístění. Například existuje 60 položek na skladovém místě, které má prahovou hodnotu cyklické inventury 40. Během transakce prodejní objednávky je 25 položek vyskladněno ze skladového místa a umístěno do přechodného skladového místa. Nový počet položek je o 35 menší, než jaká je prahová hodnota množství, a pro skladové místo je tak automaticky vytvořena cyklická inventura.
 
 ### <a name="schedule-cycle-counting-work"></a>Plánování cyklické inventury
 
@@ -129,7 +129,7 @@ Následující postup je uveden jako příklad způsobu provedení místní cykl
 ## <a name="resolve-cycle-counting-differences"></a>Řešení rozdílů v cyklické inventuře
 K rozdílům v cyklické inventuře dojde, pokud nastavíte možnost **Je supervizorem cyklické inventury** na **Ne** pro ID pracovního uživatele v těchto případech:
 
--   Hodnota cyklické inventury není v mezích odchylky uvedených v poli **Maximální limit procent** nebo **Maximální limit množství** na stránce **Uživatelé práce**. Například množství na skladě v umístění je 50 a maximální odchylka práce uživatele je 10. Pokud práce uživatel zadá hodnotu, která není mezi 40 a 60, dojde k rozdílu.
+-   Hodnota cyklické inventury není v mezích odchylky uvedených v poli **Maximální limit procent** nebo **Maximální limit množství** na stránce **Uživatelé práce**. Například množství na skladě ve skladovém místě je 50 a limit odchylky uživatele práce je 10. Pokud uživatel práce zadá hodnotu, která není mezi 40 a 60, dojde k rozdílu.
 -   Hodnota inventury se liší od množství zásob na skladě a není nastavena mezní odchylka.
 
 Můžete upravit rozdíly ve vypočítané hodnotě, a poté potvrdit vypočítanou hodnotu na stránce **Cyklická inventura čeká na kontrolu**. Upravený počet položek lze ověřit na stránce **Množství na skladě podle skladového místa**. Hodnota inventury bude odmítnuta, pokud rozdíl nelze schválit.

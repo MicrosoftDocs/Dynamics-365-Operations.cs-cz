@@ -1,5 +1,5 @@
 ---
-title: "Kalkulace Kusovníku s standardní náklady"
+title: "Výpočty kusovníků se standardními náklady"
 description: 
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bom-calculations-with-standard-costs"></a>Kalkulace Kusovníku s standardní náklady
+# <a name="bom-calculations-with-standard-costs"></a>Výpočty kusovníků se standardními náklady
 
 [!include[banner](../includes/banner.md)]
 

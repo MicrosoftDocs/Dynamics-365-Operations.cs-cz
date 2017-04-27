@@ -1,5 +1,5 @@
 ---
-title: "V pracovním postupu konfigurovat proces schvalování"
+title: "Konfigurace schvalovacího procesu ve workflowu"
 description: "Pomocí následujícího postupu nakonfigurujte vlastnosti schvalovacího procesu."
 author: sericks007
 manager: AnnBe
@@ -24,11 +24,11 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-an-approval-process-in-a-workflow"></a>V pracovním postupu konfigurovat proces schvalování
+# <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurace schvalovacího procesu ve workflowu
 
 Pomocí následujícího postupu nakonfigurujte vlastnosti schvalovacího procesu.
 
-Schvalovací proces konfigurace v editoru pracovního postupu, klepněte pravým tlačítkem myši prvek schválení a pak klepněte na tlačítko **vlastnosti** otevřete **vlastnosti** formulář.
+Pokud budete chtít nakonfigurovat schvalovací proces, v editoru workflowu klikněte pravým tlačítkem myši na prvek schválení a kliknutím na tlačítko **Vlastnosti** otevřete formulář **Vlastnosti**.
 Pojmenování schvalovacího procesu
 -------------------------
 
@@ -40,14 +40,14 @@ Pomocí následujících kroků zadejte název schvalovacího procesu.
 Můžete nakonfigurovat systém tak, aby automaticky zpracoval dokument, pokud jsou splněny určité podmínky. Systém může například schvalovat vyúčtování výdajů, která mají celkové částky nižší než 100 USD. Pomocí tohoto postupu určete podmínky, za kterých má systém u dokumentu provést akci.
 1.  V levém podokně klepněte na tlačítko **Automatické akce**.
 2.  Označte pole **Povolit automatické akce**.
-3.  Click **Add condition**.
+3.  Klikněte na možnost **Přidat podmínku**.
 4.  Zadání podmínky
 5.  V případě potřeby zadejte další podmínky.
 6.  Chcete-li ověřit, zda jsou zadané podmínky nastaveny správně, postupujte následovně:
     1.  Klepnutím na tlačítko **Test** otevřete formulář **Podmínka testovacího workflowu**.
     2.  Vyberte v oblasti **Ověřit podmínku** formuláře záznam.
     3.  Klepněte na možnost **Test**. Systém záznam vyhodnotí a určí, zda odpovídá zadaným podmínkám.
-    4.  Klepněte na tlačítko **OK** nebo **zrušení** se vraťte **vlastnosti** formulář.
+    4.  Kliknutím na tlačítko **OK** nebo **Zrušit** se vraťte do formuláře **Vlastnosti**.
 
 7.  V seznamu **Akce automatického dokončení** vyberte akci, která má být u dokumentu provedena.
 
@@ -55,11 +55,11 @@ Můžete nakonfigurovat systém tak, aby automaticky zpracoval dokument, pokud j
 Při schválení, zamítnutí, delegování nebo eskalování dokumentu nebo při zadání požadavku na změnu můžete zaslat oznámení určeným osobám. Podle těchto kroků můžete určit oznámení, které se odešle, a osoby, kterým se odešle.
 1.  V levém podokně klikněte na **Oznámení**.
 2.  Označte pole vedle událostí, při kterých se oznámení odešle:
-    -   **Delegát** – když byl přiřazen jinému uživateli pro schválení dokumentu.
-    -   **Eskalovat** – při přiřazený uživatel nerozhodne na dokumentu v přiděleném čase.
-    -   **Schválení** – po schválení dokumentu.
-    -   **Odmítnout** – při dokument byl odmítnut.
-    -   **Požadavek na změnu** – při přiřazený uživatel požadoval změny dokumentu, který byl odeslán.
+    -   **Delegování** – přiřazení dokumentu jinému uživateli ke schválení.
+    -   **Eskalace** – přiřazený uživatel nereagoval na dokument v přiděleném čase.
+    -   **Schválení** – schválení dokumentu.
+    -   **Zamítnutí** – zamítnutí dokumentu.
+    -   **Požadavek na změnu** – přidělený uživatel požaduje změnu odeslaného dokumentu.
 
 3.  Vyberte řádek pro událost, kterou jste vybrali v kroku 2.
 4.  Klepněte na kartu **Text oznámení**.
@@ -70,8 +70,8 @@ Při schválení, zamítnutí, delegování nebo eskalování dokumentu nebo př
     3.  V seznamu, který se zobrazí, vyberte vkládaný zástupný text.
     4.  Klepněte na tlačítko **Vložit**.
 
-7.  Přidat překlady oznámení, klepněte na tlačítko **překlady**. Ve formuláři, který se zobrazí, postupujte takto:
-    1.  Click **Add**.
+7.  Chcete-li přidat překlady oznámení, klikněte na **Překlady**. Ve formuláři, který se zobrazí, postupujte takto:
+    1.  Klikněte na tlačítko **Přidat**.
     2.  V otevřeném seznamu vyberte jazyk, který chcete použít pro zadání textu.
     3.  V textovém poli **Přeložený text** zadejte text.
     4.  Text můžete přizpůsobit vložením zástupného textu.
@@ -112,11 +112,11 @@ Při schválení, zamítnutí, delegování nebo eskalování dokumentu nebo př
     </ol></td>
     </tr>
     <tr class="odd">
-    <td><strong>User</strong></td>
-    <td>Zvláštní 365 Microsoft Dynamics pro operace uživatele</td>
+    <td><strong>Uživatel</strong></td>
+    <td>Konkrétní uživatelé aplikace Microsoft Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
-    <li><strong>k dispozici uživatelům</strong>: seznam obsahuje všechna 365 Microsoft Dynamics pro uživatele operací. Vyberte uživatele, kterým chcete odeslat oznámení, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>:.</li>
+    <li>Seznam <strong>Dostupní uživatelé</strong>: obsahuje všechny uživatele aplikace Microsoft Dynamics 365 for Operations. Vyberte uživatele, kterým chcete odeslat oznámení, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>:.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -150,10 +150,10 @@ Tento postup použijte, pokud je proces schvalování nutné dokončit v určit�
 ## <a name="specify-which-actions-are-available-to-the-user"></a>Určení dostupných akcí pro uživatele
 Po přidělení dokumentu uživateli ke schválení musí uživatel daný dokument zpracovat. Pomocí tohoto postupu určete akce, které může uživatel u odeslaného dokumentu provádět.
 1.  V levém podokně klepněte na tlačítko **Pokročilá nastavení**.
-2.  Vyberte **schválit** políčko Pokud se uživatel může schválit dokument.
-3.  Vyberte **odmítnout** políčko uživatel může odmítnout dokument.
-4.  Vyberte **požadavek na změnu** políčko uživatel může požádat o změny v dokumentu.
-5.  Vyberte **delegáta** políčko Pokud uživatel přiřadit jinému uživateli pro schválení dokumentu.
+2.  Chcete-li uživatelům umožnit schválení dokumentu, zaškrtněte políčko **Schválit**.
+3.  Chcete-li uživatelům zamítnout schválení dokumentu, zaškrtněte políčko **Zamítnout**.
+4.  Chcete-li uživatelům umožnit vyžádání změn v dokumentu, zaškrtněte políčko **Požadavek na změnu**.
+5.  Chcete-li uživateli umožnit, aby úlohu postoupil jinému uživateli ke schválení, zaškrtněte políčko **Delegovat**.
 
 **Poznámka**: Políčko **Povolit akce z pracovního seznamu v podnikovém portálu ** se již nepoužívá.
 

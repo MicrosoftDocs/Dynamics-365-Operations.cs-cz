@@ -93,7 +93,7 @@ Odpisy jsou podhodnoceny o 16,95 (983,62 - 966,67).
 <a name="see-also"></a>Viz také
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation.md)
+[Odpisy dlouhodobého majetku](fixed-asset-depreciation.md)
 
 
 

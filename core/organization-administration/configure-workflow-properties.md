@@ -150,10 +150,10 @@ Když je dokument odeslán ke zpracování, je vytvořena instance workflowu. U�
     </tr>
     <tr class="odd">
     <td>Uživatel</td>
-    <td>Zvláštní Dynamics 365 uživatelům operací</td>
+    <td>Konkrétní uživatelé aplikace Dynamics 365 for Operations</td>
     <td><ol>
     <li>Na kartě <strong>Příjemce</strong> klepněte na možnost <strong>Uživatel</strong>.</li>
-    <li>Na <strong>uživatel</strong> kartu, <strong>k dispozici uživatelům</strong> seznam obsahuje všechny Dynamics 365 uživatelům operací. Vyberte uživatele, kterým chcete odeslat oznámení, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    <li>Na kartě <strong>Uživatel</strong> obsahuje seznam <strong>Dostupní uživatelé</strong> všechny uživatele aplikace Dynamics 365 for Operations. Vyberte uživatele, kterým chcete odeslat oznámení, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
     </ol></td>
     </tr>
     </tbody>

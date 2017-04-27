@@ -1,6 +1,6 @@
 ---
 title: "Kde začít"
-description: "Začněte zde na základní desce rychle a informace 365 Microsoft Dynamics pro operace uživatelského rozhraní."
+description: "Zde můžete rychle začít a učit se pracovat s aplikací Microsoft Dynamics 365 for Operations UI."
 eauthor: sericks007
 manager: AnnBe
 ms.date: 2015-12-11 15 - 19 - 40
@@ -28,42 +28,42 @@ ms.lasthandoff: 03/30/2017
 
 # <a name="where-to-start"></a>Kde začít
 
-Začněte zde na základní desce rychle a informace 365 Microsoft Dynamics pro operace uživatelského rozhraní.
+Zde můžete rychle začít a učit se pracovat s aplikací Microsoft Dynamics 365 for Operations UI.
 
-## <a name="onboarding"></a>Nově příchozího
-Následující zdroje obsahují přehled jak pracovat s partnerem Chcete-li získat onboarded do Dynamics 365 pro operace a použití Dynamics 365 pro operace služby životního cyklu. 
+## <a name="onboarding"></a>Nábor
+Následující zdroje poskytují přehled o tom, jak pracovat s partnerem při zahájení práce s aplikací Dynamics 365 for Operations a jak používat službu Dynamics 365 for Operations Lifecycle Services. 
 
-- [FastTrack Microsoft Dynamics 365 přehled](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
-- [Sign up for a subscription](../dev-tools/sign-up-preview-subscription.md) 
-- [Služby životního cyklu (LCS) pro 365 Microsoft Dynamics pro zákazníky operace](../lifecycle-services/lcs-works-lcs.md) 
-- [Jak zákazníci, kteří zakoupili 365 Microsoft Dynamics pro operace prostřednictvím poskytovatele služeb Cloud získat místní verzi Dynamics 365 pro operace 2012](../deployment/csp-download-customersource.md)
+- [Microsoft FastTrack for Dynamics 365 – přehled](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
+- [Registrace předplatného](../dev-tools/sign-up-preview-subscription.md) 
+- [Lifecycle Services (LCS) pro zákazníky Microsoft Dynamics 365 for Operations](../lifecycle-services/lcs-works-lcs.md) 
+- [Jak mohou zákazníci, kteří si zakoupili Microsoft Dynamics 365 for Operations prostřednictvím poskytovatele cloudových služeb, získat místní verzi aplikace Dynamics 365 for Operations 2012](../deployment/csp-download-customersource.md)
 
 ## <a name="user-interface"></a>Uživatelské rozhraní
-Následující zdroje obsahují informace o 365 Dynamics pro operace uživatelského rozhraní. 
--   [Co je nového v Dynamics 365 pro operace uživatelského rozhraní (Office Mix)](https://mix.office.com/watch/1ohsrrpsd02e1)
+Následující zdroje poskytují informace o prostředí uživatele aplikace Dynamics 365 for Operations. 
+-   [Co je nového v uživatelském prostřední aplikace Dynamics 365 for Operations (Office Mix)](https://mix.office.com/watch/1ohsrrpsd02e1)
 -   [Individuální nastavení prostředí uživatele](/dynamics365/operations/get-started/personalize-user-experience)
 -   [Konfigurace a filtrování pracovních prostorů](/dynamics365/operations/get-started/configure-filter-workspaces)
--   [Navigation search](/dynamics365/operations/get-started/navigation-search)
+-   [Hledání za účelem navigace](/dynamics365/operations/get-started/navigation-search)
 -   [Hledání akce](/dynamics365/operations/get-started/action-search)
--   [Keyboard shortcuts](/dynamics365/operations/get-started/shortcut-keys)
--   [Display pages side-by-side using the Open in New Window icon](/dynamics365/operations/get-started/display-pages-side-by-side)
--   [Advanced filtering and query options](/dynamics365/operations/get-started/advanced-filtering-query-options)
--   [Dynamics 365 pro operace klienta, nejčastější dotazy](/dynamics365/operations/get-started/client-faq)
--   [Change the banner or logo (Task guide)](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/)
+-   [Klávesové zkratky](/dynamics365/operations/get-started/shortcut-keys)
+-   [Zobrazení stránek-souběžně pomocí ikony Otevřít v novém okně](/dynamics365/operations/get-started/display-pages-side-by-side)
+-   [Možnosti pokročilého filtrování a dotazů](/dynamics365/operations/get-started/advanced-filtering-query-options)
+-   [Klient aplikace Dynamics 365 for Operations - často kladené dotazy](/dynamics365/operations/get-started/client-faq)
+-   [Změna nápisu nebo loga (Průvodce záznamem úloh)](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/)
 
 ## <a name="help-system"></a>Systém nápovědy
 Následující zdroje poskytují přehled o systému nápovědy společně s pokyny k zobrazení popisů polí.
 
--   [Getting started with Help](help-overview.md)
--   [Connect the Help system](help-connect.md)
+-   [Začínáme s nápovědou](help-overview.md)
+-   [Připojení k systému nápovědy](help-connect.md)
 -   [Postup zobrazení a popisu polí exportu](/dynamics365/operations/get-started/view-export-field-descriptions)
--   [Nápovědy Dynamics 365 pro operace systému (skutečnost listů)](https://mbs.microsoft.com/customersource/Global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
+-   [Systém nápovědy pro Dynamics 365 for Operations (seznam faktů ke stažení)](https://mbs.microsoft.com/customersource/Global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 
-### <a name="task-recordings-and-task-guides"></a>Záznamy úloh a úloh vodítka
+### <a name="task-recordings-and-task-guides"></a>Záznamy úkolů a průvodci úkolem
 
-Záznamník úkolů je Dynamics 365 pro operace nástroj, který slouží k záznamu akcí, které provádíte v uživatelském rozhraní (UI). Při vytváření *záznamu úkolu* jsou všechny události, které jsou prováděny se serverem, zaznamenány při jejich provádění v uživatelském rozhraní. Tyto události zahrnují přidání hodnot, změnu nastavení a odebrání dat. *Průvodce úkolem* je kontrolovaný, řízený a interaktivní způsob, který vás provede kroky záznamu úkolu. Průvodce úkolem lze otevřít (nebo *přehrát*) ze systému nápovědy.
+Záznamník úkolů je nástroj aplikace Dynamics 365 for Operations, který umožňuje zaznamenat akce prováděné v uživatelském rozhraní. Při vytváření *záznamu úkolu* jsou všechny události, které jsou prováděny se serverem, zaznamenány při jejich provádění v uživatelském rozhraní. Tyto události zahrnují přidání hodnot, změnu nastavení a odebrání dat. *Průvodce úkolem* je kontrolovaný, řízený a interaktivní způsob, který vás provede kroky záznamu úkolu. Průvodce úkolem lze otevřít (nebo *přehrát*) ze systému nápovědy.
 -   [Připojení systému nápovědy](help-connect.md)
--   [Záznamník úkolů v Dynamics 365 pro operace](../user-interface/task-recorder.md)
+-   [Záznamník úkolů v Dynamics 365 for Operations](../user-interface/task-recorder.md)
 -   [Vytváření dokumentace nebo školení pomocí záznamu úkolů](../user-interface/task-recorder.md)
 -   [Nový průvodce úkolem je k dispozici (únor 2016)](new-task-guides-available-february-2016.md)
 
@@ -71,12 +71,12 @@ Záznamník úkolů je Dynamics 365 pro operace nástroj, který slouží k záz
 <a name="see-also"></a>Viz také
 --------
 
-[Vytvoření nové knihovny školení pro Dynamics 365 pro operace v rámci poskytování služeb pomocí Záznamníku úkolů (externí odkaz)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
+[Vytvoření nových knihoven pro školení pro aplikaci Dynamics 365 for Operations v rámci služby Lifecycle Services pomocí Záznamníku úloh (externí odkaz)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
-[Nový úkol provede (únor 2016)](new-task-guides-available-february-2016.md)
+[Noví průvodci úkolem (únor 2016)](new-task-guides-available-february-2016.md)
 
-[Nové nebo aktualizované úkoly provede (květen 2016)](new-updated-task-guides-available-may-2016.md)
+[Noví nebo aktualizovaní průvodci úkolem (květen 2016)](new-updated-task-guides-available-may-2016.md)
 
-[Nové nebo aktualizované úkoly provede (listopad 2016)](new-task-guides-november-2016.md)
+[Noví nebo aktualizovaní dostupní průvodci úkolem (listopad 2016)](new-task-guides-november-2016.md)
 
 

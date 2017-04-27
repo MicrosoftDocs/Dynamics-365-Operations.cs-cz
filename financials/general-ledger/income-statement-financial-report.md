@@ -1,6 +1,6 @@
 ---
 title: "Finanční sestava výkazu příjmu"
-description: "Tento článek popisuje výchozí sestavy pro výkazy příjmů. Popisuje také stavební bloky, které jsou přidruženy k této sestavě."
+description: "Tento článek popisuje výchozí sestavu pro výsledovky. Popisuje také stavební bloky, které jsou přidruženy k této sestavě."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje výchozí sestavy pro výkazy příjmů. Popisuje také stavební bloky, které jsou přidruženy k této sestavě. 
+Tento článek popisuje výchozí sestavu pro výsledovky. Popisuje také stavební bloky, které jsou přidruženy k této sestavě. 
 
 <a name="default-income-statement-report"></a>Výchozí sestava výkazu příjmu
 -------------------------------
@@ -64,11 +64,11 @@ Definice sloupců obsahují různé typy sloupců, které poskytují různé úr
 <a name="see-also"></a>Viz také
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Finanční výkaznictví](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Zobrazit finanční sestavy](view-financial-reports.md)
 
-[Finanční vykazování blogu Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Blog o finančním výkaznictví v Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

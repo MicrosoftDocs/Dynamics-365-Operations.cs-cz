@@ -42,7 +42,7 @@ Každá fyzická položka musí mít odpovídající položku výpůjčky. Každ
 
 Při zapůjčení položky zadejte datum zapůjčení a plánované datum vrácení. Při vrácení položky zadejte skutečné datum vrácení.
 
-Zaměstnancům můžete zobrazit záznamy o zboží, které je pomocí pracovního prostoru samoobslužných stránek zaměstnanců byl vypůjčen. Můžete také upravit existující záznamy nebo zadávání nových položek výpůjčky, když jste obdrželi další fyzické položky.  Pracovní postup můžete nastavit změny trasy, půjčky na nové nebo existující položky pomocí schvalovacího procesu. 
+Zaměstnanci si mohou prohlížet záznamy položek, které mají vypůjčeny z pracovního prostoru Samoobsluha pro zaměstnance. Mohou také upravit existující záznamy nebo zadat nové položky výpůjčky, pokud obdrželi další fyzické položky.  Pracovní postup je možné nastavit tak, aby směroval změny do nových nebo existujících položek pomocí schvalovacího procesu. 
 
 Manažeři si mohou zobrazit položky zapůjčené jejich přímým podřízeným. Také mohou mít oprávnění k přidání nových položek výpůjčky jménem svých zaměstnanců.
 
@@ -55,7 +55,7 @@ Pokud došlo ke ztrátě nebo poškození položky, vložte záznam o fiktivním
 <a name="see-also"></a>Viz také
 --------
 
-[Human resources](index.md)
+[Lidské zdroje](index.md)
 
 
 

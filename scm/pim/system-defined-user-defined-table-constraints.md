@@ -1,6 +1,6 @@
 ---
 title: "Omezení tabulek definovaná uživatelem nebo systémem"
-description: "Tento článek popisuje dva typy omezení tabulky pro komponenty v konfiguraci modelu výrobku - definované uživatelem a systémem definované. Omezení tabulky představují matice povolených kombinací atributů, kde každý řádek určuje jednu sadu možných hodnot atributů."
+description: "Tento článek popisuje dva typy omezení tabulky pro komponenty v modelu konfigurace produktu - definované uživatelem a systémem. Omezení tabulky představují matice povolených kombinací atributů, kde každý řádek určuje jednu sadu možných hodnot atributů."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje dva typy omezení tabulky pro komponenty v konfiguraci modelu výrobku - definované uživatelem a systémem definované. Omezení tabulky představují matice povolených kombinací atributů, kde každý řádek určuje jednu sadu možných hodnot atributů.
+Tento článek popisuje dva typy omezení tabulky pro komponenty v modelu konfigurace produktu - definované uživatelem a systémem. Omezení tabulky představují matice povolených kombinací atributů, kde každý řádek určuje jednu sadu možných hodnot atributů.
 
 Omezení tabulek představují matice kombinací atributů, které jsou povoleny pro komponenty v modelu konfigurace produktu. Každý řádek v tabulce definuje jednu sadu možných hodnoty atributů. V modelu konfigurace produktu můžete deklarovat dva typy omezení:
 
@@ -60,7 +60,7 @@ Omezení tabulky definované systémem vytvoří dynamické mapování mezi type
 
 Při vytváření omezení tabulky definovaného systémem vyberte tabulku, volitelně můžete definovat dotaz a potom můžete přidružit typy atributů k polím ve vybrané tabulce. Typy polí musí odpovídat typům atributů.  
 
-Se projeví omezení tabulky lze v modelu konfigurace produktu, musí být součástí omezení na jednu z komponent modelu omezení tabulky. Postup je vytvořit nové omezení, vyberte typ omezení tabulky a potom vyberte použít definice omezení tabulky. Nakonec je nutno všechna pole v omezení tabulky namapovat na atributy v modelu konfigurace produktu.
+Aby mohlo mít omezení tabulky vliv na model konfigurace produktu, je nutno zahrnout omezení tabulky do omezení v jedné z komponent modelu. Je třeba vytvořit nové omezení, vybrat typ omezení tabulky a poté vybrat definici omezení tabulky, kterou chcete použít. Nakonec je nutno všechna pole v omezení tabulky namapovat na atributy v modelu konfigurace produktu.
 
 <a name="see-also"></a>Viz také
 --------

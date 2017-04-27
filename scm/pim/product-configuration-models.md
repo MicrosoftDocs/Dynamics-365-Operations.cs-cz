@@ -1,6 +1,6 @@
 ---
-title: "Přehled modely konfigurace produktu"
-description: "Tento článek definuje termíny a pojmy, které jsou relevantní pro modely konfigurace produktu. Modely konfigurace produktu umožňují vytvořit strukturu obecný produkt, který lze použít ke konfiguraci mnoha variant produktu pro jeden produkt."
+title: "Přehled modelů konfigurace produktu"
+description: "Tento článek definuje termíny a pojmy, které jsou relevantní pro modely konfigurace produktu. Modely konfigurace produktu umožňují vytvořit obecnou strukturu produktu, kterou lze použít ke konfiguraci mnoha variant produktu pro jeden produkt."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2015-09-11 14 - 38 - 47
@@ -26,9 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="product-configuration-models-overview"></a>Přehled modely konfigurace produktu
+# <a name="product-configuration-models-overview"></a>Přehled modelů konfigurace produktu
 
-Tento článek definuje termíny a pojmy, které jsou relevantní pro modely konfigurace produktu. Modely konfigurace produktu umožňují vytvořit strukturu obecný produkt, který lze použít ke konfiguraci mnoha variant produktu pro jeden produkt.
+Tento článek definuje termíny a pojmy, které jsou relevantní pro modely konfigurace produktu. Modely konfigurace produktu umožňují vytvořit obecnou strukturu produktu, kterou lze použít ke konfiguraci mnoha variant produktu pro jeden produkt.
 
 Modely konfigurace produktu slouží pro reprezentaci obecné struktury produktů. Po nastavení modelu konfigurace produktu můžete nakonfigurovat jedinečnou variantu produktu s jedinečným kusovníkem (BOM) a jedinečným postupem. Modely konfigurace produktu využívají ke zpracování vztahů a omezení mezi různými variantami produktu jak deklarativní omezení, tak i příkazové výpočty . Je možné konfigurovat položky na prodejních objednávkách, prodejních nabídkách, nákupních objednávkách a výrobních zakázkách. V následující tabulce jsou termíny a koncepty popsány na základě omezení.
 <table>
@@ -69,16 +69,16 @@ Můžete také určit podmínky pro atributy. Pokud je podmínka splněna, musí
 <li><strong>Text</strong> s pevným seznamem možností nebo bez něj</li>
 <li><strong>Logická hodnota</strong></li>
 </ul>
-Pokud je typ atributu <strong>Logická hodnota</strong>, <strong>Celé číslo</strong> s rozsahem nebo <strong>Text</strong> s pevným seznamem, bude při nastavování konfigurace modelu produktu k dispozici množina hodnot. <strong>Poznámka:</strong> Řešitele konfigurace produktu rozeznává následující typy atributů: <strong>Boolean</strong>, <strong>textu</strong> s pevným seznamem a <strong>celé</strong> s rozsahem. Proto lze v omezeních a podmínkách výrazů použít pouze tyto typy atributů.</td>
+Pokud je typ atributu <strong>Logická hodnota</strong>, <strong>Celé číslo</strong> s rozsahem nebo <strong>Text</strong> s pevným seznamem, bude při nastavování konfigurace modelu produktu k dispozici množina hodnot. <strong>Poznámka:</strong> Řešitel konfigurace produktu rozpoznává pouze tyto typy atributů: <strong>Logická hodnota</strong>, <strong>Text</strong> s pevným seznamem a <strong>Celé číslo</strong> s rozsahem. Proto lze v omezeních a podmínkách výrazů použít pouze tyto typy atributů.</td>
 </tr>
 <tr class="even">
 <td>Omezení</td>
 <td>Omezení popisují limity konfigurace modelu produktu. Omezení slouží k zajištění toho, aby byly při konfiguraci produktu vybrány pouze platné hodnoty. Omezení může být omezení výrazů nebo omezení tabulek:
 <ul>
 <li>Omezení výrazů mohou být použita pouze pro komponentu, se kterou jsou svázány. Omezení výrazů pro komponentu se může odkazovat na atributy dílčích komponent dané komponenty. Řešitel konfigurace produktu slouží k vyřešení omezení. Při psaní omezení je třeba dodržovat syntaxi tohoto řešitele. Další informace naleznete na wiki stránce věnované omezením výrazu a omezením tabulky.</li>
-<li>Omezení tabulky musí být definovány předtím, než je možné použít pro komponentu v modelu konfigurace produktu. Omezení tabulky mohou být definované uživatelem nebo systémem definované. Uživatelem definované omezení tabulky je typ matice, kterou lze použít k popisu sady kombinací hodnot atributů, které jsou definovány pomocí typů atributů. Například v případě výroby reproduktorů může matice pro uživatelem definované omezení tabulky obsahovat sloupce pro povrch a mřížku reproduktorů.</li>
+<li>Omezení tabulky musí být definována předtím, než je možné použít pro komponentu v modelu konfigurace produktu. Omezení tabulek mohou být definovaná uživatelem nebo systémem. Uživatelem definované omezení tabulky je typ matice, kterou lze použít k popisu sady kombinací hodnot atributů, které jsou definovány pomocí typů atributů. Například v případě výroby reproduktorů může matice pro uživatelem definované omezení tabulky obsahovat sloupce pro povrch a mřížku reproduktorů.</li>
 </ul>
-<strong>Příklad:</strong> Reproduktory jsou k dispozici se čtyřmi různými povrchy: černý, dub, palisandr nebo bílý. Reproduktory může mít jednu ze tří předních mřížek: černá, kov nebo bílá. Je k dispozici pro všechny grily černým krytem, ale ostatní materiály povrchové úpravy jsou omezeny na konkrétní mřížky. V následující tabulce je ukázka informace, které se zobrazí na kartě <strong>Povolené kombinace</strong> na stránce <strong>Upravit omezení tabulky</strong>.
+<strong>Příklad:</strong> Reproduktory jsou k dispozici se čtyřmi různými povrchy: černý, dub, palisandr nebo bílý. Reproduktory mohou mít jednu ze tří předních mřížek: černá, kov nebo bílá. Černé provedení je k dispozici pro všechny mřížky, ale ostatní materiály povrchové úpravy jsou omezeny na konkrétní mřížky. V následující tabulce je ukázka informace, které se zobrazí na kartě <strong>Povolené kombinace</strong> na stránce <strong>Upravit omezení tabulky</strong>.
 <table>
 <thead>
 <tr class="header">
@@ -117,11 +117,11 @@ Pokud je typ atributu <strong>Logická hodnota</strong>, <strong>Celé číslo</
 </tr>
 </tbody>
 </table>
-Omezení definované systémem tabulka představuje mapování mezi atributu typu a pole v Dynamics 365 operace tabulky. Omezení definované systémem tabulka propojuje typ atributu do pole. Propojení umožňuje atribut v modelu konfigurace produktu zobrazující data pole v 365 Dynamics pro operace tabulky.</td>
+Systémem definované omezení tabulek představuje mapování mezi typem atributu a polem v tabulce aplikace Microsoft Dynamics 365 for Operations. Omezení tabulky definované systémem dynamicky propojuje typ atributu s polem. Propojení umožňuje, aby atribut v modelu konfigurace produktu odrážel data v poli pro tabulku Dynamics 365 for Operations.</td>
 </tr>
 <tr class="odd">
 <td>Výpočty</td>
-<td>Výpočty představují doplněk k omezení. Výpočet můžete použít k provádění aritmetických operací na atributy <strong>desítkové</strong> a <strong>celé</strong> typy nebo logických operací, které zahrnují atributů <strong>textu</strong> s pevným seznamem a <strong>Boolean</strong> typy. Výpočet má cílový atribut, do kterého bude zapsán výsledek výpočetního výrazu. Výpočetní výraz se vytváří pomocí editoru výrazu.</td>
+<td>Výpočty představují doplněk k omezením. Výpočet můžete použít k provedení aritmetické operace na atributech typu <strong>Desetinné číslo</strong> a <strong>Celé číslo</strong>nebo logických operací zahrnujících atributy typu <strong>Text</strong> s pevným seznamem a <strong>Logická hodnota</strong>. Výpočet má cílový atribut, do kterého bude zapsán výsledek výpočetního výrazu. Výpočetní výraz se vytváří pomocí editoru výrazu.</td>
 </tr>
 <tr class="even">
 <td>Dílčí komponenty</td>

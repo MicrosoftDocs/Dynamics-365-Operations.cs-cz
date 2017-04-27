@@ -34,11 +34,11 @@ Tento článek poskytuje obecné informace o nákupních objednávkách a odkazy
 
 Nákupní objednávka je dokument, který představuje dohodu s dodavatelem k nákupu zboží nebo služeb. Dokument také pomáhá udržet přehled o příjemkách produktu, které byly vytvořeny pro objednávku, a později o účtování faktur dodavatele, které dodavatel fakturuje pro objednávku.  
 
-Stránka **Nákupní objednávky** obsahuje přehled dostupných objednávek a umožňuje tyto objednávky měnit. Po otevření nákupní objednávky můžete vybrat zobrazení **Záhlaví**, které obsahuje informace, které jsou určeny pouze jednou pro každou nákupní objednávku, jako jsou podrobnosti o dodavateli. Případně můžete vybrat zobrazení **Řádky**, kde můžete měnit řádky objednávky. Obvykle se přepnete mezi těmito dvěma zobrazeními měnit POs. Poplatky nejsou uvedena přímo na **nákupní objednávky** stránky, ale jsou přístupné prostřednictvím nabídky v záhlaví objednávky a řádcích.  
+Stránka **Nákupní objednávky** obsahuje přehled dostupných objednávek a umožňuje tyto objednávky měnit. Po otevření nákupní objednávky můžete vybrat zobrazení **Záhlaví**, které obsahuje informace, které jsou určeny pouze jednou pro každou nákupní objednávku, jako jsou podrobnosti o dodavateli. Případně můžete vybrat zobrazení **Řádky**, kde můžete měnit řádky objednávky. Obvykle budete přepínat mezi těmito dvěma zobrazeními při změnách nákupních objednávek. Poplatky nejsou uvedeny přímo na stránce **Nákupní objednávky**, ale jsou přístupné prostřednictvím nabídek v záhlaví a na řádkách objednávky.  
 
 Existuje mnoho sestav, kde můžete zobrazit informace o nákupních objednávkách, příjemkách produktu a fakturách dodavatele. Tyto zprávy jsou součástí modulů **Zásobování a zdroje** a **Závazky**.  
 
-Pracovní prostory **Příprava nákupní objednávky** a **Příjem a zpracování nákupní objednávky** umožňují zobrazit seznamy nákupních objednávek v různých stavech, do kterých dospěly. Poskytují také souhrn akcí, které je třeba provést. Pracovní prostor **Příprava nákupní objednávky** se zaměřuje na vytváření nákupních objednávek a jejich přezkoumání, zpracování objednávky prostřednictvím schválení a potvrzení u dodavatele. **Nákupní objednávky příjmu a zpracování** prostoru se zaměřuje na zpracování příjmu zboží nebo služeb proti POs. Obsahuje seznamy, které umožňují pohled na příjmy, které jsou splatné nebo které budou brzy splatné dodání dodavatelem. Tyto pracovní prostory nejsou používány k souvisejícím činnostem pro příjem, které jsou prováděny ve skladu. Tyto činnosti jsou prováděny prostřednictvím stránek v modulu **Řízení zásob** a **Řízení skladu**. Zpracování faktur dodavatele by mělo být provedeno pomocí pracovního prostoru **Záznamy faktury dodavatele**, a platby by se měly provést pomocí pracovního prostoru **Platby dodavatele**.  
+Pracovní prostory **Příprava nákupní objednávky** a **Příjem a zpracování nákupní objednávky** umožňují zobrazit seznamy nákupních objednávek v různých stavech, do kterých dospěly. Poskytují také souhrn akcí, které je třeba provést. Pracovní prostor **Příprava nákupní objednávky** se zaměřuje na vytváření nákupních objednávek a jejich přezkoumání, zpracování objednávky prostřednictvím schválení a potvrzení u dodavatele. Pracovní prostor **Příjemka a zpracování nákupní objednávky** se zaměřuje na zpracování příjmu zboží nebo služeb proti nákupním objednávkám. Obsahuje seznamy, které umožňují pohled na příjmy, které jsou zpožděné nebo které budou brzy určené pro dodání dodavatelem. Tyto pracovní prostory nejsou používány k souvisejícím činnostem pro příjem, které jsou prováděny ve skladu. Tyto činnosti jsou prováděny prostřednictvím stránek v modulu **Řízení zásob** a **Řízení skladu**. Zpracování faktur dodavatele by mělo být provedeno pomocí pracovního prostoru **Záznamy faktury dodavatele**, a platby by se měly provést pomocí pracovního prostoru **Platby dodavatele**.  
 
 Následující články poskytují přehled o různých fázích, kterými prochází nákupní objednávky:
 
@@ -48,7 +48,7 @@ Následující články poskytují přehled o různých fázích, kterými proch
 -   [Přehled faktur dodavatele](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
 
 ## <a name="types-of-purchase-orders"></a>Typy nákupních objednávek
-Existují tři typy POs. Při vytváření objednávky, je nutné zadat typ. Výchozí typ pro nové objednávky můžete nastavit na stránce **Parametry modulu Zásobování a zdroje**.
+Existují tři typy nákupních objednávek: Při vytváření nákupní objednávky je nutné zadat její typ. Výchozí typ pro nové objednávky můžete nastavit na stránce **Parametry modulu Zásobování a zdroje**.
 
 | Typ nákupní objednávky        | Popis                                                                                                                                                                                                                                                                           |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -83,7 +83,7 @@ Pole **Stav schválení** se používá, když nákupní objednávka prochází 
 <a name="see-also"></a>Viz také
 --------
 
-[Purchase order creation](purchase-order-creation.md)
+[Vytvoření nákupní objednávky](purchase-order-creation.md)
 
 [Potvrzení a odmítnutí nákupní objednávky](purchase-order-approval-confirmation.md)
 

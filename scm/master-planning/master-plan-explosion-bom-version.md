@@ -1,6 +1,6 @@
 ---
-title: "Výbuchu verze Kusovníku"
-description: "Tento článek popisuje hlavní plánování scénáře, který zahrnuje Rozpad kusovníku verze kusovníku (BOM)."
+title: "Rozpad verze kusovníku"
+description: "Tento článek popisuje scénář hlavního plánování, který zahrnuje rozpad verze kusovníku."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,12 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="explosion-of-a-bom-version"></a>Výbuchu verze Kusovníku
+# <a name="explosion-of-a-bom-version"></a>Rozpad verze kusovníku
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje hlavní plánování scénáře, který zahrnuje Rozpad kusovníku verze kusovníku (BOM).
+Tento článek popisuje scénář hlavního plánování, který zahrnuje rozpad verze kusovníku.
 
 Rozpad poptávky verze kusovníku vytvoří poptávku pro každou řádkovou položku kusovníku na konkrétním pracovišti a v určitém skladu (pokud taková možnost existuje). Kusovník určitého pracoviště může mít pro každý řádek definovaný konkrétní sklad. Nastavení dimenzí položky na každém řádku kusovníku dále určuje, zda je zadání skladu povinné. Výsledná poptávka pro každý řádek kusovníku se potom stane výchozím bodem pro další rozpad poptávky. Pro tento scénář hlavního plánování platí následující podmínky:
 
@@ -44,9 +44,9 @@ Následující obrázek ilustruje, jakým způsobem postupuje rozpad poptávky p
 <a name="see-also"></a>Viz také
 --------
 
-[Hlavní plánování - jak je určena verze Kusovníku](master-plan-bom-version-determined.md)
+[Hlavní plánování – jak se určuje verze kusovníku](master-plan-bom-version-determined.md)
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[Hlavní plánování a funkce více pracovišť](master-plan-multisite-functionality.md)
 
 
 

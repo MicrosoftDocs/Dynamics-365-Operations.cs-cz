@@ -1,6 +1,6 @@
 ---
 title: "Kusovníky a receptury"
-description: "Tento článek obsahuje informace o kusovnících (BOM) a vzorce, které jsou ústřední součástí definice produktů a variant produktu. Kusovníky a vzorce zadejte požadované materiály nebo složek pro konkrétní produkt. Vzorce se také určit, druhotných produktů a vedlejších produktů, které jsou přijaty v rámci konkrétní výrobní."
+description: "Tento článek obsahuje informace o kusovnících a vzorce, které jsou ústřední součástí definice produktů a variant produktu. Kusovníky a vzorce určují požadované materiály nebo látky pro konkrétní produkt. Vzorce také určují souběžné a vedlejších produkty, které jsou přijaty v rámci konkrétní výroby."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek obsahuje informace o kusovnících (BOM) a vzorce, které jsou ústřední součástí definice produktů a variant produktu. Kusovníky a vzorce zadejte požadované materiály nebo složek pro konkrétní produkt. Vzorce se také určit, druhotných produktů a vedlejších produktů, které jsou přijaty v rámci konkrétní výrobní. 
+Tento článek obsahuje informace o kusovnících a vzorce, které jsou ústřední součástí definice produktů a variant produktu. Kusovníky a vzorce určují požadované materiály nebo látky pro konkrétní produkt. Vzorce také určují souběžné a vedlejších produkty, které jsou přijaty v rámci konkrétní výroby. 
 
 <a name="bills-of-materials"></a>Kusovník
 ------------------
@@ -41,7 +41,7 @@ Kusovník definuje součásti, které jsou potřebné pro výrobu produktu. Komp
 
 Kusovník, který se zkombinuje s postupem nebo výrobním tokem popisujícím operace a zdroje vyžadované k vytvoření produktu, tvoří základ výpočtu odhadovaných nákladů na produkt.  
 
-Kusovník je jednotlivé entity, který je popsán v následující informace:
+Kusovník je samostatnou entitou, kterou definují následující informace:
 
 -   ID BOM
 -   Název kusovníku
@@ -52,7 +52,7 @@ Jeden kusovník popisuje jednu úroveň identifikovanou jedinečným ID. Kompone
 
 ### <a name="formulas-co-products-and-by-products"></a>Receptury, souběžné produkty a vedlejší produkty
 
-Receptura je podtyp kusovníku, který se obvykle používá pro procesní výrobu. Kromě komponent a látek popisuje receptura souběžné a vedlejší produkty. V aktuální verzi definice druhotných produktů a vedlejších produktů pro vzorec vyžaduje verzi receptury. Vzorec je obvykle definován pro jeden konkrétní konečného výrobku (vzorec nebo plánování položky), je podle verze receptury.
+Receptura je podtyp kusovníku, který se obvykle používá pro procesní výrobu. Kromě komponent a látek popisuje receptura souběžné a vedlejší produkty. V samotné verzi vyžaduje definice souběžných a vedlejších produktů receptury verzi receptury. Receptura se obvykle definuje pro jeden konkrétní dokončený produkt (recepturu nebo položku plánování), který se definuje ve verzi receptury.
 
 ### <a name="boms-in-the-product-lifecycle"></a>Kusovníky v životním cyklu produktu
 
@@ -64,7 +64,7 @@ V životním cyklu produktu lze vytvořit mnoho typů kusovníků z různých d�
 -   **Výrobní kusovník** – jedná se o kusovník, který se skutečně používá pro určitou výrobu. Výrobní kusovník musí brát v úvahu zdroje skutečně používané pro výrobu produktu. Při vytvoření výrobní zakázky, dávkové objednávky nebo kanbanu se jednotlivé úrovně kusovníku zobrazují jako fiktivní, jsou sbaleny do jedné úrovně a rozprostřeny po operacích pro objednávku.
 -   **Nákladový kusovník** – tento kusovník se používá k výpočtu odhadovaných nákladů na produkt. Nákladový kusovník můžete například použít, když se používají standardní náklady nebo se vypočítávají odhadované plánované náklady určitého produktu. Nákladové kusovníky mohou odkazovat na konkrétní kombinací materiálů a zdrojů, která se má použít. Nákladové kusovníky tedy můžete použít k vytvoření zástupce odhadovaných nákladů za období a abyste se vyhnuli odchylkám v průběhu času.
 
-Typy Kusovníku, které byly skutečně použity při implementaci závisí na provedení a také na obchodní scénáře a požadavky. V jednoduché implementací lze plánovací kusovníku, výrobní kusovník a nákladový kusovník modelovat jako jeden kusovník. V prostředí s častými technologickými změnami a více alternativními postupy bude pravděpodobně nutné použít více typů kusovníků.
+Druhy kusovníku, které skutečně použijete pro implementaci, závisí na implementaci a také na obchodních scénářích a požadavcích. V jednoduché implementací lze plánovací kusovníku, výrobní kusovník a nákladový kusovník modelovat jako jeden kusovník. V prostředí s častými technologickými změnami a více alternativními postupy bude pravděpodobně nutné použít více typů kusovníků.
 
 ### <a name="approval-of-boms-and-formulas"></a>Schválení kusovníků a receptur
 
@@ -81,7 +81,7 @@ Verze kusovníku se musí před použitím v plánovacím nebo výrobním proces
 
 ### <a name="activation-of-the-default-bom-or-formula-version"></a>Aktivace verze výchozího kusovníku nebo receptury
 
-Chcete-li nastavit konkrétní kusovník nebo recepturu jako výchozí verzi kusovníku nebo receptury, která se použije při hlavním plánování nebo k vytvoření výrobních zakázek, je nutné aktivovat verzi. Při aktivaci verze je ověřit jedinečnost verze pro dané omezení (například období, webu nebo množství). Obdržíte chybovou zprávu v případě, že se pokoušíte aktivovat konflikty verzí verze, který je již aktivní. Musíte pak buď deaktivovat verzi konfliktní verzi, nebo upravit omezení verze (obvykle období), abyste zabránili nejednoznačné aktivaci.
+Chcete-li nastavit konkrétní kusovník nebo recepturu jako výchozí verzi kusovníku nebo receptury, která se použije při hlavním plánování nebo k vytvoření výrobních zakázek, je nutné aktivovat verzi. Když je verze aktivována, ověří se její jedinečnost pro daná omezení (například období, pracoviště nebo množství). Je-li verze, kterou se pokoušíte aktivovat, v konfliktu s již aktivní verzí, zobrazí se chybová zpráva. Musíte pak buď deaktivovat verzi konfliktní verzi, nebo upravit omezení verze (obvykle období), abyste zabránili nejednoznačné aktivaci.
 
 ### <a name="product-change-with-case-management"></a>Změna produktu se správou případu
 

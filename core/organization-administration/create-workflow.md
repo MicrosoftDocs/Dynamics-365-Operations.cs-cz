@@ -34,10 +34,10 @@ Tato témata vysvětluje postup při vytváření workflowu.
 <a name="open-the-workflow-editor"></a>Otevřete editor workflowu
 ------------------------
 
-365 Microsoft Dynamics pro operace modulu, který jste pracovali Určuje typ pracovního postupu, který můžete vytvořit. Podle následujících kroků vyberte typ workflowu k vytvoření a otevření editoru workflowu.
+Modul aplikace Microsoft Dynamics 365 for Operations, ve kterém pracujete, určuje typy workflowu, které můžete vytvořit. Podle následujících kroků vyberte typ workflowu k vytvoření a otevření editoru workflowu.
 
 1.  Otevřete modul, pro který chcete vytvořit nový workflow. Když například chcete vytvořit workflow pro nákupní žádanky, klepněte na **Zásobování a zdroje**.
-2.  Klepněte na tlačítko **nastavení**&gt;**\[název modulu\] postupy**.
+2.  Klikněte na **Nastavení** &gt; **\[Název modulu\] workflowy**.
 3.  Na stránce seznamu, která se zobrazí, v podokně akcí klikněte na kartu klikněte na **Nový**.
 4.  Na stránce **Vytvořit workflow** vyberte typ workflowu, který chcete vytvořit, a klepněte na tlačítko **Vytvořit workflow**. Otevře se editor workflowu. Při navrhování workflowu postupujte následujícím způsobem.
 

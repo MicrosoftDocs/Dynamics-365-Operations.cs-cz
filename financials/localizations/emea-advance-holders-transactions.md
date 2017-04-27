@@ -1,6 +1,6 @@
 ---
 title: "Transakce držitelů záloh"
-description: "Naučte se pracovat s transakce držitele zálohy v 365 Microsoft Dynamics pro operace."
+description: "Naučte se pracovat s transakcemi držitele zálohy v aplikaci Microsoft Dynamics 365 for Operations."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -30,37 +30,37 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Naučte se pracovat s transakce držitele zálohy v 365 Microsoft Dynamics pro operace.
+Naučte se pracovat s transakcemi držitele zálohy v aplikaci Microsoft Dynamics 365 for Operations.
 
-Transakce pro tyto pracovníky, kteří jsou držitelé mohou být účtovány pomocí účtů držitele zálohy dopředu. ID pracovníka, který je určen pro každého držitele zálohy lze sledovat všechny transakce držitele zálohy. Toto číslo je načteno jako číslo účtu pro transakce držitele zálohy v **hlavní deníky** a **transakce držitele zálohy** stránek.
+Transakce pro tyto pracovníky, kteří jsou držitelé zálohy, mohou být zaúčtovány pomocí účtů držitele zálohy. ID pracovníka, které je určeno pro každého držitele zálohy, lze použít ke sledování všech transakcí držitele zálohy. Toto číslo je načteno jako číslo účtu pro transakce držitele zálohy na stránkách **Hlavní deníky** a **Transakce držitele zálohy**.
 
-## <a name="create-and-post-a-purchase-order-with-advance-holder-details"></a>Vytvoření a zaúčtování nákupní objednávky s údaji držitele zálohy
-Další obecné informace o nákupních objednávkách naleznete v tématu [nákupní objednávky přehled](/manufacturing/procurement/purchase-order-overview). Pokud faktura dodavatele je vytvořena a zaúčtována s údaji držitele zálohy, zůstatků držitele zálohy budou zaúčtovány do rozvahového účtu zaměstnance místo zůstatek účtu dodavatele. Chcete-li přidat podrobnosti držitele zálohy k nákupní objednávce, postupujte takto:
+## <a name="create-and-post-a-purchase-order-with-advance-holder-details"></a>Tvorba a zaúčtování nákupních objednávek s podrobnostmi o držiteli zálohy
+Další obecné informace o nákupních objednávkách naleznete v tématu [Přehled nákupních objednávek](/manufacturing/procurement/purchase-order-overview). Pokud je faktura dodavatele vytvořena a zaúčtována s podrobnostmi držitele zálohy, zůstatky držitele zálohy budou zaúčtovány do účtu zůstatku zaměstnance namísto do účtu zůstatku dodavatele. Chcete-li přidat podrobnosti držitele zálohy k nákupní objednávce, postupujte takto:
 
--   V **platební podmínky** v **ceny a slevy** vyberte platební podmínku. <!---For more information about **Terms of payment**, see [Define vendor payment terms](http://ax.help.dynamics.com/en/wiki/define-vendor-payment-terms/).-->Vyberte platební podmínku, která má **od držitele zálohy** na vybranou možnost **platební podmínky** stránky. Další informace o nastavení platební podmínky pro držitele záloh naleznete v tématu [držitelů záloh](emea-advance-holders.md).
--   V **držitele zálohy** v **ceny a slevy** s náhledem vyberte držitele zálohy pro nákupní objednávku.
+-   V poli **Platební podmínky** v části **Ceny a slevy** vyberte platební podmínku. <!---For more information about **Terms of payment**, see [Define vendor payment terms](http://ax.help.dynamics.com/en/wiki/define-vendor-payment-terms/).-->Vyberte platební podmínku, která má na stránce **Platební podmínky** vybranou možnost **Od držitele zálohy**. Další informace o nastavení platebních podmínek pro držitele záloh naleznete v tématu [Držitelé zálohy](emea-advance-holders.md).
+-   V poli **Držitel zálohy** na pevné záložce **Ceny a slevy** vyberte držitele zálohy pro nákupní objednávku.
 
-Proces zaúčtování nákupní objednávky se vytvoří dvě transakce dodavatele s opačným částkami a jednu transakci držitele zálohy. Bez podrobností držitele zálohy je vytvořena pouze jedna dodavatelská transakce.
+Proces zaúčtování nákupní objednávky vytvoří dvě transakce dodavatele s opačným částkami a jednu transakci držitele zálohy. Bez podrobností držitele zálohy je vytvořena pouze jedna transakce dodavatele.
 
 ## <a name="settle-advance-holder-balances-via-a-bank"></a>Vyrovnání zůstatků držitele zálohy prostřednictvím banky
-Když se vyrovnávají zůstatků držitele zálohy prostřednictvím banky, položky deníku pro uzavření zůstatků držitele zálohy jsou vytvářeny ve finančním deníku. Můžete nastavit kód pro deník a banky v **držitelů záloh** oddílu na **parametry závazků** stránky. Další informace naleznete v tématu [držitelů záloh](emea-advance-holders.md). Pro uzavření zůstatků držitele zálohy prostřednictvím banky, otevřete **závazků**&gt;**držitelů záloh**&gt;**držitelů záloh**. Klepněte **Zůstatek** tlačítka v podokně akcí a potom klepněte na tlačítko **zavřít přes banku**. Zadejte následující informace **přes banku Zavřít** stránky.
+Když vyrovnáte zůstatky držitelů záloh prostřednictvím banky, položky deníku pro uzavření zůstatků držitele zálohy jsou vytvořeny v hlavním deníku. Můžete nastavit kód pro deník a banky v části **Držitelé záloh** na stránce **Parametry závazků**. Další informace naleznete v tématu [Držitelé záloh](emea-advance-holders.md). Pro uzavření zůstatku držitele zálohy prostřednictvím banky, otevřete **Závazky**&gt;**Držitelé záloh**&gt;**Držitelé záloh**. Klikněte na tlačítko **Zůstatek** v podokně akcí a pak klikněte na tlačítko **Uzavřít v bance**. Na stránce **Uzavřít v bance** zadejte následující informace.
 
 | Pole                    | popis |
 |------------------------------|-------------------|
-| **Date of payment**          | Zadejte datum, které by měla být platba zaúčtována.|
-| **Částka určená k převodu** | Zadejte částku zůstatku při zavírání. Částku, která je uvedena v **množství** v **Zůstatek** formuláře se zobrazí ve výchozím nastavení. |
-| **Automatic**                | Vyberte **automatické** políčko, chcete-li vytvořit a zaúčtovat deník, který je přednastavený na **parametry závazků** stránky.|
+| **Datum platby**          | Zadejte datum, ke kterému má být platba zaúčtována.|
+| **Převáděná částka** | Zadejte částku zůstatku při zavírání. Částka, která je uvedena v poli **Částka** ve formuláři **Zůstatek**, je ve výchozím nastavení zobrazena. |
+| **Automaticky**                | Vyberte zaškrtávací políčko **Automaticky** pro vytvoření a zaúčtování deníku, který je přednastavený na stránce **Parametry závazků**.|
 
-## <a name="settle-advance-holder-balances-via-cash"></a>Vyrovnání zůstatků držitele zálohy hotovosti
-Když se vyrovnávají zůstatků držitele zálohy hotovosti, položky deníku pro uzavření zůstatků držitele zálohy jsou vytvářeny v deníku dokladů. Můžete nastavit kód pro deník a hotovost v **držitelů záloh** na kartě **parametry závazků** stránky. Další informace naleznete v tématu [držitelů záloh](emea-advance-holders.md). Zavřete držitele zálohy zůstatek hotovosti, otevřete **závazků**&gt;**držitelů záloh**&gt;**držitelů záloh**. Klepněte **Zůstatek** tlačítka v podokně akcí a potom klepněte na tlačítko **zavřít hotovosti**. Zadejte následující informace **zavřít hotovosti** stránky.
+## <a name="settle-advance-holder-balances-via-cash"></a>Vyrovnání zůstatků držitele zálohy prostřednictvím hotovosti
+Když vyrovnáte zůstatky držitelů záloh prostřednictvím hotovosti, položky deníku pro uzavření zůstatků držitele zálohy jsou vytvořeny v deníku dokladů. Můžete nastavit kód pro deník a hotovost na kartě **Držitelé záloh** na stránce **Parametry závazků**. Další informace naleznete v tématu [Držitelé záloh](emea-advance-holders.md). Pro uzavření zůstatku držitele zálohy prostřednictvím hotovosti, otevřete **Závazky**&gt;**Držitelé záloh**&gt;**Držitelé záloh**. Klikněte na tlačítko **Zůstatek** v podokně akcí a pak klikněte na tlačítko **Uzavřít v hotovosti**. Na stránce **Uzavřít v hotovosti** zadejte následující informace.
 
 | Pole                    | popis
 |------------------------------|-----------------|
-| **Date of payment**          | Zadejte datum, které by měla být platba zaúčtována.|
-| **Částka určená k převodu** | Zadejte částku zůstatku při zavírání. Částku, která je uvedena v **množství** v **Zůstatek** formuláře se zobrazí ve výchozím nastavení. |
-| **Automatic**                | Vyberte **automaticky** políčko automaticky zaúčtovat deník, a vytvořte přednastavení **parametry závazků** stránky.     |
+| **Datum platby**          | Zadejte datum, ke kterému má být platba zaúčtována.|
+| **Převáděná částka** | Zadejte částku zůstatku při zavírání. Částka, která je uvedena v poli **Částka** ve formuláři **Zůstatek**, je ve výchozím nastavení zobrazena. |
+| **Automaticky**                | Vyberte zaškrtávací políčko **Automaticky** pro automatické vytvoření a zaúčtování deníku, který je přednastavený na stránce **Parametry závazků**.     |
 
-Po listu deníku zpracován, pokud částka v **částka určená k převodu** pole byla záporná, výdajový doklad je generován pro držitele zálohy při uzavření zůstatků. Pokud částka v **částka určená k převodu** pole byla pozitivní, refundační doklad je generován.
+Po zpracování deníku dokladů, pokud částka v poli **Převáděná částka** je záporná, výdajový doklad je vygenerován pro držitele zálohy při uzavření zůstatků. Pokud částka v poli **Převáděná částka** byla pozitivní, vygeneruje se refundační doklad.
 
 
 

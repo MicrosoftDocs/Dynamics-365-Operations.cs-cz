@@ -34,7 +34,7 @@ ms.lasthandoff: 03/31/2017
 
 V tomto článku jsou informace o požadavcích na nastavení předtím, než bude možné pracovat s modulem řízení výroby. 
 
-Řízení výroby je integrován s funkcemi v ostatních modulech. Díky této propojenosti můžete měnit výrobní zakázky a spolehnout se na to, že tyto zakázky budou automaticky aktualizovány ve všech souvisejících procesech a výpočtech v daném systému. Následující procesy nastavení by měly být provedeny v pořadí, v jakém jsou uvedeny.
+Modul Řízení výroby je integrován s funkcemi v ostatních modulech. Díky této propojenosti můžete měnit výrobní zakázky a spolehnout se na to, že tyto zakázky budou automaticky aktualizovány ve všech souvisejících procesech a výpočtech v daném systému. Následující procesy nastavení by měly být provedeny v pořadí, v jakém jsou uvedeny.
 
 ## <a name="required-baseline-setup-in-other-modules"></a>Vyžadované základní nastavení v jiných modulech
 Před prací s modulem Řízení výroby je nutné nastavit informace v jiných modulech. Tato nastavení zahrnuje následující úlohy:
@@ -55,7 +55,7 @@ Před použitím modulu Řízení výroby otevřete modul Správa organizace a v
 4.  **Zdroje** – Nastavením provozních prostředků definujte zdroje používané k provedení výrobního procesu a k plánování kapacity.
 
 ## <a name="required-production-parameters-setup"></a>Vyžadovaná nastavení parametrů výroby
-**Parametry modulu řízení výroby** – nastavit základní výrobní parametry definovat jak systém zpracovává a zpracování výrobní zakázky. Určete způsob, jakým jsou výrobní zakázky vytvářeny, odhadovány, plánovány a spotřebovávány. Dále je možné vybrat požadovaný druh zpětné vazby a způsob provádění nákladového účetnictví.
+**Parametry řízení výroby** – Nastavením základních parametrů výroby definujte způsob, jakým systém zpracovává výrobní zakázky. Určete způsob, jakým jsou výrobní zakázky vytvářeny, odhadovány, plánovány a spotřebovávány. Dále je možné vybrat požadovaný druh zpětné vazby a způsob provádění nákladového účetnictví.
 
 ## <a name="required-journal-name-identification"></a>Vyžadovaná identifikace názvu deníku
 **Názvy deníků výroby** - Určete názvy deníků výroby používaných k zaznamenání a zaúčtování transakcí.

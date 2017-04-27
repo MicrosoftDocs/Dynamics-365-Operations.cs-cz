@@ -1,6 +1,6 @@
 ---
 title: "Mezipodnikové fakturování"
-description: "Tento článek obsahuje informace a příklady o vnitropodnikové fakturaci pro projekty v Microsoft Dynamics 365 pro operace."
+description: "Tento článek obsahuje informace a příklady o vnitropodnikové fakturaci pro projekty v aplikaci Microsoft Dynamics 365 for Operations."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,15 +29,15 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek obsahuje informace a příklady o vnitropodnikové fakturaci pro projekty v Microsoft Dynamics 365 pro operace.
+Tento článek obsahuje informace a příklady o vnitropodnikové fakturaci pro projekty v aplikaci Microsoft Dynamics 365 for Operations.
 
-Organizace můžete mít několik divizí, dceřiných společností a ostatních právnických osob, které si navzájem předávají produkty a služby pro projekty. Se nazývá právnická osoba, která poskytuje služby nebo produktu *půjčování právnické osoby*, se nazývá právnická osoba, která přijímá služby nebo produktu *výpůjček právní subjekt*. 
+Organizace můžete mít několik divizí, dceřiných společností a ostatních právnických osob, které si navzájem předávají produkty a služby pro projekty. Právnická osoba, která poskytuje službu nebo produkt, se nazývá *půjčující právnická osoba* a právnická osoba, která přijímá službu nebo produkt, je označována jako *právnická osoba, která si půjčuje*. 
 
 Následující obrázek znázorňuje obvyklý scénář, kde dva právní subjekty, SI FR (právnická osoba, která si půjčuje) a SI USA (půjčující právnická osoba) sdílí prostředky pro doručení projektu zákazníkovi A. V tomto scénáři má SI FR smluvně sjednáno doručení práce zákazníkovi A. 
 
-[![Příklad mezipodnikových fakturace](./media/interco.invoicing-01.jpg)](./media/interco.invoicing-01.jpg) 
+[![Příklad mezipodnikového fakturování](./media/interco.invoicing-01.jpg)](./media/interco.invoicing-01.jpg) 
 
-Cílem je vytvořit řízení nákladů, uznání výnosů, daně a převodu cen pro mezipodnikové projektové transakce, které jsou více flexibilní a výkonné. Kromě toho jsou k dispozici následující možnosti:
+Cílem je vytvořit více flexibilní a výkonné řízení nákladů, uznání výnosů, daně a převod cen pro mezipodnikové projektové transakce. Kromě toho jsou k dispozici následující možnosti:
 
 -   Vytvoření faktury odběratelů proti projektu právnické osoby, která si půjčuje, pomocí mezipodnikových časových rozvrhů, výdajů a faktur dodavatele v půjčující právnické osobě.
 -   Podpora daňových výpočtů a nepřímých nákladů.
@@ -52,31 +52,31 @@ Cílem je vytvořit řízení nákladů, uznání výnosů, daně a převodu cen
     -   **Příspěvkový poměr** – číslo zadané v poli **Cena** je příspěvkový poměr, který je vyjádřen jako procento prodejní ceny.
 
 ## <a name="example-1-set-up-parameters-for-intercompany-invoicing"></a>Příklad 1: Nastavení parametrů pro mezipodnikové fakturování
-V tomto příkladu je USSI půjčující právnická osoba a její prostředky vykazují čas proti právnické osobě, která si půjčuje, FRSI, která vlastní smlouvu s koncovým zákazníkem. Hodiny a výdaje, které zaměstnanci USSI vykazují, mohou být součástí faktury projektu generované v FRSI. Kromě toho je třetí zdroj transakcí, který může pocházet z půjčující právnické osoby (USSI v tomto příkladu), pokud tato společnost poskytuje sdílené dodavatele dceřiným společnostem (například FRSI), a pak předá tyto náklady do projektů v rámci daných dceřiných společností. Všechny odpovídající dokumenty faktury a daňové výpočty byly dokončeny do 365 Dynamics pro operace. 
+V tomto příkladu je USSI půjčující právnická osoba a její prostředky vykazují čas proti právnické osobě, která si půjčuje, FRSI, která vlastní smlouvu s koncovým zákazníkem. Hodiny a výdaje, které zaměstnanci USSI vykazují, mohou být součástí faktury projektu generované v FRSI. Kromě toho je třetí zdroj transakcí, který může pocházet z půjčující právnické osoby (USSI v tomto příkladu), pokud tato společnost poskytuje sdílené dodavatele dceřiným společnostem (například FRSI), a pak předá tyto náklady do projektů v rámci daných dceřiných společností. Všechny odpovídající dokumenty faktury a daňové výpočty byly dokončeny v Dynamics 365 for Operations. 
 
 V tomto příkladu musí FRSI být odběratelem právnické osoby USSI a USSI musí být dodavatelem právnické osoby FRSI. Poté je možné nastavit vnitropodnikový vztah mezi dvěma právnickými osobami. Následující postup ukazuje, jak nastavit parametry tak, aby obě právnické osoby mohly být součástí vnitropodnikové fakturace.
 
 1.  Nastavte FRSI jako zákazníka právnické osoby USSI a nastavte USSI jako dodavatele právnické osoby FRSI. Existují tři vstupní body pro kroky, které jsou požadovány pro tento úkol.
     | Krok | Vstupní bod                                                                       | popis   |
     |------|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | A.    | V USSI, klepněte na tlačítko **pohledávek**&gt;**zákazníci**&gt;**všechny zákazníky**. | Vytvořte nový záznam zákazníka pro FRSI a vyberte skupinu odběratelů.                                                                                                                                                                                                                           |
-    | mld.    | V FRSI, klepněte na tlačítko **závazků**&gt;**dodavatele**&gt;**všechny dodavatele**.        | Vytvořit nový záznam dodavatele pro USSI a vyberte skupinu dodavatelů.                                                                                                                                                                                                                               |
+    | A.    | V rámci USSI klikněte na **Pohledávky** &gt; **Zákazníci** &gt; **Všichni zákazníci**. | Vytvořte nový záznam zákazníka pro FRSI a vyberte skupinu odběratelů.                                                                                                                                                                                                                           |
+    | mld.    | V rámci FRSI klikněte na **Závazky** &gt; **Dodavatelé** &gt; **Všichni dodavatelé**.        | Vytvořit nový záznam dodavatele pro USSI a vyberte skupinu dodavatelů.                                                                                                                                                                                                                               |
     | K    | V FRSI otevřete záznam dodavatele, který jste právě vytvořili.                            | Na panelu akcí na kartě **Obecné** ve skupině **Nastavení** klikněte na možnost **Mezipodnikové**. Na stránce **Mezipodnikové** na kartě **Obchodní vztah** nastavte jezdec **Aktivní** na **Ano**. V poli **Společnost zákazníka** vyberte záznam zákazníka, který jste vytvořili v kroku A. |
 
-2.  Klepněte na tlačítko **řízení a účetnictví projektu**&gt;**nastavení**&gt;**účetní parametry řízení projektu**a potom klepněte na tlačítko **mezipodnikové** kartu. Způsob nastavení parametrů závisí na tom, zda působíte jako právnická osoba, která si půjčuje, nebo půjčující právnická osoba.
+2.  Klikněte na **Řízení a účetnictví projektů** &gt; **Nastavení** &gt; **Parametry modulu Řízení a účetnictví projektu** a klikněte na kartu **Mezipodnikové**. Způsob nastavení parametrů závisí na tom, zda působíte jako právnická osoba, která si půjčuje, nebo půjčující právnická osoba.
     -   Pokud jste právnická osoba, která si půjčuje, vyberte kategorii zásobování, která je používána pro párování faktur dodavatele, které jsou generovány automaticky.
     -   Pokud jste půjčující právnická osoba pro každou entitu, která si půjčuje, vyberte výchozí kategorii projektu pro každý typ transakce. Kategorie projektu se používají při konfiguraci daně, pokud fakturovaná kategorie v mezipodnikových transakcích existuje pouze u právnické osoby, která si půjčuje. Podle potřeby můžete použít časové rozlišení výnosů pro mezipodnikové transakce. Toto časové rozlišení je provedeno při zaúčtování transakcí, a poté je stornováno při zaúčtování mezipodnikové faktury.
 
-3.  Klepněte na tlačítko **řízení a účetnictví projektu**&gt;**nastavení**&gt;**cen**&gt;**Vnitropodniková cena**.
+3.  Klepněte na tlačítko **Řízení a účetnictví projektu** &gt; **Nastavení** &gt; **Ceny** &gt; **Převést cenu**.
 4.  Vyberte měnu, typ transakce a model přenosu ceny. Měna, která je použita na faktuře, je měna, která je nakonfigurována v záznamu zákazníka pro právnickou osobu, která si půjčuje od půjčující právnické osoby. Měna je používána pro párování položek v tabulce přenosu ceny.
-5.  Klepněte na tlačítko **financí**&gt;**nastavení účtování**&gt;**mezipodnikové účetnictví**a nastavit vztah USSI a FRSI.
+5.  Klepněte na tlačítko **Hlavní kniha** &gt; **Nastavení účtování** &gt; **Mezipodnikové účetnictví** a nastavte vztah USSI a FRSI.
 
 ## <a name="example-2-create-and-post-an-intercompany-timesheet"></a>Příklad 2: Vytvoření a zaúčtování mezipodnikového časového rozvrhu
 USSI – půjčující právnická osoba, musí vytvořit a odeslat časový rozvrh pro projekt z FRSI – právnické osoby, která si půjčuje. Existují dva vstupní body pro kroky, které jsou požadovány pro tento úkol.
 
 | Krok | Vstupní bod                                                                       | popis                                                                                                                                                                                       |
 |------|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| A.    | **Řízení a účetnictví projektu**&gt;**časové rozvrhy**&gt;**všechny časové rozvrhy** | Vytvořte nový časový rozvrh. Na řádku časového rozvrhu v poli **Právnická osoba** vyberte **FRSI**. V poli **ID projektu** vyberte projekt v FRSI. Zadejte hodiny pro každý den týdne. |
+| A.    | **Řízení a účetnictví projektu** &gt; **Časové rozvrhy** &gt; **Všechny časové rozvrhy** | Vytvořte nový časový rozvrh. Na řádku časového rozvrhu v poli **Právnická osoba** vyberte **FRSI**. V poli **ID projektu** vyberte projekt v FRSI. Zadejte hodiny pro každý den týdne. |
 | mld.    | Stránka **Časový rozvrh**                                                                | Po spuštění pracovního postupu, zaúčtujte časový rozvrh a poznamenejte si číslo dokladu.                                                                                                               |
 
 ## <a name="example-3-create-and-post-an-intercompany-vendor-invoice"></a>Příklad 3: Vytvoření a zaúčtování faktury mezipodnikového dodavatele
@@ -84,7 +84,7 @@ USSI – půjčující právnická osoba, musí vytvořit a odeslat fakturu mezi
 
 | Krok | Vstupní bod                                                                                      | popis                                                                                                                                                                                                                                                                          |
 |------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| A.    | **Účty k uhrazení**&gt;**faktur**&gt;**otevřít faktury dodavatele**&gt;**nové faktury dodavatele** | Vytvořte novou fakturu dodavatele a zadejte služby, které byly pořízeny jménem projektu FRSI.                                                                                                                                                                                  |
+| A.    | **Závazky** &gt; **Faktury** &gt; **3Otevřít faktury dodavatele** &gt; **Nová faktura dodavatele** | Vytvořte novou fakturu dodavatele a zadejte služby, které byly pořízeny jménem projektu FRSI.                                                                                                                                                                                  |
 | mld.    | Stránka **Faktura dodavatele**                                                                      | Zadejte řádky, které představují najaté služby jménem FRSI. Na pevné záložce **Podrobnosti řádku** na kartě **Projekt** na řádku faktury v poli **Projektová společnost** zadejte **FRSI**. Zadejte projekt a odpovídající informace. Poté zaúčtujte fakturu dodavatele. |
 
 ## <a name="example-4-create-and-post-the-intercompany-invoice"></a>Příklad 4: Vytvoření a zaúčtování mezipodnikové faktury
@@ -92,9 +92,9 @@ USSI, půjčující právnická osoba, musí vytvořit a zaúčtovat mezipodniko
 
 | Krok | Vstupní bod                                                                                             | popis                                                                                                                                      |
 |------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| A.    | **Řízení a účetnictví projektu**&gt;**projektových faktur**&gt;**faktura mezipodnikové odběratele**  | Klepněte na tlačítko **Nové** a otevřete tak stránku **Vytvořit mezipodnikovou fakturu**.                                                                                  |
-| mld.    | **Řízení a účetnictví projektu**&gt;**projektových faktur**&gt;**mezipodnikové faktury odběratele** | Na stránce **Vytvořit mezipodnikovou fakturu** zadejte právnickou osobu, určete transakci, která by měla být zahrnuta, a klepněte na tlačítko **Hledat**. |
-| K    | **Řízení a účetnictví projektu**&gt;**projektových faktur**&gt;**mezipodnikové faktury odběratele** | Vyberte transakce, které chcete fakturovat, nebo klepnutím na tlačítko **Vybrat všechny** fakturujte všechny transakce v seznamu a klepněte na tlačítko **OK**.                  |
+| A.    | **Řízení projektu a účetnictví** &gt; **Faktury projektu** &gt; **Mezipodniková faktura odběratele**  | Klepněte na tlačítko **Nové** a otevřete tak stránku **Vytvořit mezipodnikovou fakturu**.                                                                                  |
+| mld.    | **Řízení projektu a účetnictví** &gt; **Faktury projektu** &gt; **Mezipodnikové faktury odběratele** | Na stránce **Vytvořit mezipodnikovou fakturu** zadejte právnickou osobu, určete transakci, která by měla být zahrnuta, a klepněte na tlačítko **Hledat**. |
+| K    | **Řízení projektu a účetnictví** &gt; **Faktury projektu** &gt; **Mezipodnikové faktury odběratele** | Vyberte transakce, které chcete fakturovat, nebo klepnutím na tlačítko **Vybrat všechny** fakturujte všechny transakce v seznamu a klepněte na tlačítko **OK**.                  |
 | P    | Stránka **Mezipodniková faktura**                                                                       | Zobrazí se návrh mezipodnikové faktury odběratele.                                                                                             |
 | E.    | Stránka **Mezipodniková faktura**                                                                       | Klikněte na možnost **Zaúčtovat**.                                                                                                                                  |
 
@@ -103,8 +103,8 @@ Když půjčující právnická osoba, USSI, zaúčtuje fakturu mezipodnikového
 
 | Krok | Vstupní bod                                                                                        | popis                                                                                                             |
 |------|----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| A.    | **Účty k uhrazení**&gt;**faktur**&gt;**čekajících faktur dodavatele**                            | Zkontrolujte fakturu, ověřte, že jsou zahrnuty hodnoty časového rozvrhu, a poté fakturu dodavatele zaúčtujte.                  |
-| mld.    | **Řízení a účetnictví projektu**&gt;**projektových faktur**&gt;**návrhy faktury projektu** | Vytvořte novou fakturu projektu pro projekt a ověřte, že se zobrazí hodinové transakce, které byly zaúčtovány.            |
+| A.    | **Závazky** &gt; **Faktury** &gt; **Nevyřízené faktury dodavatele**                            | Zkontrolujte fakturu, ověřte, že jsou zahrnuty hodnoty časového rozvrhu, a poté fakturu dodavatele zaúčtujte.                  |
+| mld.    | **Řízení projektu a účetnictví** &gt; **Faktury projektu** &gt; **Návrhy faktury projektu** | Vytvořte novou fakturu projektu pro projekt a ověřte, že se zobrazí hodinové transakce, které byly zaúčtovány.            |
 | K    | Stránka **Projektová faktura**                                                                       | Vyberte fakturu pro projekt a potom kliknutím na tlačítko **Zobrazit podrobnosti** zkontrolujte nákladovou a prodejní částku. Nakonec fakturu zaúčtujte. |
 
 

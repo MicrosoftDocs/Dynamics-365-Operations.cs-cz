@@ -1,6 +1,6 @@
 ---
 title: "Zpracování přidělení"
-description: "Tento článek obsahuje informace o přidělení možnosti pro zpracování v 365 Microsoft Dynamics pro operace a jak lze použít při plánování rozpočtu. Přidělení se používají k rozdělení částek mezi více kombinací účtů hlavní knihy. Díky nim lze zajistit, aby se výdaje nebo příjmy účtovaly v účetnictví na správný objekt."
+description: "Tento článek obsahuje informace o přiděleních, možnostech pro jejich zpracování v aplikaci Microsoft Dynamics 365 for Operations a o tom, jak je lze použít při plánování rozpočtu. Přidělení se používají k rozdělení částek mezi více kombinací účtů hlavní knihy. Díky nim lze zajistit, aby se výdaje nebo příjmy účtovaly v účetnictví na správný objekt."
 author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-04 18 - 16 - 59
@@ -28,11 +28,11 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="process-allocations"></a>Zpracování přidělení
 
-Tento článek obsahuje informace o přidělení možnosti pro zpracování v 365 Microsoft Dynamics pro operace a jak lze použít při plánování rozpočtu. Přidělení se používají k rozdělení částek mezi více kombinací účtů hlavní knihy. Díky nim lze zajistit, aby se výdaje nebo příjmy účtovaly v účetnictví na správný objekt.
+Tento článek obsahuje informace o přiděleních, možnostech pro jejich zpracování v aplikaci Microsoft Dynamics 365 for Operations a o tom, jak je lze použít při plánování rozpočtu. Přidělení se používají k rozdělení částek mezi více kombinací účtů hlavní knihy. Díky nim lze zajistit, aby se výdaje nebo příjmy účtovaly v účetnictví na správný objekt.
 
-365 Microsoft Dynamics pro operace poskytuje následující možnosti pro podporu tohoto procesu:
+Microsoft Dynamics AX365 for Operations poskytuje pro podporu tohoto procesu následující možnosti:
 
--   Pomocí akce rozdělit v rozúčtování, nebo použitím výchozí šablony finanční dimenze do dokumentu ručně přidělit částky transakce. Další informace naleznete v tématu [rozúčtování.](\accounts-payable\accounting-distributions.md)
+-   Ručně přidělit částky transakcí pomocí rozdělení akcí v rozúčtování nebo použitím výchozích šablon finanční dimenze v dokumentu. Další informace naleznete v tématu [Rozúčtování.](\accounts-payable\accounting-distributions.md)
 -   Automaticky přidělit částky transakce na základě podmínek přidělení definovaných v individuálním hlavním účtu. Položky účtu přidělení se budou generovat pro každý deník podle procenta a cílového účtu hlavní knihy, kdykoli účetní položka splní kritéria definovaná jako zdrojový účet hlavní knihy.
 -   Automaticky přidělit zůstatky hlavní knihy nebo pevné částky na základě pravidel přidělení hlavní knihy. Pravidla přidělení hlavní knihy se zpracovávají v pravidelných intervalech pomocí deníků přidělení. 
 

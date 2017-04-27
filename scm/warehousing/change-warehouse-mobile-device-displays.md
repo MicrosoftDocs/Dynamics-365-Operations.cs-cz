@@ -42,13 +42,13 @@ V rámci konfigurace mobilního zařízení můžete definovat různá rozvržen
 
 Soubory CSS a ASPX musí být umístěny v konkrétním adresáři tak, aby je mohla načíst aplikace Internet Information Services (IIS). K definování různých souborů CSS může být užitečné, pokud používáte funkce mobilního zařízení v různých prohlížečích nebo na různých druzích hardwaru vyžadujících jiné ovládací prvek rozvržení. Jednoduchá nastavení, jako je například barva pozadí, písma a velikosti písma pro text, a šířka a funkce tlačítek, lze snadno ovládat pomocí různých souborů CSS. Soubor ASPX je používán k zobrazení mobilního webu v aplikaci na straně serveru ASP.NET. Soubor určuje, jak je rozložena celková struktura HTML. Je vhodné přizpůsobit tuto funkci pouze v případě, že máte vážné strukturální problémy s HTML a jazykem JavaScript, a pro konkrétní zařízení musíte tento kód změnit. Pro mapování ovládacích prvků HTML do klávesových zkratek na stránce mobilního zařízení na stránce **Nastavení displeje mobilního zařízení** v poli **Klávesová zkratka**, přiřaďte pro klávesy číselné kódy. K nalezení kódů číselných znaků v mobilním zařízení lze použít nabídku **Zobrazit kódy pro klávesové zkratky**. Všimněte si, že mapování se mohou lišit v závislosti na hardwaru, který se používá. Pro vytvoření mapování musíte použít následující syntaxi:
 
-&lt;název ovládacího prvku&gt;(&lt;název klíče&gt;) =&lt;kód klávesy&gt;;
+&lt;název ovládacího prvku&gt;(&lt;název klávesy&gt;)=&lt;kód klávesy&gt;;
 
 V tomto poli je vysvětlení částí syntaxe:
 
--   **&lt;název ovládacího prvku&gt;** – název ovládacího prvku (například tlačítko), která je zapsána do HTML.
--   **(&lt;název klíče&gt;) ** – Název klávesy klávesnice, která vytváříte zástupce pro.
--   **&lt;Kód klávesy&gt;** – kód číselný znak pro klíč, který chcete použít jako klávesovou zkratku.
+-   **&lt;název ovládacího prvku&gt;** – název ovládacího prvku (například tlačítka), který je generován v jazyce HTML.
+-   **(&lt;název klávesy&gt;)** – název klávesy na klávesnici, pro kterou vytváříte zástupce.
+-   **&lt;Kód klávesy&gt;** – kód v podobě číselného znaku klávesy, kterou chcete použít pro klávesovou zkratku.
 
 Následuje příklad:
 
@@ -60,17 +60,17 @@ Na všech stránkách zahrnující tlačítko **Storno**, bude mít tlačítko t
 
 Stisknutím klávesy Esc klávesnici aktivujete tlačítko **Storno**. Pro použití nastavení stylu a klávesové zkratky ve specifickém zařízení je nutné vytvořit mapování v poli **Kritéria**. K vytvoření mapování je nutné použít regulární výraz .NET, a výraz musí obsahovat tři části, které jsou odděleny svislou čáru (|), jak je uvedeno zde:
 
-Request.UserHostAddress=&lt;adresa hostitele uživatele&gt;| Název hostitele =&lt;uživatelské jméno hostitele&gt;| Request.UserAgent=&lt;uživatelský agent&gt;
+Request.UserHostAddress=&lt;hostitelská adresa uživatele&gt;|HostName=&lt;uživatelské jméno hostitele&gt;|Request.UserAgent=&lt;agent uživatele&gt;
 
 V tomto poli je vysvětlení částí výrazu:
 
--   **&lt;Adresa hostitele uživatele&gt;** – A .NET regulární výraz, který odpovídá adrese IP žadatele.
--   **&lt;uživatelské jméno hostitele&gt;** – A .NET regulární výraz, který odpovídá názvu sítě žadatele.
--   **&lt;agent u uživatele:&gt;** – A .NET regulární výraz, který odpovídá identifikátor prohlížeče, který používá žadatele.
+-   **&lt;hostitelská adresa uživatele&gt;** – Regulární výraz .NET shodující se s žadatelem adresy IP.
+-   **&lt;uživatelské jméno hostitele&gt;** – Regulární výraz .NET shodující se s žadatelem názvu sítě.
+-   **&lt;agent uživatele&gt;** – Regulární výraz .NET shodující se s identifikátorem prohlížeče použitého žadatelem.
 
 Následující příklad umožňuje použití aplikace Internet Explorer 8.
 
-Request.UserHostAddress=. \*| Název hostitele =. \*| Request.UserAgent=MSIE\\s8\\.0
+Request.UserHostAddress=.\*|HostName=.\*|Request.UserAgent=MSIE\\s8\\.0
 
 Lze použít nabídku **Zobrazit konfiguraci serveru pro nastavení displeje** na mobilním zařízení k nalezení informací o nastavení.
 
@@ -87,20 +87,20 @@ K nastavení různých barev používaných ve zprávách generovaných systéme
 Barvu vyberte na stránce **Vybrat barvu**, klepněte na paletu nebo zadejte hexadecimální barevný kód.
 
 ## <a name="define-the-date-format-to-use-on-mobile-devices"></a>DEfinujte formát data, který má být použit pro mobilní zařízení
-Můžete rozšířit seznam povolených formátů data pro jednotlivé instalace. Tato možnost může být například užitečná, pokud chcete zadat formát, který usnadňuje pracovníkovi zadání data pro mobilní zařízení. Výchozí formát je určen výchozím jazykem uživatele, který je specifikován v poli **Jazyk** na stránce **Možnosti uživatele**. (Na stejné stránce také slouží k přidružení zaměstnance uživateli práce určitého skladu.) **Poznámka:** sklad mobilní zařízení portálu nepoužívá nastavení **datum a čas formát čísla** v **předvolby na jazyk a oblast** stránky. Změna formátu data vyžaduje vaši znalost s regulárními výrazy v rozhraní Microsoft .NET Framework. Další informace naleznete v tématu [Regulární výrazy rozhraní .NET Framework](http://go.microsoft.com/fwlink/?LinkId=391260). Chcete-li definovat formáty data, upravit soubor Dates.ini, který je umístěn v obsahu\\nastavení\\Dates.ini na sklad mobilní zařízení Portal server. Tento soubor využívá regulární výrazy .NET k určení formátu data. Regulární výraz musí obsahovat dílčí výrazy tvořící pojmenované skupiny pro daný den, měsíc a rok (DDMMRR), jak je uvedeno v následujícím příkladu:
+Můžete rozšířit seznam povolených formátů data pro jednotlivé instalace. Tato možnost může být například užitečná, pokud chcete zadat formát, který usnadňuje pracovníkovi zadání data pro mobilní zařízení. Výchozí formát je určen výchozím jazykem uživatele, který je specifikován v poli **Jazyk** na stránce **Možnosti uživatele**. ((Stránka rovněž slouží k přidružení zaměstnance s pracovním uživatelem určitého skladu.).) **Poznámka:** Portál skladu pro mobilní zařízení nepoužívá nastavení pole **Datum, čas a formát čísla** na stránce **Předvolby jazyka a oblasti**. Změna formátu data vyžaduje vaši znalost s regulárními výrazy v rozhraní Microsoft .NET Framework. Další informace naleznete v tématu [Regulární výrazy rozhraní .NET Framework](http://go.microsoft.com/fwlink/?LinkId=391260). Chcete-li definovat formáty data, upravte soubor Dates.ini umístěný v cestě Content\\Settings\\Dates.ini na serveru portálu skladu pro mobilní zařízení. Tento soubor využívá regulární výrazy .NET k určení formátu data. Regulární výraz musí obsahovat dílčí výrazy tvořící pojmenované skupiny pro daný den, měsíc a rok (DDMMRR), jak je uvedeno v následujícím příkladu:
 
-^(? &lt;day&gt;\\d{2})(?&lt; month&gt;\\d{2})(?&lt; rok&gt;\\d {2}) $
+^(?&lt;den&gt;\\d{2})(?&lt;měsíc&gt;\\d{2})(?&lt;rok&gt;\\d{2})$
 
 Každý dílčí výraz vyžaduje jednu nebo dvě číslice pro den a měsíc, a jednu až čtyři číslice pro rok. V následujícím příkladu je dílčí výraz, který definuje pojmenovanou skupinu pro rok, a vyžaduje dvě až čtyři číslice:
 
-(? &lt;year&gt;\\d{2,4})
+(?&lt;rok&gt;\\d{2,4})
 
 Ve stejném souboru můžete zadat více než jeden výraz. Každý výraz musí být na samostatných řádcích. První shodný výraz slouží k analýze data.
 
 <a name="see-also"></a>Viz také
 --------
 
-[Configuration of mobile devices for warehouse work](configure-mobile-devices-warehouse.md)
+[Konfigurace mobilních zařízení pro práci ve skladu](configure-mobile-devices-warehouse.md)
 
 
 

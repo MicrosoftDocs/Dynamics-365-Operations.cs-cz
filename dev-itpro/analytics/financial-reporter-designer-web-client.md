@@ -1,5 +1,5 @@
 ---
-title: "Management Reporter - designer a webového klienta"
+title: "Management Reporter - návrhář a webový klient"
 description: 
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="management-reporter----the-designer-and-web-client"></a>Management Reporter - designer a webového klienta
+# <a name="management-reporter----the-designer-and-web-client"></a>Management Reporter - návrhář a webový klient
 
 [!include[banner](../includes/banner.md)]
 

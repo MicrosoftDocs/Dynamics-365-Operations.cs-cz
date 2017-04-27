@@ -52,13 +52,13 @@ Základní prvky periodického zpracování jsou stejné u všech procesů. Kart
 
 Pro každý proces generování jsou k dispozici tři akce:
 
--   **Vytvoření nového plánu rozpočtu** vytvoří nový plán, který má atributy, které jsou vybrány v ** cíl ** sekce. Tyto atributy nemusí být jedinečné. Dva plány mohou tudíž být se stejným názvem a jinými hodnotami.
+-   **Vytvořit nový plán rozpočtu** vytvoří nový plán s atributy, které jsou vybrány v části **Cíl**. Tyto atributy nemusí být jedinečné. Dva plány mohou tudíž být se stejným názvem a jinými hodnotami.
 -   **Nahradit existující scénář plánu rozpočtu** – odstranění všech dat v cílovém plánu rozpočtu ve vybraném scénáři plánu rozpočtu a vytvoření nových řádků, které používají vybraná zdrojová data.
 -   **Aktualizovat existující scénář plánu rozpočtu a připojit nová data** – aktualizace existujících řádků v cílovém plánu, které odpovídají původním řádkům, a také přidání nových řádků pro nová data. Párování vychází z účtu hlavní knihy, data, třídy rozpočtu a různých ostatních polí. Například při vytvoření plánů rozpočtu z pozic prognózy je číslo pozice důležité pole. Všechny řádky, které mají číslo pozice odpovídající číslu zdrojové pozice, budou nahrazeny novými řádky ze zdroje.
 
 ### <a name="source"></a>Zdroj
 
-Pro všechny procesy **zdroje** karta umožňuje filtrovat data pomocí **filtr** tlačítka. Určitá pole jsou ve výchozím nastavení přidán do filtru pro každý proces. Například pro proces **Generovat plán rozpočtu z hlavní knihy** jsou k dispozici kategorie **Účet hlavní knihy** a **Hlavní účet** a jsou k dispozici na stránce generování. Všechna pole, která přidáte do filtru, jsou přidány také na stránku společně s kritérii, která můžete přidávat.
+Karta **Zdroj** umožňuje filtrovat data pomocí tlačítka **filtr** pro všechny procesy. Určitá pole jsou ve výchozím nastavení přidána do filtru pro každý proces. Například pro proces **Generovat plán rozpočtu z hlavní knihy** jsou k dispozici kategorie **Účet hlavní knihy** a **Hlavní účet** a jsou k dispozici na stránce generování. Všechna pole, která přidáte do filtru, jsou přidány také na stránku společně s kritérii, která můžete přidávat.
 
 ### <a name="target"></a>Cíl
 
@@ -66,7 +66,7 @@ Možnost **Historie** na kartě **Cíl** umožňuje použití dat ze zdrojových
 
 Pole **Agregovat součet podle** v horní části stránky také určuje datum, které je použito. Toto pole je součet částek a volitelně nastaví datum platnosti na první den fiskálního období nebo fiskálního roku. 
 
-Mnoho polí na kartě **Cíl** lze upravit nebo je jen pro čtení – v závislosti na akci, kterou jste vybrali. Při změně z vytváření nového plánu rozpočtu na aktualizaci existujícího plánu pole **Název plánu rozpočtu** nebude k dispozici a pole, která se vztahují k výběru existujícího plánu, bude k dispozici. Na obou **Target** kartu a ** zdroj ** kartu, **knihy** pole není vždy k dispozici, protože vybraný proces plánování rozpočtu je určena hodnota. 
+Mnoho polí na kartě **Cíl** lze upravit nebo je jen pro čtení – v závislosti na akci, kterou jste vybrali. Při změně z vytváření nového plánu rozpočtu na aktualizaci existujícího plánu pole **Název plánu rozpočtu** nebude k dispozici a pole, která se vztahují k výběru existujícího plánu, bude k dispozici. Na obou kartách **Cíl** i **Zdroj ** není pole **Hlavní kniha** nikdy k dispozici, protože hodnota vychází z vybraného procesu plánování rozpočtu. 
 
 Pole **Třída rozpočtu** umožňuje nastavit řádky plánu rozpočtu jako výdajové transakce nebo transakce výnosů. Transakce výnosů se obvykle připíší na účet hlavní knihy a jsou tedy uloženy jako záporné. Obvykle se tyto transakce také zobrazí jako záporné částky v plánu rozpočtu. Přidáním třídy rozpočtu jako pole v rozvržení pro plán však můžete povolit výnosy, aby se zobrazily jako kladné množství.
 
@@ -76,7 +76,7 @@ Tři pole zajišťují dodatečné funkce: **Koeficient**, **Minimální** a **Z
 
 Hodnota v poli **Koeficient** je vynásobena zdrojovou částkou za účelem nastavení částky v plánu rozpočtu. Úpravy lze provádět při vytvoření řádků plánu rozpočtu. Můžete například zadat **1,03** pro zvýšení o 3 %. Koeficient musí být kladné číslo. 
 
-Pole **Minimální** umožňuje nastavit prahovou částku pro vytváření řádku plánu rozpočtu. Pokud je zdrojová částka nižší než tato hodnota, nedojde k vytvoření řádku plánu rozpočtu. Hodnota **0,00** umožňuje všechny částky však není omezit řádky, kladné částky. (Žádná hodnota omezuje řádky kladné částky. Záporné částky jsou vždy zahrnuty a obvykle představují položky Dal.)
+Pole **Minimální** umožňuje nastavit prahovou částku pro vytváření řádku plánu rozpočtu. Pokud je zdrojová částka nižší než tato hodnota, nedojde k vytvoření řádku plánu rozpočtu. Hodnota **0,00** umožňuje použít všechny částky, ale neomezuje řádky na kladné částky. (Žádná hodnota neomezuje řádky na kladné částky. Záporné částky jsou vždy zahrnuty a obvykle představují kreditní položky.)
 
 Pole **Pravidlo zaokrouhlení** umožňuje nastavení přesnosti řádků plánu rozpočtu, které jsou vytvořeny. Můžete zaokrouhlit množství na nejbližší násobek měny 1,00, 10,00, 100,00 a tak dále.
 
@@ -89,13 +89,13 @@ V cíli je pole **Třída rozpočtu** nastaveno na hodnotu **Výdaje** nebo **V�
 
 ### <a name="generate-budget-plan-from-fixed-assets"></a>Generovat plán rozpočtu z dlouhodobého majetku
 
-Proces **Generovat plán rozpočtu z dlouhodobého majetku** nemá možnost agregace podle období nebo dne. Je také možnost nastavení plánu jako historické. Můžete použít tento pravidelné proces plánování rozpočtu zahrnout očekávané transakce dlouhodobého majetku.
+Proces **Generovat plán rozpočtu z dlouhodobého majetku** nemá možnost agregace podle období nebo dne. Zároveň neexistuje možnost nastavení plánu jako historického. Tento periodický proces můžete použít pro zahrnutí očekávané transakce pro dlouhodobý majetek v plánování rozpočtu.
 
 ### <a name="generate-budget-plan-from-forecast-positions"></a>Generovat plán rozpočtu z pozic prognóz
 
 Proces **Generovat plán rozpočtu z pozic prognóz** přiřadí zdrojové pozice prognózy k řádku plánu rozpočtu. Pokud chcete zobrazit pozici, můžete přidat pozici prognózy jako řádek v rozvržení pro plán rozpočtu, nebo použít dotaz **Řádky plánu rozpočtu**. Pokud nechcete, aby se pozice prognózy přiřadila k řádkům plánu rozpočtu, nastavte možnost **Zahrnout pozici v řádku plánu rozpočtu** na **Ne**.
 
-Řádky plánu rozpočtu jsou agregovány podle účtů hlavní knihy a pozice. Můžete však vyloučit číslo pozice tak, že řádky jsou seskupeny podle účtu hlavní knihy pouze. Na kartě **Cíl** nastavte možnost **Zahrnout pozici v plánu rozpočtu** na **Ne**.
+Řádky v plánu rozpočtu se agregují podle účtu hlavní knihy a pozice. Číslo pozice je však možné vyloučit tak, aby řádky byly seskupeny pouze podle účtu hlavní knihy. Na kartě **Cíl** nastavte možnost **Zahrnout pozici v plánu rozpočtu** na **Ne**.
 
 V poli **Scénář FTE plánu rozpočtu** můžete vybrat scénář a zahrnout počet ekvivalentu plného pracovního úvazku do plánu rozpočtu. Toto pole je omezeno na scénáře typu množství, které jsou zahrnuty v rozvržení cílového plánu rozpočtu. Když vyberete scénář FTE, je také nutné určit hlavní účet FTE. Tento účet se používá k vytvoření řádků plánu rozpočtu množství. 
 

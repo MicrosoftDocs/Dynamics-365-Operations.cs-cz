@@ -1,6 +1,6 @@
 ---
-title: "Spolupracovat s dodavateli pomocí portálu pro dodavatele"
-description: "Toto téma vysvětluje, jak nákupčí mohou použít portál pro dodavatele pro spolupráci s externím dodavatelem během procesu potvrzení nákupní objednávky. Tyto informace platí pouze pro únor 2016 &amp;května 2016 verze aplikace Dynamics AX."
+title: "Spolupráce s dodavateli pomocí portálu pro dodavatele"
+description: "Toto téma vysvětluje, jak nákupčí mohou použít portál pro dodavatele pro spolupráci s externím dodavatelem během procesu potvrzení nákupní objednávky. Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,14 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Spolupracovat s dodavateli pomocí portálu pro dodavatele
+# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Spolupráce s dodavateli pomocí portálu pro dodavatele
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma vysvětluje, jak nákupčí mohou použít portál pro dodavatele pro spolupráci s externím dodavatelem během procesu potvrzení nákupní objednávky. Tyto informace platí pouze pro únor 2016 &amp;května 2016 verze aplikace Dynamics AX.
+Toto téma vysvětluje, jak nákupčí mohou použít portál pro dodavatele pro spolupráci s externím dodavatelem během procesu potvrzení nákupní objednávky. Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016.
 
-Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016. Dodavatele rozšířené funkce spolupráce v Dynamics 365 verzi operace 1611 byla nahrazena funkce portálu dodavatele. Další informace o nové funkce pro spolupráci dodavatele naleznete v tématu [použití spolupráce dodavatele k práci s externími dodavateli,](vendor-collaboration-work-external-vendors.md).  
+Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016. Funkce portálu dodavatele byla v Dynamics 365 for Operations verze 1611 nahrazena rozšířenou funkcí spolupráce dodavatelů. Další informace o nové funkci spolupráce s dodavatelem naleznete v tématu [Používání spolupráce s dodavateli k práci s externími dodavateli](vendor-collaboration-work-external-vendors.md).  
 
 Portál pro dodavatele je zaměřen na dodavatele, kteří nemají elektronické výměny dat (EDI) k dispozici v aplikaci Microsoft Dynamics AX pro výměnu informací o nákupních objednávkách. Portál umožňuje nákupčím odeslání nákupní objednávky dodavateli a obdržet odpovědi s potvrzením nebo odmítnutím přímo v Dynamics AX.  
 
@@ -69,9 +69,9 @@ Následující tabulka zobrazuje příklad změn stavu a verze, kterou objednáv
 | Odešlete novou verzi nákupní objednávky na portál pro dodavatele. | Nová verze je registrována na portálu pro dodavatele a stav se změní na **Na externí kontrole**. |
 | Dodavatel schválí novou verzi nákupní objednávky.           | Stav je změněn na **Potvrzeno**.                                                                |
 
-Zobrazit verze nákupní objednávky odeslané dodavatele a odpovědi dodavatele, klepněte na tlačítko **deníky**&gt;**žádosti potvrzení o** z nákupní objednávky.  
+Chcete-li zobrazit verze nákupní objednávky, které byly odeslány k dodavateli, a jejich odpovědi, klikněte z nákupní objednávky na možnost **Deníky** &gt; **Žádosti o potvrzení**.  
 
-Objednávky, které byly odeslány dodavateli k odpovědi a nacházet ve stavu **Na externí kontrole** se buď objeví v seznamu **Nákupní objednávky odeslané na portál dodavatele, čekající na odpověď** nebo **Nákupní objednávky odeslané na portál dodavatele, odpověď vyžaduje akci**. Pokud změníte objednávku, která byla odeslána dodavateli, aby se stav změnil zpět na **Schváleno**, již se objednávka nezobrazuje v těchto seznamech. Chcete-li zjistit, zda již byla odpověď na objednávku od dodavatele, klepněte na tlačítko **deníky**&gt;**žádosti potvrzení o**.  
+Objednávky, které byly odeslány dodavateli k odpovědi a nacházet ve stavu **Na externí kontrole** se buď objeví v seznamu **Nákupní objednávky odeslané na portál dodavatele, čekající na odpověď** nebo **Nákupní objednávky odeslané na portál dodavatele, odpověď vyžaduje akci**. Pokud změníte objednávku, která byla odeslána dodavateli, aby se stav změnil zpět na **Schváleno**, již se objednávka nezobrazuje v těchto seznamech. Pokud chcete zobrazit, zda došlo dříve ze strany dodavatele k odezvě na objednávku, klikněte na **Deníky** &gt; **Žádosti o potvrzení**.  
 
 Dodavatelé nemusí nákupní objednávku potvrdit na portálu pro dodavatele. Mohou také odeslat e-mailovou zprávu nebo sdělit jejich přijetí nákupní objednávky prostřednictvím jiných kanálů. Potvrďte objednávku ručně v aplikaci Dynamics AX. V tomto případě se vám zobrazí upozornění, že objednávka má být potvrzena, přestože není reakce od dodavatele. Nákupní objednávka se poté zobrazí v historii potvrzení na portálu pro dodavatele jako otevřená potvrzená objednávka, která nemá žádné odpovědi. Dále dodavatel již nemá možnost nákupní objednávku potvrdit nebo odmítnout.  
 

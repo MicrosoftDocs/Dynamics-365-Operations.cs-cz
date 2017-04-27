@@ -1,5 +1,5 @@
 ---
-title: "Možnosti pro transakce dlouhodobého majetku"
+title: "Transakce dlouhodobého majetku"
 description: "Tento článek popisuje různé dostupné metody pro vytvoření transakcí dlouhodobého majetku."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="fixed-asset-transaction-options"></a>Možnosti pro transakce dlouhodobého majetku
+# <a name="fixed-asset-transaction-options"></a>Transakce dlouhodobého majetku
 
 [!include[banner](../includes/banner.md)]
 
@@ -39,7 +39,7 @@ Dlouhodobý majetek lze nastavit pro účely integrace se závazky, pohledávkam
 Transakce s dlouhodobým majetkem lze zadat na stránce Doklad deníku. Tuto stránku lze otevřít ze stránky Deník faktur. Stránku Doklad deníku můžete otevřít také ze stránky Deník schválených faktur. V poli Typ protiúčtu vyberte možnost Dlouhodobý majetek. Pak v poli Protiúčet vyberte číslo dlouhodobého majetku. Na kartě Dlouhodobý majetek zadejte hodnoty do polí Typ transakce a Kniha.
 
 ## <a name="accounts-receivable"></a>Pohledávky
-Transakce dlouhodobého majetku můžete zadat na stránce volného textu faktury.  Na stránce volného textu faktury v mřížce řádky faktury vyberte položku řádku. Klikněte na pevnou záložku Podrobnosti řádku. Zadejte číslo dlouhodobého majetku a knihu transakce vyřazení. U faktur s volným textem je druh transakce s dlouhodobým majetkem vždy definován jako možnost Vyřazení – odprodej.
+Transakce s dlouhodobým majetkem lze zadat na stránce Volná faktura.  Na stránce Volná faktura v mřížce Řádky faktury vyberte položku řádku. Klikněte na pevnou záložku Podrobnosti řádku. Zadejte číslo dlouhodobého majetku a knihu transakce vyřazení. U faktur s volným textem je druh transakce s dlouhodobým majetkem vždy definován jako možnost Vyřazení – odprodej.
 
 ## <a name="procurement-and-sourcing"></a>Zásobování a zdroje
 Transakce s dlouhodobým majetkem lze zadat na stránce Nákupní objednávka. Zadejte požadované informace pro vytvoření nákupní objednávky a klikněte na OK. Na stránce Nákupní objednávka klikněte na pevnou záložku Podrobnosti řádku. Potom na kartě Dlouhodobý majetek zadejte informace o dlouhodobém majetku. 
@@ -68,7 +68,7 @@ Kterýkoliv typ transakce s dlouhodobým majetkem lze zaúčtovat na stránce Hl
 
 
 
-Další informace naleznete v tématu [dlouhodobého majetku integrace](fixed-asset-integration.md).
+Další informace naleznete v tématu [Integrace dlouhodobého majetku](fixed-asset-integration.md).
 
 
 

@@ -39,7 +39,7 @@ Provozní prostředek provádí aktivity projektu nebo výrobního procesu. Moho
 Provozní prostředky jsou stroje, nástroje, pracovníci, zařízení, fyzické oblasti nebo dodavatelé provádějící aktivity projektu nebo výrobního procesu. Mohou být různého typu a mohou mít různé schopnosti.
 
 -   **Dodavatel**: Externí prostředek provádějící aktivity projektu nebo výrobní operace. Jedná se například o subdodavatele. Propojením prostředků dodavatele s účtem dodavatele lze generovat nákupy pro subdodavatele na základě řádků kusovníku nebo výroby.
--   **Lidské zdroje**: Projektový nebo výrobní pracovník provádějící aktivitu samostatně nebo jako operátor nástroje nebo stroje. Pokud používáte funkci Lidské zdroje, můžete propojit personální pracovník. Modul plánování může potom alokovat prostředky na základě kompetencí definovaných pro daného pracovníka.
+-   **Lidské zdroje**: Projektový nebo výrobní pracovník provádějící aktivitu samostatně nebo jako operátor nástroje nebo stroje. Pokud používáte funkci modulu Lidské zdroje, můžete propojit lidské zdroje s pracovníkem. Modul plánování může potom alokovat prostředky na základě kompetencí definovaných pro daného pracovníka.
 -   **Stroj**: Stroje nebo jiné výrobní zařízení, které je nutné ve výrobě.
 -   **Nástroj**: Nástroj nebo zařízení, které se obvykle používá v kombinaci s jiným prostředkem k provádění aktivit v projektu nebo výrobě.
 -   **Umístění**: Fyzické umístění určité velikosti, které je vyžadováno k provedení aktivity. Může se například jednat o montážní plochu.

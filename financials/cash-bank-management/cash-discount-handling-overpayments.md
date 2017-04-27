@@ -1,5 +1,5 @@
 ---
-title: "Zpracování platební slevy u přeplatků"
+title: "Zpracování platebních slev u přeplatků"
 description: "Tento článek popisuje scénáře, které znázorňují způsob zpracování platby, když zákazník využije platební slevu, ale má také přeplatek."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="handling-cash-discounts-for-overpayments"></a>Zpracování platební slevy u přeplatků
+# <a name="handling-cash-discounts-for-overpayments"></a>Zpracování platebních slev u přeplatků
 
 [!include[banner](../includes/banner.md)]
 

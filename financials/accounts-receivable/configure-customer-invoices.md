@@ -58,7 +58,7 @@ Na stránce se seznamem **Všechny prodejní objednávky** si můžete zobrazit 
 ## <a name="consolidate-sales-orders-or-packing-slips-for-posting"></a>Konsolidace prodejních objednávek nebo dodacích listů pro zaúčtování
 Tento proces použijte, když jsou některé prodejní objednávky připraveny k fakturaci a vy je chcete sloučit do jedné faktury. 
 
-Na stránce se seznamem **Prodejní objednávka** můžete vybrat více faktur a poté použít možnost **Generovat faktury** k jejich konsolidaci. Na **zaúčtování faktury** stránky, můžete změnit **souhrnné objednávky** nastavení má číslo objednávky (v případě více dodacích listů pro jednu prodejní objednávku) nebo podle účtu faktury (v případě více prodejních objednávek pro jednoho fakturačního účtu). Použití **uspořádat** tlačítko konsolidovat do jedné faktury, na základě prodejní objednávky **souhrnné objednávky** nastavení.
+Na stránce se seznamem **Prodejní objednávka** můžete vybrat více faktur a poté použít možnost **Generovat faktury** k jejich konsolidaci. Na stránce **Zaúčtování faktury** můžete změnit nastavení položky **Souhrnná objednávka** tak, aby bylo shrnutí provedeno podle čísla objednávky (pokud existuje více dodacích listů pro jednu prodejní objednávku) nebo podle účtu faktury (pokud existuje více prodejních objednávek pro jeden účet faktury). Tlačítkem **Uspořádat** konsolidujte prodejní objednávky do jedné faktury na základě nastavení v poli **Souhrnná objednávka**.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Další nastavení, která mění chování zaúčtování
 Následující pole mění chování procesu zaúčtování.
@@ -126,8 +126,8 @@ Následující pole mění chování procesu zaúčtování.
 <td>Zkontrolovat limit úvěru</td>
 <td>Vyberte informace, které se budou analyzovat při provádění kontroly limitu úvěru.
 <ul>
-<li><strong>None</strong> – There is no requirement for the credit limit check.</li>
-<li><strong>Balance</strong> – The credit limit is checked against the customer balance.</li>
+<li><strong>Žádný</strong> – nejsou požadavky na kontrolu limitu úvěru.</li>
+<li><strong>Zůstatek</strong> – limit úvěru se kontroluje vůči zůstatku odběratele.</li>
 <li><strong>Zůstatek + dodací list nebo příjemka produktu</strong> – limit úvěru se kontroluje vůči zůstatku odběratele a dodávkám.</li>
 <li><strong>Zůstatek + vše</strong> – limit úvěru se kontroluje vůči zůstatku odběratele, dodávkám a otevřeným objednávkám.</li>
 </ul></td>

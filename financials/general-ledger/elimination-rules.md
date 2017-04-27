@@ -1,6 +1,6 @@
 ---
 title: Pravidla eliminace
-description: "Toto téma obsahuje informace o pravidla eliminace a různé možnosti pro vytváření zpráv o vyloučení."
+description: "V tomto tématu jsou informace o pravidlech eliminace a různých možnostech pro vytváření sestav o eliminacích."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -31,9 +31,9 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma obsahuje informace o pravidla eliminace a různé možnosti pro vytváření zpráv o vyloučení.
+V tomto tématu jsou informace o pravidlech eliminace a různých možnostech pro vytváření sestav o eliminacích.
 
-Transakce eliminací se používají v případech, kdy nadřazená právnická osoba obchoduje s některými dceřinými právnickými osobami a přitom je používáno konsolidované finanční vykazování. Konsolidované finanční výkazy musí zahrnovat pouze transakce, které probíhají mezi konsolidovanou organizací a dalšími entitami mimo dané organizace. Transakce mezi právnickými osobami, které jsou součástí stejné organizace musí být proto odstraněny, nebo odstraněna z hlavní knihy, neobjeví se na finanční sestavy. Existuje několik způsobů, jak vykázat eliminace:
+Transakce eliminací se používají v případech, kdy nadřazená právnická osoba obchoduje s některými dceřinými právnickými osobami a přitom je používáno konsolidované finanční vykazování. Konsolidované finanční výkazy musí zahrnovat pouze transakce, které probíhají mezi konsolidovanou organizací a dalšími entitami mimo dané organizace. Transakce mezi právnickými osobami, které jsou součástí stejné organizace, je proto třeba odebrat nebo odstranit z hlavní knihy tak, aby se nezobrazily ve finančních výkazech. Existuje několik způsobů, jak vykázat eliminace:
 
 -   Pravidlo eliminace lze vytvořit a zpracovat v konsolidaci nebo eliminaci společnosti.
 -   Finanční sestavy slouží k zobrazení účtů a dimenzí eliminací u konkrétního řádku nebo sloupce.
@@ -132,28 +132,28 @@ Vaše právnická osoba, právnická osoba A prodává určité produkty jiné p
 Všechny tyto operace vedou k tomu, že vnitropodnikové transakce jsou zaúčtovávány na debetní a kreditní účty. Kromě toho mohou tyto transakce zahrnovat částky přirážek nebo srážek, zejména pokud výše vnitropodnikových prodejů neodpovídá nákladům na prodané zboží.
 
 ## <a name="set-up-elimination-rules"></a>Nastavení pravidel eliminace
-Při nastavování pravidla eliminace v 365 Dynamics pro operace, doporučujeme vytvoření finanční dimenze pro účely vyloučení. Většina zákazníků název obchodního partnera nebo něco podobného. Pokud se rozhodnete použít finanční dimenze, pak je nutné mít hlavní účty, které jsou specifické pro pouze mezipodnikové transakce. 
+Při nastavování pravidel eliminace v aplikaci Dynamics 365 for Operations doporučujeme, abyste vytvořili finanční dimenzi konkrétně pro účely eliminace. Většina zákazníků jí nazývá obchodní partner nebo podobně. Pokud se rozhodnete nepoužít finanční dimenzi, pak je nutné mít hlavní účty, které jsou specifické pro pouze mezipodnikové transakce. 
 
-Nastavení pro vyloučení naleznete v části Nastavení modul konsolidace. Jakmile zadáte popis pravidla, je třeba vybrat společnost, která bude účtovat v deníku eliminace. To by mělo být ve společnosti, která má **použít pro proces finanční eliminace** v nastavení právního subjektu vybrána. 
+Nastavení pro eliminace naleznete v části Nastavení modulu Konsolidace. Jakmile zadáte popis pravidla, je třeba vybrat společnost, do které bude deník eliminace účtovat. Mělo by se jednat o společnost, která má vybranou volbu **Použít pro proces finanční eliminace** v nastavení právnické osoby. 
 
-Datum lze nastavit v platnosti pravidlo eliminace a kdy jeho platnost vypršela, v případě potřeby. Je nutné nastavit **Active** k **Ano** Pokud chcete, aby byla k dispozici v návrhu procesu eliminace. Vyberte název deníku, který má typ **eliminace**.
+Můžete nastavit datum, kdy se pravidlo eliminace stane platným, a v případě potřeby i datum jeho vypršení. Musíte nastavit volbu **Aktivní** na **Ano**, pokud chcete, aby byla k dispozici v procesu návrhu eliminace. Vyberte název deníku, který má typ **Eliminace**.
 
-Po definování základy skutečné zpracování pravidel můžete definovat klepnutím na **řádky**. Existují dvě možnosti pro eliminace odstranění částka pohybu nebo definování pevnou částku. 
+Po definování základů můžete určit skutečná pravidla zpracování kliknutím na možnost **Řádky**. Existují dvě možnosti pro eliminace - eliminace změny čisté částky nebo určení pevné částky. 
 
-Vyberte zdrojový účet. Můžete použít hvězdičku (\*) jako zástupný. Například 1\* by vyberte všechny účty, které začínají 1 jako zdroj dat pro přidělení. 
+Vyberte svůj zdrojový účet. Jako zástupný znak můžete použít hvězdičku (\*). Například hodnota 1\* by zvolila jako zdroj dat pro přidělení všechny účty začínající číslem 1. 
 
-Po výběru zdrojových účtů, **specifikace účtu** Určuje účet z cílové společnosti, která je použita. Vyberte **zdroje** Pokud chcete použít stejnou hlavní účet definovaný v **zdroje** účet. Vyberete-li **uživatelem definované**, pak je nutné zadat cílový účet. 
+Po výběru svých zdrojových účtů určí položka **Specifikace účtu** účet z cílové společnosti, která je použita. Vyberte **Zdroj**, pokud chcete použít stejný hlavní účet definovaný v účtu **Zdroj**. Vyberete-li možnost **Definováno uživatelem**, pak je nutné zadat cílový účet. 
 
-Specifikace dimenze funguje stejným způsobem. Vyberete-li **zdroje**, v cílové společnosti jako zdrojová společnost bude používat stejné dimenze. Vyberete-li **uživatelem definované**, je třeba určit rozměry v cílové společnosti klepnutím **cílové dimenze** položky nabídky. 
+Specifikace dimenze funguje stejným způsobem. Vyberete-li **Zdroj**, použijí se v cílové společnosti stejné dimenze jako ve zdrojové společnosti. Vyberete-li **Definováno uživatelem**, je třeba určit dimenze v cílové společnosti kliknutím na položku nabídky **Cílové dimenze**. 
 
-Vyberte zdrojové dimenze a finanční dimenze a hodnoty, které slouží jako zdroj eliminace.
+Vyberte zdrojové dimenze, finanční dimenze a hodnoty, které slouží jako zdroj eliminace.
 
 ## <a name="process-elimination-transactions"></a>Zpracování eliminační transakce
-Dvěma způsoby pro zpracování transakcí eliminace, během procesu online konsolidovat nebo vytvořením deníku eliminace a návrh procesu eliminace. Tato část se zaměřuje na vytváření deníku a spuštění procesu eliminace. 
+Existují dva způsoby zpracování transakcí eliminace - během konsolidovaného online procesu nebo vytvořením deníku eliminace a spuštěním procesu návrhu eliminace. Tato část se zaměřuje na vytváření deníku a spuštění procesu eliminace. 
 
-Ve společnosti rozumí společnost odstranění, vyberte **deníku eliminace** modul konsolidace. Po výběru názvu deníku, klepněte na tlačítko **řádky**. Návrh lze spustit výběrem **návrhy** nabídky a potom výběrem **návrh eliminace**.
+Ve společnosti určené jako společnost eliminace vyberte možnost **Deník eliminace** v modulu Konsolidace. Po vybrání názvu deníku klikněte na položku **Řádky**. Návrh lze spustit výběrem nabídky **Návrhy** a potom výběrem možnosti **Návrh eliminace**.
 
-Vyberte společnost, která je zdrojem sloučená data a pak vyberte pravidlo, které chcete zpracovat. ENTER zahájíte hledání pro odstranění částky počáteční datum a koncové datum ukončení hledání datum pro odstranění částky. **Datum zaúčtování do hlavní knihy** pole je datum pro zaúčtování deníku do hlavní knihy. Po klepnutí na tlačítko **OK**, můžete zkontrolovat množství a zaúčtujte deník.
+Vyberte společnost, která je zdrojem konsolidovaných dat, a pak vyberte pravidlo, které chcete zpracovat. Zadejte počáteční datum pro zahájení vyhledávání částek eliminace a koncové datum pro ukončení hledání data pro odstranění částky. Pole **Datum zaúčtování do hlavní knihy** představuje datum použité pro zaúčtování deníku do hlavní knihy. Po kliknutí na tlačítko **OK** můžete zkontrolovat částky a zaúčtovat deník.
 
 
 

@@ -35,40 +35,40 @@ V tomto článku je přehled pracovního prostoru Uzavření finančního obdob�
 
 Pracovní prostor uzavření finančního období
 
-**Finančního období blízko** prostoru umožňuje sledování procesů finanční uzávěrky různých společností, oblastí a lidé. V závislosti na zobrazení **finančního období blízko** prostoru, zobrazí se buď všechny úkoly a stavy pro uzavření plánu nebo pouze úkoly, které vám byly přiřazeny. 
+Pracovní prostor **Uzavření finančního období** umožňuje sledování procesů finanční uzávěrky různých společností, oblastí a lidí. V závislosti na zobrazení pracovního prostoru **Uzavření finančního období** se zobrazí buď všechny úkoly a stavy pro uzavření plánu nebo pouze úkoly, které vám byly přiřazeny. 
 
-Nejprve je nutné vybrat plán uzávěrky v horní části pracovního prostoru. Všechna data, která je zobrazena v pracovním prostoru je pak filtrovány podle plánu vybraná uzávěrka.
+Nejprve je nutné vybrat plán uzávěrky v horní části pracovního prostoru. Všechna data, která jsou zobrazena v pracovním prostoru, jsou pak filtrována podle vybraného plánu uzávěrky.
 
 ### <a name="summary-tiles"></a>Dlaždice souhrnu
 
-Dlaždice **Souhrn** poskytují přehled procesu a ukazatele, které vám pomohou udržet proces uzávěrky podle plánu. Zobrazí úkoly, které jsou po splatnosti zbývající úkoly dnes, úkoly, které mají být splněny dnes, ale jsou blokovány z důvodu závislostí a všechny zbývající úkoly pro proces. Tyto informace jsou pro všechny společnosti, které jsou součástí plánu vybraná uzávěrka.
+Dlaždice **Souhrn** poskytují přehled procesu a ukazatele, které vám pomohou udržet proces uzávěrky podle plánu. Můžete zobrazit úkoly, které jsou po splatnosti, zbývající úkoly pro dnešní den, úkoly, které mají být splněny dnes, ale jsou blokovány z důvodu závislostí a všechny zbývající úkoly pro proces. Tyto informace jsou pro všechny společnosti, které jsou zahrnuté do vybraného plánu uzávěrky.
 
 ### <a name="tasks-and-status-section"></a>Úkoly a výběr stavu
 
-V **úlohy a stav** část celkového stavu plánu uzávěrky se člení různými způsoby: stav společnosti, podle oblasti, stavu a stavu osobou, která je zodpovědná. Můžete zobrazit stav pro všechny úkoly v uzavírací naplánovat pouze úkoly, které mají být splněny dnes, nebo úkoly, které jsou po splatnosti změnou filtru v horní části seznamu karet. Můžete také vybrat filtr společnosti k zobrazení stavu pro konkrétní firmu. Každá karta stav poskytuje členění podle procenta, která byla dokončena a počet úkolů, které zůstávají. Klepněte na kartu, nebo **podrobnosti** akce, které chcete filtrovat seznam podrobných úkolů podle vybrané karty. 
+V části **Úkoly a stav** je stav celkového plánu uzávěrky členěn různými způsoby: stav podle společnosti, podle oblasti, stavu a stav podle zodpovědné osoby. Můžete zobrazit stav pro všechny úkoly v plánu uzávěrky, pouze pro úkoly, které mají být splněny dnes, nebo úkoly, které jsou po splatnosti, změnou filtru v horní části seznamu karet. Můžete také vybrat filtr společnosti k zobrazení stavu pro konkrétní firmu. Každá karta stavu uvádí členění podle procenta, které bylo dokončeno a počtu úkolů, které zůstávají. Klepněte na kartu, nebo akci **Zobrazit podrobnosti** k filtrování seznamu podrobných úkolů podle vybrané karty. 
 
-Seznam podrobných úkolů je na poslední kartu. Tento seznam zobrazuje seznam úloh úplné a mohou být filtrovány, aby se zobrazil pouze úkoly, které vás zajímají. Můžete filtrovat seznam úkolů v několika způsoby. Můžete například filtrovat podle úkol termín splnění, přidružené společnosti a přidružené oblasti. Můžete také vybrat Zobrazit nebo skrýt dokončené úkoly v seznamu úkolů. 
+Poslední karta je určená pro seznam podrobných úkolů. Tento seznam zobrazuje celý seznam úkolů a lze ho filtrovat, aby se zobrazily pouze úkoly, které vás zajímají. Můžete filtrovat seznam úkolů v několika způsoby. Můžete například filtrovat podle termínu splnění úkolu, přidružené společnosti a přidružené oblasti. Můžete také vybrat, zda chcete zobrazit nebo skrýt dokončené úkoly v seznamu úkolů. 
 
 Pro úkoly se používají dva indikátory:
 
--   Ikonu vykřičník označuje, že úkol je po splatnosti. Pro úlohy, které jsou po splatnosti datum splatnosti je červeně zvýrazněno.
--   Ikona visacího zámku indikuje, že úkol závisí na jiných úkolech, které ještě nejsou dokončeny. Úkol, který je blokováno závislostmi nelze označit jako dokončený. Závislostí úkolu lze nastavit pomocí **nastavit závislost** akce.
+-   Ikona vykřičníku označuje, že úkol je po splatnosti. Pro úkoly, které jsou po splatnosti, je datum splatnosti červeně zvýrazněno.
+-   Ikona visacího zámku označuje, že úkol závisí na jiných úkolech, které ještě nejsou dokončeny. Úkol, který je blokováno závislostmi, nelze označit jako dokončený. Závislosti úkolu lze nastavit pomocí akce **Nastavit závislost**.
 
-Název úkolu je hypertextový odkaz 365 Microsoft Dynamics pro operace stránky nebo jiné webové stránky, kde uživatel musí přejít k dokončení práce. Tento hypertextový odkaz můžete nastavit pomocí **vazby úkolu** při úpravě nebo vytvoření úkolu. 
+Název úkolu je hypertextový odkaz na stránku 365 Microsoft Dynamics nebo jinou webovou stránku, kam uživatel musí přejít k dokončení práce. Tento hypertextový odkaz můžete nastavit pomocí pole **Odkaz na úkol** při úpravě nebo vytvoření úkolu. 
 
-Soubory, poznámky, obrázky a adresy URL můžete připojit k úkolu pomocí **přílohy** akce. Můžete například označení čísel deníků, které jsou používány jako součást úkolu přidat komentáře týkající se určitého úkolu nebo připojit soubor sestavy, který byl vytištěn úkolu. Ikona se zobrazí v **přílohy** sloupec pro úkol, pokud příloha je k dispozici. 
+Soubory, poznámky, obrázky a adresy URL můžete připojit k úkolu pomocí akce **Přílohy**. Můžete například označit čísla deníků, které jsou používány jako součást úkolu, přidat komentáře týkající se určitého úkolu nebo připojit soubor sestavy, který byl vytištěn pro úkol. Ikona se zobrazí ve sloupci **Přílohy** pro úkol, pokud je příloha k dispozici. 
 
-**Dokončení úkolu** možnost musí být vybrána ručně po dokončení úkolu. Pokud je úkol označen jako dokončený, **dokončení datum** pole je automaticky aktualizován na aktuální datum a čas. Závislost indikátory jsou také aktualizovány podle potřeby.
+Možnost **Dokončení úkolu** musí být vybrána ručně po dokončení úkolu. Pokud je úkol označen jako dokončený, pole **Datum dokončení** je automaticky aktualizováno na aktuální datum a čas. Indikátory závislosti jsou také aktualizovány podle potřeby.
 
 ## <a name="all-financial-period-close-tasks-list-page"></a>Stránka seznamu Všechny úkoly uzavření finančního období
-Můžete zobrazit všechny aktuální a předchozí období uzavřít úkoly z **všechny finanční období uzavřít úkoly** stránku seznamu. Tato stránka se seznamem je nejvhodnější pro historické analýzy procesu zavírání, protože obsahuje informace o plánované datum splatnosti, datum skutečného dokončení a osoba, která byla dokončena úloha. Informace na této stránce seznamu můžete snadno exportovat do aplikace Excel pro vytváření sestav a účely auditování.
+Můžete zobrazit všechny úkoly pro aktuální a předchozí období uzavření ze stránky se seznamem **Všechny úkoly uzavření finančního období**. Tato stránka se seznamem je nejvhodnější pro historickou analýzu procesu uzavření, protože obsahuje informace o plánovaném datu splatnosti, datu skutečného dokončení a osobě, která úlohu dokončila. Informace na této stránce se seznamem můžete snadno exportovat do aplikace Excel pro vytváření sestav a účely auditování.
 
 ## <a name="financial-period-close-configuration-page"></a>Stránka Konfigurace uzavření finančního období
-Před použitím **finančního období blízko** prostoru, je nutné nakonfigurovat procesu 365 Microsoft Dynamics pro operace s použitím **finanční období Zavřít konfigurační** stránky. (Klepněte na tlačítko **financí**&gt;**zavřít období**&gt;**finanční období Zavřít konfigurační**.)
+Než bude možné použít pracovní prostor **Uzavření finančního období**, je nutné nastavit proces v aplikaci Microsoft Dynamics 365 for Operations pomocí stránky **Konfigurace uzavření finančního období**. (Klikněte na tlačítko **Hlavní kniha** &gt; **Závěrka období** &gt; **Konfigurace uzavření finančního období**.)
 
 ### <a name="resources"></a>Zdroje
 
-Na **prostředky** kartu, definování osob, které se podílejí na procesu uzávěrky. Zaměstnanec odpovídá za úkol uzávěrky musí být přiřazena sem. Musíte také zadat zobrazení pro zaměstnance v pracovním prostoru. Existují tyto možnosti:
+Na kartě **Prostředky** definujte osoby, které se podílejí na procesu uzávěrky. Zde musí být nejprve přiřazen jakýkoli zaměstnanec, který odpovídá za úkol uzávěrky. Musíte také zadat zobrazení pro zaměstnance v pracovním prostoru. Existují tyto možnosti:
 
 -   **Pouze přiřazené úkoly** – budou zobrazeny pouze úlohy, které jsou mu přiřazeny.
 -   **Všechny úlohy a stav** – budou zobrazeny všechny úlohy uzávěrky a stav celého procesu.
@@ -81,31 +81,31 @@ Pomocí oblastí úkolů seřaďte úkoly uzávěrky do logických skupin vlastn
 
 ### <a name="calendars"></a>Kalendáře
 
-Vytvořit a upravit na kartě kalendářů kalendáře finanční uzávěrky.  To je, kde bude definovat pracovní dny pro uzávěrky a bude použit pro plánování úkolů uzávěrky.  Vytvoření nového kalendáře a určit pracovní dny pro plánování úloh.  Doporučujeme vytvořit kalendář pro dlouhou dobu, například rok nebo více let, protože jej lze upravit po vytvoření.  Po vytvoření kalendáře, klepněte na tlačítko Upravit a aktualizovat kalendář pro konkrétní dny, například svátky.  Ukončení úlohy bude naplánována na dny, pokud je hodnota ovládacího prvku nastavena na otevřeno.  Pokud ukončení úlohy nemůže být plán v určitý den, v tento den by měl mít hodnota ovládacího prvku nastavena na Uzavřeno.
+Vytvořte a upravte na kartě kalendářů kalendáře finanční uzávěrky.  Zde budete definovat pracovní dny pro procesy uzávěrky a toto místo bude použito pro plánování úkolů uzávěrky.  Vytvořte nový kalendář a určete pracovní dny používané k plánování úloh.  Doporučujeme vytvořit kalendář na dlouhou dobu, například na rok nebo více let, protože jej lze po vytvoření upravit.  Po vytvoření kalendáře klepněte na tlačítko Upravit, aby se aktualizoval kalendář pro konkrétní dny, například svátky.  Úkoly uzávěrky budou naplánovány na dny, kdy je hodnota Řízení nastavena na Otevřeno.  Pokud úkoly uzávěrky nelze naplánovat na konkrétní den, měla by na tento den být hodnota ovládacího prvku nastavena na Uzavřeno.
 
 ### <a name="templates"></a>Šablony
 
-Pomocí finanční zavřít šablony definovat všechny úkoly, které jsou součástí procesu zavírání. Uzavření úkolu je opakované pracovní úsilí, které je přiřazen k dokončení každého procesu uzávěrky jednotlivce. V šabloně relativní splatnosti datum musí být definovány pro každý úkol uzávěrky. Termín relativní datum se počet dní před nebo po konci definovaného období datum úkolu budou splatné každé období. Každý úkol přiřazen také čas potřeby. Doba splatnosti je nastavena pomocí kontextu časové pásmo a budou převedeny na časové pásmo pro každého uživatele. 
+Pomocí šablony finanční uzávěrky definujte všechny úkoly, které jsou součástí procesu uzávěrky. Úkol uzávěrky je opakované pracovní úsilí, které je přiřazeno jednotlivci k dokončení v rámci každého procesu uzávěrky. V šabloně musí být definováno relativní datum splatnosti definován pro každý úkol uzávěrky. Relativní datum splatnosti je počet dní před nebo po definovaném koncovém datu období, ke kterému bude úkol v každém období splatný. Jednotlivým úkolům je přiřazen také čas splatnosti. Čas splatnosti je nastaven pomocí kontextu vašeho časového pásma a bude převeden na časové pásmo pro každého uživatele. 
 
-Jedna nebo více společností, které se vztahuje tento úkol můžete přiřadit úkol v šabloně. Pokud jinou osobu je přiřazen k dokončení této práce úsilí v každé společnosti, mohou být užitečné vytvořit více úkolů pro stejné pracovní úsilí. Vytvořte jeden úkol pro každou společnost. 
+Úkol v šabloně můžete přiřadit jedné nebo více společnostem, na které se vztahuje tento úkol. Pokud je jiná osoba je přiřazena k dokončení tohoto pracovního úsilí v každé společnosti, může být užitečné vytvořit více úkolů pro stejné pracovní úsilí. Vytvořte jeden úkol pro každou společnost. 
 
-**Vazby úkolu** nabídka je spojena s úsilím práce úkolu a lze přejít přímo na příslušnou stránku z odkazu úkolu v pracovním prostoru. Například úkol uzávěrky spustit proces přecenění měny závazků lze propojit s příslušnými **přecenění cizí měny** stránky v 365 Microsoft Dynamics pro operace. Můžete také odkazovat na externí adresu URL. 
+Položka nabídky **Odkaz na úkol** je spojena s pracovním úsilím úkolu a lze ji použít k přechodu přímo na příslušnou stránku z odkazu na úkol v pracovním prostoru. Například úkol uzávěrky spuštění procesu přecenění měny závazků lze propojit s příslušnou stránkou **Přecenění cizí měny** stránky v 365 Microsoft Dynamics 365 for Operations. Můžete také odkazovat na externí adresu URL. 
 
-> [! Tip] Pokud chcete propojit konkrétní sestavu Management Reporter finanční období uzavření úkolu, můžete použít adresu URL sestavy. Pro přístup k adrese URL sestavy, otevřete sestavu v nástroji Návrhář sestavy a potom klepněte na tlačítko **souboru**&gt;**zobrazit sestavu** Chcete-li otevřít sestavu ve webovém prohlížeči. Můžete zkopírovat adresu URL v řádku adresa v prohlížeči a vložit ji do pole **Odkaz na úkol** **URL**. 
+> [!Tip] Pokud chcete odkázat konkrétní sestavu aplikace Management Reporter na úkol uzávěrky finančního období, můžete použít adresu URL sestavy. Chcete-li přistupovat k adrese URL sestavy, otevřete sestavu v Návrháři sestav a klikněte na možnost **Soubor** &gt; **Zobrazit sestavu**, aby se sestava otevřela v prohlížeči. Můžete zkopírovat adresu URL v řádku adresa v prohlížeči a vložit ji do pole **Odkaz na úkol** **URL**. 
 
-Závislosti mezi úkoly můžete definovat v šabloně. Pokud úkol nastavena závisí na jeden nebo více úkolů, tento úkol nelze označit jako dokončenou, dokud byly dokončeny všechny závislosti. 
+Závislosti mezi úkoly můžete definovat v šabloně. Pokud byl úkol nastaven, aby závisel na jedné nebo více úlohách, nelze jej označit jako dokončený až do dokončení všech závislosti. 
 
-Můžete vytvořit více šablon finančního uzavření. Potom můžete různých šablon lze sledovat procesy uzávěrky pro různé typy období, například měsíce konec nebo konec roku nebo společnostem, které používají různé uzávěrky postupy pro sledování. Po vytvoření šablon můžete zkopírovat do nové šablony a proveďte požadované změny. Každý plán uzávěrky můžete přiřadit pouze jednu šablonu.
+Je možné vytvořit více šablon finanční uzávěrky. Potom můžete pomocí různých šablon sledovat procesy uzávěrky pro různé typy období, například konec měsíce konec nebo konec roku nebo ke sledování společností, které používají různé procesy uzávěrky. Po vytvoření šablony ji můžete zkopírovat do nové šablony a provést požadované změny. Jednotlivým plánům uzávěrky můžete přiřadit pouze jednu šablonu.
 
 ### <a name="closing-schedules"></a>Plány uzávěrky
 
-Pomocí plánu uzavírací přiřadit šablonu finančního uzavření na určité finanční období uzavřen. Úkoly ze šablony jsou pak automaticky generovány pro zadané období a nový plán uzávěrky je přidán do pracovního prostoru. Při vytváření plánu nové uzavírací **koncové datum období** pole se používá k určení skutečné splnění data úkolů uzávěrky, relativní náležitý datum, kdy je přiřazena v šabloně finančního uzavření. 
+Pomocí plánu uzavírací přiřadit šablonu finanční uzávěrky konkrétnímu finančnímu období, které musí být uzavřeno. Úkoly ze šablony jsou pak automaticky generovány pro zadané období a nový plán uzávěrky je přidán do pracovního prostoru. Při vytváření nového plánu uzávěrky je pole **Koncové datum období** použito k určení skutečných dat plnění úkolů uzávěrky na základě relativního data splatnosti, které je přiřazeno v šabloně finanční uzávěrky. 
 
-Přiřazení kalendáře, které jsou vhodné pro uzavření plán určit pracovní dny se použije pro plánování úloh. Pokud nedefinujete konkrétní kalendář, data dokončení úkolu budou používat všechny dny v týdnu. 
+Přiřaďte kalendář, který je vhodný pro plán uzávěrky, k určení pracovních dní, které se použijí pro plánování úloh. Pokud nedefinujete konkrétní kalendář, data plnění úkolu budou používat všechny dny v týdnu. 
 
-Je nutné definovat také společnosti, které budou přidruženy k uzavření plánu. Pokud šablona úlohy jsou přiřazeny k více společnostem, vytvoří se pro každou společnost, která je v plánu uzávěrky a přiřazených k úkolu šablony samostatné úkoly. 
+Je nutné definovat také společnosti, které budou přidruženy k plánu uzávěrky. Pokud jsou šablony úlohy jsou přiřazeny k více společnostem, pro každou společnost, která je v plánu uzávěrky, bude vytvořen plán uzávěrky, který bude přiřazen k úkolu šablony. 
 
-Po dokončení uzávěrky plán vyberte **uzavřeno** pro tuto možnost. Historie úloh stále k dispozici **všechny finanční období uzavřít úkoly** stránku seznamu, ale plán uzávěrky budou odebrány z pracovního prostoru. Po uzavření plánu byla označena jako **uzavřeno**, nebudete moci přidat úkoly, úkoly upravit nebo zrušit úlohy.
+Po dokončení plánu uzávěrky pro něho vyberte možnost **Uzavřeno**. Historie úloh bude stále k dispozici ze stránky se seznamem **Všechny úkoly uzavření finančního období**, ale plán uzávěrky bude odebrán z pracovního prostoru. Po označení plánu uzávěrky jako **Uzavřeno** nebudete moci přidat upravit nebo zrušit úlohy v tomto plánu.
 
 
 

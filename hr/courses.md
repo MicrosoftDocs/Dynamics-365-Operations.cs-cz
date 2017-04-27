@@ -1,5 +1,5 @@
 ---
-title: "Nastavení školení"
+title: "Nastavení školících kurzů"
 description: "Správci lidských zdrojů a vedoucí pracovníci mohou funkce kurzů používat ke správě informací o školeních nabízených pracovníkům."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-training-courses"></a>Nastavení školení
+# <a name="set-up-training-courses"></a>Nastavení školících kurzů
 
 [!include[banner](includes/banner.md)]
 
@@ -65,7 +65,7 @@ V následující tabulce jsou uvedeny tři typy nastavení kurzů. Typy nastaven
 <td>Vyberte tento typ pro kurzy, které nemají denní agendu. Toto je výchozí typ nastavení, když vytváříte nový kurz.</td>
 </tr>
 <tr class="even">
-<td><strong>Pořad jednání</strong></td>
+<td><strong>Agenda</strong></td>
 <td>Tento typ vyberte pro naplánování podrobností pro jednotlivé dny vícedenního kurzu.</td>
 </tr>
 <tr class="odd">
@@ -88,7 +88,7 @@ U každého kurzu můžete provést následující úlohy.
 -   Doporučit hotely účastníkům kurzu
 -   Vytvořit popis kurzu, který je poté možné zveřejnit na portálu Samoobsluha pro zaměstnance
 
-  >**Poznámka:** kurzu můžete odstranit pouze v případě, že jej nikdo zaregistroval. 
+  >**Poznámka** Kurz lze odstranit pouze v případě, že do něj není nikdo zaregistrován. 
     
 ## <a name="course-statuses"></a>Stavy kurzu
 V následující tabulce jsou uvedeny možné stavy kurzu a akce, které lze provádět, je-li kurz nachází ve specifickém stavu.
@@ -135,7 +135,7 @@ V následující tabulce jsou uvedeny možné stavy kurzu a akce, které lze pro
 <a name="workflow"></a>Workflow
 --------
 
-Zaměstnanci, kteří registrovat do kurzu až **zaměstnance samoobslužném** stránka může mít jejich registraci směrovány pomocí pracovního postupu pro schválení.  Pracovní postup lze přiřadit ke kurzu na **Obecné** s náhledem na **kurzy** stránky.
+Zaměstnancům, kteří se do kurzu zaregistrují na stránce **Samoobsluha pro zaměstnance**, může být registrace nasměrována do workflowu pro schválení.  Workflow lze přiřadit ke kurzu na pevné záložce **Obecné** na stránce **Kurzy**.
 
 
 

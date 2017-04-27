@@ -75,7 +75,7 @@ Po převodu měny musíte znovu vygenerovat všechny sestavy odsouhlasení, a t�
 -   Pokud převod zúčtovací měny hlavní knihy způsobí rozdíly zaokrouhlení, nezaúčtují se tyto rozdíly pomocí dokladu, kde došlo k rozdílům zaokrouhlení. Místo toho jsou rozdíly zaúčtovány pomocí dokladu, který byl zadán pro zaúčtování převodu. Po převodu budou všechny výkazy, které provádí kontrolu na základě dokladu a data, zahrnovat tyto rozdíly zaokrouhlení. To chování je správné a můžete je ignorovat.
 -   Pokud výkazy odsouhlasení pro odběratele a dodavatele zobrazí částku rozdílu na řádku celkem a před převodem neexistoval žádný rozdíl, je nezbytné částku rozdílu zaúčtovat. Jedná se o součtový účet pro odběratele a dodavatele. Protiúčet je účtem hlavní knihy pro převodní ztrátu nebo převodní zisk.
 
-Když jsou smazány veškeré deníky transakce hlavní knihy, můžete provést zápisy do deníku transakcí hlavní knihy. Klepněte na tlačítko **financí**&gt;**periodické**&gt;**deníky**&gt;**zápis do deníku**. Po převodu měny lze přecenit částky v cizí měně, pokud je přecenění vyžadováno. Přecenění částek v cizí měně lze provést výběrem položky **Standardní** v poli **Metoda** pro přecenění.
+Když jsou smazány veškeré deníky transakce hlavní knihy, můžete provést zápisy do deníku transakcí hlavní knihy. Klikněte na položku **Hlavní kniha** &gt; **Periodicky** &gt; **Deníky** &gt; **Zapisování do deníku**. Po převodu měny lze přecenit částky v cizí měně, pokud je přecenění vyžadováno. Přecenění částek v cizí měně lze provést výběrem položky **Standardní** v poli **Metoda** pro přecenění.
 
 
 

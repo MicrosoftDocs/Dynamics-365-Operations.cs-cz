@@ -1,5 +1,5 @@
 ---
-title: "Vyrovnání platby částečné odběratele před datum skonta s konečnou platbu po datu skonta"
+title: "Vyrovnání částečné platby odběratele před datem slevy s konečnou platbou po datu slevy"
 description: "Tento článek popisuje účinek plateb pro vyrovnání faktur pro odběratele. Scénáře se zaměřují na dopad v dílčí hlavní knize, není v hlavní knize."
 author: twheeloc
 manager: AnnBe
@@ -26,30 +26,30 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Vyrovnání platby částečné odběratele před datum skonta s konečnou platbu po datu skonta
+# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Vyrovnání částečné platby odběratele před datem slevy s konečnou platbou po datu slevy
 
 [!include[banner](../includes/banner.md)]
 
 
 Tento článek popisuje účinek plateb pro vyrovnání faktur pro odběratele. Scénáře se zaměřují na dopad v dílčí hlavní knize, není v hlavní knize.
 
-Tato společnost prodává zboží zákazníkovi 4027. Tato společnost nabízí platební sleva 1 % Pokud je faktura zaplacena do 14 dnů. Faktury je nutné zaplatit do 30 dnů. Společnost Fabrikam nabízí také platební slevy pro částečné platby. Vyrovnání parametry jsou umístěny na **parametry pohledávek** stránky.
+Fabrikam prodává zboží zákazníkovi 4027. Fabrikam nabízí platební slevu 1 %, pokud je faktura splacena do 14 dní. Faktury je nutné zaplatit do 30 dnů. Společnost Fabrikam nabízí také platební slevy pro částečné platby. Parametry vyrovnání se nacházejí na stránce **Parametry pohledávek**.
 
 ## <a name="invoice"></a>Faktura
-25. června Arnold zadá a účtuje faktury pro částku 1 000,00 4027 zákazníka. Arnold, můžete zobrazit tuto fakturu pomocí **transakce** tlačítka **zákazníci** stránky.
+25. června Arnold zadá a zaúčtuje fakturu na 1 000,00 pro zákazníka 4027. Arnold může zobrazit tuto fakturu pomocí tlačítka **Transakce** na stránce **zákazníci**.
 
 | Doklad   | Typ transakce | Datum      | Faktura | Částka Má dáti v transakční měně | Částka Dal v transakční měně | Zůstatek  | Měna |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
-| FTI-10020 | Faktura          | 6/25/2015 | 10020   | 1 000,00                             |                                       | 1 000,00 | USD      |
+| FTI-10020 | Faktura          | 25. 6. 2015 | 10020   | 1 000,00                             |                                       | 1 000,00 | USD      |
 
 ## <a name="partial-payment-before-the-cash-discount-date"></a>Částečná platba před datem pro platební slevu
 2. července odběratel 4027 provede pro fakturu částečnou platbu 297,00. Platba má nárok na platební slevu, protože společnost Fabrikam nabízí slevy pro částečné platby a částečná platba je provedena před datem platební slevy. Proto odběratel 4027 získá platební slevu 3,00. Arnold zaznamená platbu pro odběratele 4027 pomocí deníku plateb. Arnold otevře stránku **Vyrovnat transakce**, aby mohl označit fakturu k vyrovnání.
 
 | Označit     | Použít platební slevu | Doklad   | Účet | Datum      | Datum splatnosti  | Faktura | Částka Má dáti v transakční měně | Měna | Částka k vyrovnání |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
-| Vybrané | Normální            | FTI-10020 | 4027    | 6/25/2015 | 7/25/2015 | 10020   | 1 000,00                             | USD      | 297,00           |
+| Vybrané | Normální            | FTI-10020 | 4027    | 25. 6. 2015 | 25. 7. 2015 | 10020   | 1 000,00                             | USD      | 297,00           |
 
-Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**. Pokud nezměníte hodnotu **Částka k vyrovnání** na hodnotu 297,00, hodnoty **Částka platební slevy**, které se zobrazí, se budou lišit. Však 3.00 se považuje za platební slevy při zaúčtování platby, protože vyrovnání automaticky upraví ** částka k vyrovnání ** hodnoty pro vás.
+Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**. Pokud nezměníte hodnotu **Částka k vyrovnání** na hodnotu 297,00, hodnoty **Částka platební slevy**, které se zobrazí, se budou lišit. Avšak 3,00 bude získáno jako platební sleva při zaúčtování platby, protože vyrovnání automaticky nastaví hodnotu ***Částka k vyrovnání*** za vás.
 
 |                              |           |
 |------------------------------|-----------|
@@ -63,7 +63,7 @@ Arnold zaúčtuje tuto platbu. Faktura má nyní zůstatek 700,00. Následujíc�
 
 | Doklad    | Typ transakce | Datum      | Faktura | Částka Má dáti v transakční měně | Částka Dal v transakční měně | Zůstatek | Měna |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
-| FTI-10020  | Faktura          | 6/25/2015 | 10020   | 1 000,00                             |                                       | 700,00  | USD      |
+| FTI-10020  | Faktura          | 25. 6. 2015 | 10020   | 1 000,00                             |                                       | 700,00  | USD      |
 | ARP-10020  |  Platba         | 7/1/2015  |         |                                      | 297,00                                | 0,00    | USD      |
 | SLEV-10020 |  Platební sleva   | 7/1/2015  |         |                                      | 3,00                                  | 0,00    | USD      |
 
@@ -72,7 +72,7 @@ Arnold zaúčtuje tuto platbu. Faktura má nyní zůstatek 700,00. Následujíc�
 
 | Označit     | Použít platební slevu | Doklad   | Účet | Datum      | Datum splatnosti  | Faktura | Částka Má dáti v transakční měně | Měna | Částka k vyrovnání |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
-| Vybrané | Normální            | FTI-10020 | 4027    | 6/25/2015 | 7/25/2015 | 10020   | 700,00                               | USD      | 700,00           |
+| Vybrané | Normální            | FTI-10020 | 4027    | 25. 6. 2015 | 25. 7. 2015 | 10020   | 700,00                               | USD      | 700,00           |
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
@@ -88,7 +88,7 @@ Pokud Arnold změní hodnotu v poli **Použít platební slevu** na **Vždy**, n
 
 | Označit     | Použít platební slevu | Doklad   | Účet | Datum      | Datum splatnosti  | Faktura | Částka Má dáti v transakční měně | Částka Dal v transakční měně | Měna | Částka k vyrovnání |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
-| Vybrané | Vždy            | FTI-10020 | 4027    | 6/25/2015 | 7/25/2015 | 10020   | 700,00                               |                                       | USD      | 693,00           |
+| Vybrané | Vždy            | FTI-10020 | 4027    | 25. 6. 2015 | 25. 7. 2015 | 10020   | 700,00                               |                                       | USD      | 693,00           |
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
@@ -104,10 +104,10 @@ Arnold změní hodnotu pole **Použít platební slevu** zpět na **Normální**
 
 | Doklad    | Typ transakce | Datum      | Faktura | Částka Má dáti v transakční měně | Částka Dal v transakční měně | Zůstatek | Měna |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
-| FTI-10020  | Faktura          | 6/25/2015 | 10020   | 1 000,00                             |                                       | 0,00    | USD      |
+| FTI-10020  | Faktura          | 25. 6. 2015 | 10020   | 1 000,00                             |                                       | 0,00    | USD      |
 | ARP-10020  |                  | 7/1/2015  |         |                                      | 297,00                                | 0,00    | USD      |
 | SLEV-10020 |                  | 7/1/2015  |         |                                      | 3,00                                  | 0,00    | USD      |
-| ARP-10021  |                  | 7/11/2015 |         |                                      | 700,00                                | 0,00    | USD      |
+| ARP-10021  |                  | 4 900 * 30% = 1 470 |         |                                      | 700,00                                | 0,00    | USD      |
 
 
 

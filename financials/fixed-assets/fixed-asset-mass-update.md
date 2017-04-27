@@ -1,6 +1,6 @@
 ---
 title: "Hromadná aktualizace dlouhodobého majetku"
-description: "Pokud používáte knihy, můžete změnit odpisu pro skupiny majetku, které jsou součástí stejné knize."
+description: "Pokud používáte knihy, můžete změnit způsob odpisu pro skupinu majetku, které jsou součástí stejné knihy."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Pokud používáte knihy, můžete změnit odpisu pro skupiny majetku, které jsou součástí stejné knize.
+Pokud používáte knihy, můžete změnit způsob odpisu pro skupinu majetku, které jsou součástí stejné knihy.
 
 Pokud se nacházíte například ve Spojených státech a uvedete více než 40 procent svého majetku do služby v průběhu čtvrtého čtvrtletí daného roku, je nutné použít způsob odpisu v polovině čtvrtletí. Proces hromadné aktualizace slouží ke změně všech majetků, které vyžadují nový způsob odpisu. 
 

@@ -42,14 +42,14 @@ Koeficienty jsou procenta, která se používají při odpisování majetku. Kdy
 Níže uvedená pravidla a příklady ukazují, jak lze nastavit koeficienty pro jednotlivé typy odpisů. 
 
 > [!NOTE] 
-> Když vyberete **faktor** v **metoda** pole, **faktor** pole a **Interval** pole jsou zobrazeny.
+> Když vyberete možnost **Faktor** v poli **Metoda**, zobrazí se pole **Faktor** a pole **Interval**.
 
 ## <a name="progressive-depreciation"></a>Progresivní metoda odepisování
 Hodnota v poli **Koeficient** je větší než **50**.
 
 ### <a name="example"></a>Příklad
 
-Pořizovací cena je 100.000, koeficient je 70, doba životnosti je 10let $2 a odepisování začíná dnem 1. Částky odpisů a zůstatkové účetní hodnoty částky jsou zobrazeny pouze pro prvních šest let životnosti.
+Pořizovací cena je 100 000, koeficient je 70, doba životnosti je 10 let a odepisování začíná 1. ledna. Částky odpisů a zůstatkové účetní hodnoty jsou zobrazeny pouze pro prvních šest let životnosti.
 
 | Rok | Období      | Odpisovaná částka | Zůstatková účetní hodnota |
 |------|-------------|---------------------|-----------------------|
@@ -65,7 +65,7 @@ Hodnota v poli **Koeficient** je menší než **50**.
 
 ### <a name="example"></a>Příklad
 
-Pořizovací cena je 100.000, koeficient je 20, doba životnosti je 10let $2 a odepisování začíná dnem 1. Částky odpisů a zůstatkové účetní hodnoty částky jsou zobrazeny pouze pro prvních šest let životnosti.
+Pořizovací cena je 100 000, koeficient je 20, doba životnosti je 10 let a odepisování začíná 1. ledna. Částky odpisů a zůstatkové účetní hodnoty jsou zobrazeny pouze pro prvních šest let životnosti.
 
 | Rok | Období      | Odpisovaná částka | Zůstatková účetní hodnota |
 |------|-------------|---------------------|-----------------------|

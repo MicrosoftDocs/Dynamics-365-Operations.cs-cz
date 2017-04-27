@@ -1,6 +1,6 @@
 ---
 title: "Přehled rozšířeného odsouhlasení banky"
-description: "Rozšířené odsouhlasení banky můžete importovat elektronické bankovní výpisy a automaticky odsouhlasit s bankovními transakcemi v 365 Microsoft Dynamics pro operace.  Tento článek vysvětluje nastavení procesů odsouhlasení."
+description: "Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Operations.  Tento článek vysvětluje nastavení procesů odsouhlasení."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,35 +29,35 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Rozšířené odsouhlasení banky můžete importovat elektronické bankovní výpisy a automaticky odsouhlasit s bankovními transakcemi v 365 Microsoft Dynamics pro operace.  Tento článek vysvětluje nastavení procesů odsouhlasení.  
+Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Operations.  Tento článek vysvětluje nastavení procesů odsouhlasení.  
 
-Existuje několik kousků, které musí být nastaveny před použitím funkce Rozšířené bankovního odsouhlasení. Další informace o nastavení import bankovního výpisu naleznete v tématu [nastavit proces importu výpisu banky](set-up-advanced-bank-reconciliation-import-process.md).  Požadavky na nastavení procesu odsouhlasení jsou podrobně popsány níže.
+Existuje několik prvků, které musí být nastaveny před použitím funkce Rozšířené bankovního odsouhlasení. Další informace o nastavení importu bankovního výpisu naleznete v tématu [Nastavení procesu importu výpisu banky](set-up-advanced-bank-reconciliation-import-process.md).  Požadavky pro nastavení procesu odsouhlasení jsou podrobně popsány níže.
 
 ## <a name="transaction-codes"></a>Kódy transakce
-Kódy transakcí lze použít jako součást pravidla párování pro odsouhlasení banky.  Kódy transakcí vám pomůže tak, aby odpovídala stejné typy transakcí mezi Dynamics 365 pro operace a bankovní výpis.  Provedení tohoto typu odpovídající je nutné nejprve definovat typy transakcí pro bankovní transakce z 365 Dynamics pro operace a potom namapovat tyto typy kódů transakcí výkazu bankou.  Typy transakcí pro Dynamics 365 pro bankovní operace transakce jsou definovány **typ bankovní transakce** stránky.  To je také kde můžete definovat hlavní účet pro účtování přiřazený k tomuto typu transakce. 
+Kódy transakcí lze použít jako součást pravidel párování pro odsouhlasení banky.  Kódy transakcí vám pomohou spárovat pouze stejné typy transakcí mezi aplikací Dynamics 365 for Operations a vaším bankovním výpisem.  Abyste mohli provést tento typ párování, je nutné nejprve definovat typy transakcí pro bankovní transakce z aplikace 365 Dynamics for Operations a potom namapovat tyto typy na kódy transakcí výpisu používané vaší bankou.  Typy transakcí pro bankovní transakce aplikace Dynamics 365 for Operations jsou definovány na stránce **Typ bankovní transakce**.  To je také místo, kde můžete definovat hlavní účet pro účtování přiřazený k tomuto typu transakce. 
 
-Jakmile jsou definovány aplikace Dynamics 365 pro kódy transakce bankovních operací, potom namapujte na kódy transakcí používané ve vaší elektronické bankovní výpisy.  Tento proces mapování se provádí pomocí **mapování kódu transakce** stránky.  Mapování kódu transakce je dokončena samostatně pro každý bankovní účet.
+Jakmile jsou definovány vaše kódy bankovních transakcí aplikace Dynamics 365 for Operations, namapujte je na kódy transakcí používané ve vašich elektronických bankovních výpisech.  Tento proces mapování se provádí pomocí stránky **Mapování kódu transakce**.  Mapování kódu transakce je dokončeno samostatně pro každý bankovní účet.
 
 ## <a name="matching-rules-and-matching-rule-sets"></a>Pravidla spárování a sady pravidel párování
-Pravidla pro porovnávání umožňují definovat kritéria pro automatické odsouhlasení mezi Dynamics 365 pro operace bankovních transakcí a transakcí bankovního výpisu.  Nastavit pravidla pro porovnávání se provádí na **pravidla párování pro odsouhlasení** stránky.  Další informace naleznete v tématu [nastavit pravidla párování pro odsouhlasení banky](set-up-bank-reconciliation-matching-rules.md). 
+Pravidla párování vám umožňují definovat kritéria pro automatické odsouhlasení mezi bankovními transakcemi aplikací Dynamics 365 for Operations a transakcemi bankovního výpisu.  Nastavení pravidel párování se provádí na stránce **Pravidla párování pro odsouhlasen**.  Další informace naleznete v tématu [Nastavení sady pravidel párování pro odsouhlasení banky](set-up-bank-reconciliation-matching-rules.md). 
 
-Sady pravidel párování se používají k definování skupiny pravidla porovnávání, která se spustí v pořadí během odsouhlasení banky.  Sady pravidel párování jsou konfigurovány na **sady pravidel párování pro odsouhlasení** stránky.
+Sady pravidel párování se používají pro definování skupiny pravidel párování, která se spustí v pořadí v průběhu procesu odsouhlasení banky.  Sady pravidel párování jsou konfigurovány na stránce **Sady pravidel párování pro odsouhlasení**.
 
 ## <a name="cash-and-bank-management-parameters"></a>Parametry pokladny a banky
-Počet parametrů jsou specifické pro proces rozšířené bankovního odsouhlasení na **parametry řízení hotovosti a banky** stránky.  **Částka řádku výpisu zobrazit na straně má dáti/Dal** změní na zobrazení částek **bankovní výpis** stránky.  Pokud je vybrána tato možnost, zobrazí se v samostatné MD a Dal sloupcích částky transakce bankovního výpisu.  Pokud není zaškrtnuto, budou částky transakce bankovního výpisu jednotná částka sloupce s příslušnou značkou. 
+Existuje několik parametrů specifických pro proces rozšířeného bankovního odsouhlasení na stránce **Parametry pokladny a banky**.  Možnost **Zobrazit částku řádku výpisu ve formátu Má dáti/Dal** změní zobrazení částek na stránce **Bankovní výpis**.  Pokud je vybrána tato možnost, zobrazí se v samostatných sloupcích Má dáti a Dal částky transakce bankovního výpisu.  Pokud není vybrána, zobrazí se částky transakce bankovního výpisu v jednom sloupci částky s příslušným znaménkem. 
 
-Možnosti ověřování, které jsou nastaveny na stránce parametry přepsat vybrané položky nastavit na odpovídající pravidla.  Například nelze ručně nebo automaticky spáruje dokumenty nad rámec na stránce parametry nastavit datum rozdíl.  Také pokud možnost **ověřit mapování pro typ transakce** je vybrána, typy transakcí musí být mapována mezi 365 Dynamics pro bankovní operace transakce a transakce bankovního výpisu v pořadí pro transakce ručně nebo automaticky odpovídat. 
+Možnosti ověřování, které jsou nastaveny na stránce parametrů, přepíší volby nastavené na pravidla párování.  Nelze například ručně nebo automaticky spárovat dokumenty nad rámec rozdílu dat nastaveného na stránce parametrů.  Zároveň pokud je vybrána možnost **Ověřit mapování typu transakce**, typy transakcí musí být namapovány mezi bankovními transakcemi aplikace Dynamics 365 for Operations a transakcemi bankovního výpisu, aby mohly být transakce párovány ručně nebo automaticky. 
 
-Je také nutné nakonfigurovat potřebné číselné řady v **parametry řízení hotovosti a banky** stránky.  Na **číselné řady** kartě kódy nastavit číselné řady pro stahování **ID, ID výkazu, Odsouhlasit ID a bankovního odsouhlasení** odkazy.
+Je také nutné nakonfigurovat potřebné číselné řady na stránce **Parametry pokladny a banky**.  Na kartě **Číselné řady** nastavte kódy číselných řad pro stažení odkazů **ID, ID výpisu, ID odsouhlasení a bankovního odsouhlasení**.
 
 ## <a name="bank-account-reconciliation-options"></a>Možnosti odsouhlasení bankovního účtu
-Je nutné nejprve povolit rozšířené odsouhlasení banky pro bankovní účet.  Některé další možnosti jsou k dispozici na **bankovního účtu** stránky, jakmile je povolena funkce Rozšířené bankovního odsouhlasení. 
+Nejdříve musíte povolit rozšířené odsouhlasení banky pro bankovní účet.  Jakmile je povolena funkce Rozšířené bankovního odsouhlasení, bude k dispozici na stránce **Bankovní účet** k dispozici několik dalších možností. 
 
-**Použití bankovní výpisy jako potvrzení elektronické platby** funkce je integrována funkce odsouhlasení banky stavy elektronické platby.  Pokud je tato možnost povolena, bankovní dokument se automaticky vytvoří pro elektronické platby stav nastaven na **odeslané**.  Kromě toho stav elektronické platby bude aktualizován z **odeslané** k **přijato** po zaplacení je obsažena, odsouhlasen a zaúčtovány. 
+Funkce **Použít bankovní výpisy jako potvrzení elektronické platby** integruje funkci odsouhlasení banky se stavem elektronické platby.  Pokud je tato možnost povolena, vytvoří se automaticky bankovní dokument pro elektronické platby se stavem nastaveným na **Odesláno**.  Kromě toho se stav elektronické platby aktualizuje z **Odesláno** na **Přijato** poté, co bude platba spárována, odsouhlasena a zaúčtována. 
 
-**Název bankovního účtu v příkazech** pole je název používaný pro bankovní účet ve vaší elektronické bankovní výpisy.  Tento název se používá při určování transakcí, které chcete importovat bankovního účtu z příkazu, který může obsahovat informace pro více bankovních účtů. 
+Pole **Název bankovního účtu v příkazech** představuje název používaný pro bankovní účet ve vašich elektronických bankovních výpisech.  Tento název se používá při určování transakcí, které mají být importovány do bankovního účtu z příkazu, který může obsahovat informace pro více bankovních účtů. 
 
-Možnost **po importu odsouhlasit** bude automaticky ověřit bankovní výpis, vytvořte nové odsouhlasení bankovního účtu a listu a spustit výchozí odpovídající sadu pravidel.  Tato funkce automatizuje proces až k bodu transakcí, které jsou ručně přiřazeny.  Při importu bude nastaven jako výchozí nastavení v položce bankovního účtu.
+Možnost **Po importu odsouhlasit** automaticky ověří bankovní výpis, vytvoří nové odsouhlasení banky a list a spustí výchozí sadu pravidel párování.  Tato funkce automatizuje proces až do okamžiku, kdy musíte odpovídající transakce ručně spárovat.  Při importu bude nastaveno výchozí nastavení bankovního účtu
 
 
 

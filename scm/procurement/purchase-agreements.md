@@ -73,7 +73,7 @@ V oblasti **Smlouvy** se zobrazuje celkové množství nebo celková částka, p
 K řádkům nákupní objednávky a řádkům faktury, které přispívají k výpočtu plnění, se dostanete výběrem akce **Související informace** na řádcích nebo v záhlaví nákupní smlouvy.
 
 ## <a name="confirmations-and-version-history-for-purchase-agreements"></a>Potvrzení a historie historie verzí nákupních smluv
-Při potvrzení nákupní smlouvy bude aktuální verze nákupní smlouvy uložena v tabulce historie. Změníte-li nákupní smlouvu, můžete ji znovu potvrdit a uložit jinou verzi nákupní smlouvy do historie. Pokud není potvrzení nákupní smlouvy, slouží stále k vytvoření POs. Však nejsou uloženy informace o historii pro nákupní smlouvy. Můžete zobrazit náhled všech verzí smlouvy nebo si je vytisknout. Poté můžete sdílet revize s dodavatelem a získat schválení.
+Při potvrzení nákupní smlouvy bude aktuální verze nákupní smlouvy uložena v tabulce historie. Změníte-li nákupní smlouvu, můžete ji znovu potvrdit a uložit jinou verzi nákupní smlouvy do historie. Pokud nákupní smlouvu nepotvrdíte, je možné ji stále používat k vytvoření nákupních objednávek. Informace o historii nákupní smlouvy však nebudou uloženy. Můžete zobrazit náhled všech verzí smlouvy nebo si je vytisknout. Poté můžete sdílet revize s dodavatelem a získat schválení.
 
 ## <a name="applying-purchase-agreements-in-the-ordering-process"></a>Použití nákupních smluv v procesu objednávky
 Při vytváření nákupní objednávky můžete použít nákupní smlouvu. Informace ze smlouvy, jako jsou například platební podmínky, dodací podmínky nebo adresa dodání, se poté zkopírují do záhlaví nákupní objednávky. Pokud nákupní objednávka obsahuje jeden nebo více řádků pro produkty nebo kategorie, které jsou kryty smlouvou, použijí se pro tyto řádky ceny a slevy z nákupní smlouvy. Částka nebo množství v řádku objednávky přispívá k plnění závazku V nákupní smlouvě. Stejná nákupní objednávka může zahrnovat řádky, které nesouvisí s nákupní smlouvou, i řádky, které mají závazek pro nákupní smlouvu.  
@@ -94,9 +94,9 @@ Můžete kopírovat finanční dimenze do záhlaví dokladů nebo jednotlivých 
 <a name="see-also"></a>Viz také
 --------
 
-[Vytvořit nákupní smlouvy (úkol guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
+[Vytvoření nové nákupní smlouvy (průvodce záznamem úloh)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
 
-[Vytvoření dílčí nákupní objednávky z nákupní smlouvy (úkol guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+[Vytvoření dílčí nákupní objednávky z nákupní smlouvy (průvodce záznamem úloh)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
 
 
 

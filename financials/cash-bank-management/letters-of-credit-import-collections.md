@@ -36,7 +36,7 @@ V tomto článku jsou obecné informace o akreditivu a kolekcích importu. Oba t
 <a name="letters-of-credit"></a>Akreditivy
 -----------------
 
-Akreditivy používají pro mezinárodní transakce a pomohou zaručit, že platby budou provedeny. Dokumentární akreditiv je dohoda vystavený bankou, ve kterém banka zavazuje výplatu za kupujícím, za předpokladu, že jsou splněny podmínky smlouvy mezi kupujícím a prodávajícím. Dokumentární akreditiv je označuje také jako dokumentární akreditiv (DC).
+Akreditivy se používají pro mezinárodní transakce a pomáhají zajistit, že se platby uskuteční. Pojem akreditiv označuje bankovní smlouvu vydanou bankou, ve které banka souhlasí se zajištěním platby jménem kupujícího za předpokladu, že jsou splněny podmínky mezi kupujícím a prodávajícím. Všimněte si, že akreditiv se také nazývá dokumentární akreditiv (DC).
 
 U importního akreditivu je právnická osoba nákupčí nebo uchazeč o akreditiv. U exportního akreditivu je právnická osoba prodejce nebo příjemce akreditivu. Následující strany jsou zahrnuty do akreditivu:
 

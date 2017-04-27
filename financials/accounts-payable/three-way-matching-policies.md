@@ -65,7 +65,7 @@ Zásady párování faktur v tomto příkladu pomáhají osobám v následujíc�
 1.  Sammy, pracovník v oddělení příjmu ve společnosti Fabrikam, obdrží celkové množství strojů dodaných od společnosti Contoso. Zadá na příjemce produktu počet 5. Protože nákupní objednávka byla plně přijata, stav nákupní objednávky se změní na Přijato.
 2.  April, koordinátor závazků ve společnosti Fabrikam, zadá a ověří fakturu odeslanou společností Contoso. Ověří následující informace:
     -   U položek, které vyžadují třícestné párování, ověří zda množství na řádku faktury odpovídá množství, které bylo přijato. Přijaté množství je uvedeno na příjemce produktu, které je párováno s fakturou.
-    -   Pro položky, které vyžadují dvoucestné a třícestné párování jsou ceny na řádku faktury v rámci odchylky, které jsou definovány v Microsoft Dynamics 365 pro Operations.This obsahuje následující typy odpovídající ceny:
+    -   Pro položky, které vyžadují dvoucestné nebo třícestné párování, jsou ceny na řádku faktury v rámci tolerance definované v aplikaci Microsoft Dynamics 365 for Operations. Jedná se o následující typy párování ceny:
         -   Párování čisté jednotkové ceny – čistá jednotková cena na řádku faktury odpovídá čisté jednotkové ceně na řádku nákupní objednávky v rámci procenta odchylky. V tomto příkladu je tolerance pro čistou jednotkovou cenu +8 %.
         -   Párování celkových cen – čistá částka na řádku faktury odpovídá čisté částce na řádku nákupní objednávky v rámci procenta, částky nebo procenta a částky odchylky. V tomto příkladu je tolerance celkové párované ceny +15 %.
 
@@ -74,11 +74,11 @@ Papírová faktura ze společnosti Contoso obsahuje následující informace.
 | Položka                        | Množství | Jednotková cena | Čistá částka |
 |-----------------------------|----------|------------|------------|
 | 1500 – zařízení CNC Milicron | 5        | 8 100,00   | 40 500,00  |
-| Expedice a zpracování       |          |            | 4 000,00   |
+| Expedice a zpracování       |          |            | 4,000.00   |
 | Daň                         |          |            | 0,00       |
-| Celkem                       |          |            | 44 500,00  |
+| Celkem                       |          |            | 44,500.00  |
 
-V Microsoft Dynamics 365 pro operace řádek faktury obsahuje následující informace.
+V aplikaci Microsoft Dynamics 365 for Operations řádek faktury obsahuje následující informace.
 
 | Č. položky                 | Množství | Jednotková cena | Čistá částka řádku | Zásady párování    | Spárování množství v příjemce produktu | Shoda ceny | Párování celkových cen |
 |-----------------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -114,7 +114,7 @@ Zásady párování faktur v tomto příkladu pomáhají osobám v následujíc�
 1.  Položky dorazí. Sammy, pracovník v oddělení příjmu v divizi pro Malajsii společnosti Fabrikam, bude přerušen a nezaúčtuje příjemku produktu okamžitě.
 2.  April, koordinátor závazků ve společnosti Fabrikam, zadá a ověří fakturu odeslanou společností Contoso. Ověří následující informace:
     -   U položek, které vyžadují třícestné párování, ověří zda množství na řádku faktury odpovídá množství, které bylo přijato. Přijaté množství je uvedeno na příjemce produktu, které je párováno s fakturou.
-    -   Pro položky, které vyžadují dvoucestné a třícestné párování jsou ceny na řádku faktury v tolerancích, které jsou definovány v Microsoft Dynamics 365 pro operace. Jedná se o následující typy odpovídající ceny:
+    -   Pro položky, které vyžadují dvoucestné nebo třícestné párování, jsou ceny na řádku faktury v rámci tolerance definované v aplikaci Microsoft Dynamics 365 for Operations. Jedná se o následující typy párování ceny:
         -   Párování čisté jednotkové ceny – čistá jednotková cena na řádku faktury odpovídá čisté jednotkové ceně na řádku nákupní objednávky v rámci procenta odchylky. V tomto příkladu je tolerance pro čistou jednotkovou cenu +2 %.
         -   Párování celkových cen – čistá částka na řádku faktury odpovídá čisté částce na řádku nákupní objednávky v rámci procenta, částky nebo procenta a částky odchylky. V tomto příkladu je tolerance celkové párované ceny +10 %.
 
@@ -124,10 +124,10 @@ Papírová faktura ze společnosti Contoso obsahuje následující informace.
 |-----------------------|----------|------------|------------|
 | PH2500 – Počítač     | 2        | 2 500,00   | 5 000,00   |
 | MM01 – bezdrátová myš | 2        | 41,00      | 82,00      |
-| Jednotka USB             | 200      | 10,05      | 2 010,00   |
-| Celková faktura         |          |            | 7 092,00   |
+| Jednotka USB             | 200      | 10.05      | 2,010.00   |
+| Celková faktura         |          |            | 7,092.00   |
 
-V Microsoft Dynamics 365 pro operace řádek faktury obsahuje následující informace.
+V aplikaci Microsoft Dynamics 365 for Operations řádek faktury obsahuje následující informace.
 
 | Č. položky           | Množství | Jednotková cena | Čistá částka řádku | Zásady párování    | Spárování množství v příjemce produktu | Shoda ceny | Párování celkových cen |
 |-----------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -143,7 +143,7 @@ Mějte na paměti následující body:
 Pokud je schválení vyžadováno u faktur, které mají být zaúčtovány s odlišnostmi v párování faktur, je nutné vybrat možnost Schválit zaúčtování s odpovídajícími odlišnostmi na stránce Podrobnosti o párování faktur dříve, než bude možné zaúčtovat fakturu s chybou v párování ceny nebo párování množství. Pokud schválení není vyžadováno, zpracování faktury může pokračovat, pokud neexistují žádné chyby v zaúčtování.
 
 
-Další informace naleznete v tématu [účtů, párování faktur závazků](accounts-payable-invoice-matching.md).
+Další informace naleznete v tématu [Nastavení párování faktur závazků](accounts-payable-invoice-matching.md).
 
 
 

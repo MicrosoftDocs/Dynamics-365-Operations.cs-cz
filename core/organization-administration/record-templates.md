@@ -1,5 +1,5 @@
 ---
-title: "Vytvoření šablony záznamu"
+title: "Vytvoření šablon záznamů"
 description: "Tento článek představuje koncept šablon záznamů a vysvětluje, jak je lze použít k vytváření záznamů pro sdílení informací."
 author: pvillads
 manager: AnnBe
@@ -24,14 +24,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="create-record-templates"></a>Vytvoření šablony záznamu
+# <a name="create-record-templates"></a>Vytvoření šablon záznamů
 
 [!include[banner](../includes/banner.md)]
 
 
 Tento článek představuje koncept šablon záznamů a vysvětluje, jak je lze použít k vytváření záznamů pro sdílení informací.
 
-Šablony záznamu můžete vytvořit záznamy další rychle v 365 Microsoft Dynamics pro operace. Šablony záznamu můžete vytvořit pouze pro některé typy záznamů v aplikaci Microsoft Dynamics 365 pro operace. Například *** Představte si zadáváte informace o pronájmu pro firmy pronájem auta, který se nachází v San Francisco. Vzhledem k tomu, že většina zákazníků bude pravděpodobně z okolí Brna, bylo by výhodné automaticky vyplnit hodnoty pro pole **Stát**, **Země** a **Město** ve formuláři pronájmu. **Poznámka:** můžete používat šablony pouze pro oblasti Dynamics 365 pro operace, které máte přístup. Všechny názvy šablon však vidíte také při vytvoření nového záznamu a ostatní uživatelé je vidí, když vytváříte šablony dostupné pro všechny uživatele. Při pojmenování šablon je třeba mít tento fakt na paměti. Nepoužívejte například názvy, které zahrnují slovo „provize“, pokud je důvěrnou informací to, že někteří zaměstnanci ve společnosti mají plat založený na provizích. Pokud v určitém formuláři existuje jedna nebo více šablon, ke kterým máte přístup, a pokusíte se o vytvoření nového záznamu ve formuláři, zobrazí se stránka **Vyberte šablonu pro...**. Pokud vyberete ze seznamu některou šablonu, bude vytvořen nový záznam obsahující výchozí údaje založené na této vybrané šabloně. Pokud nechcete použít šablony při vytváření nových záznamů, zaškrtněte **tento dotaz již nezobrazovat** políčko v **vyberte šablonu pro** stránky. Chcete-li znovu zobrazit dialogové okno výběru šablony, klepněte pravým tlačítkem myši všechny záznamy, klepněte na **zaznamenat informace o**a potom klepněte na tlačítko **zobrazit výběr šablony**.
+Šablony záznamu vám mohou pomoci vytvořit záznamy rychleji v aplikaci Microsoft 365 for Operations. Šablony záznamu můžete vytvořit pouze pro některé typy záznamů v aplikaci Microsoft Dynamics 365 for Operations. Například si **** představte že zadáváte informace o půjčovně automobilů, která se nachází v Brně. Vzhledem k tomu, že většina zákazníků bude pravděpodobně z okolí Brna, bylo by výhodné automaticky vyplnit hodnoty pro pole **Stát**, **Země** a **Město** ve formuláři pronájmu. **Poznámka:** Šablony lze použít pouze na ty oblasti aplikace Microsoft Dynamics 365 for Operations, k nimž máte přístup. Všechny názvy šablon však vidíte také při vytvoření nového záznamu a ostatní uživatelé je vidí, když vytváříte šablony dostupné pro všechny uživatele. Při pojmenování šablon je třeba mít tento fakt na paměti. Nepoužívejte například názvy, které zahrnují slovo „provize“, pokud je důvěrnou informací to, že někteří zaměstnanci ve společnosti mají plat založený na provizích. Pokud v určitém formuláři existuje jedna nebo více šablon, ke kterým máte přístup, a pokusíte se o vytvoření nového záznamu ve formuláři, zobrazí se stránka **Vyberte šablonu pro...**. Pokud vyberete ze seznamu některou šablonu, bude vytvořen nový záznam obsahující výchozí údaje založené na této vybrané šabloně. Pokud nechcete použít šablony při vytváření nových záznamů, zaškrtněte políčko **Tento dotaz příště nezobrazovat** na stránce **Vybrat šablonu pro**. Pokud chcete zobrazit dialogové okno pro výběr šablony znovu, klikněte pravým tlačítkem na jakýkoli záznam, klikněte na **Informace o záznamu** a pak klikněte na **Zobrazit výběr šablony**.
 
 
 

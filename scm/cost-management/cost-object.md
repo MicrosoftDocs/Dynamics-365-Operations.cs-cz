@@ -68,20 +68,20 @@ Následující tabulka zobrazuje, co je nákladový objekt a co je objekt zásob
     -   Zaúčtované mn.
 -   Pole **Průměrné náklady na jednotku** je vypočítané. Hodnota se vypočítá jako podíl hodnoty pole **Hodnota** a hodnoty pole **Množství**.
 
-**Poznámka:** ** zahrnovat fyzickou hodnotu ** parametr nemá vliv na předchozí výpočty.
+**Poznámka:** Parametr **Zahrnovat fyzickou hodnotu **nemá žádný vliv na předchozí výpočty.
 
 <a name="see-also"></a>Viz také
 --------
 
-[Product dimension group](https://technet.microsoft.com/en-us/library/aa499382.aspx)
+[Skupina dimenzí produktů](https://technet.microsoft.com/en-us/library/aa499382.aspx)
 
-[Storage dimension group](https://technet.microsoft.com/en-us/library/hh209317.aspx)
+[Skupina dimenze úložiště](https://technet.microsoft.com/en-us/library/hh209317.aspx)
 
-[Tracking dimension group](https://technet.microsoft.com/en-us/library/hh209465.aspx)
+[Skupina sledovací dimenze](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[Co je nové nebo změněné aplikace Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Co je nového nebo změněného v aplikaci Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
-[Cost entries](cost-entries.md)
+[Položky nákladů](cost-entries.md)
 
 
 

@@ -65,7 +65,7 @@ Po nastavení mohou pracovníci zadat různé typy registrací.
 -   Nepřímé činnosti, které jsou neproduktivními aktivitami, které může pracovník provádět během pracovního dne. Mezi tyto činnosti může patřit schůzka nebo čištění pracovního prostoru.
 -   Přesčas, který lze registrovat jako hodiny navíc, pružnou pracovní dobou nebo přesčas.
 
-## <a name="adding-clockout-registrations"></a>Přidání registrace clockout
+## <a name="adding-clockout-registrations"></a>Přidání registrací odchodů
 Pokud se pracovník zapomene odhlásit na konci pracovního dne, lze přidat chybějící registraci spuštěním dávkové úlohy. Systém porovná čas příchodu a odchodu čas podle přidruženého profilu pracovníka a automaticky vloží chybějící registraci odchodu v souladu s koncovým časem v profilu. Registrace příchodu a odchodu jsou důležité pro následující výpočet a schválení registrací času před jejich přenesením do mzdového systému.
 
 ## <a name="calculating-registrations"></a>Výpočet registrací

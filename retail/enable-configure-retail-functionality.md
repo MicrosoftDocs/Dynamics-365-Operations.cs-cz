@@ -1,6 +1,6 @@
 ---
-title: "Inicializovat data osiva v prostředí nové maloobchodní"
-description: "Tento článek popisuje data, která je vytvořena jako součást inicializační proces pro 365 Microsoft Dynamics pro operace - Retail."
+title: "Inicializace zdrojových dat v novém prostředí maloobchodu"
+description: "Tento článek popisuje data, která jsou vytvořena v rámci inicializačního procesu pro aplikaci Microsoft Dynamics 365 for Operations - Retail."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 49621
 ms.assetid: 4dc762eb-190e-4485-8f55-b0cafc81bc37
 ms.search.region: global
@@ -26,17 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="initialize-seed-data-in-a-new-retail-environment"></a>Inicializovat data osiva v prostředí nové maloobchodní
+# <a name="initialize-seed-data-in-a-new-retail-environment"></a>Inicializace zdrojových dat v novém prostředí maloobchodu
 
 [!include[banner](includes/banner.md)]
 
 
-Tento článek popisuje data, která je vytvořena jako součást inicializační proces pro 365 Microsoft Dynamics pro operace - Retail.
+Tento článek popisuje data, která jsou vytvořena v rámci inicializačního procesu pro aplikaci Microsoft Dynamics 365 for Operations - Retail.
 
 Po zavedení maloobchodního řešení pomocí aplikace Microsoft Dynamics Lifecycle Services (LCS), musíte k vytvoření základních dat konfigurace inicializovat maloobchodní konfiguraci. **Upozornění:** Před inicializací konfigurace maloobchodu se ujistěte, že jste zadali jazyk a poštovní adresu pro každou právnickou osobu všude, kde maloobchody nastavíte. Tento krok je nutné provést pro každou právnickou osobu, kterou používáte pro maloobchod. Pro inicializaci konfigurace maloobchodu, postupujte takto.
 
-1.  Spusťte Dynamics 365 pro operace klienta.
-2.  Klepněte na tlačítko **maloobchodní a commerce**&gt;**sídle instalace**&gt;**parametry**&gt;**parametry programu Retail**.
+1.  Spusťte klient Dynamics 365 for Operations.
+2.  Klikněte na nabídku **Maloobchodní a velkoobchodní prodej** &gt; **Nastavení centrál** &gt; **Parametery** &gt; **Parametry maloobchodu**.
 3.  Klepněte na tlačítko **Inicializovat**.
 
 Inicializace vytvoří následující výchozí data konfigurace:
@@ -53,7 +53,7 @@ Inicializace vytvoří následující výchozí data konfigurace:
 -   Šablony ověření entity
 -   Dávková úloha pro vymazání historie relace Commerce Data Exchange
 
-Navíc to znamená protokolování týkající se odvětví platební karty (PCI) je povoleno pro 365 Dynamics pro operace databáze. **Poznámka:** Je možné Maloobchodní plánovač konfigurovat samostatně. Tato možnost umožňuje obnovíte konfiguraci maloobchodního plánovače na výchozí nastavení. Po dokončení inicializace je nutné nakonfigurovat další data pro maloobchod. Několik příkladů:
+Dále protokolování, které se vztahuje k odvětví platební karty (PCI) je povoleni pro databázi aplikace Dynamics 365 for Operations. **Poznámka:** Je možné Maloobchodní plánovač konfigurovat samostatně. Tato možnost umožňuje obnovíte konfiguraci maloobchodního plánovače na výchozí nastavení. Po dokončení inicializace je nutné nakonfigurovat další data pro maloobchod. Několik příkladů:
 
 -   Parametry maloobchodu
 -   Parametry programu Maloobchodní plánovač

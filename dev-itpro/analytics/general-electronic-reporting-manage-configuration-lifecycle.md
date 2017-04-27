@@ -1,6 +1,6 @@
 ---
 title: "Správa životního cyklu konfigurace elektronického vykazování"
-description: "Toto téma popisuje, jak spravovat životní cyklus elektronické vykazování konfigurace služeb Microsoft Dynamics 365 pro operace řešení (ER)."
+description: "Toto téma popisuje způsob správy životního cyklu konfigurací elektronického výkaznictví pro řešení Microsoft Dynamics 365 for Operations."
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -30,18 +30,18 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje, jak spravovat životní cyklus elektronické vykazování konfigurace služeb Microsoft Dynamics 365 pro operace řešení (ER).
+Toto téma popisuje způsob správy životního cyklu konfigurací elektronického výkaznictví pro řešení Microsoft Dynamics 365 for Operations.
 
 <a name="overview"></a>Přehled
 --------
 
-Elektronické výkaznictví je modul pro podporu elektronických dokumentů specifických pro danou zemi a požadovaných zákonem v aplikaci Microsoft Dynamics 365 for Operations. Obecně platí, že Elektronické výkaznictví předpokládá schopnost provádět následující činnosti pro jeden elektronický dokument. Další informace naleznete v tématu [elektronické sestavy Přehled](general-electronic-reporting.md).
+Elektronické výkaznictví je modul pro podporu elektronických dokumentů specifických pro danou zemi a požadovaných zákonem v aplikaci Microsoft Dynamics 365 for Operations. Obecně platí, že Elektronické výkaznictví předpokládá schopnost provádět následující činnosti pro jeden elektronický dokument. Další podrobnosti získáte v tématu [Přehled elektronického vykazování](general-electronic-reporting.md)
 
 -   Návrh šablony pro elektronický dokument:
     -   Identifikace požadovaných zdrojů dat, které lze zpřístupnit v tomto dokumentu:
-        -   Základní 365 Dynamics pro operace dat, například tabulky dat, datových entit a třídy.
-        -   Vlastnosti specifické pro proces, například provádění datum a čas a časové pásmo.
-        -   Uživatel zadány vstupní parametry, koncovým uživatelem v době běhu.
+        -   Základní data aplikace Dynamics 365 for Operations jako datové tabulky, data entit a třídy.
+        -   Vlastnosti určité pro proces jako datum provedení a čas a časové pásmo.
+        -   Vstupní parametry uživatele definované koncovým uživatelem při spuštění.
     -   Definování prvků nezbytných pro dokument a také jejich topologie pro určení konečného formátu dokumentu.
     -   Konfigurace požadovaného toku dat z vybraného zdroje dat pro definování prvků dokumentu prostřednictvím součástí formátu vazeb datového zdroje dokumentu a určení logiky procesu řízení.
 -   Zpřístupněte šablonu tak, aby ji možné použít v jiných instancích aplikace Dynamics 365 for Operations:
@@ -52,19 +52,19 @@ Elektronické výkaznictví je modul pro podporu elektronických dokumentů spec
     -   Přeneste šablonu z LCS do aktuální instance Dynamics 365 for Operations jako konfiguraci elektronického výkaznictví.
     -   Návrh vlastní verze konfigurace elektronického výkaznictví a uchování odkazu na základní verzi.
 -   Integrujte šablonu v konkrétním obchodním procesu tak, aby byly k dispozici v aplikaci Dynamics 365 for Operations:
-    -   Konfigurujte nastavení aplikace Dynamics 365 for Operations tak, aby aplikace začala používat konfiguraci elektronického výkaznictví odkazem na tuto konfiguraci v parametru souvisejícím s procesem. Například naleznete v konfigurace ER v konkrétní metoda platby splatné účty generovat zprávu elektronické platby pro zpracování faktur.
+    -   Konfigurujte nastavení aplikace Dynamics 365 for Operations tak, aby aplikace začala používat konfiguraci elektronického výkaznictví odkazem na tuto konfiguraci v parametru souvisejícím s procesem. Například odkazujte na konfiguraci elektronického výkaznictví v konkrétní metodě platby závazků s cílem vygenerovat zprávu pro elektronickou platbu pro zpracování faktur.
 -   Použití šablony v určitém obchodním procesu:
-    -   Spusťte konfigurace služby ER do určitého obchodního procesu. Například chcete-li generovat zprávu elektronické platby pro zpracování faktur při způsobu platby, který odkazuje konfigurace ER je vybrána.
+    -   Spusťte konfiguraci služby ER do určitého obchodního procesu. Například odkazujte na konfiguraci elektronického výkaznictví ke zpracování fakturu, když je vybraná metoda platby, která odkazuje na konfiguraci ER.
 
 ## <a name="concepts"></a>Koncepty
-Následující role a související činnosti jsou spojeny s konfigurace omezené ER.
+Následující role a související aktivity jsou přidruženy k životním cyklu konfigurace elektronického výkaznictví.
 
 | Role                                       | Aktivity                                                      | popis                                                                                                                                                                                                                  |
 |--------------------------------------------|-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Funkční konzultant elektronického výkaznictví | Vytvořte a spravujte součásti elektronického výkaznictví (modelů a formáty).           | Organizační osoba, která navrhuje ER domény specifické datové modely, vzory požadované šablony pro elektronické dokumenty a váže je odpovídajícím způsobem.                                                                           |
-| Návrhář elektronického výkaznictví             | Vytvořte a spravujte mapování datového modelu.                          | 365 Dynamics pro operace odborníka, který vybere požadované 365 Dynamics pro zdroje dat, operace a sváže je ER modely dat specifické pro domény.                                                                 |
-| Účetní supervizor                      | Nakonfigurujte nastavení týkajícího se procesu, které odkazuje na artefakty elektronického výkaznictví. | Například **Účetní supervizor** role, která umožňuje nastavení konfigurace ER pro určitý způsob platby splatné účty generovat zprávu elektronické platby pro zpracování faktur. |
-| Úředník plateb závazků            | Použijte artefakty elektronického výkaznictví v určitém obchodním procesu.                | Například **Úředník plateb závazků** role, která umožňuje zprávy elektronické platby budou vygenerovány pro zpracování faktury založené na formátu ER, který je nakonfigurován pro konkrétní způsob platby.           |
+| Funkční konzultant elektronického výkaznictví | Vytvořte a spravujte součásti elektronického výkaznictví (modelů a formáty).           | Obchodních osoba, která navrhuje modely specifické pro doménu elektronického výkaznictví, navrhuje také požadované šablony pro elektronické dokumenty a vhodně je prováže.                                                                           |
+| Návrhář elektronického výkaznictví             | Vytvořte a spravujte mapování datového modelu.                          | Specialista Dynamics 365 for Operations, který vybere požadované zdroje dat pro aplikaci Dynamics 365 for Operations a naváže je modely dat specifických pro doménu elektronického výkaznictví.                                                                 |
+| Účetní supervizor                      | Nakonfigurujte nastavení týkajícího se procesu, které odkazuje na artefakty elektronického výkaznictví. | Například role **Účetní supervizor**, která umožňuje použít nastavení konfigurace elektronického výkaznictví pro konkrétní účty metodu plateb závazků s cílem vygenerovat zprávu elektronické platby pro zpracování faktur. |
+| Úředník plateb závazků            | Použijte artefakty elektronického výkaznictví v určitém obchodním procesu.                | Například role **Úředník pro platby závazků**, která umožňuje vygenerovat zprávy elektronických plateb pro zpracování faktur na základě formátu elektronického výkaznictví nastaveného pro konkrétní způsob platby.           |
 
 ## <a name="er-configuration-development-lifecycle"></a>Životní cyklus vývoje konfigurace elektronického výkaznictví
 Je doporučeno navrhovat konfigurace pravidel ve vývojovém prostředí, jako v oddělené instanci aplikace 365 for Operations z těchto důvodů souvisejících s elektronickým výkaznictvím:
@@ -72,7 +72,7 @@ Je doporučeno navrhovat konfigurace pravidel ve vývojovém prostředí, jako v
 -   Uživatelé mají buď role **Vývojáře elektronického vykazování** nebo **Funkčního konzultanta elektronického výkaznictví**, kteří mohou upravovat konfigurace a spouštět je pro účely testování. To může způsobit volání metod tříd a tabulek, které mohou být potenciálně škodlivé pro obchodní data a výkon použití instance Dynamics 365 for Operations.
 -   Volání metod tříd a tabulek jako zdroje dat elektronického výkaznictví nejsou omezeny vstupními body Dynamics 365 for Operations a jsou zaznamenány do obsahu společnosti. Proto citlivá obchodná data mohou zobrazovat uživatelé mající buď roli **Vývojáře elektronického vykazování** nebo **Funkčního konzultanta elektronického výkaznictví**.
 
-ER konfigurace, které jsou určeny ve vývojovém prostředí lze odeslat do testovacího prostředí pro hodnocení konfigurace (řádného procesu integrace, správnost výsledků a výkonnosti) a zabezpečování jakosti, jako jsou jimi řízené role přístupových práv a zodpovědnosti. Pro tento účel lze použít funkce, které umožňují výměnu dat konfigurace ER. Ověřené konfigurace ER nakonec lze uložit, LCS, kde budou moci sdílet s účastníky služby, nebo v provozním prostředí pro vnitřní použití, jako je znázorněno na následujícím obrázku. ![Konfigurace omezené ER](./media/ger-configuration-lifecycle.png)
+Konfigurace elektronického výkaznictví navržené ve vývojovém prostředí je možné odeslat do testovacího prostředí pro hodnocení konfigurace (správný proces integrace, správnost výsledků, výkonnost) a kontrola kvality (správnost role řídící přístupová práva, dělení zodpovědnosti atd.). Pro tento účel lze použít funkce, které umožňují výměnu konfigurace elektronického výkaznictví. Ověřené konfigurace elektronického výkaznictví je možné uložit buď do LCS pro sdílení se službami odběratelů nebo do výrobního prostředí pro interní použití, jak ukazuje následující ilustrace. ![Životní cyklus elektronického výkaznictví](./media/ger-configuration-lifecycle.png)
 
 <a name="see-also"></a>Viz také
 --------

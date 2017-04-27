@@ -31,7 +31,7 @@ ms.lasthandoff: 03/31/2017
 
 Tento článek popisuje různé metody, které slouží k vytváření nákupních objednávek pro určitý projekt. Použitá metodu závisí na účelu nákupní objednávky a kdy jsou zakoupené položky spotřebovány a účtovány v projektu.
 
-V 365 Microsoft Dynamics pro operace můžete použít více metod k vytvoření nákupní objednávky projektu. Použitá metodu závisí na účelu nákupní objednávky, kdy jsou zakoupené položky spotřebovány, a kdy jsou zakoupené položky účtovány v projektu.
+V aplikaci Microsoft Dynamics 365 for Operations můžete použít několik způsobů pro vytvoření nákupních objednávek pro určitý projekt. Použitá metodu závisí na účelu nákupní objednávky, kdy jsou zakoupené položky spotřebovány, a kdy jsou zakoupené položky účtovány v projektu.
 
 ### <a name="methods-for-creating-a-purchase-order"></a>Způsoby vytvoření nákupní objednávky
 
@@ -74,7 +74,7 @@ Jednu z následujících metod můžete použít k vytvoření nákupní objedn�
 </table>
 
 > [!NOTE] 
-> Při aktualizaci faktury dodavatele nebo dodacího listu, zobrazí se výzva k aktualizaci dodacího listu na požadavek na položku.
+> Při aktualizaci faktury nebo dodacího listu dodavatele budete požádáni, abyste aktualizovali dodací list v požadavku na položku.
 
 
 

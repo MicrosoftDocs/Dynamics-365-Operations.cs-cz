@@ -73,14 +73,14 @@ V modulu Správa přepravy lze dopravní plánování založit na objednávkách
 ![Načíst výkres](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Příchozí přeprava
-Když si objednáváte zboží od dodavatele a zboží musí být doručována do skladu, můžete chtít uspořádat přepravu zboží sami. 365 Dynamics pro operace slouží k plánování dopravy a přijetí příchozí náklad. Následující obrázek znázorňuje tok obchodního procesu pro plánování přepravy příchozího nákladu. 
+Pokud objednáváte od dodavatele zboží, které je potřeba dodat na sklad, pravděpodobně budete chtít zajistitt přepravu tohoto zboží sami. Pomocí aplikace Dynamics 365 for Operations můžete naplánovat přepravu i převzetí příchozího nákladu. Následující obrázek znázorňuje tok obchodního procesu pro plánování přepravy příchozího nákladu. 
 
 ![Obchodní proces: průběh přepravy pro vstupní náklady](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>Odchozí přeprava
 Můžete naplánovat a zpracovat odchozí náklad a dodat tak konkrétní položky ze skladu společnosti odběrateli. Pomocí aplikace Dynamics 365 for Operations můžete naplánovat přepravu a expedici odchozího vytížení. Následující obrázek znázorňuje tok obchodního procesu pro plánování a zpracování odchozích nákladů pro expedici. 
 
-![Plánování a zpracování odchozích načte](./media/Planningandprocessingoutboundloads.jpg)
+![Plánování a zpracování odchozích nákladů](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Sestavení vytížení
 Aplikace Dynamics 365 for Operations obsahuje strategii sestavení vytížení, která se nazývá Strategie sestavení vytížení založená na objemu. Tato strategie umožňuje použít maximální hodnoty zadané pro výšku a hmotnost v šabloně vytížení nebo přepsat nastavení zadáním nových hodnot. Pokud chcete použít tuto strategii, vyberte ji v poli **Strategie sestavení vytížení** na pevné záložce **Nastavení** na stránce **Pracovní plocha sestavení vytížení**. Kromě toho můžete přidat vlastní strategie sestavení vytížení vytvořením nové třídy ve stromu aplikačních objektů (AOT).

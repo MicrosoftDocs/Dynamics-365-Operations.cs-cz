@@ -131,7 +131,7 @@ Aktuální hodnoty můžete uložit jako výchozí hodnoty. K dispozici jsou dv�
 <a name="see-also"></a>Viz také
 --------
 
-[Operations scheduling](operations-scheduling.md)
+[Plánování operací](operations-scheduling.md)
 
 
 

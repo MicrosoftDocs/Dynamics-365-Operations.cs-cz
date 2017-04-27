@@ -35,7 +35,7 @@ Některé organizace vyžadují, aby nákupní žádanky a nákupní objednávky
 Workflow představuje obchodní proces. Definuje, jakým způsobem dokument prochází systémem a určuje, kdo musí zpracovat úkol nebo schválit dokument. Používání systému workflowu v organizaci má několik výhod:
 -   **Konzistentní procesy:** Můžete definovat schvalovací proces pro specifické dokumenty, například nákupní požadavky a vyúčtování výdajů. Používáním systému workflowu lze zajistit, aby byly dokumenty zpracovávány a schvalovány jednotným a efektivním způsobem.
 -   **Viditelnost procesů:** –Můžete sledovat stav, historii a výkonnostní metriku konkrétní instance workflowu. To umožňuje určit, zda je potřeba provést změny workflowu ke zvýšení efektivity.
--   **Seznam centralizované práce**– uživatelé mohou zobrazit seznam centralizované práce do zobrazení úkolů pracovního postupu a schvalování přiřazené přes všechny pracovní postupy, které se účastní v. To je k dispozici na stránce pracovní položky.
+-   **Centralizovaný seznam pracovních položek**: Uživatelé mohou zobrazit centralizovaný seznam pracovních položek, když chtějí zobrazit úkoly workflowu a schválení, která jsou k nim přiřazená v rámci všech workflowů, kterých se účastní. To je k dispozici na stránce Pracovní položky.
 
 ## <a name="the-types-of-workflows-that-you-can-create"></a> Typy workflowů, které můžete vytvářet
 Následující typy workflowu jsou k dispozici pro modul Zásobování a zdroje.
@@ -49,7 +49,7 @@ Následující typy workflowu jsou k dispozici pro modul Zásobování a zdroje.
 | Workflow řádku nákupní objednávky     | Vytváření workflowů kontroly a schvalování pro řádky nákupní objednávky. |
 
 ## <a name="creating-a-workflow"></a>Vytvoření workflowu
-Chcete-li vytvořit pracovní postup, přejděte na zásobování a zdroje &gt;nastavení &gt;workflowy zásobování a zdrojů a vytvořit nový pracovní postup výběrem typu pracovního postupu, který chcete vytvořit.  
+Chcete-li vytvořit workflow, přejděte do nabídky Zásobování a zdroje &gt; Nastavení &gt; Workflowy zásobování a zdrojů a vytvořte nový workflow tak, že vyberete požadovaný typ workflowu k vytvoření.  
 
 Na plátně workflowu můžete přetahovat prvky workflowu do návrháře a spojovat prvky do toku Prvky workflowu je třeba konfigurovat. Co se týká prvků workflowu pro schválení a úlohy, můžete nastavit, který účastník má provést akci.
 Typy účastníků
@@ -72,7 +72,7 @@ Můžete přiřadit krok schválení k následujícím skupinám účastníků.
 
 [Definování workflowů pracovních postupů pro nákupní žádanky](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Purchase requisition workflow](purchase-requisitions-workflow.md)
+[Workflow nákupní žádanky](purchase-requisitions-workflow.md)
 
 
 

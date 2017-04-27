@@ -1,6 +1,6 @@
 ---
-title: "Postupů a operací"
-description: "Toto téma obsahuje informace o postupech a operacích. Trasa definuje proces pro výrobu produktu nebo varianty produktu. Popisuje jednotlivé kroky (operace) ve výrobním procesu a tyto kroky musíte provést v uvedeném pořadí. Pro každý krok trasa také definuje požadované operace prostředky, čas požadované nastavení a běhu a výpočet nákladů."
+title: "Postupy a operace"
+description: "Toto téma obsahuje obecné informace o postupech a operacích. Postup definuje proces pro výrobu produktu nebo varianty produktu. Popisuje jednotlivé kroky (operace) ve výrobním procesu a pořadí, ve kterém je nutné je provádět. U každého kroku postup také definuje požadované provozní prostředky, čas, který je nutný k přípravě a provedení operace, a způsob výpočtu nákladů."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,220 +26,220 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="routes-and-operations"></a>Postupů a operací
+# <a name="routes-and-operations"></a>Postupy a operace
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma obsahuje informace o postupech a operacích. Trasa definuje proces pro výrobu produktu nebo varianty produktu. Popisuje jednotlivé kroky (operace) ve výrobním procesu a tyto kroky musíte provést v uvedeném pořadí. Pro každý krok trasa také definuje požadované operace prostředky, čas požadované nastavení a běhu a výpočet nákladů.
+Toto téma obsahuje obecné informace o postupech a operacích. Postup definuje proces pro výrobu produktu nebo varianty produktu. Popisuje jednotlivé kroky (operace) ve výrobním procesu a pořadí, ve kterém je nutné je provádět. U každého kroku postup také definuje požadované provozní prostředky, čas, který je nutný k přípravě a provedení operace, a způsob výpočtu nákladů.
 
 <a name="overview"></a>Přehled
 --------
 
-Trasa popisuje pořadí operace potřebné k výrobě produktu nebo varianty produktu. Pro každou operaci postupu také definuje operace prostředky, které jsou požadovány, čas, který je nutný pro nastavení a provádění operace a výpočet nákladů. Můžete použít stejný postup k vytvoření více produktů nebo můžete definovat jedinečný postup pro každý produkt nebo varianta produktu. Můžete mít i více tras pro stejný produkt. V tomto případě postup, který se používá se liší v závislosti na faktorech, jako je množství, které je třeba vyrobit. Definici trasy v 365 Microsoft Dynamics pro operace se skládá ze čtyř samostatných prvků, které společně popisují proces výroby:
+Postup popisuje pořadí operací při výrobě produktu nebo varianty produktu. U každé operace postup také definuje požadované provozní prostředky, čas, který je nutný k nastavení a provedení operace, a způsob výpočtu nákladů. Stejný postup lze použít k výrobě více produktů nebo můžete definovat jedinečný postup pro každý produkt či variantu produktu. Můžete používat i více postupů pro stejný produkt. V takovém případě konkrétní použitý postup závisí na různých faktorech, jako je vyráběné množství. Definice postupu v aplikaci Microsoft Dynamics 365 for Operations se skládá ze čtyř samostatných prvků, které společně popisují výrobní proces:
 
--   **Trasa** – trasa definuje strukturu výrobního procesu. Jinými slovy určuje pořadí operací.
--   **Operace** – operaci identifikuje pojmenované kroku v postupu, jako například **sestavení**. Stejné operace může dojít v několika trasami a může obsahovat čísla různých operací.
--   **Vztah operací** – vztah operace definuje provozní vlastnosti operace, například čas instalace a běhu, nákladových kategorií, parametry spotřeby a požadavky na zdroje. Vztah operací umožňuje provozní vlastnosti operace se liší podle použitého v operaci postupu nebo produktů, které jsou vyráběné.
--   **Verze postupu** – verze postupu definuje trasu, která se používá k výrobě produktu nebo varianty produktu. Verze postupu povolit cesty k opětovné použití mezi produkty nebo změněna v průběhu času. Umožňují také různé trasy má být použit k výrobě stejného výrobku. Trasu, která se používá v tomto případě závisí na faktorech, jako je umístění nebo množství, které je třeba vyrobit.
+-   **Postup** – definuje strukturu výrobního procesu. Jinými slovy určuje pořadí operací.
+-   **Operace** – určuje konkrétní pojmenovaný krok v postupu, například **Sestavení**. Stejná operace se může vyskytovat v několika různých postupech a může mít přiřazena různá čísla.
+-   **Vztah operace** – definuje provozní vlastnosti operace, například čas nutný k přípravě a provedení operace, nákladové kategorie, parametry spotřeby a požadavky na prostředky. Pomocí vztahů operací lze provozní vlastnosti operací měnit podle postupu, ve kterém se operace používá, nebo produktů, které se vyrábějí.
+-   **Verze postupu** – definuje postup, který se používá k výrobě produktu nebo varianty produktu. Verze postupů umožňují průběžné úpravy nebo opakované používání postupů u různých produktů. Umožňují také použití různých postupů k výrobě stejného produktu. V takovém případě konkrétní použitý postup závisí na různých faktorech, jako je místo nebo vyráběné množství.
 
 ## <a name="routes"></a>Postupy
-Trasa popisuje pořadí operací, který se používá k výrobě produktu nebo varianty produktu. Každá operace je přiřazeno číslo operace a následné operace. Pořadí operací vytváří síť tras, která může být reprezentováno pomocí řízené grafu, který má jeden nebo více počátečních bodů a jeden koncový bod. V 365 Dynamics pro operace se rozlišují podle typu konstrukce tras. Jsou dva typy tras, jednoduché trasy a trasy sítí. V parametry modulu řízení výroby můžete určit, zda lze použít pouze jednoduché trasy nebo zda lze použít složitější trasy sítí.
+Postup popisuje pořadí operací při výrobě produktu nebo varianty produktu. Každé operaci se přiřadí číslo a následná operace. Pořadí operací tvoří síťový postup, který lze znázornit pomocí diagramu s jedním nebo několika počátečními body a jedním koncovým bodem. V aplikaci Dynamics 365 for Operations se postupy rozlišují podle typu struktury. Existují dva typy postupů: jednoduché postupy a síťové postupy. Ve formuláři Parametry modulu Řízení výroby můžete určit, zda lze použít pouze jednoduché postupy nebo i složitější síťové postupy.
 
-### <a name="simple-routes"></a>Jednoduché cesty
+### <a name="simple-routes"></a>Jednoduché postupy
 
-Jednoduchý postup je sekvenční a existuje pouze jeden počáteční bod trasy.  
+Jednoduchý postup je sekvenční a existuje u něj pouze jeden počáteční bod.  
 
 [![Jednoduchý postup](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
-Pokud povolíte pouze jednoduché trasy v parametry modulu řízení výroby, 365 Dynamics pro operace automaticky generuje čísla operace (10, 20, 30 a tak dále) při definování postupu.
+Pokud ve formuláři Parametry modulu Řízení výroby povolíte pouze jednoduché postupy, aplikace Dynamics 365 for Operations při definování postupu automaticky vygeneruje čísla operací (10, 20, 30 a tak dále).
 
-### <a name="route-networks"></a>Směrování sítě
+### <a name="route-networks"></a>Síťové postupy
 
-Pokud povolíte složitější trasy sítí v parametry modulu řízení výroby, můžete definovat trasy, které mají více počátečních bodů a operace, které lze spustit současně.  
+Pokud ve formuláři Parametry modulu Řízení výroby povolíte složitější síťové postupy, můžete definovat postupy, které mají více počátečních bodů, a operace, které lze spustit současně.  
 
-[![Route network](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Síťový postup](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 **Poznámky:**
 
--   Každou operaci může mít pouze jeden následník operace a celá cesta musí končit v jediné operaci.
--   Neexistuje žádná záruka, že více operací, které mají stejnou operaci následníka (například operace 30 a 40 na předchozím obrázku) skutečně probíhat souběžně. Omezení tak, že operace budou naplánovány ukládat dostupnosti a kapacity zdrojů.
--   Jako číslo operace nelze použít hodnotu 0 (nula). Toto číslo je vyhrazen a slouží k určení, zda poslední operaci v postupu má žádné následné operace.
+-   Každá operace může mít pouze jednu následnou operaci a celý postup musí končit jednou operací.
+-   Neexistuje žádná záruka, že více operací, které mají stejnou následnou operaci (například operace 30 a 40 na předchozím obrázku), budou skutečně probíhat souběžně. Dostupnost a kapacita prostředků může omezovat plánování operací.
+-   Jako číslo operace nelze použít hodnotu 0 (nula). Toto číslo je rezervováno a slouží k určení skutečnosti, že poslední operace v postupu nemá žádné následné operace.
 
 ### <a name="parallel-operations"></a>Paralelní operace
 
-Kombinace více zdrojů operací, které mají odlišné vlastnosti někdy je vyžadován k provedení operace. Montáž může například vyžadovat, stroje, nástroje a jednoho pracovníka na každých dvou strojů dohlížet operaci. V tomto příkladu lze modelovat pomocí paralelní operace, kde jedna operace je určen jako primární operace a ostatní jsou sekundární.  
+Někdy je k provedení operace třeba kombinace několika provozních prostředků s odlišnými vlastnostmi. Operace montáže může například vyžadovat stroj, nástroj a jednoho dohlížejícího pracovníka u každých dvou strojů. Tento příklad lze modelovat pomocí paralelních operací, kde je jedna operace určena jako primární operace a ostatní jsou sekundární.  
 
-[![Cestu, která má primární a sekundární operace.](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![Postup s primární operací a sekundárními operacemi](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
-Primární operace obvykle představuje kritický prostředek a určí běhu pro sekundární operace. Však během plánování, který zahrnuje omezenou kapacitu, prostředky, které jsou naplánovány pro operace primární a sekundární operace musí být k dispozici a mají volné kapacity současně.  
+Primární operace obvykle představuje kritický prostředek a určuje dobu nutnou k provedení sekundárních operací. Při plánování s omezenou kapacitou však musí být k dispozici prostředky, které jsou naplánovány pro primární i sekundární operace, a současně musí mít volnou kapacitu.  
 
-Operace primární a sekundární operace musí mít stejné číslo operace (30 na předchozím obrázku).  
+Primární i sekundární operace musí mít stejné číslo operace (30 na předchozím obrázku).  
 
-V předchozím příkladu je požadavek na prostředek pro primární operace (30) počítače, že jsou požadavky na zdroje pro sekundární operace (30' a 30'') nástroj a pracovníka. 50 % vytížení pomáhá zajistit, aby plánované pracovní můžete dohlížet dvou strojů současně.
+V předchozím příkladu je požadavkem na prostředek u primární operace (30) stroj, zatímco u sekundárních operací (30' a 30'') se jedná o nástroj a pracovníka. Díky 50% vytížení lze zajistit, aby pracovník mohl dohlížet na dva stroje současně.
 
 ### <a name="approval-of-routes"></a>Schválení postupů
 
-Trasa musí být schválen dříve, než jej lze použít v procesu plánování a výroby. Schválení znamená, že byl dokončen návrh trasy. Stejný produkt uvolněn nebo uvolněný produkt varianty může mít více schválených postupů. Schválení postupu obvykle vyvolá se při první verze odpovídající postupu schválena. Však v některých obchodních scénářů, schválení postupu a verze postupu jsou samostatné aktivity, které může zahrnovat proces různých vlastníků.  
+Každý postup je před použitím v plánovacím nebo výrobním procesu nutné schválit. Schválení znamená, že návrh postupu byl dokončen. Stejné uvolněné produkty nebo varianty produktu mohou mít více schválených postupů. Schválení postupu obvykle proběhne při schválení první relevantní verze postupu. U některých obchodních scénářů představují schválení postupu a verze postupu samostatné aktivity, do kterých mohou být zapojeni různí vlastníci procesů.  
 
-Každá trasa může být schválené a neschválené samostatně. Uvědomte si však, aby při neschválené trasy související verte se také Neschváleno. V parametry modulu řízení výroby lze určit, zda trasy mohou neschválené a zda je možné změnit schválených postupů.  
+Každý postup lze schválit nebo zamítnout samostatně. Při zamítnutí postupu však budou zamítnuty i všechny související verze postupu. Ve formuláři Parametry modulu Řízení výroby lze určit, zda je možné postupy zamítnout a zda je možné měnit schválené postupy.  
 
-Že záznamy, kteří schválí všechny trasy musí uchovávat záznam, můžete požadovat elektronických podpisů schválení postupu. Uživatelům bude muset potvrdit svou identitu pomocí [elektronický podpis](/dynamics365/operations/organization-administration/electronic-signature-overview).
+Pokud potřebujete uchovávat záznamy o tom, kdo jednotlivé postupy schvaluje, můžete si při jejich schvalování vyžádat elektronické podpisy. V takovém případě musí uživatelé [elektronickým podpisem](/dynamics365/operations/organization-administration/electronic-signature-overview) potvrzovat svou identitu.
 
 ## <a name="operations"></a>Operace
-Operace je krok ve výrobním procesu. V 365 Dynamics pro operace každá operace má ID a jednoduchý popis. Následující tabulka ukazuje typické příklady operací z dílny strojní.
+Operace představuje krok ve výrobním procesu. V aplikaci Dynamics 365 for Operations má každá operace ID a jednoduchý popis. Následující tabulka ukazuje typické příklady operací ze strojní dílny.
 
-| Operace  | popis        |
+| Operace  | Popis        |
 |------------|--------------------|
 | PipeCut    | Řezání potrubí       |
-| TIGweld    | TIG svařování        |
-| JigAssy    | Jig sestavení       |
-| Kontrola | Kontrolu kvality |
+| TIGweld    | Svařování TIG        |
+| JigAssy    | Montáž       |
+| Inspection | Kontrola kvality |
 
-Provozní vlastnosti operace, jako je například doba seřízení a běhu, požadavky na zdroje, informace o ocenění a výpočet spotřeby jsou určeny na vztah operace. (Další informace o vztazích naleznete v další části.)
+Provozní vlastnosti operace, například čas nutný k přípravě a provedení operace, požadavky na prostředky, informace o nákladech a výpočty spotřeby, jsou uvedeny ve vztahu operace. (Další informace o vztazích operací naleznete v další části.)
 
 ## <a name="operation-relations"></a>Vztahy operací
-Následující provozní vlastnosti operace jsou udržovány na vztah operace:
+Ve vztahu operace se uchovávají následující provozní vlastnosti operace:
 
 -   Nákladové kategorie
 -   Parametry spotřeby
--   Časy zpracování
--   Zpracování množství
+-   Čas zpracování
+-   Zpracovávané množství
 -   Požadavky na prostředek
--   Poznámky a pokyny
+-   Poznámky a pokyny
 
-Můžete definovat více relace operací pro stejné operace. Nicméně každý vztah operace je specifický pro jednu operaci a obsahuje vlastnosti, které jsou specifické pro trasu, uvolněný produkt nebo sadu uvolněné produkty, které se vztahují na skupinu položek. Tedy stejné operace lze více tras, které mají různé provozní vlastnosti. Navíc můžete snadněji Udržovat hlavní data při použití standardních operací, které mají stejné provozní vlastnosti, bez ohledu na trasu, která se používá a produkt, který je vytvořen. Působnosti vztah operace je definována prostřednictvím **kód položky**, **vztahu položky**, **kód postupu** a **směrování vztah** vlastnosti, jak je znázorněno v následující tabulce.
+Pro jednu operaci můžete definovat více vztahů operace. Každý vztah operace však platí pro jednu konkrétní operaci a obsahuje vlastnosti, které jsou specifické pro postup, uvolněný produkt nebo sadu uvolněných produktů, které se vztahují ke skupině položek. Stejné operace lze tedy použít v několika postupech, které mají různé provozní vlastnosti. Pokud použijete standardní operace, které mají stejné provozní vlastnosti, budete moci snáze udržovat hlavní data (bez ohledu na používaný postup a vyráběný produkt). Rozsah vztahu operace je definován pomocí vlastností **Kód položky**, **Vztah položky**, **Kód postupu** a **Vztah postupu**, jak je znázorněno v následující tabulce.
 
-| Kód položky | Vztah položky         | Kód postupu | Vztah postupu   | Rozsah vztah operace                                                                                                                                                                                                                                                                              |
+| Kód položky | Vztah položky         | Kód postupu | Vztah postupu   | Rozsah vztahu operace                                                                                                                                                                                                                                                                              |
 |-----------|-----------------------|------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tabulka     | &lt;ID položky&gt;       | Postup      | &lt;ID postupu&gt; | Provozní vlastnosti operace, pokud je použit v postupu kde **číslo postupu**=&lt;ID postupu&gt; uvolněný produkt vyrábět kde **číslo položky**=&lt;ID položky&gt;.                                                                                                                        |
-| Tabulka     | &lt;ID položky&gt;       | Vše        |                  | Výchozí provozní vlastnosti operace se používá k výrobě uvolněný produkt kde **číslo položky**=&lt;ID položky&gt;. Jinými slovy tyto provozní vlastnosti použít, pokud neexistuje žádný vztah operace postupu specifické pro uvolněný produkt.                                     |
-| Seskupit     | &lt;ID skupiny zboží&gt; | Postup      | &lt;ID postupu&gt; | Provozní vlastnosti operace, pokud je použit v postupu kde **číslo postupu**=&lt;ID postupu&gt; pro vytvoření uvolněné produkty, které jsou přidruženy skupiny položek &lt;položky ID skupiny&gt;, pokud neexistuje vztah operace postupu specifické pro uvolněný produkt.                         |
-| Seskupit     | &lt;ID skupiny zboží&gt; | Vše        |                  | Výchozí provozní vlastnosti operace se používá k vytvoření uvolněné produkty, které jsou přidruženy skupiny položek &lt;položky ID skupiny&gt;, pokud existuje zvláštní vztah operací.                                                                                                  |
-| Vše       |                       | Postup      | &lt;ID postupu&gt; | Výchozí provozní vlastnosti operace, pokud je použit v postupu kde **číslo postupu**=&lt;ID postupu&gt;. Jinými slovy tyto provozní vlastnosti použít v případě, že neexistuje žádný vztah operace této trasy, který je specifický pro buď uvolněný produkt nebo má přiřazeny skupiny položek. |
-| Vše       |                       | Vše        |                  | Výchozí provozní vlastnosti operace. Tyto provozní vlastnosti použít, pokud neexistuje zvláštní vztah operací.                                                                                                                                                                |
+| Tabulka     | &lt;ID položky&gt;       | Postup      | &lt;ID postupu&gt; | Provozní vlastnosti operace použité v postupu (kde **Číslo postupu**=&lt;ID postupu&gt;) k výrobě uvolněného produktu, kde **Číslo položky**=&lt;ID položky&gt;.                                                                                                                        |
+| Tabulka     | &lt;ID položky&gt;       | Vše        |                  | Výchozí provozní vlastnosti operace použité k výrobě uvolněného produktu, kde **Číslo položky**=&lt;ID položky&gt;. Jinými slovy – tyto provozní vlastnosti platí, pokud u uvolněného produktu neexistuje žádný vztah operace, který je specifický pro daný postup.                                     |
+| Seskupit     | &lt;ID skupiny položek&gt; | Postup      | &lt;ID postupu&gt; | Provozní vlastnosti operace použité v postupu (kde **Číslo postupu**=&lt;ID postupu&gt;) k výrobě uvolněných produktů spojených se skupinou položek (&lt;ID skupiny položek&gt;), pokud u uvolněného produktu neexistuje vztah operace specifický pro daný postup.                         |
+| Seskupit     | &lt;ID skupiny položek&gt; | Vše        |                  | Výchozí provozní vlastnosti operace použité k výrobě uvolněných produktů spojených se skupinou položek &lt;ID skupiny položek&gt;, pokud neexistuje konkrétnější vztah operace.                                                                                                  |
+| Vše       |                       | Postup      | &lt;ID postupu&gt; | Výchozí provozní vlastnosti operace použité v postupu, kde **Číslo postupu**=&lt;ID postupu&gt;. Jinými slovy – tyto provozní vlastnosti platí, pokud u daného postupu neexistuje žádný vztah operace, který je specifický pro uvolněný produkt nebo související skupinu položek. |
+| Vše       |                       | Vše        |                  | Výchozí provozní vlastnosti operace. Tyto provozní vlastnosti platí, pokud neexistuje konkrétnější vztah operace.                                                                                                                                                                |
 
-Můžete také určit, zda je vztah operace specifické pro web. Tímto způsobem lze provozní vlastnosti operace závisí na umístění (to znamená, web), pokud je operace provedena. Pro konfigurované výrobky můžete také určit různé provozní vlastnosti pro každou konfiguraci produktu.  
+Můžete také určit, že vztah operace bude platit jen pro konkrétní pracoviště. Provozní vlastnosti operace se tak mohou lišit podle místa (tedy pracoviště), kde se operace provádí. U konfigurovaných produktů můžete také určit různé provozní vlastnosti pro každou konfiguraci produktu.  
 
-Operce poskytují velkou pružnost při definování vaší trasy. Schopnost definovat výchozí vlastnosti navíc pomáhá snížit množství hlavních dat, která musí udržovat. Tato flexibilita však také znamená, že musíte být vědomi, změnit vztah operace v kontextu.  
+Vztahy operací zajišťují při definici postupů velkou flexibilitu. Možnost definovat výchozí vlastnosti navíc pomáhá snižovat množství hlavních dat, která je nutné uchovávat. Tato flexibilita však také znamená, že si musíte být vědomi kontextu, ve kterém vztahy operací upravujete.  
 
-**Poznámka:** provozní vlastnosti jsou uloženy ve vztazích operace na operaci na trase, všechny výskyty stejné operace (například sestavení) mají stejnou dobu instalace, spuštění, požadavky na zdroje atd. Proto pokud dva výskyty operaci musí dojít ve stejné trase, ale mají různou dobu běhu, je nutné vytvořit dvě samostatné operace, například Assembly1 a Assembly2.
+**Poznámka:** Provozní vlastnosti jsou uloženy ve vztazích operací u každé operace a každého postupu a všechny výskyty stejné operace (například montáže) mají stejný přípravný a operační čas, požadavky na prostředky a podobně. Pokud se tedy dva výskyty operace musí nacházet ve stejném postupu, ale mají různé operační časy, je nutné vytvořit dvě samostatné operace, například Montáž1 a Montáž2.
 
-### <a name="modifying-product-specific-routes"></a>Změna trasy konkrétní produkt
+### <a name="modifying-product-specific-routes"></a>Změna postupů u konkrétních produktů
 
-Při otevření **postupu** stránky z **vydala podrobnosti o produktu** stránky, jsou uvedeny verze postupu, které jsou přidruženy k vybranému produktu vydané. V tomto kontextu pro každou operaci 365 Dynamics pro operace ukazuje provozní vlastnosti z vztah operace, aby co nejlépe odpovídalo verze postupu. Zjistíte, že obsahuje seznam operací **kód položky** a **kód postupu** vlastnosti z vztah operace. Proto lze určit, který vztah operace je zobrazen.  
+Po otevření stránky **Postup** na stránce **Podrobnosti o uvolněném produktu** se zobrazí verze postupu spojené s vybraným uvolněným produktem. V tomto kontextu u každé operace aplikace Dynamics 365 for Operations zobrazuje provozní vlastnosti ze vztahu operace, který co nejlépe odpovídá verzi postupu. Seznam operací obsahuje vlastnosti **Kód položky** a **Kód postupu** ze vztahu operace. Je tedy možné určit, který vztah operace se zobrazuje.  
 
-Na **postupu** stránky, můžete změnit provozní vlastnosti operace, například době běhu nebo nákladových kategorií. Provedené změny jsou uloženy na vztah operace, který je specifický pro trasy a uvolněný produkt, který se odkazuje v aktuální verze postupu. Není-li vztah operace, který se zobrazuje konkrétní trasy a uvolněný produkt před jsou uloženy změny, systém vytvoří kopii vztah operace. Tato kopie *je* konkrétní trasy a uvolněný produkt. Proto změny neovlivní jiné trasy nebo uvolněných produktů. Chcete-li ověřit, který vztah operace se upravuje na **postupu** stránky, podívejte se na **kód položky** a **kód postupu** pole.  
+Na stránce **Postup** můžete změnit provozní vlastnosti operace, například operační čas nebo nákladové kategorie. Provedené změny se uloží do vztahu operace specifického pro postup a uvolněný produkt, na které se aktuální verze postupu odkazuje. Pokud zobrazený vztah operace není specifický pro daný postup a uvolněný produkt, systém před uložením změn vytvoří jeho kopii. Tato kopie *je* specifická pro daný postup a uvolněný produkt. Její změny tedy neovlivní jiné postupy nebo uvolněné produkty. Chcete-li si ověřit, který vztah operace se na stránce **Postup** upravuje, podívejte se na pole **Kód položky** a **Kód postupu**.  
 
-Můžete také ručně vytvořit operaci, která je pomocí zvláštních postupů a uvolněný produkt **kopírovat a upravit vztah** funkce.  
+Operaci, která je specifická pro daný postup a uvolněný produkt, můžete také ručně vytvořit pomocí funkce **Kopírovat a upravit vztah**.  
 
-**Poznámka:** na novou operaci postupu přidáte **postupu**, vztah operace vytvoření stránky pouze pro aktuální uvolněný produkt. Proto pokud trasa slouží také k výrobě jiných uvolněné produkty, bude existovat žádný vztah operace použitelná pro tyto produkty vydané a trasu lze použít již pro uvolněné produkty.
+**Poznámka:** Pokud k postupu přidáte novou operaci na stránce **Postup**, vztah operace se vytvoří pouze pro aktuální uvolněný produkt. Jestliže tedy postup slouží také k výrobě jiných uvolněných produktů, nebude pro ně existovat žádný platný vztah operace a postup nebude pro tyto uvolněné produkty možné dále používat.
 
-### <a name="maintaining-operation-relations-per-route"></a>Udržování vztahů operací na trase
+### <a name="maintaining-operation-relations-per-route"></a>Udržování vztahů operací u jednotlivých postupů
 
-Při otevření **podrobností o postupu** ze stránek **trasy** stránku seznamu je zobrazen seznam všech vztahů operací, které platí pro vybranou trasu. Proto lze snadno ověřit, provozní vlastnosti, které se používají pro produkty. Můžete upravit výchozí hodnoty vlastností a hodnot vlastností specifické pro daný produkt.  
+Při otevření stránky **Podrobnosti postupu** ze stránky seznamu **Postupy** se zobrazí seznam všech vztahů operací, které platí pro vybraný postup. Pomocí něj lze snadno ověřit, které provozní vlastnosti se používají pro jednotlivé produkty. Můžete upravit výchozí hodnoty vlastností i hodnoty vlastností specifické pro daný produkt.  
 
-Pokud přidáte nový vztah operace na **podrobností o postupu** stránky, **kód postupu** je automaticky nastaveno na **postupu**a **směrování vztah** pole je nastavena na číslo postupu aktuální trasy.
+Když přidáte nový vztah operace na stránce **Podrobnosti postupu**, pole **Kód postupu** se automaticky nastaví na hodnotu **Postup** a pole **Vztah postupu** pole se nastaví na číslo aktuálního postupu.
 
-### <a name="maintaining-operation-relations-per-operation"></a>Udržováním vztahů operace na operaci
+### <a name="maintaining-operation-relations-per-operation"></a>Udržování vztahů operací u jednotlivých operací
 
-Z **operace** můžete otevřít stránku, **vztahů operací** stránky. Na této stránce můžete upravit všechny relace operací pro určité operace. Dokonce můžete upravit vztahy operací, které obsahují výchozí hodnoty.  
+Na stránce **Operace** můžete otevřít stránku **Vztahy operací**. Na této stránce můžete upravit všechny vztahy určité operace. Je možné upravit i vztahy operací, které obsahují výchozí hodnoty.  
 
-Pokud váš podnik používá standardní operace a provozní parametry jsou stejné ve všech produktů a procesů, **vztahů operací** stránka poskytuje pohodlný způsob, jak spravovat výchozí provozní vlastnosti těchto operací.
+Pokud váš podnik používá standardní operace a provozní parametry jsou u všech produktů a procesů stejné, můžete pomocí stránky **Vztahy operací** pohodlně spravovat výchozí provozní vlastnosti těchto operací.
 
-### <a name="applying-operation-relations"></a>Použití vztahů operací
+### <a name="applying-operation-relations"></a>Používání vztahů operací
 
-V některých případech nutné 365 Dynamics pro operace najít provozní vlastnosti operace. Například při vytvoření nákupní objednávky, provozní vlastnosti každé operace musí být zkopírovány z vztahů operací do výrobního postupu. V těchto situacích 365 Dynamics pro operace vyhledá příslušné operace vztahy od nejvíce specifické kombinaci alespoň určitou kombinaci.  
+V některých případech musí aplikace Dynamics 365 for Operations najít provozní vlastnosti operace. Například při vytvoření nákupní objednávky je třeba zkopírovat provozní vlastnosti každé operace ze vztahů operací do výrobního postupu. V těchto situacích aplikace Dynamics 365 for Operations hledá příslušné vztahy operací od nejkonkrétnější k nejméně konkrétní kombinaci.  
 
-Při 365 Dynamics pro operace vyhledávání nejrelevantnější vztah operace pro uvolněný produkt, operace vztah, který odpovídá ID položky pro uvolněný produkt je upřednostňováno prostřednictvím vztahu operací že odpovídá skupině položky ID. Operace vztah, který odpovídá ID položky skupiny je zase upřednostňována před výchozí vztah operace. Vyhledávání se provádí v následujícím pořadí:
+Když aplikace Dynamics 365 for Operations hledá nejrelevantnější vztah operace u uvolněného produktu, upřednostňuje přitom vztah, který odpovídá ID položky uvolněného produktu, před vztahem, který odpovídá ID skupiny položek. Vztah operace, který odpovídá ID skupiny položek, má zase přednost před výchozím vztahem operace. Hledání se provádí v tomto pořadí:
 
-1.  **Kód zboží**=**tabulka** a **vztahu položky**=&lt;ID položky&gt;
-2.  **Kód zboží**=**skupiny** a **vztahu položky**=&lt;skupiny ID položky&gt;
-3.  **Kód zboží**=**všechny**
-4.  **Kód postupu**=**postupu** a **směrování vztah**=&lt;ID postupu&gt;
-5.  **Kód postupu**=**všechny**
+1.  **Kód položky**=**Tabulka** a **Vztah položky**=&lt;ID položky&gt;
+2.  **Kód položky**=**Skupina** a **Vztah položky**=&lt;ID skupiny položek&gt;
+3.  **Kód položky**=**Vše**
+4.  **Kód postupu**=**Postup** a **Vztah postupu**=&lt;ID postupu&gt;
+5.  **Kód postupu**=**Vše**
 6.  **Konfigurace**=&lt;ID konfigurace&gt;
-7.  **Configuration**=
-8.  **Web**=&lt;ID webu&gt;
-9.  **Site**=
+7.  **Konfigurace**=
+8.  **Pracoviště**=&lt;ID pracoviště&gt;
+9.  **Pracoviště**=
 
-Proto operace by měla sloužit pouze jednou pro každou trasu. Pokud operace dochází více než jednou ve stejné trase, všechny výskyty této operace bude mít stejný vztah operace a nebudete moci každý mají různé vlastnosti (například časy spuštění).
+Každá operace by se tedy měla v každém postupu použít jen jednou. Pokud se ve stejném postupu vyskytuje vícekrát, budou všechny její výskyty mít stejný vztah operace a u jednotlivých výskytů nebude možné nastavit různé vlastnosti (například operační časy).
 
 ## <a name="route-versions"></a>Verze postupu
-Verze postupu se používají k implementaci odlišností při výrobě výrobků nebo poskytnout větší kontrolu nad procesem výroby. Definují trasu, která by měla sloužit při vydání konkrétní produkt nebo varianta uvolněný produkt pochází. K definování postupu, který se používá pro uvolněný produkt, můžete použít následující omezení:
+Verze postupů se používají pro zohledňování odlišností při výrobě produktů nebo k zajištění větší kontroly nad výrobním procesem. Určují, který postup se má použít při výrobě konkrétního uvolněného produktu nebo varianty produktu. Při určování postupu použitého pro uvolněný produkt můžete použít následující omezení:
 
--   Rozměry výrobku (velikost, barvu, styl nebo konfigurace)
--   Výrobní množství
--   Výrobní závod
+-   Dimenze produktu (velikost, barva, styl nebo konfigurace)
+-   Vyráběné množství
+-   Výrobní pracoviště
 -   Datum výroby
 
-Pokud jste výrobu produktu na konkrétním místě v předepsaném množství, nebo v určitém období, lze označit jako výchozí verze postupu specifické verze postupu. Uvědomte si však, že pouze jeden aktivní trasa je povolena pro daný produkt vydané a danou sadu omezení.  
+Pokud vyrábíte produkt na konkrétním pracovišti či v určitém množství nebo období, je možné označit některou konkrétní verzi postupu jako výchozí. Mějte však na paměti, že u každého uvolněného produktu a příslušných omezení je povolen pouze jeden aktivní postup.  
 
-V parametry modulu řízení výroby můžete zadat dobu platnosti verze postupu vždy požadovat.
+Ve formuláři Parametry modulu Řízení výroby lze určit, že musí být vždy zadána doba platnosti verze postupu.
 
-### <a name="approval-of-route-versions"></a>Schválení verze postupu
+### <a name="approval-of-route-versions"></a>Schvalování verzí postupů
 
-Před použitím verze postupu plánování nebo výrobního procesu musí být schváleny. Když schválíte verzi postupu, můžete schválit také související trasy. Uvědomte si však, že pouze v případě, že je schválen také související trasy lze schválit verze postupu.
+Každou verzi postupu je před použitím v plánovacím nebo výrobním procesu nutné schválit. Když verzi postupu schválíte, můžete schválit i související postup. Verzi postupu je však možné schválit jen v případě, že je schválen i související postup.
 
-### <a name="activating-the-default-route-version"></a>Aktivace verze postupu výchozí
+### <a name="activating-the-default-route-version"></a>Aktivace výchozí verze postupu
 
-Při aktivaci verze postupu určíte jej bude používat verzi výchozí trasy, kterou hlavní plánování nebo které se budou používat k vytváření výrobních zakázek. Můžete mít pouze jeden aktivní verze postupu pro danou sadu omezení (například období, webu nebo množství). Pokud je verze, že se pokoušíte aktivovat konflikty verzí, který je již aktivní, obdržíte chybovou zprávu. Chcete-li zabránit dvojznačný aktivace, musíte pak deaktivovat konfliktní verze nebo upravit omezení (obvykle tečka) ve verzi postupu.
+Aktivací verze postupu ji označíte jako výchozí verzi, kterou bude používat hlavní plánování nebo která bude sloužit k vytváření výrobních zakázek. U každé sady omezení (například období, pracoviště nebo množství) je možné používat pouze jednu aktivní verzi postupu. Pokud je verze, kterou se pokoušíte aktivovat, v konfliktu s již aktivní verzí, zobrazí se chybová zpráva. V takovém případě je třeba deaktivovat konfliktní verzi nebo upravit omezení verze (obvykle období), aby nedošlo k nejednoznačné aktivaci.
 
 ### <a name="electronic-signatures"></a>Elektronické podpisy
 
-V případě, že záznamy, které schvaluje a aktivuje jednotlivé verze postupu musí uchovávat záznam, můžete požadovat elektronických podpisů pro tyto úkoly. Uživatelé, kteří schválit a aktivovat verze postupu bude muset potvrdit svou identitu pomocí [elektronický podpis](/dynamics365/operations/organization-administration/electronic-signature-overview).
+Pokud potřebujete uchovávat záznamy o tom, kdo jednotlivé verze postupů schvaluje a aktivuje, můžete si u těchto úkonů vyžádat elektronické podpisy. Uživatelé, kteří schvalují a aktivují verze postupů, pak budou muset potvrzovat svou identitu pomocí [elektronického podpisu](/dynamics365/operations/organization-administration/electronic-signature-overview).
 
-### <a name="product-change-that-uses-case-management"></a>Změna produktu, která používá Správa případů
+### <a name="product-change-that-uses-case-management"></a>Změna produktu s využitím správy případu
 
-Produktu změnit velikost písmen pro schválení a aktivace nových nebo změněných trasách a verze postupu poskytuje snadný způsob, jak zobrazit přehled omezení verze postupu. Můžete schválit a aktivovat všechny trasy, které souvisejí s určitou změnu v jedné operaci a dokumentovat výsledky v případu změny produktu.
+Pomocí případu změny produktu týkajícího se schválení a aktivace nových nebo změněných postupů a verzí postupů můžete snadno získat informace o omezeních verze postupu. Můžete také schválit a aktivovat všechny postupy, které souvisí s určitou změnou v jedné operaci, a zdokumentovat výsledky v případu změny produktu.
 
-## <a name="maintaining-routes"></a>Správa trasy
-V závislosti na obchodní požadavky je možné ke snížení intenzity rybolovu, který je nutný pro udržení vaší definice procesu.
+## <a name="maintaining-routes"></a>Udržování postupů
+Podle toho, jaké jsou požadavky vašeho podnikání, se vám může podařit zredukovat množství práce nutné k údržbě definic procesů.
 
-### <a name="making-routes-independent-of-resources"></a>Vytváření trasy nezávislých zdrojů
+### <a name="making-routes-independent-of-resources"></a>Vytváření postupů nezávislých na prostředcích
 
-V mnoha systémech musí být určena operace zdroje nebo skupiny zdrojů, který by měl provést operaci v postupu. V 365 Dynamics pro operace, však můžete definovat sadu požadavků, které musí splňovat provozní prostředek se pro operaci. Proto určité operace zdroje nebo skupiny zdrojů, které má být použito nemusí stanovit, dokud je ve skutečnosti naplánované operace. Tato funkce je užitečná, pokud máte mnoho zaměstnanců nebo stroje, které můžete provést stejnou operaci.  
+U mnoha systémů je v postupu nutné určit provozní prostředek nebo skupinu prostředků, které mají provádět operace. V aplikaci Dynamics 365 for Operations však lze definovat požadavky, které musí provozní prostředek splňovat, aby ho bylo možné při operaci použít. Konkrétní provozní prostředky nebo skupiny prostředků, které se mají použít, tedy není nutné určovat, dokud nebude operace ve skutečnosti naplánována. Tato funkce je užitečná zvláště v případě, že máte k dispozici mnoho strojů pracovníků, kteří mohou provádět stejnou operaci.  
 
-Například určíte, že vyžaduje-li operace operace prostředku **stroje** typ, který má **Stamping** schopnost 20 tun. Plánovací modul pak vyřeší tyto požadavky na specifické operace zdroje nebo skupiny zdrojů při plánování operace. Vzhledem k tomu, že je možné zadat pouze tyto požadavky namísto operace vazby na konkrétní počítač, máte mnohem větší flexibilitu. Údržba je navíc snazší při přesunu zdrojů nebo jsou přidány nové zdroje.  
+Můžete například určit, že operace vyžaduje provozní prostředek typu **Stroj**, který má funkci **Lisování** s kapacitou 20 tun. Plánovací modul pak při plánování operace podle těchto požadavků vybere konkrétní provozní prostředek nebo skupinu prostředků. Díky tomu, že stačí zadat pouze tyto požadavky a není nutné spojovat celou operaci s konkrétním strojem, máte mnohem větší flexibilitu. Údržba při přesouvání nebo přidávání nových prostředků je navíc snazší.  
 
-Další informace o různých typech požadavků na zdroje a jejich použití naleznete v tématu požadavky na zdroje operace a [schopnosti prostředku](resource-capabilities.md).
+Další informace o různých typech požadavků na prostředky a jejich použití naleznete v tématu Požadavky na prostředky u operací a [Schopnosti prostředku](resource-capabilities.md).
 
-### <a name="sharing-routes-across-sites"></a>Sdílení tras na webech
+### <a name="sharing-routes-across-sites"></a>Sdílení postupů mezi pracovišti
 
-Vyrobit stejný produkt na více než jednom produkčním a kroky k výrobě produktu jsou že stejné ve všech místech, můžete navrhnout často sdílené cesty, která se používá na všech serverech výroby. K vytvoření sdílené cesty, není zadejte na trati sám. Musí však stále vytvořit verzi postupu, který přidruží sdílenou trasu produktu v každém místě.  
+Pokud vyrábíte stejný produkt na více pracovištích a výrobní postupy jsou všude stejné, můžete vytvořit sdílený postup, který se použije na všech pracovištích. Chcete-li takový sdílený postup vytvořit, nezadávejte pracoviště přímo u použitého postupu. Je třeba vytvořit verzi postupu, která přidruží sdílený postup k produktu na každém pracovišti.  
 
-Musíte také zkontrolovat, že nemůžete volat pro určité operace zdroje nebo skupiny zdrojů požadavky na zdroje pro každou operaci v postupu, ale místo vyjádřená charakteristiky požadované prostředky. Pak bude možné přiřadit prostředky odpovídající operace z webu, který výroba je naplánována na plánovací modul. Například pokud existují malé rozdíly v době běhu nebo je čas nastavení pro konkrétní operaci pro danou lokalitu, můžete použít tyto informace přidáním vztahu další operací pro daný web.  
+Je také nutné zajistit, aby jednotlivé operace nepožadovaly konkrétní provozní prostředky nebo skupiny prostředků, ale aby byly požadavky na prostředky vyjádřeny pomocí charakteristik požadovaných prostředků. Plánovací modul potom bude moci přiřazovat vhodné provozní prostředky podle pracoviště, u kterého je výroba naplánována. Pokud například existují malé rozdíly v operačních časech nebo se přípravný čas některé operace liší podle pracoviště, můžete tyto informace určit přidáním dalšího vztahu operace k danému pracovišti.  
 
-Chcete-li plně využít výhod sdílené cesty, také používejte spotřebu zdrojů na odpovídající kusovník (BOM). Pokud nastavíte příznak pro spotřebu prostředků na řádku Kusovníku, sklad a umístění, které suroviny by měl být používán z je odvozeno z zdroj operace, operace je naplánována na. Proto skladu a umístění není nutné stanovit, dokud skutečně plánování výroby se. Tímto způsobem můžete vytvořit Kusovník a postup nezávislé na fyzické umístění, kde je produkt vyroben.
+Chcete-li plně využít výhod sdílených postupů, používejte také spotřebu prostředků u odpovídajících kusovníků. Když na řádku kusovníku nastavíte příznak spotřeby prostředků, sklad a místo, odkud se mají vzít suroviny, se odvodí z provozního prostředku, u kterého je operace naplánována. Sklad a místo tedy není nutné určovat, dokud nebude výroba ve skutečnosti naplánována. Tímto způsobem můžete zajistit nezávislost kusovníku i postupu na fyzickém místě výroby produktu.
 
-### <a name="standard-operation-relations"></a>Standardní operace vztahy
+### <a name="standard-operation-relations"></a>Standardní vztahy operací
 
-Pokud váš podnik používá standardizovaný operací v průběhu výroby a je velmi málo nebo žádné kolísání doby seřízení, běhu, výpočet spotřeby, výpočet, nákladů a atd., může být vhodné vytvoření výchozí relace operací pro všechny operace. V tomto případě Nevytvářejte relace operací, které jsou specifické pro všechny trasy nebo vydání produktu.  
+Pokud váš podnik používá při výrobě standardizované operace a parametry, jako je přípravný a operační čas, výpočty spotřeby či nákladů a podobně, se mění jen velmi málo nebo vůbec, můžete pro všechny operace vytvořit výchozí vztahy. V takovém případě nevytvářejte vztahy operací, které platí pro konkrétní postupy nebo uvolněné produkty.  
 
-Pokud také express prostředku požadavky na dovednosti a schopnosti a vytvořit nezávislý na webu vaší trasy, pomáhá zachovat minimální průběžnou údržbu firemních procesů.  
+Pokud navíc vyjádříte požadavky na prostředky ve smyslu schopností a dovedností a vytvoříte postupy nezávislé na pracovištích, budete moci snížit množství práce spojené s údržbou podnikových procesů na minimum.  
 
-Pokud použijete tento přístup **vztahů operací** stránka se stane vaší primární cíl zachování doby běhu a další vlastnosti.
+Při použití tohoto přístupu budete operační časy a další vlastnosti sledovat a nastavovat především na stránce **Vztahy operací**.
 
-### <a name="resource-specific-process-times"></a>Časy zpracování specifických prostředků
+### <a name="resource-specific-process-times"></a>Časy zpracování u konkrétních prostředků
 
-Pokud nezadáte operace zdroje nebo skupiny zdrojů v rámci požadavky na zdroje pro operaci, použitelné prostředky může pracovat při různých rychlostech. Proto se může lišit čas, která je požadována pro zpracování operace. Chcete-li tento problém vyřešit, můžete použít **vzorec** na vztah operací určete způsob výpočtu času zpracování. Existují tyto možnosti:
+Pokud v rámci požadavků na prostředky u operace nezadáte provozní prostředek nebo skupinu prostředků, mohou použitelné prostředky pracovat při různých rychlostech. Čas nutný ke zpracování operace se tedy může lišit. Tento problém můžete vyřešit tak, že způsob výpočtu času zpracování určíte pomocí pole **Vzorec** ve vztahu operace. Existují tyto možnosti:
 
--   **Standardní** – (výchozí možnost) výpočet používá pouze pole z vztah operace a násobí množství objednávky zadané běhu.
--   **Kapacita** – zahrnuje výpočet **kapacity** z prostředku operací. Čas je tedy závislé na prostředku. Hodnota uvedená na provozní prostředek je Hodinová kapacita. Tato hodnota je vynásobena číslem množství na objednávce a **faktor** hodnotu z vztah operace.
--   **Dávky** – kapacita dávky se počítá s použitím informací ze vztah operace. Počet listů a tím i čas zpracování lze pak vypočte na základě množství objednávky.
--   **Dávka prostředku** – tato možnost je v podstatě stejný jako **listu** možnost. Však obsahuje výpočet **dávky kapacity** z prostředku operací. Čas je tedy závislé na prostředku.
+-   **Standardní** – (výchozí možnost) výpočet použije pouze pole ze vztahu operace a vynásobí zadaný operační čas objednaným množstvím.
+-   **Kapacita** – při výpočtu se bere v úvahu pole **Kapacita** u provozního prostředku. Čas tedy závisí na prostředku. Hodnota uvedená u provozního prostředku je kapacita za hodinu. Tato hodnota se vynásobí objednaným množstvím a hodnotou **Koeficient** ze vztahu operace.
+-   **Dávka** – kapacita dávky se počítá s využitím informací ze vztahu operace. Počet dávek (a tím i čas zpracování) lze pak vypočítat na základě objednaného množství.
+-   **Dávka prostředku** – tato možnost je v podstatě stejná jako možnost **Dávka**. Při výpočtu se však zohledňuje i pole **Kapacita dávky** z provozního prostředku. Čas tedy závisí na prostředku.
 
 
 <a name="see-also"></a>Viz také
 --------
 
-[Bills of materials and formulas](bill-of-material-bom.md)
+[Kusovníky a receptury](bill-of-material-bom.md)
 
-[Cost categories used in production routing](../cost-management/cost-categories-used-production-routings.md)
+[Nákladové kategorie použité ve výrobních postupech](../cost-management/cost-categories-used-production-routings.md)
 
-[Resource capabilities](resource-capabilities.md)
+[Schopnosti prostředku](resource-capabilities.md)
 
-[Electronic signature overview](/dynamics365/operations/organization-administration/electronic-signature-overview)
+[Přehled elektronických podpisů](/dynamics365/operations/organization-administration/electronic-signature-overview)
 
 
 

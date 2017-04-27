@@ -33,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 Plány dodávek vám umožňují sledovat množství na řádku objednávky, když pracujete s více dodávkami na jedné prodejní objednávce, prodejní nabídce nebo nákupní objednávce.
 
-Plán dodávek používejte pro celkové množství řádku objednávky nebo nabídky, musí být dodány ve více dodávkách. Jednotlivé dodávky jsou reprezentovány řádky dodávky. Dva nebo více řádků dodávek tvoří jeden plán dodávek. Řádky dodávky mohou mít jiná data dodání, množství, způsoby dodání a dimenze úložiště, jako například pracoviště a sklad.  
+Použijte plán dodávek, pokud celkové množství na objednávce nebo řádku nabídky musí být dodáno v podobě vícenásobné expedice. Řádky dodávky představují jednotlivé dodávky. Dva nebo více řádků dodávek tvoří jeden plán dodávek. Řádky dodávky mohou mít jiná data dodání, množství, způsoby dodání a dimenze úložiště, jako například pracoviště a sklad.  
 
 **Příklad plánu dodávek**
 
@@ -45,7 +45,7 @@ Plán dodávek používejte pro celkové množství řádku objednávky nebo nab
 
 V této situaci zákazník požaduje dodání 600 židlí v dávkách 100 židlí po dobu šesti měsíců. Ke sledování požadavků na dodání vytvoříte plán dodávek. Na stránce plánu dodávek vytvoříte šest samostatných řádků dodávky. Každý řádek dodávky obsahuje 100 židlí a označuje datum dodání těchto 100 židlí. V tomto případě se každý řádek posune u prvního dne měsíce po šest po sobě následujících měsíců.  
 
-Při vytváření plánu dodávek se typ původního řádku objednávky automaticky změní na **Řádek objednávky s více dodávkami**. Řádek tohoto typu je označován jako obchodní řádek a je označen ikonou. Řádek dodávky je označen jinou ikonou. Pokud změníte množství na řádku dodávky, obchodní řádek aktualizován pro celkové množství plánu dodávek. Pokud obchodní smlouvě definoval Celková sleva objednávky, plán dodávek zajišťuje, že vaše objednávka má nárok na celkovou objednávku slevu i v případě, že objednávka je rozdělit na samostatné dodávky.  
+Při vytváření plánu dodávek se typ původního řádku objednávky automaticky změní na **Řádek objednávky s více dodávkami**. Řádek tohoto typu je označován jako obchodní řádek a je označen ikonou. Řádek dodávky je označen jinou ikonou. Pokud změníte množství na řádku dodávky, aktualizuje se obchodní řádek na celkové množství plánu dodávek. Pokud obchodní smlouva definuje celkovou slevu pro objednávku, plán dodávek zajistí, že objednávka bude splňovat požadavky na slevu celkové objednávky, a to i v případě, že objednávka bude rozdělena na samostatné dodávky.  
 
 Objednávky, které mají plán dodávek, se zpracují proti řádkům dodávky. Zpracování zahrnuje zaúčtování dodacích listů, příjemek produktů a fakturaci.  
 

@@ -58,7 +58,7 @@ Je nutné definovat diety zaměstnance, které vaše organizace poskytuje. Proto
     -   Liší se sazby denních diet v závislosti na poloze a jaké polohy jsou zahrnuty?
     -   Pokud se sazba denních diet liší podle polohy, jaké procento je pro každou polohu poskytováno:
         -   jídla
-        -   Hotel
+        -   hotel
         -   jiné výdaje
 
 ### <a name="expense-management-journals-and-accounts"></a>Deníky a účty správy výdajů

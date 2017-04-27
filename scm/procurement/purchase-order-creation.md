@@ -33,7 +33,7 @@ Při vytvoření nákupní objednávky proběhne zadání obecných informací o
 
 Nákupní objednávky můžete vytvořit také zkopírováním řádků z jiného dokumentu nákupní objednávky nebo prodejní objednávky. V takovém případě můžete obrátit znaménko u zásob, stejně jako byste obrátili znaménko na faktuře a označili připsání na stranu Dal.  
 
-I když můžete nákupní objednávky vytvořit ručně, jsou obvykle generovány z jiných procesů. Objednávky lze automaticky vytvořit podle jiných dokumentů, jako jsou žádanky. Nebo je lze vytvořit jako součást hlavního plánování procesu prostřednictvím plánované POs. Pokud používáte nákupní smlouvy, POs lze vytvořit klepnutím **uvolnění zakázky** akce. K dispozici jsou také rozšířené metody pro automatické vytvoření nákupní objednávky. Objednávky lze například vytvořit při použití přímé dodávky nebo řetězů mezipodnikové objednávky.
+I když můžete nákupní objednávky vytvořit ručně, jsou obvykle generovány z jiných procesů. Objednávky lze automaticky vytvořit podle jiných dokumentů, jako jsou žádanky. Případně je lze vytvořit jako součást hlavního plánování procesu prostřednictvím plánovaných nákupních objednávek. Pokud používáte nákupní smlouvy, lze nákupní objednávky vytvořit pomocí akce **Dílčí objednávka**. K dispozici jsou také rozšířené metody pro automatické vytvoření nákupní objednávky. Objednávky lze například vytvořit při použití přímé dodávky nebo řetězů mezipodnikové objednávky.
 
 ## <a name="creating-a-purchase-order-header"></a>Vytvoření záhlaví nákupní objednávky
 Při vytvoření nové nákupní objednávky se zobrazí dialogové okno, kde můžete zadat nejběžnější informace pro záhlaví nákupní objednávky. Po klepnutí na tlačítko **OK** se zavře dialogové okno, je vytvořena objednávka, a vy můžete zadat další informace do záhlaví.  
@@ -84,7 +84,7 @@ Bude pravděpodobně nutné zpozdit dokončení nákupní objednávky. Napříkl
 <a name="see-also"></a>Viz také
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Přehled nákupních objednávek](purchase-order-overview.md)
 
 [Potvrzení a odmítnutí nákupní objednávky](purchase-order-approval-confirmation.md)
 

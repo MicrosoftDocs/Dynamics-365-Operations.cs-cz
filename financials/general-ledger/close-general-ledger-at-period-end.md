@@ -1,6 +1,6 @@
 ---
 title: "Uzavření hlavní knihy ke konci období"
-description: "Toto téma popisuje úlohy, které jsou obvykle dokončena při provádění období uzávěrky v hlavní knize."
+description: "Toto téma popisuje úlohy, které jsou obvykle dokončeny při provádění uzávěrky období pro hlavní knihu."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,9 +29,9 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje úlohy, které jsou obvykle dokončena při provádění období uzávěrky v hlavní knize. 
+Toto téma popisuje úlohy, které jsou obvykle dokončeny při provádění uzávěrky období pro hlavní knihu. 
 
-V hlavní knize můžete provést uzávěrku období nebo roku. Postupy uzávěrky připravují systém pro nové období. Příprava systému pro nový rok, je třeba spustit Zavřít proces konce roku. Každá organizace má různé postupy a kroky, které provádí na konci období. Zde jsou některé volitelné kroky pro ukončení doby:
+V hlavní knize můžete provést uzávěrku období nebo roku. Postupy uzávěrky připravují systém pro nové období. Abyste systém připravili na nový rok, je nutné spustit proces roční uzávěrky. Každá organizace má různé postupy a kroky, které provádí na konci období. Zde jsou některé volitelné kroky pro ukončení období:
 
 -   Dokončete všechny úlohy pro všechny ostatní moduly, jako jsou například Pohledávky, Závazky a Zásoby.
 -   Ověřte, že všechny deníky jsou zaúčtovány.
@@ -42,9 +42,9 @@ V hlavní knize můžete provést uzávěrku období nebo roku. Postupy uzávěr
 -   Zapište transakce do deníku a zkontrolujte sestavu **Deník hlavní knihy**.
 -   Proveďte konsolidaci pomocí konsolidační společnosti nebo Finančního výkaznictví.
 -   Generujte finanční výkazy konce období pomocí Finančního výkaznictví.
--   Nastavte období hlavní knihy na **Blokováno**, aby neprobíhalo žádné další zaúčtování. Můžete také omezit období pro určitou skupinu uživatelů, zatímco probíhají aktivity na konci období, abyste získali lepší kontrolu. Není vhodné nastavovat období **trvale uzavřena**, protože je nelze znovu otevřít období, které bylo uzavřeno.
+-   Nastavte období hlavní knihy na **Blokováno**, aby neprobíhalo žádné další zaúčtování. Můžete také omezit období pro určitou skupinu uživatelů, zatímco probíhají aktivity na konci období, abyste získali lepší kontrolu. Není vhodné nastavit období na **Trvale zavřeno**, protože uzavřené období nelze znovu otevřít.
 
-Finanční období Zavřít pracovní prostor lze uspořádat a sledovat úkoly vyžadované pro různé procesy na konci období. Odkazují [finanční období uzavření prostoru](financial-period-close-workspace.md) a [zavřít konec roku](Year-end-close.md) témata pro další informace. 
+Pracovní prostor uzavření finančního období lze použít k uspořádání a sledování úkolů vyžadovaných pro různé procesy na konci období. Další informace naleznete v tématech [Pracovní prostor uzavření finančního období](financial-period-close-workspace.md) a [Roční uzávěrka](Year-end-close.md). 
 
 
 

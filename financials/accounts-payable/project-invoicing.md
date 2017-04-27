@@ -106,7 +106,7 @@ Můžete vytvářet například následující plán účtování:
 Když jsou milníkové platby připraveny k fakturaci, použijte postup fakturace částek na účet.
 
 ## <a name="vendor-invoicing"></a>Fakturace dodavatele
-Při objednání zboží od dodavatele a přiřazená zboží k projektu určuje vlastnost položky, kterou vyberete pro řádek nákupní objednávky, zda bude nakoupená položka fakturována odběrateli. Je-li nastavit výchozí vlastnosti řádku jsou zobrazeny pro zboží na řádku nákupní objednávky (řádek podrobností &gt;projektu &gt;vlastnost řádku). Existují dva způsoby, jak změnit vlastnost řádku:
+Při objednání zboží od dodavatele a přiřazená zboží k projektu určuje vlastnost položky, kterou vyberete pro řádek nákupní objednávky, zda bude nakoupená položka fakturována odběrateli. Pokud jste nastavili výchozí vlastnosti řádku, jsou zobrazeny pro položku na řádku nákupní objednávky (Podrobnosti řádku &gt; Projekt &gt; Vlastnost řádku). Existují dva způsoby, jak změnit vlastnost řádku:
 
 -   Fakturovat odběrateli projektu za zboží: Nastavte vlastnost řádku pro položku na fakturovatelnou hodnotu na nákupní objednávce a následně fakturujte odběrateli pomocí správného způsobu fakturace projektu.
 -   Nefakturovat odběrateli projektu za zboží: Nevybírejte vlastnost řádku **Fakturovatelné** na řádku nákupní objednávky pro položku. Poté lze nákupní objednávku vyfakturovat a není třeba provádět další akce.

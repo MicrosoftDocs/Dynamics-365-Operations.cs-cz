@@ -33,13 +33,13 @@ ms.lasthandoff: 03/31/2017
 
 Stránku Úprava zásob na skladě použijte pro úpravu hodnoty nákladů na množství zásob na skladě po spuštění procesu uzávěrky skladu.
 
-Stránku **Úprava zásob na skladě** můžete použít pro úpravu hodnoty nákladů na množství zásob na skladě po spuštění procesu uzávěrky skladu. **Poznámka:** otevřete **úprava zásob na skladě** na stránky **závěrka a oprava** stránky, vyberte záznam dokončené soupisu zavřít a potom klepněte na tlačítko **úprava**&gt;**na skladě**. **Příklad:** V únoru dojde k následujícím transakcím:
+Stránku **Úprava zásob na skladě** můžete použít pro úpravu hodnoty nákladů na množství zásob na skladě po spuštění procesu uzávěrky skladu. **Poznámka:** Stránku **Úprava zásob na skladě** otevřete tak, že na stránce **Závěrka a oprava** vyberete záznam dokončeného procesu uzávěrky skladu a zvolíte možnost **Úprava** &gt; **Na skladě**. **Příklad:** V únoru dojde k následujícím transakcím:
 
 -   1. únor: Finanční příjem zásob v množství 2 kusů v hodnotě 10,00 USD.
 -   5. únor: Finanční příjem zásob v množství 1 kus v hodnotě 13,00 USD.
 -   19. únor: Finanční výdej zásob v množství 1 kus a s průběžnou průměrnou cenou 11,00 USD.
 
-Tato položka byla vytvořena s prvním v první ze skladu (FIFO) skladový model a od 28. února byla provedena uzávěrka skladu. Problém finanční transakce USD 11.00 budou vyrovnány proti finanční příjem, který je datován dne 1 a bude provedena úprava z USD 1.00. Následující skladové příjmy pak budou obsahovat otevřená skladová množství:
+Pro tuto položku byl nastaven skladový model podle metody FIFO a uzávěrka skladu byla provedena k 28. únoru. Finanční transakce výdeje v hodnotě 11,00 USD bude vyrovnána s finančním příjmem datovaným k 1. únoru a dále bude provedena úprava v hodnotě 1,00 USD. Následující skladové příjmy pak budou obsahovat otevřená skladová množství:
 
 -   1. února: Množství 1 s náklady 10,00 USD
 -   5. února: Množství 1 s náklady 13,00 USD

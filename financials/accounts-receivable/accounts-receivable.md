@@ -30,7 +30,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Pohledávky lze použít při sledování faktur odběratelů a příchozích plateb.
+Pohledávky lze použít při sledování faktur odběratelů a příchozích plateb. 
 
 Můžete vytvořit faktury odběratelů, které jsou založeny na prodejních objednávkách nebo na dodacích listech. Můžete také zadat volné faktury, které nesouvisejí s prodejními objednávkami. Platby lze přijímat pomocí několika různých platebních typů. Mezi ně patří cizí směnky, hotovost, šeky, kreditní karty a elektronické platby. Pokud vaše organizace zahrnuje více právnických osob, můžete použít centralizované platby k záznamu plateb v jedné právnické osobě jménem ostatních právnických osob.
 

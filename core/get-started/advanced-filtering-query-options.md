@@ -1,5 +1,5 @@
 ---
-title: "Rozšířené filtrování a syntaxe dotazů"
+title: "Syntax pokročilého filtrování a dotazů"
 description: "Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozici při použití operátoru &quot;shody&quot; v dialogovém okně Rozšířený filtr či řazení."
 author: jasongre
 manager: AnnBe
@@ -25,14 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="advanced-filtering-and-query-syntax"></a>Rozšířené filtrování a syntaxe dotazů
+# <a name="advanced-filtering-and-query-syntax"></a>Syntax pokročilého filtrování a dotazů
 
 [!include[banner](../includes/banner.md)]
 
 
 Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozici při použití operátoru "shody" v dialogovém okně Rozšířený filtr či řazení.
 
-<a name="advanced-query-syntax"></a>Syntaxe dotazu Rozšířené
+<a name="advanced-query-syntax"></a>Syntax pokročilých dotazů
 ---------------------
 
 <table>
@@ -55,79 +55,79 @@ Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozic
 <td><em>hodnota</em></td>
 <td>Rovno zadané hodnotě</td>
 <td>Zadejte hodnotu, kterou chcete vyhledat.</td>
-<td><strong>Smith</strong> najde &quot;Svoboda&quot;.</td>
+<td><strong>Smith</strong> vyhledá &quot;Smith&quot;.</td>
 </tr>
 <tr class="even">
-<td>! <em>hodnoty</em> (vykřičník)</td>
+<td>!<em>hodnota</em> (vykřičník)</td>
 <td>Není rovno zadané hodnotě</td>
 <td>Před hodnotu, kterou chcete vyloučit, zadejte vykřičník.</td>
-<td><strong>! Smith</strong> vyhledá všechny hodnoty s výjimkou &quot;Svoboda&quot;.</td>
+<td><strong>!Smith</strong> vyhledá všechny hodnoty kromě hodnoty &quot;Smith&quot;.</td>
 </tr>
 <tr class="odd">
 <td><em>hodnota od</em>..<em>hodnota do</em> (dvojí období)</td>
 <td>Mezi dvěma zadanými hodnotami oddělenými dvěma tečkami</td>
 <td>Zadejte hodnotu Od, pak dvě tečky a nakonec hodnotu Do.</td>
-<td><strong>1..10</strong> vyhledá všechny hodnoty od 1 do 10. V poli řetězec však <strong>A.. C</strong> vyhledá všechny hodnoty začínající na &quot;A&quot; a &quot;B&quot;a hodnoty, které jsou přesně rovny &quot;C&quot;. Například tento dotaz nenajde &quot;Ca&quot;. Chcete-li najít všechny hodnoty z &quot;A*&quot; přes &quot;C*&quot;, typ <strong>A.. D</strong>.</td>
+<td><strong>1..10</strong> vyhledá všechny hodnoty od 1 do 10. Avšak v poli řetězců <strong>A..C</strong> vyhledá všechny hodnoty začínající na &quot;A&quot; and &quot;B&quot;, a hodnoty přesně rovny &quot;C&quot; (například &quot;Ca&quot; nebude nalezena). Chcete-li vyhledat všechny hodnoty od &quot;A*&quot; do &quot;C*&quot;, <strong>A..D</strong>.</td>
 </tr>
 <tr class="even">
 <td>..<em>hodnota</em> (dvojí období)</td>
 <td>Méně nebo rovno zadané hodnotě</td>
 <td>Zadejte dvě tečky a pak hodnotu.</td>
-<td><strong>.. 1000</strong> vyhledá jakékoli číslo menší než 1000, jako například &quot;100&quot;, &quot;999.95&quot;, a &quot;1 000&quot;.</td>
+<td><strong>..1000</strong> vyhledá libovolné číslo menší nebo rovné hodnotě 1000: například &quot;100&quot;, &quot;999.95&quot;, and &quot;1,000&quot;.</td>
 </tr>
 <tr class="odd">
 <td><em>hodnota</em>.. (dvě tečky)</td>
 <td>Větší nebo rovno zadané hodnotě</td>
 <td>Zadejte hodnotu a poté dvě tečky.</td>
-<td><strong>1000..</strong> Vyhledá libovolné číslo větší než nebo rovno 1000, jako &quot;1000&quot;, &quot;1.000,01&quot;, a &quot;1 000 000&quot;.</td>
+<td><strong>1000..</strong> vyhledá libovolné číslo větší nebo rovné hodnotě 1000: například &quot;1,000&quot;, &quot;1,000.01&quot;, and &quot;1,000,000&quot;.</td>
 </tr>
 <tr class="even">
-<td>&gt;<em>Hodnota</em> (znaménko větší než)</td>
+<td>&gt;<em>hodnota</em> (znaménko větší než)</td>
 <td>Větší než zadaná hodnota</td>
-<td>Zadejte znaménko větší než (<strong>&gt;</strong>) a pak hodnotu.</td>
-<td><strong>&gt;1000</strong> vyhledá libovolné číslo větší než 1000, jako &quot;1.000,01&quot;, &quot;20 000&quot;, a &quot;1 000 000&quot;.</td>
+<td>Zadejte znaménko „větší než“ (<strong>&gt;</strong>) a pak hodnotu.</td>
+<td><strong>&gt;1000</strong> vyhledá libovolné číslo větší než hodnota 1000: &quot;1000.01&quot;, &quot;20,000&quot;, and &quot;1,000,000&quot;.</td>
 </tr>
 <tr class="odd">
-<td>&lt;<em>Hodnota</em> (menší než znak)</td>
+<td>&lt;<em>hodnota</em> (znaménko menší než)</td>
 <td>Menší než zadaná hodnota</td>
-<td>Zadejte méně než znaménko (<strong>&lt;</strong>) a pak hodnotu.</td>
-<td><strong>&lt;1000</strong> vyhledá jakékoli číslo menší než 1000, jako například &quot;999,99&quot;, &quot;1&quot;, a &quot;-200&quot;.</td>
+<td>Zadejte znaménko „menší než“ (<strong>&lt;</strong>) a pak hodnotu.</td>
+<td><strong>&lt;1000</strong> vyhledá libovolné číslo menší než hodnota 1000: například &quot;999.99&quot;, &quot;1&quot;, and &quot;-200&quot;.</td>
 </tr>
 <tr class="even">
-<td><em>Hodnota</em>* (hvězdička)</td>
+<td><em>hodnota</em>* (hvězdička)</td>
 <td>Začínající od zadané hodnoty</td>
 <td>Zadejte počáteční hodnotu a pak hvězdičku (<strong>*</strong>).</td>
-<td><strong>S *</strong> nalezne libovolný řetězec, který začíná &quot;S&quot;, jako &quot;ve Stockholmu&quot;, &quot;Sydney&quot;, a &quot;San Francisco&quot;.</td>
+<td><strong>S*</strong>nalezne libovolný řetězec začínající na &quot;S&quot;, jako například &quot;Stockholm&quot;, &quot;Sydney&quot;, a &quot;San Francisco&quot;.</td>
 </tr>
 <tr class="odd">
-<td>*<em>value</em> (asterisk)</td>
+<td>*<em>hodnota</em> (hvězdička)</td>
 <td>Končí zadanou hodnotou</td>
 <td>Zadejte hvězdičku a pak konečnou hodnotu.</td>
-<td><strong>* východ</strong> nalezne libovolný řetězec, který končí &quot;východní&quot;, jako &quot;severovýchod&quot; a &quot;jihovýchodní&quot;.</td>
+<td><strong>*east</strong>nalezne řetězec končící na &quot;východ&quot;, jako například &quot;severovýchod&quot; nebo &quot;jihovýchod&quot;.</td>
 </tr>
 <tr class="even">
-<td>*<em>Hodnota</em>* (hvězdička)</td>
+<td>*<em>hodnota</em>* (hvězdička)</td>
 <td>Obsahující zadanou hodnotu</td>
 <td>Zadejte hvězdičku, pak hodnotu, a nakonec opět hvězdičku.</td>
-<td><strong>*TH*</strong> nalezne libovolný řetězec, který obsahuje &quot;tou&quot;, jako &quot;severovýchod&quot; a &quot;jihovýchodní&quot;.</td>
+<td><strong>*th*</strong> nalezne libovolný řetězec obsahující &quot;ch&quot;, jako například &quot;severovýchod&quot; nebo &quot;jihovýchod&quot;.</td>
 </tr>
 <tr class="odd">
 <td>? (otazník)</td>
 <td>Obsahující jeden nebo více neznámých znaků</td>
 <td>V pozici neznámého znaku v hodnotě můžete zadat otazník.</td>
-<td><strong>Sm? th</strong> najde &quot;Svoboda&quot; a &quot;ář&quot;.</td>
+<td><strong>Sm?th</strong> nalezne &quot;Smith&quot; a &quot;Smyth&quot;.</td>
 </tr>
 <tr class="even">
 <td><em>hodnota</em>,<em>hodnota</em> (čárka)</td>
 <td>Shoduje se s hodnotami oddělenými čárkou</td>
 <td>Zadejte veškerá vaše kritéria a oddělte je čárkami.</td>
-<td><strong>A, D, F, G</strong> finds exactly &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, and &quot;G&quot;. <strong>10, 20, 30, 100</strong> nalezne přesně &quot;10, 20, 30, 100&quot;.</td>
+<td><strong>A, D, F, G</strong> nalezne přesně &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, a &quot;G&quot;. <strong>10, 20, 30, 100</strong> nalezne přesně &quot;10, 20, 30, 100&quot;.</td>
 </tr>
 <tr class="odd">
 <td>(<span class="code">příkaz SQL</span>) (příkaz SQL v uvozovkách)</td>
 <td>Nalezení definovaného dotazu</td>
 <td>Zadejte dotaz ve formě příkazu SQL v uvozovkách.</td>
-<td><strong><span class="code">(zdroj dat. NázevPole! = &quot;A&quot;)</span></strong></td>
+<td><strong><span class="code">(datový zdroj.Název pole != &quot;A&quot;)</span></strong></td>
 </tr>
 <tr class="even">
 <td>bil.</td>
@@ -140,7 +140,7 @@ Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozic
 <td>Párování hodnoty nebo rozsahu hodnot zadaných za pomoci parametrů metody <strong>SysQueryRangeUtil</strong></td>
 <td>Zadejte parametry metody <strong>SysQueryRangeUtil</strong> Párování pro určení hodnoty nebo rozsahu hodnot.</td>
 <td><ol>
-<li>Klepněte na tlačítko <strong>pohledávek</strong>&gt;<strong>faktur</strong>&gt;<strong>faktur odběratele otevřete</strong>.</li>
+<li>Klikněte na <strong>Pohledávky</strong> &gt; <strong>Faktury</strong> &gt; <strong>Otevřené faktury odběratele</strong>.</li>
 <li>Stisknutím kombinace kláves Ctrl + Shift + F3 otevřete stránku <strong>Dotaz</strong>.</li>
 <li>Na kartě <strong>Rozsah</strong> klepněte na možnost <strong>Přidat</strong>.</li>
 <li>V poli <strong>Tabulka</strong> vyberte <strong>Otevřít transakce odběratelů</strong>.</li>
@@ -186,7 +186,7 @@ Další podrobnosti o metodách pro data <strong>SysQueryRangeUtil</strong> a n�
 </ul></td>
 </tr>
 <tr class="odd">
-<td>GreaterThanDate (_relativeDays = 0) GreaterThanUtcDate (_relativeDays = 0)</td>
+<td>GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</td>
 <td>Vyhledání všech dat po určeném relativním datu.</td>
 <td><ul>
 <li><strong>Více než 30 dnů ode dneška</strong> – zadejte <strong>(GreaterThanDate(30))</strong>.</li>
@@ -200,7 +200,7 @@ Další podrobnosti o metodách pro data <strong>SysQueryRangeUtil</strong> a n�
 </ul></td>
 </tr>
 <tr class="odd">
-<td>LessThanDate (_relativeDays = 0) LessThanUtcDate (_relativeDays = 0)</td>
+<td>LessThanDate (_relativeDays=0) LessThanUtcDate (_relativeDays=0)</td>
 <td>Vyhledání všech dat před určeném relativním datem.</td>
 <td><ul>
 <li><strong>Méně než sedm dní ode dneška</strong> – zadejte <strong>(LessThanDate(7))</strong>.</li>

@@ -1,6 +1,6 @@
 ---
-title: "Nový úkol vodítka (únor 2016)"
-description: "Tato wiki obsahuje úkol pokyny, které byly vydány knihovny Microsoft BPM od února 2016.  Zahrnutí knihoven, které byly publikovány (únor 2016) APQC Unified knihovnu 365 Microsoft Dynamics pro operace a (únor 2016) Začínáme."
+title: "Noví průvodci úkolem (únor 2016)"
+description: "Tato wiki obsahuje průvodce úkolem vydané pro knihovny Microsoft BPM k únoru 2016.  Publikované knihovny zahrnují (únor 2016) knihovnu APQC Unified Library for Microsoft Dynamics 365 for Operations a (únor 2016) příručku Začínáme."
 author: josaw1
 manager: AnnBe
 ms.date: 2016-07-15 23 - 21 - 40
@@ -24,14 +24,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-task-guides-february-2016"></a>Nový úkol vodítka (únor 2016)
+# <a name="new-task-guides-february-2016"></a>Noví průvodci úkolem (únor 2016)
 
-Tato wiki obsahuje úkol pokyny, které byly vydány knihovny Microsoft BPM od února 2016.  Zahrnutí knihoven, které byly publikovány (únor 2016) APQC Unified knihovnu 365 Microsoft Dynamics pro operace a (únor 2016) Začínáme.
+Tato wiki obsahuje průvodce úkolem vydané pro knihovny Microsoft BPM k únoru 2016.  Publikované knihovny zahrnují (únor 2016) knihovnu APQC Unified Library for Microsoft Dynamics 365 for Operations a (únor 2016) příručku Začínáme.
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Úlohy v (únor 2016) vodítka APQC knihovny Microsoft Dynamics 365 pro operace Unified
+<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Průvodci úkolem v knihovně APQC Unified Library pro Microsoft Dynamics 365 for Operations (únor 2016)
 ---------------------------------------------------------------------------------
 
-(Únor 2016) APQC Unified knihovna obsahuje vodítka úloh, které jsou určeny k použití pro pomoc s Dynamics 365 pro operace 7.0.0. Pokud potřebujete lokalizované verze těchto úloh vodítka, jsou k dispozici v (květen 2016) APQC Unified v knihovně Microsoft Dynamics 365 pro operace. Další informace o tom, jak připojit systém nápovědy ke knihovně příručka úloh naleznete v tématu [seznámení s pomocí](help-overview.md).
+Knihovna APQC Unified Library (únor 2016) obsahuje průvodce úkolem, určené k použití v rámci Nápovědy pro verzi Dynamics 365 for Operations 7.0.0 Pokud potřebujete lokalizované verze těchto průvodců úkoly, jsou k dispozici v knihovně Unified Library APQC pro Microsoft Dynamics 365 for Operations (květen 2016). Další informace o tom, jak připojit systém nápovědy ke knihovně průvodce úkolem viz [Začínáme s nápovědou](help-overview.md).
 
 ### <a name="accounts-payable"></a>Závazky
 
@@ -531,7 +531,7 @@ Tato wiki obsahuje úkol pokyny, které byly vydány knihovny Microsoft BPM od �
 | Přidání výpočtu do modelu konfigurace produktu    | Globální             |
 | Schválit model konfigurace produktu                 | Globální             |
 | Kompletní základní nastavení uvolněného základního produktu | Globální             |
-| Vytvořit... základní produkt \financial-dimensions\dimension-Based               | Globální             |
+| Vytvoření ..\financial-dimensions\dimension-based product master               | Globální             |
 | Vytvoření hierarchie pro klasifikaci produktu          | Globální             |
 | Vytvoření nového modelu konfigurace produktu                  | Globální             |
 | Vytvoření základního produktu                               | Globální             |
@@ -544,7 +544,7 @@ Tato wiki obsahuje úkol pokyny, které byly vydány knihovny Microsoft BPM od �
 | Údržba kusovníku pro model konfigurace produktu        | Globální             |
 | Údržba postupu pro model produktu                    | Globální             |
 | Správa uvolněných produktů                              | Globální             |
-| Vydání... základní produkt \financial-dimensions\dimension-Based              | Globální             |
+| Vydání ..\financial-dimensions\dimension-based product master              | Globální             |
 | Převedení dat pro modely produktu                      | Globální             |
 
  
@@ -718,10 +718,10 @@ Tato wiki obsahuje úkol pokyny, které byly vydány knihovny Microsoft BPM od �
 <a name="see-also"></a>Viz také
 --------
 
-[Nové nebo aktualizované úkoly provede (květen 2016)](new-updated-task-guides-available-may-2016.md)
+[Noví nebo aktualizovaní průvodci úkolem (květen 2016)](new-updated-task-guides-available-may-2016.md)
 
-[Nové nebo aktualizované úkoly provede (srpen 2016)](new-updated-task-guides-available-august-2016.md)
+[Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)](new-updated-task-guides-available-august-2016.md)
 
-[Nové nebo aktualizované úkoly provede (listopad 2016)](new-task-guides-november-2016.md)
+[Noví nebo aktualizovaní dostupní průvodci úkolem (listopad 2016)](new-task-guides-november-2016.md)
 
 

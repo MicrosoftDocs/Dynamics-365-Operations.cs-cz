@@ -32,23 +32,23 @@ ms.lasthandoff: 03/31/2017
 
 Funkce rozšířeného odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Operations. Tento článek vysvětluje, jak nastavit funkci importu pro bankovní výpisy. 
 
-Nastavení import bankovního výpisu závisí na formátu vašeho elektronického bankovního výpisu. 365 Microsoft Dynamics pro operace podporuje tři formáty bankovních výpisů z pole: ISO20022 MT940 a BAI2.
+Nastavení import bankovního výpisu závisí na formátu vašeho elektronického bankovního výpisu. Aplikace Microsoft Dynamics 365 for Operations standardně podporuje tři formáty bankovního příkazu: ISO20022, MT940 a BAI2.
 
 ## <a name="sample-files"></a>Vzorové soubory
-Pro všechny tři formáty musí mít soubory, které překládají elektronický bankovní výpis z původního formátu do formátu, který můžete použít 365 Dynamics pro operace. Požadované soubory s prostředky můžete najít v uzlu **Prostředky** v průzkumníkovi aplikací v aplikaci Microsoft Visual Studio. Po nalezení souborů je zkopírujte na jedno známé umístění, ze kterého je můžete snadno odeslat během procesu instalace.
+Pro všechny tři formáty musíte mít soubory, které překládají elektronický bankovní výpis z původního formátu do formátu, který aplikace Dynamics 365 for Operations může použít. Požadované soubory s prostředky můžete najít v uzlu **Prostředky** v průzkumníkovi aplikací v aplikaci Microsoft Visual Studio. Po nalezení souborů je zkopírujte na jedno známé umístění, ze kterého je můžete snadno odeslat během procesu instalace.
 
 | Název prostředku                                           | Název souboru                            |
 |---------------------------------------------------------|--------------------------------------|
-| BankStmtImport\_BAI2CSV\_k\_BAI2XML\_xslt              | BAI2CSV-to-BAI2XML.xslt              |
-| BankStmtImport\_BAI2XML\_k\_odsouhlasení\_xslt       | BAI2XML-to-Reconciliation.xslt       |
-| BankStmtImport\_BankReconciliation\_k\_složené\_xslt | BankReconciliation-to-Composite.xslt |
-| BankStmtImport\_ISO20022XML\_k\_odsouhlasení\_xslt   | ISO20022XML-to-Reconciliation.xslt   |
-| BankStmtImport\_MT940TXT\_k\_MT940XML\_xslt            | MT940TXT-to-MT940XML.xslt            |
-| BankStmtImport\_MT940XML\_k\_odsouhlasení\_xslt      | MT940XML-to-Reconciliation.xslt      |
+| BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt              | BAI2CSV-to-BAI2XML.xslt              |
+| BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt       | BAI2XML-to-Reconciliation.xslt       |
+| BankStmtImport\_BankReconciliation\_to\_Composite\_xslt | BankReconciliation-to-Composite.xslt |
+| BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt   | ISO20022XML-to-Reconciliation.xslt   |
+| BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt            | MT940TXT-to-MT940XML.xslt            |
+| BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt      | MT940XML-to-Reconciliation.xslt      |
 | BankStmtImport\_SampleBankCompositeEntity\_xml          | SampleBankCompositeEntity.xml        |
 
 ## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Příklady formátů bankovních výpisů a technické rozložení
-Následují příklady importu rozšířené bankovního odsouhlasení souboru definice technických rozložení a tři související soubory příkladu bankovních výpisů: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+Níže jsou uvedeny příklady rozšířených definicí pokročilého souboru importu bankovního sesouhlasení a tři související ukázkové soubory výpisu: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
 | Technická definice rozložení                             | Vzorový soubor s bankovním výpisem          |
 |---------------------------------------------------------|--------------------------------------|
@@ -61,8 +61,8 @@ Následují příklady importu rozšířené bankovního odsouhlasení souboru d
 ## <a name="set-up-the-import-of-iso20022-bank-statements"></a>Nastavení importu bankovních výpisů ISO20022
 Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpisů pro bankovní výpisy ISO20022 pomocí rozhraní datové entity.
 
-1.  Přejít na **prostorů**&gt;**Správa dat**.
-2.  Click **Import**.
+1.  Přejděte na **Pracovní prostory** &gt; **Správa dat**.
+2.  Klepněte na tlačítko **Import**.
 3.  Zadat název formátu, jako např. **ISO20022**.
 4.  V poli **Formát dat zdroje **zadejte **Prvek XML**.
 5.  V poli **Název entity** zadejte **Bankovní výpisy**.
@@ -70,15 +70,15 @@ Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpis
 7.  Po odeslání entity bankovního výpisu a po dokončení mapování klepněte na akci **Zobrazit mapu** pro entitu.
 8.  Entita bankovního výpisu je složená entita, která se skládá ze čtyř samostatných entit. V seznamu vyberte **BankStatementDocumentEntity** a potom klepněte na akci **Zobrazit mapu**.
 9.  Na kartě **Transformace** klikněte na **Nový**.
-10. Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor** ISO20022XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** Dynamics 365 pro operace transformační soubory jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banky často odchýlit se od tohoto formátu, bude pravděpodobně nutné aktualizovat soubor transformace mapovat vaše formát bankovního výpisu. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
-11. Click **New**.
+10. Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor** ISO20022XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** transformační soubory Dynamics 365 for Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+11. Klepněte na možnost **Nový**.
 12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BankReconciliation-to-Composite.xslt**, který jste dříve uložili.
 13. Klikněte na **Použít transformace**.
 
 Po nastavení skupiny zpracování formátu je dalším krokem definovat pravidla formátu bankovního výpisu pro bankovní výpisy ISO20022.
 
-1.  Přejít na **řízení hotovosti a banky**&gt;**nastavení**&gt;**rozšířené bankovního odsouhlasení nastavení**&gt;**formát bankovního výpisu**.
-2.  Click **New**.
+1.  Přejděte do nabídky **Pokladna a banka** &gt; **Nastavení** &gt; **Nastavení rozšířeného odsouhlasení banky** &gt; **Formát bankovního výpisu**.
+2.  Klepněte na možnost **Nový**.
 3.  Určete formát výpisu jako například **ISO20022**.
 4.  Zadejte název formátu.
 5.  Nastavte pole **Skupina zpracování** na skupinu, kterou jste definovali dříve, jako například **ISO20022**.
@@ -86,7 +86,7 @@ Po nastavení skupiny zpracování formátu je dalším krokem definovat pravidl
 
 Posledním krokem je povolení rozšířeného odsouhlasení banky a nastavení formátu výpisu u bankovního účtu.
 
-1.  Přejít na **řízení hotovosti a banky**&gt;**bankovní účty**.
+1.  Přejděte do části **Pokladna a banka** &gt; **Bankovní účty**.
 2.  Vyberte bankovní účet a jeho otevřením zobrazte jeho podrobnosti.
 3.  Na kartě **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení banky **na **Ano**.
 4.  Nastavte pole **Formát výpisu **na formát, který jste vytvořili dříve, jako například **ISO20022**.
@@ -94,8 +94,8 @@ Posledním krokem je povolení rozšířeného odsouhlasení banky a nastavení 
 ## <a name="set-up-the-import-of-mt940-bank-statements"></a>Nastavení importu bankovních výpisů MT940
 Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpisů pro bankovní výpisy MT940 pomocí rozhraní datové entity.
 
-1.  Přejít na **prostorů**&gt;**Správa dat**.
-2.  Click **Import**.
+1.  Přejděte na **Pracovní prostory** &gt; **Správa dat**.
+2.  Klepněte na tlačítko **Import**.
 3.  Zadat název formátu, jako např. **MT940**.
 4.  V poli **Formát dat zdroje **zadejte **Prvek XML**.
 5.  V poli **Název entity** zadejte **Bankovní výpisy**.
@@ -105,15 +105,15 @@ Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpis
 9.  Na kartě **Transformace** klikněte na **Nový**.
 10. Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **MT940TXT-to-MT940XML.xslt**, který jste dříve uložili.
 11. Klepněte na možnost **Nový**.
-12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor** MT940XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** Dynamics 365 pro operace transformační soubory jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banky často odchýlit se od tohoto formátu, bude pravděpodobně nutné aktualizovat soubor transformace mapovat vaše formát bankovního výpisu. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
-13. Click **New**.
+12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor** MT940XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** transformační soubory Dynamics 365 for Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
+13. Klepněte na možnost **Nový**.
 14. Pro pořadové číslo 3 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BankReconciliation-to-Composite.xslt**, který jste dříve uložili.
 15. Klikněte na **Použít transformace**.
 
 Po nastavení skupiny zpracování formátu je dalším krokem definovat pravidla formátu bankovního výpisu pro bankovní výpisy MT940.
 
-1.  Přejít na **řízení hotovosti a banky**&gt;**nastavení**&gt;**rozšířené bankovního odsouhlasení nastavení**&gt;**formát bankovního výpisu**.
-2.  Click **New**.
+1.  Přejděte do nabídky **Pokladna a banka** &gt; **Nastavení** &gt; **Nastavení rozšířeného odsouhlasení banky** &gt; **Formát bankovního výpisu**.
+2.  Klepněte na možnost **Nový**.
 3.  Určete formát výpisu jako například **MT940**.
 4.  Zadejte název formátu.
 5.  Nastavte pole **Skupina zpracování** na skupinu, kterou jste definovali dříve, jako například **MT940**.
@@ -121,7 +121,7 @@ Po nastavení skupiny zpracování formátu je dalším krokem definovat pravidl
 
 Posledním krokem je povolení rozšířeného odsouhlasení banky a nastavení formátu výpisu u bankovního účtu.
 
-1.  Přejít na **řízení hotovosti a banky**&gt;**bankovní účty**.
+1.  Přejděte do části **Pokladna a banka** &gt; **Bankovní účty**.
 2.  Vyberte bankovní účet a jeho otevřením zobrazte jeho podrobnosti.
 3.  Na kartě **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení banky **na **Ano**.
 4.  Po zobrazení výzvy k potvrzení výběru a povolení rozšířeného odsouhlasení banky klepněte na tlačítko **OK**.
@@ -130,8 +130,8 @@ Posledním krokem je povolení rozšířeného odsouhlasení banky a nastavení 
 ## <a name="set-up-the-import-of-bai2-bank-statements"></a>Nastavení importu bankovních výpisů BAI2
 Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpisů pro bankovní výpisy BAI2 pomocí rozhraní datové entity.
 
-1.  Přejít na **prostorů**&gt;**Správa dat**.
-2.  Click **Import**.
+1.  Přejděte na **Pracovní prostory** &gt; **Správa dat**.
+2.  Klepněte na tlačítko **Import**.
 3.  Zadat název formátu, jako např. **BAI2**.
 4.  V poli **Formát dat zdroje **zadejte **Prvek XML**.
 5.  V poli **Název entity** zadejte **Bankovní výpisy**.
@@ -141,15 +141,15 @@ Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpis
 9.  Na kartě **Transformace** klikněte na **Nový**.
 10. Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BAI2CSV-to-BAI2XML.xslt**, který jste dříve uložili.
 11. Klepněte na možnost **Nový**.
-12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor** BAI2XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** Dynamics 365 pro operace transformační soubory jsou vytvořeny pro standardní formát. Protože banky často odchýlit se od tohoto formátu a bude pravděpodobně nutné aktualizovat soubor transformace mapovat vaše formát bankovního výpisu. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
-13. Click **New**.
+12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor** BAI2XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** transformační soubory Dynamics 365 for Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
+13. Klepněte na možnost **Nový**.
 14. Pro pořadové číslo 3 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BankReconciliation-to-Composite.xslt**, který jste dříve uložili.
 15. Klikněte na **Použít transformace**.
 
 Po nastavení skupiny zpracování formátu je dalším krokem definovat pravidla formátu bankovního výpisu pro bankovní výpisy BAI2.
 
-1.  Přejít na **řízení hotovosti a banky**&gt;**nastavení**&gt;**rozšířené bankovního odsouhlasení nastavení**&gt;**formát bankovního výpisu**.
-2.  Click **New**.
+1.  Přejděte do nabídky **Pokladna a banka** &gt; **Nastavení** &gt; **Nastavení rozšířeného odsouhlasení banky** &gt; **Formát bankovního výpisu**.
+2.  Klepněte na možnost **Nový**.
 3.  Určete formát výpisu jako například **BAI2**.
 4.  Zadejte název formátu.
 5.  Nastavte pole **Skupina zpracování** na skupinu, kterou jste definovali dříve, jako například **BAI2**.
@@ -157,7 +157,7 @@ Po nastavení skupiny zpracování formátu je dalším krokem definovat pravidl
 
 Posledním krokem je povolení rozšířeného odsouhlasení banky a nastavení formátu výpisu u bankovního účtu.
 
-1.  Přejít na **řízení hotovosti a banky**&gt;**bankovní účty**.
+1.  Přejděte do části **Pokladna a banka** &gt; **Bankovní účty**.
 2.  Vyberte bankovní účet a jeho otevřením zobrazte jeho podrobnosti.
 3.  Na kartě **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení banky **na **Ano**.
 4.  Po zobrazení výzvy k potvrzení výběru a povolení rozšířeného odsouhlasení banky klepněte na tlačítko **OK**.
@@ -166,7 +166,7 @@ Posledním krokem je povolení rozšířeného odsouhlasení banky a nastavení 
 ## <a name="test-the-bank-statement-import"></a>Testování importu bankovního výpisu
 Posledním krokem je testování toho, že můžete importovat bankovní výpis.
 
-1.  Přejít na **řízení hotovosti a banky**&gt;**bankovní účty**.
+1.  Přejděte do části **Pokladna a banka** &gt; **Bankovní účty**.
 2.  Vyberte bankovní účet, pro který je povolena funkce Rozšířené odsouhlasení banky.
 3.  Na kartě **Odsouhlasit** klepněte na tlačítko **Bankovní výpisy**.
 4.  Na stránce **Bankovní výpis** klepněte na tlačítko **Import výpisu**.

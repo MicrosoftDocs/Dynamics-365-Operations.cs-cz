@@ -36,7 +36,7 @@ Při konsolidaci dat z jedné zúčtovací měny na jinou musíte spustit přece
 ## <a name="company-setup"></a>Nastavení společnosti
 -   **Zdrojová/provozní společnost (USMF)** – americké dolary (USD) se používají jako zúčtovací a vykazovací měna.
 -   **Konsolidovaná společnost (CON)** – euro (EUR) se používá jako zúčtovací a vykazovací měna.
-    -   ** Realizovaný zisk ** – účet hlavní knihy 801500
+    -   **Realizovaný zisk **– účet hlavní knihy 801500
     -   **Realizovaná ztráta** – účet hlavní knihy 801600
     -   **Nerealizovaný zisk ** – účet hlavní knihy 801600
     -   **Nerealizovaná ztráta** – účet hlavní knihy 801400
@@ -46,15 +46,15 @@ Při konsolidaci dat z jedné zúčtovací měny na jinou musíte spustit přece
 
 | Datum       | Účet hlavní knihy               | Měna | Částka |
 |------------|------------------------------|----------|--------|
-| 10/11/2015 | 110110 – Hotovost                | USD      | 500    |
-| 10/11/2015 | 130100 – Pohledávky | USD      | -500   |
+| 11. 10. 2015 | 110110 – Hotovost                | USD      | 500    |
+| 11. 10. 2015 | 130100 – Pohledávky | USD      | -500   |
 
 ## <a name="exchange-rates"></a>Směnné kurzy
 | Z měny | Do měny | Počáteční datum | Směnný kurz |
 |---------------|-------------|------------|---------------|
-| EUR           | USD         | 10/1/2015  | 200           |
-| EUR           | USD         | 11/1/2015  | 150           |
-| EUR           | USD         | 12/1/2012  | 1597           |
+| EUR           | USD         | 1. 10. 2015  | 200           |
+| EUR           | USD         | 1. 11. 2015  | 150           |
+| EUR           | USD         | 1. 12. 2012  | 100           |
 
 ## <a name="perform-the-consolidation-for-october-2015"></a>Provedení konsolidace pro říjen roku 2015
 ### <a name="balances-in-the-consolidation-company"></a>Zůstatky v konsolidované společnosti
@@ -71,8 +71,8 @@ Při konsolidaci dat z jedné zúčtovací měny na jinou musíte spustit přece
 |----------------|----------|---------|------------------------------------|
 | 110110         | EUR      | 333,33  | Původní částka 500 × 66.6667%  |
 | 130100         | EUR      | -333,33 | Původní částka -500 × 66.6667% |
-| 801400         | EUR      | 83,33   | 333.33 – 250                       |
-| 801600         | EUR      | -83,33  | -333.33 – (-250)                   |
+| 801400         | EUR      | 83,33   | 333,33 – 250                       |
+| 801600         | EUR      | -83,33  | -333,33 – (-250)                   |
 
 Zobrazí se další transakce pro částky v měně vykazování.
 
@@ -83,8 +83,8 @@ Zobrazí se další transakce pro částky v měně vykazování.
 |----------------|----------|---------|------------------------------------------------------|
 | 110110         | EUR      | 500,00  | Původní částka 500 × 1                           |
 | 130100         | EUR      | -500,00 | Původní částka -500 × 1                          |
-| 801400         | EUR      | 250     | 500 – 333.33 = 166.67 166.67 + 83.33 = 250           |
-| 801600         | EUR      | -250    | -500 – (-333.33) = -166.67 -166.67 + (-83.33) = -250 |
+| 801400         | EUR      | 250     | 500 – 333,33 = 166,67 166,67 + 83,33 = 250           |
+| 801600         | EUR      | -250    | -500 – (-333,33) = -166,67 -166,67 + (-83,33) = -250 |
 
 
 

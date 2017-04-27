@@ -101,7 +101,7 @@ Existující skupinu stavebních bloků je možné uložit pod novým názvem. P
 
 ### <a name="export-a-building-block-group"></a> Export skupiny stavebních bloků
 
-Můžete exportovat stavební skupinu nebo konkrétní sestavy stavební bloky ve skupině stavební blok. Exportované stavební skupiny můžete použít jako zálohu. Můžete také zkopírovat exportovaná data mezi skupiny pro stavební blok nebo Dynamics 365 pro operace instalace. Návrhář sestav obsahuje styly písma odkazovaného a sad dimenzí a skupiny pro stavební blok.
+Ve skupině stavebního bloku můžete exportovat skupinu stavebního bloku nebo stavební bloky konkrétní sestavy. Exportovanou skupinu stavebního bloku můžete použít jako zálohu. Můžete také kopírovat exportovaná data mezi skupinami stavebních bloků nebo instalacemi aplikace Dynamics 365 for Operations. Návrhář sestav zahrnuje odkazované styly písem a sady dimenzí společně se skupinou stavebních bloků.
 1.  V Návrháři sestav v nabídce **Společnost** klikněte na položku **Skupiny stavebních bloků**.
 2.  V dialogovém okně **Skupiny stavebních bloků** vyberte skupinu stavebních bloků k exportu a klikněte na tlačítko **Exportovat**.
 3.  V dialogovém okně **Export** vyberte definice sestavy k exportu:

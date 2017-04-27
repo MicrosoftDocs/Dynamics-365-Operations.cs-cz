@@ -60,7 +60,7 @@ Když například zvolíte Ročně, roční odpisy se zaúčtují pouze jednou �
 
 Pokud vyberete možnost Fiskální v poli Odpisový rok, bude použita metoda lineárního odpisu. Výpočet se provede na základě fiskálního roku, který je definován fiskálním kalendářem zadaným pro knihu nebo fiskálním kalendář, který je vybraný na stránce Hlavní kniha. Fiskální kalendáře se nastavují na stránce Fiskální kalendáře.
 
-Například pro fiskální rok 1. července až 30. června, výpočet odpisů začíná datem 1. Fiskální rok může být delší nebo kratší než 12 měsíců. Odpisy se automaticky upravují pro jednotlivá fiskální období. Délka dalšího fiskálního roku vychází z fiskálních období nastavených při vytváření nového fiskálního roku ve formuláři Fiskální kalendáře. 
+Například pro fiskální rok od 1. července do 30. června začíná výpočet odpisů datem 1. července. Fiskální rok může být delší nebo kratší než 12 měsíců. Odpisy se automaticky upravují pro jednotlivá fiskální období. Délka dalšího fiskálního roku vychází z fiskálních období nastavených při vytváření nového fiskálního roku ve formuláři Fiskální kalendáře. 
 
 Vyberete-li Fiskální, v poli Frekvence období jsou k dispozici následující možnosti:
 -   Možnost Ročně zaúčtuje celkovou částku odpisu vypočteného pro fiskální rok jako jednu částku poslední den fiskálního roku.
@@ -103,7 +103,7 @@ Doba životnosti opravy pořizovací ceny je stejná jako u dlouhodobého majetk
 | Rok 5 | 14 000 / 5 = 2 800                        | 4 600 - 2 800 = 1 800                 |
 | Rok 6 | Zbývajících 800\*                           | 1 800 - 800 = 1 000                   |
 
-\*Zbývající částka je nižší než částka odpisu, je přijata pouze zbývající částka minus hodnota při vyřazení.
+\**Protože zbývající částka je menší než odpisovaná částka, počítá se pouze zbývající částka mínus konečná zůstatková hodnota.
 
 
 

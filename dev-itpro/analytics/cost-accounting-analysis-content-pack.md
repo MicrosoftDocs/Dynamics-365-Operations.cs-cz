@@ -1,6 +1,6 @@
 ---
-title: "Nákladové účetnictví analýzy obsahu Power BI"
-description: "Toto téma popisuje, co je zahrnuto do analýzy nákladového účetnictví obsahu Power BI. Popisuje, jak přístup k sestavám Power BI a obsahuje informace o datovém modelu a entit, které byly použity k sestavení obsahu."
+title: "Obsah analýzy nákladového účetnictví v Power BI"
+description: "Toto téma popisuje, co je součástí obsahu analýzy nákladového účetnictví v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2017-02-10 15 - 07 - 47
@@ -24,90 +24,90 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="cost-accounting-analysis-power-bi-content"></a>Nákladové účetnictví analýzy obsahu Power BI
+# <a name="cost-accounting-analysis-power-bi-content"></a>Obsah analýzy nákladového účetnictví v Power BI
 
-Toto téma popisuje, co je zahrnuto do analýzy nákladového účetnictví obsahu Power BI. Popisuje, jak přístup k sestavám Power BI a obsahuje informace o datovém modelu a entit, které byly použity k sestavení obsahu.
+Toto téma popisuje, co je součástí obsahu analýzy nákladového účetnictví v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
 <a name="overview"></a>Přehled
 --------
 
-**Analýzy nákladového účetnictví** obsah Microsoft Power BI je určen pro náklady řadiče nebo kdokoli, kdo je odpovědný za provádění řízení nákladů organizace. Zahrnuje klíčové metriky, jako jsou náklady, velikost a nákladové sazby podle skutečných nákladů, rozpočtové náklady a Náklady pružného rozpočtu. Používá data transakce nákladového účetnictví do Microsoft Dynamics 365 pro operace a poskytuje agregované zobrazení nákladů pro celou organizaci, v jedné měně pro hlášení. Vedoucí data můžete filtrovat podle nákladové objekty pro provádění řízení nákladů organizačních jednotek, i v případě, že organizace může mít více právních subjektů. Vzhledem k tomu, **analýzy nákladového účetnictví** obsahu Power BI zvýrazní rozdíly mezi skutečnými náklady a rozpočtové náklady, vedoucí můžete upozorněni o pozitivní a negativní trendy pro jejich provozní jednotky. Vedoucí k podrobnostem cena prvek hierarchie nebo jednotlivých nákladových položek chcete-li získat podrobný přehled o jak odchylky nákladů došlo a potom přijmout účinná opatření. **Analýzy nákladového účetnictví** Power BI obsahu Řekněme analyzovat náklady účetní náklady jak prochází nákladové objekty v celé organizaci. Další informace o nákladovém účetnictví naleznete v tématu [nákladového účetnictví domovské stránky](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page.md). Definování zabezpečení úroveň přístupu v nákladovém účetnictví a kombinace s zabezpečení na úrovni řádků v Power BI, můžete povolit všechny vlastníky objektů náklady přístup k **analýzy nákladového účetnictví** obsahu Power BI. Všechna data vizualizace bude poté filtrovat na základě úroveň přístupu, který je řízen v nákladovém účetnictví. Další informace o zabezpečení na úrovni přístupu a zabezpečení na úrovni řádku, naleznete v [nastavení zabezpečení obsahu nákladového účetnictví pro Power BI](setup-security-cost-accounting-content-pack.md).
+Obsah **analýzy nákladového účetnictví** v sadě nástrojů Microsoft Power BI je určen pro kontrolory nákladů nebo jakoukoli osobu, která je odpovědná za provádění kontroly nákladů organizace. Zahrnuje klíčové metriky, jako jsou náklady, velikost a nákladové sazby podle skutečných nákladů, rozpočtových nákladů a nákladů pružného rozpočtu. Používá data transakce z nákladového účetnictví v aplikaci Microsoft Dynamics 365 for Operations a poskytuje agregované zobrazení nákladů pro celou organizaci v jedné měně vykazování. Manažeři mohou data filtrovat podle objektů nákladů pro provádění kontroly nákladů jejich organizačních jednotek, a to i v případě, že organizace má několik právnických osob. Vzhledem k tomu, že obsah **analýzy nákladového účetnictví** v Power BI zvýrazňuje rozdíly mezi skutečnými náklady a rozpočtovými náklady, mohou být manažeři upozorněni na pozitivní a negativní trendy pro jejich provozní jednotky. Manažeři mohou rozbalit hierarchie prvků nákladů nebo prvky individuálních nákladů a získat podrobný přehled o tom, jak došlo k odchylkám nákladů, a potom přijmout účinná opatření. Obsah **analýzy nákladového účetnictví** v Power BI umožní účetním analyzovat způsoby, jakými náklady prochází přes objekty nákladů v celé organizaci. Další informace o nákladovém účetnictví naleznete v tématu [Domovská stránka nákladového účetnictví](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page.md). Definováním zabezpečení na úrovni přístupu v nákladovém účetnictví a jejím zkombinováním se zabezpečením na úrovni řádků v Power BI můžete povolit všem vlastníkům objektů nákladů přístup k obsahu **analýzy nákladového účetnictví** v Power BI. Všechna data ve vizualizaci budou poté vyfiltrována na základě úroveň přístupu, který je řízen v nákladovém účetnictví. Další informace o zabezpečení na úrovni přístupu a zabezpečení na úrovni řádku, naleznete v [Nastavení zabezpečení pro obsah nákladového účetnictví v Power BI](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Můžete najít **analýzy nákladového účetnictví** obsahu Power BI v knihovně Sdílené datové zdroje v Microsoft Dynamics Lifecycle Services (LCS). Další informace o tom, jak stáhnout obsah a připojit k vaší 365 Dynamics pro datové operace, viz [obsahu Power BI od společnosti Microsoft a partnerů LCS](power-bi-content-microsoft-partners.md). **Poznámka:** KB4011327 ** ** je nezbytným předpokladem pro to **analýzy nákladového účetnictví** obsahu Power BI.  Po přihlášení k poskytování služeb, můžete přistupovat KB zde: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+Obsah **analýzy nákladového účetnictví** v Power BI naleznete v knihovně sdíleného majetku ve službě Microsoft Dynamics Lifecycle Services (LCS). Další informace o stažení obsahu a připojení k datům aplikace Dynamics 365 for Operations naleznete v tématu [Obsah Power BI v LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md). **Poznámka:** KB4011327 ** ** je nezbytným předpokladem pro obsah **analýzy nákladového účetnictví** v Power BI.  Po přihlášení ke službě Lifecycle Services můžete přejít k článku znalostní báze zde: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriky, které jsou součástí obsahu Power BI
-Obsah zahrnuje sadu stránky sestavy. Každá stránka obsahuje sadu metriky, které jsou zobrazována jako grafy, kameny a tabulky. Následující tabulka obsahuje přehled vizualizace v **analýzy nákladového účetnictví** obsahu Power BI.
+Obsah zahrnuje sadu stránek sestav. Každá stránka obsahuje sadu metrik, které jsou zobrazovány jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizace v obsahu **analýzy nákladového účetnictví** v Power BI.
 
-| Stránky sestavy                      | Graf                                                                                                                         | Dlaždice                                          |
+| Stránka sestavy                      | Graf                                                                                                                         | Dlaždice                                          |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| Řízení nákladů podle fiskálního období    | Skutečné náklady a podle úrovně hierarchie prvek nákladů                                                                   | Skutečné náklady vs rozpočtových nákladů                    |
-|                                  | Odchylka rozpočtu podle úrovně hierarchie prvek nákladů                                                                               | Skutečné náklady vs kurzu rozpočtu nákladová sazba          |
-|                                  | Odchylka rozpočtu prvních 10 v procentech podle nákladové složky                                                                          | Velikost rozpočtu vs skutečné velikosti          |
-| Řízení nákladů podle roku     | Skutečné náklady a podle období kalendářního roku                                                                           | Skutečné náklady vs rozpočtových nákladů                    |
-|                                  | Odchylka rozpočtu podle období kalendářního roku                                                                                       | Skutečné náklady vs kurzu rozpočtu nákladová sazba          |
-|                                  | Odchylka rozpočtu prvních 10 v procentech podle nákladové složky                                                                          | Velikost rozpočtu vs skutečné velikosti          |
-| Nákladová sazba podle fiskálního roku         | Skutečná nákladová sazba nákladů chováním.                                                                                             | Skutečné náklady vs kurzu rozpočtu nákladová sazba          |
-|                                  | Skutečná nákladová sazba rozpočtové sazby pole Odchylka nákladů, rozpočtu nákladů procentní sazbou a rozpočtu nákladová sazba podle úrovně hierarchie prvek nákladů | Velikost rozpočtu vs skutečné velikosti          |
-|                                  | Odchylka rozpočtu podle úrovně hierarchie prvek nákladů                                                                               |                                               |
-|                                  | Odchylka rozpočtu prvních 10 v procentech podle nákladové složky                                                                          |                                               |
-| Pružný rozpočet podle fiskálního období | Skutečné náklady, rozpočtové náklady a Náklady pružného rozpočtu podle úrovně hierarchie prvek nákladů                                             | Velikost rozpočtu vs skutečné velikosti          |
-|                                  | Odchylka rozpočtu a rozptyl pružný rozpočet podle úrovně hierarchie prvek nákladů                                                  | Skutečné náklady vs pružný rozpočet nákladů           |
-|                                  | Skutečných nákladů, rozpočtu nákladů a flexibilních nákladů podle nákladových chování a nákladů úroveň hierarchie prvek                                  | Skutečné náklady na kurz vs pružného rozpočtu nákladová sazba |
-| Výpis nákladů podle fiskálního období  | Úroveň hierarchie prvek nákladů a název členu dimenze objektu náklady skutečné náklady                                             |                                               |
-|                                  | Název členu dimenze náklady objektu a název členu dimenze prvek náklady skutečné náklady                                       |                                               |
+| Kontrola nákladů podle fiskálního období    | Skutečné náklady a rozpočtové náklady podle úrovně hierarchie prvků nákladů                                                                   | Skutečné náklady vs rozpočtové náklady                    |
+|                                  | Odchylka rozpočtu podle úrovně hierarchie prvků nákladů                                                                               | Skutečná nákladová sazba vs rozpočtová nákladová sazba          |
+|                                  | Prvních 10 odchylek rozpočtu v procentech podle prvku nákladů                                                                          | Skutečná velikost vs velikost rozpočtu          |
+| Kontrola nákladů podle od počátku roku     | Skutečné náklady a rozpočtové náklady podle období kalendářního roku                                                                           | Skutečné náklady vs rozpočtové náklady                    |
+|                                  | Odchylka rozpočtu podle období kalendářního roku                                                                                       | Skutečná nákladová sazba vs rozpočtová nákladová sazba          |
+|                                  | Prvních 10 odchylek rozpočtu v procentech podle prvku nákladů                                                                          | Skutečná velikost vs velikost rozpočtu          |
+| Nákladová sazba podle fiskálního roku         | Skutečná nákladová sazba podle chování nákladů                                                                                             | Skutečná nákladová sazba vs rozpočtová nákladová sazba          |
+|                                  | Skutečná nákladová sazba, odchylka rozpočtové nákladové sazby, procento rozpočtové nákladové sazby, rozpočtová nákladová sazba a úroveň hierarchie prvků nákladů | Skutečná velikost vs velikost rozpočtu          |
+|                                  | Odchylka rozpočtu podle úrovně hierarchie prvků nákladů                                                                               |                                               |
+|                                  | Prvních 10 odchylek rozpočtu v procentech podle prvku nákladů                                                                          |                                               |
+| Pružný rozpočet podle fiskálního období | Skutečné náklady, rozpočtové náklady a náklady pružného rozpočtu podle úrovně hierarchie prvků nákladů                                             | Skutečná velikost vs velikost rozpočtu          |
+|                                  | Odchylka rozpočtu, odchylka pružného rozpočtu podle úrovně hierarchie prvků nákladů                                                  | Skutečné náklady vs náklady pružného rozpočtu           |
+|                                  | Skutečné náklady, rozpočtové náklady a pružné náklady podle chování nákladů a podle úrovně hierarchie prvků nákladů                                  | Skutečná nákladová sazba vs nákladová sazba pružného rozpočtu |
+| Výpis nákladů podle fiskálního období  | Skutečné náklady podle úrovně hierarchie prvků nákladů a názvu člena dimenze objektu nákladů                                             |                                               |
+|                                  | Skutečné náklady podle názvu člena dimenze objektu nákladů a názvu člena dimenze prvku nákladů                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
-Dynamics 365 pro data operace se používá k vyplnění stránky sestavy **analýzy nákladového účetnictví** obsahu Power BI. Tato data jsou reprezentována jako agregační hodnoty, které jsou připraveny v úložišti Entity, což je databáze Microsoft SQL, která je optimalizována pro analytics. Další informace naleznete v tématu [BI napájení Přehled integrace s úložištěm Entity](power-bi-integration-entity-store.md). Následující klíče souhrnné měření slouží jako základ pro obsah.
+Data aplikace Dynamics 365 for Operations se používají k naplnění stránek sestavy v obsahu **analýzy nákladového účetnictví** v Power BI. Tato data jsou reprezentována jako měrné systémy agregace, které jsou rozfázovány v úložišti entit, což je databáze Microsoft SQL optimalizována pro analýzy. Další informace naleznete v tématu [Přehled integrace Power BI úložištěm entit](power-bi-integration-entity-store.md). Následujících klíčové měrné systémy agregace byly použity jako základ obsahu.
 
-| Celek                  | Agregované míry klíče | Zdroj dat pro Dynamics 365 pro operace | Pole     | popis                                   |
+| Celek                  | Klíčové měrné systémy agregace | Zdroj dat pro aplikaci Dynamics 365 for Operations | Pole     | popis                                   |
 |-------------------------|---------------------------|---------------------------------------------|-----------|-----------------------------------------------|
-| Náklady účetní položky | SUM(amount)               | CAMDATAAggregatedCostEntry                  | Částka    | Částka v měně knihy nákladového účetnictví |
-| Statistické položky     | SUM(MAGNITUDE)            | CAMDATAAggregatedStatisctialEntry           | Hodnota |                                               |
+| Položky nákladového účetnictví | SUM(Částka)               | CAMDATAAggregatedCostEntry                  | Částka    | Částka v měně hlavní knihy nákladového účetnictví |
+| Statistické položky     | SUM(Velikost)            | CAMDATAAggregatedStatisctialEntry           | Hodnota |                                               |
 
-Následující tabulka zobrazuje, jak agregační klíčové měření slouží k vytvoření několika vypočtené rozměry v obsahu dataset.
+Následující tabulka zobrazuje, jak se používají klíčové měrné systémy agregace k vytvoření několika vypočtených hodnot v souboru dat obsahu.
 
-| Měřítko                                       | Jak vypočítat rozměr                                                                                          |
+| Měřítko                                       | Jak vypočítat míru                                                                                          |
 |-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Skutečné náklady                                   | Výpočet ("položky Nákladové účetnictví"\[opatření\], 'Transakce verze'\[ISSOURCEVERSIONBUDGET\_hodnoty\] = 0)            |
-| Rozpočtové náklady                                   | Výpočet ("položky Nákladové účetnictví"\[opatření\], 'Transakce verze'\[ISSOURCEVERSIONBUDGET\_hodnoty\] = 1)            |
-| Odchylka rozpočtu nákladů                          | \[Rozpočet nákladů\] - \[skutečné náklady\]                                                                                      |
-| Procentuální odchylka rozpočtu                    | IF (\[rozpočtové náklady\] = 0, blank(), \[odchylka rozpočtu\] / \[rozpočtové náklady\])                                                |
-| Skutečná velikost                              | Výpočet ('Statistické položky'\[FullMagnitude\], 'Transakce verze'\[ISSOURCEVERSIONBUDGET\_hodnoty\] = 0)          |
-| Velikost rozpočtu                              | Výpočet (\[FullMagnitude\], 'Transakce verze'\[ISSOURCEVERSIONBUDGET\_hodnoty\] = 1)                               |
-| Odchylka rozpočtu statistické                   | \[Velikost rozpočtu\] - \[skutečná velikost\]                                                                            |
-| Procento odchylky statistických rozpočtu        | IF (\[velikosti rozpočtu\] = 0, blank(), \[rozpočtu statistický rozptyl\] / \[velikosti rozpočtu\])                          |
-| Skutečná nákladová sazba                              | IF (\[skutečná velikost\] = 0, BLANK(), \[skutečné náklady\] / \[skutečná velikost\])                                          |
-| Rozpočtová nákladová sazba                              | IF (\[velikosti rozpočtu\] = 0, BLANK(), \[rozpočtové náklady\] / \[velikosti rozpočtu\])                                          |
-| Míra odchylky rozpočtových nákladů                     | \[Rozpočtu nákladová sazba\] - \[Skutečná nákladová sazba.\]                                                                            |
-| Rozpočtové náklady procento odchylky          | IF (\[rozpočtové náklady\] = 0, blank(), \[rychlost odchylka nákladů rozpočtu\] / \[rozpočtu nákladová sazba\])                                 |
-| Dlouhodobý rozpočet nákladů                             | Výpočet (\[rozpočtové náklady\], 'Nákladové účetnictví položky'\[COSTBEHAVIOR\] = 1)                                              |
-| Proměnná rozpočtové náklady                          | Výpočet (\[rozpočtové náklady\], 'Nákladové účetnictví položky'\[COSTBEHAVIOR\] = 2)                                              |
-| Pevné pružné rozpočtové náklady                    | \[Dlouhodobý rozpočet nákladů\]                                                                                                  |
-| Náklady variabilní pružný rozpočet                 | IF (\[velikosti rozpočtu\] = 0, BLANK(), (\[proměnné rozpočtové náklady\] / \[velikosti rozpočtu\]) \*\[skutečná velikost\])       |
-| Pružný rozpočet nákladů                          | \[Pevné náklady pružného rozpočtu\] + \[proměnné pružný rozpočet nákladů\]                                                     |
-| Rozptyl pružný rozpočet                      | \[Pružný rozpočet nákladů\] - \[skutečné náklady\]                                                                             |
-| Procentuální odchylka pružný rozpočet           | IF (\[pružný rozpočet nákladů\] = 0, BLANK(), \[rozptyl pružný rozpočet\] / \[pružný rozpočet nákladů\])                     |
-| Pružný rozpočet nákladů sazby                     | IF (\[skutečná velikost\] = 0, BLANK(), \[pružný rozpočet nákladů\] / \[skutečná velikost\])                                 |
-| Odchylka rychlosti pružný rozpočet nákladů            | \[Pružný rozpočet nákladová sazba\] - \[Skutečná nákladová sazba.\]                                                                   |
-| Procento odchylky nákladů pružný rozpočet | IF (\[pružného rozpočtu nákladová sazba\] = 0, BLANK(), \[odchylka frekvence pružný rozpočet nákladů\] / \[pružného rozpočtu nákladová sazba\]) |
+| Skutečné náklady                                   | CALCULATE('Položky nákladového účetnictví'\[Míra\], 'Verze transakce'\[ISSOURCEVERSIONBUDGET\_VALUE\] = 0)            |
+| Rozpočtové náklady                                   | CALCULATE('Položky nákladového účetnictví'\[Míra\], 'Verze transakce'\[ISSOURCEVERSIONBUDGET\_VALUE\] = 1)            |
+| Odchylka rozpočtových nákladů                          | \[Rozpočtové náklady\] - \[Skutečné náklady\]                                                                                      |
+| Procento odchylky rozpočtu                    | IF (\[Rozpočtové náklady\] = 0, blank(), \[Odchylka rozpočtu\] / \[Rozpočtové náklady\])                                                |
+| Skutečná velikost                              | CALCULATE('Statistické položky'\[Plná velikost\], 'Verze transakce'\[ISSOURCEVERSIONBUDGET\_VALUE\] = 0)          |
+| Velikost rozpočtu                              | CALCULATE(\[Plná velikost\], 'Verze transakce'\[ISSOURCEVERSIONBUDGET\_VALUE\] = 1)                               |
+| Statistická odchylka rozpočtu                   | \[Velikost rozpočtu\] - \[Skutečná velikost\]                                                                            |
+| Procento statistické odchylky rozpočtu        | IF (\[Velikost rozpočtu\] = 0, blank(), \[Statistická odchylka rozpočtu\] / \[Velikost rozpočtu\])                          |
+| Skutečná nákladová sazba                              | IF (\[Skutečná velikost\] = 0, BLANK(), \[Skutečné náklady\] / \[Skutečná velikost\])                                          |
+| Rozpočtová nákladová sazba                              | IF (\[Velikost rozpočtu\] = 0, BLANK(), \[Rozpočtové náklady\] / \[Velikost rozpočtu\])                                          |
+| Odchylka rozpočtové nákladové sazby                     | \[Rozpočtová nákladová sazba\] - \[Skutečná nákladová sazba\]                                                                            |
+| Procento odchylky rozpočtové nákladové sazby          | IF (\[Rozpočtové náklady\] = 0, blank(), \[Odchylka rozpočtové nákladové sazby\] / \[Rozpočtová nákladová sazba\])                                 |
+| Pevné rozpočtové náklady                             | CALCULATE(\[Rozpočtové náklady\], 'Položky nákladového účetnictví'\[COSTBEHAVIOR\] = 1)                                              |
+| Variabilní rozpočtové náklady                          | CALCULATE(\[Rozpočtové náklady\], 'Položky nákladového účetnictví'\[COSTBEHAVIOR\] = 2)                                              |
+| Pevné náklady pružného rozpočtu                    | \[Pevné rozpočtové náklady\]                                                                                                  |
+| Variabilní náklady pružného rozpočtu                 | IF (\[Velikost rozpočtu\] = 0, BLANK(), (\[Variabilní rozpočtové náklady\] / \[Velikost rozpočtu\]) \*\[Skutečná velikost\])       |
+| Náklady pružného rozpočtu                          | \[Pevné náklady pružného rozpočtu\] + \[Variabilní náklady pružného rozpočtu\]                                                     |
+| Odchylka pružného rozpočtu                      | \[Náklady pružného rozpočtu\] - \[Skutečné náklady\]                                                                             |
+| Procento odchylky pružného rozpočtu           | IF (\[Náklady pružného rozpočtu\] = 0, BLANK(), \[Odchylka pružného rozpočtu\] / \[Náklady pružného rozpočtu\])                     |
+| Nákladová sazba pružného rozpočtu                     | IF (\[Skutečná velikost\] = 0, BLANK(), \[Náklady pružného rozpočtu\] / \[Skutečná velikost\])                                 |
+| Odchylky nákladové sazby pružného rozpočtu            | \[Nákladová sazba pružného rozpočtu\] - \[Skutečná nákladová sazba\]                                                                   |
+| Procento odchylky nákladové sazby pružného rozpočtu | IF (\[Nákladová sazba pružného rozpočtu\] = 0, BLANK(), \[Odchylky nákladové sazby pružného rozpočtu\] / \[Nákladová sazba pružného rozpočtu\]) |
 
-Následující klíče dimenze slouží jako filtry k řezu agregovaných měr dosáhnout větší rozlišovací schopnost a poskytují hlubší analytické poznatky.
+Následující klíčové dimenze se používají jako filtry k řezu měrných systémů agregace pro dosažení většího rozlišení a poskytnutí hlubších analytických poznatků.
 
 | Celek                             | Příklady atributů                                                                                               |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Hlavní knihy nákladového účetnictví            | Hlavní kniha nákladového účetnictví                                                                                               |
 | Jednotky řízení nákladů                 | Název jednotky řízení nákladů                                                                                               |
-| Dimenze prvku nákladů            | Dimenze Nákladové prvky název, název členu dimenze prvek nákladů, popis člena dimenze prvek nákladů          |
-| Dimenze objektu nákladů             | Název dimenze nákladový objekt, název členu dimenze náklady objektu, popis člena dimenze náklady objektu              |
-| Statistické dimenze             | Název statistické dimenze, název členu dimenze statistické, popis členu dimenze statistické              |
-| Nákladový objekt hierarchie dimenzí  | Název hierarchie dimenze objektu nákladů, nákladů úroveň hierarchie dimenze objekt, stromové hierarchii dimenze objektu náklady    |
-| Hierarchie dimenzí nákladové složky | Název hierarchie dimenze prvek nákladů, nákladů úroveň hierarchie dimenze prvek, stromové hierarchii dimenze prvek nákladů |
-| Hierarchie dimenzí statistické  | Název hierarchie dimenze statistické, úroveň hierarchie dimenze statistické, stromové struktury hierarchie dimenze statistické    |
+| Dimenze prvku nákladů            | Název dimenze prvku nákladů, název člena dimenze prvku nákladů a popis člena dimenze prvku nákladů          |
+| Dimenze objektu nákladů             | Název dimenze objektu nákladů, název člena dimenze objektu nákladů a popis člena dimenze objektu nákladů              |
+| Statistické dimenze             | Název statistické dimenze, název člena statistické dimenze a popis člena statistické dimenze              |
+| Hierarchie dimenze objektu nákladů  | Název hierarchie dimenze objektu nákladů, úroveň hierarchie dimenze objektu nákladů, stromová hierarchie dimenze objektu nákladů    |
+| Hierarchie dimenze prvku nákladů | Název hierarchie dimenze prvku nákladů, úroveň hierarchie dimenze prvku nákladů, stromová hierarchie dimenze prvku nákladů |
+| Hierarchie statistické dimenze  | Název hierarchie statistické dimenze, úroveň hierarchie statistické dimenze, stromová hierarchie statistické dimenze    |
 | Verze transakce               | Název verze                                                                                                         |
-| Fiskální kalendáře                   | Kalendář, Kalendář – popis                                                                                       |
+| Fiskální kalendáře                   | Kalendář, Popis kalendáře                                                                                       |
 | Fiskální roky                       | Kalendářní rok                                                                                                        |
-| Fiskální období                     | Období kalendářního roku                                                                                                 |
+| Fiskální období                     | Kalendářní roční období                                                                                                 |
 
 ## <a name="additional-resources"></a>Další prostředky
 Zde uvádíme některé užitečné odkazy související s entitami a vytvářením obsahu v aplikaci Power BI:
@@ -116,6 +116,6 @@ Zde uvádíme některé užitečné odkazy související s entitami a vytvářen
 -   [Vytvoření organizačního balíčku obsahu](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Modelování dat pomocí aplikace Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Přidání dlaždic Power BI do pracovních prostorů](configure-power-bi-integration.md)
--   [Nastavení zabezpečení obsahu nákladového účetnictví pro Power BI](setup-security-cost-accounting-content-pack.md)
+-   [Nastavení zabezpečení pro obsah nákladového účetnictví v Power BI](setup-security-cost-accounting-content-pack.md)
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Sestavy kusovníků jako dokončených"
-description: "Tento článek obsahuje informace o ohlašování kusovníků jako dokončených."
+title: "Ohlášení dokončení kusovníku"
+description: "Tento článek obsahuje informace o ohlášení kusovníků jako dokončených."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,19 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="report-boms-as-finished"></a>Sestavy kusovníků jako dokončených
+# <a name="report-boms-as-finished"></a>Ohlášení dokončení kusovníku
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek obsahuje informace o ohlašování kusovníků jako dokončených.
+Tento článek obsahuje informace o ohlášení kusovníků jako dokončených.
 
-Stránky **Vykázat jako dokončené** a **Maximální dokončená výroba** složí k vykázání kusovníků v dokončeném stavu. Proces vykázání dokončeného kusovníku je koncepčně stejný jako proces vykázání dokončené výrobní zakázky. Tento proces lze použít například v jednoduchých procesech sestavení a kompletace, u kterých nejsou potřeba rozšířené možnosti výrobních zakázek. Na stránce **Vykázat jako dokončené** můžete vykázat více dokončených kusovníků najednou. **Max. hlášení jako dokončeno** stránka umožňuje pouze jednoho kusovníku jako dokončeného v čase. **Hlášení jako dokončené** stránka je k dispozici z položky nabídky v modulu Řízení zásob a obě stránky jsou k dispozici jako položky nabídky na **uvolněných produktů** stránky.
+Stránky **Vykázat jako dokončené** a **Maximální dokončená výroba** složí k vykázání kusovníků v dokončeném stavu. Proces vykázání dokončeného kusovníku je koncepčně stejný jako proces vykázání dokončené výrobní zakázky. Tento proces lze použít například v jednoduchých procesech sestavení a kompletace, u kterých nejsou potřeba rozšířené možnosti výrobních zakázek. Na stránce **Vykázat jako dokončené** můžete vykázat více dokončených kusovníků najednou. Na stránce **Maximální dokončená výroba** můžete vykázat pouze jeden kusovník jako dokončený. Stránka **Hlášení jako dokončené** je k dispozici z položky nabídky v modulu Řízení zásob a obě stránky jsou k dispozici jako položky nabídky na stránce **Uvolněné produkty**.
 
 ## <a name="report-as-finished-page"></a>Stránka Vykázat jako dokončené
 Po otevření stránky **Vykázat jako dokončené ** z uvolněného produktu systém navrhne, abyste jako dokončené vykázali výchozí množství standardních zásob. Ve výchozím nastavení se zobrazuje aktivní verze kusovníku, avšak máte možnost změny na jinou schválenou verzi kusovníku. Na stránce může také odstraňovat záznamy a vytvářet nové záznamy pro uvolněné produkty, které mají být vykázány jako dokončené. Chcete-li produkty vybrat pomocí dotazu, klikněte na položku nabídky **Vybrat**. Pro vybrané produkty kliknutím na tlačítko **OK** ručně potvrďte výkaz jako dokončený. Proces lze rovněž nastavit ke spuštění v dávce. Jakmile je vykázání dokončení procesu potvrzeno, systém vytvoří deník kusovníku, ve kterém je zpracováno zaúčtování zásob. Tento deník obsahuje jednu řádkovou položku pro dokončený produkt a řádkovou položku pro každý řádek kusovníku. Můžete určit, zda je deník zaúčtovat automaticky, nebo zda zůstane otevřený pro další úpravy.
 
-## <a name="max-report-as-finished-page"></a>Maximum Hlášení jako dokončené stránky
+## <a name="max-report-as-finished-page"></a>Maximum Stránka Hlásit jako dokončené
 Na stránce **Maximální dokončená výroba** určuje každý řádek kusovníku počet kusů produktu, které mohou být vykázány jako dokončené. Tento výpočet vychází z fyzicky dostupných zásob na skladě pro každý řádek kusovníku. V následujícím příkladu spotřebovává jeden kus čísla položky PZ dva kusy suroviny SU10 a jeden kus suroviny SU20. Vzhledem k tomu, že na skladě je pouze 10 kusů suroviny SU10, lze jako dokončené vykázat maximálně 5 kusů PZ. Tato hodnota se zobrazuje v poli **Maximální dokončená výroba**.
 
 | Úroveň | Číslo zboží | Množství | Na skladě | Maximum Hlášení jako dokončené |
@@ -71,7 +71,7 @@ V následujících tabulkách je znázorněn způsob, jakým má nastavení v po
 | 0     | PZ          | 3        |
 | 1     | PC        | -3       |
 
-Jak ukazuje předchozí tabulka, pouze číslo položky COMP je považován za odečteny v deníku. Číslo zboží RM, který je součástí kompozice, není rozepsán do řádku deníku a nejsou považovány za dva kusy na skladě kompozice. **Rozbalení: Vždy**
+Jak ukazuje předchozí tabulka, pouze číslo položky COMP je považováno za odečtené v deníku. Číslo zboží RM, které je součástí modulu COMP, není rozepsáno do řádku deníku a dvě kusy COMP na skladě nejsou zahrnuty. **Rozbalení: Vždy**
 
 | Úroveň | Číslo zboží | Množství |
 |-------|-------------|----------|

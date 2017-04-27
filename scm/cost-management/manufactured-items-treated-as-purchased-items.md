@@ -1,6 +1,6 @@
 ---
-title: "Nastavení produktů, které mohou být vyrobené nebo získané"
-description: "Produkty lze ji různými způsoby – může být vyrobeno (vyráběny) nebo získané (zakoupené). Tento článek popisuje některé typické body, které je třeba zvážit při konfiguraci produktů pro podporu více zdrojů."
+title: "Nastavení produktů, které mohou být vyrobeny nebo pořízeny"
+description: "Produkty mohou být odebírány různými způsoby – mohou být produkovány (vyrobeny) nebo získané (nakupované). Tento článek popisuje některé typické body, které je třeba zvážit při konfiguraci produktů pro podporu více zdrojů."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,12 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-products-that-can-be-produced-or-procured"></a>Nastavení produktů, které mohou být vyrobené nebo získané
+# <a name="set-up-products-that-can-be-produced-or-procured"></a>Nastavení produktů, které mohou být vyrobeny nebo pořízeny
 
 [!include[banner](../includes/banner.md)]
 
 
-Produkty lze ji různými způsoby – může být vyrobeno (vyráběny) nebo získané (zakoupené). Tento článek popisuje některé typické body, které je třeba zvážit při konfiguraci produktů pro podporu více zdrojů. 
+Produkty mohou být odebírány různými způsoby – mohou být produkovány (vyrobeny) nebo získané (nakupované). Tento článek popisuje některé typické body, které je třeba zvážit při konfiguraci produktů pro podporu více zdrojů. 
 
 Získávání z více zdrojů se obvykle používá k zakoupení položky, která je příležitostně vyráběna, nebo v případě, že položka byla především vyráběna a byla změněna, takže je aktuálně převážně kupovaná. Daná položka je nejprve označena jako vyráběná položka s cílem definování údajů kusovníku a údajů o postupu nebo s cílem podpory výrobních zakázek pro danou položku. Typ výroby je třeba nastavit na **Kusovník** (nebo pro výrobní proces **Vzorec** nebo **Souběžný produkt**).
 

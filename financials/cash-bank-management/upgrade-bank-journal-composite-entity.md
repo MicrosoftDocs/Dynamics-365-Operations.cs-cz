@@ -1,5 +1,5 @@
 ---
-title: "Aktualizace složenou entitu bankovního deníku"
+title: "Aktualizace složité entity bankovního deníku"
 description: "Pomocí následujících kroků přidejte další pole BankTransactionType field do složitého záznamu BankJournalEntity."
 author: twheeloc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="update-the-bank-journal-composite-entity"></a>Aktualizace složenou entitu bankovního deníku
+# <a name="update-the-bank-journal-composite-entity"></a>Aktualizace složité entity bankovního deníku
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,13 +34,13 @@ Pomocí následujících kroků přidejte další pole BankTransactionType field
 Pomocí následujících kroků přidejte další pole BankTransactionType field do složitého záznamu BankJournalEntity.
 
 1.  Nakompilujte a synchronizujte následující složité entity, entity a tabulky fázování bankovního deníku:
-    -   Složené Entity\\BankJournalEntity
-    -   Entity\\BankJournalHeaderEntity
-    -   Entity\\BankJournalLineEntity
-    -   Tabulka\\BankJournalHeaderStaging
-    -   Tabulka\\BankJournalLineStaging
+    -   Složitá entita\\EntitaBankovníhoDeníku
+    -   Entita\\EntitaZáhlavíBankovníhoDeníku
+    -   Entita\\EntitaŘádkuBankovníhoDeníku
+    -   Tabulka\\FázeZáhlavíBankovníhoDeníku
+    -   Tabulka\\FázeŘádkuBankovníhoDeníku
 
-2.  Správa dat\\data projektů
+2.  Správa dat\\datové projekty
     -   Vystavte typ **Bankovní transakce **v rozložení **Zdrojová data**.
         -   Formát zdrojových dat = XML-Element
         -   Název entity = Bankovní deník

@@ -1,5 +1,5 @@
 ---
-title: "Povolit upravené prognóze"
+title: "Autorizovat upravenou prognózu"
 description: "Ne všechna data prognózy musí být ověřeny okamžitě. Tento článek vysvětluje, jak můžete určit období, pro které je prognóza autorizována. Také vysvětluje, jak lze autorizovat předpovědi pro určité společnosti a modely prognóz."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="authorize-an-adjusted-forecast"></a>Povolit upravené prognóze
+# <a name="authorize-an-adjusted-forecast"></a>Autorizovat upravenou prognózu
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,20 +35,20 @@ Ne všechna data prognózy musí být ověřeny okamžitě. Tento článek vysv�
 
 Ne všechna data prognózy musí být ověřeny okamžitě. Můžete zadat počáteční a koncové datum v období, pro které je prognóza schválena. Tato funkce umožňuje zmrazit určité období. 
 
-Počáteční a koncové datum, které zadáte, musí odpovídat počáteční a koncové datum v bloku, generované v prognóze. Systém vynucuje tato omezení a automaticky upraví data, pokud je nutné úpravy. 
+Počáteční a koncová data, které zadáte, musí odpovídat počátečním a koncovým datům intervalu, ve kterém je prognóza generována. Systém vynucuje tato omezení a automaticky upraví data, pokud jsou úpravy nutné. 
 
 Na kartě **Podrobnosti** na stránce **Autorizace** můžete zobrazit podrobnosti o naposledy vygenerované prognóze. 
 
 Můžete vybrat společnosti a modely prognóz a povolit tak použití předpovědi. Ve výchozím nastavení obsahuje mřížka všechny společnosti, pro které poptávka prognózy byla vytvořena. Pro každou společnost je předem nastaven model prognózy, který odpovídá aktuálnímu plánu prognózy, který je nastaven v parametrech hlavního plánování. Tento model prognózy lze však změnit na libovolný model prognózy, který patří k dané společnosti. Pokud žádná data prognózy poptávky nebyla vygenerována ve vybrané společnosti, obdržíte během importu zprávu s upozorněním. 
 
-Ujistěte se, že rozumíte způsobu, jakým pole **Uložit ruční úpravy provedené v základní prognóze poptávky** funguje. Pokud jste provedli ručně úpravy pro statistické základní prognózy, upravené hodnoty jsou povoleny pro použití, i když toto políčko není zaškrtnuto. Po povolení však budou změny zrušeny. Při příštím vygenerování prognózy bude tato prognóza tedy pouze statistická a nenabízí žádné ruční přepsání, i když je vybrána možnost **Přeneste ruční úpravy do prognózy poptávky**. Proto můžete použít pole **Uložit ruční úpravy provedené v základní prognóze poptávky** jako mechanismus, který vám umožní zachovat nebo zrušit všechny ruční změny.
+Ujistěte se, že rozumíte způsobu, jakým pole **Uložit ruční úpravy provedené v základní prognóze poptávky** funguje. Pokud jste provedli ruční úpravy pro statistickou základní prognózu, upravené hodnoty jsou registrovány pro použití i v případě, že je zaškrtnutí tohoto políčka zrušeno. Po povolení však budou změny zrušeny. Při příštím vygenerování prognózy bude tato prognóza tedy pouze statistická a nenabízí žádné ruční přepsání, i když je vybrána možnost **Přeneste ruční úpravy do prognózy poptávky**. Proto můžete použít pole **Uložit ruční úpravy provedené v základní prognóze poptávky** jako mechanismus, který vám umožní zachovat nebo zrušit všechny ruční změny.
 
 <a name="see-also"></a>Viz také
 --------
 
-[Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+[Ruční úpravy základní prognózy](manual-adjustments-baseline-forecast.md)
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Měření přesnosti prognózy](monitor-forecast-accuracy.md)
 
 
 

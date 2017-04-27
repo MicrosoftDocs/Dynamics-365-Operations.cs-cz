@@ -1,6 +1,6 @@
 ---
-title: "O přijetí obsahu Power BI"
-description: "Toto téma popisuje 365 Dynamics pro operace - obsah náborového Power BI. Popisuje, jak přístup k sestavám, které jsou součástí obsahu pack a obsahuje informace o datovém modelu a entit, které byly použity k sestavení obsahu pack."
+title: "Obsah Power BI pro nábor"
+description: "Toto téma popisuje obsah Power BI pro aplikaci Dynamics 365 for Operations - Recruiting. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v balíčku obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření balíčku obsahu."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,52 +24,52 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recruiting-power-bi-content"></a>O přijetí obsahu Power BI
+# <a name="recruiting-power-bi-content"></a>Obsah Power BI pro nábor
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje 365 Dynamics pro operace - obsah náborového Power BI. Popisuje, jak přístup k sestavám, které jsou součástí obsahu pack a obsahuje informace o datovém modelu a entit, které byly použity k sestavení obsahu pack.
+Toto téma popisuje obsah Power BI pro aplikaci Dynamics 365 for Operations - Recruiting. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v balíčku obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření balíčku obsahu.
 
-<a name="accessing-the-content-pack"></a>Přístup k obsahu pack
+<a name="accessing-the-content-pack"></a>Přístup k balíčku obsahu
 --------------------------
 
-Sada obsahu pro nábor můžete najít v knihovně Sdílené datové zdroje v Microsoft Dynamics Lifecycle Services (LCS). Další informace o stažení obsahu pack a připojit k vaší 365 Microsoft Dynamics pro datové operace, viz [obsahu Power BI od společnosti Microsoft a partnerů LCS](power-bi-content-microsoft-partners.md).
+Balíček obsahu metrik pro nábor naleznete v knihovně sdíleného majetku ve službě Microsoft Dynamics Lifecycle Services (LCS). Další informace o stažení balíčku obsahu a připojení k datům aplikace Microsoft Dynamics 365 for Operations naleznete v tématu [Obsah Power BI v LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md).
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>Sestavy, které jsou součástí obsahu pack
-Po připojení obsahu pack do aplikace Dynamics 365 pro operace data, sestavy zobrazit data organizace. Pokud jste dosud nepoužívali Microsoft Power BI před, bližší informace na [s asistencí výukové stránky pro Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Sestavy, které jsou součástí obsahu pack mají grafy a tabulky, které obsahují další informace. Následující tabulka obsahuje popis daných sestav.
+## <a name="reports-that-are-included-in-the-content-pack"></a>Sestavy, které jsou součástí balíčku obsahu
+Po připojení balíčku obsahu k datům z aplikace Dynamics 365 for Operations zobrazí sestavy data vaší organizace. Pokud jste aplikaci Microsoft Power BI nikdy předtím nepoužívali, vyhledejte si další informace v tématu [Řízená výuka pro Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Sestavy, které jsou součástí balíčku obsahu, mají grafy a tabulky obsahující další informace. Následující tabulka obsahuje popis daných sestav.
 
 | Sestava                       | Obsah                                                                                               |
 |------------------------------|--------------------------------------------------------------------------------------------------------|
-| Analýza žadatele           | Žadatel projektu, zdroje žadatele, žadatel podle umístění a celkový počet uchazečů           |
-| Stav žadatele             | Žadatel podle typu a stavu a stav žadatele                                                    |
-| Demografické údaje žadatele       | Žadatelů podle věku a pohlaví a úroveň vzdělání a stav žadatele                             |
-| O přijetí analýzy          | Pronájem poměr netto, průměrný počet dní, které chcete najmout, procento chybných hires a náklady náboru                    |
-| Analýza projektu náboru | Počet náborových projektů, otvory podle náborového projektu a žadatelů podle náborového projektu |
+| Analýza uchazeče           | Uchazeči podle práce, zdrojů uchazeče, uchazeči podle umístění a celkový počet uchazečů           |
+| Stav uchazeče             | Uchazeč podle typu a stavu a stav uchazeče                                                    |
+| Demografické údaje uchazeče       | Uchazeči podle věku a pohlaví a úroveň vzdělání a stav uchazeče                             |
+| Analýza náboru          | Čistý poměr náborů, průměrný počet dní pro nábor, procento chybných náborů a náklady na nábor                    |
+| Analýza náborového projektu | Počet náborových projektů, volná místa podle náborového projektu a uchazeči podle náborového projektu |
 
-Můžete filtrovat grafy a dlaždice v těchto sestavách a Připnutí grafů a dlaždice pro řídicí panel. Další informace o filtru a pin v Power BI, viz [vytvoření a konfigurace řídicího panelu A](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
-Dynamics 365 pro datové operace se používá k naplnění sestavy v obsahu pack nábor. Následující tabulka zobrazuje entity, aby byla na základě obsahu pack.
+Data aplikace Dynamics 365 for Operations se používají k naplnění sestav v balíčku obsahu metrik náboru. Následující tabulka zobrazuje entity, na kterých je balíček obsahu založen.
 
-| Celek                          | Obsah                                                         | Vztahy s jinými subjekty                                                                                                                                                                                                                 |
+| Celek                          | Obsah                                                         | Vztahy s jinými entitami                                                                                                                                                                                                                 |
 |---------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nábor\_žadatele           | Žadatelé, přijaté uchazeče, poměr čistého nájmu a náklady          | Nábor\_nábor ApplicantName\_společnosti o přijetí\_CalendarOffset Recuriting\_datum přijetí\_GeographicLocation o přijetí\_demografické údaje o přijetí\_projektu náboru\_Media nábor\_RecruitmentProject                                |
-| Nábor\_ApplicantName       | Žadatel jméno, příjmení a celé jméno                   | Nábor\_žadatele náboru\_přijetí EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Nábor\_CalendarOffset      | Kalendář posuny na řezu sestavy                                | Nábor\_žadatele náboru\_přijetí EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Nábor\_společnosti             | Chcete-li filtrovat zprávy společnosti                                   | Nábor\_žadatele náboru\_přijetí EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Nábor\_datum                | Dny, týdny, měsíce a roky                                   | Nábor\_žadatele náboru\_přijetí EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Nábor\_demografické údaje        | Datum narození, pohlaví, etnického původu a rodinného stavu         | Nábor\_žadatele náboru\_přijetí EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Nábor\_EmployedApplicant   | Žadatel, výkon, datum zahájení a typu žadatele           | Nábor\_společnosti o přijetí\_nábor CalendarOffset\_datum přijetí\_nábor GeographicLocation\_ApplicantName o přijetí\_přijetí zaměstnání\_nábor výkon\_projektu náboru\_Media nábor\_RecruitmentProject          |
-| Nábor\_zaměstnání          | Počáteční datum, koncové datum a datum přechodu                        | Nábor\_žadatele náboru\_přijetí EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Nábor\_GeographicLocation  | Město, kraj, poštovní kód a Okres                 | Nábor\_žadatele náboru\_přijetí EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Nábor\_práce                 | Funkce, typ a název                                        | Nábor\_žadatele náboru\_přijetí EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Nábor\_Media               | Zdroje uchazečů                                             | Nábor\_žadatele náboru\_přijetí EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Nábor\_výkon         | Model hodnocení, hodnocení a popis                            | Nábor\_žadatele náboru\_přijetí EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Nábor\_RecruitmentProject  | Popis projektu, stav projektu a otvory                | Nábor\_žadatele náboru\_přijetí EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Nábor\_TerminatedApplicant | Ukončeno žadatelů, důvodem je výkon a datum ukončení | Nábor\_společnosti o přijetí\_CalendarOffset o přijetí\_datum přijetí\_nábor GeographicLocation\_nábor výkon\_demografické údaje o přijetí\_přijetí zaměstnání\_Media nábor\_nábor RecruitmentProject\_ApplicantName |
+| Nábor\_Uchazeč           | Uchazeči, přijatí uchazeči, čistý poměr náboru a náklady          | Recruiting\_ApplicantName Recruiting\_Company Recruiting\_CalendarOffset Recuriting\_Date Recruiting\_GeographicLocation Recruiting\_Demographics Recruiting\_Job Recruiting\_Media Recruiting\_RecruitmentProject                                |
+| Recruiting\_ApplicantName       | Křestní jméno, příjmení a celé jméno uchazeče                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_CalendarOffset      | Posuny kalendáře pro řez sestav                                | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Company             | Společnosti, podle kterých se filtrují sestavy                                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Date                | Dny, týdny, měsíce a roky                                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Demographics        | Datum narození, pohlaví, etnický původ a rodinný stav         | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_EmployedApplicant   | Uchazeč, výkon, datum zahájení a typ žadatele           | Recruiting\_Company Recruiting\_CalendarOffset Recruiting\_Date Recruiting\_GeographicLocation Recruiting\_ApplicantName Recruiting\_Employment Recruiting\_Performance Recruiting\_Job Recruiting\_Media Recruiting\_RecruitmentProject          |
+| Recruiting\_Employment          | Počáteční datum, koncové datum a datum přechodu                        | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_GeographicLocation  | Město, okres, PSČ a stát nebo kraj                 | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Job                 | Funkce, typ a název                                        | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Media               | Zdroj uchazečů                                             | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Performance         | Ohodnocení, popis a model ohodnocení                            | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_RecruitmentProject  | Popis projektu, stavu projektu a volných míst                | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_TerminatedApplicant | Vyřazení uchazeči, důvod, výkon a datum vyřazení | Recruiting\_Company Recruiting\_CalendarOffset Recruiting\_Date Recruiting\_GeographicLocation Recruiting\_Performance Recruiting\_Demographics Recruiting\_Employment Recruiting\_Media Recruiting\_RecruitmentProject Recruiting\_ApplicantName |
 
-Tyto entity byly použity k vytvoření výpočtové míry. Tyto vypočtena opatření se poté použije pro výpočet klíčových ukazatelů výkonu (KPI) a sestavy, které jsou použity v obsahu pack. Pokud chcete zahrnout další výpočty v sestavách a řídicího panelu, můžete stáhnout a upravit soubor Recruiting.pbix z LCS. Tento soubor je výchozí datový model, který byl použit k vytvoření obsahu pack. Poté, co jste provedli změny, můžete vytvořit obsahu pack organizační a řídicí panel, který obsahuje informace, které jste přidali.
+Tyto entity byly použity k vytvoření vypočítaných hodnot v datovém modelu. Tyto vypočtené hodnoty se poté použijí pro výpočet klíčových ukazatelů výkonu a sestav, které se používají v balíčku obsahu. Pokud chcete zahrnout další výpočty do sestav a řídicího panelu, můžete stáhnout a upravit soubor Recruiting.pbix z LCS. Tento soubor představuje výchozí datový model, který byl použit k vytvoření balíčku obsahu. Po provedení změn můžete vytvořit organizační balíček obsahu a řídicí panel, který bude obsahovat vámi přidané informace.
 
 ## <a name="additional-resources"></a>Další prostředky
 Zde uvádíme některé užitečné odkazy související s entitami a vytvářením obsahu v aplikaci Power BI:

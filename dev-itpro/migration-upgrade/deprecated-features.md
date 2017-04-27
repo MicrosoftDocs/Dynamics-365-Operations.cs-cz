@@ -118,7 +118,7 @@ eGiro je založeno na mezinárodních standardech SN EDIFACT CREMUL (Multiple Cr
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Důvod pro zrušení       | Formát plateb se již nepoužívá.                                                     |
-| Nahrazeno jinou funkcí? | Č. Formát bude nahrazen ISO 20022 příkaz import formátů v budoucích verzích. |
+| Nahrazeno jinou funkcí? | Č. Formát bude nahrazen formátem importu výpisu ISO 20022 v příštích verzích. |
 | Ovlivněné moduly             | Pohledávky                                                                       |
 
 ### <a name="external-inventory-for-poland"></a>Externí zásoby v Polsku
@@ -138,7 +138,7 @@ Nástroj se používá pro nastavení shromažďování dat pro účetnictví a 
 |                              |                                                                                          |
 |------------------------------|------------------------------------------------------------------------------------------|
 | Důvod pro zrušení       | Omezené použití                                                                            |
-| Nahrazeno jinou funkcí? | Č. Nástroj bude nahrazen elektronické vykazování konfigurace v budoucích vydání. |
+| Nahrazeno jinou funkcí? | Č. Tento nástroj bude nahrazen konfigurací elektronických sestav v budoucích verzích. |
 | Ovlivněné moduly             | Hlavní kniha                                                                           |
 
 ### <a name="import-of-customer-payment-transactions-for-finland"></a>Import transakce plateb odběratelů pro Finsko
@@ -148,7 +148,7 @@ Můžete vybrat formát importu pro platby ve Finsku, ve kterém se importují p
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Důvod pro zrušení       | Formát plateb se již nepoužívá.                                                     |
-| Nahrazeno jinou funkcí? | Č. Formát bude nahrazen ISO 20022 příkaz import formátů v budoucích verzích. |
+| Nahrazeno jinou funkcí? | Ne. Formát bude nahrazen formátem importu výpisu ISO 20022 v příštích verzích. |
 | Ovlivněné moduly             | Pohledávky                                                                       |
 
 ### <a name="import-of-payment-transactions-into-a-general-ledger-journal-for-finland"></a>Import platebních transakcí do deníku hlavní knihy pro Finsko
@@ -158,7 +158,7 @@ Formát, který je specifický pro Finsko, se používá k importu transakcí ú
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Důvod pro zrušení       | Formát plateb se již nepoužívá.                                                     |
-| Nahrazeno jinou funkcí? | Č. Formát bude nahrazen ISO 20022 příkaz import formátů v budoucích verzích. |
+| Nahrazeno jinou funkcí? | Č. Formát bude nahrazen formátem importu výpisu ISO 20022 v příštích verzích. |
 | Ovlivněné moduly             | Pohledávky                                                                       |
 
 ### <a name="integration-with-isabel-synchronized-cis-for-belgium"></a>Integrace s Isabel synchronizována (CIS) pro Belgii
@@ -168,7 +168,7 @@ Isabel je platforma pro elektronické bankovnictví v Evropě a je de facto stan
 |                              |                                                                                                                      |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Důvod pro zrušení       | Integrace s klientem Isabel již není nabízena.                                                                |
-| Nahrazeno jinou funkcí? | Č. Formát platby převod ISO20022 úvěru pro Belgii nahrazují formátech platby, které již nejsou používány. |
+| Nahrazeno jinou funkcí? | Ne. Formáty plateb, které se již nepoužívají, jsou nahrazeny ISO20022 formátem platebního převod platby pro Belgii. |
 | Ovlivněné moduly             | Závazky                                                                                                     |
 
 ### <a name="modifications-in-the-chart-of-accounts-and-accounting-rules-for-spain"></a>Změny v účetní osnově a účetních pravidlech pro Španělsko
@@ -218,7 +218,7 @@ Formáty Telehansa a TeleTeenus se používají pro import bankovních plateb.
 |                              |                                                                                            |
 |------------------------------|--------------------------------------------------------------------------------------------|
 | Důvod pro zrušení       | Formáty plateb se již nepoužívají.                                                    |
-| Nahrazeno jinou funkcí? | Č. Tyto formáty budou nahrazeny ISO 20022 příkaz import formátů v budoucích verzích. |
+| Nahrazeno jinou funkcí? | Č. Formáty budou nahrazeny formátem importu výpisu ISO 20022 v příštích verzích. |
 | Ovlivněné moduly             | Pohledávky                                                                        |
 
 ### <a name="performance-management-goal-workflow"></a>Pracovní postup cíle řízení výkonnosti
@@ -228,7 +228,7 @@ Formáty Telehansa a TeleTeenus se používají pro import bankovních plateb.
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Důvod pro zrušení       | Řízení výkonnosti bylo změněno a počet stránek cílů se snížil, aby došlo ke zjednodušení procesu.                 |
-| Nahrazeno jinou funkcí? | Č. Cíle jsou viditelné správcům prostřednictvím portálu Manager Self Service a lze změnit a je zobrazen ve správci. |
+| Nahrazeno jinou funkcí? | Ne. Cíle jsou viditelné pro vedoucí pracovníky pomocí portálu samoobslužných stránek správce a lze je změnit a zobrazit manažerem. |
 | Ovlivněné moduly             | Správa lidského kapitálu                                                                                                 |
 
 ### <a name="postgirot-and-postgirot-utland-payment-formats-for-sweden"></a>Formáty platby Postgirot a Postgirot Utland pro Švédsko
@@ -241,19 +241,19 @@ Formáty platby Postgirot a Postgirot Utland pro Švédsko.
 | Nahrazeno jinou funkcí? | Ano, specificky švédský formát platby peněžního převodu ISO20022. |
 | Ovlivněné moduly             | Závazky                                        |
 
-### <a name="radio-frequency-identifier"></a>Identifikátor rádiové frekvence
+### <a name="radio-frequency-identifier"></a>Radiofrekvenční identifikátor
 
-Radiofrekvenční identifikace (RFID) je technologie shromažďování dat, která používá k uložení identifikačních dat a požadavku č řádku z pohledu čtenáře ke sběru dat identifikace elektronických značek.
+Radiofrekvenční identifikace (RFID) představuje technologii shromažďování dat, která využívá elektronických značek k uložení identifikačních dat a nevyžaduje žádné zařízení ke čtení identifikačních dat, které by muselo být v přímé viditelnosti k označenému předmětu.
 
 |                              |                                               |
 |------------------------------|-----------------------------------------------|
-| Důvod pro zrušení       | Nastavte použití nízké zákazníka a omezená funkce. |
+| Důvod pro zrušení       | Málo používáno odběrateli a omezená sada funkcí. |
 | Nahrazeno jinou funkcí? | Žádný                                            |
 | Ovlivněné moduly             | Řízení zásob                          |
 
 ### <a name="report-about-state-invoices-numbering-for-latvia"></a>Zpráva o číslování státních faktur Lotyšska
 
-Lotyšská legislativa poskytuje konkrétní pravidla týkající se číslování prodejních faktur. Funkce umožňuje přiřadit konkrétní čísla prodejních faktur, které jsou založeny na uživatele nebo skupinu uživatelů. Potom můžete generovat sestavy nebo v souboru XML. Lze také vytisknout sestavy s informacemi o použitých číslech faktur.
+Lotyšská legislativa poskytuje konkrétní pravidla týkající se číslování prodejních faktur. Funkce umožňuje přiřadit specifická čísla do prodejních faktur na základě uživatele nebo skupiny uživatelů. Pak lze vygenerovat sestavu nebo soubor XML. Lze také vytisknout sestavy s informacemi o použitých číslech faktur.
 
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -312,7 +312,7 @@ Workflow správy vytvoření cílů zaměstnanců je jednou z několika workflow
 
 ### <a name="aif-axd-and-axbc-integrations"></a>Integrace rozhraní AIF, AxD a AxBC
 
-V rozhraní AIF (Application Integration Framework) mohou být data vyměňována s externími systémy pomocí obchodní logiky, která je zveřejněna jako služba. Dynamics AX obsahuje služby, které jsou založeny na dokumentech a programu .NET Business Connector (AxBC). Dokument je vytvářen pomocí kódu XML. Soubor XML obsahuje informace v záhlaví, které jsou přidány pro vytvoření *zprávy*, již lze přenést do a z aplikace Dynamics AX. Příkladem takovýchto dokumentů mohou být prodejní objednávky nebo nákupní objednávky. Dokumentem však může být reprezentována téměř jakákoliv entita, například odběratel. Služby, které jsou založeny na použití dokumentů **Axd &lt;*dokument*&gt;** třídy.
+V rozhraní AIF (Application Integration Framework) mohou být data vyměňována s externími systémy pomocí obchodní logiky, která je zveřejněna jako služba. Dynamics AX obsahuje služby, které jsou založeny na dokumentech a programu .NET Business Connector (AxBC). Dokument je vytvářen pomocí kódu XML. Soubor XML obsahuje informace v záhlaví, které jsou přidány pro vytvoření *zprávy*, již lze přenést do a z aplikace Dynamics AX. Příkladem takovýchto dokumentů mohou být prodejní objednávky nebo nákupní objednávky. Dokumentem však může být reprezentována téměř jakákoliv entita, například odběratel. Služby, které jsou založeny na dokumentech, používají třídy **Axd &lt;*Dokument*&gt;**.
 
 |                              |                                                                                                                                                                                                          |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -347,7 +347,7 @@ Federální daňový výkaz ICMS
 |                              |                                                                                                                       |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | Důvod pro zrušení       | Toto prohlášení se již v některých brazilských zemích nepoužívá.                                                     |
-| Nahrazeno jinou funkcí? | Č. Uživatelé mohou používat obecné elektronické ohlašovací nástroj Konfigurace příkazu, pokud podle konkrétní situace. |
+| Nahrazeno jinou funkcí? | Ne. Uživatelé mohou používat nástroj obecného elektronického vykazování pro konfiguraci výkazu, pokud je v určitých situacích požadován. |
 | Ovlivněné moduly             | Fiskální knihy                                                                                                          |
 
 ### <a name="brazilian-scan-contingency-mode-for-nf-e"></a>Brazilský pohotovostní režim SCAN pro NF e
@@ -631,7 +631,7 @@ Mzdové informace lidských zdrojů
 |                              |                                                                                                                                                                                                                                                                                                                              |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Důvod pro zrušení       | Tato funkce byla nahrazena základními stránkami Mzdy a Lidské zdroje.                                                                                                                                                                                                                                              |
-| Nahrazeno jinou funkcí? | **Výhody**, **Příjmy** a další související stránky, které byly dříve v modulu Mzdy v USA, byly překonfigurovány a jsou nyní součásti základní konfigurace modulu Lidské zdroje pro podporu zpracování externích mezd. Tato funkce je přístupná pomocí **lidských zdrojů 1**&gt;**mezd** konfigurační klíč. |
+| Nahrazeno jinou funkcí? | **Výhody**, **Příjmy** a další související stránky, které byly dříve v modulu Mzdy v USA, byly překonfigurovány a jsou nyní součásti základní konfigurace modulu Lidské zdroje pro podporu zpracování externích mezd. K této funkci se dostanete pomocí konfiguračního klíče **Lidské zdroje 1** &gt; **Mzdy**. |
 | Ovlivněné moduly             | Lidské zdroje, Mzdy                                                                                                                                                                                                                                                                                                     |
 
 ### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a>Soukromé blokování deníků řízení zásob a skladu
@@ -698,12 +698,12 @@ Služba Sites Services umožňuje vytvářet webové stránky, které rozšiřuj
 | Nahrazeno jinou funkcí? | Č.                                                                                                                                       |
 | Ovlivněné moduly             | Nábor HR, správa případů, požadavek na cenovou nabídku, registrace dodavatele                                                                  |
 
-### <a name="ssas-demand-forecasting-strategy"></a>SSAS poptávky prognózy strategie
+### <a name="ssas-demand-forecasting-strategy"></a>Strategie prognózy poptávky SSAS
 
 |                              |                                                                              |
 |------------------------------|------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Návrh funkce nemůže být podporováno v nové architektury cloud. |
-| Nahrazeno jinou funkcí? | Azure Machine Learning poptávky prognózy strategie                           |
+| Důvod pro zrušení       | Návrh funkce nemůže být podporován v nové cloudové architektuře. |
+| Nahrazeno jinou funkcí? | Strategie prognózy poptávky Azure Machine Learning                           |
 | Ovlivněné moduly             | Plánování                                                                     |
 
 ### <a name="travel-requisitions"></a>Cestovní žádanky

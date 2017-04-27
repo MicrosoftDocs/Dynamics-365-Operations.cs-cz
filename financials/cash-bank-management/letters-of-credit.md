@@ -34,7 +34,7 @@ Akreditivy jsou bankovní dokumenty běžně používané pro nákup a prodej zb
 
 Akreditivy se používají pro mezinárodní transakce, aby se zajistilo, že platba proběhne. Pojem akreditiv označuje bankovní smlouvu, ve které banka souhlasí se zajištěním platby jménem kupujícího za předpokladu, že jsou splněny podmínky mezi kupujícím a prodávajícím. Všimněte si, že akreditiv se také nazývá dokumentární akreditiv (DC). 
 
-U importního akreditivu je právnická osoba nákupčí nebo uchazeč o akreditiv. U exportního akreditivu je právnická osoba prodejce nebo příjemce akreditivu. Následující strany se zabývají dokumentární akreditiv: 
+U importního akreditivu je právnická osoba nákupčí nebo uchazeč o akreditiv. U exportního akreditivu je právnická osoba prodejce nebo příjemce akreditivu. Následující strany jsou zahrnuty do akreditivu: 
 
  - Žadatel (kupující), který hodlá zaplatit za zboží 
  - Příjemce (prodejce), který obdrží platbu

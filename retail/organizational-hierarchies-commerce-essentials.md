@@ -1,6 +1,6 @@
 ---
-title: "Organizace a organizační hierarchie (Commerce essentials)"
-description: "Základy obchodování má tři typy vnitřní organizace, které definujete usnadňující organizaci provádění obchodního procesu nebo dosažení cíle."
+title: "Organizace a hierarchie organizace (Základy obchodování)"
+description: "Základy obchodování mají tři typy vnitřní organizace, které můžete definovat na pomoc organizaci provádět obchodní proces nebo dosáhnout cíle."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 21251
 ms.assetid: 2bfc6bfe-784b-42e8-8bf0-116e9f0a558e
 ms.search.region: global
@@ -25,12 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organizations-and-organizational-hierarchies-commerce-essentials"></a>Organizace a organizační hierarchie (Commerce essentials)
+# <a name="organizations-and-organizational-hierarchies-commerce-essentials"></a>Organizace a hierarchie organizace (Základy obchodování)
 
 [!include[banner](includes/banner.md)]
 
 
-Základy obchodování má tři typy vnitřní organizace, které definujete usnadňující organizaci provádění obchodního procesu nebo dosažení cíle. 
+Základy obchodování mají tři typy vnitřní organizace, které můžete definovat na pomoc organizaci provádět obchodní proces nebo dosáhnout cíle. 
 
 Organizace je skupina lidí, kteří spolupracují na provádění obchodního procesu nebo dosažení cíle. Organizační hierarchie představuje vztahy mezi obchodními jednotkami, které tvoří vaši organizaci.
 
@@ -50,7 +50,7 @@ Provozní jednotka je organizace, která se používá k rozdělení řízení e
 | Maloobchodní síť          | Provozní jednotka, která představuje kamenný obchod.                             | Umožňuje spravovat a řídit jeden nebo více skladů v rámci právnických osob.                                                               |
 
 ## <a name="organizational-hierarchies"></a>Organizační hierarchie
-V modulu Základy obchodování je každé hierarchii přiřazena účel. Účel hierarchie určuje typy organizací, které mohou být zahrnuty v hierarchii. Účel také určuje, v jakých scénářích aplikace lze hierarchii použít. Například hierarchie maloobchodu lze nakupovat a prodávat výrobky v kamenném obchodě. Organizace v hierarchii mohou sdílet parametry, zásady a transakce. Organizace může dědit nebo přepsat parametry její nadřazené organizace. Sdílené hlavní data, například výrobky a adresáře, však platí pro celou organizaci, a nelze je přepsat pro jednotlivé organizace.
+V modulu Základy obchodování je každé hierarchii přiřazena účel. Účel hierarchie určuje typy organizací, které mohou být zahrnuty v hierarchii. Účel také určuje, v jakých scénářích aplikace lze hierarchii použít. Například hierarchii maloobchodu lze používat k nákupu a prodeji výrobků v kamenném obchodě. Organizace v hierarchii mohou sdílet parametry, zásady a transakce. Organizace může dědit nebo přepsat parametry její nadřazené organizace. Sdílené hlavní data, například výrobky a adresáře, však platí pro celou organizaci, a nelze je přepsat pro jednotlivé organizace.
 ### <a name="best-practices-for-setting-up-an-organization-in-a-hierarchy"></a>Doporučené postupy pro nastavování organizace v hierarchii
 
 Při implementaci organizační hierarchie berte v úvahu následující doporučené postupy:

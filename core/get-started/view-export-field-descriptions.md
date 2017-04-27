@@ -36,9 +36,9 @@ Ne všechny stránky obsahují popis polí. Chceme poskytnout popisy pro složit
 Pokud máte přístup k vývojovému prostředí v aplikaci Dynamics 365 for Operations, můžete přidat nový popis polí nebo stávající popisy přizpůsobit. Můžete například přidat informace specifické pro společnost do popisu pole. Další informace naleznete viz [Přizpůsobení nápovědy pole](/dynamics365/operations/dev-itpro/user-interface/customize-field-help).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Zobrazení popisu pole v uživatelském rozhraní
-Popis polí lze zobrazit umístěním ukazatele myši na pole. Pokud není k dispozici žádný popis, zobrazí se po přesunutí ukazatele myši na pole název pole. (Poznámka: ve verzi 7.0.0 lze pouze na Zobrazit pole Popis **pole Popis** stránky.) Následující obrázek znázorňuje pole Popis, který se zobrazí při přesunutí ukazatele myši **Zamknout položky během inventury** pole. 
+Popis polí lze zobrazit umístěním ukazatele myši na pole. Pokud není k dispozici žádný popis, zobrazí se po přesunutí ukazatele myši na pole název pole. (Poznámka: Ve verzi 7.0.0 lze zobrazit popisy polí jen na stránce **Popisy polí**.) Následující obrázek znázorňuje popisy polí, které se zobrazí při přesunutí ukazatele myši na pole **Uzamknout položky během inventury**. 
 
-[![Příklad pole Popis](./media/field-description.png)](./media/field-description.png)
+[![Příklad popisu pole](./media/field-description.png)](./media/field-description.png)
 
 ## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>Pomocí stránky Popis pole můžete zobrazit a exportovat nápovědu pro pole
 Stránka **Popis polí** slouží e zobrazení a exportu popisů polí. Současně můžete zobrazit popisy, které jsou k dispozici na jedné stránce.
@@ -73,7 +73,7 @@ Vyhledat stránku v poli **Vybrat stránku** lze několika způsoby. V mnoha př
     -   Pokud existuje více než jediná přesná shoda, nezobrazí se žádné popisy. Bude nutné otevřít rozevírací seznam a vybrat požadovanou možnost.
     -   Pokud název, který jste zadali, je také částí názvu další stránky, zobrazí se popisy pro vaši stránku. Pokud ale otevřete rozevírací seznam, zobrazí se další stránky, které obsahují tento název.
 
-Například žádné popisy jsou zobrazeny po zadání **inventura** v *** vyberte pole stránky ***. Pokud kliknete na rozevírací seznam, zjistíte, že existují dvě stránky s názvem **Inventura** a také několik stránek, které obsahují v názvu slovo „Inventura“. Pokud vyberete stránku, který má název stromu AOT **InventJournalCount**, zobrazí se pro tuto stránku popisy polí. Pokud však znovu otevřete na rozevírací seznam, zobrazený seznam nyní obsahuje všechny stránky, které mají „InventJournalCount“ jako součást jejich názvu stromu AOT.
+Například nejsou zobrazeny žádné popisy, když zadáte **Inventura** do pole ****Vybrat stránku****. Pokud kliknete na rozevírací seznam, zjistíte, že existují dvě stránky s názvem **Inventura** a také několik stránek, které obsahují v názvu slovo „Inventura“. Pokud vyberete stránku, který má název stromu AOT **InventJournalCount**, zobrazí se pro tuto stránku popisy polí. Pokud však znovu otevřete na rozevírací seznam, zobrazený seznam nyní obsahuje všechny stránky, které mají „InventJournalCount“ jako součást jejich názvu stromu AOT.
 
 ## <a name="troubleshooting"></a>Řešení potíží
 Tato sekce obsahuje informace o řešení problémů, ke kterým může dojít při používání popisů pole.

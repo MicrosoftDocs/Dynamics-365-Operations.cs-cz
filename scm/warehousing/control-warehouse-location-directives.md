@@ -1,5 +1,5 @@
 ---
-title: "Řízení skladu práce pomocí šablony práce a umístění direktivy"
+title: "Řízení práce ve skladu pomocí šablon práce a směrnic skladového místa"
 description: "Tento článek popisuje způsob použití šablon práce a směrnic skladového místa k určení, jak a kde se práce ve skladu provádí."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Řízení skladu práce pomocí šablony práce a umístění direktivy
+# <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Řízení práce ve skladu pomocí šablon práce a směrnic skladového místa
 
 [!include[banner](../includes/banner.md)]
 
@@ -43,7 +43,7 @@ Nastavení v definici záhlaví práce dokáže určit, kdy mají být vytvořen
 
 Řádky práce představují fyzické úkoly, které jsou požadovány pro zpracování práce. Například pro proces výstupního skladu může existovat řádek práce pro vyzvednutí položek v rámci skladu, a jeden řádek pro uložení těchto položek do přípravné oblasti. Poté může existovat další řádek pro výdej položek z fázování a jiný řádek pro vkládání položek do nákladního automobilu v rámci procesu nakládání. Podle potřeby můžete nastavit *kód předpisu *na řádcích šablony práce. Kód předpisu je propojen s předpisem pro skladové místo a proto pomáhá zaručí, že je skladová práce zpracována na správném místě ve skladu. 
 
-Můžete určit dotaz pro řízení toho, kdy dojde k použití určité šablony práce. Můžete například nastavit omezení, aby určitá šablona mohla být použita pouze pro určitý sklad. Alternativně můžete mít více šablon, které se používají k vytvoření práce pro zpracování odchozí prodejní objednávky v závislosti na původu prodeje. Systém využívá **pořadové číslo** pole k určení šablony dostupné práce se hodnotí v uvedeném pořadí. Proto pokud máte velmi konkrétní dotaz pro určité pracovní šablonu, měli byste zadat nízká pořadové číslo. Tento dotaz bude poté vyhodnocen před ostatními obecnějšími dotazy. 
+Můžete určit dotaz pro řízení toho, kdy dojde k použití určité šablony práce. Můžete například nastavit omezení, aby určitá šablona mohla být použita pouze pro určitý sklad. Alternativně můžete mít více šablon, které se používají k vytvoření práce pro zpracování odchozí prodejní objednávky v závislosti na původu prodeje. Systém používá pole **Pořadové číslo** k určení pořadí, ve kterém jsou posuzovány šablony práce. Proto pokud máte velmi konkrétní dotaz na určitou šablonu práce, měli byste jí zadat nízké pořadové číslo. Tento dotaz bude poté vyhodnocen před ostatními obecnějšími dotazy. 
 
 Pokud chcete zastavit nebo pozastavit proces práce, můžete vybrat nastavení **Zastavit práci** na řádku práce. Pracovník, který provádí práci, v tomto případě nebude požádán o provedení dalšího kroku práce. Pokud se chcete přesunout na další krok, je třeba, aby tento nebo jiný pracovník práci znovu vybral. Můžete také oddělit úlohy v rámci práce pomocí jiného *ID třídy práce *na řádcích šablony práce.
 
@@ -56,7 +56,7 @@ Pro šablony práce lze nastavit dotaz, který určuje, kdy je použita konkrét
 
 Řádky směrnice umístění stanoví další omezení aplikace pravidel hledání místa. Můžete zadat minimální a maximální množství, na které má být směrnice použita, a můžete určit, zda bude směrnice použita pouze pro specifickou skladovou jednotku. Například pokud je měrná jednotka palety, zboží v paletách může být vložit na určité skladové místo. Můžete také určit, zda lze množství rozdělit na více umístění. Stejně jako záhlaví směrnic skladového místa má každý řádek směrnice místa pořadové číslo určující pořadí, ve kterém jsou řádky posuzovány. 
 
-Směrnice skladového místa mají další úroveň podrobností: *akce směrnice skladového místa*. Můžete určit více akcí směrnice skladového místa pro každý řádek. Ještě jednou pořadové číslo, které slouží k určení akce jsou posuzovány v uvedeném pořadí. Na této úrovni lze nastavit dotaz definovat jak najít nejlepší umístění ve skladu. Také můžete použít předdefinované nastavení **Strategie **a najít tak optimální skladové místo.
+Směrnice skladového místa mají další úroveň podrobností: *akce směrnice skladového místa*. Můžete určit více akcí směrnice skladového místa pro každý řádek. Pořadové číslo se znovu použije k určení pořadí, ve kterém jsou akce posuzovány. Na této úrovni můžete nastavit dotaz a definovat tak způsob vyhledání nejlepšího skladového místa ve skladu. Také můžete použít předdefinované nastavení **Strategie **a najít tak optimální skladové místo.
 
 ### <a name="example-of-the-use-of-location-directives"></a>Příklad použití směrnic skladového místa
 

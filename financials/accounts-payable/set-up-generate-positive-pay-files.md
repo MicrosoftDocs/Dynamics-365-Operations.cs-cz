@@ -34,7 +34,7 @@ Tento článek vysvětluje postup při nastavení kladných plateb a generován�
 Nastavte kladné platby pro generování elektronických seznamů šeků, které jsou dodávány bance. Poté při předložení šeku bance ho banka srovná se seznamem šeků. Pokud šek odpovídá tomu, co má banka má v záznamech v seznamu, banka jej zúčtuje. Pokud šek neodpovídá šeku v seznamu, banka předloží šek ke kontrole.
 
 ## <a name="security-for-positive-pay-files"></a>Zabezpečení pro soubory kladných plateb
-Soubory kladných plateb mohou obsahovat citlivé informace o příjemcích plateb a šekových částkách. Nezapomeňte tedy použít dostatečná opatření od doby vytvoření souborů do jejich přijetí do banky. Soubory kladných plateb budou staženy do umístění, které je zadáno ve webovém prohlížeči. Vzhledem k tomu, že pozitivní platební soubory mohou obsahovat citlivé informace, je důležité, aby pouze oprávnění uživatelé mají přístup ke generování a zobrazení těchto informací v 365 Microsoft Dynamics pro operace. V následující tabulce naleznete postup, jak určit potřebná oprávnění.
+Soubory kladných plateb mohou obsahovat citlivé informace o příjemcích plateb a šekových částkách. Nezapomeňte tedy použít dostatečná opatření od doby vytvoření souborů do jejich přijetí do banky. Soubory kladných plateb budou staženy do umístění, které je zadáno ve webovém prohlížeči. Vzhledem k tomu, že soubory kladných plateb mohou obsahovat důvěrné informace, je důležité, aby k vytváření a prohlížení těchto informací v aplikaci Microsoft Dynamics 365 for Operations měli přístup pouze oprávnění uživatelé. V následující tabulce naleznete postup, jak určit potřebná oprávnění.
 
 <table>
 <colgroup>
@@ -52,14 +52,14 @@ Soubory kladných plateb mohou obsahovat citlivé informace o příjemcích plat
 <td>Generování souborů kladných plateb na stránce se seznamem <strong>Bankovní účty</strong> nebo na stránce <strong>Bankovní účty</strong>.</td>
 <td><ul>
 <li><strong>Udržování informace o souborech kladných bankovních plateb</strong> (BankPositivePayProcess)</li>
-<li><strong>BankPositivePayExportEntityView</strong> (BankPositivePayExportEntityView)</li>
+<li><strong>NáhledSubjektuExportuKladnéBankovníPlatby</strong> (NáhledSubjektuExportuKladnéBankovníPlatby)</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Generování souborů kladných plateb pro více právnických osob a bankovních účtů na stránce <strong>Vygenerovat soubor kladných plateb</strong>.</td>
 <td><ul>
 <li><strong>Udržování informace o souborech kladných bankovních plateb</strong> (BankPositivePayProcess)</li>
-<li><strong>BankPositivePayExportEntityView</strong> (BankPositivePayExportEntityView)</li>
+<li><strong>NáhledSubjektuExportuKladnéBankovníPlatby</strong> (NáhledSubjektuExportuKladnéBankovníPlatby)</li>
 </ul></td>
 </tr>
 <tr class="odd">

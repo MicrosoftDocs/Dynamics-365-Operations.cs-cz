@@ -41,12 +41,12 @@ Funkce rozšířeného odsouhlasení banky umožňuje importovat bankovní výpi
     -   Tuto funkci lze rozšířit o jakýkoli formát.
 
 2.  Nastavte číselnou řadu pro použití rozšířeného odsouhlasení banky a definujte pravidla párování pro odsouhlasení banky.
-    -   Odpovídající pravidla vyrovnání je sada kritérií, která slouží k filtrování řádků bankovního výpisu a Microsoft Dynamics 365 pro bankovní operace řádky transakce během odsouhlasení. V závislosti na obchodních postupů můžete nastavit více než jedno pravidlo pro porovnávání k automatizaci a optimalizaci procesu odsouhlasení.
+    -   Odpovídající pravidlo odsouhlasení představuje sadu kritérií, které se používají k filtru řádků bankovního výpisu a řádků bankovních transakcí aplikace Microsoft Dynamics 365 for Operations během odsouhlasení. V závislosti na vašich obchodních praktikách můžete nastavit více než jedno pravidlo párování k automatizaci a optimalizaci vašeho procesu odsouhlasení.
 
-3.  Odsouhlaste bankovní výpisy s Dynamics 365 pro bankovní operace transakce.
+3.  Odsouhlaste bankovní výpisy s bankovními transakcemi aplikace Dynamics 365 for Operations.
     -   Proveďte automatické párování a vytvoření deníků odsouhlasení.
-    -   Zobrazení bankovních výpisů a 365 Dynamics pro bankovní operace transakce vedle sebe.
-    -   Pokud se objeví na bankovním výpisu, ale nejsou zobrazeny v 365 Dynamics pro operace automaticky účtovat Dynamics 365 pro bankovní operace transakce.
+    -   Prohlédněte si bankovní výpisy a bankovní transakce aplikace Dynamics 365 for Operations vedle sebe.
+    -   Automaticky zaúčtujte bankovní transakce aplikace Dynamics 365 for Operations, pokud se zobrazí na bankovním výpisu, ale nezobrazí v aplikaci Dynamics 365 for Operations.
     -   Generujte výkaz odsouhlasení.
 
 

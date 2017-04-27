@@ -33,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 Do aplikace Microsoft Dynamics AX 7.0.1 (aktualizace z května 2016) je zavedena nová zásada práce ve skladu. Tato pracovní zásada řídí, zda je vytvořena práce skladu pro procesy skladu při výrobě.
 
-Tato pracovní zásada řídí, zda je vytvořena práce skladu pro procesy skladu při výrobě. Zásadu práce můžete nastavit použitím kombinace **typů pracovního příkazu**, **skladového místa**a **produktu**. Produkt, který je vykazován L0101 bylo dokončeno k umístění výstupu 001. Hotového výrobku je později spotřebována v jiné výrobní zakázky v místě výstupu 001. V tomto případě nastavením zásad práce Chcete-li zabránit práce pro zaskladnění hotových výrobků při hlášení produktu L0101 jako dokončené do umístění výstupu 001. Zásady práce označují individuální entitu, kterou lze popsat pomocí následujících informací:
+Tato pracovní zásada řídí, zda je vytvořena práce skladu pro procesy skladu při výrobě. Zásadu práce můžete nastavit použitím kombinace **typů pracovního příkazu**, **skladového místa**a **produktu**. Například produkt L0101 je vykazován jako dokončený na umístění výstupu 001. Hotového výrobek je později spotřebován v jiné výrobní zakázce v umístění výstupu 001. V tomto případě můžete nastavením pracovní zásady zabránit vytvoření práce pro zaskladnění hotových výrobků, když nahlásíte produkt L0101 jako dokončený v umístění výstupu 001. Zásady práce označují individuální entitu, kterou lze popsat pomocí následujících informací:
 
 -   **Název pracovní zásady **(jedinečný identifikátor pracovní zásady)
 -   **Typy pracovních činností **a** způsob vytvoření práce**
@@ -58,7 +58,7 @@ Můžete vybrat produkt, na který se pracovní zásada vztahuje. Zásadu práce
 ## <a name="example"></a>Příklad
 V následujícím příkladu jsou dvě výrobní zakázky, PRD-001 a PRD-00*2*. Výrobní zakázka PRD-001 má operaci s názvem **Sestavení**, kde produkt SC1 je hlášen jako dokončený v místě O1. Výrobní zakázka PRD-002 má operaci, která se nazývá **Lakování** a spotřebovává produkt SC1 z umístění O1. Výrobní zakázka PRD-002 také spotřebovává suroviny RM1 z umístění O1. RM1 je uložen ve skladu BULK-001 a bude vyskladněno v umístění O1 během práce ve skladu pro výdej surovin. Pro uvolnění výroby PRD-002 je generována práce vyskladnění. 
 
-[![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
+[![Zásady práce ve skladu](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
 
 Při plánování konfigurace zásad práce ve skladu pro tento scénář je třeba zvážit následujících informace:
 
@@ -69,12 +69,12 @@ Toto je příklad zásad práce, které můžete nastavit na základě těchto d
 
 |                                         |                                                       |
 |-----------------------------------------|-------------------------------------------------------|
-|**Work policy name**<br>                 |**Work order types**<br>                               |
-| Zaskladnění 01' č                    |-Dokončená zaskladnění<br>                           |
-|                                         |**Locations**<br>                                      |
-|                                         |-O1   |                                               |
-|                                         |**Products** <br>                                      |
-|                                         |-SC1                                                  |
+|**Název pracovní zásady**<br>                 |**Typy pořadí pracovních činností**<br>                               |
+| Bez zaskladnění 01     `                    |- Zaskladnění dokončeného výrobku<br>                           |
+|                                         |**Umístění**<br>                                      |
+|                                         |- O1   |                                               |
+|                                         |**Produkty** <br>                                      |
+|                                         |- SC1                                                  |
 
 Následující procedury obsahují podrobné pokyny ke způsobu nastavení zásad pracovního skladu pro tento scénář. Je popsána také ukázka nastavení, která uvádí, jak vykázat výrobní zakázku jako dokončenou v místě, které nemá licenční kód.
 

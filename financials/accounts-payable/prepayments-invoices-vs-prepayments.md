@@ -50,9 +50,9 @@ Organizace může vydávat zálohy (zálohové platby) dodavatelům za zboží n
 1.  Nastavte účetní profily pro zálohy.
 2.  V části Parametry pohledávek a Parametry závazků pod položkou **Hlavní kniha a DPH** vyberte nový účetní profil pomocí parametru **Účetní profil pro deník plateb se zálohou**.
 3.  Vytvořte deník plateb a potom vytvořte novou platbu.
-4.  Můžete platbu označit jako zálohu. Platba je označena jako záloha, platba se zaúčtuje na účty hlavní knihy, které jsou definovány na účetní profil, který jste vytvořili v krocích 1 a 2. Navíc pokud je platba je označena jako záloha, budou daně vypočítány. Některé úřady vyžadují zaplacení daní při zaznamenání zálohy, a to i v případě, že není k dispozici faktura.
+4.  Můžete platbu označit jako zálohu. Pokud je platba označena jako záloha, bude platba zaúčtována do účtů hlavní knihy, které jsou definovány v účetním profilu, který nastavíte podle kroku 1 a 2. Dále platí, že pokud je platba označena jako záloha, budou vypočteny daně. Některé úřady vyžadují zaplacení daní při zaznamenání zálohy, a to i v případě, že není k dispozici faktura.
 5.  Zaúčtujte zálohu.
-6.  Volitelné: Můžete vyrovnat zálohy proti nákupní objednávka nebo prodejní objednávce před vytvořením faktury. Prodejní objednávky nebo nákupní objednávky stránky, v podokně akcí pomocí **vyrovnat transakce**.
+6.  Volitelné: Zálohu můžete před vytvořením faktury vyrovnat proti nákupní objednávce nebo prodejní objednávce. Na stránce prodejní nebo nákupní objednávky v podokně akcí použijte možnost **Vyrovnat transakce**.
 7.  Jakmile dodavatel dodá zboží nebo služby, fakturu zaznamenejte. Pokud jste v kroku 6 vyrovnali zálohu oproti nákupní objednávce nebo prodejní objednávce, záloha se automaticky vyrovná oproti faktuře, kterou jste vytvořili. Pokud záloha nebyla vyrovnána oproti nákupní objednávce nebo prodejní objednávce, můžete ji ručně vyrovnat oproti faktuře s použitím možnosti **Vyrovnat transakce** na stránce odběratele nebo dodavatele. Částka zálohy je potom dočasně stornována z účtu hlavní knihy závazků/pohledávek. Dále pokud byly vypočteny daně, jsou stornovány, protože faktura obsahuje skutečné daně.
 
 ## <a name="overview-of-the-prepayment-invoicing-process"></a>Přehled procesu fakturace záloh

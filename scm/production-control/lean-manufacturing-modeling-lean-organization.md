@@ -1,5 +1,5 @@
 ---
-title: "Modelování štíhlé organizace"
+title: "Modelování úsporné organizace"
 description: "Tento článek obsahuje informace o klíčových konceptech pro modelování úsporné organizace."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="modeling-a-lean-organization"></a>Modelování štíhlé organizace
+# <a name="modeling-a-lean-organization"></a>Modelování úsporné organizace
 
 Tento článek obsahuje informace o klíčových konceptech pro modelování úsporné organizace. 
 
@@ -35,7 +35,7 @@ Obvykle je scénář lean manufacturingu více než kolekce nesouvisejících ka
 ## <a name="production-flows-in-lean-manufacturing"></a>Výrobní toky v lean manufacturingu
 Ve scénářích výroby založených na výrobních zakázkách je materiálu vydáván konkrétní výrobní zakázce. Během sekvence operací založených na kusovníku (BOM) a postupech, jsou produkty vytvořeny a nakonec přijímány v zadaném umístění. Doba propustnosti výrobních zakázek se liší od minut po týdny. Všechny související náklady, materiál a práce jsou shromážděny ve výrobní zakázce. Ke snížení doby realizace dodávky a nadbytečných zásob mezi pracovními středisky, které jsou způsobené výrobními dávkami, zavádí lean manufacturing doplnění kanbanu a supermarkety ve výrobě a doplnění skladu. Tyto prvky obvykle naruší výrobu částečně nezávislých kanbanových cyklů. Doplnění kanbanu pro polotovar již není aktivováno objednávkou hotového výrobku. Chcete-li znovu vytvořit kontext výroby a nákladů pro různé scénáře kanbanu navržených v aplikaci Microsoft Dynamics AX, výrobní toky na základě aktivity jsou vkládány jako základní stavební prvky lean manufacturingu. Všechna kanbanová pravidla naleznete v této předdefinované struktuře. Model založený na aktivitách podporuje širší škálu scénářů, než tomu bylo v předchozích verzích Lean manufacturingu aplikace Dynamics AX. Avšak tento model nezvyšuje náročnost pro dílenské pracovníky, protože všechny scénáře používají stejné uživatelské rozhraní založené na aktivitách.
 
-## <a name="semifinished-products-nonbom-levels"></a>Semifinished produkty (nonBOM úrovní)
+## <a name="semifinished-products-nonbom-levels"></a>Polotovary (jiné úrovně než Kusovník)
 Lean manufacturing pro aplikaci Dynamics AX integruje kanbany pro produkty na skladě a polotovary v jednom rámci, tudíž nabízí ve všech případech sjednocené uživatelské prostředí. Díky této architektuře není třeba zavádět další úrovně kusovníku, aby bylo možné použít kanbany pro polotovary. Tato architektura také umožňuje omezit skladové transakce na minimum.
 
 ## <a name="products-and-material-in-work-in-progress"></a>Produkty a materiál u nedokončené výroby
@@ -51,6 +51,6 @@ Periodická konsolidace nákladů pro výrobní tok vyrovnává související ú
 Pro lepší podporu souvislého zlepšování, jsou implementovány výrobní toky v aktuálně platné verzi. Proto stávající verzi výrobního toku společně se všemi souvisejícími kanbanovými pravidly lze zkopírovat do budoucí verze výrobního toku. Navíc výrobní tok budoucího stavu lze modelovat předtím, než bude ověřen a aktivován pro výrobu. Existující kanbany ze starších verzí výrobního toku jsou automaticky přiřazeny k nové verzi, což zajišťuje bezproblémový tok materiálu k datu převodu i po něm.
 
 ## <a name="simplicity"></a>Jednoduchost
-K provedení pro Dynamics AX Lean manufacturing jsme volba výrobní tok a aktivity přístupu umožňující výrobu jednoduché i složité scénáře v jednom škálovatelná architektura modelovat. Bližší pohled na koncept aktivity odhalí nové jednoduché pro uživatele, kteří ji potřebují: dílny a pracovníky logistiky. Vykazování prací na základě neaktivity namísto skladových transakcí, přesune sjednocené uživatelské rozhraní pro všechny varianty lean manufacturingu složitost obchodu z uživatelského rozhraní tam, kam patří: výrobní tok jako základní stavební prvek lean manufacturingu..
+K nasazení Lean Manufacturingu pro aplikaci Microsoft Dynamics AX jsme zvolili přístup k výrobnímu toku a aktivitám, který umožňuje modelování jednoduchých a složitých scénářů výroby do jedné škálovatelné architektury. Podrobnější pohled na koncept aktivity odhaluje nové zjednodušení pro uživatele, kteří to opravdu potřebují: dílenské vedoucí a zaměstnance logistiky. Vykazování prací na základě neaktivity namísto skladových transakcí, přesune sjednocené uživatelské rozhraní pro všechny varianty lean manufacturingu složitost obchodu z uživatelského rozhraní tam, kam patří: výrobní tok jako základní stavební prvek lean manufacturingu..
 
 

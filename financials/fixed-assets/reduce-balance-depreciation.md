@@ -1,5 +1,5 @@
 ---
-title: "Odpisování snížení"
+title: "Degresivní odpis"
 description: "Tento článek poskytuje přehled o metodě degresivního odpisování."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reduce-balance-depreciation"></a>Odpisování snížení
+# <a name="reduce-balance-depreciation"></a>Degresivní odpis
 
 [!include[banner](../includes/banner.md)]
 
@@ -60,7 +60,7 @@ Když například zvolíte Ročně, roční odpisy se zaúčtují pouze jednou �
 
 ### <a name="fiscal"></a>Fiskální
 
-Zaškrtnete-li v poli Odpisový rok volbu Fiskální, použije se metoda lineárního odpisu. Vypočítává se na základě fiskálního roku, který je nastaven na stránce Fiskální kalendáře, pro fiskální kalendář vybraný na stránce Hlavní kniha. Například pro fiskální rok 1. července až 30. června, výpočet odpisů začíná datem 1. Fiskální rok může být delší nebo kratší než 12 měsíců. Odpisy se upravují pro jednotlivá fiskální období. Délka dalšího fiskálního roku vychází z fiskálních období nastavených při vytváření nového fiskálního roku na stránce Fiskální kalendáře.
+Zaškrtnete-li v poli Odpisový rok volbu Fiskální, použije se metoda lineárního odpisu. Vypočítává se na základě fiskálního roku, který je nastaven na stránce Fiskální kalendáře, pro fiskální kalendář vybraný na stránce Hlavní kniha. Například pro fiskální rok od 1. července do 30. června začíná výpočet odpisů datem 1. července. Fiskální rok může být delší nebo kratší než 12 měsíců. Odpisy se upravují pro jednotlivá fiskální období. Délka dalšího fiskálního roku vychází z fiskálních období nastavených při vytváření nového fiskálního roku na stránce Fiskální kalendáře.
 
 
 Vyberete-li Fiskální, v poli Frekvence období jsou k dispozici následující možnosti:

@@ -39,7 +39,7 @@ V poli **Odpisový rok** na stránce **Odpisové plány** můžete vybrat buď *
 
 ### <a name="calendar"></a>Kalendář
 
-Vyberete-li **kalendář** v ***Odpisový rok*** pole, rok od 1 do 31. prosince se předpokládá, i když jste definovali fiskální kalendář jinak. Možnost **Kalendářní** aktualizuje odpisovou základnu 1. ledna každého roku. Odpisová základna je obvykle zůstatková účetní hodnota mínus likvidační hodnota. V níže uvedených příkladech této kapitoly je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. Vyberete-li jako odpisový rok možnost **Kalendář**, v poli **Frekvence období** jsou k dispozici následující možnosti:
+Pokud v poli **Rok odpisu** vyberete ***Kalendářní***, bude předpokládán rok od 1. ledna do 31. prosince, a to i v případě, že jste definovali fiskální kalendář odlišně. Možnost **Kalendářní** aktualizuje odpisovou základnu 1. ledna každého roku. Odpisová základna je obvykle zůstatková účetní hodnota mínus likvidační hodnota. V níže uvedených příkladech této kapitoly je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. Vyberete-li jako odpisový rok možnost **Kalendář**, v poli **Frekvence období** jsou k dispozici následující možnosti:
 
 -   Možnost **Ročně** provede zaúčtování 31. prosince.
 -   **Měsíčně** provádí zaúčtování měsíčně na konci každého kalendářního měsíce.
@@ -51,7 +51,7 @@ Když například zvolíte **Ročně**, roční odpisy se zaúčtují pouze jedn
 
 ### <a name="fiscal"></a>Fiskální
 
-Pokud vyberete možnost **Fiskální** v poli **Odpisový rok**, bude použita metoda zbývajícího lineárního odpisu. Odpis je založen na zbývajících fiskální rocích. Například pro fiskální rok 1 červenec 2015, přes 30 červen 2016 výpočtu odpisů začíná datem 1. Fiskální rok může být delší nebo kratší než 12 měsíců. Odpisy se upravují pro jednotlivá fiskální období. Délka dalšího fiskálního roku záleží na nastavení fiskálního období na stránce **Fiskální kalendáře**. Vyberete-li jako odpisový rok možnost **Fiskální**, v poli **Frekvence období** jsou k dispozici následující možnosti:
+Pokud vyberete možnost **Fiskální** v poli **Odpisový rok**, bude použita metoda zbývajícího lineárního odpisu. Odpis je založen na zbývajících fiskální rocích. Například pro fiskální rok od 1. července 2015 do 30. června 2016 začíná výpočet odpisů datem 1. července. Fiskální rok může být delší nebo kratší než 12 měsíců. Odpisy se upravují pro jednotlivá fiskální období. Délka dalšího fiskálního roku záleží na nastavení fiskálního období na stránce **Fiskální kalendáře**. Vyberete-li jako odpisový rok možnost **Fiskální**, v poli **Frekvence období** jsou k dispozici následující možnosti:
 
 -   Možnost **Ročně** zaúčtuje celkovou částku odpisu vypočteného pro fiskální rok jako jednu částku poslední den fiskálního roku.
 -   **Fiskální období **vypočte celkovou částku odpisu pro fiskální rok. Tato částka se rozloží do fiskálních období, která jsou definována na stránce **Fiskální kalendáře** nebo pro fiskální kalendář uvedený pro knihu.

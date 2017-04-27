@@ -1,6 +1,6 @@
 ---
-title: "Maloobchodní periferní simulátor"
-description: "Toto téma popisuje periferní simulátor nástroj, který je součástí Microsoft Dynamics 365 pro operace - Retail."
+title: "Periferní simulátor pro maloobchod"
+description: "Toto téma popisuje nástroj pro periferní simulaci, který je součástí Microsoft Dynamics 365 for Operations - Retail."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 266544
 ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5
 ms.search.region: global
@@ -25,53 +25,53 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="retail-peripheral-simulator"></a>Maloobchodní periferní simulátor
+# <a name="retail-peripheral-simulator"></a>Periferní simulátor pro maloobchod
 
 [!include[banner](includes/banner.md)]
 
 
-Toto téma popisuje periferní simulátor nástroj, který je součástí Microsoft Dynamics 365 pro operace - Retail.
+Toto téma popisuje nástroj pro periferní simulaci, který je součástí Microsoft Dynamics 365 for Operations - Retail.
 
 <a name="overview"></a>Přehled
 --------
 
-365 Microsoft Dynamics pro operace - maloobchodní periferní simulátor je nástroj, který pomáhá vytvořit, testovat a Poradce při potížích s periferními zařízeními, které se používají v prostředí maloobchodu. Periferní simulátor můžete zjednodušit testování maloobchodní periferní zařízení a izolovat problémy, které jsou způsobeny nesprávnou instalací nebo nefunkční ovladače zařízení. Stolní program, který nabízí virtuální verze zařízení že 365 Dynamics pro operace zahrnuje periferní simulátor - maloobchod podporuje. Oddíl pro každý virtuální počítač zobrazuje interakce mezi zařízením a maloobchodní místa prodeje (POS). Lze je také použít poskytovat vstup, který je platný pro různé scénáře POS. Simulátor periferní podporuje interakci mezi POS a následující virtuální zařízení:
+Periferní simulátor pro Microsoft Dynamics 365 for Operations - Retail je nástroj, který pomáhá nastavit, testovat a řešit potíže s periferními zařízeními, která se používají v maloobchodním prostředí. Tento simulátor můžete používat pro usnadnění testování periferních zařízení v maloobchodě a k izolaci problémů způsobených nesprávně nastavených nebo chybně fungujících ovladačů zařízení. Simulátor zahrnuje program pro stolní počítače, který nabízí virtuální verze zařízení, která Dynamics 365 for Operations - Retail podporuje. Oddíl pro každé virtuální zařízení zobrazuje interakce mezi zařízením a maloobchodním pokladním místem (POS). Můžete ho také použít k zadáním vstupu, který je platný pro různé scénáře POS. Periferní simulátor podporuje interakci mezi POS a následujícími virtuálními zařízeními:
 
--   **Tiskárny** – periferní simulátor můžete zobrazit příjmy, které jsou nakonfigurovány pro tiskárnu POS.
--   **Řádek zobrazení** – můžete nakonfigurovat virtuální Řádkový displej na fyzické řádku zobrazení zobrazit aktivity.
--   **Čtečka magnetického proužku (MSR)** – POS můžete odeslat události simulované magnetického proužku z periferní simulátor.
--   **Zásobník na** – můžete simulovat fyzikální hotovostí.
--   **Zásobník 2** – nastavením druhou zásuvku v periferní simulátor můžete simulovat scénáře zahrnující jeden Pokladna POS, který byl aktivní na dvě směny.
--   **Skener** – virtuální čárový kód skener, který podporuje periferní simulátor mohou vystavovat události skenování čárového kódu.
--   **Měřítko** – virtuální měřítko umožňuje simulovat působení zvážené položky POS.
--   **Osobní identifikační číslo (PIN) pad** – můžete simulovat PIN pad operací. **Poznámka:** musí implementovat podporu pro fyzické klávesnice pro kód PIN do konektoru platby.
--   **Zaznamenání podpisu** – periferní simulátor zahrnuje zařízení pro digitalizaci virtuální podpis, který lze nastavit na zobrazení výzvy pro podpisy, které jsou požadovány pro některé nabídky, například platby s účtem zákazníka.
+-   **Tiskárna** – periferní simulátor může zobrazit příjemky, které jsou nakonfigurovány pro tiskárnu POS.
+-   **Řádek zobrazení** – můžete nakonfigurovat virtuální displej linky, který zobrazuje aktivitu na displeji fyzické linky.
+-   **Čtečka magnetického proužku (MSR)** – Do POS můžete odesílat simulované události magnetického proužku z periferního simulátoru.
+-   **Zásuvka** – můžete simulovat fyzickou zásuvku na pokladní hotovost.
+-   **Zásuvka 2** – nastavením druhé zásuvky na hotovost v periferním simulátoru můžete simulovat scénáře zahrnující jeden registr POS, který je aktivní pro dvě směny.
+-   **Skener** – virtuální skener čárových kódů, který podporuje periferní simulátor, může vystavovat události skenování čárového kódu.
+-   **Váha** – virtuální váha umožňuje simulovat interakci vážených položky s POS.
+-   **Klávesnice pro osobní identifikační číslo (PIN)** – můžete simulovat operace klávesnice pro zadání PIN. **Poznámka:** Musíte implementovat podporu pro fyzickou klávesnici pro kód PIN prostřednictvím konektoru platby.
+-   **Zaznamenání podpisu** – periferní simulátor zahrnuje zařízení pro záznam virtuálního podpisu, které lze nastavit na zobrazení výzvy pro podpisy, které jsou požadovány pro některé nabídky, například platby z účtu zákazníka.
 
-Periferní simulátor můžete použít také pro simulaci klávesnice wedge události, které pocházejí z čtečka čárového kódu a MSR. Virtuální simulátor periferní konkrétně podporuje propojování a vkládání objektů pro Retail POS (OPOS) zařízení.
+Periferní simulátor můžete použít také pro simulaci události platebního terminálu klávesnice, které pocházejí z čtečky čárového kódu a MSR. Virtuální periferní simulátor konkrétně podporuje propojování a vkládání objektů pro zařízení Retail POS (OPOS).
 
-## <a name="key-scenarios"></a>Klíčové scénáře
+## <a name="key-scenarios"></a>Základní scénáře
 ### <a name="troubleshooting"></a>Řešení potíží
 
-Periferní simulátor slouží k odstraňování problémů při instalaci zařízení. Pokud nemáte periferní simulátor nebo druhé zařízení stejného druhu, může být obtížné určit, kde problémy pocházejí. Však pokud máte periferní simulátor, můžete nastavit virtuální zařízení a spustit stejný kód cesty a obchodní logiky, které se používají pro fyzické zařízení. Hlavní rozdíl mezi virtuální a fyzické zařízení z hlediska periferní simulátor je objekt služby nebo ovladače zařízení. Fyzické zařízení, pro objekt služby poskytované výrobcem zařízení. Naopak periferní simulátor objekty služby jsou poskytovány jako součást periferní simulátor. Při periferní simulátor pracuje správně, pokud zařízení nepracuje správně, po změně názvu zařízení v hardwarovém profilu název skutečné zařízení, lze předpokládat, že je problém s objekt služby poskytované výrobcem.
+Periferní simulátor můžete použít k odstraňování problémů s instalací zařízení. Pokud nemáte periferní simulátor nebo druhé zařízení stejného druhu, může být obtížné určit, odkud problémy pocházejí. Pokud však máte periferní simulátor, můžete nastavit virtuální zařízení a spustit stejné cesty kódu cesty a obchodní logiky, které se používají pro fyzické zařízení. Z pohledu periferního simulátoru spočívá hlavní rozdíl mezi virtuálními a fyzickými zařízeními v objektu služby nebo ovladači zařízení. Pro fyzická zařízení poskytuje objekt služby výrobce zařízení. Naopak pro periferní simulátor jsou objekty služby poskytovány jako součást periferního simulátoru. Když periferní simulátor pracuje správně a zařízení nepracuje správně po změně názvu zařízení v hardwarovém profilu na název skutečného zařízení, lze předpokládat, že je problém s objektem služby poskytnutém výrobcem.
 
 ### <a name="training"></a>Školení
 
-Periferní simulátor lze přidat realistické vrstvu na pokladníka, vzdělávání, když není k dispozici nastavení fyzického hardwaru. Při periferní simulátor je součástí přípravy scénáře, pokladník efektivněji pracovat s POS poskytnutím vstup například produkt bar kód kontroly a dárkové karty swipes a pozorováním příjmy jsou vytištěny pro určitou transakci.
+Periferní simulátor můžete použít k přidání realistické vrstvy ke školení pokladníka, když není k dispozici nastavení fyzického hardwaru. Když je periferní simulátor součástí scénářů školení, může pokladník efektivněji pracovat s POS poskytnutím vstupu, jako jsou skeny kódu produktu čárového kódu a projetí dárkové karty, a sledováním, které příjemky se pro konkrétní transakci vytisknou.
 
 ### <a name="testing"></a>Testování
 
-Periferní simulátor můžete vyzkoušet produkt čárových kódů, formáty účtenek a podobně, aniž by museli instalovat fyzický hardware ve virtuálním prostředí. Změny provedené v back office můžete otestovat rychleji, protože fyzický hardware není nutné a nemusíte nasazení POS klienta na hardware stanice nebo fyzického počítače.
+Periferní simulátor můžete použít k testování čárových kódů, formátů účtenek a podobně, aniž byste museli instalovat fyzický hardware ve virtuálním prostředí. Protože není požadován fyzický hardware a nemusíte nasazovat klienta POS do hardware stanice nebo fyzického počítače, můžete rychleji otestovat změny provedené v účetním systému.
 
-## <a name="set-up-the-peripheral-simulator"></a>Nastavení periferních simulátor
-### <a name="set-up-a-hardware-profile"></a>Nastavení profilů hardwaru
+## <a name="set-up-the-peripheral-simulator"></a>Nastavení periferního simulátoru
+### <a name="set-up-a-hardware-profile"></a>Nastavení profilu hardwaru
 
-1.  Periferní simulátor nastavení, přejděte na **maloobchodní a commerce**&gt;**nastavení kanálu**&gt;**instalace POS**&gt;**profily POS**&gt;**hardwarové profily**.
-2.  Chcete-li vytvořit nový profil, klepněte na **nové**.
-3.  Zadejte hodnoty do **číslo profilu** a **popis** pole.
-4.  Chcete-li nastavit virtuální zařízení, které musí být testovány pomocí následující tabulky. Zde je vysvětlení sloupců v tabulce:
-    -   **Zařízení** – tento sloupec obsahuje název záložku s náhledem, rozbalte nastavení zařízení.
-    -   **Typ zařízení** – tento sloupec obsahuje hodnotu, kterou jste vybrali v poli, který je označen název zařízení.
-    -   **Název zařízení** – tento sloupec udává přesnou hodnotu, kterou zadáte pro název zařízení. **Důležité:** názvy zařízení, které jsou zde uvedeny jsou požadovány, protože hardware stanice používá tyto konkrétní názvy zařízení řeší. Pokud nepoužíváte tyto konkrétní názvy, nebude možné zařízení použít.
+1.  Při nastavování periferního simulátoru přejděte na **Maloobchodní a velkoobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Profily hardwaru**.
+2.  Pokud chcete vytvořit nový profil, klikněte na **Nový**.
+3.  Zadejte hodnoty do polí **Číslo profilu** a **Popis**.
+4.  Chcete-li nastavit virtuální zařízení, která musí být testována, použijte následující tabulku. V tomto poli jsou vysvětleny sloupce v tabulce:
+    -   **Zařízení** – tento sloupec obsahuje název pevné záložky, kterou rozbalíte pro nastavení zařízení.
+    -   **Typ zařízení** – tento sloupec obsahuje hodnotu, kterou jste vybrali v poli označeném názvem zařízení.
+    -   **Název zařízení** – tento sloupec udává přesnou hodnotu, kterou zadáte pro název zařízení. **Důležité:** názvy zařízení, které jsou zde uvedeny jsou požadovány, protože hardwarová stanice používá tyto konkrétní názvy k adresování zařízení. Pokud nepoužíváte tyto konkrétní názvy, nebude možné zařízení použít.
 
     | Zařízení            | Typ zařízení | Název zařízení              |
     |-------------------|-------------|--------------------------|
@@ -85,122 +85,122 @@ Periferní simulátor můžete vyzkoušet produkt čárových kódů, formáty �
     | klávesnice pro kód PIN           | OPOS        | MockOPOSPinPad           |
     | Zaznamenání podpisu | OPOS        | MockOPOSSignatureCapture |
 
-**Poznámka:** žádné zvláštní nastavení v profilu hardwaru je požadováno pro simulaci klávesnice wedge události ze skeneru čárového kódu a MSR.
+**Poznámka:** Žádné zvláštní nastavení v profilu hardwaru není požadováno pro simulaci akcí klávesnice ze skeneru čárového kódu a MSR.
 
-### <a name="assign-the-hardware-profile-to-a-register"></a>Přiřazení profilu hardwaru k rejstříku
+### <a name="assign-the-hardware-profile-to-a-register"></a>Přiřazení profilu hardwaru k pokladně
 
-1.  Po vytvoření hardwarového profilu, přejděte na **maloobchodní a commerce**&gt;**nastavení kanálu**&gt;**instalace POS**&gt;**registruje**.
-2.  V **Registry POS** seznam, klepněte na odkaz v **číslo žurnálu** pole pro registr, který by měl použít periferní simulátor.
+1.  Po vytvoření hardwarového profilu přejděte na **Maloobchodní a velkoobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Registry**.
+2.  V seznamu **Registry POS** klikněte na odkaz v poli **Číslo registru** pro registr, který by měl použít periferní simulátor.
 3.  Klikněte na možnost **Upravit**.
-4.  V **profily** oddílu **hardwarový profil** vyberte hardwarový profil, který jste vytvořili virtuální příslušenství.
-5.  Click **Save**.
+4.  V části **Profily** v poli **Hardwarový profil** vyberte hardwarový profil, který jste vytvořili pro virtuální příslušenství.
+5.  Klikněte na možnost **Uložit**.
 
-### <a name="synchronize-changes-to-the-channel-database"></a>Synchronizovat změny databáze kanálu
+### <a name="synchronize-changes-to-the-channel-database"></a>Synchronizace změn do databáze kanálu
 
-1.  Přejít na **maloobchodní a commerce**&gt;**Retail IT**&gt;**plán distribuce**.
-2.  Vyberte **1090** plán distribuce.
-3.  Klepněte na tlačítko **nyní spustit** Chcete-li synchronizovat změny v POS.
+1.  Přejděte do nabídky **Maloobchodní a velkoobchodní prodej** &gt; **Maloobchodní IT** &gt; **Distribuční plán**.
+2.  Vyberte plán distribuce **1090**.
+3.  Klepněte na tlačítko **Spustit**, chcete-li synchronizovat změny v POS.
 
-Po synchronizaci dat jsou k dispozici v databázi kanálu nového hardwarového profilu a změny v registru.
+Po synchronizaci dat jsou k dispozici nový profil hardwaru a změny v registru v databázi kanálu.
 
-## <a name="install-the-peripheral-simulator"></a>Instalace periferních simulátor
-1.  Přejít na **maloobchodní a commerce**&gt;**nastavení kanálu**&gt;**instalace POS**&gt;**profily POS**&gt;**hardwarové profily**.
-2.  Klepněte na tlačítko **Stáhnout**a potom klepněte na **PeripheralSimulator**. **Poznámka:**, musíte vypnout blokování automaticky otevíraných před stažením periferní simulátor.
-3.  Po dokončení stahování otevřete **stažení** složky a poklepejte na **VirtualPeripherals.msi** Chcete-li spustit instalační program.
-4.  Instalace periferních simulátor s použitím výchozího nastavení.
+## <a name="install-the-peripheral-simulator"></a>Instalace periferního simulátoru
+1.  Přejděte na **Maloobchodní a velkoobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Hardwarové profily**.
+2.  Klepněte na tlačítko **Stáhnout**a potom klepněte na **PeripheralSimulator**. **Poznámka:** Musíte vypnout blokování automaticky otevíraných oken před stažením periferního simulátoru.
+3.  Po dokončení stahování otevřete složku **Stažené soubory** složky a poklepejte na **VirtualPeripherals.msi** ke spuštění instalačního programu.
+4.  Nainstalujte periferní simulátor pomocí výchozího nastavení.
 
-Kromě okrajových simulátor je třeba nainstalovat objekty společných ovládacích prvků z Monroe konzultaci služby. V opačném případě se periferní simulátor nebudou pracovat správně. Chcete-li stáhnout objekty společných ovládacích prvků, přejděte na <http://monroecs.com/oposccos_current.htm>.
+Kromě periferního simulátoru je třeba nainstalovat objekty společných ovládacích prvků ze služby Monroe Consulting Services. V opačném případě nebude periferní simulátor pracovat správně. Chcete-li stáhnout objekty společných ovládacích prvků, přejděte na <http://monroecs.com/oposccos_current.htm>.
 
-## <a name="using-the-peripheral-simulator"></a>Pomocí simulátoru periferní
-Periferní simulátor spustíte klepnutím na **spuštění** v počítači, zadejte **maloobchodní periferní simulátor**a když se objeví ve výsledcích hledání vyberte aplikace. Po spuštění simulátoru periferní klepnutím na název zařízení, viz podporované zařízení. Tato zařízení se zobrazí jako karty na levé straně okna. Chcete-li zobrazit určité zařízení, klepněte na kartu pro dané zařízení.
+## <a name="using-the-peripheral-simulator"></a>Použití periferního simulátoru
+Periferní simulátor spustíte kliknutím na **Start** v počítači, zadejte **Maloobchodní periferní simulátor** a pak vyberte aplikaci, když se objeví ve výsledcích hledání. Po spuštění periferního simulátoru klikněte na název zařízení k zobrazení podporovaných zařízení. Tato zařízení se zobrazí jako karty na levé straně okna. Chcete-li zobrazit určité zařízení, klepněte na kartu pro dané zařízení.
 
-### <a name="line-display-capabilities"></a>Možnosti zobrazení řádku
+### <a name="line-display-capabilities"></a>Možnosti řádkového displeje
 
-Zobrazení řádku je první zařízení, které je uvedeno v periferní simulátor. Při konfiguraci virtuální Řádkový displej zobrazuje řádek položky jako jsou prohledány v POS transakcí. Vedle položky řádku jsou zobrazeny celkem, která je splatná při výběru nabídky v POS. Také ukazuje, splatné saldo pokud nabídka je zadána, ale zůstatek je stále splatnosti transakce. Pokud POS není používán, může být zobrazeno zprávu označíte, že uzavření pokladny. Zprávy, musíte nakonfigurovat na **řádek zobrazení** s náhledem v hardwarovém profilu.
+Zobrazení řádku je první zařízení, které je uvedeno jako periferní simulátor. Když je nakonfigurován displej virtuálního řádku, ukazuje položky řádky, jak jsou naskenovány v transakci POS. Vedle položek řádku se zobrazuje součet, který je splatný při výběru výběrového řízení v POS. Také se ukazuje, splatný zůstatek v případě, že je nabídka je zadána, ale zůstatek je pro transakci stále splatný. Pokud POS není používán, může se zobrazit zpráva, že je že uzavřena pokladna. Zprávu musíte nakonfigurovat na kartě **Zobrazení řádku** v profilu hardwaru.
 
-### <a name="cash-drawer-capabilities"></a>Funkce pokladní zásuvky
+### <a name="cash-drawer-capabilities"></a>Schopnosti zásuvky s hotovostí
 
-Zásuvku je druhé uvedené v simulátoru periferní zařízení. Pokud hardwarový profil konfigurován pro použití virtuální zásuvky, POS Otevře zásuvku pro aktivní posun v reakci na zásuvku operace, jako jsou výkazy úhrad a tak, aby Pokladník může změnit nebo vkladu hotovosti během standardní cash-and-carry transakcí. Virtuální zásuvky mají popisky **hlavní zásuvky** a **sekundární zásobník**. Tyto popisky představují zásuvky a zásuvku 2 v hardwarovém profilu. Při zavření šuplíku obrázku uzavřené hotovostí a tlačítko na uzavřené hotovostí je označen **otevřít zásuvku**. Pokud klepnete na toto tlačítko obrázek nahrazen obraz otevřít zásuvku zásuvky je nyní otevřít. Tlačítko na Otevřít zásuvku je označen **zavřít zásuvku**. Chcete-li otevřít zásuvku může způsobit několik operací v POS. Většina operací nemůže pokračovat v otevřeném hotovostí. Výjimkou jsou některé postupy koncový den. Pokud POS uživatel obdrží chybovou zprávu, která uvádí operaci nelze provést, při otevřeném zásuvku, musí uživatel zavřete virtuální nebo fyzický zásuvku pokračovat. Pokud pokladní zásuvku je označena jako **sdílené** v hardwarovém profilu, systém nedokazuje, že zásuvky je uzavřena před operaci. Operace pokračuje obvyklým způsobem, i když je otevřít zásuvku. Toto chování podporuje scénáře kde zásuvky jsou sdíleny prodejcům a jedno spojení používá hotovostí, zatímco jiné přidružit provádí úlohy nesouvisející na vlastní zařízení POS. Změny provedené na zásuvku nejsou zřejmé, dokud aktuální směny je uzavřen a otevření nové směny.
+Zobrazení zásuvky s hotovostí je druhé zařízení, které je uvedeno jako periferní simulátor. Pokud je hardwarový profil konfigurován pro použití virtuální zásuvky, POS Otevře zásuvku pro aktivní směnu v reakci na operace zásuvky, jako jsou výkazy výběrových řízení a pokladník tak může změnit nebo vložit hotovost během standardní transakce cash-and-carry. Virtuální zásuvky mají popisky **hlavní zásuvka** a **sekundární zásuvka**. Tyto popisky představují zásuvku a zásuvku 2 v hardwarovém profilu. Při zavření zásuvky se zobrazí obrázek zavřené zásuvky a tlačítko na zavřené zásuvce hotovostí je označeno **Otevřít zásuvku**. Pokud klepnete na toto tlačítko, obrázek bude nahrazen obrázkem otevřené zásuvky. Tlačítko na otevřené zásuvce je označeno **zavřít zásuvku**. Několik operací v POS může způsobit otevření zásuvky. Většina operací nemůže pokračovat, když je zásuvka otevřená. Výjimkou jsou některé postupy na konci dne. Pokud uživatel POS uživatel obdrží chybovou zprávu, která uvádí že operaci nelze provést, při otevřené zásuvce, musí uživatel zavřít virtuální nebo fyzickou zásuvku a pokračovat. Pokud je pokladní zásuvka označena jako **sdílené** v hardwarovém profilu, systém neověří, že zásuvka je zavřená před operaci. Operace pokračuje obvyklým způsobem, i když je zásuvka otevřená. Toto chování podporuje scénáře kde zásuvky jsou sdíleny mezi prodejci a když jeden zaměstnanec použije zásuvku, druhý provádí úlohy nesouvisející s jeho vlastním zařízením POS. Změny provedené v zásuvce nejsou zřejmé, dokud aktuální směna není uzavřena a není otevřena nová směna.
 
-### <a name="msr-capabilities"></a>MSR schopnosti
+### <a name="msr-capabilities"></a>Schopnosti MSR
 
-Periferní simulátor poskytuje rozsáhlou podporu pro virtuální operace MSR při práci v režimu OPOS nebo režimu klávesnice wedge. OPOS režimu vyžaduje, aby oddíl MSR konfiguraci v hardwarovém profilu pracovat jako zařízení OPOS. Režimu klávesnice wedge odešle pouze klávesnice wedge dat událostí systému Windows. Kromě rozdílů v nastavení OPOS a klávesnice wedge režimy liší následujícími způsoby:
+Periferní simulátor poskytuje rozsáhlou podporu pro virtuální operace MSR při práci v režimu OPOS nebo režimu platebního terminálu klávesnice. Režim OPOS vyžaduje, aby oddíl MSR byl nakonfigurován v hardwarovém profilu, aby pracoval jako zařízení OPOS. Režim platebního terminálu klávesnice odešle pouze události dat platebního terminálu klávesnice do systému Microsoft Windows. Kromě rozdílů v nastavení se OPOS a režim platebního terminálu klávesnice liší následujícími způsoby:
 
--   Klient POS umožňuje zařízení OPOS MSR pro konkrétní scénáře, jako jsou scénáře, které umožňují dat magnetického proužku věrnostní nebo položku dárkové karty.
--   V režimu klávesnice wedge odešle periferní simulátor klávesnice wedge data pole je aktivní, pokud jsou data odeslána. Toto chování se podobá chování, který nastane, pokud se data zadaná pomocí klávesnice. Pokud chcete použít oddíl MSR jako klávesnice wedge, musí uživatel přepnout na maloobchodní moderní POS (MPOS) a ujistěte se, že jsou přijímána data ve správném poli. Zpoždění, proto můžete nakonfigurovat tak, aby uživatel nemá čas a ujistěte se, že údaje budou odeslány na správné pole.
+-   Klient POS umožňuje zařízení OPOS MSR pro konkrétní scénáře, jako jsou scénáře, které povolují data magnetického proužku věrnostní nebo položku dárkové karty.
+-   V režimu platebního terminálu klávesnice odešle periferní simulátor data platebního terminálu klávesnice do pole, které je aktivní, pokud jsou data odeslána. Toto chování se podobá chování, které nastane, když se data zadávají pomocí klávesnice. Pokud chcete použít oddíl MSR jako platební terminál klávesnice, musí uživatel přepnout na Retail Modern POS (MPOS) a ujistit se, že jsou přijímána data ve správném poli. Proto můžete nakonfigurovat zpoždění, tak aby uživatel měl čas zajistit, že data budou odeslána do správného pole.
 
-#### <a name="testing-gift-and-payment-card-swipes"></a>Swipes testování dárek a platební karty
+#### <a name="testing-gift-and-payment-card-swipes"></a>Testování proužků dárkových a platebních karet
 
-Virtuální oddíl MSR, který poskytuje periferní simulátor také umožňuje nakonfigurovat určitá data MSR otestovat scénáře swipes dárek a platební karty. Chcete-li vytvořit kartu, klepněte na znaménko plus (**+**) tlačítko a vyberte typ karty. Potom zadejte číslo karty nebo sledování dat, který má být odeslán do POS a vypršení platnosti měsíc a rok pro karty, které definujete. Hodnota, kterou jste vybrali v **typu karty** je pouze popisek, který lze mapovat na kartu pole. Štítek je snazší identifikaci karty, pokud jejich jsou protažené přes periferní simulátor. Můžete vybrat karty, které byly nakonfigurovány v periferní simulátor pomocí šipka vlevo (**&lt;**) a pravou šipkou (**&gt;**) nad obrazem na kartě tlačítka. Můžete upravit a odstranit pomocí karty **úprava** a **odstranit** tlačítka vedle na znaménko plus (**+**) tlačítko.
+Virtuální oddíl MSR, který poskytuje periferní simulátor, také umožňuje nakonfigurovat určitá data na scénáře testování proužků dárkových a platebních karet. Chcete-li vytvořit kartu, klepněte na znaménko plus (**+**) a vyberte typ karty. Potom zadejte číslo karty nebo dat sledování, která mají být odeslána do POS spolu s měsícem a rokem vypršení platnosti karty, kterou definujete. Hodnota, kterou jste vybrali v poli **Typ karty** je pouze popisek, který lze mapovat na kartu pole. Tento štítek usnadňuje identifikaci karet, když jsou protažené přes periferní simulátor. Můžete vybrat karty, které byly nakonfigurovány v periferním simulátoru pomocí tlačítek šipka vlevo (**&lt;**) a šipka vpravo (**&gt;**) nad obrazem na kartě tlačítka. Můžete upravit a odstranit karty pomocí tlačítek **Upravit** a **Odstranit** tlačítka vedle znaménka plus (**+**).
 
 ### <a name="pin-pad"></a>Klávesnice pro kód PIN
 
-Můžete nakonfigurovat simulátor PIN pad pro simulaci OPOS PIN pad. Při transakci prostředky elektronického přenosu (EFT) se provádí v POS a vyžaduje zadání PIN, hardware stanice volá výzvu k zadání PIN kódu PIN zařízení. Práce, klávesnice pro kód PIN periferní simulátoru vyžaduje podporu konektor platby EFT.
+Můžete nakonfigurovat simulátor klávesnice pro zadávání PIN pro simulaci klávesnice OPOS PIN. Když se transakce s prostředky elektronického přenosu (EFT) provádí v POS a vyžaduje zadání PIN, hardwarová stanice volá zařízení k zobrazení výzvy k zadání PIN kódu. Aby klávesnice pro kód PIN fungovala, vyžaduje periferní simulátor podporu konektor platby EFT.
 
 ### <a name="printer"></a>Tiskárna
 
-Virtuální tiskárnu periferní právě zobrazuje příjmy budou vytištěny v POS. Pokud operaci tisku vytváří více příjemek, můžete procházet příjmy.
+Virtuální periferní tiskárna zobrazuje příjmy tak, jak budou vytištěny v POS. Pokud operace tisku vytváří více příjemek, můžete je procházet.
 
-#### <a name="configure-receipt-printing"></a>Nastavit tisk účtenky
+#### <a name="configure-receipt-printing"></a>Konfigurace tisku příjemek
 
-1.  Přejít na **maloobchodní a commerce**&gt;**nastavení kanálu**&gt;**instalace POS**&gt;**profily POS**&gt;**hardwarové profily**.
-2.  Vyberte hardwarový profil, který jste vytvořili virtuální příslušenství.
-3.  Na **tiskárna** s náhledem, klikněte na tlačítko **upravit**.
-4.  V **ID profilu účtenky** vyberte profil účtenky.
-5.  Click **Save**.
+1.  Přejděte na **Maloobchodní a velkoobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Hardwarové profily**.
+2.  Vyberte hardwarový profil, který jste vytvořili virtuální periferní zařízení.
+3.  Na pevné záložce **Tiskárna** klikněte na **Upravit**.
+4.  V poli **ID profilu příjemky** vyberte profil příjemky.
+5.  Klikněte na možnost **Uložit**.
 
 ### <a name="scale"></a>Měřítko
 
-Když produkt měřítka je přidána k transakci POS a měřítkem je nakonfigurován, POS hmotnost zkopíruje z rozsahu. Pro oba virtuální a fyzické měřítko produktu nebo hmotnosti stanovit před přidáním produktu do transakce. Před přidáním produktu měřítko k transakci, přejděte na stupnici periferní simulátoru a použít znaménko plus (**+**) a mínus (**–**) tlačítek, které vykazují stupnice hmotnosti. Můžete také zadat přímo v požadované hmotnosti **aktuální hodnotu** pole. Jednotky hmotnosti pro měřítko můžete nastavit pomocí znaménka plus (**+**), **úprava**, a **odstranit** tlačítka. Tímto způsobem lze určit jednotky založené na produkty, které se zváží nebo národní prostředí, kde se používá stupnice.
+Při přidání produktu na váze k transakci POS a když je váha nakonfigurována, POS načte hmotnost z rozsahu. Pro virtuální a fyzickou váhu by měl být produkt nebo hmotnosti stanoven před přidáním produktu do transakce. Před přidáním produktu na váze do transakce přejděte na váhu v periferním simulátoru a použijte tlačítka (**+**) a mínus (**–**) k nastavení hmotnosti, kterou by váha měla vykázat. Můžete také zadat přímo v požadované hmotnosti do pole **Aktuální hodnota**. Jednotky hmotnosti pro váhu můžete nastavit pomocí tlačítek plus (**+**), **Upravit** a **Odstranit**. Tímto způsobem lze určit jednotky založené na produktech, které jsou váženy nebo na národním prostředí, kde se váha používá.
 
-#### <a name="configure-a-scale-product"></a>Konfigurace produktu stupnice
+#### <a name="configure-a-scale-product"></a>Konfigurace váhy
 
-1.  Přejít na **maloobchodní a****commerce**&gt;**produkty a kategorie**&gt;**uvolněných produktů podle kategorie**.
+1.  Přejděte do nabídky **Maloobchod a** **obchod** &gt; **Produkty a kategorie** &gt; **Uvolnit produkty podle kategorie**.
 2.  Otevřete záznam produktu.
-3.  Vyberte produkt pro vážení.
-4.  Na **Retail** s náhledem nastavení **měřítku produkt** možnost z **č** k **Ano**.
+3.  Vyberte produkt ke zvážení.
+4.  Na pevné záložce **Maloobchod** nastavte možnost **Zvážit produkt** z **Ne** na **Ano**.
 
-#### <a name="synchronize-changes-to-the-channel-database"></a>Synchronizovat změny databáze kanálu
+#### <a name="synchronize-changes-to-the-channel-database"></a>Synchronizace změn do databáze kanálu
 
-1.  Přejít na **maloobchodní a commerce**&gt;**Retail IT**&gt;**plán distribuce**.
-2.  Vyberte **1040** plán distribuce.
-3.  Klepněte na tlačítko **nyní spustit** Chcete-li synchronizovat změny v POS.
+1.  Přejděte do nabídky **Maloobchodní a velkoobchodní prodej** &gt; **Maloobchodní IT** &gt; **Distribuční plán**.
+2.  Vyberte plán distribuce **1040**.
+3.  Klepněte na tlačítko **Spustit**, chcete-li synchronizovat změny v POS.
 
-Po synchronizaci dat, při přidání produktu stupnice transakce POS, POS zkontroluje stupnice pro hmotnost.
+Po synchronizaci dat a přidání váženého produktu do transakce POS zkontroluje POS váhu.
 
 ### <a name="signature-capture"></a>Zaznamenání podpisu
 
-Zařízení pro digitalizaci virtuální podpis výzvu zajistit podpis na panelu pro zachycení virtuální podpis podpis vyžaduje nabídku, která se používá. Uživatel může přijímat podpisu zobrazíte v POS. Pokladník může pak přijmout podpis. Podpis je pak uložena spolu s nabídky a je synchronizována zpět úřadu společně s dalšími údaji transakce.
+Zařízení pro záznam virtuálních podpisů výzve uživatele k zadání podpisu na klávesnici pro záznam virtuálních podpisů, kdy použitá nabídka vyžaduje podpis. Uživatel může přijmout podpis k zobrazení v POS. Pokladník může pak přijmout podpis. Podpis je pak uložen spolu s nabídkou a je synchronizován zpět do účetního systému společně s dalšími daty transakce.
 
-#### <a name="set-up-a-tender-to-require-a-signature"></a>Nastavení nabídky vyžadovat podpis
+#### <a name="set-up-a-tender-to-require-a-signature"></a>Nastavení nabídky na vyžadování podpisu
 
-1.  Přejít na **maloobchodní a commerce**&gt;**kanály**&gt;**maloobchodní obchody**&gt;**všechny maloobchodní obchody**.
-2.  Vyberte k maloobchodu.
+1.  Přejděte do nabídky **Maloobchodní a velkoobchodní prodej** &gt; **Kanály** &gt; **Maloobchodys** &gt; **Všechny maloobchody**.
+2.  Vyberte maloobchod.
 3.  Klikněte na možnost **Upravit**.
-4.  Klepněte na tlačítko **nastavit**a pak **nastavit** klepněte na **metody platby**.
+4.  Klikněte na **Nastavit** a v části **Nastavit** klikněte na **Metody platby**.
 5.  Klikněte na možnost **Upravit**.
 6.  Vyberte způsob platby, který vyžaduje podpis.
-7.  V **Obecné** v sekci **zachycení podpisu**, nastavte **použít podpis digitalizační zařízení** možnost na **Ano**.
-8.  V **minimální částka pro zachycení podpisu** zadejte minimální částku, kterou by mělo dojít k zaznamenání podpisu.
+7.  V části **Obecné** pod **Zachycení podpisu** nastavte **Použít digitalizační zařízení pro podpis** na **Ano**.
+8.  V poli **Minimální částka pro zachycení podpisu** zadejte minimální částku, která by měla vyvolat zaznamenání podpisu.
 
-#### <a name="synchronize-changes-to-the-channel-database"></a>Synchronizovat změny databáze kanálu
+#### <a name="synchronize-changes-to-the-channel-database"></a>Synchronizace změn do databáze kanálu
 
-1.  Přejít na **maloobchodní a commerce**&gt;**Retail IT**&gt;**plán distribuce**.
-2.  Vyberte **1070** plán distribuce.
-3.  Klepněte na tlačítko **nyní spustit** Chcete-li synchronizovat změny v POS.
+1.  Přejděte do nabídky **Maloobchodní a velkoobchodní prodej** &gt; **Maloobchodní IT** &gt; **Distribuční plán**.
+2.  Vyberte plán distribuce **1070**.
+3.  Klepněte na tlačítko **Spustit**, chcete-li synchronizovat změny v POS.
 
-Po synchronizaci dat vyžadující podpis slouží nabídka a částka splňuje práh podpis, POS vyzve k podpisu na podpis virtuální zařízení pro digitalizaci.
+Pokud po synchronizaci dat použitá nabídka vyžaduje podpis a částka splňuje prahovou hodnotu podpisu, zobrazí POS výzvu k zadání podpisu na zařízení pro záznam virtuálního podpisu.
 
 ## <a name="additional-configuration"></a>Další konfigurace
-Můžete upravit periferní simulátor konfigurační soubor, aby lépe řešení situací, které při testování. Můžete najít konfigurační soubor c:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\VirtualPeripherals\\Microsoft.Dynamics.Commerce.VirtualPeripherals.Client.exe.config. Konfigurační soubor definuje jednotky, které jsou k dispozici pro testování na stupnici, typy karet, které jsou k dispozici pro testování a typy čárového kódu. Úpravou textové hodnoty v konfiguračním souboru můžete například přidat nový typ karty nebo měrnou jednotku, kterou lze vybrat za běhu. Nové hodnoty se zobrazí po restartování aplikace.
+Můžete upravit konfigurační soubor periferního simulátoru, aby lépe řešil testované scénáře. Konfigurační soubor najdete zde C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\VirtualPeripherals\\Microsoft.Dynamics.Commerce.VirtualPeripherals.Client.exe.config. Konfigurační soubor definuje jednotky, které jsou k dispozici pro testování na váze, typy karet, které jsou k dispozici pro testování a typy čárového kódu. Úpravou textové hodnoty v konfiguračním souboru můžete například přidat nový typ karty nebo měrnou jednotku, kterou lze vybrat za běhu. Nové hodnoty se zobrazí po restartování aplikace.
 
 ## <a name="troubleshooting"></a>Řešení potíží
-Aktivity pro periferní simulátoru jsou zaznamenány v periferní simulátor. Do protokolu můžete najít na C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\VirtualPeripherals\\Microsoft.Dynamics.Commerce.VirtualPeripherals.Client.exe.config. Periferní simulátor také hlásí problémy do protokolu událostí systému Windows, které je dostupné na **aplikace a služby protokoly**&gt;**Microsoft**&gt;**aplikace Dynamics AX**. Pokud změny provedené v profilu hardwaru nebo jiných oblastí nejsou zřejmé, při použití MPOS nebo periferní simulátor, zkontrolujte distribuční úlohy plánovače, které používá k synchronizaci dat s databází kanálu. Pokud byly synchronizovány změny, ale nejsou patrné v POS, restartujte klienta POS. Nakonfigurované zásuvky změny nebudou účinné, dokud je vytvořen nový shift. Proto pokud provedete změny do zásuvky, přesvědčte se, zda vždy zavřít stávající shift, chcete-li otestovat nastavení nové pokladní zásuvky. V některých případech po běžné ovládací prvek objekty ze služby Monroe Consulting Services je nainstalován ovladač od výrobce, ovladač může způsobit běžné objekty řízení přestal správně fungovat. V takovém případě nainstalujte objekty společných ovládacích prvků.
+Aktivity pro periferní simulátor jsou zaznamenány v periferním simulátoru. Protokol najdete zde C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\VirtualPeripherals\\Microsoft.Dynamics.Commerce.VirtualPeripherals.Client.exe.config. Periferní simulátor také hlásí problémy do protokolu událostí systému Windows, který je dostupný zde: **Protokoly aplikací a služeb** &gt; **Microsoft** &gt; **DynamicsAX**. Pokud změny provedené v profilu hardwaru nebo jiných oblastech nejsou zřejmé, při použití MPOS nebo periferního simulátoru zkontrolujte distribuční úlohy plánovače, které používá k synchronizaci dat s databází kanálu. Pokud byly synchronizovány změny, ale nejsou patrné v POS, restartujte klienta POS. Změny nakonfigurovaných zásuvek hotovosti nebudou účinné, dokud nevytvoříte novou směnu. Proto pokud provedete změny zásuvky, vždy uzavřete stávající směnu, abyste otestovali nové nastavení pokladní zásuvky. Někdy může ovladač způsobit, že společné objekty kontroly přestanou správně fungovat. Děje se tak, pokud je ovladač od výrobce nainstalován po společných řídicích objektech ze služby Monroe Consulting Services. V takovém případě přeinstalujte objekty společných ovládacích prvků.
 
 <a name="see-also"></a>Viz také
 --------
 
-[Retail peripherals overview](retail-peripherals-overview.md)
+[Přehled maloobchodních periferních zařízení](retail-peripherals-overview.md)
 
 
 

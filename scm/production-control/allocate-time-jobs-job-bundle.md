@@ -1,5 +1,5 @@
 ---
-title: "Přidělit čas úlohy ve svazku prací"
+title: "Přidělení času k úlohám ve skupině prací"
 description: "V modulu Provádění výroby můžete úlohy ukládat do svazků. Potom můžete spustit více úloh současně na stránce se seznamem úloh."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Přidělit čas úlohy ve svazku prací
+# <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Přidělení času k úlohám ve skupině prací
 
 [!include[banner](../includes/banner.md)]
 

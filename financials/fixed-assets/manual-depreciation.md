@@ -66,14 +66,14 @@ Pokud v poli **Frekvence období** vyberete hodnotu **Měsíčně**, je nutné z
 | Leden  | (11 000 – 1 000) × 10 % = 1 000 |
 | Únor | (11 000 – 1 000) × 50 % = 5 000 |
 
-Vyberete-li **pololetní** v *** období četnost ** pole **, nastavíte dvě ručně naplánované intervaly. V následující tabulce jsou uvedeny částky odpisů za tyto dva intervaly.
+Pokud vyberete hodnotu **Pololetně** v poli ****Frekvence období**, nastavujete dva ruční intervaly plánu. V následující tabulce jsou uvedeny částky odpisů za tyto dva intervaly.
 
 | Interval    | Odpisovaná částka            |
 |-------------|--------------------------------|
 | 30. června     | (11 000 – 1 000) × 10 % = 1 000 |
 | 31. prosince | (11 000 – 1 000) × 50 % = 5 000 |
 
-Celková procentuální hodnota pro všechny intervaly nemusí být 100. Nicméně, pokud se zobrazí zpráva hodnota v **kumulativní procento** na **odpisy dlouhodobého majetku plánů** stránka není **100**.
+Celkové procento pro všechny intervaly nemusí být 100. Pokud však hodnota v poli **Kumulativní procento** na stránce **Plán odpisových plánů dlouhodobého majetku** není **100**, obdržíte zprávu.
 
 
 

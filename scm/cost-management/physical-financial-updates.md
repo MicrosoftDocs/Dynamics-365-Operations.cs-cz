@@ -33,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 Toto téma poskytuje přehled typů transakcí, které zvyšují nebo snižují skladové množství. 
 
-Skladové transakce lze aktualizovat fyzicky a finančně aktualizovány v 365 Microsoft Dynamics pro operace. Některé typy fyzických a finančních transakcí zvyšují skladové množství, zatímco jiné je snižují.
+Skladové transakce lze fyzicky nebo finančně aktualizovat v aplikaci Microsoft Dynamics 365 for Operations. Některé typy fyzických a finančních transakcí zvyšují skladové množství, zatímco jiné je snižují.
 
 ## <a name="physical-increases"></a>Fyzické zvýšení
 Při zaúčtování fyzické transakce se záznam transakce nachází ve stavu **Přijato**. Skladové množství fyzicky zvyšují následující transakce:
@@ -52,10 +52,10 @@ Při zaúčtování finanční příjmové transakce se záznam transakce zvyšu
 -   skladové deníky s kladným množstvím, jako je například pohyb, ztráta a zisk, inventura, kusovníky a převod.
 
 ## <a name="transactions-that-increase-quantity"></a>Transakce, které zvyšují množství
-Transakce zvyšují množství jsou zaúčtovány podle klouzavého průměru nákladové ceny. Dynamics 365 pro operace vypočítá průběžný průměr nákladová cena, který je založen na náklady těchto transakcí pro každou dimenzi zásob, které jsou finančně sledovány. Informace o průběžných průměrných nákladových cenách naleznete v tématu [Průběžné průměrné nákladové ceny](running-average-cost-price.md).
+Transakce zvyšují množství jsou zaúčtovány podle klouzavého průměru nákladové ceny. Aplikace Dynamics 365 for Operations vypočítá průběžnou průměrnou nákladovou cenu založenou na cenách jednotlivých transakcí pro jednotlivé dimenze zásob, které jsou finančně sledovány. Informace o průběžných průměrných nákladových cenách naleznete v tématu [Průběžné průměrné nákladové ceny](running-average-cost-price.md).
 
 ## <a name="transactions-that-decrease-quantity"></a>Transakce, které snižují množství
-Dynamics 365 pro operace používá vypočtenou průběžný průměr nákladová cena při zaúčtování transakce, která sníží množství, bez ohledu na model zásob je spojeno s Tento soupis. Transakce snižující množství nesmí být označeny pro jinou transakci před zaúčtováním. Pokud se stane záporné fyzické množství na skladě, 365 Dynamics pro operace používá náklady zásob, který je definován pro položku na **položky** stránky. **Poznámka:** Je-li povolena funkce několika pracovišť, náklady budou představovat náklady na zásoby definované pro pracoviště na stránce **Výchozí nastavení objednávky**.
+Aplikace Dynamics 365 for Operations používá vypočtený klouzavý průměr nákladové ceny, když je transakce snižující množství zúčtována, bez ohledu na to, který skladový model je k těmto zásobám přiřazen. Transakce snižující množství nesmí být označeny pro jinou transakci před zaúčtováním. Je-li fyzické množství na skladě záporné, aplikace Dynamics 365 for Operations použije náklady zásob definované pro danou položku na stránce **Zboží**. **Poznámka:** Je-li povolena funkce několika pracovišť, náklady budou představovat náklady na zásoby definované pro pracoviště na stránce **Výchozí nastavení objednávky**.
 
 ## <a name="physical-issues-vs-financial-issues"></a>Fyzické výdeje vs finanční výdeje
 Při zaúčtování transakce fyzického výdeje se záznam transakce nachází ve stavu **Odečteno**. Mezi fyzické výdeje patří následující transakce:

@@ -1,5 +1,5 @@
 ---
-title: "Konfigurovat ruční rozhodnutí v pracovním postupu"
+title: "Konfigurace ručního rozhodnutí ve workflowu"
 description: "Toto téma vysvětluje, jak nakonfigurovat vlastnosti ručního rozhodnutí."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurovat ruční rozhodnutí v pracovním postupu
+# <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurace ručního rozhodnutí ve workflowu
 
 [!include[banner](../includes/banner.md)]
 
@@ -98,8 +98,8 @@ Můžete odeslat oznámení uživatelům, jakmile bude rozhodnutí provedeno, de
 
 1.  V levém podokně klikněte na **Oznámení**.
 2.  Označte pole vedle událostí, při kterých se oznámení odešle:
-    -   **\[Volba 1\]** – přiřazený uživatel vybral **\[volba 1\]**.
-    -   **\[Volba 2\]** – přiřazený uživatel vybral **\[volba 2\]**.
+    -   **\[Volba 1\]** – přiřazený uživatel vybral možnost **\[Volba 1\]**.
+    -   **\[Volba 2\]** – přiřazený uživatel vybral možnost **\[Volba 2\]**.
     -   **Delegovat** – přiřazený uživatel přiřadil rozhodnutí jinému uživateli.
     -   **Eskalovat** – přiřazený uživatel neučinil rozhodnutí v přiděleném čase.
 
@@ -151,10 +151,10 @@ Můžete odeslat oznámení uživatelům, jakmile bude rozhodnutí provedeno, de
     </tr>
     <tr class="odd">
     <td>Uživatel</td>
-    <td>Zvláštní 365 Microsoft Dynamics pro operace uživatele</td>
+    <td>Konkrétní uživatelé aplikace Microsoft Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
-    <li><strong>k dispozici uživatelům</strong> seznam obsahuje všechny Dynamics 365 uživatelům operací. Vyberte uživatele, kterým chcete odeslat oznámení, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    <li>Seznam <strong>Dostupní uživatelé</strong>: obsahuje všechny uživatele aplikace Dynamics 365 for Operations. Vyberte uživatele, kterým chcete odeslat oznámení, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -216,10 +216,10 @@ Pomocí následujícího postupu určíte, komu má být ruční rozhodnutí př
     </tr>
     <tr class="even">
     <td>Uživatel</td>
-    <td>Zvláštní Dynamics 365 uživatelům operací</td>
+    <td>Konkrétní uživatelé aplikace Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
-    <li><strong>k dispozici uživatelům</strong> seznam obsahuje všechny Dynamics 365 uživatelům operací. Vyberte uživatele, kterým chcete rozhodnutí přiřadit, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    <li>Seznam <strong>Dostupní uživatelé</strong>: obsahuje všechny uživatele aplikace Dynamics 365 for Operations. Vyberte uživatele, kterým chcete rozhodnutí přiřadit, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -237,8 +237,8 @@ Pomocí následujícího postupu určíte, komu má být ruční rozhodnutí př
     <li>V seznamu <strong>Typ fronty</strong> vyberte <strong>Podmíněné fronty pracovních položek</strong>.</li>
     <li>V seznamu <strong>Název fronty</strong> vyberte <strong>Podmíněná fronta</strong>.</li>
     </ol></li>
-    </ol><ph id="t1">
-    </ph><strong>Poznámka:</strong> tato možnost se používá pro pouze několik pracovních postupů, jako je například Správa případů.</td>
+    </ol>
+    <strong>Poznámka:</strong> tato možnost se používá pouze u několika workflowů, jako je například správa případů.</td>
     </tr>
     </tbody>
     </table>
@@ -261,9 +261,9 @@ Pokud uživatel v přiděleném čase rozhodnutí neučiní, rozhodnutí bude v 
     |----------|----------------------------|
     | 1        | Přiřadit k: Donna           |
     | 2        | Přiřadit k: Erin            |
-    | 3        | Poslední akce: \[volba 1\] |
+    | 3        | Konečná akce: \[Volba 1\] |
 
-    V tomto příkladu systém přiřadí zpožděné rozhodnutí Donně. Pokud Donna v určeném čase rozhodnutí neučiní, systém přiřadí rozhodnutí Erin. Pokud Stoklasa neučiní rozhodnutí v přiděleném čase, systém vybere **\[volba 1\]** jako rozhodnutí.
+    V tomto příkladu systém přiřadí zpožděné rozhodnutí Donně. Pokud Donna v určeném čase rozhodnutí neučiní, systém přiřadí rozhodnutí Erin. Pokud Erin v určeném čase rozhodnutí neučiní, systém jako rozhodnutí vybere možnost **\[Volba 1\]**.
 3.  Pokud chcete přidat uživatele do eskalační cesty, klepněte na tlačítko **Přidat eskalaci**. Vyberte jednu z možností v následující tabulce a před přechodem na krok 4 postupujte podle dalších kroků pro tuto možnost.
     <table>
     <colgroup>
@@ -306,10 +306,10 @@ Pokud uživatel v přiděleném čase rozhodnutí neučiní, rozhodnutí bude v 
     </tr>
     <tr class="odd">
     <td>Uživatel</td>
-    <td>Zvláštní Dynamics 365 uživatelům operací</td>
+    <td>Konkrétní uživatelé aplikace Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
-    <li><strong>k dispozici uživatelům</strong> seznam obsahuje všechny Dynamics 365 uživatelům operací. Vyberte uživatele, ke kterým chcete rozhodnutí eskalovat, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    <li>Seznam <strong>Dostupní uživatelé</strong>: obsahuje všechny uživatele aplikace Dynamics 365 for Operations. Vyberte uživatele, ke kterým chcete rozhodnutí eskalovat, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
     </ol></td>
     </tr>
     </tbody>

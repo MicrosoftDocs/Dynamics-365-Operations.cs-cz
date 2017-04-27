@@ -1,5 +1,5 @@
 ---
-title: "Znovu použít konfigurace produktu"
+title: "Opětovně použít konfigurace produktu"
 description: "Můžete určit, že chcete automaticky opětovně použít existující konfiguraci produktu. Když potom uživatel dokončí konfigurační relaci, systém ověří, zda již existuje konfigurace, která odpovídá výběru uživatele. Pokud je nalezena odpovídající konfigurace, znovu se použije ID konfigurace, odpovídající kusovníky a postup."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reuse-product-configurations"></a>Znovu použít konfigurace produktu
+# <a name="reuse-product-configurations"></a>Opětovně použít konfigurace produktu
 
 [!include[banner](../includes/banner.md)]
 

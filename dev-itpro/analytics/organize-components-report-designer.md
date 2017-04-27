@@ -49,18 +49,18 @@ Můžete seskupovat definice sestavy a generovat více sestav současně. Abyste
 ### <a name="create-a-report-group"></a>Vytvoření skupiny sestav
 
 1.  V Návrháři sestav v navigačním podokně klikněte na tlačítko **Skupiny sestav**.
-2.  Na **souboru** nabídky, klepněte na tlačítko **nový**&gt;**skupiny definice sestavy** nové sestavy skupiny otevřít v okně prohlížeče. Případně klepněte **sestava skupiny** tlačítko ![sestava skupiny](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "sestava skupiny") na panelu nástrojů.
+2.  V nabídce **Soubor** klepněte na **Nový** &gt; **Definice skupiny sestav** a otevřete tak novou skupinu sestav v okně prohlížeče. Případně klikněte na tlačítko **Skupina sestav** ![Skupina sestav](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Skupina sestav") na panelu nástrojů.
 3.  Klikněte na kartu Seskupit podle **Skupina sestav**. Pro přepsání informací v jednotlivých definicích sestavy pro generování této sestavy zaškrtněte políčko **Přepsat nastavení společnosti, podrobností a data z jednotlivých definic sestavy**. Název společnosti, úroveň podrobností, nastavení předběžných údajů a datum jsou vyplněny automaticky, ale přesto můžete provést aktualizaci.
 4.  Zaškrtněte políčko **Zahrnout všechny měny vykazování**, pokud chcete vygenerovat více sestav zobrazujících tyto měny. Více zobrazení pak bude k dispozici po kliknutí na tlačítko **Měna** ve Webovém prohlížeči při zobrazení sestavy.
 5.  V poli **Sestavy ve skupině** kliknutím na tlačítko **Přidat** vyberte sestavy, které chcete zahrnout do skupiny sestav. Chcete-li vybrat více sestav v dialogovém okně **Přidat**, podržte klávesu Ctrl při výběru sestav. Po dokončení výběru sestav klepněte na tlačítko **OK**.
-6.  Klepněte na tlačítko **souboru**&gt;**Uložit** Chcete-li uložit nové skupiny sestavy.
+6.  Kliknutím na položky **Soubor** &gt; **Uložit** uložte novou skupinu sestav.
 
 ### <a name="modify-a-report-group"></a>Úprava skupiny sestav
 
 1.  V Návrháři sestav v navigačním podokně klikněte na tlačítko **Skupiny sestav**.
 2.  Klikněte dvakrát na skupinu zásad, kterou chcete upravit.
 3.  Klikněte na kartu **Skupina sestav** a proveďte požadované změny.
-4.  Na **souboru** nabídky, klepněte na tlačítko **Uložit** uložit upravené sestavě skupina, případně klepněte na tlačítko **Uložit** tlačítko ![Uložit](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Uložit") na panelu nástrojů.
+4.  V nabídce **Soubor** klikněte na příkaz **Uložit** pro uložení změněné skupiny sestav. Případně klikněte na tlačítko **Uložit** ![Uložit](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Uložit") na panelu nástrojů.
 
 **Poznámka:** Pokud jste naplánovali sestavy tak, aby byly generovány v určitých intervalech, můžete přepsat tato nastavení a vygenerovat sestavu okamžitě.
 
@@ -68,7 +68,7 @@ Můžete seskupovat definice sestavy a generovat více sestav současně. Abyste
 
 1.  V Návrháři sestav v navigačním podokně klikněte na tlačítko **Skupiny sestav**.
 2.  Otevřete skupinu sestav k vygenerování.
-3.  Klepněte **generovat zprávu** tlačítko ![generovat zprávu](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "generovat zprávu") ke generování sestav.
+3.  Klikněte na tlačítko **Generovat sestavu** ![Generovat sestavu](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Generovat sestavu") pro generování sestav.
 
 ### <a name="delete-a-report-group"></a>Odstranění skupiny sestav
 
@@ -104,8 +104,8 @@ Následující tabulka popisuje ovládací prvky na kartě **Skupina sestav**.
 <td>Vyberte úroveň detailu, které mají sestavy obsahovat.
 <ul>
 <li><strong>Finanční</strong> − souhrnná sestava na vysoké úrovni. Nelze podrobně zobrazit účty a dimenze, s výjimkou účtů a dimenzí přidaných prostřednictvím stromu výkaznictví.</li>
-<li><strong>Finanční &amp;účtu</strong> − A sestavu, která obsahuje podrobný souhrn a podrobnosti o účtu.</li>
-<li><strong>Finanční, účet, &amp;transakce</strong> − A sestavu, která obsahuje podrobný souhrn a podrobnosti transakce.</li>
+<li><strong>Finanční &amp; účetní</strong> − sestava, která obsahuje souhrn na vysoké úrovni a podrobnosti účtu.</li>
+<li><strong>Finanční, účetní &amp; transakční</strong> − sestava, která obsahuje souhrn na vysoké úrovni a podrobnosti transakcí.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -154,6 +154,6 @@ Pouze výchozí nastavení základního období se uloží s definicí sestavy.<
 <a name="see-also"></a>Viz také
 --------
 
-[Finanční vykazování pro 365 Microsoft Dynamics pro operace](financial-reporting-intro.md)
+[Finanční výkaznictví v aplikaci Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
 
 

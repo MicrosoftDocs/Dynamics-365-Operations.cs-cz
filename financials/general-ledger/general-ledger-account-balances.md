@@ -1,6 +1,6 @@
 ---
 title: "Zůstatky účtu hlavní knihy"
-description: "Tento článek popisuje dva způsoby, jak zobrazit zůstatky účtů hlavní knihy - stránka se seznamem předvaha a finanční sestavy. Také popisuje, jak aktualizovat zůstatky pro sadu dimenzí."
+description: "V tomto článku jsou vysvětleny dva způsoby pro zobrazení zůstatků účtů hlavní knihy – stránka se seznamem Předvaha a finanční sestavy. Také popisuje, jak aktualizovat zůstatky pro sadu dimenzí."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -31,7 +31,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje dva způsoby, jak zobrazit zůstatky účtů hlavní knihy - stránka se seznamem předvaha a finanční sestavy. Také popisuje, jak aktualizovat zůstatky pro sadu dimenzí.
+V tomto článku jsou vysvětleny dva způsoby pro zobrazení zůstatků účtů hlavní knihy – stránka se seznamem Předvaha a finanční sestavy. Také popisuje, jak aktualizovat zůstatky pro sadu dimenzí.
 
 Existuje mnoho způsobů, kterými mohou uživatelé zobrazit zůstatky v hlavní knize. Nejběžnější možnosti jsou:
 
@@ -49,7 +49,7 @@ Pokud uživatel změní parametry, zůstatky se aktualizují. Uživatel může t
 
 Uživatelé mohou procházet zůstatky a zobrazit transakce, které zůstatek tvoří.    
 
-Další informace naleznete v tématu [finanční sestavy zobrazit](view-financial-reports.md).
+Další informace naleznete v tématu [Zobrazení finančních sestav](view-financial-reports.md).
 
 
 

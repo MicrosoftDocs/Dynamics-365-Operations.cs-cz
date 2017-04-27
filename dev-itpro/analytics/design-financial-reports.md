@@ -1,6 +1,6 @@
 ---
-title: "Zobrazení a návrh finančních sestav"
-description: "Tento článek obsahuje cvičení, které vysvětlují vám prohlížení a vytváření finančních sestav pro 365 Microsoft Dynamics pro operace. Účetního výkaznictví se skládá ze zobrazení zkušenosti v rámci Dynamics 365 pro operace a kliknutí-jednou Návrhář sestav, který umožňuje vytvořit a upravit finanční sestavy."
+title: "Zobrazení a navržení finančních sestav"
+description: "Tento článek obsahuje cvičení, která vás provedou zobrazením a vytvářením finančních sestav pro aplikaci Microsoft Dynamics 365 for Operations. Finanční výkaznictví se skládá z lepšího způsobu prohlížení v rámci Dynamics 365 for Operations a návrháře sestav na jedno kliknutí, který vám umožní vytvářet a upravovat finanční sestavy."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,12 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="view-and-design-financial-reports"></a>Zobrazení a návrh finančních sestav
+# <a name="view-and-design-financial-reports"></a>Zobrazení a navržení finančních sestav
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek obsahuje cvičení, které vysvětlují vám prohlížení a vytváření finančních sestav pro 365 Microsoft Dynamics pro operace. Účetního výkaznictví se skládá ze zobrazení zkušenosti v rámci Dynamics 365 pro operace a kliknutí-jednou Návrhář sestav, který umožňuje vytvořit a upravit finanční sestavy.  
+Tento článek obsahuje cvičení, která vás provedou zobrazením a vytvářením finančních sestav pro aplikaci Microsoft Dynamics 365 for Operations. Finanční výkaznictví se skládá z lepšího způsobu prohlížení v rámci Dynamics 365 for Operations a návrháře sestav na jedno kliknutí, který vám umožní vytvářet a upravovat finanční sestavy.  
 
 <a name="exercise-1-generate-and-explore-a-default-financial-report"></a>Cvičení 1: generování a prohlížení výchozí finanční sestavy
 -----------------------------------------------------------
@@ -48,7 +48,7 @@ Pro toto cvičení budete generovat a prohlížet existující výchozí sestavu
 3.  Uložte konfiguraci dimenze. Dále budeme generovat sestavu a prohlížet data v sestavě.
 4.  Přejděte do části **Finanční sestavy** pod částí **Dotazy a sestavy** v hlavní knize.
 5.  Vyberte řádek sestavy s názvem **Podrobnosti hlavní knihy – výchozí.**
-6.  Vyberte možnost **Upravit.** Poznámka: Budete vyzváni ke stažení klepněte-jednou Návrhář sestav a přihlásit se. Přihlaste se pomocí pověření.
+6.  Vyberte možnost **Upravit.** Poznámka: zobrazí se výzva ke stažení návrháře sestav na jedno kliknutí a přihlášení. Přihlaste se pomocí vlastních přihlašovacích údajů.
 7.  Změňte základní rok na 2012 a vyberte **Generovat**. Při generování sestavy v Návrháři sestav se sestava otevře na nové kartě prohlížeče. Můžete buď prohlížet sestavu v nové kartě prohlížeče, nebo přejít do původní karty prohlížeče a otevřít sestavu z tohoto umístění jejím vybráním ze seznamu **Finančních sestav** .
 8.  V otevřené sestavě vyberte jednu z částek k procházení podrobností o účtu pro sestavu.
 9.  V podrobnostech účtu vyberte účet s daty a **procházejte na úroveň sestavy transakcí**. Na úrovni sestavy transakcí se zobrazí vlastnosti (atributy), které jsou zahrnuty do návrhu této sestavy. V závislosti na transakci a účtu mohou být zobrazeny jen některé nebo všechny atributy.
@@ -58,7 +58,7 @@ Pro toto cvičení budete generovat a prohlížet existující výchozí sestavu
 13. Vyberte volbu **Možnosti sestavy**.
 14. Vyberte možnost **Přidat filtr dimenze** a zvolte možnost **Obchodní jednotka**.
 15. Do pole zadejte „001” a stiskněte tlačítko **OK**. Sestava nyní zobrazí pouze data obchodní jednotky 001. To je přizpůsobené zobrazení sestavy není k dispozici pro ostatní
-16. Zavřete filtrovanou sestavu. Finanční sestavy lze zobrazit v jakékoli měně, která byla přidána do 365 Dynamics pro operace.
+16. Zavřete filtrovanou sestavu. Finanční sestavy lze zobrazit v libovolné měně, která je přidána do aplikace Dynamics 365 for Operations.
 17. Vyberte možnost **Měna**, poté možnost **EUR.** Sestava se nyní zobrazuje v měně euro. Všechny kódy měn nebo symboly měny zahrnuté v návrhu sestavy se nyní zobrazí v použité měně. Není-li definován žádný symbol měny pro měnu, nebude symbol měny zobrazen.
 18. Zavřít sestavu **Podrobnosti hlavní knihy**.
 19. Zavřete **Návrháře sestav**.
@@ -69,7 +69,7 @@ V tomto cvičení budete upravovat existující výchozí sestavu. Budete aktual
 1.  Přejděte do části **Finanční sestavy** pod částí Dotazy a sestavy v hlavní knize.
 2.  Vyberte řádek sestavy s názvem **Souhrnná předvaha – výchozí.**
 3.  Vyberte možnost **Upravit**. **Souhrnná předvaha – výchozí** bude otevřena v Návrháři sestav.
-4.  Vyberte nabídku **Soubor**, poté **Uložit jako** a zadejte název sestavy Podrobná předvaha s atributy. Poznámka: Při každém vytvoření nové sestavy v Návrhář sestav, finanční zprávy seznam je aktualizován v 365 Dynamics pro operace.
+4.  Vyberte nabídku **Soubor**, poté **Uložit jako** a zadejte název sestavy Podrobná předvaha s atributy. Poznámka: při každém vytvoření nové sestavy v návrháři sestav se seznam finančních sestav v Dynamics 365 for Operations aktualizuje.
 5.  Z definice sestavy vyberte ikonu definice řádku a otevřete možnost **Předvaha – výchozí definice řádku**.
 6.  Uložit definici řádku jako **Podrobná předvaha s atributy**
 7.  S kurzorem na řádku 50 vyberte možnost **Upravit**, poté **Vložit řádky z dimenzí**. Příkaz Vložit řádky z dimenzí umožňuje vybrat dimenze, které mají být v definici řádku. U tohoto cvičení vytvoříme definici řádku pomocí hlavního účtu.
@@ -99,7 +99,7 @@ V tomto cvičení budete upravovat existující výchozí sestavu. Budete aktual
 25. Zavřete sestavu **Podrobná předvaha s atributy**.
 26. Zavřete **Návrháře sestav**.
 
-## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Cvičení 3: Vytvořte multidimenzionální sestavy pomocí sestavy stromu
+## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Cvičení 3: Vytvoření multidimenzionální sestavy pomocí stromu výkaznictví
 V tomto cvičení budete upravovat existující výchozí sestavu. Vytvoříte strom výkaznictví a budete přidávat do definice sestavy, abyste vytvořili výpis nákladového střediska / divizních příjmů. Po dokončení aktualizace budete generovat výpis nákladového střediska / divizních příjmů a prohlížet sestavu pomocí stromu výkaznictví. Začneme ze seznamu Finanční výkazy.
 
 1.  Přejděte do části **Finanční sestavy** pod částí Dotazy a sestavy v hlavní knize.
@@ -141,7 +141,7 @@ V tomto cvičení budete upravovat existující výchozí sestavu. Budete přid�
 1.  Přejděte do části **Finanční sestavy** pod částí Dotazy a sestavy v hlavní knize.
 2.  Vyberte řádek sestavy s názvem **Rozvaha a výkaz příjmů vedle sebe – výchozí**
 3.  Vyberte možnost **Upravit**. **Rozvaha a výkaz příjmů vedle sebe – výchozí** se otevře v návrháři sestav.
-4.  Vyberte **souboru**&gt;**uložit jako** a název sestavy **konsolidované rozvahy a výsledovky vedle sebe**.
+4.  Vyberte nabídku **Soubor** &gt; **Uložit jako** a zadejte název sestavy **Konsolidovaná rozvaha a výkaz příjmů vedle sebe**.
 5.  Změňte základní rok na 2012.
 6.  Klikněte šipku rozevíracího seznamu typ stromu a vyberte **Organizační hierarchie**.
 7.  Klikněte šipku rozevíracího seznamu typ stromu a vyberte **Contoso Holdings.**.
@@ -154,7 +154,7 @@ V tomto cvičení budete upravovat existující výchozí sestavu. Budete přid�
 14. Zavřete **Konsolidovanou rozvahu a výpis příjmu vedle sebe – výchozí**.
 15. Zavřete **Návrháře sestav**.
 
-## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Cvičení 5: Vytvoření sestavy oddělení sidebyside
+## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Cvičení 5: Vytvoření sestavy oddělení vedle sebe
 V tomto cvičení budete vytvářet novou sestavu. Sestava je výkaz příjmu oddělení vedle sebe. Použijete existující definici řádku, ale vytvoříte novou definici sestavy a novou definici sloupce, která používá filtry dimenzí. Začneme ze seznamu Finanční výkazy.
 
 1.  Přejděte do části **Finanční sestavy** pod částí Dotazy a sestavy v hlavní knize.
@@ -182,9 +182,9 @@ V tomto cvičení budete vytvářet novou sestavu. Sestava je výkaz příjmu od
 18. **Uložte** provedené změny a **generujte**. Po dokončení generování sestavy a jejím otevření můžete sestavu prohlížet.
 
 ## <a name="additional-resources"></a>Další prostředky
-[Účetního výkaznictví](\financials\general-ledger\financial-reporting-getting-started.md)<ph id="t1">
-</ph>[finanční sestavy zobrazit](\financials\general-ledger\view-financial-reports.md)<ph id="t2">
-</ph>[Blog Dynamics finanční vykazování](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Finanční vykazování](\financials\general-ledger\financial-reporting-getting-started.md) 
+[Zobrazit finanční sestavy](\financials\general-ledger\view-financial-reports.md) 
+[Blog Dynamics Financial Reporting](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

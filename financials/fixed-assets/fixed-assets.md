@@ -1,6 +1,6 @@
 ---
 title: "Domovská stránka Dlouhodobý majetek"
-description: "Dlouhodobý majetek jsou položky s hodnotou, budov, vozidel, pozemků a zařízení, které jsou vlastněny jednotlivec nebo organizace."
+description: "Dlouhodobý majetek jsou položky s hodnotou, jako například budovy, vozidla, pozemek nebo vybavení, které vlastní jedinec nebo organizace."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dlouhodobý majetek jsou položky s hodnotou, budov, vozidel, pozemků a zařízení, které jsou vlastněny jednotlivec nebo organizace.
+Dlouhodobý majetek jsou položky s hodnotou, jako například budovy, vozidla, pozemek nebo vybavení, které vlastní jedinec nebo organizace. 
 
 Můžete nastavit a zadávat informace o pořízení pro dlouhodobý majetek a spravovat jej odepisováním a nastavením prahu kapitalizace, podle nějž se určují odpisy. Můžete rovněž vypočítat úpravy dlouhodobého majetku a zadat informaci o jeho odprodeji. Při používání hlavní knihy s dlouhodobým majetkem můžete společně zobrazit aktuální hodnotu veškerého dlouhodobého majetku. Způsob zpracování dlouhodobého majetku musí odpovídat mezinárodním účetním normám i legislativě účetnictví v každé zemi nebo regionu. Požadavky mohou zahrnovat pravidla pro zaznamenávání pořizovacích a vyřazovacích transakcí, odpisů, životnost a zvýšení či snížení hodnoty dlouhodobého majetku. Funkce dlouhodobého majetku již mnoho z těchto norem a pravidel obsahuje.
 

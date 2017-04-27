@@ -49,7 +49,7 @@ Pokud ve vaší organizaci inkasní práci vykonává více uživatelů, můžet
 ## <a name="set-up-a-collections-case-category"></a>Nastavení kategorie případů inkasa
 Pokud budete používat případy k organizaci inkasní práce, nastavte kategorii případu, která má typ kategorie **Inkasa**. Toto nastavení je nutné pouze v případě, že chcete použít funkci případu na stránce **Inkasa**.
 
-## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Nastavení názvů deníků (vyrovnání, writeoff a NFP)
+## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Nastavení názvů deníků (vyrovnání, odpisu a NFP)
 Nastavte názvy deníků používaných při zpracování transakcí na stránce **Inkasa**. Toto zpracování zahrnuje vyrovnání transakce, odpis transakce nebo zpracování platby NFP (nedostatečné finanční prostředky).
 
 | Popis | Typ deníku     |
@@ -58,7 +58,7 @@ Nastavte názvy deníků používaných při zpracování transakcí na stránce
 | Odpis   | Denně            |
 | NFS         | Platba odběratele |
 
-## <a name="set-up-a-reason-code-for-writeoff-transactions"></a>Nastavit kód důvodu pro transakce writeoff
+## <a name="set-up-a-reason-code-for-writeoff-transactions"></a>Nastavení kódu důvodu pro transakce odpisu
 Nastavte výchozí kód důvodu, který se použije při odepsání transakcí na stránce **Inkasa**. Během procesu odpisu lze kód změnit.
 
 ## <a name="set-up-a-folder-for-email-attachments-and-create-email-templates"></a>Nastavení složky pro přílohy e-mailu a vytváření šablon e-mailů
@@ -70,7 +70,7 @@ Nastavte parametry pohledávek, které se zobrazují na kartě **Inkasa**.
 ## <a name="optional-set-up-collections-agents"></a>Nepovinné: Nastavení inkasních agentů
 Pokud ve vaší organizaci inkasní práci vykonává více uživatelů, můžete nastavit inkasní agenty. Inkasní agent je pracovník, který je nastaven jako uživatel na stránce **Vztahy uživatele**. Přiřazením fondů zákazníků (dotazů na odběratele) můžete inkasním agentům usnadnit organizaci jejich práce. Inkasní agenti jsou přidáni do týmu, který je vybrán na stránce**Parametry pohledávek**. Pokud není na této stránce vybrán tým, automaticky se vytvoří nový tým s názvem **Inkasa** a inkasní agenti budou přidáni do tohoto týmu.
 
-## <a name="set-up-a-writeoff-account"></a>Nastavit účet writeoff
+## <a name="set-up-a-writeoff-account"></a>Nastavit účtu pro odpis
 Nastavte účet pro odpis používaný pro položky odpisu hlavní knihy, když je odepsána transakce. Tento účet je uložen v účetním profilu odběratele.
 
 ## <a name="set-up-nsf-information-for-bank-accounts"></a>Nastavení informací NFP pro bankovní účty
@@ -85,7 +85,7 @@ Pokud chcete na stránce **Inkasa** posílat e-mailové zprávy kontaktům odbě
 Na pevné záložce **Úvěry a inkasa** pro odběratele vyberte v poli **Kontakt inkas** osobu z organizace odběratele, která pracuje s vašim inkasním agentem. Tato osoba slouží jako výchozí kontakt na stránce **Inkasa**, kterému jsou odesílány e-mailové zprávy. 
 
 > [!NOTE] 
-> Pokud kolekce kontaktu pro zákazníka není zadána, je použit primárního kontaktu pro zákazníka. Pokud není specifikován primární kontakt, e-mailové zprávy budou odeslány na první adresu uvedenou na stránce **Kontakty**.
+> Pokud kontaktní osoba inkasa není pro odběratele zadána, použije se primární kontakt odběratele. Pokud není specifikován primární kontakt, e-mailové zprávy budou odeslány na první adresu uvedenou na stránce **Kontakty**.
 
 ## <a name="set-up-email-settings-for-salespeople"></a>Nastavení e-mailu pro prodejce
 Pokud chcete na stránce **Inkasa** posílat těmto prodejcům e-mailové zprávy, nastavte e-mailové adresy prodejců. Nastavte e-mailovou adresu pro každého obchodního zástupce v každé skupině provizního prodeje. Obchodní zástupce, který má zvolenu možnost **Kontakt**, je výchozí prodejce, kterému jsou odesílány e-mailové zprávy. 

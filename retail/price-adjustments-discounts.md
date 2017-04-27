@@ -1,6 +1,6 @@
 ---
 title: "Úpravy ceny a slevy"
-description: "Tento článek obsahuje informace týkající se úpravy ceny a slevy v maloobchodní commerce v 365 Microsoft Dynamics pro operace."
+description: "Tento článek obsahuje informace o úpravě ceny a slevách v modulu Maloobchodní a velkoobchodní prodej aplikace Microsoft Dynamics 365 for Operations."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 15891
 ms.assetid: bab5adf3-ddf0-4c22-a2eb-b4d25b88de99
 ms.search.region: global
@@ -31,9 +31,9 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](includes/banner.md)]
 
 
-Tento článek obsahuje informace týkající se úpravy ceny a slevy v maloobchodní commerce v 365 Microsoft Dynamics pro operace.
+Tento článek obsahuje informace o úpravě ceny a slevách v modulu Maloobchodní a velkoobchodní prodej aplikace Microsoft Dynamics 365 for Operations.
 
-V 365 Dynamics pro operace - maloobchod, můžete provádět úpravy cen produktů a umožňuje také nastavit slevy, které jsou použity pro řádek položky nebo transakce v místě prodeje (POS) v prodejní objednávce volání centrum nebo v online objednávky. Úpravy ceny i slevy lze propojit s cenovými skupinami. Pro úpravy ceny a slevy můžete určit jedno počáteční a koncové datum nebo opakované období, kód slevy a další atributy. Úpravy ceny a slevy lze použít pro produkty, varianty nebo kategorie. Pokud je pro produkt platná více než jedna sleva, odběratel může obdržet buď jednu ze slev nebo kombinovanou slevu, a to v závislosti na konfiguraci slevy. Dynamics 365 pro operace automaticky platí sleva nebo kombinace slev, která nabízí nejlepší cenu pro zákazníka. Při nastavení úpravy ceny nebo slevy je nutné zkontrolovat, zda jsou cenové skupiny přiřazeny pro správné kanály, katalogy, umístění nebo věrnostní programy, u kterých mají být použity slevy. Dále, pokud potřebujete automaticky vygenerovat ID slevy, můžete před definováním nové slevy nebo úpravy ceny nastavit číselné řady na stránce **Parametry maloobchodu**. **Poznámka:** Úpravu ceny nebo slevu můžete odstranit. Dojde však ke ztrátě statistických údajů.
+V modulu Maloobchodní a velkoobchodní prodej v aplikaci Microsoft Dynamics 365 for Operations - Retail můžete provádět úpravy ceny produktů a můžete také nastavit slevy, které budou použity pro položky řádku nebo transakce v pokladních místech (POS), a to v prodejní objednávce kontaktního střediska, nebo online objednávce. Úpravy ceny i slevy lze propojit s cenovými skupinami. Pro úpravy ceny a slevy můžete určit jedno počáteční a koncové datum nebo opakované období, kód slevy a další atributy. Úpravy ceny a slevy lze použít pro produkty, varianty nebo kategorie. Pokud je pro produkt platná více než jedna sleva, odběratel může obdržet buď jednu ze slev nebo kombinovanou slevu, a to v závislosti na konfiguraci slevy. Maloobchodní a velkoobchodní prodej v aplikaci Dynamics 365 for Operations automaticky použije slevu nebo kombinaci slevy, jež nabízí nejlepší cenu pro odběratele. Při nastavení úpravy ceny nebo slevy je nutné zkontrolovat, zda jsou cenové skupiny přiřazeny pro správné kanály, katalogy, umístění nebo věrnostní programy, u kterých mají být použity slevy. Dále, pokud potřebujete automaticky vygenerovat ID slevy, můžete před definováním nové slevy nebo úpravy ceny nastavit číselné řady na stránce **Parametry maloobchodu**. **Poznámka:** Úpravu ceny nebo slevu můžete odstranit. Dojde však ke ztrátě statistických údajů.
 
 ### <a name="types-of-discounts"></a>Typy slev
 

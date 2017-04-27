@@ -31,12 +31,12 @@ ms.lasthandoff: 03/31/2017
 
 Toto téma vysvětluje, jak můžete zaokrouhlit částky odpisu dlouhodobého majetku nahoru nebo dolů na nejbližší celé číslo. 
 
-Částky jsou zaokrouhleny nahoru nebo dolů, na základě hodnoty zadané v **zaokrouhlením odpisy** pole a metodu zaokrouhlení, která je určena v **Metoda zaokrouhlení** v **knih odpisů** stránky. Částky odpisů (x), který má **zaokrouhlením odpisy** (y hodnoty), částka odpisu (z) se počítá jako x ÷ y. Částka odpisu zaokrouhlena nahoru nebo dolů zaokrouhlí se počítá jako z x y. Například částka odpisu CZK 1,111.11 a **zaokrouhlením odpisy** hodnoty **1**, částka odpisu se vypočte jako CZK 1,111.11 ÷ 1 nebo CZK 1,111.11. Odpisů zaokrouhlené částky se počítá jako CZK 1,112 × 1 nebo CZK 1,112. Částka odpisu zaokrouhleno dolů se počítá jako CZK 1,111 × 1 nebo CZK 1,111. Následující tabulce jsou uvedeny částky odpisů zaokrouhlené a zaokrouhleno dolů různých částek odpisů a **zaokrouhlením odpisy** hodnoty.
+Částky odpisu jsou zaokrouhleny nahoru nebo dolů, na základě hodnoty zadané v poli **Zaokrouhlit odpis** a metody zaokrouhlení, která je určena v poli **Metoda zaokrouhlení** na stránce **Knihy odpisů**. Částka odpisu (x) s hodnotou **Zaokrouhlování odpisu** (y), se částka odpisu (z) vypočítá jako x ÷ y. Částka odpisu zaokrouhlená nahoru nebo dolů se počítá jako z × y. Například pro částku odpisu CZK 1 111.11 a hodnotu **Zaokrouhlování odpisu** **1** se částka odpisu vypočte jako CZK 1 111.11 ÷ 1 nebo CZK 1 111.11. Částka odpisu zaokrouhlená nahoru se počítá jako CZK 1 112 × 1 nebo CZK 1 112. Částka odpisu zaokrouhlená dolů se počítá jako CZK 1 111 × 1 nebo CZK 1 111. Následující tabulka uvádí částky odpisů zaokrouhlené nahoru a dolů pro různé částky odpisu a hodnoty **Zaokrouhlení odpisu**.
 
-|Odpisovaná částka (x)|Zaokrouhlení odpisu (y)|Částka odpisu (z = x ÷ y)|Normální způsob zaokrouhlení| Metoda zaokrouhlení směrem dolů|Způsob zaokrouhlování zaokrouhlení|
+|Odpisovaná částka (x)|Zaokrouhlení odpisu (y)|Částka odpisu (z = x ÷ y)|Normální metoda zaokrouhlování| Metoda zaokrouhlování dolů|Metoda zaokrouhlování nahoru|
 |-----------------------|-----------------------|-----------------------|-----------------------|-----------------------|-----------------------|
-|1,111.11 CZK|1|CZK 1,111.11 ÷ 1 = CZK 1,111.11|1,111.1 CZK|CZK 1,111.11 je zaokrouhleno k CZK 1,112. Částka odpisu konečný: 1,112 × 1 CZK = CZK 1,112|CZK 1,111.11 je zaokrouhleno dolů na CZK 1,111. Částka odpisu konečný: 1,111 × 1 CZK = CZK 1,111|
-|1,234.5 CZK|10|CZK 1,234.5 ÷ 10 = CZK 123.45|1,235 CZK|123,45 Kč je zaokrouhleno nahoru na 124 Kč. Částka odpisu konečný: CZK 124 × 10 = 1 240 CZK|123,45 Kč je zaokrouhleno dolů na 123 Kč. Částka odpisu konečný: CZK 123 × 10 = 1 230 CZK|
+|1 111,11 Kč|1|CZK 1 111.11 ÷ 1 = CZK 1 111.11|1 111,1 Kč|1 111,11 Kč je zaokrouhleno nahoru na 1 112 Kč. Výsledná částka odpisu: CZK 1 112 × 1 = CZK 1 112|1 111,11 Kč je zaokrouhleno dolů na 1 111 Kč. Výsledná částka odpisu: CZK 1 111 × 1 = CZK 1 111|
+|1 234,5 Kč|10|CZK 1 234.5 ÷ 10 = CZK 123,45|1 235 Kč|123,45 Kč je zaokrouhleno nahoru na 124 Kč. Výsledná částka odpisu: CZK 124 × 10 = CZK 1 240|123,45 Kč je zaokrouhleno dolů na 123 Kč. Výsledná částka odpisu: CZK 123 × 10 = CZK 1 230|
 
 
 

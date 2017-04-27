@@ -43,11 +43,11 @@ Dlaždice **Souhrnu** poskytují přehled o fakturách pro vybraného dodavatele
 Klepnutím na dlaždici otevřete filtrované zobrazení stránky **seznamu faktur**.
 ### <a name="tabular-lists"></a>Tabulkový seznam
 
-V oddíle **Tabulkové seznamy **se stav fakturace rozděluje podobným způsobem jako dlaždice souhrnu: návrhy a odeslané ale neschválené seznamy. Ve stavu návrhu lze fakturu přijmout do workflowu nebo odstranit. Poslední Tabulární seznam je možnost vyhledání faktury. Při hledání umožňující rychlejší vyhledávání můžete filtrovat.
+V oddíle **Tabulkové seznamy **se stav fakturace rozděluje podobným způsobem jako dlaždice souhrnu: návrhy a odeslané ale neschválené seznamy. Ve stavu návrhu lze fakturu přijmout do workflowu nebo odstranit. Poslední tabulkový seznam je možnost pro vyhledání faktur. Při hledání můžete filtrovat, což umožňuje rychlejší vyhledávání.
 Stránka seznamu všech faktur dodavatelů
 -----------------------------
 
-Můžete zobrazit všechny dodavatele zaúčtované a nezaúčtované faktury na **faktur dodavatele spolupráce** stránku seznamu. Chcete-li zobrazit stav platby faktur, můžete tuto stránku seznamu. Stavy plateb zahrnují nezaúčtované, nezaplacené, částečně zaplacené a plně zaplacené.
+Můžete zobrazit všechny zaúčtované a nezaúčtované faktury dodavatele na stránce seznamu **Faktury dodavatelské spolupráce**. Tuto stránku se seznamem můžete použít, chcete-li zobrazit stav platby faktur. Stavy plateb zahrnují nezaúčtované, nezaplacené, částečně zaplacené a plně zaplacené.
 Vytvořit novou fakturu z nákupní objednávky
 --------------------------------------------
 
@@ -55,6 +55,6 @@ Novou fakturu dodavatele můžete vytvořit, pokud vyberete akci **Nová** v pra
 
 
 
-Další informace naleznete v tématu [spolupráce s dodavateli pomocí portálu pro dodavatele](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
+Další informace naleznete v tématu [Spolupráce s dodavateli pomocí portálu pro dodavatele](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
 
 

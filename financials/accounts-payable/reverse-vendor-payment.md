@@ -33,9 +33,9 @@ ms.lasthandoff: 03/31/2017
 
 Tento článek popisuje rozdíly mezi stornováním, odstraněním, anulováním a odmítnutím platby. Dále popisuje dva způsoby stornování kontroly dodavatele. 
 
-V některých případech po zaúčtování platby dodavatele se platba musí vrátit. Vrácení se liší od odstranění, anulování nebo zamítnutí platby. Platbu můžete odstranit pouze v případě, že je ve stavu **Vytvořeno**. Tento stav označuje, že platba byla vytvořena, ale ještě nebyl vytvořen. Toto omezení vždy platí bez ohledu na způsob platby. Nezaúčtované šeky můžete rušit po byl vygenerován, ale před jejich zaúčtováním. Pokud generované platby se provádí jako přenosu elektronických fondu (EFT), můžete před zaúčtováním platby zamítnout. K odmítnutí platby, změna **stav platby** hodnoty. Platbu, která byla zrušena nebo odmítnuta, mohou vytvořit znovu po **stav platby** hodnota je převeden zpět do **žádný**. 
+V některých případech po zaúčtování platby dodavatele se platba musí vrátit. Vrácení se liší od odstranění, anulování nebo zamítnutí platby. Platbu můžete odstranit pouze v případě, že je ve stavu **Vytvořeno**. Tento stav označuje, že platba byla vytvořena, ale ještě nebyla vygenerována. Toto omezení platí vždy, bez ohledu na způsob platby. Můžete zrušit neodeslané šeky poté, co byly vygenerovány, ale předtím, než budou odeslány. Pokud se vygenerovaná platba provádí jako elektronický převod prostředků (EFT), platbu můžete odmítnout ještě před odesláním. Pokud chcete odmítnout platbu, změnte hodnotu **Stavu platby**. Platba, která byla zrušena nebo odmítnuta, může být obnovena nastavením **Stavu platby** na hodnotu **Žádná**. 
 
-Po zaúčtování platby se používají storna. Platby, které jsou provedeny elektronicky nelze vrátit zpět, co byla zaúčtována. Místo toho je nutné vytvořit novou transakci množství platby získat odpovědnost zpět na účet dodavatele. Existují dvě metody pro stornování zaúčtovaných šeků. V jedné metodě jsou storna účtována okamžitě po klepnutí na tlačítko **Storno platby** na stránce **Zkontrolovat**. Ve druhé metodě bude po klepnutí na tlačítko **Storno plateb** na stránce **Zkontrolovat** stornovaná transakce odeslána do deníku stornování šeků v modulu Správa hotovosti a banky, kde poté může posuzující uživatel tuto stornovanou transakci zaúčtovat nebo zrušit. 
+Po odeslání platby se použijí reverzace. Platby, které jsou provedeny elektronicky nelze již po odeslání vrátit zpět. Namísto toho musí být vytvořena nová transakce na danou částku, aby se závazek vrátil zpět na účet dodavatele. Pro stornování zaúčtovaných šeků jsou k dispozici dvě metody. V jedné metodě jsou storna účtována okamžitě po klepnutí na tlačítko **Storno platby** na stránce **Zkontrolovat**. Ve druhé metodě bude po klepnutí na tlačítko **Storno plateb** na stránce **Zkontrolovat** stornovaná transakce odeslána do deníku stornování šeků v modulu Správa hotovosti a banky, kde poté může posuzující uživatel tuto stornovanou transakci zaúčtovat nebo zrušit. 
 
 Informace o metodě, kterou vaše organizace používá, naleznete na stránce **Parametry pokladny a banky**. Pokud je možnost **Použít proces kontroly pro storna plateb** nastavena na **Ano**, jsou storna odesílána ke kontrole deníku stornování šeků. Následující tabulka popisuje, jak se metody stornování šeků liší.
 
@@ -60,7 +60,7 @@ Jste-li uživatelem, který kontroluje storna, můžete buď schválit a zaúčt
 -   Chcete-li storno odmítnout, odstraňte deník storna šeku.
 
 > [!NOTE]
-> Pokud odstraníte deník, Storno je odebrán ze systému, ale zůstane původní šek na **kontrola** stránky. Šek již poté nebude ve stavu **Čekající zrušení**.
+> Pokud odstraníte deník, storno se odstraní ze systému, ovšem původní šek zůstane na stránce **Šek**. Šek již poté nebude ve stavu **Čekající zrušení**.
 
 ## <a name="results-of-posting-a-reversal"></a>Výsledky zaúčtování storna
 Při zaúčtování storna dojde k následujícím akcím:

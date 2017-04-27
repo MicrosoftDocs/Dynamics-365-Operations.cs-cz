@@ -30,7 +30,7 @@ ms.lasthandoff: 03/29/2017
 
 Tento článek obsahuje informace o definicích sestavy. Definice sestavy představuje součást sestavy (nebo stavební blok), který využívá definici řádku, definici sloupce a volitelně definici stromu výkaznictví pro vytvoření sestavy. Definice sestavy také poskytuje možnosti a nastavení pro přizpůsobení sestavy. 
 
-Definice sestavy představuje součást sestavy (nebo stavební blok), který využívá definici řádku, definici sloupce a volitelně definici stromu výkaznictví pro vytvoření sestavy. Definice sestavy obsahuje také volby a nastavení, které můžete použít k úpravě sestavy. Po definování definic řádků a sloupců je musíte zkombinovat do definice sestavy. V tomto okamžiku můžete také definovat další aspekty definic, například úroveň podrobností a datum sestavy. Poté můžete sestavu uložit a vygenerovat. Finanční výkaznictví nabízí následující úrovně podrobností:
+Definice sestavy představuje součást sestavy (nebo stavební blok), který využívá definici řádku, definici sloupce a volitelně definici stromu výkaznictví pro vytvoření sestavy. Definice sestavy také nabízí možnosti a nastavení, které můžete použít pro přizpůsobení sestavy. Po definování definic řádků a sloupců je musíte zkombinovat do definice sestavy. V tomto okamžiku můžete také definovat další aspekty definic, například úroveň podrobností a datum sestavy. Poté můžete sestavu uložit a vygenerovat. Finanční výkaznictví nabízí následující úrovně podrobností:
 
 -   Finanční
 -   Finanční a účetní
@@ -89,6 +89,6 @@ V následující tabulce jsou popsány karty v definici sestavy a způsob použi
 <a name="see-also"></a>Viz také
 --------
 
-[Finanční vykazování pro 365 Microsoft Dynamics pro operace](financial-reporting-intro.md)
+[Finanční výkaznictví v aplikaci Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
 
 

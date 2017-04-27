@@ -1,6 +1,6 @@
 ---
-title: "Nové nebo aktualizované úkoly vodítka (srpen 2016)"
-description: "Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydané společnosti Microsoft (srpen 2016 - všechny jazyky) knihovna Unified APQC pro aplikaci Microsoft Dynamics AX. Nebyly vydány žádné nové knihovny Začínáme."
+title: "Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)"
+description: "Toto téma obsahuje nové nebo aktualizované průvodce úkolem vydané pro knihovnu Microsoft APQC Unified Library (srpen 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics AX. Nebyly vydány žádné nové knihovny Začínáme."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,17 +24,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-august-2016"></a>Nové nebo aktualizované úkoly vodítka (srpen 2016)
+# <a name="new-or-updated-task-guides-august-2016"></a>Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydané společnosti Microsoft (srpen 2016 - všechny jazyky) knihovna Unified APQC pro aplikaci Microsoft Dynamics AX. Nebyly vydány žádné nové knihovny Začínáme.
+Toto téma obsahuje nové nebo aktualizované průvodce úkolem vydané pro knihovnu Microsoft APQC Unified Library (srpen 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics AX. Nebyly vydány žádné nové knihovny Začínáme.
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Úloha provede v (srpen 2016 - všechny jazyky) knihovna Unified APQC pro aplikaci Microsoft Dynamics AX
+<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Průvodci úkolem v knihovně APQC Unified Library pro Microsoft Dynamics AX (srpen 2016 – všechny jazyky)
 ---------------------------------------------------------------------------------------------------
 
-(Srpen 2016 - všechny jazyky) APQC Unified knihovna obsahuje vodítka úloh, které jsou určeny pro použití nápovědy s aktualizace platformy Microsoft Dynamics AX 2 (srpen 2016), Dynamics AX 2016 aplikace mohou aktualizovat a vydání únor 2016 aplikace Microsoft Dynamics AX. Další informace o těchto vydáních naleznete v tématu [co je nové nebo změněné](whats-new-changed.md). V této knihovně jsou k dispozici lokalizované verze tohoto úkolu vodítka. Další informace o tom, jak připojit systém nápovědy ke knihovně příručka úloh naleznete v tématu [seznámení s pomocí](help-overview.md).
+Knihovna APQC Unified Library (srpen 2016 – všechny jazyky) obsahuje průvodce úkolem, kteří jsou určeni k použití pro nápovědu v aktualizaci 2 platformy Microsoft Dynamics AX (srpen 2016), aktualizaci Dynamics AX z května 2016 a vydání aplikace Microsoft Dynamics AX pro únor 2016. Další informace o těchto verzích najdete v tématu [Co je nového nebo co se změnilo](whats-new-changed.md). V této knihovně jsou k dispozici lokalizované verze průvodců záznamem úloh. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Začínáme s nápovědou](help-overview.md).
 
 ### <a name="data-access"></a>Přístup k datům
 
@@ -100,11 +100,11 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 <a name="see-also"></a>Viz také
 --------
 
-[Nový úkol provede (únor 2016)](new-task-guides-available-february-2016.md)
+[Noví průvodci úkolem (únor 2016)](new-task-guides-available-february-2016.md)
 
-[Nové nebo aktualizované úkoly provede (květen 2016)](new-updated-task-guides-available-may-2016.md)
+[Noví nebo aktualizovaní průvodci úkolem (květen 2016)](new-updated-task-guides-available-may-2016.md)
 
-[Nové nebo aktualizované úkoly provede (listopad 2016)](new-task-guides-november-2016.md)
+[Noví nebo aktualizovaní dostupní průvodci úkolem (listopad 2016)](new-task-guides-november-2016.md)
 
 
 

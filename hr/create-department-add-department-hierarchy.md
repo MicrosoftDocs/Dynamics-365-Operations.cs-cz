@@ -33,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 Oddělení je provozní jednotka, která představuje kategorie nebo funkční oblasti organizace. Oddělení je zodpovědný za určitou oblast organizace, jako například prodej, účtování nebo lidské zdroje. Oddělení můžete použít k sestavování funkčních oblastí. Oddělení mohou mít odpovědnost ze zisků a ztrát.
 
-Oddělení mohou obsahovat i skupinu nákladových středisek. Pozice lze přiřadit k oddělení. Vytvořit oddělení, klepněte na **lidských zdrojů**&gt;**oddělení**&gt;**oddělení**. Následující tabulka popisuje pole, která jsou k dispozici.
+Oddělení mohou obsahovat i skupinu nákladových středisek. Pozice lze přiřadit k oddělení. Chcete-li vytvořit oddělení, klikněte na možnost **Lidské zdroje** &gt; **Oddělení** &gt; **Oddělení**. V následující tabulce jsou popsána pole, která jsou k dispozici.
 
 | Pole               | Popis                                                                                                                                                                                                       |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -49,12 +49,12 @@ Oddělení mohou obsahovat i skupinu nákladových středisek. Pozice lze přiř
 
 Pro přidání oddělení do hierarchie oddělení postupujte takto:
 
-1.  Klepněte na tlačítko **lidských zdrojů**&gt;**oddělení**&gt;**hierarchie oddělení**.
+1.  Klikněte na nabídku **Lidské zdroje** &gt; **Oddělení** &gt; **Hierarchie oddělení**.
 2.  Klepněte na tlačítko **Upravit**a poté vyberte organizaci, pod kterou má oddělení spadat.
 3.  Klepněte na tlačítko **Vložit**a v seznamu vyberte **Oddělení**.
 4.  V zobrazeném seznamu oddělení vyberte oddělení, které chcete přidat do hierarchie.
 5.  Uložte změny. Obdržíte zprávu, že byla vytvořena pracovní verzi hierarchie.
-6.  Jakmile budete připraveni, klepněte na tlačítko **publikovat** v návrháři hierarchie. Můžete zadat datum začátku platnosti označuje, kdy by měly být zveřejňovány v hierarchii. Například chcete-li přidat nové oddělení na začátku dalšího kalendářního roku, nastavte platné datum od 1. ledna nového kalendářního roku. Změny hierarchie se projeví k tomuto datu.
+6.  Po dokončení práce klikněte v návrháři hierarchie na tlačítko **Publikovat**. Můžete zadat datum začátku platnosti, které určuje, kdy má být hierarchie publikována. Například chcete-li přidat nové oddělení na začátku dalšího kalendářního roku, nastavte platné datum od 1. ledna nového kalendářního roku. Změny hierarchie se projeví k tomuto datu.
 
 
 

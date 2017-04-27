@@ -47,7 +47,7 @@ Vaše volba určí, jaké možnosti budou dostupné v poli **Frekvence období**
 
 V poli **Odpisový rok** můžete ponechat výchozí hodnotu **Kalendářní**. 
 
-Možnost **Kalendářní** aktualizuje odpisovou základnu 1. ledna každého roku. Odpis je obvykle čistá účetní hodnota mínus konečná zůstatková hodnota. V níže uvedených příkladech této kapitoly je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. 
+Možnost **Kalendářní** aktualizuje odpisovou základnu 1. ledna každého roku. Odpis obvykle zůstatková účetní hodnota mínus likvidační hodnota. V níže uvedených příkladech této kapitoly je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. 
 
 Vyberete-li jako odpisový rok možnost **Kalendář**, v poli **Frekvence období** jsou k dispozici následující možnosti:
 
@@ -61,7 +61,7 @@ Vyberete-li jako odpisový rok možnost **Kalendář**, v poli **Frekvence obdob
 
 Vyberete-li možnost **Fiskální** v poli **Odpisový rok**, degresivní odpis 200 % je vypočten na základě fiskálního roku pro fiskální kalendář, který je určen pro knihu, nebo pro fiskální kalendář, který je vybrán na stránce **Hlavní kniha**. Fiskální kalendáře se nastavují na stránce **Fiskální kalendáře**. 
 
-Například pro fiskální rok, 1. července až 30. června, výpočet odpisů začíná datem 1. Fiskální rok může být delší nebo kratší než 12 měsíců. Odpisy se upravují pro jednotlivá období. Délka dalšího fiskálního roku záleží na nastavení období na stránce **Fiskální kalendáře**. 
+Například pro fiskální rok od 1. července do 30. června začíná výpočet odpisů datem 1. července. Fiskální rok může být delší nebo kratší než 12 měsíců. Odpisy se upravují pro jednotlivá období. Délka dalšího fiskálního roku záleží na nastavení období na stránce **Fiskální kalendáře**. 
 
 Vyberete-li jako odpisový rok možnost **Fiskální**, v poli **Frekvence období** jsou k dispozici následující možnosti:
 
@@ -86,7 +86,7 @@ Metoda degresivního odepisování 200 % vydělí 200 procent počtem roků živ
 | Rok 3 | 3 600 × 40% = 1 440                           | 4 600 – 1 440 = 3 160  | 3 600 – 1 440 = 2 160                 |
 
 > [!NOTE] 
-> Obvykle, když částka, která se vypočítá pomocí 200 % degresivní metody odpisu se stane menší než částka, kterou by vypočítat pomocí lineární metody nedojde k převodu metody přímou čáru pro zbývající životnost.
+> Když částka vypočtená s použitím metody 200% degresivního odpisování klesne pod hodnotu menší než má částka, která by byla vypočtena s použitím lineární metody, obvykle dojde k převodu na lineární metodu pro zbytek životnosti.
 
 
 

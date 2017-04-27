@@ -1,5 +1,5 @@
 ---
-title: "Skupiny výpočtu Kusovníku"
+title: "Skupiny výpočtů kusovníku"
 description: "Tento článek obsahuje informace o skupinách výpočtu kusovníků, a o tom, jak je nastavit. Pro spuštění výpočtu kusovníku musíte buď nastavit skupiny kalkulace a přiřadit je k jednotlivým položkám, nebo nastavit výchozí skupinu výpočtu. Nastavení výpočtu ze skupiny výpočtu jsou použita jako výchozí hodnoty na stránce Kalkulace kusovníku v době výpočtu kusovníku."
 author: YuyuScheller
 manager: AnnBe
@@ -26,14 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bom-calculations-groups"></a>Skupiny výpočtu Kusovníku
+# <a name="bom-calculations-groups"></a>Skupiny výpočtů kusovníku
 
 [!include[banner](../includes/banner.md)]
 
 
 Tento článek obsahuje informace o skupinách výpočtu kusovníků, a o tom, jak je nastavit. Pro spuštění výpočtu kusovníku musíte buď nastavit skupiny kalkulace a přiřadit je k jednotlivým položkám, nebo nastavit výchozí skupinu výpočtu. Nastavení výpočtu ze skupiny výpočtu jsou použita jako výchozí hodnoty na stránce Kalkulace kusovníku v době výpočtu kusovníku. 
 
-Uvedení výchozí skupiny výpočtu je požadováno na stránce **Parametry řízení zásob a skladu**, nebo je požadována skupina výpočtu konkrétních produktů na stránce **Podrobnosti o uvolněném produktu**. Systém nejprve hledá skupinu nastavení výpočtu na **vydala podrobnosti o produktu** stránky. Pokud není nalezena skupina výpočtu došlo, vypadá na **parametry řízení zásob a skladu** stránky. Pokud systém nemůže najít skupiny výpočtu, uživatel obdrží chybovou zprávu během výpočtu. Skupina výpočtu obsahuje zásady pro model nákladové ceny, model prodejní ceny a kontrolní seznam upozornění. Nastavení výpočtu ze skupiny výpočtu jsou použita jako výchozí hodnoty na stránce **Kalkulace kusovníku** v době výpočtu kusovníku.
+Uvedení výchozí skupiny výpočtu je požadováno na stránce **Parametry řízení zásob a skladu**, nebo je požadována skupina výpočtu konkrétních produktů na stránce **Podrobnosti o uvolněném produktu**. Systém nejprve hledá nastavení skupiny výpočtu na stránce **Podrobnosti o uvolněném produktu**. Pokud není skupina výpočtu nalezena, prohledá stránku **Parametry řízení zásob a skladu**. Pokud systém nenalezne skupinu výpočtu, uživatel obdrží během výpočtu chybovou zprávu. Skupina výpočtu obsahuje zásady pro model nákladové ceny, model prodejní ceny a kontrolní seznam upozornění. Nastavení výpočtu ze skupiny výpočtu jsou použita jako výchozí hodnoty na stránce **Kalkulace kusovníku** v době výpočtu kusovníku.
 
 ## <a name="purposes-of-bom-calculation-groups"></a>Účely skupin výpočtu kusovníku
 Skupinu výpočtu kusovníku k položkám lze přiřadit z několika důvodů:
@@ -75,7 +75,7 @@ Na pevné záložce **Upozornění** vyberte možnosti pro všechny zprávy s up
 Výchozí nastavení parametrů modulu Řízení zásob a skladu
 --------------------------------------------------------------
 
-Vzhledem k tomu, že jsou skupiny výpočtů požadovány pro spuštění výpočtů, musíte nastavit výchozí skupinu výpočtu v parametrech řízení zásob. Toto nastavení umožňuje společnostem využívat standardní nákladovou skupinu a nastavení zisku pro všechny položky. Má-li poté některá položka zvláštní požadavky na výpočet, uživatel může přiřadit jinou výpočetní skupinu k dané položce. Obvykle můžete nastavit skupiny výpočtů u položek součástí kusovníku namísto u položek kusovníku. Nicméně pokud se zobrazí upozornění, lze použít skupiny výpočtů. Skupina výpočtu, která je přiřazena ke zboží, přepíše výchozí hodnotu, která je nastavena v parametrech řízení zásob. Můžete nastavit výchozí parametr v **nákladů řízení**&gt;**nastavení zásady účtování zásob**&gt;**parametry**&gt;**skladového účetnictví**&gt;**skupina výpočtu**. Nastavením výchozí skupiny konfigurace můžete také nakonfigurovat podmínky pro upozornění, které se zobrazí uživatelům během procesu výpočtu kusovníku, pokud vybrané součásti mohou způsobit chyby ve výpočtu.
+Vzhledem k tomu, že jsou skupiny výpočtů požadovány pro spuštění výpočtů, musíte nastavit výchozí skupinu výpočtu v parametrech řízení zásob. Toto nastavení umožňuje společnostem využívat standardní nákladovou skupinu a nastavení zisku pro všechny položky. Má-li poté některá položka zvláštní požadavky na výpočet, uživatel může přiřadit jinou výpočetní skupinu k dané položce. Obvykle můžete nastavit skupiny výpočtů u položek součástí kusovníku namísto u položek kusovníku. Nicméně pokud se zobrazí upozornění, lze použít skupiny výpočtů. Skupina výpočtu, která je přiřazena ke zboží, přepíše výchozí hodnotu, která je nastavena v parametrech řízení zásob. Výchozí parametr můžete nastavit v části **Řízení nákladů** &gt; **Nastavení zásad skladového účetnictví** &gt; **Parametry** &gt; **Skladové účetnictví** &gt; **Skupina výpočtu**. Nastavením výchozí skupiny konfigurace můžete také nakonfigurovat podmínky pro upozornění, které se zobrazí uživatelům během procesu výpočtu kusovníku, pokud vybrané součásti mohou způsobit chyby ve výpočtu.
 Zobrazení upozornění na stránce Dokončeno
 ------------------------------------------
 

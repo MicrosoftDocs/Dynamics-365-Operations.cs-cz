@@ -1,6 +1,6 @@
 ---
-title: "Zabezpečení pro uživatele portálu dodavatele"
-description: "V tomto článku se vysvětluje, jak nastavit zabezpečení pro externí dodavatele, kteří používají portál pro dodavatele. Tyto informace platí pouze pro únor 2016 &amp;května 2016 verze aplikace Dynamics AX."
+title: "Zabezpečení uživatele portálu pro dodavatele"
+description: "V tomto článku se vysvětluje, jak nastavit zabezpečení pro externí dodavatele, kteří používají portál pro dodavatele. Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,14 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="vendor-portal-user-security"></a>Zabezpečení pro uživatele portálu dodavatele
+# <a name="vendor-portal-user-security"></a>Zabezpečení uživatele portálu pro dodavatele
 
 [!include[banner](../includes/banner.md)]
 
 
-V tomto článku se vysvětluje, jak nastavit zabezpečení pro externí dodavatele, kteří používají portál pro dodavatele. Tyto informace platí pouze pro únor 2016 &amp;května 2016 verze aplikace Dynamics AX.
+V tomto článku se vysvětluje, jak nastavit zabezpečení pro externí dodavatele, kteří používají portál pro dodavatele. Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016.
 
-Dodavatele rozšířené funkce spolupráce v Dynamics 365 verzi operace 1611 byla nahrazena funkce portálu dodavatele. Další informace o nastavení zabezpečení pro spolupráci dodavatele naleznete v tématu [Set up a udržovat spolupráci dodavatele](set-up-maintain-vendor-collaboration.md). Portál pro dodavatele poskytuje omezenou sadu informací o nákupních objednávkách (POs) pro externí dodavatele. Je důležité, aby byla správně nastavena oprávnění uživatelů k portálu pro dodavatele v aplikaci Microsoft Dynamics AX, aby dodavatelé neměli nežádoucí přístup k dalším informacím v instalaci aplikace Dynamics AX. **Upozornění:** Na rozdíl od jiných uživatelů externí dodavatelé nemají roli **Systémový uživatel**. Role **Systémový uživatel** poskytuje přístup ke skupině oprávnění, která nejsou vhodná pro externí uživatele.
+Funkce portálu dodavatele byla v Dynamics 365 for Operations verze 1611 nahrazena rozšířenou funkcí spolupráce dodavatelů. Další informace o nastavení zabezpečení pro dodavatelskou spolupráci naleznete v tématu [Nastavení a správa dodavatelské spolupráce](set-up-maintain-vendor-collaboration.md). Portál pro dodavatele poskytuje omezenou sadu informací o nákupních objednávkách (POs) pro externí dodavatele. Je důležité, aby byla správně nastavena oprávnění uživatelů k portálu pro dodavatele v aplikaci Microsoft Dynamics AX, aby dodavatelé neměli nežádoucí přístup k dalším informacím v instalaci aplikace Dynamics AX. **Upozornění:** Na rozdíl od jiných uživatelů externí dodavatelé nemají roli **Systémový uživatel**. Role **Systémový uživatel** poskytuje přístup ke skupině oprávnění, která nejsou vhodná pro externí uživatele.
 
 ## <a name="setting-up-a-vendor-portal-user"></a>Nastavení uživatele dodavatelského portálu
 Před vytvořením uživatelského účtu pro někoho, kdo bude používat portál pro dodavatele, musíte povolit dodavatele pro spolupráci s portálem pro dodavatele. Použijte pole **Spolupráce v rámci nákupní objednávky** na kartě **Obecné** na stránce **Dodavatelé**. Externí dodavatelé, kteří používají portál pro dodavatele musí mít následující nastavení:
@@ -47,7 +47,7 @@ Jestliže stejná osoba vyžaduje přístup k portálu pro dodavatele pro více 
 <a name="see-also"></a>Viz také
 --------
 
-[Vendor collaboration](collaborate-vendors-vendor-portal.md)
+[Dodavatelská spolupráce](collaborate-vendors-vendor-portal.md)
 
 
 

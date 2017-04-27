@@ -1,6 +1,6 @@
 ---
 title: "Nastavení mezipodnikového účetnictví"
-description: "Toto téma vysvětluje, jak nastavit mezipodnikové účetnictví, takže můžete provádět mezipodnikové deníky přidělení hlavní knihy a finanční deníky, například deníky, deníky faktur dodavatele a deníky plateb."
+description: "Toto téma vysvětluje, jak se nastavuje mezipodnikové účetnictví tak, abyste mohli používat mezipodnikové deníky k přidělování knih a finančních deníků, jako jsou každodenní deníky, deníky faktur dodavatele a platební deníky."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -30,24 +30,24 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma vysvětluje, jak nastavit mezipodnikové účetnictví, takže můžete provádět mezipodnikové deníky přidělení hlavní knihy a finanční deníky, například deníky, deníky faktur dodavatele a deníky plateb.
+Toto téma vysvětluje, jak se nastavuje mezipodnikové účetnictví tak, abyste mohli používat mezipodnikové deníky k přidělování knih a finančních deníků, jako jsou každodenní deníky, deníky faktur dodavatele a platební deníky.
 
-Mezipodnikových deníků lze vytvořit v různých situacích, jako například pro denní deníky, deníky faktur dodavatele, přidělení hlavní knihy a centralizované platby. Chcete-li tyto scénáře povolit, je třeba nastavit mezipodnikové účetnictví.
+Mezipodnikové deníky lze vytvářet podle řady scénářů, například pro každodenní deníky, deníky faktur dodavatele, přidělování hlavní knihy a centralizované platby. Chcete-li tyto scénáře povolit, je třeba nastavit mezipodnikové účetnictví.
 
 ## <a name="define-main-accounts"></a>Definování hlavních účtů
-Nejprve je nutné vytvořit mezipodnikové hlavní účty, které se použijí pro účetní položky Závazky a Pohledávky. Je vhodné použít jedinečné hlavní účty pro každou společnost, aby se zjednodušilo odsouhlasení a eliminace mezipodnikových účetních položek. Pokud používáte k identifikaci mezipodnikové strana obchodního partnera nebo protějšek dimenze, můžete definovat tuto dimenzi jako pevná dimenze na hlavní účet, který je definován v mezipodnikové účetnictví. Při nastavení hlavních účtů byste měli nastavit **typ účtu hlavní** na **rozvaha** na **hlavní účty** stránky.
+Nejprve je nutné vytvořit mezipodnikové hlavní účty, které se použijí pro účetní položky Závazky a Pohledávky. Je vhodné použít jedinečné hlavní účty pro každou společnost, aby se zjednodušilo odsouhlasení a eliminace mezipodnikových účetních položek. Pokud k identifikaci mezipodnikové strany používáte dimenzi obchodního partnera nebo protistrany, můžete tuto dimenzi definovat jako pevnou dimenzi v hlavním účtu, který je definován v mezipodnikovém účtování. Při nastavování hlavních účtů byste měli nastavit hodnotu v poli **Typ hlavního účtu** na **Rozvaha** na stránce **Hlavní účty**.
 
 ## <a name="define-journal-names"></a>Definování názvů deníků
-Dále je třeba definovat název deníku. Nastavit **typ deníku** na **denní** na **názvy deníku** stránky. Je vhodné používat konkrétní název deníku pro mezipodnikové účetnictví.
+Dále je třeba definovat název deníku. Nastavte hodnotu v poli **Typ deníku** na **Každodenní** na stránce **Názvy deníků**. Je vhodné používat konkrétní název deníku pro mezipodnikové účetnictví.
 
-## <a name="define-intercompany-accounting-setup"></a>Definovat nastavení mezipodnikového účetnictví
-**Mezipodnikové účetnictví** stránky se používá k vytvoření dvojice právnických osob, které mohou provádět transakce s sebou. Mezipodnikové účtování nastavení sdílen, instalační program je viditelné ve všech právnických osobách. Při vytváření nové dvojice právnické osoby, zajistěte, že jste si vědomi které právnická osoba je definována jako původní společnost versus cílové společnosti. Při zadávání mezipodnikové transakce, transakce Určuje, které právnické osoby je zahájení nebo původní transakce. Mezipodnikové účtování je například nastavit USMF (původem) a USSI (cíl). Pokud uživatel zadá mezipodnikovou transakci s USMF a je aktivní v USSI transakce nezaúčtuje protože mezipodnikové účetnictví je definována pouze pro USMF je původcem. Transakce může pocházet buď společnosti, musíte vytvořit druhý pár právnické osoby pro vzájemné nastavení. 
+## <a name="define-intercompany-accounting-setup"></a>Definování nastavení mezipodnikového účetnictví
+Stránka **Mezipodnikové účetnictví** slouží k vytvoření dvojic právnických osob, které mohou provádět vzájemné transakce. Nastavení Mezipodnikové účetnictví je sdílené, takže ho vidí všechny právnické osoby. Při vytváření nové dvojice právnických osob si musíte být vědomi, která právnická osoba je definována jako původní společnost versus cílové společnosti. Při zadávání mezipodnikových transakcí transakce určuje, která právnická osoba transakci zahajuje nebo od které transakce pochází. Mezipodnikové účtování je například nastavení pro USMF (původní) a USSI (cílová). Pokud je uživatel aktivní v USSI a zadá mezipodnikovou transakci s USMF, transakce se nezaúčtuje, protože mezipodnikové účetnictví je definováno pouze pro USMF, které je původcem. Pokud může být původcem transakce některá ze společností, budete muset vytvořit druhý pár právnických osob pro vzájemné nastavení. 
 
-Vyberte **účet má dáti (Pohledávky)** a **Dal účet (kvůli)** pro právnickou osobu výchozím a cílovým. Definujte, které **název deníku** bude použit při vytvoření transakce v cílové společnosti. Deník pro původní společnost je již znám, protože je vybrán uživatelem při vytváření mezipodnikových transakcí. 
+Vyberte **Účet má dáti (Pohledávky)** a **Dal účet (Závazky)** pro právnickou osobu, která je původcem i příjemcem. Definujte, který **Název deníku** bude použit při vytvoření transakce v cílové společnosti. Deník pro původní společnost je již znám, protože je vybrán uživatelem při vytváření mezipodnikových transakcí. 
 
-Nakonec vyberte, které právnická osoba obdrží účetní pro podporu částky, například platební slevy pro centralizované platby realizované zisky/ztráty. 
+Nakonec vyberte, které právnická osoba obdrží účetnictví na podporu částek, jako jsou platební slevy pro centralizované platby realizované zisky/ztráty. 
 
-Vzájemných vztahů lze snadno nastavit na **mezipodnikové účetnictví** stránku pomocí **vytvoření vzájemného vztahu** tlačítko po vytvoření první pár právnické osoby. Při vzájemném pár informací o cílové společnosti zkopírován na původní společnost a naopak. Deníku definovány pro cílovou společnost zůstane. Většina organizací používá stejné konvence pro názvy deníku tak, aby název deníku je stejný. Název deníku se liší, zobrazí se upozornění na pole s upozorněním, který neexistuje v deníku a jiný Deník lze vybrat.
+Vzájemný vztah lze snadno nastavit na stránce **Mezipodnikové účetnictví** pomocí tlačítka **Vytvořit vzájemný vztah** tlačítko po vytvoření prvního páru právnické osoby. Při vytvoření vzájemné dvojice budou informace o cílové společnosti zkopírovány do původní společnosti a naopak. Deníku definovaný pro cílovou společnost zůstane. Většina organizací používá stejné konvence pojmenování pro své názvy deníku takže název deníku je stejný. Pokud se název deníku liší, zobrazí se upozornění v poli s upozorněním, že deník neexistuje a lze vybrat jiný deník.
 
 
 

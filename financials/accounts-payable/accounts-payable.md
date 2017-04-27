@@ -1,6 +1,6 @@
 ---
 title: "Domovská stránka Závazků"
-description: "Toto téma obsahuje přehled závazků."
+description: "Toto téma poskytuje přehled závazků."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -30,9 +30,9 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma obsahuje přehled závazků.
+Toto téma poskytuje přehled závazků. 
 
-Faktury dodavatele můžete zadat ručně nebo je lze obdržet elektronickou cestou prostřednictvím datové entity. Po zadání nebo přijaté faktury můžete zkontrolovat a schválit faktury pomocí deníku schválení faktury nebo **faktur dodavatele** stránky. Můžete použít párování faktur, zásady faktur dodavatele a workflow k automatizaci procesu kontroly tak, aby se automaticky schvalovaly faktur, které splňují určitá kritéria, a zbývajících faktury jsou označeny ke kontrole autorizovaným uživatelem.
+Faktury dodavatele můžete zadat ručně nebo je lze obdržet elektronickou cestou prostřednictvím datové entity. Poté, co jsou faktury zadány nebo přijaty, můžete zkontrolovat a schválit faktury pomocí deníku schválených faktur nebo stránky **Faktura dodavatele**. Můžete použít párování faktur, zásady faktur dodavatele a workflow k automatizaci procesu kontroly tak, aby se automaticky schvalovaly faktur, které splňují určitá kritéria, a zbývajících faktury jsou označeny ke kontrole autorizovaným uživatelem.
 
 
 

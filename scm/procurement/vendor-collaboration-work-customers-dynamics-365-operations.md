@@ -32,12 +32,12 @@ ms.lasthandoff: 03/31/2017
 
 Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci s nákupními objednávkami v aplikaci Microsoft Dynamics 365 for Operations ke sledování zásob na skladě.
 
-Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci se zákazníky v aplikaci Microsoft Dynamics 365 for Operations. Obsahuje informace o sledování a odpovídání na nákupní objednávky a sledování šarže zásob. Je také možné použít pro práci s fakturami spolupráce dodavatele. Další informace naleznete v tématu [fakturace pracovní prostor spolupráce dodavatele](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
+Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci se zákazníky v aplikaci Microsoft Dynamics 365 for Operations. Obsahuje informace o tom, jak sledovat a reagovat na nákupní objednávky a jak sledovat zásoby dodávek. Při práci s fakturami lze také využít dodavatelskou spolupráci. Další informace naleznete v části [Pracovní prostor fakturace dodavatelské spolupráce](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
 
 ## <a name="working-with-purchase-orders"></a>Práce s nákupními objednávkami
 Pracovní prostor **Potvrzení nákupní objednávky** umožňuje reagovat na nákupní objednávku, která vám byl odeslána ke kontrole. Umožňuje také zobrazit informace o nákupních objednávkách, které čekají na akci od odběratele a objednávkách, které byly potvrzeny, ale jsou stále otevřené. V pracovním prostoru **Potvrzení nákupní objednávky** existují tři seznamy:
 
--   **Nákupní objednávky pro přezkoumání** -tento seznam zobrazuje POs, která vám byla odeslána a čeká na odpověď od vás. Po reakci, No zmizí ze seznamu. Pokud odběratel odešle novou verzi nákupní objednávky dříve než odpovíte na předchozí, zobrazí se pouze nejnovější verze.
+-   **Nákupní objednávky ke kontrole** – tento seznam uvádí nákupní objednávky, které vám byly zaslány a čekají na odezvu. Až odpovíte, nákupní objednávka bude ze seznamu odebrána. Pokud odběratel odešle novou verzi nákupní objednávky dříve než odpovíte na předchozí, zobrazí se pouze nejnovější verze.
 -   **Čeká se na akce odběratele** - tento seznam vám umožní zobrazit PO, na které jste odpověděli, avšak nebyly dosud potvrzeny odběratelem. Pokud jste přijali nákupní objednávky, můžete je sledovat v tomto seznamu, dokud se stav nezmění na **Potvrzeno**. Pokud nákupní objednávku odmítnete nebo přijměte se změnami, můžete sledovat nákupní objednávku v tomto poli, dokud zákazník neodešle novou verzi.
 -   **Otevřené potvrzené nákupní objednávky** - tento seznam obsahuje všechny nákupní objednávky účtu, který má stav **Potvrzeno**. Když jsou proti NO plně přijaty produkty nebo služby, NO zmizí ze seznamu.
 
@@ -50,7 +50,7 @@ Následující seznam obsahuje čtyři stránky, které lze použít pro práci 
 
 ### <a name="responding-to-purchase-orders"></a>Reagování na nákupní objednávky
 
-Jsou viditelné v nákupních objednávek, které zákazník poslal ke kontrole **potvrzení nákupní objednávky** prostoru a na **nákupní objednávky pro přezkoumání** stránky. Po otevření objednávky, můžete ji přijmout, odmítnout nebo přijmout změny. V záhlaví nákupní objednávky nebo na jednotlivých řádcích mohou být přílohy. Je také možné do odpovědi připojit informace na jednotlivých řádcích nebo v záhlaví nákupní objednávky. Například můžete navrhnout náhradní položku pro jeden z řádků. Nákupní objednávky můžete zobrazit jako náhled a vytisknout jako soubor PDF pomocí možnosti **Náhled/Tisk**. Následující sloupce dimenzí můžete zobrazit nebo skrýt pomocí akce **Zobrazit dimenze**: Středisko, Sklad, Barva, Velikost, Styl, Konfigurace. Použijete-li **přijmout změny** možnost, můžete přijmout nebo odmítnout jednotlivé řádky. Řádky můžete provést také následující změny:
+Nákupní objednávky, které vám odběratel poslal ke kontrole, se zobrazují v pracovním prostoru **Potvrzení nákupní objednávky** a na stránce **Nákupní objednávky ke kontrole**. Po otevření objednávky ji můžete přijmout, odmítnout nebo přijmout se změnami. V záhlaví nákupní objednávky nebo na jednotlivých řádcích mohou být přílohy. Je také možné do odpovědi připojit informace na jednotlivých řádcích nebo v záhlaví nákupní objednávky. Například můžete navrhnout náhradní položku pro jeden z řádků. Nákupní objednávky můžete zobrazit jako náhled a vytisknout jako soubor PDF pomocí možnosti **Náhled/Tisk**. Následující sloupce dimenzí můžete zobrazit nebo skrýt pomocí akce **Zobrazit dimenze**: Středisko, Sklad, Barva, Velikost, Styl, Konfigurace. Pokud vyberete možnost **Přijmout se změnami**, můžete přijmout nebo odmítnout jednotlivé řádky. U řádků můžete provádět také tyto změny:
 
 -   Změna dat nebo množství. Pokud chcete aktualizovat potvrzené datum dodání na všech řádcích, použijte možnost **Aktualizovat data dodání** v záhlaví nákupní objednávky.
 -   Rozdělení řádků pro jiná data dodání nebo množství
@@ -61,7 +61,7 @@ Nelze změnit informace o cenách nebo náklady, ale můžete navrhovat jejich z
 ## <a name="monitoring-consignment-inventory"></a>Monitorování zásob dodávky na skladě
 Pokud používáte zásoby na skladě, můžete zobrazit rozhraní spolupráce dodavatele k zobrazení informací na následujících stránkách:
 
--   **Nákupní objednávky využívající dodávku zásob** -nákupní objednávky pro dodávku zásob jsou generovány, když zákazník převezme vlastnictví zásob. Tyto nákupní objednávky se zobrazí pouze na stránce **Nákupní objednávky spotřebovávající zásoby dodávek**. Nejsou zahrnuty na stránce **Všechny potvrzené nákupní objednávky**.
+-   **Nákupní objednávky spotřebovávající zásoby dodávek** – nákupní objednávky pro zásoby dodávek se generují, když odběratel převezme vlastnictví zásob. Tyto nákupní objednávky se zobrazí pouze na stránce **Nákupní objednávky spotřebovávající zásoby dodávek**. Nejsou zahrnuty na stránce **Všechny potvrzené nákupní objednávky**.
 -   **Přijaté produkty ze zásob dodávky** - Tato stránka uvádí seznam všech transakcí, kde bylo vlastnictví produktů převedeno do společnosti, která využívá zásoby. Tyto informace lze použít k fakturaci zákazníkovi.
 -   **Zásoby dodávky na skladě** - tato stránka zobrazuje uvedený zásoby zásilky na skladě vlastněné vaší společností, které jsou k dispozici ve skladu odběratele.
 

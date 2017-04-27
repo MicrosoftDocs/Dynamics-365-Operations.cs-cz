@@ -46,8 +46,8 @@ Následující příklady ilustrují způsob zaúčtování při různých scén
 
 | ID adresáře | Účet dodavatele | Název          | Právnická osoba  |
 |--------------|----------------|---------------|---------------|
-| 1050         | 3004           | Fourth Coffee | Společnost Fabrikam      |
-| 1050         | 1597            | Fourth Coffee | Fabrikam-východ |
+| 1050         | 3004           | Fourth Coffee | Fabrikam      |
+| 1050         | 100            | Fourth Coffee | Fabrikam-východ |
 | 1050         | 3004           | Fourth Coffee | Fabrikam-západ |
 
 ## <a name="example-1-vendor-payment-of-invoice-from-another-legal-entity"></a>Příklad 1: Platba faktury dodavatele od jiné právnické osoby
@@ -69,14 +69,14 @@ Společnost Fabrikam East má otevřenou fakturu pro účet dodavatele 100, Four
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Platba společnosti Fabrikam je vyrovnána s fakturou společnosti Fabrikam East
 
-**Fabrikam posting**
+**Zaúčtování společnosti Fabrikam**
 
 | Účet                           | Částka Má dáti | Částka Dal |
 |-----------------------------------|--------------|---------------|
 | Splatná částka od společnosti Fabrikam East (Fabrikam) | 600,00       |               |
 | Závazky (Fabrikam)       |              | 600,00        |
 
-**Fabrikam East posting**
+**Zaúčtování společnosti Fabrikam East**
 
 | Účet                          | Částka Má dáti | Částka Dal |
 |----------------------------------|--------------|---------------|
@@ -102,14 +102,14 @@ Společnost Fabrikam East má otevřenou fakturu pro účet dodavatele 100, Four
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Platba společnosti Fabrikam je vyrovnána s fakturou společnosti Fabrikam East
 
-**Fabrikam posting**
+**Zaúčtování společnosti Fabrikam**
 
 | Účet                           | Částka Má dáti | Částka Dal |
 |-----------------------------------|--------------|---------------|
 | Splatná částka od společnosti Fabrikam East (Fabrikam) | 580,00       |               |
 | Závazky (Fabrikam)       |              | 580,00        |
 
-**Fabrikam East posting**
+**Zaúčtování společnosti Fabrikam East**
 
 | Účet                          | Částka Má dáti | Částka Dal |
 |----------------------------------|--------------|---------------|
@@ -140,7 +140,7 @@ Společnost Fabrikam East má otevřenou fakturu pro účet dodavatele 100, Four
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Platba společnosti Fabrikam je vyrovnána s fakturou společnosti Fabrikam East
 
-**Fabrikam posting**
+**Zaúčtování společnosti Fabrikam**
 
 | Účet                           | Částka Má dáti            | Částka Dal           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -149,7 +149,7 @@ Společnost Fabrikam East má otevřenou fakturu pro účet dodavatele 100, Four
 | Realizovaná ztráta (Fabrikam)          | 0,00 EUR / 12,90 USD    |                         |
 | Splatná částka od společnosti Fabrikam East (Fabrikam) |                         | 0,00 EUR / 12,90 USD    |
 
-**Fabrikam East posting**
+**Zaúčtování společnosti Fabrikam East**
 
 | Účet                          | Částka Má dáti            | Částka Dal           |
 |----------------------------------|-------------------------|-------------------------|
@@ -181,7 +181,7 @@ Společnost Fabrikam East má otevřenou fakturu pro účet dodavatele 100, Four
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Platba společnosti Fabrikam je vyrovnána s fakturou společnosti Fabrikam East
 
-**Fabrikam posting**
+**Zaúčtování společnosti Fabrikam**
 
 | Účet                           | Částka Má dáti            | Částka Dal           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -190,7 +190,7 @@ Společnost Fabrikam East má otevřenou fakturu pro účet dodavatele 100, Four
 | Realizovaná ztráta (Fabrikam)          | 0,00 EUR / 12,66 USD    |                         |
 | Splatná částka od společnosti Fabrikam East (Fabrikam) |                         | 0,00 EUR / 12,66 USD    |
 
-**Fabrikam East posting**
+**Zaúčtování společnosti Fabrikam East**
 
 | Účet                          | Částka Má dáti            | Částka Dal           |
 |----------------------------------|-------------------------|-------------------------|
@@ -202,7 +202,7 @@ Společnost Fabrikam East má otevřenou fakturu pro účet dodavatele 100, Four
 | Hotovostní sleva (Fabrikam East)    |                         | 11,28 EUR / 13,61 USD   |
 
 ## <a name="example-5-vendor-credit-note-with-primary-payment"></a>Příklad 5: Dobropis dodavatele s primární platbou
-Společnost Fabrikam vygeneruje platbu ve výši 75,00 pro účet dodavatele 3004, Fourth Coffee. Platba bude vyrovnána s použitím otevřené faktury pro účet 3004 dodavatele Fabrikam West a otevřeného dobropisu pro účet 100 dodavatele Fabrikam East. Platba je vybrána jako hlavní platba na **vyrovnat transakce** stránky.
+Společnost Fabrikam vygeneruje platbu ve výši 75,00 pro účet dodavatele 3004, Fourth Coffee. Platba bude vyrovnána s použitím otevřené faktury pro účet 3004 dodavatele Fabrikam West a otevřeného dobropisu pro účet 100 dodavatele Fabrikam East. Tato platba je vybrána jako hlavní platba na stránce **Vyrovnat transakce**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Faktura je zaúčtována pro společnost Fabrikam West pro účet dodavatele 3004
 
@@ -227,7 +227,7 @@ Společnost Fabrikam vygeneruje platbu ve výši 75,00 pro účet dodavatele 300
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Platba společnosti Fabrikam je vyrovnána s fakturou Fabrikam West a dobropisem Fabrikam East
 
-**Fabrikam posting**
+**Zaúčtování společnosti Fabrikam**
 
 | Účet                           | Částka Má dáti | Částka Dal |
 |-----------------------------------|--------------|---------------|
@@ -236,14 +236,14 @@ Společnost Fabrikam vygeneruje platbu ve výši 75,00 pro účet dodavatele 300
 | Splatná částka od společnosti Fabrikam West (Fabrikam) | 100,00       |               |
 | Závazky (Fabrikam)       |              | 100,00        |
 
-**Fabrikam East posting**
+**Zaúčtování společnosti Fabrikam East**
 
 | Účet                           | Částka Má dáti | Částka Dal |
 |-----------------------------------|--------------|---------------|
 | Splatná částka od společnosti Fabrikam (Fabrikam East) | 25,00        |               |
 | Závazky (Fabrikam East)  |              | 25,00         |
 
-**Fabrikam West posting**
+**Zaúčtování pro společnost Fabrikam West**
 
 | Účet                          | Částka Má dáti | Částka Dal |
 |----------------------------------|--------------|---------------|
@@ -251,7 +251,7 @@ Společnost Fabrikam vygeneruje platbu ve výši 75,00 pro účet dodavatele 300
 | Splatná částka pro společnost Fabrikam (Fabrikam West)  |              | 100,00        |
 
 ## <a name="example-6-vendor-credit-note-without-primary-payment"></a>Příklad 6: Dobropis dodavatele bez primární platby
-Společnost Fabrikam vygeneruje platbu ve výši 75,00 pro účet dodavatele 3004, Fourth Coffee. Platba bude vyrovnána s použitím otevřené faktury pro účet 3004 dodavatele Fabrikam West a otevřeného dobropisu pro účet 100 dodavatele Fabrikam East. Platba není vybrána jako hlavní platba na **vyrovnat transakce** stránky.
+Společnost Fabrikam vygeneruje platbu ve výši 75,00 pro účet dodavatele 3004, Fourth Coffee. Platba bude vyrovnána s použitím otevřené faktury pro účet 3004 dodavatele Fabrikam West a otevřeného dobropisu pro účet 100 dodavatele Fabrikam East. Tato platba není vybrána jako hlavní platba na stránce **Vyrovnat transakce**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Faktura je zaúčtována pro společnost Fabrikam West pro účet dodavatele 3004
 
@@ -276,21 +276,21 @@ Společnost Fabrikam vygeneruje platbu ve výši 75,00 pro účet dodavatele 300
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Platba společnosti Fabrikam je vyrovnána s fakturou Fabrikam West a dobropisem Fabrikam East
 
-**Fabrikam posting**
+**Zaúčtování společnosti Fabrikam**
 
 | Účet                           | Částka Má dáti | Částka Dal |
 |-----------------------------------|--------------|---------------|
 | Splatná částka od společnosti Fabrikam West (Fabrikam) | 75,00        |               |
 | Závazky (Fabrikam)       |              | 75,00         |
 
-**Fabrikam East posting**
+**Zaúčtování společnosti Fabrikam East**
 
 | Účet                                | Částka Má dáti | Částka Dal |
 |----------------------------------------|--------------|---------------|
 | Splatná částka od společnosti Fabrikam West (Fabrikam East) | 25,00        |               |
 | Závazky (Fabrikam East)       |              | 25,00         |
 
-**Fabrikam West posting**
+**Zaúčtování pro společnost Fabrikam West**
 
 | Účet                              | Částka Má dáti | Částka Dal |
 |--------------------------------------|--------------|---------------|

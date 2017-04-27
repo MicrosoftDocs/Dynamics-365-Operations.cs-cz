@@ -1,5 +1,5 @@
 ---
-title: Nastavit model konfigurace produktu
+title: "Nastavení modelu konfigurace produktu"
 description: "Tento článek popisuje postup nastavení a vytvoření modelu konfigurace produktu."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-a-product-configuration-model"></a>Nastavit model konfigurace produktu
+# <a name="set-up-a-product-configuration-model"></a>Nastavení modelu konfigurace produktu
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,7 +36,7 @@ Tento článek popisuje postup nastavení a vytvoření modelu konfigurace produ
 
 | Úkol                                                        | popis                                                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Vytvoření základního produktu.                                    | Vytvořte hlavní produkt ze seznamu **Základní produkt**. Uvolnění produktu předlohy pro všechny příslušné společnosti. Pro základní produkt, který se používá jako verze pro model konfigurace produktu nebo komponentu **konfigurace založená na omezení** je nutné vybrat jako technologie konfigurace a konfigurační dimenze musí být vybrán pouze pro skupinu dimenze produktu. |
+| Vytvoření základního produktu.                                    | Vytvořte hlavní produkt ze seznamu **Základní produkt**. Uvolněte základní produkt do všech příslušných společností. Pro základní produkt používaný jako verzi pro model konfigurace produktu nebo dílčí komponentu je nutné vybrat **Konfigurace založená na omezeních** jako technologii konfigurace, a konfigurační dimenze musí být vybrány pouze pro skupinu dimenzí produktu. |
 | Tvorba komponent.                                          | Vytvořte součásti na stránce **Komponenty**. Komponenty jsou stavební kameny modelu konfigurace produktu a lze je znovu použít ve více modelech konfigurace produktu.                                                                                                                                                                                                                      |
 | Tvorba typů atributů.                                     | Vytvořte typy atributů na stránce **Typy atributů**. Typy atributu určují sadu datových typů všech atributů, které jsou použity v modelech konfigurace výrobku. Atributy **Logická**, **Text** s pevným seznamem a **Celé číslo** s rozsahem typů tvoří seznam hodnot, které jsou k dispozici, když konfigurujete variantu produktu založenou na modelu konfigurace produktu.       |
 | Vytvoření nového modelu konfigurace produktu.                       | Vytvořte model konfigurace produktu na stránce **Nový model konfigurace produktu**.                                                                                                                                                                                                                                                                                                              |

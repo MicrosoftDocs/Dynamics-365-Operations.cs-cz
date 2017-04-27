@@ -1,6 +1,6 @@
 ---
-title: "Nabíhání nákladů projektu na nákupní příjemky"
-description: "Toto téma popisuje, jak časově rozlišených nákladů na projekt z nákupní příjemky lze sledovat v aplikaci Microsoft Dynamics 365 pro operace."
+title: "Časové rozlišení projektu na nákupních příjemkách"
+description: "Toto téma popisuje, jak lze sledovat časově rozlišené náklady na projekt z nákupních příjemek v aplikaci Microsoft Dynamics 365 for Operations."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,63 +24,63 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="project-cost-accrual-on-purchase-receipts"></a>Nabíhání nákladů projektu na nákupní příjemky
+# <a name="project-cost-accrual-on-purchase-receipts"></a>Časové rozlišení projektu na nákupních příjemkách
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje, jak časově rozlišených nákladů na projekt z nákupní příjemky lze sledovat v aplikaci Microsoft Dynamics 365 pro operace. 
+Toto téma popisuje, jak lze sledovat časově rozlišené náklady na projekt z nákupních příjemek v aplikaci Microsoft Dynamics 365 for Operations. 
 
-Faktury pro projekt často přicházejí později než zboží a služby jsou dodávány, který může mít významný dopad na projekt klíčové ukazatele výkonu (KPI). Je důležité, aby bylo možné sledovat tyto transakce v obou finanční a projekt sestavy.
+Faktury pro projekt často přicházejí později než zboží a služby, což může mít významný dopad na projekt klíčové ukazatele výkonu (KPI). Je důležité, aby bylo možné sledovat tyto transakce ve finančních i projektových sestavách.
 
-To ukazuje následující příklad scénáře. 
+Ilustruje to následující vzorový scénář. 
 
-Konzultaci s contoso byl spuštěn nový projekt nasazení cloudu. Pokud chcete koupit počítač pro projekt je vytvořena nákupní objednávka. Počítače budou náklady na $1500 a instalační služby budou náklady na $150. Dodavatel má dodat a nainstalovat do počítače, ale fakturu ještě nedosáhla konzultaci Contoso. Vedoucí projektu chtěli nabíhání nákladů projektu z $1650 před dodáním faktury. Tyto náklady by projeví také v společnosti měsíc ukončení finanční výkazy. 
+Společnost Contoso Consulting zahájila nový projekt nasazení do cloudu. Je vytvořena nákupní objednávka pro nákup počítače pro projekt. Počítač bude stát 1 500 USD a instalační služba 150 USD. Dodavatel má dodat a nainstalovat počítač, ale fakturu ještě nedošla do společnosti Contoso Consulting. Vedoucí projektu by chtěl vidět poměrné rozložení nákladů na 1650 USD před dodáním faktury. Tyto náklady by se projevily také ve finančních výkazech společnosti ke konci měsíce. 
 
-Časově rozlišené náklady musí být zaznamenány na finanční úrovni i na úrovni projektu pro účely vykazování. V 365 Dynamics pro operace lze sledovat finanční aktualizaci příjemky produktu pro kategorie zboží a zakázek. 
+Časově rozlišené náklady musí být zaznamenány na finanční úrovni i na úrovni projektu pro účely vykazování. V aplikaci Dynamics 365 for Operations lze sledovat finanční aktualizaci příjemky produktu pro kategorie zboží a zakázek. 
 
-U položek na **parametry závazků** stránky, vyberte **zaúčtování příjemky produktu do knihy** možnost.
+U zboží na stránce **Parametry závazků** vyberte možnost **Zaúčtování příjemky produktu do knihy**.
 [![accruals1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
 
-Pro kategorie zásobování na **pravidlo zásad kategorie** stránky, vyberte **nakupování** zásady a potom vyberte **časově rozlišených nákupní výdaj na příjemce** pro každou kategorii zásobování.
+Pro kategorie zásobování na stránce **Pravidlo zásad kategorie** vyberte zásady **Zásobování** a potom vyberte **Časově rozlišený nákupní výdaj na příjemce** pro každou kategorii zásobování.
 [![accruals2](./media/accruals2-1024x569.png)](./media/accruals2.png) 
 
-**Nákupní výdaj nefakturované** a **nákupu časového rozlišení** účtů v **nastavení účtování** bude použit při zaúčtování dokladů, které jsou spojené s touto příjemkou produktu.
+Účty **Nákupní výdaj nefakturovaný** a **Časově rozlišený nákup** v **nastavení účtování** budou použity k zaúčtování dokladů, které jsou spojené s touto příjemkou produktu
 [![accruals3](./media/accruals3-1024x429.png)](./media/accruals3.png) 
 
-Pomocí tohoto kanálu stejný scénář, podíváme se zaúčtování příjemky produktu bude vliv financí a informace o projektu. 
+Pomocí stejného scénáře se podíváme na to, jaký vliv bude mít zaúčtování příjemky produktu na hlavní knihu a informace o projektu. 
 
-**Krok 1:** vytvořit a potvrďte novou nákupní objednávku pro projekt k zaznamenání nákupem počítače služby instalace a $1500 $150.
+**Krok 1:** Vytvořte a potvrďte novou nákupní objednávku pro projekt k zaznamenání nákupu počítače za 1500 USD a instalační služby za 150 USD.
 [![accruals4](./media/accruals4-1024x497.png)](./media/accruals4.png) 
 
-Při potvrzení nákupní objednávky potvrzené náklady transakce jsou vytvořeny pro projekt. 
+Při potvrzení nákupní objednávky jsou pro projekt vytvořeny transakce pro potvrzené náklady. 
 [![accruals5](./media/accruals5-1024x219.png)](./media/accruals5.png) 
 
 > [!NOTE]
-> Bude mít transakce potvrzené náklady **původ transakce** nastaveno na **nákupní objednávky**. Vytvoření a potvrzení nákupní objednávky nevytváří transakce pro projekt. 
+> Transakce pro potvrzené náklady bude mít v poli **Původ transakce** nastavenou hodnotu **Nákupní objednávka**. Vytvoření a potvrzení nákupní objednávky nevytváří transakce pro projekt. 
 
-**Krok 2:** doručení zboží a služeb a je registrována na příjemce produktu. 
+**Krok 2:** Doručení zboží a služeb proběhne a je registrována příjemka produktu. 
 
-Zaúčtování příjemky produktu generovat a zaúčtování dokladu do hlavní knihy. Doklad bude nákupní výdaje, nefakturované účet MD a Dal účet časového rozlišení nákupu. 
+Zaúčtování příjemky produktu bude generovat a zaúčtuje doklad do hlavní knihy. Doklad bude připsán na stranu nákupních výdajů, nefakturovaného účtu a poměrně rozloženého účtu nákupního kreditu. 
 [![accruals6](./media/accruals6-1024x214.png)](./media/accruals6.png)
 
 > [!NOTE]
-> Zaúčtování příjemky produktu pomocí nastavení účtování pro kategorie zásobování produkty a nikoli nastavení účtování pro kategorie projektu. Správně odrážejí finanční dopad nákupní časové rozlišení, aby se toto nastavení musí být zarovnány. 
+> Zaúčtování příjemky produktu bude používat nastavení účtování pro kategorie zásobování a produkty a nikoli nastavení účtování pro kategorie projektu. Aby se správně projevil finanční dopad na časově rozlišený nákup, je nutné toto nastavení vyrovnat. 
 
-Je možné mapovat na kategorie zásobování kategorie projektu **kategorie zásobování** stránky.
+Je možné mapovat kategorie zásobování na kategorie projektu na stránce **Kategorie zásobování**.
 [![accruals7](./media/accruals7-1024x390.png)](./media/accruals7.png)
 
-**Krok 3:** vytvořit návrh faktury dodavatele. 
+**Krok 3:** Vytvořte standardní fakturu dodavatele. 
 
-V 365 Dynamics pro operace zaúčtování příjemky produktu nemá vliv na informace o projektu. Tento problém odstraníte může generovat návrh faktury dodavatele přímo po zaúčtování nákupní příjemky. Přejděte **nákupní objednávky** stránku &gt;**faktura kartu**&gt;**generovat**&gt;**faktury**. Tím se vytvoří dokument čekající faktury, který aktualizuje informace o projektu. 
+V aplikaci Dynamics 365 for Operations zaúčtování příjemky produktu nemá vliv na informace o projektu. Tento problém odstraníte vygenerováním návrhu faktury dodavatele přímo po zaúčtování nákupní příjemky. Přejděte na stránku **Nákupní objednávka** &gt; **karta Faktura** &gt; **Generovat** &gt; **Faktura**. Tím se vytvoří dokument čekající faktury, který aktualizuje informace o projektu. 
 
 Vytvoření návrhu faktury dodavatele bude generovat čekající transakce projektu. 
 [![accruals8](./media/accruals8-1024x225.png)](./media/accruals8.png) 
 
-V **potvrzené náklady** záznamy vytvořené v kroku 1 bude uzavřen a nové záznamy budou vytvořeny tak, aby odrážely náklady závazků přichází nevyřízené faktury dodavatele. **Původ transakce** pole potvrzené náklady bude nastavena na hodnotu **faktur dodavatele**.
+Na stránce **Potvrzené náklady** se záznamy vytvořené v kroku 1 uzavřou a nové záznamy budou vytvořeny tak, aby odrážely náklady závazků pocházející z nevyřízené faktury dodavatele. Pole **Původ transakce** pro potvrzené náklady bude nastaveno na hodnotu **faktura dodavatele**.
 [![accruals9](./media/accruals9-1024x200.png)](./media/accruals9.png)
 
-Faktury dodavatele zůstanou ve stavu čekání, až přijde skutečná dodavatelské faktury.
+Faktura dodavatele zůstane v nevyřízeném stavu, dokud nepřijde skutečná dodavatelská faktura.
 
 
 

@@ -55,16 +55,16 @@ Můžete vybrat více objednávek a zpracovat příjem u všech těchto objedná
 
 Nákupní objednávky můžete vytvořit z prodejní objednávky, kde byla vybrána možnost **Přímá dodávka**. Při použití přímé dodávky nejsou produkty nikdy doručeny do skladu, ale jsou dodány přímo od dodavatele k zákazníkovi. V tomto případě je příjem obvykle zaznamenán přímo v nákupní objednávce. Příjem může probíhat automaticky, například pomocí integrace EDI s dodavatelem. Případně pokud je nákupní objednávka mezipodnikovou nákupní objednávkou, aplikace Microsoft Dynamics 365 for Operations automatizuje příjem v mezipodnikové prodejní objednávce, když dojde k dodávce. Při použití přímého dodání jsou výrobky i nadále zpracovány jako zásoby, i když nejsou fyzicky přijaty ve skladu. Proto při registraci příjemky produktu z nákupní objednávky je prodejní objednávka automaticky aktualizována v dodacím listu tak, aby celkové změny zásob byly 0 (nulové). V případech využívajících přímé doručení byste neměly vyžadovat předběžnou registraci. Pokud používáte sklady, které jsou povoleny pro řízení skladu, můžete obejít požadavek na registraci registrační značky zadáním virtuálního skladu. Tento sklad určíte v poli **Sklad pro přímé dodávky** u produktu. 
 
-Po zpracování příjemky produktu na nákupní objednávce je nastaven stav PO **přijato** označíte, že lze zpracovat faktury pro objednávku. Můžete zkontrolovat podrobnosti o produktech, které již byly přijaty, pomocí stránky **Deníky příjemek produktu**.  
+Po zpracování příjemky produktu na nákupní objednávce je stav nákupní objednávky nastaven na **Přijato**, což označuje, že lze fakturu zpracovat pro objednávku. Můžete zkontrolovat podrobnosti o produktech, které již byly přijaty, pomocí stránky **Deníky příjemek produktu**.  
 
 Přístup k této stránce je pomocí skupiny akci **Příjem** na stránce **Nákupní objednávka**. Informace v denících zahrnují podrobné informace o množství, datech a rozměrech.
 
 <a name="see-also"></a>Viz také
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Přehled nákupních objednávek](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Vytvoření nákupní objednávky](purchase-order-creation.md)
 
 [Potvrzení a odmítnutí nákupní objednávky](purchase-order-approval-confirmation.md)
 

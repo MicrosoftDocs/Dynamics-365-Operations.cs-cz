@@ -1,6 +1,6 @@
 ---
-title: "Určení verze Kusovníku"
-description: "Během požadavku Rozpad má-li položka výchozí typ objednávky výroby, plánovací modul najde platná verze Kusovníku na základě lokality."
+title: "Určení verze kusovníku"
+description: "Pokud má položka při rozpadu poptávky výchozí typ plánované objednávky Výroba, modul plánování najde platnou verzi kusovníku na základě pracoviště."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,12 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="determine-the-bom-version"></a>Určení verze Kusovníku
+# <a name="determine-the-bom-version"></a>Určení verze kusovníku
 
 [!include[banner](../includes/banner.md)]
 
 
-Během požadavku Rozpad má-li položka výchozí typ objednávky výroby, plánovací modul najde platná verze Kusovníku na základě lokality. 
+Pokud má položka při rozpadu poptávky výchozí typ plánované objednávky Výroba, modul plánování najde platnou verzi kusovníku na základě pracoviště. 
 
 Dimenze pracoviště je vždy známa a je uvedena v transakci poptávky. K určení použité verze kusovníku se využívá následující proces:
 

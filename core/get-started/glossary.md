@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 pro operace Glosář"
+title: "Glosář aplikace Dynamics 365 for Operations"
 description: "Glosář aplikace Microsoft Dynamics 365 for Operations definuje klíčové termíny a pojmy v aplikaci Microsoft Dynamics Dynamics 365 for Operations."
 author: tonyafehr
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365 pro operace Glosář
+# <a name="dynamics-365-for-operations-glossary"></a>Glosář aplikace Dynamics 365 for Operations
 
 [!include[banner](../includes/banner.md)]
 
@@ -252,7 +252,7 @@ Vozidlo slouží k nasazení pro Akceptační testování uživatele (ATU) a vý
 
 Nástroj aplikace Visual Studio použitý k vytvoření, aktualizaci a kontrole prvků modelu.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**.. Konfigurace \financial-dimensions\dimension-Based**
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\financial-dimensions\dimension-based configuration**
 
 Technologie konfigurace používaná k vytváření variant produktů výběrem hodnot dimenzí produktů.
 
@@ -502,7 +502,7 @@ Seznam nabídky produktů seskupený podle kategorie zásobování. Zásobovací
 
 ###### <a name="product-dimension"></a>**dimenze produktu**
 
-Velikost, barva a konfigurace produktu atributy, které jsou používány pro... \financial-dimensions\dimension-Based konfigurace.
+Atributy Velikost, Barva a Konfigurace produktu, které slouží ke konfiguraci založené na dimenzích ve složce .\financial-dimensions\.
 
 ###### <a name="product-family"></a>**produktová řada**
 

@@ -68,14 +68,14 @@ S klouzavým průměrem jsou ceny produktu určeny nákupní příjemkou. Při z
 3.  Vytvořte prodejní objednávku pro množství 1 a jednotkovou cenu ve výši 10,00.
 4.  Vytvořte nákupní fakturu pro množství 2 a jednotkovou cenu ve výši 12,00.
 
-Rozdíl jednotkové ceny 2,00 bude zaúčtován do cenové odchylky pro účet klouzavého průměru při zaúčtování nákupní faktury. Důvodem je, že byly zakoupeny dva produkty v ceně 20,00. Jeden nebo více produktů byly prodány za jednotkovou cenu ve výši 10,00. Nákupní faktura byla zaúčtována za pořizovací cenu 12,00 množstvím 2. Jednotková cena produktu nemůže být zaúčtován v 14.00.
+Rozdíl jednotkové ceny 2,00 bude zaúčtován do cenové odchylky pro účet klouzavého průměru při zaúčtování nákupní faktury. Důvodem je, že byly zakoupeny dva produkty v ceně 20,00. Jeden nebo více produktů byly prodány za jednotkovou cenu ve výši 10,00. Nákupní faktura byla zaúčtována za pořizovací cenu 12,00 s množstvím 2. Jednotková cena produktu nemůže být zaúčtována ve 14.00.
 
 ## <a name="moving-average-product-and-inventory-adjustment"></a>Úpravy klouzavého průměru pro produkt a zásoby
 Pokud je nutné upravit klouzavý průměr nákladů produktu, jsou povoleny úpravy zásob k dnešnímu datu. Nelze zpětně datovat úpravy zásob pro korekci klouzavého průměru nákladů produktu. Nemůže mít tok nákladů skrze následné transakce. V tomto příkladu se upraví klouzavý průměr nákladů pro produkt.
 1.  Vyberte produkt, pro který chcete upravit klouzavý průměr nákladů.
-    | **Note**                                                                                    |
+    | **Poznámka**                                                                                    |
     |---------------------------------------------------------------------------------------------|
-    | ** Přecenění pro klouzavý průměr ** stránky zkoumá zásob, které jsou dostupné pro daný produkt. |
+    | Stránka **Přecenění pro klouzavý průměr** ověřuje dostupné zásoby pro produkt. |
 
     Vybraný produkt má zaúčtované množství 1, zaúčtovanou hodnotu 12,00, zaúčtované jednotkové náklady 12,00 a jednotkové náklady 12,00.
 2.  Aktualizujte pole **Jednotková cena** na 16,00. Systém vypočítá zbývající pole.
@@ -88,7 +88,7 @@ Pokud je nutné upravit klouzavý průměr nákladů produktu, jsou povoleny úp
 Na stránce **Vyrovnání pro doklad** se zobrazí úpravy 4,00 zaúčtované do účtu Přecenění nákladů pro klouzavý průměr.
 
 ## <a name="moving-average-with-production"></a>Klouzavý průměr pro výrobu
-Klouzavý průměr podporuje vyrobené položky. Pokud plánujete použití klouzavý průměr ve výrobním prostředí, **použití odhadovaná nákladová cena** jezdce v ** parametry modulu řízení výroby ** stránka by měla být vybraných. To znamená, že nákladová cena, která se vypočítá během odhadu, bude použita místo skutečné nákladové ceny z výpočtu v kusovníku.
+Klouzavý průměr podporuje vyrobené položky. Pokud chcete použít klouzavý průměr v provozním prostředím, vyberte posuvník **Použít odhadovanou nákladovou cenu** na stránce **Parametry modulu řízení výroby**. To znamená, že nákladová cena, která se vypočítá během odhadu, bude použita místo skutečné nákladové ceny z výpočtu v kusovníku.
 
 ## <a name="moving-average-with-a-backdated-transaction"></a>Klouzavý průměr s datovanou transakcí
 Zpětně datované transakce jsou přiřazeny k aktuálnímu klouzavému průměru nákladů a aktualizuje se fyzické množství produktu, ale neovlivní se klouzavý průměr nákladů produktu. V tomto příkladu klouzavého průměru je zaúčtována zpětně datovaná transakce pro klouzavý průměr produktu.

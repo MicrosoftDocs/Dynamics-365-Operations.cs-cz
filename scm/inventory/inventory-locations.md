@@ -67,7 +67,7 @@ Je možné kopírovat umístění z jednoho skladu do jiného a vytvořit umíst
 <a name="see-also"></a>Viz také
 --------
 
-[Vytvořit nové rozložení skladu (úkol guide)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+[Vytvoření nového rozvržení skladu (Průvodce záznamem úloh)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
 
 
 

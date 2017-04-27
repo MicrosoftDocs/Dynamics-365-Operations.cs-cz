@@ -1,6 +1,6 @@
 ---
 title: "Návrh dotazníku"
-description: "Toto téma popisuje proces vytváření dotazníku. Prvním krokem je návrh dotazníku. Při navrhování dotazníku můžete pouze zapsat otázky a odpovědi, ale také vytvořit strukturu, která umožňuje záznam a uspořádání odpovědí."
+description: "Toto téma popisuje postup vytváření dotazníku. Prvním krokem je návrh dotazníku. Při navrhování dotazníku můžete pouze zapsat otázky a odpovědi, ale také vytvořit strukturu, která umožňuje záznam a uspořádání odpovědí."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="design-a-questionnaire"></a>Návrh dotazníku
 
-Toto téma popisuje proces vytváření dotazníku. Prvním krokem je návrh dotazníku. Při navrhování dotazníku můžete pouze zapsat otázky a odpovědi, ale také vytvořit strukturu, která umožňuje záznam a uspořádání odpovědí. 
+Toto téma popisuje postup vytváření dotazníku. Prvním krokem je návrh dotazníku. Při navrhování dotazníku můžete pouze zapsat otázky a odpovědi, ale také vytvořit strukturu, která umožňuje záznam a uspořádání odpovědí. 
 
 Pečlivě navržený dotazník pomáhá zvyšovat kvalitu dat, která shromažďujete. Díky promyšlenému návrhu můžete lépe a ve vhodný okamžik vybrat požadované otázky k dotazníku. Následující body vám pomohou naplánovat efektivní dotazník:
 
@@ -87,14 +87,14 @@ Parametry dotazníku jsou volitelné. Nemusíte je použít, v závislosti na po
 
 Parametry dotazníku definují anonymitu, kódy číselných řad a typy odkazů dotazníku. Když organizace distribuuje dotazník, může být třeba možnost respondentům umožnit, aby zůstali anonymní. 
 
-Kódy číselných řad se používají k uspořádání otázek a odpovědí. Založeno na tyto kódy číselných řad, hodnoty jsou automaticky přiřazeny ke zboží. 
+Kódy číselných řad se používají k uspořádání otázek a odpovědí. Na základě těchto kódů číselných řad jsou hodnoty automaticky přiřazeny k položkám. 
 
 Dříve než začnete definovat vaše data, měli byste definovat veškeré parametry. Vaše parametrů dotazníku můžete kdykoliv upravit.
 
 ## <a name="questionnaire-components"></a>Komponenty dotazníku
-Dotazník zahrnuje tři hlavní prvky: odpověď skupiny, které obsahují odpovědi pro více voleb otázky, otázky a dotazník sám. Volitelně můžete seskupit do skupin výsledků otázek v dotazníku. Skupiny výsledků umožňují rozdělit otázky do kategorií a poskytují další analýzy v dotazníku. 
+Dotazníky zahrnují tři hlavní prvky: skupiny odpovědí, které obsahují odpovědi pro otázky s možností více odpovědí, otázky a dotazník jako takový. Volitelně lze otázky v dotazníku seskupit do skupin výsledků. Skupiny výsledků umožňují rozdělit otázky do kategorií a poskytují další analýzy v dotazníku. 
 
-[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
+[![Komponenty dotazníku](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
 ### <a name="answer-groups-and-answers"></a>Skupiny odpovědí a odpovědi
 
@@ -235,6 +235,6 @@ Případně můžete nastavit dotazník tak, že pokud respondent vybere odpově
 
 [Distribuování a vyplňování dotazníků](distribute-questionnaires.md)
 
-[Zobrazení a vyhodnocení výsledků dotazníků](evaluate-questionnaire-results.md)
+[Zobrazení a zhodnocení výsledků dotazníků](evaluate-questionnaire-results.md)
 
 

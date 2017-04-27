@@ -1,5 +1,5 @@
 ---
-title: "Pomocí rychlého exportu"
+title: "Použití rychlého importu/exportu"
 description: "Účel funkce Rychlý import / export je umožnit provádění importu a exportu za použití menšího počtu kroků."
 author: margoc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Spustit Test dat nástroj pro přenos (beta) pro Dynamics AX (AX 2012)
+# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Spuštění testovacího nástroj pro přenos dat (beta) pro Dynamics AX (AX 2012)
 
 [!include[banner](../../includes/banner.md)]
 

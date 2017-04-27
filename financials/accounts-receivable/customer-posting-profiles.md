@@ -36,7 +36,7 @@ ms.lasthandoff: 03/31/2017
 <a name="customer-posting-profiles"></a>Účetní profily odběratele
 -------------------------
 
-Účetní profily odběratelů umožňují přiřazení účtů hlavní knihy a nastavení dokumentů ke všem odběratelům, skupině odběratelů nebo jednomu odběrateli. Toto nastavení bude použito při vytvoření prodejní objednávky, volné faktury, platby v hotovosti, upomínek a oznámení úroků. U některých transakcí je možné vybrat účetní profil, který se odlišuje od účetních profilů nastavených pro transakce na této stránce a má před nimi přednost. 
+Účetní profily odběratelů umožňují přiřazení účtů hlavní knihy a nastavení dokumentů ke všem odběratelům, skupině odběratelů nebo jednomu odběrateli. Toto nastavení se použije při vytváření prodejních objednávek, volných faktur, hotovostních plateb, upomínek a oznámení úroků. U některých transakcí je možné vybrat účetní profil, který se odlišuje od účetních profilů nastavených pro transakce na této stránce a má před nimi přednost. 
 
 Výchozí účetní profil je definován v pevné záložce Hlavní kniha a DPH na straně Parametry pohledávek. Výchozí účetní profil je poté následně automaticky zahrnut do záhlaví nových dokumentů, kde jej můžete změnit na jiný účetní profil v případě potřeby.
 
@@ -129,7 +129,7 @@ Pokud chcete, aby všechny transakce odběratele měly shodný účetní profil,
 
 ### 
 
-### <a name="table-restrictions"></a>**Table restrictions**
+### <a name="table-restrictions"></a>**Tabulka omezení**
 
 Pro transakce s vybraným účetním profilem určete, zda transakce budou vyrovnány automaticky, zda bude vypočten úrok a zda budou vydány upomínky. Můžete také vybrat účet, který se použije při uzavření transakcí s vybraným účetním profilem.
 

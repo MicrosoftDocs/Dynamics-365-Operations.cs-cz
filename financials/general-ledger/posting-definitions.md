@@ -59,5 +59,5 @@ Tato omezení platí v případě, že vytvoříte odkazy v definicích účtov�
 -   Definici účtování můžete přiřadit k libovolnému typu transakce, ale tento typ transakce musí být ve stejném modulu jako definice účtování. Použijte stránku **Definice účtování transakcí** a podívejte se, v kterém modulu typ transakce je.
 
 
-Další informace naleznete v tématu [příklady definic účtování](/general-ledger/example-posting-definitions.md). 
+Další informace získáte v části [Příklady definic účtování](/general-ledger/example-posting-definitions.md). 
 

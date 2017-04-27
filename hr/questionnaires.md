@@ -1,6 +1,6 @@
 ---
 title: "Dotazníky"
-description: "Toto téma obsahuje obecné informace o dotazníky a odkazy na podrobnější informace. Dotazník je sada otázek, které se používají ke shromažďování informací pro různé účely. Můžete navrhovat, vytvářet, rozesílat a vyplňovat dotazníky a následně provádět analýzu výsledků."
+description: "Toto téma obsahuje obecné informace o dotaznících a odkazy na podrobnější informace. Dotazník je sada otázek, které se používají ke shromažďování informací pro různé účely. Můžete navrhovat, vytvářet, rozesílat a vyplňovat dotazníky a následně provádět analýzu výsledků."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -31,9 +31,9 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](includes/banner.md)]
 
 
-Toto téma obsahuje obecné informace o dotazníky a odkazy na podrobnější informace. Dotazník je sada otázek, které se používají ke shromažďování informací pro různé účely. Můžete navrhovat, vytvářet, rozesílat a vyplňovat dotazníky a následně provádět analýzu výsledků. 
+Toto téma obsahuje obecné informace o dotaznících a odkazy na podrobnější informace. Dotazník je sada otázek, které se používají ke shromažďování informací pro různé účely. Můžete navrhovat, vytvářet, rozesílat a vyplňovat dotazníky a následně provádět analýzu výsledků. 
 
-Můžete upravit dotazníku podle konkrétních požadavků pomocí různých funkcí, které jsou k dispozici v Microsoft Dynamics 365 pro operace. Zde je několik příkladů použití dotazníků:
+Dotazník můžete upravit pomocí různých funkcí, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Operations, podle svých specifických požadavků. Zde je několik příkladů použití dotazníků:
 
 -   testování profesionálních dovedností zaměstnanců a uchazečů,
 -   Zhodnoťte, zda se účastníci kurzu seznámili s materiály kurzu.
@@ -45,9 +45,9 @@ Následující tabulka obsahuje odkazy na informace o základních úlohách dot
 
 | Téma| popis|
 |------|------------|
-| [Design a questionnaire](design-questionnaires.md)  | Tento článek obsahuje informace o způsobu návrhu dotazníku. Proces návrhu zahrnuje nastavení předpokladů, odpovědí a dotazů a poté je zkombinuje do dotazníku. |
-| [Distribute and complete a questionnaire](distribute-questionnaires.md)  | Tento článek obsahuje informace o způsobu rozesílání dotazníku respondentům a vyplňování dotazníků.                                                                       |
-| [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md) | Tento článek obsahuje informace o způsobu zobrazení a vyhodnocování výsledků z vyplněných dotazníků.                                                                                        |
+| [Návrh dotazníku](design-questionnaires.md)  | Tento článek obsahuje informace o způsobu návrhu dotazníku. Proces návrhu zahrnuje nastavení předpokladů, odpovědí a dotazů a poté je zkombinuje do dotazníku. |
+| [Distribuce a vyplnění dotazníku](distribute-questionnaires.md)  | Tento článek obsahuje informace o způsobu rozesílání dotazníku respondentům a vyplňování dotazníků.                                                                       |
+| [Zobrazení a vyhodnocení výsledků dotazníku](evaluate-questionnaire-results.md) | Tento článek obsahuje informace o způsobu zobrazení a vyhodnocování výsledků z vyplněných dotazníků.                                                                                        |
 
 
 
@@ -58,7 +58,7 @@ Následující tabulka obsahuje odkazy na informace o základních úlohách dot
 
 [Distribuování a vyplňování dotazníků](distribute-questionnaires.md)
 
-[Zobrazení a vyhodnocení výsledků dotazníků](evaluate-questionnaire-results.md)
+[Zobrazení a zhodnocení výsledků dotazníků](evaluate-questionnaire-results.md)
 
 
 

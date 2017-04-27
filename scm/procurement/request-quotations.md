@@ -1,5 +1,5 @@
 ---
-title: "Požadavek na nabídku (RFQ)"
+title: "Požadavek na nabídky (RFQ)"
 description: "Tento článek poskytuje přehled požadavků na nabídku (RFQs), které organizace vydávají v případě, že musí nakoupit položky nebo služby a chtějí získat od několika dodavatelů konkurenční nabídky. V požadavku na nabídku požádejte dodavatele o zadání cen a dodacích lhůt pro zadané množství položek. Lze také požádat dodavatele, aby určili, zda budou účtovány vedlejší náklady, například přepravní náklady nebo slevy pro velké objednávky či včasnou platbu za fakturu dodavatele."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="request-for-quotations-rfqs"></a>Požadavek na nabídku (RFQ)
+# <a name="request-for-quotations-rfqs"></a>Požadavek na nabídky (RFQ)
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,9 +40,9 @@ Požadavek na nabídku (RFQ) zahrnuje následující úkoly:
 
 Následující obrázek přehledně znázorňuje průběh zpracování požadavku na nabídku.  
 
-[![Žádost o zpracování nabídky](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)  
+[![Proces požadavku na nabídku](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)  
 
-Požadavek na nabídku můžete vytvořit z plánovaných objednávek z nákupní žádanky a z ručního zadání. Požadavek na nabídku, který vytvoříte, se nazývá případ požadavku na nabídku a je základní dokument, který použijete k vystavení nabídky pro každého dodavatele. Po přípravě případu RFQ a přidat dodavatele, klepněte na tlačítko **poslat** na případu RFQ a RFQ deník je vytvořen pro každého dodavatele, který odeslané RFQ pro. Můžete nakonfigurovat nastavení správy tisku pro akci odesílání a tisk pro každého dodavatele do archivu nebo odeslat sestavu e-mailovou adresu každého dodavatele. Deník požadavku na nabídku pro každého dodavatele lze navíc použít k vytvoření sestavy, kterou lze odeslat nebo později znovu odeslat dodavateli. Také můžete nakonfigurovat akce Odeslání a vygenerovat list odpovědí, který mohou vyplňovat dodavatelé.  
+Požadavek na nabídku můžete vytvořit z plánovaných objednávek z nákupní žádanky a z ručního zadání. Požadavek na nabídku, který vytvoříte, se nazývá případ požadavku na nabídku a je základní dokument, který použijete k vystavení nabídky pro každého dodavatele. Po přípravě případu RFQ a přidání dodavatelů klikněte na tlačítko **Odeslat** v případu požadavku na nabídku a pro každého dodavatele, kterému jste odeslali RFQ , se vytvoří deník RFQ. Můžete nakonfigurovat nastavení správy tisku pro akci Odeslat vytisknout sestavu pro každého dodavatele do archivu nebo odeslat sestavu na e-mailovou adresu každého dodavatele. Deník požadavku na nabídku pro každého dodavatele lze navíc použít k vytvoření sestavy, kterou lze odeslat nebo později znovu odeslat dodavateli. Také můžete nakonfigurovat akce Odeslání a vygenerovat list odpovědí, který mohou vyplňovat dodavatelé.  
 
 Pokud se po odeslání musí požadavek na nabídku změnit, můžete opětně odeslat požadavek na nabídku dodavatelům po dokončení úprav.  
 
@@ -52,18 +52,18 @@ Pokud je druhá iterace odpovědi vyžadována pro určitého dodavatele, klepn�
 
 Pokud jste přidali kritéria hodnocení do případu požadavku na nabídku, odpověď požadavku na nabídku bude mít panel hodnocení, kde můžete zadat výsledky. Celkové hodnocení se zobrazí při porovnání odpovědí na stránce **Porovnat odpovědi**, kde můžete také porovnat jiná data odpovědi, jako například ceny řádku, datum dodání a celkovou cenu.  
 
-Po rozhodnutí, zda chcete použít nabídku nebo dílčí nabídku, můžete je přijmout a odmítnout ostatní. Jsou generovány deníky přijetí, deníky odmítnutí a příslušné sestavy. Tyto budou vytištěny, archivovány a odeslána podle nastavení správy tisku. Po přijetí nabídky nebo nabídky konkrétní řádky nákupní smlouvy nebo nákupní objednávka nebo nákupní žádanky je aktualizován v závislosti na typu nákupní RFQ. Můžete vytvořit obchodní smlouvu, kterou můžete později použít u všech odpovědí, bez ohledu na to, zda jste je přijali nebo zamítli.  
+Po rozhodnutí, zda chcete použít nabídku nebo dílčí nabídku, můžete je přijmout a odmítnout ostatní. Jsou generovány deníky přijetí, deníky odmítnutí a příslušné sestavy. Tyto budou vytištěny, archivovány a odeslány podle nastavení správy tisku. Při přijetí nabídky nebo konkrétních řádků v nabídce bude vytvořena nákupní smlouva nebo nákupní objednávka nebo aktualizován nákupní požadavek – v závislosti na typu nákupního požadavku na nabídku. Můžete vytvořit obchodní smlouvu, kterou můžete později použít u všech odpovědí, bez ohledu na to, zda jste je přijali nebo zamítli.  
 
 Stav požadavku na nabídku se zobrazí v záhlaví požadavku na nabídku a závisí na stavu řádků požadavku na nabídku. Stav označuje rozsah, do kterého byl zpracován požadavek na cenovou nabídku. Každý požadavek na nabídku má dvě hodnoty stavu: nejnižší a nejvyšší. Nejnižší stav je nejméně pokročilou fází jakékoli řádky v požadavku na nabídku a nejvyšší stav je nejpokročilejší fází jakékoli řádky v požadavku na nabídku. Pokud je například poslední pokročilá fáze v požadavku na nabídku určena pro řádku, která byla vytvořena, bude nejnižší fáze požadavku **Vytvořeno**. Pokud je nejpokročilejší fáze v požadavku na nabídku určena pro řádku, která byla odeslána dodavatelům, bude její nejvyšší stav **Odesláno**. Stavy jsou automaticky aktualizovány při zpracování požadavku na nabídku.  
 
 Nejnižší a nejvyšší stav záhlaví požadavku na nabídku můžete zobrazit na stránce **Všechny požadavky na nabídky**. Nejnižší a nejvyšší stav řádku požadavku na nabídku můžete zobrazit na kartě **Řádky** na stránce **Požadavky na nabídky**.  
 
-Zde je posloupnost stavů pro zpracování RFQ:
+Pořadí stavů zpracování požadavku na nabídku vypadá takto:
 
-1.  **Created**
-2.  **Sent**
-3.  **Received**
-4.  **Přijato**/**zrušen**/**odmítnuto**
+1.  **Vytvořeno**
+2.  **Odesláno**
+3.  **Přijato**
+4.  **Přijato**/**Zrušeno**/**Odmítnuto**
 
 Stavy budou popsány podrobněji pozdější v tomto článku.
 
@@ -75,7 +75,7 @@ Než bude možné vytvořit případ požadavku na nabídku, je nutné konfiguro
 -   Informace o dodání a platební podmínky.
 -   Pole, která mají být zahrnuta v odpovědi na požadavek na nabídku
 
-Tyto hodnoty lze přepsat pro konkrétní případ požadavku na nabídku. Také je třeba nakonfigurovat proces změn. V rámci této konfigurace můžete zapnout blokování pole. Při aktivaci uzamykání pole pracovníci zásobování, kteří chtějí změnit požadavek na nabídku, musí nejdříve klepnout na **Vytvořit** v části **Dodatek** na kartě **Nabídka**. Po aktualizaci RFQ se změnou professional zásobování musí dokončit klepnutím na **Finalize**. ** ** dokončení akce vytvoří e-mailovou zprávu, která upozorní dodavatele o změněné RFQ. Vyberte šablonu pro oznámení e-mailem odeslané dodavatelům na stránce **Parametry modulu Zásobování a zdroje**. Po vytvoření šablona může obsahovat následující náhradní tokeny:
+Tyto hodnoty lze přepsat pro konkrétní případ požadavku na nabídku. Také je třeba nakonfigurovat proces změn. V rámci této konfigurace můžete zapnout blokování pole. Při aktivaci uzamykání pole pracovníci zásobování, kteří chtějí změnit požadavek na nabídku, musí nejdříve klepnout na **Vytvořit** v části **Dodatek** na kartě **Nabídka**. Po doplnění požadavku na nabídku o změnu musí pracovník zásobování dokončit proces klepnutím na **Dokončit**.** **Akce Dokončit vytvoří e-mailové upozornění oznamující dodavateli změnu požadavku na nabídku. Vyberte šablonu pro oznámení e-mailem odeslané dodavatelům na stránce **Parametry modulu Zásobování a zdroje**. Po vytvoření šablona může obsahovat následující náhradní tokeny:
 
 -   %Důvod pro vrácení nabídky%
 -   %Důvod pro dodatek%
@@ -127,7 +127,7 @@ Následující tabulka uvádí změny stavu požadavku na nabídku při vytvoře
 
 |                                    |                              |                                                 |                            |                             |
 |------------------------------------|------------------------------|-------------------------------------------------|----------------------------|-----------------------------|
-| **Action**                         | **Lowest RFQ header status** | **Highest RFQ header status**                   | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Akce**                         | **Nejnižší stav záhlaví požadavku na nabídku** | **Nejvyšší stav záhlaví požadavku na nabídku**                   | **Nejnižší stav řádky požadavku na nabídku** | **Nejvyšší stav řádky požadavku na nabídku** |
 | Vytvoření záhlaví RFQ a řádku.    | Vytvořeno                      | Vytvořeno                                         | Vytvořeno                    | Vytvořeno                     |
 | Odešlete požadavek na cenovou nabídku konkrétního dodavatele. | Odesláno                         | Odesláno                                            | Odesláno                       | Odesláno                        |
 | Přidejte jiného dodavatele.                | Vytvořeno                      | Odešlete (požadavek na nabídku byl zaslán pouze jednomu dodavateli.) | Vytvořeno                    | Odesláno                        |
@@ -149,7 +149,7 @@ Pokud je dotazník připojen k případu požadavku na nabídku, je nutné ručn
 
 Pokud je nutné zadat alternativní řádky, a případ požadavku na nabídku to umožňuje, na pevné záložce **Řádky nákupní nabídky** klepněte na tlačítko **Přidat řádek**. Poté zadejte informace o produktu, například číslo položky nebo kategorii zásobování, množství, cenu a slevu.  
 
-Pokud jste zadali odpověď, ale vyžadují novou nabídku od dodavatele, můžete znovu Odeslat RFQ. To bude generovat nový deník a hlásí, že můžete požádat o změny od dodavatele.  
+Pokud jste zadali odpověď, ale požadujete novou nabídku od dodavatele, můžete znovu odeslat RFQ. Tím se vygeneruje nový deník a sestava, které můžete použít k vyžádání změn od dodavatele.  
 
 Přehled všech požadavků na nabídku a jejich stavy odpovědi naleznete na stránce **Zpracování požadavku na nabídku**.  
 
@@ -157,7 +157,7 @@ Následující tabulka uvádí změny stavu požadavku na nabídku při příjmu
 
 |                                                |                       |                        |                              |                               |                            |                             |
 |------------------------------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Action**                                     | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Akce**                                     | **Nejnižší stav nabídky** | **Nejvyšší stav nabídky ** | **Nejnižší stav záhlaví požadavku na nabídku** | **Nejvyšší stav záhlaví požadavku na nabídku** | **Nejnižší stav řádky požadavku na nabídku** | **Nejvyšší stav řádky požadavku na nabídku** |
 | Zaregistrujte první nabídku od dodavatele a uložte ji.        | Odesláno                  | Přijato               | Odesláno                         | Přijato                      | Odesláno                       | Přijato                    |
 | Zaregistrujte druhou nabídku od dodavatele a uložte ji. | Přijato              | Přijato               | Přijato                     | Přijato                      | Přijato                   | Přijato                    |
 
@@ -186,7 +186,7 @@ Následující tabulka obsahuje změny stavu požadavku na nabídku při přijet
 
 |                         |                       |                        |                              |                               |                            |                             |
 |-------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Action**              | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Akce**              | **Nejnižší stav nabídky ** | **Nejvyšší stav nabídky ** | **Nejnižší stav záhlaví požadavku na nabídku** | **Nejvyšší stav záhlaví požadavku na nabídku** | **Nejnižší stav řádky požadavku na nabídku** | **Nejvyšší stav řádky požadavku na nabídku** |
 | Přijměte jednu z nabídek. | Přijato              | Přijato               | Přijato                     | Přijato                      | Přijato                   | Přijato                    |
 | Odmítněte ostatní nabídky.  | Odmítnuto              | Přijato               | Odmítnuto                     | Přijato                      | Odmítnuto                   | Přijato                    |
 

@@ -36,7 +36,7 @@ Konfigurujte modul Pohledávky a Kredit a inkasa pro sledování faktur a příc
 Můžete vytvořit skupiny odběratelů, odběratele, účetní profily, různé možnosti platby, oznámení úroků, upomínky, provize, parametry týkající se odběratelů, poplatků, dodání a míst určení, cizí směnky nebo další typy informací o pohledávkách a kreditu a inkasu.
 V následující tabulce jsou uvedeny stránky, které slouží ke konfiguraci a údržbě pohledávek a úvěrů a inkas. Položky těchto tabulek jsou uspořádány podle úkolů a poté abecedně podle názvu stránky.
 
-| ![Poznámka:](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Poznámka:")**Poznámka**          |
+| ![Poznámka](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Poznámka")**Poznámka**          |
 |--------------------------------------------------------------------------------------------------|
 | Aby bylo možné na některé stránky v následující tabulce přejít, jsou nutné určité informace nebo nastavení parametrů. |
 
@@ -101,15 +101,15 @@ V následující tabulce jsou uvedeny stránky, které slouží ke konfiguraci a
 |                                                      | Nastavení kontaktů odběratelů a e-mailu | Nastavte kontakty pro odběratele společně s jejich e-mailovými adresami. Tyto adresy se zobrazí na stránce Inkasa a použijí se k vytvoření e-mailů zasílaných odběratelům. Dále pro každého odběratele nastavte také výchozí kontakt inkas, který se na stránce Inkasa zobrazí jako první. |
 |                                                      | Fondy zákazníků                       | Nastavte fondy zákazníků představující dotazy, které definují skupinu odběratelských účtů, které lze zobrazit a spravovat v rámci procesu inkasa nebo sledování splatnosti.                                                                                                                           |
 |                                                      | Účetní profil odběratele             | Nastavení profilů, které určují zaúčtování transakcí odběratelů do hlavní knihy                                                                                                                                                                                      |
-|                                                      | Kódy důvodů odběratele                | Nastavení kódů důvodu zákazníka.                                                                                                                                                                                                                                                    |
-|                                                      | Kódy důvodů odběratele odpisu      | Nastavte kódy důvodů odpisu zákazníka, použité pro transakce odpisů.                                                                                                                                                                                             |
+|                                                      | Kódy důvodů odběratele                | Nastavení kódů důvodů odběratele.                                                                                                                                                                                                                                                    |
+|                                                      | Kódy důvodu odpisu odběratele      | Nastavte kódy důvodů odpisu odběratele, které budou použity pro transakce odpisů.                                                                                                                                                                                             |
 |                                                      | Nastavení formuláře                           | Definice parametrů poznámek formuláře pro nabídky, potvrzení, výdejky, dodací listy, faktury odběratele, volné faktury a oznámení úroků                                                                                                                               |
 |                                                      | Zájmy                             | Nastavení a správa kódů úroků                                                                                                                                                                                                                                                 |
-|                                                      | Informace o NSF.                     | U bankovního účtu nastavte informace o NFP, které budou na stránce Inkasa použity při označení platby jako transakce NFP.                                                                                                                                              |
+|                                                      | Informace o NFP.                     | U bankovního účtu nastavte informace o NFP, které budou na stránce Inkasa použity při označení platby jako transakce NFP.                                                                                                                                              |
 |                                                      | Informace o prodejci              | Nastavte e-mailovou adresu pro prodejce. Tyto adresy se zobrazí na stránce inkasa a můžete je použít k odeslání e-mailu prodejci z této stránky.                                                                                                                |
 
  
-Další informace naleznete v tématu [úvěrů a inkasa v pohledávkách](collections-credit-accounts-receivable.md).
+Další informace naleznete v tématu [Úvěr a inkasa v modulu Pohledávky](collections-credit-accounts-receivable.md).
 
 
 

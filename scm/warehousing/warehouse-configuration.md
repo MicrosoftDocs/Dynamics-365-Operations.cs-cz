@@ -52,13 +52,13 @@ V rámci procesu povolení rozvržení skladu je nutné definovat skupiny zón s
 -   **Typy skladových míst** – Logické či fyzické seskupení skladových míst ve skladu. Můžete například vytvořit typ skladového místa pro všechna přechodná skladová místa. Povinná nastavení na stránce **Parametry správy skladu** řídí proces stanovení typu přechodných skladových míst a typ konečného skladového místa.
 -   **Místa** – Nejnižší úroveň informací o skladovém místě. Místa se používají ke sledování toho, kde budou zásoby na skladě uloženy a vyzvednuty ve skladu.
 
-Entity, které vytvoříte k definování rozvržení skladu, se používají v dotazech, které nastavíte v šablonách práce a které řídí pracovní zakázky ve skladu. Proto definujte zóny, typy skladových míst a tak dále a zvažte, jak se různé oblasti ve skladu postupy používají pro různé postupy. Dále zvažte faktory, jako jsou například fyzické vlastnosti konkrétní oblasti. Například může být oblastí, kde lze použít pouze určitý typ vysokozdvižném vozíku. Nebo pokud vaše společnost vlastní výroby a hotových výrobků v rámci stejného zařízení, můžete chtít vytvořit jeden sklad v 365 Dynamics pro operace, ale pak se oddělují dvě operace vytváření skupin dvě zóny. Entity poskytují popisné názvy, takže je snadné je identifikovat při použití v dotazech šablony.
+Entity, které vytvoříte k definování rozvržení skladu, se používají v dotazech, které nastavíte v šablonách práce a které řídí pracovní zakázky ve skladu. Proto definujte zóny, typy skladových míst a tak dále a zvažte, jak se různé oblasti ve skladu postupy používají pro různé postupy. Dále zvažte faktory, jako jsou například fyzické vlastnosti konkrétní oblasti. Například mohou existovat místa, kde lze použít pouze určitý typ vysokozdvižného vozíku. Nebo pokud vaše společnost má výrobu a hotové výrobky v rámci stejného zařízení, můžete vytvořit jeden sklad v aplikaci Dynamics 365 for Operations, ale pak můžete tyto dvě operace oddělit vytvořením dvou skupin zón. Zadejte pro entity popisné názvy, aby bylo možné je snadno identifikovat při použití v dotazech šablony.
 
 ### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Limity skladových míst, profily skladových míst a pevná výdejní místa
 
 Je nutné zvážit fyzické rozvržení skladu, za účelem určení kapacity úložiště (limity skladových míst a profily skladových míst) a v rámci vašich pokusů za účelem dosažení optimálních skladových procesů. 
 
-Místo skladování limity pomohou zaručit, že práce není vytvořen tento soupis požadovat být uváděny v umístění, které nemá fyzické kapacity pro přepravu zásob. Například pokud některé umístění ve skladu může obsahovat pouze jednu paletu podle umístění, umístění omezení chovu může být povolena. ** Množství ** hodnota může být nastavena na **1**a ** jednotky ** hodnota může být nastavena na **PL** uvnitř seskupení určitého umístění profilu. 
+Díky limitům pro místo uskladnění se nevytvoří práce vyžadující umístění zásob na skladové místo, které nemá pro zásoby fyzickou kapacitu. Pokud například některá umístění ve skladu pojmou pouze jednu paletu na umístění, můžete povolit limity pro místo uskladnění. Pro **Množství** lze nastavit hodnotu **1** a pro **Jednotku** lze nastavit hodnotu **PL** v rámci určitého seskupení profilů skladového místa. 
 
 Pokud řízení omezení kapacity skladového místa vyžaduje rozšířené výpočty, lze použít nastavení profilu skladového místa. V takovém případě je zvážena hmotnost a objem při provádění výpočtů kapacity. 
 
@@ -66,7 +66,7 @@ K dosažení optimálních výstupních procesů byste měli vyhodnotit, zda maj
 
 ### <a name="location-setup-wizard"></a>Průvodce nastavením skladového místa
 
-Chcete-li rychle vytvořit umístění ve skladu, můžete použít ** nastavení umístění ** průvodce. Jako součást tohoto postupu můžete snadno uchovávat formát názvů skladového místa.
+Chcete-li rychle vytvořit skladová místa ve skladu, můžete použít průvodce **nastavením skladového místa**. Jako součást tohoto postupu můžete snadno uchovávat formát názvů skladového místa.
 
 ## <a name="warehouse-processes"></a>Skladové procesy
 V rámci konfigurace skladu je důležité povolit procesy skladu podle obchodních požadavků. Nejdůležitější součásti, které je třeba nakonfigurovat, jsou šablony vlny, šablony práce, fondy práce a směrnice skladového místa.
@@ -75,7 +75,7 @@ V rámci konfigurace skladu je důležité povolit procesy skladu podle obchodn�
 
 Šablony vlny pomáhají povolit odchozí proces "Uvolnění do skladu". Po uvolnění řádků objednávky (buď přímo ze zdrojových dokumentů, pomocí dávkových procesů úloh nebo pomocí zatížení, které již bylo vytvořeno), se používá funkce šablony vlny. 
 
-Můžete vytvořit tři typy šablon vlny: **expedice**, **výrobní zakázky**, a **Kanban**. Parametry se používají k definování, jak daleko má systém automaticky přejít při zpracování odchozí práce. Šablona vlny je vybrána na základě pořadí šablony vlny a kritérií, která jsou zadána v šabloně. Pokud je šablona uvedena v horní části řady, jsou nejprve zkontrolována kritéria v této šabloně. Pokud kritéria nelze splnit, bude zpracována šablona vlny. V opačném případě budou zkontrolována kritéria v další šabloně a tak dále. Je proto vhodné vložit šablonu, která obsahuje nejkonkrétnější kritéria, do horní části seznamu pořadí šablon vlny, aby byla zpracována jako první. Například chcete zpracovat všechnu dnešní práci konkrétního dopravce a dočasně odložit zpracování práce pro ostatní dopravce. V tomto případě by měla být šablona vlny, která vybere práci pro daného dopravce, uvedena v pořadí výše než jiné šablony. V opačném případě může být práce ostatních dopravců zpracována před dokončením práce daného dopravce. 
+Můžete vytvořit tři typy šablon vlny: **Expedice**, **Výrobní zakázka** a **Kanban**. Parametry se používají k definování, co může systém automaticky provést při zpracování odchozí práce. Šablona vlny je vybrána na základě pořadí šablony vlny a kritérií, která jsou zadána v šabloně. Pokud je šablona uvedena v horní části řady, jsou nejprve zkontrolována kritéria v této šabloně. Pokud kritéria nelze splnit, bude zpracována šablona vlny. V opačném případě budou zkontrolována kritéria v další šabloně a tak dále. Je proto vhodné vložit šablonu, která obsahuje nejkonkrétnější kritéria, do horní části seznamu pořadí šablon vlny, aby byla zpracována jako první. Například chcete zpracovat všechnu dnešní práci konkrétního dopravce a dočasně odložit zpracování práce pro ostatní dopravce. V tomto případě by měla být šablona vlny, která vybere práci pro daného dopravce, uvedena v pořadí výše než jiné šablony. V opačném případě může být práce ostatních dopravců zpracována před dokončením práce daného dopravce. 
 
 V každé šabloně vlny je nutné zadat metody zpracování vlny. Metody, které jsou k dispozici, se liší v závislosti na typu šablony vlny.
 
@@ -107,6 +107,6 @@ Chcete-li usnadnit a urychlit definování akcí, které jsou přidruženy k jed
 <a name="see-also"></a>Viz také
 --------
 
-[Konfigurovat umístění ve skladu WMS povolena (úkol guide)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
+[Konfigurace umístění ve skladu s povoleným WMS (průvodce záznamem úloh)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
 
 

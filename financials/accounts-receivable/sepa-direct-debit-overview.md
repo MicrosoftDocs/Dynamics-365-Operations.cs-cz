@@ -33,10 +33,10 @@ ms.lasthandoff: 03/31/2017
 
 Jednotná oblast pro platby v eurech (SEPA) je definována Evropskou komisí a určuje, že všechny elektronické platby jsou považovány za domácí bez ohledu na zemi nebo oblast, kde se osoba, podnik, nebo organizace a banka nachází. Neexistuje žádný rozdíl mezi národní a zahraniční platbou. SEPA zahrnuje 28 členských států Evropské unie (EU) plus Island, Lichtenštejnsko, Norsko, Švýcarsko, Monako a San Marino. SEPA umožňuje vytvořit jednotný trh pro platební transakce v Evropském hospodářském prostoru (EHP). Použitím SEPA se očekává snížit počet formátů plateb, se kterými banky, společnosti a jednotlivci musí pracovat.   
 
-<a name="what-is-the-goal-of-sepa-direct-debits"></a>Co je cílem SEPA direct MD?
+<a name="what-is-the-goal-of-sepa-direct-debits"></a>Jaký je cíl přímých debetů SEPA?
 ---------------------------------------
 
-Přímý debet SEPA umožňuje věřiteli ke shromažďování finančních prostředků z bankovního účtu zákazníka, za předpokladu, že bylo uděleno pověření podepsané zákazníkem věřiteli. Odběratel podepisuje zmocnění autorizující příjemce vybírat platbu a vydávat bance odběratele příkaz k vyplacení shromážděných prostředků. 
+Přímý debet SEPA umožňuje příjemci vybírat finanční prostředky z bankovního účtu odběratele, za předpokladu, že bylo odběratelem podepsané zmocnění uděleno příjemci. Odběratel podepisuje zmocnění autorizující příjemce vybírat platbu a vydávat bance odběratele příkaz k vyplacení shromážděných prostředků. 
 
 Inkaso SEPA jako první vytváří platební nástroj, který lze použít pro národní a zahraniční inkaso v eurech v rámci 32 zemí/oblastí SEPA. 
 
@@ -63,7 +63,7 @@ Podnikatelské schéma inkasa SEPA B2se vztahuje na obchodní transakce a dále 
 Ano. Schéma COR1 můžete použít pro zmocnění k inkasu SEPA v Rakousku, Belgii, Německu, Francii, Itálii, Španělsku a Nizozemsku. Režim poskytuje kratší období před oznámením pro výběr inkasa příjemcem.
 
 ## <a name="what-are-international-bank-account-numbers-iban-and-bank-identifier-codes-bic"></a>Co je to mezinárodní číslo bankovního účtu (IBAN) a identifikační kód banky (IKB)?
-Mezinárodní číslo bankovního účtu (IBAN) a identifikační kód banky (IKB) slouží pro identifikaci každého účtu v 32 zemích/oblastech SEPA. V poli Kód SWIFT a IBAN IBAN pole zadejte BIC. Obě pole se nachází na pevné záložce další identifikace na kartě bankovního účtu na stránce bankovních účtů. To platí pro bankovní účet příjemce i bankovní účet odběratele.
+Mezinárodní číslo bankovního účtu (IBAN) a identifikační kód banky (IKB) slouží pro identifikaci každého účtu v 32 zemích/oblastech SEPA. Zadejte BIC do pole Kód SWIFT a IBAN do pole IBAN. Obě pole se nachází na pevné záložce další identifikace na kartě bankovního účtu na stránce bankovních účtů. To platí pro bankovní účet příjemce i bankovní účet odběratele.
 
 ## <a name="where-do-i-enter-creditor-identifiers-direct-debit-ids"></a>Kde lze zadávat identifikátory příjemce (ID inkasa)?
 V SEPA je každý příjemce identifikován jedinečným identifikátorem příjemce. Tento identifikátor umožňuje odběrateli a bance odběratele vyfiltrovat každé inkaso a poté zpracovat nebo odmítnout inkaso podle pokynů odběratele. Příjemci musí vyžádat tento identifikátor od banky. Tento identifikátor zadejte do pole ID inkasa pro bankovní účet právnické osoby.
@@ -72,7 +72,7 @@ V SEPA je každý příjemce identifikován jedinečným identifikátorem příj
 Odběratel podepisuje zmocnění autorizující příjemce vybírat platbu a vydávat bance odběratele příkaz k vyplacení shromážděných prostředků. Odběratel vystaví zmocnění v tištěné podobě nebo elektronicky. Ve výchozím nastavení vyprší platnost zmocnění 36 měsíců po poslední inicializaci inkasa.
 
 ## <a name="where-do-i-specify-the-sepa-direct-debit-file-format-iso-20022"></a>Kde lze určit formát souboru s inkasem SEPA (ISO 20022)?
-Formáty dat SEPA jsou založeny na normě zpráv ISO 20022. Bude políčko obecné elektronických sestav a vyberte položku formátu SEPA Direct MD export formátu konfigurace při konfiguraci účtů pohledávek způsoby platby. Tento způsob platby použijte při generování souboru plateb v deníku plateb odběratele.
+Formáty dat SEPA jsou založeny na normě zpráv ISO 20022. Při konfigurace způsobů platby závazků zaškrtněte políčko Obecné elektronické výkaznictví a vyberte formát platebního převodu SEPA. Tento způsob platby použijte při generování souboru plateb v deníku plateb odběratele.
 
 ## <a name="in-what-file-formats-can-i-generate-sepa-direct-debit-payment-files"></a>V jakých formátech souborů lze generovat soubory pro platbu inkasa SEPA?
 Soubory elektronických plateb pro inkasa SEPA můžete generovat v těchto formátech:

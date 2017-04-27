@@ -1,5 +1,5 @@
 ---
-title: "O schválení krok konfigurace v pracovním postupu"
+title: "Konfigurace schvalovacího kroku ve workflowu"
 description: "Toto téma vysvětluje, jak nakonfigurovat vlastnosti schvalovacího kroku."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-an-approval-step-in-a-workflow"></a>O schválení krok konfigurace v pracovním postupu
+# <a name="configure-an-approval-step-in-a-workflow"></a>Konfigurace schvalovacího kroku ve workflowu
 
 [!include[banner](../includes/banner.md)]
 
@@ -127,10 +127,10 @@ Pomocí následujícího postupu určíte, komu má být schvalovací krok při�
     </tr>
     <tr class="even">
     <td>Uživatel</td>
-    <td>Zvláštní 365 Microsoft Dynamics pro operace uživatele</td>
+    <td>Konkrétní uživatelé aplikace Microsoft Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
-    <li><strong>k dispozici uživatelům</strong> seznam obsahuje všechny Dynamics 365 uživatelům operací. Vyberte uživatele, ke kterým chcete krok přiřadit, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    <li>Seznam <strong>Dostupní uživatelé</strong>: obsahuje všechny uživatele aplikace Dynamics 365 for Operations. Vyberte uživatele, ke kterým chcete krok přiřadit, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -232,10 +232,10 @@ Pokud uživatel u dokumentu neprovede akci v přiděleném čase, dokument bude 
     </tr>
     <tr class="odd">
     <td>Uživatel</td>
-    <td>Zvláštní Dynamics 365 uživatelům operací</td>
+    <td>Konkrétní uživatelé aplikace Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
-    <li><strong>k dispozici uživatelům</strong> seznam obsahuje všechny Dynamics 365 uživatelům operací. Vyberte uživatele, ke kterým chcete dokument eskalovat, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    <li>Seznam <strong>Dostupní uživatelé</strong>: obsahuje všechny uživatele aplikace Dynamics 365 for Operations. Vyberte uživatele, ke kterým chcete dokument eskalovat, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
     </ol></td>
     </tr>
     </tbody>

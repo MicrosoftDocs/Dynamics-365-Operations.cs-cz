@@ -59,7 +59,7 @@ Vyberete-li jako odpisový rok možnost **Kalendář**, v poli **Frekvence obdob
 
 Vyberete-li možnost **Fiskální** v poli **Odpisový rok**, degresivní odpis 150 % je vypočten na základě fiskálního roku pro fiskální kalendář, který je určen pro knihu, nebo pro fiskální kalendář, který je vybrán na stránce **Hlavní kniha**. Fiskální kalendáře se nastavují na stránce **Fiskální kalendáře**. 
 
-Například pro fiskální rok, 1. července až 30. června, výpočet odpisů začíná datem 1. Fiskální rok může být delší nebo kratší než 12 měsíců. Odpisy se upravují pro jednotlivá období. Délka dalšího fiskálního roku záleží na nastavení období na stránce **Fiskální kalendáře**. 
+Například pro fiskální rok od 1. července do 30. června začíná výpočet odpisů datem 1. července. Fiskální rok může být delší nebo kratší než 12 měsíců. Odpisy se upravují pro jednotlivá období. Délka dalšího fiskálního roku záleží na nastavení období na stránce **Fiskální kalendáře**. 
 
 Vyberete-li jako odpisový rok možnost **Fiskální**, v poli **Frekvence období** jsou k dispozici následující možnosti:
 
@@ -84,7 +84,7 @@ Metoda degresivního odepisování 150 % vydělí 150 procent počtem roků živ
 | Rok 3 | 4 900 × 30 % = 1 470                           | 5 900 – 1 470 = 4 430  | 4 900 – 1 470 = 3 430                 |
 
 > [!NOTE]
-> Obvykle, když změní částku, která se počítá se 150 % degresivní metody odpisu pomocí nižší než částka, kterou by vypočítat pomocí lineární metody nedojde k převodu metody přímou čáru pro zbývající životnost.
+> Když částka vypočtená s použitím metody 150% degresivního odpisování klesne pod hodnotu menší než má částka, která by byla vypočtena s použitím lineární metody, obvykle dojde k převodu na lineární metodu pro zbytek životnosti.
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Podpora převodu kanbanu pro skenery čárového kódu"
+title: "Rozvrh převodů kanbanu podporuje skenery čárových kódů"
 description: "Rozvrh převodů kanbanu podporuje vstup ze skeneru skrze widget pro skener čárového kódu, který umožňuje vybrat, zahájit, dokončit a vyprázdnit kanbanovou úlohu."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Podpora převodu kanbanu pro skenery čárového kódu
+# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Rozvrh převodů kanbanu podporuje skenery čárových kódů
 
 [!include[banner](../includes/banner.md)]
 
@@ -49,13 +49,13 @@ Na pevné záložce **Registrace skeneru** můžete vybrat režim registrace, kt
 <a name="registration-mode-select"></a>Režim registrace – Nastavit
 ------------------------
 
-Při použití čtecího zařízení čárového kódu vyberte úlohy, režim zobrazení změn kanban Rada. V tomto režimu platí následující podmínky:
+Pokud používáte čtečku čárových kódů pro výběr úlohy, režim zobrazení kanbanové desky se změní. V tomto režimu platí následující podmínky:
 
 -   Zobrazí se pouze skenovaná kanbanová úloha.
 -   Podrobnosti o vybrané úloze jsou uvedeny na pevné záložce **Podrobnosti**.
 -   Pevná záložka **Zprávy** zobrazuje zprávy pouze pro vybranou úlohu.
 -   Stav úlohy lze změnit pomocí funkce, která je k dispozici v podokně akcí. Rozvrh převodů kanbanu bude i nadále popisovat pouze jednu úlohu během této doby.
--   Informace v seznamu úloh můžete aktualizovat ručně klepnutím na **aktualizace** (Shift + F5) v podokně akcí. Po aktualizaci údajů jsou znovu zobrazeny úplné výsledky filtru úlohy.
+-   Informace v seznamu úloh lze aktualizovat ručně klepnutím na **Aktualizovat** (Shift + F5) v podokně akcí. Po aktualizaci údajů jsou znovu zobrazeny úplné výsledky filtru úlohy.
 
 ## <a name="job-status-and-possible-actions"></a>Stav úlohy a možné akce
 Stav vybrané úlohy a stav doložené úlohy pro kanbany události určuje, zda může úlohu dále zpracovat. V následující tabulce jsou uvedeny informace o těchto stavech a úkolech:

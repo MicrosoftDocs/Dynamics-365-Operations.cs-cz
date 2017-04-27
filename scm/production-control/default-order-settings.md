@@ -1,5 +1,5 @@
 ---
-title: "Výchozí nastavení objednávky rozměry a varianty produktu"
+title: "Výchozí nastavení objednávky pro dimenze a varianty produktů"
 description: "Výchozí nastavení objednávky definuje pracoviště a sklad, odkud pocházející nebo kde jsou uloženy položky, minimální, maximální, násobná a standardní množství, která budou použita pro obchodování nebo řízení skladu, doby realizace, příznaky pro zastavení a metody příslibu objednávek. Výchozí nastavení objednávek se používají při vytváření nákupních objednávek, prodejních objednávek, převodních příkazů, deníků zásob a na základě hlavního plánování pro generování plánovaných objednávek. Výchozích nastavení objednávek může být specifické podle položky, pracovišť, variant produktu nebo dimenze produktu."
 author: YuyuScheller
 manager: AnnBe
@@ -26,14 +26,14 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="default-order-settings-for-dimensions-and-product-variants"></a>Výchozí nastavení objednávky rozměry a varianty produktu
+# <a name="default-order-settings-for-dimensions-and-product-variants"></a>Výchozí nastavení objednávky pro dimenze a varianty produktů
 
 [!include[banner](../includes/banner.md)]
 
 
 Výchozí nastavení objednávky definuje pracoviště a sklad, odkud pocházející nebo kde jsou uloženy položky, minimální, maximální, násobná a standardní množství, která budou použita pro obchodování nebo řízení skladu, doby realizace, příznaky pro zastavení a metody příslibu objednávek. Výchozí nastavení objednávek se používají při vytváření nákupních objednávek, prodejních objednávek, převodních příkazů, deníků zásob a na základě hlavního plánování pro generování plánovaných objednávek. Výchozích nastavení objednávek může být specifické podle položky, pracovišť, variant produktu nebo dimenze produktu.
 
-Výchozí nastavení objednávky můžete definovat na stránce **Výchozí nastavení objednávky**. Chcete-li tuto stránku otevřít, přejděte na **řízení informací o produktech**&gt;**produkty**&gt;**uvolněných produktů**&gt; vyberte uvolněný produkt &gt;na **plán** nebo *** Správa zásob *** v podokně akcí &gt;**nastavení pořadí**&gt;**výchozí nastavení objednávky**.
+Výchozí nastavení objednávky můžete definovat na stránce **Výchozí nastavení objednávky**. Chcete-li otevřít tuto stránku, přejděte na **Řízení informací o produktech** &gt; **Produkty** &gt; **Uvolněné produkty** &gt;, vyberte uvolněný produkt &gt; na podokně akcí **Plán** nebo ****Správa skladu**** &gt; **Nastavení objednávky** &gt; **Výchozí nastavení objednávky**.
 
 ## <a name="default-order-settings"></a>Výchozí nastavení objednávky
 Existují tři typy výchozího nastavení objednávky pro nákupy, prodeje a zásoby. Výchozí nastavení objednávky pro nákup se používá při vytváření:
@@ -73,13 +73,13 @@ Výchozí nastavení objednávky pro zásoby se dále používá při vytvářen
 -   Plánované výrobní zakázky
 
 ## <a name="full-definition-of-a-released-product"></a>Úplná definice uvolněného produktu
-Při vytváření transakce, je třeba zadat úplnou definici uvolněný produkt na řádku před 365 Dynamics pro operace se pokusí zjistit výchozí nastavení objednávky. Úplná definice uvolněný produkt znamená, že číslo položky a všechny aktivní dimenze produktu, jako je například konfigurace, velikost, styl a barvu, jsou zadána v transakci. Pokud například ručně vytvoříte řádek nákupní objednávky pro variantu uvolněného produktu, je nutné zadat všechny dimenze požadovaného produktu předtím, než se pracoviště, sklad, množství a doba realizace zobrazí ve výchozím nastavení na řádku objednávky. 
+Při vytváření transakce je třeba zadat úplnou definici uvolněného produktu na řádku před tím, než se aplikace Dynamics 365 for Operations pokusí zjistit výchozí nastavení objednávky. Úplné definování uvolněného produktu znamená, že se číslo položky a všechny aktivní dimenze produktu, například konfigurace, velikost, styl a barva zadají v transakci. Pokud například ručně vytvoříte řádek nákupní objednávky pro variantu uvolněného produktu, je nutné zadat všechny dimenze požadovaného produktu předtím, než se pracoviště, sklad, množství a doba realizace zobrazí ve výchozím nastavení na řádku objednávky. 
 
-Ne všechny parametry výchozí nastavení objednávky jsou použity při vytváření řádků objednávky nebo deníku. Množství a doba realizace se zobrazí ve výchozím nastavení v případě potřeby. Například pokud řádek deníku počítání, pracoviště a sklad se zobrazí ve výchozím nastavení při vytvoření řádku. Samozřejmě žádné výchozí množství nebo více kontroly a minimální jsou prováděny při vytvoření řádku nebo zaúčtování deníku. 
+Ne všechny parametry výchozí nastavení objednávky jsou použity při vytváření řádků objednávky nebo deníku. Ve výchozím nastavení budou zobrazeny pouze množství a doby realizace v případě potřeby. Například při výpočtu řádky deníku se zobrazí ve výchozím nastavení při vytvoření řádku pouze pracoviště a sklad. Samozřejmě neprobíhají žádná výchozí nastavení množství nebo kontroly na násobcích a minimech při vytváření řádku nebo účtování deníku. 
 
-Systém se vždy pokouší najít výchozí pracoviště a sklad při vytvoření řádku objednávky nebo deníku. Pracoviště se nezobrazuje vždy defaultně z nastavení objednávky. Například při vytváření prodejní objednávky nebo nákupní objednávky se v řádcích objednávky automaticky použije pracoviště v záhlaví objednávky. Při vytváření řádku Kusovníku, web ze záhlaví Kusovníku používá. Poté, co je web určen, se použije k vyhledání libovolného webu nastavení objednávky specifické, které pak slouží jako výchozí pro sklad. 
+Systém se vždy pokouší najít výchozí pracoviště a sklad při vytvoření řádku objednávky nebo deníku. Pracoviště se nezobrazuje vždy defaultně z nastavení objednávky. Například při vytváření prodejní objednávky nebo nákupní objednávky se v řádcích objednávky automaticky použije pracoviště v záhlaví objednávky. Vytváříte-li řádek kusovníku, je použito pracoviště v záhlaví kusovníku. Po určení pracoviště se toto použije k nalezení nastavení objednávky specifického pro pracoviště, které lze použít jako výchozí nastavení skladu. 
 
-Výchozí typ objednávky, nákup a doby realizace zásob lze přepsat pomocí pravidla disponibility položky na **Disponibilita položky** stránky. Přestože výchozí nastavení objednávky neumožňuje rozdíl mezi produkcí a doba realizace převodu, vezme se pravidla disponibility pro položku. Nastavení disponibility položky však použije jen MRP při vytváření objednávek plánované výroby a plánovaného převodu a nebude použito při ručním vytváření objednávek výroby a převodu. 
+Výchozí typ objednávky, nákup a doba realizace skladu mohou být přepsány podle pravidla disponibility položky na stránce **Disponibilita položky**. Ačkoli výchozí nastavení objednávek neumožňuje rozlišovat mezi dobou realizace výroby a převodu, umožňují to pravidla disponibility položky. Nastavení disponibility položky však použije jen MRP při vytváření objednávek plánované výroby a plánovaného převodu a nebude použito při ručním vytváření objednávek výroby a převodu. 
 
 ## <a name="default-order-settings-rules"></a>Pravidla výchozího nastavení objednávky
 Můžete definovat obecné výchozí nastavení objednávky a libovolný počet pravidel výchozího nastavení, která se použijí pouze v určitých podmínkách, například v pracovišti nebo ve specifických dimenzích produktu nebo v kombinacích dimenzí produktu. Není možné definovat nastavení objednávky specifické pro sklad.
@@ -90,13 +90,13 @@ Pravidla výchozího nastavení objednávky mají kategorie. Čím vyšší kate
 
 ### <a name="default-order-settings-for-released-products"></a>Výchozí nastavení objednávky pro uvolněné produkty
 
-Pro různé uvolněné produkty můžete definovat obecné nastavení objednávky nebo nastavení objednávky specifické pro pracoviště. Obecná nastavení objednávky budou mít vždy kategorii nula. Nastavujete-li nové prodejní, nákupní a skladové objednávky společně a současně, doporučujeme používat **Zobrazení podrobností** na stránce **Výchozí nastavení objednávky **. Chcete-li přepnout do zobrazení Podrobnosti, přejděte **možností** podokno akcí &gt;**stránky možnosti**&gt;**změnit zobrazení**&gt;**zobrazení podrobností**.
+Pro různé uvolněné produkty můžete definovat obecné nastavení objednávky nebo nastavení objednávky specifické pro pracoviště. Obecná nastavení objednávky budou mít vždy kategorii nula. Nastavujete-li nové prodejní, nákupní a skladové objednávky společně a současně, doporučujeme používat **Zobrazení podrobností** na stránce **Výchozí nastavení objednávky **. Pokud chcete přepnout na zobrazení podrobností, přejděte na podokno akcí **Možnosti**&gt; **Možnosti stránky** &gt; **Změnit zobrazení** &gt; **Zobrazení podrobností**.
 
 ### <a name="site-specific-order-settings"></a>Nastavení objednávky specifické pro pracoviště
 
-Pro vytvoření nastavení objednávky specifické pro pracoviště, klepněte na tlačítko **Nový**. V **zobrazení podrobností**, vyplňte na webu v **nastavení pro**&gt;**web** pole. V **Zobrazení mřížky** vyplňte pracoviště ve sloupci **Pracoviště**. Nové pravidlo získá automaticky novou hodnotu kategorie vyšší než nula. Můžete vytvořit tolik pravidel specifických podle pracovišť, kolik potřebujete a můžete přiřadit všechna specifická pravidla podle pracovišť, abyste vymodelovali, že jsou stejně důležitá. 
+Pro vytvoření nastavení objednávky specifické pro pracoviště, klepněte na tlačítko **Nový**. V **Zobrazení podrobností** vyplňte pracoviště do pole **Nastavení je použitelné pro** &gt; **Pracoviště**. V **Zobrazení mřížky** vyplňte pracoviště ve sloupci **Pracoviště**. Nové pravidlo získá automaticky novou hodnotu kategorie vyšší než nula. Můžete vytvořit tolik pravidel specifických podle pracovišť, kolik potřebujete a můžete přiřadit všechna specifická pravidla podle pracovišť, abyste vymodelovali, že jsou stejně důležitá. 
 
-Pokud jste v **Zobrazení podrobností** nemůžete získat přehled pravidel, které jsou vytvořena pro položku. Přepněte tlačítkem **Zobrazit seznam** pro zobrazení informací o přehledu. Když je vytvořen řádek objednávky libovolného typu a nemá žádný web k dispozici, 365 Dynamics pro operace Vyhledá pravidlo s zadaný žádný web. To může pomoci určit výchozí web na řádku objednávky. Toto pracoviště se pak používá k vyhledávání pravidla specifického pro pracoviště, pokud může být nastaven výchozí sklad. Tento sklad je použit pro daný řádek objednávky.
+Pokud jste v **Zobrazení podrobností** nemůžete získat přehled pravidel, které jsou vytvořena pro položku. Přepněte tlačítkem **Zobrazit seznam** pro zobrazení informací o přehledu. Při vytváření řádku objednávky libovolného typu, pokud nemá zadané žádné pracoviště, hledá Dynamics 365 for Operations pravidlo bez určeného pracoviště. To může pomoci určit výchozí pracoviště na řádku objednávky. Toto pracoviště se pak používá k vyhledávání pravidla specifického pro pracoviště, pokud může být nastaven výchozí sklad. Tento sklad je použit pro daný řádek objednávky.
 
 ### <a name="specific-order-settings-for-product-dimension"></a>Specifické nastavení objednávky pro dimenzi produktu
 
@@ -106,8 +106,8 @@ Představte si následující vzorový produkt:
 
 |                                                     |                                         |
 |-----------------------------------------------------|-----------------------------------------|
-| **Product name**                                    | Fotoelektrický snímač                    |
-| **Item number**                                     | XW56                                    |
+| **Název produktu**                                    | Fotoelektrický snímač                    |
+| **Číslo položky**                                     | XW56                                    |
 | **Konfigurace** (používá se k modelaci typu osvětlení) | C1 - viditelné červené světlo, C2 - infračervené světlo |
 | **Styl** (slouží k modelování strojní revize)  | R1, R2, R3                              |
 
@@ -143,7 +143,7 @@ Zvažte následující výchozí pravidla nastavení objednávky.
 | 10   |      | C1            |  R2   |  2           |  21               |                                                |                    |
 | 0    |      |               |       | 1            | 11                |                                                |                    |
 
-Systém překročí sady pravidel dvakrát za účelem stanovení pracovišť a skladů. Při vytvoření řádku nákupní objednávky pro konfiguraci C1, R2, styl webu závisí na pravidlo s pořadím 10. Potom systém vyhledá pravidlo pro web 2 pro stanovení skladu. Je nalezeno pravidlo 20 a vzhledem k tomu, že má vyšší kategorii, sklad na řádku nákupní objednávky bude 22 a ne 21. 
+Systém překročí sady pravidel dvakrát za účelem stanovení pracovišť a skladů. Při vytvoření řádku nákupní objednávky pro konfiguraci C1, styl R2, je určeno pracoviště na základě pravidla s kategorií 10. Poté systém hledá pravidlo pro pracoviště 2 s cílem určit sklad. Je nalezeno pravidlo 20 a vzhledem k tomu, že má vyšší kategorii, sklad na řádku nákupní objednávky bude 22 a ne 21. 
 
 Jako hlavní pokyny slouží specifická pravidla a pravidla pro dimenze, které jsou důležitější než jiné dimenze, získávají vyšší kategorie, zatímco obecnější pravidla získávají nižší kategorie. 
 
@@ -151,7 +151,7 @@ Pravidlo s kategorií nula slouží jako záchranná síť. Jestliže nedojde k 
 
 Vzhledem k tomu, že je kategorie tak důležitá, jsou v podokně akcí **výchozí nastavení objednávky ** funkce pro přesun pravidla nahoru nebo dolů a pro přečíslování, takže jsou vždy s nárůstem 10. 
 
-Pravidel vytvořených pro uvolněný produkt může být více. Chcete-li získat lepší představu o tom, co každé pravidlo přepisuje a proč je to zapotřebí, doporučujeme používat **zobrazení mřížky** na stránce** výchozí nastavení objednávky**. Zobrazení mřížky můžete povolit tak, že přejdete k **možností** podokno akcí &gt;**stránky možnosti**&gt;**změnit zobrazení**&gt;**zobrazení mřížky**. Počet zobrazených sloupců v mřížce může být celkem významný, zejména pro karty prodeje a zásob. Chcete-li omezit počet sloupců v mřížce zobrazeny, skupiny sloupců skryty nebo zobrazeny pomocí tlačítek na **výchozí nastavení objednávky**&gt;**zobrazení sloupců** nabídky.
+Pravidel vytvořených pro uvolněný produkt může být více. Chcete-li získat lepší představu o tom, co každé pravidlo přepisuje a proč je to zapotřebí, doporučujeme používat **zobrazení mřížky** na stránce** výchozí nastavení objednávky**. Zobrazení mřížky lze povolit v podokně akcí **Možnosti**&gt; **Možnosti stránky** &gt; **Změnit zobrazení** &gt; **Zobrazení mřížky**. Počet zobrazených sloupců v mřížce může být celkem významný, zejména pro karty prodeje a zásob. Chcete-li omezit počet zobrazovaných sloupců v mřížce, můžete skrýt nebo zobrazit skupiny sloupců pomocí tlačítek v nabídce **Výchozí nastavení objednávky** &gt; **Zobrazení sloupce**.
 
 ### <a name="specific-order-settings-for-released-product-variant"></a>Specifické nastavení objednávky pro variantu uvolněného produktu
 

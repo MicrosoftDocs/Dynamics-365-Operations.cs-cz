@@ -32,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 
 Tento článek podává přehled o funkci Odvozená kniha.
 
-Účelem odvozených knih je zjednodušení účtování účetní transakce dlouhodobého majetku, které jsou plánovány pro pravidelné intervaly.  Zvolte jednu knihu jako hlavní knihu. Jde obvykle o knihu používanou pro účetní odpisy. Pak ji připojíte k ostatním knihám, které jsou nastaveny pro zaúčtování transakcí ve stejných intervalech jako primární kniha. Knihy odpisů hodnoty DPH jsou často nastaveny jako odvozené knihy. 
+Smyslem odvozených knih je zjednodušit zaúčtování transakcí knih dlouhodobého majetku naplánovaných v pravidelných intervalech.  Zvolíte jednu knihu jako primární. Jde obvykle o knihu používanou pro účetní odpisy. Pak ji připojíte k ostatním knihám, které jsou nastaveny pro zaúčtování transakcí ve stejných intervalech jako primární kniha. Knihy odpisů hodnoty DPH jsou často nastaveny jako odvozené knihy. 
 
 Nejběžnější transakce pro nastavení zaúčtování odvozených knih jsou pořízení, úprava pořízení a likvidace. 
 
@@ -45,7 +45,7 @@ Při zaúčtování transakce je vygenerována transakce pořízení a je zaúč
 > [!NOTE]                                                                                                                               
 > Knihy, které jsou nastaveny pro zaúčtování transakcí v intervalech jiných než je interval pro primární knihu, musí být připojeny k dlouhodobému majetku jako samostatné knihy a nikoliv jako odvozené knihy.  
 
-Další informace naleznete v tématu [zaúčtování pomocí odvozených knih](post-derived-value-models.md).
+Další informace naleznete v tématu [Zaúčtování pomocí odvozených knih](post-derived-value-models.md).
 
 
 

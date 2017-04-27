@@ -1,6 +1,6 @@
 ---
 title: "Klávesové zkratky"
-description: "Následující klávesové zkratky platí v celé 365 Microsoft Dynamics pro operace."
+description: "Následující klávesové zkratky platí v celé aplikaci Microsoft Dynamics 365 for Operations."
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Následující klávesové zkratky platí v celé 365 Microsoft Dynamics pro operace. 
+Následující klávesové zkratky platí v celé aplikaci Microsoft Dynamics 365 for Operations. 
 
 **Poznámka:** klávesové zkratky, jež jsou zde popsány, se vztahují na rozvržení klávesnice pro Spojené státy. Klávesy na klávesnicích s jiným rozvržením nemusí přesně odpovídat klávesám klávesnice pro USA.
 
@@ -43,7 +43,7 @@ Následující klávesové zkratky platí v celé 365 Microsoft Dynamics pro ope
 | Přesunutí k další nebo předchozí možnosti v nabídce            | Šipka dolů nebo šipka nahoru            |
 | Zavření karty v podokně nebo nabídce akcí          | Esc                              |
 | Simulace klepnutí pravým tlačítkem                            | Shift+F10                        |
-| Otevřete 365 Dynamics pro operace místní nabídka | Ctrl+F10                         |
+| Otevřete kontextovou nabídku aplikace Dynamics 365 for Operations | Ctrl+F10                         |
 | Stisk výchozího tlačítka ve formuláři nebo dialogovém okně       | Alt+Enter                        |
 | Klepnutí na tlačítko nebo dlaždici                            | Enter nebo Mezerník                   |
 | Zobrazení obnovených informací pro dlaždici s počtem         | ALT+Šipka nahoru                     |
@@ -67,7 +67,7 @@ Následující klávesové zkratky platí v celé 365 Microsoft Dynamics pro ope
 | Otevření okna s fakty (nebo aktivace okna s fakty, pokud je již otevřeno) | Ctrl+F2                                   |
 | Zavření okna s fakty (pokud je aktivní okno s fakty)                         | Esc                                       |
 | Přesunutí na další nebo předchozí okno s fakty (pokud je aktivní okno s fakty)              | Alt+Shift+Šipka dolů a Alt+Shift+Šipka nahoru |
-| Přesun &lt;n&gt;th s fakty (s fokusem v podokně okno s fakty)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
+| Přesunutí na &lt;nté&gt; okno s fakty (se zaměřením na okno s fakty)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
 | Rozbalení okna s fakty (pokud je aktivní okno s fakty)                             | Mezerník nebo Enter                            |
 | Sbalení aktuálního okna s fakty                                                    | Alt+0                                     |
 
@@ -114,8 +114,8 @@ Následující klávesové zkratky platí v celé 365 Microsoft Dynamics pro ope
 | Přechod na další nebo předchozí pole                     | Tab / Shift+Tab                              |
 | Přechod na další nebo předchozí kartu                       | Alt+Shift+Šipka vpravo a Alt+Shift+Šipka vlevo |
 | Přechod na další nebo předchozí pevnou záložku                   | Alt+Shift+Šipka dolů a Alt+Shift+Šipka nahoru    |
-| Přesun &lt;n&gt;s náhledem th                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
-| Přesun &lt;n&gt;kartu th                         | Alt + Shift +&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Přechod na &lt;ntou&gt; pevnou záložku                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
+| Přechod na &lt;ntou&gt; kartu                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Rozbalení pevné záložky (pokud je aktivní pevná záložka) | Mezerník nebo Enter                               |
 | Sbalení aktuálního pevné záložky                        | Alt+0                                        |
 | Přepnutí na zobrazení mřížky                                 | Ctrl+Shift+G                                 |
@@ -155,7 +155,7 @@ Následující klávesové zkratky platí v celé 365 Microsoft Dynamics pro ope
 | Otevření vyhledávání, pole se seznamem, výběru data a dialogového okna           | ALT+Šipka dolů                |
 | Zavření vyhledávání, pole se seznamem, výběru data a dialogového okna          | Esc                           |
 | Změna zaměření na vyhledání (pokud je vyhledávání již otevřeno) | ALT+Šipka dolů                |
-| Otevřít náhled rozšířeného ovládacího prvku                        | ALT+Šipka nahoru                  |
+| Otevření náhled rozšířeného ovládacího prvku                        | ALT+Šipka nahoru                  |
 | Výběr textu v aktuálním poli                           | Ctrl+A                        |
 | Aktivace/opuštění textové oblasti v ovládacím prvku editoru HTML        | ALT+Šipka dolů a Alt+šipka nahoru |
 
@@ -177,18 +177,18 @@ Následující klávesové zkratky platí v celé 365 Microsoft Dynamics pro ope
 | Přechod na řídicí panel                                                       | Alt+Shift+Home  |
 | Přechod na navigační panel                                                  | Alt+Shift+F1    |
 | Přechod do navigačního podokna                                                 | Alt+F1          |
-| Oblíbené položky/un-favorite formuláře (se zaměřením na formulář v navigačním podokně) | SHIFT + F         |
+| Označit formulář jako oblíbený/neoblíbený (se zaměřením na formulář v navigačním podokně) | Shift+F         |
 | Přechod na výběr společnosti                                                  | Ctrl+Shift+O    |
 | Přechod na hledání navigace                                                   | Ctrl+/ nebo Alt+G |
-| Otevření podokna nápovědy                                                        | CTRL +?          |
-| Otevřete trasování analyzátoru                                                     | Alt + Shift + T     |
+| Otevřete podokno nápovědy.                                                        | Ctrl+?          |
+| Otevřít analyzátor sledování                                                     | Alt+Shift+T     |
 
  
 
 ## <a name="segmented-entry-shortcuts"></a>Zkratky pro segmentované zadání
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **To do this**                                                                                                          | **Press**                        |
+| **Akce**                                                                                                          | **Stisknout**                        |
 | Otevření rozevíracího seznamu (pokud je zavřen rozevírací seznam)                                                             | ALT+Šipka dolů                   |
 | Aktivace pole pro zadávání pro aktuální segment v rozevíracím seznamu (pokud je již rozevírací seznam otevřen) | ALT+Šipka dolů                   |
 | Zavření rozevíracího seznamu                                                                                                | ALT+Šipka nahoru                     |

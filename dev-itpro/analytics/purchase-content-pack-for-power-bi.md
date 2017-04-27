@@ -1,6 +1,6 @@
 ---
 title: "Analýza obsahu Power BI výdajů na nákup"
-description: "Toto téma popisuje, co je zahrnuta v nákupu věnovat analýze obsahu pack pro Microsoft Power BI. Popisuje, jak přístup k sestavám, které jsou součástí obsahu pack a obsahuje informace o datovém modelu a entit, které se používají k vytváření obsahu pack."
+description: "Toto téma popisuje, co je součástí obsahu analýzy výdajů na nákup v Power BI. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v balíčku obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření balíčku obsahu."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2016-12-30 09 - 40 - 51
@@ -26,21 +26,21 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="purchase-spend-analysis-power-bi-content"></a>Analýza obsahu Power BI výdajů na nákup
 
-Toto téma popisuje, co je zahrnuta v nákupu věnovat analýze obsahu pack pro Microsoft Power BI. Popisuje, jak přístup k sestavám, které jsou součástí obsahu pack a obsahuje informace o datovém modelu a entit, které se používají k vytváření obsahu pack.
+Toto téma popisuje, co je součástí obsahu analýzy výdajů na nákup v Power BI. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v balíčku obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření balíčku obsahu.
 
 <a name="overview"></a>Přehled
 --------
 
-Nákup strávit analýzy obsahu pack pro Microsoft Power BI byla vytvořena pro nákup, manažeři a vedoucí, kteří jsou zodpovědní za rozpočty. Je navržen tak, aby jejich kontrola výdajů na nákup. Nákupní transakční data z Microsoft Dynamics 365 používá pro operace a poskytuje agregované zobrazení nákupní celopodnikové údaje i rozdělení nákupní výdaje podle dodavatelů a produktů. Zprávy zvýraznit změny v nákupní výdaje v průběhu času. Proto jsou slouží správcům oznámení o pozitivní a negativní vývoj výdajů u jednotlivých dodavatelů a výrobků. Grafy zobrazují nákupní výdaje pro zásobování různých kategorií a skupin dodavatelů. Kategorie a regionálními manažery může být užitečné k identifikaci změn v chování výdaje pomocí těchto grafů. Obsahu pack nyní nákupní manažeři a vedoucí, kteří jsou zodpovědní za rozpočty analyzovat nákupní výdaje následujícími způsoby:
+Obsah balíčku analýzy výdajů na nákup pro Microsoft Power BI byla vytvořena pro nákupní manažery a manažery, kteří jsou zodpovědní za rozpočty. Je navržen tak, aby jim pomáhal kontrolovat výdaje na nákup. Používá nákupní transakční data z Microsoft Dynamics 365 for Operations a poskytuje agregované zobrazení nákupní celopodnikových údajů a rozpis nákupních výdajů podle dodavatelů a produktů. V sestavách jsou zvýrazněny změny nákupních výdajů v průběhu času. Proto je lze používat k upozornění manažerů na pozitivní a negativní trendy výdajů u jednotlivých dodavatelů a výrobků. Grafy zobrazují nákupní výdaje pro zásobování různých kategorií a skupin dodavatelů. Manažeři pro kategorie a regionální manažeři mohou shledat jako užitečné použít tyto grafy k identifikaci změn v chování při výdajích. Balíček obsahu umožňuje nákupním manažerům a manažerům, kteří jsou zodpovědní za rozpočty, analyzovat nákupní výdaje následujícími způsoby:
 
--   -Na rok nákupu (ze skupiny dodavatelů a jednotlivým dodavatelům, kategorie zásobování a jednotlivé produkty a umístění dodavatele)
+-   Nákup k datu v daném roce (podle skupiny dodavatelů a jednotlivých dodavatelů, kategorie zásobování a jednotlivých produktů a umístění dodavatele)
 -   Rok přes rok nákupu změna (podle skupiny a zadávání zakázek kategorií dodavatele)
 
-## <a name="accessing-the-content-pack"></a>Přístup k obsahu pack
-Nákupu věnovat obsahu pack je publikován jako aktivum implementace v Microsoft Dynamics Lifecycle Services (LCS) a je přístupný z 365 Microsoft Dynamics pro operace analýzy. Další informace o přístupu a otevřených sestav Power BI, viz [obsahu Power BI od společnosti Microsoft a partnerů LCS](power-bi-content-microsoft-partners.md).
+## <a name="accessing-the-content-pack"></a>Přístup k balíčku obsahu
+Balíček obsahu analýzy je publikován jako implementační aktivum v Microsoft Dynamics Lifecycle Services (LCS) a je přístupný z Microsoft Dynamics 365 for Operations. Další informace o přístupu k otevřeným sestavám Power BI, viz [Obsahu Power BI od společnosti Microsoft a partnerů v LCS](power-bi-content-microsoft-partners.md).
 
-## <a name="metrics-that-are-included-in-the-content-pack"></a>Metriky, které jsou součástí obsahu pack
-Nákupu věnovat rozboru obsahu pack obsahuje sestavu, která obsahuje sadu metriky. Tyto metriky jsou zobrazována jako grafy, kameny a tabulky. Následující tabulka obsahuje přehled vizualizace v obsahu pack.
+## <a name="metrics-that-are-included-in-the-content-pack"></a>Metriky, které jsou součástí balíčku obsahu
+Balíček obsahu analýzy investic do nákupu obsahuje sestavu, která obsahuje sadu metrik. Tyto metriky jsou zobrazována jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizací v balíčku obsahu.
 
 <table>
 <colgroup>
@@ -50,110 +50,110 @@ Nákupu věnovat rozboru obsahu pack obsahuje sestavu, která obsahuje sadu metr
 </colgroup>
 <thead>
 <tr class="header">
-<th>Stránky sestavy</th>
+<th>Stránka sestavy</th>
 <th>Grafy</th>
-<th>Vedle sebe</th>
+<th>Dlaždice</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Nákup od dodavatele</td>
+<td>Nákup podle dodavatele</td>
 <td><ul>
 <li>Prvních 10 dodavatelů podle nákupu (skládaný sloupcový graf)</li>
-<li>Celkový nákup od dodavatele skupiny / země / name (výsečový graf)</li>
-<li>Nákupy podle dodavatele skupiny / země / name (sloupcový graf)</li>
-<li>Průměrná nákupní dodavatelem skupiny / země / name (sloupcový graf)</li>
+<li>Celkový nákup podle skupiny dodavatelů / země / name (výsečový graf)</li>
+<li>Nákup podle skupiny dodavatelů / země / název (sloupcový graf)</li>
+<li>Průměrný nákup podle skupiny dodavatelů / země / název (sloupcový graf)</li>
 </ul></td>
 <td><ul>
 <li>Celkový nákup</li>
-<li>Po letech růstu nákupu</li>
+<li>Meziroční růst nákupů</li>
 <li>Celkový počet dodavatelů</li>
 <li>Celkový počet aktivních dodavatelů</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Nákup produktu</td>
+<td>Nákup podle produktu</td>
 <td><ul>
-<li>Nákup podle kategorie zásobování / product name (sloupcový graf)</li>
-<li>Celkový nákup podle kategorie zásobování / product name (výsečový graf)</li>
-<li>Nejlepších 10 produktů nákupem (skládaný sloupcový graf)</li>
+<li>Nákup podle kategorie zásobování / název produktu (sloupcový graf)</li>
+<li>Celkový nákup podle kategorie zásobování / název produktu (výsečový graf)</li>
+<li>Prvních 10 produktů podle nákupu (skládaný sloupcový graf)</li>
 </ul></td>
 <td><ul>
 <li>Celkový počet produktů</li>
-<li>Celkový počet aktivních produktů procento celkový počet produktů</li>
-<li>Počet produktů účtování nákupu 80 %</li>
+<li>Celkové procento aktivních produktů z celkového počtu produktů</li>
+<li>Počet účtování produktů pro 80 % nákupů</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Nákup v období *</td>
+<td>Nákup podle období*</td>
 <td><ul>
 <li>Nákup za měsíc / den (sloupcový graf)</li>
-<li>Kumulativní nákupní odchylka po letech (graf vodopádu)</li>
-<li>Po letech růstu celkového nákupu (sloupcový graf)</li>
+<li>Kumulativní mezirodčí nákupní odchylka (vodopádový graf)</li>
+<li>Meziroční růst celkového nákupu (sloupcový graf)</li>
 <li>Prohlášení o zadávání veřejných zakázek (matice)</li>
 </ul></td>
 <td><ul>
-<li>Po letech růstu nákupu</li>
-<li>% Nárůst nákupu po letech</li>
+<li>Meziroční růst nákupů</li>
+<li>Meziroční růst nákupů v %</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Nákup podle umístění dodavatele</td>
+<td>Nákup podle místa dodavatele</td>
 <td><ul>
 <li>Nákup podle města</li>
-<li>Nákup po letech růstu %</li>
+<li>Meziroční růst nákupů v %</li>
 <li>Nákup podle země</li>
 </ul></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>Analýza nákupních výdajů podle času</td>
+<td>Analýza výdajů při nákupu podle času</td>
 <td><ul>
-<li>Nákup běžného roku za měsíc / den (spojnicový graf)</li>
-<li>Nákupní aktuálního a předchozího roku (řádek a sloupec grafu)</li>
+<li>Aktální rok nákupu podle měsíců / den (spojnicový graf)</li>
+<li>Nákup za aktuální a předchozí rok (řádkový a sloupcový graf)</li>
 </ul></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>Analýza podle dodavatele nákupní výdajů</td>
+<td>Analýza výdajů při nákupu podle dodavatele</td>
 <td><ul>
-<li>TOP 10 % nákupu dodavatele nákupní (nálevky)</li>
-<li>Prvních 10 dodavatelů s zvýšení výdajů po letech</li>
-<li>Prvních 10 dodavatelů se po letech poklesu výdajů</li>
+<li>TOP 10 % nákupů dodavatele nákupní (trychtýřový graf)</li>
+<li>Top 10 dodavatelů se zvýšenými investicemi meziročně</li>
+<li>Top 10 dodavatelů se sníženými investicemi meziročně</li>
 </ul></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
-\*Nákup tohoto a minulého roku a růst podle kategorie zásobování
+\* Nákup v tomto a minulém roce a růst podle kategorie zásobování
 
 ## <a name="data-model-and-entities"></a>Datový model a entity
-Dynamics 365 pro operace data slouží pro sestavu v nákupu věnovat obsahu analytické nástroje. Tato data jsou reprezentována jako agregační hodnoty, které jsou připraveny v úložišti Entity, což je databáze Microsoft SQL, která je optimalizována pro analytics. Další informace o úložišti Entity naleznete [BI napájení integrace s úložištěm entit v aplikaci Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blogu. Souhrnné měření v tomto obsahu pack jsou podmnožiny celkové měření, která byla k dispozici v nákupní datové krychle v aplikaci Microsoft Dynamics AX 2012 a Microsoft Dynamics 365 pro operace 2012 R3. Příprava agregovaných měr datové krychli v úložišti Entity, musíte je provést nasaditelné. Další informace naleznete v tématu agregační měření v úložišti Entity v pracovní postup [BI napájení integrace s úložištěm entit v aplikaci Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blogu. Následující klíče souhrnné měření jsou k dispozici přímo z entity řádky faktury a slouží jako základ obsahu pack.
+Data Dynamics 365 for Operations se používají pro sestavu balíčku obsahu investic do nákupu. Tato data jsou reprezentována jako měrné systémy agregace, které jsou rozfázovány v úložišti entit, což je databáze Microsoft SQL optimalizována pro analýzy. Další informace o úložišti Entity naleznete v příspěvku v blogu [Integrace Power BI s úložištěm entit v aplikaci Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Souhrnná opatření v tomto balíčku obsahu jsou podmnožinou celkových opatření, která byla k dispozici v nákupní datové krychli v Microsoft Dynamics AX 2012 a Microsoft Dynamics 365 for Operations 2012 R3. Příprava fází agregovaných opatření v úložišti Entity vyžaduje, aby bylo možné je nasadit. Další informace získáte v postupu nastavování agregovaných opatření v úložišti entity v příspěvku v blogu [Integrace Power BI s úložištěm entit v aplikaci Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Následující klíčová agregovaná opatření jsou k dispozici přímo z entity řádky faktury a slouží jako základ balíčku obsahu.
 
-| Celek        | Klíče agregovaných měr | Zdroj dat pro Dynamics 365 pro operace | Pole              | popis                           |
+| Celek        | Klíčová opatření agregace | Zdroj dat pro aplikaci Dynamics 365 for Operations | Pole              | popis                           |
 |---------------|----------------------------|---------------------------------------------|--------------------|---------------------------------------|
-| Řádky faktury | Nákup                   | VendInvoiceTrans.                            | SUM(LineAmountMST) | Částka v zúčtovací měně |
+| Řádky faktury | Nákup                   | VendInvoiceTrans                            | SUM(LineAmountMST) | Částka v zúčtovací měně |
 
-Následující tabulce jsou uvedeny klíče měření, které jsou vypočteny v obsahu pack z entity řádky faktury.
+V následující tabulce jsou uvedena klíčová opatření, která jsou vypočtena v balíčku obsahu z entity řádky faktury.
 
 | Měřítko               | Výpočet                                                                                         |
 |-----------------------|-----------------------------------------------------------------------------------------------------|
-| Nákup běžného roku | Nákupní aktuální rok = SUMA (řádky faktur\[nákupní\])                                            |
-| Nákupní Loni    | Nákupní Loni = výpočet (součet (řádky faktur\[nákupní\]), SAMEPERIODLASTYEAR (data\[datum\])) |
-| Po letech růstu nákupu   | Po letech koupit růstu = \[nákup běžného roku\] – \[koupit Loni\]                            |
+| Aktuální rok nákupu | Aktuální rok nákupu = SUM (Řádky faktury\[Nákup\])                                            |
+| Minulý nákupní rok    | Minulý nákupní rok = CALCULATE(SUM('Invoice lines'\[Purchase\]), SAMEPERIODLASTYEAR(Dates\[Date\])) |
+| Meziroční růst nákupů   | Meziroční růst nákup = \[Aktuální nákupní rok\] – \[Minulý nákupní rok\]                            |
 
-Následující klíče dimenze v obsahu pack slouží jako filtry při řezu agregovaných měr, takže můžete dosáhnout větší univerzálnost a hlubší analytické poznatky.
+Následující klíčové dimenze v balíčku obsahu se používají jako filtry k rozdělení agregovaných opatření, aby bylo možné dosažení většího rozlišení a poskytnutí hlubších analytických poznatků.
 
 | Celek                 | Příklady atributů                                |
 |------------------------|-------------------------------------------------------|
-| Dodavatelé                | Skupiny dodavatelů, dodavatele, země nebo oblasti název dodavatele |
+| Dodavatelé                | Skupiny dodavatelů, země nebo oblast dodavatele nebo název dodavatele |
 | Produkty               | Číslo produktu, název produktu, název skupiny zboží        |
 | Kategorie zásobování | Kategorie zásobování, názvy kategorií zásobování      |
 | Právnické osoby         | Jméno právnické osoby                                     |
-| Data                  | Roční posun data                                    |
+| Data                  | Data, Posun o rok                                    |
 
-Ve výchozím nastavení obsahu pack zobrazuje data pro aktuální kalendářní rok. Můžete však změnit filtr data v části filtry sestavy. Můžete také změnit filtr společnosti.
+Ve výchozím nastavení balíček obsahu zobrazuje data pro aktuální kalendářní rok. Můžete však změnit filtr dat v části filtrů sestavy. Můžete také změnit filtr společnosti.
 
 ## <a name="additional-resources"></a>Další prostředky
 Zde uvádíme některé užitečné odkazy související s entitami a vytvářením obsahu v aplikaci Power BI:

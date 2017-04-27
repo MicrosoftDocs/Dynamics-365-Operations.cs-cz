@@ -31,7 +31,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](includes/banner.md)]
 
 
-Toto téma obsahuje informace o prospěchu zásady nároků, které pomáhá definujte, kdo má nárok na zvláštní výhody.
+Toto téma obsahuje informace o zásadách pro nároky na zaměstnanecké výhody, které vám umožní definovat, kdo má nárok na specifické zaměstnanecké výhody.
 
 Při vytváření zaměstnaneckých výhod rozhodnete, které výhody budou k dispozici pro které zaměstnance. V následující tabulce jsou uvedeny příklady výhod, které může být zpřístupnit konkrétním zaměstnancům.
 
@@ -41,7 +41,7 @@ Při vytváření zaměstnaneckých výhod rozhodnete, které výhody budou k di
 | Mobilní telefon     | Prodavači, vedení         |
 | Parkovací průkazy   | Výkonné orgány                      |
 
-Následující součásti jsou použity k vytvoření zásady nároků:
+Následující komponenty se používají k vytváření pravidel způsobilosti:
 
 -   Typy pravidel zásad
 -   Zásady způsobilosti k zaměstnaneckým výhodám

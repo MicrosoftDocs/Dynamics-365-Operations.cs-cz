@@ -106,7 +106,7 @@ Tento scénář může mít následující varianty:
 -   Pokud je přijata pouze část množství, nedojde u první faktury dodavatele k pořízení majetku kvůli omezením skupin uživatelů. Jediný způsob, jak zaúčtovat pořízení u druhé faktury dodavatele, která doplní zbývající objednané množství, je, že musí být zadána transakce pořízení pro první fakturu dodavatele a musíte být členem skupiny uživatelů, kteří mohou účtovat pořízení.
 
 
-Další informace naleznete v tématu [dlouhodobého majetku integrace](fixed-asset-integration.md).
+Další informace naleznete v tématu [Integrace dlouhodobého majetku](fixed-asset-integration.md).
 
 
 

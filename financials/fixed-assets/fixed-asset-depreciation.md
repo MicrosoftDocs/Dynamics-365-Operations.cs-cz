@@ -49,12 +49,12 @@ Lze vytvořit neomezený počet záznamů náhrady za zvláštní odpisy. Jakmil
 
 Náhrada za zvláštní odpisy se zadává jako procento nebo pevná částka. Při zaúčtování návrhů na odpisy budou transakce náhrady za zvláštní odpisy zaúčtovány do knihy odpisů jako transakce, které jsou odděleny od odpisových transakcí.
 
-## <a name="depreciation-calendars"></a> Odpisové kalendáře
+## <a name="depreciation-calendars"></a>Odpisové kalendáře
 Každá kniha má kalendář, který se použije při odpisu dlouhodobého majetku. Kniha ve výchozím nastavení použije fiskální kalendář hlavní knihy, pokud neuvedete kalendář knihy. Pokud profil odpisů přidružený ke knize používá fiskální rok odpisů, je nutné vybrat fiskální kalendář pro knihu. 
 
 Můžete vytvořit sdílené kalendáře pomocí stránky **Fiskální kalendáře** v hlavní knize.
 
-Další informace naleznete v tématu [metod odpisů a](depreciation-methods-conventions.md).
+Další informace naleznete v tématu [Odpisové metody a způsoby odpisu](depreciation-methods-conventions.md).
 
 
 

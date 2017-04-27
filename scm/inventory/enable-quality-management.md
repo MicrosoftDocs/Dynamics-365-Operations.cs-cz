@@ -1,5 +1,5 @@
 ---
-title: "Přehled řízení kvality"
+title: "Přehled správy kvality"
 description: "Tento článek popisuje, jak lze použít správu kvality v aplikaci Microsoft Dynamics 365 for Operations za účelem zlepšení kvality produktu v rámci dodavatelsko-odběratelského řetězce."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="quality-management-overview"></a>Přehled řízení kvality
+# <a name="quality-management-overview"></a>Přehled správy kvality
 
 [!include[banner](../includes/banner.md)]
 
@@ -347,7 +347,7 @@ Přiřazení kvality je nutné definovat pro každou variantu obchodního proces
 </tr>
 <tr class="even">
 <td>Výsledky testovacích proměnných</td>
-<td>Na této stránce lze nastavit, upravit nebo zobrazit možné výsledky testů pro testovací proměnnou, která je přidružena k testu kvality. Každé výstupní hodnotě přiřadíte stav <strong>úspěch</strong> nebo <strong>neúspěch</strong>. Pro každý test kvality definovaný na stránce <strong>Testy</strong> je nutné definovat proměnnou a její výstupní hodnoty. (Kvalitativní testy typu testu je nastavena na <strong>možnost</strong> na <strong>zkoušky</strong> stránky.) Použití <strong>testovací skupiny</strong> stránky přiřadit testovací proměnné a výchozí výsledek testu jednotlivé kvalitativní.</td>
+<td>Na této stránce lze nastavit, upravit nebo zobrazit možné výsledky testů pro testovací proměnnou, která je přidružena k testu kvality. Každé výstupní hodnotě přiřadíte stav <strong>úspěch</strong> nebo <strong>neúspěch</strong>. Pro každý test kvality definovaný na stránce <strong>Testy</strong> je nutné definovat proměnnou a její výstupní hodnoty. (U kvalitativních testů je typ testu nastaven na <strong>Volba</strong> na stránce <strong>Testy</strong>.) Pomocí stránky <strong>Skupiny testů</strong> přiřaďte proměnnou testu a výchozí výstup k samostatnému kvalitativnímu testu.</td>
 <td>Společnost vyrábějící cukrovinky používá kontrolní test pro dokončené výrobky. Kontrolní test má několik proměnných. Jedna proměnná odpovídá chuti, přičemž možné výstupní hodnoty pro tuto proměnnou jsou „dobrá“ a „špatná“. Druhá proměnná odpovídá barvě, přičemž možní výstupní hodnoty jsou „příliš tmavá“, „příliš světlá“ a „správná“. Ke každé výstupní hodnotě je přiřazen stav <strong>úspěch</strong> nebo <strong>neúspěch</strong>. Během kontrolního testu pro každou proměnnou kontrolor ohlásí výsledky testu výběrem některé z výstupních hodnot.</td>
 </tr>
 </tbody>
@@ -358,7 +358,7 @@ Přiřazení kvality je nutné definovat pro každou variantu obchodního proces
 <a name="see-also"></a>Viz také
 --------
 
-[Quality management processes](quality-management-processes.md)
+[Procesy správy kvality](quality-management-processes.md)
 
 [Povolení správy neshod](enable-nonconformance-management.md)
 

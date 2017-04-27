@@ -1,6 +1,6 @@
 ---
-title: "Nastavit podepisující osoby pro tisk formuláře"
-description: "Pro právnické osoby do České republiky, Estonska, Maďarska, Litvy, Lotyšska, Polska a Ruska nastavením podepisující osoby a tituly pro odběratele a dodavatele, které vytisknout dokumenty jako jsou faktury a platební příkazy."
+title: "Nastavení podepisujících uživatelů pro tiskové formuláře"
+description: "Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsku, Polsku a Rusku můžete nastavit podepisující osoby a tituly pro odběratele a dodavatele, kteří tisknou dokumenty, jako jsou faktury a platební příkazy."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,17 +24,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-signers-for-print-forms"></a>Nastavit podepisující osoby pro tisk formuláře
+# <a name="set-up-signers-for-print-forms"></a>Nastavení podepisujících uživatelů pro tiskové formuláře
 
 [!include[banner](../includes/banner.md)]
 
 
-Pro právnické osoby do České republiky, Estonska, Maďarska, Litvy, Lotyšska, Polska a Ruska nastavením podepisující osoby a tituly pro odběratele a dodavatele, které vytisknout dokumenty jako jsou faktury a platební příkazy.
+Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsku, Polsku a Rusku můžete nastavit podepisující osoby a tituly pro odběratele a dodavatele, kteří tisknou dokumenty, jako jsou faktury a platební příkazy.
 
 <a name="set-up-default-values"></a>Nastavení výchozích hodnot
 ---------------------
 
-Zřídit podepsaných dokumentů, které společnost vytiskne, použít **úředníci** stránky. Pro firmu i pro zákazníky nebo dodavatele, v závislosti na typu dokumentu můžete nastavit podepisující osoby a jejich názvy. Následující tabulka popisuje karty **úředníci** stránky.
+K nastavení podepisujících dokumentů, které společnost tiskne, použijte stránku **Úředníci**. Pro firmu i pro zákazníky nebo dodavatele můžete nastavit podepisující osoby a jejich jména, v závislosti na typu dokumentu. Následující tabulka popisuje karty na stránce **Úředníci**.
 
 <table>
 <colgroup>
@@ -50,56 +50,56 @@ Zřídit podepsaných dokumentů, které společnost vytiskne, použít **úřed
 <tbody>
 <tr class="odd">
 <td>Obecné</td>
-<td>Přidání polohy a související informace pro podepisující osoby (ředitel a hlavní účetní) který lze podepsat dokumenty všech typů.</td>
+<td>Přidání pozic a souvisejících informací pro podepisující osoby (ředitel a hlavní účetní), který může podepisovat tištěné doklady všech typů.</td>
 </tr>
 <tr class="even">
 <td>Hlavní kniha</td>
-<td>Přidáte pozici a související informace o uživatelů, kteří mohou podepsat následující interní finanční dokumenty, které souvisí s cashflow:
+<td>Přidejte pozici a související informace o uživatelích, kteří mohou podepsat následující interní finanční dokumenty, které souvisí s cashflow:
 <ul>
 <li>Pokladní doklady</li>
 <li>Sestava záloh</li>
 <li>Stránka pokladní knihy</li>
 <li>Výpis inventury</li>
-<li>* Časově rozlišených položek</li>
+<li>Časově rozlišené položky*</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Prodejní objednávky</td>
-<td>Přidáte umístění a informace týkající se u uživatelů, kteří mohou podepsat následující odchozí primární dokumenty, které se vztahují k zákazníkům:
+<td>Přidejte pozice a související informace o uživatelích, kteří mohou podepsat následující odchozí primární dokumenty, které souvisí s cashflow:
 <ul>
-<li>Faktura pro platbu *</li>
+<li>Faktura pro platbu*</li>
 <li>Faktura</li>
-<li>Dílčí faktura *</li>
+<li>Faktura*</li>
 <li>Faktura – dobropis</li>
-<li>Faktura – Dal – Poznámka: *</li>
-<li>Faktura daňové transakce (klient) *</li>
+<li>Dílčí faktura – dobropis*</li>
+<li>Faktura daňové transakce (klient)*</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Nákupní objednávky</td>
-<td>Přidáte umístění a informace týkající se u uživatelů, kteří mohou podepsat následující příchozí primární dokumenty, které souvisejí s dodavateli:
+<td>Přidejte pozice a související informace o uživatelích, kteří mohou podepsat následující příchozí primární dokumenty, které souvisí s dodavateli:
 <ul>
 <li>Faktura</li>
-<li>Dílčí faktura *</li>
+<li>Faktura*</li>
 <li>Faktura – dobropis</li>
-<li>Faktura – Dal – Poznámka: *</li>
-<li>Faktura pro platbu *</li>
-<li>Faktura daňové transakce (dodavatel) *</li>
+<li>Dílčí faktura – dobropis*</li>
+<li>Faktura pro platbu*</li>
+<li>Faktura daňové transakce (dodavatel)*</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Řízení skladových položek</td>
-<td>Přidáte umístění a informace týkající se u uživatelů, kteří mohou podepsat následující doklady skladu jsou vydané odběrateli nebo přijaté od dodavatele hmotných aktiv:
+<td>Přidejte pozice a informace týkající se u uživatelů, kteří mohou podepsat následující skladové doklady, když je zákazníkovi vydán hmotný majetek nebo když je převzat od dodavatele.
 <ul>
-<li>Výdejní list pro prodejní objednávky (M-15) *</li>
-<li>RMB. list/potvrzení objednávky</li>
-<li>Výdejní list pro převodní příkaz (M-15) *</li>
+<li>Výdejní list pro prodejní objednávku (M-15)*</li>
+<li>Refund. doklad/Příjemka</li>
+<li>Výdejní list pro převodní příkaz (M-15)*</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-\*Tento typ dokumentu je k dispozici pouze pro právnické osoby, které mají svou primární adresu v Rusku. Následující tabulka popisuje pole na **úředníci** stránky.
+\* Tento typ dokumentu je k dispozici pouze pro právnické osoby, které mají primární adresu v Rusku. Následující tabulka popisuje pole na stránce **Úředníci**.
 
 <table>
 <colgroup>
@@ -115,55 +115,55 @@ Zřídit podepsaných dokumentů, které společnost vytiskne, použít **úřed
 <tbody>
 <tr class="odd">
 <td>Pozice</td>
-<td>Vyberte zaúčtovat podepisující osoby.</td>
+<td>Vyberte název pozice autora podpisu.</td>
 </tr>
 <tr class="even">
 <td>Jméno</td>
-<td>Vyberte název autora podpisu. Názvy v seznamu pocházet z tabulky Kontakty nebo tabulce Zaměstnanci v závislosti na typu podepisující osoba (, v závislosti na tom, zda <strong>našich</strong> je zaškrtnuto políčko). Není-li jméno podepisující osoby v seznamu, ručně zadejte celé jméno podepisující osoby.</td>
+<td>Vyberte jméno autora podpisu. Jména v seznamu pocházejí z tabulky Kontakty nebo tabulky Zaměstnanci v závislosti na typu podepisující osoby (tj. v závislosti na tom, zda je zaškrtnuto políčko <strong>Naši</strong>). Není-li jméno podepisující osoby v seznamu, ručně zadejte celé jméno podepisující osoby.</td>
 </tr>
 <tr class="odd">
 <td>Funkce</td>
-<td>Vyberte úlohu podepisující osoby. Není-li podepisující osoby v seznamu, zadejte ručně podepisující osoby.</td>
+<td>Vyberte titul autora podpisu. Není-li titul podepisující osoby v seznamu, ručně ho zadejte.</td>
 </tr>
 <tr class="even">
 <td>Kód účtu</td>
-<td>Vyberte, zda podepisující mohou podepsat všechny dokumenty pro vybraný typ dokumentu nebo pouze doklady pro určitého odběratele nebo dodavatele.</td>
+<td>Vyberte, zda mohou podepisující podepsat všechny dokumenty pro vybraný typ dokumentu nebo pouze doklady pro určitého odběratele nebo dodavatele.</td>
 </tr>
 <tr class="odd">
 <td>Odkaz na účet</td>
-<td>Vyberte účet odběratele nebo dodavatele, vztahující se ke kódu vybraného účtu. Toto pole je dostupné pouze pokud vyberete <strong>záznam</strong> v <strong>kód účtu</strong> pole.</td>
+<td>Vyberte účet odběratele nebo dodavatele, vztahující se ke kódu vybraného účtu. Toto pole je k dispozici pouze, pokud vyberete <strong>Záznam</strong> v poli <strong>Kód účtu</strong>.</td>
 </tr>
 <tr class="even">
 <td>Naše</td>
-<td>Zaškrtnuté políčko označuje, že je interní pozice.</td>
+<td>Zaškrtnuté políčko označuje, že jde o interní pozici</td>
 </tr>
 <tr class="odd">
 <td>Spojení se skladem</td>
-<td>Vyberte, zda podepisující je přiřazena všechny sklady nebo pouze určitý sklad. Existují tyto možnosti:
+<td>Vyberte, zda je podepisující je přiřazen všem skladům nebo jen určitému. Existují tyto možnosti:
 <ul>
-<li><strong>Všechny</strong> – podepisující je přiřazena všechny sklady.</li>
-<li><strong>Záznam</strong> – podepisující je přiřazen určitý sklad.</li>
+<li><strong>Všechny</strong> – podepisující je přiřazen všem skladům.</li>
+<li><strong>Záznam</strong> – podepisující je přiřazen jen určitému skladu.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Sklad</td>
-<td>Vyberte sklad, který je přiřazen podepisující odpovídající kód skladu. Toto pole je dostupné pouze pokud vyberete <strong>záznam</strong> v <strong>spojení se skladem</strong> pole.</td>
+<td>Vyberte kód skladu, který odpovídá skladu, jemuž je podepisující přiřazen. Toto pole je k dispozici pouze, pokud vyberete <strong>Záznam</strong> v poli <strong>Přidružení ke skladu</strong>.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="set-up-a-number-sequence-code-for-officials"></a>Nastavit kód číselné řady pro úředníky
-Můžete přiřadit kód číselné řady pro úředníky **číselné řady** oddílu **právnické osoby** stránky. Vyberte kód číselné řady pro **ID relace úředních osob** odkaz.
+## <a name="set-up-a-number-sequence-code-for-officials"></a>Nastavení kódu číselného pořadí pro státní úředníky
+Můžete přiřadit kód číselné řady pro úředníky v části **Číselné řady** stránky **Právnické osoby**. Vyberte kód číselné řady reference **ID relace úředních osob**.
 
-## <a name="modify-signers-in-primary-documents"></a>Změna podepisující osoby v primárních dokumentů
-Úředníci funkce zobrazuje výchozí předdefinované podepsaných z tabulky úředníků. Na **zaúčtování faktury** na stránky **úředníci** kartu, můžete změnit jméno podepisující osoby a název primárního dokladu pro následující typy dokumentů:
+## <a name="modify-signers-in-primary-documents"></a>Změna podepisujících osob v primárních dokumentech
+Funkce Úředníci zobrazuje výchozí předdefinované podepisující z tabulky úředníků. Na stránce **Zaúčtování faktury** na kartě **Úředníci** můžete změnit jméno podepisující osoby a název primárního dokladu pro následující typy dokumentů:
 
 -   Faktura odběratele
 -   Faktury dodavatele
 -   Převodní příkaz expedice
 -   Pokladní doklad
 
-**Poznámka:** po zaúčtování dokumentu nelze upravit, úředníci.
+**Poznámka:** Po zaúčtování dokumentu nelze úředníky upravit.
 
 
 

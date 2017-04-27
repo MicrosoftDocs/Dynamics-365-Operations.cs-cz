@@ -1,6 +1,6 @@
 ---
 title: "Úvěr a inkasa v modulu Pohledávky"
-description: "Informace účty pohledávek kolekcí je spravován v jednom centrálním zobrazení pomocí služeb Microsoft Dynamics 365 stránky operace kolekce. Vedoucí úvěrů a inkasa mohou používat toto centrální zobrazení ke správě inkas. Inkasní agenti mohou zahájit proces kolekce ze seznamů odběratelů, které jsou generovány pomocí použitím předem definované kolekce kritérií nebo stránky Odběratelé."
+description: "Informace o inkasu pohledávek jsou spravovány v jednom ústředním zobrazení pomocí stránky Inkasa aplikace Microsoft Dynamics 365 for Operations. Vedoucí úvěrů a inkasa mohou používat toto centrální zobrazení ke správě inkas. Inkasní agenti mohou zahájit proces kolekce ze seznamů odběratelů, které jsou generovány pomocí použitím předem definované kolekce kritérií nebo stránky Odběratelé."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -31,7 +31,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Informace účty pohledávek kolekcí je spravován v jednom centrálním zobrazení pomocí služeb Microsoft Dynamics 365 stránky operace kolekce. Vedoucí úvěrů a inkasa mohou používat toto centrální zobrazení ke správě inkas. Inkasní agenti mohou zahájit proces kolekce ze seznamů odběratelů, které jsou generovány pomocí použitím předem definované kolekce kritérií nebo stránky Odběratelé.
+Informace o inkasu pohledávek jsou spravovány v jednom ústředním zobrazení pomocí stránky Inkasa aplikace Microsoft Dynamics 365 for Operations. Vedoucí úvěrů a inkasa mohou používat toto centrální zobrazení ke správě inkas. Inkasní agenti mohou zahájit proces kolekce ze seznamů odběratelů, které jsou generovány pomocí použitím předem definované kolekce kritérií nebo stránky Odběratelé.
 
 Dříve než začnete s nastavením nebo práci s inkasem, měli byste se seznámit s následujícími koncepty:
 -   Snímky pro sledování splatnosti odběratele obsahují informace o splatném zůstatku v určitém okamžiku
@@ -58,9 +58,9 @@ Pro každé období sledování splatnosti v definici období pro sledování sp
 Fondy zákazníků představující dotazy, které definují skupinu odběratelských záznamů, které lze zobrazit a spravovat v rámci procesu inkasa nebo sledování splatnosti. Vyberte fondy zákazníků k filtrování informací pro stránku se seznamem Splatné zůstatky, Inkasní aktivity a Případy inkasa. Fondy zákazníků slouží také k filtrování účtů zákazníka, které budou zahrnuty při vytváření snímků pro sledování splatnosti.
 
 ## <a name="collections-agents"></a>Inkasní agenti
-Ve výchozím nastavení 365 Microsoft Dynamics pro operace uživatele, můžete zobrazit všechny informace o zákaznících na stránkách seznamu kolekcí. Můžete použít záznamy inkasního agenta a určit s nimi fondy zákazníků, kde je možné filtrovat informace na stránkách se seznamem inkasa a na stránce Inkasa. 
+Standardně mohou uživatelé aplikace Microsoft Dynamics 365 for Operations zobrazit všechny informace o odběratelích na stránkách se seznamem inkasa. Můžete použít záznamy inkasního agenta a určit s nimi fondy zákazníků, kde je možné filtrovat informace na stránkách se seznamem inkasa a na stránce Inkasa. 
 
-Inkasní agent je osoba, která pracuje s odběrateli k zajištění, že platby se vybírají včas. Inkasní agenti v 365 Microsoft Dynamics pro operace, jsou zaměstnanci, kteří jsou přiřazeny uživatelům na stránce nastavení uživatele.
+Inkasní agent je osoba, která pracuje s odběrateli k zajištění, že platby se vybírají včas. V aplikaci Microsoft Dynamics 365 for Operations jsou inkasní agenti pracovníci, kteří jsou přiřazeni uživatelům na stránce Nastavení uživatelů.
 
 ## <a name="collections-list-pages"></a> Stránky se seznamem inkasa 
 Následující stránky se seznamem umožňují uspořádání informací o inkasu.
@@ -70,7 +70,7 @@ Následující stránky se seznamem umožňují uspořádání informací o inka
 
 > [!NOTE]
 > Snímek sledování splatnosti musí být vytvořen dříve, než je možné zobrazit informace na těchto stránkách se seznamem. Informace se zobrazí pouze pro odběratele, pro které byl vytvořen snímek sledování splatnosti. Záznamy, které se zobrazí na stránce se seznamem lze dále filtrovat následujícím způsobem:
-<li>Standardně 365 Microsoft Dynamics pro uživatelské operace má přístup ke všem zákazníkům, kteří mají stárnutí snímek.</li>
+<li>Ve výchozím nastavení má uživatel aplikace Microsoft Dynamics 365 for Operations přístup ke všem odběratelům, kteří mají snímek sledování splatnosti.</li>
 <li>Existují-li fondy zákazníků, uživatel musí být nastaven jako inkasní agent, aby mohl použít fondy pro filtrování informací na stránkách se seznamem inkasa. Informace jsou omezeny na odběratele, kteří jsou zahrnuti ve vybraném fondu odběratelů.</li>
 <li>Pokud je uživatel nastaven jako inkasní agent, pouze skupiny, které jsou vybrány pro daného inkasního agenta, jsou k dispozici na stránce se seznamem. Pokud vyberte možnost Povolit agentovi zobrazit všechny fondy zákazníků na stránce Inkasní agent pro inkasního agenta, všechny fondy budou k dispozici pro tohoto agenta.</li>
 
@@ -78,7 +78,7 @@ Následující stránky se seznamem umožňují uspořádání informací o inka
 ## <a name="collections-page"></a> Inkasní stránka
 Na stránce Inkasa můžete sledovat, spravovat a reagovat na inkasní informace, aktivity a případy odběratele. 
 
-Horní podokno zobrazí případy pro vybraného odběratele. V prostředním podokně zobrazí transakce zákazníka. V dolním podokně se zobrazí aktivity odběratele. Můžete vytvořit případy inkasa a sledovat tak inkasní informace pro jednu nebo více transakcí a aktivit. Informace v horním a dolním podokně mohou být filtrovány podle případu. 
+Horní podokno obsahuje případy vybraného odběratele. Prostřední podokno zobrazí transakce odběratele. V dolním podokně se zobrazí aktivity odběratele. Můžete vytvořit případy inkasa a sledovat tak inkasní informace pro jednu nebo více transakcí a aktivit. Informace v horním a dolním podokně mohou být filtrovány podle případu. 
 
 Okna s fakty zobrazí splatné zůstatky a kreditní limit pro vybraného odběratele. Tyto informace jsou uloženy na snímku sledování splatnosti. V případě potřeby můžete aktualizovat snímek sledování splatnosti s aktualizovanými informacemi. 
 
@@ -89,7 +89,7 @@ Můžete odpustit, obnovit nebo stornovat dokončená oznámení úroků nebo po
 
 Tyto úpravy mají vliv pouze na oznámeních úroků a úroky a poplatky, které tyto obsahují. Podle kroků v části "Vytvoření transakcí odpisů v jednom kroku“ vytvořte odpis všech poplatků, které zákazník dluží.
 
-## <a name="create-writeoff-transactions"></a>Vytvořit transakce writeoff
+## <a name="create-writeoff-transactions"></a>Vytvoření transakcí odpisů
 Můžete odepsat pochybné pohledávky klepnutím na možnost Odepsat ve formuláři Inkasa a na stránku se seznamem Splatné zůstatky, Odběratele a Otevřené odběratelské faktury. 
 
 Při odepsání transakcí pro odběratele budou všechny transakce pro odběratele automaticky označeny k vyrovnání. Částka, která je odepsána, závisí na čisté částce označených transakcí. Transakce odpisu je vytvořena v obecném deníku a může obsahovat až tři typy řádků deníku.

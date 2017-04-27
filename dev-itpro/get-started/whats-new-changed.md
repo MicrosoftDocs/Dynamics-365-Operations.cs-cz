@@ -41,10 +41,10 @@ Chcete-li aktualizovat na nejnovější verzi, podívejte se na [Proces upgradu 
 <thead>
 <tr class="header">
 <th><strong>Uvolnit</strong></th>
-<th><strong><strong>Version</strong></strong></th>
-<th><strong><strong>Build number</strong></strong></th>
-<th><strong><strong>Availability</strong></strong></th>
-<th><strong><strong>Chcete-li získat další informace</strong></strong></th>
+<th><strong><strong>Verze</strong></strong></th>
+<th><strong><strong>Číslo sestavení</strong></strong></th>
+<th><strong><strong>Dostupnost</strong></strong></th>
+<th><strong><strong>Další informace</strong></strong></th>
 </tr>
 </thead>
 <tbody>
@@ -52,12 +52,12 @@ Chcete-li aktualizovat na nejnovější verzi, podívejte se na [Proces upgradu 
 <td>Platforma aplikace Microsoft Dynamics 365 for Operations</td>
 <td>Aktualizace platformy 4</td>
 <td>7.0.4425.16160</td>
-<td>Února 2017</td>
+<td>2017. únor</td>
 <td><ol>
-<li>Přejděte <a href="https://roadmap.dynamics.com/">přehled Dynamics 365</a>.</li>
-<li>Vyberte <strong>nové</strong> kartu.</li>
-<li>V <strong>aplikace</strong> vyberte <strong>365 Dynamics pro operace</strong>.</li>
-<li>V <strong>oblasti</strong> vyberte <strong>Cloud Platform</strong>.</li>
+<li>Přejděte na stránku <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a>.</li>
+<li>Vyberte kartu <strong>What's New</strong> (Co je nového).</li>
+<li>V části <strong>Applications</strong> (Aplikace) vyberte možnost <strong>Dynamics 365 for Operations</strong>.</li>
+<li>V části <strong>Areas</strong> (Oblasti) vyberte možnost <strong>Cloud Platform</strong> (Cloudová platforma).</li>
 </ol></td>
 </tr>
 <tr class="even">

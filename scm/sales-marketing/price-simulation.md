@@ -53,7 +53,7 @@ Aby byl zajištěn správný výpočet slev a cen, je nutné dbát při spuště
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Typy slev v obchodních smlouvách
 
-Obchodní smlouvy v 365 Microsoft Dynamics pro operace může mít čtyři typy cen. Tyto slevy mohou být nastaveny pro různé položky, zákazníky či cenové skupiny a mohou být omezeny datem. Při spuštění cenové simulace je nutné brát ohled na obchodní smlouvy, aby nedošlo k chybnému výpočtu. U obchodních smluv jsou k dispozici tyto čtyři typy slev:
+Obchodní smlouvy v aplikaci Microsoft Dynamics 365 for Operations mohou obsahovat čtyři typy slev. Tyto slevy mohou být nastaveny pro různé položky, zákazníky či cenové skupiny a mohou být omezeny datem. Při spuštění cenové simulace je nutné brát ohled na obchodní smlouvy, aby nedošlo k chybnému výpočtu. U obchodních smluv jsou k dispozici tyto čtyři typy slev:
 
 -   **Prodejní cena** – pro položky lze zadat zvláštní prodejní ceny. Při vytváření řádků nabídky program vyhledá správnou prodejní cenu pro určitou položku a převede ji do řádků nabídky. Obchodní smlouva s tímto typem slevy tedy neovlivní simulaci ceny. Prodejní cena, která je použita na řádku nabídky, odpovídá obchodní smlouvě.
 -   **Řádková sleva** – v závislosti na objednaném množství jsou určeny speciální slevy pro položky. Částky na řádku jsou obvykle sníženy o řádkovou slevu ještě před spuštěním simulace ceny. Obchodní smlouva s tímto typem slevy tedy ovlivní simulaci ceny.
@@ -82,7 +82,7 @@ Následující tabulka zobrazuje řádky nabídky.
 | Prodejní hodnota v USD         | (10 × 15,32) + (12 × 13,75)          | 318,20   |
 | Nákladová hodnota v USD          | (10 × 9,52) + (12 × 7,48)            | 184,96   |
 | Příspěvková marže v USD | 318,20 – 184,96                      | 133,24   |
-| Příspěvkový poměr         | (\[318.20 – 184.96\] ÷ 318.20) × 100 | 41,87 %   |
+| Příspěvkový poměr         | (\[318,20 – 184,96\] ÷ 318,20) × 100 | 41,87 %   |
 
 Spusťte simulaci ceny a uplatněte 15procentní celkovou slevu pro celou nabídku nebo záhlaví nabídky. Následující tabulka ukazuje nové součty nabídky po spuštění simulace ceny.
 
@@ -92,11 +92,11 @@ Spusťte simulaci ceny a uplatněte 15procentní celkovou slevu pro celou nabíd
 | Původní prodejní hodnota v USD                               | (10 × 15,32) + (12 × 13,75)               | 318,20   |
 | Původní nákladová hodnota v USD                                | (10 × 9,52) + (12 × 7,48)                 | 184,96   |
 | Původní příspěvková marže v USD                       | 318,20 – 184,96                           | 133,24   |
-| Původní příspěvkový poměr                               | (\[318.20 – (10 × 9.52)\] ÷ 318.20) × 100 | 41,87 %   |
+| Původní příspěvkový poměr                               | (\[318,20 – (10 × 9,52)\] ÷ 318,20) × 100 | 41,87 %   |
 | Simulace ceny s 15procentní celkovou slevou v USD | (15 × 318,2) ÷ 100                        | 47,73    |
 | Nová prodejní hodnota v USD                               | 318,20 – 47,73                            | 270,47   |
 | Nová příspěvková marže v USD                       | 270,47 – 184,96                           | 85,51    |
-| Nový příspěvkový poměr                               | \[(270.47 – 184.96) ÷ 270.47\] × 100      | 31,61 %   |
+| Nový příspěvkový poměr                               | \[(270,47 – 184,96) ÷ 270,47\] × 100      | 31,61 %   |
 
 ### <a name="price-simulation-for-single-line-items"></a>Simulace ceny pro jednořádkové zboží
 
@@ -116,12 +116,12 @@ Následující tabulka zobrazuje řádky nabídky.
 | Nákladová hodnota v USD pro BR-14          | 12 × 7,48                            | 89,76    |
 | Příspěvková marže v USD pro BR-12 | 153,20 – 95,20                       | 58,00    |
 | Příspěvková marže v USD pro BR-14 | 165,00 – 89,76                       | 75,24    |
-| Příspěvkový poměr v USD pro BR-12  | \[(153.20 – 95.20) ÷ 153.20\] × 100  | 37,86    |
-| Příspěvkový poměr v USD pro BR-14  | \[(165.00 – 89.76) ÷ 165.00\] × 100  | 45,60    |
+| Příspěvkový poměr v USD pro BR-12  | \[(153,20 – 95,20) ÷ 153,20\] × 100  | 37,86    |
+| Příspěvkový poměr v USD pro BR-14  | \[(165,00 – 89,76) ÷ 165,00\] × 100  | 45,60    |
 | Celková prodejní hodnota v USD             | (10 × 15,32) + (12 × 13,75)          | 318,20   |
 | Celková nákladová hodnota v USD              | (10 × 9,52) + (12 × 7,48)            | 184,96   |
 | Celková příspěvková marže v USD     | 318,20 – 184,96                      | 133,24   |
-| Celkový příspěvkový poměr             | \[(318.20 – 184.96) ÷ 318.20\] × 100 | 41,87 %   |
+| Celkový příspěvkový poměr             | \[(318,20 – 184,96) ÷ 318,20\] × 100 | 41,87 %   |
 
 Spusťte simulaci ceny a uplatněte 10procentní celkovou slevu na jednotky BR-12. Následující tabulka ukazuje nové součty nabídky po spuštění simulace ceny pro jednořádkové zboží.
 
@@ -136,12 +136,12 @@ Spusťte simulaci ceny a uplatněte 10procentní celkovou slevu na jednotky BR-1
 | Nákladová hodnota v USD pro BR-14                       | 12 × 7,48                               | 89,76    |
 | Nová příspěvková marže v USD pro BR-12          | 137,88 – 95,20                          | 42,68    |
 | Příspěvková marže v USD pro BR-14              | 165,00 – 89,76                          | 75,24    |
-| Nový příspěvkový poměr v USD pro BR-12           | \[(137.88 – 95.20) ÷ 137.88\] × 100     | 30,95    |
-| Příspěvkový poměr v USD pro BR-14               | \[(165.00 – 89.76) ÷ 165.00\] × 100     | 45,60    |
-| Nová celková prodejní hodnota v USD                      | \[(10 × 15.32) – 15.32\] + (12 × 13.75) | 302,88   |
+| Nový příspěvkový poměr v USD pro BR-12           | \[(137,88 – 95,20) ÷ 137,88\] × 100     | 30,95    |
+| Příspěvkový poměr v USD pro BR-14               | \[(165,00 – 89,76) ÷ 165,00\] × 100     | 45,60    |
+| Nová celková prodejní hodnota v USD                      | \[(10 × 15,32) – 15,32\] + (12 × 13,75) | 302,88   |
 | Celková nákladová hodnota v USD                           | (10 × 9,52) + (12 × 7,48)               | 184,96   |
 | Nová celková příspěvková marže v USD              | 302,88 – 184,96                         | 117,92   |
-| Nový celkový příspěvkový poměr                      | \[(302.88 – 184.96) ÷ 302.88\] × 100    | 38,93 %   |
+| Nový celkový příspěvkový poměr                      | \[(302,88 – 184,96) ÷ 302,88\] × 100    | 38,93 %   |
 
 Simulace ceny ovlivňuje pouze řádek, pro který byla použita, a snižuje celkovou hodnotu pro daný řádek.
 

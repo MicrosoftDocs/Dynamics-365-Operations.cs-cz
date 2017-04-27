@@ -37,7 +37,7 @@ Dle následujícího diagramu máte k dispozici tři stránky, které vám pomoh
 -   Cíle
 -   Přehled výkonů
 
-Následující diagram znázorňuje vzájemnou souvislost primárních komponent řízení výkonnosti. [![Přehled procesu výkonu](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+Následující diagram znázorňuje vzájemnou souvislost primárních komponent řízení výkonnosti. [![Přehled procesu výkonnosti](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Deník výkonnosti
 Jako zaměstnanec často před provedením svého přezkoumání hledáte informace o aktivitách nebo událostech, které přispěly k vašemu úspěchu v období přezkoumání. Deník výkonnosti je místo, kde můžete tyto aktivity a události dokumentovat. Kromě toho můžete vytvářet budoucí aktivity, které je třeba provést k dosažení cíle, ke splnění požadavků plánu rozvoje nebo ke splnění závazku výkonnosti. Deníky výkonnosti nejsou vyžadovány k vytváření cílů nebo přezkoumání výkonnosti. 
@@ -135,7 +135,7 @@ Ke kontrole schválení přezkoumání můžete použít pracovní postup přezk
 Pracovní postup přezkoumání pracovníka má dva prvky:
 
 1.  Schválení přezkoumání. Tento prvek přidejte pro řízení změny stavu z **Probíhá** na **Připraveno k přezkoumání**. Přiřazení změňte, chcete-li použít manažerskou hierarchii v případě, že úroveň úsekového manažera zaměstnance = 1.
-2.  Konečné přezkoumání. Přidejte tento element do řízení změna stavu z **připraveno k revizi** k **závěrečné přezkoumání**. Změna přiřazení používat manažerské hierarchie kde úroveň správce Employee.line = 1, pokud chcete, aby správce schválit závěrečné přezkoumání. Změňte přiřazení uživateli pracovního postupu, pokud chcete, aby ho zaměstnanec schválil. Pokud chcete, aby ho schválil manažer i zaměstnanec, přidejte do pracovního postupu dva kroky a proveďte pro každý krok odpovídající přiřazení v pořadí, v jakém chcete následná schválení.
+2.  Konečné přezkoumání. Tento prvek přidejte pro řízení změny stavu z **Připraveno k přezkoumání** na **Konečná kontrola**. Změňte přiřazení tak, aby používalo manažerskou hierarchii, kde úroveň správce Employee.line = 1, pokud chcete, aby manažer schválil závěrečné přezkoumání. Změňte přiřazení uživateli pracovního postupu, pokud chcete, aby ho zaměstnanec schválil. Pokud chcete, aby ho schválil manažer i zaměstnanec, přidejte do pracovního postupu dva kroky a proveďte pro každý krok odpovídající přiřazení v pořadí, v jakém chcete následná schválení.
 
 ## <a name="setup"></a>Nastavení
 Máte k dispozici tři stránky, které vám pomohou nastavit informace požadované pro dokončení procesu výkonnosti: stránku **měření**, stránku **typů zdrojů deníků výkonnosti** a stránku **typů přezkoumání**.

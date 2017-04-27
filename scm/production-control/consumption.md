@@ -37,15 +37,15 @@ Tento článek poskytuje informace o různých volbách, které se vztahují k v
 Následující možnosti, které se vztahují k výpočtu spotřeby materiálu, jsou k dispozici na kartě **Nastavení** a **Spotřeba kroku** na pevné záložce **Podrobnosti řádku** na stránce **Kusovník**.
 
 ## <a name="variable-and-constant-consumption"></a>Proměnná a konstantní spotřeba
-V **je spotřeba** pole, můžete určit, zda je spotřeba se vypočte jako konstantní množství nebo množství proměnných. Vyberte **konstantní** Pokud pevné množství nebo objem je nezbytné pro produkci, bez ohledu na množství, je vyrobena. Vyberte **Variabilní**, což je výchozí nastavení, je-li požadované množství materiálu v dokončeném zboží úměrné počtu dokončených výrobků, které jsou vyrobeny.
+V poli **Spotřeba je** můžete určit, zda se spotřeba vypočte jako konstantní množství nebo variabilní množství. Vyberte **Konstantní**, pokud jsou pevné množství nebo objem nutné pro výrobu, bez ohledu na vyráběné množství. Vyberte **Variabilní**, což je výchozí nastavení, je-li požadované množství materiálu v dokončeném zboží úměrné počtu dokončených výrobků, které jsou vyrobeny.
 
 ## <a name="calculating-consumption-from-a-formula"></a>Výpočet spotřeby podle vzorce
 V poli **Vzorec** můžete nastavit různé vzorce pro výpočet spotřeby materiálu. Pokud použijete výchozí hodnotu, **Standardní**, spotřeba není vypočtena ze vzorce. Následující vzorce mohou pracovat spolu v polích **Výška**, **Šířka**, **Hloubka**, **Hustota** a **Konstantní**:
 
--   Výška \*konstantní
--   Výška \*šířka \*konstantní
--   Výška \*šířka \*hloubka \*konstantní
--   (Výška \*šířka \*hloubka / hustota) \*Konstantní
+-   Výška \* Konstantní
+-   Výška \* Šířka \* Konstantní
+-   Výška \* Šířka \* Hloubka \* Konstantní
+-   (Výška \* Šířka \* Hloubka / Hustota) \* Konstantní
 
 ## <a name="rounding-up-and-multiples"></a>Zaokrouhlení a násobky
 Společně pole **Zaokrouhlení** a **Násobky** umožňují zaokrouhlování hodnoty spotřeby materiálu. Například můžete použít zaokrouhlování hodnoty podle manipulační jednotky, ve které jsou suroviny vydané pro výrobu. Existují tyto možnosti v poli **Zaokrouhlení**: **Množství**, **Měření** a **Spotřeby**.
@@ -56,7 +56,7 @@ Vyberete-li **Množství** jako mechanismus zaokrouhlování, množství musí b
 
 ### <a name="measurement"></a>Měrný systém
 
-Obvykle vyberete **Měření** jako mechanismus zaokrouhlování, pokud surovina přichází ve specifických dimenzích. Například část 2metrové kovové trubice je vyžadována pro dokončené zboží, a kovová trubice je uložena v délce 4,5 metru. V takovém případě mechanismus zaokrouhlování **Měření** lze použít k výpočtu toho, kolik kovových trubek je zapotřebí pro výrobu určitého počtu kusů dokončeného zboží. V tomto příkladu **vzorec** pole je nastavena na **výška \*konstantní**. **Výška** pole je nastavena na **2** označující délku trubice, který je vyžadován pro hotového výrobku. Pole **Více** je nastaveno na **4,5** a označuje tak, že je trubice vydaná v délkách po 4,5 metrech. Kalkulace je tato:
+Obvykle vyberete **Měření** jako mechanismus zaokrouhlování, pokud surovina přichází ve specifických dimenzích. Například část 2metrové kovové trubice je vyžadována pro dokončené zboží, a kovová trubice je uložena v délce 4,5 metru. V takovém případě mechanismus zaokrouhlování **Měření** lze použít k výpočtu toho, kolik kovových trubek je zapotřebí pro výrobu určitého počtu kusů dokončeného zboží. V tomto příkladu je pole **Vzorec** nastaveno na **Výška \* Konstantní**. Pole **Výška** je nastaveno na **2** pro označení délky trubky potřebné k dokončení výrobku. Pole **Více** je nastaveno na **4,5** a označuje tak, že je trubice vydaná v délkách po 4,5 metrech. Kalkulace je tato:
 
 1.  Počet násobků, které jsou požadovány pro 10 kusů dokončeného zboží: 10 ÷ 2 = 5 kusů
 2.  Celková spotřeba: 4,5 x 5 = 22,5 metru kovové trubice

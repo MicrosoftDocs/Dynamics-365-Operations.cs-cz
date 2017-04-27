@@ -35,7 +35,7 @@ Manažeři kompenzací a výhod mohou pomocí správy kompenzací udržovat a zp
 
 ### <a name="introduction"></a>Úvod
 
-Správa vyrovnání slouží k řízení dodávky základní platby a ocenění. Pro zaměstnance stanovena základní platby a zvýšení zásluh jsou řízena plány fixní kompenzace. Pobídkové platby, jako například výplaty bonusů, výkonnostních odměn, opcí na nákup akcií nebo grantů, a také jednorázové odměny jsou řízeny prostřednictvím plánů variabilní kompenzace. 
+Správa kompenzací se používá k řízení doručení základní mzdy a odměn. Fixní základní mzda zaměstnance a nárůst odměn za zásluhy jsou řízeny prostřednictvím plánů fixní kompenzace. Pobídkové platby, jako například výplaty bonusů, výkonnostních odměn, opcí na nákup akcií nebo grantů, a také jednorázové odměny jsou řízeny prostřednictvím plánů variabilní kompenzace. 
 
 Zaměstnance lze zaregistrovat k jednomu i několika plánům obou typů. Aby byl zaměstnanec způsobilý k registraci v plánu kompenzace, musí splňovat tyto předpoklady:
 -   Zaměstnanec musí mít přiřazenu aktivní pozici.
@@ -57,7 +57,7 @@ V následující tabulce jsou uvedeny komponenty procesu kompenzace, které moho
 <td>Akce fixních kompenzací mají dva účely:
 <ul>
 <li>Akce může určit druh informací, které musí být zaznamenány při změně kompenzace zaměstnance. Můžete například požadovat, aby byl zaznamenán důvody změny, jako třeba povýšení nebo naopak degradace.</li>
-<li>Akce můžete zajistit, že výpočet se použije, když jsou zpracovány plány fixní kompenzace.  Například akce typu jmění porovná mzdy zaměstnance na minimální referenční bod pro úroveň na zaměstnance a zajistit, aby že zaměstnanec získávání platí alespoň minimální.</li>
+<li>Akce mohou zajišťovat to, že se při zpracování plánů fixních kompenzací použijí výpočty.  Například akce typu Jmění porovná mzdu zaměstnance s minimálním referenčním bodem pro úroveň zaměstnance a zkontroluje, zda je zaměstnanci vypláceno alespoň minimum.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -86,7 +86,7 @@ V následující tabulce jsou uvedeny komponenty procesu kompenzace, které moho
 </tr>
 <tr class="even">
 <td>Interval plateb</td>
-<td>Plateb se používají k definování časové období, pro které je určena vyrovnání.  Například mzdy frekvence usnadňuje pochopení, pokud částka kompenzace je určena jako ročního platu oproti hodinové mzdy. Plateb jsou také použity k nastavení koeficientů převodu pro převod částek odškodnění měsíčně, týdně, biweekly a hodinové plateb každoroční mzdy.</td>
+<td>Intervaly plateb se používají k určení časového období, pro které je zadána kompenzace.  Interval plateb například pomáhá s pochopením toho, jestli je částka kompenzace určována jako roční plat nebo jako hodinová mzda. Intervaly plateb se také používají k nastavení koeficientů převodu pro převod částek kompenzace z měsíční, týdenní, čtrnáctidenní nebo hodinové sazby na roční interval plateb.</td>
 </tr>
 <tr class="odd">
 <td>Oblasti kompenzací</td>
@@ -110,7 +110,7 @@ V následující tabulce jsou uvedeny komponenty procesu kompenzace, které moho
 </tr>
 <tr class="even">
 <td>Kompenzační mřížky</td>
-<td>Kompenzační mřížky obsahovat strukturu kompenzace.  Kompenzační mřížky slouží jednomu nebo více plánům kompenzace.</td>
+<td>Kompenzační mřížky obsahují strukturu kompenzací.  Kompenzační mřížky mohou být použity jedním i několika plány kompenzace.</td>
 </tr>
 <tr class="odd">
 <td>Plány výkonnosti</td>
@@ -129,7 +129,7 @@ Procesní události vypočítá informace o kompenzaci za dané časové období
 <a name="compensation-events"></a>Události kompenzace
 -------------------
 
-Každém spuštění procesní události kompenzace událostí je vytvořen.  Události kompenzace obsahovat výsledky procesu kompenzace pro každého zaměstnance součástí této události procesu.  Pokud jsou správné výpočty, můžete načíst události aktualizovat záznamy kompenzace pro zaměstnance, kteří jsou ovlivněny procesní události kompenzace.
+Při každém spuštění procesní události se vytvoří událost kompenzace.  Události kompenzace obsahují výsledky procesu kompenzace pro každého zaměstnance zahrnutého do této události procesu.  Pokud jsou výpočty správné, můžete načtením události kompenzace aktualizovat záznamy kompenzace pro zaměstnance, kteří jsou ovlivněny danou procesní událostí.
 
 ## <a name="recommendations"></a> Doporučení
 Po spuštění procesní události můžete doporučit úpravy nárůstu zásluh zaměstnance nebo částku odměny na základě vypočtených směrnic procesní události. Aby bylo možné dívat doporučení pro zaměstnance, je nutné povolit doporučení při nastavování plánů kompenzace nebo při vytváření procesní události.

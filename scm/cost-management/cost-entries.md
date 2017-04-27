@@ -40,7 +40,7 @@ Je registrována událost deníku převodů. Událost převede jeden kus zboží
 
 ### <a name="example-2-cost-entries-are-created"></a>Příklad 2: Jsou vytvořeny položky nákladů
 
-Je registrována událost deníku převodů. Události jednoho kusu zboží A přenese z webu 1 Web 2. Dimenze zásob webu je považován za součást nákladů objektu. Událost tedy vytvoří dvě skladové transakce a dvě položky nákladů.
+Je registrována událost deníku převodů. Událost převede jeden kus zboží A z pracoviště 1 na pracoviště 2. Dimenze zásob pracoviště je považována za součást objektu nákladů. Událost tedy vytvoří dvě skladové transakce a dvě položky nákladů.
 
 ### <a name="example-3-one-cost-entry-is-created"></a>Příklad 3: Je vytvořena jedna položka nákladů
 
@@ -55,15 +55,15 @@ Nová stránka **Položky nákladů** umožňuje zobrazit a kontrolovat registra
 
 | Doklad | Datum       | Odkaz      | Číslo | ID šarže  | Odkaz na šarži | ID vrácené šarže | Množství | Částka  |
 |---------|------------|----------------|--------|---------|---------------|---------------|----------|---------|
-| 00001   | 01-01-2015 | Nákupní objednávka | 100001 | 0000101 |               |               | 100,00   | 1000,00 |
-| 00002   | 20-01-2015 | Nákupní objednávka | 100001 | 0000101 |               |               |          | 100,00  |
-| 00003   | 31-01-2015 | Úprava     | 100001 | 0000101 |               |               |          | 15:00   |
+| 00001   | 01. 01. 2015 | Nákupní objednávka | 100001 | 0000101 |               |               | 100,00   | 1000,00 |
+| 00002   | 20. 01. 2015 | Nákupní objednávka | 100001 | 0000101 |               |               |          | 100,00  |
+| 00003   | 31. 01. 2015 | Úprava     | 100001 | 0000101 |               |               |          | 15:00   |
 
-Stránka **Položky nákladů** umožňuje filtrovat podle ID doklad a data dokladu. **Poznámka:** jsou k dispozici pouze pro položky nákladů [nákladů objektů](cost-object.md) nebo uvolněných produktů.
+Stránka **Položky nákladů** umožňuje filtrovat podle ID doklad a data dokladu. **Poznámka:** Položky nákladů jsou k dispozici pouze pro [objekty nákladů](cost-object.md) nebo uvolněné produkty.
 
 <a name="see-also"></a>Viz také
 --------
 
-[Cost objects](cost-object.md)
+[Nákladové objekty](cost-object.md)
 
 

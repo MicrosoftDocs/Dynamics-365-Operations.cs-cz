@@ -59,7 +59,7 @@ Vyberete-li jako odpisový rok možnost **Kalendář**, v poli **Frekvence obdob
 
 Vyberete-li možnost **Fiskální** v poli **Odpisový rok**, degresivní odpis 125 % je vypočten na základě fiskálního roku pro fiskální kalendář, který je určen pro knihu, nebo pro fiskální kalendář, který je vybrán na stránce **Hlavní kniha**. Fiskální kalendáře se nastavují na stránce **Fiskální kalendáře**. 
 
-Například pro fiskální rok, 1. července až 30. června, výpočet odpisů začíná datem 1. Fiskální rok může být delší nebo kratší než 12 měsíců. Odpisování je automaticky upravováno pro jednotlivá období a délka dalšího fiskálního roku je určována dle nastavení období na stránce **Fiskální kalendáře**. 
+Například pro fiskální rok od 1. července do 30. června začíná výpočet odpisů datem 1. července. Fiskální rok může být delší nebo kratší než 12 měsíců. Odpisování je automaticky upravováno pro jednotlivá období a délka dalšího fiskálního roku je určována dle nastavení období na stránce **Fiskální kalendáře**. 
 
 Vyberete-li jako odpisový rok možnost **Fiskální**, v poli **Frekvence období** jsou k dispozici následující možnosti:
 
@@ -84,7 +84,7 @@ Metoda degresivního odepisování 125 % vydělí 125 procent počtem roků živ
 | Rok 3 | 5 625 × 25 % = 1 406,25                        | (6 625 – 1 406,25) = 5 218,75 | (5 625 – 1 406,25) = 4 218,75         |
 
 > [!NOTE] 
-> Obvykle, když částka, která se vypočítá pomocí 125 % degresivní metody odpisu se stává menší než částka, kterou by vypočítat pomocí lineární metody nedojde k převodu metody přímou čáru pro zbývající životnost.
+> Když částka vypočtená s použitím metody 125% degresivního odpisování klesne pod hodnotu menší než má částka, která by byla vypočtena s použitím lineární metody, obvykle dojde k převodu na lineární metodu pro zbytek životnosti.
 
 
 

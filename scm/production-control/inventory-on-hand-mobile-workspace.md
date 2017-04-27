@@ -1,6 +1,6 @@
 ---
-title: "Zásoby na skladě mobilní pracovní prostor pro Microsoft Dynamics 365 pro provoz aplikace"
-description: "Zásoby na skladě mobilní centrum pomáhá získat mobilní podstatu skladu rezervované a je k dispozici kdykoli a kdekoli."
+title: "Mobilní pracovní prostor zásob na skladě pro aplikaci Microsoft Dynamics 365 for Operations"
+description: "Mobilní pracovní prostor Zásoby na skladě pomáhá získat mobilní přehled o rezervovaných a dostupných zásobách a je k dispozici kdykoli a kdekoli."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2017-01-12 16 - 44 - 40
@@ -25,72 +25,72 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="inventory-on-hand-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Zásoby na skladě mobilní pracovní prostor pro Microsoft Dynamics 365 pro provoz aplikace
+# <a name="inventory-on-hand-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Mobilní pracovní prostor zásob na skladě pro aplikaci Microsoft Dynamics 365 for Operations
 
-Zásoby na skladě mobilní centrum pomáhá získat mobilní podstatu skladu rezervované a je k dispozici kdykoli a kdekoli. 
+Mobilní pracovní prostor Zásoby na skladě pomáhá získat mobilní přehled o rezervovaných a dostupných zásobách a je k dispozici kdykoli a kdekoli. 
 
 <a name="prerequisites"></a>Předpoklady
 -------------
 
 | Předpoklad                                                         | popis                                                                                                                                        |
 |----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Přečtěte si informace o Microsoft Dynamics 365 pro provoz mobilní platformu | [Dynamics 365 pro mobilní platformu operace](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                   |
-| Dynamics 365 pro operace                                          | Prostředí, které má Microsoft Dynamics 365 pro verzi operace 1611 a Microsoft Dynamics pro operace platformy aktualizace 3 (listopad 2016) |
-| Opravy hotfix KB 3215650                                                    | Nainstalujte opravu hotfix Chcete-li povolit pracovní prostory, které jsou součástí aplikace Microsoft Dynamics 365 pro operace.                                       |
-| Mobilní zařízení, které má 365 Dynamics pro operace aplikace nainstalována | Stáhněte 365 Dynamics pro operace aplikace z úložiště vaše mobilní aplikace.                                                                           |
+| Přečtěte si o mobilní platformě Microsoft Dynamics 365 for Operations | [Mobilní platforma Microsoft Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                   |
+| Dynamics 365 for Operations                                          | Prostředí, které má Microsoft Dynamics 365 for Operations verzi 1611 a Microsoft Dynamics for Operations aktualizaci platformy 3 (listopad 2016) |
+| Oprava KB 3215650                                                    | Nainstalujte opravu hotfix, abyste povolili pracovní prostory, které jsou součástí Microsoft Dynamics 365 for Operations.                                       |
+| Mobilní zařízení, které má nainstalovanou aplikaci Dynamics 365 for Operations | Stáhněte aplikaci Dynamics 365 for Operations z vašeho obchodu mobilních aplikací.                                                                           |
 
 ## <a name="introduction"></a>Úvod
-Firmy mají obvykle více dodávky a příjmy více zásob každý den. Tyto pohyby neustále změna stavu zásob na skladě. Mobilní centrum zásob na skladě umožňuje zobrazit stav zásob na skladě společnost tak, aby bylo možné získat nejnovější poznatky do skladu dat na mobilních zařízeních podle svého výběru. Bez ohledu na to, zda pracovat skladu, nákupu, prodeje, výroby a řízení nebo mají jiné role můžete přístup k datům na skladě kdykoli a kdekoli. Mobilní pracovní prostor poskytuje okamžitý přehled o stavu zásob v rámci zařízení a umožňuje zobrazení různých zařízení, aktuální rezervace materiálu a množství zásob na skladě na skladě. Můžete zadat čísla zboží na dotaz množství na skladě a filtrované vyhledávání produktů na skladě nebo varianty. Mobilní pracovní prostor konkrétně poskytuje následující funkce:
+Firmy mají obvykle více dodávek a příjmů zásob každý den. Tyto pohyby neustále mění stav zásob na skladě. Mobilní centrum zásob na skladě umožňuje zobrazit stav zásob na skladě společnosti tak, aby bylo možné získat nejnovější přehled o skladových zásobách na mobilních zařízeních podle vašeho výběru. Bez ohledu na to, zda pracujete ve skladu, nákupu, prodeji, výrobě nebo řízení nebo mají jiné role, můžete přistupovat k datům na skladě kdykoli a kdekoli. Mobilní pracovní prostor poskytuje okamžitý přehled o stavu zásob v rámci zařízení a umožňuje zobrazit zásoby na skladě na různých zařízeních, aktuální rezervace a nerezervované množství zásob na skladě. Můžete také zadat čísla zboží k dotazování množství na skladě a provést filtrované vyhledávání produktů na skladě nebo variant. Mobilní pracovní prostor konkrétně poskytuje následující funkce:
 
--   Můžete vyhledávat podle čísla produktu nebo název produktu můžete nalézt produkty zobrazit stav zásob na skladě.
+-   Můžete vyhledávat podle čísla produktu nebo názvu produktu k zobrazení stavu zásob na skladě.
 -   U vybraných produktů můžete zobrazit následující informace:
-    -   Na skladě pro každý server
-    -   Na skladě podle skladu
-    -   Na skladě dle lokace
-    -   Na skladě pro šarži (pro kontrolované šarže produktů)
-    -   Na skladě dle stavu skladu
+    -   Zásoby na skladě podle pracoviště
+    -   Množství zásob podle skladu
+    -   Zásoby na skladě podle pracoviště
+    -   Zásoby na skladě podle šarže (pro kontrolované šarže produktů)
+    -   Zásoby na skladě podle stavu zásob
 
 <!-- -->
 
--   Zásoby na skladě produktu je zobrazen následujícím způsobem:
+-   Zásoby na skladě produktu jsou zobrazeny následujícím způsobem:
     -   Podle fyzické inventury (Toto zobrazení představuje celkovou částku).
-    -   Ve vyhrazené fyzické (Toto zobrazení představuje vyhrazené částky).
-    -   Ve fyzicky k dispozici (Toto zobrazení představuje k dispozici částku, která nemá žádné výhrady.)
+    -   Podle fyzické rezervy (Toto zobrazení představuje rezervovanou částku).
+    -   Fyzicky k dispozici (Toto zobrazení představuje částku k dispozici, která nemá žádné rezervace.)
 
 ## <a name="get-started"></a>Začínáme
 Chcete-li začít pracovat v mobilním zařízení:
 
-1.  Z úložiště mobilní aplikace stáhněte a nainstalujte 365 Microsoft Dynamics pro operace app.
-2.  Spuštění aplikace v zařízení.
+1.  Stáhněte aplikaci Microsoft Dynamics 365 for Operations z vašeho obchodu mobilních aplikací.
+2.  Spusťte aplikaci na svém zařízení.
 3.  Zadejte adresu URL aplikace Dynamics 365.
-4.  Zadejte přihlášení do společnosti. Například zadejte **USMF**.
-5.  Při prvním přihlášení, budete vyzváni pro uživatelské jméno a heslo pro vaše 365 Microsoft Dynamics pro účet operací. Zadejte svá pověření. Po přihlášení, zobrazí se dostupné pracovní prostory pro vaši firmu.
+4.  Zadejte společnost, do které se chcete přihlásit. Například zadejte **USMF**.
+5.  Při prvním přihlášení budete vyzváni k zadání uživatelského jména a hesla pro váš účet aplikace Microsoft Dynamics 365 for Operations. Zadejte své přihlašovací údaje. Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost.
 
-Zobrazení pracovní plochy na mobilní aplikace, musíte nejprve publikovat požadované pracovní prostory do 365 Dynamics pro operace app.
+Pro zobrazení pracovního prostoru ve své mobilní aplikaci musíte nejprve publikovat požadovaný pracovní prostor do aplikace Dynamics 365 for Operations.
 
-1.  Spusťte Dynamics 365 pro operace.
-2.  Přejít na **Správa systému**&gt;**nastavení**&gt;**parametry systému**.
-3.  Vyberte **Správa mobilní aplikace**.
-4.  Vyberte pracovní prostor k publikování na mobilní platformy.
-5.  Vyberte **publikovat pracovního prostoru**.
-6.  Aktualizujte zařízení zobrazit publikované pracovní prostory.
+1.  Spusťte aplikaci Dynamics 365 for Operations.
+2.  Přejděte do nabídky **Správa systému** &gt; **Nastavení** &gt; **systémových parametrů**.
+3.  Zvolte **Spravovat aplikaci pro mobilní zařízení**.
+4.  Vyberte pracovní prostor pro publikování na mobilní platformu.
+5.  Vyberte **Publikovat pracovní prostor**.
+6.  Aktualizujte zařízení pro zobrazení publikovaných pracovních prostorů.
 
-## <a name="view-the-onhand-inventory-for-a-product"></a>Zobrazení množství na skladě zásob produktu
-1.  V mobilním zařízení, vyberte **na skladě** prostoru.
-2.  Vyberte **kontrola na skladě pro položku**. Zobrazí se seznam produktů, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení jsou načteny 50 položek, ale tuto hodnotu můžete změnit. Další informace naleznete v tématu Příručka předem čtení.
-3.  Pokud položka není v seznamu uveden, vyberte **hledat více** Chcete-li provést online hledat v Dynamics 365 pro operace. Hledání podle čísla produktu nebo přepněte do vyhledávání podle názvu produktu.
+## <a name="view-the-onhand-inventory-for-a-product"></a>Zobrazení zásob na skladě pro vybraný produkt
+1.  Na svém mobilním zařízení vyberte pracovní prostor **Zásoby na skladě**.
+2.  Vyberte **Kontrola zásob na skladě pro položku**. Zobrazí se seznam produktů, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale tuto hodnotu můžete změnit. Další informace naleznete v příručce pro předběžné načtení.
+3.  Pokud položka není v seznamu uvedena, vyberte **Hledat více**, chcete-li provést online hledat v Dynamics 365 for Operations. Vyhledávejte podle čísla produktu nebo přepněte do vyhledávání podle názvu produktu.
 4.  Vyberte produkt. Pokud položka obsahuje obrázek, obrázek je zobrazen.
-5.  Vyberte jednu z následujících možností zobrazíte stav zásob na skladě:
-    -   Zobrazení množství na skladě podle webu
-    -   Zobrazení množství na skladě podle skladu
-    -   Zobrazení množství na skladě podle umístění
-    -   Zobrazení množství na skladě pro šarži (pro kontrolované šarže produktů)
-    -   Zobrazení množství na skladě dle stavu skladu
+5.  Vyberte jednu z následujících možností k zobrazení stavu zásob na skladě:
+    -   Zobrazení zásob na skladě podle pracoviště
+    -   Zobrazení zásob na skladě podle skladu
+    -   Zobrazení zásob na skladě podle místa
+    -   Zobrazení zásob na skladě podle šarže (pro kontrolované šarže produktů)
+    -   Zobrazení zásob na skladě podle zboží
 
-    Zásoby na skladě produktu je zobrazen následujícím způsobem:
+    Zásoby na skladě produktu jsou zobrazeny následujícím způsobem:
     -   Podle fyzické inventury (Toto zobrazení představuje celkovou částku).
-    -   Ve vyhrazené fyzické (Toto zobrazení představuje vyhrazené částky).
-    -   Ve fyzicky k dispozici (v tomto zobrazení představuje částku k dispozici žádné výhrady.)
+    -   Podle fyzické rezervy (Toto zobrazení představuje rezervovanou částku).
+    -   Fyzicky k dispozici (Toto zobrazení představuje částku k dispozici, která nemá žádné rezervace.)
 
 
 

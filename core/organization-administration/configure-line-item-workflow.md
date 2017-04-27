@@ -33,7 +33,7 @@ Toto téma vysvětluje, jak nakonfigurovat prvek workflowu položky řádku.
 
 Pokud budete chtít nakonfigurovat prvek workflow položky řádku v editoru workflowu, klikněte pravým tlačítkem myši na ruční rozhodnutí a kliknutím na tlačítko **Vlastnosti** otevřete stránku **Vlastnosti**. Pro konfiguraci vlastností prvku workflowu položky řádky můžete použít následující kroky.
 
-## <a name="name-the-lineitem-workflow-element"></a>Název prvku workflowu lineitem
+## <a name="name-the-lineitem-workflow-element"></a>Pojmenování prvku workflowu položky řádku
 Pomocí následujících kroků zadejte název prvku workflowu položky řádky.
 
 1.  V levém podokně klepněte na tlačítko **Základní nastavení**.

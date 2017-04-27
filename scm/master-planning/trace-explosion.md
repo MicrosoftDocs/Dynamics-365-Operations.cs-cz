@@ -1,5 +1,5 @@
 ---
-title: "Použití trasování k výbuchu"
+title: "Použití sledování pro rozpad"
 description: "V tomto článku je vysvětleno použití sledování k prozkoumání příčin výsledku rozpadu objednávky."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-tracing-for-explosion"></a>Použití trasování k výbuchu
+# <a name="use-tracing-for-explosion"></a>Použití sledování pro rozpad
 
 [!include[banner](../includes/banner.md)]
 
@@ -46,7 +46,7 @@ Můžete zobrazit podrobnosti o termínech a akcích pro vybranou objednávku. N
 <a name="see-also"></a>Viz také
 --------
 
-[Master plans](master-plans.md)
+[Hlavní plány](master-plans.md)
 
 
 

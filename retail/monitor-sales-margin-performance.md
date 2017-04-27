@@ -1,6 +1,6 @@
 ---
 title: "Monitorování výkonnosti prodeje a marže"
-description: "Můžete sledovat prodeje a rozpětí výkonu v reálném čase pomocí Microsoft Dynamics 365 pro operace."
+description: "Objem prodeje a marže lze sledovat v reálném čase pomocí aplikace Microsoft Dynamics 365 for Operations."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 85123
 ms.assetid: ddd15820-c3e6-4607-819e-8cef744ce9c9
 ms.search.region: global
@@ -30,9 +30,9 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](includes/banner.md)]
 
 
-Můžete sledovat prodeje a rozpětí výkonu v reálném čase pomocí Microsoft Dynamics 365 pro operace.
+Objem prodeje a marže lze sledovat v reálném čase pomocí aplikace Microsoft Dynamics 365 for Operations.
 
-V rámci 365 Dynamics pro operace uživatelé sledovat prodeje a rozpětí výkonu v reálném čase přes různé úrovně hierarchie organizace pro tyto rozměry:
+Jako součást aplikace Microsoft Dynamics 365 for Operations mohou uživatelé sledovat objem prodejů marže v reálném čase napříč rozdílnou organizační hierarchií pro následující dimenze:
 
 -   Produkty
 -   Kategorie
@@ -45,10 +45,10 @@ V rámci 365 Dynamics pro operace uživatelé sledovat prodeje a rozpětí výko
 
 Dále existují dvě jedinečné sestavy využívající strukturování hierarchické mřížky, které uživatelům umožňují sledovat objem prodeje a marže procházením podrobností z uzlu nejvyšší kategorie až po jednotlivé koncové uzly kategorie ve výchozí hierarchii kategorií maloobchodních produktů. Uživatelé mohou také procházet podrobnosti z nejvyšší provozní jednotky po jednotlivé kanály v organizační hierarchii, které jsou definovány jako výchozí hierarchie organizace pro účely hierarchie vykazování maloobchodu. Sestavy můžete otevřít z některého z následujících umístění:
 
--   **Retail store management** prostoru Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**kanály**&gt;**Retail store management**&gt;**zprávy**
--   **Kategorie a produkt management** prostoru Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**produktu a kategorie**&gt;**Retail store management**&gt;**zprávy**
--   **Ceny a slevy řízení** prostoru Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**Tvorba cen a slevy**&gt;**Retail store management**&gt;**sestavy**
--   **Dotazy a sestavy** sekci Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**dotazy a sestavy**&gt;**sestavy prodeje**
+-   **Řízení maloobchodu** pracovní prostor aplikace Dynamics 365 for Operations &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy**
+-   **Správa kategorií a produktů** pracovní prostor aplikace Dynamics 365 for Operations &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Produkty a kategorie** &gt; **Řízení maloobchodu** &gt; **Sestavy**
+-   **Správa cen a slev** pracovní prostor aplikace Dynamics 365 for Operations &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Tvorba cen a slevy** &gt; **Řízení maloobchodu** &gt; **Sestavy**
+-   **Dotazy a sestavy** oddíl Dynamics 365 for Operations &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy**
 
 
 

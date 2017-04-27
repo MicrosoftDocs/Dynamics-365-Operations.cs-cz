@@ -1,5 +1,5 @@
 ---
-title: "Přepočítat reprodukční náklady a pojistné částky pro skupiny dlouhodobého majetku"
+title: "Přepočet reprodukčních nákladů a pojistných částek pro skupiny dlouhodobého majetku"
 description: "Tento článek vysvětluje postup aktualizace reprodukčních nákladů a pojistné částky pro dlouhodobý majetek."
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Přepočítat reprodukční náklady a pojistné částky pro skupiny dlouhodobého majetku
+# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Přepočet reprodukčních nákladů a pojistných částek pro skupiny dlouhodobého majetku
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,18 +41,18 @@ Chcete-li přepočítat reprodukční náklady a pojistné částky pro skupiny 
 
 Při přepočtu reprodukčních nákladů a pojistných částek majetku ve formuláři Aktualizovat reprodukční náklady a pojistné částky používají následující vzorce:
 
--   \[(Koeficient reprodukčních nákladů skupiny majetku / 100) + 1\]\* majetek existující reprodukční náklady
--   \[(Skupina majetku společnosti pojištěné hodnoty faktor / 100) + 1\]\* existující majetku pojištěné hodnoty
+-   \[(koeficient reprodukčních nákladů skupiny majetku / 100) + 1\] \* stávající reprodukční náklady majetku
+-   \[(koeficient pojistné částky skupiny majetku / 100) + 1\] \* stávající pojistná částka majetku
 
 > [!NOTE] 
 > Použijete-li formulář Aktualizovat reprodukční náklady a pojistné částky a jsou tak aktualizovány reprodukční náklady i pojistné částky pro vybraný majetek, nelze vybrat a aktualizovat pouze tuto jednu hodnotu. Chcete-li ponechat jednu hodnotu stejnou a aktualizovat druhou hodnotu, zadejte 0 (nula) jako koeficient ve formuláři Skupiny dlouhodobého majetku. Je-li koeficient nulový nebo prázdný, bude výpočet při aktualizaci vynechán. Na účetní hodnotu a zůstatkovou účetní hodnotu majetku nemá periodická aktualizace žádný vliv. 
 
 ## <a name="how-to-use-a-date-to-select-which-items-to-update"></a> Jak použít datum k výběru aktualizovaných položek
-Ve výchozím nastavení proces aktualizuje vybraný majetek, který nebyl aktualizován dnes, ale mohl být aktualizován v předchozích dnech. Například &lt;aktuální datum znamená "minulosti." Datum aktualizace náklady a pojistné hodnoty formuláře můžete změnit klepnutím na tlačítko Vybrat. Zadané datum je porovnáno s datem poslední periodické aktualizace majetku (pole Poslední periodická aktualizace nákladů/hodnoty ve formuláři Dlouhodobý majetek). Po každé úspěšné aktualizaci reprodukčních nákladů nebo pojistné částky majetku se automaticky změní pole Poslední periodická aktualizace nákladů/hodnoty na aktuální datum. 
+Ve výchozím nastavení proces aktualizuje vybraný majetek, který nebyl aktualizován dnes, ale mohl být aktualizován v předchozích dnech. Například &lt; aktuální datum znamená "v minulosti." Datum v poli Aktualizovat reprodukční náklady a ve formuláři pojistných hodnot můžete změnit klepnutím na tlačítko Vybrat. Zadané datum je porovnáno s datem poslední periodické aktualizace majetku (pole Poslední periodická aktualizace nákladů/hodnoty ve formuláři Dlouhodobý majetek). Po každé úspěšné aktualizaci reprodukčních nákladů nebo pojistné částky majetku se automaticky změní pole Poslední periodická aktualizace nákladů/hodnoty na aktuální datum. 
 
 Příklad 
 
-Včera Aktualizovat reprodukční náklady vozidla, kancelářský nábytek a skupiny budov o 5procent $2 a nyní zvažte tato aktiva mají být správně aktualizovány. K vyloučení těchto aktiv při dnes aktualizovat všechny ostatní dlouhodobý majetek, zadejte datum v posledním pravidelných nákladů/hodnoty pole aktualizace, která je před včera (&lt; včerejší datum), protože došlo k poslední aktualizace pro skupiny vozidel, kancelářský nábytek a budov mimo zadaná kritéria data.
+Včera jste aktualizovali reprodukční náklady pro skupiny majetku automobily, nábytek a budovy o 5 procent. Aktualizace těchto skupin majetku je nyní v pořádku. Jestliže chcete tento majetek vyloučit z dnešní aktualizace všech zbývajících položek majetku, zadejte do pole Poslední periodická aktualizace nákladů/hodnoty předvčerejší datum (&lt; včerejší datum), protože poslední periodická aktualizace Automobilů, Nábytku a Budov proběhla mimo zadané kritérium pro datum.
 
 ## <a name="cumulative-effect-of-each-update"></a> Kumulativní účinek každé aktualizace
 Každá aktualizace má kumulativní účinek. Proto je plánování aktualizací nutné provádět opatrně. Když například v úterý zvýšíte všechny položky majetku o 3% a v pátek zvýšíte skupinu nábytku o 4%, dojde u kancelářského nábytku k celkovému zvýšení o 7,12 %.

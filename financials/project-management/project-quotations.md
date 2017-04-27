@@ -33,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 Tento článek představuje koncept nabídky projektu, který můžete použít k předložení atraktivní nabídky odběrateli v rámci prvního kroku fáze projektu. Nabídka projektu může obsahovat položky a služby, základní kontaktní údaje, zvláštní obchodní ujednání a slevy, případně daně a příplatky. 
 
-Schopnost sledovat, kontrolovat a řídit příležitosti projektových nabídek a objednávek přestavuje důležitou část projektového řízení. Různé nástroje v 365 Microsoft Dynamics pro operace pomáhají s těmito úkoly. Například správné definice referenčních dat (typy nabídek, původ nabídky, prognóza a pravděpodobnost nabídky) pomáhají analyzovat příležitosti. Tyto nástroje lze využít k uspořádání důvodů, proč byla nabídka projektu úspěšná nebo neúspěšná, a ke zjištění potenciální hodnoty nabídky. 
+Schopnost sledovat, kontrolovat a řídit příležitosti projektových nabídek a objednávek přestavuje důležitou část projektového řízení. Různé nástroje v aplikaci Microsoft Dynamics 365 for Operations vám mohou s těmito úkoly pomoci. Například správné definice referenčních dat (typy nabídek, původ nabídky, prognóza a pravděpodobnost nabídky) pomáhají analyzovat příležitosti. Tyto nástroje lze využít k uspořádání důvodů, proč byla nabídka projektu úspěšná nebo neúspěšná, a ke zjištění potenciální hodnoty nabídky. 
 
 Zadejte do nabídky projektu služby, základní kontaktní údaje, zvláštní obchodní ujednání a slevy, případně odhadované daně a příplatky pro projekt. Můžete také vybrat aktivity nebo úlohy projektu a vytvořit hierarchii a dílčí úkoly. Pro každou aktivitu můžete zadat podrobnosti o načasování a době trvání aktivity a také o dovednostech a zkušenostech, které jsou požadovány pro pracovníky, kteří provádějí aktivitu. 
 

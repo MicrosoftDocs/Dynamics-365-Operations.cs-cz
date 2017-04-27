@@ -1,6 +1,6 @@
 ---
-title: "Rejstřík DPH transakce pro východní Evropu"
-description: "Toto téma obsahuje informace o transakce v rejstříku DPH pro Estonsko, Litva, Česká republika, Maďarsko, Lotyšsko a Polsko."
+title: "Transakce v rejstříku DPH pro východní Evropu"
+description: "Toto téma obsahuje informace o transakcích v rejstříku DPH pro Estonsko, Litvu, Českou republiku, Maďarsko, Lotyšsko a Polsko."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,14 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="vat-register-transactions-for-eastern-europe"></a>Rejstřík DPH transakce pro východní Evropu
+# <a name="vat-register-transactions-for-eastern-europe"></a>Transakce v rejstříku DPH pro východní Evropu
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma obsahuje informace o transakce v rejstříku DPH pro Estonsko, Litva, Česká republika, Maďarsko, Lotyšsko a Polsko. 
+Toto téma obsahuje informace o transakcích v rejstříku DPH pro Estonsko, Litvu, Českou republiku, Maďarsko, Lotyšsko a Polsko. 
 
-Pro právnické osoby s primární adresou v Estonsko, Litva, Česká republika, Maďarsko, Lotyšsko a Polsko, můžete zkontrolovat transakce daně a aktualizovat **datum rejstříku DPH** pro ně. Chcete-li zobrazit transakce v rejstříku DPH, otevřete **daně**&gt;**pravidelné úlohy**&gt;**DPH transakce registru**. Tato stránka zobrazuje daňové transakce, které byly vytvořeny podle kódů DPH typu **standardní DPH** pro který **datum rejstříku DPH** je prázdný. Můžete vyplnit **datum rejstříku DPH** pro daňové transakce pomocí pole **datum rejstříku DPH** tlačítka **hlavní nabídka**. Právnických osob s primární adresou v České republice je další sloupec s **odloženou DPH**. Pokud toto políčko označuje, že daň z přidané hodnoty nebyla hlášena pro transakci. Obvykle to platí pro prodejní dobropisy, které čekají na potvrzení od zákazníka. Toto políčko můžete vybrat během procesu zaúčtování prodejní faktury. Na **kódy DPH** stránky (**daně**&gt;**DPH**&gt;**kódy DPH**), můžete zobrazit nebo aktualizovat typ kódu DPH. <!---For more information about sales tax codes, refer to [Set up sales tax codes](http://ax.help.dynamics.com/en/wiki/set-up-sales-tax-codes/).-->
+Pro právnické osoby s primární adresou v Estonsku, Litvě, Česká republice, Maďarsku, Lotyšsku a Polsku můžete zkontrolovat daňové transakce a aktualizovat pro ně **datum rejstříku DPH**. Chcete-li zobrazit transakce v rejstříku DPH, otevřete **Daň** &gt; **Periodické úlohy** &gt; **Transakce v rejstříku DPH**. Tato stránka zobrazuje daňové transakce, které byly vytvořeny podle kódů DPH typu **Standardní DPH** pro který je **datum rejstříku DPH** prázdné. Můžete vyplnit **Datum rejstříku DPH** pro daňové transakce pomocí tlačítka **Datum rejstříku DPH** v **hlavní nabídce**. Pro právnické osoby s primární adresou v České republice je k dispozici další sloupec, **Odložená DPH**. Pokud je toto pole vybrané, znamená to, že daň z přidané hodnoty nebyla hlášena pro transakci. Obvykle to platí pro prodejní dobropisy, které čekají na potvrzení od zákazníka. Toto políčko můžete vybrat během procesu zaúčtování prodejní faktury. Na stránce **Kódy DPH** (**Daň** &gt; **DPH** &gt; **Kódy DPH**) můžete zobrazit nebo aktualizovat typ kódu DPH. <!---For more information about sales tax codes, refer to [Set up sales tax codes](http://ax.help.dynamics.com/en/wiki/set-up-sales-tax-codes/).-->
 
 
 

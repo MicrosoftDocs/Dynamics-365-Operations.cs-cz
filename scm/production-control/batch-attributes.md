@@ -45,7 +45,7 @@ Pro zjednodušení správy počtu a typů atributů můžete použít skupiny at
 Atributy dávky se přiřazují k jednotlivým produktům, které jsou zahrnuty do skladových dávek nebo jsou přiřazeny k produktům, které jsou asociovány s konkrétními odběrateli. Před přiřazením atributu dávky na úrovni odběratelů je nutné přiřadit je na úrovni produktu. Výrobek musí mít dimenze dávky nastavené na **Aktivní** ve skupině sledování dimenze. Pokud chcete přiřadit atribut dávky k jednotlivým produktům, použijte stránku specifickou pro produkt. Je-li atribut specifický pro produkt odběratele, použijte stránku specifickou pro odběratele. Po přidání atributu k produktu se také definují další parametry. Několik příkladů:
 
 -   Minimální a maximální rozsah pro atribut typu **Celé číslo** nebo **Zlomek**.
--   Akce tolerance pro atribut **celé** nebo **frakce** typu. Pokud hodnota atributu spadá mimo rozsah minimální a maximální, akce může být upozornění nebo chybovou zprávu.
+-   Akce tolerance pro atribut typu **Celé číslo** nebo **Zlomek**. Pokud hodnota atributu spadá mimo rozsah minima a maxima, akce může být upozornění nebo chybová zpráva.
 -   Cílová hodnota základního atributu. Tato hodnota je optimální hodnota atributu a platí pro všechny typy atributů.
 
 Lze otevřít stránky pro produkty, které vyberete na stránce **Uvolněné produkty** v modulu Řízení informací o produktu. Po přiřazení atributů dávky k produktu můžete přiřadit specifické hodnoty k atributům na stránce **Atributy skladové dávky**.

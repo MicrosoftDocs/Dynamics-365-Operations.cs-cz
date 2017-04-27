@@ -1,6 +1,6 @@
 ---
 title: "Organizační obsah školení Power BI"
-description: "Toto téma popisuje 365 Dynamics pro operace - obsah organizační školení Power BI. Tento článek vysvětluje, jak získat přístup k obsahu pack a popisuje datový model a subjekty, které byly použity k sestavení obsahu pack."
+description: "Toto téma popisuje Dynamics 365 for Operations - Organizační obsah školení Power BI. Vysvětluje přístup k sestavám balíčku obsahu a poskytuje popis datového modelu a entit, které byly použity k sestavení obsahu."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,43 +29,43 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje 365 Dynamics pro operace - obsah organizační školení Power BI. Tento článek vysvětluje, jak získat přístup k obsahu pack a popisuje datový model a subjekty, které byly použity k sestavení obsahu pack.
+Toto téma popisuje Dynamics 365 for Operations - Organizační obsah školení Power BI. Vysvětluje přístup k sestavám balíčku obsahu a poskytuje popis datového modelu a entit, které byly použity k sestavení obsahu.
 
-<a name="accessing-the-content-pack"></a>Přístup k obsahu pack
+<a name="accessing-the-content-pack"></a>Přístup k balíčku obsahu
 --------------------------
 
-Obsahu pack organizační školení můžete najít v knihovně Sdílené datové zdroje v Microsoft Dynamics Lifecycle Services (LCS). Další informace o stažení obsahu pack a připojit k vaší 365 Microsoft Dynamics pro datové operace, viz [obsahu Power BI od společnosti Microsoft a partnerů LCS](power-bi-content-microsoft-partners.md).
+Balíček obsahu organizačního školení naleznete v knihovně sdíleného majetku ve službě Microsoft Dynamics Lifecycle Services (LCS). Další informace o stažení balíčku obsahu a připojení k datům aplikace Microsoft Dynamics 365 for Operations naleznete v tématu [Obsah Power BI v LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md).
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>Sestavy, které jsou součástí obsahu pack
-Po připojení obsahu pack do aplikace Dynamics 365 pro operace data, sestavy zobrazit data organizace. Pokud jste dosud nepoužívali Microsoft Power BI před, bližší informace na [s asistencí výukové stránky pro Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Sestavy, které jsou součástí obsahu pack mají grafy a tabulky, které obsahují další informace. Následující tabulka obsahuje popis daných sestav.
+## <a name="reports-that-are-included-in-the-content-pack"></a>Sestavy, které jsou součástí balíčku obsahu
+Po připojení balíčku obsahu k datům z aplikace Dynamics 365 for Operations zobrazí sestavy dat vaší organizace. Pokud jste aplikaci Microsoft Power BI nikdy předtím nepoužívali, vyhledejte si další informace v tématu [Řízená výuka pro Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Sestavy, které jsou součástí balíčku obsahu, mají grafy a tabulky obsahující další informace. Následující tabulka obsahuje popis daných sestav.
 
 | Sestava          | Obsah                                                                    |
 |-----------------|-----------------------------------------------------------------------------|
-| Kurz analýza | Registrace podle umístění, Účastníci kurzu podle stavu a seznam registrací |
+| Analýza kurzu | Registrace podle umístění, účastníci kurzu podle stavu a seznam registrací |
 | Typy kurzů    | Typy kurzů podle dovednosti                                                       |
 
-Můžete filtrovat grafy a dlaždice v těchto sestavách a Připnutí grafů a dlaždice pro řídicí panel. Další informace o filtru a pin v Power BI, viz [vytvoření a konfigurace řídicího panelu A](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
-Dynamics 365 pro datové operace se používá k naplnění sestavy v obsahu pack organizační školení. Následující tabulka zobrazuje entity, aby byla na základě obsahu pack.
+Data aplikace Dynamics 365 for Operations se používají k naplnění sestav v balíčku obsahu organizačního školení. Následující tabulka zobrazuje entity, na kterých je balíček obsahu založen.
 
-| Celek                    | Obsah                                                         | Vztahy s jinými subjekty                                                                                                                                                                  |
+| Celek                    | Obsah                                                         | Vztahy s jinými entitami                                                                                                                                                                  |
 |---------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Školení\_CalendarOffset  | Kalendář posuny na řezu sestavy                                | Školení\_vzdělávání CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Školení\_společnosti         | Chcete-li filtrovat zprávy společnosti                                   | Školení\_vzdělávání CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Školení\_kurzu          | Kurzu, popis, Instruktor název, umístění, místnosti a stav | Školení\_vzdělávání CourseAgenda\_CourseAttendees vzdělávání\_CourseSkill                                                                                                                             |
-| Školení\_CourseAgenda    | Agenda kurzu a počáteční a koncové časy                          | Školení\_školení společnosti\_CalendarOffset vzdělávání\_datum školení\_kurzu                                                                                                                         |
-| Školení\_CourseAttendees | Datum název, stav, úlohy a registrace                         | Školení\_školení společnosti\_CalendarOffset vzdělávání\_datum školení\_demografické údaje školení\_zaměstnanost, vzdělávání\_kurzu školení\_vzdělávání WorkerName\_WorkerTitle vzdělávání\_projektu vzdělávání\_pozice |
-| Školení\_CourseSkill     | Úrovni, typ dovednosti a dovednosti                                     | Školení\_kurzu                                                                                                                                                                                   |
-| Školení\_datum            | Dny, týdny, měsíce a roky                                   | Školení\_vzdělávání CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Školení\_demografické údaje    | Datum narození, pohlaví, etnického původu a rodinného stavu         | Školení\_vzdělávání CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Školení\_zaměstnání      | Počáteční datum, koncové datum a datum přechodu                        | Školení\_vzdělávání CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Školení\_práce             | Funkce, typ a název                                        | Školení\_vzdělávání CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Školení\_pozice        | Umístění, název a ekvivalent plného úvazku (FTE)                  | Školení\_vzdělávání CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Školení\_WorkerName      | Jméno, příjmení a celé jméno                             | Školení\_CourseAttendees                                                                                                                                                                          |
-| Školení\_WorkerTitle     | Datum název a služebního věku                                         | Školení\_CourseAttendees                                                                                                                                                                          |
+| Školení\_CalendarOffset  | Posuny kalendáře pro řez sestav                                | Školení\_Školení CourseAgenda\_CourseAttendees                                                                                                                                                   |
+| Školení\_Společnost         | Společnosti, podle kterých se filtrují sestavy                                   | Školení\_Školení CourseAgenda\_CourseAttendees                                                                                                                                                   |
+| Školení\_Kurz          | Kurz, popis, jméno školitele, umístění, místnosti a stav | Školení\_Školení CourseAgenda\_Školení CourseAttendees\_CourseSkill                                                                                                                             |
+| Školení\_CourseAgenda    | Agenda kurzu a počáteční a koncové časy                          | Školení\_Školení společnosti\_CalendarOffset Školení\_Datum školení\_Kurz                                                                                                                         |
+| Školení\_CourseAttendees | Název, stav, práce a datum registrace                         | Školení\_Školení společnosti\_CalendarOffset Školení\_Datum školení\_Demografické údaje školení\_Školení k zaměstnání\_Školicí kurz\_Školení WorkerName\_WorkerTitle Školení\_Školení k práci\_Pozice |
+| Školení\_CourseSkill     | Dovednost, typ dovednosti a úroveň                                     | Školení\_Kurz                                                                                                                                                                                   |
+| Školení\_Datum            | Dny, týdny, měsíce a roky                                   | Školení\_Školení CourseAgenda\_CourseAttendees                                                                                                                                                   |
+| Školení\_Demografické údaje    | Datum narození, pohlaví, etnický původ a rodinný stav         | Školení\_Školení CourseAgenda\_CourseAttendees                                                                                                                                                   |
+| Školení\_Zaměstnání      | Počáteční datum, koncové datum a datum přechodu                        | Školení\_Školení CourseAgenda\_CourseAttendees                                                                                                                                                   |
+| Školení\_Práce             | Funkce, typ a název                                        | Školení\_Školení CourseAgenda\_CourseAttendees                                                                                                                                                   |
+| Školení\_Pozice        | Pozice, titul a ekvivalent plného úvazku (FTE)                  | Školení\_Školení CourseAgenda\_CourseAttendees                                                                                                                                                   |
+| Školení\_WorkerName      | Křestní jméno, příjmení a celé jméno                             | Školení\_CourseAttendees                                                                                                                                                                          |
+| Školení\_WorkerTitle     | Název a datum služebního věku                                         | Školení\_CourseAttendees                                                                                                                                                                          |
 
-Tyto entity byly použity k vytvoření vypočítaných rozměrů v datovém modelu. Tyto vypočtena opatření se poté použije pro výpočet klíčových ukazatelů výkonu (KPI) a sestavy, které jsou použity v obsahu pack. Pokud chcete zahrnout další výpočty v sestavách a řídicího panelu, můžete stáhnout a upravit soubor Training.pbix z LCS. Tento soubor je výchozí datový model, který byl použit k vytvoření obsahu pack. Poté, co jste provedli změny, můžete vytvořit obsahu pack organizační a řídicí panel, který obsahuje informace, které jste přidali.
+Tyto entity byly použity k vytvoření vypočítaných hodnot v datovém modelu. Tyto vypočtené hodnoty se poté použijí pro výpočet klíčových ukazatelů výkonu a sestav, které se používají v balíčku obsahu. Pokud chcete zahrnout další výpočty do sestav a řídicího panelu, můžete stáhnout a upravit soubor Training.pbix z LCS. Tento soubor představuje výchozí datový model, který byl použit k vytvoření balíčku obsahu. Po provedení změn můžete vytvořit organizační balíček obsahu a řídicí panel, který bude obsahovat vámi přidané informace.
 
 ## <a name="additional-resources"></a>Další prostředky
 Zde uvádíme některé užitečné odkazy související s entitami a vytvářením obsahu v aplikaci Power BI:

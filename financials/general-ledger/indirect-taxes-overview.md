@@ -36,13 +36,13 @@ Tento článek podává přehled o systému DPH. Vysvětluje prvky nastavení DP
 <a name="overview"></a>Přehled
 --------
 
-DPH framework podporuje mnoho typů nepřímých daní, například DPH, daň z přidané hodnoty (DPH), daně zboží a služeb (GST), jednotkové poplatky a srážkové daně. Tyto poplatky jsou vypočítány a zdokumentován během transakce nákupu a prodeje. Pravidelně se musí vykazovat a platit finančním úřadům. 
+Systém DPH podporuje spoustu typů nepřímých daní, jako daň z prodeje, daň z přidané hodnoty (DPH), daň ze zboží a služeb tax (GST), poplatky jednotkové poplatky a srážková daň. Tyto daně jsou vypočítány a zdokumentovány během transakcí nákupu a prodeje. Musí být pravidelně vykazována a zaplacena finančnímu úřadu. 
 
 Následující diagram znázorňuje entity nastavení daně a jejich propojení.
 
 [![TaxOverview](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
-Pro každou prodejní daně, který společnost musí počítat musí být definován kód prodejní daně. Kód daně z prodeje ukládá sazby daně a pravidla pro výpočet daně z prodeje. 
+Pro každou daň z prodeje, kterou společnost musí vykazovat, je třeba definovat kód daně z prodeje. Kód daně z prodeje ukládá sazby daně a pravidla pro výpočet daně z prodeje. 
 
 Každý kód daně z prodeje musí být spojen s obdobím vyrovnání daně z prodeje. Období vyrovnání daně z prodeje definují intervaly, ve kterých musí být daň z prodeje vykázána a zaplacena finančnímu úřadu. Každé období vyrovnání daně z prodeje musí být přiřazeno úřadu pro kontrolu daně z prodeje. Úřad pro kontrolu daně z prodeje představuje entitu, které je daň z prodeje vykázána a zaplacena. Definuje také rozvržení sestavy daně z prodeje. Úřady pro kontrolu daně z prodeje mohou být přiřazeny účtům dodavatelů. 
 
@@ -72,27 +72,27 @@ Pro každou transakci (řádky dokumentu k prodeji/nákupu, deníky a tak dále)
 U každé transakce můžete vyhledat vypočítanou daň z prodeje otevřením stránky **Transakce DPH**. Můžete vyhledávat daň z prodeje pro řádek dokumentu nebo pro celý dokument. U některých dokumentů (například faktura dodavatele a hlavní deníky) můžete upravit vypočítanou daň z prodeje, pokud původní dokument vykazuje odchylky částky.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Vyrovnání a vykazování daně z prodeje
-Daň z prodeje musí být vykázána a zaplacena finančním úřadům v daných intervalech (měsíčně, čtvrtletně atd.). 365 Microsoft Dynamics pro operace poskytuje funkce, které vám umožní vyrovnat účty DPH intervalu a posun zůstatku na účet vyrovnání DPH podle účetní skupiny hlavní knihy. Tato funkce je k dispozici na **vyrovnat a zaúčtovat DPH** stránky. Je nutné zadat by měla být vyrovnána DPH pro období vyrovnání DPH. 
+Daň z prodeje musí být vykázána a zaplacena finančním úřadům v daných intervalech (měsíčně, čtvrtletně atd.). Microsoft Dynamics 365 for Operations nabízí funkce, které vám umožňují vyrovnat účty daní pro interval a vyrovnat zůstatky na účet vyrovnání daně, jak je uvedeno ve skupinách pro zaúčtování do hlavní knihy. Tato funkce je k dispozici na stránce **Vyrovnat a zaúčtovat DPH**. Je nutné zadat období vyrovnání daně, pro které by měna být vyrovnána DPH. 
 
 Poté, co byla daň z prodeje zaplacena, zůstatky na účtu vyrovnání daně z prodeje by měly být srovnány dle bankovního účtu. Pokud úřad pro kontrolu daně z prodeje, který je uveden v období vyrovnání daně z prodeje, souvisí s účtem dodavatele, zůstatek daně z prodeje bude zaúčtován jako otevřená faktura dodavatele a lze jej zahrnout do návrhu běžné platby.
 
 ## <a name="conditional-sales-tax"></a>Nerealizovaná DPH
-Podmíněné DPH je DPH, která platí úměrně skutečná částka, kterou platí na faktuře. Naopak standardní DPH se vypočítá v době fakturace. Podmíněné DPH musí být věnována finančnímu úřadu při zaúčtování platby, při zaúčtování faktury. Při zaúčtování faktury transakce musí být uvedeny v sestavě knihu DPH. Transakce však musí být vyloučeno z sestavy platby DPH. 
+Podmíněná DPH je DPH, která je vyplacena úměrně ke skutečné částce zaplacené na základě faktury. Naopak standardní DPH se vypočítává v době fakturace. Podmíněná daň DPH musí být odvedena finančnímu úřadu při zaúčtování platby, nikoli při zaúčtování faktury. Při zaúčtování faktury musí být transakce uvedena v sestavě knihu DPH. Transakce však musí být vyloučena ze sestavy platby DPH. 
 
-Pokud vyberete zaškrtávací pole podmíněné DPH ve formuláři Parametry hlavní knihy, bez DPH lze odečíst, dokud jste zaplatili fakturu. Toto je právní požadavek v některých zemích nebo oblastech.
+Pokud zaškrtnete políčko Podmíněná DPH ve formuláři Parametry hlavní knihy, nelze odečíst žádnou DPH, dokud nezaplatíte fakturu. Jedná se o zákonný požadavek v některých zemích / regionech.
 
 > [!NOTE]
-> Když vyberete zaškrtávací pole podmíněné DPH, musíte nastavit kódy DPH a skupiny DPH a také vytvářet knihy účto skupiny pro podporu funkce. |
+> Při zaškrtnutí políčka Podmíněná DPH musíte nastavit kódy DPH a skupiny DPH a vytvořit také skupiny zaúčtování hlavní knihy na podporu této funkce. |
 
 ###  <a name="example"></a>Příklad
 
-Prodejní daně se vyrovnávají každý měsíc. Na 15 června vytvoříte fakturu odběratele 10 000 plus DPH.
--   DPH je 25procent $2 a 2 500.
--   Platba faktury je splatná dne 30.
+Vyrovnáváte DPH každý měsíc. 15. června jste vytvořili fakturu zákazníka na částku 10 000 plus DPH.
+-   DPH je 25 % nebo 2 500.
+-   Datum splatnosti faktury 30. července.
 
-Obvykle nutné vyrovnat a zaplatí 2 500 finančnímu úřadu při zaúčtování faktury v červnu, i když jste neobdrželi platbu od zákazníka. 
+Obvykle je nutné vyrovnat a zaplatí 2 500 finančnímu úřadu při zaúčtování faktury v červnu, i když jste neobdrželi platbu od zákazníka. 
 
-Však pokud použijete podmíněné DPH se vyrovnávají u finančního úřadu při obdrží platbu od zákazníka dne 30.
+Pokud však používáte podmíněnou DPH, provedete se vyrovnání u finančního úřadu, když obdržíte platbu od zákazníka 30. července.
 
 
 

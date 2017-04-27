@@ -1,6 +1,6 @@
 ---
 title: "Posouzení ziskovosti z hlediska odběratelů a produktů"
-description: "Tento článek vysvětluje, jak lze pomocí analytics v paměti a v reálném čase přístup, prozkoumat a získat dokonalý přehled o zákaznících a ziskovosti produktu z aplikace Microsoft Dynamics 365 pro datové operace."
+description: "Tento článek vysvětluje použití analýzy v paměti a v reálném čase pro přístup, prohlížení a získání přehledu o ziskovosti z hlediska odběratelů a produktů na základě vašich dat z aplikace Microsoft Dynamics 365 for Operations."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 52902
 ms.assetid: 1a77d04b-2985-4bee-9138-c216fe0483de
 ms.search.region: global
@@ -30,9 +30,9 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](includes/banner.md)]
 
 
-Tento článek vysvětluje, jak lze pomocí analytics v paměti a v reálném čase přístup, prozkoumat a získat dokonalý přehled o zákaznících a ziskovosti produktu z aplikace Microsoft Dynamics 365 pro datové operace. 
+Tento článek vysvětluje použití analýzy v paměti a v reálném čase pro přístup, prohlížení a získání přehledu o ziskovosti z hlediska odběratelů a produktů na základě vašich dat z aplikace Microsoft Dynamics 365 for Operations. 
 
-Jako součást 365 Dynamics pro operace uživatele lze studie ziskovosti nejlepších zákazníků (10-100) přes různé úrovně hierarchie organizace na základě jedné z následujících kritérií:
+V rámci aplikace Dynamics 365 for Operations mohou uživatelé studovat ziskovost nejlepších odběratelů (10-100) v rámci rozdílných úrovní organizační hierarchie na základě jednoho z následujících kritérií:
 
 -   Prodejní částka
 -   Množství
@@ -41,8 +41,8 @@ Jako součást 365 Dynamics pro operace uživatele lze studie ziskovosti nejlep�
 
 Pro toto hodnocení lze použít sestavu **Nejlepší odběratelé**, která je ihned k dispozici po otevření některého z následujících umístění:
 
--   **Retail store management** prostoru Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**kanály**&gt;**Retail store management**&gt;**zprávy**&gt;**Top zákazníci sestavy**
--   **Dotazy a sestavy** sekci Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**dotazy a sestavy**&gt;**sestavy prodeje**&gt;**Top zákazníci sestavy**
+-   **Řízení maloobchodu** – pracovní prostor aplikace Dynamics 365 for Operations &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava nejlepších odběratelů**
+-   **Dotazy a sestavy** - oddíl aplikace Dynamics 365 for Operation &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava nejlepších odběratelů**
 
 Stejně tak mohou uživatelé studovat ziskovost nejlepších produktů (10-100) v rámci rozdílných úrovní organizační hierarchie na základě jednoho z následujících kritérií:
 
@@ -53,9 +53,9 @@ Stejně tak mohou uživatelé studovat ziskovost nejlepších produktů (10-100)
 
 Pro toto hodnocení lze použít sestavu **Nejlepší produkty**, která je ihned k dispozici po otevření některého z následujících umístění:
 
--   **Retail store management** prostoru Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**kanály**&gt;**Retail store management**&gt;**zprávy**&gt;**Top sestavu výrobků**
--   **Kategorie a produkt management** prostoru Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**produkty a kategorie**&gt;**Retail store management**&gt;**zprávy**&gt;**Top sestavu výrobků**
--   **Dotazy a sestavy** sekci Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**dotazy a sestavy**&gt;**sestavy prodeje**&gt;**Top sestavu výrobků**
+-   **Řízení maloobchodu** – pracovní prostor aplikace Dynamics 365 for Operations &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava nejlepších produktů**
+-   **Správa kategorií a produktů** – pracovní prostor aplikace Dynamics 365 for Operations &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Produkty a kategorie** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava nejlepších produktů**
+-   **Dotazy a sestavy** - oddíl aplikace Dynamics 365 for Operation &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava nejlepších produktů**
 
 
 

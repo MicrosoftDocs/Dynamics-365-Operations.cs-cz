@@ -85,6 +85,6 @@ Další informace naleznete v části „Interaktivní součásti a navigační 
 
 #<a name="see-also"></a>Viz také
 
-[Finanční sestavy generovat] ((dynamics365\operations\financials\general-ledger\generate finanční sestava)
+[Generovat finanční sestavu]((dynamics365\operations\financials\general-ledger\generate-financial-report)
 
 

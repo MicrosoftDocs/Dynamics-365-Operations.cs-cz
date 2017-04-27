@@ -51,9 +51,9 @@ Můžete použít následující typy párování faktur závazků:
 
 Dvoucestné s třícestné párování vždy páruje informace o ceně podle jednotkové ceny. Tyto zásady párování můžete nakonfigurovat rovněž tak, aby párovaly informace o ceně podle celkové ceny.
 -   Párování čisté jednotkové ceny – párování informací o ceně pro dvoucestné nebo třícestné párování porovnáním čisté jednotkové ceny pro jednotlivé řádky na faktuře s odpovídající čistou jednotkovou cenou na nákupní objednávce. Čistá jednotková cena je určována podle tohoto vzorce: čistá částka na řádku / množství na řádku.
--   Párování celkové ceny – párování informací o ceně pro dvoucestné nebo třícestné párování porovnáním čisté ceny (celkové ceny) pro jednotlivé řádky na faktuře s odpovídající čistou částkou na nákupní objednávce. Čistá částka se stanoví podle následujícího vzorce: (Jednotková cena \*řádek množství) + náklady na řádku - řádkové slevy
+-   Párování celkové ceny – párování informací o ceně pro dvoucestné nebo třícestné párování porovnáním čisté ceny (celkové ceny) pro jednotlivé řádky na faktuře s odpovídající čistou částkou na nákupní objednávce. Čistá částka je určována podle tohoto vzorce: (jednotková cena \* množství na řádku) + náklady na řádku − slevy na řádku
 
-Výpočet párování faktur se obvykle provádí automaticky při úpravě faktur dodavatele na stránce Faktura dodavatele. Případně lze párování faktur provést podle potřeby. Na požádání párování faktur je řízen pro právnickou osobu podle automaticky aktualizovat stav záhlaví faktury pro účty stránky parametry závazků na kartě ověření faktury. Párování faktur lze provést také jako součást procesu přezkoumání fakturu. Výsledky párování faktur si můžete zobrazit na stránce Faktura dodavatele a na stránkách souvisejících s párováním faktur.
+Výpočet párování faktur se obvykle provádí automaticky při úpravě faktur dodavatele na stránce Faktura dodavatele. Případně lze párování faktur provést podle potřeby. Párování faktur na vyžádání je pro právnickou osobu řízeno parametrem Automaticky aktualizovat stav záhlaví faktury na kartě Ověření faktury na stránce Parametry závazků. Párování faktur lze provést také v rámci proces kontroly faktury. Výsledky párování faktur si můžete zobrazit na stránce Faktura dodavatele a na stránkách souvisejících s párováním faktur.
 
 ## <a name="invoice-totals-matching"></a> Párování součtu faktur
 Párování součtu faktur můžete použít k ověření toho, zda se celkové částky na faktuře neodlišují od očekávaných částek o větší než přijatelnou odchylku. Šest součtů je porovnáno na stránce Shodné podrobnosti o celkových součtech faktur (viz následující tabulka). Pokud je přípustná tolerance pro párování součtů faktur 20 %, je za odchylku párování považována 100% odchylka pro částku celkové slevy.
@@ -138,7 +138,7 @@ Jsou vloženy tři faktury (viz následující tabulka). Existuje odchylka páro
 | Číslo zboží          | Množství | Jednotková cena | Čistá částka | Shoda ceny | Párování celkových cen |
 |----------------------|----------|------------|------------|-------------|-------------------|
 | Faktura 1: Jednotka USB | 800      | 10,80      | 8 640,00   | Úspěšné      | Úspěšné            |
-| Faktura 2: Jednotka USB | 1597      | 10,80      | 1 080,00   | Úspěšné      | Úspěšné            |
+| Faktura 2: Jednotka USB | 100      | 10,80      | 1 080,00   | Úspěšné      | Úspěšné            |
 | Faktura 3: Jednotka USB | 200      | 10,80      | 2 160,00   | Úspěšné      | Nezdařilo se            |
 | Celkem                |          |            | 11 880,00  |             |                   |
 
@@ -168,7 +168,7 @@ Na stránce Podrobnosti o párování faktur jsou porovnány stejné částky ř
 Třícestné párování je pro právnickou osobu řízeno hodnotou v poli Zásady párování řádků na stránce Parametry závazků. V závislosti na výběru v poli Povolit přepsání zásad párování můžete na stránce Zásady párování zvolit třícestné párování pro určitého dodavatele, položku nebo kombinaci položky a dodavatele a na stránce Nákupní objednávka pro konkrétní nákupní objednávku.
 
 ## <a name="charges-matching"></a> Párování nákladů
-Párování nákladů můžete použít k ověření toho, zda se částky nákladů neodlišují od očekávaných částek o větší než přijatelnou procentní odchylku. Celkové částky pro každý kód nákladů, která se vztahuje na faktury a nákupní objednávky jsou porovnány v porovnat hodnoty nákladů – faktura: stránky, jak je znázorněno v následující tabulce. Pokud je přípustná tolerance pro kódy nákladů 25 %, je za odchylku párování považována 99 999 999 999,99% odchylka pro kód nákladů na licence.
+Párování nákladů můžete použít k ověření toho, zda se částky nákladů neodlišují od očekávaných částek o větší než přijatelnou procentní odchylku. Na stránce Porovnat hodnoty nákladů – faktura: se porovnají celkové částky pro každý kód nákladů, který je použit na faktuře a nákupní objednávce (viz následující tabulka). Pokud je přípustná tolerance pro kódy nákladů 25 %, je za odchylku párování považována 99 999 999 999,99% odchylka pro kód nákladů na licence.
 
 > [!NOTE] 
 > Procentní odchylka 99 999 999 999,99 % znamená, že očekávaná částka na základě nákupní objednávky je nulová a skutečná částka na faktuře je kladná hodnota. 
@@ -191,7 +191,7 @@ Faktury dodavatele bývají často založeny na příjemkách produktu, které p
 -   Zadejte částky faktur, které nebyly zahrnuty na původní nákupní objednávce, aby se informace na faktuře shodovaly s fakturou přijatou od dodavatele. Můžete porovnat náklady pro nákupní objednávky s náklady pro faktury. V případě potřeby lze přidat na faktury náklady a přidělit je jednotlivým řádkům faktury.
 -   Zobrazte a schvalte odchylky párování cen mezi čistou jednotkovou cenou na faktuře a čistou jednotkovou cenou na nákupní objednávce. Pro právnické osoby, dodavatele a položky je možné nastavit procentuální tolerance ceny. Pokud se částka na řádku faktury dodavatele nenachází v přijatelné toleranci ceny, můžete fakturu uložit, dokud nedojde ke schválení jejího zaúčtování nebo dokud neobdržíte od dodavatele opravu.
 
-Další informace naleznete v tématu [třícestný odpovídající zásady](three-way-matching-policies.md).
+Další informace naleznete v tématu [Zásady třícestného párování](three-way-matching-policies.md).
 
 
 

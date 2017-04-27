@@ -1,5 +1,5 @@
 ---
-title: "Konfigurovat ruční úkol v pracovním postupu"
+title: "Konfigurace ruční úlohy ve workflowu"
 description: "Toto téma vysvětluje, jak nakonfigurovat vlastnosti ručního úkolu."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-manual-task-in-a-workflow"></a>Konfigurovat ruční úkol v pracovním postupu
+# <a name="configure-a-manual-task-in-a-workflow"></a>Konfigurace ruční úlohy ve workflowu
 
 [!include[banner](../includes/banner.md)]
 
@@ -127,10 +127,10 @@ Pomocí následujícího postupu určíte, komu má být ruční úkol přiřaze
     </tr>
     <tr class="even">
     <td>Uživatel</td>
-    <td>Zvláštní 365 Microsoft Dynamics pro operace uživatele</td>
+    <td>Konkrétní uživatelé aplikace Microsoft Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
-    <li><strong>k dispozici uživatelům</strong> seznam obsahuje všechny Dynamics 365 uživatelům operací. Vyberte uživatele, ke kterým chcete úkol přiřadit, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    <li>Seznam <strong>Dostupní uživatelé</strong>: obsahuje všechny uživatele aplikace Dynamics 365 for Operations. Vyberte uživatele, ke kterým chcete úkol přiřadit, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -148,8 +148,8 @@ Pomocí následujícího postupu určíte, komu má být ruční úkol přiřaze
     <li>V seznamu <strong>Typ fronty</strong> vyberte <strong>Podmíněné fronty pracovních položek</strong>.</li>
     <li>V seznamu <strong>Název fronty</strong> vyberte <strong>Podmíněná fronta</strong>.</li>
     </ol></li>
-    </ol><ph id="t1">
-    </ph><strong>Poznámka:</strong> tato možnost se používá pro pouze několik pracovních postupů, jako je například Správa případů.</td>
+    </ol>
+    <strong>Poznámka:</strong> tato možnost se používá pouze u několika workflowů, jako je například správa případů.</td>
     </tr>
     </tbody>
     </table>
@@ -217,10 +217,10 @@ Pokud uživatel v přiděleném čase ruční úkol nedokončí, úkol bude v pr
     </tr>
     <tr class="odd">
     <td>Uživatel</td>
-    <td>Zvláštní Dynamics 365 uživatelům operací</td>
+    <td>Konkrétní uživatelé aplikace Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
-    <li><strong>k dispozici uživatelům</strong> seznam obsahuje všechny Dynamics 365 uživatelům operací. Vyberte uživatele, kterým chcete úkol eskalovat, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    <li>Seznam <strong>Dostupní uživatelé</strong>: obsahuje všechny uživatele aplikace Dynamics 365 for Operations. Vyberte uživatele, kterým chcete úkol eskalovat, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -237,7 +237,7 @@ Pokud uživatel v přiděleném čase ruční úkol nedokončí, úkol bude v pr
 6.  Pokud uživatelé v eskalační cestě v určeném čase úkol nedokončí, systém sám provede u úkolu vhodnou akci. Akci, kterou systém provede, můžete vybrat výběrem řádku **Akce** a na kartě **Konečná akce** vyberte akci.
 
 ## <a name="specify-when-the-system-automatically-acts-on-the-task"></a>Určení podmínky, podle které systém automaticky provede akci u úkolu
-Systém lze nastavit tak, aby při splnění určitých podmínek prováděl akce u ručních úkolů. Například úkol bude vyžadovat, aby člen oddělení pro vyúčtování výdajů zkontrolovat příjmové doklady, které byly odeslány společně s vyúčtováním výdajů. Podle zásad společnosti musí tuto úlohu provést, pokud celková částka na vyúčtování je vyšší než USD 100. V tomto případě můžete nakonfigurovat systém automaticky označit úkol jako **kompletní** Pokud je celková částka menší než 100. Pomocí tohoto postupu určete podmínky, za kterých má systém zpracovávat ruční úkol.
+Systém lze nastavit tak, aby při splnění určitých podmínek prováděl akce u ručních úkolů. Například úkol bude vyžadovat, aby člen oddělení pro vyúčtování výdajů zkontrolovat příjmové doklady, které byly odeslány společně s vyúčtováním výdajů. Podle zásad společnosti musí být tento úkol proveden v případě, že celková částka vyúčtování výdajů bude větší než 100 USD. V tomto scénáři lze systém nastavit tak, aby automaticky označil úkol za **Dokončený** v situaci, kdy je celková částka nižší než 100. Pomocí tohoto postupu určete podmínky, za kterých má systém zpracovávat ruční úkol.
 
 1.  V levém podokně klepněte na tlačítko **Automatické akce**.
 2.  Označte pole **Povolit automatické akce**.
@@ -311,10 +311,10 @@ Při delegování, eskalování, dokončení nebo zamítnutí ruční úlohy a p
     </tr>
     <tr class="odd">
     <td>Uživatel</td>
-    <td>Zvláštní Dynamics 365 uživatelům operací</td>
+    <td>Konkrétní uživatelé aplikace Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
-    <li><strong>k dispozici uživatelům</strong> seznam obsahuje všechny Dynamics 365 uživatelům operací. Vyberte uživatele, kterým chcete odeslat oznámení, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    <li>Seznam <strong>Dostupní uživatelé</strong>: obsahuje všechny uživatele aplikace Dynamics 365 for Operations. Vyberte uživatele, kterým chcete odeslat oznámení, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -328,8 +328,8 @@ Tento postup použijte, pokud je ruční úkol nutné dokončit v určitém čas
 1.  V levém podokně klepněte na tlačítko **Pokročilá nastavení**.
 2.  Označte pole **Nastavit časový limit pro prvek workflowu**.
 3.  V poli **Trvání** upřesněte, kdy má být úloha dokončena. Vyberte některou z následujících možností:
-    -   **Hodiny** – zadejte počet hodin, které musí být úkol dokončen v. Pak vyberte kalendář, který vaše organizace používá, a zadejte informace o pracovním týdnu vaší organizace.
-    -   **Dny** – zadejte počet dní, které musí být úkol dokončen v. Pak vyberte kalendář, který vaše organizace používá, a zadejte informace o pracovním týdnu vaší organizace.
+    -   **Hodiny** – zadejte počet hodin, během kterých má být úkol dokončen. Pak vyberte kalendář, který vaše organizace používá, a zadejte informace o pracovním týdnu vaší organizace.
+    -   **Dny** – zadejte počet dnů, během kterých má být úkol dokončen. Pak vyberte kalendář, který vaše organizace používá, a zadejte informace o pracovním týdnu vaší organizace.
     -   **Týdny** – zadejte počet týdnů, během kterých má být úkol dokončen.
     -   **Měsíce** – vyberte den a týden, do kdy má být úkol dokončen. Můžete například požadovat, aby byl úkol dokončen do třetího pátku v daném měsíci.
     -   **Roky** – vyberte den, týden a měsíc, do kdy má být úkol dokončen. Můžete například požadovat, aby byl úkol dokončen do třetího pátku v prosinci.

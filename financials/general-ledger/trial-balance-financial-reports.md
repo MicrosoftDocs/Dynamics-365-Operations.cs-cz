@@ -1,6 +1,6 @@
 ---
 title: "Finanční sestavy předvah"
-description: "Tento článek popisuje výchozí sestavy pro zkušební zůstatky. Popisuje také stavební bloky, které jsou přidruženy k tyto zprávy a jak je možné upravit zprávy splňují požadavky vašeho podniku."
+description: "Tento článek popisuje výchozí sestavy pro předvahy. Popisuje také stavební bloky, které jsou přidruženy k těmto sestavám, a způsob změn sestav tak, aby odpovídaly vašim obchodním požadavkům."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje výchozí sestavy pro zkušební zůstatky. Popisuje také stavební bloky, které jsou přidruženy k tyto zprávy a jak je možné upravit zprávy splňují požadavky vašeho podniku. 
+Tento článek popisuje výchozí sestavy pro předvahy. Popisuje také stavební bloky, které jsou přidruženy k těmto sestavám, a způsob změn sestav tak, aby odpovídaly vašim obchodním požadavkům. 
 
 <a name="default-trial-balance-reports"></a>Výchozí finanční sestavy předvah
 -----------------------------
@@ -54,7 +54,7 @@ Finanční sestavy předvahy používají následující stavební bloky.
 
 ### <a name="row-definition"></a>Definice řádku
 
-Definice řádku předvaha – výchozí nastavení, obsahuje jediný řádek, který žádá o všech hlavních účtů. Z toho vyplývá, že každý může generovat sestavu bez nutnosti provádět změny. Při zobrazení sestavy přejděte do jednoho řádku a podívejte se na podrobnosti o jednotlivých účtech. Definici řádku můžete upravit tak, aby obsahovala více podrobností. Chcete-li změnit řádek definice Předvaha – výchozí, aby obsahoval řádky všech účtů, postupujte takto.
+Definice řádku, předvaha – výchozí nastavení, obsahuje jediný řádek, který se shromažďuje ve všech hlavních účtech. Z toho vyplývá, že každý může generovat sestavu bez nutnosti provádět změny. Při zobrazení sestavy přejděte do jednoho řádku a podívejte se na podrobnosti o jednotlivých účtech. Definici řádku můžete upravit tak, aby obsahovala více podrobností. Chcete-li změnit řádek definice Předvaha – výchozí, aby obsahoval řádky všech účtů, postupujte takto.
 
 1.  Klikněte na tlačítko **Upravit** a poté klikněte na tlačítko **Vložit řádky z dimenzí**. Příkaz **Vložit řádky z dimenzí** umožňuje vybrat dimenze, které mají být v definici řádku. Pro tuto definici řádku použijete **hlavní účet**.
 2.  Ujistěte se, že **hlavní účet** obsahuje všechny ampersandy (&), a klikněte na tlačítko **OK**.
@@ -103,11 +103,11 @@ Každá sestavu předvahy používá jinou definici sloupců. Tyto definice slou
 <a name="see-also"></a>Viz také
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Finanční výkaznictví](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Zobrazení finančních sestav](view-financial-reports.md)
 
-[Finanční vykazování blogu Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Blog o finančním výkaznictví v Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

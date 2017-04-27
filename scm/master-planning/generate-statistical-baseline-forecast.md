@@ -1,5 +1,5 @@
 ---
-title: "Generovat statistické základní prognózy"
+title: "Generování statistické základní prognózy"
 description: "Tento článek obsahuje informace o parametrech a filtrech, které se používají při výpočtu prognózy poptávky."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="generate-a-statistical-baseline-forecast"></a>Generovat statistické základní prognózy
+# <a name="generate-a-statistical-baseline-forecast"></a>Generování statistické základní prognózy
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,26 +35,26 @@ Tento článek obsahuje informace o parametrech a filtrech, které se používaj
 
 Při vytváření základní prognózy musíte nejprve zadat parametry a filtry, které jsou použity ve výpočtu. Můžete například vytvořit základní prognózu poptávky odhadující poptávku v závislosti na datech transakcí z minulého roku pro konkrétní společnost, příští měsíc a pro vybranou skupinu položek. 
 
-Chcete-li generovat prognózy poptávky, přejděte na **Master planning &gt;Prognóza &gt;prognózy poptávky &gt;generovat statistické základní prognózy**. 
+Pro generování prognózy poptávky přejděte na **Hlavní plánování &gt; Prognózování &gt; Prognóza poptávky &gt; Generovat statistickou základní prognózu**. 
 
 Během generování předpovědi lze vybrat interval prognózy. Dostupné hodnoty jsou Den, Týden a Měsíc. 
 
 Počet intervalů prognóz pro generování prognózy je nastaven v poli** Horizont prognózy**. 
 
-Pokud je strategie prognózy nastavena na **Kopírování mezi historickými poptávkami**, konec historického horizontu je ignorován. Systém zkopíruje počet bloků podle **horizontu prognózy** prognózy poptávky, počínaje datem v poli **ode** pod řádkem **historického obzoru**. Díky zkopírování historické poptávky z určitého data dopředu může plánovač výroby vytvořit plán pro další čtvrtletí, a to dvěma způsoby:
+Pokud je strategie prognózy nastavena na **Kopírování mezi historickými poptávkami**, konec historického horizontu je ignorován. Systém zkopíruje počet intervalů uvedených v poli **Horizont prognózy** do prognózy poptávky, začínaje datem v poli **Od data** v nabídce **Historický horizont**. Díky zkopírování historické poptávky z určitého data dopředu může plánovač výroby vytvořit plán pro další čtvrtletí, a to dvěma způsoby:
 
 -   Zkopírováním poptávky ze stejného čtvrtletí z minulého roku.
 -   Zkopírováním poptávky z předchozího čtvrtletí.
 
 Aby se zabránilo nejasnostem v plánování výroby, může být určitý počet intervalů prognóz zamrazen. Tento počet je nastaven v poli **Ochranná doba zablokování**. Na stránce **Upravená prognóza poptávky **jsou buňky pro zmrazené období zakázány a poskytují tak vizuální označení, že by tyto hodnoty neměly být změněny. 
 
-Datum zahájení pro základní prognózu poptávky nemusí být aktuální datum ani datum v budoucnosti. Pro nastavení jiného počátečního data lze používat pole **Datum zahájení základní prognózy – počáteční datum**. Například v červnu mohou uživatelé generovat prognózu pro příští rok. Vzhledem k tomu, že intervaly prognóz mezi koncem historické poptávky a zahájením základní poptávky chybí, nemusí být předpovědi přesné. Pokud používáte služeb Microsoft Dynamics 365 operace poptávky prognózy služby, jsou čtyři způsoby, ve kterých můžete vyplnit chybějící mezery. Můžete zvolit způsob, který má nastavení chybějící\_hodnoty\_nahrazení parametru **parametry prognózy poptávky** stránky. 
+Datum zahájení pro základní prognózu poptávky nemusí být aktuální datum ani datum v budoucnosti. Pro nastavení jiného počátečního data lze používat pole **Datum zahájení základní prognózy – počáteční datum**. Například v červnu mohou uživatelé generovat prognózu pro příští rok. Vzhledem k tomu, že intervaly prognóz mezi koncem historické poptávky a zahájením základní poptávky chybí, nemusí být předpovědi přesné. Pokud používáte službu prognózy poptávky aplikace Microsoft Dynamics 365 for Operations, máte k dispozici čtyři způsoby, jak vyplnit chybějící mezery. Můžete zvolit požadovanou metodu nastavením parametru MISSING\_VALUE\_SUBSTITUTION na stránce **Parametry tvorby prognóz poptávky**. 
 
-**Počáteční datum prognózy základní** - **ode** pole má být nastavena na začátku prognózy plechovka, například ve Spojených státech, neděle Pokud prognózy blok je v týdnu. Systém automaticky upraví **počáteční datum prognózy podle směrného plánu** - **ode** pole odpovídající začátku prognózy plechovka. 
+Pole **Datum zahájení základní prognózy** - **počáteční datum** musí být nastaveno na začátek intervalu prognózy, například v USA na neděli, pokud je interval prognózy nastaven na týden. Systém automaticky nastaví pole **Datum zahájení základní prognózy** - **počáteční datum** tak, aby odpovídalo začátku intervalu prognózy. 
 
-**Počáteční datum prognózy podle směrného plánu** - **ode** nastaveno na datum v minulosti. Jinak řečeno lze generovat prognózu poptávky v minulosti. To je užitečné, protože to umožňuje ladit parametry služby prognózy tak, aby statistická prognóza generovaná v minulosti odpovídala skutečné historické poptávce. Uživatelé pak mohou pokračovat v používání těchto parametru pro vygenerování statistické základní prognózy do budoucna. 
+Pole **Datum zahájení základní prognózy** - **počáteční datum** lze nastavit na datum v minulosti. Jinak řečeno lze generovat prognózu poptávky v minulosti. To je užitečné, protože to umožňuje ladit parametry služby prognózy tak, aby statistická prognóza generovaná v minulosti odpovídala skutečné historické poptávce. Uživatelé pak mohou pokračovat v používání těchto parametru pro vygenerování statistické základní prognózy do budoucna. 
 
-Ruční úpravy provedené v předchozích iteracích prognózy poptávky lze automaticky použít v nové základní prognóze, označíte- li pole **Přeneste ruční úpravy do prognózy poptávky**. Pokud je zaškrtnutí políčka zrušeno, ruční úpravy nebudou do základní prognózy přidány, ale nejsou odstraněny. Ruční úpravy provedené v prognóze lze odstranit pouze v okamžiku importu prognózy, a to zrušením označení pole **Uložit ruční úpravy provedené v základní prognóze poptávky**. Ruční úpravy jsou uloženy v době autorizace. Proto pokud uživatel provádí ruční úpravy Prognóza, ale není povolit zpět do 365 Dynamics pro operace prognózy, změny budou ztraceny. Další informace o ruční úpravy a jejich funkce, viz [autorizace upravené prognóze](authorize-adjusted-forecast.md). 
+Ruční úpravy provedené v předchozích iteracích prognózy poptávky lze automaticky použít v nové základní prognóze, označíte- li pole **Přeneste ruční úpravy do prognózy poptávky**. Pokud je zaškrtnutí políčka zrušeno, ruční úpravy nebudou do základní prognózy přidány, ale nejsou odstraněny. Ruční úpravy provedené v prognóze lze odstranit pouze v okamžiku importu prognózy, a to zrušením označení pole **Uložit ruční úpravy provedené v základní prognóze poptávky**. Ruční úpravy jsou uloženy v době autorizace. Z toho vyplývá, že pokud uživatel provede ruční úpravy prognózy, ale neprovede autorizaci prognózy zpět v aplikaci Microsoft Dynamics 365 for Operations, změny budou ztraceny. Další informace o ručních úpravách a jejich průběhu naleznete v tématu [Autorizace upravené prognózy](authorize-adjusted-forecast.md). 
 
 Generování prognózy poptávky může mít název a komentáře, které usnadní uživatelům identifikovat prognózu, která byla vygenerována. Tyto hodnoty jsou zobrazeny v historii generování předpovědi na stránce **Historie generování statistické základní prognózy**. 
 
@@ -62,16 +62,16 @@ Vnitropodniková plánovací skupina, alokační klíče položky a dalších fi
 
 **Tip**: v některých případech mohou uživatelé obdržet chyby při generování prognózy poptávky, nebo se generování předpovědi dokončí bez relačního protokolu. K tomu může dojít z důvodu přebývajících dat v dotazu, která byla dříve použita pro generování předpovědi. Chcete-li tento problém vyřešit, klepněte na tlačítko **Vybrat** a otevřete tak stránku **Dotaz**, klepněte na **Vynulovat** a potom znovu vytvořte základní prognózu. 
 
-Pokud prognózy nejsou generovány pro velkou sadu položek, ale, například pro jednu položku nebo jednu položku Alokační klíč najednou, pak chcete-li získat lepší výkon, můžete vybrat **použití požadavek odpověď režim** políčko na **hlavního plánování prognózy poptávky - Setup -** - **poptávky prognózy parametry - Azure Machine Learning** kartu.
+Pokud se prognóza nevygeneruje pro velkou sadu položek, ale například vždy jen pro jednu položku nebo jeden alokační klíč položky, bude pro dosažení lepšího výkonu nutné označit pole **Použít režim odpovědi na požadavek** na kartě **Hlavní plánování – nastavení – prognóza poptávky** - **Parametry tvorby prognóz poptávky - Azure Machine Learning**.
 
 <a name="see-also"></a>Viz také
 --------
 
-[Demand forecasting setup](demand-forecasting-setup.md)
+[Nastavení prognózy poptávky](demand-forecasting-setup.md)
 
-[Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+[Ruční úpravy základní prognózy](manual-adjustments-baseline-forecast.md)
 
-[Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+[Autorizování upravené prognózy](authorize-adjusted-forecast.md)
 
 
 

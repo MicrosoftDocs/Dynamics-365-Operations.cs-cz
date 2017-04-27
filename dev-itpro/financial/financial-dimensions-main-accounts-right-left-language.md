@@ -35,7 +35,7 @@ Finanční dimenze a hlavní účty jsou klíčové součásti fázi plánován�
 
 ### <a name="best-practices-for-setting-up-financial-dimensions-and-main-accounts-in-a-right-to-left-system"></a>Doporučené postupy při nastavování finančních dimenzí a hlavních účtů v systému zprava doleva
 
--   Při výběru oddělovač pro grafy účty vyberte jednu z možností dvojité oddělovač: dvojité pomlčky (-), dvě čáry (|) nebo dvojité tečka (.) nebo dvojité podtržítko (\_\_).
+-   Vyberete-li oddělovač účtové osnovy, vyberte jednu z možností dvojího oddělovače: dvojitá pomlčka (-–), dvě čáry (||), dvě tečky (..) nebo dvojnásobné podtržení (\_\_).
 -   Když vytvoříte finanční dimenzi a hodnoty hlavního účtu, použijte pouze číslice a znaky zprava doleva.
 -   Nepoužívejte vybrané oddělovače účtové osnovy ve finanční dimenzi a hodnotách hlavního účtu.
 

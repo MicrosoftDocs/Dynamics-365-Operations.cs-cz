@@ -51,7 +51,7 @@ Můžete nastavit proces pracovního postupu pro nákupní žádanku a směrovat
 
 Následující diagram znázorňuje stavy, které jsou přiřazeny nákupnímu požadavku a řádku nákupní žádanky při procházení skrze proces workflowu.  
 
-[![Nákupní žádanky záhlaví a řádek stavy](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Záhlaví nákupní žádanky a stavy řádku](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>Záhlaví nákupního požadavku vztahy stavů řádku
 
@@ -80,7 +80,7 @@ Celkový stav nákupní žádanky se řídí stavem řádků nákupní žádanky
 <td>Je-li workflow konfigurován pro směrování řádků nákupního požadavku jednotlivým kontrolorům, každý řádek může mít stav <strong>Kontrolované</strong> nebo <strong>Odmítnuto</strong>. Stav nákupního požadavku se aktualizuje po dokončení procesu kontroly pro všechny řádky nákupního požadavku, a pokud nezbývají žádné kroky kontroly pro nákupní žádanku.
 <ul>
 <li><strong>Probíhá kontrola</strong> – řádky nákupního požadavku byly odeslány ke kontrole. Po dokončení procesu workflowu pro řádek nákupního požadavku zůstane stav daného řádku <strong>Kontrolované</strong>, dokud všechny zbývající řádky nákupního požadavku nebudou zkontrolovány.</li>
-<li><strong>Odmítl</strong> – byl odmítnut řádek nákupní žádanky. Řádky nákupní žádanky, které jsou odmítnuty lze upravit a znovu odeslat.</li>
+<li><strong>Odmítnuto</strong> – řádek nákupní žádanky byl odmítnut. Nákupní žádanka a řádky nákupní žádanky, které jsou odmítnuty, je možné upravit a znovu odeslat.</li>
 </ul>
 Pokud znovu odešlete řádek nákupní žádanky, který byl zamítnut, proces kontroly začne znovu pro všechny řádky nákupního požadavku, u kterých stále probíhá kontrola. <strong>Poznámka:</strong> můžete odvolat nákupní požadavek, který již byl odeslán. Když odvoláte nákupní požadavek, jsou odvolány také ostatní řádky nákupního požadavku. Lze odstranit řádky nákupního požadavku, které byly odvolány.</td>
 </tr>
@@ -136,7 +136,7 @@ Pokud znovu odešlete řádek nákupní žádanky, který byl zamítnut, proces 
 Můžete distribuovat náklady na produktu, které jsou zahrnuty do nákupní žádanky, do několika finančních výkazů. Pokud vaše organizace používá dimenze, například nákladová střediska a oddělení, můžete distribuovat náklady na produkt do dimenzí pro finanční účty.
 
 ## <a name="requisition-purposes"></a>Účely žádanky
-Účely žádanky umožňují flexibilnější proces plnění poptávky žádanek. Při vytvoření žádanky k ní můžete přiřadit jeden nebo dva účely: spotřeba nebo doplnění. V závislosti na účelu žádanky a nastavení vaší organizace žádanku požadavek lze splnit nákupní objednávky, objednávky transferu, výrobní zakázky nebo kanbanu.  
+Účely žádanky umožňují flexibilnější proces plnění poptávky žádanek. Při vytvoření žádanky k ní můžete přiřadit jeden nebo dva účely: spotřeba nebo doplnění. V závislosti na účelu žádanky a způsobu nastavení vaší organizace lze poptávku žádanky naplnit pomocí nákupní objednávky, objednávky přenosu, výrobní zakázky nebo kanbanové úlohy.  
 
 V rámci zásad zásobování můžete určit účely žádanky, které budou dostupné při vytvoření žádanky pro vaši organizaci.
 
@@ -155,7 +155,7 @@ Jestliže chcete použít nákupní žádanky s účelem doplnění, hlavní pl�
 ## <a name="purchase-requisitions-and-requests-for-quotation"></a>Nákupní žádanky a požadavky na nabídku
 V některých případech je nutné spustit zpracování požadavku na nabídku pro identifikaci dodavatele a ceny produktů, které jsou vyžadovány v nákupní žádance. Požadavek na nabídku lze generovat, když je nákupní požadavek v kontrole. Při přijetí nabídky se informace týkající se dodavatele, ceny a tak dále převedou do požadavku.  
 
-Nákupní žádanku na blokování můžete vložit výběrem **na blokování** políčko na **podrobnosti nákupní žádanky** stránky. Zpracování nákupní žádanky můžete pokračovat až poté, co odstraníte zrušením zaškrtnutí políčka blokování.  
+Nákupní žádanku můžete zablokovat vložit výběrem políčka **Blokování** na stránce **Podrobnosti nákupní žádanky**. Zpracování nákupní žádanky můžete pokračovat až poté, co blokování odstraníte zrušením zaškrtnutí políčka.  
 
 **Poznámka:** v e-zásobování mohou požadavky na nabídku pro vaši nákupní žádanku povolit dodavatelům přidávat řádky alternativy. V tomto případě nákupní požadavek bude odpovídat schváleným alternativám.
 
@@ -195,9 +195,9 @@ Pokud chcete konsolidovat schválené řádky nákupní žádanky, postupujte ta
 <a name="see-also"></a>Viz také
 --------
 
-[Vytvoření požadavků pro spotřebu (úkol guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Vytvořeni požadavku na využití (Průvodce záznamem úloh)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
-[Purchase requisition workflow](purchase-requisitions-workflow.md)
+[Workflow nákupní žádanky](purchase-requisitions-workflow.md)
 
 
 

@@ -94,10 +94,10 @@ Pokud uživatel není spokojen, že se platební sleva přiděluje napříč vš
 
 |             |                  |              |                 |           |            |                 |                    |
 |-------------|------------------|--------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Doklad** | **Typ účtu** | **Účet**  | **Popis** | **Má Dáti** | **Kreditní** | **Offset type** | **Offset account** |
-| GNJL001     | Dodavatel           | 1 001         | INV1            |           | 100,00     | Hlavní kniha          | &lt;prázdné&gt;      |
-| GNJL001     | Hlavní kniha           | 606300-001-- | INV1            |   50,00   |            | Hlavní kniha          | &lt;prázdné&gt;      |
-| GNJL001     | Hlavní kniha           | 606300-002-- | INV1            |   50,00   |            | Hlavní kniha          | &lt;prázdné&gt;      |
+| **Doklad** | **Typ účtu** | **Účet**  | **Popis** | **Má Dáti** | **Kreditní** | **Typ odsazení** | **Protiúčet** |
+| GNJL001     | Dodavatel           | 1 001         | INV1            |           | 100,00     | Hlavní kniha          | &lt;Nevyplněné&gt;:      |
+| GNJL001     | Hlavní kniha           | 606300-001-- | INV1            |   50,00   |            | Hlavní kniha          | &lt;Nevyplněné&gt;:      |
+| GNJL001     | Hlavní kniha           | 606300-002-- | INV1            |   50,00   |            | Hlavní kniha          | &lt;nevyplněné&gt;:      |
 | GNJL002     | Dodavatel           | 1 001         | INV2            |           | 200,00     | Hlavní kniha          | 606300-003--       |
 | GNJL003     | Dodavatel           | 1 001         | INV3            |           | 300,00     | Hlavní kniha          | 606300-004--       |
 

@@ -1,6 +1,6 @@
 ---
-title: "Nastavení komponent úlohy"
-description: "Toto téma popisuje rámcové prvky, že úloha může obsahovat a obsahuje příklady použití těchto prvků v organizaci."
+title: "Nastavení komponent pracovní pozice"
+description: "Toto téma popisuje rámcové prvky, které může práce obsahovat, a poskytuje příklady použití těchto prvků v organizaci."
 author: rschloma
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,41 +25,41 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="setting-up-the-components-of-a-job"></a>Nastavení komponent úlohy
+# <a name="setting-up-the-components-of-a-job"></a>Nastavení komponent pracovní pozice
 
 [!include[banner](includes/banner.md)]
 
 
-Toto téma popisuje rámcové prvky, že úloha může obsahovat a obsahuje příklady použití těchto prvků v organizaci. 
+Toto téma popisuje rámcové prvky, které může práce obsahovat, a poskytuje příklady použití těchto prvků v organizaci. 
 
-Před vytvořením úlohy, musíte nastavit některé referenční informace. Můžete vytvořit úlohu, která má pouze název. Však zahrnutím dalších informací, například název projektu, můžete zadat výchozí hodnoty pro pozice, které jsou přiřazeny k projektu. Navíc některé informace, které zadáte můžete použít k filtrování plánů vyrovnání určitých projektů. Pokud chcete nastavit nároku, který slouží k filtrování plány kompenzace na konkrétní práci, by nastavíte pracovní funkce a typy úloh před nastavit úlohy. Tím, že tyto výchozí hodnoty, které jsou k dispozici, ušetříte čas při přidávání pozic k projektu. 
+Než budete moci vytvořit práce, musíte nastavit některé referenční informace. Můžete vytvořit práci, která má pouze název. Když však zahrnete další informace, například název pracovní pozice, poskytnete výchozí hodnoty pozice, které jsou přiřazeny k práci. Navíc některé informace, které zadáte, mohou být použity k filtrování plánů kompenzací pro konkrétní práce. Pokud chcete nastavit nárok, který slouží k filtrování plánů kompenzace pro konkrétní práci, měli byste nastavit pracovní funkce a typy prací předtím, než nastavíte práce. Tím, že tyto výchozí hodnoty budete mít k dispozici, ušetříte čas při přidávání pozic k práci. 
 
-Některé podrobnosti úlohy, jako je například název úlohy, typ a funkce, jsou skutečná data. Vytvořit úlohu dnes ale Nepřidávat tyto podrobnosti později a poté prohlédněte úlohy, jako je datum vytvoření, nezobrazí se tyto podrobnosti. Proto je třeba vytvořit některé referenční informace dříve, než jej vyžadují. Tímto způsobem můžete přidat informace do nové úlohy při jejich vytváření.
+Některé podrobnosti o práci, jako je například název pracovní pozice, typ a funkce, platí od data zadání. Pokud vytvoříte práci dnes a přidáte tyto podrobnosti až později, tyto podrobnosti se nezobrazí, když si zobrazíte práci k datu jejího vytvoření. Proto je třeba vytvořit některé referenční informace dříve, než je budete potřebovat. Tímto způsobem můžete přidat informace do nových prací při jejich vytváření.
 
-## <a name="job-titles"></a>Pracovní pozice
+## <a name="job-titles"></a>Názvy pracovních pozic
 Před vytvořením úloh musíte nastavit názvy pro tyto úlohy. Pozice dědí názvy úloh z úloh, ke kterým jsou pozice přiřazeny. 
 
-Udržovat pracovní pozice pomocí **názvy** stránky, které lze otevřít pomocí funkce Hledat. Na ** titulky ** zadejte názvy, které budete používat pro vaše projekty.
+Udržujte názvy pracovních pozic pomocí stránky **Pozice**, kterou lze otevřít pomocí funkce hledání. Na stránce ** Pozice ** zadejte názvy, které budete používat pro vaše práce.
 
 ## <a name="job-types"></a>Typ úloh
-Typy úloh slouží k seskupení podobných úloh do kategorií. Typy úloh nejsou povinné. Však pokud máte v úmyslu použít typy úloh při nastavování pravidel způsobilosti pro správu kompenzace, je třeba před nastavením úloh nastavit také typy úloh. Příklady typů úloh jsou na plný úvazek a částečný úvazek nebo plat a hodinové mzdy. Spravovat typy úloh pomocí **projektu typy** stránky. Na **projektu typy** stránky, zadejte název a stručný popis pro typ projektu. V **stav osvobodit** pole, vyberte jednu z následujících možností pro označení spravedlivé mzdové normy zákona (FLSA) osvobození od stavu úloh, které mají tento typ práce:
+Používáte typy prací pro seskupení podobných pozic do kategorií. Typy práce nejsou vyžadovány. Však pokud máte v úmyslu použít typy úloh při nastavování pravidel způsobilosti pro správu kompenzace, je třeba před nastavením úloh nastavit také typy úloh. Některé příklady typů prací jsou na plný úvazek a částečný úvazek, nebo plat a hodinové mzda. Typy práce udržujte pomocí stránky **Typy práce**. Zadejte název a stručný popis typu pozice na stránce **Typy práce**. V poli **Stav osvobození** vyberte jednu z následujících možností pro označení stavu osvobození od zákona Fair Labor Standards Act (FLSA) pro práce, které mají tento typ práce:
 
--   **Osvobození od** – úlohy jsou vyjmuty z přesčasů podle FLSA.
--   **Nevyňaté** – úlohy nejsou vyjmuty z přesčasů podle FLSA.
--   **Nelze použít** – pokrytí FLSA není použitelná.
+-   **Osvobozené** – Práce jsou vyjmuty z přesčasů podle zákona FLSA.
+-   **Neosvobozené** – Práce nejsou vyjmuty z přesčasů podle zákona FLSA.
+-   **Nelze použít** – pokrytí zákonem FLSA není možné.
 
 ## <a name="job-functions"></a>Pracovní funkce
-Úloha křižovatkách popisují vysoké úrovni funkčních kategorií a vysoké úrovně cla vztahují. Pracovní funkce nejsou povinné. Pracovní funkce a typy úloh, můžete použít k filtrování plánů vyrovnání určitých projektů. Můžete přidružit pracovní funkce a typy úloh plány kompenzace nastavením pravidel způsobilosti na **pravidla způsobilosti** stránky. Sada úrovní lze potom připojit k plánu kompenzace, který platí pro určité kombinace typu úlohy a pracovní funkce, kterou jste definovali pomocí pravidlo způsobilosti. (Tyto funkce lze použít pro plány fixní kompenzace a plány variabilní kompenzace.) Nicméně pokud plánujete použít funkci při nastavování pravidel způsobilosti pro správu kompenzace, by nastavíte pracovní funkce před nastavit úlohy. V následující tabulce jsou uvedeny příklady pracovních funkcí.
+Křižovatky prací popisují funkční kategorie vysoké úrovně a vztahují se k povinnostem vysoké úrovně. Pracovní funkce nejsou vyžadovány. Pracovní funkce můžete používat spolu s typy práce k filtrování plánů kompenzace pro konkrétní práce. Přiřazení pracovních funkcí a typů práce k plánům kompenzace se provádí nastavením pravidel nároku na stránce **Pravidla způsobilosti**. K plánu kompenzace lze také přiřadit sadu úrovní, které se uplatní pro určité kombinace typu úlohy a pracovní funkce, které jste definovali v pravidlu nároku. (Tyto funkce platí jak pro fixní, tak pro variabilní kompenzační plány. Pokud však chcete použít pracovní funkce při nastavování pravidel nároku pro správu kompenzací, doporučujeme nastavit pracovní funkce ještě před nastavením prací. V následující tabulce jsou uvedeny některé příklady pracovních funkcí.
 
 | Práce           | Pracovní funkce         |
 |---------------|----------------------|
-| Manažer prodeje | Správce střední úrovně    |
-| Účetní    | Odborníci v oblasti IT        |
+| Manažer prodeje | Manažer střední úrovně    |
+| Účetní    | Profesionálové        |
 
-Udržovat pracovní funkce pomocí **funkcí úkolu** stránky. Na **funkcí úkolu** zadejte identifikační kód a stručný popis pracovní funkce.
+Pracovní funkce udržujte pomocí stránky **Pracovní funkce**. Zadejte identifikační kód a stručný popis pro pracovní funkci **Pracovní funkce**.
 
 ## <a name="job-tasks"></a>Pracovní úkoly
-Úlohy jsou popsány základní úlohy, které musí pracovník, který je v pozici pro práci dokončit. Stejnou úlohu lze přidat více úloh a pozic pro úlohy, které používají tyto úlohy. V následující tabulce jsou uvedeny příklady úkolů.
+Pracovní úkoly popisují základní úlohy, které musí pracovník na této pracovní pozici dokončit. Stejný pracovní úkol lze přidat do více prací a do pozic pro práce, které používají tyto pracovní úkoly. V následující tabulce jsou uvedeny některé příklady pracovních úkolů.
 
 <table>
 <thead>
@@ -72,21 +72,21 @@ Udržovat pracovní funkce pomocí **funkcí úkolu** stránky. Na **funkcí úk
 <tr class="odd">
 <td>Manažer prodeje</td>
 <td><ul>
-<li><strong>Přezkoumání perf</strong> – zkontrolovat výkon každého prodejce projektu.</li>
-<li><strong>Přezkoumání Abs</strong> – schválit nebo odmítnout požadavky absencí nebo registrace každého prodejce.</li>
+<li><strong>Zkontrolovat výkon</strong> – zkontrolování výkonu práce jednotlivých prodejců.</li>
+<li><strong>Kontrola absence</strong> – schválení nebo odmítnutí požadavků nebo registrace absence jednotlivých prodejců.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Účetní</td>
-<td><strong>Zpráva FIN</strong> – týdenní finanční výkazy předložit finanční ředitel.</td>
+<td><strong>Finanční sestava</strong> – předložení týdenních finančních sestav vedoucímu finančního oddělení.</td>
 </tr>
 </tbody>
 </table>
 
-Spravovat úlohy pomocí **úlohy** stránky. Na **úlohy** stránky, zadejte název a popis úlohy. V **Poznámka:** pole, můžete volitelně zadat další informace. Poznámky mohou být aktualizovány na určitém projektu beze změny poznámky, které jste zadali v tomto poli.
+Pracovní úkoly udržujte pomocí stránky **Pracovní úkoly**. Zadejte název a popis pracovního úkolu na stránce **Pracovní úkoly**. Do pole **Poznámka** můžete volitelně zadat další informace. Poznámky mohou být aktualizovány pro konkrétní práci beze změny poznámek, které jste v tomto poli zadali.
 
 ## <a name="areas-of-responsibility"></a>Oblasti odpovědnosti
-Oblasti odpovědnosti slouží k určení pracovní role, procesy a produkty, které je zodpovědný za pracovníka, který je v umístění pro projekt. Pro úlohu s názvem "Účetní", například jednu oblast odpovědnosti může být "Finanční vykazování pro produkt A." Můžete udržovat pomocí oblasti odpovědnosti **oblasti odpovědnosti** stránky, které lze vyhledat pomocí funkce Hledat. Na **oblasti odpovědnosti** stránky, zadejte název a popis pro odpovědnost. V **Poznámka:** pole, můžete volitelně zadat další informace. Poznámky mohou být aktualizovány na určitém projektu beze změny poznámky, které jste zadali v tomto poli.
+Za pomoci oblastí odpovědnosti můžete určit pracovní role, procesy a produkty, za které je pracovník na dané pozici odpovědný. Například pro práci s názvem „Účetní“ může být oblast zodpovědnosti „Finanční výkaznictví za výrobek A“. Udržujte oblasti odpovědnosti pomocí stránky **Oblasti odpovědnosti**, kterou lze vyhledat pomocí funkce vyhledávání. Zadejte název a stručný popis odpovědnosti na stránce **Oblasti odpovědnosti**. Do pole **Poznámka** můžete volitelně zadat další informace. Poznámky mohou být aktualizovány pro konkrétní práci beze změny poznámek, které jste v tomto poli zadali.
 
 
 

@@ -43,7 +43,7 @@ Jsou-li položky Deník faktur nebo Nákupní objednávky v modulu Závazky urč
 
 Pro nabytí zaúčtované pomocí Skladového deníku dlouhodobého majetku v modulu Hlavní kniha není dlouhodobý majetek zakoupen z externích zdrojů, ale převeden z vlastních zásob společnosti. Z toho důvodu je protiúčet účtem skladového výdeje pro skladové položky v modulu Správa zásob.
 
-Další informace naleznete v tématu [získání majetku prostřednictvím zadávání veřejných zakázek](acquire-assets-procurement.md).
+Další informace naleznete v tématu [Pořízení majetku pomocí zásobování](acquire-assets-procurement.md).
 
 
 

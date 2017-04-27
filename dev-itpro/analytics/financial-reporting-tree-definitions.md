@@ -52,7 +52,7 @@ Definice stromu výkaznictví obsahuje sloupce popsané v následující tabulce
 
 | Sloupec sestavy výkaznictví | popis|
 |---|---|
-| Společnost               | Název společnosti pro jednotku výkaznictví. **@ANY**Hodnotu, která je obvykle přiřazena pouze na souhrnné úrovni, umožňuje vykazování stromu pro všechny společnosti. Všechny podřízené větve mají přiřazenou společnost.|
+| Společnost               | Název společnosti pro jednotku výkaznictví. Hodnota **@ANY**, která je obvykle přiřazena pouze na úrovni souhrnu, umožňuje strom výkaznictví používat pro všechny společnosti. Všechny podřízené větve mají přiřazenou společnost.|
 | Název jednotky             | Kód identifikující tuto jednotku výkaznictví v grafickém stromu výkaznictví. Nezapomeňte vytvořit jedinečný systém kódování, který je konzistentní, a které bude snadno pochopitelný pro uživatele. |
 | Popis jednotky      | Název jednotky výkaznictví se zobrazí v záhlaví nebo zápatí sestavy, když zadáte hodnotu **UnitDesc** jako kód na kartě **Záhlaví a zápatí** v definici sestavy. Nadpis se zobrazí v sestavě v řádku popisu, pokud zadáte hodnotu **UnitDesc** do buňky **Popis** v definici řádku.|
 | Dimenze            | Jednotka výkaznictví, která získává informace přímo z finančních dat. Definuje logické umístění a délky pro účet a související segmenty. Každý řádek sestavy musí mít uveden rozměr v tomto sloupci. Dimenzi můžete vložit také do řádku Souhrn jednotky (například pro výdaje, které přímo souvisejí s touto jednotkou). Zadáte-li dimenzi v řádku jednotky souhrnu, účty, které se používají v nadřazených jednotkách nepoužívejte v podřízených jednotkách. Jinak může docházet ke zdvojování částek.|
@@ -61,15 +61,15 @@ Definice stromu výkaznictví obsahuje sloupce popsané v následující tabulce
 | Externí odkaz         | Odkaz řádku pro tuto jednotku výkaznictví. Odkazy řádků jsou definovány pro definici řádku k identifikaci sestavy k propojení.|
 | Externí soubor         | Cesta k souboru na listu finančního vykazování, ze kterého se budou získávat data.|
 | Možnosti stránky          | Tento sloupec určuje, zda jsou potlačeny informace zpravodajské jednotky při zobrazení nebo tisku sestavy.|
-| % shrnutí              | Procento jednotky výkaznictví, které má být přiděleno nadřazené jednotce. Procento, které zadáte v tomto sloupci, se vztahuje na každý řádek definice řádku před přidáním hodnoty řádku do nadřazené sestavy. Například pokud má být podřízená jednotka rozdělena rovnoměrně mezi dvě oddělení, částky na každém řádku budou vynásobeny 50 procenty před přidáním hodnoty do sestavy oddělení. Jedna jednotka výkaznictví nemůže mít dvě nadřazené jednotky. Přidělit částky z jednotky výkaznictví do dvou nadřazených jednotek můžete vytvořením jiné jednotky výkaznictví se stejnou dimenzí k zahrnutí dalších 50 procent. Zadejte celá procenta bez desetinného místa. Například **25** představuje 25procentní přidělení k nadřazené jednotce. Pokud přidáte desetinnou čárku (**.25**), k nadřazené jednotce je přiděleno 0,25 %. Procento, které je menší než % 1, použijte **povolit kumulativní &lt;1 %** možnost v definici sestavy. Tato možnost se nachází na kartě **Další možnosti** v dialogovém okně **Nastavení sestavy**. Přístup k tomuto dialogovému oknu nabízí tlačítko **Jiné** na kartě **Nastavení** v definici sestavy. |
+| % shrnutí              | Procento jednotky výkaznictví, které má být přiděleno nadřazené jednotce. Procento, které zadáte v tomto sloupci, se vztahuje na každý řádek definice řádku před přidáním hodnoty řádku do nadřazené sestavy. Například pokud má být podřízená jednotka rozdělena rovnoměrně mezi dvě oddělení, částky na každém řádku budou vynásobeny 50 procenty před přidáním hodnoty do sestavy oddělení. Jedna jednotka výkaznictví nemůže mít dvě nadřazené jednotky. Přidělit částky z jednotky výkaznictví do dvou nadřazených jednotek můžete vytvořením jiné jednotky výkaznictví se stejnou dimenzí k zahrnutí dalších 50 procent. Zadejte celá procenta bez desetinného místa. Například **25** představuje 25procentní přidělení k nadřazené jednotce. Pokud přidáte desetinnou čárku (**.25**), k nadřazené jednotce je přiděleno 0,25 %. K použití hodnoty menší než jedno procento použijte možnost **Povolit shrnutí &lt;1%** v definici sestavy. Tato možnost se nachází na kartě **Další možnosti** v dialogovém okně **Nastavení sestavy**. Přístup k tomuto dialogovému oknu nabízí tlačítko **Jiné** na kartě **Nastavení** v definici sestavy. |
 | Zabezpečení jednotky         | Omezuje přístup uživatelů a skupin k informacím pro jednotku výkaznictví.|
 | Doplňkový text       | Text, který je zahrnutý do sestavy.|
 
 Pomocí následujících kroků vytvořte definici stromu výkaznictví.
 
 1.  Otevřete Návrhář sestav.
-2.  Klepněte na tlačítko **souboru**&gt;**nové**&gt;**Reporting Definition strom**.
-3.  Klepněte na tlačítko **úprava**&gt;**vložit zpravodajské jednotky z dimenzí**.
+2.  Klikněte na **Soubor** &gt; **Nový** &gt; **Definice stromu výkaznictví**.
+3.  Klikněte na **Upravit** &gt; **Vložit jednotky výkaznictví z dimenzí**.
 4.  V dialogovém okně **Vložit jednotky výkaznictví z dimenzí** zaškrtněte políčka všech dimenzí, které mají být zahrnuty ve stromu výkaznictví. Dialogové okno **Vložit jednotky výkaznictví z dimenzí** obsahuje následující oddíly.
 
     | Sekce                          | Popis                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -88,7 +88,7 @@ Pomocí následujících kroků vytvořte definici stromu výkaznictví.
 
 9.  Pro každou dimenzi v oblasti **Hierarchie a rozsahy segmentů** zopakujte krok 7 a 8.
 10. Po dokončení definování způsobu zanášení jednotek výkaznictví do nového stromu výkaznictví klikněte na tlačítko **OK**.
-11. Klepněte na tlačítko **souboru**&gt;**Uložit** uložit stromu vykazování. Zadejte jedinečný název a popis stromu výkaznictví a klikněte na tlačítko **OK**.
+11. Chcete-li uložit strom výkaznictví, klikněte na **Soubor** &gt; **Uložit**. Zadejte jedinečný název a popis stromu výkaznictví a klikněte na tlačítko **OK**.
 
 ### <a name="open-an-existing-reporting-tree-definition"></a>Otevření existující definice stromu výkaznictví
 
@@ -124,7 +124,7 @@ Můžete změnit uspořádání organizační struktury definice stromu výkazni
 1.  V Návrháři sestav otevřete definici stromu výkaznictví k úpravě.
 2.  V grafickém zobrazení definice stromu výkaznictví vyberte jednotku výkaznictví.
 3.  Přetáhněte jednotku na nové místo. Případně klikněte pravým tlačítkem na jednotku a vyberte možnost **Zvýšit úroveň jednotky výkaznictví** nebo **Snížit úroveň jednotky výkaznictví**.
-4.  Klepněte na tlačítko **souboru**&gt;**Uložit** uložte provedené změny.
+4.  Klepnutím na **Soubor** &gt; **Uložit** uložte změny.
 
 ### <a name="add-text-about-a-reporting-unit"></a> Přidání textu o jednotce výkaznictví
 
@@ -192,7 +192,7 @@ Následující diagram znázorňuje strom výkaznictví zobrazující organizač
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Příklad dialogového okna Vložit jednotky výkaznictví z dimenzí
 
-V následujícím příkladu dialogové okno **Vložit jednotky výkaznictví z dimenzí** obsahuje následující informace. V tomto příkladu vrátí výsledky kombinaci obchodních jednotek, nákladových středisek a oddělení. [![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png) výsledné sestavy definice stromu je seřazen podle organizační jednotky a potom podle nákladové středisko a potom podle oddělení. Je dimenze páté zpravodajské jednotky **organizační jednotka = \[001\], nákladové středisko =\[\], oddělení = \[022\]**a identifikuje zpravodajské jednotky pro účty, které jsou specifické pro organizační jednotku 001 a oddělení 022. [![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+V následujícím příkladu dialogové okno **Vložit jednotky výkaznictví z dimenzí** obsahuje následující informace. V tomto příkladu vrátí výsledky kombinaci obchodních jednotek, nákladových středisek a oddělení. [![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png) Výsledná definice stromu výkaznictví je řazena podle organizační jednotky, potom podle nákladového střediska a nakonec podle oddělení. Dimenze páté jednotky výkaznictví je **Obchodní jednotka = \[001\], Nákladové středisko =\[\], Oddělení = \[022\]**, a identifikuje jednotky výkaznictví pro účty, které jsou specifické pro obchodní jednotku 001 a oddělení 022. [![Strom výkaznictví](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Příklady shrnutí dat
 
@@ -208,7 +208,7 @@ Následující příklady ukazují možné informace, které jsou použity v def
 
 # <a name="see-also"></a>Viz také
 
-[Financial reporting](financial-reporting-intro.md)
+[Finanční výkaznictví](financial-reporting-intro.md)
 
 
 

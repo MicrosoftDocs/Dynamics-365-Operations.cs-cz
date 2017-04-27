@@ -45,7 +45,7 @@ Následující tabulka zobrazuje požadavky, které musí být splněny před po
 | Kategorie            | Předpoklad                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Země / oblast      | Primární adresa právnické osoby musí být v členském státě EU.                                                                                                                                                                                                                                                                                                                    |
-| Související úkoly nastavení | Na stránce **Časové intervaly** nastavte časový interval, který se používá k výpočtu data vystavení faktury. (Klepněte na tlačítko **Finance**&gt;**nastavení financí**&gt;**datum intervalu**.) Na **parametry zahraničního obchodu** stránky, nastavte vlastnosti zahraničního obchodu v různých zemích. (Klepněte na tlačítko **daně**&gt;**nastavení**&gt;**zahraničního obchodu**&gt;**parametry zahraničního obchodu**.) |
+| Související úkoly nastavení | Na stránce **Časové intervaly** nastavte časový interval, který se používá k výpočtu data vystavení faktury. (Klikněte na položky **Hlavní kniha** &gt; **Nastavení knihy** &gt; **Intervaly data**.) Na stránce **Parametry zahraničního obchodu** nastavte vlastnosti zahraničního obchodu pro různé země / oblasti. (Klikněte na **Daň** &gt; **Nastavení** &gt; **Zahraniční obchod** &gt; **Parametry zahraničního obchodu**.) |
 
 ## <a name="invoice-issue-due-date-calculation-rule"></a>Pravidlo pro výpočet data splatnosti pro vystavení faktury
 Můžete použít stránku **Nastavení výpočtu pro datum vystavení faktury** a nastavit pravidlo pro výpočet data vystavení faktury tím, že přiřadíte kód časového intervalu k typu země/oblasti.
@@ -54,17 +54,17 @@ Můžete použít stránku **Nastavení výpočtu pro datum vystavení faktury**
 Můžete nastavit parametry kontroly data, abyste zajistili, že faktury odběratelů a dobropisy pro odběratele jsou generovány během zadaného období po dodání. Tyto parametry v naleznete v části **Kontrola dat faktury** na stránce **Parametry pohledávek**.
 
 ## <a name="example"></a>Příklad
-Nastavit Microsoft Dynamics 365 pro operace pro výpočet faktury problém data splatnosti pro obchod uvnitř EU dodávky patnáctým dnem měsíce následujícího po doručení dodávky, vytvořte datum intervalu kód a výpočet pravidlo, které mají následující nastavení.
+Chcete-li nastavit aplikaci Microsoft Dynamics 365 for Operations tak, aby počítala data vystavení faktur při dodávce v rámci EU vždy patnáctý den měsíce následujícího po dodání, vytvořte kód datového intervalu a pravidlo pro výpočet s následujícími parametry.
 
 ### <a name="date-interval-code"></a>Kód časového intervalu
 
 | Pole                                                           | Hodnota                           |
 |-----------------------------------------------------------------|---------------------------------|
-| Kód časového intervalu                                              | 15 NM                           |
+| Kód časového intervalu                                              | 15-NM                           |
 | Popis                                                     | Patnáctý den následujícího měsíce |
 | Před (ve skupině polí **Do data**)                         | Měsíc                           |
 | Začátek/Konec (ve skupině polí **Do data**)                      | Konec                             |
-| +/- (ve skupině polí **Do data**)                            | září                              |
+| +/- (ve skupině polí **Do data**)                            | 15                              |
 | Dny, měsíce, roky nebo období (ve skupině polí **Do data**) | Dny                            |
 
 ### <a name="invoice-issue-due-date-calculation-rule"></a>Pravidlo pro výpočet data splatnosti pro vystavení faktury
@@ -78,8 +78,8 @@ Nastavit Microsoft Dynamics 365 pro operace pro výpočet faktury problém data 
 ## <a name="next-steps"></a>Další kroky
 Po dokončení nastavení parametrů pro výpočet dat splatnosti pro vystavení faktury můžete vytvořit a zaúčtovat následující transakce a automaticky tak vypočítat a aktualizovat data splatnosti pro vystavení faktur:
 
--   **Prodejní objednávky** – Při vytvoření prodejní objednávky a zaúčtování dodacího listu se vypočítají data splatnosti pro vystavení faktury bude a aktualizují na dodacím listu. Datum splatnosti je vypočítáno na základě v časovém intervalu, který je přidružen země, který je uveden v adrese dodání prodejní objednávky. Po zaúčtování dodacího listu můžete ověřit vydání faktury datum splatnosti v **vydání faktury, datum splatnosti** na **deníku dodacích listů** stránky. (Klepněte na tlačítko **prodeje a marketingu**&gt;**prodeje**&gt;**objednávky dodávky**&gt;**dodací list**.) Všechny dodací listy, které nejsou fakturovány a vydání faktury můžete zobrazit data splatnosti, na **dodací listy, které nebyly fakturovány** stránky. (Klepněte na tlačítko **prodeje a marketingu**&gt;**prodeje**&gt;**objednávka dodávky**&gt;**nefakturované dodací listy**.)
--   **Nákupní objednávky** – Při vytvoření nákupní objednávky a zaúčtování příjemky produktu se vypočítají data splatnosti pro vystavení faktury bude a aktualizují na příjemce produktu. Datum splatnosti je vypočítáno podle časového intervalu, který je přidružen k zemi/regionu určenému v primární adrese dodavatele. Po zaúčtování příjemky produktu můžete zkontrolovat datum vystavení faktury v poli **Datum vystavení faktury** na stránce **Deník příjemek produktů**. (Klepněte na tlačítko **zásobování a zdroje**&gt;**nákupní objednávky**&gt;**příjem produktů**&gt;**příjemky produktu**.) Všechny příjemky produktu, které nejsou fakturovány a vydání faktury můžete zobrazit data splatnosti, na **nefakturované příjemky produktů** stránky. (Klepněte na tlačítko **zásobování a zdroje**&gt;**nákupní objednávky**&gt;**příjem produktů**&gt;**nefakturované příjemky produktů**.)
+-   **Prodejní objednávky** – Při vytvoření prodejní objednávky a zaúčtování dodacího listu se vypočítají data splatnosti pro vystavení faktury bude a aktualizují na dodacím listu. Datum splatnosti je vypočítáno podle časového intervalu, který je přidružen k zemi / oblasti, která je určena v adrese dodání na prodejní objednávce. Po zaúčtování příjemky produktu můžete zkontrolovat datum vystavení faktury v poli **Datum vystavení faktury** na stránce **Deník dodacích listů**. (Klikněte na tlačítko **Prodej a marketing** &gt; **Prodejní objednávka** &gt; **Dopravné objednávky** &gt; **Dodací list**.) Můžete zobrazit všechny dodací listy, které nejsou fakturovány, a jejich data vystavení faktury, na stránce **Nefakturované dodací listy**. (Klikněte na nabídku **Prodeje a marketing** &gt; **Prodejní objednávka** &gt; **Dopravné objednávky** &gt; **Nefakturované dodací listy**.)
+-   **Nákupní objednávky** – Při vytvoření nákupní objednávky a zaúčtování příjemky produktu se vypočítají data splatnosti pro vystavení faktury bude a aktualizují na příjemce produktu. Datum splatnosti je vypočítáno podle časového intervalu, který je přidružen k zemi/regionu určenému v primární adrese dodavatele. Po zaúčtování příjemky produktu můžete zkontrolovat datum vystavení faktury v poli **Datum vystavení faktury** na stránce **Deník příjemek produktů**. (Klepněte na **Zásobování a zdroje** &gt; **Nákupní objednávky** &gt; **Příjem produktů** &gt; **Příjemky produktu**.) Na stránce **Nefakturované příjemky produktů** můžete zobrazit všechny příjemky produktů, které nejsou fakturovány, a jejich data vystavení faktury. (Klikněte na nabídku **Zásobování a zdroje** &gt; **Nákupní objednávky** &gt; **Příjem produktů** &gt; **Nefakturované příjemky produktů**.)
 
 ## <a name="technical-information-for-system-administrators"></a>Technické informace pro správce systému
 Pokud nemáte přístup ke stránkám, které se používají k dokončení úkolů uvedených v tomto článku, obraťte se na správce systému a poskytněte informace, které jsou uvedeny v následující tabulce.
@@ -98,7 +98,7 @@ Pokud nemáte přístup ke stránkám, které se používají k dokončení úko
 <tbody>
 <tr class="odd">
 <td>Configuration Keys</td>
-<td>Klepněte na tlačítko <strong>Správa systému</strong>&gt;<strong>nastavení</strong>&gt;<strong>licence</strong>&gt;<strong>konfigurace licence</strong>. Klikněte na konfigurační klíč <strong>Hlavní kniha</strong>.</td>
+<td>Klikněte na <strong>Správa systému</strong> &gt; <strong>Nastavení</strong> &gt; <strong>Licencování</strong> &gt; <strong>Konfigurace licence</strong>. Klikněte na konfigurační klíč <strong>Hlavní kniha</strong>.</td>
 </tr>
 <tr class="even">
 <td>Role a funkční oprávnění zabezpečení</td>

@@ -40,7 +40,7 @@ Omezení tabulky jsou seznam kombinací hodnoty, které jsou povoleny pro atribu
 
 ### <a name="example-of-a-table-constraint"></a>Příklad omezení tabulky
 
-Tento příklad ukazuje, jak můžete omezit konfiguraci reproduktoru na konkrétní povrchové úpravy skříně a přední kryty. První tabulka obsahuje povrchové úpravy skříně a přední kryty, které jsou obecně dostupné pro konfiguraci. Hodnoty jsou definovány pro ** skříňka dokončit ** a **přední mřížkou** atribut typy.
+Tento příklad ukazuje, jak můžete omezit konfiguraci reproduktoru na konkrétní povrchové úpravy skříně a přední kryty. První tabulka obsahuje povrchové úpravy skříně a přední kryty, které jsou obecně dostupné pro konfiguraci. Hodnoty jsou definovány pro typy atributů Povrch skříňky a **Přední mřížka**.
 
 | Typ atributu | Hodnoty                      |
 |----------------|-----------------------------|
@@ -60,8 +60,8 @@ Následující tabulka zobrazuje kombinace, které jsou definovány omezením ta
 
 Můžete vytvořit omezení tabulek definovaná uživatelem nebo systémem. Další informace naleznete v tématu [Omezení tabulek definovaná uživatelem nebo systémem](system-defined-user-defined-table-constraints.md).
 
-## <a name="what-syntax-should-be-used-to-write-constraints"></a>Syntaxi, která má být použita pro zápis omezení?
-Když píšete omezení, musíte použít syntaxi jazyka OML (Optimization Modeling Language). Systém používá Microsoft Foundation Řešitele omezení Řešitele vyřešit omezení.
+## <a name="what-syntax-should-be-used-to-write-constraints"></a>Jaká syntax se používá pro řešení omezení psaní?
+Když píšete omezení, musíte použít syntaxi jazyka OML (Optimization Modeling Language). Systém používá k řešení omezení produkt Microsoft Solver Foundation.
 
 ## <a name="should-i-use-table-constraints-or-expression-constraints"></a>Mám použít omezení tabulky nebo omezení výrazu?
 Můžete použít omezení výrazu nebo omezení tabulky v závislosti na tom, jak chcete vytvářet omezení. Omezení tabulky vytváříte jako matici, zatímco omezení výrazu je jednotlivý výraz. Při konfiguraci produktu nezáleží na omezení, jaký druh omezení se použije. V následujícím příkladu je znázorněn rozdíl v těchto dvou metodách.  
@@ -81,7 +81,7 @@ Při konfiguraci produktu pomocí následujícího nastavení omezení jsou povo
 
 ### <a name="expression-constraint-setup"></a>Nastavení omezení výrazu
 
-(Barvu == "Black" & (velikost == "30" | velikost == "50")) | (barvu == "Red" & velikost = "20")
+(Barva == "Black" & (size == "30" | size == "50")) | (color == "Red" & size = "20")
 
 ## <a name="should-i-use-operators-or-infix-notation-when-i-write-expression-constraints"></a>Mám používat operátory nebo infixový zápis při psaní omezení výrazu?
 Můžete napsat omezení výrazu buď pomocí dostupných prefixových operátorů, nebo pomocí infixového zápisu. U operátorů **Min**, **Max** a **Abs** nelze použít infixový zápis. Tyto operátory jsou k dispozici jako standardní operátory ve většině programovacích jazyků.
@@ -108,34 +108,34 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 <tr class="odd">
 <td>Implikace</td>
 <td>To platí v případě, že první podmínka není splněna, druhá podmínka je pravda, nebo obojí.</td>
-<td>Znamená [a, b] infix:-: b</td>
+<td>Implies[a, b], infix: a -: b</td>
 <td><ul>
-<li><strong>Provozovatel:</strong> znamená [x! = 0, y &gt;= 0]</li>
-<li><strong>Infix zápis:</strong> x! = 0-: y &gt;= 0</li>
+<li><strong>Operátor:</strong> Implies[x != 0, y &gt;= 0]</li>
+<li><strong>Infixový zápis:</strong> x != 0 -: y &gt;= 0</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>A</td>
 <td>To platí pouze v případě, že jsou splněny všechny podmínky. Pokud je počet podmínek 0 (nula), výsledkem je <strong>pravda</strong>.</td>
-<td>A infix [argumenty]: &amp;b &amp; ... &amp;z</td>
+<td>And[args], infix: a &amp; b &amp; ... &amp; z</td>
 <td><ul>
-<li><strong>Provozovatel:</strong> a [x = 2, y &lt;= 2]</li>
-<li><strong>Infix zápis:</strong> x == 2 &amp;y &lt;= 2</li>
+<li><strong>Operátor:</strong> And[x == 2, y &lt;= 2]</li>
+<li><strong>Infixový zápis:</strong> x == 2 &amp; y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Nebo</td>
 <td>To platí při splnění libovolné podmínky. Pokud je počet podmínek 0 (nula), výsledkem je <strong>nepravda</strong>.</td>
-<td>Nebo [argumenty] infix: | b | ... | z</td>
+<td>Or[args], infix: a | b | ... | z</td>
 <td><ul>
-<li><strong>Provozovatel:</strong> nebo [x = 2, y &lt;= 2]</li>
-<li><strong>Infix zápis:</strong> x == 2 | y &lt;= 2</li>
+<li><strong>Operátor:</strong> Or[x == 2, y &lt;= 2]</li>
+<li><strong>Infixový zápis:</strong> x == 2 | y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Kladný</td>
 <td>Sečte podmínky. Pokud je počet podmínek 0 (nula), výsledkem je <strong>0</strong>.</td>
-<td>Infix plus [argumenty]: + b +... + z</td>
+<td>Plus[args], infix: a + b + ... + z</td>
 <td><ul>
 <li><strong>Operátor:</strong> Plus[x, y, 2] == z</li>
 <li><strong>Infixový zápis:</strong> x + y + 2 == z</li>
@@ -144,7 +144,7 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 <tr class="odd">
 <td>Záporný</td>
 <td>Argumenty se negují. Musí mít právě jednu podmínku.</td>
-<td>Infix minus [výraz]: výraz -</td>
+<td>Minus[expr], infix: -expr</td>
 <td><ul>
 <li><strong>Operátor:</strong> Minus[x] == y</li>
 <li><strong>Infixový zápis:</strong> -x == y</li>
@@ -159,7 +159,7 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 <tr class="odd">
 <td>Časy</td>
 <td>Vezme násobek podmínek. Pokud je počet podmínek 0 (nula), výsledkem je <strong>1</strong>.</td>
-<td>Infix časy [argumenty]: * b *... * z</td>
+<td>Krát[args], infix: a * b * ... * z</td>
 <td><ul>
 <li><strong>Operátor:</strong> Doby[x, y, 2] == z</li>
 <li><strong>Infixový zápis:</strong> x * y * 2 == z</li>
@@ -167,8 +167,8 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 </tr>
 <tr class="even">
 <td>Výkon</td>
-<td>Vezme mocninu. Umocňuje se zprava doleva. (Jinými slovy, je asociativní zleva doprava.) Proto <strong>Power [a, b, c]</strong> je ekvivalentní <strong>napájení [, napájení [b, c]]</strong>. <strong>Výkon</strong> lze použít pouze s exponentem jako kladnou konstantou.</td>
-<td>Napájení [argumenty], infix: ^ b ^... ^ z</td>
+<td>Vezme mocninu. Umocňuje se zprava doleva. (Jinými slovy je zprava asociativní.) Proto je <strong>Power[a, b, c]</strong> ekvivalentní <strong>Power[a, Power[b, c]]</strong>. <strong>Výkon</strong> lze použít pouze s exponentem jako kladnou konstantou.</td>
+<td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operátor:</strong> Výkon[x, 2] == y</li>
 <li><strong>Infixový zápis:</strong> x ^ 2 == y</li>
@@ -177,21 +177,21 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 <tr class="odd">
 <td>Maximum</td>
 <td>Výsledkem je největší podmínka. Pokud je počet podmínek 0 (nula), výsledkem je <strong>nekonečno</strong>.</td>
-<td>Max [argumenty]</td>
+<td>Max[argumenty]</td>
 <td><strong>Operátor:</strong> Max[x, y, 2] == z</td>
 </tr>
 <tr class="even">
 <td>Minimum</td>
 <td>Výsledkem je nejmenší podmínka. Pokud je počet podmínek 0 (nula), výsledkem je <strong>nekonečno</strong>.</td>
-<td>Min [argumenty]</td>
+<td>Min[argumenty]</td>
 <td><strong>Operátor:</strong> Min[x, y, 2] == z</td>
 </tr>
 <tr class="odd">
 <td>Ne</td>
 <td>Výsledkem logický opak podmínky. Musí mít právě jednu podmínku.</td>
-<td>Není [výraz] infix:! výraz</td>
+<td>Ne[expr], infix: !expr</td>
 <td><ul>
-<li><strong>Provozovatel:</strong> není [x] &amp;ne [y == 3]</li>
+<li><strong>Operátor:</strong> Ne[x] &amp; Ne[y == 3]</li>
 <li><strong>Infixový zápis:</strong> !x!(y == 3)</li>
 </ul></td>
 </tr>
@@ -202,24 +202,24 @@ V následující tabulce jsou uvedeny příklady, jak zapsat infixový zápis.
 
 | Infixový zápis    | popis                                                                                   |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| X + y + z         | Dodatek                                                                                      |
-| X \*y \*z       | Násobení                                                                                |
-| X - y             | Binární odčítání je převedeno stejně jako binární součet, kde je negovaná druhá podmínka. |
-| X ^ y ^ z         | Umocňování s pravou asociativitou                                                   |
-| ! x                | Logické ne                                                                                   |
-| x-: y            | Logická implikace                                                                           |
+| x + y + z         | Dodatek                                                                                      |
+| x \* y \* z       | Násobení                                                                                |
+| x - y             | Binární odčítání je převedeno stejně jako binární součet, kde je negovaná druhá podmínka. |
+| x ^ y ^ z         | Umocňování s pravou asociativitou                                                   |
+| !x                | Logické ne                                                                                   |
+| x -: y            | Logická implikace                                                                           |
 |  linka | y | z         | Logické nebo                                                                                    |
-| X, y a z         | Logické a                                                                                   |
-| X == y == z       | Rovnost                                                                                      |
-| x! = y! = z       | Různé                                                                                      |
-| X &lt;y &lt;z   | Je menší než                                                                                     |
-| X &gt;y &gt;z   | Je větší než                                                                                  |
-| X &lt;= y &lt;= z | Menší než nebo rovno                                                                         |
-| X &gt;= y &gt;= z | Větší než nebo rovno                                                                      |
+| x & y & z         | Logické a                                                                                   |
+| x == y == z       | Rovnost                                                                                      |
+| x != y != z       | Různé                                                                                      |
+| x &lt; y &lt; z   | Je menší než                                                                                     |
+| x &gt; y &gt; z   | Je větší než                                                                                  |
+| x &lt;= y &lt;= z | Menší než nebo rovno                                                                         |
+| x &gt;= y &gt;= z | Větší než nebo rovno                                                                      |
 | (x)               | Závorky ruší výchozí priority.                                                      |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Proč nejsou má omezení výrazu vyhodnocena správně?
-Rezervovaná slovo nelze použít jako řešitelské názvy atributů, komponentů nebo dílčích komponentů v modelu konfigurace produktu. Zde je seznam vyhrazených klíčových slov, které nelze použít:
+Rezervovaná slovo nelze použít jako řešitelské názvy atributů, komponentů nebo dílčích komponentů v modelu konfigurace produktu. Následující seznam obsahuje rezervovaná klíčová slova, která nelze použít:
 
 -   Horní mez
 -   Prvek
@@ -245,8 +245,8 @@ Rezervovaná slovo nelze použít jako řešitelské názvy atributů, komponent
 <a name="see-also"></a>Viz také
 --------
 
-[Vytvoření omezení typu výrazu (úkol guide)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
+[Vytvoření omezení výrazu (Průvodce záznamem úloh)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
 
-[Přidat výpočet modelu konfigurace produktu (úkol guide)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
+[Přidání výpočtu do modelu konfigurace produktu (Průvodce záznamem úloh)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
 
 

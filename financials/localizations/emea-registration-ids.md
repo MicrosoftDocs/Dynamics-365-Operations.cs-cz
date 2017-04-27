@@ -1,6 +1,6 @@
 ---
 title: ID registrace
-description: "Toto téma obsahuje informace o nastavení a používání ID registrace."
+description: "Toto téma poskytuje informace o nastavení a používání ID registrace."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -30,77 +30,77 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma obsahuje informace o nastavení a používání ID registrace.
+Toto téma poskytuje informace o nastavení a používání ID registrace.
 
-Mnoho zemí a regionů mají rozdílné předpisy a požadavky na registrační číslo nebo ID záznamu. Toto téma obsahuje přehled požadovaných nastavení a zpracování typy podporovaných registrace pro účastníky v různých evropských zemích. Všechny země mají své požadavky pro podporu různých funkcí jednotlivých zemí týkající se registračních čísel uvedených různé státní úřady. Registrační čísla příklady, číslo sociálního pojištění (ČSP), daňové identifikační číslo (DIČ) a Evropské DPH identifikační (ID DPH EU). Tato funkce poskytuje jednotný rámec pro všechny země, ve všech oblastech, přičemž v úvahu požadavky specifické pro zemi některých evropských zemí. Následující oddíly popisují Celkový tok informací, která se používá pro nastavení a zpracování registrací ID.
+Mnoho zemí a regionů má rozdílné předpisy a požadavky na evidenci daňového registračních čísel nebo ID. Toto téma obsahuje přehled požadovaných nastavení a zpracování typy podporovaných typů registrace pro účastníky v různých evropských zemích/oblastech. Všechny země/oblasti mají své požadavky na podporu různých funkcí v jednotlivých zemích týkající se registračních čísel uvedených různými státními úřady. Mezi příklady registračních čísel patří číslo sociálního pojištění (ČSP), daňové identifikační číslo (DIČ) a Evropské DPH identifikační číslo (EU DIČ). Tato funkce poskytuje jednotný rámec pro všechny země, ve všech oblastech, přičemž v úvahu bere požadavky specifické pro některé evropské země. V následujících částech je popsán celkový tok informací, které se používají k nastavení a zpracování ID registrace.
 
-## <a name="registration-type-creation"></a>Vytváření typu registrace
-Před zadáním ID registrace, musíte nastavit typy registrace pro různé typy registračních čísel, které každá smluvní strana podléhá. Přejít na **Správa organizace**&gt;**globální adresář**&gt;**typy registrace**&gt;**typy registrace** stránku vytvořit a spravovat typy registrace dodavatelů, odběratelů, zaměstnanců a právnických osob v různých zemích.
+## <a name="registration-type-creation"></a>Vytvoření typu registrace
+Dříve, než budete moci zadat ID registrace, je třeba nastavit typy registrace pro různé typy registračních čísel, kterým jednotlivé smluvní strany podléhají. Přejděte na stránku **Správa organizace** &gt; **Globální adresář** &gt; **Typy registrace** &gt; **Typy registrace** a vytvořte a spravujte typy registrace dodavatelů, odběratelů, zaměstnanců a právnických osob v různých zemích.
 
 |Pole                 |popis      |
 |------------------------------|----------------------------|                                                                           
 | Jméno                | Název typu registrace. |                                                                           
 | popis         | Popis typu registrace. |
-| Země nebo oblast      | Jedinečný identifikátor země/oblasti.|
-| Finanční úřad       | Finanční úřad, který je přidružen k typu registrace.|
-| Omezení       | Typ omezení, které platí pro tento typ daňové registrace: žádná osoba, organizace.|
-| Formát              | Formát ověřování typu registrace.|
-| Lze aktualizovat.      | Určuje, zda lze po zadání aktualizovat registrační číslo pro typ registrace.|
-| Jedinečný              | Určuje, zda je jedinečné registrační číslo pro typ registrace. |
-| Primární pro zemi | Pokud strana je spojen s jednou nebo více adres zejména země a ID registrace je platná pro tyto adresy, je třeba určit jednu adresu jako primární pro zemi. Můžete zaregistrovat pouze jedno ID jako primární. Určuje, zda číslo zápisu lze zadat pouze pro primární adresu země. |
+| Země nebo oblast      | Jedná se o jednoznačnou identifikaci země nebo oblasti.|
+| Finanční úřad       | Typ daňového úřadu, ke kterému je přidružen typ registrace.|
+| Omezení       | Typ omezení, které platí pro typ daňové registrace: žádné, osoba, organizace.|
+| Formát              | Formát ověření pro typ daňové registrace.|
+| Lze aktualizovat.      | Definuje, zda lze registrační číslo aktualizovat po zadání pro typ daňové registrace.|
+| Jedinečný              | Definuje, zda je registrační číslo pro typ daňové registrace jedinečné. |
+| Primární pro zemi | Pokud je strana spojena s jednou nebo více adresami v konkrétní zemi a ID registrace je platné pro všechny tyto adresy, je třeba určit jednu adresu jako primární pro zemi. Můžete zaregistrovat pouze jedno ID jako primární. Určuje, zda lze zadat registrační číslo pouze pro primární adresu země. |
 
-## <a name="assign-a-registration-type-to-a-registration-category"></a>Přiřadit kategorie registrace typ registrace
-Registrace kategorie je identifikátor země registrace schválena pro používání zejména země pro daňové, celní a jiné účely. Tato kategorie definuje pravidla ověření zvláštní registrační číslo (včetně kontrolní číslice atd.) a zařazení ID registrace v různých sestavách. Na stránce **Správa organizace**&gt;**globální adresář**&gt;**typy registrace**&gt;**kategorie registrace** přiřadit typ registrace konkrétní země registrace podporované kategorie.
+## <a name="assign-a-registration-type-to-a-registration-category"></a>Přiřazení typu registrace ke kategorii registrace
+Registrace kategorie je identifikátor země registrace schválený pro používání v konkrétní zemi nebo oblasti pro daně, cla a jiné účely. Tato kategorie definuje pravidla ověření pro konkrétní ID registrace (včetně kontrolních číslic atd.) a zařazení ID registrace v různých sestavách. Na stránce **Správa organizace** &gt; **globální adresář** &gt; **typy registrace** &gt; **kategorie registrace** přiřaďte typ registrace konkrétní země registrace podporované kategorii.
 
 | Pole            | popis|
 |-----------------------|----------------|
-| Typ registrace     | Registrace zadejte zejména země.|
-| Omezení         | Druh omezení se vztahuje na typ daňové registrace: žádná osoba, organizace.|
-| Kategorie registrace | Registrace jedinečný identifikátor schválených pro použití v zemi. Úplný seznam podporovaných v AX7.1 kategorie je níže. |
+| Typ registrace     | Typ registrace v konkrétní zemi nebo oblasti.|
+| Omezení         | Typ omezení, které platí pro typ daňové registrace: žádné, osoba, organizace.|
+| Kategorie registrace | Jedinečný identifikátor registrace schválený pro použití v dané zemi. Úplný seznam podporovaných v kategoriích AX7.1 je níže. |
 
-## <a name="enter-registration-ids-for-global-address-book-records"></a>Zadejte ID registrace pro záznamy knihy globální adresy
-Globální adresář (GAB) 365 Microsoft Dynamics pro operace obsahuje adresu konsolidované informace pro zákazníky, dodavateli, kontakty, obchodní vztahy a právnické osoby. Další informace naleznete v [Přehled knihy globální adresy](/dynamics365/operations/organization-administration/overview-global-address-book). Záznamy strany, které jsou uloženy v globálním seznamu adres může obsahovat jeden nebo více záznamů adresu. Tyto adresy se používají k různým účelům, například k fakturaci nebo dodávce. Můžete nastavit registrační ID adresy informace pro zákazníky, dodavatele, pracovníky a právnické osoby. Strana (právnická osoba, dodavatele, zákazníka, pracovník) záznamu, pro který chcete zadat ID číslo registru a klepněte na tlačítko Najít **ID registrace** na formulářích týkající se strany, právnická osoba, dodavatele, zákazníka, pracovník otevřete **spravovat adresy** stránky. Na **daňové registrace** karta, klepněte na tlačítko **přidat**a zadejte následující informace o ID registrace.
+## <a name="enter-registration-ids-for-global-address-book-records"></a>Zadejte ID registrace pro záznamy globálního adresáře
+Globální adresář (GAB) v aplikaci Microsoft Dynamics 365 for Operations obsahuje konsolidované informace o adrese pro zákazníky, dodavatele, kontakty, obchodní vztahy a právnické osoby. Další informace viz [Přehled globálního adresáře](/dynamics365/operations/organization-administration/overview-global-address-book). Záznamy strany, které jsou uloženy v globálním adresáři , mohou obsahovat jeden nebo více záznamů. Tyto adresy se používají k různým účelům, například k fakturaci nebo dodávce. Můžete nastavit registrační ID pro informace o adrese zákazníků, dodavatelů, pracovníků a právnických osob. Najděte záznam strany (právnická osoba, dodavatel, zákazník, pracovník), pro kterou chcete zadat ID registru, a klepněte na tlačítko **ID registrace** ve formulářích týkajících se strany, právnické osoby, dodavatele, zákazníka nebo pracovníka, k otevření stránky **Spravovat adresy**. Na kartě **Daňová registrace** klepněte na tlačítko **přidat** a zadejte následující informace o ID registrace.
 
 |Pole                |popis                                                |
 |---------------------|-----------------------------------------------------------|
-| Typ registrace   | Typ registrace vybrané země nebo oblasti.     |
-| Registrační číslo | ID registrace výrobce                                |
-| popis         | Popis registrační číslo.               |
-| Sekce             | Další informace o registrační číslo. |
-| Vydávající úřad      | Orgánu, který vydal identifikační číslo.        |
+| Typ registrace   | Typ registrace ve vybrané zemi nebo oblasti.     |
+| Registrační číslo | ID registrace strany.                                |
+| popis         | Popis registračního čísla.               |
+| Sekce             | Další informace o registračních číslech. |
+| Vydávající úřad      | Finanční úřad, který vydal registrační číslo.        |
 | Datum vydání         | Datum vydání registračního čísla.              |
-| Účinné:           | Datum platnosti registrační číslo.           |
+| Účinné:           | Datum platnosti registračního čísla.           |
 | Vypršení platnosti          | Datum vypršení platnosti pro registrační číslo.          |
 
 > [!NOTE]
-> Daně, který číslo DIČ právnické osoby, dodavatele, zákazníka mohou být vybrány z registrace ID související s DPH ID a zadali pro stranu.
+> Číslo osvobození od daně právnické osoby, dodavatele a zákazníka lze vybrat z registračních ID souvisejících s DIČ a zadat pro danou stranu.
 
 ## <a name="search-for-records-by-registration-id"></a>Hledání záznamů podle ID registrace
-Vyhledat záznamy strany, které jsou založeny na jediném ID registrace je k dispozici ve formulářích týkající se strany, právnická osoba, dodavatele, zákazníka a pracovníka. Klepněte na tlačítko **hledání ID registrace** otevřete **ID registrace vyhledávací kritéria** stránky. Zadejte kritéria vyhledávání a klepněte na **najít**. Systém zobrazí vybrané záznamy z globálním seznamu adres a přidružené typy záznamu strany.
+Vyhledejte záznamy strany, které jsou založeny na ID registrace, je k dispozici ve formulářích týkající se strany, právnické osoby, dodavatele, zákazníka a pracovníka. Klepněte na tlačítko **Hledání ID registrace** k otevření stránky **Vyhledávací kritéria ID registrace**. Zadejte kritéria vyhledávání a klepněte na **najít**. Systém zobrazí vybrané záznamy z globálního seznamu adres a přidružených typů záznamu strany.
 
-## <a name="supported-registration-categories"></a>Kategorie podporovaných registrace
-V následující tabulce jsou uvedeny typy podporovaných registrace v 365 Dynamics pro operace. Pokud jste obeznámeni s poli aplikace Microsoft Dynamics AX 2012 pro ID registrace, tato tabulka také mapuje 365 Dynamics pro operace zápisu kategorie těchto polí.
+## <a name="supported-registration-categories"></a>Podporované kategorie registrací
+V následující tabulce jsou uvedeny typy podporovaných registrací v aplikaci Dynamics 365 for Operations. Pokud jste obeznámeni s poli aplikace Microsoft Dynamics AX 2012 pro ID registrace, tato tabulka také mapuje tato pole na kategorie registrace aplikace Dynamics 365 for Operations.
 
-| Dynamics 365 pro kategorii operací zápisu         |Země nebo oblast  | Dynamics AX 2012 termín/pole|
+| Kategorie registrace Dynamics 365 for Operations         |Země nebo oblast  | Termín / pole Dynamics AX 2012|
 |---------------------------------------------------------------|---------------------|---------------------------------|
-| ID DPH                                                        | Všechny země Evropské unie (EU)|  DIČ (právní typ ID daně v AX2012 R3)|
-| Podnikové ID (COID)                                          | Belgie, Česká republika Estonsko Maďarsko Lotyšska Litvy Polska Švýcarsko | Registrační číslo (EnterpriseNumber)-organizace (RegNum\_W) registrační číslo (RegNum\_W) registrační číslo (RegNum\_W) registrační číslo (RegNum\_W) registrační kód (EnterpriseCode)-organizace (RegNum\_W) UID (právní typ UID v AX2012 R3) |
+| ID DPH                                                        | Všechny země Evropské unie (EU)|  Číslo osvobození od daně (právní typ ID daně v AX2012 R3)|
+| Podnikové ID (COID)                                          | Belgie Česká republika Estonsko Maďarsko Lotyšsko Litva Polsko Švýcarsko | Číslo podniku (EnterpriseNumber) Registrační číslo (RegNum\_W) Registrační číslo (RegNum\_W) Registrační číslo (RegNum\_W) Registrační číslo (RegNum\_W) Podkonový kód (EnterpriseCode) Registrační číslo (RegNum\_W) UID (UID legislativního typu v AX2012 R3) |
 | ID pobočky                                                     | Belgie            | Číslo pobočky (BranchNumber)|
-| Spisová značka (registrační číslo, vydávající orgán, oddíl) | Česká republika     | Vsadit čísla Kept (CommercialRegisterInsetNumber) v obchodním registru oddíl (CommercialRegister) v obchodním rejstříku (CommercialRegisterSection)|
-| Celní ID odběratele                                           | Finsko | Celní číslo odběratele (CustomsCustomerNumber\_FI)|
-| DIČ                                                           | Ruská federace| INN (typ legislativním INN v AX2012 R3)|
-| Kód důvodu registrace                                                           | Ruská federace| Kód důvodu registrace (právní typ kódu důvodu registrace v AX2012 R3)|
-| OKDP                                                          | Ruská federace| OKDP (typ legislativním OKDP v AX2012 R3)|
-| OKPO                                                          | Ruská federace| OKPO (typ legislativním OKPO v AX2012 R3)|
+| Spisová značka (registrační číslo, vydávající orgán, oddíl) | Česká republika     | Číslo vkladu (CommercialRegisterInsetNumber) Uchováváno v obchodním rejstříku (CommercialRegister) Oddíl obchodního rejstříku (CommercialRegisterSection)|
+| Celní ID odběratele                                           | Finsko | Číslo odběratele pro celní účely (CustomsCustomerNumber\_FI)|
+| DIČ                                                           | Ruská federace| INN (INN legislativního typu v AX2012 R3)|
+| Kód důvodu registrace                                                           | Ruská federace| RRC (RRC legislativního typu v AX2012 R3)|
+| OKDP                                                          | Ruská federace| OKDP (OKDP legislativního typu v AX2012 R3)|
+| OKPO                                                          | Ruská federace| OKPO (OKPO legislativního typu v AX2012 R3)|
 | RKOSU                                                         | Ruská federace| RCOAD (typ legislativním RCOAD v AX2012 R3)|
-| OGRN                                                          | Ruská federace| OGRN (typ právních OGRN v AX2012 R3) |
-| SNILS                                                         | Ruská federace| SNILS (typ právních SNILS v AX2012 R3)|
-| CIFTS                                                         | Ruská federace| CIFTS (typ právních CIFTS v AX2012 R3)|
+| OGRN                                                          | Ruská federace| OGRN (OGRN legislativního typu v AX2012 R3) |
+| SNILS                                                         | Ruská federace| SNILS (SNILS legislativního typu v AX2012 R3)|
+| CIFTS                                                         | Ruská federace| CIFTS (CIFTS legislativního typu v AX2012 R3)|
 
-Další informace o ID registrace zpracování, včetně nezbytné součásti naleznete v tématu následující záznamy úkolu ID DPH v Lifecycle Services (LCS):
+Další informace o zpracování ID registrace, včetně nezbytných předpokladů, naleznete v následujících záznamech úloh pro ID DPH v Lifecycle Services (LCS):
 
 -   Nastavení DIČ
--   Registrace DIČ dodavatele
+-   ID registrace DPH dodavatele
 -    Vyhledání strany pomocí DIČ
 
 

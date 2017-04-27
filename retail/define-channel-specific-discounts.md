@@ -34,14 +34,14 @@ Maloobchodní prodejci často nastavují různé slevy v různých kanálech. To
 <a name="channel-specific-discounts"></a>Slevy specifické pro kanál
 --------------------------
 
-Prodejci často nabízejí různé slevy v různých kanálech. To se může provést na adresu místní tržní podmínky nebo řešit konkurenčních prodejců.
+Maloobchodní prodejci často nabízejí různé slevy v různých kanálech. Činí tak z důvodu přizpůsobení místním tržním podmínkám nebo v rámci konkurenčního souboje s jinými maloobchodními prodejci.
 
-Prodej a obchodování v 365 Microsoft Dynamics pro operace používá k definování specifické pro kanál slevy cenové skupiny. Cenové skupiny lze přiřadit následujícím entitám (jedné entitě nebo více entitám): kanály, katalogy, umístění a věrnostní programy. V tomto článku jsou popsány kanály, ale stejné principy se týkají také slevových katalogů, slev podle umístění a věrnostních slev.
+Modul Retail and commerce v aplikaci Microsoft Dynamics 365 for Operations používá k definování slev specifických pro kanál různé cenové skupiny. Cenové skupiny lze přiřadit následujícím entitám (jedné entitě nebo více entitám): kanály, katalogy, umístění a věrnostní programy. V tomto článku jsou popsány kanály, ale stejné principy se týkají také slevových katalogů, slev podle umístění a věrnostních slev.
 
 ## <a name="price-groups"></a>Cenové skupiny
-\[Titulek id = "Příloha\_256084" Zarovnat = "alignnone" width = "640"\][![cena skupiny](./media/price-groups-1024x608.png)](./media/price-groups.png) pro maloobchodní ceny propojení skupiny\[/titulek\]
+\[caption id="attachment\_256084" align="alignnone" width="640"\][![Price groups](./media/price-groups-1024x608.png)](./media/price-groups.png) Propojení cenových skupin pro maloobchodní prodej\[/caption\]
 
-Diagram uvedený výše znázorňuje vztah mezi subjekty, které mohou být v transakci (kanál, katalog, umístění, Zákazník, věrnostní karty) a různé typy slev, které lze konfigurovat. Všechny transakce dojít do kanálu, kanál je zaručena v transakci. Zbývající entity jsou volitelné. Na všech stránkách hlavních dat se nachází odkaz na související stránku cenové skupiny, na které si můžete prohlédnout cenové skupiny a v případě potřeby přidat další. Cenové skupiny se používá k propojení čtyři různé typy entit, slevy, úpravy cen a obchodních dohod. Doporučujeme naplánovat strategii jak bude název vaší cenové skupiny k jejich uspořádání. Jednou z možností by bylo použít písmeno nebo číslo předponu nebo příponu, chcete-li rozlišit různé typy. Například 1-xxxxx kanálu cenové skupiny a 2-xxxxx pro katalog cenové skupiny. Existují čtyři stránky s dotazy – každá z nich je zaměřená na maloobchodní entity, které mohou mít přidrženy slevy.
+Ve výše uvedeném diagramu je znázorněn vztah mezi entitami, které mohou být v transakci (kanál, katalog, umístění, odběratel, věrnostní karta), a různými typy slev, které lze konfigurovat. Ke všem transakcím dochází v kanálu, takže přítomnost kanálu v transakci je zaručena. Zbývající entity jsou volitelné. Na všech stránkách hlavních dat se nachází odkaz na související stránku cenové skupiny, na které si můžete prohlédnout cenové skupiny a v případě potřeby přidat další. Cenová skupina se používá k propojení čtyř typů entit se slevami, úpravami cen a obchodními smlouvami. Doporučujeme, abyste si naplánovali princip, jakým budete cenové skupiny pojmenovávat, aby se vám dobře spravovaly. Jednou z možností je použít písmeno či číslo jako předponu nebo příponu, podle které bude možné rozlišit různé typy. Název ve formátu „1-xxxxx“ může například odkazovat na cenové skupiny pro kanály a název ve formátu „2-xxxxx“ na cenové skupiny pro katalog. Existují čtyři stránky s dotazy – každá z nich je zaměřená na maloobchodní entity, které mohou mít přidrženy slevy.
 
 -   **Cenové skupiny maloobchodní sítě **– Na této stránce je uveden seznam kanálů a slev propojených pro každou cenovou skupinu.
 -   **Skupiny katalogových cen**– Na této stránce je uveden seznam katalogů a slev propojených pro každou cenovou skupinu.
@@ -62,6 +62,6 @@ Na následujícím příkladu jsou znázorněny úkoly zahrnuté do nastavován�
 <a name="see-also"></a>Viz také
 --------
 
-[Price adjustments and discounts](price-adjustments-discounts.md)
+[Úpravy ceny a slevy](price-adjustments-discounts.md)
 
 

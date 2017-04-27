@@ -1,5 +1,5 @@
 ---
-title: "Na základě základ marže a metod výpočtu sazby DPH"
+title: "Sazby DPH na základě polí Základ marže a Metody výpočtu"
 description: "Tento článek vysvětluje, jak hodnoty v poli Základ marže a Metoda výpočtu určují sazby daně v prodejních a nákupních transakcích."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a>Na základě základ marže a metod výpočtu sazby DPH
+# <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a>Sazby DPH na základě polí Základ marže a Metody výpočtu
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,7 +35,7 @@ Tento článek vysvětluje, jak hodnoty v poli Základ marže a Metoda výpočtu
 
 Základ marže na pevné záložce Výpočet na stránce Kódy DPH určuje částku, která je použita k výběru odpovídající sazby daně ze sazeb na stránce Hodnoty kódu DPH. Typ částky v poli Základ marže v kombinaci s metodu v poli Metoda výpočtu určuje logiku, podle které je hledána správná sazba daně pro transakci. 
 
-Různé kombinace hodnot v těchto polích poskytují velmi rozdílné výpočty DPH, jak je uvedeno v následujících příkladech. V příkladech jsou použity stejné hodnoty daňového období, jaké se nastavují pro každý kód DPH na stránce Hodnoty kódů DPH. Chcete-li tuto stránku otevřít, klepněte na tlačítko kód DPH &gt;hodnoty na stránce kódy DPH.
+Různé kombinace hodnot v těchto polích poskytují velmi rozdílné výpočty DPH, jak je uvedeno v následujících příkladech. V příkladech jsou použity stejné hodnoty daňového období, jaké se nastavují pro každý kód DPH na stránce Hodnoty kódů DPH. Tuto stránku otevřete kliknutím na možnosti Kód prodejní daně &gt; Hodnoty na stránce Kódy DPH.
 
 > [!Important]                                                                                                                  
 > Je-li základ marže některého kódu DPH založen na částkách nebo jednotkách řádku, je nutné v poli Metoda výpočtu na stránce Parametry hlavní knihy nastavit hodnotu Řádek. |
@@ -56,9 +56,9 @@ Sazby DPH jsou nastaveny v následujících intervalech.
 > [!NOTE]                                                                                                             
 > Horní limit 0 v posledním intervalu značí zahrnutí všech částek větších než 100 do intervalu.
 
-Základ marže: **čistá částka za řádek** 
+Základ marže: **Čistá částka podle řádku** 
 
-Metoda výpočtu: **Interval** 
+Způsob výpočtu: **Interval** 
 
 Koupíte 8 lamp po 25,00 za kus. 
 
@@ -66,21 +66,21 @@ Koupíte 8 lamp po 25,00 za kus.
 
 Daň se vypočítá následovně: 
 
-Celkové DPH = 50 x 30 % + 50 x 20 % + 100 x 10 % = 15 + 10 + 10 = 35.00 
+Celková DPH = 50 x 30 % + 50 x 20 % + 100 x 10 % = 15 + 10 + 10 = 35,00 
 
-Celková částka faktury = 200,00 + 35.00 = 235.00 
+Celková fakturovaná částka = 200,00 + 35,00 = 235,00 
 
-**Variation** 
+**Odchylka** 
 
-Jestliže faktura obsahuje dva řádky se čtyřmi položkami na každém řádku, je čistá částka na každém řádku 100,00 a DPH se vypočítá takto: 
+Pokud má faktura dva řádky se čtyřmi položkami na každém řádku, čistá částka na každém řádku je 100 a DPH se vypočítá následovně: 
 
-DPH řádku % 1 = 50 x 30 + 50 x 20 % = 15 + 10 = 25,00 
+DPH – řádek 1 = 50 x 30 % + 50 x 20 % = 15 + 10 = 25,00 
 
-DPH, řádek % 2 = 50 x 30 + 50 x 20 % = 15 + 10 = 25,00 
+DPH - řádek 2 = 50 x 30 % + 50 x 20 % = 15 + 10 = 25,00 
 
-Celkové DPH = 25,00 + 25,00 = 50,00 
+Celková DPH = 25,00 + 25,00 = 50,00 
 
-Celková částka faktury = 200,00 + 50,00 = 250,00
+Celková fakturovaná částka = 200,00 + 50,00 = 250,00
 
 ## <a name="net-amount-per-unit"></a> Čistá částka za jednotku
 Tuto možnost vyberte k určení sazeb DPH na základě hodnoty jednotlivých jednotek bez jakýchkoliv jiných daní. Je-li vybrán základ marže vycházející z jednotek, je nutné určit jednotku také pro kód DPH.
@@ -95,9 +95,9 @@ Sazby DPH jsou nastaveny v následujících intervalech.
 | 50–100           | 20 %      |
 | 100 - 0 (&gt; 100) | 10 %      |
 
-Základ marže: **čistá částka za jednotku** 
+Základ marže: **Čistá částka podle jednotky** 
 
-Metoda výpočtu: **celá částka** 
+Metoda výpočtu: **Celková částka** 
 
 Koupíte 8 lamp po 25,00 za kus. 
 
@@ -117,11 +117,11 @@ Sazby DPH jsou nastaveny v následujících intervalech.
 |-------------------|----------|
 | 0–50            | 30 %      |
 | 50–100          | 20 %      |
-| 100 -0 (&gt; 100) | 10 %      |
+| 100 - 0 (&gt; 100) | 10 %      |
 
-Základ marže: **čistá částka zůstatku faktury** 
+Základ marže: **Čistá částka zůstatku faktury** 
 
-Metoda výpočtu: **Interval** prodejní faktury obsahuje 2 řádky se 4 zářivky na jednotlivé řádky pro 25,00 každý. Čistá částka zůstatku faktury je 4 x 25,00 + 4 x 25,00 = 200,00. Daň se vypočítá takto: Celková DPH = 50 x 0,30 + 50 x 0,20 + 100 x 0,10 = 15 + 10 + 10 = 35,00 Celková fakturovaná částka = 200,00 + 35,00 = 235,00
+Metoda výpočtu: **Interval** Prodejní faktura obsahuje 2 řádky se 4 zářivkami na jednotlivých řádkách pro 25,00 ks. Čistá částka zůstatku faktury je 4 x 25,00 + 4 x 25,00 = 200,00. Daň se vypočítá takto: Celková DPH = 50 x 0,30 + 50 x 0,20 + 100 x 0,10 = 15 + 10 + 10 = 35,00 Celková fakturovaná částka = 200,00 + 35,00 = 235,00
 
 ## <a name="gross-amount-per-line"></a> Hrubá částka za řádek
 
@@ -140,11 +140,11 @@ Sazby DPH jsou nastaveny v následujících intervalech.
 | 50–100           | 20 %      |
 | 100 - 0 (&gt; 100) | 10 %      |
 
-Základ marže: **Hrubá částka za řádek** Metoda výpočtu: **Interval** Dále je zde vypočítán jiný kód daně pro zvláštní clo 5,00 na každou lampu. Toto clo je k čisté částce přidáno před výpočtem DPH. Koupíte 8 lamp po 25,00 za kus. Čistá částka řádku faktury je 200,00. Hrubá částka řádku faktury je 8 x 25,00 + 8 x 5,00 = 240,00. Daň se vypočte takto: celkové DPH = 50 x 0,30 + 50 x 0,20 + 140 x 0,10 = 15 + 20 + 14 = 39.00 celkem clo = 5,00 x 8 = 40,00 celková částka faktury = 200,00 + 39.00 + 40,00 = 279.00
+Základ marže: **Hrubá částka za řádek** Metoda výpočtu: **Interval** Dále je zde vypočítán jiný kód daně pro zvláštní clo 5,00 na každou lampu. Toto clo je k čisté částce přidáno před výpočtem DPH. Koupíte 8 lamp po 25,00 za kus. Čistá částka řádku faktury je 200,00. Hrubá částka řádku faktury je 8 x 25,00 + 8 x 5,00 = 240,00. Daň se vypočítá takto: Celková DPH = 50 x 0,30 + 50 x 0,20 + 140 x 0,10 = 15 + 20 + 14 = 39,00 Celkové clo = 5,00 x 8 = 40,00 Celková fakturovaná částka = 200,00 + 39,00 + 40,00 = 279,00
 
-**Variation** 
+**Odchylka** 
 
-Pokud faktura je vytvořena pomocí 2 řádky faktury s 4 položky na každém řádku, je čistá částka za řádek faktury 100,00. Hrubá částka (včetně cla 4 x 5,00) na každém řádku faktury by byla 120,00 a DPH se vypočte následujícím způsobem: DPH pro řádek faktury 1 = 50 x 0,30 + 50 x 0,20 + 20 x 0,10 = 15 + 10 + 2 = 27,00 DPH pro řádek faktury 2 = 50 x 0,30 + 50 x 0,20 + 20 x 0,10 = 15 + 10 + 2 = 27,00 Celková DPH = 27,00 + 27,00 = 54,00 Celkové clo = 5,00 x 8 = 40,00 Celková fakturovaná částka = 200,00 + 54,00 + 40,00 = 294,00
+Pokud dojde k vytvoření faktury pomocí dvou řádků se čtyřmi položkami na každém řádku, čistá částka na řádek je 100,00. Hrubá částka (včetně cla 4 x 5,00) na každém řádku faktury by byla 120,00 a DPH se vypočte následujícím způsobem: DPH pro řádek faktury 1 = 50 x 0,30 + 50 x 0,20 + 20 x 0,10 = 15 + 10 + 2 = 27,00 DPH pro řádek faktury 2 = 50 x 0,30 + 50 x 0,20 + 20 x 0,10 = 15 + 10 + 2 = 27,00 Celková DPH = 27,00 + 27,00 = 54,00 Celkové clo = 5,00 x 8 = 40,00 Celková fakturovaná částka = 200,00 + 54,00 + 40,00 = 294,00
 
 ## <a name="gross-amount-per-unit"></a> Hrubá částka za jednotku
 
@@ -169,7 +169,7 @@ Základ marže: **Hrubá částka za jednotku** Je uloženo zvláštní clo 5,00
 
 Tuto možnost vyberte k určení sazeb DPH na základě celkové hodnoty faktury včetně jakýchkoliv jiných daní.
 > [!NOTE]
-> Ve skupině DPH můžete mít pouze jeden kód DPH s Tento výběr marginální základní pole
+> Ve skupině DPH může být s touto hodnotou v poli Základ marže uveden pouze jeden kód DPH.
 
 ### <a name="example"></a>Příklad
 
@@ -182,9 +182,9 @@ Sazby DPH jsou nastaveny v následujících intervalech.
 | 100 - 0 (&gt; 100) | 10 %      |
 
 Základ marže: **Faktura celkem včetně částek DPH** metoda výpočtu: **Interval**   
-Existuje zvláštní clo 5.00 na každého světlometu nebo svítilny. Toto clo je k čisté částce přidáno před výpočtem DPH. Koupíte 8 lamp po 25,00 za kus. Čistá částka faktury je 200,00. Hrubá částka faktury je 200,00 + (8 x 5,00) = 240,00. Daň se vypočítá takto: Celková DPH = 50 x 0,30 + 50 x 0,20 + 140 x 0,10 = 15 + 10 + 14 = 39,00 Celkové clo = 5,00 x 8 = 40,00 Celková fakturovaná částka = 200,00 + 39,00 + 40,00 = 279,00
+Pro každou lampu existuje speciální clo ve výši 5,00 eur. Toto clo je k čisté částce přidáno před výpočtem DPH. Koupíte 8 lamp po 25,00 za kus. Čistá částka faktury je 200,00. Hrubá částka faktury je 200,00 + (8 x 5,00) = 240,00. Daň se vypočítá takto: Celková DPH = 50 x 0,30 + 50 x 0,20 + 140 x 0,10 = 15 + 10 + 14 = 39,00 Celkové clo = 5,00 x 8 = 40,00 Celková fakturovaná částka = 200,00 + 39,00 + 40,00 = 279,00
 
-Další informace naleznete v tématu [celá částka a Interval možnosti výpočtů pro kódy DPH](whole-amount-interval-options-sales-tax-codes.md) a [metody výpočtu DPH v poli Původ](sales-tax-calculation-methods-origin-field.md).
+Další informace viz [Možnost Celková částka a Interval výpočtu pro kódy DPH](whole-amount-interval-options-sales-tax-codes.md) a [Metody výpočtu DPH v poli Zdroj](sales-tax-calculation-methods-origin-field.md).
 
 
 

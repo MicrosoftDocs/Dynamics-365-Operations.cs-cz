@@ -1,6 +1,6 @@
 ---
-title: "Přehled maloobchodní periferní zařízení"
-description: "Toto téma vysvětluje základní pojmy související s maloobchodní periferní zařízení. Popisuje různé způsoby, že periferní zařízení může být připojeno k místu prodeje (POS) a komponenty jsou odpovědné za správu připojení s POS."
+title: "Přehled maloobchodních periferních zařízení"
+description: "Toto téma vysvětluje pojmy související s maloobchodními periferními zařízeními. Popisuje různé způsoby, jakými mohou být periferní zařízení připojena k pokladnímu místu (POS) a komponenty odpovídající za správu připojení k POS."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,213 +25,213 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="retail-peripherals-overview"></a>Přehled maloobchodní periferní zařízení
+# <a name="retail-peripherals-overview"></a>Přehled maloobchodních periferních zařízení
 
 [!include[banner](includes/banner.md)]
 
 
-Toto téma vysvětluje základní pojmy související s maloobchodní periferní zařízení. Popisuje různé způsoby, že periferní zařízení může být připojeno k místu prodeje (POS) a komponenty jsou odpovědné za správu připojení s POS.
+Toto téma vysvětluje pojmy související s maloobchodními periferními zařízeními. Popisuje různé způsoby, jakými mohou být periferní zařízení připojena k pokladnímu místu (POS) a komponenty odpovídající za správu připojení k POS.
 
 <a name="concepts"></a>Koncepty
 --------
 
 ### <a name="pos-registers"></a>Registry POS
 
-Navigace: Klepněte na **maloobchodní a commerce**&gt;**nastavení kanálu**&gt;**instalace POS**&gt;**registruje**. Místa prodeje (POS) registr je entita, která se používá k definování vlastností konkrétní instance POS. Tyto vlastnosti zahrnují hardwarový profil nebo instalační program pro maloobchodní periferní zařízení, které budou použity na rejstříku, úložiště, namapovaný na Žurnál a vizuální zážitek pro uživatele, kteří se přihlásí do tohoto rejstříku.
+Navigace: klikněte na tlačítko **Maloobchodní a velkoobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Pokladny**. Registr místa prodeje (POS) je entita, která se používá k definování vlastností konkrétní instance POS. Tyto vlastnosti zahrnují hardwarový profil nebo nastavení maloobchodních periferních zařízení, která budou použita na pokladně, obchod, ke kterému je pokladna namapována a vizuální prostředí uživatele, který se k dané pokladně přihlásí.
 
 ### <a name="devices"></a>Zařízení
 
-Navigace: Klepněte na **maloobchodní a commerce**&gt;**nastavení kanálu**&gt;**instalace POS**&gt;**zařízení**. Zařízení je entita, která představuje fyzickou instanci zařízení, která je namapována k pokladně POS. Při vytvoření zařízení je mapována na POS registru. Zařízení sleduje informace o tom, kdy dojde k aktivaci pokladny POS, typu používaného klienta a balíčku aplikace, který byl nasazen na konkrétní zařízení. Zařízení lze mapovat na následující typy aplikací: moderní Retail POS, Cloud program Retail POS, Retail moderní POS – Windows Phone, program Retail POS moderní – Android a Retail POS moderní – iOS.
+Navigace: klikněte na tlačítko **Maloobchodní a velkoobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Zařízení**. Zařízení je entita, která představuje fyzickou instanci zařízení, která je namapována k pokladně POS. Při vytvoření je zařízení mapováno k pokladně POS. Zařízení sleduje informace o tom, kdy dojde k aktivaci pokladny POS, typu používaného klienta a balíčku aplikace, který byl nasazen na konkrétní zařízení. Zařízení lze mapovat na následující typy aplikací: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android a Retail Modern POS – iOS.
 
 ### <a name="retail-modern-pos"></a>Moderní Retail POS
 
-Moderní POS je program Retail POS pro systém Microsoft Windows. Mohou být nasazeny v operačních systémech Windows 10 (OSs).
+Modern POS je program POS pro systém Microsoft Windows. Může být nasazen v operačních systémech Windows 10.
 
-### <a name="cloud-pos"></a>Shluk POS
+### <a name="cloud-pos"></a>Cloud POS
 
-Shluk POS je verze prohlížeče moderní POS program, který je přístupný ve webovém prohlížeči.
+Cloud POS je verze programu Modern POS pro prohlížeč, která je přístupná prostřednictvím webového prohlížeče.
 
-### <a name="modern-pos-for-ios"></a>Moderní POS pro iOS
+### <a name="modern-pos-for-ios"></a>Modern POS pro iOS
 
-Moderní POS pro iOS je systémem iOS verze programu moderní POS, která může být nasazena na iOS zařízeních.
+Modern POS pro iOS je verze programu Modern POS založená na iOS, kterou lze implementovat na zařízeních se systémem iOS.
 
-### <a name="modern-pos-for-android"></a>Moderní POS pro Android
+### <a name="modern-pos-for-android"></a>Modern POS pro Android
 
-Moderní POS pro Android se systémem Android verzi programu moderní POS, která může být nasazena na Android zařízení.
+Modern POS pro Android je verze programu Modern POS založená na Androidu, kterou lze implementovat na zařízeních se systémem Android.
 
-### <a name="pos-peripherals"></a>Příslušenství POS
+### <a name="pos-peripherals"></a>Periferní položky POS
 
-POS periferie jsou zařízení, které jsou explicitně podporovány funkce POS. Tato periferní zařízení jsou obvykle rozděleni do konkrétní třídy. Další informace o těchto třídách naleznete v části "Zařízení třídy" tohoto tématu.
+Periferní položky POS jsou zařízení, která jsou explicitně podporována pro funkce POS. Tyto periferie jsou obvykle rozděleny do konkrétních tříd. Další informace o těchto třídách naleznete v části Třídy zařízení tohoto tématu.
 
 ### <a name="hardware-station"></a>Hardwarová stanice
 
-Navigace: Klepněte na **maloobchodní a commerce**&gt;**kanály**&gt;**maloobchodní obchody**&gt;**všechny maloobchodní obchody**. Vyberte obchod a potom klikněte na pevnou záložku **Hardwarové stanice**. **Hardware stanice** nastavení je kanál úroveň nastavení, které slouží k definování instance, kde bude nasazen maloobchodní periferní logiku. Toto nastavení na úrovni kanálu se používá k určení vlastnosti hardwaru stanice. Slouží také k seznamu hardwaru stanice, které jsou k dispozici pro moderní POS instance v daném úložišti. Hardwarová stanice je součástí moderní POS program pro systém Windows. Hardwarová stanice lze také implementovat nezávisle jako samostatný program Internetová informační služba (IIS). V tomto případě je přístupný prostřednictvím sítě.
+Navigace: klikněte na **Maloobchodní a velkoobchodní prodej** &gt; **Kanály** &gt; **Maloobchody** &gt; **Všechny maloobchody**. Vyberte obchod a potom klikněte na pevnou záložku **Hardwarové stanice**. Nastavení **hardwarové stanice** je nastavení na úrovni kanálu, které slouží k definování instancí, kde bude nasazena maloobchodní periferní logika. Toto nastavení na úrovni kanálů se používá k určení vlastností hardwarové stanice. Slouží také k výpisu hardwarových stanic, které jsou k dispozici pro instanci Modern POS v daném obchodě. Hardwarová stanice je součástí programu Modern POS for Windows. Hardwarovou stanici lze také nasadit nezávisle jako samostatný program Internetové informační služby (IIS) Microsoft. V tomto případě je přístupný prostřednictvím sítě.
 
 ### <a name="hardware-profile"></a>Profil hardwaru
 
-Navigace: Klepněte na **maloobchodní a commerce**&gt;**nastavení kanálu**&gt;**instalace POS**&gt;**profily POS**&gt;**hardwarové profily**. Hardwarový profil je uveden seznam zařízení, která jsou nakonfigurována Pokladna POS nebo hardware stanice. Profil hardwaru lze namapovat přímo do registru POS nebo hardware stanice.
+Navigace: Klikněte na **Maloobchodní a velkoobchodní prodej** &gt; **Konfigurace kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Hardwarové profily**. Hardwarový profil je seznam zaříení, která jsou nakonfigurována pro pokladnu POS nebo hardwarovou stanici. Hardwarový profil lze přiřadit přímo k pokladně POS nebo k hardwarové stanici.
 
-## <a name="devices-classes"></a>Zařízení třídy
-Periferní zařízení POS jsou obvykle rozděleny do tříd. Tato část popisuje a poskytuje přehled zařízení, které podporuje moderní POS.
+## <a name="devices-classes"></a>Třídy zařízení
+Periferie POS jsou obvykle rozděleny do tříd. Tato část popisuje a poskytuje přehled zařízení, která podporuje Modern POS.
 
 ### <a name="printer"></a>Tiskárna
 
-Nabízejí tradiční POS příjmu a celou stránku. Tiskárny jsou podporovány prostřednictvím Object Linking and Embedding Retail POS (OPOS) a Microsoft Windows ovladač rozhraní. Současně lze použít maximálně dvě tiskárny. Tuto funkci podporuje scénáře, kde jsou příjmy cash-and-carry odběratele tisk na tiskárnách potvrzení, že objednávky zákazníků, které bude obsahovat další informace, budou vytištěny na celou stránku tiskárny. Příjem tiskárny můžete připojený přímo k počítači pomocí USB, připojené k síti přes Ethernet nebo připojení přes Bluetooth.
+Tiskárny jsou tradiční tiskárny stvrzenek POS a tiskárny celých stránek. Tiskárny jsou podporovány prostřednictvím Object Linking and Embedding Retail POS (OPOS) a rozhraní ovladačů Microsoft Windows. Současně lze použít maximálně dvě tiskárny. Tato funkce umožňuje podporu scénářů, kdy se stvrzenky cash-and-carry pro zákazníky tisknou na tiskárnách strvzenek, zatímco objednávky zákazníků, které obsahují více informací, se tisknou na celostránkových tiskárnách. Tiskárny stvrzenek mohou být připojeny přímo k počítači pomocí USB, připojeny k síti přes Ethernet nebo připojeny přes Bluetooth.
 
 ### <a name="scanner"></a>Skener
 
-Až dva čárový kód skenery lze současně. Tato funkce podporuje scénáře skener, který je více mobilní vyžadující ke skenování velkých nebo těžkých položek, zatímco pevné vložené skener se používá pro většinu položek standardní velikosti pro urychlení doby rezervace. Skenery mohou být podporovány prostřednictvím OPOS, Universal Windows Platform (UWP) nebo klávesnice wedge rozhraní. USB nebo technologie Bluetooth umožňuje připojit skener k počítači.
+Současně lze používat maximálně dva skenery čárových kódů. Tato funkce podporuje scénáře, kdy je nějaký skener, který je mobilnější, potřebný ke skenování velkých nebo těžkých položek, zatímco pevně uložený skener se používá pro většinu položek standardní velikosti pro urychlení doby rezervace. Skenery mohou být podporovány prostřednictvím OPOS, Universal Windows Platform (UWP) nebo rozhraní platebního terminálu klávesnice. Pro připojení skeneru k počítači lze použít USB nebo Bluetooth.
 
 ### <a name="msr"></a>MSR
 
-Jeden USB čtečka magnetického proužku (MSR) lze nastavit pomocí ovladače OPOS. Pokud chcete použít samostatný oddíl MSR pro prostředky elektronického přenosu (EFT) platební transakce, musí být spravován konektor platby oddíl MSR. Samostatné MSRs lze použít pro položku věrného zákazníka přihlášení zaměstnance a položku dárkové karty, nezávisle na konektor platby.
+Jednu USB čtečku magnetického proužku (MSR) lze nastavit pomocí ovladačů OPOS. Pokud chcete použít samostatnou čtečku MSR pro platební transakce elektronického převodu peněžních prostředků, musí být čtečka MSR spravována konektorem platby. Samostatné čtečky MSR lze použít pro věrnostní položku zákazníka, přihlášení zaměstnance a položku dárkového poukazu nezávisle na konektoru platby.
 
-### <a name="cash-drawer"></a>Zásuvku
+### <a name="cash-drawer"></a>Zásuvka s hotovostí
 
-Dvě zásuvky mohou být podporovány na jeden profil hardwaru. Tato funkce umožňuje dvě aktivní směny jedné registrační pokladně je k dispozici ve stejnou dobu. V případě sdílených shift nebo hotovostí, který je používán více mobilních zařízení POS současně je povolen pouze jednu zásuvku na jeden profil hardwaru. Zásuvky můžete připojený přímo k počítači pomocí USB, připojen k síti nebo připojení k tiskárně stvrzenek prostřednictvím rozhraní RJ12. V některých případech mohou být také propojeny zásuvky přes Bluetooth.
+Na jeden profil hardwaru mohou být podporovány dvě zásuvky s hotovostí. Tato funkce umožňuje, aby jedné pokladně byly současně k dispozici dvě aktivní směny. V případě sdílené směny nebo v případě zásuvky s hotovostí, která je používána více mobilními zařízeními POS současně, je povolena pouze jedna zásuvka na jeden hardwarový profil. Zásuvky s hotovostí mohou být připojeny přímo k počítači pomocí USB, připojeny k síti nebo připojeny k tiskárně stvrzenek prostřednictvím rozhraní RJ12. V některých případech mohou být zásuvky s hotovostí připojeny také přes Bluetooth.
 
 ### <a name="line-display"></a>Řádkový displej
 
-Zobrazí řádek slouží k zobrazení produktů, zůstatky transakce a další užitečné informace zákazníkovi během transakce. Zobrazení jednoho řádku lze připojit k počítači prostřednictvím USB pomocí ovladače OPOS.
+Řádkové displeje slouží k zobrazení produktů, částek transakcí a dalších užitečných informací zákazníkovi během transakce. K počítači lze prostřednictvím USB pomocí ovladače OPOS připojit jeden řádkový displej.
 
 ### <a name="signature-capture"></a>Zaznamenání podpisu
 
-Sběr podpisů lze připojit přímo k počítači pomocí USB pomocí ovladače OPOS. Zaznamenání podpisu nakonfigurován, zákazník vyzván k přihlášení na zařízení. Po podpisu je k dispozici, zobrazí se pro pokladníka k přijetí.
+K počítači lze přes USB pomocí ovladače OPOS přímo připojit zařízení zaznamenání podpisu. Když bude nakonfigurován odběr podpisů, zákazník bude vyzván, aby se na zařízení podepsal. Po dodání podpisu bude podpis zobrazen pokladníkovi k přijetí.
 
 ### <a name="scale"></a>Měřítko
 
-Měřítka lze připojit k počítači prostřednictvím USP pomocí ovladače OPOS. Pokud produkt, který je označen jako "Weighed" produkt je přidán k transakci, POS načteme stupnice hmotnosti produktu přidá k transakci a používá množství, které podle měřítka.
+K počítači lze přes USP pomocí ovladače OPOS připojit váhu. Když bude k transakci přidán produkt označený jako "Vážený" produkt, POS odečte z váhy jeho hmotnost, přidá produkt k transakci a použije množství, které dodala váha.
 
 ### <a name="pin-pad"></a>Klávesnice pro kód PIN
 
-Osobní identifikační číslo (PIN) vložky jsou podporovány prostřednictvím OPOS, ale musí být spravovány prostřednictvím konektoru platby.
+Vložky na osobní identifikační číslo (PIN) jsou podporovány prostřednictvím OPOS, ale musí být spravovány prostřednictvím platebního konektoru.
 
-### <a name="secondary-display"></a>Sekundární monitor
+### <a name="secondary-display"></a>Sekundární displej
 
-Při konfiguraci sekundární grafické zobrazení Windows číslo 2 se používá k zobrazení základních informací. Účelem sekundární monitor je podporovat rozšíření dodavatele (ISV) nezávislé výrobce softwaru, protože mimo pole sekundární monitor není konfigurovatelné a zobrazuje pouze omezený obsah.
+Je-li nakonfigurován sekundární displej, bude k zobrazení základních informací používán displej Windows číslo 2. Účelem sekundárního displeje je podporovat rozšíření nezávislého dodavatele softwaru (ISV), protože sekundární displej nelze okamžitě konfigurovat a zobrazuje omezený obsah.
 
 ### <a name="payment-device"></a>Platební zařízení
 
-Podpora zařízení platby je implementována prostřednictvím konektoru platby. Zařízení platbu můžete provést jednu nebo mnoho funkcí, které poskytují jiné třídy zařízení. Platební zařízení může například pracovat jako čtečka MSR/karet, zobrazení řádku, podpis digitalizační zařízení a klávesnice pro kód PIN. Podpora pro platební zařízení prováděna nezávisle na podporu samostatné zařízení, která je k dispozici pro další zařízení, která jsou součástí hardwarového profilu.
+Podpora platebního zařízení je implementována prostřednictvím platebního konektoru. Platební zařízení mohou provádět jednu nebo mnoho funkcí, které poskytují jiné třídy zařízení. Platební zařízení může například pracovat jako čtečka MSR/karet, řádkový displej, zařízení k odběru podpisů, nebo jako klávesnice na kódy PIN. Podpora pro platební zařízení je zavedena nezávisle na podpoře samostatných zařízení, která je k dispozici pro další zařízení, která jsou součástí hardwarového profilu.
 
-## <a name="supported-interfaces"></a>Podporované rozhraní
+## <a name="supported-interfaces"></a>Podporovaná rozhraní
 ### <a name="opos"></a>OPOS
 
-K zajištění, že největší rozsah zařízení lze použít s Microsoft Dynamics 365 pro operace - maloobchod, OLE pro standardní POS je primární maloobchodní periferní zařízení platforma, která je podporována v 365 Microsoft Dynamics pro operace - maloobchod. OLE pro POS standard byl vytvořen tak, že vnitrostátní maloobchodní federace (NRF), kterým se stanoví standardní komunikační protokoly pro maloobchodní periferní zařízení. OPOS je široce přijímaná implementace OLE pro POS standard. Byl vyvinut v mid-1990s a aktualizoval několikrát od té doby. OPOS poskytuje Architektura ovladače zařízení, který umožňuje snadnou integraci POS hardwaru se systémem Windows POS systémy. OPOS řídí zpracování komunikace mezi kompatibilní hardware a software Retail POS. Ovládací prvek OPOS se skládá ze dvou částí:
+Aby bylo možno zaručit, že spolu s aplikací Microsoft Dynamics 365 for Operations - Retail bude možné používat co nejširší škálu zařízení, je primární platformou pro maloobchodní periferní zařízení podporovanou aplikací Microsoft Dynamics 365 for Operations - Retail průmyslový standard OLE pro POS. Standard OLE pro POS byl vytvořen Národní maloobchodní federací (National Retail Federation, NRF), která stanovuje standardní komunikační protokoly pro maloobchodní periferní zařízení. OPOS je široce přijímaná implementace standardu OLE pro POS. Byla vyvinuta v polovině 90. let 20. století a od té doby několikrát aktualizována. OPOS poskytuje architekturu ovladačů zařízení, která umožňuje snadnou integraci hardwaru POS se systémy POS založenými na Windows. OPOS řídí zpracování komunikace mezi kompatibilním hardwarem a mezi softwarem POS. Ovládací prvek OPOS se skládá ze dvou částí:
 
--   **Objekt Control** – objekt řízení u určité třídy zařízení (například řádek zobrazí) poskytuje rozhraní pro softwarový program. Služby konzultace Monroe ([www.monroecs.com](http://www.monroecs.com/)) poskytuje standardizovaný soubor OPOS ovládací prvek objekty, které jsou označovány jako objekty společných ovládacích prvků (CCOs). CCOs se používá k testování součást 365 Microsoft Dynamics pro operace - Retail POS. Proto testování pomáhá zaručit, že, pokud 365 Microsoft Dynamics pro operace - podporuje maloobchodní zařízení třídy prostřednictvím OPOS, mnoho typů zařízení mohou být podporovány, aby výrobce poskytuje služby objekt, který je sestaven pro OPOS. Není nutné explicitně testovat každý typ zařízení.
--   **Objekt služby** – objekt služby zajišťuje komunikaci mezi objekt control (CCO) a zařízení. Objekt služby pro zařízení obvykle pochází od výrobce zařízení. Nicméně v některých případech bude pravděpodobně nutné stáhnout z webu výrobce objektu služby. Například novější objekt služby mohou být k dispozici. Najít adresu na webu výrobce, naleznete v dokumentaci k hardwaru.
+-   **Objekt ovládacího prvku** – objekt ovládacího prvku pro určitou třídu zařízení (jako například řádkový displej) poskytuje rozhraní pro softwarový program. Konzultační služby Monroe (Monroe Consulting Services, [www.monroecs.com](http://www.monroecs.com/)) je společnost, která poskytuje standardizovanou sadu ovládacích prvků řízení OPOS, které jsou označovány jako objekty společných ovládacích prvků (Common Control Objects, CCO). CCO se používají k testování komponenty POS u Microsoft Dynamics 365 pro operace - Retail. Proto testování pomáhá zaručit, aby, pokud Microsoft Dynamics 365 pro operace - maloobchod podporuje nějakou třídu zařízení prostřednictvím OPOS, mohlo být podporováno mnoho typů zařízení za předpokladu, že výrobce dodává servisní objekt určený pro OPOS. Není nutné explicitně testovat každý typ zařízení.
+-   **Objekt služby** – objekt služby zajišťuje komunikaci mezi objektem ovládacího prvku (CCO) a zařízením. Objekt služby pro nějaké zařízení obvykle pochází od výrobce zařízení. V některých případech však bude pravděpodobně nutné stáhnout objekt služby z webu výrobce. Například může být k dispozici novější objekt služby. Adresu webu výrobce najdete v dokumentaci k hardwaru.
 
-[![Ovládací prvek objektu a objekt služby](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) podpora pro provádění OLE OPOS POS pomáhá zaručit, že pokud zařízení výrobců a vydavatelů POS standard správně implementovat, Pokladních systémů a podporovaných zařízení mohou spolupracovat, i v případě, že nebyly testovány dříve společně. **Poznámka:** podporu OPOS nezaručuje podporu pro všechna zařízení, která mají ovladače OPOS. Microsoft Dynamics 365 pro operace - maloobchodní musí nejprve podporovat tento typ zařízení nebo třídy prostřednictvím OPOS. Kromě toho objektů služby nemusí být vždy aktuální s nejnovější verzí CCOs. Je třeba také věnovat pozornost, obecně kvalita objektů služby se liší.
+[![Ovládací prvek objektu a objekt služby](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Podpora pro implementaci OPOS OLE pro POS pomáhá zaručit aby, v případě, že výrobci zařízení a vydavatelé POS standard správně implementují, mohly pokladní systémy a podporovaná zařízení řádně spolupracovat, i kdyby nebyly nejprve společně otestovány. **Poznámka:** Podpora OPOS nezaručuje podporu pro všechna zařízení, která mají ovladače OPOS. Microsoft Dynamics 365 pro operace - maloobchod musí nejprve podporovat tento typ zařízení nebo třídy prostřednictvím OPOS. Kromě toho objekty služby nemusí být vždy aktuální s nejnovější verzí CCO. Měli byste také pamatovat na to, že kvalita objektů služby bývá obecně různá.
 
-### <a name="windows"></a>Systém Windows
+### <a name="windows"></a>Windows
 
-Tisk účtenky v POS je optimalizována pro OPOS. OPOS má tendenci být mnohem rychlejší než tisk pomocí systému Windows. Je tedy vhodné použít OPOS, zejména v maloobchodním prostředí, kde 40 sloupci příjmy jsou vytištěny časy transakcí musí být rychlé. U většiny zařízení budete používat ovládací prvky OPOS. Některé tiskárny OPOS příjmu však podporují ovladače systému Windows. Pomocí ovladače Windows dostanete nejnovější písma a jednu tiskárnu sítě pro více registrů. Existují však nevýhody použití ovladačů systému Windows. Zde jsou některé příklady těchto nevýhod:
+Tisk účtenky v POS je optimalizován pro OPOS. OPOS má tendenci být mnohem rychlejší než tisk pomocí systému Windows. Je tedy vhodné použít OPOS, zejména v maloobchodním prostředí, kde jsou tištěny účtenky se 40 sloupci a časy transakcí musí být rychlé. U většiny zařízení budete používat ovládací prvky OPOS. Některé tiskárny účtenek OPOS podporují také ovladače systému Windows. Pomocí ovladače pro Windows můžete získat přístup k nejnovějším písmům a jednu tiskárnu zařadit do sítě pro více pokladen. Použití ovladačů systému Windows má však také nevýhody. Následuje několik příkladů těchto nevýhod:
 
--   Při použití ovladače Windows obrázky jsou vykreslovány před tiskem. Proto tisk má tendenci být pomalejší než u tiskáren, které používají ovládací prvky OPOS.
--   Zařízení, která jsou připojena prostřednictvím tiskárny ("sedmikráska chain") nemusí správně fungovat při použití ovladače Windows. Například nemusí otevřít zásuvku nebo slip tiskárny nemusí word podle očekávání.
--   OPOS podporuje také rozsáhlejší sady proměnných, které jsou specifické pro maloobchodní příjmu, jako například tiskárny tisk složenky nebo řezání papíru.
+-   Při použití ovladačů Windows jsou obrázky před vytištěním vykreslovány. Tisk proto bývá pomalejší než u tiskáren, které používají ovládací prvky OPOS.
+-   Zařízení, která jsou připojena prostřednictvím tiskárny („sériově“), nemusí při použití ovladače Windows správně fungovat. Například by se zásuvka s hotovostí nemusela otevřít nebo by tiskárna dokladů nemusela fungovat, jak má.
+-   OPOS podporuje také rozsáhlejší sadu proměnných, které jsou specifické pro maloobchodní tiskárny účtenek, jako například řezání papíru nebo tisk účtenek.
 
-Pokud OPOS ovládací prvky jsou k dispozici pro tiskárny systému Windows, kterou používáte, tiskárna by stále pracovat správně s 365 Microsoft Dynamics pro operace - Retail.
+Pokud budou pro tiskárnu systému Windows, kterou používáte, k dispozici ovládací prvky OPOS, tiskárna by měla s Microsoft Dynamics 365 pro operace - maloobchod stále pracovat správně.
 
-### <a name="universal-windows-platform"></a>Universal Windows Platform
+### <a name="universal-windows-platform"></a>Univerzální platforma Windows
 
-UWP, v případě maloobchodní periferní zařízení, se vztahuje na podporu systému Windows pro zařízení Plug and Play. Zařízení Plug and Play připojen na verzi operačního systému Windows, který podporuje typ zařízení, je nutné zařízení používané jako určen žádný ovladač. Například, pokud systém Windows rozpozná zařízení Bluetooth reproduktor, operační systém ví, že zařízení má **reproduktor** typ třídy. Proto a toto zařízení se považuje za lektorem. Není zapotřebí žádné další nastavení. V případě POS zařízení zapojit mnoho zařízení USB a systém Windows je rozpozná jako zařízení standardu HID (HIDs). Však nemusí být schopni určit možnosti, které poskytuje zařízení, protože zařízení neurčuje třídu nebo typ zařízení. V systému Windows 10 byly přidány třídy zařízení pro skenery čárového kódu a MSRs. Proto pokud zařízení prohlašuje, že na Windows 10 jako jedné z těchto tříd zařízení, systém Windows bude naslouchat události ze zařízení ve vhodných okamžicích. Moderní POS podporuje UWP MSRs a skenery. Proto když je připraven pro vstup z jednoho z těchto zařízení a zařízení, které patří do jedné z těchto tříd je připojen, lze použít zařízení. Například pokud je připojen počítač Windows 10 UWP bar kód skener a čárový kód přihlášení je nakonfigurován pro moderní POS, čtečka čárového kódu je aktivní na přihlašovací obrazovce. Není zapotřebí žádné další nastavení. Další třídy point service UWP zařízení jsou přidávány do systému Windows. Tyto třídy zahrnují třídy pro zásuvky a příjmu tiskárny. Podpora pro tyto nové třídy zařízení v moderní POS čeká na vyřízení.
+UWP se v případě maloobchodních periferních zařízení vztahuje na podporu systému Windows pro zařízení Plug and Play. Zařízení Plug and Play je připojeno k verzi operačního systému Windows, která tento typ zařízení podporuje. K použití zařízení dle způsobu určení není třeba žádný ovladač. Například pokud systém Windows rozpozná zařízení typu reproduktor Bluetooth, operační systém ví, že zařízení má typ třídy **reproduktor**. A bude s tímto zařízením nakládat jako s reproduktorem. Žádné další nastavení není třeba. V případě zařízení POS lze připojit mnoho zařízení USB a systém Windows je rozpozná jako zařízení standardu HID. Systém však nemusí být schopen určit schopnosti, které toto zařízení poskytuje, protože zařízení neurčuje třídu nebo typ zařízení. V systému Windows 10 byly přidány třídy zařízení pro čtečky čárových kódů a magnetických proužků. Proto pokud se zařízení systému Windows 10 ohlašuje jako zařízení jedné z těchto tříd, Windows bude ve vhodnou dobu naslouchat událostem ze zařízení. Modern POS podporuje UWP čtečky MSR a skenery. Proto když je připraven pro vstup z jednoho z těchto zařízení a bude připojeno zařízení patřící do jedné z těchto tříd, bude možno toto zařízení použít. Například pokud je k počítači s Windows 10 připojena čtečka čárových kódů UWP a je nakonfigurován vstup čárových kódů pro Modern POS, bude čtečka čárových kódů na přihlašovací obrazovce aktivní. Žádné další nastavení není třeba. Do systému Windows jsou přidávány další třídy zařízení UWP obslužných míst. Tyto třídy zahrnují třídy pro zásuvky s hotovostí a tiskárny účtenek. Podpora pro tyto nové třídy zařízení v Modern POS se očekává v brzké době.
 
-### <a name="keyboard-wedge"></a>Klávesnice wedge
+### <a name="keyboard-wedge"></a>Převodník na signál klávesnice
 
-Zařízení klávesnice wedge odeslat data do počítače, jako by data byla zadána na klávesnici. Proto ve výchozím nastavení, pole, který je aktivní v POS obdrží data, která je naskenované nebo protažené. V některých případech toto chování může způsobit nesprávný typ dat, které mají být prohledány v nesprávném poli. Například může prohledávat čárového kódu do pole, které je určeno k zadání údajů platební karty. V mnoha případech je logika v POS, která určuje, zda data, která je naskenované nebo protažené čárový kód nebo protažení karty. Proto je správně zpracovat data. Je-li zařízení nastaveno jako OPOS místo klávesnice wedge zařízení, existuje však větší kontrolu nad jak data z těchto zařízení mohou být spotřebovány, protože více je "známý" o zařízení, které data pocházejí od. Například data ze skeneru čárového kódu automaticky rozpoznána jako čárový kód a snadněji a rychleji, než pokud byly použity obecný řetězec hledání, jako v případě klávesnice wedge zařízení nalezen přidružený záznam v databázi.
+Zařízení typu převodníku na signál klávesnice odesílá data do počítače, jako by tato data byla zadána na klávesnici. Proto ve výchozím nastavení obdrží pole, které je aktivní v POS, data z výsledku skenování nebo protahování proužku. V některých případech může toto chování způsobit načtení nesprávného typu dat do nesprávného pole. Například může být čárový kód naskenován do pole, které je určeno k zadání údajů platební karty. V mnoha případech je v POS logika, která určuje, zda data z výsledku skenování nebo protahování proužku jsou čárovým kódm nebo výsledkem protažení karty. Proto jsou pak data zpracována správně. Avšak jsou-li zařízení nastavena jako OPOS a ne jako zařízení typu převodníku na signál klávesnice, existuje větší možnost kontroly nad tím, jak budou data z těchto zařízení využívána, protože je více známo o zařízení, z nějž data pocházejí. Například data ze čtečky čárových kódů budou automaticky rozpoznána jako čárový kód a příslušný záznam v databázi bude nalezen mnohem snadněji a rychleji, než při použití obecného vyhledávacího řetězce, jako je tomu v případě zařízení typu převodníků na signál klávesnice.
 
-### <a name="native-printer"></a>Nativní tiskárny
+### <a name="native-printer"></a>Nativní tiskárna
 
-Nativní (nebo v hardwarovém profilu se nazývá "Zařízení" jako typ) tiskárny lze nakonfigurovat tak, aby výzvu k výběru tiskárny, který je nakonfigurován pro počítač. Pokud tiskárně **zařízení** typ je nakonfigurován, pokud moderní POS narazí příkaz pro tisk, bude uživatel vyzván k výběru tiskárny v seznamu. Toto chování se liší od chování ovladačů pro systém Windows, protože **Windows** typ tiskárny hardwarový profil nezobrazí seznam tiskáren. Místo toho vyžaduje být součástí tiskárny s názvem **název zařízení** pole.
+Nativní (neboli "Zařízení", jak je tento typ nazýván v hardwarovém profilu) tiskárny lze nakonfigurovat tak, aby zobrazily uživateli výzvu k výběru tiskárny nakonfigurované pro daný počítač. Jestliže je nakonfigurována tiskárna typu **Zařízení**, pak pokud Modern POS narazí příkaz pro tisk, bude uživatel vyzván k výběru tiskárny ze seznamu. Toto chování se liší od chování ovladačů pro systém Windows, protože typ tiskárny **Windows** v hardwarovém profilu nezobrazí seznam tiskáren. Namísto toho vyžadují, aby v poli **Název zařízení** byla uvedena pojmenovaná tiskárna.
 
-### <a name="windows"></a>Systém Windows
+### <a name="windows"></a>Windows
 
-**Windows** typu zařízení se používá pro pouze tiskárny. Pokud tiskárny systému Windows je nakonfigurován v hardwarovém profilu, je třeba zadat název konkrétní tiskárny. Když moderní POS setká tiskové události, pokud je nakonfigurován tiskárny systému Windows, události budou předány zadané tiskárny systému Windows. Uživatel nebude vyzván výběr tiskárny.
+Typ zařízení **Windows** se používá pouze pro tiskárny. Když bude v hardwarovém profilu nakonfigurována tiskárna systému Windows, bude třeba zadat konkrétní název tiskárny. Když se Modern POS setká s tiskovou událostí, pak pokud je nakonfigurována tiskárna systému Windows, bude událost předána zadané tiskárně systému Windows. Uživatel nebude vyzván k výběru tiskárny.
 
 ### <a name="network"></a>Síť
 
-V síti přímo hardware stanice meziprocesová komunikace (IPC), která je integrována v moderní POS pro aplikace systému Windows nebo pomocí stanice hardwaru služby IIS pro ostatní klienty moderní POS lze adresovat síťové zásuvky tiskárny příjmu a platební terminály.
+Ze sítě adresovatelné zásuvky s hotovostí, tiskárny účtenek a platební terminály lze používat po síti buďto přímo prostřednictvím hardwarové stanice interprocesní komunikace (Interprocess Communications, IPC), která je integrována do aplikace Modern POS for Windows, nebo prostřednictvím hardwarové stanice služby IIS pro ostatní klienty Modern POS.
 
-## <a name="hardware-station-deployment-options"></a>Možnosti nasazení hardwaru stanice
-### <a name="ipc-built-in"></a>IPC (předdefinovaná)
+## <a name="hardware-station-deployment-options"></a>Možnosti nasazení hardwarové stanice
+### <a name="ipc-built-in"></a>IPC (vestavěný)
 
-Hardwarová stanice meziprocesová komunikace (IPC) je součástí moderní POS pro aplikace systému Windows. Chcete-li použít hardware stanice IPC, přiřazení profilu hardwaru do registru, který bude používat moderní POS pro aplikace systému Windows. Pak vytvořte hardware stanice **Dedicated** typ úložiště použití registru. Při spuštění moderní POS hardwaru stanice IPC bude aktivní a POS periferie, které byly nakonfigurovány bude připraven k použití. Pokud z nějakého důvodu dočasně není vyžadují místní hardware, použijte **spravovat hardware stanice** operace vypnutí hardwarové možnosti stanice. Moderní POS můžete také použít hardware stanice IPC přímo komunikovat s periferním zařízením v síti.
+Hardwarová stanice Interprocesní komunikace (Interprocess Communications, IPC) je součástí aplikace Modern POS for Windows. Chcete-li použít hardwarovou stanici IPC, přiřaďte k registru hardwarový profil, který bude používat aplikaci Modern POS for Windows. Pak vytvořte hardwarovou stanici typu **Vyhrazený** pro obchod, kde bude registr používán. Když spustíte Modern POS, bude hardwarová stanice IPC aktivní a periferie POS, které byly nakonfigurovány, budou připraveny k použití. Jestliže z nějakého důvodu dočasně nepožadujete místní hardware, použijte operaci **Spravovat hardwarové stanice** k vypnutí schopností hardwarové stanice. Modern POS může také využívat hardwarovou stanici IPC k přímé komunikaci se síťovými periferními zařízeními.
 
 ### <a name="iis"></a>služba IIS,
 
-Můžete použít službu IIS nebo samostatnou verzi hardware stanice dvěma způsoby. Popisovač "IIS" znamená, že POS aplikace připojí k hardware stanice prostřednictvím Internetová informační služba. Aplikace POS připojuje stanice hardwaru služby IIS prostřednictvím webové služby, které jsou spuštěny v počítači, kde jsou zařízení připojená. Při použití služby IIS lze použít maloobchodní periferní zařízení, které jsou připojeny k hardware stanice podle jakékoli Pokladna POS, který je ve stejné síti jako hardware stanice služby IIS. Protože pouze moderní POS for Windows obsahuje integrovanou podporu pro maloobchodní periferní zařízení, všechny ostatní aplikace moderních POS použít hardware stanice služby IIS ke komunikaci s POS periferie, které jsou nakonfigurovány v hardwarovém profilu. Proto každé instance služby IIS hardware stanice vyžaduje počítač, který spustí webové služby a aplikace, která komunikuje s zařízení. Hardwarová stanice služby IIS je vyžadována pro všechny non - Windows moderní POS aplikace.
+Službu IIS nebo samostatnou verzi hardwarové stanice můžete využívat dvěma způsoby. Deskriptor "IIS" znamená, že aplikace POS se k hardwarové stanici připojuje prostřednictvím Internetové informační služby Microsoft. Aplikace POS se k hardwarové stanici služby IIS připojuje prostřednictvím webových služeb, které jsou spuštěny v počítači, ke kterému jsou zařízení připojena. Při použití služby IIS může kterákoli registrační pokladna POS nacházející se na stejné síti jako hardwarová stanice IIS využívat maloobchodní periferní zařízení připojená k hardwarové stanici. Protože pouze Modern POS for Windows obsahuje integrovanou podporu pro maloobchodní periferní zařízení, všechny ostatní aplikace Modern POS musejí používat hardwarovou stanici služby IIS ke komunikaci s periferiemi POS, které jsou nakonfigurovány v hardwarovém profilu. Proto každá instance služby hardwarové stanice IIS vyžaduje počítač, na kterém je spuštěna webová služba a aplikaci, která komunikuje s zařízeními. Hardwarová stanice IIS je nezbytná pro všechny aplikace Modern POS, které nejsou pro Windows.
 
 #### <a name="dedicated"></a>Vyhrazeno
 
-Moderní POS používá hardware stanice **Dedicated** typu ke zjištění, že periferní zařízení jsou přímo připojeny k počítači, kde je používána aplikace. Však **Dedicated** typ lze použít také pro hardware stanice služby IIS. V tradiční, pevné POS scénář, který používá Cloud POS jako aplikace Retail POS **Dedicated** stanice typu hardwaru se používá pro hardware stanice služby IIS, které jsou nasazeny ve stejném počítači, je systémem shluk POS. Z hlediska maloobchodní periferní zařízení lépe maloobchodní vyhrazené hardwarové stanice IIS periferní podpora pro tradiční pevné scénáře POS. Vyhrazené hardwarové stanice podporují všechna periferní zařízení, které jsou podporovány v hardwarovém profilu.
+Moderní POS používá hardwarové stanice **Vyhrazeného** typu ke zjišťování, zda jsou periferní zařízení přímo připojena k počítači, na kterém je aplikace používána. Avšak typ **Vyhrazený** lze používat také pro hardwarové stanice služby IIS. V tradičním pevném scénáři POS, který používá Cloud POS jako aplikaci Retail POS, se typ hardwarové stanice **Vyhrazený** používá pro hardwarové stanice služby IIS, které jsou nasazeny ve stejném počítači, na kterém je spuštěn Cloud POS. Z hlediska maloobchodních periferní zařízení, vyhrazené hardwarové stanice IIS mají větší podporu periferních zařízení pro tradiční pevné scénáře POS. Vyhrazené hardwarové stanice podporují všechna periferní zařízení, která jsou podporována v hardwarovém profilu.
 
 #### <a name="shared"></a>Sdílený
 
-Sdílet hardware stanice jsou určeny pro více zařízení POS až v průběhu dne. Sdílený hardware, který stanice jsou optimalizovány pro podporu pouze zásuvky, příjem tiskárny a platební terminály. Nelze přímo připojit samostatný čárový kód skenery, MSRs, řádek zobrazí, nastaví nebo jiná zařízení. Jinak bude dojít ke konfliktům při deklarace těchto periferních zařízení současně více zařízení POS. Zde je způsob správy konfliktů u podporovaných zařízení:
+Sdílené hardwarové stanice jsou určeny pro použití více zařízeními POS v průběhu dne. Sdílené hardwarové stanice jsou optimalizovány tak, že podporují pouze zásuvky s hotovostí, tiskárny účtenek a platební terminály. Nelze přímo připojit samostatné čtečky čárových kódů, MSR, řádkové displeje, váhy či jiná zařízení. Jinak bude docházet ke konfliktům, když se více zařízení POS pokusí nárokovat si tato periferní zařízení současně. Zde je způsob správy konfliktů u podporovaných zařízení:
 
--   **Zásuvku** – zásuvku je otevřen prostřednictvím událostí, který je odeslán do zařízení. Jediný problém, který může dojít, pokud je volána hotovostí nastane, pokud zásuvku je již otevřen. V případě sdíleného hardware stanice by měla být nastavena zásuvku **sdílené** v hardwarovém profilu. Toto nastavení zabrání kontrole, zda zásuvku již otevřen při odešle příkazy Otevřít POS.
--   **Příjem tiskárny** -Pokud dva příjem tiskové příkazy jsou odesílány hardware stanice současně, jeden z příkazů můžete ztratit, v závislosti na zařízení. Některá zařízení mají interní paměť nebo fondy, které může zabránit tomuto problému. Pokud tiskový příkaz není úspěšný, pokladník obdrží chybovou zprávu a můžete opakovat příkaz pro tisk z programu POS.
--   **Terminálové platby** -pokud pokladník snaží řízení transakce na terminálu platbu, která je již používán, zprávy upozorní pokladník, že terminál je používán a požádá pokladník akci později. Pokladníci obvykle zjistí, že terminál je již používán a bude čekat, dokud dokončení jiné transakce předtím, než se pokusí znovu řízení.
+-   **Zásuvka s hotovostí** – Zásuvka se otevírá prostřednictvím události, která se odesílá do zařízení. Jediný problém, ke kterému může docházet při volání zásuvky s hotovostí, nastává tehdy, když je zásuvka s hotovostí již otevřena. V případě sdílených hardwarových stanic by měla být zásuvka s hotovostí v hardwarovém profilu nastavena na **Sdílené**. Toto nastavení zabrání POS v kontrole, zda je zásuvka již otevřena při odesílání příkazů k otevření.
+-   **Tiskárna účtenek** – Budou-li do hardwarové stanice odeslány dva příkazy pro tisk účtenek současně, může se jeden z příkazů můžete ztratit, což závisí na zařízení. Některá zařízení mají interní paměť nebo sjednocené prostředky, které mohou tomuto problému zabránit. Pokud tiskový příkaz není úspěšný, pokladník obdrží chybovou zprávu a můžete tiskový příkaz zopakovat z programu POS.
+-   **Platební terminál** – Jestliže se pokladník pokusí zařídit transakci na platebním terminálu, který je již používán, bude pokladník upozorněn zprávou, že terminál je používán, a požádán, aby se o tuto akci pokusil později. Pokladníci obvykle sami zjistí, že terminál je již používán, a než se znovu pokusí o řízení, počkají na dokončení druhé transakce.
 
-Ověření je plánováno pro budoucí verze, chcete-li zjistit, zda jsou nastaveny nepodporované zařízení v hardwarovém profilu, který je mapován na sdílené hardware stanice. Pokud jsou zjištěny všechny nepodporované zařízení, uživatel obdrží zprávu, která uvádí, že zařízení nejsou podporovány pro sdílené hardware stanice. V případě sdíleného hardware stanice **vybrat na základě nabídkového řízení** možnost nastavena na **Ano** na úrovni registru. Uživatel POS je potom výzva k výběru hardware stanice při výběru nabídky pro transakce v POS. Vybráno hardwarové stanice pouze v době vyhlášení výběr hardware stanice přidá přímo do pracovního postupu POS pro mobilní scénáře. Další výhodou zobrazení řádku Terminálové platby nepoužívá sdílené scénáře. Pokud Terminálové platby slouží jako zobrazení řádku, ostatní uživatelé mohou být blokovány z používání tohoto terminálu, dokud transakce neskončí. V mobilní scénáře mohou být přidány řádky transakce za delší období. Proto **vybrat na základě nabídkového řízení** možnost je vyžadována k zajištění dostupnosti zařízení optimální.
+Pro budoucí verze je plánováno ověřování za účelem detekce, zda jsou nepodporovaná zařízení nakonfigurována pro hardwarový profil mapovaný na sdílenou hardwarovou stanici. Pokud budou zjištěna jakákoli nepodporovaná zařízení, uživatel obdrží zprávu uvádějící, že zařízení nejsou pro sdílené hardware stanice podporována. V případě sdílených hardwarových stanic je volba **Vybrat po řízení** nastavena na **Ano** na úrovni registru. Uživatel POS je potom vyzván k výběru hardwarové stanice při výběru nabídky pro transakci v POS. Vybráno hardwarové stanice pouze v době vyhlášení výběr hardware stanice přidá přímo do pracovního postupu POS pro mobilní scénáře. Další výhodou je, že zobrazený řádek na platebním terminálu není použit pro sdílené scénáře. Pokud je platební terminál použit pro zobrazení řádku, ostatní uživatelé mohou být blokováni od používání tohoto terminálu, dokud transakce neskončí. V mobilních scénářích mohou být přidány řádky ke transakci za delší období. Proto možnost **Vybrat při úhradách** je vyžadována k zajištění optimální dostupnosti zařízení.
 
-### <a name="network-peripherals"></a>Síťové příslušenství
+### <a name="network-peripherals"></a>Síťová příslušenství
 
-Označení síťové zařízení v hardwarovém profilu umožňuje zásuvky, příjem tiskárny a platební terminály připojit prostřednictvím připojení k síti.
+Označení sítí pro zařízení v profilu hardwaru umožňuje připojit zásuvky na hotovosti, tiskárny účtů a platební terminály prostřednictvím síťového připojení.
 
-#### <a name="modern-pos-for-windows"></a>Moderní POS pro systém Windows
+#### <a name="modern-pos-for-windows"></a>Moderní POS pro Windows
 
-Můžete určit adresy IP síťového příslušenství na dvou místech. Pokud klient systému Windows moderní POS používá jednu sadu společnosti network peripherals, měli byste nastavit adresy IP těchto zařízení pomocí **konfigurace IP** možnosti v podokně akcí pro registrační pokladnu sama. U síťových zařízení, které budou sdíleny mezi Registry POS hardwarový profil, který má přiřazena síťovým zařízením lze mapovat přímo na sdílený hardware stanice. Přiřadit adresy IP, vyberte tento hardware stanice na **maloobchodní obchody** stránku a potom použít **konfigurace IP** možnost **Hardware stanice** sekce určit síťová zařízení, které jsou přiřazeny k dané hardwarové stanice. Pro hardware stanice, které mají pouze síťová zařízení nemusíte instalovat hardware stanice sám. V tomto případě hardware stanice je nezbytný pouze při koncepčně skupiny sítě adresovatelné zařízení podle jejich umístění v kamenném obchodě.
+Můžete určit adresy IP síťových příslušenství na dvou místech. Pokud Moderní POS klient systému Windows používá jednu sadu síťových příslušenství, měli byste nastavit adresy IP těchto zařízení pomocí možnosti **konfigurace IP** v Podokně akcí u samotné registrační pokladny. V případě síťových zařízení, která budou sdílena mezi registry POS, může být hardwarový profil, který má přidělena síťová zařízení, mapován přímo na sdílenou hardwarovou stanici. Chcete-li přiřadit adresy IP, vyberte tuto hardwarovou stanici na stránce **Maloobchodní obchody**, potom použijte volbu **Konfigurace IP** v sekci **Hardwarové stanice** pro zadání síťových zařízení, která budou přiřazena k této hardwarové stanici. U hardwarových stanic, které mají pouze síťová zařízení, nemusíte instalovat samotnou hardwarovou stanici. V tomto případě je hardwarová stanice požadována pouze za účelem konceptuálního seskupení síťově adresovatelných zařízení podle jejich umístění v maloobchodě.
 
-#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a>Moderní POS pro Android, Retail POS a moderní POS pro iOS v cloudu
+#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a>Cloudový POS, Moderní POS pro iOS a Moderní POS pro Android
 
-Logika, která periferní zařízení fyzicky připojen a adresovat síťové jednotky jsou obsaženy v hardware stanice. Proto pro všechny klienty POS s výjimkou moderní POS pro systém Windows, hardware stanice služby IIS musí být nasazené a aktivní povolení POS periferie, bez ohledu na to, zda jsou tyto periferní zařízení fyzicky připojena k hardwaru stanice nebo určena v síti komunikovat.
+Logika, která řídí fyzicky připojené a síťově adresovatelné periferie, je obsažena v hardwarové stanici. Proto pro všechny klienty POS kromě Moderního POS pro Windows musí být zavedena a aktivní hardwarová stanice IIS umožňující těmto POS komunikovat s periferními zařízeními bez ohledu na to, zda jsou tyto periferie fyzicky připojeny k hardwarové stanici nebo adresovány po síti.
 
-## <a name="setup-and-configuration"></a>Nastavení a konfigurace
-### <a name="hardware-station-installation"></a>Instalace hardwaru stanice
+## <a name="setup-and-configuration"></a>Instalace a konfigurace
+### <a name="hardware-station-installation"></a>Instalace hardwarové stanice
 
-Informace naleznete v tématu [maloobchodní hardwarové stanice konfiguraci a instalaci](retail-hardware-station-configuration-installation.md).
+Informace naleznete v tématu [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md).
 
-### <a name="modern-pos-for-windows-setup-and-configuration"></a>Moderní POS pro instalaci systému Windows a konfigurace
+### <a name="modern-pos-for-windows-setup-and-configuration"></a>Instalace a konfigurace Moderního POS pro Windows
 
-Informace naleznete v tématu [instalace a konfigurace programu Retail POS moderní](retail-modern-pos-device-activation.md).
+Informace naleznete v tématu [Konfigurace a instalace maloobchodního Moderního POS](retail-modern-pos-device-activation.md).
 
-### <a name="opos-device-setup-and-configuration"></a>Konfigurace a instalace zařízení OPOS
+### <a name="opos-device-setup-and-configuration"></a>Instalace a konfigurace zařízení OPOS
 
-Další informace o součástech OPOS naleznete v části "Podporované rozhraní" tohoto dokumentu. Obvykle se ovladače OPOS poskytnuté výrobcem zařízení. Pokud je nainstalován ovladač zařízení OPOS, přidává klíč registru systému Windows v jednom z následujících umístění:
+Další informace o součástech OPOS naleznete v části "Podporovaná rozhraní" v tomto dokumentu. Ovladače OPOS obvykle poskytuje výrobce zařízení. Když je nainstalován ovladač zařízení OPOS, přidá se klíč registru systému Windows do jednoho z následujících umístění:
 
--   **32bitový systém:** HKEY\_místní\_MACHINESOFTWAREOLEforRetailServiceOPOS
--   **64bitový systém:** HKEY\_místní\_MACHINESOFTWAREWOW6432NodeOLEforRetailServiceOPOS
+-   **32bitový systém:** HKEY\_LOCAL\_MACHINESOFTWAREOLEforRetailServiceOPOS
+-   **64bitový systém:** HKEY\_LOCAL\_MACHINESOFTWAREWOW6432NodeOLEforRetailServiceOPOS
 
-V klíči registru ServiceOPOS konfigurované zařízení jsou uspořádány podle třídy zařízení OPOS. Více ovladačů zařízení jsou uloženy.
+V rámci umístění registru ServiceOPOS jsou nakonfigurovaná zařízení uspořádána podle třídy zařízení OPOS. Více ovladačů zařízení je uloženo.
 
 ## <a name="supported-scenarios-by-hardware-station-type"></a>Podporované scénáře podle typu hardwaru stanice
-### <a name="client-support--ipc-hardware-station-vs-iis-hardware-station"></a>Podpora klientů – IPC hardware stanice vs. IIS hardware stanice
+### <a name="client-support--ipc-hardware-station-vs-iis-hardware-station"></a>Podpora klientů – IPC hardwarová stanice vs. IIS hardwarová stanice
 
-V následující tabulce jsou uvedeny topologie a scénářů nasazení, které jsou podporovány.
+V následující tabulce jsou uvedeny podporované topologie a scénáře nasazení.
 
-| Klient      | Hardwarová stanice IPC | Služba IIS hardware stanice |
+| Klient      | Hardwarová stanice IPC | Hardwarová stanice IIS |
 |-------------|----------------------|----------------------|
 | Aplikace systému Windows | Ano                  | Ano                  |
-| Shluk POS   | Žádný                   | Ano                  |
+| Cloud POS   | Žádný                   | Ano                  |
 | Android     | Žádný                   | Ano                  |
 | iOS         | Žádný                   | Ano                  |
 
-### <a name="network-peripherals"></a>Síťové příslušenství
+### <a name="network-peripherals"></a>Síťová příslušenství
 
-Přímo přes hardware stanice, která je integrována v moderní POS pro aplikace systému Windows mohou být podporovány společnosti Network peripherals. Pro ostatní klienty je nutné nasadit služby IIS hardware stanice.
+Periferní síťová zařízení mohou být podporována přímo prostřednictvím hardwarové stanice, jež je integrována do aplikace Moderního POS pro Windows. Pro ostatní klienty je nutné nasadit hardwarovou stanici IIS.
 
-| Klient      | Hardwarová stanice IPC | Služba IIS hardware stanice |
+| Klient      | Hardwarová stanice IPC | Hardwarová stanice IIS |
 |-------------|----------------------|----------------------|
 | Aplikace systému Windows | Ano                  | Ano                  |
-| Shluk POS   | Žádný                   | Ano                  |
+| Cloud POS   | Žádný                   | Ano                  |
 | Android     | Žádný                   | Ano                  |
 | iOS         | Žádný                   | Ano                  |
 
-## <a name="supported-device-types-by-hardware-station-type"></a>Podporované typy zařízení podle typu hardwaru stanice
-### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Moderní POS pro systém Windows pomocí hardware stanice IPC (předdefinovaná)
+## <a name="supported-device-types-by-hardware-station-type"></a>Podporované druhy zařízení podle typu hardwaru stanice
+### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Moderní POS pro systém Windows s hardwarovou stanicí IPC (vestavěnou)
 
 <table>
 <colgroup>
@@ -240,8 +240,8 @@ Přímo přes hardware stanice, která je integrována v moderní POS pro aplika
 </colgroup>
 <thead>
 <tr class="header">
-<th>Podporovaná zařízení třídy</th>
-<th>Podporované rozhraní</th>
+<th>Podporovaná třída zařízení</th>
+<th>Podporovaná rozhraní</th>
 </tr>
 </thead>
 <tbody>
@@ -275,38 +275,38 @@ Přímo přes hardware stanice, která je integrována v moderní POS pro aplika
 <td>MSR</td>
 <td><ul>
 <li>OPOS</li>
-<li>UWP (není vyžadováno žádné nastavení.)</li>
-<li>Klávesnice wedge (není vyžadováno žádné nastavení.)</li>
+<li>UWP (Není nutná instalace.)</li>
+<li>Převodník na signál klávesnice (Není nutná instalace.)</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Výstavce</td>
 <td><ul>
 <li>OPOS</li>
-<li>Síťové <strong>Poznámka:</strong> pouze jednu zásuvku lze nastavit v případě <strong>použití sdílených shift</strong> nastaven na zásuvky.</li>
+<li>Síťová <strong>poznámka:</strong> pouze jednu zásuvku lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Zásuvka 2</td>
 <td><ul>
 <li>OPOS</li>
-<li>Síťové <strong>Poznámka:</strong> pouze jednu zásuvku lze nastavit v případě <strong>použití sdílených shift</strong> nastaven na zásuvky.</li>
+<li>Síťová <strong>poznámka:</strong> pouze jednu zásuvku lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Skener</td>
 <td><ul>
 <li>OPOS</li>
-<li>UWP (není vyžadováno žádné nastavení.)</li>
-<li>Klávesnice wedge (není vyžadováno žádné nastavení.)</li>
+<li>UWP (Není nutná instalace.)</li>
+<li>Převodník na signál klávesnice (Není nutná instalace.)</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Skener 2</td>
 <td><ul>
 <li>OPOS</li>
-<li>UWP (není vyžadováno žádné nastavení.)</li>
-<li>Klávesnice wedge (není vyžadováno žádné nastavení.)</li>
+<li>UWP (Není nutná instalace.)</li>
+<li>Převodník na signál klávesnice (Není nutná instalace.)</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -315,7 +315,7 @@ Přímo přes hardware stanice, která je integrována v moderní POS pro aplika
 </tr>
 <tr class="odd">
 <td>Klávesnice pro kód PIN</td>
-<td>OPOS (podpora je poskytována prostřednictvím vlastní konektor platby).</td>
+<td>OPOS (podpora je poskytována prostřednictvím přizpůsobení platebního konektoru.)</td>
 </tr>
 <tr class="even">
 <td>Zaznamenání podpisu</td>
@@ -325,15 +325,15 @@ Přímo přes hardware stanice, která je integrována v moderní POS pro aplika
 <td>Patební terminál </td>
 <td><ul>
 <li>Podpora vlastního zařízení</li>
-<li>Síti (Další informace naleznete v dokumentaci konektor platby.)</li>
+<li>Síť (další informace naleznete v dokumentaci konektoru platby.)</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a>Všechny moderní POS klienty, kteří mají vyhrazené hardwarové stanice služby IIS
+### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a>Všechny moderní POS klienty, které mají vyhrazené hardwarové stanice IIS
 
-**Poznámka:** při IIS hardware stanice "vyhrazen," je vztah 1: 1 mezi klientem POS a hardware stanice.
+**Poznámka:** pokud je hardwarová stanice "vyhrazena", je vztah 1:1 mezi klientem POS a hardwarovou stanicí.
 
 <table>
 <colgroup>
@@ -342,8 +342,8 @@ Přímo přes hardware stanice, která je integrována v moderní POS pro aplika
 </colgroup>
 <thead>
 <tr class="header">
-<th>Podporovaná zařízení třídy</th>
-<th>Podporované rozhraní</th>
+<th>Podporovaná třída zařízení</th>
+<th>Podporovaná rozhraní</th>
 </tr>
 </thead>
 <tbody>
@@ -351,7 +351,7 @@ Přímo přes hardware stanice, která je integrována v moderní POS pro aplika
 <td>Tiskárna</td>
 <td><ul>
 <li>OPOS</li>
-<li>Ovladač pro systém Windows <strong>Poznámka:</strong> pro Windows tiskárny v síti, uživatel hardware stanice musí mít oprávnění k přístupu k tiskárně.</li>
+<li><strong>Poznámka</strong> k ovladači Windows: U tiskáren Windows v síti musí mít uživatel hardwarové stanice oprávnění k přístupu k tiskárně.</li>
 <li>Síť</li>
 </ul></td>
 </tr>
@@ -375,7 +375,7 @@ Přímo přes hardware stanice, která je integrována v moderní POS pro aplika
 <td>Výstavce</td>
 <td><ul>
 <li>OPOS</li>
-<li>Síťové <strong>Poznámka:</strong> pouze jednu zásuvku na hardwarovém profilu lze nastavit v případě <strong>použití sdílených shift</strong> nastaven na zásuvky.</li>
+<li>Síťová <strong>poznámka:</strong> pouze jednu zásuvku na každý hardwarový profil lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -399,25 +399,25 @@ Přímo přes hardware stanice, která je integrována v moderní POS pro aplika
 </tr>
 <tr class="even">
 <td>Klávesnice pro kód PIN</td>
-<td>OPOS (podpora je poskytována prostřednictvím vlastní konektor platby).</td>
+<td>OPOS (podpora je poskytována prostřednictvím přizpůsobení platebního konektoru.)</td>
 </tr>
 <tr class="odd">
-<td>SIG. zachycení</td>
+<td>Podpis zachycení</td>
 <td>OPOS</td>
 </tr>
 <tr class="even">
 <td>Patební terminál </td>
 <td><ul>
 <li>Podpora vlastního zařízení</li>
-<li>Síti (Další informace naleznete v dokumentaci konektor platby.)</li>
+<li>Síť (další informace naleznete v dokumentaci konektoru platby.)</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a>Všechny moderní POS klienty, kteří mají hardware stanice sdílené služby IIS
+### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a>Všechny moderní POS klienty, které mají sdílenou hardwarovou stanici IIS
 
-**Poznámka:** při IIS hardware stanice je "sdílení" více zařízení lze použít hardware stanice ve stejnou dobu. V tomto scénáři byste měli použít pouze zařízení, které jsou uvedeny v následující tabulce. Pokud se pokusíte sdílet zařízení, které zde nejsou uvedeny, jako jsou skenery čárového kódu a MSRs, dojde k chybám při více zařízení nárokovat stejné periferie. V budoucnu taková konfigurace explicitně moci.
+**Poznámka:** Když je hardwarová stanice IIS "sdílena", více zařízení může používat hardwarovou stanici najednou. V tomto scénáři byste měli používat pouze zařízení uvedená v následující tabulce. Pokud se pokoušíte sdílet zařízení, která zde nejsou uvedena, jako například čtečky čárových kódů a MSR, dojde k chybě, jakmile se několik zařízení pokusí uplatnit stejné periferní zařízení. V budoucnu se takové konfiguraci explicitně zabrání.
 
 <table>
 <colgroup>
@@ -426,8 +426,8 @@ Přímo přes hardware stanice, která je integrována v moderní POS pro aplika
 </colgroup>
 <thead>
 <tr class="header">
-<th>Podporovaná zařízení třídy</th>
-<th>Podporované rozhraní</th>
+<th>Podporovaná třída zařízení</th>
+<th>Podporovaná rozhraní</th>
 </tr>
 </thead>
 <tbody>
@@ -435,7 +435,7 @@ Přímo přes hardware stanice, která je integrována v moderní POS pro aplika
 <td>Tiskárna</td>
 <td><ul>
 <li>OPOS</li>
-<li>Ovladač pro systém Windows <strong>Poznámka:</strong> pro Windows tiskárny v síti, uživatel hardware stanice musí mít oprávnění k přístupu k tiskárně.</li>
+<li><strong>Poznámka</strong> k ovladači Windows: U tiskáren Windows v síti musí mít uživatel hardwarové stanice oprávnění k přístupu k tiskárně.</li>
 <li>Síť</li>
 </ul></td>
 </tr>
@@ -451,7 +451,7 @@ Přímo přes hardware stanice, která je integrována v moderní POS pro aplika
 <td>Výstavce</td>
 <td><ul>
 <li>OPOS</li>
-<li>Síťové <strong>Poznámka:</strong> pouze jednu zásuvku na hardwarovém profilu lze nastavit v případě <strong>použití sdílených shift</strong> nastaven na zásuvky.</li>
+<li>Síťová <strong>poznámka:</strong> pouze jednu zásuvku na každý hardwarový profil lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -465,172 +465,172 @@ Přímo přes hardware stanice, která je integrována v moderní POS pro aplika
 <td>Patební terminál </td>
 <td><ul>
 <li>Podpora vlastního zařízení</li>
-<li>Síti (Další informace naleznete v dokumentaci konektor platby.)</li>
+<li>Síť (další informace naleznete v dokumentaci konektoru platby.)</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="configuration-for-supported-scenarios"></a>Konfigurace pro podporované scénáře
-Další informace o vytváření hardwarových profilů naleznete v tématu [definovat a udržovat kanál klientů, včetně registrů a hardware stanice](define-maintain-channel-clients-registers-hw-stations.md). **Poznámka:** pro Microsoft Dynamics 365 pro verzi operace 1611, hardwarový profil stanice již není používán. Atributy, které jste nastavili v hardwarovém profilu stanice jsou nyní součástí hardware stanice sám.
+Další informace o vytváření hardwarových profilů naleznete v tématu [Definování a udržování kanálových klientů, včetně registrů a hardwarových stanic](define-maintain-channel-clients-registers-hw-stations.md). **Poznámka:** Pro Microsoft Dynamics 365 for Operations, verzi 1611, hardwarový profil stanice již není používán. Atributy, které jste dříve nastavili v profilu hardwarové stanice, jsou nyní součástí samotné hardwarové stanice.
 
-### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Moderní POS pro systém Windows pomocí hardware stanice IPC (předdefinovaná)
+### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Moderní POS pro systém Windows s hardwarovou stanicí IPC (vestavěnou)
 
-Tato konfigurace je nejtypičtější konfiguraci pro tradiční, pevné Registry POS. V tomto scénáři je informace v profilu hardwaru mapovány přímo na samotný registr. Číslo terminálu EFT by měl také nastavit v registru sám. Chcete-li nastavit tuto konfiguraci, postupujte takto.
+Tato konfigurace je nejtypičtější konfigurací tradičních pevných POS registrů. Pro tento scénář jsou informace o hardwarovém profilu mapovány přímo do samotného registru. Číslo terminálu EFT by mělo být také nastaveno v samotném registru. Chcete-li nastavit tuto konfiguraci, postupujte následujícím způsobem:
 
-1.  Vytvoření hardwarového profilu, kde jsou nakonfigurovány všechny požadované periferie.
-2.  Mapovat Pokladna POS hardwarový profil.
-3.  Vytvořit hardwarové stanice **Dedicated** typ maloobchodu použití Pokladna POS. Popis je nepovinný. **Poznámka:** nemáte, chcete-li nastavit další vlastnosti na stanici hardwaru. Všechny další požadované informace, například profil hardwaru budou pocházet z rejstříku sám.
-4.  Klepněte na tlačítko **maloobchodní a commerce**&gt;**Retail IT**&gt;**plán distribuce**.
-5.  Vyberte **1090** plán distribuce synchronizovat nový hardwarový profil do úložiště. Klepněte na tlačítko **nyní spustit** Chcete-li synchronizovat změny POS.
-6.  Vyberte **1040** plán distribuce synchronizovat nový hardware stanice do úložiště. Klepněte na tlačítko **nyní spustit** Chcete-li synchronizovat změny POS.
+1.  Vytvořte profil hardwaru, ve kterém jsou nakonfigurovány všechny potřebné periferie.
+2.  Namapovat hardwarový profil k pokladně POS.
+3.  Pak vytvořte hardwarovou stanici typu **Vyhrazený** pro obchod, kde bude pokladna POS používána. Popis je volitelný. **Poznámka:** Na hardwarové stanici nemusíte nastavovat žádné jiné vlastnosti. Všechny další požadované informace, například profil hardwaru budou pocházet ze samotné poklady.
+4.  Klikněte na **Maloobchod a velkoobchod** &gt; **IT pro maloobchod** &gt; **Plán distribuce**.
+5.  Vyberte plán distribuce **1090** pro synchronizování nového hardwarového profilu do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
+6.  Vyberte plán distribuce **1040** pro synchronizování nové hardwarové stanice do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
 7.  Instalace a aktivace moderní POS pro systém Windows.
-8.  Moderní POS pro systém Windows spustit a začít používat připojená periferní zařízení.
+8.  Spusťte moderní POS pro systém Windows spustit a začněte používat připojená periferní zařízení.
 
-### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a>Všechny moderní POS klienty, kteří mají vyhrazené hardwarové stanice služby IIS
+### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a>Všechny moderní POS klienty, které mají vyhrazené hardwarové stanice IIS
 
-Tuto konfiguraci lze použít pro všechny klienty moderní POS, které mají hardware stanice, která používá výhradně jeden POS zaregistrovat. Chcete-li nastavit tuto konfiguraci, postupujte takto.
+Tato konfigurace může být použita pro všechny moderní POS klienty, které mají hardwarovou stanici, která je používána výlučně jednou pokladnou POS. Chcete-li nastavit tuto konfiguraci, postupujte následujícím způsobem:
 
-1.  Vytvoření hardwarového profilu, kde jsou nakonfigurovány všechny požadované periferie.
-2.  Vytvořit hardwarové stanice **Dedicated** typ maloobchodu použití Pokladna POS.
-3.  Vyhrazené hardwarové stanice nastavte následující vlastnosti:
-    -   **Název hostitele** – název hostitelského počítače, kde bude spuštěn hardwaru stanice. **Poznámka:** Cloud POS lze vyřešit **localhost** k určení místního počítače, kde běží Cloud POS. Však certifikát, který je nutný pro Cloud POS spárovat hardware stanice musí mít také "Localhost" jako název počítače. Chcete-li zabránit problémům, doporučujeme seznamu instance každé vyhrazené hardwarové stanice pro obchod, jak je požadováno. Pro každé hardwarové stanice hostitele název by měl být název konkrétního počítače kde budou nasazeny hardwarové stanice.
-    -   **Port** – port, který chcete použít ke komunikaci s klientem moderní POS hardwaru stanice.
-    -   **Hardwarový profil** -Pokud není hardwarový profil, pokud hardware stanice sám, bude použit hardwarový profil, který je přiřazen k rejstříku.
-    -   **Číslo EFT POS** – ID terminálu EFT při povolení EFT jsou odesílány. Toto ID je k dispozici procesoru platební karty.
-    -   **Název balíčku** – balíček hardware stanice pro použití při nasazení hardwaru stanice.
+1.  Vytvořte profil hardwaru, ve kterém jsou nakonfigurovány všechny potřebné periferie.
+2.  Pak vytvořte hardwarovou stanici typu **Vyhrazený** pro obchod, kde bude pokladna POS používána.
+3.  Na vyhrazené hardwarové stanici nastavte následující vlastnosti:
+    -   **Název hostitele** – název hostitelského počítače kde bude spuštěna hardwarová stanice. **Poznámka:** Cloudová POS dokáže rozluštit **localhost** pro určení místního počítače, kde běží tato cloudová POS. Certifikát, který je požadován pro spárování cloudové POS s hardwarovou stanicí, však musí mít jako název počítače také "Localhost". Chcete-li se vyhnout problémům, doporučujeme v případě potřeby uvést instanci každé vyhrazené hardwarové stanice pro úložiště. Pro každou hardwarovou stanici by měl název hostitele odpovídat názvu počítače, kde bude tato hardwarová stanice umístěna.
+    -   **Port** – Port, který má hardwarová stanice použít pro komunikaci s moderním POS klientem.
+    -   **Hardwarový profil** - Není-li hardwarový profil poskytován na samotné hardwarové stanici, použije se hardwarový profil, který je přiřazen k pokladně.
+    -   **Číslo EFT POS** – ID terminálu EFT, které je použito při odesílání EFT autorizací. Toto ID je poskytováno procesorem platební karty.
+    -   **Název balíčku** – balíček hardwarové stanice pro použití při nasazení hardwarové stanice.
 
-4.  Klepněte na tlačítko **maloobchodní a commerce**&gt;**Retail IT**&gt;**plán distribuce**.
-5.  Vyberte **1090** plán distribuce synchronizovat nový hardwarový profil do úložiště. Klepněte na tlačítko **nyní spustit** Chcete-li synchronizovat změny POS.
-6.  Vyberte **1040** plán distribuce synchronizovat nový hardware stanice do úložiště. Klepněte na tlačítko **nyní spustit** Chcete-li synchronizovat změny POS.
-7.  Nainstalujte hardware stanice. Další informace o instalaci hardwaru stanice, viz [maloobchodní hardwarové stanice konfiguraci a instalaci](retail-hardware-station-configuration-installation.md).
-8.  Instalace a aktivace moderní POS. Další informace o instalaci moderní POS naleznete v tématu [instalace a konfigurace programu Retail POS moderní](retail-modern-pos-device-activation.md).
-9.  Přihlášení do moderní POS a vyberte **provádět operace bez zásuvky**.
-10. Start **spravovat hardware stanice** operace.
-11. Klepněte na tlačítko **Správa**.
-12. Na stránce Správa hardwaru stanice nastavte možnost zapnout hardware stanice.
-13. Vyberte hardware stanice a potom klepněte na tlačítko **pár**.
-14. Poté, co je spárováno stanice hardwaru, klepněte na tlačítko **Zavřít**.
-15. Na stránce Výběr stanice hardware klepněte na naposledy vybraný hardwarový stanice na aktivní.
+4.  Klikněte na **Maloobchod a velkoobchod** &gt; **IT pro maloobchod** &gt; **Plán distribuce**.
+5.  Vyberte plán distribuce **1090** pro synchronizování nového hardwarového profilu do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
+6.  Vyberte plán distribuce **1040** pro synchronizování nové hardwarové stanice do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
+7.  Instalace hardwarové stanice. Další informace o instalaci hardwarové stanice, viz [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md).
+8.  Instalace a aktivace moderní POS. Další informace o instalaci moderní POS, viz [Instalace a konfigurace moderní POS pro maloobchod](retail-modern-pos-device-activation.md).
+9.  Přihlášte se do moderní POS a vyberte **Provést operace bez zásuvky**.
+10. Spusťte operaci **Spravovat hardwarové stanice**.
+11. Klikněte na **Spravovat**.
+12. Na stránce správy hardwarových stanic použijte možnost zapnutí hardwarové stanice.
+13. Vyberte hardwarovou stanici, kterou chcete použít a potom klikněte na **Spárovat**.
+14. Poté, co je hardwarová stanice spárována, klikněte na tlačítko **Zavřít**.
+15. Na stránce výběru hardwarové stanice klikněte na nedávno vybranou hardwarovou stanici, abyste ji aktivovali.
 
-### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a>Všechny moderní POS klienty, kteří mají hardware stanice sdílené služby IIS
+### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a>Všechny moderní POS klienty, které mají sdílenou hardwarovou stanici IIS
 
-Tuto konfiguraci lze použít pro všechny klienty moderní POS, které sdílejí hardware stanice s jinými zařízeními. Chcete-li nastavit tuto konfiguraci, postupujte takto.
+Tato konfigurace může být použita pro všechny moderní POS klienty, které sdílejí hardwarové stanice s jinými zařízeními. Chcete-li nastavit tuto konfiguraci, postupujte následujícím způsobem:
 
-1.  Vytvoření hardwarového profilu, kde jsou nakonfigurovány požadované příslušenství.
-2.  Vytvořit hardwarové stanice **sdílené** typ maloobchodu použití Pokladna POS.
-3.  Na stanici sdílený hardware nastavte následující vlastnosti:
-    -   **Název hostitele** – název hostitelského počítače, kde bude spuštěn hardwaru stanice.
-    -   **Popis** – Text, který pomůže identifikovat hardware stanice, jako například **vrátí** nebo **přední úložiště**.
-    -   **Port** – port, který chcete použít ke komunikaci s klientem moderní POS hardwaru stanice.
-    -   **Hardwarový profil** – pro sdílený hardware stanice by měl mít každý hardware stanice hardwarový profil. Hardwarové profily lze sdílet mezi stanicemi hardware, ale musí být mapována na každé stanici hardwaru. Kromě toho doporučujeme použít sdílené směny, použijete-li více zařízení stejného sdíleného hardware stanice. Nastavit sdílené shift, klepněte na tlačítko **maloobchodní a commerce**&gt;**nastavení kanálu**&gt;**instalace POS**&gt;**profily POS**&gt;**hardwarové profily**. Pro každý sdílený hardwarový profil vyberte zásuvku a nastavte **zásuvku sdílených shift** možnost na **Ano**.
-    -   **Číslo EFT POS** – ID terminálu EFT při povolení EFT jsou odesílány. Toto ID je k dispozici procesoru platební karty.
-    -   **Název balíčku** – balíček hardware stanice pro použití při nasazení hardwaru stanice.
+1.  Vytvořte hardwarový profil, ve kterém jsou nakonfigurovány potřebné periferie.
+2.  Pak vytvořte hardwarovou stanici typu **Sdílený** pro obchod, kde bude pokladna POS používána.
+3.  Na sdílené hardwarové stanici nastavte následující vlastnosti:
+    -   **Název hostitele** – název hostitelského počítače kde bude spuštěna hardwarová stanice.
+    -   **Popis** – Text, který pomůže identifikovat hardwarovou stanici, jako například **Vratky** nebo **Přední část obchodu**.
+    -   **Port** – Port, který má hardwarová stanice použít pro komunikaci s moderním POS klientem.
+    -   **Hardwarový profil** – každá sdílená hardwarové stanice by měla mít svůj hardwarový profil. Hardwarové profily lze sdílet mezi jednotlivými hardwarovými stanicemi, ale musí být namapovány na každou z nich. Navíc doporučujeme použít sdílené směny, pokud více zařízení používá stejnou sdílenou hardwarovou stanici. Pro nastavení sdílené směny, klikněte na **Maloobchod a velkoobchod** &gt; **Konfigurace kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Hardwarové profily**. Pro každý sdílený hardwarový profil vyberte zásuvku hotovosti a nastavte možnost **Zásuvka sdílené směny** na **Ano**.
+    -   **Číslo EFT POS** – ID terminálu EFT, které je použito při odesílání EFT autorizací. Toto ID je poskytováno procesorem platební karty.
+    -   **Název balíčku** – balíček hardwarové stanice pro použití při nasazení hardwarové stanice.
 
-4.  Opakujte kroky 2 a 3 pro každý další hardware stanice, který je vyžadován v úložišti.
-5.  Klepněte na tlačítko **maloobchodní a commerce**&gt;**Retail IT**&gt;**plán distribuce**.
-6.  Vyberte **1090** plán distribuce synchronizovat nový hardwarový profil do úložiště. Klepněte na tlačítko **nyní spustit** Chcete-li synchronizovat změny POS.
-7.  Vyberte **1040** plán distribuce synchronizovat nový hardware stanice do úložiště. Klepněte na tlačítko **nyní spustit** Chcete-li synchronizovat změny POS.
-8.  Nainstalujte hardware stanice každý hostitelský počítač, který jste vytvořili v krocích 2 a 3. Další informace o instalaci hardwaru stanice, viz [maloobchodní hardwarové stanice konfiguraci a instalaci](retail-hardware-station-configuration-installation.md).
-9.  Instalace a aktivace moderní POS. Další informace o instalaci moderní POS naleznete v tématu [instalace a konfigurace programu Retail POS moderní](retail-modern-pos-device-activation.md).
-10. Přihlášení do moderní POS a vyberte **provádět operace bez zásuvky**.
-11. Start **spravovat hardware stanice** operace.
+4.  Opakujte kroky 2 a 3 pro každou další hardwarovou stanici, která je v obchodě vyžadována.
+5.  Klikněte na **Maloobchod a velkoobchod** &gt; **IT pro maloobchod** &gt; **Plán distribuce**.
+6.  Vyberte plán distribuce **1090** pro synchronizování nového hardwarového profilu do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
+7.  Vyberte plán distribuce **1040** pro synchronizování nové hardwarové stanice do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
+8.  Nainstalujte hardwarovou stanici na každý hostitelský počítač, který jste vytvořili v krocích 2 a 3. Další informace o instalaci hardwarové stanice, viz [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md).
+9.  Instalace a aktivace moderní POS. Další informace o instalaci moderní POS, viz [Instalace a konfigurace moderní POS pro maloobchod](retail-modern-pos-device-activation.md).
+10. Přihlášte se do moderní POS a vyberte **Provést operace bez zásuvky**.
+11. Spusťte operaci **Spravovat hardwarové stanice**.
 
-12. Klepněte na tlačítko **Správa**.
-13. Na stránce Správa hardwaru stanice nastavte možnost zapnout hardware stanice.
-14. Vyberte hardware stanice a potom klepněte na tlačítko **pár**.
-15. Krok 14 zopakujte pro každé hardwarové stanice, která bude používat moderní POS.
-16. Jakmile jsou spárovány všechny stanice potřebný hardware, klepněte na tlačítko **Zavřít**.
-17. Na stránce Výběr stanice hardware klepněte na naposledy vybraný hardwarový stanice na aktivní. **Poznámka:** Pokud zařízení často používají různé hardwarové stanice, doporučujeme nakonfigurovat v moderní POS výzvy pokladníci po jejich zahájení procesu úhrady vyberte hardware stanice. Klepněte na tlačítko **maloobchodní a commerce**&gt;**nastavení kanálu**&gt;**instalace POS**&gt;**registruje**. Vyberte registr a poté nastavte **na nabídku vyberte** možnost na **Ano**. Použití **1090** plán distribuce synchronizovat změny databáze kanálů.
+12. Klikněte na **Spravovat**.
+13. Na stránce správy hardwarových stanic použijte možnost zapnutí hardwarové stanice.
+14. Vyberte hardwarovou stanici, kterou chcete použít a potom klikněte na **Spárovat**.
+15. Zopakujte krok 14 pro každou hardwarovou stanici, kterou bude používat moderní POS.
+16. Jakmile jsou spárovány všechny potřebné hardwarové stanice, klikněte na tlačítko **Zavřít**.
+17. Na stránce výběru hardwarové stanice klikněte na nedávno vybranou hardwarovou stanici, abyste ji aktivovali. **Poznámka:** Pokud zařízení často používají různé hardwarové stanice, doporučujeme, abyste nakonfigurovali moderní POS tak, aby vyzvaly pokladníky k výběru hardwarové stanice při zahájení úhradového procesu. Klikněte na **Maloobchod a velkoobchod** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Pokladny**. Vyberte pokladu a poté nastavte možnost **Vybrat při úhradě** na **Ano**. Použijte plán distribuce **1090** k synchronizování změn do databáze kanálů.
 
 ## <a name="extensibility"></a>Rozšiřitelnost
-Informace o scénářích rozšiřitelnosti pro hardware stanice naleznete v tématu [rozšíření Hardware stanice](dev-itpro/hardware-station-extensibility.md).
+Pro více informací o scénářích rozšiřitelnosti hardwarových stanic, viz [Rozšíření hardwarových stanic](dev-itpro/hardware-station-extensibility.md).
 
 ## <a name="security"></a>Zabezpečení
-Podle aktuální bezpečnostní normy měla používat následující nastavení v produkčním prostředí: **Poznámka:** instalační program hardwaru stanice automaticky provést tyto úpravy registru jako součást instalace prostřednictvím samoobslužné služby.
+Podle stávajících bezpečnostních standardů je třeba ve výrobním prostředí použít následující nastavení: **Poznámka:** Instalátor hardwarových stanic automaticky provede tyto úpravy registru jako součást instalace prostřednictvím samoobsluhy.
 
--   Protokol SSL (Secure Sockets Layer) (SSL) by mělo být zakázáno.
--   Pouze zabezpečení TLS (Transport Layer) verze 1.2 (nebo aktuální nejvyšší) je povolena a používá. **Poznámka:** ve výchozím nastavení, SSL a všechny verze s výjimkou TLS 1.2 TLS jsou zakázány. Chcete-li upravit nebo povolit tyto hodnoty, postupujte takto:
-    1.  Stiskněte klávesu s logem Windows key + R otevřete **spuštění** okna.
-    2.  V **Open** pole, zadejte **Regedit**a potom klepněte na tlačítko **OK**.
-    3.  Pokud **řízení uživatelských účtů** okno se zprávou se zobrazí, klepněte na tlačítko **Ano**.
-    4.  V **Editor registru** okna, přejděte na **HKEY\_místní\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols**. Následující klávesy byli jste automaticky zařazeni pouze povolit protokol TLS 1.2:
-        -   TLS 1.2Server: povoleno = 1
-        -   TLS 1.2Server:DisabledByDefault = 0
-        -   TLS 1.2Client: povoleno = 1
-        -   TLS 1.2Client:DisabledByDefault = 0
-        -   TLS 1.1Server: povoleno = 0
-        -   TLS 1.1Client: povoleno = 0
-        -   TLS 1.0Server: povoleno = 0
-        -   TLS 1.0Client: povoleno = 0
-        -   SSL 3.0Server: povoleno = 0
-        -   SSL 3.0Client: povoleno = 0
-        -   SSL 2.0Server: povoleno = 0
-        -   SSL 2.0Client: povoleno = 0
--   Žádné další síťové porty musí být otevřené, pokud jsou vyžadovány z důvodu známé, zadaný.
--   Sdílení zdrojů mezi původu musí být zakázána a určit povolený původu, které byly přijaty.
--   Pouze důvěryhodné certifikační úřady by měla sloužit k získání certifikátů, které budou použity v počítačích se systémem hardware stanice.
+-   Protokol Secure Sockets Layer (SSL) by měl být vypnut.
+-   Je třeba povolit a používat pouze bezpečnostní vrstvu Transport Layer Security (TLS) verze 1.2 (nebo stávající nejnovější verzi). **Poznámka:** Ve výchozím nastavení, SSL a všechny verze TLS, s vyjímkou TLS 1.2, jsou zakázány. Chcete-li upravit nebo povolit tyto hodnoty, postupujte takto:
+    1.  Stiskněte klávesu s logem Windows + R pro otevření okna **Spustit**.
+    2.  V poli **Otevřít** zadejte **Regedit**a potom klikněte na tlačítko **OK**.
+    3.  Pokud se zobrazí okno **Řízení uživatelských účtů**, klikněte na tlačítko **Ano**.
+    4.  V okně **Editoru registru** přejděte na **HKEY\_LOCAL\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols**. Následující klíče byly automaticky vloženy, aby umožnily použití pouze protokolu TLS 1.2:
+        -   TLS 1.2Server:Enabled=1
+        -   TLS 1.2Server:DisabledByDefault=0
+        -   TLS 1.2Client:Enabled=1
+        -   TLS 1.2Client:DisabledByDefault=0
+        -   TLS 1.1Server:Enabled=0
+        -   TLS 1.1Client:Enabled=0
+        -   TLS 1.0Server:Enabled=0
+        -   TLS 1.0Client:Enabled=0
+        -   SSL 3.0Server:Enabled=0
+        -   SSL 3.0Client:Enabled=0
+        -   SSL 2.0Server:Enabled=0
+        -   SSL 2.0Client:Enabled=0
+-   Žádné další síťové porty by neměly být otevřené, pokud nejsou vyžadovány ze známých a konkrétních důvodů.
+-   Sdílení prostředků mezi zdroji musí být zakázáno a musí specifikovat povolené zdroje, které jsou akceptovány.
+-   K získání certifikátů, které budou použity v počítačích, které spouštějí hardwarovou stanici, by měly být použity pouze důvěryhodné certifikační autority.
 
-**Poznámka:** je velmi důležité zkontrolovat bezpečnostní pokyny pro služby IIS a požadavky na platební karty Industry (PCI).
+**Poznámka:** Je velmi důležité, abyste přezkoumali bezpečnostní pokyny IIS a také požadavky od Payment Card Industry (PCI).
 
 ## <a name="peripheral-simulator"></a>Simulátor periferních zařízení
-Informace naleznete v tématu [maloobchodní periferní simulátor](retail-peripheral-simulator.md).
+Informace naleznete v tématu [Maloobchodní simulátor periferií](retail-peripheral-simulator.md).
 
-## <a name="microsofttested-peripheral-devices"></a>Periferní zařízení Microsofttested
-### <a name="ipc-built-in-hardware-station"></a>Hardwarová stanice IPC (předdefinovaná)
+## <a name="microsofttested-peripheral-devices"></a>Periferní zařízení otestována Microsoftem
+### <a name="ipc-built-in-hardware-station"></a>Hardwarová stanice IPC (vestavěná)
 
-Následující příslušenství byly testovány pomocí stanice IPC hardware, který je integrován v moderní POS pro systém Windows.
+Následující periferní zařízení byla testována pomocí hardwarové stanice IPC, která je zabudována do moderního POS pro systém Windows.
 
 #### <a name="printer"></a>Tiskárna
 
 | Výrobce | Model    | Rozhraní | Poznámky                |
 |--------------|----------|-----------|-------------------------|
-| Tiskárny EPSON        | TM-T88IV | OPOS      |                         |
-| Tiskárny EPSON        | TM-T88V  | OPOS      |                         |
-| Hvězda         | TSP650II | OPOS      |                         |
-| Hvězda         | TSP650II | Vlastní    | Připojení prostřednictvím sítě   |
-| Hvězda         | mPOP     | OPOS      | Připojen pomocí Bluetooth |
-| HP           | F7M67AA  | OPOS      | Napájení USB             |
+| Epson        | Tm-T88IV | OPOS      |                         |
+| Epson        | TM-T88V  | OPOS      |                         |
+| Star         | TSP650II | OPOS      |                         |
+| Star         | TSP650II | Vlastní    | Připojeno prostřednictvím sítě   |
+| Star         | mPOP     | OPOS      | Připojeno pomocí Bluetooth |
+| HP           | F7M67AA  | OPOS      | Napájené USB             |
 
 #### <a name="bar-code-scanner"></a>Skener čárových kódů
 
 | Výrobce  | Model         | Rozhraní | Poznámky |
 |---------------|---------------|-----------|----------|
-| Společnost Motorola      | DS9208        | OPOS      |          |
+| Motorola      | DS9208        | OPOS      |          |
 | Honeywell     | 1900          | UWP       |          |
 | Symbol        | LS2208        | OPOS      |          |
-| HP integrovaný | E1L07AA       | OPOS      |          |
+| HP Integrated | E1L07AA       | OPOS      |          |
 | Datalogic     | Magellan 8400 | OPOS      |          |
 
 #### <a name="pin-pad"></a>Klávesnice pro kód PIN
 
 | Výrobce | Model  | Rozhraní | Poznámky                                        |
 |--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Vyžaduje vlastní konektor platby |
+| VeriFone     | 1000SE | OPOS      | Vyžaduje úpravu konektoru platby |
 
 #### <a name="payment-terminal"></a>Patební terminál 
 
 | Výrobce | Model | Rozhraní | Poznámky                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Vlastní    | Vyžaduje vlastní konektor platby                                |
-| VeriFone     | MX925 | Vlastní    | Vyžaduje vlastní konektor platby; připojit prostřednictvím sítě a USB |
-| VeriFone     | MX915 | Vlastní    | Vyžaduje vlastní konektor platby; připojit prostřednictvím sítě a USB |
+| Equinox      | L5300 | Vlastní    | Vyžaduje úpravu konektoru platby                                |
+| VeriFone     | MX925 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
+| VeriFone     | MX915 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
 
-#### <a name="cash-drawer"></a>Zásuvku
+#### <a name="cash-drawer"></a>Zásuvka s hotovostí
 
 | Výrobce | Model     | Rozhraní | Poznámky                |
 |--------------|-----------|-----------|-------------------------|
-| Hvězda         | mPOP      | OPOS      | Připojen pomocí Bluetooth |
-| APG          | Atwood    | Vlastní    | Připojení prostřednictvím sítě   |
-| Hvězda         | SMD2 1317 | OPOS      |                         |
+| Star         | mPOP      | OPOS      | Připojeno pomocí Bluetooth |
+| APG          | Atwood    | Vlastní    | Připojeno prostřednictvím sítě   |
+| Star         | SMD2-1317 | OPOS      |                         |
 | HP           | QT457AA   | OPOS      |                         |
 
 #### <a name="line-display"></a>Řádkový displej
 
 | Výrobce  | Model   | Rozhraní | Poznámky |
 |---------------|---------|-----------|----------|
-| HP integrovaný | G6U79AA | OPOS      |          |
-| Tiskárny EPSON         | M58DC   | OPOS      |          |
+| HP Integrated | G6U79AA | OPOS      |          |
+| Epson         | M58DC   | OPOS      |          |
 
 #### <a name="signature-capture"></a>Zaznamenání podpisu
 
@@ -652,57 +652,57 @@ Následující příslušenství byly testovány pomocí stanice IPC hardware, k
 | Magtek       | 21073062    | OPOS      |          |
 | HP           | IDRA-334133 | OPOS      |          |
 
-### <a name="dedicated-iis-hardware-station"></a>Vyhrazené hardwarové stanice služby IIS
+### <a name="dedicated-iis-hardware-station"></a>Vyhrazená hardwarová stanice IIS
 
-Následující příslušenství byly testovány pomocí vyhrazené (nesdíleném) hardware stanice IIS spolu s moderní POS pro systém Windows a Cloud POS.
+Následující periferní zařízení byly testovány pomocí vyhrazené, nesdílené, hardwarové stanice (IIS), společně s moderním POS pro systém Windows a cloudovým POS.
 
 #### <a name="printer"></a>Tiskárna
 
 | Výrobce | Model    | Rozhraní | Poznámky                  |
 |--------------|----------|-----------|---------------------------|
-| Tiskárny EPSON        | TM-T88IV | OPOS      |                           |
-| Tiskárny EPSON        | TM-T88V  | OPOS      |                           |
-| Hvězda         | TSP650II | OPOS      |                           |
-| Hvězda         | TSP650II | Vlastní    | Připojení prostřednictvím sítě     |
-| Hvězda         | TSP100   | OPOS      | Vyžaduje ovladače TSP650II |
-| HP           | F7M67AA  | OPOS      | Napájení USB               |
+| Epson        | Tm-T88IV | OPOS      |                           |
+| Epson        | TM-T88V  | OPOS      |                           |
+| Star         | TSP650II | OPOS      |                           |
+| Star         | TSP650II | Vlastní    | Připojeno prostřednictvím sítě     |
+| Star         | TSP100   | OPOS      | Vyžaduje ovladače TSP650II |
+| HP           | F7M67AA  | OPOS      | Napájené USB               |
 
 #### <a name="bar-code-scanner"></a>Skener čárových kódů
 
 | Výrobce  | Model   | Rozhraní | Poznámky |
 |---------------|---------|-----------|----------|
-| Společnost Motorola      | DS9208  | OPOS      |          |
+| Motorola      | DS9208  | OPOS      |          |
 | Symbol        | LS2208  | OPOS      |          |
-| HP integrovaný | E1L07AA | OPOS      |          |
+| HP Integrated | E1L07AA | OPOS      |          |
 
 #### <a name="pin-pad"></a>Klávesnice pro kód PIN
 
 | Výrobce | Model  | Rozhraní | Poznámky                                        |
 |--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Vyžaduje vlastní konektor platby |
+| VeriFone     | 1000SE | OPOS      | Vyžaduje úpravu konektoru platby |
 
 #### <a name="payment-terminal"></a>Patební terminál 
 
 | Výrobce | Model | Rozhraní | Poznámky                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Vlastní    | Vyžaduje vlastní konektor platby                                |
-| VeriFone     | MX925 | Vlastní    | Vyžaduje vlastní konektor platby; připojit prostřednictvím sítě a USB |
-| VeriFone     | MX915 | Vlastní    | Vyžaduje vlastní konektor platby; připojit prostřednictvím sítě a USB |
+| Equinox      | L5300 | Vlastní    | Vyžaduje úpravu konektoru platby                                |
+| VeriFone     | MX925 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
+| VeriFone     | MX915 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
 
-#### <a name="cash-drawer"></a>Zásuvku
+#### <a name="cash-drawer"></a>Zásuvka s hotovostí
 
 | Výrobce | Model     | Rozhraní | Poznámky              |
 |--------------|-----------|-----------|-----------------------|
-| APG          | Atwood    | Vlastní    | Připojení prostřednictvím sítě |
-| Hvězda         | SMD2 1317 | OPOS      |                       |
+| APG          | Atwood    | Vlastní    | Připojeno prostřednictvím sítě |
+| Star         | SMD2-1317 | OPOS      |                       |
 | HP           | QT457AA   | OPOS      |                       |
 
 #### <a name="line-display"></a>Řádkový displej
 
 | Výrobce  | Model   | Rozhraní | Poznámky |
 |---------------|---------|-----------|----------|
-| HP integrovaný | G6U79AA | OPOS      |          |
-| Tiskárny EPSON         | M58DC   | OPOS      |          |
+| HP Integrated | G6U79AA | OPOS      |          |
+| Epson         | M58DC   | OPOS      |          |
 
 #### <a name="signature-capture"></a>Zaznamenání podpisu
 
@@ -724,88 +724,88 @@ Následující příslušenství byly testovány pomocí vyhrazené (nesdílené
 | Magtek       | 21073062    | OPOS      |          |
 | HP           | IDRA-334133 | OPOS      |          |
 
-### <a name="shared-iis-hardware-station"></a>Sdílené služby IIS hardware stanice
+### <a name="shared-iis-hardware-station"></a>Sdílená hardwarová stanice IIS
 
-Pomocí sdílené stanice hardwaru služby IIS a moderní POS pro systém Windows a Cloud POS byly testovány následující příslušenství. **Poznámka:** jsou podporovány pouze tiskárnu, Platební terminál a hotovostí.
+Následující periferní zařízení byla testována pomocí sdílené hardwarové stanice (IIS), společně s moderním POS pro systém Windows a cloudovým POS. **Poznámka:** je podporována pouze tiskárna, platební terminál a zásuvka hotovosti.
 
 #### <a name="printer"></a>Tiskárna
 
 | Výrobce | Model    | Rozhraní | Poznámky                  |
 |--------------|----------|-----------|---------------------------|
-| Tiskárny EPSON        | TM-T88IV | OPOS      |                           |
-| Tiskárny EPSON        | TM-T88V  | OPOS      |                           |
-| Hvězda         | TSP650II | OPOS      |                           |
-| Hvězda         | TSP650II | Vlastní    | Připojení prostřednictvím sítě     |
-| Hvězda         | TSP100   | OPOS      | Vyžaduje ovladače TSP650II |
-| HP           | F7M67AA  | OPOS      | Napájení USB               |
+| Epson        | Tm-T88IV | OPOS      |                           |
+| Epson        | TM-T88V  | OPOS      |                           |
+| Star         | TSP650II | OPOS      |                           |
+| Star         | TSP650II | Vlastní    | Připojeno prostřednictvím sítě     |
+| Star         | TSP100   | OPOS      | Vyžaduje ovladače TSP650II |
+| HP           | F7M67AA  | OPOS      | Napájené USB               |
 
 #### <a name="payment-terminal"></a>Patební terminál 
 
 | Výrobce | Model | Rozhraní | Poznámky                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
-| VeriFone     | MX925 | Vlastní    | Vyžaduje vlastní konektor platby; připojit prostřednictvím sítě a USB |
-| VeriFone     | MX915 | Vlastní    | Vyžaduje vlastní konektor platby; připojit prostřednictvím sítě a USB |
+| VeriFone     | MX925 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
+| VeriFone     | MX915 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
 
-#### <a name="cash-drawer"></a>Zásuvku
+#### <a name="cash-drawer"></a>Zásuvka s hotovostí
 
 | Výrobce | Model     | Rozhraní | Poznámky              |
 |--------------|-----------|-----------|-----------------------|
-| APG          | Atwood    | Vlastní    | Připojení prostřednictvím sítě |
-| Hvězda         | SMD2 1317 | OPOS      |                       |
+| APG          | Atwood    | Vlastní    | Připojeno prostřednictvím sítě |
+| Star         | SMD2-1317 | OPOS      |                       |
 | HP           | QT457AA   | OPOS      |                       |
 
 ## <a name="troubleshooting"></a>Řešení potíží
-### <a name="modern-pos-can-detect-the-hardware-station-in-its-list-for-selection-but-it-cant-complete-the-pairing"></a>Moderní POS můžete zjistit hardwarové stanice v seznamu pro výběr, ale nemůže dokončit párování
+### <a name="modern-pos-can-detect-the-hardware-station-in-its-list-for-selection-but-it-cant-complete-the-pairing"></a>Moderní POS může detekovat hardwarové stanice v seznamu pro výběr, ale nemůže dokončit spárování
 
 **Řešení:** zkontrolujte následující seznam možných bodů selhání:
 
--   Počítač se systémem moderní POS důvěřuje certifikátu, který se používá v počítači, který spouští hardware stanice.
-    -   Chcete-li ověřit tato nastavení ve webovém prohlížeči přejděte na následující adresu URL: https://&lt;název počítače&gt;:&lt;číslo portu&gt;/HardwareStation/ping.
-    -   Tuto adresu URL pomocí ping ověřte, zda je počítač přístupný a prohlížeče označuje, zda je certifikát důvěryhodný. (Například v aplikaci Internet Explorer ikonu zámku se zobrazí v adresním řádku. Klepnutím na tuto ikonu aplikace Internet Explorer ověří, zda je aktuálně důvěryhodný certifikát. Můžete nainstalovat certifikát místního počítače pomocí zobrazení Podrobnosti o certifikátu, který je zobrazen.)
--   V počítači, který spouští hardware stanice je v bráně firewall otevřít port použitý hardware stanice.
--   Hardwarová stanice byla nainstalována správně obchodní účet informace pomocí nástroje instalace obchodní informace, který spustí instalační program hardwaru stanice na konci.
+-   Počítač, na kterém běží moderní POS, důvěřuje certifikátu používanému v počítači, který spouští hardwarovou stanici.
+    -   Chcete-li ověřit tato nastavení, přejděte na následující adresu URL ve webovém prohlížeči: https://&lt;Název počítače&gt;:&lt;Číslo portu&gt;/HardwarováStanice/ping.
+    -   Tato adresa URL použije příkaz ping k ověření, zda je počítač dostupný a prohlížeč ukáže, zda je certifikát důvěryhodný. (Například v aplikaci Internet Explorer se zobrazí ikona zámku v adresním řádku. Po kliknutí na tuto ikonu Internet Explorer ověří, zda je certifikát v současné době důvěryhodný. Můžete nainstalovat certifikát na místní počítač pomocí zobrazení podrobností o aktuálně zobrazeném certifikátu.)
+-   V počítači, který spouští hardwarovou stanici, je v bráně firewall otevřen port, který tato hardwarová stanice používá.
+-   Hardwarová stanice správně nainstalovala informace o obchodním účtu pomocí nástroje Instalovat informace o obchodníkovi, který běží na konci instalátoru hardwarové stanice.
 
-### <a name="modern-pos-cant-detect-the-hardware-station-in-its-list-for-selection"></a>Moderní POS nemůže rozpoznat hardware stanice v seznamu pro výběr
+### <a name="modern-pos-cant-detect-the-hardware-station-in-its-list-for-selection"></a>Moderní POS nemůže rozpoznat hardwarovou stanici v seznamu pro výběr
 
-**Řešení:** tento problém může způsobit některá z následujících faktorů:
+**Řešení:** tento problém může způsobit některý z následujících faktorů:
 
--   Hardwarová stanice nebyl nastaven správně v sídle. Ověřte správně zadán profil stanice hardwaru a hardwaru stanice pomocí kroků v tomto tématu.
--   Úlohy byly nespustili aktualizovat konfiguraci kanálu. V takovém případě spusťte úlohu 1070 pro konfiguraci kanálu.
+-   Hardwarová stanice nebyla v sídle správně nastavena. Pomocí kroků uvedených dříve v tomto tématu ověřte, zda je správně zadán profil hardwarové stanice a hardwarová stanice.
+-   Úlohy nebyly spuštěny pro aktualizaci konfigurace kanálu. V takovém případě spusťte úlohu 1070 pro konfiguraci kanálu.
 
 ### <a name="modern-pos-doesnt-reflect-new-cash-drawer-settings"></a>Moderní POS neodráží nové nastavení pokladní zásuvky
 
-**Řešení:** uzavření aktuální dávky. Moderní POS nejsou aktualizovány změny zásuvku do uzavření aktuální dávky.
+**Řešení:** Uzavřete aktuální dávku. Změny v zásuvce s hotovostí nejsou načteny do moderního POS, dokud není aktuální dávka uzavřena.
 
-### <a name="modern-pos-is-reporting-an-issue-with-a-retail-peripheral"></a>Moderní POS hlásí problém s maloobchodní periferní
+### <a name="modern-pos-is-reporting-an-issue-with-a-retail-peripheral"></a>Moderní POS hlásí problém s maloobchodní periferií
 
 **Řešení:** Zde jsou některé obvyklé příčiny tohoto problému:
 
--   Ujistěte se, že další nástroje pro konfiguraci ovladače zařízení jsou zavřena. Pokud tyto nástroje jsou otevřeny, jejich může zabránit moderní POS nebo hardware stanice uplatňující zařízení.
--   Pokud je maloobchodní periferní sdílen s více POS zařízení, ujistěte se, že patří k jedné z následujících kategorií:
-    -   Zásuvku
-    -   Tiskárně stvrzenek
+-   Ujistěte se, že další nástroje pro konfiguraci ovladače zařízení jsou uzavřeny. Pokud tyto nástroje jsou otevřeny, mohou zabránit modernímu POS nebo hardwarové stanici ve vyžádání zařízení.
+-   Pokud je maloobchodní periferie sdílena s více zařízeními POS, ujistěte se, že patří k jedné z následujících kategorií:
+    -   Zásuvka s hotovostí
+    -   Tiskárna účtenek
     -   Patební terminál 
 
-    Pokud periferie nepatří do jedné z těchto kategorií, hardware stanice není určen povolení mají být sdíleny více zařízení POS periferie.
--   Ovladače zařízení může způsobit objekty společných ovládacích prvků (CCOs) přestal správně fungovat. Pokud zařízení nedávno nainstaloval, ale nepracuje správně nebo si všimnete jiné problémy, lze často vyřešit problém přeinstalací CCOs. Je možné stáhnout CCOs <http://monroecs.com/oposccos_current.htm>.
--   Pokud provádíte časté změny periferní během testování nebo řešení potíží, bude pravděpodobně nutné obnovit službu IIS namísto čekání sám aktualizovat mezipaměť. Chcete-li obnovit službu IIS, postupujte takto:
-    1.  Z **spuštění** nabídky, typ **CMD**.
-    2.  V okně Výsledky hledání klepněte pravým tlačítkem myši **příkazového řádku**a potom klepněte na tlačítko **spustit jako správce**.
-    3.  V **příkazového řádku** okno, typ **příkaz iisreset/restart** a stiskněte klávesu Enter.
-    4.  Moderní POS restartujte po restartování služby IIS.
--   Při periferní zařízení provádíte časté změny, pokud také často spustit a ukončit klienta POS, procesu dllhost z předchozí relace POS může rušit v aktuální relaci. Zařízení v tomto případě nemusí být použitelné až do zavření hostitele dynamická knihovna (DLL), který spravuje předchozí relace. Chcete-li zavřít hostiteli DLL, postupujte takto:
-    1.  Z **spuštění** nabídky, typ **Správce úloh**.
-    2.  V okně Výsledky hledání klepněte na tlačítko **Správce úloh**.
-    3.  Ve Správci úloh na **podrobnosti** karta, klepněte na záhlaví sloupce, který je označen **jméno** Chcete-li seřadit tabulku abecedně podle názvu.
-    4.  Přejděte dolů, dokud nenajdete dllhost.exe.
-    5.  Vyberte každou DLL hostitele a potom klepněte na tlačítko **ukončit úlohu**.
-    6.  Moderní POS restartujte zavření hostitelích DLL.
+    Pokud periferie nepatří do jedné z těchto kategorií, není hardwarová stanice navržena tak, aby umožňovala sdílení periferií mezi více POS zařízeními.
+-   Někdy mohou ovladače zařízení způsobit, že běžné ovládací objekty (CCO) přestanou správně fungovat. Pokud bylo zařízení nedávno nainstalováno a nyní nepracuje správně nebo si všimnete jiných problémů, lze často vyřešit tento problém přeinstalací CCO. Pro stažení CCO běžte na stránku <http://monroecs.com/oposccos_current.htm>.
+-   Pokud provádíte časté změny periferních zařízení během testování nebo odstraňování problémů, pravděpodobně budete muset obnovit službu IIS namísto čekání na obnovení samotné mezipaměti. Chcete-li provést reset služby IIS, postupujte takto:
+    1.  V nabídce **Start** napište **CMD**.
+    2.  V okně Výsledky hledání klikněte pravým tlačítkem myši na **Příkazový řádek** a potom klikněte na tlačítko **Spustit jako správce**.
+    3.  V okně **Příkazový řádek** napište příkaz **iisreset /Restart** a stiskněte klávesu Enter.
+    4.  Po restartu IIS restartujte také moderní POS.
+-   Během častých změn periferních zařízení, pokud často spouštíte a opoušíte klient POS, může proces dllhost z předchozí relace POS zasahovat do aktuální relace. V tomto případě zařízení nemusí být použitelné, dokud nezavřete hostitele knihovny dynamické vazby (DLL), která spravuje předchozí relaci. Chcete-li zavřít hostitele DLL, postupujte takto:
+    1.  V nabídce **Start** napište **Správce úloh**.
+    2.  V okně Výsledky hledání klikněte na tlačítko **Správce úloh**.
+    3.  Ve Správci úloh na kartě **Podrobnosti** klikněte na záhlaví sloupce, který je označen jako **Jméno** pro seřazení tabulky abecedně.
+    4.  Skrolujte níže, dokud nenajdete dllhost.exe.
+    5.  Vyberte každou DLL hostitele a potom klikněte na tlačítko **Ukončit úlohu**.
+    6.  Jakmile byli hostitelé DLL uzavřeni, restartujte také moderní POS.
 
 
 <a name="see-also"></a>Viz také
 --------
 
-[Maloobchodní periferní simulátor](retail-peripheral-simulator.md)
+[Periferní simulátor pro maloobchod](retail-peripheral-simulator.md)
 
 
 

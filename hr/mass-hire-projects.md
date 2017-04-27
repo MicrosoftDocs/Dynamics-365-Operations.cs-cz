@@ -46,7 +46,7 @@ Na stránce **Projekty hromadného zařazení** vyberte "LetníVýpomoc" a klepn
 
 Po výběru studentů, které chcete zařadit kvůli stáži zadejte informace o každém studentovi do pole **Podrobnosti pozice** u pozice, pro kterou je zařazujete. Po zadání všech podrobností o pozici vyberte pozici na stránce Projekty hromadného zařazení a klepněte na **Zařazení**. Záznam pozice bude vytvořen pro jednotlivé pozice, a bude vytvořen záznam pracovníka a přiřazen ke správné pozici pro každou osobu, kterou zařazujete.
 
-## <a name="masshire-project-statuses"></a>Stav projektu Masshire
+## <a name="masshire-project-statuses"></a>Stavy projektu hromadného zařazení
 Projekt masového zařazení může mít jeden z následujících stavů.
 -   Vytvořeno
 -   Otevřené

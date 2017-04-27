@@ -44,13 +44,13 @@ V závislosti na konfiguraci zásad nakupování může uživatele v organizaci 
 
 ### <a name="example-1-simple-purchasing-policy-configuration"></a>Příklad 1: Jednoduchá konfigurace zásad nákupu
 
-Organizace, které jsou malé a méně složité můžete nastavit zásady nákupu právnickou osobou a lze použít pouze organizační hierarchii společnosti.  
+Pro organizace, které jsou malé a méně složité, lze nastavit zásady nákupu podle právnické osoby a lze použít pouze organizační hierarchii společnosti.  
 
 Pro společnost Fabrikam, malý podnik, se v celé organizaci budou trochu lišit nákupní požadavky. Pravidla nákupu se liší pouze mezi organizacemi právnických osob. Například zaměstnanci v Fabrikam (Kanada) a zaměstnanci Fabrikam (USA) nakupují zboží a služby z jiných katalogů a od různých dodavatelů. Proto společnost Fabrikam nastavuje své zásady nákupu na úrovni právnické osoby.  
 
-Společnost Fabrikam vytváří dvě zásady nákupu. Zásady A platí pro jeho právnická osoba USA 1111. Zásada B platí pro kanadské právní subjekt 2222. Pokud zaměstnanec právnické osoby 1111 vytvoří nákupní žádanku, pravidla zásad jsou odvozeny od zásad A. Například katalog produktů, který vidí zaměstnance je určena v pravidlo zásad katalogu zásady A.  
+Společnost Fabrikam vytváří dvě zásady nákupu. Zásady A platí pro právnickou osobu v USA, 1111. Zásady B platí pro právnickou osobu v Kanadě, 2222. Pokud zaměstnanec v právnické osobě 1111 vytvoří nákupní žádanku, pravidla zásad jsou odvozena ze zásad A. Například katalog produktů, který vidí zaměstnanec, je zadán v pravidle zásad katalogu pro zásady A.  
 
-V právní subjekt 2222 vytvoří nákupní žádanku, pravidla zásad jsou odvozeny ze zásady B.  
+Pokud zaměstnanec v právnické osobě 2222 vytvoří nákupní žádanku, pravidla zásad jsou odvozena ze zásad B.  
 
 **Poznámka:** Pokud zaměstnanec právnické osoby 1111 nakupuje položku jménem zaměstnance právnické osoby 2222, použijí se pravidla zásad, která jsou zadána pro právnickou osobu 2222 (to znamená zásady pravidla ze zásady B).
 
@@ -120,7 +120,7 @@ Pravidlo řízení doplnění je volitelné pravidlo definující pole, které j
 
 ### <a name="purchase-order-creation-and-demand-consolidation-rule"></a>Pravidlo vytvoření nákupní objednávky a konsolidace poptávky
 
-Nákupní objednávka vytváření a poptávka konsolidace pravidlo definuje pravidla zásad pro použití při generování nákupní objednávky ze schválené nákupní žádanky. Při vytváření pravidla tohoto typu lze na různých kartách nastavit možnosti:
+Pravidlo pro tvorbu nákupní objednávky a konsolidaci poptávky definuje zásady pravidla, které se mají použít při generování nákupní objednávky ze schválené nákupní žádanky. Při vytváření pravidla tohoto typu lze na různých kartách nastavit možnosti:
 
 -   Na kartě **Rozdělení nákupní objednávky** můžete definovat kritéria pro rozdělení řádků nákupní žádanky do samostatných nákupních objednávek.
 -   Na kartě **Převod cen/slev** můžete při vytvoření nákupní objednávky definovat při přepočítání dohodu o ceně:
@@ -129,7 +129,7 @@ Nákupní objednávka vytváření a poptávka konsolidace pravidlo definuje pra
 
     Můžete také povolit žadateli změnit způsobu předání ceny a slevy pro jednotlivé řádky nákupní žádanky, bez ohledu na pravidlo přenosu ceny/slevy, které je definováno. Vyberte možnost **Povolit ručně přepsat řádek nákupní žádanky**, pokud chcete povolit tuto funkci.
 -   Na kartě **Převod popisu položky** je možné přenést popis položky z žádanky, pokud pochází z požadavku nabídky.
--   Na kartě **Tolerance ceny** můžete definovat pravidla používaná ke směrování schválené nákupní žádanky zpět do procesu kontroly při zvýšení cen zboží v zásobovacím katalogu. Nastavte maximální částku, kterou můžete zvětšit čistou částku řádkové položky na nákupní žádance mezi okamžikem schválení nákupní žádanky a časem, kdy je vytvořena nákupní objednávka. Čistá částka se vypočítá pomocí následujícího vzorce: (\[× množství (Jednotková cena-sleva) Pořizovací cena ÷\] + vedlejší náklady na nákup) x (100-% slevy) ÷ 100 řádků nákupní žádanky přesahující nastavené toleranci ceny jsou drženy pro ruční zpracování. Pravidla, která konfigurujete na kartě **Zpracování chyb**, určují způsob zpracování požadavků řádků nákupní žádanky.
+-   Na kartě **Tolerance ceny** můžete definovat pravidla používaná ke směrování schválené nákupní žádanky zpět do procesu kontroly při zvýšení cen zboží v zásobovacím katalogu. Nastavte maximální částku, kterou můžete zvětšit čistou částku řádkové položky na nákupní žádance mezi okamžikem schválení nákupní žádanky a časem, kdy je vytvořena nákupní objednávka. Čistá částka se vypočte podle následujícího vzorce: : (\[množství × (jednotková cena – sleva) ÷ cenová jednotka\] + vedlejší náklady na nákup) × (100 – % slevy) ÷ 100 řádků nákupní žádanky, přesahující toleranci ceny, kterou jste nastavili, jsou pro ruční zpracování pozdrženy. Pravidla, která konfigurujete na kartě **Zpracování chyb**, určují způsob zpracování požadavků řádků nákupní žádanky.
 -   Na kartě **Zpracování chyb** můžete nakonfigurovat pravidlo zpracování, které platí pro nákupní žádanku, pokud se nezdaří ověřování při vytvoření nákupní objednávky z důvodu chyby dodavatele nebo chyby tolerance ceny. Vyberte některou z následujících možností:
     -   **Žádná akce** – řádky nákupní žádanky zůstávají na stránce **Uvolnit schválené nákupní žádanky**. Stav řádků nákupní žádanky zůstane nastaven na hodnotu **Schváleno**. Chyby však musí být vyřešeny před možností vygenerovat nákupní objednávku pro řádky nákupní žádanky.
     -   **Zrušit řádek vybrané nákupní žádanky** – řádky nákupní žádanky jsou zrušeny. Žadatel může vytvořit novou nákupní žádanku pro zrušené řádky, pokud chce stále požádat o položky řádků.

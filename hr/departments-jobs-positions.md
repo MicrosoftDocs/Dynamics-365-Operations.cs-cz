@@ -1,5 +1,5 @@
 ---
-title: "Uspořádání pomocí oddělení, úlohy a pozice pracovníků"
+title: "Uspořádání zaměstnanců podle oddělení, prací a pozic"
 description: "Oddělení, úlohy a pozice jsou organizační prvky, které jsou evidovány v rámci modulu Lidské zdroje. Toto téma obsahuje koncepční informace o těchto prvcích."
 author: rschloma
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Uspořádání pomocí oddělení, úlohy a pozice pracovníků
+# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Uspořádání zaměstnanců podle oddělení, prací a pozic
 
 [!include[banner](includes/banner.md)]
 
@@ -35,16 +35,16 @@ Oddělení, úlohy a pozice jsou organizační prvky, které jsou evidovány v r
 
 Následující příklad slouží k zobrazení konceptů popsaných v tomto tématu.
 
-|**Oddělení**|**Position**|**Job**|
+|**Oddělení**|**Pozice**|**Práce**|
 |---|---|---|
 |**Prodej**|Manažer prodeje (východ)|Manažer prodeje|
 |**Prodej**|Manažer prodeje (západ)|Manažer prodeje|
 |**Prodej**|Manažer prodeje (střed)|Manažer prodeje|
-|**Accounting**|Účetní supervizor|Účetní manažer|
-|**Accounting**|Účetnictví A|Účetní|
-|**Human resources**|Manažer lidských zdrojů (východ)|Manažer lidských zdrojů|
-|**Human resources**|Manažer lidských zdrojů (západ)|Manažer lidských zdrojů|
-|**Human resources**|Manažer lidských zdrojů (střed)|Manažer lidských zdrojů|
+|**Účetnictví**|Účetní supervizor|Účetní manažer|
+|**Účetnictví**|Účetnictví A|Účetní|
+|**Lidské zdroje**|Manažer lidských zdrojů (východ)|Manažer lidských zdrojů|
+|**Lidské zdroje**|Manažer lidských zdrojů (západ)|Manažer lidských zdrojů|
+|**Lidské zdroje**|Manažer lidských zdrojů (střed)|Manažer lidských zdrojů|
 
  
  <a name="departments"></a>Oddělení
@@ -82,7 +82,7 @@ Můžete vytvořit pracovní úkoly, které popisují základní úlohy, které 
 
 ### <a name="job-functions"></a>Pracovní funkce
 
-Pracovní funkce jsou stejné jako pracovní úkoly. Pracovní funkce popisuje jeden nebo více úkolů, povinností nebo odpovědností, které jsou přiřazeny k práci. Pracovní funkce můžete přiřazeno projektům a slouží k nastavení a implementovat pravidla způsobilosti pro vyrovnání plány. V následující tabulce jsou uvedeny příklady pracovních funkcí.
+Pracovní funkce jsou stejné jako pracovní úkoly. Pracovní funkce popisuje jeden nebo více úkolů, povinností nebo odpovědností, které jsou přiřazeny k práci. Pracovní funkce mohou být přiřazeny k pracím a slouží k nastavení a implementaci pravidel způsobilosti pro plány kompenzace. Příklady pracovních funkcí jsou uvedeny v následující tabulce.
 
 | Úloha           | Pracovní funkce                                                |
 |---------------|-------------------------------------------------------------|
@@ -104,7 +104,7 @@ Za pomoci oblastí odpovědnosti můžete určit pracovní role, procesy a produ
 <a name="positions"></a>Pozice
 ----------
 
-Pozice jsou důležitým prvkem nižší úrovně hierarchie organizace. Pozice je individuální instance práce. Například pozici "Sales manager (východ)," je pouze jedním z pozic, které jsou přidruženy k této úloze "Sales manager". Pozice v oddělení existují a jsou přiřazeny pracovníkům.
+Pozice jsou důležitým prvkem nižší úrovně hierarchie organizace. Pozice je individuální instance práce. Například pozice „Manažer prodeje (východ)“ je pouze jednou pozicí, která je přidružena k úloze „Manažer prodeje“. Pozice existují v oddělení a jsou přiřazeny pracovníkům.
 ### <a name="position-creation-and-maintenance"></a>Vytváření a údržba pozic
 
 -   Historii systémových změn pozic můžete zobrazit na snadno dostupné stránce.

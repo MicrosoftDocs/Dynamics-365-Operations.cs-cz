@@ -58,14 +58,14 @@ Workflow se skládá z jednotlivých prvků. Následující části popisují je
 -   Zadat požadavek na změnu dokumentu.
 -   Postoupit dokument ke schválení jinému uživateli.
 
-## <a name="lineitem-workflow-elements"></a>Prvky workflowu Lineitem
-Workflow lze vytvořit pro zpracování dokumentů nebo položek řádku v dokumentu. Například vytvoříte workflow schválení pro časové rozvrhy. (Budeme odkazovat tento pracovní postup jako *sledu*.) Můžete přidat *workflow položky řádku* prvek, který má pracovní dokument. Při spuštění prvku položky řádku je každá položka řádku v dokumentu odeslána ke zpracování. Je vhodné řádkové položky zpracovávat ve stejném workflowu položky řádku, nebo můžete každou položku řádku zpracovat jiným workflowem položky řádku. Představte si, že zaměstnanec odeslal časový rozvrh, který se podobá na následujícímu obrázku. ![Workflow s položkami řádků](./media/workflow_lineitemworkflow.gif) V takovém případě můžete vytvořit následující workflow položky řádku:
+## <a name="lineitem-workflow-elements"></a>Prvky pracovního procesu řádkové položky
+Workflow lze vytvořit pro zpracování dokumentů nebo položek řádku v dokumentu. Například vytvoříte workflow schválení pro časové rozvrhy. (Tento pracovní postup budeme označovat jako *pracovní postup dokumentu*.) K tomuto pracovnímu procesu dokumentu můžete přidat prvek *pracovního postupu řádkové položky*. Při spuštění prvku položky řádku je každá položka řádku v dokumentu odeslána ke zpracování. Je vhodné řádkové položky zpracovávat ve stejném workflowu položky řádku, nebo můžete každou položku řádku zpracovat jiným workflowem položky řádku. Představte si, že zaměstnanec odeslal časový rozvrh, který se podobá na následujícímu obrázku. ![Workflow s položkami řádků](./media/workflow_lineitemworkflow.gif) V takovém případě můžete vytvořit následující workflow položky řádku:
 
 -   **Workflow položky řádku 1** – tento workflow slouží pro zpracování položek řádků, ve kterém je ID projektu 1111.
 -   **Workflow položky řádku 2** – tento workflow slouží pro zpracování položek řádků, ve kterém je ID projektu 2222.
 -   **Workflow položky řádku 3** – tento workflow slouží pro zpracování položek řádků, ve kterém je ID projektu 3333.
 
-## <a name="flowcontrol-elements"></a>Řízení toku prvků
+## <a name="flowcontrol-elements"></a>Prvky ovládání toku
 Následující prvky umožňují navrhovat workflowy, které mají alternativní větve nebo větve, které běží současně
 
 ### <a name="manual-decision"></a>Ruční rozhodnutí

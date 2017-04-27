@@ -31,7 +31,7 @@ ms.lasthandoff: 03/31/2017
 
 V tomto článku jsou vysvětleny akce, které může provést každý účastník v procesu schválení workflowu.
 
-Workflow může zahrnovat několik skupin osob: původce, zmocněnci pro úkol, pracovníci s rozhodovací pravomocí a schvalovatelé. Například v následujícím workflowu k vyúčtování výdajů je Stanislav původcem, členové fronty jsou zmocněnci pro úkol, Jan je pracovníkem s rozhodovací pravomocí a František, Šárka a Anna jsou schvalovateli.   [![Pracovní postup\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif) v následujících částech akce pracovního postupu, které mohou provádět každé skupiny.
+Workflow může zahrnovat několik skupin osob: původce, zmocněnci pro úkol, pracovníci s rozhodovací pravomocí a schvalovatelé. Například v následujícím workflowu k vyúčtování výdajů je Stanislav původcem, členové fronty jsou zmocněnci pro úkol, Jan je pracovníkem s rozhodovací pravomocí a František, Šárka a Anna jsou schvalovateli.   [![Workflow\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif) Následující části vysvětlují akce pracovního procesu, které mohou jednotlivé skupiny provádět.
 
 ## <a name="actions-that-an-originator-can-perform"></a>Akce, které může provádět původce
 Původce zahájí instanci workflowu odesláním dokumentu ke zpracování. Stanislav musí například odeslat vyúčtování výdajů kliknutím na tlačítko **Odeslat** na stránce **Vyúčtování výdajů**.
@@ -66,7 +66,7 @@ V některých případech může člen fronty pracovních položek úkol přijmo
 ## <a name="actions-that-a-decision-maker-can-perform"></a>Akce, které může provádět pracovník s rozhodovací pravomocí
 Dokument bývá obvykle přiřazen pracovníkovi s rozhodovací pravomocí, protože vyvstala otázka, kterou musí rozhodnout pracovník s rozhodovací pravomocí. Na otázku se obvykle odpovídá možnostmi **Ano** nebo **Ne**, nebo **Pravda** nebo **Nepravda**. Pokud pracovník s rozhodovací pravomocí nevybere některou z těchto možností, může rozhodnutí delegovat.
 
-### <a name="choice-1-or-choice-2"></a>\[Volba 1\] nebo \[volba 2\]
+### <a name="choice-1-or-choice-2"></a>\[Volba 1\] nebo \[Volba 2\]
 
 Pracovník s rozhodovací pravomocí musí odpovědět na otázku, která se vztahuje k dokumentu. Na otázku se obvykle odpovídá možnostmi **Ano** nebo **Ne**, nebo **Pravda** nebo **Nepravda**. Odpověď, kterou pracovník s rozhodovací pravomocí vybere, určuje větev workflowu, která bude použita ke zpracování dokumentu. Stanislavovo vyúčtování výdajů je například přiřazeno Janovi. Jan musí rozhodnout, zda informace v dokumentu vyžadují hovor se Stanislavovým nadřízeným. Když Jan rozhodne, že je hovor nutný, je vyúčtování výdajů přiřazeno Adéle, která pak musí zavolat nadřízenému Stanislava. Pokud Jan rozhodne, že hovor není třeba, vyúčtování výdajů je přiřazeno Františkovi ke schválení.
 

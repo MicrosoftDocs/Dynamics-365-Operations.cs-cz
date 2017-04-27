@@ -1,5 +1,5 @@
 ---
-title: "Nastavit účty dodavatelů"
+title: "Nastavení účtů dodavatele"
 description: "Toto téma popisuje typy informací, které je nutné zadat při vytváření nového účtu dodavatele."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-vendor-accounts"></a>Nastavit účty dodavatelů
+# <a name="set-up-vendor-accounts"></a>Nastavení účtů dodavatele
 
 [!include[banner](../includes/banner.md)]
 
@@ -43,7 +43,7 @@ Při vytvoření účtu dodavatele zadáváte informace o dodavateli. Tyto infor
 -   Nastavit daňové, dodací, fakturační a platební údaje dodavatele. Ve výchozím nastavení jsou tyto údaje zkopírovány do nových dokumentů, které pro dodavatele vytvoříte.
 -   Nastavit výchozí finanční dimenze používané k automatickému zaúčtování transakcí s dodavatelem na finanční účty.
 
-Chcete-li urychlit proces vytváření účtů dodavatelů, můžete vytvořit šablony. Chcete-li vytvořit šablonu, na **dodavatele**, v podokně akcí klepněte na tlačítko **možnosti**&gt;**zaznamenat informace o**. Dále klikněte na **Šablona účtů společnosti**. Šablony účtů společnosti jsou sdíleny s ostatními uživateli.  
+Chcete-li urychlit proces vytváření účtů dodavatelů, můžete vytvořit šablony. K vytvoření šablony na stránce **Dodavatel** v podokně akcí klikněte na **Možnost** &gt; **Informace o záznamu**. Dále klikněte na **Šablona účtů společnosti**. Šablony účtů společnosti jsou sdíleny s ostatními uživateli.  
 
 Můžete také vytvořit šablonu uživatele pro vaši vlastní potřebu. Nelze odstranit dodavatele přidruženého k dalším záznamům, jako jsou například kontakty nebo produkty.
 
@@ -59,7 +59,7 @@ Pro každého dodavatele lze definovat více adres, kde se každá z nich použ�
 ## <a name="vendor-contacts"></a>Kontakty dodavatele
 U dodavatelů lze uložit kontakty. Tyto kontakty lze použít v dokumentech, jako jsou například nákupní objednávky nebo požadavky na nabídku.  
 
-Přidání kontaktů na dodavatele, **všechny dodavatele** na stránky **dodavatele** klepněte v **nastavit** seskupit, klikněte na **kontakty**&gt;**přidat kontakty**.  
+Pokud budete chtít přidat kontakty k dodavateli, na stránce **Všichni dodavatelé** na kartě **Dodavatel** klikněte ve skupině **Nastavení** na tlačítko **Kontakty** &gt; **Přidat kontakty**.  
 
 Kontakty dodavatelů můžete vytvářet zcela od začátku. Také můžete zkopírovat informace od jiného uživatele, který je již registrován v aplikaci Microsoft Dynamics 365 for Operations, a informace podle potřeby upravit.  
 
@@ -67,7 +67,7 @@ Kontakty dodavatelů můžete vytvářet zcela od začátku. Také můžete zkop
 
 Záznam kontaktní osoby nelze odstranit, pokud je na tento kontakt v dokumentu odkazováno. Namísto toho lze kontakt deaktivovat.  
 
-Kontakty na dodavatele můžete přidat do osobních kontaktů v aplikaci Microsoft Office 365. Však musíte nejprve nastavit synchronizaci mezi Dynamics 365 operací a služeb Office 365 v synchronizaci s Microsoft Exchange Server a Průvodce instalací Microsoft Outlook.
+Kontakty dodavatele můžete přidat do osobních kontaktů v aplikaci Microsoft Office 365. Nejprve je však nutné nastavit synchronizaci mezi aplikací Dynamics 365 for Operations a Office 365 v rámci synchronizace serveru Microsoft Exchange Server a průvodci instalací pro aplikaci Microsoft Outlook.
 
 ## <a name="vendors-in-different-legal-entities"></a>Dodavatelé z různých právnických osob
 Dodavatel je ve vaší organizaci registrován pouze pro jednu právnickou osobu a ostatní právnické osoby si musí zaregistrovat stejného dodavatele. Ke konfiguraci dodavatele pro jinou právnickou osobu lze použít stránku **Přidat dodavatele k jiné právnické osobě**. U dodavatele je ve vybrané právnické osobě nutné určit skupinu dodavatelů, měnu a stav blokování.  

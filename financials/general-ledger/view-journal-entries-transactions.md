@@ -46,12 +46,12 @@ Následující sestavy hlavní knihy slouží kromě finančních sestav k zobra
 
 -   **Výkaz dimenze** – v této sestavě se zobrazí transakce podle dne a účtu a nabízí také možnosti zobrazit transakce podle dimenzí a období.
 -   **Seznam transakcí hlavní knihy** – v této sestavě se zobrazí transakce v transakcích, účetnictví a vykazování měny pro účet.
--   **Tisk deníku** – Tato sestava zobrazuje výsledek zaúčtovaného deníku. Můžete spustit sestavu číslo dávky deníku nebo deníku typu nebo přidat další pole.
+-   **Tisk deníku** – tato sestava zobrazuje výsledek zaúčtovaného deníku. Sestavu můžete spustit podle čísla dávky deníku nebo typu deníku nebo můžete přidat další pole.
 -   **Zaúčtované transakce podle deníku** – v této sestavě se zobrazí transakce, které byly zaúčtovány do deníku, seskupené podle dokladu.
 -   **Seznam transakcí podle data** – v této sestavě se zobrazí všechny transakce podle data včetně čísla deníku, dokladu a účtu hlavní knihy. Rovněž zobrazuje transakce v transakci, účtování a měny vykazování.
 -   **Původ transakce** – tato sestava transakcí zobrazí transakce podle deníku a podle transakce, účetnictví a vykazování měny. Také je zde uveden každý řádek deníku, který byl použit jako posun.
 
 
-Další informace naleznete v tématu [zůstatky účtů hlavní knihy](general-ledger-account-balances.md), [explorer zdroj účetní](\financials\accounts-payable\accounting-source-explorer) a [finanční vykazování](financial-reporting-getting-started.md)
+Další informace najdete v tématu [Zůstatky účtů hlavní knihy](general-ledger-account-balances.md), [Průzkumník zdroje účetnictví](\financials\accounts-payable\accounting-source-explorer) a [Finanční výkaznictví](financial-reporting-getting-started.md)
 
 

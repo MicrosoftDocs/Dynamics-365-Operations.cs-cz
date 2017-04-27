@@ -57,7 +57,7 @@ Přesné umísťování buněk (jinak *vynucení*) zahrnuje umístění konkrét
 2.  Na kartě **Nastavení** v části **Priorita výpočtu** vyberte možnost **Nejprve provést výpočet sloupce a pak řádku**.
 
 ## <a name="designing-the-report"></a>Návrh sestavy
-Při návrhu sestavy musíte nejprve vytvořit všechny řádky s podrobnostmi, abyste se ujistili, že hodnoty jsou získávány podle očekávání. Poté přidejte přepsání formátu **NP** (Netisknout) k potlačení podrobností, které zahrnují výsledné hodnoty. **Důležité:** Používáte-li kódu formátu **CAL** v definici řádku, nemůžete rozbalením zobrazit detaily transakce. Pro vynucení, vzorce, použijte následující formát: &lt;cílovém sloupci&gt;=&lt;původem sloupec&gt;. &lt;řádek kódu&gt; oddělit jakékoli další stáže pro řádek čárkou a mezerou. Příklad: D=C.190,E=C.100
+Při návrhu sestavy musíte nejprve vytvořit všechny řádky s podrobnostmi, abyste se ujistili, že hodnoty jsou získávány podle očekávání. Poté přidejte přepsání formátu **NP** (Netisknout) k potlačení podrobností, které zahrnují výsledné hodnoty. **Důležité:** Používáte-li kódu formátu **CAL** v definici řádku, nemůžete rozbalením zobrazit detaily transakce. K vynucení používají vzorce následující formát: &lt;cílový sloupec&gt;=&lt;původní sloupec&gt;.&lt;kód řádku&gt; Oddělte jakékoli další umístění pro řádek čárkou a mezerou. Příklad: D=C.190,E=C.100
 
 ## <a name="examples-of-advanced-formatting-options"></a>Příklady rozšířených možností formátování
 V následujících příkladech je ukázáno formátování definice řádku a definice sloupce pro vynucení základní sestavy cashflow (příklad 1) a statistické sestavy (příklad 2).
@@ -68,8 +68,8 @@ Následující tabulka znázorňuje příklad definice řádku používající z
 
 | Kód řádku | Popis                      | Kód formátu | Související vzorce/řádky/jednotky | Přepsání formátu | Normální zůstatek | Řízení tisku | Omezení sloupce | Modifikátor řádku               | Odkaz na finanční dimenze |
 |----------|----------------------------------|-------------|-----------------------------|-----------------|----------------|---------------|--------------------|----------------------------|------------------------------|
-| 1597      | Hotovost na začátku období (NP) |             |                             |                 |                |               |                    | Modifikátor účtu = \[/BB\] | + Segment2 = \[1100\]         |
-| 130      | Hotovost na začátku období      | CAL         | C=C.100,F=D.100             |                 |                |               |                    |                            |                              |
+| 100      | Hotovost na začátku období (NP) |             |                             |                 |                |               |                    | Modifikátor účtu = \[/BB\] | +Segment2 = \[1100\]         |
+| 1.3.0      | Hotovost na začátku období      | CAL         | C=C.100,F=D.100             |                 |                |               |                    |                            |                              |
 | 160      |                                  |             |                             |                 |                |               |                    |                            |                              |
 | 190      |                                  |             |                             |                 |                |               |                    |                            |                              |
 
@@ -95,11 +95,11 @@ Následující tabulka znázorňuje příklad definice řádku používající v
 | Kód řádku | Popis               | Kód formátu | Související vzorce/řádky/jednotky     | Přepsání formátu      | Normální zůstatek | Řízení tisku | Omezení sloupce | Modifikátor řádku | Odkaz na finanční dimenze               |
 |----------|---------------------------|-------------|---------------------------------|----------------------|----------------|---------------|--------------------|--------------|--------------------------------------------|
 | 50       | Statistické informace   | REM         |                                 |                      |                |               |                    |              |                                            |
-| 1597      | Počet zaměstnanců – USA            | CAL         | 4                               | \#\#\#0.;($\#\#\#0.) |                |               |                    |              |                                            |
+| 100      | Počet zaměstnanců – USA            | CAL         | 4                               | \#\#\#0.;($\#\#\#0.) |                |               |                    |              |                                            |
 | 115      | Počet zaměstnanců - mezinárodní | CAL         | 11                              | \#\#\#0.;($\#\#\#0.) |                |               |                    |              |                                            |
-| 130      |                           |             |                                 |                      |                |               |                    |              |                                            |
-| 190      | Prodej USA                  |             |                                 |                      | K              |               |                    |              | + Segment2 = \[41\*\], Segment3 = \[00\]    |
-| 220      | Mezinárodní prodej       |             |                                 |                      | K              |               |                    |              | + Segment2 = \[41\*\], Segment3 = \[01:99\] |
+| 1.3.0      |                           |             |                                 |                      |                |               |                    |              |                                            |
+| 190      | Prodej USA                  |             |                                 |                      | K              |               |                    |              | +Segment2 = \[41\*\], Segment3 = \[00\]    |
+| 220      | Mezinárodní prodej       |             |                                 |                      | K              |               |                    |              | +Segment2 = \[41\*\], Segment3 = \[01:99\] |
 | 250      |                           |             |                                 |                      |                |               |                    |              |                                            |
 | 280      |                           |             |                                 |                      |                |               |                    |              |                                            |
 | 310      | Prodej USA                  | CAL         | D=C.190,E=C.100,F=(C.100/C.190) |                      |                |               |                    |              |                                            |
@@ -174,11 +174,11 @@ Buňka **Omezení sloupce** v definici řádku slouží více účelům. V závi
 -   Buňka může určit sloupec částek k seřazení.
 
 ## <a name="using-a-calculation-formula-in-a-row-definition"></a>Použití vzorce výpočtu v definici řádku
-Může obsahovat vzorec pro výpočet v definici řádku **+**, **-**, **\***, a **/**operátory a také **IF, pak/ELSE** příkazy. Výpočet může navíc zahrnovat jednotlivé buňky a absolutní hodnoty (skutečná čísla, která jsou zahrnuta ve vzorci). Vzorec může obsahovat až 1 024 znaků. Výpočty nelze použít pro řádky obsahující buňky typu **Odkaz na finanční dimenze** (FD). Můžete však zahrnout výpočty v rámci po sobě jdoucích řádků, potlačit tisk těchto řádků a poté sečíst řádky výpočtů.
+Výpočetní vzorec v definici řádku může zahrnovat operátory **+**, **-**, **\***, and **/** a také výrazy **IF/THEN/ELSE**. Výpočet může navíc zahrnovat jednotlivé buňky a absolutní hodnoty (skutečná čísla, která jsou zahrnuta ve vzorci). Vzorec může obsahovat až 1 024 znaků. Výpočty nelze použít pro řádky obsahující buňky typu **Odkaz na finanční dimenze** (FD). Můžete však zahrnout výpočty v rámci po sobě jdoucích řádků, potlačit tisk těchto řádků a poté sečíst řádky výpočtů.
 
 ### <a name="operators-in-a-calculation-formula"></a>Operátory ve výpočetním vzorci
 
-Výpočetní vzorec používá složitější operátory než vzorec součtu řádku. Však můžete použít **\***a **/**a další operátory násobení operátorů (\*) a dělení (/) částky. Pokud chcete použít ve vzorci pro výpočet rozsah nebo součet, je nutné použít zavináč (@) před jakýmkoli kódem řádku, pokud nepoužíváte sloupec v definici řádku. Například pokud chcete přidat částku v řádku 100 částku v řádku 330, můžete použít vzorec součtu řádku **100 + 330** nebo vzorec pro výpočet **@100+@330**. **Poznámka:** Je třeba použít zavináč (@) před každým kódem řádku, který využíváte ve výpočetním vzorci. Jinak bude číslo přečteno jako absolutní hodnota. Například vzorec **@100+330** USD 330 přidá částku v řádku 100. Při odkazování na sloupec ve vzorci pro výpočet není znak (@) zapotřebí.
+Výpočetní vzorec používá složitější operátory než vzorec součtu řádku. Lze však použít operátory **\*** a **/** spolu s dalšími operátory k násobení (\*) a dělení (/) částek. Pokud chcete použít ve vzorci pro výpočet rozsah nebo součet, je nutné použít zavináč (@) před jakýmkoli kódem řádku, pokud nepoužíváte sloupec v definici řádku. Například pro přičtení částky v řádku 100 k částce v řádku 330 lze použít vzorec součtu řádku **100+330** nebo vzorec výpočtu **@100+@330**. **Poznámka:** Je třeba použít zavináč (@) před každým kódem řádku, který využíváte ve výpočetním vzorci. Jinak bude číslo přečteno jako absolutní hodnota. Například vzorec **@100+330** přidá k částce na řádku 100 částku ve výši 330 USD. Při odkazování na sloupec ve vzorci pro výpočet není znak (@) zapotřebí.
 
 ### <a name="create-a-calculation-formula"></a>Vytvoření výpočetního vzorce
 
@@ -188,15 +188,15 @@ Výpočetní vzorec používá složitější operátory než vzorec součtu ř�
 
 ### <a name="example-of-a-calculation-formula-for-specific-rows"></a>Příklad výpočetního vzorce pro konkrétní řádky
 
-V tomto příkladu vzorec pro výpočet **@100+@330** znamená, že částka v řádku 100 je přidán k částce řádku 330. Celkový vzorec řádku **340 + 370** přidá částku v řádku 340 pro částku v řádku 370. (Částku v řádku 370 je částka z výpočtu vzorce).
+V tomto příkladu vzorec výpočtu **@100+@330** znamená, že částka v řádku 100 se přidá k částce řádku 330. Vzorec součtu řádku **340+370** přidá částku v řádku 340 k částce v řádku 370. (Částku v řádku 370 je částka z vzorce výpočtu).
 
 | Kód řádku | Popis                 | Kód formátu | Související vzorce/řádky/jednotky | Řízení tisku | Modifikátor řádku | Odkaz na finanční dimenze |
 |----------|-----------------------------|-------------|----------------------------|---------------|--------------|------------------------------|
-| 340      | Hotovost na začátku období |             |                            | NP            | BB           | + Účet =\[1100:1110\]       |
+| 340      | Hotovost na začátku období |             |                            | NP            | BB           | +Účet=\[1100:1110\]       |
 | 370      | Hotovost na začátku roku   | CAL         | @100+@330                  | NP            |              |                              |
 | 400      | Hotovost na začátku období | TOT         | 340+370                    |               |              |                              |
 
-Pokud má řádek v definici řádku kód formátu **CAL** a zadáte matematický výpočet do buňky **Související vzorce/řádky/jednotky**, musíte také zadat písmeno přidruženého sloupce a řádku v sestavě. Například zadejte **A.120** představující sloupce A řádku 120. Alternativně lze použít zavináč (@) k označení všech sloupců. Například zadejte **@120**k reprezentaci všech sloupců v řádku 120. Matematický výpočet, který neobsahuje sloupec písmeno nebo znak zavináč (@) se považuje za reálné číslo. **Poznámka:** Pokud použijete popisek řádku kód chcete-li odkazovat na řádku, je nutné použít tečku (.) jako oddělovač mezi písmeno sloupce a popisek (například **A.GROSS\_MARGIN/A.SALES**). Použijete-li zavináč (@), oddělovač není vyžadováno (například **@GROSS\_MARGIN/@SALES**).
+Pokud má řádek v definici řádku kód formátu **CAL** a zadáte matematický výpočet do buňky **Související vzorce/řádky/jednotky**, musíte také zadat písmeno přidruženého sloupce a řádku v sestavě. Například zadejte **A.120** pro znázornění sloupce A, řádku 120. Případně můžete použít zavináč (@) k označení všech sloupců. Například zadejte **@120** pro znázornění všech sloupců v řádku 120. Matematický výpočet, který neobsahuje písmeno sloupce nebo znak zavináče (@), se považuje za reálné číslo. **Poznámka:**Když použijete kód řádku popisku pro referenci řádku, musíte použít tečku (.) jako oddělovač mezi písmenem sloupce a popiskem (například **A.GROSS\_MARGIN/A.SALES**). Pokud používáte zavináč (@), oddělovač není požadován (například **@GROSS\_MARGIN/@SALES**).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Příklad výpočetního vzorce pro konkrétní sloupec
 
@@ -204,7 +204,7 @@ V tomto příkladu výpočetní vzorec **E=C.340** znamená, že výpočet v bu�
 
 | Kód řádku | Popis                 | Kód formátu | Související vzorce/řádky/jednotky | Řízení tisku | Modifikátor řádku | Odkaz na finanční dimenze |
 |----------|-----------------------------|-------------|----------------------------|---------------|--------------|------------------------------|
-| 340      | Hotovost na začátku období |             |                            | NP            | BB           | + Účet =\[1100:1110\]       |
+| 340      | Hotovost na začátku období |             |                            | NP            | BB           | +Účet=\[1100:1110\]       |
 | 370      | Hotovost na začátku roku   | CAL         | E=C.340                    | NP            |              |                              |
 | 400      | Hotovost na začátku období | TOT         | 340+370                    |               |              |                              |
 
@@ -213,7 +213,7 @@ V tomto příkladu výpočetní vzorec **E=C.340** znamená, že výpočet v bu�
 Pokud upravíte číslo nebo výpočet v jednom sloupci konkrétního řádku, ale nechcete ovlivnit jiné sloupce v sestavě, můžete určit sloupec **CAL** (Výpočet) ve sloupci **Kód formátu** v definici řádku.
 
 -   Chcete-li provést výpočet všech sloupců sestavy (**FD**), nezadávejte přiřazení sloupce.
--   Omezit určité sloupce vzorec, zadáním písmene sloupce, znaménko rovná se (**=**) a potom vzorec.
+-   Chcete-li omezit vzorec na konkrétní sloupce, zadejte písmeno sloupce, znaménko rovnosti (**=**) a potom vzorec.
 -   Můžete určit více sloupců. Pokud použijete zavináč (@) při konkrétním umístění sloupce, zavináč (@) se vztahuje k řádku.
 -   V jednom řádku můžete zadat více výpočetních vzorců sloupců. Vzorce oddělte čárkami.
 
@@ -221,49 +221,49 @@ Pokud upravíte číslo nebo výpočet v jednom sloupci konkrétního řádku, a
 
 | Výpočet            | Akce, která je vytvořena                                                                                                   |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| @130\*.75              | Pro každý sloupec je hodnota v řádku 130 vynásobena hodnotou 0,75. Výsledek je pak uložen do aktuálního řádku každého sloupce. |
-| B=@130\*.75            | Stejný výpočet se provádí pouze pro sloupec B.                                                                      |
-| A, B,C=(@100/@130)\*.75 | A=(A.100/A.130)\*.75 B=(B.100/B.130)\*.75 C=(C.100/C.130)\*.75                                                           |
+| @130\*,75              | Pro každý sloupec je hodnota v řádku 130 vynásobena hodnotou 0,75. Výsledek je pak uložen do aktuálního řádku každého sloupce. |
+| B=@130\*,75            | Stejný výpočet se provádí pouze pro sloupec B.                                                                      |
+| A,B,C=(@100/@130)\*,75 | A=(A.100/A.130)\*,75 B=(B.100/B.130)\*.75 C=(C.100/C.130)\*,75                                                           |
 
 ### <a name="ifthenelse-statements-in-a-row-definition"></a>Výrazy IF/THEN/ELSE v definici řádku
 
-Výrazy **IF/THEN/ELSE** lze přidat k jakémukoli platnému výpočtu a použít s formátem **CAL**. Výpočetní vzorce **IF/THEN/ELSE** zadávejte do buňky ve sloupci **Související vzorce/řádky/jednotky**. **IF, pak/ELSE** výpočtu vzorce, použijte následující formát: IF &lt;příkaz hodnotu true nebo false&gt; pak &lt;vzorec&gt; ELSE &lt;vzorec&gt;**ELSE &lt;vzorec&gt;** část příkazu je nepovinné.
+Výrazy **IF/THEN/ELSE** lze přidat k jakémukoli platnému výpočtu a použít s formátem **CAL**. Výpočetní vzorce **IF/THEN/ELSE** zadávejte do buňky ve sloupci **Související vzorce/řádky/jednotky**. Výpočetní vzorce **IF/THEN/ELSE** používají následující formát: IF &lt;výrok pravda/nepravda&gt; THEN &lt;vzorec&gt; ELSE &lt;vzorec&gt; Část **ELSE &lt;vzorec&gt;** výrazu není povinná.
 
 #### <a name="if-statements"></a>Výrazy IF
 
 Výraz následující výraz **IF** může být libovolný příkaz, který lze vyhodnotit jako pravdu nebo nepravdu. Výraz následující výraz **IF** může zahrnovat jednoduché vyhodnocení nebo může představovat složitý příkaz, který může obsahovat více výrazů. Několik příkladů:
 
--   **Pokud A.200&gt;0** (jednoduché hodnocení)
--   **Pokud A.200&gt;0 a A.200&lt;10 000** (komplexní příkaz)
--   **Pokud A.200&gt;10000 nebo ((A.340/B.1200)\*2 &lt;1200)** (složitý výraz, který obsahuje více výrazů)
+-   **IF A.200&gt;0** (Jednoduché vyhodnocení)
+-   **IF A.200&gt;0 AND A.200&lt;10,000** (Složitý výraz)
+-   **IF A.200&gt;10000 OR ((A.340/B.1200)\*2 &lt;1200)** (Složitý výraz, který obsahuje více výrazů)
 
 Termín **Období** ve výrazu **IF** reprezentuje počet období pro sestavu. Tento termín se obvykle používá pro výpočet průměru od začátku roku. Pokud například spustíte sestavu pro období 7 YTD, výraz **B.150/Období** bude znamenat, že hodnota v řádku 150 sloupce B bude vydělena 7.
 
 #### <a name="then-and-else-formulas"></a>Vzorce THEN a ELSE
 
-Vzorce **THEN** a **ELSE** mohou představovat jakýkoli platný výpočet od velmi jednoduchého přiřazení hodnoty po složité vzorce. Například příkaz **Pokud A.200&gt;0 a pak A=B.200** znamená "Pokud je hodnota v buňce ve sloupci A řádku 200 více než 0 (nula), vložena hodnota z buňky ve sloupci B 200 řádek do buňky ve sloupci A řádku aktuální." Předchozí výraz **IF/THEN** vloží hodnotu do jednoho sloupce aktuálního řádku. Lze však také použít zavináč (@) ve vyhodnocování pravdy a nepravdy nebo vzorec představující všechny sloupce. Zde je několik dalších příkladů, které jsou popsány v následujících oddílech:
+Vzorce **THEN** a **ELSE** mohou představovat jakýkoli platný výpočet od velmi jednoduchého přiřazení hodnoty po složité vzorce. Například výraz **IF A.200&gt;0 THEN A=B.200** znamená „Je-li hodnota v buňce ve sloupci A v řádku 200 větší než 0 (nula), vložit hodnotu z buňky ve sloupci B v řádku 200 do buňky ve sloupci A aktuálního řádku“. Předchozí výraz **IF/THEN** vloží hodnotu do jednoho sloupce aktuálního řádku. Lze však také použít zavináč (@) ve vyhodnocování pravdy a nepravdy nebo vzorec představující všechny sloupce. Zde je několik dalších příkladů, které jsou popsány v následujících oddílech:
 
--   **Pokud A.200 &gt;0 a pak B.200**: je-li hodnota v buňce A.200 pozitivní hodnotu z buňky B.200 umístěn do každého sloupce v aktuálním řádku.
--   **Pokud A.200 &gt;= 0 THEN @200**: Pokud je hodnota v buňce A.200 pozitivní, hodnota každého sloupce v řádku 200 převeden do odpovídajícího sloupce v aktuálním řádku.
--   **IF @200&gt;= 0 THEN @200**: Pokud je kladná hodnota v řádku 200 aktuální sloupec, hodnotu z řádku 200 je umístit do téhož sloupce v aktuálním řádku.
+-   **IF A.200 &gt;0 THEN B.200**: Pokud je hodnota v buňce A.200 kladná, hodnota z buňky B.200 bude vložena do každého sloupce aktuálního řádku.
+-   **IF A.200 &gt;0 THEN @200**: Pokud je hodnota v buňce A.200 kladná, hodnota z každého sloupce v řádku 200 bude vložena do odpovídajícího sloupce aktuálního řádku.
+-   **IF @200 &gt;0 THEN @200**: Je-li hodnota v řádku 200 aktuálního sloupce kladná, hodnota z řádku 200 bude vložena do stejného sloupce v aktuálním řádku.
 
 ### <a name="restricting-a-calculation-to-a-reporting-unit-in-a-row-definition"></a>Omezení výpočtu na jednotku výkaznictví v definici řádku
 
-Omezit výpočet s jedinou jednotkou pro vykazování pro vykazování stromu, takže výsledná částka není zahrnutý do jednotky vyšší úrovně, můžete použít **@Unit**kód **související vzorce/řádky/jednotky** buňky v definici řádku. **@Unit**Kód je uveden ve sloupci B pro vykazování stromu, **název jednotky**. Při použití **@Unit**kód, nejsou zahrnuty hodnoty, ale výpočet je vyhodnocen na všech úrovních stromu vykazování. **Poznámka:** Abyste mohli tuto funkci použít, je nutné přiřadit k definici řádku strom výkaznictví. Řádek výpočtu může odkazovat na řádek výpočtu nebo řádek finančních dat. Výpočet se zaznamenává do buňky **Související vzorce/řádky/jednotky** v definici řádku a do omezení typu finančních dat. Výpočet musí používat podmíněné výpočet, který začíná **IF @Unit**konstrukce. Zde je příklad: IF @Unit(prodej) pak @100ELSE 0 Tento výpočet zahrnuje částku z řádku 100 každý sloupec sestavě, ale pouze za prodejní jednotku. Pokud je více jednotek nazváno SALES, částka se zobrazí v každé z těchto jednotek. Řádek 100 může být navíc řádek finančních dat a lze ho definovat jako netisknutý. Částka se v tomto případě nemůže zobrazit u všech jednotek ve stromu. Můžete také omezit částku na jeden sloupec sestavy, například sloupec H pomocí omezení sloupce k tisku hodnoty pouze v daném sloupci sestavy. Můžete zahrnout kombinace **OR** ve výrazu **IF**. Zde je příklad: IF @Unit(prodej) nebo @UnitELSE (SALESWEST) pak 5 @100v typ výpočtu omezení můžete určit jednotku v jednom z následujících způsobů:
+Omezit výpočet na jednu jednotku výkaznictví ve stromu výkaznictví tak, aby výsledná částka nebyla shrnuta do jednotky vyšší úrovně, můžete použít kód **@Unit** v buňce **Související vzorce/řádky/jednotky** v definici řádku. Kód **@Unit** je uveden ve sloupci B stromu výkaznictví, **Název jednotky**. Používáte-li kód **@Unit**, hodnoty nejsou shrnuty, ale výpočet bude vyhodnocen na všech úrovních stromu výkaznictví. **Poznámka:** Abyste mohli tuto funkci použít, je nutné přiřadit k definici řádku strom výkaznictví. Řádek výpočtu může odkazovat na řádek výpočtu nebo řádek finančních dat. Výpočet se zaznamenává do buňky **Související vzorce/řádky/jednotky** v definici řádku a do omezení typu finančních dat. Výpočet musí použít podmíněný výpočet, který začíná konstrukcí **IF @Unit**. Příklad: IF @Unit(SALES) THEN @100 ELSE 0 Tento výpočet obsahuje částku z řádku 100 každého sloupce sestavy, ale pouze pro jednotku SALES. Pokud je více jednotek nazváno SALES, částka se zobrazí v každé z těchto jednotek. Řádek 100 může být navíc řádek finančních dat a lze ho definovat jako netisknutý. Částka se v tomto případě nemůže zobrazit u všech jednotek ve stromu. Můžete také omezit částku na jeden sloupec sestavy, například sloupec H pomocí omezení sloupce k tisku hodnoty pouze v daném sloupci sestavy. Můžete zahrnout kombinace **OR** ve výrazu **IF**. Příklad: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 Jednotku lze určit v omezení typu výpočtu jedním z následujících způsobů:
 
--   Zadáním názvu jednotky zahrňte jednotky, které odpovídají. Například **IF @Unit(prodej)** umožňuje výpočet pro jakoukoli jednotku, která je s názvem Prodej, i když je jich několik PRODEJNÍCH jednotek ve vykazování stromu.
--   Zadejte název společnosti a jednotky pro omezení výpočtu na specifické jednotky v určité společnosti. Například zadejte **IF @Unit(ACME: prodej**) omezit výpočet PRODEJNÍCH jednotek ve společnosti ACME.
--   Zadejte úplný kód hierarchie ze stromu výkaznictví pro omezení výpočtu na určitou jednotku. Například zadejte **IF @Unit(souhrn ^ ACME ^ ZÁPADNÍ pobřeží ^ prodej)**. **Poznámka:** Abyste našli úplný kód hierarchie, klikněte pravým tlačítkem myši na definici stromu výkaznictví a poté vyberte možnost **Zkopírovat identifikátor jednotky výkaznictví (kód H)**.
+-   Zadáním názvu jednotky zahrňte jednotky, které odpovídají. Například **IF @Unit(SALES)** umožňuje výpočet pro jakoukoli jednotku názvem SALES, i když ve stromu výkaznictví existuje několik jednotek SALES.
+-   Zadejte název společnosti a jednotky pro omezení výpočtu na specifické jednotky v určité společnosti. Zadejte například hodnotu **IF @Unit(ACME:SALES**) k omezení výpočtu na jednotky SALES ve společnosti ACME.
+-   Zadejte úplný kód hierarchie ze stromu výkaznictví pro omezení výpočtu na určitou jednotku. Zadejte například výraz **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**. **Poznámka:** Abyste našli úplný kód hierarchie, klikněte pravým tlačítkem myši na definici stromu výkaznictví a poté vyberte možnost **Zkopírovat identifikátor jednotky výkaznictví (kód H)**.
 
 #### <a name="restrict-a-calculation-to-a-reporting-unit"></a>Omezení výpočtu na jednotku výkaznictví
 
 1.  V Návrháři sestav klikněte na tlačítko **Definice řádku**a potom otevřete definici řádku ke změně.
 2.  Dvakrát klikněte na buňku **Kód formátu** a vyberte kód **CAL**.
-3.  Klepněte **související vzorce/řádky/jednotky** buňky a potom zadejte podmíněný výpočet, který začíná **IF @Unit**konstrukce.
+3.  Klikněte na buňku **Související vzorce/řádky/jednotky** a poté zadejte podmíněné výpočty, které začínají konstrukcí **IF @Unit**.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>Výrazy IF/THEN/ELSE v definici sloupce
 
-Výraz **IF/THEN/ELSE** umožňuje závislost jakéhokoli výpočtu na výsledcích z jiného sloupce. Můžete odkazovat na jiné sloupce, nemůžete však odkazovat na buňku sestavy ve vzorci **IF**. Všechny výpočtu musí být uplatněny pro celý sloupec. Například příkaz **IF B&gt;100 pak jiný C B\*1,25** znamená, "Pokud částka ve sloupci B je větší než 100, vložte hodnotu ze sloupce B na **CALC** sloupec. Není-li částka ve sloupci B větší než 100, vynásobit hodnotu ve sloupci C hodnotou 1,25 a vložit výsledky do sloupce **CALC**“. Vždy následujte výrok **IF** logickým prohlášením, které lze vyhodnotit jako pravdu nebo nepravdu. Vzorce, které použijete pro oba výroky **THEN** a výraz **ELSE** mohou obsahovat odkazy na libovolný počet sloupců a tyto vzorce mohou být tak složité, jak budete potřebovat. **Poznámka:** Nemůžete vložit výsledky výpočtu do žádného jiného sloupce. Výsledky musí být ve sloupci, který obsahuje vzorec.
+Výraz **IF/THEN/ELSE** umožňuje závislost jakéhokoli výpočtu na výsledcích z jiného sloupce. Můžete odkazovat na jiné sloupce, nemůžete však odkazovat na buňku sestavy ve vzorci **IF**. Všechny výpočtu musí být uplatněny pro celý sloupec. Například výraz **IF B&gt;100 THEN B ELSE C\*1.25** znamená „Je-li částka ve sloupci B vyšší než 100, vložit hodnotu ze sloupce B do sloupce **CALC**. Není-li částka ve sloupci B větší než 100, vynásobit hodnotu ve sloupci C hodnotou 1,25 a vložit výsledky do sloupce **CALC**“. Vždy následujte výrok **IF** logickým prohlášením, které lze vyhodnotit jako pravdu nebo nepravdu. Vzorce, které použijete pro oba výroky **THEN** a výraz **ELSE** mohou obsahovat odkazy na libovolný počet sloupců a tyto vzorce mohou být tak složité, jak budete potřebovat. **Poznámka:** Nemůžete vložit výsledky výpočtu do žádného jiného sloupce. Výsledky musí být ve sloupci, který obsahuje vzorec.
 
 
 

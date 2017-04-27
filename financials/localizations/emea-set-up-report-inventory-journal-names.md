@@ -1,6 +1,6 @@
 ---
-title: "Sestavy deníků zásob"
-description: "Při použití zásob konfigurovatelné sestavy založené na elektronických sestav, je třeba vytvořit vztah mezi konkrétní sestavu a typ deníku."
+title: "Sestavy deníku zásob"
+description: "Při použití konfigurovatelných sestav zásob založených na elektronickém výkaznictví je třeba vytvořit vztah mezi konkrétní sestavou a typem deníku."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,26 +25,26 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="inventory-journal-reports"></a>Sestavy deníků zásob
+# <a name="inventory-journal-reports"></a>Sestavy deníku zásob
 
 [!include[banner](../includes/banner.md)]
 
 
-Při použití zásob konfigurovatelné sestavy založené na elektronických sestav, je třeba vytvořit vztah mezi konkrétní sestavu a typ deníku.
+Při použití konfigurovatelných sestav zásob založených na elektronickém výkaznictví je třeba vytvořit vztah mezi konkrétní sestavou a typem deníku.
 
-Chcete-li nastavit vztah mezi konkrétní sestavu a typu deníku na **názvy deníků zásob** stránky (**řízení zásob**&gt;**nastavení**&gt;**názvy deníku**&gt;**zásob**), zadejte název sestavy. **Poznámka:** podporovaných konfigurací nastavení, stáhnout požadované konfigurace elektronické hlášení. Další informace naleznete v tématu [stáhnout elektronické vykazování konfigurace služby životního cyklu](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). V následující tabulce jsou uvedeny příklady sestavy zásob s podporovanou konfigurací v Evropě.
+Chcete-li nastavit vztah mezi konkrétní sestavou a typem deníku, na stránce **Názvy deníků zásob** (**Řízení zásob** &gt; **Nastavení** &gt; **Názvy deníků** &gt; **Zásoby**) zadejte název sestavy. **Poznámka:** Pro nastavení podporovaných konfigurací si stáhněte požadované konfigurace elektronického vykazování. Další informace viz [1Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). V následující tabulce jsou uvedeny příklady sestavy zásob s podporovanou konfigurací v Evropě.
 |                    |                                     |                  |                                         |
 |--------------------|-------------------------------------|------------------|-----------------------------------------|
-| **Country**        | **Popis sestavy**              | **Journal type** | **Mapování názvu formátu**                 |
-| Lotyšsko, Maďarsko | Výkaz zásob          | Inventura         | Výkaz zásob (HU, LT)            |
+| **Země**        | **Popis sestavy**              | **Typ deníku** | **Název mapování formátu**                 |
+| Litva, Maďarsko | Sestava stavu zásob          | Inventura         | Výkaz inventury majetku (HU, LT)            |
 | Lotyšsko, Polsko     | Dokument reklasifikace zásob | Převod         | InventoryReclassificationDocument\_PLLV |
-| Estonsko            | Dokument reklasifikace zásob | Převod         | InventoryReclassificationDocument\_é   |
-| Polsko             | Vnitřní PW/RW                      | Pohyb         | InventJournalLinesDocPL                 |
-| Lotyšsko             |  Doklad o Přesunu zásob         | Pohyb         | Pohyb\_LV                            |
-| Lotyšsko             | Doklad o znehodnocení zásob       | Úprava       | InventJournalLines\_LV                  |
+| Estonsko            | Dokument reklasifikace zásob | Převod         | InventoryReclassificationDocument\_EE   |
+| Polsko             | Interní PW/RW                      | Pohyb         | InventJournalLinesDocPL                 |
+| Lotyšsko             |  Doklad o Přesunu zásob         | Pohyb         | Movement\_LV                            |
+| Lotyšsko             | Dokument hodnoty zásob       | Úprava       | InventJournalLines\_LV                  |
 | Lotyšsko             | Poznámka k převodu              | Převod         | InternalTransferDeliveryNote\_LV        |
-| Lotyšsko             | Načítání dokumentu sestavy            | Inventura         | CountedDocument\_LV                     |
-| Lotyšsko             | Inventurní seznam sestavy                | Inventura         | Inventurní seznam                           |
+| Lotyšsko             | Sestava dokumentu inventury            | Inventura         | CountedDocument\_LV                     |
+| Lotyšsko             | Sestava inventurního seznamu                | Inventura         | Inventurní seznam                           |
 
 
 

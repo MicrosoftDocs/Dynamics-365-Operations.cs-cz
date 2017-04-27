@@ -1,6 +1,6 @@
 ---
-title: "Bankovní výpis souboru importu Poradce při potížích"
-description: "Je důležité, že banky soubor výpisu z banky odpovídají rozložení, které podporuje Microsoft Dynamics 365 pro operace. Díky přísným standardům pro bankovní výpisy bude většina integrací fungovat správně. Někdy však soubor s prohlášením nemusí být možné importovat, nebo bude obsahovat nesprávné výsledky. Tyto problémy jsou obvykle způsobeny drobnými rozdíly v souboru s bankovním výpisem. V tomto článku je popsán postup pro vyřešení těchto rozdílů a potíží."
+title: "Poradce při potížích s importem souboru bankovního výpisu"
+description: "Je důležité, aby se soubor s bankovním výpisem z banky shodoval v rozvržení s rozvržením podporovaným v aplikaci Microsoft Dynamics 365 for Operations. Díky přísným standardům pro bankovní výpisy bude většina integrací fungovat správně. Někdy však soubor s prohlášením nemusí být možné importovat, nebo bude obsahovat nesprávné výsledky. Tyto problémy jsou obvykle způsobeny drobnými rozdíly v souboru s bankovním výpisem. V tomto článku je popsán postup pro vyřešení těchto rozdílů a potíží."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,12 +24,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bank-statement-file-import-troubleshooting"></a>Bankovní výpis souboru importu Poradce při potížích
+# <a name="bank-statement-file-import-troubleshooting"></a>Poradce při potížích s importem souboru bankovního výpisu
 
 [!include[banner](../includes/banner.md)]
 
 
-Je důležité, že banky soubor výpisu z banky odpovídají rozložení, které podporuje Microsoft Dynamics 365 pro operace. Díky přísným standardům pro bankovní výpisy bude většina integrací fungovat správně. Někdy však soubor s prohlášením nemusí být možné importovat, nebo bude obsahovat nesprávné výsledky. Tyto problémy jsou obvykle způsobeny drobnými rozdíly v souboru s bankovním výpisem. V tomto článku je popsán postup pro vyřešení těchto rozdílů a potíží.
+Je důležité, aby se soubor s bankovním výpisem z banky shodoval v rozvržení s rozvržením podporovaným v aplikaci Microsoft Dynamics 365 for Operations. Díky přísným standardům pro bankovní výpisy bude většina integrací fungovat správně. Někdy však soubor s prohlášením nemusí být možné importovat, nebo bude obsahovat nesprávné výsledky. Tyto problémy jsou obvykle způsobeny drobnými rozdíly v souboru s bankovním výpisem. V tomto článku je popsán postup pro vyřešení těchto rozdílů a potíží.
 
 <a name="what-is-the-error"></a>Kde se stala chyba?
 ------------------
@@ -37,16 +37,16 @@ Je důležité, že banky soubor výpisu z banky odpovídají rozložení, kter�
 Při pokusu o import souboru s bankovním výpisem přejděte při hledání chyby k historii úlohy řízení dat a podrobnostem o jejím provedení. Chyba může pomoci tím, že bude ukazovat na řádek výkazu, rozvahy nebo výpisu. Obvykle však neposkytuje dostatek informací k identifikaci pole nebo prvku, který problém způsobil.
 
 ## <a name="what-are-the-differences"></a>Jaký je rozdíl?
-Definice rozložení bankovního souboru, který chcete 365 Microsoft Dynamics pro definici importu operace porovnání a zaznamenejte rozdíly v polích a prvky. Porovnejte soubor výpisu bankovního související ukázku Dynamics 365 pro operace soubor. V souborech ISO20022 by měl být snadno zjistit rozdíly.
+Srovnejte definici rozložení bankovní soubor s definicí importu v aplikaci Microsoft Dynamics 365 for Operations a povšimněte si všech rozdílů v polích a prvcích. Porovnejte soubor bankovního výpisu s příslušným vzorovým souborem aplikace Dynamics 365 for Operations. V souborech ISO20022 by mělo být možné snadno zjistit rozdíly.
 
 ## <a name="transformations"></a>Transformace
 Obvykle je nutné provést změny v jedné ze tří transformací. Každá transformace je sestavena pro konkrétní standard.
 
 | Název prostředku                                         | Název souboru                          |
 |-------------------------------------------------------|------------------------------------|
-| BankStmtImport\_BAI2CSV\_k\_BAI2XML\_xslt            | BAI2CSV-to-BAI2XML.xslt            |
-| BankStmtImport\_ISO20022XML\_k\_odsouhlasení\_xslt | ISO20022XML-to-Reconciliation.xslt |
-| BankStmtImport\_MT940TXT\_k\_MT940XML\_xslt          | MT940TXT-to-MT940XML.xslt          |
+| BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt            | BAI2CSV-to-BAI2XML.xslt            |
+| BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt | ISO20022XML-to-Reconciliation.xslt |
+| BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt          | MT940TXT-to-MT940XML.xslt          |
 
 ## <a name="debugging-transformations"></a>Ladění transformací
 ### <a name="adjust-the-bai2-and-mt940-files"></a>Úprava souboru BAI2 a MT940
@@ -71,7 +71,7 @@ Další informace naleznete v tématu <https://msdn.microsoft.com/en-us/library/
 5.  jako vstup nastavte umístění souboru s bankovním výpisem.
 6.  Zadejte název souboru a jeho umístění pro výstup.
 7.  Nastavte požadované zlomové body.
-8.  V nabídce klepněte na příkaz **XML**&gt;**spustit ladění XSLT**.
+8.  V nabídce klepněte na **XML** &gt; **Spustit ladění XSLT**.
 
 ### <a name="format-the-xslt-output"></a>Formátování výstupu XSLT
 
@@ -79,7 +79,7 @@ Po spuštění transformace se vytvoří výstupní soubor, který lze zobrazit 
 
 ### <a name="adjust-the-transformation"></a>Úprava transformace
 
-Upravením transformace získejte příslušné pole nebo prvek v souboru s bankovním výpisem. Pak odpovídající 365 Dynamics operací prvku mapování tohoto pole nebo prvek.
+Upravením transformace získejte příslušné pole nebo prvek v souboru s bankovním výpisem. Toto pole či prvek pak namapujte na odpovídající prvek aplikace Dynamics 365 for Operations.
 
 ### <a name="debitcredit-indicator"></a>Indikátor má dáti/dal
 

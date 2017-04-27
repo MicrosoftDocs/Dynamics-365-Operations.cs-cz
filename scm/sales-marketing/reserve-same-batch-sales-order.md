@@ -1,5 +1,5 @@
 ---
-title: "Stejné dávky pro prodejní objednávky rezervovat"
+title: "Rezervace stejné dávky pro prodejní objednávku"
 description: "Tento článek vysvětluje, jak nastavit produkt pro umožnění rezervací zásob pomocí jedné dávky zásob."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reserve-the-same-batch-for-a-sales-order"></a>Stejné dávky pro prodejní objednávky rezervovat
+# <a name="reserve-the-same-batch-for-a-sales-order"></a>Rezervace stejné dávky pro prodejní objednávku
 
 [!include[banner](../includes/banner.md)]
 

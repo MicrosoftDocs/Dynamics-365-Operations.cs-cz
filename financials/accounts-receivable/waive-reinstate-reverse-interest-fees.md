@@ -46,7 +46,7 @@ Všechny tyto akce mění oznámení úroků. Oznámení úroků, které je obch
 | Stornovat veškeré oznámení úroků. –nebo– Storno vybraných úrokových transakcí, které jsou součástí oznámení úroků. **Poznámka:** Nemůžete stornovat poplatek. Můžete však stornovat celé oznámení úroků obsahující poplatek. | Poplatky od odběratele nejsou nadále splatné. Poplatky ovšem jsou znovu splatné v případě, že přepočítáte úrok. | Proces je stejný jako proces u odvolání oznámení úroků a vybraných úrokových transakcí. Pro zákazníka je vytvořena faktura úprav nebo dobropis. Tento dobropis se používá pro automatické vyrovnání oznámení úroků. Můžete použít samostatný proces pro přepočítání úroků a vytvoření nových oznámení úroků.                                                                                                                                                                                                                                                                                                                                                                                              |
 
 > [!NOTE] 
-> Také můžete v samostatné procesy odepsat nedobytné pohledávky. Tento proces označí všechny transakce odběratele pro vyrovnání, namísto upuštění od poplatků, které jsou součástí oznámení úroků.
+> K odpisu nedobytných pohledávek můžete také použít samostatný proces. Tento proces označí všechny transakce odběratele pro vyrovnání, namísto upuštění od poplatků, které jsou součástí oznámení úroků.
 
 ## <a name="adjust-interest-for-invoices"></a>Úprava úroků pro faktury
 Kromě úpravy oznámení úroků lze odebrat úrokové náklady na faktury pomocí jednoho z následujících postupů. Oba procesy také provedou úpravy v souvisejících oznámeních úroků.

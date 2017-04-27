@@ -35,19 +35,19 @@ Tento článek poskytuje informace o příslibech objednávky. Příslib objedn�
 
 Při příslibu objednávky se na základě metody řízení data dodání a počtu přepravních dnů vypočítá nejdřívější datum expedice a příjmu. Vybírat lze ze čtyř metod řízení data dodání:
 
--   **Prodejní doby realizace** – prodejní doba realizace je doba mezi vytvoření prodejní objednávky a dodávky zboží. Výpočet data dodání je založen na výchozí počet dní a nebere v úvahu skladové dostupnosti, známé poptávky nebo plánované dodávky.
--   **ATP (k dispozici slíbit)** – ATP je množství zboží, které je k dispozici a můžete přislíbené zákazníkovi k určitému datu. Výpočet množství ATP zahrnuje nepotvrzené zásoby, doby realizace, plánované příjmy a výdeje.
+-   **Doba realizace prodeje** – doba realizace prodeje je doba mezi vytvořením prodejní objednávky a expedici položek. Výpočet data dodání je založen na výchozím počtu dnů a nezohledňuje skladovou dostupnost, známou poptávku ani plánovanou dodávku.
+-   **ATP (lze slíbit)** – ATP je množství položky, které je k dispozici a může být odběrateli slíbeno k určitému datu. Výpočet množství ATP zahrnuje nepotvrzené zásoby, doby realizace, plánované příjmy a výdeje.
 -   **ATP + rezerva výdeje **– datum expedice odpovídá datu ATP navýšenému o rezervu výdeje pro položku. Rezerva výdeje je doba potřebná k přípravě položek na expedici.
 -   **CTP (příslib na základě ověření dostupné kapacity) **– dostupnost se počítá pomocí rozpadu.
 
 ## <a name="atp-calculations"></a>Výpočty hodnoty ATP
-Množství ATP se vypočítá pomocí metody "kumulativní ATP se vzhled ahead". Hlavní výhodou této metody výpočtu ATP je, že je schopen zpracovat v případech, kdy součet problémy mezi příjmy více než nejnovější oznámení (například pokud je třeba zadat množství z předchozích příjmu ke splnění požadavku). Metoda výpočtu "kumulativní ATP se vzhled ahead" zahrnuje všechny otázky, dokud kumulativní množství pro příjem přesahuje kumulativní množství vydat. Tato metoda výpočtu hodnoty ATP tedy vyhodnocuje, zda lze některé z množství z předchozího časového období použít v pozdějším období.  
+Množství ATP se vypočítává pomocí metody „kumulativní hodnota ATP s dopředným vyhledáváním“. Hlavní výhodou této metody výpočtu hodnoty ATP je, že pomocí ní lze zpracovat případy, kdy součet výdejů mezi příjmy je větší než poslední příjem (například když je ke splnění požadavku nutné použít množství z předchozího příjmu). Metoda výpočtu „kumulativní hodnota ATP s dopředným vyhledáváním“ zahrnuje všechny výdeje až do té doby, než kumulativní množství k příjmu překročí kumulativní množství k vydání. Tato metoda výpočtu hodnoty ATP tedy vyhodnocuje, zda lze některé z množství z předchozího časového období použít v pozdějším období.  
 
 Množství ATP je nepřislíbený zůstatek zásob v prvním období. Obvykle se počítá pro každé období, ve kterém je plánován příjem. Dobu ATP program počítá ve dnech a aktuální datum přitom počítá jako první den pro množství ATP. V prvním období zahrnuje množství ATP zásobu na skladě, od níž jsou odečteny objednávky odběratelů, které jsou v termínu nebo po termínu.  
 
 Výpočet ATP vzniká pomocí následujícího vzorce:  
 
-ATP = ATP pro předchozí období + příjmy pro aktuální období – problémy pro aktuální období – problém čisté množství pro každou budoucí období až do období po součtu příjmů pro všechny budoucí období, až do a včetně budoucího období převyšuje součet problémy až do a včetně budoucího období.  
+ATP = ATP předchozího období + příjmy aktuálního období - výdeje aktuálního období – čisté vydané množství pro každé budoucí období až do období, kdy součet příjmů pro pro všechna budoucí období (včetně budoucího období) je větší než součet výdejů (včetně budoucího období).  
 
 Pokud neexistují další výdeje nebo příjmy, které lze vzít v úvahu, je množství ATP v dalších dnech stejné jako poslední vypočítané množství ATP.  
 
@@ -69,9 +69,9 @@ Odběratel zavolá a chce si objednat 150 kusů stejného produktu. Při ověřo
 
 Vytvořte řádek prodejní objednávky pro daný produkt a jak množství zadejte hodnotu **150**.  
 
-Vzhledem k tomu, že metoda řízení data dodání je ATP, vypočítají se data ATP, aby se našlo nejbližší možné datum expedice. Na základě nastavení, jsou považovány za zpožděné nákupní objednávky a prodejní objednávky a výsledné množství ATP pro aktuální datum je 0. Zítra, pokud Zpožděné nákupní objednávky je má být přijato, ATP množství se vypočítá jako více než 0 (v tomto případě se počítá jako 125). Však 10 dní od nyní, další nákupní objednávky pro 100 kusů očekávaného být přijato, ATP množství se změní na více než 150.  
+Vzhledem k tomu, že metoda řízení data dodání je ATP, vypočítají se data ATP, aby se našlo nejbližší možné datum expedice. Na základě nastavení je zohledněna zpožděná nákupní objednávka a prodejní objednávka a výsledné množství ATP pro aktuální datum je 0. Zítra, kdy je očekáváno přijetí zpožděné nákupní objednávky, se množství ATP vypočítá jako větší než 0 (v tomto případě bude mít hodnotu 125). Nicméně za 10 dní od dneška, kdy je očekáváno přijetí další nákupní objednávky na 100 kusů, bude množství ATP větší než 150.  
 
-Proto datum expedice je nastaven na 10 dní od nyní, na základě výpočtu ATP. Odběrateli tedy můžete sdělit, že požadované množství lze dodat za 10 dní od tohoto okamžiku.
+Proto je datum expedice na základě výpočtu hodnoty ATP nastaveno na 10 dní od tohoto okamžiku. Odběrateli tedy můžete sdělit, že požadované množství lze dodat za 10 dní od tohoto okamžiku.
 
 
 

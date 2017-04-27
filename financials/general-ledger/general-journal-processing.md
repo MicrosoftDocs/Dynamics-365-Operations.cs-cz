@@ -1,6 +1,6 @@
 ---
 title: "Zpracování hlavního deníku"
-description: "Tento článek popisuje funkce v Microsoft Dynamics 365 pro operace sloužící k zpracování finančního deníku vytvořit jednodušší a který pomáhá také zaručit, že správná data zachycena a nedojde k ohrožení vnitřní kontroly."
+description: "Tento článek popisuje možnosti v aplikaci Microsoft Dynamics 365 for Operations, které usnadňují zpracování deníku hlavní knihy a které lze také použít k zaručení správnosti pořízených dat a dodržení interní kontroly."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,28 +35,28 @@ Tento článek popisuje možnosti v aplikaci Microsoft Dynamics AX, které usnad
 
 Názvy deníků
 
-Jedním z nejdůležitějších oblastí pro nastavení je názvy deníků. Je vhodné definovat konkrétní názvy pro každý účel, například mezipodnikové, časového rozlišení, seřizování a opravy chyb. Můžete přizpůsobit každý název deníku pro rychlé a bezpečné zvýšení zadávání dat pro každý účel. 
+Jednou z nejdůležitějších oblastí nastavení jsou názvy deníků. Je vhodné definovat konkrétní názvy pro každý účel, například mezipodnikové, úprava časového rozlišení a opravy chyb. Můžete přizpůsobit každý název deníku pro rychlé a bezpečné zvýšení zadávání dat pro každý účel. 
 
 Na stránce **Názvy deníků** můžete nastavit následující prvky:
 
--   **Schválení workflowu** – Chcete-li zlepšit interní kontrolu, definujte workflowy deníků, které stanovují limity významnosti pro kroky kontroly a schvalování na základě kritérií, jako je například celková částka na straně Má dáti. Nastavení pracovních postupů pro finanční deníky na ** financí pracovní postupy ** stránky.
+-   **Schválení workflowu** – Chcete-li zlepšit interní kontrolu, definujte workflowy deníků, které stanovují limity významnosti pro kroky kontroly a schvalování na základě kritérií, jako je například celková částka na straně Má dáti. Workflowy pro hlavní deníky můžete nastavit na stránce** Workflowy hlavní knihy**.
 -   **Výchozí hodnoty** – vyberte výchozí hodnoty pro protiúčty, měnu a finanční dimenze.
 -   **Kontrola deníku** – lze nastavit omezení pro společnost a typ účtu a rovněž pro hodnoty segmentů. 
 
 **Příklady**
 
-Název deníku lze použít pouze pro úpravy. V tomto případě můžete určit, že pouze typ účtu **Hlavní kniha** je platný napříč všemi společnostmi. [![Typy účtu deníku ovládacího prvku](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+Název deníku lze použít pouze pro úpravy. V tomto případě můžete určit, že pouze typ účtu **Hlavní kniha** je platný napříč všemi společnostmi. [![Typy účtů kontroly deníku](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
-Název deníku lze použít pouze pro konkrétní segment nebo pro rozsah u hlavních účtů. [![Ovládací prvek segment deníku](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+Název deníku lze použít pouze pro konkrétní segment nebo pro rozsah u hlavních účtů. [![Segment kontroly deníku](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Možnost **Automatické storno** je k dispozici v hlavních denících. Například máte úpravu časového rozlišení, u které skutečný dokument dosud nebyl zpracován, jak je uvedeno v následujícím obrázku.
-[![Finanční deník stornování](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![Stornování hlavního deníku](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
-Doplněk aplikace Microsoft Excel položky deníku poskytuje další úroveň automatizace a zadávání dat je jednodušší. Akce **Otevřít řádky v aplikaci Excel **je k dispozici na stránkách **Hlavní deník** a **Doklad deníku**. 
+Doplněk Microsoft Excel pro položku deníku poskytuje další úroveň automatizace a usnadňuje zadávání dat. Akce **Otevřít řádky v aplikaci Excel **je k dispozici na stránkách **Hlavní deník** a **Doklad deníku**. 
 
 Na stránce **Periodické deníky** můžete nastavit opakující se deníky pro automatizaci zpracování deníků. 
 
-Šablony dokladů lze použít kdykoli. Na **hlavní deníky** stránky, **Uložit** a **šablonu dokladu vyberte** akce jsou k dispozici na **doklad deníku** stránky v **funkce** pro řádky dokladu.
+Šablony dokladů lze použít kdykoli. Na stránce **Hlavní deníky** najdete akce **Uložit** a **Vybrat šablonu dokladu** na stránce **Doklad deníku** v oblasti **Funkce** pro řádky dokladu.
 
 ## <a name="related-setup"></a>Související nastavení
 Následující nastavení není specifické pro hlavní deníky, pomůže vám však zajistit správné a snadné zadávání dat.
@@ -81,7 +81,7 @@ Nastavení hlavního účtu poskytuje mnoho možností pro zpracování hlavníh
 
 Účetní struktury a struktury rozšířených pravidel jsou velice důležité pro zajištění toho, aby byla data potřebná pro finanční vykazování a sledování výkonu zachycována během zpracování hlavního deníku a jakékoli dokumentace. Účetní struktury a struktury rozšířených pravidel vám umožní přizpůsobit zadávání dat. Můžete povolit zadávání dat pouze pro finanční dimenze, které jsou relevantní v každé situaci a také můžete vynutit požadavek, aby byla vždy zaznamenána povinná a správná data.
 
-Další informace naleznete v tématu [plánování: účtové osnovy](plan-chart-of-accounts.md). 
+Další informace naleznete v tématu [Plánování: účtová osnova](plan-chart-of-accounts.md). 
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Konfigurovat paralelní větve v pracovním postupu"
+title: "Konfigurace paralelní větve ve workflowu"
 description: "Pokud chcete nakonfigurovat paralelní větev, postupujte následovně v editoru workflowu."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-parallel-branch-in-a-workflow"></a>Konfigurovat paralelní větve v pracovním postupu
+# <a name="configure-a-parallel-branch-in-a-workflow"></a>Konfigurace paralelní větve ve workflowu
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,7 +35,7 @@ Paralelní větev je v podstatě workflow, který je spuštěn v kontextu nadřa
 
 ## <a name="name-a-branch"></a>Pojmenujte větev
 Pomocí následujících kroků zadejte název paralelní větve.
-1.  Paralelní větev klepněte pravým tlačítkem myši a potom klepněte na tlačítko **vlastnosti**. **Vlastnosti** zobrazí formulář.
+1.  Klikněte pravým tlačítkem na paralelní větev a poté na položku **Vlastnosti**. Zobrazí se formulář **Vlastnosti**.
 2.  V levém podokně klepněte na tlačítko **Základní nastavení**.
 3.  V poli **Název** zadejte jedinečný název paralelní větve.
 4.  Klepněte na tlačítko **Zavřít**.
@@ -43,7 +43,7 @@ Pomocí následujících kroků zadejte název paralelní větve.
 ## <a name="design-and-configure-the-elements-of-a-branch"></a>Navrhněte a konfigurujte prvky větve
 Pomocí následujících kroků navrhněte a nakonfigurujte prvky této paralelní větve.
 1.  Dvakrát klikněte na paralelní větev.
-2.  Přetáhněte prvky workflowu na plátno a nakonfigurujte prvky, jako byste chtěli vytvořit jakýkoliv jiný workflow. Další informace naleznete v tématu Vytvoření pracovního postupu.
+2.  Přetáhněte prvky workflowu na plátno a nakonfigurujte prvky, jako byste chtěli vytvořit jakýkoliv jiný workflow. Další informace naleznete v tématu Vytvoření workflowu.
 
 
 

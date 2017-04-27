@@ -1,5 +1,5 @@
 ---
-title: "Platba odběratele slouží k vyrovnání více faktur, které zahrnují více období slev"
+title: "Použijte platbu odběratele na úhradu několika faktur, které zasahují do více období slevy"
 description: "Tento článek popisuje, jak je více faktur vypláceno, pokud jednotlivé faktury splňují nárok na platební slevu. Scénáře v tomto článku popisují, jak se liší využité platební slevy v závislosti na tom, kdy je platba provedena."
 author: twheeloc
 manager: AnnBe
@@ -26,21 +26,21 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Platba odběratele slouží k vyrovnání více faktur, které zahrnují více období slev
+# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Použijte platbu odběratele na úhradu několika faktur, které zasahují do více období slevy
 
 [!include[banner](../includes/banner.md)]
 
 
 Tento článek popisuje, jak je více faktur vypláceno, pokud jednotlivé faktury splňují nárok na platební slevu. Scénáře v tomto článku popisují, jak se liší využité platební slevy v závislosti na tom, kdy je platba provedena.
 
-Tato společnost prodává zboží zákazníkovi 4032. Tato společnost nabízí platební sleva 1 % Pokud je faktura zaplacena do 14 dnů. Společnost Fabrikam nabízí také platební slevy pro částečné platby. Settement parametry jsou umístěny na **parametry pohledávek** stránky.
+Fabrikam prodává zboží zákazníkovi 4032. Fabrikam nabízí platební slevu 1 %, pokud je faktura splacena do 14 dní. Společnost Fabrikam nabízí také platební slevy pro částečné platby. Parametry vyrovnání se nacházejí na stránce **Parametry pohledávek**.
 
 ## <a name="invoices"></a>Faktury
 Zákazník 4032 má tři faktury, které činí 3 000,00 celkem:
 
--   Faktura FTI-10040 pro částku 1 000,00, byl zadán dne 15. Tato faktura je způsobilé pro platební sleva % 1, pokud je zaplacena do 14 dnů.
--   Faktura FTI-10041 pro částku 1 000,00, byl zadán dne 25. Tato faktura je způsobilé pro platební sleva % 1, pokud je zaplacena do 14 dnů.
--   Faktura FTI-10042 pro částku 1 000,00, byl zadán dne 25. Tato faktura je způsobilé pro platební sleva 2 %, pokud je zaplaceno do pěti dnů a sleva 1 % Pokud je zaplacena do 14 dnů.
+-   Faktura FTI-10040 na částku 1 000 byla zadána dne 15. května. Faktura splňuje podmínky platební slevy 1 %, pokud je splacena do 14 dní.
+-   Faktura FTI-10041 na částku 1 000 byla zadána dne 25. června. Faktura splňuje podmínky platební slevy 1 %, pokud je splacena do 14 dní.
+-   Faktura FTI-10042 na částku 1 000 byla zadána dne 25. června. Tato faktura splňuje podmínky pro platební slevu 2 %, pokud je zaplacena do pěti dnů, a sleva 1 %, pokud je zaplacena do 14 dnů.
 
 ## <a name="settle-all-invoices-on-june-29"></a>Uhraďte všechny faktury do 29. června
 Pokud Arnie vytvoří deník plateb a úplně vyrovná faktury do 29. června, platba bude ve výši 2 970,00. Součet všech částek slevy bude 30,00. Arnie vytvoří platbu pro odběratele 4032 a potom otevřete stránku **Vyrovnat transakce**. Na stránce **Vyrovnat transakce** Arnie označí všechny tři řádky faktury pro vyrovnání:
@@ -51,9 +51,9 @@ Pokud Arnie vytvoří deník plateb a úplně vyrovná faktury do 29. června, p
 
 | Označit                     | Použít platební slevu | Doklad   | Účet | Datum      | Datum splatnosti  | Faktura | Částka Má dáti v transakční měně | Částka Dal v transakční měně | Měna | Částka k vyrovnání |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
-| Vybrané                 | Normální            | FTI-10040 | 4032    | 5/15/2015 | 6/15/2015 | 10040   | 1 000,00                             |                                       | USD      | 1 000,00         |
-| Vybrané                 | Normální            | FTI-10041 | 4032    | 6/25/2015 | 7/25/2015 | 10041   | 1 000,00                             |                                       | USD      | 990,00           |
-| Vybrané a zvýrazněné | Normální            | FTI-10042 | 4032    | 6/25/2015 | 7/25/2015 | 10042   | 1 000,00                             |                                       | USD      | 980,00           |
+| Vybrané                 | Normální            | FTI-10040 | 4032    | 15. 5. 2015 | 15. 6. 2015 | 10040   | 1 000,00                             |                                       | USD      | 1 000,00         |
+| Vybrané                 | Normální            | FTI-10041 | 4032    | 25. 6. 2015 | 25. 7. 2015 | 10041   | 1 000,00                             |                                       | USD      | 990,00           |
+| Vybrané a zvýrazněné | Normální            | FTI-10042 | 4032    | 25. 6. 2015 | 25. 7. 2015 | 10042   | 1 000,00                             |                                       | USD      | 980,00           |
 
 Po zaúčtování platby bude zůstatek odběratele 0,00.
 
@@ -66,20 +66,20 @@ Pokud Arnie vytvoří deník plateb a úplně vyrovná faktury do 1. července, 
 
 | Označit                     | Použít platební slevu | Doklad   | Účet | Datum      | Datum splatnosti  | Faktura | Částka Má dáti v transakční měně | Částka Dal v transakční měně | Měna | Částka k vyrovnání |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
-| Vybrané                 | Normální            | FTI-10040 | 4032    | 5/15/2015 | 6/15/2015 | 10040   | 1 000,00                             |                                       | USD      | 1 000,00         |
-| Vybrané                 | Normální            | FTI-10041 | 4032    | 6/25/2015 | 7/25/2015 | 10041   | 1 000,00                             |                                       | USD      | 990,00           |
-| Vybrané a zvýrazněné | Normální            | FTI-10042 | 4032    | 6/25/2015 | 7/25/2015 | 10042   | 1 000,00                             |                                       | USD      | 990,00           |
+| Vybrané                 | Normální            | FTI-10040 | 4032    | 15. 5. 2015 | 15. 6. 2015 | 10040   | 1 000,00                             |                                       | USD      | 1 000,00         |
+| Vybrané                 | Normální            | FTI-10041 | 4032    | 25. 6. 2015 | 25. 7. 2015 | 10041   | 1 000,00                             |                                       | USD      | 990,00           |
+| Vybrané a zvýrazněné | Normální            | FTI-10042 | 4032    | 25. 6. 2015 | 25. 7. 2015 | 10042   | 1 000,00                             |                                       | USD      | 990,00           |
 
 ## <a name="partial-settlement-on-june-29"></a>Částečné vyrovnání 29. června
 Odběratel 4032 může uhradit částečnou platbu, například polovinu každé faktury. Arnie vytvoří platbu pro odběratele 4032 a potom otevřete stránku **Vyrovnat transakce**. Na stránce **Vyrovnat transakce** Arnie označí všechny tři řádky faktury pro vyrovnání. Na každém řádku zadá částku k vyrovnání na základě pokynů uvedených odběratelem. Když Arnie vybere řádek, uvidí částku slevy pro daný řádek a částku platební slevy, která je využita. Vzhledem k tomu, že zákazník platí poloviční fakturu, Arnie uvidí hodnotu v poli **Částka platební slevy** pro fakturu FTI 10042 jako **20,00**, ale hodnota v poli **Přijatá platební sleva** je **10,00**. Částka platby je 1 485,00.
 
 | Označit                     | Použít platební slevu | Doklad   | Účet | Datum      | Datum splatnosti  | Faktura | Částka Má dáti v transakční měně | Částka Dal v transakční měně | Měna | Částka k vyrovnání |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
-| Vybrané                 | Normální            | FTI-10040 | 4032    | 5/15/2015 | 6/15/2015 | 10040   | 1 000,00                             |                                       | USD      | 500,00           |
-| Vybrané                 | Normální            | FTI-10041 | 4032    | 6/25/2015 | 7/25/2015 | 10041   | 1 000,00                             |                                       | USD      | 495,00           |
-| Vybrané a zvýrazněné | Normální            | FTI-10042 | 4032    | 6/25/2015 | 7/25/2015 | 10042   | 1 000,00                             |                                       | USD      | 490,00           |
+| Vybrané                 | Normální            | FTI-10040 | 4032    | 15. 5. 2015 | 15. 6. 2015 | 10040   | 1 000,00                             |                                       | USD      | 500,00           |
+| Vybrané                 | Normální            | FTI-10041 | 4032    | 25. 6. 2015 | 25. 7. 2015 | 10041   | 1 000,00                             |                                       | USD      | 495,00           |
+| Vybrané a zvýrazněné | Normální            | FTI-10042 | 4032    | 25. 6. 2015 | 25. 7. 2015 | 10042   | 1 000,00                             |                                       | USD      | 490,00           |
 
-Arnold můžete také ručně zadat výši platby 1,485.00 dříve, než mu otevře **vyrovnat transakce** stránky. Pokud Arnold ručně zadá částku platby a poté označí všechny tři transakce, ale není mu nastavte hodnotu v **částka k vyrovnání** pole pro každou transakci obdrží následující zprávu při mu Zavře stránku:
+Arnold může také ručně zadat částku platby 1 485 dříve, než otevře stránku **Vyrovnat transakce**. Pokud Arnold ručně zadá částku platby a poté označí všechny tři transakce, ale neupraví hodnotu v poli **Částka k vyrovnání** pro každou transakci, obdrží následující zprávu při zavření stránky:
 
 > Celková částka označených transakcí se liší od částky v deníku. Chcete změnit částku deníku?
 
@@ -93,11 +93,11 @@ Arnold informace může zobrazit na stránce **Transakce odběratele**.
 
 | Doklad    | Typ transakce | Datum      | Faktura | Částka Má dáti v transakční měně | Částka Dal v transakční měně | Zůstatek  | Měna |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
-| FTI-10040  | Faktura          | 5/15/2015 | 10040   | 1 000,00                             |                                       | 0,00     | USD      |
-| FTI-10041  | Faktura          | 6/25/2015 | 10041   | 1 000,00                             |                                       | 1 000,00 | USD      |
-| FTI-10042  | Faktura          | 6/25/2015 | 10042   | 1 000,00                             |                                       | 505,10   | USD      |
-| ARP-10040  | Platba          | 6/29/2015 |         |                                      | 1 485,00                              | 0,00     | USD      |
-| DISC-10040 | Platební sleva    | 6/29/2015 |         |                                      | 9,90                                  | 0,00     | USD      |
+| FTI-10040  | Faktura          | 15. 5. 2015 | 10040   | 1 000,00                             |                                       | 0,00     | USD      |
+| FTI-10041  | Faktura          | 25. 6. 2015 | 10041   | 1 000,00                             |                                       | 1 000,00 | USD      |
+| FTI-10042  | Faktura          | 25. 6. 2015 | 10042   | 1 000,00                             |                                       | 505,10   | USD      |
+| ARP-10040  | Platba          | 29. 6. 2015 |         |                                      | 1 485,00                              | 0,00     | USD      |
+| SLEV-10040 | Platební sleva    | 29. 6. 2015 |         |                                      | 9,90                                  | 0,00     | USD      |
 
 
 

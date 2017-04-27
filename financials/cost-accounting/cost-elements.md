@@ -67,7 +67,7 @@ Existují dva typy prvků nákladů: primární prvky nákladů a sekundární p
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Dimenze prvku nákladů a členy dimenze prvku nákladů
 Prvky náklady se označují jako *dimenze prvků nákladů* . Hodnoty jednotlivých dimenzí se nazývají *členy dimenze prvku nákladů*. V USA máme například strukturu účtové osnovy (COA), která je základem pro statutární vykazování. Tato COA slouží jako dimenze prvku nákladů. Účty, které jsou primární prvky nákladů, jsou představovány jako členy dimenze prvku nákladů v nákladovém účetnictví. Následující obrázek znázorňuje příklad hlavního účtu jako dimenze prvku nákladů s jeho aktuálními hlavními účty jako členy dimenze prvku nákladů. 
 
-[![rozměrů prvku nákladů](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+[![Dimenze prvku nákladů](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 
 ## <a name="import-cost-element-dimension-members-through-data-connectors"></a>Import členů dimenze prvků nákladů pomocí datových konektorů
 K usnadnění nastavení členů dimenze prvku nákladů v nákladovém účetnictví můžete použít datové konektory, které jsou předem připravené nebo vytvořené na míru, abyste získali zpět primární prvky nákladů z jednoho nebo více zdrojových systémů.

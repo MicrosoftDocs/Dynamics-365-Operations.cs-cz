@@ -45,7 +45,7 @@ Definice řádku je součástí sestavy nebo stavebního bloku, který určuje o
 Definice řádku může obsahovat až 20 000 řádků finančních dimenzí a obsahovat následující informace:
 
 -   popisný text, který přidává do sestavy přehlednost vytvořením záhlaví, řádků a mezer pro oddíly, například **Hotovost** nebo **Celkové výnosy**
--   Odkazy na finanční data, která mohou zahrnovat dimenze hodnoty služeb Microsoft Dynamics 365 pro operace **Poznámka:** můžete nastavit definice řádku získat data ze systému finančních dimenzí vždy, když je sestava generována.
+-   Odkazy na finanční data, která mohou zahrnovat hodnoty dimenze v aplikaci Microsoft Dynamics 365 for Operations **Poznámka:** Můžete nastavit definici řádku na stahování dat ze systému finančních dimenzí vždy při vygenerování sestavy.
 -   Součty a vzorce řádků, které jsou založeny na propojených finančních datech
 
 Obvykle každý řádek v definici řádku obsahuje jeden z následujících typů informací:
@@ -64,7 +64,7 @@ Dimenze je protnutím dat a hodnot. Můžete seskupit data a hodnoty v návrhá�
 
 | Možnost                | Popis                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Dimenze             | Vzor, který identifikuje dimenzi pro přidání definice řádku. Tento vzor obsahuje jeden znak ampersand (&) nebo znak (\#) pro každou pozici v dimenzích. Obecně byste měli používat všechny ampersandy pro dimenzi hlavního účtu a všechny křížky pro jiné dimenze. |
+| Dimenze             | Vzor, který identifikuje dimenzi pro přidání definice řádku. Tento vzor obsahuje jeden znak ampersand (&) nebo znak křížku (\#) pro každou pozici v dimenzích. Obecně byste měli používat všechny ampersandy pro dimenzi hlavního účtu a všechny křížky pro jiné dimenze. |
 | Počátek rozsahu dimenzí | První hodnota pro tuto dimenzi k přidání do definice řádku.                                                                                                                                                                                                                 |
 | Konec rozsahu dimenzí   | Poslední hodnota pro tuto dimenzi k přidání do definice řádku.                                                                                                                                                                                                                  |
 
@@ -73,9 +73,9 @@ Chcete-li přidat dimenze do definice řádku, proveďte následující kroky.
 1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2.  V nabídce **Upravit** klikněte na tlačítko **Vložit řádky z dimenzí**.
 3.  V dialogovém okně **Vložit řádky z dimenzí **vyberte v řádku **Dimenze** buňku dimenze, která má být převedena do definice řádku, a klikněte na tlačítko **Všechny &&&**.
-4.  Chcete-li omezit definici řádku na určitý rozsah hodnot dimenzí, zadejte počáteční hodnotu dimenze do buňky ** Počátek rozsahu dimenzí **a poté zadejte konečnou hodnotu dimenze do buňky **Konec rozsahu dimenzí**. Chcete-li zahrnout všechny hodnoty pro vybranou dimenzi, nevyplňujte tyto buňky. **Poznámka:** zástupné znaky (\* nebo?) v dimenzi rozsahy nevrátí všechny výsledky, že chcete, podle toho, jak databáze ERP seřadí data.
+4.  Chcete-li omezit definici řádku na určitý rozsah hodnot dimenzí, zadejte počáteční hodnotu dimenze do buňky ** Počátek rozsahu dimenzí **a poté zadejte konečnou hodnotu dimenze do buňky **Konec rozsahu dimenzí**. Chcete-li zahrnout všechny hodnoty pro vybranou dimenzi, nevyplňujte tyto buňky. **Poznámka:** Zástupné znaky (\* nebo ?) v rozsahu dimenze nemusí vrátit všechny požadované výsledky; záleží na tom, jak databáze ERP třídí data.
 5.  V poli **Kód počátečního řádku** určete kód řádku pro první hodnotu dimenze, která má být přidána do definice řádku.
-6.  V poli **Zvýšit každý řádek o** určete mezeru mezi po sobě jdoucími kódy řádků. Například pokud první řádek kódu je 100 a přírůstek je 30, první nové řádky mají kódy 100, 130, 160, 190-220. Přírůstkovou hodnotu, která poskytuje dostatek místa pro vložení nových řádků formát a vzorce použití.
+6.  V poli **Zvýšit každý řádek o** určete mezeru mezi po sobě jdoucími kódy řádků. Například pokud je kód prvního řádku 100 a přírůstek je 30, první nové řádky budou mít kódy 100, 130, 160, 190 a 220. Použijte hodnotu přírůstku, která zajistí dostatek prostoru pro vkládání nových řádků formátu a vzorců.
 7.  Klepněte na tlačítko **OK**. Pro každý řádek vybrané hodnoty dimenze je přidán jeden řádek do definice řádku.
 
 ## <a name="adjust-rounding-in-a-row-definition"></a> Úprava zaokrouhlování v definici řádku
@@ -146,7 +146,7 @@ Formátování určené v definici řádku přepíše formátování určené v 
 
 1.  V Návrháři sestav otevřete definici řádku k úpravě.
 2.  Vyberte buňky k formátování. Chcete-li vybrat více buněk, podržte klávesu Ctrl a vyberte buňky.
-3.  Na panelu nástrojů klikněte na tlačítko formátu, který chcete použít. Například odsadit řádek, vyberte řádek a potom klepněte na tlačítko **zvětšit odsazení**![zvětšit odsazení](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "zvětšit odsazení") na panelu nástrojů.
+3.  Na panelu nástrojů klikněte na tlačítko formátu, který chcete použít. Chcete-li například odsadit řádek, vyberte ho a klikněte na tlačítko **Zvětšit odsazení** ![Zvětšit odsazení](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Zvětšit odsazení") na panelu nástrojů.
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Úprava sloupců během návrhu sestav
 
@@ -173,6 +173,6 @@ K usnadnění zobrazování sloupců, se kterými pracujete v definici řádku, 
 <a name="see-also"></a>Viz také
 --------
 
-[Finanční vykazování pro 365 Microsoft Dynamics pro operace](financial-reporting-intro.md)
+[Finanční výkaznictví v aplikaci Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
 
 

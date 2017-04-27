@@ -34,7 +34,7 @@ Modul prodeje a marketingu můžete používat k získávání, ukládání a po
 <a name="marketing"></a>Marketing
 ---------
 
-Můžete používat marketingové kampaně a aktivity pro hledání potenciálních zákazníků a vytváření vztahů s nimi tak, aby se počáteční interakce mohly rozvíjet do prodejních vztahů. Následující vývojový diagram znázorňuje obchodní proces marketingu. [![Obchodní proces pro uvedení na trh](./media/marketing01.jpg)](./media/marketing01.jpg)
+Můžete používat marketingové kampaně a aktivity pro hledání potenciálních zákazníků a vytváření vztahů s nimi tak, aby se počáteční interakce mohly rozvíjet do prodejních vztahů. Následující vývojový diagram znázorňuje obchodní proces marketingu. [![Obchodní proces pro marketing](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### <a name="relationships"></a>Vztahy
 
@@ -42,10 +42,10 @@ V okně Prodej a marketing může v různých situacích dojít k počátečním
 
 ### <a name="campaigns"></a>Kampaně
 
-Kampaň cílí na kontakty od potenciálních zákazníků, zájemce, příležitosti a zákazníky, kteří byli vybráni k účasti v kampani. V Microsoft Dynamics 365 pro operace můžete vytvořit několik typů kampaní telemarketingu, poštovní a e-mailové kampaně maximalizovat potenciální zákazník. V průběhu kampaně a jak budete přijímat kladné odpovědi, můžete začít s prodejem u těchto příjemců, kteří na kampaň odpověděli kladně.
+Kampaň cílí na kontakty od potenciálních zákazníků, zájemce, příležitosti a zákazníky, kteří byli vybráni k účasti v kampani. V aplikaci Microsoft Dynamics 365 for Operations můžete vytvořit několik typů kampaní, jako je telemarketing, poštovní kampaň a e-mailové kampaně a maximalizovat tak potenciál zákazníků. V průběhu kampaně a jak budete přijímat kladné odpovědi, můžete začít s prodejem u těchto příjemců, kteří na kampaň odpověděli kladně.
 
 ## <a name="sales"></a>Prodeje
-Prodejní funkce můžete použít k vytvoření nabídek, návaznému a křížovému prodeji u nových a stávajících zákazníků, pro vytváření prodejních objednávek a vytváření prodejních faktur pro zákazníky. Následující vývojový diagram znázorňuje obchodní proces pro prodej. [![Obchodní proces prodeje](./media/sales01.jpg)](./media/sales01.jpg)
+Prodejní funkce můžete použít k vytvoření nabídek, návaznému a křížovému prodeji u nových a stávajících zákazníků, pro vytváření prodejních objednávek a vytváření prodejních faktur pro zákazníky. Následující vývojový diagram znázorňuje obchodní proces pro prodej. [![Obchodní proces pro prodej](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### <a name="sales-quotations"></a>Prodejní nabídky
 
@@ -53,7 +53,7 @@ Prodejní nabídky můžete vytvořit pro zpřístupnění nabídky zboží nebo
 
 ### <a name="up-sellcross-sell"></a>Návazný/křížový prodej
 
-Návazný a křížový prodej jsou techniky pro prodej výrobků, když je zadána objednávka pro zákazníka. U návazného prodeje bude navržen jiný produkt namísto aktuálního produktu. U křížového prodeje bude navržen produkt navíc k aktuálnímu produktu. Pokud nastavíte seznamy výrobků, můžete vytvořit zvláštní pravidla, která označují, kdy produkt by měla být navržena jako zákazník křížové nebo nahoru zákazník produkt.
+Návazný a křížový prodej jsou techniky pro prodej výrobků, když je zadána objednávka pro zákazníka. U návazného prodeje bude navržen jiný produkt namísto aktuálního produktu. U křížového prodeje bude navržen produkt navíc k aktuálnímu produktu. Při nastavování seznamů produktů můžete vytvořit zvláštní pravidla, která označují, kdy by měl být produkt navržen jako produkt pro návazný či křížový prodej.
 
 ### <a name="sales-orders"></a>Prodejní objednávky
 

@@ -1,6 +1,6 @@
 ---
-title: "Aktualizovat zobrazení částek v sestavách a dokumenty"
-description: "Toto téma obsahuje informace o tom, jak aktualizovat zobrazení částek v sestavách a jiné dokumenty, Estonska, Lotyšska, Litvy, Polska, České republiky, Maďarska a Ruska."
+title: "Aktualizovat zobrazení částek v sestavách a dokumentech"
+description: "Toto téma obsahuje informace o tom, jak aktualizovat zobrazení částek v sestavách a jiných dokumentech pro Estonsko, Lotyšsko, Litvu, Polsko, Českou republiku, Maďarsko a Rusko."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,35 +24,35 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="update-how-amounts-are-displayed-on-reports-and-documents"></a>Aktualizovat zobrazení částek v sestavách a dokumenty
+# <a name="update-how-amounts-are-displayed-on-reports-and-documents"></a>Aktualizovat zobrazení částek v sestavách a dokumentech
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma obsahuje informace o tom, jak aktualizovat zobrazení částek v sestavách a jiné dokumenty, Estonska, Lotyšska, Litvy, Polska, České republiky, Maďarska a Ruska.
+Toto téma obsahuje informace o tom, jak aktualizovat zobrazení částek v sestavách a jiných dokumentech pro Estonsko, Lotyšsko, Litvu, Polsko, Českou republiku, Maďarsko a Rusko.
 
-Pro právnické osoby do Estonska, Lotyšska, Litvy, Polska, Maďarska, České republiky a Ruska můžete nastavit úplné názvy nebo zkrácené názvy pro měnové jednotky a podjednotky. Tyto názvy slouží k transformaci zastoupení částky na dokladech a sestavách. Příklad: částka **LTL 100.20** mohou být zobrazeny jako **100 Litas 20 Centas**.
+Pro právnické osoby v Estonsku, Lotyšsku, Litvě, Polsku, Maďarsku, České republice a Rusku můžete nastavit úplné názvy nebo zkrácené názvy pro měnové jednotky a podjednotky. Tyto názvy slouží k transformaci zastoupení částky na dokladech a sestavách. Příklad: částka **LTL 100,20** může být zobrazena jako **100 Litas 20 Centas**.
 
-## <a name="set-up-full-and-short-names-for-currency-units-and-subunits"></a>Nastavit úplný a krátké názvy pro měnové jednotky a podjednotky
-Nastavit úplný a krátké názvy pro měnové jednotky a podjednotky jazyka, proveďte následující kroky:
+## <a name="set-up-full-and-short-names-for-currency-units-and-subunits"></a>Nastavení úplného a krátkého názvu pro měnové jednotky a podjednotky
+Pro nastavení úplného a krátkého názvu měnových jednotek a podjednotek pro daný jazyk proveďte následující kroky:
 
-1.  Otevřít **měny** stránky.
+1.  Otevřete stránku **Měny**.
 2.  Vyberte měnu.
-3.  V podokně akcí klepněte na tlačítko **Skloňování**.
-4.  Celé jméno a krátký název jazyka klepnutím na tlačítko **nové** a vyplňte následující pole.
+3.  V podokně akcí klikněte na možnost **Kolísání**.
+4.  Úplný název a krátký název pro jazyk přidáte kliknutím na tlačítko **Nová** a vyplněním následujících polí.
     |                                                           |                                                                                                                                                                                                                    |
     |-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | **Field**                                                 | **Description**                                                                                                                                                                                                    |
-    | **Language**                                              | Vyberte jazyk pro aktuální text.                                                                                                                                                                          |
-    | **Singulární nominative (název skupiny polí jednotek)**       | Zadejte měny jednotném čísle. Například jednotném čísle Litas je Litas.                                                                                                                         |
-    | **Množném čísle nominative (název skupiny polí jednotek)**         | Zadejte měny množném čísle. Například zadejte Litai. **Poznámka:**: **singulární genitive** a **genitive množném čísle** pole jsou k dispozici na základě jazyka, který jste vybrali v **jazyka** pole. |
-    | **Singulární nominative pole (název pole skupiny částí)** | Zadejte jednotném čísle podjednotce měny.                                                                                                                                                            |
-    | **Množném čísle nominative (název skupiny polí částí)**         | Zadejte množné číslo bylo měny.                                                                                                                                                              |
-    | **Zkrácený název jednotek (krátký název skupiny polí)**       | Zadejte kód ISO k identifikaci měny. Například zadejte LTL k identifikaci Litas.                                                                                                                             |
-    | **Zkrácený název částí (krátký název skupiny polí)**      | Zadejte název měny podjednotce. Například zadejte Centas.                                                                                                                                         |
-    | **Conjunction 'and' between units and parts**             | Vyberte pro tisk ve spojení "a" mezi jednotkami měny a částí celku. Například na fakturách nebo sestavy částka pro LTL 100.20 se zobrazí jako 100 Litas a 20 Centas.                      |
+    | **Pole**                                                 | **Popis**                                                                                                                                                                                                    |
+    | **Jazyk**                                              | Vyberte jazyk pro aktuální text.                                                                                                                                                                          |
+    | **1. pád jednotného čísla (název skupiny polí jednotek)**       | Zadejte jednotné číslo názvu měny. Například jednotné číslo slova Litas je Litas.                                                                                                                         |
+    | **1. pád množného čísla (název skupiny polí jednotek)**         | Zadejte množné číslo názvu měny. Například zadejte Litai. **Poznámka:**: pole **2. pád jednotného čísla** a **2. pád množného čísla** jsou k dispozici na základě jazyka, který jste vybrali v poli **Jazyk**. |
+    | **Pole 1. pád jednotného čísla (název skupiny polí podjednotek)** | Zadejte jednotné číslo podjednotky měny.                                                                                                                                                            |
+    | **1. pád množného čísla (název skupiny polí podjednotek)**         | Zadejte množné číslo podjednotky měny.                                                                                                                                                              |
+    | **Krátký název jednotek (krátký název skupiny polí)**       | Zadejte ISO kód pro identifikaci měny. Například zadejte LTL k identifikaci Litas.                                                                                                                             |
+    | **Krátký název podjednotek (skupina polí krátkého názvu)**      | Zadejte název podjednotky měny. Například zadejte Centas.                                                                                                                                         |
+    | **Spojka 'a' mezi jednotkami a podjednotkami**             | Zvolte tuto možnost, chcete-li vytisknout spojku „a“ mezi jednotkami a podjednotkami. Například částka LTL 100,20 se zobrazí na fakturách nebo v sestavách jako 100 litas and 20 centas.                      |
 
-5.  Click **Save**.
+5.  Klikněte na možnost **Uložit**.
 
 
 

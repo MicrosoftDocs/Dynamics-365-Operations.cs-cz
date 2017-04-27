@@ -1,6 +1,6 @@
 ---
-title: "Subdodavatelské práce při výrobě spravovat"
-description: "Toto téma vysvětluje, jak subdodavatelské operace jsou spravovány v 365 Microsoft Dynamics pro operace. Jinými slovy vysvětluje způsob správy výrobních operací, které jsou přiděleny k prostředku podle dodavatele."
+title: "Správa subdodavatelské práce při výrobě"
+description: "Toto téma vysvětluje, jak jsou subdodavatelské operace spravovány v aplikaci Microsoft Dynamics 365 for Operations. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,81 +26,81 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="manage-subcontracting-work-in-production"></a>Subdodavatelské práce při výrobě spravovat
+# <a name="manage-subcontracting-work-in-production"></a>Správa subdodavatelské práce při výrobě
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma vysvětluje, jak subdodavatelské operace jsou spravovány v 365 Microsoft Dynamics pro operace. Jinými slovy vysvětluje způsob správy výrobních operací, které jsou přiděleny k prostředku podle dodavatele.
+Toto téma vysvětluje, jak jsou subdodavatelské operace spravovány v aplikaci Microsoft Dynamics 365 for Operations. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku.
 
-V [výrobních procesů](production-process-overview.md), zdroje, které jsou vlastněné nebo spravované dodavatelů lze provést práce. Prostředky dodavatele se obvykle používají k úrovni pravidelné nadměrná poptávka, která překročí dostupnou kapacitu společnosti vlastní prostředky. Dodavatel může být také nabídnout konkrétní [schopnosti prostředku](resource-capabilities.md)nebo zdroje za nižší cenu.  
+Ve [výrobních procesech](production-process-overview.md) mohou práci provádět zdroje, které jsou vlastněné nebo spravované dodavateli. Prostředky dodavatele se používají k vyrovnání pravidelné nadměrné poptávky, která překračuje dostupnou kapacitu vlastních prostředků společnosti. Dodavatel může být také schopen nabídnout konkrétní [schopnosti prostředku](resource-capabilities.md)nebo prostředky za nižší cenu.  
 
-V závislosti na dodavatele zdroje použité ve výrobním procesu [postupu](routes-operations.md) má často další logistické, protože materiál a polotovary musí nejprve přepravovat na webu dodavatele. Výsledek operace subdodávek pak musí být přepravovány buď do umístění, které je přiřazen k další operaci nebo do skladu hotových výrobků.  
+V závislosti na prostředcích dodavatele použitých ve výrobním procesu [postupu](routes-operations.md) často existují další logistické požadavky, protože materiál a polotovary musí nejprve přepraveny do sídla dodavatele. Pak musí být výsledek operace subdodávek přepraven buď do umístění, které je přiřazeno k další operaci, nebo do skladu hotových výrobků.  
 
-Pokud jsou použity subdodávky operací nebo činnosti, mají vliv na všechny fáze operace z definice operací, které jsou vyžadovány v produkci, ocenění, Prognózování, plánování a plánování pro správu logistiky materiálu, polotovarů a hotových výrobků. Nakonec tyto prostředky vyžadují své vlastní procesy pro účetnictví a řízení nákladů.  
+Pokud jsou použity subdodávky operací nebo činnosti, mají vliv na všechny fáze operací, z definice operací, které jsou vyžadovány ve výrobě, ocenění, prognózování, plánování a vytvoření harmonogramu pro správu logistiky materiálů, polotovarů a hotových výrobků. Nakonec tyto prostředky vyžadují své vlastní procesy pro účetnictví a řízení nákladů.  
 
-Vnitřní zdroje obvykle po dobu přidělena Pevná nákladová sazba. Naopak náklady na subdodavatele zdroje podle nákupní ceny souvisejících služeb. Služba je definována jako jiný produkt a se používá jednotka zadávání veřejných zakázek a nákupní procesy pro dané operace subdodávek.  
+Pro vnitřní zdroje je pro období typicky přidělena pevná sazba nákladů. Naopak náklady na nasmlouvaný subodavatelský prostředek vycházejí z nákupní ceny souvisejících služeb. Služba je definována jako jiný produkt a používá se k řízení zásobování veřejných zakázek a nákupních procesů pro dané operace subdodávek.  
 
-V současné době neexistuje žádný explicitní koncept polotovarů v 365 Microsoft Dynamics pro operace. Výrobní zakázky, která vyžaduje více než jednu operaci pro transformaci suroviny do hotového výrobku hotového zboží účtována zpět do zásob pouze u poslední operace. Rozpracované výrobky, které vyvolávají dřívější operace jsou zaúčtovány nedokončené výroby (NV), ale nejsou zaúčtovány nebo sledovány ve skladu. Přestože postupy a kusovníky (BOM) můžete rozdělit na několik menších jednotek, tento přístup zvyšuje počet produktů, kusovníky a postupy, které musí být spravovány.  
+V současné době v aplikaci Microsoft Dynamics 365 for Operations neexistuje žádný explicitní koncept polotovarů. U výrobních zakázek, které vyžadují více než jednu operaci pro účely transformace surovin na hotový výrobek, je hotové zboží účtováno zpět do zásob pouze u poslední operace. Rozpracované výrobky, které vyvolávají dřívější operace jsou zaúčtovány nedokončené výroby (NV), ale nejsou zaúčtovány nebo sledovány ve skladu. Přestože postupy a kusovníky (BOM) můžete rozdělit na několik menších jednotek, tento přístup zvyšuje počet produktů, kusovníky a postupy, které musí být spravovány.  
 
-Existují dvě metody pro modelování subdodavatelské práce pro výrobní činnosti. Tyto metody se liší způsobem, že subdodávky procesu lze modelovat, způsobu, jakým rozpracované výrobky jsou zastoupeny v procesu a je spravována tak, aby řízení nákladů.
+Existují dvě metody pro modelování subdodavatelské práce pro výrobní činnosti. Tyto metody se liší ve způsobu, jakým lze modelovat subdodávky procesu, ve způsobu, jakým jsou rozpracované výrobky zastoupeny v procesu a ve způsobu řízení nákladů.
 
--   Subdodávky operací postupu výrobní zakázky nebo dávkové objednávky
-    -   Produkt service musí být produkt skladem a musí být součástí tohoto Kusovníku.
+-   Subdodávky operací postupu ve výrobních zakázkách nebo dávkových objednávkách
+    -   Servisní produkt musí být v zásobách a musí být součástí kusovníku.
     -   Tato metoda podporuje první, první ze skladu (FIFO) nebo standardní náklady.
-    -   Polotovary jsou představovány služby produktu v procesu.
-    -   Řízení nákladů přidělí náklady, které jsou přidruženy práce subdodavatele na materiálové náklady.
+    -   Polotovary jsou představovány produktem služby v procesu.
+    -   Řízení nákladů přiděluje náklady, které jsou přidruženy k práci subdodavatele na materiálové náklady.
 -   Subdodávky aktivity výrobního toku v toku štíhlé výroby
-    -   Služba je služba skladě produktu a není součástí tohoto Kusovníku.
+    -   Služba je služba neuskladněného produktu a není součástí tohoto kusovníku.
     -   Tato metoda používá nákupní smlouvy jako servisní smlouvy.
     -   Tato metoda používá zpětné účtování nákladů.
-    -   Tato metoda umožňuje pro zásobování souhrnné a asynchronní. (Toku materiálu je nezávisle na procesu zadávání veřejných zakázek).
-    -   Řízení nákladů přiděluje práce subdodavatele v bloku rozdělení své vlastní náklady.
+    -   Tato metoda umožňuje souhrnné a asynchronní zásobování. (Tok materiálu je nezávislý na procesu zadávání veřejných zakázek).
+    -   Řízení nákladů přiděluje subdodavatelskou práci ve vlastním bloku rozdělení nákladů.
 
 ## <a name="subcontracting-of-route-operations"></a>Subdodávky operací postupu
-Použití operace postupu pro výrobu nebo dávkové objednávky subdodávky, servisní produkt, který se používá pro zadávání zakázek na služby musí být definována jako součin **služby** typu. Kromě toho musí mít skupinu modelů zboží, který má **výrobek na skladě** možnost ve skupinovém rámečku **zásob zásad** nastavena na **Ano**. Tato možnost určuje, zda je produkt účtována jako skladové příjemky produktu (**výrobek na skladě** = **Ano**), nebo zda je produkt zanesen do výdajů na účtu zisků a ztrát (**výrobek na skladě** = **č**). Ačkoli toto chování může jevit jako sporné, je založena na skutečnosti, že pouze produkty, u kterých je tato zásada, vytvoří skladové transakce, které lze použít v řízení nákladů pro výpočet plánovaných nákladů a určení skutečné náklady po ukončení výrobní zakázky.  
+Abyste mohli používat operace postupu pro výrobu nebo dávkové objednávky subdodávky, musí být servisní produkt, který se používá pro zadávání zakázek na služby, být definován jako produkt typu **Služba**. Kromě toho musí mít skupinu modelů zboží, která má možnost **Výrobek na skladě** v části **Zásada zásob** nastavenou na **Ano**. Tato možnost definuje, zda je produkt účtován jako příjem zásob v produktu (**Výrobek na skladě** = **Ano**), nebo zda je produkt zanesen do výdajů na účtu zisků a ztrát (**výrobek na skladě** = **Ne**). Ačkoli se toto chování může jevit jako sporné, je založeno na skutečnosti, že pouze produkty, u kterých platí tyto zásady, vytvoří skladové transakce, které lze použít v řízení nákladů pro výpočet plánovaných nákladů a určení skutečných nákladů po ukončení výrobní zakázky.  
 
-Mají být zohledněny při výpočtu plánování a nákladů, musí být služba přidána ke Kusovníku. Řádek Kusovníku musí být **dodavatele** typu a musí být přidělena, je služba přidělena k operaci postupu. Tato operace postupu musí mít prostředek výpočtu nákladů a přejděte na zdroj požadavek na prostředek **dodavatele** typu, který se připojuje k odpovídající účet dodavatele operace a související služby.  
+Aby byla služba zohledněna při výpočtu plánování a nákladů, musí být přidána ke kusovníku. Řádek kusovníku musí být typu **Dodavatel** typu a musí být přidělen k operaci postupu, ke které je přidělená služba. Tato operace postupu musí mít prostředek výpočtu nákladů a požadavek na zdroj, který odkazuje na typ **dodavatele** typu, který se připojuje k operaci a související službě odpovídajícího účtu dodavatele.  
 
-Při použití této konfigurace je vytvořena nákupní objednávka produktu související služby, založené na odhadu výrobní zakázky. Objednávka služby slouží jako kotva pro operace subdodávek. Subdodavatelské práce lze spravovat prostřednictvím **subdodávka prací** seznam stránek v řízení výroby. Subdodavatelské práce slouží k dodání surovin a následně polotovar dodavatele v rámci přípravy operaci. Také slouží k příjmu získaného produktu subdodavatelské operace v doručení položky, kde produkt service se používá k identifikaci příchodem polotovaru. Přijetí řádku nákupní objednávky je aktualizován výrobní operaci jako dokončenou.  
+Při použití této konfigurace je vytvořena nákupní objednávka produktu související služby, založené na odhadu výrobní zakázky. Objednávka služby slouží jako kotva pro operace subdodávek. Subdodavatelské práce lze spravovat prostřednictvím stránky seznamu **Subdodávka prací** v řízení výroby. Subdodavatelské práce slouží k dodání surovin a následně polotovaru dodavateli v rámci přípravy operaci. Také slouží k příjmu výsledného produktu subdodavatelské operace při doručení položky, kde je servisní produkt používán k identifikaci příchodu polotovaru. Při přijetí řádku nákupní objednávky je aktualizována výrobní operace jako dokončená.  
 
-Výrobní zakázka, může mít mnoho operací a každé operace mohou být přiděleny jinému dodavateli. Konec konec výrobní objednávky, proto mohou být aktivována více nákupních objednávek.
+Výrobní zakázka může mít mnoho operací a každou operaci lze přidělit jinému dodavateli. Proto může koncový výrobní příkaz aktivovat více nákupních objednávek.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Subdodávky aktivity výrobního toku
-[Štíhlé výroby](lean-manufacturing-overview.md)řešení modely subdodavatelské práce jako služba vztahující se k činnosti [výrobní tok](http://ax.help.dynamics.com/en/wiki/create-a-production-flow-version/) (téma Průvodce úkolu). Proto tento typ subdodávky jsou také označovány jako [podle činností subdodavatelů.](activity-based-subcontracting.md) Typ skupiny nákladů speciální **přímý outsourcing**, byly zavedeny, a subdodavatelské služby nejsou součástí Kusovníku dokončené zboží. Při použití lean manufacturing, všechny aktivity jsou definovány kanbany, které lze propojit s jedním nebo více aktivity výrobního toku. Toto vysvětlení, pokud zvuky stejně jako popis výrobní zakázky. Že výrobní zakázky musí vždy končit konečného výrobku, je vytvořit kanbany dodávat polotovar. Není nutné zavést nový produkt a úroveň Kusovníku.  
+Řešení [lean manufacturing](lean-manufacturing-overview.md)modeluje subdodavatelskou práci jako službu, která souvisí s aktivitou výrobního toku [výrobní tok](http://ax.help.dynamics.com/en/wiki/create-a-production-flow-version/) (Téma Průvodce záznamem úloh). Proto je tento typ subdodávky také označován jako [subdodávky podle aktivity](activity-based-subcontracting.md) Zavádíme speciální typ nákladové skupiny s názvem **Přímý outsourcing** a subdodavatelské služby nejsou součástí kusovníku hotového zboží. Při použití lean manufacturing jsou všechny aktivity definovány kanbany, které lze propojit s jednou nebo více aktivitami výrobního toku. Toto vysvětlení zatím zní jako popis výrobních zakázek. Zatímco výrobní zakázky musí vždy končit hotovým výrobkem, můžete vytvořit kanbany pro dodávku polotovarů. Není nutné zavést novou úroveň produktu a kusovníku.  
 
-Kanbanová pravidla mohou být velmi dynamický, můžete různé varianty zásobování pro stejný produkt modelu výrobního toku. Při použití štíhlých subdodávky toku materiálu a finančního toku jsou striktně odděleny. Všechny toku materiálu je reprezentován kanbanových aktivit. Nákupní objednávky pro produkty, služby a zaúčtování příjmu těchto služeb lze automatizovat, na základě stavu kanbanové úlohy ve výrobním toku. Kanbanové úlohy můžete spustit a dokončit ještě dříve, než jsou vytvořeny nákupní objednávky. Období a služby může být agregovaný dokumenty subdodávky (nákupní objednávky a nákupní příjemce služby). Proto počet nákupních dokladech a řádcích může být uchováván malé i ve vysoce opakované operace, které dodavatelé poskytují subdodavatelské služby v toku jednoho kusu.
+Kanbanová pravidla mohou být velmi dynamická, můžete modelovat různé varianty zásobování pro stejný produkt ve výrobním toku. Při použití štíhlých subdodávek jsou tok materiálu a finanční toku striktně odděleny. Všechny toky materiálu jsou reprezentovány kanbanovými aktivitami. Nákupní objednávky pro produkty služby a zaúčtování příjmu těchto služeb lze automatizovat na základě stavu kanbanových úloh ve výrobním toku. Kanbanové úlohy můžete spustit a dokončit ještě dříve, než jsou vytvořeny nákupní objednávky. Doklady o subdodávce mohou být agregovány (nákupní objednávka a nákupní příjemka služby) podle období a služby. Proto počet nákupních dokladů a řádků může být uchováván v malém množství i v často opakovaných operacích, kde dodavatelé poskytují subdodavatelské služby v toku jednoho kusu.
 
-### <a name="modeling-subcontracting-in-a-production-flow"></a>Subdodávky ve výrobním toku modelování
+### <a name="modeling-subcontracting-in-a-production-flow"></a>Modelování subdodávek ve výrobním toku
 
-V [štíhlé výrobní tok](lean-manufacturing-modeling-lean-organization.md), aktivitu procesu lze definovat jako subdodávka při přidělení na jediného dodavatele zdroj pracovní buňka (skupina prostředků). Pokud je zadána pracovní buňka, činnosti související proces musí být spojeny s aktivní nákupní řádek smlouvy obsahující předmět servisu a cenu za službu. Servisní smlouvy aktivity definuje také výpočet poměr mezi množstvím produktu kanbanové úlohy a výsledné množství služeb. Můžete určit, zda služba množství se vypočítá na základě počtu úloh, množství dobré produktu je hlášena u projektů nebo množství celkového produktu (toto množství zahrnuje vyřazené produkty).  
+V [štíhlém výrobním toku](lean-manufacturing-modeling-lean-organization.md) lze aktivitu procesu definovat jako subdodávku při přidělení jedné pracovní buňce (skupině zdrojů), která má jeden dodavatelský zdroj. Pokud je subdodávána pracovní buňka, související procesní aktivity musí být spojeny s nákupním řádkem aktivní smlouvy obsahující předmět služby a cenu za službu. Servisní smlouva aktivity definuje také poměr výpočtu mezi množstvím produktu kanbanové úlohy a výsledným množstvím služeb. Můžete určit, zda bude množství služby vypočítáno na základě počtu úloh, dobrého množství produktu, které je vykázáno u práce nebo celkového množství produktu (toto množství zahrnuje vyřazené produkty).  
 
-Na činnost přenosu lze také definovat jako subdodávka. Tato definice dojde implicitně vybrat odpovědná strana pro expedici do této aktivity přenosu. Pokud vyberete **dopravce** nebo **příjemce**, pokud zdrojový nebo cílový sklad sklad dodavatele spravované, činnost je považována za zadána. Pokud vyberete **dopravce**, aktivity je vždy zadána. Jako subdodavatele proces aktivity aktivitu subdodávek přenosu musí být připojen k servisní smlouvě před aktivací výrobního toku.
+Aktivity přenosu lze také definovat jako subdodávky. Tato definice se objevuje implicitně když vyberete odpovědnou stranu pro expedici v aktivitě přenosu. Pokud vyberete **dopravce** nebo **příjemce** a zdrojový nebo cílový sklad spravuje dodavatel, je tato aktivita považována za subdodávku. Pokud vyberete **dopravce**, aktivita je vždy zadána jako subdodavatelská. Jako u aktivit subdodavatelského procesu musí být subdodavatelská aktivita přenosu připojena k servisní smlouvě před aktivací výrobního toku.
 
 ### <a name="backflush-costing"></a>Zpětné účtování nákladů
 
-Subdodavatelské práce nákladového účetnictví je zcela integrována do nákladů řešení lean manufacturing (zpětné účtování nákladů). Při zaúčtování nákupní objednávky příjemce služby nebo při fakturaci, náklady na služby bude přidělena výrobní tok. Pro zpětné účtování nákladů, se vypočítá rozptyl subdodavatelské služby započtením subdodávky blok standardních nákladů přijatých produktů proti skutečné služby přijaté a Fakturované množství.
+Nákladové účetnictví subdodavatelské práce je plně integrováno do řešení výpočtu nákladů pro lean manufacturing (zpětné účtování nákladů). Při zaúčtování příjemky nákupní objednávky služby nebo při fakturaci budou náklady na služby přiděleny výrobnímu toku. Pro zpětné účtování nákladů se vypočítá rozptyl subdodavatelské služby započtením bloku subdodávek standardních nákladů přijatých produktů proti skutečným přijatým a fakturovaným množstvím služby.
 
-## <a name="material-supply-for-subcontracted-operations"></a>Dodávek materiálu pro operace subdodávek
-Polotovary a ostatních souvisejících materiálů musí být přepraveno do umístění, kde je práce prováděna fyzicky. Při použití operace subdodávek a činnosti tento převod často souvisí další přepravy na web dodavatele provozována. Přidělením materiál v Kusovníku pro operace subdodávek prohlásit, že materiál musí být připravené na vstupní místo skupiny zdrojů přidělené zdroje. Hlavní plánování nebo doplnění štíhlé pak ustanovení materiálu do daného umístění.  
+## <a name="material-supply-for-subcontracted-operations"></a>Dodávka materiálu pro operace subdodávek
+Polotovary a ostatní související materiály musí být převedeny do umístění, kde je práce prováděna fyzicky. Při použití operací a aktivit subdodávek tento převod často souvisí s další přepravou na web provozovaný dodavatelem. Přidělením materiálu v kusovníku operacím subdodávek deklarujete, že materiál musí být ve fázi na vstupním místě skupiny prostředků přiděleného zdroje. Hlavní plánování nebo štíhlé doplnění pak zprostředkovává doplněné materiálu do daného umístění.  
 
-Pro model zásob, která je umístěna na webu dodavatele, je nejlepší praxe v odvětví definovat spravované dodavatelem skladu. Snadno můžete definovat sklad dodavatele spravovat vytvořením nového skladu a přiřazení účtu dodavatele. Dokumentovat tento materiál musí být přemístěno do dodavatele před provedením operace, přidělovat sklad dodavatele spravované vstupní sklad skupinu prostředků obsahující prostředek.  
+Pro modelování zásob, které jsou umístěny na webu dodavatele, je nejlepší praxe v odvětví definovat sklad řízený dodavatelem. Snadno můžete definovat sklad řízený dodavatelem vytvořením nového skladu a přiřazením účtu dodavatele. Pokud chcete zdokumentovat, že tento materiál musí být přemístěn dodavateli před provedením operace, měli byste přidělit sklad spravovaný dodavatelem do vstupního skladu skupiny prostředků obsahující prostředek.  
 
 K doplnění materiálu v tomto skladu, můžete použít více strategií:
 
 -   Převodní příkazy
 -   Převést deníky
--   Kanbany
--   Přímý nákup na umístění dodavatele
+-   Kanbany odběru
+-   Přímý nákup v umístění dodavatele
 
-Polotovary jsou výjimkou z tohoto pravidla. K přenosu polotovarů, jsi omezen na tyto možnosti:
+Polotovary jsou výjimkou z tohoto pravidla. K přenosu polotovarů jste omezeni na tyto možnosti:
 
--   Pro výrobu a dávkové objednávky rozpracované výrobky mohou být přenášeny pouze logicky pomocí deníku výdejek z **subdodávka prací** stránku seznamu. Tento deník vytvoříte dodací list dokumentu, který lze použít k přenosu polotovary a suroviny na dodavatele.
--   Pro operace subdodávek ve výrobních toků převod polotovarů je doložena obdržení odvolání nebo výrobní kanbany v místě dodavatele. Pro model explicitní převod činnost, můžete ukončit výrobní kanban s aktivitou další přenos.
+-   Pokud jde o výrobu a dávkové objednávky, rozpracované výrobky mohou být přenášeny pouze logicky pomocí deníku výdejek ze stránky se seznamem **subdodávka prací**. Tento deník vytvoří dokument dodacího listu, který lze použít k přenosu polotovarů a surovin dodavateli.
+-   Pro operace subdodávek ve výrobních tocích je převod polotovarů doložen příjmem odvolání nebo výrobních kanbanů v místě dodavatele. Pokud chcete modelovat explicitní aktivitu převodu, můžete ukončit výrobní kanban s další aktivitou přenosu.
 
-**Poznámka:** postupu výroby pro jednu výrobní zakázku nelze mezi více serverů. Toto pravidlo platí také pro práci subdodavatele. Proto sklady představující umístění musí být definovány ve stejné síti jako vnitřní zdroje, které jsou použity v postupu spravované dodavatele materiálu. Přestože výrobní toky lze mezi servery, jejich nelze dopravní polotovarů z jednoho webu na jiný, protože operace nemění kontextu náklady.  
+**Poznámka:** Postup výroby pro jednu výrobní zakázku nemůže přesahovat více míst. Toto pravidlo platí také pro práci subdodavatele. Proto sklady představující umístění materiálu spravovaného dodavatelem musí být definovány ve stejné síti jako interní zdroje, které jsou použity v postupu. Přestože výrobní toky mohou zahrnovat více pracovišť, nemohou převádět polotovary z jednoho pracoviště na jiné, protože operace implikuje změnu kontextu nákladů.  
 
-Obvykle výstupní sklad a umístění subdodavatelů prostředku skupiny jsou přímo přiděleny skladu a umístění další krok operace v postupu nebo výrobní tok. Toto nastavení pomáhá snížit množství úloha oznámení, že v takovém nebo číslo další přenos operací, které musí být modelována.
+Obvykle jsou výstupní sklad a umístění subdodavatelské skupiny prostředků skupiny přímo přiděleny skladu a umístění dalšího kroku operace v postupu nebo výrobním toku. Toto nastavení pomáhá snížit množství vykazování úloh, které se objeví, nebo na počtu dalších operací přenosu, které musí být modelovány.
 
 
 

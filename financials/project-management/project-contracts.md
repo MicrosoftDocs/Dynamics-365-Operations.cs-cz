@@ -83,7 +83,7 @@ Následující tabulka obsahuje situace pro správu přidělení financování m
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Scenario</strong></td>
+<td><strong>Scénář</strong></td>
 <td><strong>Zdroj financování </strong></td>
 <td><strong>Přidělená procenta </strong></td>
 <td><strong>Priorita přidělení </strong></td>
@@ -195,7 +195,7 @@ Následující tabulka zkoumá tuto situaci podrobněji.
 <tbody>
 <tr class="odd">
 <td><strong>Výběr </strong></td>
-<td><strong>Details</strong></td>
+<td><strong>Podrobnosti </strong></td>
 </tr>
 <tr class="even">
 <td>Pravidla financování</td>
@@ -223,17 +223,17 @@ Následující tabulka zkoumá tuto situaci podrobněji.
 </tr>
 <tr class="odd">
 <td>Transakce 2</td>
-<td><strong>Částka transakce:</strong> 5,000.00<strong>financovaní:</strong> za transakci platí podle všech tří pravidel. <strong>Pravidlo 1</strong><ph id="t1">
-</ph><ul>
+<td><strong>Částka transakce:</strong> 5 000,00<strong>Financování:</strong> Transakce se vyplácí podle všech tří pravidel.<strong>Pravidlo 1</strong>
+<ul>
 <li>Zdroj financování 2: 450,00</li>
 <li>Zdroj financování 3: 450,00</li>
-</ul><bpt id="t2">
-< strong ></bpt> Pravidlo 2</strong><ph id="t3">
-</ph><ul>
+</ul>
+<strong>Pravidlo 2</strong>
+<ul>
 <li>Zdroj financování 3: 250,00 (= 750,00 – 50,00 – 450,00)</li>
-</ul><bpt id="t4">
-< strong ></bpt> Pravidlo 3</strong><ph id="t5">
-</ph><ul>
+</ul>
+<strong>Pravidlo 3</strong>
+<ul>
 <li>Zdroj financování 1: 3 850,00 (= 5 000,00 – 450,00 – 450,00 – 250,00)</li>
 </ul></td>
 </tr>

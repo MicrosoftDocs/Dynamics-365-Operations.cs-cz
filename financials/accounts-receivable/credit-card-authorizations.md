@@ -58,7 +58,7 @@ Můžete vyžadovat hodnotu ověření platební karty, která se někdy nazýv�
 
 ### <a name="address-verification"></a>Ověření adresy
 
-Informace z ověření adresy jsou vždy odeslány poskytovateli plateb. Můžete se rozhodnout, kolik informací je požadován pro transakce, které mají být přijaty. Ujistěte se, obraťte se na svého poskytovatele, zda přijímá tyto informace. Máte tyto možnosti k ověření adresy:
+Informace z ověření adresy jsou vždy odeslány poskytovateli plateb. Můžete se rozhodnout, jaké informace jsou nutné pro transakce, aby byla přijata. Nezapomeňte se zeptat svého poskytovatele, zda tyto informace přijímá. Máte tyto možnosti k ověření adresy:
 -   **Vždy přijmout transakci** – přijímat transakce bez ohledu na výsledky ověření adresy.
 -   **Držitel účtu** – porovnat jméno držitele karty z informací o společnosti platební karty pro transakci.
 -   **Fakturační adresa** – porovnat jméno držitele karty a fakturační adresu z informací o společnosti platební karty pro transakci.
@@ -71,7 +71,7 @@ Pro každý typ platební karty, který je podporován, můžete určit úroveň
 -   **Úroveň 3** – přenos všech informací 2. úrovně společně s informací o řádku objednávky.
 
 ## <a name="partial-payments"></a>Částečné platby
-Pokud dodáváte část objednávky, je zachycen výši částečné objednávky a povolení, která byla přenášena celou objednávku, je uzavřen. Nové povolení podána poté pro zbývající částka objednávky, které nebylo dodáno.
+Pokud dodáváte část objednávky, je zachycena částka z dílčí objednávky, a ověření, které bylo pro částku celé objednávky, je uzavřeno. Nová autorizace je pak odeslána na zbývající částku objednávky, která ještě nebyla expedována.
 
 ## <a name="voiding-an-authorization"></a>Anulování autorizace 
 Pro anulování autorizace platební karty můžete změnit metodu platby na jinou metodu, která nemá typ Platební karta.

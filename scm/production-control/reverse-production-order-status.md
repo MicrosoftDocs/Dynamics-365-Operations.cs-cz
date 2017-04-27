@@ -1,5 +1,5 @@
 ---
-title: "Stornování stavu výrobní zakázky"
+title: "Vrácení stavu výrobní zakázky"
 description: "Toto téma popisuje způsob stornování stavu výrobní zakázky."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reverse-the-production-order-status"></a>Stornování stavu výrobní zakázky
+# <a name="reverse-the-production-order-status"></a>Vrácení stavu výrobní zakázky
 
 [!include[banner](../includes/banner.md)]
 

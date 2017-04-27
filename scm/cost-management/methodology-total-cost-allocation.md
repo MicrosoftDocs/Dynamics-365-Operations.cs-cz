@@ -32,7 +32,7 @@ Tento článek obsahuje pokyny pro používání celkových přidělených nákl
 
 Celkové přidělené náklady je metoda výpočtu nákladů mezi hlavní položkou receptury pro dávkovou objednávku a vedlejšími produkty, které jsou definovány pro recepturu. Tato metoda je dynamická. Vypočítává náklady jako vážený průměr mezi množstvím, která jsou hlášena jako dokončená pro položku receptury a vedlejší produkty. Při použití celkových přidělených nákladů nemusíte kontrolovat přidělení nákladů pro každou dávkovou objednávku. Pokud nejsou použity celkové přidělené náklady, kalkulace receptury používá existující funkce.
 
-## <a name="using-tca-for-coproducts"></a>Pro coproducts použití TCA
+## <a name="using-tca-for-coproducts"></a>Použití celkových přidělených nákladů pro vedlejší produkty
 Zde jsou uvedeny některé pokyny týkající se použití celkových přidělených nákladů pro vedlejší produkty:
 
 -   Nastavíte-li posuvník **Celkové přidělené náklady** na **Ano** pro verzi receptury, musí mít vedlejší produkty nákladovou cenu, která je větší než 0 (nula). Hodnota může být získána z aktivní nákladové verze pro stejné pracoviště, nebo pro první pracoviště pro recepturu, která není specifická pro pracoviště. Tento stav je ověřen při schválení receptury.
@@ -46,7 +46,7 @@ Zde jsou uvedeny některé pokyny týkající se použití celkových přidělen
 -   Pokud je dávková objednávka vytvořena ručně, nebo je plánovaná dávková objednávka upevněna, posuvník **Celkové přidělené náklady** pro verzi receptury je zkopírován do dávkové objednávky. Lze však změnit toto nastavení pro dávkovou objednávku. Pokud je posuvník **Celkové přidělené náklady** nastaven na **Ne** pro verzi receptury, a poté převeden na **Ano** pro dávkovou objednávku, metoda přidělení nákladů pro každý řádek, který byl nastaven na **Ručně**, se změní na **Celkové přidělené náklady**. Přidělení nákladů **Žádná** zůstane nezměněn. Pokud je posuvník **Celkové přidělené náklady** nastaven na **Ano** pro verzi receptury, a poté převeden na **Ne** pro dávkovou objednávku, metoda přidělení nákladů pro každý vedlejší produkt typu **Výroba** se změní na **Ručně**. Všechna odhadovaná procenta přidělení nákladů zůstávají nezměněna.
 -   Stránka **Přidělení nákladů vedlejšího produktu** zobrazuje vypočtené procento přidělení nákladů. Můžete otevřít tuto stránku ze stránky **Dávková objednávka**. Tyto informace jsou užitečné, pokud se výrobky a množství, která jsou hlášena, liší od plánovaného nebo zahájeného množství z dávkové objednávky. Po dokončení nákladů se tato nová přidělení procenta z celkových přidělených nákladů zobrazí na stránce **Přidělení nákladů vedlejšího produktu**.
 
-## <a name="calculating-the-burden-for-byproducts"></a>Výpočet zatížení pro vedlejší produkty
+## <a name="calculating-the-burden-for-byproducts"></a>Výpočet režie pro vedlejší produkty
 Pole **Přidělení nákladů vedlejšího produktu** na stránce **Vedlejší produkty** je čítací pole, které se používá jen u vedlejších produktů. Pro vedlejší produkty je hodnota v tomto poli vždy **Žádný**. Pro řádky vedlejších produktů toto pole určuje, jak je částka nákladů pro daný řádek vedlejšího produktu přidán do celkových nákladů na výrobu. Existují tyto možnosti:
 
 -   **Žádná** ─ žádná částka není přidána do celkových nákladů na výrobu pro tento řádek vedlejšího produktu.

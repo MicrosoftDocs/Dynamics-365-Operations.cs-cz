@@ -1,6 +1,6 @@
 ---
 title: "Hlavní plány"
-description: "Použijte různé hlavní plány pro podporu každodenního provozu své společnosti, simulovat různé strategie plánování, které chcete sledovat a implementovat zásady společnosti, jako jsou zásady o vnitřní spokojenosti výkonu nebo zákazníka."
+description: "Používání různých hlavních plánů na podporu každodenního provozu své společnosti, simulovat různé strategie plánování,které chcete monitorovat a zavádět podnikovou pravidla, týkající se například zásad interní výkonnosti nebo spokojenosti zákazníka."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Použijte různé hlavní plány pro podporu každodenního provozu své společnosti, simulovat různé strategie plánování, které chcete sledovat a implementovat zásady společnosti, jako jsou zásady o vnitřní spokojenosti výkonu nebo zákazníka. 
+Používání různých hlavních plánů na podporu každodenního provozu své společnosti, simulovat různé strategie plánování,které chcete monitorovat a zavádět podnikovou pravidla, týkající se například zásad interní výkonnosti nebo spokojenosti zákazníka. 
 
 Hlavní plány můžete nakonfigurovat na stránce **Hlavní plány**.
 
@@ -53,9 +53,9 @@ Můžete také nastavit počáteční dynamický plán tak, aby se aktualizoval 
 
 [Nastavení pokrytí](coverage-settings.md)
 
-[Oddělení, taktické a operativní plánování pro hlavní plánování](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
+[Oddělení taktického a operativního plánování pro hlavní plánování](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
 
-[Hlavní plánování: Použijte statický a dynamický hlavní plán nebo jeden plán?](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
+[Hlavní plánování: Použít statický a dynamický hlavní plán nebo jeden plán?](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
 
 
 

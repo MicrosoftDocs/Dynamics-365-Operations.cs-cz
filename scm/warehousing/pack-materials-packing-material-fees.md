@@ -55,7 +55,7 @@ Při vytvoření řádku prodejní objednávky systém zkontroluje, zda jsou pro
 ## <a name="packing-units-on-purchase-order-lines"></a>Jednotky balení na řádcích nákupní objednávky
 Transakce obalového materiálu pro řádek nákupní objednávky nejsou systémem vytvářeny. Na stránce **Transakce obalového materiálu** můžete ručně vytvořit transakce pro fakturované řádky nákupní objednávky.
 
-## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Nastavit licenční čísla packagingmaterialfee
+## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Nastavení licenčních čísel poplatku za obalový materiál odběratelů
 Pokud odběratelé platí poplatky za obalový materiál, zadejte licenční čísla poplatku za obalový materiál odběratelů na stránce **Odběratelé**. Po přiřazení licenčního čísla odběrateli se při fakturování prodejních objednávek automaticky vypočítávají poplatky za obalový materiál. Po fakturování se označení zaškrtávacího políčka **Vypočítat poplatek** na stránce **Transakce obalového materiálu** zruší, protože není nutné vypočítávat a tisknout sestavu. Na faktuře můžete vytisknout hmotnosti obalového materiálu a informovat odběratele, že platí poplatky. 
 
 Pokud vaše společnost platí poplatky za obalový materiál, nezadávejte licenční čísla odběratelů. Po vyfakturování se označí zaškrtávací políčko **Vypočítat poplatek** na stránce **Transakce obalového materiálu**. To znamená, že se poplatky vypočítají při vytvoření sestavy. Na faktuře můžete vytisknout hmotnosti a informovat o tom, že poplatky za obalový materiál platí vaše společnost.

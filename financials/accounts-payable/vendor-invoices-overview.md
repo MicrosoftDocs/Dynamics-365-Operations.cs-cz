@@ -35,13 +35,13 @@ V tomto článku jsou obecné informace o fakturách dodavatele. Faktury dodavat
 <a name="vendor-invoices"></a>Faktury dodavatele
 ---------------
 
-Faktura dodavatele z nákupní objednávky je faktura, která je vytvořena při přijetí produktů nebo služeb podle nákupní objednávky, kterou jste uskutečnili s dodavatelem. Dodavatelská faktura obsahuje hlavičku a jeden nebo více řádků pro zboží nebo služby. Faktura dodavatele dokončí cyklus příjemky produktu do faktury dodavatele z nákupní objednávky. 
+Faktura dodavatele z nákupní objednávky je faktura, která je vytvořena při přijetí produktů nebo služeb podle nákupní objednávky, kterou jste uskutečnili s dodavatelem. Faktura dodavatele obsahuje hlavičku a jeden nebo více řádků se zbožím nebo službami. Faktura dodavatele představuje konec cyklu nákupní objednávky, příjemky produktu a faktury dodavatele. 
 
 Ačkoliv jsou některé faktury dodavatele propojeny s nákupní objednávkou, mohou faktury dodavatele obsahovat také řádky, které neodpovídají řádkům nákupní objednávky. Můžete vytvořit také faktury dodavatele, které nejsou přidruženy k žádné nákupní objednávce. Tyto faktury dodavatele mohou představovat probíhající služby, jako například provozní účet, takže při jejich přidání nemusíte odkazovat na nákupní objednávku. 
 
 Je několik způsobů, jak zadat fakturu dodavatele:
 
--   Registr faktur dodavatele umožňuje rychle zadat faktury, které není odkaz na nákupní objednávku tak, aby můžete časově rozlišené výdaje. Pomocí deníku schválených faktur dodavatele můžete vybrat tyto faktury a zaúčtovat saldo dodavatele ke stornování časového rozlišení.
+-   Registr faktur dodavatele umožňuje rychle zadat faktury, které neodkazují na nákupní objednávky, abyste mohli určovat časově rozlišené výdaje. Pomocí deníku schválení faktur dodavatelů můžete tyto faktury vybrat a zaúčtovat je do zůstatku dodavatele a časové rozlišení tak stornovat.
 -   Deník faktur dodavatele slouží k rychlému zadání faktur, které neodkazují na nákupní objednávku, v jediném kroku.
 -   Spolu s evidencí faktur dodavatele slouží registr faktur dodavatele k rychlému zadání faktur, které mají mít časově rozlišené výdaje. Přidružené nákupní objednávky můžete později otevřít k zaúčtování faktury na účet výdajů.
 -   Stránky **Otevřít faktury dodavatele** a **Nevyřízené faktury dodavatele** slouží k vytváření faktur dodavatele z potvrzených nákupních objednávek.
@@ -60,7 +60,7 @@ Při otevření faktury dodavatele ze související nákupní objednávky se ř�
 Používá-li vaše právnická osoba párování faktur, můžete si zobrazit výsledky párování množství ve sloupci **Spárování množství v příjemce produktu**. K zobrazení výsledků párování množství můžete použít také příkaz nabídky **Podrobnosti o párování** na kartě **Kontrola**.
 
 ## <a name="adding-a-line-that-wasnt-on-the-purchase-order"></a>Přidání řádku, který nebyl v nákupní objednávce
-Můžete přidat nový řádek, který nebyl na nákupní objednávky na fakturu dodavatele. Je nutné vybrat kategorii číslo nebo zadávání veřejných zakázek. Poté lze na řádek přidat množství, ceny a částky. Řádek bude zahrnut pouze v zásadách párování pro součty faktur.
+Do faktury dodavatele můžete přidat nový řádek, který nebyl na nákupní objednávce. Je nutné vybrat číslo položky nebo kategorii zásobování. Poté lze na řádek přidat množství, ceny a částky. Řádek bude zahrnut pouze v zásadách párování pro součty faktur.
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Odeslání faktury dodavatele ke kontrole
 Vaše organizace může využívat workflowy ke správě procesu kontroly faktur dodavatele. Hlavička faktury, řádek faktury, nebo obojí může vyžadovat přezkoumání pracovního postupu. Ovládací prvky workflowu se použijí pro hlavičku nebo řádek podle toho, která část byla před kliknutím na ovládací prvek aktivní. Namísto tlačítka **Zaúčtovat** se zobrazí tlačítko **Odeslat**, které slouží k odeslání faktury dodavatele do procesu kontroly.

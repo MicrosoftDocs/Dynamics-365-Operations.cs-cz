@@ -1,6 +1,6 @@
 ---
-title: "Řádky deníku a dokumentů z aplikace Excel publikovat"
-description: "Toto téma vysvětluje, jak zadat a publikovat řádků pro finanční deníky z aplikace Microsoft Excel. Obsahuje informace o různých šablon, které můžete použít v závislosti na typu transakce, které zadáváte."
+title: "Publikování řádek deníku a dokumentů z Excelu"
+description: "Toto téma popisuje, jak zadávat a publikovat řádky pro hlavní deníky z aplikace Microsoft Excel. Obsahuje informace o různých šablonách, které můžete používat, v závislosti na typu transakcí, které zadáváte."
 author: twheeloc
 manager: AnnBe
 ms.date: 2016-03-08 17 - 50 - 05
@@ -25,28 +25,28 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="publish-journal-lines-and-documents-from-excel"></a>Řádky deníku a dokumentů z aplikace Excel publikovat
+# <a name="publish-journal-lines-and-documents-from-excel"></a>Publikování řádek deníku a dokumentů z Excelu
 
-Toto téma vysvětluje, jak zadat a publikovat řádků pro finanční deníky z aplikace Microsoft Excel. Obsahuje informace o různých šablon, které můžete použít v závislosti na typu transakce, které zadáváte.
+Toto téma popisuje, jak zadávat a publikovat řádky pro hlavní deníky z aplikace Microsoft Excel. Obsahuje informace o různých šablonách, které můžete používat, v závislosti na typu transakcí, které zadáváte.
 
-Zadávání a publikovat řádků pro finanční deníky z aplikace Microsoft Excel. Poté, co uživatel vytvoří deník, **otevřené řádky v aplikaci Excel** tlačítko zobrazí šablony, které jsou k dispozici. Šablony jsou určeny pro podporu konkrétní scénáře, avšak ne všechny kombinace typu účtu je podporována v deníku. Následující tabulka zobrazuje šablony, které jsou k dispozici a typy účtů, které podporují.
+Uživatelé mohou zadávat a publikovat řádky pro finanční deníky z aplikace Microsoft Excel. Poté, co uživatel vytvoří deník v tlačítku **Otevřené řádky v aplikaci Excel** se zobrazí šablony, které jsou k dispozici. Šablony jsou určeny pro podporu konkrétních scénářů, avšak ne všechny kombinace typu účtu jsou podporovány v deníku. Následující tabulka zobrazuje šablony, které jsou k dispozici, a typy účtů, které podporují.
 |                          |                                                                                                                         |                                                                                         |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| **Template**             | **Typy podporovaných účtů**                                                                                             | **Jak získat přístup k šabloně**                                                          |
-| Řádky deníku hlavní knihy     | Účet: Zboží, Zákazník, Dodavatel, bankovní protiúčet: hlavní knihy, odběratele, dodavatele, bankovního mezipodnikové je podporována.       | Hlavní deník                                                                         |
-| Registr faktur         | Účtu: Protiúčet dodavatel: mezipodnikové hlavní knihy není podporován.                                                    | Registr faktur AP                                                                     |
-| Deník faktur          | Účty: Protiúčet dodavatele: podporuje mezipodnikové hlavní knihy.                                                      | Deník faktur závazků                                                                      |
+| **Šablona**             | **Typy podporovaných účtů**                                                                                             | **Jak získat přístup k šabloně**                                                          |
+| Řádky deníku hlavní knihy     | K dispozici je podpora pro Účet: Hlavní kniha, Zákazník, Dodavatel, Bankovní protiúčet: hlavní kniha, Odběratel, Dodavatel, Bankovní mezipodnikové.       | Hlavní deník                                                                         |
+| Registr faktur         | Nepodporuje se Účet: Protiúčet dodavatele: mezipodnikový účet hlavní knihy.                                                    | Registr faktur AP                                                                     |
+| Deník faktur          | Podporuje se Účet: Protiúčet dodavatele: mezipodnikový účet hlavní knihy.                                                      | Deník faktur závazků                                                                      |
 | Faktury dodavatele           |                                                                                                                         | Faktury dodavatele                                                                          |
-| Deník faktur odběratele | Účtu: Protiúčet zákazník: podporuje mezipodnikové hlavní knihy.                                                     | Hlavní deník                                                                         |
-| Volné faktury        |                                                                                                                         | Na **faktury s volným textem** klepněte na tlačítko **otevřít v aplikaci Excel** (na ikonu Microsoft Office). |
-| Deník dlouhodobého majetku     | Majetku do hlavní knihy, banky, zákazníka nebo dodavatele. Mezipodnikové, není podporována.                                               | Deník dlouhodobého majetku                                                                     |
-| Platební deník dodavatelů   | Účtu: Protiúčet dodavatel: knihy, vnitropodnikové banky je podporována.                                                 | Platební deník dodavatelů                                                                  |
-| Deník plateb odběratele | Účtu: Protiúčet zákazník: knihy, vnitropodnikové banky je podporována.                                               | Deník plateb odběratele                                                                |
-| Deník výdajů projektu  | Účet: Projektu, hlavní knihy, odběratele, Protiúčet dodavatele: projektu, hlavní knihy, odběratele, dodavatele mezipodnikovou je podporována. | Deník výdajů (v rámci řízení a účetnictví projektu)                       |
+| Deník faktur odběratele | Podporuje se Účet: Protiúčet odběratele: mezipodnikový účet hlavní knihy.                                                     | Hlavní deník                                                                         |
+| Volné faktury        |                                                                                                                         | Na stránce **Textová faktura** klikněte na **Otevřít v aplikaci Excel** (ikona Microsoft Office). |
+| Deník dlouhodobého majetku     | Majetek do hlavní knihy, banky, zákazníka nebo dodavatele. Hodnota Mezipodnikové není podporována.                                               | Deník dlouhodobého majetku                                                                     |
+| Platební deník dodavatelů   | Podporuje se Účet: Protiúčet dodavatele: mezipodnikový bankovní účet.                                                 | Platební deník dodavatelů                                                                  |
+| Deník plateb odběratele | Podporuje se Účet: Protiúčet odběratele: mezipodnikový bankovní účet.                                               | Deník plateb odběratele                                                                |
+| Deník výdajů projektu  | K dispozici je podpora pro Projekt: Hlavní kniha, Zákazník, Protiúčet dodavatele: hlavní kniha, Odběratel, Dodavatel, Bankovní mezipodnikové. | Hlavní deník výdajů (v rámci řízení a účetnictví projektu)                       |
 
-Při řádky jsou publikovány, jsou ověřena a ujistěte se, zda jsou v souladu s pravidly, které jsou nastaveny ve finančních denících. Po publikování řádky, uživatelé mohou upravit nebo doklady zaúčtovat z 365 Microsoft Dynamics pro operace. 
+Když jsou řádky publikovány, jsou ověřeny pro zajištění, zda jsou v souladu s pravidly, které jsou nastaveny ve finančních denících. Po publikování řádků uživatelé mohou upravit nebo zaúčtovat doklady z aplikace Microsoft Dynamics 365 for Operations. 
 
-Chcete-li přidat šablonu finanční dimenze, jsou nutné další změny. Další informace naleznete v tématu [přidání dimenzí do šablony aplikace Microsoft Excel](\dev-itpro\financial-dimensions\add-dimensions-excel-templates). Po přidání dimenze entity, jsou k dispozici v návrháři aplikace Excel a lze přidat do šablony.
+Chcete-li přidat finanční dimenze do šablony, jsou nutné další změny. Další informace viz [Přidání dimenzí do šablony aplikace Microsoft Excel](\dev-itpro\financial-dimensions\add-dimensions-excel-templates). Po přidání dimenzí do entity jsou k dispozici v návrháři aplikace Excel a lze je přidat do šablony.
 
 
 

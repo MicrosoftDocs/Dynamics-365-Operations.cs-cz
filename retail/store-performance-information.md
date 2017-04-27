@@ -1,6 +1,6 @@
 ---
 title: "Analýza výkonnosti obchodu"
-description: "Tento článek vysvětluje, jak lze pomocí analytics v paměti a v reálném čase, prozkoumat a získat přehled o výkonu, podle vašeho 365 Microsoft Dynamics pro datové operace."
+description: "Tento článek vysvětluje použití analýzy v paměti a v reálném čase pro přístup, prohlížení a získání přehledu o výkonu obchodu na základě vašich dat z aplikace Microsoft Dynamics 365 for Operations."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 57811
 ms.assetid: 495a66f0-491a-4688-842d-51c33c37676f
 ms.search.region: global
@@ -30,13 +30,13 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](includes/banner.md)]
 
 
-Tento článek vysvětluje, jak lze pomocí analytics v paměti a v reálném čase, prozkoumat a získat přehled o výkonu, podle vašeho 365 Microsoft Dynamics pro datové operace. 
+Tento článek vysvětluje použití analýzy v paměti a v reálném čase pro přístup, prohlížení a získání přehledu o výkonu obchodu na základě vašich dat z aplikace Microsoft Dynamics 365 for Operations. 
 
-Jako součást Dynamics 365 operací, uživatelé mohou studovat výkonu v reálném čase přes různé úrovně hierarchie organizace ve vybraném období otevřením out-of-box **souhrn kanálu** sestava z některého z následujících umístění:
+V rámci aplikace Microsoft Dynamics 365 for Operations mohou uživatelé studovat výkon v reálném čase v rámci rozdílných úrovní organizační hierarchie ve vybraném období otevřením sestavy **Souhrn kanálu** připravené okamžitě z některého z následujících umístění:
 
--   **Retail store management** prostoru Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**kanály**&gt;**Retail store management**&gt;**zprávy**&gt;**kanál souhrnnou zprávu**
--   **Retail store Finance** prostoru Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**kanály**&gt;**Retail store Finance**&gt;**zprávy**&gt;**kanál souhrnnou zprávu**
--   **Dotazy a sestavy** sekci Dynamics 365 pro operace &gt;**maloobchodní a commerce**&gt;**dotazy a sestavy**&gt;**sestavy prodeje**&gt;**souhrnné zprávy kanálu**
+-   **Řízení maloobchodu** – pracovní prostor aplikace Dynamics 365 for Operations &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava souhrnu kanálu**
+-   **Finance maloobchodu** – pracovní prostor aplikace Dynamics 365 for Operations &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Kanály** &gt; **Finance maloobchodu** &gt; **Sestavy** &gt; **Sestava souhrnu kanálu**
+-   **Dotazy a sestavy** - oddíl aplikace Dynamics 365 for Operation &gt; **Maloobchodní a velkoobchodní prodej** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava souhrnu kanálu**
 
 Tato sestava poskytuje snímek následujícího souhrnu v rámci výkonnosti obchodu:
 

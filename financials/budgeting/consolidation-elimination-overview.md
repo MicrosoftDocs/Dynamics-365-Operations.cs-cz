@@ -86,5 +86,5 @@ Pro částečně vlastněné dceřiné společnosti máte několik možností. P
 Data můžete konsolidovat pomocí možnosti **Export zůstatků společnosti**, abyste exportovali z jedné instance a použili možnost **Konsolidovat s importem** na ostatních instancích.
 
 
-Další informace naleznete v tématu [revalution měny v konsolidované společnosti](\finanicials\general-ledger\currency-revaluation-consolidation-company).
+Další informace naleznete v tématu [Přecenění měny ve společnosti konsolidace](\finanicials\general-ledger\currency-revaluation-consolidation-company).
 

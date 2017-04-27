@@ -1,5 +1,5 @@
 ---
-title: "Sestavení modelu konfigurace produktu"
+title: "Vytváření modelu konfigurace produktu"
 description: "V jak vztahu mezi společnostmi, tak mezi podniky a odběrateli se stalo pravidlem, že konfigurace produktů musí splňovat zvláštní požadavky."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="build-a-product-configuration-model"></a>Sestavení modelu konfigurace produktu
+# <a name="build-a-product-configuration-model"></a>Vytváření modelu konfigurace produktu
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,7 +37,7 @@ Výrobce, který podporuje scénáře konfigurace objednávky má možnost více
 
 Úspěšný přesun z nastavení výroby na sklad pro nastavení konfigurace objednávky vyžaduje pečlivou analýzu struktury produktů, identifikaci skupin výrobků a komponentizace. Ke snížení počtu položek a snížení počtu zboží, které jsou v procesu, je velmi důležité, abyste rozuměli rozhraní produktu a navrhování opětovného použití.  
 
-Existuje několik pravidel modelu konfigurace produktu, jako je modelování založené na roli, založené na dimenzích a založené na omezeních. Studie založené na omezeních metodologie mohou snížit počet řádků kódu v modelech o 50 procent ve srovnání s jinými zásadami modelování. Tato metoda může tedy snížit vlastnictví celkových nákladů (TCO). Přesunutím z založeno na modelu, který je založen na kódu X ++ do modelu na základě omezení již nevyžadují licenci vývojáře pro udržení modely produktu.
+Existuje několik pravidel modelu konfigurace produktu, jako je modelování založené na roli, založené na dimenzích a založené na omezeních. Studie založené na omezeních metodologie mohou snížit počet řádků kódu v modelech o 50 procent ve srovnání s jinými zásadami modelování. Tato metoda může tedy snížit vlastnictví celkových nákladů (TCO). Přesunutím z modelu založeného na pravidlech, který je založený na kódu X++ do modelu založeného na omezeních, již nevyžadujete vývojářskou licenci za účelem správy modelu výrobku.
 
 ## <a name="product-configuration"></a>Konfigurace produktu
 Období industrializace vedla k velkému plnění při výrobě vysoce kvalitních výrobků bohatých na funkce za přijatelné ceny. Měřítko hospodářství umožnilo většině uživatelů průmyslového světa nakupovat automobily, televizory, potřeby pro domácnost a jiné zboží, které většina z nás považuje za nezbytnou část našeho každodenního života.  
@@ -67,11 +67,11 @@ Použití modelu konfigurace produktu založené na omezeních znamená, že exi
 
 ### <a name="table-constraints"></a>Omezení tabulky
 
-Omezení tabulky mohou být definované uživatelem nebo systémem definované.  
+Omezení tabulek mohou být definovaná uživatelem nebo systémem.  
 
 Omezení tabulky uživatelem je vytvořeno uživatelem. Uživatel vybere kombinaci typů atributů k představení sloupců tabulky a poté zadá hodnoty z domén typů vybraných atributů k vytvoření řádků v omezeních tabulky.  
 
-Omezení definované systémem tabulka je definována výběrem 365 které Microsoft Dynamics pro operace tabulky použít jako odkaz a potom vyberte pole z této tabulky ze sloupců v omezení. Omezení tabulky řádky jsou řádky 365 Dynamics pro operace tabulky, které jsou k dispozici v době konfigurace.  
+Omezení tabulky definované systémem je definováno výběrem, kterou tabulku produktu Microsoft Dynamics 365 for Operations použít jako odkaz, a poté výběrem polí z této tabulky k seřazení sloupců v omezení. Omezení řádků tabulky jsou řádky tabulky aplikace Dynamics 365 for Operations, které jsou k dispozici v době konfigurace.  
 
 Omezení tabulky je zahrnuto v modelu konfigurace produktu odkazováním na definici omezení tabulky a mapováním odpovídajících atributů v modelu do sloupců v omezení tabulky.
 
@@ -106,7 +106,7 @@ Nakonec může proběhnout validace pro úplný model konfigurace produktu k ov�
 
 ### <a name="testing"></a>Testování
 
-Testování modelu je podobné spuštění skutečné konfiguraci relace. Uživatel může procházet stránky konfigurace a ověřte, zda podporuje model struktury procesu konfigurace. Uživatel může ověřit správnost hodnot atributů, a že popisy atributů navedou uživatele k vybrání správné hodnoty. Nakonec po dokončení testovací relace se systém pokusí vytvořit kusovník a postup, který odpovídá vybraným hodnotám atributu a který zobrazí chybovou zprávu, pokud dojde k chybě.
+Testování modelu se podobá spuštění skutečné konfigurační relace. Uživatelé mohou procházet stránky konfigurace a ověřit, zda struktura modelu podporuje proces konfigurace. Uživatel může ověřit správnost hodnot atributů, a že popisy atributů navedou uživatele k vybrání správné hodnoty. Nakonec po dokončení testovací relace se systém pokusí vytvořit kusovník a postup, který odpovídá vybraným hodnotám atributu a který zobrazí chybovou zprávu, pokud dojde k chybě.
 
 ### <a name="the-configuration-page"></a>Stránka konfigurace
 
@@ -132,17 +132,17 @@ Je-li produkt prodáván v různých zemích či oblastech, lze vytvořit překl
 Nejdůležitější a poslední krok při procesu dokončení, je vytvoření nové verze pro modelu konfigurace produktu. Verze představuje vztah mezi základním produktem, který lze vybrat pro konfiguraci na objednávce nebo na řádku nabídky a modelu konfigurace produktu. Před použitím v rámci relace konfigurace musí být schválena a aktivována verze.
 
 ## <a name="extending-a-product-configuration-model-through-the-api"></a>Rozšíření modelu konfigurace produktu prostřednictvím rozhraní API
-Vyhrazené rozhraní pro programování aplikací (API) bylo implementováno tak, aby partnerům a ostatním, kteří mají vývojářskou licenci, mohly být rozšířeny možnosti modelu konfigurace výrobku. Hlavním cílem bylo zavést mechanismus, který Řekněme partneři a Zákazníci, kteří používají existující konfigurátoru výrobku přenést kód, který je vložen v konfigurátoru výrobku modely rozhraní API. Tímto způsobem mohou migrovat jejich modely z konfigurátoru výrobku do konfigurace výrobku. Nový partneři a zákazníci však mohou také využít výhod z rozhraní API k rozšíření nových modelů konfigurace produktu.
+Vyhrazené rozhraní pro programování aplikací (API) bylo implementováno tak, aby partnerům a ostatním, kteří mají vývojářskou licenci, mohly být rozšířeny možnosti modelu konfigurace výrobku. Hlavním cílem bylo stanovit mechanismus, který umožňuje partnerům a zákazníkům, kteří používají existující konfigurátor výrobku, migrovat kód, který je vložen do konfigurátoru výrobku modelů do rozhraní API. Tímto způsobem mohou migrovat jejich modely z konfigurátoru výrobku do konfigurace výrobku. Nový partneři a zákazníci však mohou také využít výhod z rozhraní API k rozšíření nových modelů konfigurace produktu.
 
 ### <a name="pcadaptor-class"></a>Třída PCAdaptor
 
-Rozhraní API je implementováno pomocí sady tříd **PCAdaptor**, které zpřístupňují strukturu dat modelů konfigurace produktu. Instance **PCAdaptor** třída musí být vytvořena pro každý model, který bude rozšířen. Po dokončení konfigurace relace, systém zkontroluje, zda instance této třídy a spustí jej, pokud je nalezen.  
+Rozhraní API je implementováno pomocí sady tříd **PCAdaptor**, které zpřístupňují strukturu dat modelů konfigurace produktu. Instanci třídy **PCAdaptor** je nutné vytvořit pro každý model, který bude rozšířen. Po dokončení relace konfigurace systém kontroluje instanci této třídy a spustí ji, pokud ji nalezne.  
 
 Následující vývojový diagram zobrazuje přehled procesu.  
 
 [![Vývojový diagram](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
 
-Diagram toku rozhraní API konfigurace produktu
+Vývojový diagram rozhraní API konfigurace produktu
 
 ## <a name="product-configuration"></a>Konfigurace produktu
 Konfigurace produktu lze provést v následujících umístěních:

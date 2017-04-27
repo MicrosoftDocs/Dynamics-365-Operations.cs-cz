@@ -1,5 +1,5 @@
 ---
-title: "Rozšířené odsouhlasení banky MT940 Import – upgrade složené datové entity"
+title: "Rozšířené odsouhlasení bankovního výpisu MT940 Import – Aktualizace kombinované datové entity"
 description: "Pořadové číslo musí být přidáno k importu bankovního výpisu entity pro podporu MT940 formátu."
 author: twheeloc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Rozšířené odsouhlasení banky MT940 Import – upgrade složené datové entity
+# <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Rozšířené odsouhlasení bankovního výpisu MT940 Import – Aktualizace kombinované datové entity
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,14 +34,14 @@ Pořadové číslo musí být přidáno k importu bankovního výpisu entity pro
 Následující postup slouží k přidání importu bankovního výpisu entity pro podporu formátu MT940.
 
 1.  Kompilovat a synchronizovat následující:
-    -   Složené Entity\\BankStatementImportEntity
-    -   Entity\\BankStatementBalanceEntity
-    -   Entity\\BankStatementDocumentEntity
-    -   Entity\\BankStatementEntity
-    -   Entity\\BankStatementLineEntity
+    -   Kombinovaná entita\\BankStatementImportEntity
+    -   Entita\\BankStatementBalanceEntity
+    -   Entita\\BankStatementDocumentEntity
+    -   Entita\\BankStatementEntity
+    -   Entita\\BankStatementLineEntity
     -   Tabulky\\BankStatementStaging
 
-2.  Správa dat\\data projektů.
+2.  Správa dat\\datové projekty.
     1.  Načíst projekt(y) importu MT940.
         1.  Změna požadavku XSLT.
             -   Klikněte na možnost **Zobrazit mapu**.

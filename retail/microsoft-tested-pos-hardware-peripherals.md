@@ -1,5 +1,5 @@
 ---
-title: "Periferní zařízení hardwaru POS"
+title: "Hardwarová periferní zařízení POS"
 description: "Maloobchodní moderní pokladní místo (POS) a cloud POS mohou využívat širokou škálu hardwarových periferních zařízení s více rozhraními a možnostmi nasazení pro dosažení různých obchodních scénářů prodejce."
 author: josaw1
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 215234
 ms.assetid: 1893d4b3-e1b7-4b66-be58-0102addd5b36
 ms.search.region: global
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="pos-hardware-peripherals"></a>Periferní zařízení hardwaru POS
+# <a name="pos-hardware-peripherals"></a>Hardwarová periferní zařízení POS
 
 [!include[banner](includes/banner.md)]
 

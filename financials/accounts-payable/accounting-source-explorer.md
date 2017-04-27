@@ -32,13 +32,13 @@ ms.lasthandoff: 03/31/2017
 
 Tento článek obsahuje informace o nástroji Průzkumník zdroje účetnictví, který slouží pro podrobnou analýzu informace zdroje za účetními položkami hlavní knihy.
 
-Průzkumník zdroje účetnictví je nová stránka, která zobrazuje informace o zdroji. Můžete použít Průzkumník zdroje účetní buď jako samostatný nástroj nebo analyzovat podrobnosti za účetní položky hlavní knihy. Například můžete použít explorer zdroj účetnictví získat nejpodrobnější informace o zdroji pro rovnováhu v rovnováze Trail nebo transakci dokladu. Poté můžete použít funkci Exportovat do aplikace Microsoft Excel a informace dále rozebírat v Microsoft Excelu (například v kontingenční tabulce nebo sestavě kontingenční tabulky).
+Průzkumník zdroje účetnictví je nová stránka, která zobrazuje informace o zdroji. Můžete použít Průzkumníka zdroje účetnictví buď jako samostatný nástroj nebo k analýze podrobností za účetními položkami hlavní knihy. Průzkumníka zdroje účetnictví můžete například použít k získání podrobných informací o zdroji u zůstatku v předvaze nebo u transakce dokladu. Poté můžete použít funkci Exportovat do aplikace Microsoft Excel a informace dále rozebírat v Microsoft Excelu (například v kontingenční tabulce nebo sestavě kontingenční tabulky).
 
 Průzkumník zdroje účetnictví vždy zobrazuje stejnou celkovou částku pro účet hlavní knihy, jakou zobrazuje hlavní kniha (například v Předvaze). Stejně jako v předvaze můžete zobrazit segmenty v samostatných sloupcích. Stačí vybrat odpovídající sadu finančních dimenzí. 
 
 Parametry slouží k definování časového intervalu pro analýzu. Tato funkce se také podobá fungování předvahy.
 
-Pro všechny dokumenty, které používají framework zdrojových dokumentů, účetních zdroj explorer zobrazí další informace, které jsou založeny na rozúčtování a v případě potřeby projektu rozúčtování. Tyto informace zahrnují typ peněžní částku, projektu, aktivity, kategorie a vlastnost řádku. Zde je několik příkladů analýzy, kterou lze provést:
+Pro všechny dokumenty používající architekturu zdrojového dokumentu, zobrazí průzkumník zdroje účetnictví další informace, které jsou založené na rozúčtování a v odpovídajících případech rozúčtování projektu. Tyto informace zahrnují typ peněžní částky, projekt, aktivitu, kategorii a vlastnost řádku. Zde je několik příkladů analýzy, kterou lze provést:
 
 -   Odchylky mezi nákupními objednávkami a fakturami dodavatele, protože každou odchylku zastupuje typ peněžní částky, například odchylka ceny
 -   Fakturovatelné a nefakturovatelné hodiny a výdaje na projekt, obchodní jednotku a hlavní účet

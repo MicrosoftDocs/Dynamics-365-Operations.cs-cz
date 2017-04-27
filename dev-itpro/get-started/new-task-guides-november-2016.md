@@ -1,6 +1,6 @@
 ---
-title: "Nové nebo aktualizované úkoly provede (listopad 2016)"
-description: "Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydané společnosti Microsoft (listopad 2016 - všechny jazyky) APQC Unified v knihovně Microsoft Dynamics 365 pro operace. Nebyly vydány žádné nové knihovny Začínáme."
+title: "Noví nebo aktualizovaní průvodci záznamem úloh (listopad 2016)"
+description: "Toto téma obsahuje nové nebo aktualizované průvodce záznamem úloh vydané pro knihovnu Microsoft APQC Unified Library (listopad 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics 365 for Operations. Nebyly vydány žádné nové knihovny Začínáme."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,24 +24,24 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-november-2016"></a>Nové nebo aktualizované úkoly provede (listopad 2016)
+# <a name="new-or-updated-task-guides-november-2016"></a>Noví nebo aktualizovaní průvodci záznamem úloh (listopad 2016)
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydané společnosti Microsoft (listopad 2016 - všechny jazyky) APQC Unified v knihovně Microsoft Dynamics 365 pro operace. Nebyly vydány žádné nové knihovny Začínáme.
+Toto téma obsahuje nové nebo aktualizované průvodce záznamem úloh vydané pro knihovnu Microsoft APQC Unified Library (listopad 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics 365 for Operations. Nebyly vydány žádné nové knihovny Začínáme.
 
-(Listopad 2016 - všechny jazyky) vodítka úloh, které jsou určeny pro pomoc s 365 Microsoft Dynamics pro operace, 365 Microsoft Dynamics pro operace platformy aktualizace 3 Microsoft Dynamics AX Platform update 2, Dynamics AX obsahuje knihovny Unified APQC května 2016 update a Microsoft Dynamics AX únor 2016 vydání. Další informace o těchto vydáních naleznete v tématu [co je nové nebo změněné](whats-new-changed.md). V této knihovně jsou k dispozici lokalizované verze tohoto úkolu vodítka. Další informace o tom, jak připojit systém nápovědy ke knihovně příručka úloh naleznete v tématu [seznámení s pomocí](help-overview.md). **Poznámka:** hvězdička (**\***) vedle názvu obchodní modelování procesů (BPM) čára označuje, že průvodce úkolu pro tento obchodní proces byl vytvořen pro Dynamics 365 pro operace listopad 2016 aktualizace a není podporován v dřívějších verzích aplikace Microsoft Dynamics AX.
+Sjednocená knihovna APQC (listopad 2016 -- všechny jazyky) obsahuje průvodce záznamem úloh, kteří jsou určení pro použití s nápovědou k Microsoft Dynamics 365 for Operations, aktualizací 3 Microsoft Dynamics 365 for Operations Platform, Microsoft Dynamics AX Platform aktualizace 2, aktualizaci Dynamics AX z května 2016 update a únorové vydání aplikace Microsoft Dynamics AX February 2016. Další informace o těchto verzích najdete v tématu [Co je nového nebo co se změnilo](whats-new-changed.md). V této knihovně jsou k dispozici lokalizované verze průvodců záznamem úloh. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Začínáme s nápovědou](help-overview.md). **Poznámka:** Hvězdička (**\***) vedle názvu řádku pro modelování podnikových procesů (BPM) označuje, že průvodce záznamem úloh pro tento obchodní proces byl vytvořen pro aktualizaci Dynamics 365 for Operations pro listopad 2016 a není podporován v dřívějších verzích aplikace Microsoft Dynamics AX.
 
 ### <a name="accounts-payable"></a>Závazky
 
 | Řádek BPM                                                                                           | Země nebo oblast |
 |----------------------------------------------------------------------------------------------------|----------------|
-| Data klíče faktury v systému AP pomocí deníku schválení                                               | Globální         |
-| Data klíče faktury v systému AP pomocí faktury dodavatele (Enter a zaúčtovat faktury dodavatele s odpovídajícími) | Globální         |
+| Zadání dat faktur do systému závazků pomocí deníku schválení                                               | Globální         |
+| Klíčová data faktury v systému AP používající fakturu dodavatele (zadejte a zaúčtujte fakturu dodavatele s odpovídajícími fakturami) | Globální         |
 | Zadání dat faktur do systému závazků pomocí deníku faktury                                              | Globální         |
 | Zadání dat faktur do systému závazků pomocí evidence faktur                                                 | Globální         |
-| Zaznamenávat příjem faktury dodavatele a porovnávat přijaté množství                           | Globální         |
+| Záznam příjmů faktury dodavatele a spárování s přijatým množstvím                           | Globální         |
 | Nastavení ověřování párování faktur závazků                                                | Globální         |
 | Nastavení zásad faktur dodavatele                                                                    | Globální         |
 
@@ -52,7 +52,7 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 | Řádek BPM                                                                           | Země nebo oblast |
 |------------------------------------------------------------------------------------|----------------|
 | Přiřazení šablony opakované volné faktury k odběrateli                        | Globální         |
-| Výpočet úroku a vytvořit a tisknout a zaúčtovat oznámení úroků (proces úrok) | Globální         |
+| Výpočet úroku a vytvoření a tisk a zaúčtování oznámení úroků (procesní úrok) | Globální         |
 | Vytvoření sekvence upomínek                                                | Globální         |
 | Vytvoření zmocnění k přímému debetu odběratele                                       | Globální         |
 | Vytvořit volnou fakturu                                                         | Globální         |
@@ -62,7 +62,7 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 | Vytvoření faktur prodejní objednávky                                                        | Globální         |
 | Generování a zaúčtování opakovaných volných faktur                                     | Globální         |
 | Zpracování upomínek                                                         | Globální         |
-| Informace o kolekci                                                      | Globální         |
+| Kontrola informací o inkasu                                                      | Globální         |
 | Nastavení a generování informací o splatnosti pohledávek                          | Globální         |
 
 ### 
@@ -80,7 +80,7 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 
 | Řádek BPM                    | Země nebo oblast |
 |-----------------------------|----------------|
-| Změnit rozvržení plánu rozpočtu | Globální         |
+| Změna rozložení plánu rozpočtu | Globální         |
 
 ### 
 
@@ -140,45 +140,45 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 
 | Řádek BPM                                                                                                                             | Země nebo oblast                    |
 |--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| Přidání polí sestavy BAS a generovat Austrálie výkazu podnikatelské aktivity (BAS)                                                    | Austrálie a Nový Zéland         |
+| Přidat pole výkazu BAS a generovat výkaz podnikatelské činnosti Austrálie (BAS)                                                    | Austrálie a Nový Zéland         |
 | Nastavení kódů důvodů pro BAS - Austrálie                                                                                                | Austrálie a Nový Zéland         |
-| **\***Chinese voucher continuity check                                                                                               | Čína                             |
-| **\***KN-00010 Číny hierarchii účtové osnovy                                                                                  | Čína                             |
-| **\***Protokol uživatele KN-00016 operace pracovní pravidlem Číny                                                                              | Čína                             |
-| **\***Golden tax integration export setup                                                                                            | Čína                             |
-| **\***Post vouchers from other modules, like sales invoices                                                                          | Čína                             |
-| **\***Post vouchers from the general journal                                                                                         | Čína                             |
-| **\***Set up basic tax integration profile for China                                                                                 | Čína                             |
-| **\***Set up Chinese vouchers                                                                                                        | Čína                             |
+| **\***Kontroly trvání čínského dokladu                                                                                               | Čína                             |
+| **\***CN-00010 Čínská hierarchie účtové osnovy                                                                                  | Čína                             |
+| **\***CN-00016 Protokol operací uživatele podle čínského pracovní pravidla                                                                              | Čína                             |
+| **\***Nastavení exportu integrace Golden Tax                                                                                            | Čína                             |
+| **\***Zaúčtování dokladů z jiných modulů, např. prodejních faktur                                                                          | Čína                             |
+| **\***Zaúčtování dokladů z hlavního deníku                                                                                         | Čína                             |
+| **\***Nastavení profilu základní daňové integrace pro Čínu                                                                                 | Čína                             |
+| **\***Nastavení čínských dokladů                                                                                                        | Čína                             |
 | Vytvoření a zaúčtování faktury odběratele pro odběratele z veřejného sektoru                                                                      | Dánsko                           |
 | Vytvoření a zaúčtování volné faktury pro odběratele z veřejného sektoru                                                                     | Dánsko                           |
 | Vytvoření a zaúčtování faktury projektu pro odběratele z veřejného sektoru                                                                       | Dánsko                           |
-| DK-00007 převod peněz žira FIK 752 slip/zaúčtovat s platební doklad volné faktury                                               | Dánsko                           |
-| DK-00007 převod peněz žira FIK 752 slip/Zaúčtovat fakturu projektu s platební doklad                                                 | Dánsko                           |
+| DK-00007 FIK 752 převod peněz žira/zaúčtování volné textové faktury s platebním dokladem                                               | Dánsko                           |
+| DK-00007 FIK 752 převod peněz žira/zaúčtování volné projektové faktury s platebním dokladem                                                 | Dánsko                           |
 | Import konfigurací elektronické fakturace OIOUBL                                                                                    | Dánsko                           |
 | Nastavení účtů odběratelů pro elektronické fakturování OIOUBL                                                                             | Dánsko                           |
 | Nastavení pro elektronické fakturování OIOUBL                                                                                                   | Dánsko                           |
 | Nastavení formátu platebního dokladu                                                                                                           | Dánsko                           |
-| **\***EEU-00047 Advance payment to employee                                                                                          | Východní Evropa                    |
+| **\***EEU 00047 Záloha pro zaměstnance                                                                                          | Východní Evropa                    |
 | Vytvoření a export plateb dodavatele pomocí formátu platby ISO20022                                                                      | Evropa                            |
 | Vytvoření plateb pro odběratele, který má zmocnění k přímému debetu                                                                          | Evropa                            |
-| **\***Nástroj generování odkaz platby EE-00015                                                                                     | Evropa                            |
+| **\***EE-00015 Nástroj pro generování platební reference                                                                                     | Evropa                            |
 | EUR-00002 Generování prohlášení Intrastat EU                                                                                       | Evropa                            |
-| **\***EUR-00002 určit adresu přepravních dokladů pro transakce v rámci obchodu uvnitř Společenství                                                          | Evropa                            |
+| **\***EUR-00002 Zadání adresy nakládky pro intrakomunitární transakci                                                          | Evropa                            |
 | EUR-00002 Přenos transakcí do systému Intrastat                                                                                     | Evropa                            |
 | EUR-00011 Vygenerování sestavy Souhrnné hlášení (EU)                                                                                          | Evropa                            |
 | EUR-00011 Nastavení sestav souhrnného hlášení EU                                                                                             | Evropa                            |
 | EUR-00012 Vydání vstupního certifikátu EU                                                                                              | Evropa                            |
 | EUR-00012 Přijetí vstupního certifikátu EU                                                                                            | Evropa                            |
-| **\***EUR-00015 Party search using VAT ID                                                                                            | Evropa                            |
-| **\***EUR-00015 Registration of vendor VAT ID                                                                                        | Evropa                            |
-| **\***EUR-00015 nastavit ID DPH                                                                                                        | Evropa                            |
-| **\***Výpočet sazby Exchange HU-00001                                                                                             | Evropa                            |
+| **\***EUR-00015 Vyhledání strany pomocí DIČ                                                                                            | Evropa                            |
+| **\***EUR-00015 Registrace DIČ dodavatele                                                                                        | Evropa                            |
+| **\***EUR-00015 Nastavení DIČ                                                                                                        | Evropa                            |
+| **\***HU-00001 Výpočet směnného kurzu                                                                                             | Evropa                            |
 | Import konfigurace pro peněžní převod ISO20022                                                                                        | Evropa                            |
 | Import konfigurace přímého debetu ISO20022                                                                                           | Evropa                            |
-| **\***LT-00003 přepravního dokladu pro pohyb zboží uvnitř společnosti nebo Generovat převod dokumentu pro převod interní zásob   | Evropa                            |
-| **\***LT-00003 přepravního dokladu pro pohyb zboží uvnitř společnosti/nastavení převodu dokumentů pro pohyb zboží uvnitř společnosti | Evropa                            |
-| **\***Č-00002 platby založené na ID platby                                                                                  | Evropa                            |
+| **\***LT-00003 Přepravní doklad pro pohyb zboží uvnitř společnosti/Generování převodního dokladu pro převod interních zásob   | Evropa                            |
+| **\***LT-00003 Přepravní doklad pro pohyb zboží uvnitř společnosti/nastavení převodu dokumentů pro pohyb zboží uvnitř společnosti | Evropa                            |
+| **\***NO-00002 Platba odběratele na základě ID platby                                                                                  | Evropa                            |
 | Nastavení bankovních účtů společnosti pro převody ISO20022                                                                           | Evropa                            |
 | Nastavení bankovních účtů společnosti pro přímé debety ISO20022                                                                              | Evropa                            |
 | Nastavení bankovních účtů odběratelů a zákazníků pro přímé debety ISO20022                                                               | Evropa                            |
@@ -186,10 +186,10 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 | Nastavení způsobu úhrady pro přímý debet ISO20022                                                                                   | Evropa                            |
 | Nastavení dodavatelů a bankovních účtů dodavatelů pro převody ISO20022                                                                | Evropa                            |
 | Vytvoření platebních metod odběratelů                                                                                                | Francie                            |
-| FR-00002 účet pro odběratele a dodavatele                                                                                                 | Francie                            |
+| FR-00002 Účet odběratelů a dodavatelů                                                                                                 | Francie                            |
 | FR-00003 Kódy NAF a čísla Siret                                                                                                 | Francie                            |
 | FR-00004 Schválit a zaúčtovat vystavení cizí směnky                                                                                      | Francie                            |
-| FR-00004 francouzské směnek a vlastních směnek                                                                               | Francie                            |
+| FR-00004 Cizí směnky a vlastní směnky ve Francii                                                                               | Francie                            |
 | FR-00004 Zaúčtování deníku vystavení cizí směnky protestu                                                                                  | Francie                            |
 | FR-00004 Zaúčtování deníku opětovného vystavení cizích směnek                                                                                       | Francie                            |
 | FR-00004 Nastavení metody platby                                                                                                     | Francie                            |
@@ -203,7 +203,7 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 | Elektronické výkaznictví – konfigurace formátu počítání a sčítání (část 2: Konfigurace výpočtů)                                                      | Německo                           |
 | Elektronické výkaznictví – konfigurace formátu počítání a sčítání (část 3: Použití výpočtů k vytvoření výstupu)                                         | Německo                           |
 | Elektronické výkaznictví – konfigurace formátu počítání a sčítání (část 4: Spuštění formátu)                                                                  | Německo                           |
-| Vytvoření zprostředkovatele konfigurace ER a označit jako aktivní                                                                             | Německo                           |
+| ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního                                                                             | Německo                           |
 | Elektronické vykazování – Návrh konfigurace pro generování sestav ve formátu Microsoft WORD (listopad 2016)                                            | Německo                           |
 | Elektronické vykazování – Návrh datového modelu pro určitou doménu (listopad 2016)                                                                                 | Německo                           |
 | Import konfigurace ER ze služby Lifecycle Services                                                                                    | Německo                           |
@@ -221,28 +221,28 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 | Elektronické výkaznictví – Použití vodorovně rozbalovacích oblastí k dynamickému přidání sloupců v tabulkách aplikace Excel (část 2: formát spuštění)                               | Německo                           |
 | Generování souboru auditu pro Německo                                                                                                           | Německo                           |
 | Import konfigurace soubor auditu pro Německo                                                                                               | Německo                           |
-| **\***Sestavu odsouhlasení DPH EUR-00018                                                                                            | Island                           |
-| IS-00006 dodavatele faktury, prohlášení a vytvořit účet dodavatele a připojit prohlášení na faktuře                                       | Island                           |
-| IS-00006 dodavatele faktury prohlášení/nastavit prohlášení na faktuře pro dodavatele                                                        | Island                           |
-| IS-00006 dodavatele faktury, prohlášení nebo aktualizace prohlášení na faktuře dodavatele a Generovat sestavu                                       | Island                           |
-| Udržovat grafu účty/nastavit povinné platební reference                                                                       | Island                           |
+| **\***EUR-00018 Sestava odsouhlasení DPH                                                                                            | Island                           |
+| IS-00006 Prohlášení o faktuře dodavatele/vytvoření účtu dodavatele a připojení prohlášení na faktuře                                       | Island                           |
+| IS-00006 Prohlášení o faktuře dodavatele/nastavení prohlášení na faktuře pro dodavatele                                                        | Island                           |
+| IS-00006 Prohlášení o faktuře dodavatele/aktualizace deklarací na faktuře a generování sestavy                                       | Island                           |
+| Uchovávání grafu účtové osnovy/nastavení povinné platební reference                                                                       | Island                           |
 | Pořízení dlouhodobého majetku s povinností vyřazení majetku                                                                              | Japonsko                             |
-| Získání dlouhodobého majetku, nárok na poskytnutí státní                                                                                 | Japonsko                             |
+| Pořízení dlouhodobého majetku a nárokování subvencí státního grantu                                                                                 | Japonsko                             |
 | Úprava odhadu povinnosti vyřazení majetku                                                                               | Japonsko                             |
-| Přidělit skladové množství sdílený datový zdroj a dobré vůle na hotovost generování jednotky                                                   | Japonsko                             |
+| Přidělení skladové množství sdíleného majetku a nehmotného jmění k penězotvorným jednotkám                                                   | Japonsko                             |
 | Změna metody odpisu během životnosti dlouhodobého majetku pro jeden majetek                                                                   | Japonsko                             |
 | Změna metody odpisu během životnosti majetku pro knihu                                                                        | Japonsko                             |
 | Konfigurace parametrů zrychleného odpisu a účetních profilů                                                                   | Japonsko                             |
 | CN-00004 Přidělení odpisů dlouhodobého majetku (JP-)                                                                                   | Japonsko                             |
-| Konfigurace profilu odpisu a účetní profil pro další odpis                                                   | Japonsko                             |
-| Konfigurace profilu odpisu a účetní profil pro zvláštní odpisy                                                      | Japonsko                             |
+| Konfigurace odpisového plánu a účetního profilu pro další odpisy                                                   | Japonsko                             |
+| Konfigurace odpisového plánu a účetního profilu pro speciální odpisy                                                      | Japonsko                             |
 | Konfigurace parametrů a nastavení souhrnné faktury pro závazky                                                             | Japonsko                             |
 | Konfigurace hlavních účtů pro zaúčtování povinnosti vyřazení majetku a sazby slev na trhu                                            | Japonsko                             |
 | Vytvoření dlouhodobého majetku s dodatečnými odpisy                                                                                    | Japonsko                             |
 | Vytvoření dlouhodobého majetku se zvláštním odpisovým plánem                                                                               | Japonsko                             |
 | Vytvoření profilu zrychleného odpisu a jeho přiřazení knize                                                                        | Japonsko                             |
 | Vytvoření dokumentu zrychleného odpisu a zadání údajů o využití                                                                     | Japonsko                             |
-| Vytvoření a přiřazení skupiny zařízení                                                                                                 | Japonsko                             |
+| Vytvoření a přiřazení skupiny vybavení                                                                                                 | Japonsko                             |
 | Vytvoření a přiřazení dokumentu vstupního snížení                                                                                           | Japonsko                             |
 | Vytvoření a potvrzení souhrnné faktury dodavatele                                                                                     | Japonsko                             |
 | Vytvoření a potvrzení testu uznání                                                                                                  | Japonsko                             |
@@ -262,14 +262,14 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 | Dotazy na transakce související s povinností vyřazení majetku                                                                    | Japonsko                             |
 | Dotaz na odečitatelné výdaje                                                                                                       | Japonsko                             |
 | JP-00005 Vstupní deník ve formuláři účtu T (Japonsko)                                                                                     | Japonsko                             |
-| JP-00011 konsolidované faktury - AR - vytvořte a potvrďte konsolidované faktury odběratele                                              | Japonsko                             |
-| JP-00027 formulář 26 Odpisovatelný daňové přiznání                                                                                     | Japonsko                             |
+| JP-00011 konsolidované faktury - AR - Vytvoření a potvrzení konsolidovaných faktur odběratele                                              | Japonsko                             |
+| JP-00027 Formulář 26 pro přiznání odepisovatelné daně                                                                                     | Japonsko                             |
 | Údržba souborů hlavních dat dlouhodobého majetku pro odečitatelné výdaje                                                                       | Japonsko                             |
 | Údržba ukazatelů snížení hodnoty u jednotlivých položek majetku                                                                                  | Japonsko                             |
 | Platba transakce dodavatele potvrzením cizí směnky odběratele                                                                    | Japonsko                             |
 | Periodická úhrada přeplatků/nedoplatků                                                                                   | Japonsko                             |
 | Návrh dalších odpisů                                                                                                      | Japonsko                             |
-| Navrhnout a zaúčtovat zrychleného odpisu                                                                                        | Japonsko                             |
+| Návrh a zaúčtování zrychleného odpisu                                                                                        | Japonsko                             |
 | Návrh a zaúčtování stornované částky v dávce                                                                                      | Japonsko                             |
 | Návrh a zaúčtování stornované částky pomocí deníku dlouhodobého majetku                                                                  | Japonsko                             |
 | Návrh a zaúčtování stornované částky na hotovost generující jednotku                                                                     | Japonsko                             |
@@ -303,12 +303,12 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 | MX-00010 Dotazy a tisk elektronické faktury                                                                                     | Mexiko                            |
 | MX-00010 Zaúčtování volné faktury                                                                                                    | Mexiko                            |
 | MX-00010 Nastavení parametrů pro elektronickou fakturu                                                                                    | Mexiko                            |
-| MX-00020: Produkce mexické elektronické knihy účetní sestavy verze 1.1                                                            | Mexiko                            |
+| MX-00020: Vytvoření účetní sestavy elektronické mexické hlavní knihy verze 1.1                                                            | Mexiko                            |
 | MX-00020 Nastavení účtové osnovy pro právnickou osobu v Mexiku                                                                   | Mexiko                            |
 | MX-00020 – Zadání registračního ID RFC pro mexické bankovní účty                                                                 | Mexiko                            |
 | NL-00003 Integrace Semansys XBRL                                                                                                   | Nizozemsko                       |
 | NL-00010 Elektronická daňová přiznání (EVAT)                                                                                          | Nizozemsko                       |
-| MY-00003 spravovat odběratele dluhopis a dobropis pro GST                                                                          | Singapur, Malajsie a Thajsko |
+| MY-00003 Spravovat dluhopisy a dobropisy odběratele pro daň GST                                                                          | Singapur, Malajsie a Thajsko |
 | MY-00004 Spravovat dluhopisy a dobropisy dodavatele pro daň GST                                                                            | Singapur, Malajsie a Thajsko |
 | MY-00005 Tisk daňové faktury (GST)                                                                                                      | Singapur, Malajsie a Thajsko |
 | MY-00006 01 Nastavení klauzulí úlevy daně GST                                                                                                | Singapur, Malajsie a Thajsko |
@@ -343,7 +343,7 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 | Změnit skupinu majetku                                        | Globální         |
 | Změna způsobu odpisu pro více položek dlouhodobého majetku | Globální         |
 | Tvorba dlouhodobého majetku                                      | Globální         |
-| Vytvoření a získání majetku ze závazků           | Globální         |
+| Vytvoření a získání majetku z modulu Závazky           | Globální         |
 | Vytvořit návrh odpisu                              | Globální         |
 | Vyřazení dlouhodobého majetku pomocí volné faktury        | Globální         |
 | Zadání příslušenství dlouhodobého majetku                        | Globální         |
@@ -365,7 +365,7 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 | Řádek BPM                                       | Země nebo oblast |
 |------------------------------------------------|----------------|
 | Uzavření fiskálního roku                          | Globální         |
-| Vytvoření položky deníku pomocí šablony        | Globální         |
+| Vytvoření záznamu deníku pomocí šablony        | Globální         |
 | Vytvoření hlavního účtu                          | Globální         |
 | Vytvoření účetních struktur                      | Globální         |
 | Vytvoření schémat časového rozlišení                         | Globální         |
@@ -374,7 +374,7 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 | Vytvoření transakcí časového rozlišení hlavní knihy             | Globální         |
 | Definování finančních dimenzí                    | Globální         |
 | Zapsání do deníku zaúčtované položky deníku              | Globální         |
-| Spravovat šablony finanční dimenze         | Globální         |
+| Udržovat šablony finanční dimenze         | Globální         |
 | Hromadné uzavření finančního období                    | Globální         |
 | Zpracování položek deníku                        | Globální         |
 | Zpracování deníku přidělení hlavní knihy              | Globální         |
@@ -390,9 +390,9 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 
 | Řádek BPM                                                                       | Země nebo oblast |
 |--------------------------------------------------------------------------------|----------------|
-| **\***Change the ownership of consignment inventory based on production demand | Globální         |
-| **\***Create a consignment replenishment order                                 | Globální         |
-| **\***Monitor consignment inventory using vendor collaboration                 | Globální         |
+| **\***Změna vlastnictví zásilky zásob na základě výrobní poptávky | Globální         |
+| **\***Vytvoření nové zakázky na doplnění stavu zásob dodávky                                 | Globální         |
+| **\***Sledování šarže zásob pomocí spolupráce dodavatele                 | Globální         |
 
 ### 
 
@@ -415,13 +415,13 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 
 ### 
 
-### <a name="performance-management"></a>Správa výkonu
+### <a name="performance-management"></a>Řízení výkonnosti
 
 | Řádek BPM                                                         | Země nebo oblast |
 |------------------------------------------------------------------|----------------|
-| **\***Add to your performance journal and send praise to someone | Globální         |
-| **\***Create a goal                                              | Globální         |
-| **\***Create a performance review                                | Globální         |
+| **\***Přidání odměny do deníku výkonnosti a udělení odměny některému z uživatelů | Globální         |
+| **\***Vytvoření cíle                                              | Globální         |
+| **\***Vytvoření kontroly výkonnosti                                | Globální         |
 
 ### 
 
@@ -445,9 +445,9 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 | Přidání obrázku k produktu                                               | Globální         |
 | Klasifikace produktu pomocí hierarchií kategorie                           | Globální         |
 | Vytvoření čárového kódu pro produkt                                         | Globální         |
-| \*Vytvořit pro varianty produktu předdefinované číselné klasifikace výrobků | Globální         |
-| \*Vytvořit číselné klasifikace výrobků pro varianty produktu konfigurované | Globální         |
-| \*Definovat výchozí nastavení objednávky zboží                            | Globální         |
+| \* Vytvoření názvosloví čísel produktů pro předdefinované varianty produktu | Globální         |
+| \* Vytvoření názvosloví čísel produktů pro nakonfigurované varianty produktu | Globální         |
+| \* Definování výchozího nastavení objednávky pro položku                            | Globální         |
 | Vytvoření prodejní objednávky pro konfigurovatelný výrobek                         | Globální         |
 | Vytvoření kritérií pro výběr prodejní ceny                                   | Globální         |
 | Zadejte kód GTIN pro produkt.                                       | Globální         |
@@ -471,11 +471,11 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 | Řádek BPM                                                                      | Země nebo oblast |
 |-------------------------------------------------------------------------------|----------------|
 | Přidat typ certifikátu k dodavateli pro veřejný sektor                        | Globální         |
-| Řízení přístupu k nákupní smlouvy z veřejného sektoru                      | Globální         |
+| Řízení přístupu k nákupním smlouvám z veřejného sektoru                      | Globální         |
 | Tvorba účtovací klasifikace                                               | Globální         |
 | Vytvoření účtovacího kódu                                                         | Globální         |
 | Vytvoření závazku pro rezervaci rozpočtových prostředků pro veřejný sektor                 | Globální         |
-| Vytvoření vlastního pole pro kód pro účtování                                      | Globální         |
+| Vytvoření nového pole pro kód účtování                                      | Globální         |
 | Vytvoření typu fondu                                                            | Globální         |
 | Vytvoření jednorázového dodavatele a faktury                                          | Globální         |
 | Vytvoření předběžného rozpočtu pro veřejný sektor                                 | Globální         |
@@ -483,10 +483,10 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 | Vytvoření rozšířené položky hlavní knihy pro veřejný sektor                          | Globální         |
 | Vytvoření původního rozpočtu a následné stornování předběžných položek registru         | Globální         |
 | Vytvoření a přiřazení kódu obchodního partnera pro veřejný sektor                 | Globální         |
-| Vytvořit titulní a podpis stránky pro sestavy platby pro veřejný sektor   | Globální         |
+| Vytvoření titulní stránky a podpisové stránky pro sestavy plateb pro veřejný sektor   | Globální         |
 | Import a vytvoření více jednorázových dodavatelů a faktur pro veřejný sektor | Globální         |
 | Nastavení odvozené finanční hierarchie ve veřejném sektoru                     | Globální         |
-| Fond ve veřejném sektoru                                            | Globální         |
+| Nastavení fondu ve veřejném sektoru                                            | Globální         |
 | Nastavení klasifikace nákupních smluv pro veřejný sektor                   | Globální         |
 
 ### 
@@ -496,17 +496,17 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 | Řádek BPM                                                         | Země nebo oblast |
 |------------------------------------------------------------------|----------------|
 | Konfigurace pracovníka                                               | Globální         |
-| **\***Configure machine learning-powered product recommendations | Globální         |
+| **\***Konfigurace doporučení produktu využívajícího strojové učení | Globální         |
 | Konfigurace profilu funkcí pro obchodní zástupce   | Globální         |
-| **\***Create a POS visual profile (November 2016)                | Globální         |
+| **\***Vytvoření vizuálního profilu POS (listopad 2016)                | Globální         |
 | Vytvoření a přidružení registrů                                   | Globální         |
 | Vytvoření objednávek kontaktního centra                                        | Globální         |
 | Vytvořit prodejní smlouvy pomocí kategorizace cenových pravidel            | Globální         |
 | Vytvoření, vypočítání a zaúčtování výkazu pro obchod              | Globální         |
 | Definování umístění a přiřazení slevy                      | Globální         |
-| Definovat a spravovat skupiny oprávnění POS                          | Globální         |
-| Definovat plán kontinuity                                       | Globální         |
-| **\***Definovat maloobchodní kanál komunikace (CDX)                 | Globální         |
+| Definice a správa skupin oprávnění POS                          | Globální         |
+| Definování plánu trvání                                       | Globální         |
+| **\***Definování komunikace maloobchodního kanálu (CDX)                 | Globální         |
 | Úpravy věrnostních odměny                                      | Globální         |
 | Správa sortimentu                                               | Globální         |
 | Přiřazení a přepsání DPH                                | Globální         |
@@ -529,7 +529,7 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 | Plnění prodejních smluv                   | Globální         |
 | Generování a zpracování rabatů odběratele      | Globální         |
 | Vyhledání platných cen a slev    | Globální         |
-| Spravovat blokování prodejní objednávky                   | Globální         |
+| Správa blokování prodejní objednávky                   | Globální         |
 | Hromadně vytvořit prodejní nabídky               | Globální         |
 | Zpracování rabatu pro platbu                | Globální         |
 | Registrace provizí z prodeje                 | Globální         |
@@ -557,7 +557,7 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 
 ### 
 
-### <a name="supply-relationship-management"></a>Zadat správce vztahů
+### <a name="supply-relationship-management"></a>Správa vztahů dodávky
 
 | Řádek BPM                                                           | Země nebo oblast |
 |--------------------------------------------------------------------|----------------|
@@ -578,14 +578,14 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 | Řádek BPM                                                                    | Země nebo oblast |
 |-----------------------------------------------------------------------------|----------------|
 | Vytvoření profilu umístění                                                   | Globální         |
-| **\***Create a mobile device menu item for license plate consolidation      | Globální         |
+| **\***Vytvoření položky nabídky pro mobilní zařízení ke konsolidaci registračních značek      | Globální         |
 | Ruční odsouhlasení dopravného                                                  | Globální         |
 | Registrace přihlášení a odhlášení řidiče k události                   | Globální         |
-| Nastavit položku nabídky mobilního zařízení pro dokončení práce typ nákupní objednávky | Globální         |
+| Nastavení položky nabídky v mobilním zařízení pro dokončení práce typu Nákupní objednávka | Globální         |
 | Naplánování schůzky pro vytížení                                            | Globální         |
 | Nastavení úhrady přepravy                                              | Globální         |
 | Nastavení parametrů automatického odsouhlasení dopravného                                     | Globální         |
-| **\***Set up short picking item reallocation                                | Globální         |
+| **\***Nastavení změny opakovaného přidělení položky pro případ realizace nekompletní objednávky                                | Globální         |
 
 
 
@@ -596,7 +596,7 @@ Toto téma obsahuje seznam nových nebo aktualizovaných úkolů vodítka vydan�
 
 [Noví nebo aktualizovaní dostupní průvodci úkolem (květen 2016)](new-updated-task-guides-available-may-2016.md)
 
-[New or updated task guides available (August 2016)](new-updated-task-guides-available-august-2016.md)
+[Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)](new-updated-task-guides-available-august-2016.md)
 
 
 

@@ -32,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 
 Tento článek popisuje pole Zaokrouhlit odpis, které se nachází na stránce Nastavení knihy.
 
-Zaokrouhlení částky jsou nastaveny pro každou knihu. Zaokrouhlení částky se používají profil odpisů dlouhodobého majetku, který ukazuje budoucí odpisy a hodnota dlouhodobého majetku a také v návrzích odpis. Zadejte nejnižší částku odpisu povolenou pro tuto knihu. 
+Celková částka odpisů je stanovena pro každou knihu. Současné odpisové částky se používají v profilu odpisování dlouhodobého majetku, který ukazuje budoucí odpisy a hodnotu dlouhodobého majetku, a také v návrzích na odpisy. Zadejte nejnižší částku odpisu povolenou pro tuto knihu. 
 
 Bez ohledu na nastavené zaokrouhlování, není částka odpisu v posledním období odpisu zaokrouhlena. Na konci posledního období odpisu musí být hodnota dlouhodobého majetku 0 (nula) nebo hodnotu odpadu, pokud se používá konečná zůstatková hodnota.
 
@@ -43,9 +43,9 @@ Odpis je bez zaokrouhlení vypočítán v částce 2 444,44. Stejně jako v nás
 | Metoda zaokrouhlení | Odpisovaná částka |
 |-----------------|---------------------|
 | Zaokrouhlení 0,1    | 2 444,40            |
-| Zaokrouhlení 1,00   | 2 444,00            |
-| Zaokrouhlení 10,00  | 2 440,00            |
-| Zaokrouhlení 100,00 | 2 400,00            |
+| Zaokrouhlení 1,00   | 2,444.00            |
+| Zaokrouhlení 10,00  | 2,440.00            |
+| Zaokrouhlení 100,00 | 2,400.00            |
 
 
 

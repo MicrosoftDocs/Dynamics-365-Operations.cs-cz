@@ -1,6 +1,6 @@
 ---
-title: "Přehled systému pro workflow"
-description: "Tento článek popisuje systém pro workflow 365 Microsoft Dynamics pro operace."
+title: "Přehled systému workflowu"
+description: "Tento článek popisuje systém workflow v aplikaci Microsoft Dynamics 365 for Operations."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,12 +24,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="workflow-system-overview"></a>Přehled systému pro workflow
+# <a name="workflow-system-overview"></a>Přehled systému workflowu
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje systém pro workflow 365 Microsoft Dynamics pro operace.
+Tento článek popisuje systém workflow v aplikaci Microsoft Dynamics 365 for Operations.
 
 <a name="what-is-workflow"></a>Co je workflow?
 -----------------
@@ -37,7 +37,7 @@ Tento článek popisuje systém pro workflow 365 Microsoft Dynamics pro operace.
 Termín *workflow* lze definovat dvěma způsoby: workflow jako systém a workflow jako obchodní proces.
 ### <a name="workflow-is-a-system"></a>Workflow je systém
 
-Workflow je systém, který je nainstalován s 365 Dynamics pro operace a spouští na aplikačního objektového serveru (AOS). Systém workflowu nabízí funkce, pomocí kterých lze vytvářet individuální workflowy nebo obchodní procesy.
+Workflow je systém nainstalovaný aplikací Dynamics 365 for Operations, který se spouští na aplikačním objektovém serveru (AOS). Systém workflowu nabízí funkce, pomocí kterých lze vytvářet individuální workflowy nebo obchodní procesy.
 
 ### <a name="workflow-is-a-business-process"></a>Workflow je obchodní proces
 

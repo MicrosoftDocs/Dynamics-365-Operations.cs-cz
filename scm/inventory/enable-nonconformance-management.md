@@ -1,5 +1,5 @@
 ---
-title: "Řízení neshod"
+title: "Správa neshod"
 description: "Tento článek popisuje základní nastavení, které je vyžadováno při použití neshod. Pokud chcete použít objednávky kvality, je třeba provést další nastavení."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="nonconformance-management"></a>Řízení neshod
+# <a name="nonconformance-management"></a>Správa neshod
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,7 +37,7 @@ Pokud chcete zapnout správu neshody, postupujte takto:
 1.  Definujte parametry zásob a správy skladu související s neshodami:
     -   Volbu **Použít správu kvality** nastavte na hodnotu **Ano**.
     -   Do pole **Hodinová sazba** zadejte hodinovou pracovní sazbu v místní měně. Hodinová sazba se používá pro výpočet nákladů na operace, které souvisejí s neshodou. Hodinová sazba a vypočtené náklady poskytují referenční informace o neshodách. S ostatními funkcemi nespolupracují.
-    -   Použití **řízení jakosti** na kartě **nastavení sestavy** stránky definovat typ dokumentu k tisku. Můžete vytisknout sestavu neshody, značky neshody nebo sestavu oprav. Definovat lze více než jeden záznam pro tisk různých typů dokumentu nebo pro tisk intenrích a externích poznámek. Je užitečné použít stránku **Typ dokumentu** k definici jedinečného typu dokumentu pro neshody a jedinečného typu dokumentu pro opravy. Můžete například zadat poznámky o neshodě pomocí jedinečného typu dokumentu pro neshody. V takovém případě určete jedinečný typ dokumentu v možnostech sestavy.
+    -   K definování typu dokumentu pro tisk použijte kartu **Správa kvality** na stránce **Nastavení sestavy**. Můžete vytisknout sestavu neshod, značku neshody nebo sestavu oprav. Definovat lze více než jeden záznam pro tisk různých typů dokumentu nebo pro tisk intenrích a externích poznámek. Je užitečné použít stránku **Typ dokumentu** k definici jedinečného typu dokumentu pro neshody a jedinečného typu dokumentu pro opravy. Můžete například zadat poznámky o neshodě pomocí jedinečného typu dokumentu pro neshody. V takovém případě určete jedinečný typ dokumentu v možnostech sestavy.
     -   Povolte číselné řady pro neshody a opravu odkazů.
 
 2.  Povolte schválení neshod uživatelem. Pomocí pole **Název** na stránce **Uživatelé** přiřaďte ke každému uživateli zaměstnance, který musí neshodu schválit. Systém použije zaměstnance, kteří mění stav neshody, ke sledování historie neshody. Uživatelé nemohou neshodu schválit, pokud jim nebyl přidělen identifikátor zaměstnance.
@@ -50,11 +50,11 @@ Pokud chcete zapnout správu neshody, postupujte takto:
 <a name="see-also"></a>Viz také
 --------
 
-[Vytvoření a zpracování neshody (úkol guide)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
+[Vytvoření a zpracování neshody (průvodce záznamem úloh)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
 
-[Quality management processes](quality-management-processes.md)
+[Procesy správy kvality](quality-management-processes.md)
 
-[Nastavte předpoklady pro řízení neshody (úkol guide)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+[Nastavení předpokladů pro správu neshody (průvodce záznamem úloh)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
 
 
 

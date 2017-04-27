@@ -1,6 +1,6 @@
 ---
-title: "BI &amp;sestav Domovská stránka"
-description: "Toto téma obsahuje seznam BI &amp;prostředky, které jsou k dispozici v Microsoft Dynamics 365 pro operace vytváření sestav."
+title: "Domovská stránka BI a vykazování"
+description: "Toto téma uvádí zdroje týkající se BI a vykazování, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Operations."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,29 +24,29 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bi-amp-reporting-home-page"></a>BI &amp;sestav Domovská stránka
+# <a name="bi-amp-reporting-home-page"></a>Domovská stránka BI a vykazování
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma obsahuje seznam BI &amp;prostředky, které jsou k dispozici v Microsoft Dynamics 365 pro operace vytváření sestav.
+Toto téma uvádí zdroje týkající se BI a vykazování, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Operations. 
 
 <a name="working-with-aggregate-data"></a>Práce s agregovanými daty
 ---------------------------
 
--   [Analytics](analytics.md)
+-   [Analytika](analytics.md)
 -   [Modely agregované v paměti v reálném čase nahrazují krychle SSAS](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
--   [Modelování a agregace dat pomocí](model-aggregate-data.md)
--   [Migrovat úložiště entita krychli prodeje upgradované Dynamics AX 2012 R3](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
+-   [Modelování a použití agregovaných dat](model-aggregate-data.md)
+-   [Migrace upgradované prodejní krychle Dynamics AX 2012 R3 do úložiště entit](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
 
-## <a name="self-service-reporting"></a>Self service reporting
--   [Power BI integration](power-bi-integration.md)
+## <a name="self-service-reporting"></a>Samoobslužné vykazování
+-   [Integrace služby Power BI](power-bi-integration.md)
 -   [Konfigurace integrace služby Power BI pro pracovní prostory](configure-power-bi-integration.md)
 -   [Vytvoření sestavy Power BI pomocí dat aplikace Microsoft Dynamics 365 for Operations](create-powerbi-report-data.md)
--   [Vytváření řídicích panelů a sestav Power BI](create-powerbi-report-dashboard.md)
--   [Obsah maloobchodní kanál výkonu Power BI](retail-channel-performance-dashboard-power-bi-data.md)
--   [Obsah finančního výkonu Power BI](financial-performance-power-bi-content-pack.md)
--   [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)
+-   [Vytvoření sestavy Power BI a řídicích panelů](create-powerbi-report-dashboard.md)
+-   [Obsah výkonnosti maloobchodní sítě Power BI](retail-channel-performance-dashboard-power-bi-data.md)
+-   [Obsah finanční výkonnosti Power BI](financial-performance-power-bi-content-pack.md)
+-   [Obsah výkonu prodeje a ziskovosti Power BI](sales-profitability-performance-content-pack.md)
 -   [Použití konfigurace elektronického vykazování k poskytnutí dat spotřeby z Dynamics 365 for Operations do BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
 ## <a name="building-embedded-analytical-experiences-in-the-dynamics-365-for-operations-client"></a>Vytváření vložených analytických prostředí v klientovi aplikace Dynamics 365 for Operations

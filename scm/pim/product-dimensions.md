@@ -38,15 +38,15 @@ Dimenze produktu jsou vlastnosti, které slouží k identifikaci varianty produk
 Varianty produktu
 ----------------
 
-Varianty produktu jsou označovány také jako položky. Položka je hmotný produkt, který není stejný jako služba. Je také možné definovat základní produkt s typem služby. Pomocí typu Služba můžete specifikovat varianty produktu, které obsahují služby. Můžete například určit základní produkt pro konzultační práci a varianty produktu pro práci, kterou zajišťují vyšší konzultanti a nižší konzultanti.
+Varianty produktu jsou označovány také jako položky. Položka je hmotný produkt, který není stejný jako služba. Je také možné definovat základní produkt s typem Servis. Pomocí typu Služba můžete specifikovat varianty produktu, které obsahují služby. Můžete například určit základní produkt pro konzultační práci a varianty produktu pro práci, kterou zajišťují vyšší konzultanti a nižší konzultanti.
 
 ## <a name="product-dimensions"></a>Dimenze produktu
-Jsou k dispozici následující dimenze produktu: konfigurace, barva, velikost a styl. Varianty výrobku mohou být generovány na základě hodnot dimenze produktu.
+K dispozici jsou následující dimenze produktu: konfigurace, barva, velikost a styl. Varianty produktu lze generovat na základě hodnot dimenzí produktu.
 
-Produktu dimenze hodnot, jako je velikost, barvu a styl může být vytvořena na **velikost**, **barva** a **styl** stránek, které lze přistupovat z následujících umístění: **řízení informací o produktech**&gt;**nastavení**&gt;**dimenze a varianty skupiny**&gt;**velikosti, barvy nebo styly**. Hodnoty dimenze produktu pro konfigurační dimenze jsou obvykle tvořeny pomocí konfigurátoru produktu nebo konfigurátoru založeného na dimenzích. Dimenze produktu se také vytvářejí a udržují na stránce **Dimenze produktu**, která je přístupná z následujících umístění:
--   Klepněte na tlačítko **řízení informací o produktech**&gt;**produkty**&gt;**produktům**. Na **podokno akcí**, klepněte na tlačítko **dimenze produktu**.
--   Klepněte na tlačítko **řízení informací o produktech**&gt;**produkty**&gt;**všechny produkty a základní produkty**. Vyberte základní produkt. Na **podokno akcí**, klepněte na tlačítko **dimenze produktu**.
--   Klepněte na tlačítko **řízení informací o produktech**&gt;**uvolněných produktů**. Vyberte základní produkt. Na **podokno akcí**, klepněte na tlačítko **výrobku**. Ve skupině **Základní produkt** klikněte na **Dimenze produktu**.
+Hodnoty dimenze produktu, jako například Velikost, Barva a Styl, lze vytvořit na stránce **Velikost**, **Barva** a **Styl**, které jsou přístupné z následujících umístění: **Řízení informací o produktech** &gt; **Nastavení** &gt; **Dimenze a varianty skupiny** &gt; **Velikosti, barvy nebo styly**. Hodnoty dimenze produktu pro konfigurační dimenze jsou obvykle tvořeny pomocí konfigurátoru produktu nebo konfigurátoru založeného na dimenzích. Dimenze produktu se také vytvářejí a udržují na stránce **Dimenze produktu**, která je přístupná z následujících umístění:
+-   Klikněte na **Řízení informací o produktech** &gt; **Produkty** &gt; **Základní produkty**. V **podokně akcí** klikněte na možnost **Dimenze produktu**.
+-   Klikněte na **Řízení informací o produktech** &gt; **Produkty** &gt; **Všechny produkty a základní produkty**. Vyberte základní produkt. V **podokně akcí** klikněte na možnost **Dimenze produktu**.
+-   Klikněte na možnosti **Řízení informací o produktech** &gt; **Uvolněné produkty**. Vyberte základní produkt. V **podokně akcí** klikněte na **Produkt**. Ve skupině **Základní produkt** klikněte na **Dimenze produktu**.
 
 Počet variant, které je možné vytvořit pro položku, je omezen počet možných kombinací dimenzí produktu.
 | **Tip **                                                                                                                                              |
@@ -58,7 +58,7 @@ Společnost prodává džíny. Tato položka, džíny, používá pro dimenzi pr
 
 | Barva | Velikost |
 |-------|------|
-| Modrá  | KŘÍŽKY   |
+| Modrá  | XS   |
 | Modrá  | S    |
 | Modrá  | S    |
 | Černá | S    |

@@ -42,7 +42,7 @@ Proces plánování úlohy poptávky zahrnuje následující úkoly:
 -   Rozdělte operace na úkoly.
 -   Plánování úkolů podle data a času pro zdroje určených pro související operace.
 -   Vypočítejte časy zahájení a ukončení jednotlivých úloh. Můžete použít omezenou kapacitu, abyste se ujistili, že neexistují žádné překrývající se časy.
--   Určení, které prostředky ve skupině prostředků, chcete-li spustit úlohu. Tento úkol vyžaduje skupinu prostředků pro operaci. Plánování práce vybere prostředky nebo skupiny prostředků na základě nejkratší době realizace a také bere v úvahu všechny předchozí rezervace na prostředky.
+-   Určete, které prostředky ve skupině prostředků se mají použít ke spuštění úlohy. Tento úkol vyžaduje zadání skupiny prostředků pro operaci. Plánování práce vybere prostředky nebo skupiny prostředků na základě nejkratší době realizace a také bere v úvahu všechny předchozí rezervace na prostředky.
 -   Operace se rozrostou na úkoly při spuštění plánování úloh. Úkoly jsou plánovány podle data a času podle pořadí stanoveného výrobním postupem. Nastavení operace určuje úlohy, které se během procesu plánování rozrůstají. Skupina postupu, která je přiřazena k operaci, řídí, zda jsou generovány úkoly. Úkol je vytvořen pouze tehdy, pokud má konkrétní dobu trvání. Například úloha s dopravním časem bude generován, jestliže byl pro vybranou operaci zadán dopravní čas.
 
 ## <a name="scheduling-direction"></a>Způsob plánování

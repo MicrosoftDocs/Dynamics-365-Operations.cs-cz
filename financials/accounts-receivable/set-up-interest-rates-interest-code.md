@@ -47,17 +47,17 @@ Můžete nastavit úrokové sazby pro výpočet zadané procentní hodnoty.
 
 -   Částka úroku platí pro všechny měny.
 -   Volitelně lze zadat omezení částky úroku.
--   **Procento** je vybrán ** ** v **vypočítat úrok podle** v **nastavit kódy úroků** stránky.
+-   Na stránce **Nastavení kódů úroků** je v poli **Vypočítat úrok podle** zvolena možnost **Procento**.
 
-Můžete například nastavit kód úroku, který hodnotí 5 % úrok pro každé dva měsíce, že platba faktury překročí transakce data splatnosti, zadejte 2 v **vypočítat úrok každý** pole a vyberte **měsíc**.
+Pokud chcete například nastavit kód úroku, který stanoví 5% úrok po uplynutí každých dvou měsíců, kdy je faktura po splatnosti, zadejte do pole **Vypočítat úroky jednou za** hodnotu 2 a vyberte možnost **Měsíc**.
 
 ## <a name="interest-rates-based-on-amounts"></a>Úrokové sazby podle částek
 Můžete nastavit úrokové sazby pro výpočet určité částky podle měny.
 -   Částka úroku se zadává pro každou měnu v kódu úroku.
 -   Volitelně lze zadat omezení částky úroku.
--   ** Částka ** je vybrán v **vypočítat úrok podle** v **nastavit kódy úroků** stránky.
+-   Na stránce **Nastavení kódů úroků** je v poli **Vypočítat úrok podle** zvolena možnost **Částka **.
 
-Například nastavit kód úroku, který hodnotí zájem 25,00 každých 20 dní, že platba faktury překročí transakci datum splatnosti zadejte 20 **vypočítat úrok každý** pole a vyberte **den**.
+Pokud chcete například nastavit kód úroku, který stanoví úrok 25,00 po uplynutí každých 20 dnů, kdy je faktura po splatnosti, zadejte do pole **Vypočítat úroky jednou za** hodnotu 20 a vyberte možnost **Den**.
 
 ## <a name="interest-rates-based-on-ranges"></a>Úrokové sazby podle rozsahů
 Můžete nastavit úrokové sazby, které jsou závislé na částce po splatnosti, počtu dní, po které je částka po splatnosti nebo počtu měsíců, po které je částka po splatnosti.
@@ -69,14 +69,14 @@ Nastavíte kód úroku, který přiřadí úrok jednou za každé tři měsíce,
 
 | **Název pole**                  | **Hodnota pole** |
 |---------------------------------|-----------------|
-| **Kód úroku**               | 3M % ByAmt        |
+| **Kód úroku**               | 3M%ByAmt        |
 | **Vypočítat úroky jednou za**    | 3/měsíc         |
 | **Úrok podle rozsahu**           | Částka          |
 | **Vypočítat úrok podle** | Procento      |
 
 Takto nastavíte rozsah informací.
 
-| **From value** | **Interest value** |
+| **Od hodnoty** | **Hodnota úroků** |
 |----------------|--------------------|
 | 0              | 1                  |
 | 1,001          | 2                  |
@@ -97,10 +97,10 @@ Nastavíte kód úroku, který přiřadí úrok jednou za každých 15 dnů, po 
 
 Takto nastavíte rozsah informací.
 
-| **From value** | **Interest value** |
+| **Od hodnoty** | **Hodnota úroků** |
 |----------------|--------------------|
 | 0              | 10                 |
-| 61             | září                 |
+| 61             | 15                 |
 | 91             | 20                 |
 
  
@@ -111,14 +111,14 @@ Nastavíte kód úroku, který přiřadí úrok jednou za každý měsíc, po kt
 
 | **Název pole**                  | **Hodnota pole** |
 |---------------------------------|-----------------|
-| **Kód úroku**               | 1M % ByMth        |
+| **Kód úroku**               | 1M%ByMth        |
 | **Vypočítat úroky jednou za**    | 1/měsíc         |
 | **Úrok podle rozsahu**           | Měsíce          |
 | **Vypočítat úrok podle** | Procento      |
 
 Takto nastavíte rozsah informací.
 
-| **From value** | **Interest value** |
+| **Od hodnoty** | **Hodnota úroků** |
 |----------------|--------------------|
 | 0              | 1.5                |
 | 4              | 2                  |

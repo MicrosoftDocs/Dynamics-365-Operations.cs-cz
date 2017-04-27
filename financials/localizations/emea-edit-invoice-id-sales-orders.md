@@ -1,6 +1,6 @@
 ---
-title: "Upravit ID faktury pro prodejní objednávky pro východní Evropu"
-description: "Toto téma obsahuje informace o parametry pohledávek ovlivňující čísel faktur na dodací listy a faktury pro České republiky, Estonska, Maďarska, Litvy, Lotyšska a Polska."
+title: "Úprava ID faktury v prodejních objednávkách pro východní Evropu"
+description: "Toto téma obsahuje informace o parametrech pohledávek ovlivňujících čísla faktur na dodacích listech a fakturách pro Českou republiku, Estonsko, Maďarsko, Litvu, Lotyšsko a Polsko."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>Upravit ID faktury pro prodejní objednávky pro východní Evropu
+# <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>Úprava ID faktury v prodejních objednávkách pro východní Evropu
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma obsahuje informace o parametry pohledávek ovlivňující čísel faktur na dodací listy a faktury pro České republiky, Estonska, Maďarska, Litvy, Lotyšska a Polska.
+Toto téma obsahuje informace o parametrech pohledávek ovlivňujících čísla faktur na dodacích listech a fakturách pro Českou republiku, Estonsko, Maďarsko, Litvu, Lotyšsko a Polsko.
 
-Pro právnické osoby do České republiky, Estonska, Maďarska, Litvy, Lotyšska a Polska **upravit ID faktury pro prodejní objednávky** umožňuje ručně zadat dodací list a čísla faktury na odběratele na dodacím listu a faktury. Následující možnosti jsou k dispozici na **parametry pohledávek** na stránky, **faktury** s náhledem v **aktualizace** kartu.
+Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsku a Polsku umožňuje možnost **Upravit ID faktury pro prodejní objednávky** ručně zadat číslo dodacího listu a faktury na dodacím listu a faktuře odběratele. Následující možnosti jsou k dispozici na stránce **Parametry pohledávek** na pevné záložce **Faktura** na kartě **Aktualizace**.
 <table>
 <colgroup>
 <col width="50%" />
@@ -39,21 +39,21 @@ Pro právnické osoby do České republiky, Estonska, Maďarska, Litvy, Lotyšsk
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Parametr</strong></td>
-<td> <strong>Description</strong></td>
+<td><strong> Parametr</strong></td>
+<td> <strong>Popis</strong></td>
 </tr>
 <tr class="even">
 <td>Upravit ID faktury na prodejní objednávce</td>
-<td>Pokud je vybrána tato možnost, bude možné provádět následující akce:
+<td>Když je tato možnost vybraná, budete moci:
 <ul>
-<li>Upravit <strong>dodací list</strong> v <strong>dodací list účtování</strong> stránky.</li>
-<li>Úprava <strong>faktury</strong> v <strong>zaúčtování faktury</strong> stránky.</li>
-<li>Vyberte <strong>Kontrola použitého čísla faktur</strong> parametr.</li>
+<li>Upravit <strong>dodací list</strong> na stránce <strong>Zaúčtování dodacího listu</strong>.</li>
+<li>Upravte pole <strong>Faktura</strong> na stránce <strong>Zaúčtování faktury</strong>.</li>
+<li>Vyberte parametr <strong>Zkontrolovat použité číslo faktury</strong>.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Zkontrolovat použité číslo faktury</td>
-<td>Pokud je vybrána tato volba, během procesu zaúčtování faktury v systému ověřte, že číslo faktury již neexistuje, zaúčtovaných faktur. Pokud číslo neexistuje, zobrazí se chybová zpráva.</td>
+<td>Pokud je vybrána tato volba, během procesu zaúčtování faktury systém ověří, zda pro zaúčtované faktury toto číslo faktury neexistuje. Pokud číslo existuje, zobrazí se chybová zpráva.</td>
 </tr>
 </tbody>
 </table>

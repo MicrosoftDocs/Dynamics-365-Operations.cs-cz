@@ -1,6 +1,6 @@
 ---
-title: "Přehled řízení rozpočtu"
-description: "Tento článek přináší kontrolu rozpočtu a obsahuje informace, které vám pomohou při konfiguraci kontroly rozpočtu v 365 Microsoft Dynamics pro operace tak, aby spravovat finanční prostředky."
+title: "Přehled kontrol rozpočtu"
+description: "Tento článek obsahuje základní informace o kontrole rozpočtu a poskytuje informace, které umožňují konfiguraci kontroly rozpočtu v aplikaci Microsoft Dynamics 365 for Operations, abyste mohli spravovat finančních prostředky."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,42 +24,42 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="budget-control-overview"></a>Přehled řízení rozpočtu
+# <a name="budget-control-overview"></a>Přehled kontrol rozpočtu
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek přináší kontrolu rozpočtu a obsahuje informace, které vám pomohou při konfiguraci kontroly rozpočtu v 365 Microsoft Dynamics pro operace tak, aby spravovat finanční prostředky.
+Tento článek obsahuje základní informace o kontrole rozpočtu a poskytuje informace, které umožňují konfiguraci kontroly rozpočtu v aplikaci Microsoft Dynamics 365 for Operations, abyste mohli spravovat finančních prostředky.
 
 <a name="overview"></a>Přehled
 --------
 
-Kontrolu rozpočtu 365 Microsoft Dynamics pro operace podporuje řízení finančních zdrojů organizace prostřednictvím účtové osnovy, pracovní postupy, skupin uživatelů, původní doklady a deníky, výpočet konfigurovatelné prostředky, rozpočtových cyklů a prahy. Když jsou prvky řízení zavedené, organizace může plánovat, měřit, spravovat a předvídat své finanční prostředky během celého fiskálního roku. 
+Kontrola rozpočtu v aplikaci Microsoft Dynamics 365 for Operations podporuje správu finančních prostředků v organizaci prostřednictvím účtové osnovy, workflowů, skupin uživatelů, zdrojových dokumentů a deníků, konfigurovatelného výpočtu dostupných finančních prostředků, rozpočtových cyklů a prahových hodnot. Když jsou prvky řízení zavedené, organizace může plánovat, měřit, spravovat a předvídat své finanční prostředky během celého fiskálního roku. 
 
-Po schválení rozpočtu v 365 Dynamics pro operace můžete generovat položky registru rozpočtu k zaznamenání výdaje rozpočtu organizace plány rozpočtu. Alternativně můžete vytvořit nebo importovat z jiného programu, namísto použití funkce plánování rozpočtu položky registru rozpočtu. 
+Po schválení rozpočtů v aplikaci Dynamics 365 for Operations můžete použít plány rozpočtu ke generování položek registru rozpočtu pro zaznamenání rozpočtu výdajů pro organizaci. Případně můžete vytvořit nebo importovat položky registru rozpočtu z programu třetí strany namísto použití funkce plánování rozpočtu. 
 
 Výdaje lze zaznamenat pomocí hlavních účtů a finančních dimenzí. Můžete nakonfigurovat kontrolu celkových výdajů podle zásad a požadavků organizace, a to seskupením kombinací finančních dimenzí a hlavních účtů. 
 
 Následující graf znázorňuje místo kontroly rozpočtu ve fázích typického rozpočtového cyklu.
 
-[![BudgetingCycle](./media/budgetingcycle-300x198.png)](./media/budgetingcycle.png) 
+[![Rozpočtový cyklus](./media/budgetingcycle-300x198.png)](./media/budgetingcycle.png) 
 
-Můžete nakonfigurovat ovládací prvek rozpočtu podle několika faktorů:
+Můžete konfigurovat kontrolu rozpočtu podle několika faktorů:
 
 -   **Finanční dimenze**: Jaké finanční dimenze je nutné použít pro vykazování rozpočtu a skutečných hodnot a jaké finanční dimenze jsou potřebné k řízení rozpočtu? Existují určité kombinace dimenzí nebo hlavních účtů, které vyžadují zvláštní pozornost? Existuje například požadavek na sledování rozpočtu a skutečných hodnot podle nákladového střediska a programu? Vyžadují cestovní výdaje zvláštní pozornost?
 -   **Čas**: Jaké časové období (fiskální období, fiskální období k datu atd.) se použije k vyhodnocení dostupných rozpočtových prostředků?
--   **Zdrojové dokumenty** – jaké musí být vyhodnocena zdrojové dokumenty pro kontrolu rozpočtu? By měly být hodnoceny dokumenty na každém řádku nebo dokumentu?
+-   **Zdrojové dokumenty** – jaké zdrojové dokumenty musí být vyhodnoceny pro kontrolu rozpočtu? By měly být dokumenty hodnoceny podle řádku nebo podle dokumentu?
 -   **Výpočet dostupných prostředků**: Mají být dokumenty, jako například nákupní žádanky (předběžná břemena) a nákupní objednávky (břemena) zohledněny ve výpočtu dostupných finančních prostředků? Mají být dokumenty ve stavu konceptu zohledněny ve výpočtu?
 -   **Oprávnění pro přepis**: Kdo má oprávnění přesáhnout dostupný rozpočet?
 
-Kontrola rozpočtu je plně integrována s 365 Dynamics pro operace. Proto je možné vyhodnotit dostupný rozpočet pro plánované nákupy i skutečné nákupy. Jsou k dispozici dotazy a sestavy týkající se rozpočtu. Proto mohou uživatelé vyhodnotit rozpočet v rámci rozpočtového cyklu a podle potřeby provést ve formě revizí či převodů rozpočtu. Správce rozpočtu může také podle potřeby exportovat rozpočet a skutečné hodnoty do aplikace Microsoft Excel kvůli lepší analýze a prognóze.
+Kontrola rozpočtu je plně integrovaná do aplikace Dynamics 365 for Operations. Proto je možné vyhodnotit dostupný rozpočet pro plánované nákupy i skutečné nákupy. Jsou k dispozici dotazy a sestavy týkající se rozpočtu. Proto mohou uživatelé vyhodnotit rozpočet v rámci rozpočtového cyklu a podle potřeby provést ve formě revizí či převodů rozpočtu. Správce rozpočtu může také podle potřeby exportovat rozpočet a skutečné hodnoty do aplikace Microsoft Excel kvůli lepší analýze a prognóze.
 
 ## <a name="configuring-budget-control"></a>Konfigurace kontroly rozpočtu
 ### <a name="budget-cycle-time-span"></a>Délka rozpočtového cyklu
 
 Po dokončení konfigurace základního rozpočtování můžete definovat čas nebo počáteční a koncové období pro rozpočtování a kontrolu rozpočtu na stránce **Délka rozpočtového cyklu**. Rozpočtové cykly často odpovídají fiskálním kalendářům mohou však překlenovat fiskální roky.
 
-Další kroky v konfiguraci, jsou dokončeny na různých kartách na **konfiguraci kontroly rozpočtu** stránky.
+Další kroky konfigurace se provádí na různých kartách stránky **Konfigurace kontroly rozpočtu**.
 
 ### <a name="define-parameters"></a>Definovat parametry
 
@@ -80,7 +80,7 @@ Na kartě **Oprávnění překročit rozpočet** můžete určit skupiny uživat
 Na kartě **Dostupné rozpočtové prostředky** můžete definovat vzorec, který se použije k výpočtu dostupných rozpočtových prostředků. V závislosti na tom, jak konzervativně organizace spravuje své finanční prostředky, nebo v závislosti na předpisech a oborových požadavcích může výpočet zahrnovat rozpracované nebo nezaúčtované dokumenty. 
 
 > [!NOTE] 
-> Pokud výpočet je upravena během rozpočtového cyklu, změny nemají vliv na všechny dokumenty, které dříve předán ovládací prvek kontroly rozpočtu a které byly zaúčtovány nebo dokončeno.
+> Pokud je tento výpočet po upraven během rozpočtového cyklu, tyto změny neovlivní žádné dokumenty, které dříve prošly kontrolami rozpočtu a které byly zaúčtovány či dokončeny.
 
 ### <a name="documents-and-journals"></a>Dokumenty a deníky
 
@@ -99,7 +99,7 @@ Na kartě **Přiřadit rozpočtové modely** můžete přiřadit rozpočtové mo
 Na kartě **Definovat pravidla kontroly rozpočtu** je nutno vytvořit konkrétní pravidla na základě finančních dimenzí, které jsou povolené pro kontrolu rozpočtu. Pokud například platí zaměření na výdaje nebo rozsah výdajů pro oddělení, nastavení na této kartě lze použít k definování a vyhodnocení těchto výdajů. Můžete definovat různé prahové hodnoty pro každé pravidlo kontroly rozpočtu. 
 
 > [!Important]
-> Všechny hlavní účet bude povolena kontrola rozpočtu **zisků a ztrát**, **výdajů**, **výnosy, rozvaha, odpovědnosti, jmění** nebo **majetku** typu. Pokud je na této kartě pravidlo s prázdným kritériem, bude povolena kontrola rozpočtu **všech** kombinací finančních dimenzí, které zahrnují hlavní účty těchto typů. Proto ověřte, že vytvoříte pravidla kontroly rozpočtu definující pouze rozsahy kombinací finančních dimenzí, u kterých je aktivace kontroly rozpočtu důležitá.  
+> Kontrola rozpočtu bude povolena pro každý hlavní účet typu **Zisk a ztráta**, **Výdaj**, **Výnosy, Rozvaha, Pasiva, Jmění** nebo **Majetek**. Pokud je na této kartě pravidlo s prázdným kritériem, bude povolena kontrola rozpočtu **všech** kombinací finančních dimenzí, které zahrnují hlavní účty těchto typů. Proto ověřte, že vytvoříte pravidla kontroly rozpočtu definující pouze rozsahy kombinací finančních dimenzí, u kterých je aktivace kontroly rozpočtu důležitá.  
 
 ### <a name="select-main-accounts"></a>Vybrat hlavní účty
 
@@ -117,14 +117,14 @@ Pokud mají být potlačena upozornění na kontrolu rozpočtu pro jakékoli už
 
 Po konfiguraci kontroly rozpočtu můžete kontrolu zapnout nebo ji aktivovat na kartě **Aktivovat kontrolu rozpočtu**. Pracovní verze potom vstoupí v platnost.
 > [!Important]
-> Kontrola rozpočtu je zapnuta a aktivní, a po zaúčtování transakcí, by neměla být vypnuto polovině roku. Když je kontrola rozpočtu vypnuta, aktivity nejsou zaznamenávány pro účely kontroly rozpočtu, takže kontroly rozpočtu se již neprovádí. Dokumenty, které již byly zaúčtovány, tedy nemusí správně odrážet jakékoli uvolněné částky a zůstatky v dotazech a sestavách, které souvisejí s kontrolou rozpočtu. Patří mezi ně statistika kontroly rozpočtu pro jakékoli podřízené nebo upravující dokumenty a deníky. 
+> Po zapnutí a aktivaci kontroly rozpočtu a zaúčtování transakcí by vypnutí kontroly nemělo proběhnout v průběhu roku. Když je kontrola rozpočtu vypnuta, aktivity nejsou zaznamenávány pro účely kontroly rozpočtu, takže kontroly rozpočtu se již neprovádí. Dokumenty, které již byly zaúčtovány, tedy nemusí správně odrážet jakékoli uvolněné částky a zůstatky v dotazech a sestavách, které souvisejí s kontrolou rozpočtu. Patří mezi ně statistika kontroly rozpočtu pro jakékoli podřízené nebo upravující dokumenty a deníky. 
 
 Také pamatujte, že transakce, včetně položek registru rozpočtu, které byly zaúčtovány před zapnutím kontroly rozpočtu, nejsou v kontrole rozpočtu zohledněny. Proto je vhodné zapínat kontrolu rozpočtu pouze na začátku nového rozpočtového cyklu. Zajistěte, aby u položek registru rozpočtu, které obsahují počáteční zůstatky rozpočtu pro kontrolu rozpočtu, docházelo k aktualizacím zůstatků rozpočtu pouze po zapnutí kontroly rozpočtu. Jakýkoli otevřený dokument (například nákupní objednávka) bude zkontrolován z hlediska dostupných rozpočtových prostředků a získá rezervaci rozpočtu pro kontrolu rozpočtu, když uživatel ručně spustí kontrolu rozpočtu v dokumentu.
 
 ## <a name="using-budget-control"></a>Používání kontroly rozpočtu
 Jakmile bude zapnuta kontrola rozpočtu, uživatelům se budou zobrazovat varovné a chybové zprávy týkající se kontroly rozpočtu v dokumentech a denících, které jsou nakonfigurované pro kontrolu rozpočtu. Nezapomeňte, že kontrolu rozpočtu můžete nakonfigurovat tak, aby uživatelé byli upozorněni, pokud překročí rozpočtové prostředky, stále však mohou transakci potvrdit nebo zaúčtovat. Uživatelé mohou prohlížet podrobnosti neúspěšné kontroly rozpočtu na stránce **Chyby a upozornění kontroly rozpočtu**.   
 
-Na této stránce Uživatelé mohou přejít k podrobnostem **Statistika kontroly rozpočtu podle období** stránky zobrazit podrobnosti rozpočtu dostupnost a rezervace pro kombinaci dimenzí rozpočtu vybraného ovládacího prvku. Uživatelé mohou také přejít k podrobnostem na stránce **Statistika kontroly rozpočtu** a zobrazit si dostupnost rozpočtu pro všechny kombinace finančních dimenzí, které se používají v kontrole rozpočtu. 
+Z této stránky mohou uživatelé přejít na stránku **Statistika kontroly rozpočtu podle období** a zobrazit zde podrobnosti o dostupnosti rozpočtu a rezervace pro vybrané kombinace dimenzí kontroly rozpočtu. Uživatelé mohou také přejít k podrobnostem na stránce **Statistika kontroly rozpočtu** a zobrazit si dostupnost rozpočtu pro všechny kombinace finančních dimenzí, které se používají v kontrole rozpočtu. 
 
 Pokud je kontrola rozpočtu zapnuta pro nákupní objednávky, může správce rozpočtu použít pracovní prostor **Rozpočty hlavní knihy a prognózy** ke kontrole fronty všech nepotvrzených nákupních objednávek s varováními a chybami kontroly rozpočtu. Pokud má správce rozpočtu nakonfigurovaná oprávnění překročit rozpočet, může potvrdit nákupní objednávky přímo v tomto pracovním prostoru.    
 

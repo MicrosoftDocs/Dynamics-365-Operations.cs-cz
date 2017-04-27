@@ -1,6 +1,6 @@
 ---
-title: "Produkt číslo nomenklatury"
-description: "Toto téma popisuje, jak lze nastavit číslo klasifikace výrobků nahradit pevný formát [produktu předlohy - konfigurace - velikost - Barva - Styl číslování], cílené formátem, který obsahuje číslo hlavního produktu, aktivní dimenze produktu a oddělovače textu dle vašeho výběru. Můžete také vytvořit názvosloví k identifikaci konfigurací, které jsou vytvořeny konfigurátorem produktu založeném na omezeních. Tato názvosloví můžou obsahovat atributy podle vašeho výběru."
+title: "Názvosloví čísla produktu"
+description: "Toto téma popisuje, jak nastavit názvosloví čísel produktů k nahrazení pevného formátu [Product master number - Configuration - Size - Color - Style], s cíleným formátem, který zahrnuje číslo základního produktu, dimenze aktivního produktu a textové oddělovače, z nichž můžete vybírat. Můžete také vytvořit názvosloví k identifikaci konfigurací, které jsou vytvořeny konfigurátorem produktu založeném na omezeních. Tato názvosloví můžou obsahovat atributy podle vašeho výběru."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,12 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="product-number-nomenclature"></a>Produkt číslo nomenklatury
+# <a name="product-number-nomenclature"></a>Názvosloví čísla produktu
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje, jak lze nastavit číslo klasifikace výrobků nahradit pevný formát [produktu předlohy - konfigurace - velikost - Barva - Styl číslování], cílené formátem, který obsahuje číslo hlavního produktu, aktivní dimenze produktu a oddělovače textu dle vašeho výběru. Můžete také vytvořit názvosloví k identifikaci konfigurací, které jsou vytvořeny konfigurátorem produktu založeném na omezeních. Tato názvosloví můžou obsahovat atributy podle vašeho výběru.
+Toto téma popisuje, jak nastavit názvosloví čísel produktů k nahrazení pevného formátu [Product master number - Configuration - Size - Color - Style], s cíleným formátem, který zahrnuje číslo základního produktu, dimenze aktivního produktu a textové oddělovače, z nichž můžete vybírat. Můžete také vytvořit názvosloví k identifikaci konfigurací, které jsou vytvořeny konfigurátorem produktu založeném na omezeních. Tato názvosloví můžou obsahovat atributy podle vašeho výběru.
 
 Nové názvosloví čísel variant produktu vám umožňuje zahrnout segmenty do identifikátorů variant produktu. Tyto segmenty mohou obsahovat číslo hlavního produktu, dimenze produktu, číselné řady, konstanty textu a atributy. Tato funkce umožňuje rychle najít konkrétní variantu produktu, když vytváříte nákupní nebo prodejní objednávku.
 
@@ -69,8 +69,8 @@ Tričko (TS1234) se vyrábí ve 3 různých velikostech (S, M, L), 4 různých b
 
 Číslo varianty produktu pro červené, malé, Polo bude: TS1234 červená-malá-Polo.
 
-## <a name="nomenclature-of-constraintbased-configurations"></a>Klasifikace constraintbased konfigurace
-Pro omezení na základě konfigurace mohou být sestaveny vyhrazené nomenklatury pro konfigurační dimenze produktu. Můžete vybrat následující segmenty na stránce **Názvosloví produktu**.
+## <a name="nomenclature-of-constraintbased-configurations"></a>Názvosloví konfigurací založených na omezeních
+Pro konfigurace založené na dimenzích může být sestaveno vyhrazené názvosloví pro dimenzi konfiguračního produktu. Můžete vybrat následující segmenty na stránce **Názvosloví produktu**.
 
 -   Hodnota číselné řady
 -   Textová konstanta
@@ -93,8 +93,8 @@ Názvosloví konfigurace je definováno pomocí následujících segmentů:
 
 ID konfigurace pro dřevěný materiál o délce 78 bude mít následující ID konfigurace: WoodAAA78.
 
-## <a name="nomenclature-of-dimensionbased-configurations"></a>Klasifikace dimensionbased konfigurace
-Pro konfigurace založené na dimenzích mohou být sestaveny vyhrazené nomenklatury pro konfigurační dimenze produktu. Můžete vybrat následující segmenty na stránce **Názvosloví produktu**.
+## <a name="nomenclature-of-dimensionbased-configurations"></a>Názvosloví konfigurací založených na dimenzích
+Pro konfigurace založené na dimenzích může být sestaveno vyhrazené názvosloví pro dimenzi konfiguračního produktu. Můžete vybrat následující segmenty na stránce **Názvosloví produktu**.
 
 -   Hodnota číselné řady
 -   Textová konstanta
@@ -135,7 +135,7 @@ Při použití technologie konfigurace založené na omezeních nebo založené 
 V tomto příkladu můžete používat číslo varianty produktu, která se skládá z následujících segmentů:
 
 1.  Číslo základního produktu
-2.  Textová konstanta "\_"
+2.  Textová konstanta '\_'
 3.  Konfigurace
 
 Názvosloví konfigurace může sestávat z následujících segmentů:
@@ -150,7 +150,7 @@ Pro segmenty můžete zadat následující hodnoty:
 -   Materiál = plast
 -   Délka = 12
 
-Číslo varianty produktu se změní na: M0099\_PlasticAAA12.
+Číslo varianty produktu bude: M0099\_PlasticAAA12.
 
 ### <a name="example-for-dimension-based-configurations"></a>Příklad konfigurací založených na dimenzích
 
@@ -183,7 +183,7 @@ Pokud se pokusíte automaticky nebo ručně generovat varianty produktu, kde jed
 
 ### <a name="constraint-based-configurations"></a>Konfigurace založené na omezeních
 
-V závislosti na názvosloví se systém může pokusit přiřadit nejedinečné číslo varianty produktu ke konfiguraci. V tomto případě systém použije číselnou řadu pro konfigurační dimenze jako číslo varianty produktu. Pokud k tomu dojde, zobrazí se upozornění. Aby k tomu nedošlo, je třeba zahrnout dostatek atributů do názvosloví pro zajištění jedinečnosti a zajistit, aby byla volba **Opakovaně** zapnuta pro komponentu.
+V závislosti na názvosloví se systém může pokusit přiřadit nejedinečné číslo varianty produktu ke konfiguraci. V takovém případě systém použije číselnou řadu pro konfigurační dimenzi jako číslo varianty produktu. Pokud k tomu dojde, zobrazí se upozornění. Aby k tomu nedošlo, je třeba zahrnout dostatek atributů do názvosloví pro zajištění jedinečnosti a zajistit, aby byla volba **Opakovaně** zapnuta pro komponentu.
 
 ### <a name="dimension-based-configurations"></a>Konfigurace založené na dimenzích
 
@@ -194,9 +194,9 @@ Proces konfigurace zahrnuje krok, ve kterém systém navrhne hodnotu konfigurace
 <a name="see-also"></a>Viz také
 --------
 
-[Vytvořit číselné klasifikace výrobků pro varianty produktu předdefinované (úkol guide)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
+[Vytvoření názvosloví čísel produktů pro předdefinované varianty produktu (Průvodce záznamem úloh)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
 
-[Vytvořit číselné klasifikace výrobků pro varianty produktu nakonfigurované (úkol guide)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
+[Vytvoření názvosloví čísel produktů pro konfigurované varianty produktu (Průvodce záznamem úloh)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
 
 
 

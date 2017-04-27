@@ -79,7 +79,7 @@ Následující tabulka zobrazuje požadavky, které musí být splněny, než za
 </table>
 
 ## <a name="creating-registering-and-uploading-an-eu-entry-certificate"></a>Vytváření, registrace a odesílání vstupního certifikátu EU
-Vstupní certifikát EU můžete vytvořit automaticky nebo ručně. Vytvoří a vytiskne automaticky při zaúčtování dodacího listu nebo faktury pro zákazníka pomocí vstupní certifikát EU **dodací list účtování** stránky nebo **zaúčtování faktury** stránky. Chcete-li ručně vytvořit nebo znovu vytisknout vstupní certifikát EU pro fakturu odběratele, použijte **deník faktur** stránky. Dále můžete zadat podrobnosti o vstupním certifikátu EU vystaveném třetí stranou na stránce **Deník vstupního certifikátu**.
+Vstupní certifikát EU můžete vytvořit automaticky nebo ručně. Vstupní certifikát EU se vytvoří a vytiskne automaticky při zaúčtování dodacího listu nebo faktury odběratele pomocí stránky **Zaúčtování dodacího listu** nebo **Zaúčtování faktury**. Pokud chcete ručně vytvořit nebo znovu vytisknout vstupní certifikát EU pro fakturu zákazníka, použijte stránku **Deník faktur**. Dále můžete zadat podrobnosti o vstupním certifikátu EU vystaveném třetí stranou na stránce **Deník vstupního certifikátu**.
 
 ### <a name="creating-an-eu-entry-certificate-automatically-or-manually"></a>Vytváření vstupního certifikátu EU automaticky nebo ručně
 

@@ -109,13 +109,13 @@ Chcete-li použít jednoho z kontrolorů výdajů, které jste nastavili ve work
 <a name="see-also"></a>Viz také
 --------
 
-[Vytvoření požadavků pro spotřebu (úkol guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Vytvořeni požadavku na využití (Průvodce záznamem úloh)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
 [Definování workflowů pracovních postupů pro nákupní žádanky](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Procurement and sourcing workflows](procurement-sourcing-workflows.md)
+[Workflowy zásobování a zdrojů](procurement-sourcing-workflows.md)
 
-[Purchase requisition overview](purchase-requisitions-overview.md)
+[Přehled nákupních žádanek](purchase-requisitions-overview.md)
 
 
 

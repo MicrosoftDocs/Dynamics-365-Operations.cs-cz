@@ -1,6 +1,6 @@
 ---
-title: "Jediný doklad a přecenění měny aktualizace pro Microsoft Dynamics 365 pro verzi operace 1611"
-description: "Některé organizace zadejte deníků, které obsahují jeden doklad, který má více než jednoho odběratele nebo dodavatele a také spustit pohledávky nebo procesu přecenění cizí měny platí účty. Toto téma popisuje kroky, které tyto organizace by měla provést při upgradu na Microsoft Dynamics 365 pro verzi operace 1611."
+title: "Upgrade týkající se jednoho dokladu a přecenění měny pro aplikaci Microsoft Dynamics 365 for Operations verze 1611"
+description: "Některé organizace zadávají deníky obsahující jeden doklad, který má více než jednoho odběratele nebo dodavatele, a rovněž spouští proces přecenění cizí měny pohledávek a závazků. Toto téma popisuje kroky, podle kterých by tyto organizace měly postupovat při upgradu na aplikaci Microsoft Dynamics 365 for Operations verze 1611."
 author: twheeloc
 manager: AnnBe
 ms.date: 2016-12-28 16 - 04 - 17
@@ -24,15 +24,15 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="single-voucher-and-currency-revaluation-upgrade-for-microsoft-dynamics-365-for-operations-version-1611"></a>Jediný doklad a přecenění měny aktualizace pro Microsoft Dynamics 365 pro verzi operace 1611
+# <a name="single-voucher-and-currency-revaluation-upgrade-for-microsoft-dynamics-365-for-operations-version-1611"></a>Upgrade týkající se jednoho dokladu a přecenění měny pro aplikaci Microsoft Dynamics 365 for Operations verze 1611
 
-Některé organizace zadejte deníků, které obsahují jeden doklad, který má více než jednoho odběratele nebo dodavatele a také spustit pohledávky nebo procesu přecenění cizí měny platí účty. Toto téma popisuje kroky, které tyto organizace by měla provést při upgradu na Microsoft Dynamics 365 pro verzi operace 1611.
+Některé organizace zadávají deníky obsahující jeden doklad, který má více než jednoho odběratele nebo dodavatele, a rovněž spouští proces přecenění cizí měny pohledávek a závazků. Toto téma popisuje kroky, podle kterých by tyto organizace měly postupovat při upgradu na aplikaci Microsoft Dynamics 365 for Operations verze 1611.
 
-Při upgradu na Microsoft Dynamics 365 pro verzi operace 1611, postupujte následujícím způsobem.
+Při upgradu na Microsoft Dynamics 365 for Operations verzi 1611 postupujte následujícím způsobem.
 
-1.  Před inovací na 365 Dynamics pro operace spuštění procesů přecenění cizí měny pro účty pohledávek a závazků. Nastavit **metoda** na **datum faktury**. Transakce přecenění je vytvořen, který vrátí zpět poslední přecenění cizí měny. Proto se oceňují v jejich původní zúčtovací měnu otevřené transakce.
-2.  Upgrade verze operace 1611 Dynamics 365.
-3.  Pohledávek a účty závazků cizí měny přecenění procesy spusťte znovu. Tentokrát nastavte **metoda** na **standardní**. Nové transakce přecenění je vytvořen, který je založen na aktuálních směnných kurzů. Tato transakce zaznamená nerealizovaný zisk/ztráta a správné součtový účet hlavní knihy.
+1.  Před upgradem na aplikaci Dynamics 365 for Operations spusťte procesy přecenění cizí měny pro pohledávky a závazky. Pole **Metoda** nastavte na **Datum faktury**. Transakce přecenění je vytvořena, aby vrátila zpět poslední přecenění cizí měny. Proto se otevřené transakce oceňují v jejich původní zúčtovací měně.
+2.  Upgrade na Dynamics 365 for Operations verze 1611.
+3.  Spusťte znovu procesy přecenění cizí měny pohledávek a závazků Tentokrát nastavte pole **Metoda** na **Standardní**. Vytvoří se nová transakce přecenění, která je založena na aktuálních směnných kurzech. Tato transakce zaznamená nerealizovaný zisk/ztrátu a správný součtový účet hlavní knihy.
 
 
 

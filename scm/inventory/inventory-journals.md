@@ -75,7 +75,7 @@ Deníky výrobních vstupů fungují jako deníky doručení položek, ale použ
 
 ### <a name="counting"></a>Inventura
 
-Deníky inventur umožňují opravu aktuálních zásob na skladě, které jsou evidovány pro položky nebo skupiny položek, a následné zaúčtování skutečného fyzického počtu tak, aby bylo možné provést úpravy potřebné kvůli odsouhlasení rozdílů. Zásady inventury lze přidružit k inventurním skupinám pro usnadnění seskupení položek s různou charakteristikou tak, aby tyto položky mohly být zahrnuty do deníku inventur. Například můžete nastavením inventurních skupin provádět inventuru položek, které mají určité frekvence, nebo provádět inventuru položek, když zásoba klesne na danou úroveň. Informace o tom, jak definovat inventurní skupiny, naleznete v [definovat inventury procesy (úkol guide)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
+Deníky inventur umožňují opravu aktuálních zásob na skladě, které jsou evidovány pro položky nebo skupiny položek, a následné zaúčtování skutečného fyzického počtu tak, aby bylo možné provést úpravy potřebné kvůli odsouhlasení rozdílů. Zásady inventury lze přidružit k inventurním skupinám pro usnadnění seskupení položek s různou charakteristikou tak, aby tyto položky mohly být zahrnuty do deníku inventur. Například můžete nastavením inventurních skupin provádět inventuru položek, které mají určité frekvence, nebo provádět inventuru položek, když zásoba klesne na danou úroveň. Více informací o definici inventurních skupin naleznete v tématu [Definování procesů inventur zásob (Průvodce záznamem úloh)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
 
 ### <a name="tag-counting"></a>Inventura podle štítků
 

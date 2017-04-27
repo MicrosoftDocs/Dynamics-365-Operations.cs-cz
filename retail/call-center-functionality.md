@@ -1,6 +1,6 @@
 ---
 title: "Funkce kontaktního střediska"
-description: "Tento článek obsahuje přehled volání Centrum prodejní funkce v Microsoft Dynamics 365 pro operace."
+description: "Tento článek obsahuje přehled o prodejní funkci kontaktního střediska v aplikaci Microsoft Dynamics 365 for Operations."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16361
 ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
 ms.search.region: global
@@ -31,9 +31,9 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](includes/banner.md)]
 
 
-Tento článek obsahuje přehled volání Centrum prodejní funkce v Microsoft Dynamics 365 pro operace.
+Tento článek obsahuje přehled o prodejní funkci kontaktního střediska v aplikaci Microsoft Dynamics 365 for Operations.
 
-Maloobchodní a velkoobchodní prodej v aplikaci Microsoft Dynamics jako typ kanálu podporuje také kontaktní střediska. V kontaktním středisku pracovníci zpracovávají zakázky od odběratele telefonicky a vytvářejí prodejní objednávky. Funkce kontaktního střediska obsahuje funkce, které slouží k usnadnění telefonních objednávek a odběratelského servisu během celého procesu splnění zakázek. Například pracovníci centra volání můžete zadat informace o platbě přímo do prodejní objednávky a můžete zobrazit podrobný souhrn poplatky a platby před odesláním objednávky. Pracovníci mají také možnosti pro kontrolu cen a přístup k různým datům o odběratelích, produktech a cenách ze stránky **Prodejní objednávka**. Kontaktní střediska mají navíc také rozšířenou funkci ke sledování stavu historie a objednávek. Každé kontaktní středisko může mít vlastní uživatele, platební metody, cenové skupiny, finanční dimenze a způsoby dodání. Tyto možnosti lze nakonfigurovat při vytváření kontaktního střediska. Kromě toho můžete využít stránku **Kontaktní středisko** pro povolení nebo zakázání následujících skupin funkcí, které jsou jedinečné pro kontaktní střediska:
+Maloobchodní a velkoobchodní prodej v aplikaci Microsoft Dynamics jako typ kanálu podporuje také kontaktní střediska. V kontaktním středisku pracovníci zpracovávají zakázky od odběratele telefonicky a vytvářejí prodejní objednávky. Funkce kontaktního střediska obsahuje funkce, které slouží k usnadnění telefonních objednávek a odběratelského servisu během celého procesu splnění zakázek. Například mohou pracovníci kontaktního střediska přímo zadat informace o platbách do prodejní objednávky a před odesláním objednávky mohou zobrazit podrobný přehled nákladů a plateb. Pracovníci mají také možnosti pro kontrolu cen a přístup k různým datům o odběratelích, produktech a cenách ze stránky **Prodejní objednávka**. Kontaktní střediska mají navíc také rozšířenou funkci ke sledování stavu historie a objednávek. Každé kontaktní středisko může mít vlastní uživatele, platební metody, cenové skupiny, finanční dimenze a způsoby dodání. Tyto možnosti lze nakonfigurovat při vytváření kontaktního střediska. Kromě toho můžete využít stránku **Kontaktní středisko** pro povolení nebo zakázání následujících skupin funkcí, které jsou jedinečné pro kontaktní střediska:
 
 -   **Dokončení objednávky** – tato skupina obsahuje funkce, které se vztahují k platbám a dokončení objednávek na stránce **Prodejní objednávka**.
 -   **Směrovaný prodej** – tato skupina obsahuje funkce, které souvisejí se zdrojovými kódy, skripty a požadavky na katalog.

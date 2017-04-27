@@ -1,6 +1,6 @@
 ---
-title: "Další konsolidační účty a skupiny konsolidačních účtů"
-description: "Toto téma obsahuje informace o další konsolidační účty a skupiny konsolidačních účtů a vysvětluje způsob jejich použití v aplikaci Microsoft Dynamics 365 pro operace."
+title: "Skupiny konsolidačních účtů a další konsolidační účty"
+description: "Toto téma obsahuje informace o skupinách konsolidačních účtů a další konsolidačních účtech a vysvětluje způsob jejich použití v aplikaci Microsoft Dynamics 365 for Operations."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,30 +24,30 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Další konsolidační účty a skupiny konsolidačních účtů
+# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Skupiny konsolidačních účtů a další konsolidační účty
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma obsahuje informace o další konsolidační účty a skupiny konsolidačních účtů a vysvětluje způsob jejich použití v aplikaci Microsoft Dynamics 365 pro operace.
+Toto téma obsahuje informace o skupinách konsolidačních účtů a další konsolidačních účtech a vysvětluje způsob jejich použití v aplikaci Microsoft Dynamics 365 for Operations.
 
 <a name="consolidation-account-groups"></a>Skupiny konsolidačních účtů
 ----------------------------
 
-Skupiny konsolidačních účtů umožňují vytvářet skupiny účtů, které chcete použít ke sloučení dat. Nejčastěji používané skupinu konsolidačních účtů představuje nařízené vládou účtové osnovy nebo mapování účtů do skupiny, který je definován v sídle společnosti. Můžete najít konsolidace skupiny účtů v **nastavení** oblast **konsolidace** modulu. Při přidání nové skupiny zadejte jedinečný identifikátor pro skupinu účtů a název.
+Skupiny konsolidačních účtů umožňují vytvářet skupiny účtů, které chcete použít pro konsolidaci dat. Nejčastěji představuje skupina konsolidačních účtů vládou nařízené účtové osnovy nebo mapování účtů do skupiny, která je definována ústředím společnosti. Skupiny konsolidačních účtů naleznete v oblasti **Nastavení** modulu **Konsolidace**. Při přidání nové skupiny zadejte jedinečný identifikátor pro skupinu účtů a název.
 
 ## <a name="additional-consolidation-accounts"></a>Další konsolidační účty
-Další konsolidační účty umožňují přiřadit účet z existující účtové osnově skupinu konsolidačních účtů. Potom zadáte hodnotu účtu konsolidace a název. 
+Další konsolidační účty umožňují přiřadit účet z existující účtové osnovy do skupiny konsolidačních účtů. Potom můžete zadat hodnotu a název konsolidačního účtu. 
 
-Můžete najít další konsolidační účty v **nastavení** oblast **konsolidace** modulu. Při vytváření nového účtu konsolidace, je nutné zadat následující informace:
+Další konsolidační účty naleznete v oblasti **Nastavení** modulu **Konsolidace**. Při vytváření nového konsolidačního účtu je nutné zadat následující informace:
 
--   **Hlavní účet** – toto pole je vyhledávání, které jsou uvedeny hlavní účty, které jsou založeny na účtové osnovy, které jste vybrali na stránce. Vyberete-li účet, název je automaticky zadána **název účtu hlavní** pole.
--   **Skupinu konsolidačních účtů** – toto pole použít k určení skupiny přiřadit účet. Při konsolidaci dvěma různými způsoby, je nutné přidat stejný účet pro všechny skupiny čtyř konsolidačních účtů.
--   **Konsolidační účet** – zadejte hodnotu konsolidační účet. Tato hodnota nemusí být účet z účtové osnovy. Může být libovolná hodnota, které požadujete.
--   **Název účtu konsolidace** – zadejte název účtu, který chcete zobrazit v dotazech a sestavách.
--   **Úrovně SAT** – toto pole slouží k oznámení výpisy z účtu mexických finančnímu úřadu. 
+-   **Hlavní účet** – toto pole je vyhledávání, které zobrazí všechny hlavní účty, které jsou založeny na účtových osnovách vybraných na stránce. Vyberete-li účet, název je automaticky zadán do pole **Název hlavního účtu**.
+-   **Skupinu konsolidačních účtů** – toto pole použijte k určení skupiny, do které má být účet přiřazen. Při konsolidaci dvěma různými způsoby je nutné přidat stejný účet pro všechny čtyři skupiny konsolidačních účtů.
+-   **Konsolidační účet** – zadejte hodnotu konsolidačního účtu. Tato hodnota nemusí být účet z účtové osnovy. Může to být libovolná požadovaná hodnota.
+-   **Název konsolidačního účtu** – zadejte název účtu tak, jak se bude objevovat v dotazech a sestavách.
+-   **Úrovně SAT** – toto pole slouží k oznámení výpisů z účtů pro mexické finanční úřady. 
 
-Po dokončení vytváření skupiny konsolidačních účtů a další konsolidační účty můžete konsolidovat online procesu vyberte skupinu.
+Když dokončíte vytváření skupin konsolidačních účtů a dalších konsolidačních účtů, můžete zvolit skupinu v procesu online konsolidace.
 
 
 

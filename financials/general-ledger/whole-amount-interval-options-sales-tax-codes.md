@@ -59,10 +59,10 @@ Prodejní daň bude vypočtena ve výši celé zdanitelné částky.
 
 | Zdanitelná částka (cena) | Výpočet    | DPH |
 |------------------------|----------------|-----------|
-| 35,00                  | 35.00 \* 0.30  | 10,50 USD     |
-| 50,00                  | 50.00 \* 0.30  | 15:00     |
-| 85,00                  | 85.00 \* 0.20  | 17,00     |
-| 305,00                 | 305.00 \* 0.10 | 30,50     |
+| 35,00                  | 35,00 \* 0,30  | 10,50 USD     |
+| 50,00                  | 50,00 \* 0,30  | 15:00     |
+| 85,00                  | 85,00 \* 0,20  | 17,00     |
+| 305,00                 | 305,00 \* 0,10 | 30,50     |
 
 ## <a name="example-interval-method-of-calculation"></a> Příklad: výpočet metodou intervalu
 Na stránce Hodnoty jsou sazby DPH nastaveny v následujících intervalech:
@@ -78,14 +78,14 @@ Prodejní daň je součtem částek daně, které byly vypočteny pro každou č
 
 | Zdanitelná částka (cena) | Výpočet                                                               | DPH |
 |------------------------|---------------------------------------------------------------------------|-----------|
-| 35,00                  | 35.00 \* 0.30                                                             | 10,50 USD     |
-| 50,00                  | 50.00 \* 0.30                                                             | 15:00     |
-| 85,00                  | (50.00 \* 0.30 = 15.00) + (35.00 \* 0.20 = 7.00)                          | 22,00     |
-| 305,00                 | (50.00 \* 0.30 = 15.00) + (50.00 \* 0.20 = 10.00) + (205 \* 0.10 = 20.50) | 45,50     |
+| 35,00                  | 35,00 \* 0,30                                                             | 10,50 USD     |
+| 50,00                  | 50,00 \* 0,30                                                             | 15:00     |
+| 85,00                  | (50,00 \* 0,30 = 15,00) + (35,00 \* 0,20 = 7,00)                          | 22,00     |
+| 305,00                 | (50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50) | 45,50     |
 
  
 
-Další informace naleznete v tématu [určení sazby prodejní daně podle pole základ marže a metoda výpočtu](marginal-base-field.md).
+Více informací najdete v části [Určení sazby DPH na základě polí Základ marže a Metoda výpočtu](marginal-base-field.md).
 
 
 
