@@ -1,6 +1,6 @@
 ---
-title: "Úvod do Dynamics 365 pro operace"
-description: "365 Microsoft Dynamics pro operace je aplikace obchodní společnosti Microsoft pro podniky. Tato stránka umožňuje informace a začít používat produkt."
+title: "Úvod do aplikace Dynamics 365 for Operations"
+description: "Microsoft Dynamics 365 for Operations je obchodní aplikace společnosti Microsoft pro podniky. Díky této stránce se seznámíte s produktem a začnete ho používat."
 author: margoc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -23,13 +23,13 @@ ms.lasthandoff: 04/12/2017
 
 
 ---
-# <a name="introduction-to-dynamics-365-for-operations"></a>Úvod do Dynamics 365 pro operace
+# <a name="introduction-to-dynamics-365-for-operations"></a>Úvod do aplikace Dynamics 365 for Operations
 
 [!include[banner](includes/banner.md)]
 
-365 Microsoft Dynamics pro operace je aplikace obchodní společnosti Microsoft pro podniky. Umožňuje uživatelům rychle provádět lepší rozhodnutí prostřednictvím inteligentní uživatelské rozhraní, které poskytuje přístup k náhledy v reálném čase a data. Umožňuje firmám transformace a innnovate tím, že přiměje prověřenou obchodní logiku, umožňující rychlejší změnit návrh podnikové procesy. Poskytuje podnikům možnost růst vlastním tempem a obchodovat téměř kdekoli a kdykoli, což jim rozšířit jejich operací globálně k potřebám podniku. 
+Microsoft Dynamics 365 for Operations je obchodní aplikace společnosti Microsoft pro podniky. Umožňuje uživatelům rychle provádět lepší rozhodnutí prostřednictvím inteligentního uživatelského rozhraní, které poskytuje přístup k náhledům a datům v reálném čase. Umožňuje firmám transformovat a inovovat prostřednictvím prověřené obchodní logiky, díky které lze přepracovávat obchodní procesy mnohem rychleji. Poskytuje podnikům flexibilitu růst vlastním tempem a obchodovat téměř kdekoli a kdykoli, což jim umožní globálně rozšířit svou působnost za účelem plnění obchodních potřeb. 
 
-Tato uživatelská příručka může vám pomůže naučit aby 365 Dynamics pro operace pro vaši organizaci.    
+Tato uživatelská příručka vám pomůže pochopit, jak přimět aplikaci Dynamics 365 for Operations, aby pracovala pro vaši organizaci.    
 
 <table>
 <colgroup>
@@ -38,52 +38,52 @@ Tato uživatelská příručka může vám pomůže naučit aby 365 Dynamics pro
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="get-started/onboarding-home.md">Nově příchozího organizace</a></p>
+<td><p><a href="get-started/onboarding-home.md">Adaptace do vaší organizace</a></p>
 <p>Finance</p>
-<ul><li><a href="financials/accounts-payable/accounts-payable.md">Accounts payable</a></li>
-<li><a href="financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></li>
-<li><a href="financials/budgeting/budgeting-overview.md">Budgeting</a></li>
-<li><a href="financials/cash-bank-management/cash-bank-management.md">Cash and bank management</a></li>
-<li><a href="financials/cost-accounting/cost-accounting-home-page.md">Cost accounting</a></li>
-<li><a href="financials/fixed-assets/fixed-assets.md">Fixed assets</a></li>
-<li><a href="financials/general-ledger/general-ledger.md">General ledger</a></li>
-<li><a href="financials/project-management/overview-project-management-accounting.md">Project management</a></li>
-<li><a href="financials/public-sector/public-sector-functionality.md">Public sector</a></li></ul>
-<p><a href="dev-itpro/lcs-solutions/country-region.md">Regionální funkce</a></p>
+<ul><li><a href="financials/accounts-payable/accounts-payable.md">Závazky</a></li>
+<li><a href="financials/accounts-receivable/accounts-receivable.md">Pohledávky</a></li>
+<li><a href="financials/budgeting/budgeting-overview.md">Rozpočtování</a></li>
+<li><a href="financials/cash-bank-management/cash-bank-management.md">Pokladna a banka</a></li>
+<li><a href="financials/cost-accounting/cost-accounting-home-page.md">Nákladové účetnictví</a></li>
+<li><a href="financials/fixed-assets/fixed-assets.md">Dlouhodobý majetek</a></li>
+<li><a href="financials/general-ledger/general-ledger.md">Hlavní kniha</a></li>
+<li><a href="financials/project-management/overview-project-management-accounting.md">Správa projektu</a></li>
+<li><a href="financials/public-sector/public-sector-functionality.md">Veřejný sektor</a></li></ul>
+<p><a href="dev-itpro/lcs-solutions/country-region.md">Funkce specifické pro oblast</a></p>
 <p>Lidské zdroje</p>
    <ul>
-  <li><a href="human-resources/departments-jobs-positions.md">HR strategie</a></li>
-  <li><a href="human-resources/manage-recruiting-process.md">Náboru, přijímání a stimulují</a></li>
+  <li><a href="human-resources/departments-jobs-positions.md">Strategie lidských zdrojů</a></li>
+  <li><a href="human-resources/manage-recruiting-process.md">Nábor, přijímání a motivace</a></li>
   <li><a href="human-resources/performance-management-overview.md">Školení zaměstnanců</a></li>
-  <li><a href="human-resources/manage-benefit-program.md">Benefits</a></li>
-  <li><a href="human-resources/questionnaires.md">Questionnaire</a></li>
-  <li><a href="human-resources/localizations/noam-usa-payroll.md">Funkce USA</a></li>
+  <li><a href="human-resources/manage-benefit-program.md">Zaměstnanecké výhody</a></li>
+  <li><a href="human-resources/questionnaires.md">Dotazník</a></li>
+  <li><a href="human-resources/localizations/noam-usa-payroll.md">Funkce pro USA</a></li>
 </ul></td>
   <td>
   <p>Maloobchodní a velkoobchodní prodej</p>
   <ul>
-<li><a href="retail/call-center-functionality.md">Call center</a></li>
-  <li><a href="retail/define-maintain-retail-channels.md">Channel setup and management</a></li>
+<li><a href="retail/call-center-functionality.md">Kontaktní středisko</a></li>
+  <li><a href="retail/define-maintain-retail-channels.md">Nastavení a správa kanálů</a></li>
   <li><a href="retail/define-maintain-channel-clients-registers-hw-stations.md">MPOS a Cloud POS</a></li>
-  <li><a href="retail/dev-itpro/dev-retail-home-page.md">Správa a maloobchodní developer</a></li></ul>
+  <li><a href="retail/dev-itpro/dev-retail-home-page.md">Vývojář a správa maloobchodu </a></li></ul>
   <p>Správa dodavatelsko-odběratelského řetězce</p>
 <ul>
-<li><a href="supply-chain/cost-management/costing-sheets.md">Cost management</a></li>
-  <li><a href="supply-chain/inventory/inventory-locations.md">Inventory management</a></li>
-  <li><a href="supply-chain/master-planning/master-plans.md">Master planning</a></li>
-  <li><a href="supply-chain/procurement/procurement-sourcing-overview.md">Procurement and sourcing</a></li>
-  <li><a href="supply-chain/pim/set-up-maintain-product-configuration-model.md">Product information management</a></li>
-  <li><a href="supply-chain/production-control/create-production-orders">Production control</a></li>
-  <li><a href="supply-chain/sales-marketing/overview-sales-marketing.md">Sales and marketing</a></li>
-  <li><a href="supply-chain/transportation/transportation-management-overview.md">Transportation management</a></li>
-  <li><a href="supply-chain/warehousing/warehouse-configuration.md">Warehouse management</a></li></ul>
-  <p>Vývojář a správce funkce.</p>
-  <ul><li><a href="dev-itpro/analytics/analytics.md">Analytics</a></li>
-  <li><a href="dev-itpro/data-entities/data-entities.md">Data entities</a></li>
+<li><a href="supply-chain/cost-management/costing-sheets.md">Správa nákladů</a></li>
+  <li><a href="supply-chain/inventory/inventory-locations.md">Řízení zásob</a></li>
+  <li><a href="supply-chain/master-planning/master-plans.md">Hlavní plánování</a></li>
+  <li><a href="supply-chain/procurement/procurement-sourcing-overview.md">Zásobování a zdroje</a></li>
+  <li><a href="supply-chain/pim/set-up-maintain-product-configuration-model.md">Řízení informací o produktech</a></li>
+  <li><a href="supply-chain/production-control/create-production-orders">Řízení výroby</a></li>
+  <li><a href="supply-chain/sales-marketing/overview-sales-marketing.md">Prodej a marketing</a></li>
+  <li><a href="supply-chain/transportation/transportation-management-overview.md">Správa přepravy</a></li>
+  <li><a href="supply-chain/warehousing/warehouse-configuration.md">Řízení skladu</a></li></ul>
+  <p>Funkce vývojáře a správce</p>
+  <ul><li><a href="dev-itpro/analytics/analytics.md">Analytika</a></li>
+  <li><a href="dev-itpro/data-entities/data-entities.md">Datové entity</a></li>
   <li><a href="dev-itpro/mobile-apps/mobile-platform.md">Mobilní aplikace</a></li>
-  <li><a href="dev-itpro/office-integration/office-integration.md">Office integration</a></li>
-  <li><a href="dev-itpro/sysadmin/system-administration-home-page.md">Administration</a></li>
-  <li><a href="dev-itpro/dev-tools/developer-home-page.md">Developer tools</a></li></ul></td>
+  <li><a href="dev-itpro/office-integration/office-integration.md">Integrace s Office</a></li>
+  <li><a href="dev-itpro/sysadmin/system-administration-home-page.md">Správa</a></li>
+  <li><a href="dev-itpro/dev-tools/developer-home-page.md">Nástroje pro vývojáře</a></li></ul></td>
 </tr>
 </tbody>
 </table>

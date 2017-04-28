@@ -1,70 +1,70 @@
 # [Úvod](index.md)
 # Kontaktní středisko
-## [Přehled centra volání](call-center-functionality.md)
-## [Call center katalogy](call-center-catalogs.md)
-## [Vytvořit katalog Centrum volání](create-call-center-catalogs.md)
-## [Set up fraud alerts](set-up-fraud-alerts.md)
-## [Set up order processing options](set-up-order-processing-options.md)
-## [Set up a continuity program for a call center](set-up-continuity-program.md)
-## [Order holds](work-with-order-holds.md)
-## [Payment options](work-with-payments.md)
-# Správa a nastavení kanálu
-## [Inicializovat data osiva v prostředí maloobchodu](enable-configure-retail-functionality.md)
-## [Definovat maloobchodní sítě](define-maintain-retail-channels.md)
-## [Online store overview](online-stores.md)
-## [Konfiguraci a instalaci maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md)
-## [Retail time and attendance](retail-time-attendance.md)
-# Moderní pokladní místa MPOS a Cloud POS
-## Hardwarová periferní zařízení
-### [Přehled maloobchodní periferní zařízení](retail-peripherals-overview.md)
-### [Microsoft tested POS hardware peripherals](microsoft-tested-pos-hardware-peripherals.md)
-### [Definovat a spravovat klienty kanálu, registry a hardware stanice](define-maintain-channel-clients-registers-hw-stations.md)
+## [Přehled kontaktního střediska](call-center-functionality.md)
+## [Katalogy kontaktního střediska](call-center-catalogs.md)
+## [Vytvoření katalogu kontaktního střediska](create-call-center-catalogs.md)
+## [Nastavení výstrah u podvodů](set-up-fraud-alerts.md)
+## [Nastavení možností zpracování objednávky](set-up-order-processing-options.md)
+## [Nastavení programu kontinuity pro kontaktní středisko](set-up-continuity-program.md)
+## [Blokování objednávky](work-with-order-holds.md)
+## [Možnosti platby](work-with-payments.md)
+# Nastavení a správa kanálů
+## [Inicializace počátečních dat v prostředí maloobchodu](enable-configure-retail-functionality.md)
+## [Definování maloobchodních sítí](define-maintain-retail-channels.md)
+## [Přehled online obchodu](online-stores.md)
+## [Konfigurace a instalace hardwarové stanice pro obchod](retail-hardware-station-configuration-installation.md)
+## [Časové pásmo a návštěvnost maloobchodu](retail-time-attendance.md)
+# Domovská stránka Moderního pokladního místa MPOS a Cloud POS
+## Hardware a periferní zařízení
+### [Přehled maloobchodních zařízení](retail-peripherals-overview.md)
+### [Hardwarová periferní zařízení POS testovaná společností Microsoft](microsoft-tested-pos-hardware-peripherals.md)
+### [Definování a správa klientů z obchodních kanálů, pokladen a hardwarových stanic](define-maintain-channel-clients-registers-hw-stations.md)
 ## Rozložení obrazovky
-### [Nastavení rozložení obrazovky pro POS](pos-screen-layouts.md)
-### [Install the Retail POS Layout designer](install-pos-layout-designer.md)
-### [POS application and user language settings](pos-application-user-language-settings.md)
+### [Konfigurace rozložení obrazovky pro POS](pos-screen-layouts.md)
+### [Instalace návrháře rozložení Retail POS](install-pos-layout-designer.md)
+### [Nastavení aplikace POS a uživatelského jazyka](pos-application-user-language-settings.md)
 ### [Nastavení obrázků pro MPOS](set-up-manage-images-retail-mpos.md)
-## [Přehled kódů Info](info-codes-retail.md) 
+## [Přehled informačních kódů](info-codes-retail.md) 
 ## Doporučení produktu
-### [Přehled produktu individuální doporučení](personalized-product-recommendations.md)
-### [Přidání ovládacího prvku doporučení zařízení POS](add-recommendations-control-pos-screen.md)
-## [Offline funkce POS](pos-offline-functionality.md)
-## [Shift and cash drawer management](shift-drawer-management.md)
-## Objednávky odběratele
+### [Přehled doporučení přizpůsobeného produktu](personalized-product-recommendations.md)
+### [Přidání řízení doporučení na zařízení POS](add-recommendations-control-pos-screen.md)
+## [Funkce Offline POS](pos-offline-functionality.md)
+## [Správa směn a zásuvky s hotovostí](shift-drawer-management.md)
+## Objednávky zákazníka
 ### [Přehled objednávek zákazníka](customer-orders-overview.md)
-### [Hybrid objednávky zákazníka](hybrid-customer-orders.md)
-## Prodejcům
-### [Přehled provizí v Retail POS pomocí prodejní skupiny](pos-sales-groups-track-commissions.md)
+### [Hybridní objednávky zákazníka](hybrid-customer-orders.md)
+## Zaměstnanci obchodu
+### [Sledování provizí v POS pomocí prodejních skupin](pos-sales-groups-track-commissions.md)
 ## Aktivace zařízení
-### [Konfiguraci a instalaci MPOS](retail-modern-pos-device-activation.md)
-### [Set up extended logon for Cloud POS and MPOS](extended-logon.md)
-### [Spravovat prodejní účty a zařízení z ústředí](set-up-activation-accounts-validate-devices-hq.md)
+### [Instalace a konfigurace MPOS](retail-modern-pos-device-activation.md)
+### [Nastavení rozšířeného přihlášení pro cloudový POS a MPOS](extended-logon.md)
+### [Správa maloobchodních účtů a zařízení z centrály](set-up-activation-accounts-validate-devices-hq.md)
 ## Účtenky
 ### [Nastavení šablon účtenek](receipt-templates-printing.md) 
-### [Odeslání účtenky e-mailem z MPOS](email-receipts.md)
-# Sledování a analýza
-## [Monitor sales and margin performance](monitor-sales-margin-performance.md)
-## [Analyze sales trends and patterns](analyze-sales-trends-patterns.md)
-## [Assess sales performance by product](sales-performance-products.md)
-## [Assess customer and product profitability](assess-customer-product-profitability.md)
-## [Analyze store performance](store-performance-information.md)
-## [Set up RFM analysis](set-up-rfm-analysis.md)
-# Úpravy ceny a slevy
-## [Price adjustments and discounts](price-adjustments-discounts.md)
-## [Určit optimální kombinací překrývajících se slevy](optimal-combination-overlapping-discounts.md)
-## [Define channel-specific discounts](define-channel-specific-discounts.md)
-# Produkty a prodeje
-## [Retail hierarchies](retail-hierarchies.md)
-## [Create and manage attributes](create-manage-attributes.md)
-## [Set up retail products](set-up-retail-products.md)
-## [Set up bar codes](set-up-bar-codes.md)
+### [Odesílání účtenek e-mailem z MPOS](email-receipts.md)
+# Monitorování a analýza
+## [Monitorování výkonnosti z hlediska prodejů a marží](monitor-sales-margin-performance.md)
+## [Analýza trendů a vzorců prodeje](analyze-sales-trends-patterns.md)
+## [Posouzení prodejních výsledků podle produktu](sales-performance-products.md)
+## [Vyhodnocení ziskovosti z hlediska odběratelů a produktů](assess-customer-product-profitability.md)
+## [Analýza výkonnosti obchodu](store-performance-information.md)
+## [Nastavení analýzy RFM](set-up-rfm-analysis.md)
+# Úpravy slev a cen
+## [Úpravy ceny a slevy](price-adjustments-discounts.md)
+## [Určení optimální kombinace překrývajících se slev](optimal-combination-overlapping-discounts.md)
+## [Definovat slevy specifické pro kanál](define-channel-specific-discounts.md)
+# Produkty a reklamní prodej
+## [Hierarchie maloobchodu](retail-hierarchies.md)
+## [Vytvoření a správa atributů](create-manage-attributes.md)
+## [Nastavení maloobchodních produktů](set-up-retail-products.md)
+## [Nastavení čárových kódů](set-up-bar-codes.md)
 ## [Nastavení masek čárových kódů](set-up-bar-code-masks.md)
-## [Set up assortments](set-up-assortments.md)
+## [Nastavení sortimentu](set-up-assortments.md)
 # Loajalita
-## [Vytvořit zákaznický věrnostní program](set-up-customer-loyalty-program.md)
+## [Nastavení zákaznického věrnostního programu](set-up-customer-loyalty-program.md)
 # Zásoby
-## [Manage store inventory](work-with-store-inventory.md)
+## [Správa zásob obchodu](work-with-store-inventory.md)
 # Základy obchodování
-## [Přehled produktu essentials Commerce](commerce-essentials.md)
-## [Organizace a organizační hierarchie (Commerce essentials)](organizational-hierarchies-commerce-essentials.md)
-# [V oblasti informačních technologií a vývojáře obsahu](dev-itpro/TOC.md)
+## [Přehled základů obchodování](commerce-essentials.md)
+## [Organizace a hierarchie organizace (Základy obchodování)](organizational-hierarchies-commerce-essentials.md)
+# [Obsah pro odborníky na IT a vývojáře](dev-itpro/TOC.md)

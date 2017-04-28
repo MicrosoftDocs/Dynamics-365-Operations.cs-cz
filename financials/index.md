@@ -31,15 +31,15 @@ ms.lasthandoff: 04/12/2017
 Toto téma obsahuje seznam témat nápovědy a další zdroje pro funkce správy financí v aplikaci Microsoft Dynamics 365 for Operations. 
 
 Vyberte oblast funkce, o které chcete získat informace.
-- [Accounts payable](accounts-payable\accounts-payable.md) 
-- [Accounts receivable](accounts-receivable\accounts-receivable.md) 
-- [Cash and bank management](cash-bank-management\cash-bank-management.md)
-- [Cost accounting](cost-accounting\cost-accounting-home-page.md)
-- [Fixed assets](fixed-assets\fixed-assets.md)
-- [General ledger](general-ledger\general-ledger.md) 
-- [Project management](project-management\overview-project-management-accounting.md)
-- [Public sector](public-sector\public-sector-functionality.md) 
-- [Budgeting](budgeting\budgeting-overview.md) 
+- [Závazky](accounts-payable\accounts-payable.md) 
+- [Pohledávky](accounts-receivable\accounts-receivable.md) 
+- [Pokladna a banka](cash-bank-management\cash-bank-management.md)
+- [Nákladové účetnictví](cost-accounting\cost-accounting-home-page.md)
+- [Dlouhodobý majetek](fixed-assets\fixed-assets.md)
+- [Hlavní kniha](general-ledger\general-ledger.md) 
+- [Správa projektu](project-management\overview-project-management-accounting.md)
+- [Veřejný sektor](public-sector\public-sector-functionality.md) 
+- [Rozpočtování](budgeting\budgeting-overview.md) 
 
 
 

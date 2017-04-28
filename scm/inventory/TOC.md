@@ -1,21 +1,21 @@
 # Vytvoření rozložení skladu
-# Indbound proces
-# Výstupní proces
+# Příchozí proces
+# Odchozí proces
 # Nastavení sledování zásob
-## [Inventory journals](inventory-journals.md)
-## [Inventory locations](inventory-locations.md)
-## [Inventory statuses](inventory-statuses.md)
-## [Rezervovat množství zásob](reserve-inventory-quantities.md)
-## [Stejné dávky pro prodejní objednávky rezervovat](../sales-marketing/reserve-same-batch-sales-order.md)
+## [Skladové deníky](inventory-journals.md)
+## [Skladová místa](inventory-locations.md)
+## [Stavy zásob](inventory-statuses.md)
+## [Rezervace skladového množství](reserve-inventory-quantities.md)
+## [Rezervace stejné dávky pro prodejní objednávku](../sales-marketing/reserve-same-batch-sales-order.md)
 # Zásoby dodávky
-## [Consignment](consignment.md)
-## [Vytvořit zásilku](set-up-consignment.md)
+## [Zásilka](consignment.md)
+## [Nastavení zásilky](set-up-consignment.md)
 # Správa kvality
-## [Enable quality management](enable-quality-management.md)
-## [Inventory blocking](inventory-blocking.md)
-## [Řízení neshod](enable-nonconformance-management.md)
-## [Quarantine order](quarantine-orders.md)
-## [Proces řízení kvality](quality-management-processes.md)
-# Trasování zboží a dávkové úlohy
-## [Sloučit skladové dávky](merge-inventory-batches.md)
-## [Trasování zboží a suroviny](trace-items-raw-materials-inventory-production-sales.md)
+## [Povolení správy kvality](enable-quality-management.md)
+## [Blokování zásob](inventory-blocking.md)
+## [Řízení neshody](enable-nonconformance-management.md)
+## [Karanténní příkaz](quarantine-orders.md)
+## [Proces správy kvality](quality-management-processes.md)
+# Sledování zboží a dávky
+## [Sloučení dávky skladových zásob](merge-inventory-batches.md)
+## [Sledování zboží a surovin](trace-items-raw-materials-inventory-production-sales.md)
