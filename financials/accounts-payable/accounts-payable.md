@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 00f022da597b1de2454e93123de31731c6a65962
-ms.openlocfilehash: c0febeaf790fd9d2281f0e98089eb557ca1f7cec
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: dd17842365e357ecb5cb6034ed8878fcd60be5fc
+ms.openlocfilehash: 8bdfc9b29da86460e8f47760cf8afc051ea923fb
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 Toto téma poskytuje přehled závazků. 
 
-Faktury dodavatele můžete zadat ručně nebo je lze obdržet elektronickou cestou prostřednictvím datové entity. Poté, co jsou faktury zadány nebo přijaty, můžete zkontrolovat a schválit faktury pomocí deníku schválených faktur nebo stránky **Faktura dodavatele**. Můžete použít párování faktur, zásady faktur dodavatele a workflow k automatizaci procesu kontroly tak, aby se automaticky schvalovaly faktur, které splňují určitá kritéria, a zbývajících faktury jsou označeny ke kontrole autorizovaným uživatelem.
+Faktury dodavatele můžete zadat ručně nebo je lze obdržet elektronickou cestou prostřednictvím datové entity. Poté, co jsou faktury zadány nebo přijaty, můžete zkontrolovat a schválit faktury pomocí deníku schválených faktur nebo stránky **Faktura dodavatele**. Můžete použít párování faktur, zásady faktur dodavatele a workflow k automatizaci procesu kontroly tak, aby se automaticky schvalovaly faktury, které splňují určitá kritéria, a zbývající faktury se označily ke kontrole autorizovaným uživatelem.
 
 
 

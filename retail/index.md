@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 03f54d7cf25b928d51d7d382ec490295dcbbbefe
-ms.openlocfilehash: 0d00f33ce8059acd877d1c177e3def0b5f0b73b1
-ms.lasthandoff: 04/12/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a8385e7103b74be33fd79c1143e481ad8edca31c
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -34,11 +35,9 @@ Aplikace Dynamics 365 for Operations – Retail poskytuje ucelené možnosti ná
 Tato stránka odkazuje na zdroje, které vám pomůžou používat aplikaci MicrosoftDynamics 365 for Operations - Retail efektivněji. V levém podokně vyberte oblast funkce, o které chcete získat informace. 
 
 ## <a name="set-up-retail-channels"></a>Nastavení maloobchodních kanálů
-Při nastavování vašich zkušeností s aplikací retail budete rozhodovat, jak definovat a konfigurovat svůj kamenný obchod (nazývaný v aplikaci Dynamics 365 for Operations *maloobchod*) a operace online obchodu. 
+Při nastavování vašich zkušeností s aplikací Retail budete rozhodovat, jak definovat a konfigurovat své obchody - kamenné obchody, online obchody a kontaktní střediska. 
 
-Každý maloobchod může mít vlastní metodu plateb, cenové skupiny, řešení POS, účty příjmů a výdajů a zaměstnance. Po vytvoření svého maloobchodu přiřadíte produkty, které má obchod obsahovat. K obchodu můžete také přiřadit zaměstnance, pokladny a odběratele. Nakonec přidejte nový obchod do organizační hierarchie.
-
-Při vytváření online obchodu musíte nastavit jeho součásti, jako je například sortiment, atributy, způsoby platby a dodací metody. Můžete také definovat ceny, promoakce, slevy a dodací podmínky, které jsou specifické pro online obchod.
+Každý maloobchod může mít vlastní metodu plateb, způsoby dodání, cenové skupiny, účty příjmů a výdajů a zaměstnance. Po vytvoření svého maloobchodu vytvoříte sortiment produktů, které má obchod obsahovat. Můžete také definovat ceny specifické pro obchod a slevy, které jsou použitelné na produkty dostupné v obchodě.
 
 -   [Definování maloobchodních sítí](define-maintain-retail-channels.md)
 -   [Přehled online obchodu](online-stores.md)
@@ -49,10 +48,10 @@ Můžete nastavit kontaktní středisko jako typ maloobchodní sítě. V kontakt
 -   [Funkce kontaktního střediska](call-center-functionality.md)
 -   [Vytvoření katalogů kontaktního střediska](create-call-center-catalogs.md)
 
-## <a name="define-your-pos-and-mpos-solutions"></a>Definice vašich řešení POS a MPOS
-Moderní POS (MPOS) je pokladním místem aplikace pro počítače, tablety a telefony. Prodavači mohou zpracovávat prodejní transakce a objednávky odběratelů a provádět každodenní operace a řízení zásob pomocí mobilního zařízení kdekoliv v obchodě, stejně jako na elektronických pokladnách. Cloudové POS je POS založené na prohlížeči. 
+## <a name="define-your-pos-solutions"></a>Definice vašich řešení POS
+Moderní POS (MPOS) je pokladním místem aplikace pro počítače, tablety a telefony. Prodavači mohou zpracovávat prodejní transakce a objednávky odběratelů, vykonávat aktivity clientelingu a provádět každodenní operace a řízení zásob pomocí mobilního zařízení kdekoliv v obchodě, stejně jako na elektronických pokladnách. Cloud POS je verze programu POS pro prohlížeč, která lze spustit prostřednictvím jakéhokoliv standardního prohlížeče. 
 
-Existuje několik nastavitelných komponent sloužících k definování vztahů mezi úložištěm, POS pokladny nebo kanály v rámci obchodu a maloobchodními periferními zařízeními, které tyto pokladny nebo kanály používají pro zpracování transakcí. Můžete rovněž definovat vlastnosti konkrétní instance POS, včetně hardwarového profilu nebo nastavení maloobchodního periferního zařízení, které bude použito na pokladně, obchod, ke kterému je pokladna namapována a vizuální prostředí uživatele, který se k dané pokladně zaregistruje.
+Existuje několik nastavitelných komponent sloužících k definování vztahů mezi obchodem, POS pokladnami v rámci obchodu a maloobchodními periferními zařízeními, které tyto pokladny používají pro zpracování transakcí. Můžete rovněž definovat vlastnosti konkrétní instance POS, včetně hardwarového profilu nebo nastavení maloobchodního periferního zařízení, které bude použito na pokladně, obchod, ke kterému je pokladna namapována, vizuální prostředí uživatele, který se k dané pokladně zaregistruje, a funkce, které jsou v pokladně povoleny. Rovněž určíte, zda může pokladna pracovat v odpojeném nebo offline stavu.
 
 -   [Definování a správa klientů z obchodních kanálů, pokladen a hardwarových stanic](define-maintain-channel-clients-registers-hw-stations.md)
 -   [Instalace a konfigurace MPOS](retail-modern-pos-device-activation.md)
@@ -92,4 +91,6 @@ Názory, novinky a jiné informace o aplikaci Microsoft Dynamics 365 for Operati
 Existuje mnoho témat o aplikaci Retail na <a href="https://blogs.msdn.microsoft.com/dax/">blogu týmu produktu Microsoft Dynamics AX</a>. Některé z těchto článků byly vytvořeny pro předchozí verzi aplikace Dynamics 365 for Operations, ale stále se používají stejné koncepty a postupy jsou podobné jako v aktuální verzi.
 
 <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operations Partner Community Blog</a> poskytuje partnerům Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci MBS Operations.
+
+
 

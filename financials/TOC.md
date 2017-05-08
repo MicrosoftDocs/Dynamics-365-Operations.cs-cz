@@ -170,6 +170,7 @@
 ## [Dimenze prvku nákladů](cost-accounting/cost-elements.md)
 ## [Dimenze objektu nákladů](cost-accounting/cost-objects.md)
 ## [Mapování členů dimenze prvků nákladů na společnou sadu členů dimenze](cost-accounting/map-cost-elements-dimension-members.md)
+## [Výpočet režijních nákladů](cost-accounting/overhead-calculation.md)
 ## [Mobilní pracovní prostor řízení nákladů](cost-accounting/cost-controlling-mobile-workspace.md)
 ## [Obsah Power BI analýzy nákladového účetnictví](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/operations/financials/toc.json)
 ## [Nastavení zabezpečení pro obsah Power BI analýzy nákladového účetnictví](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/operations/financials/toc.json)
@@ -206,4 +207,18 @@
 ## [Nabídky projektu](project-management/project-quotations.md)
 ## [Prostředky projektu](project-management/project-resourcing.md)
 ## [Strukturované rozpisy prací](project-management/work-breakdown-structures.md)
+## [Mobilní pracovní prostor zadání času projektu](project-management/project-time-entry-mobile-workspace.md)
 # [Lokalizace](localizations/TOC.md)
+
+# [Lidské zdroje](/dynamics365/operations/human-resources/index)
+
+# [Maloobchodní a velkoobchodní prodej](/dynamics365/operations/retail/index)
+
+# [Správa dodavatelsko-odběratelského řetězce](/dynamics365/operations/supply-chain/index)
+
+# [Vývojář a správce](/dynamics365/operations/dev-itpro/index)
+
+# Jiné prostředky
+## [Dynamics 365 for Operations – glosář](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/financials/toc.json)
+## [Co je nového a co se změnilo](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/financials/toc.json)
+

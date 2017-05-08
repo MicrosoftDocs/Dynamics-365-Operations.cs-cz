@@ -31,7 +31,7 @@
 ## Malajsie
 ### [Daň ze zboží a služeb ](apac-mys-gst.md)
 ## Singapur
-### [Generování sestavy GST-05 GST-05](apac-sgp-generate-gst-05-report.md)
+### [Generování sestavy GST-05](apac-sgp-generate-gst-05-report.md)
 ## Thajsko
 ### [Sestavy karet zásob](apac-tha-stock-card-reports.md)
 ### [Nerealizovaná DPH](apac-tha-unrealized-vat.md)
@@ -42,7 +42,8 @@
 ## [Úprava ID faktury na prodejních objednávkách](emea-edit-invoice-id-sales-orders.md)
 ## [Vstupní certifikáty EU](emea-entry-certificates.md)
 ## [Souhrnné hlášení EU](emea-eu-sales-list.md)
-## [Formáty souboru pro způsoby platby](emea-select-file-formats-for-the-method-of-payments.md)
+## [Úpravy kurzů](emea-exchange-rate-adjustments.md)
+## [Formáty souboru pro metody platby](emea-select-file-formats-for-the-method-of-payments.md)
 ## [Vyřazení dlouhodobého majetku pro Estonsko a Litvu](emea-credit-note-reverse-fixed-asset-sale.md)
 ## [Intrastat](emea-intrastat.md)
 ## [Číslování faktur a dodacích listů pro Lotyšsko a Litvu](emea-invoices-packing-slips-numbering.md)
@@ -54,20 +55,21 @@
 ## [PSČ](emea-import-create-postal-codes-manually.md)
 ## [ID registrace](emea-registration-ids.md)
 ## [Přehled převodu kreditu SEPA](../accounts-payable/sepa-credit-transfer.md)
-## [SEPA – Přehled přímého debetu](../accounts-receivable/sepa-direct-debit-overview.md)
+## [Přehled přímého inkasa SEPA](../accounts-receivable/sepa-direct-debit-overview.md)
 ## [Nastavení podepisujících uživatelů tištěných formulářů](emea-set-up-signers-for-printing-forms.md)
-## [Rozdělení období v periodických denících](emea-create-post-periodic-journals.md)
-## [Aktualizace způsobu zobrazování částek v sestavách a dokumentech](emea-amount-printing-forms.md)
-## [Vykazování DPH](emea-vat-reporting.md)
+## [Směnný kurz DPH](emea-vat-exchange-rate.md)
 ## [Zobrazení transakcí u vyrovnání](emea-transactions-settlement-form.md)
 ## Rakousko
+### [Půlroční plán odpisů](emea-aut-half-year-depreciation.md)
 ### [Poplatky za obalový materiál](emea-aut-packing-material-fee-calculation.md)
 ### [Výpis DPH](emea-aut-vat-statement-details.md)
 ## Belgie
 ### [Bankovní výpis CODA](emea-bel-coda-bank-statement-import.md)
+### [Daňové přiznání Intervat](emea-bel-intervat-tax-declaration.md)
 ### [Nastavení sestavy PRODCOM](emea-bel-prodcom-report.md)
 
 ## Česká republika
+### [Platební sleva na dobropisu](emea-cze-credit-note-cash-discount.md)
 ### [Zaokrouhlení odpisování](emea-cze-depreciation-rounding.md)
 ### [Pozastavení odpisování](emea-cze-depreciation-suspension-holidays.md)
 ### [Odpisy dlouhodobého majetku](emea-cze-fixed-assets-depreciation.md)
@@ -94,7 +96,9 @@
 ### [Sestava seznamu deníku](emea-deu-journal-list-report.md)
 ### [Tisk samostatného štítku pro dobropisy z prodejů](emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ## Maďarsko
+### [Metody odpisu dlouhodobého majetku](emea-hun-fixed-assets-depreciation-methods.md)    
 ### [Dlouhodobý majetek s nízkými náklady](emea-hun-low-cost-fixed-assets.md)
+### [Přesun dlouhodobého majetku do zásob](emea-hun-fixed-asset-to-inventory.md)
 ## Itálie
 ### [Podrobnosti výpisů DPH](emea-ita-vat-statements-details.md)
 ### [Sestava černé listiny](emea-ita-black-list-report.md)
@@ -103,6 +107,7 @@
 ### [Ověření data dodacího listu na fakturách](emea-ita-packing-slip-date-verification-on-invoice.md)
 ### [Knihy DPH](emea-ita-fiscal-books.md)
 ### [Rozdělená platba za faktury vydané pro veřejnou správu](emea-ita-split-payment-invoices-issued-public-administration.md)
+### [Srážková daň](emea-ita-withholding tax.md)
 ## Lotyšsko
 ### [Účtování dlouhodobého majetku](emea-lva-fixed-assets-accounting.md)
 ### [Sledování změn umístění dlouhodobého majetku](emea-lva-fixed-assets-location-fields-change.md)
@@ -119,12 +124,17 @@
 ### [Duplikování číslování prodejních faktur](emea-pol-sales-invoice-duplicates-numbering.md)
 ### [Odpisy dlouhodobého majetku](emea-pol-fixed-assets-depreciation.md)
 ### [Rozšíření funkce disponibility investičního majetku](emea-pol-fixed-asset-disposal-functionality-extension.md)
+### [Vratný obal](emea-pol-returnable-packages.md)
+### [Sestavy DPH](emea-pol-sales-tax-reports.md)
+### [Soubor standardního auditu (SAF)](emea-pol-standard-audit-file-saf.md)
 ### [Výkaz obratu](emea-pol-turnover-balances-statement.md)
 ## Španělsko
-### [Možnosti cizí směnky](emea-esp-bill-of-exchange-options.md)
 ### [Použití hotovostních slev na faktuře](emea-esp-cash-discount-applied-invoice.md)
+### [Možnosti cizí směnky](emea-esp-bill-of-exchange-options.md)
+### [Nerealizovaná DPH](emea-esp-conditional-sales-tax.md)
 ### [Účet faktury fiskálních dat](emea-esp-fiscal-data-invoice-account.md)
 ### [Přecenění skupiny dlouhodobého majetku](emea-esp-fixed-asset-group-revaluation.md)
+### [DPH intrakomunitárního plnění](emea-esp-intra-community-vat.md)
 ### [Jednorázoví odběratelé](emea-esp-no-one-time-customer-for-project-contracts.md)
 ### [Možnosti vlastní směnky](emea-esp-promissory-note-options.md)
 ### [Prodejní a nákupní cykly](emea-esp-sales-purchase-cycle.md)
@@ -163,3 +173,4 @@
 
 # Severní Amerika
 ## [Vykazování pro USA ke konci roku 1099](noam-usa-year-end-1099-reporting.md)
+

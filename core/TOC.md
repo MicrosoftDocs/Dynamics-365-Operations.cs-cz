@@ -66,7 +66,7 @@
 
 # [Lidské zdroje](/dynamics365/operations/human-resources/index)
 
-# [Prodej](/dynamics365/operations/retail/index)
+# [Maloobchodní a velkoobchodní prodej](/dynamics365/operations/retail/index)
 
 # [Správa dodavatelsko-odběratelského řetězce](/dynamics365/operations/supply-chain/index)
 

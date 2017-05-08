@@ -60,3 +60,15 @@
 #### [Nejčastější dotazy týkající se údajů o mzdách](localizations/noam-usa-payroll-data-updates.md)
 #### [Generování mzdových sestav](localizations/noam-usa-generate-payroll-reports.md)
 
+# [Finance](/dynamics365/operations/financials/index)
+
+# [Maloobchodní a velkoobchodní prodej](/dynamics365/operations/retail/index)
+
+# [Správa dodavatelsko-odběratelského řetězce](/dynamics365/operations/supply-chain/index)
+
+# [Vývojář a správce](/dynamics365/operations/dev-itpro/index)
+
+# Jiné prostředky
+## [Dynamics 365 for Operations – glosář](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/human-resources/toc.json)
+## [Co je nového a co se změnilo](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/human-resources/toc.json)
+

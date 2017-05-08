@@ -1,6 +1,6 @@
 ---
 title: "Domovská stránka Dlouhodobý majetek"
-description: "Dlouhodobý majetek jsou položky s hodnotou, jako například budovy, vozidla, pozemek nebo vybavení, které vlastní jedinec nebo organizace."
+description: "Dlouhodobý majetek jsou položky s hodnotou, jako například budovy, vozidla, pozemek nebo vybavení, které vlastní jedinec nebo společnost."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 00f022da597b1de2454e93123de31731c6a65962
-ms.openlocfilehash: cdcf247f33a35ebae4af4ff22c10083642e9f97a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: dd17842365e357ecb5cb6034ed8878fcd60be5fc
+ms.openlocfilehash: 9d2c591b4a3f30ac9a3a842161ee7aa0e6c1db35
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -30,9 +31,9 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dlouhodobý majetek jsou položky s hodnotou, jako například budovy, vozidla, pozemek nebo vybavení, které vlastní jedinec nebo organizace. 
+Dlouhodobý majetek jsou položky s hodnotou, jako například budovy, vozidla, pozemek nebo vybavení, které vlastní jedinec nebo společnost. 
 
-Můžete nastavit a zadávat informace o pořízení pro dlouhodobý majetek a spravovat jej odepisováním a nastavením prahu kapitalizace, podle nějž se určují odpisy. Můžete rovněž vypočítat úpravy dlouhodobého majetku a zadat informaci o jeho odprodeji. Při používání hlavní knihy s dlouhodobým majetkem můžete společně zobrazit aktuální hodnotu veškerého dlouhodobého majetku. Způsob zpracování dlouhodobého majetku musí odpovídat mezinárodním účetním normám i legislativě účetnictví v každé zemi nebo regionu. Požadavky mohou zahrnovat pravidla pro zaznamenávání pořizovacích a vyřazovacích transakcí, odpisů, životnost a zvýšení či snížení hodnoty dlouhodobého majetku. Funkce dlouhodobého majetku již mnoho z těchto norem a pravidel obsahuje.
+Můžete nastavit a zadávat informace o pořízení pro dlouhodobý majetek a spravovat ho odepisováním a nastavením prahu kapitalizace, podle nějž se určují odpisy. Můžete rovněž vypočítat úpravy dlouhodobého majetku a zadat informaci o jeho vyřazení. Při používání hlavní knihy spolu s dlouhodobým majetkem můžete zobrazit aktuální hodnotu veškerého dlouhodobého majetku. Způsob zpracování dlouhodobého majetku musí odpovídat jak mezinárodním účetním normám, tak legislativě účetnictví v každé zemi nebo regionu. Požadavky mohou zahrnovat pravidla pro zaznamenávání pořizovacích a vyřazovacích transakcí, odpisů, životnost a zvýšení či snížení hodnoty dlouhodobého majetku. Funkce dlouhodobého majetku již mnoho z těchto norem a pravidel obsahuje.
 
 
 

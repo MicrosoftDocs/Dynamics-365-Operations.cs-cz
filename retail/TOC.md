@@ -68,3 +68,16 @@
 ## [Přehled základů obchodování](commerce-essentials.md)
 ## [Organizace a hierarchie organizace (Základy obchodování)](organizational-hierarchies-commerce-essentials.md)
 # [Obsah pro odborníky na IT a vývojáře](dev-itpro/TOC.md)
+
+# [Finance](/dynamics365/operations/financials/index)
+
+# [Lidské zdroje](/dynamics365/operations/human-resources/index)
+
+# [Správa dodavatelsko-odběratelského řetězce](/dynamics365/operations/supply-chain/index)
+
+# [Vývojář a správce](/dynamics365/operations/dev-itpro/index)
+
+# Jiné prostředky
+## [Dynamics 365 for Operations – glosář](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
+## [Co je nového a co se změnilo](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+

@@ -22,10 +22,14 @@
 ## [Datum váženého průměru](weighted-average-date.md)
 ## [Vážený průměr s fyzickou hodnotou a označením](weighted-average-physical-value-marking.md)
 # Výpočet nákladů výroby
+## [Amortizace konstantních nákladů na vyráběnou položku](amortize-constant-costs-manufactured-item.md)
+## [Zpětné účtování nákladů](backflush-costing.md)
+## [Výpočty kusovníku](bom-calculations.md)
 ## [Skupina výpočtů kusovníku](bom-calculation-groups.md)
 ## [Běžné zdroje výrobní odchylky](common-sources-of-production-variances.md)
 ## [Nákladová kategorie použitá ve výrobních postupech](cost-categories-used-production-routings.md)
 ## [Nákladová kategorie, která se používá v modulu Řízení výroby a Řízení a účetnictví projektů](cost-categories-used-production-control-project-management-accounting.md)
+## [Zobrazení nákladů na vyráběnou položku](charges-manufactured-item.md)
 ## [Analýza nákladů ve výrobní zakázce](production-order-cost-analysis.md)
 ## [Odhad nákladů výrobní zakázky](production-order-cost-estimation.md)
 ## [Zaúčtování výroby](production-posting.md)
@@ -39,5 +43,6 @@
 ## [Aktualizace standardních nákladů ve výrobním prostředí](update-standard-costs-manufacturing-environment.md)
 ## [Aktualizace standardních nákladů pro nově vyrobené položky](update-standard-costs-new-manufactured-item.md)
 ## [Aktualizace standardních nákladů v nevýrobním prostředí](update-standard-costs-non-manufacturing-environment.md)
+
 
 

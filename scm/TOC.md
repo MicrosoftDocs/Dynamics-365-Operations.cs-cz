@@ -56,7 +56,8 @@
 ### [Kusovník a receptura](production-control/bill-of-material-bom.md)
 ### [Funkce návrháře kusovníku](production-control/bom-designer-functionality.md)
 ### [Dimenze produktu](pim/product-dimensions.md)
-### [Názvosloví čísla varianty produktu](pim/product-variant-identification-nomenclature.md)
+### [Výchozí nastavení objednávky pro dimenze a varianty produktu](production-control/default-order-settings.md)
+### [Názvosloví čísla produktu](pim/product-variant-identification-nomenclature.md)
 ### [Nejčastější dotazy týkající se překladů souvisejících s produkty](pim/translations-product-related-information.md)
 ### [Registrace sériového čísla v prodejním procesu](sales-marketing/register-serial-numbers-sales-process.md)
 ### [Vyhledávání produktu během zadání objednávky](pim/search-products-product-variants.md)
@@ -70,49 +71,77 @@
 ### [Nastavení modelu konfigurace](pim/set-up-maintain-product-configuration-model.md)
 ### [Omezení systémem definované a uživatelem definované tabulky](pim/system-defined-user-defined-table-constraints.md)
 # Řízení výroby
-## Výrobní proces    
-### [Subdodávky založené na aktivitě](production-control/activity-based-subcontracting.md)
-### [Atributy dávky](production-control/batch-attributes.md)
-### [Kusovníky a receptury](production-control/bill-of-material-bom.md)
-### [Funkce návrháře kusovníku](production-control/bom-designer-functionality.md)
-### [Konsolidované dávkové objednávky](production-control/consolidated-batch-orders.md)
-### [Správa subdodavatelské práce ve výrobě](production-control/manage-subcontract-work-production.md)
-### [Plánování kombinovaného režimu: kombinování diskrétního, procesního a štíhlého zajištění zdrojů](production-control/mixed-mode-plan.md)
-### [Výrobní proces](production-control/production-process-overview.md)
-### [Požadavky na nastavení výroby](production-control/production-set-up-requirements.md)
-### [Postupy a operace](production-control/routes-operations.md)
-## Výrobní zakázky
-### [Vytvoření výrobních zakázek](production-control/create-production-orders.md)
-### [Výchozí nastavení objednávky pro dimenze a varianty produktu](production-control/default-order-settings.md)
-### [Uvolnění výrobních zakázek](production-control/release-production-orders.md)
-### [Vrácení stavu výrobní zakázky](production-control/reverse-production-order-status.md)
-### [Vykázání kusovníku jako dokončeného](production-control/report-boms-as-finished.md)
-### [Vykázání výrobních zakázek jako dokončených](production-control/report-production-orders-as-finished.md)
-## Štíhlá výroba 
-### [Podpora desky převodů kanbanu pro čtečky čárového kódu](production-control/kanban-transfer-board-support-barcode-scanner.md) 
-### [Plánování kanbanové úlohy pro lean manufacturing](production-control/lean-manufacturing-kanban-job-scheduling.md)
+## [Přehled výrobního procesu](production-control/production-process-overview.md)
+## [Plánování kombinovaného režimu: kombinování diskrétního, procesního a štíhlého zajištění zdrojů](production-control/mixed-mode-plan.md)
+## [Správa subdodavatelské práce ve výrobě](production-control/manage-subcontract-work-production.md)
+## Diskrétní výroba
+### Správa hlavních dat výroby
+#### [Požadavky na nastavení výroby](production-control/production-set-up-requirements.md)
+#### [Kusovníky a receptury](production-control/bill-of-material-bom.md)
+#### [Funkce návrháře kusovníku](production-control/bom-designer-functionality.md)
+#### [Výpočty kusovníku](cost-management/bom-calculations.md)
+#### [Provozní zdroje](production-control/operations-resources.md)
+#### [Schopnosti zdrojů](production-control/resource-capabilities.md)
+#### [Postupy a operace](production-control/routes-operations.md)
+#### [Výchozí hodnoty výrobního příkazu při realizaci výroby](production-control/production-order-defaults-manufacturing-execution.md)
+#### [Zásady práce ve skladu](warehousing/warehouse-work-policies.md)
+### Plánování výrobních operací
+#### [Plánování operací](production-control/operations-scheduling.md)
+#### [Plánování úloh](production-control/job-scheduling.md)
+#### [Možnosti plánování operací](production-control/operation-scheduling-options.md)
+### Provozování výrobních úloh
+#### [Vytvoření výrobních zakázek](production-control/create-production-orders.md)
+#### [Uvolnění výrobních zakázek](production-control/release-production-orders.md)
+#### [Vrácení stavu výrobní zakázky](production-control/reverse-production-order-status.md)
+#### [Vykázání výrobních zakázek jako dokončených](production-control/report-production-orders-as-finished.md)
+#### [Vykázání kusovníku jako dokončeného](production-control/report-boms-as-finished.md)
+#### [Nahrazení materiálů ve výrobě](production-control/substitute-items-bom-lines.md)
+#### [Registrace pro realizaci výroby](production-control/registration-manufacturing-execution.md)
+#### [Zpětná vazba z výroby](production-control/production-feedback.md)
+#### [Registrace času a docházky](production-control/time-attendance-registrations.md)
+### Správa financí ve výrobě
+#### [Přidělení času úlohám v sadě úloh](production-control/allocate-time-jobs-job-bundle.md)
+#### [Výpočet spotřeby materiálu](production-control/consumption.md)
+#### [Zaúčtování výroby](cost-management/production-posting.md)
+## Lean manufacturing 
 ### [Lean manufacturing – přehled](production-control/lean-manufacturing-overview.md)
-### [Modelování organizace úsporné výroby](production-control/lean-manufacturing-modeling-lean-organization.md)
-## Plánování operací a úloh
-### [Přidělení času úlohám v sadě úloh](production-control/allocate-time-jobs-job-bundle.md)
-### [Plánování práce](production-control/job-scheduling.md)
-### [Možnosti plánování operací](production-control/operation-scheduling-options.md)
-### [Plánování operací](production-control/operations-scheduling.md)
-## Zdroje
-### [Prostředky aplikace Operations](production-control/operations-resources.md)
-### [Schopnosti prostředku](production-control/resource-capabilities.md)
-### [Registrace času a docházky](production-control/time-attendance-registrations.md)
-## Provádění výroby
-### [Nahrazení materiálů ve výrobě](production-control/substitute-items-bom-lines.md)
-### [Výpočet spotřeby materiálu](production-control/consumption.md)
-### [Zpětná vazba z výroby](production-control/production-feedback.md)
-### [Výchozí hodnoty výrobního příkazu při realizaci výroby](production-control/production-order-defaults-manufacturing-execution.md)
-### [Zaúčtování výroby](cost-management/production-posting.md)
-### [Registrace pro realizaci výroby](production-control/registration-manufacturing-execution.md)
+### [Subdodávky založené na aktivitě](production-control/activity-based-subcontracting.md)
+### Správa hlavních dat výroby
+#### [Modelování organizace úsporné výroby](production-control/lean-manufacturing-modeling-lean-organization.md)
+#### [Provozní zdroje](production-control/operations-resources.md)
+### Plánování kanbanových úloh
+#### [Plánování kanbanové úlohy pro lean manufacturing](production-control/lean-manufacturing-kanban-job-scheduling.md)
+#### [Plánování úloh](production-control/job-scheduling.md)
+### Provoz kanbanových úloh
+#### [Podpora desky převodů kanbanu pro čtečky čárového kódu](production-control/kanban-transfer-board-support-barcode-scanner.md)
+#### [Zpětná vazba z výroby](production-control/production-feedback.md)
+## Zpracování výroby
+### Správa hlavních dat výroby
+#### [Kusovníky a receptury](production-control/bill-of-material-bom.md)
+#### [Provozní zdroje](production-control/operations-resources.md)
+#### [Schopnosti zdrojů](production-control/resource-capabilities.md)
+#### [Atributy dávky](production-control/batch-attributes.md)
+#### [Výchozí hodnoty výrobního příkazu při realizaci výroby](production-control/production-order-defaults-manufacturing-execution.md)
+#### [Požadavky na nastavení výroby](production-control/production-set-up-requirements.md)
+### Plánování výrobních operací
+#### [Plánování operací](production-control/operations-scheduling.md)
+#### [Možnosti plánování operací](production-control/operation-scheduling-options.md)
+#### [Plánování úloh](production-control/job-scheduling.md)
+### Provozování výrobních úloh
+#### [Konsolidované dávkové objednávky](production-control/consolidated-batch-orders.md)
+#### [Nahrazení materiálů ve výrobě](production-control/substitute-items-bom-lines.md)
+#### [Registrace pro realizaci výroby](production-control/registration-manufacturing-execution.md)
+#### [Zpětná vazba z výroby](production-control/production-feedback.md)
+#### [Registrace času a docházky](production-control/time-attendance-registrations.md) 
+### Správa financí ve výrobě
+#### [Přidělení času úlohám v sadě úloh](production-control/allocate-time-jobs-job-bundle.md)
+#### [Výpočet spotřeby materiálu](production-control/consumption.md)
+#### [Zaúčtování výroby](cost-management/production-posting.md)
 # Prodej a marketing
 ## [Marketing](sales-marketing/overview-sales-marketing.md)
 ## Prodejní objednávky
 ### [Příslib objednávky](sales-marketing/delivery-dates-available-promise-calculations.md)
+### [Alternativní dodání](sales-marketing/delivery-alternatives.md)
 ### [Konečné termíny zadání objednávek](sales-marketing/order-entry-deadlines.md)
 ### [Přímé dodávky](sales-marketing/direct-deliveries.md)
 ### [Plány dodávek](sales-marketing/delivery-schedules.md)
@@ -138,6 +167,7 @@
 ### [Nastavení rozložení](warehousing/warehouse-configuration.md)
 ### [Zásady práce ve skladu](warehousing/warehouse-work-policies.md)
 ### [Měrná jednotka a zásady uskladnění](warehousing/unit-measure-stocking-policies.md)
+### [Obsah skladu v Power BI](/dynamics365/operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/operations/scm/toc.json)
 ## Výdej a balení
 ### [Obalové materiály a poplatky](warehousing/pack-materials-packing-material-fees.md)
 ## Inventura skladu
@@ -151,7 +181,21 @@
 ## Doplnění
 ### [Doplnění](warehousing/replenishment.md)
 ## Mobilní zařízení
+### [Instalace a konfigurace skladové aplikace ](warehousing/install-configure-warehousing-app.md)
 ### [Konfigurace názvů polí ve skladové aplikaci](warehousing/configure-app-field-names-priorities-warehouse.md)
 ### [Nastavení mobilních zařízení pro práci ve skladu](warehousing/configure-mobile-devices-warehouse.md)
 ### [Portál skladu pro mobilní zařízení (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
 ### [Nastavení zobrazení skladových mobilních zařízení](warehousing/change-warehouse-mobile-device-displays.md)
+
+# [Finance](/dynamics365/operations/financials/index)
+
+# [Lidské zdroje](/dynamics365/operations/human-resources/index)
+
+# [Maloobchodní a velkoobchodní prodej](/dynamics365/operations/retail/index)
+
+# [Vývojář a správce](/dynamics365/operations/dev-itpro/index)
+
+# Jiné prostředky
+## [Dynamics 365 for Operations – glosář](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Co je nového a co se změnilo](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/supply-chain/toc.json)
+
