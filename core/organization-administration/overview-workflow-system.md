@@ -1,9 +1,9 @@
 ---
 title: "Přehled systému workflowu"
-description: "Tento článek popisuje systém workflow v aplikaci Microsoft Dynamics 365 for Operations."
+description: "Toto téma popisuje systém workflowu v aplikaci Microsoft Dynamics 365 for Operations."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 08c36f02f88fef7508730b6c01a1c99a0f77fb0c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5432e67ffa41e6a38b19c9fe5bb12c5acb2c345c
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -29,7 +30,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje systém workflow v aplikaci Microsoft Dynamics 365 for Operations.
+Toto téma popisuje systém workflowu v aplikaci Microsoft Dynamics 365 for Operations.
 
 <a name="what-is-workflow"></a>Co je workflow?
 -----------------
@@ -37,13 +38,17 @@ Tento článek popisuje systém workflow v aplikaci Microsoft Dynamics 365 for 
 Termín *workflow* lze definovat dvěma způsoby: workflow jako systém a workflow jako obchodní proces.
 ### <a name="workflow-is-a-system"></a>Workflow je systém
 
-Workflow je systém nainstalovaný aplikací Dynamics 365 for Operations, který se spouští na aplikačním objektovém serveru (AOS). Systém workflowu nabízí funkce, pomocí kterých lze vytvářet individuální workflowy nebo obchodní procesy.
+Workflow je systém nainstalovaný s aplikací Dynamics 365 for Operations a běží na aplikačním objektovém serveru (AOS). Systém workflowu nabízí funkce, pomocí kterých lze vytvářet individuální workflowy nebo obchodní procesy.
 
 ### <a name="workflow-is-a-business-process"></a>Workflow je obchodní proces
 
-Workflow představuje obchodní proces. Definuje tok dokumentu nebo jeho procházení systémem zobrazením, kdo musí splnit úkol, provádět rozhodování nebo schválení dokumentu. Následující obrázek znázorňuje příklad workflowu k vyúčtování výdajů. ![Workflow s prvky, které jsou přiřazeny uživatelům](./media/workflow_user.gif) Abychom lépe pochopili tento workflow, budeme například předpokládat, že Stanislav odešle vyúčtování výdajů pro částku 7 000 USD. V tomto scénáři musí Ivan zkontrolovat účtenky, které mu Stanislav předal. Poté musí být vyúčtování výdajů schváleno Františkem a Šárkou. Nyní předpokládejme, že Stanislav odešle vyúčtování výdajů s částkou 11 000 USD. V tomto scénáři musí Ivan zkontrolovat účtenky a František, Šárka a Anna musí toto vyúčtování výdajů schválit.
- Výhody používání systému workflowu
--------------------------------------
+Workflow představuje obchodní proces. Definuje tok dokumentu nebo jeho procházení systémem zobrazením, kdo musí splnit úkol, provádět rozhodování nebo schválení dokumentu. Následující obrázek znázorňuje příklad workflowu pro sestavy výdajů. 
+
+![Workflow s prvky, které jsou přiřazeny uživatelům](./media/workflow_user.gif) 
+
+Abychom lépe pochopili tento workflow, předpokládejme, že Stanislav odešle vyúčtování výdajů s částkou 7 000 USD. V tomto scénáři musí Ivan zkontrolovat účtenky, které mu Stanislav předal. Poté musí být vyúčtování výdajů schváleno Františkem a Šárkou. Nyní předpokládejme, že Stanislav odešle vyúčtování výdajů s částkou 11 000 USD. V tomto scénáři musí Ivan zkontrolovat účtenky a František, Šárka a Anna musí toto vyúčtování výdajů schválit.
+
+## <a name="benefits-of-using-the-workflow-system"></a> Výhody používání systému workflowu
 
 Používání systému workflowu v organizaci má několik výhod:
 -   **Konzistentní procesy:** – Můžete definovat schvalovací proces pro specifické dokumenty, například nákupní požadavky a vyúčtování výdajů. Používáním systému workflowu lze zajistit, aby byly dokumenty zpracovávány a schvalovány jednotným a efektivním způsobem.
@@ -51,6 +56,20 @@ Používání systému workflowu v organizaci má několik výhod:
 -   **Centralizovaný seznam pracovních položek** – Uživatelé mohou zobrazit centralizovaný seznam pracovních položek k zobrazení úkolů workflowu a schválení, které mají přiřazeny.
 
 
+## <a name="workflow-content"></a>Obsah workflowu
 
-
++ [Architektura workflowu](workflow-system-architecture.md)
++ [Prvky workflowu](workflow-elements.md)
++ [Akce workflowu](workflow-actions.md)
++ [Vytvoření workflowu](create-workflow.md)
++ [Konfigurace vlastností workflowu](configure-workflow-properties.md)
++ [Konfigurace ruční úlohy ve workflowu](configure-manual-task-workflow.md)
++ [Konfigurace automatizované úlohy ve workflowu](configure-automated-task-workflow.md)
++ [Konfigurace schvalovacího procesu ve workflowu](configure-approval-process-workflow.md)
++ [Konfigurace schvalovacího kroku ve workflowu](configure-approval-step-workflow.md)
++ [Konfigurace ručního rozhodnutí ve workflowu](configure-manual-decision-workflow.md)
++ [Konfigurace podmíněného rozhodnutí ve workflowu](configure-conditional-decision-workflow.md)
++ [Konfigurace paralelních aktivit ve workflowu](configure-parallel-activity-workflow.md)
++ [Konfigurace paralelní větve ve workflowu](configure-parallel-branch-workflow.md)
++ [Konfigurace workflowu položky řádku](configure-line-item-workflow.md)
 

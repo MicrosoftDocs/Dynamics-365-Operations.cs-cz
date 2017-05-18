@@ -3,7 +3,7 @@ title: "Plánování kanbanové úlohy pro lean manufacturing"
 description: "V tomto článku jsou informace o vizuální kontrole plánování kanbanové úlohy a různých způsobech plánování kanbanových úloh."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 15 - 02 - 36
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,22 +18,28 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 062cbbc8a4fd3b4dc738f24ee0606a3741736377
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 019974b96985748c82641b73e40a3131d5b27232
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Plánování kanbanové úlohy pro lean manufacturing
 
+[!include[banner](../includes/banner.md)]
+
+
 V tomto článku jsou informace o vizuální kontrole plánování kanbanové úlohy a různých způsobech plánování kanbanových úloh.  
 
 Stránka **Plánování kanbanové úlohy** umožňuje vizuální kontrolu nad pracovními buňkami plánování lean manufacturingu. Nabízí přehled všech kanbanových úloh a nabízí několik možností filtrování. Na této stránce se lze přesunout na ostatní stránky, které souvisejí s konfigurací a spuštěním kanbanu.
 
 ## <a name="automatic-scheduling-of-kanban-jobs"></a>Automatické plánování kanbanové úlohy
-Plánování může být spouštěno automaticky při nastavení parametru **Automaticky plánované množství** parametr v kanbanovém pravidle. Nastavíte-li **Automaticky plánované množství** na **1**, každá kanbanová úloha je naplánována bezprostředně po jeho vytvoření. Výsledek je tvořen řadou operací, co přijdou na řadu jako první. Pokud jste nastavili **automatické plánování množství** na hodnotu, která je větší než 1, jsou kanbanové úlohy seskupeny předtím, než budou plánovány. Tento pojem umožňuje velikost kanbanu snížit pod velikosti skutečné ekonomické dávky. Například velikost ekonomické dávky pro konkrétní zboží (nebo skupinu zboží) je 30. Místo vytvoření kanbanů, které používají množství produktu 30, můžete nakonfigurovat kanbanové pravidlo tak, aby měl množství produktu 10 a ** Automaticky plánované množství ** mělo hodnotu **3**. I když automatické plánování naplánuje kanbanové úlohy pro pracovní buňku pouze v případě, že existují tři neplánované úlohy, je plně průhledné k plánovači a jeho dílenskému nadřízenému, že dvě neplánované úlohy mohou čekat na spuštění. Plánovač nebo dílenský nadřízený poté můžete tyto dvě úlohy uvést do výroby ručním plánováním nebo vytvářením dalších kanbanů.
+Plánování může být spouštěno automaticky při nastavení parametru **Automaticky plánované množství** parametr v kanbanovém pravidle. Nastavíte-li **Automaticky plánované množství** na **1**, každá kanbanová úloha je naplánována bezprostředně po jeho vytvoření. Výsledek je tvořen řadou operací, co přijdou na řadu jako první. Pokud jste nastavili **automatické plánování množství** na hodnotu, která je větší než 1, jsou kanbanové úlohy seskupeny předtím, než budou plánovány. 
+
+Tento pojem umožňuje velikost kanbanu snížit pod velikosti skutečné ekonomické dávky. Například velikost ekonomické dávky pro konkrétní zboží (nebo skupinu zboží) je 30. Místo vytvoření kanbanů, které používají množství produktu 30, můžete nakonfigurovat kanbanové pravidlo tak, aby měl množství produktu 10 a **Automaticky plánované množství** mělo hodnotu **3**. I když automatické plánování naplánuje kanbanové úlohy pro pracovní buňku pouze v případě, že existují tři neplánované úlohy, je plně průhledné k plánovači a jeho dílenskému nadřízenému, že dvě neplánované úlohy mohou čekat na spuštění. Plánovač nebo dílenský nadřízený poté můžete tyto dvě úlohy uvést do výroby ručním plánováním nebo vytvářením dalších kanbanů.
 
 ## <a name="manual-scheduling"></a>Ruční plánování
 Pro ruční plánování aplikace Microsoft Dynamics AX 2012 zavedla desky kanbanového plánování. Ruční plánování lze kombinovat s automatickým plánováním. Deska kanbanového plánování vás nechá plánovat a rušit úlohy, přesouvat je v pořadí nebo je přesouvat z období do období. Úlohy, které jsou založeny na kanbanovém pravidle, kde hodnota **automatického plánování** je větší než **0**, mohou být ručně zrušeny. Tyto úlohy však lze přeplánovat, dojde-li k další události automatického plánování (když je vytvořen nový kanban). Pro ruční plánování jsou k dispozici následující možnosti:
@@ -66,5 +72,7 @@ Stránka se seznamy **Plánování kanbanové úlohy** obsahuje okna s fakty zob
 
 <a name="see-also"></a>Viz také
 --------
+
+
 
 

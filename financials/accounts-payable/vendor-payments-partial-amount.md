@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 4d243e6a9a68b69a6b32748344fc606ff3f2d965
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: eeed8bc4ad0fc24b04055e26bb33c2c56856c52b
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -49,7 +50,7 @@ Například můžete přijmout platební slevu 2 %, pokud bude faktura proplacen
 ## <a name="credit-notes-with-cash-discounts"></a>Dobropisy s platebními slevami
 Můžete vrátit některé položky na faktuře a přijmout dobropis. Pokud pro původní fakturu byla využita platební sleva, můžete odečíst hodnotu slevy a přijmout refundaci pro správnou částku. Pokud je možnost **Vypočítat platební slevy pro dobropisy** nastavena na hodnotu **Ano** na stránce **Parametry závazku**, sleva se pro dobropis vypočítá automaticky. 
 
-Například můžete přijmout platební slevu 2 %, pokud bude faktura proplacena do 10 dnů po vydání. Je zaúčtována faktura na 100,00. Pokud vrátíte zboží a obdržíte dobropis, můžete zadat dobropis za celou částku původní faktury (100,00) spolu s dvouprocentní platební slevou, která je v dobropisu také určena.  Při prohlížení dobropisu na stránce **Vyrovnat transakce** se zobrazí částka** 98,00** v poli **Částka k vyrovnání** a částka **-2,00** v poli **Částka platební slevy**. Částka slevy je zaúčtována na účet platební slevy.
+Například můžete přijmout platební slevu 2 %, pokud bude faktura proplacena do 10 dnů po vydání. Je zaúčtována faktura na 100,00. Pokud vrátíte zboží a obdržíte dobropis, můžete zadat dobropis za celou částku původní faktury (100,00) spolu s dvouprocentní platební slevou, která je v dobropisu také určena.  Při prohlížení dobropisu na stránce **Vyrovnat transakce** se zobrazí částka**98,00** v poli **Částka k vyrovnání** a částka **-2,00** v poli **Částka platební slevy**. Částka slevy je zaúčtována na účet platební slevy.
 
 ## <a name="overpaymentunderpayment-amounts"></a>Částky přeplatku nebo nedoplatku
 Můžete provést částečnou úhradu, když je částka, která musí být vyrovnána, příliš malá. Například faktura dodavatele je pro 1 000,00 a vy platíte 999,90 Je-li zůstatek nižší než částka zadaná pro přeplatky nebo nedoplatky na stránce **Parametry závazků**, rozdíl se automaticky zaúčtuje na účet hlavní knihy pro přeplatky a nedoplatky.

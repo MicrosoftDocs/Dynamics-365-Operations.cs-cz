@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 3e6b48768bb8e69d46f1555d9300f3b878b01ff1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 35d34f9a356f8a041f2abf0aa8d6c3a6d9ca4a46
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Obsah výkonu prodeje a ziskovosti Power BI
+
+[!include[banner](../includes/banner.md)]
+
 
 Toto téma popisuje, co je součástí aplikace Dynamics 365 for Operations - Sales a balíčku obsahu výkonnosti pro Microsoft Power BI. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v balíčku obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření balíčku obsahu.
 
@@ -44,6 +48,7 @@ Ziskovost může být analyzována podle:
 
 ## <a name="accessing-the-content-pack"></a>Přístup k balíčku obsahu
 Balíček obsahu Power BI výkonu prodeje a ziskovosti je publikován jako implementační aktivum v Microsoft Dynamics Lifecycle Services (LCS) a je přístupný z Microsoft Dynamics 365 for Operations. Další informace o přístupu k otevřeným sestavám Power BI a jejich spouštění, viz [Obsahu Power BI od společnosti Microsoft a partnerů v LCS](power-bi-content-microsoft-partners.md).
+**Poznámka:** Předpokladem pro obsah Power BI je KB4011327. Po přihlášení ke službě Lifecycle Services můžete přejít k článku znalostní báze zde: <a href="https://fix.lcs.dynamics.com/issue/results/?q=kb4011327">https://fix.lcs.dynamics.com/issue/results/?q=kb4011327</a>.
 
 ## <a name="metrics-included-in-the-content-pack"></a>Metriky zahrnuté v balíčku obsahu
 Balíček obsahu analýzy zahrnuje sestavu, která sestává ze sady metrik vizualizovaných jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizací v balíčku obsahu.
@@ -110,6 +115,8 @@ Zde uvádíme některé užitečné odkazy související s entitami a vytvářen
 -   [Vytvoření organizačního balíčku obsahu](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Modelování dat pomocí aplikace Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Přidání dlaždic Power BI do pracovních prostorů](configure-power-bi-integration.md)
+
+
 
 
 

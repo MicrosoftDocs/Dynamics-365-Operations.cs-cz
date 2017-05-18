@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: af7e7288f741b3c519227e2778c4c4311c3a2012
-ms.openlocfilehash: 88cdf531b6da615034f9982d3503b9add0100479
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 447ba56a279a29392b00119730c3594fa4ea80f6
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -42,7 +43,7 @@ Správa výdajů je úzce integrována s finanční správou organizace. Řada k
 
 ### <a name="per-diems"></a>Diety
 
-Je nutné definovat diety zaměstnance, které vaše organizace poskytuje. Protože diety jsou obvykle použity k pokrytí výdajů, jako je stravování, ubytování nebo jiné vedlejší náklady, můžete vytvořit pravidla pro náhrady denních diet, které vaše organizace nabízí. Denní diety lze nastavit podle roční doby, cíle cesty nebo podle obojího. Při definování pravidla denní diety můžete zadat, aby bylo procento denní diety strženo, pokud zaměstnanec bude mít zajištěno náhradní stravování nebo jiné služby. Můžete také definovat úrovně sazeb denní diety a nastavit minimální a maximální počet hodin, pro které lze sazby denních diet použít na cestu pracovníka. **Rozhodnutí: **
+Je nutné definovat diety zaměstnance, které vaše organizace poskytuje. Protože diety jsou obvykle použity k pokrytí výdajů, jako je stravování, ubytování nebo jiné vedlejší náklady, můžete vytvořit pravidla pro náhrady denních diet, které vaše organizace nabízí. Denní diety lze nastavit podle roční doby, cíle cesty nebo podle obojího. Při definování pravidla denní diety můžete zadat, aby bylo procento denní diety strženo, pokud zaměstnanec bude mít zajištěno náhradní stravování nebo jiné služby. Můžete také definovat úrovně sazeb denní diety a nastavit minimální a maximální počet hodin, pro které lze sazby denních diet použít na cestu pracovníka. **Rozhodnutí:**
 
 -   Výchozí pravidla denních diet pro první a poslední den:
     -   Jaký je minimální počet hodin, které zaměstnanec může za den nárokovat a stále obdržet diety?
@@ -124,10 +125,10 @@ U daní souvisejících s výdaji je třeba určit, co je zahrnuto nebo povoleno
 -   Je daň z přidané hodnoty zahrnuta v částkách výdajů.
 -   Má být povolena vratka daně výdajů?
 
-Všimněte si, že pokud jste se při plánování hlavní knihy rozhodli použít DPH a daňová pravidla USA, což lze provést přepnutím pole ** Použít daňové předpisy pro DPH** na hodnotu Ano, nelze obnovit vratku daně výdajů.
+Všimněte si, že pokud jste se při plánování hlavní knihy rozhodli použít DPH a daňová pravidla USA, což lze provést přepnutím pole **Použít daňové předpisy pro DPH** na hodnotu Ano, nelze obnovit vratku daně výdajů.
 
 ## <a name="policies"></a>Zásady
-Lze vytvořit zásady sestavy výdajů, aby vaše organizace mohla ušetřit čas a peníze, když zaměstnanci vydají výdaje jejím jménem. Zásady zajišťují, že zaměstnanci nepřekročí rozpočet, poskytnou všechny požadované informace a utratí peníze pouze v případě potřeby. Je třeba provést následující rozhodnutí pro každou zásadu sestavy výdajů a každou zásadu schválení sestavy výdajů, kterou vytvoříte. **Rozhodnutí: **
+Lze vytvořit zásady sestavy výdajů, aby vaše organizace mohla ušetřit čas a peníze, když zaměstnanci vydají výdaje jejím jménem. Zásady zajišťují, že zaměstnanci nepřekročí rozpočet, poskytnou všechny požadované informace a utratí peníze pouze v případě potřeby. Je třeba provést následující rozhodnutí pro každou zásadu sestavy výdajů a každou zásadu schválení sestavy výdajů, kterou vytvoříte. **Rozhodnutí:**
 
 -   Jaký je název zásad?
 -   K čemu slouží zásady výdajů?

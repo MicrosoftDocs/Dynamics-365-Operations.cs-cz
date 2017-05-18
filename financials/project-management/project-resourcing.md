@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: cmercado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eb32cf1b96dfef75131b8c7541e20a93615a87f7
-ms.openlocfilehash: c29c95fc6abd13e668c44d3ccf437bb0e879e46b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 11755e4ab4b3c1f55da80e57ff96e0b13c84c697
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -209,7 +210,7 @@ Při vytváření projektového týmu postupujte následujícím způsobem.
 1.  Na stránce se seznamem **Všechny projekty** vyberte projekt a klepněte na **Upravit**.
 2.  Na kartě **Projektový tým a plánování** v poli **Naplánovat koncové datum** zadejte datum zahájení plánu posunuté o jeden měsíc. Je-li datum zahájení plánu například 24. června 2017 (24/06/2017), zadejte **24/07/2017**.
 3.  Klikněte na tlačítko **Přidat**.
-4.  V podokně **Přidat role do projektu** v poli **Role **vyberte **Vrchní manažer projektu**.
+4.  V podokně **Přidat role do projektu** v poli **Role** vyberte **Vrchní manažer projektu**.
 5.  Klikněte na **Požadované kompetence**.
 6.  Na stránce **Vybrat charakteristiky** jsou standardně zvoleny charakteristiky, které jste dříve nastavili pro roli Vrchní manažer projektu. Klepněte na tlačítko **OK**.
 7.  Na stránce **Přidat role do projektu** v poli **Počet prostředků** zadejte **1**.
@@ -316,7 +317,7 @@ Další možnosti byly přidány do struktury WBS a umožňují lepší využit�
 
 > [!NOTE] 
 > Neobdržíte upozornění, že vybraný prostředek je nyní „2“, protože počet prostředků zůstává „1“.
-18. Na stránce **Strukturovaný rozpis prací **ověřte přiřazení prostředku ve struktuře WBS a klepněte na tlačítko **Uložit**.
+18. Na stránce **Strukturovaný rozpis prací** ověřte přiřazení prostředku ve struktuře WBS a klepněte na tlačítko **Uložit**.
 
 ## <a name="resource-fulfillment-for-planned-resources"></a>Plnění prostředků pro plánované prostředky
 Manažer projektu může naplánovat požadované role prostředku pro projekt. Správce prostředků uvidí tyto plánované prostředky jako požadavky na stránce **Plnění prostředků** a má možnost přiřadit skutečné prostředky.

@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 1a9bf1067d0f6e0e139ef13d939d2f0e9bf2126b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8dd5cc110e83e1b10db233547b0ac2081cc6c380
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Tento článek popisuje postup nastavení funkce inkasa.
 Nastavte definici období pro sledování splatnosti. Definice období pro sledování splatnosti určuje sloupce, které se zobrazují na stránkách se seznamem **Splatné zůstatky**, **Inkasní aktivity** a **Případy inkasa**. Také definuje období, které se zobrazuje na stránce **Inkasa**. Pokud je nastaven fond zákazníků, je použita jeho definice období pro sledování splatnosti. Pokud nejsou nastaveny žádné fondy, použije se výchozí definice období pro sledování splatnosti, která je určena na stránce **Parametry pohledávek**. Pokud není určena žádná výchozí definice období pro sledování splatnosti, použije se první definice období pro sledování splatnosti na stránce **Definice období pro sledování splatnosti**.
 
 ## <a name="create-an-aging-snapshot"></a>Vytvoření snímku sledování splatnosti
-Vytvořte záznamy snímků sledování splatnosti pro všechny odběratele nebo pro odběratele ve fondu zákazníků. Informace o snímku sledování splatnosti se zobrazují na stránce se seznamem ** Splatné zůstatky** a na stránce **Inkasa**. Je třeba snímek sledování splatnosti vytvořit před použitím stránky seznamu. Na stránce se seznamem se zobrazují informace pouze pro odběratele, pro které byl vytvořen snímek sledování splatnosti.
+Vytvořte záznamy snímků sledování splatnosti pro všechny odběratele nebo pro odběratele ve fondu zákazníků. Informace o snímku sledování splatnosti se zobrazují na stránce se seznamem **Splatné zůstatky** a na stránce **Inkasa**. Je třeba snímek sledování splatnosti vytvořit před použitím stránky seznamu. Na stránce se seznamem se zobrazují informace pouze pro odběratele, pro které byl vytvořen snímek sledování splatnosti.
 
 ## <a name="optional-set-up-customer-pools"></a>Nepovinné: Nastavení fondů zákazníků
 Můžete nastavit fondy zákazníků představující skupiny odběratelů. Fondy zákazníků můžete použít jako filtry pro informace o odběratelích, které se zobrazují na stránkách se seznamem **Inkasa**, na stránce **Inkasa** nebo při vytváření snímků sledování splatnosti.

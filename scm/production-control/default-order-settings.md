@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 60abaa69debd891b2fe2dd98184c0dab50b0bf9f
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 26ad7fb0e9371b8e1d45d61f2348241c6aca16b9
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -90,7 +91,7 @@ Pravidla výchozího nastavení objednávky mají kategorie. Čím vyšší kate
 
 ### <a name="default-order-settings-for-released-products"></a>Výchozí nastavení objednávky pro uvolněné produkty
 
-Pro různé uvolněné produkty můžete definovat obecné nastavení objednávky nebo nastavení objednávky specifické pro pracoviště. Obecná nastavení objednávky budou mít vždy kategorii nula. Nastavujete-li nové prodejní, nákupní a skladové objednávky společně a současně, doporučujeme používat **Zobrazení podrobností** na stránce **Výchozí nastavení objednávky **. Pokud chcete přepnout na zobrazení podrobností, přejděte na podokno akcí **Možnosti**&gt; **Možnosti stránky** &gt; **Změnit zobrazení** &gt; **Zobrazení podrobností**.
+Pro různé uvolněné produkty můžete definovat obecné nastavení objednávky nebo nastavení objednávky specifické pro pracoviště. Obecná nastavení objednávky budou mít vždy kategorii nula. Nastavujete-li nové prodejní, nákupní a skladové objednávky společně a současně, doporučujeme používat **Zobrazení podrobností** na stránce **Výchozí nastavení objednávky**. Pokud chcete přepnout na zobrazení podrobností, přejděte na podokno akcí **Možnosti**&gt; **Možnosti stránky** &gt; **Změnit zobrazení** &gt; **Zobrazení podrobností**.
 
 ### <a name="site-specific-order-settings"></a>Nastavení objednávky specifické pro pracoviště
 
@@ -149,9 +150,9 @@ Jako hlavní pokyny slouží specifická pravidla a pravidla pro dimenze, které
 
 Pravidlo s kategorií nula slouží jako záchranná síť. Jestliže nedojde k aplikaci žádných dalších pravidel, pak se použije výchozí nastavení objednávky od pravidla nula. 
 
-Vzhledem k tomu, že je kategorie tak důležitá, jsou v podokně akcí **výchozí nastavení objednávky ** funkce pro přesun pravidla nahoru nebo dolů a pro přečíslování, takže jsou vždy s nárůstem 10. 
+Vzhledem k tomu, že je kategorie tak důležitá, jsou v podokně akcí **výchozí nastavení objednávky** funkce pro přesun pravidla nahoru nebo dolů a pro přečíslování, takže jsou vždy s nárůstem 10. 
 
-Pravidel vytvořených pro uvolněný produkt může být více. Chcete-li získat lepší představu o tom, co každé pravidlo přepisuje a proč je to zapotřebí, doporučujeme používat **zobrazení mřížky** na stránce** výchozí nastavení objednávky**. Zobrazení mřížky lze povolit v podokně akcí **Možnosti**&gt; **Možnosti stránky** &gt; **Změnit zobrazení** &gt; **Zobrazení mřížky**. Počet zobrazených sloupců v mřížce může být celkem významný, zejména pro karty prodeje a zásob. Chcete-li omezit počet zobrazovaných sloupců v mřížce, můžete skrýt nebo zobrazit skupiny sloupců pomocí tlačítek v nabídce **Výchozí nastavení objednávky** &gt; **Zobrazení sloupce**.
+Pravidel vytvořených pro uvolněný produkt může být více. Chcete-li získat lepší představu o tom, co každé pravidlo přepisuje a proč je to zapotřebí, doporučujeme používat **zobrazení mřížky** na stránce**výchozí nastavení objednávky**. Zobrazení mřížky lze povolit v podokně akcí **Možnosti**&gt; **Možnosti stránky** &gt; **Změnit zobrazení** &gt; **Zobrazení mřížky**. Počet zobrazených sloupců v mřížce může být celkem významný, zejména pro karty prodeje a zásob. Chcete-li omezit počet zobrazovaných sloupců v mřížce, můžete skrýt nebo zobrazit skupiny sloupců pomocí tlačítek v nabídce **Výchozí nastavení objednávky** &gt; **Zobrazení sloupce**.
 
 ### <a name="specific-order-settings-for-released-product-variant"></a>Specifické nastavení objednávky pro variantu uvolněného produktu
 

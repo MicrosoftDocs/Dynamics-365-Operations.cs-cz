@@ -1,16 +1,16 @@
 ---
 title: "Definice řádku v návrháři finanční sestavy"
 description: "Definice řádku je součástí sestavy nebo stavebního bloku, který určuje obsah jednotlivých řádků ve finanční sestavě. Definici řádku lze kombinovat s definicemi sloupců, definicemi stromu výkaznictví a definicemi sestav a vytvořit tak skupinu stavebních bloků, které může používat více společností."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 42 - 39
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: a2f92effd1cfdc1d5da2c5ec895c0487a6fc82a4
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: aa9fcc4d0c122d2355362b75ca210af4c2ef4338
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="row-definitions-in-financial-report-designer"></a>Definice řádku v návrháři finanční sestavy
+
+[!include[banner](../includes/banner.md)]
+
 
 Definice řádku je součástí sestavy nebo stavebního bloku, který určuje obsah jednotlivých řádků ve finanční sestavě. Definici řádku lze kombinovat s definicemi sloupců, definicemi stromu výkaznictví a definicemi sestav a vytvořit tak skupinu stavebních bloků, které může používat více společností.
 
@@ -72,8 +76,8 @@ Chcete-li přidat dimenze do definice řádku, proveďte následující kroky.
 
 1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2.  V nabídce **Upravit** klikněte na tlačítko **Vložit řádky z dimenzí**.
-3.  V dialogovém okně **Vložit řádky z dimenzí **vyberte v řádku **Dimenze** buňku dimenze, která má být převedena do definice řádku, a klikněte na tlačítko **Všechny &&&**.
-4.  Chcete-li omezit definici řádku na určitý rozsah hodnot dimenzí, zadejte počáteční hodnotu dimenze do buňky ** Počátek rozsahu dimenzí **a poté zadejte konečnou hodnotu dimenze do buňky **Konec rozsahu dimenzí**. Chcete-li zahrnout všechny hodnoty pro vybranou dimenzi, nevyplňujte tyto buňky. **Poznámka:** Zástupné znaky (\* nebo ?) v rozsahu dimenze nemusí vrátit všechny požadované výsledky; záleží na tom, jak databáze ERP třídí data.
+3.  V dialogovém okně **Vložit řádky z dimenzí**vyberte v řádku **Dimenze** buňku dimenze, která má být převedena do definice řádku, a klikněte na tlačítko **Všechny &&&**.
+4.  Chcete-li omezit definici řádku na určitý rozsah hodnot dimenzí, zadejte počáteční hodnotu dimenze do buňky **Počátek rozsahu dimenzí**a poté zadejte konečnou hodnotu dimenze do buňky **Konec rozsahu dimenzí**. Chcete-li zahrnout všechny hodnoty pro vybranou dimenzi, nevyplňujte tyto buňky. **Poznámka:** Zástupné znaky (\* nebo ?) v rozsahu dimenze nemusí vrátit všechny požadované výsledky; záleží na tom, jak databáze ERP třídí data.
 5.  V poli **Kód počátečního řádku** určete kód řádku pro první hodnotu dimenze, která má být přidána do definice řádku.
 6.  V poli **Zvýšit každý řádek o** určete mezeru mezi po sobě jdoucími kódy řádků. Například pokud je kód prvního řádku 100 a přírůstek je 30, první nové řádky budou mít kódy 100, 130, 160, 190 a 220. Použijte hodnotu přírůstku, která zajistí dostatek prostoru pro vkládání nových řádků formátu a vzorců.
 7.  Klepněte na tlačítko **OK**. Pro každý řádek vybrané hodnoty dimenze je přidán jeden řádek do definice řádku.
@@ -97,9 +101,9 @@ Chcete-li upravit zaokrouhlování v rozvaze, proveďte následující kroky.
     -   **Řádek součtu závazků a jmění** – kód řádku v rozvaze, který obsahuje součet závazků a jmění.
     -   **Limit částky úpravy** – limit pro automatické úpravy vyjádřený jako kladné celé číslo. Tato částka se porovnává s absolutní hodnotou skutečného rozdílu zaokrouhlení.
 
-    **Poznámka: **Tyto kódy řádků musejí být propojeny s finančními daty. Jinak řečeno, řádek musí mít hodnotu dimenze v buňce **Odkaz na finanční dimenze**. **Neodkazujte** na řádek popisu (**DESC**), výpočtu (**CALC**) nebo součtu (**TOT**).
+    **Poznámka:**Tyto kódy řádků musejí být propojeny s finančními daty. Jinak řečeno, řádek musí mít hodnotu dimenze v buňce **Odkaz na finanční dimenze**. **Neodkazujte** na řádek popisu (**DESC**), výpočtu (**CALC**) nebo součtu (**TOT**).
 
-Částky ve vaší rozvaze budou vyrovnávány rovnoměrně při zapnutém zaokrouhlování. **Poznámka: **Limit úpravy je použit na základě možnosti **Přesnost zaokrouhlování**, která je určena pro definici sestavy. Pokud například vyberete zaokrouhlení sestavy na tisíce a zadáte hodnotu **2** do pole **Limit částky úpravy**, zobrazí se upozornění, když se hodnota identifikovaná v poli **Řádek vyrovnání rozdílů po zaokrouhlení** zvýší nebo sníží o více než 2 000 Kč.
+Částky ve vaší rozvaze budou vyrovnávány rovnoměrně při zapnutém zaokrouhlování. **Poznámka:**Limit úpravy je použit na základě možnosti **Přesnost zaokrouhlování**, která je určena pro definici sestavy. Pokud například vyberete zaokrouhlení sestavy na tisíce a zadáte hodnotu **2** do pole **Limit částky úpravy**, zobrazí se upozornění, když se hodnota identifikovaná v poli **Řádek vyrovnání rozdílů po zaokrouhlení** zvýší nebo sníží o více než 2 000 Kč.
 
 ## <a name="format-row-and-column-text"></a>Formátování textu řádků a sloupců
 Změnou písma a formátováním textu můžete přizpůsobit vzhled sestav. Následující části vysvětlují formátování vzhledu řádků a sloupců v sestavách.
@@ -173,6 +177,8 @@ K usnadnění zobrazování sloupců, se kterými pracujete v definici řádku, 
 <a name="see-also"></a>Viz také
 --------
 
-[Finanční výkaznictví v aplikaci Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
+[Finanční výkaznictví](financial-reporting-intro.md)
+
+
 
 

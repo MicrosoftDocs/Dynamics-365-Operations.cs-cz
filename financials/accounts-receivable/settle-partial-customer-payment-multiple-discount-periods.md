@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 9da48c7861f48ec2a154ac12616149d1208346cf
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 31c3354590935b40ecadd3a2fb380f4f103eb2b7
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -44,20 +45,20 @@ Společnost Fabrikam nabízí odběrateli 4031 dvě období pokladních slev. Od
 | 7/9/2015           | 10,00                | 990,00                         |
 | 25. 7. 2015          | 0,00                 | 1 000,00                       |
 
-Arnold tyto transakce můžete zobrazit na stránce** Transakce odběratele**.
+Arnold tyto transakce můžete zobrazit na stránce**Transakce odběratele**.
 
 | Doklad   | Typ transakce | Datum      | Faktura | Částka Má dáti v transakční měně | Částka Dal v transakční měně | Zůstatek  | Měna |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
 | FTI-10030 | Faktura          | 25. 6. 2015 | 10030   | 1 000,00                             |                                       | 1 000,00 | USD      |
 
 ## <a name="partial-payment-before-the-cash-discount-date"></a>Částečná platba před datem pro platební slevu
-Dne 28. června provede odběratel 4031 částečné platbu ve výši 294,00. Vzhledem k tomu, že 28. června spadá do období první platební slevy, odběratele má slevu 6,00. Na stránce **Vyrovnat transakce** je hodnota** částky platební slevy** 20,00, a hodnota **částka platební slevy k přijetí** je 6,00.
+Dne 28. června provede odběratel 4031 částečné platbu ve výši 294,00. Vzhledem k tomu, že 28. června spadá do období první platební slevy, odběratele má slevu 6,00. Na stránce **Vyrovnat transakce** je hodnota**částky platební slevy** 20,00, a hodnota **částka platební slevy k přijetí** je 6,00.
 
 | Označit     | Použít platební slevu | Doklad   | Účet | Datum      | Datum splatnosti  | Faktura | Částka v měně transakce | Měna | Částka k vyrovnání |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
 | Vybrané | Normální            | FTI-10030 | 4031    | 25. 6. 2015 | 25. 7. 2015 | 10030   | 1 000,00                       | USD      | 294,00           |
 
-Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**. Pokud nezměníte hodnotu **Částka k vyrovnání** na hodnotu **294,00**, hodnoty **Částka platební slevy**, které se zobrazí, se budou lišit. Avšak 6,00 bude získáno jako platební sleva při zaúčtování platby, protože vyrovnání automaticky nastaví hodnotu **Částka k vyrovnání **za vás.
+Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**. Pokud nezměníte hodnotu **Částka k vyrovnání** na hodnotu **294,00**, hodnoty **Částka platební slevy**, které se zobrazí, se budou lišit. Avšak 6,00 bude získáno jako platební sleva při zaúčtování platby, protože vyrovnání automaticky nastaví hodnotu **Částka k vyrovnání**za vás.
 
 |                              |           |
 |------------------------------|-----------|

@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3b16ef53f9fb57a6663db0be1f7e0a57471db2fb
-ms.openlocfilehash: 7025072cd29aac4ceb13b5594c3e321350777cf1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 11fa0f0afa7ab400c87d6e7558292385ae80c8b2
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -51,10 +52,10 @@ Například můžete nabídnout platební slevu 2 %, pokud bude faktura proplace
 ## <a name="credit-notes-with-discounts"></a>Dobropisy se slevami
 Pokud odběratel vrátí některé položky na faktuře, můžete vydat dobropis. Jestliže byla v rámci původní faktury přijata platební sleva, musí být dobropis pro odběratele snížen o platební slevu, která byla přijata odběratelem. Pokud je možnost **Vypočítat platební slevy pro dobropisy** nastavena na hodnotu **Ano** na stránce **Parametry pohledávek**, sleva je automaticky vypočtena pro dobropis. 
 
-Například je mohli nabídnout platební podmínky specifikující platební slevu 2 %, pokud bude faktura proplacena do 10 dnů po vydání. Byla zaúčtována faktura na 100,00 a odběratel přijal platební slevu. Pokud odběratel vrátí zboží a vystavíte mu dobropis, můžete zadat dobropis na -100,00. Při prohlížení dobropisu na stránce **Vyrovnat otevřené transakce** se zobrazí částka** 98,00** v poli **Částka k vyrovnání** a částka **-2,00** v poli **Částka platební slevy**. Částka slevy je zaúčtována na účet platební slevy.
+Například je mohli nabídnout platební podmínky specifikující platební slevu 2 %, pokud bude faktura proplacena do 10 dnů po vydání. Byla zaúčtována faktura na 100,00 a odběratel přijal platební slevu. Pokud odběratel vrátí zboží a vystavíte mu dobropis, můžete zadat dobropis na -100,00. Při prohlížení dobropisu na stránce **Vyrovnat otevřené transakce** se zobrazí částka**98,00** v poli **Částka k vyrovnání** a částka **-2,00** v poli **Částka platební slevy**. Částka slevy je zaúčtována na účet platební slevy.
 
 ## <a name="overpaymentunderpayment-amounts"></a>Částky přeplatku nebo nedoplatku
-Když odběratel uskuteční platbu, může stále existovat velmi malá částka, která ještě musí být vyrovnána. Například můžete odběrateli fakturovat částku 1 000,00 a odběratel zaplatí 999,90. Je-li zůstatek nižší než částka zadaná pro přeplatky nebo nedoplatky na stránce** Parametry pohledávek**, rozdíl se automaticky zaúčtuje na účet hlavní knihy pro přeplatky a nedoplatky.
+Když odběratel uskuteční platbu, může stále existovat velmi malá částka, která ještě musí být vyrovnána. Například můžete odběrateli fakturovat částku 1 000,00 a odběratel zaplatí 999,90. Je-li zůstatek nižší než částka zadaná pro přeplatky nebo nedoplatky na stránce**Parametry pohledávek**, rozdíl se automaticky zaúčtuje na účet hlavní knihy pro přeplatky a nedoplatky.
 
 ## <a name="full-settlement"></a>Úplné vyrovnání
 Odběratelé mohou provést částečnou platbu, kde se zbývající částka nezaplatí, ale je větší než částka nedoplatku, který je uveden na stránce **Parametry závazků**. Pokud chcete označit fakturu jako zcela vyrovnanou, můžete použít možnost **Úplné vyrovnání** na stránce **Vyrovnání transakce**. (Funkci úplného vyrovnání lze povolit pomocí konfiguračního klíče.) Například bude faktura zaúčtována na částku 1 000,00 a odběratel provede platbu ve výši 990,00. Dohodli jste se, že odběratel nemusí zaplatit zbývající částku 10. Po označení faktury pro vyrovnání můžete také označit výběr **Úplné vyrovnání**. Faktura bude poté považována za úplně vyrovnanou. Rozdíl 10,00 je zaúčtován na účet pro platební slevy jako částka dodatečné platební slevy.

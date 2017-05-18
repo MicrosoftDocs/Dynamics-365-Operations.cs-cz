@@ -1,9 +1,9 @@
 ---
 title: "Obnovení datového tržiště finančního vykazování po obnovení databáze"
 description: "Toto téma popisuje, jak obnovit datový trh finančního výkaznictví po obnovení databázeMicrosoft Dynamics 365 for Operations."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-08 16 - 20 - 13
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 3967cbb869fbb23d5d7716f619e4c22b4a273921
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d4ce390c62cbfb1f693410b004aa296c0ed75eb2
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="reset-the-financial-reporting-data-mart-after-restoring-a-database"></a>Obnovení datového tržiště finančního vykazování po obnovení databáze
+
+[!include[banner](../includes/banner.md)]
+
 
 Toto téma popisuje, jak obnovit datový trh finančního výkaznictví po obnovení databázeMicrosoft Dynamics 365 for Operations. 
 
@@ -43,7 +47,11 @@ Nejprve exportujte návrhy sestavy z Návrháře sestav pomocí následujících
 5.  Zadejte název souboru a vyberte bezpečné místo, kam chcete uložit exportované definice sestavy.
 6.  Klikněte na možnost **Uložit**.
 
-Soubor lze zkopírovat nebo nahrát do bezpečného umístění, odkud ho lze později importovat do jiného prostředí. Informace o použití účtu úložiště Microsoft Azure naleznete v části [Přenos dat pomocí nástroje příkazového řádku AzCopy](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). **Poznámka:** Microsoft neposkytuje úložiště účtu v rámci vaší smlouvy na aplikaci Dynamics 365 for Operations. Musíte zakoupit účet úložiště nebo použít účet úložiště ze samostatného předplatného Azure. **Důležité:** Musíte znát chování jednotky D na Azure Virtual Machines. Nenechávejte zde exportované stavební skupiny trvale. Další informace o dočasných jednotkách viz [Principy dočasné jednotky na Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+Soubor lze zkopírovat nebo nahrát do bezpečného umístění, odkud ho lze později importovat do jiného prostředí. Informace o použití účtu úložiště Microsoft Azure naleznete v části [Přenos dat pomocí nástroje příkazového řádku AzCopy](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). 
+> [!NOTE]
+> Microsoft neposkytuje úložiště účtu v rámci vaší smlouvy na aplikaci Dynamics 365 for Operations. Musíte zakoupit účet úložiště nebo použít účet úložiště ze samostatného předplatného Azure. 
+> [!WARNING]
+> Musíte znát chování jednotky D na Azure Virtual Machines. Nenechávejte zde exportované stavební skupiny trvale. Další informace o dočasných jednotkách viz [Principy dočasné jednotky na Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
 ## <a name="stop-services"></a>Ukončení služeb
 Pomocí připojení ke vzdálené ploše se připojte ke všem počítačům v prostředí a zastavte následující služby systému Windows pomocí services.msc:
@@ -96,7 +104,9 @@ Pomocí services.msc restartujte dříve zastavené služby:
 Importujte návrhy sestavy z Návrháře sestav pomocí souboru vytvořeného během exportu:
 
 1.  V Návrháři sestav přejděte na **Společnost** &gt; **Skupiny stavebních bloků**.
-2.  Vyberte skupinu stavebních bloků k exportu a klepněte na tlačítko **Export**. **Poznámka:** pro Dynamics 365 for Operations je podporována pouze jedna skupina stavebních bloků, **výchozí**.
+2.  Vyberte skupinu stavebních bloků k exportu a klepněte na tlačítko **Export**. 
+    > [!NOTE]
+    > Pro Dynamics 365 for Operations je podporována pouze jedna skupina stavebních bloků, a to skupina **Výchozí**.
 3.  Vyberte stavební blok **Výchozí** a klikněte na **Import**.
 4.  Vyberte soubor obsahující definice exportované sestavy a klepněte na tlačítko **Otevřít**.
 5.  V dialogovém okně Import vyberte definice sestavy k importu:
@@ -104,6 +114,8 @@ Importujte návrhy sestavy z Návrháře sestav pomocí souboru vytvořeného b�
     -   Chcete-li importovat konkrétní sestavy, řádky, sloupce, stromy či sady dimenzí, vyberte sestavy, řádky, sloupce, stromy a sady dimenzí k importu.
 
 6.  Klepněte na tlačítko **Import**.
+
+
 
 
 

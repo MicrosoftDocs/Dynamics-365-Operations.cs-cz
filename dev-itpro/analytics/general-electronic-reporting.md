@@ -18,10 +18,11 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: b3e8174d07c9b9fd4210486c369c640fe07c49eb
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: abe9212372fb7429d68c1fb6b32ec1d15c20a6d7
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -47,7 +48,7 @@ Modul EV má následující možnosti:
 ## <a name="concepts"></a>Koncepty
 ### <a name="components"></a>Součásti
 
-EV podporuje dva typy komponentů: **Datový model **a **Formát**.
+EV podporuje dva typy komponentů: **Datový model** a **Formát**.
 
 #### <a name="data-model-components"></a>Komponenty datového modelu
 
@@ -93,9 +94,9 @@ Komponenta formátu umožňuje připojit určité soubory, které lze použít v
 Komponenty EV podporují správu verzí je podporována. Následující workflow je k dispozici pro správu změn v komponentách EV:
 
 -   Verze, která je původně vytvořena, je označena jako verze **NÁVRH**. Tato verze může být upravena a je k dispozici pro zkušební běh.
--   Verzi** NÁVRH** lze převést na verzi **DOKONČENO**. Tuto verzi lze použít v místních procesů vykazování.
+-   Verzi **NÁVRH** lze převést na verzi **DOKONČENO**. Tuto verzi lze použít v místních procesů vykazování.
 -   **DOKONČENOU** verzi lze převést na **SDÍLENOU**. Tato verze je publikována v LCS a lze ji použít v globálních procesech vykazování.
--   Verzi **SDÍLENO **lze převést na verzi **UKONČENO**. Tuto verzi můžete potom odstranit.
+-   Verzi **SDÍLENO** lze převést na verzi **UKONČENO**. Tuto verzi můžete potom odstranit.
 
 Verze ve stavu ** DOKONČENO** nebo **SDÍLENO** jsou k dispozici jsou pro jinou výměnu dat. U komponenty s těmito stavy můžete provádět následující akce:
 
@@ -104,7 +105,7 @@ Verze ve stavu ** DOKONČENO** nebo **SDÍLENO** jsou k dispozici jsou pro jino
 
 #### <a name="component-date-effectivity"></a>Datum platnosti komponenty
 
-Verze komponent EV jsou časově platná. Datum** Platné od **lze definovat pro komponentu EV, chcete-li zadat datum, od kterého tato komponenta začne být platná pro proces vykazování. Datum relace aplikace Microsoft Dynamics 365 for Operations slouží k definování, zda komponenta je platná pro spuštění. Poslední verze slouží k procesu vykazování při více než jedné platné verzi pro konkrétní datum.
+Verze komponent EV jsou časově platná. Datum **Platné od** lze definovat pro komponentu EV, chcete-li zadat datum, od kterého tato komponenta začne být platná pro proces vykazování. Datum relace aplikace Microsoft Dynamics 365 for Operations slouží k definování, zda komponenta je platná pro spuštění. Poslední verze slouží k procesu vykazování při více než jedné platné verzi pro konkrétní datum.
 
 #### <a name="component-access"></a>Přístup komponent
 
@@ -112,7 +113,7 @@ Přístup ke komponentám formátu EV závisí na nastavení ISO kódu země/obl
 
 #### <a name="configuration"></a>Konfigurace
 
-Konfigurace EV je obal určité součásti EV: buď **Datového modelu **nebo **Formátu**. Konfiguraci mohou obalovat různé verze určitých součástí EV. Každá konfigurace je označena jako vlastní určitou konfigurací poskytovatele. Verze **NÁVRH** komponent z konfigurace lze upravit po zvolení vlastníka konfigurace jako aktivního poskytovatele v nastavení EV v aplikaci Dynamics 365 for Operations. Každá konfigurace modelu obsahuje komponentu **Datový model**. Nová konfigurace formátu může pocházet (být odvozena) z konfigurace určitého datového modelu. Konfigurace vytvořeného formátu se zobrazí ve stromové struktuře konfigurace jako konfigurace podřízená původní konfiguraci datového modelu. Konfigurace vytvořeného formátu obsahuje komponentu **Formát**. Komponenta **Datový model** původní konfigurace modelu bude automaticky vložena do komponenty **Formát **vytvořené z podřízené konfigurace formátu jako výchozího datového zdroje. Konfigurace EV je sdílená pro společnosti aplikace Dynamics 365 for Operations.
+Konfigurace EV je obal určité součásti EV: buď **Datového modelu** nebo **Formátu**. Konfiguraci mohou obalovat různé verze určitých součástí EV. Každá konfigurace je označena jako vlastní určitou konfigurací poskytovatele. Verze **NÁVRH** komponent z konfigurace lze upravit po zvolení vlastníka konfigurace jako aktivního poskytovatele v nastavení EV v aplikaci Dynamics 365 for Operations. Každá konfigurace modelu obsahuje komponentu **Datový model**. Nová konfigurace formátu může pocházet (být odvozena) z konfigurace určitého datového modelu. Konfigurace vytvořeného formátu se zobrazí ve stromové struktuře konfigurace jako konfigurace podřízená původní konfiguraci datového modelu. Konfigurace vytvořeného formátu obsahuje komponentu **Formát**. Komponenta **Datový model** původní konfigurace modelu bude automaticky vložena do komponenty **Formát** vytvořené z podřízené konfigurace formátu jako výchozího datového zdroje. Konfigurace EV je sdílená pro společnosti aplikace Dynamics 365 for Operations.
 
 #### <a name="provider"></a>Zprostředkovatel
 
@@ -120,7 +121,7 @@ Poskytovatel EV je identifikací strany, která se používá k označení autor
 
 #### <a name="repository"></a>Úložiště
 
-Úložiště EV obsahuje konfigurace EV. Následující typy úložiště EV jsou aktuálně podporovány: **Zdroje Operations** a **projekt LCS**. Úložiště zdrojů ** Operations** poskytuje přístup k seznamu konfigurací, které jsou dodávány jako součást řešení Dynamics 365 for Operations společností Microsoft jako zprostředkovatelem konfigurace EV. Tyto konfigurace lze importovat do aktuální instance aplikace Dynamics 365 for Operations a používat pro elektronické sestavy. Můžete je používat pro další lokalizace a přizpůsobení. Úložiště **projektu LCS **poskytuje přístup k seznamu konfigurací určitého projektu LCS (knihovny majetku projektu LCS), který byl vybrán ve fázi registrace úložiště. EV podporuje schopnost odeslat sdílené konfigurace z aktuální instance aplikace Dynamics 365 for Operations do určitého úložiště **projektu LCS**. Můžete také importovat konfigurace z určitého úložiště **projektu LCS** do aktuální instance aplikace Dynamics 365 for Operations. Požadovaná úložiště **LCS projektu** lze registrovat pro jednotlivé poskytovatele konfigurace jednotlivě z aktuální instance aplikace Dynamics 365 for Operations. Každé úložiště může být určeno konkrétnímu poskytovateli konfigurace.
+Úložiště EV obsahuje konfigurace EV. Následující typy úložiště EV jsou aktuálně podporovány: **Zdroje Operations** a **projekt LCS**. Úložiště zdrojů ** Operations** poskytuje přístup k seznamu konfigurací, které jsou dodávány jako součást řešení Dynamics 365 for Operations společností Microsoft jako zprostředkovatelem konfigurace EV. Tyto konfigurace lze importovat do aktuální instance aplikace Dynamics 365 for Operations a používat pro elektronické sestavy. Můžete je používat pro další lokalizace a přizpůsobení. Úložiště **projektu LCS** poskytuje přístup k seznamu konfigurací určitého projektu LCS (knihovny majetku projektu LCS), který byl vybrán ve fázi registrace úložiště. EV podporuje schopnost odeslat sdílené konfigurace z aktuální instance aplikace Dynamics 365 for Operations do určitého úložiště **projektu LCS**. Můžete také importovat konfigurace z určitého úložiště **projektu LCS** do aktuální instance aplikace Dynamics 365 for Operations. Požadovaná úložiště **LCS projektu** lze registrovat pro jednotlivé poskytovatele konfigurace jednotlivě z aktuální instance aplikace Dynamics 365 for Operations. Každé úložiště může být určeno konkrétnímu poskytovateli konfigurace.
 
 ## <a name="supported-scenarios"></a>Podporované scénáře
 ### <a name="building-a-data-model"></a>Vytvoření datového modelu
@@ -154,7 +155,7 @@ Návrhář formátu EV slouží k vytvoření konkrétních elektronický dokume
 
 ### <a name="storing-a-designed-format-component-in-a-format-configuration"></a>Uložení navržené komponenty formátu do konfigurace formátu
 
-EV umožňuje ukládat navržený formát společně s konfigurovanými mapováními dat jako konfiguraci formátu aktuální instance aplikace Dynamics 365 for Operations. Na předchozím obrázku je uveden příklad tohoto typu konfigurace formátu (**BACS (UK)**, který je podřízený konfiguraci **Platební model **). K seznámení se s tímto scénářem v podrobnostech si přehrajte průvodce úkolem **Elektronické vykazování – návrh formátu pro určitou doménu** (součástí obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**).
+EV umožňuje ukládat navržený formát společně s konfigurovanými mapováními dat jako konfiguraci formátu aktuální instance aplikace Dynamics 365 for Operations. Na předchozím obrázku je uveden příklad tohoto typu konfigurace formátu (**BACS (UK)**, který je podřízený konfiguraci **Platební model**). K seznámení se s tímto scénářem v podrobnostech si přehrajte průvodce úkolem **Elektronické vykazování – návrh formátu pro určitou doménu** (součástí obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**).
 
 ### <a name="configuring-dynamics-365-for-operations-to-start-to-use-a-created-format-internally"></a>Konfigurace aplikace Dynamics 365 for Operations k použití interně vytvořeného formátu
 
@@ -169,11 +170,11 @@ K seznámení se s tímto scénářem v podrobnostech si přehrajte průvodce ú
 ## <a name="handling-er-components"></a>Zpracování komponent EV
 ### <a name="publishing-an-er-component-in-lcs-to-offer-it-externally-localization"></a>Publikování komponent EV v LCS pro jejich externímu nabízení (lokalizace)
 
-Vlastník vytvořené součásti (modelu nebo formátu) je schopen používat EV pro publikování dokončené verze součásti do LCS. Je požadováno úložiště typu **projekt LCS **pro aktuálního zprostředkovatele konfigurací EV. Při změně stavu dokončené verze součásti z **DOKONČENO** na **SDÍLENO**, je tato verze publikována do LCS. Při publikování komponenty do LCS se vlastník této součásti stane poskytovatelem služby pro podporu této součásti. Například pokud součást formátu slouží ke generování zákonem požadovaných elektronických dokumentů (například podle scénáře lokalizace), předpokládá se, že tento formát splňuje změny právních předpisů, a že poskytovatel vydává nové verze pokaždé, když musí podporovat nové právní požadavky. K seznámení se s tímto scénářem v podrobnostech si přehrajte průvodce úkolem **Odeslání konfigurace ER do služby Lifecycle Services **(součástí obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**).
+Vlastník vytvořené součásti (modelu nebo formátu) je schopen používat EV pro publikování dokončené verze součásti do LCS. Je požadováno úložiště typu **projekt LCS**pro aktuálního zprostředkovatele konfigurací EV. Při změně stavu dokončené verze součásti z **DOKONČENO** na **SDÍLENO**, je tato verze publikována do LCS. Při publikování komponenty do LCS se vlastník této součásti stane poskytovatelem služby pro podporu této součásti. Například pokud součást formátu slouží ke generování zákonem požadovaných elektronických dokumentů (například podle scénáře lokalizace), předpokládá se, že tento formát splňuje změny právních předpisů, a že poskytovatel vydává nové verze pokaždé, když musí podporovat nové právní požadavky. K seznámení se s tímto scénářem v podrobnostech si přehrajte průvodce úkolem **Odeslání konfigurace ER do služby Lifecycle Services**(součástí obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**).
 
 ### <a name="importing-an-er-component-from-lcs-to-use-it-internally"></a>Import součásti EV z LCS pro interní použití
 
-EV umožňuje importovat komponenty EV z LCS do aktuální instance Dynamics 365 for Operations. Je požadováno úložiště typu **projekt LCS **. Při importu komponent EV z LCS do aktuální instance aplikace Dynamics AX, vlastník této instance Dynamics 365 for Operations se stane příjemcem služby poskytované vlastníkem importované komponenty (autorem). Například pokud tato komponenta formátu umožňuje generovat konkrétní elektronické dokumenty z aplikace Microsoft Dynamics 365 for Operations v určitém formátu některé země/oblasti (scénář lokalizace), předpokládá se, že uživatel dané služby bude mít možnost získat jakoukoli aktualizaci pro tento formát, a udržován ho v souladu s právními požadavky. K seznámení se s tímto scénářem v podrobnostech si přehrajte průvodce úkolem **Import konfigurace ER ze služby Lifecycle Services** (součástí obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**).
+EV umožňuje importovat komponenty EV z LCS do aktuální instance Dynamics 365 for Operations. Je požadováno úložiště typu **projekt LCS**. Při importu komponent EV z LCS do aktuální instance aplikace Dynamics AX, vlastník této instance Dynamics 365 for Operations se stane příjemcem služby poskytované vlastníkem importované komponenty (autorem). Například pokud tato komponenta formátu umožňuje generovat konkrétní elektronické dokumenty z aplikace Microsoft Dynamics 365 for Operations v určitém formátu některé země/oblasti (scénář lokalizace), předpokládá se, že uživatel dané služby bude mít možnost získat jakoukoli aktualizaci pro tento formát, a udržován ho v souladu s právními požadavky. K seznámení se s tímto scénářem v podrobnostech si přehrajte průvodce úkolem **Import konfigurace ER ze služby Lifecycle Services** (součástí obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**).
 
 ### <a name="building-a-format-selecting-another-format-as-a-base-customization"></a>Vytvoření formátu výběrem jiného formátu jako základu (přizpůsobení)
 

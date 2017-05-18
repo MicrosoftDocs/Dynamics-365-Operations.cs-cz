@@ -3,7 +3,7 @@ title: "Obsah analýzy nákladového účetnictví v Power BI"
 description: "Toto téma popisuje, co je součástí obsahu analýzy nákladového účetnictví v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-02-10 15 - 07 - 47
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,25 +16,31 @@ ms.search.region: Global
 ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 50e7bd92ee693f59fd013226aee22bd1a54c81e2
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: be4165f58b17bed0b0984b760fd8eea09267a251
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="cost-accounting-analysis-power-bi-content"></a>Obsah analýzy nákladového účetnictví v Power BI
 
+[!include[banner](../includes/banner.md)]
+
+
 Toto téma popisuje, co je součástí obsahu analýzy nákladového účetnictví v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
 <a name="overview"></a>Přehled
 --------
 
-Obsah **analýzy nákladového účetnictví** v sadě nástrojů Microsoft Power BI je určen pro kontrolory nákladů nebo jakoukoli osobu, která je odpovědná za provádění kontroly nákladů organizace. Zahrnuje klíčové metriky, jako jsou náklady, velikost a nákladové sazby podle skutečných nákladů, rozpočtových nákladů a nákladů pružného rozpočtu. Používá data transakce z nákladového účetnictví v aplikaci Microsoft Dynamics 365 for Operations a poskytuje agregované zobrazení nákladů pro celou organizaci v jedné měně vykazování. Manažeři mohou data filtrovat podle objektů nákladů pro provádění kontroly nákladů jejich organizačních jednotek, a to i v případě, že organizace má několik právnických osob. Vzhledem k tomu, že obsah **analýzy nákladového účetnictví** v Power BI zvýrazňuje rozdíly mezi skutečnými náklady a rozpočtovými náklady, mohou být manažeři upozorněni na pozitivní a negativní trendy pro jejich provozní jednotky. Manažeři mohou rozbalit hierarchie prvků nákladů nebo prvky individuálních nákladů a získat podrobný přehled o tom, jak došlo k odchylkám nákladů, a potom přijmout účinná opatření. Obsah **analýzy nákladového účetnictví** v Power BI umožní účetním analyzovat způsoby, jakými náklady prochází přes objekty nákladů v celé organizaci. Další informace o nákladovém účetnictví naleznete v tématu [Domovská stránka nákladového účetnictví](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page.md). Definováním zabezpečení na úrovni přístupu v nákladovém účetnictví a jejím zkombinováním se zabezpečením na úrovni řádků v Power BI můžete povolit všem vlastníkům objektů nákladů přístup k obsahu **analýzy nákladového účetnictví** v Power BI. Všechna data ve vizualizaci budou poté vyfiltrována na základě úroveň přístupu, který je řízen v nákladovém účetnictví. Další informace o zabezpečení na úrovni přístupu a zabezpečení na úrovni řádku, naleznete v [Nastavení zabezpečení pro obsah nákladového účetnictví v Power BI](setup-security-cost-accounting-content-pack.md).
+Obsah **analýzy nákladového účetnictví** v sadě nástrojů Microsoft Power BI je určen pro kontrolory nákladů nebo jakoukoli osobu, která je odpovědná za provádění kontroly nákladů organizace. Zahrnuje klíčové metriky, jako jsou náklady, velikost a nákladové sazby podle skutečných nákladů, rozpočtových nákladů a nákladů pružného rozpočtu. Používá data transakce z nákladového účetnictví v aplikaci Microsoft Dynamics 365 for Operations a poskytuje agregované zobrazení nákladů pro celou organizaci v jedné měně vykazování. Manažeři mohou data filtrovat podle objektů nákladů pro provádění kontroly nákladů jejich organizačních jednotek, a to i v případě, že organizace má několik právnických osob. Vzhledem k tomu, že obsah **analýzy nákladového účetnictví** v Power BI zvýrazňuje rozdíly mezi skutečnými náklady a rozpočtovými náklady, mohou být manažeři upozorněni na pozitivní a negativní trendy pro jejich provozní jednotky. Manažeři mohou rozbalit hierarchie prvků nákladů nebo prvky individuálních nákladů a získat podrobný přehled o tom, jak došlo k odchylkám nákladů, a potom přijmout účinná opatření. Obsah **analýzy nákladového účetnictví** v Power BI umožní účetním analyzovat způsoby, jakými náklady prochází přes objekty nákladů v celé organizaci. Další informace o nákladovém účetnictví naleznete v tématu [Domovská stránka nákladového účetnictví](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page). Definováním zabezpečení na úrovni přístupu v nákladovém účetnictví a jejím zkombinováním se zabezpečením na úrovni řádků v Power BI můžete povolit všem vlastníkům objektů nákladů přístup k obsahu **analýzy nákladového účetnictví** v Power BI. Všechna data ve vizualizaci budou poté vyfiltrována na základě úroveň přístupu, který je řízen v nákladovém účetnictví. Další informace o zabezpečení na úrovni přístupu a zabezpečení na úrovni řádku, naleznete v [Nastavení zabezpečení pro obsah nákladového účetnictví v Power BI](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Obsah **analýzy nákladového účetnictví** v Power BI naleznete v knihovně sdíleného majetku ve službě Microsoft Dynamics Lifecycle Services (LCS). Další informace o stažení obsahu a připojení k datům aplikace Dynamics 365 for Operations naleznete v tématu [Obsah Power BI v LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md). **Poznámka:** KB4011327 ** ** je nezbytným předpokladem pro obsah **analýzy nákladového účetnictví** v Power BI.  Po přihlášení ke službě Lifecycle Services můžete přejít k článku znalostní báze zde: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+Obsah **analýzy nákladového účetnictví** v Power BI naleznete v knihovně sdíleného majetku ve službě Microsoft Dynamics Lifecycle Services (LCS). Další informace o stažení obsahu a připojení k datům aplikace Dynamics 365 for Operations naleznete v tématu [Obsah Power BI v LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md). 
+
+> POZNÁMKA – Předpokladem pro tento obsah Power BI je **KB4011327**. Po přihlášení ke službě Lifecycle Services můžete přejít k článku znalostní báze zde: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriky, které jsou součástí obsahu Power BI
 Obsah zahrnuje sadu stránek sestav. Každá stránka obsahuje sadu metrik, které jsou zobrazovány jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizace v obsahu **analýzy nákladového účetnictví** v Power BI.
@@ -60,7 +66,7 @@ Obsah zahrnuje sadu stránek sestav. Každá stránka obsahuje sadu metrik, kter
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
 Data aplikace Dynamics 365 for Operations se používají k naplnění stránek sestavy v obsahu **analýzy nákladového účetnictví** v Power BI. Tato data jsou reprezentována jako měrné systémy agregace, které jsou rozfázovány v úložišti entit, což je databáze Microsoft SQL optimalizována pro analýzy. Další informace naleznete v tématu [Přehled integrace Power BI úložištěm entit](power-bi-integration-entity-store.md). Následujících klíčové měrné systémy agregace byly použity jako základ obsahu.
 
-| Celek                  | Klíčové měrné systémy agregace | Zdroj dat pro aplikaci Dynamics 365 for Operations | Pole     | popis                                   |
+| Celek                  | Klíčové měření agregace | Zdroj dat pro aplikaci Dynamics 365 for Operations | Pole     | popis                                   |
 |-------------------------|---------------------------|---------------------------------------------|-----------|-----------------------------------------------|
 | Položky nákladového účetnictví | SUM(Částka)               | CAMDATAAggregatedCostEntry                  | Částka    | Částka v měně hlavní knihy nákladového účetnictví |
 | Statistické položky     | SUM(Velikost)            | CAMDATAAggregatedStatisctialEntry           | Hodnota |                                               |
@@ -117,5 +123,7 @@ Zde uvádíme některé užitečné odkazy související s entitami a vytvářen
 -   [Modelování dat pomocí aplikace Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Přidání dlaždic Power BI do pracovních prostorů](configure-power-bi-integration.md)
 -   [Nastavení zabezpečení pro obsah nákladového účetnictví v Power BI](setup-security-cost-accounting-content-pack.md)
+
+
 
 

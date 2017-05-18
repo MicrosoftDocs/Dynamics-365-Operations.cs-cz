@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4bb647cfd3f012efbffa93a81462c538a24ac850
-ms.openlocfilehash: 8965c193839002776b3c61036b23b54625c974a4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 734bf8a5cd71d218942e1a57fbb6af8fef4dc998
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -39,10 +40,10 @@ Všechna individuální nastavení kteréhokoli typu, které uživatel v aplikac
 ## <a name="systemwide-options-for-the-current-user"></a>Systémové možnosti pro aktuálního uživatele
 Navigační panel obsahuje obrázek ozubeného kola, který se nazývá tlačítko nabídky **Nastavení**. Při otevírání nabídky **Nastavení** se zobrazí počet voleb. Při výběru **Možnosti** se uživateli otevře stránka **Možnosti**. Zde naleznete těchto čtyřech možnosti karet: **Vizuální vlastnosti**, **Předvolby**, **Účet** a **Workflow**.
 
--   **Vizuální vlastnosti: **Vyberte motiv barvy a výchozí velikost prvků vašich stránek.
+-   **Vizuální vlastnosti:** Vyberte motiv barvy a výchozí velikost prvků vašich stránek.
 -   **Předvolby:** Zde můžete vybrat výchozí hodnoty pokaždé, když otevřete aplikaci Dynamics 365 for Operations, včetně společnosti, úvodní stránky a výchozího režim zobrazení/úprav (určující, zda je stránka uzamčena pro zobrazení nebo otevření k úpravám při každém otevření). Naleznete zde také jazyk, časové pásmo a datum, čas a možnosti formátu čísel. Nakonec tato stránka obsahuje číslo různých předvoleb, které se liší od dílčí verze.
--   **Účet: **Je používán k poskytování ID uživatele a ostatních možností vztahujících se k účtu.
--   **Workflow: **Zde volíte možnosti týkající se workflowu.
+-   **Účet:** Je používán k poskytování ID uživatele a ostatních možností vztahujících se k účtu.
+-   **Workflow:** Zde volíte možnosti týkající se workflowu.
 
 ## <a name="implicit-personalizations"></a>Implicitní individuální nastavení
 Implicitní individuální nastavení jsou ta přizpůsobení, která provádíte pouhou spoluprací s některými ovládací prvky, které pamatují jejich aktuální viditelný stav. 
@@ -106,7 +107,7 @@ Některé pracovní prostory obsahují počet dlaždic (dlaždice s číslicemi)
 Řídicí panel je často první stránkou, která se zobrazí při otevření aplikace Dynamics 365 for Operations. Můžete přizpůsobit řídicí panel k přejmenování vašich navigačních dlaždic pracovního prostoru, aby byly zobrazeny pouze dlaždice, které chcete zobrazit, přejmenovány dlaždice nebo uspořádány v pořadí, v jakém je chcete zobrazit. Nastavení řídicího panelu provedete výběrem dlaždice a klepnutím pravého tlačítka myši otevřete kontextovou nabídku. V kontextové nabídce vyberte **Přizpůsobit**. Pokud vybranou dlaždici chcete skrýt, přejmenovat nebo přeskočit, můžete provést tuto změnu přímo v okně vlastností, které se objevilo. Pokud chcete uspořádat dlaždice, vyberte možnost **Přizpůsobit tento formuláře** v okně Vlastnosti a otevřete panel nástrojů Přizpůsobení. Dlaždice můžete uspořádat pomocí nástroje přesunu.
 
 ## <a name="administration-of-personalization"></a>Správa přizpůsobení
-Je možné přizpůsobit stránku a sdílet ji s jinými uživateli jednoduše exportem přizpůsobené stránky a požádáním ostatních uživatelů o navigaci na přizpůsobenou stránku a importem přizpůsobeného souboru, který jste vytvořili. Má-li uživatel oprávnění správce, může také spravovat přizpůsobení ostatních uživatelů na stránce **Nastavení přizpůsobení**. Přejděte na stránku b. Na stránce **přizpůsobení** naleznete dvě karty, jednu označenou jako **Systém** a druhou označenou jako ** Uživatelé**. 
+Je možné přizpůsobit stránku a sdílet ji s jinými uživateli jednoduše exportem přizpůsobené stránky a požádáním ostatních uživatelů o navigaci na přizpůsobenou stránku a importem přizpůsobeného souboru, který jste vytvořili. Má-li uživatel oprávnění správce, může také spravovat přizpůsobení ostatních uživatelů na stránce **Nastavení přizpůsobení**. Přejděte na stránku b. Na stránce **přizpůsobení** naleznete dvě karty, jednu označenou jako **Systém** a druhou označenou jako **Uživatelé**. 
 
 **Systém:** Zde můžete dočasně zakázat nebo "vypnout" veškerá přizpůsobení v systému. To neodstraní přizpůsobení, ale resetuje všechny formuláře do výchozího stavu. Můžete později znovu povolit přizpůsobení a mít veškerá přizpůsobení znovu použita pro jednotlivé formuláře uživatelů. Můžete také odstranit veškerá individuální nastavení pro všechny uživatele. Všimněte si, že při odstranění přizpůsobení neexistuje žádný způsob znovu automaticky povolit přizpůsobení ze systému. Před provedením tohoto kroku se ujistěte, že jste provedli export individuálního nastavení, které chcete později importovat. 
 

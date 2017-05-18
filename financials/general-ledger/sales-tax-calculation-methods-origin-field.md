@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b21fd97426b331726c12ea29f89817a46dd445c3
-ms.openlocfilehash: 0a716310a3b813e08d46ac609e8ac6ce9a2db3e6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5f3d0e2016a3ffe5500ecae9508d44a115c56880
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -51,7 +52,7 @@ Daňový úřad na položku uložil zvláštní cla. Částky cla se před výpo
 -   DPH = 25% s pomocí metody výpočtu procenta z hrubé částky
 
 Pokud je čistá částka 10,00, pak CLO 1 = 1,00 (10,00 x 10 %) a CLO 2 = 2,00 (10,00 x 20 %). Částky budou vypadat následovně: Hrubá částka: Čistá částka + Částka cla 1 + částka cla 2 (10,00 + 1,00 + 2,00) = 13,00 DPH = 13,00 x 25 % = 3,25 Celkové clo a DPH: 1,00 + 2,00 + 3,25 = 6,25 Celková částka: 10,00 + 6,25 = 16,25
-| **Poznámka **                                                                                                                                                                                                                 |
+| **Poznámka**                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Pro transakci lze použít pouze jeden daňový kód, kde Zdroj = procento z hrubé částky. Je-li více než jeden takový kód daně určen pro transakci, zobrazí se chyba a DPH nemůže být vypočítána. |
 
@@ -68,7 +69,7 @@ Použijme následující kódy DPH:
 -   DPH = 25% s pomocí metody Procento z hrubé částky
 
 Čistá částka: 10,00 Clo 1: 10,00 x 10 % = 1,00 Clo 2: 1,00 x 20 % = 0,20 Hrubá částka: 10,00 + 1,00 + 0,20 = 11,20 DPH: 11,20 x 25 % = 2,80 Celkové clo a DPH: 1,00 + 0,20 + 2,80 = 4,00 Celková částka: 10,00 + 4,00 = 14,00
-| **Poznámka **                                                                                                                                                                                                                    |
+| **Poznámka**                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Při výpočtu daně není možné použít více úrovní daně. Daň nelze vypočítat na základě DPH, které je již vypočteno na základě jiné daně. U transakce lze vypočítat více jednotlivých úrovní daně u kódů daně. |
 
@@ -77,7 +78,7 @@ Vyberete-li částky za jednotku v poli Zdroj, DPH se vypočítá jako pevná č
 ### <a name="example"></a>Příklad
 
 Kód DPH je nastaven jako: 1,20 USD za jednotku = balení Na řádku prodejní faktury je prodáno 25 balení položky DPH bude vypočtena jako hodnota 25 x 1,20 = 30,00
-| **Poznámka **                                                                                                                                                                                                 |
+| **Poznámka**                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Je-li transakce zadána u jiné jednotky než jednotky zadané v kódu prodejní daně, převede se automaticky podle pravidel převodů jednotek, které jsou nastaveny na stránce Převody jednotek. |
 

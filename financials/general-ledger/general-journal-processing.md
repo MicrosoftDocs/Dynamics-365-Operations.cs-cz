@@ -3,7 +3,7 @@ title: "Zpracování hlavního deníku"
 description: "Tento článek popisuje možnosti v aplikaci Microsoft Dynamics 365 for Operations, které usnadňují zpracování deníku hlavní knihy a které lze také použít k zaručení správnosti pořízených dat a dodržení interní kontroly."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ef99caf4570969d2b920cec8b53669ce2094965
-ms.openlocfilehash: 50cd203025be8857de943e458fc32315e494fb7a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c020566928cecc15bd7de504164f5adbf34eda44
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje možnosti v aplikaci Microsoft Dynamics AX, které usnadňují zpracování deníku hlavní knihy a které lze také použít k zaručení správnosti pořízených dat a dodržení interní kontroly.  
+Tento článek popisuje možnosti v aplikaci Microsoft Dynamics 365 for Operations, které usnadňují zpracování deníku hlavní knihy a které lze také použít k zaručení správnosti pořízených dat a dodržení interní kontroly.  
 
 Názvy deníků
 
@@ -52,7 +53,7 @@ Název deníku lze použít pouze pro konkrétní segment nebo pro rozsah u hlav
 Možnost **Automatické storno** je k dispozici v hlavních denících. Například máte úpravu časového rozlišení, u které skutečný dokument dosud nebyl zpracován, jak je uvedeno v následujícím obrázku.
 [![Stornování hlavního deníku](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
-Doplněk Microsoft Excel pro položku deníku poskytuje další úroveň automatizace a usnadňuje zadávání dat. Akce **Otevřít řádky v aplikaci Excel **je k dispozici na stránkách **Hlavní deník** a **Doklad deníku**. 
+Doplněk Microsoft Excel pro položku deníku poskytuje další úroveň automatizace a usnadňuje zadávání dat. Akce **Otevřít řádky v aplikaci Excel**je k dispozici na stránkách **Hlavní deník** a **Doklad deníku**. 
 
 Na stránce **Periodické deníky** můžete nastavit opakující se deníky pro automatizaci zpracování deníků. 
 
@@ -82,6 +83,7 @@ Nastavení hlavního účtu poskytuje mnoho možností pro zpracování hlavníh
 Účetní struktury a struktury rozšířených pravidel jsou velice důležité pro zajištění toho, aby byla data potřebná pro finanční vykazování a sledování výkonu zachycována během zpracování hlavního deníku a jakékoli dokumentace. Účetní struktury a struktury rozšířených pravidel vám umožní přizpůsobit zadávání dat. Můžete povolit zadávání dat pouze pro finanční dimenze, které jsou relevantní v každé situaci a také můžete vynutit požadavek, aby byla vždy zaznamenána povinná a správná data.
 
 Další informace naleznete v tématu [Plánování: účtová osnova](plan-chart-of-accounts.md). 
+
 
 
 

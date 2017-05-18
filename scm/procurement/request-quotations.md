@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: d70b4ae0a6b177508021ee72481333cf6f265069
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 20ad50ab5c2dddf4fe07ebb5bb940954c0408f8d
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -48,7 +49,7 @@ Pokud se po odeslání musí požadavek na nabídku změnit, můžete opětně o
 
 Jakmile obdržíte nabídky, je nutné je zadat na stránce **Odpovědi na požadavky na nabídku**. Pokud jste vybrali možnost **Kopírovat data do odpovědi**, data jako například množství a data z případu požadavku na nabídku jsou zkopírovány do odpovědi na nabídku. Tato data lze změnit podle nabídky dodavatele.  
 
-Pokud je druhá iterace odpovědi vyžadována pro určitého dodavatele, klepněte na tlačítko **Vrácení **na stránce** Odpověď požadavku na nabídku**. Akce Vrácení vytvoří nový deník a sestavu, která bude vytištěna, archivována a odeslána podle nastavení správy tisku.  
+Pokud je druhá iterace odpovědi vyžadována pro určitého dodavatele, klepněte na tlačítko **Vrácení**na stránce**Odpověď požadavku na nabídku**. Akce Vrácení vytvoří nový deník a sestavu, která bude vytištěna, archivována a odeslána podle nastavení správy tisku.  
 
 Pokud jste přidali kritéria hodnocení do případu požadavku na nabídku, odpověď požadavku na nabídku bude mít panel hodnocení, kde můžete zadat výsledky. Celkové hodnocení se zobrazí při porovnání odpovědí na stránce **Porovnat odpovědi**, kde můžete také porovnat jiná data odpovědi, jako například ceny řádku, datum dodání a celkovou cenu.  
 
@@ -107,7 +108,7 @@ Pokud je požadavek na nabídku typu **Nákupní smlouva**:
 -   Požadavek na nabídku se používá pro dohodu o nákupu určitého množství nebo hodnoty produktu během času. Musíte vybrat rozsah dat, který se týká nákupní smlouvy a jména osoby, která spravuje nákupní smlouvu.
 -   Při přijetí nabídky je vygenerována nákupní smlouva.
 
-Požadavek na nabídku z nákupního požadavku můžete vytvořit pouze v případě, že je stav nákupního požadavku **Probíhá kontrola **a je vám přiřazeno provádět další úlohy workflowu. Řádky nákupního požadavku se automaticky aktualizují, jakmile přijmete řádky z odpovědí na požadavky na nabídku (nabídky), které jste získali od dodavatelů. Pokud probíhá zpracování RFQ, nelze provést žádné akce nákupní žádanky (například dokončení, odmítnutí nebo schválení).  
+Požadavek na nabídku z nákupního požadavku můžete vytvořit pouze v případě, že je stav nákupního požadavku **Probíhá kontrola**a je vám přiřazeno provádět další úlohy workflowu. Řádky nákupního požadavku se automaticky aktualizují, jakmile přijmete řádky z odpovědí na požadavky na nabídku (nabídky), které jste získali od dodavatelů. Pokud probíhá zpracování RFQ, nelze provést žádné akce nákupní žádanky (například dokončení, odmítnutí nebo schválení).  
 
 Pokud vytvoříte požadavek na nabídku, můžete vybrat konkrétní typ oslovení. Typ oslovení určuje sadu kritérií hodnocení, která se používá k získání odpovědí na požadavky na nabídku.  
 
@@ -157,7 +158,7 @@ Následující tabulka uvádí změny stavu požadavku na nabídku při příjmu
 
 |                                                |                       |                        |                              |                               |                            |                             |
 |------------------------------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Akce**                                     | **Nejnižší stav nabídky** | **Nejvyšší stav nabídky ** | **Nejnižší stav záhlaví požadavku na nabídku** | **Nejvyšší stav záhlaví požadavku na nabídku** | **Nejnižší stav řádky požadavku na nabídku** | **Nejvyšší stav řádky požadavku na nabídku** |
+| **Akce**                                     | **Nejnižší stav nabídky** | **Nejvyšší stav nabídky** | **Nejnižší stav záhlaví požadavku na nabídku** | **Nejvyšší stav záhlaví požadavku na nabídku** | **Nejnižší stav řádky požadavku na nabídku** | **Nejvyšší stav řádky požadavku na nabídku** |
 | Zaregistrujte první nabídku od dodavatele a uložte ji.        | Odesláno                  | Přijato               | Odesláno                         | Přijato                      | Odesláno                       | Přijato                    |
 | Zaregistrujte druhou nabídku od dodavatele a uložte ji. | Přijato              | Přijato               | Přijato                     | Přijato                      | Přijato                   | Přijato                    |
 
@@ -186,7 +187,7 @@ Následující tabulka obsahuje změny stavu požadavku na nabídku při přijet
 
 |                         |                       |                        |                              |                               |                            |                             |
 |-------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Akce**              | **Nejnižší stav nabídky ** | **Nejvyšší stav nabídky ** | **Nejnižší stav záhlaví požadavku na nabídku** | **Nejvyšší stav záhlaví požadavku na nabídku** | **Nejnižší stav řádky požadavku na nabídku** | **Nejvyšší stav řádky požadavku na nabídku** |
+| **Akce**              | **Nejnižší stav nabídky** | **Nejvyšší stav nabídky** | **Nejnižší stav záhlaví požadavku na nabídku** | **Nejvyšší stav záhlaví požadavku na nabídku** | **Nejnižší stav řádky požadavku na nabídku** | **Nejvyšší stav řádky požadavku na nabídku** |
 | Přijměte jednu z nabídek. | Přijato              | Přijato               | Přijato                     | Přijato                      | Přijato                   | Přijato                    |
 | Odmítněte ostatní nabídky.  | Odmítnuto              | Přijato               | Odmítnuto                     | Přijato                      | Odmítnuto                   | Přijato                    |
 

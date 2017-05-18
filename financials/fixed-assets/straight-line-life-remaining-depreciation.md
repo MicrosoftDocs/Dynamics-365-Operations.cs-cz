@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b41901d573e977a89fcd1a7c1ebf7185e162c654
-ms.openlocfilehash: 9b690b80f148e7ccecba19850bd78c81216d8658
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3b424d34a1469ac37e96927dea5627f5f2fed8ee
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -54,7 +55,7 @@ Když například zvolíte **Ročně**, roční odpisy se zaúčtují pouze jedn
 Pokud vyberete možnost **Fiskální** v poli **Odpisový rok**, bude použita metoda zbývajícího lineárního odpisu. Odpis je založen na zbývajících fiskální rocích. Například pro fiskální rok od 1. července 2015 do 30. června 2016 začíná výpočet odpisů datem 1. července. Fiskální rok může být delší nebo kratší než 12 měsíců. Odpisy se upravují pro jednotlivá fiskální období. Délka dalšího fiskálního roku záleží na nastavení fiskálního období na stránce **Fiskální kalendáře**. Vyberete-li jako odpisový rok možnost **Fiskální**, v poli **Frekvence období** jsou k dispozici následující možnosti:
 
 -   Možnost **Ročně** zaúčtuje celkovou částku odpisu vypočteného pro fiskální rok jako jednu částku poslední den fiskálního roku.
--   **Fiskální období **vypočte celkovou částku odpisu pro fiskální rok. Tato částka se rozloží do fiskálních období, která jsou definována na stránce **Fiskální kalendáře** nebo pro fiskální kalendář uvedený pro knihu.
+-   **Fiskální období**vypočte celkovou částku odpisu pro fiskální rok. Tato částka se rozloží do fiskálních období, která jsou definována na stránce **Fiskální kalendáře** nebo pro fiskální kalendář uvedený pro knihu.
 
 ## <a name="example-of-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Příklady lineárního odpisu nezměněného dlouhodobého majetku
 Dlouhodobý majetek má následující charakteristiky.

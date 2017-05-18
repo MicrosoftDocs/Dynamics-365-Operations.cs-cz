@@ -3,7 +3,7 @@ title: "Definice účtování"
 description: "Tento článek obsahuje informace o definicích účtování a o tom, jak je lze definovat a propojit. U podporovaných typů zaúčtování a dokumentů můžete ke klasifikaci hlavních účtů a finančních dimenzí účetních položek použít namísto účetních profilů definice účtování."
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-03 20 - 43 - 23
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,26 +18,30 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9f4d7fdd8cfa7a540fce219f6ae4792e57dfbe44
-ms.openlocfilehash: 357ae498e84ef27e46142c7dcc0f90ecb0ee9f1c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: aea0a5c078e4fb3a47cce3a7b427b56bf7a9bcf5
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="posting-definitions"></a>Definice účtování
 
+[!include[banner](../includes/banner.md)]
+
+
 Tento článek obsahuje informace o definicích účtování a o tom, jak je lze definovat a propojit. U podporovaných typů zaúčtování a dokumentů můžete ke klasifikaci hlavních účtů a finančních dimenzí účetních položek použít namísto účetních profilů definice účtování.
 
 U podporovaných typů zaúčtování a dokumentů můžete ke klasifikaci hlavních účtů a finančních dimenzí účetních položek použít namísto účetních profilů definice účtování. Podporované dokumenty a typy účtování můžete prohlížet na stránce **Definice účtování transakcí**. 
 
-Chcete-li začít definice účtování používat, vyberte možnost** Použít definice účtování** na stránce **Parametry hlavní knihy**. I když použijete definice účtování, stále je nutné definovat účetní profily pro původní položky a nepodporované typy zaúčtování a dokumentů. 
+Chcete-li začít definice účtování používat, vyberte možnost**Použít definice účtování** na stránce **Parametry hlavní knihy**. I když použijete definice účtování, stále je nutné definovat účetní profily pro původní položky a nepodporované typy zaúčtování a dokumentů. 
 
 Definice účtování musíte použít, abyste umožnili účtování břemen pro nákupní objednávky a účtování předběžných břemen pro nákupní požadavky.
 
 ## <a name="defining-posting-definitions"></a>Definování definic účtování
-Použijte stránku** Definice účtování** k určení kritérií shody a definování položek, které by se měly generovat, pokud dojde ke shodě. Kritéria shody se posuzují pro původní položky jako rozúčtování. 
+Použijte stránku**Definice účtování** k určení kritérií shody a definování položek, které by se měly generovat, pokud dojde ke shodě. Kritéria shody se posuzují pro původní položky jako rozúčtování. 
 
 Na stránce **Definice účtování** můžete také řádkům položek přiřadit čísla priorit, abyste mohli řídit pořadí, v jakém se řádky posuzují. Řádky, které mají nejnižší číslo priority, se vyhodnocují jako první. Příklad: posoudí se všechny řádky, které mají prioritu 1, poté řádky, které mají prioritu 2, a tak dále. Při zjištění shody jsou ostatní kritéria párování ignorována. Pouze kritéria ve skupině, která odpovídá původní transakci, vytvářejí generované položky. 
 
@@ -59,5 +63,7 @@ Tato omezení platí v případě, že vytvoříte odkazy v definicích účtov�
 -   Definici účtování můžete přiřadit k libovolnému typu transakce, ale tento typ transakce musí být ve stejném modulu jako definice účtování. Použijte stránku **Definice účtování transakcí** a podívejte se, v kterém modulu typ transakce je.
 
 
-Další informace získáte v části [Příklady definic účtování](/general-ledger/example-posting-definitions.md). 
+Další informace získáte v části [Příklady definic účtování](example-posting-definitions.md). 
+
+
 

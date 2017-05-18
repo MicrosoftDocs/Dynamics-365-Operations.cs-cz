@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 720a1f272948eb310dc3cd02588aeec40b556d20
-ms.openlocfilehash: 31dda85ff2e4a4e5380401b031b2dd74acff394b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4fd6e61e88ca3ca3fa63308dead1258c0263e5aa
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="align-workforce-skills-with-business-needs"></a>Sladění dovedností zaměstnanců s potřebami společnosti
+
+[!include[banner](includes/banner.md)]
+
 
 Můžete sledovat dovednosti, které zaměstnanci, uchazeči nebo kontaktní osoby mají (nebo které by měli mít) k účinnému plnění svých rolí. Můžete také určit dovednosti, které jsou požadovány pro určitou práci.
 
@@ -52,24 +56,12 @@ Lze vytvořit hledání v rámci mapování dovedností k vyhledání pracovník
 
 Profily mapování dovedností umožňují vyhledání aktuálního zaměstnance nebo kandidáta s kvalifikací, která přímo odpovídá obchodním potřebám.  Můžete například vytvořit profil mapování dovedností pro otevřenou pozici ve vaší organizaci. Vytvořením profilu pro určitou pozici a zkopírováním dovedností, vzdělání a certifikátů z této pracovní pozice do profilu lze rychle vyhledat pracovníky, uchazeče a kontaktní osoby, které odpovídají jednomu nebo více kritériím zadaným v profilu, a zobrazit seznam uchazečů, jejichž dovednosti nejlépe odpovídají požadovaným dovednostem pro pracovní pozici.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Poznámka </strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>V seznamu s výsledky mapování dovednosti mohou být zobrazeni nebo zahrnuti v profilu dovedností pouze zaměstnanci, uchazeči a kontaktní osoby, které jsou vybrány k zahrnutí do hledání v rámci mapování dovedností. Chcete-li zahrnout pracovníka, uchazeče nebo kontaktní osobu do vyhledávání v rámci mapování dovedností, nastavte možnost <strong>Zahrnout do mapování dovedností</strong> na hodnotu Ano na následujících stránkách:
-<ul>
-<li>Pracovní podproces</li>
-<li>Zaměstnanec</li>
-<li>Uchazeč</li>
-<li>Kontakty</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+>**Poznámka** V seznamu s výsledky mapování dovednosti mohou být zobrazeni nebo zahrnuti v profilu dovedností pouze zaměstnanci, uchazeči a kontaktní osoby, které jsou vybrány k zahrnutí do hledání v rámci mapování dovedností. Chcete-li zahrnout pracovníka, uchazeče nebo kontaktní osobu do vyhledávání v rámci mapování dovedností, nastavte možnost **Zahrnout do mapování dovedností** na hodnotu Ano na následujících stránkách:
+
+> + Pracovní podproces
+> + Zaměstnanec
+> + Uchazeč
+> + Kontakty
 
 ## <a name="skill-gap-analysis-and-skill-profile-analysis"></a>Analýza mezer v dovednostech a analýza profilu dovedností
 Můžete vytvořit analýzu profilu dovedností, a zobrazit tak seznam kompetencí pro pracovníka, uchazeče nebo kontaktní osobu k určitému datu. Můžete vytvořit analýzu dovednostních mezer k porovnání dovedností dané osoby s dovednostmi požadovanými pro určitou úlohu.  
@@ -80,5 +72,7 @@ Můžete vytvořit analýzu profilu dovedností, a zobrazit tak seznam kompetenc
 --------
 
 [Lidské zdroje](index.md)
+
+
 
 

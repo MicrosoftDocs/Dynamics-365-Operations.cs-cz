@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8aa0a58b03ee18e42ca7770ea3e22311c1ddba67
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 9aba61178d050f4881c96b7a7fa62937b98b2beb
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -37,8 +38,8 @@ Při příslibu objednávky se na základě metody řízení data dodání a po�
 
 -   **Doba realizace prodeje** – doba realizace prodeje je doba mezi vytvořením prodejní objednávky a expedici položek. Výpočet data dodání je založen na výchozím počtu dnů a nezohledňuje skladovou dostupnost, známou poptávku ani plánovanou dodávku.
 -   **ATP (lze slíbit)** – ATP je množství položky, které je k dispozici a může být odběrateli slíbeno k určitému datu. Výpočet množství ATP zahrnuje nepotvrzené zásoby, doby realizace, plánované příjmy a výdeje.
--   **ATP + rezerva výdeje **– datum expedice odpovídá datu ATP navýšenému o rezervu výdeje pro položku. Rezerva výdeje je doba potřebná k přípravě položek na expedici.
--   **CTP (příslib na základě ověření dostupné kapacity) **– dostupnost se počítá pomocí rozpadu.
+-   **ATP + rezerva výdeje**– datum expedice odpovídá datu ATP navýšenému o rezervu výdeje pro položku. Rezerva výdeje je doba potřebná k přípravě položek na expedici.
+-   **CTP (příslib na základě ověření dostupné kapacity)**– dostupnost se počítá pomocí rozpadu.
 
 ## <a name="atp-calculations"></a>Výpočty hodnoty ATP
 Množství ATP se vypočítává pomocí metody „kumulativní hodnota ATP s dopředným vyhledáváním“. Hlavní výhodou této metody výpočtu hodnoty ATP je, že pomocí ní lze zpracovat případy, kdy součet výdejů mezi příjmy je větší než poslední příjem (například když je ke splnění požadavku nutné použít množství z předchozího příjmu). Metoda výpočtu „kumulativní hodnota ATP s dopředným vyhledáváním“ zahrnuje všechny výdeje až do té doby, než kumulativní množství k příjmu překročí kumulativní množství k vydání. Tato metoda výpočtu hodnoty ATP tedy vyhodnocuje, zda lze některé z množství z předchozího časového období použít v pozdějším období.  

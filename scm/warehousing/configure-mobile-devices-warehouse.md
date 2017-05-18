@@ -3,7 +3,7 @@ title: "Nastavení mobilních zařízení pro práci ve skladu"
 description: "Tento článek popisuje způsob konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-01-22 07 - 59 - 32
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 34d7b246d74d1546b54494944903d160e31f7678
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a964587fa5dd48f0ed4e9f2c67fb52e5071ac98d
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Nastavení mobilních zařízení pro práci ve skladu
+
+[!include[banner](../includes/banner.md)]
+
 
 Tento článek popisuje způsob konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení.
 
@@ -315,7 +319,7 @@ Následující tabulka obsahuje popis těchto možností.
 </tr>
 <tr class="even">
 <td>Zobrazit stav zásob</td>
-<td>Výběrem této možnosti zobrazíte stav položek ze zásob. Další informace naleznete v tématu <a href="/inventory/inventory-statuses.md">Výhody používání stavů zásob</a>. Tato možnost je k dispozici pro všechny položky nabídky, které používají stávající práci (s výjimkou cyklické inventury).</td>
+<td>Výběrem této možnosti zobrazíte stav položek ze zásob. Tato možnost je k dispozici pro všechny položky nabídky, které používají stávající práci (s výjimkou cyklické inventury).</td>
 </tr>
 <tr class="odd">
 <td>Zobrazit přehled obrazovky výdeje</td>
@@ -411,6 +415,8 @@ Následující tabulka popisuje různé typy práce, se kterým můžete použí
 
 [Nastavení položky nabídky v mobilním zařízení pro dokončení práce typu Nákupní objednávka (průvodce úkolem)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
 
-[Nastavení položky nabídky v mobilním zařízení pro registraci přijatých položek (průvodce úkolem)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
+[Nastavení položky nabídky v mobilním zařízení pro registraci přijatých položek (Průvodce záznamem úloh)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
+[Výhody používání stavů zásob](../inventory/inventory-statuses.md)
+
 
 

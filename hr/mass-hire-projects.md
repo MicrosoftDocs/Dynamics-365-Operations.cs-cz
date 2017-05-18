@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 6f4429202efd0506378d681188035c5cc69f56a1
-ms.openlocfilehash: d330f73ee9cbdd6bdcc197c3783a9230b26e04d8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5ba5816b65bcaa3a71ab3367cfbe6a115e52062a
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="mass-hire-projects"></a>Projekty hromadného zařazení
+
+[!include[banner](includes/banner.md)]
+
 
 Projekty hromadného zařazení umožňují odborníkům z oblasti lidských zdrojů vytvářet více pozic a efektivně zařazovat zaměstnance na tyto pozice.
 
@@ -46,7 +50,7 @@ Na stránce **Projekty hromadného zařazení** vyberte "LetníVýpomoc" a klepn
 
 Po výběru studentů, které chcete zařadit kvůli stáži zadejte informace o každém studentovi do pole **Podrobnosti pozice** u pozice, pro kterou je zařazujete. Po zadání všech podrobností o pozici vyberte pozici na stránce Projekty hromadného zařazení a klepněte na **Zařazení**. Záznam pozice bude vytvořen pro jednotlivé pozice, a bude vytvořen záznam pracovníka a přiřazen ke správné pozici pro každou osobu, kterou zařazujete.
 
-## <a name="masshire-project-statuses"></a>Stavy projektu hromadného zařazení
+## <a name="mass-hire-project-statuses"></a>Stavy projektu hromadného zařazení
 Projekt masového zařazení může mít jeden z následujících stavů.
 -   Vytvořeno
 -   Otevřené
@@ -92,6 +96,8 @@ Na stránce **Projekt hromadného zařazení** klepněte na **Otevřít projekt*
 </table>
 
  
+
+
 
 
 

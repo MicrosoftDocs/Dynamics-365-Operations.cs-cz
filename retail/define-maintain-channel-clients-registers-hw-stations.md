@@ -1,15 +1,15 @@
 ---
 title: "Definování a správa klientů z obchodních kanálů, pokladen a hardwarových stanic"
-description: "Tato wiki popisuje postup připojení periferních zařízení k vaší pokladně POS."
+description: "Toto téma popisuje postup připojení periferních zařízení k vaší pokladně POS."
 author: josaw1
 manager: AnnBe
-ms.date: 2016-06-15 20 - 49 - 33
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
@@ -17,17 +17,21 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: dee5745670ad86000795f2913f99f49c0f123a00
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: db8b059309ecf4da9728394fc3acb091d60baf4d
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Definování a správa klientů z obchodních kanálů, pokladen a hardwarových stanic
 
-Tato wiki popisuje postup připojení periferních zařízení k vaší pokladně POS.
+[!include[banner](includes/banner.md)]
+
+
+Toto téma popisuje postup připojení periferních zařízení k vaší pokladně POS.
 
 **Poznámka:** konkrétní pokyny k instalaci naleznete v tématu [Konfigurace a instalace hardwarové stanice pro maloobchod](retail-hardware-station-configuration-installation.md) a [Samoobslužné stažení/instalace řešení Retail Modern POS a aktivace zařízení Modern POS a Cloud POS](retail-modern-pos-device-activation.md).
 
@@ -60,16 +64,19 @@ Navigace: klikněte na **Maloobchodní a velkoobchodní prodej** &gt; **Kanály*
 
 ### <a name="hardware-station-profile"></a>Profil hardwarové stanice
 
-Navigace: klikněte na **Velkoobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Profily hardwarové stanice**. Bez ohledu na to, zda samotná hardwarová stanice na úrovni kanálu obsahuje informace specifické pro instanci, jako je adresa URL hardwarové stanice, profil hardwarové stanice obsahuje informace, které mohou být statické nebo sdíleny v rámci několika hardwarových stanic. Statické informace obsahují port, který má být použit, balíček hardwarové stanice a hardwarový profil. Statické informace obsahuje také popis typu nasazované hardwarové stanice, jako například **Přejít k pokladně **nebo **Vrácení**, a to v závislosti na hardwaru, který je požadován pro každou specifickou hardwarovou stanici.
+Navigace: klikněte na **Velkoobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Profily hardwarové stanice**. Bez ohledu na to, zda samotná hardwarová stanice na úrovni kanálu obsahuje informace specifické pro instanci, jako je adresa URL hardwarové stanice, profil hardwarové stanice obsahuje informace, které mohou být statické nebo sdíleny v rámci několika hardwarových stanic. Statické informace obsahují port, který má být použit, balíček hardwarové stanice a hardwarový profil. Statické informace obsahuje také popis typu nasazované hardwarové stanice, jako například **Přejít k pokladně**nebo **Vrácení**, a to v závislosti na hardwaru, který je požadován pro každou specifickou hardwarovou stanici.
 
 ## <a name="scenarios"></a>Scénáře
 ### <a name="mpos-with-connected-peripheral-devices"></a>MPOS s připojenými periferními zařízeními
 
-[![Tradiční, stálá prodejní místa](./media/traditional-300x279.png)](./media/traditional.png) Pokud chcete připojit MPOS k perifernímu zařízení POS v podobě tradičního, stálého řešení POS, přejděte nejprve do samotné pokladny a přiřaďte k ní hardwarový profil. Pokladny POS naleznete v nabídce **Maloobchodní a velkoobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Pokladny**. Poté, co jste přiřadili hardwarový profil, proveďte synchronizaci změn s databází kanálu pomocí plánu distribuce „Pokladny“. Plány distribuce můžete najít v nabídce **Maloobchodní a velkoobchodní prodej** &gt; **IT pro maloobchod** &gt; **Plán distribuce**. Dále v kanálu nastavte "místní" hardwarovou stanici. Klikněte na **Maloobchodní a velkoobchodní prodej** &gt; **Kanály** &gt; **Maloobchody** &gt; **Všechny maloobchody** a vyberte obchod. Poté na pevné záložce **Hardwarové stanice** kliknutím na tlačítko **Přidat** přidejte hardwarovou stanici. Zadejte popis, zadejte **localhost** jako název hostitele a potom synchronizujte změny s kanálem pomocí plánu distribuce "Konfigurace kanálu". Plány distribuce můžete najít v nabídce **Maloobchodní a velkoobchodní prodej** &gt; **IT pro maloobchod** &gt; **Plán distribuce**. Nakonec v aplikaci MPOS pomocí operace **Vybrat hardwarovou stanici** vyberte hardwarovou stanici **localhost**. Nastavte hardwarovou stanici na **Aktivní**. Hardwarový profil, který se používá v tomto případě, by měl vycházet ze samotné pokladny POS. Profil hardwarové stanice není pro tento scénář vyžadován. **Poznámka:** některé změny profilu hardwaru, jako jsou změny do pokladní zásuvky, vyžadují po synchronizaci změn do kanálu otevření nové směny. **Poznámka:** Cloud POS vyžaduje samostatnou hardwarovou stanici ke komunikaci s maloobchodními periferními zařízeními.
+[![Tradiční, stálá prodejní místa](./media/traditional-300x279.png)](./media/traditional.png) 
+
+Pokud chcete připojit MPOS k perifernímu zařízení POS v podobě tradičního, stálého řešení POS, přejděte nejprve do samotného rejstříku a přiřaďte k němu hardwarový profil. Pokladny POS naleznete v nabídce **Maloobchodní a velkoobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Pokladny**. Poté, co jste přiřadili hardwarový profil, proveďte synchronizaci změn s databází kanálu pomocí plánu distribuce „Pokladny“. Plány distribuce můžete najít v nabídce **Maloobchodní a velkoobchodní prodej** &gt; **IT pro maloobchod** &gt; **Plán distribuce**. Dále v kanálu nastavte "místní" hardwarovou stanici. Klikněte na **Maloobchodní a velkoobchodní prodej** &gt; **Kanály** &gt; **Maloobchody** &gt; **Všechny maloobchody** a vyberte obchod. Poté na pevné záložce **Hardwarové stanice** kliknutím na tlačítko **Přidat** přidejte hardwarovou stanici. Zadejte popis, zadejte **localhost** jako název hostitele a potom synchronizujte změny s kanálem pomocí plánu distribuce "Konfigurace kanálu". Plány distribuce můžete najít v nabídce **Maloobchodní a velkoobchodní prodej** &gt; **IT pro maloobchod** &gt; **Plán distribuce**. Nakonec v aplikaci MPOS pomocí operace **Vybrat hardwarovou stanici** vyberte hardwarovou stanici **localhost**. Nastavte hardwarovou stanici na **Aktivní**. Hardwarový profil, který se používá v tomto případě, by měl vycházet ze samotné pokladny POS. Profil hardwarové stanice není pro tento scénář vyžadován. **Poznámka:** některé změny profilu hardwaru, jako jsou změny do pokladní zásuvky, vyžadují po synchronizaci změn do kanálu otevření nové směny. **Poznámka:** Cloud POS vyžaduje samostatnou hardwarovou stanici ke komunikaci s maloobchodními periferními zařízeními.
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS nebo Cloud POS se samostatnou hardwarovou stanicí
+[![Sdílená periferní zařízení](./media/shared-300x254.png)](./media/shared.png)
 
-\[caption id="attachment\_340041" align="alignleft" width="300"\][![Sdílená periferní zařízení](./media/shared-300x254.png)](./media/shared.png) Sdílená periferní zařízení\[/caption\] V tomto scénáři je samostatná hardwarová stanice sdílená mezi klienty MPOS a Cloud POS. Tento scénář vyžaduje vytvoření profilu hardwarové stanice a zadání balíčku ke stažení, portu a hardwarový profil, který používá hardwarová stanice. Profil hardwarové stanice naleznete v části **Maloobchodní a velkoobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Profily hardwarové stanice**. Po vytvoření profilu hardwarové stanice přejděte do konkrétního maloobchodního kanálu (**Maloobchodní a velkoobchodní prodej** &gt; **Kanály** &gt; **Maloobchody** &gt; **Všechny maloobchody**) a přidejte novou hardwarovou stanici. Namapujte tuto novou hardwarovou stanici k profilu hardwarové stanice, který byl dříve vytvořen. Dále zadejte popis, který pomůže pokladníkovi určit hardwarovou stanici. V poli **Název hostitele** zadejte adresu URL hostitelského počítače v následujícím formátu: **https://&lt;MachineName:Port&gt;/HardwareStation**. (**&lt;MachineName:Port&gt;** nahraďte za skutečný název hardwarové stanice a za port, který je určen v profilu hardwarové stanice.) Pro samostatnou hardwarovou stanici byste měli také určit ID terminálu pro elektronický převod peněžních prostředků (EFT). Tato hodnota určuje terminál EFT připojený k hardwarové stanici, když konektor platby komunikuje s poskytovatelem platby. Dále ze skutečné hardwarové stanice přejděte na kanál a vyberte hardwarovou stanici. Poté klikněte na tlačítko **Stáhnout** a nainstalujte hardwarovou stanici. V dalším kroku z aplikace MPOS nebo Cloud POS proveďte akci **Vybrat hardwarovou stanici** a vyberte hardwarovou stanici, která byla dříve nainstalována. Vyberte možnost **Pár** a navažte zabezpečené spojení mezi systémem POS a hardwarovou stanicí. Tento krok musí být dokončen jednou pro každou kombinaci systému POS a hardwarové stanice. Po spárování hardwarové stanice se stejná operace používá pro aktivaci hardwarové stanice v době, kdy se používá. V tomto scénáři by měl být hardwarový profil přiřazen k profilu hardwarové stanice, nikoli k samotné pokladně. Pokud z nějakého důvodu nemá hardwarová stanice přímo přiřazený hardwarový profil, používá se hardwarový profil, který je přiřazen k pokladně.
+V tomto scénáři je samostatná hardwarová stanice sdílena mezi klienty MPOS a Cloud POS. Tento scénář vyžaduje vytvoření profilu hardwarové stanice a zadání balíčku ke stažení, portu a hardwarový profil, který používá hardwarová stanice. Profil hardwarové stanice naleznete v části **Maloobchodní a velkoobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Profily hardwarové stanice**. Po vytvoření profilu hardwarové stanice přejděte do konkrétního maloobchodního kanálu (**Maloobchodní a velkoobchodní prodej** &gt; **Kanály** &gt; **Maloobchody** &gt; **Všechny maloobchody**) a přidejte novou hardwarovou stanici. Namapujte tuto novou hardwarovou stanici k profilu hardwarové stanice, který byl dříve vytvořen. Dále zadejte popis, který pomůže pokladníkovi určit hardwarovou stanici. V poli **Název hostitele** zadejte adresu URL hostitelského počítače v následujícím formátu: **https://&lt;MachineName:Port&gt;/HardwareStation**. (**&lt;MachineName:Port&gt;** nahraďte za skutečný název hardwarové stanice a za port, který je určen v profilu hardwarové stanice.) Pro samostatnou hardwarovou stanici byste měli také určit ID terminálu pro elektronický převod peněžních prostředků (EFT). Tato hodnota určuje terminál EFT připojený k hardwarové stanici, když konektor platby komunikuje s poskytovatelem platby. Dále ze skutečné hardwarové stanice přejděte na kanál a vyberte hardwarovou stanici. Poté klikněte na tlačítko **Stáhnout** a nainstalujte hardwarovou stanici. V dalším kroku z aplikace MPOS nebo Cloud POS proveďte akci **Vybrat hardwarovou stanici** a vyberte hardwarovou stanici, která byla dříve nainstalována. Vyberte možnost **Pár** a navažte zabezpečené spojení mezi systémem POS a hardwarovou stanicí. Tento krok musí být dokončen jednou pro každou kombinaci systému POS a hardwarové stanice. Po spárování hardwarové stanice se stejná operace používá pro aktivaci hardwarové stanice v době, kdy se používá. V tomto scénáři by měl být hardwarový profil přiřazen k profilu hardwarové stanice, nikoli k samotné pokladně. Pokud z nějakého důvodu nemá hardwarová stanice přímo přiřazený hardwarový profil, používá se hardwarový profil, který je přiřazen k pokladně.
 
 ## <a name="client-maintenance"></a>Údržba klienta
 ### <a name="registers"></a>Registry
@@ -151,6 +158,8 @@ Další informace týkající se aktivace zahrnují informaci o tom, který prac
 
 ### <a name="client-data-synchronization"></a>Synchronizace dat klienta
 
-Všechny změny v klientovi POS s výjimkou změn ve stavu aktivace zařízení musí synchronizovány s databázi kanálu, jinak se neprojeví. Chcete-li synchronizovat změny s databází kanálů, přejděte do nabídky **Maloobchodní a velkoobchodní prodej** &gt; **IT pro maloobchod** &gt; **Plán distribuce ** a spusťte požadovaný plán distribuce. V případě klientských změn spouštějte plány distribuce „Pokladny“ a „Konfigurace kanálu“.
+Všechny změny v klientovi POS s výjimkou změn ve stavu aktivace zařízení musí synchronizovány s databázi kanálu, jinak se neprojeví. Chcete-li synchronizovat změny s databází kanálů, přejděte do nabídky **Maloobchodní a velkoobchodní prodej** &gt; **IT pro maloobchod** &gt; **Plán distribuce** a spusťte požadovaný plán distribuce. V případě klientských změn spouštějte plány distribuce „Pokladny“ a „Konfigurace kanálu“.
+
+
 
 

@@ -3,7 +3,7 @@ title: "Systémové požadavky"
 description: "Toto téma obsahuje výpis systémových požadavků současné verze aplikace Microsoft Dynamics 365 for Operations."
 author: sericks007
 manager: AnnBe
-ms.date: 2016-02-25 22 - 43 - 40
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: c8c96dc9705688308dd4a5c720700ddc17657d75
-ms.openlocfilehash: 9220c093d3f6d6700127c93651db4083be300311
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 86053196a3aad6b7b5d7830860e1af347dd969d8
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="system-requirements"></a>Systémové požadavky
+
+[!include[banner](../includes/banner.md)]
+
 
 Toto téma obsahuje výpis systémových požadavků současné verze aplikace Microsoft Dynamics 365 for Operations.
 
@@ -43,6 +47,8 @@ Poslední verzi pro každý webový prohlížeč naleznete na webu výrobce soft
 -   K zachycení bitových kopií, které jsou generovány ze Záznamníku úkolů a jejich zahrnutí do dokumentů aplikace Microsoft Word, musíte mít nainstalováno rozšíření Chrome. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
 -   Editor pracovního postupu je spuštěn jako aplikace ClickOnce. Aplikace ClickOnce podporují pouze Microsoft Edge and Internet Explorer (v podporované verzi systému Microsoft Windows). Editor pracovního postupu aplikace ClickOnce vyžaduje 64bitový kompatibilní operační systém.
 -   Návrhář sestav pro finanční vykazování je uveden jako aplikace ClickOnce. Vyžaduje 64bitový kompatibilní operační systém. Pokud používáte Chrome, je nutné nainstalovat rozšíření ClickOnce, abyste mohli stáhnout klienta návrháře sestav. Pokud používáte Chrome s anonymním režimem, zkontrolujte, zda je povoleno rozšíření ClickOnce pro anonymní režim.
+-   K zobrazení náhledu souborů PDF doporučujeme používat moderní prohlížeče, jako je Microsoft Edge (nejnovější veřejně dostupnou verzi) na operačním systému Windows 10, nebo Google Chrome (nejnovější veřejně dostupnou verzi) na operačních systémech Windows 10, Windows 8.1, Windows 8, Windows 7 nebo na tabletu Google Nexus 10.
+
 
 ### <a name="supported-web-browsers-for-retail-cloud-pos"></a>Podporované webové prohlížeče pro Retail Cloud POS
 
@@ -117,11 +123,13 @@ Počítač musí splňovat všechny požadavky na systém pro instalaci a použ�
 -   Alespoň 10 GB volného místa (databáze kanálu může vyžadovat velké množství místa.)
 
 ## <a name="requirements-for-development-on-local-vms"></a>Požadavky na vývoj na místních virtuálních počítačích
-Informace o požadavcích na vývoj na místních virtuálních počítačích (VM) naleznete v tématu [místní spuštění virtuálního počítače](/dynamics365/operations/dev-itpro/dev-tools/access-instances#vm-that-is-running-in-premises).
+Informace o požadavcích na vývoj na místních virtuálních počítačích (VM) naleznete v tématu [místní spuštění virtuálního počítače](../dev-tools/access-instances.md).
 
 <a name="see-also"></a>Viz také
 --------
 
 [Získání zkušební kopie Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
+
+
 
 

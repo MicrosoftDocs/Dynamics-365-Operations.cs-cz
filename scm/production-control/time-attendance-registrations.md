@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: f82033798dbe603c0f2e2c92f91d28985c12b3b4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 144a1adbff74aef468dd4b2c9f69bf479a5ec671
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -40,7 +41,7 @@ Ve společnostech, které používají modul Čas a docházka, musí zaměstnanc
 -   Zaměstnanci, kteří musejí registrovat čas a docházku v pravidelných intervalech, například denně, týdně nebo čtrnáctidenně.
 -   Nadřízení pracovníci, vedoucí a mzdoví účetní, kteří počítají, schvalují a převádějí registrace pracovníků k dalšímu zpracování.
 
-| **Poznámka **                                                                                                                                                                                                                                                    |
+| **Poznámka**                                                                                                                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Pokud používáte modul Čas a docházka spolu s modulem Provádění výroby, všechny registrace pro uzly projektů, projektových aktivit, nepřímé činnosti, absence, přesčasu a pružného času budou zaznamenány a použity k výpočtu mzdy v obou modulech. |
 
@@ -53,7 +54,7 @@ Po nastavení mohou pracovníci zadat různé typy registrací.
 -   Čas a spotřeba položek ve výrobních úlohách.
 -   Čas strávený u stroje na dílně, byl-li stroj definován jako prostředek.
 
-| **Poznámka **                                                                                                                                                                                                                      |
+| **Poznámka**                                                                                                                                                                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Zaměstnanci mohou být automaticky přiřazeny časové registrace, které jsou provedené u určitého stroje na dílně, pokud se tento pracovník rozhodne pracovat jako asistent u stroje, když zahájí výrobní úlohu. |
 
@@ -82,7 +83,7 @@ Stejným způsobem, jakým přiřadíte skupinu výpočtu k pracovníkovi s regi
 -   Přidání ručních prémií
 -   Zadání dalších informací o registracích absence
 
-| **Poznámka **                                                                                                                                                                             |
+| **Poznámka**                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Jestliže byl pro určité zaměstnance vypočítán přesčas, lze jej přidělit ke specifickým úkolům během dne. Toto je relevantní, pokud se náklady pozice počítají na základě mzdy pracovníka. |
 
@@ -102,7 +103,7 @@ Po schválení registrací je lze převést do pravidelné mzdové úlohy. Přev
 ## <a name="reversing-transferred-registrations"></a>Stornování převedených registrací
 Úkol stornování transakcí (jejich vrácení) lze provést až do okamžiku, kdy bude spuštěn platební převod mzdového období. To znamená, že mzdová data byla převedena do externího souboru. Při stornování jsou všechny registrace staženy a veškeré transakce, které jsou zaúčtovány u výrobních zakázek nebo projektů, jsou vyrovnány a vynulovány.
 
-| **Poznámka **                                                 |
+| **Poznámka**                                                 |
 |----------------------------------------------------------|
 | Externí soubor lze importovat do mzdového systému. |
 

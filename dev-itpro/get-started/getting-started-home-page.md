@@ -3,7 +3,7 @@ title: "Kde začít"
 description: "Zde můžete rychle začít a učit se pracovat s aplikací Microsoft Dynamics 365 for Operations UI."
 eauthor: sericks007
 manager: AnnBe
-ms.date: 2015-12-11 15 - 19 - 40
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ o# ms.search.industry:
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 8f75131c6be6ce0f23cce456405d5e211912f19a
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 69995d2f8a463e82e7a26b673737889b4ea17402
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="where-to-start"></a>Kde začít
+
+[!include[banner](../includes/banner.md)]
+
 
 Zde můžete rychle začít a učit se pracovat s aplikací Microsoft Dynamics 365 for Operations UI.
 
@@ -36,7 +40,7 @@ Následující zdroje poskytují přehled o tom, jak pracovat s partnerem při z
 - [Microsoft FastTrack for Dynamics 365 – přehled](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
 - [Registrace předplatného](../dev-tools/sign-up-preview-subscription.md) 
 - [Lifecycle Services (LCS) pro zákazníky Microsoft Dynamics 365 for Operations](../lifecycle-services/lcs-works-lcs.md) 
-- [Jak mohou zákazníci, kteří si zakoupili Microsoft Dynamics 365 for Operations prostřednictvím poskytovatele cloudových služeb, získat místní verzi aplikace Dynamics 365 for Operations 2012](../deployment/csp-download-customersource.md)
+- [Jak mohou zákazníci, kteří si zakoupili Microsoft Dynamics 365 for Operations prostřednictvím poskytovatele cloudových služeb, získat místní verzi aplikace Dynamics AX 2012](../deployment/csp-download-customersource.md)
 
 ## <a name="user-interface"></a>Uživatelské rozhraní
 Následující zdroje poskytují informace o prostředí uživatele aplikace Dynamics 365 for Operations. 
@@ -71,12 +75,12 @@ Záznamník úkolů je nástroj aplikace Dynamics 365 for Operations, který umo
 <a name="see-also"></a>Viz také
 --------
 
-[Vytvoření nových knihoven pro školení pro aplikaci Dynamics 365 for Operations v rámci služby Lifecycle Services pomocí Záznamníku úloh (externí odkaz)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
-
 [Noví průvodci úkolem (únor 2016)](new-task-guides-available-february-2016.md)
 
 [Noví nebo aktualizovaní průvodci úkolem (květen 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Noví nebo aktualizovaní dostupní průvodci úkolem (listopad 2016)](new-task-guides-november-2016.md)
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Konfigurace modulu Závazky"
-description: "Tento článek popisuje stránky, které slouží k nastavení základních a volitelných funkcí pro modul Závazky v aplikaci Microsoft Dynamics AX. Dále popisuje postup nastavení, který musíte dokončit dříve, než začnete nastavovat modul Závazky."
+description: "Tento článek popisuje stránky, které slouží k nastavení základních a volitelných funkcí pro modul Závazky v aplikaci Microsoft Dynamics 365 for Operations. Dále popisuje postup nastavení, který musíte dokončit dříve, než začnete nastavovat modul Závazky."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 926ee087a0e0c4743f29315b1d82c7d37e95be28
-ms.openlocfilehash: b06623a0eb754654f41c50b92af67dc94a069663
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8581401bfefe4ddf29f32691b5678317e392db96
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje stránky, které slouží k nastavení základních a volitelných funkcí pro modul Závazky v aplikaci Microsoft Dynamics AX. Dále popisuje postup nastavení, který musíte dokončit dříve, než začnete nastavovat modul Závazky.
+Tento článek popisuje stránky, které slouží k nastavení základních a volitelných funkcí pro modul Závazky v aplikaci Microsoft Dynamics 365 for Operations. Dále popisuje postup nastavení, který musíte dokončit dříve, než začnete nastavovat modul Závazky.
 
 <a name="prerequisites-for-accounts-payable-setup"></a>Předpoklady k nastavení modulu Závazky
 ----------------------------------------
@@ -145,6 +146,7 @@ Další stránky pro nastavení jsou uspořádány podle funkcí.
 **Pokladna a správa banky**
 
 -   Stránka Kódy účelu platby slouží k nastavení kódu účelu centrální banky.
+
 
 
 

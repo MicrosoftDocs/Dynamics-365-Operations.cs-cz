@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 17a6a25d99bcefe88af3ced72c9e62e1f9393d14
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d3fd164ded7feabff716f3d4a71f77aab85418d9
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -76,7 +77,7 @@ Společnost Fabrikam obdrží platbu ve výši 600,00 od odběratele číslo 400
 | Pohledávky (Fabrikam)  | 600,00       |               |
 | Závazky Fabrikam-východ (Fabrikam) |              | 600,00        |
 
-**Účetnictví společnosti Fabrikam East**
+**Účetnictví společnosti Fabrikam-východ**
 
 | Účet                             | Částka Má dáti | Částka Dal |
 |-------------------------------------|--------------|---------------|
@@ -109,7 +110,7 @@ Společnost Fabrikam obdrží platbu 580,00 na účet odběratele 4000 – North
 | Pohledávky (Fabrikam)  | 580,00       |               |
 | Závazky Fabrikam-východ (Fabrikam) |              | 580,00        |
 
-**Účetnictví společnosti Fabrikam East**
+**Účetnictví společnosti Fabrikam-východ**
 
 | Účet                             | Částka Má dáti | Částka Dal |
 |-------------------------------------|--------------|---------------|
@@ -149,7 +150,7 @@ Společnost Fabrikam obdrží platbu ve výši 600,00 eur (EUR) pro odběratele 
 | Závazky Fabrikam-východ (Fabrikam) | 0 EUR / 12,90 USD    |                         |
 | Kurzové zisky (Fabrikam)        |                         | 0 EUR / 12,90 USD    |
 
-**Účetnictví společnosti Fabrikam East**
+**Účetnictví společnosti Fabrikam-východ**
 
 | Účet                             | Částka Má dáti            | Částka Dal           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -190,7 +191,7 @@ Společnost Fabrikam zaúčtuje úhradu otevřené faktury společnosti Fabrikam
 | Závazky Fabrikam-východ (Fabrikam) | 0 EUR / 13,46 USD    |                         |
 | Kurzové zisky (Fabrikam)        |                         | 0 EUR / 13,46 USD    |
 
-**Účetnictví společnosti Fabrikam East**
+**Účetnictví společnosti Fabrikam-východ**
 
 | Účet                             | Částka Má dáti            | Částka Dal           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -236,14 +237,14 @@ Společnost Fabrikam obdrží platbu ve výši 75,00 od odběratele číslo 4000
 | Pohledávky (Fabrikam)    | 100,00       |               |
 | Závazky Fabrikam-západ (Fabrikam)   |              | 100,00        |
 
-**Účetnictví společnosti Fabrikam East**
+**Účetnictví společnosti Fabrikam-východ**
 
 | Účet                             | Částka Má dáti | Částka Dal |
 |-------------------------------------|--------------|---------------|
 | Pohledávky (Fabrikam-východ) | 25,00        |               |
 | Závazky Fabrikam (Fabrikam-východ)     |              | 25,00         |
 
-**Účetnictví společnosti Fabrikam West**
+**Účetnictví společnosti Fabrikam-západ**
 
 | Účet                             | Částka Má dáti | Částka Dal |
 |-------------------------------------|--------------|---------------|
@@ -283,14 +284,14 @@ Společnost Fabrikam obdrží platbu ve výši 75,00 od odběratele číslo 4000
 | Pohledávky (Fabrikam)  | 75,00        |               |
 | Závazky Fabrikam-západ (Fabrikam) |              | 75,00         |
 
-**Účetnictví společnosti Fabrikam East**
+**Účetnictví společnosti Fabrikam-východ**
 
 | Účet                              | Částka Má dáti | Částka Dal |
 |--------------------------------------|--------------|---------------|
 | Pohledávky (Fabrikam-východ)  | 25,00        |               |
 | Závazky Fabrikam-západ (Fabrikam-východ) |              | 25,00         |
 
-**Účetnictví společnosti Fabrikam West**
+**Účetnictví společnosti Fabrikam-západ**
 
 | Účet                                | Částka Má dáti | Částka Dal |
 |----------------------------------------|--------------|---------------|

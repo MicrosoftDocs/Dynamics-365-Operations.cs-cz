@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 318c88f88277a8300b1fcda5056a9a92c9a81eae
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 7edf456b09c6f77550f1dd023e712c7ef379fd1a
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -36,7 +37,7 @@ Tento článek obsahuje informace o ohlášení kusovníků jako dokončených.
 Stránky **Vykázat jako dokončené** a **Maximální dokončená výroba** složí k vykázání kusovníků v dokončeném stavu. Proces vykázání dokončeného kusovníku je koncepčně stejný jako proces vykázání dokončené výrobní zakázky. Tento proces lze použít například v jednoduchých procesech sestavení a kompletace, u kterých nejsou potřeba rozšířené možnosti výrobních zakázek. Na stránce **Vykázat jako dokončené** můžete vykázat více dokončených kusovníků najednou. Na stránce **Maximální dokončená výroba** můžete vykázat pouze jeden kusovník jako dokončený. Stránka **Hlášení jako dokončené** je k dispozici z položky nabídky v modulu Řízení zásob a obě stránky jsou k dispozici jako položky nabídky na stránce **Uvolněné produkty**.
 
 ## <a name="report-as-finished-page"></a>Stránka Vykázat jako dokončené
-Po otevření stránky **Vykázat jako dokončené ** z uvolněného produktu systém navrhne, abyste jako dokončené vykázali výchozí množství standardních zásob. Ve výchozím nastavení se zobrazuje aktivní verze kusovníku, avšak máte možnost změny na jinou schválenou verzi kusovníku. Na stránce může také odstraňovat záznamy a vytvářet nové záznamy pro uvolněné produkty, které mají být vykázány jako dokončené. Chcete-li produkty vybrat pomocí dotazu, klikněte na položku nabídky **Vybrat**. Pro vybrané produkty kliknutím na tlačítko **OK** ručně potvrďte výkaz jako dokončený. Proces lze rovněž nastavit ke spuštění v dávce. Jakmile je vykázání dokončení procesu potvrzeno, systém vytvoří deník kusovníku, ve kterém je zpracováno zaúčtování zásob. Tento deník obsahuje jednu řádkovou položku pro dokončený produkt a řádkovou položku pro každý řádek kusovníku. Můžete určit, zda je deník zaúčtovat automaticky, nebo zda zůstane otevřený pro další úpravy.
+Po otevření stránky **Vykázat jako dokončené** z uvolněného produktu systém navrhne, abyste jako dokončené vykázali výchozí množství standardních zásob. Ve výchozím nastavení se zobrazuje aktivní verze kusovníku, avšak máte možnost změny na jinou schválenou verzi kusovníku. Na stránce může také odstraňovat záznamy a vytvářet nové záznamy pro uvolněné produkty, které mají být vykázány jako dokončené. Chcete-li produkty vybrat pomocí dotazu, klikněte na položku nabídky **Vybrat**. Pro vybrané produkty kliknutím na tlačítko **OK** ručně potvrďte výkaz jako dokončený. Proces lze rovněž nastavit ke spuštění v dávce. Jakmile je vykázání dokončení procesu potvrzeno, systém vytvoří deník kusovníku, ve kterém je zpracováno zaúčtování zásob. Tento deník obsahuje jednu řádkovou položku pro dokončený produkt a řádkovou položku pro každý řádek kusovníku. Můžete určit, zda je deník zaúčtovat automaticky, nebo zda zůstane otevřený pro další úpravy.
 
 ## <a name="max-report-as-finished-page"></a>Maximum Stránka Hlásit jako dokončené
 Na stránce **Maximální dokončená výroba** určuje každý řádek kusovníku počet kusů produktu, které mohou být vykázány jako dokončené. Tento výpočet vychází z fyzicky dostupných zásob na skladě pro každý řádek kusovníku. V následujícím příkladu spotřebovává jeden kus čísla položky PZ dva kusy suroviny SU10 a jeden kus suroviny SU20. Vzhledem k tomu, že na skladě je pouze 10 kusů suroviny SU10, lze jako dokončené vykázat maximálně 5 kusů PZ. Tato hodnota se zobrazuje v poli **Maximální dokončená výroba**.

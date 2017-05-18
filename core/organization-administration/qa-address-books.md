@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 444ffcc8a14650085e24d0ea0d7f725e9d324d69
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f3d34f9ee0c9db97e79b8577d006b198f9a5cb29
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -41,8 +42,8 @@ Je možné kontrolovat duplicitní záznamy přímo na stránce seznamu **Globá
 ## <a name="can-i-bulk-add-or-delete-party-records-from-an-address-book"></a>Je možné hromadně přidat nebo odstranit záznamy strany z adresáře?
 Ano, můžete přidat několik záznamů strany do adresáři a také odstranit několik záznamů strany.
 
--   Chcete-li přidat více záznamů strany do adresáře, na stránce seznamu **Globální adresář **vyberte ze seznamu strany. Poté na panelu akcí na kartě **Strana **ve skupině **Spravovat **klikněte na možnost **Přiřadit strany**. Vyberte adresáře, do kterých chcete přidat vybrané záznamy strany, a klikněte na tlačítko **OK**. Všechny vybrané záznamy strany jsou přidány do vybraných adresářů.
--   Chcete-li odebrat více záznamů strany z adresáře, na stránce seznamu **Globální adresář **vyberte ze seznamu strany. Poté na panelu akcí na kartě **Strana **ve skupině **Spravovat **klikněte na možnost **Odebrat strany**. Vyberte adresáře, ze kterých chcete odebrat strany, a potom klikněte na tlačítko **OK**. Všechny vybrané záznamy strany budou odebrány z vybraných adresářů.
+-   Chcete-li přidat více záznamů strany do adresáře, na stránce seznamu **Globální adresář**vyberte ze seznamu strany. Poté na panelu akcí na kartě **Strana**ve skupině **Spravovat**klikněte na možnost **Přiřadit strany**. Vyberte adresáře, do kterých chcete přidat vybrané záznamy strany, a klikněte na tlačítko **OK**. Všechny vybrané záznamy strany jsou přidány do vybraných adresářů.
+-   Chcete-li odebrat více záznamů strany z adresáře, na stránce seznamu **Globální adresář**vyberte ze seznamu strany. Poté na panelu akcí na kartě **Strana**ve skupině **Spravovat**klikněte na možnost **Odebrat strany**. Vyberte adresáře, ze kterých chcete odebrat strany, a potom klikněte na tlačítko **OK**. Všechny vybrané záznamy strany budou odebrány z vybraných adresářů.
 
 ## <a name="can-i-change-the-party-type-of-a-record-or-do-i-have-to-delete-the-old-record-and-create-a-new-one"></a>Mohu změnit typ strany záznamu nebo je nutné odstranit původní záznam a vytvořit nový?
 V některých případech je třeba změnit typ strany záznamu z osoby na organizaci nebo z organizace na osobu. Například Anna je členem prodejního týmu společnosti Fabrikam U.K. Na veletrhu v Londýně se setká se šesti novými potenciálními zákazníky. Anna vytvoří záznam strany potenciálního zákazníka pro každého potenciálního zákazníka. Když Anna uloží záznamy, jsou všechny záznamy rovněž vytvořeny v globálním adresáři. Společnost Fabrikam má nastaven výchozí typ strany na organizaci, ale dva noví potenciální zákazníci by měli mít typ záznamu "osoba". Proto když se Anna z veletrhu vrátí, musí změnit typ strany záznamu dvou potenciálních zákazníků. Chcete-li změnit záznam strany na jiný typ, musíte nejprve vytvořit nový záznam strany správného typu v globálním adresáři. Poté můžete přidružit původní záznam strany k tomuto novému záznamu. Po provedení nového přidružení strany odstraňte původní záznam strany, který má nesprávný typ záznamu.

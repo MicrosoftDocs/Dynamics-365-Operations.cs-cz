@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 44d51807cd6bb64ae2c4bef58d8a445417ffa3a9
-ms.openlocfilehash: 815282422a6d7b8eef7d0628cf10b715449e1d1d
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 474453e7f33526bc7bebc60ef68f560d489a1841
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -49,13 +50,13 @@ Pokud jsou platební transakce u aktuální právnické osoby vyrovnány oproti 
 Pokud zašlete dodavateli platbu od jedné právnické osoby a chcete pro něj vybrat faktury u jiných právnických osob, je nutné zajistit, aby všechny odpovídající účty dodavatele používaly u právnických osob stejné ID adresáře. Pokud obdržíte platbu od odběratele, který platí faktury ve více právnických osobách, je nutné zajistit, aby všechny odpovídající účty odběratele používaly u všech právnických osob stejné ID adresáře.
 
 ## <a name="set-up-posting-profiles-for-centralized-payments"></a>Nastavení účetních profilů pro centralizované platby
-Při vytváření platby u jedné právnické osoby, která slouží k úhradě faktur u jiných právnických osob, se musí ID účetních profilů obou právnických osob shodovat. Chcete-li pomoci zajistit, aby byly platby správně vytvářeny, nastavte u každé právnické osoby faktury účetní profil, který odpovídá účetním profilům používaným u právnických osob platby. Přepněte na první právnickou osobu faktury a poté na stránce **Účetní profil dodavatele ** můžete vytvořit nový účetní profil nebo upravit existující účetní profil. Možnosti vybrané pro účetní profil u právnické osoby faktury se nemusí shodovat s nastavením účetního profilu u právnické osoby platby.
+Při vytváření platby u jedné právnické osoby, která slouží k úhradě faktur u jiných právnických osob, se musí ID účetních profilů obou právnických osob shodovat. Chcete-li pomoci zajistit, aby byly platby správně vytvářeny, nastavte u každé právnické osoby faktury účetní profil, který odpovídá účetním profilům používaným u právnických osob platby. Přepněte na první právnickou osobu faktury a poté na stránce **Účetní profil dodavatele** můžete vytvořit nový účetní profil nebo upravit existující účetní profil. Možnosti vybrané pro účetní profil u právnické osoby faktury se nemusí shodovat s nastavením účetního profilu u právnické osoby platby.
 
 ## <a name="set-up-methods-of-payment-for-centralized-payments"></a>Nastavení metod platby pro centralizované platby
-Při vytváření platby u jedné právnické osoby, která slouží k úhradě faktur u jiných právnických osob, se musí ID způaobu platby obou právnických osob shodovat. Chcete-li pomoci zajistit, aby byly platby správně vytvářeny, nastavte u každé právnické osoby faktury metodu platby, která odpovídá metodám platby používaným u právnické osoby platby. Přepněte na první právnickou osobu faktury a poté na stránce **Metody platby **můžete vytvořit novou metodu platby nebo upravit existující metodu platby. Výběry provedené u metody platby u právnické osoby faktury se nemusejí shodovat s nastavení metody platby u právnické osoby platby.
+Při vytváření platby u jedné právnické osoby, která slouží k úhradě faktur u jiných právnických osob, se musí ID způaobu platby obou právnických osob shodovat. Chcete-li pomoci zajistit, aby byly platby správně vytvářeny, nastavte u každé právnické osoby faktury metodu platby, která odpovídá metodám platby používaným u právnické osoby platby. Přepněte na první právnickou osobu faktury a poté na stránce **Metody platby**můžete vytvořit novou metodu platby nebo upravit existující metodu platby. Výběry provedené u metody platby u právnické osoby faktury se nemusejí shodovat s nastavení metody platby u právnické osoby platby.
 
 ## <a name="set-up-default-descriptions"></a>Nastavit výchozí popisy
-Výchozí popis můžete definovat pro mezipodnikové doklady vyrovnání. Výchozí popis je v průběhu procesu vyrovnání mezi společnostmi zahrnut v transakcích počátečního a koncového data splatnosti. Na stránce **Výchozí popisy** můžete vytvořit nové popisy pro **Mezipodnikové vyrovnání odběratele **i **Mezipodnikové vyrovnání dodavatele** tak, že vyberte jazyk a zadáte text.
+Výchozí popis můžete definovat pro mezipodnikové doklady vyrovnání. Výchozí popis je v průběhu procesu vyrovnání mezi společnostmi zahrnut v transakcích počátečního a koncového data splatnosti. Na stránce **Výchozí popisy** můžete vytvořit nové popisy pro **Mezipodnikové vyrovnání odběratele**i **Mezipodnikové vyrovnání dodavatele** tak, že vyberte jazyk a zadáte text.
 
 
 

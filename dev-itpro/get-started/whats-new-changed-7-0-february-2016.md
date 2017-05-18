@@ -3,7 +3,7 @@ title: "Co je nového nebo změněného v aplikaci Dynamics AX 7.0 (únor 2016)
 description: "Tento článek popisuje funkce, které jsou v aplikaci Microsoft Dynamics AX 7.0 nové nebo změněné. Tato verze obsahuje funkce pro obě platformy a byla vydána v únoru 2016."
 author: sericks007
 manager: AnnBe
-ms.date: 2016-06-10 19 - 54 - 48
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 2928b86a9dbf001451933f9d17287400cafaf089
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 36d4aec3936ef99b880f3affc75df1b952cb3133
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Co je nového nebo změněného v aplikaci Dynamics AX 7.0 (únor 2016)
+
+[!include[banner](../includes/banner.md)]
+
 
 Tento článek popisuje funkce, které jsou v aplikaci Microsoft Dynamics AX 7.0 nové nebo změněné. Tato verze obsahuje funkce pro obě platformy a byla vydána v únoru 2016.
 
@@ -331,8 +335,8 @@ Tato funkce pracuje nezávisle na metodě výpočtu nákladů, která je přiřa
 <tr class="even">
 <td>Přístup k procesní nápovědě (průvodce úkolem) a rámcovým tématům kliknutím na tlačítko **Nápověda**.</td>
 <td>Systém nápovědy aplikace AX 2012 odkazuje na témata ve formátu HTML, která jsou uložena na místním webovém serveru. Zákazníci a partneři si mohou vytvářet svou vlastní nápovědu.</td>
-<td>Systém nápovědy v aktuální verzi aplikace Dynamics AX zobrazuje průvodce úkolem, kteří jsou uloženi v BPM služby Microsoft Dynamics Lifecycle Services (LCS). Systém nápovědy také zobrazuje témata z wikiwebů společnosti Microsoft. Další informace naleznete v tématu [Nápověda k aplikaci Dynamics AX – začínáme](help-overview.md) a [Nový průvodce úkolem je k dispozici (únor 2016)](new-task-guides-available-february-2016.md).</td>
-<td>Průvodci úkolem vás interaktivním způsobem provedou kroky daného úkolu nebo obchodního procesu. Můžete stahovat a upravovat průvodce úkoly, které společnost Microsoft poskytuje. Wiki nabízí rychlejší a pružnější způsob vytváření, dodávání a aktualizace dokumentace k produktu. Díky tomu pomáhá zajistit, že budete mít přístup k aktuálním technickým informacím.</td>
+<td>Systém nápovědy v aktuální verzi aplikace Dynamics AX zobrazuje průvodce úkolem, kteří jsou uloženi v BPM služby Microsoft Dynamics Lifecycle Services (LCS). Systém nápovědy také zobrazuje témata z webu dokumentů společnosti Microsoft. Další informace naleznete v tématu [Nápověda k aplikaci Dynamics AX – začínáme](help-overview.md) a [Nový průvodce úkolem je k dispozici (únor 2016)](new-task-guides-available-february-2016.md).</td>
+<td>Průvodci úkolem vás interaktivním způsobem provedou kroky daného úkolu nebo obchodního procesu. Můžete stahovat a upravovat průvodce úkoly, které společnost Microsoft poskytuje. Téma nabízí rychlejší a pružnější způsob vytváření, dodávání a aktualizace dokumentace k produktu. Díky tomu pomáhá zajistit, že budete mít přístup k aktuálním technickým informacím.</td>
 </tr>
 </tbody>
 </table>
@@ -861,7 +865,7 @@ Maloobchod nabízí dokonalý mobilní zážitek kdekoliv, kdykoliv a na jakémk
 <tr class="odd">
 <td>Spuštění POS jako webové aplikace prostřednictvím cloudu POS.</td>
 <td>Není k dispozici.</td>
-<td>K dispozici je funkční parita s MPOS. Ta zahrnuje tyto funkce:
+<td>K dispozici je funkční parita s MPOS. Ta zahrnuje tyto funkce:
 <ul>
 <li>Aktivace zařízení pomocí AAD</li>
 <li>Interaktivní rozvržení</li>
@@ -1076,5 +1080,7 @@ Nebyly přidány následující nové funkce.
 [Novinky a změny](whats-new-changed.md)
 
 [Nový průvodce úkolem je k dispozici (únor 2016)](new-task-guides-available-february-2016.md)
+
+
 
 

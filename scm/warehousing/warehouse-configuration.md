@@ -3,7 +3,7 @@ title: Konfigurace skladu
 description: "Tento článek popisuje konfiguraci skladu. Obsahuje informace o postupu při povolení rozvržení skladu a procesů skladu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 52 - 43
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,19 +17,23 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 437f2348603db432df6d7589e4043d8145c52a1e
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e312f953d6a29d26b98794ed213d6ec70f6aa4b7
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="warehouse-configuration"></a>Konfigurace skladu
 
+[!include[banner](../includes/banner.md)]
+
+
 Tento článek popisuje konfiguraci skladu. Obsahuje informace o postupu při povolení rozvržení skladu a procesů skladu.
 
-**Poznámka:** Tento článek se vztahuje k funkcím v modulu** Řízení skladu** (pokročilé uskladnění). Nevztahuje se na funkce skladu v modulu **Řízení zásob**.
+**Poznámka:** Tento článek se vztahuje k funkcím v modulu**Řízení skladu** (pokročilé uskladnění). Nevztahuje se na funkce skladu v modulu **Řízení zásob**.
 
 ## <a name="warehouse-layout"></a>Rozvržení skladu
 Systému správy skladu v aplikaci Microsoft Dynamics 365 for Operations umožňuje flexibilní způsoby definování rozvržení skladu podle měnících se potřeb, aby bylo možné dosáhnout optimální efektivity skladu.
@@ -75,7 +79,12 @@ V rámci konfigurace skladu je důležité povolit procesy skladu podle obchodn�
 
 Šablony vlny pomáhají povolit odchozí proces "Uvolnění do skladu". Po uvolnění řádků objednávky (buď přímo ze zdrojových dokumentů, pomocí dávkových procesů úloh nebo pomocí zatížení, které již bylo vytvořeno), se používá funkce šablony vlny. 
 
-Můžete vytvořit tři typy šablon vlny: **Expedice**, **Výrobní zakázka** a **Kanban**. Parametry se používají k definování, co může systém automaticky provést při zpracování odchozí práce. Šablona vlny je vybrána na základě pořadí šablony vlny a kritérií, která jsou zadána v šabloně. Pokud je šablona uvedena v horní části řady, jsou nejprve zkontrolována kritéria v této šabloně. Pokud kritéria nelze splnit, bude zpracována šablona vlny. V opačném případě budou zkontrolována kritéria v další šabloně a tak dále. Je proto vhodné vložit šablonu, která obsahuje nejkonkrétnější kritéria, do horní části seznamu pořadí šablon vlny, aby byla zpracována jako první. Například chcete zpracovat všechnu dnešní práci konkrétního dopravce a dočasně odložit zpracování práce pro ostatní dopravce. V tomto případě by měla být šablona vlny, která vybere práci pro daného dopravce, uvedena v pořadí výše než jiné šablony. V opačném případě může být práce ostatních dopravců zpracována před dokončením práce daného dopravce. 
+Můžete vytvářet tři typy šablon vlny: 
+-   **Expedice**
+-   **Výrobní zakázka**
+-   **Kanban** 
+
+Parametry se používají k definování, co může systém automaticky provést při zpracování odchozí práce. Šablona vlny je vybrána na základě pořadí šablony vlny a kritérií, která jsou zadána v šabloně. Pokud je šablona uvedena v horní části řady, jsou nejprve zkontrolována kritéria v této šabloně. Pokud kritéria nelze splnit, bude zpracována šablona vlny. V opačném případě budou zkontrolována kritéria v další šabloně a tak dále. Je proto vhodné vložit šablonu, která obsahuje nejkonkrétnější kritéria, do horní části seznamu pořadí šablon vlny, aby byla zpracována jako první. Například chcete zpracovat všechnu dnešní práci konkrétního dopravce a dočasně odložit zpracování práce pro ostatní dopravce. V tomto případě by měla být šablona vlny, která vybere práci pro daného dopravce, uvedena v pořadí výše než jiné šablony. V opačném případě může být práce ostatních dopravců zpracována před dokončením práce daného dopravce. 
 
 V každé šabloně vlny je nutné zadat metody zpracování vlny. Metody, které jsou k dispozici, se liší v závislosti na typu šablony vlny.
 
@@ -107,6 +116,8 @@ Chcete-li usnadnit a urychlit definování akcí, které jsou přidruženy k jed
 <a name="see-also"></a>Viz také
 --------
 
-[Konfigurace umístění ve skladu s povoleným WMS (průvodce záznamem úloh)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
+[Konfigurace umístění ve skladu s povoleným WMS (průvodce záznamem úloh)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)
+
+
 
 

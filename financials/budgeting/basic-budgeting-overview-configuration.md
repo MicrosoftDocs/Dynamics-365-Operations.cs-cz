@@ -16,10 +16,11 @@ ms.search.region: global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a639e509cf6a3d2f1b850f27481d7b95546522b8
-ms.openlocfilehash: b62e14f7c91692ae97bb332b38b0deeb328cc1bd
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 0e3484ee731423798e686b9a70f4f09b5c3c45b4
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -76,7 +77,7 @@ Správce rozpočtu může kontrolovat aktuální stav rozpočtu v pracovním pro
 > [!NOTE] 
 > Pole **Správce oddělenír** na stránce **Organizační jednotky** určuje, kteří manažeři podporují kombinace specifických finančních dimenzí. Klepněte na tlačítko **Zobrazit více** v dolní části karty a otevřete stránku s dotazy **Rozpočet a skutečné hodnoty** s dalšími podrobnostmi o částkách rozpočtu versus skutečných částkách. 
 
-Ze stránky s dotazy **Rozpočet a skutečné hodnoty** můžete přejít na podrobné informace o rozpočtu versus skutečných částkách. Vyberte řádek stránky s dotazy a pak klepněte na možnost **Zůstatky za období** a zobrazíte rozpočet a skutečné částky rozdělené do fiskálních období. Stránka **Účetní položky rozpočtu** poskytují přecházení k podrobnostem o rozpočtových částkách v položkách registru rozpočtu. Stránka **Položky hlavního deníku **otevře transakce hlavní knihy, které jsou zahrnuty do vypočítané částky **skutečné hodnoty**. 
+Ze stránky s dotazy **Rozpočet a skutečné hodnoty** můžete přejít na podrobné informace o rozpočtu versus skutečných částkách. Vyberte řádek stránky s dotazy a pak klepněte na možnost **Zůstatky za období** a zobrazíte rozpočet a skutečné částky rozdělené do fiskálních období. Stránka **Účetní položky rozpočtu** poskytují přecházení k podrobnostem o rozpočtových částkách v položkách registru rozpočtu. Stránka **Položky hlavního deníku**otevře transakce hlavní knihy, které jsou zahrnuty do vypočítané částky **skutečné hodnoty**. 
 
 Společnost, která používá funkci plánování rozpočtu může vytvořit a použít *prognózy rozpočtu *v pracovním prostoru **Rozpočty hlavní knihy a prognózy**.
 

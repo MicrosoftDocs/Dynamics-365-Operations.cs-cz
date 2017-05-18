@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 394276e6908f2c1f6bc72eea061facc3afe701e9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a6bd487e602a57272ea2943441ea4b78129b3f8d
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -47,7 +48,7 @@ Karanténní příkazy mohou mít tyto stavy:
 
 ### <a name="created"></a>Vytvořeno
 
-Jestliže byla ručně vytvořena karanténní objednávka, ale položka ještě není uložena do karanténního skladu, karanténní příkaz obdrží stav **Vytvořeno**. Vygenerují se dvě skladové transakce. Jedna je transakce výdeje, která může mít stav **Na objednávce**, **Rezervované – fyzicky** nebo** Vyskladněno**. Druhá je příjmová transakce, která může mít v karanténním skladu stav **Objednáno** nebo** Registrováno**. Rezervaci, vyskladnění a aktualizaci registrace zásob můžete provádět pomocí obvyklých procesů.
+Jestliže byla ručně vytvořena karanténní objednávka, ale položka ještě není uložena do karanténního skladu, karanténní příkaz obdrží stav **Vytvořeno**. Vygenerují se dvě skladové transakce. Jedna je transakce výdeje, která může mít stav **Na objednávce**, **Rezervované – fyzicky** nebo**Vyskladněno**. Druhá je příjmová transakce, která může mít v karanténním skladu stav **Objednáno** nebo**Registrováno**. Rezervaci, vyskladnění a aktualizaci registrace zásob můžete provádět pomocí obvyklých procesů.
 
 ### <a name="started"></a>Zahájeno
 

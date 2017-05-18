@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: d9dcdd63649d6dbff96efe2eec7cad34025ab2ee
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 01ab473951bc04c68a0248b37041a116eebcaea9
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -55,7 +56,7 @@ V tomto vzorovém scénáři společnost USMF má smlouvu o zásilce s dodavatel
 USMF provede dodatečné periodické procesy:
 
 -   Fyzické přesunutí zásob vlastněných dodavatelem mezi různými sklady se zpracovává pomocí deníku převodu.
--   Fyzické zásoby na skladě se aktualizují pomocí deníku** Sčítání položek **. Sčítání může být také využito dodavatelem pro aktualizaci zásob na skladě, pokud k tomu má oprávnění.
+-   Fyzické zásoby na skladě se aktualizují pomocí deníku**Sčítání položek**. Sčítání může být také využito dodavatelem pro aktualizaci zásob na skladě, pokud k tomu má oprávnění.
 
 Dodavatel US-104 můžete sledovat aktualizace pomocí stránky **Zásoby zásilky na skladě**.
 
@@ -67,7 +68,7 @@ Objednávka doplňovací zásilky je dokument, který se používá pro zažád�
 ## <a name="inventory-ownership-change-journal"></a>Deník změn vlastnictví zásob
 Proces změn vlastnictví zásob dodavatele na přijímající právnickou osobu se provádí pomocí deníku změn vlastníka zásob. V deníku nejsou vytvořeny žádné očekávané skladové transakce. Jsou vytvořeny pouze transakce, které se vztahují k zaúčtovanému deníku. Kdy je deník zaúčtován:
 
--   Zásoby vlastněné dodavatelem se vydávají pomocí odkazu na **změny vlastnictví** se stavem **Prodáno **.
+-   Zásoby vlastněné dodavatelem se vydávají pomocí odkazu na **změny vlastnictví** se stavem **Prodáno**.
 -   Zásoby na skladě jsou pak přijaty právní osobou, která je bude využívat, pomocí skladové transakce, která je aktualizována příjemkou produktu na nákupní objednávce. To nastaví stav objednávky na **přijato**. Nákupní objednávky použité pro dodávku mají pole **Původ** nastaveno na **Dodávka**.
 
 Není možné aktualizovat množství v řádcích nákupní objednávky po vytvoření objednávky. 

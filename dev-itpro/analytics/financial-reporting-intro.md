@@ -1,9 +1,9 @@
 ---
 title: "Finanční výkaznictví v aplikaci Dynamics 365 for Operations"
 description: "Finanční výkaznictví v aplikaci Microsoft Dynamics 365 for Operations je nástroj, který finanční a obchodní profesionálové mohou používat k vytváření, správě, nasazení a zobrazování finančních výkazů. Obchází omezení tradičních sestav a pomáhá efektivně navrhnout různé typy sestav."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 31 - 29
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 519b3d3fb53b20d0014c97bcb1b9b21802a376d6
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: fee79dad870bfbf8852198c7e825cfaa95a8d10b
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="financial-reporting-for-dynamics-365-for-operations"></a>Finanční výkaznictví v aplikaci Dynamics 365 for Operations
+
+[!include[banner](../includes/banner.md)]
+
 
 Finanční výkaznictví v aplikaci Microsoft Dynamics 365 for Operations je nástroj, který finanční a obchodní profesionálové mohou používat k vytváření, správě, nasazení a zobrazování finančních výkazů. Obchází omezení tradičních sestav a pomáhá efektivně navrhnout různé typy sestav.
 
@@ -36,15 +40,14 @@ Následující součásti finančního výkaznictví umožňují snadné vytvá�
 | Součást        | Funkce                                                                                                                                                                                                                                                                           | Doplňkové informace                                                                          |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | Návrhář sestav  | Vytváření stavebních bloků sestav, které v kombinaci definují a generují sestavy. Průvodce sestavou provádí méně zkušené uživatele procesem návrhu. Pokročilí uživatelé mohou vytvořit nové stavební bloky sestav nebo upravit existující stavební bloky podle svých potřeb. |                                                                                                 |
-| Webový prohlížeč       | Zobrazení finančního výkaznictví ve webovém prohlížeči. Webový prohlížeč nevyžaduje instalaci součástí serveru pro finanční výkaznictví.                                                                                                                                                        | [Webový prohlížeč](financial-reporter-designer-web-client.md)            |
-| Plánování sestav | Naplánujte jednu sestavu nebo skupinu sestav tak, aby se generovala v pravidelných intervalech.                                                                                                                                                                                          | [Generování sestavy](/dynamics365/operations/financials/general-ledger/generate-financial-report) |
+| Plánování sestav | Naplánujte jednu sestavu nebo skupinu sestav tak, aby se generovala v pravidelných intervalech.                                                                                                                                                                                          | [Generování finanční sestavy](generate-financial-report.md) |
 
 ## <a name="features"></a>Funkce
 <table>
 <thead>
 <tr class="header">
 <th>Funkce</th>
-<th>Popis</th>
+<th>popis</th>
 </tr>
 </thead>
 <tbody>
@@ -78,13 +81,15 @@ Následující součásti finančního výkaznictví umožňují snadné vytvá�
 <li>Přidání filtrů dimenze pro omezení obsahu sestavy na specifickou dimenzi nebo kombinaci dimenzí.</li>
 <li>Přidání filtrů atributu pro omezení obsahu sestavy na specifický atribut nebo kombinaci atributů.</li>
 </ul>
-Další informace naleznete v části „Interaktivní součásti a navigační funkce“ v článku <a href="https://technet.microsoft.com/en-us/library/dn469079.aspx">Rozhraní Prohlížeče plochy</a>.</td>
+</td>
 </tr>
 </tbody>
 </table>
 
 #<a name="see-also"></a>Viz také
+[Generování finanční sestavy](generate-financial-report.md)
 
-[Generovat finanční sestavu]((dynamics365\operations\financials\general-ledger\generate-financial-report)
+
+
 
 

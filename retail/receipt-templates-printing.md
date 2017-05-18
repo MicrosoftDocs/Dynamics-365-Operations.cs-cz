@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: fabaacbc7187b38a1745c2139a9eb7760f2be987
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: a0a105ade7e47d7c554d62ee112ed03437bb7521
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -54,10 +55,10 @@ Použijte návrháře rozvržení formuláře ke grafickému vytvoření rozvrž
 5.  Po dokončení instalace zadejte uživatelské jméno a heslo aplikace Microsoft Dynamics 365 for Operations a klepněte na tlačítko **Přihlásit** pro spuštění návrháře.
 6.  Po ověření pověření a spuštění návrháře můžete začít navrhovat formát příjemky nebo změnit existující formát.
 7.  Chcete-li vytvořit prvky formuláře, vyberte oddíl **Záhlaví**, **Řádky** nebo **Zápatí** a potom přetáhněte prvek z oddílu do pracovního prostoru. Většina prvků obsahuje proměnné, které jsou automaticky vyplněny daty z databáze. Další prvky, jako **Text**, vám umožňují vytisknout vlastní text na příjemce. **Poznámka:** Změnou čísla v pravém dolním rohu oddílu můžete určit, kolik řádků budou jednotlivé oddíly zabírat. Úpravu oddílu lze usnadnit tak, že zvětšíte výšku daného oddílu přetažením ukazatele velikosti ve spodní části oddílu. Výška oddílu v pracovním prostoru nemá vliv na počet řádků na skutečné příjemce.
-8.  Po přetažení prvku do pracovního prostoru nastavte vlastnosti oddílu v podokně **Informace o objektu **v dolní části stránky. Zadejte jedno nebo více z následujících nastavení:
+8.  Po přetažení prvku do pracovního prostoru nastavte vlastnosti oddílu v podokně **Informace o objektu**v dolní části stránky. Zadejte jedno nebo více z následujících nastavení:
     -   **Zarovnat** – Nastavte zarovnání pole **Vlevo** nebo **Vpravo**.
     -   **Výplňový znak** – Zadejte prázdný znak. Standardně se používá prázdné místo, ale můžete zadat libovolný znak.
-    -   **Předpona** – Zadejte hodnotu, která se bude zobrazovat na začátku pole. Toto nastavení se používá pouze v součásti **Řádky **v rámci rozvržení.
+    -   **Předpona** – Zadejte hodnotu, která se bude zobrazovat na začátku pole. Toto nastavení se používá pouze v součásti **Řádky**v rámci rozvržení.
     -   **Znaky** – zadejte maximální počet znaků, které pole může obsahovat, pokud prvek obsahuje proměnnou. Pokud je text v poli delší než zadaný počet znaků, bude text zkrácen podle pole.
     -   **Proměnná** – Toto políčko se vybere automaticky, pokud je prvek proměnná a nelze jej přizpůsobit.
     -   **Typ písma** – Nastavte typ písma **Normální** nebo **Tučné**. Tučná písmena zabírají dvakrát tolik místa jako normální písmena. Proto může dojít ke zkrácení některých znaků.
@@ -67,7 +68,7 @@ Použijte návrháře rozvržení formuláře ke grafickému vytvoření rozvrž
 Profily účtenky jsou přiřazeny přímo k tiskárnám prostřednictvím profilu hardwaru.
 
 1.  Profil hardwaru otevřete klepnutím na tlačítko **Maloobchodní a velkoobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Hardwarový profil**.
-2.  Vyberte tiskárnu a poté v poli **Profil účtenky **můžete přiřadit profil účtenky, který chcete použít v pokladně.
+2.  Vyberte tiskárnu a poté v poli **Profil účtenky**můžete přiřadit profil účtenky, který chcete použít v pokladně.
 
 **Poznámka:** Pokud jsou použity dvě tiskárny, jednu tiskárnu lze nastavit na tisk standardních termálních účtenek se 40 sloupci. Druhá tiskárna se obvykle používá pro tisk účtenek na celou stránku, které vyžadují další informace. Tyto typy účtenky zahrnují účtenky za objednávky odběratelů a faktury odběratelům.
 

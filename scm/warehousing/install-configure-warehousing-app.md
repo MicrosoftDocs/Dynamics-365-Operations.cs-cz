@@ -3,7 +3,7 @@ title: "Instalace a konfigurace aplikace Microsoft Dynamics 365 for Operations �
 description: "Toto téma popisuje, jak nainstalovat a nakonfigurovat Microsoft Dynamics 365 for Operations - Warehousing."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-01-18 14 - 23 - 32
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 231c087ddc976aa552fc9cd6c89188f82a0247d1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: bbf6df8d43889e7a62bfe28921997c45c8b4c632
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="install-and-configure-microsoft-dynamics-365-for-operations-8211-warehousing"></a>Instalace a konfigurace aplikace Microsoft Dynamics 365 for Operations – Warehousing
+
+[!include[banner](../includes/banner.md)]
+
 
 Toto téma popisuje, jak nainstalovat a nakonfigurovat Microsoft Dynamics 365 for Operations - Warehousing.
 
@@ -67,7 +71,7 @@ Pokud chcete povolit interakci aplikace s konkrétním serverem Dynamics 365 for
 ## <a name="create-and-configure-a-user-account-in-dynamics-365-for-operations"></a>Vytvoření a konfigurace uživatelských účtů v Dynamics 365 for Operations
 Pro povolení aplikaci Dynamics 365 for Operations používat vaši aplikaci Azure AD je nutné dokončit následující kroky konfigurace:
 
-1.  Ve službě Azure Active Directory pro aplikaci Dynamics 365 for Operations vytvořte nový uživatelský účet. Účelem tohoto uživatelského účtu je přístup ke konkrétní vlastní službě aplikace Warehousing, kterou zpřístupňuje server Dynamics 365 for Operations. Po dokončení tohoto kroku budete mít uživatelská pověření WMDP, která sestávají z e-mailové adresy WMDP a hesla WMDP. Další informace o základních krocích přidání uživatelů do Azure AD a Dynamics 365 for Operations naleznete v tomto kurzu: [přihlášení k předplatnému Microsoft Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/sign-up-preview-subscription).
+1.  Ve službě Azure Active Directory pro aplikaci Dynamics 365 for Operations vytvořte nový uživatelský účet. Účelem tohoto uživatelského účtu je přístup ke konkrétní vlastní službě aplikace Warehousing, kterou zpřístupňuje server Dynamics 365 for Operations. Po dokončení tohoto kroku budete mít uživatelská pověření WMDP, která sestávají z e-mailové adresy WMDP a hesla WMDP. Další informace o základních krocích přidání uživatelů do Azure AD a Dynamics 365 for Operations naleznete v tomto kurzu: [přihlášení k předplatnému Microsoft Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription).
 2.  Vytvořte uživatele Dynamics 365 for Operations, který odpovídá pověření uživatele aplikace Warehousing.
     1.  V aplikaci Dynamics 365 for Operations přejděte na **Správa systému** &gt; **Společné** &gt; **Uživatelé**.
     2.  Vytvořte nového uživatele.
@@ -83,7 +87,8 @@ Aplikaci je třeba nakonfigurovat na zařízení, aby se připojovala k serveru 
 
 1.  V aplikaci přejděte na **Nastavení připojení**.
 2.  Zrušte zaškrtnutí políčka **Demo režim**. [![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
-3.  Zadejte následující informace:- **ID klienta služby Azure Active Directory** - ID klienta je získáno v kroku 13 "Vytvoření aplikace webové služby ve službě Active Directory". - **Tajné ID klienta služby Azure Active Directory** - tajné ID klienta je získáno v kroku 13 "Vytvoření aplikace webové služby ve službě Active Directory". - **Prostředek Azure Active directory** -zdroj adresáře Azure AD znázorňuje kořenovou adresu URL Dynamics 365 for Operations. **Poznámka:**: na konci tohoto pole nepoužívejte znak lomítka (/). - **Klient Azure Active directory** - Klient Azure AD Directory používaný se serverem Dynamics 365 for Operations: https://login.windows.net/&lt;your-AD-tenant-ID&gt;. Příklad: https://login.windows.net/contosooperations.onmicrosoft.com. **Poznámka:**: na konci tohoto pole nepoužívejte znak lomítka (/). - **Společnost** - zadejte právnickou osobu do Dynamics 365 for Operations, ke které se má aplikace připojovat. [![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
+3.  Zadejte následující informace:- **ID klienta služby Azure Active Directory** - ID klienta je získáno v kroku 13 "Vytvoření aplikace webové služby ve službě Active Directory". - **Tajné ID klienta služby Azure Active Directory** - tajné ID klienta je získáno v kroku 13 "Vytvoření aplikace webové služby ve službě Active Directory". - **Prostředek Azure Active directory** -zdroj adresáře Azure AD znázorňuje kořenovou adresu URL Dynamics 365 for Operations. **Poznámka:**: na konci tohoto pole nepoužívejte znak lomítka (/). - **Klient Azure Active directory** - Klient Azure AD Directory používaný se serverem Dynamics 365 for Operations: https://login.windows.net/&lt;your-AD-tenant-ID&gt;. Příklad: https://login.windows.net/contosooperations.onmicrosoft.com. 
+**Poznámka:**: na konci tohoto pole nepoužívejte znak lomítka (/). - **Společnost** - zadejte právnickou osobu do Dynamics 365 for Operations, ke které se má aplikace připojovat. [![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Vyberte tlačítko **Zpět** tlačítko v levém horním rohu aplikace. Aplikace se nyní připojí k vašemu serveru Dynamics 365 for Operations a zobrazí se přihlašovací obrazovka pro pracovníka skladu. [![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
 
 ## <a name="remove-access-for-a-device"></a>Odebrání přístupu k zařízení
@@ -97,6 +102,8 @@ V případě ztracených nebo narušených zařízení je nutné odebrat příst
 6.  Klepněte na kartu **konfigurace** kartu, přejděte dolů a ujistěte se, za je **ID klienta** aplikace stejné jako v kroku 2 v této části.
 7.  Klepněte na tlačítko **Odstranit** na panelu nástrojů.
 8.  V potvrzující zprávě, která se otevře, klikněte na tlačítko **Ano**.
+
+
 
 
 

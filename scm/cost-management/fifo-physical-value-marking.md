@@ -3,7 +3,7 @@ title: "Metoda FIFO s fyzickou hodnotou a označením"
 description: "Metoda (FIFO, First in, First out) představuje skladový model, ve kterém jsou nejprve vydávány první uskladněné položky. Finančně aktualizované výdeje ze skladu jsou vyrovnány oproti prvním finančně aktualizovaným příjmům do skladu na základě finančního data skladové transakce."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 18 - 57 - 00
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Retail
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8e3d189fc4dbc5c747a3473d3a221c739c323050
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b0be852bde33e8dfc82ceb42dd98be10537f318d
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="fifo-with-physical-value-and-marking"></a>Metoda FIFO s fyzickou hodnotou a označením
+
+[!include[banner](../includes/banner.md)]
+
 
 Metoda (FIFO, First in, First out) představuje skladový model, ve kterém jsou nejprve vydávány první uskladněné položky. Finančně aktualizované výdeje ze skladu jsou vyrovnány oproti prvním finančně aktualizovaným příjmům do skladu na základě finančního data skladové transakce. 
 
@@ -50,7 +54,9 @@ V tomto příkladu není skupina modelů položek označena, aby obsahovala fyzi
 -   5b. Finanční výdej 1 kusu za 20 Kč (průběžný průměr z finančně zaúčtovaných transakcí).
 -   6. Je provedena uzávěrka skladu. Podle metody FIFO bude první finančně zaúčtovaný výdej vyrovnán prvním finančně zaúčtovaným příjmem. K transakci výdeje bude vytvořena úprava ve výši 10 Kč.
 
-Nová průběžná průměrná nákladová cena představuje průměr finančně zaúčtovaných transakcí. Následující obrázky ukazují účinky skladového modelu FIFO na tuto sérii transakcí, když není použita možnost **Zahrnovat fyzickou hodnotu**. ![Metoda FIFO bez možnosti Zahrnovat fyzickou hodnotu](./media/fifowithoutincludephysicalvalue.gif) **Popis diagramu**
+Nová průběžná průměrná nákladová cena představuje průměr finančně zaúčtovaných transakcí. Následující obrázky ukazují účinky skladového modelu FIFO na tuto sérii transakcí, když není použita možnost **Zahrnovat fyzickou hodnotu**. ![FIFO bez funkce Zahrnovat fyzickou hodnotu](./media/fifowithoutincludephysicalvalue.gif) 
+
+**Klíč k diagramu**
 
 -   Skladové transakce jsou reprezentovány svislými šipkami.
 -   Příjmy do skladu jsou reprezentovány svislými šipkami nad časovou osou.
@@ -78,7 +84,9 @@ Pokud zaškrtnete políčko **Zahrnovat fyzickou hodnotu** pro položku na strá
 -   6a. Fyzický výdej ze skladu pro množství 1 při ceně 21,25 USD za kus.
 -   7. Je provedena uzávěrka skladu. Podle metody FIFO bude první finanční transakce výdeje opravena či vyrovnána podle prvního zaúčtovaného příjmu bez ohledu na to, zda se jedná o finanční nebo fyzický příjem.
 
-Transakce č. 5b bude vyrovnána transakcí příjmu č. 1b. K této transakci výdeje bude vytvořena záporná úprava ve výši 11,25 Kč. Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně a fyzicky aktualizovaných transakcí ve výši 27,50 Kč. Následující obrázek ukazuje účinek skladového modelu FIFO na tuto sérii transakcí, když není použita možnost **Zahrnovat fyzickou hodnotu**. ![Metoda FIFO s možností Zahrnovat fyzickou hodnotu](./media/fifowithincludephysicalvalue.gif) **Popis diagramu**
+Transakce č. 5b bude vyrovnána transakcí příjmu č. 1b. K této transakci výdeje bude vytvořena záporná úprava ve výši 11,25 Kč. Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně a fyzicky aktualizovaných transakcí ve výši 27,50 Kč. Následující obrázek ukazuje účinek skladového modelu FIFO na tuto sérii transakcí, když není použita možnost **Zahrnovat fyzickou hodnotu**. ![FIFO s funkcí Zahrnovat fyzickou hodnotu](./media/fifowithincludephysicalvalue.gif) 
+
+**Klíč k diagramu**
 
 -   Skladové transakce jsou reprezentovány svislými šipkami.
 -   Příjmy do skladu jsou reprezentovány svislými šipkami nad časovou osou.
@@ -106,7 +114,9 @@ Termínem označení se popisuje proces, který umožňuje propojit transakci v�
 -   6a. Fyzický výdej ze skladu pro množství 1 při ceně 21,25 USD za kus.
 -   7. Je provedena uzávěrka skladu. Vzhledem k tomu, že finančně aktualizovaná transakce FIFO je propojena s existujícím příjmem, budou tyto transakce vzájemně vyrovnány a nebudou provedeny žádné úpravy.
 
-Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně a fyzicky aktualizovaných transakcí ve výši 27,50 Kč. Následující obrázek ukazuje účinek volby skladového modelu FIFO na tuto sérii transakcí při použití označení propojení mezi výdeji a příjmy. ![Metoda FIFO s označením](./media/fifowithmarking.gif) **Popis diagramu**
+Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně a fyzicky aktualizovaných transakcí ve výši 27,50 Kč. Následující obrázek ukazuje účinek volby skladového modelu FIFO na tuto sérii transakcí při použití označení propojení mezi výdeji a příjmy. ![Metoda FIFO s označením](./media/fifowithmarking.gif) 
+
+**Klíč k diagramu**
 
 -   Skladové transakce jsou reprezentovány svislými šipkami.
 -   Příjmy do skladu jsou reprezentovány svislými šipkami nad časovou osou.
@@ -118,6 +128,8 @@ Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančn�
 -   Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
 -   Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
 -   Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
+
+
 
 
 

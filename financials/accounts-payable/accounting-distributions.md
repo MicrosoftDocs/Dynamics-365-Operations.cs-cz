@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a98ce08dc115bc96cec07c2d6ced10d774785fe9
-ms.openlocfilehash: b1057caae6f47e5a17e194834fbbcb9d7d731605
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 527ca0aa977c928204a1db165a77e20483931bda
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -52,7 +53,7 @@ Obecné možnosti rozúčtování poskytují následující možnosti zpracován
     -   Finanční dimenze na rozúčtování se řídí výchozím vzorcem, který může dokument rozšířit. Další informace naleznete v souvisejících článcích.
     -   Odchylky distribuce mohou být vygenerovány v odpovídajících scénářích, například mezi dodavatelskou fakturou a nákupní objednávkou. Pomocí volby **Odkaz** &gt; **Informace o dokumentu** můžete zobrazit odpovídající vztahy mezi rozúčtováním.
     -   Tlačítko **Opravit** je aktivní u dokumentů, které podporují opravy. **Opravit** vytvoří nové distribuce. Nejprve jsou vytvořeny distribuce, které stornují původní distribuce. Tyto distribuce nelze změnit. Dále se vytvoří nová správná rozúčtování. Tato rozúčtování lze upravit, pokud lze upravit původní rozúčtování.
-    -   Tlačítko** Podrobnosti o projektu** je aktivní jako rozšíření v případě, že se řádek vztahuje k určitému projektu. Rozúčtování projektu umožňují úpravy podrobných informací, jako je například financování zdroje a vlastnost řádku.
+    -   Tlačítko**Podrobnosti o projektu** je aktivní jako rozšíření v případě, že se řádek vztahuje k určitému projektu. Rozúčtování projektu umožňují úpravy podrobných informací, jako je například financování zdroje a vlastnost řádku.
     -   Můžete zobrazit účetní stav aktuálního dokumentu v položce **Odkaz**. Stav se týká celého dokumentu a určuje, zda je dokument nedokončený nebo dokončený.
 -   ** Zobrazit distribuce** – zobrazení rozúčtování pro všechny řádky a peněžní částky v dokumentu. V tomto zobrazení nelze rozúčtování upravit.
 

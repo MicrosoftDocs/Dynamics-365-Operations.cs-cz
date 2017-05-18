@@ -1,15 +1,15 @@
 ---
 title: "Nastavení funkce rozšířeného přihlášení pro Cloud POS a MPOS"
-description: "Tato wiki zahrnuje možnosti pro nastavení rozšířeného přihlášení pro systém Cloud POS a Retail Modern POS (MPOS)."
+description: "Toto téma zahrnuje možnosti pro nastavení rozšířeného přihlášení pro systém Cloud POS a Retail Modern POS (MPOS)."
 author: josaw1
 manager: AnnBe
-ms.date: 2016-06-15 20 - 44 - 32
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
@@ -17,17 +17,21 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 0dc80784a5c9a7de6009826284cb68f1aee83f70
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: 499fd5947a96f4a44f09883d5dd0d6124758e47a
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Nastavení funkce rozšířeného přihlášení pro Cloud POS a MPOS
 
-Tato wiki zahrnuje možnosti pro nastavení rozšířeného přihlášení pro systém Cloud POS a Retail Modern POS (MPOS).
+[!include[banner](includes/banner.md)]
+
+
+Toto téma zahrnuje možnosti pro nastavení rozšířeného přihlášení pro systém Cloud POS a Retail Modern POS (MPOS).
 
 <a name="setting-up-extended-logon"></a>Nastavení rozšířeného přihlášení
 =========================
@@ -53,7 +57,7 @@ Pokud je povolena možnost **Přihlášení zaměstnance pomocí karty vyžaduje
 <a name="assigning-an-extended-logon"></a>Přiřazení rozšířeného přihlášení
 ===========================
 
-Ve výchozím nastavení pouze manažeři mohou přiřadit rozšířené přihlášení zaměstnancům. Chcete-li přiřadit rozšířené přihlášení, přejděte na **Rozšířené přihlášení** v POS. Pak vyhledejte pracovníka zadáním jeho ID operátora do vyhledávacího pole. Vyberte pracovníka a klikněte na možnost **Přiřadit**. Na další stránce protáhněte nebo naskenujte rozšířené přihlášení pro přiřazení pracovníka. Pokud je protáhnutí nebo naskenování úspěšné, tlačítko **OK **bude k dispozici. Klepněte na tlačítko **OK** pro uložení rozšířeného přihlášení pro tohoto pracovníka.
+Ve výchozím nastavení pouze manažeři mohou přiřadit rozšířené přihlášení zaměstnancům. Chcete-li přiřadit rozšířené přihlášení, přejděte na **Rozšířené přihlášení** v POS. Pak vyhledejte pracovníka zadáním jeho ID operátora do vyhledávacího pole. Vyberte pracovníka a klikněte na možnost **Přiřadit**. Na další stránce protáhněte nebo naskenujte rozšířené přihlášení pro přiřazení pracovníka. Pokud je protáhnutí nebo naskenování úspěšné, tlačítko **OK** bude k dispozici. Klepněte na tlačítko **OK** pro uložení rozšířeného přihlášení pro tohoto pracovníka.
 
 <a name="deleting-an-extended-logon"></a>Odstranění rozšířeného přihlášení
 ==========================
@@ -69,5 +73,7 @@ Službu pro přihlášení lze rozšířit o podporu dalších zařízení pro r
 ====================
 
 Jakmile je rozšířené přihlášení nakonfigurováno a pracovník má přiřazen čárový kód nebo magnetický proužek, pracovníkovi stačí pouze protáhnout nebo naskenovat svoji kartu po zobrazení přihlašovací stránky POS. Je-li ke zpracování přihlášení nutné také heslo, pracovník je vyzván k zadání svého hesla.
+
+
 
 
