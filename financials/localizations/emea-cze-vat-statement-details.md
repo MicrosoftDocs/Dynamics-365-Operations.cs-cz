@@ -17,10 +17,11 @@ ms.search.region: Czech Republic
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: a8426fffb3f2cbc9373c484bb4072904c676b8a8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 125091af63fc857408d8f7e00bd91311e337ec89
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---

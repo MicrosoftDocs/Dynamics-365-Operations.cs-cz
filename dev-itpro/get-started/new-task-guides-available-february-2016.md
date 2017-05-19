@@ -1,9 +1,9 @@
 ---
 title: "Noví průvodci úkolem (únor 2016)"
-description: "Tato wiki obsahuje průvodce úkolem vydané pro knihovny Microsoft BPM k únoru 2016.  Publikované knihovny zahrnují (únor 2016) knihovnu APQC Unified Library for Microsoft Dynamics 365 for Operations a (únor 2016) příručku Začínáme."
+description: "Toto téma obsahuje průvodce záznamem úloh vydané pro knihovny Microsoft BPM k únoru 2016.  Publikované knihovny zahrnují (únor 2016) knihovnu APQC Unified Library for Microsoft Dynamics 365 for Operations a (únor 2016) příručku Začínáme."
 author: josaw1
 manager: AnnBe
-ms.date: 2016-07-15 23 - 21 - 40
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,17 +16,21 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 6462951cba3c289368887a037d4b71187f4523df
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d9e6620c1f4c808646e6f5c3b9f5b607c64c51df
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="new-task-guides-february-2016"></a>Noví průvodci úkolem (únor 2016)
 
-Tato wiki obsahuje průvodce úkolem vydané pro knihovny Microsoft BPM k únoru 2016.  Publikované knihovny zahrnují (únor 2016) knihovnu APQC Unified Library for Microsoft Dynamics 365 for Operations a (únor 2016) příručku Začínáme.
+[!include[banner](../includes/banner.md)]
+
+
+Toto téma obsahuje průvodce záznamem úloh vydané pro knihovny Microsoft BPM k únoru 2016.  Publikované knihovny zahrnují (únor 2016) knihovnu APQC Unified Library for Microsoft Dynamics 365 for Operations a (únor 2016) příručku Začínáme.
 
 <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Průvodci úkolem v knihovně APQC Unified Library pro Microsoft Dynamics 365 for Operations (únor 2016)
 ---------------------------------------------------------------------------------
@@ -723,5 +727,7 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce úkolem, určené 
 [Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Noví nebo aktualizovaní dostupní průvodci úkolem (listopad 2016)](new-task-guides-november-2016.md)
+
+
 
 

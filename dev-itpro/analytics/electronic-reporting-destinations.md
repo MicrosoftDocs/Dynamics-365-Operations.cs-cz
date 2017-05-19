@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: d38d05fe445bf0326d408038dff84ccf8c0ff64c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b6b0edfbbcebed323be63d5bc892dba1170b9c67
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -60,7 +61,7 @@ Podporovány jsou různé typy cílů. Můžete zakázat nebo povolit všechny t
 
 ### <a name="email-destination"></a>E-mailový cíl
 
-Nastavením možnosti **Povoleno **na **Ano** odešlete výstupní soubor prostřednictvím e-mailu. Po povolení této možnosti můžete zadat příjemce e-mailů a upravit předmět a tělo e-mailové zprávy. Můžete nastavit konstantní texty pro předmět a tělo e-mailu nebo můžete použít ER vzorce k dynamickému vytvoření textů e-mailů. E-mailové adresy pro ER lze konfigurovat dvěma způsoby. Konfiguraci lze dokončit stejným způsobem, jakou ji dokončuje funkce správy tisku v aplikaci Dynamics 365 for Operations. Popřípadě můžete vyřešit e-mailovou adresu pomocí přímého odkazu na ER konfiguraci pomocí vzorce.
+Nastavením možnosti **Povoleno**na **Ano** odešlete výstupní soubor prostřednictvím e-mailu. Po povolení této možnosti můžete zadat příjemce e-mailů a upravit předmět a tělo e-mailové zprávy. Můžete nastavit konstantní texty pro předmět a tělo e-mailu nebo můžete použít ER vzorce k dynamickému vytvoření textů e-mailů. E-mailové adresy pro ER lze konfigurovat dvěma způsoby. Konfiguraci lze dokončit stejným způsobem, jakou ji dokončuje funkce správy tisku v aplikaci Dynamics 365 for Operations. Popřípadě můžete vyřešit e-mailovou adresu pomocí přímého odkazu na ER konfiguraci pomocí vzorce.
 
 ### <a name="email-address-types"></a>Typy e-mailových adres
 
@@ -92,7 +93,7 @@ Použijte tento typ e-mailu, pokud má použitá konfigurace uzel ve zdrojích d
 
 ### <a name="archive-destination"></a>Cíl archivace
 
-Tuto možnost můžete použít k odeslání výstupu do složky Microsoft SharePoint nebo Microsoft Azure Storage. Nastavením **Povoleno** na **Ano **dojde k odeslání výstupu do cíle, který je definován pro vybraný typ dokumentu. K dispozici pro výběr jsou pouze typy dokumentu, kde je skupina nastavena na **Soubor**. Typy dokumentů definujete v části **Správa organizace** &gt; **Správa dokumentů** &gt; **Typy dokumentů**. Konfigurace pro cíle EV je stejná, jako nastavení pro systém správy dokumentů.
+Tuto možnost můžete použít k odeslání výstupu do složky Microsoft SharePoint nebo Microsoft Azure Storage. Nastavením **Povoleno** na **Ano**dojde k odeslání výstupu do cíle, který je definován pro vybraný typ dokumentu. K dispozici pro výběr jsou pouze typy dokumentu, kde je skupina nastavena na **Soubor**. Typy dokumentů definujete v části **Správa organizace** &gt; **Správa dokumentů** &gt; **Typy dokumentů**. Konfigurace pro cíle EV je stejná, jako nastavení pro systém správy dokumentů.
 
 [![Stránka typu dokumentu](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
 

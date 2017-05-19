@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3d02a15387231160f5b8a237aa11008b91ef1223
-ms.openlocfilehash: 3f96d12960e90bb05497d1bc2900d4477551c091
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ee3d306eecc7eeaca57522245f86dba32b75f942
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -47,7 +48,7 @@ Každý řádek nákupní smlouvy vyjadřuje závazek koupit. Může používat 
 -   **Závazek ohledně hodnoty** – Kupujete určitou částku v určité měně jakékoliv produktu v jakékoliv kategorii zásobování.
 
 ## <a name="pricing-terms-for-purchase-agreements"></a>Cenové podmínky pro nákupní smlouvy
-Cenové podmínky se mohou lišit v závislosti na typu závazku. Cenové podmínky z nákupních smluv přepíší jakékoli další cenové podmínek nastavené pro obchodní smlouvy. V následující tabulce jsou popsána pole související s cenami, kterých se jednotlivé typy závazku dotýkají. Pole obsahující hodnotu **Ano **mohou být aktualizována na řádku objednávky.
+Cenové podmínky se mohou lišit v závislosti na typu závazku. Cenové podmínky z nákupních smluv přepíší jakékoli další cenové podmínek nastavené pro obchodní smlouvy. V následující tabulce jsou popsána pole související s cenami, kterých se jednotlivé typy závazku dotýkají. Pole obsahující hodnotu **Ano**mohou být aktualizována na řádku objednávky.
 
 | Typ závazku                   | Jednotková cena | Cenová jednotka | Procento slevy | Částka platební slevy |
 |-----------------------------------|------------|------------|------------------|----------------------|

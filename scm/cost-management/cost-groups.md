@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 1a8cbe01bb774ac7fc4aac721dca00674852197f
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3592f3c076681c5b755b62383212bbe6d158f62d
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -50,7 +51,7 @@ Rozdělení nákladových skupin do segmentů může být použito také na odch
 Nákladové skupině může být přiřazen typ nákladové skupiny a chování pro účely doplňkového rozdělení do segmentů.
 
 -   **Typ nákladové skupiny** − Ke každé nákladové skupině musí být přiřazen typ nákladové skupiny, který označuje nákladovou skupinu jako týkající se přímého materiálu, přímého outsorcingu nebo navržení jako nepřímé či nedefinované výroby. Nákladovou skupinu označenou jako týkající se přímého materiálu lze přiřadit k položkám. Nákladovou skupinu přímé výroby lze přiřadit k nákladovým kategoriím. Nákladová skupina přímého outsourcingu může být přiřazena k typu produktu služby, která umožňuje klasifikaci nákladů souvisejících s nákupem služby pro subdodavatelské aktivity. Nepřímou nákladovou skupinu lze přiřadit k nepřímým nákladům pro příplatky nebo sazby. Nákladovou skupinu, která je označena jako nedefinovaná, lze přiřadit k položkám, nákladovým kategoriím nebo nepřímým nákladům. Přiřazení typu nákladové skupiny slouží několika účelům. Zaprvé omezuje možnost přiřazení nákladové skupiny a zobrazení seznamu použitelných nákladových skupin. Za druhé poskytuje doplňkovou segmentaci pro účely vykazování. Za třetí jej lze použít pro přiřazení účtů hlavní knihy pro různé odchylky.
--   **Chování** − Ke každé nákladové skupině lze volitelně přiřadit určité chování, které označuje danou nákladovou skupinu jako týkající se pevných nebo variabilních nákladů. Nákladová skupina s chováním s hodnotou Null je zpracována jako skupina variabilních nákladů. Přiřazení chování slouží pouze k účelům vykazování. Náklady lze například zobrazit s rozdělením na segmenty pevných a variabilních nákladů v nákladovém formuláři nebo na** Shrnutí nákladů podle skupiny nákladů**. Pokud přiřadíte podíl nastavení zisku pro každou nákladovou skupinu, výpočet kusovníku lze použít pro návrh prodejní ceny na základě vzorce: náklady plus přirážka.
+-   **Chování** − Ke každé nákladové skupině lze volitelně přiřadit určité chování, které označuje danou nákladovou skupinu jako týkající se pevných nebo variabilních nákladů. Nákladová skupina s chováním s hodnotou Null je zpracována jako skupina variabilních nákladů. Přiřazení chování slouží pouze k účelům vykazování. Náklady lze například zobrazit s rozdělením na segmenty pevných a variabilních nákladů v nákladovém formuláři nebo na**Shrnutí nákladů podle skupiny nákladů**. Pokud přiřadíte podíl nastavení zisku pro každou nákladovou skupinu, výpočet kusovníku lze použít pro návrh prodejní ceny na základě vzorce: náklady plus přirážka.
 
 
 

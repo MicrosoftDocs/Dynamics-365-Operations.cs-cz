@@ -1,7 +1,7 @@
 ---
 title: "Zobrazení a navržení finančních sestav"
-description: "Tento článek obsahuje cvičení, která vás provedou zobrazením a vytvářením finančních sestav pro aplikaci Microsoft Dynamics 365 for Operations. Finanční výkaznictví se skládá z lepšího způsobu prohlížení v rámci Dynamics 365 for Operations a návrháře sestav na jedno kliknutí, který vám umožní vytvářet a upravovat finanční sestavy."
-author: twheeloc
+description: "Tento článek obsahuje cvičení, která vás provedou zobrazením a vytvářením finančních sestav pro aplikaci Microsoft Dynamics 365 for Operations."
+author: jcart1106
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 3319fa0a919ca5e2737319f5cdc4190cf32d59b6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6f785ac8b9a8be503bf9122f21716f745b17115b
+ms.openlocfilehash: 635e9e90c63330b3d8b0cc46f16a36fa44ef915d
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -128,7 +129,7 @@ V tomto cvičení budete upravovat existující výchozí sestavu. Vytvoříte s
 24. Nastavte položky **Prodejna**, **Super**, **Market** a **Online** jako podřízené položky **Maloobchod** snížením úrovně nebo přetažením.
 25. Uložte výslednou reorganizaci. Nyní když máme vytvořený a uspořádaný strom výkaznictví, můžeme jej přidat k definici sestavy.
 26. V nabídce **Okno** klikněte na příkaz **Výkaz příjmu – výchozí** a otevřete definice sestavy.
-27. Klikněte šipku rozevíracího seznamu **Typ stromu ** a vyberte **Stromu výkaznictví**.
+27. Klikněte na šipku rozevíracího seznamu **Typ stromu** a vyberte **Strom výkaznictví**.
 28. Kliknutím na šipku rozevíracího seznamu stromu vyberte **Nákladová střediska podle divizí**.
 29. Změňte základní rok na **2012**, **uložte** změny a **generujte** sestavu. Po dokončení generování sestavy a jejím otevření můžete sestavu prohlížet.
 30. Vyberte rozevírací seznam **Strom výkaznictví** a zobrazte jednotky vykazování. Rovněž je možné procházet podrobnosti řádku zprávy a zobrazit všechny zůstatky všech jednotek stromu výkaznictví.
@@ -165,7 +166,7 @@ V tomto cvičení budete vytvářet novou sestavu. Sestava je výkaz příjmu od
 6.  Poklepejte na pole **Filtr dimenze**.
 7.  V okně **Dimenze** poklepejte na sloupec **Oddělení**.
 8.  V části Jednotlivec nebo rozsah dialogového okna klikněte **elipsu** pole **Od**, abyste zobrazili seznam oddělení.
-9.  Vyberte oddělení **022**, **Prodej a marketing** a klikněte na tlačítko** OK**.
+9.  Vyberte oddělení **022**, **Prodej a marketing** a klikněte na tlačítko **OK**.
 10. Zopakujte kroky 5 až 8 pro oddělení 23–25.
 11. Na řádku **Záhlaví 2** pro každý sloupec FD zadejte následující popisy oddělení:
     -   Sloupec B – Prodej a marketing
@@ -182,8 +183,8 @@ V tomto cvičení budete vytvářet novou sestavu. Sestava je výkaz příjmu od
 18. **Uložte** provedené změny a **generujte**. Po dokončení generování sestavy a jejím otevření můžete sestavu prohlížet.
 
 ## <a name="additional-resources"></a>Další prostředky
-[Finanční vykazování](\financials\general-ledger\financial-reporting-getting-started.md) 
-[Zobrazit finanční sestavy](\financials\general-ledger\view-financial-reports.md) 
+[Finanční vykazování](/dynamics365/operations/financials/general-ledger/financial-reporting-getting-started) 
+[Zobrazit finanční sestavy](/dynamics365/operations/financials/general-ledger/view-financial-reports) 
 [Blog Dynamics Financial Reporting](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

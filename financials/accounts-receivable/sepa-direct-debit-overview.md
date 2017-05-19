@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eb32cf1b96dfef75131b8c7541e20a93615a87f7
-ms.openlocfilehash: 849fea6030c665e1724c3fc8f31353dd4bafed27
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 556c82a29f0f8e931051af6d25ac4675352c7de9
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -53,7 +54,7 @@ Základní schéma inkasa SEPA je základním schématem. Má následujícími a
 -   Odběratelé jsou oprávněni bez jakýchkoli dotazů obdržet refundaci až do 8 týdnů od inkasa z jejich účtu.
 
 ## <a name="what-is-the-sepa-business-to-business-b2b-direct-debit-scheme"></a>Co je podnikatelské schéma inkasa SEPA (B2B)?
-Podnikatelské schéma inkasa SEPA B2se vztahuje na obchodní transakce a dále rozšiřuje základní schéma inkasa SEPA. Hlavní rozdíly:
+Podnikatelské schéma inkasa SEPA B2B vztahuje na obchodní transakce a dále rozšiřuje základní schéma inkasa SEPA. Hlavní rozdíly:
 -   Schéma inkasa SEPA B2B není povoleno, když je odběratel soukromá osoba (příjemce).
 -   Zákazník nemá nárok na refundaci autorizované transakce.
 -   Banky odběratele musí ověřením výběru oproti informacím zmocnění zajistit, že výběr je autorizován. Banky odběratele a odběratel se musí dohodnout na kontrole, která při každém inkasu proběhne.

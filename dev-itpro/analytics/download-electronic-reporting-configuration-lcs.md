@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 9dca5dec846670da25926826f59d7bce0fa0dcea
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e2f3a352ca70472de838271fdedfede575cb839d
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Stažení konfigurace elektronického vykazování ze služby Lifecycle Services
+
+[!include[banner](../includes/banner.md)]
+
 
 Toto téma popisuje postup, jak stáhnout konfigurace elektronických sestav (ER) ze služby Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -43,9 +47,10 @@ Tento kurz vás provede stahováním nejnovější verze konfigurací elektronic
     1.  Kliknutím na **Přidat** přidejte nové úložiště.
     2.  Vyberte možnost **LCS** jako typ úložiště.
     3.  Klikněte na **Vytvořit úložiště**.
-    4.  Zadejte název a popis úložiště.
-    5.  Kliknutím na **OK** potvrďte nový záznam úložiště.
-    6.  V mřížce vyberte nové úložiště typu **LCS**.
+    4. Po výzvy postupujte podle pokynů k autorizaci.
+    5.  Zadejte název a popis úložiště.
+    6.  Kliknutím na **OK** potvrďte nový záznam úložiště.
+    7.  V mřížce vyberte nové úložiště typu **LCS**.
 
 6.  Klepněte na tlačítko **Otevřít** a zobrazte tak seznam konfigurací ER pro vybrané úložiště. [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 7.  Ve stromu konfigurací v levém podokně vyberte konfiguraci ER, kterou potřebujete.
@@ -58,5 +63,7 @@ Tento kurz vás provede stahováním nejnovější verze konfigurací elektronic
 --------
 
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
+
+
 
 

@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ef99caf4570969d2b920cec8b53669ce2094965
-ms.openlocfilehash: 5d6d13fe44eef7766b4dcaf274c3522bce3da816
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 54c57254bbd7c7b3402fc0d6bd4755110dd6fd27
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -62,7 +63,7 @@ Hodnoty **Od data** a **Do data** definují interval dat pro výpočet zůstatku
 
 Pole **Datum sazby** lze použít k definování data, pro které by měl být výchozí směnný kurz. Například můžete přecenit zůstatky mezi rozsahem dat z 1. na 31. ledna, ale pomocí směnného kurzu definovaného pro 1. únor. 
 
-Vyberte hlavní účty k přecenění: všechny, rozvahový účet nebo účet zisků a ztrát. Pouze hlavní účty označené pro přecenění (na hlavní stránce účtu) budou přeceněny. Pokud chcete dále omezit rozsah hlavních účtů, použijte kartu Záznamy **** pro definování rozsahu hlavních účtů nebo jednotlivých hlavních účtů. 
+Vyberte hlavní účty k přecenění: všechny, rozvahový účet nebo účet zisků a ztrát. Pouze hlavní účty označené pro přecenění (na hlavní stránce účtu) budou přeceněny. Pokud chcete dále omezit rozsah hlavních účtů, použijte kartu Záznamy **k zahrnutí** pro definování rozsahu hlavních účtů nebo jednotlivých hlavních účtů. 
 
 Proces přecenění lze spustit pro jednu nebo více právnických osob. Vyhledávání se zobrazí pouze pro právnické osoby, ke kterým máte přístup. Vyberte právnické osoby, u kterých chcete spustit proces přecenění. 
 

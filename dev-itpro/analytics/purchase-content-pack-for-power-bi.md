@@ -3,7 +3,7 @@ title: "Analýza obsahu Power BI výdajů na nákup"
 description: "Toto téma popisuje, co je součástí obsahu analýzy výdajů na nákup v Power BI. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v balíčku obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření balíčku obsahu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-12-30 09 - 40 - 51
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 8cb928cbf1316e63a8c7de833587168cd36a455c
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d392b88942f4b7d7365b000df1cd69809060b910
+ms.openlocfilehash: e39b1677038037cd91cfad8d104d0130bc20fb9b
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="purchase-spend-analysis-power-bi-content"></a>Analýza obsahu Power BI výdajů na nákup
+
+[!include[banner](../includes/banner.md)]
+
 
 Toto téma popisuje, co je součástí obsahu analýzy výdajů na nákup v Power BI. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v balíčku obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření balíčku obsahu.
 
@@ -38,6 +42,7 @@ Obsah balíčku analýzy výdajů na nákup pro Microsoft Power BI byla vytvoře
 
 ## <a name="accessing-the-content-pack"></a>Přístup k balíčku obsahu
 Balíček obsahu analýzy je publikován jako implementační aktivum v Microsoft Dynamics Lifecycle Services (LCS) a je přístupný z Microsoft Dynamics 365 for Operations. Další informace o přístupu k otevřeným sestavám Power BI, viz [Obsahu Power BI od společnosti Microsoft a partnerů v LCS](power-bi-content-microsoft-partners.md).
+Poznámka: Předpokladem pro obsah Power BI je KB4011327. Po přihlášení ke službě Lifecycle Services můžete přejít k článku znalostní báze zde: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## <a name="metrics-that-are-included-in-the-content-pack"></a>Metriky, které jsou součástí balíčku obsahu
 Balíček obsahu analýzy investic do nákupu obsahuje sestavu, která obsahuje sadu metrik. Tyto metriky jsou zobrazována jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizací v balíčku obsahu.
@@ -129,7 +134,7 @@ Balíček obsahu analýzy investic do nákupu obsahuje sestavu, která obsahuje 
 \* Nákup v tomto a minulém roce a růst podle kategorie zásobování
 
 ## <a name="data-model-and-entities"></a>Datový model a entity
-Data Dynamics 365 for Operations se používají pro sestavu balíčku obsahu investic do nákupu. Tato data jsou reprezentována jako měrné systémy agregace, které jsou rozfázovány v úložišti entit, což je databáze Microsoft SQL optimalizována pro analýzy. Další informace o úložišti Entity naleznete v příspěvku v blogu [Integrace Power BI s úložištěm entit v aplikaci Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Souhrnná opatření v tomto balíčku obsahu jsou podmnožinou celkových opatření, která byla k dispozici v nákupní datové krychli v Microsoft Dynamics AX 2012 a Microsoft Dynamics 365 for Operations 2012 R3. Příprava fází agregovaných opatření v úložišti Entity vyžaduje, aby bylo možné je nasadit. Další informace získáte v postupu nastavování agregovaných opatření v úložišti entity v příspěvku v blogu [Integrace Power BI s úložištěm entit v aplikaci Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Následující klíčová agregovaná opatření jsou k dispozici přímo z entity řádky faktury a slouží jako základ balíčku obsahu.
+Data Dynamics 365 for Operations se používají pro sestavu balíčku obsahu investic do nákupu. Tato data jsou reprezentována jako měrné systémy agregace, které jsou rozfázovány v úložišti entit, což je databáze Microsoft SQL optimalizována pro analýzy. Další informace o úložišti Entity naleznete v příspěvku v blogu [Integrace Power BI s úložištěm entit v aplikaci Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Souhrnná opatření v tomto balíčku obsahu jsou podmnožinou celkových opatření, která byla k dispozici v nákupní datové krychli v aplikaci Microsoft Dynamics AX 2012 a AX 2012 R3. Příprava fází agregovaných opatření v úložišti Entity vyžaduje, aby bylo možné je nasadit. Další informace získáte v postupu nastavování agregovaných opatření v úložišti entity v příspěvku v blogu [Integrace Power BI s úložištěm entit v aplikaci Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Následující klíčová agregovaná opatření jsou k dispozici přímo z entity řádky faktury a slouží jako základ balíčku obsahu.
 
 | Celek        | Klíčová opatření agregace | Zdroj dat pro aplikaci Dynamics 365 for Operations | Pole              | popis                           |
 |---------------|----------------------------|---------------------------------------------|--------------------|---------------------------------------|
@@ -162,6 +167,8 @@ Zde uvádíme některé užitečné odkazy související s entitami a vytvářen
 -   [Vytvoření organizačního balíčku obsahu](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Modelování dat pomocí aplikace Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Přidání dlaždic Power BI do pracovních prostorů](configure-power-bi-integration.md)
+
+
 
 
 

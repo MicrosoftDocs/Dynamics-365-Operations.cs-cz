@@ -3,7 +3,7 @@ title: "Cyklická inventura"
 description: "Tento článek popisuje postup použití cyklické inventury v rámci řešení skladu, které je k dispozici v modulu Řízení skladu. Tento článek se nevztahuje na skladové řešení, které je k dispozici v modulu Řízení zásob."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-18 11 - 46 - 20
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3d02a15387231160f5b8a237aa11008b91ef1223
-ms.openlocfilehash: ffc1523d53732616d77511f39b72efc8f97744eb
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 387d114936567fc471cdcafcb2e93c1704db7ead
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="cycle-counting"></a>Cyklická inventura
+
+[!include[banner](../includes/banner.md)]
+
 
 Tento článek popisuje postup použití cyklické inventury v rámci řešení skladu, které je k dispozici v modulu Řízení skladu. Tento článek se nevztahuje na skladové řešení, které je k dispozici v modulu Řízení zásob.
 
@@ -39,7 +43,6 @@ Následující obrázek znázorňuje proces cyklické inventury. ![Procesní tok
 
 ## <a name="cycle-counting-prerequisites"></a>Požadavky cyklické inventury
 Následující tabulka zobrazuje požadavky, které musí být splněny, než začnete používat cyklickou inventuru.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -82,7 +85,7 @@ Následující tabulka zobrazuje požadavky, které musí být splněny, než za
 <li>Seskupení cyklické inventury</li>
 <li>Místní cyklická inventura</li>
 </ul>
-Další informace naleznete v tématu <a href="configure-mobile-devices-warehouse">Konfigurace mobilních zařízení k práci ve skladu</a>.</li>
+</li>
 <li>Nastavte nabídku pro mobilní zařízení.</li>
 <li>Vytvořte účet pracovního uživatele a přiřaďte nabídku mobilního zařízení k ID pracovního uživatele.</li>
 </ul></td>
@@ -133,6 +136,9 @@ K rozdílům v cyklické inventuře dojde, pokud nastavíte možnost **Je superv
 -   Hodnota inventury se liší od množství zásob na skladě a není nastavena mezní odchylka.
 
 Můžete upravit rozdíly ve vypočítané hodnotě, a poté potvrdit vypočítanou hodnotu na stránce **Cyklická inventura čeká na kontrolu**. Upravený počet položek lze ověřit na stránce **Množství na skladě podle skladového místa**. Hodnota inventury bude odmítnuta, pokud rozdíl nelze schválit.
+
+# <a name="see-also"></a>Viz také
+[Konfigurace mobilních zařízení pro práci ve skladu](configure-mobile-devices-warehouse.md)
 
 
 

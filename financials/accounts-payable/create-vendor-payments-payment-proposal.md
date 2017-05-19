@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: b46037b9509f329e18f0da69d530f6b1f88c8888
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: fef518bf156aa45dff66d21d49b433ed613cead1
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Dotaz na návrh platby obsahuje různé karty, z nichž každá má různé mož
 
 ## <a name="parameters"></a>Parametry
 -   **Výběr faktur podle** – faktury v rozsahu dat, který je určen v poli **Od data** a **Do data** lze vybrat podle data splatnosti, data platební slevy nebo obojího. Používáte-li datum platební slevy, systém nejprve vyhledá faktury, které mají datum platební slevy mezi počátečním datem a koncovým datem. Systém pak určuje, zda má faktura nárok na platební slevu použitím data relace pro ujištění se, že datum platební slevy již neuplynulo.
--   **Od data** a** Do data** – faktury, které mají datum splatnosti nebo datum platební slevy v tomto časovém intervalu, jsou vybrány pro platbu.
+-   **Od data** a**Do data** – faktury, které mají datum splatnosti nebo datum platební slevy v tomto časovém intervalu, jsou vybrány pro platbu.
 -   **Datum platby** – je-li definováno datum, jsou vytvořeny všechny platby k tomuto datu. Pole **Minimální datum platby** je ignorováno.
 -   **Minimální datum platby** – zadejte minimální datum platby. Například pole **Od data** a **Do data** uvádí rozsah od 1. září do 10. září a minimální datum platby je 5. září. V takovém případě všechny faktury, které mají datum splatnosti od 1. září do 5. září, mají datum platby 5. září. Všechny faktury, které mají datum splatnosti od 5. září do 10. září však mají datum platby, které odpovídá datu splatnosti jednotlivých faktur.
 -   **Limit částky** – zadejte maximální celkovou částku u všech plateb.

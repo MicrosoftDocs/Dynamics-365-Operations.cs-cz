@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 09c7fce1fa83d6a8d6391db667b7260d2a199390
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: bca8431e88ea73060c75774ae55611f95016e9a1
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -88,7 +89,7 @@ Sdílené směny se používají v prostředí, kde více pokladníků sdílí z
 4.  Vyberte **Vytvořit novou směnu**.
 5.  Vyberte **Počáteční částka výkazu**.
 6.  Zadejte počáteční objem ve všech zásuvkách s hotovostí v obchodě, které jsou součástí sdílené směny, a potom klepněte na tlačítko **Uložit**.
-    -   Pokud chcete přidat součást počáteční částky z každé následné zásuvky s hotovostí, pomocí operace **Vybrat hardwarovou stanici **nastavte hardwarovou stanici jako aktivní.
+    -   Pokud chcete přidat součást počáteční částky z každé následné zásuvky s hotovostí, pomocí operace **Vybrat hardwarovou stanici**nastavte hardwarovou stanici jako aktivní.
     -   Chcete-li přidat konkrétní zásuvku s hotovostí, použijte operaci **Otevřít zásuvku**.
     -   Pokračujte, dokud všechny zásuvky ve sdílené směně nemají svůj podíl z počáteční částky.
 

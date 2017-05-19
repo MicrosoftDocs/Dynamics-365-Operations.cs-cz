@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 24caafcd01875f04cf3ae5299aadcf9b38ac0e15
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 38725d4d873a3b39eb3916c3f616826f8a266b60
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -45,7 +46,7 @@ Stránka **Upravená prognóza poptávky** obsahuje tabulku, která obsahuje ná
 ## <a name="forecast-aggregation-and-deaggregation"></a>Seskupení a zrušení seskupení prognózy
 Podtitulek stránky popisuje úroveň seskupení prognózy. 
 
-Například pokud je podnadpis stránky **Společnost / pracoviště / alokační klíč / číslo položky / barva / velikost / konfigurace / styl**, neexistuje žádná agregace prognózy a prognóza se zobrazí na úrovni položky a jejích dimenzích. Pokud chcete změnit agregaci, použijte stránku** Změna dimenzí prognózy**, kterou lze otevřít z nabídky aplikace. 
+Například pokud je podnadpis stránky **Společnost / pracoviště / alokační klíč / číslo položky / barva / velikost / konfigurace / styl**, neexistuje žádná agregace prognózy a prognóza se zobrazí na úrovni položky a jejích dimenzích. Pokud chcete změnit agregaci, použijte stránku**Změna dimenzí prognózy**, kterou lze otevřít z nabídky aplikace. 
 
 Pokud chcete upravit prognózu, klikněte na libovolnou buňku, která je k dispozici, a zadejte upravenou hodnotu prognózy. Upravená buňka bude okamžitě zobrazena tučně a označí tak, že uvedená prognóza není prognózou vytvořenou ve službě generování prognózy poptávky, ale že je ručně upravená. 
 
@@ -58,7 +59,7 @@ Po provedení úprav prognózy na agregační úrovni použije systém vážené
 Můžete provést také ruční úpravy na stránce **Řádky prognózy poptávky**, a to změnou buď buňky **Celkové množství** nebo **Množství** v mřížce pro zrušení agregace.
 
 ## <a name="viewing-details-of-the-forecast"></a>Zobrazení podrobností o prognóze
-Můžete otevřít stránku** Podrobnosti prognózy poptávky** a zobrazit další informace o prognóze. 
+Můžete otevřít stránku**Podrobnosti prognózy poptávky** a zobrazit další informace o prognóze. 
 
 Stránka **Podrobnosti prognózy poptávky** popisuje následující informace v grafickém a tabulkovém formátu:
 

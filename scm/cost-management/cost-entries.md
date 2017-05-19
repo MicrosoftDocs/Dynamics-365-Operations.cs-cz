@@ -3,7 +3,7 @@ title: "Položky nákladů"
 description: "Tento článek obsahuje informace o položkách nákladů a o tom, kdy se vytváří. Položka nákladů je záznam, který registruje množství a náklady na danou událost."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09 - 09 - 22
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 55f5ee731c40acc40e8fe20c24d4ed707fe2c81a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 341251119304456a89b02c7a8d4af941ea21196d
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="cost-entries"></a>Položky nákladů
+
+[!include[banner](../includes/banner.md)]
+
 
 Tento článek obsahuje informace o položkách nákladů a o tom, kdy se vytváří. Položka nákladů je záznam, který registruje množství a náklady na danou událost.
 
@@ -53,17 +57,22 @@ Nová stránka **Položky nákladů** umožňuje zobrazit a kontrolovat registra
 -   Několik dní po registraci události faktury se náklady zvýší na 11,00 USD. Celková částka je tedy 1 100 USD. Je vytvořen druhý doklad na rozdíl 100 USD.
 -   O několik dní později jsou v nákupní objednávce registrovány vedlejší náklady ve výši 15,00 USD k pokrytí nákladů na přepravu.
 
-| Doklad | Datum       | Odkaz      | Číslo | ID šarže  | Odkaz na šarži | ID vrácené šarže | Množství | Částka  |
-|---------|------------|----------------|--------|---------|---------------|---------------|----------|---------|
-| 00001   | 01. 01. 2015 | Nákupní objednávka | 100001 | 0000101 |               |               | 100,00   | 1000,00 |
-| 00002   | 20. 01. 2015 | Nákupní objednávka | 100001 | 0000101 |               |               |          | 100,00  |
-| 00003   | 31. 01. 2015 | Úprava     | 100001 | 0000101 |               |               |          | 15:00   |
+| Doklad | Datum       | Odkaz      | Počet | ID šarže  | Množství | Částka  |
+|---------|------------|----------------|--------|---------|---------------|----|
+| 00001   | 01. 01. 2015 | Nákupní objednávka | 100001 | 0000101 | 100,00   | 1000,00 |
+| 00002   | 20. 01. 2015 | Nákupní objednávka | 100001 | 0000101 |          | 100,00  |
+| 00003   | 31. 01. 2015 | Úprava     | 100001 | 0000101 |          | 15:00   |
 
-Stránka **Položky nákladů** umožňuje filtrovat podle ID doklad a data dokladu. **Poznámka:** Položky nákladů jsou k dispozici pouze pro [objekty nákladů](cost-object.md) nebo uvolněné produkty.
+Stránka **Položky nákladů** umožňuje filtrovat podle ID doklad a data dokladu. 
+
+> [!NOTE]
+> Položky nákladů jsou k dispozici pouze pro [objekty nákladů](cost-object.md) nebo uvolněné produkty.
 
 <a name="see-also"></a>Viz také
 --------
 
 [Nákladové objekty](cost-object.md)
+
+
 
 

@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: 8e09c6b042d557e3b2d608fb5e278169fc3c1d88
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4a5e6164f8aea2d4a6a063966c10f33a5e1f0cdd
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="distribute-and-complete-a-questionnaire"></a>Distribuce a vyplnění dotazníku
+
+[!include[banner](includes/banner.md)]
+
 
 Toto téma vysvětluje, jak distribuovat dotazníky, které navrhnete, aby byly k dispozici osobě nebo skupině osob, které je mají vyplnit. 
 
@@ -45,7 +49,7 @@ Můžete nastavit skupiny dotazníků a poté zahrnout respondenty, kterým má 
 
 Můžete vytvářet skupiny dotazníků z následujících stránek:
 
--   **Skupiny dotazníků **– Pouze jednotlivci ve skupině dotazníků mohou vyplnit vybraný dotazník. Například vaše cílová skupina jsou dodavatelé, takže můžete vytvořit skupinu dotazníků specifickou pro tyto respondenty.
+-   **Skupiny dotazníků**– Pouze jednotlivci ve skupině dotazníků mohou vyplnit vybraný dotazník. Například vaše cílová skupina jsou dodavatelé, takže můžete vytvořit skupinu dotazníků specifickou pro tyto respondenty.
 -   **Členové skupiny dotazníků** – Do skupiny dotazníků lze přidat osoby.
 
 Chcete-li přiřadit skupinu dotazníků k dotazníku, na stránce **Dotazníky** klikněte na možnost **Uživatelská práva**. Po uložení dotazníku jako aktivního mohou členové skupiny dotazníků vyplnit dotazník. Tato funkce je užitečná, pokud chcete otestovat dotazník ve vybrané skupině osob, než jej předáte větší skupině, nebo pokud chcete zaměřit dotazník na velmi specifickou cílovou skupinu.
@@ -53,7 +57,8 @@ Chcete-li přiřadit skupinu dotazníků k dotazníku, na stránce **Dotazníky*
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>Plánované relace odpovědí v dotazníku
 Plánované relace odpovědí jsou dotazníky, pro které jste navrhli a vybrali respondenty. 
 
-**Poznámka:** Než nastavíte plánované relace odpovědí, je nutné navrhnout dotazník. 
+> **Poznámka**
+> : Než nastavíte plánované relace odpovědí, je nutné navrhnout dotazník. 
 
 Na stránce **Plánovaná relace odpovědí** můžete vytvořit plánovanou relaci odpovědí pro jednotlivé zaměstnance. V seznamu na stránce jsou zobrazeny všechny plánované dotazníky. 
 
@@ -99,7 +104,8 @@ Klikněte na tlačítko **Funkce** &gt; **Spustit**, chcete-li dotazník zpřís
 ## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Oznámení dostupnosti dotazníků pro respondenty
 Při distribuci dotazníku musíte respondenty informovat, že je dotazník k dispozici. 
 
-**Poznámka:** Respondenti musí být uživateli aplikace Microsoft Dynamics 365 for Operations, aby mohli dotazník vyplnit.
+> **Poznámka**
+>  Respondenti musí být uživateli aplikace Microsoft Dynamics 365 for Operations, aby mohli dotazník vyplnit.
 
 ### <a name="notifying-respondents-about-a-planned-answer-session"></a>Informování respondentů o plánované relaci odpovědí
 
@@ -109,12 +115,14 @@ Pokud používáte plánovou relaci odpovědí, je nutné to dané osobě oznám
 
 Na stránce **Plány dotazníků** lze připravit a odeslat e-mail všem respondentům přiřazeným k dotazníku. Zadejte text e-mailu na kartě **E-mail pro samoobsluhu pro zaměstnance**. Po spuštění plánu kliknutím na tlačítko **Funkce** &gt; **Odeslat e-mail** vygenerujte a odešlete e-mail respondentům. Respondenti se pak mohou přihlásit na webové stránce a vyplnit dotazník. 
 
-**Poznámka:** Před použitím funkce e-mailu musí správce IT zadat nastavení e-mailu na stránce **Parametry e-mailu**.
+> **Poznámka**
+>  Před použitím funkce e-mailu musí správce IT zadat nastavení e-mailu na stránce **Parametry e-mailu**.
 
 ## <a name="ending-a-scheduled-questionnaire"></a>Ukončení plánovaného dotazníku
 Plánovaný dotazník lze ukončit, jakmile všichni respondenti vyplní jim přiřazené relace odpovědí. Po ukončení plánovaného dotazníku není možné zkopírovat jeho nastavení do nového plánu. 
 
-**Poznámka:** Pokud některý z respondentů nevyplnil dotazník a přesto chcete ukončit plánování, odstraňte nejprve příslušné respondenty ze seznamu na stránce **Plánovaná relace odpovědí**. Poté můžete ukončit plánování.
+> **Poznámka**
+>  Pokud některý z respondentů nevyplnil dotazník a přesto chcete ukončit plánování, odstraňte nejprve příslušné respondenty ze seznamu na stránce **Plánovaná relace odpovědí**. Poté můžete ukončit plánování.
 
 ## <a name="completing-questionnaires"></a>Vyplňování dotazníků
 Po návrhu a distribuci dotazníku mohou vybraní respondenti dotazník vyplnit. Dotazníky, které máte k dispozici, můžete vyplnit ze dvou míst:
@@ -132,5 +140,7 @@ Dotazníky lze zpřístupnit pro určité uživatele, skupiny uživatelů nebo v
 [Používání dotazníků](questionnaires.md)
 
 [Zobrazení a zhodnocení výsledků dotazníků](evaluate-questionnaire-results.md)
+
+
 
 

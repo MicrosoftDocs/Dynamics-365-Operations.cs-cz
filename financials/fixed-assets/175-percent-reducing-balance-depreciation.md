@@ -3,7 +3,7 @@ title: "Degresivní odpis 175 procent"
 description: "Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 175 procent“."
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23 - 00 - 33
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 812fbb3cc3159783e9908e537c366ffc7f934092
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: cf428d61f89ea70a83e440c656fbc84d7dbded8d
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="175-percent-reducing-balance-depreciation"></a>Degresivní odpis 175 procent
+
+[!include[banner](../includes/banner.md)]
+
 
 Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 175 procent“.
 
@@ -54,7 +58,7 @@ Vyberete-li jako odpisový rok možnost **Kalendář**, v poli **Frekvence obdob
 
 ### <a name="fiscal"></a>Fiskální
 
-Vyberete-li možnost **Fiskální** v poli **Odpisový rok**, degresivní odpis 175 % je vypočten na základě fiskálního roku pro fiskální kalendář, který je určen pro knihu, nebo pro fiskální kalendář, který je vybrán na stránce **Hlavní kniha**. Fiskální kalendáře se nastavují na stránce **Fiskální kalendáře**. Další informace naleznete v tématu [Fiskální kalendáře, fiskální roky a období.](\financials\budgeting\fiscal-calendars-fiscal-years-periods.md).
+Vyberete-li možnost **Fiskální** v poli **Odpisový rok**, degresivní odpis 175 % je vypočten na základě fiskálního roku pro fiskální kalendář, který je určen pro knihu, nebo pro fiskální kalendář, který je vybrán na stránce **Hlavní kniha**. Fiskální kalendáře se nastavují na stránce **Fiskální kalendáře**. Další informace naleznete v tématu [Fiskální kalendáře, fiskální roky a období.](..\budgeting\fiscal-calendars-fiscal-years-periods.md).
 
 Například pro fiskální rok od 1. července do 30. června začíná výpočet odpisů datem 1. července. Fiskální rok může být delší nebo kratší než 12 měsíců. Odpisování je automaticky upravováno pro jednotlivá období a délka dalšího fiskálního roku je určována dle nastavení období na stránce **Fiskální kalendáře**. 
 
@@ -82,5 +86,7 @@ Metoda degresivního odepisování 175 % vydělí 175 procent počtem roků živ
 
 > [!NOTE] 
 > Když částka vypočtená s použitím metody 175% degresivního odpisování klesne pod hodnotu menší než má částka, která by byla vypočtena s použitím lineární metody, obvykle dojde k převodu na lineární metodu pro zbytek životnosti.
+
+
 
 

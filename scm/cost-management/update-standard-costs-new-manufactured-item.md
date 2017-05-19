@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 84b9f91f49e988244b98aeb7a6a6344548d6a8c0
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: fb9f7b8aa9198b66f196613641de5237fac2ac2c
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Tyto pokyny předpokládají, že používáte pro aktualizaci standardních ná
 -   Přiřaďte nákladový typ **Standardní náklady**.
 -   Přiřazení platného popisného identifikátoru značícího obsah nákladové verze, jako je například **2016-AKTUALIZACE**.
 -   Ve skupině polí **Povolit typy cen** se ujistěte, že je **Nákladová cena** nastavena na **Ano**.
--   Povolte zadání záznamy nákladů pro všechna pracoviště (tj. ponechte pole **Pracoviště **prázdné). Pokud určíte pracoviště, záznamy nákladů lze zadat pouze pro dané pracoviště.
+-   Povolte zadání záznamy nákladů pro všechna pracoviště (tj. ponechte pole **Pracoviště**prázdné). Pokud určíte pracoviště, záznamy nákladů lze zadat pouze pro dané pracoviště.
 -   Použití principu zálohy **Aktivní**.
 
 Chcete-li přidat nově vyrobené položky v průběhu zmrazeného období, proveďte následující kroky.

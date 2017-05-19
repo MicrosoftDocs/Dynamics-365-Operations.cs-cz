@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eab840b2974f4e9e8cf542c146482ba8e4239079
-ms.openlocfilehash: acf7bacf6e95725024ff0a542a059349593d01a0
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 51f45ce0953f31e0573833ba41d9e0b5ac43bfbb
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -64,13 +65,13 @@ Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpis
 1.  Přejděte na **Pracovní prostory** &gt; **Správa dat**.
 2.  Klepněte na tlačítko **Import**.
 3.  Zadat název formátu, jako např. **ISO20022**.
-4.  V poli **Formát dat zdroje **zadejte **Prvek XML**.
+4.  V poli **Formát dat zdroje** zadejte **Prvek XML**.
 5.  V poli **Název entity** zadejte **Bankovní výpisy**.
 6.  Pro odeslání souborů pro import klepněte na tlačítko **Odeslat** a potom vyhledejte a vyberte soubor **SampleBankCompositeEntity.xml**, který jste dříve uložili.
 7.  Po odeslání entity bankovního výpisu a po dokončení mapování klepněte na akci **Zobrazit mapu** pro entitu.
 8.  Entita bankovního výpisu je složená entita, která se skládá ze čtyř samostatných entit. V seznamu vyberte **BankStatementDocumentEntity** a potom klepněte na akci **Zobrazit mapu**.
 9.  Na kartě **Transformace** klikněte na **Nový**.
-10. Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor** ISO20022XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** transformační soubory Dynamics 365 for Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+10. Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **ISO20022XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** transformační soubory Dynamics 365 for Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
 11. Klepněte na možnost **Nový**.
 12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BankReconciliation-to-Composite.xslt**, který jste dříve uložili.
 13. Klikněte na **Použít transformace**.
@@ -88,8 +89,8 @@ Posledním krokem je povolení rozšířeného odsouhlasení banky a nastavení 
 
 1.  Přejděte do části **Pokladna a banka** &gt; **Bankovní účty**.
 2.  Vyberte bankovní účet a jeho otevřením zobrazte jeho podrobnosti.
-3.  Na kartě **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení banky **na **Ano**.
-4.  Nastavte pole **Formát výpisu **na formát, který jste vytvořili dříve, jako například **ISO20022**.
+3.  Na kartě **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení banky** na **Ano**.
+4.  Nastavte pole **Formát výpisu** na formát, který jste vytvořili dříve, jako například **ISO20022**.
 
 ## <a name="set-up-the-import-of-mt940-bank-statements"></a>Nastavení importu bankovních výpisů MT940
 Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpisů pro bankovní výpisy MT940 pomocí rozhraní datové entity.
@@ -97,7 +98,7 @@ Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpis
 1.  Přejděte na **Pracovní prostory** &gt; **Správa dat**.
 2.  Klepněte na tlačítko **Import**.
 3.  Zadat název formátu, jako např. **MT940**.
-4.  V poli **Formát dat zdroje **zadejte **Prvek XML**.
+4.  V poli **Formát dat zdroje** zadejte **Prvek XML**.
 5.  V poli **Název entity** zadejte **Bankovní výpisy**.
 6.  Pro odeslání souborů pro import klepněte na tlačítko **Odeslat** a potom vyhledejte a vyberte soubor **SampleBankCompositeEntity.xml**, který jste dříve uložili.
 7.  Po odeslání entity bankovního výpisu a po dokončení mapování klepněte na akci **Zobrazit mapu** pro entitu.
@@ -105,7 +106,7 @@ Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpis
 9.  Na kartě **Transformace** klikněte na **Nový**.
 10. Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **MT940TXT-to-MT940XML.xslt**, který jste dříve uložili.
 11. Klepněte na možnost **Nový**.
-12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor** MT940XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** transformační soubory Dynamics 365 for Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
+12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **MT940XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** transformační soubory Dynamics 365 for Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
 13. Klepněte na možnost **Nový**.
 14. Pro pořadové číslo 3 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BankReconciliation-to-Composite.xslt**, který jste dříve uložili.
 15. Klikněte na **Použít transformace**.
@@ -123,7 +124,7 @@ Posledním krokem je povolení rozšířeného odsouhlasení banky a nastavení 
 
 1.  Přejděte do části **Pokladna a banka** &gt; **Bankovní účty**.
 2.  Vyberte bankovní účet a jeho otevřením zobrazte jeho podrobnosti.
-3.  Na kartě **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení banky **na **Ano**.
+3.  Na kartě **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení banky** na **Ano**.
 4.  Po zobrazení výzvy k potvrzení výběru a povolení rozšířeného odsouhlasení banky klepněte na tlačítko **OK**.
 5.  Nastavte pole **Formát výpisu** na formát, který jste vytvořili dříve, jako například **MT940**.
 
@@ -133,7 +134,7 @@ Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpis
 1.  Přejděte na **Pracovní prostory** &gt; **Správa dat**.
 2.  Klepněte na tlačítko **Import**.
 3.  Zadat název formátu, jako např. **BAI2**.
-4.  V poli **Formát dat zdroje **zadejte **Prvek XML**.
+4.  V poli **Formát dat zdroje** zadejte **Prvek XML**.
 5.  V poli **Název entity** zadejte **Bankovní výpisy**.
 6.  Pro odeslání souborů pro import klepněte na tlačítko **Odeslat** a potom vyhledejte a vyberte soubor **SampleBankCompositeEntity.xml**, který jste dříve uložili.
 7.  Po odeslání entity bankovního výpisu a po dokončení mapování klepněte na akci **Zobrazit mapu** pro entitu.
@@ -141,7 +142,7 @@ Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpis
 9.  Na kartě **Transformace** klikněte na **Nový**.
 10. Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BAI2CSV-to-BAI2XML.xslt**, který jste dříve uložili.
 11. Klepněte na možnost **Nový**.
-12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor** BAI2XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** transformační soubory Dynamics 365 for Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
+12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BAI2XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** transformační soubory Dynamics 365 for Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
 13. Klepněte na možnost **Nový**.
 14. Pro pořadové číslo 3 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BankReconciliation-to-Composite.xslt**, který jste dříve uložili.
 15. Klikněte na **Použít transformace**.
@@ -159,7 +160,7 @@ Posledním krokem je povolení rozšířeného odsouhlasení banky a nastavení 
 
 1.  Přejděte do části **Pokladna a banka** &gt; **Bankovní účty**.
 2.  Vyberte bankovní účet a jeho otevřením zobrazte jeho podrobnosti.
-3.  Na kartě **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení banky **na **Ano**.
+3.  Na kartě **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení banky** na **Ano**.
 4.  Po zobrazení výzvy k potvrzení výběru a povolení rozšířeného odsouhlasení banky klepněte na tlačítko **OK**.
 5.  Nastavte pole **Formát výpisu** na formát, který jste vytvořili dříve, jako například **BAI2**.
 

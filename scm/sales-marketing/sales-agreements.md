@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 4dd1eae27ae33837fbab16f764083168578d0a29
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 69535f07cadda4f17bb5d846132ffe614495553e
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -44,8 +45,8 @@ Můžete vytvořit prodejní objednávku přímo z prodejní smlouvy pomocí akc
 ## <a name="commitment-types"></a>Typy závazků
 Každý řádek prodejní smlouvy vyjadřuje závazek prodat. Obecně existují dvě kategorie závazku:
 
--   **Závazek ohledně hodnoty **– odběratel souhlasí se zakoupením produktů za určitou částku.
--   **Závazek ohledně množství **– odběratel souhlasí se zakoupením určitého množství produktu.
+-   **Závazek ohledně hodnoty**– odběratel souhlasí se zakoupením produktů za určitou částku.
+-   **Závazek ohledně množství**– odběratel souhlasí se zakoupením určitého množství produktu.
 
 Smlouva kromě toho můžete umožnit odběrateli zakoupit určitý produkt nebo produkty v kategorii produktu. Kombinováním těchto dvou faktorů (hodnota a množství a specifických produktů a kategorií produktu) získáme čtyři typy závazků:
 

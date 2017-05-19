@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 81b5c9056001b26c33b2b42a95711ff5b50243e6
-ms.openlocfilehash: 4bd934091c80ab9a4d244499d2bce2c4646c3e99
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 769680aff8c018bc042ffce98ee50a9760a65fcf
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -126,7 +127,7 @@ Dokument můžete k přezkoumání připojit v části **Přílohy** stránky **
 Ke kontrole schválení přezkoumání můžete použít pracovní postup přezkoumání pracovníka. Také je možné přeskočit automatizovaný pracovní postup a ručně změnit stav přezkoumání, což umožňuje vytvářet jednodušší dokumenty, např. „jeden na jednoho“, bez nutnosti použít proces daného pracovního postupu. Přístup k přezkoumání je řízen stavem přezkoumání.
 
 1.  Při vytváření přezkoumání je počátečním stavem **Nezahájeno**. Přezkoumání může upravovat kdokoli.
-2.  Jakmile zaměstnanec stiskne tlačítko **Zahájit přezkoumání**, přezkoumání přejde do stavu ** Probíhá**. Zaměstnanec poté začne přidávat obsah. V tomto okamžiku již manažer nemůže zobrazit dokument přezkoumání.
+2.  Jakmile zaměstnanec stiskne tlačítko **Zahájit přezkoumání**, přezkoumání přejde do stavu **Probíhá**. Zaměstnanec poté začne přidávat obsah. V tomto okamžiku již manažer nemůže zobrazit dokument přezkoumání.
 3.  Zaměstnanec změní stav na **Připraveno k přezkoumání**.
 4.  Manažer může přidávat komentáře a hodnocení. V tomto bodě může přezkoumání zobrazit pouze manažer.
 5.  Manažer změní stav na **Konečné přezkoumání**, aby mohl manažer i zaměstnanec přezkoumání zobrazit a vést o něm diskusi. V parametrech můžete určit, zda lze v tomto bodě přezkoumání upravovat. Tento krok je také volitelný, pokud chce manažer jednoduše sdílet přezkoumání se zaměstnancem a označit ho jako **Dokončeno** v okamžiku, kdy je dokončeno.

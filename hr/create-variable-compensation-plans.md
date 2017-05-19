@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9397e84f03ee5b340fa2aa0a64e582fc0078526e
-ms.openlocfilehash: be156afa73de731e54985485b617bcbae883db3a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 917771596a0c56561bf302ae990d95a987f442e0
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Výpočet částek variabilní kompenzace pro zaměstnance lze založit na něko
 ## <a name="variable-compensation-components"></a>Komponenty variabilní kompenzace
 ### <a name="create-compensation-types"></a>Vytvoření typů kompenzaci
 
-**Typy variabilních kompenzací **jsou požadovaný komponent. Typy variabilních kompenzací vám umožňují popsat typy variabilní kompenzace, které vaše organizace odměňuje. Také vám umožňují určit, zda proběhne kompenzace v hotovosti nebo v nepeněžní formě, například jako zásoba.
+**Typy variabilních kompenzací**jsou požadovaný komponent. Typy variabilních kompenzací vám umožňují popsat typy variabilní kompenzace, které vaše organizace odměňuje. Také vám umožňují určit, zda proběhne kompenzace v hotovosti nebo v nepeněžní formě, například jako zásoba.
 
 ### <a name="describe-vesting-rules"></a>Popis pravidel připsání
 
@@ -63,7 +64,7 @@ Nastavení položky **Pravidlo zařazení** umožňuje určit, zda mají všichn
 -   Pokud je výkonnost oddělení více než 100 %, systém přidá sazbu, která se nastavuje v poli **Na procento nad cílem**, k procentům v poli **Výběr na 100 %**, dokud se nedosáhne hodnoty v poli **Nejvyšší povolený výběr**.
 -   Pokud je výkonnost oddělení méně než 100 %, systém odečte sazbu, která se nastavuje v poli **Na procento pod cílem**, od procent v poli **Výběr na 100 %**, dokud se nedosáhne hodnoty v poli **Nejnižší povolený výběr**.
 
-Můžete nastavit** úrovně tolerance** na prahovou hodnotu procent, takže se zobrazí varovná zpráva, pokud účinek dosadí procentuální hodnotu mimo prahovou procentuální hodnota. 
+Můžete nastavit**úrovně tolerance** na prahovou hodnotu procent, takže se zobrazí varovná zpráva, pokud účinek dosadí procentuální hodnotu mimo prahovou procentuální hodnota. 
 
 Ve výchozím nastavení systém vyhledá oddělení, které je nastaveno u pozice zaměstnance. Odměny pro některé zaměstnance však mohou záviset na výkonnosti více oddělení. V takovém případě lze různá oddělení a procentuální odměny přidělené k výkonnosti každého oddělení nastavit na přihlášení variabilní kompenzace zaměstnance. Další informace naleznete v části „Přihlášení variabilní kompenzace" v následujícím oddílu. 
 

@@ -3,7 +3,7 @@ title: "Funkce pro návrh kusovníku"
 description: "Tento článek popisuje, jak můžete na stránce Návrhář kusovníku navrhnout a používat stromové struktury pro kusovníky (BOM). Kliknutím na možnost Nastavení můžete vybrat různé konfigurace a určit, které informace mají být zobrazeny v rámci jednotlivých liniích stromu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-08 21 - 09 - 22
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 2c98039c9fa8179408394f9f66b9fca0f8cad3fe
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ff482c183276a99a3c9a632d41d9121bf77befbf
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="bom-designer-functionality"></a>Funkce pro návrh kusovníku
+
+[!include[banner](../includes/banner.md)]
+
 
 Tento článek popisuje, jak můžete na stránce Návrhář kusovníku navrhnout a používat stromové struktury pro kusovníky (BOM). Kliknutím na možnost Nastavení můžete vybrat různé konfigurace a určit, které informace mají být zobrazeny v rámci jednotlivých liniích stromu.
 
@@ -95,7 +99,7 @@ Filtr, který je použit pro kusovník a postup se zobrazí v záhlaví návrhá
 Použijete-li návrhář kusovníku ke kontrole nebo úpravě kusovníků, které se skládají z jedné nebo více úrovní fiktivních kusovníků, pak postup, který je přidružen k nejvyšší položce, obvykle zahrnuje celou hierarchii kusovníku. Pro zjednodušení přehledu můžete uzamknout postup nejvyšší úrovně v zobrazení kliknutím na tlačítko **Zobrazení** &gt; **Uzamknout postup**. Postup můžete odemknout kliknutím na položky **Zobrazení** &gt; **Odemknout postup**.
 
 ## <a name="adding-and-editing-boms-and-bom-lines"></a>Přidávání a úprava kusovníků a řádků kusovníku
-Použijte funkce **Řádky kusovníku **nebo **Kusovník** k úpravě kusovníku nebo řádků kusovníku. Když vyberete uzel ze stromu, typ uzlu určí, které z funkcí budou k dispozici.
+Použijte funkce **Řádky kusovníku**nebo **Kusovník** k úpravě kusovníku nebo řádků kusovníku. Když vyberete uzel ze stromu, typ uzlu určí, které z funkcí budou k dispozici.
 
 | Funkce                            | popis                                                                                               | Typ a podmínky uzlu                                                                                                                                                                                                                                                                       |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -115,6 +119,8 @@ Kliknutím na tlačítko **Nastavení** můžete upravit informace zobrazené ve
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Kusovník         | Pomocí zaškrtávacích políček vyberte kritéria, která se zobrazí ve stromové struktuře. V návrháři kusovníku jsou vybraná kritéria zobrazena v dolní části obou tabulek. |
 | Trasa       | Pomocí zaškrtávacích políček vyberte kritéria, která se zobrazí pro postupy.                                                                                    |
+
+
 
 
 

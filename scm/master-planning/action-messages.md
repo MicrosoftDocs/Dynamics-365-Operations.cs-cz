@@ -3,7 +3,7 @@ title: "nezdokumentovaný"
 description: "Zpráva opatření je návrh vygenerovaný systémem na změnu existující plánované nebo potvrzené objednávky."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09 - 21 - 54
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,26 +17,29 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: f2ac69ddf485139b057dafa20e5f1a961fc32067
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c011ac5dbba5e98ff9f743237b02a69ea2b36a9d
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="undocumented"></a>nezdokumentovaný
+# <a name="action-messages"></a>Zprávy akce
+
+[!include[banner](../includes/banner.md)]
+
 
 Zpráva opatření je návrh vygenerovaný systémem na změnu existující plánované nebo potvrzené objednávky.
 
-### <a name="introduction"></a>Úvod
+## <a name="introduction"></a>Úvod
 
 Zprávy akcí jsou generovány při výpočtu hlavního plánování jako reakce na změněné požadavky. Na prodejní objednávce, pro kterou jste již vytvořili nákupní objednávku, se mohlo změnit například datum expedice nebo množství, aby byl splněn požadavek. V tomto případě se při výpočtu hlavního plánování vygeneruje jedna nebo více zpráv akcí, aby se aktualizovala nákupní objednávka. Můžete se rozhodnout, zda navržené změny provést.
 
 Můžete nastavit způsob, jakým se zprávy akcí vypočítávají pro skupinu disponibility, kterou připojíte k položce.
 
- <a name="selecting-action-messages"></a> Volba zpráv akcí
-==========================
+## <a name="select-action-messages"></a>Výběr zpráv akcí
 
 Na stránce **Skupiny disponibility**můžete vybrat zprávy akcí, které má sytém vygenerovat, a skupiny disponibility nebo položky, na které se mají zprávy použít. Vybrat můžete následující zprávy akcí:
 
@@ -47,6 +50,8 @@ Na stránce **Skupiny disponibility**můžete vybrat zprávy akcí, které má s
 | **Snížení**        | Pokud vyberete tuto zprávu, výrobní zakázky, nákupní objednávky a jiné příjmové transakce se sníží tak, aby se zabránilo přebytku zásob.                                                                                                   |
 | **Zvýšit**        | Pokud vyberete tuto zprávu, výrobní zakázky, nákupní objednávky a jiné příjmové transakce se zvýší tak, aby se zabránilo nedostatku zásob.                                                                                                    |
 | **Odvozené akce** | Pokud vyberete tuto zprávu, zprávy akce se vytvoří pro odvozené požadavky, jako například akce pro objednávky komponent splňující výrobní požadavek.                                                                                                   |
+
+
 
 
 

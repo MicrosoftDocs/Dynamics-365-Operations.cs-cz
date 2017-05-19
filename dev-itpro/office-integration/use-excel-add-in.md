@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: af7e7288f741b3c519227e2778c4c4311c3a2012
-ms.openlocfilehash: 8af663b47117759ed3b2e2ed8eee85ae4df100d1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f80d5d49cae3107390a605e9605d8af65bf2342d
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="use-the-excel-add-in"></a>Použití doplňku Excel
+
+[!include[banner](../includes/banner.md)]
+
 
 Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics Office pro aplikaci Excel. Chcete-li otevřít data entity, můžete začít z aplikace Excel nebo Microsoft Dynamics 365 for Operations.
 
@@ -44,13 +48,14 @@ Doplněk aplikace Excel automaticky načte data entity, kterou jste vybrali. Vš
 2.  V Office Storu vyhledejte klíčové slovo "Dynamics" a klikněte na tlačítko **Přidat** vedle položky **Doplněk Microsoft Dynamics Office** (doplněk aplikace Excel).
 3.  Pokud používáte doplněk aplikace Excel poprvé, klepněte na **Důvěřovat tomuto doplňku** pro povolení spuštění doplňku aplikace Excel. Doplněk aplikace Excel je spuštěn v podokně na pravé straně okna aplikace Excel.
 4.  Klepněte na tlačítko **Přidat informace o serveru** k otevření podokna **Možnosti**.
-5.  Zkopírujte adresu URL prohlížeče z instance aplikace Dynamics 365 for Operations, vložte ho do pole **Adresa URL serveru** a potom odstraňte vše za názvem hostitele (odstraňte například **/?cmp=usmf&mi=CustTableListPage**). Výsledná adresa URL by měla mít název hostitele (například **https://xxx.dynamics.com**).
+5.  Zkopírujte adresu URL prohlížeče z cílové instance aplikace Dynamics 365 for Operations, vložte ho do pole **Adresa URL serveru** a potom odstraňte vše za názvem hostitele. Výsledná adresa URL by měla mít pouze název hostitele.
+Například pokud je adresa URL https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage, odstraňte vše položky s výjimkou **https://xxx.dynamics.com**.
 6.  Kliknutím na **OK** a potom na **Ano** potvrďte změnu. Doplněk aplikace Excel se restartuje a načte metadata. Tlačítko **Návrh** je teď dostupné. Pokud má doplněk aplikace Excel tlačítko **Načíst aplety**, pravděpodobně nejste přihlášeni jako správný uživatel. Další informace naleznete v tématu "Zobrazuje se tlačítko Načíst aplety" v části "Poradce při potížích" tohoto tématu.
 7.  Klikněte na možnost **Návrh**. Doplněk aplikace Excel načte metadata entity.
 8.  Klikněte na **Přidat tabulku**. Zobrazí se seznam entit. Entity jsou uvedeny ve formátu "Název – popisek".
 9.  Vyberte entitu v seznamu, jako například **Zákazník - zákazníci**a potom klepněte na tlačítko **Další**.
 10. Chcete-li přidat pole ze seznamu **Dostupná pole** do seznamu **Vybraná pole**, klikněte na pole a potom na tlačítko **Přidat**. Nebo na pole poklepejte.
-11. Po přidání požadovaných polí do seznamu **vybraná pole** se ujistěte, že kurzor je na správném místě v listu (například buňka A1) a potom klepněte na tlačítko **Hotovo**. Potom kliknutím na tlačítko **Hotovo** ukončete návrháře.
+11. Po dokončení přidání polí do seznamu **Vybraná pole** se ujistěte, že kurzor je na správném místě v listu (například buňka A1), a potom klikněte na tlačítko **Hotovo**. Potom kliknutím na tlačítko **Hotovo** ukončete návrháře.
 12. Klepněte na tlačítko **Aktualizovat** pro načtení sady dat.
 
 ## <a name="view-and-update-entity-data-in-excel"></a>Zobrazení a aktualizace dat entity v aplikaci Excel
@@ -59,14 +64,17 @@ Poté, co doplněk aplikace Excel načte data entity do sešitu, můžete data k
 ## <a name="edit-entity-data-in-excel"></a>Úprava dat entity v aplikaci Excel
 Můžete změnit data entity podle požadavku a pak je publikovat zpět klepnutím na **Publikovat** v doplňku aplikace Excel. Chcete-li upravit záznam, vyberte buňku v listu a potom změňte hodnotu buňky. Chcete-li přidat nový záznam, proveďte jeden z následujících kroků:
 
--   Klepněte na libovolné místo v listu a potom klepněte na tlačítko **Nový** v doplňku aplikace Excel.
--   Klepněte na poslední řádek listu a potom stiskněte klávesu Tab, dokud se kurzor ne přesune z posledního sloupce řádku a dokud není vytvořen nový řádek.
--   Klepněte na řádek bezprostředně pod listem a začněte zadávat data do buňky. Při přesunutí fokusu z této buňky se list rozšíří a bude obsahovat nový řádek.
+-   Klikněte na libovolné místo v tabulce zdrojů dat a potom klikněte na tlačítko **Nový** v doplňku aplikace Excel.
+-   Klikněte na poslední řádek v tabulce zdrojů dat a potom stiskněte klávesu Tab, dokud se kurzor nepřesune z posledního sloupce řádku a dokud není vytvořen nový řádek.
+-   Klikněte na řádek bezprostředně pod tabulkou zdrojů dat a začněte zadávat data do buňky. Při přesunutí fokusu z této buňky se tabulka rozšíří a bude obsahovat nový řádek.
+-   Pro vazby polí záznamů záhlaví klikněte na jedno z polí a potom klikněte na **Nový** v doplňku aplikace Excel.
 
+Všimněte si, že nový záznam lze vytvořit pouze v případě, že všechna klíčová a povinná pole jsou vázána na list, nebo případně pokud jsou výchozí hodnoty vyplněny pomocí podmínky filtru.
 Chcete-li odstranit záznam, proveďte jeden z následujících kroků:
 
 -   Klepněte pravým tlačítkem na číslo řádku vedle řádku, který chcete odstranit, a klepněte na **Odstranit**.
 -   Klepněte pravým tlačítkem na číslo řádku v listu, který chcete odstranit, a klepněte na **Odstranit** &gt; **Řádky tabulky**.
+Pokud byly zdroje dat přidány jako související, záhlaví je publikováno před řádky. Pokud existují závislosti mezi dalšími zdroji dat, může být třeba změnit výchozí pořadí publikování. Chcete-li změnit pořadí publikování, klikněte v doplňku aplikace Excel na tlačítko **Možnosti** (symbol ozubeného kola). Poté na pevné záložce **Datový konektor** klikněte na **Konfigurovat pořadí publikování**.
 
 ## <a name="add-or-remove-columns"></a>Přidat nebo odebrat sloupce
 Chcete-li upravit sloupce, které jsou automaticky přidány do listu, můžete použít návrháře.
@@ -77,9 +85,10 @@ Chcete-li upravit sloupce, které jsou automaticky přidány do listu, můžete 
 4.  Podle potřeby upravte seznam v seznamu **Vybraná pole**:
     -   Chcete-li přidat pole ze seznamu **Dostupná pole** do seznamu **Vybraná pole**, klikněte na pole a potom na tlačítko **Přidat**. Nebo na pole poklepejte.
     -   Pokud chcete odebrat pole ze seznamu **Vybraná pole**, klikněte do pole a potom klikněte na **Odebrat**. Nebo na pole poklepejte.
-    -   Chcete-li změnit pořadí polí, klepněte na pole v seznamu **vybraná pole** a potom klepněte na tlačítko **Nahoru** nebo **dolů**.
+    -   Chcete-li změnit pořadí polí, klikněte na pole v seznamu **Vybraná pole**, klikněte na pole a potom klikněte na tlačítka **Nahoru** nebo **dolů**.
 
-5.  Použijte změny na zdroj dat klepnutím na **Aktualizovat**. Potom kliknutím na tlačítko **Hotovo** ukončete návrháře. Pokud jste přidali pole (sloupec), klepněte na tlačítko **Aktualizovat** pro načtení aktualizované sady dat.
+5. Abyste provedli změny zdrojů dat, klikněte na **Aktualizovat**. Potom kliknutím na tlačítko **Hotovo** ukončete návrháře. 
+6. Pokud jste přidali pole (sloupec), klepněte na tlačítko **Aktualizovat** pro načtení aktualizované sady dat.
 
 ## <a name="httpspowerappsmicrosoftcomenustutorialsdataplatforminteractiveexceltroubleshootingtroubleshooting"></a>[](https://powerapps.microsoft.com/enus/tutorials/dataplatforminteractiveexcel/#troubleshooting)Řešení potíží
 Existuje několik problémů, které lze vyřešit pomocí některé jednoduchých kroků.
@@ -87,6 +96,8 @@ Existuje několik problémů, které lze vyřešit pomocí některé jednoduchý
 -   **Je zobrazeno tlačítko Načíst aplety.** Pokud má doplněk aplikace Excel po přihlášení tlačítko **Načíst aplety**, pravděpodobně nejste přihlášeni jako správný uživatel. Chcete-li tento problém vyřešit, ověřte, že se v pravém horním rohu doplňku aplikace Excel zobrazuje správné uživatelské jméno. Pokud se zobrazí nesprávné uživatelské jméno, klepněte na něj, odhlaste se a znovu přihlaste.
 -   **Dostanete zprávu "Zakázáno"** Pokud se při načítání metadat doplňkem aplikace Excel zobrazí zpráva "Zakázáno", účet, který je přihlášení k doplňku aplikace Excel, nemá oprávnění používat cílené služby, instance nebo databázi. Chcete-li tento problém vyřešit, ověřte, že se v pravém horním rohu doplňku aplikace Excel zobrazuje správné uživatelské jméno. Pokud se zobrazí nesprávné uživatelské jméno, klepněte na něj, odhlaste se a znovu přihlaste.
 -   **V aplikaci Excel se zobrazí prázdná webová stránka.** Pokud se v průběhu přihlašování otevře prázdná webová stránka, účet vyžaduje AD FS, ale verze Excelu, na které je doplněk spuštěný, není dost nedávná, aby načetla přihlašovací dialog. Chcete-li tento problém vyřešit, aktualizujte verzi aplikace Excel, kterou používáte. Pokud chcete aktualizovat verzi Excelu, když jste v síti s vyřazeným kanálem, použijte [Nástroj pro nasazení Officel](https://technet.microsoft.com/library/jj219422.aspx) pro [přesunutí z vyřazeného kanálu do stávajícího](https://technet.microsoft.com/library/mt455210.aspx).
+
+
 
 
 

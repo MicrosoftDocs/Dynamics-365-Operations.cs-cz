@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 68cac68e1ea3db35b44c91f2c1901abf2aa521be
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4b79b21c6c4ceebfd24225643d099a2e2789d303
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -45,7 +46,7 @@ Několik nastavení určuje způsob výpočtu plánů výroby. Tato nastavení l
 
 Způsob plánování je základním faktorem procesu plánování. Výrobu lze naplánovat dopředu nebo zpětně od libovolného data v závislosti na požadavcích načasování a plánování.
 
--   **Dopředné plánování **– výrobu můžete naplánovat tak, aby se zahájila co nejdříve. Výroba může začít dnes, zítra nebo ke kterémukoli konkrétnímu budoucímu datu. Zahájení výroby je naplánováno na nejbližší možné datum a výroba je naplánována tak, aby skončila k nejbližšímu možnému datu ukončení.
+-   **Dopředné plánování**– výrobu můžete naplánovat tak, aby se zahájila co nejdříve. Výroba může začít dnes, zítra nebo ke kterémukoli konkrétnímu budoucímu datu. Zahájení výroby je naplánováno na nejbližší možné datum a výroba je naplánována tak, aby skončila k nejbližšímu možnému datu ukončení.
 -   **Zpětné plánování**– výrobu můžete naplánovat tak, aby se zahájila co nejpozději. Základem plánu je datum, kdy musí být výroba hotova, a plánuje se zpětně k nejpozdějšímu možnému datu zahájení výroby, kdy bude ještě možné dodržet termín dokončení.
 
 Existují tyto možnosti:
@@ -98,7 +99,7 @@ Když reference závisejí na výrobních zakázkách, jsou známé také jako d
 
 ### <a name="synchronize-references"></a>Synchronizovat odkazy
 
-Reference mohou být také synchronizovány s výrobní zakázkou. Vyberete-li tuto možnost, budou při změně plánu výrobní zakázky posunuta a vyrovnána i data dílčích výrob. Pokud výrobní zakázka obsahuje jednu nebo více dílčích výrob, můžete naplánovat dílčí výroby společně s hlavní výrobou. V takovém případě hlavní výrobu nelze zahájit až do dokončení souvisejících dílčích výrob. Proto pokud má být plánování dílčích výrob založeno na počátečním a koncovém datu vybrané výroby, zaškrtněte toto políčko. Zaškrtnete toto políčko, jen když není zaškrtnuto také políčko** Plánovat odkazy**.
+Reference mohou být také synchronizovány s výrobní zakázkou. Vyberete-li tuto možnost, budou při změně plánu výrobní zakázky posunuta a vyrovnána i data dílčích výrob. Pokud výrobní zakázka obsahuje jednu nebo více dílčích výrob, můžete naplánovat dílčí výroby společně s hlavní výrobou. V takovém případě hlavní výrobu nelze zahájit až do dokončení souvisejících dílčích výrob. Proto pokud má být plánování dílčích výrob založeno na počátečním a koncovém datu vybrané výroby, zaškrtněte toto políčko. Zaškrtnete toto políčko, jen když není zaškrtnuto také políčko**Plánovat odkazy**.
 
 ## <a name="cancellation"></a>Zrušení
 ### <a name="cancel-queue-time"></a>Zrušit čas čekání před operací

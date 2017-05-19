@@ -3,7 +3,7 @@ title: "Co je nového nebo upraveného v aplikaci verze Dynamics 365 for Operati
 description: "Toto téma popisuje funkce, které jsou v Dynamics 365 for Operations verze 1611 nové nebo změněné."
 author: sericks007
 manager: AnnBe
-ms.date: 2016-10-31 15 - 56 - 17
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 82d03b6bc190fb612dd2cc7a25dc11875212f1ea
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fbca041e0663fad4437207146bcfff8f93f4a7fc
+ms.openlocfilehash: 67faa02d445cc4c6e78fe5471605d8c0a2da21de
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/27/2017
 
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Co je nového nebo upraveného v aplikaci verze Dynamics 365 for Operations 1611 (září 2016)
+
+[!include[banner](../includes/banner.md)]
+
 
 Toto téma popisuje funkce, které jsou v Dynamics 365 for Operations verze 1611 nové nebo změněné.
 
@@ -514,6 +518,11 @@ Následující země také vyžadují lokalizaci maloobchodu. Lokalizace maloobc
 <li>Importní formát bankovního výpisu ESR pro Švýcarsko.</li>
 </ul></td>
 </tr>
+<tr class="even">
+<td>Německo – Export plateb dodavatelů ve formátu DTAZV</td>
+<td>Německo vyžaduje DTAZV se specifikací cizí formátu představující zprávu o převodu kreditu (platbu dodavatele) podle specifikace pro platby zahraničí platby z Německa na účet v zahraniční bance nebo do domácí banku v cizí měně. 
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -675,7 +684,7 @@ Perfektní obchodní omni-channel odkazuje ke správě a zpracovávání objedn�
 
 ### <a name="store-system-providing-a-seamless-on-premises-store-experience"></a>Uložit systém: poskytnout bezproblémové zkušenosti místního obchodu
 
-Systém obchodu je možnost nasazení pro maloobchodní prodejce, který umožňuje vést sadu operací v obchodě, a to jak v místním úložišti, veřejném cloudu společnosti Microsoft nebo na vlastním soukromém cloudu klienta. Pro aplikaci Microsoft Dynamics AX verze 7.1 je rozsah pouze v obchodě. Pro zvýšení podpory prostředí, která mají pomalé a nespolehlivé připojení k síti, musíme poskytovat možnost pro maloobchodní prodejce nasadit maloobchodní Server v obchodě a databázi kanálů. Pak mohou i nadále spouštět základní obchodní scénáře i v případě, že neexistuje žádná připojení k centrále (HQ). Na základě různých datových bodů, které zahrnovaly diskuse týmu analytiků, výsledky zákaznických průzkumů a analýzu konkurence, doporučujeme jako ideální řešení pro své zákazníky následující rozsah řešení:
+Systém obchodu je možnost nasazení pro maloobchodní prodejce, který umožňuje vést sadu operací v obchodě, a to jak v místním úložišti, veřejném cloudu společnosti Microsoft nebo na vlastním soukromém cloudu klienta. V této verzi produktu je rozsah pouze v obchodě. Pro zvýšení podpory prostředí, která mají pomalé a nespolehlivé připojení k síti, musíme poskytovat možnost pro maloobchodní prodejce nasadit maloobchodní Server v obchodě a databázi kanálů. Pak mohou i nadále spouštět základní obchodní scénáře i v případě, že neexistuje žádná připojení k centrále (HQ). Na základě různých datových bodů, které zahrnovaly diskuse týmu analytiků, výsledky zákaznických průzkumů a analýzu konkurence, doporučujeme jako ideální řešení pro své zákazníky následující rozsah řešení:
 
 -   Samoobslužný balíček je dostupný pro systém obchodu.
 -   Výchozí instalace je nasazení jednoho přístroje, ale je povoleno vlastní nasazení.
@@ -718,7 +727,7 @@ V současné době je Retail Modern POS k dispozici pouze jako aplikace systému
 | Jako dodavatel můžete získat informace o množství zasílaných zásob, které se převádějí k odběrateli.                                                                      | Pro možnost účtovat odběrateli dodavatel vyžaduje údaje o surovinách zakoupených ze zásilky dodávky a datum zakoupení. Dodavatel může také monitorovat zásoby na skladě u zákazníka pomocí rozhraní dodavatelské spolupráce.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Přesunujte zásoby vlastněné dodavatelem pomocí deníku převodu.                                                                                                                       | Chcete-li sledovat fyzickou pozici zásob vlastněných dodavatelem, musíte být schopní zaznamenat umístění v systému. Pomocí deníku převodu můžete zaznamenat fyzické přesunutí zásob, jako je například pohyb z jednoho místa ve skladu do jiného místa v dotyčném skladu.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Upravte zásoby vlastněné dodavatelem pomocí deníku inventur.                                                                                                                     | Je důležité, abyste zásoby na skladě systému synchronizovali se skutečnými fyzickými zásobami. Zásoby vlastněné dodavatelem lze upravit pomocí procesů inventury, například úpravou množství a procesů deníku inventury.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Další informace o podpoře zásilek Dynamics 365 for Operations                                                                                                         | Chcete-li zobrazit další informace týkající se podpory pro procesy dodávek, otevřete [Zásilka](/dynamics365/operations/scm/inventory/consignment), [Nastavení zásilky](/dynamics365/operations/scm/inventory/set-up-consignment), [Vytvoření nové zakázky na doplnění stavu zásob dodávky (Průvodce záznamem úloh)](http://ax.help.dynamics.com/en/wiki/create-a-consignment-replenishment-order/) a [Změna vlastnictví zásilky zásob na základě výrobní poptávky (Průvodce záznamem úloh)](http://ax.help.dynamics.com/en/wiki/change-the-ownership-of-consignment-inventory-based-on-production-demand/).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Další informace o podpoře zásilek Dynamics 365 for Operations                                                                                                         | Chcete-li zobrazit další informace týkající se podpory pro procesy dodávek, otevřete [Zásilka](/dynamics365/operations/supply-chain/inventory/consignment), [Nastavení zásilky](/dynamics365/operations/supply-chain/inventory/set-up-consignment), [Vytvoření nové zakázky na doplnění stavu zásob dodávky (Průvodce záznamem úloh)](http://ax.help.dynamics.com/en/wiki/create-a-consignment-replenishment-order/) a [Změna vlastnictví zásilky zásob na základě výrobní poptávky (Průvodce záznamem úloh)](http://ax.help.dynamics.com/en/wiki/change-the-ownership-of-consignment-inventory-based-on-production-demand/).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 ### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Dodavatelská spolupráce (dříve označovaná jako portál pro dodavatele)
 
@@ -728,7 +737,7 @@ V současné době je Retail Modern POS k dispozici pouze jako aplikace systému
 | Povolte dodavatelům spravovat informace o kontaktní osobě.                                 | Dodavatelé mohou spravovat informace o kontaktní osobě pro svou společnost. Tyto informace zahrnují jména, e-mailové adresy a telefonní čísla. Přístup k této funkci je udělován prostřednictvím vyhrazené zabezpečené úlohy.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | Sdílejte dokumenty, které souvisejí s nákupními objednávkami dodavatelů.                    | Jestliže musíte sdílet s dodavateli dokument, například dokumenty o požadavcích, je vhodné spojit dokument s příslušnou nákupní objednávkou. Dodavatel může sdílet poznámky a přílohy s odběratelem pomocí propojení dokumentu ke své reakci na nákupní objednávku. Správa dokumentů je podkladovou podpůrnou soustavou a pouze poznámky a přílohy, které jsou klasifikovány jako "externí", lze sdílet s dodavatelem.                                                                                                                                                                                                                                                                                                                              |
 | Založit nového dodavatelského uživatele.                                                          | Pokud vaši dodavatelé používají rozhraní dodavatelské spolupráce, mají bezproblémový způsob, jak požadovat nové účty, pokud nové kontakty vyžadují přístup k dodavatelské spolupráci. Odborníci v oblasti zásobování mohou odeslat požadavek na účet pro kontaktní osoby u dodavatelské společnosti. Kontaktní osoba dodavatele, která je již uživatelem dodavatelské spolupráce, může tento typ požadavku také odeslat. Tento požadavek nakonec vytvoří nového uživatele v Dynamics 365 for Operations, který bude mít bezpečnostní role specifické pro dodavatele. Také usnadňuje žádost na portál Microsoft Azure B2B o zajištění nového uživatelského účtu služby Active Directory Azure (Azure AD) pro uživatele. Dodavatel také může požádat o deaktivaci nebo změnu zabezpečení úlohy účtu specifického dodavatelského uživatele. |
-| Další informace o dodavatelské spolupráci v Dynamics 365 for Operations. | Další informace o dodavatelské spolupráci najdete na [Dodavatelská spolupráce s externími dodavateli](/dynamics365/operations/scm/procurement/vendor-collaboration-work-external-vendors), [Dodavatelská spolupráce s odběrateli](/dynamics365/operations/scm/procurement/vendor-collaboration-work-customers-dynamics-365-operations), [Správa uživatelů dodavatelské spolupráce](/dynamics365/operations/scm/procurement/manage-vendor-collaboration-users), [Nastavení konfigurace a správa dodavatelské spolupráce](/dynamics365/operations/scm/procurement/set-up-maintain-vendor-collaboration) a [Pracovní prostor pro fakturaci dodavatelské spolupráce](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace).                                                         |
+| Další informace o dodavatelské spolupráci v Dynamics 365 for Operations. | Další informace o dodavatelské spolupráci najdete na [Dodavatelská spolupráce s externími dodavateli](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-work-external-vendors), [Dodavatelská spolupráce s odběrateli](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations), [Správa uživatelů dodavatelské spolupráce](/dynamics365/operations/supply-chain/procurement/manage-vendor-collaboration-users), [Nastavení konfigurace a správa dodavatelské spolupráce](/dynamics365/operations/supply-chain/procurement/set-up-maintain-vendor-collaboration) a [Pracovní prostor pro fakturaci dodavatelské spolupráce](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace).                                                         |
 
 ### <a name="intercompany-order-processing"></a>Mezipodnikové zpracovávání objednávek
 
@@ -846,5 +855,7 @@ V současné době je Retail Modern POS k dispozici pouze jako aplikace systému
 --------
 
 [Novinky a změny](whats-new-changed.md)
+
+
 
 

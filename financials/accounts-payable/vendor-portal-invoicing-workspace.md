@@ -3,7 +3,7 @@ title: "Pracovní prostor fakturace dodavatelské spolupráce"
 description: "Toto téma vysvětluje, jak můžete zobrazit faktury dodavatele a přijmout faktury z pracovního prostoru spolupráce dodavatele."
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-10-31 16 - 21 - 43
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 822e621f22f8af63b2a827dcc50a6b0ac68d3e21
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 7aebcdf0578d931d326420b42e2b220407049bc6
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="vendor-collaboration-invoicing-workspace"></a>Pracovní prostor fakturace dodavatelské spolupráce
+
+[!include[banner](../includes/banner.md)]
+
 
 Toto téma vysvětluje, jak můžete zobrazit faktury dodavatele a přijmout faktury z pracovního prostoru spolupráce dodavatele.
 
@@ -43,7 +47,7 @@ Dlaždice **Souhrnu** poskytují přehled o fakturách pro vybraného dodavatele
 Klepnutím na dlaždici otevřete filtrované zobrazení stránky **seznamu faktur**.
 ### <a name="tabular-lists"></a>Tabulkový seznam
 
-V oddíle **Tabulkové seznamy **se stav fakturace rozděluje podobným způsobem jako dlaždice souhrnu: návrhy a odeslané ale neschválené seznamy. Ve stavu návrhu lze fakturu přijmout do workflowu nebo odstranit. Poslední tabulkový seznam je možnost pro vyhledání faktur. Při hledání můžete filtrovat, což umožňuje rychlejší vyhledávání.
+V oddíle **Tabulkové seznamy**se stav fakturace rozděluje podobným způsobem jako dlaždice souhrnu: návrhy a odeslané ale neschválené seznamy. Ve stavu návrhu lze fakturu přijmout do workflowu nebo odstranit. Poslední tabulkový seznam je možnost pro vyhledání faktur. Při hledání můžete filtrovat, což umožňuje rychlejší vyhledávání.
 Stránka seznamu všech faktur dodavatelů
 -----------------------------
 
@@ -55,6 +59,8 @@ Novou fakturu dodavatele můžete vytvořit, pokud vyberete akci **Nová** v pra
 
 
 
-Další informace naleznete v tématu [Spolupráce s dodavateli pomocí portálu pro dodavatele](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
+Další informace naleznete v tématu [Spolupráce s dodavateli pomocí portálu pro dodavatele](/dynamics365/operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
+
+
 
 

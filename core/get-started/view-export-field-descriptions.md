@@ -3,7 +3,7 @@ title: "Zobrazení a export popisů polí"
 description: "Tento článek popisuje, jak zobrazit popisy pole, a jak používat stránku Popisy pole pro export popisů."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 52 - 24
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: c8c96dc9705688308dd4a5c720700ddc17657d75
-ms.openlocfilehash: d4fc9cdee0e2160e363f9defcf6bdbc57ed4db74
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3029cb441d124e6e5aa427f7fcd95540700254c6
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Zobrazení a export popisů polí
+
+[!include[banner](../includes/banner.md)]
+
 
 Tento článek popisuje, jak zobrazit popisy pole, a jak používat stránku Popisy pole pro export popisů.
 
@@ -80,11 +84,11 @@ Tato sekce obsahuje informace o řešení problémů, ke kterým může dojít p
 
 ### <a name="i-cant-find-a-field-description"></a>Nelze najít popis pole
 
-Právě probíhá přidávání popisů pro složitější pole. Potřebujete-li nápovědu pro konkrétní pole, informujte nás přidáním komentáře k tomuto Wiki článku.
+Právě probíhá přidávání popisů pro složitější pole. Potřebujete-li nápovědu pro konkrétní pole, informujte nás přidáním komentáře k tomuto tématu.
 
 ### <a name="the-field-description-isnt-helpful"></a>Pole popisu není užitečné
 
-Informujte nás přidáním komentáře k tomuto Wiki článku. Pokud je to možné, uveďte další informace, které požadujete.
+Informujte nás přidáním komentáře k tomuto tématu. Pokud je to možné, uveďte další informace, které požadujete.
 
 ### <a name="i-cant-find-a-field-on-the-field-descriptions-page"></a>Nelze najít pole na stránce Popisy pole
 
@@ -97,6 +101,9 @@ Informace o různých způsobech, jak vyhledat stránky, naleznete v části "Hl
 <a name="see-also"></a>Viz také
 --------
 
-[Přizpůsobení nápovědy pole](https:/docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/customize-field-help.md)
+[Přizpůsobení nápovědy pole](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+
+
+
 
 

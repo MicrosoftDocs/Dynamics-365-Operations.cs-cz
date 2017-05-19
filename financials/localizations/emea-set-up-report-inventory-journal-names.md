@@ -17,10 +17,11 @@ ms.search.region: Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: eed3398651612743958722814ec5594ec34e4e5e
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: eeee93f2a48205e1b567c3f4421febe0dab6843a
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 Při použití konfigurovatelných sestav zásob založených na elektronickém výkaznictví je třeba vytvořit vztah mezi konkrétní sestavou a typem deníku.
 
-Chcete-li nastavit vztah mezi konkrétní sestavou a typem deníku, na stránce **Názvy deníků zásob** (**Řízení zásob** &gt; **Nastavení** &gt; **Názvy deníků** &gt; **Zásoby**) zadejte název sestavy. **Poznámka:** Pro nastavení podporovaných konfigurací si stáhněte požadované konfigurace elektronického vykazování. Další informace viz [1Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). V následující tabulce jsou uvedeny příklady sestavy zásob s podporovanou konfigurací v Evropě.
+Chcete-li nastavit vztah mezi konkrétní sestavou a typem deníku, na stránce **Názvy deníků zásob** (**Řízení zásob** &gt; **Nastavení** &gt; **Názvy deníků** &gt; **Zásoby**) zadejte název sestavy. **Poznámka:** Pro nastavení podporovaných konfigurací si stáhněte požadované konfigurace elektronického vykazování. Další informace viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). V následující tabulce jsou uvedeny příklady sestavy zásob s podporovanou konfigurací v Evropě.
 |                    |                                     |                  |                                         |
 |--------------------|-------------------------------------|------------------|-----------------------------------------|
 | **Země**        | **Popis sestavy**              | **Typ deníku** | **Název mapování formátu**                 |

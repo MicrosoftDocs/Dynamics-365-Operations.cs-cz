@@ -3,7 +3,7 @@ title: "Přehled převodů SEPA"
 description: "Tento článek poskytuje obecné informace o převodech kreditů ISO 20022, které zahrnují převody kreditů v jednotné oblasti pro platby v eurech a jakékoli další elektronické platby pro dodavatele. Převod SEPA je specifický typ platby v eurech od jedné společnosti nebo osoby pro jinou společnost nebo osobu. Toto téma také vysvětluje, jak nastavit a převést soubor platby platebního převodu."
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-03-16
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 848df5e3898f37284d7746c59bff8b38d35ac883
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f7adaf2f3a14d2c0e094314f0b36b5d4bdb0a65c
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="sepa-credit-transfer-overview"></a>Přehled převodů SEPA
+
+[!include[banner](../includes/banner.md)]
+
 
 Tento článek poskytuje obecné informace o převodech kreditů ISO 20022, které zahrnují převody kreditů v jednotné oblasti pro platby v eurech a jakékoli další elektronické platby pro dodavatele. Převod SEPA je specifický typ platby v eurech od jedné společnosti nebo osoby pro jinou společnost nebo osobu. Toto téma také vysvětluje, jak nastavit a převést soubor platby platebního převodu.
 
@@ -55,7 +59,7 @@ Formát platby platebního převodu pro evropské země je implementován pomoc�
 Měli byste vždy přejít do knihovny sdílený majetek ve službě Microsoft Dynamics Lifecycle services (LCS) a zobrazit nejaktuálnější seznam dostupných souborů, které mají typ majetku **konfigurace GER**. Další oddíl "Co musím nastavit?" obsahuje odkaz na téma, které vysvětluje, jak vytvořit úložiště LCS ke kontrole dostupných konfigurací a importovat vybrané konfigurace.
 
 ## <a name="what-do-i-have-to-set-up"></a>Co je nutné nastavit?
--   Před vytvořením souborů převodu kreditu je třeba alespoň jednu aktivní konfigurace převodu importovat do vaší konfigurace obecného elektronického výkaznictví. Pokyny viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+-   Před vytvořením souborů převodu kreditu je třeba alespoň jednu aktivní konfigurace převodu importovat do vaší konfigurace obecného elektronického výkaznictví. Pokyny viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 -   Při konfiguraci metody platby Závazky zaškrtněte políčko **Obecné elektronické výkaznictví** a vyberte vhodný formát převodu kreditu (například **Převod kreditu ISO 20022 (AT)**) jako konfiguraci formátu exportu.
 -   Musíte nastavit také informace o právnické osobě a bankovním účtu v aplikaci Dynamics 365 for Operations.
 -   Čísla bankovních účtů, IBAN a někdy SWIFT kódy (BIC) nebo jiné ID, která jsou potřebná k vytvoření platné bezhotovostní platby. Proto je musíte nastavit pro bankovní účet dodavatele a bankovní účet pro organizaci, která žádá o převod.
@@ -121,5 +125,7 @@ Mezinárodní číslo bankovního účtu (IBAN) a identifikační kód banky (IK
 
 ## <a name="how-do-i-transmit-a-payment-file-to-the-bank"></a>Jak mohu přenést soubor platby do banky?
 Při generování plateb je vygenerován soubor platby a budete vyzváni k jeho uložení z webového prohlížeče do kteréhokoli dostupného umístění. Dalším krokem je odeslání souboru XML do banky. Tento proces se v jednotlivých bankách liší. Postupujte podle pokynů vaší banky k odeslání souborů do banky ke zpracování.
+
+
 
 

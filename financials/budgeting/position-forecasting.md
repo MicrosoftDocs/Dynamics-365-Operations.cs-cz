@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 1bc458d58834be1e2e9b602619f76424b3bb449b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 62dcc8a9b17ad044ac63080a94593a5f6ae2f182
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -98,7 +99,7 @@ Nákladový prvek příjmů vybraný ve skupině kompenzací se používá při 
 
 Pro nejpřesnější plánování rozpočtu můžete vytvořit pozice prognózy využívající podrobných údajů z aplikace Microsoft Dynamics 365 for Operations, bez ohledu na to, zda je pozice aktuálně zaplněna nebo nezaplněna. 
 
-Funkce **Přidat existující pozice** zobrazí všechny pozice pro organizaci. Pomocí nastavení pole** K datu** lze seznam pozic změnit tak, aby obsahoval pozice, které existovaly k datu v minulosti nebo, běžněji, v budoucnosti (například k začátku dalšího rozpočtového cyklu). Vyberte proces plánování rozpočtu a scénář plánu rozpočtu, vyberte pozice v seznamu a klepněte na tlačítko **OK** pro vytvoření pozic prognózy pro vybrané pozice. Všimněte si, že lze vytvořit pouze jednu pozici prognózy pro každou existující pozici v procesu plánování rozpočtu a scénáři. Přiřazením odlišných scénářů plánu rozpočtu však můžete vytvořit další verze. 
+Funkce **Přidat existující pozice** zobrazí všechny pozice pro organizaci. Pomocí nastavení pole**K datu** lze seznam pozic změnit tak, aby obsahoval pozice, které existovaly k datu v minulosti nebo, běžněji, v budoucnosti (například k začátku dalšího rozpočtového cyklu). Vyberte proces plánování rozpočtu a scénář plánu rozpočtu, vyberte pozice v seznamu a klepněte na tlačítko **OK** pro vytvoření pozic prognózy pro vybrané pozice. Všimněte si, že lze vytvořit pouze jednu pozici prognózy pro každou existující pozici v procesu plánování rozpočtu a scénáři. Přiřazením odlišných scénářů plánu rozpočtu však můžete vytvořit další verze. 
 
 Pokud byly prvky rozpočtových nákladů přiřazeny k pozici v lidských zdrojích, tyto prvky rozpočtových nákladů jsou také přiřazené k pozici prognózy a používají výchozí částky. Pole **Přiřazený pracovník** pro pozici prognózy je nastaveno na jméno pracovníka, který je přiřazený k pozici (pokud je zaměstnanec přiřazen). Toto pole je prosté textové pole. Neproběhlo vytvoření žádného propojení. 
 

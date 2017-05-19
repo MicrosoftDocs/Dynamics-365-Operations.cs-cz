@@ -19,10 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 3c608f13c93446329702f07ef7e8bb08a29d87b9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8cb9428ff6be93f9a395ec3085ef1fda05847a8a
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -40,7 +41,7 @@ Lean manufacturing nabízí nástroje, které lze použít k modelování štíh
 -   Sledování a správa kanbanovových úloh.
 
 Architektura lean manufacturing v aplikaci Microsoft Dynamics AX 7 obsahuje výrobní toky, aktivity a kanbanová pravidla. Tyto struktury jsou plně integrované s procesy v aplikaci Microsoft Dynamics AX 7. Lean manufacturing můžete použít ve smíšeném výrobní prostředí, ve kterém se kombinují různé strategie dodávek, výroby a zdrojů. Tyto strategie zahrnují výrobní zakázky, dávkové objednávky pro zpracovatelské odvětví, nákupní objednávky a převodní příkazy.
-| **Důležité **                                                                                                                                                                                                                                                                |
+| **Důležité**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Aplikaci Microsoft Dynamics AX 7 můžete použít k podpoře implementace lean manufacturing s kanbany. Úspěšná implementace zásad štíhlé výroby však závisí na vnitřních obchodních procesech, které používáte, a skutečných výrobních podmínkách a prostředí. |
 

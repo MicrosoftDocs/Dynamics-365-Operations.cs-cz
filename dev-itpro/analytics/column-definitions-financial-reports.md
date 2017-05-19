@@ -1,16 +1,16 @@
 ---
 title: "Definice sloupce ve finančních sestavách"
 description: "Tento článek obsahuje informace o definicích sloupce. Definice sloupce je součástí sestavy nebo stavebního bloku, který definuje obsah jednotlivých sloupců v sestavě. Stejně jako definice řádků lze základní definice sloupců použít u více sestav."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-08-09 21 - 27 - 36
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: af336db81f659d80248aa4ab1fbba96ed1ff48c2
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: bf42b287e2e9235fd50f78a6fadc3f9efbd1fbe5
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="column-definitions-in-financial-reports"></a>Definice sloupce ve finančních sestavách
+
+[!include[banner](../includes/banner.md)]
+
 
 Tento článek obsahuje informace o definicích sloupce. Definice sloupce je součástí sestavy nebo stavebního bloku, který definuje obsah jednotlivých sloupců v sestavě. Stejně jako definice řádků lze základní definice sloupců použít u více sestav.
 
@@ -150,7 +154,7 @@ Můžete přidat, upravit a odstranit záhlaví, která se zobrazí v horní č�
 
 1.  V Návrháři sestav otevřete definici sloupce k úpravě.
 2.  Vyberte buňku v řádku záhlaví.
-3.  V nabídce **Upravit** klikněte na tlačítko **Vložit řádek**. Nový řádek se vloží nad řádek, který jste vybrali v kroku 2. **Poznámka: **používáte-li v sestavě pro záhlaví sestavy čtyři nebo více řádků, záhlaví se budou při exportu sestavy do listu aplikace Excel překrývat. Chcete-li v sestavě zobrazit všechna záhlaví, zvětšete horní okraj v definici sestavy.
+3.  V nabídce **Upravit** klikněte na tlačítko **Vložit řádek**. Nový řádek se vloží nad řádek, který jste vybrali v kroku 2. **Poznámka:**používáte-li v sestavě pro záhlaví sestavy čtyři nebo více řádků, záhlaví se budou při exportu sestavy do listu aplikace Excel překrývat. Chcete-li v sestavě zobrazit všechna záhlaví, zvětšete horní okraj v definici sestavy.
 
 ### <a name="delete-a-column-header-row"></a>Odstranění řádku záhlaví sloupců
 
@@ -318,11 +322,11 @@ Buňka **Řízení tisku** může obsahovat kódy, které upraví zobrazení neb
 2.  Klikněte dvakrát na buňku **Řízení tisku**.
 3.  V dialogovém okně **Řízení tisku** vyberte kód ze seznamu **Výběr možností řízení tisku**. Chcete-li vybrat více než jeden kód, podržte klávesu Ctrl a vyberte kódy.
 4.  Vyberte možnost v poli **Podmíněné možnosti tisku**. Ve výchozím nastavení je zvolena možnost **(žádný)**. Lze vybrat pouze jeden podmíněný kód tisku současně.
-5.  Klepněte na tlačítko **OK**.
+5.  Klikněte na tlačítko **OK**.
 
-**Tip:** Lze také zadat tiskové kódy přímo do buňky **Řízení tisku**. Více kontrolních kódů tisku oddělte čárkou.
+> [!TIP]
+> Můžete také zadat tiskové kódy přímo do buňky **Řízení tisku**. Více kontrolních kódů tisku oddělte čárkou.
 
-### 
 
 ## <a name="column-types"></a>Typy sloupce
 Typ informací, které zahrnuje každý sloupec v sestavě, je určen hodnotou v řádku **Typ sloupce** v definici sloupce. Každá definice sloupce musí obsahovat alespoň jeden sloupec popisu (**DESC**) a jeden sloupec částky (**FD**, **WKS** nebo **CALC**). **Poznámka:** Kódy typu sloupce se nevztahují na všechny účetní systémy. Pokud jste vybrali typ, který není platný pro váš účetní systém, daný sloupec bude v sestavě prázdný.
@@ -507,7 +511,8 @@ Sestava s více měnami může zobrazit částky v přirozené (místní) měně
 -   **Zobrazení měny** – určuje typ měny (přirozená, funkční nebo vykazovací) ve které se transakce zobrazí. Tato funkce je někdy označována jako převod měny. Převod měny je možnost vykazovat částky hlavní knihy v měně, která nemusí být funkční měnou společnosti nebo měnou, ve které byla zadána transakce.
 -   **Filtr měny** – definuje filtr měny. V sestavě jsou zobrazeny pouze transakce, které byly zadány ve vybrané měně.
 
-**Poznámka:** Abyste mohli vytvářet sestavy, které používají více měn, je nutné zaškrtnout políčko **Zahrnout všechny měny vykazování** na kartě **Sestava**. Abyste určili funkční měnu společnosti, postupujte následovně.
+> [!NOTE]
+> Abyste mohli vytvářet sestavy, které používají více měn, je nutné zaškrtnout políčko **Zahrnout všechny měny vykazování** na kartě **Sestava**. Abyste určili funkční měnu společnosti, postupujte následovně.
 
 1.  V Návrháři sestav v nabídce **Společnost** klikněte na položku **Společnosti**.
 2.  V dialogovém okně **Společnosti** vyberte společnost a klikněte na tlačítko **Zobrazení**.
@@ -519,7 +524,8 @@ Sestava s více měnami může zobrazit částky v přirozené (místní) měně
 2.  Klikněte dvakrát na buňku **Zobrazení měny** v odpovídajícím sloupci **FD** a poté vyberte možnost zobrazení informací o měně: **Přirozená/původní měna**, **Funkční měna z informací o společnosti** nebo měna vykazování.
 3.  Klikněte dvakrát na buňku **Filtr měny** v odpovídajícím sloupci **FD** a poté vyberte odpovídající kód měny v seznamu. V sestavě jsou zobrazeny pouze transakce, které byly zadány v této měně.
 
-**Poznámka:** Možnosti zde popsané se mohou lišit v závislosti na systému ERP. Další informace naleznete v [dokumentaci systému Microsoft ERP](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
+> [!NOTE]
+> Možnosti zde popsané se mohou lišit v závislosti na systému ERP. Další informace naleznete v [dokumentaci systému Microsoft ERP](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
 
 ### <a name="example-for-currency-display-and-currency-filter-cells"></a>Příklad pro buňky Zobrazení měny a Filtr měny
 
@@ -572,7 +578,7 @@ Můžete odkazovat na konkrétní buňku sestavy zadáním písmene sloupce a k�
 
 #### <a name="multiply-or-divide-a-column-by-a-base-row"></a>Násobení nebo dělení sloupce základním řádkem
 
-Můžete vytvořit sloupec zobrazující všechny hodnoty ve určeném sloupci jako procento základního čísla. Proto je možné zobrazit vztahy mezi řádky, například procento řádku prodeje nebo procento řádku celkových výdajů. Chcete-li násobit nebo dělit každý řádek v konkrétním sloupci základním řádkem, zadejte sloupec k použití při výpočtu a potom zadejte hodnotu **\*BASEROW** nebo **/BASEROW**. Zadejte například vzorec **C\*BASEROW** nebo **C/BASEROW**. ** Poznámka:** Když použijete výpočet základního řádku v definici sloupce, ujistěte se, že každá definice řádku použitá s touto definicí sloupce obsahuje alespoň jeden základní řádek pro výpočty.
+Můžete vytvořit sloupec zobrazující všechny hodnoty ve určeném sloupci jako procento základního čísla. Proto je možné zobrazit vztahy mezi řádky, například procento řádku prodeje nebo procento řádku celkových výdajů. Chcete-li násobit nebo dělit každý řádek v konkrétním sloupci základním řádkem, zadejte sloupec k použití při výpočtu a potom zadejte hodnotu **\*BASEROW** nebo **/BASEROW**. Zadejte například vzorec **C\*BASEROW** nebo **C/BASEROW**. **Poznámka:** Když použijete výpočet základního řádku v definici sloupce, ujistěte se, že každá definice řádku použitá s touto definicí sloupce obsahuje alespoň jeden základní řádek pro výpočty.
 
 #### <a name="divide-the-amount-in-a-column-by-the-number-of-periods"></a>Vydělení částky ve sloupci počtem období
 
@@ -584,5 +590,7 @@ Můžete vytvořit sloupec zobrazující všechny hodnoty ve určeném sloupci j
 [Definice řádku ve finančním výkaznictví](row-definitions-financial-reporting.md)
 
 [Rozšířené možnosti formátování ve finančním výkaznictví](advanced-formatting-options-financial-reporting.md)
+
+
 
 

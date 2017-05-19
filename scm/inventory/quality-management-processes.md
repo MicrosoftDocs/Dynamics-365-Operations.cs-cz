@@ -3,7 +3,7 @@ title: "Procesy správy kvality"
 description: "V tomto článku jsou informace týkající se procesu řízení kvality u nevyhovujícího produktů. Je zde popsáno, jak můžete použít funkci řízení kvality, definovat a spravovat neshody a zpracovávat opravy."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 53 - 17
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 2deec6d262e87daf4704ce21ce64546f9c9d638b
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3523a89768bc3aee2aab250ee134128fcc3eeeef
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="quality-management-processes"></a>Procesy správy kvality
+
+[!include[banner](../includes/banner.md)]
+
 
 V tomto článku jsou informace týkající se procesu řízení kvality u nevyhovujícího produktů. Je zde popsáno, jak můžete použít funkci řízení kvality, definovat a spravovat neshody a zpracovávat opravy.
 
@@ -52,7 +56,9 @@ Testování výrobků se obvykle nazývá kontrola kvality a používá objedná
 -   Zaznamenejte výsledky testů v objednávce kvality, ověřujte výsledky testů s přijatelnou úrovní kvality a tiskněte certifikát analýzy s výsledky testů.
 
 ## <a name="nonconformance"></a>Neshoda
-Neshoda popisuje položku, která má potíže s kvalitou. ** **Proces neshody umožňuje vytvořit objednávku neshody, která popisuje množství nevyhovujícího materiálu, příčinu a typ problému a vysvětlující komentáře. Předdefinováním klasifikace typu problémů můžete usnadnit analýzu nevyhovujícího materiálu. Lze také vytisknout značku neshody a sestavu neshody s cílem řídit likvidaci nevyhovujícího materiálu. Značka a sestava může například značit podmínku **Nepoužitelné** nebo **Omezené použití**. V následující tabulce je uvedeno šest výchozích typů neshod a popis informací, které musí být zaznamenány pro jednotlivé typy.
+Neshoda popisuje položku, která má potíže s kvalitou. Proces neshody umožňuje vytvořit objednávku neshody, která popisuje množství nevyhovujícího materiálu, příčinu a typ problému a vysvětlující komentáře. Předdefinováním klasifikace typu problémů můžete usnadnit analýzu nevyhovujícího materiálu. Lze také vytisknout značku neshody a sestavu neshody s cílem řídit likvidaci nevyhovujícího materiálu. Značka a sestava může například značit podmínku **Nepoužitelné** nebo **Omezené použití**. 
+
+V následující tabulce je uvedeno šest výchozích typů neshod a popis informací, které musí být zaznamenány pro jednotlivé typy.
 
 | Typ neshody   | Informace o zdroji                                                                                                                                                                                                                          |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -72,10 +78,16 @@ Můžete zadat komentáře pro neshodu připojením dokumentu. Je vhodné defino
 Sestava neshody zobrazuje číslo neshody, zboží a typ problému. V závislosti na zásadách nastavení sestavy může sestava obsahovat také související poznámky k neshodě. Značka neshody zobrazuje podobné informace a také obsahuje karanténní zónu a typ (například **Omezené použití** nebo **Nepoužitelné**), který jste přiřadili neshodě za účelem likvidace vadného materiálu.
 
 ## <a name="approved-nonconformance"></a>Potvrzená neshoda
-Pro schválenou neshodu lze nepovinně definovat alespoň jednu související operaci. Související operace popisuje očekávanou práci, která má být provedena, a obsahuje seznam operací kvality, které jste definovali, a popisný text o důvodu dané práce. Po definici operace můžete nepovinně definovat vedlejší náklady, položky a časové rozpisy odpracovaných hodin, které jsou zapotřebí pro provedení práce. Vypočtené náklady jsou zobrazeny pro související informace a pro neshody se zobrazují celkové vypočtené náklady. Vypočtené náklady a podkladové podrobnosti (o položkách, odpracovaných hodinách a vedlejších nákladech) představují referenční informace, které se používají pouze ve funkci pro správu kvality. Objednávku kvality můžete volitelně vytvořit z neshody nejprve provedením dotazu na objednávky kvality a následným vytvořením nové objednávky kvality. Objednávka kvality může například identifikovat potřebu otestovat (nebo přetestovat) vadný materiál. Nově vytvořená objednávka kvality zobrazuje odkaz na původní neshodu. Nepovinně lze propojit jednu neshodu k jiné a vytvořit ze stávající neshody novou neshodu. Propojení může například označovat vzájemnou souvislost mezi problémy s kvalitou.
+Pro schválenou neshodu lze nepovinně definovat alespoň jednu související operaci. Související operace popisuje očekávanou práci, která má být provedena, a obsahuje seznam operací kvality, které jste definovali, a popisný text o důvodu dané práce. Po definici operace můžete nepovinně definovat vedlejší náklady, položky a časové rozpisy odpracovaných hodin, které jsou zapotřebí pro provedení práce. Vypočtené náklady jsou zobrazeny pro související informace a pro neshody se zobrazují celkové vypočtené náklady. Vypočtené náklady a podkladové podrobnosti (o položkách, odpracovaných hodinách a vedlejších nákladech) představují referenční informace, které se používají pouze ve funkci pro správu kvality. 
+
+Objednávku kvality můžete volitelně vytvořit z neshody nejprve provedením dotazu na objednávky kvality a následným vytvořením nové objednávky kvality. Objednávka kvality může například identifikovat potřebu otestovat (nebo přetestovat) vadný materiál. Nově vytvořená objednávka kvality zobrazuje odkaz na původní neshodu. 
+
+Nepovinně lze propojit jednu neshodu k jiné a vytvořit ze stávající neshody novou neshodu. Propojení může například označovat vzájemnou souvislost mezi problémy s kvalitou.
 
 ## <a name="correction-handling"></a>Zpracování opravy
-Stránka **Opravy** umožňuje vytvořit seznam neshod, které musí být opraveny. Každá položka opravy je přidružena typu diagnostiky, který způsobil problém, který má být zjištěn. Stránka **Opravy** také obsahuje informace o tom, kdo musí provést nápravná opatření a kdy. Můžete popsat podrobnosti o problému a nápravná opatření, která požaduje připojení dokumentu k opravě. Poté, co byla neshoda vyřešena nebo opravena, "uzavřete" položku opravy výběrem možnosti **Dokončeno**. Lze rovněž určit, že řešení bylo krátkodobé. Je vhodné definovat jedinečný typ dokumentu pro opravy pomocí stránky **Typ dokumentu**. Poté můžete pomocí stránky **Nastavení sestavy** definovat, zda mají být komentáře pro tento typ dokumentu vytištěny v sestavě opravy. Vytištěná sestava opravy zobrazuje informace o neshodě a související poznámky k neshodě. Sestava také obsahuje informace o opravě, například typ diagnostiky a související poznámky k opravě.
+Stránka **Opravy** umožňuje vytvořit seznam neshod, které musí být opraveny. Každá položka opravy je přidružena typu diagnostiky, který způsobil problém, který má být zjištěn. Stránka **Opravy** také obsahuje informace o tom, kdo musí provést nápravná opatření a kdy. Můžete popsat podrobnosti o problému a nápravná opatření, která požaduje připojení dokumentu k opravě. Poté, co byla neshoda vyřešena nebo opravena, "uzavřete" položku opravy výběrem možnosti **Dokončeno**. Lze rovněž určit, že řešení bylo krátkodobé. 
+
+Je vhodné definovat jedinečný typ dokumentu pro opravy pomocí stránky **Typ dokumentu**. Poté můžete pomocí stránky **Nastavení sestavy** definovat, zda mají být komentáře pro tento typ dokumentu vytištěny v sestavě opravy. Vytištěná sestava opravy zobrazuje informace o neshodě a související poznámky k neshodě. Sestava také obsahuje informace o opravě, například typ diagnostiky a související poznámky k opravě.
 
 <a name="see-also"></a>Viz také
 --------
@@ -91,5 +103,7 @@ Stránka **Opravy** umožňuje vytvořit seznam neshod, které musí být oprave
 [Nastavení objednávky kvality (Průvodce záznamem úloh)](http://ax.help.dynamics.com/en/wiki/set-up-quality-orders/)
 
 [Kontrola kvality zboží (průvodce záznamem úloh)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+
+
 
 

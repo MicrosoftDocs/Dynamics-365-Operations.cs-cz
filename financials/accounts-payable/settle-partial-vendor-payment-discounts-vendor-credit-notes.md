@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 849cffa64eaf777f9f4c9243dab41b00fa59ad79
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 33bba0e037a8ccc09b3d47268ca2b350d1d25b5f
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -60,7 +61,7 @@ April klikne na volbu **Zaúčtovat**. Poté zkontroluje dokončené vyrovnání
 | Vybrané a zvýrazněné | Normální            | Fakt-10070 | 3050    | 29. 6. 2015 | 7/29/2015 | 10070    | -1 000,00                      | USD      | -200,00          |
 | Vybrané                 | Normální            | CR-10070  | 3050    | 7/2/2015  | 7/29/2015 | CR-10070 | 200,00                         | USD      | 198,00           |
 
-April může zkontrolovat transakce dodavatelů na stránce **Transakce dodavatele** tak, že vybere dodavatele na stránce **Všichni dodavatelé **, a poté v podokně akcí klikne na tlačítko **Transakce**. Na této stránce April vidí, že faktura má zůstatek -800,00. Vidí také dobropis na 198,00 a slevu 2,00.
+April může zkontrolovat transakce dodavatelů na stránce **Transakce dodavatele** tak, že vybere dodavatele na stránce **Všichni dodavatelé**, a poté v podokně akcí klikne na tlačítko **Transakce**. Na této stránce April vidí, že faktura má zůstatek -800,00. Vidí také dobropis na 198,00 a slevu 2,00.
 
 | Doklad    | Typ transakce | Datum      | Faktura | Částka Má dáti v transakční měně | Částka Dal v transakční měně | Zůstatek | Měna |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|

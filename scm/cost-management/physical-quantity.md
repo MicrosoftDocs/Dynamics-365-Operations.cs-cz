@@ -3,7 +3,7 @@ title: "Hodnoty objektu zásob"
 description: "Tento článek obsahuje informace o výpočtu hodnot objektu zásob."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09 - 09 - 05
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,19 +19,31 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 7a0a2af2094e3e5be757d3dd82255769677b96ea
-ms.openlocfilehash: 8898d5d91ffb4f73ea68f1251e1a99440e81bcd4
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d177903e3c79226e90a1f2eb3d55e3c670446a44
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="inventory-object-values"></a>Hodnoty objektu zásob
 
+[!include[banner](../includes/banner.md)]
+
+
 Tento článek obsahuje informace o výpočtu hodnot objektu zásob. 
 
-Nová funkce nazvaná ** fyzické množství ** umožňuje zobrazit hodnoty určitého objektu zásob. Nákladový objekt představuje úroveň entity, kde bude probíhat účtování zásob. Další informace o nákladových objektech naleznete v tématu [Nákladové objekty](cost-object.md). Pokud chcete zobrazit hodnoty konkrétního objektu zásob, klikněte na tlačítko **Fyzické množství** na stránce **Objekt nákladů**. Toto je postup, jak se počítá hodnota objektu zásob: Objekt zásob.Hodnota = Nákladový objekt.Průměrné náklady na jednotku x Objekt zásob.Množství Následující příklad ukazuje způsob výpočtu hodnoty objektu zásob a nákladového objektu. U položky A jsou registrovány dvě události příjemky produktu:
+Nová funkce **„fyzické množství“**umožňuje zobrazit hodnoty určitého objektu zásob. 
+
+Nákladový objekt představuje úroveň entity, kde bude probíhat účtování zásob. Další informace o nákladových objektech naleznete v tématu [Nákladové objekty](cost-object.md). 
+
+Pokud chcete zobrazit hodnoty konkrétního objektu zásob, klikněte na tlačítko **Fyzické množství** na stránce **Objekt nákladů**. Zde je způsob výpočtu hodnoty objektu zásob: 
+
+Objekt zásob.Hodnota = Objektu nákladů.Průměrné náklady na jednotku x Objekt zásob.Množství 
+
+Následující příklad ukazuje způsob výpočtu hodnot objektu zásob a objektu nákladů. U položky A jsou registrovány dvě události příjemky produktu:
 
 -   Příjemka produktu 1: Množství = 100 kusů., Množství = 1 000,00 Kč, Pracoviště = 1, Sklad = 11, Č. dávky = B1
 -   Příjemka produktu 2: Množství = 50 kusů., Množství = 800,00 Kč, Pracoviště = 1, Sklad = 11, Č. dávky = B2
@@ -135,5 +147,7 @@ Následující tabulka zobrazuje výsledek výpočtu objektu zásob. Výsledky l
 [Položky nákladů](cost-entries.md)
 
 [Co je nového a co se změnilo v aplikaci Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+
+
 
 

@@ -3,7 +3,7 @@ title: "Přehled modelů konfigurace produktu"
 description: "Tento článek definuje termíny a pojmy, které jsou relevantní pro modely konfigurace produktu. Modely konfigurace produktu umožňují vytvořit obecnou strukturu produktu, kterou lze použít ke konfiguraci mnoha variant produktu pro jeden produkt."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-09-11 14 - 38 - 47
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: yuyus
 ms.dyn365.intro: Feb-16
 ms.dyn365.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 15af90d007d77a490db7cb540ef96b4104dbba7e
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 35c3d59abe8c2cb4d2db9fa1cf581f022dbc8c39
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="product-configuration-models-overview"></a>Přehled modelů konfigurace produktu
+
+[!include[banner](../includes/banner.md)]
+
 
 Tento článek definuje termíny a pojmy, které jsou relevantní pro modely konfigurace produktu. Modely konfigurace produktu umožňují vytvořit obecnou strukturu produktu, kterou lze použít ke konfiguraci mnoha variant produktu pro jeden produkt.
 
@@ -75,7 +79,7 @@ Pokud je typ atributu <strong>Logická hodnota</strong>, <strong>Celé číslo</
 <td>Omezení</td>
 <td>Omezení popisují limity konfigurace modelu produktu. Omezení slouží k zajištění toho, aby byly při konfiguraci produktu vybrány pouze platné hodnoty. Omezení může být omezení výrazů nebo omezení tabulek:
 <ul>
-<li>Omezení výrazů mohou být použita pouze pro komponentu, se kterou jsou svázány. Omezení výrazů pro komponentu se může odkazovat na atributy dílčích komponent dané komponenty. Řešitel konfigurace produktu slouží k vyřešení omezení. Při psaní omezení je třeba dodržovat syntaxi tohoto řešitele. Další informace naleznete na wiki stránce věnované omezením výrazu a omezením tabulky.</li>
+<li>Omezení výrazů mohou být použita pouze pro komponentu, se kterou jsou svázány. Omezení výrazů pro komponentu se může odkazovat na atributy dílčích komponent dané komponenty. Řešitel konfigurace produktu slouží k vyřešení omezení. Při psaní omezení je třeba dodržovat syntaxi tohoto řešitele. Další informace naleznete v odkazu na téma věnované omezením výrazu a omezením tabulky.</li>
 <li>Omezení tabulky musí být definována předtím, než je možné použít pro komponentu v modelu konfigurace produktu. Omezení tabulek mohou být definovaná uživatelem nebo systémem. Uživatelem definované omezení tabulky je typ matice, kterou lze použít k popisu sady kombinací hodnot atributů, které jsou definovány pomocí typů atributů. Například v případě výroby reproduktorů může matice pro uživatelem definované omezení tabulky obsahovat sloupce pro povrch a mřížku reproduktorů.</li>
 </ul>
 <strong>Příklad:</strong> Reproduktory jsou k dispozici se čtyřmi různými povrchy: černý, dub, palisandr nebo bílý. Reproduktory mohou mít jednu ze tří předních mřížek: černá, kov nebo bílá. Černé provedení je k dispozici pro všechny mřížky, ale ostatní materiály povrchové úpravy jsou omezeny na konkrétní mřížky. V následující tabulce je ukázka informace, které se zobrazí na kartě <strong>Povolené kombinace</strong> na stránce <strong>Upravit omezení tabulky</strong>.
@@ -147,6 +151,8 @@ Informaci o tom, zda lze uvolněný produkt použít jako komponentu nebo díl�
 </tr>
 </tbody>
 </table>
+
+
 
 
 

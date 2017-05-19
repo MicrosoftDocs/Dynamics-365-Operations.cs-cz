@@ -1,16 +1,16 @@
 ---
 title: "Uživatelské předvolby v návrháři finančních sestav"
 description: "Tento článek vysvětluje, jak nastavit uživatelské předvolby pro přizpůsobení interakce uživatelů v návrháři finančních sestav, a pro řízení výchozího prostředí po přihlášení. Můžete také určit, jak se zobrazí jednotlivé sestavy, knihovna sestav a výchozí umístění souborů."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-02-04 19 - 44 - 33
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 31161
 ms.assetid: 59da4854-0f8c-4021-acd1-b303c06f4a34
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 371c095e925ba833216263eed6595e749acc6ab7
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 1e7f0665feb24d56fc931052a46f88e7b872aaf1
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="user-preferences-in-financial-report-designer"></a>Uživatelské předvolby v návrháři finančních sestav
+
+[!include[banner](../includes/banner.md)]
+
 
 Tento článek vysvětluje, jak nastavit uživatelské předvolby pro přizpůsobení interakce uživatelů v návrháři finančních sestav, a pro řízení výchozího prostředí po přihlášení. Můžete také určit, jak se zobrazí jednotlivé sestavy, knihovna sestav a výchozí umístění souborů. 
 
@@ -39,20 +43,16 @@ Tento článek vysvětluje, jak nastavit uživatelské předvolby pro přizpůso
 
 ## <a name="options-dialog-box-options"></a>Možnosti dialogového okna Možnosti
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Možnost pro uživatele</th>
-<th>Popis</th>
+<th>popis</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Při spuštění</td>
-<td>Vyberte, co chcete zobrazit po spuštění aplikace Management Reporter. Vyberte některou z následujících možností:
+<td>Vyberte, co chcete zobrazit po spuštění aplikace Návrhář sestav. Vyberte některou z následujících možností:
 <ul>
 <li><strong>Načíst poslední načtenou sestavu</strong> – otevře naposledy prohlíženou sestavu.</li>
 <li><strong>Zobrazit otevřené okno</strong> – otevře okno <strong>Otevřeno</strong>. Okno <strong>Otevřeno</strong> představuje okno pro rychlé vyhledávání stavebních bloků.</li>
@@ -60,7 +60,7 @@ Tento článek vysvětluje, jak nastavit uživatelské předvolby pro přizpůso
 </ul></td>
 </tr>
 <tr class="even">
-<td>Zobrazit potvrzení před ukončením aplikace Management Reporter</td>
+<td>Zobrazit potvrzení před ukončením aplikace Návrhář sestav</td>
 <td>Vyberte, zda chcete zobrazit upozornění při ukončení aplikace. Tato zpráva pomáhá zajistit, že program není ukončen neúmyslně.</td>
 </tr>
 <tr class="odd">
@@ -79,6 +79,8 @@ Tento článek vysvětluje, jak nastavit uživatelské předvolby pro přizpůso
 <a name="see-also"></a>Viz také
 --------
 
-[Finanční výkaznictví pro aplikaci Microsoft Dynamics ERP](financial-reporting-intro.md)
+[Finanční výkaznictví](financial-reporting-intro.md)
+
+
 
 

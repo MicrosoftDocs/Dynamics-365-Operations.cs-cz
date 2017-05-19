@@ -3,7 +3,7 @@ title: "Konfigurace schvalovacího procesu ve workflowu"
 description: "Pomocí následujícího postupu nakonfigurujte vlastnosti schvalovacího procesu."
 author: sericks007
 manager: AnnBe
-ms.date: 2016-09-30 15 - 54 - 17
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 579e393ef64bc5ad72d129ac08ac215c524d5c55
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 99decd86602e7537af6393c6d28c262f20ca1f00
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurace schvalovacího procesu ve workflowu
+
+[!include[banner](../includes/banner.md)]
+
 
 Pomocí následujícího postupu nakonfigurujte vlastnosti schvalovacího procesu.
 
@@ -132,7 +136,7 @@ Můžete určit konečného schvalovatele scénářů, kde je schvalujícím oso
 
 ## <a name="set-a-time-limit"></a>Nastavení časového limitu
 Tento postup použijte, pokud je proces schvalování nutné dokončit v určitém čase.
-| **Poznámka **                                                                                                                                                |
+| **Poznámka**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Možnosti, které v těchto krocích vyberete, přepíší možnosti vybrané v oblasti **Přiřazení** a **Eskalace** jednotlivých schvalovacích kroků. |
 
@@ -155,13 +159,15 @@ Po přidělení dokumentu uživateli ke schválení musí uživatel daný dokume
 4.  Chcete-li uživatelům umožnit vyžádání změn v dokumentu, zaškrtněte políčko **Požadavek na změnu**.
 5.  Chcete-li uživateli umožnit, aby úlohu postoupil jinému uživateli ke schválení, zaškrtněte políčko **Delegovat**.
 
-**Poznámka**: Políčko **Povolit akce z pracovního seznamu v podnikovém portálu ** se již nepoužívá.
+**Poznámka**: Políčko **Povolit akce z pracovního seznamu v podnikovém portálu** se již nepoužívá.
 
 ## <a name="configure-the-approval-steps"></a> Konfigurace kroků schválení
 Schvalovací proces se skládá z kroků schválení. Pomocí následujícího postupu přidáte do schvalovacího procesu kroky a nakonfigurujete je.
 1.  V editoru workflowu poklepejte na schvalovací proces. V editoru workflowu se zobrazí kroky schvalovacího procesu.
 2.  Chcete-li přidat schvalovací krok, přetáhněte krok z oblasti **Prvky workflowu** na plátno.
-3.  Chcete-li nakonfigurovat schvalovací krok, získáte informace v části [Konfigurace schvalovacího kroku](http://axhelp.dynamics.com/en/wiki/configure-an-approval-step/).
+3.  Chcete-li nakonfigurovat schvalovací krok, získáte informace v části [Konfigurace schvalovacího kroku](configure-approval-step-workflow.md).
+
+
 
 
 

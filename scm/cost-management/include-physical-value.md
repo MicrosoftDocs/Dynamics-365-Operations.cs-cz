@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 961f768ac4b0044e138aeaec41c7f915b92c33df
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d3efa701e13a6b1593576082499decc439cf0d29
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -46,7 +47,7 @@ Toto políčko má účinky, které se liší v závislosti na skladovém modelu
 -   Pokud jste pro tyto skladové modely neoznačili políčko **Zahrnovat fyzickou hodnotu**, budou při uzávěrce skladu provedena vyrovnání pouze pro finančně aktualizované transakce.
 -   Pokud použijete skladové modely s použitím váženého průměru nebo data váženého průměru, budou při uzávěrce skladu vyrovnány pouze finančně aktualizované transakce, bez ohledu na to, zda je zaškrtnuto políčko **Zahrnovat fyzickou hodnotu**, či nikoli.
 
-**Příklad 1:** Označíte pole** Zahrnovat fyzickou hodnotu** a obdržíte následující nákupní objednávky:
+**Příklad 1:** Označíte pole**Zahrnovat fyzickou hodnotu** a obdržíte následující nákupní objednávky:
 
 -   Nákupní objednávka na 2 kusy v ceně 10,00 USD byla aktualizována podle dodacího listu
 -   Nákupní objednávka na 3 kusy v ceně 12,00 USD byla aktualizována podle faktury

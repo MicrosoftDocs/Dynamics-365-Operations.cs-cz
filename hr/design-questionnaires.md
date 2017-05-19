@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: 25703ea2bde70c5c2d3de9f2dc9d3d1d889e4ac9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: aae20fa2b899ab51bad5aeb54e21a7c9cbadb9be
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="design-a-questionnaire"></a>Návrh dotazníku
+
+[!include[banner](includes/banner.md)]
+
 
 Toto téma popisuje postup vytváření dotazníku. Prvním krokem je návrh dotazníku. Při navrhování dotazníku můžete pouze zapsat otázky a odpovědi, ale také vytvořit strukturu, která umožňuje záznam a uspořádání odpovědí. 
 
@@ -109,7 +113,7 @@ Skupiny odpovědí a odpovědi jsou součásti hlavní části informací, ze kt
 
 Skupinu odpovědí lze použít pro více otázek ve jednom dotazníku a pro více dotazníků. 
 
-**Poznámka:** Pokud změníte textu odpovědi ve skupinách odpovědí, které již byly použity u vyplněných dotazníků, data může být obtížné vyhodnotit a výsledky dotazníku mohou být neplatné. Pokud musíte změnit skupinu odpovědí, zvažte vytvoření nové skupiny odpovědí namísto změny již existující skupiny. Skupiny odpovědí, které byly přiřazeny k určité otázce či odpovědi, nebo které byly zodpovězeny, není možné odstranit.
+>**Poznámka:** Pokud změníte text odpovědi ve skupinách odpovědí, které již byly použity u vyplněných dotazníků, data může být obtížné vyhodnotit a výsledky dotazníku mohou být neplatné. Pokud musíte změnit skupinu odpovědí, zvažte vytvoření nové skupiny odpovědí namísto změny již existující skupiny. Skupiny odpovědí, které byly přiřazeny k určité otázce či odpovědi, nebo které byly zodpovězeny, není možné odstranit.
 
 ### <a name="questions"></a>Otázky
 
@@ -117,12 +121,13 @@ Dotazník musí obsahovat otázky. Otázky mohou být otevřené nebo uzavřené
 
 -   Odpovědi na otevřené otázky nejsou řízeny a respondenti mohou své odpovědi zadat.
 -   Uzavřené otázky vyžadují seznam předdefinovaných možností odpovědí a otázky mohou být strukturovány tak, aby mohl respondent vybrat více odpovědí. Otázky by měly být formulovány tak, aby bylo možné od respondenta získat konkrétní informace a musí být propojeny se skupinou odpovědí, která obsahuje možnosti odpovědí pro každou uzavřenou otázku. 
-     -  **Poznámka:** Před nastavením uzavřených otázek je nutné vytvořit skupiny odpovědí a odpovědi.
+    >**Poznámka:** Před nastavením uzavřených otázek je nutné vytvořit skupiny odpovědí a odpovědi.
 
 Otázky lze uspořádat do hierarchie podmíněných otázek tak, aby druhotné otázky závisely na odpovědi, kterou respondent vybere pro předchozí otázku. Můžete nejprve napsat otázky a poté je uspořádat do hierarchie.
 
 ## <a name="setting-up-questionnaires"></a>Nastavení dotazníků
-**Poznámka:** Před nastavením dotazníku je nutné nastavit odpovědi, dotazy a požadavky. 
+>**Poznámka**
+>  : Před nastavením dotazníku je nutné nastavit odpovědi, otázky a požadavky. 
 
 U jednotlivých dotazníků lze určit následující údaje:
 
@@ -156,9 +161,9 @@ Na stránce **Dotazníky** můžete provést následující úkoly:
 
 -   Upravovat informace v dotazníku, například skupiny výsledků a otázky.
 -   Odstraňovat a přidávat otázky.
--   Provádět změny ve skupinách výsledků a v pořadovém čísle. 
+-   Provádět změny ve skupinách výsledků a v pořadovém čísle. 
 
-**Upozornění:** Při provádění změn v dotaznících, které již byly zodpovězeny, postupujte opatrně. Změny mohou snížit přesnost statistiky, což může ovlivnit kvalitu podkladů pro vyhodnocení. Místo toho, abyste měnili otázku, která již byla zodpovězena, zvažte vytvoření nové otázky.
+>**Upozornění:** Při provádění změn v dotaznících, které již byly zodpovězeny, postupujte opatrně. Změny mohou snížit přesnost statistiky, což může ovlivnit kvalitu podkladů pro vyhodnocení. Místo toho, abyste měnili otázku, která již byla zodpovězena, zvažte vytvoření nové otázky.
 
 V dotazníku nelze odstranit následujících typy otázek:
 
@@ -176,7 +181,8 @@ Skupiny výsledků se používají pro výpočet bodů a kategorizaci výsledků
 -   Generovat statistiku pro každou skupinu výsledků, což vám může pomoci analyzovat výsledky.
 -   Vytiskněte sestavu, který zobrazuje výsledky pro každou skupinu výsledků a také volitelné body a texty, které jsou založeny na bodech získaných v každé skupině výsledků.
 
-**Poznámka:** Před nastavením skupin výsledků je nutné dokončit následující úkoly:
+> **Poznámka**
+>   Před nastavením skupin výsledků je nutné dokončit následující úkoly:
 
 -   Nastavte uzavřené otázky. Pro uzavřenou otázku musí být tato zadání na stránce **Otázky** nastavena na **Zaškrtávací políčko**, **Alternativní tlačítko** nebo **Pole se seznamem**.
 -   Definujte body pro odpovědi ve skupinách odpovědí, které jsou přiřazeny jednotlivým otázkám.
@@ -186,7 +192,8 @@ Chcete-li připojení otázky k dotazníku pomocí skupin výsledků, nejprve na
 
 Nastavte více skupin výsledků a vyhodnoťte body, které respondent získá za jednotlivé kategorie. Po vyplnění dotazníku můžete zobrazit body, které byly získány pro jednotlivé skupiny výsledků. 
 
-**Tip:** Chcete-li vyhodnocovat dotazník pomocí bodů, ale nikoli samostatných kategorií, můžete přidat všechny otázky do jedné skupiny výsledků. 
+> **Tip**
+>  Chcete-li vyhodnocovat dotazník pomocí bodů, ale nikoli samostatných kategorií, můžete přidat všechny otázky do jedné skupiny výsledků. 
 
 Pro každou skupinu výsledků můžete také nastavit jednu nebo více zpráv založených na bodech, které respondent získá po vyplnění dotazníku. Zobrazený text se může lišit v závislosti na výsledku, jehož respondenti dosáhnou ve skupině výsledků. Chcete-li použít zprávy založené na bodech, musíte definovat intervaly bodů a popis každého intervalu. Když respondent získá hodnocení určitého intervalu, bude text zahrnut do sestavy výsledků. 
 
@@ -212,13 +219,15 @@ Následující tabulka uvádí zprávy podle bodů, které definujete pro skupin
 
 Můžete nastavit bodové intervaly a texty pro každou skupinu výsledků v dotazníku. Texty, které odpovídají hodnocení každého respondenta, jsou zobrazeny pro každou skupinu výsledků. 
 
-**Poznámka:** Intervaly a texty lze měnit. Pokud však již byl dotazník vyplněn, mohou změny způsobit nesrovnalosti mezi předchozími a novými sestavami výsledků.
+> **Poznámka**
+>  Intervaly a texty lze měnit. Pokud však již byl dotazník vyplněn, mohou změny způsobit nesrovnalosti mezi předchozími a novými sestavami výsledků.
 
 ### <a name="conditional-question-hierarchies"></a>Hierarchie podmíněných otázek
 
 Hierarchie podmíněných otázek jsou volitelné při nastavování dotazníku. 
 
-**Poznámka:** Před nastavením hierarchie podmíněných otázek je třeba připojit otázky, které mají přiřazeny skupiny odpovědí k dotazníku. 
+> **Poznámka**
+>  Před nastavením hierarchie podmíněných otázek je třeba připojit otázky, které mají přiřazeny skupiny odpovědí k dotazníku. 
 
 Chcete-li použít podmíněné otázky a vytvářet hierarchii otázek v dotazníku, můžete vytvořit posloupnost, ve které jsou otázky prezentovány, tak, aby závisela na odpovědi vybrané respondentem pro jednotlivé otázky. Pomocí úpravy posloupnosti otázek respondenta můžete dotazník upravit, kdy jej respondent vyplní.
 
@@ -236,5 +245,7 @@ Případně můžete nastavit dotazník tak, že pokud respondent vybere odpově
 [Distribuování a vyplňování dotazníků](distribute-questionnaires.md)
 
 [Zobrazení a zhodnocení výsledků dotazníků](evaluate-questionnaire-results.md)
+
+
 
 

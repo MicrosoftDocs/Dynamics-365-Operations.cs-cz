@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: a812c93a13fd36f44e659c9976099af62793098f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ce03d3b55ecdc05f70a36762f7de49b3018b6451
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Příklady číselné řady
 Následující příklady ukazují, jak segmenty slouží k vytváření formátů číselné řady. Konkrétně příklady znázorňují dopad používání segmentů rozsahu.
 ### <a name="expense-report-numbers"></a>Čísla vyúčtování výdajů
 
-V následujícím příkladu čísla sestavy výdajů jsou přiřazeny k právnické osobě s názvem **CS**. **Oblast: **Cestovné a výdaje **Odkaz: **Číslo vyúčtování výdajů **Rozsah: **Právnická osoba **Právnická osoba: **CS
+V následujícím příkladu čísla sestavy výdajů jsou přiřazeny k právnické osobě s názvem **CS**. **Oblast:**Cestovné a výdaje **Odkaz:**Číslo vyúčtování výdajů **Rozsah:**Právnická osoba **Právnická osoba:**CS
 | Segmenty  | Typ segmentu | Hodnota     |
 |-----------|--------------|-----------|
 | Segment 1 | Právnická osoba | CS        |
@@ -49,7 +50,7 @@ V následujícím příkladu čísla sestavy výdajů jsou přiřazeny k právni
 
 ### <a name="sales-order-numbers"></a>Čísla prodejních objednávek
 
-V následujícím příkladu čísla prodejních objednávek jsou přiřazena k ID společnosti **CEU**. **Oblast: **Prodej**Odkaz: **Prodejní objednávka **Rozsah: **Společnost **Společnost: **CEU
+V následujícím příkladu čísla prodejních objednávek jsou přiřazena k ID společnosti **CEU**. **Oblast:**Prodej**Odkaz:**Prodejní objednávka **Rozsah:**Společnost **Společnost:**CEU
 | Segmenty  | Typ segmentu | Hodnota    |
 |-----------|--------------|----------|
 | Segment 1 | Konstanta     | PO-      |
@@ -59,7 +60,7 @@ V následujícím příkladu čísla prodejních objednávek jsou přiřazena k 
 
 ### <a name="purchase-requisition-numbers"></a>Čísla nákupních žádanek
 
-V následujícím příkladu jsou čísla nákupních žádanek používána pro celou organizaci. **Oblast: **Nákup **Odkaz: **Nákupní žádanka **Rozsah: **Sdílený
+V následujícím příkladu jsou čísla nákupních žádanek používána pro celou organizaci. **Oblast:**Nákup **Odkaz:**Nákupní žádanka **Rozsah:**Sdílený
 | Segmenty  | Typ segmentu | Hodnota    |
 |-----------|--------------|----------|
 | Segment 1 | Konstanta     | Žád      |

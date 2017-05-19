@@ -3,14 +3,14 @@ title: "Vytvoření a správa atributů"
 description: "Tento článek popisuje atributy v aplikaci Microsoft Dynamics 365 for Operations. Atributy umožňují popis produktu a jeho charakteristik prostřednictvím uživatelem definovaných polí."
 author: josaw1
 manager: AnnBe
-ms.date: 2015-12-04 02 - 16 - 20
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16461
 ms.assetid: 2b85491c-f830-4e79-a2cb-681b7ced6988
 ms.search.region: global
@@ -18,15 +18,19 @@ ms.search.industry: Retail
 ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 26c628e10aaa5f47bc87d7510ca8f41ab3630204
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: a5c45bb0b9ed10c989a3222a751df3f454b14a0b
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="create-and-manage-attributes"></a>Vytvoření a správa atributů
+
+[!include[banner](includes/banner.md)]
+
 
 Tento článek popisuje atributy v aplikaci Microsoft Dynamics 365 for Operations. Atributy umožňují popis produktu a jeho charakteristik prostřednictvím uživatelem definovaných polí.
 
@@ -34,110 +38,28 @@ Atributy umožňují popis produktu a jeho charakteristik prostřednictvím uži
 
 #### <a name="examples"></a>Příklad
 
-Kategorie
+| Kategorie   | Atribut                | Přípustné hodnoty          | Výchozí hodnota |
+|------------|--------------------------|-----------------------------|---------------|
+| Televize a video | Značka                    | Libovolná platná hodnota Značka       | Neomezeno          |
+| TV         | Velikost obrazovky              | 20″–80″                     | Neomezeno          |
+| TV         | Svislé rozlišení      | 480i, 720p, 1080i nebo 1080p | 1080p         |
+| TV         | Obnovovací frekvence obrazovky      | 60 Hz, 120 Hz nebo 240 Hz       | 60 Hz          |
+| TV         | Vstupy HDMI              | 0–10                        | 3             |
+| TV         | Vstupy DVI               | 0–10                        | 1             |
+| TV         | Kompozitní vstupy         | 0–10                        | 2             |
+| TV         | Komponentní vstupy         | 0–10                        | 1             |
+| LCD        | Připraveno na 3D                 | Ano nebo Ne                   | Ano           |
+| LCD        | 3D k dispozici               | Ano nebo Ne                   | Žádný            |
+| Plazma     | Provozní teplota od      | 0–43 °C              | 32            |
+| Plazma     | Provozní teplota do        | 0–43 °C              | 100           |
+| Projekční | Záruka | 6, 12 nebo 18 měsíců         | 12            |
+| Projekční | # Počet trubic:     | 1–5                         | 3             |
 
-Atribut
-
-Přípustné hodnoty
-
-Výchozí hodnota
-
-Televize a video
-
-Značka
-
-Libovolná platná hodnota **Značka**
-
-Žádné
-
-TV
-
-Velikost obrazovky
-
-**20"**–**80"**
-
-Žádné
-
-Svislé rozlišení
-
-**480i**, **720p**, **1080i** nebo **1080p**
-
-**1080p**
-
-Obnovovací frekvence obrazovky
-
-**60 Hz**, **120 Hz** nebo **240 Hz**
-
-**60 Hz**
-
-Vstupy HDMI
-
-**0**–**10**
-
-**3**
-
-Vstupy DVI
-
-**0**–**10**
-
-**1**
-
-Kompozitní vstupy
-
-**0**–**10**
-
-**2**
-
-Komponentní vstupy
-
-**0**–**10**
-
-**1**
-
-LCD
-
-Připraveno na 3D
-
-**Ano** nebo **Ne**
-
-**Ano**
-
-3D k dispozici
-
-**Ano** nebo **Ne**
-
-**Ne**
-
-Plazma
-
-Provozní teplota od
-
-**0**–**43** °C
-
-**32**
-
-Provozní teplota do
-
-**0**–**43** °C
-
-**100**
-
-Projekční
-
-Záruka
-
-**6**, **12** nebo **18** měsíců
-
-**12**
-
-Počet trubic: \#
-
-**1**–**5**
-
-**3**
 
 ## <a name="attribute-type"></a>Typ atributu
-  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) Atributy jsou založeny na typech atributů. Typy atributů určují typ dat, který lze zadat pro určitý atribut. Aplikace Microsoft Dynamics 365 for Operations v současné době podporují následující typy atributů:
+  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
+  
+Atributy jsou založeny na typech atributů. Typy atributů určují typ dat, který lze zadat pro určitý atribut. Aplikace Microsoft Dynamics 365 for Operations v současné době podporují následující typy atributů:
 
 -   **Měna** – tento typ atributu podporuje měnové hodnoty. Mohou být vázané (může tedy podporovat rozsah hodnot), nebo mohou být otevřené.
 -   **Datum a čas** – tento typ atributu podporuje hodnoty data a času. Mohou být vázané (může tedy podporovat rozsah hodnot), nebo mohou být otevřené.
@@ -174,5 +96,7 @@ Počet trubic: \#
 ### <a name="at-the-retail-channel-level"></a>Na úrovni maloobchodní sítě
 
   [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) Výchozí hodnoty atributů lze přepsat pro jednotlivé produkty v určitých katalozích, které jsou určeny pro konkrétní maloobchodní sítě.
+
+
 
 

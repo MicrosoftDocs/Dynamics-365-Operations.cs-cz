@@ -1,9 +1,9 @@
 ---
-title: "Nastavení elektronického vykazování k poskytnutí dat spotřeby z Dynamics 365 for Operations do Power BI"
+title: "Konfigurace elektronického výkaznictví pro vyžádání dat do Power BI"
 description: "Toto téma vysvětluje, jak lze použít konfiguraci elektronického vykazování (ER) k uspořádání přenosu dat v aplikaci Dynamics 365 for Operations do služeb Power BI. Toto téma používá jako příklad transakcí v systému Intrastat obchodní údaje, které je nutné převést. Vizualizace map Power BI využívá těchto dat transakcí systému Intrastat, aby představila náhled analýzy aktivit importu a exportu společnosti."
 author: kfend
 manager: AnnBe
-ms.date: 2016-10-31 13 - 22 - 29
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: ed0192c44b6d7e88120c64e539ebb0ac3b379831
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4bbc77eb1edfe0c109434ce4d26228ed031f48bc
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="set-up-electronic-reporting-to-provide-power-bi-with-data-from-dynamics-365-for-operations"></a>Nastavení elektronického vykazování k poskytnutí dat spotřeby z Dynamics 365 for Operations do Power BI
+# <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Konfigurace elektronického výkaznictví pro vyžádání dat do Power BI
+
+[!include[banner](../includes/banner.md)]
+
 
 Toto téma vysvětluje, jak lze použít konfiguraci elektronického vykazování (ER) k uspořádání přenosu dat v aplikaci Dynamics 365 for Operations do služeb Power BI. Toto téma používá jako příklad transakcí v systému Intrastat obchodní údaje, které je nutné převést. Vizualizace map Power BI využívá těchto dat transakcí systému Intrastat, aby představila náhled analýzy aktivit importu a exportu společnosti.
 
@@ -61,7 +65,7 @@ Pro dokončení příkladu v tomto tématu, musíte mít následující přístu
 3.  V pracovním prostoru **Elektronické sestavy** zaktivujte požadovaného poskytovatele klepnutím na tlačítko **Nastavit jako aktivní**. Pro další informace si přehrajte tutorial **Vyberte poskytovatele služeb ER**.
 
 ## <a name="use-an-er-data-model-as-the-source-of-data"></a>Datový model ER můžete použít jako zdroj dat
-Musíte mít datový model ER jako zdroj obchodních dat, která se použijí v sestavách Power BI. Tento datový model se nahrává z úložiště konfigurací ER. Další informace naleznete v tématu [Stáhnout konfigurace elektronického vykazování ze služby Lifecycle Services](download-electronic-reporting-configuration-lcs.md) nebo si přehrajte tutorial **ER Import konfigurace ze služby Lifecycle Services**. Vyberte **Intrastat **jako datový model, který se bude nahrávat z vybraného úložiště konfigurací ER. (V tomto příkladu je použita verze 1 modelu.) Potom můžete přistupovat ke konfiguraci modelu **Intrastat** na stránce **Konfigurace**. [![Stránka konfigurace](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
+Musíte mít datový model ER jako zdroj obchodních dat, která se použijí v sestavách Power BI. Tento datový model se nahrává z úložiště konfigurací ER. Další informace naleznete v tématu [Stáhnout konfigurace elektronického vykazování ze služby Lifecycle Services](download-electronic-reporting-configuration-lcs.md) nebo si přehrajte tutorial **ER Import konfigurace ze služby Lifecycle Services**. Vyberte **Intrastat** jako datový model, který se bude nahrávat z vybraného úložiště konfigurací ER. (V tomto příkladu je použita verze 1 modelu.) Potom můžete přistupovat ke konfiguraci modelu **Intrastat** na stránce **Konfigurace**. [![Stránka konfigurace](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## <a name="design-an-er-format-configuration"></a>Navrhněte ER konfiguraci formátu
 Je nutné vytvořit novou konfiguraci formátu ER, který používá datový model **Intrastat** jako zdroj obchodních dat. Tato konfigurace formátu musí generovat výsledky v podobě elektronických dokumentů formátu OpenXML (soubor aplikace Excel). Pro další důležité informace si přehrajte tutorial **ER vytvoření konfigurace pro sestavy ve formátu OPENXML**. Pojmenujte nové konfigurace **Import / export aktivit**, jak je ukázáno na následujícím obrázku. Použijte soubor v aplikaci Excel [dat ER – podrobnosti importu a exportu](https://go.microsoft.com/fwlink/?linkid=845208) jako šablonu při navrhování ER formátu. (Další informace o tom, jak importovat šablonu formátu získáte, pokud si přehrajete Průvodce záznamem úloh) [![Konfigurace aktivity Import / export](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png) Pokud chcete změnit konfiguraci formátu **aktivity Import / export**, postupujte takto.
@@ -85,7 +89,7 @@ Je nutné konfigurovat systém ER pro odeslání výstupních výsledků nové k
 -   Výstupní výsledek musí být zaslán do složky vybraného serveru SharePoint.
 -   Každé provedení konfigurace formátu musí vytvořit novou verzi stejného souboru aplikace Excel.
 
-Na stránce **Elektronické sestavy** (**Správa organizace** &gt; **Elektronické vykazování**) klikněte na **Cíl elektronického vykazování** a přidejte nové umístění. V poli**odkazy** vyberte konfiguraci formátu **Aktivity importu / exportu aktivity**, kterou jste předtím vytvořili. Tento postup slouží k přidání nového záznamu cílového souboru pro odkaz.
+Na stránce **Elektronické sestavy** (**Správa organizace** &gt; **Elektronické vykazování**) klikněte na **Cíl elektronického vykazování** a přidejte nové umístění. V poli **odkazy** vyberte konfiguraci formátu **Aktivity importu / exportu aktivity**, kterou jste předtím vytvořili. Tento postup slouží k přidání nového záznamu cílového souboru pro odkaz.
 
 1.  V poli **název** zadejte název cíle souboru.
 2.  V poli **Název souboru** vyberte název **Výstupního souboru Excel** coby součást formátu souboru aplikace Excel.
@@ -108,7 +112,7 @@ Chcete-li vytvořit novou sestavu Power BI, klepněte na tlačítko **podrobnost
 -   Přiřaďte sadu dat **Množství** do pole **Sytost barvy** vizualizace mapy.
 -   Přidejte pole sad dat **aktivity** a **Rok** k polím **Filtry** kolekce vizualizace map.
 
-Uložte sestavu Power BI jako **sestava podrobností o Importu a exportu**. [![Import and export details report](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Všimněte si, že mapa zobrazí země/oblasti, které jsou uvedeny v souboru Excel (Rakousko a Švýcarsko v tomto příkladu). Tyto země/oblasti se vybarví, aby zobrazily podíl fakturovaných částek pro každou z nich. Aktualizujte seznam transakcí v systému Intrastat. Byla přidána transakce exportu, která pochází z Itálie. [![Seznam transakcí Intrastat](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) Počkejte do dalšího plánovaného spuštění ER sestavy a další plánované aktualizace sady dat Power BI. Potom zkontrolujte sestavu Power BI (vyberte pro zobrazení pouze transakcí importu). Aktualizovaná mapa nyní zobrazuje Itálii. [![Aktualizovaná mapa](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
+Uložte sestavu Power BI jako **sestava podrobností o Importu a exportu**. [![Sestava podrobností o Importu a exportu](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Všimněte si, že mapa zobrazí země/oblasti, které jsou uvedeny v souboru Excel (Rakousko a Švýcarsko v tomto příkladu). Tyto země/oblasti se vybarví, aby zobrazily podíl fakturovaných částek pro každou z nich. Aktualizujte seznam transakcí v systému Intrastat. Byla přidána transakce exportu, která pochází z Itálie. [![Seznam transakcí Intrastat](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) Počkejte do dalšího plánovaného spuštění ER sestavy a další plánované aktualizace sady dat Power BI. Potom zkontrolujte sestavu Power BI (vyberte pro zobrazení pouze transakcí importu). Aktualizovaná mapa nyní zobrazuje Itálii. [![Aktualizovaná mapa](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
 ## <a name="access-power-bi-report-in-dynamics-365-for-operations"></a>Zpřístupnění sestavy Power BI v Dynamics 365 for Operations
 Nastavte integraci mezi Dynamics 365 for Operations a Power BI. Další informace naleznete na [konfigurace integrace Power BI pro pracovní prostory](configure-power-bi-integration.md). Na stránce pracovního prostoru **Elektronické vykazování** podporující integraci Power BI (**Správa organizace** &gt; **Pracovní prostory** &gt; **Pracovní prostor elektronického vykazování**), klikněte na **Možnosti** &gt; **Otevřít katalog sestav**. Vyberte **Podrobnosti Importu a exportu** sestavy Power BI, kterou jste vytvořili, aby se tato sestava zobrazila jako položka akcí na vybrané stránce. Klepněte na položku akce, abyste otevřeli stránku 365 Dynamics for Operations, která ukazuje sestavy, které jste navrhli v Power BI. [![Sestava podrobností o Importu a exportu](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
@@ -119,5 +123,7 @@ Nastavte integraci mezi Dynamics 365 for Operations a Power BI. Další informac
 [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
+
+
 
 

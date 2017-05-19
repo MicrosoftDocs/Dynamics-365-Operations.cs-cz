@@ -3,7 +3,7 @@ title: "Metoda přidělení celkových nákladů"
 description: "Tento článek obsahuje pokyny pro používání celkových přidělených nákladů. Celkové přidělené náklady je metoda výpočtu nákladů mezi hlavní položkou receptury pro dávkovou objednávku a vedlejšími produkty, které jsou definovány pro recepturu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: c26dcc5a8caa461bce90f931bb5c584f1816526b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a5c5788a3145dd6cabeed097d25a03a243577b8f
+ms.contentlocale: cs-cz
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="total-cost-allocation-method"></a>Metoda přidělení celkových nákladů
+
+[!include[banner](../includes/banner.md)]
+
 
 Tento článek obsahuje pokyny pro používání celkových přidělených nákladů. Celkové přidělené náklady je metoda výpočtu nákladů mezi hlavní položkou receptury pro dávkovou objednávku a vedlejšími produkty, které jsou definovány pro recepturu.
 
@@ -36,6 +40,11 @@ Celkové přidělené náklady je metoda výpočtu nákladů mezi hlavní polož
 Zde jsou uvedeny některé pokyny týkající se použití celkových přidělených nákladů pro vedlejší produkty:
 
 -   Nastavíte-li posuvník **Celkové přidělené náklady** na **Ano** pro verzi receptury, musí mít vedlejší produkty nákladovou cenu, která je větší než 0 (nula). Hodnota může být získána z aktivní nákladové verze pro stejné pracoviště, nebo pro první pracoviště pro recepturu, která není specifická pro pracoviště. Tento stav je ověřen při schválení receptury.
+
+    -   Není nutné zadávat procento přidělených nákladů pro vedlejší produkty ručně. Místo toho systém automaticky vytvoří procento přidělených nákladů jako průměr aktivních nákladových cen vedlejších produktů. 
+    -   Nemusíte zadávat standardní náklady pro nestandardní nákladové položky, které jsou vedlejšími produkty. Existují dva typy nákladových verzích v systému: standardní náklady a plánované náklady 
+    -   Pokud je položka ohodnocena podle oceňovací metody standardních nákladů, doporučujeme použít aktivní nákladové ceny ve verzi plánovaných nákladů. Tato cena je použita pro odhad nákladů, například výpočte kusovníku, odhad výrobních nákladů a záložní cenu v procesu ocenění zásob. 
+
 -   Nastavíte-li posuvník **Celkové přidělené náklady** na **Ano** pro verzi receptury a následující podmínky budou splněny, je jako metoda použita **Celkové přidělené náklady** a procentuální hodnota přidělení nákladů se nemění:
     -   Přidali jste vedlejší produkty.
     -   Použili jste jinou metodu přidělení nákladů pro vedlejší produkty.
@@ -53,6 +62,8 @@ Pole **Přidělení nákladů vedlejšího produktu** na stránce **Vedlejší p
 -   **Procento** ─ částka nákladů se vypočítá jako procento z celkových nákladů na suroviny, které jsou spotřebovány ve výrobě. Do pole se zadává podíl, který se používá pro výpočet.
 -   **Po řadách** ─ částka nákladů se vypočítává jako částka pro standardní velikost dávky ve výrobní zakázce. Tato částka je nezávislá na hlášeném množství ve výrobě. Do pole se zadává částka, která se používá pro výpočet.
 -   **Podle množství** ─ částka nákladů se vypočítává jako částka za hlášené množství položky receptury ve výrobě. Do pole se zadává částka, která se používá pro výpočet.
+
+
 
 
 
