@@ -1,15 +1,15 @@
 ---
 title: "Informační kódy"
 description: "Tento článek podává přehled o informačních kódech, skupinách informačních kódů a jejich použití."
-author: RobinARH
+author: mumani
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: josaw
 ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
@@ -47,13 +47,12 @@ V aplikaci Dynamics 365 for Operations - Retail můžete vytvářet skupiny info
 -   Spojit informační kódy s jinými informačními kódy nebo skupinami informačních kódů ke shromažďování informací o produktu nebo transakci, aniž by bylo nutné definovat samostatný informační kód nebo propojený informační kód pro každý scénář.
 
 ## <a name="info-code-examples"></a>Příklady informačních kódů
-**Příklad 1: Opakované použití informačního kódu** Můžete propojit informační kódy tak, aby při spuštění jednoho informačního kódu byl jiný informační kód spuštěn bezprostředně po něm. Například při prodeji některých produktů můžete vyzvat pokladního, aby se zeptal odběratele, zda chce koupit baterie a záruku produktu. U jiných produktů můžete vyzvat pokladního, aby se zeptal odběratele, zda chce koupit baterie, a aby získal PSČ. Pokud vytvoříte propojené informační kódy pro tyto situace, musíte nastavit každou variantu informačního kódu, aby tak byl pokladní vyzván k dotázání se na správné informace. Při použití skupin informačních kódů lze běžné informační kódy, jako je například dotaz na baterii, nastavit jednou a pak znovu použít ve více skupinách informačních kódů. Také můžete prioritizovat ve skupinách informačních kódů pro určeení pořadí, v němž se pokyny zobrazují. **Příklad 2: Propojení informačních kódů se skupinami informačních kódů** Při prodeji některých produktů, např. mobilních zařízení, chcete vždy shromáždit sadu určitých informací, například telefonní číslo, identifikátor mobilního zařízení (MEID) a sériové číslo. Také však chcete získat jiné informace pro tablet a pro mobilní telefon. Lze nastavit skupinu informačních kódů, která zahrnuje výzvy na telefonní číslo, MEID a sériové číslo, a poté propojit skupinu informačních kódů s jednotlivým informačním kódem. Při spuštění informačního kódu specifického pro produkt lze skupinu informačních kódů spustit následně, abyste mohli shromažďovat společná data, aniž by bylo nutné definovat více sad propojených informačních kódů pro každé zařízení.
+**Příklad 1: Opakované použití informačního kódu** Můžete propojit informační kódy tak, aby při spuštění jednoho informačního kódu byl jiný informační kód spuštěn bezprostředně po něm. Například při prodeji některých produktů můžete vyzvat pokladního, aby se zeptal odběratele, zda chce koupit baterie a záruku produktu. U jiných produktů můžete vyzvat pokladního, aby se zeptal odběratele, zda chce koupit baterie, a aby získal PSČ. Pokud vytvoříte propojené informační kódy pro tyto situace, musíte nastavit každou variantu informačního kódu, aby tak byl pokladní vyzván k dotázání se na správné informace. Při použití skupin informačních kódů lze běžné informační kódy, jako je například dotaz na baterii, nastavit jednou a pak znovu použít ve více skupinách informačních kódů. Také můžete prioritizovat ve skupinách informačních kódů pro určeení pořadí, v němž se pokyny zobrazují.
+
+
+**Příklad 2: Propojení informačních kódů se skupinami informačních kódů** Při prodeji některých produktů, např. mobilních zařízení, chcete vždy shromáždit sadu určitých informací, například telefonní číslo, identifikátor mobilního zařízení (MEID) a sériové číslo. Také však chcete získat jiné informace pro tablet a pro mobilní telefon. Lze nastavit skupinu informačních kódů, která zahrnuje výzvy na telefonní číslo, MEID a sériové číslo, a poté propojit skupinu informačních kódů s jednotlivým informačním kódem. Při spuštění informačního kódu specifického pro produkt lze skupinu informačních kódů spustit následně, abyste mohli shromažďovat společná data, aniž by bylo nutné definovat více sad propojených informačních kódů pro každé zařízení.
 
  
--
-
-
-
 
 
 
