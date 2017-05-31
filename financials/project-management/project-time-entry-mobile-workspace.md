@@ -3,10 +3,10 @@ title: "Mobilní pracovní prostor zadání času projektu pro aplikaci Microsof
 description: "Toto téma obsahuje informace o mobilním pracovním prostoru zadání času projektu Tento pracovní prostor uživatelům umožňuje zadat a uložit čas na projekt pomocí svých mobilních zařízení."
 author: annbe
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.reviewer: annbe
@@ -19,10 +19,10 @@ ms.author: annbe
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: e3e0be36c045acc3750efbb739d79d81ab937c65
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 9c592c301908898915164e9236850759b73543fe
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -31,7 +31,6 @@ ms.lasthandoff: 04/25/2017
 
 [!include[banner](../includes/banner.md)]
 
-"[!include[banner](../includes/banner.md)]"
 
 
 Toto téma obsahuje informace o mobilním pracovním prostoru zadání času projektu, který je k dispozici pro mobilní aplikaci Microsoft Dynamics 365 for Operations. Tento pracovní prostor uživatelům umožňuje zadat a uložit čas na projekt pomocí svých mobilních zařízení.
@@ -71,7 +70,7 @@ Před implementací mobilního pracovního prostoru **zadání času projektu** 
 <tr class="odd">
 <td>Musí být implementována aplikace Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější.</td>
 <td>Správce systému</td>
-<td>Pokud nemáte aplikaci Dynamics 365 for Operations v organizaci nasazenou, váš správce systému by si měl přečíst téma <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Nasazení ukázkového prostředí Microsoft Dynamics 365 for Operations</a>.</td>
+<td>Pokud nemáte aplikaci Dynamics 365 for Operations v organizaci nasazenou, váš správce systému by si měl přečíst téma <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Nasazení ukázkového prostředí Microsoft Dynamics 365 for Operations</a>.</td>
 </tr>
 <tr class="even">
 <td>Musí být implementován článek KB 4018050.</td>
@@ -79,9 +78,9 @@ Před implementací mobilního pracovního prostoru **zadání času projektu** 
 <td>KB 4018050 je X ++ aktualizace nebo oprava hotfix metadat obsahující mobilní pracovní prostor <strong>zadání času projektu</strong>. Pro implementaci KB 4018050 musí správce systému provést tyto kroky:
 <ol>
 <li>Stáhněte KB 4018050 z webu Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Nainstalujte opravu hotfix metadat</a>.</li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Vytvořte nasaditelný balíček</a>, který obsahuje modely <strong>ApplicationSuite</strong> a <strong>ProjectMobile</strong> a odešlete ho do služby LCS.</li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Použijte nasaditelný balíček</a> v systému Dynamics 365 for Operations.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Nainstalujte opravu hotfix metadat</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Vytvořte nasaditelný balíček</a>, který obsahuje modely <strong>ApplicationSuite</strong> a <strong>ProjectMobile</strong> a odešlete ho do služby LCS.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Použijte nasaditelný balíček</a> v systému Dynamics 365 for Operations.</li>
 </ol></td>
 </tr>
 <tr class="odd">

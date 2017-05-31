@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
 ms.reviewer: annbe
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 17a5dcf0f406380fbc4ff242932516894562fe5d
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 7d9b5870d8b1c64e3d444900253b06bbb76b6feb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -30,7 +30,6 @@ ms.lasthandoff: 04/25/2017
 
 [!include[banner](../includes/banner.md)]
 
-"[!include[banner](../includes/banner.md)]"
 
 
 Toto téma uvádí seznam mobilních pracovních prostorů, které byly nedávno vydány pro mobilní aplikaci Microsoft Dynamics 365 for Operations.
@@ -51,9 +50,9 @@ Toto téma uvádí seznam mobilních pracovních prostorů, které byly nedávno
 | Mobilní pracovní prostor     | popis                                                                                                                                                                         | Další informace                                                                                                                                                        |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Řízení nákladů     | Manažeři nákladových středisek mohou kdykoliv a kdekoliv vidět výkonnost nákladových středisek.                                                                                               | [Mobilní pracovní prostor Řízení nákladů](/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace)         |
-| Zásoby na skladě    | Získejte mobilní přehled o rezervovaných a dostupných zásobách kdykoliv a kdekoliv.                                                                                                    | [Mobilní pracovní prostor zásob na skladě](/dynamics365/operations/scm/production-control/inventory-on-hand-mobile-workspace)       |
-| Prodejní objednávky         | Buďte informováni o svých prodejních objednávkách kdykoliv a kdekoliv.                                                                                                                          | [Mobilní pracovní prostor prodejních objednávek](/dynamics365/operations/scm/production-control/sales-orders-mobile-workspace)                 |
-| Dodavatelská spolupráce | Vaši dodavatelé mohou sledovat být informováni nákupních objednávkách, které jim byly odeslány ke schválení, a mohou si prohlížet údaje o nových a aktualizovaných nákupních objednávkách a kontaktech. | [Mobilní pracovní prostor dodavatelské spolupráce](/dynamics365/operations/scm/procurement/vendor-collaboration-mobile-workspace) |
+| Zásoby na skladě    | Získejte mobilní přehled o rezervovaných a dostupných zásobách kdykoliv a kdekoliv.                                                                                                    | [Mobilní pracovní prostor zásob na skladě](/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace)       |
+| Prodejní objednávky         | Buďte informováni o svých prodejních objednávkách kdykoliv a kdekoliv.                                                                                                                          | [Mobilní pracovní prostor prodejních objednávek](/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace)                 |
+| Dodavatelská spolupráce | Vaši dodavatelé mohou sledovat být informováni nákupních objednávkách, které jim byly odeslány ke schválení, a mohou si prohlížet údaje o nových a aktualizovaných nákupních objednávkách a kontaktech. | [Mobilní pracovní prostor dodavatelské spolupráce](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace) |
 
 ## <a name="mobile-workspace-functionality-that-was-released-in-december-2016"></a>Funkce mobilních pracovních prostorů vydané v prosinci 2016
 | Mobilní pracovní prostor        | popis                                                                    | Další informace                                                                                                            |

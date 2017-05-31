@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -18,10 +18,10 @@ ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: dd9f65e045367aeba081d026da53894679ee7ed0
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 4f3015ed4f8dc165d988b2b63ed9ad89d6d6f578
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -253,7 +253,7 @@ Označuje prostředek, který slouží k nasazení v prostředích Akceptačn�
 
 Jedná se o nástroj aplikace Visual Studio používaný k tvorbě, aktualizaci a kontrole prvků modelu.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**konfigurace produktu založená na dimenzích**
+###### <a name="dimension-based-product-configuration"></a>**konfigurace produktu založené na dimenzích**
 
 Označuje konfigurační technologii používanou k vytváření variant produktů výběrem hodnot dimenzí produktů.
 
@@ -503,7 +503,7 @@ Označuje část produktu.
 
 ###### <a name="product-dimension"></a>**dimenze produktu**
 
-Označuje atributy Velikost, Barva a Konfigurace produktu, které se používají v konfiguraci produktu založené na dimenzích.
+Označuje atributy velikosti, barvy a konfigurace produktu, které se používají pro konfiguraci produktu založenou na dimenzích.
 
 ###### <a name="product-family"></a>**produktová řada**
 

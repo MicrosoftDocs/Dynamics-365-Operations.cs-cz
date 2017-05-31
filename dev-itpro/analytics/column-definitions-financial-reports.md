@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bf42b287e2e9235fd50f78a6fadc3f9efbd1fbe5
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: ca82d24f591aaeb0d675716857cf94a4696785ad
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -350,8 +350,7 @@ Typ informací, které zahrnuje každý sloupec v sestavě, je určen hodnotou v
     <tbody>
     <tr class="odd">
     <td>FD</td>
-    <td>Zobrazí finanční data nebo data z listu aplikace Excel při použití sloupce <strong>Odkaz na finanční dimenze</strong> nebo sloupce <strong>Odkaz na list</strong> v definici řádku. Když vyberete typ sloupce <strong>FD</strong>, bude automaticky zadáno výchozí nastavení pro tyto řádky:
-    <ul>
+    <td>Zobrazí finanční data nebo data z listu aplikace Excel při použití sloupce <strong>Odkaz na finanční dimenze</strong> nebo sloupce <strong>Odkaz na list</strong> v definici řádku. Když vyberete typ sloupce <strong>FD</strong>, bude automaticky zadáno výchozí nastavení pro tyto řádky: <ul>
     <li><strong>Kód knihy / atribut kategorie:</strong> ACTUAL</li>
     <li><strong>Kód knihy / atribut kategorie:</strong> ACTUAL</li>
     <li><strong>Fiskální rok:</strong> BASE</li>
@@ -359,7 +358,7 @@ Typ informací, které zahrnuje každý sloupec v sestavě, je určen hodnotou v
     <li><strong>Pokrytá období:</strong> PERIODIC</li>
     <li><strong>Šířka sloupce:</strong> 14</li>
     </ul>
-    Tato výchozí nastavení lze změnit.</td>
+Tato výchozí nastavení lze změnit.</td>
     </tr>
     <tr class="even">
     <td>VÝPOČET</td>
@@ -387,12 +386,11 @@ Typ informací, které zahrnuje každý sloupec v sestavě, je určen hodnotou v
     </tr>
     <tr class="even">
     <td>WKS</td>
-    <td>Zobrazí data, která pocházejí z listu aplikace Excel. Když vyberete typ sloupce <strong>WKS</strong>, bude automaticky zadáno výchozí nastavení pro tyto řádky:
-    <ul>
+    <td>Zobrazí data, která pocházejí z listu aplikace Excel. Když vyberete typ sloupce <strong>WKS</strong>, bude automaticky zadáno výchozí nastavení pro tyto řádky: <ul>
     <li><strong>Fiskální rok:</strong> PERIODIC</li>
     <li><strong>Období:</strong> BASE</li>
     </ul>
-    Tato výchozí nastavení lze změnit.</td>
+Tato výchozí nastavení lze změnit.</td>
     </tr>
     <tr class="odd">
     <td>ATTR</td>

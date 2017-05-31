@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: ef434747c075a32887035fa1d3c0e6fecd4e0a0d
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 7d146f3dfe1d71e8d3031a851f47fac35d0f1a58
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -68,7 +68,7 @@ Následující klávesové zkratky platí v celé aplikaci Microsoft Dynamics 36
 | Otevření okna s fakty (nebo aktivace okna s fakty, pokud je již otevřeno) | Ctrl+F2                                   |
 | Zavření okna s fakty (pokud je aktivní okno s fakty)                         | Esc                                       |
 | Přesunutí na další nebo předchozí okno s fakty (pokud je aktivní okno s fakty)              | Alt+Shift+Šipka dolů a Alt+Shift+Šipka nahoru |
-| Přesunutí na &lt;nté&gt; okno s fakty (se zaměřením na okno s fakty)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
+| Přesunutí na &lt;n&gt;té okno s fakty (pokud je aktivní okno s fakty)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
 | Rozbalení okna s fakty (pokud je aktivní okno s fakty)                             | Mezerník nebo Enter                            |
 | Sbalení aktuálního okna s fakty                                                    | Alt+0                                     |
 
@@ -115,8 +115,8 @@ Následující klávesové zkratky platí v celé aplikaci Microsoft Dynamics 36
 | Přechod na další nebo předchozí pole                     | Tab / Shift+Tab                              |
 | Přechod na další nebo předchozí kartu                       | Alt+Shift+Šipka vpravo a Alt+Shift+Šipka vlevo |
 | Přechod na další nebo předchozí pevnou záložku                   | Alt+Shift+Šipka dolů a Alt+Shift+Šipka nahoru    |
-| Přechod na &lt;ntou&gt; pevnou záložku                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
-| Přechod na &lt;ntou&gt; kartu                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Přechod na &lt;n&gt;tou pevnou záložku                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
+| Přechod na &lt;n&gt;tou kartu                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Rozbalení pevné záložky (pokud je aktivní pevná záložka) | Mezerník nebo Enter                               |
 | Sbalení aktuálního pevné záložky                        | Alt+0                                        |
 | Přepnutí na zobrazení mřížky                                 | Ctrl+Shift+G                                 |

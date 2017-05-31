@@ -15,9 +15,10 @@
     - name: Lidské zdroje
       tocHref: /dynamics365/operations/human-resources/
       topicHref: /dynamics365/operations/human-resources/index
-    - name: Maloobchodní a velkoobchodní prodej
+    - name: Maloobchod
       tocHref: /dynamics365/operations/retail/
       topicHref: /dynamics365/operations/retail/index
-    - name: Dodavatelsko-odběratelský řetězec 
+    - name: Dodavatelsko-odběratelský řetězec
+ 
       tocHref: /dynamics365/operations/supply-chain/
       topicHref: /dynamics365/operations/supply-chain/index

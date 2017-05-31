@@ -67,6 +67,7 @@
 ### [Bankovní výpis CODA](emea-bel-coda-bank-statement-import.md)
 ### [Daňové přiznání Intervat](emea-bel-intervat-tax-declaration.md)
 ### [Nastavení sestavy PRODCOM](emea-bel-prodcom-report.md)
+### [Sestavy odsouhlasení](emea-bel-reconciliation-reports.md)
 
 ## Česká republika
 ### [Platební sleva na dobropisu](emea-cze-credit-note-cash-discount.md)
@@ -74,9 +75,10 @@
 ### [Pozastavení odpisování](emea-cze-depreciation-suspension-holidays.md)
 ### [Odpisy dlouhodobého majetku](emea-cze-fixed-assets-depreciation.md)
 ### [Půlroční plán odpisů](emea-cze-half-depreciation-fixed-asset-disposal.md)
+### [Výkaznictví DPH ](emea-cze-intra-community-vat-transactions.md)
 ### [Výkaz DPH](emea-cze-vat-statement-details.md)
 ## Estonsko
-### [Příkaz VAT](emea-est-vat-statement-details.md)
+### [Výkaz DPH](emea-est-vat-statement-details.md)
 ## Francie
 ### Veřejný sektor
 #### [Účetnictví ve veřejném sektoru](emea-fra-public-sector-accounting.md)

@@ -44,29 +44,30 @@
 ## [Konfigurace a odeslání e-mailu](organization-administration/configure-email.md)
 ## [Údaje data a času a časové pásmo](organization-administration/date-time-zones.md)
 
-# Workflowy návrhu
-## [Přehled systému workflowu](organization-administration/overview-workflow-system.md)
-## [Architektura](organization-administration/workflow-system-architecture.md)
-## [Akce](organization-administration/workflow-actions.md)
-## [Elementy](organization-administration/workflow-elements.md)
-## [Sestava typů workflowu](organization-administration/workflow-types-report.md)
-## [Vytvoření workflowu](organization-administration/create-workflow.md)
-## [Konfigurace procesu schválení](organization-administration/configure-approval-process-workflow.md)
-## [Konfigurace kroku schválení](organization-administration/configure-approval-step-workflow.md)
-## [Konfigurace automatizovaného úkolu](organization-administration/configure-automated-task-workflow.md)
-## [Konfigurace podmíněného rozhodnutí](organization-administration/configure-conditional-decision-workflow.md)
-## [Konfigurace workflowu položky řádku](organization-administration/configure-line-item-workflow.md)
-## [Konfigurace ručního rozhodnutí](organization-administration/configure-manual-decision-workflow.md)
-## [Konfigurace ručního úkolu](organization-administration/configure-manual-task-workflow.md)
-## [Konfigurace paralelní aktivity](organization-administration/configure-parallel-activity-workflow.md)
-## [Konfigurace paralelní větve](organization-administration/configure-parallel-branch-workflow.md)
-## [Konfigurace vlastností workflowu](organization-administration/configure-workflow-properties.md)
+# Navrhování workflow
+## [Přehled systému workflow](organization-administration/overview-workflow-system.md)
+### [Architektura](organization-administration/workflow-system-architecture.md)
+### [Akce](organization-administration/workflow-actions.md)
+### [Prvky](organization-administration/workflow-elements.md)
+## [Vytvoření workflow](organization-administration/create-workflow.md)
+### [Konfigurace procesu schválení](organization-administration/configure-approval-process-workflow.md)
+### [Konfigurace kroku schválení](organization-administration/configure-approval-step-workflow.md)
+### [Konfigurace automatizovaného úkolu](organization-administration/configure-automated-task-workflow.md)
+### [Konfigurace podmíněného rozhodnutí](organization-administration/configure-conditional-decision-workflow.md)
+### [Konfigurace workflow položky řádku](organization-administration/configure-line-item-workflow.md)
+### [Konfigurace ručního rozhodnutí](organization-administration/configure-manual-decision-workflow.md)
+### [Konfigurace ručního úkolu](organization-administration/configure-manual-task-workflow.md)
+### [Konfigurace paralelní aktivity](organization-administration/configure-parallel-activity-workflow.md)
+### [Konfigurace paralelní větve](organization-administration/configure-parallel-branch-workflow.md)
+## [Konfigurace vlastností workflow](organization-administration/configure-workflow-properties.md)
+## [Konfigurace dávkové úlohy zpracování zprávy](organization-administration/workflow-batch-job-critical.md)
+## [Sestava typů workflow](organization-administration/workflow-types-report.md)
 
 # [Finance](/dynamics365/operations/financials/index)
 
 # [Lidské zdroje](/dynamics365/operations/human-resources/index)
 
-# [Maloobchodní a velkoobchodní prodej](/dynamics365/operations/retail/index)
+# [Maloobchod](/dynamics365/operations/retail/index)
 
 # [Správa dodavatelsko-odběratelského řetězce](/dynamics365/operations/supply-chain/index)
 

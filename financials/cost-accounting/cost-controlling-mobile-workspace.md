@@ -3,10 +3,10 @@ title: "Mobilní pracovní prostor Řízení nákladů"
 description: "Toto téma obsahuje informace o mobilním pracovním prostoru Řízení nákladů, který je k dispozici pro mobilní aplikaci Microsoft Dynamics 365 for Operations. Tento pracovní prostor umožňuje manažerům nákladového střediska zobrazit informace o výkonu nákladového střediska kdykoli a odkudkoli."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 05/04/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -18,10 +18,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 31a9650774b2ddb70827ffa210154ca10c761236
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 09383c24b0dd2ad61a836f6c8dc97f4389915772
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -36,11 +36,15 @@ Toto téma obsahuje informace o mobilním pracovním prostoru Řízení náklad�
 <a name="overview-of-the-cost-controlling-mobile-workspace"></a>Přehled mobilního pracovního prostoru řízení nákladů
 -------------------------------------------------
 
-Mobilní pracovní prostor **Řízení nákladů** poskytuje okamžitý přehled o aktuálním výkonu nákladových středisek porovnáním skutečných nákladů s rozpočtovými náklady. Můžete přejít na stavy jednotlivých prvků nákladů. Zaměstnanec například obdrží pozvánku na mezinárodní konferenci, ale organizace musí pokrývat všechny cestovní výdaje. Zaměstnanec se zeptá svého manažera, zda se může konference zúčastnit. Manažer rychle otevře mobilní pracovní prostor **řízení nákladů** na svém mobilním telefonu a zjistí, zda má rozpočet pro zaměstnance k účasti na konferenci.
+Mobilní pracovní prostor **Řízení nákladů** poskytuje okamžitý přehled o aktuálním výkonu nákladových středisek porovnáním skutečných nákladů s rozpočtovými náklady. Můžete přejít na stavy jednotlivých prvků nákladů. 
+
+Zaměstnanec například obdrží pozvánku na mezinárodní konferenci, ale organizace musí pokrývat všechny cestovní výdaje. Zaměstnanec se zeptá svého manažera, zda se může konference zúčastnit. Manažer rychle otevře mobilní pracovní prostor **řízení nákladů** na svém mobilním telefonu a zjistí, zda má rozpočet pro zaměstnance k účasti na konferenci.
 
 ### <a name="data-security"></a>Zabezpečení dat
 
-Data v mobilním pracovním prostoru **řízení nákladů** jsou zabezpečena pomocí pověření uživatele. Manažeři nákladového střediska mohou vidět data pouze pro své nákladové středisko. Úroveň zabezpečení přístupu je spravována v rámci modulu **Nákladové účetnictví**. Účetní definují konfiguraci mobilního pracovního prostoru **řízení nákladů** v modulu **Nákladové účetnictví**. Po publikování pracovního prostoru do mobilní aplikace Microsoft Dynamics 365 for Operations bude v aplikaci pracovní prostor k dispozici. Všichni manažeři nákladových středisek v organizaci tak mohou prohlížet data ve stejném formátu.
+Data v mobilním pracovním prostoru **řízení nákladů** jsou zabezpečena pomocí pověření uživatele. Manažeři nákladového střediska mohou vidět data pouze pro své nákladové středisko. Úroveň zabezpečení přístupu je spravována v rámci modulu **Nákladové účetnictví**. 
+
+Účetní definují konfiguraci mobilního pracovního prostoru **řízení nákladů** v modulu **Nákladové účetnictví**. Po publikování pracovního prostoru do mobilní aplikace Microsoft Dynamics 365 for Operations bude v aplikaci pracovní prostor k dispozici. Všichni manažeři nákladových středisek v organizaci tak mohou prohlížet data ve stejném formátu.
 
 ### <a name="actions-views-and-links"></a>Akce, zobrazení a odkazy
 
@@ -87,7 +91,7 @@ Abyste mohli používat mobilní pracovní prostor **Řízení nákladů**, mus�
 <tr class="odd">
 <td>Musí být implementována aplikace Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější.</td>
 <td>Správce systému</td>
-<td>Pokud nemáte aplikaci Dynamics 365 for Operations v organizaci nasazenou, správce systému by si měl přečíst téma <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Nasazení ukázkového prostředí Microsoft Dynamics 365 for Operations</a>.</td>
+<td>Pokud nemáte aplikaci Dynamics 365 for Operations v organizaci nasazenou, správce systému by si měl přečíst téma <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Nasazení ukázkového prostředí Microsoft Dynamics 365 for Operations</a>.</td>
 </tr>
 <tr class="even">
 <td>Musí být implementován článek KB 4013633.</td>
@@ -95,9 +99,9 @@ Abyste mohli používat mobilní pracovní prostor **Řízení nákladů**, mus�
 <td>KB 4013633 (aktualizace X++ nebo oprava hotfix metadat) obsahuje čtyři mobilní pracovní prostory pro řízení řetězce dodávek. Před implementací KB 4013633 musí správce systému udělat toto:
 <ol>
 <li>Stáhněte KB 4013633 z webu Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Nainstalujte opravu hotfix metadat</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Vytvořte nasaditelný balíček</a>, který obsahuje model <strong>SCMMobile</strong>, a nahrajte ho do LCS.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Použijte nasaditelný balíček</a> v systému Dynamics 365 for Operations.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Nainstalujte opravu hotfix metadat</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Vytvořte nasaditelný balíček</a>, který obsahuje model <strong>SCMMobile</strong>, a nahrajte ho do LCS.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Použijte nasaditelný balíček</a> v systému Dynamics 365 for Operations.</li>
 </ol></td>
 </tr>
 <tr class="odd">

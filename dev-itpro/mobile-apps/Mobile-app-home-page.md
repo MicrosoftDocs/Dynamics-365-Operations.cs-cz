@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
@@ -18,17 +18,15 @@ ms.author: sericks
 ms.dyn365.ops.intro: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: e1a9e0eeb45f011ccb2aa091e68aff92782e1ae7
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5962fa36b061382e7f0ad55c08c81ac2cebc047d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
 
 # <a name="dynamics-365-for-operations-mobile-app-home-page"></a>Domovská stránka mobilní aplikace Dynamics 365 for Operations
-
-[!include[banner](../includes/banner.md)]
 
 [!include[banner](../includes/banner.md)]
 
@@ -61,7 +59,7 @@ Navigace v mobilní aplikaci se skládá ze čtyř jednoduchých konceptů: ří
 ## <a name="implementation-process"></a>Proces implementace
 Následující obrázek znázorňuje procesu implementace mobilní aplikace Dynamics 365 for Operations ve vaší organizaci. 
 
-[![](./media/mobile-implementation-process_4.png)](./media/mobile-implementation-process_4.png) 
+![Proces implementace mobilní aplikace](./media/mobile-implementation-process_4.png)
 
 Následující tabulka obsahuje odkazy na zdroje, které vám mohou pomoci implementovat mobilní aplikaci Dynamics 365 for Operations ve vaší organizaci. Čísla v prvním sloupci odpovídají číslovaným krokům na předchozím obrázku.
 
@@ -85,7 +83,7 @@ Následující tabulka obsahuje odkazy na zdroje, které vám mohou pomoci imple
 <td>1</td>
 <td>Správce systému</td>
 <td>Implementujte Dynamics 365 for Operations pro organizaci.</td>
-<td>Pokud nemáte aplikaci Dynamics 365 for Operations v organizaci nasazenou, nahlédněte do tématu <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Nasazení ukázkového prostředí Microsoft Dynamics 365 for Operations</a>.</td>
+<td>Pokud nemáte aplikaci Dynamics 365 for Operations v organizaci nasazenou, nahlédněte do tématu <a href="../deployment/deploy-demo-environment.md">Nasazení ukázkového prostředí Microsoft Dynamics 365 for Operations</a>.</td>
 </tr>
 <tr class="even">
 <td>2</td>
@@ -93,32 +91,27 @@ Následující tabulka obsahuje odkazy na zdroje, které vám mohou pomoci imple
 <td>Stáhněte a nainstalujte články znalostní báze, které umožňují mobilní pracovní prostory poskytnuté společností Microsoft.</td>
 <td>Nahlédněte do části &quot;Předpoklady&quot; v tématu o mobilním pracovním prostoru, který chce vaše organizace použít:
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobilní pracovní prostory Řízení nákladů</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Mobilní pracovní prostor zásob na skladě</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Mobilní pracovní prostory prodejních objednávek</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobilní pracovní prostor dodavatelské spolupráce</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobilní pracovní prostor zadání času projektu</a></li>
+<li><a href="/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobilní pracovní prostory Řízení nákladů</a></li>
+<li><a href="/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace">Mobilní pracovní prostor zásob na skladě</a></li>
+<li><a href="/dynamics365/operations/supply-chain/sales-marketing/sales-orders-mobile-workspace">Mobilní pracovní prostory prodejních objednávek</a></li>
+<li><a href="/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobilní pracovní prostor dodavatelské spolupráce</a></li>
+<li><a href="/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobilní pracovní prostor zadání času projektu</a></li>
+<li><a href="/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace">Mobilní pracovní prostor Správa výdajů</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>3</td>
 <td>Správce systému</td>
 <td>Publikujte mobilní pracovní prostory, které poskytuje společnost Microsoft.</td>
-<td>Nahlédněte do části &quot;Předpoklady&quot; v tématu o mobilním pracovním prostoru, který chce vaše organizace použít:
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobilní pracovní prostory Řízení nákladů</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Mobilní pracovní prostor zásob na skladě</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Mobilní pracovní prostory prodejních objednávek</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobilní pracovní prostor dodavatelské spolupráce</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobilní pracovní prostor zadání času projektu</a></li>
-</ul></td>
+<td><a href="publish-mobile-workspace.md">Publikování mobilního pracovního prostoru</a>
+</td>
 </tr>
 <tr class="even">
 <td>4</td>
 <td>Vývojáři nebo nezávislí výrobci softwaru</td>
 <td>Použijte mobilní architekturu aplikace Dynamics 365 k vytváření vlastních mobilních pracovních prostorů.</td>
 <td><ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform">Mobilní architektura aplikace Dynamics 365 for Operations</a></li>
+<li><a href="mobile-platform.md">Mobilní architektura aplikace Dynamics 365 for Operations</a></li>
 <li><a href="http://ax.help.dynamics.com/en/wiki/operations-mobile-workspace-x-apis/">X ++ API pracovního prostoru aplikace Dynamics 365 for Operations</a></li>
 </ul></td>
 </tr>
@@ -126,19 +119,19 @@ Následující tabulka obsahuje odkazy na zdroje, které vám mohou pomoci imple
 <td>5</td>
 <td>ISV</td>
 <td>Vytvořte nasaditelný balíček, který obsahuje vlastní mobilní pracovní prostory, a odešlete balíček do služby Microsoft Dynamics Lifecycle Services (LCS).</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Generování nasaditelného balíčku</a></td>
+<td><a href="../deployment/create-apply-deployable-package.md">Vytvoření nasaditelného balíčku</a></td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>Správce systému</td>
 <td>Použijte nasaditelný balíček obsahující vlastní pracovní prostory, které poskytl nezávislý výrobce softwaru.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Použití nasaditelného balíčku v systému Microsoft Dynamics 365 for Operations</a></td>
+<td><a href="../deployment/apply-deployable-package-system.md">Použití nasaditelného balíčku v systému Microsoft Dynamics 365 for Operations</a></td>
 </tr>
 <tr class="odd">
 <td>7</td>
 <td>Správce systému</td>
 <td>Publikujte vlastní mobilní pracovní prostory, které poskytuje nezávislý výrobce softwaru.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publikování mobilního pracovního prostoru</a></td>
+<td><a href="publish-mobile-workspace.md">Publikování mobilního pracovního prostoru</a></td>
 </tr>
 <tr class="even">
 <td>8</td>
@@ -153,24 +146,12 @@ Následující tabulka obsahuje odkazy na zdroje, které vám mohou pomoci imple
 <td>9</td>
 <td>Uživatel</td>
 <td>Přihlaste se a používejte mobilní aplikaci Dynamics 365 for Operations. Aplikaci zahrnuje mobilní pracovní prostory, které byly publikovány.</td>
-<td>Společnost Microsoft poskytuje následující mobilní pracovní prostory:
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobilní pracovní prostory Řízení nákladů</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Mobilní pracovní prostor zásob na skladě</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Mobilní pracovní prostory prodejních objednávek</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobilní pracovní prostor dodavatelské spolupráce</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobilní pracovní prostor zadání času projektu</a></li>
-</ul></td>
+<td>Pokud chcete zobrazit seznam mobilních pracovních prostorů poskytovaných společností Microsoft, přečtěte si téma <a href="mobile-workspaces-released.md">Nedávno vydané mobilní pracovní prostory pro mobilní aplikaci Dynamics 365 for Operations</a>
+</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="see-also"></a>Viz také
---------
-
-[Nedávno uvolněné mobilní pracovní prostory pro mobilní aplikaci Dynamics 365 for Operations](mobile-workspaces-released.md)
 
 
 

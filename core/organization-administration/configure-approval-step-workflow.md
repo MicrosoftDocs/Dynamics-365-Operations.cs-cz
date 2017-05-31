@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 052cec3010c0d5ecbb9ed341fb23d0ec64682467
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 1924562f866ecdbb6fa6d3d0a9dc7627387f2d6a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -106,13 +106,11 @@ Pomocí následujícího postupu určíte, komu má být schvalovací krok při�
     <td>Uživatelé v určité organizační hierarchii</td>
     <td><ol>
     <li>Po výběru možnosti <strong>Hierarchie</strong> na kartě <strong>Výběr hierarchie</strong> v seznamu <strong>Typ hierarchie</strong> vyberte typ hierarchie, ke které chcete krok přiřadit.</li>
-    <li>Systém musí z hierarchie načíst rozsah jmen uživatelů. Tato jména představují uživatele, ke kterým může být krok přiřazen. Podle těchto kroků určete počáteční a koncový bod rozsahu uživatelských jmen, které systém obdrží:
-    <ol>
+    <li>Systém musí z hierarchie načíst rozsah jmen uživatelů. Tato jména představují uživatele, ke kterým může být krok přiřazen. Podle těchto kroků určete počáteční a koncový bod rozsahu uživatelských jmen, které systém obdrží: <ol>
     <li>Chcete-li zadat počáteční bod, vyberte osobu v seznamu <strong>Začátek od</strong>.</li>
     <li>Chcete-li zadat koncový bod, klepněte na možnost <strong>Přidat podmínku</strong>. Poté zadáním podmínky označte, kde v hierarchii má systém přestat načítat jména.</li>
     </ol></li>
-    <li>Na kartě <strong>Možnosti hierarchie</strong> zadejte uživatele v rozsahu, ke kterým by měl být krok přiřazen:
-    <ul>
+    <li>Na kartě <strong>Možnosti hierarchie</strong> zadejte uživatele v rozsahu, ke kterým by měl být krok přiřazen: <ul>
     <li><strong>Přiřadit všechny načtené uživatele</strong> – krok bude přiřazen všem uživatelům v rozsahu.</li>
     <li><strong>Přiřadit pouze poslednímu načtenému uživateli</strong> – krok bude přiřazen pouze poslednímu uživateli v rozsahu.</li>
     <li><strong>Vyloučit uživatele splňující následující podmínku</strong> – krok není přiřazen žádnému uživateli v rozsahu, který odpovídá konkrétní podmínce. Po klepnutí na volbu <strong>Přidat podmínku</strong> určete požadovanou podmínku.</li>
@@ -211,13 +209,11 @@ Pokud uživatel u dokumentu neprovede akci v přiděleném čase, dokument bude 
     <td>Uživatelé v určité organizační hierarchii</td>
     <td><ol>
     <li>Po výběru možnosti <strong>Hierarchie</strong> na kartě <strong>Výběr hierarchie</strong> v seznamu <strong>Typ hierarchie</strong> vyberte typ hierarchie, ke které dokument eskalovat.</li>
-    <li>Systém musí z hierarchie načíst rozsah jmen uživatelů. Tato jména představují uživatele, ke kterým může být dokument eskalován. Podle těchto kroků určete počáteční a koncový bod rozsahu uživatelských jmen, které systém obdrží:
-    <ol>
+    <li>Systém musí z hierarchie načíst rozsah jmen uživatelů. Tato jména představují uživatele, ke kterým může být dokument eskalován. Podle těchto kroků určete počáteční a koncový bod rozsahu uživatelských jmen, které systém obdrží: <ol>
     <li>Chcete-li zadat počáteční bod, vyberte osobu v seznamu <strong>Začátek od</strong>.</li>
     <li>Chcete-li zadat koncový bod, klepněte na možnost <strong>Přidat podmínku</strong>. Poté zadáním podmínky označte, kde v hierarchii má systém přestat načítat jména.</li>
     </ol></li>
-    <li>Na kartě <strong>Možnosti hierarchie</strong> zadejte uživatele v rozsahu, ke kterým by měl být dokument eskalován:
-    <ul>
+    <li>Na kartě <strong>Možnosti hierarchie</strong> zadejte uživatele v rozsahu, ke kterým by měl být dokument eskalován: <ul>
     <li><strong>Přiřadit všechny načtené uživatele</strong> – dokument bude eskalován všem uživatelům v rozsahu.</li>
     <li><strong>Přiřadit pouze poslednímu načtenému uživateli</strong> – dokument bude eskalován pouze poslednímu uživateli v rozsahu.</li>
     <li><strong>Vyloučit uživatele splňující následující podmínku</strong> – dokument není eskalován žádnému uživateli v rozsahu, který odpovídá konkrétní podmínce. Po klepnutí na volbu <strong>Přidat podmínku</strong> určete požadovanou podmínku.</li>

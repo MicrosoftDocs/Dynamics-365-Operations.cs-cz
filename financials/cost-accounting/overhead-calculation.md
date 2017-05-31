@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bb02e0756d675726f6c3b9f456b980a7ed695463
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: a24c24f842e4f1b1c7806c2fb2ccbd1329fe4851
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -53,7 +53,8 @@ Výpočet režijních nákladů spustí zásady účtování nákladů ve správ
 -   Fiskální rok
 -   Fiskální období
 
-Výpočet režijních nákladů se spustí bez ohledu na verzi. Proto lze vypočítat rozpočtovou verzi před skutečnou verzí. Výpočet režijních nákladů se skládá ze čtyř kroků uvedených na následujícím obrázku. V každé fázi je vytvořeno záhlaví deníku, které obsahuje položky deníku. Toto záhlaví deníku zachovává vstupní data pro každý krok výpočtu. Zásady a pravidla se použijí na každý řádek deníku a položky nákladů jsou generovány jako výstup. Máte tedy vždy plnou sledovatelnost. [![Výpočet režijních nákladů](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+Výpočet režijních nákladů se spustí bez ohledu na verzi. Proto lze vypočítat rozpočtovou verzi před skutečnou verzí. Výpočet režijních nákladů se skládá ze čtyř kroků uvedených na následujícím obrázku. V každé fázi je vytvořeno záhlaví deníku, které obsahuje položky deníku. Toto záhlaví deníku zachovává vstupní data pro každý krok výpočtu. Zásady a pravidla se použijí na každý řádek deníku a položky nákladů jsou generovány jako výstup. Máte tedy vždy plnou sledovatelnost. 
+[![Výpočet režijních nákladů](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Výpočet a přidělení režijních nákladů za elektřinu
 Ve finančním účetnictví se některé náklady, jako je například elektřina, registrují jako paušální. Podrobný přehled pro vedoucí není tedy pro nákladové účetnictví k dispozici. V nákladovém účetnictví musí náklady procházet organizačními jednotkami, aby byl získán správný přehled pro vedoucí napříč všemi jednotkami a úrovněmi organizace. Tento tok musí být založen buď na přesném záznamu spotřeby nebo na objektivním hodnocení. V hlavní knize mohou být zaúčtovány náklady na elektřinu způsobem znázorněným v následující tabulce.
@@ -622,7 +623,7 @@ Podrobné informace o zásadách sazby režijních nákladů najdete v tématech
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>Krok 4: Zpracování výpočtu přidělení nákladů
 
-Přidělení se používá k přidělení zůstatku objektu nákladů do jiných objektů nákladů použitím základu přidělení. Microsoft Dynamics 365 for Operations podporuje metodu vzájemného přidělení. V metodě vzájemného přidělení jsou plně rozpoznány vzájemné služby, které si vyměňují pomocné objekty nákladů. Systém automaticky určí provádění přidělení ve správném pořadí. Zůstatek objektu nákladů je přidělen jedním základem přidělení. Je podporováno přidělování napříč dimenzemi objektů nákladů a jejich příslušných členů. Pořadí přidělení je řízeno jednotkou řízení nákladů. [![](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+Přidělení se používá k přidělení zůstatku objektu nákladů do jiných objektů nákladů použitím základu přidělení. Microsoft Dynamics 365 for Operations podporuje metodu vzájemného přidělení. V metodě vzájemného přidělení jsou plně rozpoznány vzájemné služby, které si vyměňují pomocné objekty nákladů. Systém automaticky určí provádění přidělení ve správném pořadí. Zůstatek objektu nákladů je přidělen jedním základem přidělení. Je podporováno přidělování napříč dimenzemi objektů nákladů a jejich příslušných členů. Pořadí přidělení je řízeno jednotkou řízení nákladů. [![Reciproční metoda](./media/reciprocal-method.png)]
 
 #### <a name="define-the-cost-allocation"></a>Definice přidělení nákladů
 

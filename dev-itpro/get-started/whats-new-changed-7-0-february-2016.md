@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.search.scope: AX 7.0.0, Operations
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 36d4aec3936ef99b880f3affc75df1b952cb3133
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: aba59096bf1ffc9ce6448cb7c0f9bd5d2936d7d7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -865,7 +865,7 @@ Maloobchod nabízí dokonalý mobilní zážitek kdekoliv, kdykoliv a na jakémk
 <tr class="odd">
 <td>Spuštění POS jako webové aplikace prostřednictvím cloudu POS.</td>
 <td>Není k dispozici.</td>
-<td>K dispozici je funkční parita s MPOS. Ta zahrnuje tyto funkce:
+<td>K dispozici je funkční parita s MPOS. Ta zahrnuje tyto funkce:
 <ul>
 <li>Aktivace zařízení pomocí AAD</li>
 <li>Interaktivní rozvržení</li>

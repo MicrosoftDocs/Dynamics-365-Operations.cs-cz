@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: end user, IT Pro
 ms.reviewer: annbe
@@ -18,10 +18,10 @@ ms.author: annbe
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 8bc47c5b170fd7dd8f6288682aad6eae1d2dc09a
-ms.openlocfilehash: 9d3b7a4d5184c3c4958f4298f1d3dd4de0cd06d6
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 4e3202de8e5288bbd52e8c28922374de147cc99f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/26/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -29,8 +29,6 @@ ms.lasthandoff: 04/26/2017
 # <a name="expense-management-mobile-workspace"></a>Mobilní pracovní prostor správy výdajů
 
 [!include[banner](../includes/banner.md)]
-
-"[!include[banner](../includes/banner.md)]"
 
 
 Toto téma obsahuje informace o mobilním pracovním prostoru správy výdajů, který je k dispozici pro mobilní aplikaci Microsoft Dynamics 365 for Operations. Tento pracovní prostor umožňuje uživatelům zdokumentovat a odeslat účtenku, aby ji mohli připojit později k sestavě výdajů. Mobilní pracovní prostor také umožní uživatelům rychle vytvářet řádek výdajů pomocí připojené účtenky.
@@ -66,7 +64,7 @@ Před implementací mobilního pracovního prostoru **správy výdajů** se ujis
 <tr class="odd">
 <td>Musí být implementována aplikace Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější.</td>
 <td>Správce systému</td>
-<td>Pokud nemáte aplikaci Dynamics 365 for Operations v organizaci nasazenou, váš správce systému by si měl přečíst téma <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Nasazení ukázkového prostředí Microsoft Dynamics 365 for Operations</a>.</td>
+<td>Pokud nemáte aplikaci Dynamics 365 for Operations v organizaci nasazenou, váš správce systému by si měl přečíst téma <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Nasazení ukázkového prostředí Microsoft Dynamics 365 for Operations</a>.</td>
 </tr>
 <tr class="even">
 <td>Musí být implementován článek KB 4019015.</td>
@@ -74,9 +72,9 @@ Před implementací mobilního pracovního prostoru **správy výdajů** se ujis
 <td>KB 4019015 (aktualizace X++ nebo oprava hotfix metadat) obsahuje čtyři mobilní pracovní prostory pro řízení řetězce dodávek. Před implementací KB 4019015 musí správce systému udělat toto:
 <ol>
 <li>Stáhněte KB 4019015 z webu Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Nainstalujte opravu hotfix metadat</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Vytvořte nasaditelný balíček</a>, který obsahuje modely <strong>ApplicationSuite</strong> a <strong>ExpenseMobile</strong> a odešlete ho do služby LCS.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Použijte nasaditelný balíček</a> v systému Dynamics 365 for Operations.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Nainstalujte opravu hotfix metadat</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Vytvořte nasaditelný balíček</a>, který obsahuje modely <strong>ApplicationSuite</strong> a <strong>ExpenseMobile</strong> a odešlete ho do služby LCS.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Použijte nasaditelný balíček</a> v systému Dynamics 365 for Operations.</li>
 </ol></td>
 </tr>
 <tr class="odd">
@@ -97,14 +95,15 @@ Stáhněte aplikaci Microsoft Dynamics 365 for Operations z obchodu s mobilními
 
 -   Android: [Dynamics 365 for Operations - Warehousing v Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
 -   iPhone: [Dynamics 365 for Operations v iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
--   Pro Windows Phone (Universal Windows Platform \[UWP\]): Již brzy!
 
 ## <a name="sign-in-to-the-dynamics-365-for-operations-mobile-app"></a>Přihlaste se k mobilní aplikaci Dynamics 365 for Operations
 1.  Spusťte aplikaci na svém mobilním zařízení.
 2.  Zadejte adresu URL Dynamics 365 for Operations.
 3.  Zadejte společnost, do které se chcete přihlásit. Například zadejte **USMF**.
 4.  Při prvním přihlášení budete vyzváni k zadání uživatelského jména a hesla pro váš účet aplikace Dynamics 365 for Operations. Zadejte své přihlašovací údaje.
-5.  Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost. Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, můžete vyžádat obnovení seznamu mobilních pracovních prostorů. [![Vyžádání aktualizace](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+5.  Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost. Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, můžete vyžádat obnovení seznamu mobilních pracovních prostorů. 
+
+[![Vyžádání aktualizace](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="capture-a-receipt-by-using-the-expense-management-mobile-workspace"></a>Zdokumentování účtenky pomocí mobilního pracovního prostoru správy výdajů
 1.  Na svém mobilním zařízení vyberte pracovní prostor **správy výdajů**.
@@ -114,7 +113,7 @@ Stáhněte aplikaci Microsoft Dynamics 365 for Operations z obchodu s mobilními
     1.  Přejděte k fotoaparátu svého mobilního zařízení, abyste mohli pořídit fotografii účtenku. Poté, co jste pořídili fotografii, klikněte na tlačítko **OK** pro přijetí fotografie.
     2.  Volitelné: Zadejte název fotografie a poznámky.
 
-     nebo pokud jste vybrali možnost **Zvolit obrázek**, postupujte následujícím způsobem:
+     **Nebo:**  pokud jste vybrali možnost **Zvolit obrázek**, postupujte následujícím způsobem:
     1.  V seznamu vyberte obrázek.
     2.  Volitelné: Zadejte název obrázku a poznámky.
 
@@ -123,11 +122,11 @@ Stáhněte aplikaci Microsoft Dynamics 365 for Operations z obchodu s mobilními
 ## <a name="quick-expense-entry-by-using-the-expense-management-mobile-workspace"></a>Rychlé zadání výdaje pomocí mobilního pracovního prostoru správy výdajů
 1.  Na svém mobilním zařízení vyberte pracovní prostor **správy výdajů**.
 2.  Vyberte **Rychlé zadání výdaje**.
-3.  Zvolte kategorii pro výdaje. Zobrazí se seznam kategorií výdajů, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno až 50 položek, ale vývojář může tuto hodnotu změnit. Další informace naleznou vývojáři v tématu [Mobilní platforma aplikace Dynamics 365 for Operations](http://ax.help.dynamics.com/en/wiki/mobile-development-handbook/). Pokud kategorie není v seznamu uvedena, vyberte **Hledat**, chcete-li provést online hledat v Dynamics 365 for Operations. Hledejte kategorii výdaje nebo přepněte pro hledání podle typu výdaje.
+3.  Zvolte kategorii pro výdaje. Zobrazí se seznam kategorií výdajů, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno až 50 položek, ale vývojář může tuto hodnotu změnit. Další informace naleznou vývojáři v tématu [Mobilní platforma aplikace Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform). Pokud kategorie není v seznamu uvedena, vyberte **Hledat**, chcete-li provést online hledat v Dynamics 365 for Operations. Hledejte kategorii výdaje nebo přepněte pro hledání podle typu výdaje.
 4.  Zadejte datum transakce výdaje.
 5.  Volitelné: Zadejte obchodníka pro výdaje.
 6.  Zadejte částku výdaje.
-7.  Vyberte měnu výdaje. Zobrazí se seznam kódů měn, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno až 400 měn, ale vývojář může tento počet změnit. Další informace naleznou vývojáři v tématu [Mobilní platforma aplikace Dynamics 365 for Operations](http://ax.help.dynamics.com/en/wiki/mobile-development-handbook/). Pokud měna není v seznamu uvedena, vyberte **Hledat**, chcete-li provést online hledat v Dynamics 365 for Operations. Hledejte podle měny nebo přepněte pro hledání podle názvu.
+7.  Vyberte měnu výdaje. Zobrazí se seznam kódů měn, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno až 400 měn, ale vývojář může tento počet změnit. Další informace naleznou vývojáři v tématu [Mobilní platforma aplikace Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform). Pokud měna není v seznamu uvedena, vyberte **Hledat**, chcete-li provést online hledat v Dynamics 365 for Operations. Hledejte podle měny nebo přepněte pro hledání podle názvu.
 8.  Vyberte možnost **Pořídit fotografii** nebo **Zvolit obrázek**.
 9.  Pokud zvolíte **Pořídit fotografii**, přejděte k fotoaparátu svého mobilního zařízení, abyste mohli pořídit fotografii účtenku. Poté, co jste pořídili fotografii, klikněte na tlačítko **OK** pro přijetí fotografie.  nebo pokud jste vybrali **Zvolit obrázek**, vyberte obrázek v seznamu.
 10. Vyberte **Hotovo**.

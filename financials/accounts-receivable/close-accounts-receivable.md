@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 1ab51f90be918ee60e99fe11e5425383beefb26e
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 6e8e87df88aace213f50db617229383eba4d86ec
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -47,13 +47,11 @@ Uzávěrka období v hlavní knize
 |Potvrdit prodejní objednávku                   | Aktualizace prodejních objednávek.                                                                       |
 |Přecenění cizí měny          | Generování transakcí, které aktualizují hodnotu otevřených transakcí odběratelů v cizí měně.                                                                                                                         |
 | Deník                              | Zaúčtování faktur, plateb a směnek.                                             |
-| Doklad deníku                      | -   **Deník plateb** – generování, zpracování a zaúčtování plateb.
-                                         -   **Draw bill of exchange journal** – Post bills of exchange.
-                                         -   **Protest bill of exchange journal** – Post protested bills of exchange.
-                                         -   **Redraw bill of exchange journal** – Post redrawn bills of exchange.
-                                         -   **Remittance journal** – Post remittances.
-                                         -   **Settle bill of exchange journal** – Post settled bills of exchange                   |
-| Zaúčtování dodacího listu                 | Aktualizace dodacích listů pro prodejní objednávky.                                                     | | Zaúčtovat volnou fakturu               | Zaúčtovat volné faktury.                                                                   | | Zaúčtování faktury                      | Zaúčtování faktur prodejních objednávek.                                                            | | Zaúčtování výdejky                 |Aktualizace výdejek k prodejním objednávkám.                                                      |
+| Doklad deníku                      |<ul><li>**Deník plateb** – generování, zpracování a zaúčtování plateb.</li><li>**Deník vystavení cizí směnky** – zaúčtování cizích směnek.</li><li>**Deník směnečného protestu** – zaúčtování směnečných protestů.</li><li>**Deník vystavených návratných cizích směnek** – zaúčtování vystavených návratných cizích směnek.</li><li>**Deník úhrad** – zaúčtování úhrad.</li><li>**Deník vyrovnání cizí směnky** – zaúčtování vyrovnaných cizích směnek</li></ul>                   |
+| Zaúčtování dodacího listu                 | Aktualizace dodacích listů k prodejním objednávkám.                                                     |
+| Zaúčtovat volnou fakturu               | Zaúčtování volných faktur.                                                                   |
+| Zaúčtování faktury                      | Zaúčtování faktur prodejních objednávek.                                                            |
+| Zaúčtování výdejky                 |Aktualizace výdejek k prodejním objednávkám.                                                      |
 
 **Úloha komponenty obchodního procesu**   
 
