@@ -10,9 +10,9 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AssetDepreciationGroup_W
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 264314
-ms.assetid: 185cc4ce-d1b2-429a-9b1b-6b9c4b865da0
 ms.search.region: Czech Republic
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
