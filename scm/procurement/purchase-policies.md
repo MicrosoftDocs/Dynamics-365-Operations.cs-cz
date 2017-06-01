@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 audience: Application User
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 3df3144b08c54441699d9c0b48fe507857877586
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5208dc64d86345de4e53c5e293fbc861351a63ef
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -59,6 +59,7 @@ Pokud zaměstnanec v právnické osobě 2222 vytvoří nákupní žádanku, prav
 
 V předchozím příkladě byla definována všechna pravidla nákupu v jedné organizační hierarchii, organizační hierarchií společnosti. Komplexní organizace však může definovat zásady pro více organizačních hierarchií.  
 
+
 Společnost Contoso je velká společnost, která vyžaduje komplexní pravidla nákupu k řízení zpracování žádanek. Společnost Contoso definovala pravidla pro dvě různé organizační hierarchie: Řízení oddělení a globální kontroly.  
 
 Zásada 123 je definována pro oddělení organizační hierarchie pro prodejní oddělení pro prodej ve Velké Británii. V zásadách 123 pravidlo kontroly nákupní žádanky určuje, že musí být vynucena omezení pro minimální objednané množství. V tomto pravidle je vybrána možnost **Vynutit omezení minimálního množství objednávky**.  
@@ -93,6 +94,9 @@ Pravidla zásad kategorií definují, jak pro každou kategorii mohou uživatel�
 ### <a name="re-approval-rule-for-purchase-orders"></a>Pravidlo opětovného schválení pro nákupní objednávky
 
 Pravidlo opětovného schválení je volitelné pravidlo, které definuje kritéria pro vyžadování opětovného schválení při změně nákupní objednávky. Vybraná pole jsou vyhodnocena ve workflow prodejní objednávky, je- li ve workflow podmínka nastavena na „Vyžaduje opětovné schválení nákupní objednávky“.
+
+> [!NOTE]
+> Rozúčtování bude vynulováno vždy při změně schválené nákupní objednávky s povolenou funkcí Správa změn. Proto byste měli mít na vědomí, že pokud se chcete vyhnout opětovnému schvalování nákupní objednávky při změně některých polí, NEMĚLO by být pro opětovné schválení zahrnuto pole Změna rozúčtování. 
 
 ### <a name="purchase-requisition-rfq-rule"></a>Pravidlo požadavku na nabídku nákupní žádanky
 

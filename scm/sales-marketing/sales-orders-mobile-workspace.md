@@ -3,10 +3,10 @@ title: "Mobilní pracovní prostor prodejních objednávek"
 description: "Toto téma obsahuje informace o mobilním pracovním prostoru prodejních objednávek, který je k dispozici pro mobilní aplikaci Microsoft Dynamics 365 for Operations. Tento pracovní prostor vám pomáhá mít přístup k vašim aktuálním prodejním objednávkám kdekoliv a kdykoliv."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -19,10 +19,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 119b80e5d8067ffbf75d8b067f4803558c2c94b0
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 11898146a13756a6bb22a769e37e8773484e0d04
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -37,7 +37,9 @@ Toto téma obsahuje informace o mobilním pracovním prostoru prodejních objedn
 <a name="overview-of-the-sales-orders-mobile-workspace"></a>Přehled mobilního pracovního prostoru prodejních objednávek
 ---------------------------------------------
 
-Mobilní pracovní prostor **prodejních objednávek** přistupuje k aplikaci Microsoft Dynamics 365 for Operations a umožňuje vám zobrazit podrobné informace o jednotlivých prodejních objednávkách. Tyto informace zahrnují stav objednávky, kontaktní informace odběratele a kontaktní informace pro příjemce objednávky. Mobilní pracovní prostor **prodejních objednávek** poskytuje okamžitý přehled o prodejních objednávkách. Můžete zobrazit všechny prodejní objednávky, prodejní objednávky podle zákazníka nebo informace o konkrétní prodejní objednávce. Mobilní pracovní prostor obsahuje dvě zobrazení, která vám umožní analyzovat prodejní objednávky do hloubky.
+Mobilní pracovní prostor **prodejních objednávek** přistupuje k aplikaci Microsoft Dynamics 365 for Operations a umožňuje vám zobrazit podrobné informace o jednotlivých prodejních objednávkách. Tyto informace zahrnují stav objednávky, kontaktní informace odběratele a kontaktní informace pro příjemce objednávky. Mobilní pracovní prostor **prodejních objednávek** poskytuje okamžitý přehled o prodejních objednávkách. Můžete zobrazit všechny prodejní objednávky, prodejní objednávky podle zákazníka nebo informace o konkrétní prodejní objednávce. 
+
+Mobilní pracovní prostor obsahuje dvě zobrazení, která vám umožní analyzovat prodejní objednávky do hloubky.
 
 ### <a name="view-all-sales-orders"></a>Zobrazit všechny prodejní objednávky
 
@@ -50,6 +52,7 @@ Toto zobrazení obsahuje seznam všech prodejních objednávek.
     -   Hledat podle stavu
     -   Hledat podle stavu storna
     -   Hledat podle data a času vytvoření
+    
 -   Po výběru prodejních objednávek můžete zobrazit podrobnosti o konkrétních objednávkách. Konkrétně můžete zobrazit následující informace:
     -   Informace o názvu a adrese zákazníka
     -   Různá data pro prodejní objednávku, jako je například požadované datum expedice a potvrzené datum expedice
@@ -65,6 +68,7 @@ Toto zobrazení uvádí seznam prodejních objednávek podle odběratele.
 -   Chcete-li zobrazit objednávky pro odběratele, použijte jeden z následujících filtrů:
     -   Hledat podle jména
     -   Hledat podle účtu
+
 -   Po výběru odběratele můžete zobrazit následující informace:
     -   Název skupinu odběratelů
     -   Kontaktní informace odběratele
@@ -96,7 +100,7 @@ Abyste mohli používat mobilní pracovní prostor **Prodejní objednávky**, mu
 <tr class="odd">
 <td>Musí být implementována aplikace Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější.</td>
 <td>Správce systému</td>
-<td>Pokud nemáte aplikaci Dynamics 365 for Operations v organizaci nasazenou, správce systému by si měl přečíst téma <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Nasazení ukázkového prostředí Microsoft Dynamics 365 for Operations</a>.</td>
+<td>Pokud nemáte aplikaci Dynamics 365 for Operations v organizaci nasazenou, správce systému by si měl přečíst téma <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment/">Nasazení ukázkového prostředí Microsoft Dynamics 365 for Operations</a>.</td>
 </tr>
 <tr class="even">
 <td>Musí být implementován článek KB 4013633.</td>
@@ -104,9 +108,9 @@ Abyste mohli používat mobilní pracovní prostor **Prodejní objednávky**, mu
 <td>KB 4013633 (aktualizace X++ nebo oprava hotfix metadat) obsahuje čtyři mobilní pracovní prostory pro řízení řetězce dodávek. Před implementací KB 4013633 musí správce systému udělat toto:
 <ol>
 <li>Stáhněte KB 4013633 z webu Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Nainstalujte opravu hotfix metadat</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Vytvořte nasaditelný balíček</a>, který obsahuje model <strong>SCMMobile</strong>, a nahrajte ho do LCS.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Použijte nasaditelný balíček</a> v systému Dynamics 365 for Operations.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Nainstalujte opravu hotfix metadat</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Vytvořte nasaditelný balíček</a>, který obsahuje model <strong>SCMMobile</strong>, a nahrajte ho do LCS.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Použijte nasaditelný balíček</a> v systému Dynamics 365 for Operations.</li>
 </ol></td>
 </tr>
 <tr class="odd">

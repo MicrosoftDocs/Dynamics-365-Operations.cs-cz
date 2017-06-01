@@ -4,6 +4,7 @@
 ## Vytvoření prognózy poptávky
 ### [Přehled prognózy poptávky](master-planning/introduction-demand-forecasting.md)
 ### [Nastavení prognózy poptávky](master-planning/demand-forecasting-setup.md)
+### [Import historických dat pro prognózy poptávky](master-planning/import-historical-data.md)
 ### [Generování statistické základní prognózy](master-planning/generate-statistical-baseline-forecast.md)
 ### [Ruční úpravy základní prognózy](master-planning/manual-adjustments-baseline-forecast.md)
 ### [Autorizace upravené prognózy](master-planning/authorize-adjusted-forecast.md)
@@ -191,7 +192,7 @@
 
 # [Lidské zdroje](/dynamics365/operations/human-resources/index)
 
-# [Maloobchodní a velkoobchodní prodej](/dynamics365/operations/retail/index)
+# [Maloobchod](/dynamics365/operations/retail/index)
 
 # [Vývojář a správce](/dynamics365/operations/dev-itpro/index)
 

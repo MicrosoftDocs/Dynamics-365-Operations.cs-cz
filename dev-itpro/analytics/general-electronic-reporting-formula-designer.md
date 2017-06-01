@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -18,10 +18,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 335a0d7ca466028e8b157cb4e04df7d0f4880e73
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5726a6fc60977a82b49e00ca653696e4051cbb10
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -474,7 +474,7 @@ Pole Popisek a Popis se vrátí hodnoty runtime založené na jazykovém nastave
 </tr>
 <tr class="even">
 <td>FORMAT (řetězec 1 řetězce 2[, řetězec 3...])</td>
-<td>Vrátí zadaný řetězec, který je formátován nahrazením všech výskytů <strong>%N</strong> argumentem <em>n</em>. Argumenty jsou řetězce. Pokud pro parametr není zadán argument, parametr je vrácen jako <strong>&quot;%N&quot;</strong> v řetězci. Co se týká hodnot typu <strong>real</strong>, převod řetězce je omezen na dvě desetinná místa.</td>
+<td>Vrátí zadaný řetězec, který je formátován nahrazením všech výskytů <strong>%N</strong> <em>n</em>. argumentem. Argumenty jsou řetězce. Pokud pro parametr není zadán argument, parametr je vrácen jako <strong>&quot;%N&quot;</strong> v řetězci. Co se týká hodnot typu <strong>real</strong>, převod řetězce je omezen na dvě desetinná místa.</td>
 <td>V tomto příkladu vrátí zdroj dat <strong>PaymentModel</strong> seznam záznamů odběratelů prostřednictvím součásti <strong>Customer</strong> a datum zpracování prostřednictvím pole <strong>ProcessingDate</strong>. <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> Ve formátu elektronického výkaznictví, který je určený ke generování elektronického souboru pro vybrané odběratele, je vybrán řetězec <strong>PaymentModel</strong> jako zdroj dat, který řídí procesní tok. Jestliže je vybraný odběratel zastaven u data zpracování sestavy, je vyvolána výjimka pro koncové uživatele. Vzorec, který je určen pro tento typ ovládacího prvku pro zpracování, může využít následující zdroje:
 <ul>
 <li>Popisek aplikace Dynamics 365 for Operations SYS70894, který má následující text:

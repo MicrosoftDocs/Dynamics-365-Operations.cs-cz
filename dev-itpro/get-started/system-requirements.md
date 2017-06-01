@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.search.scope: Core
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 86053196a3aad6b7b5d7830860e1af347dd969d8
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: de2f71a21c5aac953349559c84283d0f76082d42
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -42,7 +42,9 @@ Webová aplikace Microsoft Dynamics 365 for Operations může běžet v kterémk
 -   Google Chrome (nejnovější veřejně dostupná verze) v systému Windows 10, Windows 8.1, Windows 8, Windows 7 nebo tabletu Google Nexus 10
 -   Apple Safari (nejnovější veřejně dostupná verze) v systému Mac OS X 10.10 (Yosemite), 10.11 El Capitan) nebo 10.12 (Sierra), nebo Apple iPad
 
-Poslední verzi pro každý webový prohlížeč naleznete na webu výrobce softwaru. **Poznámky:**
+Poslední verzi pro každý webový prohlížeč naleznete na webu výrobce softwaru. 
+
+**Poznámky:**
 
 -   K zachycení bitových kopií, které jsou generovány ze Záznamníku úkolů a jejich zahrnutí do dokumentů aplikace Microsoft Word, musíte mít nainstalováno rozšíření Chrome. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
 -   Editor pracovního postupu je spuštěn jako aplikace ClickOnce. Aplikace ClickOnce podporují pouze Microsoft Edge and Internet Explorer (v podporované verzi systému Microsoft Windows). Editor pracovního postupu aplikace ClickOnce vyžaduje 64bitový kompatibilní operační systém.
@@ -59,10 +61,12 @@ Retail Cloud POS pro webovou aplikaci Microsoft Dynamics 365 for Operations mů�
 -   Chrome (nejnovější veřejně dostupná verze) v systému Windows 10, Windows 8.1 nebo Windows 7
 
 ## <a name="network-requirements"></a>Požadavky na síť
--   Aplikace Dynamics 365 pro operace je určena pro sítě s čekací dobou menší než 150 milisekund (ms). Toto je čekací doba z prohlížeče klienta datového centra Microsoft Azure, který je hostitelem aplikace Dynamics 365 for Operations. Doporučujeme otestovat čekací dobu v síti na stránkách <http://www.azurespeed.com>.
+-   Aplikace Dynamics 365 for Operations je určena pro sítě s čekací dobou 250–300 milisekund (ms) nebo méně. Toto je čekací doba z prohlížeče klienta datového centra Microsoft Azure, který je hostitelem aplikace Dynamics 365 for Operations. Doporučujeme otestovat čekací dobu v síti na stránkách <http://www.azurespeed.com>.
 -   Požadavky na šířku pásma pro Dynamics 365 for Operations závisí na vašem scénáři. Některé běžné scénáře vyžadují šířku pásma větší než 50 kilobajtů za sekundu (kb/s). Pro scénáře, které mají vysoké požadavky na zatížení, jako jsou pracovní prostory, nebo scénáře, které obsahují rozsáhlé přizpůsobení, se však doporučuje větší šířka pásma.
 
-Obecně je aplikace Dynamics 365 for Operations optimalizována pro Internet. Počet opakovaných cest z klienta prohlížeče do datového centra Azure je velmi nízký a celé pracovní zatížení se komprimuje. **Upozornění:** Nevypočítávejte požadavky na šířku pásma z umístění klienta vynásobením počtu uživatelů požadavky minimální šířkou pásma. Souběžné využití daného umístění je velmi obtížné vypočítat. Pro zákazníky, kteří mají pochybnosti ohledně požadavků na šířku pásma použijte verzi preview aplikace Dynamics 365 for Operations.
+Obecně je aplikace Dynamics 365 for Operations optimalizována pro Internet. Počet opakovaných cest z klienta prohlížeče do datového centra Azure je velmi nízký a celé pracovní zatížení se komprimuje. 
+
+**Upozornění:** Nevypočítávejte požadavky na šířku pásma z umístění klienta vynásobením počtu uživatelů požadavky minimální šířkou pásma. Souběžné využití daného umístění je velmi obtížné vypočítat. Pro zákazníky, kteří mají pochybnosti ohledně požadavků na šířku pásma použijte verzi preview aplikace Dynamics 365 for Operations.
 
 ## <a name="net-framework-requirements"></a>Požadavky systému .NET Framework
 Dynamics 365 for Operations vyžaduje verzi .NET Framework 4.6.2 pro všechny aplikace click-once, například agenta směrování dokumentů. Pokyny k instalaci naleznete v tématu [Instalace rozhraní.NET Framework](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).

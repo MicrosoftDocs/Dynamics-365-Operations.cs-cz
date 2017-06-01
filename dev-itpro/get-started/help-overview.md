@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
@@ -18,10 +18,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6f785ac8b9a8be503bf9122f21716f745b17115b
-ms.openlocfilehash: f08434b4c818460009644e77da1b37ba86cc1d54
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 181ad9a7ab4e83ce9eb34312e93b1ebdeb2e04eb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/27/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -38,10 +38,14 @@ Microsoft Dynamics 365 for Operations zahrnuje zcela nový systém nápovědy, k
 -   Web s dokumentací
 -   Průvodci úkoly
 
-Wiki články i průvodce úkoly lze použít z podokna Nápověda aplikace Dynamics 365 for Operations, jak je uvedeno na následujícím snímku obrazovky. [![Podokno nápověda](./media/help-pane-ops-task-guides-1024x741.png)](./media/help-pane-ops-task-guides.png) Tento článek popisuje systém nápovědy a vysvětluje, jak lze vytvořit vlastní dokumentaci a zdroje školení pro vaši organizaci.
+Wiki články i průvodce úkoly lze použít z podokna Nápověda aplikace Dynamics 365 for Operations, jak je uvedeno na následujícím snímku obrazovky.
+
+![Podokno Nápověda](./media/help-pane-ops-task-guides-1024x741.png)
+
+Tento článek popisuje systém nápovědy a vysvětluje, jak lze vytvořit vlastní dokumentaci a zdroje školení pro vaši organizaci.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Nápověda na webu docs.microsoft.com
-Primární zdroj dokumentace produktu pro Dynamics 365 for Operations je web docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations). Web nabízí následující možnosti:
+Primární zdroj dokumentace produktu pro Dynamics 365 for Operations je web ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)). Web nabízí následující možnosti:
 
 -   **Přístup k nejaktuálnějšímu obsahu** – web nám poskytuje rychlejší a pružnější způsob vytváření, provedení a aktualizaci dokumentace k produktům. Díky tomu pomáhá zajistit, že budete mít přístup k aktuálním technickým informacím.
 -   **Obsah vytvořený odborníky** – web poskytuje lepší sadu dokumentace k produktu, kterou mohou vylepšovat členové komunity uvnitř i mimo aplikaci Microsoft.
@@ -50,13 +54,48 @@ Primární zdroj dokumentace produktu pro Dynamics 365 for Operations je web doc
 
 Přenesli jsme veškerý obsah z naší předchozí nápovědy wiki do dokumentů. Z našeho nového webu jsme nadšení a doufáme, že budete také.
 
-### <a name="when-can-we-use-it"></a>Jak ji můžeme používat?
+### <a name="searching-on-docsmicrosoftcom"></a>Vyhledávání na webu docs.microsoft.com
+Dostáváme spousty dotazů, jak vyhledávat náš obsah. Pokud na našem webu začnete stránkou o aplikaci Dynamics 365 for Operations, omezíme rozsah vašeho vyhledávání jenom na obsah pro Dynamics 365 for Operations. Rozsah vyhledávání můžete omezit kliknutím na X vedle možnosti Operace ve vyhledávacím poli. 
+![Vyhledat](./media/search-scope.png)
 
-Na wiki si můžete číst obsah dokumentů – je zcela veřejný a prohledávatelný a nevyžaduje přihlášení. K hledání obsahu můžete použít kterýkoli svůj oblíbený vyhledávač. Pokud chcete, můžete po přihlášení články na webu komentovat.
+Obsah lze také vyhledat pomocí libovolného modulu pro vyhledávání. Pro dosažení nejlepších výsledků vám doporučujeme použít vyhledávání na webu jako například :docs.microsoft.com „hledaný termín“  
+![Hledání na webu](./media/site-search.png)
+
+![Výsledky hledání na webu](./media/site-search-results.png)
 
 
-## <a name="task-guides"></a>Průvodci úkoly
-Průvodce záznamem úloh je kontrolovaný, řízený a interaktivní způsob, který vás provede kroky daného úkolu nebo obchodního procesu. Je možné otevřít (přehrát) Průvodce záznamem úloh v podokně Nápověda. Po prvním kliknutí na Průvodce záznamem úloh se v podokně Nápověda zobrazí podrobné pokyny pro úkol. Nově jsou k dispozici lokalizovaní průvodci záznamem úloh. [![Zobrazení čtení Průvodce záznamem úloh](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png) Chcete-li zažít řízenou interaktivní zkušenost, klikněte na možnost **Spustit průvodce záznamem úloh** v dolní části podokna Nápověda. Černá ukazatel otevře a určuje akci, kterou je třeba provést. Postupujte podle pokynů v uživatelském rozhraní a zadejte data podle pokynů. [![Pokyn ke kroku průvodc záznamem úloh](./media/task-guide-step-1-ops.png)](./media/task-guide-step-1-ops.png) **Důležité:** Data, která zadáte při přehrávání průvodce úkolem, jsou pravdivá. Pokud jste ve výrobním prostředí, budou zadána data, která skutečně používáte.
+### <a name="how-can-i-contribute"></a>Jak mohu přispět? 
+
+Nechte nám komentář. 
+
+1 Klikněte na **Komentáře** pro získání komentářů ve spodní části stránky.
+
+![Poznámky](./media/comments.png)
+
+2 Začněte psát komentáře a potom klikněte na **Publikovat komentář**.
+
+![Publikovat komentář](./media/before-signin.png)
+
+3 Vyberte typ účtu, se kterým se chcete přihlásit:  
+Klikněte na některou z ikon vlevo, pokud chcete tento web propojit s existujícím účtem, jako je Twitter, Facebook nebo účet Microsoft. 
+
+Nebo 
+
+Vpravo zadejte e-mailovou adresu a nové heslo k vytvoření nového účtu pro dané místo. 
+
+![Možnosti přihlášení](./media/signin-options.png)
+
+
+## <a name="task-guides"></a>Průvodci záznamem úloh
+Průvodce záznamem úloh je kontrolovaný, řízený a interaktivní způsob, který vás provede kroky daného úkolu nebo obchodního procesu. Je možné otevřít (přehrát) Průvodce záznamem úloh v podokně Nápověda. Po prvním kliknutí na Průvodce záznamem úloh se v podokně Nápověda zobrazí podrobné pokyny pro úkol. Nově jsou k dispozici lokalizovaní průvodci záznamem úloh. 
+
+![Zobrazení pro čtení Průvodce záznamem úloh](./media/task-guide-ops-1024x742.png)
+
+Chcete-li zažít řízenou interaktivní zkušenost, klikněte na možnost **Spustit průvodce úkole** v dolní části podokna Nápověda. Černá ukazatel otevře a určuje akci, kterou je třeba provést. Postupujte podle pokynů v uživatelském rozhraní a zadejte data podle pokynů. 
+![Pokyny ke kroku Průvodce záznamem úloh](./media/task-guide-step-1-ops.png)
+
+> [!IMPORTANT] 
+> Data, která zadáte při přehrávání Průvodce záznamem úloh jsou skutečná. Pokud jste ve výrobním prostředí, budou zadána data, která skutečně používáte.
 
 ### <a name="it-all-begins-with-task-recorder"></a>Vše začíná v Záznamníku úkolů
 
@@ -72,7 +111,9 @@ Další informace o průvodci záznamem úloh viz [Záznamník úloh v Dynamics 
 Můžete vytvořit vlastní záznamy úkolů nebo můžete stáhnout a upravit záznam úkolu, který poskytuje společnost Microsoft. Proto můžete vytvořit upravenou nápovědu pro vaši organizaci, které odpovídá konkrétní implementaci aplikace Dynamics 365 for Operations. Chcete-li zobrazit záznam úloh v podokně Nápověda aplikace Dynamics 365 for Operations a přehrát jej jako průvodce záznamem úloh, musíte záznam uložit do knihovny BPM v LCS. Pro partnery platí, že pokud knihovnu nastavíte jako podnikovou knihovnu a zahrnete ji do řešení, bude k dispozici vašim odběratelům. Úplné pokyny viz [Vytváření dokumentace nebo školení pomocí záznamu úloh](../user-interface/task-recorder.md).
 
 ## <a name="in-product-help"></a>Nápověda v produktu
-Chcete-li získat přístup k obsahu nápovědy v aplikaci Dynamics 365 for Operations, klikněte na ikonu **Nápověda** (**?**) a vyberte Nápovědna nebo stiskněte klávesy Ctrl + Shift +?. V obou případech se otevře podokno Nápověda. Z podokna Nápověda můžete otevřít články nebo průvodce záznamem úloh. [![Podokno Nápověda](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
+Chcete-li získat přístup k obsahu nápovědy v aplikaci Dynamics 365 for Operations, klikněte na ikonu **Nápověda** (**?**) a vyberte Nápovědna nebo stiskněte klávesy Ctrl + Shift +?. V obou případech se otevře podokno Nápověda. Z podokna Nápověda můžete otevřít články nebo průvodce záznamem úloh. 
+
+![Podokno Nápověda](./media/help-pane-wiki-1024x684.png)
 
 ### <a name="accessing-articles-from-the-help-pane"></a>Přístup k článkům z podokna Nápověda
 
@@ -80,19 +121,24 @@ Z podokna Nápověda můžete otevřít články, které se týkají klienta apl
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Přístup k průvodcům záznamem úloh z podokna Nápověda
 
-Před zobrazením průvodců záznamem úloh v podokně **Nápověda** musí správce systému přejít na stránku Systémové parametry v aplikaci Dynamics 365 for Operations a konfigurovat některá nastavení. **Poznámky:**
+Před zobrazením průvodců záznamem úloh v podokně **Nápověda** musí správce systému přejít na stránku Systémové parametry v aplikaci Dynamics 365 for Operations a konfigurovat některá nastavení. 
 
--   Než bude možné konfigurovat nápovědu, musíte být přihlášeni pomocí účtu ve stejném klientovi, jako ve kterém je aplikace Dynamics 365 for Operations nasazena.
--   Není možné připojit se do knihovny LCS z instance aplikace Dynamics 365 for Operations spuštěné na místním virtuálním pevném disku (VHD).
+> [!NOTE]
+> -   Než bude možné konfigurovat nápovědu, musíte být přihlášeni pomocí účtu ve stejném klientovi, jako ve kterém je aplikace Dynamics 365 for Operations nasazena.
+> -   Není možné připojit se do knihovny LCS z instance aplikace Dynamics 365 for Operations spuštěné na místním virtuálním pevném disku (VHD).
 
-[![Formulář Nastavení nápovědy k systémovým parametrům](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) Na stránce **Systémové parametry** proveďte následující kroky:
+![Formulář Systémové parametry s nastavením nápovědy](./media/system-parameters_ops-1024x437.png)
 
-1.  **Upozornění:**při prvním otevření karty Nápověda je nutné se připojit ke Lifecycle Services. Nezapomeňte klepnout na odkaz v polovině formuláře, počkat na připojení, zavřít dialogové okno a klepnout na tlačítko OK pro přístup k formuláři parametrů..[![Připojit k LCS](./media/connect-to-lcs-crop-1024x365.png)](./media/connect-to-lcs-crop.png)
+Na stránce **Systémové parametry** proveďte následující kroky:
+
+1.  **Upozornění:**při prvním otevření karty Nápověda je nutné se připojit ke Lifecycle Services. Nezapomeňte klepnout na odkaz v polovině formuláře, počkat na připojení, zavřít dialogové okno a klepnout na tlačítko OK pro přístup k formuláři parametrů.
+![Připojit k LCS](./media/connect-to-lcs-crop-1024x365.png)
 2.  Vyberte projekt služby Lifecycle Services pro připojení.
 3.  Vyberte knihovny BPM (v rámci vybraného projektu), ze kterých chcete načíst záznamy úkolů.
 4.  Nastavte pořadí zobrazení knihoven BPM. Tato možnost určuje pořadí, ve kterém se záznamy úkolů z knihoven zobrazí v podokně Nápověda.
 
-Jakmile správce systému provede tyto kroky, můžete otevřít podokno Nápověda a kliknout na kartu **Průvodci úkolem**. Nyní uvidíte průvodce záznamem úloh vztahující ke stránce, kterou máte aktuálně otevřenou v aplikaci Dynamics 365 for Operations. Pokud nebyli nalezeni žádní průvodci záznamem úloh, můžete zadat klíčová slova pro upřesnění hledání. Po kliknutí na Průvodce záznamem úloh v podokně Nápověda se v podokně Nápověda zobrazí podrobné pokyny a můžete také přehrát průvodce úkolem. [![Zobrazení Průvodce záznamem úloh pro čtení](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png)
+Jakmile správce systému provede tyto kroky, můžete otevřít podokno Nápověda a kliknout na kartu **Průvodci úkolem**. Nyní uvidíte průvodce záznamem úloh vztahující ke stránce, kterou máte aktuálně otevřenou v aplikaci Dynamics 365 for Operations. Pokud nebyli nalezeni žádní průvodci záznamem úloh, můžete zadat klíčová slova pro upřesnění hledání. Po kliknutí na Průvodce záznamem úloh v podokně Nápověda se v podokně Nápověda zobrazí podrobné pokyny a můžete také přehrát průvodce úkolem. 
+![Zobrazení pro čtení Průvodce záznamem úloh](./media/task-guide-ops-1024x742.png)
 
 ### <a name="where-are-the-translated-task-guides"></a>Kde jsou přeloženi průvodci záznamem úloh?
 

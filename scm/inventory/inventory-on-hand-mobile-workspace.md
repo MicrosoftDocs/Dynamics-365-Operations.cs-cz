@@ -3,10 +3,10 @@ title: "Mobilní pracovní prostor zásob na skladě"
 description: "Toto téma obsahuje informace o mobilním pracovním prostoru zásob na skladě, který je k dispozici pro mobilní aplikaci Microsoft Dynamics 365 for Operations. Tento mobilní pracovní prostor pomáhá získat mobilní přehled o rezervovaných a dostupných zásobách a je k dispozici kdykoli a kdekoli."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -19,10 +19,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: e703ae80800b993ebca1c7bee455af1be41c7d5f
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 7387df37e047d5ab7a90b696a6ffa249094499c4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -37,15 +37,21 @@ Toto téma obsahuje informace o mobilním pracovním prostoru zásob na skladě,
 <a name="overview-of-the-inventory-on-hand-mobile-workspace"></a>Přehled mobilního pracovního prostoru zásob na skladě
 --------------------------------------------------
 
-Firmy mají obvykle více dodávek a příjmů zásob každý den. Tyto pohyby neustále mění stav zásob na skladě. Mobilní centrum **zásob na skladě** umožňuje zobrazit stav zásob na skladě společnosti tak, aby bylo možné získat nejnovější přehled o skladových zásobách na mobilních zařízeních podle vašeho výběru. Bez ohledu na to, zda pracujete ve skladu, nákupu, prodeji, výrobě nebo řízení nebo mají jiné role, můžete přistupovat k datům na skladě kdykoli a kdekoli. Mobilní pracovní prostor poskytuje okamžitý přehled o stavu zásob mezi zařízeními. To umožňuje zobrazit zásoby na skladě mezi zařízeními, aktuální rezervace materiálu a nerezervované zásoby na skladě. Můžete také zadat čísla zboží k dotazování množství na skladě a provést filtrované vyhledávání produktů na skladě nebo variant. Mobilní pracovní prostor konkrétně poskytuje následující funkce:
+Firmy mají obvykle více dodávek a příjmů zásob každý den. Tyto pohyby neustále mění stav zásob na skladě. Mobilní centrum **zásob na skladě** umožňuje zobrazit stav zásob na skladě společnosti tak, aby bylo možné získat nejnovější přehled o skladových zásobách na mobilních zařízeních podle vašeho výběru. Bez ohledu na to, zda pracujete ve skladu, nákupu, prodeji, výrobě nebo řízení nebo mají jiné role, můžete přistupovat k datům na skladě kdykoli a kdekoli. 
+
+Mobilní pracovní prostor poskytuje okamžitý přehled o stavu zásob mezi zařízeními. To umožňuje zobrazit zásoby na skladě mezi zařízeními, aktuální rezervace materiálu a nerezervované zásoby na skladě. Můžete také zadat čísla zboží k dotazování množství na skladě a provést filtrované vyhledávání produktů na skladě nebo variant. 
+
+Mobilní pracovní prostor konkrétně poskytuje následující funkce:
 
 -   Můžete vyhledávat podle čísla produktu nebo názvu produktu k zobrazení stavu zásob na skladě.
+
 -   U vybraných produktů můžete zobrazit následující informace:
     -   Zásoby na skladě podle pracoviště
     -   Množství zásob podle skladu
     -   Zásoby na skladě podle pracoviště
     -   Zásoby na skladě podle šarže (pro kontrolované šarže produktů)
     -   Zásoby na skladě podle stavu zásob
+    
 -   Zásoby na skladě produktu jsou zobrazeny následujícím způsobem:
     -   Podle fyzické inventury (Toto zobrazení představuje celkovou částku).
     -   Podle fyzické rezervy (Toto zobrazení představuje rezervovanou částku).
@@ -71,7 +77,7 @@ Abyste mohli používat mobilní pracovní prostor **Zásoby na skladě**, musí
 <tr class="odd">
 <td>Musí být implementována aplikace Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější.</td>
 <td>Správce systému</td>
-<td>Pokud nemáte aplikaci Dynamics 365 for Operations v organizaci nasazenou, správce systému by si měl přečíst téma <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Nasazení ukázkového prostředí Microsoft Dynamics 365 for Operations</a>.</td>
+<td>Pokud nemáte aplikaci Dynamics 365 for Operations v organizaci nasazenou, správce systému by si měl přečíst téma <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Nasazení ukázkového prostředí Microsoft Dynamics 365 for Operations</a>.</td>
 </tr>
 <tr class="even">
 <td>Musí být implementován článek KB 4013633.</td>
@@ -79,9 +85,9 @@ Abyste mohli používat mobilní pracovní prostor **Zásoby na skladě**, musí
 <td>KB 4013633 (aktualizace X++ nebo oprava hotfix metadat) obsahuje čtyři mobilní pracovní prostory pro řízení řetězce dodávek. Před implementací KB 4013633 musí správce systému udělat toto:
 <ol>
 <li>Stáhněte KB 4013633 z webu Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Nainstalujte opravu hotfix metadat</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Vytvořte nasaditelný balíček</a>, který obsahuje model <strong>SCMMobile</strong>, a nahrajte ho do LCS.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Použijte nasaditelný balíček</a> v systému Dynamics 365 for Operations.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Nainstalujte opravu hotfix metadat</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Vytvořte nasaditelný balíček</a>, který obsahuje model <strong>SCMMobile</strong>, a nahrajte ho do LCS.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Použijte nasaditelný balíček</a> v systému Dynamics 365 for Operations.</li>
 </ol></td>
 </tr>
 <tr class="odd">
@@ -114,7 +120,7 @@ Stáhněte aplikaci Microsoft Dynamics 365 for Operations z obchodu s mobilními
 
 ## <a name="view-the-onhand-inventory-for-a-product-by-using-the-inventory-onhand-mobile-workspace"></a>Zobrazte množství na skladě pro produkt pomocí mobilního pracovního prostoru množství na skladě
 1.  Na svém mobilním zařízení vyberte pracovní prostor **Zásoby na skladě**.
-2.  Vyberte **Kontrola zásob na skladě pro položku**. Zobrazí se seznam produktů, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace naleznou vývojáři v tématu [Mobilní platforma aplikace Dynamics 365 for Operations](http://ax.help.dynamics.com/en/wiki/mobile-development-handbook/).
+2.  Vyberte **Kontrola zásob na skladě pro položku**. Zobrazí se seznam produktů, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace naleznou vývojáři v tématu [Mobilní platforma aplikace Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
 3.  Pokud položka není v seznamu uvedena, vyberte **Hledat více**, chcete-li provést online hledat v Dynamics 365 for Operations. Vyhledávejte podle čísla produktu nebo přepněte do vyhledávání podle názvu produktu.
 4.  Vyberte produkt. Pokud položka obsahuje obrázek, obrázek je zobrazen.
 5.  Vyberte jednu z následujících možností k zobrazení stavu zásob na skladě:

@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -19,10 +19,10 @@ ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
-ms.openlocfilehash: a5c45bb0b9ed10c989a3222a751df3f454b14a0b
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: eaee0edb4822a386c8781d9929999cea326f0a40
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/26/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -53,7 +53,7 @@ Atributy umožňují popis produktu a jeho charakteristik prostřednictvím uži
 | Plazma     | Provozní teplota od      | 0–43 °C              | 32            |
 | Plazma     | Provozní teplota do        | 0–43 °C              | 100           |
 | Projekční | Záruka | 6, 12 nebo 18 měsíců         | 12            |
-| Projekční | # Počet trubic:     | 1–5                         | 3             |
+| Projekční | Počet trubic    | 1–5                         | 3             |
 
 
 ## <a name="attribute-type"></a>Typ atributu
