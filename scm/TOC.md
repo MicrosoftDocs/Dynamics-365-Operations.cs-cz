@@ -43,6 +43,8 @@
 ### [Nastavení účtů dodavatele](procurement/set-up-vendor-accounts.md)
 ### [Dodavatelská spolupráce s externími dodavateli](procurement/vendor-collaboration-work-external-vendors.md)
 ### [Dodavatelská spolupráce se zákazníky](procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
+### [Použití externích katalogů pro funkci PunchOut eProcurement](procurement/use-external-catalogs-for-punchout.md)
+### [Nastavení externího katalogu pro funkci PunchOut eProcurement](procurement/set-up-external-catalog-for-punchout.md)
 ### [Spolupráce s dodavateli pomocí portálu pro dodavatele](procurement/collaborate-vendors-vendor-portal.md)
 ### [Mobilní pracovní prostor dodavatelské spolupráce](procurement/vendor-collaboration-mobile-workspace.md)
 ### [Zabezpečení uživatele dodavatelského portálu](procurement/configure-security-vendor-portal-users.md)
@@ -50,19 +52,37 @@
 ### [Nákupní smlouvy](procurement/purchase-agreements.md)
 ## Příjemky a fakturace produktů
 ### [Příjemka produktu proti nákupním objednávkám](procurement/product-receipt-against-purchase-orders.md)
-### [Přehled faktur dodavatele](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
-### [Účetní profily dodavatele](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
+### [Přehled faktur dodavatele](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Účetní profily dodavatele](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # Řízení informací o produktech
-## Informace o produktu
-### [Kusovník a receptura](production-control/bill-of-material-bom.md)
-### [Funkce návrháře kusovníku](production-control/bom-designer-functionality.md)
-### [Dimenze produktu](pim/product-dimensions.md)
-### [Výchozí nastavení objednávky pro dimenze a varianty produktu](production-control/default-order-settings.md)
-### [Názvosloví čísla produktu](pim/product-variant-identification-nomenclature.md)
-### [Nejčastější dotazy týkající se překladů souvisejících s produkty](pim/translations-product-related-information.md)
-### [Registrace sériového čísla v prodejním procesu](sales-marketing/register-serial-numbers-sales-process.md)
-### [Vyhledávání produktu během zadání objednávky](pim/search-products-product-variants.md)
-## Vytvoření konfigurace produktu
+## [Přehled informací o produktech](pim/product-information.md)
+## Udržování kategorií produktu
+## Udržování informací o produktech
+### Udržování definice produktů
+#### [Názvosloví čísla produktu](pim/product-variant-identification-nomenclature.md)
+#### Šablony produktu
+#### [Dimenze produktu](pim/product-dimensions.md)
+#### Atributy produktu
+#### Obrázky produktu a přílohy
+#### Identifikátory produktu
+#### [Nejčastější otázky o překladech produktových informací](pim/translations-product-related-information.md)
+### Uvolnění produktů pro právnické osoby
+### Vyhledávání produktů
+#### [Vyhledávání produktu během zadání objednávky](pim/search-products-product-variants.md)
+### Příprava produktu pro plánování
+#### [Výchozí nastavení objednávky pro dimenze a varianty produktu](production-control/default-order-settings.md)
+#### Prognóza modelů a alokační klíče položek
+### Příprava produktu pro produkci
+#### Kusovník a receptura
+##### [Kusovníky a receptury](production-control/bill-of-material-bom.md)
+##### [Použití návrháře kusovníků](production-control/bom-designer-functionality.md)
+##### [Použití návrháře receptur](production-control/formula-designer.md)
+#### Postupy
+#### Lean manufacturing
+### Příprava produktů pro sklad a logistiku
+### Odhad nákladů pro produkty
+#### [Výpočty kusovníku](cost-management/bom-calculations.md)
+## Udržovat modely konfigurace produktu
 ### [Vytvoření modelu konfigurace produktu](pim/build-product-configuration-model.md)
 ### [Nejčastější dotazy týkající se výpočtu pro model konfigurace produktu](pim/calculate-product-configuration-models.md)
 ### [Konfigurační pravidlo](pim/configuration-rules.md)
@@ -71,6 +91,8 @@
 ### [Opětovné použití konfigurace produktu](pim/reuse-product-configurations.md)
 ### [Nastavení modelu konfigurace](pim/set-up-maintain-product-configuration-model.md)
 ### [Omezení systémem definované a uživatelem definované tabulky](pim/system-defined-user-defined-table-constraints.md)
+## Import dat informací o produktu
+## Export dat informací o produktu
 # Řízení výroby
 ## [Přehled výrobního procesu](production-control/production-process-overview.md)
 ## [Plánování kombinovaného režimu: kombinování diskrétního, procesního a štíhlého zajištění zdrojů](production-control/mixed-mode-plan.md)
@@ -82,7 +104,7 @@
 #### [Funkce návrháře kusovníku](production-control/bom-designer-functionality.md)
 #### [Výpočty kusovníku](cost-management/bom-calculations.md)
 #### [Provozní zdroje](production-control/operations-resources.md)
-#### [Schopnosti zdrojů](production-control/resource-capabilities.md)
+#### [Možnosti zdrojů](production-control/resource-capabilities.md)
 #### [Postupy a operace](production-control/routes-operations.md)
 #### [Výchozí hodnoty výrobního příkazu při realizaci výroby](production-control/production-order-defaults-manufacturing-execution.md)
 #### [Zásady práce ve skladu](warehousing/warehouse-work-policies.md)
@@ -96,6 +118,8 @@
 #### [Vrácení stavu výrobní zakázky](production-control/reverse-production-order-status.md)
 #### [Vykázání výrobních zakázek jako dokončených](production-control/report-production-orders-as-finished.md)
 #### [Vykázání kusovníku jako dokončeného](production-control/report-boms-as-finished.md)
+#### [Cross docking z výrobních příkazů na výstupní překladiště](production-control/cross-docking-opportunities.md)
+#### [Registrace spotřeby materiálu pomocí mobilního zařízení](production-control/register-material-consumption-hand-held-device.md)
 #### [Nahrazení materiálů ve výrobě](production-control/substitute-items-bom-lines.md)
 #### [Registrace pro realizaci výroby](production-control/registration-manufacturing-execution.md)
 #### [Zpětná vazba z výroby](production-control/production-feedback.md)
@@ -111,8 +135,9 @@
 #### [Modelování organizace úsporné výroby](production-control/lean-manufacturing-modeling-lean-organization.md)
 #### [Provozní zdroje](production-control/operations-resources.md)
 ### Plánování kanbanových úloh
+#### [Vizuální plánování pro lean manufacturing](production-control/visual-scheduling-lean-manufacturing.md)
 #### [Plánování kanbanové úlohy pro lean manufacturing](production-control/lean-manufacturing-kanban-job-scheduling.md)
-#### [Plánování úloh](production-control/job-scheduling.md)
+#### [Plánování úlohy](production-control/job-scheduling.md)
 ### Provoz kanbanových úloh
 #### [Podpora desky převodů kanbanu pro čtečky čárového kódu](production-control/kanban-transfer-board-support-barcode-scanner.md)
 #### [Zpětná vazba z výroby](production-control/production-feedback.md)
@@ -120,14 +145,15 @@
 ### Správa hlavních dat výroby
 #### [Kusovníky a receptury](production-control/bill-of-material-bom.md)
 #### [Provozní zdroje](production-control/operations-resources.md)
-#### [Schopnosti zdrojů](production-control/resource-capabilities.md)
+#### [Možnosti zdrojů](production-control/resource-capabilities.md)
 #### [Atributy dávky](production-control/batch-attributes.md)
 #### [Výchozí hodnoty výrobního příkazu při realizaci výroby](production-control/production-order-defaults-manufacturing-execution.md)
 #### [Požadavky na nastavení výroby](production-control/production-set-up-requirements.md)
 ### Plánování výrobních operací
 #### [Plánování operací](production-control/operations-scheduling.md)
 #### [Možnosti plánování operací](production-control/operation-scheduling-options.md)
-#### [Plánování úloh](production-control/job-scheduling.md)
+#### [Plánování úlohy](production-control/job-scheduling.md)
+#### [Ganttův diagram pro plánování úloh](production-control/visual-scheduling-production.md)
 ### Provozování výrobních úloh
 #### [Konsolidované dávkové objednávky](production-control/consolidated-batch-orders.md)
 #### [Nahrazení materiálů ve výrobě](production-control/substitute-items-bom-lines.md)
@@ -162,25 +188,34 @@
 ## [Správa přepravy](transportation/transportation-management-overview.md)
 ## [Modul přepravy](transportation/transportation-management-engines.md)
 # Řízení skladu
+## Rozšířená správa skladu
+### [Migrace z aplikace AX 2012 na aplikaci Finance and Operations](warehousing/upgrade-migration-warehouse-management-processes.md)
 ## Nastavení 
 ### [Řízení práce pomocí šablon práce a směrnice pro místa](warehousing/control-warehouse-location-directives.md)
 ### [Řízení pracovníků skladu](warehousing/manage-warehouse-workers.md)
 ### [Nastavení rozložení](warehousing/warehouse-configuration.md)
 ### [Zásady práce ve skladu](warehousing/warehouse-work-policies.md)
 ### [Měrná jednotka a zásady uskladnění](warehousing/unit-measure-stocking-policies.md)
-### [Obsah skladu v Power BI](/dynamics365/operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/operations/scm/toc.json)
+### [Obsah skladu v Power BI](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
+### [Potvrzení dávky a poznávací značky](warehousing/batch-and-license-plate-confirmation.md)
+### [Pohyb zásob s přidruženou prací](warehousing/move-inventory-associated-work.md)
+### [Systémové seskupení na otevřeném seznamu úkolů](warehousing/system-group-on-open-work-list.md)
+### [Potvrzení produktu pro výdej v seskupení](warehousing/cluster-picking-item-confirmation.md)
 ## Výdej a balení
 ### [Obalové materiály a poplatky](warehousing/pack-materials-packing-material-fees.md)
+### [Potvrzení výdeje kusů](warehousing/piece-picking-confirmation.md)
 ## Inventura skladu
 ### [Blokování zásob](inventory/inventory-blocking.md)
 ### [Cyklická inventura](warehousing/cycle-counting.md)
-### [Deník zásob](inventory/inventory-journals.md)
+### [Částečná cyklická inventura místa](warehousing/partial-location-cycle-counting.md)
+### [Deník inventáře](inventory/inventory-journals.md)
 ### [Skladové místo](inventory/inventory-locations.md)
-### [Stav zásob](inventory/inventory-statuses.md)
+### [Stav skladu](inventory/inventory-statuses.md)
 ### [Počet označení zásob](inventory/inventory-tag-counting.md)
 ## Vytváření kontejnerů 
 ## Doplnění
 ### [Doplnění](warehousing/replenishment.md)
+### [Doplnění s kanbany odběru](warehousing/material-replenishment-withdrawal-kanban.md)
 ## Mobilní zařízení
 ### [Instalace a konfigurace skladové aplikace ](warehousing/install-configure-warehousing-app.md)
 ### [Konfigurace názvů polí ve skladové aplikaci](warehousing/configure-app-field-names-priorities-warehouse.md)
@@ -188,15 +223,15 @@
 ### [Portál skladu pro mobilní zařízení (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
 ### [Nastavení zobrazení skladových mobilních zařízení](warehousing/change-warehouse-mobile-device-displays.md)
 
-# [Finance](/dynamics365/operations/financials/index)
+# [Finance](/dynamics365/unified-operations/financials/index)
 
-# [Lidské zdroje](/dynamics365/operations/human-resources/index)
+# [Lidské zdroje](/dynamics365/unified-operations/talent/index)
 
-# [Maloobchod](/dynamics365/operations/retail/index)
+# [Maloobchod](/dynamics365/unified-operations/retail/index)
 
-# [Vývojář a správce](/dynamics365/operations/dev-itpro/index)
+# [Vývojář a správce](/dynamics365/unified-operations/dev-itpro/index)
 
-# Jiné prostředky
-## [Dynamics 365 for Operations – glosář](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/supply-chain/toc.json)
-## [Co je nového a co se změnilo](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/supply-chain/toc.json)
+# Další zdroje
+## [Glosář pro aplikaci Finance and Operations](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## [Co je nového a co se změnilo](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 

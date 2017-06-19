@@ -1,5 +1,5 @@
 # Balíček obsahu Power BI
-## [Balíček obsahu správy nákladů](/dynamics365/operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Balíček obsahu správy nákladů](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # Předem stanované náklady
 ## [Nákladový formulář](costing-sheets.md)
 ## [Nákladová verze](costing-versions.md)

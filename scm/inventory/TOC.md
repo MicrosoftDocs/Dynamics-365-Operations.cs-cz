@@ -21,4 +21,5 @@
 # Sledování zboží a dávky
 ## [Sloučení dávky skladových zásob](merge-inventory-batches.md)
 ## [Sledování zboží a surovin](trace-items-raw-materials-inventory-production-sales.md)
+## [Registrace sériového čísla v prodejním procesu](../sales-marketing/register-serial-numbers-sales-process.md)
 

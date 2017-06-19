@@ -13,10 +13,11 @@
 ## [Definování maloobchodních sítí](define-maintain-retail-channels.md)
 ## [Přehled online obchodu](online-stores.md)
 ## [Konfigurace a instalace hardwarové stanice pro obchod](retail-hardware-station-configuration-installation.md)
-## [Časové pásmo a návštěvnost maloobchodu](retail-time-attendance.md)
+## [Čas a návštěvnost maloobchodu](retail-time-attendance.md)
 # Domovská stránka Moderního pokladního místa MPOS a Cloud POS
 ## Hardware a periferní zařízení
 ### [Přehled maloobchodních zařízení](retail-peripherals-overview.md)
+### [Simulátor periferních zařízení maloobchodu](retail-peripheral-simulator.md)
 ### [Hardwarová periferní zařízení POS testovaná společností Microsoft](microsoft-tested-pos-hardware-peripherals.md)
 ### [Definování a správa klientů z obchodních kanálů, pokladen a hardwarových stanic](define-maintain-channel-clients-registers-hw-stations.md)
 ## Rozložení obrazovky
@@ -42,6 +43,7 @@
 ## Účtenky
 ### [Nastavení šablon účtenek](receipt-templates-printing.md) 
 ### [Odesílání účtenek e-mailem z MPOS](email-receipts.md)
+## [Záznamník úloh a nápověda pro POS](task-recorder-retail-pos.md)
 # Monitorování a analýza
 ## [Monitorování výkonnosti z hlediska prodejů a marží](monitor-sales-margin-performance.md)
 ## [Analýza trendů a vzorců prodeje](analyze-sales-trends-patterns.md)
@@ -52,7 +54,8 @@
 # Úpravy slev a cen
 ## [Úpravy ceny a slevy](price-adjustments-discounts.md)
 ## [Určení optimální kombinace překrývajících se slev](optimal-combination-overlapping-discounts.md)
-## [Definovat slevy specifické pro kanál](define-channel-specific-discounts.md)
+## [Definování slevy specifické pro kanál](define-channel-specific-discounts.md)
+## [Vytvoření kupónů pro maloobchodní prodej](retail-coupons.md)
 # Produkty a reklamní prodej
 ## [Hierarchie maloobchodu](retail-hierarchies.md)
 ## [Vytvoření a správa atributů](create-manage-attributes.md)
@@ -60,7 +63,8 @@
 ## [Nastavení čárových kódů](set-up-bar-codes.md)
 ## [Nastavení masek čárových kódů](set-up-bar-code-masks.md)
 ## [Nastavení sortimentu](set-up-assortments.md)
-# Loajalita
+## [Prodej a návrat produktů, mimo sortiment](sell-return-outside-assortments.md)
+# Věrnostní program
 ## [Nastavení zákaznického věrnostního programu](set-up-customer-loyalty-program.md)
 # Zásoby
 ## [Správa zásob obchodu](work-with-store-inventory.md)
@@ -69,15 +73,15 @@
 ## [Organizace a hierarchie organizace (Základy obchodování)](organizational-hierarchies-commerce-essentials.md)
 # [Obsah pro odborníky na IT a vývojáře](dev-itpro/TOC.md)
 
-# [Finance](/dynamics365/operations/financials/index)
+# [Finance](/dynamics365/unified-operations/financials/index)
 
-# [Lidské zdroje](/dynamics365/operations/human-resources/index)
+# [Lidské zdroje](/dynamics365/unified-operations/talent/index)
 
-# [Správa dodavatelsko-odběratelského řetězce](/dynamics365/operations/supply-chain/index)
+# [Správa dodavatelsko-odběratelského řetězce](/dynamics365/unified-operations/supply-chain/index)
 
-# [Vývojář a správce](/dynamics365/operations/dev-itpro/index)
+# [Vývojář a správce](/dynamics365/unified-operations/dev-itpro/index)
 
-# Jiné prostředky
-## [Dynamics 365 for Operations – glosář](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
-## [Co je nového a co se změnilo](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+# Další zdroje
+## [Glosář pro aplikaci Dynamics 365 for Retail](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/retail/toc.json)
+## [Co je nového a co se změnilo](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/retail/toc.json)
 

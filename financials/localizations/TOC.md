@@ -1,4 +1,4 @@
-# [Přehled lokalizace](/dynamics365/operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/operations/financials/toc.json)
+# [Přehled lokalizace](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/toc.json)
 # Asie a Tichomoří
 ## Austrálie
 ### [Formáty bankovních souborů](apac-aus-method-of-payment-pay-vendors-banks.md)
@@ -54,6 +54,7 @@
 ## [Zaúčtování předpořízení dlouhodobého majetku](emea-pre-acquisition-acquisition-fixed-asset.md)
 ## [PSČ](emea-import-create-postal-codes-manually.md)
 ## [ID registrace](emea-registration-ids.md)
+## [DPH stornovacího poplatku](emea-reverse-charge.md)
 ## [Přehled převodu kreditu SEPA](../accounts-payable/sepa-credit-transfer.md)
 ## [Přehled přímého inkasa SEPA](../accounts-receivable/sepa-direct-debit-overview.md)
 ## [Nastavení podepisujících uživatelů tištěných formulářů](emea-set-up-signers-for-printing-forms.md)
@@ -98,7 +99,7 @@
 ### [Sestava seznamu deníku](emea-deu-journal-list-report.md)
 ### [Tisk samostatného štítku pro dobropisy z prodejů](emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ## Maďarsko
-### [Metody odpisu dlouhodobého majetku](emea-hun-fixed-assets-depreciation-methods.md)    
+### [Metody odpisu dlouhodobého majetku](emea-hun-fixed-assets-depreciation-methods.md)   
 ### [Dlouhodobý majetek s nízkými náklady](emea-hun-low-cost-fixed-assets.md)
 ### [Přesun dlouhodobého majetku do zásob](emea-hun-fixed-asset-to-inventory.md)
 ## Itálie
@@ -138,6 +139,7 @@
 ### [Přecenění skupiny dlouhodobého majetku](emea-esp-fixed-asset-group-revaluation.md)
 ### [DPH intrakomunitárního plnění](emea-esp-intra-community-vat.md)
 ### [Jednorázoví odběratelé](emea-esp-no-one-time-customer-for-project-contracts.md)
+### [Tisk šeků se španělským rozvržením](emea-esp-print-checks-with-spanish-layout.md)
 ### [Možnosti vlastní směnky](emea-esp-promissory-note-options.md)
 ### [Prodejní a nákupní cykly](emea-esp-sales-purchase-cycle.md)
 ### [Speciální záznamy a počáteční stavy](emea-esp-opening-sheets-spain.md)
@@ -153,7 +155,9 @@
 ### [Fiskální knihy](latam-bra-fiscal-books.md)
 #### [ICMS – daňové fiskální dokumenty](latam-bra-icms-tax-fiscal-documents.md)
 #### [Import fiskálních dokumentů](latam-bra-import-fiscal-documents.md)
+#### [Export a import transakcí právnické osoby z konsolidace hlavní knihy](latam-bra-general-ledger-consolidation-transactions.md)
 #### [Import a ověření dokumentů NF-e XML a souborů DANFE](latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
+#### [Zpracování elektronických platebních úhrad](latam-bra-process-electronic-payment-remittances.md)
 #### [Fiskální dokumenty](latam-bra-fiscal-documents-fiscal-document-framework.md)
 #### [Zástupný text u fiskálních dokumentů](latam-bra-fiscal-document-text-placeholders.md)
 #### [Nákupní doplňkové fiskální dokumenty](latam-bra-purchase-complementary-fiscal-documents.md)
@@ -163,6 +167,8 @@
 ### [Deníky generované během procesu vracení elektronické platby](latam-bra-examples-journals-generated-electronic-payment-return-process.md)
 ### [Proces NF-e](latam-bra-nf-e-process.md)
 ### [Parametry pro právnické osoby](latam-bra-legal-entity-parameters.md)
+### [Pořízení dlouhodobého majetku CIAP](latam-bra-ciap-fixed-asset.md)
+### [Vyřazení dlouhodobého majetku CIAP](latam-bra-ciap-fixed-asset.md)
 ### [Daně](latam-bra-calculate-taxes.md)
 #### [Daňové atributy](latam-bra-tax-attributes.md)
 #### [Platby daně](latam-bra-tax-payments.md)
