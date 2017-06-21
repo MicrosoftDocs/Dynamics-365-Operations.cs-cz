@@ -3,7 +3,7 @@ title: "Vyrovnání částečné platby odběratele a plné vyrovnání konečn�
 description: "Tento článek popisuje scénáře, které zobrazují způsob záznamu částečných plateb pro odběratele a využití platebních slev v rámci období platební slevy."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

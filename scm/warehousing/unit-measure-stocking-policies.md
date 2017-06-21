@@ -3,7 +3,7 @@ title: "Měrná jednotka a zásady uskladnění"
 description: "Tento článek popisuje způsob, jakým jsou výchozí jednotky, řady jednotek a převody jednotek používány v procesech skladu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

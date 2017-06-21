@@ -3,7 +3,7 @@ title: "Registrace času a docházky"
 description: "Pracovníci z oblasti registrace času mohou zadat různé typy registrace pracovní doby, například registraci příchodu, odchodu, registraci nepřímých aktivit a registraci absencí. Tento článek popisuje registrace, jejich výpočet, schválení a použití workflowu pro přidání struktury a automatického schválení pro proces schválení časových rozvrhů."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

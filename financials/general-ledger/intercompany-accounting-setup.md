@@ -3,7 +3,7 @@ title: "Nastavení mezipodnikového účetnictví"
 description: "Toto téma vysvětluje, jak se nastavuje mezipodnikové účetnictví tak, abyste mohli používat mezipodnikové deníky k přidělování knih a finančních deníků, jako jsou každodenní deníky, deníky faktur dodavatele a platební deníky."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

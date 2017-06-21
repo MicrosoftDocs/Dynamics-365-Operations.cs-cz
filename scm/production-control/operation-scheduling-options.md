@@ -3,7 +3,7 @@ title: "Možnosti plánování operací"
 description: "V tomto tématu jsou popsány možnosti pro plánování operací. Plánování operací můžete použít, když je třeba získat obecný odhad výrobního procesu v čase."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

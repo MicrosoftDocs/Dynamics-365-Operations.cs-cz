@@ -3,7 +3,7 @@ title: "Vyrovnání částečné platby dodavatele, u níž je více období sle
 description: "Tento článek vás provede scénářem, kdy je více částečných plateb provedeno pro dodavatele, který nabízí více platebních slev."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

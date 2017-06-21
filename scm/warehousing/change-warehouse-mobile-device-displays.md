@@ -3,7 +3,7 @@ title: "Nastavení displeje mobilního zařízení skladu"
 description: "Tento článek popisuje, jak nastavit vzhled displeje mobilního zařízení a namapovat klávesové zkratky na ovládací prvky, jako jsou například tlačítka."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

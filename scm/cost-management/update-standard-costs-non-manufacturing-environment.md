@@ -3,7 +3,7 @@ title: "Aktualizace standardních nákladů v nevýrobním prostředí"
 description: "V tomto článku jsou pokyny k tomu, jak aktualizovat standardní náklady v nevýrobním prostředí."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

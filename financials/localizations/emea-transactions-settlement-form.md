@@ -3,7 +3,7 @@ title: "Zobrazení transakcí vyrovnání pro východní Evropu"
 description: "Toto téma obsahuje informace o transakcích vyrovnání na stránce pro zákazníky a dodavatele."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Akreditivy a kolekce importu
 description: "V tomto článku jsou obecné informace o akreditivu a kolekcích importu. Oba typy bankovního dokumentu jsou často používané pro nákup a prodej zboží v zahraničí."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

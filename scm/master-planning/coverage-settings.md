@@ -3,7 +3,7 @@ title: "Nastavení pokrytí"
 description: "Při hlavním plánování se používá nastavení disponibility k výpočtu požadavků na položku."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

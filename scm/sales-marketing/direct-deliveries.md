@@ -3,7 +3,7 @@ title: "Přímé dodávky"
 description: "V tomto článku jsou informace o přímých dodávkách. Přímé dodávky jsou dodávky odeslané od dodavatele přímo odběrateli."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

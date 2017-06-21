@@ -3,7 +3,7 @@ title: "Vytvoření přepravního dokladu"
 description: "Toto téma popisuje, jak vytvořit přepravní doklad při používání procesů pro řízení skladu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

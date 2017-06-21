@@ -3,7 +3,7 @@ title: "Zaúčtování výroby"
 description: "Tento článek obsahuje informace o různých typech účetních zápisů ve výrobním procesu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

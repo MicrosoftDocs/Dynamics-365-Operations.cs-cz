@@ -3,7 +3,7 @@ title: "Párování faktur závazků"
 description: "Párování faktur závazků je procesem párování informací na faktuře dodavatele, nákupní objednávce a příjemce produktu."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

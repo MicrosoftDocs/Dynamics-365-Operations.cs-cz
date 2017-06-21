@@ -3,7 +3,7 @@ title: "Kusovníky a receptury"
 description: "Tento článek obsahuje informace o kusovnících a vzorce, které jsou ústřední součástí definice produktů a variant produktu. Kusovníky a vzorce určují požadované materiály nebo látky pro konkrétní produkt. Vzorce také určují souběžné a vedlejších produkty, které jsou přijaty v rámci konkrétní výroby."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

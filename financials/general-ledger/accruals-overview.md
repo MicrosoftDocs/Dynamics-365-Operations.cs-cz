@@ -3,7 +3,7 @@ title: "Přehled časově rozlišených položek"
 description: "V tomto článku jsou popsána časová rozlišení a jsou zde také informace o způsobu jejich nastavení a vytvoření transakcí."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

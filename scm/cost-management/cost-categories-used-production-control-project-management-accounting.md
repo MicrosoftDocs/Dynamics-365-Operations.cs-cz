@@ -3,7 +3,7 @@ title: "Nákladové kategorie, které se používají v modulu Řízení výroby
 description: "Některé typy výrobní práce se mohou vztahovat na odhadovaný čas projektu a zprávy. Tento článek obsahuje informace o nákladových kategoriích, které je nutné definovat pro tyto typy výrobních prací pro účely výroby a projektů."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

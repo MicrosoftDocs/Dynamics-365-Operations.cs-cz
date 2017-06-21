@@ -3,7 +3,7 @@ title: "Domovská stránka Pokladna a banka"
 description: "Pomocí nástroje Pokladna a banka spravujte bankovní účty a finanční nástroje právnické osoby, které jsou přidruženy k těmto bankovním účtům."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

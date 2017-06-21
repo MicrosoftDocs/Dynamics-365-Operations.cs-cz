@@ -3,7 +3,7 @@ title: "Uživatelské předvolby v návrháři finančních sestav"
 description: "Tento článek vysvětluje, jak nastavit uživatelské předvolby pro přizpůsobení interakce uživatelů v návrháři finančních sestav, a pro řízení výchozího prostředí po přihlášení. Můžete také určit, jak se zobrazí jednotlivé sestavy, knihovna sestav a výchozí umístění souborů."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

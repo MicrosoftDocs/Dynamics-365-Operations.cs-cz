@@ -3,7 +3,7 @@ title: "Počáteční mimořádný odpis"
 description: "Tento článek podává přehled o funkci počátečního mimořádného odpisu."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

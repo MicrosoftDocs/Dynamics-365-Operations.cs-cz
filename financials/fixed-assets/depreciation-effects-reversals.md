@@ -3,7 +3,7 @@ title: "Efekty odpisů se storny"
 description: "Tento článek popisuje potenciální důsledky stornování transakcí dlouhodobého majetku."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

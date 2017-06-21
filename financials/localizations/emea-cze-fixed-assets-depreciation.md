@@ -3,7 +3,7 @@ title: "Metody odpisu dlouhodobého majetku pro Českou republiku"
 description: "Toto téma obsahuje informace o odpisech dlouhodobého majetku pro právnické osoby v České republice."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

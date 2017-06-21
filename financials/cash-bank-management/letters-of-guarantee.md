@@ -3,7 +3,7 @@ title: "Záruční listiny"
 description: "Tento článek obsahuje informace o záručních listinách. V záruční listině banka souhlasí s platbou určité částky pro osobu, pokud jeden ze zákazníků banky neprovede požadovanou platbu nebo nesplní závazek vůči dané osobě."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Nákl. skupiny"
 description: "Nákladové skupiny poskytují základ pro segmentaci a analýzu nákladových příspěvků v rámci vypočtených nákladů na určitou vyráběnou položku (například nákladové příspěvky na materiál, práci a režii). Termín segmentace nákladových skupin má ve výrobním prostředí několik dalších synonym (například rozúčtování nákladů, dekompozice nákladů nebo klasifikace nákladů)."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

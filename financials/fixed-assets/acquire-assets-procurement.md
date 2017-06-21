@@ -3,7 +3,7 @@ title: "Pořízení majetku pomocí zásobování"
 description: "Tento článek popisuje, jak integraci modulů Dlouhodobý majetek a Závazky nastavit tak, aby probíhalo automatické vytváření majetku z nákupních objednávek nebo faktur, případně automatické zaúčtování transakcí pořízení a opravy pořizovací ceny dlouhodobého majetku."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Noví nebo aktualizovaní průvodci záznamem úloh (listopad 2016)"
 description: "Toto téma obsahuje nové nebo aktualizované průvodce záznamem úloh vydané pro knihovnu Microsoft APQC Unified Library (listopad 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics 365 for Operations. Nebyly vydány žádné nové knihovny Začínáme."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

@@ -3,7 +3,7 @@ title: "Přehled zásobování a zdrojů"
 description: "Tento článek poskytuje přehled funkci, které jsou k dispozici v modulu Zásobování a zdroje."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

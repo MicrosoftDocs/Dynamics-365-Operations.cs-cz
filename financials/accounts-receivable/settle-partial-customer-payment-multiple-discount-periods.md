@@ -3,7 +3,7 @@ title: "Vyrovnání částečné platby zákazníka, u níž je více období sl
 description: "Tento článek popisuje způsob, jakým se vyrovnávají platby odběratelů po více období slevy."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

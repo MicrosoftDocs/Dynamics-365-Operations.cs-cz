@@ -3,7 +3,7 @@ title: "Transakce v rejstříku DPH pro východní Evropu"
 description: "Toto téma obsahuje informace o transakcích v rejstříku DPH pro Estonsko, Litvu, Českou republiku, Maďarsko, Lotyšsko a Polsko."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

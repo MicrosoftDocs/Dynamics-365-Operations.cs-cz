@@ -3,7 +3,7 @@ title: "Definice stromu výkaznictví ve finančních sestavách"
 description: "Tento článek obsahuje informace o definicích stromu výkaznictví. Definice stromu výkaznictví je součástí sestavy nebo stavební blok, který pomáhá definovat strukturu a hierarchii vaší organizace."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

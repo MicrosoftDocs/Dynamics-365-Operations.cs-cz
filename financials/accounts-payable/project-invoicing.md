@@ -3,7 +3,7 @@ title: "Fakturování projektu"
 description: "V tomto článku najdete přehled fakturace projektu pro časové a materiálové projekty a projekty s pevnou cenou. Zahrnuje informace o návrzích faktur (předběžné faktury), řízení faktur, fakturování na účet, fakturaci dodavatele a dobropisech."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

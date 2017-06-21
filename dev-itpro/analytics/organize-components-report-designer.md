@@ -3,7 +3,7 @@ title: "Uspořádání součástí zprávy v návrháři sestavy"
 description: "Poté, co jste navrhli stavební bloky a vygenerovali sestavy, je užitečné uspořádat tyto objekty a usnadnit uživatelům jejich vyhledání. Tento článek popisuje způsob uspořádání existujících sestav, stavebních bloků a objektů v návrháři sestav."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

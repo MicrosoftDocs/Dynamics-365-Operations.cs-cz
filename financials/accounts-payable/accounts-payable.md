@@ -3,7 +3,7 @@ title: "Domovská stránka Závazků"
 description: "Toto téma poskytuje přehled závazků."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

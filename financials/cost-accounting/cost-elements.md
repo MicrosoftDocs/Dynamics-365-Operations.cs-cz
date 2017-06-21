@@ -3,7 +3,7 @@ title: "Dimenze prvku nákladů"
 description: "Coby jeden ze základních pilířů v nákladovém účetnictví se dimenze prvků nákladů používají pro kategorizaci a sledování, kam jsou náklady převáděny."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

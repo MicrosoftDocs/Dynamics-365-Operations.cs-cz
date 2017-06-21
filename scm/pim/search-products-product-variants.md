@@ -3,7 +3,7 @@ title: "Vyhledávání produktů a variant produktu během zadání objednávky"
 description: "Použijte pole <strong>Číslo položky </strong>k vyhledání produktů a variant produktů, až budete ručně vytvářet řádek prodejní objednávky nebo řádek nákupní objednávky.  Tímto způsobem můžete rychle vyhledat varianty produktu, pokud máte k dispozici pouze konfigurační řetězec nebo jednu z dimenzí produktu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Co je nového nebo upraveného v aplikaci verze Dynamics AX 7.0.1 (květ
 description: "Tento článek popisuje funkce, které jsou v aplikaci Microsoft Dynamics AX verze 7.0.1 nové nebo změněné. Tato verze byla vydána v květnu 2016 a má číslo sestavení 7.0.1265.23014."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

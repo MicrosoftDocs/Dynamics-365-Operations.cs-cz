@@ -3,7 +3,7 @@ title: "Rozšířené odsouhlasení bankovního výpisu MT940 Import – Aktuali
 description: "Pořadové číslo musí být přidáno k importu bankovního výpisu entity pro podporu MT940 formátu."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

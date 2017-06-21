@@ -3,7 +3,7 @@ title: "Použití sledování pro rozpad"
 description: "V tomto článku je vysvětleno použití sledování k prozkoumání příčin výsledku rozpadu objednávky."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

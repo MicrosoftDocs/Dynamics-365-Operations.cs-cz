@@ -3,7 +3,7 @@ title: "Výpočty pro modely konfigurace produktu - často kladené dotazy"
 description: "Tento článek popisuje výpočty pro modely konfigurace produktu a vysvětluje, jak použít výpočty spolu s omezeními."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
