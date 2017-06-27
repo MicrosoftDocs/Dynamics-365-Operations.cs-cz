@@ -3,7 +3,7 @@ title: "Vyrovnat částečnou platbu odběratele, u níž jsou slevy pro dobropi
 description: "Tento článek vás provede scénářem, kde je využita platební sleva na základě dobropisu, když původní faktura měla také platební slevu."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

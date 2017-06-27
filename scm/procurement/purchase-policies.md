@@ -3,7 +3,7 @@ title: "Zásady nákupu"
 description: "V tomto článku jsou informace o zásadách nákupu. Zásady nákupu jsou soubor pravidel řídících proces nákupní žádanky. Zásady nákupu umožňují správcům zásobování implementovat strategie zásobování vytvořením struktury zásad, které jsou v souladu se strategickými požadavky organizace na nákupy."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

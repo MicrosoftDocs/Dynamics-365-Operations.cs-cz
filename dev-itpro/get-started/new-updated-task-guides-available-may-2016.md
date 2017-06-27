@@ -3,7 +3,7 @@ title: "Noví nebo aktualizovaní průvodci úkolem (květen 2016)"
 description: "Tento článek uvádí seznam nových nebo aktualizovaných průvodců úkolem vydaných pro knihovnu Microsoft APQC Unified Library (květen 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics AX. Nebyly vydány žádné nové knihovny Začínáme."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

@@ -3,7 +3,7 @@ title: "Mezipodnikové účetnictví pro centralizované platby"
 description: "Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Tento způsob vylučuje nutnost zadávat stejné transakce do několika právnických osob a šetří čas tím, že zjednodušuje proces návrhů plateb, proces vyrovnání, úpravy otevřených a uzavřených transakcí u centralizovaných plateb."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

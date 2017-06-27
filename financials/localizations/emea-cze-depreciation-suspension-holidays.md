@@ -3,15 +3,15 @@ title: "Přerušení odpisování (svátky)"
 description: "Toto téma obsahuje informace o přerušení nebo odložení odpisů pro Českou republiku."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 ms.custom: 265124
-ms.assetid: 638660f3-6a42-4a37-b90c-576feb15e1a4
 ms.search.region: Czech Republic
 ms.author: epopov
 ms.search.validFrom: 2016-11-30

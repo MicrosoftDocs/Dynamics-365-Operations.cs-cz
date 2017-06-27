@@ -3,7 +3,7 @@ title: "Vyrovnání částečné platby dodavatele a plné vyrovnání konečné
 description: "Tento článek vás provede scénářem, kdy jsou částečné platby provedeny pro fakturu dodavatele a je využita platební sleva."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

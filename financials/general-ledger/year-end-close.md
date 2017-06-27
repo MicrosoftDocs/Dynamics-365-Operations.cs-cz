@@ -3,7 +3,7 @@ title: "Roční uzávěrka"
 description: "Toto téma popisuje požadované nastavení a postup pro spuštění procesu roční uzávěrky hlavní knihy."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

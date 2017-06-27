@@ -3,7 +3,7 @@ title: "Výpočet spotřeby materiálu"
 description: "Tento článek poskytuje informace o různých volbách, které se vztahují k výpočtu spotřeby materiálu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

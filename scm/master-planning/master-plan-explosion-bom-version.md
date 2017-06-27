@@ -3,7 +3,7 @@ title: "Rozpad verze kusovníku"
 description: "Tento článek popisuje scénář hlavního plánování, který zahrnuje rozpad verze kusovníku."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

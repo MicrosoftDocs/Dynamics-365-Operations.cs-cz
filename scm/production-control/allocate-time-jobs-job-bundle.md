@@ -3,7 +3,7 @@ title: "Přidělení času k úlohám ve skupině prací"
 description: "V modulu Provádění výroby můžete úlohy ukládat do svazků. Potom můžete spustit více úloh současně na stránce se seznamem úloh."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

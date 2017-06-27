@@ -3,7 +3,7 @@ title: "Smlouvy s dodavatelem s platbou po zaplacení"
 description: "Tento článek vysvětluje podmínky PWP (platby po zaplacení) pro smlouvy s dodavatelem. Podmínky PWP umožňují částečně nebo plně zadržet platbu dodavateli, dokud vám nezaplatí odběratel v projektu. Tento článek také obsahuje příklad ze života, který popisuje, jak používat podmínky PWP u projektu."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

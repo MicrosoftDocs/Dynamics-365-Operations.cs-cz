@@ -3,7 +3,7 @@ title: "Vytvoření plateb dodavatele pomocí návrhu platby"
 description: "Toto téma obsahuje přehled možností návrhu platby a nabízí příklady zobrazující, jak návrh plateb funguje. Návrhy plateb jsou často používány k vytvoření platby dodavatele, protože dotaz umožňuje rychle vybrat faktury dodavatele pro platbu na základě kritérií, jako jsou data splatnosti a platební slevy."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Konfigurace a filtrování pracovních prostorů"
 description: "V tomto článku je přehled o tom, jak konfigurovat a filtrovat pracovní prostory."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

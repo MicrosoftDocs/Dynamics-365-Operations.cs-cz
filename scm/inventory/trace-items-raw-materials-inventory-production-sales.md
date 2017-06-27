@@ -3,7 +3,7 @@ title: "Sledování zboží a surovin ve skladu, při výrobě a prodeji"
 description: "Toto téma popisuje, jak můžete použít sledování položky k identifikaci, kde bylo použito zboží nebo suroviny, nebo kde budou použity ve výrobě a prodejních procesech."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

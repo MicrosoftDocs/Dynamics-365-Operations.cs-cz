@@ -3,7 +3,7 @@ title: "Aktualizace standardních nákladů pro nově vyrobené položky"
 description: "Tento článek obsahuje pokyny pro aktualizaci standardních nákladů pro nově vyrobenou položku."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

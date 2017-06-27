@@ -3,7 +3,7 @@ title: "Metoda LIFO s fyzickou hodnotou a označením"
 description: "U skladového modelu LIFO (Last in, First out) jsou poslední (nejnovější) příjmy vydány jako první. Výdeje ze skladu jsou vyrovnávány vůči posledním příjmům na sklad podle data skladové transakce."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

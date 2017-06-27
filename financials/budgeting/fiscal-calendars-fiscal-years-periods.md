@@ -3,7 +3,7 @@ title: "Fiskální kalendář, fiskální roky a období"
 description: "Tento článek popisuje fiskální kalendáře, fiskální roky a období a způsoby jejich využití pro právnické osoby, dlouhodobý majetek a tvorbu rozpočtu."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

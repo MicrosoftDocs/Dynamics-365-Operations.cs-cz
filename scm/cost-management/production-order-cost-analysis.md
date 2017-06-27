@@ -3,7 +3,7 @@ title: "Analýza nákladů ve výrobní zakázce"
 description: "Tento článek obsahuje informace o analýze nákladů, kterou lze provést pro dokončené a aktuální výrobní zakázky. Můžete analyzovat odhadované náklady a skutečné náklady na stránce Kalkulace ceny nebo pomocí sestavy Odhad a výpočet nákladů. Můžete sledovat informace o odhadovaných a skutečných nákladech (a množství) jsou zobrazeny pro každou položku komponenty, operaci postupu a nepřímé náklady."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

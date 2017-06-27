@@ -3,7 +3,7 @@ title: "Degresivní odpis 175 procent"
 description: "Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 175 procent“."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Akce workflowu
 description: "V tomto článku jsou vysvětleny akce, které může provést každý účastník v procesu schválení workflowu."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

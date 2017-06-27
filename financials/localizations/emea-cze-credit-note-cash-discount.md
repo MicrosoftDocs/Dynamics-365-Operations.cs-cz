@@ -10,13 +10,12 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustParameters, PrintMgmtSetupUIMain, Reasons
 audience: Application User
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 ms.custom: 273063
-ms.assetid: b7cc2add-88dc-4e15-a537-49f3ebe2e37f
 ms.search.region: Czech Republic
 ms.author: v-elgolu
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670

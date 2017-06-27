@@ -3,7 +3,7 @@ title: "Požadavek na nabídky (RFQ)"
 description: "Tento článek poskytuje přehled požadavků na nabídku (RFQs), které organizace vydávají v případě, že musí nakoupit položky nebo služby a chtějí získat od několika dodavatelů konkurenční nabídky. V požadavku na nabídku požádejte dodavatele o zadání cen a dodacích lhůt pro zadané množství položek. Lze také požádat dodavatele, aby určili, zda budou účtovány vedlejší náklady, například přepravní náklady nebo slevy pro velké objednávky či včasnou platbu za fakturu dodavatele."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

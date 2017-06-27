@@ -3,7 +3,7 @@ title: "Nákladové verze"
 description: "Tento článek obsahuje informace o nákladových verzích, způsobu jejich udržování a typech dat, která lze do nich zahrnout. Hlavním účelem nákladové verze je to, že obsahuje záznamy o položkách, kategorie nákladů a vzorce pro výpočet nepřímých nákladů."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

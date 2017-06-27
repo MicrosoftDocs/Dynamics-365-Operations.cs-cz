@@ -3,7 +3,7 @@ title: "Přepočet reprodukčních nákladů a pojistných částek pro skupiny 
 description: "Tento článek vysvětluje postup aktualizace reprodukčních nákladů a pojistné částky pro dlouhodobý majetek."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

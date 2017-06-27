@@ -3,7 +3,7 @@ title: "Zůstatky účtu hlavní knihy"
 description: "V tomto článku jsou vysvětleny dva způsoby pro zobrazení zůstatků účtů hlavní knihy – stránka se seznamem Předvaha a finanční sestavy. Také popisuje, jak aktualizovat zůstatky pro sadu dimenzí."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

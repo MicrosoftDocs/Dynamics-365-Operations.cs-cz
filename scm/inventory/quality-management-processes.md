@@ -3,7 +3,7 @@ title: "Procesy správy kvality"
 description: "V tomto článku jsou informace týkající se procesu řízení kvality u nevyhovujícího produktů. Je zde popsáno, jak můžete použít funkci řízení kvality, definovat a spravovat neshody a zpracovávat opravy."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

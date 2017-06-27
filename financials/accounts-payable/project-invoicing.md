@@ -3,7 +3,7 @@ title: "Fakturování projektu"
 description: "V tomto článku najdete přehled fakturace projektu pro časové a materiálové projekty a projekty s pevnou cenou. Zahrnuje informace o návrzích faktur (předběžné faktury), řízení faktur, fakturování na účet, fakturaci dodavatele a dobropisech."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,7 +14,7 @@ ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation

@@ -3,7 +3,7 @@ title: "Funkce pro návrh kusovníku"
 description: "Tento článek popisuje, jak můžete na stránce Návrhář kusovníku navrhnout a používat stromové struktury pro kusovníky (BOM). Kliknutím na možnost Nastavení můžete vybrat různé konfigurace a určit, které informace mají být zobrazeny v rámci jednotlivých liniích stromu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

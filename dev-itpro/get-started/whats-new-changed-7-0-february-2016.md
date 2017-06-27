@@ -3,7 +3,7 @@ title: "Co je nového nebo změněného v aplikaci Dynamics AX 7.0 (únor 2016)
 description: "Tento článek popisuje funkce, které jsou v aplikaci Microsoft Dynamics AX 7.0 nové nebo změněné. Tato verze obsahuje funkce pro obě platformy a byla vydána v únoru 2016."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

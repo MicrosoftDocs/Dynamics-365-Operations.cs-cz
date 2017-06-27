@@ -3,7 +3,7 @@ title: "Schopnosti prostředku"
 description: "V tomto článku jsou informace o možnostech prostředků. Schopnost je možnost provozních prostředků provádět určitou aktivitu. Článek vysvětluje způsob použití možností a souvisejících koncepcí, například úrovní znalosti a priority, k volbě vhodných prostředků pro aktivitu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

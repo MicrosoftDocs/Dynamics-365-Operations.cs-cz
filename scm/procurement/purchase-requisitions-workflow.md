@@ -3,7 +3,7 @@ title: "Workflow nákupního požadavku"
 description: "Proces workflowu přesouvá nákupní žádanky v procesu kontroly od počátečního stavu Koncept do konečného stavu Schváleno. Když je nákupní požadavek odeslán ke kontrole, proces workflowu se spustí. Po schválení nákupního požadavku lze generovat nákupní objednávku pro řádky nákupního požadavku a odeslat ji dodavateli pro splnění zakázky."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

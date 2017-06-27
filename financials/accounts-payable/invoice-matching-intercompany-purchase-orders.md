@@ -3,14 +3,14 @@ title: "Párování faktur a mezipodnikové nákupní objednávky"
 description: "Nakupující právnická osoba, která se účastní mezipodnikové obchodní transakce, je pravděpodobně nastavena pro použití párování faktur závazků. V tomto případě požadavky zaúčtování pro párování mezipodnikových obchodních účtů a účtů závazků je třeba splnit dříve, než lze zaúčtovat mezipodnikové faktury dodavatele."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
-ms.reviewer: annbe
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 3101
 ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf

@@ -3,7 +3,7 @@ title: "Plánování vytížení pomocí konsolidace center"
 description: "Tento článek popisuje funkci konsolidace dodávky v centru, pokud doručujete zboží z různých skladů ke stejnému zákazníkovi, nebo při příjmu zboží od více dodavatelů ve stejném skladu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Účetní profil dodavatele"
 description: "Účetní profil dodavatele řídí zaúčtování transakcí dodavatelů do hlavní knihy"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

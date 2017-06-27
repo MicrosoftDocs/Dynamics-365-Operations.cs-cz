@@ -3,7 +3,7 @@ title: "Zobrazení položek deníku a transakcí"
 description: "V tomto článku jsou vysvětleny různé způsoby zobrazení položek deníku a transakcí."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

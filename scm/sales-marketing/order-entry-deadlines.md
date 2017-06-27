@@ -3,7 +3,7 @@ title: "Konečné termíny zadání objednávek"
 description: "Tento článek poskytuje informace o konečných termínech objednávky. Konečný termín objednávky je časový interval přerušení, který určuje, zda je objednávka odběratele zpracována (a plněna), jako by byla přijata aktuálního dne nebo následujícího dne."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Metody výpočtu DPH v poli Zdroj"
 description: "Tento článek vysvětluje možnosti v poli Zdroj na stránce Kódy DPH, a postup výpočtu DPH na základě vybrané možnosti pro kód DPH."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

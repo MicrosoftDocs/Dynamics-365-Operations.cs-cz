@@ -3,7 +3,7 @@ title: "Přehled převodu standardních nákladů"
 description: "V tomto článku je popsán přehled usnadňující nastavení a spuštění převodu standardních nákladů. Uvedené kroky jsou určeny k dokončení po dokončení předběžných kroků nutných pro převod standardních nákladů."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

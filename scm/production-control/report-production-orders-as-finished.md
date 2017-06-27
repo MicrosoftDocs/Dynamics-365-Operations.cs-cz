@@ -3,7 +3,7 @@ title: "Vykázat výrobní zakázky jako dokončené"
 description: "Vykázat jako dokončené je ve fázi výroby. V této fázi je vykázán hotový výrobek a je přesunut z výrobní zakázky do zásob."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

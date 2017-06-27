@@ -3,7 +3,7 @@ title: "Nákladové formuláře"
 description: "Nastavení nákladového formuláře má dva cíle. Prvním je definovat formát zobrazení informací o nákladech na prodané zboží, které se týkají vyrobených položek nebo výrobní zakázky. Vytvořený formát zobrazení je pojmenován nákladový formulář. Druhým je definovat základnu pro výpočet nepřímých nákladů. Nastavení nákladového formuláře je založeno na funkcích nákladové skupiny pro zobrazení informací a vzorců pro výpočet nepřímých nákladů. V tomto článku jsou popsány dva cíle nastavení nákladového formuláře."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

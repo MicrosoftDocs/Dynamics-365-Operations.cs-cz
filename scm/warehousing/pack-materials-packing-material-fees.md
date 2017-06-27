@@ -3,7 +3,7 @@ title: "Obalové materiály a poplatky"
 description: "Poplatky za balicí materiál se recyklační společnosti hradí v určitých intervalech. Platí se částka za hmotnostní jednotku za každý materiál, ze kterého se skládá jednotka balného. Poplatky za balicí materiál jsou vypočítány a vykázány, ale nezaúčtují se žádné nikdy neúčtované transakce, protože poplatky se nepovažují za daně, které je třeba zaplatit úřadům."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

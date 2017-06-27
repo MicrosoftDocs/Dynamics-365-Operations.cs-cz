@@ -3,7 +3,7 @@ title: "Účetní profily odběratele"
 description: "Účetní profily odběratele řídí zaúčtování transakcí odběratelů do hlavní knihy"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
