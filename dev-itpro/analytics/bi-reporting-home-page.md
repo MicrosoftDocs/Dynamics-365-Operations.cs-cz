@@ -1,15 +1,15 @@
 ---
 title: "Domovská stránka BI a výkaznictví"
-description: "Toto téma uvádí zdroje týkající se BI a výkaznictví, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Operations."
+description: "Toto téma uvádí zdroje týkající se BI a výkaznictví, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 27681
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3e97fda52acf6b61bf47eb30d53ce6597b4929d3
+ms.sourcegitcommit: c8684bf17946edff8230f0b6d324d355e61dc89b
+ms.openlocfilehash: 448517531112636d553dc895b17c5644c9c1f0bc
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma uvádí zdroje týkající se BI a výkaznictví, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Operations. 
+Toto téma uvádí zdroje týkající se BI a výkaznictví, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations. 
 
 <a name="working-with-aggregate-data"></a>Práce s agregovanými daty
 ---------------------------
@@ -43,14 +43,14 @@ Toto téma uvádí zdroje týkající se BI a výkaznictví, které jsou k dis
 ## <a name="self-service-reporting"></a>Samoobslužné vykazování
 -   [Integrace služby Power BI](power-bi-integration.md)
 -   [Konfigurace integrace služby Power BI pro pracovní prostory](configure-power-bi-integration.md)
--   [Vytvoření sestavy Power BI pomocí dat aplikace Microsoft Dynamics 365 for Operations](create-powerbi-report-data.md)
+-   [Vytvoření sestavy Power BI pomocí dat aplikace Microsoft Dynamics 365 for Finance and Operations](create-powerbi-report-data.md)
 -   [Vytvoření sestavy Power BI a řídicího panelu](create-powerbi-report-dashboard.md)
 -   [Obsah výkonnosti maloobchodní sítě Power BI](retail-channel-performance-dashboard-power-bi-data.md)
 -   [Obsah finanční výkonnosti Power BI](financial-performance-power-bi-content-pack.md)
 -   [Obsah výkonu prodeje a ziskovosti Power BI](sales-profitability-performance-content-pack.md)
--   [Použití konfigurace elektronického vykazování k poskytnutí dat do Power BI z Dynamics 365 for Operations do BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Použití konfigurace elektronického vykazování k poskytnutí dat do Power BI z Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
-## <a name="building-embedded-analytical-experiences-in-the-dynamics-365-for-operations-client"></a>Vytváření vložených analytických prostředí v klientovi aplikace Dynamics 365 for Operations
+## <a name="building-embedded-analytical-experiences-in-the-finance-and-operations-client"></a>Vytváření vložených analytických prostředí v klientovi aplikace Finance and Operations
 -   [Vložená business intelligence](analytics.md#embedded-business-intelligence)
 -   [Modelování a přizpůsobení klíčového indikátoru výkonnosti](analytics.md#kpi-modeling-and-customization)
 -   [Přidání BI do pracovních prostor](add-bi-workspaces.md)
@@ -58,7 +58,7 @@ Toto téma uvádí zdroje týkající se BI a výkaznictví, které jsou k dis
 
 ## <a name="document-reporting-and-printing"></a>Vykazování a tisk dokumentů
 -   [Přehled služby vykazování dokumentů](document-reporting-services.md)
--   [Tisk v aplikacích Dynamics 365 for Operations](print-documents.md)
+-   [Tisk v aplikacích Finance and Operations](print-documents.md)
 -   [Instalace agenta směrování dokumentu pro aktivaci zařízení síťové tiskárny](install-document-routing-agent.md)
 -   [Spuštění agenta směrování dokumentu jako služby Windows](run-document-routing-agent-as-windows-service.md)
 -   [Vytváření řešení vykazování nové generace](create-nextgen-reporting-solutions.md)
@@ -72,7 +72,7 @@ Toto téma uvádí zdroje týkající se BI a výkaznictví, které jsou k dis
 -   [Návrhář vzorců v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
 -   [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 -   [Stažení konfigurace elektronického výkaznictví ze služby Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
--   [Použití konfigurace elektronického vykazování k poskytnutí dat do Power BI z Dynamics 365 for Operations do BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Použití konfigurace elektronického vykazování k poskytnutí dat do Power BI z Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 -   [Elektronické výkaznictví – vytvoření poskytovatele konfigurace a jeho označení jako aktivního](http://ax.help.dynamics.com/en/wiki/er-select-service-provider/) (Průvodce záznamem úloh)
 -   [Elektronické výkaznictví – návrh datového modelu pro určitou doménu](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-data-model/) (Průvodce záznamem úloh)
 -   [Elektronické výkaznictví – definování mapování modelů a výběr zdrojů dat](http://ax.help.dynamics.com/en/wiki/er-define-model-mapping-and-select-data-sources/) (Průvodce záznamem úloh)

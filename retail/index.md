@@ -1,96 +1,99 @@
 ---
-title: "Domovská stránka aplikace Retail"
-description: "Domovská stránka aplikace Dynamics 365 for Operations – Retail"
+title: Microsoft Dynamics 365 for Retail
+description: "Domovská stránka aplikace Dynamics 365 for Retail"
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations, Retail
 ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.search.validFrom: 2017-6-19
+ms.dyn365.ops.version: Version 1611, Retail Version
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a1004022b1b9dfc43bd2ef5b9f59c759397a3af1
+ms.sourcegitcommit: c8684bf17946edff8230f0b6d324d355e61dc89b
+ms.openlocfilehash: 6684e1f3703df8eb821b442c98d187ffcf931796
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
 
-# <a name="retail-home-page"></a>Domovská stránka aplikace Retail
+# <a name="welcome-to-dynamics-365-for-retail"></a>Vítá vás aplikace Dynamics 365 for Retail
 
 [!include[banner](includes/banner.md)]
 
-Aplikace Dynamics 365 for Operations – Retail poskytuje ucelené možnosti nákupu, s bezproblémovým a bezkonkurenčním omnikanálovým řešením, které je moderní, mobilní a globální. Moderní softwarová řešení pokladního místa, operace obchodu, podpora prodeje, elektronické obchodování, kontaktní středisko, péče o zákazníka, řetězec dodavatelů a finance - to všechno jsou možnosti, které lze nasadit způsobem, jaký bude vašemu podnikání nejvíce vyhovovat.
+Microsoft Dynamics 365 for Retail je komplexní maloobchodní řešení, které zajišťuje sjednocené obchodování napříč všemi prodejními kanály. Zahrnuje prodeje, mobilitu, zpravodajství a produktivitu, které obchodníkům a pracovníkům pomáhají dosahovat lepších výsledků způsobem využívajícím především cloudová úložiště a mobilní zařízení. Modul Retail nabízí rozsáhlou podporu pro provoz celé řady obchodních procesů, jako jsou možnosti nákupu, skladů a správa prodejních kanálů. Poskytuje také dokonalé zkušenosti uživatelům napříč všemi styčnými body.
 
-Tato stránka odkazuje na zdroje, které vám pomůžou používat aplikaci MicrosoftDynamics 365 for Operations - Retail efektivněji. V levém podokně vyberte oblast funkce, o které chcete získat informace. 
+Následující tři produkty spolu úzce souvisí:
 
-## <a name="set-up-retail-channels"></a>Nastavení maloobchodních kanálů
-Při nastavování vašich zkušeností s aplikací Retail budete rozhodovat, jak definovat a konfigurovat své obchody - kamenné obchody, online obchody a kontaktní střediska. 
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition
+- Microsoft Dynamics 365 for Retail
+- Aplikace Microsoft Dynamics 365 for Talent
 
-Každý maloobchod může mít vlastní metodu plateb, způsoby dodání, cenové skupiny, účty příjmů a výdajů a zaměstnance. Po vytvoření svého maloobchodu vytvoříte sortiment produktů, které má obchod obsahovat. Můžete také definovat ceny specifické pro obchod a slevy, které jsou použitelné na produkty dostupné v obchodě.
+Stejné funkce se mohou objevit ve všech třech produktech. V tématech, která primárně souvisí s modulem Retail, bude název produktu Microsoft Dynamics 365 for Retail. V tématech, která primárně souvisí s modulem Talent, bude název produktu Microsoft Dynamics 365 for Talent. A nakonec v tématech, která souvisí se základním produktem (Finance and Operations), bude název produktu Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Témata pro jeden produkt budou pravděpodobně platit pro stejné funkce v souvisejícím produktu.
 
--   [Definování maloobchodních sítí](define-maintain-retail-channels.md)
--   [Přehled online obchodu](online-stores.md)
+V levém podokně vyberte funkční oblast, o které se chcete dozvědět více.
 
-## <a name="set-up-a-call-center"></a>Nastavení kontaktního střediska
-Můžete nastavit kontaktní středisko jako typ maloobchodní sítě. V kontaktním středisku pracovníci zpracovávají zakázky od odběratele telefonicky a vytvářejí prodejní objednávky. Abyste pomohli svým pracovníkům přijímat objednávky a vyřizovat zákaznický servis prostřednictvím procesu plnění objednávek, můžete nastavit, co má obsahovat prodejní objednávka, jak kontrolovat ceny a k jakým datům o zákaznících, produktech a cenách lze získat přístup. Pro každé kontaktní středisko můžete nastavit uživatele, platební metody, cenové skupiny, finanční dimenze a způsoby dodání.
+## <a name="channel-management"></a>Správa kanálu
+Při nastavování prostředí modulu Retail budete rozhodovat, jak definovat a konfigurovat své obchody. Mohou sem patřit kamenné obchody, online obchody nebo kontaktní střediska.
 
--   [Funkce kontaktního střediska](call-center-functionality.md)
--   [Vytvoření katalogů kontaktního střediska](create-call-center-catalogs.md)
+Každý maloobchod může mít vlastní způsoby platby, způsoby dodání, cenové skupiny, účty příjmů a výdajů a zaměstnance. Po vytvoření svého maloobchodu vytvoříte sortiment produktů, které má obchod obsahovat. Můžete také definovat ceny specifické pro obchod a slevy, které se uplatňují u produktů dostupných v obchodě.
 
-## <a name="define-your-pos-solutions"></a>Definice vašich řešení POS
-Moderní POS (MPOS) je pokladním místem aplikace pro počítače, tablety a telefony. Prodavači mohou zpracovávat prodejní transakce a objednávky odběratelů, vykonávat aktivity clientelingu a provádět každodenní operace a řízení zásob pomocí mobilního zařízení kdekoliv v obchodě, stejně jako na elektronických pokladnách. Cloud POS je verze programu POS pro prohlížeč, která lze spustit prostřednictvím jakéhokoliv standardního prohlížeče. 
+## <a name="clienteling-and-loyalty"></a>Vytváření klientely a loajality
+Potřeby zákazníků se neustále mění. Musíte dokázat rychle a efektivně reagovat na změny v nákupních návycích a trendech, abyste se mohli zaměřit na nové zákazníky a být pro ně atraktivní, ale abyste současně dokázali uspokojit svou stávající bázi zákazníků.
 
-Existuje několik nastavitelných komponent sloužících k definování vztahů mezi obchodem, POS pokladnami v rámci obchodu a maloobchodními periferními zařízeními, které tyto pokladny používají pro zpracování transakcí. Můžete rovněž definovat vlastnosti konkrétní instance POS, včetně hardwarového profilu nebo nastavení maloobchodního periferního zařízení, které bude použito na pokladně, obchod, ke kterému je pokladna namapována, vizuální prostředí uživatele, který se k dané pokladně zaregistruje, a funkce, které jsou v pokladně povoleny. Rovněž určíte, zda může pokladna pracovat v odpojeném nebo offline stavu.
+Zákazníci navíc mají spousty možností, jak získat, co chtějí, když to chtějí, a za cenu, která jim vyhovuje. Abyste si zachovali loajalitu zákazníků, používáte personalizovaná oznámení a nabídky, které usnadňují nakupování.
 
--   [Definování a správa klientů z obchodních kanálů, pokladen a hardwarových stanic](define-maintain-channel-clients-registers-hw-stations.md)
--   [Instalace a konfigurace MPOS](retail-modern-pos-device-activation.md)
--   [Funkce offline POS](pos-offline-functionality.md)
+## <a name="hardware-and-peripherals"></a>Hardware a periferní zařízení
+Produkty Retail Modern Point of Sale (MPOS) a Cloud POS mohou využívat celou řadu hardwarových periferních zařízení. Oba tyto produkty nabízejí více rozhraní a možností nasazení, které vám pomohou s různými obchodními scénáři.
 
-## <a name="set-up-a-customer-loyalty-program"></a>Nastavení zákaznického věrnostního programu
-Věrnostní program lze nastavit tak, aby zákazníci získali body na základě určitých kritérií, a tyto body lze vypočítat různými způsoby. Váš věrnostní program může být jednoduchý nebo komplexní a lze ho použít pro různé právnické osoby v libovolné maloobchodní síti.
--   [Nastavení zákaznického věrnostního programu](set-up-customer-loyalty-program.md)
+Simulátor periferních zařízení pro modul Retail zahrnuje virtuální simulátor periferních zařízení a simulátor POS. Virtuální simulátor periferních zařízení primárně podporuje testování scénářů, které obvykle vyžadují fyzická periferní zařízení POS. Simulátor POS umožňuje testování kompatibility fyzických periferních zařízení v modulu Retail bez nutnosti nasazení klienta POS.
 
-## <a name="set-up-discounts-and-price-adjustments"></a>Nastavení slev a úprav cen
-Můžete provést úpravy cen produktů a také nastavit slevy, které jsou použity pro položky řádku nebo transakce na POS, v prodejní objednávce kontaktního střediska nebo v online objednávce. 
--   [Úpravy ceny a slevy](price-adjustments-discounts.md)
--   [Definovat slevy specifické pro kanál](define-channel-specific-discounts.md)
--   [Určení optimální kombinace překrývajících se slev](optimal-combination-overlapping-discounts.md)
+## <a name="intelligence"></a>Intelligence
+Pokročilá analytika přináší výkonné možnosti strojového učení do maloobchodních výzev a umožňuje prediktivní, optimalizované a personalizované vhledy, které pomáhají zajistit růst a ziskovost. Modul Retail umožňuje poskytovat vizuální sestavy o každém zařízení, ať online, nebo offline. Dále můžete zákazníkům pomoci rozpoznat produkty a služby, které odpovídají jejich potřebám, ještě před zakoupením.
 
-## <a name="set-up-retail-products"></a>Nastavení maloobchodních produktů
-Než bude možné nabídnout produkty k prodeji ve vaší maloobchodní síti, je nutné vytvořit a nastavit produkty v aplikaci Dynamics 365 for Operations. Pokud chcete vytvořit produkty, definujte vlastnosti produktu a atributy a přiřaďte produkty k hierarchiím kategorií maloobchodu. Pokud chcete zpřístupnit produkty pro vaše maloobchodní kanály a přidat je do aktivního sortimentu, uvolníte poté produkty pro právnické osoby, kde jsou k dispozici.
--   [Nastavení maloobchodních produktů](set-up-retail-products.md)
+## <a name="monitoring-and-diagnosis"></a>Monitorování a diagnostika
+Modul Retail umožňuje monitorovat výkon prodejů a marží v reálném čase napříč rozdílnou organizační hierarchií.
 
-## <a name="monitor-and-analyze-performance"></a>Sledování a analyzování výkonnosti
-Pomocí dat aplikace Dynamics 365 for Operations můžete analyzovat výkonnost obchodu, ziskovost zákazníků a produktů, prodejní trendy a další.
--   [Vyhodnocení ziskovosti z hlediska odběratelů a produktů](assess-customer-product-profitability.md)
--   [Analýza výkonnosti obchodu](store-performance-information.md)
+## <a name="merchandising"></a>Prodej
+Než bude možné nabídnout produkty k prodeji ve vaší maloobchodní síti, budete muset vytvořit a nastavit produkty v modulu Retail. Pokud chcete vytvořit produkty, definujte vlastnosti produktu a atributy a přiřaďte produkty k hierarchiím kategorií maloobchodu. Pokud chcete zpřístupnit produkty pro vaše maloobchodní kanály a přidat je do aktivního sortimentu, musíte produkty uvolnit pro právnické osoby, kde jsou k dispozici.
+
+Můžete provést úpravy cen produktů a také nastavit slevy, které jsou použity pro položky řádku nebo transakce na POS, v prodejní objednávce kontaktního střediska nebo v online objednávce.
+
+## <a name="store-operations-and-pos"></a>Ukládání operací a POS
+MPOS je aplikace POS pro počítače, tablety a telefony. Prodavači mohou zpracovávat prodejní transakce a objednávky odběratelů, vykonávat činnosti získávání klientů a provádět každodenní operace a řízení zásob pomocí mobilního zařízení kdekoliv v obchodě, stejně jako na elektronických pokladnách. Cloud POS je verze programu POS pro prohlížeč, kterou lze spustit prostřednictvím jakéhokoliv standardního prohlížeče.
+
+Budete nastavovat několik komponent k definování vztahů mezi obchodem, POS pokladnami v rámci obchodu a maloobchodními periferními zařízeními, které tyto pokladny používají pro zpracování transakcí. Budete také definovat vlastnosti konkrétní instance POS. Tyto vlastnosti zahrnují hardwarový profil nebo nastavení maloobchodního periferního zařízení, které bude použito na pokladně, obchod, ke kterému je pokladna namapována, vizuální prostředí uživatele, který se k dané pokladně přihlásí, a funkce, které jsou v pokladně povoleny. Rovněž určíte, zda může pokladna pracovat v odpojeném nebo offline stavu.
+
+## <a name="workforce-management"></a>Správa zaměstnanců
+Z důvodu zajištění ziskovosti v prostředí, kde dochází k poklesu marží, se obchodníci stále snaží snižovat své provozní náklady. Pro většinu prodejců tvoří náklady na zaměstnance významnou část provozních nákladů. Proto mohou díky kontrole těchto nákladů mít prodejci významný vliv na to nejpodstatnější. Dále platí, že zmocnění a produktivní pracovníci přispívají k lepším zkušenostem zákazníků.
+
+Modul Retail umožňuje vedoucím prodejen vytvářet a publikovat posuny a harmonogramy pracovníků v prodejnách, dělat poznámky pro směny prostřednictvím pokynů a kopírovat harmonogramy z předchozího do stávajícího týdne. Manažeři tak získají vhled do žádostí o volno, o které prodejci žádají, a mohou tyto žádosti schvalovat nebo zamítat. Získají také přehled o žádostech o přehození směn a nabídku směn a mohou tyto žádosti schvalovat nebo zamítat.
+
+Pracovníci obchodu mají přehled o směnách a mohou přiřazovat harmonogramy spolu s pokyny pro směny a získat přehled o spolupracovnících, kteří jsou na směny přiřazeni. Mohou také předkládat žádosti o povolení nepřítomnosti, prohození směn se spolupracovníky a nabídky směn.
 
 ## <a name="customize-and-administer-retail-environments"></a>Přizpůsobení a správa prostředí maloobchodu
-Pokud jste byli požádáni o přizpůsobení vašeho prostředí nebo pokud máte za úkol nasazení a údržbu vašeho systému, seznamte se s konkrétním obsahem pro vývojáře a správce aplikace Retail, stejně jako s obecnějším obsahem aplikace Microsoft Dynamics 365 for Operations. 
--   [Dynamics 365 for Operations - Retail pro profesionály v oblasti IT a vývojáře](dev-itpro/dev-retail-home-page.md)
--   [Microsoft Dynamics 365 for Operations pro vývojáře a profesionály v oblasti IT](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
+Pokud jste byli požádáni o přizpůsobení vašeho prostředí nebo pokud zodpovídáte za nasazení a údržbu vašeho systému, seznamte se s konkrétním obsahem pro vývojáře a správce aplikace Retail, stejně jako s obecnějším obsahem.
+
+- [Dynamics 365 for Retail pro profesionály v oblasti IT a vývojáře](dev-itpro/dev-retail-home-page.md)
+- [Microsoft Dynamics 365 for Retail pro vývojáře a profesionály v oblasti IT](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page)
 
 ## <a name="additional-resources"></a>Další zdroje
 ### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
-Přejděte na <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> a zjistěte, jaké nové funkce se vydávají a jaké se chystají. 
+Přejděte na [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) a zjistěte, jaké nové funkce se vydávají a jaké se chystají.
 
 ### <a name="blogs"></a>Blogy
-Názory, novinky a jiné informace o aplikaci Microsoft Dynamics 365 for Operations - Retail a jiná řešení naleznete na <a href="https://community.dynamics.com/b/msftdynamicsblog">blogu Microsoft Dynamics 365</a>.
+Názory, novinky a jiné informace o aplikaci Retail a jiná řešení naleznete v [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog).
 
-Existuje mnoho témat o aplikaci Retail na <a href="https://blogs.msdn.microsoft.com/dax/">blogu týmu produktu Microsoft Dynamics AX</a>. Některé z těchto článků byly vytvořeny pro předchozí verzi aplikace Dynamics 365 for Operations, ale stále se používají stejné koncepty a postupy jsou podobné jako v aktuální verzi.
+Existuje mnoho příspěvků o aplikaci Retail na [blogu týmu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). I když některé z těchto příspěvků byly napsány pro předchozí verzi aplikace Retail, stále se používají stejné koncepty a postupy jsou podobné jako v aktuální verzi.
 
-<a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operations Partner Community Blog</a> poskytuje partnerům Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci MBS Operations.
-
-
+[Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci MBS Operations.
 
