@@ -1,12 +1,12 @@
 ---
-title: "Lidské zdroje"
-description: "Lidské zdroje zjednodušují mnoho rutinních administrativních úkolů a automatizují řadu procesů souvisejících s pracovníky ve vaší organizaci. Také poskytuje rámec pro oddělení lidských zdrojů ke správě řady oblastí dohledu. Mezi tyto oblasti spadá nábor a udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn."
+title: Aplikace Microsoft Dynamics 365 for Talent
+description: "Aplikace Talent zjednodušuje mnoho rutinních administrativních úkolů a automatizuje řadu procesů souvisejících s pracovníky ve vaší organizaci. Mezi tyto procesy spadá udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn."
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/19/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
@@ -16,23 +16,25 @@ ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 213d1dc69ac0f6dc10138e185625a142e107f073
+ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
+ms.openlocfilehash: e0f41445c621a317fcdccef6cb08766dd6fac279
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
 
-# <a name="welcome-to-human-resources"></a>Vítejte v lidských zdrojích
+# <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Vítá vás aplikace Microsoft Dynamics 365 for Talent
 
 [!include[banner](includes/banner.md)]
 
-Lidské zdroje zjednodušují mnoho rutinních administrativních úkolů a automatizují řadu procesů souvisejících s pracovníky ve vaší organizaci. Také poskytuje rámec pro oddělení lidských zdrojů ke správě řady oblastí dohledu. Mezi tyto oblasti spadá nábor a udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn.
+Aplikace Microsoft Dynamics 365 for Talent usnadňuje spousty rutinních úkolů vedení záznamů a automatizuje řadu procesů souvisejících s personálním zajištěním ve vaší organizace. Mezi tyto procesy patří udržení zaměstnanců, správa odměňování, školení, kontroly výkonnosti a správa změn. Také poskytuje rámec pro oddělení lidských zdrojů ke správě řady oblastí dohledu.
 
-Modul Lidské zdroje lze použít k těmto úkolům:
+Aplikace Dynamics 365 for Talent úzce souvisí s lidskými zdroji v aplikaci Dynamics 365 for Finance and Operations, Enterprise Edition. Stejné funkce se mohou objevit v obou produktech. Proto bude v tématech, která primárně souvisí s modulem Lidské zdroje, název produktu Dynamics 365 for Finance and Operations, Enterprise Edition; v tématech, která primárně souvisí s aplikací Talent, pak bude název produktu Dynamics 365 for Talent. Témata pro jeden produkt mohou platit pro stejné funkce v souvisejícím produktu.
+
+Modul Talent lze použít k těmto úkolům:
 
 > + Správa organizačních struktur.
 > + Udržování komplexních informací o pracovníkovi od zařazení po ukončení pracovního vztahu.
@@ -42,25 +44,19 @@ Modul Lidské zdroje lze použít k těmto úkolům:
 > + Správa kompetencí pracovníka.
 > + Hodnocení výkonu a implementace cílů pracovníka.
 > + Nastavení, poskytování a analýza kurzů školení zahrnující agendy, cvičení a průběhy.
-> + Nábor zaměstnanců a sledování uchazečů.
 
-<a name="develop-a-human-resources-strategy"></a>Vytvoření strategie lidských zdrojů
+<a name="develop-a-strategy-for-managing-your-human-resources"></a>Vytvoření strategie správy lidských zdrojů
 ---------------------------------------------------------
 
-Při práci s lidskými zdroji budete rozhodovat o tom, jak nastavit strukturu organizace pomocí prvků, jako jsou oddělení, práce a pozice. Ty patří mezi základní prvky, které budete konfigurovat v lidských zdrojích. Jednotliví zaměstnanci se přiřazují k pozicím, které jsou přidruženy k pracím.
+Při práci s talenty budete rozhodovat o tom, jak nastavit strukturu organizace pomocí prvků, jako jsou oddělení, práce a pozice. Ty patří mezi základní prvky, které budete konfigurovat. Jednotliví zaměstnanci se přiřazují k pozicím, které jsou přidruženy k pracím.
 
 -   [Uspořádání zaměstnanců podle oddělení, prací a pozic](departments-jobs-positions.md)
 -   [Nastavení parametrů lidských zdrojů pro konkrétní společnost](set-up-company-specific-hr-parameters.md)
 -   [Nastavení parametrů lidských zdrojů mezi právnickými osobami](set-up-hr-parameters-across-legal-entities.md) 
 
-## <a name="recruit-hire-and-motivate-employees"></a>Nábor, zařazení a motivace zaměstnanců
+## <a name="retain-and-motivate-employees"></a>Udržení a motivace zaměstnanců
 
-Náborové projekty slouží ke správě obsahu použitého v reklamě na otevřené pozice a mohou vám pomoci se správou žádostí o volná pracovní místa. S jejich pomocí sledujte odpovědi na nabídku pozic pro konkrétní náborový projekt nebo konkrétní uchazeče a aktualizujte stav otevřených pozic. Také můžete najmout jednoho uchazeče nebo spravovat "projekty hromadného zařazení," které usnadňují zařazení více pracovníků, například pro sezónní obchodní potřeby.
-
--   [Řízení náborového procesu](manage-recruiting-process.md)
--   [Projekty hromadného zařazení](mass-hire-projects.md) 
-
-Poté, co jste přijali zaměstnance, můžete nastavit plány pro efektivní a spravedlivé řízení kompenzací, stejně jako správu položek, jako jsou počítače nebo telefony, které organizace poskytuje zaměstnancům. Je možné vytvářet pevné a variabilní plány kompenzace, jakož i definovat pravidla týkající se plánu kompenzace, která splňují kritéria pro tento plán.
+Můžete nastavit plány pro efektivní a spravedlivé řízení kompenzací, stejně jako správu položek, jako jsou počítače nebo telefony, které organizace poskytuje zaměstnancům. Je možné vytvářet pevné a variabilní plány kompenzace, jakož i definovat pravidla týkající se plánu kompenzace, která splňují kritéria pro tento plán.
 
 -   [Plány kompenzace](compensation-plans.md)
 -   [Vytvoření plánů fixní kompenzace](create-fixed-compensation-plans.md)
@@ -84,10 +80,10 @@ Kromě kompenzací zaměstnanců skrze mzdy, platy a odměny můžete vyvíjet p
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Zachování bezpečnosti na pracovišti a dodržování předpisů
 
-Aplikace Microsoft Dynamics AX umožňuje udržovat bezpečné pracovní prostředí, které je v souladu s platnými právními předpisy, včetně standardu ADA (Americans with Disabilities Act) a imigračních a naturalizačních zákonů. Například můžete spravovat fyzické požadavky pro konkrétní pracovní pozice, stejně jako sledovat požadavky na ubytování, které mohou pomoci vaší organizaci optimalizovat dovedností zaměstnanců.
+Aplikace Talent umožňuje udržovat bezpečné pracovní prostředí, které je v souladu s platnými právními předpisy, včetně zákona ADA (Americans with Disabilities Act) a imigračních a naturalizačních zákonů. Například můžete spravovat fyzické požadavky pro konkrétní pracovní pozice, stejně jako sledovat požadavky na ubytování, které mohou pomoci vaší organizaci optimalizovat dovedností zaměstnanců.
 
--   [Ověřování zaměstnanců pomocí formuláře I-9](localizations/noam-usa-form-i-9-verification.md)
--   [Splnění standardu ADA (Americans with Disabilities Act)](localizations/noam-usa-comply-ada.md)
+-   [Ověřování zaměstnanců pomocí formuláře I-9](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
+-   [Splnění standardu ADA (Americans with Disabilities Act)](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada)
 
 ## <a name="gather-information-using-questionnaires"></a>Shromáždění informací pomocí dotazníku
 
@@ -97,7 +93,4 @@ Můžete navrhovat a rozdávat dotazníky, které slouží ke shromažďování 
 -   [Návrh dotazníku](design-questionnaires.md)
 -   [Distribuce a vyplnění dotazníku](distribute-questionnaires.md)
 -   [Zobrazení a vyhodnocení výsledků dotazníku](evaluate-questionnaire-results.md)
-
-
-
 

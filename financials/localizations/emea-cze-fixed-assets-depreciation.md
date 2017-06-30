@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: AssetDepreciationGroup_W
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 264314
 ms.search.region: Czech Republic
 ms.author: v-elgolu
