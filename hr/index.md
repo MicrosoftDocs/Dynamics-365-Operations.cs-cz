@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
-ms.openlocfilehash: e0f41445c621a317fcdccef6cb08766dd6fac279
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 28b5c72a174c7d40fcf1e4c348834fc532b04fcc
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/21/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
@@ -30,25 +30,26 @@ ms.lasthandoff: 06/21/2017
 
 [!include[banner](includes/banner.md)]
 
-Aplikace Microsoft Dynamics 365 for Talent usnadňuje spousty rutinních úkolů vedení záznamů a automatizuje řadu procesů souvisejících s personálním zajištěním ve vaší organizace. Mezi tyto procesy patří udržení zaměstnanců, správa odměňování, školení, kontroly výkonnosti a správa změn. Také poskytuje rámec pro oddělení lidských zdrojů ke správě řady oblastí dohledu.
+Aplikace Microsoft Dynamics 365 for Talent usnadňuje spousty rutinních úkolů vedení záznamů a automatizuje řadu procesů souvisejících s personálním zajištěním ve vaší organizace. Mezi tyto procesy patří udržení zaměstnanců, správa odměňování, školení, kontroly výkonnosti a správa změn. Nabízí také systém, ve kterém mohou pracovníci oddělení lidských zdrojů spravovat různé oblasti dohledu.
 
-Aplikace Dynamics 365 for Talent úzce souvisí s lidskými zdroji v aplikaci Dynamics 365 for Finance and Operations, Enterprise Edition. Stejné funkce se mohou objevit v obou produktech. Proto bude v tématech, která primárně souvisí s modulem Lidské zdroje, název produktu Dynamics 365 for Finance and Operations, Enterprise Edition; v tématech, která primárně souvisí s aplikací Talent, pak bude název produktu Dynamics 365 for Talent. Témata pro jeden produkt mohou platit pro stejné funkce v souvisejícím produktu.
+Modul Talent lze použít k provádění těchto úkonů:
 
-Modul Talent lze použít k těmto úkolům:
++ Správa organizačních struktur.
++ Udržování komplexních informací o pracovníkovi od zařazení po ukončení pracovního vztahu.
++ Definování a správa plánů zaměstnaneckých výhod, přihlášení pracovníků, přiřazení pokrytí závislých prvků a určení příjemců.
++ Vytvoření a sledování zásad absence.
++ Implementace a sledování správy času podle profilu a generování informací o mzdách pro export do mzdového systému.
++ Správa kompetencí pracovníka.
++ Hodnocení výkonu a implementace cílů pracovníka.
++ Nastavení, poskytování a analýza školení, která mají určitý program, semináře a průběh.
 
-> + Správa organizačních struktur.
-> + Udržování komplexních informací o pracovníkovi od zařazení po ukončení pracovního vztahu.
-> + Definování a správa plánů zaměstnaneckých výhod, přihlášení pracovníků, přiřazení pokrytí závislých prvků a určení příjemců.
-> + Vytvoření a sledování zásad absence.
-> + Implementace a sledování správy času podle profilu a generování informací o mzdách pro export do mzdového systému.
-> + Správa kompetencí pracovníka.
-> + Hodnocení výkonu a implementace cílů pracovníka.
-> + Nastavení, poskytování a analýza kurzů školení zahrnující agendy, cvičení a průběhy.
+> [!NOTE] 
+> Aplikace Dynamics 365 for Talent úzce souvisí s modulem pro lidské zdroje v aplikaci Dynamics 365 for Finance and Operations, Enterprise Edition. Stejné funkce se mohou objevit v obou produktech. Proto bude v tématech, která primárně souvisí s modulem Lidské zdroje, název produktu Dynamics 365 for Finance and Operations, Enterprise Edition; v tématech, která primárně souvisí s aplikací Talent, pak bude název produktu Dynamics 365 for Talent. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>Vytvoření strategie správy lidských zdrojů
 ---------------------------------------------------------
 
-Při práci s talenty budete rozhodovat o tom, jak nastavit strukturu organizace pomocí prvků, jako jsou oddělení, práce a pozice. Ty patří mezi základní prvky, které budete konfigurovat. Jednotliví zaměstnanci se přiřazují k pozicím, které jsou přidruženy k pracím.
+Při práci s modulem Talent se budete rozhodovat, jak nastavit strukturu organizace pomocí různých prvků (například oddělení, práce a pozice). Ty patří mezi základní prvky, které budete konfigurovat. Jednotliví zaměstnanci se přiřazují k pozicím, které jsou přidruženy k pracím.
 
 -   [Uspořádání zaměstnanců podle oddělení, prací a pozic](departments-jobs-positions.md)
 -   [Nastavení parametrů lidských zdrojů pro konkrétní společnost](set-up-company-specific-hr-parameters.md)

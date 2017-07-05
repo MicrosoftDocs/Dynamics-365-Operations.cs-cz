@@ -2,11 +2,17 @@
   tocHref: /dynamics365/
   topicHref: /dynamics365
   items:
+  - name: Úvod do systému Dynamics 365
+    tocHref: /dynamics365/get-started/what-is/
+    topicHref: /dynamics365/get-started/what-is/index
+  - name: Novinky
+    tocHref: /dynamics365/get-started/whats-new/
+    topicHref: /dynamics365/get-started/whats-new/index
   - name: 'Finance and Operations, Enterprise'
     tocHref: /dynamics365/unified-operations/fin-and-ops/
     topicHref: /dynamics365/unified-operations/fin-and-ops/index
     items:
-    - name: Vývojář a správce
+    - name: "Vývojář a\_správce"
       tocHref: /dynamics365/unified-operations/dev-itpro/
       topicHref: /dynamics365/unified-operations/dev-itpro/index
     - name: Finance
