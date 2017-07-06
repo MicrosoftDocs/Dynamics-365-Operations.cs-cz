@@ -40,7 +40,7 @@ Tato dokumentace vám pomůže pochopit, jak přimět aplikaci Dynamics 365 for 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><h3>Finance</h3>
+<td><h3>Financials</h3>
 <p><a href="../financials/general-ledger/audit-policy-rules">Dodržování předpisů</a></p>
 <p>Správa financí</p>
 <ul style="list-style-type:none">
