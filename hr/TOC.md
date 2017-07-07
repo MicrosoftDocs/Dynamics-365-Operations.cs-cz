@@ -3,23 +3,38 @@
 ## [Začínáme](/dynamics365/unified-operations/fin-and-ops/get-started/onboarding-home?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Microsoft FastTrack for Dynamics 365](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Registrace předplatného](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/talent/toc.json)
-### [Získání místní verze aplikace Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/talent/toc.json)
+### [Získání verze on-premises aplikace Finance and Operations](/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises?toc=/dynamics365/unified-operations/talent/toc.json)
+### [Informace pro zákazníky, kteří si zakoupili Finance and Operations prostřednictvím poskytovatele cloudových služeb](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Nasazení ukázkového prostředí](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Co je nového a co se změnilo](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Zastaralé funkce](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Dosud neimplementované funkce aplikace AX 2012](/dynamics365/unified-operations/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Funkce neimplementované v nasazeních on-premises](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Finance and Operations, Enterprise edition, aktualizace červenec 2017](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-application-July-2017-update?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Platform update 8 (červen 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-8?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Platform update 7 (květen 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Platform update 6 (duben 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Platform update 5 (březen 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Platform update 4 (únor 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Operations, verze 1611 (listopad 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Platform update 3 (listopad 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Platform update 2 (srpen 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2?toc=/dynamics365/unified-operations/talent/toc.json) 
+#### [Dynamics AX, verze 7.0.1 (květen 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Platform update 1 (květen 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Dynamics AX 7.0 (únor 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016?toc=/dynamics365/unified-operations/talent/toc.json)
+### [Zastaralé funkce](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/talent/toc.json)
+### [Dosud neimplementované funkce aplikace AX 2012](/dynamics365/unified-operations/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=/dynamics365/unified-operations/talent/toc.json)
+### [Funkce neimplementované v nasazeních on-premises](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=/dynamics365/unified-operations/talent/toc.json)
+### [Zásady životního cyklu](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### Prozkoumání uživatelského rozhraní
+#### [Časté dotazy týkající se klientského uživatelského rozhraní](/dynamics365/unified-operations/fin-and-ops/get-started/client-faq?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Vyhledání akce](/dynamics365/unified-operations/fin-and-ops/get-started/action-search?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Pokročilé filtrování a syntaxe dotazu](/dynamics365/unified-operations/fin-and-ops/get-started/advanced-filtering-query-options?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Nejčastější dotazy týkající se klienta aplikace Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/fin-and-ops/get-started/client-faq?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Konfigurace a filtrování pracovních prostorů](/dynamics365/unified-operations/fin-and-ops/get-started/configure-filter-workspaces?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Zobrazení stránek vedle sebe pomocí ikony Otevřít v novém okně](/dynamics365/unified-operations/fin-and-ops/get-started/display-pages-side-by-side?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Hledání za účelem navigace](/dynamics365/unified-operations/fin-and-ops/get-started/navigation-search?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Přizpůsobení uživatelského prostředí](/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Klávesové zkratky](/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Správa způsobu zobrazování stránek](/dynamics365/unified-operations/fin-and-ops/get-started/window-management?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Hledání za účelem navigace](/dynamics365/unified-operations/fin-and-ops/get-started/navigation-search?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Přizpůsobení uživatelského prostředí](/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Použití vyhledávání pro nalezení informace](/dynamics365/unified-operations/fin-and-ops//get-started/use-lookups-to-find-information?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Vysvětlení služeb Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### Získání nápovědy a podpory
@@ -27,9 +42,13 @@
 #### [Připojení nápovědy](/dynamics365/unified-operations/dev-itpro/get-started/help-connect?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Zobrazení a export popisů polí](/dynamics365/unified-operations/fin-and-ops/get-started/view-export-field-descriptions?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Průvodci úkolem a záznamník úkolů
-##### [Záznamník úkolů](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Vytvoření dokumentace nebo školení](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Obsah nápovědy specifický pro zemi nebo oblast](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Záznamník úloh](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Vytvoření dokumentace nebo školení](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Průvodci záznamem úloh - listopad 2016](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Průvodci záznamem úloh - srpen 2016](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-august-2016?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Průvodci záznamem úloh - květen 2016](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Průvodci záznamem úloh - únor 2016](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Lokalizace a funkce týkající se předpisů](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Glosář](/dynamics365/unified-operations/fin-and-ops/get-started/glossary?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ## Shoda s předpisy
@@ -38,52 +57,52 @@
 
 ## Správa nákladů
 ### Balíček obsahu Power BI
-#### [Balíček obsahu správy nákladů](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Balíček obsahu správy nákladů](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/talent/toc.json)
 ### Předem stanované náklady
-#### [Nákladový formulář](/dynamics365/unified-operations/supply-chain/costing-sheets?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Nákladová verze](/dynamics365/unified-operations/supply-chain/costing-versions?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Simulace změny nákladů pomocí nákladové verze pro plánované náklady](/dynamics365/unified-operations/supply-chain/simulate-cost-changes-costing-version-planned-costs?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Nákladový formulář](/dynamics365/unified-operations/supply-chain/cost-management/costing-sheets?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Nákladová verze](/dynamics365/unified-operations/supply-chain/cost-management/costing-versions?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Simulace změny nákladů pomocí nákladové verze pro plánované náklady](/dynamics365/unified-operations/supply-chain/cost-management/simulate-cost-changes-costing-version-planned-costs?toc=/dynamics365/unified-operations/talent/toc.json)
 ### Výpočet nákladů zásob
-#### [Úprava hodnoty nákladové ceny množství na skladě](/dynamics365/unified-operations/supply-chain/inventory/adjust-hand-inventory-cost-values?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Objekt nákladů](/dynamics365/unified-operations/supply-chain/inventory/cost-object?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Záznam nákladů](/dynamics365/unified-operations/supply-chain/inventory/cost-entries?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Nákladová skupina](/dynamics365/unified-operations/supply-chain/inventory/cost-groups?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Metoda FIFO s fyzickou hodnotou a označením](/dynamics365/unified-operations/supply-chain/inventory/fifo-physical-value-marking?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Zahrnutí fyzické hodnoty](/dynamics365/unified-operations/supply-chain/inventory/include-physical-value?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Hodnota objektu](/dynamics365/unified-operations/supply-chain/inventory/physical-quantity?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Uzavřít zásoby](/dynamics365/unified-operations/supply-chain/inventory/inventory-close?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Datum LIFO s fyzickou hodnotou a označením](/dynamics365/unified-operations/supply-chain/inventory/lifo-date-physical-value-marking?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Metoda LIFO s fyzickou hodnotou a označením](/dynamics365/unified-operations/supply-chain/inventory/lifo-physical-value-marking?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Klouzavý průměr](/dynamics365/unified-operations/supply-chain/inventory/moving-average?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Fyzické a finanční aktualizace](/dynamics365/unified-operations/supply-chain/inventory/physical-financial-updates?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Průběžná průměrná nákladová cena](/dynamics365/unified-operations/supply-chain/inventory/running-average-cost-price?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Sledování průběžných průměrných nákladů pro dimenzi zboží](/dynamics365/unified-operations/supply-chain/inventory/track-running-average-cost-per-inventory-dimension?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Datum váženého průměru](/dynamics365/unified-operations/supply-chain/inventory/weighted-average-date?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Vážený průměr s fyzickou hodnotou a označením](/dynamics365/unified-operations/supply-chain/inventory/weighted-average-physical-value-marking?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Úprava hodnoty nákladové ceny množství na skladě](/dynamics365/unified-operations/supply-chain/cost-management/adjust-hand-inventory-cost-values?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Objekt nákladů](/dynamics365/unified-operations/supply-chain/cost-management/cost-object?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Záznam nákladů](/dynamics365/unified-operations/supply-chain/cost-management/cost-entries?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Nákladová skupina](/dynamics365/unified-operations/supply-chain/cost-management/cost-groups?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Metoda FIFO s fyzickou hodnotou a označením](/dynamics365/unified-operations/supply-chain/cost-management/fifo-physical-value-marking?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Zahrnutí fyzické hodnoty](/dynamics365/unified-operations/supply-chain/cost-management/include-physical-value?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Hodnota objektu](/dynamics365/unified-operations/supply-chain/cost-management/physical-quantity?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Uzavřít zásoby](/dynamics365/unified-operations/supply-chain/cost-management/inventory-close?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Datum LIFO s fyzickou hodnotou a označením](/dynamics365/unified-operations/supply-chain/cost-management/lifo-date-physical-value-marking?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Metoda LIFO s fyzickou hodnotou a označením](/dynamics365/unified-operations/supply-chain/cost-management/lifo-physical-value-marking?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Klouzavý průměr](/dynamics365/unified-operations/supply-chain/cost-management/moving-average?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Fyzické a finanční aktualizace](/dynamics365/unified-operations/supply-chain/cost-management/physical-financial-updates?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Průběžná průměrná nákladová cena](/dynamics365/unified-operations/supply-chain/cost-management/running-average-cost-price?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Sledování průběžných průměrných nákladů pro dimenzi zboží](/dynamics365/unified-operations/supply-chain/cost-management/track-running-average-cost-per-inventory-dimension?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Datum váženého průměru](/dynamics365/unified-operations/supply-chain/cost-management/weighted-average-date?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Vážený průměr s fyzickou hodnotou a označením](/dynamics365/unified-operations/supply-chain/cost-management/weighted-average-physical-value-marking?toc=/dynamics365/unified-operations/talent/toc.json)
 ### Výpočet nákladů výroby
-#### [Amortizace konstantních nákladů na vyráběnou položku](/dynamics365/unified-operations/supply-chain/amortize-constant-costs-manufactured-item?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Zpětné účtování nákladů](/dynamics365/unified-operations/supply-chain/backflush-costing?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Výpočty kusovníku](/dynamics365/unified-operations/supply-chain/bom-calculations?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Skupina výpočtů kusovníku](/dynamics365/unified-operations/supply-chain/bom-calculation-groups?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Běžné zdroje výrobní odchylky](/dynamics365/unified-operations/supply-chain/common-sources-of-production-variances?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Nákladová kategorie použitá ve výrobních postupech](/dynamics365/unified-operations/supply-chain/cost-categories-used-production-routings?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Nákladová kategorie, která se používá v modulu Řízení výroby a Řízení a účetnictví projektů](/dynamics365/unified-operations/supply-chain/cost-categories-used-production-control-project-management-accounting?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Zobrazení nákladů na vyráběnou položku](/dynamics365/unified-operations/supply-chain/charges-manufactured-item?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Analýza nákladů ve výrobní zakázce](/dynamics365/unified-operations/supply-chain/production-order-cost-analysis?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Odhad nákladů výrobní zakázky](/dynamics365/unified-operations/supply-chain/production-order-cost-estimation?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Zaúčtování výroby](/dynamics365/unified-operations/supply-chain/production-posting?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Nastavení produktu, který může být vyroben nebo pořízen](/dynamics365/unified-operations/supply-chain/manufactured-items-treated-as-purchased-items?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Metoda přidělení celkových nákladů](/dynamics365/unified-operations/supply-chain/methodology-total-cost-allocation?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Amortizace konstantních nákladů na vyráběnou položku](/dynamics365/unified-operations/supply-chain/cost-management/amortize-constant-costs-manufactured-item?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Zpětné účtování nákladů](/dynamics365/unified-operations/supply-chain/cost-management/backflush-costing?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Výpočty kusovníku](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculations?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Skupina výpočtů kusovníku](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculation-groups?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Běžné zdroje výrobní odchylky](/dynamics365/unified-operations/supply-chain/cost-management/common-sources-of-production-variances?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Nákladová kategorie použitá ve výrobních postupech](/dynamics365/unified-operations/supply-chain/cost-management/cost-categories-used-production-routings?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Nákladová kategorie, která se používá v modulu Řízení výroby a Řízení a účetnictví projektů](/dynamics365/unified-operations/supply-chain/cost-management/cost-categories-used-production-control-project-management-accounting?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Zobrazení nákladů na vyráběnou položku](/dynamics365/unified-operations/supply-chain/cost-management/charges-manufactured-item?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Analýza nákladů ve výrobní zakázce](/dynamics365/unified-operations/supply-chain/cost-management/production-order-cost-analysis?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Odhad nákladů výrobní zakázky](/dynamics365/unified-operations/supply-chain/cost-management/production-order-cost-estimation?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Zaúčtování výroby](/dynamics365/unified-operations/supply-chain/cost-management/production-posting?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Nastavení produktu, který může být vyroben nebo pořízen](/dynamics365/unified-operations/supply-chain/cost-management/manufactured-items-treated-as-purchased-items?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Metoda přidělení celkových nákladů](/dynamics365/unified-operations/supply-chain/cost-management/methodology-total-cost-allocation?toc=/dynamics365/unified-operations/talent/toc.json)
 ### Standardní náklady
-#### [Kalkulace kusovníků se standardními náklady](/dynamics365/unified-operations/supply-chain/information-used-bom-calculations-standard-costs?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Správa aktualizací standardních nákladů](/dynamics365/unified-operations/supply-chain/manage-standard-cost-updates?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Předpoklad pro převod standardních nákladů](/dynamics365/unified-operations/supply-chain/prerequisites-standard-cost-conversion?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Přehled převodu standardních nákladů](/dynamics365/unified-operations/supply-chain/standard-cost-conversion-overview?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Aktualizace standardních nákladů ve výrobním prostředí](/dynamics365/unified-operations/supply-chain/update-standard-costs-manufacturing-environment?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Aktualizace standardních nákladů pro nově vyrobené položky](/dynamics365/unified-operations/supply-chain/update-standard-costs-new-manufactured-item?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Aktualizace standardních nákladů v nevýrobním prostředí](/dynamics365/unified-operations/supply-chain/update-standard-costs-non-manufacturing-environment?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Kalkulace kusovníků se standardními náklady](/dynamics365/unified-operations/supply-chain/cost-management/information-used-bom-calculations-standard-costs?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Správa aktualizací standardních nákladů](/dynamics365/unified-operations/supply-chain/cost-management/manage-standard-cost-updates?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Předpoklad pro převod standardních nákladů](/dynamics365/unified-operations/supply-chain/cost-management/prerequisites-standard-cost-conversion?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Přehled převodu standardních nákladů](/dynamics365/unified-operations/supply-chain/cost-management/standard-cost-conversion-overview?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Aktualizace standardních nákladů ve výrobním prostředí](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-manufacturing-environment?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Aktualizace standardních nákladů pro nově vyrobené položky](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-new-manufactured-item?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Aktualizace standardních nákladů v nevýrobním prostředí](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-non-manufacturing-environment?toc=/dynamics365/unified-operations/talent/toc.json)
 
-## [Správa financí](/dynamics365/unified-operations/financials/TOC)
+## Správa financí
 
 ### [Hlavní kniha](/dynamics365/unified-operations/financials/general-ledger/general-ledger?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Účty
@@ -124,6 +143,10 @@
 ##### [Platby DPH a pravidla zaokrouhlení](/dynamics365/unified-operations/financials/general-ledger/round-sales-tax-payments?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Metody výpočtu daně z prodeje v poli Zdroj](/dynamics365/unified-operations/financials/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje](/dynamics365/unified-operations/financials/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/unified-operations/talent/toc.json)
+#### Správa výdajů
+##### [Plánování správy výdajů](/dynamics365/unified-operations/financials/expense-management/plan-expense-management?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Parametry správy výdajů](/dynamics365/unified-operations/financials/expense-management/Expense-Management-Parameters?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Pracovnímu prostor správy výdajů](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### [Závazky](/dynamics365/unified-operations/financials/accounts-payable/accounts-payable?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Přehled faktur dodavatele](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -140,14 +163,14 @@
 #### [Přecenění cizí měny pro závazky a pohledávky](/dynamics365/unified-operations/financials/cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Mobilní schvalování faktur](/dynamics365/unified-operations/financials/accounts-payable/mobile-invoice-approvals?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Pracovní prostor fakturace dodavatelské spolupráce](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Automatizace faktur dodavatele](/dynamics365/unified-operations/financials/vendor-invoice-automation?toc=/dynamics365/unified-operations/talent/toc.json) 
+#### [Automatizace faktur dodavatele](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoice-automation?toc=/dynamics365/unified-operations/talent/toc.json) 
 #### Platby a vyrovnání
 ##### [Centralizované platby pro závazky](/dynamics365/unified-operations/financials/accounts-payable/centralized-payments-accounts-payable?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Konfigurace vyrovnání](/dynamics365/unified-operations/financials/cash-bank-management/configure-settlement?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Pracovní prostor plateb dodavatelů](/dynamics365/unified-operations/financials/vendor-payments-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Pracovní prostor plateb dodavatelů](/dynamics365/unified-operations/financials/accounts-payable/vendor-payments-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Vytvoření plateb dodavatelů pomocí návrhu platby](/dynamics365/unified-operations/financials/accounts-payable/create-vendor-payments-payment-proposal?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Stornování platby dodavatele](/dynamics365/unified-operations/financials/accounts-payable/reverse-vendor-payment?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Elektronické výkaznictví pro šeky dodavatele](/dynamics365/unified-operations/financials/electronic-reporting-sample-vendor-checks?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Elektronické výkaznictví pro šeky dodavatele](/dynamics365/unified-operations/financials/accounts-payable/electronic-reporting-sample-vendor-checks?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Přehled zálohových faktur a záloh](/dynamics365/unified-operations/financials/accounts-payable/prepayments-invoices-vs-prepayments?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Vyrovnání částečné platby dodavatele před datem slevy](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Vyrovnání částečné platby dodavatele, u níž jsou slevy pro dobropisy dodavatele](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -166,6 +189,7 @@
 #### [Rozúčtování a položky dílčích hlavních knih deníku pro textové faktury](/dynamics365/unified-operations/financials/accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Účetní profily odběratele](/dynamics365/unified-operations/financials/accounts-receivable/customer-posting-profiles?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Přehled přímého inkasa SEPA](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Souhlas s inkasem SEPA](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-mandate?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Nastavení platební karty, autorizace a záznam](/dynamics365/unified-operations/financials/accounts-receivable/credit-card-authorizations?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Oprava volné faktury](/dynamics365/unified-operations/financials/accounts-receivable/correct-free-text-invoice?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Nastavení úrokových sazeb pro kód úroku](/dynamics365/unified-operations/financials/accounts-receivable/set-up-interest-rates-interest-code?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -177,7 +201,7 @@
 #### Platby a vyrovnání
 ##### [Použití jedné platby odběratele na úhradu několika faktur, které zasahují do více období slevy](/dynamics365/unified-operations/financials/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Centralizované platby pro pohledávky](/dynamics365/unified-operations/financials/accounts-receivable/centralized-payments-accounts-receivable?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Vyrovnání částečné platby zákazníka nebo konečné platby před slevou](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/talent/toc.json) 
+##### [Vyrovnání částečné platby zákazníka nebo konečné platby před slevou](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount?toc=/dynamics365/unified-operations/talent/toc.json) 
 ##### [Vyrovnání částečné platby odběratele před datem slevy s konečnou platbou po datu slevy](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Vyrovnání částečné platby zákazníka, u níž jsou slevy pro dobropisy dodavatele](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-discounts-credit-notes?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Vyrovnání částečné platby zákazníka, u níž je více období slev](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-multiple-discount-periods?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -186,8 +210,9 @@
 
 ### [Pokladna a banka](/dynamics365/unified-operations/financials/cash-bank-management/cash-bank-management?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Prognóza cashflow](/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Pracovní prostor správy banky](/dynamics365/unified-operations/financials/cash-bank-management/bank-management-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Platební slevy](/dynamics365/unified-operations/financials/cash-bank-management/cash-discount-handling-overpayments?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Pracovní prostor správy banky](/dynamics365/unified-operations/financials/cash-bank-management/Bank-management-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Platební slevy](/dynamics365/unified-operations/financials/cash-bank-management/cash-discounts?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Hotovostní slevy u přeplatků](/dynamics365/unified-operations/financials/cash-bank-management/cash-discount-handling-overpayments?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Přehled vyrovnání](/dynamics365/unified-operations/financials/cash-bank-management/settlement-overview-centralized-payments?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Mezipodnikové účetnictví pro centralizované platby](/dynamics365/unified-operations/financials/cash-bank-management/settlement-overview-centralized-payments?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Akreditivy](/dynamics365/unified-operations/financials/cash-bank-management/letters-of-credit?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -210,7 +235,7 @@
 ##### [Aktualizace složité entity bankovního deníku](/dynamics365/unified-operations/financials/cash-bank-management/upgrade-bank-journal-composite-entity?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### [Dlouhodobý majetek](/dynamics365/unified-operations/financials/fixed-assets/fixed-assets?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Pracovní prostor dlouhodobého majetku](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Pracovní prostor dlouhodobého majetku](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-management-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Přehled upgradu knihy odpisů](/dynamics365/unified-operations/financials/fixed-assets/depreciation-book-upgrade-considerations?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Odvozené knihy](/dynamics365/unified-operations/financials/fixed-assets/derived-books?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Oceňovací model dlouhodobého majetku a slučování knih odpisů](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-value-model-depreciation-book-merge?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -256,15 +281,15 @@
 #### [Integrace plánování rozpočtu s jinými moduly](/dynamics365/unified-operations/financials/budgeting/budget-planning-integration-other-modules?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Vykazování](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Finanční sestavy rozvah](/dynamics365/unified-operations/financials/general-ledger/balance-sheet-financial-reports?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Generování finanční sestavy](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Generování finanční sestavy](/dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Finanční sestava výpisu příjmů](/dynamics365/unified-operations/financials/general-ledger/income-statement-financial-report?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Finanční sestavy rozvahy](/dynamics365/unified-operations/financials/general-ledger/trial-balance-financial-reports?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Zobrazit finanční sestavy](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Návrhář sestav](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Zobrazení finančních sestav](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Návrhář sestav](/dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### [Nákladové účetnictví](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Termíny](/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Praktická cvičení (/dynamics365/unified-operations/financials/White paper)](/dynamics365/unified-operations/financials/https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
+#### [Praktická cvičení (White paper)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
 #### [Dimenze prvku nákladů](/dynamics365/unified-operations/financials/cost-accounting/cost-elements?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Dimenze objektu nákladů](/dynamics365/unified-operations/financials/cost-accounting/cost-objects?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Mapování členů dimenze prvků nákladů na společnou sadu členů dimenze](/dynamics365/unified-operations/financials/cost-accounting/map-cost-elements-dimension-members?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -276,8 +301,8 @@
 #### [Přístupová práva kontrolora objektu nákladů](/dynamics365/unified-operations/financials/cost-accounting/access-rights-cost-object-controller?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Pracovní prostor kontroly nákladů](/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Mobilní pracovní prostor kontroly nákladů](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Obsah Power BI analýzy nákladového účetnictví](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Nastavení zabezpečení pro obsah Power BI analýzy nákladového účetnictví](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Obsah Power BI analýzy nákladového účetnictví](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Nastavení zabezpečení pro obsah Power BI analýzy nákladového účetnictví](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### [Veřejný sektor](/dynamics365/unified-operations/financials/public-sector/public-sector-functionality?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Plán pro funkci veřejného sektoru](/dynamics365/unified-operations/financials/public-sector/plan-public-sector-functionality?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -316,7 +341,7 @@
 ### [Úprava buněk definice řádku](/dynamics365/unified-operations/dev-itpro/analytics/modify-row-definition-cells-financial-reporting?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Obnovení datového tržiště finančního vykazování po obnovení databáze](/dynamics365/unified-operations/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore?toc=/dynamics365/unified-operations/talent/toc.json)
 
-### [Přehled lokalizace](/dynamics365/unified-operations/financials/localizations//dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/localizations/toc.json)
+## [Lokalizace a funkce týkající se předpisů](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/talent/toc.json)
 ### Asie a Tichomoří
 #### Austrálie
 ##### [Formáty bankovních souborů](/dynamics365/unified-operations/financials/localizations/apac-aus-method-of-payment-pay-vendors-banks?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -327,27 +352,27 @@
 ##### [Porovnání kusovníků](/dynamics365/unified-operations/financials/localizations/apac-chn-bom-comparison?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Čínské typy dokladu](/dynamics365/unified-operations/financials/localizations/apac-chn-vouchers?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Konfigurace integrace daní](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Nejčastější dotazy týkající se zákaznických faktur s DPH](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration-vat-customer-invoices?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Nejčastější dotazy týkající se zákaznických faktur s DPH](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration-vat-customer-invoices?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Metody odpisu dlouhodobého majetku ](/dynamics365/unified-operations/financials/localizations/apac-chn-depreciation-methods-fixed-assets?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Import čínské daňové entity Chinese Golden](/dynamics365/unified-operations/financials/localizations/apac-chn-import-golden-tax-data-entity?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Průměrní měsíční model nákladů](/dynamics365/unified-operations/financials/localizations/apac-chn-monthly-average-cost-model?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Zaúčtování hlavních účtů zásob podle pracoviště](/dynamics365/unified-operations/financials/localizations/apac-chn-post-inventory-main-accounts-by-site?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Nastavení kreditů záporných zůstatků ](/dynamics365/unified-operations/financials/localizations/apac-chn-negative-debits-credits?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Japonsko
+##### [Pravidla přidělení](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Bankovní platby pokryté dodavateli](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Konsolidované faktury](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices?toc=/dynamics365/unified-operations/talent/toc.json)
-##### Dlouhodobý majetek
-###### [Pravidla přidělení](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Nejčastější dotazy k odpisům](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Rovnoměrně rozdělená metoda odpisů](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Účtování se snížením hodnoty](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-fixed-assets?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Účtování se snížením hodnoty v CGU](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Nastavení ARO](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Nastavení záznamů redukce](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Nejčastější dotazy k odpisům](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Rovnoměrně rozdělená metoda odpisů](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Účtování se snížením hodnoty](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-fixed-assets?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Účtování se snížením hodnoty v CGU](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Import PSČ](/dynamics365/unified-operations/financials/localizations/apac-jpn-import-postal-codes?toc=/dynamics365/unified-operations/talent/toc.json) 
 ##### [Zaplacení dodavateli formou směnky](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Výpočet progresivní srážkové daně](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Nastavení ARO](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Nastavení záznamů redukce](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Malajsie
-##### [Daň ze zboží a služeb ](/dynamics365/unified-operations/financials/localizations/apac-mys-gst?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Daň ze zboží a služeb](/dynamics365/unified-operations/financials/localizations/apac-mys-gst?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Singapur
 ##### [Generování sestavy GST-05](/dynamics365/unified-operations/financials/localizations/apac-sgp-generate-gst-05-report?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Thajsko
@@ -357,13 +382,20 @@
 
 ### Evropa
 #### [Držitelé zálohy](/dynamics365/unified-operations/financials/localizations/emea-advance-holders?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Transakce držitelů záloh](/dynamics365/unified-operations/financials/localizations/emea-advance-holders-transactions?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Rozšířená fakturace](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Odsouhlasení banky](/dynamics365/unified-operations/financials/localizations/emea-bank-reconciliation?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Opravná fakturace](/dynamics365/unified-operations/financials/localizations/emea-corrective-invoice?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Tvorba a účtování periodických deníků](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Úprava ID faktury na prodejních objednávkách](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Vstupní certifikáty EU](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Souhrnné hlášení EU](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Úpravy kurzů](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Formáty souboru pro metody platby](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Formáty souborů pro metody platby](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Vyřazení dlouhodobého majetku pro Estonsko a Litvu](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Import souborů ISO20022](/dynamics365/unified-operations/financials/localizations/emea-ISO20022-file-formats?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Sestavy deníku zásob](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Číslování faktur a dodacích listů pro Lotyšsko a Litvu](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Koncová data vystavení faktury](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Normy OIOUBL](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -372,14 +404,22 @@
 #### [Zaúčtování předpořízení dlouhodobého majetku](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [PSČ](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [ID registrace](/dynamics365/unified-operations/financials/localizations/emea-registration-ids?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Stornovací poplatky](/dynamics365/unified-operations/financials/localizations/emea-reverse-charge?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Přehled převodu kreditu SEPA](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Přehled přímého inkasa SEPA](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Nastavení kompenzace odběratelů a dodavatelů](/dynamics365/unified-operations/financials/accounts-receivable/emea-compensation-customer-vendor-transactions?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Nastavení podepisujících uživatelů tištěných formulářů](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Záporné storno](/dynamics365/unified-operations/financials/localizations/emea-storno?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Daňové předpisy](/dynamics365/unified-operations/financials/localizations/emea-tax-directives?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Aktualizace zobrazení částek v sestavách a dokumentech](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms?toc=/dynamics365/unified-operations/talent/toc.json) 
 #### [Směnný kurz DPH](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Transakce v rejstříku DPH pro východní Evropu](/dynamics365/unified-operations/financials/localizations/emea-vat-register-transactions?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Vykazování DPH](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Zobrazení transakcí u vyrovnání](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Rakousko
 ##### [Půlroční plán odpisů](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Poplatky za obalový materiál](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Nákupní cla](/dynamics365/unified-operations/financials/localizations/emea-aut-purchase-duties?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Výpis DPH](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Belgie
 ##### [Bankovní výpis CODA](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -388,7 +428,7 @@
 ##### [Sestavy odsouhlasení](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports?toc=/dynamics365/unified-operations/talent/toc.json)
 
 #### Česká republika
-##### [Platební sleva na dobropisu](/dynamics365/unified-operations/financials/localizations/emea-cze-credit-note-cash-discount?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Dobropis na platební slevu](/dynamics365/unified-operations/financials/localizations/emea-cze-credit-note-cash-discount?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Zaokrouhlení odpisování](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-rounding?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Pozastavení odpisování](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-suspension-holidays?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Odpisy dlouhodobého majetku](/dynamics365/unified-operations/financials/localizations/emea-cze-fixed-assets-depreciation?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -402,6 +442,7 @@
 ###### [Účetnictví ve veřejném sektoru](/dynamics365/unified-operations/financials/localizations/emea-fra-public-sector-accounting?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [Závazky](/dynamics365/unified-operations/financials/localizations/emea-fra-commitments-public-sector?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [Mandats de paiement](/dynamics365/unified-operations/financials/localizations/emea-fra-mandats-de-paiement?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Zásobování a zdroje](/dynamics365/unified-operations/financials/localizations/emea-fra-procurement-sourcing-public-sector?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [Titres de recette](/dynamics365/unified-operations/financials/localizations/emea-fra-titres-de-recette-public-sector?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [Blokování plateb faktur dodavatele](/dynamics365/unified-operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Chronologické doklady faktur](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -427,7 +468,7 @@
 ##### [Ověření data dodacího listu na fakturách](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Knihy DPH](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Rozdělená platba za faktury vydané pro veřejnou správu](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Srážková daň](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding tax?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Srážková daň](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding-tax?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Lotyšsko
 ##### [Účtování dlouhodobého majetku](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-accounting?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Sledování změn umístění dlouhodobého majetku](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-location-fields-change?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -438,6 +479,7 @@
 ##### [Podrobnosti výpisu DPH](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Norsko
 ##### [Formát importu Nets](/dynamics365/unified-operations/financials/localizations/emea-nor-nets-import-format?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Výpis DPH](/dynamics365/unified-operations/financials/localizations/emea-nor-sales-tax-payment-report?toc=/dynamics365/unified-operations/talent/toc.json) 
 #### Polsko
 ##### [Výpočet slev řádku z jednotkové ceny](/dynamics365/unified-operations/financials/localizations/emea-pol-line-discount-calculation-from-unit-price?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Poznámky k opravě](/dynamics365/unified-operations/financials/localizations/emea-pol-correction-notes?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -474,6 +516,7 @@
 ###### [Import fiskálních dokumentů](/dynamics365/unified-operations/financials/localizations/latam-bra-import-fiscal-documents?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [Export a import transakcí právnické osoby z konsolidace hlavní knihy](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [Import a ověření dokumentů NF-e XML a souborů DANFE](/dynamics365/unified-operations/financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Nastavení souborů NF-e a DANFE](/dynamics365/unified-operations/financials/localizations/Set-up-import-nf-e-documents?toc=/dynamics365/unified-operations/talent/toc.json) 
 ###### [Zpracování elektronických platebních úhrad](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [Fiskální dokumenty](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [Zástupný text u fiskálních dokumentů](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -481,7 +524,7 @@
 ###### [Odkazované fiskální dokumenty](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [Prodejní doplňkové fiskální dokumenty](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [Elektronický fiskální dokument služby](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Deníky generované během procesu vracení elektronické platby](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Deníky generované během procesu vracení elektronické platby](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Proces NF-e](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Parametry pro právnické osoby](/dynamics365/unified-operations/financials/localizations/latam-bra-legal-entity-parameters?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Pořízení dlouhodobého majetku CIAP](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -495,11 +538,13 @@
 ##### [Elektronické faktury ](/dynamics365/unified-operations/financials/localizations/latam-mex-CFDI-electronic-invoices?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Výpisy účtování elektronické knihy](/dynamics365/unified-operations/financials/localizations/latam-mex-electronic-ledger-accounting-statements?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Sestava prohlášení ISR](/dynamics365/unified-operations/financials/localizations/latam-mex-isr-declaration-report-supporting-processes?toc=/dynamics365/unified-operations/talent/toc.json)
-
+### Střední Východ
+#### [Vykazování zakátu pro Saúdskou Arábii](/dynamics365/unified-operations/financials/localizations/emea-sau-zakat-reporting?toc=/dynamics365/unified-operations/talent/toc.json)
 ### Severní Amerika
 #### [Vykazování 1099 pro USA ke konci roku](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting?toc=/dynamics365/unified-operations/talent/toc.json)
-## Lidské zdroje
+#### [Formulář 1099 pro veřejný sektor](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector?toc=/dynamics365/unified-operations/talent/toc.json)
 
+## Lidské zdroje
 ### Nábor
 #### [Řízení náborového procesu](/dynamics365/unified-operations/fin-and-ops/hr/manage-recruiting-process?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Projekty hromadného zařazení](/dynamics365/unified-operations/fin-and-ops/hr/mass-hire-projects?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -538,7 +583,8 @@
 ### [Přístup k obsahu v Power BI](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### [Uvolněný obsah Power BI](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Výhody](/dynamics365/unified-operations/dev-itpro/analytics/benefits-power-bi?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Skutečnost a rozpočet](/dynamics365/unified-operations/dev-itpro/analytics/ledger-budgets-power-bi?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Zaměstnanecké výhody](/dynamics365/unified-operations/dev-itpro/analytics/benefits-power-bi?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Přehled hotovosti](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 #### [Přehled CFO](/dynamics365/unified-operations/dev-itpro/analytics/CFO-power-bi?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Kompenzace](/dynamics365/unified-operations/dev-itpro/analytics/compensation-power-bi?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -550,7 +596,7 @@
 #### [Kompetence a rozvoj zaměstnance](/dynamics365/unified-operations/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Rozvoj zaměstnance](/dynamics365/unified-operations/dev-itpro/analytics/employee-development-PBI?toc=/dynamics365/unified-operations/talent/toc.json) 
 #### [Finanční výkonnost](/dynamics365/unified-operations/dev-itpro/analytics/financial-performance-power-bi-content-pack?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Správa dlouhodobého majetku](/dynamics365/unified-operations/dev-itpro/analytics//dynamics365/unified-operations/financials/fixed-assets/Fixed-asset-management-workspace)
+#### [Správa dlouhodobého majetku](/dynamics365/unified-operations/financials/fixed-assets/Fixed-asset-management-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Výuka](/dynamics365/unified-operations/dev-itpro/analytics/learning-power-bi?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Školení organizace](/dynamics365/unified-operations/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Manažer školení](/dynamics365/unified-operations/dev-itpro/analytics/practice-manager-power-bi?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -559,7 +605,7 @@
 #### [Nábor](/dynamics365/unified-operations/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Výkonnost maloobchodního kanálu ](/dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Výkon prodeje a ziskovosti](/dynamics365/unified-operations/dev-itpro/analytics/sales-profitability-performance-content-pack?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Platby dodavatelů](/dynamics365/unified-operations/dev-itpro/analytics//dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace)
+#### [Platby dodavatelů](/dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Výkonnost skladu](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Metriky zaměstnanců](/dynamics365/unified-operations/dev-itpro/analytics/workforce-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/talent/toc.json)
 
@@ -567,6 +613,7 @@
 #### [Přehled služby vykazování dokumentů](/dynamics365/unified-operations/dev-itpro/analytics/document-reporting-services?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Tisk](/dynamics365/unified-operations/dev-itpro/analytics/print-documents?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Povolení zařízení síťových tiskáren](/dynamics365/unified-operations/dev-itpro/analytics/install-document-routing-agent?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Generování dokumentů, publikování a možnosti tisku v nasazeních on-premises](/dynamics365/unified-operations/dev-itpro/analytics/printing-capabilities-on-premises?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Spuštění agenta směrování dokumentu jako služby Windows](/dynamics365/unified-operations/dev-itpro/analytics/run-document-routing-agent-as-windows-service?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Nápověda k zabránění vypršení časového limitu u dlouhodobých sestav](/dynamics365/unified-operations/dev-itpro/analytics/prevent-long-running-reports-timing-out?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Seznam sestav služby SQL Server Reporting Services](/dynamics365/unified-operations/dev-itpro/analytics/SSRS-report?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -593,6 +640,7 @@
 ### Analytické nástroje a vizualizace
 #### [Analýzy, měrné systémy agregace a modelování klíčového indikátoru výkonnosti](/dynamics365/unified-operations/dev-itpro/analytics/analytics?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Modelování a agregovaná data](/dynamics365/unified-operations/dev-itpro/analytics/model-aggregate-data?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Přidání finančních dimenzí k měrným systémům agregace](/dynamics365/unified-operations/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Přidání kontextové BI do formulářů](/dynamics365/unified-operations/dev-itpro/analytics/add-contextual-bi-forms?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Sestava měrných systémů agregace](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-measurements-report?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Sestava entit agregovaných dat](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-data-entities-report?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -600,10 +648,13 @@
 #### [Integrace služby Power BI](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Integrace služby Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-embedded-integration?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Embedded Power BI v pracovních prostorech](/dynamics365/unified-operations/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Přidání analýz do pracovního prostoru pomocí Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/secure-analytical-workspaces?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Pomoc se zabezpečením analytických pracovních prostorů a sestav pomocí Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Přidání Power BI do pracovních prostor](/dynamics365/unified-operations/dev-itpro/analytics/add-bi-workspaces?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Připnutí sestav Power BI do pracovní prostor](/dynamics365/unified-operations/dev-itpro/analytics/pin-power-bi-reports?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Integrace Power BI s úložištěm entit](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration-entity-store?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Vytváření a distribuce sestav Power BI s úložištěm entit](/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Export entit do vaší vlastní databáze Azure SQL](/dynamics365/unified-operations/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/unified-operations/talent/toc.json)
 
 
 ## Řízení zásob
@@ -657,6 +708,7 @@
 ##### [Systémové seskupení na otevřeném seznamu úkolů](/dynamics365/unified-operations/supply-chain/warehousing/system-group-on-open-work-list?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Výdej a balení
 ##### [Vyskladnění nejstarší dávky na mobilním zařízení](/dynamics365/unified-operations/supply-chain/warehousing/pick-oldest-batch?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Konfigurace možnosti Zobrazení starších dávek v rámci skladu na mobilním zařízení](/dynamics365/unified-operations/supply-chain/warehousing/display-older-batches-within-warehouses?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Potvrzení výdeje kusů](/dynamics365/unified-operations/supply-chain/warehousing/piece-picking-confirmation?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Obalové materiály a poplatky](/dynamics365/unified-operations/supply-chain/warehousing/pack-materials-packing-material-fees?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Inventura skladu
@@ -677,6 +729,8 @@
 ##### [Nastavení mobilních zařízení pro práci ve skladu](/dynamics365/unified-operations/supply-chain/warehousing/configure-mobile-devices-warehouse?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Portál skladu pro mobilní zařízení (WMDP)](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-mobile-devices-portal?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Nastavení zobrazení skladových mobilních zařízení](/dynamics365/unified-operations/supply-chain/warehousing/change-warehouse-mobile-device-displays?toc=/dynamics365/unified-operations/talent/toc.json)
+#### Upgrade a migrace
+##### [Migrace z aplikace AX 2012 na aplikaci Finance and Operations](/dynamics365/unified-operations/supply-chain/warehousing/upgrade-migration-warehouse-management-processes?toc=/dynamics365/unified-operations/talent/toc.json)
 
 
 ## Hlavní plánování
@@ -719,12 +773,13 @@
 ##### [Přehled nákupních objednávek](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-overview?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Vytváření nákupních objednávek](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-creation?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Schválení a potvrzení nákupních objednávek](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-approval-confirmation?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Mobilní pracovní prostor schvalování nákupních objednávek](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-mobile-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Ceny a slevy
 ##### [Nákupní smlouvy](/dynamics365/unified-operations/supply-chain/procurement/purchase-agreements?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Příjemky a fakturace produktů
 ##### [Příjemka produktu proti nákupním objednávkám](/dynamics365/unified-operations/supply-chain/procurement/product-receipt-against-purchase-orders?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Přehled faktur dodavatele](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-##### [Účetní profily dodavatele](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Přehled faktur dodavatele](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Účetní profily dodavatele](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Správa a spolupráce dodavatelů
 ##### [Nastavení a správa dodavatelské spolupráce](/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Správa uživatelů dodavatelské spolupráce](/dynamics365/unified-operations/supply-chain/procurement/manage-vendor-collaboration-users?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -762,6 +817,7 @@
 ### [Přehled elektronických podpisů](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Přehled správy příkazů](/dynamics365/unified-operations/fin-and-ops/organization-administration/cases?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Konfigurace bezpečnosti případu, procesů a kategorií](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-case-management?toc=/dynamics365/unified-operations/talent/toc.json)
+### [Konfigurace správy dokumentů](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Vytvoření šablon záznamu](/dynamics365/unified-operations/fin-and-ops/organization-administration/record-templates?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Konfigurace a odeslání e-mailu](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Údaje data a času a časové pásmo](/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -822,6 +878,9 @@
 #### Správa surovin
 ##### [Cross docking z výrobních příkazů na výstupní překladiště](/dynamics365/unified-operations/supply-chain/production-control/cross-docking-opportunities?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Registrace spotřeby materiálu pomocí mobilního zařízení](/dynamics365/unified-operations/supply-chain/production-control/register-material-consumption-hand-held-device?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Kontrola spotřeby surovin pomocí principů vyprazdňování](/dynamics365/unified-operations/supply-chain/production-control/flushing-principles?toc=/dynamics365/unified-operations/talent/toc.json) 
+#### Správa dokončeného zboží
+##### [Nastavení výstupního místa výroby pro dokončené zboží](/dynamics365/unified-operations/supply-chain/production-control/production-output-location?toc=/dynamics365/unified-operations/talent/toc.json)
 ### Lean manufacturing 
 #### [Lean manufacturing – přehled](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-overview?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Subdodávky založené na aktivitě](/dynamics365/unified-operations/supply-chain/production-control/activity-based-subcontracting?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -912,35 +971,17 @@
 
 ## [Vývoj a správa pomocí platformy Unified Operations Platform](/dynamics365/unified-operations/dev-itpro/index)
 
-### [Přehled vývoje a správy](/dynamics365/unified-operations/dev-itpro/get-started/getting-started-home-page?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Systémové požadavky](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Přehled ukázkových dat](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=/dynamics365/unified-operations/talent/toc.json)
-#### Systém nápovědy
-##### [Přehled systému nápovědy](/dynamics365/unified-operations/dev-itpro/get-started/help-overview?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Přehled ukázkových dat](/dynamics365/unified-operations/dev-itpro/get-started/help-connect?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Co je nového a co se změnilo](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Operations platform update 7 (květen 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Operations platform update 6 (duben 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Operations platform update 5 (březen 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Operations platform update 4 (únor 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Operations, verze 1611 (listopad 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Operations platform update 3 (listopad 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Dynamics AX platform update 2 (srpen 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2?toc=/dynamics365/unified-operations/talent/toc.json) 
-##### [Aplikace Dynamics AX, verze 7.0.1 (květen 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Dynamics AX platform update 1 (květen 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Dynamics AX 7.0 (únor 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016?toc=/dynamics365/unified-operations/talent/toc.json)
-##### Aktualizovaní průvodci záznamem úloh
-###### [Průvodci záznamem úloh - listopad 2016](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Průvodci záznamem úloh - srpen 2016](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-august-2016?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Průvodci záznamem úloh - květen 2016](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Průvodci záznamem úloh - únor 2016](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016?toc=/dynamics365/unified-operations/talent/toc.json)
+### [Systémové požadavky](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/talent/toc.json)
+### [Ukázková data](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=/dynamics365/unified-operations/talent/toc.json)
+### [Ověření dat](/dynamics365/unified-operations/dev-itpro/user-interface/data-validation-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
+
 
 
 ### [Vývoj a vlastní nastavení pomocí aplikace Visual Studio](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Zásobník aplikace a architektura serveru](/dynamics365/unified-operations/dev-itpro/dev-tools/application-stack-server-architecture?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Získání zkušební kopie](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Registrace předplatného](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Přístup k instancím aplikace Dynamics 365 for Finance and Operations, Enterprise Edition](/dynamics365/unified-operations/dev-itpro/dev-tools/dev-tools/access-instances?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Instance přístupu](/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Systémové požadavky na vývoj](/dynamics365/unified-operations/dev-itpro/dev-tools/development-system-requirements?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Vzorová aplikace vozového parku
 ##### [Vzorová aplikace vozového parku](/dynamics365/unified-operations/dev-itpro/dev-tools/fleet-management-sample?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -955,7 +996,6 @@
 ##### [Vytvoření modelu a prvků datového modelu](/dynamics365/unified-operations/dev-itpro/dev-tools/create-data-model-elements?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Vytvoření nového uživatele na vývojovém počítači](/dynamics365/unified-operations/dev-itpro/dev-tools/enable-development-machine?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Sestava analýz úprav](/dynamics365/unified-operations/dev-itpro/dev-tools/customization-analysis-report?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Vývojové nástroje](/dynamics365/unified-operations/dev-itpro/dev-tools/development-tools?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Návrháři prvků](/dynamics365/unified-operations/dev-itpro/dev-tools/element-designers?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Použití prvků](/dynamics365/unified-operations/dev-itpro/dev-tools/element-usage?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Export a import modelu](/dynamics365/unified-operations/dev-itpro/dev-tools/models-export-import?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -970,9 +1010,9 @@
 ##### [Ladění X++ proti kopii produkční databáze](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-x-issue-against-copy-of-production?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Ladění kódu X++](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-xpp?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Třídy EventHandlerResult ve scénářích požadavku nebo odezvy](/dynamics365/unified-operations/dev-itpro/dev-tools/event-handler-result-class?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Psaní obchodní logiky pomocí zdrojového kódu C#### a X++](/dynamics365/unified-operations/dev-itpro/dev-tools/write-business-logic?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Psaní obchodní logiky pomocí zdrojového kódu C\# a X++](/dynamics365/unified-operations/dev-itpro/dev-tools/write-business-logic?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Podpora programovacího jazyka](/dynamics365/unified-operations/dev-itpro/dev-tools/programming-language-support?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Poskytovatel LINQ pro C#](/dynamics365/unified-operations/dev-itpro/dev-tools/linq-provider-c?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Poskytovatel LINQ pro C\#](/dynamics365/unified-operations/dev-itpro/dev-tools/linq-provider-c?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Vytváření osvědčených postupů](/dynamics365/unified-operations/dev-itpro/dev-tools/author-best-practice-rules?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Vlastnosti průzkumníka aplikací](/dynamics365/unified-operations/dev-itpro/dev-ref/application-explorer-aot-properties?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### Jazykové reference pro X++
@@ -985,7 +1025,7 @@
 ###### [X++ výběr dat a manipulace](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-data-query?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [X++ makra](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-macros?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [X++ třidy atributů](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-attribute-classes?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Porovnání X++ a C####](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-cs-comparison?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Porovnání X++ a C\#](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-cs-comparison?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [Syntaxe X++](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-syntax?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Funkce za kompilace
 ##### [Funkce X++ za kompilace](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-compile-time-functions?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1039,7 +1079,7 @@
 ##### [Třídy W](/dynamics365/unified-operations/dev-itpro/dev-ref/w-classes?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Třídy X](/dynamics365/unified-operations/dev-itpro/dev-ref/x-classes?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Přizpůsobení s rozšířením a překrýváním vrstev
-##### Rozšiřitelnost
+##### [Rozšiřitelnost](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Přizpůsobení prvků modelu s rozšířeními](/dynamics365/unified-operations/dev-itpro/extensibility/customize-model-elements-extensions?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Přizpůsobení s rozšířením a překrýváním vrstev](/dynamics365/unified-operations/dev-itpro/extensibility/customization-overlayering-extensions?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Rozšíření tříd](/dynamics365/unified-operations/dev-itpro/extensibility/class-extensions?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1048,8 +1088,11 @@
 ##### Synchronizace databáze
 #### Přesun balíčků mezi prostředími
 ##### Vytvoření a použití nasaditelného balíčku
-##### [Průběžné doručování](/dynamics365/unified-operations/dev-itpro/continuous-delivery-home-page?toc=/dynamics365/unified-operations/talent/toc.json)
-
+#### [Domovská stránka o průběžném doručování](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-home-page?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Časté otázky k vývoji a průběžnému doručování](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-faq?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Vyloučení testovacích balíčků z výstupu sestavení](/dynamics365/unified-operations/dev-itpro/dev-tools/exclude-test-packages?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Správa modelů třetích stran a balíčků runtime pomocí správy zdrojového kódu](/dynamics365/unified-operations/dev-itpro/dev-tools/manage-runtime-packages?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Modely verze v automatizovaném sestavení](/dynamics365/unified-operations/dev-itpro/dev-tools/version-models-build?toc=/dynamics365/unified-operations/talent/toc.json)
 
 #### Domovská stránka výkonnosti
 ##### [Sledování pomocí analyzátoru sledování](/dynamics365/unified-operations/dev-itpro/perf-test/trace-trace-tutorial?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1086,8 +1129,8 @@
 ##### [Filtry](/dynamics365/unified-operations/dev-itpro/user-interface/filtering?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Ovládací prvek hostitele PowerApps](/dynamics365/unified-operations/dev-itpro/user-interface/powerapps-host-control?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Správa okna
-##### [Migrace kódu kontextové nabídky](/dynamics365/unified-operations/dev-itpro/user-interface/migration-upgrade/code-migration-context-menus?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Migrace kódu dvojitého kliknutí myší](/dynamics365/unified-operations/dev-itpro/user-interface/migration-upgrade/code-migration-double-click?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Migrace kódu kontextové nabídky](/dynamics365/unified-operations/dev-itpro/migration-upgrade/code-migration-context-menus?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Migrace kódu dvojitého kliknutí myší](/dynamics365/unified-operations/dev-itpro/migration-upgrade/code-migration-double-click?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Zadávání kontextových dat pro vyhledávání](/dynamics365/unified-operations/dev-itpro/user-interface/contextual-data-entry-lookups?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Ovládací prvek HierarchyViewer](/dynamics365/unified-operations/dev-itpro/user-interface/hierarchy-viewer-control?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Ovládací prvky vyhledávání](/dynamics365/unified-operations/dev-itpro/user-interface/lookups-controls?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1128,8 +1171,8 @@
 ##### [Vzor formuláře FactBox](/dynamics365/unified-operations/dev-itpro/user-interface/factbox-form-patterns?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Podvzory
 ##### [Podvzor vlastní skupiny filtrů](/dynamics365/unified-operations/dev-itpro/user-interface/custom-filter-group-subpattern?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Podvzor ovládacího prvku zadávání dimenze](/dynamics365/unified-operations/dev-itpro/user-interface/financial/dimension-entry-control-subpattern?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Podvzor tvůrce výrazů dimenze](/dynamics365/unified-operations/dev-itpro/user-interface/financial/dimension-expression-builder-subpattern?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Podvzor ovládacího prvku zadávání dimenze](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-subpattern?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Podvzor tvůrce výrazů dimenze](/dynamics365/unified-operations/dev-itpro/financial/dimension-expression-builder-subpattern?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Podvzor polí a skupin polí](/dynamics365/unified-operations/dev-itpro/user-interface/fields-field-groups-subpattern?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Podvzory filtrů a panelů nástrojů](/dynamics365/unified-operations/dev-itpro/user-interface/filters-toolbar-subpattern?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Podvzor vyplnění textu](/dynamics365/unified-operations/dev-itpro/user-interface/fill-text-subpattern?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1158,9 +1201,9 @@
 #### Vytvoření pracovních prostorů
 ##### [Vytvoření provozních pracovních prostorů](/dynamics365/unified-operations/dev-itpro/user-interface/build-workspaces?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Ukládání seznamů a dlaždic do mezipaměti pro pracovní prostory](/dynamics365/unified-operations/dev-itpro/user-interface/tile-list-caching-workspaces?toc=/dynamics365/unified-operations/talent/toc.json)
-#### Záznamník úloh
-##### [Záznamník úloh v aplikaci Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Záznamník úloh](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Rychlý odkaz na záznamník úloh](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-quick-reference?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Vytváření dokumentace nebo školení pomocí záznamníku úloh](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### Řešení vydávání pomocí služby Lifecycle Services
 #### [Vývoj a vydávání](/dynamics365/unified-operations/dev-itpro/lcs-solutions/lcs-solutions-app-source)
@@ -1181,7 +1224,7 @@
 ##### [Odeslání regulační výstrahy](/dynamics365/unified-operations/dev-itpro/lcs-solutions/submit-localization-alerts)
 
 
-### [Datové entity](/dynamics365/unified-operations/dev-itpro/data-entities?toc=/dynamics365/unified-operations/talent/toc.json)
+### [Datové entity](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Výchozí datové entity
 ##### [Sestava datových entit](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-report?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Datové entity: Závazky a daně](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-payable-taxes?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1209,9 +1252,11 @@
 ##### [Datové entity: Správa systému](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-system-administration?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Datové entity: Workflow](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-workflow?toc=/dynamics365/unified-operations/talent/toc.json)
 
-#### Migrující entity
+#### Migrace entit
 ##### [Projekty dat konfigurace](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Konfigurace šablon dat](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Balíčky dat konfigurace](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-packages?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Šablony dat konfigurací](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/talent/toc.json)
+
 ###### [Zkopírování dat konfigurace mezi společnostmi](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Osvědčené postupy pro import dokladů pomocí entity hlavního deníku](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=/dynamics365/unified-operations/talent/toc.json)
 
@@ -1248,7 +1293,7 @@
 ### Integrace s Office
 #### [Integrace s Office](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Kurz integrace s Office](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Použití doplňku Excel](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration/use-excel-add-in?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Použití doplňku Excel](/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Vytvoření zkušeností s otevíráním v Excelu](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Přidání šablon do otevřených řádků v nabídce Excel](/dynamics365/unified-operations/dev-itpro/user-interface/add-templates-open-lines-excel-menu?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Přizpůsobení nabídky Otevřít v Microsoft Office](/dynamics365/unified-operations/dev-itpro/office-integration/customize-open-office-menu?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1278,19 +1323,30 @@
 #### [Průvodce Ganttovým vývojem](/dynamics365/unified-operations/dev-itpro/user-interface/gantt-development-guide?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Vytvoření nového modulu správy přepravy](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine?toc=/dynamics365/unified-operations/talent/toc.json)
 
-### [Knihovna vývoje maloobchodu](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### Nasazení
-#### [Nasazení ukázkového prostředí aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition](/dynamics365/unified-operations/dev-itpro/deploy-demo-environment?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Připojování architektury Azure Resource Manager](/dynamics365/unified-operations/dev-itpro/arm-onboarding?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Azure ExpressRoute a Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/expressroute?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Nasazení ukázkového prostředí aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Připojování architektury Azure Resource Manager](/dynamics365/unified-operations/dev-itpro/deployment/arm-onboarding?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Azure ExpressRoute a Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/deployment/expressroute?toc=/dynamics365/unified-operations/talent/toc.json)
 
-#### nasazení vlastního kódu
-##### [Vytvoření nasaditelného balíčku](/dynamics365/unified-operations/dev-itpro/create-apply-deployable-package?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Použití nasaditelného balíčku](/dynamics365/unified-operations/dev-itpro/apply-deployable-package-system?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Instalace nasaditelného balíčku](/dynamics365/unified-operations/dev-itpro/install-deployable-package?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Nasazení Microsoft Dynamics 365 for Finance and Operations on-premises](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
+##### [Přehled aplikace Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-overview?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Systémové požadavky](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Nastavení velikosti hardwaru pro místní prostředí](/dynamics365/unified-operations/dev-itpro/get-started/hardware-sizing-on-premises-environments?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Zásady životního cyklu online služby a místního softwaru](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Zakoupení aplikace Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](/dynamics365/unified-operations/dev-itpro/https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Vytvoření místního projektu ve službě Lifecycle Services](/dynamics365/unified-operations/dev-itpro/deployment/lifecycle-services/lbd-create-lcs-on-prem-project?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Nastavení a nasazení místních prostředí](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Konfigurace služby SQL Server Reporting Services pro místní nasazení](/dynamics365/unified-operations/dev-itpro/analytics/configure-ssrs-on-premises?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Vývoj a nasazení vlastních modelů do místních prostředí](/dynamics365/unified-operations/dev-itpro/deployment/develop-deploy-custom-models-on-premises?toc=/dynamics365/unified-operations/talent/toc.json)
 
-#### [Stahování od poskytovatele cloudových služeb a Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/csp-download-customersource?toc=/dynamics365/unified-operations/talent/toc.json)
+
+#### Nasazení vlastního kódu
+##### [Vytvoření nasaditelného balíčku](/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Použití nasaditelného balíčku](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Instalace nasaditelného balíčku](/dynamics365/unified-operations/dev-itpro/deployment/install-deployable-package?toc=/dynamics365/unified-operations/talent/toc.json)
+
+#### [Stahování od poskytovatele cloudových služeb a Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### [Upgrade a migrace](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Upgrade z aplikace AX 2012 na aplikaci Dynamics 365 for Finance and Operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1301,7 +1357,7 @@
 ##### [Upgrade - Úlohy upgradu dat v aplikaci AX 2012](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Upgrade - Upgrade dat v prostředí sandbox](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Ověřování - Přechodové testování](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Ověřování - Proces ověřování aplikace](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Ověřování - Úlohy k provedení po upgradu](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Ověřování - Funkční testování](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-functional-validation?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Ověřování - Příprava pro ostré nasazení](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-go-live-prep?toc=/dynamics365/unified-operations/talent/toc.json)
 
@@ -1321,7 +1377,7 @@
 
 #### Upgrade na nejnovější aktualizaci
 ##### [Příprava k přesunu na nejnovější aktualizaci](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Zásady aktualizace a verzí](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Zásady životního cyklu](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Upgrade na nejnovější aktualizaci platformy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-platform-update?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Upgrade platformy Dynamics na vydání ze srpna 2016](/dynamics365/unified-operations/dev-itpro/migration-upgrade/update-platform-each-release?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Upgrade na prostředí sandbox](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-sandbox-environment?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1341,116 +1397,118 @@
 
 
 ### Správa systému
-#### [Časté dotazy k měsíčním aktualizacím platformy](/dynamics365/unified-operations/dev-itpro/faq-platform-monthly-updates?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Přidání odkazů na právní podmínky a zásady ochrany osobních údajů ve vaší organizaci](/dynamics365/unified-operations/dev-itpro/legal-terms-privacy-statement?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Licenční kódy a sestavy konfiguračních klíčů](/dynamics365/unified-operations/dev-itpro/license-codes-configuration-keys-report?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Sdílení dat mezi společnostmi](/dynamics365/unified-operations/dev-itpro/cross-company-data-sharing?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Režim údržby](/dynamics365/unified-operations/dev-itpro/maintenance-mode?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Časté dotazy k měsíčním aktualizacím platformy](/dynamics365/unified-operations/dev-itpro/sysadmin/faq-platform-monthly-updates?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Přidání odkazů na právní podmínky a zásady ochrany osobních údajů ve vaší organizaci](/dynamics365/unified-operations/dev-itpro/sysadmin/legal-terms-privacy-statement?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Licenční kódy a sestavy konfiguračních klíčů](/dynamics365/unified-operations/dev-itpro/sysadmin/license-codes-configuration-keys-report?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Sdílení dat mezi společnostmi](/dynamics365/unified-operations/dev-itpro/sysadmin/cross-company-data-sharing?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Režim údržby](/dynamics365/unified-operations/dev-itpro/sysadmin/maintenance-mode?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Zabezpečení
-##### [Zabezpečení na základě rolí](/dynamics365/unified-operations/dev-itpro/role-based-security?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Architektura zabezpečení](/dynamics365/unified-operations/dev-itpro/security-architecture?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Zabezpečení na základě rolí](/dynamics365/unified-operations/dev-itpro/sysadmin/role-based-security?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Architektura zabezpečení](/dynamics365/unified-operations/dev-itpro/sysadmin/security-architecture?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Sestavy zabezpečení](/dynamics365/unified-operations/dev-itpro/sysadmin/security-reports?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Dávkové zpracování
-##### [Přehled dávkového zpracování](/dynamics365/unified-operations/dev-itpro/batch-processing-overview?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Přehled dávkového serveru](/dynamics365/unified-operations/dev-itpro/batch-server-overview?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Přehled dávkového zpracování](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-processing-overview?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Přehled dávkového serveru](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-server-overview?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### Lifecycle Services
-#### [Přehled služeb Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [LCS pro zákazníky](/dynamics365/unified-operations/dev-itpro/lcs-works-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [LCS pro partnery](/dynamics365/unified-operations/dev-itpro/getting-started-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Novinky](/dynamics365/unified-operations/dev-itpro/whats-new-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Známé problémy](/dynamics365/unified-operations/dev-itpro/known-issues?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Uživatelská příručka Dynamics Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lcs-user-guide?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Konfigurace zabezpečení](/dynamics365/unified-operations/dev-itpro/configure-lcs-security?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Hledání problémů](/dynamics365/unified-operations/dev-itpro/issue-search-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Správce konfigurace](/dynamics365/unified-operations/dev-itpro/configuration-manager-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Nastavení Správce konfigurace ](/dynamics365/unified-operations/dev-itpro/set-up-configuration-manager-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Konfigurace služby upgradu kódu](/dynamics365/unified-operations/dev-itpro/configure-execute-code-upgrade?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Vytvoření metodologie ](/dynamics365/unified-operations/dev-itpro/create-methodology?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Modul Modelování podnikových procesů](/dynamics365/unified-operations/dev-itpro/business-process-modeler-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Knihovny podnikových procesů v Modelování podnikových procesů](/dynamics365/unified-operations/dev-itpro/business-process-libraries-business-process-modeler?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Vývojové diagramy modelování podnikových procesů](/dynamics365/unified-operations/dev-itpro/flowcharts-business-process-modeler?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Odeslání vlastních podnikových procesů](/dynamics365/unified-operations/dev-itpro/upload-business-processes-bpm-task-recorder?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Monitorování a diagnostika ](/dynamics365/unified-operations/dev-itpro/monitoring-diagnostics?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Přehled služeb Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [LCS pro zákazníky](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [LCS pro partnery](/dynamics365/unified-operations/dev-itpro/lifecycle-services/getting-started-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Novinky](/dynamics365/unified-operations/dev-itpro/lifecycle-services/whats-new-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Známé problémy](/dynamics365/unified-operations/dev-itpro/lifecycle-services/known-issues?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Uživatelská příručka Dynamics Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Konfigurace zabezpečení](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-lcs-security?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Hledání problémů](/dynamics365/unified-operations/dev-itpro/lifecycle-services/issue-search-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Správce konfigurace](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configuration-manager-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Nastavení Správce konfigurace ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/set-up-configuration-manager-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Konfigurace služby upgradu kódu](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-execute-code-upgrade?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Vytvoření metodologie ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/create-methodology?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Modul Modelování podnikových procesů](/dynamics365/unified-operations/dev-itpro/lifecycle-services/business-process-modeler-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Knihovny podnikových procesů v Modelování podnikových procesů](/dynamics365/unified-operations/dev-itpro/lifecycle-services/business-process-libraries-business-process-modeler?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Vývojové diagramy modelování podnikových procesů](/dynamics365/unified-operations/dev-itpro/lifecycle-services/flowcharts-business-process-modeler?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Odeslání vlastních podnikových procesů](/dynamics365/unified-operations/dev-itpro/lifecycle-services/upload-business-processes-bpm-task-recorder?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Monitorování a diagnostika ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/monitoring-diagnostics?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Knihovna majetku](/dynamics365/unified-operations/dev-itpro/lifecycle-services/asset-library?toc=/dynamics365/unified-operations/talent/toc.json)
 
 #### Funkce aplikace Dynamics AX 2012 Lifecycle Services
 ##### Nasazení
-###### [Prostředí hostovaná v cloudu](/dynamics365/unified-operations/dev-itpro/ax-2012/cloud-hosted-environments-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Kopírování konfigurace](/dynamics365/unified-operations/dev-itpro/copy-configuration-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Plánování nasazení aplikace Dynamics AX 2012 R3 na platformě Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/plan-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Nasazení aplikace Dynamics AX 2012 R3 na platformě Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-2012-r3-azure-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Nasazení ukázkového prostředí aplikace Dynamics AX 2012 R3](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Nasazení vývojového prostředí na platformě Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-development-environment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Nasazení vysoce dostupného prostředí na platformě Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-high-availability-environment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Nasazení testovacího prostředí na platformě Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-test-environment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Správa nasazení aplikace Dynamics AX 2012 R3 na platformě Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/manage-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Spojení serverů podnikového portálu do jedné serverové farmy](/dynamics365/unified-operations/dev-itpro/ax-2012/join-enterprise-portal-servers-single-server-farm?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Záznam vstupních bodů na podnikovém portálu Dynamics AX](/dynamics365/unified-operations/dev-itpro/ax-2012/record-entry-points-enterprise-portal?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Nasazení vývojového/testovacího prostředí Retail E-commerce na platformě Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-ecommerce-devtest-environment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Nasazení vývojového/testovacího prostředí Retail Essentials na platformě Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-essentials-demo-environment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Nasazení vývojového/testovacího prostředí Retail Essentials na platformě Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-essentials-devtest-environment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Nasazení vývojového/testovacího prostředí Retail Mobility na platformě Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-mobility-devtest-environment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Řešení potíží aplikace Dynamics AX 2012 R3 na platformě Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/troubleshoot-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Aktualizace pro Dynamics AX 2012 R3](/dynamics365/unified-operations/dev-itpro/ax-2012/update-2012-r3-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Uživatelská příručka platformy importu a exportu dat](/dynamics365/unified-operations/dev-itpro/ax-2012/user-guide-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Instalace](/dynamics365/unified-operations/dev-itpro/ax-2012/install-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Instalace pro AX 2012 R3](/dynamics365/unified-operations/dev-itpro/ax-2012/install-ax-2012-r3?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Instalace aplikace Dynamics AX 2012 R2 CU7 verze pro SQL Server 2014](/dynamics365/unified-operations/dev-itpro/ax-2012/install-dixf-ax-2012-r2-cu7-ss-2014?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Migrace dat](/dynamics365/unified-operations/dev-itpro/ax-2012/migrate-data-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Konfigurace verze SSIS](/dynamics365/unified-operations/dev-itpro/ax-2012/configure-sql-server-integration-services-multiple-versions-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Kopírování a porovnání dat entit mezi společnostmi](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-compare-entity-data-between-companies-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Kopírování dat mezi společnostmi s Dynamics AX](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-data-between-companies-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Kopírování dat mezi instancemi Dynamics AX](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-data-between-instances-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Vytvoření vlastní cílové entity](/dynamics365/unified-operations/dev-itpro/ax-2012/create-custom-target-entity-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Entity platformy importu a exportu dat](/dynamics365/unified-operations/dev-itpro/ax-2012/entities-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Import dat z datového zdroje CSV](/dynamics365/unified-operations/dev-itpro/ax-2012/import-data-csv-data-source-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Import dat z datového zdroje ODBC](/dynamics365/unified-operations/dev-itpro/ax-2012/import-data-odbc-data-source-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Ukázkové soubory](/dynamics365/unified-operations/dev-itpro/ax-2012/demo-files-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Rychlý import a export](/dynamics365/unified-operations/dev-itpro/ax-2012/quick-import-export?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Prostředí hostovaná v cloudu](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/cloud-hosted-environments-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Kopírování konfigurace](/dynamics365/unified-operations/dev-itpro/lifecycle-services/copy-configuration-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Plánování nasazení aplikace Dynamics AX 2012 R3 na platformě Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/plan-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Nasazení aplikace Dynamics AX 2012 R3 na platformě Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-2012-r3-azure-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Nasazení ukázkového prostředí aplikace Dynamics AX 2012 R3](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Nasazení vývojového prostředí na platformě Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-development-environment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Nasazení vysoce dostupného prostředí na platformě Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-high-availability-environment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Nasazení testovacího prostředí na platformě Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-test-environment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Správa nasazení aplikace Dynamics AX 2012 R3 na platformě Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/manage-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Spojení serverů podnikového portálu do jedné serverové farmy](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/join-enterprise-portal-servers-single-server-farm?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Záznam vstupních bodů na podnikovém portálu Dynamics AX](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/record-entry-points-enterprise-portal?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Nasazení vývojového/testovacího prostředí Retail E-commerce na platformě Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-ecommerce-devtest-environment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Nasazení vývojového/testovacího prostředí Retail Essentials na platformě Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-essentials-demo-environment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Nasazení vývojového/testovacího prostředí Retail Essentials na platformě Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-essentials-devtest-environment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Nasazení vývojového/testovacího prostředí Retail Mobility na platformě Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-mobility-devtest-environment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Řešení potíží aplikace Dynamics AX 2012 R3 na platformě Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/troubleshoot-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Aktualizace pro Dynamics AX 2012 R3](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/update-2012-r3-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Uživatelská příručka platformy importu a exportu dat](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/user-guide-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Instalace](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Instalace pro AX 2012 R3](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-ax-2012-r3?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Instalace aplikace Dynamics AX 2012 R2 CU7 verze pro SQL Server 2014](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-dixf-ax-2012-r2-cu7-ss-2014?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Migrace dat](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/migrate-data-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Konfigurace verze SSIS](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/configure-sql-server-integration-services-multiple-versions-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Kopírování a porovnání dat entit mezi společnostmi](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/copy-compare-entity-data-between-companies-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Kopírování dat mezi společnostmi s Dynamics AX](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/copy-data-between-companies-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Kopírování dat mezi instancemi Dynamics AX](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/copy-data-between-instances-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Vytvoření vlastní cílové entity](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-custom-target-entity-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Entity platformy importu a exportu dat](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/entities-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Import dat z datového zdroje CSV](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/import-data-csv-data-source-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Import dat z datového zdroje ODBC](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/import-data-odbc-data-source-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Ukázkové soubory](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/demo-files-dixf?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Rychlý import a export](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/quick-import-export?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### Tabulky 
-###### [Vytvoření tabulek](/dynamics365/unified-operations/dev-itpro/ax-2012/create-tables?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Vlastnosti tabulky](/dynamics365/unified-operations/dev-itpro/ax-2012/table-properties?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Vytvoření tabulek](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-tables?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Vlastnosti tabulky](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/table-properties?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### Nástroje Dynamics AX 2012 LCS
-###### [Projekty](/dynamics365/unified-operations/dev-itpro/ax-2012/projects-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Metodologie](/dynamics365/unified-operations/dev-itpro/ax-2012/methodologies-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Analýza úprav ](/dynamics365/unified-operations/dev-itpro/ax-2012/customization-analysis-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Odhad infrastruktury](/dynamics365/unified-operations/dev-itpro/ax-2012/infrastructure-estimator-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Odhad rozsahu licence](/dynamics365/unified-operations/dev-itpro/ax-2012/license-sizing-estimator-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Požadavky na nabídku (/dynamics365/unified-operations/dev-itpro/RFP) responses](/dynamics365/unified-operations/dev-itpro/ax-2012/rfp-responses-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Diagnostika systému](/dynamics365/unified-operations/dev-itpro/ax-2012/system-diagnostics-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Instalace s spuštění diagnostiky systému](/dynamics365/unified-operations/dev-itpro/ax-2012/install-run-system-diagnostics-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Analýza upgradu](/dynamics365/unified-operations/dev-itpro/ax-2012/upgrade-analysis-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Analýza rozsahu užívání](/dynamics365/unified-operations/dev-itpro/ax-2012/usage-profiler-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Projekty](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/projects-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Metodologie](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/methodologies-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Analýza úprav ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/customization-analysis-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Odhad infrastruktury](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/infrastructure-estimator-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Odhad rozsahu licence](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/license-sizing-estimator-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Požadavky na nabídku (/dynamics365/unified-operations/dev-itpro/lifecycle-services/RFP) responses](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/rfp-responses-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Diagnostika systému](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/system-diagnostics-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Instalace s spuštění diagnostiky systému](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-run-system-diagnostics-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Analýza upgradu](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/upgrade-analysis-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Analýza rozsahu užívání](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/usage-profiler-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### Nástroje Dynamics AX 2012 ke stažení
-###### [Uživatelská příručka k nástroji upgradu kódu (zastaralé)](/dynamics365/unified-operations/dev-itpro/ax-2012/code-upgrade-tool-user-guide?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Nástroje Lifecycle Service ke stažení](/dynamics365/unified-operations/dev-itpro/ax-2012/lcs-downloadable-tools-formerly-informationsource?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Testovací nástroj pro přenos dat (beta)](/dynamics365/unified-operations/dev-itpro/ax-2012/test-data-transfer-tool-beta-2012?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Instalace](/dynamics365/unified-operations/dev-itpro/ax-2012/install-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Spuštění](/dynamics365/unified-operations/dev-itpro/ax-2012/run-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Import ukázkových dat pro AX 2012 R3](/dynamics365/unified-operations/dev-itpro/ax-2012/import-demo-data-ax-2012-r3-test-data-transfer-tool?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Nástroj Security Development Tool](/dynamics365/unified-operations/dev-itpro/ax-2012/overview-security-development-tool-user-interface?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Instalace](/dynamics365/unified-operations/dev-itpro/ax-2012/install-security-development-tool?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Uživatelská příručka](/dynamics365/unified-operations/dev-itpro/ax-2012/security-development-tool-user-guide?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Definování nebo úprava oprávnění ke vstupnímu bodu](/dynamics365/unified-operations/dev-itpro/ax-2012/define-edit-entry-point-permissions?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Sada Software Development Toolkit Performance Benchmark](/dynamics365/unified-operations/dev-itpro/ax-2012/performance-benchmark-software-development-toolkit-sdk-2012?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Nástroj Security Upgrade Advisor Tool](/dynamics365/unified-operations/dev-itpro/ax-2012/security-upgrade-advisor-tool-user-guide?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Rozhraní Intelligent Data Management Framework (IDMF)](/dynamics365/unified-operations/dev-itpro/ax-2012/microsoft-idmf?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Přehled](/dynamics365/unified-operations/dev-itpro/ax-2012/overview-idmf?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Instalační příručka](/dynamics365/unified-operations/dev-itpro/ax-2012/installation-guide-idmf?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Konfigurace](/dynamics365/unified-operations/dev-itpro/ax-2012/configuration-functionality-idmf-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Analýza](/dynamics365/unified-operations/dev-itpro/ax-2012/analysis-functionality-idmf-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Vymazání a archivace objektů](/dynamics365/unified-operations/dev-itpro/ax-2012/work-with-purge-objects-archive-objects?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Vytvoření objektů k archivaci](/dynamics365/unified-operations/dev-itpro/ax-2012/create-archive-objects?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Vytvoření objektů ke smazání](/dynamics365/unified-operations/dev-itpro/ax-2012/create-purge-objects?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Vymazání plánu a úlohy analýzy](/dynamics365/unified-operations/dev-itpro/ax-2012/schedule-purge-analysis-tasks?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Zobrazení úloh k vymazání a archivaci](/dynamics365/unified-operations/dev-itpro/ax-2012/view-status-purge-archive-jobs?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Zachování](/dynamics365/unified-operations/dev-itpro/ax-2012/maintain-idmf?toc=/dynamics365/unified-operations/talent/toc.json)
-####### [Řešení potíží](/dynamics365/unified-operations/dev-itpro/ax-2012/troubleshoot-idmf?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Uživatelská příručka k nástroji upgradu kódu (zastaralé)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/code-upgrade-tool-user-guide?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Nástroje Lifecycle Service ke stažení](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/lcs-downloadable-tools-formerly-informationsource?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Testovací nástroj pro přenos dat (beta)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/test-data-transfer-tool-beta-2012?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Instalace](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Spuštění](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/run-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Import ukázkových dat pro AX 2012 R3](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/import-demo-data-ax-2012-r3-test-data-transfer-tool?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Nástroj Security Development Tool](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/overview-security-development-tool-user-interface?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Instalace](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-security-development-tool?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Uživatelská příručka](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/security-development-tool-user-guide?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Definování nebo úprava oprávnění ke vstupnímu bodu](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/define-edit-entry-point-permissions?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Sada Software Development Toolkit Performance Benchmark](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/performance-benchmark-software-development-toolkit-sdk-2012?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Nástroj Security Upgrade Advisor Tool](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/security-upgrade-advisor-tool-user-guide?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Rozhraní Intelligent Data Management Framework (IDMF)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/microsoft-idmf?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Přehled](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/overview-idmf?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Instalační příručka](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/installation-guide-idmf?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Konfigurace](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/configuration-functionality-idmf-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Analýza](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/analysis-functionality-idmf-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Vymazání a archivace objektů](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/work-with-purge-objects-archive-objects?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Vytvoření objektů k archivaci](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-archive-objects?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Vytvoření objektů ke smazání](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-purge-objects?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Vymazání plánu a úlohy analýzy](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/schedule-purge-analysis-tasks?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Zobrazení úloh k vymazání a archivaci](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/view-status-purge-archive-jobs?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Zachování](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/maintain-idmf?toc=/dynamics365/unified-operations/talent/toc.json)
+####### [Řešení potíží](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/troubleshoot-idmf?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### Správa databáze
-#### [Kopírování databáze z Azure SQL databáze do prostředí SQL Serveru](/dynamics365/unified-operations/dev-itpro/copy-database-from-azure-sql-to-sql-server?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Kopírování databáze z SQL Serveru do produkčního prostředí databáze Azure SQL](/dynamics365/unified-operations/dev-itpro/copy-database-from-sql-server-to-azure-sql?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Obnovení databáze na neprodukčním prostředí](/dynamics365/unified-operations/dev-itpro/request-point-in-time-restore?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Export kopie databáze pro pozdější obnovení](/dynamics365/unified-operations/dev-itpro/copy-operations-database?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Kopírování databáze z Azure SQL databáze do prostředí SQL Serveru](/dynamics365/unified-operations/dev-itpro/database/copy-database-from-azure-sql-to-sql-server?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Kopírování databáze z SQL Serveru do produkčního prostředí databáze Azure SQL](/dynamics365/unified-operations/dev-itpro/database/copy-database-from-sql-server-to-azure-sql?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Obnovení databáze na neprodukčním prostředí](/dynamics365/unified-operations/dev-itpro/database/request-point-in-time-restore?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Export kopie databáze pro pozdější obnovení](/dynamics365/unified-operations/dev-itpro/database/copy-operations-database?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### Podpora
 #### [Získání podpory pro aplikaci Dynamics 365 for Finance and Operations, Enterprise edition a Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support)
@@ -1465,7 +1523,8 @@
 # [Dynamics 365 for Retail](/dynamics365/unified-operations/retail/index?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ## Platby
-### [Platební metody](/dynamics365/unified-operations/retail/payment-methods?toc=/dynamics365/unified-operations/talent/toc.json)
+### [Metody platby](/dynamics365/unified-operations/retail/payment-methods?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Časté dotazy k platbám](/dynamics365/unified-operations/retail/dev-itpro/payments-retail?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ## Kontaktní středisko
 ### [Přehled kontaktního střediska](/dynamics365/unified-operations/retail/call-center-functionality?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1488,6 +1547,7 @@
 ### Hardware a periferní zařízení
 #### [Přehled maloobchodních zařízení](/dynamics365/unified-operations/retail/retail-peripherals-overview?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Hardwarová periferní zařízení POS testovaná společností Microsoft](/dynamics365/unified-operations/retail/microsoft-tested-pos-hardware-peripherals?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Simulátor periferních zařízení maloobchodu](/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Definování a správa klientů z obchodních kanálů, pokladen a hardwarových stanic](/dynamics365/unified-operations/retail/define-maintain-channel-clients-registers-hw-stations?toc=/dynamics365/unified-operations/talent/toc.json)
 ### Rozložení obrazovky
 #### [Konfigurace rozložení obrazovky pro POS](/dynamics365/unified-operations/retail/pos-screen-layouts?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1512,7 +1572,7 @@
 ### Účtenky
 #### [Nastavení šablon účtenek](/dynamics365/unified-operations/retail/receipt-templates-printing?toc=/dynamics365/unified-operations/talent/toc.json) 
 #### [Odesílání účtenek e-mailem z MPOS](/dynamics365/unified-operations/retail/email-receipts?toc=/dynamics365/unified-operations/talent/toc.json)
-### [Záznamník úloh a nápověda pro POS](/dynamics365/unified-operations/retail/task-recorder-retail-pos?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Záznamník úloh a nápověda pro POS](/dynamics365/unified-operations/retail/task-recorder-retail-pos?toc=/dynamics365/unified-operations/talent/toc.json)
 ## Monitorování a analýza
 ### [Monitorování výkonnosti z hlediska prodejů a marží](/dynamics365/unified-operations/retail/monitor-sales-margin-performance?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Analýza trendů a vzorců prodeje](/dynamics365/unified-operations/retail/analyze-sales-trends-patterns?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1525,7 +1585,7 @@
 ### [Úpravy ceny a slevy](/dynamics365/unified-operations/retail/price-adjustments-discounts?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Určení optimální kombinace překrývajících se slev](/dynamics365/unified-operations/retail/optimal-combination-overlapping-discounts?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Definování slevy specifické pro kanál](/dynamics365/unified-operations/retail/define-channel-specific-discounts?toc=/dynamics365/unified-operations/talent/toc.json)
-### [Vytvoření kupónů pro maloobchodní prodej](/dynamics365/unified-operations/retail/retail-coupons?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Vytvoření kupónů pro maloobchodní prodej](/dynamics365/unified-operations/retail/retail-coupons?toc=/dynamics365/unified-operations/talent/toc.json)
 ## Produkty a reklamní prodej
 ### [Hierarchie maloobchodu](/dynamics365/unified-operations/retail/retail-hierarchies?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Vytvoření a správa atributů](/dynamics365/unified-operations/retail/create-manage-attributes?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1533,15 +1593,12 @@
 ### [Nastavení čárových kódů](/dynamics365/unified-operations/retail/set-up-bar-codes?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Nastavení masek čárových kódů](/dynamics365/unified-operations/retail/set-up-bar-code-masks?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Nastavení sortimentu](/dynamics365/unified-operations/retail/set-up-assortments?toc=/dynamics365/unified-operations/talent/toc.json)
-### [Prodej a návrat produktů, mimo sortiment](/dynamics365/unified-operations/retail/sell-return-outside-assortments?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Prodej a návrat produktů, mimo sortiment](/dynamics365/unified-operations/retail/sell-return-outside-assortments?toc=/dynamics365/unified-operations/talent/toc.json)
 ## Věrnostní program
 ### [Nastavení zákaznického věrnostního programu](/dynamics365/unified-operations/retail/set-up-customer-loyalty-program?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ## Zásoby
 ### [Správa zásob obchodu](/dynamics365/unified-operations/retail/work-with-store-inventory?toc=/dynamics365/unified-operations/talent/toc.json)
-## Základy obchodování
-### [Přehled základů obchodování](/dynamics365/unified-operations/retail/commerce-essentials?toc=/dynamics365/unified-operations/talent/toc.json)
-### [Organizace a hierarchie organizace v Základech obchodování)](/dynamics365/unified-operations/retail/organizational-hierarchies-commerce-essentials?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ## [Vývoj a správa maloobchodu](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/talent/toc.json)
 
@@ -1551,16 +1608,16 @@
 #### [Komunikace maloobchodní sítě](/dynamics365/unified-operations/retail/dev-itpro/define-retail-channel-communications-cdx?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [MPOS architektura](/dynamics365/unified-operations/retail/dev-itpro/retail-modern-pos-architecture?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Architektura publikování maloobchodního online obchodu](/dynamics365/unified-operations/retail/dev-itpro/retail-online-store-publishing-architecture?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Obsah výkonnosti maloobchodní sítě Power BI](/dynamics365/unified-operations/retail/dev-itpro//dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
+#### [Obsah výkonnosti maloobchodní sítě Power BI](/dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
 
 ### Nasazení a opravy hotfix
 #### [Konfigurace a instalace Retail Store Scale Unit](/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Maloobchodní systém před tím, než začnete](/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Konfigurace a instalace Retail Modern POS](/dynamics365/unified-operations/retail//retail-modern-pos-device-activation?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Správa maloobchodních účtů a zařízení z centrály](/dynamics365/unified-operations/retail//set-up-activation-accounts-validate-devices-hq?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Konfigurace a instalace Retail Modern POS](/dynamics365/unified-operations/retail/retail-modern-pos-device-activation?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Správa maloobchodních účtů a zařízení z centrály](/dynamics365/unified-operations/retail/set-up-activation-accounts-validate-devices-hq?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Aktivace zařízení Retail POS](/dynamics365/unified-operations/retail/dev-itpro/retail-device-activation?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Zabezpečení maloobchodního Cloud POS](/dynamics365/unified-operations/retail/dev-itpro/secure-retail-cloud-pos?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Konfigurace a instalace Retail Hardware Station](/dynamics365/unified-operations/retail//retail-hardware-station-configuration-installation?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Konfigurace a instalace Retail Hardware Station](/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Události komponent Retail pro diagnostiku a řešení potíží](/dynamics365/unified-operations/retail/dev-itpro/retail-component-events-diagnostics-troubleshooting?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Použití nasaditelného balíčku](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system?toc=/dynamics365/unified-operations/talent/toc.json)
 
@@ -1570,8 +1627,8 @@
 
 ### Rozšiřitelnost
 #### Pokladní místo
-##### [Rozvržení obrazovky Retail POS](/dynamics365/unified-operations/retail//pos-screen-layouts?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [Instalace návrháře rozložení POS](/dynamics365/unified-operations/retail//install-pos-layout-designer?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Rozvržení obrazovky Retail POS](/dynamics365/unified-operations/retail/pos-screen-layouts?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Instalace návrháře rozložení POS](/dynamics365/unified-operations/retail/install-pos-layout-designer?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Konfigurace MPOS pro režim offline](/dynamics365/unified-operations/retail/dev-itpro/retail-modern-pos-offline?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Rozšiřitelnost spouštění MPOS and Cloud POS](/dynamics365/unified-operations/retail/dev-itpro/modern-pos-trigger-extensibility?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Vytvoření aplikace Retail Experience](/dynamics365/unified-operations/retail/dev-itpro/create-retail-experience-app?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1596,7 +1653,7 @@
 ##### [Platforma elektronického obchodu](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Sada SDK platformy elektronického obchodu](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Konektor platby
-##### [Implementace konektoru platby a platebního zařízení (dokument white paper)](/dynamics365/unified-operations/retail/dev-itpro/http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+##### [Implementace konektoru platby a platebního zařízení (dokument white paper)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 ##### [Nasazení konektoru platby](/dynamics365/unified-operations/retail/dev-itpro/deploy-payment-connector?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [vytvoření instalační služby systému Windows pro konektor platby](/dynamics365/unified-operations/retail/dev-itpro/create-windows-installer-payment-connector?toc=/dynamics365/unified-operations/talent/toc.json)
 
@@ -1604,13 +1661,14 @@
 #### [Přehled doplňku Retail SDK](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-overview?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Integrace sady Retail SDK do souvisle sestavovaného systému](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Vzory rozšiřitelnosti sady Retail SDK](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Vzor pro integraci Retail POS s kontrolními jednotkami pro Švédsko](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-control-unit-sample?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Balíčky sady Retail SDK](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-packaging?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Vzory sady Retail SDK ](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-samples?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### Commerce runtime
 #### [Rozšíření věrnostního programu](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/loyalty-extension-sample?toc=/dynamics365/unified-operations/talent/toc.json)
 
-# [Dynamics 365 for Talent](/dynamics365/unified-operations/talent/index)
+# [Dynamics 365 for Talent](/dynamics365/unified-operations/talent/index?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ## Vytvoření strategie lidských zdrojů
 ### [Uspořádání zaměstnanců podle oddělení, prací a pozic](/dynamics365/unified-operations/talent/departments-jobs-positions?toc=/dynamics365/unified-operations/talent/toc.json)
