@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -31,6 +31,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="weighted-average-date"></a>Datum váženého průměru
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Datum váženého průměru je skladový model založený na principu váženého průměru. Pro princip váženého průměru jsou vydání ze skladu zváženy pomocí průměrné hodnoty položek přijatých do skladu pro každý den v období uzávěrky skladu. Při spuštění uzávěrky skladu s použitím data váženého průměru budou všechny denní příjmy vyrovnány s jedním virtuálním výdejem. Tento virtuální výdej obsahuje celkové přijaté množství a hodnotu za daný den. Virtuální výdej má odpovídající virtuální příjem, kterým jsou výdeje vyrovnány. Proto budou mít všechny příjmy stejnou průměrnou cenu. Na virtuální výdej a příjem lze nahlížet jako na virtuální převod, označovaný také jako *převod uzávěrky skladu s váženým průměrem*”. 
