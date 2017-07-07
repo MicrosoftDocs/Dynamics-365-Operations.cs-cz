@@ -3,7 +3,7 @@ title: "Rozhraní Návrháře sestav"
 description: "Tento článek vysvětluje, jak navigovat v návrháři sestav, a jak používat různé možnosti podle specifických požadavků."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 775a836748949a86b64a0ddec15ee4519b1c5127
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: aad8f2617d94e9abc77dafe96cb95f7e191873bd
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -53,7 +53,7 @@ Nabídka **Soubor** je k dispozici všem uživatelům a obsahuje následující 
 | Uložit jako                           | Uloží aktuální definici řádku, definici sloupce, definici stromu výkaznictví nebo definici sestavy pod novým názvem.                                                                            |
 | Vlastnosti                        | Otevře dialogové okno **Vlastnosti**, ve kterém můžete změnit název a popis sestavy.                                                                                                   |
 | Vytvořit                          | Vygeneruje aktuální sestavu. Tento příkaz je k dispozici z definice sestavy.                                                                                                                 |
-| Zobrazit sestavu                       | Otevře nejnovější verzi vygenerované sestavy v aplikaci Dynamics 365 for Operations. Tento příkaz je k dispozici z definice sestavy, pokud jste vygenerovali alespoň jednu sestavu.                                 |
+| Zobrazit sestavu                       | Otevře nejnovější verzi vygenerované sestavy v aplikaci Finance and Operations. Tento příkaz je k dispozici z definice sestavy, pokud jste vygenerovali alespoň jednu sestavu.                                 |
 | Poslední definice sestav         | Zobrazí seznam sestav, které byly naposledy vytvořeny nebo upraveny. Poté můžete vybrat sestavu ze seznamu.                                                                                    |
 | Poslední definice řádků            | Zobrazí definic řádků, které byly naposledy vytvořeny nebo upraveny. Poté můžete vybrat definici řádku ze seznamu.                                                                    |
 | Poslední definice sloupce         | Zobrazí seznam definice sloupce, které byly naposledy vytvořeny nebo upraveny. Poté můžete vybrat definici sloupce ze seznamu.                                                              |
@@ -163,7 +163,7 @@ Nabídka **Nápověda** je k dispozici všem uživatelům a obsahuje následují
 
 | Příkaz | popis                                                  |
 |---------|--------------------------------------------------------------|
-| Nápověda    | Otevřete stránku tématu s nápovědou k aplikaci Dynamics 365 for Operations pro finanční výkaznictví. |
+| Nápověda    | Otevřete stránku tématu s nápovědou k aplikaci Finance and Operations pro finanční výkaznictví. |
 |         |                                                              |
 
 ## <a name="report-designer-toolbar-buttons"></a>Tlačítka panelu nástrojů Návrháře sestav

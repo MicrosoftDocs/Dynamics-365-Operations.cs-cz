@@ -1,16 +1,16 @@
 ---
-title: "Správa pracovníků skladu"
-description: "Tento článek popisuje, jak aplikace Microsoft Dynamics AX pomáhá řídit a sledovat práci, kterou provádí zaměstnanci ve skladech."
+title: "Řízení pracovníků skladu"
+description: "Tento článek popisuje, jak aplikace Dynamics 365 for Finance and Operations pomáhá řídit a sledovat práci, kterou provádějí zaměstnanci ve skladech."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72891
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
 ms.search.region: Global
@@ -18,20 +18,20 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b4e2cb91cac210a659f261c5fcabb5f3643cdbec
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 52753c21862a2955e15140bb1cdb5ef6f6efe31a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="manage-warehouse-workers"></a>Správa pracovníků skladu
+# <a name="manage-warehouse-workers"></a>Řízení pracovníků skladu
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje, jak aplikace Microsoft Dynamics AX pomáhá řídit a sledovat práci, kterou provádí zaměstnanci ve skladech.
+Tento článek popisuje, jak aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition pomáhá řídit a sledovat práci, kterou provádějí zaměstnanci ve skladech.
 
 Používáte-li funkci řízení skladu, všechny skladové operace pracovníků jsou označovány jako *práce*. Práce jako například výdej, přemístění a inventura zásob na skladě se zaznamenává pomocí mobilního zařízení. Předtím, než pracovník skladu může pracovat, musí být přidružen k pracovníkovi v modulu Lidské zdroje. Každý účet **Pracovník** může mít asociováno více skladů, se kterými jsou uživatelé přidruženi. Tito pracovní uživatelé mohou pracovat v různých skladech a mohou mít různé úrovně přístupu do různých nabídek mobilního zařízení. Můžete považovat pracovní uživatele skladu jako více přihlášení pro vybraného pracovníka. Každý pracovní uživatel má výchozí sklad a konkrétní workflow jsou zveřejněny pomocí položek nabídky, které jsou k dispozici pro pracovní uživatele. 
 

@@ -3,14 +3,14 @@ title: "Přehled plánování rozpočtu"
 description: "Tento článek představuje plánování rozpočtu a obsahuje informace, které vám pomohou při konfiguraci plánování rozpočtu a nastavení procesů plánování rozpočtu."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5212c8401f26f30cf593c52eb88291463b9b8810
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: e2c956969626836fadb0a6cac6dbb1d57f169f28
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -38,7 +38,7 @@ Tento článek představuje plánování rozpočtu a obsahuje informace, které 
 
 Můžete provádět plánování rozpočtu, zatímco připravujete rozpočty, které bude organizace implementovat. Organizace může nastavit plánování rozpočtu a poté nastavit procesy plánování rozpočtu pro potřeby splnění zásad a postupů a požadavků pro přípravu rozpočtu. 
 
-Pokud rozumíte konceptům a terminologii, které se používají v aplikaci Microsoft Dynamics 365 for Operations, je bude pro vás snazší provádět plánování rozpočtu ve vaší organizaci.
+Pokud rozumíte konceptům a terminologii, které se používají v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition,, bude pro vás snazší provádět plánování rozpočtu ve vaší organizaci.
 
 ### <a name="key-terms"></a>Klíčové podmínky
 
@@ -59,7 +59,7 @@ Pomocí plánování rozpočtu můžete provádět následující úkony:
 -   Automaticky směrujte plány rozpočtu společně s listy, dokumenty odůvodnění a jinými přílohami ke kontrole a schválení.
 -   Konsolidujte více plánů rozpočtu z nižší úrovně organizace do jediného nadřazeného plánu rozpočtu na vyšší úrovni organizace. Lze také vyvinout jeden plán rozpočtu na vyšší úrovni v organizaci a přidělit rozpočet nižším úrovním organizace.
 
-Plánování rozpočtu je integrováno s jinými moduly v aplikaci Microsoft Dynamics 365 for Operations. Lze tedy přenést informace z předchozích rozpočtů, skutečných výdajů, dlouhodobého majetku a lidských zdrojů. Protože je plánování rozpočtu také integrováno s aplikacemi Microsoft Excel a Microsoft Word, můžete tyto aplikace využít k práci s daty plánování rozpočtu. Například správce rozpočtu může exportovat požadavek oddělení rozpočtu ze scénáře plánu rozpočtu do listu aplikace Excel. Data lze analyzovat, aktualizovat a zobrazit na listě a pak opět publikovat do řádků plánu rozpočtu.
+Plánování rozpočtu je integrováno s jinými moduly v aplikaci Microsoft Dynamics 365 for Finance and Operations. Lze tedy přenést informace z předchozích rozpočtů, skutečných výdajů, dlouhodobého majetku a lidských zdrojů. Protože je plánování rozpočtu také integrováno s aplikacemi Microsoft Excel a Microsoft Word, můžete tyto aplikace využít k práci s daty plánování rozpočtu. Například správce rozpočtu může exportovat požadavek oddělení rozpočtu ze scénáře plánu rozpočtu do listu aplikace Excel. Data lze analyzovat, aktualizovat a zobrazit na listě a pak opět publikovat do řádků plánu rozpočtu.
 
 ## <a name="configuring-budget-planning"></a>Konfigurace plánování rozpočtu
 Stránka **Konfigurace plánování rozpočtu** obsahuje nastavení, která jsou vyžadována pro nastavení plánování rozpočtu. Následující části popisují některé klíčové faktory, které byste měli zvážit při konfiguraci plánování rozpočtu. Po dokončení konfigurace nastavte procesy plánování rozpočtu.
@@ -78,7 +78,7 @@ V následujícím příkladu ředitelství podniku odhaduje částky prvotního 
 
 Na stránce **Organizační hierarchie** lze označit organizační hierarchii jako hierarchii plánování rozpočtu pro každý procesu plánování rozpočtu. Plánování rozpočtu nemusí odpovídat standardní organizační hierarchii, která se používá pro jiné účely. Vzhledem k tomu, že tuto hierarchii lze použít k agregaci a distribuci dat, můžete jí dát jinou strukturu. V příkladu schématu jsou prodejní oddělení pod úrovní centrály, která zahrnuje rozpočet a finanční oddělení. Tato struktura se pravděpodobně liší od struktury, která se používá ke správě operací pro prodejní oddělení. Pouze jednu hierarchii plánování lze přiřadit ke každému procesu plánování rozpočtu. 
 
-Další informace viz [Organizace a organizační hierarchie](/dynamics365/operations/organization-administration/organizations-organizational-hierarchies).
+Další informace viz [Organizace a organizační hierarchie](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies).
 
 ### <a name="user-security"></a>Uživatelské zabezpečení
 
@@ -88,13 +88,13 @@ Plánování rozpočtu může dodržovat jeden ze dvou modelů zabezpečení k d
 
 Workflowy plánování rozpočtu se používají v kombinaci s workflowy rozpočtování pro správu tvorby a vývoje plánů rozpočtů.
 
-Workflow plánování rozpočtu je tvořen uspořádanou sadou fází, kterými plán rozpočtu prochází. Každý workflow rozpočtového plánování je přidružen k workflowu rozpočtování. Workflowy rozpočtování jsou jedním z typů workflowů, které se používají v aplikaci Microsoft Dynamics 365 for Operations. Workflow rozpočtování směruje plány rozpočtu spolu s listy, odůvodněním a přílohami prostřednictvím organizace k revizi a schválení. 
+Workflow plánování rozpočtu je tvořen uspořádanou sadou fází, kterými plán rozpočtu prochází. Každý workflow rozpočtového plánování je přidružen k workflowu rozpočtování. Workflowy rozpočtování jsou jedním z typů workflowů, které se používají v aplikaci Finance and Operations. Workflow rozpočtování směruje plány rozpočtu spolu s listy, odůvodněním a přílohami prostřednictvím organizace k revizi a schválení. 
 
 Workflow plánování rozpočtu vytváříte v části **Fáze workflowu** na stránce **Konfigurace plánování rozpočtu**. Zde můžete vybrat fáze a workflowu rozpočtování, který bude použit, a také nakonfigurovat další nastavení. 
 
 Je vhodné vytvořit workflow plánování rozpočtu pro každou úroveň hierarchie rozpočtování. Poté můžete přiřadit workflow rozpočtování, který obsahuje prvky, které odpovídají fázím workflowu plánování rozpočtu. V příkladu schématu zobrazeném v tomto článku by byl jeden workflow plánování rozpočtu vytvořen pro prodejní oddělení a jiný pro ústředí. Workflow rozpočtování přesune plány rozpočtu jednotlivými fázemi. 
 
-Workflow rozpočtování můžete vytvořit pro plánování rozpočtu na stránce **Workflowy rozpočtování**. Tento proces se podobá procesu vytváření jiných workflowů v aplikaci Microsoft Dynamics 365 for Operations. Následující obrázek znázorňuje příklad workflowu ústředí. 
+Workflow rozpočtování můžete vytvořit pro plánování rozpočtu na stránce **Workflowy rozpočtování**. Tento proces se podobá procesu vytváření jiných workflowů v aplikaci Finance and Operations. Následující obrázek znázorňuje příklad workflowu ústředí. 
 
 [![Workflow rozpočtování pro plánování rozpočtu](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 

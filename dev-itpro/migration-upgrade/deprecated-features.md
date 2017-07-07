@@ -1,9 +1,9 @@
 ---
 title: "Zastaralé funkce"
-description: "Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění v Dynamics 365 for Operations. Obsahuje také seznam funkcí, které byly odstraněny ze starších verzí Dynamics AX 7.0."
+description: "Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění."
 author: sericks007
 manager: AnnBe
-ms.date: 04/18/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 46a6f054f1cc5162e19d962964eb6eeb780087a6
+ms.sourcegitcommit: 3267bd1cbd738b5ced9996fc3b28eee211627591
+ms.openlocfilehash: 8feffb27b5d08a9c90e97ac0d7e00abf0448d0df
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/16/2017
 
 
 ---
@@ -29,8 +29,40 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění.
 
-Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění v Dynamics 365 for Operations. Obsahuje také seznam funkcí, které byly odstraněny ze starších verzí Dynamics AX 7.0.
+## <a name="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Funkce, které se již nepoužívají v aplikaci Dynamics 365 for Finance and Operations, Enterprise edition, aktualizace z července 2017
+
+### <a name="warehouse-mobile-devices-portal"></a>Portál skladu pro mobilní zařízení
+
+Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, určená pro místní vlastní nasazení. Tato komponenta již není aplikací Microsoft Dynamics 365 for Finance and Operations, Enterprise edition podporována. Funkce portálu skladu pro mobilní zařízení byla nahrazena nativní aplikací, která vylepšuje uživatelské prostředí. 
+
+|                                  |                                                 |
+|----------------------------------|-------------------------------------------------|
+| **Důvod pro zrušení**       | Duplicitní funkce.                        |
+| **Nahrazeno jinou funkcí?** | Ano. Tato funkce byla nahrazena aplikací Finance and Operations - Warehousing. Další informace o nastavení a požadavcích naleznete v tématu [Instalace a konfigurace aplikace Microsoft Dynamics 365 for Finance and Operations - Warehousing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Ovlivněné moduly**             | Řízení skladu, Správa přepravy |
+
+### <a name="advanced-bank-reconciliation-matching-rule-for-manual-matching"></a>Pravidlo párování rozšířeného odsouhlasení banky pro ruční párování
+
+Bylo použito pravidlo párování k výběru a označení bankovního dokumentu při manuálním párování dokumentů v listu pro odsouhlasení.
+
+|                                  |                                                                                        |
+|----------------------------------|----------------------------------------------------------------------------------------|
+| **Důvod pro zrušení**       | Omezené použití.                                                                         |
+| **Nahrazeno jinou funkcí?** | Č. Pro nalezení dokumentů k odsouhlasení je třeba použít možnosti filtrování sloupce. |
+| **Ovlivněné moduly**             | Pokladna a banka                                                               |
+
+### <a name="windows-8-tablet-app"></a>Windows 8 - aplikace pro tablety
+
+Aplikace pro tablety Windows 8 poskytovala funkci pro zadání a schválení výdajů.
+
+|                                  |                                                                                          |
+|----------------------------------|------------------------------------------------------------------------------------------|
+| **Důvod pro zrušení**       | Finance and Operations je kompatibilní s tablety. Aplikace pro tablety již není požadována. |
+| **Nahrazeno jinou funkcí?** | Č.                                                                                      |
+| **Ovlivněné moduly**             | Správa výdajů                                                                       |
+
 
 <a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Funkce, které jste již nepoužívají v Dynamics 365 for Operations 1611 po aktualizaci platformy 3
 ---------------------------------------------------------------------------------------------
@@ -301,7 +333,7 @@ Workflow správy vytvoření cílů zaměstnanců je jednou z několika workflow
 
 |                              |                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Řízení výkonnosti bylo zcela změněno v aplikaci Microsoft Dynamics 365 for Operations.                                                                                                                                                                                                                                        |
+| Důvod pro zrušení       | Řízení výkonnosti bylo zcela změněno v aplikaci Microsoft Dynamics 365 for Finance and Operations.                                                                                                                                                                                                                                        |
 | Nahrazeno jinou funkcí? | Upravená funkce řízení výkonnosti poskytuje větší kontrolu nad obsahem cílů, měřeními, která se používají ke sledování vývoje, a připojováním podpůrné dokumentace. Cíle lze ukládat jako šablony a pak znovu použít. Tato funkce vám pomůže rychleji nastavit další cíle pro zaměstnance. |
 | Ovlivněné moduly             | Správa lidského kapitálu                                                                                                                                                                                                                                                                                                               |
 
@@ -484,7 +516,7 @@ V aplikaci Dynamics AX 2012 R3 se Retail Modern POS připojoval přímo k datab�
 
 |                              |                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Přímé připojení k databázi vyžadovalo nižší protokoly zabezpečení a primárně sloužilo k dosahování nejvyšších úrovní výkonnosti. Vzhledem k výkonu a vylepšení zabezpečení, ke kterým došlo v aplikaci Dynamics 365 for Operations tato funkce nyní způsobuje mnohem více problémů, než řeší. |
+| Důvod pro zrušení       | Přímé připojení k databázi vyžadovalo nižší protokoly zabezpečení a primárně sloužilo k dosahování nejvyšších úrovní výkonnosti. Vzhledem k výkonu a vylepšení zabezpečení, ke kterým došlo v aplikaci Finance and Operations tato funkce nyní způsobuje mnohem více problémů, než řeší. |
 | Nahrazeno jinou funkcí? | Č. V současné době se podporuje pouze standardní komunikace Retail Server.    |
 | Ovlivněné moduly             | Channel DB/Retail Modern POS                                    |
 
@@ -808,9 +840,5 @@ Mzdové informace lidských zdrojů
 | Důvod pro zrušení       | Tato funkce byla nahrazena jinou funkcí.                                    |
 | Nahrazeno jinou funkcí? | Management Reporter (v aktuální verzi aplikace Dynamics AX označena jako **Finanční výkaznictví**) |
 | Ovlivněné moduly             | Hlavní kniha                                                                              |
-
-
-
-
 
 

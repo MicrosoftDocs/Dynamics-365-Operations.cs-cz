@@ -3,13 +3,13 @@ title: "Konfigurace ručního rozhodnutí ve workflowu"
 description: "Toto téma vysvětluje, jak nakonfigurovat vlastnosti ručního rozhodnutí."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192101
 ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ac86ffa794b5fd92ca9aba24537fbc05057fe824
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 6ea8b060741ea94af16861d5bb52894a577e5521
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -75,7 +75,7 @@ Musíte zadat řádek předmětu a pokyny pro uživatele přiřazené k tomuto r
     6.  Klepněte na tlačítko **Zavřít**.
 
 ## <a name="specify-the-possible-outcomes-of-a-decision"></a>Určete možné výsledky rozhodnutí
-obvykle pokud je dokument přiřazen pracovníkovi s rozhodovací pravomocí, je tomuto pracovníkovi kladena otázka. Na tuto otázku se obvykle odpovídá možnostmi **Ano**nebo **Ne**, nebo **Pravda** nebo **Nepravda**. Podle následujících kroků můžete určit možné výsledky ručního rozhodnutí.
+obvykle pokud je dokument přiřazen pracovníkovi s rozhodovací pravomocí, je tomuto pracovníkovi kladena otázka. Na tuto otázku se obvykle odpovídá možnostmi **Ano** nebo **Ne**, nebo **Pravda** nebo **Nepravda**. Podle následujících kroků můžete určit možné výsledky ručního rozhodnutí.
 
 1.  V levém podokně klepněte na tlačítko **Základní nastavení**.
 2.  Na kartě **Výsledky** v poli **Výsledek 1** zadejte název výsledku nebo možnost.
@@ -152,10 +152,10 @@ Můžete odeslat oznámení uživatelům, jakmile bude rozhodnutí provedeno, de
     </tr>
     <tr class="odd">
     <td>Uživatel</td>
-    <td>Konkrétní uživatelé aplikace Microsoft Dynamics 365 for Operations</td>
+    <td>Konkrétní uživatelé aplikace Microsoft Dynamics 365 for Finance and Operations</td>
     <td><ol>
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
-    <li>Seznam <strong>Dostupní uživatelé</strong>: obsahuje všechny uživatele aplikace Dynamics 365 for Operations. Vyberte uživatele, kterým chcete odeslat oznámení, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    <li>Seznam <strong>Dostupní uživatelé</strong> obsahuje všechny uživatele aplikace Finance and Operations. Vyberte uživatele, kterým chcete odeslat oznámení, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -215,10 +215,10 @@ Pomocí následujícího postupu určíte, komu má být ruční rozhodnutí př
     </tr>
     <tr class="even">
     <td>Uživatel</td>
-    <td>Konkrétní uživatelé aplikace Dynamics 365 for Operations</td>
+    <td>Konkrétní uživatelé aplikace Finance and Operations</td>
     <td><ol>
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
-    <li>Seznam <strong>Dostupní uživatelé</strong>: obsahuje všechny uživatele aplikace Dynamics 365 for Operations. Vyberte uživatele, kterým chcete rozhodnutí přiřadit, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    <li>Seznam <strong>Dostupní uživatelé</strong> obsahuje všechny uživatele aplikace Finance and Operations. Vyberte uživatele, kterým chcete rozhodnutí přiřadit, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -301,10 +301,10 @@ Pokud uživatel v přiděleném čase rozhodnutí neučiní, rozhodnutí bude v 
     </tr>
     <tr class="odd">
     <td>Uživatel</td>
-    <td>Konkrétní uživatelé aplikace Dynamics 365 for Operations</td>
+    <td>Konkrétní uživatelé aplikace Finance and Operations</td>
     <td><ol>
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
-    <li>Seznam <strong>Dostupní uživatelé</strong>: obsahuje všechny uživatele aplikace Dynamics 365 for Operations. Vyberte uživatele, ke kterým chcete rozhodnutí eskalovat, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    <li>Seznam <strong>Dostupní uživatelé</strong> obsahuje všechny uživatele aplikace Finance and Operations. Vyberte uživatele, ke kterým chcete rozhodnutí eskalovat, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
     </ol></td>
     </tr>
     </tbody>

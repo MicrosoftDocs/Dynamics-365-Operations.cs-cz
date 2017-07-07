@@ -1,9 +1,9 @@
 ---
 title: "Lean manufacturing - přehled"
-description: "Tento článek poskytuje přehled a popis funkcí lean manufacturing v aplikaci Microsoft Dynamics AX."
+description: "Tento článek obsahuje přehled a popis funkcí lean manufacturingu v aplikaci Dynamics 365 for Finance and Operations."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19371
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
 ms.search.region: Global
@@ -20,30 +20,30 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: dd29e601cb78b6903e09e63182196427183f6dbe
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 376b521a7527b4f60bc01c080f8eabb5cb231b30
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="lean-manufacturing-overview"></a>Lean manufacturing - přehled
+# <a name="lean-manufacturing-overview"></a>Lean manufacturing – přehled
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek poskytuje přehled a popis funkcí lean manufacturing v aplikaci Microsoft Dynamics AX.
+Tento článek obsahuje přehled a popis funkcí lean manufacturingu v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 Lean manufacturing nabízí nástroje, které lze použít k modelování štíhlých operací. Tyto nástroje podporují následující koncepce a podnikatelské činnosti:
 -   Vytvoření základu pro lean manufacturing modelováním výroby a logistických procesů do podoby výrobních toků.
 -   Implementace štíhlého poptávkového systému pomocí kanbanů pro signalizaci požadavků poptávky.
 -   Sledování a správa kanbanovových úloh.
 
-Architektura lean manufacturing v aplikaci Microsoft Dynamics AX 7 obsahuje výrobní toky, aktivity a kanbanová pravidla. Tyto struktury jsou plně integrované s procesy v aplikaci Microsoft Dynamics AX 7. Lean manufacturing můžete použít ve smíšeném výrobní prostředí, ve kterém se kombinují různé strategie dodávek, výroby a zdrojů. Tyto strategie zahrnují výrobní zakázky, dávkové objednávky pro zpracovatelské odvětví, nákupní objednávky a převodní příkazy.
+Architektura lean manufacturing v aplikaci Finance and Operations obsahuje výrobní toky, aktivity a kanbanová pravidla. Tyto struktury jsou plně integrovány do procesů Finance and Operations. Lean manufacturing můžete použít ve smíšeném výrobní prostředí, ve kterém se kombinují různé strategie dodávek, výroby a zdrojů. Tyto strategie zahrnují výrobní zakázky, dávkové objednávky pro zpracovatelské odvětví, nákupní objednávky a převodní příkazy.
 | **Důležité**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Aplikaci Microsoft Dynamics AX 7 můžete použít k podpoře implementace lean manufacturing s kanbany. Úspěšná implementace zásad štíhlé výroby však závisí na vnitřních obchodních procesech, které používáte, a skutečných výrobních podmínkách a prostředí. |
+| Aplikaci Finance and Operations můžete použít k podpoře implementace lean manufacturingu s kanbany. Úspěšná implementace zásad štíhlé výroby však závisí na vnitřních obchodních procesech, které používáte, a skutečných výrobních podmínkách a prostředí. |
 
 ## <a name="modeling-manufacturing-and-logistics-processes-as-production-flows"></a> Modelování procesů výroby a logistiky do podoby výrobních toků
 Základ pro lean manufacturing lze vytvořit modelováním výroby a logistických procesů do podoby výrobních toků. Tato aktivita se skládá z následujících úloh:
@@ -71,8 +71,8 @@ V následujícím seznamu jsou popsány speciální kanbanové desky:
 -   Kanbanová deska pro úlohy převodu – dává přehled o aktuálních úlohách převodu. Můžete aktualizovat a registrovat výdejky, zahajovat a dokončovat úlohy převodu a provádět další úlohy.
 -   Kanbanová deska pro úlohy procesu – tato deska slouží k podpoře normálního výrobního toku a dává přehled o aktuální situaci v jedné nebo více pracovních buňkách. Na této desce lze kanbanům určit prioritu, vyskladnit je nebo vyrobit. Správní slouží také k podpoře snímání čárových kódů pro potřeby vykazování kanbanů.
 
-## <a name="kanban-jobs-and-integration-with-microsoft-dynamics-ax-processes"></a> Kanbanové úlohy a integrace s procesy aplikace Microsoft Dynamics AX
-Kanbanové úlohy jsou plně integrovány s aktuálními procesy pro skladové transakce v aplikaci Microsoft Dynamics AX.
+## <a name="kanban-jobs-and-integration-with-finance-and-operations-processes"></a>Kanbanové úlohy a integrace s procesy aplikace Finance and Operations
+Kanbanové úlohy jsou plně integrovány do aktuálních procesů pro skladové transakce v aplikaci Finance and Operations.
 -   Můžete provádět aktivity vyskladnění k doplnění materiálu, který se používá ke splnění požadavků kanbanových úloh.
 -   Můžete vytisknout kanbanové karty, kolující kanbanové karty a výdejky, aby se kanbany lépe používaly. Tyto dokumenty představují sledování a registraci kanbanových úloh ve skladu a Dílenské výrobě.
 -   Sejmutím čárového kódu můžete zaregistrovat aktivity výdeje a převodu ve skladu.

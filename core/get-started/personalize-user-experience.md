@@ -1,16 +1,16 @@
 ---
 title: "Individuální nastavení prostředí uživatele"
-description: "Tento článek vysvětluje, jakým způsobem lze přizpůsobit aplikaci Microsoft 365 for Operations."
+description: "Tento článek vysvětluje, jakým způsobem lze přizpůsobit aplikaci Microsoft Dynamics 365 for Finance and Operations."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SysUserSetup
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
@@ -18,44 +18,44 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 689efef6ffa10bbee30cd734f3f09ba20957834d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b338a930777a5945eb6318dc8066fb3649c79dbe
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="personalize-the-user-experience"></a>Individuální nastavení prostředí uživatele
+# <a name="personalize-the-user-experience"></a>Přizpůsobení uživatelského prostředí
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek vysvětluje, jakým způsobem lze přizpůsobit aplikaci Microsoft 365 for Operations.
+Tento článek vysvětluje, jakým způsobem lze přizpůsobit aplikaci Microsoft Dynamics 365 for Finance and Operations.
 
-K dispozici je více typů přizpůsobení v aplikaci Microsoft Dynamics 365 for Operations. Některá přizpůsobení jsou výběry, které byly vytvořeny v seznamu voleb na stránce nastavení. Některá přizpůsobení jsou implicitní, například že aplikace Dynamics 365 for Operations uchovává informace o šířce sloupců mřížky, upravíte-li je a rozbalíte a sbalíte stav pevné záložky. Jiná přizpůsobení jsou explicitní. Pro explicitní přizpůsobení zadejte režim interaktivního přizpůsobení a upravte vzhled stránky přímo řízením způsobu, jakým se elementy zobrazují či reagují na stránce. 
+K dispozici je více typů přizpůsobení v aplikaci Microsoft Dynamics 365 for Finance and Operations. Některá přizpůsobení jsou výběry, které byly vytvořeny v seznamu voleb na stránce nastavení. Některá přizpůsobení jsou implicitní, například že aplikace Finance and Operations uchovává informace o šířce sloupců mřížky, upravíte-li je a rozbalíte a sbalíte stav pevné záložky. Jiná přizpůsobení jsou explicitní. Pro explicitní přizpůsobení zadejte režim interaktivního přizpůsobení a upravte vzhled stránky přímo řízením způsobu, jakým se elementy zobrazují či reagují na stránce. 
 
-Všechna individuální nastavení kteréhokoli typu, které uživatel v aplikaci Dynamics 365 for Operations udělá, jsou určeny pouze pro daného uživatele, bez ohledu na společnost, se kterou uživatel pracuje. Změny, které uživatel provede na stránce neovlivní ostatní uživatelé v systému.
+Všechna individuální nastavení kteréhokoli typu, které uživatel v aplikaci Finance and Operations udělá, jsou určeny pouze pro daného uživatele, bez ohledu na společnost, se kterou uživatel pracuje. Změny, které uživatel provede na stránce neovlivní ostatní uživatelé v systému.
 
 ## <a name="systemwide-options-for-the-current-user"></a>Systémové možnosti pro aktuálního uživatele
 Navigační panel obsahuje obrázek ozubeného kola, který se nazývá tlačítko nabídky **Nastavení**. Při otevírání nabídky **Nastavení** se zobrazí počet voleb. Při výběru **Možnosti** se uživateli otevře stránka **Možnosti**. Zde naleznete těchto čtyřech možnosti karet: **Vizuální vlastnosti**, **Předvolby**, **Účet** a **Workflow**.
 
 -   **Vizuální vlastnosti:** Vyberte motiv barvy a výchozí velikost prvků vašich stránek.
--   **Předvolby:** Zde můžete vybrat výchozí hodnoty pokaždé, když otevřete aplikaci Dynamics 365 for Operations, včetně společnosti, úvodní stránky a výchozího režim zobrazení/úprav (určující, zda je stránka uzamčena pro zobrazení nebo otevření k úpravám při každém otevření). Naleznete zde také jazyk, časové pásmo a datum, čas a možnosti formátu čísel. Nakonec tato stránka obsahuje číslo různých předvoleb, které se liší od dílčí verze.
+-   **Předvolby:** Zde můžete vybrat výchozí hodnoty pokaždé, když otevřete aplikaci Finance and Operations včetně společnosti, úvodní stránky a výchozího režim zobrazení/úprav (určující, zda je stránka uzamčena pro zobrazení nebo otevření k úpravám při každém otevření). Naleznete zde také jazyk, časové pásmo a datum, čas a možnosti formátu čísel. Nakonec tato stránka obsahuje číslo různých předvoleb, které se liší od dílčí verze.
 -   **Účet:** Je používán k poskytování ID uživatele a ostatních možností vztahujících se k účtu.
 -   **Workflow:** Zde volíte možnosti týkající se workflowu.
 
 ## <a name="implicit-personalizations"></a>Implicitní individuální nastavení
 Implicitní individuální nastavení jsou ta přizpůsobení, která provádíte pouhou spoluprací s některými ovládací prvky, které pamatují jejich aktuální viditelný stav. 
 
-**Sloupce mřížky:** Šířku sloupce v seznamu můžete upravit výběrem na ukazateli velikosti vlevo nebo vpravo od záhlaví a jeho posunem doleva nebo doprava na požadovanou šířku. Aplikace Dynamics 365 for Operations ukládá šířku, který chcete vytvořit a zobrazit sloupec této šířky při každém otevření stránky se seznamem. 
+**Sloupce mřížky:** Šířku sloupce v seznamu můžete upravit výběrem na ukazateli velikosti vlevo nebo vpravo od záhlaví a jeho posunem doleva nebo doprava na požadovanou šířku. Aplikace Finance and Operations uloží požadovanou šířku a zobrazí tento sloupec této šířky při každém otevření stránky se seznamem. 
 
-**Pevné záložky:** Některé stránky mají možnost rozbalení oddílů, kterým se říká pevné záložky. Dynamics 365 for Operations si ukládá, kterou pevnou záložku jste si rozbalili a kterou sbalili. Vždy, když se vrátíte na stránku, stejné pevné záložky bude rozbalené nebo sbalené podle jejich posledního použití. V tomto článku si vysvětlíme, jak změnit pořadí oddílů pevných záložek. V některých případech sbalení pevné záložky můžete zvýšit výkon, protože aplikace Dynamics 365 for Operations nebude muset načítat informace o dané pevné záložce, dokud záložka nebude rozbalena. 
+**Pevné záložky:** Některé stránky mají možnost rozbalení oddílů, kterým se říká pevné záložky. Finance and Operations si ukládá, kterou pevnou záložku jste rozbalili a kterou sbalili. Vždy, když se vrátíte na stránku, stejné pevné záložky bude rozbalené nebo sbalené podle jejich posledního použití. V tomto článku si vysvětlíme, jak změnit pořadí oddílů pevných záložek. V některých případech sbalení pevné záložky můžete zvýšit výkon, protože aplikace Finance and Operations nebude muset načítat informace o dané pevné záložce, dokud záložka nebude rozbalena. 
 
-**Okna s fakty:** Některé stránky obsahují oddíl s názvem podokna oken s fakty. Toto podokno obsahuje jen informace pro čtení související s aktuálním předmětem stránky. Každý oddíl v podokně okna s fakty se nazývá okno s fakty. Můžete rozbalit nebo sbalit pole faktů a aplikace Dynamics 365 for Operations uloží vaše preference. V některých případech sbalení okna s fakty můžete zvýšit výkon, protože aplikace Dynamics 365 for Operations nebude muset načítat informace o daném okně s fakty, dokud okno nebude rozbaleno.
+**Okna s fakty:** Některé stránky obsahují oddíl s názvem podokna oken s fakty. Toto podokno obsahuje jen informace pro čtení související s aktuálním předmětem stránky. Každý oddíl v podokně okna s fakty se nazývá okno s fakty. Můžete rozbalit nebo sbalit pole faktů a aplikace Finance and Operations uloží vaše preference. V některých případech sbalení okna s fakty můžete zvýšit výkon, protože aplikace Finance and Operations nebude muset načítat informace o daném okně s fakty, dokud okno nebude rozbaleno.
 
 ## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Explicitní přizpůsobení za použití panelu nástrojů přizpůsobení.
-Každý osoba a společnost má jinou perspektivu, která data jsou pro ně nejdůležitější, nebo která data nejsou potřebná pro způsob, jakým spouštějí svá obchodní data. Možnost přizpůsobit způsob, jak je objednaná vaše informace, jak vzájemně působí, nebo dokonce jakým způsobem je skrytá, je klíčem k tvorbě osobního a výrobního prostředí aplikace Dynamics 365 for Operations. 
+Každý osoba a společnost má jinou perspektivu, která data jsou pro ně nejdůležitější, nebo která data nejsou potřebná pro způsob, jakým spouštějí svá obchodní data. Možnost přizpůsobit způsob, jak je objednaná vaše informace, jak vzájemně působí, nebo dokonce jakým způsobem je skrytá, je klíčem k tvorbě osobního a výrobního prostředí aplikace Finance and Operations. 
 
 Explicitní individuální nastavení jsou taková, která provádíte explicitně s úmyslem změnit vzhled nebo chování prvku nebo stránky, volbou nabídky přizpůsobení. Nejzákladnějším typem explicitního přizpůsobení je, když na prvek kliknete pravým tlačítkem myši a vyberete **Přizpůsobit**. (Všimněte si, že ne všechny prvky na stránce mohou být přizpůsobeny.) Vyberete-li tuto metodu přizpůsobení zobrazí se okno Vlastnosti prvku. 
 
@@ -67,11 +67,11 @@ Pokud chcete přesunout nebo skrýt prvky nebo provést několik změn, můžete
 
 [![Panel nástrojů Přizpůsobení](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-Panel nástrojů Přizpůsobení má několik akcí přizpůsobení. Zvolte nástroj **Vybrat**, pokud chcete vybrat a změnit vlastnosti mnoha prvků po jednom. Za prvé, klepněte na nástroj Vybrat a pak klepněte na prvek, jehož vlastnosti chcete upravit. Při výběru prvku se otevře okno vlastností prvku a můžete upravit jakékoli vlastnosti pro daný prvek. Proces můžete opakovat další prvky formuláře, které je možné přizpůsobit. V některých případech po výběru prvku a uvidíte, že některé vlastnosti nelze měnit. To znamená, že na základě způsobu aktuálního používaného prvku vám aplikace Dynamics 365 for Operations neumožňuje měnit vlastnosti. Nemůžete například skrýt pole, které je požadováno. 
+Panel nástrojů Přizpůsobení má několik akcí přizpůsobení. Zvolte nástroj **Vybrat**, pokud chcete vybrat a změnit vlastnosti mnoha prvků po jednom. Za prvé, klepněte na nástroj Vybrat a pak klepněte na prvek, jehož vlastnosti chcete upravit. Při výběru prvku se otevře okno vlastností prvku a můžete upravit jakékoli vlastnosti pro daný prvek. Proces můžete opakovat další prvky formuláře, které je možné přizpůsobit. V některých případech po výběru prvku a uvidíte, že některé vlastnosti nelze měnit. To znamená, že na základě způsobu aktuálního používaného prvku vám aplikace Finance and Operations neumožňuje měnit vlastnosti. Nemůžete například skrýt pole, které je požadováno. 
 
-Zvolte nástroj pro **Přesunutí**, pokud chcete vybrat a přesunout prvek na jiné místo v rámci aktuální skupiny prvků. (Prvek nelze přesunout mimo nadřazenou skupinu). Za prvé, klepněte na nástroj Přesunout a pak klepněte na prvek, který chcete přesunout. Po klepnutí na prvek, který chcete přesunout, prohledá aplikace Dynamics 365 for Operations formulář, aby pochopila, kam tento prvek lze přesunout, a vytvoří řadu „zóny přetažení“, která se zobrazí jako barevné tučné řádky u oblasti, kam v aktuální skupině lze prvek přetáhnout. 
+Zvolte nástroj pro **Přesunutí**, pokud chcete vybrat a přesunout prvek na jiné místo v rámci aktuální skupiny prvků. (Prvek nelze přesunout mimo nadřazenou skupinu). Za prvé, klepněte na nástroj Přesunout a pak klepněte na prvek, který chcete přesunout. Po klepnutí na prvek, který chcete přesunout, prohledá aplikace Finance and Operations formulář, aby pochopila, kam tento prvek lze přesunout, a vytvoří řadu „zóny přetažení“, která se zobrazí jako barevné tučné řádky u oblasti, kam v aktuální skupině lze prvek přetáhnout. 
 
-Chcete-li provést výběr a skrýt prvek, zvolte možnost **skrýt**. Ke skrytí prvku stačí vybrat nástroj Skrýt a klepnout na prvek, který se má skrýt. Vyberete-li nástroj skrytí, nyní všechny skryté prvky budou viditelné a zobrazené v šedém kontejneru, takže můžete vybrat prvek, který chcete zobrazit. Zvolte nástroj pro výběr, aby jste si prohlédnuli stránku s vybranými skrytými prvky. Zvolte nástroj **Souhrn**, pokud chcete v pevné záložce v oblasti souhrnu zobrazit číslo nebo pole řetězců. Nástroj Souhrn platí pouze pro pole, která jsou obsažena v pevné záložce oddílu. Vyberete-li si nástroj souhrnu, aplikace Dynamics 365 for Operations zobrazí všechna pole, která byla vybrána jako souhrnné pole jejich uzavřením v šedém kontejneru. Klepnutím na pole můžete interaktivně přidávat a odebírat pole ze pevné záložky shrnutí. 
+Chcete-li provést výběr a skrýt prvek, zvolte možnost **skrýt**. Ke skrytí prvku stačí vybrat nástroj Skrýt a klepnout na prvek, který se má skrýt. Vyberete-li nástroj skrytí, nyní všechny skryté prvky budou viditelné a zobrazené v šedém kontejneru, takže můžete vybrat prvek, který chcete zobrazit. Zvolte nástroj pro výběr, aby jste si prohlédnuli stránku s vybranými skrytými prvky. Zvolte nástroj **Souhrn**, pokud chcete v pevné záložce v oblasti souhrnu zobrazit číslo nebo pole řetězců. Nástroj Souhrn platí pouze pro pole, která jsou obsažena v pevné záložce oddílu. Když vyberete nástroj Souhrn, aplikace Finance and Operations zobrazí všechna pole, která byla vybrána jako souhrnná pole, jejich uzavřením v šedém kontejneru. Klepnutím na pole můžete interaktivně přidávat a odebírat pole ze pevné záložky shrnutí. 
 
 Zvolte nástroj **Přeskočit**, chcete-li odebrat prvek z řady karet klávesnic na stránce. Vyberete-li si nástroj přeskočení, všechny aktuálně přeskočené prvky se zobrazí v šedém kontejneru, takže je možné je znovu zvolit, aby byly součástí pořadí karet výběrem přeskočených prvků. 
 
@@ -104,16 +104,17 @@ Až je váš seznam nebo dlaždice přidán do pracovního prostoru, můžete te
 Některé pracovní prostory obsahují počet dlaždic (dlaždice s číslicemi), které také chcete zobrazit v řídicím panelu. V pracovním prostoru klepněte pravým tlačítkem na dlaždici s počtem a vyberte **Přizpůsobit**. Vyberte možnost **Připnout na řídicí panel**. Příště, až budete přicházet (a aktualizovat) do vybraného řídicího panelu, zobrazí se vám v řídicím panelu tento počet pod navigační dlaždicí daného pracovního prostoru.
 
 ## <a name="explicit-personalization-personalizing-your-dashboard"></a>Explicitní přizpůsobení: Přizpůsobení řídicího panelu
-Řídicí panel je často první stránkou, která se zobrazí při otevření aplikace Dynamics 365 for Operations. Můžete přizpůsobit řídicí panel k přejmenování vašich navigačních dlaždic pracovního prostoru, aby byly zobrazeny pouze dlaždice, které chcete zobrazit, přejmenovány dlaždice nebo uspořádány v pořadí, v jakém je chcete zobrazit. Nastavení řídicího panelu provedete výběrem dlaždice a klepnutím pravého tlačítka myši otevřete kontextovou nabídku. V kontextové nabídce vyberte **Přizpůsobit**. Pokud vybranou dlaždici chcete skrýt, přejmenovat nebo přeskočit, můžete provést tuto změnu přímo v okně vlastností, které se objevilo. Pokud chcete uspořádat dlaždice, vyberte možnost **Přizpůsobit tento formuláře** v okně Vlastnosti a otevřete panel nástrojů Přizpůsobení. Dlaždice můžete uspořádat pomocí nástroje přesunu.
+Řídicí panel je často první stránkou, která se zobrazí při otevření aplikace Finance and Operations. Můžete přizpůsobit řídicí panel k přejmenování vašich navigačních dlaždic pracovního prostoru, aby byly zobrazeny pouze dlaždice, které chcete zobrazit, přejmenovány dlaždice nebo uspořádány v pořadí, v jakém je chcete zobrazit. Nastavení řídicího panelu provedete výběrem dlaždice a klepnutím pravého tlačítka myši otevřete kontextovou nabídku. V kontextové nabídce vyberte **Přizpůsobit**. Pokud vybranou dlaždici chcete skrýt, přejmenovat nebo přeskočit, můžete provést tuto změnu přímo v okně vlastností, které se objevilo. Pokud chcete uspořádat dlaždice, vyberte možnost **Přizpůsobit tento formuláře** v okně Vlastnosti a otevřete panel nástrojů Přizpůsobení. Dlaždice můžete uspořádat pomocí nástroje přesunu.
 
 ## <a name="administration-of-personalization"></a>Správa přizpůsobení
-Je možné přizpůsobit stránku a sdílet ji s jinými uživateli jednoduše exportem přizpůsobené stránky a požádáním ostatních uživatelů o navigaci na přizpůsobenou stránku a importem přizpůsobeného souboru, který jste vytvořili. Má-li uživatel oprávnění správce, může také spravovat přizpůsobení ostatních uživatelů na stránce **Nastavení přizpůsobení**. Přejděte na stránku b. Na stránce **přizpůsobení** naleznete dvě karty, jednu označenou jako **Systém** a druhou označenou jako **Uživatelé**. 
+Poté, co jste přizpůsobili stránku, můžete svá individuální nastavení sdílet s dalšími uživateli. Stačí exportovat přizpůsobenou stránku. Pak můžete požádat ostatní uživatele, aby přešli na přizpůsobenou stránku a importovali přizpůsobený soubor, který jste vytvořili.
 
-**Systém:** Zde můžete dočasně zakázat nebo "vypnout" veškerá přizpůsobení v systému. To neodstraní přizpůsobení, ale resetuje všechny formuláře do výchozího stavu. Můžete později znovu povolit přizpůsobení a mít veškerá přizpůsobení znovu použita pro jednotlivé formuláře uživatelů. Můžete také odstranit veškerá individuální nastavení pro všechny uživatele. Všimněte si, že při odstranění přizpůsobení neexistuje žádný způsob znovu automaticky povolit přizpůsobení ze systému. Před provedením tohoto kroku se ujistěte, že jste provedli export individuálního nastavení, které chcete později importovat. 
+Uživatelé, kteří mají oprávnění správce, také mohou spravovat přizpůsobení ostatních uživatelů na stránce **Nastavení přizpůsobení**. Tato stránka obsahuje tyto čtyři karty: **Systém**, **Uživatelé**, **Import** a **Vymazat**.
 
-**Uživatelé:** Zde se můžete rozhodnout, zda každý uživatel může provádět implicitní nebo explicitní přizpůsobení. Můžete také určit, zda každý uživatel může provést implicitní nebo explicitní individuální nastavení na základě specifického formuláře. Navíc můžete pro každého uživatele importovat, exportovat nebo odstranit přizpůsobení. 
-
-**Poznámka:** V první verzi správa přizpůsobení umožňuje pouze řízení uživatelů na základě uživatelů.
+- **Systém:** – Zde můžete dočasně zakázat nebo vypnout veškerá přizpůsobení v systému. V takovém případě neodstraníte přizpůsobení. Místo toho pouze obnovíte všechny stránky na výchozí stav. Pokud později znovu povolíte přizpůsobení, veškerá přizpůsobení budou znovu použita pro stránky všech uživatelů. Můžete také odstranit veškerá individuální nastavení pro všechny uživatele. Všimněte si, že při odstranění přizpůsobení neexistuje žádný způsob znovu automaticky povolit přizpůsobení ze systému. Proto se před provedením tohoto kroku ujistěte, že jste exportovali všechna individuální nastavení, která chcete později importovat.
+- **Uživatelé** – Můžete určit, zda jednotliví uživatelé mohou provádět implicitní přizpůsobení nebo explicitní přizpůsobení. Můžete také určit, zda každý uživatel může provést implicitní nebo explicitní individuální nastavení na konkrétní stránce. Nakonec můžete pro každého uživatele importovat, exportovat nebo odstranit přizpůsobení.
+- **Import** – můžete importovat přizpůsobení pro jednoho nebo více uživatelů. Tuto kartu použijte po vytvoření přizpůsobení na stránce nebo v pracovním prostoru a následném exportu tohoto přizpůsobení v souboru. Pokud chcete importovat soubor přizpůsobení a použít ho u jednoho nebo více uživatelů, vyberte ze seznamu všech uživatelů jednotlivé uživatele nebo je filtrujte podle určité role a vyberte uživatele v dané roli. Po výběru uživatelů, kteří budou používat vaše individuální nastavení, klepněte na tlačítko **Import** a vyberte soubor přizpůsobení. Přizpůsobení bude ověřeno a použito pro všechny vybrané uživatele, když příště otevřou vybrané stránky.
+- **Vymazat** – můžete vymazat přizpůsobení stránky nebo pracovního prostoru pro jednoho nebo více uživatelů. Nejdříve vyberte stránku nebo pracovní prostor ke zrušení přizpůsobení. Poté vyberte ze seznamu všech uživatelů jednotlivé uživatele nebo filtrujte podle určité role a vyberte uživatele v dané roli. Po výběru stránky nebo pracovního prostoru a uživatelů klepněte na tlačítko **vymazat**. Všechna přizpůsobení, která vybraní uživatelé použili u vybrané stránky nebo pracovního prostoru, se smažou. Tuto akci nelze vrátit zpět. Pokud má však stránka nebo pracovní prostor uložené přizpůsobení, lze toto přizpůsobení opět importovat.
 
 
 

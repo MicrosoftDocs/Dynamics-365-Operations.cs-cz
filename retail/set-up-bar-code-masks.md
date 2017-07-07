@@ -3,25 +3,27 @@ title: "Nastavení masek čárových kódů"
 description: "Toto téma popisuje, jak nastavit znaky masky čárového kódu a masky čárového kódu a jak přiřadit masky čárového kódu k čárovým kódům."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 265994
 ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7b71cbe75f2d7e8f20201e8fa50df8ea1021c4de
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 958cac2e85ae7fa514f6f26cbb6178d8fdec9783
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -36,7 +38,7 @@ Toto téma popisuje, jak nastavit znaky masky čárového kódu a masky čárov�
 <a name="set-up-bar-code-mask-characters"></a>Nastavení znaků masky čárového kódu
 -------------------------------
 
-Masky čárových kódů se používají k vytvoření čárových kódů a rychlé identifikaci čárových kódů, které jsou skenovány do pokladního místa (POS). Masky se skládají ze znaků, které slouží jako zástupci označující formát pro čárové kódy, které budou vytvořeny. Chcete-li konfigurovat masku čárového kódu, musíte nastavit znaky masky čárového kódu. Přejděte na **Maloobchodní a velkoobchodní prodej** &gt; **Řízení zásob** &gt; **Čárové kódy a popisky** &gt; **Znaky masky**. Kliknutím na **Nový** vytvořte znaky masky čárového kódu. Znaky masky je možné vytvořit k označení následujících dat čárového kódu.
+Masky čárových kódů se používají k vytvoření čárových kódů a rychlé identifikaci čárových kódů, které jsou skenovány do pokladního místa (POS). Masky se skládají ze znaků, které slouží jako zástupci označující formát pro čárové kódy, které budou vytvořeny. Chcete-li konfigurovat masku čárového kódu, musíte nastavit znaky masky čárového kódu. Přejděte na **Maloobchodní prodej** &gt; **Řízení zásob** &gt; **Čárové kódy a popisky** &gt; **Znaky masky**. Kliknutím na **Nový** vytvořte znaky masky čárového kódu. Znaky masky je možné vytvořit k označení následujících dat čárového kódu.
 
 |                      |                                                                                                                 |
 |----------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -53,12 +55,13 @@ Masky čárových kódů se používají k vytvoření čárových kódů a rych
 | **Zaměstnanec**         | Určuje segment čárového kódu pro identifikační číslo zaměstnance používané pro přihlášení k POS pomocí čárového kódu.                                  |
 | **Odběratel**         | Označuje segment ID odběratelů.                                                                                  |
 | **Zadání dat**       | *Není ještě implementováno.*                                                                                          |
-| **Kód slevy**    | Označuje kód slevy pro čárový kód, který se používá za účelem přidání slevy k transakci pokladního místa.             |
+| **Kód slevy**    | *Odepsáno* k verzi Dynamics 365 for Retail z jara 2017. Dříve: Označuje kód slevy pro čárový kód, který se používá za účelem přidání slevy k transakci pokladního místa.                                                                   |
+| **Kód kupónu**      | Označuje kód kupónu pro čárový kód, použitý pro přidání slevy k prodejní objednávce. T nahradilo kód slevy.     |
 | **Dárkový poukaz**        | Označuje číslo dárkového poukazu při vydávání nebo platbě dárkovým poukazem.                                               |
 | **Věrnostní karta**     | Přidá věrného zákazníka k transakci a může být použita při platbě věrnostní kartou.                             |
 
 ## <a name="define-bar-code-masks"></a>Definování masek čárových kódů
-Po určení znaků masek čárového kódu pro potřebné masky čárového kódu přejděte na **Maloobchodní a velkoobchodní prodej** &gt; **Řízení zásob** &gt; **Čárové kódy a popisky** &gt; **Nastavení masky čárového kódu**. Na této stránce můžete definovat masky čárového kódu, které používají dříve zadané znaky. Tyto masky čárových kódů budou použity při generování čárových kódů a rovněž pomáhají identifikovat čárové kódy naskenované v POS.
+Po určení znaků masek čárového kódu pro potřebné masky čárového kódu přejděte na **Maloobchodní prodej** &gt; **Řízení zásob** &gt; **Čárové kódy a popisky** &gt; **Nastavení masky čárového kódu**. Na této stránce můžete definovat masky čárového kódu, které používají dříve zadané znaky. Tyto masky čárových kódů budou použity při generování čárových kódů a rovněž pomáhají identifikovat čárové kódy naskenované v POS.
 
 1.  Kliknutím na **Nový** vytvořte novou masku čárového kódu.
 2.  Zadejte hodnoty do polí **ID masky** a **Popis** a potom vyberte typ masky čárového kódu v poli **Typ**.

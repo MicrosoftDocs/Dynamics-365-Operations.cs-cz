@@ -3,13 +3,13 @@ title: Prodej a marketing
 description: "Modul prodeje a marketingu můžete používat k získávání, ukládání a používání různých druhů v průběhu prodeje. Mezi tato data patří původní prodejní iniciativy, budoucí následné akce a dodatečné prodeje."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 92303
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 25ea6e64453b22d664dd65a1f1bb18e3a1997bc5
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: dddcc764bb11540b8207350c463d1adb2533e1c0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -43,7 +43,7 @@ V okně Prodej a marketing může v různých situacích dojít k počátečním
 
 ### <a name="campaigns"></a>Kampaně
 
-Kampaň cílí na kontakty od potenciálních zákazníků, zájemce, příležitosti a zákazníky, kteří byli vybráni k účasti v kampani. V aplikaci Microsoft Dynamics 365 for Operations můžete vytvořit několik typů kampaní, jako je telemarketing, poštovní kampaň a e-mailové kampaně a maximalizovat tak potenciál zákazníků. V průběhu kampaně a jak budete přijímat kladné odpovědi, můžete začít s prodejem u těchto příjemců, kteří na kampaň odpověděli kladně.
+Kampaň cílí na kontakty od potenciálních zákazníků, zájemce, příležitosti a zákazníky, kteří byli vybráni k účasti v kampani. V aplikaci Microsoft Dynamics 365 for Finance and Operations můžete vytvořit několik typů kampaní, jako je telemarketing, poštovní kampaň a e-mailové kampaně a maximalizovat tak potenciál zákazníků. V průběhu kampaně a jak budete přijímat kladné odpovědi, můžete začít s prodejem u těchto příjemců, kteří na kampaň odpověděli kladně.
 
 ## <a name="sales"></a>Prodeje
 Prodejní funkce můžete použít k vytvoření nabídek, návaznému a křížovému prodeji u nových a stávajících zákazníků, pro vytváření prodejních objednávek a vytváření prodejních faktur pro zákazníky. Následující vývojový diagram znázorňuje obchodní proces pro prodej. [![Obchodní proces pro prodej](./media/sales01.jpg)](./media/sales01.jpg)

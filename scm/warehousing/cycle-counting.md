@@ -3,14 +3,14 @@ title: "Cyklická inventura"
 description: "Tento článek popisuje postup použití cyklické inventury v rámci řešení skladu, které je k dispozici v modulu Řízení skladu. Tento článek se nevztahuje na skladové řešení, které je k dispozici v modulu Řízení zásob."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 50671
 ms.assetid: 49f5c431-b043-4170-aa24-b7d5d1ee063e
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4446dfec1fa8eabb45e14b3f2ff685b3b1d68e2c
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: ebc7789d7b0be5db4a0faf4309bc3640f51956c6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -36,7 +36,7 @@ Tento článek popisuje postup použití cyklické inventury v rámci řešení 
 Cyklická inventura je skladový proces, který slouží k auditu skladových položek na skladě. Proces cyklické inventury lze popsat ve třech krocích:
 
 1.  **Vytvoření cyklické inventury** ─ cyklické inventury se vytváří automaticky na základě parametrů prahové hodnoty položek nebo můžete použít plán cyklické inventury. Případně práci cyklické inventury můžete vytvořit ručně pomocí parametrů položky nebo skladu na stránce **Práce cyklické inventury podle zboží** nebo **Práci cyklické inventury podle skladového místa**.
-2.  **Zpracování cyklické inventury** ─ po vytvoření cyklické inventury provedete cyklickou inventuru prostřednictvím inventury položek v umístění ve skladu a zadáním výsledku v rámci aplikace Microsoft Dynamics 365 for Operations pomocí mobilního zařízení. Případně můžete provést inventuru položek v umístění ve skladu, aniž by byla vytvořena cyklická inventura. Tento proces se nazývá *místní cyklická inventura*.
+2.  **Zpracování cyklické inventury** ─ po vytvoření cyklické inventury provedete cyklickou inventuru prostřednictvím inventury položek v umístění ve skladu a zadáním výsledku v rámci aplikace Microsoft Dynamics 365 for Finance and Operations pomocí mobilního zařízení. Případně můžete provést inventuru položek v umístění ve skladu, aniž by byla vytvořena cyklická inventura. Tento proces se nazývá *místní cyklická inventura*.
 3.  **Vyřešení rozdílu v cyklicky vypočtené hodnotě** ─ po cyklické inventuře budou mít všechny položky, které se liší ve vypočítané hodnotě, stav práce **Čeká na kontrolu** na stránce **Veškerá práce**. Tyto rozdíly můžete vyřešit na stránce **Cyklická inventura práce čeká na kontrolu**.
 
 Následující obrázek znázorňuje proces cyklické inventury. ![Procesní tok pro cyklickou inventuru](./media/performcyclecountinginawarehouselocation.jpg)
@@ -115,10 +115,10 @@ Plány cyklické inventury lze nastavit pro vytvoření páce cyklické inventur
 Chcete-li vytvořit práci cyklické inventury ručně, můžete použít stránku **Práce cyklické inventury podle zboží** nebo **Práci cyklické inventury podle skladového místa**. Můžete určit maximální počet cyklických inventur, které lze vytvořit současně. Například pokud vedoucí skladu určí hodnotu **5**, cyklická inventura se vytvoří pro pět umístění i v případě, že se položka nachází v 10 místech. Můžete také vybrat ID fondu práce , do kterého můžete přiřadit ID vytvořené cyklické inventury. Po zpracování ID fondu práce v rámci cyklické inventury se ID cyklické inventury přiřazené k tomuto fondu práce zpracují jako skupina.
 
 ## <a name="perform-a-cycle-count-by-using-a-mobile-device"></a>Provedení cyklické inventury pomocí mobilního zařízení
-Existuje několik způsobů, jak zpracovat cyklickou inventuru pomocí aplikace Microsoft Dynamics 365 for Operations v mobilním zařízení:
+Existuje několik způsobů, jak zpracovat cyklickou inventuru pomocí aplikace Finance and Operations v mobilním zařízení:
 
 -   **Řízené uživatelem** ─ pracovník může zadat ID cyklické inventury uvedené ve stavu **Otevřeno**.
--   **Řízené systémem** ─ aplikace Dynamics 365 for Operations pracovníkovi přiřadí ID cyklické inventury.
+-   **Řízené systémem** ─ aplikace Finance and Operations pracovníkovi přiřadí ID cyklické inventury.
 -   **Seskupení cyklické inventury** ─ pracovník může seskupit ID cyklické inventury specifické pro určité místo, zónu nebo fond práce.
 -   **Místní cyklická inventura**: pracovník může provádět cyklickou inventuru v umístění ve skladu kdykoliv, aniž by vytvořil cyklickou inventuru. Pokud chcete provádět cyklickou inventuru v daném místě, pracovník musí zadat ID tohoto místa.
 

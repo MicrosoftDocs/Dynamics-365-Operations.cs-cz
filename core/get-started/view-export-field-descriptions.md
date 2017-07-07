@@ -3,14 +3,14 @@ title: "Zobrazení a export popisů polí"
 description: "Tento článek popisuje, jak zobrazit popisy pole, a jak používat stránku Popisy pole pro export popisů."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11534
 ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: cd84c03baa4f7a9d38e380c37ed2020ee3387954
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 7898ff427ede4447a5798d4989ffd3088a776d9c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,14 +33,14 @@ ms.lasthandoff: 05/25/2017
 
 Tento článek popisuje, jak zobrazit popisy pole, a jak používat stránku Popisy pole pro export popisů.
 
-Microsoft Dynamics 365 for Operations má k dispozici pro některá složitější pole popisy. Tyto popisy se zobrazí při přesunutí ukazatele myši na pole. Stránka **Popis polí** slouží také k zobrazení a exportu popisů polí. 
+Microsoft Dynamics 365 for Finance and Operations má k dispozici pro některá složitější pole popisy. Tyto popisy se zobrazí při přesunutí ukazatele myši na pole. Stránka **Popis polí** slouží také k zobrazení a exportu popisů polí. 
 
 Ne všechny stránky obsahují popis polí. Chceme poskytnout popisy pro složitější pole a nikoliv pro ty, kde je jejich použití zřejmé. Proto některé stránky nemají žádné popisy pole, některé stránky mají několik popisů a některé složitější stránky, například mnoho stránek s parametry, mají mnoho popisů. 
 
-Pokud máte přístup k vývojovému prostředí v aplikaci Dynamics 365 for Operations, můžete přidat nový popis polí nebo stávající popisy přizpůsobit. Můžete například přidat informace specifické pro společnost do popisu pole. Další informace naleznete viz [Přizpůsobení nápovědy pole](/dynamics365/operations/dev-itpro/user-interface/customize-field-help).
+Pokud máte přístup k vývojovému prostředí v aplikaci Finance and Operations, můžete přidat nový popis polí nebo stávající popisy přizpůsobit. Můžete například přidat informace specifické pro společnost do popisu pole. Další informace naleznete viz [Přizpůsobení nápovědy pole](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Zobrazení popisu pole v uživatelském rozhraní
-Popis polí lze zobrazit umístěním ukazatele myši na pole. Pokud není k dispozici žádný popis, zobrazí se po přesunutí ukazatele myši na pole název pole. (Poznámka: Ve verzi 7.0.0 lze zobrazit popisy polí jen na stránce **Popisy polí**.) Následující obrázek znázorňuje popisy polí, které se zobrazí při přesunutí ukazatele myši na pole **Uzamknout položky během inventury**. 
+Popis polí lze zobrazit umístěním ukazatele myši na pole. Pokud není k dispozici žádný popis, zobrazí se po přesunutí ukazatele myši na pole název pole. (Poznámka: V aplikaci Dynamics AX 7.0 (únor 2016) lze zobrazit popisy polí jen na stránce **Popisy polí**.) Následující obrázek znázorňuje popisy polí, které se zobrazí při přesunutí ukazatele myši na pole **Uzamknout položky během inventury**. 
 
 [![Příklad popisu pole](./media/field-description.png)](./media/field-description.png)
 
@@ -101,7 +101,7 @@ Informace o různých způsobech, jak vyhledat stránky, naleznete v části "Hl
 <a name="see-also"></a>Viz také
 --------
 
-[Přizpůsobení nápovědy pole](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+[Přizpůsobení nápovědy pole](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help)
 
 
 

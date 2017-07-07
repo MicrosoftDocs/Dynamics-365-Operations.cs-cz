@@ -3,14 +3,14 @@ title: "Prostředky pro projekt"
 description: "V tomto tématu jsou informace o přidělování prostředků k projektu."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 82022
 ms.assetid: bd2fb375-84c6-428a-8e54-f0f719045898
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: cmercado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5c00c63e3c55e818934c36b818c90025002092d4
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a7275e9ad8d655d0d2ee5ba90a792775dec0cf05
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 
 V tomto tématu jsou informace o přidělování prostředků k projektu.
 
-Jednou z výzev pro správce projektu a prostředků ve fázi plánování projektu je přiřazení zdrojů, kdy musí určit a rezervovat správné zdroje pro práci na projektu. V aplikaci Microsoft Dynamics 365 for Operations umožňuje přidělení prostředků pro projekty definovat role, které jsou považovány za dočasné zdroje, které mohou být vyhrazeny pro konkrétní pracovní balíček nebo součásti zapojení. Tento typ přidělování prostředků umožňuje manažerům projektů a prostředků provádět následující úkony:
+Jednou z výzev pro správce projektu a prostředků ve fázi plánování projektu je přiřazení zdrojů, kdy musí určit a rezervovat správné zdroje pro práci na projektu. V aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition umožňuje přidělení prostředků pro projekty definovat role, které jsou považovány za dočasné zdroje, které mohou být vyhrazeny pro konkrétní pracovní balíček nebo součásti zapojení. Tento typ přidělování prostředků umožňuje manažerům projektů a prostředků provádět následující úkony:
 
 -   Definovat roli, která má požadované kompetence pro snadné spárování zdrojů.
 -   Používat role k definování původního schématu zapojení založeného na rezervovaných prostředcích.
@@ -65,7 +65,7 @@ Při nastavování pracovníka jako mezipodnikového zdroje je nutné dokončit 
 
 **Společnost poskytující půjčku:**
 
-1.  V aplikaci Dynamics 365 for Operations ověřte, zda je vybrána společnost poskytující půjčku, a pak dokončete výše uvedený postup Nastavení pracovníka jako prostředku projektu.
+1.  V aplikaci Finance and Operations ověřte, zda je vybrána společnost poskytující půjčku, a pak dokončete výše uvedený postup Nastavení pracovníka jako prostředku projektu.
 2.  Přejděte na **Hlavní kniha **&gt; **Nastavení účetnictví **&gt; **Mezipodnikové účetnictví**. Klepněte na možnost **Nový**.
 3.  V poli **ID právnické osoby ** vyberte společnost poskytující půjčku. Podle potřeby vyplňte zbývající pole a potom klepněte na tlačítko **Uložit**.
 4.  Přejděte na **Řízení a účetnictví projektu **&gt; **Nastavení **&gt; **Ceny ** &gt; **Převést cenu**.** **
@@ -123,7 +123,7 @@ Pro nastavení kompetencí pracovníka slouží buď stránka se seznamem **Prac
 6.  V podokně **Zbývající projekty** vyberte projekt a kliknutím na šipku jej přidejte do podokna **Vybrané projekty**.
 7.  Zavřete stránku.
 
-V případě potřeby můžete také přiřadit kategorie ke zdroji. Typ kategorie jsou Náklady nebo Výnosy. Ten je určen vaší organizací. Pokud neexistují žádné přiřazené kategorie pro prostředek, aplikace Dynamics 365 for Operations vyhledá výchozí kategorii pro hodinové ceny pro náklady a výnosy.
+V případě potřeby můžete také přiřadit kategorie ke zdroji. Typ kategorie jsou Náklady nebo Výnosy. Ten je určen vaší organizací. Pokud neexistují žádné přiřazené kategorie pro prostředek, aplikace Finance and Operations vyhledá výchozí kategorii pro hodinové ceny pro náklady a výnosy.
 
 ### <a name="set-up-project-resource-and-role-characteristics"></a>Nastavení vlastností prostředků a role projektu
 
@@ -149,7 +149,7 @@ Následující pokyny popisují, jak může manažer prostředků nastavit roli 
 
 ### <a name="assign-a-project-resource-to-a-project"></a>Přiřazení prostředku projektu k projektu
 
-1.  Klikněte na **Řízení a účetnictví projektů** &gt; **Obecné** &gt; **Projekty** &gt; **Všechny projekty**a otevřete projekt **Upgrade XYZ fáze 2**.
+1.  Klikněte na **Řízení a účetnictví projektů** &gt; **Obecné** &gt; **Projekty** &gt; **Všechny projekty** a otevřete projekt **Upgrade XYZ fáze 2**.
 2.  Na kartě **Projektový tým a plánování** klikněte na možnost **Přidat**.
 3.  V poli **Role** vyberte **Člen týmu**.
 4.  Klikněte na **Rezervovat z kalendáře**.
@@ -190,7 +190,7 @@ Pro role lze nastavit všechny náklady, prodeje, a převodní ceny.
 5.  Ve sloupci **Ocenění** zadejte cenu pro vybranou roli prostředku.
 
 ## <a name="form-a-project-team"></a>Formování projektového týmu
-Pokud chcete použít role, které byly dříve nastaveny, v projektu, projektový manažer musí přiřadit role k projektu. Pro projekt lze přiřadit více rolí a aplikace Dynamics 365 for Operations tyto role automaticky při rezervaci označí, aby se zabránilo nejasnostem. Například pokud manažer projektu požaduje tři softwarové techniky, automaticky se vygenerují tři role Softwarový technik, které jsou pojmenovány jako Softwarový technik 1, Softwarový technik 2 a Softwarový technik 3. Pokud byly dříve pro roli nastaveny charakteristiky role, jsou použity jako filtr při hledání zdroje. Pro další upřesnění hledání lze volitelně přidat další charakteristiky. 
+Pokud chcete použít role, které byly dříve nastaveny, v projektu, projektový manažer musí přiřadit role k projektu. Pro projekt lze přiřadit více rolí a aplikace Finance and Operations tyto role automaticky při rezervaci označí, aby se zabránilo nejasnostem. Například pokud manažer projektu požaduje tři softwarové techniky, automaticky se vygenerují tři role Softwarový technik, které jsou pojmenovány jako Softwarový technik 1, Softwarový technik 2 a Softwarový technik 3. Pokud byly dříve pro roli nastaveny charakteristiky role, jsou použity jako filtr při hledání zdroje. Pro další upřesnění hledání lze volitelně přidat další charakteristiky. 
 
 Možnost Zobrazit nastavení lze také upravit tak, aby poskytovala lepší pohled na dostupnost prostředků. K dispozici je možnost zobrazit dostupnost hodinově, denně, týdně, měsíčně, čtvrtletně a ročně. Existuje také možnost zobrazit dostupnou a zbývající kapacitu prostředků. Tato možnost je užitečná pro časovou správu, pokud odhadujete dostupný čas pro aktivity nebo dostupnost prostředku. 
 
@@ -214,7 +214,7 @@ Při vytváření projektového týmu postupujte následujícím způsobem.
 5.  Klikněte na **Požadované kompetence**.
 6.  Na stránce **Vybrat charakteristiky** jsou standardně zvoleny charakteristiky, které jste dříve nastavili pro roli Vrchní manažer projektu. Klepněte na tlačítko **OK**.
 7.  Na stránce **Přidat role do projektu** v poli **Počet prostředků** zadejte **1**.
-8.  V poli **Prostředek** vyhledávání zobrazí všechny zdroje, které mají požadované kompetence. Vyberte **Daniel Goldschmidt**a klepněte na tlačítko **Vytvořit**.
+8.  V poli **Prostředek** vyhledávání zobrazí všechny zdroje, které mají požadované kompetence. Vyberte **Daniel Goldschmidt** a klepněte na tlačítko **Vytvořit**.
 9.  Na stránce **Projekt** klikněte na **Přidat**.
 10. V podokně **Přidat role do projektu** v poli **Role** vyberte **Člen týmu**. V poli **Počet prostředků** zadejte hodnotu **5**.
 11. Klepněte na volbu **Nový**.
@@ -277,7 +277,7 @@ Další možnosti byly přidány do struktury WBS a umožňují lepší využit�
 </tr>
 <tr class="even">
 <td>Automaticky generovat tým</td>
-<td>Automaticky přidělíte plánované prostředky pomocí rolí, které jsou přidruženy k úkolu. Aplikace Dynamics 365 for Operations automaticky navrhuje plánované prostředky použitím analýzy kritérií s více rozhodnutími založené na rolích. Po nastavení rolí a úsilí (hodiny) pro úkoly ve struktuře WBS a vydání struktury klepněte na tlačítko <strong>Automaticky generovat tým</strong>. Požadovaný počet plánovaných prostředků je přidán do struktury WBS a na kartu <strong>Plánování projektu a týmu</strong>.</td>
+<td>Automaticky přidělíte plánované prostředky pomocí rolí, které jsou přidruženy k úkolu. Aplikace Finance and Operations automaticky navrhuje plánované prostředky použitím analýzy kritérií s více rozhodnutími založené na rolích. Po nastavení rolí a úsilí (hodiny) pro úkoly ve struktuře WBS a vydání struktury klepněte na tlačítko <strong>Automaticky generovat tým</strong>. Požadovaný počet plánovaných prostředků je přidán do struktury WBS a na kartu <strong>Plánování projektu a týmu</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Prostředek (rozevírací seznam)</td>

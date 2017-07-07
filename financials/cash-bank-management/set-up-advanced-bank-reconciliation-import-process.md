@@ -1,16 +1,16 @@
 ---
 title: "Nastavení procesu importu rozšířené bankovního odsouhlasení"
-description: "Funkce rozšířeného odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Operations. Tento článek vysvětluje, jak nastavit funkci importu pro bankovní výpisy."
+description: "Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Tento článek vysvětluje, jak nastavit funkci importu pro bankovní výpisy."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 106853
 ms.assetid: 45dae275-ea45-4c7e-b38f-89297c7b5352
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fda4dca4339c09757477b04166b17d5f92f46a7c
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a4d1c81386c0ef03391f3127fa51a6b09a5142b3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,12 +31,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Funkce rozšířeného odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Operations. Tento článek vysvětluje, jak nastavit funkci importu pro bankovní výpisy. 
+Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Tento článek vysvětluje, jak nastavit funkci importu pro bankovní výpisy. 
 
-Nastavení import bankovního výpisu závisí na formátu vašeho elektronického bankovního výpisu. Aplikace Microsoft Dynamics 365 for Operations standardně podporuje tři formáty bankovního příkazu: ISO20022, MT940 a BAI2.
+Nastavení import bankovního výpisu závisí na formátu vašeho elektronického bankovního výpisu. Aplikace Finance and Operations standardně podporuje tři formáty bankovního příkazu: ISO20022, MT940 a BAI2.
 
 ## <a name="sample-files"></a>Vzorové soubory
-Pro všechny tři formáty musíte mít soubory, které překládají elektronický bankovní výpis z původního formátu do formátu, který aplikace Dynamics 365 for Operations může použít. Požadované soubory s prostředky můžete najít v uzlu **Prostředky** v průzkumníkovi aplikací v aplikaci Microsoft Visual Studio. Po nalezení souborů je zkopírujte na jedno známé umístění, ze kterého je můžete snadno odeslat během procesu instalace.
+Pro všechny tři formáty musíte mít soubory, které překládají elektronický bankovní výpis z původního formátu do formátu, který aplikace Finance and Operations může použít. Požadované soubory s prostředky můžete najít v uzlu **Prostředky** v průzkumníkovi aplikací v aplikaci Microsoft Visual Studio. Po nalezení souborů je zkopírujte na jedno známé umístění, ze kterého je můžete snadno odeslat během procesu instalace.
 
 | Název prostředku                                           | Název souboru                            |
 |---------------------------------------------------------|--------------------------------------|
@@ -71,7 +71,7 @@ Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpis
 7.  Po odeslání entity bankovního výpisu a po dokončení mapování klepněte na akci **Zobrazit mapu** pro entitu.
 8.  Entita bankovního výpisu je složená entita, která se skládá ze čtyř samostatných entit. V seznamu vyberte **BankStatementDocumentEntity** a potom klepněte na akci **Zobrazit mapu**.
 9.  Na kartě **Transformace** klikněte na **Nový**.
-10. Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **ISO20022XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** transformační soubory Dynamics 365 for Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+10. Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **ISO20022XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** Transformační soubory Finance and Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
 11. Klepněte na možnost **Nový**.
 12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BankReconciliation-to-Composite.xslt**, který jste dříve uložili.
 13. Klikněte na **Použít transformace**.
@@ -106,7 +106,7 @@ Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpis
 9.  Na kartě **Transformace** klikněte na **Nový**.
 10. Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **MT940TXT-to-MT940XML.xslt**, který jste dříve uložili.
 11. Klepněte na možnost **Nový**.
-12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **MT940XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** transformační soubory Dynamics 365 for Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
+12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **MT940XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** Transformační soubory Finance and Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
 13. Klepněte na možnost **Nový**.
 14. Pro pořadové číslo 3 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BankReconciliation-to-Composite.xslt**, který jste dříve uložili.
 15. Klikněte na **Použít transformace**.
@@ -142,7 +142,7 @@ Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpis
 9.  Na kartě **Transformace** klikněte na **Nový**.
 10. Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BAI2CSV-to-BAI2XML.xslt**, který jste dříve uložili.
 11. Klepněte na možnost **Nový**.
-12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BAI2XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** transformační soubory Dynamics 365 for Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
+12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BAI2XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** Transformační soubory Finance and Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
 13. Klepněte na možnost **Nový**.
 14. Pro pořadové číslo 3 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BankReconciliation-to-Composite.xslt**, který jste dříve uložili.
 15. Klikněte na **Použít transformace**.

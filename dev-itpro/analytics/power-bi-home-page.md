@@ -1,9 +1,9 @@
 ---
-title: "Domovská stránka BI"
-description: "Toto téma obsahuje seznam zdrojů, které vám pomohou používat Power BI with Dynamics 365 for Operations."
+title: "Dostupný obsah Power BI"
+description: "V tomto tématu je uveden seznam obsahu Power BI, který je k dispozici a odkazuje na zdroje, které uvádějí podrobnější informace."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,66 +17,86 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 711a2e18a692d7f4d048109fdd97497483ce05e8
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: 2df0c6dc9b41dde861f5361bfcc1226786e7aa76
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="power-bi-home-page"></a>Domovská stránka BI
-
+# <a name="power-bi-content-available"></a>Dostupný obsah Power BI
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma obsahuje seznam zdrojů, které vám pomohou používat Power BI with Dynamics 365 for Operations.
+V tomto tématu je uveden seznam obsahu Microsoft Power BI, který je k dispozici a odkazuje na zdroje, které uvádějí podrobnější informace.
 
-<a name="power-bi-content-for-dynamics-365-for-operations"></a>Obsah Power BI content pro Dynamics 365 for Operations
-------------------------------------------------
+## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Obsah Power BI content pro aktualizaci Dynamics 365 for Finance and Operations, Enterprise edition, červenec 2017
+Pokud používáte aplikaci Microsoft Dynamics 365 Finance and Operations, Enterprise edition v aktualizaci z července 2017, je k dispozici následující obsah Power BI:
 
-| **Oblast funkce**                  | **Obsah Power BI**                          | **Kde hledat obsah Power BI**                                                                                                                                                                                         | **Další informace**                                                                                                                                                               |
-|-----------------------------------|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Správa financí              | Finanční výkonnost                         | Microsoft Dynamics Lifecycle Services (LCS) (tato verze obsahu podporuje Dynamics 365 for Operations verze 1611.) PowerBI.com (tato verze sady obsahu podporuje Microsoft Dynamics 365 for Operations 7.0 a 7.0.1.) | [Obsah finanční výkonnosti Power BI](financial-performance-power-bi-content-pack.md)                                               |
-|                                   | Správa kreditu a inkasa odběratele             | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
-| Správa lidského kapitálu          | Sestavy pro nábor                            | LCS                                                                                                                                                                                                                            | [Obsah Power BI pro nábor](recruiting-analysis-power-bi-content-pack.md)                                                       |
-|                                   | Sestavy kompetence a rozvoje zaměstnance | LCS                                                                                                                                                                                                                            | [Obsah Power BI kompetencí a rozvoje zaměstnance](employee-competencies-and-development-analysis-power-bi-content-pack.md) |
-|                                   | Sestavy školení organizace               | LCS                                                                                                                                                                                                                            | [Obsah organizačních školení Power BI](organizational-training-analysis-power-bi-content-pack.md)                             |
-|                                   | Metriky zaměstnanců                             | LCS                                                                                                                                                                                                                            | [Obsah metriky pracovní síly Power BI](workforce-analysis-power-bi-content-pack.md)                                                 |
-|                                   | Sestavy kompenzací a zaměstnaneckých výhod             | LCS                                                                                                                                                                                                                            | [Obsah kompenzací a zaměstnaneckých výhod v Power BI](compensation-and-benefits-analysis-power-bi-content-pack.md)                         |
-| Řízení a účetnictví projektů | Manažer postupů                              | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
-| Maloobchodní a velkoobchodní prodej               | Výkon maloobchodního kanálu                    | PowerBI.com                                                                                                                                                                                                                    | [Obsah výkonnosti maloobchodní sítě Power BI](retail-channel-performance-dashboard-power-bi-data.md)                 |
-| Správa dodavatelsko-odběratelského řetězce           | Správa nákladů                               | PowerBI.com                                                                                                                                                                                                                    |  [Obsah správy nákladů v Power BI](cost-management-content-pack.md)                                                          |
-|                                   | Výkon prodeje a ziskovosti           | LCS                                                                                                                                                                                                                            | [Obsah výkonu prodeje a ziskovosti Power BI](sales-profitability-performance-content-pack.md)          |
-|                                   | Analýza výdajů při nákupu                       | LCS                                                                                                                                                                                                                            | [Analýza obsahu Power BI výdajů na nákup](purchase-content-pack-for-power-bi.md)                                                 |
-|                                   | Analýza nákladového účetnictví                      | LCS                                                                                                                                                                                                                            | [Obsah analýzy nákladového účetnictví v Power BI](cost-accounting-analysis-content-pack.md)                                         |
-|                                   | Výkon skladu                         | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
-|                                   | Výkon podle produktu                        | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
+- [Obsah zaměstnaneckých výhod v Power BI](benefits-power-bi.md)
+- [Obsah přehledu hotovosti v Power BI](/dynamics365/operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
+- [Obsah přehledu CFO v Power BI](CFO-power-bi.md)
+- [Obsah kompenzací v Power BI](compensation-power-bi.md)
+- [Obsah Power BI analýzy nákladového účetnictví*](cost-accounting-analysis-content-pack.md) 
+- [Obsah správy úvěru a inkasa v Power BI](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
+- [Obsah Power BI pro rozvoj zaměstnanců](employee-development-PBI.md) 
+- [Obsah finanční výkonnosti Power BI*](financial-performance-power-bi-content-pack.md)
+- [Obsah správy investičního majetku v Power BI](/dynamics365/operations/financials/fixed-assets/Fixed-asset-management-workspace)
+- [Obsah Power BI pro výuku](learning-power-bi.md)
+- [Obsah Power BI pro manažery školení](practice-manager-power-bi.md)
+- [Obsah výkonosti výroby v Power BI](production-performance-power-bi.md)
+- [Analýza obsahu Power BI výdajů na nákup](purchase-content-pack-for-power-bi.md) 
+- [Obsah Power BI pro nábor](recruiting-analysis-power-bi-content-pack.md) 
+- [Obsah výkonu prodeje a ziskovosti Power BI](sales-profitability-performance-content-pack.md)
+- [Obsah spotřeby BI plateb dodavatele](/dynamics365/operations/financials/accounts-payable/Vendor-payments-workspace)
+- [Obsah výkonu skladu v Power BI](warehouse-power-bi-content.md)
+- [Obsah metriky pracovní síly Power BI](workforce-analysis-power-bi-content-pack.md)  
 
-## <a name="access-power-bi-content-from-lcs"></a>Přístup k obsahu Power BI z LCS
-Další informace o stažení obsahu Power BI a připojení k datům organizace naleznete v tématu [Obsah Power BI v LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md).
+### <a name="accessing-the-content"></a>Přístup k obsahu
 
-## <a name="access-power-bi-content-from-powerbicom"></a>Přístup k obsahu Power BI z PowerBI.com
-1.  Přihlaste se k [PowerBI.com](https://www.powerbi.com/).
-2.  Klikněte na **Získat data**.
-3.  V **služby** klepněte na tlačítko **získat**.
-4.  Vyberte požadovaný balíček obsahu a klikněte na tlačítko **Získat**.
-5.  Zadejte adresu URL prostředí Dynamics 365 for Operations. Adresa URL musí být ve formátu **https://&lt;YourAOSTenant&gt;.cloudax.dynamics.com**. Klepněte na tlačítko **Další**.
-6.  Vyberte **oAuth2** jako metodu ověřování a potom klepněte na tlačítko **přihlášení**.
-7.  Budete-li vyzváni, zadejte účet služeb Microsoft Office 365, který má oprávnění k přístupu do vašeho prostředí Dynamics 365 for Operations.
-8.  Po přihlášení automaticky začne proces importu. Po dokončení importu se zobrazí v navigačním podokně sestavy, které jsou součástí balíčku obsahu. Vyberte sestavu, ve které chcete zobrazit importovaná data.
+#### <a name="embedded-content"></a>Vložený obsah
+S výjimkou obsahu, který je označen hvězdičkou (\*), je veškerý obsah v předchozím seznamu vložený do aplikace. Další informace o tom, kde si můžete prohlédnout obsah spotřeby BI, získáte kliknutím na odkazy.
 
-## <a name="learn-more-about-the-power-bi-integration"></a>Další informace o integraci Power BI
--   [Integrace služby Power BI](power-bi-integration.md)
--   [Přehled integrace Power BI s obchodem Entity](power-bi-integration-entity-store.md)
--   [Vytváření a distribuce sestav Power BI s obchodem Entity](author-distribute-power-bi-reports.md)
--   [Připnutí sestav Power BI na pracovní plochy](pin-power-bi-reports.md)
--   [Obsah Power BI v LCS od společnosti Microsoft a partnerů](power-bi-content-microsoft-partners.md)
--   [Použití konfigurace elektronického vykazování k poskytnutí dat spotřeby z Dynamics 365 for Operations do BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+#### <a name="files-available-in-lifecycle-services"></a>Soubory, které jsou k dispozici v rámci služby Lifecycle Services
+Tento obsah Power BI naleznete v knihovně sdíleného majetku ve službě Microsoft Dynamics Lifecycle Services (LCS). Další informace o tom, jak balíček obsahu stáhnout a spojit ho s daty, najdete v tématu [Obsah Power BI ve službě LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md). Pokud se chcete podívat na ukázku, jak implementovat obsah Power BI, najdete informace v tématu [Obsah Power BI od společnosti Microsoft a partnerů ve službě Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) pro Office Mix.
 
+## <a name="power-bi-content-for-dynamics-365-for-operations-version-1611"></a>Obsah Power BI content pro Dynamics 365 for Operations verze 1611
+Pokud používáte verzi Microsoft Dynamics 365 for Operations 1611, je k dispozici následující obsah Power BI.
 
+- [Obsah kompenzací a zaměstnaneckých výhod v Power BI](compensation-and-benefits-analysis-power-bi-content-pack.md)   
+- [Obsah Power BI analýzy nákladového účetnictví](cost-accounting-analysis-content-pack.md) 
+- [Obsah správy úvěru a inkasa v Power BI](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
+- [Obsah Power BI kompetencí a rozvoje zaměstnance](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
+- [Obsah finanční výkonnosti Power BI](financial-performance-power-bi-content-pack.md)
+- [Obsah organizačních školení Power BI](organizational-training-analysis-power-bi-content-pack.md) 
+- [Obsah Power BI pro manažery školení](practice-manager-power-bi.md)
+- [Obsah výkonosti výroby v Power BI](production-performance-power-bi.md)
+- [Analýza obsahu Power BI výdajů na nákup](purchase-content-pack-for-power-bi.md) 
+- [Obsah Power BI pro nábor](recruiting-analysis-power-bi-content-pack.md) 
+- [Obsah výkonu prodeje a ziskovosti Power BI](sales-profitability-performance-content-pack.md)
+- [Obsah výkonu skladu v Power BI](warehouse-power-bi-content.md)
+- [Obsah metriky pracovní síly Power BI](workforce-analysis-power-bi-content-pack.md)  
 
+### <a name="accessing-the-content"></a>Přístup k obsahu
+Tento obsah Power BI naleznete v knihovně sdíleného majetku ve službě Microsoft Dynamics Lifecycle Services (LCS). Další informace o tom, jak balíček obsahu stáhnout a spojit ho s daty, najdete v tématu [Obsah Power BI ve službě LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md). Pokud se chcete podívat na ukázku, jak implementovat obsah Power BI, najdete informace v tématu [Obsah Power BI od společnosti Microsoft a partnerů ve službě Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) pro Office Mix.
 
+## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Obsah Power BI pro aplikaci Microsoft Dynamics AX
+Pokud používáte verzi Microsoft Dynamics AX 7.0 or Microsoft Dynamics AX 7.0.1, je k dispozici následující obsah Power BI.
 
+- [Obsah správy nákladů v Power BI](cost-management-content-pack.md)    
+- [Obsah finanční výkonnosti Power BI](financial-performance-power-bi-content-pack.md)
+- [Obsah Power BI výkonnosti maloobchodní sítě](retail-channel-performance-dashboard-power-bi-data.md) 
 
+### <a name="accessing-the-content"></a>Přístup k obsahu
+Tento obsah Power BI je k dispozici na PowerBI.com.
+
+1. Přihlaste se k [PowerBI.com](https://www.powerbi.com/).
+2. Klikněte na **Získat data**.
+3. V **služby** klepněte na tlačítko **získat**.
+4. Vyberte požadovaný balíček obsahu a klikněte na tlačítko **Získat**.
+5. Zadejte adresu URL prostředí Dynamics AX. Adresa URL musí být ve formátu **https://&lt;YourAOSTenant&gt;.cloudax.dynamics.com**. Klepněte na tlačítko **Další**.
+6. Vyberte **oAuth2** jako metodu ověřování a potom klepněte na tlačítko **přihlášení**.
+7. Budete-li vyzváni, zadejte účet služeb Microsoft Office 365, který má oprávnění k přístupu do vašeho prostředí Dynamics AX.
+8. Po přihlášení automaticky začne proces importu. Po dokončení importu se zobrazí v navigačním podokně sestavy, které jsou součástí balíčku obsahu. Vyberte sestavu, ve které chcete zobrazit importovaná data.
 

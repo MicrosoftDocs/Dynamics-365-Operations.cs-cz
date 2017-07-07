@@ -3,13 +3,14 @@ title: "Pracovní prostor fakturace dodavatelské spolupráce"
 description: "Toto téma vysvětluje, jak můžete zobrazit faktury dodavatele a přijmout faktury z pracovního prostoru spolupráce dodavatele."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221534
 ms.assetid: c4ed62f3-d351-41d7-a2ad-790576cde4ab
 ms.search.region: Global
@@ -17,10 +18,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7c8fe2fea08dbad625cd373ca316135ac4e29e13
+ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
+ms.openlocfilehash: 2171a454c763abab82f6555950994237b4de7b8b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 
 Toto téma vysvětluje, jak můžete zobrazit faktury dodavatele a přijmout faktury z pracovního prostoru spolupráce dodavatele.
 
-Pracovní prostor **fakturace dodavatelské spolupráce** lze použít pro zobrazení informace o faktuře dodavatele a odeslání faktur do aplikace Microsoft Dynamics 365 for Operations pomocí možností workflowu.
+Pracovní prostor **fakturace dodavatelské spolupráce** lze použít pro zobrazení informace o faktuře dodavatele a odeslání faktur do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition pomocí možností workflowu.
 Pracovní prostor fakturace dodavatelské spolupráce
 ----------------------------------------
 
@@ -40,14 +41,14 @@ Pracovní prostor fakturace dodavatelské spolupráce
 
 Dlaždice **Souhrnu** poskytují přehled o fakturách pro vybraného dodavatele. Faktury můžete zobrazovat podle jejich stavu.
 -   Návrhy faktur nebyly odeslány do workflowu.
--   Odeslané ale neschválené faktury jsou ty faktury, které dodavatel odeslal, ale nebyly zaúčtovány v Dynamics 365 for Operations.
--   Schválené ale nezaplacené faktury jsou ty faktury, které byly zaznamenány v Dynamics 365 for Operations, ale ještě nebyly zcela zaplaceny.
--   Zaplacené faktury jsou ty, které byly v Dynamics 365 for Operations plně uhrazeny.
+-   Odeslané ale neschválené faktury jsou ty faktury, které dodavatel odeslal, ale nebyly zaúčtovány v aplikaci Finance and Operations.
+-   Schválené ale nezaplacené faktury jsou ty faktury, které byly zaznamenány v aplikaci Finance and Operations, ale ještě nebyly zcela zaplaceny.
+-   Zaplacené faktury jsou ty, které byly v aplikaci Finance and Operations plně uhrazeny.
 
 Klepnutím na dlaždici otevřete filtrované zobrazení stránky **seznamu faktur**.
 ### <a name="tabular-lists"></a>Tabulkový seznam
 
-V oddíle **Tabulkové seznamy**se stav fakturace rozděluje podobným způsobem jako dlaždice souhrnu: návrhy a odeslané ale neschválené seznamy. Ve stavu návrhu lze fakturu přijmout do workflowu nebo odstranit. Poslední tabulkový seznam je možnost pro vyhledání faktur. Při hledání můžete filtrovat, což umožňuje rychlejší vyhledávání.
+V oddíle **Tabulkové seznamy** se stav fakturace rozděluje podobným způsobem jako dlaždice souhrnu: návrhy a odeslané ale neschválené seznamy. Ve stavu návrhu lze fakturu přijmout do workflowu nebo odstranit. Poslední tabulkový seznam je možnost pro vyhledání faktur. Při hledání můžete filtrovat, což umožňuje rychlejší vyhledávání.
 Stránka seznamu všech faktur dodavatelů
 -----------------------------
 
@@ -59,7 +60,7 @@ Novou fakturu dodavatele můžete vytvořit, pokud vyberete akci **Nová** v pra
 
 
 
-Další informace naleznete v tématu [Spolupráce s dodavateli pomocí portálu pro dodavatele](/dynamics365/operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
+Další informace naleznete v tématu [Spolupráce s dodavateli pomocí portálu pro dodavatele](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
 
 
 

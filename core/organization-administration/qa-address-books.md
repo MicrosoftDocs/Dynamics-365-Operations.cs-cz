@@ -3,7 +3,7 @@ title: "Adresáře"
 description: 
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23601
 ms.assetid: b177fa0f-ac9a-415e-9498-15438e132f60
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 568000b37fa067dfd34b4ee0642e4ba6cbe3aa54
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 7b3bed2bec4b109c6e3b557b8c3651f15f25169c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -42,8 +42,8 @@ Je možné kontrolovat duplicitní záznamy přímo na stránce seznamu **Globá
 ## <a name="can-i-bulk-add-or-delete-party-records-from-an-address-book"></a>Je možné hromadně přidat nebo odstranit záznamy strany z adresáře?
 Ano, můžete přidat několik záznamů strany do adresáři a také odstranit několik záznamů strany.
 
--   Chcete-li přidat více záznamů strany do adresáře, na stránce seznamu **Globální adresář**vyberte ze seznamu strany. Poté na panelu akcí na kartě **Strana**ve skupině **Spravovat**klikněte na možnost **Přiřadit strany**. Vyberte adresáře, do kterých chcete přidat vybrané záznamy strany, a klikněte na tlačítko **OK**. Všechny vybrané záznamy strany jsou přidány do vybraných adresářů.
--   Chcete-li odebrat více záznamů strany z adresáře, na stránce seznamu **Globální adresář**vyberte ze seznamu strany. Poté na panelu akcí na kartě **Strana**ve skupině **Spravovat**klikněte na možnost **Odebrat strany**. Vyberte adresáře, ze kterých chcete odebrat strany, a potom klikněte na tlačítko **OK**. Všechny vybrané záznamy strany budou odebrány z vybraných adresářů.
+-   Chcete-li přidat více záznamů strany do adresáře, na stránce seznamu **Globální adresář** vyberte ze seznamu strany. Poté na panelu akcí na kartě **Strana** ve skupině **Spravovat** klikněte na možnost **Přiřadit strany**. Vyberte adresáře, do kterých chcete přidat vybrané záznamy strany, a klikněte na tlačítko **OK**. Všechny vybrané záznamy strany jsou přidány do vybraných adresářů.
+-   Chcete-li odebrat více záznamů strany z adresáře, na stránce seznamu **Globální adresář** vyberte ze seznamu strany. Poté na panelu akcí na kartě **Strana** ve skupině **Spravovat** klikněte na možnost **Odebrat strany**. Vyberte adresáře, ze kterých chcete odebrat strany, a potom klikněte na tlačítko **OK**. Všechny vybrané záznamy strany budou odebrány z vybraných adresářů.
 
 ## <a name="can-i-change-the-party-type-of-a-record-or-do-i-have-to-delete-the-old-record-and-create-a-new-one"></a>Mohu změnit typ strany záznamu nebo je nutné odstranit původní záznam a vytvořit nový?
 V některých případech je třeba změnit typ strany záznamu z osoby na organizaci nebo z organizace na osobu. Například Anna je členem prodejního týmu společnosti Fabrikam U.K. Na veletrhu v Londýně se setká se šesti novými potenciálními zákazníky. Anna vytvoří záznam strany potenciálního zákazníka pro každého potenciálního zákazníka. Když Anna uloží záznamy, jsou všechny záznamy rovněž vytvořeny v globálním adresáři. Společnost Fabrikam má nastaven výchozí typ strany na organizaci, ale dva noví potenciální zákazníci by měli mít typ záznamu "osoba". Proto když se Anna z veletrhu vrátí, musí změnit typ strany záznamu dvou potenciálních zákazníků. Chcete-li změnit záznam strany na jiný typ, musíte nejprve vytvořit nový záznam strany správného typu v globálním adresáři. Poté můžete přidružit původní záznam strany k tomuto novému záznamu. Po provedení nového přidružení strany odstraňte původní záznam strany, který má nesprávný typ záznamu.
@@ -67,7 +67,7 @@ Můžete zadat záznamy strany buď v globálním adresáři nebo na stránce p�
 -   **Vytvoření záznamu strany, když znáte typ entity** – Pokud znáte typ entity strany, můžete vytvořit záznam na příslušné stránce pro tento typ. Například vytvořte záznam pro odběratele na stránce **Odběratel**. Při vytvoření a uložení záznamu pomocí stránky příslušné entity, bude záznam automaticky vytvořen v globálním adresáři.
 
 ## <a name="can-i-translate-address-information-for-party-records"></a>Mohu převést informace o adrese pro záznamy strany?
-Můžete nastavit překlady informací o adrese, aby se tyto údaje zobrazily ve vašem uživatelském jazyce (systémový jazyk) v aplikaci 365 for Operations, ale v jiném jazyce v dokumentech, jako například prodejních objednávkách. Je možné zadat překlady pro názvy zemí nebo oblastí, adresy a pořadí jmen. Například váš systémový jazyk je dánština a vytváříte prodejní objednávku pro odběratele ve Francii. V takovém případě lze zobrazit záznam odběratele v dánštině v programu, ale informace o adrese zobrazit ve francouzštině v tištěné prodejní objednávce. Při nastavování překladů měli byste zadat překlad pro všechny položky v seznamu. Všechny položky, pro které nezadáte překlad, se zobrazí v systémovém jazyce. Například váš systémový jazyk je dánština a odesíláte dokument odběrateli ve Francii. Pokud jste nezadali překlady pro španělštinu (ESP) pro adresní údaje, příslušné informace se zobrazí v dánštině v programu i ve vytištěném dokumentu.
+Můžete nastavit překlady informací o adrese, aby se tyto údaje zobrazily ve vašem uživatelském jazyce (systémový jazyk) v aplikaci Microsoft Dynamics 365 for Finance and Operations, ale v jiném jazyce v dokumentech, jako například prodejních objednávkách. Je možné zadat překlady pro názvy zemí nebo oblastí, adresy a pořadí jmen. Například váš systémový jazyk je dánština a vytváříte prodejní objednávku pro odběratele ve Francii. V takovém případě lze zobrazit záznam odběratele v dánštině v programu, ale informace o adrese zobrazit ve francouzštině v tištěné prodejní objednávce. Při nastavování překladů měli byste zadat překlad pro všechny položky v seznamu. Všechny položky, pro které nezadáte překlad, se zobrazí v systémovém jazyce. Například váš systémový jazyk je dánština a odesíláte dokument odběrateli ve Francii. Pokud jste nezadali překlady pro španělštinu (ESP) pro adresní údaje, příslušné informace se zobrazí v dánštině v programu i ve vytištěném dokumentu.
 
 
 

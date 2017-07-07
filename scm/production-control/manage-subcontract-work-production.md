@@ -1,16 +1,16 @@
 ---
 title: "Správa subdodavatelské práce při výrobě"
-description: "Toto téma vysvětluje, jak jsou subdodavatelské operace spravovány v aplikaci Microsoft Dynamics 365 for Operations. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku."
+description: "Toto téma vysvětluje, jak jsou subdodavatelské operace spravovány v aplikaci Microsoft Dynamics 365 for Finance and Operations. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 268174
 ms.assetid: fe47c498-4f48-42a2-a0cf-5436c19ab3ea
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 582807f9f416d3e6e73226dfd2e22af2d6331acd
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 0e1368d3f637143fd47c3772c811257e8472cc74
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma vysvětluje, jak jsou subdodavatelské operace spravovány v aplikaci Microsoft Dynamics 365 for Operations. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku.
+Toto téma vysvětluje, jak jsou subdodavatelské operace spravovány v aplikaci Microsoft Dynamics 365 for Finance and Operations. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku.
 
 Ve [výrobních procesech](production-process-overview.md) mohou práci provádět zdroje, které jsou vlastněné nebo spravované dodavateli. Prostředky dodavatele se používají k vyrovnání pravidelné nadměrné poptávky, která překračuje dostupnou kapacitu vlastních prostředků společnosti. Dodavatel může být také schopen nabídnout konkrétní [schopnosti prostředku](resource-capabilities.md)nebo prostředky za nižší cenu.  
 
@@ -42,7 +42,7 @@ Pokud jsou použity subdodávky operací nebo činnosti, mají vliv na všechny 
 
 Pro vnitřní zdroje je pro období typicky přidělena pevná sazba nákladů. Naopak náklady na nasmlouvaný subodavatelský prostředek vycházejí z nákupní ceny souvisejících služeb. Služba je definována jako jiný produkt a používá se k řízení zásobování veřejných zakázek a nákupních procesů pro dané operace subdodávek.  
 
-V současné době v aplikaci Microsoft Dynamics 365 for Operations neexistuje žádný explicitní koncept polotovarů. U výrobních zakázek, které vyžadují více než jednu operaci pro účely transformace surovin na hotový výrobek, je hotové zboží účtováno zpět do zásob pouze u poslední operace. Rozpracované výrobky, které vyvolávají dřívější operace jsou zaúčtovány nedokončené výroby (NV), ale nejsou zaúčtovány nebo sledovány ve skladu. Přestože postupy a kusovníky (BOM) můžete rozdělit na několik menších jednotek, tento přístup zvyšuje počet produktů, kusovníky a postupy, které musí být spravovány.  
+V současné době v aplikaci Microsoft Dynamics 365 for Finance and Operations neexistuje žádný explicitní koncept polotovarů. U výrobních zakázek, které vyžadují více než jednu operaci pro účely transformace surovin na hotový výrobek, je hotové zboží účtováno zpět do zásob pouze u poslední operace. Rozpracované výrobky, které vyvolávají dřívější operace jsou zaúčtovány nedokončené výroby (NV), ale nejsou zaúčtovány nebo sledovány ve skladu. Přestože postupy a kusovníky (BOM) můžete rozdělit na několik menších jednotek, tento přístup zvyšuje počet produktů, kusovníky a postupy, které musí být spravovány.  
 
 Existují dvě metody pro modelování subdodavatelské práce pro výrobní činnosti. Tyto metody se liší ve způsobu, jakým lze modelovat subdodávky procesu, ve způsobu, jakým jsou rozpracované výrobky zastoupeny v procesu a ve způsobu řízení nákladů.
 

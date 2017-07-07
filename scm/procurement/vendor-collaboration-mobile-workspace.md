@@ -1,16 +1,16 @@
 ---
-title: "Mobilní pracovní prostor dodavatelské spolupráce pro aplikaci Microsoft Dynamics 365 for Operations"
-description: "Pomocí mobilního pracovního prostoru dodavatelské spolupráce mohou dodavatelé sledovat aktuální informace o nákupních objednávkách, které jim byly odeslány ke schválení, a prohlížet si údaje o nových a aktualizovaných nákupních objednávkách a kontaktech."
-author: YuyuScheller
+title: "Mobilní pracovní prostor dodavatelské spolupráce"
+description: "Toto téma obsahuje informace o mobilním pracovním prostoru Spolupráce dodavatele Tento pracovní prostor pomáhá udržovat přehled o nákupních objednávkách, které byly odeslány ke schválení dodavatelům. Dále mohou prohlížet informace o nových a aktualizovaných nákupních objednávkách a kontaktech."
+author: mkirknel
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
@@ -18,130 +18,143 @@ ms.author: mkirknel
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e19fee87dae6e5d425f36dac0db4ea89534a8510
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 20e4c77bc47bffc3474559e3b9933b87e947e178
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="vendor-collaboration-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Mobilní pracovní prostor dodavatelské spolupráce pro aplikaci Microsoft Dynamics 365 for Operations
+# <a name="vendor-collaboration-mobile-workspace"></a>Mobilní pracovní prostor dodavatelské spolupráce
 
 [!include[banner](../includes/banner.md)]
 
+Toto téma obsahuje informace o mobilním pracovním prostoru **Spolupráce dodavatele**. Tento pracovní prostor pomáhá udržovat přehled o nákupních objednávkách, které byly odeslány ke schválení dodavatelům. Dále mohou prohlížet informace o nových a aktualizovaných nákupních objednávkách a kontaktech.
 
-Pomocí mobilního pracovního prostoru dodavatelské spolupráce mohou dodavatelé sledovat aktuální informace o nákupních objednávkách, které jim byly odeslány ke schválení, a prohlížet si údaje o nových a aktualizovaných nákupních objednávkách a kontaktech.
+Tento mobilní pracovní prostor je určen k použití s mobilní aplikací Microsoft Dynamics 365 for Unified Operations.
 
-<a name="prerequisites"></a>Předpoklady
--------------
+## <a name="overview"></a>Přehled 
+Mobilní pracovní prostor **Spolupráce dodavatele** informuje dodavatele o nových nákupních objednávkách, aby mohli prohlížet nákupní objednávky a reagovat na ně pomocí webového klienta aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+
+>[!NOTE]
+> Mobilní pracovní prostor slouží jako doplněk webového rozhraní dodavatelské spolupráce, nikoli jako jeho náhrada. 
+
+V mobilním pracovním prostoru **Spolupráce dodavatele** si mohou dodavatelé prohlížet nové nákupní objednávky odeslané ke schválení. Zobrazují se zde informace o objednávce, jako jsou produkty, množství a požadovaná data dodání. K dispozici jsou také informace o ceně, v závislosti na konfiguraci jednotlivých dodavatelů. 
+
+Uživatel, který se přihlásí jako dodavatel, uvidí, na které nákupní objednávky již bylo odpovězeno a které stále čekají na akci odběratele. Nákupní objednávka může například čekat na akci zákazníka například v případě, že dodavatel navrhl jiné datum dodání, ale zatím je zatím neschválil. Dodavateli se také zobrazí seznam nákupních objednávek, které jsou potvrzeny, ale nebyly zatím dodány. 
+
+K reakci na nákupní objednávku musí dodavatel použít webové rozhraní pro dodavatelskou spolupráci, které je k dispozici ve webovém klientovi. Tady také dodavatel může o objednávce získat další informace, například přílohy dokumentů, dodací adresy a poplatky spojené s dodavatelem. 
+
+Dodavatelé, kteří mají zvláštní roli zabezpečení, si mohou zobrazovat informace o kontaktních osobách, které jsou u účtů dodavatelů zaregistrovány. Pomocí této role si také může prohlížet stav odeslaných uživatelských žádostí. 
+
+Chcete-li vytvořit nové kontakty a odeslat nové požadavky uživatele, musí být použito webové rozhraní spolupráce dodavatele. 
+
+Mobilní pracovní prostor **Spolupráce dodavatele** umožňuje dodavateli provádět tyto úkoly:
+
+-   zobrazovat nové nákupní objednávky odeslané dodavateli,
+-   prohlížet si nákupní objednávky, na které dodavatel zareagoval a které čekají na akci odběratele,
+-   zobrazit nákupní objednávky, které jsou potvrzené, ale nebyly ještě plně přijaty,
+-   zobrazit informace o kontaktní osobě, která je registrován pro účet dodavatele. (Tato úloha vyžaduje další roli zabezpečení).
+-   prohlížet si informace o požadavcích uživatele, které odeslal dodavatel a sledovat jejich stav. (Tato úloha vyžaduje další roli zabezpečení).
+
+## <a name="prerequisites"></a>Požadavky
+Předpoklady jsou různé podle verze aplikace Microsoft Dynamics 365, která byla nasazena ve vaší organizaci.
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, v aktualizaci z července 2017 
+Pokud je ve vaší organizaci nasazena aktualizace aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition z července 2017, správce systému musí mobilní pracovní prostor **Spolupráce dodavatele** publikovat. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Operations verze 1611 s aktualizací Platform 3 nebo novější
+Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Operations verze 1611 s aktualizací Platform 3 nebo novější, správce systému musí dokončit následující předpoklady. 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Předpoklad</th>
+<th>Role</th>
 <th>popis</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Přečtěte si o mobilní platformě Microsoft Dynamics 365 for Operations</td>
-<td><a href="https://ax.help.dynamics.com/en/wiki/mobile-development-handbook/">Mobilní platforma Microsoft Dynamics 365 for Operations</a></td>
+<td>Pokud používáte aktualizace platformy 3 musí být implementován článek KB 3216943.</td>
+<td>Správce systému</td>
+<td>KB 3216943 je binární aktualizace, která je vyžadována, pokud používáte aktualizace platformy 3. Pro implementaci tohoto KB musí správce systému provést tyto kroky:
+<ol>
+<li>Stáhněte KB 3216943 z webu Microsoft Dynamics Lifecycle Services (LCS).</li>
+<li>Nainstalovat binární aktualizaci, která je dodána jako balíček s možností nasazení. Informace o použití nasaditelného balíčku naleznete v tématu <a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Použití nasaditelného balíčku</a>.</li>
+</ol></td>
 </tr>
 <tr class="even">
-<td>Dynamics 365 for Operations</td>
-<td>Ujistěte se, že používáte prostředí, které má Microsoft Dynamics 365 for Operations verzi 1611 a Microsoft Dynamics for Operations aktualizaci platformy 3 (listopad 2016).</td>
+<td>Musí být implementován článek KB 4013633.</td>
+<td>Správce systému</td>
+<td>KB 4013633 je aktualizace X++ nebo oprava hotfix metadat obsahující mobilní pracovní prostor <strong>Zásoby na skladě</strong>. Pro implementaci KB 4013633 musí správce systému provést tyto kroky:
+<ol>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Stáhnout opravu hotfix pro metadata z LCS</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Nainstalujte opravu hotfix metadat</a>.</li><li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Vytvořte nasaditelný balíček</a>, který obsahuje model <strong>SCMMobile</strong>, a nahrajte ho do LCS.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Použití nasaditelného balíčku</a></li>
+</ol></td>
 </tr>
 <tr class="odd">
-<td><span style="color: #000000">Mobilní zařízení, které má nainstalovanou aplikaci Dynamics 365 for Operations</span></td>
-<td><span style="color: #000000">Stáhněte si aplikaci Dynamics 365 for Operations ze svého obchodu s mobilními aplikacemi.</span></td>
+<td>Mobilní pracovní prostor <strong>Spolupráce dodavatele</strong> musí být publikován.</td><td>Správce systému</td>
+<td>Viz téma <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publikování mobilního pracovního prostoru</a>.</td>
 </tr>
 <tr class="even">
-<td>Oprava KB 4013633</td>
-<td>Pomocí této opravy hotfix si zpřístupníte pracovní prostory, které jsou součástí aplikace Dynamics 365 for Operations.</td>
-</tr>
-<tr class="odd">
-<td><span style="color: #ff0000"><span style="color: #000000">Oprava KB 3216943</span> </span></td>
-<td>Pomocí této opravy hotfix aktivujete mobilní pracovní prostor dodavatelské spolupráce.</td>
-</tr>
-<tr class="even">
-<td>Dodavatelský uživatel musí mít přístup k webovému rozhraní dodavatelské spolupráce v aplikaci 365 Dynamics for Operations a musí mít nastaveného uživatele pro dodavatelskou spolupráci.</td>
-<td>Při nastavování a používání webového rozhraní dodavatelské spolupráce postupujte podle pokynů v následujících tématech.
+<td>Dodavatelský uživatel musí mít přístup k webovému rozhraní dodavatelské spolupráce ve webovém klientovi a musí mít nastaveného uživatele pro dodavatelskou spolupráci.</td><td>Nákupní profesionálové a správce systému</td>
+<td>Při nastavování a používání webového rozhraní dodavatelské spolupráce postupujte podle kroků v následujících tématech.
 <ul>
 <li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-external-vendors/">Dodavatelská spolupráce s externími dodavateli</a></li>
 <li><a href="https://ax.help.dynamics.com/en/wiki/manage-vendor-collaboration-users/">Správa uživatelů dodavatelské spolupráce</a></li>
 <li><a href="https://ax.help.dynamics.com/en/wiki/set-up-and-maintain-vendor-collaboration/">Nastavení a správa dodavatelské spolupráce</a></li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-customers-in-dynamics-365-for-operations/">Práce s odběrateli v aplikaci Dynamics 365 for Operations pomocí dodavatelské spolupráce</a></li>
+<li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-customers-in-dynamics-365-for-operations/">Práce s odběrateli v aplikaci Finance and Operations pomocí dodavatelské spolupráce</a></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="overview"></a>Přehled
-Mobilní pracovní prostor dodavatelské spolupráce informuje dodavatele o nových nákupních objednávkách. Dodavatelé si je mohou prohlížet a reagovat na ně pomocí webového klienta aplikace Dynamics 365 for Operations. 
+## <a name="download-and-install-the-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci
 
-**Poznámka:** Mobilní pracovní prostor slouží jako doplněk webového rozhraní dodavatelské spolupráce, nikoli jako jeho náhrada. 
+Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
-V mobilním pracovním prostoru dodavatelské spolupráce si dodavatelé mohou prohlížet nové nákupní objednávky odeslané ke schválení. Zobrazují se zde informace o objednávce, jako jsou produkty, množství a požadované datum dodání. Dostupné informace o ceně závisí na konfiguraci jednotlivých dodavatelů. 
+-   [Pro telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [Pro telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
 
-Když se uživatel přihlásí jako dodavatel, uvidí, na které nákupní objednávky již bylo odpovězeno a které stále čekají na akci odběratele. Objednávka může čekat na akci například v případě, že dodavatel navrhl jiné datum dodání, které odběratel zatím neschválil. Dodavateli se také zobrazí seznam nákupních objednávek, které jsou potvrzeny, ale ještě nebyly dodány. 
+## <a name="sign-in-to-the-mobile-app"></a>Přihlaste se do mobilní aplikace
+1.  Spusťte aplikaci na svém mobilním zařízení.
+2.  Zadejte adresu URL aplikace Microsoft Dynamics 365.
+4.  Při prvním přihlášení se zobrazí výzva k zadání uživatelského jména a hesla. Zadejte své přihlašovací údaje.
+5.  Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost. Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, budete muset aktualizovat seznam mobilních pracovních prostorů.
 
-K reakci na nákupní objednávku musí dodavatel použít webové rozhraní pro dodavatelskou spolupráci, které je k dispozici ve webovém klientovi aplikace Dynamics 365 for Operations. Zde také dodavatel může o objednávce získat další informace, například přílohy dokumentů, dodací adresy a poplatky spojené s dodavatelem. 
+    [![Vyžádání aktualizace](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-V rámci zvláštní role zabezpečení si může dodavatel zobrazovat informace o kontaktních osobách, které jsou u účtů dodavatelů zaregistrovány. Pomocí této role si také může prohlížet stav odeslaných uživatelských žádostí. 
+## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Použití mobilního pracovního prostoru dodavatelské spolupráce
+Když vyberete pracovní prostor **Dodavatele spolupráce**, zobrazí se následující možnosti.
 
-Vytváření nových kontaktů a odesílání nových uživatelských žádostí je třeba provádět v rozhraní pro dodavatelskou spolupráci, které je součástí webového klienta aplikace Dynamics 365 for Operations. 
+![Mobilní pracovní prostor dodavatelské spolupráce](./media/vendor-collaboration-mobile-app.png)
 
-V mobilním pracovním prostoru může dodavatel provádět toto:
+Pracovní prostor **Dodavatele spolupráce** má následující stránky.
 
--   zobrazovat nové nákupní objednávky odeslané dodavateli,
--   prohlížet si nákupní objednávky, na které dodavatel zareagoval a které čekají na akci odběratele,
--   zobrazit nákupní objednávky, které mají potvrzený stav, ale nebyly plně přijaty,
--   zobrazovat informace o kontaktních osobách, které jsou zaregistrovány u účtu dodavatel (vyžaduje další roli zabezpečení),
--   prohlížet si informace a sledovat stav uživatelských žádostí odeslaných dodavatelem (vyžaduje další roli zabezpečení).
+### <a name="contacts"></a>Kontakty
+Na stránce **Kontakty** si můžete prohlížet všechny kontakty, které byly pro účet dodavatele vytvořeny. Zobrazuje jméno kontaktní osoby, primární e-mailovou adresu a alias uživatele, pokud má kontaktní osoba alias. Tato stránka také uvádí, zda je uživatelský účet kontaktní osoby aktivní. Když vyberete kontakt, zobrazí se kontaktní údaje, jako jsou například právnické osoby, pro které je osoba kontaktem. Můžete také zobrazit kontaktní informace, jako je například telefonní číslo nebo alternativní e-mailová adresa.
 
-## <a name="get-started"></a>Začínáme
-Chcete-li začít pracovat v mobilním zařízení:
+### <a name="user-requests"></a>Požadavky uživatele
+Na stránce **Požadavky uživatele** se zobrazují všechny uživatelské žádosti odeslané prostřednictvím webového rozhraní dodavatelské spolupráce. Můžete rovněž sledovat stav těchto požadavků. Když vyberete některou uživatelskou žádost, zobrazí se informace o tom, co bylo požadováno, budete moci přidat nebo deaktivovat uživatele, změnit zabezpečení a zjistit, které role zabezpečení byly pro uživatele vyžádány.
 
-1.  Stáhněte aplikaci Microsoft Dynamics 365 for Operations z obchodu mobilních aplikací.
-2.  Spusťte aplikaci na svém zařízení.
-3.  Zadejte adresu URL aplikace Dynamics 365.
-4.  Zadejte společnost, do které se chcete přihlásit. Například zadejte **USMF**.
-5.  Při prvním přihlášení budete vyzváni k zadání uživatelského jména a hesla pro váš účet aplikace Microsoft Dynamics 365 for Operations.
+### <a name="purchase-orders-ready-for-review"></a>Nákupní objednávky připravené ke kontrole
+Na stránce **Nákupní objednávky připravené ke kontrole** se zobrazují všechny nákupní objednávky, které byly odeslány odběratelem a zatím jsou bez reakce. Můžete zobrazit vybrané informace o objednávce, například které produkty byly vyžádány produktech a datu dodání. K dispozici jsou také informace o ceně, v závislosti na konfiguraci dodavatelů.
 
-Po přihlášení do aplikace nejsou zobrazeny žádné pracovní prostory. Pro zobrazení pracovního prostoru ve své mobilní aplikaci musíte nejprve publikovat požadovaný pracovní prostor do aplikace Dynamics 365 for Operations. K publikování pracovního prostoru potřebujete oprávnění správce systému.
+Zobrazí se i informace o tom, zda nákupní objednávka obsahuje poznámky nebo přílohy. Pokud však chcete otevřít poznámky a přílohy, je nutné použít webové rozhraní spolupráce dodavatele ve webovém klientovi. Výběrem možnosti **Řádek nákupní objednávky** zobrazíte všechny řádky spolu s podrobnostmi. U jednotlivých řádků se zobrazují indikátory poznámek a příloh, nebo informace, zda se dodací adresa liší od adresy uvedené v hlavičce.
 
-1.  Spusťte aplikaci Dynamics 365 for Operations.
-2.  Přejděte do nabídky **Správa systému** &gt; **Nastavení** &gt; **systémových parametrů**.
-3.  Zvolte **Spravovat aplikaci pro mobilní zařízení**.
-4.  K publikování na mobilní platformu vyberte pracovní prostor **Dodavatelská spolupráce**.
-5.  Vyberte **Publikovat pracovní prostor**.
-6.  Aktualizujte zařízení pro zobrazení publikovaných pracovních prostorů.
-7.  Vyberte pracovní prostor **Dodavatelská spolupráce**. Zobrazí se následující stránka.
+Na nákupní objednávky je třeba reagovat pomocí rozhraní dodavatelské spolupráce webového klienta.
 
-    [![mobilní-aplikace-spolupráce-s-dodavateli](./media/vendor-collaboration-mobile-app.png)](./media/vendor-collaboration-mobile-app.png)
+### <a name="awaiting-customer-action"></a>Čeká se na akci odběratele.
+Na stránce **Čeká se na akci odběratele** najdete nákupní objednávky, na které jste odpověděli vy nebo někdo jiný s přístupem k dodavatelské spolupráci ve vaší společnosti. Nákupní objednávky se v tomto seznamu zobrazují pouze v případě, že má u nich odběratel provést jednu z následujících akcí:
 
-## <a name="contacts"></a>Kontakty
-Na stránce **Kontakty** si můžete prohlížet všechny kontakty, které byly pro účet dodavatele vytvořeny. Zobrazují se zde jména kontaktních osob, primární e-mailové adresy a aliasy uživatelů, pokud jsou k dispozici. Také zde zjistíte, zda je uživatelský účet kontaktní osoby aktivní. Po výběru kontaktu se zobrazí podrobnosti o tomto kontaktu (například o tom, které právnické osoby tato osoba zastupuje) a kontaktní informace, jako je telefonní číslo nebo další e-mailová adresa.
+-   Jestliže byla původní nákupní objednávka zamítnuta, odběratel ji musí buď aktualizovat a znovu odeslat, nebo zrušit a znovu odeslat. Po novém odeslání se objednávka přestane zobrazovat na stránce **Čeká se na akci odběratele**.
+-   Pokud byla nákupní objednávka přijata se změnami, zákazník musí původní objednávku aktualizovat a znovu odeslat ke kontrole, nebo ji aktualizovat podle požadovaných změn a ihned potvrdit. V obou případech se objednávka na stránce **Čeká se na akci odběratele** už nebude objevovat.
+-   Pokud byla nákupní objednávka přijata, ale přesto se zobrazuje se na stránce **Čeká se na akci odběratele**, je to proto, že nebyla při přijetí automaticky potvrzena. V takovém případě čeká na to, až ji nákupčí přidělí stav **Potvrzeno**. Nákupní objednávka se považuje za dohodu mezi odběratelem a dodavatelem, jakmile ji dodavatel přijme. Proto je aktualizace stavu na **Potvrzeno** obvykle pouze formální.
 
-## <a name="user-requests"></a>Požadavky uživatele
-Na stránce **Požadavky uživatele** se zobrazují všechny uživatelské žádosti odeslané prostřednictvím webového rozhraní dodavatelské spolupráce a jejich stav. Když vyberete některou uživatelskou žádost, zobrazí se informace o tom, co bylo požadováno, budete moci přidat nebo deaktivovat uživatele, změnit zabezpečení a zjistit, které role zabezpečení byly pro uživatele vyžádány.
-
-## <a name="purchase-orders-ready-for-review"></a>Nákupní objednávky připravené ke kontrole
-Na stránce **Nákupní objednávky připravené ke kontrole** se zobrazují všechny nákupní objednávky, které byly odeslány odběratelem a zatím jsou bez odpovědi. Můžete zobrazit vybrané informace o objednávce, například o vyžádaných produktech a datu dodání. Informace o ceně jsou dostupné pouze v případě, že je to u dodavatele nakonfigurováno. Zobrazí se také informace o tom, zda nákupní objednávka obsahuje poznámky nebo přílohy. K otevření příloh je třeba použít rozhraní dodavatelské spolupráce ve webovém klientovi. Výběrem možnosti **Řádek nákupní objednávky** zobrazíte všechny řádky s podrobnostmi. U jednotlivých řádků se zobrazují indikátory poznámek a příloh, případně toho, že se dodací adresa liší od adresy uvedené v hlavičce. Na nákupní objednávky je třeba reagovat pomocí webového klienta dodavatelské spolupráce.
-
-## <a name="awaiting-customer-action"></a>Čeká se na akci odběratele.
-Na stránce **Čeká se na akci odběratele** najdete nákupní objednávky, na které jste odpověděli vy nebo někdo jiný s přístupem k dodavatelské spolupráci ve společnosti. Nákupní objednávky se v tomto seznamu zobrazují pouze v případě, že má u nich odběratel provést jednu z následujících akcí.
-
--   Jestliže byla nákupní objednávka zamítnuta, odběratel ji musí buď aktualizovat a znovu odeslat, nebo zrušit a znovu odeslat. Po novém odeslání objednávka ze stránky **Čeká se na akci odběratele** zmizí.
--   Pokud byla nákupní objednávka přijata se změnami, zákazník musí původní objednávku aktualizovat a znovu odeslat ke kontrole, nebo ji aktualizovat podle změn a ihned potvrdit. V obou případech objednávka ze stránky **Čeká se na akci odběratele** zmizí.
--   Pokud byla nákupní objednávka přijata a zobrazuje se na stránce **Čeká se na akci odběratele**, je to proto, že nebyla při přijetí automaticky potvrzena. V takovém případě čeká na to, až ji nákupčí potvrdí. Nákupní objednávka se obvykle považuje za dohodu mezi odběratelem a dodavatelem, jakmile ji dodavatel přijme. Nastavení potvrzeného stavu nákupní objednávky je pak jen formalitou.
-
-Po výběru nákupní objednávky se zobrazí další podrobnosti o odpovědi. U jednotlivých řádků se zobrazují podrobnosti a odpovědi. Dále je vždy uveden jeden z následujících stavů.
+Po výběru nákupní objednávky se zobrazí další podrobnosti o odpovědi. U jednotlivých řádků se zobrazují podrobnosti a odpovědi. Dále je vždy uveden jeden z následujících stavů:
 
 -   Akceptováno
 -   Odmítnuto
@@ -149,12 +162,14 @@ Po výběru nákupní objednávky se zobrazí další podrobnosti o odpovědi. 
 -   Nahrazeno/náhradní
 -   Rozdělit na plán / Řádek plánu
 
-Všimněte si indikátoru **Probíhá dodání** = ano/ne, který označuje dodání jednotlivých řádků. Příčinou nedodání může být to, že řádek byl odmítnut nebo nahrazen v případě, že se dodání původních řádků neočekává, nebo to, že byl řádek rozdělen do několika plánů a dodání původního řádku podle přijaté objednávky se neočekává. Zobrazují se veškeré změny v odpovědi na řádek objednávky kromě nahraných poznámek a příloh, které si můžete prohlédnout pomocí webového rozhraní dodavatelské spolupráce.
+Všimněte si, že je hodnota v poli **Dodání** nastavena na **Ano** nebo **Ne** k označení, zda řádky budou dodány. Řádek nemusí být dodán z následujících důvodů:
 
-## <a name="open-confirmed-orders"></a>Otevřené potvrzené objednávky
-Jakmile odběratel nákupní objednávku potvrdí (její stav se tedy změní na Potvrzeno), objednávka se zobrazí v otevřených potvrzených objednávkách. V seznamu zůstane, dokud ji odběratel nezaregistruje jako přijatou.
+- Řádek byl odmítnut.
+- Náhrada byla provedena a neočekává se, že původní řádek bude doručen podle požadavku v přijatém příkazu.
+- Řádek byl rozdělit na více řádků plánu a neočekává se, že původní řádek bude doručen podle požadavku v přijatém příkazu.
 
+Jsou zobrazeny všechny změny, které byly provedeny v odpovědi na řádku objednávky. Odeslané poznámky a přílohy se však nezobrazí. Pokud chcete otevřít poznámky a přílohy, je nutné použít webové rozhraní spolupráce dodavatele ve webovém klientovi.
 
-
-
+### <a name="open-confirmed-orders"></a>Otevřít potvrzené objednávky
+Jakmile odběratel nákupní objednávku potvrdí (její stav se tedy změní na **Potvrzeno**), objednávka se zobrazí v otevřených potvrzených objednávkách. V seznamu zůstane, dokud ji odběratel nezaregistruje jako přijatou.
 

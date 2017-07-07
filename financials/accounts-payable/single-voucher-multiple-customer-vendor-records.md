@@ -1,15 +1,15 @@
 ---
 title: "Jeden doklad se záznamy několika odběratelů nebo dodavatelů"
-description: "Toto téma poskytuje přehled o to, co se stane, když zaúčtujete jeden doklad s více záznamy odběratele nebo dodavatele. Tato funkce nebude podporována v budoucích verzích aplikace Microsoft Dynamics 365 for Operations, proto nedoporučujeme využívat tuto metodu účtování z důvodu dopadu účetnictví na zpracování vyrovnání."
+description: "Toto téma poskytuje přehled o to, co se stane, když zaúčtujete jeden doklad s více záznamy odběratele nebo dodavatele. Tato funkce nebude podporována v budoucích verzích aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, proto nedoporučujeme využívat tuto metodu účtování z důvodu dopadu účetnictví na zpracování vyrovnání."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 222534
 ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b1038ea950141f0e7d4678cac9edd3b0bd5beb6f
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 31040ff14b99a9b351268feb88698ac706befb55
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma poskytuje přehled o to, co se stane, když zaúčtujete jeden doklad s více záznamy odběratele nebo dodavatele. Tato funkce nebude podporována v budoucích verzích aplikace Microsoft Dynamics 365 for Operations, proto nedoporučujeme využívat tuto metodu účtování z důvodu dopadu účetnictví na zpracování vyrovnání. 
+Toto téma poskytuje přehled o to, co se stane, když zaúčtujete jeden doklad s více záznamy odběratele nebo dodavatele. Tato funkce nebude podporována v budoucích verzích aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, proto nedoporučujeme využívat tuto metodu účtování z důvodu dopadu účetnictví na zpracování vyrovnání. 
 
 Běžné příklady, kdy se jeden doklad se záznamy používá pro několika odběratelů nebo dodavatelů, zahrnují převody zůstatku mezi odběrateli a vzájemných zůstatků mezi odběrateli a dodavateli v rámci stejné organizace. 
 
@@ -162,7 +162,7 @@ Nyní po zaplacení INV2 vznikne následující položka. Všimněte si, že pla
 | 14000056    | 200110-001- | Zůstatek dodavatele     |                                          | -2.00                                   |
 
 ## <a name="one-voucher-for-balance-transfers-and-netting-scenarios"></a>Jedno číslo dokladu pro převody zůstatků a vzájemné scénáře
-Dva běžně používané scénáře, které používají jeden doklad obsahující více zákazníků nebo dodavatelů zahrnují zůstatky převodů od jednoho odběratele nebo dodavatele na jiného odběratele nebo dodavatele, a vzájemné vztahy odběratele a dodavatele, kteří jsou ze stejné organizace. Následující dva příklady ilustrují upřednostňovanou metodu zadávání scénářů v Dynamics 365 for Operations jako alternativu k zadávání do jednoho dokladu. 
+Dva běžně používané scénáře, které používají jeden doklad obsahující více zákazníků nebo dodavatelů zahrnují zůstatky převodů od jednoho odběratele nebo dodavatele na jiného odběratele nebo dodavatele, a vzájemné vztahy odběratele a dodavatele, kteří jsou ze stejné organizace. Následující dva příklady ilustrují upřednostňovanou metodu zadávání scénářů v aplikaci Finance and Operations jako alternativu k zadávání do jednoho dokladu. 
 
 *Zůstatek převodu* je jeden doklad s více zákazníky, který je zadaný pro účely převodu zůstatku od jednoho odběratele k jinému odběrateli (totéž platí pro dodavatele). Tento scénář může nastat, pokud zodpovědnost za platbu faktury přechází na jinou stranu, jako je například dceřiná společnost, která přesouvá zodpovědnost k mateřské společnosti. 
 
@@ -176,7 +176,7 @@ Například předpokládejme, že následující prodej je proveden odběrateli 
 | 401100-002-023-    | Výnosy          |           | 100        |
 | 130100-002-        | Zůstatek odběratele | 100       |            |
 
-Za další, uživatel přesune splatný zůstatek z ACME pojišťovací společnosti, a to do jednoho dokladu v Deníku plateb pohledávek. V aplikaci Dynamics 365 for Operations je pojišťovací společnost nastavena jako odběratel pojištění.
+Za další, uživatel přesune splatný zůstatek z ACME pojišťovací společnosti, a to do jednoho dokladu v Deníku plateb pohledávek. V aplikaci Finance and Operations je pojišťovací společnost nastavena jako odběratel pojištění.
 
 |             |                  |             |                 |           |            |                 |                    |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|

@@ -3,14 +3,14 @@ title: "Nákupní smlouvy"
 description: "V tomto článku jsou informace o nákupních smlouvách. Nákupní smlouva je smlouva, která organizaci zavazuje k nákupu určitého množství nebo částky v rámci několika nákupních objednávek v průběhu času. Výměnou za tento závazek odběratel obdrží zvláštní ceny a slevy."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c100bd34725c67710d0f473a001c73705600ba79
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 4266ba2b19c3bd31a10301dd2290cd4b4fa53bdb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -48,7 +48,7 @@ Každý řádek nákupní smlouvy vyjadřuje závazek koupit. Může používat 
 -   **Závazek ohledně hodnoty** – Kupujete určitou částku v určité měně jakékoliv produktu v jakékoliv kategorii zásobování.
 
 ## <a name="pricing-terms-for-purchase-agreements"></a>Cenové podmínky pro nákupní smlouvy
-Cenové podmínky se mohou lišit v závislosti na typu závazku. Cenové podmínky z nákupních smluv přepíší jakékoli další cenové podmínek nastavené pro obchodní smlouvy. V následující tabulce jsou popsána pole související s cenami, kterých se jednotlivé typy závazku dotýkají. Pole obsahující hodnotu **Ano**mohou být aktualizována na řádku objednávky.
+Cenové podmínky se mohou lišit v závislosti na typu závazku. Cenové podmínky z nákupních smluv přepíší jakékoli další cenové podmínek nastavené pro obchodní smlouvy. V následující tabulce jsou popsána pole související s cenami, kterých se jednotlivé typy závazku dotýkají. Pole obsahující hodnotu **Ano** mohou být aktualizována na řádku objednávky.
 
 | Typ závazku                   | Jednotková cena | Cenová jednotka | Procento slevy | Částka platební slevy |
 |-----------------------------------|------------|------------|------------------|----------------------|
@@ -80,7 +80,7 @@ Při potvrzení nákupní smlouvy bude aktuální verze nákupní smlouvy ulože
 Při vytváření nákupní objednávky můžete použít nákupní smlouvu. Informace ze smlouvy, jako jsou například platební podmínky, dodací podmínky nebo adresa dodání, se poté zkopírují do záhlaví nákupní objednávky. Pokud nákupní objednávka obsahuje jeden nebo více řádků pro produkty nebo kategorie, které jsou kryty smlouvou, použijí se pro tyto řádky ceny a slevy z nákupní smlouvy. Částka nebo množství v řádku objednávky přispívá k plnění závazku V nákupní smlouvě. Stejná nákupní objednávka může zahrnovat řádky, které nesouvisí s nákupní smlouvou, i řádky, které mají závazek pro nákupní smlouvu.  
 
 Nákupní smlouvu můžete vybrat pouze, když vytváříte nákupní objednávku. Po vytvoření nákupní objednávky nelze vybrat nákupní smlouvu.  
-V některých situacích, kdy jsou nákupní objednávky vytvářeny nepřímo, můžete určit, zda aplikace Microsoft Dynamics 365 for Operations automaticky vyhledá příslušné nákupní smlouvy. Provést to můžete například při automatickém potvrzování plánovaných nákupních objednávek nebo při vytváření nákupních objednávek, které jsou založeny na prodejních objednávkách.
+V některých situacích, kdy jsou nákupní objednávky vytvářeny nepřímo, můžete určit, zda aplikace Finance and Operations automaticky vyhledá příslušné nákupní smlouvy. Provést to můžete například při automatickém potvrzování plánovaných nákupních objednávek nebo při vytváření nákupních objednávek, které jsou založeny na prodejních objednávkách.
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Nákupní smlouvy a mezipodnikový obchod
 Mezipodnikové obchodní vztahy lze vytvořit mezi účty dodavatele a účty zákazníků, které se u různých právnických osob liší. Po vytvoření prodejní objednávky nebo nákupní objednávky pro jednu ze stran se vytvoří mezipodnikový řetězec objednávek. V řetězci objednávek se prodejní objednávka a nákupní objednávka vytváří v příslušných právnických osobách.  

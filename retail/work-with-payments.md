@@ -1,27 +1,28 @@
 ---
 title: "Platební metody v kontaktním středisku"
-description: "Toto téma popisuje různé platební metody, které lze použít v telefonickém centru v části Maloobchodní a velkoobchodní prodej."
+description: "Toto téma popisuje různé platební metody, které lze použít v telefonickém centru v aplikaci Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 930264f9c22cbde102b59237e432df7d7e4836c8
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 07cb1bcb3870b96e34f7f6725fe5b7da32628fde
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -31,13 +32,13 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-Toto téma popisuje různé platební metody, které lze použít v telefonickém centru v části Maloobchodní a velkoobchodní prodej.
+Toto téma popisuje různé platební metody, které lze použít v telefonickém centru v aplikaci Dynamics 365 for Retail.
 
-V kontaktních střediscích lze použít také metody platby, které se používají u jiných kanálů v části Maloobchodní a velkoobchodní prodej v aplikaci Microsoft Dynamics AX, jako například pro hotovost, šeky, kreditní karty a dárkové poukazy. Po nastavení způsobu platby pro kontaktní středisko se pro uživatele kontaktního střediska tento způsob zobrazí jako jedna z možností v části **Platby** na stránce **Prodejní objednávka**. Dále můžete nastavit kupóny pro nabízení slev odběratelům při objednávání prostřednictvím kontaktního střediska vaší organizace. Kupóny mohou být pevná částka slevy nebo procento ceny položky nebo celkové částky objednávky. Například kupón částky může nabízet odběratelům slevu 75,00, když odběratele tratí 750,00 nebo více. Můžete vytvořit různé typy kupónů, nastavit nadřazené a podřízené kupóny a kupóny kopírovat nebo anulovat. Pomocí možností v následující tabulce vytvoříte kupóny.
+V telefonickém centrech lze použít také metody platby, které se používají u jiných kanálů, jako například pro hotovost, šeky, kreditní karty a dárkové poukazy. Po nastavení způsobu platby pro kontaktní středisko se pro uživatele kontaktního střediska tento způsob zobrazí jako jedna z možností v části **Platby** na stránce **Prodejní objednávka**. Dále můžete nastavit kupóny pro nabízení slev odběratelům při objednávání prostřednictvím kontaktního střediska vaší organizace. Kupóny mohou být pevná částka slevy nebo procento ceny položky nebo celkové částky objednávky. Například kupón částky může nabízet odběratelům slevu 75,00, když odběratele tratí 750,00 nebo více. Můžete vytvořit různé typy kupónů, nastavit nadřazené a podřízené kupóny a kupóny kopírovat nebo anulovat. Pomocí možností v následující tabulce vytvoříte kupóny.
 
 |                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Atribut**             | Do pole **Umořovací sazba**zadejte očekávanou umořovací sazbu kupónu v procentech a pak vyberte, zda kupón je kupón pro jednorázové použití, bude vydán automaticky znovu nebo je specifický pro odběratele.                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Atribut**             | Do pole **Umořovací sazba** zadejte očekávanou umořovací sazbu kupónu v procentech a pak vyberte, zda kupón je kupón pro jednorázové použití, bude vydán automaticky znovu nebo je specifický pro odběratele.                                                                                                                                                                                                                                                                                                                                                                                       |
 | **Platné**                 | V polích **Počáteční datum** a **Konečné datum** zadejte data prvního a posledního dne, kdy je kupón platný.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | **Zahrnout/vyloučit pravidla** | V polích **Katalogy** a **Položky** vyberte, zda jsou v kupónu zahrnuty nebo vyloučeny nějaké katalogy nebo zboží. Vyberete-li možnost **Zahrnout** nebo **Vyloučit**, klepněte na tlačítko **Nastavit**, vyberte **Zahrnout/vyloučit katalogy** nebo **Zahrnout/vyloučit produkty** a zadejte informace o katalogu nebo položce. Vyberete-li v těchto polích **Žádný**, všechny katalogy nebo položky jsou součástí kupónu.                                                                                                                                                                                                                          |
 | **Různé**         | Pokud tento kupón nelze použít společně s dalšími slevami, označte pole **Výhradní**. Pak v poli **Původ** vyberte místo pro použití kupónu. Jedná-li se o kupón výrobce, zaškrtněte políčko **Kupón výrobce**.                                                                                                                                                                                                                                                                                                                                                                |

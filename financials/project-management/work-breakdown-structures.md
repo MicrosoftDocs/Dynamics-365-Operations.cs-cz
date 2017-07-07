@@ -1,27 +1,27 @@
 ---
 title: "Strukturované rozpisy prací"
-description: 
+description: "Strukturovaný rozpis prací (WBS) je popis práce, která bude provedena v projektu. Jedná se o hierarchii úkolů, která představuje pochopení projektového týmu v souvislosti se složením práce a velikostí, náklady a dobou trvání jednotlivých součástí nebo úkolů."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ProjWorkBreakdownStructure
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23861
 ms.assetid: 241a0464-0056-4a69-b468-0afbe2d5f3ae
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1a700f61bcc6e6d9c699987999be25649862b0d8
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 6d4391f1a6fa517b447387562fd3216201451316
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -30,10 +30,7 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
-
-
-
-Strukturované rozpisy prací A strukturovaný rozpis prací (WBS) je popis práce, která bude provedena v projektu. Jedná se o hierarchii úkolů, která představuje pochopení projektového týmu v souvislosti se složením práce a velikostí, náklady a dobou trvání jednotlivých součástí nebo úkolů. WBS má tři hlavní účely:
+Strukturovaný rozpis prací (WBS) je popis práce, která bude provedena v projektu. Jedná se o hierarchii úkolů, která představuje pochopení projektového týmu v souvislosti se složením práce a velikostí, náklady a dobou trvání jednotlivých součástí nebo úkolů. WBS má tři hlavní účely:
 
 -   Popis rozpisu nebo složení prací v úkolu.
 -   Plánování práce na projektu.
@@ -43,7 +40,7 @@ Strukturované rozpisy prací A strukturovaný rozpis prací (WBS) je popis prá
 
 Naproti tomu projekty v jiných odvětvích, jako jsou například média a inzerce, software a IT infrastruktura, jsou obvykle jedinečné a produktivita je závislá na zkušenostech a kompetencích osoby, která provádí úkoly. Tyto odvětví tedy využívají WBS k určení přibližné velikosti projektu, nikoli k podrobnému sledování průběhu tohoto projektu. 
 
-Vytvoření WBS je náročný proces, který obvykle probíhá dlouhou dobu a vyžaduje spolupráci a informace od různých osob. Toto téma popisuje použití vylepšení struktury WBS v aplikaci Microsoft Dynamics 365 for Operations, aby byly splněny požadavky pro odhady a sledování.
+Vytvoření WBS je náročný proces, který obvykle probíhá dlouhou dobu a vyžaduje spolupráci a informace od různých osob. Toto téma popisuje použití vylepšení struktury WBS v aplikaci Microsoft Dynamics 365 for Finance and Operations, aby byly splněny požadavky pro odhady a sledování.
 
 ## <a name="prerequisites-for-creating-a-wbs"></a>Předpoklady pro vytvoření WBS
 Chcete-li vytvořit strukturu WBS, je nutné vytvořit pracovní rozvrh a odhad nákladů prací.
@@ -68,7 +65,7 @@ Chcete-li nastavit pracovní dny a pracovní dobu pro kalendář nebo vytvořit 
 Chcete-li použít úplné funkce odhadu nákladů ve struktuře WBS, měli byste nastavit náklady a prodejní ceny pro zaměstnance, kategorie práce, výdaje, poplatky a položky.
 
 -   Chcete-li nastavit náklady a prodejní cenu práce, výdajů a kategorií poplatků, klikněte na položky **Řízení a účetnictví projektů** &gt; **Nastavení** &gt; **Ceny**.
--   Chcete-li nastavit náklady a prodejní ceny zboží, použijte stránku **Obchodní smlouvy**pro každou položku na stránce seznamu **Uvolněné produkty** v modulu řízení informací o produktu.
+-   Chcete-li nastavit náklady a prodejní ceny zboží, použijte stránku **Obchodní smlouvy** pro každou položku na stránce seznamu **Uvolněné produkty** v modulu řízení informací o produktu.
 
 ## <a name="creating-a-wbs"></a>Vytváření WBS
 Vytvoření struktury WBS zahrnuje tři aktivity:
@@ -106,10 +103,10 @@ V současné době nelze měnit číslování struktury WBS.
 
 ### <a name="schedule-estimation"></a>Odhad plánu
 
-Odhad plánu je obvykle druhým krokem při vytváření struktury WBS. Doporučujeme provést odhad plánu po vytvoření úkolů. Stránka **Strukturovaný rozpis prací** v aplikaci Microsoft Dynamics 365 for Operations má dvě části. Horní podokno je určeno pro odhad plánu a dolní podokno obsahuje kartu **Odhadované náklady a výnosy**, kterou lze použít pro odhady nákladů. 
+Odhad plánu je obvykle druhým krokem při vytváření struktury WBS. Doporučujeme provést odhad plánu po vytvoření úkolů. Stránka **Strukturovaný rozpis prací** v aplikaci Finance and Operations má dvě části. Horní podokno je určeno pro odhad plánu a dolní podokno obsahuje kartu **Odhadované náklady a výnosy**, kterou lze použít pro odhady nákladů. 
 **Závislosti úkolu** Ve WBS můžete vytvořit vztahy předchůdců mezi úkoly. Když přiřadíte předcházející úkoly k úkolu, lze tento úkol zahájit až po dokončení všech jeho předchůdců. Plánované datum zahájení úkolu je automaticky nastaveno na poslední datum všech jeho předchůdců. 
 
-**Plánování úkolů v aplikaci Microsoft Dynamics 365 for Operations** Následující faktory určují plánování úkolů listového uzlu:
+**Plánování úkolů v aplikaci Microsoft Dynamics 365 for Finance and Operations** Následující faktory určují plánování úkolů listového uzlu:
 
 -   Předchůdci
 -   Úsilí
@@ -126,7 +123,7 @@ Počáteční datum úkolu listového uzlu, který nemá předchůdce, bude auto
 
 Počet lidí x doba trvání x počet hodin ve standardním pracovním dni v projektovém kalendáři. 
 
-V některých případech se můžete chtít odchýlit od těchto pravidel. Můžete vypnout automatické plánování, chcete-li aplikaci Microsoft Dynamics 365 for Operations zabránit v automatickém nastavení nebo opravě všech vlastností úkolů listových uzlů. Při zadání informací o úkolu, který způsobí porušení pravidel plánování, se pro úkol zobrazí ikona chyby plánování. Pokud nechcete, aby se chyby plánování zobrazovaly, kliknutím na možnost **Chyby plánování jsou zobrazeny** tuto funkci zakážete. 
+V některých případech se můžete chtít odchýlit od těchto pravidel. Můžete vypnout automatické plánování, chcete-li aplikaci Finance and Operations zabránit v automatickém nastavení nebo opravě všech vlastností úkolů listových uzlů. Při zadání informací o úkolu, který způsobí porušení pravidel plánování, se pro úkol zobrazí ikona chyby plánování. Pokud nechcete, aby se chyby plánování zobrazovaly, kliknutím na možnost **Chyby plánování jsou zobrazeny** tuto funkci zakážete. 
 
 > [!NOTE] 
 > Hodnoty pro úkoly souhrnu nebo kontejneru budou i nadále počítány jako součet hodnot jednotlivých úkolů, bez ohledu na to, zda je pomoc s automatickým plánováním zapnuta nebo vypnuta. 
@@ -135,7 +132,7 @@ V některých případech se můžete chtít odchýlit od těchto pravidel. Mů�
 
 **Oprava chyb plánování dle úkolu** Pokud dvakrát kliknete na ikonu chyby plánu pro konkrétní úkol, zobrazí dialogové okno všechny chyby plánování pro tento úkol. Můžete určit, které chyby plánování chcete pro úkol opravit. 
 
-**Oprava všech chyb plánování** Pokud chcete, aby aplikace Microsoft Dynamics 365 for Operations opravila všechny chyby plánování ve WBS, v podokně akcí klikněte na možnost **Opravit všechny nesrovnalosti plánování**. 
+**Oprava všech chyb plánování** Pokud chcete, aby aplikace Finance and Operations opravila všechny chyby plánování ve WBS, v podokně akcí klikněte na možnost **Opravit všechny nesrovnalosti plánování**. 
 
 > [!NOTE] 
 > Tato funkce může způsobit výrazné úpravy struktury WBS. Chyby budou opraveny v následujícím pořadí:
@@ -170,7 +167,7 @@ Náklady a prodejní cena pro každý řádek odhadu práce nebo výdajů vychá
 ## <a name="tracking-progress-on-the-wbs"></a>Sledování průběhu struktury WBS
 Některá odvětví sledují průběh projektu proti WBS na velmi podrobné úrovni, zatímco jiná sledují průběh na vyšší úrovni struktury WBS. Tato část popisuje použití sledování WBS pro požadavky projektu. 
 
-Aplikace Microsoft Dynamics 365 for Operations obsahuje tři zobrazení struktury WBS projektu: zobrazení plánování, zobrazení sledování úsilí a zobrazení sledování nákladů.
+Aplikace Finance and Operations obsahuje tři zobrazení struktury WBS projektu: zobrazení plánování, zobrazení sledování úsilí a zobrazení sledování nákladů.
 
 ### <a name="planning-view"></a>Zobrazení plánování
 
@@ -246,13 +243,13 @@ Fáze času v grafu získané hodnoty se zobrazí podle týdne nebo měsíce. Ta
 
 **Plánovaná hodnota** Teorie systému EVM uvádí, že vykreslení plánované hodnoty představuje míru, s jakou tým projektu plánoval získat hodnotu projektu. 
 
-Microsoft Dynamics 365 for Operations používá pravidlo zisku 0:100 při vykreslování plánované hodnoty. Podle tohoto pravidla je hodnota úkolu zaúčtována do úkolu k datu ukončení. Žádná hodnota nebude zaúčtována, dokud nebude úkol 100procentně dokončen. 
+Finance and Operations používá pravidlo zisku 0:100 při vykreslování plánované hodnoty. Podle tohoto pravidla je hodnota úkolu zaúčtována do úkolu k datu ukončení. Žádná hodnota nebude zaúčtována, dokud nebude úkol 100procentně dokončen. 
 
 V modulu Řízení a účetnictví projektů zadejte koncové datum listových uzlů a plánované náklady pro ně. Při zobrazení grafu plánované hodnoty dle týdnů jsou plánované hodnoty shrnuty za týden pro všechny úlohy listového uzlu pro dobu trvání projektu. 
 
 **Získaná hodnota** Teorie systému EVM uvádí, že vykreslení získané hodnoty představuje míru, s jakou tým projektu skutečně získá hodnotu projektu. 
 
-Microsoft Dynamics 365 for Operations používá pravidlo zisku 0:100 při vykreslování získané hodnoty. Podle tohoto pravidla je hodnota úkolu zaúčtována do úkolu k datu ukončení. Žádná hodnota nebude zaúčtována, dokud nebude úkol 100procentně dokončen. 
+Finance and Operations používá pravidlo zisku 0:100 při vykreslování získané hodnoty. Podle tohoto pravidla je hodnota úkolu zaúčtována do úkolu k datu ukončení. Žádná hodnota nebude zaúčtována, dokud nebude úkol 100procentně dokončen. 
 
 Při výpočtu získané hodnoty je zvažováno procento průběhu jednotlivých úkolů. Podle pravidla zisku 0:100 budou do výpočtu získané hodnoty na konci období zahrnuty pouze úkoly, které byly dokončeny v daném období. Získaná hodnota projektu se vypočítá pro všechny úkoly, které již byly dokončeny při vytvoření grafu. 
 

@@ -1,67 +1,74 @@
 ---
-title: "Nedávno uvolněné mobilní pracovní prostory pro mobilní aplikaci Dynamics 365 for Operations"
-description: "Toto téma uvádí seznam mobilních pracovních prostorů, které byly nedávno vydány pro mobilní aplikaci Microsoft Dynamics 365 for Operations."
+title: "Nedávno vydané mobilní pracovní prostory"
+description: "V tomto tématu je uveden seznam mobilních pracovních prostorů, které byly vydány nedávno."
 author: sericks007
 manager: AnnBe
-ms.date: 04/10/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
-ms.custom: 271724
-ms.assetid: 4b639ee1-5ee3-4389-8fbb-3c65150ba8b2
+ms.search.scope: Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: sericks
-ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7d9b5870d8b1c64e3d444900253b06bbb76b6feb
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: e5633d1db9593e2e0cb8bb4703de76766ab706b0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="mobile-workspaces-recently-released-for-the-dynamics-365-for-operations-mobile-app"></a>Nedávno uvolněné mobilní pracovní prostory pro mobilní aplikaci Dynamics 365 for Operations
+# <a name="mobile-workspaces-recently-released"></a>Nedávno vydané mobilní pracovní prostory
 
 [!include[banner](../includes/banner.md)]
 
 
 
-Toto téma uvádí seznam mobilních pracovních prostorů, které byly nedávno vydány pro mobilní aplikaci Microsoft Dynamics 365 for Operations.
+Toto téma uvádí seznam mobilních pracovních prostorů, které byly nedávno vydány pro mobilní aplikaci Dynamics 365 for Unified Operations.
 
-<a name="mobile-workspaces-that-were-released-in-april-2017"></a>Mobilní pracovní prostory, které byly vydány v dubnu 2017
---------------------------------------------------
+> [!NOTE]
+> Aplikace měla dříve název *Microsoft Dynamics 365 for Finance and Operations*.
+
+
+## <a name="new-mobile-workspaces-released-in-june-2017"></a>Nové mobilní pracovní prostory vydané v červnu 2017
+
+| Mobilní pracovní prostor     | popis   | Další informace   |
+|----------------------|---------------|--------------|
+|Ředitel společnosti| Tento pracovní prostor uživatelům umožňuje zobrazit a kontaktovat ostatní zaměstnance organizace.| [Mobilní pracovní prostor adresáře společnosti](company-directory-mobile-workspace.md)|    
+|Můj tým| Umožňuje uživatelům zobrazit jejich přímé podřízené i ostatní zaměstnance a oceňovat jednotlivé uživatele v rámci příslušného dodavatelsko-odběratelského řetězce.| [Mobilní pracovní prostor Můj tým](manager-self-service-mobile-workspace.md)|     
+|Schválení faktur| Obsahuje seznam faktur, které vám byly přiřazeny v pracovním procesu záhlaví faktury dodavatele.|[Mobilní pracovní prostor schválení faktury](invoice-approval-mobile-workspace.md)    |    
+
+## <a name="new-mobile-workspaces-released-in-april-2017"></a>Nové mobilní pracovní prostory vydané v dubnu 2017
 
 | Mobilní pracovní prostor   | popis                                                                                                                                                                                                      | Další informace                                                                                                      |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Správa výdajů | Tento pracovní prostor umožňuje uživatelům zdokumentovat a odeslat účtenku, aby ji mohli připojit později k sestavě výdajů. Mobilní pracovní prostor také umožní uživatelům rychle vytvářet řádek výdajů pomocí připojené účtenky. | [Mobilní pracovní prostor Správa výdajů](/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace) |
+| Správa výdajů | Umožňuje uživatelům zdokumentovat a odeslat účtenku, aby ji mohli připojit později k sestavě výdajů. Mobilní pracovní prostor také umožní uživatelům rychle vytvářet řádek výdajů pomocí připojené účtenky. | [Mobilní pracovní prostor Správa výdajů](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace) |
+| Schválení nákupní objednávky | Umožňuje uživatelům zobrazovat a reagovat na nákupní objednávky akcemi jako schválení nebo zamítnutí. | [Mobilní pracovní prostor schvalování nákupních objednávek](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-mobile-workspace) |
 
-## <a name="mobile-workspaces-that-were-released-in-march-2017"></a>Mobilní pracovní prostory, které byly vydány v březnu 2017
+## <a name="new-mobile-workspaces-released-in-march-2017"></a>Nové mobilní pracovní prostory vydané v březnu 2017
+
 | Mobilní pracovní prostor   | popis                                                                                   | Další informace                                                                                                                                                                              |
 |--------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Zadání času projektu | Tento pracovní prostor uživatelům umožňuje zadat a uložit čas na projekt pomocí svých mobilních zařízení. | [Mobilní pracovní prostor zadání času projektu](/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace) |
+| Časový záznam projektu | Umožňuje uživatelům zadat a uložit čas na projekt pomocí svých mobilních zařízení. | [Mobilní pracovní prostor zadání času projektu](/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace) |
 
-## <a name="mobile-workspaces-that-were-released-in-january-2017"></a>Mobilní pracovní prostory, které byly vydány v lednu 2017
+## <a name="new-mobile-workspaces-released-in-january-2017"></a>Nové mobilní pracovní prostory vydané v lednu 2017
+
 | Mobilní pracovní prostor     | popis                                                                                                                                                                         | Další informace                                                                                                                                                        |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Řízení nákladů     | Manažeři nákladových středisek mohou kdykoliv a kdekoliv vidět výkonnost nákladových středisek.                                                                                               | [Mobilní pracovní prostor Řízení nákladů](/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace)         |
-| Zásoby na skladě    | Získejte mobilní přehled o rezervovaných a dostupných zásobách kdykoliv a kdekoliv.                                                                                                    | [Mobilní pracovní prostor zásob na skladě](/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace)       |
-| Prodejní objednávky         | Buďte informováni o svých prodejních objednávkách kdykoliv a kdekoliv.                                                                                                                          | [Mobilní pracovní prostor prodejních objednávek](/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace)                 |
-| Dodavatelská spolupráce | Vaši dodavatelé mohou sledovat být informováni nákupních objednávkách, které jim byly odeslány ke schválení, a mohou si prohlížet údaje o nových a aktualizovaných nákupních objednávkách a kontaktech. | [Mobilní pracovní prostor dodavatelské spolupráce](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace) |
+| Řízení nákladů     | Umožňuje manažerům nákladových středisek mohou kdykoliv a kdekoliv vidět výkonnost nákladových středisek.                                                                                               | [Mobilní pracovní prostor Řízení nákladů](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace)         |
+| Zásoby na skladě    | Umožňuje uživatelům získat přehled o rezervovaných a dostupných zásobách kdykoliv a kdekoliv.                                                                                                    | [Mobilní pracovní prostor zásob na skladě](/dynamics365/unified-operations/supply-chain/inventory/inventory-on-hand-mobile-workspace)       |
+| Prodejní objednávky         | Umožňuje uživatelům získávat aktuální informace o jejich prodejních objednávkách kdykoliv a kdekoliv.                                                                                                                          | [Mobilní pracovní prostor prodejních objednávek](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-orders-mobile-workspace)                 |
+| Dodavatelská spolupráce | Pomáhá dodavatelům udržovat přehled o nákupních objednávkách, které byly odeslány ke schválení dodavatelům. Dále mohou prohlížet informace o nových a aktualizovaných nákupních objednávkách a kontaktech. | [Mobilní pracovní prostor dodavatelské spolupráce](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace) |
 
-## <a name="mobile-workspace-functionality-that-was-released-in-december-2016"></a>Funkce mobilních pracovních prostorů vydané v prosinci 2016
+## <a name="new-mobile-workspace-functionality-released-in-december-2016"></a>Nové funkce mobilních pracovních prostorů vydané v prosinci 2016
+
 | Mobilní pracovní prostor        | popis                                                                    | Další informace                                                                                                            |
 |-------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Schválení faktury dodavatele | Naučte se, jak navrhovat a vytvářet mobilní pracovní prostor pro schválení dodavatelské faktury. | [Mobilní schvalování faktur](/dynamics365/operations/financials/accounts-payable/mobile-invoice-approvals) |
-
-
-
-
-
+| Schválení faktury dodavatele | Naučte se, jak navrhovat a vytvářet mobilní pracovní prostor pro schválení dodavatelské faktury. | [Mobilní schvalování faktur](/dynamics365/unified-operations/financials/accounts-payable/mobile-invoice-approvals) |
 
 

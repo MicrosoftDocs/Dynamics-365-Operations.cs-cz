@@ -1,16 +1,16 @@
 ---
 title: "Finanční výkaznictví"
-description: "Toto téma popisuje, kde získat přístup k účetnímu výkaznictví v Microsoft Dynamics 365 for Operations a jak používat finanční možnosti vytváření sestav. Obsahuje popis výchozích finančních sestav, které jsou k dispozici."
+description: "Toto téma popisuje, kde získat přístup k finančnímu výkaznictví v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition a jak používat příslušné funkce. Obsahuje popis výchozích finančních sestav, které jsou k dispozici."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 39db754df7edeca414752ce1844d7f9e85df0b36
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: fedde78a563939fd7080e748c412c89c71586823
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,12 +31,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje, kde získat přístup k účetnímu výkaznictví v Microsoft Dynamics 365 for Operations a jak používat finanční možnosti vytváření sestav. Obsahuje popis výchozích finančních sestav, které jsou k dispozici.
+Toto téma popisuje, kde získat přístup k finančnímu výkaznictví v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition a jak používat příslušné funkce. Obsahuje popis výchozích finančních sestav, které jsou k dispozici.
 
 <a name="accessing-financial-reporting"></a>Přístup k finančnímu výkaznictví
 -----------------------------
 
-Nabídku **Finanční vykazování** najdete na následujících místech v aplikaci Dynamics 365 for Operations:
+Nabídku **Finanční výkaznictví** najdete v aplikaci Finance and Operations na těchto místech:
 
 -   **Hlavní kniha** &gt; **Dotazy a sestavy**
 -   **Rozpočet** &gt; **Dotazy a sestavy** &gt; **Základní rozpočtování**
@@ -83,7 +83,7 @@ Funkce finančního vykazování jsou k dispozici pro uživatele, kteří mají 
 Jakmile je uživatel přidán nebo se změní role, měl by mít uživatel během několika minut možnost přístupu k finančnímu výkaznictví. **Poznámka:** Role sysadmin je přidána do všech rolí ve finančních výkazech.
 
 ## <a name="default-reports"></a>Výchozí sestavy
-Finanční vykazování poskytuje 22 výchozích finančních výkazů. Každá sestava používá výchozí kategorie hlavního účtu v aplikaci Dynamics 365 for Operations. Tyto sestavy lze použít tak, jak jsou, nebo slouží jako výchozí bod vaše potřeby finančního vykazování. Kromě tradiční finančních výkazů, například výkaz zisků a ztrát nebo rozvaha, tyto výchozí sestavy zahrnují sestavy, které zobrazují různé typy finančních výkazů, které je možné vytvořit. Každá sestava v následující tabulce odkazuje na prezentaci aplikace Office Mix o sestavě.
+Finanční vykazování poskytuje 22 výchozích finančních výkazů. Každý výkaz používá výchozí kategorie hlavního účtu v aplikaci Finance and Operations. Tyto sestavy lze použít tak, jak jsou, nebo slouží jako výchozí bod vaše potřeby finančního vykazování. Kromě tradiční finančních výkazů, například výkaz zisků a ztrát nebo rozvaha, tyto výchozí sestavy zahrnují sestavy, které zobrazují různé typy finančních výkazů, které je možné vytvořit. Každá sestava v následující tabulce odkazuje na prezentaci aplikace Office Mix o sestavě.
 
 | Výchozí sestava                                                                                         | popis                                                                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -114,7 +114,7 @@ Finanční vykazování poskytuje 22 výchozích finančních výkazů. Každá 
 Po kliknutí na nabídku **Finanční vykazování** se zobrazí seznam výchozí finančních výkazů pro danou společnost. Poté můžete otevřít nebo upravit sestavu. Chcete-li otevřít jednu z výchozích sestav, vyberte název sestavy. Při prvním otevření se sestava automaticky generuje pro předchozí měsíc. Například pokud otevřete sestavu poprvé v srpnu 2016, je sestava generována pro 31. července 2016. Po otevření sestavy můžete začít s prohlížením rozbalením specifických částí dat a změnou možností sestavy.
 
 ## <a name="creating-and-modifying-financial-reports"></a>Vytváření a úpravy finančních výkazů
-Ze seznamu finančních výkazů lze vytvořit novou sestavu nebo upravit existující sestavu. Pokud máte příslušná oprávnění, můžete vytvořit novou finanční sestavu klepnutím na **Nové** v podokně akcí. Program Sestava návrháře se stáhne do zařízení. Po spuštění Návrháře sestavy pak můžete vytvořit novou sestavu. Po uložení nové sestavy se zobrazí v seznamu finančních výkazů. V seznamu se zobrazí pouze sestavy, které byly vytvořeny pro společnost, kterou právě používáte v aplikaci Dynamics 365 for Operations. Další informace o procesu vytváření a úprav finančních sestav v Dynamics 365 for Operations uvádí tyto [příspěvky blogu](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) z blogu finančního výkaznictví Dynamics. **Poznámka:** Počítač, do kterého stahujete klienta návrháře sestav musí mít nainstalovanou verzi 4.6.2 rozhraní Microsoft .NET Framework. Tuto verzi rozhraní Microsoft .NET Framework si můžete stáhnout a nainstalovat [zde](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Pokud používáte Chrome, je nutné nainstalovat rozšíření ClickOnce, abyste mohli stáhnout klienta návrháře sestav. Pokud používáte režim incognito, zkontrolujte, zda že je povoleno rozšíření ClickOnce pro režim incognito. Také lze upravit sestavu, která se zobrazí v seznamu finančních výkazů. Jakmile se vybere oblast kolem názvu sestavy, klikněte na tlačítko **Upravit** v podokně akcí. Spustí se program Návrhář sestav.
+Ze seznamu finančních výkazů lze vytvořit novou sestavu nebo upravit existující sestavu. Pokud máte příslušná oprávnění, můžete vytvořit novou finanční sestavu klepnutím na **Nové** v podokně akcí. Program Sestava návrháře se stáhne do zařízení. Po spuštění Návrháře sestavy pak můžete vytvořit novou sestavu. Po uložení nové sestavy se zobrazí v seznamu finančních výkazů. V seznamu se zobrazí pouze sestavy, které byly vytvořeny pro společnost, kterou právě používáte v aplikaci Finance and Operations. Další informace o procesu vytváření a úprav finančních výkazů v aplikaci Finance and Operations najdete v těchto [příspěvcích](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) na blogu finančního výkaznictví Dynamics. **Poznámka:** Počítač, do kterého stahujete klienta návrháře sestav musí mít nainstalovanou verzi 4.6.2 rozhraní Microsoft .NET Framework. Tuto verzi rozhraní Microsoft .NET Framework si můžete stáhnout a nainstalovat [zde](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Pokud používáte Chrome, je nutné nainstalovat rozšíření ClickOnce, abyste mohli stáhnout klienta návrháře sestav. Pokud používáte režim incognito, zkontrolujte, zda že je povoleno rozšíření ClickOnce pro režim incognito. Také lze upravit sestavu, která se zobrazí v seznamu finančních výkazů. Jakmile se vybere oblast kolem názvu sestavy, klikněte na tlačítko **Upravit** v podokně akcí. Spustí se program Návrhář sestav.
 
 <a name="see-also"></a>Viz také
 --------

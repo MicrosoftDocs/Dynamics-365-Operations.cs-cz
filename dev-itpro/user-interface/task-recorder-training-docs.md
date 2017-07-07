@@ -3,7 +3,7 @@ title: "Vytváření dokumentace nebo školení pomocí záznamu úkolů"
 description: "Toto téma vysvětluje, co je Záznamník úkolů a průvodci záznamem úloh, jak vytvořit nahrávky úkolů a jak přizpůsobit průvodce záznamem úloh Microsoft a zahrnout je do nápovědy."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8b44dc66cdcd1ede59cb9bb4ed05be27dd465599
+ms.sourcegitcommit: ee6d455c44a38d9b3962ca20a5cb28007c19cf1d
+ms.openlocfilehash: e71c2638caccb9a31c5254a3cf68c802808960b9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/17/2017
 
 
 ---
@@ -31,19 +31,22 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma vysvětluje, co je Záznamník úkolů a průvodci záznamem úloh, jak vytvořit nahrávky úkolů a jak přizpůsobit průvodce záznamem úloh Microsoft a zahrnout je do nápovědy.
+Toto téma vysvětluje, co je Záznamník úkolů a průvodci záznamem úloh, jak vytvořit nahrávky úkolů a jak přizpůsobit průvodce záznamem úloh pro produkty Unified Operations a zahrnout je do nápovědy.
+
+> [!IMPORTANT]
+> Nelze vytvořit vlastní průvodce záznamem úloh pro aplikaci Dynamics 365 for Talent. Systém nápovědy pro aplikaci Talent se automaticky připojí k průvodcům záznamem úloh pro produkt. 
 
 <a name="learn-about-task-recorder"></a>Informace o Záznamníku úkolů
 -------------------------
 
-Záznamník úkolů je nástroj aplikace Microsoft Dynamics 365 for Operations, který umožňuje zaznamenat akce prováděné v uživatelském rozhraní produktu. Při použití Záznamníku úkolů jsou zaznamenány všechny události prováděné v uživatelském rozhraní, které jsou spouštěny na serveru, včetně přidání hodnot, změny nastavení a odebrání dat. Kroky, které zaznamenáte, jsou souhrnně označovány termínem *záznam úkolu*. Záznamy úloh lze používat mnoha způsoby:
+Záznamník úkolů je nástroj aplikace Dynamics AX, který umožňuje zaznamenat akce prováděné v uživatelském rozhraní produktu. Při použití Záznamníku úkolů jsou zaznamenány všechny události prováděné v uživatelském rozhraní, které jsou spouštěny na serveru, včetně přidání hodnot, změny nastavení a odebrání dat. Kroky, které zaznamenáte, jsou souhrnně označovány termínem *záznam úkolu*. Záznamy úloh lze používat mnoha způsoby:
 
--   **Záznamy úkolů lze přehrát jako průvodce úkolem.** Průvodci záznamem úloh jsou nedílnou součástí prostředí nápovědy Dynamics 365 for Operations. Průvodce záznamem úloh je kontrolovaný, řízený a interaktivní způsob, který vás provede kroky daného úkolu nebo obchodního procesu. Uživatel obdrží pokyny k dokončení jednotlivých kroků pomocí je místních výzev (nebo "bublin"), která se zobrazí v uživatelském rozhraní a odkazují na prvek uživatelského rozhraní, který musí uživatel použít. Bublina obsahuje také informace o tom, jak pracovat s prvkem, jako je "Klepněte sem" nebo "Do tohoto pole zadejte hodnotu." Spouští se v rámci aktuální datové sady uživatele a dat, která jsou zadána a uložena v prostředí uživatele.
+-   **Záznamy úkolů lze přehrát jako průvodce úkolem.** Průvodci záznamem úloh jsou nedílnou součástí prostředí nápovědy. Průvodce záznamem úloh je kontrolovaný, řízený a interaktivní způsob, který vás provede kroky daného úkolu nebo obchodního procesu. Uživatel obdrží pokyny k dokončení jednotlivých kroků pomocí je místních výzev (nebo "bublin"), která se zobrazí v uživatelském rozhraní a odkazují na prvek uživatelského rozhraní, který musí uživatel použít. Bublina obsahuje také informace o tom, jak pracovat s prvkem, jako je "Klepněte sem" nebo "Do tohoto pole zadejte hodnotu." Spouští se v rámci aktuální datové sady uživatele a dat, která jsou zadána a uložena v prostředí uživatele.
 -   **Záznamy úloh lze zobrazit jako kroky postupu v podokně nápovědy.** Podokno nápovědy lze použít k hledání a zobrazení záznamů úloh. Do podokna Nápověda můžete přejít kliknutím na ikonu **?** v horním navigačním pruhu nebo můžete použít klávesové zkratky, **Ctrl + Shift +?**. Kroky záznamu úkolu si můžete přečíst v podokně nápovědy nebo můžete zvolit přehrání záznamu jako průvodce úkolem, který vás provede uživatelským rozhraním.
--   **Záznamy úkolů lze uložit do BPM.** Záznam úkolu lze uložit na řádek hierarchie v knihovně modulu Modelování podnikových procesů (MPC) ve službě Lifecycle Services (LCS). Seznam kroků a vývojový diagram podnikového procesu bude vygenerován ze záznamu. Záznamy úkolů, které byly uloženy do knihovny BPM, lze v aplikaci Dynamics 365 for Operations zobrazit jako nápovědu.
+-   **Záznamy úkolů lze uložit do BPM.** Záznam úkolu lze uložit na řádek hierarchie v knihovně modulu Modelování podnikových procesů (MPC) ve službě Lifecycle Services (LCS). Seznam kroků a vývojový diagram podnikového procesu bude vygenerován ze záznamu. Záznamníky úkolů, které byly uloženy do knihovny BPM, lze zobrazit jako nápovědu.
 -   **Záznamy úkolů lze uložit jako dokumenty Word.** Tímto způsobem lze snadno vytvářet tisknutelné přepisy školení.
 
-Můžete vytvořit vlastní záznamy úkolů, přehrávat záznamy úkolů poskytované společností Microsoft nebo upravovat záznamy úkolů poskytované společností Microsoft podle konfigurace. Další informace o záznamníku úloh viz [Záznamník úloh v Dynamics 365 for Operations](task-recorder.md).
+Můžete vytvořit vlastní záznamy úkolů, přehrávat záznamy úkolů poskytované společností Microsoft nebo upravovat záznamy úkolů poskytované společností Microsoft podle konfigurace. Další informace o Záznamníku úkolů naleznete v tématu [Záznamník úloh](task-recorder.md).
 
 ## <a name="plan-your-task-recording"></a>Plánování záznamu úkolů
 Při vytváření nového záznamu úkolů nebo založení záznamu na záznamů úkolů Microsoft mějte na paměti následující informace.
@@ -83,7 +86,7 @@ Toto je vzhled poznámky v bublině v průvodci záznamem úloh.
 
 [![screen4](./media/screen4.png)](./media/screen4.png)
 
--   **Krok Informace**: Tyto poznámky se vytvářejí kliknutím pravým tlačítkem na ovládací prvek nebo na libovolné místo ve formuláři &lt; **Záznamník úloh** &lt; **Přidat informační krok. ** Informační kroky se zobrazují v jakémkoli kroku vložení, i když nebyla zaznamenána žádná akce v uživatelském rozhraní. Můžete přidat krok informací na úrovni formuláře nebo krok informací přidružený k ovládacímu prvku. Je-li krok informací přidružen k formuláři, zobrazí se "bublina" průvodce úkolem jinde ve formuláři, bez ukazatele, když je přehráván průvodce úkolem. Je-li informační krok přidružen k formuláři, bude "bublina" průvodce záznamem úloh odkazovat na ovládací prvek, kde se průvodce záznamem úloh přehrává. V podokně Nápověda se poznámka informačního kroku zobrazuje jako očíslovaný krok s jakýmkoli zadaným textem. Kroky informací slouží k přípravě uživatele na následující kroky, k popisu kroků, které je třeba provést mimo aplikaci Dynamics 365 for Operations, nebo pro účely odkazování na jiné záznamy (však v poznámkách nelze vytvořit hypertextové odkazy).
+-   **Krok Informace**: Tyto poznámky se vytvářejí kliknutím pravým tlačítkem na ovládací prvek nebo na libovolné místo ve formuláři &lt; **Záznamník úloh** &lt; **Přidat informační krok. ** Informační kroky se zobrazují v jakémkoli kroku vložení, i když nebyla zaznamenána žádná akce v uživatelském rozhraní. Můžete přidat krok informací na úrovni formuláře nebo krok informací přidružený k ovládacímu prvku. Je-li krok informací přidružen k formuláři, zobrazí se "bublina" průvodce úkolem jinde ve formuláři, bez ukazatele, když je přehráván průvodce úkolem. Je-li informační krok přidružen k formuláři, bude "bublina" průvodce záznamem úloh odkazovat na ovládací prvek, kde se průvodce záznamem úloh přehrává. V podokně Nápověda se poznámka informačního kroku zobrazuje jako očíslovaný krok s jakýmkoli zadaným textem. Kroky informací slouží k přípravě uživatele na následující kroky, k popisu kroků, které je třeba provést mimo aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, nebo pro účely odkazování na jiné záznamy (i když v poznámkách nelze vytvořit hypertextové odkazy).
 
 **Určete, jak dlouho budete záznam provádět**
 
@@ -101,7 +104,7 @@ Podrobný přehled kroků naleznete v tématu [Vytvoření záznamu úkolu](task
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopírování a přizpůsobení záznamu úkolů společnosti Microsoft
 Můžete stáhnout a upravovat záznamy úkolů společnosti Microsoft a použít je pro vlastní dokumentaci k nápovědě nebo výukové materiály. Při stažení záznamu úkolu Microsoft postupujte takto:
 
-1.  Otevřete záznamník úkolů v aplikaci Dynamics 365 for Operations Záznamník úkolů se nachází v nabídce **Nastavení**.
+1.  Otevřete záznamník úloh. Záznamník úkolů se nachází v nabídce **Nastavení**.
 2.  V podokně Záznamník úkolů klikněte na tlačítko **Udržovat záznam.**
 3.  V části **Kde je záznam** klikněte na tlačítko **Nachází se v knihovně LCS**.
 4.  Klikněte na možnost **Vybrat knihovnu LCS**.
@@ -119,18 +122,13 @@ Chcete-li zobrazovat vlastní záznamy úkolů v podokně nápovědy, aby je byl
 <a name="see-also"></a>Viz také
 --------
 
-[Nápověda aplikace Dynamics 365 for Operations](..\get-started\help-overview.md)
+[Přehled nápovědy](..\get-started\help-overview.md)
 
 [Připojení nápovědy](..\get-started\help-connect.md)
 
-[Záznamník úkolů v Dynamics 365 for Operations](task-recorder.md)
+[Záznamník úkolů](task-recorder.md)
 
 [Nedávno přidané funkce úprav v Záznamníku úkolů](\core\get-started\recently-added-editing-features-in-task-recorder)
 
-[Vytvoření nových knihoven pro školení pro aplikaci Dynamics AX v rámci služby Lifecycle Services pomocí Záznamníku úloh (externí odkaz)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
-
 [Vytvořit témata nápovědy ve formátu RTF pomocí Záznamníku úkolů (externí odkaz)](https://mbspartner.microsoft.com/AX/Videos/970)
-
-
-
 

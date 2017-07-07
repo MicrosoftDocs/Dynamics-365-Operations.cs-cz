@@ -3,14 +3,14 @@ title: "Místa určení elektronického výkaznictví"
 description: "Pro každou konfiguraci formátu elektronického výkaznictví (ER) a její komponenty (složku nebo soubor) lze konfigurovat cíl. Uživatelé, kterým jsou udělena přístupová práva, mohou také měnit nastavení cíle v době běhu. Tento článek popisuje správu cílů EV, typy podporovaných cílů a důležité informace o zabezpečení."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5fb008420f82abd7983ee26854f84330705c0c01
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: fb2aeee1f38823e7ea96071f773e8448d65ba8ff
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -36,9 +36,9 @@ Pro každou konfiguraci formátu elektronického výkaznictví (ER) a její komp
 Konfigurace formátu pro Elektronické výkaznictví (EV) obvykle obsahuje alespoň jednu součást výstupu: soubor. Konfigurace obvykle obsahují více součástí výstupního souboru různých typů (například XML, TXT nebo XLSX), které jsou seskupeny do buď jedné složky nebo více složek. Správa destinací EV umožňuje předem nastavit, co se stane při spuštění každé ze součástí. Ve výchozím nastavení se při spuštění konfigurace uživateli zobrazí dialogové okno, které umožní uživateli uložit nebo otevřít soubor. Stejné chování se také používá při importu konfigurace EV, když pro ně nechcete konfigurovat žádné konkrétní cíle. Po vytvoření cíle pro hlavní součást výstupu daný cíl potlačí výchozí chování a soubor nebo složka je odeslána podle nastavení cíle.
 
 ## <a name="availability-and-general-prerequisites"></a>Dostupnost a obecné požadavky
-Funkce cílů EV není k dispozici ve verzi Microsoft Dynamics 365 for Operations 7.0 (únor 2016). Proto je třeba nainstalovat Microsoft Dynamics 365 for Operations (verze z listopadu 2016), abyste mohli použít všechny funkce, které jsou popsány v tomto tématu. Případně můžete nainstalovat jeden z následujících požadovaných softwarů. Upozorňujeme však, že tyto alternativy poskytují omezené možnosti cíle ER.
+Funkce cíle elektronického výkaznictví není k dispozici ve verzi Microsoft Dynamics AX 7.0 (únor 2016). Proto je třeba nainstalovat Microsoft Dynamics 365 for Operations verzi 1611 (listopad 2016), abyste mohli použít všechny funkce, které jsou popsány v tomto tématu. Případně můžete nainstalovat jeden z následujících požadovaných softwarů. Upozorňujeme však, že tyto alternativy poskytují omezené možnosti cíle ER.
 
--   Aplikace Microsoft Dynamics 365 for Operations, verze 7.0.1 (květen 2016)
+-   Aplikace Microsoft Dynamics AX verze 7.0.1 (květen 2016)
 -   [Opravy hotfix pro aktualizace](https://fix.lcs.dynamics.com/issue/results/?q=3160213) správy cílů EV
 
 Cíle můžete nastavit pouze pro konfigurace EV, které byly importovány, a u formátů, které jsou k dispozici na stránce **Konfigurace elektronického výkaznictví**.
@@ -61,7 +61,7 @@ Podporovány jsou různé typy cílů. Můžete zakázat nebo povolit všechny t
 
 ### <a name="email-destination"></a>E-mailový cíl
 
-Nastavením možnosti **Povoleno**na **Ano** odešlete výstupní soubor prostřednictvím e-mailu. Po povolení této možnosti můžete zadat příjemce e-mailů a upravit předmět a tělo e-mailové zprávy. Můžete nastavit konstantní texty pro předmět a tělo e-mailu nebo můžete použít ER vzorce k dynamickému vytvoření textů e-mailů. E-mailové adresy pro ER lze konfigurovat dvěma způsoby. Konfiguraci lze dokončit stejným způsobem, jakou ji dokončuje funkce správy tisku v aplikaci Dynamics 365 for Operations. Popřípadě můžete vyřešit e-mailovou adresu pomocí přímého odkazu na ER konfiguraci pomocí vzorce.
+Nastavením možnosti **Povoleno** na **Ano** odešlete výstupní soubor prostřednictvím e-mailu. Po povolení této možnosti můžete zadat příjemce e-mailů a upravit předmět a tělo e-mailové zprávy. Můžete nastavit konstantní texty pro předmět a tělo e-mailu nebo můžete použít ER vzorce k dynamickému vytvoření textů e-mailů. E-mailové adresy pro ER lze konfigurovat dvěma způsoby. Konfiguraci lze dokončit stejným způsobem, jakou ji dokončuje funkce správy tisku v aplikaci Finance and Operations. Popřípadě můžete vyřešit e-mailovou adresu pomocí přímého odkazu na ER konfiguraci pomocí vzorce.
 
 ### <a name="email-address-types"></a>Typy e-mailových adres
 
@@ -89,15 +89,15 @@ Použijte tento typ e-mailu, pokud má použitá konfigurace uzel ve zdrojích d
 
 [![Přiřazení zdroje dat e-mailové adresy k cíli e-mailu](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg) 
 
-**Poznámka:** Server SMTP (Simple Mail Transfer Protocol) musí být nakonfigurován a být dostupný. Váš server SMTP můžete určit v aplikaci Dynamics 365 for Operations v nabídce **Správa systému** &gt; **Nastavení** &gt; **E-mail** &gt; **Parametry e-mailu**.
+**Poznámka:** Server SMTP (Simple Mail Transfer Protocol) musí být nakonfigurován a být dostupný. Váš server SMTP můžete určit v aplikaci Finance and Operations v nabídce **Správa systému** &gt; **Nastavení** &gt; **E-mail** &gt; **Parametry e-mailu**.
 
 ### <a name="archive-destination"></a>Cíl archivace
 
-Tuto možnost můžete použít k odeslání výstupu do složky Microsoft SharePoint nebo Microsoft Azure Storage. Nastavením **Povoleno** na **Ano**dojde k odeslání výstupu do cíle, který je definován pro vybraný typ dokumentu. K dispozici pro výběr jsou pouze typy dokumentu, kde je skupina nastavena na **Soubor**. Typy dokumentů definujete v části **Správa organizace** &gt; **Správa dokumentů** &gt; **Typy dokumentů**. Konfigurace pro cíle EV je stejná, jako nastavení pro systém správy dokumentů.
+Tuto možnost můžete použít k odeslání výstupu do složky Microsoft SharePoint nebo Microsoft Azure Storage. Nastavením **Povoleno** na **Ano** dojde k odeslání výstupu do cíle, který je definován pro vybraný typ dokumentu. K dispozici pro výběr jsou pouze typy dokumentu, kde je skupina nastavena na **Soubor**. Typy dokumentů definujete v části **Správa organizace** &gt; **Správa dokumentů** &gt; **Typy dokumentů**. Konfigurace pro cíle EV je stejná, jako nastavení pro systém správy dokumentů.
 
 [![Stránka typu dokumentu](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
 
-Umístění určuje, kde bude soubor uložen. Po povolení cíle **Archiv** lze výsledky spuštění konfigurace uložit do archivu úloh. Výsledky můžete zobrazit pod **Správa organizace** &gt; **Elektronické výkaznictví** &gt; **Archivované úlohy elektronického výkaznictví**. **Poznámka:** Můžete vybrat typ dokumentu pro archiv úloh v aplikaci Dynamics 365 for Operations pod **Správa organizace** &gt; **Pracovní prostory** &gt; **Elektronické výkaznictví** &gt; **Parametry elektronického výkaznictví**.
+Umístění určuje, kde bude soubor uložen. Po povolení cíle **Archiv** lze výsledky spuštění konfigurace uložit do archivu úloh. Výsledky můžete zobrazit pod **Správa organizace** &gt; **Elektronické výkaznictví** &gt; **Archivované úlohy elektronického výkaznictví**. **Poznámka:** Můžete vybrat typ dokumentu pro archiv úloh v aplikaci Finance and Operations pod **Správa organizace** &gt; **Pracovní prostory** &gt; **Elektronické výkaznictví** &gt; **Parametry elektronického výkaznictví**.
 
 #### <a name="sharepoint"></a>SharePoint
 
@@ -119,7 +119,7 @@ Nastavíte-li **Povoleno** na **Ano**, vytvoří se náhled výstupu. Některé 
 
 ### <a name="power-bi-destination"></a>Cíl Power BI
 
-Nastavte **Povoleno** na **Ano** pro použití vaší konfigurace elektronického vykazování (ER) k uspořádání přenosu dat z instance aplikace Dynamics 365 for Operations do služeb Microsoft Power BI. Převedené soubory se ukládají na instanci serveru Microsoft SharePoint, který musí být konfigurován pro tento účel. Více informací naleznete v tématu [Použití konfigurace elektronického výkaznictví k poskytnutí dat z aplikace Dynamics 365 for Operations do Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md) **Tip:** Chcete-li přepsat výchozí chování (tj. dialogové okno pro konfiguraci), můžete vytvořit odkaz cíle a cíl souboru pro součást hlavního výstupu, a potom zakázat všechny cíle.
+Nastavte **Povoleno** na **Ano** pro použití vaší konfigurace elektronického výkaznictví k uspořádání přenosu dat z instance aplikace Finance and for Operations do služeb Microsoft Power BI. Převedené soubory se ukládají na instanci serveru Microsoft SharePoint, který musí být konfigurován pro tento účel. Více informací získáte v části [Použití konfigurace elektronického výkaznictví k poskytnutí dat do Power BI z aplikace Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md) **Tip:** Chcete-li přepsat výchozí chování (tj. dialogové okno pro konfiguraci), můžete vytvořit odkaz cíle a cíl souboru pro součást hlavního výstupu, a potom zakázat všechny cíle.
 
 ## <a name="security-considerations"></a>Na co brát ohled při zabezpečení
 Pro cíle EV se používají dva typy oprávnění a povinností. Jeden typ ovládá schopnost udržovat celkové cíle, které jsou nakonfigurovány pro právnickou osobu (to znamená, že kontroluje přístup ke stránce **Cíle elektronického výkaznictví**). Druhý typ určuje, zda uživatel aplikace může přepsat v době běhu nastavení cíle, které upravil vývojář EV nebo funkční konzultant EV.

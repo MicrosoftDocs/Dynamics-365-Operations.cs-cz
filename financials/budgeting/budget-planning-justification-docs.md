@@ -3,13 +3,13 @@ title: "Dokumenty odůvodnění plánování budgetu"
 description: "Dokumenty odůvodnění poskytují komentáře pro osoby požadující rozpočet k vysvětlení, proč je konkrétní rozpočet nezbytný."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 259594
 ms.assetid: 52576fad-32b9-48f2-8197-c11ec313fc29
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6178addb9226912feb1974793525ab4ba9441193
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1d23c0e1725a39d25d2be8971f541b2c31bbe859
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -46,7 +46,7 @@ Dokumenty odůvodnění poskytují komentáře pro osoby požadující rozpočet
 
 1.  Klikněte na tlačítko **Návrh** v doplňku Microsoft Dynamics Office poté, co se přihlásíte.
 2.  Pro informace záhlaví použijte tlačítko **Přidat pole**.
-3.  Vyberte zdroj dat entity BudgetPlanJustification a klikněte na **Další**. **Poznámka:** Tato entita je vyžadována pro každý dokument odůvodnění. Ostatní entity lze použít, ale odeslání zpět do aplikace Microsoft Dynamics 365 for Operations se nezdaří, pokud není tato entita zahrnuta.
+3.  Vyberte zdroj dat entity BudgetPlanJustification a klikněte na **Další**. **Poznámka:** Tato entita je vyžadována pro každý dokument odůvodnění. Ostatní entity lze použít, ale odeslání zpět do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition se nezdaří, pokud není tato entita zahrnuta.
 4.  Přidejte popisky BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter a DocumentNumber do dokumentu aplikace Word. **Poznámka:** V případě potřeby můžete použít vlastní popisky, spíše než standardní popisky.
 5.  Klikněte na **Hotovo** pro dokončení části záhlaví.
 6.  Pro získání podrobností o částkách plánu rozpočtu na úrovni řádků klikněte na tlačítko **Přidat tabulku**.
@@ -57,7 +57,7 @@ Dokumenty odůvodnění poskytují komentáře pro osoby požadující rozpočet
 
 ##### <a name="set-up-the-budget-planning-process-to-use-the-justification-template"></a>Nastavení procesu plánování rozpočtu pro použití šablony odůvodnění
 
-1.  V aplikaci Microsoft Dynamics 365 for Operations přejděte na **Rozpočtování** &gt; **Nastavení** &gt; **Plánování rozpočtu** &gt; **Šablony dokumentů odůvodnění**.
+1.  V aplikaci Finance and Operations přejděte na **Rozpočtování** &gt; **Nastavení** &gt; **Plánování rozpočtu** &gt; **Šablony dokumentů odůvodnění**.
 2.  Klikněte na tlačítko **Nový** a přejděte do nově vytvořeného dokumentu aplikace Microsoft Word.
 3.  Zadejte název a popis zobrazení šablony. Klikněte na tlačítko **OK**.
 4.  Přejděte do **Rozpočtování** &gt; **Nastavení** &gt; **Plánování** **rozpočtu** &gt; **Proces plánování rozpočtu**.
@@ -66,7 +66,7 @@ Dokumenty odůvodnění poskytují komentáře pro osoby požadující rozpočet
 
 ##### <a name="edit-and-save-personalized-justification-documents"></a>Upravte a uložte přizpůsobené dokumenty odůvodnění.
 
-1.  V aplikaci Dynamics 365 for Operations vytvořte nový plán rozpočtu nebo otevřete existující plán rozpočtu.
+1.  V aplikaci Finance and Operations vytvořte nový plán rozpočtu nebo otevřete existující plán rozpočtu.
 2.  V rozevírací nabídce **Odůvodnění** vyberte **Vytvořit nové odůvodnění**.
 3.  Po vyplnění podrobností vyberte z rozevírací nabídky **Odůvodnění** možnost odeslání přizpůsobeného dokumentu.
 

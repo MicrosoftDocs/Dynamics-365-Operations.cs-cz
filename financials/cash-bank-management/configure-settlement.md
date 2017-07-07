@@ -3,7 +3,7 @@ title: "Konfigurace vyrovnání"
 description: "To, jak a kdy jsou transakce vyrovnány, může být poměrně složité, proto je nutné pochopit a správně definovat parametry pro splnění požadavků společnosti. Tento článek popisuje parametry, které se používají k vyrovnání pro závazky i pohledávky."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2d3015004371aa041a7ee545df9a4c7f0e48ca31
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 059513de66827aa3a839b9eb06973ec4c1549f73
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -34,7 +34,7 @@ ms.lasthandoff: 05/25/2017
 
 To, jak a kdy jsou transakce vyrovnány, může být poměrně složité, proto je nutné pochopit a správně definovat parametry pro splnění požadavků společnosti. Tento článek popisuje parametry, které se používají k vyrovnání pro závazky i pohledávky. 
 
-Následující parametry ovlivní způsob zpracování vyrovnání v aplikaci Microsoft Dynamics 365 for Operations. Vyrovnání je proces vyrovnání faktury podle platbou nebo dobropisem. Tyto parametry jsou umístěny v oblasti **Vyrovnání** stránek **Parametry pohledávek** a **Parametry závazků**.
+Následující parametry ovlivní způsob zpracování vyrovnání v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Vyrovnání je proces vyrovnání faktury podle platbou nebo dobropisem. Tyto parametry jsou umístěny v oblasti **Vyrovnání** stránek **Parametry pohledávek** a **Parametry závazků**.
 
 -   **Automatické vyrovnání** – nastavte možnost na hodnotu **Ano**, má-li se transakce automaticky vyrovnat oproti otevřeným transakcím při zaúčtování. Je-li tato možnost je nastavena na hodnotu **Ne**, uživatelé mohou transakce vyrovnat ručně při zadávání plateb nebo později pomocí stránky **Vyrovnat transakce**.
 -   **Správa platební slevy** – zadejte způsob [zpracování platební slevy při přeplacení faktury](cash-discount-handling-overpayments.md). U přeplatku lze platební slevu snížit, považovat za rozdíl nebo ponechat na účtu pro dodavatele nebo odběratele.

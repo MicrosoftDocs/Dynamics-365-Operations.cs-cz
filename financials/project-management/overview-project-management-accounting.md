@@ -3,24 +3,24 @@ title: "Řízení a účetnictví projektů"
 description: "Funkci řízení projektu a účetnictví lze použít v několika odvětvích k poskytování služeb, výrobě produktů nebo dosažení výsledků."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 87983
 ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1a6235f36af6dfb2f4164405d384f13a7c1cde06
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 12afcde947463b3abf58dea6138653a32dcda6f1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -37,7 +37,7 @@ Projektu je skupina aktivit sloužící k poskytování služby, produkci produk
 ## <a name="projects-across-industries"></a>Projekty napříč odvětvími
 Řízení projektu a funkce účetnictví lze použít v několika průmyslových odvětvích, jak je zachyceno v následujícím obrázku. [![Projekty napříč odvětvími](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-V kontaktnímu středisku lze příkaz použít k popisu sady akcí, které jsou nutné při řešení volání. Konzultační společnosti, jako jsou například organizace pro management nebo technické konzultace nebo reklamní agentury, odkazují na svou činnost jako projekty. V marketingu kampaň představuje sadu práce, která musí být dodána. V projektové výrobě se výrobní zakázka týká různých prací, které je třeba provést, aby bylo možné vyrábět hotové zboží. Bez ohledu na označení tyto projekty zahrnují prostředky, kalendáře a náklady a funkce řízení projektu a účetnictví v aplikaci Microsoft Dynamics 365 for Operations vám mohou pomoci s plánováním, prováděním a analýzou těchto projektů.
+V kontaktnímu středisku lze příkaz použít k popisu sady akcí, které jsou nutné při řešení volání. Konzultační společnosti, jako jsou například organizace pro management nebo technické konzultace nebo reklamní agentury, odkazují na svou činnost jako projekty. V marketingu kampaň představuje sadu práce, která musí být dodána. V projektové výrobě se výrobní zakázka týká různých prací, které je třeba provést, aby bylo možné vyrábět hotové zboží. Bez ohledu na označení tyto projekty zahrnují prostředky, kalendáře a náklady a funkce řízení projektu a účetnictví v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition vám mohou pomoci s plánováním, prováděním a analýzou těchto projektů.
 
 ## <a name="project-phases"></a>Fáze projektu
 Ačkoli je následující postup určen pro externí projekty nebo projekty dokončené pro jednoho či více zákazníků, funkce platí i pro interní nákladové projekty. 
@@ -75,11 +75,11 @@ Další informace naleznete v tématu [Strukturované rozpisy prací](work-break
 
 ### <a name="create-project-forecasts-and-budgets"></a>Vytvoření projektových prognóz a rozpočtů
 
-Prognózu můžete použít, má-li vaše organizace operační perspektivu a zaměřuje se na výnosy a náklady, které jsou odvozeny od specifických transakcí. Pokud se však vaše organizace více zaměřuje na finanční částky, můžete použít rozpočtování. Každá metoda má své výhody. Další informace naleznete v tématu [Prognózy a rozpočty projektu](project-forecasts-budgets.mdhttps:/ax.help.dynamics.com/en/wiki/project-forecasts-and-budgets/).
+Prognózu můžete použít, má-li vaše organizace operační perspektivu a zaměřuje se na výnosy a náklady, které jsou odvozeny od specifických transakcí. Pokud se však vaše organizace více zaměřuje na finanční částky, můžete použít rozpočtování. Každá metoda má své výhody. Další informace naleznete v tématu [Prognózy a rozpočty projektu](project-forecasts-budgets.md).
 
 ### <a name="create-projects"></a>Vytvořit projekty
 
-V Microsoft Dynamics 365 for Operations můžete vytvořit šest typů projektů. Každý typ projektu je nastaven jinak pro rozpoznávání výnosů a nákladů. Vybraný typ projektu závisí na jeho účelu. V následující tabulce je popsán typický příklad použití všech typů projektů.
+V aplikaci Microsoft Finance and Operations můžete vytvořit šest typů projektů. Každý typ projektu je nastaven jinak pro rozpoznávání výnosů a nákladů. Vybraný typ projektu závisí na jeho účelu. V následující tabulce je popsán typický příklad použití všech typů projektů.
 
                                                                                                                                                                          |
 | Typ projektu      | Popis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -118,7 +118,7 @@ Další informace naleznete v tématu [Strukturované rozpisy prací](work-break
 
 Existují dva způsoby, jak spravovat a řídit projekty: prognózy projektu a rozpočty projektu. Prognózu můžete použít, má-li vaše organizace operační perspektivu a zaměřuje se na výnosy a náklady, které jsou odvozeny od specifických transakcí. Pokud se však vaše organizace více zaměřuje na finanční částky, můžete použít rozpočtování.
 
-Další informace naleznete v tématu [Prognózy a rozpočty projektu](project-forecasts-budgets.mdhttps:/ax.help.dynamics.com/en/wiki/project-forecasts-and-budgets/).
+Další informace naleznete v tématu [Prognózy a rozpočty projektu](project-forecasts-budgets.md).
 
 ### <a name="create-production-orders"></a>Vytvoření výrobní zakázky
 
@@ -210,7 +210,7 @@ Další informace o zpracování faktur projektu naleznete v tématu [Fakturace 
 
 ### <a name="calculate-the-cost-to-complete-a-project"></a>Výpočet nákladů na dokončení projektu
 
-Při vytváření odhadu můžete zvolit metodu, která se použije k výpočtu nákladů na dokončení projektu. Vyberte metodu v poli **Metoda nákladů na dokončení**na stránce **Vytvořit odhad**. Vybraná metoda se použije samostatné v každém řádku nákladů v odhadu nákladů. Když je řádek ve stavu **Vytvořeno**, můžete změnit metodu, která se použije na stránce **Odhad nákladů**. 
+Při vytváření odhadu můžete zvolit metodu, která se použije k výpočtu nákladů na dokončení projektu. Vyberte metodu v poli **Metoda nákladů na dokončení** na stránce **Vytvořit odhad**. Vybraná metoda se použije samostatné v každém řádku nákladů v odhadu nákladů. Když je řádek ve stavu **Vytvořeno**, můžete změnit metodu, která se použije na stránce **Odhad nákladů**. 
 
 V následující tabulce jsou popsány metody pro výpočet nákladů na dokončení projektu.
 
@@ -228,7 +228,7 @@ V následující tabulce jsou popsány metody pro výpočet nákladů na dokonč
 <tbody>
 <tr class="odd">
 <td>Celkové náklady – skutečné</td>
-<td>Odhadované náklady je nutné zadat ručně. Po vyplnění sloupce <strong>Celkové náklady</strong> nebo <strong>Celkové množství</strong> na stránce <strong>Odhad nákladů </strong>se skutečné náklady odečtou od součtů zadaných uživatelem. Výsledek představuje náklady na dokončení projektu. Průběh nákladů se obvykle nesleduje na základě například počtu hotelových pobytů a nákladů na stravování zaznamenaných v každém období. Namísto. Sledování je obvykle založeno na porovnání s celkovou částkou odhadovaných hodin. Tato metoda nevyžaduje model prognózy a celkové náklady nebo celkové množství lze změnit ručně. Když se zadá hodnota ve sloupci <strong>Celkové náklady</strong> nebo <strong>Celkové množství</strong>, Microsoft Dynamics 365 for Operations porovnává tuto hodnotu se skutečnými transakcemi, které jsou zaúčtovány v období, a potom snižuje hodnotu ve sloupci <strong>Množství k dokončení</strong> nebo <strong>Náklady na dokončení</strong>.</td>
+<td>Odhadované náklady je nutné zadat ručně. Po vyplnění sloupce <strong>Celkové náklady</strong> nebo <strong>Celkové množství</strong> na stránce <strong>Odhad nákladů </strong>se skutečné náklady odečtou od součtů zadaných uživatelem. Výsledek představuje náklady na dokončení projektu. Průběh nákladů se obvykle nesleduje na základě například počtu hotelových pobytů a nákladů na stravování zaznamenaných v každém období. Namísto. Sledování je obvykle založeno na porovnání s celkovou částkou odhadovaných hodin. Tato metoda nevyžaduje model prognózy a celkové náklady nebo celkové množství lze změnit ručně. Když se zadá hodnota ve sloupci <strong>Celkové náklady</strong> nebo <strong>Celkové množství</strong>, aplikace Finance and Operations porovnává tuto hodnotu se skutečnými transakcemi, které jsou zaúčtovány v období, a potom snižuje hodnotu ve sloupci <strong>Množství k dokončení</strong> nebo <strong>Náklady na dokončení</strong>.</td>
 </tr>
 <tr class="even">
 <td>Celkový rozpočet – skutečný</td>
@@ -238,7 +238,7 @@ V následující tabulce jsou popsány metody pro výpočet nákladů na dokonč
 <li>Porovnejte transakce prognózy se skutečnými transakcemi.</li>
 <li>Zachovejte, snižte nebo zvyšte odhady pro další období.</li>
 </ol>
-Microsoft Dynamics 365 for Operations nesnižuje automaticky prognózované odhady. Je proto vhodné zachovat původní model prognózy projektu s pevnou cenou, aby se vytvořila základna pro srovnání při dokončení projektu. 
+Finance and Operations nesnižuje automaticky prognózované odhady. Je proto vhodné zachovat původní model prognózy projektu s pevnou cenou, aby se vytvořila základna pro srovnání při dokončení projektu. 
 > [!NOTE] Vyberete-li tuto metodu, použijte nejméně dva modely prognóz. Jeden model by měl obsahovat původní prognózy. Pro další model je třeba z jiného modelu zkopírovat transakce prognózy. Tato metoda je platná pouze pro projekty s pevnou cenou a pro investiční projekty.</td>
 > </tr>
 <tr class="odd">
@@ -333,7 +333,7 @@ Náklady, které vaše organizace vynaloží v průběhu projektu, lze sledovat 
 
 #### <a name="viewing-the-remaining-budgeted-amounts"></a>Zobrazení zbývajících rozpočtových částek
 
-Je-li vybrána možnost **Zbývající rozpočet**jako metoda řízení nákladů na stránce **Parametry modulu Řízení a účetnictví projektu**, stránka **Řízení nákladů** vypočte náklady, které nebyly zaúčtovány jako skutečné nebo označeny jako potvrzené. Konkrétně částky na kartě **Hlavní** v dolním podokně stránky **Řízení nákladů** se počítají následujícím způsobem:
+Je-li vybrána možnost **Zbývající rozpočet** jako metoda řízení nákladů na stránce **Parametry modulu Řízení a účetnictví projektu**, stránka **Řízení nákladů** vypočte náklady, které nebyly zaúčtovány jako skutečné nebo označeny jako potvrzené. Konkrétně částky na kartě **Hlavní** v dolním podokně stránky **Řízení nákladů** se počítají následujícím způsobem:
 
 -   **Skutečné náklady** – celková částka, která se utratila za projekt pro vybraný řádek nákladů. Částka skutečných nákladů se vypočítává na stránce **Aktualizace hlavní knihy**.
 -   **Potvrzené náklady** – další částky výdajů, které se právnická osoba zavázala platit. Konkrétní potvrzené nákladové částky se vypočítávají na stránce **Potvrzené náklady**.
@@ -357,7 +357,7 @@ Pokud je vybrána možnost **Celkový rozpočet** jako řídicí metoda náklad�
 -   **Potvrzené náklady** – celková částka, která se potvrdila za projekt pro vybraný řádek nákladů.
 -   **Odchylka** – rozdíl mezi součtem skutečných a potvrzených nákladů a celkových nákladů. Odchylka ukáže, zda je k celkovému rozpočtu nutné určit vedlejší náklady.
 
-Na stránce **Řízení nákladů** na kartě **Odchylky**si můžete prohlédnout rozdíl mezi celkovým rozpočtem a původním rozpočtem v následujících polích:
+Na stránce **Řízení nákladů** na kartě **Odchylky** si můžete prohlédnout rozdíl mezi celkovým rozpočtem a původním rozpočtem v následujících polích:
 
 -   **Původní rozpočet** – částka, která byla původně rozpočtovaná pro řádek nákladů. Původní rozpočet se vypočítává na stránce **Náhled hlavní knihy**.
 -   **Celkové náklady rozpočtu** – celkové náklady, která se původně rozpočtovaly pro řádek nákladů. Celkové náklady rozpočtu se vypočítávají na stránce **Náhled hlavní knihy**.
@@ -394,7 +394,7 @@ Při výpočtu míry využití pro pracovníka můžete použít normované hodi
 
 ### <a name="review-project-statements"></a>Zobrazení výkazů projektu
 
-Můžete vytvořit výkaz projektu, abyste zobrazili rychlý náhled vývoje projektu. Při spuštění výkazu projektu můžete zadat kritéria, která se používají pro výpočet výkazu, výběrem na kartě **Hlavní**na stránce **Příkazy projektu**. Můžete vybrat zahrnutí nebo vynechání následujících informací:
+Můžete vytvořit výkaz projektu, abyste zobrazili rychlý náhled vývoje projektu. Při spuštění výkazu projektu můžete zadat kritéria, která se používají pro výpočet výkazu, výběrem na kartě **Hlavní** na stránce **Příkazy projektu**. Můžete vybrat zahrnutí nebo vynechání následujících informací:
 
 -   Typy projektů
 -   Typy transakcí

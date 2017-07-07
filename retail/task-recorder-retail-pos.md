@@ -1,33 +1,35 @@
 ---
 title: "Záznamník úloh a nápověda pro POS"
-description: "Toto téma popisuje, jak používat záznamník úloh v Retail Modern POS (MPOS) a Cloud POS."
+description: "Toto téma popisuje, jak používat záznamník úloh v aplikacích Retail Modern POS (MPOS) a Cloud POS."
 author: mugunthanm
 manager: AnnBe
-ms.date: 2017-05-15
+ms.date: 06/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
+audience: Application User
 ms.reviewer: 41
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 1205393
 ms.assetid: 2f13e9cf-55b5-458b-8c32-3f8cd98c9ecf
 ms.search.region: Global
 ms.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3ca86a3353d3f613057dd77754266fc69975229f
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 007a7e8a34f3f5a2d0d18eb3955822a8fd8bdd0a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 ---
 
 # <a name="task-recorder-and-help-for-pos"></a>Záznamník úloh a nápověda pro POS
 
-Toto téma popisuje, jak používat záznamník úloh v Retail Modern POS (MPOS) a Cloud POS.
+Toto téma popisuje, jak používat záznamník úloh v aplikacích Retail Modern POS (MPOS) a Cloud POS.
 
 <a name="overview"></a>Přehled
 --------
@@ -38,13 +40,13 @@ Záznamník úloh v Retail Modern POS nebo Cloud POS je nové řešení, které 
 Záznamník úkolů může zaznamenávat akce uživatele v klientovi s přesnou věrností. Každý ovládací prvek je laděný tak, aby upozornil Záznamník úloh o provedení akce uživatele. Ovládací prvek oznámí Záznamníku úloh, že došlo k události, a předá všechny příslušné informace o odpovídající akci uživatele v reálném čase. Z těchto informací může Záznamník úloh zaznamenat typ akce uživatele (například kliknutí na tlačítko, zadání hodnoty nebo navigace) a veškerá data, která souvisí s akcí uživatele (například hodnota a typ vstupních dat, kontext formuláře nebo kontext záznamu). Záznamník úloh zachovává informace s dostatkem detailů k zajištění, že přehrávání nahrávky může provést nahrané akce přímo v pořadí, v jakém je uživatel provedl. (Přehrávání funkce není dosud implementováno v Retail modern POS nebo Cloud POS.)
 
 ## <a name="basic-configuration"></a>Základní konfigurace
-Pokud chcete zapnout nahrávání úloh v POS, postupujte takto:
+Pokud chcete zapnout nahrávání úloh v systému POS, postupujte takto:
 
-1.  Klikněte na **Maloobchodní a velkoobchodní prodej** &gt; **Instalace kanálu** &gt; **Nastavení POS** &gt; **Pokladny**.
+1.  Klikněte na tlačítko **Retail** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Pokladny**.
 2.  Klepněte na registr, pokud chcete povolit záznam úlohy.
 3.  Na kartě **Registr** na pevné záložce **Obecné** nastavte možnost **Povolit záznam úloh** na **Ano**.
 4.  Klikněte na možnost **Uložit**.
-5.  Přejděte do nabídky **Maloobchodní a velkoobchodní prodej** &gt; **Maloobchodní IT** &gt; **Distribuční plán**.
+5.  Přejděte do nabídky **Maloobchodní prodej** &gt; **Maloobchodní IT** &gt; **Distribuční plán**.
 6.  Vyberte úlohu **Registry (1090)** a klikněte na **Spustit**.
 
 ## <a name="create-a-recording"></a>Vytvoření záznamu
@@ -54,7 +56,9 @@ Tento postup slouží k vytvoření nového záznamu pomocí Záznamníku úloh.
 2.  Na stránce **Nastavení** v části **Záznamník úloh** klikněte na **Otevřít záznamník úloh**. Otevře se podokno **Záznamníku úloh**. Můžete kliknout na tlačítko **Zavřít** (**X**) v pravém horním rohu pro zavření podokna **Záznamník úkolů** před zahájením nového záznamu. K opětovnému otevření podokna zopakujte krok 2.
 [![Podokno Záznamník úloh](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
-3.  Zadejte jméno a popis pro nahrávky a poté klepněte na možnost **Spustit**. Relace záznamu začne hned po klepnutí na tlačítko **Spustit**. **Poznámka:** Pokud kliknete na tlačítko **Zavřít** (**X**) v pravém horním rohu v době, kdy probíhá nahrávání, podokno **Záznamník úloh** se zavře, ale relace nahrávání se neukončí. K opětovnému otevření podokna Záznamník úkolů klepněte na tlačítko Nápověda (otazník) v horní části obrazovky. 
+3.  Zadejte jméno a popis pro nahrávky a poté klepněte na možnost **Spustit**. Relace záznamu začne hned po klepnutí na tlačítko **Spustit**.
+
+**Poznámka:** Pokud kliknete na tlačítko **Zavřít** (**X**) v pravém horním rohu v době, kdy probíhá nahrávání, podokno **Záznamník úloh** se zavře, ale relace nahrávání se neukončí. K opětovnému otevření podokna Záznamník úkolů klepněte na tlačítko **Nápověda** (otazník) v horní části obrazovky. 
 
 [![Otazník](./media/help.jpg)](./media/help.jpg)
 
@@ -95,7 +99,10 @@ Pokud chcete záznam po pozastavení obnovit, klikněte na **Pokračovat**.
 
 ### <a name="capture-screenshots"></a>Pořídit snímky obrazovky
 
-Záznamník úkolů může zaznamenat snímky obrazovky uživatelského rozhraní Retail Modern POS při zaznamenávání obchodního procesu. Záznamník úkolů používá snímky obrazovky při stažení nahrávky jako dokumentu aplikace Word. Chcete-li aktivovat funkci záznamu obrazovky, nastavte **Zachytit obrazovku** na **Ano**. Poznámka: Funkce zachycení obrazovky není podporována v prostředí Cloud POS.
+Záznamník úkolů může zaznamenat snímky obrazovky uživatelského rozhraní Retail Modern POS při zaznamenávání obchodního procesu. Záznamník úkolů používá snímky obrazovky při stažení nahrávky jako dokumentu aplikace Word. Chcete-li aktivovat funkci záznamu obrazovky, nastavte **Zachytit obrazovku** na **Ano**. 
+
+#### <a name="note"></a>Poznámka
+> Funkce zachycení obrazovky není podporována v prostředí Cloud POS.
 
 ### <a name="start-task-and-end-task"></a>Počáteční a koncový úkol
 
@@ -119,11 +126,13 @@ Text, který zadáte do pole **Text**, se zobrazí *nad* krokem v Průvodci záz
 
 Text, který zadáte do pole **Poznámky**, se zobrazí *pod* krokem v Průvodci záznamem úloh. Aby si uživatel mohl přečíst text poznámky, musí rozbalit text kroku v místním okně. Toto umístění je vhodné pro volitelný materiál ke čtení nebo další informace, které mohou být pro uživatele užitečné, ale uživatel je nevyžaduje pro dokončení akce.
 
-## <a name="help-at-retail-modern-pos-and-cloud-pos"></a>Nápověda v Retail Modern POS a Cloud POS
-Chcete-li zobrazovat vlastní záznamy úkolů v podokně nápovědy pro Retail Modern POS a Cloud POS, aby je bylo možné přehrát jako průvodce úkolem nebo zobrazit jako text, je třeba záznamy úkolů uložit do vlastní knihovny BPM a poté aktualizovat systémové parametry nápovědy tak, aby odkazovaly na knihovnu BPM. Další informace naleznete v tématu [Připojení systému nápovědy](https://ax.help.dynamics.com/en/wiki/working-with-help/#connecting-the-help-system). Nápověda pro Retail Modern POS a Cloud POS prohlledává LCS v reálném čase. Vyhledává ve všech knihovnách BPM, které jsou vybrány v parametrech systému nápovědy aplikace Microsoft Dynamics AX a zobrazí příslušné výsledky. Pro přístup do nabídky **Nápověda** klikněte na tlačítko **Nápověda** v horní části obrazovky a do vyhledávacího pole napište název procesu. Potom klikněte na tlačítko pro vyhledávání. 
+## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Nápověda v Retail Modern POS a Cloud POS
+Chcete-li zobrazovat vlastní záznamy úkolů v podokně nápovědy pro Retail Modern POS a Cloud POS, aby je bylo možné přehrát jako průvodce úkolem nebo zobrazit jako text, je třeba záznamy úkolů uložit do vlastní knihovny BPM a poté aktualizovat systémové parametry nápovědy tak, aby odkazovaly na knihovnu BPM. Další informace naleznete v tématu [Připojení systému nápovědy](/dynamics365/unified-operations/dev-itpro/get-started/help-connect). Nápověda pro Retail Modern POS a Cloud POS prohlledává LCS v reálném čase. Vyhledává ve všech knihovnách BPM, které jsou vybrány v parametrech systému nápovědy aplikace Microsoft Dynamics 365 for Retail a zobrazí příslušné výsledky. Pro přístup do nabídky **Nápověda** klikněte na tlačítko **Nápověda** (otazník) v horní části obrazovky a do vyhledávacího pole napište název procesu. Potom klikněte na tlačítko pro vyhledávání. 
 
 [![Tlačítko Nápověda](./media/help.jpg)](./media/help.jpg) 
 
-Po kliknutí na Průvodce záznamem úloh ve výsledcích vyhledávání můžete zobrazit kroky jako téma nápovědy nebo kroky exportovat do wordového dokumentu. Poznámka: Systém nápovědy v Retail Modern POS a Cloud POS nevyvolá průvodce záznamem úloh automaticky na základě formuláře nebo operací. Musíte zadat název procesu do vyhledávacího pole a kliknout na tlačítko pro vyhledávání, abyste získali výsledky.
+Po kliknutí na Průvodce záznamem úloh ve výsledcích vyhledávání můžete zobrazit kroky jako téma nápovědy nebo kroky exportovat do wordového dokumentu. 
+#### <a name="note"></a>Poznámka
+> V nápovědě pro Retail Modern POS a Cloud POS se nezobrazují průvodci záznamem úloh v závislosti na tom, v jakém jste formuláři nebo jakou provádíte operaci. Je nutné v poli pro vyhledávání zadat název procesu a poté kliknout na **Hledat**.
 
 

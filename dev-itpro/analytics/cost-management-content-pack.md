@@ -3,13 +3,13 @@ title: "Obsah správy nákladů v Power BI"
 description: "Toto téma popisuje, co je součástí obsahu správy nákladů v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které jsou použity k sestavení obsahu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 270314
 ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a9449e42224d5dfb1bc1f0368a041c45afc334a2
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 387b804cb20ffdc17ad74dac5d927ecbaf421bae
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -52,7 +52,7 @@ Obsah **Správy nákladů** sady nástrojů Microsoft Power BI je určen pro skl
 Primárním datovým zdrojem pro CostAggregatedCostStatementEntryEntity je tabulka CostStatementCache. Tato tabulka je spravována rozhraním mezipaměti sady dat. Ve výchozím nastavení je tabulka aktualizována každých 24 hodin, ale můžete povolit ruční aktualizace v konfiguraci mezipaměti dat. Pak můžete provést ruční aktualizaci v pracovním prostoru **Správa nákladů** nebo **Analýza nákladů**. Po spuštění aktualizace CostStatementCache je nutné aktualizovat OData připojení na Power BI.com, pokud chcete zobrazit aktualizovaná data na webu. Měření odchylky (nákup, výroba) v tomto obsahu Power BI se vztahují pouze na položky, které jsou ohodnoceny skladovou metodou standardních nákladů. Výrobní odchylka se vypočítá jako rozdíl mezi aktivními a realizovanými náklady. Výrobní odchylka se vypočítá, když má výrobní zakázka stav **Ukončeno**. Další informace o typech výrobní odchylky a způsobu výpočtu jednotlivých typů naleznete v tématu [Analýza odchylek pro dokončenou výrobní zakázku](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Obsah **správy nákladů** v Power BI je k dispozici na PowerBI.com. Další informace o připojení a načtení dat aplikace Microsoft Dynamics 365 for Operations naleznete v tématu [Přístup k obsahu Power BI z webu PowerBI.com](power-bi-home-page.md).
+Obsah **správy nákladů** v Power BI je k dispozici na PowerBI.com. Další informace o připojení a načtení dat aplikace Microsoft Dynamics 365 for Finance and Operations naleznete v tématu [Přístup k obsahu Power BI z webu PowerBI.com](power-bi-home-page.md).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriky, které jsou součástí obsahu Power BI
 Obsah zahrnuje sadu stránek sestav. Každá stránka obsahuje sadu metrik, které jsou zobrazovány jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizace v obsahu **správy nákladů** v Power BI.
@@ -84,9 +84,9 @@ Obsah zahrnuje sadu stránek sestav. Každá stránka obsahuje sadu metrik, kter
 | |Výrobní odchylky podle názvu pracoviště a úrovně názvu kategorie 3 | |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
-Data aplikace Dynamics 365 for Operations se používají k naplnění stránek sestavy v obsahu **správy nákladů** v Power BI. Tato data jsou reprezentována jako měrné systémy agregace, které jsou rozfázovány v úložišti entit, což je databáze Microsoft SQL optimalizována pro analýzy. Další informace naleznete v tématu [Přehled integrace Power BI úložištěm entit](power-bi-integration-entity-store.md). Následujících klíčové měrné systémy agregace byly použity jako základ obsahu.
+Data aplikace Finance and Operations se používají k naplnění stránek sestavy v obsahu **Správa nákladů** v Power BI. Tato data jsou reprezentována jako měrné systémy agregace, které jsou rozfázovány v úložišti entit, což je databáze Microsoft SQL optimalizována pro analýzy. Další informace naleznete v tématu [Přehled integrace Power BI úložištěm entit](power-bi-integration-entity-store.md). Následujících klíčové měrné systémy agregace byly použity jako základ obsahu.
 
-| Celek            | Klíčové měření agregace | Zdroj dat pro aplikaci Dynamics 365 for Operations | Pole             | popis                       |
+| Celek            | Klíčové měření agregace | Datový zdroj pro Finance and Operations | Pole             | popis                       |
 |-------------------|---------------------------|---------------------------------------------|-------------------|-----------------------------------|
 | Záznamy výpisu | Čistá změna                | CostAggregatedCostStatementEntryEntity      | součet (\[Částka\])   | Částka v zúčtovací měně |
 | Záznamy výpisu | Množství čisté změny       | CostAggregatedCostStatementEntryEntity      | součet\[Množství\] |                                   |

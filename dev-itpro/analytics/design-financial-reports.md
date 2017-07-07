@@ -1,16 +1,16 @@
 ---
 title: "Zobrazení a navržení finančních sestav"
-description: "Tento článek obsahuje cvičení, která vás provedou zobrazením a vytvářením finančních sestav pro aplikaci Microsoft Dynamics 365 for Operations."
+description: "Tento článek obsahuje cvičení, která vás provedou zobrazením a vytvářením finančních sestav pro aplikaci Microsoft Dynamics 365 for Finance and Operations."
 author: jcart1106
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1c0787327830d2cdff9e8a48798165dc83493393
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 0dc453ab56a2d381afa6e22d847f0b1eb7a16e7e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek obsahuje cvičení, která vás provedou zobrazením a vytvářením finančních sestav pro aplikaci Microsoft Dynamics 365 for Operations. Finanční výkaznictví se skládá z lepšího způsobu prohlížení v rámci Dynamics 365 for Operations a návrháře sestav na jedno kliknutí, který vám umožní vytvářet a upravovat finanční sestavy.  
+Tento článek obsahuje cvičení, která vás provedou zobrazením a vytvářením finančních sestav pro aplikaci Microsoft Dynamics 365 for Finance and Operations. Finanční výkaznictví se skládá z lepšího způsobu prohlížení v rámci aplikace Finance and Operations a návrháře sestav na jedno kliknutí, který vám umožní vytvářet a upravovat finanční sestavy.  
 
 <a name="exercise-1-generate-and-explore-a-default-financial-report"></a>Cvičení 1: generování a prohlížení výchozí finanční sestavy
 -----------------------------------------------------------
@@ -59,7 +59,7 @@ Pro toto cvičení budete generovat a prohlížet existující výchozí sestavu
 13. Vyberte volbu **Možnosti sestavy**.
 14. Vyberte možnost **Přidat filtr dimenze** a zvolte možnost **Obchodní jednotka**.
 15. Do pole zadejte „001” a stiskněte tlačítko **OK**. Sestava nyní zobrazí pouze data obchodní jednotky 001. To je přizpůsobené zobrazení sestavy není k dispozici pro ostatní
-16. Zavřete filtrovanou sestavu. Finanční sestavy lze zobrazit v libovolné měně, která je přidána do aplikace Dynamics 365 for Operations.
+16. Zavřete filtrovanou sestavu. Finanční sestavy lze zobrazit v libovolné měně, která je přidána do aplikace Finance and Operations.
 17. Vyberte možnost **Měna**, poté možnost **EUR.** Sestava se nyní zobrazuje v měně euro. Všechny kódy měn nebo symboly měny zahrnuté v návrhu sestavy se nyní zobrazí v použité měně. Není-li definován žádný symbol měny pro měnu, nebude symbol měny zobrazen.
 18. Zavřít sestavu **Podrobnosti hlavní knihy**.
 19. Zavřete **Návrháře sestav**.
@@ -70,7 +70,7 @@ V tomto cvičení budete upravovat existující výchozí sestavu. Budete aktual
 1.  Přejděte do části **Finanční sestavy** pod částí Dotazy a sestavy v hlavní knize.
 2.  Vyberte řádek sestavy s názvem **Souhrnná předvaha – výchozí.**
 3.  Vyberte možnost **Upravit**. **Souhrnná předvaha – výchozí** bude otevřena v Návrháři sestav.
-4.  Vyberte nabídku **Soubor**, poté **Uložit jako** a zadejte název sestavy Podrobná předvaha s atributy. Poznámka: při každém vytvoření nové sestavy v návrháři sestav se seznam finančních sestav v Dynamics 365 for Operations aktualizuje.
+4.  Vyberte nabídku **Soubor**, poté **Uložit jako** a zadejte název sestavy Podrobná předvaha s atributy. Poznámka: při každém vytvoření nové sestavy v návrháři sestav se seznam finančních sestav v aplikaci Finance and Operations aktualizuje.
 5.  Z definice sestavy vyberte ikonu definice řádku a otevřete možnost **Předvaha – výchozí definice řádku**.
 6.  Uložit definici řádku jako **Podrobná předvaha s atributy**
 7.  S kurzorem na řádku 50 vyberte možnost **Upravit**, poté **Vložit řádky z dimenzí**. Příkaz Vložit řádky z dimenzí umožňuje vybrat dimenze, které mají být v definici řádku. U tohoto cvičení vytvoříme definici řádku pomocí hlavního účtu.
@@ -109,7 +109,7 @@ V tomto cvičení budete upravovat existující výchozí sestavu. Vytvoříte s
 4.  V nabídce **Soubor** se přesuňte na tlačítko **Nový** a vyberte možnost **Definice stromu výkaznictví**
 5.  V nabídce **Upravit** klikněte na tlačítko **Vložit jednotky výkaznictví z dimenzí**...
 6.  Zrušte zaškrtnutí políček pro všechny dimenze s výjimkou **Nákladového střediska**.
-7.  Klikněte na pole **Od dimenze** pro dimenzi nákladového střediska, zapište **007**a stiskněte klávesu tabulátor. Do pole **Do dimenze** zapište **018**.
+7.  Klikněte na pole **Od dimenze** pro dimenzi nákladového střediska, zapište **007** a stiskněte klávesu tabulátor. Do pole **Do dimenze** zapište **018**.
 8.  **Uložte** výsledný strom pod názvem **Nákladová střediska podle divizí.** Nyní, když byl vytvořen strom výkaznictví, upravte strom výkaznictví, aby obsahoval tři nové kumulativní jednotky: Marketing, Operace a Maloobchod.
 9.  V nabídce **Okno** klikněte na tlačítko **Nákladová střediska podle divizí**. (Pokud byl strom výkaznictví uzavřen, vyberte ho z Definic stromu výkaznictví v navigačním podokně.)
 10. Klikněte na jednotku číslo dvě, **Veletrhy**, a klikněte na ikonu **Vložit jednotku výkaznictví**.
@@ -123,7 +123,7 @@ V tomto cvičení budete upravovat existující výchozí sestavu. Vytvoříte s
 18. Zapište **Maloobchod** do sloupců B a C. Všimněte si, že jednotky Marketing, Operace a Maloobchod se zobrazí na stejné úrovni jako aktuální kumulativní jednotky. Nové jednotky jsou uspořádány dále. Jednotky vykazování jsou uspořádány prostřednictvím voleb po kliknutí pravým tlačítkem myši: posunutím nahoru a dolů nebo přetažením myší.
 19. Ověřte, že jednotka tři, **Veletrhy**, je aktivní a klikněte na ni pravým tlačítkem myši.
 20. Zvolte možnost **Snížit úroveň jednotky výkaznictví**. Všimněte si, že se jednotka nyní zobrazí jako podřízená **Marketingu**.
-21. Klikněte na jednotku čtyři, **Marketingová** **kampaň**a klikněte na ni pravým tlačítkem myši.
+21. Klikněte na jednotku čtyři, **Marketingová** **kampaň** a klikněte na ni pravým tlačítkem myši.
 22. Zvolte možnost **Snížit úroveň jednotky výkaznictví**.
 23. Klikněte na možnost **Servisní operace** v grafickém zobrazení. Stiskněte a podržte levé tlačítko myši při přetažení jednotky do **Operací**. Uvolněte levé tlačítko myši a upusťte jednotku do kumulativní skupiny Operace. Zopakujte pro položky **Výroba, Řízení kvality, Logistika, Zásobování a Správa**.
 24. Nastavte položky **Prodejna**, **Super**, **Market** a **Online** jako podřízené položky **Maloobchod** snížením úrovně nebo přetažením.
@@ -160,7 +160,7 @@ V tomto cvičení budete vytvářet novou sestavu. Sestava je výkaz příjmu od
 
 1.  Přejděte do části **Finanční sestavy** pod částí Dotazy a sestavy v hlavní knize.
 2.  Vyberte možnost **Nový**. Otevře se návrhář sestav s prázdnou definicí sestavy. Váš první úkol bude vytvoření definice sloupců.
-3.  Kliknutím na nabídku **Soubor**, pak **Nový**a pak **Definice sloupce** vytvoříte novou definici sloupce .
+3.  Kliknutím na nabídku **Soubor**, pak **Nový** a pak **Definice sloupce** vytvoříte novou definici sloupce .
 4.  Ve **sloupci A** vyberte **DESC** jako typ sloupce.
 5.  Ve **sloupci B** vyberte **FD** jako typ sloupce.
 6.  Poklepejte na pole **Filtr dimenze**.
@@ -183,8 +183,8 @@ V tomto cvičení budete vytvářet novou sestavu. Sestava je výkaz příjmu od
 18. **Uložte** provedené změny a **generujte**. Po dokončení generování sestavy a jejím otevření můžete sestavu prohlížet.
 
 ## <a name="additional-resources"></a>Další prostředky
-[Finanční vykazování](/dynamics365/operations/financials/general-ledger/financial-reporting-getting-started) 
-[Zobrazit finanční sestavy](/dynamics365/operations/financials/general-ledger/view-financial-reports) 
+[Finanční vykazování](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
+[Zobrazit finanční sestavy](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
 [Blog Dynamics Financial Reporting](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

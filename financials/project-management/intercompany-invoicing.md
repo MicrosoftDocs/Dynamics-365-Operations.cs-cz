@@ -1,26 +1,26 @@
 ---
 title: "Mezipodnikové fakturování"
-description: "Tento článek obsahuje informace a příklady o vnitropodnikové fakturaci pro projekty v aplikaci Microsoft Dynamics 365 for Operations."
+description: "Tento článek obsahuje informace a příklady týkající se vnitropodnikové fakturace pro projekty v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94153
 ms.assetid: 33e98da7-01c1-4369-923d-aa1c8326cb80
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 65c20479af9d2184bd7f3b92f4c0718553425502
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 205903bb68804a46414410c85eacce03c6df6fc7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek obsahuje informace a příklady o vnitropodnikové fakturaci pro projekty v aplikaci Microsoft Dynamics 365 for Operations.
+Tento článek obsahuje informace a příklady týkající se vnitropodnikové fakturace pro projekty v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 Organizace můžete mít několik divizí, dceřiných společností a ostatních právnických osob, které si navzájem předávají produkty a služby pro projekty. Právnická osoba, která poskytuje službu nebo produkt, se nazývá *půjčující právnická osoba* a právnická osoba, která přijímá službu nebo produkt, je označována jako *právnická osoba, která si půjčuje*. 
 
@@ -53,7 +53,7 @@ Cílem je vytvořit více flexibilní a výkonné řízení nákladů, uznání 
     -   **Příspěvkový poměr** – číslo zadané v poli **Cena** je příspěvkový poměr, který je vyjádřen jako procento prodejní ceny.
 
 ## <a name="example-1-set-up-parameters-for-intercompany-invoicing"></a>Příklad 1: Nastavení parametrů pro mezipodnikové fakturování
-V tomto příkladu je USSI půjčující právnická osoba a její prostředky vykazují čas proti právnické osobě, která si půjčuje, FRSI, která vlastní smlouvu s koncovým zákazníkem. Hodiny a výdaje, které zaměstnanci USSI vykazují, mohou být součástí faktury projektu generované v FRSI. Kromě toho je třetí zdroj transakcí, který může pocházet z půjčující právnické osoby (USSI v tomto příkladu), pokud tato společnost poskytuje sdílené dodavatele dceřiným společnostem (například FRSI), a pak předá tyto náklady do projektů v rámci daných dceřiných společností. Všechny odpovídající dokumenty faktury a daňové výpočty byly dokončeny v Dynamics 365 for Operations. 
+V tomto příkladu je USSI půjčující právnická osoba a její prostředky vykazují čas proti právnické osobě, která si půjčuje, FRSI, která vlastní smlouvu s koncovým zákazníkem. Hodiny a výdaje, které zaměstnanci USSI vykazují, mohou být součástí faktury projektu generované v FRSI. Kromě toho je třetí zdroj transakcí, který může pocházet z půjčující právnické osoby (USSI v tomto příkladu), pokud tato společnost poskytuje sdílené dodavatele dceřiným společnostem (například FRSI), a pak předá tyto náklady do projektů v rámci daných dceřiných společností. Všechny odpovídající fakturační dokumenty a daňové výpočty provádí aplikace Finance and Operations. 
 
 V tomto příkladu musí FRSI být odběratelem právnické osoby USSI a USSI musí být dodavatelem právnické osoby FRSI. Poté je možné nastavit vnitropodnikový vztah mezi dvěma právnickými osobami. Následující postup ukazuje, jak nastavit parametry tak, aby obě právnické osoby mohly být součástí vnitropodnikové fakturace.
 

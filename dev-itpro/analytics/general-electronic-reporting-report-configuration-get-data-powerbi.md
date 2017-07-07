@@ -1,15 +1,15 @@
 ---
 title: "Konfigurace elektronického výkaznictví pro vyžádání dat do Power BI"
-description: "Toto téma vysvětluje, jak lze použít konfiguraci elektronického vykazování (ER) k uspořádání přenosu dat v aplikaci Dynamics 365 for Operations do služeb Power BI. Toto téma používá jako příklad transakcí v systému Intrastat obchodní údaje, které je nutné převést. Vizualizace map Power BI využívá těchto dat transakcí systému Intrastat, aby představila náhled analýzy aktivit importu a exportu společnosti."
+description: "Toto téma vysvětluje, jak lze použít konfiguraci elektronického vykazování (ER) k uspořádání přenosu dat z aplikace Finance and Operations do služeb Power BI. Toto téma používá jako příklad transakcí v systému Intrastat obchodní údaje, které je nutné převést. Vizualizace map Power BI využívá těchto dat transakcí systému Intrastat, aby představila náhled analýzy aktivit importu a exportu společnosti."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3161dfe830dc0908010130c3b77b52fc2eafce59
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 36c5e78f4b85d0c763c35b62a6592365501db325
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,34 +30,34 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma vysvětluje, jak lze použít konfiguraci elektronického vykazování (ER) k uspořádání přenosu dat v aplikaci Dynamics 365 for Operations do služeb Power BI. Toto téma používá jako příklad transakcí v systému Intrastat obchodní údaje, které je nutné převést. Vizualizace map Power BI využívá těchto dat transakcí systému Intrastat, aby představila náhled analýzy aktivit importu a exportu společnosti.
+Toto téma vysvětluje, jak lze použít konfiguraci elektronického vykazování (ER) k uspořádání přenosu dat z aplikace Finance and Operations do služeb Power BI. Toto téma používá jako příklad transakcí v systému Intrastat obchodní údaje, které je nutné převést. Vizualizace map Power BI využívá těchto dat transakcí systému Intrastat, aby představila náhled analýzy aktivit importu a exportu společnosti.
 
 <a name="overview"></a>Přehled
 --------
 
-Microsoft Power BI je sada softwarových služeb, aplikací a konektorů, které společně mění externí zdroje dat na souvislých, vizuálně dokonalých a interaktivních poznatků. Elektronického vykazování (ER) uživatelům aplikace Microsoft Dynamics 365 for Operation umožňuje snadno konfigurovat zdroje dat a upravovat převod dat z Dynamics 365 for Operations do Power BI. Data se převádějí jako soubory ve formátu listu OpenXML (soubor sešitu aplikace Microsoft Excel). Převedené soubory se ukládají na serveru Microsoft SharePoint, který byl konfigurován pro tento účel. Uložené soubory se používají v Power BI a vyrábějí sestavy, které zahrnují vizualizace (tabulky, grafů, mapy apod.) Zprávy Power BI jsou sdíleny s uživateli Power BI a jsou dostupné na panelech Power BI a na stránkách Dynamics 365 for Operations. Toto téma vysvětluje následující úkoly:
+Microsoft Power BI je sada softwarových služeb, aplikací a konektorů, které společně mění externí zdroje dat na souvislých, vizuálně dokonalých a interaktivních poznatků. Elektronické vykazování (ER) uživatelům aplikace Microsoft Dynamics 365 for Finance and Operations umožňuje snadno konfigurovat zdroje dat a nastavit převod dat z aplikace Finance and Operations do Power BI. Data se převádějí jako soubory ve formátu listu OpenXML (soubor sešitu aplikace Microsoft Excel). Převedené soubory se ukládají na serveru Microsoft SharePoint, který byl konfigurován pro tento účel. Uložené soubory se používají v Power BI a vyrábějí sestavy, které zahrnují vizualizace (tabulky, grafů, mapy apod.) Sestavy Power BI se sdílí s uživateli Power BI a jsou dostupné na řídicích panelech Power BI a na stránkách aplikace Finance and Operations. Toto téma vysvětluje následující úkoly:
 
--   Konfiguraci Microsoft Dynamics 365 for Operations
--   Přípravu konfigurace formátu ER, aby získávala data z Dynamics 365 for Operations.
+-   Konfiguraci aplikace Finance and Operations.
+-   Přípravu konfigurace formátu ER na získávání dat z aplikace Finance and Operations.
 -   Konfiguraci prostředí ER pro přenos dat do Power BI.
 -   Použití převedených dat pro vytvoření sestavy Power BI.
--   Zpřístupnění sestavy Power BI v Dynamics 365 for Operations.
+-   Zpřístupnění sestavy Power BI v aplikaci Finance and Operations.
 
-## <a name="prerequisites"></a>Předpoklady
+## <a name="prerequisites"></a>Požadavky
 Pro dokončení příkladu v tomto tématu, musíte mít následující přístup:
 
--   Přístup k aplikaci Dynamics 365 for Operations pro některou z následujících rolí:
+-   Přístup k aplikaci Finance and Operations pro některou z následujících rolí:
     -   Návrhář elektronického výkaznictví
     -   Funkční konzultant elektronického výkaznictví
     -   Správce systému
--   Přístup k serveru SharePoint, který je konfigurován pro použití s Dynamics 365 for Operations
+-   Přístup k serveru SharePoint, který je konfigurován k použití s aplikací Finance and Operations
 -   Přístup k systému Power BI
 
 ## <a name="configure-document-management-parameters"></a>Konfigurujte parametry správy dokumentů
 1.  Na stránce **Parametry správy dokumentů**, nakonfigurujte přístup k serveru SharePoint, který bude používán ve společnosti, do které jste přihlášeni (např. společnost DEMF).
 2.  Zkontrolujte připojení k serveru SharePoint, abyste se ujistili, že máte udělen přístup. [![Stránka s parametry správy dokumentů](./media/ger-power-bi-sharepoint-server-setting-1024x369.png)](./media/ger-power-bi-sharepoint-server-setting.png)
 3.  Otevřete konfigurovanou stránku SharePoint. Vytvořte novou složku, kam bude ER ukládat Excelové soubory s obchodními údaji, které vyžadují sestavy Power BI jako zdroje sad dat Power BI.
-4.  V aplikaci Dynamics 365 for Operations na stránce **Typy dokumentů** vytvořte nový typ dokumentu, který se použije pro přístup ke složce služby SharePoint, kterou jste právě vytvořili. Zadejte **soubor** do pole **Skupina** a **SharePoint** do pole **Umístění** a poté zadejte adresu složky služby SharePoint. [![Stránka typu dokumentu](./media/ger-power-bi-sharepoint-document-type-1024x485.png)](./media/ger-power-bi-sharepoint-document-type.png)
+4.  V aplikaci Finance and Operations na stránce **Typy dokumentů** vytvořte nový typ dokumentu, který se použije pro přístup ke složce služby SharePoint, kterou jste právě vytvořili. Zadejte **soubor** do pole **Skupina** a **SharePoint** do pole **Umístění** a poté zadejte adresu složky služby SharePoint. [![Stránka typu dokumentu](./media/ger-power-bi-sharepoint-document-type-1024x485.png)](./media/ger-power-bi-sharepoint-document-type.png)
 
 ## <a name="configure-er-parameters"></a>Konfigurace parametrů ER
 1.  V pracovním prostoru **Elektronické sestavy** klepněte na odkaz **Parametry elektronického vykazování**.
@@ -100,10 +100,10 @@ Klepněte na tlačítko **Nastavení** pro nový záznam cíle. Potom můžete v
 2.  V poli **SharePoint** vyberte typ dokumentu **Sdílené**, který jste vytvořili dříve.
 
 ## <a name="schedule-execution-of-the-configured-er-format"></a>Naplánujte provedení konfigurovaného ER formátu
-Na stránce **Konfigurace** (**Správa organizace** &gt; **Elektronické vykazování** &gt; **Konfigurace**) zaškrtněte ve stromu konfigurace **Aktivity importu / exportu** konfiguraci, kterou jste předtím vytvořili. Změňte stav verze 1.1 z **Koncept** na **dokončeno**, abyste tento formát zpřístupnili pro používání. [![Stránka Konfigurace](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png) Vyberte dokončenou verzi konfigurace **Aktivity importu / exportu** a klikněte na **Spustit**. Všimněte si, že konfigurovaný cíl se aplikuje na výstupní výsledek vytvořený ve formátu aplikace Excel. Nastavte možnost **Dávkové zpracování** na **Ano**, čímž spustíte tuto sestavu v bezobslužném režimu. Klepněte na tlačítko **Opakování**, abyste mohli naplánovat požadované opakování spuštění této dávky. Opakování definuje, jak často se budou aktualizovaná data přesouvat z Dynamics 365 for Operations do Power BI. [![Dialogové okno Parametry elektronické sestavy](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png) Po konfiguraci najdete úlohu spuštění sestavy ER na stránce **Dávkové úlohy** (**Správa systému &gt; Dotazy &gt; Dávkové úlohy**). [![Stránka Dávkové úlohy](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png) Při prvním spuštění této úlohy cíl vytvoří nový soubor Excel s názvem konfigurovaným do vybrané složky služby SharePoint. Při každém dalším spuštění úkolu cíl vytvoří novou verzi souboru aplikace Excel. [![Nová verze souboru aplikace Excel](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
+Na stránce **Konfigurace** (**Správa organizace** &gt; **Elektronické vykazování** &gt; **Konfigurace**) zaškrtněte ve stromu konfigurace **Aktivity importu / exportu** konfiguraci, kterou jste předtím vytvořili. Změňte stav verze 1.1 z **Koncept** na **dokončeno**, abyste tento formát zpřístupnili pro používání. [![Stránka Konfigurace](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png) Vyberte dokončenou verzi konfigurace **Aktivity importu / exportu** a klikněte na **Spustit**. Všimněte si, že konfigurovaný cíl se aplikuje na výstupní výsledek vytvořený ve formátu aplikace Excel. Nastavte možnost **Dávkové zpracování** na **Ano**, čímž spustíte tuto sestavu v bezobslužném režimu. Klepněte na tlačítko **Opakování**, abyste mohli naplánovat požadované opakování spuštění této dávky. Opakování definuje, jak často se budou aktualizovaná data přesouvat z aplikace Finance and Operations do Power BI. [![Dialogové okno Parametry elektronické sestavy](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png) Po konfiguraci najdete úlohu spuštění sestavy ER na stránce **Dávkové úlohy** (**Správa systému &gt; Dotazy &gt; Dávkové úlohy**). [![Stránka Dávkové úlohy](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png) Při prvním spuštění této úlohy cíl vytvoří nový soubor Excel s názvem konfigurovaným do vybrané složky služby SharePoint. Při každém dalším spuštění úkolu cíl vytvoří novou verzi souboru aplikace Excel. [![Nová verze souboru aplikace Excel](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
 
 ## <a name="create-a-power-bi-dataset-by-using-the-output-result-of-the-er-format"></a>Vytvořte sadu dat Power BI s použitím výstupního výsledku ER formátu
-Přihlaste se k Power BI a buď otevřete existující skupinu Power BI (pracovní prostor) nebo vytvořte novou skupinu. Klikněte na **Přidat** v části **Soubory** v oddílu **Importovat nebo připojit k datům** nebo klikněte na znaménko plus (**+**) vedle položky **Datové sady** v levém podokně. [![Vytvoření datové sady](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) Vyberte možnost **SharePoint – týmová pracoviště** a zadejte cestu serveru SharePoint Server, kterou používáte (**https://ax7partner.spoppe.com** v našem příkladu ). Přejděte do složky **Sdílené dokumenty / GER data / PowerBI** a vyberte soubor aplikace Excel, který jste vytvořili jako zdroj dat pro novou sadu dat Power BI. [![Výběr souboru aplikace Excel](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) Klikněte na tlačítko **Připojit**a potom klepněte na tlačítko **Import**. Vytvoří se nová sada dat na základě vybraného souboru aplikace Excel. Sadu dat lze také automaticky přidávat do nově vytvořeného řídicího panelu. [![Datová sada v řídicím panelu](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) Konfigurujte plán obnovy pro tuto datovou sadu, abyste si vynutili periodické aktualizace. Pravidelné aktualizace umožňují spotřebu nových obchodních dat, které pocházejí z Dynamics 365 for Operations prostřednictvím periodického spouštění sestavy ER prostřednictvím nových verzí souboru aplikace Excel, které se vytvářejí na serveru SharePoint Server.
+Přihlaste se k Power BI a buď otevřete existující skupinu Power BI (pracovní prostor) nebo vytvořte novou skupinu. Klikněte na **Přidat** v části **Soubory** v oddílu **Importovat nebo připojit k datům** nebo klikněte na znaménko plus (**+**) vedle položky **Datové sady** v levém podokně. [![Vytvoření datové sady](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) Vyberte možnost **SharePoint – týmová pracoviště** a zadejte cestu serveru SharePoint Server, kterou používáte (**https://ax7partner.spoppe.com** v našem příkladu ). Přejděte do složky **Sdílené dokumenty / GER data / PowerBI** a vyberte soubor aplikace Excel, který jste vytvořili jako zdroj dat pro novou sadu dat Power BI. [![Výběr souboru aplikace Excel](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) Klikněte na tlačítko **Připojit** a potom klepněte na tlačítko **Import**. Vytvoří se nová sada dat na základě vybraného souboru aplikace Excel. Sadu dat lze také automaticky přidávat do nově vytvořeného řídicího panelu. [![Datová sada v řídicím panelu](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) Konfigurujte plán obnovy pro tuto datovou sadu, abyste si vynutili periodické aktualizace. Pravidelné aktualizace umožňují využití nových obchodních dat, která vznikají v aplikaci Finance and Operations při pravidelném spouštění sestavy ER prostřednictvím nových verzí souboru aplikace Excel, které se vytváří na serveru SharePoint Server.
 
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Vytvořte sestavu Power BI pomocí nové sady dat
 Chcete-li vytvořit novou sestavu Power BI, klepněte na tlačítko **podrobnosti importu a exportu** sady dat Power BI, které jste vytvořili. Nakonfigurujte potom zobrazení. Vyberte například vizualizaci **Plná mapa** a proveďte její konfiguraci následujícím způsobem:
@@ -114,8 +114,8 @@ Chcete-li vytvořit novou sestavu Power BI, klepněte na tlačítko **podrobnost
 
 Uložte sestavu Power BI jako **sestava podrobností o Importu a exportu**. [![Sestava podrobností o Importu a exportu](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Všimněte si, že mapa zobrazí země/oblasti, které jsou uvedeny v souboru Excel (Rakousko a Švýcarsko v tomto příkladu). Tyto země/oblasti se vybarví, aby zobrazily podíl fakturovaných částek pro každou z nich. Aktualizujte seznam transakcí v systému Intrastat. Byla přidána transakce exportu, která pochází z Itálie. [![Seznam transakcí Intrastat](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) Počkejte do dalšího plánovaného spuštění ER sestavy a další plánované aktualizace sady dat Power BI. Potom zkontrolujte sestavu Power BI (vyberte pro zobrazení pouze transakcí importu). Aktualizovaná mapa nyní zobrazuje Itálii. [![Aktualizovaná mapa](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
-## <a name="access-power-bi-report-in-dynamics-365-for-operations"></a>Zpřístupnění sestavy Power BI v Dynamics 365 for Operations
-Nastavte integraci mezi Dynamics 365 for Operations a Power BI. Další informace naleznete na [konfigurace integrace Power BI pro pracovní prostory](configure-power-bi-integration.md). Na stránce pracovního prostoru **Elektronické vykazování** podporující integraci Power BI (**Správa organizace** &gt; **Pracovní prostory** &gt; **Pracovní prostor elektronického vykazování**), klikněte na **Možnosti** &gt; **Otevřít katalog sestav**. Vyberte **Podrobnosti Importu a exportu** sestavy Power BI, kterou jste vytvořili, aby se tato sestava zobrazila jako položka akcí na vybrané stránce. Klepněte na položku akce, abyste otevřeli stránku 365 Dynamics for Operations, která ukazuje sestavy, které jste navrhli v Power BI. [![Sestava podrobností o Importu a exportu](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
+## <a name="access-power-bi-report-in-finance-and-operations"></a>Zpřístupnění sestavy Power BI v aplikaci Finance and Operations
+Nastavte integraci mezi aplikací Finance and Operations a Power BI. Další informace naleznete na [konfigurace integrace Power BI pro pracovní prostory](configure-power-bi-integration.md). Na stránce pracovního prostoru **Elektronické vykazování** podporující integraci Power BI (**Správa organizace** &gt; **Pracovní prostory** &gt; **Pracovní prostor elektronického vykazování**), klikněte na **Možnosti** &gt; **Otevřít katalog sestav**. Vyberte **Podrobnosti Importu a exportu** sestavy Power BI, kterou jste vytvořili, aby se tato sestava zobrazila jako položka akcí na vybrané stránce. Kliknutím na položku akce otevřete stránku aplikace Finance and Operations se sestavami, které jste navrhli v Power BI. [![Sestava podrobností o Importu a exportu](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
 <a name="see-also"></a>Viz také
 --------

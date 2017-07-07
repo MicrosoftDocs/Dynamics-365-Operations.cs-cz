@@ -1,15 +1,15 @@
 ---
 title: "Časové rozlišení projektu na nákupních příjemkách"
-description: "Toto téma popisuje, jak lze sledovat časově rozlišené náklady na projekt z nákupních příjemek v aplikaci Microsoft Dynamics 365 for Operations."
+description: "Toto téma popisuje, jak lze sledovat časově rozlišené náklady na projekt z nákupních příjemek v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 266984
 ms.assetid: 61e7d2a3-5aab-4113-bccc-213f932885d2
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: acb14deb9d77927ffc95500e4e97763ba3ad7826
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b46929d2991f3ec1b38d54ddc57de632aa9b01b9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje, jak lze sledovat časově rozlišené náklady na projekt z nákupních příjemek v aplikaci Microsoft Dynamics 365 for Operations. 
+Toto téma popisuje, jak lze sledovat časově rozlišené náklady na projekt z nákupních příjemek v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 Faktury pro projekt často přicházejí později než zboží a služby, což může mít významný dopad na projekt klíčové ukazatele výkonu (KPI). Je důležité, aby bylo možné sledovat tyto transakce ve finančních i projektových sestavách.
 
@@ -38,7 +38,7 @@ Ilustruje to následující vzorový scénář.
 
 Společnost Contoso Consulting zahájila nový projekt nasazení do cloudu. Je vytvořena nákupní objednávka pro nákup počítače pro projekt. Počítač bude stát 1 500 USD a instalační služba 150 USD. Dodavatel má dodat a nainstalovat počítač, ale fakturu ještě nedošla do společnosti Contoso Consulting. Vedoucí projektu by chtěl vidět poměrné rozložení nákladů na 1650 USD před dodáním faktury. Tyto náklady by se projevily také ve finančních výkazech společnosti ke konci měsíce. 
 
-Časově rozlišené náklady musí být zaznamenány na finanční úrovni i na úrovni projektu pro účely vykazování. V aplikaci Dynamics 365 for Operations lze sledovat finanční aktualizaci příjemky produktu pro kategorie zboží a zakázek. 
+Časově rozlišené náklady musí být zaznamenány na finanční úrovni i na úrovni projektu pro účely vykazování. V aplikaci Finance and Operations lze sledovat finanční aktualizaci příjemky produktu pro kategorie zboží a zakázek. 
 
 U zboží na stránce **Parametry závazků** vyberte možnost **Zaúčtování příjemky produktu do knihy**.
 [![accruals1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
@@ -73,7 +73,7 @@ Je možné mapovat kategorie zásobování na kategorie projektu na stránce **K
 
 **Krok 3:** Vytvořte standardní fakturu dodavatele. 
 
-V aplikaci Dynamics 365 for Operations zaúčtování příjemky produktu nemá vliv na informace o projektu. Tento problém odstraníte vygenerováním návrhu faktury dodavatele přímo po zaúčtování nákupní příjemky. Přejděte na stránku **Nákupní objednávka** &gt; **karta Faktura** &gt; **Generovat** &gt; **Faktura**. Tím se vytvoří dokument čekající faktury, který aktualizuje informace o projektu. 
+V aplikaci Finance and Operations zaúčtování příjemky produktu nemá vliv na informace o projektu. Tento problém odstraníte vygenerováním návrhu faktury dodavatele přímo po zaúčtování nákupní příjemky. Přejděte na stránku **Nákupní objednávka** &gt; **karta Faktura** &gt; **Generovat** &gt; **Faktura**. Tím se vytvoří dokument čekající faktury, který aktualizuje informace o projektu. 
 
 Vytvoření návrhu faktury dodavatele bude generovat čekající transakce projektu. 
 [![accruals8](./media/accruals8-1024x225.png)](./media/accruals8.png) 

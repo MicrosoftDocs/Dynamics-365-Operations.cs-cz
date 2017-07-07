@@ -3,13 +3,13 @@ title: "Osvědčené postupy pro import dokladů pomocí entity obecného deník
 description: "Toto téma obsahuje tipy pro import dat do finančního deníku pomocí entity obecného deníku."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94363
 ms.assetid: 0b8149b5-32c5-4518-9ebd-09c9fd7f4cfc
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1a1740f322972b1c37f23a0422fdcb4435253710
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b9a5c03584635908067bb7b623deba76f4ba3e18
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -53,14 +53,14 @@ Následující oddíly popisují účinek těchto nastavení, a také vysvětluj
 -   Nastavení **Zpracování založené na sadě** u entity obecného deníku neovlivňuje způsob, jakým jsou generovány čísla dávek deníku.
 -   Pokud je pole **Číslo dávky deníku** nastaveno na **Automaticky generované**, nové číslo dávky deníku je vytvořeno pro každý řádek, který je importován. Toto chování není vhodné. Nastavení **Automaticky generované** se nachází u projektu importu v nabídce **Zobrazit mapu** na kartě **Podrobnosti mapování**.
 -   Pokud není pole **Číslo dávky deníku** nastaveno na **Automaticky generované**, číslo dávky deníku je vytvořeno následovně:
-    -   Pokud číslo dávky deníku, který je definován v importovaném souboru, odpovídá existujícímu, nezaúčtovanému dennímu deníku v aplikaci Microsoft Dynamics 365 for Operations, jsou všechny řádky, které mají odpovídající číslo dávky deníku, importovány do existujícího deníku. Řádky nejsou importovány do zaúčtovaného čísla dávky deníku. Místo toho je vytvořeno nové číslo.
-    -   Pokud číslo dávky deníku, který je definován v importovaném souboru, neodpovídá existujícímu, nezaúčtovanému dennímu deník v aplikaci Dynamics 365 for Operations jsou všechny řádky, které mají stejné číslo dávky deníku, seskupeny v novém deníku. Například všechny řádky, které mají číslo dávky deníku 1, jsou importovány do nového deníku, a všechny řádky, které mají číslo dávky deníku 2, jsou importovány do druhého nového deníku. Číslo dávky deníku je vytvořeno pomocí číselné řady, která je definována v parametrech hlavní knihy.
+    -   Pokud číslo dávky deníku, který je definován v importovaném souboru, odpovídá existujícímu, nezaúčtovanému dennímu deník, jsou všechny řádky, které mají odpovídající číslo dávky deníku, importovány do existujícího deníku. Řádky nejsou importovány do zaúčtovaného čísla dávky deníku. Místo toho je vytvořeno nové číslo.
+    -   Pokud číslo dávky deníku, který je definován v importovaném souboru, neodpovídá existujícímu, nezaúčtovanému dennímu deníku, jsou všechny řádky, které mají stejné číslo dávky deníku, seskupeny v novém deníku. Například všechny řádky, které mají číslo dávky deníku 1, jsou importovány do nového deníku, a všechny řádky, které mají číslo dávky deníku 2, jsou importovány do druhého nového deníku. Číslo dávky deníku je vytvořeno pomocí číselné řady, která je definována v parametrech hlavní knihy.
 
 ### <a name="voucher-number"></a>Číslo dokladu
 
--   Při použití nastavení **Zpracování založené na sadě** u entitu obecného deníku je třeba uvádět číslo dokladu do importovaného souboru. Každá transakci ve finančním deníku je přiřazeno číslo dokladu, které je uvedeny v importovaném souboru, a to i v případě, že doklad není vyrovnán. Pokud chcete použít zpracování založené na sadě, ale chcete také použít číselnou řadu, která je definována pro čísla dokladů v aplikaci Dynamics 365 for Operations, byla vytvořena oprava hotfix pro verzi z února 2016. Číslo opravy hotfix je 3170316 a je k dispozici ke stažení na webu Lifecycle services (LCS). Další informace naleznete v tématu [Stažení oprav hotfix z webu Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md).
-    -   Chcete-li povolit tuto funkci, nastavte u názvu deníku, který se používá pro import v aplikaci Dynamics 365 for Operations, možnost **Přidělení čísla při zaúčtování** na **Ano**.
-    -   Číslo dokladu musí být i přesto definováno v importovaném souboru. Toto číslo však je dočasné a přepíše se čísel dokladu z aplikace Dynamics 365 for Operations při zaúčtování deníku. Ujistěte se, že řádky deníku jsou seskupeny správně podle dočasného čísla dokladu. Například při zaúčtování jsou nalezeny tři řádky, které mají dočasný doklad číslo 1. Dočasné číslo dokladu pro všechny tři řádky je přepsáno dalším číslem v číselné řadě. Nejsou-li tyto tři řádky vyrovnané entity, doklad nebude zaúčtován. Dále v případě nalezení řádků, které mají dočasné číslo dokladu 2, je toto číslo přepsáno dalším číslem dokladu v číselné řadě, atd.
+-   Při použití nastavení **Zpracování založené na sadě** u entitu obecného deníku je třeba uvádět číslo dokladu do importovaného souboru. Každá transakci ve finančním deníku je přiřazeno číslo dokladu, které je uvedeny v importovaném souboru, a to i v případě, že doklad není vyrovnán. Pokud chcete použít zpracování založené na sadě, ale chcete také použít číselnou řadu, která je definována pro čísla dokladů, byla vytvořena oprava hotfix pro verzi z února 2016. Číslo opravy hotfix je 3170316 a je k dispozici ke stažení na webu Lifecycle services (LCS). Další informace naleznete v tématu [Stažení oprav hotfix z webu Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md).
+    -   Chcete-li povolit tuto funkci, nastavte u názvu deníku, který se používá pro import, na možnost **Přidělení čísla při zaúčtování** na **Ano**.
+    -   Číslo dokladu musí být i přesto definováno v importovaném souboru. Toto číslo však je dočasné a přepíše se čísel dokladu při zaúčtování deníku. Ujistěte se, že řádky deníku jsou seskupeny správně podle dočasného čísla dokladu. Například při zaúčtování jsou nalezeny tři řádky, které mají dočasný doklad číslo 1. Dočasné číslo dokladu pro všechny tři řádky je přepsáno dalším číslem v číselné řadě. Nejsou-li tyto tři řádky vyrovnané entity, doklad nebude zaúčtován. Dále v případě nalezení řádků, které mají dočasné číslo dokladu 2, je toto číslo přepsáno dalším číslem dokladu v číselné řadě, atd.
 
 <!-- -->
 

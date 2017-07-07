@@ -3,7 +3,7 @@ title: "Definice sloupce ve finančních sestavách"
 description: "Tento článek obsahuje informace o definicích sloupce. Definice sloupce je součástí sestavy nebo stavebního bloku, který definuje obsah jednotlivých sloupců v sestavě. Stejně jako definice řádků lze základní definice sloupců použít u více sestav."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,18 +11,18 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: Management Reporter, Core
+ms.search.scope: Management Reporter, UnifiedOperations, Core
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ca82d24f591aaeb0d675716857cf94a4696785ad
+ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
+ms.openlocfilehash: d976988a599f65de9957c53a2d149576a1a11d83
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -52,13 +52,13 @@ Definice sloupce může obsahovat 2 až 255 sloupců.
 
 ### <a name="add-a-column-to-a-column-definition"></a>Přidání sloupce do definice sloupce
 
-1.  V Návrháři sestav klikněte na tlačítko **Definice sloupce**a potom otevřete definici sloupce ke změně.
+1.  V Návrháři sestav klikněte na tlačítko **Definice sloupce** a potom otevřete definici sloupce ke změně.
 2.  Vyberte sloupec v místě, kam chcete vložit nový sloupec.
 3.  V nabídce **Upravit** klikněte na tlačítko **Vložit sloupec**. Nový sloupec se zobrazí nalevo od sloupce, který jste vybrali.
 
 ### <a name="delete-a-column-from-a-column-definition"></a>Odstranění sloupce z definice sloupce
 
-1.  V Návrháři sestav klikněte na tlačítko **Definice sloupce**a potom otevřete definici sloupce ke změně.
+1.  V Návrháři sestav klikněte na tlačítko **Definice sloupce** a potom otevřete definici sloupce ke změně.
 2.  Vyberte sloupec, který chcete odstranit.
 3.  V nabídce **Upravit** klikněte na tlačítko **Odstranit sloupec**.
 
@@ -144,7 +144,7 @@ Můžete přidat, upravit a odstranit záhlaví, která se zobrazí v horní č�
 
 1.  V Návrháři sestav otevřete definici sloupce k úpravě.
 2.  Klikněte dvakrát na buňku záhlaví.
-3.  V dialogovém okně **Záhlaví sloupce** zadejte text záhlaví sloupce. Případně klikněte na tlačítko **Vložit automatický text**a vyberte možnost.
+3.  V dialogovém okně **Záhlaví sloupce** zadejte text záhlaví sloupce. Případně klikněte na tlačítko **Vložit automatický text** a vyberte možnost.
 4.  V poli **Možnosti formátu** vyberte formát pro záhlaví.
 5.  V poli **Pokrýt od** zadejte písmeno sloupce, nad kterým má začít záhlaví sloupců. V poli **Pokrýt k** zadejte písmeno sloupce, nad kterým má končit záhlaví sloupců.
 6.  V části **Zarovnání** vyberte, zda má být text záhlaví sloupců zarovnaný vlevo, zarovnaný na střed nebo zarovnaný vpravo.
@@ -154,7 +154,7 @@ Můžete přidat, upravit a odstranit záhlaví, která se zobrazí v horní č�
 
 1.  V Návrháři sestav otevřete definici sloupce k úpravě.
 2.  Vyberte buňku v řádku záhlaví.
-3.  V nabídce **Upravit** klikněte na tlačítko **Vložit řádek**. Nový řádek se vloží nad řádek, který jste vybrali v kroku 2. **Poznámka:**používáte-li v sestavě pro záhlaví sestavy čtyři nebo více řádků, záhlaví se budou při exportu sestavy do listu aplikace Excel překrývat. Chcete-li v sestavě zobrazit všechna záhlaví, zvětšete horní okraj v definici sestavy.
+3.  V nabídce **Upravit** klikněte na tlačítko **Vložit řádek**. Nový řádek se vloží nad řádek, který jste vybrali v kroku 2. **Poznámka:** používáte-li v sestavě pro záhlaví sestavy čtyři nebo více řádků, záhlaví se budou při exportu sestavy do listu aplikace Excel překrývat. Chcete-li v sestavě zobrazit všechna záhlaví, zvětšete horní okraj v definici sestavy.
 
 ### <a name="delete-a-column-header-row"></a>Odstranění řádku záhlaví sloupců
 
@@ -164,7 +164,7 @@ Můžete přidat, upravit a odstranit záhlaví, která se zobrazí v horní č�
 
 ### <a name="create-an-automatically-generated-header"></a>Vytvoření automaticky generovaného záhlaví
 
-Návrhář sestav může automaticky generovat záhlaví sloupců na základě kódů automatického textu. Kódy automatického textu jsou proměnné, které jsou aktualizovány při každém vygenerování sestavy. Jakékoli záhlaví sloupce může zahrnovat tyto kódy s cílem určit informace sestavy, které se mohou lišit, jako například kalendářní data nebo čísla období. Můžete tedy použít jednu definici sloupce pro více definic sestavy, časových období a stromů výkaznictví. Protože kódy automatického textu závisí na informacích kalendáře z řádků podrobností definice sloupce, jsou podporovány pouze u sloupců **CALC**, **FD** a **WKS**. Způsob, jakým se kód automatického textu zobrazí v buňce záhlaví sloupce ovlivňuje způsob zobrazení informací na sestavě. V dialogovém okně **Záhlaví sloupce** se kódy automatického textu zobrazí s malými i velkými znaky. Proto se text zobrazí s malými i velkými znaky v sestavě. Například ve standardním kalendářním roku vypíše kód **@CalMonthLong** měsíc **7** jako **Červenec**. Pokud má název měsíce být psán velkými písmeny (například **ČERVENEC**), zadejte kód automatického textu velkými písmeny do pole **Text záhlaví sloupce**. Například zadejte **@CALMONTHLONG**. Můžete kombinovat kódy a text. Například zadejte následující text záhlaví: **Období @FiscalPeriod-@FiscalYear od @StartDate do @EndDate**. Záhlaví sestavy, které bude vygenerováno, bude vypadat nápodobně: **Period 1-02 od 1.1.2002 do 31.1.2002**. **Poznámka:** Formát částí textu, jako například dlouhé datum, závisí na vašich místních nastaveních serveru Dynamics 365 for Operations. Tato nastavení můžete změnit, kliknutím na tlačítko **Start**, na položku **Ovládací panely** a nakonec na položku **Oblast a jazyk**. V následující tabulce jsou uvedeny dostupné možnosti automatického textu pro záhlaví sloupců.
+Návrhář sestav může automaticky generovat záhlaví sloupců na základě kódů automatického textu. Kódy automatického textu jsou proměnné, které jsou aktualizovány při každém vygenerování sestavy. Jakékoli záhlaví sloupce může zahrnovat tyto kódy s cílem určit informace sestavy, které se mohou lišit, jako například kalendářní data nebo čísla období. Můžete tedy použít jednu definici sloupce pro více definic sestavy, časových období a stromů výkaznictví. Protože kódy automatického textu závisí na informacích kalendáře z řádků podrobností definice sloupce, jsou podporovány pouze u sloupců **CALC**, **FD** a **WKS**. Způsob, jakým se kód automatického textu zobrazí v buňce záhlaví sloupce ovlivňuje způsob zobrazení informací na sestavě. V dialogovém okně **Záhlaví sloupce** se kódy automatického textu zobrazí s malými i velkými znaky. Proto se text zobrazí s malými i velkými znaky v sestavě. Například ve standardním kalendářním roku vypíše kód **@CalMonthLong** měsíc **7** jako **Červenec**. Pokud má název měsíce být psán velkými písmeny (například **ČERVENEC**), zadejte kód automatického textu velkými písmeny do pole **Text záhlaví sloupce**. Například zadejte **@CALMONTHLONG**. Můžete kombinovat kódy a text. Například zadejte následující text záhlaví: **Období @FiscalPeriod-@FiscalYear od @StartDate do @EndDate**. Záhlaví sestavy, které bude vygenerováno, bude vypadat nápodobně: **Period 1-02 od 1.1.2002 do 31.1.2002**. **Poznámka:** Formát částí textu, jako například dlouhé datum, závisí na vašich místních nastaveních serveru Finance and Operations. Tato nastavení můžete změnit, kliknutím na tlačítko **Start**, na položku **Ovládací panely** a nakonec na položku **Oblast a jazyk**. V následující tabulce jsou uvedeny dostupné možnosti automatického textu pro záhlaví sloupců.
 
 | Možnost a kód automatického textu                | popis                                                                                                                                                                                                                                                                                      |
 |-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -194,7 +194,7 @@ Záhlaví s podmíněným pokrytím mohou zahrnovat více sloupců, které vych�
 
 1.  V Návrháři sestav otevřete definici sloupce k úpravě.
 2.  Klikněte dvakrát na buňku záhlaví.
-3.  V dialogovém okně **Záhlaví sloupce** zadejte text záhlaví sloupce. Případně klikněte na tlačítko **Vložit automatický text**a vyberte možnost.
+3.  V dialogovém okně **Záhlaví sloupce** zadejte text záhlaví sloupce. Případně klikněte na tlačítko **Vložit automatický text** a vyberte možnost.
 4.   V poli **Možnosti formátu** vyberte styl formátování pro záhlaví.
 5.  Zadejte období vzhledem k základnímu období, které se stanoví během generování sestavy. V polích **Pokrýt od** a **Pokrýt k** zadejte některou z následujících hodnot: **BASE**, **BASE-X** nebo **BASE+X**, kde X je počet období od základního období. Zadáte-li například **BASE** do pole **Pokrýt od**, text záhlaví sloupce s podmíněným pokrytím začíná v záhlaví sloupce, kde se hodnota definice sestavy **Základní období** rovná hodnotě definice sloupce **Období**. Končí ve sloupci, který je určen v poli **Pokrýt k**. Proto pokud je pokrytí od BASE k M a hodnota definice sestavy **Základní období** je **4**, záhlaví začne ve sloupci, ve kterém je období nastaveno na hodnotu **4** a končí ve sloupci M. Záhlaví končí a začínají pouze v tisknutých sloupcích.
 6.  V části **Zarovnání** vyberte, zda má být text záhlaví sloupců zarovnaný vlevo, zarovnaný na střed nebo zarovnaný vpravo.
@@ -488,7 +488,7 @@ Následující příklad ukazuje část popisu sloupce, který má atribut účt
 
 ### <a name="dimension-filter-in-a-column-definition"></a>Filtr dimenzí v definici sloupce
 
-Filtr dimenzí slouží k omezení sloupce **FD** na konkrétní hodnoty dimenzí. Filtr může zahrnovat jednu dimenzi, rozsah dimenzí nebo skupinu dimenzí. Filtr může také obsahovat sady hodnot dimenzí. Vzhledem k tomu, že se mohou hodnoty dimenzí lišit, nemusí ..\finanční dimenze\systém založený na dimenzích odpovídat přesné délce. Filtr se použije bez ohledu na to, zda sestava obsahuje strom výkaznictví, či nikoli. Můžete použít zástupné znaky (\* nebo ?) na jakékoli pozici. Pokud zadáte více účtů, vložte mezi účty čárku, jako v následujícím příkladu: +Účet=\[1200\], +Účet=\[1100\], Oddělení=\[01?\] Pokud chcete získat všechna oddělení pro určitý účet, můžete vyloučit dimenzi Oddělení z filtru dimenzí. Například oba následující filtry dimenzí jsou zpracovány stejným způsobem:
+Filtr dimenzí slouží k omezení sloupce **FD** na konkrétní hodnoty dimenzí. Filtr může zahrnovat jednu dimenzi, rozsah dimenzí nebo skupinu dimenzí. Filtr může také obsahovat sady hodnot dimenzí. Vzhledem k tomu, že se mohou hodnoty dimenzí lišit, nemusí ..\finanční dimenze\systém založený na dimenzích odpovídat přesné délce. Filtr se použije bez ohledu na to, zda sestava obsahuje strom výkaznictví, či nikoli. Můžete použít zástupné znaky (\* nebo ?) na jakékoli pozici. Když zadáte více účtů, vložte mezi účty čárku, jak je uvedeno v následujícím příkladu: +Částka=\[1200\], +Částka=\[1100\], Oddělení=\[01?\] Abyste získali všechna oddělení pro konkrétní účet,můžete vyloučit dimenzi oddělení z filtru dimenzí. Například oba následující filtry dimenzí jsou zpracovány stejným způsobem:
 
 -   +Účet=\[1100\],Oddělení
 -   +Účet=\[1100\]

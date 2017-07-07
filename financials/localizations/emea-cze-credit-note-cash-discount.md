@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: CustParameters, PrintMgmtSetupUIMain, Reasons
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 273063
 ms.search.region: Czech Republic
 ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ba5cdea0081725486280c7e04c42d9435ab68909
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: 10c803903f656f7152adb6d0bdc77240dad5b507
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -44,7 +44,7 @@ Společnosti v rámci České republiky musí vydávat dobropisy pro hotovostní
 
 ### <a name="set-up-number-sequences"></a>Nastavit číselné řady
 
-Vytvořte souvislou číselnou řadu pro právnickou osobu. Další informace naleznete v tématu [Přehled číselných řad](/dynamics365/operations/organization-administration/number-sequence-overview). Na stránce **Parametry pohledávek** vyberte číselnou řadu, kterou jste vytvořili pro **prodejní dobropis**. Dále byste nastavte číselnou řadu pro **prodejní doklad dobropisu**. Můžete použít stejnou číselnou řadu, jakou jste použili **prodejní dobropis**.
+Vytvořte souvislou číselnou řadu pro právnickou osobu. Další informace naleznete v tématu [Přehled číselných řad](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview). Na stránce **Parametry pohledávek** vyberte číselnou řadu, kterou jste vytvořili pro **prodejní dobropis**. Dále byste nastavte číselnou řadu pro **prodejní doklad dobropisu**. Můžete použít stejnou číselnou řadu, jakou jste použili **prodejní dobropis**.
 
 ### <a name="set-up-sales-tax-codes"></a>Nastavit kódy DPH
 

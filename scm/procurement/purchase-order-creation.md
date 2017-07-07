@@ -3,14 +3,14 @@ title: "Vytváření nákupních objednávek"
 description: "Tento článek popisuje proces a možnosti při ručním vytvoření nákupní objednávky."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c6c6b40d8934d1059c54678df8d4fc6530db1b24
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: fbf5337ac41ceae6e911c056db5226c8ed1cefb0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -29,6 +29,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="create-purchase-orders"></a>Vytváření nákupních objednávek
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Tento článek popisuje proces a možnosti při ručním vytvoření nákupní objednávky.
@@ -70,7 +72,7 @@ V některých případech můžete chtít rozdělit objednané množství tak, a
 Poplatky lze automaticky přidán k řádkům nákupní objednávky, pokud byly nastaveny automatické náklady pro dodavatele nebo skupinu nákladů dodavatele a pro položku nebo skupinu nákladů na položku. Nicméně více obvyklé je ruční přidání poplatků na úrovni řádku objednávky. Chcete-li přidat poplatek, otevřete stránku **Udržovat náklady** pomocí akce **Udržovat náklady** v nabídce **Finance** v zobrazení **Řádky**. Výhodou přidání poplatků přímo na úrovni řádku objednávky je to, že poplatek může být přidělen jako náklady skladu. Chcete-li nastavit kódy poplatků pro zaúčtování ceny produktu, použijte debetní možnost **Položka**. Tyto typy nákladů musí být přiděleny ze záhlaví nákupní objednávky k řádkům předtím, než může být objednávka potvrzena. Můžete například přidělit náklady na základě množství na každém řádku. Kategorie nákladů také ovlivňuje to, jak jsou poplatky účtovány. Například pevné náklady určují pevnou částku a procentuální náklady se vypočítají jako procento z čisté částky na řádku objednávky. Nákupní objednávky lze přiřadit k vytížení a vytížení může obsahovat odhad očekávaných výdajů za náklady na dopravu. Tyto náklady lze přidělit z vytížení zpět na řádky nákupní objednávky.
 
 ## <a name="purchase-order-actions"></a>Akce nákupní objednávky
-Po přidání záhlaví a řádků do nákupní objednávky musíte často dokončit další kroky ještě předtím, než je objednávka připravena pro potvrzení. Vzhledem k tomu, že je k dispozici mnoho možností, může pro vás užitečné použít [Akci hledání](/dynamics365/operations/get-started/action-search) a najít s její pomocí odpovídající položku.  
+Po přidání záhlaví a řádků do nákupní objednávky musíte často dokončit další kroky ještě předtím, než je objednávka připravena pro potvrzení. Vzhledem k tomu, že je k dispozici mnoho možností, může pro vás užitečné použít [Akci hledání](/dynamics365/unified-operations/fin-and-ops/get-started/action-search) a najít s její pomocí odpovídající položku.  
 
 Produkty lze nastavit na objednávce tak, že mají doplňkové položky. Doplňkové položky jsou výrobky, které musí nebo mohou být nakoupeny společně s jinými přípravky. Doplňkové produkty mohou být přidány zdarma nebo za poplatek jako doprovodné produkty, nebo je možné se rozhodnout, zda je chcete přidat do objednávky, nebo nikoliv. Po přidání každého řádku objednávky můžete zkontrolovat doplňkové položky. Nicméně pravděpodobně je vhodnější zkontrolovat a přidat příslušné doplňkové položky pro všechny řádky na stránce **Doplňkové položky**, kterou lze otevřít z podokna akcí.  
 
@@ -94,7 +96,7 @@ Bude pravděpodobně nutné zpozdit dokončení nákupní objednávky. Napříkl
 
 [Příjem produktů proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
 
-[Přehled faktur dodavatele](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Přehled faktur dodavatele](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 
