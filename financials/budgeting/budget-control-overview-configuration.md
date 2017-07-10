@@ -1,15 +1,15 @@
 ---
 title: "Přehled kontrol rozpočtu"
-description: "Tento článek obsahuje základní informace o kontrole rozpočtu a poskytuje informace, které umožňují konfiguraci kontroly rozpočtu v aplikaci Microsoft Dynamics 365 for Operations, abyste mohli spravovat finančních prostředky."
+description: "Tento článek obsahuje základní informace o kontrole rozpočtu a poskytuje informace, které umožňují konfiguraci kontroly rozpočtu v aplikaci Microsoft Dynamics 365 Finance and Operations, Enterprise edition, abyste mohli spravovat finančních prostředky."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 ms.search.region: Global
@@ -17,27 +17,27 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 48649b891be72529e6045e48f9738fe68be6cffe
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 77d6d9afeb5669c2ae8460f0503e68a3559514ec
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="budget-control-overview"></a>Přehled kontrol rozpočtu
+# <a name="budget-control-overview"></a>Přehled řízení 
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek obsahuje základní informace o kontrole rozpočtu a poskytuje informace, které umožňují konfiguraci kontroly rozpočtu v aplikaci Microsoft Dynamics 365 for Operations, abyste mohli spravovat finančních prostředky.
+Tento článek obsahuje základní informace o kontrole rozpočtu a poskytuje informace, které umožňují konfiguraci kontroly rozpočtu v aplikaci Microsoft Dynamics 365 Finance and Operations, Enterprise edition, abyste mohli spravovat finančních prostředky.
 
 <a name="overview"></a>Přehled
 --------
 
-Kontrola rozpočtu v aplikaci Microsoft Dynamics 365 for Operations podporuje správu finančních prostředků v organizaci prostřednictvím účtové osnovy, workflowů, skupin uživatelů, zdrojových dokumentů a deníků, konfigurovatelného výpočtu dostupných finančních prostředků, rozpočtových cyklů a prahových hodnot. Když jsou prvky řízení zavedené, organizace může plánovat, měřit, spravovat a předvídat své finanční prostředky během celého fiskálního roku. 
+Kontrola rozpočtu v aplikaci Microsoft Dynamics 365 for Finance and Operations podporuje správu finančních prostředků v organizaci prostřednictvím účtové osnovy, workflowů, skupin uživatelů, zdrojových dokumentů a deníků, konfigurovatelného výpočtu dostupných finančních prostředků, rozpočtových cyklů a prahových hodnot. Když jsou prvky řízení zavedené, organizace může plánovat, měřit, spravovat a předvídat své finanční prostředky během celého fiskálního roku. 
 
-Po schválení rozpočtů v aplikaci Dynamics 365 for Operations můžete použít plány rozpočtu ke generování položek registru rozpočtu pro zaznamenání rozpočtu výdajů pro organizaci. Případně můžete vytvořit nebo importovat položky registru rozpočtu z programu třetí strany namísto použití funkce plánování rozpočtu. 
+Po schválení rozpočtů v aplikaci Finance and Operations můžete použít plány rozpočtu ke generování položek registru rozpočtu pro zaznamenání rozpočtu výdajů pro organizaci. Případně můžete vytvořit nebo importovat položky registru rozpočtu z programu třetí strany namísto použití funkce plánování rozpočtu. 
 
 Výdaje lze zaznamenat pomocí hlavních účtů a finančních dimenzí. Můžete nakonfigurovat kontrolu celkových výdajů podle zásad a požadavků organizace, a to seskupením kombinací finančních dimenzí a hlavních účtů. 
 
@@ -53,7 +53,7 @@ Můžete konfigurovat kontrolu rozpočtu podle několika faktorů:
 -   **Výpočet dostupných prostředků**: Mají být dokumenty, jako například nákupní žádanky (předběžná břemena) a nákupní objednávky (břemena) zohledněny ve výpočtu dostupných finančních prostředků? Mají být dokumenty ve stavu konceptu zohledněny ve výpočtu?
 -   **Oprávnění pro přepis**: Kdo má oprávnění přesáhnout dostupný rozpočet?
 
-Kontrola rozpočtu je plně integrovaná do aplikace Dynamics 365 for Operations. Proto je možné vyhodnotit dostupný rozpočet pro plánované nákupy i skutečné nákupy. Jsou k dispozici dotazy a sestavy týkající se rozpočtu. Proto mohou uživatelé vyhodnotit rozpočet v rámci rozpočtového cyklu a podle potřeby provést ve formě revizí či převodů rozpočtu. Správce rozpočtu může také podle potřeby exportovat rozpočet a skutečné hodnoty do aplikace Microsoft Excel kvůli lepší analýze a prognóze.
+Kontrola rozpočtu je plně integrovaná do aplikace Finance and Operations. Proto je možné vyhodnotit dostupný rozpočet pro plánované nákupy i skutečné nákupy. Jsou k dispozici dotazy a sestavy týkající se rozpočtu. Proto mohou uživatelé vyhodnotit rozpočet v rámci rozpočtového cyklu a podle potřeby provést ve formě revizí či převodů rozpočtu. Správce rozpočtu může také podle potřeby exportovat rozpočet a skutečné hodnoty do aplikace Microsoft Excel kvůli lepší analýze a prognóze.
 
 ## <a name="configuring-budget-control"></a>Konfigurace kontroly rozpočtu
 ### <a name="budget-cycle-time-span"></a>Délka rozpočtového cyklu
@@ -128,7 +128,3 @@ Jakmile bude zapnuta kontrola rozpočtu, uživatelům se budou zobrazovat varovn
 Z této stránky mohou uživatelé přejít na stránku **Statistika kontroly rozpočtu podle období** a zobrazit zde podrobnosti o dostupnosti rozpočtu a rezervace pro vybrané kombinace dimenzí kontroly rozpočtu. Uživatelé mohou také přejít k podrobnostem na stránce **Statistika kontroly rozpočtu** a zobrazit si dostupnost rozpočtu pro všechny kombinace finančních dimenzí, které se používají v kontrole rozpočtu. 
 
 Pokud je kontrola rozpočtu zapnuta pro nákupní objednávky, může správce rozpočtu použít pracovní prostor **Rozpočty hlavní knihy a prognózy** ke kontrole fronty všech nepotvrzených nákupních objednávek s varováními a chybami kontroly rozpočtu. Pokud má správce rozpočtu nakonfigurovaná oprávnění překročit rozpočet, může potvrdit nákupní objednávky přímo v tomto pracovním prostoru.    
-
-
-
-

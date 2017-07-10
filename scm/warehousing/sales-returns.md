@@ -3,13 +3,13 @@ title: "Prodejní vratky"
 description: "Toto téma obsahuje informace o procesu pro vratky. Obsahuje informace o zboží vraceném zákazníkem a o vlivu vracení na oceňování a na skladové množství zásob."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bdec28ba1fe3650f59520cb42a71497c54a7d93e
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b66bf79413ad21f12f789eabafe8413af3f58c9c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 
 Toto téma obsahuje informace o procesu pro vratky. Obsahuje informace o zboží vraceném zákazníkem a o vlivu vracení na oceňování a na skladové množství zásob.
 
-Zákazníci mohou zboží vracet z různých důvodů. Například může být nějaký kus zboží vadný nebo může nesplňovat očekávání zákazníka. Proces vracení začíná tím, když zákazník vydá požadavek na vrácení zboží. Po obdržení požadavku zákazníka je v Microsoft Dynamics 365 pro operace vytvořena objednávka vrácení.
+Zákazníci mohou zboží vracet z různých důvodů. Například může být nějaký kus zboží vadný nebo může nesplňovat očekávání zákazníka. Proces vracení začíná tím, když zákazník vydá požadavek na vrácení zboží. Po obdržení požadavku zákazníka je v aplikaci Microsoft Dynamics 365 for Finance and Operations vytvořena objednávka vrácení.
 
 ## <a name="return-order-process"></a>Proces objednávky vrácení
 Následující obrázek podává přehled procesu objednávky vrácení.  
@@ -264,7 +264,7 @@ Tento scénář zahrnuje dva podniky ve stejné organizaci, jak je znázorněno 
 
 [![Jednoduché mezipodnikové vrácení](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)  
 
-Řetězec objednávky lze založit tehdy, když bude v kupující společnosti vytvořena objednávka vrácení dodavateli nebo když bude v prodávající společnosti vytvořena objednávka vrácení zákazníkovi. Dynamics 365 for Operations vytvoří příslušnou objednávku v opačné společnosti a zajistí, aby informace hlavičky a řádku na objednávce vrácení dodavateli reflektovaly nastavení na objednávce vrácení zákazníkovi. Objednávka vrácení, která je zavedena, může obsahovat nebo vylučovat referenci (**Najít objednávku vrácení**) na stávající zákaznickou fakturu. Dodací listy a faktury obou objednávek lze zpracovat individuálně. Například není nutné generovat dodací list pro objednávku vrácení dodavateli před vytvořením dodacího listu pro objednávku vrácení zákazníkovi.
+Řetězec objednávky lze založit tehdy, když bude v kupující společnosti vytvořena objednávka vrácení dodavateli nebo když bude v prodávající společnosti vytvořena objednávka vrácení zákazníkovi. Finance and Operations vytvoří příslušnou objednávku v opačné společnosti a zajistí, aby informace hlavičky a řádku na objednávce vrácení dodavateli reflektovaly nastavení na objednávce vrácení zákazníkovi. Objednávka vrácení, která je zavedena, může obsahovat nebo vylučovat referenci (**Najít objednávku vrácení**) na stávající zákaznickou fakturu. Dodací listy a faktury obou objednávek lze zpracovat individuálně. Například není nutné generovat dodací list pro objednávku vrácení dodavateli před vytvořením dodacího listu pro objednávku vrácení zákazníkovi.
 
 ### <a name="direct-delivery-shipment-returns-among-three-parties"></a>Vrácení zásilky přímé dodávky mezi třema stranami
 

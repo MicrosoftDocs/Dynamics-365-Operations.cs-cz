@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LeanCosting, LeanCostingTimeBucket
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272063
 ms.assetid: 62a2a7da-ff79-49bf-a6e8-29460ba5252f
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fb8fa9f5f17b8d658e2d0fea3a9659ab09562611
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: e520c292b7350f332649f23fb4232e7ecd191776
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -64,11 +64,11 @@ Pro produkty, které jsou dodávány mimo výrobní tok, musí kalkulace kusovn�
 
 ### <a name="calculation-that-is-based-on-the-production-flow"></a>Výpočet založený na výrobním toku
 
-Lean manufacturing pro Microsoft Dynamics 365 for Operations nezávisí na postupech. Výpočet nákladů pro produkty, které jsou dodávány z výrobního toku, může vycházet z výrobního toku jako takového. Než bude možné výpočet provést, musí být vytvořeno kanbanové pravidlo, které dodává produkt z výrobního toku. Pokud lze produkt dodat z více z více výrobních toků na stejném pracovišti k datu výpočtu, můžete vybrat výrobní tok pro kalkulaci kusovníku. Na stránce **Výchozí výrobní tok** můžete nakonfigurovat výchozí výrobní tok pro každou položku. Existuje-li více kanbanových pravidel pro stejný produkt ve stejném výrobním toku, který je aktivní k datu výpočtu, výpočet vybere první kanbanové pravidlo, které je aktivní pro výpočet.
+Lean manufacturing pro Microsoft Dynamics 365 for Finance and Operations nezávisí na postupech. Výpočet nákladů pro produkty, které jsou dodávány z výrobního toku, může vycházet z výrobního toku jako takového. Než bude možné výpočet provést, musí být vytvořeno kanbanové pravidlo, které dodává produkt z výrobního toku. Pokud lze produkt dodat z více z více výrobních toků na stejném pracovišti k datu výpočtu, můžete vybrat výrobní tok pro kalkulaci kusovníku. Na stránce **Výchozí výrobní tok** můžete nakonfigurovat výchozí výrobní tok pro každou položku. Existuje-li více kanbanových pravidel pro stejný produkt ve stejném výrobním toku, který je aktivní k datu výpočtu, výpočet vybere první kanbanové pravidlo, které je aktivní pro výpočet.
 
 ### <a name="calculation-that-is-based-on-the-route"></a>Výpočet založený na postupu
 
-Výpočet, který vychází z postupu má stejnou platnost jako výpočet založený na výrobním toku. Výpočet, který je založen na postupu, však nepoužívá také výpočet nákladů pro funkci Lean manufacturing. Postup by měl používat požadavky na prostředek pro skupiny prostředků. Abyste se vyhnuli systematickým odchylkám, měl by také použít stejné pracovní buňky a alespoň stejné nákladové kategorie. Opět platí že byste se měli vyhnout nákladovým kategoriím pro nastavení a množství. Nepomáhají při výpočtu nákladů v podrobnějším rozdělení než zpětný odpočet nákladů v Lean manufacturing. Chcete-li zjistit, která možnost (výrobní tok nebo postup) je vhodnější při výpočtu nákladů, zvažte výsledky rozúčtování nákladů. Verze, která se více blíží realitě a vytváří celkově méně odchylek, je lepší možnost. V prostředí Lean manufacturing, kde je produkt poskytnutý z jednoho výrobního toku a jednoho kanbanového pravidla, je pravděpodobně přesnější výpočet založený na výrobním toku. U produktu, který může dodat Lean manufacturing a výrobní zakázky na stejném pracovišti nebo který má více výrobních toků nebo více kanbanových pravidel, může být výpočet přesnější, pokud je založen na verzi postupu, která je vytvořena pro výpočet ceny, nikoli pro výrobu. Výpočet výrobního toku musí být použit pro výpočet produktů, které se týkají subdodávky. V aplikaci Microsoft Dynamics 365 for Operations pro subdodávky prostřednictvím výrobních zakázek a subdodávky v Lean manufacturing se používají dva různé přístupy. Lean manufacturing zavádí nový typ skupiny nákladů, **Přímý outsourcing**, k výpočtu subdodavatelských služeb.
+Výpočet, který vychází z postupu má stejnou platnost jako výpočet založený na výrobním toku. Výpočet, který je založen na postupu, však nepoužívá také výpočet nákladů pro funkci Lean manufacturing. Postup by měl používat požadavky na prostředek pro skupiny prostředků. Abyste se vyhnuli systematickým odchylkám, měl by také použít stejné pracovní buňky a alespoň stejné nákladové kategorie. Opět platí že byste se měli vyhnout nákladovým kategoriím pro nastavení a množství. Nepomáhají při výpočtu nákladů v podrobnějším rozdělení než zpětný odpočet nákladů v Lean manufacturing. Chcete-li zjistit, která možnost (výrobní tok nebo postup) je vhodnější při výpočtu nákladů, zvažte výsledky rozúčtování nákladů. Verze, která se více blíží realitě a vytváří celkově méně odchylek, je lepší možnost. V prostředí Lean manufacturing, kde je produkt poskytnutý z jednoho výrobního toku a jednoho kanbanového pravidla, je pravděpodobně přesnější výpočet založený na výrobním toku. U produktu, který může dodat Lean manufacturing a výrobní zakázky na stejném pracovišti nebo který má více výrobních toků nebo více kanbanových pravidel, může být výpočet přesnější, pokud je založen na verzi postupu, která je vytvořena pro výpočet ceny, nikoli pro výrobu. Výpočet výrobního toku musí být použit pro výpočet produktů, které se týkají subdodávky. V aplikaci Microsoft Dynamics 365 for Finance and Operations pro subdodávky prostřednictvím výrobních zakázek a subdodávky v Lean manufacturing se používají dva různé přístupy. Lean manufacturing zavádí nový typ skupiny nákladů, **Přímý outsourcing**, k výpočtu subdodavatelských služeb.
 
 ## <a name="material-consumption"></a>Spotřeba materiálu
 Když se materiál spotřebovává ze skladu pro nedokončenou výrobu, náklady na materiál jsou přidány do nedokončené výroby při skutečných standardních nákladech pro nákladovou skupinu. Tato operace se provádí při splnění následujících podmínek:
@@ -85,7 +85,7 @@ Produkty jsou z výrobního toku přijímány při splnění následujících po
 Produkty, které jsou přijaty z výrobního toku, jsou odečteny z nedokončené výroby.
 
 ## <a name="products-in-wip"></a>Produkty v nedokončené výrobě
-Model NV pro Lean manufacturing v Microsoft Dynamics 365 for Operations umožňuje využití stavu manipulační jednotky kanbanu ke správě materiálu, polotovarů a dokončených produktů, které jsou součástí nedokončené výroby.
+Model NV pro Lean manufacturing v Microsoft Dynamics 365 for Finance and Operations umožňuje využití stavu manipulační jednotky kanbanu ke správě materiálu, polotovarů a dokončených produktů, které jsou součástí nedokončené výroby.
 
 -   **Přiřazeno** – kanban může mít spotřebovaný materiály, který je zaúčtován v nedokončené výrobě.
 -   **Přijaté** - Pokud kanban odkazuje na poslední aktivitu, kde je možnost **Aktualizovat zásoby při příjmu nastavena na** **Ne**, představuje plnou manipulační jednotku produktu nebo polotovaru, který není zaregistrován v zásobách.

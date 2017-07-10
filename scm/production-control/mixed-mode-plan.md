@@ -1,16 +1,16 @@
 ---
 title: "Kombinovaný režim plánování – Kombinování zdrojů samostatné výroby, zpracování a štíhlé výroby"
-description: "Tento článek obsahuje informace o plánování ve smíšeném režimu. Při plánování ve smíšeném režimu můžete modelovat svůj dodavatelsko-odběratelský řetězec podle toku materiálu. Aplikace Microsoft Dynamics 365 for Operations zajišťuje, že tok materiálu bude probíhat podle vašich modelů bez ohledu na vybrané zásady dodávek (kanbany, výrobní zakázky, nákupní objednávky, dávkové objednávky nebo převodní příkazy)."
+description: "Tento článek obsahuje informace o plánování ve smíšeném režimu. Při plánování ve smíšeném režimu můžete modelovat svůj dodavatelsko-odběratelský řetězec podle toku materiálu. Aplikace Microsoft Dynamics 365 for Finance and Operations zajišťuje, že tok materiálu bude probíhat podle vašich modelů bez ohledu na vybrané zásady dodávek (kanbany, výrobní zakázky, nákupní objednávky, dávkové objednávky nebo převodní příkazy)."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 52931
 ms.assetid: 2e8b5fd1-cee9-45da-a3ae-6961fb020b89
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 686d61f476fbdf95348cacfd93b1e18d51e79732
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 9dbbe540c919d27bafcc10614f308e5b6ba313f1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek obsahuje informace o plánování ve smíšeném režimu. Při plánování ve smíšeném režimu můžete modelovat svůj dodavatelsko-odběratelský řetězec podle toku materiálu. Aplikace Microsoft Dynamics 365 for Operations zajišťuje, že tok materiálu bude probíhat podle vašich modelů bez ohledu na vybrané zásady dodávek (kanbany, výrobní zakázky, nákupní objednávky, dávkové objednávky nebo převodní příkazy). 
+Tento článek obsahuje informace o plánování ve smíšeném režimu. Při plánování ve smíšeném režimu můžete modelovat svůj dodavatelsko-odběratelský řetězec podle toku materiálu. Aplikace Microsoft Dynamics 365 for Finance and Operations zajišťuje, že tok materiálu bude probíhat podle vašich modelů bez ohledu na vybrané zásady dodávek (kanbany, výrobní zakázky, nákupní objednávky, dávkové objednávky nebo převodní příkazy). 
 
 Můžete vybrat celkové strategie pro dodávání produktu bez ohledu na strukturu výrobku.  
 
@@ -41,7 +41,7 @@ Například máte ovládací prvek kanbanu ve shromáždění, kde jsou odebír�
 Rozlišovací schopnost zásad dodávek, které jsou použity při hlavním plánování závisí na dimenzích uskladnění, které jsou povoleny jako dimenze disponibility. K povolení hlavního plánování za účelem řízení doplňování a dodávání z různých typů skladových míst, (například oddělením dílenské výroby pro jiné výrobní jednotky, nebo rozdělením různých typů skladů materiálu a hotových výrobků) doporučujeme, abyste povolili pracoviště a sklad jako dimenze disponibility. Případně lze jako dimenzi disponibility vynechat sklad. V takovém případě při použití rozšířené správy skladu budou všechny přesuny ve skladu řízeny prací ve skladu, zatímco všech přesuny mezi sklady budou řízeny příslušnými kanbany.
 
 ## <a name="supply-policies"></a>Zásady zásobování
-Smíšený způsob plánování Microsoft Dynamics 365 for Operations řídí způsob dodávání výrobku, založené na tom, jak jsou vydávány odvozené požadavky (spotřeba položek z kusovníku \[BOM\])). Podle typu objednávky systém automaticky kontroluje prostředky materiálů, které odpovídají požadavkům.  
+Smíšený způsob plánování v aplikaci Finance and Operations řídí způsob dodávání výrobku na základě toho, jak jsou vydávány odvozené požadavky (spotřeba položek z kusovníku \[BOM\]). Podle typu objednávky systém automaticky kontroluje prostředky materiálů, které odpovídají požadavkům.  
 
 Zásady dodávek lze definovat na úrovni produktu nebo na libovolné rozlišovací schopnosti, která podporuje vaše požadavky. Rozlišovací schopnost zásady dodávek jsou definovány na stránce **Výchozí nastavení objednávky**.  
 
@@ -49,9 +49,9 @@ Zásady dodávek mohou být řízeny produktem, dimenzemi položek (konfigurace,
 
 Výchozí typ objednávky určuje, jaké objednávky vygeneruje hlavní plánování.  
 
-Bez ohledu na to, jak je modelován dodavatelsko-odběratelského řetězec, aplikace Dynamics 365 for Operations podporuje vaši kompilaci zásad dodávek. Můžete mít výrobních zakázky, které byly vytvořeny z kanbanů. Případně lze nastavit dávkovou objednávku, která vyžaduje produkt, který se dodává převodem nebo kanbanem.  
+Bez ohledu na to, jak je modelován dodavatelsko-odběratelského řetězec, aplikace Finance and Operations podporuje vaši kompilaci zásad dodávek. Můžete mít výrobních zakázky, které byly vytvořeny z kanbanů. Případně lze nastavit dávkovou objednávku, která vyžaduje produkt, který se dodává převodem nebo kanbanem.  
 
-Aplikace Dynamics 365 for Operations zajišťuje, že tok materiálu se řídí modelem.  
+Aplikace Finance and Operations zajišťuje, že tok materiálu se řídí modelem.  
 
 Sklad pro výdej materiálu je dynamicky přidělován za běhu po definování zásad dodávky.  
 
@@ -64,7 +64,7 @@ Spotřeba prostředků je důležitá funkce. Spotřeba prostředků umožňuje 
 
 Spotřeba prostředků vyžaduje, aby sklad, jehož materiály se vybírají ze skladu, byly přiřazeny na základě způsobu,jakým je produkt dodáván. Jinak řečeno systém za běhu najde prostředky, které by měly být použity pro výrobu. Na základě těchto prostředků, systém poté vyhledá výdejní sklad.  
 
-Pro práci, která je nezávislá na zásadách zásobování, není nutné změnit informace v Kusovníku, pokud dojde ke změně dodávky. Pro změny ad hoc se aplikace Dynamics 365 for Operations ujistí, že materiály pocházejí ze správného skladu.
+Pro práci, která je nezávislá na zásadách zásobování, není nutné změnit informace v Kusovníku, pokud dojde ke změně dodávky. Pro změny ad hoc se aplikace Finance and Operations ujistí, že materiály pocházejí ze správného skladu.
 
 ## <a name="process-manufacturing--the-production-type"></a>Procesní výroba – typ výroby
 Pro zajištění plné flexibility v kombinovaném režimu doporučujeme použít kusovníky výrobního typu pro všechny produkty. Potom můžete použít výrobní zakázky, kanbany, objednávky přenosu nebo nákupní objednávky k dodání produktu. Pro výrobní proces je nutné použít typ výroby **vzorce**, **souběžného produktu**, **vedlejšího produktu** nebo **položky plánování**. Kanbany a výrobní zakázky nelze použít pro tyto typy výroby.

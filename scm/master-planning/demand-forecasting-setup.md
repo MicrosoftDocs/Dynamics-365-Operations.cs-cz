@@ -3,14 +3,14 @@ title: "Nastavení prognózy poptávky"
 description: "Toto téma popisuje úlohy nastavení, které je třeba provést, aby bylo možné používat prognózy poptávky."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72653
 ms.assetid: c5fa4b09-512d-4349-ac51-cc13da69a160
 ms.search.region: global
@@ -19,10 +19,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f9b0930ac8d26f83be077fe0e6edf917e8fb0f58
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 74d520199410711b80b750a12ee726633e09d01c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -44,9 +44,9 @@ Položka a její dimenze musí být součástí pouze jednoho alokačního klí�
 Chcete-li přidat alokační klíč položky do skladové jednotky zásob, přejděte na **Hlavní plánování** &gt; **Nastavení** &gt; **Prognóza poptávky** &gt; **Alokační klíče položky**. Pomocí stránky **Přiřadit položky** přiřaďte položku k alokačnímu klíči položky.
 
 ## <a name="intercompany-planning-groups"></a>Skupiny mezipodnikového plánování
-Prognóza poptávky generuje prognózy mezi více společnostmi. V aplikaci Microsoft Dynamics 365 for Operations jsou společnosti, které jsou plánovány společně, seskupeny do jedné skupiny pro mezipodnikové plánování. Pokud chcete určit podle společnosti, které alokační klíče položek by měly být zahrnuty pro tvorbu prognóz poptávky, přiřaďte alokační klíč položky členovi skupiny mezipodnikového plánování v nabídce **Hlavní plánování** &gt; **Nastavení** &gt; **Skupiny mezipodnikového plánování**. 
+Prognóza poptávky generuje prognózy mezi více společnostmi. V aplikaci Microsoft Dynamics 365 for Finance and Operations jsou společnosti, které jsou plánovány společně, seskupeny do jedné skupiny pro mezipodnikové plánování. Pokud chcete určit podle společnosti, které alokační klíče položek by měly být zahrnuty pro tvorbu prognóz poptávky, přiřaďte alokační klíč položky členovi skupiny mezipodnikového plánování v nabídce **Hlavní plánování** &gt; **Nastavení** &gt; **Skupiny mezipodnikového plánování**. 
 
-Ve výchozím nastavení pokud nejsou přiřazeny žádné alokační klíče položek k členům skupiny mezipodnikového plánování, prognóza poptávky bude vypočtena pro všechny položky, které jsou přiřazeny ke všem alokačním klíčům položek ze všech společností v aplikaci Dynamics 365 for Operations. Další možnosti pro filtrování společností a alokačních klíčů položek jsou k dispozici na stránce **Vygenerování statistické základní prognózy**. 
+Ve výchozím nastavení pokud nejsou přiřazeny žádné alokační klíče položek k členům skupiny mezipodnikového plánování, prognóza poptávky bude vypočtena pro všechny položky, které jsou přiřazeny ke všem alokačním klíčům položek ze všech společností v aplikaci Finance and Operations. Další možnosti pro filtrování společností a alokačních klíčů položek jsou k dispozici na stránce **Vygenerování statistické základní prognózy**. 
 
 Prohlédněte si počet položek, které jsou předvídány. Zbytečné položek mohou způsobit zvýšení nákladů při použití služby Microsoft Azure Machine Learning.
 
@@ -57,7 +57,7 @@ Prognóza poptávky generuje prognózy ve větším množství. Je tedy nutné v
 
 Prognóza poptávky slouží k provedení prognózy u závislé i nezávislé poptávky. Například pouze pokud označíte pole **Prodejní objednávka** a pokud všechny položky, které jsou považovány při tvorbě prognózy poptávky jsou položky, které jsou prodány, systém vypočítá nezávislou poptávku. Kritické dílčí komponenty však lze přidat k alokačním klíčům položek a zahrnout do prognózy poptávky. V takovém případě pokud označíte pole **Řádek výroby**, vypočítá se závislá prognóza. 
 
-Existují dva způsoby vytvoření základní prognózy v aplikaci Dynamics 365 for Operations. Můžete použít modely prognózy při použití historických dat, nebo můžete pouze zkopírovat historická data do prognózy. Pole **Strategie generování prognózy** umožňuje vybrat mezi těmito dvěma metodami. Chcete-li použít modely prognózy, vyberte **Azure Machine Learning**. 
+Existují dva způsoby vytvoření základní prognózy v aplikaci Finance and Operations. Můžete použít modely prognózy při použití historických dat, nebo můžete pouze zkopírovat historická data do prognózy. Pole **Strategie generování prognózy** umožňuje vybrat mezi těmito dvěma metodami. Chcete-li použít modely prognózy, vyberte **Azure Machine Learning**. 
 
 Klepnutím na tlačítko **Dimenze prognózy** v levém podokně stránky **Parametry vytváření prognózy poptávky** můžete také vybrat sadu dimenzí prognózy, která má být použita při generování prognózy poptávky. Dimenze prognózy označují úroveň podrobností, pro které je prognóza definována. Společnost, pracoviště a alokační klíč položky jsou povinné dimenze prognózy, ale lze rovněž vygenerovat prognózy pro sklad, stav zásob, skupinu odběratelů, účet odběratele, zemi nebo oblast, stát a položky společně se všemi úrovněmi dimenze položky. 
 
@@ -65,7 +65,7 @@ Kdykoli je možné přidat dimenze prognózy na seznam dimenzí, které se použ
 
 Ne všechny položky se chovají stejným způsobem z perspektivy prognózy poptávky. Podobné položky mohou být seskupeny do jednoho alokačního klíče položky a pro každý alokační klíč položky lze nastavit parametry, jako například typy transakcí a nastavení metody prognózy. Klepněte na tlačítko **Alokační klíče položek** v levém podokně stránky **Parametry vytváření prognózy poptávky**. 
 
-Pokud chcete generovat prognózu, aplikace Dynamics 365 for Operations používá webovou službu Machine Learning. Pro připojení ke službě je třeba zadat aplikaci Dynamics 365 for Operations následující informace pro přihlášení ke službě Microsoft Azure Machine Learning Studio:
+Pokud chcete generovat prognózu, aplikace Finance and Operations používá webovou službu Machine Learning. Pro připojení ke službě je třeba zadat aplikaci Finance and Operations následující informace pro přihlášení ke službě Microsoft Azure Machine Learning Studio:
 
 -   Klíč rozhraní API webové služby
 -   Koncový bod URL webové služby
@@ -74,10 +74,10 @@ Pokud chcete generovat prognózu, aplikace Dynamics 365 for Operations použív�
 
 **Poznámka:** Název účtu úložiště Azure a klíč jsou nutné pouze při použití vlastního účtu pro úložiště. Při nasazování místní verze musíte mít vlastní účet úložiště ve službě Azure, abyste mohli používat službu Machine Learning pro přístup k historickým datům. 
 
-Pokud chcete vytvořit předpovědi poptávky, můžete nasadit vlastní službu pomocí experimentů s prognózou poptávky v rámci Machine Learning Studio nebo aplikace Dynamics 365 for Operations. Pokyny pro nasazení experimentů s prognózou poptávky v aplikaci Dynamics 365 for Operations v podobě webové služby jsou k dispozici v aplikaci Dynamics 365 for Operations. Na stránce **Parametry vytváření prognózy poptávky** klepněte na kartu **Azure Machine Learning**.
+Pokud chcete vytvořit předpovědi poptávky, můžete nasadit vlastní službu pomocí experimentů s prognózou poptávky v rámci Machine Learning Studio nebo aplikace Finance and Operations. Pokyny pro nasazení experimentů s prognózou poptávky v aplikaci Finance and Operations v podobě webové služby jsou k dispozici v aplikaci Finance and Operations. Na stránce **Parametry vytváření prognózy poptávky** klepněte na kartu **Azure Machine Learning**.
 
-## <a name="settings-for-the-dynamics-365-for-operations-demand-forecasting-machine-learning-service"></a>Nastavení pro službu Machine Learning pro vytváření prognózy v rámci Dynamics 365 for Operations
-Chcete-li zobrazit parametry, které lze konfigurovat pro službu vytváření prognózy poptávky v aplikaci Dynamics 365 for Operations, přejděte na **Hlavní plánování** &gt; **Nastavení** &gt; **Prognóza poptávky** &gt; **Parametry algoritmu prognózy**. Stránka **Parametry algoritmu prognózy** popisuje výchozí hodnoty parametrů. Tyto parametry lze přepsat na stránce **Parametry vytváření prognózy poptávky**. Na kartě **Hlavní** můžete parametry přepsat globálně, nebo použít kartu **Alokační klíče položek** a přepsat tak parametry pro každý alokační klíč položky. Parametry, které budou přepsány pro alokační klíč položky, ovlivní pouze prognózu položek, které jsou přidruženy k danému alokačnímu klíči položky.
+## <a name="settings-for-the-finance-and-operations-demand-forecasting-machine-learning-service"></a>Nastavení pro službu Machine Learning pro vytváření prognózy v rámci Finance and Operations
+Chcete-li zobrazit parametry, které lze konfigurovat pro službu vytváření prognózy poptávky v aplikaci Finance and Operations, přejděte na **Hlavní plánování** &gt; **Nastavení** &gt; **Prognóza poptávky** &gt; **Parametry algoritmu prognózy**. Stránka **Parametry algoritmu prognózy** popisuje výchozí hodnoty parametrů. Tyto parametry lze přepsat na stránce **Parametry vytváření prognózy poptávky**. Na kartě **Hlavní** můžete parametry přepsat globálně, nebo použít kartu **Alokační klíče položek** a přepsat tak parametry pro každý alokační klíč položky. Parametry, které budou přepsány pro alokační klíč položky, ovlivní pouze prognózu položek, které jsou přidruženy k danému alokačnímu klíči položky.
 
 <a name="see-also"></a>Viz také
 --------

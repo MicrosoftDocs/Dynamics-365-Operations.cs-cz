@@ -3,14 +3,14 @@ title: "Přehled nákupních objednávek"
 description: "Tento článek poskytuje obecné informace o nákupních objednávkách a odkazy na další články, které se týkají různých fází, kterými prochází nákupní objednávka."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93083
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 88fa3fb97621e0f4a226a45b36809e824c807420
+ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
+ms.openlocfilehash: a5dd28e79cbd66e79311c0549c63ea844394ab14
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/09/2017
 
 
 ---
@@ -29,6 +29,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="purchase-order-overview"></a>Přehled nákupních objednávek
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Tento článek poskytuje obecné informace o nákupních objednávkách a odkazy na další články, které se týkají různých fází, kterými prochází nákupní objednávka.
@@ -46,7 +48,7 @@ Následující články poskytují přehled o různých fázích, kterými proch
 -   [Vytvoření nákupní objednávky](purchase-order-creation.md)
 -   [Potvrzení a odmítnutí nákupní objednávky](purchase-order-approval-confirmation.md)
 -   [Příjem produktů proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
--   [Přehled faktur dodavatele](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+-   [Přehled faktur dodavatele](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 ## <a name="types-of-purchase-orders"></a>Typy nákupních objednávek
 Existují tři typy nákupních objednávek: Při vytváření nákupní objednávky je nutné zadat její typ. Výchozí typ pro nové objednávky můžete nastavit na stránce **Parametry modulu Zásobování a zdroje**.
@@ -90,7 +92,7 @@ Pole **Stav schválení** se používá, když nákupní objednávka prochází 
 
 [Příjem produktů proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
 
-[Přehled faktur dodavatele](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Přehled faktur dodavatele](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

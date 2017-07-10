@@ -1,9 +1,9 @@
 ---
 title: "Plánování rozpočtu"
-description: "Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Microsoft Dynamics 365 for Operations v oblasti Plánování rozpočtu. Tento seminář ukazuje příklad rychlé konfigurace modulu plánování rozpočtu a znázorňuje, jak lze provést plánování rozpočtu pomocí této konfigurace.  Tento seminář se zaměří na následujících obchodní procesy nebo úkoly -    - Vytvoření organizační hierarchie pro plánování rozpočtu a konfiguraci zabezpečení pro uživatele   - Definování scénářů plánu rozpočtu, sloupců plánu rozpočtu, rozvržení a šablon aplikace Excel   - Vytvoření a aktivace procesu plánování rozpočtu   - Vytvoření dokumentu plánu rozpočtu za použití skutečných hodnot z hlavní knihy   - Použití přidělení k úpravě dat dokumentu plánu rozpočtu   - Úprava dat dokumentu plánu rozpočtu v aplikaci Excel"
+description: "Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition v oblasti Plánování rozpočtu. Tento seminář ukazuje příklad rychlé konfigurace modulu plánování rozpočtu a znázorňuje, jak lze provést plánování rozpočtu pomocí této konfigurace.  Tento seminář se zaměří na následujících obchodní procesy nebo úkoly -    - Vytvoření organizační hierarchie pro plánování rozpočtu a konfiguraci zabezpečení pro uživatele   - Definování scénářů plánu rozpočtu, sloupců plánu rozpočtu, rozvržení a šablon aplikace Excel   - Vytvoření a aktivace procesu plánování rozpočtu   - Vytvoření dokumentu plánu rozpočtu za použití skutečných hodnot z hlavní knihy   - Použití přidělení k úpravě dat dokumentu plánu rozpočtu   - Úprava dat dokumentu plánu rozpočtu v aplikaci Excel"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: dbe2b386de9e88af354015705e1444987a3f7e82
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 11b5ffacef06fd3e83c61cd14da11ad645eec335
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,12 +31,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Microsoft Dynamics 365 for Operations v oblasti Plánování rozpočtu. Tento seminář ukazuje příklad rychlé konfigurace modulu plánování rozpočtu a znázorňuje, jak lze provést plánování rozpočtu pomocí této konfigurace.  Tento seminář se zaměří na následujících obchodní procesy nebo úkoly -    - Vytvoření organizační hierarchie pro plánování rozpočtu a konfiguraci zabezpečení pro uživatele   - Definování scénářů plánu rozpočtu, sloupců plánu rozpočtu, rozvržení a šablon aplikace Excel   - Vytvoření a aktivace procesu plánování rozpočtu   - Vytvoření dokumentu plánu rozpočtu za použití skutečných hodnot z hlavní knihy   - Použití přidělení k úpravě dat dokumentu plánu rozpočtu   - Úprava dat dokumentu plánu rozpočtu v aplikaci Excel 
+Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition v oblasti Plánování rozpočtu. Tento seminář ukazuje příklad rychlé konfigurace modulu plánování rozpočtu a znázorňuje, jak lze provést plánování rozpočtu pomocí této konfigurace.  Tento seminář se zaměří na následujících obchodní procesy nebo úkoly -    - Vytvoření organizační hierarchie pro plánování rozpočtu a konfiguraci zabezpečení pro uživatele   - Definování scénářů plánu rozpočtu, sloupců plánu rozpočtu, rozvržení a šablon aplikace Excel   - Vytvoření a aktivace procesu plánování rozpočtu   - Vytvoření dokumentu plánu rozpočtu za použití skutečných hodnot z hlavní knihy   - Použití přidělení k úpravě dat dokumentu plánu rozpočtu   - Úprava dat dokumentu plánu rozpočtu v aplikaci Excel 
 
-<a name="prerequisites"></a>Předpoklady 
+<a name="prerequisites"></a>Požadavky 
 ------------------
 
-Pro tento kurz budete potřebovat přístup k prostředí aplikace Dynamics 365 for Operations s ukázkovými daty Contoso a přiřazení k instanci jako správce. Pro tento seminář nepoužívejte soukromý režim prohlížeče - odhlaste se z jiného účtu v prohlížeči podle potřeby a přihlaste se pomocí údajů správce Dynamics 365 for Operations. Při přihlašování do aplikace Dynamics 365 for Operations **MUSÍTE** zaškrtnout políčko „Zůstat přihlášen”. Tímto krokem zajistíte vytvoření trvalého souboru cookie, který aplikace Excel momentálně vyžaduje. Přihlašujete-li se k aplikaci Dynamics 365 for Operations pomocí jiného prohlížeče než IE, zobrazí se výzva k přihlášení v aplikaci Excel. Po kliknutí na tlačítko „Přihlásit” v aplikaci Excel se otevře místní okno IE a při přihlašování **MUSÍTE** zaškrtněte políčko „Zůstat přihlášeni”. Pokud se zdá, že volba „Přihlásit se” v aplikaci Excel nemá žádný účinek, vyprázdněte mezipaměť souborů cookie v IE.
+Pro tento kurz budete potřebovat přístup k prostředí aplikace Finance and Operations s ukázkovými daty Contoso a přiřazení k instanci jako správce. Pro tento seminář nepoužívejte soukromý režim prohlížeče - odhlaste se z jiného účtu v prohlížeči podle potřeby a přihlaste se pomocí údajů správce aplikace Finance and Operations. Při přihlašování do aplikace Finance and Operations **MUSÍTE** zaškrtnout políčko „Zůstat přihlášen”. Tímto krokem zajistíte vytvoření trvalého souboru cookie, který aplikace Excel momentálně vyžaduje. Přihlašujete-li se k aplikaci Finance and Operations pomocí jiného prohlížeče než IE, zobrazí se výzva k přihlášení v aplikaci Excel. Po kliknutí na tlačítko „Přihlásit” v aplikaci Excel se otevře místní okno IE a při přihlašování **MUSÍTE** zaškrtněte políčko „Zůstat přihlášeni”. Pokud se zdá, že volba „Přihlásit se” v aplikaci Excel nemá žádný účinek, vyprázdněte mezipaměť souborů cookie v IE.
 
 ## <a name="scenario-overview"></a>**Přehled scénáře**
 Julie pracuje jako finanční manažerka společnosti Contoso Entertainment Systems v Německu (DEMF). S blížícím se fiskálním rokem 2016 potřebuje pracovat na nastavení rozpočtu společnosti pro nadcházející rok. Příprava rozpočtu vypadá takto:
@@ -148,9 +148,9 @@ Sloupce plánu rozpočtu jsou buď peněžní, nebo množstevní sloupce, které
 
 [![Automatické vyplnění](./media/screenshot22.png)](./media/screenshot22.png) 
 
-4.7. Vraťte se do aplikace 365 Dynamics for Operations a obnovte stránku. Publikované hodnoty budou zobrazeny v aplikaci 365 Dynamics for Operations. 
+4.7. Vraťte se do aplikace Finance and Operations a obnovte stránku. Publikované hodnoty budou zobrazeny v aplikaci Finance and Operations. 
 
-[![Aktualizovat](./media/screenshot23.png)](./media/screenshot23.png)
+[![Obnovit](./media/screenshot23.png)](./media/screenshot23.png)
 
 ## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Úkol 5: Vytváření rozvržení dokumentu plánu rozpočtu a šablon
 Rozvržení definuje, jakým způsobem bude mřížka řádků dokumentu plánu rozpočtu vypadat, až uživatel otevře dokument plánu rozpočtu. Dále je možné přepnout rozvržení dokumentu plánu rozpočtu, aby se zobrazila stejná data v různých úhlech. Protože Julie definovala sloupce pro použití s dokumentem plánu rozpočtu, potřebuje nyní vytvořit rozvržení dokumentu plánu rozpočtu, které bude vypadat podobně jako tabulka aplikace Excel, kterou používá k vytvoření dat rozpočtu (viz část Přehled scénáře v tomto semináři) 
@@ -233,7 +233,7 @@ Skutečné částky z předchozího roku se zkopírují do aktuálního rozpočt
 
 [![Publikovat](./media/screenshot36.png)](./media/screenshot36.png)
 
-9.3. Vraťte se k dokumentu plánu rozpočtu v aplikaci Dynamics 365 for Operations. Klikněte na tlačítko Workflow &gt; Odeslat dokument k automatickému schválení
+9.3. Vraťte se k dokumentu plánu rozpočtu v aplikaci Finance and Operations. Klikněte na tlačítko Workflow &gt; Odeslat dokument k automatickému schválení
 
 [![Automaticky schválit](./media/screenshot37.png)](./media/screenshot37.png) 
 

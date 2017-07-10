@@ -3,7 +3,7 @@ title: "Pracovní prostor uzavření finančního období"
 description: "V tomto článku je přehled pracovního prostoru Uzavření finančního období a příslušné konfigurace."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 788b0af30eb750cad8f958ecc4c33cf989b2a417
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 5de5e3aad0b7a5853653ae53326dac078ec94fea
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -65,7 +65,7 @@ Možnost **Dokončení úkolu** musí být vybrána ručně po dokončení úkol
 Můžete zobrazit všechny úkoly pro aktuální a předchozí období uzavření ze stránky se seznamem **Všechny úkoly uzavření finančního období**. Tato stránka se seznamem je nejvhodnější pro historickou analýzu procesu uzavření, protože obsahuje informace o plánovaném datu splatnosti, datu skutečného dokončení a osobě, která úlohu dokončila. Informace na této stránce se seznamem můžete snadno exportovat do aplikace Excel pro vytváření sestav a účely auditování.
 
 ## <a name="financial-period-close-configuration-page"></a>Stránka Konfigurace uzavření finančního období
-Než bude možné použít pracovní prostor **Uzavření finančního období**, je nutné nastavit proces v aplikaci Microsoft Dynamics 365 for Operations pomocí stránky **Konfigurace uzavření finančního období**. (Klikněte na tlačítko **Hlavní kniha** &gt; **Závěrka období** &gt; **Konfigurace uzavření finančního období**.)
+Než bude možné použít pracovní prostor **Uzavření finančního období**, je nutné nastavit proces v aplikaci Microsoft Dynamics 365 for Finance and Operations pomocí stránky **Konfigurace uzavření finančního období**. (Klikněte na tlačítko **Hlavní kniha** &gt; **Závěrka období** &gt; **Konfigurace uzavření finančního období**.)
 
 ### <a name="resources"></a>Zdroje
 
@@ -90,7 +90,7 @@ Pomocí šablony finanční uzávěrky definujte všechny úkoly, které jsou so
 
 Úkol v šabloně můžete přiřadit jedné nebo více společnostem, na které se vztahuje tento úkol. Pokud je jiná osoba je přiřazena k dokončení tohoto pracovního úsilí v každé společnosti, může být užitečné vytvořit více úkolů pro stejné pracovní úsilí. Vytvořte jeden úkol pro každou společnost. 
 
-Položka nabídky **Odkaz na úkol** je spojena s pracovním úsilím úkolu a lze ji použít k přechodu přímo na příslušnou stránku z odkazu na úkol v pracovním prostoru. Například úkol uzávěrky spuštění procesu přecenění měny závazků lze propojit s příslušnou stránkou **Přecenění cizí měny** stránky v 365 Microsoft Dynamics 365 for Operations. Můžete také odkazovat na externí adresu URL. 
+Položka nabídky **Odkaz na úkol** je spojena s pracovním úsilím úkolu a lze ji použít k přechodu přímo na příslušnou stránku z odkazu na úkol v pracovním prostoru. Například úkol uzávěrky spuštění procesu přecenění měny závazků lze propojit s příslušnou stránkou **Přecenění cizí měny** v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Můžete také odkazovat na externí adresu URL. 
 
 > [!Tip] Pokud chcete odkázat konkrétní sestavu aplikace Management Reporter na úkol uzávěrky finančního období, můžete použít adresu URL sestavy. Chcete-li přistupovat k adrese URL sestavy, otevřete sestavu v Návrháři sestav a klikněte na možnost **Soubor** &gt; **Zobrazit sestavu**, aby se sestava otevřela v prohlížeči. Můžete zkopírovat adresu URL v řádku adresa v prohlížeči a vložit ji do pole **Odkaz na úkol** **URL**. 
 

@@ -3,7 +3,7 @@ title: "Přehled DPH"
 description: "Tento článek podává přehled o systému DPH. Vysvětluje prvky nastavení DPH a jejich společné fungování."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bdb3188f533cf0cdb1e70c63891408e45d02418d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 415928125c14dfc69020b712f281835701ba2f83
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,6 +30,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="sales-tax-overview"></a>Přehled DPH
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Tento článek podává přehled o systému DPH. Vysvětluje prvky nastavení DPH a jejich společné fungování.
@@ -73,7 +75,7 @@ Pro každou transakci (řádky dokumentu k prodeji/nákupu, deníky a tak dále)
 U každé transakce můžete vyhledat vypočítanou daň z prodeje otevřením stránky **Transakce DPH**. Můžete vyhledávat daň z prodeje pro řádek dokumentu nebo pro celý dokument. U některých dokumentů (například faktura dodavatele a hlavní deníky) můžete upravit vypočítanou daň z prodeje, pokud původní dokument vykazuje odchylky částky.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Vyrovnání a vykazování daně z prodeje
-Daň z prodeje musí být vykázána a zaplacena finančním úřadům v daných intervalech (měsíčně, čtvrtletně atd.). Microsoft Dynamics 365 for Operations nabízí funkce, které vám umožňují vyrovnat účty daní pro interval a vyrovnat zůstatky na účet vyrovnání daně, jak je uvedeno ve skupinách pro zaúčtování do hlavní knihy. Tato funkce je k dispozici na stránce **Vyrovnat a zaúčtovat DPH**. Je nutné zadat období vyrovnání daně, pro které by měna být vyrovnána DPH. 
+Daň z prodeje musí být vykázána a zaplacena finančním úřadům v daných intervalech (měsíčně, čtvrtletně atd.). Microsoft Dynamics 365 for Finance and Operations, Enterprise edition nabízí funkce, které umožňují vyrovnat účty DPH pro daný interval a vyrovnat zůstatky na účtu pro vyrovnání daně podle údajů ve skupinách hlavní knihy. Tato funkce je k dispozici na stránce **Vyrovnat a zaúčtovat DPH**. Je nutné zadat období vyrovnání daně, pro které by měna být vyrovnána DPH. 
 
 Poté, co byla daň z prodeje zaplacena, zůstatky na účtu vyrovnání daně z prodeje by měly být srovnány dle bankovního účtu. Pokud úřad pro kontrolu daně z prodeje, který je uveden v období vyrovnání daně z prodeje, souvisí s účtem dodavatele, zůstatek daně z prodeje bude zaúčtován jako otevřená faktura dodavatele a lze jej zahrnout do návrhu běžné platby.
 

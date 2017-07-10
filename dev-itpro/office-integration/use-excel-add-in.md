@@ -1,9 +1,9 @@
 ---
 title: "Použití doplňku Excel"
-description: "Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics Office pro aplikaci Excel. Chcete-li otevřít data entity, můžete začít z aplikace Excel nebo Microsoft Dynamics 365 for Operations."
+description: "Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics Office pro aplikaci Excel."
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c391fb70d837db9c0f167b392291fc1c5cc2bb53
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: f55e1e89d0e48819962c169a56f0f27dc0d792b4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -30,16 +30,16 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics Office pro aplikaci Excel. Chcete-li otevřít data entity, můžete začít z aplikace Excel nebo Microsoft Dynamics 365 for Operations.
+Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics Office pro aplikaci Excel. Chcete-li otevřít data entity, můžete začít z aplikace Excel nebo Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 Otevřením entity v aplikaci Microsoft Excel můžete rychle a snadno zobrazit a upravovat data pomocí doplňku Microsoft Dynamics Office pro aplikaci Excel. Tento doplněk vyžaduje aplikaci Microsoft Excel 2016. **Poznámka:** Pokud je klient Microsoft Azure Active Directory (Azure AD) nakonfigurován pro použití služby Active Directory Federation Services (AD FS), musíte ověřit, že nebyla použita aktualizace pro květen 2016, aby vás doplněk aplikace Excel mohl správně přihlásit.
 
-## <a name="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-operations"></a>Otevření dat entity v Excelu při spuštění z Dynamics 365 for Operations
-1.  Nastránce v aplikaci Microsoft Dynamics 365 for Operations klikněte na **Otevřít v sadě Microsoft Office**. Pokud je kořenový zdroj dat (tabulka) pro stránku stejný jako kořenový zdroj dat kořenové pro libovolnou entitu, jsou pro stránku generovány výchozí možnosti **Otevřít v aplikaci Excel**. Možnosti **Otevřít v aplikaci Excel** možnosti najdete na často používaných stránkách jako **Všichni dodavatelé** a **Všichni zákazníci**.
+## <a name="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-finance-and-operations"></a>Otevření dat entity v Excelu při spuštění z Dynamics 365 for Finance and Operations
+1.  Na stránce v aplikaci Dynamics 365 for Finance and Operations klikněte na **Otevřít v sadě Microsoft Office**. Pokud je kořenový zdroj dat (tabulka) pro stránku stejný jako kořenový zdroj dat kořenové pro libovolnou entitu, jsou pro stránku generovány výchozí možnosti **Otevřít v aplikaci Excel**. Možnosti **Otevřít v aplikaci Excel** možnosti najdete na často používaných stránkách jako **Všichni dodavatelé** a **Všichni zákazníci**.
 2.  Klikněte na **Otevřít v aplikaci Excel** otevřete sešit, který je generován. Tento sešit obsahuje závazné informace pro entitu, ukazatel pro vaše prostředí a ukazatel na doplněk aplikace Excel.
 3.  V aplikaci Excel klepněte na tlačítko **Povolit úpravy**. Tím povolíte spuštění doplňku aplikace Excel spustil. Doplněk aplikace Excel je spuštěn v podokně na pravé straně okna aplikace Excel.
 4.  Pokud používáte doplněk aplikace Excel poprvé, klepněte na **Důvěřovat tomuto doplňku**.
-5.  Pokud se zobrazí výzva k přihlášení, klikněte na **Přihlásit**a potom se přihlaste pomocí stejných pověření, jaká jste použili pro přihlášení k Dynamics 365 for Operations. Doplněk aplikace Excel bude používat předchozí přihlašovací kontext z aplikace Internet Explorer a automaticky vás přihlásí, pokud je to možné. Proto ověřte uživatelské jméno v pravém horním rohu doplňku aplikace Excel.
+5.  Pokud se zobrazí výzva k přihlášení, klikněte na **Přihlásit** a potom se přihlaste pomocí stejných pověření, jaká jste použili pro přihlášení k aplikaci Dynamics 365 for Finance and Operations. Doplněk aplikace Excel bude používat předchozí přihlašovací kontext z aplikace Internet Explorer a automaticky vás přihlásí, pokud je to možné. Proto ověřte uživatelské jméno v pravém horním rohu doplňku aplikace Excel.
 
 Doplněk aplikace Excel automaticky načte data entity, kterou jste vybrali. Všimněte si, že v sešitu nebudou žádná data, dokud ho doplněk aplikace Excel nenačte.
 
@@ -48,12 +48,12 @@ Doplněk aplikace Excel automaticky načte data entity, kterou jste vybrali. Vš
 2.  V Office Storu vyhledejte klíčové slovo "Dynamics" a klikněte na tlačítko **Přidat** vedle položky **Doplněk Microsoft Dynamics Office** (doplněk aplikace Excel).
 3.  Pokud používáte doplněk aplikace Excel poprvé, klepněte na **Důvěřovat tomuto doplňku** pro povolení spuštění doplňku aplikace Excel. Doplněk aplikace Excel je spuštěn v podokně na pravé straně okna aplikace Excel.
 4.  Klepněte na tlačítko **Přidat informace o serveru** k otevření podokna **Možnosti**.
-5.  Zkopírujte adresu URL prohlížeče z cílové instance aplikace Dynamics 365 for Operations, vložte ho do pole **Adresa URL serveru** a potom odstraňte vše za názvem hostitele. Výsledná adresa URL by měla mít pouze název hostitele.
+5.  Zkopírujte adresu URL prohlížeče z cílové instance aplikace Dynamics 365 for Finance and Operations, vložte ho do pole **Adresa URL serveru** a potom odstraňte vše za názvem hostitele. Výsledná adresa URL by měla mít pouze název hostitele.
 Například pokud je adresa URL https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage, odstraňte vše položky s výjimkou **https://xxx.dynamics.com**.
 6.  Kliknutím na **OK** a potom na **Ano** potvrďte změnu. Doplněk aplikace Excel se restartuje a načte metadata. Tlačítko **Návrh** je teď dostupné. Pokud má doplněk aplikace Excel tlačítko **Načíst aplety**, pravděpodobně nejste přihlášeni jako správný uživatel. Další informace naleznete v tématu "Zobrazuje se tlačítko Načíst aplety" v části "Poradce při potížích" tohoto tématu.
 7.  Klikněte na možnost **Návrh**. Doplněk aplikace Excel načte metadata entity.
 8.  Klikněte na **Přidat tabulku**. Zobrazí se seznam entit. Entity jsou uvedeny ve formátu "Název – popisek".
-9.  Vyberte entitu v seznamu, jako například **Zákazník - zákazníci**a potom klepněte na tlačítko **Další**.
+9.  Vyberte entitu v seznamu, jako například **Zákazník - zákazníci** a potom klepněte na tlačítko **Další**.
 10. Chcete-li přidat pole ze seznamu **Dostupná pole** do seznamu **Vybraná pole**, klikněte na pole a potom na tlačítko **Přidat**. Nebo na pole poklepejte.
 11. Po dokončení přidání polí do seznamu **Vybraná pole** se ujistěte, že kurzor je na správném místě v listu (například buňka A1), a potom klikněte na tlačítko **Hotovo**. Potom kliknutím na tlačítko **Hotovo** ukončete návrháře.
 12. Klepněte na tlačítko **Aktualizovat** pro načtení sady dat.

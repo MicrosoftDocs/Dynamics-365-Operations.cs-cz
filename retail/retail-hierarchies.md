@@ -1,28 +1,29 @@
 ---
 title: Hierarchie maloobchodu
-description: "Tento článek popisuje maloobchodní hierarchie v aplikaci Microsoft Dynamics AX."
+description: "Tento článek popisuje maloobchodní hierarchie v aplikaci Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 15851
 ms.assetid: dfa11d41-2a0c-4cde-99b6-058c49176c94
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2544b299267ec6e21adf5c657c23f545fc66a0b3
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: a425680fb4d2e2da8d96acd843694ea9a07e29f0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-Tento článek popisuje maloobchodní hierarchie v aplikaci Microsoft Dynamics AX.
+Tento článek popisuje maloobchodní hierarchie v aplikaci Microsoft Dynamics 365 for Retail.
 
 Můžete vytvořit hierarchii kategorií maloobchodu a uspořádat produkty, které prodáváte prostřednictvím prodejních kanálů. Hierarchie maloobchodních produktů můžete použít k uspořádání produktů do kategorií nebo k jejich seskupení. Potom můžete tyto produkty použít k vytvoření sortimentu produktů a věrnostních programů pro odběratele. Lze také přiřadit atributy a vlastnosti produktu, přiřadit cenové struktury, zahrnout produkty do promoakcí produktů a použít produkty k vykazování. Můžete vytvořit jednu hierarchii kategorií maloobchodu představující všechny produkty a kategorie v rámci organizace a potom tuto hierarchii kategorií můžete použít pro více účelů. Alternativně můžete vytvořit více hierarchií kategorií maloobchodu pro zvláštní účely, jako je propagace produktu. Při vytváření hierarchie maloobchodních produktů je nutné přiřadit typ kategorie hierarchie k identifikaci účelu hierarchie kategorií. Například pouze hierarchie produktů, kterým je přiřazen typ **Hierarchie navigace maloobchodu**, jsou odkazovány při procházení produktů podle kategorie online nebo na pokladním místě (POS).
 

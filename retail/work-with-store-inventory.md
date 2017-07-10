@@ -16,12 +16,12 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail Version
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5e5043d5951015fc14d29989ef4cab20a8b24f3b
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 1a5f2cd60e09b67cee4bab211bba4e07e9ef181f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -36,14 +36,16 @@ Tento článek popisuje typy dokumentů, které můžete použít ke správě z�
 Typy následující dokumentů slouží ke správě skladových zásob v organizaci.
 
 ## <a name="purchase-orders"></a>Nákupní objednávky
-Nákupní objednávky se vytvářejí v ústředí. Pokud je maloobchodní sklad zahrnut v záhlaví nákupní objednávky, objednávku lze přijmout v obchodě pomocí řešení Modern POS (MPOS) nebo Cloud POS v aplikaci Microsoft Dynamics 365 for Operations – Retail. Po zadání množství, která jsou přijata v obchodě, mohou být tato množství místně uložena pro další úpravy. Množství lze také potvrdit a odeslat do ústředí. V ústředí se množství, které bylo přijato v obchodě, zobrazuje v aplikaci Microsoft Dynamics 365 for Operations, v poli **Přijmout nyní** v nákupní objednávce.
+Nákupní objednávky se vytvářejí v ústředí. Pokud je maloobchodní sklad zahrnut v záhlaví nákupní objednávky, objednávku lze přijmout v obchodě pomocí řešení Modern POS (MPOS) nebo Cloud POS v aplikaci Microsoft Dynamics 365 for Retail. Po zadání množství, která jsou přijata v obchodě, mohou být tato množství místně uložena pro další úpravy. Množství lze také potvrdit a odeslat do ústředí. V ústředí se množství, které bylo přijato v obchodě, zobrazuje v aplikaci Microsoft Dynamics 365 for Retail, v poli **Přijmout nyní** v nákupní objednávce.
 
 ## <a name="transfer-orders"></a>Převodní příkazy
-Převodní příkaz může stanovit, že určitý obchod je místo, ze kterého mohou být položky expedovány. V tomto případě se převodní příkaz zobrazí v obchodě jako požadavek vyskladnění v MPOS nebo Cloud POS. Jakmile jsou požadovaná množství vyskladněna, jsou potvrzena a odeslána do ústředí. V ústředí se množství, které bylo vyzvednuto v obchodě, zobrazuje v aplikaci Microsoft Dynamics 365 for Operations, v poli **Expedovat nyní** v převodním příkazu. Převodní příkaz může stanovit, že určitý obchod je místo, do kterého mohou být položky expedovány. V tomto případě se převodní příkaz zobrazí v obchodě jako příjmová žádanka v MPOS nebo Cloud POS. Po zadání množství, která jsou přijata v obchodě, mohou být tato množství místně uložena pro další úpravy. Množství lze také potvrdit a odeslat do ústředí. V ústředí se množství, které bylo přijato v obchodě, zobrazuje v aplikaci Microsoft Dynamics 365 for Operations, v poli **Přijmout nyní** v převodním příkazu.
+Převodní příkaz může stanovit, že určitý obchod je místo, ze kterého mohou být položky expedovány. V tomto případě se převodní příkaz zobrazí v obchodě jako požadavek vyskladnění v MPOS nebo Cloud POS. Jakmile jsou požadovaná množství vyskladněna, jsou potvrzena a odeslána do ústředí. V ústředí se množství, které bylo vyzvednuto v obchodě, zobrazuje v aplikaci Microsoft Dynamics 365 for Retail v poli **Expedovat nyní** v převodním příkazu. Převodní příkaz může stanovit, že určitý obchod je místo, do kterého mohou být položky expedovány. V tomto případě se převodní příkaz zobrazí v obchodě jako příjmová žádanka v MPOS nebo Cloud POS. Po zadání množství, která jsou přijata v obchodě, mohou být tato množství místně uložena pro další úpravy. Množství lze také potvrdit a odeslat do ústředí. V ústředí se množství, které bylo přijato v obchodě, zobrazuje v aplikaci Microsoft Dynamics 365 for Retail, v poli **Přijmout nyní** v převodní objednávce.
 
 ## <a name="stock-counts"></a>Počty na skladě
 Inventury mohou být plánované nebo neplánované. Plánované inventury zahajuje ústředí, které také určuje, které položky musí být spočítány. Ústředí vytvoří dokument inventury skladu, který lze přijmout v obchodě, kde jsou množství skutečných zásob na skladě zadána v MPOS nebo Cloud POS. Neplánované maloobchodní inventury jsou zahájeny v obchodě a množství skutečných zásob na skladě jsou aktualizována v MPOS nebo Cloud POS. Na rozdíl od plánovaných maloobchodních inventur nemají neplánované maloobchodní inventury předdefinovaný seznam položek. Po dokončení obou typů inventury budou potvrzeny a odeslány do ústředí. V ústředí bude inventura ověřena a zaúčtována.
 
+## <a name="inventory-lookup"></a>Vyhledávání zásob
+Na stránce vyhledávání zásob lze zobrazit aktuální množství produktu na skladě pro více obchodů a skladů. Kromě aktuálního množství na skladě je možné zobrazit budoucí množství, které lze slíbit (ATP) pro každý jednotlivý obchod. Chcete-li tak učinit, vyberte obchod, pro který chcete zobrazit množství ATP, a klikněte na **Zobrazit dostupnost obchodu**.
 
 
 

@@ -3,25 +3,27 @@ title: "Přehled objednávek odběratele"
 description: "Toto téma obsahuje informace o objednávkách odběratele v Retail Modern POS (MPOS). Objednávky odběratele jsou označovány také jako speciální objednávky. Téma obsahuje diskuzi o souvisejících parametrech a transakčních tocích."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 260594
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e96579437ab59e99268263a51fc589eaacb98cc1
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 89e79c7227e05eec539d9bb142b8f41de092f01b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -46,8 +48,8 @@ Zde jsou některé parametry, které lze nastavit na stránce **Parametry maloob
 
 -   **Výchozí procento zálohy** – Zadejte částku, kterou musí zákazník zaplatit jako zálohu před tím, než může objednávku potvrdit. Výchozí minimální záloha se vypočítá jako procento z hodnoty objednávky. V závislosti na oprávněních může zaměstnanec obchodu přepsat částku pomocí možnosti **Přepsání zálohy**.
 -   **Procento poplatku za zrušení** – Pokud se použije poplatek při zrušení objednávky odběratele, určete výši tohoto poplatku.
--   **Kód poplatku za zrušení** – Pokud bude použit poplatek při zrušení objednávky odběratele, tento poplatek se projeví v kódu poplatku na prodejní objednávce v aplikaci Microsoft Dynamics AX. Použijte tento parametr k definování kódu poplatku za zrušení.
--   **Kód dopravného** – Prodejce můžete účtovat dodatečný poplatek za dodání zboží zákazníkovi. Výše tohoto dopravného se odrazí v kódu nákladů na prodejní objednávce v aplikaci Dynamics AX. Tento parametr použijte k mapování kódu dopravného na dopravné v objednávce odběratele.
+-   **Kód poplatku za zrušení** – Pokud bude použit poplatek při zrušení objednávky odběratele, tento poplatek se projeví v kódu poplatku na prodejní objednávce. Použijte tento parametr k definování kódu poplatku za zrušení.
+-   **Kód dopravného** – Prodejce můžete účtovat dodatečný poplatek za dodání zboží zákazníkovi. Výše tohoto dopravného se odrazí v kódu nákladů na prodejní objednávce. Tento parametr použijte k mapování kódu dopravného na dopravné v objednávce odběratele.
 -   **Refundovat dopravné** – Určete, zda je dopravné přidružené k objednávce odběratele vratné.
 -   **Maximální částka bez schválení** -Pokud je dopravné vratné, určete maximální částku refundace dopravného napříč vratkami. Pokud dojde k překročení této částky, bude vyžadováno přepsání manažerem, aby bylo možné pokračovat s refundací. Pro následující scénáře může refundace dopravného překročit původně zaplacenou částku:
     -   Poplatky jsou použity na úrovni záhlaví prodejní objednávky a při vrácení určitého množství produktu nelze určit maximální refundaci dopravného povolenou pro produkty a množství takovým způsobem, který by byl použitelný pro všechny zákazníky maloobchodu.
@@ -58,7 +60,7 @@ Zde jsou některé parametry, které lze nastavit na stránce **Parametry maloob
 
 1.  Přidejte zákazníka do transakce
 2.  Přidejte produkty do košíku.
-3.  Klikněte na tlačítko **Vytvořit objednávku odběratele**a potom vyberte typ objednávky. Typ objednávky může být buď **Objednávka odběratele** nebo **Nabídka**.
+3.  Klikněte na tlačítko **Vytvořit objednávku odběratele** a potom vyberte typ objednávky. Typ objednávky může být buď **Objednávka odběratele** nebo **Nabídka**.
 4.  Klikněte na tlačítko **Odeslat vybrané** nebo **Odeslat vše** k dodání výrobků na adresu z účtu odběratele, zadejte požadované datum expedice a určete dopravné.
 5.  Klikněte na tlačítko **Vyzvednout vybrané** nebo **Vyzvednout vše** pro výběr produktů, které bude být vyzvednuty z aktuálního skladu nebo jiného skladu v určité datum.
 6.  Pokud je požadována záloha, vyberte částku zálohy.
@@ -90,10 +92,10 @@ Objednávky odběratele lze vytvořit z klienta pokladního místa buď v synchr
 
 ### <a name="enable-customer-orders-to-be-created-in-asynchronous-mode"></a>Povolení vytvoření objednávky odběratele v asynchronním režimu
 
-1.  V aplikaci Dynamics AX klikněte na **Maloobchodní a velkoobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profil POS** &gt; **Funkční profily**.
+1.  Klikněte na **Retail** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profil POS** &gt; **Funkční profily**.
 2.  Na pevné záložce **Obecné** nastavte možnost **Vytvořit objednávku odběratele v asynchronním režimu** na **Ano**.
 
-Když je možnost **Vytvořit objednávku odběratele v asynchronním režimu** nastavena na **Ano**, objednávky odběratelů se vždy vytvářejí v asynchronním režimu, i když je k dispozici služba Retail Transaction Service. Pokud nastavíte tuto možnost na **Ne**, objednávky odběratelů jsou vždy vytvářeny v synchronním režimu pomocí služby RTS. Při vytváření objednávek odběratelů v asynchronním režimu jsou objednávky vyžádány a vloženy do aplikace Dynamics AX pomocí úloh na vyžádání (úlohy P). Odpovídající prodejní objednávky se vytvoří v aplikaci Dynamics AX buď při manuálním spuštění možnosti **Synchronizovat objednávky** nebo pomocí dávkového zpracování.
+Když je možnost **Vytvořit objednávku odběratele v asynchronním režimu** nastavena na **Ano**, objednávky odběratelů se vždy vytvářejí v asynchronním režimu, i když je k dispozici služba Retail Transaction Service. Pokud nastavíte tuto možnost na **Ne**, objednávky odběratelů jsou vždy vytvářeny v synchronním režimu pomocí služby RTS. Při vytváření objednávek odběratelů v asynchronním režimu jsou objednávky vyžádány a vloženy do aplikace Retail pomocí úloh na vyžádání (úlohy P). Odpovídající prodejní objednávky se vytvoří v aplikaci Retail buď při manuálním spuštění možnosti **Synchronizovat objednávky** nebo pomocí dávkového zpracování.
 
 <a name="see-also"></a>Viz také
 --------

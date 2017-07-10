@@ -3,14 +3,14 @@ title: "Stavy zásob"
 description: "Tento článek popisuje, jak lze použít stavy zásob rozdělení k řazení zásob do kategorií a jejich sledování."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 21331
 ms.assetid: b35f495f-de4f-48a0-9d09-4d06781d7650
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1565b7738260270a986b515dfd21931296ce83bd
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b3ec66c805d028c20f3d3f95e7af9d78252828c7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -44,7 +44,7 @@ Zde je několik příkladů způsobů použití stavů zásob:
 
 Stav zásob je jednou z dimenzí ve skupině dimenzí úložiště. Stavy zásob mohou být rozděleny do kategorií „dostupné” a „nedostupné” a lze použít parametr **blokování zásob** k blokování položek, které jsou ve stavu „nedostupné”. Položky ve stavu blokované jsou považovány za fyzické zásoby a nelze je použít ve výrobní zakázce, prodejní objednávce, převodním příkazu ani výstupní transakci. 
 
-Položky na skladu ve stavu zásob „dostupné“ či „nedostupné“ můžete použít v rámci příchozí práce. Například lze vytvořit stav „dostupné” s názvem **Připraveno**, stav „nedostupné” s názvem **Poškozeno** a stav „blokované” s názvem **Blokováno**. Při vytvoření nákupní objednávky pro přijaté nebo vrácené položky a pokud jsou položky poškozené nebo zničené, můžete změnit stav zásob těchto položek na **Poškozeno**na řádku nákupní objednávky. Poté, co byly položky přijaty, je automaticky nastaven stav **Blokováno**. Kontrolujete-li poškozené položky pomocí mobilního zařízení, aplikace Microsoft Dynamics 365 for Operations může použít směrnice skladových míst a šablony práce k zobrazení informací o odpovídajícím místě nebo rozsahu míst, kde jsou položky odloženy. Pro vrácené položky se vytvoří typ výdeje **Rezervace** na stránce **Skladové transakce**. 
+Položky na skladu ve stavu zásob „dostupné“ či „nedostupné“ můžete použít v rámci příchozí práce. Například lze vytvořit stav „dostupné” s názvem **Připraveno**, stav „nedostupné” s názvem **Poškozeno** a stav „blokované” s názvem **Blokováno**. Při vytvoření nákupní objednávky pro přijaté nebo vrácené položky a pokud jsou položky poškozené nebo zničené, můžete změnit stav zásob těchto položek na **Poškozeno** na řádku nákupní objednávky. Poté, co byly položky přijaty, je automaticky nastaven stav **Blokováno**. Pokud kontrolujete poškozené položky pomocí mobilního zařízení, aplikace Microsoft Dynamics 365 for Finance and Operations může použít směrnice skladových míst a šablony práce k zobrazení informací o odpovídajícím místě nebo řadě míst, kde jsou položky odloženy. Pro vrácené položky se vytvoří typ výdeje **Rezervace** na stránce **Skladové transakce**. 
 
 Pro výstupní práci používejte položky, které mají stav zásob „dostupné“. Pokud máte položky se stavem **„Zničené“** a použijete u nich hlavní plánování, položky budou považovány za chybějící a sklad se automaticky doplní. 
 

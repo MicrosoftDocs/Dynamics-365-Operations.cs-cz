@@ -1,26 +1,26 @@
 ---
 title: "Držitelé zálohy"
-description: "Seznamte se s funkcí držitele zálohy v aplikaci Microsoft Dynamics 365 for Operations."
+description: "Poznejte funkce držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 262574
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fbb9224ba3c2c67e962c59f677f0b1006d6ceb8c
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: fedcd2b4756faddc20fe6f304e4448949acdaa61
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Seznamte se s funkcí držitele zálohy v aplikaci Microsoft Dynamics 365 for Operations.
+Poznejte funkce držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 *Držitel zálohy* je zaměstnanec společnosti, který je zodpovědný za částku výdajů, kterou poskytuje organizace. Pouze pracovník společnosti může být držitelem zálohy. Pokud dojde k pořízení, držitel zálohy nahlásí společnosti uskutečněné výdaje. Společnost refunduje zaměstnanci částku výdajů. Společnost kontroluje zůstatek pro každého držitele zálohy. Uživatelé v právnických osobách v Estonsku, Lotyšsku, Litvě, Polsku, České republice, Maďarsku a Rusku mohou reflektovat určité transakce doprovázející operace se zaměstnanci společnosti, kteří jsou odpovědní za částku výdajů poskytovanou organizací.
 
@@ -79,7 +79,7 @@ Pokud chcete, aby se projevily transakce držitele zálohy, musíte nastavit ná
 Pro správné zaregistrování a zaúčtování nákupní objednávky prostřednictvím držitele zálohy je nutné použít podmínky platby, které byly nastaveny pomocí možnosti **Od držitele zálohy** nastavené na **True**.
 ### <a name="create-an-advance-holder-creation"></a>Vytvoření držitelů záloh
 
-Před vytvořením držitele zálohy musí mít již nastavené pracovníky. Další informace naleznete v tématu [Zadání informací o pracovníkovi (průvodce záznamem úloh).](http://ax.help.dynamics.com/en/wiki/enter-worker-information/) Použijte stránku **Držitelé zálohy** k nastavení pracovníka jako držitele zálohy. Vyberte pracovníka, kterého chcete použít jako držitele zálohy, klikněte na možnost **Upravit**a potom nastavte možnost **Držitel zálohy** na **True**. Dále je nutné vyplnit následující pole.
+Před vytvořením držitele zálohy musí mít již nastavené pracovníky. Další informace naleznete v tématu [Zadání informací o pracovníkovi (průvodce záznamem úloh).](http://ax.help.dynamics.com/en/wiki/enter-worker-information/) Použijte stránku **Držitelé zálohy** k nastavení pracovníka jako držitele zálohy. Vyberte pracovníka, kterého chcete použít jako držitele zálohy, klikněte na možnost **Upravit** a potom nastavte možnost **Držitel zálohy** na **True**. Dále je nutné vyplnit následující pole.
 |                |                                                                                             |
 |----------------|---------------------------------------------------------------------------------------------|
 | **Pole**      | **Popis**                                                                             |

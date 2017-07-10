@@ -1,28 +1,29 @@
 ---
 title: "Funkce kontaktního střediska"
-description: "Tento článek obsahuje přehled o prodejní funkci kontaktního střediska v aplikaci Microsoft Dynamics 365 for Operations."
+description: "Tento článek obsahuje přehled o prodejní funkci kontaktního střediska v aplikaci Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16361
 ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 40d7c1a95f33c189639c12279a8e3a286f0c6761
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: befbf43a0af8016895e570f5d8cf3a51983692f2
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -32,9 +33,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-Tento článek obsahuje přehled o prodejní funkci kontaktního střediska v aplikaci Microsoft Dynamics 365 for Operations.
+Tento článek obsahuje přehled o prodejní funkci kontaktního střediska v aplikaci Microsoft Dynamics 365 for Retail.
 
-Maloobchodní a velkoobchodní prodej v aplikaci Microsoft Dynamics jako typ kanálu podporuje také kontaktní střediska. V kontaktním středisku pracovníci zpracovávají zakázky od odběratele telefonicky a vytvářejí prodejní objednávky. Funkce kontaktního střediska obsahuje funkce, které slouží k usnadnění telefonních objednávek a odběratelského servisu během celého procesu splnění zakázek. Například mohou pracovníci kontaktního střediska přímo zadat informace o platbách do prodejní objednávky a před odesláním objednávky mohou zobrazit podrobný přehled nákladů a plateb. Pracovníci mají také možnosti pro kontrolu cen a přístup k různým datům o odběratelích, produktech a cenách ze stránky **Prodejní objednávka**. Kontaktní střediska mají navíc také rozšířenou funkci ke sledování stavu historie a objednávek. Každé kontaktní středisko může mít vlastní uživatele, platební metody, cenové skupiny, finanční dimenze a způsoby dodání. Tyto možnosti lze nakonfigurovat při vytváření kontaktního střediska. Kromě toho můžete využít stránku **Kontaktní středisko** pro povolení nebo zakázání následujících skupin funkcí, které jsou jedinečné pro kontaktní střediska:
+Dynamics 365 for Retail podporuje také kontaktní střediska jako typ maloobchodní sítě. V kontaktním středisku pracovníci zpracovávají zakázky od odběratele telefonicky a vytvářejí prodejní objednávky. Funkce kontaktního střediska obsahuje funkce, které slouží k usnadnění telefonních objednávek a odběratelského servisu během celého procesu splnění zakázek. Například mohou pracovníci kontaktního střediska přímo zadat informace o platbách do prodejní objednávky a před odesláním objednávky mohou zobrazit podrobný přehled nákladů a plateb. Pracovníci mají také možnosti pro kontrolu cen a přístup k různým datům o odběratelích, produktech a cenách ze stránky **Prodejní objednávka**. Kontaktní střediska mají navíc také rozšířenou funkci ke sledování stavu historie a objednávek. Každé kontaktní středisko může mít vlastní uživatele, platební metody, cenové skupiny, finanční dimenze a způsoby dodání. Tyto možnosti lze nakonfigurovat při vytváření kontaktního střediska. Kromě toho můžete využít stránku **Kontaktní středisko** pro povolení nebo zakázání následujících skupin funkcí, které jsou jedinečné pro kontaktní střediska:
 
 -   **Dokončení objednávky** – tato skupina obsahuje funkce, které se vztahují k platbám a dokončení objednávek na stránce **Prodejní objednávka**.
 -   **Směrovaný prodej** – tato skupina obsahuje funkce, které souvisejí se zdrojovými kódy, skripty a požadavky na katalog.

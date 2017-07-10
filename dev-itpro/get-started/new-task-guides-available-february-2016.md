@@ -3,13 +3,13 @@ title: "Noví průvodci úkolem (únor 2016)"
 description: "Toto téma obsahuje průvodce záznamem úloh vydané pro knihovny Microsoft BPM k únoru 2016.  Publikované knihovny zahrnují (únor 2016) knihovnu APQC Unified Library for Microsoft Dynamics 365 for Operations a (únor 2016) příručku Začínáme."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 102083
 ms.assetid: f50585e8-4ef6-4cd8-90d8-c8d6a65b22b8
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3c99753f22e537fdc026342dce12389fb9acc83a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: cdad1d6c2466b47b07133a5335866ef6881609ca
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,12 +30,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma obsahuje průvodce záznamem úloh vydané pro knihovny Microsoft BPM k únoru 2016.  Publikované knihovny zahrnují (únor 2016) knihovnu APQC Unified Library for Microsoft Dynamics 365 for Operations a (únor 2016) příručku Začínáme.
+Toto téma obsahuje průvodce záznamem úloh vydané pro knihovny Microsoft BPM k únoru 2016.  Publikované knihovny zahrnují (únor 2016) knihovnu APQC Unified Library for Microsoft Dynamics AX a (únor 2016) příručku Začínáme.
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Průvodci úkolem v knihovně APQC Unified Library pro Microsoft Dynamics 365 for Operations (únor 2016)
+<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Průvodci úkolem v knihovně APQC Unified Library pro Microsoft Dynamics AX (únor 2016)
 ---------------------------------------------------------------------------------
 
-Knihovna APQC Unified Library (únor 2016) obsahuje průvodce úkolem, určené k použití v rámci Nápovědy pro verzi Dynamics 365 for Operations 7.0.0 Pokud potřebujete lokalizované verze těchto průvodců úkoly, jsou k dispozici v knihovně Unified Library APQC pro Microsoft Dynamics 365 for Operations (květen 2016). Další informace o tom, jak připojit systém nápovědy ke knihovně průvodce úkolem viz [Začínáme s nápovědou](help-overview.md).
+Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, určené k použití v rámci Nápovědy pro verzi Dynamics AX 7.0.0. Pokud potřebujete lokalizované verze těchto průvodců, jsou k dispozici v knihovně Unified Library APQC pro Microsoft Dynamics AX (květen 2016). Další informace o tom, jak připojit systém nápovědy ke knihovně průvodce úkolem viz [Začínáme s nápovědou](help-overview.md).
 
 ### <a name="accounts-payable"></a>Závazky
 

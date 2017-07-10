@@ -3,7 +3,7 @@ title: "Termín vystavení faktury"
 description: "Tento článek vysvětluje, jak nastavit parametry pro výpočet dat splatnosti pro vydání faktur dodavatele a faktur odběratele v Evropské unii (EU)."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: CustParameters, LedgerInvoiceIssueDueDateSetup_W
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10923
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Iceland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 77a498e0d3081cdac39dfe4261b7e8be7b7af9e6
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 3fdd9f21964ae6d0c12225feebb6d73e852dc50e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -55,7 +55,7 @@ Můžete použít stránku **Nastavení výpočtu pro datum vystavení faktury**
 Můžete nastavit parametry kontroly data, abyste zajistili, že faktury odběratelů a dobropisy pro odběratele jsou generovány během zadaného období po dodání. Tyto parametry v naleznete v části **Kontrola dat faktury** na stránce **Parametry pohledávek**.
 
 ## <a name="example"></a>Příklad
-Chcete-li nastavit aplikaci Microsoft Dynamics 365 for Operations tak, aby počítala data vystavení faktur při dodávce v rámci EU vždy patnáctý den měsíce následujícího po dodání, vytvořte kód datového intervalu a pravidlo pro výpočet s následujícími parametry.
+Chcete-li nastavit aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition tak, aby počítala data vystavení faktur při dodávce v rámci EU vždy patnáctý den měsíce následujícího po dodání, vytvořte kód časového intervalu a pravidlo pro výpočet s následujícími parametry.
 
 ### <a name="date-interval-code"></a>Kód časového intervalu
 

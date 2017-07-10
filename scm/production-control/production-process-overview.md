@@ -3,7 +3,7 @@ title: "Přehled procesu výroby"
 description: "Tento článek poskytuje přehled procesů výroby. Popisuje různé fáze výrobní zakázky, dávkové objednávky a kanbany od vytvoření objednávky po uzavření finančního období."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 311debe610b58af7cd986bd33ce9473e41cb3d8b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b73ec05442c8b089435d5813ea93b997c473cbb4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -39,12 +39,12 @@ Výroba produktů – proces nazýván také jako výrobní cyklus, řídí konk
 
 Modul **Řízení výroby** v aplikaci Microsoft Dynamics AX je propojen s jinými moduly, jako je například **Řízení informací o produktech**, **Řízení zásob**, **Hlavní kniha**, **Řízení skladu**, **Účetnictví projektu** a **Správa organizace**. Tato integrace podporuje tok informací, který je požadován k dokončení výroby dokončené položky.  
 
-Výrobní proces je obvykle ovlivněn nákladovým účetnictvím a metodami ocenění zásob, které byly vybrány pro konkrétní výrobní proces. Microsoft Dynamics 365 for Operations podporuje metodu skutečných nákladů (model \[FIFO\]; model \[LIFO\]; klouzavý průměr a periodický vážený průměr) i standardních nákladů. Štíhlá výroba je implementována na základě pravidla pro zpětné účtování nákladů.  
+Výrobní proces je obvykle ovlivněn nákladovým účetnictvím a metodami ocenění zásob, které byly vybrány pro konkrétní výrobní proces. Aplikace Finance and Operations podporuje metodu skutečných nákladů (model \[FIFO\]; model \[LIFO\]; klouzavý průměr a periodický vážený průměr) i standardních nákladů. Štíhlá výroba je implementována na základě pravidla pro zpětné účtování nákladů.  
 
 Výběr metod měření nákladů také definuje požadavky pro vytváření sestav o spotřebě materiálu a zdrojů během výrobního procesu. Obvykle metoda skutečných nákladů vyžaduje přesné vytváření sestav na úrovni úlohy, zatímco periodická metoda umožňuje méně podrobné vykazování spotřeby materiálu a zdrojů.
 
 ## <a name="mixed-mode-manufacturing"></a>Kombinovaný režim výroby
-Jiné produkty a topologie výroby vyžadují použití různých typů objednávek. Microsoft Dynamics 365 for Operations umožňuje použít různé typy objednávek ve smíšeném režimu. Jinými slovy ke všem objednávkám může dojít od začátku do konce při výrobě jednoho konečného produktu.
+Jiné produkty a topologie výroby vyžadují použití různých typů objednávek. Finance and Operations umožňuje použít různé typy objednávek ve smíšeném režimu. Jinými slovy ke všem objednávkám může dojít od začátku do konce při výrobě jednoho konečného produktu.
 
 -   **Výrobní zakázka** – jedná se o klasický typ objednávky umožňující vyprodukovat určitý produkt nebo variantu produktu v daném množství k určitému datu. Výrobní zakázky jsou založeny na kusovnících a postupech.
 -   **Dávková objednávka** – tento typ objednávky se používá pro odvětví zpracování a diskrétní procesy, kde je převod výroby založen na receptuře, nebo kde souběžné a vedlejší produkty mohou být konečné produkty jako doplněk nebo náhrada za hlavní produkt. Dávkové objednávky používají typ **Vzorec** pro kusovníky a postupy.

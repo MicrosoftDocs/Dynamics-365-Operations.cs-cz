@@ -1,16 +1,16 @@
 ---
-title: "Prognóza pozic"
-description: 
+title: "Prognóza pozice"
+description: "Výdaje, které souvisejí s pracovníky, často tvoří velkou část nákladů organizace. Prognózy pozic vám umožní plánovat výdaje a zahrnut je do plánování rozpočtů."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 64413
 ms.assetid: 35e791d2-1905-4808-a579-7f181ddddd91
 ms.search.region: Global
@@ -18,18 +18,17 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 03645693c5101c48ef9d35bdbe14debef1e69fc8
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2dffb2634701210852b4b146a762434cf6df07e3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="position-forecasting"></a>Prognóza pozic
+# <a name="position-forecasting"></a>Prognóza pozice
 
 [!include[banner](../includes/banner.md)]
-
 
 
 
@@ -97,9 +96,9 @@ Nákladový prvek příjmů vybraný ve skupině kompenzací se používá při 
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Vytváření pozic prognózy pro existující pozice
 
-Pro nejpřesnější plánování rozpočtu můžete vytvořit pozice prognózy využívající podrobných údajů z aplikace Microsoft Dynamics 365 for Operations, bez ohledu na to, zda je pozice aktuálně zaplněna nebo nezaplněna. 
+Pro nejpřesnější plánování rozpočtu můžete vytvořit pozice prognózy využívající podrobných údajů z aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, bez ohledu na to, zda je pozice aktuálně zaplněna nebo nezaplněna. 
 
-Funkce **Přidat existující pozice** zobrazí všechny pozice pro organizaci. Pomocí nastavení pole**K datu** lze seznam pozic změnit tak, aby obsahoval pozice, které existovaly k datu v minulosti nebo, běžněji, v budoucnosti (například k začátku dalšího rozpočtového cyklu). Vyberte proces plánování rozpočtu a scénář plánu rozpočtu, vyberte pozice v seznamu a klepněte na tlačítko **OK** pro vytvoření pozic prognózy pro vybrané pozice. Všimněte si, že lze vytvořit pouze jednu pozici prognózy pro každou existující pozici v procesu plánování rozpočtu a scénáři. Přiřazením odlišných scénářů plánu rozpočtu však můžete vytvořit další verze. 
+Funkce **Přidat existující pozice** zobrazí všechny pozice pro organizaci. Pomocí nastavení pole **K datu** lze seznam pozic změnit tak, aby obsahoval pozice, které existovaly k datu v minulosti nebo, běžněji, v budoucnosti (například k začátku dalšího rozpočtového cyklu). Vyberte proces plánování rozpočtu a scénář plánu rozpočtu, vyberte pozice v seznamu a klepněte na tlačítko **OK** pro vytvoření pozic prognózy pro vybrané pozice. Všimněte si, že lze vytvořit pouze jednu pozici prognózy pro každou existující pozici v procesu plánování rozpočtu a scénáři. Přiřazením odlišných scénářů plánu rozpočtu však můžete vytvořit další verze. 
 
 Pokud byly prvky rozpočtových nákladů přiřazeny k pozici v lidských zdrojích, tyto prvky rozpočtových nákladů jsou také přiřazené k pozici prognózy a používají výchozí částky. Pole **Přiřazený pracovník** pro pozici prognózy je nastaveno na jméno pracovníka, který je přiřazený k pozici (pokud je zaměstnanec přiřazen). Toto pole je prosté textové pole. Neproběhlo vytvoření žádného propojení. 
 
@@ -144,7 +143,7 @@ Při změně hodnoty FTE v pozici prognózy je nutno přepočítat řádky prvku
 
 **Příklad** 
 
-Organizace zvažuje dvě možnosti snížení nákladů na účetní pozici. Jedna z možností je ukončení pozice v průběhu roku. Další možností je změna pozice na poloviční dobu pro celý rok. Brad vytvořil pozici prognózy pro existující pozici účetní v základním scénáři. Zkopíroval tuto základní pozici prognózy do scénáře A, nastavil datum vyřazení na 31. května a provedl přepočet. Poté Brad zkopíroval základní pozici prognózy do scénáře B, změnil hodnotu FTE na **0,50**a provedl přepočet. Brad má nyní tři verze, z nichž každá má celkové náklady, které jsou zarovnány s jeho možnostmi.
+Organizace zvažuje dvě možnosti snížení nákladů na účetní pozici. Jedna z možností je ukončení pozice v průběhu roku. Další možností je změna pozice na poloviční dobu pro celý rok. Brad vytvořil pozici prognózy pro existující pozici účetní v základním scénáři. Zkopíroval tuto základní pozici prognózy do scénáře A, nastavil datum vyřazení na 31. května a provedl přepočet. Poté Brad zkopíroval základní pozici prognózy do scénáře B, změnil hodnotu FTE na **0,50** a provedl přepočet. Brad má nyní tři verze, z nichž každá má celkové náklady, které jsou zarovnány s jeho možnostmi.
 
 #### <a name="assigning-a-compensation-group"></a>Přiřazení skupiny kompenzací
 

@@ -3,7 +3,7 @@ title: "Nastavení účtů dodavatele"
 description: "Toto téma popisuje typy informací, které je nutné zadat při vytváření nového účtu dodavatele."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bee95a2f3d9727e9123aa0abcf41325e6cac1efd
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 4c97f11fa85b8eee54daea8ccaa183859a89fe7f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -62,13 +62,13 @@ U dodavatelů lze uložit kontakty. Tyto kontakty lze použít v dokumentech, ja
 
 Pokud budete chtít přidat kontakty k dodavateli, na stránce **Všichni dodavatelé** na kartě **Dodavatel** klikněte ve skupině **Nastavení** na tlačítko **Kontakty** &gt; **Přidat kontakty**.  
 
-Kontakty dodavatelů můžete vytvářet zcela od začátku. Také můžete zkopírovat informace od jiného uživatele, který je již registrován v aplikaci Microsoft Dynamics 365 for Operations, a informace podle potřeby upravit.  
+Kontakty dodavatelů můžete vytvářet zcela od začátku. Také můžete zkopírovat informace od jiného uživatele, který je již registrován v aplikaci Microsoft Dynamics 365 for Finance and Operations, a informace podle potřeby upravit.  
 
 **Poznámka:** přidáním kontaktu k dodavateli není to stejné, jako přidání kontaktních údajů k danému dodavateli. Ačkoli jste mohli u dodavatele přidat obecné kontaktní údaje, mohou existovat další konkrétní osoby, které působí jako kontakty v dané společnosti, které mají své vlastní kontaktní údaje.  
 
 Záznam kontaktní osoby nelze odstranit, pokud je na tento kontakt v dokumentu odkazováno. Namísto toho lze kontakt deaktivovat.  
 
-Kontakty dodavatele můžete přidat do osobních kontaktů v aplikaci Microsoft Office 365. Nejprve je však nutné nastavit synchronizaci mezi aplikací Dynamics 365 for Operations a Office 365 v rámci synchronizace serveru Microsoft Exchange Server a průvodci instalací pro aplikaci Microsoft Outlook.
+Kontakty dodavatele můžete přidat do osobních kontaktů v aplikaci Microsoft Office 365. Nejprve je však nutné nastavit synchronizaci mezi aplikací Finance and Operations a Office 365 v rámci synchronizace serveru Microsoft Exchange Server a průvodci instalací pro aplikaci Microsoft Outlook.
 
 ## <a name="vendors-in-different-legal-entities"></a>Dodavatelé z různých právnických osob
 Dodavatel je ve vaší organizaci registrován pouze pro jednu právnickou osobu a ostatní právnické osoby si musí zaregistrovat stejného dodavatele. Ke konfiguraci dodavatele pro jinou právnickou osobu lze použít stránku **Přidat dodavatele k jiné právnické osobě**. U dodavatele je ve vybrané právnické osobě nutné určit skupinu dodavatelů, měnu a stav blokování.  

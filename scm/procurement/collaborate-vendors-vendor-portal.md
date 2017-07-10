@@ -3,14 +3,14 @@ title: "Spolupráce s dodavateli pomocí portálu pro dodavatele"
 description: "Toto téma vysvětluje, jak nákupčí mohou použít portál pro dodavatele pro spolupráci s externím dodavatelem během procesu potvrzení nákupní objednávky. Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ef47cd32d78ea28496c014ed4537008159a05691
+ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
+ms.openlocfilehash: a8284e5a79e00def964b41f5c20bbb7377bf36be
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/09/2017
 
 
 ---
@@ -100,7 +100,7 @@ Pokud je povolena Správa změn, následující tabulka zobrazuje příklad změ
 
 [Konfigurace zabezpečení pro uživatele portálu Spolupráce dodavatele](configure-security-vendor-portal-users.md)
 
-[Pracovní prostor fakturace dodavatelské spolupráce](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace)
+[Pracovní prostor fakturace dodavatelské spolupráce](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace)
 
 
 

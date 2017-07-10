@@ -1,16 +1,16 @@
 ---
 title: "Spolupráce dodavatelů s odběrateli"
-description: "Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci s nákupními objednávkami v aplikaci Microsoft Dynamics 365 for Operations ke sledování zásob na skladě."
+description: "Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci s nákupními objednávkami v aplikaci Finance and Operations ke sledování zásob na skladě."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1649014855d8d5e0f1225a661c9b6bae6490f597
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 41436dab710a5fee0fe0800dff1ebefefa841afc
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,9 +31,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci s nákupními objednávkami v aplikaci Microsoft Dynamics 365 for Operations ke sledování zásob na skladě.
+Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci s nákupními objednávkami v aplikaci Finance and Operations ke sledování zásob na skladě.
 
-Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci se zákazníky v aplikaci Microsoft Dynamics 365 for Operations. Obsahuje informace o tom, jak sledovat a reagovat na nákupní objednávky a jak sledovat zásoby dodávek. Při práci s fakturami lze také využít dodavatelskou spolupráci. Další informace naleznete v části [Pracovní prostor fakturace dodavatelské spolupráce](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
+Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci se zákazníky v aplikaci Microsoft Finance and Operations. Obsahuje informace o tom, jak sledovat a reagovat na nákupní objednávky a jak sledovat zásoby dodávek. Při práci s fakturami lze také využít dodavatelskou spolupráci. Další informace naleznete v části [Pracovní prostor fakturace dodavatelské spolupráce](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
 
 ## <a name="working-with-purchase-orders"></a>Práce s nákupními objednávkami
 Pracovní prostor **Potvrzení nákupní objednávky** umožňuje reagovat na nákupní objednávku, která vám byl odeslána ke kontrole. Umožňuje také zobrazit informace o nákupních objednávkách, které čekají na akci od odběratele a objednávkách, které byly potvrzeny, ale jsou stále otevřené. V pracovním prostoru **Potvrzení nákupní objednávky** existují tři seznamy:

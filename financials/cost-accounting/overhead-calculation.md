@@ -10,8 +10,8 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272163
 ms.assetid: 93119afb-47ed-4786-ba44-ba93576d3e28
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a24c24f842e4f1b1c7806c2fb2ccbd1329fe4851
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c040a50d9962d7a900fbef285ea1f1baea124033
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -623,7 +623,7 @@ Podrobné informace o zásadách sazby režijních nákladů najdete v tématech
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>Krok 4: Zpracování výpočtu přidělení nákladů
 
-Přidělení se používá k přidělení zůstatku objektu nákladů do jiných objektů nákladů použitím základu přidělení. Microsoft Dynamics 365 for Operations podporuje metodu vzájemného přidělení. V metodě vzájemného přidělení jsou plně rozpoznány vzájemné služby, které si vyměňují pomocné objekty nákladů. Systém automaticky určí provádění přidělení ve správném pořadí. Zůstatek objektu nákladů je přidělen jedním základem přidělení. Je podporováno přidělování napříč dimenzemi objektů nákladů a jejich příslušných členů. Pořadí přidělení je řízeno jednotkou řízení nákladů. [![Reciproční metoda](./media/reciprocal-method.png)]
+Přidělení se používá k přidělení zůstatku objektu nákladů do jiných objektů nákladů použitím základu přidělení. Aplikace Finance and Operations podporuje reciproční metodu přidělování. V metodě vzájemného přidělení jsou plně rozpoznány vzájemné služby, které si vyměňují pomocné objekty nákladů. Systém automaticky určí provádění přidělení ve správném pořadí. Zůstatek objektu nákladů je přidělen jedním základem přidělení. Je podporováno přidělování napříč dimenzemi objektů nákladů a jejich příslušných členů. Pořadí přidělení je řízeno jednotkou řízení nákladů. [![Reciproční metoda](./media/reciprocal-method.png)]
 
 #### <a name="define-the-cost-allocation"></a>Definice přidělení nákladů
 
@@ -719,12 +719,12 @@ Objekt nákladů objektu CC004 Balení přispívá k několika objektům náklad
 <tr>
 <td>Prod 2</td>
 <td>Produkt 2</td>
-<td>15</td>
+<td>září</td>
 </tr>
 </tbody>
 </table>
 
-**Poznámka:** V aplikaci Dynamics 365 for Operations lze odvodit statistická měření, jako například výrobní doba spotřebovaný produktem, z datového zdroje. Podrobnější informace o poskytovatelích statistických měření získáte v tématu Šablony poskytovatelů statistického měření. (Všimněte si, že toto téma ještě není dokončeno, ale bude k dispozici brzy.) V následující tabulce jsou uvedeny výsledky použití HR služeb HR jako základu přidělení pro celkové náklady (pevné náklady a variabilní náklady).
+**Poznámka:** V aplikaci Finance and Operations lze odvodit statistická měření, jako je například výrobní doba spotřebovaná produktem, z datového zdroje. Podrobnější informace o poskytovatelích statistických měření získáte v tématu Šablony poskytovatelů statistického měření. (Všimněte si, že toto téma ještě není dokončeno, ale bude k dispozici brzy.) V následující tabulce jsou uvedeny výsledky použití HR služeb HR jako základu přidělení pro celkové náklady (pevné náklady a variabilní náklady).
 
 <table>
 <thead>

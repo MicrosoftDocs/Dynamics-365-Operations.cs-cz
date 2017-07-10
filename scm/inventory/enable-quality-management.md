@@ -1,16 +1,16 @@
 ---
 title: "Přehled správy kvality"
-description: "Tento článek popisuje, jak lze použít správu kvality v aplikaci Microsoft Dynamics 365 for Operations za účelem zlepšení kvality produktu v rámci dodavatelsko-odběratelského řetězce."
+description: "Tento článek popisuje, jak lze použít správu kvality v aplikaci Microsoft Dynamics 365 for Finance and Operations ke zlepšení kvality produktů v rámci dodavatelsko-odběratelského řetězce."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bb3f36bb425adffa7e055eba4e8732866cb67c49
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 255035bf13155190e59088a7f64f798c7462b885
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -32,13 +32,13 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje, jak lze použít správu kvality v aplikaci Microsoft Dynamics 365 for Operations za účelem zlepšení kvality produktu v rámci dodavatelsko-odběratelského řetězce.
+Tento článek popisuje, jak lze použít správu kvality v aplikaci Microsoft Dynamics 365 for Finance and Operations ke zlepšení kvality produktů v rámci dodavatelsko-odběratelského řetězce.
 
-Správa kvality pomáhá se správou doby oběhu objednávky při zpracování nevyhovujících produktů bez ohledu na místo jejich původu. Vzhledem k tomu, že typy diagnostiky jsou propojeny s vykazováním oprav, aplikace Microsoft Dynamics 365 for Operations může naplánovat úlohy pro nápravu problémů a zabránění jejich opakování.
+Správa kvality pomáhá se správou doby oběhu objednávky při zpracování nevyhovujících produktů bez ohledu na místo jejich původu. Vzhledem k tomu, že typy diagnostiky jsou propojeny s hlášením oprav, aplikace Microsoft Dynamics 365 for Finance and Operations může naplánovat úlohy k nápravě problémů a zabránění jejich opakování.
 
 Kromě funkcí pro správu neshod obsahuje moduly správy kvality také funkce pro sledování problémů podle jejich typu (včetně interních potíží) a pro určování krátkodobých a dlouhodobých řešení. Statistické údaje o klíčových ukazatelů výkonnosti (KPI) nabízí náhled na historii předchozích potíží s neshodami a řešení, která byla použita k jejich nápravě. Historická data můžete použít ke kontrole účinnosti předchozích opatření pro zajištění kvality a k rozhodnutí o tom, zda tato opatření použít i v budoucnu.
 
-Při nastavování přidružení kvality může aplikace Microsoft Dynamics 365 for Operations vygenerovat objednávky kvality pro různé obchodní procesy, událostí a podmínky. Přiřazení kvality může zahrnovat určitou položku, určitou skupinu položek nebo všechny položky.
+Při nastavování přidružení kvality může aplikace Finance and Operations vygenerovat objednávky kvality pro různé obchodní procesy, události a podmínky. Přiřazení kvality může zahrnovat určitou položku, určitou skupinu položek nebo všechny položky.
 
 ## <a name="examples-of-the-use-of-quality-management"></a>Příklady použití správy kvality
 Správa kvality je flexibilní a lze ji implementovat různými způsoby, aby byly splněny požadavky konkrétních úrovní operací dodavatelsko-odběratelského řetězce. V následujících příkladech jsou znázorněna možná použití těchto funkcí:

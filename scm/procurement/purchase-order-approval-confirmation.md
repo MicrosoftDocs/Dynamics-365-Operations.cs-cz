@@ -3,14 +3,14 @@ title: "Schválení a potvrzení nákupních objednávek"
 description: "Tento článek popisuje stavy, kterými prochází nákupní objednávka poté, co byla vytvořena, a efekt umožňující správu změn v nákupních objednávkách."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 346dde3acdaca367c80cc092f0d8faa2dc28c6b6
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 0ec91bcf0ab334585eefae2fe54750c45419682e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,6 +30,7 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+[!include[retail name](../includes/retail-name.md)]
 
 Tento článek popisuje stavy, kterými prochází nákupní objednávka poté, co byla vytvořena, a efekt umožňující správu změn v nákupních objednávkách.
 
@@ -38,7 +39,7 @@ Po vytvoření by měla nákupní objednávka projít schvalovacím procesem. Ja
 ## <a name="approval-of-purchase-orders"></a>Schválení nákupních objednávek
 Nákupní objednávky, které nepoužívají správu změn, mají stav **Schváleno** ihned po jejich vytvoření, zatímco nákupní objednávky, které používají správu změn, jsou po vytvoření ve stavu **Návrh**. Nákupní objednávka, která byla vytvořena při potvrzení plánované objednávky z hlavního plánování, je vždy nastavena na stav **Schváleno** bez ohledu na nastavení správy změn. Nákupní objednávka vytváří skladové transakce pouze v případě, že dosáhne stavu **Schváleno**. Proto se dané zásoby nezobrazují jako dostupné pro rezervaci nebo označení, dokud objednávka nebude přijata.  
 
-Správu změn pro nákupní objednávky povolíte nastavením možnosti **Aktivovat správu změn** na stránce **Parametry modulu Zásobování a zdroje**. Pokud je povolena správa změn, nákupní objednávky musí po dokončení projít workflowem schválení. Aplikace Microsoft Dynamics 365 for Operations má editor procesu workflowu, kde můžete definovat workflow představující proces schválení. Tento pracovní postup může zahrnovat pravidla pro automatické schválení, pravidla, která určují, kdo bude přiřazen ke schválení konkrétních nákupních objednávek, a pravidla pro předání pracovního postupu, který čekal dlouhou dobu na schválení. Můžete povolit proces řízení změn pro všechny dodavatele nebo jen pro konkrétní dodavatele. Proces lze také nastavit tak, aby jej bylo možné přepsat pro jednotlivé nákupní objednávky.  
+Správu změn pro nákupní objednávky povolíte nastavením možnosti **Aktivovat správu změn** na stránce **Parametry modulu Zásobování a zdroje**. Pokud je povolena správa změn, nákupní objednávky musí po dokončení projít workflowem schválení. Aplikace Microsoft Dynamics 365 for Finance and Operations má editor procesu workflowu, kde můžete definovat workflow představující proces schválení. Tento pracovní postup může zahrnovat pravidla pro automatické schválení, pravidla, která určují, kdo bude přiřazen ke schválení konkrétních nákupních objednávek, a pravidla pro předání pracovního postupu, který čekal dlouhou dobu na schválení. Můžete povolit proces řízení změn pro všechny dodavatele nebo jen pro konkrétní dodavatele. Proces lze také nastavit tak, aby jej bylo možné přepsat pro jednotlivé nákupní objednávky.  
 
 Pokud je povolena správa změn, nákupní objednávky prochází šesti stavy schválení od **Návrh** po **Dokončeno**. Po schválení objednávky musí uživatelé, kteří ji chtějí změnit, použít akci **Požadavek na změnu**.
 
@@ -54,7 +55,7 @@ Pokud je povolena správa změn, nákupní objednávky prochází šesti stavy s
 ## <a name="confirming-purchase-orders"></a>Potvrzení nákupních objednávek
 Nákupní objednávky, které mají stav schválení **Schváleno**, mohou projít dalšími kroky před jejich potvrzením. Například může být nutné odeslat dotaz na nákup dodavateli s dotazem na cenu, slevy nebo data dodání. V takovém případě můžete nastavit nákupní objednávku na stav **Na externí kontrole** pomocí akce **Nákupní dotaz**.  
 
-Dodavatelé, kteří jsou nastaveni pro použití portálu pro dodavatele, mohou kontrolovat objednávky z portálu, a zde je také schválit nebo zamítnout. Během tohoto procesu kontroly mají nákupní objednávky stav **Na externí kontrole**. Je možné nakonfigurovat portál pro dodavatele tak, aby potvrzení od dodavatele automaticky potvrdilo objednávku v Dynamics 365 for Operations. Případně můžete ručně ověřit nákupní objednávku po obdržení potvrzení od dodavatele. Jestliže dodavatel odmítne nákupní objednávku, odmítnutí je přijato společně s důvodem zamítnutí a návrhy na změny. V tomto případě zůstává stav nákupní objednávky **Na externí kontrole**.  
+Dodavatelé, kteří jsou nastaveni pro použití portálu pro dodavatele, mohou kontrolovat objednávky z portálu, a zde je také schválit nebo zamítnout. Během tohoto procesu kontroly mají nákupní objednávky stav **Na externí kontrole**. Je možné nakonfigurovat portál pro dodavatele tak, aby potvrzení od dodavatele automaticky potvrdilo objednávku v aplikaci Finance and Operations. Případně můžete ručně ověřit nákupní objednávku po obdržení potvrzení od dodavatele. Jestliže dodavatel odmítne nákupní objednávku, odmítnutí je přijato společně s důvodem zamítnutí a návrhy na změny. V tomto případě zůstává stav nákupní objednávky **Na externí kontrole**.  
 
 Existuje také možnost vygenerovat proforma potvrzení pro objednávku ještě před skutečným zpracováním potvrzení. Tato volba vytvoří jednoduše sestavu, kterou můžete sdílet s dodavatelem. Nevytváří žádné informace v deníku.  
 
@@ -83,7 +84,7 @@ Jakmile je objednávka potvrzena, nemůžete ji již odstranit. Můžete však z
 
 [Příjem produktů proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
 
-[Přehled faktur dodavatele](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Přehled faktur dodavatele](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

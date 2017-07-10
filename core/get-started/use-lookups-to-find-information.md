@@ -1,15 +1,15 @@
 ---
 title: "Zjišťování informací pomocí vyhledávání"
-description: "Mnoho polí v aplikaci Microsoft Dynamics 365 for Operations umožňuje snadné vyhledávání správných a požadovaných hodnot. Vyhledávání bylo několika způsoby vylepšeno – ovládací prvky jsou nyní užitečnější a uživatelé díky nim mohou být produktivnější. V tomto tématu se dozvíte o těchto nových funkcích a užitečných tipech k optimálnímu využití vyhledávání v systému."
+description: "Mnoho polí v aplikaci Microsoft Dynamics 365 for Finance and Operations umožňuje snadné vyhledávání správných a požadovaných hodnot. Vyhledávání bylo několika způsoby vylepšeno – ovládací prvky jsou nyní užitečnější a uživatelé díky nim mohou být produktivnější. V tomto tématu se dozvíte o těchto nových funkcích a užitečných tipech k optimálnímu využití vyhledávání v systému."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269934
 ms.assetid: f20cbd2c-14e0-47e7-b351-8e60d3537f96
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 652fbdb7a96c516ca1fc17357683d94b85cd93f3
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a5d0a9edd2cb5747fc799c6fdca45dd9ba5720f7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,12 +30,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Mnoho polí v aplikaci Microsoft Dynamics 365 for Operations umožňuje snadné vyhledávání správných a požadovaných hodnot. Vyhledávání bylo několika způsoby vylepšeno – ovládací prvky jsou nyní užitečnější a uživatelé díky nim mohou být produktivnější. V tomto tématu se dozvíte o těchto nových funkcích a užitečných tipech k optimálnímu využití vyhledávání v systému.  
+Mnoho polí v aplikaci Microsoft Dynamics 365 for Finance and Operations umožňuje snadné vyhledávání správných a požadovaných hodnot. Vyhledávání bylo několika způsoby vylepšeno – ovládací prvky jsou nyní užitečnější a uživatelé díky nim mohou být produktivnější. V tomto tématu se dozvíte o těchto nových funkcích a užitečných tipech k optimálnímu využití vyhledávání v systému.  
 
 <a name="responsive-lookups"></a>Lépe reagující vyhledávání
 ------------------
 
-V předchozích verzích aplikace Dynamics 365 for Operations museli uživatelé při práci s ovládacími prvky vyhledávání provádět explicitní úkony, aby se otevřela rozevírací nabídka. K těmto úkonům patří zadání hvězdičky (\*) k filtrování podle aktuální hodnoty ovládacího prvku, kliknutí na tlačítko rozevíracího seznamu nebo použití klávesové zkratky **Alt**+**Šipka dolů**. Ovládací prvky vyhledávání byly upraveny následujícími způsoby, aby lépe vyhovovaly současné praxi při používání webu:
+V předchozích verzích aplikace Finance and Operations museli uživatelé při práci s ovládacími prvky vyhledávání provádět explicitní úkony, aby se otevřela rozevírací nabídka. K těmto úkonům patří zadání hvězdičky (\*) k filtrování podle aktuální hodnoty ovládacího prvku, kliknutí na tlačítko rozevíracího seznamu nebo použití klávesové zkratky **Alt**+**Šipka dolů**. Ovládací prvky vyhledávání byly upraveny následujícími způsoby, aby lépe vyhovovaly současné praxi při používání webu:
 
 -   Rozevírací nabídky vyhledávání se nyní automaticky otevírají po krátké pauze při zadávání a jejich obsah se filtruje podle aktuální hodnoty vyhledávacího ovládacího prvku.
     -   Původní chování – automatické otevření rozevíracího seznamu po zadání hvězdičky (\*) – se již nepoužívá.
@@ -58,7 +58,7 @@ I když je stále vybrán vyhledávací ovládací prvek, můžete pomocí klá
 ![changingSelectionLookup](./media/changingselectionlookup.png)
 
 ## <a name="typing-in-more-than-ids"></a>Zadání dalších údajů kromě ID
-Při zadávání dat se uživatelé přirozeně snaží určit entity (například odběratele nebo dodavatele) pomocí názvu, nikoli identifikátorů, které tyto entity zastupují. V aktuální verzi aplikace Dynamics 365 for Operations je nyní u mnoha (ale ne všech) funkcí vyhledávání možné kontextové zadávání dat. Díky této užitečné funkci může uživatel vyhledávat pomocí ID nebo odpovídajícího názvu. 
+Při zadávání dat se uživatelé přirozeně snaží určit entity (například odběratele nebo dodavatele) pomocí názvu, nikoli identifikátorů, které tyto entity zastupují. V aktuální verzi aplikace Finance and Operations je nyní u mnoha (ale ne všech) funkcí vyhledávání možné kontextové zadávání dat. Díky této užitečné funkci může uživatel vyhledávat pomocí ID nebo odpovídajícího názvu. 
 
 Příkladem je pole **Účet odběratele** při vytváření prodejní objednávky. V tomto poli se zobrazuje **ID účtu** odběratele, ale uživatelé při tvorbě prodejních objednávek zadávají spíše **název účtu** než **ID účtu**, například „Forest Wholesales“ místo „US-003“.
 

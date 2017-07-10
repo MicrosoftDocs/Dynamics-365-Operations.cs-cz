@@ -3,7 +3,7 @@ title: ID registrace
 description: "Toto téma poskytuje informace o nastavení a používání ID registrace."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 264824
 ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fc4a56eceb75673b7a044bd8392f8d0cc675e869
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: 55c25b005e9dc73713f3d4a30eab5148b17c2fec
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -57,10 +57,12 @@ Registrace kategorie je identifikátor země registrace schválený pro použív
 |-----------------------|----------------|
 | Typ registrace     | Typ registrace v konkrétní zemi nebo oblasti.|
 | Omezení         | Typ omezení, které platí pro typ daňové registrace: žádné, osoba, organizace.|
-| Kategorie registrace | Jedinečný identifikátor registrace schválený pro použití v dané zemi. Úplný seznam podporovaných v kategoriích AX7.1 je níže. |
+| Kategorie registrace | Jedinečný identifikátor registrace schválený pro použití v dané zemi. Úplný seznam kategorií podporovaných v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition je uveden níže. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Zadejte ID registrace pro záznamy globálního adresáře
-Globální adresář (GAB) v aplikaci Microsoft Dynamics 365 for Operations obsahuje konsolidované informace o adrese pro zákazníky, dodavatele, kontakty, obchodní vztahy a právnické osoby. Další informace viz [Přehled globálního adresáře](/dynamics365/operations/organization-administration/overview-global-address-book). Záznamy strany, které jsou uloženy v globálním adresáři , mohou obsahovat jeden nebo více záznamů. Tyto adresy se používají k různým účelům, například k fakturaci nebo dodávce. Můžete nastavit registrační ID pro informace o adrese zákazníků, dodavatelů, pracovníků a právnických osob. Najděte záznam strany (právnická osoba, dodavatel, zákazník, pracovník), pro kterou chcete zadat ID registru, a klepněte na tlačítko **ID registrace** ve formulářích týkajících se strany, právnické osoby, dodavatele, zákazníka nebo pracovníka, k otevření stránky **Spravovat adresy**. Na kartě **Daňová registrace** klepněte na tlačítko **přidat** a zadejte následující informace o ID registrace.
+
+Globální adresář (GAB) v aplikaci Microsoft Finance and Operations obsahuje konsolidované informace o adresách zákazníků, dodavatelů, kontaktů, obchodních vztahů a právnických osob. Další informace viz [Přehled globálního adresáře](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book). Záznamy strany, které jsou uloženy v globálním adresáři , mohou obsahovat jeden nebo více záznamů. Tyto adresy se používají k různým účelům, například k fakturaci nebo dodávce. Můžete nastavit registrační ID pro informace o adrese zákazníků, dodavatelů, pracovníků a právnických osob. Najděte záznam strany (právnická osoba, dodavatel, zákazník, pracovník), pro kterou chcete zadat ID registru, a klepněte na tlačítko **ID registrace** ve formulářích týkajících se strany, právnické osoby, dodavatele, zákazníka nebo pracovníka, k otevření stránky **Spravovat adresy**. Na kartě **Daňová registrace** klepněte na tlačítko **přidat** a zadejte následující informace o ID registrace.
+
 
 |Pole                |popis                                                |
 |---------------------|-----------------------------------------------------------|
@@ -80,23 +82,23 @@ Globální adresář (GAB) v aplikaci Microsoft Dynamics 365 for Operations obsa
 Vyhledejte záznamy strany, které jsou založeny na ID registrace, je k dispozici ve formulářích týkající se strany, právnické osoby, dodavatele, zákazníka a pracovníka. Klepněte na tlačítko **Hledání ID registrace** k otevření stránky **Vyhledávací kritéria ID registrace**. Zadejte kritéria vyhledávání a klepněte na **najít**. Systém zobrazí vybrané záznamy z globálního seznamu adres a přidružených typů záznamu strany.
 
 ## <a name="supported-registration-categories"></a>Podporované kategorie registrací
-V následující tabulce jsou uvedeny typy podporovaných registrací v aplikaci Dynamics 365 for Operations. Pokud jste obeznámeni s poli aplikace Microsoft Dynamics AX 2012 pro ID registrace, tato tabulka také mapuje tato pole na kategorie registrace aplikace Dynamics 365 for Operations.
+V následující tabulce jsou uvedeny typy registrací podporovaných v aplikaci Finance and Operations. Pokud jste obeznámeni s poli aplikace Microsoft Dynamics AX 2012 pro ID registrace, tato tabulka také mapuje tato pole na kategorie registrace aplikace Finance and Operations.
 
-| Kategorie registrace Dynamics 365 for Operations         |Země nebo oblast  | Termín / pole Dynamics AX 2012|
+| Kategorie registrace aplikace Finance and Operations         |Země nebo oblast  | Termín / pole Dynamics AX 2012|
 |---------------------------------------------------------------|---------------------|---------------------------------|
-| ID DPH                                                        | Všechny země Evropské unie (EU)|  Číslo osvobození od daně (právní typ ID daně v AX2012 R3)|
-| Podnikové ID (COID)                                          | Belgie Česká republika Estonsko Maďarsko Lotyšsko Litva Polsko Švýcarsko | Číslo podniku (EnterpriseNumber) Registrační číslo (RegNum\_W) Registrační číslo (RegNum\_W) Registrační číslo (RegNum\_W) Registrační číslo (RegNum\_W) Podkonový kód (EnterpriseCode) Registrační číslo (RegNum\_W) UID (UID legislativního typu v AX2012 R3) |
+| ID DPH                                                        | Všechny země Evropské unie (EU)|  Číslo osvobození od daně (právní typ ID daně v aplikaci AX 2012 R3)|
+| Podnikové ID (COID)                                          | Belgie Česká republika Estonsko Maďarsko Lotyšsko Litva Polsko Švýcarsko | Číslo podniku (EnterpriseNumber) Registrační číslo (RegNum\_W) Registrační číslo (RegNum\_W) Registrační číslo (RegNum\_W) Registrační číslo (RegNum\_W) Číslo podniku (EnterpriseCode) Registrační číslo (RegNum\_W) UID (UID legislativního typu v aplikaci AX 2012 R3) |
 | ID pobočky                                                     | Belgie            | Číslo pobočky (BranchNumber)|
 | Spisová značka (registrační číslo, vydávající orgán, oddíl) | Česká republika     | Číslo vkladu (CommercialRegisterInsetNumber) Uchováváno v obchodním rejstříku (CommercialRegister) Oddíl obchodního rejstříku (CommercialRegisterSection)|
 | Celní ID odběratele                                           | Finsko | Číslo odběratele pro celní účely (CustomsCustomerNumber\_FI)|
-| DIČ                                                           | Ruská federace| INN (INN legislativního typu v AX2012 R3)|
-| Kód důvodu registrace                                                           | Ruská federace| RRC (RRC legislativního typu v AX2012 R3)|
-| OKDP                                                          | Ruská federace| OKDP (OKDP legislativního typu v AX2012 R3)|
-| OKPO                                                          | Ruská federace| OKPO (OKPO legislativního typu v AX2012 R3)|
-| RKOSU                                                         | Ruská federace| RCOAD (typ legislativním RCOAD v AX2012 R3)|
-| OGRN                                                          | Ruská federace| OGRN (OGRN legislativního typu v AX2012 R3) |
-| SNILS                                                         | Ruská federace| SNILS (SNILS legislativního typu v AX2012 R3)|
-| CIFTS                                                         | Ruská federace| CIFTS (CIFTS legislativního typu v AX2012 R3)|
+| DIČ                                                           | Ruská federace| INN (INN legislativního typu v aplikaci AX 2012 R3)|
+| Kód důvodu registrace                                                           | Ruská federace| RRC (RRC legislativního typu v aplikaci AX 2012 R3)|
+| OKDP                                                          | Ruská federace| OKDP (OKDP legislativního typu v aplikaci AX 2012 R3)|
+| OKPO                                                          | Ruská federace| OKPO (OKPO legislativního typu v aplikaci AX 2012 R3)|
+| RKOSU                                                         | Ruská federace| RCOAD (RCOAD legislativního typu v aplikaci AX 2012 R3)|
+| OGRN                                                          | Ruská federace| OGRN (OGRN legislativního typu v aplikaci AX 2012 R3) |
+| SNILS                                                         | Ruská federace| SNILS (SNILS legislativního typu v aplikaci AX 2012 R3)|
+| CIFTS                                                         | Ruská federace| CIFTS (CIFTS legislativního typu v aplikaci AX 2012 R3)|
 
 Další informace o zpracování ID registrace, včetně nezbytných předpokladů, naleznete v následujících záznamech úloh pro ID DPH v Lifecycle Services (LCS):
 

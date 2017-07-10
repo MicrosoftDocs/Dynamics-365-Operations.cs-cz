@@ -3,14 +3,14 @@ title: "Přehled převodů SEPA"
 description: "Tento článek poskytuje obecné informace o převodech kreditů ISO 20022, které zahrnují převody kreditů v jednotné oblasti pro platby v eurech a jakékoli další elektronické platby pro dodavatele. Převod SEPA je specifický typ platby v eurech od jedné společnosti nebo osoby pro jinou společnost nebo osobu. Toto téma také vysvětluje, jak nastavit a převést soubor platby platebního převodu."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11124
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8f1a220babc333fe2091e9286afc565ebeecf036
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: bc14ab554a298d09bb852e96503b4cd3f4b36d3c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -53,15 +53,15 @@ EPC, která zahrnuje evropské banky, vyvíjí obchodní a technické předlohy 
 Převod SEPA je platba od jedné společnosti nebo osoby pro jinou společnost nebo osobu. Platby musí být v eurech a musí obsahovat mezinárodní číslo bankovního účtu (IBAN) a identifikační kód BIC (Bank Identifier Code) pro obě strany. (BIC je známý také jako kód Society for Worldwide Interbank Financial Telecommunication \[SWIFT\].) Kromě toho musí být náklady na transakce sdíleny mezi oběma stranami. Převody prováděné mezi stranami by měly používat soubory XML, které vyhovují normám zpracování plateb ISO 20022 a formátu XML, jak uvádí EPC.
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>Jak je převod kreditu implementován?
-Formát platby platebního převodu pro evropské země je implementován pomocí funkce elektronického výkaznictví a metod plateb v aplikaci Microsoft Dynamics 365 for Operations. Několik formátů převodu kreditu, které se používají v jiných regionech, již používá systém zastaralé platby. Mezi mnoha jinými formáty je dvanáct formátů převodu kreditu ISO 20022, které jsou k dispozici. Tyto formáty pro export odpovídají standardu SEPA ISO 20022 XML. Používají se ke generování platebních převodů jiného typu než euro pro země, kde se používají, a pro a euro platby podle určení ve verzi 8.2 pravidel přenosu, které vydává EPC. Než bude možné implementovat převody kreditu, obraťte se na vaši banku za účelem získání softwaru, který je nutný k načtení souborů elektronického bankovnictví. Tento software budete používat pro přenos souborů XML obsahujících platební příkazy do banky.
+Formát platby platebního převodu pro evropské země je implementován pomocí funkce elektronického výkaznictví a metod plateb v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Několik formátů převodu kreditu, které se používají v jiných regionech, již používá systém zastaralé platby. Mezi mnoha jinými formáty je dvanáct formátů převodu kreditu ISO 20022, které jsou k dispozici. Tyto formáty pro export odpovídají standardu SEPA ISO 20022 XML. Používají se ke generování platebních převodů jiného typu než euro pro země, kde se používají, a pro a euro platby podle určení ve verzi 8.2 pravidel přenosu, které vydává EPC. Než bude možné implementovat převody kreditu, obraťte se na vaši banku za účelem získání softwaru, který je nutný k načtení souborů elektronického bankovnictví. Tento software budete používat pro přenos souborů XML obsahujících platební příkazy do banky.
 
-## <a name="what-credit-transfer-formats-are-currently-supported-in-dynamics-365-for-operations"></a>Jaké formáty převodu úvěru jsou aktuálně podporovány v Dynamics 365 for Operations?
+## <a name="what-credit-transfer-formats-are-currently-supported-in-finance-and-operations"></a>Jaké formáty převodu úvěru jsou aktuálně podporovány v aplikaci Finance and Operations?
 Měli byste vždy přejít do knihovny sdílený majetek ve službě Microsoft Dynamics Lifecycle services (LCS) a zobrazit nejaktuálnější seznam dostupných souborů, které mají typ majetku **konfigurace GER**. Další oddíl "Co musím nastavit?" obsahuje odkaz na téma, které vysvětluje, jak vytvořit úložiště LCS ke kontrole dostupných konfigurací a importovat vybrané konfigurace.
 
 ## <a name="what-do-i-have-to-set-up"></a>Co je nutné nastavit?
--   Před vytvořením souborů převodu kreditu je třeba alespoň jednu aktivní konfigurace převodu importovat do vaší konfigurace obecného elektronického výkaznictví. Pokyny viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+-   Před vytvořením souborů převodu kreditu je třeba alespoň jednu aktivní konfigurace převodu importovat do vaší konfigurace obecného elektronického výkaznictví. Pokyny viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 -   Při konfiguraci metody platby Závazky zaškrtněte políčko **Obecné elektronické výkaznictví** a vyberte vhodný formát převodu kreditu (například **Převod kreditu ISO 20022 (AT)**) jako konfiguraci formátu exportu.
--   Musíte nastavit také informace o právnické osobě a bankovním účtu v aplikaci Dynamics 365 for Operations.
+-   Musíte nastavit také informace o právnické osobě a bankovním účtu v aplikaci Finance and Operations.
 -   Čísla bankovních účtů, IBAN a někdy SWIFT kódy (BIC) nebo jiné ID, která jsou potřebná k vytvoření platné bezhotovostní platby. Proto je musíte nastavit pro bankovní účet dodavatele a bankovní účet pro organizaci, která žádá o převod.
 -   Další informace mohou být vyžadovány, například daň z přidané hodnoty (DPH) pro smluvní strany, které jsou odkazovány ve zprávě o převodu úvěru. Tyto informace musí být nastaveny pro dodavatele a pro právnickou osobu na vyžádání.
 -   Některé způsoby platby splatných účtů, většinou metody na základě ISO 20022, mohou vyžadovat další nastavení pro **sady kódů formátu plateb**, jako je **Typ služby** = **SLEV**. Tyto kódy se používají jako další označení pro platební transakce během zpracování platby. Výchozí hodnoty kódů plateb jako **účel kategorie**, **poplatek doručitele**, **místní instrument** a **úroveň služby** můžete nastavit na dvou místech. První místo je **záhlaví deníku plateb závazků** a druhé je **Metody platby závazků**. Po vytvoření řádků deníku plateb jsou hodnoty kódu platby nastavené v záhlaví deníku plateb převedeny do řádku deníku. Pokud nastaveny nejsou, budou použity hodnoty z metod platby.

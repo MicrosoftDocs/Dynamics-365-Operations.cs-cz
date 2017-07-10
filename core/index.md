@@ -114,7 +114,7 @@ Tato dokumentace vám pomůže pochopit, jak přimět aplikaci Dynamics 365 for 
 <p><a href="../retail/call-center-functionality">Kontaktní středisko</p>
 <p><a href="../retail/define-maintain-retail-channels">Nastavení a správa kanálů</p>
 <p><a href="../retail/retail-peripherals-overview">MPOS a Cloud POS</p>
-<p><a href="../retail/dev-itpro/dev-retail-home-page">Vývojář a správa maloobchodu</p>
+<p><a href="../retail/dev-itpro/dev-retail-home-page">Retail – vývojář a správce</p>
 
 </td>
 </tr>

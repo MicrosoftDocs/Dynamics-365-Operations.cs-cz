@@ -1,27 +1,27 @@
 ---
 title: "Zobrazit finanční sestavy"
-description: "Tento článek popisuje, jak zobrazit a prozkoumat finanční sestavy v aplikaci Microsoft Dynamics AX. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují."
-author: RobinARH
+description: "Tento článek vysvětluje, jak zobrazit a zkoumat finanční sestavy v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují."
+author: kweekley
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: shylaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10334
 ms.assetid: d20f435f-fb65-4068-ab09-7efc7be683a6
 ms.search.region: Global
-ms.author: aolson
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8b02dbc0181c08611674cdf571075c20d78cebdc
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 102031174417a33b12c32f6b8185556b8c4701e5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje, jak zobrazit a prozkoumat finanční sestavy v aplikaci Microsoft Dynamics AX. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují.
+Tento článek vysvětluje, jak zobrazit a zkoumat finanční sestavy v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují.
 
 <a name="financial-reporting-overview"></a>Přehled finančního výkaznictví
 ----------------------------
@@ -48,7 +48,7 @@ Finanční sestavy mohou zahrnout více úrovní podrobností. První úroveň, 
 Jedná-li se o data rozpočtu, můžete otevřít účetní položky rozpočtu. Chcete-li zavřít úroveň zprávy a vrátit se na začátek, stiskněte klávesu Esc nebo klikněte na tlačítko **Zavřít** (**X**) vpravo nahoře.
 
 ## <a name="change-report-options"></a>Změna možností sestavy
-Ve zprávě **Skutečnost versus rozpočet** můžete změnit datum sestavy, použít filtry atributů a dimenzí nebo změnit scénář rozpočtu. V podokně akcí klikněte na tlačítko **Možnosti sestavy**a poté proveďte jeden nebo více z následujících kroků:
+Ve zprávě **Skutečnost versus rozpočet** můžete změnit datum sestavy, použít filtry atributů a dimenzí nebo změnit scénář rozpočtu. V podokně akcí klikněte na tlačítko **Možnosti sestavy** a poté proveďte jeden nebo více z následujících kroků:
 
 -   Chcete-li změnit základní období a základní rok sestavy, vyberte základní období a základní rok a klikněte na tlačítko **OK**.
 -   Chcete-li v sestavě použít filtry atributů, vyberte možnost **Přidat filtr atributu**. Vyberte atribut, zadejte hodnotu atributu a klikněte na tlačítko **OK**. Vyberete-li například atribut **Kategorie účtů**, zadejte hodnotu atributu **PRODEJE**. Chcete-li filtr atributu odebrat, klikněte na tlačítko **Vymazat**.
@@ -64,13 +64,13 @@ Finanční sestavu můžete obnovit (aktualizovat), aby zobrazovala aktuální d
 Po dokončení aktualizace finanční sestavy ji můžete publikovat. Ostatní uživatelé v rámci organizace ji pak budou moci zobrazit. Chcete-li sestavu publikovat, v podokně akcí klikněte na tlačítko **Publikovat**.
 
 ## <a name="display-a-financial-report-in-a-different-currency"></a>Zobrazení finanční sestavy v různých měnách
-Finanční sestavu lze kdykoli zobrazit v jiné měně. Chcete-li sestavu zobrazit v jiné měně, v podokně akcí klikněte na tlačítko **Měna**a vyberte požadovanou měnu. Sestava se převede do zvolené měny a zobrazí se výsledky. Kódy měn nebo symboly, které jsou součástí návrhu sestavy, se aktualizují, aby se nová měna zohlednila. Měny zobrazené v seznamu jsou měny vykazování, které se konfigurují v aplikaci Microsoft Dynamics AX.
+Finanční sestavu lze kdykoli zobrazit v jiné měně. Chcete-li sestavu zobrazit v jiné měně, v podokně akcí klikněte na tlačítko **Měna** a vyberte požadovanou měnu. Sestava se převede do zvolené měny a zobrazí se výsledky. Kódy měn nebo symboly, které jsou součástí návrhu sestavy, se aktualizují, aby se nová měna zohlednila. Měny zobrazené v seznamu jsou měny vykazování, které se konfigurují v aplikaci Finance and Operations.
 
 ## <a name="display-a-summarized-view-of-the-financial-report"></a>Souhrnné zobrazení finanční sestavy
 Finanční sestava může obsahovat řádky podrobností a řádky souhrnů. Řádky podrobností jsou řádky, které obsahují hlavní účty nebo dimenze. Řádky souhrnů jsou řádky popisu, součtu a výpočtu. Chcete-li v sestavě zobrazit pouze řádky souhrnu, klikněte na možnost **Zobrazit** a poté na tlačítko **Pouze řádky souhrnu**. Sestava se sbalí a zobrazí se pouze řádky souhrnu. Chcete-li zobrazit řádky podrobností spolu s řádky souhrnu, klikněte na tlačítko **Zobrazit** na poté znovu na tlačítko **Pouze řádky souhrnu**.
 
 ## <a name="open-a-financial-report-from-a-previous-month"></a>Otevření finanční sestavy z předchozího měsíce
-Sestavy pro aktuální nebo předchozí měsíc můžete zobrazit, aniž byste museli sestavu generovat znovu. K otevření sestavy pro předchozí měsíc klikněte na možnost **Zobrazit**a potom na tlačítko **Předchozí sestavy**. Zobrazí se seznam předchozích měsíců vygenerované sestavy. Rozbalte měsíc k zobrazení sestavy, vyberte datum a klikněte na tlačítko **OK**. Zobrazí se sestava pro předchozí měsíc. Chcete-li se vrátit k sestavě aktuálního měsíce, klikněte na tlačítko **Storno**.
+Sestavy pro aktuální nebo předchozí měsíc můžete zobrazit, aniž byste museli sestavu generovat znovu. K otevření sestavy pro předchozí měsíc klikněte na možnost **Zobrazit** a potom na tlačítko **Předchozí sestavy**. Zobrazí se seznam předchozích měsíců vygenerované sestavy. Rozbalte měsíc k zobrazení sestavy, vyberte datum a klikněte na tlačítko **OK**. Zobrazí se sestava pro předchozí měsíc. Chcete-li se vrátit k sestavě aktuálního měsíce, klikněte na tlačítko **Storno**.
 
 ## <a name="print-a-financial-report"></a>Tisk finanční sestavy
 Chcete-li vytisknout finanční sestavu, v podokně akcí klikněte na tlačítko **Tisk** a poté proveďte jeden nebo více z následujících kroků, abyste nastavili volby tisku:
@@ -88,7 +88,8 @@ Chcete-li finanční sestavu exportovat, v podokně akcí klikněte na tlačítk
 <a name="see-also"></a>Viz také
 --------
 
-[Finanční výkaznictví pro aplikaci Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
+[Finanční výkaznictví pro aplikaci Microsoft Dynamics AX](/dynamics365/unified-operations/dev-itpro/analytics/financial-reporting-intro)
+
 
 
 

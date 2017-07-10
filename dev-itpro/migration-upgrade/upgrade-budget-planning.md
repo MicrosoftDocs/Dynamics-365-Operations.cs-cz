@@ -1,6 +1,6 @@
 ---
 title: "Upgrade plánování rozpočtu"
-description: "Mezi aplikacemi Microsoft Dynamics AX 2012 a Microsoft Dynamics 365 for Operations existují významné rozdíly, pokud jde o plánování rozpočtu. Některé funkce nebyly upgradovány a proto vyžadují rekonfiguraci. Toto téma vysvětluje, co je nutné rekonfigurovat, a také popisuje nové funkce, které mají být brány v úvahu po dokončení upgradu."
+description: "Mezi aplikacemi Microsoft Dynamics AX 2012 a Microsoft Dynamics 365 for Finance and Operations existují významné rozdíly, pokud jde o plánování rozpočtu. Některé funkce nebyly upgradovány a proto vyžadují rekonfiguraci. Toto téma vysvětluje, co je nutné rekonfigurovat, a také popisuje nové funkce, které mají být brány v úvahu po dokončení upgradu."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/10/2017
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: ryansand
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fafa323c3949c09707c81ec41edae25ad2677eeb
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 83e93df3284760c46cb95b931f32cc9990ef2db1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -31,12 +31,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Mezi aplikacemi Microsoft Dynamics AX 2012 a Microsoft Dynamics 365 for Operations existují významné rozdíly, pokud jde o plánování rozpočtu. Některé funkce nebyly upgradovány a proto vyžadují rekonfiguraci. Toto téma vysvětluje, co je nutné rekonfigurovat, a také popisuje nové funkce, které mají být brány v úvahu po dokončení upgradu.  
+Mezi aplikacemi Microsoft Dynamics AX 2012 a Microsoft Dynamics 365 for Finance and Operations existují významné rozdíly, pokud jde o plánování rozpočtu. Některé funkce nebyly upgradovány a proto vyžadují rekonfiguraci. Toto téma vysvětluje, co je nutné rekonfigurovat, a také popisuje nové funkce, které mají být brány v úvahu po dokončení upgradu.  
 
-Plánování rozpočtu v aplikaci Microsoft Dynamics 365 for Operations má mnohá vylepšení, která nebyla v aplikaci Microsoft Dynamics AX 2012 k dispozici. Toto téma vysvětluje změny, které musíte provést zákazníci, kteří upgradují. Rovněž zdůrazňuje nové funkce, které by měla být vzaty v úvahu při procesu upgradu. Z důvodu rozsahu změn nebude možné otevřít jakékoliv existující plány rozpočtu, dokud nebudou provedeny změny popsané v tomto tématu. Sestavy však budou fungovat a nebudou vyžadovat žádné změny.
+Plánování rozpočtu v aplikaci Microsoft Dynamics 365 for Finance and Operations má mnohá vylepšení, která nebyla v aplikaci Microsoft Dynamics AX 2012 k dispozici. Toto téma vysvětluje změny, které musíte provést zákazníci, kteří upgradují. Rovněž zdůrazňuje nové funkce, které by měla být vzaty v úvahu při procesu upgradu. Z důvodu rozsahu změn nebude možné otevřít jakékoliv existující plány rozpočtu, dokud nebudou provedeny změny popsané v tomto tématu. Sestavy však budou fungovat a nebudou vyžadovat žádné změny.
 
 ## <a name="overview-of-changes"></a>Přehled změn
-V modulu rozpočtování pro Dynamics 365 for Operations bylo provedeno mnoho významných změn. Tyto změny mají za cíl usnadnit konfiguraci a opětovné použití plánování rozpočtu a snížit každoroční údržbu a nastavování. Následující oblasti z aplikace AX 2012 se již v aplikaci Dynamics 365 for Operations nevyskytují:
+V modulu rozpočtování pro Finance and Operations bylo provedeno mnoho významných změn. Tyto změny mají za cíl usnadnit konfiguraci a opětovné použití plánování rozpočtu a snížit každoroční údržbu a nastavování. Následující oblasti z aplikace AX 2012 se již v aplikaci Finance and Operations nevyskytují:
 
 -   Šablony plánu rozpočtu (konfigurace plánování rozpočtu)
 -   Složky plánu rozpočtu (konfigurace plánování rozpočtu)
@@ -53,15 +53,15 @@ Sloupce jsou nový koncept nahrazující části šablon aplikace Excel a také 
 
 ### <a name="layouts"></a>Rozvržení
 
-Rozvržení jsou nový koncept, který nahrazuje šablonu aplikace Excel. Rozvržení obsahují sloupce, které určují, jaký rozpočet nebo skutečné hodnoty a období se mají zobrazit. Rozvržení jsou též sdílena mezi klientem a doplňkem aplikace Excel. Díky tomu jsou možnosti uživatele při zadání nebo zobrazení dat v klientovi aplikace Dynamics 365 for Operations lepší oproti aplikaci AX 2012. Pokud chcete zadat data do klienta aplikace Dynamics 365 for Operations, nejste již omezeni na zobrazení a zadávání jediného scénáře do zobrazení transakcí. Místo toho vám zobrazení srovnání umožní snadno zobrazovat a zadávat částky pro vícero období a účtů současně. Rozvržení lze definovat také tak, že můžete zadat a zobrazit měny, komentáře a další volitelná data. Rozvržení vám rovněž umožní definovat, které dimenze hlavní knihy a popisy dimenze mají být zobrazeny. Rozvržení také zahrnuje omezení scénáře, která určují, jaké sloupce v šabloně lze upravovat a jaké sloupce by měly být k dispozici v aplikaci Excel. Po definování rozvržení se pro něj vytvoří šablona. Tato šablona pak vytvoří odpovídající šablonu aplikace Excel. Můžete potom upravovat šablonu aplikace Excel, abyste začlenili více vzorců a formátování, než ji znovu odešlete. Rozvržení poté budou přiřazena ke každému pravidlu fáze na stránce **Proces plánování rozpočtu**. Rozvržení tedy nahrazují šablony, které byly přiřazeny a použity podobným způsobem.
+Rozvržení jsou nový koncept, který nahrazuje šablonu aplikace Excel. Rozvržení obsahují sloupce, které určují, jaký rozpočet nebo skutečné hodnoty a období se mají zobrazit. Rozvržení jsou též sdílena mezi klientem a doplňkem aplikace Excel. Díky tomu jsou možnosti uživatele při zadání nebo zobrazení dat v klientovi aplikace Finance and Operations lepší oproti aplikaci AX 2012. Pokud chcete zadat data do klienta aplikace Finance and Operations, nejste již omezeni na zobrazení a zadávání jediného scénáře do zobrazení transakcí. Místo toho vám zobrazení srovnání umožní snadno zobrazovat a zadávat částky pro vícero období a účtů současně. Rozvržení lze definovat také tak, že můžete zadat a zobrazit měny, komentáře a další volitelná data. Rozvržení vám rovněž umožní definovat, které dimenze hlavní knihy a popisy dimenze mají být zobrazeny. Rozvržení také zahrnuje omezení scénáře, která určují, jaké sloupce v šabloně lze upravovat a jaké sloupce by měly být k dispozici v aplikaci Excel. Po definování rozvržení se pro něj vytvoří šablona. Tato šablona pak vytvoří odpovídající šablonu aplikace Excel. Můžete potom upravovat šablonu aplikace Excel, abyste začlenili více vzorců a formátování, než ji znovu odešlete. Rozvržení poté budou přiřazena ke každému pravidlu fáze na stránce **Proces plánování rozpočtu**. Rozvržení tedy nahrazují šablony, které byly přiřazeny a použity podobným způsobem.
 
 ### <a name="budget-planning-processes"></a>Procesy plánování rozpočtu
 
-Procesy plánování rozpočtu jsou převážně stejné jako v aplikaci AX 2012. Nejvýznamnější změnou je nahrazení šablon rozvrženími. Pokud byly v aplikaci AX 2012 dříve dokončeny jakékoliv procesy, budou tyto procesy aktualizovány na probíhající stav, aby bylo kožné provést změny. Je nutné přiřadit rozvržení potřebné pro každé pravidlo fáze k určení toho, jaké scénáře a časová období se zobrazí při otevření plán v klientovi. Rozvržení dále určují, jaké šablony aplikace Excel se otevřou mimo aplikaci Dynamic 365 for Operations, abyste mohli zobrazit rozpočet. **Výchozí účetní struktura** je nová povinné pole pro proces plánování rozpočtu. Pro každý proces plánování rozpočtu přiřaďte primární účetní strukturu, která má být použita pro rozpočtování.
+Procesy plánování rozpočtu jsou převážně stejné jako v aplikaci AX 2012. Nejvýznamnější změnou je nahrazení šablon rozvrženími. Pokud byly v aplikaci AX 2012 dříve dokončeny jakékoliv procesy, budou tyto procesy aktualizovány na probíhající stav, aby bylo kožné provést změny. Je nutné přiřadit rozvržení potřebné pro každé pravidlo fáze k určení toho, jaké scénáře a časová období se zobrazí při otevření plán v klientovi. Rozvržení dále určují, jaké šablony aplikace Excel se otevřou mimo aplikaci Dynamic 365 for Finance and Operations, abyste mohli zobrazit rozpočet. **Výchozí účetní struktura** je nová povinné pole pro proces plánování rozpočtu. Pro každý proces plánování rozpočtu přiřaďte primární účetní strukturu, která má být použita pro rozpočtování.
 
 ### <a name="attachments"></a>Přílohy
 
-V aplikaci AX 2012 byly ukládány dokumenty odůvodnění do složky přílohy. Žádný předchozí dokumenty odůvodnění nebudou upgradovány. Dokumenty odůvodnění se nyní ukládají do databáze. Pokud má být tato informace v upgradované verzi, můžete odeslat konečné dokumenty odůvodnění pro každý plán jako přílohu pomocí tlačítka **Odůvodnění** v podokně akcí. V aplikaci AX 2012 byly vytvořeny na základě šablony listy aplikace Excel pro každý plán rozpočtu. Všechny plány v Dynamics 365 for Operations otevřou kopii rozvržení. Žádné změny souboru aplikace Excel však nejsou uloženy. Jakékoliv vzorce nebo podpůrné informace, které byly použity na bázi podle plánu, musí být přidány prostřednictvím komentářů, dokumentu odůvodnění nebo nějakých jiných doplňkových procesů.
+V aplikaci AX 2012 byly ukládány dokumenty odůvodnění do složky přílohy. Žádný předchozí dokumenty odůvodnění nebudou upgradovány. Dokumenty odůvodnění se nyní ukládají do databáze. Pokud má být tato informace v upgradované verzi, můžete odeslat konečné dokumenty odůvodnění pro každý plán jako přílohu pomocí tlačítka **Odůvodnění** v podokně akcí. V aplikaci AX 2012 byly vytvořeny na základě šablony listy aplikace Excel pro každý plán rozpočtu. Všechny plány v aplikaci Finance and Operations otevřou kopii rozvržení. Žádné změny souboru aplikace Excel však nejsou uloženy. Jakékoliv vzorce nebo podpůrné informace, které byly použity na bázi podle plánu, musí být přidány prostřednictvím komentářů, dokumentu odůvodnění nebo nějakých jiných doplňkových procesů.
 
 ## <a name="configuring-an-upgraded-environment-from-ax-2012"></a>Konfigurace upgradovaného prostředí z aplikace AX 2012
 Abychom vám pomohli určit, jak konfigurovat upgradovaný systém, použijeme v následujícím příkladu upgradovaný proces rozpočtu z ukázkových dat aplikace AX 2012. Pro pomoc s procesem upgradu byla vytvořena výchozí data konfigurace pro sloupce. Tato výchozí data můžete aktualizovat nebo odstranit, pokud nesplňují vaše požadavky na konfiguraci. **Poznámka:** Existují nová požadovaná pole, která nebudou v systému nastavena. Pokud uvíznete na stránce, jako je například stránka **Konfigurace plánování rozpočtu**, a nedaří se vám ji opustit, můžete zavřít svůj prohlížeč a znovu ho otevřít na jiné stránce pro zadání podrobností ve správném pořadí. Existují povinná pole, která nejsou dosud nastavena. Z toho vyplývá, že může dojít k problémům, dokud se vše nenakonfiguruje a nenastaví se všechna požadovaná pole. Toto téma vysvětluje postup nastavení těchto polích podle potřeby. Následuje několik požadovaných polí:
@@ -75,7 +75,7 @@ Abychom vám pomohli určit, jak konfigurovat upgradovaný systém, použijeme v
     -   Scénáře plánu rozpočtu: Skutečné hodnoty, Základ, Žádost o rozpočet, Rozpočet schválen
     -   Řádky plánu rozpočtu pro všechny scénáře v roce 2017 a skutečné hodnoty pro roky 2017 a 2016
 
-    V aplikaci Dynamics 365 for Operations budou vytvořeny následující sloupce:
+    V aplikaci Finance and Operations budou vytvořeny následující sloupce:
     | Název sloupce    | Scénář plánu rozpočtu | Časové období sloupce | Posun roku |
     |----------------|----------------------|--------------------|-------------|
     | Led Scénář 1 | Skutečné hodnoty              | 1                  | 0           |
@@ -128,7 +128,7 @@ Jako periodické procesy byly přidány následující možnosti. Tyto možnosti
 
 ### <a name="more-complete-tracking-of-amounts"></a>Podrobnější sledování částek
 
-V aplikaci AX 2012 mělo plánování rozpočtu jednu částku plánu, která byla uložena pro každou hodnotu. V aplikaci Dynamics 365 for Operations byl datový model rozšířen. Nyní existují částky zúčtovací měny, měny transakce a měny vykazování pro každou hodnotu. Během upgradu se tyto nové sloupce automaticky vyplní pro existující data.
+V aplikaci AX 2012 mělo plánování rozpočtu jednu částku plánu, která byla uložena pro každou hodnotu. V aplikaci Finance and Operations byl datový model rozšířen. Nyní existují částky zúčtovací měny, měny transakce a měny vykazování pro každou hodnotu. Během upgradu se tyto nové sloupce automaticky vyplní pro existující data.
 
 ### <a name="do-not-convert-currency-in-aggregation"></a>Nepřevádět měnu v seskupení
 

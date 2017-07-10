@@ -80,7 +80,7 @@ Modul Retail umožňuje vedoucím prodejen vytvářet a publikovat posuny a harm
 
 Pracovníci obchodu mají přehled o směnách a mohou přiřazovat harmonogramy spolu s pokyny pro směny a získat přehled o spolupracovnících, kteří jsou na směny přiřazeni. Mohou také předkládat žádosti o povolení nepřítomnosti, prohození směn se spolupracovníky a nabídky směn.
 
-## <a name="customize-and-administer-retail-environments"></a>Přizpůsobení a správa prostředí maloobchodu
+## <a name="customize-and-administer-retail-environments"></a>Přizpůsobení a správa prostředí modulu Retail
 Pokud jste byli požádáni o přizpůsobení vašeho prostředí nebo pokud zodpovídáte za nasazení a údržbu vašeho systému, seznamte se s konkrétním obsahem pro vývojáře a správce aplikace Retail, stejně jako s obecnějším obsahem.
 
 - [Dynamics 365 for Retail pro profesionály v oblasti IT a vývojáře](dev-itpro/dev-retail-home-page.md)

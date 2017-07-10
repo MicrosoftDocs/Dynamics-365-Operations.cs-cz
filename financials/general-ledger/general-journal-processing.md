@@ -1,6 +1,6 @@
 ---
 title: "Zpracování hlavního deníku"
-description: "Tento článek popisuje možnosti v aplikaci Microsoft Dynamics 365 for Operations, které usnadňují zpracování deníku hlavní knihy a které lze také použít k zaručení správnosti pořízených dat a dodržení interní kontroly."
+description: "Tento článek popisuje funkce v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, které usnadňují zpracování hlavního deníku a pomocí kterých lze také zaručit správnost pořízených dat a dodržení interní kontroly."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/25/2017
@@ -10,8 +10,8 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 150ca540fca154947cca47e97e45ce865ab1f507
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 244eada4202106b65198e3d6e3d0dedaa5486632
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje možnosti v aplikaci Microsoft Dynamics 365 for Operations, které usnadňují zpracování deníku hlavní knihy a které lze také použít k zaručení správnosti pořízených dat a dodržení interní kontroly.  
+Tento článek popisuje funkce v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, které usnadňují zpracování hlavního deníku a pomocí kterých lze také zaručit správnost pořízených dat a dodržení interní kontroly.  
 
 Názvy deníků
 
@@ -53,7 +53,7 @@ Název deníku lze použít pouze pro konkrétní segment nebo pro rozsah u hlav
 Možnost **Automatické storno** je k dispozici v hlavních denících. Například máte úpravu časového rozlišení, u které skutečný dokument dosud nebyl zpracován, jak je uvedeno v následujícím obrázku.
 [![Stornování hlavního deníku](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
-Doplněk Microsoft Excel pro položku deníku poskytuje další úroveň automatizace a usnadňuje zadávání dat. Akce **Otevřít řádky v aplikaci Excel**je k dispozici na stránkách **Hlavní deník** a **Doklad deníku**. 
+Doplněk Microsoft Excel pro položku deníku poskytuje další úroveň automatizace a usnadňuje zadávání dat. Akce **Otevřít řádky v aplikaci Excel** je k dispozici na stránkách **Hlavní deník** a **Doklad deníku**. 
 
 Na stránce **Periodické deníky** můžete nastavit opakující se deníky pro automatizaci zpracování deníků. 
 

@@ -1,27 +1,29 @@
 ---
 title: "Nastavení možností zpracování objednávky"
-description: "Toto téma poskytuje informace o zpracování objednávek pro kontaktní střediska pomocí aplikace Microsoft Dynamics 365 for Operations - Retail."
+description: "Toto téma poskytuje informace o zpracování objednávek pro kontaktní střediska pomocí aplikace Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 78973
 ms.assetid: 09fca083-ac0d-4f30-baf2-bb00a626be12
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 52b56274c8b72c67bc0a50f23114cebc510f1667
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: afdea84b7016fcc3214dc94f2d393a5f3d256370
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -31,9 +33,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-Toto téma poskytuje informace o zpracování objednávek pro kontaktní střediska pomocí aplikace Microsoft Dynamics 365 for Operations - Retail. 
+Toto téma poskytuje informace o zpracování objednávek pro kontaktní střediska pomocí aplikace Microsoft Dynamics 365 for Retail. 
 
-Maloobchodní a velkoobchodní prodej v aplikaci Microsoft Dynamics 365 for Operations podporuje více maloobchodních sítí, například online obchody, kamenné obchody a kontaktní střediska. V kontaktních střediscích pracovníci zpracovávají zakázky odběratele telefonicky a vytvářejí prodejní objednávky. Toto téma popisuje způsob vytvoření kontaktního střediska a konfigurace možností kontaktního střediska. Každé kontaktní středisko může mít vlastní uživatele, platební metody, cenové skupiny, finanční dimenze a způsoby dodání. Tyto možnosti lze nakonfigurovat při vytváření kontaktního střediska. **Upozornění:** Předtím, než bude možné použít workflow kontaktního střediska, když aktuální uživatel aplikace Dynamics AX vytvoří prodejní objednávky, musí být uživatel přiřazen ke kontaktnímu středisku jako uživatel kontaktního střediska. Můžete využít stránku **Kontaktní středisko** pro povolení nebo zakázání skupin funkcí, které jsou jedinečné pro kontaktní střediska. Lze povolit následující skupiny funkcí:
+Retail podporuje více maloobchodních sítí, jako např. online obchody, online tržiště, kamenné obchody a kontaktní střediska. V kontaktních střediscích pracovníci zpracovávají zakázky odběratele telefonicky a vytvářejí prodejní objednávky. Toto téma popisuje způsob vytvoření kontaktního střediska a konfigurace možností kontaktního střediska. Každé kontaktní středisko může mít vlastní uživatele, platební metody, cenové skupiny, finanční dimenze a způsoby dodání. Tyto možnosti lze nakonfigurovat při vytváření kontaktního střediska. **Upozornění:** Předtím, než bude možné použít workflow kontaktního střediska, když aktuální uživatel vytvoří prodejní objednávky, musí být uživatel přiřazen ke kontaktnímu středisku jako uživatel kontaktního střediska. Můžete využít stránku **Kontaktní středisko** pro povolení nebo zakázání skupin funkcí, které jsou jedinečné pro kontaktní střediska. Lze povolit následující skupiny funkcí:
 
 -   **Dokončení objednávky** – tato skupina obsahuje funkce, které se vztahují k platbám a dokončení objednávek na stránce **Prodejní objednávka**.
 -   **Směrovaný prodej** – tato skupina obsahuje funkce, které souvisejí se zdrojovými kódy, skripty a požadavky na katalog.

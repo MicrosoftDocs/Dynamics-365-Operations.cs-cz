@@ -1,15 +1,15 @@
 ---
 title: "Klávesové zkratky"
-description: "Následující klávesové zkratky platí v celé aplikaci Microsoft Dynamics 365 for Operations."
+description: "Následující klávesové zkratky platí v celé aplikaci Microsoft Dynamics 365 for Finance and Operations."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7d146f3dfe1d71e8d3031a851f47fac35d0f1a58
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8daf9d0c5b83e3bca66c0229a328737adeeb2951
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Následující klávesové zkratky platí v celé aplikaci Microsoft Dynamics 365 for Operations. 
+Následující klávesové zkratky platí v celé aplikaci Microsoft Dynamics 365 for Finance and Operations. 
 
 **Poznámka:** klávesové zkratky, jež jsou zde popsány, se vztahují na rozvržení klávesnice pro Spojené státy. Klávesy na klávesnicích s jiným rozvržením nemusí přesně odpovídat klávesám klávesnice pro USA.
 
@@ -44,7 +44,7 @@ Následující klávesové zkratky platí v celé aplikaci Microsoft Dynamics 36
 | Přesunutí k další nebo předchozí možnosti v nabídce            | Šipka dolů nebo šipka nahoru            |
 | Zavření karty v podokně nebo nabídce akcí          | Esc                              |
 | Simulace klepnutí pravým tlačítkem                            | Shift+F10                        |
-| Otevřete kontextovou nabídku aplikace Dynamics 365 for Operations | Ctrl+F10                         |
+| Otevření kontextové nabídky Finance and Operations | Ctrl+F10                         |
 | Stisk výchozího tlačítka ve formuláři nebo dialogovém okně       | Alt+Enter                        |
 | Klepnutí na tlačítko nebo dlaždici                            | Enter nebo Mezerník                   |
 | Zobrazení obnovených informací pro dlaždici s počtem         | ALT+Šipka nahoru                     |

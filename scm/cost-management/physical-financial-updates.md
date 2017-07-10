@@ -3,14 +3,14 @@ title: "Fyzické a finanční aktualizace"
 description: "Toto téma poskytuje přehled typů transakcí, které zvyšují nebo snižují skladové množství."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTrans, InventTransVoucher
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 75023
 ms.assetid: 128340e1-c573-48e6-b835-6c350d8dd0fb
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 72984b951b88bef565377a7470194437ad0137ce
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a0eeb5a57f9b82150150752c64e89c2c91856889
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -34,7 +34,7 @@ ms.lasthandoff: 05/25/2017
 
 Toto téma poskytuje přehled typů transakcí, které zvyšují nebo snižují skladové množství. 
 
-Skladové transakce lze fyzicky nebo finančně aktualizovat v aplikaci Microsoft Dynamics 365 for Operations. Některé typy fyzických a finančních transakcí zvyšují skladové množství, zatímco jiné je snižují.
+Skladové transakce lze fyzicky nebo finančně aktualizovat v aplikaci Microsoft Dynamics 365 for Finance and Operations. Některé typy fyzických a finančních transakcí zvyšují skladové množství, zatímco jiné je snižují.
 
 ## <a name="physical-increases"></a>Fyzické zvýšení
 Při zaúčtování fyzické transakce se záznam transakce nachází ve stavu **Přijato**. Skladové množství fyzicky zvyšují následující transakce:
@@ -53,10 +53,10 @@ Při zaúčtování finanční příjmové transakce se záznam transakce zvyšu
 -   skladové deníky s kladným množstvím, jako je například pohyb, ztráta a zisk, inventura, kusovníky a převod.
 
 ## <a name="transactions-that-increase-quantity"></a>Transakce, které zvyšují množství
-Transakce zvyšují množství jsou zaúčtovány podle klouzavého průměru nákladové ceny. Aplikace Dynamics 365 for Operations vypočítá průběžnou průměrnou nákladovou cenu založenou na cenách jednotlivých transakcí pro jednotlivé dimenze zásob, které jsou finančně sledovány. Informace o průběžných průměrných nákladových cenách naleznete v tématu [Průběžné průměrné nákladové ceny](running-average-cost-price.md).
+Transakce zvyšují množství jsou zaúčtovány podle klouzavého průměru nákladové ceny. Aplikace Dynamics 365 for Finance and Operations vypočítá průběžnou průměrnou nákladovou cenu založenou na cenách jednotlivých transakcí pro jednotlivé dimenze zásob, které jsou finančně sledovány. Informace o průběžných průměrných nákladových cenách naleznete v tématu [Průběžné průměrné nákladové ceny](running-average-cost-price.md).
 
 ## <a name="transactions-that-decrease-quantity"></a>Transakce, které snižují množství
-Aplikace Dynamics 365 for Operations používá vypočtený klouzavý průměr nákladové ceny, když je transakce snižující množství zúčtována, bez ohledu na to, který skladový model je k těmto zásobám přiřazen. Transakce snižující množství nesmí být označeny pro jinou transakci před zaúčtováním. Je-li fyzické množství na skladě záporné, aplikace Dynamics 365 for Operations použije náklady zásob definované pro danou položku na stránce **Zboží**. **Poznámka:** Je-li povolena funkce několika pracovišť, náklady budou představovat náklady na zásoby definované pro pracoviště na stránce **Výchozí nastavení objednávky**.
+Aplikace Finance and Operations používá vypočtený klouzavý průměr nákladové ceny, když je transakce snižující množství zúčtována, bez ohledu na to, který skladový model je k těmto zásobám přiřazen. Transakce snižující množství nesmí být označeny pro jinou transakci před zaúčtováním. Je-li fyzické množství na skladě záporné, aplikace Finance and Operations použije náklady zásob definované pro danou položku na stránce **Zboží**. **Poznámka:** Je-li povolena funkce několika pracovišť, náklady budou představovat náklady na zásoby definované pro pracoviště na stránce **Výchozí nastavení objednávky**.
 
 ## <a name="physical-issues-vs-financial-issues"></a>Fyzické výdeje vs finanční výdeje
 Při zaúčtování transakce fyzického výdeje se záznam transakce nachází ve stavu **Odečteno**. Mezi fyzické výdeje patří následující transakce:

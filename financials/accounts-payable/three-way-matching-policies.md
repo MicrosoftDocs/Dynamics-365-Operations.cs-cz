@@ -3,15 +3,15 @@ title: "Zásady třícestného párování"
 description: "Tento článek obsahuje příklady třícestného párování."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b9f66a9a907cf01046c78677a3f1d55f112fa8c7
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8ae07088fec05ad416ce1891dd0d0ecd489364ca
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -66,7 +66,7 @@ Zásady párování faktur v tomto příkladu pomáhají osobám v následujíc�
 1.  Sammy, pracovník v oddělení příjmu ve společnosti Fabrikam, obdrží celkové množství strojů dodaných od společnosti Contoso. Zadá na příjemce produktu počet 5. Protože nákupní objednávka byla plně přijata, stav nákupní objednávky se změní na Přijato.
 2.  April, koordinátor závazků ve společnosti Fabrikam, zadá a ověří fakturu odeslanou společností Contoso. Ověří následující informace:
     -   U položek, které vyžadují třícestné párování, ověří zda množství na řádku faktury odpovídá množství, které bylo přijato. Přijaté množství je uvedeno na příjemce produktu, které je párováno s fakturou.
-    -   Pro položky, které vyžadují dvoucestné nebo třícestné párování, jsou ceny na řádku faktury v rámci tolerance definované v aplikaci Microsoft Dynamics 365 for Operations. Jedná se o následující typy párování ceny:
+    -   Pro položky, které vyžadují dvoucestné nebo třícestné párování, jsou ceny na řádku faktury v rámci tolerance definované v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Jedná se o následující typy párování ceny:
         -   Párování čisté jednotkové ceny – čistá jednotková cena na řádku faktury odpovídá čisté jednotkové ceně na řádku nákupní objednávky v rámci procenta odchylky. V tomto příkladu je tolerance pro čistou jednotkovou cenu +8 %.
         -   Párování celkových cen – čistá částka na řádku faktury odpovídá čisté částce na řádku nákupní objednávky v rámci procenta, částky nebo procenta a částky odchylky. V tomto příkladu je tolerance celkové párované ceny +15 %.
 
@@ -79,7 +79,7 @@ Papírová faktura ze společnosti Contoso obsahuje následující informace.
 | Daň                         |          |            | 0,00       |
 | Celkem                       |          |            | 44,500.00  |
 
-V aplikaci Microsoft Dynamics 365 for Operations řádek faktury obsahuje následující informace.
+V aplikaci Finance and Operations řádek faktury obsahuje následující informace.
 
 | Č. položky                 | Množství | Jednotková cena | Čistá částka řádku | Zásady párování    | Spárování množství v příjemce produktu | Shoda ceny | Párování celkových cen |
 |-----------------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -115,7 +115,7 @@ Zásady párování faktur v tomto příkladu pomáhají osobám v následujíc�
 1.  Položky dorazí. Sammy, pracovník v oddělení příjmu v divizi pro Malajsii společnosti Fabrikam, bude přerušen a nezaúčtuje příjemku produktu okamžitě.
 2.  April, koordinátor závazků ve společnosti Fabrikam, zadá a ověří fakturu odeslanou společností Contoso. Ověří následující informace:
     -   U položek, které vyžadují třícestné párování, ověří zda množství na řádku faktury odpovídá množství, které bylo přijato. Přijaté množství je uvedeno na příjemce produktu, které je párováno s fakturou.
-    -   Pro položky, které vyžadují dvoucestné nebo třícestné párování, jsou ceny na řádku faktury v rámci tolerance definované v aplikaci Microsoft Dynamics 365 for Operations. Jedná se o následující typy párování ceny:
+    -   Pro položky, které vyžadují dvoucestné nebo třícestné párování, jsou ceny na řádku faktury v rámci tolerance definované v aplikaci Finance and Operations. Jedná se o následující typy párování ceny:
         -   Párování čisté jednotkové ceny – čistá jednotková cena na řádku faktury odpovídá čisté jednotkové ceně na řádku nákupní objednávky v rámci procenta odchylky. V tomto příkladu je tolerance pro čistou jednotkovou cenu +2 %.
         -   Párování celkových cen – čistá částka na řádku faktury odpovídá čisté částce na řádku nákupní objednávky v rámci procenta, částky nebo procenta a částky odchylky. V tomto příkladu je tolerance celkové párované ceny +10 %.
 
@@ -128,7 +128,7 @@ Papírová faktura ze společnosti Contoso obsahuje následující informace.
 | Jednotka USB             | 200      | 10.05      | 2,010.00   |
 | Celková faktura         |          |            | 7,092.00   |
 
-V aplikaci Microsoft Dynamics 365 for Operations řádek faktury obsahuje následující informace.
+V aplikaci Finance and Operations řádek faktury obsahuje následující informace.
 
 | Č. položky           | Množství | Jednotková cena | Čistá částka řádku | Zásady párování    | Spárování množství v příjemce produktu | Shoda ceny | Párování celkových cen |
 |-----------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|

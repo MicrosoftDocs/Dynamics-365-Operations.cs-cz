@@ -3,14 +3,14 @@ title: "Správa uživatelů dodavatelské spolupráce"
 description: "Toto téma popisuje, jak můžete požadovat zřízení nových uživatelů dodavatelské spolupráce a přidat nové kontakty dodavatelské spolupráce."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 audience: Application User, IT Pro
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 220744
 ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7e747547ed5cf4654a99382ecc8f9f6103ec5cfa
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: ec7ed3a81d296e9bef4d26f1756b73883d560cb5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 
 Toto téma popisuje, jak můžete požadovat zřízení nových uživatelů dodavatelské spolupráce a přidat nové kontakty dodavatelské spolupráce. 
 
-V aplikaci Microsoft Dynamics 365 for Operations jsou k dispozici informace o nákupních objednávkách, fakturách a skladových zásobách pro externí dodavatele. Můžete vytvořit nové kontakty dodavatelské spolupráce a požadovat, aby byli noví uživatelé zajištění, pokud pracujete jako externí dodavatel s rolí zabezpečení **Správce dodavatele (externí)** nebo podobnými oprávněními. Tyto můžete provést také v případě, že pracujete jako odborník na nákup. V tomto tématu odkazuje tato role na odborníky na nákup, kteří pracují pro společnost, která vlastní instanci aplikace Dynamics 365 for Operations. Další informace o použití spolupráce dodavatele, pokud jste externí dodavatel, naleznete v tématu [Dodavatel se zákazníky](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+V aplikaci Microsoft Dynamics 365 for Finance and Operations jsou k dispozici informace o nákupních objednávkách, fakturách a skladových zásobách pro externí dodavatele. Můžete vytvořit nové kontakty dodavatelské spolupráce a požadovat, aby byli noví uživatelé zajištění, pokud pracujete jako externí dodavatel s rolí zabezpečení **Správce dodavatele (externí)** nebo podobnými oprávněními. Tyto můžete provést také v případě, že pracujete jako odborník na nákup. V tomto tématu odkazuje tato role na odborníky na nákup, kteří pracují pro společnost, která vlastní instanci aplikace Finance and Operations. Další informace o použití spolupráce dodavatele, pokud jste externí dodavatel, naleznete v tématu [Dodavatel se zákazníky](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
 Další informace o použití spolupráce dodavatele, pokud jste odborník na nákup, viz [Spolupráce dodavatele s externími dodavateli](vendor-collaboration-work-external-vendors.md).
 
@@ -62,12 +62,12 @@ Když je odeslán požadavek, je přidán do seznamu **Žádosti uživatelů o d
 Předtím, než můžete požadovat zřízení nového uživatele, musí být tento uživatel nastaven jako kontakt pro jeden nebo více účtů dodavatele. Vytvoření žádosti o nového uživatele dodavatelské spolupráce:
 
 1.  Na stránce **Všechny kontakty** klepněte na **Zřídit dodavatelského uživatele**.
-2.  Zadejte e-mailovou adresu uživatele. Uživatel bude tuto adresu používat pro přihlášení do Dynamics 365 for Operations. Pokud e-mailová adresa patří do domény, která je registrována jako tenant v Microsoft Azure, musí být e-mailová adresa existující účte Azure Active Directory (ADD), aby byl proces zřizování úspěšně dokončen. Pokud e-mailová adresa nepatří k doméně registrované službou Microsoft Azure, přidaný účet bude vytvořen jako součást procesu zřizování a nový uživatel obdrží e-mail s pozváním. E-mailové adresy spotřebitelů v doménách jako @hotmail.com, @gmail.com nebo @comcast.net nelze používat k registraci jako uživatele Dynamics 365 for Operations.
+2.  Zadejte e-mailovou adresu uživatele. Uživatel bude tuto adresu používat pro přihlášení do aplikace Finance and Operations. Pokud e-mailová adresa patří do domény, která je registrována jako tenant v Microsoft Azure, musí být e-mailová adresa existující účte Azure Active Directory (ADD), aby byl proces zřizování úspěšně dokončen. Pokud e-mailová adresa nepatří k doméně registrované službou Microsoft Azure, přidaný účet bude vytvořen jako součást procesu zřizování a nový uživatel obdrží e-mail s pozváním. E-mailové adresy spotřebitelů v doménách jako @hotmail.com, @gmail.com nebo @comcast.net nelze používat k registraci jako uživatele aplikace Finance and Operations.
 3.  Nastavte možnost na **Povolený přístup k dodavatelské spolupráci na** **Ano** pro všechny právnické osoby, ke kterým musí mít uživatel přístup.
 4.  V oddílu **Přiřazení rolí uživatelů** zaškrtněte políčko **Přiřadit** pro role zabezpečení, které by měl mít nový uživatel.
 5.  Klepněte na tlačítko **Odeslat**.
 
-Při odeslání požadavku dodavatelského uživatele je pole **Povolen přístup dodavatelské spolupráce** nastaveno na hodnotu **Ano** pro vybraný účet dodavatele a je zahájen workflow požadavku uživatele. V rámci tohoto workflowu je v Dynamics 365 for Operations vytvořen nový uživatel a přirazeny role zabezpečení. Kromě toho se aktivuje služba Azure B2B, která iniciuje interakci s portálem Azure a přidruží nový nebo existující účet AAD k uživatelskému účtu Dynamics 365 for Operations.
+Při odeslání požadavku dodavatelského uživatele je pole **Povolen přístup dodavatelské spolupráce** nastaveno na hodnotu **Ano** pro vybraný účet dodavatele a je zahájen workflow požadavku uživatele. V rámci tohoto workflowu je v aplikaci Finance and Operations vytvořen nový uživatel a přirazeny role zabezpečení. Kromě toho se aktivuje služba Azure B2B, která iniciuje interakci s portálem Azure a přidruží nový nebo existující účet AAD k uživatelskému účtu aplikace Finance and Operations.
 
 ### <a name="inactivate-a-user"></a>Deaktivace uživatele
 

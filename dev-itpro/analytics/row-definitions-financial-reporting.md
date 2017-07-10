@@ -3,7 +3,7 @@ title: "Definice řádku v návrháři finanční sestavy"
 description: "Definice řádku je součástí sestavy nebo stavebního bloku, který určuje obsah jednotlivých řádků ve finanční sestavě. Definici řádku lze kombinovat s definicemi sloupců, definicemi stromu výkaznictví a definicemi sestav a vytvořit tak skupinu stavebních bloků, které může používat více společností."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,18 +11,18 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: Management Reporter, Core
+ms.search.scope: Management Reporter, UnifiedOperations, Core
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: cf0886725e2d8d4031e19810e75755f4306b7c49
+ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
+ms.openlocfilehash: 6d4697af6f7467f25a461fae4e9320402f83b0e3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -49,7 +49,7 @@ Definice řádku je součástí sestavy nebo stavebního bloku, který určuje o
 Definice řádku může obsahovat až 20 000 řádků finančních dimenzí a obsahovat následující informace:
 
 -   popisný text, který přidává do sestavy přehlednost vytvořením záhlaví, řádků a mezer pro oddíly, například **Hotovost** nebo **Celkové výnosy**
--   Odkazy na finanční data, která mohou zahrnovat hodnoty dimenze v aplikaci Microsoft Dynamics 365 for Operations **Poznámka:** Můžete nastavit definici řádku na stahování dat ze systému finančních dimenzí vždy při vygenerování sestavy.
+-   Odkazy na finanční data, která mohou zahrnovat hodnoty dimenze v aplikaci Microsoft Dynamics 365 for Finance and Operations **Poznámka:** Můžete nastavit definici řádku na stahování dat ze systému finančních dimenzí vždy při vygenerování sestavy.
 -   Součty a vzorce řádků, které jsou založeny na propojených finančních datech
 
 Obvykle každý řádek v definici řádku obsahuje jeden z následujících typů informací:
@@ -76,8 +76,8 @@ Chcete-li přidat dimenze do definice řádku, proveďte následující kroky.
 
 1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2.  V nabídce **Upravit** klikněte na tlačítko **Vložit řádky z dimenzí**.
-3.  V dialogovém okně **Vložit řádky z dimenzí**vyberte v řádku **Dimenze** buňku dimenze, která má být převedena do definice řádku, a klikněte na tlačítko **Všechny &&&**.
-4.  Chcete-li omezit definici řádku na určitý rozsah hodnot dimenzí, zadejte počáteční hodnotu dimenze do buňky **Počátek rozsahu dimenzí**a poté zadejte konečnou hodnotu dimenze do buňky **Konec rozsahu dimenzí**. Chcete-li zahrnout všechny hodnoty pro vybranou dimenzi, nevyplňujte tyto buňky. **Poznámka:** Zástupné znaky (\* nebo ?) v rozsahu dimenze nemusí vrátit všechny požadované výsledky; záleží na tom, jak databáze ERP třídí data.
+3.  V dialogovém okně **Vložit řádky z dimenzí** vyberte v řádku **Dimenze** buňku dimenze, která má být převedena do definice řádku, a klikněte na tlačítko **Všechny &&&**.
+4.  Chcete-li omezit definici řádku na určitý rozsah hodnot dimenzí, zadejte počáteční hodnotu dimenze do buňky **Počátek rozsahu dimenzí** a poté zadejte konečnou hodnotu dimenze do buňky **Konec rozsahu dimenzí**. Chcete-li zahrnout všechny hodnoty pro vybranou dimenzi, nevyplňujte tyto buňky. **Poznámka:** Zástupné znaky (\* nebo ?) v rozsahu dimenze nemusí vrátit všechny požadované výsledky; záleží na tom, jak databáze ERP třídí data.
 5.  V poli **Kód počátečního řádku** určete kód řádku pro první hodnotu dimenze, která má být přidána do definice řádku.
 6.  V poli **Zvýšit každý řádek o** určete mezeru mezi po sobě jdoucími kódy řádků. Například pokud je kód prvního řádku 100 a přírůstek je 30, první nové řádky budou mít kódy 100, 130, 160, 190 a 220. Použijte hodnotu přírůstku, která zajistí dostatek prostoru pro vkládání nových řádků formátu a vzorců.
 7.  Klepněte na tlačítko **OK**. Pro každý řádek vybrané hodnoty dimenze je přidán jeden řádek do definice řádku.
@@ -93,7 +93,7 @@ Pokud máte rozvahu, ve které jsou částky zaokrouhleny, součty mohou překra
 
 Chcete-li upravit zaokrouhlování v rozvaze, proveďte následující kroky.
 
-1.  V Návrháři sestav klikněte na tlačítko **Definice řádku**a potom otevřete definici řádku ke změně.
+1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2.  V nabídce **Upravit** klikněte na tlačítko **Úprava zaokrouhlení**.
 3.  V dialogovém okně **Vyrovnání rozdílů po zaokrouhlení** zadejte následující hodnoty:
     -   **Řádek vyrovnání rozdílů po zaokrouhlení** – kód řádku, který bude upraven kvůli vyrovnání rozvahy.
@@ -101,9 +101,9 @@ Chcete-li upravit zaokrouhlování v rozvaze, proveďte následující kroky.
     -   **Řádek součtu závazků a jmění** – kód řádku v rozvaze, který obsahuje součet závazků a jmění.
     -   **Limit částky úpravy** – limit pro automatické úpravy vyjádřený jako kladné celé číslo. Tato částka se porovnává s absolutní hodnotou skutečného rozdílu zaokrouhlení.
 
-    **Poznámka:**Tyto kódy řádků musejí být propojeny s finančními daty. Jinak řečeno, řádek musí mít hodnotu dimenze v buňce **Odkaz na finanční dimenze**. **Neodkazujte** na řádek popisu (**DESC**), výpočtu (**CALC**) nebo součtu (**TOT**).
+    **Poznámka:** Tyto kódy řádků musejí být propojeny s finančními daty. Jinak řečeno, řádek musí mít hodnotu dimenze v buňce **Odkaz na finanční dimenze**. **Neodkazujte** na řádek popisu (**DESC**), výpočtu (**CALC**) nebo součtu (**TOT**).
 
-Částky ve vaší rozvaze budou vyrovnávány rovnoměrně při zapnutém zaokrouhlování. **Poznámka:**Limit úpravy je použit na základě možnosti **Přesnost zaokrouhlování**, která je určena pro definici sestavy. Pokud například vyberete zaokrouhlení sestavy na tisíce a zadáte hodnotu **2** do pole **Limit částky úpravy**, zobrazí se upozornění, když se hodnota identifikovaná v poli **Řádek vyrovnání rozdílů po zaokrouhlení** zvýší nebo sníží o více než 2 000 Kč.
+Částky ve vaší rozvaze budou vyrovnávány rovnoměrně při zapnutém zaokrouhlování. **Poznámka:** Limit úpravy je použit na základě možnosti **Přesnost zaokrouhlování**, která je určena pro definici sestavy. Pokud například vyberete zaokrouhlení sestavy na tisíce a zadáte hodnotu **2** do pole **Limit částky úpravy**, zobrazí se upozornění, když se hodnota identifikovaná v poli **Řádek vyrovnání rozdílů po zaokrouhlení** zvýší nebo sníží o více než 2 000 Kč.
 
 ## <a name="format-row-and-column-text"></a>Formátování textu řádků a sloupců
 Změnou písma a formátováním textu můžete přizpůsobit vzhled sestav. Následující části vysvětlují formátování vzhledu řádků a sloupců v sestavách.

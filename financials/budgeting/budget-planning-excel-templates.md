@@ -3,7 +3,7 @@ title: "Šablony plánování rozpočtu pro Excel"
 description: "Toto téma popisuje, jak vytvořit šablony aplikace Microsoft Excel, které lze použít pro plány rozpočtu."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 93aa0aeffad0411542f36e27745f63198c4438b2
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 9f8073a2eb0d1b61d6a168f43eba983d113cf453
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -50,7 +50,7 @@ Můžete zkontrolovat konfiguraci rozvržení a podle potřeby ji upravit. Přej
 [![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
-> Chcete-li předejít možným problémům se zobrazením a úpravami dat plánu rozpočtu při použití aplikace Excel, měl by být přihlášen do aplikace Dynamics 365 for Operations a datového konektoru doplňku Microsoft Dynamics pro Office stejný uživatel.
+> Chcete-li předejít možným problémům se zobrazením a úpravami dat plánu rozpočtu při použití aplikace Excel, měl by být přihlášen do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition a datového konektoru doplňku Microsoft Dynamics pro Office stejný uživatel.
 
 ## <a name="add-a-header-to-budget-plan-document-template"></a>Přidání záhlaví do šablony dokumentu plánu rozpočtu
 Chcete-li přidat informace záhlaví, vyberte horní řádek v souboru aplikace Excel a vložte prázdné řádky. Klikněte na tlačítko **Návrh** v **datovém konektoru**, pokud chcete přidat pole záhlaví do souboru aplikace Excel.
@@ -79,11 +79,11 @@ Vybraná skupina polí zobrazuje sloupce, které jsou k dispozici v šabloně. K
 [![bpt12](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> Abyste definovali vzorec, vytvořte vzorec v tabulce a zkopírujte ho do okna **Návrh**. Tabulka vázaná na aplikaci Dynamics 365 for Operations se obvykle nazývá "AXTable1". Například k sumarizaci sloupců požadavků na první až čtvrté čtvrtletí v tabulce je vzorec = AxTable1\[Požadavek na 1. čtvrtletí\]+ AxTable1\[Požadavek na 2. čtvrtletí\]+ AxTable1\[Požadavek na 3. čtvrtletí\]+ AxTable1\[Požadavek na 4. čtvrtletí\].
+> Abyste definovali vzorec, vytvořte vzorec v tabulce a zkopírujte ho do okna **Návrh**. Tabulka vázaná na aplikaci Finance and Operations se obvykle nazývá "AXTable1". Například k sumarizaci sloupců požadavků na první až čtvrté čtvrtletí v tabulce je vzorec = AxTable1\[Požadavek na 1. čtvrtletí\]+ AxTable1\[Požadavek na 2. čtvrtletí\]+ AxTable1\[Požadavek na 3. čtvrtletí\]+ AxTable1\[Požadavek na 4. čtvrtletí\].
 
 Opakujte tyto kroky pro vložení sloupce **Úprava**. Použijte vzorec = AxTable1\[Celkový požadavek\]\*$I$ 1 pro tento sloupec. Vezme se hodnota v buňce I1 a vynásobí se hodnoty ve sloupci **Celkový požadavek** pro výpočet částek úprav.
 
-Uložte a zavřete soubor aplikace Excel. Vraťte se aplikace Dynamics 365 for Operations a v **Rozvržení** klikněte na **Šablona &gt; Odeslat** k odeslání uložené šablony aplikace Excel, která se použije pro plán rozpočtu. 
+Uložte a zavřete soubor aplikace Excel. Vraťte se aplikace Finance and Operations a v **Rozvržení** klikněte na **Šablona &gt; Odeslat** k odeslání uložené šablony aplikace Excel, která se použije pro plán rozpočtu. 
 
 [![bpt10](./media/bpt10-1024x352.png)](./media/bpt10.png) 
 

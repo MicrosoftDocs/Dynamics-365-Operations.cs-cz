@@ -1,27 +1,29 @@
 ---
 title: "Nastavení zákaznického věrnostního programu"
-description: "Tento článek popisuje, jak nastavit věrnostní program. Věrnostní program může pomoci posílit věrnost odběratele, protože zákazníky odměňuje za nákup produktů v maloobchodech. V aplikaci Microsoft Dynamics 365 for Operations můžete nastavit jednoduché nebo komplexní věrnostní programy, které platí pro různé právnické osoby v libovolné maloobchodní síti."
+description: "Tento článek popisuje, jak nastavit věrnostní program. Věrnostní program může pomoci posílit věrnost odběratele, protože zákazníky odměňuje za nákup produktů v maloobchodech. V aplikaci Dynamics 365 for Retail můžete nastavit jednoduché nebo komplexní věrnostní programy, které platí pro různé právnické osoby v libovolné maloobchodní síti."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16201
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 04521c20ddeca1154b134b23c1db69f45c554ed3
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 710f8ae3a6a2b5072f37879aad066dc699ede8f0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -31,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-Tento článek popisuje, jak nastavit věrnostní program. Věrnostní program může pomoci posílit věrnost odběratele, protože zákazníky odměňuje za nákup produktů v maloobchodech. V aplikaci Microsoft Dynamics 365 for Operations můžete nastavit jednoduché nebo komplexní věrnostní programy, které platí pro různé právnické osoby v libovolné maloobchodní síti.
+Tento článek popisuje, jak nastavit věrnostní program. Věrnostní program může pomoci posílit věrnost odběratele, protože zákazníky odměňuje za nákup produktů v maloobchodech. V aplikaci Dynamics 365 for Retail můžete nastavit jednoduché nebo komplexní věrnostní programy, které platí pro různé právnické osoby v libovolné maloobchodní síti.
 
 <a name="loyalty-features"></a>Věrnostní funkce
 ----------------
@@ -45,7 +47,7 @@ Věrnostní program lze nastavit tak, aby zahrnoval následující možnosti:
 -   Ručně upravte věrnostní karty nebo převeďte zůstatek věrnostních odměn z jedné karty na druhou za účelem uložení bodů nebo odměnění zákazníka.
 
 ## <a name="setting-up-loyalty-programs"></a>Nastavení věrnostních programů
-Je nutné nastavit několik součástí, aby bylo možné funkci věrnostního programu v aplikaci Dynamics 365 for Operations - Retail. Následující diagram znázorňuje věrnostní součásti a jejich vzájemný vztah. ![Nastavení věrnostního procesního toku](./media/loyaltyprocess.gif)
+Je nutné nastavit několik součástí, aby bylo možné funkci věrnostního programu v aplikaci Dynamics 365 for Retail. Následující diagram znázorňuje věrnostní součásti a jejich vzájemný vztah. ![Nastavení věrnostního procesního toku](./media/loyaltyprocess.gif)
 
 ## <a name="loyalty-components"></a>Věrnostní komponenty
 V následující tabulce jsou popsány jednotlivé komponenty a jejich použití v rámci nastavení věrnostního programu.
@@ -68,7 +70,7 @@ Následující tabulka popisuje procesy, které je nutné provést k odeslání 
 
 | Název procesu                         | Popis                                                                                                                                                                                                                                                                                                                                                                                                    | Název webové stránky                            |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| 1050 (informace o věrnostním programu)           | Spuštěním tohoto procesu odešlete data věrnostního programu z aplikace Dynamics 365 for Operations do maloobchodů. Je vhodné naplánovat časté spouštění tohoto procesu, aby data věrnostních programů byla odesílána do všech obchodů.                                                                                                                                                                                               | Plán distribuce                |
+| 1050 (informace o věrnostním programu)           | Spuštěním tohoto procesu odešlete data věrnostního programu z aplikace Dynamics 365 for Retail do maloobchodů. Je vhodné naplánovat časté spouštění tohoto procesu, aby data věrnostních programů byla odesílána do všech obchodů.                                                                                                                                                                                               | Plán distribuce                |
 | Zpracovat věrnostní schémata              | Spuštěním tohoto procesu lze přidružit věrnostní schémata maloobchodním sítím, ke kterým je přiřazeno věrnostní schéma. Tento proces může být naplánován jako dávkový proces. Tento proces musíte spustit při změně dat konfigurace věrnostních programů, například věrnostních schémat, věrnostních programů nebo bodů věrnostních odměn.                                                                                               | Zpracovat věrnostní schémata              |
 | Zpracovat věrnostní transakce offline | Spusťte tento proces, chcete-li aktualizovat věrnostní karty, aby zahrnovaly transakce, které byly zpracovány offline. Tento postup se použije pouze v případě, že zaškrtnete políčko **Získat offline** na stránce **Sdílené parametry **maloobchodu, aby bylo možné odměny získat offline.                                                                                                                                               | Zpracovat věrnostní transakce offline |
 | Aktualizovat úrovně věrnostních karet            | Spusťte tento proces, chcete-li vyhodnotit aktivitu získávání odběratele ve srovnání s pravidly úrovně pro věrnostní program a aktualizovat stav úrovně odběratele. Tento proces je nutný pouze v případě, že změníte pravidla úrovně ve věrnostních programech a chcete aktualizovaná pravidla zpětně použít na věrnostní karty, které již byly vystaveny. Tento proces může být naplánován jako dávkový proces nebo pro jednotlivé karty. | Aktualizovat úrovně věrnostních karet            |

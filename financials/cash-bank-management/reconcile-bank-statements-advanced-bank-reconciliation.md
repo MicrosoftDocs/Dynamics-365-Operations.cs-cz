@@ -1,15 +1,15 @@
 ---
 title: "Odsouhlasení bankovního výpisu pomocí rozšířeného odsouhlasení banky"
-description: "Funkce rozšířeného odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Operations. Toto téma popisuje proces odsouhlasení."
+description: "Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Toto téma popisuje proces odsouhlasení."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 98243
 ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 81368294164ca4ca1915d73f8f5622e61f5d1fc8
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: eb7fd01874b08417933ddf575c7d6ff866b4e6f8
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Funkce rozšířeného odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Operations. Toto téma popisuje proces odsouhlasení.  
+Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Toto téma popisuje proces odsouhlasení.  
 
 <a name="import-an-electronic-bank-statement"></a>Import elektronického bankovního výpisu
 -----------------------------------
@@ -44,7 +44,7 @@ Můžete odeslat bankovní výpis, který obsahuje informace pro jeden účet ne
 
 Pokud některý výpis v elektronickém souboru nelze přiřadit k bankovnímu účtu pomocí identifikačních polí, nebude importován. Lze však stále importovat jiné výpisy v souboru. Uživatel obdrží zprávu, že se import bankovních výpisů pro konkrétní bankovní účty nezdařil. Mějte prosím na paměti, že uživatel, který importuje soubor s bankovním výpisem, musí mít přístup k právnické osobě, aby mohl importovat výpisy z bankovních účtů této právnické osoby. 
 
-Více souborů výpisu lze také uložit do aplikace Microsoft Dynamics 365 for Operations v jediném procesu, a to pomocí souboru zip. Chcete-li importovat více souborů bankovního výpisu pro více účtů, zkombinujte všechny soubory bankovních výpisů do jednoho souboru zip. V dialogovém okně **Importovat bankovní výpisy** nastavte **Importovat výpis pro více bankovních účtů ve všech právnických osobách** na **Ano**. Kliknutím na tlačítko **Procházet** vyberte soubor zip obsahující soubory bankovního výpisu a klepněte na tlačítko **Odeslat**. Proces importu rozpozná soubor .zip a nahraje každý zahrnutý výpis, bez ohledu na bankovní účet právnické osoby. 
+Více souborů výpisu lze také uložit do aplikace Finance and Operations v jediném procesu, a to pomocí souboru zip. Chcete-li importovat více souborů bankovního výpisu pro více účtů, zkombinujte všechny soubory bankovních výpisů do jednoho souboru zip. V dialogovém okně **Importovat bankovní výpisy** nastavte **Importovat výpis pro více bankovních účtů ve všech právnických osobách** na **Ano**. Kliknutím na tlačítko **Procházet** vyberte soubor zip obsahující soubory bankovního výpisu a klepněte na tlačítko **Odeslat**. Proces importu rozpozná soubor .zip a nahraje každý zahrnutý výpis, bez ohledu na bankovní účet právnické osoby. 
 
 Je k dispozici možnost **Po importu odsouhlasit**. Pokud tuto možnost nastavíte na **Ano**, systém automaticky ověří bankovní výpis, vytvoří nové odsouhlasení bankovního účtu a list a spustí po odeslání bankovního výpisu Výchozí sadu pravidel párování. Tato funkce automatizuje proces až do okamžiku, kdy musíte odpovídající transakce ručně spárovat.
 
@@ -76,7 +76,7 @@ Existují tři způsoby spárování nebo odsouhlasení transakcí bankovního v
 
 -   Spárování transakcí s bankovními transakcemi Operations.
 -   Spárování transakcí s transakcemi storna bankovního výpisu.
--   Označte transakce jako **Nové**, aby je bylo možné zaúčtovat později jako bankovní transakce v aplikaci Dynamics 365 for Operations.
+-   Označte transakce jako **Nové**, aby je bylo možné zaúčtovat později jako bankovní transakce v aplikaci Finance and Operations.
 
 Pokud chcete transakce spárovat ručně, vyberte je v mřížce **Transakce bankovního výpisu**, vyberte příslušené transakce v mřížce **Bankovní transakce v aplikaci Operations** a klikněte na **Spárovat**. Vybrané transakce jsou přesunuty z horních mřížek pro nespárované transakce do dolních mřížek pro spárované transakce. Kromě toho jsou aktualizovány celkové počty spárovaných a nespárovaných transakcí. Párování transakcí umožňuje stav 1:1, n:1 a n:n. Shody musí dodržovat pravidla pro povolené rozdíly dat a mapování typu transakce. Tato pravidla jsou nastavena na stránce **Parametry pokladny a banky**.
 
@@ -86,7 +86,7 @@ Stornování transakcí bankovního výpisu je párováno pomocí listu odsouhla
 
 Stornované bankovní transakce Operations musí být odsouhlaseny pomocí stránky **Bankovní transakce Operations**. Dvě bankovní transakce Operations je možné odsouhlasit společně, pokud mají dokumenty stejný bankovní účet, typ dokumentu a platební reference, a pokud mají opačné částky. Také je možné odsouhlasit jeden zrušený šek s cílem zabránit, aby se tyto transakce zobrazily v listě odsouhlasení. 
 
-Pokud existují nové bankou zahájené transakce, jako jsou úroky, poplatky nebo náklady, které dosud nejsou uvedeny v aplikaci Dynamics 365 for Operations, můžete je přidat do deníku, který je přidružen k vybranému odsouhlasení bankovního výpisu. Vyberte transakci bankovního výpisu v mřížce **Transakce bankovního výpisu** pro nespárované transakce a potom klepněte na tlačítko **Označit jako nové**. Stav transakce je nastaven na **Nový** a transakce je přesunuta do mřížky **Transakce bankovního výpisu** pro spárované transakce. Transakce, které jsou označeny jako **Nové**, se účtují později na stránce **Bankovní výpis**. 
+Pokud existují nové bankou zahájené transakce, jako jsou úroky, poplatky nebo náklady, které dosud nejsou uvedeny v aplikaci Finance and Operations, můžete je přidat do deníku, který je přidružen k vybranému odsouhlasení bankovního výpisu. Vyberte transakci bankovního výpisu v mřížce **Transakce bankovního výpisu** pro nespárované transakce a potom klepněte na tlačítko **Označit jako nové**. Stav transakce je nastaven na **Nový** a transakce je přesunuta do mřížky **Transakce bankovního výpisu** pro spárované transakce. Transakce, které jsou označeny jako **Nové**, se účtují později na stránce **Bankovní výpis**. 
 
 Můžete zrušit párování transakcí, které byly spárovány nesprávně. Vyberte spárovanou transakci bankovního výpisu a potom klepněte na tlačítko **Zrušit párování**. Všechny přidružené transakce jsou přesunuty zpět do horní mřížky pro nespárované transakce a aktualizuje se celkový počet spárovaných a nespárovaných transakcí. 
 

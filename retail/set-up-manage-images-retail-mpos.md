@@ -3,25 +3,27 @@ title: "Nastavení a správa obrázků pro Retail Modern POS"
 description: "Tento článek vysvětluje postup, který je součástí nastavení a správy obrázků pro různé entity, které jsou obsaženy v modulu Retail Modern POS (MPOS)."
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 06915686e1421742c2f1dd1ebbb02491f04431fd
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 3985d731709eff4085927b277996528e4e448ba9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -36,19 +38,19 @@ Tento článek vysvětluje postup, který je součástí nastavení a správy ob
 <a name="setting-up-the-media-base-url-and-defining-media-templates-to-configure-the-format-for-image-urls"></a>Nastavení základní adresy URL média a definování šablon média ke konfiguraci formátu adresy URL pro obrázek
 -------------------------------------------------------------------------------------------------
 
-Obrázky zobrazené v Retail Modern POS (MPOS) musí být hostovány externě mimo aplikaci Microsoft Dynamics 365 for Operations - Retail. Standardně jsou umístěny v systému správy obsahu, sítě dodávky obsahu (CDN) nebo serveru médií. MPOS pak prostřednictvím přístupu k cílové adrese URL načte a zobrazí obrázky odpovídajících entit, jako jsou například výrobky a katalogy. K načtení těchto externě hostovaných obrázků MPOS je zapotřebí správný formát adresy URL pro obrázky. Požadovaný formát adresy URL pro obrázky lze konfigurovat pomocí nastavení hodnoty **základní adresy URL média**v kanálu profilu a používáním funkce **šablony definování médií**pro každou entitu. Standardní formát adresy URL pro podmnožinu entit je rovněž možné přepsat pomocí funkce **úpravy v aplikaci Excel**. **Důležité upozornění:** V aktuální verzi aplikace Dynamics 365 for Operations již nelze nastavit formát adresy URL pomocí atributu **obrázku** XML pro MPOS ve **Výchozí** skupině atributů entit. Pokud jste obeznámeni s aplikací Microsoft Dynamics AX 2012 R3 a nyní používáte aktuální verzi aplikace Dynamics 365 for Operations, ujistěte se, že vždy používáte novou funkci **Definovat šablonu média** k nastavení obrázků. Není možné použít nebo upravit atribut **obrázku** ve **výchozím** skupině atributů pro všechny entity včetně produktů. Změny prováděné přímo ve **výchozí** skupině atributů pro obrázky se neodrazí. Tato možnost bude zakázána v budoucích verzích. V následujících procedurách jsou obrázky nastaveny jako příklad pro entitu katalogu. Tyto postupy vám pomůžou zajistit, že správná cílová cesta obrázků je implicitně nastavena pro všechny obrázky katalogu používající obecnou cestu. Například jestliže jste externě nastavili server médií nebo CDN a chcete, aby se obrázky zobrazily v MPOS pro daný obchod, funkce **Definovat šablonu média** vám usnadní nastavení cesty umístění, kde MPOS může vyhledat a získávat obrázky. **Poznámka:**Pro tento příklad ukázkových dat je nasazen server médií na serveru maloobchodu. Můžete jej však mít kdekoli mimo aplikaci Dynamics 365 for Operations.
+Obrázky zobrazené v Retail Modern POS (MPOS) musí být hostovány externě mimo aplikaci Microsoft Dynamics 365 for Retail. Standardně jsou umístěny v systému správy obsahu, sítě dodávky obsahu (CDN) nebo serveru médií. MPOS pak prostřednictvím přístupu k cílové adrese URL načte a zobrazí obrázky odpovídajících entit, jako jsou například výrobky a katalogy. K načtení těchto externě hostovaných obrázků MPOS je zapotřebí správný formát adresy URL pro obrázky. Požadovaný formát adresy URL pro obrázky lze konfigurovat pomocí nastavení hodnoty **základní adresy URL média** v kanálu profilu a používáním funkce **šablony definování médií** pro každou entitu. Standardní formát adresy URL pro podmnožinu entit je rovněž možné přepsat pomocí funkce **úpravy v aplikaci Excel**. **Důležité upozornění:** V aktuální verzi aplikace Dynamics 365 for Retail již nelze nastavit formát adresy URL pomocí atributu **obrázku** XML pro MPOS ve **Výchozí** skupině atributů entit. Pokud jste obeznámeni s aplikací Microsoft Dynamics AX 2012 R3 a nyní používáte aktuální verzi aplikace Dynamics 365 for Retail, ujistěte se, že vždy používáte novou funkci **Definovat šablonu média** k nastavení obrázků. Není možné použít nebo upravit atribut **obrázku** ve **výchozím** skupině atributů pro všechny entity včetně produktů. Změny prováděné přímo ve **výchozí** skupině atributů pro obrázky se neodrazí. Tato možnost bude zakázána v budoucích verzích. V následujících procedurách jsou obrázky nastaveny jako příklad pro entitu katalogu. Tyto postupy vám pomůžou zajistit, že správná cílová cesta obrázků je implicitně nastavena pro všechny obrázky katalogu používající obecnou cestu. Například jestliže jste externě nastavili server médií nebo CDN a chcete, aby se obrázky zobrazily v MPOS pro daný obchod, funkce **Definovat šablonu média** vám usnadní nastavení cesty umístění, kde MPOS může vyhledat a získávat obrázky. **Poznámka:** Pro tento příklad ukázkových dat je nasazen server médií na serveru maloobchodu. Můžete jej však mít kdekoli mimo aplikaci Dynamics 365 for Retail.
 
 ### <a name="set-up-the-media-base-url-for-a-channel"></a>Nastavení základní adresy URL médií pro kanál
 
-1.  Otevřete portál Dynamics 365 for Operations HQ.
-2.  Klikněte na **Maloobchodní a velkoobchodní prodej** &gt; **Nastavení kanálu** &gt; **Profily kanálu**. [![profil kanálu](./media/channel-profile1.png)](./media/channel-profile1.png)
+1.  Otevřete portál Dynamics 365 for Retail HQ.
+2.  Klikněte na **Maloobchodní prodej** &gt; **Nastavení kanálu** &gt; **Profily kanálu**. [![profil kanálu](./media/channel-profile1.png)](./media/channel-profile1.png)
 3.  V profilu kanálu, který váš obchod používá pro MPOS aktualizujte pole **Základní adresu URL média** se základní adresou URL serveru média nebo CDN. Základní adresa URL je první část adresy URL, která je společná pro všechny složky obrázku různých entit.[![profil kanálu2](./media/channel-profile2.png)](./media/channel-profile2.png)
 
 ### <a name="define-the-media-template-for-an-entity"></a>Definování šablon médií pro entitu
 
-1.  Klikněte na **Maloobchodní a velkoobchodní prodej** &gt; **Správa katalogu** &gt; **Obrázky katalogu**.
+1.  Klikněte na **Maloobchodní prodej** &gt; **Správa katalogu** &gt; **Obrázky katalogu**.
 2.  Na stránce **Obrázky katalogu** v podokně akcí klepněte na příkaz **Definovat šablonu média**. V dialogovém okně **Definovat šablonu média** v poli **Entita**, má být výchozí nastavení na **Katalog**.
-3.  Na pevné záložce **Cesta média** zadejte zbývající cestu k místu obrázku. Cesta média podporuje **LanguageID** jako proměnnou. Například pro ukázková data můžete vytvořit složku **Katalogy** pro všechny katalogové obrázky na základní adrese URL médií pro váš serveru médií (https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer). Můžete pak mít složku pro každý jazyk, jako je například en-US nebo fr-FR a zkopírovat příslušné obrázky do každé složky. Pokud nemáte různé obrázky pro různé jazyky, můžete vynechat proměnnou **LanguageID** ze své složkové struktury a poukázat přímo na složku katalogů, která bude obsahovat katalogové obrázky. **Poznámka:** Aktuální verze aplikace Dynamics AX podporuje token **{LanguageId}** pro katalog, produkt a entity katalogu. (Token **{LanguageID}** není podporován pro odběratele a jednotky pracovníků, podle existujícího standardu, který byl platná od verze aplikace Microsoft Dynamics AX 6.x.)
+3.  Na pevné záložce **Cesta média** zadejte zbývající cestu k místu obrázku. Cesta média podporuje **LanguageID** jako proměnnou. Například pro ukázková data můžete vytvořit složku **Katalogy** pro všechny katalogové obrázky na základní adrese URL médií pro váš serveru médií (https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer). Můžete pak mít složku pro každý jazyk, jako je například en-US nebo fr-FR a zkopírovat příslušné obrázky do každé složky. Pokud nemáte různé obrázky pro různé jazyky, můžete vynechat proměnnou **LanguageID** ze své složkové struktury a poukázat přímo na složku katalogů, která bude obsahovat katalogové obrázky. **Poznámka:** Aktuální verze aplikace Dynamics 365 for Retail podporuje token **{LanguageId}** pro katalog, produkt a entity katalogu. (Token **{LanguageID}** není podporován pro odběratele a jednotky pracovníků, podle existujícího standardu, který byl platná od verze aplikace Microsoft Dynamics AX 6.x.)
 4.  Pro obrázky je formát názvu souboru pevně zakódován do názvu katalogu a nemůže být změněn. Z tohoto důvodu přejmenujte své obrázky, aby měly odpovídající katalogové názvy, abyste si zajistili, že je MPOS zpracovávají správně.
 5.  V poli **Přípona souboru** vyberte očekávané přípony názvu souboru, v závislosti na typu obrázku, které máte. Například pro ukázková data jsou katalogové obrázky nastaveny na příponu .jpg. (Obrázkové soubory také přejmenujte tak, aby měly katalogové názvy.)
 6.  Klikněte na tlačítko **OK**.
@@ -78,10 +80,10 @@ Jak jste se již dozvěděli v předchozím oddílu, šablona média dané entit
 
 ### <a name="overwrite-by-using-edit-in-excel"></a>Přepsání pomocí úprav v aplikaci Excel
 
-1.  Klikněte na **Maloobchodní a velkoobchodní prodej** &gt; **Správa katalogu** &gt; **Obrázky katalogu**.
+1.  Klikněte na **Maloobchodní prodej** &gt; **Správa katalogu** &gt; **Obrázky katalogu**.
 2.  Na stránce **Obrázky katalogu** klepněte na příkaz **Definovat šablonu média**. V dialogovém okně **Definovat šablonu média** v poli **Entita**, má být nastavení na hodnotu **Katalog**.
 3.  Na pevné záložce **Cesta média** si povšimněte umístění obrázku.
-4.  Na pevné záložce **Generovat adresy URL obrázku pro Excel** klepněte na tlačítko **Generovat**. **Upozornění:** Kdykoli při změně šablony média je před použitím funkcí úpravy v aplikaci Excel nutné klepnout na **Generovat**. [![excel1](./media/excel1.jpg)](./media/excel1.jpg) Nyní můžete zobrazit náhled adres URL obrázků, které byly vygenerovány na základě naposledy uložené šablony média. [![excel2](./media/excel2.png)](./media/excel2.png) **Poznámka:** Adresy URL generované pro aplikaci Excel používají cestu a konvence šablony média, která je definována. Tyto konvence zahrnují konvence pro názvy souborů. Předpokladem je, že jste nastavili fyzické obrázky mimo aplikaci Dynamics AX a obrázky lze získat z adresy URL, která je odvozena z šablony média, kterou jste definovali dříve. Odvozené adresy URL lze přepisovat použitím funkcí úpravy v aplikaci Excel.
+4.  Na pevné záložce **Generovat adresy URL obrázku pro Excel** klepněte na tlačítko **Generovat**. **Upozornění:** Kdykoli při změně šablony média je před použitím funkcí úpravy v aplikaci Excel nutné klepnout na **Generovat**. [![excel1](./media/excel1.jpg)](./media/excel1.jpg) Nyní můžete zobrazit náhled adres URL obrázků, které byly vygenerovány na základě naposledy uložené šablony média. [![excel2](./media/excel2.png)](./media/excel2.png) **Poznámka:** Adresy URL generované pro aplikaci Excel používají cestu a konvence šablony média, která je definována. Tyto konvence zahrnují konvence pro názvy souborů. Předpokladem je, že jste nastavili fyzické obrázky mimo aplikaci Dynamics 365 for Retail a obrázky lze získat z adresy URL, která je odvozena z šablony média, kterou jste definovali dříve. Odvozené adresy URL lze přepisovat použitím funkcí úpravy v aplikaci Excel.
 5.  Klepněte na **Upravit v aplikaci Excel**.
 6.  Po otevření sešitu aplikace Microsoft Excel po zobrazení výzvy klepněte na tlačítko **povolit úpravu**.
 7.  Po zobrazení výzvy klepněte v pravém podokně na možnost **Důvěřovat tomuto doplňku** a počkejte, až doplněk dokončí instalaci. [![Důvěřovat tomuto doplňku](./media/excel4.jpg)](./media/excel4.jpg)
@@ -106,7 +108,7 @@ Odstranit lze pouze přepsané záznamy adresy URL obrázku. Po dokončení odst
 Pro všechny entity s výjimkou produktů, je možné přepsat adresu URL obrázku pro danou položku entity na úrovni položky entity ze stránky **Náhled**. Pro produkty můžete použít stránku entit „Produkty v katalogu“. Tento příklad ukazuje, jak přepsat obrázek v katalogu.
 
 1.  Klikněte na možnost **Katalogy** &gt; **Média** &gt; **Obrázky** a vyberte k aktualizaci obrázek v katalogu.
-2.  Klepněte na tlačítko **Přidat**a zadejte adresu URL obrázku k přepsání adresy URL šablony média.
+2.  Klepněte na tlačítko **Přidat** a zadejte adresu URL obrázku k přepsání adresy URL šablony média.
 3.  Potřebujete-li, aby se tento obrázek zobrazil v MPOS pro katalog, můžete jej nastavit jako výchozí obrázek.
 4.  Klepněte na tlačítko **OK**. Adresa URL obrázku je aktualizovaná pro tento obrázek v katalogu a zobrazuje se náhled. [![náhled3](./media/preview3.png)](./media/preview3.png)
 5.  Můžete také zobrazit náhled obrázku pro všechny přepsané adresy URL obrázku na stránce s galerií **Obrázky v katalogu**.
@@ -120,7 +122,7 @@ Pro přepsání adresy URL obrázku pro obrázky produktů v katalogu musíte po
 1.  Pokud chcete přepsat obrázky produktů v úrovni katalogu, vyberte katalog, poté vyberte produkt, jehož obrázek bude přepsán.
 2.  Klikněte na možnost **Atributy**.
 3.  Na další stránce vyberte **Obrázek**, a pak klikněte na tlačítko **Upravit**. Stránka **Náhled** se otevře jako posuvné dialogové okno.
-4.  Klepněte na tlačítko **přidat**a adresu URL obrázku přepište novou adresou URL.
+4.  Klepněte na tlačítko **přidat** a adresu URL obrázku přepište novou adresou URL.
 5.  Klepněte na tlačítko **OK**. Nyní vidíte náhled nového obrázku a můžete jej nastavit jako výchozí obrázek.
 
 **[![cat3](./media/cat3.png)](./media/cat3.png)Poznámka:** Po přidružení obrázků kategorie musíte publikovat kanálu a spustit úlohu kanálu, abyste mohli zajistit, že změny jsou publikované do databáze kanálů.
@@ -134,8 +136,8 @@ Obrázky produktu, které je nutné použít v offline režimu lze nastavit odes
 
 1.  Klikněte na **Řízení informací o produktech** &gt; **Produkty** &gt; **Produkty**.
 2.  Vyberte produkt, pro který chcete nastavit offline obrázek.
-3.  Klepněte na tlačítko **Upravit**a poté klepněte na šipku v pravém horním rohu, abyste zobrazili pravé podokno.
-4.  Na pevné záložce **Obrázek produktu** klepněte na tlačítko **Změnit obrázek**a odešlete fyzický obrázek pro použitá vybraného produktu v offline režimu.
+3.  Klepněte na tlačítko **Upravit** a poté klepněte na šipku v pravém horním rohu, abyste zobrazili pravé podokno.
+4.  Na pevné záložce **Obrázek produktu** klepněte na tlačítko **Změnit obrázek** a odešlete fyzický obrázek pro použitá vybraného produktu v offline režimu.
 5.  Uložit a zavřít stránku.
 6.  Při online režimu MPOS spusťte úlohu katalogu v ústředí, abyste se ujistili, že data jsou odeslána alespoň jednou do offline databáze.
 7.  MPOS přepněte do offline režimu. Zobrazí se obrázek, který jste odeslali určitého výrobku v ústředí. [![offline1](./media/offline1.png)](./media/offline1.png)

@@ -1,16 +1,16 @@
 ---
 title: "Přehled elektronických podpisů"
-description: "Tento článek obsahuje přehled informací o elektronických podpisech a o možnostech jejich použití v aplikaci Microsoft Dynamics 365 for Operations."
+description: "Tento článek obsahuje přehled informací o elektronických podpisech a o možnostech jejich použití v aplikaci Microsoft Dynamics 365 for Finance and Operations."
 author: maertenm
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SIGParameters, SIGProcSetup, SIGReasonCode
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13611
 ms.assetid: 98dc6b79-1895-45d8-9dd1-2c8a351b58af
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5adf45769657e4da81af00b2114a2c1a98655207
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 0cebd30a560ff033efab89c2055827b62cf31576
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -31,15 +31,15 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek obsahuje přehled informací o elektronických podpisech a o možnostech jejich použití v aplikaci Microsoft Dynamics 365 for Operations.
+Tento článek obsahuje přehled informací o elektronických podpisech a o možnostech jejich použití v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 
 <a name="what-is-an-electronic-signature"></a>Co je elektronický podpis?
 --------------------------------
 
-Elektronický podpis potvrzuje identitu osoby, která spouští nebo schvaluje určitý proces využívající výpočetní techniku. V některých průmyslových odvětvích má elektronický podpis stejnou právní hodnotu jako ruční podpis. Elektronické podpisy jsou vyžadovány předpisy v několika průmyslových odvětvích, například ve farmaceutickém, potravinářském, leteckém a zbrojním průmyslu. Jsou rovněž nezbytnou podmínkou souladu s předpisy směrnice CFR 21, část 11, kterou vydal Úřad pro kontrolu potravin a léků (FDA) ve Spojených státech amerických. **Poznámka:** Elektronický podpis sám o sobě není totéž jako podpis digitální. Elektronický podpis je prostou náhražkou podpisu psaného rukou, zatímco digitální podpis je doplněn o další bezpečnostní opatření. Digitální podpis vám může pomoci zjistit, zda s daty neoprávněně nemanipuloval jiný uživatel nebo proces. Digitální podpis lze rovněž ověřit, přičemž vlastník certifikátu použitého k podepsání dat nemůže platnost ověření popřít. Jak je popsáno dále, v aplikaci Microsoft Dynamics 365 for Operations jsou součástí elektronických podpisů i vestavěné funkce podpisů digitálních.
+Elektronický podpis potvrzuje identitu osoby, která spouští nebo schvaluje určitý proces využívající výpočetní techniku. V některých průmyslových odvětvích má elektronický podpis stejnou právní hodnotu jako ruční podpis. Elektronické podpisy jsou vyžadovány předpisy v několika průmyslových odvětvích, například ve farmaceutickém, potravinářském, leteckém a zbrojním průmyslu. Jsou rovněž nezbytnou podmínkou souladu s předpisy směrnice CFR 21, část 11, kterou vydal Úřad pro kontrolu potravin a léků (FDA) ve Spojených státech amerických. **Poznámka:** Elektronický podpis sám o sobě není totéž jako podpis digitální. Elektronický podpis je prostou náhražkou podpisu psaného rukou, zatímco digitální podpis je doplněn o další bezpečnostní opatření. Digitální podpis vám může pomoci zjistit, zda s daty neoprávněně nemanipuloval jiný uživatel nebo proces. Digitální podpis lze rovněž ověřit, přičemž vlastník certifikátu použitého k podepsání dat nemůže platnost ověření popřít. Jak je popsáno dále, v aplikaci Microsoft Dynamics 365 for Finance and Operations jsou součástí elektronických podpisů i vestavěné funkce podpisů digitálních.
 
-## <a name="electronic-signatures-in-dynamics-365-for-operations"></a>Elektronické podpisy v aplikaci Microsoft Dynamics 365 for Operations
-V aplikaci Microsoft Dynamics 365 for Operations můžete používat elektronické podpisy pro důležité obchodní procesy. Některé procesy obsahují vestavěné prvky pro práci s elektronickými podpisy. Kromě toho můžete vytvářet vlastní požadavky na podpisy, připojené k libovolné databázové tabulce a poli. Součástí digitálního podpisu jsou i elektronické podpisy. Každý uživatel, který podepisuje dokumenty, musí získat platný šifrovací certifikát. Při podepsání dokumentu proběhne ověření soukromého klíče přidruženého k použitému certifikátu. Dynamics 365 for Operations ukládá údaje o elektronických podpisech do protokolu, který může sloužit jako záznam auditu. Popis nastavení elektronických podpisů viz [Nastavení elektronických podpisů (Průvodce záznamem úloh)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
+## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Elektronické podpisy v aplikaci Microsoft Dynamics 365 for Finance and Operations
+V aplikaci Finance and Operations můžete používat elektronické podpisy pro důležité obchodní procesy. Některé procesy obsahují vestavěné prvky pro práci s elektronickými podpisy. Kromě toho můžete vytvářet vlastní požadavky na podpisy, připojené k libovolné databázové tabulce a poli. Součástí digitálního podpisu jsou i elektronické podpisy. Každý uživatel, který podepisuje dokumenty, musí získat platný šifrovací certifikát. Při podepsání dokumentu proběhne ověření soukromého klíče přidruženého k použitému certifikátu. Aplikace Finance and Operations ukládá údaje o elektronických podpisech do protokolu, který může sloužit jako záznam auditu. Popis nastavení elektronických podpisů viz [Nastavení elektronických podpisů (Průvodce záznamem úloh)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>Uživatelé, kteří potřebují přístup k elektronickým podpisům
 Tři druhy uživatelů obvykle vyžadují zabezpečení přístupu k elektronickým podpisům: správci elektronického podpisu, podepisující osoby a auditoři elektronických podpisů.
@@ -62,7 +62,7 @@ Auditor elektronických podpisů kontroluje databázový protokol a kontrolní p
 ## <a name="signing-documents-electronically"></a>Elektronické podepsání dokumentů
 ### <a name="get-a-certificate"></a>Získání certifikátu
 
-Před elektronickým podepsáním dokumentů v aplikaci Dynamics 365 for Operations si musí každý podepisující uživatel vyžádat certifikát. **Poznámka:** Aplikace Dynamics 365 for Operations používá k vytváření certifikátů a správě elektronického podepisování funkce databázového systému Microsoft SQL Server. Není vyžadována žádná další infrastruktura certifikátů ani veřejných klíčů (PKI). Vyžádáte-li si certifikát, bude pro vás v databázi aplikace Dynamics 365 for Operations vytvořen veřejný a soukromý klíč. Soukromý klíč je zašifrován s použitím hesla, které znáte pouze vy. Při elektronickém podepsání dokumentu proběhne ověření vaší totožnosti podle hesla, které zadáte. Pro zažádání o certifikát klikněte na stránce **Možnosti** na kartě **Účty** na tlačítko **Získat certifikát**. Zadejte a potvrďte heslo, které budete používat pro podepisování. Heslo slouží k ochraně soukromého klíče a k autorizaci použití vašeho certifikátu. Heslo se neukládá do databáze a nemá k němu přístup nikdo jiný než vy, tj. ani administrátor aplikace Dynamics 365 for Operations. Jestliže zapomenete heslo připojené k vašemu certifikátu, musíte tento certifikát vynulovat. Vynulování certifikátu neovlivní dokumenty, které jste podepsali s použitím původního certifikátu. Chcete-li obnovit certifikát, na stránce **Možnosti** klepněte na tlačítko **Obnovit certifikát**.
+Před elektronickým podepsáním dokumentů v aplikaci Finance and Operations si musí každý podepisující uživatel vyžádat certifikát. **Poznámka:** Aplikace Finance and Operations používá k vytváření certifikátů a správě elektronického podepisování funkce databázového systému Microsoft SQL Server. Není vyžadována žádná další infrastruktura certifikátů ani veřejných klíčů (PKI). Vyžádáte-li si certifikát, bude pro vás v databázi aplikace Finance and Operations vytvořen veřejný a soukromý klíč. Soukromý klíč je zašifrován s použitím hesla, které znáte pouze vy. Při elektronickém podepsání dokumentu proběhne ověření vaší totožnosti podle hesla, které zadáte. Pro zažádání o certifikát klikněte na stránce **Možnosti** na kartě **Účty** na tlačítko **Získat certifikát**. Zadejte a potvrďte heslo, které budete používat pro podepisování. Heslo slouží k ochraně soukromého klíče a k autorizaci použití vašeho certifikátu. Heslo se neukládá do databáze a nemá k němu přístup nikdo jiný než vy, tj. ani administrátor aplikace Finance and Operations. Jestliže zapomenete heslo připojené k vašemu certifikátu, musíte tento certifikát vynulovat. Vynulování certifikátu neovlivní dokumenty, které jste podepsali s použitím původního certifikátu. Chcete-li obnovit certifikát, na stránce **Možnosti** klepněte na tlačítko **Obnovit certifikát**.
 
 ### <a name="sign-a-document-electronically"></a>Elektronické podepsání dokumentu
 
@@ -77,7 +77,7 @@ Když provedete změnu, která vyžaduje elektronický podpis, zobrazí se strá
 
 ### <a name="sign-for-another-users-changes"></a>Podepsat změny jiného uživatele
 
-V určitých situacích je třeba, aby změny provedené jedním uživatelem podepsal jiný uživatel. Příkladem jsou změny kusovníku provedené zaměstnancem, které musí podpisem potvrdit jeho nadřízený. Tento postup použijte, chcete-li určitého uživatele aplikace Dynamics 365 for Operations ustanovit podepisujícím uživatelem pro jiného uživatele. **Poznámka:** V případě, že uživatel podepisuje změny provedené jiným uživatelem, musí být podpis zadán na pracovní stanici uživatele, který změny provedl. Uživatel nemůže provedené změny uložit, dokud nebudou podepsány. Chcete-li určit schvalovatele, postupujte takto.
+V určitých situacích je třeba, aby změny provedené jedním uživatelem podepsal jiný uživatel. Příkladem jsou změny kusovníku provedené zaměstnancem, které musí podpisem potvrdit jeho nadřízený. Tento postup použijte, chcete-li určitého uživatele aplikace Finance and Operations ustanovit podepisujícím uživatelem pro jiného uživatele. **Poznámka:** V případě, že uživatel podepisuje změny provedené jiným uživatelem, musí být podpis zadán na pracovní stanici uživatele, který změny provedl. Uživatel nemůže provedené změny uložit, dokud nebudou podepsány. Chcete-li určit schvalovatele, postupujte takto.
 
 1.  Na stránce **Možnosti** na kartě **Účty** klepněte na tlačítko **Určit schvalovatele**.
 2.  V poli **ID schvalujícího uživatele** vyberte ID uživatele, který musí podepsat změny provedené jiným uživatelem.

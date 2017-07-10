@@ -3,7 +3,7 @@ title: "Úprava buněk definice řádku"
 description: "Tento článek popisuje informace, které jsou nutné pro každou buňku v definici řádku ve finanční sestavě, a vysvětluje, jak tyto informace zadat."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,18 +11,18 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: Management Reporter, Core
+ms.search.scope: Management Reporter, UnifiedOperations, Core
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 920cd02edee96b829069e88e026af1774d037d9a
+ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
+ms.openlocfilehash: 40ae4e0774c5752d697baba6c8add8aaf44fbb6d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -60,7 +60,7 @@ Následující příklady jsou platné kódy řádků:
 
 ### <a name="reset-numeric-row-codes"></a>Obnovení číselných kódů řádku
 
-1.  V Návrháři sestav klikněte na tlačítko **Definice řádku**a potom otevřete definici řádku ke změně.
+1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2.  V nabídce **Upravit** klikněte na tlačítko **Přečíslovat řádky**.
 3.  V dialogovém okně **Přečíslovat řádky** zadejte nové hodnoty pro počáteční kód řádku a přírůstek kódu řádku. Můžete obnovit číselné kódy řádků na rovnoměrně rozložené hodnoty. Návrhář sestav však přečísluje pouze kódy řádků začínající číslicemi (například 130 nebo 246). Nepřečísluje kódy řádků, které začínají písmeny (například INCOME\_93 nebo TP0693) 
 > [!NOTE]
@@ -73,19 +73,19 @@ Buňka popisu obsahuje popis finančních dat v řádku sestavy, například „
 
 ### <a name="add-the-description-for-a-line-on-a-report"></a>Přidání popisu pro řádek v sestavě
 
-1.  V Návrháři sestav klikněte na tlačítko **Definice řádku**a potom otevřete definici řádku ke změně.
+1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2.  Vyberte buňku **Popis** a poté zadejte název řádku sestavy.
 3.  Použijte formátování.
 
 ### <a name="add-additional-text-from-a-reporting-tree-in-the-description"></a>Přidání dalšího textu ze stromu výkaznictví do popisu
 
-1.  V Návrháři sestav klikněte na tlačítko **Definice řádku**a potom otevřete definici řádku ke změně.
+1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2.  Zadejte kód doplňkového textu a jakýkoli další text do příslušné buňky **Popis**.
 3.  Použijte formátování.
 
 ### <a name="limit-the-additional-text-to-a-specific-reporting-unit"></a>Omezení dodatečného textu na určitou jednotku výkaznictví
 
-1.  V Návrháři sestav klikněte na tlačítko **Definice řádku**a potom otevřete definici řádku ke změně.
+1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2.  Vyhledejte řádek, ve kterém má být vytvořen doplňkový text, a pak dvakrát klikněte na buňku ve sloupci **Související vzorce/řádky/jednotky**.
 3.  V dialogovém okně **Výběr jednotky výkaznictví** v poli **Strom výkaznictví** vyberte strom výkaznictví.
 4.  V poli **Vyberte jednotku výkaznictví pro omezení** rozbalte nebo sbalte strom výkaznictví a vyberte jednotku výkaznictví.
@@ -97,7 +97,7 @@ Buňka **Kód formátu** nabízí výběr předem naformátovaných voleb pro ob
 
 ### <a name="add-a-format-code-to-a-report-row"></a>Přidání kódu formátu k řádku sestavy
 
-1.  V Návrháři sestav klikněte na tlačítko **Definice řádku**a potom vyberte definici řádku ke změně.
+1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom vyberte definici řádku ke změně.
 2.  Dvakrát klikněte na buňku **Kód formátu**.
 3.  V seznamu vyberte kód formátu. Následující tabulka popisuje kódy formátu a jejich akce.
     | Kód formátu                   | Interpretace kódu formátu | Akce|
@@ -146,7 +146,7 @@ Při vytvoření vzorce součtu řádku musíte použít kódy řádků k určen
 
 ### <a name="create-a-row-total"></a>Vytvoření součtu řádku
 
-1.  V Návrháři sestav klikněte na tlačítko **Definice řádku**a potom otevřete definici řádku ke změně.
+1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2.  Dvakrát klikněte na buňku **Kód formátu** v definici řádku a vyberte možnost **TOT**.
 3.  V buňce **Související vzorce/řádky/jednotky** zadejte vzorec součtu.
 
@@ -158,7 +158,7 @@ Ve sloupci **Kód formátu** v definici řádku kódy formátu **DES**, **LFT**,
 
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Spojení řádku formátu s řádkem částky
 
-1.  V Návrháři sestav klikněte na tlačítko **Definice řádku**a potom vyberte definici řádku ke změně.
+1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom vyberte definici řádku ke změně.
 2.  Do řádku formátování v buňce **Související vzorce/řádky/jednotky** zadejte kód řádku částky k potlačení. **Poznámka:** Aby bylo možné potlačit řádek částky, zůstatek na řádku musí být 0 (nula). Řádek částky, který má zůstatek, není potlačen.
 3.  V nabídce **Soubor** klikněte na možnost **Uložit**.
 
@@ -186,9 +186,9 @@ V definici sloupce určuje typ sloupce **CALC** sloupec, který určuje vzorec v
 2.  Přidejte nový sloupec do definice sloupce a nastavte typ sloupce na možnost **CALC**.
 3.  V buňce **Vzorec** nového sloupce zadejte vzorec **X/BASEROW**, kde **X** je typ sloupce **FD** pro zobrazení v procentech.
 4.  Dvakrát klikněte na buňku **Přepsání formátu/měny**.
-5.  V dialogovém okně **Přepsání formátu** v seznamu **Kategorie formátu** vyberte možnost**Procento** a klikněte na tlačítko **OK**.
+5.  V dialogovém okně **Přepsání formátu** v seznamu **Kategorie formátu** vyberte možnost **Procento** a klikněte na tlačítko **OK**.
 6.  V nabídce **Soubor** klikněte na tlačítko **Uložit jako** a uložte definici sloupce pod novým názvem. Připojte kód **CBR** k aktuálnímu názvu souboru (například **CUR\_YTD\_CBR**). Tato definice sloupce je vaše definice sloupce základního řádku.
-7.  V Návrháři sestav klikněte na tlačítko **Definice řádku**a potom otevřete definici řádku ke změně použitím výpočtu základního řádku.
+7.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně použitím výpočtu základního řádku.
 8.  Vložte nový řádek nad řádek, kde by měl začít výpočet základního řádku.
 9.  Dvakrát klikněte na buňku **Kód formátu** v definici řádku a vyberte možnost **CBR**.
 10. V buňce **Související vzorce/řádky/jednotky** zadejte číslo kódu řádku pro základní řádek.
@@ -207,7 +207,7 @@ Kódy třídění seřadí účty nebo hodnoty, seřadí skutečné nebo rozpoč
 
 ### <a name="select-a-sorting-code"></a>Výběr kódu třídění
 
-1.  V Návrháři sestav klikněte na tlačítko **Definice řádku**a potom otevřete definici řádku ke změně.
+1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2.  Dvakrát klikněte na buňku **Kód formátu** a vyberte kód třídění.
 3.  V buňce **Související vzorce/řádky/jednotky** stanovte rozmezí kódů řádků ke třídění. Definujte rozsah zadáním kódu prvního řádku, dvojtečky (:) a kódu posledního řádku. Zadáním například hodnoty **160:490** určete rozmezí od řádku 160 po řádek 490.
 4.  V buňce **Omezení sloupce** zadejte písmeno sloupce sestavy k použití pro řazení. 
@@ -252,8 +252,7 @@ Následuje příklad sestavy, která je vygenerována.
 
 |COGS|873,872|236,144|(637,728)|4,864,274|1,590,315|(3,273,959)|
 
-|Platy a mzdy|97,624|65,573|(32,051)|653,884|441,664|(212,220)| |Prodejní slevy|36,383|24,152|(12,231)|241,562|162,670|(78,892)| |Prodejní vratky|10,917|7,246|(3,671)|62,809|48,803|(14,006)| |Nájemní výdaje|12,052|9,019|(3,033)|80,444|60,748|(19,696)| |Kancelářské výdaje|5,023|3,291|(1,732)|33,420|22,098|(11,322)| |Cestovní výdaje|7,656|7,641|(15)|51,062|51,469|407| |Prodej|1,240,119|410,389|829,730|7,139,288|2,764,549|4,374,739| |**Řazení podle absolutní odchylky YTD v sestupném pořadí**|||||||
-|Prodej|1,240,119|410,389|829,730|7,139,288|2,764,549|4,374,739| |Cestovní výdaje|7,656|7,641|(15)|51,062|51,469|407| |Kancelářské výdaje|5,023|3,291|(1,732)|33,420|22,098|(11,322)| |Prodejní vratky|10,917|7,246|(3,671)|62,809|48,803|(14,006)| |Nájemní výdaje|12,052|9,019|(3,033)|80,444|60,748|(19,696)| |Prodejní slevy|36,383|24,152|(12,231)|241,562|162,670|(78,892)| |Platy a mzdy|97,624|65,573|(32,051)|653,884|441,664|(212,220)| |COGS|873,872|236,144|(637,728)|4,864,274|1,590,315|(3,273,959)|
+|Platy a mzdy|97,624|65,573|(32,051)|653,884|441,664|(212,220)| |Prodejní slevy|36,383|24,152|(12,231)|241,562|162,670|(78,892)| |Prodejní vratky|10,917|7,246|(3,671)|62,809|48,803|(14,006)| |Nájemní výdaje|12,052|9,019|(3,033)|80,444|60,748|(19,696)| |Kancelářské výdaje|5,023|3,291|(1,732)|33,420|22,098|(11,322)| |Cestovní výdaje|7,656|7,641|(15)|51,062|51,469|407| |Prodej|1,240,119|410,389|829,730|7,139,288|2,764,549|4,374,739| | |**Řazení podle absolutní odchylky od začátku roku v sestupném pořadí**||||||| |Prodej|1,240,119|410,389|829,730|7,139,288|2,764,549|4,374,739| |Cestovní výdaje|7,656|7,641|(15)|51,062|51,469|407| |Kancelářské výdaje|5,023|3,291|(1,732)|33,420|22,098|(11,322)| |Prodejní vratky|10,917|7,246|(3,671)|62,809|48,803|(14,006)| |Nájemní výdaje|12,052|9,019|(3,033)|80,444|60,748|(19,696)| |Prodejní slevy|36,383|24,152|(12,231)|241,562|162,670|(78,892)| |Platy a mzdy|97,624|65,573|(32,051)|653,884|441,664|(212,220)| |COGS|873,872|236,144|(637,728)|4,864,274|1,590,315|(3,273,959)|
 
 ## <a name="specify-a-format-override-cell"></a>Určení buňky přepsání formátu
 Buňka **Přepsání formátu** určuje formátování použité pro řádek při vytištění sestavy. Toto formátování přepíše formátování určené v definici sloupce a definici sestavy. Ve výchozím nastavení je formátování, které je uvedeno v těchto definicích, měnové. Pokud jeden řádek sestavy uvádí počet položek majetku, například počet budov, a jiný řádek uvádí peněžní hodnotu tohoto majetku, můžete přepsat měnové formátování a zadat číselné formátování pro řádek, který určuje počet budov. Tyto informace můžete zadat v dialogovém okně **Přepsání formátu**. Dostupné možnosti závisí na kategorii formátu, kterou jste vybrali. Oblast **Ukázka** dialogového okna zobrazuje příklady formátů. K dispozici jsou následující kategorie formátů:

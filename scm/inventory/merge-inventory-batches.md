@@ -3,14 +3,14 @@ title: "Sloučit dávky skladových zásob"
 description: "Tento článek obsahuje informace o způsobu sloučení dvou nebo více skladových dávek na sloučenou dávku."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e97257955f4f8fa86c8bf957a182aa71d4fbc8ef
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: aec97976ef6a2b4c66118289f7f76b14351456f8
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -91,7 +91,7 @@ Ne, můžete pouze sloučit dávky stejného pracoviště a dimenze úložiště
 Ne, sloučit lze pouze celé množství dávky. Funkce pro dávkové sloučení je určena jako funkce pro zásoby, nikoliv jako funkce pro výrobu.
 
 ## <a name="what-if-the-batches-have-different-batch-attribute-values"></a>Co když mají dávky odlišné hodnoty atributů dávky?
-Vyberete-li zdrojové dávky ke sloučení ve sloučené dávce, aplikace Microsoft Dynamics 365 for Operations ověří, zda mají všechny dávky vlastnosti nebo hodnoty atributů. Pokud hodnota atributu je stejná, bude navržena hodnota pro sloučenou dávku. Tuto hodnotu lze změnit. Hodnoty atributů, které se neshodují, jsou ponechány prázdné pro sloučenou dávku a lze tyto hodnoty zadat ručně. Pokud je typ atributu dávky pro hodnotu atributu celé číslo nebo zlomek a hodnoty nejsou shodné pro všechny zdrojové dávky, hodnota se vypočítá s použitím výpočtu váženého průměru. Vypočtená hodnota je zaokrouhlena nahoru nebo dolů na nejbližší přírůstek. Je-li tato hodnota je prázdná pro zdrojovou dávku, dávka a její množství nejsou zahrnuty do výpočtu. **Příklad** Následující příklad znázorňuje výpočet váženého průměru pro sloučenou dávku. Dvě zdrojové dávky mají prázdné hodnoty pro typ atributů dávky, který je celé číslo. Následující atributy jsou přiřazeny zdrojovým dávkám.
+Vyberete-li zdrojové dávky ke sloučení ve sloučené dávce, aplikace Finance and Operations ověří, zda mají všechny dávky vlastnosti nebo hodnoty atributů. Pokud hodnota atributu je stejná, bude navržena hodnota pro sloučenou dávku. Tuto hodnotu lze změnit. Hodnoty atributů, které se neshodují, jsou ponechány prázdné pro sloučenou dávku a lze tyto hodnoty zadat ručně. Pokud je typ atributu dávky pro hodnotu atributu celé číslo nebo zlomek a hodnoty nejsou shodné pro všechny zdrojové dávky, hodnota se vypočítá s použitím výpočtu váženého průměru. Vypočtená hodnota je zaokrouhlena nahoru nebo dolů na nejbližší přírůstek. Je-li tato hodnota je prázdná pro zdrojovou dávku, dávka a její množství nejsou zahrnuty do výpočtu. **Příklad** Následující příklad znázorňuje výpočet váženého průměru pro sloučenou dávku. Dvě zdrojové dávky mají prázdné hodnoty pro typ atributů dávky, který je celé číslo. Následující atributy jsou přiřazeny zdrojovým dávkám.
 
 | Atribut | Minimum | Přírůstek | Maximum |
 |-----------|---------|-----------|---------|

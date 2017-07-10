@@ -8,20 +8,20 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-keywords: TaxGroup, VendParameters
+ms.search.form: TaxGroup, VendParameters
 audience: Application User
 ms.reviewer: shylaw
-ms.suite: Released- Dynamics AX application 7.0.1
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 1696023
-ms.assetid: 219d7cd6-c517-403e-92c5-6a70bfb39354
 ms.search.region: Czech Republic
 ms.author: v-elgolu
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd42fe23b30fe163a003614d6cbe9ff24ae38c5d
-ms.openlocfilehash: bfa6c79c1bd45e63c5b333c1fa1d908a59ec3b1a
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 26e58a674002a3d01112cd275f9d7902662fb824
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 06/20/2017
 
 ---
 
@@ -34,7 +34,7 @@ Když právnické osoby, které mají svou primární adresu v České republice
 -   DPH na výstupu se platí v období DPH, kdy byla vystavena faktura (datum dokumentu).
 -   DPH na vstupu nebyla odečtena před přijetím dokumentu (datum rejstříku DPH).
 
-Informace o intrakomunitární DPH mohou být vypočteny a zaúčtovány automaticky. Při zaúčtování faktury dodavatele v Evropské unii (EU) jsou vytvořeny dvě transakce DPH ve stejné výši. Jedna transakce DPH je vytvořena pro závazek prodejní daně a druhá pro pohledávku prodejní daně. Aby se tento požadavek projevil v aplikaci Microsoft Dynamics 365 for Operations, je třeba nastavit následující hodnoty:
+Informace o intrakomunitární DPH mohou být vypočteny a zaúčtovány automaticky. Při zaúčtování faktury dodavatele v Evropské unii (EU) jsou vytvořeny dvě transakce DPH ve stejné výši. Jedna transakce DPH je vytvořena pro závazek prodejní daně a druhá pro pohledávku prodejní daně. Aby se tento požadavek projevil v aplikaci Microsoft Dynamics 365 for Finance and Operations, je třeba nastavit následující položky:
 
 -   Zaškrtněte políčko **DPH intrakomunitárního plnění** na stránce **Parametry závazků** (**Závazky** &gt; **Nastavení** &gt; **Parametry závazků**).
 -   Zaškrtněte políčko **Datum dokumentu pro intrakomunitární DPH** na stránce **Parametry závazků**.

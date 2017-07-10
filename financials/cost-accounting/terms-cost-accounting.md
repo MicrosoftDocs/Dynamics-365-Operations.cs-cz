@@ -3,14 +3,14 @@ title: "Terminologie týkající se účtování nákladů"
 description: "Toto téma definuje klíčové podmínky, které se používají v nákladovém účetnictví."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7ce12337c22542aea2002ffc5abd09e4f4d770c1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 35b8e510e7e2c13aebb73f46d20b16275d097432
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -36,7 +36,7 @@ Toto téma definuje klíčové podmínky, které se používají v nákladovém 
 
 **Nákladové účetnictví**
 
-Nákladového účetnictví vám umožnuje shromažďovat data z různých zdrojů, jako jsou například hlavní knihy, dílčí knihy, rozpočty a statistické údaje. Pak můžete analyzovat, shrnout a vyhodnocení nákladová data, aby vedení mohlo přijmout nejlepší možná rozhodnutí v oblasti aktualizací cen, rozpočtů, řízení nákladů apod. Zdrojová data, která jsou použita k analýze nákladů, se zpracovávají nezávisle na nákladovém účetnictví. Aktualizace v nákladovém účetnictví tedy zdrojová data neovlivňují. Nicméně při shromažďování nákladových dat z různých zdrojů a zejména, pokud importujete hlavní účty z hlavní knihy v aplikaci Microsoft Dynamics 365 for Operations jako prvky nákladů, dochází k redundanci dat, protože stejná data existují v hlavní knize i v nákladovém účetnictví. Tato redundance je ale žádoucí, protože finanční správu využíváte k externímu vykazování a nákladového účetnictví pro interní vykazování.
+Nákladového účetnictví vám umožnuje shromažďovat data z různých zdrojů, jako jsou například hlavní knihy, dílčí knihy, rozpočty a statistické údaje. Pak můžete analyzovat, shrnout a vyhodnocení nákladová data, aby vedení mohlo přijmout nejlepší možná rozhodnutí v oblasti aktualizací cen, rozpočtů, řízení nákladů apod. Zdrojová data, která jsou použita k analýze nákladů, se zpracovávají nezávisle na nákladovém účetnictví. Aktualizace v nákladovém účetnictví tedy zdrojová data neovlivňují. Nicméně při shromažďování nákladových dat z různých zdrojů a zejména, pokud importujete hlavní účty z hlavní knihy v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition jako prvky nákladů, dochází k redundanci dat, protože stejná data existují v hlavní knize i v nákladovém účetnictví. Tato redundance je ale žádoucí, protože finanční správu využíváte k externímu vykazování a nákladového účetnictví pro interní vykazování.
 
 **Hlavní kniha nákladového účetnictví**
 

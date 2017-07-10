@@ -3,14 +3,14 @@ title: "Skladové deníky"
 description: "Tento článek popisuje, jak můžete použít deníky zásob k zaúčtování různých typů transakcí fyzických zásob."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d947b184fd61af3b997182f0a39a8c13c58d6a5a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: fa629b4b8f7fcbd15ee89bc66cbc0bd7ca45215c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,10 +30,12 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+[!include[retail name](../includes/retail-name.md)]
+
 
 Tento článek popisuje, jak můžete použít deníky zásob k zaúčtování různých typů transakcí fyzických zásob. 
 
-Deníky zásob v aplikaci Microsoft Dynamics 365 for Operations se používají k zaúčtování různých typů transakcí fyzických zásob, jako například zaúčtování výdejů a příjmů, skladové pohyby, vytvoření kusovníku a odsouhlasení fyzických zásob. Všechny tyto deníky zásob se používají podobným způsobem, avšak rozděleny jsou do různých typů.
+Deníky zásob v aplikaci Microsoft Dynamics 365 for Finance and Operations se používají ke zpracovávání různých typů transakcí fyzických zásob, například k zaúčtování výdejů a příjmů, pohybu zásob, vytváření kusovníků a odsouhlasení fyzických zásob. Všechny tyto deníky zásob se používají podobným způsobem, avšak rozděleny jsou do různých typů.
 
 ## <a name="types-of-inventory-journals"></a>Typy deníků zásob
 K dispozici jsou následující typy deníků zásob:
@@ -68,7 +70,7 @@ Pokud vykážete kusovník jako dokončený, můžete vytvořit deník kusovník
 
 ### <a name="item-arrival"></a>Doručení položky
 
-Deník doručení položek slouží k evidenci příjmu položek (například z nákupní objednávky). Deník doručení položky může být vytvořen v rámci řízení doručení na stránce **Přehled doručení** nebo můžete položku deníku vytvořit ručně na stránce **Doručení položky**. Pokud povolíte, aby název deníku doručení položek kontroloval výdejní skladová místa, aplikace Dynamics 365 for Operations vyhledá místo pro přijaté položky a – pokud je v něm prostor – vygeneruje cílová skladová místa pro příchozí položky.
+Deník doručení položek slouží k evidenci příjmu položek (například z nákupní objednávky). Deník doručení položky může být vytvořen v rámci řízení doručení na stránce **Přehled doručení** nebo můžete položku deníku vytvořit ručně na stránce **Doručení položky**. Pokud umožníte, aby deník doručení položek kontroloval výdejní skladová místa, aplikace Finance and Operations vyhledá místo pro přijaté položky a (pokud je v něm prostor) vygeneruje cílová skladová místa pro příchozí položky.
 
 ### <a name="production-input"></a>Výrobní vstup
 

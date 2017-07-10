@@ -1,9 +1,9 @@
 ---
 title: "Úvěr a inkasa v modulu Pohledávky"
-description: "Informace o inkasu pohledávek jsou spravovány v jednom ústředním zobrazení pomocí stránky Inkasa aplikace Microsoft Dynamics 365 for Operations. Vedoucí úvěrů a inkasa mohou používat toto centrální zobrazení ke správě inkas. Inkasní agenti mohou zahájit proces kolekce ze seznamů odběratelů, které jsou generovány pomocí použitím předem definované kolekce kritérií nebo stránky Odběratelé."
+description: "Informace o inkasu pohledávek jsou spravovány v jednom ústředním zobrazení pomocí stránky Inkasa aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Vedoucí úvěrů a inkasa mohou používat toto centrální zobrazení ke správě inkas. Inkasní agenti mohou zahájit proces kolekce ze seznamů odběratelů, které jsou generovány pomocí použitím předem definované kolekce kritérií nebo stránky Odběratelé."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 74f671a35fa1dbeeb120fe968b1bcc09868f57d5
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 49bc7ca4e5fff4c2686a8b7396d5bd2bcdd0c51a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Informace o inkasu pohledávek jsou spravovány v jednom ústředním zobrazení pomocí stránky Inkasa aplikace Microsoft Dynamics 365 for Operations. Vedoucí úvěrů a inkasa mohou používat toto centrální zobrazení ke správě inkas. Inkasní agenti mohou zahájit proces kolekce ze seznamů odběratelů, které jsou generovány pomocí použitím předem definované kolekce kritérií nebo stránky Odběratelé.
+Informace o inkasu pohledávek jsou spravovány v jednom ústředním zobrazení pomocí stránky Inkasa aplikace Finance and Operations. Vedoucí úvěrů a inkasa mohou používat toto centrální zobrazení ke správě inkas. Inkasní agenti mohou zahájit proces kolekce ze seznamů odběratelů, které jsou generovány pomocí použitím předem definované kolekce kritérií nebo stránky Odběratelé.
 
 Dříve než začnete s nastavením nebo práci s inkasem, měli byste se seznámit s následujícími koncepty:
 -   Snímky pro sledování splatnosti odběratele obsahují informace o splatném zůstatku v určitém okamžiku
@@ -59,9 +59,9 @@ Pro každé období sledování splatnosti v definici období pro sledování sp
 Fondy zákazníků představující dotazy, které definují skupinu odběratelských záznamů, které lze zobrazit a spravovat v rámci procesu inkasa nebo sledování splatnosti. Vyberte fondy zákazníků k filtrování informací pro stránku se seznamem Splatné zůstatky, Inkasní aktivity a Případy inkasa. Fondy zákazníků slouží také k filtrování účtů zákazníka, které budou zahrnuty při vytváření snímků pro sledování splatnosti.
 
 ## <a name="collections-agents"></a>Inkasní agenti
-Standardně mohou uživatelé aplikace Microsoft Dynamics 365 for Operations zobrazit všechny informace o odběratelích na stránkách se seznamem inkasa. Můžete použít záznamy inkasního agenta a určit s nimi fondy zákazníků, kde je možné filtrovat informace na stránkách se seznamem inkasa a na stránce Inkasa. 
+Standardně mohou uživatelé aplikace Microsoft Dynamics 365 for Finance and Operations zobrazit všechny informace o odběratelích na stránkách se seznamem inkasa. Můžete použít záznamy inkasního agenta a určit s nimi fondy zákazníků, kde je možné filtrovat informace na stránkách se seznamem inkasa a na stránce Inkasa. 
 
-Inkasní agent je osoba, která pracuje s odběrateli k zajištění, že platby se vybírají včas. V aplikaci Microsoft Dynamics 365 for Operations jsou inkasní agenti pracovníci, kteří jsou přiřazeni uživatelům na stránce Nastavení uživatelů.
+Inkasní agent je osoba, která pracuje s odběrateli k zajištění, že platby se vybírají včas. V aplikaci Finance and Operations jsou inkasní agenti pracovníci, kteří jsou přiřazeni uživatelům na stránce Nastavení uživatelů.
 
 ## <a name="collections-list-pages"></a> Stránky se seznamem inkasa 
 Následující stránky se seznamem umožňují uspořádání informací o inkasu.
@@ -71,7 +71,7 @@ Následující stránky se seznamem umožňují uspořádání informací o inka
 
 > [!NOTE]
 > Snímek sledování splatnosti musí být vytvořen dříve, než je možné zobrazit informace na těchto stránkách se seznamem. Informace se zobrazí pouze pro odběratele, pro které byl vytvořen snímek sledování splatnosti. Záznamy, které se zobrazí na stránce se seznamem lze dále filtrovat následujícím způsobem:
-<li>Ve výchozím nastavení má uživatel aplikace Microsoft Dynamics 365 for Operations přístup ke všem odběratelům, kteří mají snímek sledování splatnosti.</li>
+<li>Podle výchozího nastavení uživatel aplikace Finance and Operations má přístup ke všem zákazníkům, kteří mají snímek sledování splatnosti.</li>
 <li>Existují-li fondy zákazníků, uživatel musí být nastaven jako inkasní agent, aby mohl použít fondy pro filtrování informací na stránkách se seznamem inkasa. Informace jsou omezeny na odběratele, kteří jsou zahrnuti ve vybraném fondu odběratelů.</li>
 <li>Pokud je uživatel nastaven jako inkasní agent, pouze skupiny, které jsou vybrány pro daného inkasního agenta, jsou k dispozici na stránce se seznamem. Pokud vyberte možnost Povolit agentovi zobrazit všechny fondy zákazníků na stránce Inkasní agent pro inkasního agenta, všechny fondy budou k dispozici pro tohoto agenta.</li>
 

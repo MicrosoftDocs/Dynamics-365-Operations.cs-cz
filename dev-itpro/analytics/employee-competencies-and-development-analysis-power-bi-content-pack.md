@@ -1,15 +1,15 @@
 ---
 title: "Obsah Power BI kompetencí a rozvoje zaměstnance"
-description: "Toto téma popisuje obsah aplikace Dynamics 365 for Operations – Obsah Power BI kompetencí a rozvoje zaměstnance. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v balíčku obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření balíčku obsahu."
+description: "Toto téma popisuje obsah Power BI kompetencí a rozvoje zaměstnanců v aplikaci Finance and Operations. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v balíčku obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření balíčku obsahu."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Operations, UnifiedOperations
 ms.custom: 263894
 ms.assetid: 7d375d8a-b2de-4bec-b575-93d1d4521b79
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 770a832efe8ee2da44d65670b1818be4fcf4bcc0
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: f5b3c180f0a9d60fa5d4d8398daf79a14da2d6f4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,15 +30,15 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje obsah aplikace Dynamics 365 for Operations – Obsah Power BI kompetencí a rozvoje zaměstnance. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v balíčku obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření balíčku obsahu.
+Toto téma popisuje obsah Power BI kompetencí a rozvoje zaměstnanců v aplikaci Finance and Operations. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v balíčku obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření balíčku obsahu.
 
 <a name="accessing-the-content-pack"></a>Přístup k balíčku obsahu
 --------------------------
 
-Sadu kompetencí zaměstnance a obsahu rozvoje najdete v sadě obsahu rozvoje ve sdílené knihovně aktiv služby Microsoft Dynamics Lifecycle Services (LCS). Další informace o stažení balíčku obsahu a připojení k datům aplikace Microsoft Dynamics 365 for Operations naleznete v tématu [Obsah Power BI v LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md).
+Sadu kompetencí zaměstnance a obsahu rozvoje najdete v sadě obsahu rozvoje ve sdílené knihovně aktiv služby Microsoft Dynamics Lifecycle Services (LCS). Další informace o stažení balíčku obsahu a připojení k datům aplikace Microsoft Dynamics 365 for Finance and Operations naleznete v tématu [Obsah Power BI v LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md).
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Sestavy, které jsou součástí balíčku obsahu
-Po připojení balíčku obsahu k datům z aplikace Dynamics 365 for Operations zobrazí sestavy data vaší organizace. Pokud jste aplikaci Microsoft Power BI nikdy předtím nepoužívali, vyhledejte si další informace v tématu [Řízená výuka pro Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Sestavy, které jsou součástí balíčku obsahu, mají grafy a tabulky obsahující další informace. Následující tabulka obsahuje popis daných sestav.
+Po připojení balíčku obsahu k datům z aplikace Finance and Operations zobrazí sestavy dat vaší organizace. Pokud jste aplikaci Microsoft Power BI nikdy předtím nepoužívali, vyhledejte si další informace v tématu [Řízená výuka pro Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Sestavy, které jsou součástí balíčku obsahu, mají grafy a tabulky obsahující další informace. Následující tabulka obsahuje popis daných sestav.
 
 | Sestava                            | Obsah                                               |
 |-----------------------------------|--------------------------------------------------------|
@@ -49,7 +49,7 @@ Po připojení balíčku obsahu k datům z aplikace Dynamics 365 for Operations 
 Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
-Data aplikace Dynamics 365 for Operations se používají k zadávání sestav v sadě obsahu kompetencí a rozvoje zaměstnance. Následující tabulka zobrazuje entity, na kterých je balíček obsahu založen.
+Sestavy v balíčku obsahu Kompetence a rozvoj zaměstnance se vyplní pomocí dat aplikace Finance and Operations. Následující tabulka zobrazuje entity, na kterých je balíček obsahu založen.
 
 | Celek                            | Obsah                                                                                                   | Vztahy s jinými entitami                                                                                                                                                                                                                                                                       |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
