@@ -15,7 +15,7 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 266844
 ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, Latvia, Lithuania, Netherlands, Sweden
 ms.author: v-elgolu
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
@@ -23,10 +23,11 @@ ms.openlocfilehash: 7dc6a32a9babc95cfa4ad031534404cae6fa37ea
 ms.contentlocale: cs-cz
 ms.lasthandoff: 06/09/2017
 
-
 ---
 
-# <a name="vat-reporting-for-europe"></a>Vykazování DPH pro Evropu
+<a id="vat-reporting-for-europe" class="xliff"></a>
+
+# Vykazování DPH pro Evropu
 
 [!include[banner](../includes/banner.md)]
 
@@ -46,26 +47,36 @@ Toto téma obsahuje obecný přístup k nastavení a generování výkazu DPH. T
 -   Nizozemsko
 -   Švédsko
 
-## <a name="vat-statement-overview"></a>Přehled výkazu DPH
+<a id="vat-statement-overview" class="xliff"></a>
+
+## Přehled výkazu DPH
 Výkaz DPH je založený na částkách daňových transakcí. Proces generování výkazu DPH je součástí procesu platby DPH, který je implementován pomocí funkce vypořádání a zaúčtování DPH. Tato funkce se používá k výpočtu DPH splatné pro dané období. Výpočet vyrovnání zahrnuje zaúčtovanou DPH pro vybrané období vyrovnání daňových transakcí. Postup pro výpočet dat pro výkaz DPH je založen na vztahu mezi kódy DPH a kódy vykazování DPH, kde kódy vykazování daně odpovídají polím s výkazy DPH. Pro každý kód DPH by měly být nastaveny kódy vykazování DPH pro každý typ transakce, například zdanitelné prodeje zdanitelné nákupy, zdanitelný import. Tento typ transakcí je popsán v části Kódy DPH pro vykazování DPH dále v tomto tématu.
 
 Pro každý kód vykazování by mělo být určeno konkrétní rozložení sestavy. Ve stejnou dobu jsou kódy DPH propojeny s konkrétním finančním úřadem prostřednictvím období vyrovnání DPH. Pro každý finanční úřad pro vykazování DPH by mělo být určeno konkrétní rozložení sestavy. Tedy pouze kódy vykazování DPH se stejným rozložením sestavy, která je nastavena pro finanční úřad k odvedení DPH v období vyrovnání DPH pro kód DPH lze vybrat v nastavení sestavy kódu DPH. Transakce DPH generované při účtování objednávky nebo deníku obsahují kód DPH, zdroj DPH, směr DPH a částky transakcí (částka základu daně a výše daně v zúčtovací měně, měně DPH a měně transakce). V závislosti na kombinaci atributů transakce DPH, částky transakce tvoří celkové částky určené pro kódy vykazování DPH určené pro kódy DPH. Následující obrázek znázorňuje vztah mezi daty.
 
 ![diagram](./media/diagram4.jpg)
 
-## <a name="vat-statement-setup"></a>Nastavení výkazu DPH
+<a id="vat-statement-setup" class="xliff"></a>
+
+## Nastavení výkazu DPH
 Chcete-li generovat výkazy DPH, je nutné vytvořit následující nastavení:
 
-### <a name="sales-tax-authorities-for-vat-reporting"></a>Nastavení daňových úřadů pro vykazování DPH
+<a id="sales-tax-authorities-for-vat-reporting" class="xliff"></a>
+
+### Nastavení daňových úřadů pro vykazování DPH
 
 <!---For general information about setting up a sales tax authority, see [Set up sales tax authorities](http://ax.help.dynamics.com/en/wiki/set-up-sales-tax-authorities/). -->
 Dříve než můžete vytvořit kódy vykazování DPH, je nutné vybrat správnou sestavu rozložení pro finanční úřad. Na stránce **Finanční úřady** v části **Obecné** vyberte **Rozložení sestavy**. Toto rozložení bude použito, když nastavujete kódy vykazování DPH.
 
-### <a name="sales-tax-reporting-codes"></a>Kódy vykazování DPH
+<a id="sales-tax-reporting-codes" class="xliff"></a>
 
-Kódy vykazování DPH jsou pole kódy DPH výkazu nebo značky názvy ve formátu XML. Tyto kódy se používají k agregaci a přípravě částky v sestavě. Při konfiguraci elektronického formátu vykazování ve výkazu DPH budou použity názvy částek výsledku. Můžete vytvářet a udržovat kódy vykazování DPH na stránce **Kódy vykazování DPH**. Každý kód je nutné přiřadit rozložení sestavy. Jakmile vytvoříte kódy vykazování DPH, můžete použít kódy v části **Nastavení sestavy** na stránce **Kódy DPH**. <!---For more information, see [Set up sales tax reporting codes](http://ax.help.dynamics.com/en/wiki/set-up-sales-tax-reporting-codes/) and [Sales tax reporting codes page (Field descriptions)](http://ax.help.dynamics.com/en/wiki/sales-tax-reporting-codes-page-field-descriptions/).-->
+### Kódy vykazování DPH
 
-### <a name="sales-tax-codes-for-vat-reporting"></a>Kódy vykazování DPH
+Kódy vykazování DPH jsou pole kódy DPH výkazu nebo značky názvy ve formátu XML. Tyto kódy se používají k agregaci a přípravě částky v sestavě. Při konfiguraci elektronického formátu vykazování ve výkazu DPH budou použity názvy částek výsledku. Můžete vytvářet a udržovat kódy vykazování DPH na stránce **Kódy vykazování DPH**. Každý kód je nutné přiřadit rozložení sestavy. Jakmile vytvoříte kódy vykazování DPH, můžete použít kódy v části **Nastavení sestavy** na stránce **Kódy DPH**. <!---For more information, see [Set up sales tax reporting codes](http://ax.help.dynamics.com/en/wiki/set-up-sales-tax-reporting-codes/).-->
+
+<a id="sales-tax-codes-for-vat-reporting" class="xliff"></a>
+
+### Kódy vykazování DPH
 
 <!---For general information about setting up sales tax codes, see [Set up sales tax codes](http://ax.help.dynamics.com/en/wiki/set-up-sales-tax-codes/).--> Base amounts and tax amounts of sales tax transactions can be aggregated on reporting codes in the VAT statement (XML tags or declaration boxes). You can set this up by associating sales tax reporting codes for different transaction types for sales tax codes on the **Sales tax codes** page. The following table describes the transaction types in the report setup for sales tax codes. The calculation includes transactions for all types of sources except sales tax.
 
@@ -249,7 +260,9 @@ d<li>Transakce <strong>částka základu daně</strong> nebo <strong>částka da
 > -   Částka základu daně je částka transakce z pole **Původ v zúčtovací měně**.
 > -   Částka základu daně je částka transakce z pole **Částka daně skutečných prodejů**.
 
-### <a name="configure-the-er-model-and-format-for-the-report"></a>Konfigurace modelu ER a formátu výkazu
+<a id="configure-the-er-model-and-format-for-the-report" class="xliff"></a>
+
+### Konfigurace modelu ER a formátu výkazu
 
 Elektronické hlášení (ER) můžete použít ke konfiguraci výkazů a sestav a k exportu různých formátů elektronických dat bez nutnosti změny kódu X ++. Další informace:
 
@@ -257,7 +270,9 @@ Elektronické hlášení (ER) můžete použít ke konfiguraci výkazů a sestav
 -   [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
 -   [Požadavky na lokalizaci – vytvoření konfigurace GER](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-configuration)
 
-## <a name="countryspecific-resources-for-vat-statements"></a>Prostředky pro výkazy DPH specifické podle zemí
+<a id="countryspecific-resources-for-vat-statements" class="xliff"></a>
+
+## Prostředky pro výkazy DPH specifické podle zemí
 Výkaz DPH pro každou zemi musí splňovat požadavky právních předpisů této země. Existují předdefinované obecné modely a formáty výkazů DPH pro země uvedené v následující tabulce.
 
 
