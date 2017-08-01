@@ -24,9 +24,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-<a id="cost-accounting-home-page" class="xliff"></a>
-
-# Domovská stránka nákladového účetnictví
+# <a name="cost-accounting-home-page"></a>Domovská stránka nákladového účetnictví
 
 [!include[banner](../includes/banner.md)]
 
@@ -49,9 +47,7 @@ Modul Nákladové účetnictví vám umožní provádět následující kroky:
 -   Vytváříte výkazy, které lze zobrazit v pracovním prostoru.
 -   Vytvořte sestavy pomocí aplikace Excel.
 
-<a id="get-started" class="xliff"></a>
-
-## Začínáme
+## <a name="get-started"></a>Začínáme
 
 > [!Video https://www.youtube.com/embed/https://www.youtube.com/embed/1pUDtJQZ8FU]
 
@@ -68,16 +64,12 @@ K pochopení způsobu použití nákladového účetnictví pro každodenní pr�
 -   [Dimenze objektu nákladů](cost-objects.md)
 -   [Vytváření objektů nákladů](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (průvodce úkolem)
 
-<a id="cost-control-mobile-workspace" class="xliff"></a>
-
-## Mobilní pracovní prostor kontroly nákladů
+## <a name="cost-control-mobile-workspace"></a>Mobilní pracovní prostor kontroly nákladů
 Díky mobilnímu pracovní prostoru řízení nákladů mohou manažeři nákladových středisek kdykoliv a kdekoliv vidět výkonnost středisek.
 
 -   [Mobilní pracovní prostor kontroly nákladů](cost-controlling-mobile-workspace.md)
 
-<a id="cost-accounting-analysis-power-bi-content" class="xliff"></a>
-
-## Obsah analýzy nákladového účetnictví v Power BI
+## <a name="cost-accounting-analysis-power-bi-content"></a>Obsah analýzy nákladového účetnictví v Power BI
 Obsah analýzy nákladového účetnictví v sadě nástrojů Microsoft Power BI je určen pro kontrolory nákladů nebo jakoukoli osobu, která je odpovědná za provádění kontroly nákladů organizace. Zahrnuje klíčové metriky, jako jsou náklady, velikost a nákladové sazby podle skutečných nákladů, rozpočtových nákladů a nákladů pružného rozpočtu. Používá data transakce z modulu Nákladové účetnictví v aplikaci Finance and Operations a poskytuje agregované zobrazení nákladů pro celou organizaci v jedné měně vykazování. Manažeři mohou data filtrovat podle objektů nákladů pro provádění kontroly nákladů jejich organizačních jednotek, a to i v případě, že organizace má několik právnických osob.
 
 -   [Obsah analýzy nákladového účetnictví v Power BI](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)

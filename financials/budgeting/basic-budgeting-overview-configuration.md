@@ -79,7 +79,7 @@ Správce rozpočtu může kontrolovat aktuální stav rozpočtu v pracovním pro
 
 Ze stránky s dotazy **Rozpočet a skutečné hodnoty** můžete přejít na podrobné informace o rozpočtu versus skutečných částkách. Vyberte řádek stránky s dotazy a pak klepněte na možnost **Zůstatky za období** a zobrazíte rozpočet a skutečné částky rozdělené do fiskálních období. Stránka **Účetní položky rozpočtu** poskytují přecházení k podrobnostem o rozpočtových částkách v položkách registru rozpočtu. Stránka **Položky hlavního deníku** otevře transakce hlavní knihy, které jsou zahrnuty do vypočítané částky **skutečné hodnoty**. 
 
-Společnost, která používá funkci plánování rozpočtu může vytvořit a použít *prognózy rozpočtu *v pracovním prostoru **Rozpočty hlavní knihy a prognózy**.
+Společnost, která používá funkci plánování rozpočtu může vytvořit a použít *prognózy rozpočtu* v pracovním prostoru **Rozpočty hlavní knihy a prognózy**.
 
 
 
