@@ -1,37 +1,35 @@
 ---
-title: "Dynamics 365 for Operations – glosář"
-description: "Glosář aplikace Microsoft Dynamics 365 for Operations definuje klíčové termíny a pojmy v aplikaci Microsoft Dynamics 365 for Operations."
+title: "Glosář pro aplikaci Finance and Operations"
+description: "Tento glosář definuje klíčové termíny a pojmy v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 44101
 ms.assetid: d4e01957-69a0-4c92-91c5-4646c8b0cad8
 ms.search.region: Global
 ms.author: tfehr
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4f3015ed4f8dc165d988b2b63ed9ad89d6d6f578
+ms.translationtype: HT
+ms.sourcegitcommit: 84ee9110fa32a551133a6ab4b7c6feb9ea9c017a
+ms.openlocfilehash: 0b4d5285cc1aa44da566ec5d7fa7ebe568729fdf
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/08/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365 for Operations – glosář
+# <a name="finance-and-operations-glossary"></a>Glosář pro aplikaci Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-
-Glosář aplikace Microsoft Dynamics 365 for Operations definuje klíčové termíny a pojmy v aplikaci Microsoft Dynamics 365 for Operations. 
+Tento glosář definuje klíčové termíny a pojmy v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. 
 
 ### <a name="a"></a>**A**
 
@@ -49,19 +47,11 @@ Jde o systém elektronického převodu peněžních prostředků ve Spojených 
 
 ###### <a name="actual-quantity"></a>**skutečné množství**
 
-Označuje měřené množství při vstupu do činnosti nebo při výstupu.
+Označuje změřené množství, které slouží jako vstup nebo výstup aktivity.
 
-###### <a name="address-verification-service"></a>**služba ověření adresy**
+###### <a name="address-verification"></a>**ověření adresy**
 
 Jedná se o službu poskytovanou zpracovatelem platebních karet, která ověřuje, zda se fakturační adresa uvedená držitelem platební karty shoduje s informacemi v evidenci vydávající banky.
-
-###### <a name="adjusted-unit-price"></a>**upravená jednotková cena**
-
-Označuje vypočítanou jednotkovou cena založenou na ocenění podle atributů a skutečného přijatého obsahu.
-
-###### <a name="advanced-pricing"></a>**pokročilá cenová kalkulace**
-
-Jedná se o logiku používanou k výpočtu nákupní ceny obsahu zboží.
 
 ###### <a name="aging"></a>**sledování splatnosti**
 
@@ -101,14 +91,13 @@ Jedná se o časové období, ve kterém lze dosáhnout optimální kvality neb
 
 Jedná se o zdrojový dokument, který dokumentuje bezpodmínečný příkaz třetí straně uhradit na vyžádání částku druhé straně.
 
-###### <a name="bill-of-materials"></a>**kusovník**
-
-Označuje seznam produktů potřebných pro výrobu jednoho produktu, s uvedeným množstvím.
-
 ###### <a name="blocking"></a>**blokování**
 
 Jedná se o akci zablokování dokumentu nebo produktu.
 
+###### <a name="bom-bill-of-materials"></a>**kusovník**
+
+Označuje seznam produktů potřebných pro výrobu jednoho produktu, s uvedeným množstvím.
 ###### <a name="budget-control"></a>**kontrola rozpočtu**
 
 Jedná se o postup, při němž dochází k autorizaci výdajů pouze tehdy, pokud lze rozpočtové prostředky rezervovat pro splnění budoucích platebních závazků.
@@ -173,15 +162,7 @@ Označuje seznam hlavních účtů.
 
 ###### <a name="cogs-cost-of-goods-sold"></a>**COGS (náklady prodaného zboží)**
 
-Jedná se o kategorii účtování používanou ke shrnutí finančních důsledků výroby produktů a skladování zásob.
-
-###### <a name="commodity-pricing"></a>**ocenění podle komodit**
-
-Jedná se o cenovou strategii aktualizace ceny prodejních položek z komodit, jejichž cena se často mění.
-
-###### <a name="consolidated-order"></a>**konsolidovaná objednávka**
-
-Označuje zdrojový dokument uvádějící více odkazovaných objednávek.
+Jedná se o kategorii účtů používanou ke shrnutí finančních důsledků výroby produktů a skladování zásob.
 
 ###### <a name="contractor"></a>**dodavatel**
 
@@ -194,10 +175,6 @@ Označuje zboží vyrobené společně s jiným zbožím.
 ###### <a name="cost-center"></a>**nákladové středisko**
 
 Jedná se o provozní jednotku, jejíž správci jsou odpovědní za rozpočtové a skutečné výdaje.
-
-###### <a name="cost-of-goods-sold"></a>**náklady prodaného zboží**
-
-Jedná se o kategorii účtování používanou ke shrnutí finančních důsledků výroby produktů a skladování zásob.
 
 ###### <a name="cost-variance"></a>**odchylka nákladů**
 
@@ -223,7 +200,7 @@ Označuje čas potřebný k dokončení aktivity.
 
 ###### <a name="dashboard"></a>**řídicí panel**
 
-Jde o obvyklou úvodní stránku v aplikaci Dynamics 365 for Operations. Na řídicím panelu se uživatelům zobrazuje oblast pro každý pracovní prostor, ke kterému mají přístup. Každý oddíl zobrazuje dlaždice ze souhrnných částí v souvisejícím pracovním prostoru. Řídicí panel obsahuje název a oddíly dlaždic.
+Jde o obvyklou úvodní stránku v aplikaci Finance and Operations. Na řídicím panelu se uživatelům zobrazuje oblast pro každý pracovní prostor, ke kterému mají přístup. Každý oddíl zobrazuje dlaždice ze souhrnných částí v souvisejícím pracovním prostoru. Řídicí panel obsahuje název a oddíly dlaždic.
 
 ###### <a name="data-entity"></a>**datová entita**
 
@@ -261,11 +238,7 @@ Označuje konfigurační technologii používanou k vytváření variant produk
 
 Označuje jednoznačně identifikovatelný produkt.
 
-###### <a name="document-blocking"></a>**blokování dokumentu**
-
-Jedná se o způsob blokování procesu operací, zatímco objednané položky prochází procesem kontroly kvality.
-
-###### <a name="document-management-system"></a>**systém pro správu dokumentů**
+###### <a name="document-management-system"></a>**systém správy dokumentů**
 
 Jde o aplikační službu určenou k ukládání a zpracování dokumentů organizace.
 
@@ -315,13 +288,9 @@ Označuje měnu, která má pevný směnný kurz k jiné měně.
 
 ###### <a name="fixed-quantity-kanban"></a>**kanban pro pevné množství**
 
-Jde o typ kanbanu, který se používá při konstantním počtu kanbanů přiřazených kanbanovému pravidlu.
+Jde o typ kanbanu, který se používá, když je počet kanbanů přiřazených kanbanovému pravidlu konstantní.
 
-###### <a name="flexible-authentication"></a>**flexibilní autentizace**
-
-Označuje ověřovací proces, který umožňuje ověřování uživatelů v různých systémech správy identit.
-
-###### <a name="formula"></a>**vzorec**
+###### <a name="formula"></a>**receptura**
 
 Jedná se o číselný vztah mezi vstupy a výstupy výrobního procesu.
 
@@ -379,10 +348,6 @@ Jedná se o aktivitu převedení nebo procesu ve výrobním toku, která je vyv
 
 Označuje odebrání komponent produktu ze skladu při provádění úloh kanbanové výroby.
 
-###### <a name="kanban-product-quantity"></a>**množství produktu na kanban**
-
-Označuje počet požadavků na položky, které jsou uvedeny v kanbanu podle kanbanového pravidla.
-
 ###### <a name="kanban-rule"></a>**kanbanové pravidlo**
 
 Jde o pravidlo v systému lean manufacturing, které realizuje zásady řízení materiálu a doplňování prostřednictvím řízení způsobu koordinace aktivit procesů a přenosu ve výrobních tocích.
@@ -410,10 +375,6 @@ Jde o alfanumerický klíč, který nějaké straně uděluje právo používat
 Označuje schopnost strany vyrovnat aktuální závazky pomocí aktuálního majetku.
 
 ### <a name="m"></a>**M**
-
-###### <a name="manufacturing-overhead-based-on-material"></a>**výrobní režie založená na materiálu**
-
-Výrobní režie je vyjádřena pomocí výpočetních vzorců nepřímých nákladů pro procentuální hodnotu příplatku. Jako základ pro výpočetní vzorec slouží nákladová skupina, která je přiřazena k materiálovým komponentám. Výpočetní vzorce lze definovat pro jednotlivé výrobky nebo pro skupiny položek přiřazené k produktům, a to v zájmu větší flexibility při výpočtu výrobní režie, která je založená na materiálu.
 
 ###### <a name="master-scheduling"></a>**hlavní plánování**
 
@@ -453,13 +414,9 @@ Jedná se o metodu úpravy zdrojového kódu zadáním nového zdrojového kód
 
 ### <a name="p"></a>**P**
 
-###### <a name="package"></a>**balík**
+###### <a name="package"></a>**balíček**
 
-Označuje sbalitelnou a nasaditelnou jednotku pro jeden či více modelů.
-
-###### <a name="party"></a>**strana**
-
-Označuje entitu, která přijímá právně závaznou roli při účasti na smluvních vztazích.
+Označuje kompatibilní a nasaditelnou jednotku pro jeden či více modelů.
 
 ###### <a name="party"></a>**strana**
 
@@ -473,10 +430,6 @@ Jedná se o proces sledování množství požadovaného zboží až k jeho zd
 
 Označuje událost toku prostředků, která signalizuje poptávku po produktu.
 
-###### <a name="phantom-item"></a>**fiktivní položka**
-
-Jde o položku, která se vyrábí, ale není na skladě.
-
 ###### <a name="planned-intercompany-demand"></a>**plánovaná mezipodniková poptávka**
 
 Označuje předpovězenou poptávku po produktu od právnické osoby, která zastává roli dodavatele. Plánovaná poptávka je generována z plánované poptávky po produktu od podřazené právnické osoby.
@@ -489,17 +442,9 @@ Označuje proces záznamu peněžní hodnoty ekonomické události v určitém 
 
 Jedná se o osobu, která vytváří zdrojový dokument za účelem iniciace požadavku na ekonomické zdroje.
 
-###### <a name="privilege"></a>**oprávnění**
-
-Jde o jedno nebo více oprávnění, které uživatel potřebuje k provedení úkolu.
-
 ###### <a name="procurement-catalog"></a>**zásobovací katalog**
 
-Označuje seznam nabídky produktů seskupených podle kategorie zásobování. Prostřednictvím zásobovacího katalogu může organizace žádat o produkty pro interní využití.
-
-###### <a name="product-component"></a>**komponenta produktu**
-
-Označuje část produktu.
+Označuje seznam nabídek produktů seskupených podle kategorie zásobování. Prostřednictvím zásobovacího katalogu může organizace žádat o produkty pro interní využití.
 
 ###### <a name="product-dimension"></a>**dimenze produktu**
 
@@ -507,7 +452,7 @@ Označuje atributy velikosti, barvy a konfigurace produktu, které se používa
 
 ###### <a name="product-family"></a>**produktová řada**
 
-Jde o jedinečné seskupení zboží, služeb nebo práv, které se buď podílí na stejných aktivitách výroby či dodávky, nebo je nabízeno ve stejném segmentu trhu. V aplikaci Dynamics 365 for Operations je toto seskupení reprezentováno alokačním klíčem prognózy.
+Jde o jedinečné seskupení zboží, služeb nebo práv, které se buď podílí na stejných aktivitách výroby či dodávky, nebo je nabízeno ve stejném segmentu trhu. V aplikaci Finance and Operations je toto seskupení reprezentováno alokačním klíčem prognózy.
 
 ###### <a name="product-master"></a>**základní produkt**
 
@@ -581,10 +526,6 @@ Označuje metodu, která se používá ke zvýšení nebo snížení požadavků
 
 Označuje záznam, který slouží k zápisu operačních, právních a finančních důsledků událostí toku prostředků v účetním systému.
 
-###### <a name="regulated-product"></a>**regulovaný produkt**
-
-Jedná se o produkt regulovaný orgánem státní správy, který vyžaduje dodržování předpisů a vykazování auditů.
-
 ###### <a name="rfq-request-for-quotation"></a>**RFQ (požadavek na nabídku)**
 
 Jde o zdrojový dokument obsahující výzvu k podání nabídky na poskytnutí určitého množství produktu za určitou cenu a k určitému datu.
@@ -593,9 +534,6 @@ Jde o zdrojový dokument obsahující výzvu k podání nabídky na poskytnut�
 
 Označuje osobu, která žádá o ekonomické zdroje.
 
-###### <a name="restricted-product"></a>**omezený produkt**
-
-Označuje produkt, jehož distribuce je omezena nebo zakázána orgánem státní správy.
 
 ### <a name="s"></a>**S**
 
@@ -647,13 +585,6 @@ Označuje množství produktu dokumentované na řádku zdrojového dokumentu, k
 
 Označuje odhad budoucí poptávky, který je vytvářen použitím algoritmu prognózy u historických dat transakcí.
 
-###### <a name="supermarket"></a>**zásobník materiálu**
-
-Označuje včasné skladové místo s konečnou kapacitou, které slouží k hromadění materiálu nedaleko místa spotřeby.
-
-###### <a name="system-defined-financial-dimension-type"></a>**systémem definovaný typ finanční dimenze**
-
-Jedná se o finanční dimenzi mapovanou na tabulku nebo zobrazení v databázi, která představuje typ entity a jejíž hodnoty se nacházejí v doméně jednoho atributu daného typu entity.
 
 ### <a name="t"></a>**T**
 
@@ -663,15 +594,15 @@ Označuje čas potřebný k výrobě jedné jednotky produktu.
 
 ###### <a name="task-guide"></a>**Průvodce záznamem úloh**
 
-Označuje řízený a kontrolovaný proces provádějící jednotlivými kroky v Záznamu úloh. Průvodce záznamem úloh provádí uživatele prostředím, které bylo zaznamenáno. Všechna chování zabezpečení, dat a aplikací jsou při používání Průvodce záznamem úloh stejná jako bez něj. Průvodce záznamem úloh pomocí stejných funkcí jako Záznamník úloh zjišťuje, kdy uživatel dokončil určité očekávané kroky, aby mohl uživateli zobrazit výzvu k přechodu k dalšímu kroku v záznamu.
+Označuje řízený a kontrolovaný proces provádějící jednotlivými kroky v Záznamu úloh. Průvodce záznamem úloh provádí uživatele prostředím, které bylo zaznamenáno. Všechna chování zabezpečení, dat a aplikací jsou při používání Průvodce záznamem úloh stejná jako bez něj. Průvodce záznamem úloh pomocí stejných funkcí jako Záznamník úloh zjišťuje, kdy uživatel dokončil určitý očekávaný krok, aby mohl uživateli zobrazit výzvu k přechodu k dalšímu kroku v záznamu.
 
 ###### <a name="task-recorder"></a>**Záznamník úloh**
 
-Tento nástroj je nainstalován v aplikaci Dynamics 365 for Operations. Při záznamu nahrává všechny uživatelské události v uživatelském rozhraní aplikace Dynamics 365 for Operations, které jsou provedeny na serveru, včetně přidávání hodnot, úprav nastavení, odebírání údajů a podobně.
+Tento nástroj je předinstalován v aplikaci Finance and Operations. Při záznamu zaznamenává všechny uživatelské události v uživatelském rozhraní aplikace Finance and Operations, které jsou provedeny na serveru, včetně přidávání hodnot, úprav nastavení, odebírání údajů a dalších akcí.
 
 ###### <a name="task-recording"></a>**Záznam úloh**
 
-Jedná se o soubor, který obsahuje akce a poznámky zaznamenávané při spuštění Záznamníku úloh v aplikaci Microsoft Dynamics 365 for Operations.
+Jedná se o soubor, který obsahuje akce a poznámky zaznamenávané při spuštění Záznamníku úloh v aplikaci Finance and Operations.
 
 ###### <a name="three-way-matching-policy"></a>**třícestné párování**
 
@@ -684,12 +615,6 @@ Označuje množství jednoho či více druhů zboží, které je nebo může bý
 ###### <a name="two-way-matching-policy"></a>**dvoucestné párování**
 
 Jedná se o zásadu párování, která vyžaduje, aby jedna nebo více cen faktury dodavatele odpovídala jedné nebo více cenám nákupní objednávky.
-
-### <a name="u"></a>**U**
-
-###### <a name="user-defined-financial-dimension-type"></a>**uživatelem definovaný typ finanční dimenze**
-
-Označuje finanční dimenzi mapovanou na uživatelem definovaný seznam hodnot.
 
 ### <a name="v"></a>**V**
 
@@ -726,7 +651,4 @@ Označuje osobu, která na sebe bere roli zaměstnance nebo dodavatele a výmě
 ###### <a name="workspace"></a>**pracovní prostor**
 
 Jedná se o stránku, která obsahuje přehled jedné z aktivit, které uživatel provádí. Na této stránce se pomocí dlaždic, seznamů a grafů zobrazují čekající práce a související data z různých zdrojů a také časté úlohy související s těmito daty. Dlaždice v souhrnné části pracovního prostoru se zobrazují také v související oblasti na řídicím panelu.
-
-
-
 

@@ -14,14 +14,13 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 104173
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: ac77d2d374dc77aa4cf43ae2621b3692e556c9d0
+ms.translationtype: HT
+ms.sourcegitcommit: 9f4b007c174961a8e6794ab532d733584f492758
+ms.openlocfilehash: ead315d2e07818b35dd2806fca7e242f4028be07
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/29/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,7 +34,7 @@ Microsoft Dynamics 365 for Finance and Operations zahrnuje funkci pro zemi/oblas
 Toto téma obsahuje seznam prostředků, které vám pomohou dozvědět se více o funkci specifické pro zemi/oblast. 
 
 ## <a name="developing-localized-solutions"></a>Vývoj lokalizovaných řešení
-Následující zdroje obsahují pokyny a informace, které mohou pomoci vývojářům a nezávislým výrobcům softwaru, kteří vytvářejí vlastní přizpůsobení specifické pro zemi/oblast nebo vytvářejí řešení pro zemi, kterou společnost Microsoft nepodporuje.
+Následující zdroje obsahují pokyny a informace, které mohou pomoci vývojářům a nezávislým výrobcům softwaru, kteří vytvářejí vlastní přizpůsobení specifické pro zemi/oblast nebo vytvářejí řešení pro zemi, kterou společnost Microsoft nepodporuje.
 -   [Samostatné lokalizační modely](separate-localization-models.md)
 -   [Použití kontextu země nebo oblasti](apply-country-context.md)
 -   [Regulační certifikace](regulatory-certifications.md)
@@ -131,10 +130,10 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 ### <a name="the-czech-republic"></a>Česká republika
 
 -   [Platební sleva na dobropisu](/dynamics365/unified-operations/financials/localizations/emea-cze-credit-note-cash-discount)
--   [Zaokrouhlení odpisu](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-rounding)
+-   [Zaokrouhlování odpisů](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-rounding)
 -   [Pololetní odpisy vyřazení dlouhodobého majetku pro Českou republiku](/dynamics365/unified-operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
 -   [Přerušení odpisování (svátky)](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
--   [Metody odpisu dlouhodobého majetku pro Českou republiku](/dynamics365/unified-operations/financials/localizations/emea-cze-fixed-assets-depreciation)
+-   [Metody odpisování dlouhodobého majetku pro Českou republiku](/dynamics365/unified-operations/financials/localizations/emea-cze-fixed-assets-depreciation)
 -   [Účtování předpořízení dlouhodobého majetku](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
 -   [Výkaz DPH pro Českou republiku](/dynamics365/unified-operations/financials/localizations/emea-cze-vat-statement-details)
 -   [Výkaznictví DPH ](/dynamics365/unified-operations/financials/localizations/emea-cze-intra-community-vat-transactions)
@@ -184,7 +183,7 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 
 ### <a name="france"></a>Francie
 -   [Chronologické číslování faktur a dokladů](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers)
--   [Derogační odpisy pro Francii](/dynamics365/unified-operations/financials/localizations/emea-fra-derogatory-depreciation)
+-   [Derogační odpisování pro Francii](/dynamics365/unified-operations/financials/localizations/emea-fra-derogatory-depreciation)
 -   [Kódy NAF a čísla Siret](/dynamics365/unified-operations/financials/localizations/emea-fra-naf-codes-siret-numbers)
 -   [Penále pro platby odběratelů po splatnosti ve Francii](/dynamics365/unified-operations/financials/localizations/emea-fra-apply-penalty-customer-payment-past-due)
 -   [Tisk paušální částky pro obnovení textu na faktuře odběratele](/dynamics365/unified-operations/financials/localizations/emea-fra-print-lump-sum-recovery-text)
@@ -206,7 +205,7 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 
 ### <a name="hungary"></a>Maďarsko
 
--   [Metody odpisu dlouhodobého majetku](/dynamics365/unified-operations/financials/localizations/emea-hun-fixed-assets-depreciation-methods) 
+-   [Metody odpisování dlouhodobého majetku](/dynamics365/unified-operations/financials/localizations/emea-hun-fixed-assets-depreciation-methods) 
 -   [Přesun dlouhodobého majetku do zásob](/dynamics365/unified-operations/financials/localizations/emea-hun-fixed-asset-to-inventory)
 -   [Nízkonákladový dlouhodobý majetek](/dynamics365/unified-operations/financials/localizations/emea-hun-low-cost-fixed-assets)
 
@@ -227,7 +226,7 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 -  [Souhrnné faktury](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices)
 -  [Pravidla přidělení pro dlouhodobý majetek](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets)
 -  [Metoda rovnoměrně rozdělených odpisů](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method)
--  [Odpisy dlouhodobého majetku](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation)
+-  [Odpisování dlouhodobého majetku](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation)
 -  [Správa snížení hodnoty dlouhodobého majetku na penězotvorných jednotkách (CGU)](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit)
 -  [Import PSČ](/dynamics365/unified-operations/financials/localizations/apac-jpn-import-postal-codes)
 -  [Nastavení povinnosti vyřazení majetku pro dlouhodobý majetek](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets)
@@ -274,7 +273,7 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 -   [Výpočet řádkové slevy z jednotkové ceny](/dynamics365/unified-operations/financials/localizations/emea-pol-line-discount-calculation-from-unit-price)
 -   [Poznámky k opravě](/dynamics365/unified-operations/financials/localizations/emea-pol-correction-notes)
 -   [Číslování duplikátů prodejních faktur](/dynamics365/unified-operations/financials/localizations/emea-pol-sales-invoice-duplicates-numbering)
--   [Odpis dlouhodobého majetku](/dynamics365/unified-operations/financials/localizations/emea-pol-fixed-assets-depreciation)
+-   [Odpisování dlouhodobého majetku](/dynamics365/unified-operations/financials/localizations/emea-pol-fixed-assets-depreciation)
 -   [Vyřazení dlouhodobého majetku](/dynamics365/unified-operations/financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension)
 -   [Vratný obal](/dynamics365/unified-operations/financials/localizations/emea-pol-returnable-packages)
 -   [Sestavy DPH](/dynamics365/unified-operations/financials/localizations/emea-pol-sales-tax-reports)
@@ -317,7 +316,7 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 -   [Neuplatněná DPH](/dynamics365/unified-operations/financials/localizations/apac-tha-unrealized-vat)
 -   [Srážková daň](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax)
 
-### <a name="united-kingdom"></a>Velká Británie
+### <a name="united-kingdom"></a>Spojené království
 
 -   [Schéma pro obor stavebnictví pro Spojené království](/dynamics365/unified-operations/financials/localizations/emea-gbr-cis-construction-industry-scheme)
 
