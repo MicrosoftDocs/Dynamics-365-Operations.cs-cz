@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 91207e03902fa8a45ab44270cc61b58ef9e3c98c
+ms.translationtype: HT
+ms.sourcegitcommit: 9c083fd26a58e96b3bb810df11eadace184f9dbf
+ms.openlocfilehash: eaa3317acf7df84d06ad3641486df1c096b26a56
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -32,33 +31,31 @@ ms.lasthandoff: 06/20/2017
 
 V tomto článku je uveden přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations. Také je zde vysvětleno, jak můžete poskytnout vlastní dokumentaci a školení pro vaši organizaci. 
 
-> [!IMPORTANT] 
-> Tyto produkty spolu úzce souvisí: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail a Dynamics 365 for Talent. Stejné funkce se mohou objevovat ve všech třech produktech. U témat, která se vztahují především k aplikaci Retail, proto bude uveden název produktu Dynamics 365 for Retail; u témat souvisejících s aplikací Talent bude uveden název Dynamics 365 for Talent a u témat souvisejících se základním produktem bude uveden název Dynamics 365 for Finance and Operations. Témata týkající se jednoho produktu mohou platit pro stejné funkce v podobném produktu.
+> [!NOTE] 
+> Tyto produkty spolu úzce souvisí: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail a Dynamics 365 for Talent. Stejné funkce se mohou objevovat ve všech třech produktech. U témat, která se vztahují především k aplikaci Retail, proto bude uveden název produktu Dynamics 365 for Retail; u témat souvisejících s aplikací Talent bude uveden název Dynamics 365 for Talent a u témat souvisejících se základním produktem bude uveden název Dynamics 365 for Finance and Operations. Témata pro jeden produkt mohou platit pro stejné funkce v souvisejícím produktu.
+
+Systém nápovědy je společný pro všechny produkty platformy Unified Operations:
+- Dynamics 365 for Finance and Operations, edice Enterprise
+- Dynamics 365 for Retail
+- Dynamics 365 for Talent
 
 Aplikace Finance and Operations obsahuje systém nápovědy, který je založen na dvou hlavních součástech:
 
 -   Web s dokumentací
 -   Průvodci záznamem úloh
 
-Tyto produkty spolu úzce souvisí: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail a Dynamics 365 for Talent. Stejné funkce se mohou objevovat ve všech třech produktech. U témat, která se vztahují především k aplikaci Retail, proto bude uveden název produktu Dynamics 365 for Retail; u témat souvisejících s aplikací Talent bude uveden název Dynamics 365 for Talent a u témat souvisejících se základním produktem bude uveden název Dynamics 365 for Finance and Operations. Témata pro jeden produkt mohou platit pro stejné funkce v souvisejícím produktu. 
-
-Systém nápovědy je společný pro všechny produkty platformy Unified Operations:
-- Dynamics 365 for Finance and Operations, Enterprise edition
-- Dynamics 365 for Retail
-- Dynamics 365 for Talent
-
 Na panelu Nápověda můžete ve všech produktech získat přístup k tématům nápovědy a průvodcům záznamem úloh. Následující obrázek znázorňuje aplikaci Dynamics 365 for Finance and Operations
 
-![Podokno Nápověda](./media/help-pane-ops-task-guides-1024x741.png)
+![Podokno Nápověda](./media/help-pane-ops-task-guides.png)
 
 Toto téma popisuje systém nápovědy a vysvětluje, jak lze vytvořit vlastní dokumentaci a zdroje školení pro vaši organizaci.
 
 > [!IMPORTANT]
-> Karta **Průvodci záznamem úloh** není v současnosti v aplikacích Microsoft Dynamics 365 for Talent a Microsoft Dynamics 365 for Retail k dispozici. Funkci zpřístupníme v budoucí verzi. Průvodci v prostředí Začínáme v aplikaci Talent jsou i nadále k dispozici a zabývají se základními funkcemi. Na webu docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) jsou také k dispozici pokyny pro aplikaci Retail i Talent.
+> Karta **Průvodci záznamem úloh** není v současnosti v aplikacích Microsoft Dynamics 365 for Talent a Microsoft Dynamics 365 for Retail k dispozici. Funkci zpřístupníme v budoucí verzi. Průvodci v prostředí Začínáme v aplikaci Talent jsou i nadále k dispozici a zabývají se základními funkcemi. Na webu docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index)) jsou také k dispozici pokyny pro aplikaci Retail i Talent.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Nápověda na webu docs.microsoft.com
 
-Primární zdroj dokumentace pro aplikaci Finance and Operations je web docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)). Web nabízí následující možnosti:
+Primární zdroj dokumentace pro aplikaci Finance and Operations je web docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index)). Web nabízí následující možnosti:
 
 -   **Přístup k nejaktuálnějšímu obsahu** – web nám poskytuje rychlejší a pružnější způsob vytváření, provedení a aktualizaci dokumentace k produktům. Díky tomu pomáhá zajistit, že budete mít přístup k aktuálním technickým informacím.
 -   **Obsah vytvořený odborníky** – web poskytuje lepší sadu dokumentace k produktu, kterou mohou vylepšovat členové komunity uvnitř i mimo aplikaci Microsoft.
@@ -68,12 +65,13 @@ Primární zdroj dokumentace pro aplikaci Finance and Operations je web docs.mic
 ### <a name="searching-on-docsmicrosoftcom"></a>Vyhledávání na webu docs.microsoft.com
 Dostáváme spousty dotazů, jak vyhledávat náš obsah. Pokud na našem webu začnete stránkou o aplikaci Finance and Operations, omezíme rozsah vašeho vyhledávání jenom na obsah pro tuto aplikaci. Rozsah vyhledávání můžete omezit kliknutím na X vedle možnosti Operace ve vyhledávacím poli. 
 
-![Vyhledat](./media/search-scope.png)
+![Vyhledat](./media/search-scope-2.png)
 
 Obsah lze také vyhledat pomocí libovolného modulu pro vyhledávání. Pro dosažení nejlepších výsledků vám doporučujeme použít vyhledávání na webu, například site:docs.microsoft.com dynamics 365 "hledaný termín".  
-![Hledání na webu](./media/site-search.png)
 
-![Výsledky hledání na webu](./media/site-search-results.png)
+![Hledání na webu](./media/site-search-1.png)
+
+![Výsledky hledání na webu](./media/site-search-results-2.png)
 
 ### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>Obsah docs.microsoft.com pro platformu Unified Operations
 Všechny produkty mají na stránce dokumentace jednu stránku s obsahem. Uživatelé díky tomu vidí kontext zobrazeného tématu. Je díky tomu také možné najít požadovaná témata pomocí filtrů.
@@ -105,7 +103,7 @@ Průvodce záznamem úloh je kontrolovaný, řízený a interaktivní způsob, k
 
 Pro každý produkt platformy Unified Operations zajistíme různé sady průvodců záznamem úloh. Část Přístup k průvodcům záznamem úloh z podokna Nápověda popisuje, jak najít správné průvodce pro daný produkt. 
 
-![Zobrazení pro čtení Průvodce záznamem úloh](./media/task-guide-ops-1024x742.png)
+![Zobrazení pro čtení Průvodce záznamem úloh](./media/task-guide-ops.png)
 
 Chcete-li zažít řízenou interaktivní zkušenost, klikněte na možnost **Spustit průvodce úkole** v dolní části podokna Nápověda. Zobrazí se černý ukazatel s určením akce, kterou je třeba provést. Postupujte podle pokynů v uživatelském rozhraní a zadejte data podle pokynů. 
 ![Pokyny ke kroku Průvodce záznamem úloh](./media/task-guide-step-1-ops.png)
@@ -129,7 +127,7 @@ Můžete vytvořit vlastní záznamy úkolů nebo můžete stáhnout a upravit z
 ## <a name="in-product-help"></a>Nápověda v produktu
 Chcete-li získat přístup k obsahu nápovědy v aplikaci Finance and Operations, klikněte na ikonu **Nápověda** (**?**) a vyberte možnost Nápověda nebo stiskněte klávesy Ctrl+Shift+?. V obou případech se otevře podokno Nápověda. Z podokna Nápověda můžete otevřít články nebo průvodce záznamem úloh. 
 
-![Podokno Nápověda](./media/help-pane-wiki-1024x684.png)
+![Podokno Nápověda](./media/help-pane-wiki.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Přístup k tématům nápovědy z podokna Nápověda
 
@@ -162,7 +160,7 @@ Na stránce **Systémové parametry** proveďte následující kroky:
 
 Jakmile správce systému provede tyto kroky, můžete otevřít podokno Nápověda a kliknout na kartu **Průvodci úkolem**. Zobrazí se průvodci záznamem úloh vztahující se ke stránce, kterou máte v aplikaci Finance and Operations otevřenou. Pokud nebyli nalezeni žádní průvodci záznamem úloh, můžete zadat klíčová slova pro upřesnění hledání. Po kliknutí na Průvodce záznamem úloh v podokně Nápověda se v podokně Nápověda zobrazí podrobné pokyny a můžete také přehrát průvodce úkolem. 
 
-![Zobrazení pro čtení Průvodce záznamem úloh](./media/task-guide-ops-1024x742.png)
+![Zobrazení pro čtení Průvodce záznamem úloh](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides"></a>Kde jsou přeloženi průvodci záznamem úloh?
 

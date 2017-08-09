@@ -1,5 +1,5 @@
 ---
-title: "Přenesení daňové povinnosti pro DPH (reverse charge) | Dokumenty společnosti Microsoft"
+title: "DPH stornovacího poplatku"
 description: "Toto téma popisuje určení přenesení daňové povinnosti (reverse charge) pro DPH u evropských zemí."
 author: epodkolz
 manager: AnnBe
@@ -13,13 +13,13 @@ ms.reviewer: shylaw
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epodkolz
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6cb473962f40ed9ef2f5f807f089098764f47009
-ms.openlocfilehash: b3c94fa73410d9bdcaaec11dee04a7a239e4d45a
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: dba651b4e6f0e661d6743780495c7ee217eefd9d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/14/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -39,12 +39,12 @@ Doporučujeme používat pro nákupní a prodejní operace samostatné kódy DP
 <body>
 <tr>
 <td><strong>Kód DPH u prodeje</strong></td>
-<td>Vytvořte kód DPH pro operace reverse charge u prodeje (<strong>Daň</strong> > <strong>Nepřímé daně</strong> > <strong>DPH</strong> > <strong>Kódy DPH</strong>).
+<td>Vytvořte kód daně z prodeje pro operace prodeje zpětného účtování (<strong>Daň</strong> > <strong>Nepřímé daně</strong> > <strong>Daň z prodeje</strong> > <strong>Kódy daně z prodeje</strong>).
 </td>
 </tr>
 <tr>
 <td><strong>Kód DPH u nákupu</strong></td>
-<td><p>Vytvořte kladné a záporné kódy DPH pro mechanismus reverse charge u DPH u nákupu (<strong>Daň</strong> > <strong>Nepřímé daně</strong> > <strong>DPH</strong> > <strong>Kódy DPH</strong>).</p>
+<td><p>Vytvořte kladné a záporné kódy DPH pro mechanismus reverse charge VAT pro nákupy (<strong>Daň</strong> > <strong>Nepřímé daně</strong> > <strong>Daň z prodeje</strong> > <strong>Kódy daně z prodeje</strong>).</p>
 <ol>
 <li>Vytvořte kód DPH s kladnou hodnotou.</li>
 <li>Vytvořte kód DPH se zápornou hodnotou. Nastavte možnost <strong>Povolit záporné procento DPH</strong> na <strong>Ano</strong>.
@@ -62,15 +62,15 @@ Doporučujeme používat pro nákupní a prodejní operace samostatné skupiny 
 <table>
 <tr>
 <td><strong>Skupiny DPH u prodeje</strong></td>
-<td>Vytvořte skupinu DPH pro operace prodeje s nastavením reverse charge (<strong>Daň</strong> > <strong>Nepřímé daně</strong> > <strong>DPH</strong> > <strong>Skupiny DPH</strong>). Na kartě <strong>Nastavení</strong> přidejte do této skupiny kód DPH pro reverse charge. Zaškrtněte možnosti <strong>Osvobozené od daně</strong> a <strong>Stornovací poplatek</strong> u příslušného kódu.</td>
+<td>Vytvořte skupinu DPH pro operace prodeje s nastavením reverse charge (<strong>Daň</strong> > <strong>Nepřímé daně</strong> > <strong>Daň z prodeje</strong> > <strong>Skupiny daně z prodeje</strong>). Na kartě <strong>Nastavení</strong> přidejte do této skupiny kód DPH pro reverse charge. Zaškrtněte možnosti <strong>Osvobozené od daně</strong> a <strong>Stornovací poplatek</strong> u příslušného kódu.</td>
 </tr>
 <tr>
 <td><strong>Skupiny DPH u nákupu</strong></td>
-<td>Vytvořte skupinu DPH pro operace nákupu s nastavením reverse charge (<strong>Daň</strong> > <strong>Nepřímé daně</strong> > <strong>DPH</strong> > <strong>Skupiny DPH</strong>). Na kartě <strong>Nastavení</strong> přidejte do této skupiny kladný a záporný kód DPH. U kódu se zápornou hodnotou zaškrtněte políčko <strong>Stornovací poplatek</strong>.</td>
+<td>Vytvořte skupinu DPH pro operace nákupu s nastavením reverse charge (<strong>Daň</strong> > <strong>Nepřímé daně</strong> > <strong>Daň z prodeje</strong> > <strong>Skupiny daně z prodeje</strong>). Na kartě <strong>Nastavení</strong> přidejte do této skupiny kladný a záporný kód DPH. U kódu se zápornou hodnotou zaškrtněte políčko <strong>Stornovací poplatek</strong>.</td>
 </tr>
 <tr>
 <td><strong>Skupiny DPH položky</strong></td>
-<td>Vytvořte nebo aktualizujte skupinu DPH položky pomocí kódu DPH se zápornou hodnotou (<strong>Daň</strong> > <strong>Nepřímé daně</strong> > <strong>DPH</strong> > <strong>Skupiny DPH položky</strong>). Výchozí skupinu DPH položky je třeba přiřadit k produktům a kategoriím, na které se mechanismus reverse charge vztahuje.</td>
+<td>Vytvořte nebo aktualizujte skupinu DPH položky pomocí kódu DPH se zápornou hodnotou(<strong>Daň</strong> > <strong>Nepřímé daně</strong> > <strong>Daň z prodeje</strong> > <strong>Skupiny daně z prodeje zboží</strong>). Výchozí skupinu DPH položky je třeba přiřadit k produktům a kategoriím, na které se mechanismus reverse charge vztahuje.</td>
 </tr>
 </table>
 

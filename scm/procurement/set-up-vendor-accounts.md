@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: bis
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 4c97f11fa85b8eee54daea8ccaa183859a89fe7f
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 3c3c215dbc64c3b823ab8537b66f72d7d7fdf5c1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -94,6 +94,18 @@ Dodavatele je možné blokovat pro různé typy transakcí. Existují tyto možn
 -   **Nikdy** – dodavatele nebude nikdy blokován pro nečinnost.
 
 Pokud dodavatele budete blokovat, můžete také nastavit důvod a datum, kdy stav blokování skončí. Pokud nezadáte datum ukončení, blokování dodavatele bude trvat navždy.
+
+Můžete hromadně aktualizovat blokování všech **Všichni** dodavatelů na základě zvolených kritérií na stránce **Deaktivace dodavatele** a přiřadit důvod blokace dodavatele.
+
+Následující kritéria jsou použity pro zařazení dodavatele, který byl po nějakou dobu neaktivní, zařadit nebo vyřadit dodavatele, kteří jsou zároveň zaměstnanci, a vyřadit dodavatele, kteří jsou v přechodném obdobím před dalším vyřazením.
+
+- Na základě počtu dní, které vložíte do pole **Aktivní období** na stránce **Deaktivace dodavatele**, aplikace spočítá poslední datum, kdy může dodavatel provést jakoukoliv činnost, aby byl považován za neaktivního. To je aktuální datum minus počet dnů, které jste vložili. Pokud pro daného dodavatele existuje jedna nebo více faktur, u kterých je datum splatnosti pozdější než vypočítané poslední datum, dodavatel bude z deaktivace vyřazen. Toto platí i v případě, že dodavatel má platby po daném datu, otevřené nákupní žádanky, otevřené nákupní příkazy, žádosti o cenovou nabídku nebo odpovědi.
+- Počet dní v poli **Přechodné období před dalším blokováním** se použije pro výpočet posledního dne přechodného období. To znamená aktuální datum minus počet dnů, které jste vložili. Toto se týká pouze dodavatelů, kteří již byli v minulosti deaktivováni. V případě předchozí deaktivace aplikace ověří historii dalších výskytů deaktivace dodavatele a zkontroluje, zda poslední deaktivace nastala před posledním dnem přechodného období. Pokud ano, dodavatel bude zařazen v procesu deaktivace.
+- Parametr **Zahrnout zaměstnance** se týká dodavatelů, kteří jsou propojeni s některým zaměstnancem. Můžete nastavit, zda tyto zaměstnance chcete zahrnout.
+
+Proces vždy vyřadí takové dodavatele, u nichž je hodnota v poli **Blokování dodavatelů** nastavena na **Nikdy**.
+
+Dodavatelé, kteří projdou ověřením, budou zablokováni, což nastaví hodnotu pole **Blokování dodavatelů** na **Všichni** a pole **Důvod** na to, co bylo zvoleno. Pro daného dodavatele se vytvoří záznam v historii blokování.
 
 ## <a name="vendor-invoice-account"></a>Účet dodavatele pro fakturaci
 Pokud máte více než jednoho dodavatele se stejnou fakturační adresou, nebo pokud je dodavatel fakturován třetí stranou, můžete v záznamech dodavatele určit fakturační účet. Účtem faktury je účet, na který se připíše částka faktury po vytvoření faktury dodavatele z nákupní objednávky. Jestliže v záznamech dodavatele účet faktury nezadáte, potom se jako účet faktury použije účet dodavatele.

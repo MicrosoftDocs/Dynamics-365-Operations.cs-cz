@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 889a9ce79d4599a60a4503d7876276a1452a5465
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 84243a91d8b76873cd33651bbdff900b14d9c76e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,8 +36,8 @@ Toto téma odkazuje na zdroje, které vám pomůžou používat aplikaci Microso
 ----------------
 
 -   [Přehled číselných řad](number-sequence-overview.md)
--   [Nastavení číselných řad pomocí průvodce](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (Průvodce záznamem úloh)
--   [Nastavení jednotlivých číselných řad](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (Průvodce záznamem úloh)
+-   [Nastavení číselných řad pomocí průvodce](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard) (Průvodce záznamem úloh)
+-   [Nastavení jednotlivých číselných řad](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis) (Průvodce záznamem úloh)
 
 ## <a name="address-books"></a>Adresáře
 -   [Adresáře](qa-address-books.md)
@@ -67,17 +67,17 @@ Toto téma odkazuje na zdroje, které vám pomůžou používat aplikaci Microso
 
 ## <a name="electronic-signatures"></a>Elektronické podpisy
 -   [Přehled elektronických podpisů](electronic-signature-overview.md)
--   [Nastavení parametrů elektronického podpisu](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (Průvodce záznamem úloh)
+-   [Nastavení parametrů elektronického podpisu](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures) (Průvodce záznamem úloh)
 
 ## <a name="organizations"></a>Organizace
 -   [Organizace a organizační hierarchie](organizations-organizational-hierarchies.md)
 -   [Plánování organizační hierarchie](plan-organizational-hierarchy.md)
--   [Vytvoření provozní jednotky](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (Průvodce záznamem úloh)
--   [Vytvoření organizační hierarchie](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (Průvodce záznamem úloh)
--   [Vytvoření právnické osoby](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (Průvodce záznamem úloh)
+-   [Vytvoření provozní jednotky](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit) (Průvodce záznamem úloh)
+-   [Vytvoření organizační hierarchie](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy) (Průvodce záznamem úloh)
+-   [Vytvoření právnické osoby](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity) (Průvodce záznamem úloh)
 
 ## <a name="general-administration"></a>Všeobecná správa
--   [Změna nápisu nebo loga](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (Průvodce záznamem úloh)
+-   [Změna nápisu nebo loga](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (Průvodce záznamem úloh)
 -   [O kalendářních a časových datech a časových pásmech](date-time-zones.md)
 -   [Šablony záznamu](record-templates.md)
 

@@ -1,6 +1,6 @@
 ---
 title: "Požadavek na nabídky (RFQ)"
-description: "Tento článek poskytuje přehled požadavků na nabídku (RFQs), které organizace vydávají v případě, že musí nakoupit položky nebo služby a chtějí získat od několika dodavatelů konkurenční nabídky. V požadavku na nabídku požádejte dodavatele o zadání cen a dodacích lhůt pro zadané množství položek. Lze také požádat dodavatele, aby určili, zda budou účtovány vedlejší náklady, například přepravní náklady nebo slevy pro velké objednávky či včasnou platbu za fakturu dodavatele."
+description: "Toto téma poskytuje přehled požadavků na nabídku (RFQs), které organizace vydávají v případě, že musí nakoupit položky nebo služby a chtějí získat od několika dodavatelů konkurenční nabídky."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 06/20/2017
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2154
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d681f4c107a9dbc1ea8c5e1de38b2d45cf19bcfa
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 47e394c8642f502c698dbcd5506979b7cac0a830
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek poskytuje přehled požadavků na nabídku (RFQs), které organizace vydávají v případě, že musí nakoupit položky nebo služby a chtějí získat od několika dodavatelů konkurenční nabídky. V požadavku na nabídku požádejte dodavatele o zadání cen a dodacích lhůt pro zadané množství položek. Lze také požádat dodavatele, aby určili, zda budou účtovány vedlejší náklady, například přepravní náklady nebo slevy pro velké objednávky či včasnou platbu za fakturu dodavatele.
+Toto téma poskytuje přehled požadavků na nabídku (RFQs), které organizace vydávají v případě, že musí nakoupit položky nebo služby a chtějí získat od několika dodavatelů konkurenční nabídky. V požadavku na nabídku požádejte dodavatele o zadání cen a dodacích lhůt pro zadané množství položek. Lze také požádat dodavatele, aby určili, zda budou účtovány vedlejší náklady, například přepravní náklady nebo slevy pro velké objednávky či včasnou platbu za fakturu dodavatele.
 
 Požadavek na nabídku (RFQ) zahrnuje následující úkoly:
 
 -   vytvoření a odeslání požadavku na nabídku jednomu nebo více dodavatelům,
 -   příjem a registraci odpovědí na RFQ (nabídek),
--   převod přijatých nabídek na nákupní objednávky, nákupní smlouvy nebo nákupní žádanky.
+-   Převod přijatých nabídek na nákupní objednávky, nákupní smlouvu nebo nákupní žádanku.
 
 Následující obrázek přehledně znázorňuje průběh zpracování požadavku na nabídku.  
 
@@ -49,7 +49,7 @@ Pokud se po odeslání musí požadavek na nabídku změnit, můžete opětně o
 
 Jakmile obdržíte nabídky, je nutné je zadat na stránce **Odpovědi na požadavky na nabídku**. Pokud jste vybrali možnost **Kopírovat data do odpovědi**, data jako například množství a data z případu požadavku na nabídku jsou zkopírovány do odpovědi na nabídku. Tato data lze změnit podle nabídky dodavatele.  
 
-Pokud je druhá iterace odpovědi vyžadována pro určitého dodavatele, klepněte na tlačítko **Vrácení**na stránce**Odpověď požadavku na nabídku**. Akce Vrácení vytvoří nový deník a sestavu, která bude vytištěna, archivována a odeslána podle nastavení správy tisku.  
+Pokud je druhá iterace odpovědi vyžadována pro určitého dodavatele, klepněte na tlačítko **Vrácení** na stránce **Odpověď požadavku na nabídku**. Akce Vrácení vytvoří nový deník a sestavu, která bude vytištěna, archivována a odeslána podle nastavení správy tisku.  
 
 Pokud jste přidali kritéria hodnocení do případu požadavku na nabídku, odpověď požadavku na nabídku bude mít panel hodnocení, kde můžete zadat výsledky. Celkové hodnocení se zobrazí při porovnání odpovědí na stránce **Porovnat odpovědi**, kde můžete také porovnat jiná data odpovědi, jako například ceny řádku, datum dodání a celkovou cenu.  
 
@@ -66,17 +66,17 @@ Pořadí stavů zpracování požadavku na nabídku vypadá takto:
 3.  **Přijato**
 4.  **Přijato**/**Zrušeno**/**Odmítnuto**
 
-Stavy budou popsány podrobněji pozdější v tomto článku.
+Stavy budou popsány podrobněji pozdější v tomto tématu.
 
 ## <a name="setting-up-rfq-functionality"></a>Nastavení funkce RFQ
 Než bude možné vytvořit případ požadavku na nabídku, je nutné konfigurovat informace o požadavku na nabídku na stránce **Parametry modulu Zásobování a zdroje**. Při vytváření případu požadavku na nabídku lze zadat výchozí hodnoty, které budou zkopírovány do požadavku na nabídku. Můžete zadat následující výchozí hodnoty:
 
--   Typ nákupu nového požadavku na nabídku: **Nákupní objednávka** nebo **Nákupní smlouva**
--   Nastavení data a času vypršení platnosti
+-   Typ nákupu nového požadavku na nabídku: **Nákupní objednávka** nebo **Nákupní smlouva**.
+-   Nastavení data a času vypršení platnosti.
 -   Informace o dodání a platební podmínky.
--   Pole, která mají být zahrnuta v odpovědi na požadavek na nabídku
+-   Pole, která mají být zahrnuta v odpovědi na požadavek na nabídku.
 
-Tyto hodnoty lze přepsat pro konkrétní případ požadavku na nabídku. Také je třeba nakonfigurovat proces změn. V rámci této konfigurace můžete zapnout blokování pole. Při aktivaci uzamykání pole pracovníci zásobování, kteří chtějí změnit požadavek na nabídku, musí nejdříve klepnout na **Vytvořit** v části **Dodatek** na kartě **Nabídka**. Po doplnění požadavku na nabídku o změnu musí pracovník zásobování dokončit proces klepnutím na **Dokončit**.** **Akce Dokončit vytvoří e-mailové upozornění oznamující dodavateli změnu požadavku na nabídku. Vyberte šablonu pro oznámení e-mailem odeslané dodavatelům na stránce **Parametry modulu Zásobování a zdroje**. Po vytvoření šablona může obsahovat následující náhradní tokeny:
+Tyto hodnoty lze přepsat pro konkrétní případ požadavku na nabídku. Také je třeba nakonfigurovat proces změn. V rámci této konfigurace můžete zapnout blokování pole. Při aktivaci uzamykání pole pracovníci zásobování, kteří chtějí změnit požadavek na nabídku, musí nejdříve klepnout na **Vytvořit** v části **Dodatek** na kartě **Nabídka**. Po aktualizaci požadavku na nabídku o dodatek musí odborník na nákup dokončit proces kliknutím na tlačítko **Finalizovat**. Akce **Finalizovat** vytvoří e-mailovou zprávu, která upozorní dodavatele na doplněnou RFQ. Vyberte šablonu pro oznámení e-mailem odeslané dodavatelům na stránce **Parametry modulu Zásobování a zdroje**. Po vytvoření šablona může obsahovat následující náhradní tokeny:
 
 -   %Důvod pro vrácení nabídky%
 -   %Důvod pro dodatek%
@@ -87,7 +87,10 @@ Tokeny %Důvod pro vrácení nabídky% a %Důvod pro dodatek% jsou nahrazeny tex
 
 Pokud chcete použít kódy důvodu u odpovědi na požadavek na nabídku a označit tak, proč nabídka byla zamítnuta nebo přijata, musíte nastavit kódy důvodu na stránce **Dodavatel – důvody**.  
 
-Vzhled vytištěných a uložených dokumentů požadavku na nabídku můžete nakonfigurovat na stránce **Nastavení formuláře** v modulu Zásobování a zdroje.  
+Vzhled vytištěných a uložených dokumentů požadavku na nabídku můžete nakonfigurovat na stránce **Nastavení formuláře** v modulu Zásobování a zdroje. 
+
+**Poznámka:** U konfigurace veřejného sektoru platí, že jakékoli změny provedené v RFQ, která již byla odeslána, budou vyžadovat použití procesu dodatku. Při odeslání požadavku na nabídku jsou pole uzamčena, takže klepnutí na **Vytvořit** pro použití procesu dodatku, jak je popsáno výše, je povinný krok k provedení změn požadavku.
+To určuje parametr uzamčení pole **Zamknout požadavky na nabídku při odeslání** v poli **Parametry modulu zásobování a zdroje**. Tento parametr je nastaven na **Ano** a pro konfiguraci veřejného sektoru se jedná o výchozí hodnotu, kterou nelze změnit. To znamená, že zatímco proces dodatku lze zpracovat ručně v konfiguraci neveřejného sektoru, proces zpracování dodatků uzamčením polí po odeslání požadavku na nabídku je povinný pro veřejný sektor.
 
 Při vytváření požadavku na nabídku pro nákupní objednávku a přidávání skladových položek do požadavku na nabídku bude vytvořena také skladová transakce, která má stav příjmu **Příjem nabídky**. Při výpočtu zásob pomocí hlavního plánu jsou použity pouze řádky požadavku na nabídku tohoto stavu. Pokud chcete, aby hlavní plán zahrnoval řádky požadavku na nabídku jako očekávaný příjem, je nutné konfigurovat toto chování v nastavení hlavního plánování.  
 
@@ -108,7 +111,7 @@ Pokud je požadavek na nabídku typu **Nákupní smlouva**:
 -   Požadavek na nabídku se používá pro dohodu o nákupu určitého množství nebo hodnoty produktu během času. Musíte vybrat rozsah dat, který se týká nákupní smlouvy a jména osoby, která spravuje nákupní smlouvu.
 -   Při přijetí nabídky je vygenerována nákupní smlouva.
 
-Požadavek na nabídku z nákupního požadavku můžete vytvořit pouze v případě, že je stav nákupního požadavku **Probíhá kontrola**a je vám přiřazeno provádět další úlohy workflowu. Řádky nákupního požadavku se automaticky aktualizují, jakmile přijmete řádky z odpovědí na požadavky na nabídku (nabídky), které jste získali od dodavatelů. Pokud probíhá zpracování RFQ, nelze provést žádné akce nákupní žádanky (například dokončení, odmítnutí nebo schválení).  
+Požadavek na nabídku z nákupního požadavku můžete vytvořit pouze v případě, že je stav nákupního požadavku **Probíhá kontrola** a je vám přiřazeno provádět další úlohy workflowu. Řádky nákupního požadavku se automaticky aktualizují, jakmile přijmete řádky z odpovědí na požadavky na nabídku (nabídky), které jste získali od dodavatelů. Pokud probíhá zpracování RFQ, nelze provést žádné akce nákupní žádanky (například dokončení, odmítnutí nebo schválení).  
 
 Pokud vytvoříte požadavek na nabídku, můžete vybrat konkrétní typ oslovení. Typ oslovení určuje sadu kritérií hodnocení, která se používá k získání odpovědí na požadavky na nabídku.  
 
@@ -137,7 +140,7 @@ Následující tabulka uvádí změny stavu požadavku na nabídku při vytvoře
 **Poznámka:** Do požadavku na nabídku můžete kdykoli přidat další dodavatele a nejnižší a nejvyšší stav se změní podle nových dodavatelů. Pokud jste například přijali nabídky od všech dodavatelů a přijali alespoň jeden řádek v nabídce, bude nejnižší stav v hlavičce požadavku na nabídku **Odmítnuto** a nejvyšší stav **Přijato**. Pokud přidáte nového dodavatele, bude nejnižší stav v jakémkoli řádku **Vytvořeno**. Nejnižší stav v záhlaví požadavku na nabídku se tedy změní na **Vytvořeno** a nejvyšší zůstane **Přijato**.
 
 ## <a name="amending-an-rfq"></a>Změna požadavku na nabídku
-V některých případech je nutné požadavek na nabídku změnit po odeslání. To může nastat například proto, že bylo změněno datum dodání, nebo když požadujete další výrobky nebo jiné množství produktů. Proces dodatku můžete nakonfigurovat tak, aby bylo omezení větší nebo menší.  
+V některých případech je nutné požadavek na nabídku změnit po odeslání. To může nastat například v případě, kdy byla změněna data dodání, nebo když požadujete další výrobky nebo jiné množství produktů. Proces dodatku můžete nakonfigurovat tak, aby bylo omezení větší nebo menší.  
 
 Používáte-li proces většího omezení, musíte před změnou polí v případu požadavku na nabídku klepnout na **Vytvořit** u případu požadavku na nabídku a spustit tak změnu. Po dokončení změn je nutné klepnout na **Dokončit**. Poté bude provedeni procesem přidání informací pro e-mailovou zprávu, která bude odeslána pro upozornění dodavatelů na změnu. Aktualizovaná sestavy požadavku na nabídku, která zahrnuje poznámku o změně, je automaticky přiřazena ke zprávě.  
 
@@ -181,7 +184,7 @@ Pokud přijmete odpověď RFQ s typem **Nákupní žádanka**, aktualizují řá
 
 V odpovědi můžete přidat kód důvodu vysvětlující příčinu přijetí nebo odmítnutí nabídky.  
 
-V nabídce můžete přijmout některé řádky a jiné zamítnout. Lze také přijímat řádky od různých dodavatelů. Počítejte však s tím, že pokud přijmete některé řádky, budete vyzváni k odmítnutí všechny ostatních řádků. Z toho vyplývá, že pokud chcete přijmout další řádky, musíte klepnout na **Zrušit** po zobrazení výzvy.  
+V nabídce můžete přijmout některé řádky a jiné zamítnout. Lze také přijímat řádky od různých dodavatelů. Počítejte s tím, že pokud přijmete některé řádky, budete vyzváni k odmítnutí všechny ostatních řádků. Z toho vyplývá, že pokud chcete přijmout další řádky, musíte klepnout na **Zrušit** po zobrazení výzvy.  
 
 Následující tabulka obsahuje změny stavu požadavku na nabídku při přijetí a odmítnutí nabídek od dodavatelů.
 

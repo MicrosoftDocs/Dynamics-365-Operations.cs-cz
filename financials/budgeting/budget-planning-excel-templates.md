@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 9f8073a2eb0d1b61d6a168f43eba983d113cf453
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 734c8930f239d8c9d220601bb2103bd55dd5bfd8
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,12 +35,18 @@ Toto téma popisuje, jak vytvořit šablony aplikace Microsoft Excel, které lze
 Toto téma ukazuje, jak vytvořit šablony aplikace Excel, které budou použity s plány rozpočtu pomocí standardní sady ukázkových dat a přihlášení uživatele admin. Další informace o plánování rozpočtu naleznete v tématu [Přehled plánování rozpočtu.](budget-planning-overview-configuration.md) Můžete také postupovat podle kurzu [Plánování rozpočtu 101](budget-plan.md) a naučit se konfiguraci základního modulu a zásady a použití.
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Vygenerování listu pomocí rozvržení dokumentu plánu rozpočtu
-Dokumenty plánu rozpočtu lze zobrazit a upravit pomocí jednoho nebo více rozvržení. Každé rozvržení může mít přidruženou šablonu dokumentu rozpočtu plánu pro zobrazení a úpravy dat plánu rozpočtu v listu aplikace Excel. V tomto tématu budou generovány šablonu dokumentu plánu rozpočtu pomocí stávající konfigurace rozvržení. Otevřete **Seznam plánů rozpočtu** (**Rozpočtování**&gt;**Plány rozpočtu**). Kliknutím na možnost **Nový** vytvořte nový dokument plánu rozpočtu. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+
+Dokumenty plánu rozpočtu lze zobrazit a upravit pomocí jednoho nebo více rozvržení. Každé rozvržení může mít přidruženou šablonu dokumentu rozpočtu plánu pro zobrazení a úpravy dat plánu rozpočtu v listu aplikace Excel. V tomto tématu budou generovány šablonu dokumentu plánu rozpočtu pomocí stávající konfigurace rozvržení. 
+
+Otevřete **Seznam plánů rozpočtu** (**Rozpočtování** &gt; **Plány rozpočtu**). Kliknutím na možnost **Nový** vytvořte nový dokument plánu rozpočtu. 
+
+[![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 Použijte možnost řádku **Přidat** k přidání řádků. Klikněte na možnost **Rozvržení**, abyste zobrazili konfiguraci rozvržení dokumentu plánu rozpočtu. 
+
 [![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Můžete zkontrolovat konfiguraci rozvržení a podle potřeby ji upravit. Přejděte na možnosti **Šablona**&gt;**Generovat** k vytvoření souboru aplikace Excel pro toto rozvržení. Po vytvoření šablony přejděte na položky **Šablona**&gt;**Zobrazit** a otevřete a zkontrolujte šablonu dokumentu plánu rozpočtu. Soubor aplikace Excel můžete uložit na místní disk. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png) 
+Můžete zkontrolovat konfiguraci rozvržení a podle potřeby ji upravit. Přejděte na možnosti **Šablona**&gt;**Generovat** k vytvoření souboru aplikace Excel pro toto rozvržení. Po vytvoření šablony přejděte na položky **Šablona**&gt;**Zobrazit** a otevřete a zkontrolujte šablonu dokumentu plánu rozpočtu. Soubor aplikace Excel můžete uložit na místní disk. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > Poté, co přidružíte k rozvržení dokumentu plánu rozpočtu šablonu aplikace Excel, nemůžete už rozvržení upravovat. Chcete-li změnit rozvržení, odstraňte přidružený soubor šablony aplikace Excel a vygenerujte ho znovu. Tato možnost je vyžadována pro zachování polí v rozvržení a synchronizaci listů. 

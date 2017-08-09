@@ -1,5 +1,5 @@
 ---
-title: "Vykazování daně z prodeje pro Českou republiku | Dokumentace Microsoftu"
+title: "Vykazování daně z prodeje pro Českou republiku"
 description: "Toto téma uvádí informace o tom, jak se vypočítává a zaúčtovává daň z přidané hodnoty (DPH) pro Českou republiku."
 author: LizaGolub
 manager: AnnBe
@@ -15,13 +15,13 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 1696023
 ms.search.region: Czech Republic
 ms.author: v-elgolu
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 26e58a674002a3d01112cd275f9d7902662fb824
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 7ce3fc1c79d13b07d7c03ecb14b1b2e41b1d512c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 

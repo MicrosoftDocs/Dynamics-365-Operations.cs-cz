@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: kfend
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 655a6fd99c0688b13c31c79f3322a287f902e7f1
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 2c04bbccf22ab830404206cd54b4cb8e97b6a822
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -67,7 +67,7 @@ Následující obrázek znázorňuje návrh výraz tohoto typu. V tomto příkl
 
 ### <a name="data-formatting"></a>Formátování dat
 
-Návrháře receptur elektronického výkaznictví lze použít k definování výrazu, který naformátuje data přijatá ze zdrojů dat, aby tato data bylo možné odeslat jako součást generovaného elektronického dokumentu: Pokud máte formátování, které je třeba použít jako typické pravidlo, které by mělo být znovu využito pro formát, můžete použít toto formátování jednou v konfiguraci formátu jako pojmenovanou transformaci, která má výraz formátování. Tuto pojmenovanou transformaci lze potom propojit s mnoha komponentami formátu, jejichž výstup musí být formátován podle vytvořeného výrazu. Následující obrázek znázorňuje návrh transformace tohoto typu. V tomto příkladu přijme transformace **TrimmedString** vstupní data typu dat **řetězec** a ořeže počáteční a koncové mezery při vrácení hodnoty řetězce. [![picture-transformation-design](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg) Následující obrázek znázorňuje, jak lze použít návrh transformace tohoto typu. V tomto příkladu několik součástí formátu, které v době spuštění odeslaly text jako výstup do generovaného elektronického dokumentu, odkazuje na transformaci **TrimmedString** názvem. [![picture-transformation-usage](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg) Když komponenty formátu odkazují na transformaci **TrimmedString ** (například) **partyName** na předchozím obrázku), odešle se text jako výstup generovaného dokumentu. Text nezahrnuje počáteční a koncové mezery. Pokud máte formátování, které je nutné použít jednotlivě, můžete toto formátování použít jako jednotlivý výraz vazby konkrétní součásti formátu. Následující obrázek znázorňuje výraz tohoto typu. V tomto příkladu je součást formátu **partyType** vázána na zdroj dat pomocí výrazu, který převede příchozí data z pole **Model.Company.RegistrationType** ve zdroji dat na text s velkými písmeny a odešle tento text jako výstup do elektronického dokumentu. [![picture-binding-with-formula](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
+Návrháře receptur elektronického výkaznictví lze použít k definování výrazu, který naformátuje data přijatá ze zdrojů dat, aby tato data bylo možné odeslat jako součást generovaného elektronického dokumentu: Pokud máte formátování, které je třeba použít jako typické pravidlo, které by mělo být znovu využito pro formát, můžete použít toto formátování jednou v konfiguraci formátu jako pojmenovanou transformaci, která má výraz formátování. Tuto pojmenovanou transformaci lze potom propojit s mnoha komponentami formátu, jejichž výstup musí být formátován podle vytvořeného výrazu. Následující obrázek znázorňuje návrh transformace tohoto typu. V tomto příkladu přijme transformace **TrimmedString** vstupní data typu dat **řetězec** a ořeže počáteční a koncové mezery při vrácení hodnoty řetězce. [![picture-transformation-design](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg) Následující obrázek znázorňuje, jak lze použít návrh transformace tohoto typu. V tomto příkladu několik součástí formátu, které v době spuštění odeslaly text jako výstup do generovaného elektronického dokumentu, odkazuje na transformaci **TrimmedString** názvem. [![picture-transformation-usage](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg) Když komponenty formátu odkazují na transformaci **TrimmedString** (například) **partyName** na předchozím obrázku), odešle se text jako výstup generovaného dokumentu. Text nezahrnuje počáteční a koncové mezery. Pokud máte formátování, které je nutné použít jednotlivě, můžete toto formátování použít jako jednotlivý výraz vazby konkrétní součásti formátu. Následující obrázek znázorňuje výraz tohoto typu. V tomto příkladu je součást formátu **partyType** vázána na zdroj dat pomocí výrazu, který převede příchozí data z pole **Model.Company.RegistrationType** ve zdroji dat na text s velkými písmeny a odešle tento text jako výstup do elektronického dokumentu. [![picture-binding-with-formula](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
 ### <a name="process-flow-control"></a>Kontrola procesního toku
 
@@ -104,7 +104,7 @@ Výrazy elektronické výkaznictví mohou obsahovat jakékoli nebo všechny nás
 
 #### <a name="constants"></a>Konstanty
 
-Text a numerické konstanty (hodnoty, které nejsou vypočteny) lze použít při tvorbě výrazů. Například výraz **VALUE ("100") + 20 **používá číselnou konstantu 20 a řetězcovou konstantu 100 a vrátí číselnou hodnotu **120**. Návrhář receptur elektronického výkaznictví podporuje řídicí sekvence, které tak můžete zadat jako část řetězce výrazu, s níž by se mělo zacházet jinak. Například výraz **"Lev Tolstoj ""Vojna a mir"" Svazek 1"** vrátí textový řetězec **Lev Tolstoj "Vojna a mir" Svazek 1**.
+Text a numerické konstanty (hodnoty, které nejsou vypočteny) lze použít při tvorbě výrazů. Například výraz **VALUE ("100") + 20**používá číselnou konstantu 20 a řetězcovou konstantu 100 a vrátí číselnou hodnotu **120**. Návrhář receptur elektronického výkaznictví podporuje řídicí sekvence, které tak můžete zadat jako část řetězce výrazu, s níž by se mělo zacházet jinak. Například výraz **"Lev Tolstoj ""Vojna a mir"" Svazek 1"** vrátí textový řetězec **Lev Tolstoj "Vojna a mir" Svazek 1**.
 
 #### <a name="operators"></a>Operátory
 
@@ -136,7 +136,7 @@ Kromě toho můžete použít ampersand (&) jako operátor ke zřetězení textu
 
 #### <a name="operator-precedence"></a>Priorita operátorů
 
-Pořadí, v jakém jsou části složeného výrazu vyhodnoceny, je důležité. Například výsledek výrazu** 1 + 4 / 2** se liší v závislosti na tom, zda se provádí nejprve sčítání nebo dělení. Pomocí závorek lze explicitně definovat způsob vyhodnocení výrazu. Chcete-li například uvést, že se sčítání musí provést jako první, můžete upravit předchozí výraz na **(1 + 4) / 2**. Pokud pořadí operací, které musí být provedeny ve výrazu, není explicitně definováno, pořadí vychází z výchozí priority přiřazené k podporovaným operátorům. V následující tabulce jsou operátory a priorita, která je k nim přiřazená. Operátory, které mají vyšší prioritu (například 7), jsou vyhodnoceny dříve než operátory s nižší prioritou (například 1).
+Pořadí, v jakém jsou části složeného výrazu vyhodnoceny, je důležité. Například výsledek výrazu **1 + 4 / 2** se liší v závislosti na tom, zda se provádí nejprve sčítání nebo dělení. Pomocí závorek lze explicitně definovat způsob vyhodnocení výrazu. Chcete-li například uvést, že se sčítání musí provést jako první, můžete upravit předchozí výraz na **(1 + 4) / 2**. Pokud pořadí operací, které musí být provedeny ve výrazu, není explicitně definováno, pořadí vychází z výchozí priority přiřazené k podporovaným operátorům. V následující tabulce jsou operátory a priorita, která je k nim přiřazená. Operátory, které mají vyšší prioritu (například 7), jsou vyhodnoceny dříve než operátory s nižší prioritou (například 1).
 
 | Priorita | Operátory      | Syntaxe                                                   |
 |------------|----------------|----------------------------------------------------------|
@@ -196,8 +196,8 @@ V následující tabulce jsou popsány funkce pro manipulaci s daty, které lze 
 | SESSIONNOW ()                              | Vrátí aktuální datum a čas relace aplikace Dynamics 365 for Finance and Operations jako hodnotu data a času.                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                       |
 | DATEFORMAT (datum, formát)                  | Vrátí řetězcovou reprezentaci data v zadaném formátu.                                                                                                                                                                                                                                                                                                    | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** vrátí aktuální datum relace aplikace Dynamics 365 for Finance and Operations, například 24. 12. 2015, jako **"24-12-2015"** podle zadaného vlastního formátu.                                                                                                                      |
 | DATEFORMAT (datum, formát, jazyková verze)         | Převede zadanou hodnotu data na řetězec v zadaném formátu [jazykové verzi](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Informace o podporovaných formátech viz [standardní](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) a [vlastní](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)     | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** vrátí aktuální datum relace aplikace Finance and Operations, například 24. 12. 2015, jako **"24.12.2015"**, podle vybraného německého prostředí.                                                                                                                       |
-| DAYOFYEAR (datum)              | Vrátí celočíselnou reprezentaci počtu dní mezi 1. lednem a zadaným datem.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** vrátí **61**.
-**DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** vrátí **1**.                                                                                                                       |
+| DAYOFYEAR (datum)              | Vrátí celočíselnou reprezentaci počtu dní mezi 1. lednem a zadaným datem.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** vrátí **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** vrátí **1**. 
+                                                                                                                      |
 
 **Funkce převodu dat**
 
@@ -236,7 +236,14 @@ V následující tabulce jsou popsány funkce pro manipulaci s daty, které lze 
 <li>Dávky jako běžné seznamy (součást <strong>Value</strong>)</li>
 <li>Číslo aktuální dávky (součást <strong>BatchNumber</strong>)</li>
 </ul></td>
-<td>V následujícím příkladu je zdroj dat <strong>Lines</strong> vytvořen jako seznamu tří záznamů, který je rozdělený na dávky, z nichž každá obsahuje až dva záznamy. <a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> Zde je navržené rozvržení formátu, kde jsou vazby na zdroj dat <strong>Řádky</strong> vytvořeny s cílem vygenerovat výstup ve formátu XML, který poskytuje jednotlivé uzly pro každou dávku a obsažené záznamy. <a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> Následuje výsledek spuštění navrženého formátu. <a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
+<td>V následujícím příkladu je zdroj dat <strong>Lines</strong> vytvořen jako seznamu tří záznamů, který je rozdělený na dávky, z nichž každá obsahuje až dva záznamy. 
+<a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> 
+
+Zde je navržené rozvržení formátu, kde jsou vazby na zdroj dat <strong>Řádky</strong> vytvořeny s cílem vygenerovat výstup ve formátu XML, který poskytuje jednotlivé uzly pro každou dávku a obsažené záznamy. 
+<a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> 
+
+Následuje výsledek spuštění navrženého formátu. 
+<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
 </tr>
 <tr class="odd">
 <td>LIST (záznam 1 [, záznam 2, ...])</td>
@@ -300,7 +307,14 @@ V následující tabulce jsou popsány funkce pro manipulaci s daty, které lze 
 <li>Zadané záznamy seznamu jako běžné seznamy (součást <strong>hodnota</strong>)</li>
 <li>Aktuální index záznamů (součást <strong>číslo</strong>)</li>
 </ul></td>
-<td>V následujícím příkladu je zdroj dat <strong>Enumerated</strong> vytvořen jako výčtový seznam záznamů dodavatelů ze zdroje dat <strong>Vendors</strong>, který odkazuje na tabulku <strong>VendTable</strong>. <a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a>Zde je formát, kde jsou vazby dat vytvořeny k vygenerování výstupu ve formátu XML, který obsahuje jednotlivé dodavatele jako výčtové uzly. <a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> Následuje výsledek spuštění navrženého formátu. <a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
+<td>V následujícím příkladu je zdroj dat <strong>Enumerated</strong> vytvořen jako výčtový seznam záznamů dodavatelů ze zdroje dat <strong>Vendors</strong>, který odkazuje na tabulku <strong>VendTable</strong>. 
+<a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a> 
+
+Zde je formát, kde jsou vazby dat vytvořeny k vygenerování výstupu ve formátu XML, který obsahuje jednotlivé dodavatele jako výčtové uzly. 
+<a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> 
+
+Následuje výsledek spuštění navrženého formátu. 
+<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
 </tr>
 <tr class="odd">
 <td>COUNT (seznam)</td>
@@ -322,13 +336,24 @@ Vytvořený seznam bude obsahovat záznamy s následujícími poli:
 <li>popis</li>
 </ul>
 Pole Popisek a Popis se vrátí hodnoty runtime založené na jazykovém nastavení formátu.</td>
-<td>Následující příklad ukazuje výčet zavedený v datovém modelu. <a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>Následující příklad ukazuje:
+<td>Následující příklad ukazuje výčet zavedený v datovém modelu. 
+<a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>
+
+Následující příklad ukazuje:
 <ul>
 <li>Vyčíslení modelu vložené do sestavy jako zdroj dat.</li>
 <li>Výraz ER určený k použití vyčíslení modelu jako parametr této funkce.</li>
 <li>Zdroj dat typu záznamu vložený do sestavy pomocí vytvořeného výrazu elektronického výkaznictví.</li>
 </ul>
-<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a> V následujícím příkladu jsou znázorněny prvky formátu elektronického výkaznictví závislé na zdroji dat vytvořeném pomocí funkce LISTOFFIELDS.<a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>Toto je výsledek spuštění navrhovaného formátu.<a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>Poznámka:</strong> přeložený text pro popisky a popisy je zadán do výstupu ve formátu elektronického výkaznictví v souladu s nastavením jazyka nakonfigurovaným pro nadřízené formáty prvku SOUBOR a SLOŽKA.</td>
+<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a> 
+
+Následující příklad uvádí prvky formátu ER, které jsou vázané na zdroj dat typu seznamu záznamů, který byl vytvořen pomocí funkce LISTOFFIELDS.
+<a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>
+
+Toto je výsledek spuštění navrženého formátu.
+<a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>
+
+Poznámka:</strong> Přeložený text štítků a popisy je zadáván do výstupu formátu ER v souladu s jazykovým nastavením nakonfigurovaným pro nadřízené prvky formátu FILE a FOLDER.</td>
 </tr>
 <tr class="odd">
 <td>STRINGJOIN (seznam, název pole, oddělovač)</td>
@@ -338,7 +363,18 @@ Pole Popisek a Popis se vrátí hodnoty runtime založené na jazykovém nastave
 <tr class="even">
 <td>SPLITLISTBYLIMIT (seznamu, hodnota limitu, zdroj limitu)</td>
 <td>Rozdělí daný seznam na nový seznam podřízených seznamů a vrátí výsledek v obsahu seznamu záznamů. Parametr Hodnota limitu určuje hodnotu limitu k rozdělení seznamu původu. Parametr zdroje limitu určuje krok, o který se celkový součet zvýší. Limit nebude použito na jednu položku z daného seznamu, když zdrojový limit překročí definovaný limit.</td>
-<td>V následujícím příkladu je uveden vzorový formát použití datových zdrojů. <a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>To je výsledek spuštění formátu, zobrazující seznam bez stromové struktury položek zboží. <a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>Následující příklad ukazuje stejný formát, který byl upraven po jedné dávce, kdy musí obsahovat komodity s celkovou hmotností, která by neměla překročit limit 9. <a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>To je výsledkem spuštění upravené formátu. <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a><strong>Poznámka:</strong> Limit není použit na poslední zboží v seznamu původu, protože hodnota (11) zdroje limitu (hmotnost) překračuje definovaný limit (9). Použijte funkci <strong>WHERE</strong> nebo výraz <strong>Enabled</strong> odpovídajícího prvku formátu k ignorování (přeskočení) dílčích seznamů během generování sestavy (pokud je třeba).</td>
+<td>V následujícím příkladu je uveden vzorový formát použití datových zdrojů. 
+<a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>
+
+To je výsledné provedení formátu, které představuje plošný seznam položek komodit.
+<a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>
+
+Následující příklad uvádí stejný formát, který byl upraven tak, aby obsahoval seznam položek komodit v dávkách, kdy musí jedna dávka zahrnovat komodity s celkovou hmotností nepřekračující limit 9.
+<a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>
+
+Toto je výsledek spuštění upraveného formátu. <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a>
+
+<strong>Poznámka:</strong> Limit není použit na poslední zboží v seznamu původu, protože hodnota (11) zdroje limitu (hmotnost) překračuje definovaný limit (9). Použijte funkci <strong>WHERE</strong> nebo výraz <strong>Enabled</strong> odpovídajícího prvku formátu k ignorování (přeskočení) dílčích seznamů během generování sestavy (pokud je třeba).</td>
 </tr>
 <tr class="odd">
 <td>FILTER (seznam, podmínka)</td>
@@ -511,7 +547,10 @@ Pole Popisek a Popis se vrátí hodnoty runtime založené na jazykovém nastave
 <tr class="even">
 <td>FORMAT (řetězec 1 řetězce 2[, řetězec 3...])</td>
 <td>Vrátí zadaný řetězec, který je formátován nahrazením všech výskytů <strong>%N</strong> <em>n</em>. argumentem. Argumenty jsou řetězce. Pokud pro parametr není zadán argument, parametr je vrácen jako <strong>&quot;%N&quot;</strong> v řetězci. Co se týká hodnot typu <strong>real</strong>, převod řetězce je omezen na dvě desetinná místa.</td>
-<td>V tomto příkladu vrátí zdroj dat <strong>PaymentModel</strong> seznam záznamů odběratelů prostřednictvím součásti <strong>Customer</strong> a datum zpracování prostřednictvím pole <strong>ProcessingDate</strong>. <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> Ve formátu elektronického výkaznictví, který je určený ke generování elektronického souboru pro vybrané odběratele, je vybrán řetězec <strong>PaymentModel</strong> jako zdroj dat, který řídí procesní tok. Jestliže je vybraný odběratel zastaven u data zpracování sestavy, je vyvolána výjimka pro koncové uživatele. Vzorec, který je určen pro tento typ ovládacího prvku pro zpracování, může využít následující zdroje:
+<td>V tomto příkladu vrátí zdroj dat <strong>PaymentModel</strong> seznam záznamů odběratelů prostřednictvím součásti <strong>Customer</strong> a datum zpracování prostřednictvím pole <strong>ProcessingDate</strong>. 
+<a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> 
+
+Ve formátu elektronického výkaznictví, který je určený ke generování elektronického souboru pro vybrané odběratele, je vybrán řetězec <strong>PaymentModel</strong> jako zdroj dat, který řídí procesní tok. Jestliže je vybraný odběratel zastaven u data zpracování sestavy, je vyvolána výjimka pro koncové uživatele. Vzorec, který je určen pro tento typ ovládacího prvku pro zpracování, může využít následující zdroje:
 <ul>
 <li>Popisek aplikace Finance and Operations SYS70894, který má následující text:
 <ul>
@@ -549,7 +588,8 @@ Zde je vzorec, který lze vytvořit: FORMAT (CONCATENATE (@&quot;SYS70894&quot;,
 <td>TRIM (řetězec)</td>
 <td>Vrátí daný text po zkrácení o mezery na začátku a na konci a po odstranění vícenásobných mezer mezi slovy na jednu mezeru. </td>
 <td><strong>TRIM ("     Ukázkový     text     ")</strong> vrátí hodnotu <strong>"Ukázkový text".</strong></td>
-=======
+</tr>
+<tr class="odd">
 <td>GETENUMVALUEBYNAME (cesta zdroje dat výčtu, text popisku hodnoty výčtu)</td>
 <td>Vrátí hodnotu zadaného zdroje dat výčtu podle zadaného textu tohoto popisku výčtu.</td>
 <td>Následující příklad ukazuje výčet ReportDirection zavedený v datovém modelu. Pro hodnoty výčtu jsou definovány popisky.

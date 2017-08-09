@@ -15,13 +15,13 @@ ms.custom: 1714054
 ms.assetid: 79a1a3b9-3a36-4162-8839-ec39b5e26602
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 5ab19faddedae8cf61222762714609601b0ae96f
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: cacf48bc10be5c06154816c2f9951ab4bbaee1c1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,7 +35,7 @@ Toto téma poskytuje přehled možností migrace produktů a řízení skladů v
 Během upgradu na aplikaci Finance and Operations jsou blokovány produkty, pokud mají přidruženou skupinu dimenzí úložiště, která obsahuje nastavení nesplňující požadavky na nastavení skupiny dimenze úložiště dané aplikací Finance and Operations. Po upgradu však můžete možnosti sady migrace v procesu **změnit skupinu dimenzí úložiště položek** použít k odblokování produktů, které byly zablokovány během upgradu. Poté můžete zpracovávat transakce k těmto produktům. Některé položky mohou již souviset se skupinami dimenze úložiště, kde jsou aktivní a fyzicky sledované dimenze Pracoviště, Sklad a Místo. V takovém případě můžete použít proces **Změnit skupinu dimenze úložiště položek**, aby bylo možné používat tyto položky v procesech správy skladu. Tato funkce je užitečná, pokud chcete použít funkci správy skladu pro existující položky.
 
 ## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Upgrade na Finance and Operations při použití aplikace AX 2012 R3 WMSII
-Finance and Operations již nepodporuje zastaralý modul **WMSII** aplikace Microsoft Dynamics AX 2012. Místo toho můžete použít nový modul **Řízení skladu**. Další informace naleznete v tématu [Domovská stránka pro řízení skladu](https://ax.help.dynamics.com/en/wiki/warehouse-management/). V předchozích verzích bylo možné vybírat dimenze Místo a ID palety pro finančních zásoby. V rámci procesu upgradu však již nelze dimenzi zásob ID palety povolit pro finanční zásoby. Všechny produkty, které jsou přidružené ke skupině dimenzí úložiště, jež používá dimenzi zásob ID palety, bude zablokována a nebude zpracována.
+Finance and Operations již nepodporuje zastaralý modul **WMSII** aplikace Microsoft Dynamics AX 2012. Místo toho můžete použít nový modul **Řízení skladu**. V předchozích verzích bylo možné vybírat dimenze Místo a ID palety pro finančních zásoby. V rámci procesu upgradu však již nelze dimenzi zásob ID palety povolit pro finanční zásoby. Všechny produkty, které jsou přidružené ke skupině dimenzí úložiště, jež používá dimenzi zásob ID palety, bude zablokována a nebude zpracována.
 
 ### <a name="enabling-items-in-finance-and-operations"></a>Povolení položek v aplikaci Finance and Operations
 
@@ -70,7 +70,7 @@ Než bude možné použít vydané produkty v modulu **Řízení skladu**, musí
 1.  Vytvořte alespoň jeden nový profil skladového místa
 2.  Klikněte na **řízení skladu** &gt; **Nastavení** &gt; **Povolit procesy řízení skladu** &gt; **Povolit nastavení skladu**.
 3.  Na stránce **Povolit nastavení skladu** přidejte sklady, které mají být povoleny. Tento krok můžete dokončit přímo na stránce nebo pomocí integrace aplikace Microsoft Office.
-4.  Přiřadíte profil skladového místa všem skladovým místům. Tento krok můžete snadno dokončit pomocí integrace aplikace Microsoft Office přímo na stránce. Můžete exportovat a importovat data nebo použít zpracování datové entity v modulu [Správa dat](https://ax.help.dynamics.com/en/wiki/data-management-and-integration-through-data-entity/).
+4.  Přiřadíte profil skladového místa všem skladovým místům. Tento krok můžete snadno dokončit pomocí integrace aplikace Microsoft Office přímo na stránce. Můžete exportovat a importovat data nebo použít zpracování datové entity v modulu [Správa dat](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities).
 5.  Ověřte změny. V rámci procesu ověření probíhají různá ověření integrity dat. V rámci rozsáhlejšího procesu upgradu může být nutné upravit problémy, které nastanou, ve zdrojové implementaci. V tomto případě bude vyžadován další upgrade dat.
 6.  Zpracujte změny.
 
@@ -81,7 +81,7 @@ Než bude možné použít vydané produkty v modulu **Řízení skladu**, musí
 3.  Na stránce **Hierarchie rezervací** definujte novou hierarchii rezervací podle skupiny skladu a dimenzí sledování.
 4.  Vytvořte jednu nebo více skupin klasifikace jednotek, které obsahují přinejmenším stejné jednotky, jaké se používají pro skladové položky.
 5.  Klikněte na **Řízení skladu** &gt; **Nastavení** &gt; **Povolit procesy řízení skladu** &gt; **Změnit skupinu dimenzí úložiště pro položky**.
-6.  Na stránce **Změnit skupinu dimenzí úložiště položek** přidejte čísla položky, skupiny dimenze úložiště a skupiny klasifikace jednotek. Tento krok můžete dokončit přímo na stránce pomocí integrace Microsoft Office nebo procesu entity dat v modulu [Správa dat](https://ax.help.dynamics.com/en/wiki/data-management-and-integration-through-data-entity/).
+6.  Na stránce **Změnit skupinu dimenzí úložiště položek** přidejte čísla položky, skupiny dimenze úložiště a skupiny klasifikace jednotek. Tento krok můžete dokončit přímo na stránce pomocí integrace Microsoft Office nebo procesu entity dat v modulu [Správa dat](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities).
 7.  Ověřte změny. V rámci procesu ověření probíhají různá ověření integrity dat. V rámci rozsáhlejšího procesu upgradu může být nutné upravit problémy, které nastanou, ve zdrojové implementaci. V tomto případě bude vyžadován další upgrade dat.
 8.  Zpracujte změny. Aktualizace všech dimenzí zásob může chvíli trvat. Průběh můžete sledovat pomocí úkolů dávkové úlohy můžete sledovat.
 

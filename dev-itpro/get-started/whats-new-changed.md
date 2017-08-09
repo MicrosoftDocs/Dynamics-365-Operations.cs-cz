@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.search.scope: Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 27141
 ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-08-30
+ms.search.validFrom: 2016-08-30T00:00:00.000Z
 ms.dyn365.ops.version: Platform update 2
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: a65de22d01d15510c3f2cb792b86e6a88260bed9
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 2044bd5a3c858fb099fa7f612ede9963acc51efb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -34,9 +34,10 @@ Tato stránka obsahuje odkazy na témata, které můžete pomoci k získání in
 
 Informace o tom, jak upgradovat na nejnovější verzi, uvádí téma [Proces upgradu na poslední aktualizaci](../migration-upgrade/upgrade-latest-update.md).
 
-## <a name="application-releases"></a>Verze aplikace
+> [!NOTE]
+> Aplikace Dynamics 365 for Operations (místní) se v současnosti přejmenovává. V průběhu komunikace a v průvodcích licencování budou uváděny odkazy na aplikaci Dynamics 365 for Operations (místní). Název v produktu, který se zobrazí při nasazování produktu, je Dynamics 365 for Finance and Operations, Enterprise Edition. Oba názvy odkazují na stejný výrobek.
 
-Další informace o mobilních pracovních prostorech a nedávno vydaném obsahu Power BI získáte v tématu [Nedávno uvolněné mobilní pracovní prostory pro mobilní aplikaci Dynamics 365 for Finance and Operations](../mobile-apps/mobile-workspaces-released.md) a [Nedávno uvolněný obsah Power BI pro aplikaci Dynamics 365 for Finance and Operations](../analytics/power-bi-home-page.md)
+## <a name="application-releases"></a>Verze aplikace
 
 <table>
 <colgroup>
@@ -57,9 +58,9 @@ Další informace o mobilních pracovních prostorech a nedávno vydaném obsahu
 </thead>
 <tbody>
 <tr class="even">
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, edice Enterprise</td>
 <td>Aktualizace z července 2017</td>
-<td>X</td>
+<td>7.2.11792.56024</td>
 <td>2017. června</td>
 <td><a href="whats-new-application-July-2017-update.md">Co je nového nebo co se změnilo v aktualizaci Dynamics 365 for Finance and Operations, Enterprise edition z července 2017</a></td>
 </tr>
@@ -108,9 +109,9 @@ Další informace o mobilních pracovních prostorech a nedávno vydaném obsahu
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, edice Enterprise</td>
 <td>Aktualizace platformy 8</td>
-<td>X</td>
+<td>7.0.4565.16212</td>
 <td>2017. června</td>
 <td><a href="whats-new-platform-update-8.md">Co je nového nebo co se změnilo v aktualizaci Dynamics 365 for Finance and Operations, Enterprise edition, aktualizace 8 platformy (červenec 2017)</a></td>
 </tr>
