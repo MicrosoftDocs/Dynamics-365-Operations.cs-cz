@@ -10,20 +10,20 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 35b8e510e7e2c13aebb73f46d20b16275d097432
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 1f12e8e82430c79ee93f2284e5fdf47ac559525d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -121,11 +121,15 @@ Režijní náklady odkazují k probíhajícím výdajům na provozní náklady. 
 -   Daně
 -   Provozní náklady
 
-**Přidělení nákladů**
+**Distribuce nákladů**
 
-Přidělení nákladů je proces přiřazování a přidělování nákladů, který je založen na základních příčinách společných nákladů. Částky nákladů a množství přidělujete z jednoho objektu nákladů k jinému či k několika dalším objektům nákladů. Například: všechny náklady na služby v zařízení jsou přidělovány k různým oddělením, která používající společnou kancelářskou budovu.
+Distribuce nákladů se používá k rozdělení nákladů z jednoho objektu nákladů na jeden nebo více dalších objektů nákladů použitím příslušného základu přidělení. Distribuce nákladů a přidělení nákladů se liší v tom, že k distribuci nákladů dochází vždy na úrovni primárního prvku nákladů původních nákladů.
 
-**Zásady přidělení nákladů**
+**Přidělování nákladů**
+
+Přidělení se používá k přidělení zůstatku objektu nákladů do jiných objektů nákladů použitím základu přidělení. Aplikace Finance and Operations podporuje reciproční metodu přidělování. V metodě vzájemného přidělení jsou plně rozpoznány vzájemné služby, které si vyměňují pomocné objekty nákladů. Systém automaticky určí provádění přidělení ve správném pořadí. Zůstatek objektu nákladů je přidělen jedním základem přidělení. Je podporováno přidělování napříč dimenzemi objektů nákladů a jejich příslušných členů. Pořadí přidělení je řízeno jednotkou řízení nákladů.
+
+**Politika přidělování nákladů**
 
 Zásady přidělování nákladů definují částky a množství, která musí být přiřazena. Pravidla přiřazování zahrnují pravidla přidělování zdrojů, které určují náklady, které jsou přiděleny, a pravidla cíle přidělení, které určují, které náklady jsou přidělovány. Například: Všechny náklady na služby v zařízení jsou zdrojem přidělení, který lze přidělit k různým oddělením v rámci společnosti (to znamená k cílům přidělení).
 

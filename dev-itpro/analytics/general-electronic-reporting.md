@@ -11,19 +11,18 @@ ms.technology:
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: cebd1b6f041e18c2e016142aba7447bf813f570b
-ms.openlocfilehash: f6327b339441f2f1f6d4e557e45d085685245a08
+ms.translationtype: HT
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: b9ad00b4157d1f732a8f2400712c94a92a17b273
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/19/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -34,7 +33,7 @@ ms.lasthandoff: 06/19/2017
 
 Toto téma poskytuje přehled o nástroji Elektronické výkaznictví (ER). Zahrnuje informace o klíčových konceptech, scénářích, které EV podporuje, a vyjmenovává formáty, které jsou navržené a vydané jako součást řešení.
 
-Elektronické výkaznictví (ER) je nástroj, který slouží ke konfiguraci formátů pro příchozí i odchozí elektronické dokumenty v souladu s právními požadavky různých zemí a oblastí. EV umožňuje spravovat tyto formáty během jejich životního cyklu. Můžete například přijímat nové právní požadavky nebo generovat obchodní dokumenty v požadovaném formátu pro elektronickou výměnu informací s orgány veřejné správy, bankami a jinými stranami.
+ER je nástroj, který slouží ke konfiguraci formátů pro příchozí i odchozí elektronické dokumenty v souladu s právními požadavky různých zemí a oblastí. EV umožňuje spravovat tyto formáty během jejich životního cyklu. Můžete například přijímat nové právní požadavky nebo generovat obchodní dokumenty v požadovaném formátu pro elektronickou výměnu informací s orgány veřejné správy, bankami a jinými stranami.
 
 Modul EV je zaměřen na obchodní uživatele, nikoli na vývojáře. Vzhledem k tomu, že místo kódu konfigurujete formáty, jsou procesy vytváření a úpravy formátů pro elektronické dokumenty rychlejší a jednodušší.
 
@@ -43,8 +42,8 @@ ER v současné době podporuje formáty listů TEXT, XML, Microsoft Word a OP
 ## <a name="capabilities"></a>Schopnosti
 Modul EV má následující možnosti:
 
-- S jedním společným nástrojem pro elektronické vykazování v různých doménách nahrazuje více než 20 různých modulů pro provádění určitého druhu elektronického vykazování pro aplikaci Microsoft Dynamics 365 for Operations.
-- Izoluje formát výkazu od aktuální implementace Dynamics 365 for Operations. Jinými slovy – formát je použitelný pro různé verze aplikace Dynamics 365 for Operations.
+- S jedním společným nástrojem pro elektronické vykazování v různých doménách nahrazuje více než 20 různých modulů pro provádění určitého druhu elektronického vykazování pro aplikaci Microsoft Dynamics 365 for Finance and Operations.
+- Izoluje formát výkazu od aktuální implementace aplikace Finance and Operations. Jinými slovy – formát je použitelný pro různé verze aplikace Finance and Operations.
 - Podporuje vytváření vlastního formátu, který je založen na původním formátu. Nabízí také funkce pro automatické upgradování vlastního formátu při změně původního formátu kvůli požadavkům na lokalizaci nebo přizpůsobení.
 - Stane se primárním standardním nástrojem pro podporu lokalizace požadavků v elektronických sestavách – pro společnost Microsoft i pro její partnery.
 - Podporuje možnost pro distribuci formátu pro partnery a zákazníky pomocí aplikace Microsoft Dynamics Lifecycle Services (LCS).
@@ -59,7 +58,8 @@ EV podporuje dva typy komponentů: **Datový model** a **Formát**.
 Komponenta datového modelu je abstraktní reprezentací datové struktury. Slouží k popisu konkrétní oblasti obchodní domény s dostatečným množstvím podrobností, aby byly splněny požadavky na výkazy pro tuto doménu. Součást modelu dat se skládá z následujících částí:
 
 - Datový model jako sada obchodních entit konkrétní domény a hierarchicky strukturované definice vztahů mezi nimi.
-- Mapování modelu spojující vybrané zdroje dat aplikace Dynamics 365 for Operations s jednotlivými prvky datového modelu, který při spuštění určuje tok dat a pravidla naplnění obchodních dat do součásti modelu dat.
+- Mapování modelu spojující vybrané zdroje dat aplikace Finance and Operations s jednotlivými prvky datového modelu, který při spuštění určuje tok dat a pravidla naplnění obchodních dat do součásti modelu dat.
+
 Kontejner (záznam) představuje obchodní entitu modelu dat. Vlastnosti obchodní entity jsou reprezentovány položkami dat (pole). Každá datová položka má jedinečný název, štítek, popis a hodnotu. Hodnota pro každou datovou položku může být určena tak, aby byla rozpoznána jako řetězec, celé číslo, reálné číslo, datum, výčet, logická hodnota a podobně. Kromě toho může být jiným záznamem nebo seznamem záznamů.
 
 Jedna komponenta datového modelu může obsahovat několik hierarchií obchodních entit pro konkrétní doménu. Může také obsahovat mapování modelu, která podporují v operačním čase tok dat pro konkrétní sestavu. Hierarchie se mohou lišit podle jednotlivých záznamů, který byly vybrány jako kořen mapování modelu. Například datový model oblasti domény platby může podporovat následující mapování:
@@ -71,17 +71,18 @@ Všimněte si, že obchodní entity (například společnost a platební transa
 
 Mapování modelu, které podporuje odchozí elektronické dokumenty, má tyto funkce:
 
-- Může využívat různé typy dat aplikace Dynamics 365 for Operations jako zdroje dat pro datový model. Například může používat tabulky, datové entity, metody nebo výčty.
+- Může využívat různé typy dat aplikace Finance and Operations jako zdroje dat pro datový model. Například může používat tabulky, datové entity, metody nebo výčty.
 - Podporuje vstupní parametry uživatele lze definovat jako datové zdroje modelu dat, když je při spuštění nutné zadat některá data.
-- Podporuje transformaci dat aplikace Dynamics 365 for Operations do požadovaných skupin. Umožňuje také filtrování, řazení a sčítání dat a připojování logických vypočítaných polí určených pomocí vzorců (podobně jako v aplikaci Microsoft Excel) jako na následujícím obrázku. Další informace najdete v tématu [Návrhář receptur elektronického výkaznictví](general-electronic-reporting-formula-designer.md).
+- Podporuje transformaci dat aplikace Finance and Operations do požadovaných skupin. Umožňuje také filtrování, řazení a sčítání dat a připojování logických vypočítaných polí určených pomocí vzorců (podobně jako v aplikaci Microsoft Excel) jako na následujícím obrázku. Další informace najdete v tématu [Návrhář receptur elektronického výkaznictví](general-electronic-reporting-formula-designer.md).
 
 [![Návrhář receptur](./media/ER-overview-01.png)](./media/ER-overview-01.png) 
 
 Mapování modelu, které podporuje příchozí elektronické dokumenty, má tyto funkce:
 
-- Může používat různé aktualizovatelné datové prvky aplikace Dynamics 365 for Operations jako cíle. K těmto datovým prvkům patří tabulky, datové entity a zobrazení. Data lze aktualizovat pomocí dat z příchozích elektronických dokumentů. V jednom mapování modelu lze použít více cílů.
+- Může používat různé aktualizovatelné datové prvky jako cíle. K těmto datovým prvkům patří tabulky, datové entity a zobrazení. Data lze aktualizovat pomocí dat z příchozích elektronických dokumentů. V jednom mapování modelu lze použít více cílů.
 - Podporuje vstupní parametry uživatele lze definovat jako datové zdroje modelu dat, když je při spuštění nutné zadat některá data.
-Pro každou doménu je určena komponenta datového modelu, kterou je třeba používat jako jednotný zdroj dat pro vykazování, který izoluje výkaznictví od fyzické implementace datových zdrojů aplikace Dynamics 365 for Operations. Představuje obchodní koncepce a funkce konkrétní domény ve formě, která zvyšuje efektivitu úvodní struktury formátu výkaznictví a usnadňuje jeho další údržbu.
+
+Pro každou doménu je určena komponenta datového modelu, kterou je třeba používat jako jednotný zdroj dat pro vykazování, který izoluje výkaznictví od fyzické implementace datových zdrojů. Představuje obchodní koncepce a funkce konkrétní domény ve formě, která zvyšuje efektivitu úvodní struktury formátu výkaznictví a usnadňuje jeho další údržbu.
 
 #### <a name="format-components-for-outgoing-electronic-documents"></a>Komponenty formátu pro odchozí elektronické dokumenty
 
@@ -133,32 +134,32 @@ Komponenty EV podporují správu verzí je podporována. Následující workflow
 
 Verze ve stavu **Dokončeno** nebo **Sdíleno** jsou k dispozici pro další výměnu dat. U komponenty s těmito stavy můžete provádět následující akce:
 
-- Komponentu lze serializovat do formátu XML a exportovat z aplikace Dynamics 365 for Operations jako soubor ve formátu XML.
-- Komponentu lze reserializovat ze souboru XML a importovat do aplikace Dynamics 365 for Operations jako novou verzi komponenty ER.
+- Komponentu lze serializovat do formátu XML a exportovat z aplikace Dynamics AX jako soubor ve formátu XML.
+- Komponentu lze reserializovat ze souboru XML a importovat do aplikace Finance and Operations jako novou verzi komponenty ER.
 
 #### <a name="component-date-effectivity"></a>Datum platnosti komponenty
 
-Verze komponent ER platí k určitému datu. Určením hodnoty data **Platné od** lze u komponenty ER určit datum, kdy komponenta začne platit v procesech vykazování. Datum relace aplikace Microsoft Dynamics 365 for Operations slouží k definování, zda komponenta je platná pro spuštění. Poslední verze slouží k procesu vykazování při více než jedné platné verzi pro konkrétní datum.
+Verze komponent ER platí k určitému datu. Určením hodnoty data **Platné od** lze u komponenty ER určit datum, kdy komponenta začne platit v procesech vykazování. Datum relace aplikace Finance and Operations slouží k definování, zda komponenta je platná pro spuštění. Poslední verze slouží k procesu vykazování při více než jedné platné verzi pro konkrétní datum.
 
 #### <a name="component-access"></a>Přístup komponent
 
-Přístup ke komponentám formátu EV závisí na nastavení ISO kódu země/oblasti. Pokud je toto nastavení pro vybranou verzi konfigurace formátu prázdné, k součásti formátu lze přistupovat z libovolné společnosti aplikace Dynamics 365 for Operations v době běhu. Pokud toto nastavení obsahuje ISO kódy země/oblasti, je komponenta formátu přístupná ze společností Dynamics 365 for Operations, jejichž primární adresa je definována pro jednu komponentu formátu ISO kódu země/oblasti.
+Přístup ke komponentám formátu EV závisí na nastavení ISO kódu země/oblasti. Pokud je toto nastavení pro vybranou verzi konfigurace formátu prázdné, k součásti formátu lze přistupovat z libovolné společnosti v době běhu. Pokud toto nastavení obsahuje ISO kódy země/oblasti, je komponenta formátu přístupná pouze ze společností, jejichž primární adresa je definována pro jednu komponentu formátu ISO kódu země/oblasti.
 
 Různé verze součástí formátu data mají pravděpodobně různá nastavení ISO kódů země/oblasti.
 
 #### <a name="configuration"></a>Konfigurace
 
-Konfigurace ER představuje obálku určité komponenty ER. Komponenta může být komponentou datového modelu nebo formátu. Konfigurace může obsahovat různé verze komponenty ER. Každá konfigurace je označena jako vlastněná určitou konfigurací poskytovatele. Verzi **Koncept** komponenty konfigurace lze upravit po zvolení vlastníka konfigurace jako aktivního poskytovatele v nastavení ER v aplikaci Dynamics 365 for Operations.
+Konfigurace ER představuje obálku určité komponenty ER. Komponenta může být komponentou datového modelu nebo formátu. Konfigurace může obsahovat různé verze komponenty ER. Každá konfigurace je označena jako vlastněná určitou konfigurací poskytovatele. Verzi **Koncept** komponenty konfigurace lze upravit po zvolení vlastníka konfigurace jako aktivního poskytovatele v nastavení ER v aplikaci Finance and Operations.
 
 Každá konfigurace modelu obsahuje komponentu datového modelu. Z konkrétní konfigurace datového modelu lze odvodit novou konfiguraci formátu. Ve stromu konfigurace se vytvořená konfigurace formátu zobrazí jako podřazená položka původní konfigurace datového modelu.
 
 Vytvořená konfigurace formátu obsahuje komponentu formátu. Komponenta datového modelu původní konfigurace modelu bude automaticky vložena do komponenty formátu z podřazené konfigurace formátu jako výchozí datový zdroj.
 
-Konfigurace EV je sdílená pro společnosti aplikace Dynamics 365 for Operations.
+Konfigurace ER je sdílená pro společnosti aplikace Finance and Operations.
 
 #### <a name="provider"></a>Zprostředkovatel
 
-Poskytovatel EV je identifikací strany, která se používá k označení autora (vlastníka) každé konfigurace EV. EV umožňuje spravovat seznam zprostředkovatelů konfigurace. Konfigurace formátu vydané pro elektronické dokumenty jako součást řešení Dynamics 365 for Operations jsou označeny jako vlastněné poskytovatelem konfigurace **Microsoft**.
+Poskytovatel EV je identifikací strany, která se používá k označení autora (vlastníka) každé konfigurace EV. EV umožňuje spravovat seznam zprostředkovatelů konfigurace. Konfigurace formátu vydané pro elektronické dokumenty jako součást řešení Finance and Operations jsou označeny jako vlastněné poskytovatelem konfigurace **Microsoft**.
 
 Chcete-li zjistit, jak zaregistrovat nového poskytovatele ER, přehrajte si průvodce záznamem úloh **Elektronické výkaznictví – vytvoření poskytovatele konfigurace a jeho označení jako aktivního** (součást obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**).
 
@@ -166,11 +167,11 @@ Chcete-li zjistit, jak zaregistrovat nového poskytovatele ER, přehrajte si pr�
 
 Úložiště EV obsahuje konfigurace EV. Aktuálně jsou podporovány dva typy úložišť ER: **provozní prostředky** a **projekty LCS**.
 
-Úložiště typu **provozní prostředek** poskytuje přístup k seznamu konfigurací, které společnost Microsoft jako poskytovatel konfigurace ER vydává v rámci řešení Dynamics 365 for Operations. Tyto konfigurace lze importovat do aktuální instance aplikace Dynamics 365 for Operations a používat pro elektronické sestavy. Můžete je používat i pro další lokalizace a přizpůsobení.
+Úložiště typu **Provozní prostředky** poskytuje přístup k seznamu konfigurací, které společnost Microsoft jako poskytovatel konfigurace ER vydává v rámci řešení Finance and Operations. Tyto konfigurace lze importovat do aktuální instance aplikace Finance and Operations a používat pro elektronické sestavy. Můžete je používat i pro další lokalizace a přizpůsobení.
 
-Úložiště **projektu LCS** poskytuje přístup k seznamu konfigurací určitého projektu LCS (knihovny majetku projektu LCS), který byl vybrán ve fázi registrace úložiště. ER umožňuje odesílat sdílené konfigurace z aktuální instance aplikace Dynamics 365 for Operations do určitého úložiště **projektu LCS**. Můžete také importovat konfigurace z úložiště **projektu LCS** do aktuální instance aplikace Dynamics 365 for Operations.
+Úložiště **projektu LCS** poskytuje přístup k seznamu konfigurací určitého projektu LCS (knihovny majetku projektu LCS), který byl vybrán ve fázi registrace úložiště. ER umožňuje odesílat sdílené konfigurace z aktuální instance aplikace Finance and Operations do určitého úložiště **projektu LCS**. Můžete také importovat konfigurace z úložiště **projektu LCS** do aktuální instance aplikace Finance and Operations.
 
-Požadovaná úložiště **LCS projektu** lze registrovat pro jednotlivé poskytovatele konfigurace jednotlivě z aktuální instance aplikace Dynamics 365 for Operations. Každé úložiště může být určeno konkrétnímu poskytovateli konfigurace.
+Požadovaná úložiště **LCS projektu** lze registrovat pro jednotlivé poskytovatele konfigurace jednotlivě z aktuální instance aplikace Finance and Operations. Každé úložiště může být určeno konkrétnímu poskytovateli konfigurace.
 
 ## <a name="supported-scenarios"></a>Podporované scénáře
 ### <a name="building-a-data-model"></a>Vytvoření datového modelu
@@ -204,7 +205,7 @@ ER obsahuje modul návrháře mapování modelu, který umožňuje uživatelům 
 K seznámení se s tímto scénářem podrobněji si přehrajte průvodce úkoly **Elektronické vykazování – definování mapování modelů a výběr zdrojů dat** a **Elektronické vykazování – namapování datového modelu na vybrané zdroje dat** (součástí obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**).
 
 ### <a name="configuring-data-model-mappings-for-incoming-documents"></a>Konfigurace mapování datového modelu u příchozích dokumentů
-ER obsahuje modul návrháře mapování modelu, který umožňuje uživatelům mapovat navržené datové modely na konkrétní cíle. Je například možné mapovat datové modely na komponenty aktualizovatelných dat aplikace Dynamics 365 for Operations (tabulky, datové entity a zobrazení). Na základě mapování, se data aplikace Dynamics 365 for Operations se aktualizují v operačním čase pomocí dat z datového modelu. Jako abstraktní úložiště formátu ER se datový model vyplní daty importovanými z příchozího elektronického dokumentu. Následující obrázek znázorňuje příklad tohoto typu mapování datového modelu. V tomto příkladu se mapování modelu **Import mapování pro NETS** použije k podpoře importu bankovních výpisů ve formátu NETS pro Norsko.
+ER obsahuje modul návrháře mapování modelu, který umožňuje uživatelům mapovat navržené datové modely na konkrétní cíle. Je například možné mapovat datové modely na komponenty aktualizovatelných dat aplikace Finance and Operations (tabulky, datové entity a zobrazení). Na základě mapování, se data aplikace Finance and Operations se aktualizují v operačním čase pomocí dat z datového modelu. Jako abstraktní úložiště formátu ER se datový model vyplní daty importovanými z příchozího elektronického dokumentu. Následující obrázek znázorňuje příklad tohoto typu mapování datového modelu. V tomto příkladu se mapování modelu **Import mapování pro NETS** použije k podpoře importu bankovních výpisů ve formátu NETS pro Norsko.
 
 [![Příklad datového modelu importu pro NETS](./media/ER-overview-08.png)](./media/ER-overview-08.png)
 
@@ -283,7 +284,7 @@ EV umožňuje vytváření (odvození) nové komponenty z aktuální verze kompo
 
 ### <a name="upgrading-a-format-selecting-a-new-version-of-base-format-rebase"></a>Upgrade formátu výběrem nové verze základního formátu (přeskládání)
 
-EV podporuje schopnost automaticky přijmout změny poslední verze základní komponenty v aktuální verzi konceptu odvozené komponenty. Pro tento proces je používáno označení *přeskladnění*. Například nové regulační změny zavedené v nejnovější verzi formátu importovaných z LCS mohou být automaticky sloučeny do vlastní přizpůsobené verze tohoto formátu elektronického dokumentu. Všechny změny, které nelze automaticky sloučit, jsou považovány za konflikty. Tyto konflikty jsou uvedeny a připraveny pro ruční vyřešení v nástroji Návrhář příslušné součásti. K seznámení se s tímto scénářem v podrobnostech si přehrajte průvodce úkolem **Elektronické vykazování – aktualizace formátu osvojováním jeho nové základní verze** (součástí obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**).
+EV podporuje schopnost automaticky přijmout změny poslední verze základní komponenty v aktuální verzi konceptu odvozené komponenty. Pro tento proces je používáno označení *přeskladnění*. Například nové regulační změny zavedené v nejnovější verzi formátu importovaných z LCS mohou být automaticky sloučeny do vlastní přizpůsobené verze tohoto formátu elektronického dokumentu. Všechny změny, které nelze automaticky sloučit, jsou považovány za konflikty. Tyto konflikty jsou uvedeny a připraveny pro ruční vyřešení v nástroji Návrhář příslušné součásti. K seznámení se s tímto scénářem v podrobnostech si přehrajte průvodce úkolem **Elektronické vykazování – aktualizace formátu osvojováním jeho nové základní verze** (součástí obchodního procesu **7.5.5.3 Získání/vývoj součástí změněných IT služeb/řešení (10683)**).
 
 ## <a name="list-of-er-configurations-that-are-delivered-in-the-finance-and-operations-solution"></a>Seznam konfigurací ER, které jsou k dispozici v řešení Finance and Operations
 | Konfigurace modelu dat pro specifickou doménu: název | Doména                | Konfigurace formátu závislá na modelu dat: název | Popis                                                        |

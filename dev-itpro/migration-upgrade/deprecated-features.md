@@ -3,25 +3,25 @@ title: "Zastaralé funkce"
 description: "Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění."
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: Operations, Platform
+ms.reviewer: sericks
+ms.search.scope: Operations, Platform, UnifiedOperations
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-08-30
+ms.search.validFrom: 2016-08-30T00:00:00.000Z
 ms.dyn365.ops.version: Platform update 6
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3267bd1cbd738b5ced9996fc3b28eee211627591
-ms.openlocfilehash: 8feffb27b5d08a9c90e97ac0d7e00abf0448d0df
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 18274d9ca390ee3d6d463b3a6d67ddc3a39294f8
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/16/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -29,9 +29,10 @@ ms.lasthandoff: 06/16/2017
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění.
+Toto téma popisuje funkce, které byly odebrány z aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, nebo jejichž odebrání je plánováno.
 
-## <a name="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Funkce, které se již nepoužívají v aplikaci Dynamics 365 for Finance and Operations, Enterprise edition, aktualizace z července 2017
+## <a name="features-that-have-been-deprecated-for-all-deployment-types-of-the-july-2017-update-with-platform-update-8"></a>Funkce, které byly odepsány pro všechny typy nasazení aktualizace z července 2017 s aktualizací platformoy 8
+Tento seznam zahrnuje funkce, které jsou zastaralé pro nasazení v cloudu a místní nasazení.
 
 ### <a name="warehouse-mobile-devices-portal"></a>Portál skladu pro mobilní zařízení
 
@@ -40,7 +41,7 @@ Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, urč
 |                                  |                                                 |
 |----------------------------------|-------------------------------------------------|
 | **Důvod pro zrušení**       | Duplicitní funkce.                        |
-| **Nahrazeno jinou funkcí?** | Ano. Tato funkce byla nahrazena aplikací Finance and Operations - Warehousing. Další informace o nastavení a požadavcích naleznete v tématu [Instalace a konfigurace aplikace Microsoft Dynamics 365 for Finance and Operations - Warehousing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Nahrazeno jinou funkcí?** | Ano. Tato funkce byla nahrazena aplikací Finance and Operations - Warehousing. Další informace o nastavení a požadavcích naleznete v tématu [Instalace a konfigurace aplikace Microsoft Dynamics 365 for Finance and Operations - Warehousing](/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Ovlivněné moduly**             | Řízení skladu, Správa přepravy |
 
 ### <a name="advanced-bank-reconciliation-matching-rule-for-manual-matching"></a>Pravidlo párování rozšířeného odsouhlasení banky pro ruční párování
@@ -62,6 +63,28 @@ Aplikace pro tablety Windows 8 poskytovala funkci pro zadání a schválení vý
 | **Důvod pro zrušení**       | Finance and Operations je kompatibilní s tablety. Aplikace pro tablety již není požadována. |
 | **Nahrazeno jinou funkcí?** | Č.                                                                                      |
 | **Ovlivněné moduly**             | Správa výdajů                                                                       |
+
+## <a name="features-that-have-been-deprecated-for-on-premises-deployments-of-the-july-2017-update-with-platform-update-8"></a>Funkce, které byly odepsány pro místní nasazení aktualizace z července 2017 s aktualizací platformy 8
+
+### <a name="ssrs-report-viewer-control"></a>Kontrola prohlížeče sestav SSRS
+
+Tato funkce byla použita pro interakci se sestavami ve formátu HTML ve webovém klientovi Finance and Operations.
+
+|                                  |  |
+|----------------------------------|--|
+| **Důvod pro zrušení**       | SQL Reporting Services (SSRS) nepodporuje kontrolu prohlížeče sestav, která je nekompatibilní s místním webovým klientem.      |
+| **Nahrazeno jinou funkcí?** | Sestavy jsou místní službou vykresleny jako dokumenty PDF. Použít rozšíření pro povolení vložených odkazů na podrobné procházení v aplikačních sestavách. |
+| **Ovlivněné moduly**             | Vše    |
+
+### <a name="document-routing-agent"></a>Agent pro směrování dokumentů
+
+Klienta Agent směrování dokumentu se používá jako brána služby pro připojování z cloudu do síťových tiskáren ověřovaných z cloudu do domény.
+
+|                                  |  |
+|----------------------------------|--|
+| **Důvod pro zrušení**       | Místní nasazení jsou hostována na serverech ověřovaných doménou. To síťovým tiskárnám nabízí přímý zabezpečený přístup k síti. |
+| **Nahrazeno jinou funkcí?** | Tato součást není nutná pro místní nasazení.|
+| **Ovlivněné moduly**             | Neomezeno               |
 
 
 <a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Funkce, které jste již nepoužívají v Dynamics 365 for Operations 1611 po aktualizaci platformy 3
@@ -488,11 +511,20 @@ Tento nástroj byl použit k integraci klíčových dat z aplikace Microsoft Dyn
 
 Datové oddíly poskytují logické oddělení dat v databázi aplikace Microsoft Dynamics AX.
 
-|                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   |   |
+|---|---|
 | Důvod pro zrušení       | Datové oddíly byly zavedeny v aplikaci Microsoft Dynamics AX 2012 R2 a umožňují izolaci dat. V běžné situaci má společnost pobočky a data z jedné dceřiné společnosti by neměla být viditelná pro jiné dceřiné společnosti, přestože obě pobočky jsou spravovány ve stejném oddělení IT. Nicméně by byly vyžadovány dodatečné skripty a další správní režie v celém programu pro vytvoření nových oddílů, naplnění je daty a zálohování data oddílu. V cloudu, kde máte přístup k databázové službě Platforma jako služba (PaaS – Microsoft Azure SQL Database), je mnohem efektivnější použít databázi pro izolační kontejner, než provádět izolaci v programu. Bez ohledu na to, zda je rozdělení dat požadované pro dceřiné společnosti, pro více klientů nebo pouze pro škálování, věříme, že situace je možné vyřešit efektivněji s využitím více databází nebo instancí aplikace Dynamics AX. |
-| Nahrazeno jinou funkcí? | Datové oddíly budou v budoucí verzi nahrazeny prostřednictvím podpory více databází nebo instancí aplikace Dynamics AX.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Ovlivněné moduly             | Vše                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Nahrazeno jinou funkcí? | Datové oddíly budou v budoucí verzi nahrazeny prostřednictvím podpory více databází nebo instancí aplikace Dynamics AX.    |
+| Ovlivněné moduly             | Vše  |
+
+### <a name="database-and-file-share-storage-for-attachments"></a>Úložiště databáze a sdílené složky souborů pro přílohy
+Povolené úložiště příloh v databázi a sdílených složkách souborů povolené v Microsoft Dynamics AX 2012. Ani jedna z těchto možností již není podporována.
+
+|                              |                                        |
+|------------------------------|----------------------------------------|
+| Důvod pro zrušení       | Úložiště sdílených složek souborů již není podporováno, protože prostředí hostovaná v cloudu nemohou komunikovat s místními sdílenými souborovými složkami. Databáze úložiště je zastaralá a nahradilo ji úložiště Azure Blob. Úložiště Azure Blob odpovídá úložišti v databázi, protože dokumenty jsou přístupné pouze pro formuláře klientů Dynamics 365 for Finance and Operations. To zajišťuje další výhodu poskytování úložiště, které negativně neovlivňuje výkonnost databáze. Úložiště objektů blob je výchozí mechanismus úložiště pro správu dokumentů a funguje okamžitě. |
+| Nahrazeno jinou funkcí? | Databáze úložiště je zastaralá a nahradilo ji úložiště Azure Blob.       |
+| Ovlivněné moduly             | Vše                   |
 
 ### <a name="delimitation"></a>Vymezení
 
@@ -525,7 +557,7 @@ V aplikaci Dynamics AX 2012 R3 se Retail Modern POS připojoval přímo k datab�
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Důvod pro zrušení       | Namísto lokalizované funkce se nyní používá obecná funkce.                                                                                                                                                                 |
-| Nahrazeno jinou funkcí? | Ano, tato funkce byla nahrazena funkcí Rozšířené odsouhlasení banky. Kromě toho je v další aktualizaci aplikace Dynamics AX naplánována implementace importu výpisů z účtu camt.053 ISO20022 pro Hlavní deník. |
+| Nahrazeno jinou funkcí? | Ano, tato funkce byla nahrazena funkcí Rozšířené odsouhlasení banky. |
 | Ovlivněné moduly             | Vše                                                                                                                                                                                                                                   |
 
 ### <a name="ebilanz-xbrl-for-germany"></a>eBilanz (XBRL pro Německo)
@@ -577,7 +609,7 @@ Verifikační transakce nelze generovat pomocí dávky, ale mohou být generová
 |                              |                                                                                                                                                                                                                                                                                                |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Důvod pro zrušení       | Formát se již v Německu nepoužívá, protože byl nahrazen funkcí Jednotná oblast pro platby v eurech (SEPA).                                                                                                                                                                 |
-| Nahrazeno jinou funkcí? | Ano, tato funkce byla nahrazena exportem plateb SEPA a rozšířenou funkcí odsouhlasení banky pro import výpisů z účtu. Kromě toho je v další aktualizaci aplikace Dynamics AX naplánována implementace importu výpisů z účtu camt.053 ISO20022 pro Hlavní deník. |
+| Nahrazeno jinou funkcí? | Ano, tato funkce byla nahrazena exportem plateb SEPA a rozšířenou funkcí odsouhlasení banky pro import výpisů z účtu. |
 | Ovlivněné moduly             | Vše                                                                                                                                                                                                                                                                                            |
 
 ### <a name="german-dtazv-payment-format"></a>Německý formát platby DTAZV
@@ -593,7 +625,7 @@ Verifikační transakce nelze generovat pomocí dávky, ale mohou být generová
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Důvod pro zrušení       | Namísto lokalizované funkce se nyní používá obecná funkce.                                                                                                                                                                 |
-| Nahrazeno jinou funkcí? | Ano, tato funkce byla nahrazena funkcí Rozšířené odsouhlasení banky. Kromě toho je v další aktualizaci aplikace Dynamics AX naplánována implementace importu výpisů z účtu camt.053 ISO20022 pro Hlavní deník. |
+| Nahrazeno jinou funkcí? | Ano, tato funkce byla nahrazena funkcí Rozšířené odsouhlasení banky. |
 | Ovlivněné moduly             | Vše                                                                                                                                                                                                                                   |
 
 ### <a name="german-xml-eu-sales-list"></a>Německé souhrnné hlášení (EU) ve formátu XML

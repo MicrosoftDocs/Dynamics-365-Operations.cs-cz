@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b0aefc62f2d54da963f03dc74d492260722cd451
-ms.openlocfilehash: aabb8277218895566edada3c74d99c02a83dae1e
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: cbd099403f48b502ca74bcb38ae12decedb8f2da
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/15/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,7 +36,7 @@ Modul **Spolupráce s dodavateli** je zaměřen na dodavatele, kteří nemají i
 
 Další informace o tom, jak mohou dodavatelé používat spolupráci s dodavateli v procesech fakturace, uvádí téma [Pracovní prostor fakturace dodavatelské spolupráce](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace). Informace o zřizování nových uživatelů pro spolupráci s dodavateli uvádí téma [Správa uživatelů dodavatelské spolupráce](manage-vendor-collaboration-users.md).
 
-Další informace o tom, jak mohou dodavatelé používat spolupráci s dodavateli v procesech fakturace, uvádí téma [Pracovní prostor fakturace dodavatelské spolupráce](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace). 
+Další informace o tom, jak mohou dodavatelé používat spolupráci s dodavateli v procesech fakturace, uvádí téma [Pracovní prostor fakturace dodavatelské spolupráce](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace). 
 
 Informace o zřizování nových uživatelů pro spolupráci s dodavateli uvádí téma [Správa uživatelů dodavatelské spolupráce](manage-vendor-collaboration-users.md).
 
@@ -196,12 +196,16 @@ Pokud povolíte správu změn pro nákupní objednávky, nákupní objednávky p
 
 Pokud je povolena Správa změn, následující tabulka zobrazuje příklad změn stavu a verze, kterou objednávka může projít. Verze je registrována po schválení nákupní objednávky, nikoliv když je nákupní objednávka odeslána dodavateli nebo potvrzena.
 
-|                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                             |
-|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Akce**                                                                                                    | **Stav a verze**                                                                                                                                                                                                                                                                                                                                                                      |
-| Počáteční verze nákupní objednávky je vytvořena v aplikaci Finance and Operations.                                      | Stav majetku je **Koncept**.                                                                                                                                                                                                                                                                                                                                                                    |
-
-| Nákupní objednávka je odeslána do schvalovacího procesu. (Proces schvalování je interní proces, do kterého není dodavatel zapojen.) | Stav se změnil z **Koncept** na **Při kontrole** na **Schválení**, pokud nákupní objednávka není v průběhu procesu schvalování zamítnuta. Schválená nákupní objednávka je registrována jako verze.                                                                                                                                                                                                                     | | Nákupní objednávka je odeslána dodavateli                                                                                  |  Verze je zaregistrovaná v rozhraní spolupráce dodavatele a stav se změní na **Na externí kontrole**.                                                                                                                                                                                                                                                                       | | Můžete provést změny požadované dodavatelem, a to ručně nebo pomocí akce v rámci odpovědi na aktualizaci nákupní objednávky.                                                       | Stav je změněn zpět na **Koncept**.                                                                                                                                                                                                                                                                                                                                                    | | Nákupní objednávka je odeslána do schvalovacího procesu.                                                            | Stav je změněn z hodnoty **Koncept** na **Na kontrole** a na **Schválení**, pokud nákupní objednávky není během procesu schvalování zamítnuta. Alternativně systém lze nakonfigurovat tak, aby změny konkrétního pole nevyžadovaly opětovné schválení. V tomto případě se stav nejprve změní na **Koncept**, a pak se automaticky aktualizuje na **Schváleno**. Schválená nákupní objednávka je registrována jako nová verze. | | Odešlete novou verzi nákupní objednávky dodavateli.                                                             | Nová verze je registrována v rozhraní spolupráce dodavatele a stav se změní na **Na externí kontrole**.                                                                                                                                                                                                                                                                   | | Dodavatel schválí novou verzi nákupní objednávky.                                                                | Stav se změní na **Potvrzeno** buď automaticky nebo když obdržíte odpověď od dodavatele a poté potvrdíte nákupní objednávku.                                                                                                                                                                                                                                                     |
+|                                                                          |                                                                                                                                                              |
+|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Akce**                                                               | **Stav a verze**                                                                                                                                       |
+| Počáteční verze nákupní objednávky je vytvořena v aplikaci Finance and Operations.      | Stav majetku je **Koncept**.  |
+| Nákupní objednávka je odeslána do schvalovacího procesu. (Schvalovací proces je interním procesem, do kterého dodavatel nevstupuje.)                                                           | Stav je změněn z hodnoty **Koncept** na **Na kontrole** a na **Schválení**, pokud nákupní objednávka není během procesu schvalování zamítnuta. Schválená nákupní objednávka je registrována jako verze.           | 
+| Nákupní objednávka je odeslána dodavateli.                                                            | Verze je registrována v rozhraní spolupráce dodavatele a stav se změní na **Na externí kontrole**.      |
+| Provedete změny požadované dodavatelem ať už manuálně nebo použitím akce v odpovědi na aktualizaci nákupní objednávky.                                                            | Stav je opět změněn na **Koncept**.     |
+|Nákupní objednávka je opět odeslána do schvalovacího procesu.                                                |  Stav je změněn z hodnoty **Koncept** na **Na kontrole** a na **Schválení**, pokud nákupní objednávka není během procesu schvalování zamítnuta. Alternativně systém lze nakonfigurovat tak, aby změny konkrétního pole nevyžadovaly opětovné schválení. V tomto případě se stav nejprve změní na **Koncept**, a pak se automaticky aktualizuje na **Schváleno**. Schválená nákupní objednávka je registrována jako nová verze.                                         |
+|Odešlete novou verzi nákupní objednávky dodavateli.                                                |  Nová verze je registrována v rozhraní spolupráce dodavatele a stav se změní na **Na externí kontrole**.                                         |
+|Dodavatel schválí novou verzi nákupní objednávky.                                                |  Stav se změní na **Potvrzeno** buď automaticky nebo když obdržíte odpověď od dodavatele a poté potvrdíte nákupní objednávku. |
 
 ## <a name="share-information-about-consignment-inventory"></a>Sdílení informací o zásobách
 Pokud používáte zásoby na skladě, dodavatelé mohou použít rozhraní spolupráce dodavatele k zobrazení informací na následujících stránkách:

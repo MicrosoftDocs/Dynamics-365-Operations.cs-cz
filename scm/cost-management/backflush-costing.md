@@ -18,13 +18,12 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: e520c292b7350f332649f23fb4232e7ecd191776
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.translationtype: HT
+ms.sourcegitcommit: 9ea9eb66abf7898ce735e1204259fcc9b9523c52
+ms.openlocfilehash: 404803c6317b2aeda78de86d4ba11987b2a8cf65
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,7 +34,7 @@ ms.lasthandoff: 06/13/2017
 
 Toto téma představuje koncept zpětného účtování nákladů používané pro Lean manufacturing. 
 
-Výpočet nákladů pro Lean manufacturing umožňuje výrobnímu toku použití metody akumulace nákladů, která je označována jako zpětného účtování nákladů. V metodě zpětného účtování nákladů jsou akumulovány přímé materiály, které jsou spotřebovány v účtu nákladů výrobního toku nedokončené výroby (NV). Používá se skupina modelu zásob pro standardní náklady. Produkty, které jsou přijaty z výrobního toku, jsou odečteny od nedokončené výroby na standardní náklady. Hlavní rozdíl mezi zpětným účtováním nákladů a standardními náklady spočívá v tom, že pro zpětné účtování nákladů nebudou odchylky vypočteny na kanban nebo dokončený produkt. Místo toho se odchylky vypočítávají pro výrobní tok za období. Tato metoda představuje skutečně štíhlý koncept pro vykazování spotřeby materiálu. Vyhrazená vyskladněná množství materiálu nejsou vykazována do kanbanu nebo výrobní zakázky. Místo toho jsou pro daný výrobní tok připraveny úplné dávky nebo manipulační jednotky. Po zaregistrování dávek nebo manipulačních jednotek jako prázdných jsou deklarovány jako spotřebované. Může být použita rozšířená spotřeba, v závislosti na [konfiguraci výrobního toku](http://ax.help.dynamics.com/en/wiki/lean-manufacturing-modeling-the-lean-organization/). Než budou organizace moci použít rozšířenou spotřebu, musí umožnit rozplynutí materiálu v NV výrobního toku. Periodické zpětné účtování nákladů určuje efektivní hodnotu nedokončené výroby na konci období. Toto určení vychází z manipulačních jednotek kanbanu a stavu kanbanové úlohy. Odchylky mezi hodnotami platnosti a skutečnými hodnotami NV na nákladovou skupinu a položku jsou zaúčtovány a zobrazí se jako odchylky.
+Výpočet nákladů pro Lean manufacturing umožňuje výrobnímu toku použití metody akumulace nákladů, která je označována jako zpětného účtování nákladů. V metodě zpětného účtování nákladů jsou akumulovány přímé materiály, které jsou spotřebovány v účtu nákladů výrobního toku nedokončené výroby (NV). Používá se skupina modelu zásob pro standardní náklady. Produkty, které jsou přijaty z výrobního toku, jsou odečteny od nedokončené výroby na standardní náklady. Hlavní rozdíl mezi zpětným účtováním nákladů a standardními náklady spočívá v tom, že pro zpětné účtování nákladů nebudou odchylky vypočteny na kanban nebo dokončený produkt. Místo toho se odchylky vypočítávají pro výrobní tok za období. Tato metoda představuje skutečně štíhlý koncept pro vykazování spotřeby materiálu. Vyhrazená vyskladněná množství materiálu nejsou vykazována do kanbanu nebo výrobní zakázky. Místo toho jsou pro daný výrobní tok připraveny úplné dávky nebo manipulační jednotky. Po zaregistrování dávek nebo manipulačních jednotek jako prázdných jsou deklarovány jako spotřebované. Může být použita rozšířená spotřeba, v závislosti na [konfiguraci výrobního toku](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-modeling-lean-organization). Než budou organizace moci použít rozšířenou spotřebu, musí umožnit rozplynutí materiálu v NV výrobního toku. Periodické zpětné účtování nákladů určuje efektivní hodnotu nedokončené výroby na konci období. Toto určení vychází z manipulačních jednotek kanbanu a stavu kanbanové úlohy. Odchylky mezi hodnotami platnosti a skutečnými hodnotami NV na nákladovou skupinu a položku jsou zaúčtovány a zobrazí se jako odchylky.
 
 ## <a name="configuring-backflush-costing"></a>Konfigurace zpětného účtování nákladů
 Pokud chcete povolit výpočet nákladů, musíte dokončit následující nastavení:

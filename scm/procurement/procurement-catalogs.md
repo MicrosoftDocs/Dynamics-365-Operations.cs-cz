@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 15767a54da25c293bb3d6d5e0a14e7e05a7d730b
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: b94ecf3e173a2a7ce649170b6eff1e16f2626074
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -62,7 +62,7 @@ Katalog definuje, které produkty jsou k dispozici při vytváření nákupních
 |--------------------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Vytvořte nový katalog.                                  | Nákupčí | Při vytváření katalogu je třeba zadat název a popis pro katalog. Také definujete, zda se katalog aktualizuje ručně nebo automaticky, a zadáváte vlastníka katalogu.                                                                                                                                      |
 | Určete, zda jsou produkty k dispozici v katalogu. | Nákupčí | Vzhledem k tomu, že jsou produkty převzaty z kategorií zásobování, všechny se zobrazují v příslušných uzlech katalogu. Můžete určit, zda jsou všechny produkty v uzlu skryté nebo zobrazené, když je katalog použit nákupní žádance. Můžete také určit, zda jednotlivé produkty v uzlu jsou skryté nebo zobrazené. |
-| Publikujte katalog.                                   | Nákupčí | Dříve, než bude katalog k dispozici zaměstnancům pro použití v žádance, musíte definovat pravidlo zásad katalogu pro daný katalogu, nastavit stav katalogu na hodnotu **Aktivní**a katalog pak publikovat. Můžete deaktivovat katalogy, u kterých nechcete, aby byly nadále uživatelům k dispozici.                                              |
+| Publikujte katalog.                                   | Nákupčí | Dříve, než bude katalog k dispozici zaměstnancům pro použití v žádance, musíte definovat pravidlo zásad katalogu pro daný katalogu, nastavit stav katalogu na hodnotu **Aktivní** a katalog pak publikovat. Můžete deaktivovat katalogy, u kterých nechcete, aby byly nadále uživatelům k dispozici.                                              |
 
 Aktualizace jsou publikovány automaticky nebo ručně v závislosti na možnosti vybrané v poli **Výchozí typ aktualizace** na stránce **Katalogy**. K dispozici pro katalogy jsou následujících výchozích typy aktualizace:
 
@@ -74,7 +74,7 @@ Aktualizace jsou publikovány automaticky nebo ručně v závislosti na možnost
 <a name="see-also"></a>Viz také
 --------
 
-[Nastavit hierarchii kategorií zásobování (Průvodce záznamem úloh)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+[Nastavit hierarchii kategorií zásobování (Průvodce záznamem úloh)](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-procurement-category-hierarchy)
 
 
 
