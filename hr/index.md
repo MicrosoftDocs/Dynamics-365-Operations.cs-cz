@@ -15,14 +15,13 @@ ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: 28b5c72a174c7d40fcf1e4c348834fc532b04fcc
+ms.translationtype: HT
+ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
+ms.openlocfilehash: ed80e59579c2356cc3c1e0f13b33026284867a2c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/29/2017
-
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -54,12 +53,15 @@ Při práci s modulem Talent se budete rozhodovat, jak nastavit strukturu organ
 -   [Uspořádání zaměstnanců podle oddělení, prací a pozic](departments-jobs-positions.md)
 -   [Nastavení parametrů lidských zdrojů pro konkrétní společnost](set-up-company-specific-hr-parameters.md)
 -   [Nastavení parametrů lidských zdrojů mezi právnickými osobami](set-up-hr-parameters-across-legal-entities.md) 
+-   [Často kladené dotazy k akcím personálu](personnel-actions-faq.md)
+-   [Přehled pracovního volna a absencí](leave-absence-overview.md)
 
 ## <a name="retain-and-motivate-employees"></a>Udržení a motivace zaměstnanců
 
 Můžete nastavit plány pro efektivní a spravedlivé řízení kompenzací, stejně jako správu položek, jako jsou počítače nebo telefony, které organizace poskytuje zaměstnancům. Je možné vytvářet pevné a variabilní plány kompenzace, jakož i definovat pravidla týkající se plánu kompenzace, která splňují kritéria pro tento plán.
 
 -   [Plány kompenzace](compensation-plans.md)
+-   [Proces kompenzace](process-compensation.md)
 -   [Vytvoření plánů fixní kompenzace](create-fixed-compensation-plans.md)
 -   [Vytvoření plánů variabilní kompenzace](create-variable-compensation-plans.md)
 
