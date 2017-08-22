@@ -1,9 +1,9 @@
 ---
 title: "Jeden doklad se záznamy několika odběratelů nebo dodavatelů"
 description: "Toto téma poskytuje přehled o to, co se stane, když zaúčtujete jeden doklad s více záznamy odběratele nebo dodavatele. Tato funkce nebude podporována v budoucích verzích aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, proto nedoporučujeme využívat tuto metodu účtování z důvodu dopadu účetnictví na zpracování vyrovnání."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,8 +14,8 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 222534
 ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 ms.search.region: global
-ms.author: abruer
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
