@@ -3,7 +3,7 @@ title: "Přehled časově rozlišených položek"
 description: "V tomto článku jsou popsána časová rozlišení a jsou zde také informace o způsobu jejich nastavení a vytvoření transakcí."
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 14131
 ms.assetid: 0489b59a-37a7-4a78-87bf-4b597e9efad9
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5ad5030da963ca961d49e645b1d9ad19453376b8
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 87d9f7fbdbc06a3399a6ec5c2492de0f053b1513
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -47,5 +47,5 @@ Po určení účtů, které chcete použít, můžete určit, jak se číslo dok
 Jakmile vstoupíte do deníku, můžete kliknout na volbu **Časové rozlišení hlavní knihy** v nabídce **Funkce**. Až poté vyberte schéma časového rozlišení, se zobrazí základní částka v deníku, která se rozloží v období podle určení schématu časového rozlišení. Například pokud provádíte platbu pojištění pro zaměstnance na celý rok v lednu a částka je na 12 000, je nutné rozpoznat tyto náklady každý měsíce. Můžete vybrat počáteční datum. Můžete také určit, zda je částka, která je časově rozlišená, založená na účtu nebo protiúčtu. Po provedení výběru klikněte na možnost **Transakce** pro zobrazení všech transakcí, které byly vytvořeny na základě schématu časového rozlišení. Například pokud rozložíte 12 000 ve výdajích pojištění na rok, zobrazí se 1 000 pro každý měsíc. Po zaúčtování deníku můžete zobrazit transakce použitím stránky dotazu **Transakce dokladu**. Pokud schéma časového rozlišení nelze použít (například když se jedná o fakturu prodejní objednávky nebo fakturu nákupní objednávky), můžete připsat předplacenou částku a odepsat částku výdajů. Můžete vybrat **Protiúčet**, když nasazujete schéma časového rozlišení.
 
 
-
+Další informace naleznete v tématu [Vytvoření schémat časového rozlišení](tasks/create-accrual-schemes.md) a [Vytvoření transakcí časového rozlišení hlavní knihy](tasks/create-ledger-accrual-transactions.md).
 

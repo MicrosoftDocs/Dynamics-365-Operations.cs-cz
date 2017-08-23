@@ -3,7 +3,7 @@ title: "Platby DPH a pravidla zaokrouhlení"
 description: "Tento článek vysvětluje princip nastavení pravidla zaokrouhlování v rámci finančních DPH, a zaokrouhlení zůstatku DPH během úlohy Vyrovnat a zaúčtovat DPH."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7ec117598a6a008e5b274179659b515824029874
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 8de01b77fcbeb65321e60614b6a11d264460208f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -65,8 +64,11 @@ Následující tabulka ukazuje, jak je zaokrouhlena částka 98 765,43 pomocí k
 > [!NOTE]                                                                                  
 > Vyberete-li možnost Vlastní výhoda, zaokrouhlení je vždy ve prospěch právnické osoby. 
 
-Další informace naleznete v tématu [Přehled o DPH](indirect-taxes-overview.md). 
-
+Další informace naleznete v následujících tématech:
+- [Přehled DPH](indirect-taxes-overview.md)
+- [Vytvoření platby DPH](tasks/create-sales-tax-payment.md)
+- [Vytváření obchodních transakcí v dokladech](tasks/create-sales-tax-transactions-documents.md)
+- [Zobrazení zaúčtovaných transakcí DPH](tasks/view-posted-sales-tax-transactions.md)
 
 
 

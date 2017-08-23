@@ -1,9 +1,9 @@
 ---
 title: "Konfigurace modulu Pohledávky a Kredit a inkasa"
 description: "Konfigurujte modul Pohledávky a Kredit a inkasa pro sledování faktur a příchozích plateb od odběratelů."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24631
 ms.assetid: 8c1fc7c5-b461-41ed-b102-2648cc58eb0b
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 74556e571c215b0fea8deb061fd968c240b063d4
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 1d37014e8f7b333a15077fc3477808a3ad62b96f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -66,12 +65,12 @@ V následující tabulce jsou uvedeny stránky, které slouží ke konfiguraci a
 |                                                      | Měny                           | Vytvořte a prohlédněte si měny, které vaše organizace používá.                                                                                                                                                                                                                       |
 |                                                      | Směnné kurzy měn              | Vytvořte a udržuje odpovídající směnné kurzy mezi měnou účetnictví a ostatními měnami.                                                                                                                                                                              |
 |                                                      | Mezipodnikové účetnictví              | Vytvoření seznamu účtů, na které může účtovat aktuální právnická osoba. Musíte nastavit debetní a kreditní účty, dále je třeba nastavit deníky druhé právnické osoby, do které budou transakce přijímány.                                                                             |
-|                                                      | Způsob platby – odběratel        | Vytvoření a správa informací o způsobech platby pro odběratele                                                                                                                                                                                                           |
+|                                                      | Způsob platby – odběratel        | Vytvoření a správa informací o způsobech platby pro odběratele Další informace naleznete v tématu [Vytvoření platební metody odběratelů](tasks/establish-customer-method-payment.md).                                                                                             |
 |                                                      | Organizační hierarchie             | Nastavte organizační hierarchii pro centralizované platby.                                                                                                                                                                                                                        |
 |                                                      | Účely organizační hierarchie      | Zadejte účel centralizované platby.                                                                                                                                                                                                                                       |
 |                                                      | Dny platby                         | Definice dnů platby, které se používají pro výpočet data splatnosti pro platby, které jste obdrželi od odběratelů nebo zaslali dodavatelům                                                                                                                                                |
-|                                                      | Platební poplatek                          | Vytvoření a správa platebních poplatků, které souvisejí s odběrateli (například platby za vlastní směnky)                                                                                                                                                                               |
-|                                                      | Nastavení platebních poplatků                    | Nastavení platebních poplatků pro různé kombinace bank, typy úhrad, platebních metod, určení plateb, měn a intervalů dat                                                                                                                              |
+|                                                      | Platební poplatek                          | Vytvoření a správa platebních poplatků, které souvisejí s odběrateli (například platby za vlastní směnky)                                                                                                                                                                         |
+|                                                      | Nastavení platebních poplatků                    | Nastavení platebních poplatků pro různé kombinace bank, typy úhrad, platebních metod, určení plateb, měn a intervalů dat  Další informace naleznete v tématu [Stanovení platebních poplatků odběratelů](tasks/establish-customer-payment-fees.md).                                                                                   |
 |                                                      | Platební kalendáře                    | Vytvoření platebních kalendářů, které můžete použít při plánování splátkových plateb pro odběratele nebo dodavatele                                                                                                                                                                       |
 |                                                      | Určení platby                | Vytvoření a zobrazení kódů specifikace platby pro metodu platby vybranou na stránce Metody platby. Kódy specifikace platby se určují podle dohody s bankou, která je určena pro vybranou metodu platby.                    |
 |                                                      | Text transakce                     | Vytvoření textu transakce pro automatické zaúčtování do hlavní knihy. Texty transakce můžete nastavit v různých jazycích.                                                                                                                                                           |
@@ -83,7 +82,7 @@ V následující tabulce jsou uvedeny stránky, které slouží ke konfiguraci a
 |                                                      | Způsob platby – odběratel        | Vytvoření a správa informací o způsobech platby pro odběratele                                                                                                                                                                                                           |
 |                                                      | Podpis                            | Přidání, provádění změn nebo odstranění souborů obrázku podpisového vzoru, jako jsou například soubory s příponou BMP, JPG nebo GIF. Soubory obrázku podpisu se vytisknou na šeky jako oficiální podpisy právnické osoby.                                                                                                             |
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |
-| Konfigurace statistiky pohledávek           | Definice období pro sledování splatnosti             | Nastavení a správa uživatelských definic pro sledování splatnosti, které slouží k analýze splatnosti účtů odběratelů a dodavatelů na základě zadaného data.                                                                                                         |
+| Konfigurace statistiky pohledávek           | Definice období pro sledování splatnosti             | Nastavení a správa uživatelských definic pro sledování splatnosti, které slouží k analýze splatnosti účtů odběratelů a dodavatelů na základě zadaného data. Další informace naleznete v tématu [Nastavení a generování informací o splatnosti pohledávek](tasks/set-up-accounts-receivable-aging-information.md).                                                           |
 |                                                      | Obchodní statistika                  | Nastavení obchodní statistiky, která vám pomůže při analýze výkonu vaší společnosti                                                                                                                                                                              |
 |                                                      | Statistická data prodeje             | Zobrazení dat v mřížkovém formátu pro vybranou obchodní statistiku                                                                                                                                                                                                                     |
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |

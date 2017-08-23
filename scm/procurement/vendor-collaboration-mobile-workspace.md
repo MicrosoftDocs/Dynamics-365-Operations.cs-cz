@@ -16,10 +16,10 @@ ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
 ms.author: mkirknel
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 9ea9eb66abf7898ce735e1204259fcc9b9523c52
-ms.openlocfilehash: d76b3592ed8274498a7a58c46cc83619f2f668f5
+ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.openlocfilehash: fc8b7f6901ffd5c97fb864dbd3f87c5c70a31487
 ms.contentlocale: cs-cz
 ms.lasthandoff: 07/27/2017
 
@@ -102,10 +102,10 @@ Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Opera
 <td>Dodavatelský uživatel musí mít přístup k webovému rozhraní dodavatelské spolupráce ve webovém klientovi a musí mít nastaveného uživatele pro dodavatelskou spolupráci.</td><td>Nákupní profesionálové a správce systému</td>
 <td>Při nastavování a používání webového rozhraní dodavatelské spolupráce postupujte podle kroků v následujících tématech.
 <ul>
-<li><a href="/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors">Dodavatelská spolupráce s externími dodavateli</a></li>
-<li><a href="/dynamics365/unified-operations/supply-chain/procurement/manage-vendor-collaboration-user">Správa uživatelů dodavatelské spolupráce</a></li>
-<li><a href="/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration">Nastavení a správa dodavatelské spolupráce</a></li>
-<li><a href="/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations">Práce s odběrateli v aplikaci Finance and Operations pomocí dodavatelské spolupráce</a></li>
+<li><a href="vendor-collaboration-work-external-vendors.md">Dodavatelská spolupráce s externími dodavateli</a></li>
+<li><a href="manage-vendor-collaboration-users.md">Správa uživatelů dodavatelské spolupráce</a></li>
+<li><a href="set-up-maintain-vendor-collaboration.md">Nastavení a správa dodavatelské spolupráce</a></li>
+<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Práce s odběrateli v aplikaci Finance and Operations pomocí dodavatelské spolupráce</a></li>
 </ul></td>
 </tr>
 </tbody>

@@ -16,12 +16,12 @@ ms.assetid: 3605eda1-a7ed-4675-8031-5279c5a8f5e4
 ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2dd3db95eb741c37dd8a50c397cb4c9494599250
-ms.openlocfilehash: 993586b1fb46c21d2b68a6060ab897c8ccc76a6c
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 58d36505461ea89bf466209d3da968d1357e58ae
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -131,11 +131,11 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 ## <a name="quickly-enter-expenses-by-using-the-expense-management-mobile-workspace"></a>Rychlé zadání výdajů pomocí mobilního pracovního prostoru správy výdajů
 1. Na svém mobilním zařízení otevřete pracovní prostor **správy výdajů**.
 2. Vyberte **Rychlé zadání výdaje**.
-3. Zvolte kategorii pro výdaje. Zobrazí se seznam kategorií výdajů, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace pro vývojáře najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Není-li vaše kategorie v seznamu, vyberte možnost **Vyhledávat další** k online hledání. Hledejte kategorii výdaje nebo přepněte pro hledání podle typu výdaje.
+3. Zvolte kategorii pro výdaje. Zobrazí se seznam kategorií výdajů, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace pro vývojáře najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Není-li vaše kategorie v seznamu, vyberte možnost **Vyhledávat další** k online hledání. Hledejte kategorii výdaje nebo přepněte pro hledání podle typu výdaje.
 4. Zadejte datum transakce výdaje.
 5. Volitelné: Zadejte obchodníka pro výdaje.
 6. Zadejte částku výdaje.
-7. Vyberte měnu výdaje. Zobrazí se seznam kódů měn, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno až 400 měn, ale vývojář může tento počet změnit. Další informace pro vývojáře najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Není-li vaše měna v seznamu, vyberte možnost **Vyhledávat další** k online hledání. Hledejte podle měny nebo přepněte pro hledání podle názvu.
+7. Vyberte měnu výdaje. Zobrazí se seznam kódů měn, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno až 400 měn, ale vývojář může tento počet změnit. Další informace pro vývojáře najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Není-li vaše měna v seznamu, vyberte možnost **Vyhledávat další** k online hledání. Hledejte podle měny nebo přepněte pro hledání podle názvu.
 8. Vyberte možnost **Pořídit fotografii** nebo **Zvolit obrázek**.
 9. Proveďte jeden z následujících kroků:
 
@@ -166,11 +166,11 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 7. Vyberte jeden nebo více výdajů.
 8. Vyberte **Hotovo**.
 9. Chcete-li do vyúčtování výdajů přidat nový výdaj, vyberte **Nový výdaj**.
-10. Zvolte kategorii pro výdaje. Zobrazí se seznam kategorií výdajů, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace pro vývojáře najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Není-li vaše kategorie v seznamu, vyberte možnost **Vyhledávat další** k online hledání. Hledejte kategorii výdaje nebo přepněte pro hledání podle typu výdaje.
+10. Zvolte kategorii pro výdaje. Zobrazí se seznam kategorií výdajů, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace pro vývojáře najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Není-li vaše kategorie v seznamu, vyberte možnost **Vyhledávat další** k online hledání. Hledejte kategorii výdaje nebo přepněte pro hledání podle typu výdaje.
 11. Volitelné: Zadejte obchodníka pro výdaje.
 12. Zadejte datum transakce výdaje.
 13. Zadejte částku výdaje.
-14. Vyberte měnu výdaje. Zobrazí se seznam kódů měn, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno až 400 měn, ale vývojář může tento počet změnit. Další informace pro vývojáře najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Není-li vaše měna v seznamu, vyberte možnost **Vyhledávat další** k online hledání. Hledejte podle měny nebo přepněte pro hledání podle názvu.
+14. Vyberte měnu výdaje. Zobrazí se seznam kódů měn, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno až 400 měn, ale vývojář může tento počet změnit. Další informace pro vývojáře najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Není-li vaše měna v seznamu, vyberte možnost **Vyhledávat další** k online hledání. Hledejte podle měny nebo přepněte pro hledání podle názvu.
 15. Vyberte **Hotovo**.
 16. Pokud chcete přidat další podrobnosti do výdaje, vyberte **Přidat další podrobnosti**. Pole, která jsou k dispozici, závisí na konfiguraci správy výdajů pro vaši společnost.
 17. Pokud zásady společnosti vyžadují příjem pro výdaj, zaškrtněte políčko **Příjmy** a poté proveďte následující kroky:
@@ -216,12 +216,12 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
         - Pokud jste vybrali možnost **Předchozí hosté**, postupujte následujícím způsobem:
 
-            1. Vyberte jednoho nebo více předchozích hostů. Zobrazí se seznam předchozích hostů, které jste přidali do předchozích vyúčtování výdajů, které jsou načteny do aplikací pro použití v offline režimu. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace pro vývojáře najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Není-li předchozí host v seznamu, vyberte možnost **Vyhledávat další** k online hledání. Hledejte podle jména nebo organizace, země či titulu.
+            1. Vyberte jednoho nebo více předchozích hostů. Zobrazí se seznam předchozích hostů, které jste přidali do předchozích vyúčtování výdajů, které jsou načteny do aplikací pro použití v offline režimu. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace pro vývojáře najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Není-li předchozí host v seznamu, vyberte možnost **Vyhledávat další** k online hledání. Hledejte podle jména nebo organizace, země či titulu.
             2. Vyberte **Hotovo**.
 
         - Pokud jste vybrali **Spolupracovníci**, postupujte následujícím způsobem:
 
-            1. Vyberte jednoho nebo více spolupracovníků. Zobrazí se seznam spolupracovníků, kteří jsou načteni do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace pro vývojáře najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Není-li spolupracovník v seznamu, vyberte možnost **Vyhledávat další** k online hledání. Hledejte podle jména nebo společnosti či titulu.
+            1. Vyberte jednoho nebo více spolupracovníků. Zobrazí se seznam spolupracovníků, kteří jsou načteni do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace pro vývojáře najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Není-li spolupracovník v seznamu, vyberte možnost **Vyhledávat další** k online hledání. Hledejte podle jména nebo společnosti či titulu.
             2. Vyberte **Hotovo**.
 
     3. Chcete-li se vrátit k podrobnostem výdaje, klikněte na tlačítko **Zpět**.
@@ -230,7 +230,7 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
     1. Vyberte první datum k roezpsání.
     2. Vyberte **Přidat rozpis**.
-    3. Vyberte podkategorii pro rozepsání výdaje. Zobrazí se seznam podkategorií výdajů, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace pro vývojáře najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Není-li vaše podkategorie v seznamu, vyberte možnost **Vyhledávat další** k online hledání. Hledejte podle podkategorie výdaje.
+    3. Vyberte podkategorii pro rozepsání výdaje. Zobrazí se seznam podkategorií výdajů, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace pro vývojáře najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Není-li vaše podkategorie v seznamu, vyberte možnost **Vyhledávat další** k online hledání. Hledejte podle podkategorie výdaje.
     4. Zadejte částku transakce pro rozpis.
     5. Upravte datum transakce, pokud musíte.
     6. Vyberte **Hotovo**.

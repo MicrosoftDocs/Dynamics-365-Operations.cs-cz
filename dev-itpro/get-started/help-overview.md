@@ -15,13 +15,13 @@ ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9c083fd26a58e96b3bb810df11eadace184f9dbf
-ms.openlocfilehash: eaa3317acf7df84d06ad3641486df1c096b26a56
+ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
+ms.openlocfilehash: 171d006e20834ea4ad6d5651ec27fc305eac4bc6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -32,10 +32,10 @@ ms.lasthandoff: 07/27/2017
 V tomto článku je uveden přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations. Také je zde vysvětleno, jak můžete poskytnout vlastní dokumentaci a školení pro vaši organizaci. 
 
 > [!NOTE] 
-> Tyto produkty spolu úzce souvisí: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail a Dynamics 365 for Talent. Stejné funkce se mohou objevovat ve všech třech produktech. U témat, která se vztahují především k aplikaci Retail, proto bude uveden název produktu Dynamics 365 for Retail; u témat souvisejících s aplikací Talent bude uveden název Dynamics 365 for Talent a u témat souvisejících se základním produktem bude uveden název Dynamics 365 for Finance and Operations. Témata pro jeden produkt mohou platit pro stejné funkce v souvisejícím produktu.
+> Tyto produkty spolu úzce souvisí: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail a Dynamics 365 for Talent. Stejné funkce se mohou objevovat ve všech třech produktech. U témat, která se vztahují především k aplikaci Retail, proto bude uveden název produktu Dynamics 365 for Retail; u témat souvisejících s aplikací Talent bude uveden název Dynamics 365 for Talent a u témat souvisejících se základním produktem bude uveden název Dynamics 365 for Finance and Operations. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
 
-Systém nápovědy je společný pro všechny produkty platformy Unified Operations:
-- Dynamics 365 for Finance and Operations, edice Enterprise
+Systém nápovědy je společný pro všechny následující produkty:
+- Dynamics 365 for Finance and Operations, Enterprise edition
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
@@ -73,7 +73,7 @@ Obsah lze také vyhledat pomocí libovolného modulu pro vyhledávání. Pro dos
 
 ![Výsledky hledání na webu](./media/site-search-results-2.png)
 
-### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>Obsah docs.microsoft.com pro platformu Unified Operations
+### <a name="the-docsmicrosoftcom-table-of-contents"></a>Obsah docs.microsoft.com
 Všechny produkty mají na stránce dokumentace jednu stránku s obsahem. Uživatelé díky tomu vidí kontext zobrazeného tématu. Je díky tomu také možné najít požadovaná témata pomocí filtrů.
 
 ### <a name="how-can-i-contribute"></a>Jak mohu přispět? 
@@ -101,7 +101,7 @@ Vpravo zadejte e-mailovou adresu a nové heslo k vytvoření nového účtu pro 
 ## <a name="task-guides"></a>Průvodci záznamem úloh
 Průvodce záznamem úloh je kontrolovaný, řízený a interaktivní způsob, který vás provede kroky daného úkolu nebo obchodního procesu. Je možné otevřít (přehrát) Průvodce záznamem úloh v podokně Nápověda. Po prvním kliknutí na Průvodce záznamem úloh se v podokně Nápověda zobrazí podrobné pokyny pro úkol. Nově jsou k dispozici lokalizovaní průvodci záznamem úloh. 
 
-Pro každý produkt platformy Unified Operations zajistíme různé sady průvodců záznamem úloh. Část Přístup k průvodcům záznamem úloh z podokna Nápověda popisuje, jak najít správné průvodce pro daný produkt. 
+Poskytneme různé sady průvodce záznamem úloh pro každý produkt, jake je například Dynamics 365 for Retail, Dynamics 365 for Finance and Operations nebo Dynamics 365 for Talent. Část Přístup k průvodcům záznamem úloh z podokna Nápověda popisuje, jak najít správné průvodce pro daný produkt. 
 
 ![Zobrazení pro čtení Průvodce záznamem úloh](./media/task-guide-ops.png)
 
@@ -169,7 +169,7 @@ Přeložení průvodci záznamem úloh jsou v knihovnách "Všechny jazyky" v n�
 -   Pokud Průvodce záznamem úloh zatím nebyl přeložen, při otevření daného průvodce se zobrazí ve vybraném jazyce pouze některý text (text ovládacích prvků).
 
 ## <a name="additional-resources"></a>Další zdroje
-V následující tabulce jsou uvedeny weby s obsahem pro platformu Unified Operations. Naše weby s obsahem jsou uspořádány pro podporu cyklu odběratele. Každá fáze je podporována jinou sadou webu. Weby s hvězdičkou (\*) u názvu vyžadují přihlášení pomocí účtu, který je přidružen k plánu služby.
+V následující tabulce jsou uvedeny naše weby. Naše weby s obsahem jsou uspořádány pro podporu cyklu odběratele. Každá fáze je podporována jinou sadou webu. Weby s hvězdičkou (\*) u názvu vyžadují přihlášení pomocí účtu, který je přidružen k plánu služby.
 
 | Pracoviště                                                                     | popis                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

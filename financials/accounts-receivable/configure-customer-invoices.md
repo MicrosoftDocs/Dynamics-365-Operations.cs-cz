@@ -1,9 +1,9 @@
 ---
 title: "Vytvoření faktury odběratele"
 description: 
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,14 +14,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 ms.search.region: Global
-ms.author: mfalkner
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fd89921a97782c4d09807a730ab077809304159f
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 249b1f331d6889d3b9ed2ace2e5db21d7a5d3e46
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -30,11 +30,20 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-
-
-**Faktura odběratele pro prodejní objednávku** je účet, který se vztahuje k prodeji a který organizace předává odběrateli. Tento typ faktury odběratele se vytváří na základě prodejní objednávky, která zahrnuje řádky objednávky a čísla položek. Čísla položek jsou specifikována a zaúčtována v hlavní knize. Položky dílčího hlavního deníku nejsou k dispozici pro fakturu odběratele pro prodejní objednávku. 
+**Faktura odběratele pro prodejní objednávku** je účet, který se vztahuje k prodeji a který organizace předává odběrateli. Tento typ faktury odběratele se vytváří na základě prodejní objednávky, která zahrnuje řádky objednávky a čísla položek. Čísla položek jsou specifikována a zaúčtována v hlavní knize. Položky dílčího hlavního deníku nejsou k dispozici pro fakturu odběratele pro prodejní objednávku. Další informace naleznete v tématu [Vytvoření faktur prodejní objednávky](tasks/create-sales-order-invoices.md).
 
 **Faktura s volným textem** nesouvisí s prodejní objednávkou. Obsahuje řádky objednávky zahrnující účty hlavní knihy, textové popisy a vámi zadanou částku prodeje. Číslo položky nelze u tohoto druhu faktury zadat. Je však nutné zadat příslušné informace o DPH. Hlavní účet pro prodej je uveden na každém řádku faktury, který můžete rozdělit do několika účtů hlavní knihy kliknutím na možnost **Distribuovat částky** na stránce **Volná faktura**. Zůstatek odběratele je navíc zaúčtovány do souhrnného účtu z účetního profil, který se používá pro volnou fakturu.
+
+Další informace naleznete zde: 
+
+[Vytvoření volné faktury](tasks/create-free-text-invoice.md)
+
+[Vytvoření volné šablony](tasks/create-free-text-invoice-template.md)
+
+[Přiřazení šablony volné faktury odběrateli](tasks/assign-free-text-invoice-template-customer.md)
+
+[Generování a zaúčtování opakovaných volných faktur](tasks/post-recurring-free-text-invoices.md)
+
 
 **Proforma faktura** je faktura připravená jako odhad skutečných částek faktury před zaúčtováním faktury. Proforma fakturu lze vytisknout buď pro fakturu odběratele pro prodejní objednávku, nebo pro volnou fakturu.
 

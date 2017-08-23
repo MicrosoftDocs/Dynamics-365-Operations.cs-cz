@@ -1,9 +1,9 @@
 ---
-title: "Individuální nastavení prostředí uživatele"
-description: "Tento článek vysvětluje, jakým způsobem lze přizpůsobit aplikaci Microsoft Dynamics 365 for Finance and Operations."
+title: "Přizpůsobení uživatelského prostředí"
+description: "Toto téma vysvětluje, jakým způsobem lze přizpůsobit aplikaci Microsoft Dynamics 365 for Finance and Operations."
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
 ms.author: tlefor
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b338a930777a5945eb6318dc8066fb3649c79dbe
+ms.translationtype: HT
+ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.openlocfilehash: dbc80ff756a5286a98489f1f1403959d9b18ebe6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 
@@ -31,28 +31,28 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek vysvětluje, jakým způsobem lze přizpůsobit aplikaci Microsoft Dynamics 365 for Finance and Operations.
+Toto téma vysvětluje, jakým způsobem lze přizpůsobit aplikaci Microsoft Dynamics 365 for Finance and Operations.
 
 K dispozici je více typů přizpůsobení v aplikaci Microsoft Dynamics 365 for Finance and Operations. Některá přizpůsobení jsou výběry, které byly vytvořeny v seznamu voleb na stránce nastavení. Některá přizpůsobení jsou implicitní, například že aplikace Finance and Operations uchovává informace o šířce sloupců mřížky, upravíte-li je a rozbalíte a sbalíte stav pevné záložky. Jiná přizpůsobení jsou explicitní. Pro explicitní přizpůsobení zadejte režim interaktivního přizpůsobení a upravte vzhled stránky přímo řízením způsobu, jakým se elementy zobrazují či reagují na stránce. 
 
 Všechna individuální nastavení kteréhokoli typu, které uživatel v aplikaci Finance and Operations udělá, jsou určeny pouze pro daného uživatele, bez ohledu na společnost, se kterou uživatel pracuje. Změny, které uživatel provede na stránce neovlivní ostatní uživatelé v systému.
 
 ## <a name="systemwide-options-for-the-current-user"></a>Systémové možnosti pro aktuálního uživatele
-Navigační panel obsahuje obrázek ozubeného kola, který se nazývá tlačítko nabídky **Nastavení**. Při otevírání nabídky **Nastavení** se zobrazí počet voleb. Při výběru **Možnosti** se uživateli otevře stránka **Možnosti**. Zde naleznete těchto čtyřech možnosti karet: **Vizuální vlastnosti**, **Předvolby**, **Účet** a **Workflow**.
+Navigační panel obsahuje obrázek ozubeného kola, který se nazývá tlačítko nabídky **Nastavení**. Při otevírání nabídky **Nastavení** se zobrazí počet voleb. Při výběru **Možnosti** se uživateli otevře stránka **Možnosti**. Najdete zde tyto čtyři karty s možnostmi: 
 
--   **Vizuální vlastnosti:** Vyberte motiv barvy a výchozí velikost prvků vašich stránek.
--   **Předvolby:** Zde můžete vybrat výchozí hodnoty pokaždé, když otevřete aplikaci Finance and Operations včetně společnosti, úvodní stránky a výchozího režim zobrazení/úprav (určující, zda je stránka uzamčena pro zobrazení nebo otevření k úpravám při každém otevření). Naleznete zde také jazyk, časové pásmo a datum, čas a možnosti formátu čísel. Nakonec tato stránka obsahuje číslo různých předvoleb, které se liší od dílčí verze.
--   **Účet:** Je používán k poskytování ID uživatele a ostatních možností vztahujících se k účtu.
--   **Workflow:** Zde volíte možnosti týkající se workflowu.
+-   **Vizuální** - Vyberte motiv barvy a výchozí velikost prvků na svých stránkách.
+-   **Předvolby** - Zde můžete vybrat výchozí hodnoty pokaždé, když otevřete aplikaci Finance and Operations včetně společnosti, úvodní stránky a výchozího režim zobrazení/úprav (určující, zda je stránka uzamčena pro zobrazení nebo otevření k úpravám při každém otevření). Naleznete zde také jazyk, časové pásmo a datum, čas a možnosti formátu čísel. Nakonec tato stránka obsahuje číslo různých předvoleb, které se liší od dílčí verze.
+-   **Účet**- Je používán k poskytování ID uživatele a ostatních možností vztahujících se k účtu.
+-   **Workflow**- Zde volíte možnosti týkající se workflowu.
 
 ## <a name="implicit-personalizations"></a>Implicitní individuální nastavení
 Implicitní individuální nastavení jsou ta přizpůsobení, která provádíte pouhou spoluprací s některými ovládací prvky, které pamatují jejich aktuální viditelný stav. 
 
-**Sloupce mřížky:** Šířku sloupce v seznamu můžete upravit výběrem na ukazateli velikosti vlevo nebo vpravo od záhlaví a jeho posunem doleva nebo doprava na požadovanou šířku. Aplikace Finance and Operations uloží požadovanou šířku a zobrazí tento sloupec této šířky při každém otevření stránky se seznamem. 
+**Sloupce mřížky** - Šířku sloupce v seznamu můžete upravit výběrem na ukazateli velikosti vlevo nebo vpravo od záhlaví a jeho posunem doleva nebo doprava na požadovanou šířku. Aplikace Finance and Operations uloží požadovanou šířku a zobrazí tento sloupec této šířky při každém otevření stránky se seznamem. 
 
-**Pevné záložky:** Některé stránky mají možnost rozbalení oddílů, kterým se říká pevné záložky. Finance and Operations si ukládá, kterou pevnou záložku jste rozbalili a kterou sbalili. Vždy, když se vrátíte na stránku, stejné pevné záložky bude rozbalené nebo sbalené podle jejich posledního použití. V tomto článku si vysvětlíme, jak změnit pořadí oddílů pevných záložek. V některých případech sbalení pevné záložky můžete zvýšit výkon, protože aplikace Finance and Operations nebude muset načítat informace o dané pevné záložce, dokud záložka nebude rozbalena. 
+**Pevné záložky** - Některé stránky mají možnost rozbalení oddílů, kterým se říká pevné záložky. Finance and Operations si ukládá, kterou pevnou záložku jste rozbalili a kterou sbalili. Vždy, když se vrátíte na stránku, stejné pevné záložky bude rozbalené nebo sbalené podle jejich posledního použití. V tomto článku si vysvětlíme, jak změnit pořadí oddílů pevných záložek. V některých případech sbalení pevné záložky můžete zvýšit výkon, protože aplikace Finance and Operations nebude muset načítat informace o dané pevné záložce, dokud záložka nebude rozbalena. 
 
-**Okna s fakty:** Některé stránky obsahují oddíl s názvem podokna oken s fakty. Toto podokno obsahuje jen informace pro čtení související s aktuálním předmětem stránky. Každý oddíl v podokně okna s fakty se nazývá okno s fakty. Můžete rozbalit nebo sbalit pole faktů a aplikace Finance and Operations uloží vaše preference. V některých případech sbalení okna s fakty můžete zvýšit výkon, protože aplikace Finance and Operations nebude muset načítat informace o daném okně s fakty, dokud okno nebude rozbaleno.
+**Okna s fakty** - Některé stránky obsahují oddíl s názvem podokna oken s fakty. Toto podokno obsahuje jen informace pro čtení související s aktuálním předmětem stránky. Každý oddíl v podokně okna s fakty se nazývá okno s fakty. Můžete rozbalit nebo sbalit pole faktů a aplikace Finance and Operations uloží vaše preference. V některých případech sbalení okna s fakty můžete zvýšit výkon, protože aplikace Finance and Operations nebude muset načítat informace o daném okně s fakty, dokud okno nebude rozbaleno.
 
 ## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Explicitní přizpůsobení za použití panelu nástrojů přizpůsobení.
 Každý osoba a společnost má jinou perspektivu, která data jsou pro ně nejdůležitější, nebo která data nejsou potřebná pro způsob, jakým spouštějí svá obchodní data. Možnost přizpůsobit způsob, jak je objednaná vaše informace, jak vzájemně působí, nebo dokonce jakým způsobem je skrytá, je klíčem k tvorbě osobního a výrobního prostředí aplikace Finance and Operations. 
@@ -107,15 +107,20 @@ Některé pracovní prostory obsahují počet dlaždic (dlaždice s číslicemi)
 Řídicí panel je často první stránkou, která se zobrazí při otevření aplikace Finance and Operations. Můžete přizpůsobit řídicí panel k přejmenování vašich navigačních dlaždic pracovního prostoru, aby byly zobrazeny pouze dlaždice, které chcete zobrazit, přejmenovány dlaždice nebo uspořádány v pořadí, v jakém je chcete zobrazit. Nastavení řídicího panelu provedete výběrem dlaždice a klepnutím pravého tlačítka myši otevřete kontextovou nabídku. V kontextové nabídce vyberte **Přizpůsobit**. Pokud vybranou dlaždici chcete skrýt, přejmenovat nebo přeskočit, můžete provést tuto změnu přímo v okně vlastností, které se objevilo. Pokud chcete uspořádat dlaždice, vyberte možnost **Přizpůsobit tento formuláře** v okně Vlastnosti a otevřete panel nástrojů Přizpůsobení. Dlaždice můžete uspořádat pomocí nástroje přesunu.
 
 ## <a name="administration-of-personalization"></a>Správa přizpůsobení
-Poté, co jste přizpůsobili stránku, můžete svá individuální nastavení sdílet s dalšími uživateli. Stačí exportovat přizpůsobenou stránku. Pak můžete požádat ostatní uživatele, aby přešli na přizpůsobenou stránku a importovali přizpůsobený soubor, který jste vytvořili.
+Poté, co jste přizpůsobili stránku, můžete svá individuální nastavení sdílet s dalšími uživateli prostřednictvím exportu přizpůsobené stránky. Pak můžete požádat ostatní uživatele, aby přešli na přizpůsobenou stránku a importovali přizpůsobený soubor, který jste vytvořili.
 
-Uživatelé, kteří mají oprávnění správce, také mohou spravovat přizpůsobení ostatních uživatelů na stránce **Nastavení přizpůsobení**. Tato stránka obsahuje tyto čtyři karty: **Systém**, **Uživatelé**, **Import** a **Vymazat**.
+Uživatelé, kteří mají oprávnění správce, také mohou spravovat přizpůsobení ostatních uživatelů na stránce **Nastavení přizpůsobení**. Tato stránka obsahuje čtyři karty: 
 
 - **Systém:** – Zde můžete dočasně zakázat nebo vypnout veškerá přizpůsobení v systému. V takovém případě neodstraníte přizpůsobení. Místo toho pouze obnovíte všechny stránky na výchozí stav. Pokud později znovu povolíte přizpůsobení, veškerá přizpůsobení budou znovu použita pro stránky všech uživatelů. Můžete také odstranit veškerá individuální nastavení pro všechny uživatele. Všimněte si, že při odstranění přizpůsobení neexistuje žádný způsob znovu automaticky povolit přizpůsobení ze systému. Proto se před provedením tohoto kroku ujistěte, že jste exportovali všechna individuální nastavení, která chcete později importovat.
 - **Uživatelé** – Můžete určit, zda jednotliví uživatelé mohou provádět implicitní přizpůsobení nebo explicitní přizpůsobení. Můžete také určit, zda každý uživatel může provést implicitní nebo explicitní individuální nastavení na konkrétní stránce. Nakonec můžete pro každého uživatele importovat, exportovat nebo odstranit přizpůsobení.
 - **Import** – můžete importovat přizpůsobení pro jednoho nebo více uživatelů. Tuto kartu použijte po vytvoření přizpůsobení na stránce nebo v pracovním prostoru a následném exportu tohoto přizpůsobení v souboru. Pokud chcete importovat soubor přizpůsobení a použít ho u jednoho nebo více uživatelů, vyberte ze seznamu všech uživatelů jednotlivé uživatele nebo je filtrujte podle určité role a vyberte uživatele v dané roli. Po výběru uživatelů, kteří budou používat vaše individuální nastavení, klepněte na tlačítko **Import** a vyberte soubor přizpůsobení. Přizpůsobení bude ověřeno a použito pro všechny vybrané uživatele, když příště otevřou vybrané stránky.
 - **Vymazat** – můžete vymazat přizpůsobení stránky nebo pracovního prostoru pro jednoho nebo více uživatelů. Nejdříve vyberte stránku nebo pracovní prostor ke zrušení přizpůsobení. Poté vyberte ze seznamu všech uživatelů jednotlivé uživatele nebo filtrujte podle určité role a vyberte uživatele v dané roli. Po výběru stránky nebo pracovního prostoru a uživatelů klepněte na tlačítko **vymazat**. Všechna přizpůsobení, která vybraní uživatelé použili u vybrané stránky nebo pracovního prostoru, se smažou. Tuto akci nelze vrátit zpět. Pokud má však stránka nebo pracovní prostor uložené přizpůsobení, lze toto přizpůsobení opět importovat.
 
+## <a name="personalization-of-inventory-dimensions"></a>Přizpůsobení dimenzí zásob
 
+Když si přizpůsobíte nastavení dimenze zásob na stránce, zvažte nastavení, která byla vytvořena pomocí možnosti **Zobrazení dimenzí**. Například když použijete přizpůsobení ke skrytí sloupce pro dimenzi čísla skladové dávky a sloupec se zobrazí při příštím otevření stránky, může to být proto, že nastavení zobrazení dimenze ovládá, které sloupce dimenze zásob se zobrazí. 
 
+Nastavení zobrazení dimenzí platí pro všechny stránky a tato nastavení přepíší všechny individuální nastavení polí dimenze zásob na jednotlivých stránkách. 
+
+Například pomocí dimenze čísla skladové dávky by tato dimenze musela být vymazána jako součást možnosti **Zobrazení dimenzí**, aby tato tabulka nezobrazovala tento sloupec. Tato změna by nakonec neplatila pouze pro jednu konkrétní stránku, ale pro všechny stránky.
 

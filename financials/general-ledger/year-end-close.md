@@ -3,7 +3,7 @@ title: "Roční uzávěrka"
 description: "Toto téma popisuje požadované nastavení a postup pro spuštění procesu roční uzávěrky hlavní knihy."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 50a6a23febc725eb05d30d5db4f97ca699607461
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 4aad946f51c0c9a0a4c0ea1249e6e876cc628e20
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -86,7 +86,7 @@ Pokud chcete stornovat předchozí roční uzávěrku pro vybraný fiskální ro
 
 Proces roční uzávěrky se spustí ve výchozím dávkovém režimu. Spuštění procesu v dávkovém režimu je doporučený postup, umožní totiž uživateli návrat k jiným činnostem. Po dokončení procesu roční uzávěrky se aktualizuje pole **Datum poslední roční uzávěrky** za použití data relace.
 
-Další informace naleznete v tématu [Zavření hlavní knihy na konci období](close-general-ledger-at-period-end.md).
+Další informace naleznete v tématu [Uzavření hlavní knihy na konci obdob](close-general-ledger-at-period-end.md) a [Uzavření fiskálního roku](tasks/close-fiscal-year.md).
 
 
 

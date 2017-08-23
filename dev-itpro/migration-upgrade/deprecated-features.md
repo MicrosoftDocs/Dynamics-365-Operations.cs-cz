@@ -15,13 +15,13 @@ ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-08-30T00:00:00.000Z
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 18274d9ca390ee3d6d463b3a6d67ddc3a39294f8
+ms.sourcegitcommit: 404a6e767036542b0e6ccd84c2dd841d4a602b87
+ms.openlocfilehash: 671210a8d69282864ca4188abd360eefa819ae72
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -31,8 +31,7 @@ ms.lasthandoff: 07/27/2017
 
 Toto téma popisuje funkce, které byly odebrány z aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, nebo jejichž odebrání je plánováno.
 
-## <a name="features-that-have-been-deprecated-for-all-deployment-types-of-the-july-2017-update-with-platform-update-8"></a>Funkce, které byly odepsány pro všechny typy nasazení aktualizace z července 2017 s aktualizací platformoy 8
-Tento seznam zahrnuje funkce, které jsou zastaralé pro nasazení v cloudu a místní nasazení.
+## <a name="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update-with-platform-update-8"></a>Funkce, které se již nepoužívají v aplikaci Dynamics 365 for Finance and Operations, Enterprise edition, aktualizace z července 2017 s platform update 8
 
 ### <a name="warehouse-mobile-devices-portal"></a>Portál skladu pro mobilní zařízení
 
@@ -64,31 +63,8 @@ Aplikace pro tablety Windows 8 poskytovala funkci pro zadání a schválení vý
 | **Nahrazeno jinou funkcí?** | Č.                                                                                      |
 | **Ovlivněné moduly**             | Správa výdajů                                                                       |
 
-## <a name="features-that-have-been-deprecated-for-on-premises-deployments-of-the-july-2017-update-with-platform-update-8"></a>Funkce, které byly odepsány pro místní nasazení aktualizace z července 2017 s aktualizací platformy 8
 
-### <a name="ssrs-report-viewer-control"></a>Kontrola prohlížeče sestav SSRS
-
-Tato funkce byla použita pro interakci se sestavami ve formátu HTML ve webovém klientovi Finance and Operations.
-
-|                                  |  |
-|----------------------------------|--|
-| **Důvod pro zrušení**       | SQL Reporting Services (SSRS) nepodporuje kontrolu prohlížeče sestav, která je nekompatibilní s místním webovým klientem.      |
-| **Nahrazeno jinou funkcí?** | Sestavy jsou místní službou vykresleny jako dokumenty PDF. Použít rozšíření pro povolení vložených odkazů na podrobné procházení v aplikačních sestavách. |
-| **Ovlivněné moduly**             | Vše    |
-
-### <a name="document-routing-agent"></a>Agent pro směrování dokumentů
-
-Klienta Agent směrování dokumentu se používá jako brána služby pro připojování z cloudu do síťových tiskáren ověřovaných z cloudu do domény.
-
-|                                  |  |
-|----------------------------------|--|
-| **Důvod pro zrušení**       | Místní nasazení jsou hostována na serverech ověřovaných doménou. To síťovým tiskárnám nabízí přímý zabezpečený přístup k síti. |
-| **Nahrazeno jinou funkcí?** | Tato součást není nutná pro místní nasazení.|
-| **Ovlivněné moduly**             | Neomezeno               |
-
-
-<a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Funkce, které jste již nepoužívají v Dynamics 365 for Operations 1611 po aktualizaci platformy 3
----------------------------------------------------------------------------------------------
+## <a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Funkce, které jste již nepoužívají v Dynamics 365 for Operations 1611 po aktualizaci platformy 3
 
 ### <a name="aeb-payment-formats-for-spain"></a>AEB formáty plateb pro Španělsko
 
@@ -96,9 +72,9 @@ Pro odesílání souborů úhrad s platbami odběratelů a dodavatelů do banky 
 
 |                              |                                                                          |
 |------------------------------|--------------------------------------------------------------------------|
-| Důvod pro zrušení       | Formáty plateb se již nepoužívají.                                  |
-| Nahrazeno jinou funkcí? | Ano, ISO20022 formáty bezhotovostních převodů a přímých debetních plateb pro Španělsko |
-| Ovlivněné moduly             | Pohledávky, závazky                                    |
+| **Důvod pro zrušení**       | Formáty plateb se již nepoužívají.                                  |
+| **Nahrazeno jinou funkcí?** | Ano, ISO20022 formáty bezhotovostních převodů a přímých debetních plateb pro Španělsko |
+| **Ovlivněné moduly**             | Pohledávky, závazky                                    |
 
 ### <a name="bank-payments-transfer-for-lithuania"></a>Bankovní převod plateb pro Litvu
 
@@ -106,9 +82,9 @@ Bankovní platební převody generované a tisknuté za použití formátu expor
 
 |                              |                                                            |
 |------------------------------|------------------------------------------------------------|
-| Důvod pro zrušení       | Formáty plateb se již nepoužívají.                    |
-| Nahrazeno jinou funkcí? | Ano, Litevský formát platby peněžního převodu ISO20022. |
-| Ovlivněné moduly             | Závazky                                           |
+| **Důvod pro zrušení**       | Formáty plateb se již nepoužívají.                    |
+| **Nahrazeno jinou funkcí?** | Ano, Litevský formát platby peněžního převodu ISO20022. |
+| **Ovlivněné moduly**             | Závazky                                           |
 
 ### <a name="bbs-direkte-remittering-payment-formats-for-norway"></a>Formáty plateb BBS Direkte Remittering pro Norsko
 
@@ -116,9 +92,9 @@ Formáty plateb BBS Direkte Remittering zahrnují export inkasní platby odběra
 
 |                              |                                                                                                                                                                |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Formáty plateb se již nepoužívají.                                                                                                                        |
-| Nahrazeno jinou funkcí? | Formát platby odběratele AvtaleGiro pro Norsko lze využít ke generování zprávy o souhlasu s inkasem. Import zprávy o vrácení bude zahrnut do příštích verzí. |
-| Ovlivněné moduly             | Pohledávky, závazky                                                                                                                          |
+| **Důvod pro zrušení**       | Formáty plateb se již nepoužívají.                                                                                                                        |
+| **Nahrazeno jinou funkcí?** | Formát platby odběratele AvtaleGiro pro Norsko lze využít ke generování zprávy o souhlasu s inkasem. Import zprávy o vrácení bude zahrnut do příštích verzí. |
+| **Ovlivněné moduly**             | Pohledávky, závazky                                                                                                                          |
 
 ### <a name="chart-of-accounts-tool-for-spain"></a>Nástroj účtové osnovy pro Španělsko
 
@@ -126,9 +102,9 @@ Tento nástroj se používá, když účtová osnova ve Španělsku vyžaduje z�
 
 |                              |                |
 |------------------------------|----------------|
-| Důvod pro zrušení       | Omezené použití  |
-| Nahrazeno jinou funkcí? | Žádný             |
-| Ovlivněné moduly             | Hlavní kniha |
+| **Důvod pro zrušení**       | Omezené použití  |
+| **Nahrazeno jinou funkcí?** | Žádný             |
+| **Ovlivněné moduly**             | Hlavní kniha |
 
 ### <a name="dom80-payment-format-for-belgium"></a>Dom80 formát platby pro Belgii
 
@@ -136,9 +112,9 @@ Starý belgický formát platby pro inkaso platby (přímý debet).
 
 |                              |                                                        |
 |------------------------------|--------------------------------------------------------|
-| Důvod pro zrušení       | Formát plateb se již nepoužívá.                  |
-| Nahrazeno jinou funkcí? | Ano, specificky belgický formát inkasní platby ISO 20022. |
-| Ovlivněné moduly             | Pohledávky                                    |
+| **Důvod pro zrušení**      | Formát plateb se již nepoužívá.                  |
+| **Nahrazeno jinou funkcí?** | Ano, specificky belgický formát inkasní platby ISO 20022. |
+| **Ovlivněné moduly**            | Pohledávky                                    |
 
 ### <a name="dtaezag-payment-formats-for-switzerland"></a>DTA/EZAG formáty plateb pro Švýcarsko
 
@@ -146,9 +122,9 @@ Formáty odložených daňových aktiv/EZAG jsou integrovány do systému ESR, j
 
 |                              |                                                              |
 |------------------------------|--------------------------------------------------------------|
-| Důvod pro zrušení       | Formáty plateb se již nepoužívají.                      |
-| Nahrazeno jinou funkcí? | Ano, švýcarský formát platby peněžního převodu ISO20022 |
-| Ovlivněné moduly             | Závazky                                             |
+| **Důvod pro zrušení**       | Formáty plateb se již nepoužívají.                      |
+| **Nahrazeno jinou funkcí?** | Ano, švýcarský formát platby peněžního převodu ISO20022 |
+| **Ovlivněné moduly**             | Závazky                                             |
 
 ### <a name="edifact-dirdeb-payment-format-for-austria"></a>Specificky rakouský formát inkasní platby EDIFACT-DIRDEB.
 
@@ -156,9 +132,9 @@ EDIFACT-DIRDEB formát platby pro inkaso platby (přímý debet).
 
 |                              |                                                        |
 |------------------------------|--------------------------------------------------------|
-| Důvod pro zrušení       | Formát plateb se již nepoužívá.                  |
-| Nahrazeno jinou funkcí? | Ano, specificky rakouský formát inkasní platby ISO 20022. |
-| Ovlivněné moduly             | Pohledávky                                    |
+| **Důvod pro zrušení**       | Formát plateb se již nepoužívá.                  |
+| **Nahrazeno jinou funkcí?** | Ano, specificky rakouský formát inkasní platby ISO 20022. |
+| **Ovlivněné moduly**             | Pohledávky                                    |
 
 ### <a name="edivat-for-belgium"></a>EDIVAT pro Belgii
 
@@ -166,9 +142,9 @@ EDIVAT je starý standard pro elektronické prohlášení prostřednictvím zabe
 
 |                              |                                      |
 |------------------------------|--------------------------------------|
-| Důvod pro zrušení       | Tato funkce se již nepoužívá. |
-| Nahrazeno jinou funkcí? | Žádný                                   |
-| Ovlivněné moduly             | Hlavní kniha                       |
+| **Důvod pro zrušení**       | Tato funkce se již nepoužívá. |
+| **Nahrazeno jinou funkcí?** | Žádný                                   |
+| **Ovlivněné moduly**             | Hlavní kniha                       |
 
 ### <a name="egiro-edifact-cremul-payment-import-format-for-norway"></a>Importní formát platby eGiro EDIFACT CREMUL pro Norsko
 
@@ -176,9 +152,9 @@ eGiro je založeno na mezinárodních standardech SN EDIFACT CREMUL (Multiple Cr
 
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Formát plateb se již nepoužívá.                                                     |
-| Nahrazeno jinou funkcí? | Č. Formát bude nahrazen formátem importu výpisu ISO 20022 v příštích verzích. |
-| Ovlivněné moduly             | Pohledávky                                                                       |
+| **Důvod pro zrušení**       | Formát plateb se již nepoužívá.                                                     |
+| **Nahrazeno jinou funkcí?** | Č. Formát bude nahrazen formátem importu výpisu ISO 20022 v příštích verzích. |
+| **Ovlivněné moduly**             | Pohledávky                                                                       |
 
 ### <a name="external-inventory-for-poland"></a>Externí zásoby v Polsku
 
@@ -186,9 +162,9 @@ Doklad o zboží, který je přijatý od dodavatele pro účely prodeje bez nák
 
 |                              |                                                 |
 |------------------------------|-------------------------------------------------|
-| Důvod pro zrušení       | Nahrazeno jinou funkcí                     |
-| Nahrazeno jinou funkcí? | Ano, základní funkce příchozí zásilky |
-| Ovlivněné moduly             | Závazky, řízení zásob          |
+| **Důvod pro zrušení**       | Nahrazeno jinou funkcí                     |
+| **Nahrazeno jinou funkcí?** | Ano, základní funkce příchozí zásilky |
+| **Ovlivněné moduly**             | Závazky, řízení zásob          |
 
 ### <a name="financial-reports-generator-for-eastern-europe"></a>Generátor finančních sestav pro východní Evropu
 
@@ -196,9 +172,9 @@ Nástroj se používá pro nastavení shromažďování dat pro účetnictví a 
 
 |                              |                                                                                          |
 |------------------------------|------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Omezené použití                                                                            |
-| Nahrazeno jinou funkcí? | Č. Tento nástroj bude nahrazen konfigurací elektronických sestav v budoucích verzích. |
-| Ovlivněné moduly             | Hlavní kniha                                                                           |
+| **Důvod pro zrušení**       | Omezené použití                                                                            |
+| **Nahrazeno jinou funkcí?** | Č. Tento nástroj bude nahrazen konfigurací elektronických sestav v budoucích verzích. |
+| **Ovlivněné moduly**             | Hlavní kniha                                                                           |
 
 ### <a name="import-of-customer-payment-transactions-for-finland"></a>Import transakce plateb odběratelů pro Finsko
 
@@ -206,9 +182,9 @@ Můžete vybrat formát importu pro platby ve Finsku, ve kterém se importují p
 
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Formát plateb se již nepoužívá.                                                     |
-| Nahrazeno jinou funkcí? | Č. Formát bude nahrazen formátem importu výpisu ISO 20022 v příštích verzích. |
-| Ovlivněné moduly             | Pohledávky                                                                       |
+| **Důvod pro zrušení**       | Formát plateb se již nepoužívá.                                                     |
+| **Nahrazeno jinou funkcí?** | Č. Formát bude nahrazen formátem importu výpisu ISO 20022 v příštích verzích. |
+| **Ovlivněné moduly**             | Pohledávky                                                                       |
 
 ### <a name="import-of-payment-transactions-into-a-general-ledger-journal-for-finland"></a>Import platebních transakcí do deníku hlavní knihy pro Finsko
 
@@ -216,9 +192,9 @@ Formát, který je specifický pro Finsko, se používá k importu transakcí ú
 
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Formát plateb se již nepoužívá.                                                     |
-| Nahrazeno jinou funkcí? | Č. Formát bude nahrazen formátem importu výpisu ISO 20022 v příštích verzích. |
-| Ovlivněné moduly             | Pohledávky                                                                       |
+| **Důvod pro zrušení**       | Formát plateb se již nepoužívá.                                                     |
+| **Nahrazeno jinou funkcí?** | Č. Formát bude nahrazen formátem importu výpisu ISO 20022 v příštích verzích. |
+| **Ovlivněné moduly**             | Pohledávky                                                                       |
 
 ### <a name="integration-with-isabel-synchronized-cis-for-belgium"></a>Integrace s Isabel synchronizována (CIS) pro Belgii
 
@@ -226,9 +202,9 @@ Isabel je platforma pro elektronické bankovnictví v Evropě a je de facto stan
 
 |                              |                                                                                                                      |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Integrace s klientem Isabel již není nabízena.                                                                |
-| Nahrazeno jinou funkcí? | Ne. Formáty plateb, které se již nepoužívají, jsou nahrazeny ISO20022 formátem platebního převod platby pro Belgii. |
-| Ovlivněné moduly             | Závazky                                                                                                     |
+| **Důvod pro zrušení**       | Integrace s klientem Isabel již není nabízena.                                                                |
+| **Nahrazeno jinou funkcí?** | Ne. Formáty plateb, které se již nepoužívají, jsou nahrazeny ISO20022 formátem platebního převod platby pro Belgii. |
+| **Ovlivněné moduly**             | Závazky                                                                                                     |
 
 ### <a name="modifications-in-the-chart-of-accounts-and-accounting-rules-for-spain"></a>Změny v účetní osnově a účetních pravidlech pro Španělsko
 
@@ -236,9 +212,9 @@ Tato funkce se používá pro změny v účtové osnově a účetních pravidlec
 
 |                              |                |
 |------------------------------|----------------|
-| Důvod pro zrušení       | Omezené použití  |
-| Nahrazeno jinou funkcí? | Žádný             |
-| Ovlivněné moduly             | Hlavní kniha |
+| **Důvod pro zrušení**       | Omezené použití  |
+| **Nahrazeno jinou funkcí?** | Žádný             |
+| **Ovlivněné moduly**             | Hlavní kniha |
 
 ### <a name="pagamento-fornittori-vendor-payment-format"></a>Formát platby dodavatele Pagamento Fornittori
 
@@ -246,9 +222,9 @@ Starý italský formát platby peněžních převodů.
 
 |                              |                                                        |
 |------------------------------|--------------------------------------------------------|
-| Důvod pro zrušení       | Formát plateb se již nepoužívá.                  |
-| Nahrazeno jinou funkcí? | Ano, italský formát platby peněžního převodu ISO20022. |
-| Ovlivněné moduly             | Závazky                                       |
+| **Důvod pro zrušení**       | Formát plateb se již nepoužívá.                  |
+| **Nahrazeno jinou funkcí?** | Ano, italský formát platby peněžního převodu ISO20022. |
+| **Ovlivněné moduly**             | Závazky                                       |
 
 ### <a name="payment-export-formats-for-estonia"></a>Formáty pro export plateb v Estonsku
 
@@ -256,9 +232,9 @@ Formáty Telehansa a Teleservice se používají pro export bankovních plateb.
 
 |                              |                                                          |
 |------------------------------|----------------------------------------------------------|
-| Důvod pro zrušení       | Formáty plateb se již nepoužívají.                  |
-| Nahrazeno jinou funkcí? | Ano, specificky estonský formát platby peněžního převodu ISO20022. |
-| Ovlivněné moduly             | Závazky                                         |
+| **Důvod pro zrušení**      | Formáty plateb se již nepoužívají.                  |
+| **Nahrazeno jinou funkcí?** | Ano, specificky estonský formát platby peněžního převodu ISO20022. |
+| **Ovlivněné moduly**             | Závazky                                         |
 
 ### <a name="payment-file-archive-for-norway"></a>Archiv souborů plateb pro Norsko
 
@@ -266,9 +242,9 @@ Když dojde ke generování souborů plateb, archiv souborů automaticky archivu
 
 |                              |                                                                    |
 |------------------------------|--------------------------------------------------------------------|
-| Důvod pro zrušení       | Nahrazeno jinou funkcí                                        |
-| Nahrazeno jinou funkcí? | Ano, archivované úlohy elektronického výkaznictví                            |
-| Ovlivněné moduly             | Závazky, pohledávky, správa organizace |
+| **Důvod pro zrušení**       | Nahrazeno jinou funkcí                                        |
+| **Nahrazeno jinou funkcí?** | Ano, archivované úlohy elektronického výkaznictví                            |
+| **Ovlivněné moduly**             | Závazky, pohledávky, správa organizace |
 
 ### <a name="payment-import-formats-for-estonia"></a>Formáty pro import plateb v Estonsku
 
@@ -276,9 +252,9 @@ Formáty Telehansa a TeleTeenus se používají pro import bankovních plateb.
 
 |                              |                                                                                            |
 |------------------------------|--------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Formáty plateb se již nepoužívají.                                                    |
-| Nahrazeno jinou funkcí? | Č. Formáty budou nahrazeny formátem importu výpisu ISO 20022 v příštích verzích. |
-| Ovlivněné moduly             | Pohledávky                                                                        |
+| **Důvod pro zrušení**       | Formáty plateb se již nepoužívají.                                                    |
+| **Nahrazeno jinou funkcí?** | Č. Formáty budou nahrazeny formátem importu výpisu ISO 20022 v příštích verzích. |
+| **Ovlivněné moduly**             | Pohledávky                                                                        |
 
 ### <a name="performance-management-goal-workflow"></a>Pracovní postup cíle řízení výkonnosti
 
@@ -286,9 +262,9 @@ Formáty Telehansa a TeleTeenus se používají pro import bankovních plateb.
 
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Řízení výkonnosti bylo změněno a počet stránek cílů se snížil, aby došlo ke zjednodušení procesu.                 |
-| Nahrazeno jinou funkcí? | Ne. Cíle jsou viditelné pro vedoucí pracovníky pomocí portálu samoobslužných stránek správce a lze je změnit a zobrazit manažerem. |
-| Ovlivněné moduly             | Správa lidského kapitálu                                                                                                 |
+| **Důvod pro zrušení**       | Řízení výkonnosti bylo změněno a počet stránek cílů se snížil, aby došlo ke zjednodušení procesu.                 |
+| **Nahrazeno jinou funkcí?** | Ne. Cíle jsou viditelné pro vedoucí pracovníky pomocí portálu samoobslužných stránek správce a lze je změnit a zobrazit manažerem. |
+| **Ovlivněné moduly**             | Správa lidského kapitálu                                                                                                 |
 
 ### <a name="postgirot-and-postgirot-utland-payment-formats-for-sweden"></a>Formáty platby Postgirot a Postgirot Utland pro Švédsko
 
@@ -296,9 +272,9 @@ Formáty platby Postgirot a Postgirot Utland pro Švédsko.
 
 |                              |                                                         |
 |------------------------------|---------------------------------------------------------|
-| Důvod pro zrušení       | Formáty plateb se již nepoužívají.                 |
-| Nahrazeno jinou funkcí? | Ano, specificky švédský formát platby peněžního převodu ISO20022. |
-| Ovlivněné moduly             | Závazky                                        |
+| **Důvod pro zrušení**       | Formáty plateb se již nepoužívají.                 |
+| **Nahrazeno jinou funkcí?** | Ano, specificky švédský formát platby peněžního převodu ISO20022. |
+| **Ovlivněné moduly**             | Závazky                                        |
 
 ### <a name="radio-frequency-identifier"></a>Radiofrekvenční identifikátor
 
@@ -306,9 +282,9 @@ Radiofrekvenční identifikace (RFID) představuje technologii shromažďování
 
 |                              |                                               |
 |------------------------------|-----------------------------------------------|
-| Důvod pro zrušení       | Málo používáno odběrateli a omezená sada funkcí. |
-| Nahrazeno jinou funkcí? | Žádný                                            |
-| Ovlivněné moduly             | Řízení zásob                          |
+| **Důvod pro zrušení**       | Málo používáno odběrateli a omezená sada funkcí. |
+| **Nahrazeno jinou funkcí?** | Žádný                                            |
+| **Ovlivněné moduly**             | Řízení zásob                          |
 
 ### <a name="report-about-state-invoices-numbering-for-latvia"></a>Zpráva o číslování státních faktur Lotyšska
 
@@ -316,9 +292,9 @@ Lotyšská legislativa poskytuje konkrétní pravidla týkající se číslován
 
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Není už nutné zachovávat číslování státních faktur. Hlášení o použitých číslech faktur již není požadováno. |
-| Nahrazeno jinou funkcí? | Žádný                                                                                                                       |
-| Ovlivněné moduly             | Pohledávky                                                                                                      |
+| **Důvod pro zrušení**       | Není už nutné zachovávat číslování státních faktur. Hlášení o použitých číslech faktur již není požadováno. |
+| **Nahrazeno jinou funkcí?** | Žádný                                                                                                                       |
+| **Ovlivněné moduly**             | Pohledávky                                                                                                      |
 
 ### <a name="set-up-the-names-of-the-manager-and-general-accountant-of-a-company-for-lithuania"></a>Nastavení jmen správce a hlavního účetního společnosti pro Litvu
 
@@ -326,9 +302,9 @@ Jména správce a hlavního účetního společnosti mohou být určena v inform
 
 |                              |                                                                 |
 |------------------------------|-----------------------------------------------------------------|
-| Důvod pro zrušení       | Nahrazeno jinou funkcí                                     |
-| Nahrazeno jinou funkcí? | Ano, nastavení úředních osob lze použít k tomuto účelu.   |
-| Ovlivněné moduly             | Závazky, Pohledávky, Řízení zásob, Pokladna a banka |
+| **Důvod pro zrušení**       | Nahrazeno jinou funkcí                                     |
+| **Nahrazeno jinou funkcí?** | Ano, nastavení úředních osob lze použít k tomuto účelu.   |
+| **Ovlivněné moduly**             | Závazky, Pohledávky, Řízení zásob, Pokladna a banka |
 
 ### <a name="telepay-payment-formats-for-norway"></a>Telepay formáty plateb pro Norsko
 
@@ -336,9 +312,9 @@ Telepay formáty plateb zahrnují exporty plateb dodavatele (převod) a inkasa p
 
 |                              |                                                                                                |
 |------------------------------|------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Formáty plateb se již nepoužívají.                                                        |
-| Nahrazeno jinou funkcí? | Ano, formátu platby platebního převodu ISO20022 a formát platby odběratele AvtaleGiro pro Norsko |
-| Ovlivněné moduly             | Pohledávky, závazky                                                          |
+| **Důvod pro zrušení**       | Formáty plateb se již nepoužívají.                                                        |
+| **Nahrazeno jinou funkcí?** | Ano, formátu platby platebního převodu ISO20022 a formát platby odběratele AvtaleGiro pro Norsko |
+| **Ovlivněné moduly**            | Pohledávky, závazky                                                          |
 
 ### <a name="vendor-payment-export-formats-for-finland"></a>Formáty exportu plateb dodavatele pro Finsko
 
@@ -346,9 +322,9 @@ Existují dva formáty pro export plateb pro Finsko. LM02 (FI) se používá pro
 
 |                              |                                                          |
 |------------------------------|----------------------------------------------------------|
-| Důvod pro zrušení       | Formáty plateb se již nepoužívají.                  |
-| Nahrazeno jinou funkcí? | Ano, finský formát platby peněžního převodu ISO20022 |
-| Ovlivněné moduly             | Závazky                                         |
+| **Důvod pro zrušení**       | Formáty plateb se již nepoužívají.                  |
+| **Nahrazeno jinou funkcí?** | Ano, finský formát platby peněžního převodu ISO20022 |
+| **Ovlivněné moduly**            | Závazky                                         |
 
 ### <a name="workflow-for-creating-goals"></a>Postup pro vytváření cíle
 
@@ -356,18 +332,19 @@ Workflow správy vytvoření cílů zaměstnanců je jednou z několika workflow
 
 |                              |                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Řízení výkonnosti bylo zcela změněno v aplikaci Microsoft Dynamics 365 for Finance and Operations.                                                                                                                                                                                                                                        |
-| Nahrazeno jinou funkcí? | Upravená funkce řízení výkonnosti poskytuje větší kontrolu nad obsahem cílů, měřeními, která se používají ke sledování vývoje, a připojováním podpůrné dokumentace. Cíle lze ukládat jako šablony a pak znovu použít. Tato funkce vám pomůže rychleji nastavit další cíle pro zaměstnance. |
-| Ovlivněné moduly             | Správa lidského kapitálu                                                                                                                                                                                                                                                                                                               |
+| **Důvod pro zrušení**       | Řízení výkonnosti bylo zcela změněno v aplikaci Microsoft Dynamics 365 for Finance and Operations.                                                                                                                                                                                                                                        |
+| **Nahrazeno jinou funkcí?** | Upravená funkce řízení výkonnosti poskytuje větší kontrolu nad obsahem cílů, měřeními, která se používají ke sledování vývoje, a připojováním podpůrné dokumentace. Cíle lze ukládat jako šablony a pak znovu použít. Tato funkce vám pomůže rychleji nastavit další cíle pro zaměstnance. |
+| **Ovlivněné moduly**            | Správa lidského kapitálu                                                                                                                                                                                                                                                                                                               |
 
-## <a name="features-deprecated-in-dynamics-ax-70-releases"></a>Funkce, které se již nepoužívají v aplikaci Dynamics AX ve verzi 7.0
+## <a name="features-that-have-been-deprecated-in-dynamics-ax-70-releases"></a>Funkce, které se již nepoužívají v aplikaci Dynamics AX ve verzi 7.0
+
 ### <a name="ability-to-cancel-changes-to-a-vendor-invoice"></a>Možnost zrušení změn na faktuře dodavatele
 
 |                              |                         |
 |------------------------------|-------------------------|
-| Důvod pro zrušení       | Zvýšení výkonnosti |
-| Nahrazeno jinou funkcí? | Č.                      |
-| Ovlivněné moduly             | Závazky        |
+| **Důvod pro zrušení**       | Zvýšení výkonnosti |
+| **Nahrazeno jinou funkcí?** | Č.                      |
+| **Ovlivněné moduly**            | Závazky        |
 
 ### <a name="aif-axd-and-axbc-integrations"></a>Integrace rozhraní AIF, AxD a AxBC
 
@@ -375,9 +352,9 @@ V rozhraní AIF (Application Integration Framework) mohou být data vyměňován
 
 |                              |                                                                                                                                                                                                          |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Architekturu rozhraní AIF a AxDs nelze škálovat do cloudové služby. Při hromadném importu docházelo k problémům s výkonem.                                                                               |
-| Nahrazeno jinou funkcí? | V aktuální verzi aplikace Dynamics AX je tuto funkce nahrazena architekturou pro import a export dat, která podporuje opakovaný hromadný import/export. U rozhraní AxBC doporučujeme používat skutečné tabulky. |
-| Ovlivněné moduly             | AxDs, AxBCs a AIF                                                                                                                                                                                     |
+| **Důvod pro zrušení**       | Architekturu rozhraní AIF a AxDs nelze škálovat do cloudové služby. Při hromadném importu docházelo k problémům s výkonem.                                                                               |
+| **Nahrazeno jinou funkcí?** | V aktuální verzi aplikace Dynamics AX je tuto funkce nahrazena architekturou pro import a export dat, která podporuje opakovaný hromadný import/export. U rozhraní AxBC doporučujeme používat skutečné tabulky. |
+| **Ovlivněné moduly**             | AxDs, AxBCs a AIF                                                                                                                                                                                     |
 
 ### <a name="boms-without-bom-versions"></a>Kusovníky bez verze kusovníku
 
@@ -385,9 +362,9 @@ Pokud byl konfigurační klíč **Verze kusovníku** zakázán, byly ve všech f
 
 |                              |                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Řízení verzí kusovníku pomocí konfiguračního klíče nelze škálovat v cloudovém prostředí. |
-| Nahrazeno jinou funkcí? | Č.                                                                                      |
-| Ovlivněné moduly             | Řízení informací o produktech, Řízení zásob                                    |
+| **Důvod pro zrušení**      | Řízení verzí kusovníku pomocí konfiguračního klíče nelze škálovat v cloudovém prostředí. |
+| **Nahrazeno jinou funkcí?** | Č.                                                                                      |
+| **Ovlivněné moduly**            | Řízení informací o produktech, Řízení zásob                                    |
 
 ### <a name="brazilian-bordero"></a>Brazilský doklad Bordero
 
@@ -395,9 +372,9 @@ Specifická metoda platby pro brazilské společnosti
 
 |                              |                                                                                                       |
 |------------------------------|-------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Podpora pro brazilskou metodu platby Bordero již není k dispozici v brazilské lokalizaci |
-| Nahrazeno jinou funkcí? | Žádný                                                                                                    |
-| Ovlivněné moduly             | Závazky                                                                                      |
+| **Důvod pro zrušení**       | Podpora pro brazilskou metodu platby Bordero již není k dispozici v brazilské lokalizaci |
+| **Nahrazeno jinou funkcí?** | Žádný                                                                                                    |
+| **Ovlivněné moduly**             | Závazky                                                                                      |
 
 ### <a name="brazilian-sintegra-statement"></a>Brazilský výpis Sintegra
 
@@ -405,9 +382,9 @@ Federální daňový výkaz ICMS
 
 |                              |                                                                                                                       |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Toto prohlášení se již v některých brazilských zemích nepoužívá.                                                     |
-| Nahrazeno jinou funkcí? | Ne. Uživatelé mohou používat nástroj obecného elektronického vykazování pro konfiguraci výkazu, pokud je v určitých situacích požadován. |
-| Ovlivněné moduly             | Fiskální knihy                                                                                                          |
+| **Důvod pro zrušení**       | Toto prohlášení se již v některých brazilských zemích nepoužívá.                                                     |
+| **Nahrazeno jinou funkcí?** | Ne. Uživatelé mohou používat nástroj obecného elektronického vykazování pro konfiguraci výkazu, pokud je v určitých situacích požadován. |
+| **Ovlivněné moduly**             | Fiskální knihy                                                                                                          |
 
 ### <a name="brazilian-scan-contingency-mode-for-nf-e"></a>Brazilský pohotovostní režim SCAN pro NF e
 
@@ -415,9 +392,9 @@ Pohotovostní prostředí (SCAN) slouží k vygenerování, exportování a impo
 
 |                              |                                                                             |
 |------------------------------|-----------------------------------------------------------------------------|
-| Důvod pro zrušení       | Tato záložní metoda už nebude k dispozici v žádném brazilském státě |
-| Nahrazeno jinou funkcí? | Žádný                                                                          |
-| Ovlivněné moduly             | Pohledávky                                                         |
+| **Důvod pro zrušení**       | Tato záložní metoda už nebude k dispozici v žádném brazilském státě |
+| **Nahrazeno jinou funkcí?** | Žádný                                                                          |
+| **Ovlivněné moduly**             | Pohledávky                                                         |
 
 ### <a name="business-analyzer"></a>Obchodní analýza
 
@@ -425,9 +402,9 @@ S touto mobilní aplikací mohou uživatelé kontrolovat klíčoví obchodní me
 
 |                              |                                                                                                                                                               |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Tato funkce byla nahrazena jinou funkcí.                                                                                                      |
-| Nahrazeno jinou funkcí? | Balíček obsahu Sledování finanční výkonnosti pro Microsoft Power BI bude zahrnovat klíčové finanční metriky, které byly dříve dostupné v aplikaci Business Analyzer. |
-| Ovlivněné moduly             | Hlavní kniha                                                                                                                                                |
+| **Důvod pro zrušení**       | Tato funkce byla nahrazena jinou funkcí.                                                                                                      |
+| **Nahrazeno jinou funkcí?** | Balíček obsahu Sledování finanční výkonnosti pro Microsoft Power BI bude zahrnovat klíčové finanční metriky, které byly dříve dostupné v aplikaci Business Analyzer. |
+| **Ovlivněné moduly**             | Hlavní kniha                                                                                                                                                |
 
 ### <a name="business-statistics"></a>Obchodní statistika
 
@@ -435,25 +412,25 @@ Nastavení dotazů na obchodní statistiky, která vám mohou pomoct s analýzou
 
 |                              |                                                                                              |
 |------------------------------|----------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Starší přístup k obchodnímu zpravodajství (BI), málo používáno odběrateli a omezená sada funkcí |
-| Nahrazeno jinou funkcí? | Nové řešení BI pro aktuální verzi aplikace Dynamics AX                                      |
-| Ovlivněné moduly             | Zásobování a zdroje, Závazky, Prodej a marketing, Pohledávky         |
+| **Důvod pro zrušení**       | Starší přístup k obchodnímu zpravodajství (BI), málo používáno odběrateli a omezená sada funkcí |
+| **Nahrazeno jinou funkcí?** | Nové řešení BI pro aktuální verzi aplikace Dynamics AX                                      |
+| **Ovlivněné moduly**             | Zásobování a zdroje, Závazky, Prodej a marketing, Pohledávky         |
 
 ### <a name="change-document-date-function-in-invoice-approval-journal"></a>Funkce změny data dokumentu v modulu Deník schválených faktur
 
 |                              |                                                                         |
 |------------------------------|-------------------------------------------------------------------------|
-| Důvod pro zrušení       | Malé využití                                                               |
-| Nahrazeno jinou funkcí? | Ano. Datum dokumentu na zaúčtované transakci dodavatele lze změnit. |
-| Ovlivněné moduly             | Závazky                                                        |
+| **Důvod pro zrušení**       | Malé využití                                                               |
+| **Nahrazeno jinou funkcí?** | Ano. Datum dokumentu na zaúčtované transakci dodavatele lze změnit. |
+| **Ovlivněné moduly**             | Závazky                                                        |
 
 ### <a name="clieop03-payment-format-for-the-netherlands"></a>Formát platby ClieOp03 pro Nizozemsko
 
 |                              |                                                                                                            |
 |------------------------------|------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Formát se již v Nizozemsku nepoužívá, protože byl nahrazen funkcí Jednotná oblast pro platby v eurech (SEPA). |
-| Nahrazeno jinou funkcí? | Export plateb SEPA                                                                                       |
-| Ovlivněné moduly             | Vše                                                                                                        |
+| **Důvod pro zrušení**       | Formát se již v Nizozemsku nepoužívá, protože byl nahrazen funkcí Jednotná oblast pro platby v eurech (SEPA). |
+| **Nahrazeno jinou funkcí?** | Export plateb SEPA                                                                                       |
+| **Ovlivněné moduly**             | Vše                                                                                                        |
 
 ### <a name="compliance-center"></a>Centrum kompatibility
 
@@ -461,9 +438,9 @@ Centrum kompatibility byly stránky podnikového portálu pro správu požadavk�
 
 |                              |                                                                                                                        |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Nepoužíváno odběrateli. Služba Microsoft SharePoint zahrnuje stejné možnosti, jaké byly k dispozici v centru kompatibility. |
-| Nahrazeno jinou funkcí? | Č.                                                                                                                     |
-| Ovlivněné moduly             | Dodržování předpisů a vnitřní kontroly                                                                                       |
+| **Důvod pro zrušení**       | Nepoužíváno odběrateli. Služba Microsoft SharePoint zahrnuje stejné možnosti, jaké byly k dispozici v centru kompatibility. |
+| **Nahrazeno jinou funkcí?** | Č.                                                                                                                     |
+| **Ovlivněné moduly**             | Dodržování předpisů a vnitřní kontroly                                                                                       |
 
 ### <a name="connector-for-microsoft-dynamics"></a>Connector pro aplikaci Microsoft Dynamics
 
@@ -471,41 +448,41 @@ Tento nástroj byl použit k integraci klíčových dat z aplikace Microsoft Dyn
 
 |                              |                                                          |
 |------------------------------|----------------------------------------------------------|
-| Důvod pro zrušení       | Tato funkce byla nahrazena jinou funkcí. |
-| Nahrazeno jinou funkcí? | Integrátor Dynamics                                      |
-| Ovlivněné moduly             | Connector pro aplikaci Microsoft Dynamics                         |
+| **Důvod pro zrušení**       | Tato funkce byla nahrazena jinou funkcí. |
+| **Nahrazeno jinou funkcí?** | Integrátor Dynamics                                      |
+| **Ovlivněné moduly**             | Connector pro aplikaci Microsoft Dynamics                         |
 
 ### <a name="container-unit-and-multi-dimension-on-hand"></a>Jednotka kontejneru a více dimenzí zásob
 
 |                              |                                                                                                                                                                 |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Duplicitní funkce                                                                                                                                         |
-| Nahrazeno jinou funkcí? | Ano. Tuto funkce byla nahrazena od verze AX 2012 sadou funkcí konsolidované dávkové objednávky. Tato sada funkcí zahrnuje konsolidované zobrazení zásob na skladě. |
-| Ovlivněné moduly             | Řízení informací o produktech, Řízení výroby, Řízení zásob, Prodej a marketing                                                                   |
+| **Důvod pro zrušení**       | Duplicitní funkce                                                                                                                                         |
+| **Nahrazeno jinou funkcí?** | Ano. Tuto funkce byla nahrazena od verze AX 2012 sadou funkcí konsolidované dávkové objednávky. Tato sada funkcí zahrnuje konsolidované zobrazení zásob na skladě. |
+| **Ovlivněné moduly**             | Řízení informací o produktech, Řízení výroby, Řízení zásob, Prodej a marketing                                                                   |
 
 ### <a name="cue-group-metadata"></a>Metadata skupiny hromádek
 
 |                              |                                                                                                                                                                                                                               |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Skupiny hromádek byly použity k zobrazení jedné nebo více hromádek v oblasti okna s fakty. Byl omezený příjem a došlo k také k potížím s výkonem kvůli změně záznamu v nadřazeném formuláři, což způsobilo jeden dotaz na každou hromádku ve skupině hromádek. |
-| Nahrazeno jinou funkcí? | Č.                                                                                                                                                                                                                            |
-| Ovlivněné moduly             | Vše                                                                                                                                                                                                                           |
+| **Důvod pro zrušení**       | Skupiny hromádek byly použity k zobrazení jedné nebo více hromádek v oblasti okna s fakty. Byl omezený příjem a došlo k také k potížím s výkonem kvůli změně záznamu v nadřazeném formuláři, což způsobilo jeden dotaz na každou hromádku ve skupině hromádek. |
+| **Nahrazeno jinou funkcí?** | Č.                                                                                                                                                                                                                            |
+| **Ovlivněné moduly**             | Vše                                                                                                                                                                                                                           |
 
 ### <a name="cue-metadata"></a>Metadata hromádky
 
 |                              |                                                                                                                                                                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Metadata hromádky byla omezena na informace o počtu nebo součtu.                                                                                                                                                                                   |
-| Nahrazeno jinou funkcí? | Kvůli flexibilnějším možnostem modelování byla zavedena metadata dlaždice. Modelova můžete například aktuální počty, navigaci a klíčové indikátory výkonnosti (KPI). Metadata dlaždice počtu jsou přímou náhradou za metadata hromádky. |
-| Ovlivněné moduly             | Vše                                                                                                                                                                                                                                     |
+| **Důvod pro zrušení**       | Metadata hromádky byla omezena na informace o počtu nebo součtu.                                                                                                                                                                                   |
+| **Nahrazeno jinou funkcí?** | Kvůli flexibilnějším možnostem modelování byla zavedena metadata dlaždice. Modelova můžete například aktuální počty, navigaci a klíčové indikátory výkonnosti (KPI). Metadata dlaždice počtu jsou přímou náhradou za metadata hromádky. |
+| **Ovlivněné moduly**             | Vše                                                                                                                                                                                                                                     |
 
 ### <a name="danish-check-format"></a>Formát šeku – Dánsko
 
 |                              |                                                                                                                         |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Byla zrušena podpora pro rozvržení dánského formátu šeku a sestava byla odebrána z dánské lokalizace. |
-| Nahrazeno jinou funkcí? | Č.                                                                                                                      |
-| Ovlivněné moduly             | Vše                                                                                                                     |
+| **Důvod pro zrušení**       | Byla zrušena podpora pro rozvržení dánského formátu šeku a sestava byla odebrána z dánské lokalizace. |
+| **Nahrazeno jinou funkcí?** | Č.                                                                                                                      |
+| **Ovlivněné moduly**             | Vše                                                                                                                     |
 
 ### <a name="data-partitions"></a>Datové oddíly
 
@@ -513,34 +490,34 @@ Datové oddíly poskytují logické oddělení dat v databázi aplikace Microsof
 
 |   |   |
 |---|---|
-| Důvod pro zrušení       | Datové oddíly byly zavedeny v aplikaci Microsoft Dynamics AX 2012 R2 a umožňují izolaci dat. V běžné situaci má společnost pobočky a data z jedné dceřiné společnosti by neměla být viditelná pro jiné dceřiné společnosti, přestože obě pobočky jsou spravovány ve stejném oddělení IT. Nicméně by byly vyžadovány dodatečné skripty a další správní režie v celém programu pro vytvoření nových oddílů, naplnění je daty a zálohování data oddílu. V cloudu, kde máte přístup k databázové službě Platforma jako služba (PaaS – Microsoft Azure SQL Database), je mnohem efektivnější použít databázi pro izolační kontejner, než provádět izolaci v programu. Bez ohledu na to, zda je rozdělení dat požadované pro dceřiné společnosti, pro více klientů nebo pouze pro škálování, věříme, že situace je možné vyřešit efektivněji s využitím více databází nebo instancí aplikace Dynamics AX. |
-| Nahrazeno jinou funkcí? | Datové oddíly budou v budoucí verzi nahrazeny prostřednictvím podpory více databází nebo instancí aplikace Dynamics AX.    |
-| Ovlivněné moduly             | Vše  |
+| **Důvod pro zrušení**       | Datové oddíly byly zavedeny v aplikaci Microsoft Dynamics AX 2012 R2 a umožňují izolaci dat. V běžné situaci má společnost pobočky a data z jedné dceřiné společnosti by neměla být viditelná pro jiné dceřiné společnosti, přestože obě pobočky jsou spravovány ve stejném oddělení IT. Nicméně by byly vyžadovány dodatečné skripty a další správní režie v celém programu pro vytvoření nových oddílů, naplnění je daty a zálohování data oddílu. V cloudu, kde máte přístup k databázové službě Platforma jako služba (PaaS – Microsoft Azure SQL Database), je mnohem efektivnější použít databázi pro izolační kontejner, než provádět izolaci v programu. Bez ohledu na to, zda je rozdělení dat požadované pro dceřiné společnosti, pro více klientů nebo pouze pro škálování, věříme, že situace je možné vyřešit efektivněji s využitím více databází nebo instancí aplikace Dynamics AX. |
+| **Nahrazeno jinou funkcí?** | Datové oddíly budou v budoucí verzi nahrazeny prostřednictvím podpory více databází nebo instancí aplikace Dynamics AX.    |
+| **Ovlivněné moduly**             | Vše  |
 
 ### <a name="database-and-file-share-storage-for-attachments"></a>Úložiště databáze a sdílené složky souborů pro přílohy
 Povolené úložiště příloh v databázi a sdílených složkách souborů povolené v Microsoft Dynamics AX 2012. Ani jedna z těchto možností již není podporována.
 
 |                              |                                        |
 |------------------------------|----------------------------------------|
-| Důvod pro zrušení       | Úložiště sdílených složek souborů již není podporováno, protože prostředí hostovaná v cloudu nemohou komunikovat s místními sdílenými souborovými složkami. Databáze úložiště je zastaralá a nahradilo ji úložiště Azure Blob. Úložiště Azure Blob odpovídá úložišti v databázi, protože dokumenty jsou přístupné pouze pro formuláře klientů Dynamics 365 for Finance and Operations. To zajišťuje další výhodu poskytování úložiště, které negativně neovlivňuje výkonnost databáze. Úložiště objektů blob je výchozí mechanismus úložiště pro správu dokumentů a funguje okamžitě. |
-| Nahrazeno jinou funkcí? | Databáze úložiště je zastaralá a nahradilo ji úložiště Azure Blob.       |
-| Ovlivněné moduly             | Vše                   |
+| **Důvod pro zrušení**       | Úložiště sdílených složek souborů již není podporováno, protože prostředí hostovaná v cloudu nemohou komunikovat s místními sdílenými souborovými složkami. Databáze úložiště je zastaralá a nahradilo ji úložiště Azure Blob. Úložiště Azure Blob odpovídá úložišti v databázi, protože dokumenty jsou přístupné pouze pro formuláře klientů Dynamics 365 for Finance and Operations. To zajišťuje další výhodu poskytování úložiště, které negativně neovlivňuje výkonnost databáze. Úložiště objektů blob je výchozí mechanismus úložiště pro správu dokumentů a funguje okamžitě. |
+| **Nahrazeno jinou funkcí?** | Databáze úložiště je zastaralá a nahradilo ji úložiště Azure Blob.       |
+| **Ovlivněné moduly**             | Vše                   |
 
 ### <a name="delimitation"></a>Vymezení
 
 |                              |                                        |
 |------------------------------|----------------------------------------|
-| Důvod pro zrušení       | Funkce nebyla shledána potřebnou. |
-| Nahrazeno jinou funkcí? | Č.                                     |
-| Ovlivněné moduly             | Čas a docházka                    |
+| **Důvod pro zrušení**       | Funkce nebyla shledána potřebnou. |
+| **Nahrazeno jinou funkcí?** | Č.                                     |
+| **Ovlivněné moduly**             | Čas a docházka                    |
 
 ### <a name="desktop-client"></a>Klient pro stolní počítače
 
 |                              |                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Prostředí klienta aplikace Dynamics AX bylo přepracováno, aby se lépe používalo na různých platformách a v různých zařízeních.                      |
-| Nahrazeno jinou funkcí? | Nový webový klient je založen na metadatech formuláře pracovní plochy a programovacím modelu, které byly změněny tak, aby poskytovaly bohatou webovou platformu. |
-| Ovlivněné moduly             | Vše                                                                                                                                    |
+| **Důvod pro zrušení**       | Prostředí klienta aplikace Dynamics AX bylo přepracováno, aby se lépe používalo na různých platformách a v různých zařízeních.                      |
+| **Nahrazeno jinou funkcí?** | Nový webový klient je založen na metadatech formuláře pracovní plochy a programovacím modelu, které byly změněny tak, aby poskytovaly bohatou webovou platformu. |
+| **Ovlivněné moduly**             | Vše                                                                                                                                    |
 
 ### <a name="direct-database-connection"></a>Přímé připojení k databázi
 
@@ -548,17 +525,17 @@ V aplikaci Dynamics AX 2012 R3 se Retail Modern POS připojoval přímo k datab�
 
 |                              |                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Přímé připojení k databázi vyžadovalo nižší protokoly zabezpečení a primárně sloužilo k dosahování nejvyšších úrovní výkonnosti. Vzhledem k výkonu a vylepšení zabezpečení, ke kterým došlo v aplikaci Finance and Operations tato funkce nyní způsobuje mnohem více problémů, než řeší. |
-| Nahrazeno jinou funkcí? | Č. V současné době se podporuje pouze standardní komunikace Retail Server.    |
-| Ovlivněné moduly             | Channel DB/Retail Modern POS                                    |
+| **Důvod pro zrušení**       | Přímé připojení k databázi vyžadovalo nižší protokoly zabezpečení a primárně sloužilo k dosahování nejvyšších úrovní výkonnosti. Vzhledem k výkonu a vylepšení zabezpečení, ke kterým došlo v aplikaci Finance and Operations tato funkce nyní způsobuje mnohem více problémů, než řeší. |
+| **Nahrazeno jinou funkcí?** | Č. V současné době se podporuje pouze standardní komunikace Retail Server.    |
+| **Ovlivněné moduly**             | Channel DB/Retail Modern POS                                    |
 
 ### <a name="dutch-swift-mt940"></a>Nizozemský SWIFT MT940
 
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Namísto lokalizované funkce se nyní používá obecná funkce.                                                                                                                                                                 |
-| Nahrazeno jinou funkcí? | Ano, tato funkce byla nahrazena funkcí Rozšířené odsouhlasení banky. |
-| Ovlivněné moduly             | Vše                                                                                                                                                                                                                                   |
+| **Důvod pro zrušení**       | Namísto lokalizované funkce se nyní používá obecná funkce.                                                                                                                                                                 |
+| **Nahrazeno jinou funkcí?** | Ano, tato funkce byla nahrazena funkcí Rozšířené odsouhlasení banky. |
+| **Ovlivněné moduly**             | Vše                                                                                                                                                                                                                                   |
 
 ### <a name="ebilanz-xbrl-for-germany"></a>eBilanz (XBRL pro Německo)
 
@@ -566,33 +543,33 @@ Tato funkce poskytuje výstup v jazyce eXtensible Business Reporting Language (X
 
 |                              |                                                                                                                                                                        |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Nepoužíváno odběrateli.                                                                                                                                                 |
-| Nahrazeno jinou funkcí? | Tato funkce nebyla nahrazena jinou funkcí, avšak pro německý trh je k dispozici několik speciálních balíčků XBRL obsahujících mnoho funkcí XBRL. |
-| Ovlivněné moduly             | Management Reporter                                                                                                                                                    |
+| **Důvod pro zrušení**       | Nepoužíváno odběrateli.                                                                                                                                                 |
+| **Nahrazeno jinou funkcí?** | Tato funkce nebyla nahrazena jinou funkcí, avšak pro německý trh je k dispozici několik speciálních balíčků XBRL obsahujících mnoho funkcí XBRL. |
+| **Ovlivněné moduly**             | Management Reporter                                                                                                                                                    |
 
 ### <a name="enterprise-portal-client"></a>Klient podnikového portálu
 
 |                              |                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Byla poskytnuta jediná platforma klienta.                                                                                            |
-| Nahrazeno jinou funkcí? | Nový webový klient je založen na metadatech formuláře pracovní plochy a programovacím modelu, které byly změněny tak, aby poskytovaly bohatou webovou platformu. |
-| Ovlivněné moduly             | Vše                                                                                                                                    |
+| **Důvod pro zrušení**       | Byla poskytnuta jediná platforma klienta.                                                                                            |
+| **Nahrazeno jinou funkcí?** | Nový webový klient je založen na metadatech formuláře pracovní plochy a programovacím modelu, které byly změněny tak, aby poskytovaly bohatou webovou platformu. |
+| **Ovlivněné moduly**             | Vše                                                                                                                                    |
 
 ### <a name="environmental-sustainability"></a>Udržitelnost životního prostředí
 
 |                              |                                                    |
 |------------------------------|----------------------------------------------------|
-| Důvod pro zrušení       | Málo používáno odběrateli a omezená sada funkcí.       |
-| Nahrazeno jinou funkcí? | Č.                                                 |
-| Ovlivněné moduly             | Dodržování předpisů a vnitřní kontroly, Závazky |
+| **Důvod pro zrušení**       | Málo používáno odběrateli a omezená sada funkcí.       |
+| **Nahrazeno jinou funkcí?** | Č.                                                 |
+| **Ovlivněné moduly**             | Dodržování předpisů a vnitřní kontroly, Závazky |
 
 ### <a name="form-activex-and-managed-host-controls"></a>Ovládací prvky formuláře ActiveX a spravovaného hostitele
 
 |                              |                                                                                                                                                                                               |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Ovládací prvky formuláře ActiveX a spravovaného hostitele jsou založeny na zastaralém klientovi pro stolní počítače.                                                                                                             |
-| Nahrazeno jinou funkcí? | Rozšířitelná architektura ovládacích prvků podporuje vytváření nových ovládacích prvků založených na jazyku HTML, CSS a JavaScript a slouží k prvotřídnímu ovládání v prostředí nástroje Microsoft Visual Studio. |
-| Ovlivněné moduly             | Vše                                                                                                                                                                                           |
+| **Důvod pro zrušení**       | Ovládací prvky formuláře ActiveX a spravovaného hostitele jsou založeny na zastaralém klientovi pro stolní počítače.                                                                                                             |
+| **Nahrazeno jinou funkcí?** | Rozšířitelná architektura ovládacích prvků podporuje vytváření nových ovládacích prvků založených na jazyku HTML, CSS a JavaScript a slouží k prvotřídnímu ovládání v prostředí nástroje Microsoft Visual Studio. |
+| **Ovlivněné moduly**             | Vše                                                                                                                                                                                           |
 
 ### <a name="generate-prenotes-by-using-a-batch"></a>Generování verifikačních transakcí pomocí dávky
 
@@ -600,41 +577,41 @@ Verifikační transakce nelze generovat pomocí dávky, ale mohou být generová
 
 |                              |                                                                                                        |
 |------------------------------|--------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Neexistuje žádný formulář, který by po vygenerování pomocí dávky zachovával a zobrazoval výsledný soubor verifikačních transakcí. |
-| Nahrazeno jinou funkcí? | Verifikační transakce lze i nadále generovat a uživatel může nastavit umístění, kam má být soubor uložen.   |
-| Ovlivněné moduly             | Závazky, Pohledávky, Řízení zásob, Pokladna a banka                                        |
+| **Důvod pro zrušení**       | Neexistuje žádný formulář, který by po vygenerování pomocí dávky zachovával a zobrazoval výsledný soubor verifikačních transakcí. |
+| **Nahrazeno jinou funkcí?** | Verifikační transakce lze i nadále generovat a uživatel může nastavit umístění, kam má být soubor uložen.   |
+| **Ovlivněné moduly**             | Závazky, Pohledávky, Řízení zásob, Pokladna a banka                                        |
 
 ### <a name="german-dtaus-payment-export-and-account-statement-import-totals-and-transactions"></a>Export německé platby DTAUS a import výpisu z účtu (souhrny a transakce)
 
 |                              |                                                                                                                                                                                                                                                                                                |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Formát se již v Německu nepoužívá, protože byl nahrazen funkcí Jednotná oblast pro platby v eurech (SEPA).                                                                                                                                                                 |
-| Nahrazeno jinou funkcí? | Ano, tato funkce byla nahrazena exportem plateb SEPA a rozšířenou funkcí odsouhlasení banky pro import výpisů z účtu. |
-| Ovlivněné moduly             | Vše                                                                                                                                                                                                                                                                                            |
+| **Důvod pro zrušení**       | Formát se již v Německu nepoužívá, protože byl nahrazen funkcí Jednotná oblast pro platby v eurech (SEPA).                                                                                                                                                                 |
+| **Nahrazeno jinou funkcí?** | Ano, tato funkce byla nahrazena exportem plateb SEPA a rozšířenou funkcí odsouhlasení banky pro import výpisů z účtu. |
+| **Ovlivněné moduly**             | Vše                                                                                                                                                                                                                                                                                            |
 
 ### <a name="german-dtazv-payment-format"></a>Německý formát platby DTAZV
 
 |                              |                                                                                                    |
 |------------------------------|----------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Formát se již v Německu nepoužívá, protože byl nahrazen funkcí Jednotná oblast pro platby v eurech (SEPA). |
-| Nahrazeno jinou funkcí? | Export plateb SEPA                                                                               |
-| Ovlivněné moduly             | Vše                                                                                                |
+| **Důvod pro zrušení**       | Formát se již v Německu nepoužívá, protože byl nahrazen funkcí Jednotná oblast pro platby v eurech (SEPA). |
+| **Nahrazeno jinou funkcí?** | Export plateb SEPA                                                                               |
+| **Ovlivněné moduly**             | Vše                                                                                                |
 
 ### <a name="german-mt940-import"></a>Německý import MT940
 
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Namísto lokalizované funkce se nyní používá obecná funkce.                                                                                                                                                                 |
-| Nahrazeno jinou funkcí? | Ano, tato funkce byla nahrazena funkcí Rozšířené odsouhlasení banky. |
-| Ovlivněné moduly             | Vše                                                                                                                                                                                                                                   |
+| **Důvod pro zrušení**       | Namísto lokalizované funkce se nyní používá obecná funkce.                                                                                                                                                                 |
+| **Nahrazeno jinou funkcí?** | Ano, tato funkce byla nahrazena funkcí Rozšířené odsouhlasení banky. |
+| **Ovlivněné moduly**             | Vše                                                                                                                                                                                                                                   |
 
 ### <a name="german-xml-eu-sales-list"></a>Německé souhrnné hlášení (EU) ve formátu XML
 
 |                              |                                                                                                                                                                                    |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Formát XML pro německé souhrnné hlášení již není podporován. K odeslání německého souhrnného hlášení německému daňovému úřadu lze použít pouze formát textového souboru ELMA5. |
-| Nahrazeno jinou funkcí? | Č.                                                                                                                                                                                 |
-| Ovlivněné moduly             | Daň                                                                                                                                                                                |
+| **Důvod pro zrušení**       | Formát XML pro německé souhrnné hlášení již není podporován. K odeslání německého souhrnného hlášení německému daňovému úřadu lze použít pouze formát textového souboru ELMA5. |
+| **Nahrazeno jinou funkcí?** | Č.                                                                                                                                                                                 |
+| **Ovlivněné moduly**             | Daň                                                                                                                                                                                |
 
 ### <a name="gl-ssrs-reports"></a>Sestavy GL SSRS
 
@@ -642,17 +619,17 @@ Byly odebrány sestavy, které zahrnují následující položky nabídky: **Sou
 
 |                              |                                                                                                                                              |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Finanční sestavy Microsoft SQL Server Reporting Services (SSRS) byly nahrazeny funkcemi nástroje Management Reporter a výchozími sestavami. |
-| Nahrazeno jinou funkcí? | Management Reporter (v aktuální verzi aplikace Dynamics AX označena jako **Finanční výkaznictví**)                                                  |
-| Ovlivněné moduly             | Hlavní kniha                                                                                                                               |
+| **Důvod pro zrušení**       | Finanční sestavy Microsoft SQL Server Reporting Services (SSRS) byly nahrazeny funkcemi nástroje Management Reporter a výchozími sestavami. |
+| **Nahrazeno jinou funkcí?** | Management Reporter (v aktuální verzi aplikace Dynamics AX označena jako **Finanční výkaznictví**)                                                  |
+| **Ovlivněné moduly**            | Hlavní kniha                                                                                                                               |
 
 ### <a name="infopart-and-formpart-metadata"></a>Metadata InfoPart a FormPart
 
 |                              |                                                                                                                                                                                                                                |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Metadata InfoPart a FormPart povolovala vytváření okna s fakty pro dva různé klienty.                                                                                                                                    |
-| Nahrazeno jinou funkcí? | Metadata InfoPart, která byla zjednodušenou definicí formuláře, je převedena do formuláře při upgradu nástrojů. Metadata FormPart, která odkazovala na formulář, jsou nahrazena přímějším odkazem, který je vytvářen při upgradu nástrojů. |
-| Ovlivněné moduly             | Vše                                                                                                                                                                                                                            |
+| **Důvod pro zrušení**       | Metadata InfoPart a FormPart povolovala vytváření okna s fakty pro dva různé klienty.                                                                                                                                    |
+| **Nahrazeno jinou funkcí?** | Metadata InfoPart, která byla zjednodušenou definicí formuláře, je převedena do formuláře při upgradu nástrojů. Metadata FormPart, která odkazovala na formulář, jsou nahrazena přímějším odkazem, který je vytvářen při upgradu nástrojů. |
+| **Ovlivněné moduly**             | Vše                                                                                                                                                                                                                            |
 
 ### <a name="main-account-list-page"></a>Stránka seznamu hlavních účtů
 
@@ -660,9 +637,9 @@ Seznam účtů pro právnickou osobu a související informace o zůstatku
 
 |                              |                                                                                                                                                                                    |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Informace o zůstatku jsou k dispozici na stránce seznamu **Předvaha** podle účtu a dimenze.                                                                                      |
-| Nahrazeno jinou funkcí? | **Hlavní účty** obsahuje seznamu účtů, **hlavní účet** obsahuje stránku se seznamem. V zobrazení v podobě mřížky se na stránce **Hlavní účty** zobrazuje rovněž i menší pohled podobný mřížce. |
-| Ovlivněné moduly             | Hlavní kniha                                                                                                                                                                     |
+| **Důvod pro zrušení**       | Informace o zůstatku jsou k dispozici na stránce seznamu **Předvaha** podle účtu a dimenze.                                                                                      |
+| **Nahrazeno jinou funkcí?** | **Hlavní účty** obsahuje seznamu účtů, **hlavní účet** obsahuje stránku se seznamem. V zobrazení v podobě mřížky se na stránce **Hlavní účty** zobrazuje rovněž i menší pohled podobný mřížce. |
+| **Ovlivněné moduly**             | Hlavní kniha                                                                                                                                                                     |
 
 ### <a name="malaysia-and-singapore-bank-cash-flow-report"></a>Sestava bankovního cashflowu v Malajsii a Singapuru
 
@@ -670,9 +647,9 @@ S touto funkcí mohou uživatelé tisknout sestavu cashflowu, v níž jsou uvede
 
 |                              |                                                                         |
 |------------------------------|-------------------------------------------------------------------------|
-| Důvod pro zrušení       | Stejné informace lze získat z funkce Dotaz na bankovní transakce. |
-| Nahrazeno jinou funkcí? | Dotaz na bankovní transakce                                            |
-| Ovlivněné moduly             | Pokladna a banka                                                |
+| **Důvod pro zrušení**       | Stejné informace lze získat z funkce Dotaz na bankovní transakce. |
+| **Nahrazeno jinou funkcí?** | Dotaz na bankovní transakce                                            |
+| **Ovlivněné moduly**             | Pokladna a banka                                                |
 
 ### <a name="mexican-cfd-electronic-invoice"></a>Mexická elektronická faktura CFD
 
@@ -680,9 +657,9 @@ Tato funkce povolovala generování mexické elektronické faktury pomocí metod
 
 |                              |                                                                                                                                                                                                                                                                                                                                                                                                           |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Metoda již není použitelná. Generování elektronických faktur metodou CFD bylo zrušeno ze strany finančního úřadu a nahrazeno metodou Comprobante Fiscal Digital a través de Internet (CFDI), u které je podepisování delegováno na poskytovatele třetí strany (PAC). Měsíční sestava byla odebrána, uživatelé mohou prostřednictvím dotazu získat informace o historických transakcích. |
-| Nahrazeno jinou funkcí? | Č.                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Ovlivněné moduly             | Pohledávky, Projekt                                                                                                                                                                                                                                                                                                                                                                              |
+| **Důvod pro zrušení**       | Metoda již není použitelná. Generování elektronických faktur metodou CFD bylo zrušeno ze strany finančního úřadu a nahrazeno metodou Comprobante Fiscal Digital a través de Internet (CFDI), u které je podepisování delegováno na poskytovatele třetí strany (PAC). Měsíční sestava byla odebrána, uživatelé mohou prostřednictvím dotazu získat informace o historických transakcích. |
+| **Nahrazeno jinou funkcí?** | Č.                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Ovlivněné moduly**             | Pohledávky, Projekt                                                                                                                                                                                                                                                                                                                                                                              |
 
 ### <a name="mexico-realized-and-unrealized-vat"></a>Uplatněná a neuplatněná DPH v Mexiku
 
@@ -690,17 +667,17 @@ Aplikace Microsoft Dynamics AX 2012 spravovala neuplatněnou daň z přidané ho
 
 |                              |                                                                                                                     |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Duplicitní funkce                                                                                             |
-| Nahrazeno jinou funkcí? | Ano, tato funkce byla nahrazena standardní funkcí podmíněné DPH, která je k dispozici ve verzi Core. |
-| Ovlivněné moduly             | Daň                                                                                                                 |
+| **Důvod pro zrušení**       | Duplicitní funkce                                                                                             |
+| **Nahrazeno jinou funkcí?** | Ano, tato funkce byla nahrazena standardní funkcí podmíněné DPH, která je k dispozici ve verzi Core. |
+| **Ovlivněné moduly**             | Daň                                                                                                                 |
 
 ### <a name="microsoft-outlook-integration"></a>Integrace aplikace Microsoft Outlook
 
 |                              |                                                                                |
 |------------------------------|--------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Tato funkce byla nahrazena integrací serveru Microsoft Exchange. |
-| Nahrazeno jinou funkcí? | Ano                                                                            |
-| Ovlivněné moduly             | Prodej a marketing                                                            |
+| **Důvod pro zrušení**       | Tato funkce byla nahrazena integrací serveru Microsoft Exchange. |
+| **Nahrazeno jinou funkcí?** | Ano                                                                            |
+| **Ovlivněné moduly**             | Prodej a marketing                                                            |
 
 ### <a name="payroll-information-in-human-resources"></a>Mzdové informace v modulu Lidské zdroje
 
@@ -708,9 +685,9 @@ Mzdové informace lidských zdrojů
 
 |                              |                                                                                                                                                                                                                                                                                                                              |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Tato funkce byla nahrazena základními stránkami Mzdy a Lidské zdroje.                                                                                                                                                                                                                                              |
-| Nahrazeno jinou funkcí? | **Výhody**, **Příjmy** a další související stránky, které byly dříve v modulu Mzdy v USA, byly překonfigurovány a jsou nyní součásti základní konfigurace modulu Lidské zdroje pro podporu zpracování externích mezd. K této funkci se dostanete pomocí konfiguračního klíče **Lidské zdroje 1** &gt; **Mzdy**. |
-| Ovlivněné moduly             | Lidské zdroje, Mzdy                                                                                                                                                                                                                                                                                                     |
+| **Důvod pro zrušení**       | Tato funkce byla nahrazena základními stránkami Mzdy a Lidské zdroje.                                                                                                                                                                                                                                              |
+| **Nahrazeno jinou funkcí?** | **Výhody**, **Příjmy** a další související stránky, které byly dříve v modulu Mzdy v USA, byly překonfigurovány a jsou nyní součásti základní konfigurace modulu Lidské zdroje pro podporu zpracování externích mezd. K této funkci se dostanete pomocí konfiguračního klíče **Lidské zdroje 1** &gt; **Mzdy**. |
+| **Ovlivněné moduly**             | Lidské zdroje, Mzdy                                                                                                                                                                                                                                                                                                     |
 
 ### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a>Soukromé blokování deníků řízení zásob a skladu
 
@@ -718,9 +695,9 @@ Deníky skladů a zásob již nepodporují možnost označení deníku jako souk
 
 |                              |                                        |
 |------------------------------|----------------------------------------|
-| Důvod pro zrušení       | Funkce nebyla shledána potřebnou. |
-| Nahrazeno jinou funkcí? | Č.                                     |
-| Ovlivněné moduly             | Řízení zásob                   |
+| **Důvod pro zrušení**       | Funkce nebyla shledána potřebnou. |
+| **Nahrazeno jinou funkcí?** | Č.                                     |
+| **Ovlivněné moduly**             | Řízení zásob                   |
 
 ### <a name="product-builder"></a>Konfigurátor výrobku
 
@@ -728,9 +705,9 @@ Konfigurátor výrobku byl používán k dynamické konfiguraci položek z prode
 
 |                              |                                                                                                                                                                                                         |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Konfigurátor výrobku zveřejňoval kód X ++ koncovým uživatelům a není v aktuální verzi aplikace Dynamics AX podporován. Byl odebrán kvůli zamezení duplicitní údržby na překrývajících se kódech. |
-| Nahrazeno jinou funkcí? | Konfigurace produktu                                                                                                                                                                                   |
-| Ovlivněné moduly             | Řízení informací o produktech, Prodej a marketing                                                                                                                                                     |
+| **Důvod pro zrušení**       | Konfigurátor výrobku zveřejňoval kód X ++ koncovým uživatelům a není v aktuální verzi aplikace Dynamics AX podporován. Byl odebrán kvůli zamezení duplicitní údržby na překrývajících se kódech. |
+| **Nahrazeno jinou funkcí?** | Konfigurace produktu                                                                                                                                                                                   |
+| **Ovlivněné moduly**             | Řízení informací o produktech, Prodej a marketing                                                                                                                                                     |
 
 ### <a name="rename-product-dimension"></a>Změnit název dimenze produktu
 
@@ -738,9 +715,9 @@ Touto funkcí lze měnit název jedné ze tří standardních dimenzí produktu 
 
 |                              |                                                                               |
 |------------------------------|-------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Aktuální verze aplikace Dynamics AX nepodporuje změny popisků v době běhu. |
-| Nahrazeno jinou funkcí? | Žádný                                                                            |
-| Ovlivněné moduly             | Řízení informací o produktech                                                |
+| **Důvod pro zrušení**       | Aktuální verze aplikace Dynamics AX nepodporuje změny popisků v době běhu. |
+| **Nahrazeno jinou funkcí?** | Žádný                                                                            |
+| **Ovlivněné moduly**             | Řízení informací o produktech                                                |
 
 ### <a name="retail-server-connectivity-using-http"></a>Konektivita Retail Server u využívající HTTP
 
@@ -748,33 +725,33 @@ V aplikaci Dynamics AX 2012 R3 může Retail Server fungovat pomocí komunikace 
 
 |                              |                                                                               |
 |------------------------------|-------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Z důvodu nových požadavků na zabezpečení je nyní podporována pouze zabezpečená komunikace pomocí TLS 1.2 (nebo vyšší podle dostupnosti). Samoobslužný instalační program bude automaticky konfigurovat počítač na tuto komunikaci. |
-| Nahrazeno jinou funkcí? | Č. V současné době se podporuje pouze standardní komunikace HTTPS.                                                                           |
-| Ovlivněné moduly             | Server maloobchodu                                                |
+| **Důvod pro zrušení**       | Z důvodu nových požadavků na zabezpečení je nyní podporována pouze zabezpečená komunikace pomocí TLS 1.2 (nebo vyšší podle dostupnosti). Samoobslužný instalační program bude automaticky konfigurovat počítač na tuto komunikaci. |
+| **Nahrazeno jinou funkcí?** | Č. V současné době se podporuje pouze standardní komunikace HTTPS.                                                                           |
+| **Ovlivněné moduly**             | Server maloobchodu                                                |
 
 ### <a name="role-center-pages"></a>Stránky pracovní plochy role
 
 |                              |                                                                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Stránky pracovní plochy rolí byly vytvořeny na zastaralé platformě podnikového portálu, která byla v aktuální verzi aplikace Dynamics AX nahrazena novou platformu webového klienta. |
-| Nahrazeno jinou funkcí? | Nový vzor formulářů v pracovním prostoru nabízí uživatelům možnost návrhu zaměřeného na procesy, který zajišťuje snadný přístup k často používaným úkolům v rámci tohoto procesu.                       |
-| Ovlivněné moduly             | Vše                                                                                                                                                                      |
+| **Důvod pro zrušení**       | Stránky pracovní plochy rolí byly vytvořeny na zastaralé platformě podnikového portálu, která byla v aktuální verzi aplikace Dynamics AX nahrazena novou platformu webového klienta. |
+| **Nahrazeno jinou funkcí?** | Nový vzor formulářů v pracovním prostoru nabízí uživatelům možnost návrhu zaměřeného na procesy, který zajišťuje snadný přístup k často používaným úkolům v rámci tohoto procesu.                       |
+| **Ovlivněné moduly**             | Vše                                                                                                                                                                      |
 
 ### <a name="sales-tax-jurisdictions"></a>Příslušnosti k dani
 
 |                              |                                              |
 |------------------------------|----------------------------------------------|
-| Důvod pro zrušení       | Málo používáno odběrateli a omezená sada funkcí. |
-| Nahrazeno jinou funkcí? | Č.                                           |
-| Ovlivněné moduly             | DPH v USA                                 |
+| **Důvod pro zrušení**       | Málo používáno odběrateli a omezená sada funkcí. |
+| **Nahrazeno jinou funkcí?** | Č.                                           |
+| **Ovlivněné moduly**             | DPH v USA                                 |
 
 ### <a name="shipping-carrier-interface"></a>Rozhraní dopravce
 
 |                              |                                                                                                                                                 |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Duplicitní funkce                                                                                                                         |
-| Nahrazeno jinou funkcí? | Ano, tato funkce byla částečně nahrazena modulem Správa přepravy, ale ještě nebyla nahrazena základním modulem Řízení skladu (WMS I). |
-| Ovlivněné moduly             | Prodeje a marketing, Řízení zásob                                                                                                       |
+| **Důvod pro zrušení**       | Duplicitní funkce                                                                                                                         |
+| **Nahrazeno jinou funkcí?** | Ano, tato funkce byla částečně nahrazena modulem Správa přepravy, ale ještě nebyla nahrazena základním modulem Řízení skladu (WMS I). |
+| **Ovlivněné moduly**             | Prodeje a marketing, Řízení zásob                                                                                                       |
 
 ### <a name="sites-services"></a>Služba Sites Services
 
@@ -782,33 +759,33 @@ Služba Sites Services umožňuje vytvářet webové stránky, které rozšiřuj
 
 |                              |                                                                                                                                          |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Infrastruktura Microsoft Azure používaná aplikací Dynamics AX má nové funkce, které lze použít (například Azure Sites). |
-| Nahrazeno jinou funkcí? | Č.                                                                                                                                       |
-| Ovlivněné moduly             | Nábor HR, správa případů, požadavek na cenovou nabídku, registrace dodavatele                                                                  |
+| **Důvod pro zrušení**       | Infrastruktura Microsoft Azure používaná aplikací Dynamics AX má nové funkce, které lze použít (například Azure Sites). |
+| **Nahrazeno jinou funkcí?** | Č.                                                                                                                                       |
+| **Ovlivněné moduly**             | Nábor HR, správa případů, požadavek na cenovou nabídku, registrace dodavatele                                                                  |
 
 ### <a name="ssas-demand-forecasting-strategy"></a>Strategie prognózy poptávky SSAS
 
 |                              |                                                                              |
 |------------------------------|------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Návrh funkce nemůže být podporován v nové cloudové architektuře. |
-| Nahrazeno jinou funkcí? | Strategie prognózy poptávky Azure Machine Learning                           |
-| Ovlivněné moduly             | Plánování                                                                     |
+| **Důvod pro zrušení**       | Návrh funkce nemůže být podporován v nové cloudové architektuře. |
+| **Nahrazeno jinou funkcí?** | Strategie prognózy poptávky Azure Machine Learning                           |
+| **Ovlivněné moduly**             | Plánování                                                                     |
 
 ### <a name="travel-requisitions"></a>Cestovní žádanky
 
 |                              |                                                                 |
 |------------------------------|-----------------------------------------------------------------|
-| Důvod pro zrušení       | Malé využití a většina funkcí existovala v podnikovém portálu. |
-| Nahrazeno jinou funkcí? | Č.                                                              |
-| Ovlivněné moduly             | Správa výdajů                                              |
+| **Důvod pro zrušení**       | Malé využití a většina funkcí existovala v podnikovém portálu. |
+| **Nahrazeno jinou funkcí?** | Č.                                                              |
+| **Ovlivněné moduly**             | Správa výdajů                                              |
 
 ### <a name="vendor-invoice-pool-excluding-posting-details"></a>Podrobnosti evidence faktur dodavatelů bez zaúčtování
 
 |                              |                                                                                                         |
 |------------------------------|---------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Malé využití. Tato funkce byla nahrazena deníkem faktur s funkcí workflowu. |
-| Nahrazeno jinou funkcí? | Možnosti workflowu v modulu Deník faktur.                                                           |
-| Ovlivněné moduly             | Závazky                                                                                        |
+| **Důvod pro zrušení**       | Malé využití. Tato funkce byla nahrazena deníkem faktur s funkcí workflowu. |
+| **Nahrazeno jinou funkcí?** | Možnosti workflowu v modulu Deník faktur.                                                           |
+| **Ovlivněné moduly**             | Závazky                                                                                        |
 
 ### <a name="virtual-company-accounts"></a>Virtuální účty společnosti
 
@@ -821,7 +798,7 @@ Funkce virtuálních společností není aplikací Dynamics AX již podporována
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>Důvod pro zrušení</td>
+<td><b>Důvod pro zrušení</b></td>
 <td><ul>
 <li>Virtuální společnosti je nutné nastavit před uložením dat do tabulek. Zpětné začlenění virtuálních společností do existující implementace je velmi obtížné.</li>
 <li>Vzhledem k tomu, že v aktuální verzi aplikace Microsoft Dynamics AX je spousta normalizací dat, je nyní těžké poznat, co přidat do kolekce tabulek. Například je obtížné poznat, které tabulky se mají sdílet. Také je nutné přidat všechny tabulky, na které je odkazováno z tabulek, které jsou ve virtuální společnosti. Kvůli normalizaci tabulky musí být i jednoduchá hlavní data, která jsou rozdělená do více tabulek, součástí virtuální společnosti. Jakákoli zde provedená chyba způsobí funkční problémy.</li>
@@ -829,11 +806,11 @@ Funkce virtuálních společností není aplikací Dynamics AX již podporována
 </ul></td>
 </tr>
 <tr class="even">
-<td>Nahrazeno jinou funkcí?</td>
+<td><b>Nahrazeno jinou funkcí?</b></td>
 <td>Globální tabulky mohou být použity k zpřístupnění tabulek ze všech společností. V současné době neexistuje žádná náhrada.</td>
 </tr>
 <tr class="odd">
-<td>Ovlivněné moduly</td>
+<td><b>Ovlivněné moduly</b></td>
 <td>Nelze použít</td>
 </tr>
 </tbody>
@@ -843,9 +820,9 @@ Funkce virtuálních společností není aplikací Dynamics AX již podporována
 
 |                              |                                                                                                                                                                                                                                                                                                             |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Řešení Řízení skladu II (WMS II), které bylo k dispozici v modulu **Řízení zásob**, duplikuje funkce, které jsou v modulu **Řízení skladu** a byly vydány v aplikaci Microsoft Dynamics AX 2012 R3.                                                                         |
-| Nahrazeno jinou funkcí? | Modul **Řízení skladu**, který byl vydán v aplikaci AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 a Microsoft Dynamics AX 2012 R3 CU9, nahrazuje funkce modulu Řízení skladu II. V porovnání s funkcemi modulu Řízení skladu II má nový modul více rozšířené funkce a flexibilnější procesy řízení skladu. |
-| Ovlivněné moduly             | Řízení zásob, prodeje a marketing, zásobování a zdroje                                                                                                                                                                                                                                         |
+| **Důvod pro zrušení**       | Řešení Řízení skladu II (WMS II), které bylo k dispozici v modulu **Řízení zásob**, duplikuje funkce, které jsou v modulu **Řízení skladu** a byly vydány v aplikaci Microsoft Dynamics AX 2012 R3.                                                                         |
+| **Nahrazeno jinou funkcí?** | Modul **Řízení skladu**, který byl vydán v aplikaci AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 a Microsoft Dynamics AX 2012 R3 CU9, nahrazuje funkce modulu Řízení skladu II. V porovnání s funkcemi modulu Řízení skladu II má nový modul více rozšířené funkce a flexibilnější procesy řízení skladu. |
+| **Ovlivněné moduly**             | Řízení zásob, prodeje a marketing, zásobování a zdroje                                                                                                                                                                                                                                         |
 
 ### <a name="worker-reminders-in-human-resources"></a>Připomenutí pracovníka v modulu Lidské zdroje
 
@@ -853,24 +830,24 @@ Mzdové informace lidských zdrojů
 
 |                              |                 |
 |------------------------------|-----------------|
-| Důvod pro zrušení       | Malé využití       |
-| Nahrazeno jinou funkcí? | Č.              |
-| Ovlivněné moduly             | Lidské zdroje |
+| **Důvod pro zrušení**       | Malé využití       |
+| **Nahrazeno jinou funkcí?** | Č.              |
+| **Ovlivněné moduly**             | Lidské zdroje |
 
 ### <a name="workplanner"></a>Plánovač práce
 
 |                              |                                                                                                                                                                      |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Malé využití                                                                                                                                                            |
-| Nahrazeno jinou funkcí? | Ne, ale stránka **Vztah profilu**, kterou lze otevřít ze stránky **Skupiny profilů**, podporuje stejný obchodní scénář jako zastaralá stránka **Plánovač práce**. |
-| Ovlivněné moduly             | Čas a docházka                                                                                                                                                  |
+| **Důvod pro zrušení**       | Malé využití                                                                                                                                                            |
+| **Nahrazeno jinou funkcí?** | Ne, ale stránka **Vztah profilu**, kterou lze otevřít ze stránky **Skupiny profilů**, podporuje stejný obchodní scénář jako zastaralá stránka **Plánovač práce**. |
+| **Ovlivněné moduly**             | Čas a docházka                                                                                                                                                  |
 
 ### <a name="x-financial-statements"></a>Finanční výkazy X++
 
 |                              |                                                                                             |
 |------------------------------|---------------------------------------------------------------------------------------------|
-| Důvod pro zrušení       | Tato funkce byla nahrazena jinou funkcí.                                    |
-| Nahrazeno jinou funkcí? | Management Reporter (v aktuální verzi aplikace Dynamics AX označena jako **Finanční výkaznictví**) |
-| Ovlivněné moduly             | Hlavní kniha                                                                              |
+| **Důvod pro zrušení**       | Tato funkce byla nahrazena jinou funkcí.                                    |
+| **Nahrazeno jinou funkcí?** | Management Reporter (v aktuální verzi aplikace Dynamics AX označena jako **Finanční výkaznictví**) |
+| **Ovlivněné moduly**             | Hlavní kniha                                                                              |
 
 

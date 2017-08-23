@@ -1,9 +1,9 @@
 ---
 title: "Šablony plánování rozpočtu pro Excel"
 description: "Toto téma popisuje, jak vytvořit šablony aplikace Microsoft Excel, které lze použít pro plány rozpočtu."
-author: twheeloc
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
-ms.author: sigitac
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.author: ryansand
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 734c8930f239d8c9d220601bb2103bd55dd5bfd8
+ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.openlocfilehash: 7cec40859a8c68cb8a9751c5531c67cef7706258
 ms.contentlocale: cs-cz
 ms.lasthandoff: 07/27/2017
 
@@ -38,22 +38,27 @@ Toto téma ukazuje, jak vytvořit šablony aplikace Excel, které budou použity
 
 Dokumenty plánu rozpočtu lze zobrazit a upravit pomocí jednoho nebo více rozvržení. Každé rozvržení může mít přidruženou šablonu dokumentu rozpočtu plánu pro zobrazení a úpravy dat plánu rozpočtu v listu aplikace Excel. V tomto tématu budou generovány šablonu dokumentu plánu rozpočtu pomocí stávající konfigurace rozvržení. 
 
-Otevřete **Seznam plánů rozpočtu** (**Rozpočtování** &gt; **Plány rozpočtu**). Kliknutím na možnost **Nový** vytvořte nový dokument plánu rozpočtu. 
+1. Otevřete **Seznam plánů rozpočtu** (**Rozpočtování** &gt; **Plány rozpočtu**). 
+2. Kliknutím na možnost **Nový** vytvořte nový dokument plánu rozpočtu. 
 
-[![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+  [![Seznam plánů rozpočtu](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
-Použijte možnost řádku **Přidat** k přidání řádků. Klikněte na možnost **Rozvržení**, abyste zobrazili konfiguraci rozvržení dokumentu plánu rozpočtu. 
+3. Použijte možnost řádku **Přidat** k přidání řádků. Klikněte na možnost **Rozvržení**, abyste zobrazili konfiguraci rozvržení dokumentu plánu rozpočtu. 
 
-[![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+  [![Přidání plánů rozpočtu](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Můžete zkontrolovat konfiguraci rozvržení a podle potřeby ji upravit. Přejděte na možnosti **Šablona**&gt;**Generovat** k vytvoření souboru aplikace Excel pro toto rozvržení. Po vytvoření šablony přejděte na položky **Šablona**&gt;**Zobrazit** a otevřete a zkontrolujte šablonu dokumentu plánu rozpočtu. Soubor aplikace Excel můžete uložit na místní disk. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png)
+Můžete zkontrolovat konfiguraci rozvržení a podle potřeby ji upravit. 
+1. Přejděte na možnosti **Šablona**&gt;**Generovat** k vytvoření souboru aplikace Excel pro toto rozvržení. 
+2. Po vytvoření šablony přejděte na položky **Šablona**&gt;**Zobrazit** a otevřete a zkontrolujte šablonu dokumentu plánu rozpočtu. Soubor aplikace Excel můžete uložit na místní disk. 
+
+[![Uložit jako](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > Poté, co přidružíte k rozvržení dokumentu plánu rozpočtu šablonu aplikace Excel, nemůžete už rozvržení upravovat. Chcete-li změnit rozvržení, odstraňte přidružený soubor šablony aplikace Excel a vygenerujte ho znovu. Tato možnost je vyžadována pro zachování polí v rozvržení a synchronizaci listů. 
 
 Šablona aplikace Excel bude obsahovat všechny prvky z rozložení dokumentu plánu rozpočtu, kde sloupec **Dostupné v listu** je nastaven na hodnotu True. Překrývající se prvky nejsou v šabloně aplikace Excel povoleny. Například pokud rozvržení obsahuje sloupce Žádost na 1. čtvrtletí, Žádost na 2. čtvrtletí, Žádost na 3. čtvrtletí a Žádost na 4. čtvrtletí a sloupec celkového požadavku, který představuje součet všech čtyřech sloupců čtvrtletí, lze v šabloně aplikace Excel použít pouze čtvrtletní sloupce nebo sloupec součtu. Soubor aplikace Excel nemůže aktualizovat překrývající se sloupce se během aktualizace, protože data v tabulce by se mohla stát zastaralá a nepřesná.
 
-[![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
+[![Příklad](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
 > Chcete-li předejít možným problémům se zobrazením a úpravami dat plánu rozpočtu při použití aplikace Excel, měl by být přihlášen do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition a datového konektoru doplňku Microsoft Dynamics pro Office stejný uživatel.
@@ -63,7 +68,7 @@ Chcete-li přidat informace záhlaví, vyberte horní řádek v souboru aplikace
 
 [![bpt5](./media/bpt5-1024x615.png)](./media/bpt5.png) 
 
-Na kartě **Návrh** ** ** klikněte na pole **Přidat** a pak vyberte **BudgetPlanHeader** jako zdroj dat entity.
+Na kartě **Návrh** klikněte na pole **Přidat** a pak vyberte **BudgetPlanHeader** jako zdroj dat entity.
 
 [![bpt6](./media/bpt6-1024x615.png)](./media/bpt6.png)
 
