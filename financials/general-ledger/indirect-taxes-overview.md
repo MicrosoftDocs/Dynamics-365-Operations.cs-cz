@@ -3,7 +3,7 @@ title: "Přehled DPH"
 description: "Tento článek podává přehled o systému DPH. Vysvětluje prvky nastavení DPH a jejich společné fungování."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 415928125c14dfc69020b712f281835701ba2f83
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: f4838dade6b2694a11f4b9775fe53560b1332f18
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -47,7 +46,7 @@ Následující diagram znázorňuje entity nastavení daně a jejich propojení.
 
 Pro každou daň z prodeje, kterou společnost musí vykazovat, je třeba definovat kód daně z prodeje. Kód daně z prodeje ukládá sazby daně a pravidla pro výpočet daně z prodeje. 
 
-Každý kód daně z prodeje musí být spojen s obdobím vyrovnání daně z prodeje. Období vyrovnání daně z prodeje definují intervaly, ve kterých musí být daň z prodeje vykázána a zaplacena finančnímu úřadu. Každé období vyrovnání daně z prodeje musí být přiřazeno úřadu pro kontrolu daně z prodeje. Úřad pro kontrolu daně z prodeje představuje entitu, které je daň z prodeje vykázána a zaplacena. Definuje také rozvržení sestavy daně z prodeje. Úřady pro kontrolu daně z prodeje mohou být přiřazeny účtům dodavatelů. 
+Každý kód daně z prodeje musí být spojen s obdobím vyrovnání daně z prodeje. Období vyrovnání daně z prodeje definují intervaly, ve kterých musí být daň z prodeje vykázána a zaplacena finančnímu úřadu. Každé období vyrovnání daně z prodeje musí být přiřazeno úřadu pro kontrolu daně z prodeje. Úřad pro kontrolu daně z prodeje představuje entitu, které je daň z prodeje vykázána a zaplacena. Definuje také rozvržení sestavy daně z prodeje. Úřady pro kontrolu daně z prodeje mohou být přiřazeny účtům dodavatelů. Další informace naleznete v tématu [Nastavení období vyrovnání DPH](tasks/set-up-sales-tax-settlement-periods.md).
 
 Každý kód daně z prodeje musí být také spojen se skupinou pro zaúčtování do hlavní knihy. Skupinu pro zaúčtování do hlavní knihy určuje hlavní účty, na které budou zaúčtovány částky pro kódy daně z prodeje. 
 
@@ -60,13 +59,13 @@ Následující tabulka popisuje entity a posloupnosti nastavení daně.
 | Aktivita nastavení                                                  | Požadované nebo Volitelné a popis                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Vytvořte hlavní účty.                                           | Požadováno. Dříve, než lze nastavit funkci daně z prodeje, je nutné vytvořit účty hlavní knihy používané společností za účelem platby a zaznamenávání daní.                                                                                                                                                                             |
-| Nastavte účetní skupiny hlavní knihy pro DPH.                     | Požadováno. Skupiny pro zaúčtování do hlavní knihy definují hlavní účty pro zaznamenání a platbu daně z prodeje.                                                                                                                                                                                                                            |
-| Nastavte finanční úřady.                                   | Požadováno. Úřady pro kontrolu daně z prodeje jsou entity, kterým musí být daň vykázána a zaplacena.                                                                                                                                                                                                                                   |
+| Nastavte účetní skupiny hlavní knihy pro DPH.                     | Požadováno. Skupiny pro zaúčtování do hlavní knihy definují hlavní účty pro zaznamenání a platbu daně z prodeje.   Více informací naleznete v tématu [Nastavení účetních skupin pro DPH](tasks/set-up-ledger-posting-groups-sales-tax.md).                                                                                 |
+| Nastavte finanční úřady.                                   | Požadováno. Úřady pro kontrolu daně z prodeje jsou entity, kterým musí být daň vykázána a zaplacena.    Další informace naleznete v tématu [Nastavení daňových úřadů](tasks/set-up-sales-tax-authorities.md).                                                                                                                                          |
 | Nastavte období vyrovnání daně z prodeje.                            | Požadováno. Období vyrovnání daně z prodeje obsahují informace o tom, kdy a jak často musí být daň z prodeje vykázána a zaplacena. Souvisejí s úřadem pro kontrolu daně z prodeje.                                                                                                                                                       |
-| Nastavte kódy vykazování DPH.                               | Volitelné. Kódy vykazování daně z prodeje lze přiřadit ke kódům daně z prodeje za účelem vykazování částek pro několik kódů daně z prodeje v rámci jednoho kódu vykazování daně z prodeje.                                                                                                                                                                 |
-| Nastavte kódy daně z prodeje.                                         | Požadováno. Kódy daně z prodeje obsahují sazby daně a pravidla pro výpočet všech daní z prodeje. Kódy daně z prodeje souvisejí s obdobím vyrovnání daně z prodeje a skupinou pro zaúčtování do hlavní knihy.                                                                                                                                        |
+| Nastavte kódy vykazování DPH.                               | Volitelné. Kódy vykazování daně z prodeje lze přiřadit ke kódům daně z prodeje za účelem vykazování částek pro několik kódů daně z prodeje v rámci jednoho kódu vykazování daně z prodeje. Další informace naleznete v tématu [Nastavení kódů vykazování DPH](tasks/set-up-sales-tax-reporting-codes.md).                                         |
+| Nastavte kódy daně z prodeje.                                         | Požadováno. Kódy daně z prodeje obsahují sazby daně a pravidla pro výpočet všech daní z prodeje. Kódy daně z prodeje souvisejí s obdobím vyrovnání daně z prodeje a skupinou pro zaúčtování do hlavní knihy. Další informace naleznete v tématu [Nastavení kódů DPH](tasks/set-up-sales-tax-codes.md).                                |
 | Nastavení skupin DPH.                                        | Požadováno. Skupiny daně z prodeje obsahují seznam prodejních kódů, které se vztahují na stranu (odběratel či dodavatel) transakce. Pro danou transakci průnik kódů daně z prodeje ve skupině daně z prodeje a skupině daně z prodeje zboží určuje kódy daně z prodeje, které se vztahují na danou transakci.                  |
-| Nastavte skupiny daně z prodeje zboží.                                   | Požadováno. Skupiny daně z prodeje zboží obsahují seznam prodejních kódů, které platí pro zdroj (produkt, služba a tak dále) transakce. Pro danou transakci průnik kódů daně z prodeje ve skupině daně z prodeje a skupině daně z prodeje zboží určuje kódy daně z prodeje, které se vztahují na danou transakci. |
+| Nastavte skupiny daně z prodeje zboží.                                   | Požadováno. Skupiny daně z prodeje zboží obsahují seznam prodejních kódů, které platí pro zdroj (produkt, služba a tak dále) transakce. Pro danou transakci průnik kódů daně z prodeje ve skupině daně z prodeje a skupině daně z prodeje zboží určuje kódy daně z prodeje, které se vztahují na danou transakci. Další informace najdete v tématu [Nastavení skupin DPH a skupin DPH položek](tasks/set-up-sales-tax-groups-item-sales-tax-groups.md). |
 | Nastavte parametry daně z prodeje na stránkách parametrů aplikace. | Požadováno. Různé oblasti, jako je například hlavní kniha, pohledávky a závazky, musí nastavit parametry pro správný výpočet nepřímých daní. Přestože většina těchto parametrů má výchozí hodnoty, je třeba je upravit podle požadavků jednotlivých společností.                                          |
 
 ## <a name="sales-tax-on-transactions"></a>Daň z prodeje v transakcích
@@ -98,5 +97,5 @@ Obvykle je nutné vyrovnat a zaplatí 2 500 finančnímu úřadu při zaúčtov
 Pokud však používáte podmíněnou DPH, provedete se vyrovnání u finančního úřadu, když obdržíte platbu od zákazníka 30. července.
 
 
-
+Další informace naleznete v tématu [Nastavení srážkové daně](tasks/set-up-withholding-tax.md).
 

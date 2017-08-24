@@ -15,13 +15,13 @@ ms.custom: 261824
 ms.assetid: d0784b2c-fe10-428d-8d07-fd474ca50fcc
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: c132c04bc64f02201252f03830d3f8309306f19c
+ms.translationtype: HT
+ms.sourcegitcommit: 9953d2f29a67b35f4bb43f577df1c4d910e379a1
+ms.openlocfilehash: 08a420a776f47119a5dc47f9119545aa448ffdbd
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -30,15 +30,20 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje, jak obnovit datový trh finančního výkaznictví po obnovení databázeMicrosoft Dynamics 365 for Finance and Operations. 
+Toto téma popisuje, jak obnovit datový trh finančního výkaznictví po obnovení databázeMicrosoft Dynamics 365 for Finance and Operations.
 
-Existuje několik scénářů, kde je nutné obnovit databázi Dynamics 365 for Finance and Operations ze zálohy nebo zkopírovat databázi z jiného prostředí. V takovém případě musíte také dodržovat vhodná opatření s cílem zajistit, aby datové tržiště finančního výkaznictví správně používalo obnovenou databázi Finance and Operations. Pokud máte otázky týkající se obnovení datového tržiště finančního výkaznictví z důvodu mimo obnovení databáze aplikace Finance and Operations, získáte další informace v tématu [Obnovení datového tržiště Management Reporter](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/). Všimněte si, že kroky v tomto procesu jsou podporovány pro vydání aplikace Dynamics 365 for Operations z května 2016 release (build aplikace 7.0.1265.23014 a build finančního výkaznictví 7.0.10000.4) a novější verze. Pokud máte dřívější verzi aplikace Finance and Operations, obraťte se na náš tým podpory pro pomoc.
+Pokud někdy obnovíte databázi Finance and Operations ze zálohy nebo zkopírujete databázi z jiného prostředí, musíte postupovat podle kroků v tomto tématu, chcete-li zajistit, aby datové tržiště finančního vykazování správně používalo obnovenou databázi aplikace Finance and Operations. 
+<!--If you have questions about resetting the financial reporting data mart for a reason outside of restoring a Finance and Operations database, refer to the [Resetting the Management Reporter data mart](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) for more information. -->
+> [!Note] 
+> Kroky v tomto procesu jsou podporovány pro vydání aplikace Dynamics 365 for Operations z května 2016 release (sestavení aplikace 7.0.1265.23014 a sestavení finančního výkaznictví 7.0.10000.4) a novější verze. Pokud máte dřívější verzi aplikace Finance and Operations, obraťte se na náš tým podpory pro pomoc.
 
 ## <a name="export-report-definitions"></a>Export definicí sestav
 Nejprve exportujte návrhy sestavy z Návrháře sestav pomocí následujících kroků:
 
 1.  V Návrháři sestav přejděte na **Společnost** &gt; **Skupiny stavebních bloků**.
-2.  Vyberte skupinu stavebních bloků k exportu a klepněte na tlačítko **Export**. **Poznámka:** V aplikaci Finance and Operations je podporována pouze jedna skupina stavebních bloků, **výchozí**.
+2.  Vyberte skupinu stavebních bloků k exportu a klepněte na tlačítko **Export**. 
+    > [!Note] 
+    > V modulu Finance and Operations je podporována pouze jedna skupina stavebních bloků, **výchozí**.
 3.  Vyberte definice sestavy k exportu:
     -   Pokud chcete exportovat všechny definice sestavy a přidružené stavební bloky, klikněte na tlačítko **Vybrat vše**.
     -   Pokud chcete exportovat konkrétní sestavy, řádky, sloupce, stromy či sady dimenzí, klikněte na příslušnou kartu a vyberte položky k exportu. Když stisknete a podržíte klávesu Ctrl, můžete vybrat na kartě více položek. Při výběru sestav k exportu jsou zvoleny přidružené řádky, sloupce, stromy a sady dimenzí.
@@ -63,9 +68,9 @@ Pomocí připojení ke vzdálené ploše se připojte ke všem počítačům v p
 Tyto služby mají otevřené připojení k databázi Dynamics 365 for Finance and Operations.
 
 ## <a name="reset"></a>Resetovat
-#### <a name="locate-the-latest-dataupgradezip-package"></a>Vyhledejte nejnovější balíček DataUpgrade.zip
+#### <a name="locate-and-download-the-latest-minorversiondataupgradezip-package"></a>Vyhledejte a stáhněte nejnovější balíček MinorVersionDataUpgrade.zip
 
-Vyhledejte nejnovější balíček DataUpgrade.zip pomocí pokynů v části [stažení skriptu DataUpgrade.zip](..\migration-upgrade\upgrade-data-to-latest-update.md). Pokyny vysvětlují, jak najít správnou verzi balíčku pro upgradování dat pro vaše prostředí.
+Vyhledejte nejnovější balíček MinorVersionDataUpgrade.zip pomocí pokynů v části [Stažení nejnovějšího nasaditelného balíčku pro upgrade dat](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package). Pokyny vysvětlují, jak najít a stáhnout správnou verzi balíčku pro upgradování dat. Upgrade ke stažení balíčku MinorVersionDataUpgrade.zip není vyžadován. Je zapotřebí dokončit kroky v části "Stažení nejnovějšího nasaditelného balíčku pro upgrade dat" bez provedení jakýchkoliv dalších kroků v článku pro načtení kopie balíčku MinorVersionDataUpgrade.zip.
 
 #### <a name="execute-scripts-against-finance-and-operations-database"></a>Spuštění skriptů proti databázi Finance and Operations
 
@@ -105,8 +110,10 @@ Importujte návrhy sestavy z Návrháře sestav pomocí souboru vytvořeného b�
 
 1.  V Návrháři sestav přejděte na **Společnost** &gt; **Skupiny stavebních bloků**.
 2.  Vyberte skupinu stavebních bloků k exportu a klepněte na tlačítko **Export**. 
+
     > [!NOTE]
     > V modulu Finance and Operations je podporována pouze jedna skupina stavebních bloků, **výchozí**.
+    
 3.  Vyberte stavební blok **Výchozí** a klikněte na **Import**.
 4.  Vyberte soubor obsahující definice exportované sestavy a klepněte na tlačítko **Otevřít**.
 5.  V dialogovém okně Import vyberte definice sestavy k importu:

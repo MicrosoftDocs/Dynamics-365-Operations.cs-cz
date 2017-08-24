@@ -3,7 +3,7 @@ title: "Konfigurace ruční úlohy ve workflowu"
 description: "Toto téma vysvětluje, jak nakonfigurovat vlastnosti ručního úkolu."
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.custom: 192191
 ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -165,6 +165,7 @@ Pokud uživatel v přiděleném čase ruční úkol nedokončí, úkol bude v pr
 
 1.  V levém podokně klikněte na **Eskalování**.
 2.  Označte pole **Použít eskalační cestu** a vytvořte tak eskalační cestu. Systém automaticky přiřadí daný úkol uživatelům uvedeným v cestě eskalace. Například v následující tabulce naleznete příklad eskalační cesty.
+
     | Pořadí | Eskalační cesta      |
     |----------|----------------------|
     | 1        | Přiřadit k: Donna     |
@@ -318,7 +319,9 @@ Při delegování, eskalování, dokončení nebo zamítnutí ruční úlohy a p
 8.  Zopakujte kroky 3 až 7 pro každou událost, kterou jste vybrali v kroku 2.
 
 ## <a name="set-a-time-limit"></a>Nastavení časového limitu
-Tento postup použijte, pokud je ruční úkol nutné dokončit v určitém čase. **Poznámka:** možnosti, které vyberete v rámci této procedury, přepíší možnosti vybrané v oblasti **Přiřazení** a **Eskalace** na stránce.
+Tento postup použijte, pokud je ruční úkol nutné dokončit v určitém čase. 
+
+**Poznámka:** možnosti, které vyberete v rámci této procedury, přepíší možnosti vybrané v oblasti **Přiřazení** a **Eskalace** na stránce.
 
 1.  V levém podokně klepněte na tlačítko **Pokročilá nastavení**.
 2.  Označte pole **Nastavit časový limit pro prvek workflowu**.

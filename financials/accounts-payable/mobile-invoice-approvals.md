@@ -1,9 +1,9 @@
 ---
 title: "Mobilní schvalování faktur"
 description: "Toto téma poskytuje praktický přístup k navrhování mobilních scénářů v aplikaci Dynamics 365 for Finance and Operations převzetím schválení faktur dodavatele pro mobilní zařízení jako příklad použití."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,14 +14,14 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
-ms.author: sunilg
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 0ca4ebdca1fce3863a50abf19a071af1f1c425e0
+ms.translationtype: HT
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 108a4f4ce366d2efd66fc1ed27ffb6b23ff0e933
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -37,7 +37,7 @@ Mobilní funkce v aplikaci Microsoft Dynamics 365 for Finance and Operations, En
 
 | Předpoklad                                                                                            | popis                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Předběžná verze mobilní příručky                                                                                |[Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform)                                                                                                  |
+| Předběžná verze mobilní příručky                                                                                |[Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)                                                                                                  |
 | Dynamics 365 for Finance and Operations                                                                             | Prostředí, které má Microsoft Dynamics 365 for Operations verzi 1611 a Microsoft Dynamics for Operations aktualizaci platformy 3 (listopad 2016)                   |
 | Nainstalujte opravu hotfix KB 3204341.                                                                              | Záznamník úloh může omylem zaznamenat dva příkazy k zavření rozevíracích dialogových oken, které jsou součástí aktualizace 3 Dynamics 365 for Operations (aktualizace z listopadu 2016) |
 | Nainstalujte opravu hotfix KB 3207800.                                                                              | Tato oprava hotfix umožňuje zobrazovat přílohy v mobilním klientovi, který je zahrnutý v aktualizaci 3 platformy Dynamics 365 for Operations (aktualizace z listopadu 2016).           |
@@ -176,7 +176,7 @@ Pokud chcete navrhnout stránky podrobností faktury pro mobilní zařízení, p
 1.  V adrese URL Finance and Operations nahraďte název položky nabídky názvem **VendMobileInvoiceHeaderDetails** k otevření formuláře
 2.  Otevřete mobilní návrhář z tlačítka **Nastavení** (ozubené kolečko).
 3.  Kliknutím na tlačítko **Upravit** spusťte režim úprav v pracovním prostoru.
-4.  Vyberte stránku ** Moje faktury dodavatele **, kterou jste dříve vytvořili, a potom klepněte na tlačítko **Upravit**.
+4.  Vyberte stránku **Moje faktury dodavatele**, kterou jste dříve vytvořili, a potom klepněte na tlačítko **Upravit**.
 5.  Na kartě **Pole** klikněte na záhlaví sloupce **Mřížka**.
 6.  Klikněte na **Vlastnosti** &gt; **Přidat stránku**. **Poznámka:** Po klepnutí na záhlaví **Mřížka** a přidání stránky je automaticky navázán vztah.
 7.  Zadejte název stránky, například **Detaily faktury** a popis, jako například **Zobrazení záhlaví faktury a podrobností řádku**.
@@ -298,7 +298,7 @@ Chcete-li přidat akce pracovního postupu, použijte stránku **VendMobileInvoi
 
 1.  Klikněte na tlačítko **Nastavení** (ozubené kolo) v pravém horním rohu stránky, a pak klikněte na **Mobilní aplikace**.
 2.  Kliknutím na tlačítko **Upravit** spusťte režim úprav v pracovním prostoru.
-3.  Vyberte stránku **Podrobnosti o faktuře **, kterou jste dříve vytvořili, a potom klepněte na tlačítko **Upravit**.
+3.  Vyberte stránku **Podrobnosti o faktuře**, kterou jste dříve vytvořili, a potom klepněte na tlačítko **Upravit**.
 4.  Nastavte možnost **Správa dokumentů** na **Ano**, jak je ukázáno níže. **Poznámka:** Pokud neexistují žádné požadavky na mobilním zařízení, můžete nechat tuto možnost nastavenou na **Ne**, což je výchozí nastavení.
 ![Správa dokumentů](./media/docmanagement-216x300.png)
 6.  Kliknutím na **Hotovo** ukončete režim úprav.

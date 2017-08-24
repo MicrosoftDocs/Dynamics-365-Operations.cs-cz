@@ -1,9 +1,9 @@
 ---
 title: "Plánování účtové osnovy"
 description: "V tomto článku jsou informace, které vám pomohou naplánovat účtové osnovy pro vaši organizaci."
-author: RobinARH
+author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4c57c4fe8cc66228062f7b64c88efe255657d016
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 424ea5ce12d51d384c86878b7d2199bcd52c40f8
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -45,17 +45,19 @@ Zde je několik faktorů, které je třeba brát v potaz při plánování struk
 -   požadavky na výkazy vaší právnické osoby,
 -   úroveň podrobností, kterou požadují jak externí organizace, tak i vaše společnost.
 
-Na stránce **Účtová osnova** vytvořte účtovou osnovu. Hlavní účty lze vytvořit na stránce **Účtové osnovy** nebo **Hlavní účty**. V hlavních účtech nepoužívejte zvláštní znaky, které se používají jako oddělovače účtové osnovy. Pokud použijete zvláštní znak, který se shoduje s oddělovačem účtové osnovy, můžete zaznamenat nestabilitu nebo nutnost používat vyhledávání či plovoucí panel pokaždé, když zadáváte kombinací účtů a dimenzí. 
+Na stránce **Účtová osnova** vytvořte účtovou osnovu. Hlavní účty lze vytvořit na stránce **Účtové osnovy** nebo **Hlavní účty**. V hlavních účtech nepoužívejte zvláštní znaky, které se používají jako oddělovače účtové osnovy. Pokud použijete zvláštní znak, který se shoduje s oddělovačem účtové osnovy, můžete zaznamenat nestabilitu nebo nutnost používat vyhledávání či plovoucí panel pokaždé, když zadáváte kombinací účtů a dimenzí. Další informace naleznete v tématu [Vytvoření hlavního účtu](tasks/create-account-structures.md).
+
 
 Je vhodné propojit hlavní účty s kategoriemi hlavních účtů, abyste mohli využít výhody výchozích finančních sestav bez nutnosti provádět změny. Můžete proto rychleji a snáze navrhovat a spravovat sestavy. 
 
-Pomocí stránky **Konfigurovat účetní struktury** vytvořte účetní struktury. Účetní struktury definují platné kombinace. Kombinace, společně s hlavními účty, tvoří účtové osnovy. 
+Pomocí stránky **Konfigurovat účetní struktury** vytvořte účetní struktury. Účetní struktury definují platné kombinace. Kombinace, společně s hlavními účty, tvoří účtové osnovy.  Další informace naleznete v tématu [Vytvoření struktur účtu](tasks/create-main-account.md).
 
 **Přepisy právnických osob** 
 
 Ne všechny hlavní účty platí pro všechny právnické osoby a některé mohou být relevantní pouze pro určité časové období. V tomto případě lze část Přepisy právnických osob použít k určení, u kterých společností by mělo být použití hlavního účtu pozastaveno, kdo je vlastníkem a časové období aktivity dimenze. Přepisy na sdílené úrovni nemohou být více omezující než přepisy na úrovni právnické osoby.
 
-Další informace naleznete v tématu [Finanční dimenze](financial-dimensions.md).
+Další informace naleznete v následujících tématech: [Finanční dimenze](financial-dimensions.md)
+[Vytvoření a přiřazení rozšířené struktury pravidel](tasks/create-assign-advanced-rule-structures.md)
 
 
 

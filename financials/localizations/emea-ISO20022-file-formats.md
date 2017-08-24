@@ -3,7 +3,7 @@ title: "Import souborů ISO20022"
 description: "Toto téma popisuje, jak importovat soubory plateb formátů ISO 20022 camt.054 a pain.002 do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
 author: neserovleo
 manager: AnnBe
-ms.date: 05/25/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,13 +13,13 @@ ms.reviewer: shylaw
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, Latvia, Lithuania, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom
 ms.author: v-lenest
-ms.search.validFrom: 2017-06-01T00:00:00.000Z
+ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Enterprise edition, July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 48e280bf0a6c5db237bd389fe448c9d698d3ae12
-ms.openlocfilehash: acf6ed5f503d77f372d802a51a71cec062c2b24b
+ms.sourcegitcommit: 77a0d4c2a31128fb7d082238d443f297fd40664f
+ms.openlocfilehash: 90e21bb939bd96a3420decb5f9bc07c017c3e946
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 07/31/2017
 
 ---
 
@@ -105,4 +105,29 @@ Při importu souboru camt.054 byste měli zadat následující další parametry
 - **Vyrovnat transakce** – nastavte tuto možnost na **Ano**, pokud musí být importované platby dodavatele vyrovnány s fakturami, které jsou nalezeny v systému.
 
 Můžete zobrazit importované informace na stránce **Platební převody**. 
+
+## <a name="additional-details"></a>Další podrobnosti
+
+Při importu konfigurace formátu z LCS importujete celý stromu konfigurace, což znamená, že jsou zahrnuty konfigurace modelu a mapování modelu. V modelu platby počínaje verzí 8 jsou mapování umístěna v samostatných ER konfiguracích ve stromové struktuře řešení (mapování modelu platby 1611, mapování modelu platby do cílového umístění ISO20022 atd). Existuje mnoho různých modelů platby pod jedním modelem (platebním modelem), proto je nakládání se samostatným mapováním klíčové pro snadnou údržbu řešení. Zvažte například tento scénář: použijete ISO20022 platby k vytvoření souborů převodu kreditu a poté importujete vrácené zprávy od banky. V tomto scénáři byste měli používat následující konfigurace:
+
+ - **Model platby**
+ - **Mapování modelu platby 1611** – toto mapování se použije ke generování souboru exportu
+ - **Mapování modelu platby do cílového umístění ISO20022** – tato konfigurace obsahuje všechna mapování, která budou použitá pro import dat (směr mapování "do cílového umístění")
+ - **Převedení kreditu ISO20022** – tato konfigurace zahrnuje komponentu formátu, která zodpovídá za generování souboru exportu (pain.001) podle mapování modelu platby 1611, a také formát pro komponentu mapování modelu, která bude použita společně s mapováním modelu platby do cílového umístění ISO20022 k registraci exportovaných plateb v systému pro další účely importu (import v technické tabulce CustVendProcessedPayments)
+ - **Převedení kreditu ISO20022 (CE)**, kde CE odpovídá příponě země – odvozený formát k převodu kreditu ISO20022 se stejnou strukturou a s určitými rozdíly specifickými pro zemi
+ - **Pain.002** – tento formát se použije společně s mapování modelu platby do cílového umístění ISO20022, aby se naimportoval soubor pain.002 do deníku převodů plateb dodavatele
+ - **Camt.054** – tento formát se použije společně s mapování modelu platby do cílového umístění ISO20022, aby se naimportoval soubor camt.054 do deníku převodů plateb dodavatele Stejná konfigurace formátu se použije ve funkci importu plateb odběratelů, ale použije se odlišné mapování konfiguraci mapování modelu platby ISO20022 do cílového umístění.
+
+Další informace o elektronickém výkaznictví naleznete v tématu [Přehled elektronického výkaznictví](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+
+## <a name="additional-resources"></a>Další zdroje
+- [Vytváření a export plateb dodavatelů s použitím formátu platby ISO20022](./tasks/create-export-vendor-payments-iso20022-payment-format.md)
+- [Import konfigurace převodu kreditu ve formátu ISO20022](./tasks/import-iso20022-credit-transfer-configuration.md)
+- [Import konfigurace přímého debetu ve formátu ISO20022](./tasks/import-iso20022-direct-debit-configuration.md)
+- [Nastavení bankovních účtů společnosti pro převody kreditu ve formátu ISO20022](./tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md)
+- [Nastavení bankovních účtů společnosti pro přímé debety ve formátu ISO20022](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
+- [Nastavení bankovních účtů odběratelů a zákazníků pro přímé debety ve formátu ISO20022](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)
+- [Nastavení způsobu platby pro převody kreditu ve formátu ISO20022](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
+- [Nastavení způsobu platby pro přímý debet ve formátu ISO20022](./tasks/setup-method-payment-iso20022-direct-debit.md)
+- [Nastavení dodavatelů a bankovních účtů dodavatelů pro převody kreditu ve formátu ISO20022](./tasks/set-up-vendor-iso20022-credit-transfers.md)
 

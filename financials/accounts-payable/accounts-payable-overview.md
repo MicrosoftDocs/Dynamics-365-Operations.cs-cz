@@ -1,9 +1,9 @@
 ---
 title: "Konfigurace modulu Závazky"
 description: "Tento článek popisuje stránky, které slouží k nastavení základních a volitelných funkcí pro modul Závazky v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Dále popisuje postup nastavení, který musíte dokončit dříve, než začnete nastavovat modul Závazky."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24671
 ms.assetid: 82561fe7-b2d6-464c-9347-79d0ce0f9743
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 2a61cb86a4f2cfc6d701445c139e22df0db44f8c
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 9b29fec7fadbb1ac699f1144f011df1bfd2f511a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -47,7 +46,7 @@ Před nastavením modulu Závazky je nutné provést tyto úkoly:
 ## <a name="setup-pages-for-accounts-payable"></a>Stránky k nastavení modulu Závazky
 
 Následující stránky slouží k nastavení základních funkcí modulu Závazky pro jednotlivé právní osoby. Stránky jsou uvedeny v doporučeném pořadí nastavení. Pro zjednodušení procesu nastavení si můžete z prvních vytvořených záznamů vytvořit šablony. Šablona obvykle obsahuje hodnoty pro velký počet polí, které odpovídají funkcím, jež chce organizace implementovat pro určitý typ dodavatelů.
-1.  Stránka Platební podmínky slouží k určení platebních podmínek, které chcete přiřadit prodejním objednávkám, nákupním objednávkám, odběratelům a dodavatelům a které určují data splatnosti faktur.
+1.  Stránka Platební podmínky slouží k určení platebních podmínek, které chcete přiřadit prodejním objednávkám, nákupním objednávkám, odběratelům a dodavatelům a které určují data splatnosti faktur. Další informace naleznete v tématu [Definování platebních poplatků dodavatele](tasks/define-vendor-payment-fees.md).
 2.  Stránka Způsob platby – dodavatelé slouží k vytvoření a správě informací o tom, jak organizace platí svým dodavatelům.
 3.  Stránka Skupiny dodavatelů slouží k vytváření a údržbě skupin dodavatelů se společnými důležitými parametry pro účtování, vyrovnávání, platby, vykazování a prognózy.
 4.  Stránka Účetní profily dodavatele slouží k určení toho, jak jsou transakce dodavatelů zaúčtovány do hlavní knihy.

@@ -3,7 +3,7 @@ title: "Uzavření hlavní knihy ke konci období"
 description: "Toto téma popisuje úlohy, které jsou obvykle dokončeny při provádění uzávěrky období pro hlavní knihu."
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,13 +15,13 @@ ms.custom: 14111
 ms.assetid: cec9e039-c1a2-482c-bea6-e11d896eea9d
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 81d687cc16ef43442c8c1c166cc6f0d8b171e28f
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: bcf58b0ca995883bc466eec66a3d75c73c0be79e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -45,8 +45,13 @@ V hlavní knize můžete provést uzávěrku období nebo roku. Postupy uzávěr
 -   Generujte finanční výkazy konce období pomocí Finančního výkaznictví.
 -   Nastavte období hlavní knihy na **Blokováno**, aby neprobíhalo žádné další zaúčtování. Můžete také omezit období pro určitou skupinu uživatelů, zatímco probíhají aktivity na konci období, abyste získali lepší kontrolu. Není vhodné nastavit období na **Trvale zavřeno**, protože uzavřené období nelze znovu otevřít.
 
-Pracovní prostor uzavření finančního období lze použít k uspořádání a sledování úkolů vyžadovaných pro různé procesy na konci období. Další informace naleznete v tématech [Pracovní prostor uzavření finančního období](financial-period-close-workspace.md) a [Roční uzávěrka](Year-end-close.md). 
+Pracovní prostor uzavření finančního období lze použít k uspořádání a sledování úkolů vyžadovaných pro různé procesy na konci období. 
 
+
+Další informace naleznete v následujících tématech:
+- [Pracovní prostor uzavření finančního období](financial-period-close-workspace.md) 
+- [Roční uzávěrka](Year-end-close.md)  
+- [Hromadné uzavření finančního období](tasks/mass-financial-period-close.md)
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: "Úvěr a inkasa v modulu Pohledávky"
 description: "Informace o inkasu pohledávek jsou spravovány v jednom ústředním zobrazení pomocí stránky Inkasa aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Vedoucí úvěrů a inkasa mohou používat toto centrální zobrazení ke správě inkas. Inkasní agenti mohou zahájit proces kolekce ze seznamů odběratelů, které jsou generovány pomocí použitím předem definované kolekce kritérií nebo stránky Odběratelé."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 49bc7ca4e5fff4c2686a8b7396d5bd2bcdd0c51a
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 282084b9d4e63795ec475690e5b22e06c23bb704
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -90,6 +89,8 @@ Můžete odpustit, obnovit nebo stornovat dokončená oznámení úroků nebo po
 
 Tyto úpravy mají vliv pouze na oznámeních úroků a úroky a poplatky, které tyto obsahují. Podle kroků v části "Vytvoření transakcí odpisů v jednom kroku“ vytvořte odpis všech poplatků, které zákazník dluží.
 
+Další informace lze najít v části [Vytvoření kódu úroků s rozsahem](tasks/create-interest-code-range.md) a [Zpracování úroků](tasks/process-interest.md). 
+
 ## <a name="create-writeoff-transactions"></a>Vytvoření transakcí odpisů
 Můžete odepsat pochybné pohledávky klepnutím na možnost Odepsat ve formuláři Inkasa a na stránku se seznamem Splatné zůstatky, Odběratele a Otevřené odběratelské faktury. 
 
@@ -100,7 +101,10 @@ Při odepsání transakcí pro odběratele budou všechny transakce pro odběrat
 -   Třetí typ řádku deníku obsahuje informace o odpisu hlavní knihy pro DPH. Tento řádek deníku je vytvořen pouze, pokud je vybrána možnost Samostatná DPH na stránce Parametry pohledávek. Pokud označené transakce obsahují více kombinací účtu na vstupu DPH, dimenze a kódu DPH, bude vytvořen samostatný deník pro každou kombinaci.
 
 Transakce odpisu je vytvořena v měně transakce.
-Zpracování plateb při nedostatečných finančních prostředcích (NFP)  
+
+Další informace lze najít v části [Vytvoření odpisového deníku pro zákazníka](tasks/create-write-off-journal-customer.md).
+
+<a name="process-not-sufficient-funds-nsf-payments"></a>Zpracování plateb při nedostatečných finančních prostředcích (NFP)  
 --------------------------------------------
 
 Můžete zpracovat platby NFP klepnutím na možnost Platby NFP na stránce Inkasa. Klepnutím na toto tlačítko je platba zrušena. Pokud pro zákazníka platí nějaký poplatek NFP, v deníku plateb se vytvoří poplatek za transakci. Výše poplatku závisí na nastavení automatických nákladů. Automatické poplatky, které platí pro platby NFP jsou určeny podle skupiny nákladů, která je vybrána na stránce Bankovní účty pro související bankovní účet.

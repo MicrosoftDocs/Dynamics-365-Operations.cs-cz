@@ -15,13 +15,13 @@ ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
 ms.author: omulvad
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b66bf79413ad21f12f789eabafe8413af3f58c9c
+ms.translationtype: HT
+ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
+ms.openlocfilehash: 0484723217ccff2ebf717d059429d863ececb797
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -37,7 +37,7 @@ Zákazníci mohou zboží vracet z různých důvodů. Například může být 
 ## <a name="return-order-process"></a>Proces objednávky vrácení
 Následující obrázek podává přehled procesu objednávky vrácení.  
 
-[![VaceníProdaného01](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
+[![Proces objednávky vrácení](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
 
 Existují dva typy procesu vracení: fyzické vrácení a jen kredit.
 
@@ -213,7 +213,7 @@ Existují dvě metody pro správu náhradního produktu:
 
 Při náhradě předem lze náhradu zboží doručit zákazníkovi už předtím, než bude zboží vráceno. Tato metoda je užitečná například tehdy, jestliže je toto zboží součástí stroje, kterou nelze vyjmout, není-li k dispozici náhradní díl namísto něj, nebo jestliže chcete, aby Váš zákazník měl náhradní produkt k dispozici co nejdříve. Objednávka náhrady předem je nezávislá prodejní objednávka. Informace v záhlaví jsou inicializovány od zákazníka a informace o řádku jsou inicializovány z objednávky vrácení. Objednávku náhrady můžete upravovat, zpracovávat a odstraňovat nezávisle na objednávce vracení. Při výmazu objednávky náhrady obdržíte zprávu, že objednávka byla vytvořena jako objednávka náhrady. Následující obrázek znázorňuje proces náhrady předem.  
 
-[![Proces náhrady předem](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)  
+![Proces náhrady předem](./media/SalesReturn04.png)
 
 Objednávka vrácení obsahuje odkaz na objednávku vrácení. Pokud pro objednávku vrácení bude už před vrácením vadného zboží vytvořena objednávka předem, pak po vrácení vadného zboží už nemůžete vybrat dispoziční kódy pro náhradu.
 
@@ -221,7 +221,7 @@ Objednávka vrácení obsahuje odkaz na objednávku vrácení. Pokud pro objedn�
 
 Pokud dodáváte zákazníkovi náhradní zboží a v objednávce vrácení použijete dispoziční akce **Nahradit a vyřadit** nebo **Nahradit a připsat na účet** postupujte podle procesu vyobrazeného na následujícím obrázku.  
 
-[![Náhradní proces při použití dispozičního kódu](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)  
+![Náhradní proces při použití dispozičního kódu](./media/SalesReturn05.png)
 
 Náhradní zboží bude doručeno pomocí nezávislé prodejní objednávky, náhradní prodejní objednávky. Tato prodejní objednávka je vytvářena při generování dodacího listu pro objednávku vrácení. Záhlaví objednávky používá informace od zákazníka, na které je odkazováno v hlavičce objednávky vrácení. Informace o řádku jsou shromažďovány z informací zadaných na stránce **Náhrada zboží**. Stránka **Náhrada zboží** musí být vyplněna pro řádky, které mají dispoziční akce, které začínají slovem "replace" ("nahradit"). Avšak ani množství ani totožnost náhradního zboží nebude ověřena ani omezena. Toto chování umožňuje případy, kdy zákazník požaduje stejné zboží, ale v jiné konfiguraci nebo velikosti a také případy, kdy zákazník chce úplně jiné zboží. Dle výchozího nastavení se shodné zboží zadává na stránce **náhrada zboží**. Můžete však vybrat jiné zboží, za předpokladu, že byla nastavena funkce. **Poznámka:** náhradní prodejní objednávku můžete po jejím vytvoření upravit enbo vymazat.
 
@@ -254,7 +254,7 @@ Objednávky vrácení lze dokončit mezi dvěma společnostmi v rámci organizac
 
 Na následujícím obrázku je zobrazeno minimální nastavení, které je potřebné pro dvě společnosti, aby se mohly účastnit mezipodnikových vztahů a využívat mezipodnikový obchod.  
 
-[![Minimální konfigurace](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)  
+![Minimální nastavení](./media/SalesReturn06.png)
 
 V následujícím scénáři je CompBuy kupující společnost a CompSell je prodávající společnost. Prodávající společnost obvykle dodává zboží buďto kupující společnosti, nebo, v případech scénáře přímé dodávky, přímo ke koncovému zákazníkovi. V CompBuy je mezipodnikový dodavatel\_CompSell definován jako mezipodnikový koncový bod, který je spojen s firmou CompSell. Zároveň je v CompSell je mezipodnikový odběratel\_CompBuy definován jako mezipodnikový koncový bod, který je propojen s firmou CompBuy. V obou společnostech musí být definovány příslušné podrobnosti zásad akce a mapování hodnot. V případě scénáře přímé dodávky zásilky je v prodávající společnosti vytvořena mezipodniková objednávka vrácení, což je také mezipodniková prodejní objednávka. Číslo RMA mezipodnikové objednávky vrácení lze vybrat z posloupnosti čísel RMA v CompSell nebo jej lze zkopírovat z čísla RMA přiřazeného k původní objednávce vrácení v CompBuy. Tyto akce určuje nastavení čísla RMA v zásadách akce **Nákupní požadavek** v CompBuy. Bude-li číslo RMA synchronizováno, měli byste naplánovat zmírňování rizika střetu čísel pro případ, že obě společnosti použijí stejnou číselnou posloupnost.
 
@@ -262,7 +262,7 @@ V následujícím scénáři je CompBuy kupující společnost a CompSell je pro
 
 Tento scénář zahrnuje dva podniky ve stejné organizaci, jak je znázorněno na následujícím obrázku.  
 
-[![Jednoduché mezipodnikové vrácení](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)  
+![Jednoduché mezipodnikové vrácení](./media/SalesReturn07.png)
 
 Řetězec objednávky lze založit tehdy, když bude v kupující společnosti vytvořena objednávka vrácení dodavateli nebo když bude v prodávající společnosti vytvořena objednávka vrácení zákazníkovi. Finance and Operations vytvoří příslušnou objednávku v opačné společnosti a zajistí, aby informace hlavičky a řádku na objednávce vrácení dodavateli reflektovaly nastavení na objednávce vrácení zákazníkovi. Objednávka vrácení, která je zavedena, může obsahovat nebo vylučovat referenci (**Najít objednávku vrácení**) na stávající zákaznickou fakturu. Dodací listy a faktury obou objednávek lze zpracovat individuálně. Například není nutné generovat dodací list pro objednávku vrácení dodavateli před vytvořením dodacího listu pro objednávku vrácení zákazníkovi.
 
@@ -270,7 +270,7 @@ Tento scénář zahrnuje dva podniky ve stejné organizaci, jak je znázorněno 
 
 Tento scénář lze založit, jestliže byl dokončen předchozí prodej typu **Přímá dodávka** a jestliže existuje faktura oproti zákazníkovi ve společnosti, která spolupracuje se zákazníkem. Na následujícím obrázku společnost CompBuy nejprve prodala a fakturovala produkty zákazníkovi Extern. Produkty byly zaslány přímo od společnosti CompSell zákazníkovi prostřednictvím mezipodnikového řetězce.  
 
-[![Vrácení zásilky přímé dodávky mezi třema stranami](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)  
+![Vrácení zásilky přímé dodávky mezi třemi stranami](./media/SalesReturn08.png)
 
 Jestliže chce externí zákazník produkty vrátit, bude vytvořena objednávka vrácení(RMA02) pro odběratele ve společnosti CompBuy. Jestliže chcete vytvořit mezipodnikový řetězec, musí být objednávka vrácení označena pro přímou dodávku. Při použití funkce **Najít prodejní objednávku** vyberte fakturu odběratele, kterou chcete vrátit, a bude založen mezipodnikový řetězec skládající se z následujících dokladů:
 
@@ -292,7 +292,7 @@ V následujících příkladech je cena nákladů na vrácení reprezentována j
 
 Objednávka vrácení neodkazuje na fakturu odběratele. Vrácené zboží je účtováno ve prospěch. Při generování faktury pro objednávku vrácení nebo dobropisu není vybrán parametr **Korekce přípisu**.  
 
-[![Objednávka vrácení neodkazuje na fakturu odběratele.](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)  
+![Objednávka vrácení neodkazuje na fakturu odběratele.](./media/SalesReturn09.png)  
 
 **Poznámka:** hlavní cena zboží se používá jako výchozí hodnota pro parametr **Nákladová cena vrácení**. Implicitní cena se liší od nákladové ceny v době vydání zásob. Důsledkem tedy je, že vznikla ztráta 3. Kromě toho objednávka vrácení neobsahuje slevu, která byla poskytnuta zákazníkovi na prodejní objednávku. Proto dojde k přeplatku.
 
@@ -300,7 +300,7 @@ Objednávka vrácení neodkazuje na fakturu odběratele. Vrácené zboží je ú
 
 Příklad 2 je stejný jako v příkladu 1, ale při generování faktury pro objednávku vrácení je vybrán parametr **Korekce přípisu**.  
 
-[![Objednávka vrácení, v níž byla vybrána korekce přípisu ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)  
+![Objednávka vrácení, v níž byla vybrána korekce na straně Dal ](./media/SalesReturn10.png)  
 
 **Poznámka:** Účetní zápisy hlavní knihy jsou zadány jako záporné opravy.
 
@@ -308,7 +308,7 @@ Příklad 2 je stejný jako v příkladu 1, ale při generování faktury pro ob
 
 V tomto příkladu je řádek objednávky vrácení vytvořen pomocí funkce **Najít prodejní objednávku**. Při vytváření faktury není vybrán parametr **Korekce přípisu**.  
 
-[![Řádek objednávky vrácení je vytvořen pomocí funkce Najít prodejní objednávku ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)  
+![Řádek objednávky vrácení vytvořen pomocí funkce Najít prodejní objednávku ](./media/SalesReturn11.png)  
 
 **Poznámka:** **Slevy** a **Nákladová cena vrácení** jsou správně nastaveny. Proto dojde k přesnému vzetí zpět faktury odběratele.
 

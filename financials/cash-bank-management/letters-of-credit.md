@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bd61cd2a5fa7705f3f9152323281e6f4ca520dc1
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 64446efd518390ee2a7204e2c977fa4174581808
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -46,6 +45,13 @@ Akreditiv obsahuje popis zboží, všechny požadované dokumenty, datum expedic
 
 Akreditiv může být odvolatelný nebo neodvolatelný. Druh akreditivu může být převoditelný, nepřevoditelný a opakovaný. Akreditiv je zpravidla neodvolatelný a potvrzený dohodou, že platba konkrétnímu příjemci proběhne po dodání kompletní a přesné dopravní dokumentace.
 
+Další informace naleznete v následujících tématech:
+
+[Import akreditivu](tasks/import-letter-credit.md)
+
+[Export akreditivu](tasks/export-letter-credit.md)
+
+[Vytvoření bankovního zařízení pro akreditiv](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
 

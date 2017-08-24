@@ -3,7 +3,7 @@ title: "Zpracování hlavního deníku"
 description: "Tento článek popisuje funkce v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, které usnadňují zpracování hlavního deníku a pomocí kterých lze také zaručit správnost pořízených dat a dodržení interní kontroly."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/25/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 244eada4202106b65198e3d6e3d0dedaa5486632
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 68da281cb4793ed83f70c68d061d327aa8a8c772
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -40,7 +39,7 @@ Jednou z nejdůležitějších oblastí nastavení jsou názvy deníků. Je vhod
 
 Na stránce **Názvy deníků** můžete nastavit následující prvky:
 
--   **Schválení workflowu** – Chcete-li zlepšit interní kontrolu, definujte workflowy deníků, které stanovují limity významnosti pro kroky kontroly a schvalování na základě kritérií, jako je například celková částka na straně Má dáti. Workflowy pro hlavní deníky můžete nastavit na stránce** Workflowy hlavní knihy**.
+-   **Schválení workflowu** – Chcete-li zlepšit interní kontrolu, definujte workflowy deníků, které stanovují limity významnosti pro kroky kontroly a schvalování na základě kritérií, jako je například celková částka na straně Má dáti. Workflowy pro hlavní deníky můžete nastavit na stránce **Workflowy hlavní knihy**.
 -   **Výchozí hodnoty** – vyberte výchozí hodnoty pro protiúčty, měnu a finanční dimenze.
 -   **Kontrola deníku** – lze nastavit omezení pro společnost a typ účtu a rovněž pro hodnoty segmentů. 
 
@@ -82,8 +81,13 @@ Nastavení hlavního účtu poskytuje mnoho možností pro zpracování hlavníh
 
 Účetní struktury a struktury rozšířených pravidel jsou velice důležité pro zajištění toho, aby byla data potřebná pro finanční vykazování a sledování výkonu zachycována během zpracování hlavního deníku a jakékoli dokumentace. Účetní struktury a struktury rozšířených pravidel vám umožní přizpůsobit zadávání dat. Můžete povolit zadávání dat pouze pro finanční dimenze, které jsou relevantní v každé situaci a také můžete vynutit požadavek, aby byla vždy zaznamenána povinná a správná data.
 
-Další informace naleznete v tématu [Plánování: účtová osnova](plan-chart-of-accounts.md). 
-
+Další informace naleznete v následujících tématech:
+- [Plánování: Účtová osnova](plan-chart-of-accounts.md). 
+- [Vytvoření rozšířených pravidel pro deníky](tasks/create-advanced-rules-journals.md)
+- [Vytvoření položky deníku pomocí šablony](tasks/create-journal-entry-template.md)
+- [Vytváření a ověřování deníků](tasks/create-validate-journals.md)
+- [Účtování periodických deníků](tasks/post-periodic-journals.md)
+- [Zpracování deníku přidělení hlavní knihy](tasks/process-ledger-allocation-journal.md)
 
 
 

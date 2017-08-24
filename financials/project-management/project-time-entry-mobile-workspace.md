@@ -18,12 +18,11 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: d80dea89db1fbe270b96063f3818ec3ac95239c8
+ms.translationtype: HT
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 83899969255a9b771fc5e62e66e3c5ffdca0296e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -105,11 +104,11 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 2.  Vyberte **Časový záznam**. Zobrazí se kalendářní data pro aktuální týden.
 3.  Pro vybrané datum zvolte možnosti **Akce**&gt;**Nový záznam**.
 4.  Zadejte počet hodin, který chcete zaznamenat.
-5.  Vyberte projekt pro časový záznam. Seznam uvádí projekty, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+5.  Vyberte projekt pro časový záznam. Seznam uvádí projekty, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 6.  Není-li váš projekt v seznamu, vyberte možnost **Vyhledávat další**. Hledejte podle názvu nebo přepněte pro hledání podle názvu projektu nebo odběratele.
-7.  Vyberte kategorii. Seznam uvádí kategorie, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+7.  Vyberte kategorii. Seznam uvádí kategorie, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 8.  Není-li vaše kategorie v seznamu, vyberte možnost **Vyhledávat další**. Hledejte podle kategorie nebo přepněte pro hledání podle názvu kategorie.
-9.  Vyberte aktivitu. Seznam uvádí aktivity, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+9.  Vyberte aktivitu. Seznam uvádí aktivity, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 10. Není-li vaše aktivita v seznamu, vyberte možnost **Vyhledávat další**. Hledejte podle čísla aktivity nebo přepněte pro hledání podle účelu.
 
 11. Zvolte vlastnost řádku.

@@ -1,7 +1,7 @@
 ---
 title: "Vytvoření plateb dodavatele pomocí návrhu platby"
 description: "Toto téma obsahuje přehled možností návrhu platby a nabízí příklady zobrazující, jak návrh plateb funguje. Návrhy plateb jsou často používány k vytvoření platby dodavatele, protože dotaz umožňuje rychle vybrat faktury dodavatele pro platbu na základě kritérií, jako jsou data splatnosti a platební slevy."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/17/2017
 ms.topic: article
@@ -15,8 +15,8 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
-ms.author: kweekley
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786

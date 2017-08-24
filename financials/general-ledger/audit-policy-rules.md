@@ -3,7 +3,7 @@ title: "Pravidla zásad auditu"
 description: "Zásady auditu můžete použit pro vyhodnocení sestav výdajů, faktur dodavatele a nákupních objednávek, abyste se ujistili, že jsou v souladu s pravidly zásad, které jste vytvořili. Všechna pravidla, která jsou přidružena k zásadě auditu, jsou spouštěna v dávkovém režimu podle určeného plánu.  Každé pravidlo zásad je instancí typu pravidla zásad. Pro každý typ pravidla zásad může být aktivní pouze jedno pravidlo zásad současně."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 43d2595a4a80e68ed1c0e5639e5413d732fe6a32
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 68f31f00a30513b7d2f3f36a39eaf1cfe7a219a1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -100,8 +99,8 @@ Všechna pravidla zásad pro určitou zásadu auditu sdílí stejné parametry d
 <a name="see-also"></a>Viz také
 --------
 
-[Auditní porušení zásad a případy](audit-policy-violations-cases.md)
-
+[Porušení a případy zásad auditu](audit-policy-violations-cases.md)
+[Definování zásad auditu pro zdrojové dokumenty](tasks/define-audit-policies-source-documents.md)
 
 
 

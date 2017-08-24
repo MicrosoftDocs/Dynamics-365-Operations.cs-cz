@@ -1,9 +1,9 @@
 ---
-title: "Dostupný obsah Power BI"
+title: Obsah Power BI
 description: "V tomto tématu je uveden seznam obsahu Power BI, který je k dispozici a odkazuje na zdroje, které uvádějí podrobnější informace."
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,17 +15,17 @@ ms.custom: 265694
 ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 282973618e56db3feb0103a7021a66d137218a7a
+ms.sourcegitcommit: 0574c8c1164ef54095135bd9b3f2a946320f8996
+ms.openlocfilehash: f6401406981abc3252b7247510e80f12f2c4510d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 08/07/2017
 
 ---
 
-# <a name="power-bi-content-available"></a>Dostupný obsah Power BI
+# <a name="power-bi-content"></a>Obsah Power BI
 [!include[banner](../includes/banner.md)]
 
 
@@ -34,6 +34,7 @@ V tomto tématu je uveden seznam obsahu Microsoft Power BI, který je k dispozic
 ## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Obsah Power BI content pro aktualizaci Dynamics 365 for Finance and Operations, Enterprise edition, červenec 2017
 Pokud používáte aplikaci Microsoft Dynamics 365 Finance and Operations, Enterprise edition v aktualizaci z července 2017, je k dispozici následující obsah Power BI:
 
+- [Obsah Power BI pro porovnání skutečné situace s rozpočtem](ledger-budgets-power-bi.md)
 - [Obsah zaměstnaneckých výhod v Power BI](benefits-power-bi.md)
 - [Obsah přehledu hotovosti v Power BI](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 - [Obsah přehledu CFO v Power BI](CFO-power-bi.md)

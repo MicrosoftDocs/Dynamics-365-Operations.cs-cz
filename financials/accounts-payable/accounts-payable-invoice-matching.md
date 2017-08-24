@@ -3,7 +3,7 @@ title: "Párování faktur závazků"
 description: "Párování faktur závazků je procesem párování informací na faktuře dodavatele, nákupní objednávce a příjemce produktu."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6d1348ad43f8170f29bfc2f3df8a2ec60f9f8912
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: aa195f6057ae4ea511d661ffb47b1feeed58d2f9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -192,7 +191,7 @@ Faktury dodavatele bývají často založeny na příjemkách produktu, které p
 -   Zadejte částky faktur, které nebyly zahrnuty na původní nákupní objednávce, aby se informace na faktuře shodovaly s fakturou přijatou od dodavatele. Můžete porovnat náklady pro nákupní objednávky s náklady pro faktury. V případě potřeby lze přidat na faktury náklady a přidělit je jednotlivým řádkům faktury.
 -   Zobrazte a schvalte odchylky párování cen mezi čistou jednotkovou cenou na faktuře a čistou jednotkovou cenou na nákupní objednávce. Pro právnické osoby, dodavatele a položky je možné nastavit procentuální tolerance ceny. Pokud se částka na řádku faktury dodavatele nenachází v přijatelné toleranci ceny, můžete fakturu uložit, dokud nedojde ke schválení jejího zaúčtování nebo dokud neobdržíte od dodavatele opravu.
 
-Další informace naleznete v tématu [Zásady třícestného párování](three-way-matching-policies.md).
+Další informace naleznete v tématu [Zásady třícestného párování](three-way-matching-policies.md) a [Nastavení ověřování párování faktur závazků](tasks/set-up-accounts-payable-invoice-matching-validation.md). 
 
 
 

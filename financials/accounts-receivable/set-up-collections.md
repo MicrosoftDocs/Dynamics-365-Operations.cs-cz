@@ -1,9 +1,9 @@
 ---
 title: "Nastavení kreditu a inkas"
 description: "Tento článek popisuje postup nastavení funkce inkasa."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,14 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14031
 ms.assetid: dcc6da2f-9af5-4f1d-abaa-b72967b66979
 ms.search.region: Global
-ms.author: mfalkner
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4d3682c486e80afd03ec5805575357f4e87781f2
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 76937aacbc1925603766299168ec2d4090bd161b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -69,7 +69,7 @@ Pokud budete na stránce **Inkasa** odesílat e-mailové zprávy s přílohami p
 Nastavte parametry pohledávek, které se zobrazují na kartě **Inkasa**.
 
 ## <a name="optional-set-up-collections-agents"></a>Nepovinné: Nastavení inkasních agentů
-Pokud ve vaší organizaci inkasní práci vykonává více uživatelů, můžete nastavit inkasní agenty. Inkasní agent je pracovník, který je nastaven jako uživatel na stránce **Vztahy uživatele**. Přiřazením fondů zákazníků (dotazů na odběratele) můžete inkasním agentům usnadnit organizaci jejich práce. Inkasní agenti jsou přidáni do týmu, který je vybrán na stránce**Parametry pohledávek**. Pokud není na této stránce vybrán tým, automaticky se vytvoří nový tým s názvem **Inkasa** a inkasní agenti budou přidáni do tohoto týmu.
+Pokud ve vaší organizaci inkasní práci vykonává více uživatelů, můžete nastavit inkasní agenty. Inkasní agent je pracovník, který je nastaven jako uživatel na stránce **Vztahy uživatele**. Přiřazením fondů zákazníků (dotazů na odběratele) můžete inkasním agentům usnadnit organizaci jejich práce. Inkasní agenti jsou přidáni do týmu, který je vybrán na stránce **Parametry pohledávek**. Pokud není na této stránce vybrán tým, automaticky se vytvoří nový tým s názvem **Inkasa** a inkasní agenti budou přidáni do tohoto týmu.
 
 ## <a name="set-up-a-writeoff-account"></a>Nastavit účtu pro odpis
 Nastavte účet pro odpis používaný pro položky odpisu hlavní knihy, když je odepsána transakce. Tento účet je uložen v účetním profilu odběratele.
@@ -94,5 +94,12 @@ Pokud chcete na stránce **Inkasa** posílat těmto prodejcům e-mailové zpráv
 Pokud obchodní zástupce není zadán, použije se primární prodejce pro organizaci odběratele. Pokud není určen primární prodejce, e-mailové zprávy budou odeslány prvnímu prodejci uvedenému na stránce.
 
 
+Další informace naleznete v následujících tématech:
+
+ - [Vytvoření posloupnosti upomínek](tasks/create-collection-letter-sequence.md)
+ 
+ - [Zpracování upomínek](tasks/process-collection-letters.md)
+ 
+ - [Kontrola inkasních informací](tasks/review-collections-information.md)
 
 
