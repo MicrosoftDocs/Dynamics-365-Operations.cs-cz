@@ -13,13 +13,13 @@ ms.reviewer: margoc
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: fc446f381850f4f42b6dbc886646d3d32f2d5dd7
-ms.openlocfilehash: 1b46d24a0f671502c9dc3d46849240342d680468
+ms.sourcegitcommit: 8ae84f23744947cf49365d318a208802c6db95a9
+ms.openlocfilehash: 5c40e4bf1d2defeeb656348e1bc3886d5423ca12
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 07/27/2017
 
 Microsoft Dynamics 365 for Finance and Operations je obchodní aplikace společnosti Microsoft pro podniky. Umožňuje uživatelům rychle provádět lepší rozhodnutí prostřednictvím inteligentního uživatelského rozhraní, které poskytuje přístup k náhledům a datům v reálném čase. Umožňuje firmám transformovat a inovovat prostřednictvím prověřené obchodní logiky, díky které lze přepracovávat obchodní procesy mnohem rychleji. Poskytuje podnikům flexibilitu růst vlastním tempem a obchodovat téměř kdekoli a kdykoli, což jim umožní globálně rozšířit svou působnost za účelem plnění obchodních potřeb. 
 
-Tato dokumentace vám pomůže pochopit, jak přimět aplikaci Dynamics 365 for Finance and Operations, aby pracovala pro vaši organizaci. Je propojená s dokumentací pro související produkty v sadě Unified Operations, Dynamics 365 for Retail a Dynamics 365 for Talent. 
+Tato dokumentace vám pomůže pochopit, jak přimět aplikaci Dynamics 365 for Finance and Operations, aby pracovala pro vaši organizaci. Je propojená s dokumentací pro související produkty: Dynamics 365 for Retail a Dynamics 365 for Talent. 
 
 <table>
 <colgroup>
@@ -86,7 +86,7 @@ Tato dokumentace vám pomůže pochopit, jak přimět aplikaci Dynamics 365 for 
 <p><a href="../dev-itpro/analytics/financial-reporting-intro">Finanční výkaznictví</a></p>
 <p><a href="../dev-itpro/analytics/general-electronic-reporting">Regulační vykazování</a></p>
 
-<h3><a href="../dev-itpro/mobile-apps/mobile-platform">Mobilní platforma</a></h3>
+<h3><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page">Mobilní platforma</a></h3>
 
 <h3>Funkce pro vývojáře</h3>
 <p><a href="../dev-itpro/dev-tools/developer-home-page">Domovská stránka pro vývojáře</a></p>

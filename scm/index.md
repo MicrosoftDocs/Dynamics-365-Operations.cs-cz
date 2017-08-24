@@ -16,13 +16,13 @@ ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: 
 ms.author: yuyus
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 7e916dd91126d140790cbb3a6a740c2e2f20ccef
+ms.sourcegitcommit: 9e0d4e510542ffdeb01c8c9daffab40f5ba4b654
+ms.openlocfilehash: 3875aab63d2046bf6f0ebeb04622babb6f3f104d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 
@@ -59,8 +59,11 @@ Tato krátká videa vám pomohou začít používat nové funkce, které přiná
 -  [Začínáme v modulu nákladového účetnictví](https://youtu.be/1pUDtJQZ8FU)
 -  [Mobilní pracovní prostor kontroly nákladů](https://youtu.be/imsuTg8rUVk)
 -  [Používání aplikace Excel pro analýzu nákladů](https://youtu.be/-HKHYdClvx8)
+-  [Schválení nákupních objednávek na mobilním zařízení](https://youtu.be/gZ-gOlJe7H8)
 
-### <a name="tech-talk"></a>Technické přednášky 
+### <a name="tech-talks"></a>Technické přednášky
+Většina jich se zabývá funkcionalitou produktu v předchozí verzi aplikace Finance and Operations, ale stále platí stejné koncepty a postupy jsou ve stávající verzi podobné. 
+
 -  <a href="https://youtu.be/zotrj3SbCl4">Konfigurátor produktu v aplikaci Microsoft Dynamics AX</a>
 -  <a href="https://youtu.be/7v8BPmEs9Dg">Hlavní plánování – tipy a triky pro řešení problémů s výkonem</a>
 -  <a href="https://youtu.be/RLXybx20B5o">Pomoc! MRP je pomalé.</a>
@@ -71,9 +74,10 @@ Tato krátká videa vám pomohou začít používat nové funkce, které přiná
 -  <a href="https://youtu.be/5w1MngVchBA">Štítky v novém modulu řízení skladu ve verzi Microsoft Dynamics AX 2012 R3</a>
 -  <a href="https://www.youtube.com/embed/QUxXUrN-7n4">Dynamics AX 2012 R3: pokročilé řízení skladu – běžný pracovní den procesní výroby</a>
 -  <a href="https://youtu.be/y1jrd3A_k70">Subdodávky operací a aktivit ve výrobě</a>
+-  <a href="https://youtu.be/jgmTgJIgEFQ">Správa dopravy (TMS) v nové aplikace Microsoft Dynamics AX</a>
 
 ## <a name="blogs"></a>Blogy
-Výrobě a správě dodavatelského řetězce se věnuje spousta témat v <a href="https://blogs.msdn.microsoft.com/axmfg/">blogu týmu výzkumu a vývoje pro výrobu v Dynamics AX</a> a v <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">blogu týmu výzkumu a vývoje pro správu dodavatelského řetězce v Dynamics AX</a>. Většina jich je napsána pro předchozí verzi aplikace Finance and Operations, ale stále platí stejné koncepty a postupy jsou ve stávající verzi podobné. 
+Výrobě a správě dodavatelského řetězce se věnuje spousta témat v blogu <a href="https://blogs.msdn.microsoft.com/axmfg/">Tým výzkumu a vývoje pro výrobu v Dynamics AX</a> a v blogu <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Tým výzkumu a vývoje pro správu dodavatelského řetězce v Dynamics AX</a>. Většina jich je napsána pro předchozí verzi aplikace Finance and Operations, ale stále platí stejné koncepty a postupy jsou ve stávající verzi podobné. 
 
 ## <a name="white-papers"></a>Dokumenty white paper
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktická cvičení zaměřená na nákladové účetnictví</a> 

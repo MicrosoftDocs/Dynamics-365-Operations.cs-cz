@@ -14,13 +14,13 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 104173
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9f4b007c174961a8e6794ab532d733584f492758
-ms.openlocfilehash: ead315d2e07818b35dd2806fca7e242f4028be07
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 25cba59dfbab2e1030660840e85d278452e39e52
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -29,9 +29,9 @@ ms.lasthandoff: 07/27/2017
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Finance and Operations zahrnuje funkci pro zemi/oblast popsané v dokumentu [Průvodce dostupností produktu](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Tato funkce je povolena na základě primární adresy aktivní právnické osoby. 
+Microsoft Dynamics 365 for Finance and Operations zahrnuje funkci pro zemi/oblast popsané v dokumentu [Mezinárodní průvodce dostupností produktu](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Tato funkce je povolena na základě primární adresy aktivní právnické osoby. 
 
-Toto téma obsahuje seznam prostředků, které vám pomohou dozvědět se více o funkci specifické pro zemi/oblast. 
+Toto téma obsahuje seznam prostředků, které vám pomohou dozvědět se více o řešeních, aktualizacích, výstrahách a funkcích specifických pro zemi/oblast. 
 
 ## <a name="developing-localized-solutions"></a>Vývoj lokalizovaných řešení
 Následující zdroje obsahují pokyny a informace, které mohou pomoci vývojářům a nezávislým výrobcům softwaru, kteří vytvářejí vlastní přizpůsobení specifické pro zemi/oblast nebo vytvářejí řešení pro zemi, kterou společnost Microsoft nepodporuje.
@@ -96,9 +96,13 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 -   [Bankovní výpis CODA](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import)
 -   [Daňové přiznání Intervat](/dynamics365/unified-operations/financials/localizations/emea-bel-intervat-tax-declaration)
 -   [Nastavení sestavy PRODCOM](/dynamics365/unified-operations/financials/localizations/emea-bel-prodcom-report)
+-   [Sestavy odsouhlasení](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports)
 
 ### <a name="brazil"></a>Brazílie
 
+-   [Dlouhodobý majetek CIAP](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset)
+-   [Konfigurace fiskálních knih](/dynamics365/unified-operations/financials/localizations/latam-bra-configure-fiscal-books)
+-   [Export a import transakcí pro konsolidaci hlavní knihy pro Brazílii](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions)
 -   [Fiskální knihy](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-books)
 -   [Zástupný text fiskálního dokumentu](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders)
 -   [Fiskální dokumenty](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework)
@@ -106,12 +110,14 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 -   [Import a ověření dokumentů NF-e XML a souborů DANFE](/dynamics365/unified-operations/financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails)
 -   [Import fiskálních dokumentů](/dynamics365/unified-operations/financials/localizations/latam-bra-import-fiscal-documents)
 -   [Deníky, které jsou generovány během procesu vrácení elektronických plateb](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process)
--   [Procesu NF-e](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process)
+-   [Proces NF-e](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process)
 -   [Parametry pro právnické osoby](/dynamics365/unified-operations/financials/localizations/latam-bra-legal-entity-parameters)
+-   [Zpracování elektronických platebních úhrad pro Brazílii](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances)
 -   [Fiskální doplňkový nákupní doklad](/dynamics365/unified-operations/financials/localizations/latam-bra-purchase-complementary-fiscal-documents)
--   [Odkazovaný fiskální doklad](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents)
--   [Fiskální doplňkový prodejní doklad](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents)
--   [Služba elektronického fiskálního dokumentu](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document)
+-   [Odkazované fiskální doklady](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents)
+-   [Fiskální doplňkové prodejní doklady](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents)
+-   [Elektronický fiskální dokument služby](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document)
+-   [Nastavení, import a ověření dokumentů NF-e XML a DANFE](/dynamics365/unified-operations/financials/localizations/latam-bra-set-up-import-nfe)
 -   [Daňové atributy](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-attributes)
 -   [Platby daně](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-payments)
 -   [Daně](/dynamics365/unified-operations/financials/localizations/latam-bra-calculate-taxes)
@@ -159,6 +165,7 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 - [Úpravy kurzů](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
 - [Formáty souboru pro metody platby](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
 - [Vyřazení dlouhodobého majetku pro Estonsko a Litvu](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
+- [Import souborů ISO20022](/dynamics365/unified-operations/financials/localizations/emea-ISO20022-file-formats)
 - [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
 - [Sestavy deníku zásob](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names)
 - [Číslování faktur a dodacích listů pro Lotyšsko a Litvu](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
@@ -172,8 +179,9 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 - [Stornovací poplatky](/dynamics365/unified-operations/financials/localizations/emea-reverse-charge)
 - [Přehled převodu kreditu SEPA](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer)
 - [Přehled přímého inkasa SEPA](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
-- [Nastavení kompenzace odběratelů a dodavatelů](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions)
+- [Nastavení kompenzace odběratelů a dodavatelů](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions)
 - [Nastavení podepisujících uživatelů pro tiskové formuláře](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
+- [Záporné storno](/dynamics365/unified-operations/financials/localizations/emea-storno)
 - [Daňové předpisy](/dynamics365/unified-operations/financials/localizations/emea-tax-directives)
 - [Aktualizace zobrazení částek v sestavách a dokumentech](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms) 
 - [Směnné kurzy DPH](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
@@ -246,10 +254,11 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 
 -   [Výkaz opravy dlouhodobého majetku](/dynamics365/unified-operations/financials/localizations/emea-ltu-fixed-asset-repair-statement)
 -   [Číslování faktur a dodacích listů](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
+-   [Podrobnosti výpisu DPH](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details)
 
 ### <a name="mexico"></a>Mexiko
 
--   [Prohlášení DIOT](/dynamics365/unified-operations/financials/localizations/latam-mex-diot-declaration-statement)
+-   [Sestava prohlášení DIOT](/dynamics365/unified-operations/financials/localizations/latam-mex-diot-declaration-statement)
 -   [Účetní výkazy elektronické hlavní knihy](/dynamics365/unified-operations/financials/localizations/latam-mex-electronic-ledger-accounting-statements)
 -   [Sestava prohlášení inflační úpravy](/dynamics365/unified-operations/financials/localizations/latam-mex-adjustment-inflation-declaration-report)
 -   [Sestava prohlášení ISR](/dynamics365/unified-operations/financials/localizations/latam-mex-isr-declaration-report-supporting-processes)
@@ -296,6 +305,7 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 -   [Skupiny přecenění dlouhodobého majetku](/dynamics365/unified-operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
 -   [DPH intrakomunitárního plnění](/dynamics365/unified-operations/financials/localizations/emea-esp-intra-community-vat)
 -   [Jednorázoví odběratelé](/dynamics365/unified-operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts)
+-   [Tisk šeků pomocí španělského rozvržení](/dynamics365/unified-operations/financials/localizations/emea-esp-print-checks-with-spanish-layout)
 -   [Možnosti španělské vlastní směnky](/dynamics365/unified-operations/financials/localizations/emea-esp-promissory-note-options)
 -   [Nákupní a prodejní cykly](/dynamics365/unified-operations/financials/localizations/emea-esp-sales-purchase-cycle)
 -   [Zvláštní položky a počáteční stavy](/dynamics365/unified-operations/financials/localizations/emea-esp-opening-sheets-spain)
@@ -313,6 +323,7 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 ### <a name="thailand"></a>Thajsko
 
 -   [Sestavy karet zásob](/dynamics365/unified-operations/financials/localizations/apac-tha-stock-card-reports)
+-   [Nahrazení nebo úprava daňové faktury pro Thajsko](/dynamics365/unified-operations/financials/localizations/apac-tha-substitution-and-adjustment-invoices)
 -   [Neuplatněná DPH](/dynamics365/unified-operations/financials/localizations/apac-tha-unrealized-vat)
 -   [Srážková daň](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax)
 
@@ -320,8 +331,9 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 
 -   [Schéma pro obor stavebnictví pro Spojené království](/dynamics365/unified-operations/financials/localizations/emea-gbr-cis-construction-industry-scheme)
 
-### <a name="united-states"></a>Spojené státy americké
+### <a name="united-states"></a>Spojené státy
 
+-   [Formulář 1099 ve veřejném sektoru](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector)   
 -   [Ověření formuláře I-9](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
 -   [Vykazování 1099 na konci roku](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting)
 -   [Mzdy](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll)
