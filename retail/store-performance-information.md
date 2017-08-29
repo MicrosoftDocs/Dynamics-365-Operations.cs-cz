@@ -1,7 +1,7 @@
 ---
 title: "Analýza výkonnosti obchodu"
 description: "Tento článek vysvětluje použití analýzy v paměti a v reálném čase pro přístup, prohlížení a získání přehledu o výkonu obchodu na základě vašich dat z aplikace Microsoft Dynamics 365 for Retail."
-author: josaw1
+author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 37baac8d3160b95f75dd11197fc60060450c0680
 ms.contentlocale: cs-cz
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

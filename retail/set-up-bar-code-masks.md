@@ -1,7 +1,7 @@
 ---
 title: "Nastavení masek čárových kódů"
 description: "Toto téma popisuje, jak nastavit znaky masky čárového kódu a masky čárového kódu a jak přiřadit masky čárového kódu k čárovým kódům."
-author: josaw1
+author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 958cac2e85ae7fa514f6f26cbb6178d8fdec9783
 ms.contentlocale: cs-cz
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

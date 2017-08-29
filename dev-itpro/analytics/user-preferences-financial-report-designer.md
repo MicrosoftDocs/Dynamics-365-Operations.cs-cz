@@ -1,7 +1,7 @@
 ---
 title: "Uživatelské předvolby v návrháři finančních sestav"
 description: "Tento článek vysvětluje, jak nastavit uživatelské předvolby pro přizpůsobení interakce uživatelů v návrháři finančních sestav, a pro řízení výchozího prostředí po přihlášení. Můžete také určit, jak se zobrazí jednotlivé sestavy, knihovna sestav a výchozí umístění souborů."
-author: ShylaThompson
+author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,7 +16,7 @@ ms.custom: 31161
 ms.assetid: 59da4854-0f8c-4021-acd1-b303c06f4a34
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670

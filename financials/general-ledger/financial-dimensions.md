@@ -1,7 +1,7 @@
 ---
 title: "Finanční dimenze"
 description: "Toto téma popisuje různé typy finančních dimenzí a způsob jejich nastavení."
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

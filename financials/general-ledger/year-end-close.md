@@ -1,7 +1,7 @@
 ---
 title: "Roční uzávěrka"
 description: "Toto téma popisuje požadované nastavení a postup pro spuštění procesu roční uzávěrky hlavní knihy."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

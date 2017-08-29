@@ -1,7 +1,7 @@
 ---
 title: "Posouzení ziskovosti z hlediska odběratelů a produktů"
 description: "Tento článek vysvětluje použití analýzy v paměti a v reálném čase pro přístup, prohlížení a získání přehledu o ziskovosti z hlediska odběratelů a produktů na základě vašich dat z aplikace Microsoft Dynamics 365 for Retail."
-author: josaw1
+author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: ea35bdd54c476fc5a3d329f7ca0dcf014c417e7a
 ms.contentlocale: cs-cz
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

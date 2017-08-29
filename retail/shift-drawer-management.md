@@ -1,7 +1,7 @@
 ---
 title: "Řízení směny a zásuvky s hotovostí"
 description: "Tento článek vysvětluje, jak nastavit a používat dva typy směn pro maloobchodní pokladní místo (POS) - sdílené a samostatné. Sdílené směny může používat více uživatelů na více místech, zatímco samostatné směny může využívat vždy pouze jeden pracovník najednou."
-author: josaw1
+author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 0d5e05e8f1edcc01af985c25459d93de0bc2acf1
 ms.contentlocale: cs-cz
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Přecenění cizí měny pro závazky a pohledávky"
 description: "Teoretická hodnota (účetní hodnota) otevřených transakcí v zahraničních měnách se průběžně liší z důvodu fluktuací směnných kurzů. Tento článek poskytuje informace o procesu přecenění cizí měny, kterého lze využít pro aktualizaci hodnoty otevřených transakcí v modulu Závazky a pohledávky."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: f09589a6f0a684752c7c9b98528e9546fedf341e
 ms.contentlocale: cs-cz
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

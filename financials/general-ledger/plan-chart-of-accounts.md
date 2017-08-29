@@ -1,7 +1,7 @@
 ---
 title: "Plánování účtové osnovy"
 description: "V tomto článku jsou informace, které vám pomohou naplánovat účtové osnovy pro vaši organizaci."
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

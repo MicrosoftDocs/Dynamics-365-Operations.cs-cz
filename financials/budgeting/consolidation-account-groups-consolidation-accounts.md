@@ -1,7 +1,7 @@
 ---
 title: "Skupiny konsolidačních účtů a další konsolidační účty"
 description: "Toto téma obsahuje informace o skupinách konsolidačních účtů a další konsolidačních účtech a vysvětluje způsob jejich použití v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

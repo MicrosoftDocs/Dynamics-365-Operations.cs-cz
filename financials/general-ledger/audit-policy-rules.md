@@ -1,7 +1,7 @@
 ---
 title: "Pravidla zásad auditu"
 description: "Zásady auditu můžete použit pro vyhodnocení sestav výdajů, faktur dodavatele a nákupních objednávek, abyste se ujistili, že jsou v souladu s pravidly zásad, které jste vytvořili. Všechna pravidla, která jsou přidružena k zásadě auditu, jsou spouštěna v dávkovém režimu podle určeného plánu.  Každé pravidlo zásad je instancí typu pravidla zásad. Pro každý typ pravidla zásad může být aktivní pouze jedno pravidlo zásad současně."
-author: twheeloc
+author: ryansandness
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

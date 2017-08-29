@@ -1,7 +1,7 @@
 ---
 title: "Přehled časově rozlišených položek"
 description: "V tomto článku jsou popsána časová rozlišení a jsou zde také informace o způsobu jejich nastavení a vytvoření transakcí."
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
