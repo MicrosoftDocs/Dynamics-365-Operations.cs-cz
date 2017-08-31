@@ -1,7 +1,7 @@
 ---
 title: "Typy hlavního účtu"
 description: "Typy hlavních účtů určují způsob použití hlavního účtu v účtové osnově."
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

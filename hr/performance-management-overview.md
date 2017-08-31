@@ -1,7 +1,7 @@
 ---
 title: "Přehled řízení výkonnosti"
 description: "Proces řízení výkonnosti umožňuje zaměstnancům dokumentovat a diskutovat o jejich výkonnosti s jejich manažerem. Manažerům pak umožňuje poskytovat zpětnou vazbu a zaměstnance vést."
-author: twheeloc
+author: mikefalkner
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -22,7 +22,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: 4872eaf18a07797d06f2f4d7868630d364eeda6e
 ms.contentlocale: cs-cz
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

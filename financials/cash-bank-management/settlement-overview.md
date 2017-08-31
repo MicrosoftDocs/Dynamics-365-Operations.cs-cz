@@ -1,7 +1,7 @@
 ---
 title: "Přehled vyrovnání"
 description: "V tomto článku jsou obecné informace o procesu vyrovnání. Popisuje typy transakcí, které lze vyrovnat, kdy a jak lze transakce vyrovnat, a jaké jsou výsledky procesu vyrovnání."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
 ms.openlocfilehash: ab12ef4127daf57fb0816ae1585876b50d1e81ed
 ms.contentlocale: cs-cz
 ms.lasthandoff: 06/20/2017
-
 
 ---
 

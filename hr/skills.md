@@ -1,7 +1,7 @@
 ---
 title: "Sladění dovedností zaměstnanců s potřebami společnosti"
 description: "Můžete sledovat dovednosti, které zaměstnanci, uchazeči nebo kontaktní osoby mají (nebo které by měli mít) k účinnému plnění svých rolí. Můžete také určit dovednosti, které jsou požadovány pro určitou práci."
-author: rschloma
+author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: ae940cdbab2166d8fe3f2f396c84ed4a09c2ca7e
 ms.contentlocale: cs-cz
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

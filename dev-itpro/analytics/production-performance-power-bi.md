@@ -1,7 +1,7 @@
 ---
 title: "Obsah výkonosti výroby v Power BI"
 description: "Toto téma popisuje, co je součástí obsahu výkonosti výroby v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu."
-author: sericks
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article

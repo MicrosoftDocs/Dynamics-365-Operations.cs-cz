@@ -1,7 +1,7 @@
 ---
 title: "Zálohové faktury pro východní Evropu"
 description: "Zálohová faktura je dokument, který vytvoříte pro odběratele nebo dodavatele. Zálohová faktura uvádí částku, která musí být předplacena na prodejní objednávce. Toto téma obsahuje informace o zálohových fakturách pro východní Evropu."
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -21,7 +21,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: 948124526f5718d783b1ecd80462701610734f82
 ms.contentlocale: cs-cz
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Nastavení centralizovaných plateb"
 description: "Postupujte podle těchto kroků k přípravě zpracování plateb v jedné právnické osobě jménem ostatních právnických osob v organizaci."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article

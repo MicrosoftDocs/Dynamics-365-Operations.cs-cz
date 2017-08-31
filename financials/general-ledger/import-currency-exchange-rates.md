@@ -1,7 +1,7 @@
 ---
 title: "Importovat směnné kurzy měn"
 description: "Jestliže právnická osoba obdržela faktury v cizí měně, je nutné převést cizí měny na místní měnu. To znamená, že jsou potřeba aktuální směnné kurzy pro různé měny. Toto téma obsahuje přehled požadovaných nastavení a zpracování pro import referenčních směnných kurzů publikovaných prostřednictvím Internetu poskytovateli směnných kurzů, jako je Evropská centrální banka a centrální banky Ruska."
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,7 +16,7 @@ ms.custom: 261374
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ms.search.region: Global
 ms.author: epopov
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008

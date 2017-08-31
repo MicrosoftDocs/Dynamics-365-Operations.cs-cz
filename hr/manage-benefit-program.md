@@ -1,7 +1,7 @@
 ---
 title: "Definování a správa programu zaměstnaneckých výhod"
 description: "Lidské zdroje poskytují řadu nástrojů, které vám pomohou k nastavení a správě zaměstnaneckých výhod, srážek a plánů kompenzace pracovníků, které organizace nabízí nebo zpracovává pro své zaměstnance. Tento článek obsahuje informace o postupu nastavení a správy zaměstnaneckých výhod."
-author: rschloma
+author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
 ms.openlocfilehash: 09ad9ad22c676c3b117cc39e692c64ef92637dc1
 ms.contentlocale: cs-cz
 ms.lasthandoff: 06/13/2017
-
 
 ---
 

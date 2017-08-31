@@ -1,7 +1,7 @@
 ---
 title: "Definování a správa klientů z obchodních kanálů, pokladen a hardwarových stanic"
 description: "Toto téma popisuje postup připojení periferních zařízení k vaší pokladně POS."
-author: josaw1
+author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 5c5a6cc45ad65c7581dbfb9a4441fdddbbc19242
 ms.contentlocale: cs-cz
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Pololetní odpisy vyřazení dlouhodobého majetku pro Českou republiku"
 description: "Toto téma vysvětluje, jak nastavit pololetní odpisy, tak abyste mohli použít pololetní odpisy dlouhodobého majetku, který je prodaný nebo jinak vyřazený."
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -21,7 +21,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: bc4b55f1fe860dc4ac12743423aed985c245ee8f
 ms.contentlocale: cs-cz
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

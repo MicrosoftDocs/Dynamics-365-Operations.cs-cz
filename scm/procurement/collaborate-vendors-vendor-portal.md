@@ -1,7 +1,7 @@
 ---
 title: "Spolupráce s dodavateli pomocí portálu pro dodavatele"
 description: "Toto téma vysvětluje, jak nákupčí mohou použít portál pro dodavatele pro spolupráci s externím dodavatelem během procesu potvrzení nákupní objednávky. Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016."
-author: YuyuScheller
+author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,7 +16,7 @@ ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
