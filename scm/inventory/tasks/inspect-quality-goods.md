@@ -1,4 +1,4 @@
---- 
+---
 title: "Kontrola kvality zboží"
 description: "Tato procedura popisuje způsob zpracování objednávky kvality."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -55,5 +55,4 @@ Tato procedura popisuje způsob zpracování objednávky kvality. Tohoto průvod
 4. Klepněte na tlačítko Vybrat.
 5. Klikněte na tlačítko OK.
 6. Zavřete stránku.
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Nastavení požadavků pro správu"
 description: "Tento postup použijte pro povolení procesů správy neshod."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -101,5 +101,4 @@ Tento postup použijte pro povolení procesů správy neshod. Neshoda popisuje p
 3. Zadejte hodnotu do pole Karanténní zóna.
 4. Zadejte nějakou hodnotu do pole Popis.
 5. Zavřete stránku.
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Definování procesů inventur zásob"
 description: "Tento postup vás provede konfigurací základního inventurního procesu vytvořením inventurní skupiny a deníku inventur."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -84,5 +84,4 @@ Tento postup vás provede konfigurací základního inventurního procesu vytvo�
 7. V seznamu vyberte skupinu inventury
     * Můžete zde vybrat konkrétní inventurní skupinu, která má být použita pro položku v určitém skladu, který jste vybrali. Při provádění inventury skladu tato zásada inventury přepíše hlavní zásady inventury pro položku.  
 8. Klikněte na položku Uložit.
-
 

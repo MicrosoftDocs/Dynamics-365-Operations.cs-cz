@@ -1,4 +1,4 @@
---- 
+---
 title: "Oprava informací o sledování zásob"
 description: "Tento postup vás provede procesem vytvoření a zaúčtování deníku převodu zásob, za účelem opravit informace o sledování zásob."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -62,5 +62,4 @@ Tento postup vás provede procesem vytvoření a zaúčtování deníku převodu
 1. Klepněte na položku Zásoby.
 2. Klikněte na Transakce.
     * V tomto poli se zobrazí transakce, které byly vytvořeny při zaúčtování deníku.   
-
 

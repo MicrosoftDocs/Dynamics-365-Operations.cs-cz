@@ -1,7 +1,7 @@
 ---
 title: "Sledování zboží a surovin ve skladu, při výrobě a prodeji"
 description: "Toto téma popisuje, jak můžete použít sledování položky k identifikaci, kde bylo použito zboží nebo suroviny, nebo kde budou použity ve výrobě a prodejních procesech."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje, jak můžete použít sledování položky k identifikaci, kde bylo použito zboží nebo suroviny, nebo kde budou použity ve výrobě a prodejních procesech. 
+Toto téma popisuje, jak můžete použít sledování položky k identifikaci, kde bylo použito zboží nebo suroviny, nebo kde budou použity ve výrobě a prodejních procesech.
 
 Funkce sledování položky je k dispozici na stránce **Sledování položky**. Následující části popisují, jak můžete používat sledování položky, a jaké jsou možnosti a omezení.
 
@@ -142,7 +142,4 @@ Můžete vygenerovat sestavu **Expedováno odběratelům** k identifikaci množs
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Je možné sledovat souběžné a vedlejší produkty?
 Souběžné produkty lze sledovat, ale není možné sledovat vedlejší produkty, protože k nim nejsou obvykle přiřazeny sledovací dimenze. Když sledujete zboží, budou jakékoli související souběžné produkty zahrnuty do podrobností o sledování. Uzel, který obsahuje souběžný produkt, má v podrobnosti slovo "souběžný produkt". Podrobnosti o souběžném produktu můžete z obrazit také výběrem uzlu v podrobnostech o sledování a kliknutím na pevnou záložku **Výroba**.
-
-
-
 

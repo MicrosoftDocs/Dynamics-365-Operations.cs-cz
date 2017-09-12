@@ -1,7 +1,7 @@
 ---
 title: "Sloučit dávky skladových zásob"
 description: "Tento článek obsahuje informace o způsobu sloučení dvou nebo více skladových dávek na sloučenou dávku."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -31,7 +31,7 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek obsahuje informace o způsobu sloučení dvou nebo více skladových dávek na sloučenou dávku. 
+Tento článek obsahuje informace o způsobu sloučení dvou nebo více skladových dávek na sloučenou dávku.
 
 Při slučování dávek mohou výpočty pomoci optimalizovat charakteristiku a atributy dávky ve sloučené dávce. Po výběru zdrojových dávek lze sloučenou dávku zkontrolovat a před zaúčtováním změnit. Sloučení dávky také můžete přenést do skladového deníku ke schválení. Zásoby lze poté rezervovat nebo zaúčtovat přímo ze skladového deníku. Při zaúčtování sloučené dávky jsou zásoby upraveny pro zdrojové dávky a pro sloučenou dávku.
 
@@ -142,7 +142,4 @@ Můžete schválit deník zásob pro sloučení dávky ze stránky se seznamem *
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Poté, co byly sloučeny položky se skutečnou hmotností, proč nejsou zobrazeny údaje o skutečné hmotnosti v deníku zásob?
 Lze sloučit dávky položek se skutečnou hmotností stejně jako všech ostatních položek. Údaje o skutečné hmotnosti však nejsou zobrazeny v deníku zásob. Doporučujeme ověřit údaje o skutečné hmotnosti před přenesením sloučení dávky do deníku zásob.
-
-
-
 

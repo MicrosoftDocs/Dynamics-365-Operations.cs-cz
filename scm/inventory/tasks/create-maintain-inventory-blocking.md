@@ -1,4 +1,4 @@
---- 
+---
 title: "Vytvoření a správa blokování zásob"
 description: "Tento postup popisuje, jak zabránit u fyzických zásob na skladě rezervace jinými odchozími zdrojovými dokumenty pomocí blokování zásob."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -34,7 +34,7 @@ Tento postup popisuje, jak zabránit u fyzických zásob na skladě rezervace ji
 1. Přejděte do možnosti Řízení zásob > Periodické úkoly > Blokování zásob.
 2. Klikněte na položku Nová.
 3. V poli Číslo zboží kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-4. Ze seznamu vyberte položku, kterou chcete vybrat. 
+4. Ze seznamu vyberte položku, kterou chcete vybrat.
     * Vyberte číslo položky v rámci fyzických zásob na skladě, kterou chcete blokovat. Pokud používáte USMF, můžete vybrat položku M9201.  
 5. Zadejte číslo do pole Množství.
     * Používáte-li položku M9201, musíte vybrat číslo menší než 200.  
@@ -55,5 +55,4 @@ Tento postup popisuje, jak zabránit u fyzických zásob na skladě rezervace ji
 1. Klepněte na tlačítko Odstranit.
 2. Klepněte na tlačítko Ano.
 3. Zavřete stránku.
-
 

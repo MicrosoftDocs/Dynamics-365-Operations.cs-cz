@@ -1,4 +1,4 @@
---- 
+---
 title: "Inventura zásob ve skladu"
 description: "Tento postup vás provede procesem vytvoření a zaúčtování deníku inventury zásob za účelem spočítání specifického zboží v jednom umístění ve skladu."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -68,5 +68,4 @@ Tento postup vás provede procesem vytvoření a zaúčtování deníku inventur
 1. Klepněte na položku Zásoby.
 2. Klikněte na Transakce.
     * V tomto poli se zobrazí všechny související transakce vytvořené při zaúčtování deníku inventury zásob.   
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Vytvoření nové zakázky na doplnění stavu zásob dodávky"
 description: "Tato procedura ukazuje, jak vytvořit objednávku doplnění stavu zásob dodávky, kde můžete sledovat očekávanou dodávku od dodavatele do skladu dodávky."
 author: mkirknel
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -60,7 +60,7 @@ Tato procedura ukazuje, jak vytvořit objednávku doplnění stavu zásob dodáv
 ## <a name="receive-items"></a>Přijmout položky
 1. Klikněte na položku Příjemka produktu.
 2. Zadejte hodnotu do pole Externí příjemka produktu.
-3. Do pole Množství zadejte číslo, které je nižší než číslo, které je zde uvedeno. 
+3. Do pole Množství zadejte číslo, které je nižší než číslo, které je zde uvedeno.
 4. Klikněte na tlačítko OK.
 
 ## <a name="check-the-on-hand-inventory"></a>Zkontrolujte množství na skladě.
@@ -70,5 +70,4 @@ Tato procedura ukazuje, jak vytvořit objednávku doplnění stavu zásob dodáv
     * Položky, které byly přijaty jako zásoby dodávky ve vlastnictví dodavatele, jsou k dispozici na skladě. Zbývající množství na objednávce doplnění stavu zásob dodávky je uvedeno v poli Celkem objednáno.  
 4. Zavřete stránku.
 5. Klikněte na tlačítko Zavřít.
-
 

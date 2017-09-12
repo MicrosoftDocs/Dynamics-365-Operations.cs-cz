@@ -1,4 +1,4 @@
---- 
+---
 title: "Sledování položky nebo suroviny"
 description: "Tento postup uvádí použití sledování položky k určení, kde bylo zboží nebo suroviny použity nebo jsou používány."
 author: pjacobse
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -54,5 +54,4 @@ Tento postup uvádí použití sledování položky k určení, kde bylo zboží
 8. V podokně akcí klepněte na možnost Sledování.
 9. Klepněte na Prodejní objednávky za expedované zboží.
 10. Zavřete stránku.
-
 

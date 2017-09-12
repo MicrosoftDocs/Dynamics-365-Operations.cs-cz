@@ -1,4 +1,4 @@
---- 
+---
 title: "Úprava úrovně zásob ve skladu (základní správa skladu)"
 description: "Tento postup vás provede procesem vytvoření a zaúčtování deníku úpravy zásob za účelem úpravy úrovně zásob produktu ve skladu."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -58,5 +58,4 @@ Tento postup vás provede procesem vytvoření a zaúčtování deníku úpravy 
 4. Klikněte na tlačítko OK.
 5. Zavřete formulář.
 6. Zavřete stránku.
-
 

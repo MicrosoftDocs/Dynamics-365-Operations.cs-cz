@@ -1,4 +1,4 @@
---- 
+---
 title: "Vytvoření nového rozvržení skladu"
 description: "Tento postup popisuje způsob nastavení informací o umístění ve skladu."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -49,7 +49,7 @@ Tento postup popisuje způsob nastavení informací o umístění ve skladu. To 
 7. Přepněte rozšíření oddílu Názvy lokalit.
     * Možnosti v tomto oddílu definují výchozí formát pro názvy umístění. V našem příkladu použijeme čísla uličky, stojanu a police.  
 8. Nastavte možnost Včetně uličky na Ano.
-9. Nastavte možnost Včetně stojanu na Ano. 
+9. Nastavte možnost Včetně stojanu na Ano.
 10. V poli Formát zadejte pro stojan hodnotu.
     * Například: -##  
 11. Nastavte možnost Včetně police na Ano.
@@ -74,5 +74,4 @@ Tento postup popisuje způsob nastavení informací o umístění ve skladu. To 
 14. Klepněte na tlačítko Dokončit.
 15. Zavřete stránku.
 16. Aktualizujte stránku.
-
 

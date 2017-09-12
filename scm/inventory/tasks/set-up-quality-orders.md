@@ -1,4 +1,4 @@
---- 
+---
 title: "Nastavení objednávek kvality"
 description: "Tento postup popisuje povolení procesu řízení kvality, kde musí být příchozí zásoby okamžitě po registraci po doručení prohlédnuty."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -142,5 +142,4 @@ Tento postup popisuje povolení procesu řízení kvality, kde musí být příc
 15. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 16. Klikněte na položku Uložit.
 17. Zavřete stránku.
-
 

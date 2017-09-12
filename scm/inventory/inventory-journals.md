@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
@@ -33,7 +33,7 @@ ms.lasthandoff: 07/27/2017
 [!include[retail name](../includes/retail-name.md)]
 
 
-Tento článek popisuje, jak můžete použít deníky zásob k zaúčtování různých typů transakcí fyzických zásob. 
+Tento článek popisuje, jak můžete použít deníky zásob k zaúčtování různých typů transakcí fyzických zásob.
 
 Deníky zásob v aplikaci Microsoft Dynamics 365 for Finance and Operations se používají ke zpracovávání různých typů transakcí fyzických zásob, například k zaúčtování výdejů a příjmů, pohybu zásob, vytváření kusovníků a odsouhlasení fyzických zásob. Všechny tyto deníky zásob se používají podobným způsobem, avšak rozděleny jsou do různých typů.
 
@@ -95,7 +95,4 @@ Deník může používat vždy jen jeden uživatel. Pokud s deníky chce pracova
 
 ## <a name="posting-journal-lines"></a>Řádky účetních deníků
 Vámi vytvořené řádky deníku můžete zaúčtovat kdykoli, dokud položku neuzamknete před dalšími transakcemi. Data, která zadáte do deníku, zůstanou v deníku, i když deník zavřete bez zaúčtování řádků.
-
-
-
 

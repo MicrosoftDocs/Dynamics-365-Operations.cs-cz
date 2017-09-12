@@ -1,4 +1,4 @@
---- 
+---
 title: "Kontrola dostupnosti zásob"
 description: "Tento postup popisuje způsob kontroly množství na skladě a zásob fyzicky k dispozici pro určité číslo položky."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -67,5 +67,4 @@ Tento postup popisuje způsob kontroly množství na skladě a zásob fyzicky k 
 4. Klikněte na Zobrazit dimenze.
 5. Klikněte na tlačítko OK.
 6. Zavřete stránku.
-
 

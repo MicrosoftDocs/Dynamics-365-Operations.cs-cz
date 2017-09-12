@@ -1,4 +1,4 @@
---- 
+---
 title: "Vytvoření a zpracování neshody"
 description: "Tento postup slouží k provádění správy neshody a je založen na existující objednávce kvality."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -27,7 +27,7 @@ ms.lasthandoff: 07/27/2017
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup slouží k provádění správy neshody a je založen na existující objednávce kvality. Tento záznam lze spustit v ukázkové společnosti USMF a můžete navrhované hodnoty. Tento postup obvykle provádí úředník řízení kvality.  Nezbytným předpokladem je spuštění záznamu úkolu „Kontrola kvality zboží“. Aby bylo možné zpracovat schválení neshody, uživatel, který spustí záznam úkolu, musí mít hodnotu "Název" přiřazenou na stránce Uživatelé. Aby bylo možné použít poznámky k dokumentům, uživatel musí také mít aktivováno řízení dokumentů v možnostech uživatele. 
+Tento postup slouží k provádění správy neshody a je založen na existující objednávce kvality. Tento záznam lze spustit v ukázkové společnosti USMF a můžete navrhované hodnoty. Tento postup obvykle provádí úředník řízení kvality.  Nezbytným předpokladem je spuštění záznamu úkolu „Kontrola kvality zboží“. Aby bylo možné zpracovat schválení neshody, uživatel, který spustí záznam úkolu, musí mít hodnotu "Název" přiřazenou na stránce Uživatelé. Aby bylo možné použít poznámky k dokumentům, uživatel musí také mít aktivováno řízení dokumentů v možnostech uživatele.
 
 
 ## <a name="select-a-quality-order"></a>Vyberte objednávku kvality
@@ -78,5 +78,4 @@ Tento postup slouží k provádění správy neshody a je založen na existujíc
 3. Klepněte na tlačítko Ano.
 4. Zavřete stránku.
 5. Zavřete stránku.
-
 

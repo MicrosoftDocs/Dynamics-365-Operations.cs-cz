@@ -1,7 +1,7 @@
 ---
 title: "Přehled doručení"
 description: "Toto téma obsahuje informace o funkci Přehled doručení. Stránka Přehled doručení je součástí této funkce a poskytuje přehled všech položek, které jsou očekávány jako příchozí položky."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
@@ -37,9 +37,9 @@ Toto téma obsahuje informace o funkci Přehled doručení. Stránka Přehled do
 Stránka **Přehled doručení** uvádí přehled všech očekávaných příchozích položek. Zobrazuje také doručení, která mohou být inicializována na základě přehledu. Toto téma se zaměřuje na proces příjmu.
 
 ## <a name="business-scenario"></a>Obchodní scénář
-Předpokládejme následující scénář v příchozích procesech. 
+Předpokládejme následující scénář v příchozích procesech.
 
-[![Obchodní scénář](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png) 
+[![Obchodní scénář](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
 
 Marek, přijímající pracovník, chce vědět, co má být přijato na aktuální den. Na stránce **Přehled doručení** může Marek získat přehled aktuálních úkolů a hrubý odhad množství, objemu, hmotnosti, různých typů objednávek atd. Později je dodávka doručena do jednoho vstupního překladiště a Marek přijme přehled její přehled. Na stránce **Přehled doručení** může Marek provádět následující úlohy:
 
@@ -69,7 +69,7 @@ V tomto příkladu je hodnota v poli **Název profilu přehledu doručení** na 
 
 Pro automatické vytváření deníků doručení ze stránky **Přehled doručení** je nutné definovat příslušné informace ve skupině polí **Deník** na pevné záložce **Možnosti doručení**.
 
--   Při vytváření nového deníku je nutné zadat název deníku. 
+-   Při vytváření nového deníku je nutné zadat název deníku.
 
 [![Zadání názvu deníku](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
 
@@ -123,7 +123,4 @@ Po zaregistrování veškerého zboží může vedoucí skladu nebo vedoucí ná
 
 ## <a name="summary"></a>Souhrn
 Stránka **Přehled doručení** může pomoci vedoucímu skladu a pracovníkům skladu dosáhnout přehledu očekávaných prací, které je třeba provést jako součást příchozího procesu. Na této stránce můžete také spustit proces doručení položky k zajištění, že položky budou sledovány v první položce skladu.
-
-
-
 
