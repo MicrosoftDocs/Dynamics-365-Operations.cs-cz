@@ -16,54 +16,54 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 1178c7a5db129801f83afa8b4caf9357ccf76b71
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1eb7a945243387f85ec5f38cc3b969d8d030ff25
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-new-trade-agreement"></a>Vytvoření nové obchodní smlouvy
+# <a name="create-a-new-trade-agreement"></a><span data-ttu-id="472d9-103">Vytvoření nové obchodní smlouvy</span><span class="sxs-lookup"><span data-stu-id="472d9-103">Create a new trade agreement</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup popisuje vytvoření obchodní dohody, u které zaregistrujete novou prodejní cenu produktu odsouhlasenou se specifickým odběratelem. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Při použití vlastních dat před zahájením tohoto průvodce ověřte, že existuje název deníku obchodních smluv, kde je výchozí vztah je nastaven na „Cena (prodej)“.
+<span data-ttu-id="472d9-104">Tento postup popisuje vytvoření obchodní dohody, u které zaregistrujete novou prodejní cenu produktu odsouhlasenou se specifickým odběratelem.</span><span class="sxs-lookup"><span data-stu-id="472d9-104">This procedure shows you how to create a trade agreement where you register a new product sales price that you've agreed with a specific customer.</span></span> <span data-ttu-id="472d9-105">Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="472d9-105">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="472d9-106">Při použití vlastních dat před zahájením tohoto průvodce ověřte, že existuje název deníku obchodních smluv, kde je výchozí vztah je nastaven na „Cena (prodej)“.</span><span class="sxs-lookup"><span data-stu-id="472d9-106">If you’re using your own data, before you start this guide you need to make sure that a Trade agreement journal name exists where the Default relation is set to “Price (sales)”.</span></span>
 
 
-## <a name="create-and-post-a-new-trade-agreement-journal"></a>Vytvoření a zaúčtování nového deníku obchodní smlouvy
-1. Přejděte do nabídky Prodej a marketing > Ceny a slevy > Deníky obchodních smluv.
-2. Klikněte na položku Nová.
-3. V poli Název kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-4. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-5. Klikněte na odkaz na vybraném řádku v seznamu.
-6. Klikněte na položku Řádky.
-7. V poli Kód účtu vyberte možnost Tabulka.
-    * V tomto příkladu aktualizujete cenu pro určitého odběratele, což znamená, že je nutné vybrat tabulku. Pokud byste aktualizovali katalogovou cenu produktu, vybrali byste Vše, aby nová cena platila pro všechny odběratele. Pokud byste používali různé ceny v různých segmentech odběratelů, vybrali byste možnost Skupina. Chcete-li vybrat skupinu, musíte nastavit možnost Cenové skupiny odběratele.  
-8. V poli Výběr účtu kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-9. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-10. V poli Kód položky vyberte položku Tabulka.
-    * Při zadávání typu obchodní smlouvy Cena (prodej) je nutné vybrat pouze „Tabulka“ v poli Kód položky. Důvodem je skutečnost, že cena je absolutní hodnota a nesmí být stejná pro všechny produkty nebo skupinu produktů.  
-11. V poli Vztah položky kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-12. V seznamu vyberte produkt, který chcete do smlouvy zahrnout.
-    * Poznamenejte produkt, který jste vybrali.  
-13. Klikněte na odkaz na vybraném řádku v seznamu.
-14. Zadejte minimální množství do pole Od.
-    * Pokud odběratel musí objednávat minimální množství, je třeba zde zadat množství, jinak nebude mít na novou cenu nárok.  
-    * Zadáním hodnoty do pole Do určete maximální množství, nad které nebude cena ve smlouvě platit. Pokud nabízíte ceny a slevy založené na několika množstevních kategoriích, zadejte každou množstevní kategorii jako pár minimálního a maximálního množství do polí Od a Do.  
-15. Zadejte cenu do pole Částka v měně.
-16. V poli Od data zadejte datum, od kterého bude tato smlouva platit.
-17. Klikněte na položku Uložit.
-18. Klikněte na tlačítko Ověřit.
-19. Klikněte na možnost Ověřit vybrané řádky.
-20. Klikněte na tlačítko OK.
-21. Klikněte na položku Zaúčtovat.
-22. Klikněte na tlačítko OK.
+## <a name="create-and-post-a-new-trade-agreement-journal"></a><span data-ttu-id="472d9-107">Vytvoření a zaúčtování nového deníku obchodní smlouvy</span><span class="sxs-lookup"><span data-stu-id="472d9-107">Create and post a new trade agreement journal</span></span>
+1. <span data-ttu-id="472d9-108">Přejděte do nabídky Prodej a marketing > Ceny a slevy > Deníky obchodních smluv.</span><span class="sxs-lookup"><span data-stu-id="472d9-108">Go to Sales and marketing > Prices and discounts > Trade agreement journals.</span></span>
+2. <span data-ttu-id="472d9-109">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="472d9-109">Click New.</span></span>
+3. <span data-ttu-id="472d9-110">V poli Název kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="472d9-110">In the Name field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="472d9-111">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="472d9-111">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="472d9-112">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="472d9-112">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="472d9-113">Klikněte na položku Řádky.</span><span class="sxs-lookup"><span data-stu-id="472d9-113">Click Lines.</span></span>
+7. <span data-ttu-id="472d9-114">V poli Kód účtu vyberte možnost Tabulka.</span><span class="sxs-lookup"><span data-stu-id="472d9-114">In the Account code field, select 'Table'.</span></span>
+    * <span data-ttu-id="472d9-115">V tomto příkladu aktualizujete cenu pro určitého odběratele, což znamená, že je nutné vybrat tabulku.</span><span class="sxs-lookup"><span data-stu-id="472d9-115">In this example, you're updating the price for a specific customer, which means you need to choose Table.</span></span> <span data-ttu-id="472d9-116">Pokud byste aktualizovali katalogovou cenu produktu, vybrali byste Vše, aby nová cena platila pro všechny odběratele.</span><span class="sxs-lookup"><span data-stu-id="472d9-116">If you were updating the product's list price, you would select All, so that the new price is valid for all customers.</span></span> <span data-ttu-id="472d9-117">Pokud byste používali různé ceny v různých segmentech odběratelů, vybrali byste možnost Skupina.</span><span class="sxs-lookup"><span data-stu-id="472d9-117">If you were differentiating prices among different customer segments, then you would select Group.</span></span> <span data-ttu-id="472d9-118">Chcete-li vybrat skupinu, musíte nastavit možnost Cenové skupiny odběratele.</span><span class="sxs-lookup"><span data-stu-id="472d9-118">To select Group, you must have set up Customer price groups.</span></span>  
+8. <span data-ttu-id="472d9-119">V poli Výběr účtu kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="472d9-119">In the Account selection field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="472d9-120">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="472d9-120">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="472d9-121">V poli Kód položky vyberte položku Tabulka.</span><span class="sxs-lookup"><span data-stu-id="472d9-121">In the Item code field, select 'Table'.</span></span>
+    * <span data-ttu-id="472d9-122">Při zadávání typu obchodní smlouvy Cena (prodej) je nutné vybrat pouze „Tabulka“ v poli Kód položky.</span><span class="sxs-lookup"><span data-stu-id="472d9-122">When you are entering a trade agreement of type 'Price (sales)', you must only select 'Table' in the Item code field.</span></span> <span data-ttu-id="472d9-123">Důvodem je skutečnost, že cena je absolutní hodnota a nesmí být stejná pro všechny produkty nebo skupinu produktů.</span><span class="sxs-lookup"><span data-stu-id="472d9-123">This is because a price is an absolute value and cannot be same for all products or a group of products.</span></span>  
+11. <span data-ttu-id="472d9-124">V poli Vztah položky kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="472d9-124">In the Item relation field, click the drop-down button to open the lookup.</span></span>
+12. <span data-ttu-id="472d9-125">V seznamu vyberte produkt, který chcete do smlouvy zahrnout.</span><span class="sxs-lookup"><span data-stu-id="472d9-125">In the list, select the product you want to include in the agreement.</span></span>
+    * <span data-ttu-id="472d9-126">Poznamenejte produkt, který jste vybrali.</span><span class="sxs-lookup"><span data-stu-id="472d9-126">Make a note of which product you've selected.</span></span>  
+13. <span data-ttu-id="472d9-127">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="472d9-127">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="472d9-128">Zadejte minimální množství do pole Od.</span><span class="sxs-lookup"><span data-stu-id="472d9-128">In the From field, enter a minimum quantity.</span></span>
+    * <span data-ttu-id="472d9-129">Pokud odběratel musí objednávat minimální množství, je třeba zde zadat množství, jinak nebude mít na novou cenu nárok.</span><span class="sxs-lookup"><span data-stu-id="472d9-129">If the customer has to order a minimum quantity  before they can qualify for the new price, then you need to specify that quantity here.</span></span>  
+    * <span data-ttu-id="472d9-130">Zadáním hodnoty do pole Do určete maximální množství, nad které nebude cena ve smlouvě platit.</span><span class="sxs-lookup"><span data-stu-id="472d9-130">Enter a value in the To field to specify the maximum quantity above which the agreement's price will not be valid.</span></span> <span data-ttu-id="472d9-131">Pokud nabízíte ceny a slevy založené na několika množstevních kategoriích, zadejte každou množstevní kategorii jako pár minimálního a maximálního množství do polí Od a Do.</span><span class="sxs-lookup"><span data-stu-id="472d9-131">If you offer prices and discounts based on multiple quantity breaks, then specify each quantity bracket as a pair of minimum and maximum quantity in the 'From' and 'To' fields respectively.</span></span>  
+15. <span data-ttu-id="472d9-132">Zadejte cenu do pole Částka v měně.</span><span class="sxs-lookup"><span data-stu-id="472d9-132">In the Amount in currency field, enter a price.</span></span>
+16. <span data-ttu-id="472d9-133">V poli Od data zadejte datum, od kterého bude tato smlouva platit.</span><span class="sxs-lookup"><span data-stu-id="472d9-133">In the From date field, enter a date from which this agreement will be valid.</span></span>
+17. <span data-ttu-id="472d9-134">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="472d9-134">Click Save.</span></span>
+18. <span data-ttu-id="472d9-135">Klikněte na tlačítko Ověřit.</span><span class="sxs-lookup"><span data-stu-id="472d9-135">Click Validate.</span></span>
+19. <span data-ttu-id="472d9-136">Klikněte na možnost Ověřit vybrané řádky.</span><span class="sxs-lookup"><span data-stu-id="472d9-136">Click Validate selected lines.</span></span>
+20. <span data-ttu-id="472d9-137">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="472d9-137">Click OK.</span></span>
+21. <span data-ttu-id="472d9-138">Klikněte na položku Zaúčtovat.</span><span class="sxs-lookup"><span data-stu-id="472d9-138">Click Post.</span></span>
+22. <span data-ttu-id="472d9-139">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="472d9-139">Click OK.</span></span>
 
-## <a name="view-trade-agreements-for-a-product"></a>Zobrazení obchodních smluv pro produkt
-1. Přejděte na možnosti Řízení informací o produktech > Produkty > Uvolněné produkty.
-2. V seznamu najděte a vyberte produkt, jehož cenu jste právě aktualizovali.
-3. V podokně akcí klikněte na možnost Prodej.
-4. Klikněte na možnost Zobrazit obchodní smlouvy.
-    * Zkontrolujte podrobnosti obchodní smlouvy o cenách, kterou jste právě vytvořili.    
-5. Zavřete stránku.
+## <a name="view-trade-agreements-for-a-product"></a><span data-ttu-id="472d9-140">Zobrazení obchodních smluv pro produkt</span><span class="sxs-lookup"><span data-stu-id="472d9-140">View trade agreements for a product</span></span>
+1. <span data-ttu-id="472d9-141">Přejděte na možnosti Řízení informací o produktech > Produkty > Uvolněné produkty.</span><span class="sxs-lookup"><span data-stu-id="472d9-141">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="472d9-142">V seznamu najděte a vyberte produkt, jehož cenu jste právě aktualizovali.</span><span class="sxs-lookup"><span data-stu-id="472d9-142">In the list, find and select the product whose price you have just updated.</span></span>
+3. <span data-ttu-id="472d9-143">V podokně akcí klikněte na možnost Prodej.</span><span class="sxs-lookup"><span data-stu-id="472d9-143">On the Action Pane, click Sell.</span></span>
+4. <span data-ttu-id="472d9-144">Klikněte na možnost Zobrazit obchodní smlouvy.</span><span class="sxs-lookup"><span data-stu-id="472d9-144">Click View trade agreements.</span></span>
+    * <span data-ttu-id="472d9-145">Zkontrolujte podrobnosti obchodní smlouvy o cenách, kterou jste právě vytvořili.</span><span class="sxs-lookup"><span data-stu-id="472d9-145">Review the details of the price trade agreement you have just created.</span></span>    
+5. <span data-ttu-id="472d9-146">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="472d9-146">Close the page.</span></span>
 
 

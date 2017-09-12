@@ -16,27 +16,27 @@ ms.custom: 223204
 ms.assetid: 1eda0e62-760b-4737-9dfd-3c3c38d80c1a
 ms.search.region: global
 ms.author: yuyus
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c06f4f636a58ac8068415b1291bd8668e7a977d5
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: eb549d9314799924084c23d0e420fcd377ed8c33
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="cost-element-dimensions"></a>Dimenze prvku nákladů
+# <a name="cost-element-dimensions"></a><span data-ttu-id="27db2-103">Dimenze prvku nákladů</span><span class="sxs-lookup"><span data-stu-id="27db2-103">Cost element dimensions</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Coby jeden ze základních pilířů v nákladovém účetnictví se dimenze prvků nákladů používají pro kategorizaci a sledování, kam jsou náklady převáděny. 
+<span data-ttu-id="27db2-104">Coby jeden ze základních pilířů v nákladovém účetnictví se dimenze prvků nákladů používají pro kategorizaci a sledování, kam jsou náklady převáděny.</span><span class="sxs-lookup"><span data-stu-id="27db2-104">As one of the core pillars in Cost accounting, cost element dimensions are used to categorize and track where costs flow to.</span></span> 
 
-Prvek nákladů odpovídá příslušné položce nákladů v účtové osnově. V zásadě může jít o libovolný typ prvku v nejnižší úrovni společnosti, kde může docházet k toku nákladů. Prvky nákladů jako koncept se pohybují od účtů hlavní knihy po všechny prostředky související s náklady. V současné době nákladové účetnictví podporuje účty hlavní knihy.
+<span data-ttu-id="27db2-105">Prvek nákladů odpovídá příslušné položce nákladů v účtové osnově.</span><span class="sxs-lookup"><span data-stu-id="27db2-105">A cost element corresponds to a cost-relevant item in the chart of accounts.</span></span> <span data-ttu-id="27db2-106">V zásadě může jít o libovolný typ prvku v nejnižší úrovni společnosti, kde může docházet k toku nákladů.</span><span class="sxs-lookup"><span data-stu-id="27db2-106">Basically, it can be any type of element at the lowest level in a business where costs can flow to.</span></span> <span data-ttu-id="27db2-107">Prvky nákladů jako koncept se pohybují od účtů hlavní knihy po všechny prostředky související s náklady.</span><span class="sxs-lookup"><span data-stu-id="27db2-107">Cost elements as a concept range from ledger accounts to all cost-relevant resources.</span></span> <span data-ttu-id="27db2-108">V současné době nákladové účetnictví podporuje účty hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="27db2-108">Currently, Cost accounting supports ledger accounts.</span></span>
 
-## <a name="two-types-of-cost-elements"></a>Dva typy prvků nákladů
-Existují dva typy prvků nákladů: primární prvky nákladů a sekundární prvky nákladů. Následující tabulka popisuje rozdíly mezi oběma typy.
+## <a name="two-types-of-cost-elements"></a><span data-ttu-id="27db2-109">Dva typy prvků nákladů</span><span class="sxs-lookup"><span data-stu-id="27db2-109">Two types of cost elements</span></span>
+<span data-ttu-id="27db2-110">Existují dva typy prvků nákladů: primární prvky nákladů a sekundární prvky nákladů.</span><span class="sxs-lookup"><span data-stu-id="27db2-110">There are two types of cost elements: primary cost elements and secondary cost elements.</span></span> <span data-ttu-id="27db2-111">Následující tabulka popisuje rozdíly mezi oběma typy.</span><span class="sxs-lookup"><span data-stu-id="27db2-111">The following table describes the difference between the two types.</span></span>
 
 <table>
 <colgroup>
@@ -45,36 +45,36 @@ Existují dva typy prvků nákladů: primární prvky nákladů a sekundární p
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Primární prvky nákladů</strong></td>
-<td><strong>Prvky druhotných nákladů</strong></td>
+<td><span data-ttu-id="27db2-112"><strong>Primární prvky nákladů</strong></span><span class="sxs-lookup"><span data-stu-id="27db2-112"><strong>Primary cost elements</strong></span></span></td>
+<td><span data-ttu-id="27db2-113"><strong>Prvky druhotných nákladů</strong></span><span class="sxs-lookup"><span data-stu-id="27db2-113"><strong>Secondary cost elements</strong></span></span></td>
 </tr>
 <tr class="even">
-<td>Primární prvky nákladů představují tok nákladů z finančního účetnictví do nákladového účetnictví. Struktura prvku nákladů odpovídá ziskům a ztrátám účetní struktury v hlavní knize, kde prvek nákladů může odpovídat hlavnímu účtu. Ne všechny hlavní účty musejí být nutně prezentovány jako prvky nákladů závisející na obchodních potřebách. Příklady primárních prvků nákladů zahrnují:
+<td><span data-ttu-id="27db2-114">Primární prvky nákladů představují tok nákladů z finančního účetnictví do nákladového účetnictví.</span><span class="sxs-lookup"><span data-stu-id="27db2-114">The primary cost elements represent the flow of costs from financial accounting to cost accounting.</span></span> <span data-ttu-id="27db2-115">Struktura prvku nákladů odpovídá ziskům a ztrátám účetní struktury v hlavní knize, kde prvek nákladů může odpovídat hlavnímu účtu.</span><span class="sxs-lookup"><span data-stu-id="27db2-115">The cost element structure corresponds to the profit and loss account structure in the general ledger, where a cost element can correspond to a main account.</span></span> <span data-ttu-id="27db2-116">Ne všechny hlavní účty musejí být nutně prezentovány jako prvky nákladů závisející na obchodních potřebách.</span><span class="sxs-lookup"><span data-stu-id="27db2-116">Not all main accounts may necessarily be represented as cost elements depending on the business needs.</span></span> <span data-ttu-id="27db2-117">Příklady primárních prvků nákladů zahrnují:</span><span class="sxs-lookup"><span data-stu-id="27db2-117">Examples of primary cost elements include:</span></span>
 <ul>
-<li>Náklady prodaného zboží</li>
-<li>Nepřímé náklady na materiál</li>
-<li>Osobní náklady</li>
-<li>Náklady na energii</li>
+<li><span data-ttu-id="27db2-118">Náklady prodaného zboží</span><span class="sxs-lookup"><span data-stu-id="27db2-118">Costs of goods sold (COGs)</span></span></li>
+<li><span data-ttu-id="27db2-119">Nepřímé náklady na materiál</span><span class="sxs-lookup"><span data-stu-id="27db2-119">Indirect material costs</span></span></li>
+<li><span data-ttu-id="27db2-120">Osobní náklady</span><span class="sxs-lookup"><span data-stu-id="27db2-120">Personnel costs</span></span></li>
+<li><span data-ttu-id="27db2-121">Náklady na energii</span><span class="sxs-lookup"><span data-stu-id="27db2-121">Energy costs</span></span></li>
 </ul></td>
-<td>Sekundární prvky nákladů představují tok nákladů interně, protože tyto náklady vznikají a používají se pouze v nákladovém účetnictví. Používají se pokud chcete zajistit, že lze sledovat zdroje nákladů. Tyto prvky nákladů se používají při přidělování nákladů a výpočtech režijních nákladů. Příklady sekundárních prvků nákladů zahrnují:
+<td><span data-ttu-id="27db2-122">Sekundární prvky nákladů představují tok nákladů interně, protože tyto náklady vznikají a používají se pouze v nákladovém účetnictví.</span><span class="sxs-lookup"><span data-stu-id="27db2-122">The secondary cost elements represent the flow of costs internally because these costs are created and used only in Cost accounting.</span></span> <span data-ttu-id="27db2-123">Používají se pokud chcete zajistit, že lze sledovat zdroje nákladů.</span><span class="sxs-lookup"><span data-stu-id="27db2-123">They are used to secure that the source of costs can be traced.</span></span> <span data-ttu-id="27db2-124">Tyto prvky nákladů se používají při přidělování nákladů a výpočtech režijních nákladů.</span><span class="sxs-lookup"><span data-stu-id="27db2-124">These cost elements are used in cost allocations and overhead calculations.</span></span> <span data-ttu-id="27db2-125">Příklady sekundárních prvků nákladů zahrnují:</span><span class="sxs-lookup"><span data-stu-id="27db2-125">Examples of secondary cost elements include:</span></span>
 <ul>
-<li>Výrobní náklady</li>
-<li>Výroba, materiál a režie marketingu</li>
+<li><span data-ttu-id="27db2-126">Výrobní náklady</span><span class="sxs-lookup"><span data-stu-id="27db2-126">Production costs</span></span></li>
+<li><span data-ttu-id="27db2-127">Výroba, materiál a režie marketingu</span><span class="sxs-lookup"><span data-stu-id="27db2-127">Production, material, and marketing overheads</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Dimenze prvku nákladů a členy dimenze prvku nákladů
-Prvky náklady se označují jako *dimenze prvků nákladů* . Hodnoty jednotlivých dimenzí se nazývají *členy dimenze prvku nákladů*. V USA máme například strukturu účtové osnovy (COA), která je základem pro statutární vykazování. Tato COA slouží jako dimenze prvku nákladů. Účty, které jsou primární prvky nákladů, jsou představovány jako členy dimenze prvku nákladů v nákladovém účetnictví. Následující obrázek znázorňuje příklad hlavního účtu jako dimenze prvku nákladů s jeho aktuálními hlavními účty jako členy dimenze prvku nákladů. 
+## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a><span data-ttu-id="27db2-128">Dimenze prvku nákladů a členy dimenze prvku nákladů</span><span class="sxs-lookup"><span data-stu-id="27db2-128">Cost element dimensions and cost element dimension members</span></span>
+<span data-ttu-id="27db2-129">Prvky náklady se označují jako *dimenze prvků nákladů* .</span><span class="sxs-lookup"><span data-stu-id="27db2-129">Cost elements are referred to as *cost element dimensions* .</span></span> <span data-ttu-id="27db2-130">Hodnoty jednotlivých dimenzí se nazývají *členy dimenze prvku nákladů*.</span><span class="sxs-lookup"><span data-stu-id="27db2-130">The individual dimension values are called *cost element dimension members*.</span></span> <span data-ttu-id="27db2-131">V USA máme například strukturu účtové osnovy (COA), která je základem pro statutární vykazování.</span><span class="sxs-lookup"><span data-stu-id="27db2-131">For example, you have a US chart of accounts structure (COA) that is the base for your statutory reporting.</span></span> <span data-ttu-id="27db2-132">Tato COA slouží jako dimenze prvku nákladů.</span><span class="sxs-lookup"><span data-stu-id="27db2-132">This COA is used as the cost element dimension.</span></span> <span data-ttu-id="27db2-133">Účty, které jsou primární prvky nákladů, jsou představovány jako členy dimenze prvku nákladů v nákladovém účetnictví.</span><span class="sxs-lookup"><span data-stu-id="27db2-133">The accounts, which are primary cost elements, are represented as the cost element dimension members in Cost accounting.</span></span> <span data-ttu-id="27db2-134">Následující obrázek znázorňuje příklad hlavního účtu jako dimenze prvku nákladů s jeho aktuálními hlavními účty jako členy dimenze prvku nákladů.</span><span class="sxs-lookup"><span data-stu-id="27db2-134">The following screenshot shows an example of Main Accounts as the cost element dimension with its actual main accounts as the cost element dimension members.</span></span> 
 
-[![Dimenze prvku nákladů](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+<span data-ttu-id="27db2-135">[![Dimenze prvku nákladů](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)</span><span class="sxs-lookup"><span data-stu-id="27db2-135">[![cost-element-dimensions](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)</span></span>
 
-## <a name="import-cost-element-dimension-members-through-data-connectors"></a>Import členů dimenze prvků nákladů pomocí datových konektorů
-K usnadnění nastavení členů dimenze prvku nákladů v nákladovém účetnictví můžete použít datové konektory, které jsou předem připravené nebo vytvořené na míru, abyste získali zpět primární prvky nákladů z jednoho nebo více zdrojových systémů.
+## <a name="import-cost-element-dimension-members-through-data-connectors"></a><span data-ttu-id="27db2-136">Import členů dimenze prvků nákladů pomocí datových konektorů</span><span class="sxs-lookup"><span data-stu-id="27db2-136">Import cost element dimension members through data connectors</span></span>
+<span data-ttu-id="27db2-137">K usnadnění nastavení členů dimenze prvku nákladů v nákladovém účetnictví můžete použít datové konektory, které jsou předem připravené nebo vytvořené na míru, abyste získali zpět primární prvky nákladů z jednoho nebo více zdrojových systémů.</span><span class="sxs-lookup"><span data-stu-id="27db2-137">To ease the setup of cost element dimension members in Cost accounting, you can use data connectors that are either pre-built or your custom build to retrieve the primary cost elements from one or more source systems.</span></span>
 
-## <a name="implementation-considerations"></a>Na co myslet při implementaci
-Jelikož prvky nákladů představují nejnižší úroveň podrobností o nákladech, měli byste se ujistit, že všechny požadované prvky nákladů pro manažerské vykazování jsou zahrnuty při implementací struktury prvků nákladů. Může být obtížné najít vhodný počet prvků nákladů pro řízení nákladů. Tisíce prvků nákladů pravděpodobně ztíží řízení jednotlivých prvků nákladů. Jako alternativní postup lze seskupit prvky nákladů a správu řízení nákladů v agregační úrovni.
+## <a name="implementation-considerations"></a><span data-ttu-id="27db2-138">Na co myslet při implementaci</span><span class="sxs-lookup"><span data-stu-id="27db2-138">Implementation considerations</span></span>
+<span data-ttu-id="27db2-139">Jelikož prvky nákladů představují nejnižší úroveň podrobností o nákladech, měli byste se ujistit, že všechny požadované prvky nákladů pro manažerské vykazování jsou zahrnuty při implementací struktury prvků nákladů.</span><span class="sxs-lookup"><span data-stu-id="27db2-139">As cost elements represent the lowest level of cost details, you should make sure that all the cost elements required to make the managerial reporting are included when you implement the cost elements structure.</span></span> <span data-ttu-id="27db2-140">Může být obtížné najít vhodný počet prvků nákladů pro řízení nákladů.</span><span class="sxs-lookup"><span data-stu-id="27db2-140">It can be a challenge to find an appropriate number of cost elements for cost control.</span></span> <span data-ttu-id="27db2-141">Tisíce prvků nákladů pravděpodobně ztíží řízení jednotlivých prvků nákladů.</span><span class="sxs-lookup"><span data-stu-id="27db2-141">Having thousands of cost elements can make it difficult to control each cost element.</span></span> <span data-ttu-id="27db2-142">Jako alternativní postup lze seskupit prvky nákladů a správu řízení nákladů v agregační úrovni.</span><span class="sxs-lookup"><span data-stu-id="27db2-142">As an alternative, you can group cost elements and manage cost control at an aggregated level.</span></span>
 
 
 

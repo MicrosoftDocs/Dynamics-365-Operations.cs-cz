@@ -16,34 +16,34 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: b176adc2cbd23647b98cf55e94829e1ea9637c95
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 8d7151cbcd02f9312ca6b0de5e27231a0b0dc9d6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="mass-financial-period-close"></a>Hromadné uzavření finančního období
+# <a name="mass-financial-period-close"></a><span data-ttu-id="1fd4a-103">Hromadné uzavření finančního období</span><span class="sxs-lookup"><span data-stu-id="1fd4a-103">Mass financial period close</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup ukazuje, jak pozdržet nebo trvale uzavřít období nebo více než jednu právnickou osobu současně. Úkol navíc ukáže, jak omezit skupinu uživatelů, kteří provádějí zaúčtování do konkrétních modulů.
+<span data-ttu-id="1fd4a-104">Tento postup ukazuje, jak pozdržet nebo trvale uzavřít období nebo více než jednu právnickou osobu současně.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-104">This procedure shows how to place a period on hold or permanently close a period or more than one legal entity at a time.</span></span> <span data-ttu-id="1fd4a-105">Úkol navíc ukáže, jak omezit skupinu uživatelů, kteří provádějí zaúčtování do konkrétních modulů.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-105">In addition, the task will show how to restrict user group posting to specific modules.</span></span>
 
-1. Přejděte do části Hlavní kniha > Uzávěrka období > Kalendáře hlavní knihy.
-    * Všimněte si, že zobrazený seznam právnických osob je závislý na fiskálním kalendáři vybraném na stránce. Zobrazí se pouze právnické osoby používající vybraný fiskální kalendář.  
-2. Klikněte na položku Upravit.
-3. Vyberte období, u kterého chcete změnit stav.
-4. Vyberte právnické osoby, u kterých chcete aktualizovat stav.
-    * Zaškrtnutím políčka v levé horní části mřížky můžete rychle vybrat všechny právnické osoby.  
-5. Vyberte možnost Aktualizovat přístup k modulu a definujte přístup k vybranému modulu pro zaúčtování.
-    * Stav modulu může být také aktualizovaný postupně úpravou záznamů v mřížce. Tlačítko je užitečné, když chcete rychle aktualizovat více záznamů právnické osoby.  
-6. V poli Modul aplikace vyberte nebo zadejte modul, jehož stav chcete aktualizovat. Klepněte na tlačítko Vybrat.
-7. V poli Úroveň přístupu vyberte Vše, Žádná nebo konkrétní skupinu uživatelů. Klepněte na tlačítko Vybrat.
-    * Pokud je období otevřené, vše naznačuje tomu, že všichni uživatelé s přístupem k úpravám mohou zaúčtovávat do modulu. Hodnota Žádné označuje, že uživatelé nemůžou zaúčtovávat do modulu, když je období otevřené. Určité uživatelské skupiny určují, že pouze uživatelé ve skupině mohou zaúčtovávat do modulu, pokud je období otevřené.  
-8. Klepněte na položku Aktualizovat.
-9. Vyberte jiné období k aktualizaci stavu.
-10. Vyberte právnické osoby, u kterých chcete aktualizovat stav období.
-11. Vyberte stav aktualizace období a nastavte stav na Blokováno, Otevřeno nebo Trvale uzavřeno.
-    * Otevření naznačuje, že období lze zaúčtovat, pokud má uživatel přístup. Hodnota Blokováno znamená, že období nelze zaúčtovat, ale můžete ho znovu otevřít. Trvale uzavřené znamená, že je období uzavřeno a nikdy je nelze otevřít. Úpravy nelze zaúčtovat. Nedoporučujeme nastavit období na Trvale uzavřeno, dokud nejsou dokončeny všechny úpravy a audity.  
-12. Klepněte na položku Aktualizovat.
+1. <span data-ttu-id="1fd4a-106">Přejděte do části Hlavní kniha > Uzávěrka období > Kalendáře hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-106">Go to General ledger > Period close > Ledger calendars.</span></span>
+    * <span data-ttu-id="1fd4a-107">Všimněte si, že zobrazený seznam právnických osob je závislý na fiskálním kalendáři vybraném na stránce.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-107">Note that the list of legal entities displayed is dependent on the fiscal calendar selected on the page.</span></span> <span data-ttu-id="1fd4a-108">Zobrazí se pouze právnické osoby používající vybraný fiskální kalendář.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-108">Only legal entities using the selected fiscal calendar will display.</span></span>  
+2. <span data-ttu-id="1fd4a-109">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-109">Click Edit.</span></span>
+3. <span data-ttu-id="1fd4a-110">Vyberte období, u kterého chcete změnit stav.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-110">Select the period for which you want to modify the status.</span></span>
+4. <span data-ttu-id="1fd4a-111">Vyberte právnické osoby, u kterých chcete aktualizovat stav.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-111">Select the legal entities for which you want to update the status.</span></span>
+    * <span data-ttu-id="1fd4a-112">Zaškrtnutím políčka v levé horní části mřížky můžete rychle vybrat všechny právnické osoby.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-112">You can quickly select all legal entities  by selecting the check mark on the upper left side of the grid.</span></span>  
+5. <span data-ttu-id="1fd4a-113">Vyberte možnost Aktualizovat přístup k modulu a definujte přístup k vybranému modulu pro zaúčtování.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-113">Select Update module access to define the posting access to a selected module.</span></span>
+    * <span data-ttu-id="1fd4a-114">Stav modulu může být také aktualizovaný postupně úpravou záznamů v mřížce.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-114">The module status can also be updated one-by-one by editing the records in the grid.</span></span> <span data-ttu-id="1fd4a-115">Tlačítko je užitečné, když chcete rychle aktualizovat více záznamů právnické osoby.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-115">The button is useful when you want to quickly update multiple legal entity records.</span></span>  
+6. <span data-ttu-id="1fd4a-116">V poli Modul aplikace vyberte nebo zadejte modul, jehož stav chcete aktualizovat.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-116">In the Application module, select the module that you want to update the status.</span></span> <span data-ttu-id="1fd4a-117">Klepněte na tlačítko Vybrat.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-117">Click Select.</span></span>
+7. <span data-ttu-id="1fd4a-118">V poli Úroveň přístupu vyberte Vše, Žádná nebo konkrétní skupinu uživatelů.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-118">In the Access level, select All, None, or a specific user group.</span></span> <span data-ttu-id="1fd4a-119">Klepněte na tlačítko Vybrat.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-119">Click Select.</span></span>
+    * <span data-ttu-id="1fd4a-120">Pokud je období otevřené, vše naznačuje tomu, že všichni uživatelé s přístupem k úpravám mohou zaúčtovávat do modulu.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-120">All indicates all users with edit access to the module can post if the period is open.</span></span> <span data-ttu-id="1fd4a-121">Hodnota Žádné označuje, že uživatelé nemůžou zaúčtovávat do modulu, když je období otevřené.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-121">None indicates that users cannot post to the module if the period is open.</span></span> <span data-ttu-id="1fd4a-122">Určité uživatelské skupiny určují, že pouze uživatelé ve skupině mohou zaúčtovávat do modulu, pokud je období otevřené.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-122">A specific user group indicates only users in the group are able to post to the module if the period is open.</span></span>  
+8. <span data-ttu-id="1fd4a-123">Klepněte na položku Aktualizovat.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-123">Click Update.</span></span>
+9. <span data-ttu-id="1fd4a-124">Vyberte jiné období k aktualizaci stavu.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-124">Select another period to update the status.</span></span>
+10. <span data-ttu-id="1fd4a-125">Vyberte právnické osoby, u kterých chcete aktualizovat stav období.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-125">Select the legal entites for which you want to update the period status.</span></span>
+11. <span data-ttu-id="1fd4a-126">Vyberte stav aktualizace období a nastavte stav na Blokováno, Otevřeno nebo Trvale uzavřeno.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-126">Select Update period status and set the status of On hold, Open, or Permanently closed.</span></span>
+    * <span data-ttu-id="1fd4a-127">Otevření naznačuje, že období lze zaúčtovat, pokud má uživatel přístup.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-127">Open indicates the period can be posted to, provided the user has access.</span></span> <span data-ttu-id="1fd4a-128">Hodnota Blokováno znamená, že období nelze zaúčtovat, ale můžete ho znovu otevřít.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-128">On hold means the period cannot be posted to, but the period can be reopened.</span></span> <span data-ttu-id="1fd4a-129">Trvale uzavřené znamená, že je období uzavřeno a nikdy je nelze otevřít.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-129">Permanently closed means the period is closed and can never be opened.</span></span> <span data-ttu-id="1fd4a-130">Úpravy nelze zaúčtovat.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-130">Adjustments cannot be posted.</span></span> <span data-ttu-id="1fd4a-131">Nedoporučujeme nastavit období na Trvale uzavřeno, dokud nejsou dokončeny všechny úpravy a audity.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-131">We do not recommend setting a period to Permanently closed until all adjustments and audits are complete.</span></span>  
+12. <span data-ttu-id="1fd4a-132">Klepněte na položku Aktualizovat.</span><span class="sxs-lookup"><span data-stu-id="1fd4a-132">Click Update.</span></span>
 
 

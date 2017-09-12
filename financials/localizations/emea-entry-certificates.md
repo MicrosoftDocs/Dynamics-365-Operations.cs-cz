@@ -18,31 +18,31 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 415e8ec91f3968883cb4e7ece10d8a26782bac1b
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 6856a52ce85d31c4ef8225e56159e8a7ec698fd7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="eu-entry-certificates"></a>Vstupní certifikáty EU
+# <a name="eu-entry-certificates"></a><span data-ttu-id="c346e-103">Vstupní certifikáty EU</span><span class="sxs-lookup"><span data-stu-id="c346e-103">EU entry certificates</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-V tomto článku jsou informace o vstupních certifikátech Evropské unie (EU).
+<span data-ttu-id="c346e-104">V tomto článku jsou informace o vstupních certifikátech Evropské unie (EU).</span><span class="sxs-lookup"><span data-stu-id="c346e-104">This article provides information about European Union (EU) entry certificates.</span></span>
 
-K dispozici máte následující úkoly pro vstupní certifikáty Evropské unie (EU):
+<span data-ttu-id="c346e-105">K dispozici máte následující úkoly pro vstupní certifikáty Evropské unie (EU):</span><span class="sxs-lookup"><span data-stu-id="c346e-105">You can complete the following tasks for a European Union (EU) entry certificate:</span></span>
 
--   Vytvoření a vystavení vstupního certifikátu EU spolu s dodacím listem nebo fakturou odběratele pro dodávku zboží nebo služby do zemí/regionů EU.
--   Zobrazení vstupního certifikátu EU s podpisem zákazníka EU.
--   Odeslání podepsaného vstupního certifikátu EU přijatého od odběratele nebo třetí strany odpovědné za dodání položek odběrateli.
--   Přidružení odeslaného vstupního certifikátu EU k faktuře odběratele.
--   Aktualizace stavu odeslaného vstupního certifikátu EU.
+-   <span data-ttu-id="c346e-106">Vytvoření a vystavení vstupního certifikátu EU spolu s dodacím listem nebo fakturou odběratele pro dodávku zboží nebo služby do zemí/regionů EU.</span><span class="sxs-lookup"><span data-stu-id="c346e-106">Create and issue an EU entry certificate together with a packing slip or customer invoice for the delivery of items or services to EU countries/regions.</span></span>
+-   <span data-ttu-id="c346e-107">Zobrazení vstupního certifikátu EU s podpisem zákazníka EU.</span><span class="sxs-lookup"><span data-stu-id="c346e-107">Receive the EU entry certificate that is signed by an EU customer.</span></span>
+-   <span data-ttu-id="c346e-108">Odeslání podepsaného vstupního certifikátu EU přijatého od odběratele nebo třetí strany odpovědné za dodání položek odběrateli.</span><span class="sxs-lookup"><span data-stu-id="c346e-108">Upload the signed EU entry certificate that is received either from the customer or from a third party who is responsible for delivering items to the customer.</span></span>
+-   <span data-ttu-id="c346e-109">Přidružení odeslaného vstupního certifikátu EU k faktuře odběratele.</span><span class="sxs-lookup"><span data-stu-id="c346e-109">Associate the uploaded EU entry certificate with a customer invoice.</span></span>
+-   <span data-ttu-id="c346e-110">Aktualizace stavu odeslaného vstupního certifikátu EU.</span><span class="sxs-lookup"><span data-stu-id="c346e-110">Update the status of the uploaded EU entry certificate.</span></span>
 
-## <a name="prerequisites"></a>Požadavky
-Následující tabulka zobrazuje požadavky, které musí být splněny, než začnete.
+## <a name="prerequisites"></a><span data-ttu-id="c346e-111">Požadavky</span><span class="sxs-lookup"><span data-stu-id="c346e-111">Prerequisites</span></span>
+<span data-ttu-id="c346e-112">Následující tabulka zobrazuje požadavky, které musí být splněny, než začnete.</span><span class="sxs-lookup"><span data-stu-id="c346e-112">The following table shows the prerequisites that must be in place before you start.</span></span>
 
 <table>
 <colgroup>
@@ -51,54 +51,54 @@ Následující tabulka zobrazuje požadavky, které musí být splněny, než za
 </colgroup>
 <thead>
 <tr class="header">
-<th>Kategorie</th>
-<th>Předpoklad</th>
+<th><span data-ttu-id="c346e-113">Kategorie</span><span class="sxs-lookup"><span data-stu-id="c346e-113">Category</span></span></th>
+<th><span data-ttu-id="c346e-114">Předpoklad</span><span class="sxs-lookup"><span data-stu-id="c346e-114">Prerequisite</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Země / oblast</td>
-<td>Primární adresa právnické osoby musí být v členském státě EU.</td>
+<td><span data-ttu-id="c346e-115">Země / oblast</span><span class="sxs-lookup"><span data-stu-id="c346e-115">Country/region</span></span></td>
+<td><span data-ttu-id="c346e-116">Primární adresa právnické osoby musí být v členském státě EU.</span><span class="sxs-lookup"><span data-stu-id="c346e-116">The primary address of the legal entity must be in a EU member state.</span></span></td>
 </tr>
 <tr class="even">
-<td>Související úkoly nastavení</td>
+<td><span data-ttu-id="c346e-117">Související úkoly nastavení</span><span class="sxs-lookup"><span data-stu-id="c346e-117">Related set up tasks</span></span></td>
 <td><ul>
-<li>Na stránce <strong>Parametry pohledávek</strong> vyberte možnosti <strong>Povolit správu vstupních certifikátů</strong> a <strong>Povolit vystavování vstupních certifikátů</strong>.</li>
-<li>Na stránce <strong>Odběratelé</strong> na pevné záložce <strong>Faktury a dodávky</strong> vyberte možnost <strong>Požadován vstupní certifikát</strong>, čímž označíte, že vstupní certifikát EU je povinný pro odběratele. Vyberte možnost <strong>Vystavit vstupní certifikát</strong>, pokud chcete vystavit vstupní certifikát EU právnické osoby pro odběratele.</li>
-<li>Na stránce <strong>Parametry pohledávek</strong> vyberte kód číselné řady pro odkaz <strong>Vstupní certifikát</strong>.</li>
+<li><span data-ttu-id="c346e-118">Na stránce <strong>Parametry pohledávek</strong> vyberte možnosti <strong>Povolit správu vstupních certifikátů</strong> a <strong>Povolit vystavování vstupních certifikátů</strong>.</span><span class="sxs-lookup"><span data-stu-id="c346e-118">On the <strong>Accounts receivable parameters</strong> page, select the <strong>Enable entry certificate management</strong> and <strong>Enable entry certificate issuing</strong> options.</span></span></li>
+<li><span data-ttu-id="c346e-119">Na stránce <strong>Odběratelé</strong> na pevné záložce <strong>Faktury a dodávky</strong> vyberte možnost <strong>Požadován vstupní certifikát</strong>, čímž označíte, že vstupní certifikát EU je povinný pro odběratele.</span><span class="sxs-lookup"><span data-stu-id="c346e-119">On the <strong>Customers</strong> page, on the <strong>Invoice and delivery</strong> FastTab, select the <strong>Entry certificate required</strong> option to indicate that an EU entry certificate is mandatory for the customer.</span></span> <span data-ttu-id="c346e-120">Vyberte možnost <strong>Vystavit vstupní certifikát</strong>, pokud chcete vystavit vstupní certifikát EU právnické osoby pro odběratele.</span><span class="sxs-lookup"><span data-stu-id="c346e-120">Select the <strong>Issue entry certificate</strong> option to issue an EU entry certificate of the legal entity to the customer.</span></span></li>
+<li><span data-ttu-id="c346e-121">Na stránce <strong>Parametry pohledávek</strong> vyberte kód číselné řady pro odkaz <strong>Vstupní certifikát</strong>.</span><span class="sxs-lookup"><span data-stu-id="c346e-121">On the <strong>Accounts receivable parameters</strong> page, select a number sequence code for the <strong>Entry certificate</strong> reference.</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Související transakce</td>
+<td><span data-ttu-id="c346e-122">Související transakce</span><span class="sxs-lookup"><span data-stu-id="c346e-122">Related transactions</span></span></td>
 <td><ul>
-<li>Vytvoření účtu odběratele.</li>
-<li>Vytvořte prodejní objednávku.</li>
+<li><span data-ttu-id="c346e-123">Vytvoření účtu odběratele.</span><span class="sxs-lookup"><span data-stu-id="c346e-123">Create a customer account.</span></span></li>
+<li><span data-ttu-id="c346e-124">Vytvořte prodejní objednávku.</span><span class="sxs-lookup"><span data-stu-id="c346e-124">Create a sales order.</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="creating-registering-and-uploading-an-eu-entry-certificate"></a>Vytváření, registrace a odesílání vstupního certifikátu EU
-Vstupní certifikát EU můžete vytvořit automaticky nebo ručně. Vstupní certifikát EU se vytvoří a vytiskne automaticky při zaúčtování dodacího listu nebo faktury odběratele pomocí stránky **Zaúčtování dodacího listu** nebo **Zaúčtování faktury**. Pokud chcete ručně vytvořit nebo znovu vytisknout vstupní certifikát EU pro fakturu zákazníka, použijte stránku **Deník faktur**. Dále můžete zadat podrobnosti o vstupním certifikátu EU vystaveném třetí stranou na stránce **Deník vstupního certifikátu**.
+## <a name="creating-registering-and-uploading-an-eu-entry-certificate"></a><span data-ttu-id="c346e-125">Vytváření, registrace a odesílání vstupního certifikátu EU</span><span class="sxs-lookup"><span data-stu-id="c346e-125">Creating, registering, and uploading an EU entry certificate</span></span>
+<span data-ttu-id="c346e-126">Vstupní certifikát EU můžete vytvořit automaticky nebo ručně.</span><span class="sxs-lookup"><span data-stu-id="c346e-126">You can create an EU entry certificate automatically or manually.</span></span> <span data-ttu-id="c346e-127">Vstupní certifikát EU se vytvoří a vytiskne automaticky při zaúčtování dodacího listu nebo faktury odběratele pomocí stránky **Zaúčtování dodacího listu** nebo **Zaúčtování faktury**.</span><span class="sxs-lookup"><span data-stu-id="c346e-127">An EU entry certificate is created and printed automatically when you post a packing slip or invoice for a customer by using the **Packing slip posting** page or the **Posting invoice** page.</span></span> <span data-ttu-id="c346e-128">Pokud chcete ručně vytvořit nebo znovu vytisknout vstupní certifikát EU pro fakturu zákazníka, použijte stránku **Deník faktur**.</span><span class="sxs-lookup"><span data-stu-id="c346e-128">To manually create or reprint an EU entry certificate for a customer invoice, use the **Invoice journal** page.</span></span> <span data-ttu-id="c346e-129">Dále můžete zadat podrobnosti o vstupním certifikátu EU vystaveném třetí stranou na stránce **Deník vstupního certifikátu**.</span><span class="sxs-lookup"><span data-stu-id="c346e-129">Additionally, you can use the **Entry certificate journal** page to enter details about an EU entry certificate that is issued by a third party.</span></span>
 
-### <a name="creating-an-eu-entry-certificate-automatically-or-manually"></a>Vytváření vstupního certifikátu EU automaticky nebo ručně
+### <a name="creating-an-eu-entry-certificate-automatically-or-manually"></a><span data-ttu-id="c346e-130">Vytváření vstupního certifikátu EU automaticky nebo ručně</span><span class="sxs-lookup"><span data-stu-id="c346e-130">Creating an EU entry certificate automatically or manually</span></span>
 
-Vstupní certifikát EU můžete vytvořit automaticky pomocí dodacího listu na stránce **Všechny prodejní objednávky** nebo pomocí faktury na stránce **Prodejní objednávka**. Chcete-li ručně vytvořit vstupní certifikát EU, lze použít fakturu na stránce **Deník faktur**. Před ručním vytvořením vstupního certifikátu EU je však nutné změnit stav certifikátu faktury.
+<span data-ttu-id="c346e-131">Vstupní certifikát EU můžete vytvořit automaticky pomocí dodacího listu na stránce **Všechny prodejní objednávky** nebo pomocí faktury na stránce **Prodejní objednávka**.</span><span class="sxs-lookup"><span data-stu-id="c346e-131">You can create an EU entry certificate automatically by using a packing slip on the **All sales orders** page or by using an invoice on the **Sales order** page.</span></span> <span data-ttu-id="c346e-132">Chcete-li ručně vytvořit vstupní certifikát EU, lze použít fakturu na stránce **Deník faktur**.</span><span class="sxs-lookup"><span data-stu-id="c346e-132">To manually create an EU entry certificate, you can use an invoice on the **Invoice journal** page.</span></span> <span data-ttu-id="c346e-133">Před ručním vytvořením vstupního certifikátu EU je však nutné změnit stav certifikátu faktury.</span><span class="sxs-lookup"><span data-stu-id="c346e-133">However, you must change the certification status of the invoice before you manually create an EU entry certificate.</span></span>
 
-### <a name="registering-an-eu-entry-certificate"></a>Registrace vstupního certifikátu EU
+### <a name="registering-an-eu-entry-certificate"></a><span data-ttu-id="c346e-134">Registrace vstupního certifikátu EU</span><span class="sxs-lookup"><span data-stu-id="c346e-134">Registering an EU entry certificate</span></span>
 
-Pokud je registrace povinná, můžete vstupní certifikát EU vystavený třetí stranou registrovat na stránce**Deník vstupního certifikátu**.
+<span data-ttu-id="c346e-135">Pokud je registrace povinná, můžete vstupní certifikát EU vystavený třetí stranou registrovat na stránce**Deník vstupního certifikátu**.</span><span class="sxs-lookup"><span data-stu-id="c346e-135">If registration is required, you can use the **Entry certificate journal** page to register an EU entry certificate that is issued by a third party.</span></span>
 
-### <a name="uploading-a-received-eu-entry-certificate"></a>Odeslání přijatého vstupního certifikátu EU
+### <a name="uploading-a-received-eu-entry-certificate"></a><span data-ttu-id="c346e-136">Odeslání přijatého vstupního certifikátu EU</span><span class="sxs-lookup"><span data-stu-id="c346e-136">Uploading a received EU entry certificate</span></span>
 
-Pomocí stránky **Přílohy** odešlete přijatý vstupní certifikát EU s podpisem zákazníka ze země EU. Poté, co je certifikát odeslán, je možné jej přiřadit k faktuře jako důkaz dodání položek. Tento doklad je vyžadován, pokud musíte vystavit fakturu, která neobsahuje daň z přidané hodnoty (DPH), a používá se rovněž při auditu.
+<span data-ttu-id="c346e-137">Pomocí stránky **Přílohy** odešlete přijatý vstupní certifikát EU s podpisem zákazníka ze země EU.</span><span class="sxs-lookup"><span data-stu-id="c346e-137">Use the **Attachments** page to upload a received EU entry certificate that is signed by an EU customer.</span></span> <span data-ttu-id="c346e-138">Poté, co je certifikát odeslán, je možné jej přiřadit k faktuře jako důkaz dodání položek.</span><span class="sxs-lookup"><span data-stu-id="c346e-138">After the certificate is uploaded, you can associate it with an invoice as proof that the items were delivered.</span></span> <span data-ttu-id="c346e-139">Tento doklad je vyžadován, pokud musíte vystavit fakturu, která neobsahuje daň z přidané hodnoty (DPH), a používá se rovněž při auditu.</span><span class="sxs-lookup"><span data-stu-id="c346e-139">This proof is required if you must issue an invoice that doesn't include value-added tax (VAT), and it's also used during auditing.</span></span>
 
-### <a name="optional-updating-the-certification-status-and-printing-status-of-an-invoice"></a>Volitelné: Aktualizace stavu certifikátu a tisk stavu faktury
+### <a name="optional-updating-the-certification-status-and-printing-status-of-an-invoice"></a><span data-ttu-id="c346e-140">Volitelné: Aktualizace stavu certifikátu a tisk stavu faktury</span><span class="sxs-lookup"><span data-stu-id="c346e-140">Optional: Updating the certification status and printing status of an invoice</span></span>
 
-Můžete aktualizovat stav vstupního certifikátu a stav tisku faktury odběratele pomocí stránky **Deník faktur**.
+<span data-ttu-id="c346e-141">Můžete aktualizovat stav vstupního certifikátu a stav tisku faktury odběratele pomocí stránky **Deník faktur**.</span><span class="sxs-lookup"><span data-stu-id="c346e-141">You can update the entry certification status and printing status of a customer invoice by using the **Invoice journal** page.</span></span>
 
-## <a name="technical-information-for-system-administrators"></a>Technické informace pro správce systému
-Pokud nemáte přístup ke stránkám, které se používají k dokončení tohoto úkolu, obraťte se na správce systému a poskytněte informace, které jsou uvedeny v následující tabulce.
+## <a name="technical-information-for-system-administrators"></a><span data-ttu-id="c346e-142">Technické informace pro správce systému</span><span class="sxs-lookup"><span data-stu-id="c346e-142">Technical information for system administrators</span></span>
+<span data-ttu-id="c346e-143">Pokud nemáte přístup ke stránkám, které se používají k dokončení tohoto úkolu, obraťte se na správce systému a poskytněte informace, které jsou uvedeny v následující tabulce.</span><span class="sxs-lookup"><span data-stu-id="c346e-143">If you don't have access to the pages that are used to complete this task, contact your system administrator, and provide the information that is shown in the following table.</span></span>
 
 <table>
 <colgroup>
@@ -107,19 +107,19 @@ Pokud nemáte přístup ke stránkám, které se používají k dokončení toho
 </colgroup>
 <thead>
 <tr class="header">
-<th>Kategorie</th>
-<th>Předpoklad</th>
+<th><span data-ttu-id="c346e-144">Kategorie</span><span class="sxs-lookup"><span data-stu-id="c346e-144">Category</span></span></th>
+<th><span data-ttu-id="c346e-145">Předpoklad</span><span class="sxs-lookup"><span data-stu-id="c346e-145">Prerequisite</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Role a funkční oprávnění zabezpečení</td>
-<td>K nastavení a vytvoření vstupních certifikátů EU pro produkty nebo služby musíte být členem role zabezpečení, která zahrnuje následující úkoly:
+<td><span data-ttu-id="c346e-146">Role a funkční oprávnění zabezpečení</span><span class="sxs-lookup"><span data-stu-id="c346e-146">Security roles and duties</span></span></td>
+<td><span data-ttu-id="c346e-147">K nastavení a vytvoření vstupních certifikátů EU pro produkty nebo služby musíte být členem role zabezpečení, která zahrnuje následující úkoly:</span><span class="sxs-lookup"><span data-stu-id="c346e-147">To set up and create EU entry certificates for items or services, you must be a member of a security role that includes the following duties:</span></span>
 <ul>
-<li><strong>Úředník pohledávek</strong> (CustInvoiceAccountsReceivableClerk)</li>
-<li><strong>Zástupce odběratelského servisu</strong> (TradeCustomerServiceRepresentative)</li>
-<li><strong>Úředník prodeje</strong> (TradeSalesClerk)</li>
-<li><strong>Úředník expedice</strong> (InventShippingClerk)</li>
+<li><span data-ttu-id="c346e-148"><strong>Úředník pohledávek</strong> (CustInvoiceAccountsReceivableClerk)</span><span class="sxs-lookup"><span data-stu-id="c346e-148"><strong>Accounts receivable clerk</strong> (CustInvoiceAccountsReceivableClerk)</span></span></li>
+<li><span data-ttu-id="c346e-149"><strong>Zástupce odběratelského servisu</strong> (TradeCustomerServiceRepresentative)</span><span class="sxs-lookup"><span data-stu-id="c346e-149"><strong>Customer service representative</strong> (TradeCustomerServiceRepresentative)</span></span></li>
+<li><span data-ttu-id="c346e-150"><strong>Úředník prodeje</strong> (TradeSalesClerk)</span><span class="sxs-lookup"><span data-stu-id="c346e-150"><strong>Sales clerk</strong> (TradeSalesClerk)</span></span></li>
+<li><span data-ttu-id="c346e-151"><strong>Úředník expedice</strong> (InventShippingClerk)</span><span class="sxs-lookup"><span data-stu-id="c346e-151"><strong>Shipping clerk</strong> (InventShippingClerk)</span></span></li>
 </ul></td>
 </tr>
 </tbody>

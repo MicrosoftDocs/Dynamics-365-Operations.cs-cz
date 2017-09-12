@@ -19,153 +19,153 @@ ms.author: dkrame
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 688550888e5e029e38e945cec633170465df73f9
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: af2d61717a5aa02b2a3ef26144a845b81b32ca53
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Uspořádání zaměstnanců podle oddělení, prací a pozic
+# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a><span data-ttu-id="ba611-104">Uspořádání zaměstnanců podle oddělení, prací a pozic</span><span class="sxs-lookup"><span data-stu-id="ba611-104">Organize your workforce using departments, jobs, and positions</span></span>
 
 [!include[banner](includes/banner.md)]
 
 [!include[retail name](includes/retail-name.md)]
 
 
-Oddělení, úlohy a pozice jsou organizační prvky, které jsou evidovány v rámci modulu Lidské zdroje. Toto téma obsahuje koncepční informace o těchto prvcích. 
+<span data-ttu-id="ba611-105">Oddělení, úlohy a pozice jsou organizační prvky, které jsou evidovány v rámci modulu Lidské zdroje.</span><span class="sxs-lookup"><span data-stu-id="ba611-105">Departments, jobs, and positions are organizational elements that are maintained within Human resources.</span></span> <span data-ttu-id="ba611-106">Toto téma obsahuje koncepční informace o těchto prvcích.</span><span class="sxs-lookup"><span data-stu-id="ba611-106">This topic describes conceptual information about these elements.</span></span> 
 
-Následující příklad slouží k zobrazení konceptů popsaných v tomto tématu.
+<span data-ttu-id="ba611-107">Následující příklad slouží k zobrazení konceptů popsaných v tomto tématu.</span><span class="sxs-lookup"><span data-stu-id="ba611-107">The following example is used to illustrate the concepts described in this topic.</span></span>
 
-|**Oddělení**|**Pozice**|**Práce**|
+|<span data-ttu-id="ba611-108">**Oddělení**</span><span class="sxs-lookup"><span data-stu-id="ba611-108">**Department**</span></span>|<span data-ttu-id="ba611-109">**Pozice**</span><span class="sxs-lookup"><span data-stu-id="ba611-109">**Position**</span></span>|<span data-ttu-id="ba611-110">**Práce**</span><span class="sxs-lookup"><span data-stu-id="ba611-110">**Job**</span></span>|
 |---|---|---|
-|**Prodej**|Manažer prodeje (východ)|Manažer prodeje|
-|**Prodej**|Manažer prodeje (západ)|Manažer prodeje|
-|**Prodej**|Manažer prodeje (střed)|Manažer prodeje|
-|**Účetnictví**|Účetní supervizor|Účetní manažer|
-|**Účetnictví**|Účetnictví A|Účetní|
-|**Lidské zdroje**|Manažer lidských zdrojů (východ)|Manažer lidských zdrojů|
-|**Lidské zdroje**|Manažer lidských zdrojů (západ)|Manažer lidských zdrojů|
-|**Lidské zdroje**|Manažer lidských zdrojů (střed)|Manažer lidských zdrojů|
+|<span data-ttu-id="ba611-111">**Prodej**</span><span class="sxs-lookup"><span data-stu-id="ba611-111">**Sales**</span></span>|<span data-ttu-id="ba611-112">Manažer prodeje (východ)</span><span class="sxs-lookup"><span data-stu-id="ba611-112">Sales manager (East)</span></span>|<span data-ttu-id="ba611-113">Manažer prodeje</span><span class="sxs-lookup"><span data-stu-id="ba611-113">Sales manager</span></span>|
+|<span data-ttu-id="ba611-114">**Prodej**</span><span class="sxs-lookup"><span data-stu-id="ba611-114">**Sales**</span></span>|<span data-ttu-id="ba611-115">Manažer prodeje (západ)</span><span class="sxs-lookup"><span data-stu-id="ba611-115">Sales manager (West)</span></span>|<span data-ttu-id="ba611-116">Manažer prodeje</span><span class="sxs-lookup"><span data-stu-id="ba611-116">Sales manager</span></span>|
+|<span data-ttu-id="ba611-117">**Prodej**</span><span class="sxs-lookup"><span data-stu-id="ba611-117">**Sales**</span></span>|<span data-ttu-id="ba611-118">Manažer prodeje (střed)</span><span class="sxs-lookup"><span data-stu-id="ba611-118">Sales manager (Central)</span></span>|<span data-ttu-id="ba611-119">Manažer prodeje</span><span class="sxs-lookup"><span data-stu-id="ba611-119">Sales manager</span></span>|
+|<span data-ttu-id="ba611-120">**Účetnictví**</span><span class="sxs-lookup"><span data-stu-id="ba611-120">**Accounting**</span></span>|<span data-ttu-id="ba611-121">Účetní supervizor</span><span class="sxs-lookup"><span data-stu-id="ba611-121">Accounting supervisor</span></span>|<span data-ttu-id="ba611-122">Účetní manažer</span><span class="sxs-lookup"><span data-stu-id="ba611-122">Accounting manager</span></span>|
+|<span data-ttu-id="ba611-123">**Účetnictví**</span><span class="sxs-lookup"><span data-stu-id="ba611-123">**Accounting**</span></span>|<span data-ttu-id="ba611-124">Účetnictví A</span><span class="sxs-lookup"><span data-stu-id="ba611-124">Accounting-A</span></span>|<span data-ttu-id="ba611-125">Účetní</span><span class="sxs-lookup"><span data-stu-id="ba611-125">Accountant</span></span>|
+|<span data-ttu-id="ba611-126">**Lidské zdroje**</span><span class="sxs-lookup"><span data-stu-id="ba611-126">**Human resources**</span></span>|<span data-ttu-id="ba611-127">Manažer lidských zdrojů (východ)</span><span class="sxs-lookup"><span data-stu-id="ba611-127">HR manager (East)</span></span>|<span data-ttu-id="ba611-128">Manažer lidských zdrojů</span><span class="sxs-lookup"><span data-stu-id="ba611-128">HR manager</span></span>|
+|<span data-ttu-id="ba611-129">**Lidské zdroje**</span><span class="sxs-lookup"><span data-stu-id="ba611-129">**Human resources**</span></span>|<span data-ttu-id="ba611-130">Manažer lidských zdrojů (západ)</span><span class="sxs-lookup"><span data-stu-id="ba611-130">HR manager (West)</span></span>|<span data-ttu-id="ba611-131">Manažer lidských zdrojů</span><span class="sxs-lookup"><span data-stu-id="ba611-131">HR manager</span></span>|
+|<span data-ttu-id="ba611-132">**Lidské zdroje**</span><span class="sxs-lookup"><span data-stu-id="ba611-132">**Human resources**</span></span>|<span data-ttu-id="ba611-133">Manažer lidských zdrojů (střed)</span><span class="sxs-lookup"><span data-stu-id="ba611-133">HR manager (Central)</span></span>|<span data-ttu-id="ba611-134">Manažer lidských zdrojů</span><span class="sxs-lookup"><span data-stu-id="ba611-134">HR manager</span></span>|
 
  
- <a name="departments"></a>Oddělení
+ <a name="departments"></a><span data-ttu-id="ba611-135">Oddělení</span><span class="sxs-lookup"><span data-stu-id="ba611-135">Departments</span></span>
 ------------
 
-Oddělení je provozní jednotka, která představuje kategorii nebo funkční oblast organizace, která je zodpovědná za určitou oblast organizace, jako například prodej nebo účtování. Oddělení slouží k hlášení ve funkčních oblastech a může mít odpovědnost za zisky a ztráty. Oddělení také mohou obsahovat i skupinu nákladových středisek. Prodej, účtování a lidské zdroje jsou některé příklady oddělení v rámci organizace.
+<span data-ttu-id="ba611-136">Oddělení je provozní jednotka, která představuje kategorii nebo funkční oblast organizace, která je zodpovědná za určitou oblast organizace, jako například prodej nebo účtování.</span><span class="sxs-lookup"><span data-stu-id="ba611-136">A department is an operating unit that represents a category or functional area of an organization that is responsible for a specific area of the organization, such as sales or accounting.</span></span> <span data-ttu-id="ba611-137">Oddělení slouží k hlášení ve funkčních oblastech a může mít odpovědnost za zisky a ztráty.</span><span class="sxs-lookup"><span data-stu-id="ba611-137">A department is used to report on functional areas and may have profit and loss responsibility.</span></span> <span data-ttu-id="ba611-138">Oddělení také mohou obsahovat i skupinu nákladových středisek.</span><span class="sxs-lookup"><span data-stu-id="ba611-138">Also, a department might include a group of cost centers.</span></span> <span data-ttu-id="ba611-139">Prodej, účtování a lidské zdroje jsou některé příklady oddělení v rámci organizace.</span><span class="sxs-lookup"><span data-stu-id="ba611-139">Sales, accounting, and human resources are some examples of departments in an organization.</span></span>
 
-## <a name="jobs-and-positions"></a> Úlohy a pozice
-Úloha je kolekce úkolů a odpovědností, které jsou vyžadovány od osoby, která provádí práci. Pozice je individuální instance práce. Oblasti odpovědnosti, pracovní úkoly, pracovní funkce, dovednosti, informace o vzdělání a certifikáty, které jsou požadovány pro úlohu, jsou nutné také pro pozice, které jsou asociovány s určitou pozicí.
-### <a name="job-tasks"></a>Pracovní úkoly
+## <a name="jobs-and-positions"></a><span data-ttu-id="ba611-140"> Úlohy a pozice</span><span class="sxs-lookup"><span data-stu-id="ba611-140">Jobs and positions</span></span>
+<span data-ttu-id="ba611-141">Úloha je kolekce úkolů a odpovědností, které jsou vyžadovány od osoby, která provádí práci.</span><span class="sxs-lookup"><span data-stu-id="ba611-141">A job is a collection of tasks and responsibilities that are required of a person who performs a job.</span></span> <span data-ttu-id="ba611-142">Pozice je individuální instance práce.</span><span class="sxs-lookup"><span data-stu-id="ba611-142">A position is an individual instance of a job.</span></span> <span data-ttu-id="ba611-143">Oblasti odpovědnosti, pracovní úkoly, pracovní funkce, dovednosti, informace o vzdělání a certifikáty, které jsou požadovány pro úlohu, jsou nutné také pro pozice, které jsou asociovány s určitou pozicí.</span><span class="sxs-lookup"><span data-stu-id="ba611-143">Areas of responsibility, job tasks, job functions, skills, education information, and certificates that are required for a job are also required for positions that are associated with a job.</span></span>
+### <a name="job-tasks"></a><span data-ttu-id="ba611-144">Pracovní úkoly</span><span class="sxs-lookup"><span data-stu-id="ba611-144">Job tasks</span></span>
 
-Můžete vytvořit pracovní úkoly, které popisují základní úlohy, které musí pracovník na pozici této úlohy dokončit. Stejnou úlohu lze přidat do více úloh a pozice pro tyto úlohy zdědí tyto úlohy. Příklady pracovních úloh jsou uvedeny v následující tabulce.
+<span data-ttu-id="ba611-145">Můžete vytvořit pracovní úkoly, které popisují základní úlohy, které musí pracovník na pozici této úlohy dokončit.</span><span class="sxs-lookup"><span data-stu-id="ba611-145">You can create job tasks that describe the basic tasks that a worker in a position for that job must complete.</span></span> <span data-ttu-id="ba611-146">Stejnou úlohu lze přidat do více úloh a pozice pro tyto úlohy zdědí tyto úlohy.</span><span class="sxs-lookup"><span data-stu-id="ba611-146">The same job task can be added to multiple jobs, and positions for those jobs will inherit those job tasks.</span></span> <span data-ttu-id="ba611-147">Příklady pracovních úloh jsou uvedeny v následující tabulce.</span><span class="sxs-lookup"><span data-stu-id="ba611-147">Examples of job tasks are listed in the following table.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th>Úloha</th>
-<th>Pracovní úkol</th>
+<th><span data-ttu-id="ba611-148">Úloha</span><span class="sxs-lookup"><span data-stu-id="ba611-148">Job</span></span></th>
+<th><span data-ttu-id="ba611-149">Pracovní úkol</span><span class="sxs-lookup"><span data-stu-id="ba611-149">Job task</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Manažer prodeje</td>
+<td><span data-ttu-id="ba611-150">Manažer prodeje</span><span class="sxs-lookup"><span data-stu-id="ba611-150">Sales manager</span></span></td>
 <td><ul>
-<li><span class="input">Zkontrolovat výkon</span> – zkontrolování výkonu práce jednotlivých prodejců.</li>
-<li><span class="input">Kontrola absence</span> – schválení nebo odmítnutí požadavků nebo registrace absence jednotlivých prodejců.</li>
+<li><span data-ttu-id="ba611-151"><span class="input">Zkontrolovat výkon</span> – zkontrolování výkonu práce jednotlivých prodejců.</span><span class="sxs-lookup"><span data-stu-id="ba611-151"><span class="input">Perf-review</span> – Review each salesperson’s job performance.</span></span></li>
+<li><span data-ttu-id="ba611-152"><span class="input">Kontrola absence</span> – schválení nebo odmítnutí požadavků nebo registrace absence jednotlivých prodejců.</span><span class="sxs-lookup"><span data-stu-id="ba611-152"><span class="input">Abs-review</span> – Approve or reject each salesperson’s absence requests or registrations.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Účetní</td>
-<td><span class="input">Finanční sestava</span> – předložení týdenních finančních sestav vedoucímu finančního oddělení.</td>
+<td><span data-ttu-id="ba611-153">Účetní</span><span class="sxs-lookup"><span data-stu-id="ba611-153">Accountant</span></span></td>
+<td><span data-ttu-id="ba611-154"><span class="input">Finanční sestava</span> – předložení týdenních finančních sestav vedoucímu finančního oddělení.</span><span class="sxs-lookup"><span data-stu-id="ba611-154"><span class="input">FIN-Report</span> – Present weekly financial reports to chief financial officer.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="job-functions"></a>Pracovní funkce
+### <a name="job-functions"></a><span data-ttu-id="ba611-155">Pracovní funkce</span><span class="sxs-lookup"><span data-stu-id="ba611-155">Job functions</span></span>
 
-Pracovní funkce jsou stejné jako pracovní úkoly. Pracovní funkce popisuje jeden nebo více úkolů, povinností nebo odpovědností, které jsou přiřazeny k práci. Pracovní funkce mohou být přiřazeny k pracím a slouží k nastavení a implementaci pravidel způsobilosti pro plány kompenzace. Příklady pracovních funkcí jsou uvedeny v následující tabulce.
+<span data-ttu-id="ba611-156">Pracovní funkce jsou stejné jako pracovní úkoly.</span><span class="sxs-lookup"><span data-stu-id="ba611-156">Job functions are like job tasks.</span></span> <span data-ttu-id="ba611-157">Pracovní funkce popisuje jeden nebo více úkolů, povinností nebo odpovědností, které jsou přiřazeny k práci.</span><span class="sxs-lookup"><span data-stu-id="ba611-157">A job function describes one or more tasks, duties or responsibilities that are assigned to a job.</span></span> <span data-ttu-id="ba611-158">Pracovní funkce mohou být přiřazeny k pracím a slouží k nastavení a implementaci pravidel způsobilosti pro plány kompenzace.</span><span class="sxs-lookup"><span data-stu-id="ba611-158">Job functions can be assigned to jobs and used to set up and implement eligibility rules for compensation plans.</span></span> <span data-ttu-id="ba611-159">Příklady pracovních funkcí jsou uvedeny v následující tabulce.</span><span class="sxs-lookup"><span data-stu-id="ba611-159">Examples of job functions are listed in the following table.</span></span>
 
-| Úloha           | Pracovní funkce                                                |
+| <span data-ttu-id="ba611-160">Úloha</span><span class="sxs-lookup"><span data-stu-id="ba611-160">Job</span></span>           | <span data-ttu-id="ba611-161">Pracovní funkce</span><span class="sxs-lookup"><span data-stu-id="ba611-161">Job function</span></span>                                                |
 |---------------|-------------------------------------------------------------|
-| Manažer prodeje | Správa osob – správa uživatelů, kteří jsou vám podřízeni.               |
-| Účetní    | Finanční kontrola – udržování finančních dat pro skupinu účtů. |
+| <span data-ttu-id="ba611-162">Manažer prodeje</span><span class="sxs-lookup"><span data-stu-id="ba611-162">Sales manager</span></span> | <span data-ttu-id="ba611-163">Správa osob – správa uživatelů, kteří jsou vám podřízeni.</span><span class="sxs-lookup"><span data-stu-id="ba611-163">Mng-people – Manage people who report to you.</span></span>               |
+| <span data-ttu-id="ba611-164">Účetní</span><span class="sxs-lookup"><span data-stu-id="ba611-164">Accountant</span></span>    | <span data-ttu-id="ba611-165">Finanční kontrola – udržování finančních dat pro skupinu účtů.</span><span class="sxs-lookup"><span data-stu-id="ba611-165">FIN-Review – Maintain financial data for a set of accounts.</span></span> |
 
-### <a name="job-types"></a>Typ úloh
+### <a name="job-types"></a><span data-ttu-id="ba611-166">Typ úloh</span><span class="sxs-lookup"><span data-stu-id="ba611-166">Job types</span></span>
 
-Používejte typy úloh pro klasifikaci podobných pozic do kategorií. Typy úloh, jako jsou pracovní funkce, mohou být přiřazeny k pozicím a slouží k nastavení a implementaci pravidel způsobilosti pro plány kompenzace. V následujícím seznamu jsou uvedeny některé příklady typů úloh:
--   Plný úvazek
--   Částečný úvazek
--   Mzda
--   Hodinová mzda
+<span data-ttu-id="ba611-167">Používejte typy úloh pro klasifikaci podobných pozic do kategorií.</span><span class="sxs-lookup"><span data-stu-id="ba611-167">Use job types to classify similar jobs into categories.</span></span> <span data-ttu-id="ba611-168">Typy úloh, jako jsou pracovní funkce, mohou být přiřazeny k pozicím a slouží k nastavení a implementaci pravidel způsobilosti pro plány kompenzace.</span><span class="sxs-lookup"><span data-stu-id="ba611-168">Job types, just like job functions, can be assigned to jobs and used to set up and implement eligibility rules for compensation plans.</span></span> <span data-ttu-id="ba611-169">V následujícím seznamu jsou uvedeny některé příklady typů úloh:</span><span class="sxs-lookup"><span data-stu-id="ba611-169">Some examples of job types are included in the following list:</span></span>
+-   <span data-ttu-id="ba611-170">Plný úvazek</span><span class="sxs-lookup"><span data-stu-id="ba611-170">Full-time</span></span>
+-   <span data-ttu-id="ba611-171">Částečný úvazek</span><span class="sxs-lookup"><span data-stu-id="ba611-171">Part-time</span></span>
+-   <span data-ttu-id="ba611-172">Mzda</span><span class="sxs-lookup"><span data-stu-id="ba611-172">Salary</span></span>
+-   <span data-ttu-id="ba611-173">Hodinová mzda</span><span class="sxs-lookup"><span data-stu-id="ba611-173">Hourly pay</span></span>
 
-### <a name="areas-of-responsibility"></a>Oblasti odpovědnosti
+### <a name="areas-of-responsibility"></a><span data-ttu-id="ba611-174">Oblasti odpovědnosti</span><span class="sxs-lookup"><span data-stu-id="ba611-174">Areas of responsibility</span></span>
 
-Za pomoci oblastí odpovědnosti můžete určit pracovní role, procesy a produkty, za které je pracovník na dané pozici odpovědný. příkladem oblasti odpovědnosti pro práci s názvem "Účetní" může být "Finanční vykazování pro produkt A".
+<span data-ttu-id="ba611-175">Za pomoci oblastí odpovědnosti můžete určit pracovní role, procesy a produkty, za které je pracovník na dané pozici odpovědný.</span><span class="sxs-lookup"><span data-stu-id="ba611-175">Use areas of responsibility to indicate the work roles, processes, and products that a worker in a position for that job would be responsible for.</span></span> <span data-ttu-id="ba611-176">příkladem oblasti odpovědnosti pro práci s názvem "Účetní" může být "Finanční vykazování pro produkt A".</span><span class="sxs-lookup"><span data-stu-id="ba611-176">An example of an area of responsibility for a job titled “Accountant” might be “Financial reporting for Product A”.</span></span>
 
-<a name="positions"></a>Pozice
+<a name="positions"></a><span data-ttu-id="ba611-177">Pozice</span><span class="sxs-lookup"><span data-stu-id="ba611-177">Positions</span></span>
 ----------
 
-Pozice jsou důležitým prvkem nižší úrovně hierarchie organizace. Pozice je individuální instance práce. Například pozice „Manažer prodeje (východ)“ je pouze jednou pozicí, která je přidružena k úloze „Manažer prodeje“. Pozice existují v oddělení a jsou přiřazeny pracovníkům.
-### <a name="position-creation-and-maintenance"></a>Vytváření a údržba pozic
+<span data-ttu-id="ba611-178">Pozice jsou důležitým prvkem nižší úrovně hierarchie organizace.</span><span class="sxs-lookup"><span data-stu-id="ba611-178">Positions are an important element of the lower level of an organization hierarchy.</span></span> <span data-ttu-id="ba611-179">Pozice je individuální instance práce.</span><span class="sxs-lookup"><span data-stu-id="ba611-179">A position is an individual instance of a job.</span></span> <span data-ttu-id="ba611-180">Například pozice „Manažer prodeje (východ)“ je pouze jednou pozicí, která je přidružena k úloze „Manažer prodeje“.</span><span class="sxs-lookup"><span data-stu-id="ba611-180">For example, the position, “Sales manager (East),” is just one of the positions that is associated with the job, “Sales manager.”</span></span> <span data-ttu-id="ba611-181">Pozice existují v oddělení a jsou přiřazeny pracovníkům.</span><span class="sxs-lookup"><span data-stu-id="ba611-181">Positions exist in a department and are assigned to workers.</span></span>
+### <a name="position-creation-and-maintenance"></a><span data-ttu-id="ba611-182">Vytváření a údržba pozic</span><span class="sxs-lookup"><span data-stu-id="ba611-182">Position creation and maintenance</span></span>
 
--   Historii systémových změn pozic můžete zobrazit na snadno dostupné stránce.
--   Můžete vytvořit kódy důvodů, které mohou uživatelé vybrat při vytváření a změně pozic.
--   Můžete vytvořit typy akcí personálu a přiřadit k uživatelským akcím číselné řady.
--   Workflow lze nastavit tak, aby přidání a změny pozic bude vyžadovat schválení.
+-   <span data-ttu-id="ba611-183">Historii systémových změn pozic můžete zobrazit na snadno dostupné stránce.</span><span class="sxs-lookup"><span data-stu-id="ba611-183">You can view a history of position-related system changes in an easy-to-access list page.</span></span>
+-   <span data-ttu-id="ba611-184">Můžete vytvořit kódy důvodů, které mohou uživatelé vybrat při vytváření a změně pozic.</span><span class="sxs-lookup"><span data-stu-id="ba611-184">You can create reason codes that your users can select when they create or modify positions.</span></span>
+-   <span data-ttu-id="ba611-185">Můžete vytvořit typy akcí personálu a přiřadit k uživatelským akcím číselné řady.</span><span class="sxs-lookup"><span data-stu-id="ba611-185">You can create personnel action types and assign a number sequence to personnel actions.</span></span>
+-   <span data-ttu-id="ba611-186">Workflow lze nastavit tak, aby přidání a změny pozic bude vyžadovat schválení.</span><span class="sxs-lookup"><span data-stu-id="ba611-186">You can set up workflow so that position additions and changes can require approval.</span></span>
 
-### <a name="position-duration"></a>Doba trvání pozice
+### <a name="position-duration"></a><span data-ttu-id="ba611-187">Doba trvání pozice</span><span class="sxs-lookup"><span data-stu-id="ba611-187">Position duration</span></span>
 
-Každá pozice má časový interval, kdy je pozice platná. Tento časový interval se nazývá trvání. Například můžete mít letní pozici s trváním od 1. května 2015 do 31. srpna 2015.
+<span data-ttu-id="ba611-188">Každá pozice má časový interval, kdy je pozice platná.</span><span class="sxs-lookup"><span data-stu-id="ba611-188">Every position has a length of time that the position is effective.</span></span> <span data-ttu-id="ba611-189">Tento časový interval se nazývá trvání.</span><span class="sxs-lookup"><span data-stu-id="ba611-189">This length of time is referred to as duration.</span></span> <span data-ttu-id="ba611-190">Například můžete mít letní pozici s trváním od 1. května 2015 do 31. srpna 2015.</span><span class="sxs-lookup"><span data-stu-id="ba611-190">For example, summer positions might have duration of May 1, 2015 until August 31, 2015.</span></span>
 
-### <a name="worker-assignments"></a>Přiřazení pracovníků
+### <a name="worker-assignments"></a><span data-ttu-id="ba611-191">Přiřazení pracovníků</span><span class="sxs-lookup"><span data-stu-id="ba611-191">Worker assignments</span></span>
 
-Po přiřazení pracovníka k pozici dojde k zaplnění této pozice. Zaměstnance lze přiřadit do více pozic, ale pouze jeden pracovní může být přiřazen na pozici současně.
+<span data-ttu-id="ba611-192">Po přiřazení pracovníka k pozici dojde k zaplnění této pozice.</span><span class="sxs-lookup"><span data-stu-id="ba611-192">When you assign a worker to a position, you fill that position.</span></span> <span data-ttu-id="ba611-193">Zaměstnance lze přiřadit do více pozic, ale pouze jeden pracovní může být přiřazen na pozici současně.</span><span class="sxs-lookup"><span data-stu-id="ba611-193">You can assign workers to multiple positions, but only one worker can be assigned to a position at the same time.</span></span>
 
-### <a name="reporting-relationships"></a>Vztahy sestav
+### <a name="reporting-relationships"></a><span data-ttu-id="ba611-194">Vztahy sestav</span><span class="sxs-lookup"><span data-stu-id="ba611-194">Reporting relationships</span></span>
 
-Pozice jsou důležitým prvkem nižší úrovně hierarchie organizace. Ve formuláři Pozice můžete určit pozici, která je nadřízená vaší pozici. Po přiřazení pracovníka k pozici, která je podřízena jiné pozici, můžete vytvořit vztah vykazování mezi zaměstnanci, kteří jsou přiřazeni do dvou pozic. Například pozice "Účetní A" vykazuje do pozice "Účetní supervizor" Kim Akers je přiřazen na pozici "Účetní supervizor" a Sanjay Patel je přiřazen na pozici "Účetní A". To znamená, že Sanjay Patel je podřízen uživateli Kim Akers. 
+<span data-ttu-id="ba611-195">Pozice jsou důležitým prvkem nižší úrovně hierarchie organizace.</span><span class="sxs-lookup"><span data-stu-id="ba611-195">Positions are important elements of the lower level of an organization hierarchy.</span></span> <span data-ttu-id="ba611-196">Ve formuláři Pozice můžete určit pozici, která je nadřízená vaší pozici.</span><span class="sxs-lookup"><span data-stu-id="ba611-196">In the Position form, you can specify the position that a position reports to.</span></span> <span data-ttu-id="ba611-197">Po přiřazení pracovníka k pozici, která je podřízena jiné pozici, můžete vytvořit vztah vykazování mezi zaměstnanci, kteří jsou přiřazeni do dvou pozic.</span><span class="sxs-lookup"><span data-stu-id="ba611-197">When you assign a worker to a position that reports to another position, you create a reporting relationship between the workers who are assigned to the two positions.</span></span> <span data-ttu-id="ba611-198">Například pozice "Účetní A" vykazuje do pozice "Účetní supervizor"</span><span class="sxs-lookup"><span data-stu-id="ba611-198">For example, position “Accountant-A” reports to position “Accounting Supervisor”.</span></span> <span data-ttu-id="ba611-199">Kim Akers je přiřazen na pozici "Účetní supervizor" a Sanjay Patel je přiřazen na pozici "Účetní A".</span><span class="sxs-lookup"><span data-stu-id="ba611-199">Kim Akers is assigned to position “Accounting Supervisor” and Sanjay Patel is assigned to position “Accountant-A”.</span></span> <span data-ttu-id="ba611-200">To znamená, že Sanjay Patel je podřízen uživateli Kim Akers.</span><span class="sxs-lookup"><span data-stu-id="ba611-200">This means that Sanjay Patel reports to Kim Akers.</span></span> 
 
-Pokud vaše společnost používá hierarchii matice nebo jinou vlastní hierarchii, můžete nastavit typy hierarchií pozic a přidat vztahy podřízenosti k pozicím pro každý nastavený typ hierarchie. Například Lori Penor je hlavní manažer společnosti Adventure Works a je přiřazený na pozici "Generální ředitel". Lori spravuje vývoj produktu, který slouží k vymazání pomůcek. Lori vyžaduje pomoc účetního s financemi pro vývoj produktu. Proto najala Sanjay Patel jako svého účetního. Sanjay je podřízen přímo pro Kim Akers, ale také pracuje s Lori Penor na jeho práci související s financemi pro vývoj produktu pro čištění pomůcek. 
+<span data-ttu-id="ba611-201">Pokud vaše společnost používá hierarchii matice nebo jinou vlastní hierarchii, můžete nastavit typy hierarchií pozic a přidat vztahy podřízenosti k pozicím pro každý nastavený typ hierarchie.</span><span class="sxs-lookup"><span data-stu-id="ba611-201">If your organization uses a matrix hierarchy or another custom hierarchy, you can set up position hierarchy types and then add reporting relationships to positions for each hierarchy type that you set up.</span></span> <span data-ttu-id="ba611-202">Například Lori Penor je hlavní manažer společnosti Adventure Works a je přiřazený na pozici "Generální ředitel".</span><span class="sxs-lookup"><span data-stu-id="ba611-202">For example, Lori Penor is a general manager at Adventure Works and is assigned to the “General Manager” position.</span></span> <span data-ttu-id="ba611-203">Lori spravuje vývoj produktu, který slouží k vymazání pomůcek.</span><span class="sxs-lookup"><span data-stu-id="ba611-203">Lori manages the development of a product that is used to clean widgets.</span></span> <span data-ttu-id="ba611-204">Lori vyžaduje pomoc účetního s financemi pro vývoj produktu.</span><span class="sxs-lookup"><span data-stu-id="ba611-204">Lori requires an accountant to help her with the finances for developing the product.</span></span> <span data-ttu-id="ba611-205">Proto najala Sanjay Patel jako svého účetního.</span><span class="sxs-lookup"><span data-stu-id="ba611-205">Therefore, she has recruited Sanjay Patel to be her accountant.</span></span> <span data-ttu-id="ba611-206">Sanjay je podřízen přímo pro Kim Akers, ale také pracuje s Lori Penor na jeho práci související s financemi pro vývoj produktu pro čištění pomůcek.</span><span class="sxs-lookup"><span data-stu-id="ba611-206">Sanjay reports directly to Kim Akers, but also works with Lori Penor on his work related to the finances for developing the widget cleaner.</span></span> 
 
-V předchozím příkladu byste při nastavení pracovních vztahů mezi Sanjay Patel a Lori Penor provedli následující úkony:
-1.  Vytvoření vlastního typu hierarchie pozice s názvem "Pomůcka" pro vytvoření hierarchie, která zahrnuje pozice odpovědné za práci na produktu pro čištění pomůcek.
-2.  Přiřazení pozice Generální ředitel na pozici, která je nadřazena pozici Účetní A v hierarchie Pomůcka.
+<span data-ttu-id="ba611-207">V předchozím příkladu byste při nastavení pracovních vztahů mezi Sanjay Patel a Lori Penor provedli následující úkony:</span><span class="sxs-lookup"><span data-stu-id="ba611-207">For the previous example, you would complete the following tasks to set up the working relationship between Sanjay Patel and Lori Penor:</span></span>
+1.  <span data-ttu-id="ba611-208">Vytvoření vlastního typu hierarchie pozice s názvem "Pomůcka" pro vytvoření hierarchie, která zahrnuje pozice odpovědné za práci na produktu pro čištění pomůcek.</span><span class="sxs-lookup"><span data-stu-id="ba611-208">Create a custom position hierarchy type called “Widget” to create a hierarchy that includes positions responsible for working on the widget cleaner product.</span></span>
+2.  <span data-ttu-id="ba611-209">Přiřazení pozice Generální ředitel na pozici, která je nadřazena pozici Účetní A v hierarchie Pomůcka.</span><span class="sxs-lookup"><span data-stu-id="ba611-209">Assign the General Manager position to be the position that the Accountant-A position reports to in the Widget hierarchy.</span></span>
 
-Použití hierarchie pozic pro zobrazení struktury hlášení pozic. Pokud máte více hierarchií pozic, můžete zobrazit hierarchii pro každý typ hierarchie v hierarchii pozic. Dále můžete vyhledávat pozici podle ID pozice nebo podle jména pracovníka, který je přiřazený na pozici. Hierarchie pozice je organizační hierarchie.
+<span data-ttu-id="ba611-210">Použití hierarchie pozic pro zobrazení struktury hlášení pozic.</span><span class="sxs-lookup"><span data-stu-id="ba611-210">Use the position hierarchy to view the reporting structure of positions.</span></span> <span data-ttu-id="ba611-211">Pokud máte více hierarchií pozic, můžete zobrazit hierarchii pro každý typ hierarchie v hierarchii pozic.</span><span class="sxs-lookup"><span data-stu-id="ba611-211">If you have multiple position hierarchies, you can view the hierarchy for each hierarchy type in the position hierarchy.</span></span> <span data-ttu-id="ba611-212">Dále můžete vyhledávat pozici podle ID pozice nebo podle jména pracovníka, který je přiřazený na pozici.</span><span class="sxs-lookup"><span data-stu-id="ba611-212">Also, you can search for a position by position ID or by the name of the worker who is assigned to the position.</span></span> <span data-ttu-id="ba611-213">Hierarchie pozice je organizační hierarchie.</span><span class="sxs-lookup"><span data-stu-id="ba611-213">The position hierarchy is an organizational hierarchy.</span></span>
 
-## <a name="date-effective-records"></a>Časově platné záznamy
-Pro některé záznamy můžete určit budoucí změny tohoto záznamu. Následující informace jsou časově platné.
+## <a name="date-effective-records"></a><span data-ttu-id="ba611-214">Časově platné záznamy</span><span class="sxs-lookup"><span data-stu-id="ba611-214">Date effective records</span></span>
+<span data-ttu-id="ba611-215">Pro některé záznamy můžete určit budoucí změny tohoto záznamu.</span><span class="sxs-lookup"><span data-stu-id="ba611-215">For some records, you can specify future changes to the record.</span></span> <span data-ttu-id="ba611-216">Následující informace jsou časově platné.</span><span class="sxs-lookup"><span data-stu-id="ba611-216">The following information is date effective.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th>Záznamy</th>
-<th>Datum platnosti pracovníka</th>
+<th><span data-ttu-id="ba611-217">Záznamy</span><span class="sxs-lookup"><span data-stu-id="ba611-217">Records</span></span></th>
+<th><span data-ttu-id="ba611-218">Datum platnosti pracovníka</span><span class="sxs-lookup"><span data-stu-id="ba611-218">Date effective information</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Práce</td>
+<td><span data-ttu-id="ba611-219">Práce</span><span class="sxs-lookup"><span data-stu-id="ba611-219">Jobs</span></span></td>
 <td><ul>
-<li>Některé podrobné informace o úloze</li>
-<li>Informace o klasifikaci úlohy</li>
-<li>Informace o kompenzaci</li>
+<li><span data-ttu-id="ba611-220">Některé podrobné informace o úloze</span><span class="sxs-lookup"><span data-stu-id="ba611-220">Some detailed job information</span></span></li>
+<li><span data-ttu-id="ba611-221">Informace o klasifikaci úlohy</span><span class="sxs-lookup"><span data-stu-id="ba611-221">Job classification information</span></span></li>
+<li><span data-ttu-id="ba611-222">Informace o kompenzaci</span><span class="sxs-lookup"><span data-stu-id="ba611-222">Compensation information</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Pozice</td>
+<td><span data-ttu-id="ba611-223">Pozice</span><span class="sxs-lookup"><span data-stu-id="ba611-223">Positions</span></span></td>
 <td><ul>
-<li>Některé podrobné informace o pozici</li>
-<li>Přiřazení pracovníků</li>
-<li>Doby trvání pozice</li>
-<li>Hierarchie pozic</li>
+<li><span data-ttu-id="ba611-224">Některé podrobné informace o pozici</span><span class="sxs-lookup"><span data-stu-id="ba611-224">Some detailed position information</span></span></li>
+<li><span data-ttu-id="ba611-225">Přiřazení pracovníků</span><span class="sxs-lookup"><span data-stu-id="ba611-225">Worker assignments</span></span></li>
+<li><span data-ttu-id="ba611-226">Doby trvání pozice</span><span class="sxs-lookup"><span data-stu-id="ba611-226">Position durations</span></span></li>
+<li><span data-ttu-id="ba611-227">Hierarchie pozic</span><span class="sxs-lookup"><span data-stu-id="ba611-227">Position hierarchies</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-Můžete upravovat údaje uvedené v předchozí tabulce pro pozice nebo úlohy a zadat datum, kdy by se změny pozice pro vybrané úlohy měly projevit. Například pozice lze přiřadit pouze jednomu pracovníkovi, ale Sanjay Patel, který je přiřazený k pozici Účetní A odchází za dva týdny. Joe Healy nahradí Sanjay Patel po jeho odchodu. Přestože Sanjay je i nadále přiřazen na svoji pozici, můžete přiřadit Jan Healy na stejnou pozici tak, aby přiřazení nabylo platnosti až po posledním dni Sanjay.
+<span data-ttu-id="ba611-228">Můžete upravovat údaje uvedené v předchozí tabulce pro pozice nebo úlohy a zadat datum, kdy by se změny pozice pro vybrané úlohy měly projevit.</span><span class="sxs-lookup"><span data-stu-id="ba611-228">You can modify the information mentioned in the previous table for a position or a job and specify a date when the modifications to the position or job should take effect.</span></span> <span data-ttu-id="ba611-229">Například pozice lze přiřadit pouze jednomu pracovníkovi, ale Sanjay Patel, který je přiřazený k pozici Účetní A odchází za dva týdny.</span><span class="sxs-lookup"><span data-stu-id="ba611-229">For example, a position can only be assigned to one worker, but Sanjay Patel, who is assigned to the position Accountant-A, will be leaving in two weeks.</span></span> <span data-ttu-id="ba611-230">Joe Healy nahradí Sanjay Patel po jeho odchodu.</span><span class="sxs-lookup"><span data-stu-id="ba611-230">Joe Healy will replace Sanjay Patel when he leaves.</span></span> <span data-ttu-id="ba611-231">Přestože Sanjay je i nadále přiřazen na svoji pozici, můžete přiřadit Jan Healy na stejnou pozici tak, aby přiřazení nabylo platnosti až po posledním dni Sanjay.</span><span class="sxs-lookup"><span data-stu-id="ba611-231">Even though Sanjay is still assigned to his position, you can assign Joe Healy to the same position so that the assignment is effective only after Sanjay’s last day.</span></span>
 
 
 

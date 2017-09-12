@@ -19,97 +19,97 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: 6d4697af6f7467f25a461fae4e9320402f83b0e3
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 06a75889e62cbba6e47a8543cf663868df5ae2e3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="row-definitions-in-financial-report-designer"></a>Definice řádku v návrháři finanční sestavy
+# <a name="row-definitions-in-financial-report-designer"></a><span data-ttu-id="a6adb-104">Definice řádku v návrháři finanční sestavy</span><span class="sxs-lookup"><span data-stu-id="a6adb-104">Row definitions in financial report designer</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Definice řádku je součástí sestavy nebo stavebního bloku, který určuje obsah jednotlivých řádků ve finanční sestavě. Definici řádku lze kombinovat s definicemi sloupců, definicemi stromu výkaznictví a definicemi sestav a vytvořit tak skupinu stavebních bloků, které může používat více společností.
+<span data-ttu-id="a6adb-105">Definice řádku je součástí sestavy nebo stavebního bloku, který určuje obsah jednotlivých řádků ve finanční sestavě.</span><span class="sxs-lookup"><span data-stu-id="a6adb-105">A row definition is a report component, or building block, that specifies the contents of each row on a financial report.</span></span> <span data-ttu-id="a6adb-106">Definici řádku lze kombinovat s definicemi sloupců, definicemi stromu výkaznictví a definicemi sestav a vytvořit tak skupinu stavebních bloků, které může používat více společností.</span><span class="sxs-lookup"><span data-stu-id="a6adb-106">A row definition can be combined with column definitions, reporting tree definitions, and report definitions to create a building block group that can be used by multiple companies.</span></span>
 
-<a name="create-a-row-definition"></a>vytvoření definice řádku,
+<a name="create-a-row-definition"></a><span data-ttu-id="a6adb-107">vytvoření definice řádku,</span><span class="sxs-lookup"><span data-stu-id="a6adb-107">Create a row definition</span></span>
 -----------------------
 
-1.  V Návrháři sestav v navigačním podokně klikněte na tlačítko **Definice řádku**.
-2.  V nabídce **Soubor** klikněte na tlačítko **Nový** a klikněte na možnost **Definice řádku**. Další informace o obsahu každé buňky naleznete v tématu [Úprava buněk definice řádku](modify-row-definition-cells-financial-reporting.md).
+1.  <span data-ttu-id="a6adb-108">V Návrháři sestav v navigačním podokně klikněte na tlačítko **Definice řádku**.</span><span class="sxs-lookup"><span data-stu-id="a6adb-108">In Report Designer, in the navigation pane, click **Row Definitions**.</span></span>
+2.  <span data-ttu-id="a6adb-109">V nabídce **Soubor** klikněte na tlačítko **Nový** a klikněte na možnost **Definice řádku**.</span><span class="sxs-lookup"><span data-stu-id="a6adb-109">On the **File** menu, click **New**, and then click **Row Definition**.</span></span> <span data-ttu-id="a6adb-110">Další informace o obsahu každé buňky naleznete v tématu [Úprava buněk definice řádku](modify-row-definition-cells-financial-reporting.md).</span><span class="sxs-lookup"><span data-stu-id="a6adb-110">For more information about the content of each cell, see [Modify row definition cells](modify-row-definition-cells-financial-reporting.md).</span></span>
 
-## <a name="open-a-row-definition"></a>Otevření definice řádku
-1.  V Návrháři sestav v navigačním podokně klikněte na tlačítko **Definice řádku**.
-2.  Definici řádku otevřete kliknutím dvakrát na její název.
-3.  Chcete-li zobrazit stavební bloky, které jsou přidruženy k definici řádku, klikněte pravým tlačítkem myši na definici řádku a poté vyberte možnost **Přidružení**.
+## <a name="open-a-row-definition"></a><span data-ttu-id="a6adb-111">Otevření definice řádku</span><span class="sxs-lookup"><span data-stu-id="a6adb-111">Open a row definition</span></span>
+1.  <span data-ttu-id="a6adb-112">V Návrháři sestav v navigačním podokně klikněte na tlačítko **Definice řádku**.</span><span class="sxs-lookup"><span data-stu-id="a6adb-112">In Report Designer, in the navigation pane, click **Row Definitions**.</span></span>
+2.  <span data-ttu-id="a6adb-113">Definici řádku otevřete kliknutím dvakrát na její název.</span><span class="sxs-lookup"><span data-stu-id="a6adb-113">Double-click the name of the row definition to open.</span></span>
+3.  <span data-ttu-id="a6adb-114">Chcete-li zobrazit stavební bloky, které jsou přidruženy k definici řádku, klikněte pravým tlačítkem myši na definici řádku a poté vyberte možnost **Přidružení**.</span><span class="sxs-lookup"><span data-stu-id="a6adb-114">To view any building blocks that are associated with the row definition, right-click the row definition, and then select **Associations**.</span></span>
 
-## <a name="contents-of-a-row-definition"></a> Obsah definice řádku
-Definice řádku může obsahovat až 20 000 řádků finančních dimenzí a obsahovat následující informace:
+## <a name="contents-of-a-row-definition"></a><span data-ttu-id="a6adb-115"> Obsah definice řádku</span><span class="sxs-lookup"><span data-stu-id="a6adb-115">Contents of a row definition</span></span>
+<span data-ttu-id="a6adb-116">Definice řádku může obsahovat až 20 000 řádků finančních dimenzí a obsahovat následující informace:</span><span class="sxs-lookup"><span data-stu-id="a6adb-116">A row definition can contain up to 20,000 financial dimension rows and can include the following information:</span></span>
 
--   popisný text, který přidává do sestavy přehlednost vytvořením záhlaví, řádků a mezer pro oddíly, například **Hotovost** nebo **Celkové výnosy**
--   Odkazy na finanční data, která mohou zahrnovat hodnoty dimenze v aplikaci Microsoft Dynamics 365 for Finance and Operations **Poznámka:** Můžete nastavit definici řádku na stahování dat ze systému finančních dimenzí vždy při vygenerování sestavy.
--   Součty a vzorce řádků, které jsou založeny na propojených finančních datech
+-   <span data-ttu-id="a6adb-117">popisný text, který přidává do sestavy přehlednost vytvořením záhlaví, řádků a mezer pro oddíly, například **Hotovost** nebo **Celkové výnosy**</span><span class="sxs-lookup"><span data-stu-id="a6adb-117">Descriptive text that adds meaning to the report by creating section headings, lines, and spaces, such as **Cash** or **Total Revenue**</span></span>
+-   <span data-ttu-id="a6adb-118">Odkazy na finanční data, která mohou zahrnovat hodnoty dimenze v aplikaci Microsoft Dynamics 365 for Finance and Operations **Poznámka:** Můžete nastavit definici řádku na stahování dat ze systému finančních dimenzí vždy při vygenerování sestavy.</span><span class="sxs-lookup"><span data-stu-id="a6adb-118">Links to financial data, which can include dimension values in the Microsoft Dynamics 365 for Finance and Operations **Note:** You can set up a row definition to pull data from the financial dimensions system every time that the report is generated.</span></span>
+-   <span data-ttu-id="a6adb-119">Součty a vzorce řádků, které jsou založeny na propojených finančních datech</span><span class="sxs-lookup"><span data-stu-id="a6adb-119">Row totals and formulas that are based on the linked financial data</span></span>
 
-Obvykle každý řádek v definici řádku obsahuje jeden z následujících typů informací:
+<span data-ttu-id="a6adb-120">Obvykle každý řádek v definici řádku obsahuje jeden z následujících typů informací:</span><span class="sxs-lookup"><span data-stu-id="a6adb-120">Usually, each row in a row definition contains one of the following types of information:</span></span>
 
--   Odkazy na systém finančních dimenzí
--   Součty nebo výpočty založené na údajích
--   Formátování
+-   <span data-ttu-id="a6adb-121">Odkazy na systém finančních dimenzí</span><span class="sxs-lookup"><span data-stu-id="a6adb-121">References to the financial dimensions system</span></span>
+-   <span data-ttu-id="a6adb-122">Součty nebo výpočty založené na údajích</span><span class="sxs-lookup"><span data-stu-id="a6adb-122">Totals or calculations that are based on the data</span></span>
+-   <span data-ttu-id="a6adb-123">Formátování</span><span class="sxs-lookup"><span data-stu-id="a6adb-123">Formatting</span></span>
 
-Existují dvě metody pro zadávání informací do definice řádku:
+<span data-ttu-id="a6adb-124">Existují dvě metody pro zadávání informací do definice řádku:</span><span class="sxs-lookup"><span data-stu-id="a6adb-124">There are two methods for entering information in a row definition:</span></span>
 
--   Ručně zadejte informace řádku do nové definice řádku. Další informace naleznete v tématu [Úprava buněk definice řádku](modify-row-definition-cells-financial-reporting.md).
--   Použijte návrháře sestav k získání informací řádku přímo z finančních dimenzí. Další informace naleznete v části „Související vzorce/řádky/jednotky“ v části [Úprava buněk definice řádku](modify-row-definition-cells-financial-reporting.md).
+-   <span data-ttu-id="a6adb-125">Ručně zadejte informace řádku do nové definice řádku.</span><span class="sxs-lookup"><span data-stu-id="a6adb-125">Manually enter row information in a new row definition.</span></span> <span data-ttu-id="a6adb-126">Další informace naleznete v tématu [Úprava buněk definice řádku](modify-row-definition-cells-financial-reporting.md).</span><span class="sxs-lookup"><span data-stu-id="a6adb-126">For more information, see [Modify row definition cells](modify-row-definition-cells-financial-reporting.md).</span></span>
+-   <span data-ttu-id="a6adb-127">Použijte návrháře sestav k získání informací řádku přímo z finančních dimenzí.</span><span class="sxs-lookup"><span data-stu-id="a6adb-127">Use report designer to pull row information directly from the financial dimensions.</span></span> <span data-ttu-id="a6adb-128">Další informace naleznete v části „Související vzorce/řádky/jednotky“ v části [Úprava buněk definice řádku](modify-row-definition-cells-financial-reporting.md).</span><span class="sxs-lookup"><span data-stu-id="a6adb-128">For more information, see the "Related formulas/rows/units" section in [Modify row definition cells](modify-row-definition-cells-financial-reporting.md).</span></span>
 
-## <a name="add-dimensions-in-a-row-definition"></a> Přidání dimenzí do definice řádku
-Dimenze je protnutím dat a hodnot. Můžete seskupit data a hodnoty v návrháři sestav. Potom můžete klasifikovat a analyzovat transakce podrobněji. Můžete použít dialogové okno **Vložit řádky z dimenzí** k přidání více řádků současně do definice řádku. Dialogové okno zobrazí pro každou dimenzi jeden sloupec. Následující tabulka popisuje informace, které můžete zadat do každé z dimenzí.
+## <a name="add-dimensions-in-a-row-definition"></a><span data-ttu-id="a6adb-129"> Přidání dimenzí do definice řádku</span><span class="sxs-lookup"><span data-stu-id="a6adb-129">Add dimensions in a row definition</span></span>
+<span data-ttu-id="a6adb-130">Dimenze je protnutím dat a hodnot.</span><span class="sxs-lookup"><span data-stu-id="a6adb-130">A dimension is an intersection of data and values.</span></span> <span data-ttu-id="a6adb-131">Můžete seskupit data a hodnoty v návrháři sestav.</span><span class="sxs-lookup"><span data-stu-id="a6adb-131">You can group data and values in report designer.</span></span> <span data-ttu-id="a6adb-132">Potom můžete klasifikovat a analyzovat transakce podrobněji.</span><span class="sxs-lookup"><span data-stu-id="a6adb-132">You can then classify and analyze transactions in more detail.</span></span> <span data-ttu-id="a6adb-133">Můžete použít dialogové okno **Vložit řádky z dimenzí** k přidání více řádků současně do definice řádku.</span><span class="sxs-lookup"><span data-stu-id="a6adb-133">You can use the **Insert Rows from Dimensions** dialog box to add multiple rows to a row definition at the same time.</span></span> <span data-ttu-id="a6adb-134">Dialogové okno zobrazí pro každou dimenzi jeden sloupec.</span><span class="sxs-lookup"><span data-stu-id="a6adb-134">The dialog box displays one column for each dimension.</span></span> <span data-ttu-id="a6adb-135">Následující tabulka popisuje informace, které můžete zadat do každé z dimenzí.</span><span class="sxs-lookup"><span data-stu-id="a6adb-135">The following table describes the information that you can specify for each dimension.</span></span>
 
-| Možnost                | Popis                                                                                                                                                                                                                                                                      |
+| <span data-ttu-id="a6adb-136">Možnost</span><span class="sxs-lookup"><span data-stu-id="a6adb-136">Option</span></span>                | <span data-ttu-id="a6adb-137">Popis</span><span class="sxs-lookup"><span data-stu-id="a6adb-137">Description</span></span>                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Dimenze             | Vzor, který identifikuje dimenzi pro přidání definice řádku. Tento vzor obsahuje jeden znak ampersand (&) nebo znak křížku (\#) pro každou pozici v dimenzích. Obecně byste měli používat všechny ampersandy pro dimenzi hlavního účtu a všechny křížky pro jiné dimenze. |
-| Počátek rozsahu dimenzí | První hodnota pro tuto dimenzi k přidání do definice řádku.                                                                                                                                                                                                                 |
-| Konec rozsahu dimenzí   | Poslední hodnota pro tuto dimenzi k přidání do definice řádku.                                                                                                                                                                                                                  |
+| <span data-ttu-id="a6adb-138">Dimenze</span><span class="sxs-lookup"><span data-stu-id="a6adb-138">Dimension</span></span>             | <span data-ttu-id="a6adb-139">Vzor, který identifikuje dimenzi pro přidání definice řádku.</span><span class="sxs-lookup"><span data-stu-id="a6adb-139">The pattern that identifies the dimension to add to the row definition.</span></span> <span data-ttu-id="a6adb-140">Tento vzor obsahuje jeden znak ampersand (&) nebo znak křížku (\#) pro každou pozici v dimenzích.</span><span class="sxs-lookup"><span data-stu-id="a6adb-140">This pattern contains one ampersand (&) or number sign (\#) for each position in the dimensions.</span></span> <span data-ttu-id="a6adb-141">Obecně byste měli používat všechny ampersandy pro dimenzi hlavního účtu a všechny křížky pro jiné dimenze.</span><span class="sxs-lookup"><span data-stu-id="a6adb-141">Generally, use all ampersands for the Main Account dimension and all number signs for other dimensions.</span></span> |
+| <span data-ttu-id="a6adb-142">Počátek rozsahu dimenzí</span><span class="sxs-lookup"><span data-stu-id="a6adb-142">Dimension Range Start</span></span> | <span data-ttu-id="a6adb-143">První hodnota pro tuto dimenzi k přidání do definice řádku.</span><span class="sxs-lookup"><span data-stu-id="a6adb-143">The first value for this dimension to add to the row definition.</span></span>                                                                                                                                                                                                                 |
+| <span data-ttu-id="a6adb-144">Konec rozsahu dimenzí</span><span class="sxs-lookup"><span data-stu-id="a6adb-144">Dimension Range End</span></span>   | <span data-ttu-id="a6adb-145">Poslední hodnota pro tuto dimenzi k přidání do definice řádku.</span><span class="sxs-lookup"><span data-stu-id="a6adb-145">The last value for this dimension to add to the row definition.</span></span>                                                                                                                                                                                                                  |
 
-Chcete-li přidat dimenze do definice řádku, proveďte následující kroky.
+<span data-ttu-id="a6adb-146">Chcete-li přidat dimenze do definice řádku, proveďte následující kroky.</span><span class="sxs-lookup"><span data-stu-id="a6adb-146">To add dimensions to a row definition, follow these steps.</span></span>
 
-1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
-2.  V nabídce **Upravit** klikněte na tlačítko **Vložit řádky z dimenzí**.
-3.  V dialogovém okně **Vložit řádky z dimenzí** vyberte v řádku **Dimenze** buňku dimenze, která má být převedena do definice řádku, a klikněte na tlačítko **Všechny &&&**.
-4.  Chcete-li omezit definici řádku na určitý rozsah hodnot dimenzí, zadejte počáteční hodnotu dimenze do buňky **Počátek rozsahu dimenzí** a poté zadejte konečnou hodnotu dimenze do buňky **Konec rozsahu dimenzí**. Chcete-li zahrnout všechny hodnoty pro vybranou dimenzi, nevyplňujte tyto buňky. **Poznámka:** Zástupné znaky (\* nebo ?) v rozsahu dimenze nemusí vrátit všechny požadované výsledky; záleží na tom, jak databáze ERP třídí data.
-5.  V poli **Kód počátečního řádku** určete kód řádku pro první hodnotu dimenze, která má být přidána do definice řádku.
-6.  V poli **Zvýšit každý řádek o** určete mezeru mezi po sobě jdoucími kódy řádků. Například pokud je kód prvního řádku 100 a přírůstek je 30, první nové řádky budou mít kódy 100, 130, 160, 190 a 220. Použijte hodnotu přírůstku, která zajistí dostatek prostoru pro vkládání nových řádků formátu a vzorců.
-7.  Klepněte na tlačítko **OK**. Pro každý řádek vybrané hodnoty dimenze je přidán jeden řádek do definice řádku.
+1.  <span data-ttu-id="a6adb-147">V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.</span><span class="sxs-lookup"><span data-stu-id="a6adb-147">In Report Designer, click **Row Definitions**, and then open the row definition to modify.</span></span>
+2.  <span data-ttu-id="a6adb-148">V nabídce **Upravit** klikněte na tlačítko **Vložit řádky z dimenzí**.</span><span class="sxs-lookup"><span data-stu-id="a6adb-148">On the **Edit** menu, click **Insert Rows from Dimensions**.</span></span>
+3.  <span data-ttu-id="a6adb-149">V dialogovém okně **Vložit řádky z dimenzí** vyberte v řádku **Dimenze** buňku dimenze, která má být převedena do definice řádku, a klikněte na tlačítko **Všechny &&&**.</span><span class="sxs-lookup"><span data-stu-id="a6adb-149">In the **Insert Rows from Dimensions** dialog box, in the **Dimensions** row, select the cell for the dimension to transfer to the row definition, and then click **All &&&**.</span></span>
+4.  <span data-ttu-id="a6adb-150">Chcete-li omezit definici řádku na určitý rozsah hodnot dimenzí, zadejte počáteční hodnotu dimenze do buňky **Počátek rozsahu dimenzí** a poté zadejte konečnou hodnotu dimenze do buňky **Konec rozsahu dimenzí**.</span><span class="sxs-lookup"><span data-stu-id="a6adb-150">To limit the row definition to a specific range of dimension values, enter the starting dimension value in the **Dimension Range Start** cell, and then enter the ending dimension value in the **Dimension Range End** cell.</span></span> <span data-ttu-id="a6adb-151">Chcete-li zahrnout všechny hodnoty pro vybranou dimenzi, nevyplňujte tyto buňky.</span><span class="sxs-lookup"><span data-stu-id="a6adb-151">To include all values for the selected dimension, leave these cells empty.</span></span> <span data-ttu-id="a6adb-152">**Poznámka:** Zástupné znaky (\* nebo ?) v rozsahu dimenze nemusí vrátit všechny požadované výsledky; záleží na tom, jak databáze ERP třídí data.</span><span class="sxs-lookup"><span data-stu-id="a6adb-152">**Note:** Wildcard characters (\* or ?) in dimension ranges might not return all the results that you want, depending on how the ERP database collates data.</span></span>
+5.  <span data-ttu-id="a6adb-153">V poli **Kód počátečního řádku** určete kód řádku pro první hodnotu dimenze, která má být přidána do definice řádku.</span><span class="sxs-lookup"><span data-stu-id="a6adb-153">In the **Starting row code** field, specify the row code for the first dimension value to add to the row definition.</span></span>
+6.  <span data-ttu-id="a6adb-154">V poli **Zvýšit každý řádek o** určete mezeru mezi po sobě jdoucími kódy řádků.</span><span class="sxs-lookup"><span data-stu-id="a6adb-154">In the **Increment each row by** field, specify the gap between consecutive row codes.</span></span> <span data-ttu-id="a6adb-155">Například pokud je kód prvního řádku 100 a přírůstek je 30, první nové řádky budou mít kódy 100, 130, 160, 190 a 220.</span><span class="sxs-lookup"><span data-stu-id="a6adb-155">For example, if the first row code is 100, and the increment value is 30, the first new rows have the codes 100, 130, 160, 190, and 220.</span></span> <span data-ttu-id="a6adb-156">Použijte hodnotu přírůstku, která zajistí dostatek prostoru pro vkládání nových řádků formátu a vzorců.</span><span class="sxs-lookup"><span data-stu-id="a6adb-156">Use an increment value that provides enough space to insert new format and formula rows.</span></span>
+7.  <span data-ttu-id="a6adb-157">Klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="a6adb-157">Click **OK**.</span></span> <span data-ttu-id="a6adb-158">Pro každý řádek vybrané hodnoty dimenze je přidán jeden řádek do definice řádku.</span><span class="sxs-lookup"><span data-stu-id="a6adb-158">For each of the selected dimension values, one line is added to the row definition.</span></span>
 
-## <a name="adjust-rounding-in-a-row-definition"></a> Úprava zaokrouhlování v definici řádku
-Pokud máte rozvahu, ve které jsou částky zaokrouhleny, součty mohou překračovat zůstatek. Tomuto problému může dojít, pokud například použijete možnost zaokrouhlení v sestavě rozvahy a definice sestavy také určuje zaokrouhlení. Můžete použít možnost **Vyrovnání rozdílů po zaokrouhlení** v definici řádku a vyrovnat tak částky v rozvaze. Zaokrouhlení se vypíná nebo upravuje na kartě **Nastavení** v rámci definice sestavy. Způsob zaokrouhlování částek je uveden v následující tabulce. V této tabulce se součty řádků 100 a 200 liší, když je zaokrouhlování zapnuto.
+## <a name="adjust-rounding-in-a-row-definition"></a><span data-ttu-id="a6adb-159"> Úprava zaokrouhlování v definici řádku</span><span class="sxs-lookup"><span data-stu-id="a6adb-159">Adjust rounding in a row definition</span></span>
+<span data-ttu-id="a6adb-160">Pokud máte rozvahu, ve které jsou částky zaokrouhleny, součty mohou překračovat zůstatek.</span><span class="sxs-lookup"><span data-stu-id="a6adb-160">If you have a balance sheet where the amounts are rounded, the totals might not balance.</span></span> <span data-ttu-id="a6adb-161">Tomuto problému může dojít, pokud například použijete možnost zaokrouhlení v sestavě rozvahy a definice sestavy také určuje zaokrouhlení.</span><span class="sxs-lookup"><span data-stu-id="a6adb-161">This issue can occur if, for example, you use the rounding option on a balance sheet report and the report definition also specifies rounding.</span></span> <span data-ttu-id="a6adb-162">Můžete použít možnost **Vyrovnání rozdílů po zaokrouhlení** v definici řádku a vyrovnat tak částky v rozvaze.</span><span class="sxs-lookup"><span data-stu-id="a6adb-162">You can use the **Rounding adjustment** option in the row definition to balance the amounts in the balance sheets.</span></span> <span data-ttu-id="a6adb-163">Zaokrouhlení se vypíná nebo upravuje na kartě **Nastavení** v rámci definice sestavy.</span><span class="sxs-lookup"><span data-stu-id="a6adb-163">You can turn rounding off or modify it on the **Settings** tab of the report definition.</span></span> <span data-ttu-id="a6adb-164">Způsob zaokrouhlování částek je uveden v následující tabulce.</span><span class="sxs-lookup"><span data-stu-id="a6adb-164">The following table shows how amounts are rounded.</span></span> <span data-ttu-id="a6adb-165">V této tabulce se součty řádků 100 a 200 liší, když je zaokrouhlování zapnuto.</span><span class="sxs-lookup"><span data-stu-id="a6adb-165">In this table, the totals of rows 100 and 200 differ when rounding is turned on.</span></span>
 
-| Kód řádku | Částky bez zaokrouhlení | Částka se zaokrouhlením na celé tisíce |
+| <span data-ttu-id="a6adb-166">Kód řádku</span><span class="sxs-lookup"><span data-stu-id="a6adb-166">Row code</span></span> | <span data-ttu-id="a6adb-167">Částky bez zaokrouhlení</span><span class="sxs-lookup"><span data-stu-id="a6adb-167">Amounts without rounding</span></span> | <span data-ttu-id="a6adb-168">Částka se zaokrouhlením na celé tisíce</span><span class="sxs-lookup"><span data-stu-id="a6adb-168">Amount with rounding to whole thousands</span></span> |
 |----------|--------------------------|-----------------------------------------|
-| 100      | 3 600                    | 4                                       |
-| 200      | 3 700                    | 4                                       |
-| Celkem    | 7 300                    | 8                                       |
+| <span data-ttu-id="a6adb-169">100</span><span class="sxs-lookup"><span data-stu-id="a6adb-169">100</span></span>      | <span data-ttu-id="a6adb-170">3 600</span><span class="sxs-lookup"><span data-stu-id="a6adb-170">3,600</span></span>                    | <span data-ttu-id="a6adb-171">4</span><span class="sxs-lookup"><span data-stu-id="a6adb-171">4</span></span>                                       |
+| <span data-ttu-id="a6adb-172">200</span><span class="sxs-lookup"><span data-stu-id="a6adb-172">200</span></span>      | <span data-ttu-id="a6adb-173">3 700</span><span class="sxs-lookup"><span data-stu-id="a6adb-173">3,700</span></span>                    | <span data-ttu-id="a6adb-174">4</span><span class="sxs-lookup"><span data-stu-id="a6adb-174">4</span></span>                                       |
+| <span data-ttu-id="a6adb-175">Celkem</span><span class="sxs-lookup"><span data-stu-id="a6adb-175">Total</span></span>    | <span data-ttu-id="a6adb-176">7 300</span><span class="sxs-lookup"><span data-stu-id="a6adb-176">7,300</span></span>                    | <span data-ttu-id="a6adb-177">8</span><span class="sxs-lookup"><span data-stu-id="a6adb-177">8</span></span>                                       |
 
-Chcete-li upravit zaokrouhlování v rozvaze, proveďte následující kroky.
+<span data-ttu-id="a6adb-178">Chcete-li upravit zaokrouhlování v rozvaze, proveďte následující kroky.</span><span class="sxs-lookup"><span data-stu-id="a6adb-178">To adjust rounding in a balance sheet, follow these steps.</span></span>
 
-1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
-2.  V nabídce **Upravit** klikněte na tlačítko **Úprava zaokrouhlení**.
-3.  V dialogovém okně **Vyrovnání rozdílů po zaokrouhlení** zadejte následující hodnoty:
-    -   **Řádek vyrovnání rozdílů po zaokrouhlení** – kód řádku, který bude upraven kvůli vyrovnání rozvahy.
-    -   **Řádek součtu majetku** – kód řádku v rozvaze, který obsahuje součet majetku.
-    -   **Řádek součtu závazků a jmění** – kód řádku v rozvaze, který obsahuje součet závazků a jmění.
-    -   **Limit částky úpravy** – limit pro automatické úpravy vyjádřený jako kladné celé číslo. Tato částka se porovnává s absolutní hodnotou skutečného rozdílu zaokrouhlení.
+1.  <span data-ttu-id="a6adb-179">V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.</span><span class="sxs-lookup"><span data-stu-id="a6adb-179">In Report Designer, click **Row Definitions**, and then open the row definition to modify.</span></span>
+2.  <span data-ttu-id="a6adb-180">V nabídce **Upravit** klikněte na tlačítko **Úprava zaokrouhlení**.</span><span class="sxs-lookup"><span data-stu-id="a6adb-180">On the **Edit** menu, click **Rounding Adjustment**.</span></span>
+3.  <span data-ttu-id="a6adb-181">V dialogovém okně **Vyrovnání rozdílů po zaokrouhlení** zadejte následující hodnoty:</span><span class="sxs-lookup"><span data-stu-id="a6adb-181">In the **Rounding Adjustments** dialog box, enter the following values:</span></span>
+    -   <span data-ttu-id="a6adb-182">**Řádek vyrovnání rozdílů po zaokrouhlení** – kód řádku, který bude upraven kvůli vyrovnání rozvahy.</span><span class="sxs-lookup"><span data-stu-id="a6adb-182">**Rounding adjustment row** – The row code for the row that should be adjusted to balance the balance sheet.</span></span>
+    -   <span data-ttu-id="a6adb-183">**Řádek součtu majetku** – kód řádku v rozvaze, který obsahuje součet majetku.</span><span class="sxs-lookup"><span data-stu-id="a6adb-183">**Total assets row** – The row code for the row in the balance sheet that contains the total assets.</span></span>
+    -   <span data-ttu-id="a6adb-184">**Řádek součtu závazků a jmění** – kód řádku v rozvaze, který obsahuje součet závazků a jmění.</span><span class="sxs-lookup"><span data-stu-id="a6adb-184">**Total liabilities and equity row** – The row code for the row in the balance sheet that contains the total liabilities and equity.</span></span>
+    -   <span data-ttu-id="a6adb-185">**Limit částky úpravy** – limit pro automatické úpravy vyjádřený jako kladné celé číslo.</span><span class="sxs-lookup"><span data-stu-id="a6adb-185">**Adjustment amount limit** – A positive whole number that specifies the limit on automatic adjustments.</span></span> <span data-ttu-id="a6adb-186">Tato částka se porovnává s absolutní hodnotou skutečného rozdílu zaokrouhlení.</span><span class="sxs-lookup"><span data-stu-id="a6adb-186">This amount is compared with the absolute value of the actual rounding difference.</span></span>
 
-    **Poznámka:** Tyto kódy řádků musejí být propojeny s finančními daty. Jinak řečeno, řádek musí mít hodnotu dimenze v buňce **Odkaz na finanční dimenze**. **Neodkazujte** na řádek popisu (**DESC**), výpočtu (**CALC**) nebo součtu (**TOT**).
+    <span data-ttu-id="a6adb-187">**Poznámka:** Tyto kódy řádků musejí být propojeny s finančními daty.</span><span class="sxs-lookup"><span data-stu-id="a6adb-187">**Note:** These row codes must be linked to your financial data.</span></span> <span data-ttu-id="a6adb-188">Jinak řečeno, řádek musí mít hodnotu dimenze v buňce **Odkaz na finanční dimenze**.</span><span class="sxs-lookup"><span data-stu-id="a6adb-188">In other words, the row must have a dimension value in its **Link to Financial Dimensions** cell.</span></span> <span data-ttu-id="a6adb-189">**Neodkazujte** na řádek popisu (**DESC**), výpočtu (**CALC**) nebo součtu (**TOT**).</span><span class="sxs-lookup"><span data-stu-id="a6adb-189">Do **not** reference a description (**DESC**), calculated (**CALC**), or totaled (**TOT**) row.</span></span>
 
-Částky ve vaší rozvaze budou vyrovnávány rovnoměrně při zapnutém zaokrouhlování. **Poznámka:** Limit úpravy je použit na základě možnosti **Přesnost zaokrouhlování**, která je určena pro definici sestavy. Pokud například vyberete zaokrouhlení sestavy na tisíce a zadáte hodnotu **2** do pole **Limit částky úpravy**, zobrazí se upozornění, když se hodnota identifikovaná v poli **Řádek vyrovnání rozdílů po zaokrouhlení** zvýší nebo sníží o více než 2 000 Kč.
+<span data-ttu-id="a6adb-190">Částky ve vaší rozvaze budou vyrovnávány rovnoměrně při zapnutém zaokrouhlování.</span><span class="sxs-lookup"><span data-stu-id="a6adb-190">The amounts in your balance sheet will now balance evenly when rounding is turned on.</span></span> <span data-ttu-id="a6adb-191">**Poznámka:** Limit úpravy je použit na základě možnosti **Přesnost zaokrouhlování**, která je určena pro definici sestavy.</span><span class="sxs-lookup"><span data-stu-id="a6adb-191">**Note:** The adjustment limit is applied based on the **Rounding precision** option that is specified for the report definition.</span></span> <span data-ttu-id="a6adb-192">Pokud například vyberete zaokrouhlení sestavy na tisíce a zadáte hodnotu **2** do pole **Limit částky úpravy**, zobrazí se upozornění, když se hodnota identifikovaná v poli **Řádek vyrovnání rozdílů po zaokrouhlení** zvýší nebo sníží o více než 2 000 Kč.</span><span class="sxs-lookup"><span data-stu-id="a6adb-192">For example, if you round your report to thousands and enter **2** in the **Adjustment amount limit** field, you receive a warning message when the value in the **Rounding adjustment row** field increases or decreases by more than 2,000.</span></span>
 
-## <a name="format-row-and-column-text"></a>Formátování textu řádků a sloupců
-Změnou písma a formátováním textu můžete přizpůsobit vzhled sestav. Následující části vysvětlují formátování vzhledu řádků a sloupců v sestavách.
+## <a name="format-row-and-column-text"></a><span data-ttu-id="a6adb-193">Formátování textu řádků a sloupců</span><span class="sxs-lookup"><span data-stu-id="a6adb-193">Format row and column text</span></span>
+<span data-ttu-id="a6adb-194">Změnou písma a formátováním textu můžete přizpůsobit vzhled sestav.</span><span class="sxs-lookup"><span data-stu-id="a6adb-194">You can customize the appearance of your reports by changing fonts and formatting text.</span></span> <span data-ttu-id="a6adb-195">Následující části vysvětlují formátování vzhledu řádků a sloupců v sestavách.</span><span class="sxs-lookup"><span data-stu-id="a6adb-195">The following sections explain how to format the appearance of rows and columns on reports.</span></span>
 
-### <a name="manage-font-styles"></a>Správa stylů písem
+### <a name="manage-font-styles"></a><span data-ttu-id="a6adb-196">Správa stylů písem</span><span class="sxs-lookup"><span data-stu-id="a6adb-196">Manage font styles</span></span>
 
-Můžete vytvořit a upravit styly písem pro sestavy. Můžete také použít tyto styly pro dokument nebo konkrétní řádek či sloupec v sestavě.
+<span data-ttu-id="a6adb-197">Můžete vytvořit a upravit styly písem pro sestavy.</span><span class="sxs-lookup"><span data-stu-id="a6adb-197">You can create and modify font styles for your report.</span></span> <span data-ttu-id="a6adb-198">Můžete také použít tyto styly pro dokument nebo konkrétní řádek či sloupec v sestavě.</span><span class="sxs-lookup"><span data-stu-id="a6adb-198">You can then apply those styles to the document, or to a specific row or column on a report.</span></span>
 
 <table>
 <colgroup>
@@ -118,65 +118,65 @@ Můžete vytvořit a upravit styly písem pro sestavy. Můžete také použít t
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>Vytvoření stylu písma</td>
+<td><span data-ttu-id="a6adb-199">Vytvoření stylu písma</span><span class="sxs-lookup"><span data-stu-id="a6adb-199">Create a font style</span></span></td>
 <td><ol>
-<li>V Návrháři sestav v nabídce <strong>Formát </strong>klikněte na tlačítko <strong>Styly a formátování</strong>.</li>
-<li>Klikněte na tlačítko <strong>Nový</strong> v dialogovém okně <strong>Styly a formátování</strong> a pak zadejte jedinečný název nového stylu.</li>
-<li>Proveďte výběr písem a klikněte na tlačítko <strong>OK</strong>.</li>
+<li><span data-ttu-id="a6adb-200">V Návrháři sestav v nabídce <strong>Formát </strong>klikněte na tlačítko <strong>Styly a formátování</strong>.</span><span class="sxs-lookup"><span data-stu-id="a6adb-200">In Report Designer, on the <strong>Format</strong> menu, click <strong>Styles and Formatting</strong>.</span></span></li>
+<li><span data-ttu-id="a6adb-201">Klikněte na tlačítko <strong>Nový</strong> v dialogovém okně <strong>Styly a formátování</strong> a pak zadejte jedinečný název nového stylu.</span><span class="sxs-lookup"><span data-stu-id="a6adb-201">In the <strong>Styles and Formatting</strong> dialog box, click <strong>New</strong>, and then enter a unique name for the new style.</span></span></li>
+<li><span data-ttu-id="a6adb-202">Proveďte výběr písem a klikněte na tlačítko <strong>OK</strong>.</span><span class="sxs-lookup"><span data-stu-id="a6adb-202">Make your font selections, and then click <strong>OK</strong>.</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Úprava stylu písma</td>
+<td><span data-ttu-id="a6adb-203">Úprava stylu písma</span><span class="sxs-lookup"><span data-stu-id="a6adb-203">Modify a font style</span></span></td>
 <td><ol>
-<li>V Návrháři sestav v nabídce <strong>Formát </strong>klikněte na tlačítko <strong>Styly a formátování</strong>.</li>
-<li>Vyberte styl k úpravě v dialogovém okně <strong>Styly a formátování</strong> a klikněte na tlačítko <strong>Upravit</strong>.</li>
-<li>Proveďte výběr písem a klikněte na tlačítko <strong>OK</strong>.</li>
+<li><span data-ttu-id="a6adb-204">V Návrháři sestav v nabídce <strong>Formát </strong>klikněte na tlačítko <strong>Styly a formátování</strong>.</span><span class="sxs-lookup"><span data-stu-id="a6adb-204">In Report Designer, on the <strong>Format</strong> menu, click <strong>Styles and Formatting</strong>.</span></span></li>
+<li><span data-ttu-id="a6adb-205">Vyberte styl k úpravě v dialogovém okně <strong>Styly a formátování</strong> a klikněte na tlačítko <strong>Upravit</strong>.</span><span class="sxs-lookup"><span data-stu-id="a6adb-205">In the <strong>Styles and Formatting</strong> dialog box, select a style to modify, and then click <strong>Modify</strong>.</span></span></li>
+<li><span data-ttu-id="a6adb-206">Proveďte výběr písem a klikněte na tlačítko <strong>OK</strong>.</span><span class="sxs-lookup"><span data-stu-id="a6adb-206">Make your font selections, and then click <strong>OK</strong>.</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Použití stylu písma</td>
+<td><span data-ttu-id="a6adb-207">Použití stylu písma</span><span class="sxs-lookup"><span data-stu-id="a6adb-207">Apply a font style</span></span></td>
 <td><ol>
-<li>V návrháři sestav v definici či definici sloupce nebo v záhlavích a zápatích vyberte jednu nebo více buněk.</li>
-<li>V seznamu <strong>Styl</strong> na panelu nástrojů vyberte styl písma.</li>
+<li><span data-ttu-id="a6adb-208">V návrháři sestav v definici či definici sloupce nebo v záhlavích a zápatích vyberte jednu nebo více buněk.</span><span class="sxs-lookup"><span data-stu-id="a6adb-208">In Report Designer, in a definition or column definition, or in headers and footers, select one or more cells.</span></span></li>
+<li><span data-ttu-id="a6adb-209">V seznamu <strong>Styl</strong> na panelu nástrojů vyberte styl písma.</span><span class="sxs-lookup"><span data-stu-id="a6adb-209">In the <strong>Style</strong> list on the toolbar, select a font style.</span></span></li>
 </ol></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="format-row-text"></a>Formátování textu řádků
+### <a name="format-row-text"></a><span data-ttu-id="a6adb-210">Formátování textu řádků</span><span class="sxs-lookup"><span data-stu-id="a6adb-210">Format row text</span></span>
 
-Formátování určené v definici řádku přepíše formátování určené v definici sloupce a definici sestavy. Pomocí ovládacích prvků na panelu nástrojů formátování můžete upravit formát textu. Jedná se o standardní ovládací prvky systému Microsoft Windows.
+<span data-ttu-id="a6adb-211">Formátování určené v definici řádku přepíše formátování určené v definici sloupce a definici sestavy.</span><span class="sxs-lookup"><span data-stu-id="a6adb-211">The formatting that is specified in the row definition overrides any formatting that is specified in the column definition and the report definition.</span></span> <span data-ttu-id="a6adb-212">Pomocí ovládacích prvků na panelu nástrojů formátování můžete upravit formát textu.</span><span class="sxs-lookup"><span data-stu-id="a6adb-212">You can modify the text format by using the controls on the formatting toolbar.</span></span> <span data-ttu-id="a6adb-213">Jedná se o standardní ovládací prvky systému Microsoft Windows.</span><span class="sxs-lookup"><span data-stu-id="a6adb-213">These controls are standard Microsoft Windows controls.</span></span>
 
-1.  V Návrháři sestav otevřete definici řádku k úpravě.
-2.  Vyberte buňky k formátování. Chcete-li vybrat více buněk, podržte klávesu Ctrl a vyberte buňky.
-3.  Na panelu nástrojů klikněte na tlačítko formátu, který chcete použít. Chcete-li například odsadit řádek, vyberte ho a klikněte na tlačítko **Zvětšit odsazení** ![Zvětšit odsazení](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Zvětšit odsazení") na panelu nástrojů.
+1.  <span data-ttu-id="a6adb-214">V Návrháři sestav otevřete definici řádku k úpravě.</span><span class="sxs-lookup"><span data-stu-id="a6adb-214">In Report Designer, open the row definition to modify.</span></span>
+2.  <span data-ttu-id="a6adb-215">Vyberte buňky k formátování.</span><span class="sxs-lookup"><span data-stu-id="a6adb-215">Select the cells to format.</span></span> <span data-ttu-id="a6adb-216">Chcete-li vybrat více buněk, podržte klávesu Ctrl a vyberte buňky.</span><span class="sxs-lookup"><span data-stu-id="a6adb-216">To select multiple cells, hold down the Ctrl key while you select the cell.</span></span>
+3.  <span data-ttu-id="a6adb-217">Na panelu nástrojů klikněte na tlačítko formátu, který chcete použít.</span><span class="sxs-lookup"><span data-stu-id="a6adb-217">Click the toolbar button of the format to apply.</span></span> <span data-ttu-id="a6adb-218">Chcete-li například odsadit řádek, vyberte ho a klikněte na tlačítko **Zvětšit odsazení** ![Zvětšit odsazení](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Zvětšit odsazení") na panelu nástrojů.</span><span class="sxs-lookup"><span data-stu-id="a6adb-218">For example, to indent a row, select the row, and then click **Increase Indent** ![Increase Indent](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Increase Indent") on the toolbar.</span></span>
 
-### <a name="adjust-columns-while-you-design-reports"></a>Úprava sloupců během návrhu sestav
+### <a name="adjust-columns-while-you-design-reports"></a><span data-ttu-id="a6adb-219">Úprava sloupců během návrhu sestav</span><span class="sxs-lookup"><span data-stu-id="a6adb-219">Adjust columns while you design reports</span></span>
 
-K usnadnění zobrazování sloupců, se kterými pracujete v definici řádku, můžete upravit šířku sloupce a skrýt (minimalizovat) nebo zobrazit sloupce v podokně náhledu. Provedené úpravy mají vliv pouze na vzhled zobrazení ve sloupcích. Nemají vliv na formátování sloupců v sestavách.
+<span data-ttu-id="a6adb-220">K usnadnění zobrazování sloupců, se kterými pracujete v definici řádku, můžete upravit šířku sloupce a skrýt (minimalizovat) nebo zobrazit sloupce v podokně náhledu.</span><span class="sxs-lookup"><span data-stu-id="a6adb-220">To make it easier to view the columns that you're working on in the row definition, you can adjust the width of a column, and can also hide (minimize) or show columns in the view pane.</span></span> <span data-ttu-id="a6adb-221">Provedené úpravy mají vliv pouze na vzhled zobrazení ve sloupcích.</span><span class="sxs-lookup"><span data-stu-id="a6adb-221">The modifications that you make affect only the on-screen appearance of the columns.</span></span> <span data-ttu-id="a6adb-222">Nemají vliv na formátování sloupců v sestavách.</span><span class="sxs-lookup"><span data-stu-id="a6adb-222">They don't affect the column formatting on reports.</span></span>
 
-### <a name="change-the-width-of-a-column-in-the-view-pane"></a>Změna šířky sloupce v podokně náhledu
+### <a name="change-the-width-of-a-column-in-the-view-pane"></a><span data-ttu-id="a6adb-223">Změna šířky sloupce v podokně náhledu</span><span class="sxs-lookup"><span data-stu-id="a6adb-223">Change the width of a column in the view pane</span></span>
 
-1.  V Návrháři sestav otevřete definici řádku k úpravě.
-2.  V nabídce **Formát** klikněte na příkaz **Šířka sloupce**.
-3.  V dialogovém okně **Šířka sloupce** zadejte hodnotu a klikněte na tlačítko **OK**. Případně můžete také přetáhnout pravý okraj buňky záhlaví sloupce a změnit tak šířku sloupce.
+1.  <span data-ttu-id="a6adb-224">V Návrháři sestav otevřete definici řádku k úpravě.</span><span class="sxs-lookup"><span data-stu-id="a6adb-224">In Report Designer, open the row definition to modify.</span></span>
+2.  <span data-ttu-id="a6adb-225">V nabídce **Formát** klikněte na příkaz **Šířka sloupce**.</span><span class="sxs-lookup"><span data-stu-id="a6adb-225">On the **Format** menu, select **Column Width**.</span></span>
+3.  <span data-ttu-id="a6adb-226">V dialogovém okně **Šířka sloupce** zadejte hodnotu a klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="a6adb-226">In the **Column Width** dialog box, enter a value, and then click **OK**.</span></span> <span data-ttu-id="a6adb-227">Případně můžete také přetáhnout pravý okraj buňky záhlaví sloupce a změnit tak šířku sloupce.</span><span class="sxs-lookup"><span data-stu-id="a6adb-227">Alternatively, you can drag the right boundary of a column heading cell to change the width of the column.</span></span>
 
-### <a name="hide-columns-in-the-view-pane"></a>Skrytí sloupců v podokně náhledu
+### <a name="hide-columns-in-the-view-pane"></a><span data-ttu-id="a6adb-228">Skrytí sloupců v podokně náhledu</span><span class="sxs-lookup"><span data-stu-id="a6adb-228">Hide columns in the view pane</span></span>
 
-1.  V Návrháři sestav otevřete definici řádku k úpravě.
-2.  Vyberte sloupec nebo sloupce, které chcete minimalizovat.
-3.  Klikněte pravým tlačítkem myši a poté klikněte na položku **Skrýt**.
+1.  <span data-ttu-id="a6adb-229">V Návrháři sestav otevřete definici řádku k úpravě.</span><span class="sxs-lookup"><span data-stu-id="a6adb-229">In Report Designer, open the row definition to modify.</span></span>
+2.  <span data-ttu-id="a6adb-230">Vyberte sloupec nebo sloupce, které chcete minimalizovat.</span><span class="sxs-lookup"><span data-stu-id="a6adb-230">Select the column or columns to minimize.</span></span>
+3.  <span data-ttu-id="a6adb-231">Klikněte pravým tlačítkem myši a poté klikněte na položku **Skrýt**.</span><span class="sxs-lookup"><span data-stu-id="a6adb-231">Right-click, and then click **Hide**.</span></span>
 
-### <a name="show-all-hidden-columns-in-the-view-pane"></a>Zobrazení všech skrytých sloupců v podokně náhledu
+### <a name="show-all-hidden-columns-in-the-view-pane"></a><span data-ttu-id="a6adb-232">Zobrazení všech skrytých sloupců v podokně náhledu</span><span class="sxs-lookup"><span data-stu-id="a6adb-232">Show all hidden columns in the view pane</span></span>
 
-1.  V Návrháři sestav otevřete definici řádku k úpravě.
-2.  Klikněte pravým tlačítkem myši na minimalizovaný sloupec, který chcete zobrazit, a klikněte na tlačítko **Zobrazit**.
+1.  <span data-ttu-id="a6adb-233">V Návrháři sestav otevřete definici řádku k úpravě.</span><span class="sxs-lookup"><span data-stu-id="a6adb-233">In Report Designer, open the row definition to modify.</span></span>
+2.  <span data-ttu-id="a6adb-234">Klikněte pravým tlačítkem myši na minimalizovaný sloupec, který chcete zobrazit, a klikněte na tlačítko **Zobrazit**.</span><span class="sxs-lookup"><span data-stu-id="a6adb-234">Right-click the minimized column to display, and then click **Unhide**.</span></span>
 
 
-<a name="see-also"></a>Viz také
+<a name="see-also"></a><span data-ttu-id="a6adb-235">Viz také</span><span class="sxs-lookup"><span data-stu-id="a6adb-235">See also</span></span>
 --------
 
-[Finanční výkaznictví](financial-reporting-intro.md)
+[<span data-ttu-id="a6adb-236">Finanční výkaznictví</span><span class="sxs-lookup"><span data-stu-id="a6adb-236">Financial reporting</span></span>](financial-reporting-intro.md)
 
 
 

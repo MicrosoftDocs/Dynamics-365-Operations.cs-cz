@@ -16,65 +16,65 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 44b7c02e7c238dcea83c5900620731a7befbbb42
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 020d147744df24b2065e66e5fc68ed5d5479127b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="vendor-payment-overview"></a>Přehled plateb dodavatele
+# <a name="vendor-payment-overview"></a><span data-ttu-id="fd718-103">Přehled plateb dodavatele</span><span class="sxs-lookup"><span data-stu-id="fd718-103">Vendor payment overview</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento průvodce úkolem vás provede různými metodami pro vytvoření plateb dodavatelů, včetně použití návrhu platby nebo ručního zadání jednorázové platby. Tato procedura používá ukázkovou společnost USMF.
+<span data-ttu-id="fd718-104">Tento průvodce úkolem vás provede různými metodami pro vytvoření plateb dodavatelů, včetně použití návrhu platby nebo ručního zadání jednorázové platby.</span><span class="sxs-lookup"><span data-stu-id="fd718-104">This task guide will walk you through various methods used to create vendor payments, including how to use a payment proposal or manually entering a one-off payment.</span></span> <span data-ttu-id="fd718-105">Tato procedura používá ukázkovou společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="fd718-105">This procedure uses the USMF demo company.</span></span>
 
-1. Přejděte na Závazky > Platby > Deník plateb.
-2. Klikněte na položku Nová.
-3. Vyberte deník plateb pro uložení plateb dodavatele. 
-4. Vyberte deník nebo jej zadejte ručně.
-5. Klikněte na položku Řádky.
-6. Klikněte na Návrh platby.
-7. Klikněte na Vytvořit návrh plateb.
-    * Návrh plateb je dotaz sloužící k výběru faktur k platbě. Před vytvořením nebo vygenerováním plateb dodavatele můžete upravit seznam faktur k úhradě.  
-8. Vyberte faktury k platbě podle data splatnosti, platební slevy nebo obou možností. 
-9. Zadejte datum pro porovnání s datem splatnosti nebo platební slevou. 
-10. Volitelně: Zadejte datum platby použité pro všechny platby.
-    * Zde zadané datum bude datum plateb pro všechny vytvořené platby bez ohledu na datum splatnosti nebo datum platební slevy.  
-11. Volitelně: Zadejte minimální datum platby, které může být použito jako datum platby.
-    * Minimální datum platby bude nejbližší datum použité při vytváření plateb. Například pokud má faktura datum splatnosti po minimálním datu platby, datum splatnosti bude datem platby namísto minimálního data platby k zaplacení faktury v nejzazší možné datum.  
-12. Zadejte další omezení dotazu v části Záznamy k zahrnutí.
-    * Filtr se často používá k omezení faktur vybraných k zaplacení podle skupin dodavatelů nebo způsobu platby. Můžete například přidat filtr pouze pro úhradu faktur šekem v rámci daného zpracování výplat.  
-13. Zadejte další omezení dotazu nebo výchozí nastavení plateb. 
-    * Další parametry lze použít k definování měny plateb nebo k povolení centralizovaných plateb v rámci daného zpracování výplat.  
-14. Klikněte na tlačítko OK.
-    * Po kliknutí na tlačítko OK se zobrazí výsledky dotazu. Pokud nechcete zobrazit náhled seznamu faktur vybraných k zaplacení, můžete přejít zpět na pevnou záložku Parametry a změnit nastavení Vytvořit platby bez náhledu faktury = Ano.  
-15. Pomocí tlačítka Zobrazit přehled plateb zobrazte platby, které budou vytvořeny pro dodavatele na vybrané faktuře.
-16. Pomocí tlačítka Skrýt přehled plateb můžete platby skrýt. 
-17. Klikněte na Vytvořit platby.
-    * Před výběrem možnosti Vytvořit platby můžete kliknout pravým tlačítkem myši na mřížku a exportovat do formátu aplikace Excel na seznam faktur. Tlačítko Vytvořit platby vytvoří platby dodavatele v deníku plateb.  
-18. Naskenujte platby a ujistěte se, že je u všech plateb definován způsob platby. 
-    * Při generování plateb, jako je například tisk šeku nebo vytváření elektronické platby, musí být definován způsob platby. Způsob platby také použije standardně bankovní účet z provedené platby.  
-19. Klikněte na tlačítko Nový a vytvořte jednorázovou platbu.
-    * Jednorázovou platbu lze přidat do deníku plateb kdykoli před zaúčtováním. To lze provést kliknutím na tlačítko Nový a přidáním informací o platbě ručně, ne pomocí návrhu platby.  
-20. Vyberte dodavatele, kterému bude platba určena.
-21. Existuje-li faktura k úhradě, zvolením možnosti Vyrovnat transakce vyberte fakturu k platbě.
-    * Pokud se jedná o zálohu, tento krok je volitelný. Můžete vytvořit platbu bez výběru faktury.  
-22. Označte veškeré faktury, které budou zaplaceny.
-    * Použijete-li možnost Vyrovnat transakce k výběru faktur k uhrazení, částka k úhradě bude automaticky vypočítána z faktury vámi označené pro zaplacení a z částky vámi zadané v poli Částka k vyrovnání.  
-23. Klikněte na tlačítko OK.
-24. Chcete-li odstranit platbu, označte řádek.
-25. Klepněte na tlačítko Odstranit.
-    * Odstranění platby odstraní pouze danou platbu. Všechny faktury označené k platbě budou i nadále dostupné k uhrazení jinou platbou.  
-26. Klepněte na tlačítko Ano.
-27. Vyberte generování plateb pro tisk šeků nebo vytvoření souborů elektronické platby.
-28. Vyberte způsob platby, kterou chcete vygenerovat.
-    * Deník plateb může obsahovat platby pro šeky i elektronické platby, ale v rámci jedné operace lze vygenerovat pouze jeden typ platby.  
-29. Vyberte bankovní účet, ze kterého lze platby generovat.
-30. Klikněte na tlačítko OK.
-    * Platby budou generovány pouze pro platby, které odpovídají vámi vybranému způsobu platby a bankovnímu účtu.  
-31. Pokud generujete šeky, vyberte možnost Dokument k zajištění správnosti cíle tisku pro šeky.
-32. Klikněte na tlačítko OK.
-33. Platby vygenerujte kliknutím na tlačítko OK.
-34. Jsou-li všechny platby schválené a vygenerované, klikněte na možnost Zaúčtovat. 
+1. <span data-ttu-id="fd718-106">Přejděte na Závazky > Platby > Deník plateb.</span><span class="sxs-lookup"><span data-stu-id="fd718-106">Go to Accounts payable > Payments > Payment journal.</span></span>
+2. <span data-ttu-id="fd718-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="fd718-107">Click New.</span></span>
+3. <span data-ttu-id="fd718-108">Vyberte deník plateb pro uložení plateb dodavatele.</span><span class="sxs-lookup"><span data-stu-id="fd718-108">Select the payment journal in which to save the vendor payments.</span></span> 
+4. <span data-ttu-id="fd718-109">Vyberte deník nebo jej zadejte ručně.</span><span class="sxs-lookup"><span data-stu-id="fd718-109">Select the journal or manually enter it.</span></span>
+5. <span data-ttu-id="fd718-110">Klikněte na položku Řádky.</span><span class="sxs-lookup"><span data-stu-id="fd718-110">Click Lines.</span></span>
+6. <span data-ttu-id="fd718-111">Klikněte na Návrh platby.</span><span class="sxs-lookup"><span data-stu-id="fd718-111">Click Payment proposal.</span></span>
+7. <span data-ttu-id="fd718-112">Klikněte na Vytvořit návrh plateb.</span><span class="sxs-lookup"><span data-stu-id="fd718-112">Click Create payment proposal.</span></span>
+    * <span data-ttu-id="fd718-113">Návrh plateb je dotaz sloužící k výběru faktur k platbě.</span><span class="sxs-lookup"><span data-stu-id="fd718-113">The payment proposal is a query used to select invoices for payment.</span></span> <span data-ttu-id="fd718-114">Před vytvořením nebo vygenerováním plateb dodavatele můžete upravit seznam faktur k úhradě.</span><span class="sxs-lookup"><span data-stu-id="fd718-114">You can edit the list of invoices to pay before creating or generating the vendor payments.</span></span>  
+8. <span data-ttu-id="fd718-115">Vyberte faktury k platbě podle data splatnosti, platební slevy nebo obou možností.</span><span class="sxs-lookup"><span data-stu-id="fd718-115">Select invoices for payment by due date, cash discount, or both.</span></span> 
+9. <span data-ttu-id="fd718-116">Zadejte datum pro porovnání s datem splatnosti nebo platební slevou.</span><span class="sxs-lookup"><span data-stu-id="fd718-116">Enter the date for comparing to the due date or cash discount.</span></span> 
+10. <span data-ttu-id="fd718-117">Volitelně: Zadejte datum platby použité pro všechny platby.</span><span class="sxs-lookup"><span data-stu-id="fd718-117">Optional: Enter a payment date used for all payments.</span></span>
+    * <span data-ttu-id="fd718-118">Zde zadané datum bude datum plateb pro všechny vytvořené platby bez ohledu na datum splatnosti nebo datum platební slevy.</span><span class="sxs-lookup"><span data-stu-id="fd718-118">The date entered here will be the payment date for all payments created, regardless of the due date or cash discount date.</span></span>  
+11. <span data-ttu-id="fd718-119">Volitelně: Zadejte minimální datum platby, které může být použito jako datum platby.</span><span class="sxs-lookup"><span data-stu-id="fd718-119">Optional: Enter a minimum payment date which may be used as the payment date.</span></span>
+    * <span data-ttu-id="fd718-120">Minimální datum platby bude nejbližší datum použité při vytváření plateb.</span><span class="sxs-lookup"><span data-stu-id="fd718-120">The minimum payment date will be the earliest date used when creating payments.</span></span> <span data-ttu-id="fd718-121">Například pokud má faktura datum splatnosti po minimálním datu platby, datum splatnosti bude datem platby namísto minimálního data platby k zaplacení faktury v nejzazší možné datum.</span><span class="sxs-lookup"><span data-stu-id="fd718-121">For example, if an invoice has a due date after the minimum payment date, the due date will become the payment date instead of the minimum payment date in order to pay the invoice on the latest possible date.</span></span>  
+12. <span data-ttu-id="fd718-122">Zadejte další omezení dotazu v části Záznamy k zahrnutí.</span><span class="sxs-lookup"><span data-stu-id="fd718-122">Enter additional query restrictions under Records to include.</span></span>
+    * <span data-ttu-id="fd718-123">Filtr se často používá k omezení faktur vybraných k zaplacení podle skupin dodavatelů nebo způsobu platby.</span><span class="sxs-lookup"><span data-stu-id="fd718-123">The filter is often used to restrict the invoices selected for payment by vendor group or method of payment.</span></span> <span data-ttu-id="fd718-124">Můžete například přidat filtr pouze pro úhradu faktur šekem v rámci daného zpracování výplat.</span><span class="sxs-lookup"><span data-stu-id="fd718-124">For example, you may add a filter to only pay invoices by cheque in this pay run.</span></span>  
+13. <span data-ttu-id="fd718-125">Zadejte další omezení dotazu nebo výchozí nastavení plateb.</span><span class="sxs-lookup"><span data-stu-id="fd718-125">Enter additional query restriction or payment defaults.</span></span> 
+    * <span data-ttu-id="fd718-126">Další parametry lze použít k definování měny plateb nebo k povolení centralizovaných plateb v rámci daného zpracování výplat.</span><span class="sxs-lookup"><span data-stu-id="fd718-126">The additional parameters can be used to define the payment currency or to enable centralized payments for this pay run.</span></span>  
+14. <span data-ttu-id="fd718-127">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="fd718-127">Click OK.</span></span>
+    * <span data-ttu-id="fd718-128">Po kliknutí na tlačítko OK se zobrazí výsledky dotazu.</span><span class="sxs-lookup"><span data-stu-id="fd718-128">After clicking OK, the results of the query will appear.</span></span> <span data-ttu-id="fd718-129">Pokud nechcete zobrazit náhled seznamu faktur vybraných k zaplacení, můžete přejít zpět na pevnou záložku Parametry a změnit nastavení Vytvořit platby bez náhledu faktury = Ano.</span><span class="sxs-lookup"><span data-stu-id="fd718-129">If you don't want to preview the list of invoices selected to pay, you can go back to the Parameters fast tab and change the setting Create payments without invoice preview = Yes.</span></span>  
+15. <span data-ttu-id="fd718-130">Pomocí tlačítka Zobrazit přehled plateb zobrazte platby, které budou vytvořeny pro dodavatele na vybrané faktuře.</span><span class="sxs-lookup"><span data-stu-id="fd718-130">Choose the Show payment overview button to view the payments that will be created for the vendor on the invoice selected.</span></span>
+16. <span data-ttu-id="fd718-131">Pomocí tlačítka Skrýt přehled plateb můžete platby skrýt.</span><span class="sxs-lookup"><span data-stu-id="fd718-131">Choose the Hide payment overview button to hide the payments.</span></span> 
+17. <span data-ttu-id="fd718-132">Klikněte na Vytvořit platby.</span><span class="sxs-lookup"><span data-stu-id="fd718-132">Click Create payments.</span></span>
+    * <span data-ttu-id="fd718-133">Před výběrem možnosti Vytvořit platby můžete kliknout pravým tlačítkem myši na mřížku a exportovat do formátu aplikace Excel na seznam faktur.</span><span class="sxs-lookup"><span data-stu-id="fd718-133">Before choosing Create payments, you can right click on the grid and export the list of invoices to Excel.</span></span> <span data-ttu-id="fd718-134">Tlačítko Vytvořit platby vytvoří platby dodavatele v deníku plateb.</span><span class="sxs-lookup"><span data-stu-id="fd718-134">The Create payments button will create the vendor payments in the payment journal.</span></span>  
+18. <span data-ttu-id="fd718-135">Naskenujte platby a ujistěte se, že je u všech plateb definován způsob platby.</span><span class="sxs-lookup"><span data-stu-id="fd718-135">Scan your payments and make sure the method of payment is defined for all payments.</span></span> 
+    * <span data-ttu-id="fd718-136">Při generování plateb, jako je například tisk šeku nebo vytváření elektronické platby, musí být definován způsob platby.</span><span class="sxs-lookup"><span data-stu-id="fd718-136">If you generate the payments, such as printing a cheque or creating an electronic payment, the method of payment must be defined.</span></span> <span data-ttu-id="fd718-137">Způsob platby také použije standardně bankovní účet z provedené platby.</span><span class="sxs-lookup"><span data-stu-id="fd718-137">The method of payment will also default the bank account from the payment will be made.</span></span>  
+19. <span data-ttu-id="fd718-138">Klikněte na tlačítko Nový a vytvořte jednorázovou platbu.</span><span class="sxs-lookup"><span data-stu-id="fd718-138">Click New to create a one-off payment.</span></span>
+    * <span data-ttu-id="fd718-139">Jednorázovou platbu lze přidat do deníku plateb kdykoli před zaúčtováním.</span><span class="sxs-lookup"><span data-stu-id="fd718-139">A one-off payment can be added to a payment journal at any time prior to posting.</span></span> <span data-ttu-id="fd718-140">To lze provést kliknutím na tlačítko Nový a přidáním informací o platbě ručně, ne pomocí návrhu platby.</span><span class="sxs-lookup"><span data-stu-id="fd718-140">This is done by clicking the New button and adding the payment information manually, rather then using the Payment proposal.</span></span>  
+20. <span data-ttu-id="fd718-141">Vyberte dodavatele, kterému bude platba určena.</span><span class="sxs-lookup"><span data-stu-id="fd718-141">Select the vendor to whom the payment will be made.</span></span>
+21. <span data-ttu-id="fd718-142">Existuje-li faktura k úhradě, zvolením možnosti Vyrovnat transakce vyberte fakturu k platbě.</span><span class="sxs-lookup"><span data-stu-id="fd718-142">If an invoice exists to pay, select Settle transactions to select the invoice for payment.</span></span>
+    * <span data-ttu-id="fd718-143">Pokud se jedná o zálohu, tento krok je volitelný.</span><span class="sxs-lookup"><span data-stu-id="fd718-143">If this is a prepayment, this step is optional.</span></span> <span data-ttu-id="fd718-144">Můžete vytvořit platbu bez výběru faktury.</span><span class="sxs-lookup"><span data-stu-id="fd718-144">You can create the payment without selecting any invoice.</span></span>  
+22. <span data-ttu-id="fd718-145">Označte veškeré faktury, které budou zaplaceny.</span><span class="sxs-lookup"><span data-stu-id="fd718-145">Mark any invoices that will be paid.</span></span>
+    * <span data-ttu-id="fd718-146">Použijete-li možnost Vyrovnat transakce k výběru faktur k uhrazení, částka k úhradě bude automaticky vypočítána z faktury vámi označené pro zaplacení a z částky vámi zadané v poli Částka k vyrovnání.</span><span class="sxs-lookup"><span data-stu-id="fd718-146">If you use the Settle transactions to select the invoices for payment, the payment amount will automatically be calculated based on what invoices you mark for payment, and what amount you enter in the Amount to settle.</span></span>  
+23. <span data-ttu-id="fd718-147">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="fd718-147">Click OK.</span></span>
+24. <span data-ttu-id="fd718-148">Chcete-li odstranit platbu, označte řádek.</span><span class="sxs-lookup"><span data-stu-id="fd718-148">If you want to delete a payment, mark the row.</span></span>
+25. <span data-ttu-id="fd718-149">Klepněte na tlačítko Odstranit.</span><span class="sxs-lookup"><span data-stu-id="fd718-149">Click Delete.</span></span>
+    * <span data-ttu-id="fd718-150">Odstranění platby odstraní pouze danou platbu.</span><span class="sxs-lookup"><span data-stu-id="fd718-150">Deleting a payment will only delete the payment.</span></span> <span data-ttu-id="fd718-151">Všechny faktury označené k platbě budou i nadále dostupné k uhrazení jinou platbou.</span><span class="sxs-lookup"><span data-stu-id="fd718-151">Any invoices marked for payment will still be available to be paid by another payment.</span></span>  
+26. <span data-ttu-id="fd718-152">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="fd718-152">Click Yes.</span></span>
+27. <span data-ttu-id="fd718-153">Vyberte generování plateb pro tisk šeků nebo vytvoření souborů elektronické platby.</span><span class="sxs-lookup"><span data-stu-id="fd718-153">Choose Generate payment to print Cheques or create the electronic payment file.</span></span>
+28. <span data-ttu-id="fd718-154">Vyberte způsob platby, kterou chcete vygenerovat.</span><span class="sxs-lookup"><span data-stu-id="fd718-154">Select the method of payment that you want to generate.</span></span>
+    * <span data-ttu-id="fd718-155">Deník plateb může obsahovat platby pro šeky i elektronické platby, ale v rámci jedné operace lze vygenerovat pouze jeden typ platby.</span><span class="sxs-lookup"><span data-stu-id="fd718-155">The payment journal can contains payments for both Cheques and electronic payments, but you can only generate one payment type at a time.</span></span>  
+29. <span data-ttu-id="fd718-156">Vyberte bankovní účet, ze kterého lze platby generovat.</span><span class="sxs-lookup"><span data-stu-id="fd718-156">Select the bank account from which to generate the payments.</span></span>
+30. <span data-ttu-id="fd718-157">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="fd718-157">Click OK.</span></span>
+    * <span data-ttu-id="fd718-158">Platby budou generovány pouze pro platby, které odpovídají vámi vybranému způsobu platby a bankovnímu účtu.</span><span class="sxs-lookup"><span data-stu-id="fd718-158">Payments will only be generated for payments that match the Method of payment and Bank account you selected.</span></span>  
+31. <span data-ttu-id="fd718-159">Pokud generujete šeky, vyberte možnost Dokument k zajištění správnosti cíle tisku pro šeky.</span><span class="sxs-lookup"><span data-stu-id="fd718-159">If you are generating Cheques, choose Document to ensure the correct print destination for the Cheques.</span></span>
+32. <span data-ttu-id="fd718-160">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="fd718-160">Click OK.</span></span>
+33. <span data-ttu-id="fd718-161">Platby vygenerujte kliknutím na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="fd718-161">Click OK to generate the payments.</span></span>
+34. <span data-ttu-id="fd718-162">Jsou-li všechny platby schválené a vygenerované, klikněte na možnost Zaúčtovat.</span><span class="sxs-lookup"><span data-stu-id="fd718-162">Click Post if all the payments are approved and generated.</span></span> 
 
 

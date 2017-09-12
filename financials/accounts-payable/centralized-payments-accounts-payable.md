@@ -19,285 +19,285 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 23541bb2d82b552cdc9e0ada4aa4ec473f498d0b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 49d5242168cd43e78dd4b0c63da363f91f680904
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="centralized-payments-for-accounts-payable"></a>Centralizované platby pro závazky
+# <a name="centralized-payments-for-accounts-payable"></a><span data-ttu-id="39848-105">Centralizované platby pro závazky</span><span class="sxs-lookup"><span data-stu-id="39848-105">Centralized payments for Accounts payable</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Proto stejné platby není nutné zadat pro více právnických osob. Tento článek uvádí příklady, které znázorňují zpracování zaúčtování pro centralizované platby v různých scénářích.
+<span data-ttu-id="39848-106">Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby.</span><span class="sxs-lookup"><span data-stu-id="39848-106">Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments.</span></span> <span data-ttu-id="39848-107">Proto stejné platby není nutné zadat pro více právnických osob.</span><span class="sxs-lookup"><span data-stu-id="39848-107">Therefore, the same payments don't have to be entered in multiple legal entities.</span></span> <span data-ttu-id="39848-108">Tento článek uvádí příklady, které znázorňují zpracování zaúčtování pro centralizované platby v různých scénářích.</span><span class="sxs-lookup"><span data-stu-id="39848-108">This article provides examples that show how posting for centralized payments is handled in various scenarios.</span></span>
 
-Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Proto stejné platby není nutné zadat pro více právnických osob. Kromě toho organizace šetří čas, protože je zjednodušen proces plateb.
+<span data-ttu-id="39848-109">Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby.</span><span class="sxs-lookup"><span data-stu-id="39848-109">Organizations that include multiple legal entities can create and manage payments by using a legal entity that handles all payments.</span></span> <span data-ttu-id="39848-110">Proto stejné platby není nutné zadat pro více právnických osob.</span><span class="sxs-lookup"><span data-stu-id="39848-110">Therefore, the same payments don't have to be entered in multiple legal entities.</span></span> <span data-ttu-id="39848-111">Kromě toho organizace šetří čas, protože je zjednodušen proces plateb.</span><span class="sxs-lookup"><span data-stu-id="39848-111">Additionally, the organization saves time, because the payment process is streamlined.</span></span>
 
-V organizaci s centralizovanými platbami existuje mnoho právnických osob pro operace a každá provozní právnická osoba spravuje své vlastní faktury dodavatele. Platby pro všechny provozní právnické osoby jsou generovány jednou právnickou osobou, která se nazývá právnická osoba platby. Během procesu vyrovnání jsou generovány odpovídající kreditní a debetní transakce. Můžete určit, která právnická osoba v organizaci přijímá transakce realizovaného zisku nebo realizované ztráty a také jak mají být zpracovány transakce platebních slev, které souvisejí s platbou mezi společnostmi. 
+<span data-ttu-id="39848-112">V organizaci s centralizovanými platbami existuje mnoho právnických osob pro operace a každá provozní právnická osoba spravuje své vlastní faktury dodavatele.</span><span class="sxs-lookup"><span data-stu-id="39848-112">In a centralized payments organization, there are many legal entities for operations, and each operating legal entity manages its own vendor invoices.</span></span> <span data-ttu-id="39848-113">Platby pro všechny provozní právnické osoby jsou generovány jednou právnickou osobou, která se nazývá právnická osoba platby.</span><span class="sxs-lookup"><span data-stu-id="39848-113">Payments for all the operating legal entities are generated from a single legal entity, which is known as the legal entity of the payment.</span></span> <span data-ttu-id="39848-114">Během procesu vyrovnání jsou generovány odpovídající kreditní a debetní transakce.</span><span class="sxs-lookup"><span data-stu-id="39848-114">During the settlement process, the applicable due-to and due-from transactions are generated.</span></span> <span data-ttu-id="39848-115">Můžete určit, která právnická osoba v organizaci přijímá transakce realizovaného zisku nebo realizované ztráty a také jak mají být zpracovány transakce platebních slev, které souvisejí s platbou mezi společnostmi.</span><span class="sxs-lookup"><span data-stu-id="39848-115">You can specify which legal entity in the organization receives the realized gain or realized loss transactions, and how cash discount transactions that are related to a cross-company payment are handled.</span></span> 
 
-Následující příklady ilustrují způsob zaúčtování při různých scénářích. U všech těchto příkladů se předpokládá následující konfigurace:
+<span data-ttu-id="39848-116">Následující příklady ilustrují způsob zaúčtování při různých scénářích.</span><span class="sxs-lookup"><span data-stu-id="39848-116">The following examples illustrate how posting is handled in various scenarios.</span></span> <span data-ttu-id="39848-117">U všech těchto příkladů se předpokládá následující konfigurace:</span><span class="sxs-lookup"><span data-stu-id="39848-117">The following configuration is assumed for all these examples:</span></span>
 
--   Právnické osoby jsou Fabrikam, Fabrikam East a Fabrikam West. Platby provádí společnost Fabrikam.
--   Pole **Zaúčtovat platební slevu** na stránce **Mezipodnikové účetnictví** je nastaveno na hodnotu **Právnická osoba faktury**.
--   Pole **Zaúčtovat zisk nebo ztrátu směnného kurzu** na stránce **Mezipodnikové účetnictví** je nastaveno na hodnotu **Právnická osoba platby**.
--   Dodavatel Fourth Coffee je nastaven jako dodavatel u každé právnické osoby. Dodavatelé z různých právnických osob jsou označení jako stejný dodavatel, protože mají stejný identifikátor globálního adresáře.
+-   <span data-ttu-id="39848-118">Právnické osoby jsou Fabrikam, Fabrikam East a Fabrikam West.</span><span class="sxs-lookup"><span data-stu-id="39848-118">The legal entities are Fabrikam, Fabrikam East, and Fabrikam West.</span></span> <span data-ttu-id="39848-119">Platby provádí společnost Fabrikam.</span><span class="sxs-lookup"><span data-stu-id="39848-119">Payments are made from Fabrikam.</span></span>
+-   <span data-ttu-id="39848-120">Pole **Zaúčtovat platební slevu** na stránce **Mezipodnikové účetnictví** je nastaveno na hodnotu **Právnická osoba faktury**.</span><span class="sxs-lookup"><span data-stu-id="39848-120">The **Post cash discount** field on the **Intercompany accounting** page is set to **Legal entity of the invoice**.</span></span>
+-   <span data-ttu-id="39848-121">Pole **Zaúčtovat zisk nebo ztrátu směnného kurzu** na stránce **Mezipodnikové účetnictví** je nastaveno na hodnotu **Právnická osoba platby**.</span><span class="sxs-lookup"><span data-stu-id="39848-121">The **Post currency exchange gain or loss** field on the **Intercompany accounting** page is set to **Legal entity of the payment**.</span></span>
+-   <span data-ttu-id="39848-122">Dodavatel Fourth Coffee je nastaven jako dodavatel u každé právnické osoby.</span><span class="sxs-lookup"><span data-stu-id="39848-122">The vendor Fourth Coffee is set up as a vendor in each legal entity.</span></span> <span data-ttu-id="39848-123">Dodavatelé z různých právnických osob jsou označení jako stejný dodavatel, protože mají stejný identifikátor globálního adresáře.</span><span class="sxs-lookup"><span data-stu-id="39848-123">The vendors from the various legal entities are identified as the same vendor because they share the same global address book ID.</span></span>
 
-| ID adresáře | Účet dodavatele | Název          | Právnická osoba  |
+| <span data-ttu-id="39848-124">ID adresáře</span><span class="sxs-lookup"><span data-stu-id="39848-124">Directory ID</span></span> | <span data-ttu-id="39848-125">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="39848-125">Vendor account</span></span> | <span data-ttu-id="39848-126">Název</span><span class="sxs-lookup"><span data-stu-id="39848-126">Name</span></span>          | <span data-ttu-id="39848-127">Právnická osoba</span><span class="sxs-lookup"><span data-stu-id="39848-127">Legal entity</span></span>  |
 |--------------|----------------|---------------|---------------|
-| 1050         | 3004           | Fourth Coffee | Fabrikam      |
-| 1050         | 100            | Fourth Coffee | Fabrikam-východ |
-| 1050         | 3004           | Fourth Coffee | Fabrikam-západ |
+| <span data-ttu-id="39848-128">1050</span><span class="sxs-lookup"><span data-stu-id="39848-128">1050</span></span>         | <span data-ttu-id="39848-129">3004</span><span class="sxs-lookup"><span data-stu-id="39848-129">3004</span></span>           | <span data-ttu-id="39848-130">Fourth Coffee</span><span class="sxs-lookup"><span data-stu-id="39848-130">Fourth Coffee</span></span> | <span data-ttu-id="39848-131">Fabrikam</span><span class="sxs-lookup"><span data-stu-id="39848-131">Fabrikam</span></span>      |
+| <span data-ttu-id="39848-132">1050</span><span class="sxs-lookup"><span data-stu-id="39848-132">1050</span></span>         | <span data-ttu-id="39848-133">100</span><span class="sxs-lookup"><span data-stu-id="39848-133">100</span></span>            | <span data-ttu-id="39848-134">Fourth Coffee</span><span class="sxs-lookup"><span data-stu-id="39848-134">Fourth Coffee</span></span> | <span data-ttu-id="39848-135">Fabrikam-východ</span><span class="sxs-lookup"><span data-stu-id="39848-135">Fabrikam East</span></span> |
+| <span data-ttu-id="39848-136">1050</span><span class="sxs-lookup"><span data-stu-id="39848-136">1050</span></span>         | <span data-ttu-id="39848-137">3004</span><span class="sxs-lookup"><span data-stu-id="39848-137">3004</span></span>           | <span data-ttu-id="39848-138">Fourth Coffee</span><span class="sxs-lookup"><span data-stu-id="39848-138">Fourth Coffee</span></span> | <span data-ttu-id="39848-139">Fabrikam-západ</span><span class="sxs-lookup"><span data-stu-id="39848-139">Fabrikam West</span></span> |
 
-## <a name="example-1-vendor-payment-of-invoice-from-another-legal-entity"></a>Příklad 1: Platba faktury dodavatele od jiné právnické osoby
-Společnost Fabrikam East má otevřenou fakturu pro účet dodavatele 100, Fourth Coffee. Společnost Fabrikam zadá a zaúčtuje platbu na účet dodavatele Fabrikam 3004, Fourth Coffee. Platba je poté vyrovnána s otevřenou fakturou.
+## <a name="example-1-vendor-payment-of-invoice-from-another-legal-entity"></a><span data-ttu-id="39848-140">Příklad 1: Platba faktury dodavatele od jiné právnické osoby</span><span class="sxs-lookup"><span data-stu-id="39848-140">Example 1: Vendor payment of invoice from another legal entity</span></span>
+<span data-ttu-id="39848-141">Společnost Fabrikam East má otevřenou fakturu pro účet dodavatele 100, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="39848-141">Fabrikam East has an open invoice for vendor account 100, Fourth Coffee.</span></span> <span data-ttu-id="39848-142">Společnost Fabrikam zadá a zaúčtuje platbu na účet dodavatele Fabrikam 3004, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="39848-142">Fabrikam enters and posts a payment to Fabrikam vendor account 3004, Fourth Coffee.</span></span> <span data-ttu-id="39848-143">Platba je poté vyrovnána s otevřenou fakturou.</span><span class="sxs-lookup"><span data-stu-id="39848-143">The payment is settled with the open invoice.</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-vendor-100"></a>Faktura je zaúčtována ve společnosti Fabrikam East pro účet 100 dodavatele
+### <a name="invoice-is-posted-in-fabrikam-east-for-vendor-100"></a><span data-ttu-id="39848-144">Faktura je zaúčtována ve společnosti Fabrikam East pro účet 100 dodavatele</span><span class="sxs-lookup"><span data-stu-id="39848-144">Invoice is posted in Fabrikam East for vendor 100</span></span>
 
-| Účet                          | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-145">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-145">Account</span></span>                          | <span data-ttu-id="39848-146">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-146">Debit amount</span></span> | <span data-ttu-id="39848-147">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-147">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Výdaje (Fabrikam East)          | 600,00       |               |
-| Závazky (Fabrikam East) |              | 600,00        |
+| <span data-ttu-id="39848-148">Výdaje (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-148">Expense (Fabrikam East)</span></span>          | <span data-ttu-id="39848-149">600,00</span><span class="sxs-lookup"><span data-stu-id="39848-149">600.00</span></span>       |               |
+| <span data-ttu-id="39848-150">Závazky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-150">Accounts payable (Fabrikam East)</span></span> |              | <span data-ttu-id="39848-151">600,00</span><span class="sxs-lookup"><span data-stu-id="39848-151">600.00</span></span>        |
 
-### <a name="payment-is-generated-and-posted-in-fabrikam-for-vendor-3004"></a>Platba je generována a zaúčtována ve společnosti Fabrikam pro účet 3004 dodavatele
+### <a name="payment-is-generated-and-posted-in-fabrikam-for-vendor-3004"></a><span data-ttu-id="39848-152">Platba je generována a zaúčtována ve společnosti Fabrikam pro účet 3004 dodavatele</span><span class="sxs-lookup"><span data-stu-id="39848-152">Payment is generated and posted in Fabrikam for vendor 3004</span></span>
 
-| Účet                     | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-153">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-153">Account</span></span>                     | <span data-ttu-id="39848-154">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-154">Debit amount</span></span> | <span data-ttu-id="39848-155">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-155">Credit amount</span></span> |
 |-----------------------------|--------------|---------------|
-| Závazky (Fabrikam) | 600,00       |               |
-| Hotovost (Fabrikam)             |              | 600,00        |
+| <span data-ttu-id="39848-156">Závazky (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-156">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="39848-157">600,00</span><span class="sxs-lookup"><span data-stu-id="39848-157">600.00</span></span>       |               |
+| <span data-ttu-id="39848-158">Hotovost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-158">Cash (Fabrikam)</span></span>             |              | <span data-ttu-id="39848-159">600,00</span><span class="sxs-lookup"><span data-stu-id="39848-159">600.00</span></span>        |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Platba společnosti Fabrikam je vyrovnána s fakturou společnosti Fabrikam East
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="39848-160">Platba společnosti Fabrikam je vyrovnána s fakturou společnosti Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="39848-160">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Zaúčtování společnosti Fabrikam**
+<span data-ttu-id="39848-161">**Zaúčtování společnosti Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="39848-161">**Fabrikam posting**</span></span>
 
-| Účet                           | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-162">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-162">Account</span></span>                           | <span data-ttu-id="39848-163">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-163">Debit amount</span></span> | <span data-ttu-id="39848-164">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-164">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Splatná částka od společnosti Fabrikam East (Fabrikam) | 600,00       |               |
-| Závazky (Fabrikam)       |              | 600,00        |
+| <span data-ttu-id="39848-165">Splatná částka od společnosti Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-165">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="39848-166">600,00</span><span class="sxs-lookup"><span data-stu-id="39848-166">600.00</span></span>       |               |
+| <span data-ttu-id="39848-167">Závazky (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-167">Accounts payable (Fabrikam)</span></span>       |              | <span data-ttu-id="39848-168">600,00</span><span class="sxs-lookup"><span data-stu-id="39848-168">600.00</span></span>        |
 
-**Zaúčtování společnosti Fabrikam East**
+<span data-ttu-id="39848-169">**Zaúčtování společnosti Fabrikam East**</span><span class="sxs-lookup"><span data-stu-id="39848-169">**Fabrikam East posting**</span></span>
 
-| Účet                          | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-170">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-170">Account</span></span>                          | <span data-ttu-id="39848-171">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-171">Debit amount</span></span> | <span data-ttu-id="39848-172">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-172">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Závazky (Fabrikam East) | 600,00       |               |
-| Závazky Fabrikam (Fabrikam-východ)  |              | 600,00        |
+| <span data-ttu-id="39848-173">Závazky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-173">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="39848-174">600,00</span><span class="sxs-lookup"><span data-stu-id="39848-174">600.00</span></span>       |               |
+| <span data-ttu-id="39848-175">Závazky Fabrikam (Fabrikam-východ)</span><span class="sxs-lookup"><span data-stu-id="39848-175">Due to Fabrikam (Fabrikam East)</span></span>  |              | <span data-ttu-id="39848-176">600,00</span><span class="sxs-lookup"><span data-stu-id="39848-176">600.00</span></span>        |
 
-## <a name="example-2-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a>Příklad 2: Platba faktury dodavatele od jiné právnické osoby s platební slevou
-Společnost Fabrikam East má otevřenou fakturu pro účet dodavatele 100, Fourth Coffee. Faktura umožňuje hotovostní slevu ve výši 20,00. Společnost Fabrikam zadá a zaúčtuje platbu ve výši 580,00 pro dodavatele Fabrikam 3004, Fourth Coffee. Platba je vyrovnána s otevřenými fakturami společnosti Fabrikam-východ. Platební sleva je zaúčtována právnické osobě, která vystavila fakturu, což je Fabrikam East.
+## <a name="example-2-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a><span data-ttu-id="39848-177">Příklad 2: Platba faktury dodavatele od jiné právnické osoby s platební slevou</span><span class="sxs-lookup"><span data-stu-id="39848-177">Example 2: Vendor payment of invoice from another legal entity with cash discount</span></span>
+<span data-ttu-id="39848-178">Společnost Fabrikam East má otevřenou fakturu pro účet dodavatele 100, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="39848-178">Fabrikam East has an open invoice for vendor 100, Fourth Coffee.</span></span> <span data-ttu-id="39848-179">Faktura umožňuje hotovostní slevu ve výši 20,00.</span><span class="sxs-lookup"><span data-stu-id="39848-179">The invoice has a 20.00 cash discount available.</span></span> <span data-ttu-id="39848-180">Společnost Fabrikam zadá a zaúčtuje platbu ve výši 580,00 pro dodavatele Fabrikam 3004, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="39848-180">Fabrikam enters and posts a payment of 580.00 for Fabrikam vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="39848-181">Platba je vyrovnána s otevřenými fakturami společnosti Fabrikam-východ.</span><span class="sxs-lookup"><span data-stu-id="39848-181">The payment is settled with the open Fabrikam East invoices.</span></span> <span data-ttu-id="39848-182">Platební sleva je zaúčtována právnické osobě, která vystavila fakturu, což je Fabrikam East.</span><span class="sxs-lookup"><span data-stu-id="39848-182">The cash discount is posted to the legal entity of the invoice, Fabrikam East.</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-vendor-100"></a>Faktura je zaúčtována ve společnosti Fabrikam East pro dodavatele Fabrikam East 100
+### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-vendor-100"></a><span data-ttu-id="39848-183">Faktura je zaúčtována ve společnosti Fabrikam East pro dodavatele Fabrikam East 100</span><span class="sxs-lookup"><span data-stu-id="39848-183">Invoice is posted in Fabrikam East for Fabrikam East vendor 100</span></span>
 
-| Účet                          | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-184">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-184">Account</span></span>                          | <span data-ttu-id="39848-185">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-185">Debit amount</span></span> | <span data-ttu-id="39848-186">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-186">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Výdaje (Fabrikam East)          | 600,00       |               |
-| Závazky (Fabrikam East) |              | 600,00        |
+| <span data-ttu-id="39848-187">Výdaje (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-187">Expense (Fabrikam East)</span></span>          | <span data-ttu-id="39848-188">600,00</span><span class="sxs-lookup"><span data-stu-id="39848-188">600.00</span></span>       |               |
+| <span data-ttu-id="39848-189">Závazky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-189">Accounts payable (Fabrikam East)</span></span> |              | <span data-ttu-id="39848-190">600,00</span><span class="sxs-lookup"><span data-stu-id="39848-190">600.00</span></span>        |
 
-### <a name="payment-is-generated-and-posted-in-fabrikam-for-fabrikam-vendor-3004"></a>Platba je generována a zaúčtována ve společnosti Fabrikam pro dodavatele Fabrikam 3004
+### <a name="payment-is-generated-and-posted-in-fabrikam-for-fabrikam-vendor-3004"></a><span data-ttu-id="39848-191">Platba je generována a zaúčtována ve společnosti Fabrikam pro dodavatele Fabrikam 3004</span><span class="sxs-lookup"><span data-stu-id="39848-191">Payment is generated and posted in Fabrikam for Fabrikam vendor 3004</span></span>
 
-| Účet                     | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-192">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-192">Account</span></span>                     | <span data-ttu-id="39848-193">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-193">Debit amount</span></span> | <span data-ttu-id="39848-194">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-194">Credit amount</span></span> |
 |-----------------------------|--------------|---------------|
-| Závazky (Fabrikam) | 580,00       |               |
-| Hotovost (Fabrikam)             |              | 580,00        |
+| <span data-ttu-id="39848-195">Závazky (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-195">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="39848-196">580,00</span><span class="sxs-lookup"><span data-stu-id="39848-196">580.00</span></span>       |               |
+| <span data-ttu-id="39848-197">Hotovost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-197">Cash (Fabrikam)</span></span>             |              | <span data-ttu-id="39848-198">580,00</span><span class="sxs-lookup"><span data-stu-id="39848-198">580.00</span></span>        |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Platba společnosti Fabrikam je vyrovnána s fakturou společnosti Fabrikam East
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="39848-199">Platba společnosti Fabrikam je vyrovnána s fakturou společnosti Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="39848-199">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Zaúčtování společnosti Fabrikam**
+<span data-ttu-id="39848-200">**Zaúčtování společnosti Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="39848-200">**Fabrikam posting**</span></span>
 
-| Účet                           | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-201">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-201">Account</span></span>                           | <span data-ttu-id="39848-202">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-202">Debit amount</span></span> | <span data-ttu-id="39848-203">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-203">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Splatná částka od společnosti Fabrikam East (Fabrikam) | 580,00       |               |
-| Závazky (Fabrikam)       |              | 580,00        |
+| <span data-ttu-id="39848-204">Splatná částka od společnosti Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-204">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="39848-205">580,00</span><span class="sxs-lookup"><span data-stu-id="39848-205">580.00</span></span>       |               |
+| <span data-ttu-id="39848-206">Závazky (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-206">Accounts payable (Fabrikam)</span></span>       |              | <span data-ttu-id="39848-207">580,00</span><span class="sxs-lookup"><span data-stu-id="39848-207">580.00</span></span>        |
 
-**Zaúčtování společnosti Fabrikam East**
+<span data-ttu-id="39848-208">**Zaúčtování společnosti Fabrikam East**</span><span class="sxs-lookup"><span data-stu-id="39848-208">**Fabrikam East posting**</span></span>
 
-| Účet                          | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-209">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-209">Account</span></span>                          | <span data-ttu-id="39848-210">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-210">Debit amount</span></span> | <span data-ttu-id="39848-211">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-211">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Závazky (Fabrikam East) | 580,00       |               |
-| Splatná částka pro společnost Fabrikam (Fabrikam East)  |              | 580,00        |
-| Závazky (Fabrikam East) | 20,00        |               |
-| Platební sleva (Fabrikam-východ)    |              | 20,00         |
+| <span data-ttu-id="39848-212">Závazky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-212">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="39848-213">580,00</span><span class="sxs-lookup"><span data-stu-id="39848-213">580.00</span></span>       |               |
+| <span data-ttu-id="39848-214">Splatná částka pro společnost Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-214">Due to Fabrikam (Fabrikam East)</span></span>  |              | <span data-ttu-id="39848-215">580,00</span><span class="sxs-lookup"><span data-stu-id="39848-215">580.00</span></span>        |
+| <span data-ttu-id="39848-216">Závazky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-216">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="39848-217">20,00</span><span class="sxs-lookup"><span data-stu-id="39848-217">20.00</span></span>        |               |
+| <span data-ttu-id="39848-218">Platební sleva (Fabrikam-východ)</span><span class="sxs-lookup"><span data-stu-id="39848-218">Cash discount (Fabrikam East)</span></span>    |              | <span data-ttu-id="39848-219">20,00</span><span class="sxs-lookup"><span data-stu-id="39848-219">20.00</span></span>         |
 
-## <a name="example-3-vendor-payment-of-invoice-from-another-legal-entity-with-realized-exchange-rate-loss"></a>Příklad 3: Platba dodavatele faktury od jiné právnické osoby s realizovanou ztrátou směnného kurzu
-Společnost Fabrikam East má otevřenou fakturu pro účet dodavatele 100, Fourth Coffee. Společnost Fabrikam zadá a zaúčtuje platbu pro dodavatele Fabrikam 3004, Fourth Coffee. Platba je vyrovnána s otevřenými fakturami společnosti Fabrikam East. Během procesu vyrovnání je poté vygenerována transakce ztráty směnného kurzu.
+## <a name="example-3-vendor-payment-of-invoice-from-another-legal-entity-with-realized-exchange-rate-loss"></a><span data-ttu-id="39848-220">Příklad 3: Platba dodavatele faktury od jiné právnické osoby s realizovanou ztrátou směnného kurzu</span><span class="sxs-lookup"><span data-stu-id="39848-220">Example 3: Vendor payment of invoice from another legal entity with realized exchange rate loss</span></span>
+<span data-ttu-id="39848-221">Společnost Fabrikam East má otevřenou fakturu pro účet dodavatele 100, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="39848-221">Fabrikam East has an open invoice for vendor 100, Fourth Coffee.</span></span> <span data-ttu-id="39848-222">Společnost Fabrikam zadá a zaúčtuje platbu pro dodavatele Fabrikam 3004, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="39848-222">Fabrikam enters and posts a payment for Fabrikam vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="39848-223">Platba je vyrovnána s otevřenými fakturami společnosti Fabrikam East.</span><span class="sxs-lookup"><span data-stu-id="39848-223">The payment is settled with the open Fabrikam East invoice.</span></span> <span data-ttu-id="39848-224">Během procesu vyrovnání je poté vygenerována transakce ztráty směnného kurzu.</span><span class="sxs-lookup"><span data-stu-id="39848-224">A currency exchange loss transaction is generated during the settlement process.</span></span>
 
--   Směnný kurz z eura (EUR) na americké dolary (USD) k datu faktury: 1,2062
--   Kurz EUR/USD k datu platby: 1,2277
+-   <span data-ttu-id="39848-225">Směnný kurz z eura (EUR) na americké dolary (USD) k datu faktury: 1,2062</span><span class="sxs-lookup"><span data-stu-id="39848-225">Exchange rate for euros (EUR) to U.S. dollars (USD) as of the invoice date: 1.2062</span></span>
+-   <span data-ttu-id="39848-226">Kurz EUR/USD k datu platby: 1,2277</span><span class="sxs-lookup"><span data-stu-id="39848-226">Exchange rate for EUR to USD as of the payment date: 1.2277</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-vendor-100"></a>Faktura je zaúčtována ve společnosti Fabrikam East pro dodavatele Fabrikam East 100
+### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-vendor-100"></a><span data-ttu-id="39848-227">Faktura je zaúčtována ve společnosti Fabrikam East pro dodavatele Fabrikam East 100</span><span class="sxs-lookup"><span data-stu-id="39848-227">Invoice is posted in Fabrikam East for Fabrikam East vendor 100</span></span>
 
-| Účet                          | Částka Má dáti            | Částka Dal           |
+| <span data-ttu-id="39848-228">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-228">Account</span></span>                          | <span data-ttu-id="39848-229">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-229">Debit amount</span></span>            | <span data-ttu-id="39848-230">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-230">Credit amount</span></span>           |
 |----------------------------------|-------------------------|-------------------------|
-| Výdaje (Fabrikam East)          | 600,00 EUR / 723,72 USD |                         |
-| Závazky (Fabrikam East) |                         | 600,00 EUR / 723,72 USD |
+| <span data-ttu-id="39848-231">Výdaje (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-231">Expense (Fabrikam East)</span></span>          | <span data-ttu-id="39848-232">600,00 EUR / 723,72 USD</span><span class="sxs-lookup"><span data-stu-id="39848-232">600.00 EUR / 723.72 USD</span></span> |                         |
+| <span data-ttu-id="39848-233">Závazky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-233">Accounts payable (Fabrikam East)</span></span> |                         | <span data-ttu-id="39848-234">600,00 EUR / 723,72 USD</span><span class="sxs-lookup"><span data-stu-id="39848-234">600.00 EUR / 723.72 USD</span></span> |
 
-### <a name="payment-is-generated-and-posted-in-fabrikam-for-fabrikam-vendor-3004"></a>Platba je generována a zaúčtována ve společnosti Fabrikam pro dodavatele Fabrikam 3004
+### <a name="payment-is-generated-and-posted-in-fabrikam-for-fabrikam-vendor-3004"></a><span data-ttu-id="39848-235">Platba je generována a zaúčtována ve společnosti Fabrikam pro dodavatele Fabrikam 3004</span><span class="sxs-lookup"><span data-stu-id="39848-235">Payment is generated and posted in Fabrikam for Fabrikam vendor 3004</span></span>
 
-| Účet                     | Částka Má dáti            | Částka Dal           |
+| <span data-ttu-id="39848-236">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-236">Account</span></span>                     | <span data-ttu-id="39848-237">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-237">Debit amount</span></span>            | <span data-ttu-id="39848-238">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-238">Credit amount</span></span>           |
 |-----------------------------|-------------------------|-------------------------|
-| Závazky (Fabrikam) | 600,00 EUR / 736,62 USD |                         |
-| Hotovost (Fabrikam)             |                         | 600,00 EUR / 736,62 USD |
+| <span data-ttu-id="39848-239">Závazky (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-239">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="39848-240">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="39848-240">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="39848-241">Hotovost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-241">Cash (Fabrikam)</span></span>             |                         | <span data-ttu-id="39848-242">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="39848-242">600.00 EUR / 736.62 USD</span></span> |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Platba společnosti Fabrikam je vyrovnána s fakturou společnosti Fabrikam East
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="39848-243">Platba společnosti Fabrikam je vyrovnána s fakturou společnosti Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="39848-243">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Zaúčtování společnosti Fabrikam**
+<span data-ttu-id="39848-244">**Zaúčtování společnosti Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="39848-244">**Fabrikam posting**</span></span>
 
-| Účet                           | Částka Má dáti            | Částka Dal           |
+| <span data-ttu-id="39848-245">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-245">Account</span></span>                           | <span data-ttu-id="39848-246">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-246">Debit amount</span></span>            | <span data-ttu-id="39848-247">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-247">Credit amount</span></span>           |
 |-----------------------------------|-------------------------|-------------------------|
-| Splatná částka od společnosti Fabrikam East (Fabrikam) | 600,00 EUR / 736,62 USD |                         |
-| Závazky (Fabrikam)       |                         | 600,00 EUR / 736,62 USD |
-| Realizovaná ztráta (Fabrikam)          | 0,00 EUR / 12,90 USD    |                         |
-| Splatná částka od společnosti Fabrikam East (Fabrikam) |                         | 0,00 EUR / 12,90 USD    |
+| <span data-ttu-id="39848-248">Splatná částka od společnosti Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-248">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="39848-249">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="39848-249">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="39848-250">Závazky (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-250">Accounts payable (Fabrikam)</span></span>       |                         | <span data-ttu-id="39848-251">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="39848-251">600.00 EUR / 736.62 USD</span></span> |
+| <span data-ttu-id="39848-252">Realizovaná ztráta (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-252">Realized loss (Fabrikam)</span></span>          | <span data-ttu-id="39848-253">0,00 EUR / 12,90 USD</span><span class="sxs-lookup"><span data-stu-id="39848-253">0.00 EUR / 12.90 USD</span></span>    |                         |
+| <span data-ttu-id="39848-254">Splatná částka od společnosti Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-254">Due from Fabrikam East (Fabrikam)</span></span> |                         | <span data-ttu-id="39848-255">0,00 EUR / 12,90 USD</span><span class="sxs-lookup"><span data-stu-id="39848-255">0.00 EUR / 12.90 USD</span></span>    |
 
-**Zaúčtování společnosti Fabrikam East**
+<span data-ttu-id="39848-256">**Zaúčtování společnosti Fabrikam East**</span><span class="sxs-lookup"><span data-stu-id="39848-256">**Fabrikam East posting**</span></span>
 
-| Účet                          | Částka Má dáti            | Částka Dal           |
+| <span data-ttu-id="39848-257">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-257">Account</span></span>                          | <span data-ttu-id="39848-258">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-258">Debit amount</span></span>            | <span data-ttu-id="39848-259">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-259">Credit amount</span></span>           |
 |----------------------------------|-------------------------|-------------------------|
-| Závazky (Fabrikam East) | 600,00 EUR / 736,62 USD |                         |
-| Splatná částka pro společnost Fabrikam (Fabrikam East)  |                         | 600,00 EUR / 736,62 USD |
-| Splatná částka pro společnost Fabrikam (Fabrikam East)  | 0,00 EUR / 12,90 USD    |                         |
-| Závazky (Fabrikam East) |                         | 0 EUR / 12,90 USD    |
+| <span data-ttu-id="39848-260">Závazky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-260">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="39848-261">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="39848-261">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="39848-262">Splatná částka pro společnost Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-262">Due to Fabrikam (Fabrikam East)</span></span>  |                         | <span data-ttu-id="39848-263">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="39848-263">600.00 EUR / 736.62 USD</span></span> |
+| <span data-ttu-id="39848-264">Splatná částka pro společnost Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-264">Due to Fabrikam (Fabrikam East)</span></span>  | <span data-ttu-id="39848-265">0,00 EUR / 12,90 USD</span><span class="sxs-lookup"><span data-stu-id="39848-265">0.00 EUR / 12.90 USD</span></span>    |                         |
+| <span data-ttu-id="39848-266">Závazky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-266">Accounts payable (Fabrikam East)</span></span> |                         | <span data-ttu-id="39848-267">0 EUR / 12,90 USD</span><span class="sxs-lookup"><span data-stu-id="39848-267">0.00 EUR / 12.90 USD</span></span>    |
 
-## <a name="example-4-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-loss"></a>Příklad 4: Platba dodavatele faktury od jiné právnické osoby s platební slevou a realizovanou ztrátou směnného kurzu
-Společnost Fabrikam East má otevřenou fakturu pro účet dodavatele 100, Fourth Coffee. Na faktuře je uvedena platební sleva a je vygenerována transakce DPH. Společnost Fabrikam zaúčtuje platbu pro dodavatele Fabrikam 3004, Fourth Coffee. Platba je vyrovnána s otevřenou fakturou společnosti Fabrikam-východ. Během procesu vyrovnání je poté vygenerována transakce ztráty směnného kurzu. Platební sleva je zaúčtována u právnické osoby faktury (Fabrikam East) a ztráta směnného kurzu je zaúčtována u právnické osoby platby (Fabrikam).
+## <a name="example-4-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-loss"></a><span data-ttu-id="39848-268">Příklad 4: Platba dodavatele faktury od jiné právnické osoby s platební slevou a realizovanou ztrátou směnného kurzu</span><span class="sxs-lookup"><span data-stu-id="39848-268">Example 4: Vendor payment of invoice from another legal entity with cash discount and realized exchange rate loss</span></span>
+<span data-ttu-id="39848-269">Společnost Fabrikam East má otevřenou fakturu pro účet dodavatele 100, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="39848-269">Fabrikam East has an open invoice for vendor 100, Fourth Coffee.</span></span> <span data-ttu-id="39848-270">Na faktuře je uvedena platební sleva a je vygenerována transakce DPH.</span><span class="sxs-lookup"><span data-stu-id="39848-270">The invoice has a cash discount available, and a sales tax transaction is generated.</span></span> <span data-ttu-id="39848-271">Společnost Fabrikam zaúčtuje platbu pro dodavatele Fabrikam 3004, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="39848-271">Fabrikam posts a payment for Fabrikam vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="39848-272">Platba je vyrovnána s otevřenou fakturou společnosti Fabrikam-východ.</span><span class="sxs-lookup"><span data-stu-id="39848-272">The payment is settled with the open Fabrikam East invoice.</span></span> <span data-ttu-id="39848-273">Během procesu vyrovnání je poté vygenerována transakce ztráty směnného kurzu.</span><span class="sxs-lookup"><span data-stu-id="39848-273">A currency exchange loss transaction is generated during the settlement process.</span></span> <span data-ttu-id="39848-274">Platební sleva je zaúčtována u právnické osoby faktury (Fabrikam East) a ztráta směnného kurzu je zaúčtována u právnické osoby platby (Fabrikam).</span><span class="sxs-lookup"><span data-stu-id="39848-274">The cash discount is posted to the legal entity of the invoice (Fabrikam East), and the currency exchange loss is posted to the legal entity of the payment (Fabrikam).</span></span>
 
--   Kurz EUR/USD k datu faktury: 1,2062
--   Kurz EUR/USD k datu platby: 1,2277
+-   <span data-ttu-id="39848-275">Kurz EUR/USD k datu faktury: 1,2062</span><span class="sxs-lookup"><span data-stu-id="39848-275">Exchange rate for EUR to USD as of the invoice date: 1.2062</span></span>
+-   <span data-ttu-id="39848-276">Kurz EUR/USD k datu platby: 1,2277</span><span class="sxs-lookup"><span data-stu-id="39848-276">Exchange rate for EUR to USD as of the payment date: 1.2277</span></span>
 
-### <a name="invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-vendor-100"></a>Faktura je zaúčtována a je vygenerována transakce ve společnosti Fabrikam East pro účet dodavatele 100
+### <a name="invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-vendor-100"></a><span data-ttu-id="39848-277">Faktura je zaúčtována a je vygenerována transakce ve společnosti Fabrikam East pro účet dodavatele 100</span><span class="sxs-lookup"><span data-stu-id="39848-277">Invoice is posted and a tax transaction is generated in Fabrikam East for vendor 100</span></span>
 
-| Účet                          | Částka Má dáti            | Částka Dal           |
+| <span data-ttu-id="39848-278">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-278">Account</span></span>                          | <span data-ttu-id="39848-279">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-279">Debit amount</span></span>            | <span data-ttu-id="39848-280">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-280">Credit amount</span></span>           |
 |----------------------------------|-------------------------|-------------------------|
-| Výdaje (Fabrikam East)          | 564,07 EUR / 680,38 USD |                         |
-| DPH (Fabrikam East)        | 35,93 EUR / 43,34 USD   |                         |
-| Závazky (Fabrikam East) |                         | 600,00 EUR / 723,72 USD |
+| <span data-ttu-id="39848-281">Výdaje (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-281">Expense (Fabrikam East)</span></span>          | <span data-ttu-id="39848-282">564,07 EUR / 680,38 USD</span><span class="sxs-lookup"><span data-stu-id="39848-282">564.07 EUR / 680.38 USD</span></span> |                         |
+| <span data-ttu-id="39848-283">DPH (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-283">Sales tax (Fabrikam East)</span></span>        | <span data-ttu-id="39848-284">35,93 EUR / 43,34 USD</span><span class="sxs-lookup"><span data-stu-id="39848-284">35.93 EUR / 43.34 USD</span></span>   |                         |
+| <span data-ttu-id="39848-285">Závazky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-285">Accounts payable (Fabrikam East)</span></span> |                         | <span data-ttu-id="39848-286">600,00 EUR / 723,72 USD</span><span class="sxs-lookup"><span data-stu-id="39848-286">600.00 EUR / 723.72 USD</span></span> |
 
-### <a name="payment-is-generated-and-posted-in-fabrikam-for-vendor-3004"></a>Platba je generována a zaúčtována ve společnosti Fabrikam pro účet dodavatele 3004
+### <a name="payment-is-generated-and-posted-in-fabrikam-for-vendor-3004"></a><span data-ttu-id="39848-287">Platba je generována a zaúčtována ve společnosti Fabrikam pro účet dodavatele 3004</span><span class="sxs-lookup"><span data-stu-id="39848-287">Payment is generated and posted in Fabrikam for vendor 3004</span></span>
 
-| Účet                     | Částka Má dáti            | Částka Dal           |
+| <span data-ttu-id="39848-288">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-288">Account</span></span>                     | <span data-ttu-id="39848-289">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-289">Debit amount</span></span>            | <span data-ttu-id="39848-290">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-290">Credit amount</span></span>           |
 |-----------------------------|-------------------------|-------------------------|
-| Závazky (Fabrikam) | 588,72 EUR / 722,77 USD |                         |
-| Hotovost (Fabrikam East)        |                         | 588,72 EUR / 722,77 USD |
+| <span data-ttu-id="39848-291">Závazky (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-291">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="39848-292">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="39848-292">588.72 EUR / 722.77 USD</span></span> |                         |
+| <span data-ttu-id="39848-293">Hotovost (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-293">Cash (Fabrikam East)</span></span>        |                         | <span data-ttu-id="39848-294">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="39848-294">588.72 EUR / 722.77 USD</span></span> |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Platba společnosti Fabrikam je vyrovnána s fakturou společnosti Fabrikam East
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="39848-295">Platba společnosti Fabrikam je vyrovnána s fakturou společnosti Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="39848-295">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Zaúčtování společnosti Fabrikam**
+<span data-ttu-id="39848-296">**Zaúčtování společnosti Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="39848-296">**Fabrikam posting**</span></span>
 
-| Účet                           | Částka Má dáti            | Částka Dal           |
+| <span data-ttu-id="39848-297">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-297">Account</span></span>                           | <span data-ttu-id="39848-298">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-298">Debit amount</span></span>            | <span data-ttu-id="39848-299">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-299">Credit amount</span></span>           |
 |-----------------------------------|-------------------------|-------------------------|
-| Splatná částka od společnosti Fabrikam East (Fabrikam) | 588,72 EUR / 722,77 USD |                         |
-| Závazky (Fabrikam)       |                         | 588,72 EUR / 722,77 USD |
-| Realizovaná ztráta (Fabrikam)          | 0,00 EUR / 12,66 USD    |                         |
-| Splatná částka od společnosti Fabrikam East (Fabrikam) |                         | 0,00 EUR / 12,66 USD    |
+| <span data-ttu-id="39848-300">Splatná částka od společnosti Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-300">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="39848-301">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="39848-301">588.72 EUR / 722.77 USD</span></span> |                         |
+| <span data-ttu-id="39848-302">Závazky (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-302">Accounts payable (Fabrikam)</span></span>       |                         | <span data-ttu-id="39848-303">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="39848-303">588.72 EUR / 722.77 USD</span></span> |
+| <span data-ttu-id="39848-304">Realizovaná ztráta (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-304">Realized loss (Fabrikam)</span></span>          | <span data-ttu-id="39848-305">0,00 EUR / 12,66 USD</span><span class="sxs-lookup"><span data-stu-id="39848-305">0.00 EUR / 12.66 USD</span></span>    |                         |
+| <span data-ttu-id="39848-306">Splatná částka od společnosti Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-306">Due from Fabrikam East (Fabrikam)</span></span> |                         | <span data-ttu-id="39848-307">0,00 EUR / 12,66 USD</span><span class="sxs-lookup"><span data-stu-id="39848-307">0.00 EUR / 12.66 USD</span></span>    |
 
-**Zaúčtování společnosti Fabrikam East**
+<span data-ttu-id="39848-308">**Zaúčtování společnosti Fabrikam East**</span><span class="sxs-lookup"><span data-stu-id="39848-308">**Fabrikam East posting**</span></span>
 
-| Účet                          | Částka Má dáti            | Částka Dal           |
+| <span data-ttu-id="39848-309">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-309">Account</span></span>                          | <span data-ttu-id="39848-310">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-310">Debit amount</span></span>            | <span data-ttu-id="39848-311">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-311">Credit amount</span></span>           |
 |----------------------------------|-------------------------|-------------------------|
-| Závazky (Fabrikam East) | 588,72 EUR / 722,77 USD |                         |
-| Splatná částka pro společnost Fabrikam (Fabrikam East)  |                         | 588,72 EUR / 722,77 USD |
-| Splatná částka pro společnost Fabrikam (Fabrikam East)   | 0,00 EUR / 12,66 USD    |                         |
-| Závazky (Fabrikam East) |                         | 0,00 EUR / 12,66 USD    |
-| Závazky (Fabrikam East) | 11,28 EUR / 13,61 USD   |                         |
-| Hotovostní sleva (Fabrikam East)    |                         | 11,28 EUR / 13,61 USD   |
+| <span data-ttu-id="39848-312">Závazky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-312">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="39848-313">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="39848-313">588.72 EUR / 722.77 USD</span></span> |                         |
+| <span data-ttu-id="39848-314">Splatná částka pro společnost Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-314">Due to Fabrikam (Fabrikam East)</span></span>  |                         | <span data-ttu-id="39848-315">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="39848-315">588.72 EUR / 722.77 USD</span></span> |
+| <span data-ttu-id="39848-316">Splatná částka pro společnost Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-316">Due to Fabrikam (Fabrikam East</span></span>   | <span data-ttu-id="39848-317">0,00 EUR / 12,66 USD</span><span class="sxs-lookup"><span data-stu-id="39848-317">0.00 EUR / 12.66 USD</span></span>    |                         |
+| <span data-ttu-id="39848-318">Závazky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-318">Accounts payable (Fabrikam East)</span></span> |                         | <span data-ttu-id="39848-319">0,00 EUR / 12,66 USD</span><span class="sxs-lookup"><span data-stu-id="39848-319">0.00 EUR / 12.66 USD</span></span>    |
+| <span data-ttu-id="39848-320">Závazky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-320">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="39848-321">11,28 EUR / 13,61 USD</span><span class="sxs-lookup"><span data-stu-id="39848-321">11.28 EUR / 13.61 USD</span></span>   |                         |
+| <span data-ttu-id="39848-322">Hotovostní sleva (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-322">Cash discount (Fabrikam East)</span></span>    |                         | <span data-ttu-id="39848-323">11,28 EUR / 13,61 USD</span><span class="sxs-lookup"><span data-stu-id="39848-323">11.28 EUR / 13.61 USD</span></span>   |
 
-## <a name="example-5-vendor-credit-note-with-primary-payment"></a>Příklad 5: Dobropis dodavatele s primární platbou
-Společnost Fabrikam vygeneruje platbu ve výši 75,00 pro účet dodavatele 3004, Fourth Coffee. Platba bude vyrovnána s použitím otevřené faktury pro účet 3004 dodavatele Fabrikam West a otevřeného dobropisu pro účet 100 dodavatele Fabrikam East. Tato platba je vybrána jako hlavní platba na stránce **Vyrovnat transakce**.
+## <a name="example-5-vendor-credit-note-with-primary-payment"></a><span data-ttu-id="39848-324">Příklad 5: Dobropis dodavatele s primární platbou</span><span class="sxs-lookup"><span data-stu-id="39848-324">Example 5: Vendor credit note with primary payment</span></span>
+<span data-ttu-id="39848-325">Společnost Fabrikam vygeneruje platbu ve výši 75,00 pro účet dodavatele 3004, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="39848-325">Fabrikam generates a payment of 75.00 for vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="39848-326">Platba bude vyrovnána s použitím otevřené faktury pro účet 3004 dodavatele Fabrikam West a otevřeného dobropisu pro účet 100 dodavatele Fabrikam East.</span><span class="sxs-lookup"><span data-stu-id="39848-326">The payment is settled with an open invoice for Fabrikam West vendor 3004 and an open credit note for Fabrikam East vendor 100.</span></span> <span data-ttu-id="39848-327">Tato platba je vybrána jako hlavní platba na stránce **Vyrovnat transakce**.</span><span class="sxs-lookup"><span data-stu-id="39848-327">The payment is selected as the primary payment on the **Settle transactions** page.</span></span>
 
-### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Faktura je zaúčtována pro společnost Fabrikam West pro účet dodavatele 3004
+### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a><span data-ttu-id="39848-328">Faktura je zaúčtována pro společnost Fabrikam West pro účet dodavatele 3004</span><span class="sxs-lookup"><span data-stu-id="39848-328">Invoice is posted to Fabrikam West for vendor 3004</span></span>
 
-| Účet                          | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-329">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-329">Account</span></span>                          | <span data-ttu-id="39848-330">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-330">Debit amount</span></span> | <span data-ttu-id="39848-331">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-331">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Výdaje (Fabrikam West)          | 100,00       |               |
-| Závazky (Fabrikam West) |              | 100,00        |
+| <span data-ttu-id="39848-332">Výdaje (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="39848-332">Expense (Fabrikam West)</span></span>          | <span data-ttu-id="39848-333">100,00</span><span class="sxs-lookup"><span data-stu-id="39848-333">100.00</span></span>       |               |
+| <span data-ttu-id="39848-334">Závazky (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="39848-334">Accounts payable (Fabrikam West)</span></span> |              | <span data-ttu-id="39848-335">100,00</span><span class="sxs-lookup"><span data-stu-id="39848-335">100.00</span></span>        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a>Dobropis je zaúčtován pro společnost Fabrikam East pro účet dodavatele 100
+### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a><span data-ttu-id="39848-336">Dobropis je zaúčtován pro společnost Fabrikam East pro účet dodavatele 100</span><span class="sxs-lookup"><span data-stu-id="39848-336">Credit note is posted to Fabrikam East for vendor 100</span></span>
 
-| Účet                          | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-337">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-337">Account</span></span>                          | <span data-ttu-id="39848-338">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-338">Debit amount</span></span> | <span data-ttu-id="39848-339">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-339">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Závazky (Fabrikam East) | 25,00        |               |
-| Vratky (Fabrikam East) |              | 25,00         |
+| <span data-ttu-id="39848-340">Závazky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-340">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="39848-341">25,00</span><span class="sxs-lookup"><span data-stu-id="39848-341">25.00</span></span>        |               |
+| <span data-ttu-id="39848-342">Vratky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-342">Purchase returns (Fabrikam East)</span></span> |              | <span data-ttu-id="39848-343">25,00</span><span class="sxs-lookup"><span data-stu-id="39848-343">25.00</span></span>         |
 
-### <a name="payment-is-posted-to-fabrikam-for-vendor-3004"></a>Platba je zaúčtována pro společnost Fabrikam pro účet dodavatele 3004
+### <a name="payment-is-posted-to-fabrikam-for-vendor-3004"></a><span data-ttu-id="39848-344">Platba je zaúčtována pro společnost Fabrikam pro účet dodavatele 3004</span><span class="sxs-lookup"><span data-stu-id="39848-344">Payment is posted to Fabrikam for vendor 3004</span></span>
 
-| Účet                     | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-345">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-345">Account</span></span>                     | <span data-ttu-id="39848-346">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-346">Debit amount</span></span> | <span data-ttu-id="39848-347">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-347">Credit amount</span></span> |
 |-----------------------------|--------------|---------------|
-| Závazky (Fabrikam) | 75,00        |               |
-| Hotovost (Fabrikam)             |              | 75,00         |
+| <span data-ttu-id="39848-348">Závazky (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-348">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="39848-349">75,00</span><span class="sxs-lookup"><span data-stu-id="39848-349">75.00</span></span>        |               |
+| <span data-ttu-id="39848-350">Hotovost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-350">Cash (Fabrikam)</span></span>             |              | <span data-ttu-id="39848-351">75,00</span><span class="sxs-lookup"><span data-stu-id="39848-351">75.00</span></span>         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Platba společnosti Fabrikam je vyrovnána s fakturou Fabrikam West a dobropisem Fabrikam East
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a><span data-ttu-id="39848-352">Platba společnosti Fabrikam je vyrovnána s fakturou Fabrikam West a dobropisem Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="39848-352">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</span></span>
 
-**Zaúčtování společnosti Fabrikam**
+<span data-ttu-id="39848-353">**Zaúčtování společnosti Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="39848-353">**Fabrikam posting**</span></span>
 
-| Účet                           | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-354">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-354">Account</span></span>                           | <span data-ttu-id="39848-355">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-355">Debit amount</span></span> | <span data-ttu-id="39848-356">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-356">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Závazky (Fabrikam)       | 25,00        |               |
-| Splatná částka pro společnost Fabrikam East (Fabrikam)   |              | 25,00         |
-| Splatná částka od společnosti Fabrikam West (Fabrikam) | 100,00       |               |
-| Závazky (Fabrikam)       |              | 100,00        |
+| <span data-ttu-id="39848-357">Závazky (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-357">Accounts payable (Fabrikam)</span></span>       | <span data-ttu-id="39848-358">25,00</span><span class="sxs-lookup"><span data-stu-id="39848-358">25.00</span></span>        |               |
+| <span data-ttu-id="39848-359">Splatná částka pro společnost Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-359">Due to Fabrikam East (Fabrikam)</span></span>   |              | <span data-ttu-id="39848-360">25,00</span><span class="sxs-lookup"><span data-stu-id="39848-360">25.00</span></span>         |
+| <span data-ttu-id="39848-361">Splatná částka od společnosti Fabrikam West (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-361">Due from Fabrikam West (Fabrikam)</span></span> | <span data-ttu-id="39848-362">100,00</span><span class="sxs-lookup"><span data-stu-id="39848-362">100.00</span></span>       |               |
+| <span data-ttu-id="39848-363">Závazky (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-363">Accounts payable (Fabrikam)</span></span>       |              | <span data-ttu-id="39848-364">100,00</span><span class="sxs-lookup"><span data-stu-id="39848-364">100.00</span></span>        |
 
-**Zaúčtování společnosti Fabrikam East**
+<span data-ttu-id="39848-365">**Zaúčtování společnosti Fabrikam East**</span><span class="sxs-lookup"><span data-stu-id="39848-365">**Fabrikam East posting**</span></span>
 
-| Účet                           | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-366">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-366">Account</span></span>                           | <span data-ttu-id="39848-367">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-367">Debit amount</span></span> | <span data-ttu-id="39848-368">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-368">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Splatná částka od společnosti Fabrikam (Fabrikam East) | 25,00        |               |
-| Závazky (Fabrikam East)  |              | 25,00         |
+| <span data-ttu-id="39848-369">Splatná částka od společnosti Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-369">Due from Fabrikam (Fabrikam East)</span></span> | <span data-ttu-id="39848-370">25,00</span><span class="sxs-lookup"><span data-stu-id="39848-370">25.00</span></span>        |               |
+| <span data-ttu-id="39848-371">Závazky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-371">Accounts payable (Fabrikam East)</span></span>  |              | <span data-ttu-id="39848-372">25,00</span><span class="sxs-lookup"><span data-stu-id="39848-372">25.00</span></span>         |
 
-**Zaúčtování pro společnost Fabrikam West**
+<span data-ttu-id="39848-373">**Zaúčtování pro společnost Fabrikam West**</span><span class="sxs-lookup"><span data-stu-id="39848-373">**Fabrikam West posting**</span></span>
 
-| Účet                          | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-374">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-374">Account</span></span>                          | <span data-ttu-id="39848-375">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-375">Debit amount</span></span> | <span data-ttu-id="39848-376">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-376">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Závazky (Fabrikam West) | 100,00       |               |
-| Splatná částka pro společnost Fabrikam (Fabrikam West)  |              | 100,00        |
+| <span data-ttu-id="39848-377">Závazky (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="39848-377">Accounts payable (Fabrikam West)</span></span> | <span data-ttu-id="39848-378">100,00</span><span class="sxs-lookup"><span data-stu-id="39848-378">100.00</span></span>       |               |
+| <span data-ttu-id="39848-379">Splatná částka pro společnost Fabrikam (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="39848-379">Due to Fabrikam (Fabrikam West)</span></span>  |              | <span data-ttu-id="39848-380">100,00</span><span class="sxs-lookup"><span data-stu-id="39848-380">100.00</span></span>        |
 
-## <a name="example-6-vendor-credit-note-without-primary-payment"></a>Příklad 6: Dobropis dodavatele bez primární platby
-Společnost Fabrikam vygeneruje platbu ve výši 75,00 pro účet dodavatele 3004, Fourth Coffee. Platba bude vyrovnána s použitím otevřené faktury pro účet 3004 dodavatele Fabrikam West a otevřeného dobropisu pro účet 100 dodavatele Fabrikam East. Tato platba není vybrána jako hlavní platba na stránce **Vyrovnat transakce**.
+## <a name="example-6-vendor-credit-note-without-primary-payment"></a><span data-ttu-id="39848-381">Příklad 6: Dobropis dodavatele bez primární platby</span><span class="sxs-lookup"><span data-stu-id="39848-381">Example 6: Vendor credit note without primary payment</span></span>
+<span data-ttu-id="39848-382">Společnost Fabrikam vygeneruje platbu ve výši 75,00 pro účet dodavatele 3004, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="39848-382">Fabrikam generates a payment of 75.00 for vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="39848-383">Platba bude vyrovnána s použitím otevřené faktury pro účet 3004 dodavatele Fabrikam West a otevřeného dobropisu pro účet 100 dodavatele Fabrikam East.</span><span class="sxs-lookup"><span data-stu-id="39848-383">The payment is settled with an open invoice for Fabrikam West vendor 3004 and an open credit note for Fabrikam East vendor 100.</span></span> <span data-ttu-id="39848-384">Tato platba není vybrána jako hlavní platba na stránce **Vyrovnat transakce**.</span><span class="sxs-lookup"><span data-stu-id="39848-384">The payment isn't selected as the primary payment on the **Settle transactions** page.</span></span>
 
-### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Faktura je zaúčtována pro společnost Fabrikam West pro účet dodavatele 3004
+### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a><span data-ttu-id="39848-385">Faktura je zaúčtována pro společnost Fabrikam West pro účet dodavatele 3004</span><span class="sxs-lookup"><span data-stu-id="39848-385">Invoice is posted to Fabrikam West for vendor 3004</span></span>
 
-| Účet                          | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-386">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-386">Account</span></span>                          | <span data-ttu-id="39848-387">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-387">Debit amount</span></span> | <span data-ttu-id="39848-388">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-388">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Výdaje (Fabrikam West)          | 100,00       |               |
-| Závazky (Fabrikam West) |              | 100,00        |
+| <span data-ttu-id="39848-389">Výdaje (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="39848-389">Expense (Fabrikam West)</span></span>          | <span data-ttu-id="39848-390">100,00</span><span class="sxs-lookup"><span data-stu-id="39848-390">100.00</span></span>       |               |
+| <span data-ttu-id="39848-391">Závazky (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="39848-391">Accounts payable (Fabrikam West)</span></span> |              | <span data-ttu-id="39848-392">100,00</span><span class="sxs-lookup"><span data-stu-id="39848-392">100.00</span></span>        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a>Dobropis je zaúčtován pro společnost Fabrikam East pro účet dodavatele 100
+### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a><span data-ttu-id="39848-393">Dobropis je zaúčtován pro společnost Fabrikam East pro účet dodavatele 100</span><span class="sxs-lookup"><span data-stu-id="39848-393">Credit note is posted to Fabrikam East for vendor 100</span></span>
 
-| Účet                          | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-394">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-394">Account</span></span>                          | <span data-ttu-id="39848-395">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-395">Debit amount</span></span> | <span data-ttu-id="39848-396">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-396">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Závazky (Fabrikam East) | 25,00        |               |
-| Vratky (Fabrikam East) |              | 25,00         |
+| <span data-ttu-id="39848-397">Závazky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-397">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="39848-398">25,00</span><span class="sxs-lookup"><span data-stu-id="39848-398">25.00</span></span>        |               |
+| <span data-ttu-id="39848-399">Vratky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-399">Purchase returns (Fabrikam East)</span></span> |              | <span data-ttu-id="39848-400">25,00</span><span class="sxs-lookup"><span data-stu-id="39848-400">25.00</span></span>         |
 
-### <a name="payment-is-posted-to-fabrikam-for-vendor-3004"></a>Platba je zaúčtována pro společnost Fabrikam pro účet dodavatele 3004
+### <a name="payment-is-posted-to-fabrikam-for-vendor-3004"></a><span data-ttu-id="39848-401">Platba je zaúčtována pro společnost Fabrikam pro účet dodavatele 3004</span><span class="sxs-lookup"><span data-stu-id="39848-401">Payment is posted to Fabrikam for vendor 3004</span></span>
 
-| Účet                     | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-402">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-402">Account</span></span>                     | <span data-ttu-id="39848-403">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-403">Debit amount</span></span> | <span data-ttu-id="39848-404">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-404">Credit amount</span></span> |
 |-----------------------------|--------------|---------------|
-| Závazky (Fabrikam) | 75,00        |               |
-| Hotovost (Fabrikam)             |              | 75,00         |
+| <span data-ttu-id="39848-405">Závazky (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-405">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="39848-406">75,00</span><span class="sxs-lookup"><span data-stu-id="39848-406">75.00</span></span>        |               |
+| <span data-ttu-id="39848-407">Hotovost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-407">Cash (Fabrikam)</span></span>             |              | <span data-ttu-id="39848-408">75,00</span><span class="sxs-lookup"><span data-stu-id="39848-408">75.00</span></span>         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Platba společnosti Fabrikam je vyrovnána s fakturou Fabrikam West a dobropisem Fabrikam East
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a><span data-ttu-id="39848-409">Platba společnosti Fabrikam je vyrovnána s fakturou Fabrikam West a dobropisem Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="39848-409">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</span></span>
 
-**Zaúčtování společnosti Fabrikam**
+<span data-ttu-id="39848-410">**Zaúčtování společnosti Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="39848-410">**Fabrikam posting**</span></span>
 
-| Účet                           | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-411">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-411">Account</span></span>                           | <span data-ttu-id="39848-412">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-412">Debit amount</span></span> | <span data-ttu-id="39848-413">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-413">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Splatná částka od společnosti Fabrikam West (Fabrikam) | 75,00        |               |
-| Závazky (Fabrikam)       |              | 75,00         |
+| <span data-ttu-id="39848-414">Splatná částka od společnosti Fabrikam West (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-414">Due from Fabrikam West (Fabrikam)</span></span> | <span data-ttu-id="39848-415">75,00</span><span class="sxs-lookup"><span data-stu-id="39848-415">75.00</span></span>        |               |
+| <span data-ttu-id="39848-416">Závazky (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="39848-416">Accounts payable (Fabrikam)</span></span>       |              | <span data-ttu-id="39848-417">75,00</span><span class="sxs-lookup"><span data-stu-id="39848-417">75.00</span></span>         |
 
-**Zaúčtování společnosti Fabrikam East**
+<span data-ttu-id="39848-418">**Zaúčtování společnosti Fabrikam East**</span><span class="sxs-lookup"><span data-stu-id="39848-418">**Fabrikam East posting**</span></span>
 
-| Účet                                | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-419">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-419">Account</span></span>                                | <span data-ttu-id="39848-420">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-420">Debit amount</span></span> | <span data-ttu-id="39848-421">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-421">Credit amount</span></span> |
 |----------------------------------------|--------------|---------------|
-| Splatná částka od společnosti Fabrikam West (Fabrikam East) | 25,00        |               |
-| Závazky (Fabrikam East)       |              | 25,00         |
+| <span data-ttu-id="39848-422">Splatná částka od společnosti Fabrikam West (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-422">Due from Fabrikam West (Fabrikam East)</span></span> | <span data-ttu-id="39848-423">25,00</span><span class="sxs-lookup"><span data-stu-id="39848-423">25.00</span></span>        |               |
+| <span data-ttu-id="39848-424">Závazky (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="39848-424">Accounts payable (Fabrikam East)</span></span>       |              | <span data-ttu-id="39848-425">25,00</span><span class="sxs-lookup"><span data-stu-id="39848-425">25.00</span></span>         |
 
-**Zaúčtování pro společnost Fabrikam West**
+<span data-ttu-id="39848-426">**Zaúčtování pro společnost Fabrikam West**</span><span class="sxs-lookup"><span data-stu-id="39848-426">**Fabrikam West posting**</span></span>
 
-| Účet                              | Částka Má dáti | Částka Dal |
+| <span data-ttu-id="39848-427">Účet</span><span class="sxs-lookup"><span data-stu-id="39848-427">Account</span></span>                              | <span data-ttu-id="39848-428">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="39848-428">Debit amount</span></span> | <span data-ttu-id="39848-429">Částka Dal</span><span class="sxs-lookup"><span data-stu-id="39848-429">Credit amount</span></span> |
 |--------------------------------------|--------------|---------------|
-| Závazky (Fabrikam West)     | 75,00        |               |
-| Splatná částka pro společnost Fabrikam (Fabrikam West)      |              | 75,00         |
-| Závazky (Fabrikam West)     | 25,00        |               |
-| Splatná částka pro společnost Fabrikam East (Fabrikam West) |              | 25,00         |
+| <span data-ttu-id="39848-430">Závazky (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="39848-430">Accounts payable (Fabrikam West)</span></span>     | <span data-ttu-id="39848-431">75,00</span><span class="sxs-lookup"><span data-stu-id="39848-431">75.00</span></span>        |               |
+| <span data-ttu-id="39848-432">Splatná částka pro společnost Fabrikam (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="39848-432">Due to Fabrikam (Fabrikam West)</span></span>      |              | <span data-ttu-id="39848-433">75,00</span><span class="sxs-lookup"><span data-stu-id="39848-433">75.00</span></span>         |
+| <span data-ttu-id="39848-434">Závazky (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="39848-434">Accounts payable (Fabrikam West)</span></span>     | <span data-ttu-id="39848-435">25,00</span><span class="sxs-lookup"><span data-stu-id="39848-435">25.00</span></span>        |               |
+| <span data-ttu-id="39848-436">Splatná částka pro společnost Fabrikam East (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="39848-436">Due to Fabrikam East (Fabrikam West)</span></span> |              | <span data-ttu-id="39848-437">25,00</span><span class="sxs-lookup"><span data-stu-id="39848-437">25.00</span></span>         |
 
 
 

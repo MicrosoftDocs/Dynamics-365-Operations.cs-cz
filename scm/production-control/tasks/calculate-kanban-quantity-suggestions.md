@@ -17,72 +17,72 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 7416e0407892281377b69a7a3b19e61f46220709
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a817dbc02890d863f68c5bf2a6cc11b9a5328060
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="calculate-kanban-quantity-suggestions"></a>Výpočet návrhů kanbanového množství
+# <a name="calculate-kanban-quantity-suggestions"></a><span data-ttu-id="cb70b-103">Výpočet návrhů kanbanového množství</span><span class="sxs-lookup"><span data-stu-id="cb70b-103">Calculate kanban quantity suggestions</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup se zaměřuje na optimalizaci velikosti a množství kanbanu u konkrétních kanbanových pravidel pomocí výpočtu kanbanového množství. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup je určen pro vedoucího hodnotového proudu. Je nutné, abyste dokončili postup Přidání zásad výpočtu kanbanového množství ke kanbanovému pravidlu.
+<span data-ttu-id="cb70b-104">Tento postup se zaměřuje na optimalizaci velikosti a množství kanbanu u konkrétních kanbanových pravidel pomocí výpočtu kanbanového množství.</span><span class="sxs-lookup"><span data-stu-id="cb70b-104">This procedure focuses on optimizing the kanban size and quantities for a specific kanban rule by using the kanban quantity calculation.</span></span> <span data-ttu-id="cb70b-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="cb70b-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="cb70b-106">Tento postup je určen pro vedoucího hodnotového proudu.</span><span class="sxs-lookup"><span data-stu-id="cb70b-106">This procedure is intended for the value stream manager.</span></span> <span data-ttu-id="cb70b-107">Je nutné, abyste dokončili postup Přidání zásad výpočtu kanbanového množství ke kanbanovému pravidlu.</span><span class="sxs-lookup"><span data-stu-id="cb70b-107">It is a prerequisite that you have completed the procedure Add a new kanban quantity calculation policy to a kanban rule.</span></span>
 
 
-## <a name="create-a-kanban-quantity-calculation"></a>Vytvoření výpočtu kanbanového množství
-1. Přejít na Řízení výroby > Pravidelné úlohy > Výpočet kanbanového množství > Vypočítat kanbanové množství.
-2. Klikněte na položku Nová.
-3. Zadejte Speaker2016 do pole Název.
-4. V poli Název kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-    * Vyberte pravidlo, které jste vytvořili v postupu Přidání zásad výpočtu kanbanového množství ke kanbanovému pravidlu. Například Speaker2016.  
-5. Klikněte na odkaz na vybraném řádku v seznamu.
-6. V poli Pravidlo aktivní ode dne nastavte datum a čas na 2012-12-17T08:00:00.
-    * Toto datum slouží jako základ pro určení pevných kanbanových pravidel, která jsou zahrnuta do výpočtu kanbanového množství.  
-7. Do pole Datum začátku období splněné poptávky nastavte datum a čas na 2012-11-17T09:00:00.
-    * Počáteční datum zahrnutí dřívějších transakcí poptávky pro výpočet kanbanového množství.  
-8. Do pole Datum konce období splněné poptávky nastavte datum a čas na 2012-12-17T07:59:59.
-    * Koncové datum zahrnutí dřívějších transakcí poptávky pro výpočet kanbanového množství.  
-9. Do pole Datum začátku období poptávky nastavte datum a čas na 2012-12-17T08:00:00.
-    * Počáteční datum zahrnutí aktuálních transakcí poptávky pro výpočet kanbanového množství.  
-10. Do pole Datum konce období poptávky nastavte datum a čas na 2013-01-16T07:59:59.
-    * Koncové datum zahrnutí aktuálních transakcí poptávky pro výpočet kanbanového množství.  
+## <a name="create-a-kanban-quantity-calculation"></a><span data-ttu-id="cb70b-108">Vytvoření výpočtu kanbanového množství</span><span class="sxs-lookup"><span data-stu-id="cb70b-108">Create a kanban quantity calculation</span></span>
+1. <span data-ttu-id="cb70b-109">Přejít na Řízení výroby > Pravidelné úlohy > Výpočet kanbanového množství > Vypočítat kanbanové množství.</span><span class="sxs-lookup"><span data-stu-id="cb70b-109">Go to Production control > Periodic tasks > Kanban quantity calculation > Calculate kanban quantity.</span></span>
+2. <span data-ttu-id="cb70b-110">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="cb70b-110">Click New.</span></span>
+3. <span data-ttu-id="cb70b-111">Zadejte Speaker2016 do pole Název.</span><span class="sxs-lookup"><span data-stu-id="cb70b-111">In the Name field, type 'Speaker2016'.</span></span>
+4. <span data-ttu-id="cb70b-112">V poli Název kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="cb70b-112">In the Name field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="cb70b-113">Vyberte pravidlo, které jste vytvořili v postupu Přidání zásad výpočtu kanbanového množství ke kanbanovému pravidlu.</span><span class="sxs-lookup"><span data-stu-id="cb70b-113">Select the policy that you have created in the procedure Add a new kanban quantity calculation policy to a kanban rule.</span></span> <span data-ttu-id="cb70b-114">Například Speaker2016.</span><span class="sxs-lookup"><span data-stu-id="cb70b-114">For example, Speaker2016.</span></span>  
+5. <span data-ttu-id="cb70b-115">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="cb70b-115">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="cb70b-116">V poli Pravidlo aktivní ode dne nastavte datum a čas na 2012-12-17T08:00:00.</span><span class="sxs-lookup"><span data-stu-id="cb70b-116">In the Rule active as of date field, set the date and time to '2012-12-17T08:00:00'.</span></span>
+    * <span data-ttu-id="cb70b-117">Toto datum slouží jako základ pro určení pevných kanbanových pravidel, která jsou zahrnuta do výpočtu kanbanového množství.</span><span class="sxs-lookup"><span data-stu-id="cb70b-117">This date serves as the basis for determining which fixed kanban rules are included in the kanban quantity calculation.</span></span>  
+7. <span data-ttu-id="cb70b-118">Do pole Datum začátku období splněné poptávky nastavte datum a čas na 2012-11-17T09:00:00.</span><span class="sxs-lookup"><span data-stu-id="cb70b-118">In the Fulfilled demand period start date field, set the date and time to '2012-11-17T09:00:00'.</span></span>
+    * <span data-ttu-id="cb70b-119">Počáteční datum zahrnutí dřívějších transakcí poptávky pro výpočet kanbanového množství.</span><span class="sxs-lookup"><span data-stu-id="cb70b-119">The date from when past demand transactions are included to calculate the kanban quantity.</span></span>  
+8. <span data-ttu-id="cb70b-120">Do pole Datum konce období splněné poptávky nastavte datum a čas na 2012-12-17T07:59:59.</span><span class="sxs-lookup"><span data-stu-id="cb70b-120">In the Fulfilled demand period end date field, set the date and time to '2012-12-17T07:59:59'.</span></span>
+    * <span data-ttu-id="cb70b-121">Koncové datum zahrnutí dřívějších transakcí poptávky pro výpočet kanbanového množství.</span><span class="sxs-lookup"><span data-stu-id="cb70b-121">The date until when past demand transactions are included to calculate the kanban quantity.</span></span>  
+9. <span data-ttu-id="cb70b-122">Do pole Datum začátku období poptávky nastavte datum a čas na 2012-12-17T08:00:00.</span><span class="sxs-lookup"><span data-stu-id="cb70b-122">In the Demand period start date field, set the date and time to '2012-12-17T08:00:00'.</span></span>
+    * <span data-ttu-id="cb70b-123">Počáteční datum zahrnutí aktuálních transakcí poptávky pro výpočet kanbanového množství.</span><span class="sxs-lookup"><span data-stu-id="cb70b-123">The date from when current demand transactions are included to calculate the kanban quantity.</span></span>  
+10. <span data-ttu-id="cb70b-124">Do pole Datum konce období poptávky nastavte datum a čas na 2013-01-16T07:59:59.</span><span class="sxs-lookup"><span data-stu-id="cb70b-124">In the Demand period end date field, set the date and time to '2013-01-16T07:59:59'.</span></span>
+    * <span data-ttu-id="cb70b-125">Koncové datum zahrnutí aktuálních transakcí poptávky pro výpočet kanbanového množství.</span><span class="sxs-lookup"><span data-stu-id="cb70b-125">The date until when current demand transactions are included to calculate the kanban quantity.</span></span>  
 
-## <a name="generate-kanban-quantity-proposal"></a>Generování návrhu kanbanového množství
-1. Klikněte na položku Uložit.
-2. Klepněte na tlačítko Generovat.
-    * Tímto vytvoříte řádek návrhu kanbanového množství pro kanbanové pravidlo 000020.  
+## <a name="generate-kanban-quantity-proposal"></a><span data-ttu-id="cb70b-126">Generování návrhu kanbanového množství</span><span class="sxs-lookup"><span data-stu-id="cb70b-126">Generate kanban quantity proposal</span></span>
+1. <span data-ttu-id="cb70b-127">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="cb70b-127">Click Save.</span></span>
+2. <span data-ttu-id="cb70b-128">Klepněte na tlačítko Generovat.</span><span class="sxs-lookup"><span data-stu-id="cb70b-128">Click Generate.</span></span>
+    * <span data-ttu-id="cb70b-129">Tímto vytvoříte řádek návrhu kanbanového množství pro kanbanové pravidlo 000020.</span><span class="sxs-lookup"><span data-stu-id="cb70b-129">This generates a kanban quantity proposal line for the kanban rule 000020.</span></span>  
 
-## <a name="run-kanban-quantity-calculation"></a>Spuštění výpočtu kanbanového množství
-1. Klikněte na tlačítko Vypočítat.
-    * Tímto vypočítáte návrh kanbanového množství.  
-2. Klikněte na tlačítko OK.
-3. Označte v seznamu vybraný řádek.
-    * Všimněte si, že navrhované kanbanové množství je „2“.  
+## <a name="run-kanban-quantity-calculation"></a><span data-ttu-id="cb70b-130">Spuštění výpočtu kanbanového množství</span><span class="sxs-lookup"><span data-stu-id="cb70b-130">Run kanban quantity calculation</span></span>
+1. <span data-ttu-id="cb70b-131">Klikněte na tlačítko Vypočítat.</span><span class="sxs-lookup"><span data-stu-id="cb70b-131">Click Calculate.</span></span>
+    * <span data-ttu-id="cb70b-132">Tímto vypočítáte návrh kanbanového množství.</span><span class="sxs-lookup"><span data-stu-id="cb70b-132">This calculates the kanban quantity proposal.</span></span>  
+2. <span data-ttu-id="cb70b-133">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="cb70b-133">Click OK.</span></span>
+3. <span data-ttu-id="cb70b-134">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="cb70b-134">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="cb70b-135">Všimněte si, že navrhované kanbanové množství je „2“.</span><span class="sxs-lookup"><span data-stu-id="cb70b-135">Notice the suggested kanban quantity is 2.</span></span>  
 
-## <a name="change-product-quantity-and-calculate-again"></a>Změna množství produktu a opětovné provedení výpočtu
-1. Nastavte Celkové množství produktu na 5.
-2. Klikněte na tlačítko Vypočítat.
-3. Klikněte na tlačítko OK.
-    * Všimněte si, že s kanbanovým množstvím „5“ se návrh změní na kanbanové množství „4“.  
-    * Důvodem je skutečnost, že se sníženým množstvím produktu je zapotřebí více kanbanu ke splnění požadavku.  
+## <a name="change-product-quantity-and-calculate-again"></a><span data-ttu-id="cb70b-136">Změna množství produktu a opětovné provedení výpočtu</span><span class="sxs-lookup"><span data-stu-id="cb70b-136">Change product quantity and calculate again</span></span>
+1. <span data-ttu-id="cb70b-137">Nastavte Celkové množství produktu na 5.</span><span class="sxs-lookup"><span data-stu-id="cb70b-137">Set Product quantity to '5'.</span></span>
+2. <span data-ttu-id="cb70b-138">Klikněte na tlačítko Vypočítat.</span><span class="sxs-lookup"><span data-stu-id="cb70b-138">Click Calculate.</span></span>
+3. <span data-ttu-id="cb70b-139">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="cb70b-139">Click OK.</span></span>
+    * <span data-ttu-id="cb70b-140">Všimněte si, že s kanbanovým množstvím „5“ se návrh změní na kanbanové množství „4“.</span><span class="sxs-lookup"><span data-stu-id="cb70b-140">Notice that with a kanban quantity of 5, the suggestion is changed to a kanban quantity of 4.</span></span>  
+    * <span data-ttu-id="cb70b-141">Důvodem je skutečnost, že se sníženým množstvím produktu je zapotřebí více kanbanu ke splnění požadavku.</span><span class="sxs-lookup"><span data-stu-id="cb70b-141">This is caused by the fact that with a lower product quantity, we need more kanbans to fulfill the demand.</span></span>  
 
-## <a name="update-kanban-rule"></a>Aktualizace kanbanového pravidla
-1. Do pole Datum účinnosti pravidla zadejte datum a čas.
-    * Nastavte Pravidlo aktivní ode dne na datum v budoucnosti. Například dnes + jeden rok.  
-2. Klepněte na položku Aktualizovat.
-3. Klikněte na tlačítko OK.
-4. Zavřete stránku.
+## <a name="update-kanban-rule"></a><span data-ttu-id="cb70b-142">Aktualizace kanbanového pravidla</span><span class="sxs-lookup"><span data-stu-id="cb70b-142">Update kanban rule</span></span>
+1. <span data-ttu-id="cb70b-143">Do pole Datum účinnosti pravidla zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="cb70b-143">In the Rule effective date field, enter a date and time.</span></span>
+    * <span data-ttu-id="cb70b-144">Nastavte Pravidlo aktivní ode dne na datum v budoucnosti.</span><span class="sxs-lookup"><span data-stu-id="cb70b-144">Set the 'Rule active as of date' to a date in the future.</span></span> <span data-ttu-id="cb70b-145">Například dnes + jeden rok.</span><span class="sxs-lookup"><span data-stu-id="cb70b-145">For example, today + one year.</span></span>  
+2. <span data-ttu-id="cb70b-146">Klepněte na položku Aktualizovat.</span><span class="sxs-lookup"><span data-stu-id="cb70b-146">Click Update.</span></span>
+3. <span data-ttu-id="cb70b-147">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="cb70b-147">Click OK.</span></span>
+4. <span data-ttu-id="cb70b-148">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="cb70b-148">Close the page.</span></span>
 
-## <a name="validate-change-on-kanban-rule"></a>Ověření změny v kanbanovém pravidle
-1. Přejděte k Řízení informací o produktech > Lean manufacturing > Kanbanová pravidla.
-2. Klikněte na odkaz na vybraném řádku v seznamu.
-    * Vyberte kanbanové pravidlo vytvořené v předchozím podúkolu. Toto by mělo být první kanbanové pravidlo v seznamu roztříděném podle čísla.  
-3. Přepněte rozšíření oddílu Podrobnosti.
-    * Všimněte si data platnosti, které znamená, že toto pravidlo není až do tohoto data aktivováno.  
-4. Přepněte rozšíření oddílu Množství.
-    * Všimněte si, že se jedná o výchozí množství, které jste zadali ve výpočtu kanbanového množství.  
-    * Všimněte si, že se že jedná o pevné kanbanové množství „4“ z výpočtu kanbanového množství.  
-5. Klikněte na kartu Panel seznamu.
+## <a name="validate-change-on-kanban-rule"></a><span data-ttu-id="cb70b-149">Ověření změny v kanbanovém pravidle</span><span class="sxs-lookup"><span data-stu-id="cb70b-149">Validate change on kanban rule</span></span>
+1. <span data-ttu-id="cb70b-150">Přejděte k Řízení informací o produktech > Lean manufacturing > Kanbanová pravidla.</span><span class="sxs-lookup"><span data-stu-id="cb70b-150">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
+2. <span data-ttu-id="cb70b-151">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="cb70b-151">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="cb70b-152">Vyberte kanbanové pravidlo vytvořené v předchozím podúkolu.</span><span class="sxs-lookup"><span data-stu-id="cb70b-152">Select the kanban rule that was created in the previous sub-task.</span></span> <span data-ttu-id="cb70b-153">Toto by mělo být první kanbanové pravidlo v seznamu roztříděném podle čísla.</span><span class="sxs-lookup"><span data-stu-id="cb70b-153">This should be the first kanban rule in the list sorted by number.</span></span>  
+3. <span data-ttu-id="cb70b-154">Přepněte rozšíření oddílu Podrobnosti.</span><span class="sxs-lookup"><span data-stu-id="cb70b-154">Toggle the expansion of the Details section.</span></span>
+    * <span data-ttu-id="cb70b-155">Všimněte si data platnosti, které znamená, že toto pravidlo není až do tohoto data aktivováno.</span><span class="sxs-lookup"><span data-stu-id="cb70b-155">Notice the effective date, which means that this rule is not activated until this date.</span></span>  
+4. <span data-ttu-id="cb70b-156">Přepněte rozšíření oddílu Množství.</span><span class="sxs-lookup"><span data-stu-id="cb70b-156">Toggle the expansion of the Quantities section.</span></span>
+    * <span data-ttu-id="cb70b-157">Všimněte si, že se jedná o výchozí množství, které jste zadali ve výpočtu kanbanového množství.</span><span class="sxs-lookup"><span data-stu-id="cb70b-157">Notice this is the default quantity that you entered on the kanban quantity calculation.</span></span>  
+    * <span data-ttu-id="cb70b-158">Všimněte si, že se že jedná o pevné kanbanové množství „4“ z výpočtu kanbanového množství.</span><span class="sxs-lookup"><span data-stu-id="cb70b-158">Notice this is the fixed kanban quantity of 4 from the kanban quantity calculation.</span></span>  
+5. <span data-ttu-id="cb70b-159">Klikněte na kartu Panel seznamu.</span><span class="sxs-lookup"><span data-stu-id="cb70b-159">Click the ListPanel tab.</span></span>
 
 

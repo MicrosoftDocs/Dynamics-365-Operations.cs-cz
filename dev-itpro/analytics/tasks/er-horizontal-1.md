@@ -16,136 +16,136 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 94898674f02de72111e131f563b33926dda8ac8e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: fdba6a68cd98b0ccbc4072f5c1124088ed9d814b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-for-electronic-reporting-er"></a>Návrh formátu pro použití vodorovně rozbalovacích oblastí k dynamickému přidání sloupců v sestavách aplikace Excel pro elektronické výkaznictví (ER)
+# <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-for-electronic-reporting-er"></a><span data-ttu-id="660b9-103">Návrh formátu pro použití vodorovně rozbalovacích oblastí k dynamickému přidání sloupců v sestavách aplikace Excel pro elektronické výkaznictví (ER)</span><span class="sxs-lookup"><span data-stu-id="660b9-103">Design a format to use horizontally-expandable ranges to dynamically add columns in Excel reports for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Následující postup vysvětluje, jak uživatel s přiřazenou rolí správce systému nebo vývojáře elektronického výkaznictví může nakonfigurovat formát elektronických sestav (ER) ke generování sestav jako soubory s listy OPENXML (Excel), ve kterých lze dynamicky vytvářet požadované sloupce jako vodorovně rozbalitelné rozsahy. Tyto kroky lze provést v rámci libovolné společnosti.
+<span data-ttu-id="660b9-104">Následující postup vysvětluje, jak uživatel s přiřazenou rolí správce systému nebo vývojáře elektronického výkaznictví může nakonfigurovat formát elektronických sestav (ER) ke generování sestav jako soubory s listy OPENXML (Excel), ve kterých lze dynamicky vytvářet požadované sloupce jako vodorovně rozbalitelné rozsahy.</span><span class="sxs-lookup"><span data-stu-id="660b9-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files in which the required columns can be created dynamically as horizontally expandable ranges.</span></span> <span data-ttu-id="660b9-105">Tyto kroky lze provést v rámci libovolné společnosti.</span><span class="sxs-lookup"><span data-stu-id="660b9-105">These steps can be performed in any company.</span></span>
 
-K provedení těchto kroků je nutné nejprve dokončit tyto tři průvodce: 
+<span data-ttu-id="660b9-106">K provedení těchto kroků je nutné nejprve dokončit tyto tři průvodce:</span><span class="sxs-lookup"><span data-stu-id="660b9-106">To complete these steps, you must first complete these three task guides:</span></span> 
 
-ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního
+<span data-ttu-id="660b9-107">ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního</span><span class="sxs-lookup"><span data-stu-id="660b9-107">“ER Create a configuration provider and mark it as active”</span></span>
 
-Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 1: návrh datového modelu)
+<span data-ttu-id="660b9-108">Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 1: návrh datového modelu)</span><span class="sxs-lookup"><span data-stu-id="660b9-108">“ER Use financial dimensions as a data source (Part 1: Design data model)”</span></span>
 
-Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 2: mapování modelu)
+<span data-ttu-id="660b9-109">Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 2: mapování modelu)</span><span class="sxs-lookup"><span data-stu-id="660b9-109">“ER Use financial dimensions as a data source (Part 2: Model mapping)”</span></span>
 
-Je nutné stáhnout a uložit místní kopii šablony se vzorovou sestavou dostupnou zde: http://msdynamics.blob.core.windows.net/media/2016/09/SampleFinDimWsReport.xlsx
+<span data-ttu-id="660b9-110">Je nutné stáhnout a uložit místní kopii šablony se vzorovou sestavou dostupnou zde: http://msdynamics.blob.core.windows.net/media/2016/09/SampleFinDimWsReport.xlsx</span><span class="sxs-lookup"><span data-stu-id="660b9-110">You must also download and save a local copy of the template with a sample report found here: http://msdynamics.blob.core.windows.net/media/2016/09/SampleFinDimWsReport.xlsx</span></span>
 
-Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.
+<span data-ttu-id="660b9-111">Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="660b9-111">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-new-report-configuration"></a>Vytvoření nové konfigurace sestavy
-1. Přejděte do části Správa organizace > Elektronické výkaznictví > Konfigurace.
-2. Ve stromovém zobrazení vyberte Vzorový model finančních dimenzí.
-3. Kliknutím na možnost Vytvořit konfiguraci otevřete dialogové okno.
-4. V poli Nový zadejte "Formát založený na datovém modelu Vzorový datový model Finanční dimenze".
-    * Použijte model vytvořený předem jako zdroj dat pro novou sestavu.  
-5. Do pole Název zadejte Ukázková sestava s vodorovně rozbalitelnými rozsahy.
-    * Ukázková sestava s vodorovně rozbalitelnými rozsahy  
-6. Do pole Popis zadejte "Nastavení výstupu aplikace Excel s dynamickým přidáváním sloupců".
-    * Nastavení výstupu aplikace Excel s dynamickým přidáváním sloupců  
-7. V poli Definice datového modelu vyberte Položka.
-8. Klepněte na možnost Vytvořit konfiguraci.
+## <a name="create-a-new-report-configuration"></a><span data-ttu-id="660b9-112">Vytvoření nové konfigurace sestavy</span><span class="sxs-lookup"><span data-stu-id="660b9-112">Create a new report configuration</span></span>
+1. <span data-ttu-id="660b9-113">Přejděte do části Správa organizace > Elektronické výkaznictví > Konfigurace.</span><span class="sxs-lookup"><span data-stu-id="660b9-113">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="660b9-114">Ve stromovém zobrazení vyberte Vzorový model finančních dimenzí.</span><span class="sxs-lookup"><span data-stu-id="660b9-114">In the tree, select 'Financial dimensions sample model'.</span></span>
+3. <span data-ttu-id="660b9-115">Kliknutím na možnost Vytvořit konfiguraci otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="660b9-115">Click Create configuration to open the drop dialog.</span></span>
+4. <span data-ttu-id="660b9-116">V poli Nový zadejte "Formát založený na datovém modelu Vzorový datový model Finanční dimenze".</span><span class="sxs-lookup"><span data-stu-id="660b9-116">In the New field, enter 'Format based on data model Financial dimensions sample model'.</span></span>
+    * <span data-ttu-id="660b9-117">Použijte model vytvořený předem jako zdroj dat pro novou sestavu.</span><span class="sxs-lookup"><span data-stu-id="660b9-117">Use the model created in advance as the data source for your new report.</span></span>  
+5. <span data-ttu-id="660b9-118">Do pole Název zadejte Ukázková sestava s vodorovně rozbalitelnými rozsahy.</span><span class="sxs-lookup"><span data-stu-id="660b9-118">In the Name field, type 'Sample report with horizontally expandable ranges'.</span></span>
+    * <span data-ttu-id="660b9-119">Ukázková sestava s vodorovně rozbalitelnými rozsahy</span><span class="sxs-lookup"><span data-stu-id="660b9-119">Sample report with horizontally expandable ranges</span></span>  
+6. <span data-ttu-id="660b9-120">Do pole Popis zadejte "Nastavení výstupu aplikace Excel s dynamickým přidáváním sloupců".</span><span class="sxs-lookup"><span data-stu-id="660b9-120">In the Description field, type 'To make Excel output with dynamically adding columns'.</span></span>
+    * <span data-ttu-id="660b9-121">Nastavení výstupu aplikace Excel s dynamickým přidáváním sloupců</span><span class="sxs-lookup"><span data-stu-id="660b9-121">To make Excel output with dynamically adding columns</span></span>  
+7. <span data-ttu-id="660b9-122">V poli Definice datového modelu vyberte Položka.</span><span class="sxs-lookup"><span data-stu-id="660b9-122">In the Data model definition field, select Entry.</span></span>
+8. <span data-ttu-id="660b9-123">Klepněte na možnost Vytvořit konfiguraci.</span><span class="sxs-lookup"><span data-stu-id="660b9-123">Click Create configuration.</span></span>
 
-## <a name="design-the-report-format"></a>Návrh formátu sestavy
-1. Klikněte na možnost Návrhář.
-2. Zapněte přepínač "Zobrazit detaily".
-3. V podokně akcí klikněte na možnost Importovat.
-4. Klikněte na Import z aplikace Excel.
-5. Klikněte na Přílohy.
-    * Importujte šablonu sestavy. Použijte soubor aplikace Excel, který jste pro ten účel stáhli.  
-6. Klikněte na položku Nová.
-7. Klepněte na volby Soubor.
-8. Zavřete stránku.
-9. V poli Šablona zadejte nebo vyberte hodnotu.
-    * Vyberte staženou šablonu.  
-10. Klikněte na tlačítko OK.
-    * Přidejte nový rozsah k dynamickému vytvoření výstupu aplikace Excel s tolika sloupci, kolik jste vybrali (ve formuláři dialogového okna uživatele) pro finanční dimenze. Každá buňka pro každý sloupec bude představovat název jedné finanční dimenze.  
-11. Klepnutím na možnost Přidat otevřete dialogové okno.
-12. Ve stromovém zobrazení vyberte možnost „Excel\Rozsah“.
-13. V poli rozsah aplikace Excel zadejte "DimNames".
-    * DimNames  
-14. V poli Směr replikace vyberte hodnotu Vodorovně.
-15. Klepněte na tlačítko OK.
-16. Ve stromovém zobrazení vyberte Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal.
-17. Klikněte na Přesunout nahoru.
-18. Ve stromovém zobrazení vyberte Excel = "SampleFinDimWsReport"\Cell<DimNames>.
-19. Klepněte na tlačítko Vyjmout.
-20. Ve stromovém zobrazení vyberte Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal.
-21. Klepněte na tlačítko Vložit.
-22. Ve stromovém zobrazení rozbalte Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal.
-23. Ve stromovém zobrazení rozbalte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical.
-24. Ve stromovém zobrazení rozbalte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical.
-25. Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical.
-    * Přidejte nový rozsah k dynamickému vytvoření výstupu aplikace Excel s tolika sloupci, kolik jste vybrali (ve formuláři dialogového okna uživatele) pro finanční dimenze. Každá buňka pro každý sloupec bude představovat hodnotu jedné finanční dimenze pro každou transakci výkaznictví.  
-26. Klikněte na Přidat rozsah.
-27. V poli rozsah aplikace Excel zadejte "DimValues".
-    * DimValues  
-28. V poli Směr replikace vyberte hodnotu Vodorovně.
-29. Klepněte na tlačítko OK.
-30. Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<DimValues>.
-31. Klepněte na tlačítko Vyjmout.
-32. Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal.
-33. Klepněte na tlačítko Vložit.
-34. Ve stromovém zobrazení rozbalte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal.
+## <a name="design-the-report-format"></a><span data-ttu-id="660b9-124">Návrh formátu sestavy</span><span class="sxs-lookup"><span data-stu-id="660b9-124">Design the report format</span></span>
+1. <span data-ttu-id="660b9-125">Klikněte na možnost Návrhář.</span><span class="sxs-lookup"><span data-stu-id="660b9-125">Click Designer.</span></span>
+2. <span data-ttu-id="660b9-126">Zapněte přepínač "Zobrazit detaily".</span><span class="sxs-lookup"><span data-stu-id="660b9-126">Turn on the ‘Show details’ toggle button.</span></span>
+3. <span data-ttu-id="660b9-127">V podokně akcí klikněte na možnost Importovat.</span><span class="sxs-lookup"><span data-stu-id="660b9-127">On the Action Pane, click Import.</span></span>
+4. <span data-ttu-id="660b9-128">Klikněte na Import z aplikace Excel.</span><span class="sxs-lookup"><span data-stu-id="660b9-128">Click Import from Excel.</span></span>
+5. <span data-ttu-id="660b9-129">Klikněte na Přílohy.</span><span class="sxs-lookup"><span data-stu-id="660b9-129">Click Attachments.</span></span>
+    * <span data-ttu-id="660b9-130">Importujte šablonu sestavy.</span><span class="sxs-lookup"><span data-stu-id="660b9-130">Import the report’s template.</span></span> <span data-ttu-id="660b9-131">Použijte soubor aplikace Excel, který jste pro ten účel stáhli.</span><span class="sxs-lookup"><span data-stu-id="660b9-131">Use Excel file that you downloaded for that.</span></span>  
+6. <span data-ttu-id="660b9-132">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="660b9-132">Click New.</span></span>
+7. <span data-ttu-id="660b9-133">Klepněte na volby Soubor.</span><span class="sxs-lookup"><span data-stu-id="660b9-133">Click File.</span></span>
+8. <span data-ttu-id="660b9-134">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="660b9-134">Close the page.</span></span>
+9. <span data-ttu-id="660b9-135">V poli Šablona zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="660b9-135">In the Template field, enter or select a value.</span></span>
+    * <span data-ttu-id="660b9-136">Vyberte staženou šablonu.</span><span class="sxs-lookup"><span data-stu-id="660b9-136">Select the downloaded template.</span></span>  
+10. <span data-ttu-id="660b9-137">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="660b9-137">Click OK.</span></span>
+    * <span data-ttu-id="660b9-138">Přidejte nový rozsah k dynamickému vytvoření výstupu aplikace Excel s tolika sloupci, kolik jste vybrali (ve formuláři dialogového okna uživatele) pro finanční dimenze.</span><span class="sxs-lookup"><span data-stu-id="660b9-138">Add a new range to dynamically create Excel output with as many columns as you selected (in the user dialog form) for financial dimensions.</span></span> <span data-ttu-id="660b9-139">Každá buňka pro každý sloupec bude představovat název jedné finanční dimenze.</span><span class="sxs-lookup"><span data-stu-id="660b9-139">Each cell for every column will represent a single financial dimension’s name.</span></span>  
+11. <span data-ttu-id="660b9-140">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="660b9-140">Click Add to open the drop dialog.</span></span>
+12. <span data-ttu-id="660b9-141">Ve stromovém zobrazení vyberte možnost „Excel\Rozsah“.</span><span class="sxs-lookup"><span data-stu-id="660b9-141">In the tree, select 'Excel\Range'.</span></span>
+13. <span data-ttu-id="660b9-142">V poli rozsah aplikace Excel zadejte "DimNames".</span><span class="sxs-lookup"><span data-stu-id="660b9-142">In the Excel range field, type 'DimNames'.</span></span>
+    * <span data-ttu-id="660b9-143">DimNames</span><span class="sxs-lookup"><span data-stu-id="660b9-143">DimNames</span></span>  
+14. <span data-ttu-id="660b9-144">V poli Směr replikace vyberte hodnotu Vodorovně.</span><span class="sxs-lookup"><span data-stu-id="660b9-144">In the Replication direction field, select 'Horizontal'.</span></span>
+15. <span data-ttu-id="660b9-145">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="660b9-145">Click OK.</span></span>
+16. <span data-ttu-id="660b9-146">Ve stromovém zobrazení vyberte Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal.</span><span class="sxs-lookup"><span data-stu-id="660b9-146">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal'.</span></span>
+17. <span data-ttu-id="660b9-147">Klikněte na Přesunout nahoru.</span><span class="sxs-lookup"><span data-stu-id="660b9-147">Click Move up.</span></span>
+18. <span data-ttu-id="660b9-148">Ve stromovém zobrazení vyberte Excel = "SampleFinDimWsReport"\Cell<DimNames>.</span><span class="sxs-lookup"><span data-stu-id="660b9-148">In the tree, select 'Excel = "SampleFinDimWsReport"\Cell<DimNames>'.</span></span>
+19. <span data-ttu-id="660b9-149">Klepněte na tlačítko Vyjmout.</span><span class="sxs-lookup"><span data-stu-id="660b9-149">Click Cut.</span></span>
+20. <span data-ttu-id="660b9-150">Ve stromovém zobrazení vyberte Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal.</span><span class="sxs-lookup"><span data-stu-id="660b9-150">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal'.</span></span>
+21. <span data-ttu-id="660b9-151">Klepněte na tlačítko Vložit.</span><span class="sxs-lookup"><span data-stu-id="660b9-151">Click Paste.</span></span>
+22. <span data-ttu-id="660b9-152">Ve stromovém zobrazení rozbalte Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal.</span><span class="sxs-lookup"><span data-stu-id="660b9-152">In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal'.</span></span>
+23. <span data-ttu-id="660b9-153">Ve stromovém zobrazení rozbalte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical.</span><span class="sxs-lookup"><span data-stu-id="660b9-153">In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical'.</span></span>
+24. <span data-ttu-id="660b9-154">Ve stromovém zobrazení rozbalte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical.</span><span class="sxs-lookup"><span data-stu-id="660b9-154">In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical'.</span></span>
+25. <span data-ttu-id="660b9-155">Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical.</span><span class="sxs-lookup"><span data-stu-id="660b9-155">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical'.</span></span>
+    * <span data-ttu-id="660b9-156">Přidejte nový rozsah k dynamickému vytvoření výstupu aplikace Excel s tolika sloupci, kolik jste vybrali (ve formuláři dialogového okna uživatele) pro finanční dimenze.</span><span class="sxs-lookup"><span data-stu-id="660b9-156">Add a new range to dynamically create Excel output with as many columns as you selected (in the user dialog form) for financial dimensions.</span></span> <span data-ttu-id="660b9-157">Každá buňka pro každý sloupec bude představovat hodnotu jedné finanční dimenze pro každou transakci výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="660b9-157">Each cell for every column will represent a single financial dimension’s value for each reporting transaction.</span></span>  
+26. <span data-ttu-id="660b9-158">Klikněte na Přidat rozsah.</span><span class="sxs-lookup"><span data-stu-id="660b9-158">Click Add Range.</span></span>
+27. <span data-ttu-id="660b9-159">V poli rozsah aplikace Excel zadejte "DimValues".</span><span class="sxs-lookup"><span data-stu-id="660b9-159">In the Excel range field, type 'DimValues'.</span></span>
+    * <span data-ttu-id="660b9-160">DimValues</span><span class="sxs-lookup"><span data-stu-id="660b9-160">DimValues</span></span>  
+28. <span data-ttu-id="660b9-161">V poli Směr replikace vyberte hodnotu Vodorovně.</span><span class="sxs-lookup"><span data-stu-id="660b9-161">In the Replication direction field, select 'Horizontal'.</span></span>
+29. <span data-ttu-id="660b9-162">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="660b9-162">Click OK.</span></span>
+30. <span data-ttu-id="660b9-163">Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<DimValues>.</span><span class="sxs-lookup"><span data-stu-id="660b9-163">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<DimValues>'.</span></span>
+31. <span data-ttu-id="660b9-164">Klepněte na tlačítko Vyjmout.</span><span class="sxs-lookup"><span data-stu-id="660b9-164">Click Cut.</span></span>
+32. <span data-ttu-id="660b9-165">Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal.</span><span class="sxs-lookup"><span data-stu-id="660b9-165">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal'.</span></span>
+33. <span data-ttu-id="660b9-166">Klepněte na tlačítko Vložit.</span><span class="sxs-lookup"><span data-stu-id="660b9-166">Click Paste.</span></span>
+34. <span data-ttu-id="660b9-167">Ve stromovém zobrazení rozbalte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal.</span><span class="sxs-lookup"><span data-stu-id="660b9-167">In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal'.</span></span>
 
-## <a name="map-format-elements-to-data-sources"></a>Mapování prvků formátu na zdroje dat
-1. Klikněte na kartu Mapování.
-2. Ve stromovém zobrazení rozbalte 'model: Datový model: ukázkový model finanční dimenze'.
-3. Ve stromovém zobrazení rozbalte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů'.
-4. Ve stromovém zobrazení rozbalte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů'.
-5. Ve stromovém zobrazení rozbalte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů\Data dimenzí: Seznam záznamů'.
-6. Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal\Cell<DimValues>'.
-7. Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů\Data dimenzí: Seznam záznamů\Kód: Řetězec'.
-8. Klikněte na možnost Vazba.
-9. Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal.
-10. Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů\Data dimenzí: Seznam záznamů'.
-11. Klikněte na možnost Vazba.
-12. Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Credit>.
-13. Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů\Dal: Skutečné'.
-14. Klikněte na možnost Vazba.
-15. Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Debit>.
-16. Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů\Má dáti: Skutečné'.
-17. Klikněte na možnost Vazba.
-18. Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Currency>.
-19. Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů\Měna: Řetězec'.
-20. Klikněte na možnost Vazba.
-21. Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransDate>.
-22. Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů\Datum: Datum'.
-23. Klikněte na možnost Vazba.
-24. Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransVoucher>.
-25. Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů\Doklad: Řetězec'.
-26. Klikněte na možnost Vazba.
-27. Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransBatch>.
-28. Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Dávka: Řetězec'.
-29. Klikněte na možnost Vazba.
-30. Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical.
-31. Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů'.
-32. Klikněte na možnost Vazba.
-33. Ve stromovém zobrazení vyberte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Cell<Batch>.
-34. Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Dávka: Řetězec'.
-35. Klikněte na možnost Vazba.
-36. Ve stromovém zobrazení vyberte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical.
-37. Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů'.
-38. Klikněte na možnost Vazba.
-39. Ve stromovém zobrazení rozbalte 'model: Datový model: ukázkový model finanční dimenze\Nastavení dimenzí: Seznam záznamů'.
-40. Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Nastavení dimenzí: Seznam záznamů\Kód: Řetězec'.
-41. Ve stromovém zobrazení vyberte Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal\Cell<DimNames>.
-42. Klikněte na možnost Vazba.
-43. Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Nastavení dimenzí: Seznam záznamů'.
-44. Ve stromovém zobrazení vyberte Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal.
-45. Klikněte na možnost Vazba.
-46. Ve stromovém zobrazení vyberte Excel = "SampleFinDimWsReport"\Cell<CompanyName>.
-47. Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Společnost: Řetězec'.
-48. Klikněte na možnost Vazba.
-49. Klikněte na položku Uložit.
-50. Zavřete stránku.
+## <a name="map-format-elements-to-data-sources"></a><span data-ttu-id="660b9-168">Mapování prvků formátu na zdroje dat</span><span class="sxs-lookup"><span data-stu-id="660b9-168">Map format elements to data sources</span></span>
+1. <span data-ttu-id="660b9-169">Klikněte na kartu Mapování.</span><span class="sxs-lookup"><span data-stu-id="660b9-169">Click the Mapping tab.</span></span>
+2. <span data-ttu-id="660b9-170">Ve stromovém zobrazení rozbalte 'model: Datový model: ukázkový model finanční dimenze'.</span><span class="sxs-lookup"><span data-stu-id="660b9-170">In the tree, expand 'model: Data model Financial dimensions sample model'.</span></span>
+3. <span data-ttu-id="660b9-171">Ve stromovém zobrazení rozbalte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů'.</span><span class="sxs-lookup"><span data-stu-id="660b9-171">In the tree, expand 'model: Data model Financial dimensions sample model\Journal: Record list'.</span></span>
+4. <span data-ttu-id="660b9-172">Ve stromovém zobrazení rozbalte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů'.</span><span class="sxs-lookup"><span data-stu-id="660b9-172">In the tree, expand 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list'.</span></span>
+5. <span data-ttu-id="660b9-173">Ve stromovém zobrazení rozbalte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů\Data dimenzí: Seznam záznamů'.</span><span class="sxs-lookup"><span data-stu-id="660b9-173">In the tree, expand 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list'.</span></span>
+6. <span data-ttu-id="660b9-174">Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal\Cell<DimValues>'.</span><span class="sxs-lookup"><span data-stu-id="660b9-174">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal\Cell<DimValues>'.</span></span>
+7. <span data-ttu-id="660b9-175">Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů\Data dimenzí: Seznam záznamů\Kód: Řetězec'.</span><span class="sxs-lookup"><span data-stu-id="660b9-175">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list\Code: String'.</span></span>
+8. <span data-ttu-id="660b9-176">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="660b9-176">Click Bind.</span></span>
+9. <span data-ttu-id="660b9-177">Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal.</span><span class="sxs-lookup"><span data-stu-id="660b9-177">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal'.</span></span>
+10. <span data-ttu-id="660b9-178">Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů\Data dimenzí: Seznam záznamů'.</span><span class="sxs-lookup"><span data-stu-id="660b9-178">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list'.</span></span>
+11. <span data-ttu-id="660b9-179">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="660b9-179">Click Bind.</span></span>
+12. <span data-ttu-id="660b9-180">Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Credit>.</span><span class="sxs-lookup"><span data-stu-id="660b9-180">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Credit>'.</span></span>
+13. <span data-ttu-id="660b9-181">Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů\Dal: Skutečné'.</span><span class="sxs-lookup"><span data-stu-id="660b9-181">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Credit: Real'.</span></span>
+14. <span data-ttu-id="660b9-182">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="660b9-182">Click Bind.</span></span>
+15. <span data-ttu-id="660b9-183">Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Debit>.</span><span class="sxs-lookup"><span data-stu-id="660b9-183">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Debit>'.</span></span>
+16. <span data-ttu-id="660b9-184">Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů\Má dáti: Skutečné'.</span><span class="sxs-lookup"><span data-stu-id="660b9-184">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Debit: Real'.</span></span>
+17. <span data-ttu-id="660b9-185">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="660b9-185">Click Bind.</span></span>
+18. <span data-ttu-id="660b9-186">Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Currency>.</span><span class="sxs-lookup"><span data-stu-id="660b9-186">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Currency>'.</span></span>
+19. <span data-ttu-id="660b9-187">Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů\Měna: Řetězec'.</span><span class="sxs-lookup"><span data-stu-id="660b9-187">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Currency: String'.</span></span>
+20. <span data-ttu-id="660b9-188">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="660b9-188">Click Bind.</span></span>
+21. <span data-ttu-id="660b9-189">Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransDate>.</span><span class="sxs-lookup"><span data-stu-id="660b9-189">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransDate>'.</span></span>
+22. <span data-ttu-id="660b9-190">Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů\Datum: Datum'.</span><span class="sxs-lookup"><span data-stu-id="660b9-190">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Date: Date'.</span></span>
+23. <span data-ttu-id="660b9-191">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="660b9-191">Click Bind.</span></span>
+24. <span data-ttu-id="660b9-192">Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransVoucher>.</span><span class="sxs-lookup"><span data-stu-id="660b9-192">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransVoucher>'.</span></span>
+25. <span data-ttu-id="660b9-193">Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů\Doklad: Řetězec'.</span><span class="sxs-lookup"><span data-stu-id="660b9-193">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Voucher: String'.</span></span>
+26. <span data-ttu-id="660b9-194">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="660b9-194">Click Bind.</span></span>
+27. <span data-ttu-id="660b9-195">Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransBatch>.</span><span class="sxs-lookup"><span data-stu-id="660b9-195">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransBatch>'.</span></span>
+28. <span data-ttu-id="660b9-196">Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Dávka: Řetězec'.</span><span class="sxs-lookup"><span data-stu-id="660b9-196">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Batch: String'.</span></span>
+29. <span data-ttu-id="660b9-197">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="660b9-197">Click Bind.</span></span>
+30. <span data-ttu-id="660b9-198">Ve stromovém zobrazení zvolte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical.</span><span class="sxs-lookup"><span data-stu-id="660b9-198">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical'.</span></span>
+31. <span data-ttu-id="660b9-199">Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Transakce: Seznam záznamů'.</span><span class="sxs-lookup"><span data-stu-id="660b9-199">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list'.</span></span>
+32. <span data-ttu-id="660b9-200">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="660b9-200">Click Bind.</span></span>
+33. <span data-ttu-id="660b9-201">Ve stromovém zobrazení vyberte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Cell<Batch>.</span><span class="sxs-lookup"><span data-stu-id="660b9-201">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Cell<Batch>'.</span></span>
+34. <span data-ttu-id="660b9-202">Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů\Dávka: Řetězec'.</span><span class="sxs-lookup"><span data-stu-id="660b9-202">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Batch: String'.</span></span>
+35. <span data-ttu-id="660b9-203">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="660b9-203">Click Bind.</span></span>
+36. <span data-ttu-id="660b9-204">Ve stromovém zobrazení vyberte Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical.</span><span class="sxs-lookup"><span data-stu-id="660b9-204">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical'.</span></span>
+37. <span data-ttu-id="660b9-205">Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Deník: Seznam záznamů'.</span><span class="sxs-lookup"><span data-stu-id="660b9-205">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list'.</span></span>
+38. <span data-ttu-id="660b9-206">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="660b9-206">Click Bind.</span></span>
+39. <span data-ttu-id="660b9-207">Ve stromovém zobrazení rozbalte 'model: Datový model: ukázkový model finanční dimenze\Nastavení dimenzí: Seznam záznamů'.</span><span class="sxs-lookup"><span data-stu-id="660b9-207">In the tree, expand 'model: Data model Financial dimensions sample model\Dimensions setting: Record list'.</span></span>
+40. <span data-ttu-id="660b9-208">Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Nastavení dimenzí: Seznam záznamů\Kód: Řetězec'.</span><span class="sxs-lookup"><span data-stu-id="660b9-208">In the tree, select 'model: Data model Financial dimensions sample model\Dimensions setting: Record list\Code: String'.</span></span>
+41. <span data-ttu-id="660b9-209">Ve stromovém zobrazení vyberte Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal\Cell<DimNames>.</span><span class="sxs-lookup"><span data-stu-id="660b9-209">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal\Cell<DimNames>'.</span></span>
+42. <span data-ttu-id="660b9-210">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="660b9-210">Click Bind.</span></span>
+43. <span data-ttu-id="660b9-211">Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Nastavení dimenzí: Seznam záznamů'.</span><span class="sxs-lookup"><span data-stu-id="660b9-211">In the tree, select 'model: Data model Financial dimensions sample model\Dimensions setting: Record list'.</span></span>
+44. <span data-ttu-id="660b9-212">Ve stromovém zobrazení vyberte Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal.</span><span class="sxs-lookup"><span data-stu-id="660b9-212">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal'.</span></span>
+45. <span data-ttu-id="660b9-213">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="660b9-213">Click Bind.</span></span>
+46. <span data-ttu-id="660b9-214">Ve stromovém zobrazení vyberte Excel = "SampleFinDimWsReport"\Cell<CompanyName>.</span><span class="sxs-lookup"><span data-stu-id="660b9-214">In the tree, select 'Excel = "SampleFinDimWsReport"\Cell<CompanyName>'.</span></span>
+47. <span data-ttu-id="660b9-215">Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Společnost: Řetězec'.</span><span class="sxs-lookup"><span data-stu-id="660b9-215">In the tree, select 'model: Data model Financial dimensions sample model\Company: String'.</span></span>
+48. <span data-ttu-id="660b9-216">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="660b9-216">Click Bind.</span></span>
+49. <span data-ttu-id="660b9-217">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="660b9-217">Click Save.</span></span>
+50. <span data-ttu-id="660b9-218">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="660b9-218">Close the page.</span></span>
 
 

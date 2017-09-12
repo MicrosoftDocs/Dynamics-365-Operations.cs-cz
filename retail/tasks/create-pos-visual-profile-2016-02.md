@@ -17,35 +17,35 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 8ba98bbe522d215fb6307af0bd0e3da30d528511
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 2b70bc95f56839da76612df2be3b35362925b977
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-pos-visual-profile"></a> Vytvoření vizuálního profilu POS  
+# <a name="create-a-pos-visual-profile"></a><span data-ttu-id="3d738-103"> Vytvoření vizuálního profilu POS </span><span class="sxs-lookup"><span data-stu-id="3d738-103">Create a POS visual profile</span></span> 
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Tato procedura vás provede procesem vytvoření nového vizuálního profilu pokladního místa (POS). Vizuální profil obsahuje základní informace, které určuje vzhled pokladen POS. Můžete vytvořit několik vizuálních profilů a přiřadit si konkrétní profily, které mají být v určitých registrech spuštěny. Tato procedura používá data ukázkové společnosti USRT.
+<span data-ttu-id="3d738-104">Tato procedura vás provede procesem vytvoření nového vizuálního profilu pokladního místa (POS).</span><span class="sxs-lookup"><span data-stu-id="3d738-104">This procedure walks through creating a new point of sale (POS) visual profile.</span></span> <span data-ttu-id="3d738-105">Vizuální profil obsahuje základní informace, které určuje vzhled pokladen POS.</span><span class="sxs-lookup"><span data-stu-id="3d738-105">A visual profile contains basic information that determines the appearance of POS registers.</span></span> <span data-ttu-id="3d738-106">Můžete vytvořit několik vizuálních profilů a přiřadit si konkrétní profily, které mají být v určitých registrech spuštěny.</span><span class="sxs-lookup"><span data-stu-id="3d738-106">You can create several visual profiles and assign specific profiles to run on specific registers.</span></span> <span data-ttu-id="3d738-107">Tato procedura používá data ukázkové společnosti USRT.</span><span class="sxs-lookup"><span data-stu-id="3d738-107">This procedure uses the USRT demo data company.</span></span>
 
-1. Přejděte do nabídky Maloobchodní a velkoobchodní prodej > Instalace kanálu > Nastavení POS > Profily POS > Vizuální profily.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Číslo profilu.
-4. Zadejte nějakou hodnotu do pole Popis.
-5. V poli Typ aplikace kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-6. Klikněte na odkaz na vybraném řádku v seznamu.
-7. V poli Motiv kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-8. Klikněte na odkaz na vybraném řádku v seznamu.
-9. V poli Barva zvýraznění kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-10. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-11. Klikněte na odkaz na vybraném řádku v seznamu.
-12. Nastavte rozšíření části Přihlášení na pozadí.
-13. V poli ID obrázku na šířku vyberte nebo zadejte ID obrázku.
-14. V poli ID obrázku na výšku vyberte nebo zadejte ID obrázku.
-15. Přepněte rozšíření oddílu Pozadí.
-16. ID obrázku parametru RequestPopup.
-17. Klikněte na odkaz na vybraném řádku v seznamu.
-18. Klikněte na položku Uložit.
+1. <span data-ttu-id="3d738-108">Přejděte do nabídky Maloobchodní a velkoobchodní prodej > Instalace kanálu > Nastavení POS > Profily POS > Vizuální profily.</span><span class="sxs-lookup"><span data-stu-id="3d738-108">Go to Retail and commerce > Channel setup > POS setup > POS profiles > Visual profiles.</span></span>
+2. <span data-ttu-id="3d738-109">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="3d738-109">Click New.</span></span>
+3. <span data-ttu-id="3d738-110">Zadejte hodnotu do pole Číslo profilu.</span><span class="sxs-lookup"><span data-stu-id="3d738-110">In the Profile number field, type a value.</span></span>
+4. <span data-ttu-id="3d738-111">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="3d738-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="3d738-112">V poli Typ aplikace kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="3d738-112">In the Application type field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="3d738-113">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="3d738-113">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="3d738-114">V poli Motiv kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="3d738-114">In the Theme field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="3d738-115">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="3d738-115">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="3d738-116">V poli Barva zvýraznění kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="3d738-116">In the Accent colour field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="3d738-117">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="3d738-117">In the list, find and select the desired record.</span></span>
+11. <span data-ttu-id="3d738-118">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="3d738-118">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="3d738-119">Nastavte rozšíření části Přihlášení na pozadí.</span><span class="sxs-lookup"><span data-stu-id="3d738-119">Toggle the expansion of the Login background section.</span></span>
+13. <span data-ttu-id="3d738-120">V poli ID obrázku na šířku vyberte nebo zadejte ID obrázku.</span><span class="sxs-lookup"><span data-stu-id="3d738-120">In the Landscape image ID field, select or enter an image ID.</span></span>
+14. <span data-ttu-id="3d738-121">V poli ID obrázku na výšku vyberte nebo zadejte ID obrázku.</span><span class="sxs-lookup"><span data-stu-id="3d738-121">In the Portait image ID field, select or enter an image ID.</span></span>
+15. <span data-ttu-id="3d738-122">Přepněte rozšíření oddílu Pozadí.</span><span class="sxs-lookup"><span data-stu-id="3d738-122">Toggle the expansion of the Background section.</span></span>
+16. <span data-ttu-id="3d738-123">ID obrázku parametru RequestPopup.</span><span class="sxs-lookup"><span data-stu-id="3d738-123">RequestPopup the Image ID.</span></span>
+17. <span data-ttu-id="3d738-124">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="3d738-124">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="3d738-125">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="3d738-125">Click Save.</span></span>
 
 

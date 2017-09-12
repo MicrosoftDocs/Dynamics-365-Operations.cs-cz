@@ -16,41 +16,41 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ef4d5deb6ea812023112251f00fcdd25229e02e7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: db813353eef97375451e78320d6d14de74292309
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-main-account"></a>Vytvoření hlavního účtu
+# <a name="create-a-main-account"></a><span data-ttu-id="d4191-103">Vytvoření hlavního účtu</span><span class="sxs-lookup"><span data-stu-id="d4191-103">Create a main account</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento průvodce úkoly váš provede přidáním hlavního účtu k existující účtové osnově. Tento záznam používá ukázkovou společnost USMF.  
+<span data-ttu-id="d4191-104">Tento průvodce úkoly váš provede přidáním hlavního účtu k existující účtové osnově.</span><span class="sxs-lookup"><span data-stu-id="d4191-104">This task guide steps through adding a main account to an existing chart of accounts.</span></span> <span data-ttu-id="d4191-105">Tento záznam používá ukázkovou společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="d4191-105">This recording uses the USMF demo company.</span></span>  
 
-1. Přejděte do části Hlavní kniha > Účtová osnova > Účty > Hlavní účty.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Hlavní účet.
-4. Zadejte hodnotu do pole Název.
-5. V poli Typ hlavního účtu vyberte typ, který nejlépe reprezentuje rozvahové účty a umístění ve finančních výkazech.
-6. Ze seznamu vyberte kategorii účtu, ke které patří hlavní účet.
-    * Kategorie účtu je používána pro výchozí finanční výkazy a obsah řídicího panelu Power BI.  
-7. Klikněte na odkaz na vybraném řádku v seznamu.
-    * Změňte výchozí účet Má dáti nebo kreditní zůstatek.  
-8. V poli pro výchozí měnu vyberte hodnotu ze seznamu měn.
-9. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-10. Klikněte na odkaz na vybraném řádku v seznamu.
-11. Přepněte rozšíření oddílu Přepisy právnických osob.
-12. Chcete-li vybrat právnickou osobu, klepněte na Přidat.
-13. V seznamu vyberte položku Právnická položka.
-14. Klepněte na možnost Přidat.
-15. Označte v seznamu vybraný řádek.
-16. Zaškrtněte nebo zrušte zaškrtnutí políčka Pozastaveno.
-17. Rozbalit pevnou záložku Finanční výkaznictví.
-18. V poli Typ směnného kurzu otevřete vyhledávání klepnutím na tlačítko rozevíracího seznamu.
-19. V seznamu vyberte typ směnného kurzu pro účet.
-20. Klikněte na odkaz na vybraném řádku v seznamu.
-21. V poli Typ převodu měny vyberte metodu pro výpočet směnných kurzů pro účet.
-22. Zavřete stránku.
+1. <span data-ttu-id="d4191-106">Přejděte do části Hlavní kniha > Účtová osnova > Účty > Hlavní účty.</span><span class="sxs-lookup"><span data-stu-id="d4191-106">Go to General ledger > Chart of accounts > Accounts > Main accounts.</span></span>
+2. <span data-ttu-id="d4191-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="d4191-107">Click New.</span></span>
+3. <span data-ttu-id="d4191-108">Zadejte hodnotu do pole Hlavní účet.</span><span class="sxs-lookup"><span data-stu-id="d4191-108">In the Main account field, type a value.</span></span>
+4. <span data-ttu-id="d4191-109">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="d4191-109">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="d4191-110">V poli Typ hlavního účtu vyberte typ, který nejlépe reprezentuje rozvahové účty a umístění ve finančních výkazech.</span><span class="sxs-lookup"><span data-stu-id="d4191-110">In the Main account type field, select the type that best represents the accounts balance and location on financial statements.</span></span>
+6. <span data-ttu-id="d4191-111">Ze seznamu vyberte kategorii účtu, ke které patří hlavní účet.</span><span class="sxs-lookup"><span data-stu-id="d4191-111">In the list, select the account category the main account belongs to.</span></span>
+    * <span data-ttu-id="d4191-112">Kategorie účtu je používána pro výchozí finanční výkazy a obsah řídicího panelu Power BI.</span><span class="sxs-lookup"><span data-stu-id="d4191-112">Account category is used for default financial reports and Power BI dashboard content.</span></span>  
+7. <span data-ttu-id="d4191-113">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="d4191-113">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="d4191-114">Změňte výchozí účet Má dáti nebo kreditní zůstatek.</span><span class="sxs-lookup"><span data-stu-id="d4191-114">Change the default debit or credit balance.</span></span>  
+8. <span data-ttu-id="d4191-115">V poli pro výchozí měnu vyberte hodnotu ze seznamu měn.</span><span class="sxs-lookup"><span data-stu-id="d4191-115">In the Default currency field, select a value from the list of currencies.</span></span>
+9. <span data-ttu-id="d4191-116">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="d4191-116">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="d4191-117">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="d4191-117">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="d4191-118">Přepněte rozšíření oddílu Přepisy právnických osob.</span><span class="sxs-lookup"><span data-stu-id="d4191-118">Toggle the expansion of the Legal entity overrides section.</span></span>
+12. <span data-ttu-id="d4191-119">Chcete-li vybrat právnickou osobu, klepněte na Přidat.</span><span class="sxs-lookup"><span data-stu-id="d4191-119">Click Add to select a legal entity.</span></span>
+13. <span data-ttu-id="d4191-120">V seznamu vyberte položku Právnická položka.</span><span class="sxs-lookup"><span data-stu-id="d4191-120">In the list, select the Legal entity.</span></span>
+14. <span data-ttu-id="d4191-121">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="d4191-121">Click Add.</span></span>
+15. <span data-ttu-id="d4191-122">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="d4191-122">In the list, mark the selected row.</span></span>
+16. <span data-ttu-id="d4191-123">Zaškrtněte nebo zrušte zaškrtnutí políčka Pozastaveno.</span><span class="sxs-lookup"><span data-stu-id="d4191-123">Check or uncheck the Suspended checkbox.</span></span>
+17. <span data-ttu-id="d4191-124">Rozbalit pevnou záložku Finanční výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="d4191-124">Expand the Financial reporting fast tab.</span></span>
+18. <span data-ttu-id="d4191-125">V poli Typ směnného kurzu otevřete vyhledávání klepnutím na tlačítko rozevíracího seznamu.</span><span class="sxs-lookup"><span data-stu-id="d4191-125">In the Exchange rate type field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="d4191-126">V seznamu vyberte typ směnného kurzu pro účet.</span><span class="sxs-lookup"><span data-stu-id="d4191-126">In the list, select the Exchange rate type for the account.</span></span>
+20. <span data-ttu-id="d4191-127">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="d4191-127">In the list, click the link in the selected row.</span></span>
+21. <span data-ttu-id="d4191-128">V poli Typ převodu měny vyberte metodu pro výpočet směnných kurzů pro účet.</span><span class="sxs-lookup"><span data-stu-id="d4191-128">In the Currency translation type field, select the method for calculating exchange rates for the account.</span></span>
+22. <span data-ttu-id="d4191-129">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="d4191-129">Close the page.</span></span>
 
 

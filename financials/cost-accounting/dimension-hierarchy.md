@@ -17,321 +17,321 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: dcbab70d2057a2eb252538a51343fa8bae16873d
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 7fb7efdd574c705c2ecfbb46e302985db0729517
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="dimension-hierarchy"></a>Hierarchie dimenzí
+# <a name="dimension-hierarchy"></a><span data-ttu-id="b5def-104">Hierarchie dimenzí</span><span class="sxs-lookup"><span data-stu-id="b5def-104">Dimension hierarchy</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-V tomto tématu jsou informace o hierarchiích dimenzí. Hierarchie dimenzí se používá k definování struktury sestav, zásad nákladů a nastavení zabezpečení v nákladovém účetnictví.  
+<span data-ttu-id="b5def-105">V tomto tématu jsou informace o hierarchiích dimenzí.</span><span class="sxs-lookup"><span data-stu-id="b5def-105">This topic provides information about dimension hierarchies.</span></span> <span data-ttu-id="b5def-106">Hierarchie dimenzí se používá k definování struktury sestav, zásad nákladů a nastavení zabezpečení v nákladovém účetnictví.</span><span class="sxs-lookup"><span data-stu-id="b5def-106">You use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.</span></span>  
 
-## <a name="overview"></a>Přehled
+## <a name="overview"></a><span data-ttu-id="b5def-107">Přehled</span><span class="sxs-lookup"><span data-stu-id="b5def-107">Overview</span></span>
 
-Hierarchie dimenzí se používají na různých místech v nákladovém účetnictví. Hierarchie dimenzí vám umožňuje určit následující informace:
+<span data-ttu-id="b5def-108">Hierarchie dimenzí se používají na různých místech v nákladovém účetnictví.</span><span class="sxs-lookup"><span data-stu-id="b5def-108">Dimension hierarchies are used in various places in Cost accounting.</span></span> <span data-ttu-id="b5def-109">Hierarchie dimenzí vám umožňuje určit následující informace:</span><span class="sxs-lookup"><span data-stu-id="b5def-109">A dimension hierarchy lets you define the following information:</span></span>
 
--  Struktura sestav, která vyhovuje požadavkům vaší organizace
--  Zásady nákladů
--  Nastavení zabezpečení
+-  <span data-ttu-id="b5def-110">Struktura sestav, která vyhovuje požadavkům vaší organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-110">The reporting structure that fits into the organization's requirements</span></span>
+-  <span data-ttu-id="b5def-111">Zásady nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-111">Cost policies</span></span>
+-  <span data-ttu-id="b5def-112">Nastavení zabezpečení</span><span class="sxs-lookup"><span data-stu-id="b5def-112">The security setup</span></span>
 
-Následuje příklad hierarchie dimenzí.
+<span data-ttu-id="b5def-113">Následuje příklad hierarchie dimenzí.</span><span class="sxs-lookup"><span data-stu-id="b5def-113">Here is an example of a dimension hierarchy.</span></span>
 
 ![Příklad hierarchie dimenzí](./media/dimension-hierarchy.png)
 
-Hierarchii dimenzí lze vytvořit pro následující typy dimenzí:
+<span data-ttu-id="b5def-115">Hierarchii dimenzí lze vytvořit pro následující typy dimenzí:</span><span class="sxs-lookup"><span data-stu-id="b5def-115">A dimension hierarchy can be created for the following types of dimensions:</span></span>
 
--  Dimenze prvku nákladů
--  Dimenze objektu nákladů
--  Statistické dimenze
+-  <span data-ttu-id="b5def-116">Dimenze prvku nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-116">Cost element dimensions</span></span>
+-  <span data-ttu-id="b5def-117">Dimenze objektu nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-117">Cost object dimensions</span></span>
+-  <span data-ttu-id="b5def-118">Statistické dimenze</span><span class="sxs-lookup"><span data-stu-id="b5def-118">Statistical dimensions</span></span>
 
 > [!NOTE]
-> - Můžete vytvořit několik hierarchií dimenzí pro stejnou dimenzi, pokud je zapotřebí různých perspektiv.
-> - Hierarchie dimenzí může být přidružena pouze k jedné dimenzi.
-> - Hierarchie dimenzí může mít neomezený počet úrovní ve své struktuře. Všechny úrovně budou dostupné v pracovním prostoru **Řízení nákladů**. Při použití aplikace Microsoft Excel nebo Microsoft Power BI pro účely vykazování je exportováno pouze prvních 15 úrovní hierarchie dimenzí. Toto omezení existuje proto, že aplikace Excel a Power BI vyžadují pevné schéma.
-> - Hierarchie dimenzí není platné od data. To znamená, že každá změna hierarchie dimenzí je okamžitě uložena do záznamu a nelze porovnávat datum před a datum po.
+> - <span data-ttu-id="b5def-119">Můžete vytvořit několik hierarchií dimenzí pro stejnou dimenzi, pokud je zapotřebí různých perspektiv.</span><span class="sxs-lookup"><span data-stu-id="b5def-119">You can create multiple dimension hierarchies for the same dimension if different perspectives are required.</span></span>
+> - <span data-ttu-id="b5def-120">Hierarchie dimenzí může být přidružena pouze k jedné dimenzi.</span><span class="sxs-lookup"><span data-stu-id="b5def-120">A dimension hierarchy can be associated with only one dimension.</span></span>
+> - <span data-ttu-id="b5def-121">Hierarchie dimenzí může mít neomezený počet úrovní ve své struktuře.</span><span class="sxs-lookup"><span data-stu-id="b5def-121">A dimension hierarchy can have unlimited levels in its structure.</span></span> <span data-ttu-id="b5def-122">Všechny úrovně budou dostupné v pracovním prostoru **Řízení nákladů**.</span><span class="sxs-lookup"><span data-stu-id="b5def-122">All the levels will be available in the **Cost control** workspace.</span></span> <span data-ttu-id="b5def-123">Při použití aplikace Microsoft Excel nebo Microsoft Power BI pro účely vykazování je exportováno pouze prvních 15 úrovní hierarchie dimenzí.</span><span class="sxs-lookup"><span data-stu-id="b5def-123">When you use Microsoft Excel or Microsoft Power BI for reporting purposes, only the first 15 levels of the dimension hierarchy are exported.</span></span> <span data-ttu-id="b5def-124">Toto omezení existuje proto, že aplikace Excel a Power BI vyžadují pevné schéma.</span><span class="sxs-lookup"><span data-stu-id="b5def-124">This limitation exists because both Excel and Power BI require a fixed schema.</span></span>
+> - <span data-ttu-id="b5def-125">Hierarchie dimenzí není platné od data.</span><span class="sxs-lookup"><span data-stu-id="b5def-125">A dimension hierarchy isn't date-effective.</span></span> <span data-ttu-id="b5def-126">To znamená, že každá změna hierarchie dimenzí je okamžitě uložena do záznamu a nelze porovnávat datum před a datum po.</span><span class="sxs-lookup"><span data-stu-id="b5def-126">Therefore, any change to a dimension hierarchy is immediately saved to the record, and you can't compare the before date and after date.</span></span>
 
-## <a name="dimension-hierarchy-type"></a>Typ hierarchie dimenzí
+## <a name="dimension-hierarchy-type"></a><span data-ttu-id="b5def-127">Typ hierarchie dimenzí</span><span class="sxs-lookup"><span data-stu-id="b5def-127">Dimension hierarchy type</span></span>
 
-Při vytvoření nové hierarchie dimenzí je nutné zvolit typ hierarchie. Přejděte na **Nákladové účetnictví** > **Dimenze** > **Hierarchie dimenzí**. Klikněte na **Nový** a vyberte typ hierarchie dimenzí. Můžete vybrat buď možnost **Hierarchie kategorizace dimenzí** nebo **Hierarchie klasifikace dimenzí**.
+<span data-ttu-id="b5def-128">Při vytvoření nové hierarchie dimenzí je nutné zvolit typ hierarchie.</span><span class="sxs-lookup"><span data-stu-id="b5def-128">When you create a new dimension hierarchy, you must select a hierarchy type.</span></span> <span data-ttu-id="b5def-129">Přejděte na **Nákladové účetnictví** > **Dimenze** > **Hierarchie dimenzí**.</span><span class="sxs-lookup"><span data-stu-id="b5def-129">Go to **Cost accounting** > **Dimensions** > **Dimension hierarchies**.</span></span> <span data-ttu-id="b5def-130">Klikněte na **Nový** a vyberte typ hierarchie dimenzí.</span><span class="sxs-lookup"><span data-stu-id="b5def-130">Click **New**, and select a dimension hierarchy type.</span></span> <span data-ttu-id="b5def-131">Můžete vybrat buď možnost **Hierarchie kategorizace dimenzí** nebo **Hierarchie klasifikace dimenzí**.</span><span class="sxs-lookup"><span data-stu-id="b5def-131">You can select either **Dimension categorization hierarchy** or **Dimension classification hierarchy**.</span></span>
 
-### <a name="dimension-categorization-hierarchy"></a>Hierarchie kategorizace dimenzí
+### <a name="dimension-categorization-hierarchy"></a><span data-ttu-id="b5def-132">Hierarchie kategorizace dimenzí</span><span class="sxs-lookup"><span data-stu-id="b5def-132">Dimension categorization hierarchy</span></span>
 
-Typ **Hierarchie kategorizace dimenzí** se používá pro účely vykazování. Podporuje pouze dimenze prvku nákladů. Při zvolení tohoto typu platí následující pravidla:
+<span data-ttu-id="b5def-133">Typ **Hierarchie kategorizace dimenzí** se používá pro účely vykazování.</span><span class="sxs-lookup"><span data-stu-id="b5def-133">The **Dimension categorization hierarchy** type is used for reporting purposes.</span></span> <span data-ttu-id="b5def-134">Podporuje pouze dimenze prvku nákladů.</span><span class="sxs-lookup"><span data-stu-id="b5def-134">It supports only the cost element dimensions.</span></span> <span data-ttu-id="b5def-135">Při zvolení tohoto typu platí následující pravidla:</span><span class="sxs-lookup"><span data-stu-id="b5def-135">When you select this type, the following rules apply:</span></span>
 
--  Člena dimenze můžete přiřadit více než jednou ve struktuře hierarchie.
--  Člena dimenze prvku nákladů lze zadat do různých uzlů přiřazením chování nákladů k listovému uzlu.
+-  <span data-ttu-id="b5def-136">Člena dimenze můžete přiřadit více než jednou ve struktuře hierarchie.</span><span class="sxs-lookup"><span data-stu-id="b5def-136">A dimension member can be associated more than one time in the hierarchy structure.</span></span>
+-  <span data-ttu-id="b5def-137">Člena dimenze prvku nákladů lze zadat do různých uzlů přiřazením chování nákladů k listovému uzlu.</span><span class="sxs-lookup"><span data-stu-id="b5def-137">You can put a cost element dimension member in different nodes by assigning a cost behavior to the leaf node.</span></span>
 
-### <a name="dimension-classification-hierarchy"></a>Hierarchie klasifikace dimenzí
+### <a name="dimension-classification-hierarchy"></a><span data-ttu-id="b5def-138">Hierarchie klasifikace dimenzí</span><span class="sxs-lookup"><span data-stu-id="b5def-138">Dimension classification hierarchy</span></span>
 
-Typ **Hierarchie klasifikace dimenzí** se používá k definování pravidel pro účely vykazování. Podporuje všechny dimenze, například objekty nákladů, prvky nákladů a statistické dimenze. Když zvolíte tento typ, můžete člena dimenze přiřadit pouze jednou ve struktuře hierarchie.
+<span data-ttu-id="b5def-139">Typ **Hierarchie klasifikace dimenzí** se používá k definování pravidel pro účely vykazování.</span><span class="sxs-lookup"><span data-stu-id="b5def-139">The **Dimension classification hierarchy** type is used to define rules and for reporting purposes.</span></span> <span data-ttu-id="b5def-140">Podporuje všechny dimenze, například objekty nákladů, prvky nákladů a statistické dimenze.</span><span class="sxs-lookup"><span data-stu-id="b5def-140">It supports all dimensions, such as cost objects, cost elements, and statistical dimensions.</span></span> <span data-ttu-id="b5def-141">Když zvolíte tento typ, můžete člena dimenze přiřadit pouze jednou ve struktuře hierarchie.</span><span class="sxs-lookup"><span data-stu-id="b5def-141">When you select this type, a dimension member can be associated only one time in the hierarchy structure.</span></span>
 
-## <a name="create-and-maintain-a-dimension-hierarchy"></a>Vytvoření a údržba hierarchie dimenzí
+## <a name="create-and-maintain-a-dimension-hierarchy"></a><span data-ttu-id="b5def-142">Vytvoření a údržba hierarchie dimenzí</span><span class="sxs-lookup"><span data-stu-id="b5def-142">Create and maintain a dimension hierarchy</span></span>
 
-Hierarchie dimenzí je vytvořena jako stromové struktura, která má vztahy uzel a uzel listu.
+<span data-ttu-id="b5def-143">Hierarchie dimenzí je vytvořena jako stromové struktura, která má vztahy uzel a uzel listu.</span><span class="sxs-lookup"><span data-stu-id="b5def-143">A dimension hierarchy is created as a tree structure that has node and leaf node relationships.</span></span>
 
--  Uzel může mít 1:_n_ dílčích uzlů.
--  Uzel nemůže mít k sobě přiřazené současně podřízené uzly a listové uzly.
--  Uzel listu lze přiřadit pouze na nejnižší úroveň v hierarchii.
+-  <span data-ttu-id="b5def-144">Uzel může mít 1:_n_ dílčích uzlů.</span><span class="sxs-lookup"><span data-stu-id="b5def-144">A node can have 1:_n_ subnodes.</span></span>
+-  <span data-ttu-id="b5def-145">Uzel nemůže mít k sobě přiřazené současně podřízené uzly a listové uzly.</span><span class="sxs-lookup"><span data-stu-id="b5def-145">A node can’t have both subnodes and leaf nodes assigned to it.</span></span>
+-  <span data-ttu-id="b5def-146">Uzel listu lze přiřadit pouze na nejnižší úroveň v hierarchii.</span><span class="sxs-lookup"><span data-stu-id="b5def-146">A leaf node can be assigned only at the lowest level in the hierarchy.</span></span>
 
-### <a name="example"></a>Příklad
+### <a name="example"></a><span data-ttu-id="b5def-147">Příklad</span><span class="sxs-lookup"><span data-stu-id="b5def-147">Example</span></span>
 
-Malá společnost má následující strukturu organizace, kde finance a lidské zdroje jsou oddělení pod správou a montáž a balení jsou oddělení v rámci výroby.
+<span data-ttu-id="b5def-148">Malá společnost má následující strukturu organizace, kde finance a lidské zdroje jsou oddělení pod správou a montáž a balení jsou oddělení v rámci výroby.</span><span class="sxs-lookup"><span data-stu-id="b5def-148">A small company has the following organization structure, where Finance and Human resources are departments under Admin, and Assembly and Packaging are departments under Production.</span></span>
 
 ![Příklad organizační struktury](./media/dimension-hierarchy-org.png)
 
-Dimenze objektu nákladů představuje všechna nákladová střediska v organizaci.
+<span data-ttu-id="b5def-150">Dimenze objektu nákladů představuje všechna nákladová střediska v organizaci.</span><span class="sxs-lookup"><span data-stu-id="b5def-150">A cost object dimension represents all the cost centers in the organization.</span></span>
 
-- Dimenze objektu nákladů
-    - Nákladová střediska
+- <span data-ttu-id="b5def-151">Dimenze objektu nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-151">Cost object dimension</span></span>
+    - <span data-ttu-id="b5def-152">Nákladová střediska</span><span class="sxs-lookup"><span data-stu-id="b5def-152">Cost centers</span></span>
 
-Dimenze objektu nákladů představující všechna nákladová střediska lze nastavit tak, jak je uvedeno zde.
+<span data-ttu-id="b5def-153">Dimenze objektu nákladů představující všechna nákladová střediska lze nastavit tak, jak je uvedeno zde.</span><span class="sxs-lookup"><span data-stu-id="b5def-153">The cost object dimension that represents all the cost centers can be set up as shown here.</span></span>
 
-| Nákladová střediska | popis |
+| <span data-ttu-id="b5def-154">Nákladová střediska</span><span class="sxs-lookup"><span data-stu-id="b5def-154">Cost centers</span></span> | <span data-ttu-id="b5def-155">popis</span><span class="sxs-lookup"><span data-stu-id="b5def-155">Description</span></span> |
 |--------------|-------------|
-| CC001        | HR          |
-| CC002        | Finance     |
-| CC003        | Daň         |
-| CC007        | POHLEDÁVKY A ZÁVAZKY       |
-| CC005        | Sestavení    |
-| CC006        | Balení   |
+| <span data-ttu-id="b5def-156">CC001</span><span class="sxs-lookup"><span data-stu-id="b5def-156">CC001</span></span>        | <span data-ttu-id="b5def-157">HR</span><span class="sxs-lookup"><span data-stu-id="b5def-157">HR</span></span>          |
+| <span data-ttu-id="b5def-158">CC002</span><span class="sxs-lookup"><span data-stu-id="b5def-158">CC002</span></span>        | <span data-ttu-id="b5def-159">Finance</span><span class="sxs-lookup"><span data-stu-id="b5def-159">Finance</span></span>     |
+| <span data-ttu-id="b5def-160">CC003</span><span class="sxs-lookup"><span data-stu-id="b5def-160">CC003</span></span>        | <span data-ttu-id="b5def-161">Daň</span><span class="sxs-lookup"><span data-stu-id="b5def-161">Tax</span></span>         |
+| <span data-ttu-id="b5def-162">CC007</span><span class="sxs-lookup"><span data-stu-id="b5def-162">CC007</span></span>        | <span data-ttu-id="b5def-163">POHLEDÁVKY A ZÁVAZKY</span><span class="sxs-lookup"><span data-stu-id="b5def-163">AR/AP</span></span>       |
+| <span data-ttu-id="b5def-164">CC005</span><span class="sxs-lookup"><span data-stu-id="b5def-164">CC005</span></span>        | <span data-ttu-id="b5def-165">Sestavení</span><span class="sxs-lookup"><span data-stu-id="b5def-165">Assembly</span></span>    |
+| <span data-ttu-id="b5def-166">CC006</span><span class="sxs-lookup"><span data-stu-id="b5def-166">CC006</span></span>        | <span data-ttu-id="b5def-167">Balení</span><span class="sxs-lookup"><span data-stu-id="b5def-167">Packaging</span></span>   |
 
-Dimenze prvku nákladů představuje všechny prvky nákladů v organizaci.
+<span data-ttu-id="b5def-168">Dimenze prvku nákladů představuje všechny prvky nákladů v organizaci.</span><span class="sxs-lookup"><span data-stu-id="b5def-168">A cost element dimension represents all the cost elements in the organization.</span></span>
 
-- Dimenze prvku nákladů
-    - Prvky nákladů
+- <span data-ttu-id="b5def-169">Dimenze prvku nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-169">Cost element dimension</span></span>
+    - <span data-ttu-id="b5def-170">Prvky nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-170">Cost elements</span></span>
 
-Dimenze objektu nákladů představující všechna nákladová střediska lze nastavit tak, jak je uvedeno zde.
+<span data-ttu-id="b5def-171">Dimenze objektu nákladů představující všechna nákladová střediska lze nastavit tak, jak je uvedeno zde.</span><span class="sxs-lookup"><span data-stu-id="b5def-171">The cost element dimension that represents all the cost elements can be set up as shown here.</span></span>
 
-| Prvky nákladů | popis |
+| <span data-ttu-id="b5def-172">Prvky nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-172">Cost elements</span></span> | <span data-ttu-id="b5def-173">popis</span><span class="sxs-lookup"><span data-stu-id="b5def-173">Description</span></span> |
 |---------------|-------------|
-| 10001         | Elektrické energie |
-| 10010         | Úklid    |
-| 10011         | Topení     |
-| 40001         | COGS        |
+| <span data-ttu-id="b5def-174">10001</span><span class="sxs-lookup"><span data-stu-id="b5def-174">10001</span></span>         | <span data-ttu-id="b5def-175">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="b5def-175">Electricity</span></span> |
+| <span data-ttu-id="b5def-176">10010</span><span class="sxs-lookup"><span data-stu-id="b5def-176">10010</span></span>         | <span data-ttu-id="b5def-177">Úklid</span><span class="sxs-lookup"><span data-stu-id="b5def-177">Cleaning</span></span>    |
+| <span data-ttu-id="b5def-178">10011</span><span class="sxs-lookup"><span data-stu-id="b5def-178">10011</span></span>         | <span data-ttu-id="b5def-179">Topení</span><span class="sxs-lookup"><span data-stu-id="b5def-179">Heating</span></span>     |
+| <span data-ttu-id="b5def-180">40001</span><span class="sxs-lookup"><span data-stu-id="b5def-180">40001</span></span>         | <span data-ttu-id="b5def-181">COGS</span><span class="sxs-lookup"><span data-stu-id="b5def-181">COGS</span></span>        |
 
-Hierarchii dimenzí, která splňuje požadavky organizace na výkazy, lze nastavit tak, jak je uvedeno zde.
+<span data-ttu-id="b5def-182">Hierarchii dimenzí, která splňuje požadavky organizace na výkazy, lze nastavit tak, jak je uvedeno zde.</span><span class="sxs-lookup"><span data-stu-id="b5def-182">A dimension hierarchy that meets the organizational reporting requirements can be set up as shown here.</span></span>
 
-**Podrobnosti hierarchie dimenze**
+<span data-ttu-id="b5def-183">**Podrobnosti hierarchie dimenze**</span><span class="sxs-lookup"><span data-stu-id="b5def-183">**Dimension hierarchy details**</span></span>
 
-| Název hierarchie dimenze | Dimenze    | Název typu hierarchie dimenze      | Hierarchie přístupového seznamu |
+| <span data-ttu-id="b5def-184">Název hierarchie dimenze</span><span class="sxs-lookup"><span data-stu-id="b5def-184">Dimension hierarchy name</span></span> | <span data-ttu-id="b5def-185">Dimenze</span><span class="sxs-lookup"><span data-stu-id="b5def-185">Dimension</span></span>    | <span data-ttu-id="b5def-186">Název typu hierarchie dimenze</span><span class="sxs-lookup"><span data-stu-id="b5def-186">Dimension hierarchy type name</span></span>      | <span data-ttu-id="b5def-187">Hierarchie přístupového seznamu</span><span class="sxs-lookup"><span data-stu-id="b5def-187">Access list hierarchy</span></span> |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organizace             | Nákladová střediska | Hierarchie klasifikace dimenzí | Žádný                    |
+| <span data-ttu-id="b5def-188">Organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-188">Organization</span></span>             | <span data-ttu-id="b5def-189">Nákladová střediska</span><span class="sxs-lookup"><span data-stu-id="b5def-189">Cost centers</span></span> | <span data-ttu-id="b5def-190">Hierarchie klasifikace dimenzí</span><span class="sxs-lookup"><span data-stu-id="b5def-190">Dimension classification hierarchy</span></span> | <span data-ttu-id="b5def-191">Žádný</span><span class="sxs-lookup"><span data-stu-id="b5def-191">No</span></span>                    |
 
-Hierarchii dimenzí pro vykazování lze nastavit tak, jak je uvedeno zde.
+<span data-ttu-id="b5def-192">Hierarchii dimenzí pro vykazování lze nastavit tak, jak je uvedeno zde.</span><span class="sxs-lookup"><span data-stu-id="b5def-192">The dimension hierarchy for reporting can be set up as shown here.</span></span>
 
-|                   | Rozsahy členu dimenze   |                         |
+|                   | <span data-ttu-id="b5def-193">Rozsahy členu dimenze</span><span class="sxs-lookup"><span data-stu-id="b5def-193">Dimension member ranges</span></span>   |                         |
 |-------------------|---------------------------|-------------------------|
-| **Uzly**         | **Od členu dimenze** | **Po člen dimenze** |
-| Organizace      |                           |                         |
-| &nbsp;&nbsp;Správce         |                           |                         |
-|&nbsp;&nbsp;&nbsp;&nbsp;Finance   | CC002                     | CC003                   |
-|                   | CC007                     | CC007                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;HR        | CC001                     | CC001                   |
-| &nbsp;&nbsp;Výroba    |                           |                         |
-| &nbsp;&nbsp;&nbsp;&nbsp;Balení | CC005                     | CC005                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;Sestavení  | CC006                     | CC006                   |
+| <span data-ttu-id="b5def-194">**Uzly**</span><span class="sxs-lookup"><span data-stu-id="b5def-194">**Nodes**</span></span>         | <span data-ttu-id="b5def-195">**Od členu dimenze**</span><span class="sxs-lookup"><span data-stu-id="b5def-195">**From dimension member**</span></span> | <span data-ttu-id="b5def-196">**Po člen dimenze**</span><span class="sxs-lookup"><span data-stu-id="b5def-196">**To dimension member**</span></span> |
+| <span data-ttu-id="b5def-197">Organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-197">Organization</span></span>      |                           |                         |
+| <span data-ttu-id="b5def-198">&nbsp;&nbsp;Správce</span><span class="sxs-lookup"><span data-stu-id="b5def-198">&nbsp;&nbsp;Admin</span></span>         |                           |                         |
+|<span data-ttu-id="b5def-199">&nbsp;&nbsp;&nbsp;&nbsp;Finance</span><span class="sxs-lookup"><span data-stu-id="b5def-199">&nbsp;&nbsp;&nbsp;&nbsp;Finance</span></span>   | <span data-ttu-id="b5def-200">CC002</span><span class="sxs-lookup"><span data-stu-id="b5def-200">CC002</span></span>                     | <span data-ttu-id="b5def-201">CC003</span><span class="sxs-lookup"><span data-stu-id="b5def-201">CC003</span></span>                   |
+|                   | <span data-ttu-id="b5def-202">CC007</span><span class="sxs-lookup"><span data-stu-id="b5def-202">CC007</span></span>                     | <span data-ttu-id="b5def-203">CC007</span><span class="sxs-lookup"><span data-stu-id="b5def-203">CC007</span></span>                   |
+| <span data-ttu-id="b5def-204">&nbsp;&nbsp;&nbsp;&nbsp;HR</span><span class="sxs-lookup"><span data-stu-id="b5def-204">&nbsp;&nbsp;&nbsp;&nbsp;HR</span></span>        | <span data-ttu-id="b5def-205">CC001</span><span class="sxs-lookup"><span data-stu-id="b5def-205">CC001</span></span>                     | <span data-ttu-id="b5def-206">CC001</span><span class="sxs-lookup"><span data-stu-id="b5def-206">CC001</span></span>                   |
+| <span data-ttu-id="b5def-207">&nbsp;&nbsp;Výroba</span><span class="sxs-lookup"><span data-stu-id="b5def-207">&nbsp;&nbsp;Production</span></span>    |                           |                         |
+| <span data-ttu-id="b5def-208">&nbsp;&nbsp;&nbsp;&nbsp;Balení</span><span class="sxs-lookup"><span data-stu-id="b5def-208">&nbsp;&nbsp;&nbsp;&nbsp;Packaging</span></span> | <span data-ttu-id="b5def-209">CC005</span><span class="sxs-lookup"><span data-stu-id="b5def-209">CC005</span></span>                     | <span data-ttu-id="b5def-210">CC005</span><span class="sxs-lookup"><span data-stu-id="b5def-210">CC005</span></span>                   |
+| <span data-ttu-id="b5def-211">&nbsp;&nbsp;&nbsp;&nbsp;Sestavení</span><span class="sxs-lookup"><span data-stu-id="b5def-211">&nbsp;&nbsp;&nbsp;&nbsp;Assembly</span></span>  | <span data-ttu-id="b5def-212">CC006</span><span class="sxs-lookup"><span data-stu-id="b5def-212">CC006</span></span>                     | <span data-ttu-id="b5def-213">CC006</span><span class="sxs-lookup"><span data-stu-id="b5def-213">CC006</span></span>                   |
 
-Hierarchii dimenzí, která splňuje požadavky zásad, lze nastavit zde uvedeným způsobem.
+<span data-ttu-id="b5def-214">Hierarchii dimenzí, která splňuje požadavky zásad, lze nastavit zde uvedeným způsobem.</span><span class="sxs-lookup"><span data-stu-id="b5def-214">A dimension hierarchy that meets the policy requirement can be set up as shown here.</span></span>
 
-**Podrobnosti hierarchie dimenze**
+<span data-ttu-id="b5def-215">**Podrobnosti hierarchie dimenze**</span><span class="sxs-lookup"><span data-stu-id="b5def-215">**Dimension hierarchy details**</span></span>
 
-| Název hierarchie dimenze | Dimenze     | Název typu hierarchie dimenze      |
+| <span data-ttu-id="b5def-216">Název hierarchie dimenze</span><span class="sxs-lookup"><span data-stu-id="b5def-216">Dimension hierarchy name</span></span> | <span data-ttu-id="b5def-217">Dimenze</span><span class="sxs-lookup"><span data-stu-id="b5def-217">Dimension</span></span>     | <span data-ttu-id="b5def-218">Název typu hierarchie dimenze</span><span class="sxs-lookup"><span data-stu-id="b5def-218">Dimension hierarchy type name</span></span>      |
 |--------------------------|---------------|------------------------------------|
-| Chování nákladů            | Prvky nákladů | Hierarchie klasifikace dimenzí |
+| <span data-ttu-id="b5def-219">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-219">Cost behavior</span></span>            | <span data-ttu-id="b5def-220">Prvky nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-220">Cost elements</span></span> | <span data-ttu-id="b5def-221">Hierarchie klasifikace dimenzí</span><span class="sxs-lookup"><span data-stu-id="b5def-221">Dimension classification hierarchy</span></span> |
 
-Hierarchii dimenzí pro zásady lze nastavit tak, jak je uvedeno zde.
+<span data-ttu-id="b5def-222">Hierarchii dimenzí pro zásady lze nastavit tak, jak je uvedeno zde.</span><span class="sxs-lookup"><span data-stu-id="b5def-222">The dimension hierarchy for the policy can be set up as shown here.</span></span>
 
-|                   | Rozsahy členu dimenze   |                         |
+|                   | <span data-ttu-id="b5def-223">Rozsahy členu dimenze</span><span class="sxs-lookup"><span data-stu-id="b5def-223">Dimension member ranges</span></span>   |                         |
 |-------------------|---------------------------|-------------------------|
-| **Uzly**         | **Od členu dimenze** | **Po člen dimenze** |
-| Chování nákladů     |                           |                         |
-| &nbsp;&nbsp;Pevné náklady    | 10001                     | 10011                   |
-|&nbsp;&nbsp;Variabilní náklady | 40001                     | 40010                   |
+| <span data-ttu-id="b5def-224">**Uzly**</span><span class="sxs-lookup"><span data-stu-id="b5def-224">**Nodes**</span></span>         | <span data-ttu-id="b5def-225">**Od členu dimenze**</span><span class="sxs-lookup"><span data-stu-id="b5def-225">**From dimension member**</span></span> | <span data-ttu-id="b5def-226">**Po člen dimenze**</span><span class="sxs-lookup"><span data-stu-id="b5def-226">**To dimension member**</span></span> |
+| <span data-ttu-id="b5def-227">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-227">Cost behavior</span></span>     |                           |                         |
+| <span data-ttu-id="b5def-228">&nbsp;&nbsp;Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="b5def-228">&nbsp;&nbsp;Fixed cost</span></span>    | <span data-ttu-id="b5def-229">10001</span><span class="sxs-lookup"><span data-stu-id="b5def-229">10001</span></span>                     | <span data-ttu-id="b5def-230">10011</span><span class="sxs-lookup"><span data-stu-id="b5def-230">10011</span></span>                   |
+|<span data-ttu-id="b5def-231">&nbsp;&nbsp;Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="b5def-231">&nbsp;&nbsp;Variable cost</span></span> | <span data-ttu-id="b5def-232">40001</span><span class="sxs-lookup"><span data-stu-id="b5def-232">40001</span></span>                     | <span data-ttu-id="b5def-233">40010</span><span class="sxs-lookup"><span data-stu-id="b5def-233">40010</span></span>                   |
 
 > [!NOTE]
-> Pod možností **Rozsahy členu dimenze** může uzel obsahovat 1:_n_ rozsahů členu dimenze. Můžete vložit ID členů dimenze, která ještě neexistují jako členy dimenze. Tento postup dělá hierarchii odolnou do budoucna.  
+> <span data-ttu-id="b5def-234">Pod možností **Rozsahy členu dimenze** může uzel obsahovat 1:_n_ rozsahů členu dimenze.</span><span class="sxs-lookup"><span data-stu-id="b5def-234">Under **Dimension member ranges**, a node can contain 1:_n_ dimension member ranges.</span></span> <span data-ttu-id="b5def-235">Můžete vložit ID členů dimenze, která ještě neexistují jako členy dimenze.</span><span class="sxs-lookup"><span data-stu-id="b5def-235">You can insert dimension member IDs that don’t yet exist as dimension members.</span></span> <span data-ttu-id="b5def-236">Tento postup dělá hierarchii odolnou do budoucna.</span><span class="sxs-lookup"><span data-stu-id="b5def-236">This approach makes the hierarchy resilient for the future.</span></span>  
 
-### <a name="copy-a-hierarchy"></a>Kopírování hierarchie
+### <a name="copy-a-hierarchy"></a><span data-ttu-id="b5def-237">Kopírování hierarchie</span><span class="sxs-lookup"><span data-stu-id="b5def-237">Copy a hierarchy</span></span>
 
-Aktuální hierarchii dimenzí můžete kopírovat jako výchozí bod pro novou hierarchii dimenzí. Tento přístup může být užitečný v případě, že chcete porovnat předchozí hierarchii dimenzí s novou hierarchií dimenzí.
+<span data-ttu-id="b5def-238">Aktuální hierarchii dimenzí můžete kopírovat jako výchozí bod pro novou hierarchii dimenzí.</span><span class="sxs-lookup"><span data-stu-id="b5def-238">You can copy a current dimension hierarchy as the starting point for a new dimension hierarchy.</span></span> <span data-ttu-id="b5def-239">Tento přístup může být užitečný v případě, že chcete porovnat předchozí hierarchii dimenzí s novou hierarchií dimenzí.</span><span class="sxs-lookup"><span data-stu-id="b5def-239">This approach can be useful if you want to compare the previous dimension hierarchy to the new dimension hierarchy.</span></span>
 
-### <a name="rearrange-nodes-in-a-hierarchy"></a>Změna uspořádání uzlů v hierarchii
+### <a name="rearrange-nodes-in-a-hierarchy"></a><span data-ttu-id="b5def-240">Změna uspořádání uzlů v hierarchii</span><span class="sxs-lookup"><span data-stu-id="b5def-240">Rearrange nodes in a hierarchy</span></span>
 
-Uzel lze přesunout nahoru nebo dolů v rámci jeho aktuální úrovně ve struktuře. Tímto způsobem můžete změnit uspořádání pořadí uzlů pro vykazování v pracovním prostoru **Řízení nákladů**.
+<span data-ttu-id="b5def-241">Uzel lze přesunout nahoru nebo dolů v rámci jeho aktuální úrovně ve struktuře.</span><span class="sxs-lookup"><span data-stu-id="b5def-241">You can move a node up and down within its current level in the structure.</span></span> <span data-ttu-id="b5def-242">Tímto způsobem můžete změnit uspořádání pořadí uzlů pro vykazování v pracovním prostoru **Řízení nákladů**.</span><span class="sxs-lookup"><span data-stu-id="b5def-242">In this way, you can rearrange the order of nodes for reporting in the **Cost control** workspace.</span></span>
 
-Přesun uzlu do nového umístění v hierarchii provedete volbou cílového uzlu. Existují dva způsoby přesunu uzlu:
+<span data-ttu-id="b5def-243">Přesun uzlu do nového umístění v hierarchii provedete volbou cílového uzlu.</span><span class="sxs-lookup"><span data-stu-id="b5def-243">You move a node to a new location in the hierarchy by selecting the target node.</span></span> <span data-ttu-id="b5def-244">Existují dva způsoby přesunu uzlu:</span><span class="sxs-lookup"><span data-stu-id="b5def-244">There are two ways to move a node:</span></span>
 
-- **Přesunout níže** – Přesuňte vybraný uzel z jeho aktuálního umístění v hierarchii a vložte ho **pod** zvolený cílový uzel.
-- **Přesunout za** – Přesuňte vybraný uzel z jeho aktuálního umístění v hierarchii a vložte ho **za** zvolený cílový uzel na jeho úrovni hierarchie.
+- <span data-ttu-id="b5def-245">**Přesunout níže** – Přesuňte vybraný uzel z jeho aktuálního umístění v hierarchii a vložte ho **pod** zvolený cílový uzel.</span><span class="sxs-lookup"><span data-stu-id="b5def-245">**Move below** – Move the selected node from its current position in the hierarchy, and insert it **under** the selected target node.</span></span>
+- <span data-ttu-id="b5def-246">**Přesunout za** – Přesuňte vybraný uzel z jeho aktuálního umístění v hierarchii a vložte ho **za** zvolený cílový uzel na jeho úrovni hierarchie.</span><span class="sxs-lookup"><span data-stu-id="b5def-246">**Move after** – Move the selected node from its current position in the hierarchy, and insert it **after** the selected target node at its level of the hierarchy.</span></span>
 
 > [!NOTE] 
-> Pořadí uzlů není zachováno při exportu dat do aplikace Excel nebo Power BI, protože tyto nástroje používají alfanumerické pořadí řazení jako výchozí. Řazení byste měli změnit ručně.
+> <span data-ttu-id="b5def-247">Pořadí uzlů není zachováno při exportu dat do aplikace Excel nebo Power BI, protože tyto nástroje používají alfanumerické pořadí řazení jako výchozí.</span><span class="sxs-lookup"><span data-stu-id="b5def-247">The order of the nodes isn't maintained when you export data to Excel or Power BI, because those tools use an alphanumeric sort order by default.</span></span> <span data-ttu-id="b5def-248">Řazení byste měli změnit ručně.</span><span class="sxs-lookup"><span data-stu-id="b5def-248">You should manually rearrange the order.</span></span>
 
-## <a name="define-dimension-hierarchies-for-reporting"></a>Definování hierarchie dimenzí pro vykazování
+## <a name="define-dimension-hierarchies-for-reporting"></a><span data-ttu-id="b5def-249">Definování hierarchie dimenzí pro vykazování</span><span class="sxs-lookup"><span data-stu-id="b5def-249">Define dimension hierarchies for reporting</span></span>
 
-Hierarchie dimenzí jsou důležité pro vykazování. Umožňují vám definovat konkrétní strukturu, která vyhovuje jednotlivým organizacím. Agregace uskutečněné na úrovni uzlu hierarchie dimenzí umožňují zúčastněným stranám na kterékoli úrovni organizace prohlížet data na všech úrovních.
+<span data-ttu-id="b5def-250">Hierarchie dimenzí jsou důležité pro vykazování.</span><span class="sxs-lookup"><span data-stu-id="b5def-250">Dimension hierarchies are important for reporting.</span></span> <span data-ttu-id="b5def-251">Umožňují vám definovat konkrétní strukturu, která vyhovuje jednotlivým organizacím.</span><span class="sxs-lookup"><span data-stu-id="b5def-251">They let you define the specific structure that fits into the individual organization.</span></span> <span data-ttu-id="b5def-252">Agregace uskutečněné na úrovni uzlu hierarchie dimenzí umožňují zúčastněným stranám na kterékoli úrovni organizace prohlížet data na všech úrovních.</span><span class="sxs-lookup"><span data-stu-id="b5def-252">The aggregations that are done at the node level of the dimension hierarchy let stakeholders at any level of the organization see data at any level.</span></span>
 
-Hierarchie dimenzí jsou k dispozici v následujících nástrojích pro vykazování. Tento přístup pomáhá zajistit soulad ve struktuře vykazování.
+<span data-ttu-id="b5def-253">Hierarchie dimenzí jsou k dispozici v následujících nástrojích pro vykazování.</span><span class="sxs-lookup"><span data-stu-id="b5def-253">Dimension hierarchies are available in the following reporting tools.</span></span> <span data-ttu-id="b5def-254">Tento přístup pomáhá zajistit soulad ve struktuře vykazování.</span><span class="sxs-lookup"><span data-stu-id="b5def-254">This approach helps guarantee consistency in the reporting structure.</span></span>
 
-- Pracovní prostor **Řízení nákladů** (klient):
+- <span data-ttu-id="b5def-255">Pracovní prostor **Řízení nákladů** (klient):</span><span class="sxs-lookup"><span data-stu-id="b5def-255">**Cost control** workspace (Client):</span></span>
 
-    - Řízeno konfigurací.
+    - <span data-ttu-id="b5def-256">Řízeno konfigurací.</span><span class="sxs-lookup"><span data-stu-id="b5def-256">Controlled by configuration.</span></span>
 
-- Pracovní prostor **Řízení nákladů** (mobilní aplikace):
+- <span data-ttu-id="b5def-257">Pracovní prostor **Řízení nákladů** (mobilní aplikace):</span><span class="sxs-lookup"><span data-stu-id="b5def-257">**Cost control** workspace (Mobile application):</span></span>
 
-    - Řízeno konfigurací.
+    - <span data-ttu-id="b5def-258">Řízeno konfigurací.</span><span class="sxs-lookup"><span data-stu-id="b5def-258">Controlled by configuration.</span></span>
 
-- Aplikace Excel
+- <span data-ttu-id="b5def-259">Aplikace Excel</span><span class="sxs-lookup"><span data-stu-id="b5def-259">Excel</span></span>
 
-    - Umožňuje vybrat hierarchie dimenzí specifické podle definice exportu:
+    - <span data-ttu-id="b5def-260">Umožňuje vybrat hierarchie dimenzí specifické podle definice exportu:</span><span class="sxs-lookup"><span data-stu-id="b5def-260">Provides the option to select specific dimension hierarchies per export definition:</span></span>
 
-        - Jedna hierarchie dimenze prvku nákladů (povinná)
-        - Jedna hierarchie dimenze objektu nákladů (volitelná)
-        - Jedna hierarchie statistické dimenze (volitelná)
+        - <span data-ttu-id="b5def-261">Jedna hierarchie dimenze prvku nákladů (povinná)</span><span class="sxs-lookup"><span data-stu-id="b5def-261">One cost element dimension hierarchy (mandatory)</span></span>
+        - <span data-ttu-id="b5def-262">Jedna hierarchie dimenze objektu nákladů (volitelná)</span><span class="sxs-lookup"><span data-stu-id="b5def-262">One cost object dimension hierarchy (optional)</span></span>
+        - <span data-ttu-id="b5def-263">Jedna hierarchie statistické dimenze (volitelná)</span><span class="sxs-lookup"><span data-stu-id="b5def-263">One statistical dimension hierarchy (optional)</span></span>
 
-- Power BI:
+- <span data-ttu-id="b5def-264">Power BI:</span><span class="sxs-lookup"><span data-stu-id="b5def-264">Power BI:</span></span>
 
-    - K dispozici jsou všechny hierarchie dimenzí.
+    - <span data-ttu-id="b5def-265">K dispozici jsou všechny hierarchie dimenzí.</span><span class="sxs-lookup"><span data-stu-id="b5def-265">All dimension hierarchies are available.</span></span>
     
-Při vytváření sestav pomocí aplikace Excel nebo Power BI bude exportováno pouze prvních 15 úrovní hierarchií dimenzí. Toto omezení existuje proto, že aplikace Excel a Power BI vyžadují pevné schéma. Má-li hierarchie více než 15 úrovní nebudou další úrovně exportovány. Normalizovaná tabulka obsahuje záznam pro každého člena dimenze v hierarchii. Proto dochází k automatické agregaci. Toto chování pomáhá zajistit, že zůstatky na všech 15 dostupných úrovních v hierarchii jsou stále správné.
+<span data-ttu-id="b5def-266">Při vytváření sestav pomocí aplikace Excel nebo Power BI bude exportováno pouze prvních 15 úrovní hierarchií dimenzí.</span><span class="sxs-lookup"><span data-stu-id="b5def-266">If you create reports by using Excel or Power BI, only the first 15 levels of the dimension hierarchies are exported.</span></span> <span data-ttu-id="b5def-267">Toto omezení existuje proto, že aplikace Excel a Power BI vyžadují pevné schéma.</span><span class="sxs-lookup"><span data-stu-id="b5def-267">This limitation exists because a fixed schema is required in Excel and Power BI.</span></span> <span data-ttu-id="b5def-268">Má-li hierarchie více než 15 úrovní nebudou další úrovně exportovány.</span><span class="sxs-lookup"><span data-stu-id="b5def-268">If a hierarchy has more than 15 levels, the additional levels won't be exported.</span></span> <span data-ttu-id="b5def-269">Normalizovaná tabulka obsahuje záznam pro každého člena dimenze v hierarchii.</span><span class="sxs-lookup"><span data-stu-id="b5def-269">The normalized table contains a record for each dimension member in the hierarchy.</span></span> <span data-ttu-id="b5def-270">Proto dochází k automatické agregaci.</span><span class="sxs-lookup"><span data-stu-id="b5def-270">Therefore, automated aggregation occurs.</span></span> <span data-ttu-id="b5def-271">Toto chování pomáhá zajistit, že zůstatky na všech 15 dostupných úrovních v hierarchii jsou stále správné.</span><span class="sxs-lookup"><span data-stu-id="b5def-271">This behavior helps guarantee that the balances at any of the 15 available levels in the hierarchy are still correct.</span></span>
 
-Následující příklad ukazuje, jak může hierarchie dimenzí vypadat ve struktuře vykazování.
+<span data-ttu-id="b5def-272">Následující příklad ukazuje, jak může hierarchie dimenzí vypadat ve struktuře vykazování.</span><span class="sxs-lookup"><span data-stu-id="b5def-272">The following example shows what a dimension hierarchy might look like in the reporting structure.</span></span>
 
-| Hierarchie dimenze objektu nákladů – Úroveň 1 | Hierarchie dimenze objektu nákladů – Úroveň 2 | Hierarchie dimenze objektu nákladů – Úroveň 3 | Hierarchie dimenze objektu nákladů – Úroveň 4 | Hierarchie dimenze objektu nákladů – Úroveň 15 |
+| <span data-ttu-id="b5def-273">Hierarchie dimenze objektu nákladů – Úroveň 1</span><span class="sxs-lookup"><span data-stu-id="b5def-273">Cost object dimension hierarchy – Level 1</span></span> | <span data-ttu-id="b5def-274">Hierarchie dimenze objektu nákladů – Úroveň 2</span><span class="sxs-lookup"><span data-stu-id="b5def-274">Cost object dimension hierarchy – Level 2</span></span> | <span data-ttu-id="b5def-275">Hierarchie dimenze objektu nákladů – Úroveň 3</span><span class="sxs-lookup"><span data-stu-id="b5def-275">Cost object dimension hierarchy – Level 3</span></span> | <span data-ttu-id="b5def-276">Hierarchie dimenze objektu nákladů – Úroveň 4</span><span class="sxs-lookup"><span data-stu-id="b5def-276">Cost object dimension hierarchy – Level 4</span></span> | <span data-ttu-id="b5def-277">Hierarchie dimenze objektu nákladů – Úroveň 15</span><span class="sxs-lookup"><span data-stu-id="b5def-277">Cost object dimension hierarchy – Level 15</span></span> |
 |-------------------------------------------|-------------------------------------------|-------------------------------------------|-------------------------------------------|--------------------------------------------|
-| Organizace                              | Správce                                     | Finance                                   | CC002                                     |                                            |
-| Organizace                              | Správce                                     | Finance                                   | CC003                                     |                                            |
-| Organizace                              | Správce                                     | Finance                                   | CC007                                     |                                            |
-| Organizace                              | Správce                                     | HR                                        | CC001                                     |                                            |
-| Organizace                              | Výroba                                | Balení                                 | CC005                                     |                                            |
-| Organizace                              | Výroba                                | Sestavení                                  | CC006                                     |                                            |
+| <span data-ttu-id="b5def-278">Organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-278">Organization</span></span>                              | <span data-ttu-id="b5def-279">Správce</span><span class="sxs-lookup"><span data-stu-id="b5def-279">Admin</span></span>                                     | <span data-ttu-id="b5def-280">Finance</span><span class="sxs-lookup"><span data-stu-id="b5def-280">Finance</span></span>                                   | <span data-ttu-id="b5def-281">CC002</span><span class="sxs-lookup"><span data-stu-id="b5def-281">CC002</span></span>                                     |                                            |
+| <span data-ttu-id="b5def-282">Organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-282">Organization</span></span>                              | <span data-ttu-id="b5def-283">Správce</span><span class="sxs-lookup"><span data-stu-id="b5def-283">Admin</span></span>                                     | <span data-ttu-id="b5def-284">Finance</span><span class="sxs-lookup"><span data-stu-id="b5def-284">Finance</span></span>                                   | <span data-ttu-id="b5def-285">CC003</span><span class="sxs-lookup"><span data-stu-id="b5def-285">CC003</span></span>                                     |                                            |
+| <span data-ttu-id="b5def-286">Organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-286">Organization</span></span>                              | <span data-ttu-id="b5def-287">Správce</span><span class="sxs-lookup"><span data-stu-id="b5def-287">Admin</span></span>                                     | <span data-ttu-id="b5def-288">Finance</span><span class="sxs-lookup"><span data-stu-id="b5def-288">Finance</span></span>                                   | <span data-ttu-id="b5def-289">CC007</span><span class="sxs-lookup"><span data-stu-id="b5def-289">CC007</span></span>                                     |                                            |
+| <span data-ttu-id="b5def-290">Organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-290">Organization</span></span>                              | <span data-ttu-id="b5def-291">Správce</span><span class="sxs-lookup"><span data-stu-id="b5def-291">Admin</span></span>                                     | <span data-ttu-id="b5def-292">HR</span><span class="sxs-lookup"><span data-stu-id="b5def-292">HR</span></span>                                        | <span data-ttu-id="b5def-293">CC001</span><span class="sxs-lookup"><span data-stu-id="b5def-293">CC001</span></span>                                     |                                            |
+| <span data-ttu-id="b5def-294">Organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-294">Organization</span></span>                              | <span data-ttu-id="b5def-295">Výroba</span><span class="sxs-lookup"><span data-stu-id="b5def-295">Production</span></span>                                | <span data-ttu-id="b5def-296">Balení</span><span class="sxs-lookup"><span data-stu-id="b5def-296">Packaging</span></span>                                 | <span data-ttu-id="b5def-297">CC005</span><span class="sxs-lookup"><span data-stu-id="b5def-297">CC005</span></span>                                     |                                            |
+| <span data-ttu-id="b5def-298">Organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-298">Organization</span></span>                              | <span data-ttu-id="b5def-299">Výroba</span><span class="sxs-lookup"><span data-stu-id="b5def-299">Production</span></span>                                | <span data-ttu-id="b5def-300">Sestavení</span><span class="sxs-lookup"><span data-stu-id="b5def-300">Assembly</span></span>                                  | <span data-ttu-id="b5def-301">CC006</span><span class="sxs-lookup"><span data-stu-id="b5def-301">CC006</span></span>                                     |                                            |
 
-### <a name="update-the-dimension-hierarchies-that-are-used-for-reporting"></a>Aktualizace hierarchií dimenzí, které se používají pro vykazování 
+### <a name="update-the-dimension-hierarchies-that-are-used-for-reporting"></a><span data-ttu-id="b5def-302">Aktualizace hierarchií dimenzí, které se používají pro vykazování</span><span class="sxs-lookup"><span data-stu-id="b5def-302">Update the dimension hierarchies that are used for reporting</span></span> 
 
-V průběhu času bude třeba aktualizovat hierarchie dimenzí, které se používají ve výše uvedených nástrojích pro vykazování. Hierarchie dimenzí lze aktualizovat obnovením klienta.
+<span data-ttu-id="b5def-303">V průběhu času bude třeba aktualizovat hierarchie dimenzí, které se používají ve výše uvedených nástrojích pro vykazování.</span><span class="sxs-lookup"><span data-stu-id="b5def-303">Over time, the dimension hierarchies that are used in the previously mentioned reporting tools will have to be updated.</span></span> <span data-ttu-id="b5def-304">Hierarchie dimenzí lze aktualizovat obnovením klienta.</span><span class="sxs-lookup"><span data-stu-id="b5def-304">You can update dimension hierarchies by refreshing the client.</span></span>
 
-- Pracovní prostor **Řízení nákladů** (klient)
-- Pracovní prostor **Řízení nákladů** (mobilní aplikace)
+- <span data-ttu-id="b5def-305">Pracovní prostor **Řízení nákladů** (klient)</span><span class="sxs-lookup"><span data-stu-id="b5def-305">**Cost control** workspace (Client)</span></span>
+- <span data-ttu-id="b5def-306">Pracovní prostor **Řízení nákladů** (mobilní aplikace)</span><span class="sxs-lookup"><span data-stu-id="b5def-306">**Cost control** workspace (Mobile application)</span></span>
 
-Aktualizace hierarchií dimenzí se vyzvedávají každých 24 hodin pomocí úlohy předem uložené do mezipaměti. Po aktualizaci exportovaných dat jsou aktualizované dimenze hierarchií k dispozici v následujících nástrojích:
+<span data-ttu-id="b5def-307">Aktualizace hierarchií dimenzí se vyzvedávají každých 24 hodin pomocí úlohy předem uložené do mezipaměti.</span><span class="sxs-lookup"><span data-stu-id="b5def-307">Updates to dimension hierarchies are picked up every 24 hours by a pre-cached job.</span></span> <span data-ttu-id="b5def-308">Po aktualizaci exportovaných dat jsou aktualizované dimenze hierarchií k dispozici v následujících nástrojích:</span><span class="sxs-lookup"><span data-stu-id="b5def-308">After the exported data is updated, the updated dimension hierarchies are available in the following tools:</span></span>
 
-- Aplikace Excel
-- Power BI
+- <span data-ttu-id="b5def-309">Aplikace Excel</span><span class="sxs-lookup"><span data-stu-id="b5def-309">Excel</span></span>
+- <span data-ttu-id="b5def-310">Power BI</span><span class="sxs-lookup"><span data-stu-id="b5def-310">Power BI</span></span>
 
 > [!NOTE] 
-> Chcete-li spustit ručně aktualizaci mezipaměti hierarchií dimenzí, můžete vytvořit nový export do aplikace Excel pro hierarchii dimenzí nebo hierarchie, které je třeba aktualizovat.
+> <span data-ttu-id="b5def-311">Chcete-li spustit ručně aktualizaci mezipaměti hierarchií dimenzí, můžete vytvořit nový export do aplikace Excel pro hierarchii dimenzí nebo hierarchie, které je třeba aktualizovat.</span><span class="sxs-lookup"><span data-stu-id="b5def-311">To manually trigger an update of the dimension hierarchy cache, you can create a new export to Excel for the dimension hierarchy or hierarchies that must be updated.</span></span>
 
-## <a name="define-dimension-hierarchies-for-cost-policies"></a>Definování hierarchie dimenzí pro zásady nákladů
+## <a name="define-dimension-hierarchies-for-cost-policies"></a><span data-ttu-id="b5def-312">Definování hierarchie dimenzí pro zásady nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-312">Define dimension hierarchies for cost policies</span></span>
 
-Nákladové účetnictví se skládá z několik zásada, kde jsou definována podrobná pravidla. Je nutné definovat jednu nebo více hierarchií dimenzí pro následující zásady:
+<span data-ttu-id="b5def-313">Nákladové účetnictví se skládá z několik zásada, kde jsou definována podrobná pravidla.</span><span class="sxs-lookup"><span data-stu-id="b5def-313">Cost accounting consists of multiple policies where detailed rules are defined.</span></span> <span data-ttu-id="b5def-314">Je nutné definovat jednu nebo více hierarchií dimenzí pro následující zásady:</span><span class="sxs-lookup"><span data-stu-id="b5def-314">You must define one or more dimension hierarchies for the following policies:</span></span>
 
-- Chování nákladů
-- Distribuce nákladů
-- Přidělení nákladů
-- Shrnutí nákladů
+- <span data-ttu-id="b5def-315">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-315">Cost behavior</span></span>
+- <span data-ttu-id="b5def-316">Distribuce nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-316">Cost distribution</span></span>
+- <span data-ttu-id="b5def-317">Přidělení nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-317">Cost allocation</span></span>
+- <span data-ttu-id="b5def-318">Shrnutí nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-318">Cost rollup</span></span>
 
-Hierarchie dimenzí usnadňují vytváření pravidel. Abyste nemuseli vytvořit pravidla pro jednotlivé členy dimenze, můžete využít agregací členů dimenze, které poskytují úrovně hierarchií dimenzí. Pokud máte překrývající se pravidla, je nutné definovat konkrétní pravidla, která systém zváží při provádění výpočtu režijních nákladů.
+<span data-ttu-id="b5def-319">Hierarchie dimenzí usnadňují vytváření pravidel.</span><span class="sxs-lookup"><span data-stu-id="b5def-319">Dimension hierarchies make it easy to create rules.</span></span> <span data-ttu-id="b5def-320">Abyste nemuseli vytvořit pravidla pro jednotlivé členy dimenze, můžete využít agregací členů dimenze, které poskytují úrovně hierarchií dimenzí.</span><span class="sxs-lookup"><span data-stu-id="b5def-320">To avoid having to create rules for every dimension member, you can take advantage of the aggregations of dimension members that are provided by dimension hierarchy levels.</span></span> <span data-ttu-id="b5def-321">Pokud máte překrývající se pravidla, je nutné definovat konkrétní pravidla, která systém zváží při provádění výpočtu režijních nákladů.</span><span class="sxs-lookup"><span data-stu-id="b5def-321">If you have overlapping rules, you must define specific rules that the system will consider when it does the overhead calculation.</span></span>
 
-### <a name="example-define-a-cost-behavior-policy"></a>Příklad: Definování zásad chování nákladů
+### <a name="example-define-a-cost-behavior-policy"></a><span data-ttu-id="b5def-322">Příklad: Definování zásad chování nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-322">Example: Define a cost behavior policy</span></span>
 
-Vytvoření nové zásady chování nákladové a hierarchie dimenzí odpovídající přiřazenou zásady, jak je uvedeno v tomto poli.
+<span data-ttu-id="b5def-323">Vytvoření nové zásady chování nákladové a hierarchie dimenzí odpovídající přiřazenou zásady, jak je uvedeno v tomto poli.</span><span class="sxs-lookup"><span data-stu-id="b5def-323">A new cost behavior policy is created, and appropriate dimension hierarchies are assigned to the policy, as shown here.</span></span>
 
-**Zásady chování nákladů**
+<span data-ttu-id="b5def-324">**Zásady chování nákladů**</span><span class="sxs-lookup"><span data-stu-id="b5def-324">**Cost behavior policy**</span></span>
 
-| Název zásady   | Hierarchie dimenze prvku nákladů | Hierarchie dimenze objektu nákladů | Zúčtovací měna |
+| <span data-ttu-id="b5def-325">Název zásady</span><span class="sxs-lookup"><span data-stu-id="b5def-325">Policy name</span></span>   | <span data-ttu-id="b5def-326">Hierarchie dimenze prvku nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-326">Cost element dimension hierarchy</span></span> | <span data-ttu-id="b5def-327">Hierarchie dimenze objektu nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-327">Cost object dimension hierarchy</span></span> | <span data-ttu-id="b5def-328">Zúčtovací měna</span><span class="sxs-lookup"><span data-stu-id="b5def-328">Accounting currency</span></span> |
 |---------------|----------------------------------|---------------------------------|---------------------|
-| Chování nákladů | Chování nákladů                    | Organizace                    | USD                 |
+| <span data-ttu-id="b5def-329">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-329">Cost behavior</span></span> | <span data-ttu-id="b5def-330">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-330">Cost behavior</span></span>                    | <span data-ttu-id="b5def-331">Organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-331">Organization</span></span>                    | <span data-ttu-id="b5def-332">USD</span><span class="sxs-lookup"><span data-stu-id="b5def-332">USD</span></span>                 |
 
-**Pravidla**
+<span data-ttu-id="b5def-333">**Pravidla**</span><span class="sxs-lookup"><span data-stu-id="b5def-333">**Rules**</span></span>
 
-| Uzel hierarchie dimenze prvku nákladů | Uzel hierarchie dimenze objektu nákladů | Pevné procento | Pevná částka | Platné od | Platné do |
+| <span data-ttu-id="b5def-334">Uzel hierarchie dimenze prvku nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-334">Cost element dimension hierarchy node</span></span> | <span data-ttu-id="b5def-335">Uzel hierarchie dimenze objektu nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-335">Cost object dimension hierarchy node</span></span> | <span data-ttu-id="b5def-336">Pevné procento</span><span class="sxs-lookup"><span data-stu-id="b5def-336">Fixed percentage</span></span> | <span data-ttu-id="b5def-337">Pevná částka</span><span class="sxs-lookup"><span data-stu-id="b5def-337">Fixed amount</span></span> | <span data-ttu-id="b5def-338">Platné od</span><span class="sxs-lookup"><span data-stu-id="b5def-338">Valid from</span></span> | <span data-ttu-id="b5def-339">Platné do</span><span class="sxs-lookup"><span data-stu-id="b5def-339">Valid to</span></span> |
 |---------------------------------------|--------------------------------------|------------------|--------------|------------|----------|
-| Pevné náklady                            | Organizace                         | 100,00           | 0,00         | 1. 1. 2017   | Nikdy    |
-| 10001                                 | Organizace                         | 0,00             | 150,00       | 1. 1. 2017   | Nikdy    |
-| 10001 (\*)                             | Finance                              |                  | 50,00        | 1. 1. 2017   | Nikdy    |
-| Chování nákladů nebo variabilní náklady (\*\*)   | Organizace                         | 0,00             | 0,00         | 1. 1. 2017   | Nikdy    |
+| <span data-ttu-id="b5def-340">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="b5def-340">Fixed cost</span></span>                            | <span data-ttu-id="b5def-341">Organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-341">Organization</span></span>                         | <span data-ttu-id="b5def-342">100,00</span><span class="sxs-lookup"><span data-stu-id="b5def-342">100.00</span></span>           | <span data-ttu-id="b5def-343">0,00</span><span class="sxs-lookup"><span data-stu-id="b5def-343">0.00</span></span>         | <span data-ttu-id="b5def-344">1. 1. 2017</span><span class="sxs-lookup"><span data-stu-id="b5def-344">1/1/2017</span></span>   | <span data-ttu-id="b5def-345">Nikdy</span><span class="sxs-lookup"><span data-stu-id="b5def-345">Never</span></span>    |
+| <span data-ttu-id="b5def-346">10001</span><span class="sxs-lookup"><span data-stu-id="b5def-346">10001</span></span>                                 | <span data-ttu-id="b5def-347">Organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-347">Organization</span></span>                         | <span data-ttu-id="b5def-348">0,00</span><span class="sxs-lookup"><span data-stu-id="b5def-348">0.00</span></span>             | <span data-ttu-id="b5def-349">150,00</span><span class="sxs-lookup"><span data-stu-id="b5def-349">150.00</span></span>       | <span data-ttu-id="b5def-350">1. 1. 2017</span><span class="sxs-lookup"><span data-stu-id="b5def-350">1/1/2017</span></span>   | <span data-ttu-id="b5def-351">Nikdy</span><span class="sxs-lookup"><span data-stu-id="b5def-351">Never</span></span>    |
+| <span data-ttu-id="b5def-352">10001 (\*)</span><span class="sxs-lookup"><span data-stu-id="b5def-352">10001 (\*)</span></span>                             | <span data-ttu-id="b5def-353">Finance</span><span class="sxs-lookup"><span data-stu-id="b5def-353">Finance</span></span>                              |                  | <span data-ttu-id="b5def-354">50,00</span><span class="sxs-lookup"><span data-stu-id="b5def-354">50.00</span></span>        | <span data-ttu-id="b5def-355">1. 1. 2017</span><span class="sxs-lookup"><span data-stu-id="b5def-355">1/1/2017</span></span>   | <span data-ttu-id="b5def-356">Nikdy</span><span class="sxs-lookup"><span data-stu-id="b5def-356">Never</span></span>    |
+| <span data-ttu-id="b5def-357">Chování nákladů nebo variabilní náklady (\*\*)</span><span class="sxs-lookup"><span data-stu-id="b5def-357">Cost behavior or Variable cost (\*\*)</span></span>   | <span data-ttu-id="b5def-358">Organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-358">Organization</span></span>                         | <span data-ttu-id="b5def-359">0,00</span><span class="sxs-lookup"><span data-stu-id="b5def-359">0.00</span></span>             | <span data-ttu-id="b5def-360">0,00</span><span class="sxs-lookup"><span data-stu-id="b5def-360">0.00</span></span>         | <span data-ttu-id="b5def-361">1. 1. 2017</span><span class="sxs-lookup"><span data-stu-id="b5def-361">1/1/2017</span></span>   | <span data-ttu-id="b5def-362">Nikdy</span><span class="sxs-lookup"><span data-stu-id="b5def-362">Never</span></span>    |
 
-\* Není požadován uzel variabilních nákladů. Pokud nejsou náklady klasifikovány jako pevné náklady, musí se jednat o variabilní náklady.
+<span data-ttu-id="b5def-363">\* Není požadován uzel variabilních nákladů.</span><span class="sxs-lookup"><span data-stu-id="b5def-363">\* The variable cost node isn't required.</span></span> <span data-ttu-id="b5def-364">Pokud nejsou náklady klasifikovány jako pevné náklady, musí se jednat o variabilní náklady.</span><span class="sxs-lookup"><span data-stu-id="b5def-364">If a cost isn't classified as a fixed cost, it must be a variable cost.</span></span>
 
-\*\* Podrobné pravidlo je vytvořeno pro kombinaci člena prvku nákladů 10001 a všechny členy objektu nákladů agregované pod úrovní hierarchie Finance(CC002 CC003, CC007).
+<span data-ttu-id="b5def-365">\*\* Podrobné pravidlo je vytvořeno pro kombinaci člena prvku nákladů 10001 a všechny členy objektu nákladů agregované pod úrovní hierarchie Finance(CC002 CC003, CC007).</span><span class="sxs-lookup"><span data-stu-id="b5def-365">\*\* A detailed rule is created for the combination of cost element member 10001 and all cost object members that are aggregated under the Finance hierarchy level (CC002, CC003, CC007).</span></span>
 
-Předchozí pravidla zobrazují flexibilitu, kterou hierarchie dimenzí poskytují. Definováním pravidel vysoké úrovně pomáháte minimalizovat údržbu. Poté lze definovat pravidla tak, aby vyhovovala konkrétnímu obchodnímu cíli.
+<span data-ttu-id="b5def-366">Předchozí pravidla zobrazují flexibilitu, kterou hierarchie dimenzí poskytují.</span><span class="sxs-lookup"><span data-stu-id="b5def-366">The preceding rules show the flexibility that dimension hierarchies provide.</span></span> <span data-ttu-id="b5def-367">Definováním pravidel vysoké úrovně pomáháte minimalizovat údržbu.</span><span class="sxs-lookup"><span data-stu-id="b5def-367">By defining high-level rules, you can help minimize maintenance.</span></span> <span data-ttu-id="b5def-368">Poté lze definovat pravidla tak, aby vyhovovala konkrétnímu obchodnímu cíli.</span><span class="sxs-lookup"><span data-stu-id="b5def-368">You can then define detailed rules to fit into a specific business objective.</span></span>
 
-Když se hierarchie dimenzí, které se používají v pravidlech, aktualizují, systém automaticky posune aktualizace dopředu.
+<span data-ttu-id="b5def-369">Když se hierarchie dimenzí, které se používají v pravidlech, aktualizují, systém automaticky posune aktualizace dopředu.</span><span class="sxs-lookup"><span data-stu-id="b5def-369">If the dimension hierarchies that are used in rules are updated, the system automatically brings the updates forward.</span></span>
 
-Pokud není úroveň rozlišení v pravidlech již nadále požadováno, můžete platnost pravidla vypršet.
+<span data-ttu-id="b5def-370">Pokud není úroveň rozlišení v pravidlech již nadále požadováno, můžete platnost pravidla vypršet.</span><span class="sxs-lookup"><span data-stu-id="b5def-370">If a level of granularity in the rules is no longer required, the rule can be expired.</span></span>
 
-Například konkrétní pravidlo chování nákladů pro uzel hierarchie dimenzí objektu nákladů Finance již není nadále požadováno. V tomto případě klikněte na tlačítko **Vypršení platnosti pravidla** a platnost pravidla skončí.
+<span data-ttu-id="b5def-371">Například konkrétní pravidlo chování nákladů pro uzel hierarchie dimenzí objektu nákladů Finance již není nadále požadováno.</span><span class="sxs-lookup"><span data-stu-id="b5def-371">For example, a specific cost behavior rule for the Finance cost object dimension hierarchy node is no longer required.</span></span> <span data-ttu-id="b5def-372">V tomto případě klikněte na tlačítko **Vypršení platnosti pravidla** a platnost pravidla skončí.</span><span class="sxs-lookup"><span data-stu-id="b5def-372">In this case, click **Expire rule** to expire the rule.</span></span>
 
-| Uzel hierarchie dimenze prvku nákladů | Uzel hierarchie dimenze objektu nákladů | Pevné procento | Pevná částka | Platné od | Platné do  |
+| <span data-ttu-id="b5def-373">Uzel hierarchie dimenze prvku nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-373">Cost element dimension hierarchy node</span></span> | <span data-ttu-id="b5def-374">Uzel hierarchie dimenze objektu nákladů</span><span class="sxs-lookup"><span data-stu-id="b5def-374">Cost object dimension hierarchy node</span></span> | <span data-ttu-id="b5def-375">Pevné procento</span><span class="sxs-lookup"><span data-stu-id="b5def-375">Fixed percentage</span></span> | <span data-ttu-id="b5def-376">Pevná částka</span><span class="sxs-lookup"><span data-stu-id="b5def-376">Fixed amount</span></span> | <span data-ttu-id="b5def-377">Platné od</span><span class="sxs-lookup"><span data-stu-id="b5def-377">Valid from</span></span> | <span data-ttu-id="b5def-378">Platné do</span><span class="sxs-lookup"><span data-stu-id="b5def-378">Valid to</span></span>  |
 |---------------------------------------|--------------------------------------|------------------|--------------|------------|-----------|
-| Pevné náklady                            | Organizace                         | 100,00           | 0,00         | 1. 1. 2017   | Nikdy     |
-| 10001                                 | Organizace                         | 0,00             | 150,00       | 1. 1. 2017   | Nikdy     |
-| 10001                                 | Finance                              |                  | 50,00        | 1. 1. 2017   | 20. 1. 2017 |
-| Chování nákladů nebo variabilní náklady        | Organizace                         | 0,00             | 0,00         | 1. 1. 2017   | Nikdy     |
+| <span data-ttu-id="b5def-379">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="b5def-379">Fixed cost</span></span>                            | <span data-ttu-id="b5def-380">Organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-380">Organization</span></span>                         | <span data-ttu-id="b5def-381">100,00</span><span class="sxs-lookup"><span data-stu-id="b5def-381">100,00</span></span>           | <span data-ttu-id="b5def-382">0,00</span><span class="sxs-lookup"><span data-stu-id="b5def-382">0,00</span></span>         | <span data-ttu-id="b5def-383">1. 1. 2017</span><span class="sxs-lookup"><span data-stu-id="b5def-383">1/1/2017</span></span>   | <span data-ttu-id="b5def-384">Nikdy</span><span class="sxs-lookup"><span data-stu-id="b5def-384">Never</span></span>     |
+| <span data-ttu-id="b5def-385">10001</span><span class="sxs-lookup"><span data-stu-id="b5def-385">10001</span></span>                                 | <span data-ttu-id="b5def-386">Organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-386">Organization</span></span>                         | <span data-ttu-id="b5def-387">0,00</span><span class="sxs-lookup"><span data-stu-id="b5def-387">0,00</span></span>             | <span data-ttu-id="b5def-388">150,00</span><span class="sxs-lookup"><span data-stu-id="b5def-388">150,00</span></span>       | <span data-ttu-id="b5def-389">1. 1. 2017</span><span class="sxs-lookup"><span data-stu-id="b5def-389">1/1/2017</span></span>   | <span data-ttu-id="b5def-390">Nikdy</span><span class="sxs-lookup"><span data-stu-id="b5def-390">Never</span></span>     |
+| <span data-ttu-id="b5def-391">10001</span><span class="sxs-lookup"><span data-stu-id="b5def-391">10001</span></span>                                 | <span data-ttu-id="b5def-392">Finance</span><span class="sxs-lookup"><span data-stu-id="b5def-392">Finance</span></span>                              |                  | <span data-ttu-id="b5def-393">50,00</span><span class="sxs-lookup"><span data-stu-id="b5def-393">50,00</span></span>        | <span data-ttu-id="b5def-394">1. 1. 2017</span><span class="sxs-lookup"><span data-stu-id="b5def-394">1/1/2017</span></span>   | <span data-ttu-id="b5def-395">20. 1. 2017</span><span class="sxs-lookup"><span data-stu-id="b5def-395">20/1/2017</span></span> |
+| <span data-ttu-id="b5def-396">Chování nákladů nebo variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="b5def-396">Cost behavior or Variable cost</span></span>        | <span data-ttu-id="b5def-397">Organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-397">Organization</span></span>                         | <span data-ttu-id="b5def-398">0,00</span><span class="sxs-lookup"><span data-stu-id="b5def-398">0,00</span></span>             | <span data-ttu-id="b5def-399">0,00</span><span class="sxs-lookup"><span data-stu-id="b5def-399">0,00</span></span>         | <span data-ttu-id="b5def-400">1. 1. 2017</span><span class="sxs-lookup"><span data-stu-id="b5def-400">1/1/2017</span></span>   | <span data-ttu-id="b5def-401">Nikdy</span><span class="sxs-lookup"><span data-stu-id="b5def-401">Never</span></span>     |
 
-Všechny výpočty režijních nákladů spuštěné po 20. lednu 2017 již toto pravidlo neberou v úvahu.
+<span data-ttu-id="b5def-402">Všechny výpočty režijních nákladů spuštěné po 20. lednu 2017 již toto pravidlo neberou v úvahu.</span><span class="sxs-lookup"><span data-stu-id="b5def-402">Any overhead calculation that is run after January 20, 2017, no longer considers this rule.</span></span>
 
 > [!NOTE] 
-> Pole **Platné od** a **platné do** platí od data a času. Můžete nechat vypršet platnost pravidla a ve stejný den spustit nový výpočet režijních nákladů.
+> <span data-ttu-id="b5def-403">Pole **Platné od** a **platné do** platí od data a času.</span><span class="sxs-lookup"><span data-stu-id="b5def-403">The **Valid from** and **Valid to** fields are date-effective and time-effective.</span></span> <span data-ttu-id="b5def-404">Můžete nechat vypršet platnost pravidla a ve stejný den spustit nový výpočet režijních nákladů.</span><span class="sxs-lookup"><span data-stu-id="b5def-404">You can expire the rule and run a new overhead calculation on the same day.</span></span>
 
-## <a name="define-dimension-hierarchies-for-security-setup"></a>Definování hierarchie dimenzí pro nastavení zabezpečení
+## <a name="define-dimension-hierarchies-for-security-setup"></a><span data-ttu-id="b5def-405">Definování hierarchie dimenzí pro nastavení zabezpečení</span><span class="sxs-lookup"><span data-stu-id="b5def-405">Define dimension hierarchies for security setup</span></span>
 
-Data nákladového účetnictví by měla být k dispozici pro všechny vedoucí pracovníky, kteří odpovídají za jednotku výkaznictví. V terminologii nákladového účetnictví představuje jednotka výkaznictví objektu nákladů nebo sadu objektů nákladů.
+<span data-ttu-id="b5def-406">Data nákladového účetnictví by měla být k dispozici pro všechny vedoucí pracovníky, kteří odpovídají za jednotku výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="b5def-406">Cost accounting data should be made available to all managers who are responsible for a reporting unit.</span></span> <span data-ttu-id="b5def-407">V terminologii nákladového účetnictví představuje jednotka výkaznictví objektu nákladů nebo sadu objektů nákladů.</span><span class="sxs-lookup"><span data-stu-id="b5def-407">In Cost accounting terminology, a reporting unit is represented as a cost object or a set of cost objects.</span></span>
 
-Všichni manažeři budou potenciálně mít přístup k vysoce citlivým obchodním datům, jako jsou výnosy a marže. Proto je důležité nastavit zabezpečení, aby vedoucí pracovníci mohli vidět pouze data, která jsou pro ně relevantní. K usnadnění kontroly zabezpečení dat definujete hierarchie dimenzí.
+<span data-ttu-id="b5def-408">Všichni manažeři budou potenciálně mít přístup k vysoce citlivým obchodním datům, jako jsou výnosy a marže.</span><span class="sxs-lookup"><span data-stu-id="b5def-408">Potentially, all managers will be able to access highly sensitive business data, such revenues and margins.</span></span> <span data-ttu-id="b5def-409">Proto je důležité nastavit zabezpečení, aby vedoucí pracovníci mohli vidět pouze data, která jsou pro ně relevantní.</span><span class="sxs-lookup"><span data-stu-id="b5def-409">Therefore, it's important that you set up security, so that managers see only the data that is relevant to them.</span></span> <span data-ttu-id="b5def-410">K usnadnění kontroly zabezpečení dat definujete hierarchie dimenzí.</span><span class="sxs-lookup"><span data-stu-id="b5def-410">To help control data security, you define dimension hierarchies.</span></span>
 
-- Použití hierarchie dimenzí platí pouze v případě, když je hodnota dimenze, která je vybrána v odkazu hierarchie dimenzí, dimenzí objektu nákladů.
-- Pro dimenzi objektu nákladů v hierarchii seznamu přístupu lze povolit pouze jednu dimenzi hierarchie.
+- <span data-ttu-id="b5def-411">Použití hierarchie dimenzí platí pouze v případě, když je hodnota dimenze, která je vybrána v odkazu hierarchie dimenzí, dimenzí objektu nákladů.</span><span class="sxs-lookup"><span data-stu-id="b5def-411">The use of dimension hierarchies applies only when the dimension value that is selected in the dimension hierarchy reference is a cost object dimension.</span></span>
+- <span data-ttu-id="b5def-412">Pro dimenzi objektu nákladů v hierarchii seznamu přístupu lze povolit pouze jednu dimenzi hierarchie.</span><span class="sxs-lookup"><span data-stu-id="b5def-412">Only one dimension hierarchy can be enabled per cost object dimension in the access list hierarchy.</span></span>
 
-**Podrobnosti hierarchie dimenze**
+<span data-ttu-id="b5def-413">**Podrobnosti hierarchie dimenze**</span><span class="sxs-lookup"><span data-stu-id="b5def-413">**Dimension hierarchy details**</span></span>
 
-| Název hierarchie dimenze | Dimenze    | Název typu hierarchie dimenze      | Hierarchie přístupového seznamu |
+| <span data-ttu-id="b5def-414">Název hierarchie dimenze</span><span class="sxs-lookup"><span data-stu-id="b5def-414">Dimension hierarchy name</span></span> | <span data-ttu-id="b5def-415">Dimenze</span><span class="sxs-lookup"><span data-stu-id="b5def-415">Dimension</span></span>    | <span data-ttu-id="b5def-416">Název typu hierarchie dimenze</span><span class="sxs-lookup"><span data-stu-id="b5def-416">Dimension hierarchy type name</span></span>      | <span data-ttu-id="b5def-417">Hierarchie přístupového seznamu</span><span class="sxs-lookup"><span data-stu-id="b5def-417">Access list hierarchy</span></span> |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organizace             | Nákladová střediska | Hierarchie klasifikace dimenzí | **Ano**               |
+| <span data-ttu-id="b5def-418">Organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-418">Organization</span></span>             | <span data-ttu-id="b5def-419">Nákladová střediska</span><span class="sxs-lookup"><span data-stu-id="b5def-419">Cost centers</span></span> | <span data-ttu-id="b5def-420">Hierarchie klasifikace dimenzí</span><span class="sxs-lookup"><span data-stu-id="b5def-420">Dimension classification hierarchy</span></span> | <span data-ttu-id="b5def-421">**Ano**</span><span class="sxs-lookup"><span data-stu-id="b5def-421">**Yes**</span></span>               |
 
-V návrháři hierarchie je k dispozici nová pevná záložka **Uživatelé**. Zde můžete vložit jedno nebo více ID uživatelů na každém uzlu v hierarchii.
+<span data-ttu-id="b5def-422">V návrháři hierarchie je k dispozici nová pevná záložka **Uživatelé**.</span><span class="sxs-lookup"><span data-stu-id="b5def-422">A new **Users** FastTab is available in the hierarchy designer.</span></span> <span data-ttu-id="b5def-423">Zde můžete vložit jedno nebo více ID uživatelů na každém uzlu v hierarchii.</span><span class="sxs-lookup"><span data-stu-id="b5def-423">Here, you can insert one or more user IDs at each node in the hierarchy.</span></span>
 
-|                 | Uživatelé            | Rozsahy členu dimenze   |                         |
+|                 | <span data-ttu-id="b5def-424">Uživatelé</span><span class="sxs-lookup"><span data-stu-id="b5def-424">Users</span></span>            | <span data-ttu-id="b5def-425">Rozsahy členu dimenze</span><span class="sxs-lookup"><span data-stu-id="b5def-425">Dimension member ranges</span></span>   |                         |
 |-----------------|------------------|---------------------------|-------------------------|
-| **Uzly**       | **ID uživatele**      | **Od členu dimenze** | **Po člen dimenze** |
-| Organizace    | Benjamin, Claire |                           |                         |
-| &nbsp;&nbsp;Správce         | Duben            |                           |                         |
-| &nbsp;&nbsp;&nbsp;&nbsp;Finance   | Alicia           | CC002                     | CC003                   |
-|                 |                  | CC007                     | CC007                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;HR        | Arnie            | CC001                     | CC001                   |
-| &nbsp;&nbsp;Výroba    | David            |                           |                         |
-| &nbsp;&nbsp;&nbsp;&nbsp;Balení | Ellen            | CC005                     | CC005                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;Sestavení  | Chris            | CC006                     | CC006                   |
+| <span data-ttu-id="b5def-426">**Uzly**</span><span class="sxs-lookup"><span data-stu-id="b5def-426">**Nodes**</span></span>       | <span data-ttu-id="b5def-427">**ID uživatele**</span><span class="sxs-lookup"><span data-stu-id="b5def-427">**User ID**</span></span>      | <span data-ttu-id="b5def-428">**Od členu dimenze**</span><span class="sxs-lookup"><span data-stu-id="b5def-428">**From dimension member**</span></span> | <span data-ttu-id="b5def-429">**Po člen dimenze**</span><span class="sxs-lookup"><span data-stu-id="b5def-429">**To dimension member**</span></span> |
+| <span data-ttu-id="b5def-430">Organizace</span><span class="sxs-lookup"><span data-stu-id="b5def-430">Organization</span></span>    | <span data-ttu-id="b5def-431">Benjamin, Claire</span><span class="sxs-lookup"><span data-stu-id="b5def-431">Benjamin, Claire</span></span> |                           |                         |
+| <span data-ttu-id="b5def-432">&nbsp;&nbsp;Správce</span><span class="sxs-lookup"><span data-stu-id="b5def-432">&nbsp;&nbsp;Admin</span></span>         | <span data-ttu-id="b5def-433">Duben</span><span class="sxs-lookup"><span data-stu-id="b5def-433">April</span></span>            |                           |                         |
+| <span data-ttu-id="b5def-434">&nbsp;&nbsp;&nbsp;&nbsp;Finance</span><span class="sxs-lookup"><span data-stu-id="b5def-434">&nbsp;&nbsp;&nbsp;&nbsp;Finance</span></span>   | <span data-ttu-id="b5def-435">Alicia</span><span class="sxs-lookup"><span data-stu-id="b5def-435">Alicia</span></span>           | <span data-ttu-id="b5def-436">CC002</span><span class="sxs-lookup"><span data-stu-id="b5def-436">CC002</span></span>                     | <span data-ttu-id="b5def-437">CC003</span><span class="sxs-lookup"><span data-stu-id="b5def-437">CC003</span></span>                   |
+|                 |                  | <span data-ttu-id="b5def-438">CC007</span><span class="sxs-lookup"><span data-stu-id="b5def-438">CC007</span></span>                     | <span data-ttu-id="b5def-439">CC007</span><span class="sxs-lookup"><span data-stu-id="b5def-439">CC007</span></span>                   |
+| <span data-ttu-id="b5def-440">&nbsp;&nbsp;&nbsp;&nbsp;HR</span><span class="sxs-lookup"><span data-stu-id="b5def-440">&nbsp;&nbsp;&nbsp;&nbsp;HR</span></span>        | <span data-ttu-id="b5def-441">Arnie</span><span class="sxs-lookup"><span data-stu-id="b5def-441">Arnie</span></span>            | <span data-ttu-id="b5def-442">CC001</span><span class="sxs-lookup"><span data-stu-id="b5def-442">CC001</span></span>                     | <span data-ttu-id="b5def-443">CC001</span><span class="sxs-lookup"><span data-stu-id="b5def-443">CC001</span></span>                   |
+| <span data-ttu-id="b5def-444">&nbsp;&nbsp;Výroba</span><span class="sxs-lookup"><span data-stu-id="b5def-444">&nbsp;&nbsp;Production</span></span>    | <span data-ttu-id="b5def-445">David</span><span class="sxs-lookup"><span data-stu-id="b5def-445">David</span></span>            |                           |                         |
+| <span data-ttu-id="b5def-446">&nbsp;&nbsp;&nbsp;&nbsp;Balení</span><span class="sxs-lookup"><span data-stu-id="b5def-446">&nbsp;&nbsp;&nbsp;&nbsp;Packaging</span></span> | <span data-ttu-id="b5def-447">Ellen</span><span class="sxs-lookup"><span data-stu-id="b5def-447">Ellen</span></span>            | <span data-ttu-id="b5def-448">CC005</span><span class="sxs-lookup"><span data-stu-id="b5def-448">CC005</span></span>                     | <span data-ttu-id="b5def-449">CC005</span><span class="sxs-lookup"><span data-stu-id="b5def-449">CC005</span></span>                   |
+| <span data-ttu-id="b5def-450">&nbsp;&nbsp;&nbsp;&nbsp;Sestavení</span><span class="sxs-lookup"><span data-stu-id="b5def-450">&nbsp;&nbsp;&nbsp;&nbsp;Assembly</span></span>  | <span data-ttu-id="b5def-451">Chris</span><span class="sxs-lookup"><span data-stu-id="b5def-451">Chris</span></span>            | <span data-ttu-id="b5def-452">CC006</span><span class="sxs-lookup"><span data-stu-id="b5def-452">CC006</span></span>                     | <span data-ttu-id="b5def-453">CC006</span><span class="sxs-lookup"><span data-stu-id="b5def-453">CC006</span></span>                   |
 
 > [!NOTE] 
-> Nákladoví účetní musí být přiřazeni do hierarchie nejvyšší úrovně, aby mohli nahlížet do všech položek nákladového účetnictví.
+> <span data-ttu-id="b5def-454">Nákladoví účetní musí být přiřazeni do hierarchie nejvyšší úrovně, aby mohli nahlížet do všech položek nákladového účetnictví.</span><span class="sxs-lookup"><span data-stu-id="b5def-454">Cost accountants should be assigned to the top level of the hierarchy, so that they can see all entries in Cost accounting.</span></span>
 
-Chcete-li povolit hierarchii seznamu přístupu a jeho nastavení zabezpečení, přejděte na **Nákladové účetnictví** > **Nastavení** > **Parametry** > **Obecné**. Zvolte parametr **Povolit přístup k zobrazení pro členy dimenze objektu nákladů**.
+<span data-ttu-id="b5def-455">Chcete-li povolit hierarchii seznamu přístupu a jeho nastavení zabezpečení, přejděte na **Nákladové účetnictví** > **Nastavení** > **Parametry** > **Obecné**.</span><span class="sxs-lookup"><span data-stu-id="b5def-455">To enable the access list hierarchy and its security settings, go to **Cost accounting** > **Setup** > **Parameters** > **General**.</span></span> <span data-ttu-id="b5def-456">Zvolte parametr **Povolit přístup k zobrazení pro členy dimenze objektu nákladů**.</span><span class="sxs-lookup"><span data-stu-id="b5def-456">Select the **Enable view access for cost object dimension members** parameter.</span></span>
 
-Nastavení pro hierarchii seznamu přístupu se používají ke kontrole dat, zobrazených v následujících oblastech:
+<span data-ttu-id="b5def-457">Nastavení pro hierarchii seznamu přístupu se používají ke kontrole dat, zobrazených v následujících oblastech:</span><span class="sxs-lookup"><span data-stu-id="b5def-457">The settings for the access list hierarchy are used to control the data that is shown in the following areas:</span></span>
 
-- Pracovní prostor **Řízení nákladů** (klient):
+- <span data-ttu-id="b5def-458">Pracovní prostor **Řízení nákladů** (klient):</span><span class="sxs-lookup"><span data-stu-id="b5def-458">**Cost control** workspace (Client):</span></span>
 
-    - Data ve formulářích, které se používají k procházení podrobností scénáře
+    - <span data-ttu-id="b5def-459">Data ve formulářích, které se používají k procházení podrobností scénáře</span><span class="sxs-lookup"><span data-stu-id="b5def-459">Data in forms that are used to drill through scenarios</span></span>
 
-- Pracovní prostor **Řízení nákladů** (mobilní aplikace):
+- <span data-ttu-id="b5def-460">Pracovní prostor **Řízení nákladů** (mobilní aplikace):</span><span class="sxs-lookup"><span data-stu-id="b5def-460">**Cost control** workspace (Mobile application):</span></span>
 
-    - Zůstatky na kartách
+    - <span data-ttu-id="b5def-461">Zůstatky na kartách</span><span class="sxs-lookup"><span data-stu-id="b5def-461">Balances in cards</span></span>
 
-- Power BI:
+- <span data-ttu-id="b5def-462">Power BI:</span><span class="sxs-lookup"><span data-stu-id="b5def-462">Power BI:</span></span>
 
-    - Data zobrazená ve vizualizacích Power BI
-    - Vizualizace dat Power BI, vložená do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, klient
+    - <span data-ttu-id="b5def-463">Data zobrazená ve vizualizacích Power BI</span><span class="sxs-lookup"><span data-stu-id="b5def-463">Data that is shown in Power BI visualizations</span></span>
+    - <span data-ttu-id="b5def-464">Vizualizace dat Power BI, vložená do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, klient</span><span class="sxs-lookup"><span data-stu-id="b5def-464">Data Power BI visualizations that are embedded in the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition client</span></span>
 
 > [!NOTE] 
-> - Než může hierarchie přístupového seznamu ovlivnit data v Power BI, musí být spárována hierarchie přístupového seznamu a zabezpečení na úrovni řádku v Power BI. Další informace naleznete v tématu [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).
-> - Hierarchie seznamu přístupu nepomáhá zabezpečit export dat do aplikace Excel. Z toho vyplývá, že nástroj pro vytváření sestav by měl být použit pouze nákladovými účetními a vedoucími pracovníky, kteří mají úplný přístup k zobrazení dat.
+> - <span data-ttu-id="b5def-465">Než může hierarchie přístupového seznamu ovlivnit data v Power BI, musí být spárována hierarchie přístupového seznamu a zabezpečení na úrovni řádku v Power BI.</span><span class="sxs-lookup"><span data-stu-id="b5def-465">Before the access list hierarchy can affect data in Power BI, access list hierarchy and row-level security in Power BI must be paired.</span></span> <span data-ttu-id="b5def-466">Další informace naleznete v tématu [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).</span><span class="sxs-lookup"><span data-stu-id="b5def-466">For more information, see [Set up security for Cost accounting content pack](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).</span></span>
+> - <span data-ttu-id="b5def-467">Hierarchie seznamu přístupu nepomáhá zabezpečit export dat do aplikace Excel.</span><span class="sxs-lookup"><span data-stu-id="b5def-467">The access list hierarchy doesn't help secure the export of data to Excel.</span></span> <span data-ttu-id="b5def-468">Z toho vyplývá, že nástroj pro vytváření sestav by měl být použit pouze nákladovými účetními a vedoucími pracovníky, kteří mají úplný přístup k zobrazení dat.</span><span class="sxs-lookup"><span data-stu-id="b5def-468">Therefore, that reporting tool should be used only by cost accountants and managers who must have full access to view the data.</span></span>
 

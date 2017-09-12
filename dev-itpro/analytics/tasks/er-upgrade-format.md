@@ -22,181 +22,181 @@ ms.contentlocale: cs-cz
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>Upgrade formátu přijetím nové základní verze tohoto formátu pro elektronické výkaznictví (ER)
+# <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a><span data-ttu-id="e6642-103">Upgrade formátu přijetím nové základní verze tohoto formátu pro elektronické výkaznictví (ER)</span><span class="sxs-lookup"><span data-stu-id="e6642-103">Upgrade your format by adopting of new base version of that format for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může spravovat konfiguraci formátu pro elektronické výkaznictví. Tento odstavec vysvětluje, jakým způsobem lze vytvořit vlastní verzi formátu na základě formátu přijatého od poskytovatele konfigurace. Také popisuje, jak přejmout novou základní verzi tohoto formátu.
+<span data-ttu-id="e6642-104">Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může spravovat konfiguraci formátu pro elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="e6642-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration.</span></span> <span data-ttu-id="e6642-105">Tento odstavec vysvětluje, jakým způsobem lze vytvořit vlastní verzi formátu na základě formátu přijatého od poskytovatele konfigurace.</span><span class="sxs-lookup"><span data-stu-id="e6642-105">This procedure explains how a custom version of a format can be created based on the format received from a configuration provider (CP).</span></span> <span data-ttu-id="e6642-106">Také popisuje, jak přejmout novou základní verzi tohoto formátu.</span><span class="sxs-lookup"><span data-stu-id="e6642-106">It also explains how to adopt a new, base version of that format.</span></span>
 
 
 
-K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postupech "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního" a "Použití vytvořeného formát pro generování elektronických dokumentů pro platby". Tyto kroky lze provést v rámci společnosti GBSI.
+<span data-ttu-id="e6642-107">K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postupech "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního" a "Použití vytvořeného formát pro generování elektronických dokumentů pro platby".</span><span class="sxs-lookup"><span data-stu-id="e6642-107">To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” and “Use created format to generate electronic documents for payments” procedures.</span></span> <span data-ttu-id="e6642-108">Tyto kroky lze provést v rámci společnosti GBSI.</span><span class="sxs-lookup"><span data-stu-id="e6642-108">These steps can be performed in the GBSI company.</span></span>
 
 
-## <a name="select-format-configuration-for-customization"></a>Výběr konfigurace formátu pro přizpůsobení
-1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
-    * V tomto příkladu bude vzorová společnost Litware, Inc. (http://www.litware.com) bude sloužit jako poskytovatel konfigurace, který podporuje konfiguraci formátu pro elektronické platby pro určitou zemi.    Vzorová společnost Proseware, Inc. (http://www.proseware.com) bude jednat jako příjemce konfigurace formátu, který Litware, Inc. poskytl. Proseware, Inc. používá formáty v určitých oblastech v zemi.  
-2. Klikněte na Konfigurace výkaznictví.
-3. Klepněte na tlačítko Zobrazit filtry.
-4. Použijte následující filtry: Do pole „Název" zadejte hodnotu filtru BACS (Velká Británie – fiktivní) a použijte operátor filtru „začíná na"
-    * BACS (Velká Británie – fiktivní)  
-    * Vybraná konfigurace formátu BACS (Velká Británie – fiktivní) je ve vlastnictví poskytovatele Litware, Inc.  
-5. Klepněte na tlačítko Zobrazit filtry.
-6. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-    * Verze formátu se stavem Dokončeno bude použita společností Proseware, Inc. pro přizpůsobení.  
+## <a name="select-format-configuration-for-customization"></a><span data-ttu-id="e6642-109">Výběr konfigurace formátu pro přizpůsobení</span><span class="sxs-lookup"><span data-stu-id="e6642-109">Select format configuration for customization</span></span>
+1. <span data-ttu-id="e6642-110">Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="e6642-110">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="e6642-111">V tomto příkladu bude vzorová společnost Litware, Inc. (http://www.litware.com) bude sloužit jako poskytovatel konfigurace, který podporuje konfiguraci formátu pro elektronické platby pro určitou zemi.</span><span class="sxs-lookup"><span data-stu-id="e6642-111">In this example, sample company Litware, Inc. (http://www.litware.com) will act as a configuration provider that supports format configurations for electronic payments for a particular country.</span></span>    <span data-ttu-id="e6642-112">Vzorová společnost Proseware, Inc. (http://www.proseware.com) bude jednat jako příjemce konfigurace formátu, který Litware, Inc. poskytl.</span><span class="sxs-lookup"><span data-stu-id="e6642-112">Sample company Proseware, Inc. (http://www.proseware.com) will act as a consumer of the format configuration that Litware, Inc. provided.</span></span> <span data-ttu-id="e6642-113">Proseware, Inc. používá formáty v určitých oblastech v zemi.</span><span class="sxs-lookup"><span data-stu-id="e6642-113">Proseware, Inc. uses formats in certain regions of that country.</span></span>  
+2. <span data-ttu-id="e6642-114">Klikněte na Konfigurace výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="e6642-114">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="e6642-115">Klepněte na tlačítko Zobrazit filtry.</span><span class="sxs-lookup"><span data-stu-id="e6642-115">Click Show filters.</span></span>
+4. <span data-ttu-id="e6642-116">Použijte následující filtry: Do pole „Název" zadejte hodnotu filtru BACS (Velká Británie – fiktivní) a použijte operátor filtru „začíná na"</span><span class="sxs-lookup"><span data-stu-id="e6642-116">Apply the following filters: Enter a filter value of "BACS (UK fictitious)" on the "Name" field using the "begins with" filter operator</span></span>
+    * <span data-ttu-id="e6642-117">BACS (Velká Británie – fiktivní)</span><span class="sxs-lookup"><span data-stu-id="e6642-117">BACS (UK fictitious)</span></span>  
+    * <span data-ttu-id="e6642-118">Vybraná konfigurace formátu BACS (Velká Británie – fiktivní) je ve vlastnictví poskytovatele Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="e6642-118">The selected format configuration BACS (UK fictitious) is owned by provider Litware, Inc.</span></span>  
+5. <span data-ttu-id="e6642-119">Klepněte na tlačítko Zobrazit filtry.</span><span class="sxs-lookup"><span data-stu-id="e6642-119">Click Show filters.</span></span>
+6. <span data-ttu-id="e6642-120">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="e6642-120">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="e6642-121">Verze formátu se stavem Dokončeno bude použita společností Proseware, Inc. pro přizpůsobení.</span><span class="sxs-lookup"><span data-stu-id="e6642-121">The version of the format with the status of Completed will be used by Proseware, Inc. for customization.</span></span>  
 
-## <a name="create-a-new-configuration-for-your-custom-format-of-electronic-document"></a>Vytvoření nové konfigurace pro vlastní formát elektronického dokumentu
-    * Proseware, Inc. přijala verzi 1.1 konfigurace BACS (Velká Británie – fiktivní), která obsahuje původní formát pro generování dokumentů elektronických plateb od společnosti Litware, Inc. v souladu se svým předplatným služby. Proseware, Inc. chce začít používat tuto konfiguraci jako standard pro svou zemi, ale pro splnění zvláštních místních požadavků jsou požadována některá přizpůsobení. Proseware, Inc. chce také udržovat možnost upgradu vlastního formátu ihned, jakmile je k dispozici její nová verze (se změnami pro soulad s novými požadavky specifickými pro zemi) od společnosti Litware, Inc. a chtějí provést tento upgrade s co nejnižší cenou.  Aby to bylo možné, Proseware, Inc., potřebuje vytvořit konfiguraci pomocí konfigurace Litware, Inc. BACS (Velká Británie – fiktivní) jako její základ.  
-1. Zavřete stránku.
-2. Vyberte Proseware, Inc. a nastavte ji jako aktivního zprostředkovatele.
-3. Klikněte na možnost Nastavit jako aktivní.
-4. Klikněte na Konfigurace výkaznictví.
-5. Ve stromovém zobrazení rozbalte možnost „Platby (zjednodušený model)“.
-6. Ve stromovém zobrazení vyberte možnost „Platby (zjednodušený model)\BACS (Velká Británie – fiktivní)“.
-    * VVyberte konfiguraci BACS (Velká Británie – fiktivní) od Litware, Inc.     Proseware, Inc. použije verzi 1.1 jako základ pro vlastní verzi.  
-7. Kliknutím na možnost Vytvořit konfiguraci otevřete dialogové okno.
-    * To vám umožňuje vytvořit novou konfiguraci pro vlastní formát platby.  
-8. Do pole Nový zadejte hodnotu „Odvodit z názvu: BACS (Velká Británie – fiktivní), Litware, Inc.“.
-    * Výběrem možnosti Odvodit můžete potvrdit použití formátu BACS (Velká Británie – fiktivní) jako základ pro vytváření vlastní verze.  
-9. Do pole Název zadejte „BACS (Velká Británie – fiktivní vlastní)“.
-    * BACS (Velká Británie – fiktivní vlastní)  
-10. Do pole Popis zadejte Platba dodavatele BACS (Velká Británie – fiktivní vlastní).
-    * Platba dodavatele BACS (Velká Británie – fiktivní vlastní)  
-    * Aktivní poskytovatel konfigurace (Proseware, Inc.) se zadá automaticky v tomto poli. Tento zprostředkovatel bude moci udržovat tuto konfiguraci. Jiní poskytovatelé mohou použít tuto konfiguraci, ale nebudou moci ji spravovat.  
-11. Klepněte na možnost Vytvořit konfiguraci.
+## <a name="create-a-new-configuration-for-your-custom-format-of-electronic-document"></a><span data-ttu-id="e6642-122">Vytvoření nové konfigurace pro vlastní formát elektronického dokumentu</span><span class="sxs-lookup"><span data-stu-id="e6642-122">Create a new configuration for your custom format of electronic document</span></span>
+    * <span data-ttu-id="e6642-123">Proseware, Inc. přijala verzi 1.1 konfigurace BACS (Velká Británie – fiktivní), která obsahuje původní formát pro generování dokumentů elektronických plateb od společnosti Litware, Inc. v souladu se svým předplatným služby.</span><span class="sxs-lookup"><span data-stu-id="e6642-123">Proseware, Inc. received version 1.1 of BACS (UK fictitious) configuration that contains the initial format to generate electronic payment documents from Litware, Inc. in accordance to their service subscription.</span></span> <span data-ttu-id="e6642-124">Proseware, Inc. chce začít používat tuto konfiguraci jako standard pro svou zemi, ale pro splnění zvláštních místních požadavků jsou požadována některá přizpůsobení.</span><span class="sxs-lookup"><span data-stu-id="e6642-124">Proseware, Inc. wants to start using this as a standard for their country but some customization is required to support specific regional requirements.</span></span> <span data-ttu-id="e6642-125">Proseware, Inc. chce také udržovat možnost upgradu vlastního formátu ihned, jakmile je k dispozici její nová verze (se změnami pro soulad s novými požadavky specifickými pro zemi) od společnosti Litware, Inc. a chtějí provést tento upgrade s co nejnižší cenou.</span><span class="sxs-lookup"><span data-stu-id="e6642-125">Proseware, Inc. also wants to keep the ability to upgrade a custom format as soon as a new version of it (with changes to support new country-specific requirements) comes from Litware, Inc. and they want to perform this upgrade with the lowest cost.</span></span>  <span data-ttu-id="e6642-126">Aby to bylo možné, Proseware, Inc., potřebuje vytvořit konfiguraci pomocí konfigurace Litware, Inc. BACS (Velká Británie – fiktivní) jako její základ.</span><span class="sxs-lookup"><span data-stu-id="e6642-126">To do this, Proseware, Inc. needs to create a configuration using the Litware, Inc. configuration BACS (UK fictitious) as a base.</span></span>  
+1. <span data-ttu-id="e6642-127">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e6642-127">Close the page.</span></span>
+2. <span data-ttu-id="e6642-128">Vyberte Proseware, Inc. a nastavte ji jako aktivního zprostředkovatele.</span><span class="sxs-lookup"><span data-stu-id="e6642-128">Select Proseware, Inc. to make it an active provider.</span></span>
+3. <span data-ttu-id="e6642-129">Klikněte na možnost Nastavit jako aktivní.</span><span class="sxs-lookup"><span data-stu-id="e6642-129">Click Set active.</span></span>
+4. <span data-ttu-id="e6642-130">Klikněte na Konfigurace výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="e6642-130">Click Reporting configurations.</span></span>
+5. <span data-ttu-id="e6642-131">Ve stromovém zobrazení rozbalte možnost „Platby (zjednodušený model)“.</span><span class="sxs-lookup"><span data-stu-id="e6642-131">In the tree, expand 'Payments (simplified model)'.</span></span>
+6. <span data-ttu-id="e6642-132">Ve stromovém zobrazení vyberte možnost „Platby (zjednodušený model)\BACS (Velká Británie – fiktivní)“.</span><span class="sxs-lookup"><span data-stu-id="e6642-132">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
+    * <span data-ttu-id="e6642-133">VVyberte konfiguraci BACS (Velká Británie – fiktivní) od Litware, Inc.     Proseware, Inc. použije verzi 1.1 jako základ pro vlastní verzi.</span><span class="sxs-lookup"><span data-stu-id="e6642-133">Select the BACS (UK fictitious) configuration from Litware, Inc.     Proseware, Inc. will use version 1.1 as a base for the custom version.</span></span>  
+7. <span data-ttu-id="e6642-134">Kliknutím na možnost Vytvořit konfiguraci otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="e6642-134">Click Create configuration to open the drop dialog.</span></span>
+    * <span data-ttu-id="e6642-135">To vám umožňuje vytvořit novou konfiguraci pro vlastní formát platby.</span><span class="sxs-lookup"><span data-stu-id="e6642-135">This lets you create a new configuration for a custom payment format.</span></span>  
+8. <span data-ttu-id="e6642-136">Do pole Nový zadejte hodnotu „Odvodit z názvu: BACS (Velká Británie – fiktivní), Litware, Inc.“.</span><span class="sxs-lookup"><span data-stu-id="e6642-136">In the New field, enter 'Derive from Name: BACS (UK fictitious), Litware, Inc.'.</span></span>
+    * <span data-ttu-id="e6642-137">Výběrem možnosti Odvodit můžete potvrdit použití formátu BACS (Velká Británie – fiktivní) jako základ pro vytváření vlastní verze.</span><span class="sxs-lookup"><span data-stu-id="e6642-137">Select the Derive option to confirm the usage of BACS (UK fictitious) as the base for creating the custom version.</span></span>  
+9. <span data-ttu-id="e6642-138">Do pole Název zadejte „BACS (Velká Británie – fiktivní vlastní)“.</span><span class="sxs-lookup"><span data-stu-id="e6642-138">In the Name field, type 'BACS (UK fictitious custom)'.</span></span>
+    * <span data-ttu-id="e6642-139">BACS (Velká Británie – fiktivní vlastní)</span><span class="sxs-lookup"><span data-stu-id="e6642-139">BACS (UK fictitious custom)</span></span>  
+10. <span data-ttu-id="e6642-140">Do pole Popis zadejte Platba dodavatele BACS (Velká Británie – fiktivní vlastní).</span><span class="sxs-lookup"><span data-stu-id="e6642-140">In the Description field, type 'BACS vendor payment (UK fictitious custom)'.</span></span>
+    * <span data-ttu-id="e6642-141">Platba dodavatele BACS (Velká Británie – fiktivní vlastní)</span><span class="sxs-lookup"><span data-stu-id="e6642-141">BACS vendor payment (UK fictitious custom)</span></span>  
+    * <span data-ttu-id="e6642-142">Aktivní poskytovatel konfigurace (Proseware, Inc.) se zadá automaticky v tomto poli.</span><span class="sxs-lookup"><span data-stu-id="e6642-142">The active configuration provider (Proseware, Inc.) is automatically entered here.</span></span> <span data-ttu-id="e6642-143">Tento zprostředkovatel bude moci udržovat tuto konfiguraci.</span><span class="sxs-lookup"><span data-stu-id="e6642-143">This provider will be able to maintain this configuration.</span></span> <span data-ttu-id="e6642-144">Jiní poskytovatelé mohou použít tuto konfiguraci, ale nebudou moci ji spravovat.</span><span class="sxs-lookup"><span data-stu-id="e6642-144">Other providers can use this configuration, but will not be able to maintain it.</span></span>  
+11. <span data-ttu-id="e6642-145">Klepněte na možnost Vytvořit konfiguraci.</span><span class="sxs-lookup"><span data-stu-id="e6642-145">Click Create configuration.</span></span>
 
-## <a name="customize-your-format-for-the-electronic-document"></a>Přizpůsobení formátu elektronického dokumentu
-1. Klikněte na možnost Návrhář.
-2. Klikněte na Rozbalit/sbalit.
-3. Klikněte na Rozbalit/sbalit.
-4. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel\Banka'.
-5. Klepnutím na možnost Přidat otevřete dialogové okno.
-6. Ve stromovém zobrazení vyberte „XML\Prvek“.
-7. Do pole Název zadejte IBAN.
-    * KÓD IBAN  
-8. Klikněte na tlačítko OK.
-9. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel\Banka\IBAN'.
-10. Klepnutím na možnost Přidat otevřete dialogové okno.
-11. Ve stromovém zobrazení vyberte „Text\Řetězec“.
-12. Klepněte na tlačítko OK.
-13. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel\Název\Řetězec'.
-14. Zadejte 60 do pole Maximální délka.
-15. Klikněte na kartu Mapování.
-16. Ve stromovém zobrazení rozbalte „model“.
-17. Ve stromovém zobrazení rozbalte „model\Platby“.
-18. Ve stromovém zobrazení rozbalte „model\Platby\Věřitel“.
-19. Ve stromovém zobrazení rozbalte „model\Platby\Věřitel\Účet“.
-20. Ve stromové struktuře vyberte 'model\Platby\Věřitel\Účet\IBAN'.
-21. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka =  model.Platby\Dodavatel\Banka\IBAN\Řetězec'.
-22. Klikněte na možnost Vazba.
-23. Klikněte na položku Uložit.
+## <a name="customize-your-format-for-the-electronic-document"></a><span data-ttu-id="e6642-146">Přizpůsobení formátu elektronického dokumentu</span><span class="sxs-lookup"><span data-stu-id="e6642-146">Customize your format for the electronic document</span></span>
+1. <span data-ttu-id="e6642-147">Klikněte na možnost Návrhář.</span><span class="sxs-lookup"><span data-stu-id="e6642-147">Click Designer.</span></span>
+2. <span data-ttu-id="e6642-148">Klikněte na Rozbalit/sbalit.</span><span class="sxs-lookup"><span data-stu-id="e6642-148">Click Expand/collapse.</span></span>
+3. <span data-ttu-id="e6642-149">Klikněte na Rozbalit/sbalit.</span><span class="sxs-lookup"><span data-stu-id="e6642-149">Click Expand/collapse.</span></span>
+4. <span data-ttu-id="e6642-150">Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel\Banka'.</span><span class="sxs-lookup"><span data-stu-id="e6642-150">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank'.</span></span>
+5. <span data-ttu-id="e6642-151">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="e6642-151">Click Add to open the drop dialog.</span></span>
+6. <span data-ttu-id="e6642-152">Ve stromovém zobrazení vyberte „XML\Prvek“.</span><span class="sxs-lookup"><span data-stu-id="e6642-152">In the tree, select 'XML\Element'.</span></span>
+7. <span data-ttu-id="e6642-153">Do pole Název zadejte IBAN.</span><span class="sxs-lookup"><span data-stu-id="e6642-153">In the Name field, type 'IBAN'.</span></span>
+    * <span data-ttu-id="e6642-154">KÓD IBAN</span><span class="sxs-lookup"><span data-stu-id="e6642-154">IBAN</span></span>  
+8. <span data-ttu-id="e6642-155">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e6642-155">Click OK.</span></span>
+9. <span data-ttu-id="e6642-156">Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel\Banka\IBAN'.</span><span class="sxs-lookup"><span data-stu-id="e6642-156">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\IBAN'.</span></span>
+10. <span data-ttu-id="e6642-157">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="e6642-157">Click Add to open the drop dialog.</span></span>
+11. <span data-ttu-id="e6642-158">Ve stromovém zobrazení vyberte „Text\Řetězec“.</span><span class="sxs-lookup"><span data-stu-id="e6642-158">In the tree, select 'Text\String'.</span></span>
+12. <span data-ttu-id="e6642-159">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e6642-159">Click OK.</span></span>
+13. <span data-ttu-id="e6642-160">Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel\Název\Řetězec'.</span><span class="sxs-lookup"><span data-stu-id="e6642-160">In the tree, select 'Xml\Message\Payments\Item\Vendor\Name\String'.</span></span>
+14. <span data-ttu-id="e6642-161">Zadejte 60 do pole Maximální délka.</span><span class="sxs-lookup"><span data-stu-id="e6642-161">In the Maximum length field, enter '60'.</span></span>
+15. <span data-ttu-id="e6642-162">Klikněte na kartu Mapování.</span><span class="sxs-lookup"><span data-stu-id="e6642-162">Click the Mapping tab.</span></span>
+16. <span data-ttu-id="e6642-163">Ve stromovém zobrazení rozbalte „model“.</span><span class="sxs-lookup"><span data-stu-id="e6642-163">In the tree, expand 'model'.</span></span>
+17. <span data-ttu-id="e6642-164">Ve stromovém zobrazení rozbalte „model\Platby“.</span><span class="sxs-lookup"><span data-stu-id="e6642-164">In the tree, expand 'model\Payments'.</span></span>
+18. <span data-ttu-id="e6642-165">Ve stromovém zobrazení rozbalte „model\Platby\Věřitel“.</span><span class="sxs-lookup"><span data-stu-id="e6642-165">In the tree, expand 'model\Payments\Creditor'.</span></span>
+19. <span data-ttu-id="e6642-166">Ve stromovém zobrazení rozbalte „model\Platby\Věřitel\Účet“.</span><span class="sxs-lookup"><span data-stu-id="e6642-166">In the tree, expand 'model\Payments\Creditor\Account'.</span></span>
+20. <span data-ttu-id="e6642-167">Ve stromové struktuře vyberte 'model\Platby\Věřitel\Účet\IBAN'.</span><span class="sxs-lookup"><span data-stu-id="e6642-167">In the tree, select 'model\Payments\Creditor\Account\IBAN'.</span></span>
+21. <span data-ttu-id="e6642-168">Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka =  model.Platby\Dodavatel\Banka\IBAN\Řetězec'.</span><span class="sxs-lookup"><span data-stu-id="e6642-168">In the tree, select 'Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\IBAN\String'.</span></span>
+22. <span data-ttu-id="e6642-169">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="e6642-169">Click Bind.</span></span>
+23. <span data-ttu-id="e6642-170">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e6642-170">Click Save.</span></span>
 
-## <a name="validate-the-customized-format"></a>Ověření přizpůsobeného formátu
-1. Klikněte na tlačítko Ověřit.
-    * Ověřte změny v přizpůsobeném rozvržení formátu a změnách v mapování dat a ujistěte se tak, že jsou všechny vazby v pořádku.  
-2. Zavřete stránku.
+## <a name="validate-the-customized-format"></a><span data-ttu-id="e6642-171">Ověření přizpůsobeného formátu</span><span class="sxs-lookup"><span data-stu-id="e6642-171">Validate the customized format</span></span>
+1. <span data-ttu-id="e6642-172">Klikněte na tlačítko Ověřit.</span><span class="sxs-lookup"><span data-stu-id="e6642-172">Click Validate.</span></span>
+    * <span data-ttu-id="e6642-173">Ověřte změny v přizpůsobeném rozvržení formátu a změnách v mapování dat a ujistěte se tak, že jsou všechny vazby v pořádku.</span><span class="sxs-lookup"><span data-stu-id="e6642-173">Validate the customized format layout and data mapping changes to make sure that all bindings are okay.</span></span>  
+2. <span data-ttu-id="e6642-174">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e6642-174">Close the page.</span></span>
 
-## <a name="change-the-status-of-the-current-version-of-the-custom-format-configuration"></a>Změna stavu aktuální verze vlastní konfigurace formátu
-    * Změňte stav navržené konfigurace formátu z Návrh na Dokončeno, aby byla konfigurace dostupná pro generování platebního dokumentu.  
-1. Klikněte na položku Změnit stav.
-    * Všimněte si, že je aktuální verze vybrané konfigurace ve stavu Koncept.  
-2. Klikněte na tlačítko Dokončit.
-3. Zadejte nějakou hodnotu do pole Popis.
-4. Klikněte na tlačítko OK.
-5. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-    * Všimněte si, že je vytvořená konfigurace uložena jako dokončená verze 1.1.1. To znamená, že se jedná o 1. verzi vlastního formátu BACS (Velká Británie – fiktivní vlastní), která je založena na 1. verzi formátu BACS (Velká Británie – fiktivní), která je založena na 1. verzi datového modelu Platby (zjednodušený model).  
+## <a name="change-the-status-of-the-current-version-of-the-custom-format-configuration"></a><span data-ttu-id="e6642-175">Změna stavu aktuální verze vlastní konfigurace formátu</span><span class="sxs-lookup"><span data-stu-id="e6642-175">Change the status of the current version of the custom format configuration</span></span>
+    * <span data-ttu-id="e6642-176">Změňte stav navržené konfigurace formátu z Návrh na Dokončeno, aby byla konfigurace dostupná pro generování platebního dokumentu.</span><span class="sxs-lookup"><span data-stu-id="e6642-176">Change the status of the designed format configuration from Draft to Completed to make it available for payment document generation.</span></span>  
+1. <span data-ttu-id="e6642-177">Klikněte na položku Změnit stav.</span><span class="sxs-lookup"><span data-stu-id="e6642-177">Click Change status.</span></span>
+    * <span data-ttu-id="e6642-178">Všimněte si, že je aktuální verze vybrané konfigurace ve stavu Koncept.</span><span class="sxs-lookup"><span data-stu-id="e6642-178">Note that the current version of the selected configuration is in Draft status.</span></span>  
+2. <span data-ttu-id="e6642-179">Klikněte na tlačítko Dokončit.</span><span class="sxs-lookup"><span data-stu-id="e6642-179">Click Complete.</span></span>
+3. <span data-ttu-id="e6642-180">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="e6642-180">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="e6642-181">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e6642-181">Click OK.</span></span>
+5. <span data-ttu-id="e6642-182">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="e6642-182">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="e6642-183">Všimněte si, že je vytvořená konfigurace uložena jako dokončená verze 1.1.1.</span><span class="sxs-lookup"><span data-stu-id="e6642-183">Note that the created configuration is saved as completed version 1.1.1.</span></span> <span data-ttu-id="e6642-184">To znamená, že se jedná o 1. verzi vlastního formátu BACS (Velká Británie – fiktivní vlastní), která je založena na 1. verzi formátu BACS (Velká Británie – fiktivní), která je založena na 1. verzi datového modelu Platby (zjednodušený model).</span><span class="sxs-lookup"><span data-stu-id="e6642-184">This means it is version 1 of the custom BACS (UK fictitious custom) format, which is based on version 1 of the BACS (UK fictitious) format, which is based on version 1 of the Payments (simplified model) data model.</span></span>  
 
-## <a name="test-the-customized-format-to-generate-payment-files"></a>Test vlastního formátu pro generování souborů plateb
-    * Postupujte podle kroků v postupu „Použití vytvořeného formátu pro generování elektronických dokumentů pro platby“ v rámci paralelní relace Dynamics 365 for Finance and Operations, edice Enterprise. Vyberte formát BACS (Velká Británie – fiktivní vlastní) v parametrech metody elektronické platby. Zkontrolujte, že vytvořený soubor platby obsahuje nedávno uvedený uzel XML představující kód IBAN v souladu s místními požadavky.  
+## <a name="test-the-customized-format-to-generate-payment-files"></a><span data-ttu-id="e6642-185">Test vlastního formátu pro generování souborů plateb</span><span class="sxs-lookup"><span data-stu-id="e6642-185">Test the customized format to generate payment files</span></span>
+    * <span data-ttu-id="e6642-186">Postupujte podle kroků v postupu „Použití vytvořeného formátu pro generování elektronických dokumentů pro platby“ v rámci paralelní relace Dynamics 365 for Finance and Operations, edice Enterprise.</span><span class="sxs-lookup"><span data-stu-id="e6642-186">Complete the steps in the “Use created format to generate electronic documents for payments” procedure in a parallel Dynamics 365 for Finance and Operations, Enterprise edition session.</span></span> <span data-ttu-id="e6642-187">Vyberte formát BACS (Velká Británie – fiktivní vlastní) v parametrech metody elektronické platby.</span><span class="sxs-lookup"><span data-stu-id="e6642-187">Select the BACS (UK fictitious custom) format in electronic payment method parameters.</span></span> <span data-ttu-id="e6642-188">Zkontrolujte, že vytvořený soubor platby obsahuje nedávno uvedený uzel XML představující kód IBAN v souladu s místními požadavky.</span><span class="sxs-lookup"><span data-stu-id="e6642-188">Make sure that the created payment file contains the recently introduced XML node presenting IBAN code in accordance to regional requirements.</span></span>  
 
-## <a name="update-the-existing-country-specific-configuration"></a>Aktualizace existující konfigurace specifické pro zemi
-    * Litware, Inc. musí aktualizovat konfiguraci BACS (Velká Británie – fiktivní) a přijmout nové požadavky země, aby mohla spravovat formát elektronického dokumentu. Později se toto stane součástí nové verze této konfigurace, která bude nabízena odběratelům služby, včetně společnosti Proseware, Inc.  
-    * Ve skutečném procesu poskytování služeb lze každou novou verzi BACS (Velká Británie – fiktivní) importovat společností Proseware, Inc. z úložiště souborů LCS poskytovatele Litware, Inc. V tomto procesu budeme simulovat tento krok aktualizováním BACS (Velká Británie – fiktivní) jménem poskytovatele služby.  
-1. Zavřete stránku.
-2. Vyberte Litware, Inc. Poskytovatel
-3. Klikněte na možnost Nastavit jako aktivní.
-4. Klikněte na Konfigurace výkaznictví.
-5. Ve stromovém zobrazení rozbalte možnost „Platby (zjednodušený model)“.
-6. Ve stromovém zobrazení vyberte možnost „Platby (zjednodušený model)\BACS (Velká Británie – fiktivní)“.
-    * Verze návrhu vlastněná poskytovatelem Litware, Inc. BACS (Velká Británie – fiktivní) bude zvolena pro zavedení změn podporujících nové požadavky specifické pro zemi.  
+## <a name="update-the-existing-country-specific-configuration"></a><span data-ttu-id="e6642-189">Aktualizace existující konfigurace specifické pro zemi</span><span class="sxs-lookup"><span data-stu-id="e6642-189">Update the existing country-specific configuration</span></span>
+    * <span data-ttu-id="e6642-190">Litware, Inc. musí aktualizovat konfiguraci BACS (Velká Británie – fiktivní) a přijmout nové požadavky země, aby mohla spravovat formát elektronického dokumentu.</span><span class="sxs-lookup"><span data-stu-id="e6642-190">Litware, Inc. needs to update the BACS (UK fictitious) configuration and adopt new country requirements for managing the format of the electronic document.</span></span> <span data-ttu-id="e6642-191">Později se toto stane součástí nové verze této konfigurace, která bude nabízena odběratelům služby, včetně společnosti Proseware, Inc.</span><span class="sxs-lookup"><span data-stu-id="e6642-191">Later, this will be enclosed in a new version of this configuration that will be offered for service subscribers, including Proseware, Inc.</span></span>  
+    * <span data-ttu-id="e6642-192">Ve skutečném procesu poskytování služeb lze každou novou verzi BACS (Velká Británie – fiktivní) importovat společností Proseware, Inc. z úložiště souborů LCS poskytovatele Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="e6642-192">In real service provision related processes, each new version of BACS (UK fictitious) can be imported by Proseware, Inc. from Litware, Inc. configurations’ LCS repository.</span></span> <span data-ttu-id="e6642-193">V tomto procesu budeme simulovat tento krok aktualizováním BACS (Velká Británie – fiktivní) jménem poskytovatele služby.</span><span class="sxs-lookup"><span data-stu-id="e6642-193">In this procedure we will simulate this by updating BACS (UK fictitious) on behalf of a service provider.</span></span>  
+1. <span data-ttu-id="e6642-194">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e6642-194">Close the page.</span></span>
+2. <span data-ttu-id="e6642-195">Vyberte Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="e6642-195">Select Litware, inc.</span></span> <span data-ttu-id="e6642-196">Poskytovatel</span><span class="sxs-lookup"><span data-stu-id="e6642-196">provider.</span></span>
+3. <span data-ttu-id="e6642-197">Klikněte na možnost Nastavit jako aktivní.</span><span class="sxs-lookup"><span data-stu-id="e6642-197">Click Set active.</span></span>
+4. <span data-ttu-id="e6642-198">Klikněte na Konfigurace výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="e6642-198">Click Reporting configurations.</span></span>
+5. <span data-ttu-id="e6642-199">Ve stromovém zobrazení rozbalte možnost „Platby (zjednodušený model)“.</span><span class="sxs-lookup"><span data-stu-id="e6642-199">In the tree, expand 'Payments (simplified model)'.</span></span>
+6. <span data-ttu-id="e6642-200">Ve stromovém zobrazení vyberte možnost „Platby (zjednodušený model)\BACS (Velká Británie – fiktivní)“.</span><span class="sxs-lookup"><span data-stu-id="e6642-200">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
+    * <span data-ttu-id="e6642-201">Verze návrhu vlastněná poskytovatelem Litware, Inc. BACS (Velká Británie – fiktivní) bude zvolena pro zavedení změn podporujících nové požadavky specifické pro zemi.</span><span class="sxs-lookup"><span data-stu-id="e6642-201">The draft version owned by Litware, Inc. provider BACS (UK fictitious) is selected to bring in changes to support new country-specific requirements.</span></span>  
 
-## <a name="localize-the-base-format-of-the-electronic-document"></a>Lokalizace základního formátu elektronického dokumentu
-    * Předpokládejme, že existují nové požadavky specifické pro zemi, pro které musí Litware, Inc. zajistit soulad: - Hodnota kódu SWIFT banky příjemce platby v každé platební transakci.  - Limit 100 znaků pro délku textu s názvem dodavatele při generování souboru.  
-    * Nové požadavky specifické pro zemi  
-    * Vyberte pracovní verzi požadované konfigurace pro zavedení požadovaných změn.  
-1. Klikněte na možnost Návrhář.
-2. Klikněte na Rozbalit/sbalit.
-3. Klikněte na Rozbalit/sbalit.
-4. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel\Banka'.
-5. Klepnutím na možnost Přidat otevřete dialogové okno.
-6. Ve stromovém zobrazení vyberte „XML\Prvek“.
-7. Do pole Název zadejte SWIFT.
-    * SWIFT  
-8. Klikněte na tlačítko OK.
-9. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel\Banka\SWIFT'.
-10. Klepnutím na možnost Přidat otevřete dialogové okno.
-11. Ve stromovém zobrazení vyberte „Text\Řetězec“.
-12. Klepněte na tlačítko OK.
-13. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel\Název\Řetězec'.
-14. Zadejte 100 do pole Maximální délka.
-15. Klikněte na kartu Mapování.
-16. Ve stromovém zobrazení rozbalte „model“.
-17. Ve stromovém zobrazení rozbalte „model\Platby“.
-18. Ve stromovém zobrazení rozbalte „model\Platby\Věřitel“.
-19. Ve stromovém zobrazení rozbalte „model\Platby\Věřitel\Zástupce“.
-20. Ve stromové struktuře vyberte 'model\Platby\Věřitel\Agent\SWIFT'.
-21. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka =  model.Platby\Dodavatel\Banka\SWIFT\String'.
-22. Klikněte na možnost Vazba.
-23. Klikněte na položku Uložit.
+## <a name="localize-the-base-format-of-the-electronic-document"></a><span data-ttu-id="e6642-202">Lokalizace základního formátu elektronického dokumentu</span><span class="sxs-lookup"><span data-stu-id="e6642-202">Localize the base format of the electronic document</span></span>
+    * <span data-ttu-id="e6642-203">Předpokládejme, že existují nové požadavky specifické pro zemi, pro které musí Litware, Inc. zajistit soulad: - Hodnota kódu SWIFT banky příjemce platby v každé platební transakci.</span><span class="sxs-lookup"><span data-stu-id="e6642-203">Assume that there are new country-specific requirements to be supported by Litware, Inc.:  - A value for the creditor’s bank SWIFT code in each payment transaction.</span></span>  <span data-ttu-id="e6642-204">- Limit 100 znaků pro délku textu s názvem dodavatele při generování souboru.</span><span class="sxs-lookup"><span data-stu-id="e6642-204">- A limit of 100 characters for the length of text for the vendor’s name in a generating file.</span></span>  
+    * <span data-ttu-id="e6642-205">Nové požadavky specifické pro zemi</span><span class="sxs-lookup"><span data-stu-id="e6642-205">New country-specific requirements</span></span>  
+    * <span data-ttu-id="e6642-206">Vyberte pracovní verzi požadované konfigurace pro zavedení požadovaných změn.</span><span class="sxs-lookup"><span data-stu-id="e6642-206">Select the draft version of the desired configuration to introduce required changes.</span></span>  
+1. <span data-ttu-id="e6642-207">Klikněte na možnost Návrhář.</span><span class="sxs-lookup"><span data-stu-id="e6642-207">Click Designer.</span></span>
+2. <span data-ttu-id="e6642-208">Klikněte na Rozbalit/sbalit.</span><span class="sxs-lookup"><span data-stu-id="e6642-208">Click Expand/collapse.</span></span>
+3. <span data-ttu-id="e6642-209">Klikněte na Rozbalit/sbalit.</span><span class="sxs-lookup"><span data-stu-id="e6642-209">Click Expand/collapse.</span></span>
+4. <span data-ttu-id="e6642-210">Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel\Banka'.</span><span class="sxs-lookup"><span data-stu-id="e6642-210">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank'.</span></span>
+5. <span data-ttu-id="e6642-211">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="e6642-211">Click Add to open the drop dialog.</span></span>
+6. <span data-ttu-id="e6642-212">Ve stromovém zobrazení vyberte „XML\Prvek“.</span><span class="sxs-lookup"><span data-stu-id="e6642-212">In the tree, select 'XML\Element'.</span></span>
+7. <span data-ttu-id="e6642-213">Do pole Název zadejte SWIFT.</span><span class="sxs-lookup"><span data-stu-id="e6642-213">In the Name field, type 'SWIFT'.</span></span>
+    * <span data-ttu-id="e6642-214">SWIFT</span><span class="sxs-lookup"><span data-stu-id="e6642-214">SWIFT</span></span>  
+8. <span data-ttu-id="e6642-215">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e6642-215">Click OK.</span></span>
+9. <span data-ttu-id="e6642-216">Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel\Banka\SWIFT'.</span><span class="sxs-lookup"><span data-stu-id="e6642-216">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\SWIFT'.</span></span>
+10. <span data-ttu-id="e6642-217">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="e6642-217">Click Add to open the drop dialog.</span></span>
+11. <span data-ttu-id="e6642-218">Ve stromovém zobrazení vyberte „Text\Řetězec“.</span><span class="sxs-lookup"><span data-stu-id="e6642-218">In the tree, select 'Text\String'.</span></span>
+12. <span data-ttu-id="e6642-219">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e6642-219">Click OK.</span></span>
+13. <span data-ttu-id="e6642-220">Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel\Název\Řetězec'.</span><span class="sxs-lookup"><span data-stu-id="e6642-220">In the tree, select 'Xml\Message\Payments\Item\Vendor\Name\String'.</span></span>
+14. <span data-ttu-id="e6642-221">Zadejte 100 do pole Maximální délka.</span><span class="sxs-lookup"><span data-stu-id="e6642-221">In the Maximum length field, enter '100'.</span></span>
+15. <span data-ttu-id="e6642-222">Klikněte na kartu Mapování.</span><span class="sxs-lookup"><span data-stu-id="e6642-222">Click the Mapping tab.</span></span>
+16. <span data-ttu-id="e6642-223">Ve stromovém zobrazení rozbalte „model“.</span><span class="sxs-lookup"><span data-stu-id="e6642-223">In the tree, expand 'model'.</span></span>
+17. <span data-ttu-id="e6642-224">Ve stromovém zobrazení rozbalte „model\Platby“.</span><span class="sxs-lookup"><span data-stu-id="e6642-224">In the tree, expand 'model\Payments'.</span></span>
+18. <span data-ttu-id="e6642-225">Ve stromovém zobrazení rozbalte „model\Platby\Věřitel“.</span><span class="sxs-lookup"><span data-stu-id="e6642-225">In the tree, expand 'model\Payments\Creditor'.</span></span>
+19. <span data-ttu-id="e6642-226">Ve stromovém zobrazení rozbalte „model\Platby\Věřitel\Zástupce“.</span><span class="sxs-lookup"><span data-stu-id="e6642-226">In the tree, expand 'model\Payments\Creditor\Agent'.</span></span>
+20. <span data-ttu-id="e6642-227">Ve stromové struktuře vyberte 'model\Platby\Věřitel\Agent\SWIFT'.</span><span class="sxs-lookup"><span data-stu-id="e6642-227">In the tree, select 'model\Payments\Creditor\Agent\SWIFT'.</span></span>
+21. <span data-ttu-id="e6642-228">Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka =  model.Platby\Dodavatel\Banka\SWIFT\String'.</span><span class="sxs-lookup"><span data-stu-id="e6642-228">In the tree, select 'Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\SWIFT\String'.</span></span>
+22. <span data-ttu-id="e6642-229">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="e6642-229">Click Bind.</span></span>
+23. <span data-ttu-id="e6642-230">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e6642-230">Click Save.</span></span>
 
-## <a name="validate-the-localized-format"></a>Ověření lokalizovaného formátu
-1. Klikněte na tlačítko Ověřit.
-2. Zavřete stránku.
+## <a name="validate-the-localized-format"></a><span data-ttu-id="e6642-231">Ověření lokalizovaného formátu</span><span class="sxs-lookup"><span data-stu-id="e6642-231">Validate the localized format</span></span>
+1. <span data-ttu-id="e6642-232">Klikněte na tlačítko Ověřit.</span><span class="sxs-lookup"><span data-stu-id="e6642-232">Click Validate.</span></span>
+2. <span data-ttu-id="e6642-233">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e6642-233">Close the page.</span></span>
 
-## <a name="change-the-status-of-the-current-version-of-the-base-format-configuration"></a>Změna stavu aktuální verze konfigurace základního formátu
-    * Změňte stav aktualizované konfigurace základní formátu z Návrh na Dokončeno, aby byla k dispozici pro generování platebních dokladů a aktualizace konfigurace formátu, které jsou od ní odvozeny.  
-1. Klikněte na položku Změnit stav.
-    * Všimněte si, že je aktuální verze vybrané konfigurace ve stavu Koncept.  
-2. Klikněte na tlačítko Dokončit.
-3. Zadejte nějakou hodnotu do pole Popis.
-4. Klikněte na tlačítko OK.
-5. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
+## <a name="change-the-status-of-the-current-version-of-the-base-format-configuration"></a><span data-ttu-id="e6642-234">Změna stavu aktuální verze konfigurace základního formátu</span><span class="sxs-lookup"><span data-stu-id="e6642-234">Change the status of the current version of the base format configuration</span></span>
+    * <span data-ttu-id="e6642-235">Změňte stav aktualizované konfigurace základní formátu z Návrh na Dokončeno, aby byla k dispozici pro generování platebních dokladů a aktualizace konfigurace formátu, které jsou od ní odvozeny.</span><span class="sxs-lookup"><span data-stu-id="e6642-235">Change the status of the updated base format configuration from Draft to Completed to make it available for generation of payment documents and updates of format configurations derived from it.</span></span>  
+1. <span data-ttu-id="e6642-236">Klikněte na položku Změnit stav.</span><span class="sxs-lookup"><span data-stu-id="e6642-236">Click Change status.</span></span>
+    * <span data-ttu-id="e6642-237">Všimněte si, že je aktuální verze vybrané konfigurace ve stavu Koncept.</span><span class="sxs-lookup"><span data-stu-id="e6642-237">Note that the current version of the selected configuration is in Draft status.</span></span>  
+2. <span data-ttu-id="e6642-238">Klikněte na tlačítko Dokončit.</span><span class="sxs-lookup"><span data-stu-id="e6642-238">Click Complete.</span></span>
+3. <span data-ttu-id="e6642-239">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="e6642-239">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="e6642-240">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e6642-240">Click OK.</span></span>
+5. <span data-ttu-id="e6642-241">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="e6642-241">In the list, find and select the desired record.</span></span>
 
-## <a name="change-the-base-version-for-the-custom-format-configuration"></a>Změna základní verze konfigurace vlastního formátu
-    * Proseware, Inc. je informován, že je k dispozici nová verze 1.2 konfigurace BACS (Velká Británie – fiktivní) pro generování dokumentů elektronických plateb podle naposledy ohlášených požadavků specifických pro zemi. Proseware, Inc. chce začít ji používat jako standard pro danou zemi.  Aby to bylo možné, Proseware, Inc. musí změnit základní verzi konfigurace pro vlastní konfiguraci BACS (Velká Británie – fiktivní vlastní). Namísto verze 1.1 BACS (Velká Británie – fiktivní) použije novou verzi 1.2.  
-1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
-2. Vyberte Proseware, Inc. jako zprostředkovatele a označte ho jako aktivního.
-3. Klikněte na možnost Nastavit jako aktivní.
-4. Klikněte na Konfigurace výkaznictví.
-5. Ve stromovém zobrazení rozbalte možnost „Platby (zjednodušený model)“.
-6. Ve stromovém zobrazení rozbalte možnost „Platby (zjednodušený model)\BACS (Velká Británie – fiktivní)“.
-7. Ve stromovém zobrazení vyberte možnost „Platby (zjednodušený model)\BACS (Velká Británie – fiktivní)\BACS (Velká Británie – fiktivní vlastní)“.
-    * Vyberte konfiguraci BACS (Velká Británie – fiktivní vlastní), která je ve vlastnictví Proseware, Inc.  
-    * Použijte pracovní verzi vybrané konfigurace pro zavedení požadovaných změn.  
-8. Klepněte na Přeskládání.
-    * Vyberte novou verzi 1.2 základní konfigurace, která bude použita jako nový základ pro aktualizaci konfigurace.  
-9. Klikněte na tlačítko OK.
-    * Všimněte si, že byly zjištěny některé konflikty během slučování vlastní verze a nové základní verze, jako jsou změny formátu, které nelze sloučit automaticky.  
+## <a name="change-the-base-version-for-the-custom-format-configuration"></a><span data-ttu-id="e6642-242">Změna základní verze konfigurace vlastního formátu</span><span class="sxs-lookup"><span data-stu-id="e6642-242">Change the base version for the custom format configuration</span></span>
+    * <span data-ttu-id="e6642-243">Proseware, Inc. je informován, že je k dispozici nová verze 1.2 konfigurace BACS (Velká Británie – fiktivní) pro generování dokumentů elektronických plateb podle naposledy ohlášených požadavků specifických pro zemi.</span><span class="sxs-lookup"><span data-stu-id="e6642-243">Proseware, Inc. is informed that a new version 1.2 of BACS (UK fictitious) configuration is available to generate electronic payment documents in accordance to recently announced country-specific requirements.</span></span> <span data-ttu-id="e6642-244">Proseware, Inc. chce začít ji používat jako standard pro danou zemi.</span><span class="sxs-lookup"><span data-stu-id="e6642-244">Proseware, Inc. wants to start using it as a standard for the country.</span></span>  <span data-ttu-id="e6642-245">Aby to bylo možné, Proseware, Inc. musí změnit základní verzi konfigurace pro vlastní konfiguraci BACS (Velká Británie – fiktivní vlastní).</span><span class="sxs-lookup"><span data-stu-id="e6642-245">To do this, Proseware, Inc. needs to change the base configuration version for the custom configuration BACS (UK fictitious custom).</span></span> <span data-ttu-id="e6642-246">Namísto verze 1.1 BACS (Velká Británie – fiktivní) použije novou verzi 1.2.</span><span class="sxs-lookup"><span data-stu-id="e6642-246">Instead of version 1.1 of BACS (UK fictitious) use new version 1.2.</span></span>  
+1. <span data-ttu-id="e6642-247">Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="e6642-247">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="e6642-248">Vyberte Proseware, Inc. jako zprostředkovatele a označte ho jako aktivního.</span><span class="sxs-lookup"><span data-stu-id="e6642-248">Select the Proseware, Inc. provider to mark it as active.</span></span>
+3. <span data-ttu-id="e6642-249">Klikněte na možnost Nastavit jako aktivní.</span><span class="sxs-lookup"><span data-stu-id="e6642-249">Click Set active.</span></span>
+4. <span data-ttu-id="e6642-250">Klikněte na Konfigurace výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="e6642-250">Click Reporting configurations.</span></span>
+5. <span data-ttu-id="e6642-251">Ve stromovém zobrazení rozbalte možnost „Platby (zjednodušený model)“.</span><span class="sxs-lookup"><span data-stu-id="e6642-251">In the tree, expand 'Payments (simplified model)'.</span></span>
+6. <span data-ttu-id="e6642-252">Ve stromovém zobrazení rozbalte možnost „Platby (zjednodušený model)\BACS (Velká Británie – fiktivní)“.</span><span class="sxs-lookup"><span data-stu-id="e6642-252">In the tree, expand 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
+7. <span data-ttu-id="e6642-253">Ve stromovém zobrazení vyberte možnost „Platby (zjednodušený model)\BACS (Velká Británie – fiktivní)\BACS (Velká Británie – fiktivní vlastní)“.</span><span class="sxs-lookup"><span data-stu-id="e6642-253">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)\BACS (UK fictitious custom)'.</span></span>
+    * <span data-ttu-id="e6642-254">Vyberte konfiguraci BACS (Velká Británie – fiktivní vlastní), která je ve vlastnictví Proseware, Inc.</span><span class="sxs-lookup"><span data-stu-id="e6642-254">Select the BACS (UK fictitious custom) configuration, which is owned by Proseware, Inc.</span></span>  
+    * <span data-ttu-id="e6642-255">Použijte pracovní verzi vybrané konfigurace pro zavedení požadovaných změn.</span><span class="sxs-lookup"><span data-stu-id="e6642-255">Use the draft version of the selected configuration to introduce required changes.</span></span>  
+8. <span data-ttu-id="e6642-256">Klepněte na Přeskládání.</span><span class="sxs-lookup"><span data-stu-id="e6642-256">Click Rebase.</span></span>
+    * <span data-ttu-id="e6642-257">Vyberte novou verzi 1.2 základní konfigurace, která bude použita jako nový základ pro aktualizaci konfigurace.</span><span class="sxs-lookup"><span data-stu-id="e6642-257">Select the new version 1.2 of the base configuration to be applied as a new base for updating the configuration.</span></span>  
+9. <span data-ttu-id="e6642-258">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e6642-258">Click OK.</span></span>
+    * <span data-ttu-id="e6642-259">Všimněte si, že byly zjištěny některé konflikty během slučování vlastní verze a nové základní verze, jako jsou změny formátu, které nelze sloučit automaticky.</span><span class="sxs-lookup"><span data-stu-id="e6642-259">Note that some conflicts have been discovered between merging the custom version and a new base version representing some format changes that can’t be merged automatically.</span></span>  
 
-## <a name="resolve-rebase-conflicts"></a>Řešení konfliktů přeskládání
-1. Klikněte na možnost Návrhář.
-    * Povšimněte si změn v limitu délky textu s názvem dodavatele, které nelze provést automaticky. Tyto informace jsou uvedeny v seznamu konfliktů. Pro každý konflikt typu Aktualizace existují tyto možnosti: - Použít předchozí základní hodnotu (tlačítko v horní části mřížky) a vyvolat předchozí hodnotu základní verze (0 v tomto případě).  - Použít základní hodnotu (tlačítko v horní části mřížky) a vyvolat novou hodnotu základní verze (100 v tomto případě).  - Udržujte vlastní hodnotu (vlastní) (60 v tomto případě).  Kliknutím na tlačítko Použít použijte pro délku s textovým názvem dodavatele limit 100 znaků (pro konkrétní zemi).  
-    * Všimněte si, že Proseware, Inc. and Litware, Inc mají vlastní a místní verze formátu využívající kódy IBAN a SWIFT se souvisejícími součástmi, které jsou automaticky sloučeny v rámci správy formátu.  
-2. Klikněte na Použít základní hodnotu.
-    * Kliknutím na tlačítko Použít použijte pro názvy dodavatele limit 100 znaků (pro konkrétní zemi).  
-3. Klikněte na položku Uložit.
-    * Uložením formátu dojde k odstranění vyřešených konfliktů ze seznamu konfliktů.  
-4. Zavřete stránku.
+## <a name="resolve-rebase-conflicts"></a><span data-ttu-id="e6642-260">Řešení konfliktů přeskládání</span><span class="sxs-lookup"><span data-stu-id="e6642-260">Resolve rebase conflicts</span></span>
+1. <span data-ttu-id="e6642-261">Klikněte na možnost Návrhář.</span><span class="sxs-lookup"><span data-stu-id="e6642-261">Click Designer.</span></span>
+    * <span data-ttu-id="e6642-262">Povšimněte si změn v limitu délky textu s názvem dodavatele, které nelze provést automaticky.</span><span class="sxs-lookup"><span data-stu-id="e6642-262">Note that changes to the vendor’s name text length limit couldn’t be resolved automatically.</span></span> <span data-ttu-id="e6642-263">Tyto informace jsou uvedeny v seznamu konfliktů.</span><span class="sxs-lookup"><span data-stu-id="e6642-263">Therefore, this is presented in a conflicts list.</span></span> <span data-ttu-id="e6642-264">Pro každý konflikt typu Aktualizace existují tyto možnosti: - Použít předchozí základní hodnotu (tlačítko v horní části mřížky) a vyvolat předchozí hodnotu základní verze (0 v tomto případě).</span><span class="sxs-lookup"><span data-stu-id="e6642-264">For each conflict of type Update, the following options are available:  - Apply a prior base value (button on top of the grid) to bring in the previous base version value (0 in our case).</span></span>  <span data-ttu-id="e6642-265">- Použít základní hodnotu (tlačítko v horní části mřížky) a vyvolat novou hodnotu základní verze (100 v tomto případě).</span><span class="sxs-lookup"><span data-stu-id="e6642-265">- Apply a base value (button on top of the grid) to bring in the new base version value (100 in our case).</span></span>  <span data-ttu-id="e6642-266">- Udržujte vlastní hodnotu (vlastní) (60 v tomto případě).</span><span class="sxs-lookup"><span data-stu-id="e6642-266">- Keep your own (custom) value (60 in our case).</span></span>  <span data-ttu-id="e6642-267">Kliknutím na tlačítko Použít použijte pro délku s textovým názvem dodavatele limit 100 znaků (pro konkrétní zemi).</span><span class="sxs-lookup"><span data-stu-id="e6642-267">Click Apply base value to apply a country-specific limit of 100 characters for vendor’s name text length.</span></span>  
+    * <span data-ttu-id="e6642-268">Všimněte si, že Proseware, Inc. and Litware, Inc mají vlastní a místní verze formátu využívající kódy IBAN a SWIFT se souvisejícími součástmi, které jsou automaticky sloučeny v rámci správy formátu.</span><span class="sxs-lookup"><span data-stu-id="e6642-268">Note that Proseware, Inc. and Litware, Inc. have custom and local versions of this format using IBAN and SWIFT codes with related components that are automatically merged in the managing format.</span></span>  
+2. <span data-ttu-id="e6642-269">Klikněte na Použít základní hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e6642-269">Click Apply base value.</span></span>
+    * <span data-ttu-id="e6642-270">Kliknutím na tlačítko Použít použijte pro názvy dodavatele limit 100 znaků (pro konkrétní zemi).</span><span class="sxs-lookup"><span data-stu-id="e6642-270">Click Apply base value to apply the country-specific limit of 100 characters for vendor names.</span></span>  
+3. <span data-ttu-id="e6642-271">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e6642-271">Click Save.</span></span>
+    * <span data-ttu-id="e6642-272">Uložením formátu dojde k odstranění vyřešených konfliktů ze seznamu konfliktů.</span><span class="sxs-lookup"><span data-stu-id="e6642-272">Saving the format will remove resolved conflicts from the conflicts list.</span></span>  
+4. <span data-ttu-id="e6642-273">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e6642-273">Close the page.</span></span>
 
-## <a name="change-the-status-of-the-new-version-of-the-custom-format-configuration"></a>Změna stavu nové verze vlastní konfigurace formátu
-1. Klikněte na položku Změnit stav.
-    * Změňte stav aktualizované vlastní konfigurace formátu z Koncept na Dokončeno. To zpřístupní konfiguraci formátu pro generování platebních dokumentů. Všimněte si, že je aktuální verze vybrané konfigurace ve stavu Koncept.  
-2. Klikněte na tlačítko Dokončit.
-3. Zadejte nějakou hodnotu do pole Popis.
-4. Klikněte na tlačítko OK.
-    * Všimněte si, že vytvořená konfigurace je uložena jako dokončená verze 1.2.2: 2. verze základního formátu BACS (Velká Británie – fiktivní vlastní), který je založen na 2. verzi základního formátu BACS (Velká Británie – fiktivní), která je založena na modelu dat 1. verze plateb (zjednodušený model).  
+## <a name="change-the-status-of-the-new-version-of-the-custom-format-configuration"></a><span data-ttu-id="e6642-274">Změna stavu nové verze vlastní konfigurace formátu</span><span class="sxs-lookup"><span data-stu-id="e6642-274">Change the status of the new version of the custom format configuration</span></span>
+1. <span data-ttu-id="e6642-275">Klikněte na položku Změnit stav.</span><span class="sxs-lookup"><span data-stu-id="e6642-275">Click Change status.</span></span>
+    * <span data-ttu-id="e6642-276">Změňte stav aktualizované vlastní konfigurace formátu z Koncept na Dokončeno.</span><span class="sxs-lookup"><span data-stu-id="e6642-276">Change the status of the updated, custom format configuration from Draft to Completed.</span></span> <span data-ttu-id="e6642-277">To zpřístupní konfiguraci formátu pro generování platebních dokumentů.</span><span class="sxs-lookup"><span data-stu-id="e6642-277">This will make the format configuration available for generating payment documents.</span></span> <span data-ttu-id="e6642-278">Všimněte si, že je aktuální verze vybrané konfigurace ve stavu Koncept.</span><span class="sxs-lookup"><span data-stu-id="e6642-278">Note that the current version of the selected configuration is in Draft status.</span></span>  
+2. <span data-ttu-id="e6642-279">Klikněte na tlačítko Dokončit.</span><span class="sxs-lookup"><span data-stu-id="e6642-279">Click Complete.</span></span>
+3. <span data-ttu-id="e6642-280">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="e6642-280">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="e6642-281">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e6642-281">Click OK.</span></span>
+    * <span data-ttu-id="e6642-282">Všimněte si, že vytvořená konfigurace je uložena jako dokončená verze 1.2.2: 2. verze základního formátu BACS (Velká Británie – fiktivní vlastní), který je založen na 2. verzi základního formátu BACS (Velká Británie – fiktivní), která je založena na modelu dat 1. verze plateb (zjednodušený model).</span><span class="sxs-lookup"><span data-stu-id="e6642-282">Note that the created configuration is saved as completed version 1.2.2: version 2 of base BACS (UK fictitious custom) format, which is based on version 2 of base BACS (UK fictitious) format, which is based on version 1 of Payments (simplified model) data model.</span></span>  
 
-## <a name="test-the-customized-format-for-payment-files-generation"></a>Test vlastního formátu pro generování souborů plateb
-    * Postupujte podle kroků v postupu „Použití vytvořeného formátu pro generování elektronických dokumentů pro platby“ v rámci paralelní relace Dynamics 365 for Finance and Operations, edice Enterprise. Vyberte vytvořený formát BACS (Velká Británie – fiktivní vlastní) v parametrech metody elektronické platby. Zkontrolujte, že vytvořený soubor platby obsahuje nedávno uvedený uzel XML společností by Proseware, Inc. představující kód účtu IBAN v souladu s místními požadavky. Soubor by rovněž měl obsahovat nedávno uvedených uzel XML uvedený společností Litware, Inc. představující bankovní kód SWIFT podle požadavků země.  
+## <a name="test-the-customized-format-for-payment-files-generation"></a><span data-ttu-id="e6642-283">Test vlastního formátu pro generování souborů plateb</span><span class="sxs-lookup"><span data-stu-id="e6642-283">Test the customized format for payment files generation</span></span>
+    * <span data-ttu-id="e6642-284">Postupujte podle kroků v postupu „Použití vytvořeného formátu pro generování elektronických dokumentů pro platby“ v rámci paralelní relace Dynamics 365 for Finance and Operations, edice Enterprise.</span><span class="sxs-lookup"><span data-stu-id="e6642-284">Complete the steps in the “Use created format to generate electronic documents for payments” procedure in parallel Dynamics 365 for Finance and Operations, Enterprise edition session.</span></span> <span data-ttu-id="e6642-285">Vyberte vytvořený formát BACS (Velká Británie – fiktivní vlastní) v parametrech metody elektronické platby.</span><span class="sxs-lookup"><span data-stu-id="e6642-285">Select the created ‘BACS (UK fictitious custom)’ format in electronic payment method parameters.</span></span> <span data-ttu-id="e6642-286">Zkontrolujte, že vytvořený soubor platby obsahuje nedávno uvedený uzel XML společností by Proseware, Inc. představující kód účtu IBAN v souladu s místními požadavky.</span><span class="sxs-lookup"><span data-stu-id="e6642-286">Make sure that the created payment file contains recently introduced by Proseware, Inc. XML node presenting IBAN account code in accordance to regional requirements.</span></span> <span data-ttu-id="e6642-287">Soubor by rovněž měl obsahovat nedávno uvedených uzel XML uvedený společností Litware, Inc. představující bankovní kód SWIFT podle požadavků země.</span><span class="sxs-lookup"><span data-stu-id="e6642-287">The file also should contain the recently introduced by Litware, Inc. XML node presenting SWIFT bank code in accordance to country requirements.</span></span>  
 
 

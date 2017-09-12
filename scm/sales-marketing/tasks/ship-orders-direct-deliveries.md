@@ -22,84 +22,84 @@ ms.contentlocale: cs-cz
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="ship-orders-as-direct-deliveries"></a>Expedování objednávek jako přímých dodávek
+# <a name="ship-orders-as-direct-deliveries"></a><span data-ttu-id="5b39b-103">Expedování objednávek jako přímých dodávek</span><span class="sxs-lookup"><span data-stu-id="5b39b-103">Ship orders as direct deliveries</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup ukazuje, jak vytvořit přímé dodávky pro prodejní objednávku. Přímou dodávku používejte, pokud chcete zboží expedovat odběrateli přímo od dodavatele, místo expedice nejprve do svého vlastního skladu,. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. K úspěšnému dokončení druhého podúkolu „Vytvoření přímé dodávky z pracovní plochy“ se ujistěte, že zboží, která vyberete v prodejní objednávce, má určeného výchozího dodavatele na pevné kartě Nákup vydaného základního produktu.
+<span data-ttu-id="5b39b-104">Tento postup ukazuje, jak vytvořit přímé dodávky pro prodejní objednávku.</span><span class="sxs-lookup"><span data-stu-id="5b39b-104">This procedure demonstrates how to create a direct delivery for a sales order.</span></span> <span data-ttu-id="5b39b-105">Přímou dodávku používejte, pokud chcete zboží expedovat odběrateli přímo od dodavatele, místo expedice nejprve do svého vlastního skladu,.</span><span class="sxs-lookup"><span data-stu-id="5b39b-105">You use direct delivery when you want to ship goods to the customer directly from your vendor, instead of shipping them to your own warehouse first.</span></span> <span data-ttu-id="5b39b-106">Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="5b39b-106">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="5b39b-107">K úspěšnému dokončení druhého podúkolu „Vytvoření přímé dodávky z pracovní plochy“ se ujistěte, že zboží, která vyberete v prodejní objednávce, má určeného výchozího dodavatele na pevné kartě Nákup vydaného základního produktu.</span><span class="sxs-lookup"><span data-stu-id="5b39b-107">To successfully complete the second sub-task "Create direct deliveries from the workbench", make sure that the item that you choose on the sales order has a default Vendor specified on the Purchase FastTab of the Released product master.</span></span>
 
 
-## <a name="set-an-individual-order-for-direct-delivery"></a>Nastavení jednotlivé objednávky pro přímé dodání
-1. Přejděte na Všechny prodejní objednávky.
-2. Klikněte na položku Nová.
-3. V poli Účet odběratele zadejte nebo vyberte hodnotu.
-    * Pokud používáte data USMF, můžete vybrat účet US-001.  
-4. Klikněte na tlačítko OK.
-5. V poli Číslo zboží zadejte nebo vyberte hodnotu.
-    * Pokud používáte data USMF, můžete vybrat položku T0020.  
-6. Klikněte na položku Uložit.
-7. V podokně akcí klikněte na položku Prodejní objednávka.
-8. Klikněte na položku Přímá dodávka.
-    * Vytvoření seznamů stránek dodávek všech otevřených řádků prodejních objednávek jako kopírovaných z prodejní objednávky. Můžete zkontrolovat podrobnosti o objednávce, a v případě potřeby můžete upravit podrobnosti jako například nákupní množství a podmínek cen předtím, než vytvoříte přímou dodávku.  
-9. V poli Zahrnout vše vyberte možnost Ano.
-    * Pokud chcete generovat přímou dodávku pouze pro podmnožinu řádků prodejních objednávek, vyberte je jednotlivě.  
-    * Pole účtu dodavatele může nebo nemusí být vyplněno číslem dodavatele. Pokud bude výchozí dodavatele nastaven pro produkt (v přidružené disponibilitě položky), pak do řádku bude zkopírován tento dodavatel. V ostatních případech musíte dodavatele zadat ručně. V tomto příkladu vybereme nového dodavatele v dalším kroku i v případě, že jeden je již vyplněn.   
-10. V poli Účet dodavatele zadejte nebo vyberte hodnotu.
-    * Pokud používáte data USMF, můžete vybrat účet 1001.  
-11. Klikněte na tlačítko OK.
-    * Zpráva vás informuje o tom, že nákupní objednávka nyní byla vytvořena.   
-12. Rozbalte sekci Podrobnosti řádku.
-13. Klikněte na záložku Dodání.
-    * Pole Přímá dodávka je nyní nastaveno na hodnotu Ano.  
-    * Stav přímé dodávky zobrazuje vytvořenou nákupní objednávku.   
-14. V podokně akcí klikněte na položku Obecné.
-15. Klepněte na Související objednávky.
-16. Kliknutím přejdete na odkaz v poli Nákupní objednávka.
-17. Rozbalte sekci Podrobnosti řádku.
-18. Klepněte na kartu Adresa.
-    * Všimněte si, že doručovací adresa pro tento řádek nákupní objednávky je adresa dodání odběratele, a nikoli adresa vaší společnosti.  
-    * Pokud upravíte adresu dodání na řádku prodejní objednávky nebo na řádku původní nákupní objednávky, bude adresa automaticky aktualizována na řádku odpovídající objednávky.  
-19. Klikněte na záložku Dodání.
-    * Stejně jako řádek prodejní objednávky je typ řádku přidružené nákupní objednávky také nastaven na přímou dodávku.  
-    * Datum dodání na řádku nákupní objednávky a potvrzené datum dodání jsou v uvedeném pořadí nastaveny k požadovanému datu příjmu a potvrzenému datu příjmu původního řádku prodejní objednávky.   
-    * Pokud aktualizujete některé z těchto data na řádku nákupní objednávky nebo na řádku prodejní objednávky, data na odpovídající objednávce budou automaticky aktualizována.     
-    * Nákupní objednávka, která je nastavena na dodávku zboží přímo odběrateli, je propojena s původní prodejní objednávkou prostřednictvím zvláštního přidružení. Toto přidružení ukládá pravidlo, že aktualizace dodacího listu prodejní objednávky nelze provést ze samotné prodejní objednávky a je zapotřebí ji udělat pomocí nákupní objednávky. Avšak fakturace odběratele musí být provedena z prodejní objednávky.  
-20. V podokně akcí klikněte na položku Nákup.
-21. Klikněte na možnost Potvrzení.
-22. Klikněte na tlačítko OK.
-23. V podokně akcí klikněte na položku Přijmout.
-24. Klikněte na položku Příjemka produktu.
-25. Zadejte hodnotu do pole Příjemka produktu.
-26. Klikněte na tlačítko OK.
-27. V podokně akcí klikněte na položku Obecné.
-28. Klepněte na Související objednávky.
-29. Označte v seznamu vybraný řádek.
-    * Poté, co byla nákupní objednávka aktualizována jako přijatá, nebo jinými slovy, poté, co dodavatel dodal zboží na adresu odběratele, stav původní prodejní objednávky se automaticky aktualizuje na dodáno.  
-    * Prodejní objednávku lze nyní vyfakturovat.    
-30. Klikněte na tlačítko OK.
-31. Zavřete stránku.
-32. Klikněte na tlačítko OK.
+## <a name="set-an-individual-order-for-direct-delivery"></a><span data-ttu-id="5b39b-108">Nastavení jednotlivé objednávky pro přímé dodání</span><span class="sxs-lookup"><span data-stu-id="5b39b-108">Set an individual order for direct delivery</span></span>
+1. <span data-ttu-id="5b39b-109">Přejděte na Všechny prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="5b39b-109">Go to All sales orders.</span></span>
+2. <span data-ttu-id="5b39b-110">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="5b39b-110">Click New.</span></span>
+3. <span data-ttu-id="5b39b-111">V poli Účet odběratele zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="5b39b-111">In the Customer account field, enter or select a value.</span></span>
+    * <span data-ttu-id="5b39b-112">Pokud používáte data USMF, můžete vybrat účet US-001.</span><span class="sxs-lookup"><span data-stu-id="5b39b-112">If you’re using USMF, you can select account US-001.</span></span>  
+4. <span data-ttu-id="5b39b-113">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="5b39b-113">Click OK.</span></span>
+5. <span data-ttu-id="5b39b-114">V poli Číslo zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="5b39b-114">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="5b39b-115">Pokud používáte data USMF, můžete vybrat položku T0020.</span><span class="sxs-lookup"><span data-stu-id="5b39b-115">If you’re using USMF, you can select item T0020.</span></span>  
+6. <span data-ttu-id="5b39b-116">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="5b39b-116">Click Save.</span></span>
+7. <span data-ttu-id="5b39b-117">V podokně akcí klikněte na položku Prodejní objednávka.</span><span class="sxs-lookup"><span data-stu-id="5b39b-117">On the Action Pane, click Sales order.</span></span>
+8. <span data-ttu-id="5b39b-118">Klikněte na položku Přímá dodávka.</span><span class="sxs-lookup"><span data-stu-id="5b39b-118">Click Direct delivery.</span></span>
+    * <span data-ttu-id="5b39b-119">Vytvoření seznamů stránek dodávek všech otevřených řádků prodejních objednávek jako kopírovaných z prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="5b39b-119">The Create delivery page lists all the open sales order lines as copied from the sales order.</span></span> <span data-ttu-id="5b39b-120">Můžete zkontrolovat podrobnosti o objednávce, a v případě potřeby můžete upravit podrobnosti jako například nákupní množství a podmínek cen předtím, než vytvoříte přímou dodávku.</span><span class="sxs-lookup"><span data-stu-id="5b39b-120">You can review the order details, and if required, you can modify details such purchase quantity and pricing terms before you create the direct delivery.</span></span>  
+9. <span data-ttu-id="5b39b-121">V poli Zahrnout vše vyberte možnost Ano.</span><span class="sxs-lookup"><span data-stu-id="5b39b-121">Select Yes in the Include all field.</span></span>
+    * <span data-ttu-id="5b39b-122">Pokud chcete generovat přímou dodávku pouze pro podmnožinu řádků prodejních objednávek, vyberte je jednotlivě.</span><span class="sxs-lookup"><span data-stu-id="5b39b-122">If you want to generate a direct delivery for only a subset of the sales order lines, select these individually.</span></span>  
+    * <span data-ttu-id="5b39b-123">Pole účtu dodavatele může nebo nemusí být vyplněno číslem dodavatele.</span><span class="sxs-lookup"><span data-stu-id="5b39b-123">The Vendor account field may or may not already be populated with a vendor number.</span></span> <span data-ttu-id="5b39b-124">Pokud bude výchozí dodavatele nastaven pro produkt (v přidružené disponibilitě položky), pak do řádku bude zkopírován tento dodavatel.</span><span class="sxs-lookup"><span data-stu-id="5b39b-124">If the default vendor is set up for the product (on the associated Item coverage) then this vendor will be copied to the line.</span></span> <span data-ttu-id="5b39b-125">V ostatních případech musíte dodavatele zadat ručně.</span><span class="sxs-lookup"><span data-stu-id="5b39b-125">Otherwise, you must enter a vendor manually.</span></span> <span data-ttu-id="5b39b-126">V tomto příkladu vybereme nového dodavatele v dalším kroku i v případě, že jeden je již vyplněn.</span><span class="sxs-lookup"><span data-stu-id="5b39b-126">In this example, we’ll select a new vendor in the next step, even if one is already populated.</span></span>   
+10. <span data-ttu-id="5b39b-127">V poli Účet dodavatele zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="5b39b-127">In the Vendor account field, enter or select a value.</span></span>
+    * <span data-ttu-id="5b39b-128">Pokud používáte data USMF, můžete vybrat účet 1001.</span><span class="sxs-lookup"><span data-stu-id="5b39b-128">If you’re using USMF, you can select account 1001.</span></span>  
+11. <span data-ttu-id="5b39b-129">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="5b39b-129">Click OK.</span></span>
+    * <span data-ttu-id="5b39b-130">Zpráva vás informuje o tom, že nákupní objednávka nyní byla vytvořena.</span><span class="sxs-lookup"><span data-stu-id="5b39b-130">The message informs you that the purchase order has now been created.</span></span>   
+12. <span data-ttu-id="5b39b-131">Rozbalte sekci Podrobnosti řádku.</span><span class="sxs-lookup"><span data-stu-id="5b39b-131">Expand the Line details section.</span></span>
+13. <span data-ttu-id="5b39b-132">Klikněte na záložku Dodání.</span><span class="sxs-lookup"><span data-stu-id="5b39b-132">Click the Delivery tab.</span></span>
+    * <span data-ttu-id="5b39b-133">Pole Přímá dodávka je nyní nastaveno na hodnotu Ano.</span><span class="sxs-lookup"><span data-stu-id="5b39b-133">The Direct delivery field is now set to Yes.</span></span>  
+    * <span data-ttu-id="5b39b-134">Stav přímé dodávky zobrazuje vytvořenou nákupní objednávku.</span><span class="sxs-lookup"><span data-stu-id="5b39b-134">The Direct delivery status shows the Purchase order created.</span></span>   
+14. <span data-ttu-id="5b39b-135">V podokně akcí klikněte na položku Obecné.</span><span class="sxs-lookup"><span data-stu-id="5b39b-135">On the Action Pane, click General.</span></span>
+15. <span data-ttu-id="5b39b-136">Klepněte na Související objednávky.</span><span class="sxs-lookup"><span data-stu-id="5b39b-136">Click Related orders.</span></span>
+16. <span data-ttu-id="5b39b-137">Kliknutím přejdete na odkaz v poli Nákupní objednávka.</span><span class="sxs-lookup"><span data-stu-id="5b39b-137">Click to follow the link in the Purchase order field.</span></span>
+17. <span data-ttu-id="5b39b-138">Rozbalte sekci Podrobnosti řádku.</span><span class="sxs-lookup"><span data-stu-id="5b39b-138">Expand the Line details section.</span></span>
+18. <span data-ttu-id="5b39b-139">Klepněte na kartu Adresa.</span><span class="sxs-lookup"><span data-stu-id="5b39b-139">Click the Address tab.</span></span>
+    * <span data-ttu-id="5b39b-140">Všimněte si, že doručovací adresa pro tento řádek nákupní objednávky je adresa dodání odběratele, a nikoli adresa vaší společnosti.</span><span class="sxs-lookup"><span data-stu-id="5b39b-140">Note that the delivery address for this purchase order line is the customer's delivery address and not your company's address.</span></span>  
+    * <span data-ttu-id="5b39b-141">Pokud upravíte adresu dodání na řádku prodejní objednávky nebo na řádku původní nákupní objednávky, bude adresa automaticky aktualizována na řádku odpovídající objednávky.</span><span class="sxs-lookup"><span data-stu-id="5b39b-141">If you change the delivery address on either the purchase order line or the originating sales order line, the address on the corresponding order line will be automatically updated.</span></span>  
+19. <span data-ttu-id="5b39b-142">Klikněte na záložku Dodání.</span><span class="sxs-lookup"><span data-stu-id="5b39b-142">Click the Delivery tab.</span></span>
+    * <span data-ttu-id="5b39b-143">Stejně jako řádek prodejní objednávky je typ řádku přidružené nákupní objednávky také nastaven na přímou dodávku.</span><span class="sxs-lookup"><span data-stu-id="5b39b-143">Like the sales order line, the associated purchase order line type is also set to Direct delivery.</span></span>  
+    * <span data-ttu-id="5b39b-144">Datum dodání na řádku nákupní objednávky a potvrzené datum dodání jsou v uvedeném pořadí nastaveny k požadovanému datu příjmu a potvrzenému datu příjmu původního řádku prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="5b39b-144">The purchase order line's Delivery  date and the Confirmed delivery date are set to the Requested receipt date and Confirmed receipt date of the originating sales order line respectively.</span></span>   
+    * <span data-ttu-id="5b39b-145">Pokud aktualizujete některé z těchto data na řádku nákupní objednávky nebo na řádku prodejní objednávky, data na odpovídající objednávce budou automaticky aktualizována.</span><span class="sxs-lookup"><span data-stu-id="5b39b-145">If you update any of these dates on either the purchase line or the sales line, the dates on the corresponding order will be automatically updated.</span></span>     
+    * <span data-ttu-id="5b39b-146">Nákupní objednávka, která je nastavena na dodávku zboží přímo odběrateli, je propojena s původní prodejní objednávkou prostřednictvím zvláštního přidružení.</span><span class="sxs-lookup"><span data-stu-id="5b39b-146">The purchase order that is set to deliver goods directly the customer is linked to the originating sales order by means of a special association.</span></span> <span data-ttu-id="5b39b-147">Toto přidružení ukládá pravidlo, že aktualizace dodacího listu prodejní objednávky nelze provést ze samotné prodejní objednávky a je zapotřebí ji udělat pomocí nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="5b39b-147">This association imposes the rule that the packing slip update of the sales order can't be done from the sales order itself and must be done by using the purchase order.</span></span> <span data-ttu-id="5b39b-148">Avšak fakturace odběratele musí být provedena z prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="5b39b-148">However, customer invoicing must be carried out from the sales order.</span></span>  
+20. <span data-ttu-id="5b39b-149">V podokně akcí klikněte na položku Nákup.</span><span class="sxs-lookup"><span data-stu-id="5b39b-149">On the Action Pane, click Purchase.</span></span>
+21. <span data-ttu-id="5b39b-150">Klikněte na možnost Potvrzení.</span><span class="sxs-lookup"><span data-stu-id="5b39b-150">Click Confirmation.</span></span>
+22. <span data-ttu-id="5b39b-151">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="5b39b-151">Click OK.</span></span>
+23. <span data-ttu-id="5b39b-152">V podokně akcí klikněte na položku Přijmout.</span><span class="sxs-lookup"><span data-stu-id="5b39b-152">On the Action Pane, click Receive.</span></span>
+24. <span data-ttu-id="5b39b-153">Klikněte na položku Příjemka produktu.</span><span class="sxs-lookup"><span data-stu-id="5b39b-153">Click Product receipt.</span></span>
+25. <span data-ttu-id="5b39b-154">Zadejte hodnotu do pole Příjemka produktu.</span><span class="sxs-lookup"><span data-stu-id="5b39b-154">In the Product receipt field, type a value.</span></span>
+26. <span data-ttu-id="5b39b-155">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="5b39b-155">Click OK.</span></span>
+27. <span data-ttu-id="5b39b-156">V podokně akcí klikněte na položku Obecné.</span><span class="sxs-lookup"><span data-stu-id="5b39b-156">On the Action Pane, click General.</span></span>
+28. <span data-ttu-id="5b39b-157">Klepněte na Související objednávky.</span><span class="sxs-lookup"><span data-stu-id="5b39b-157">Click Related orders.</span></span>
+29. <span data-ttu-id="5b39b-158">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="5b39b-158">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="5b39b-159">Poté, co byla nákupní objednávka aktualizována jako přijatá, nebo jinými slovy, poté, co dodavatel dodal zboží na adresu odběratele, stav původní prodejní objednávky se automaticky aktualizuje na dodáno.</span><span class="sxs-lookup"><span data-stu-id="5b39b-159">After the purchase order has been updated as received, or in other words, after the vendor has shipped the goods to your customer's address, the status of the originating sales order is automatically updated to Delivered.</span></span>  
+    * <span data-ttu-id="5b39b-160">Prodejní objednávku lze nyní vyfakturovat.</span><span class="sxs-lookup"><span data-stu-id="5b39b-160">The sales order can now be invoiced.</span></span>    
+30. <span data-ttu-id="5b39b-161">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="5b39b-161">Click OK.</span></span>
+31. <span data-ttu-id="5b39b-162">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="5b39b-162">Close the page.</span></span>
+32. <span data-ttu-id="5b39b-163">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="5b39b-163">Click OK.</span></span>
 
-## <a name="create-direct-deliveries-from-the-workbench"></a>Vytvoření přímé dodávky z pracovní plochy
-1. Zavřete stránku.
-2. Zavřete stránku.
-3. Přejděte na Všechny prodejní objednávky.
-4. Klikněte na položku Nová.
-5. V poli Účet odběratele zadejte nebo vyberte hodnotu.
-6. Klepněte na tlačítko OK.
-7. V poli Číslo zboží zadejte nebo vyberte hodnotu.
-8. Rozbalte sekci Podrobnosti řádku.
-9. Klikněte na záložku Dodání.
-    * Místo vytvoření přímé dodávky v rámci prodejních objednávek jako v předchozím postupu můžete zvolit předání tohoto úkolu nákupčímu. Aby bylo možné zahrnout řádek prodejní objednávky do procesu přímého zpracování, je řádek třeba označit pro přímé dodání.  
-10. V poli Přímá dodávka vyberte hodnotu Ano.
-    *   Pokud zboží je již výchozím nastavení nastaveno pro přímé dodání, při zadání řádku objednávky bude pole automaticky nastaveno na Ano. Můžete nastavit zboží pro přímou dodávku na základní vydaný produkt nastavením možnosti přímé dodávky na hodnotu Ano a výběrem výchozího skladu přímého dodání.  
-    * Protože dosud nebyla vytvořena nákupní objednávka, stav přímé dodávky je nastaven pro přímé dodání.   
-11. Zavřete stránku.
-12. Zavřete stránku.
-13. Přejděte na Přímá dodávka.
-    * Stránka přímé dodávky se chová jako pracovní plocha pro nákupčí, který poskytuje přehled všech řádků prodejních objednávek, které mají být v přímo doručeny a umožňuje vytvořit odpovídající nákupní objednávky. Kromě toho mohou zobrazit otevření přímé dodávky a potvrzené objednávky na kartě potvrzení a dodání.   
-14. Klepněte na Vytvořit objednávku s přímým dodáním.
-15. Klepněte na kartu Potvrzení.
-    * Po vytvoření objednávky přímé dodávky, se automaticky přesune na kartu potvrzení. Můžete potvrdit objednávku přímo z této stránky. Když je nákup potvrzen, bude automaticky přesunut na kartu dodání, odkud můžete zaregistrovat jeho přijetí.  
+## <a name="create-direct-deliveries-from-the-workbench"></a><span data-ttu-id="5b39b-164">Vytvoření přímé dodávky z pracovní plochy</span><span class="sxs-lookup"><span data-stu-id="5b39b-164">Create direct deliveries from the workbench</span></span>
+1. <span data-ttu-id="5b39b-165">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="5b39b-165">Close the page.</span></span>
+2. <span data-ttu-id="5b39b-166">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="5b39b-166">Close the page.</span></span>
+3. <span data-ttu-id="5b39b-167">Přejděte na Všechny prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="5b39b-167">Go to All sales orders.</span></span>
+4. <span data-ttu-id="5b39b-168">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="5b39b-168">Click New.</span></span>
+5. <span data-ttu-id="5b39b-169">V poli Účet odběratele zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="5b39b-169">In the Customer account field, enter or select a value.</span></span>
+6. <span data-ttu-id="5b39b-170">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="5b39b-170">Click OK.</span></span>
+7. <span data-ttu-id="5b39b-171">V poli Číslo zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="5b39b-171">In the Item number field, enter or select a value.</span></span>
+8. <span data-ttu-id="5b39b-172">Rozbalte sekci Podrobnosti řádku.</span><span class="sxs-lookup"><span data-stu-id="5b39b-172">Expand the Line details section.</span></span>
+9. <span data-ttu-id="5b39b-173">Klikněte na záložku Dodání.</span><span class="sxs-lookup"><span data-stu-id="5b39b-173">Click the Delivery tab.</span></span>
+    * <span data-ttu-id="5b39b-174">Místo vytvoření přímé dodávky v rámci prodejních objednávek jako v předchozím postupu můžete zvolit předání tohoto úkolu nákupčímu.</span><span class="sxs-lookup"><span data-stu-id="5b39b-174">Instead of creating a direct delivery as part of the sales order processing as in the previous procedure, you can choose to hand over this task to a purchasing professional.</span></span> <span data-ttu-id="5b39b-175">Aby bylo možné zahrnout řádek prodejní objednávky do procesu přímého zpracování, je řádek třeba označit pro přímé dodání.</span><span class="sxs-lookup"><span data-stu-id="5b39b-175">To include the sales order line in the direct delivery handling process, you must mark the line for direct delivery.</span></span>  
+10. <span data-ttu-id="5b39b-176">V poli Přímá dodávka vyberte hodnotu Ano.</span><span class="sxs-lookup"><span data-stu-id="5b39b-176">Select Yes in the Direct delivery field.</span></span>
+    *   <span data-ttu-id="5b39b-177">Pokud zboží je již výchozím nastavení nastaveno pro přímé dodání, při zadání řádku objednávky bude pole automaticky nastaveno na Ano.</span><span class="sxs-lookup"><span data-stu-id="5b39b-177">If the item has already been set up for direct delivery by default, the field will automatically be set to Yes at the order line entry.</span></span> <span data-ttu-id="5b39b-178">Můžete nastavit zboží pro přímou dodávku na základní vydaný produkt nastavením možnosti přímé dodávky na hodnotu Ano a výběrem výchozího skladu přímého dodání.</span><span class="sxs-lookup"><span data-stu-id="5b39b-178">You can set up an item for direct delivery on the Released product's master by setting the Direct delivery option to Yes and selecting a default Direct delivery warehouse.</span></span>  
+    * <span data-ttu-id="5b39b-179">Protože dosud nebyla vytvořena nákupní objednávka, stav přímé dodávky je nastaven pro přímé dodání.</span><span class="sxs-lookup"><span data-stu-id="5b39b-179">Because the purchase order has not yet been created, the Direct delivery status is set to To be direct delivered.</span></span>   
+11. <span data-ttu-id="5b39b-180">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="5b39b-180">Close the page.</span></span>
+12. <span data-ttu-id="5b39b-181">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="5b39b-181">Close the page.</span></span>
+13. <span data-ttu-id="5b39b-182">Přejděte na Přímá dodávka.</span><span class="sxs-lookup"><span data-stu-id="5b39b-182">Go to Direct delivery.</span></span>
+    * <span data-ttu-id="5b39b-183">Stránka přímé dodávky se chová jako pracovní plocha pro nákupčí, který poskytuje přehled všech řádků prodejních objednávek, které mají být v přímo doručeny a umožňuje vytvořit odpovídající nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="5b39b-183">The Direct delivery page acts as a workbench that provides the purchasing agent with an overview of all the sales order lines that are to be direct delivered and it allows them to create the respective purchase orders.</span></span> <span data-ttu-id="5b39b-184">Kromě toho mohou zobrazit otevření přímé dodávky a potvrzené objednávky na kartě potvrzení a dodání.</span><span class="sxs-lookup"><span data-stu-id="5b39b-184">In addition, they can view the open direct delivery orders and the confirmed orders on the Confirmation and Delivery tabs.</span></span>   
+14. <span data-ttu-id="5b39b-185">Klepněte na Vytvořit objednávku s přímým dodáním.</span><span class="sxs-lookup"><span data-stu-id="5b39b-185">Click Create direct delivery.</span></span>
+15. <span data-ttu-id="5b39b-186">Klepněte na kartu Potvrzení.</span><span class="sxs-lookup"><span data-stu-id="5b39b-186">Click the Confirmation tab.</span></span>
+    * <span data-ttu-id="5b39b-187">Po vytvoření objednávky přímé dodávky, se automaticky přesune na kartu potvrzení.</span><span class="sxs-lookup"><span data-stu-id="5b39b-187">After you have created a direct delivery order, it automatically moved to the Confirmation tab.</span></span> <span data-ttu-id="5b39b-188">Můžete potvrdit objednávku přímo z této stránky.</span><span class="sxs-lookup"><span data-stu-id="5b39b-188">You can choose to confirm the order directly from this page.</span></span> <span data-ttu-id="5b39b-189">Když je nákup potvrzen, bude automaticky přesunut na kartu dodání, odkud můžete zaregistrovat jeho přijetí.</span><span class="sxs-lookup"><span data-stu-id="5b39b-189">When the purchase is confirmed, it will automatically move to the Delivery tab, from which you can registered its receipt.</span></span>  
 
 

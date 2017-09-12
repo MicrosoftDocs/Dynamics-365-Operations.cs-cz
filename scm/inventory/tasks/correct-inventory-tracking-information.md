@@ -1,4 +1,4 @@
---- 
+---
 title: "Oprava informací o sledování zásob"
 description: "Tento postup vás provede procesem vytvoření a zaúčtování deníku převodu zásob, za účelem opravit informace o sledování zásob."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,50 +17,49 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: caf8c67d315666edfffe86e459bc7a4478697f07
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: e28d10646f01604098de8cedc30c8c7a7c89866b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="correct-inventory-tracking-information"></a>Oprava informací o sledování zásob
+# <a name="correct-inventory-tracking-information"></a><span data-ttu-id="84cd7-103">Oprava informací o sledování zásob</span><span class="sxs-lookup"><span data-stu-id="84cd7-103">Correct inventory tracking information</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup vás provede procesem vytvoření a zaúčtování deníku převodu zásob, za účelem opravit informace o sledování zásob. V tomto příkladu aktualizujeme informace o položky řízené dávkou pomocí změny nesprávně registrované dávky na jinou dávku. Tento proces můžete projít pomocí ukázkových dat společnosti USPI nebo pomocí vlastních dat. Při použití vlastních dat musí mít zboží, pro které je povolena dávka a nesmí být řízeno na základě umístění. Rovněž je třeba mít nastaven název deníku zásob pro převody zásob. Tyto úkoly obvykle provádějí zaměstnanci skladu.
+<span data-ttu-id="84cd7-104">Tento postup vás provede procesem vytvoření a zaúčtování deníku převodu zásob, za účelem opravit informace o sledování zásob.</span><span class="sxs-lookup"><span data-stu-id="84cd7-104">This procedure walks you through the process of creating and posting an inventory transfer journal in order to correct inventory tracking information.</span></span> <span data-ttu-id="84cd7-105">V tomto příkladu aktualizujeme informace o položky řízené dávkou pomocí změny nesprávně registrované dávky na jinou dávku.</span><span class="sxs-lookup"><span data-stu-id="84cd7-105">In this example, we’ll update the information of a batch controlled item by changing an incorrectly registered batch to another batch.</span></span> <span data-ttu-id="84cd7-106">Tento proces můžete projít pomocí ukázkových dat společnosti USPI nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="84cd7-106">You can walk through this procedure in demo data company USPI, or using your own data.</span></span> <span data-ttu-id="84cd7-107">Při použití vlastních dat musí mít zboží, pro které je povolena dávka a nesmí být řízeno na základě umístění.</span><span class="sxs-lookup"><span data-stu-id="84cd7-107">If you use your own data, you need to have an item that’s batch-enabled, and it must not be location-controlled.</span></span> <span data-ttu-id="84cd7-108">Rovněž je třeba mít nastaven název deníku zásob pro převody zásob.</span><span class="sxs-lookup"><span data-stu-id="84cd7-108">You also need to have an inventory journal name set up for inventory transfers.</span></span> <span data-ttu-id="84cd7-109">Tyto úkoly obvykle provádějí zaměstnanci skladu.</span><span class="sxs-lookup"><span data-stu-id="84cd7-109">These tasks would normally be carried out by a warehouse employee.</span></span>
 
 
-## <a name="create-an-inventory-transfer-journal"></a>Vytvořit deník převodu zásob
-1. Přejít do převodu.
-2. Klikněte na položku Nová.
-3. V poli Název zadejte nebo vyberte hodnotu.
-4. Klikněte na tlačítko OK.
+## <a name="create-an-inventory-transfer-journal"></a><span data-ttu-id="84cd7-110">Vytvořit deník převodu zásob</span><span class="sxs-lookup"><span data-stu-id="84cd7-110">Create an inventory transfer journal</span></span>
+1. <span data-ttu-id="84cd7-111">Přejít do převodu.</span><span class="sxs-lookup"><span data-stu-id="84cd7-111">Go to Transfer.</span></span>
+2. <span data-ttu-id="84cd7-112">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="84cd7-112">Click New.</span></span>
+3. <span data-ttu-id="84cd7-113">V poli Název zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="84cd7-113">In the Name field, enter or select a value.</span></span>
+4. <span data-ttu-id="84cd7-114">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="84cd7-114">Click OK.</span></span>
 
-## <a name="create-journal-lines"></a>Vytvoření řádků deníku
-1. Klikněte na položku Nová.
-2. V poli Číslo zboží zadejte nebo vyberte hodnotu.
-    * Pokud používáte USPI, vyberte položku M5003.  
-3. Zadejte číslo do pole Množství.
-4. Klepněte na kartu Dimenze zásob.
-5. V poli Číslo dávky zadejte nebo vyberte hodnotu.
-6. V poli Lokalita zadejte nebo vyberte hodnotu.
-7. V poli Sklad zadejte nebo vyberte hodnotu.
-8. V poli Číslo dávky zadejte nebo vyberte hodnotu.
+## <a name="create-journal-lines"></a><span data-ttu-id="84cd7-115">Vytvoření řádků deníku</span><span class="sxs-lookup"><span data-stu-id="84cd7-115">Create journal lines</span></span>
+1. <span data-ttu-id="84cd7-116">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="84cd7-116">Click New.</span></span>
+2. <span data-ttu-id="84cd7-117">V poli Číslo zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="84cd7-117">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="84cd7-118">Pokud používáte USPI, vyberte položku M5003.</span><span class="sxs-lookup"><span data-stu-id="84cd7-118">If you are using USPI, select item M5003.</span></span>  
+3. <span data-ttu-id="84cd7-119">Zadejte číslo do pole Množství.</span><span class="sxs-lookup"><span data-stu-id="84cd7-119">In the Quantity field, enter a number.</span></span>
+4. <span data-ttu-id="84cd7-120">Klepněte na kartu Dimenze zásob.</span><span class="sxs-lookup"><span data-stu-id="84cd7-120">Click the Inventory dimensions tab.</span></span>
+5. <span data-ttu-id="84cd7-121">V poli Číslo dávky zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="84cd7-121">In the Batch number field, enter or select a value.</span></span>
+6. <span data-ttu-id="84cd7-122">V poli Lokalita zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="84cd7-122">In the Site field, enter or select a value.</span></span>
+7. <span data-ttu-id="84cd7-123">V poli Sklad zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="84cd7-123">In the Warehouse field, enter or select a value.</span></span>
+8. <span data-ttu-id="84cd7-124">V poli Číslo dávky zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="84cd7-124">In the Batch number field, enter or select a value.</span></span>
 
-## <a name="post-the-journal"></a>Zaúčtovat deník
-1. Klikněte na položku Zaúčtovat.
-2. Klikněte na tlačítko OK.
+## <a name="post-the-journal"></a><span data-ttu-id="84cd7-125">Zaúčtovat deník</span><span class="sxs-lookup"><span data-stu-id="84cd7-125">Post the journal</span></span>
+1. <span data-ttu-id="84cd7-126">Klikněte na položku Zaúčtovat.</span><span class="sxs-lookup"><span data-stu-id="84cd7-126">Click Post.</span></span>
+2. <span data-ttu-id="84cd7-127">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="84cd7-127">Click OK.</span></span>
 
-## <a name="check-tracing-information"></a>Kontrola informací o trase
-1. Klepněte na položku Zásoby.
-2. Klikněte na Trasa.
-3. Klikněte na tlačítko OK.
-    * Pomocí těchto informací trasování lze zpětně sledovat, ze které dávky jste opravili skladové položky.  Můžete také použít stránku Sledování položky pro tyto informace.  
-4. Zavřete stránku.
+## <a name="check-tracing-information"></a><span data-ttu-id="84cd7-128">Kontrola informací o trase</span><span class="sxs-lookup"><span data-stu-id="84cd7-128">Check tracing information</span></span>
+1. <span data-ttu-id="84cd7-129">Klepněte na položku Zásoby.</span><span class="sxs-lookup"><span data-stu-id="84cd7-129">Click Inventory.</span></span>
+2. <span data-ttu-id="84cd7-130">Klikněte na Trasa.</span><span class="sxs-lookup"><span data-stu-id="84cd7-130">Click Trace.</span></span>
+3. <span data-ttu-id="84cd7-131">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="84cd7-131">Click OK.</span></span>
+    * <span data-ttu-id="84cd7-132">Pomocí těchto informací trasování lze zpětně sledovat, ze které dávky jste opravili skladové položky.</span><span class="sxs-lookup"><span data-stu-id="84cd7-132">Using this tracing information you can back trace which batch you corrected inventory from.</span></span>  <span data-ttu-id="84cd7-133">Můžete také použít stránku Sledování položky pro tyto informace.</span><span class="sxs-lookup"><span data-stu-id="84cd7-133">You can also use the Item tracing page to see this information.</span></span>  
+4. <span data-ttu-id="84cd7-134">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="84cd7-134">Close the page.</span></span>
 
-## <a name="check-inventory-transactions"></a>Kontrola transakcí zásob
-1. Klepněte na položku Zásoby.
-2. Klikněte na Transakce.
-    * V tomto poli se zobrazí transakce, které byly vytvořeny při zaúčtování deníku.   
-
+## <a name="check-inventory-transactions"></a><span data-ttu-id="84cd7-135">Kontrola transakcí zásob</span><span class="sxs-lookup"><span data-stu-id="84cd7-135">Check inventory transactions</span></span>
+1. <span data-ttu-id="84cd7-136">Klepněte na položku Zásoby.</span><span class="sxs-lookup"><span data-stu-id="84cd7-136">Click Inventory.</span></span>
+2. <span data-ttu-id="84cd7-137">Klikněte na Transakce.</span><span class="sxs-lookup"><span data-stu-id="84cd7-137">Click Transactions.</span></span>
+    * <span data-ttu-id="84cd7-138">V tomto poli se zobrazí transakce, které byly vytvořeny při zaúčtování deníku.</span><span class="sxs-lookup"><span data-stu-id="84cd7-138">Here you can see the transactions that were created when you posted your journal.</span></span>   
 

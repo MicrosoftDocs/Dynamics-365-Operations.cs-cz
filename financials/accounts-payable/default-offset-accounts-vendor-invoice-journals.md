@@ -18,26 +18,26 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4691ac4456b08084bcd93f7a8447719a15299c93
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c2b62eafc71b5d1ad4eaaf252efd1dcbb97b86f3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Výchozí protiúčty pro deníky pro faktury dodavatele a pro deníky pro schvalování faktur
+# <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a><span data-ttu-id="78b37-102">Výchozí protiúčty pro deníky pro faktury dodavatele a pro deníky pro schvalování faktur</span><span class="sxs-lookup"><span data-stu-id="78b37-102">Default offset accounts for vendor invoice journals and invoice approval journals</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
 
 
-Výchozí protiúčty se používají v následující stránkách deníku faktury dodavatele:
+<span data-ttu-id="78b37-103">Výchozí protiúčty se používají v následující stránkách deníku faktury dodavatele:</span><span class="sxs-lookup"><span data-stu-id="78b37-103">Default offset accounts are used on the following vendor invoice journal pages:</span></span>
 
--   Deník faktur
--   Deník schválených faktur
+-   <span data-ttu-id="78b37-104">Deník faktur</span><span class="sxs-lookup"><span data-stu-id="78b37-104">Invoice journal</span></span>
+-   <span data-ttu-id="78b37-105">Deník schválených faktur</span><span class="sxs-lookup"><span data-stu-id="78b37-105">Invoice approval journal</span></span>
 
-Podle následující tabulky se rozhodněte, kam chcete přiřadit výchozí účty pro deníky faktur.
+<span data-ttu-id="78b37-106">Podle následující tabulky se rozhodněte, kam chcete přiřadit výchozí účty pro deníky faktur.</span><span class="sxs-lookup"><span data-stu-id="78b37-106">Use the following table to help decide where you should assign default accounts for invoice journals.</span></span>
 
 <table>
 <colgroup>
@@ -48,51 +48,51 @@ Podle následující tabulky se rozhodněte, kam chcete přiřadit výchozí ú�
 </colgroup>
 <thead>
 <tr class="header">
-<th>Zde nastavte výchozí účty</th>
-<th>Kde jsou zadávány výchozí účty</th>
-<th>Jaký má tato možnost vliv na zpracování</th>
-<th>Kdy použít tuto možnost</th>
+<th><span data-ttu-id="78b37-107">Zde nastavte výchozí účty</span><span class="sxs-lookup"><span data-stu-id="78b37-107">Set up default accounts here</span></span></th>
+<th><span data-ttu-id="78b37-108">Kde jsou zadávány výchozí účty</span><span class="sxs-lookup"><span data-stu-id="78b37-108">Where default accounts are provided</span></span></th>
+<th><span data-ttu-id="78b37-109">Jaký má tato možnost vliv na zpracování</span><span class="sxs-lookup"><span data-stu-id="78b37-109">How this option affects processing</span></span></th>
+<th><span data-ttu-id="78b37-110">Kdy použít tuto možnost</span><span class="sxs-lookup"><span data-stu-id="78b37-110">When you should use this option</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Skupina dodavatelů</strong> – nastavte kódů na výchozí protiúčty pro skupiny dodavatelů na stránce <strong>Výchozí nastavení účtu</strong>, kterou lze otevřít ze stránky <strong>Skupiny dodavatelů</strong>.</td>
+<td><span data-ttu-id="78b37-111"><strong>Skupina dodavatelů</strong> – nastavte kódů na výchozí protiúčty pro skupiny dodavatelů na stránce <strong>Výchozí nastavení účtu</strong>, kterou lze otevřít ze stránky <strong>Skupiny dodavatelů</strong>.</span><span class="sxs-lookup"><span data-stu-id="78b37-111"><strong>Vendor group</strong> – Set up default offset accounts for vendor groups on the <strong>Default account setup</strong> page, which you can open from the <strong>Vendor groups</strong> page.</span></span></td>
 <td><ul>
-<li>Účet dodavatele</li>
-<li>Položky deníku pro účty dodavatele ve skupině dodavatelů, nejsou-li účty uvedeny pro účty dodavatelů</li>
+<li><span data-ttu-id="78b37-112">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="78b37-112">Vendor account</span></span></li>
+<li><span data-ttu-id="78b37-113">Položky deníku pro účty dodavatele ve skupině dodavatelů, nejsou-li účty uvedeny pro účty dodavatelů</span><span class="sxs-lookup"><span data-stu-id="78b37-113">Journal entries for vendor accounts in the vendor group, if default accounts aren’t specified for vendor accounts</span></span></li>
 </ul></td>
-<td>Výchozí protiúčty pro skupiny dodavatelů se zobrazí jako na výchozí protiúčty pro dodavatele na stránce <strong>Výchozí nastavení účtu</strong>. Můžete otevřít tuto stránku na stránce se seznamem <strong>Všichni dodavatelé</strong>.</td>
-<td>Tuto možnost použijte, pokud obvykle platíte za stejné typy věcí ze stejné skupiny dodavatelů během času.</td>
+<td><span data-ttu-id="78b37-114">Výchozí protiúčty pro skupiny dodavatelů se zobrazí jako na výchozí protiúčty pro dodavatele na stránce <strong>Výchozí nastavení účtu</strong>.</span><span class="sxs-lookup"><span data-stu-id="78b37-114">The default offset accounts for vendor groups are shown as default offset accounts for vendors on the <strong>Default account setup</strong> page.</span></span> <span data-ttu-id="78b37-115">Můžete otevřít tuto stránku na stránce se seznamem <strong>Všichni dodavatelé</strong>.</span><span class="sxs-lookup"><span data-stu-id="78b37-115">You can open this page from the <strong>All vendors</strong> list page.</span></span></td>
+<td><span data-ttu-id="78b37-116">Tuto možnost použijte, pokud obvykle platíte za stejné typy věcí ze stejné skupiny dodavatelů během času.</span><span class="sxs-lookup"><span data-stu-id="78b37-116">Use this option if you typically pay for the same types of things from the same vendor groups over time.</span></span></td>
 </tr>
 <tr class="even">
-<td><strong>Účet dodavatele</strong> – nastavte kódů na výchozí účty pro účty dodavatelů na stránce <strong>Výchozí nastavení účtu</strong>, kterou lze otevřít ze stránky <strong>Dodavatelé</strong>.</td>
-<td>Položky deníku pro účet dodavatele</td>
-<td>Výchozí protiúčty pro účty dodavatele jsou zobrazeny jako výchozí protiúčty pro položky deníku pro účet dodavatele.</td>
-<td>Tuto možnost použijte, pokud obvykle platíte za stejné typy věcí od stejných dodavatelů během času.</td>
+<td><span data-ttu-id="78b37-117"><strong>Účet dodavatele</strong> – nastavte kódů na výchozí účty pro účty dodavatelů na stránce <strong>Výchozí nastavení účtu</strong>, kterou lze otevřít ze stránky <strong>Dodavatelé</strong>.</span><span class="sxs-lookup"><span data-stu-id="78b37-117"><strong>Vendor account</strong> – Set up default accounts for vendor accounts on the <strong>Default account setup</strong> page, which you can open from the <strong>Vendors</strong> page.</span></span></td>
+<td><span data-ttu-id="78b37-118">Položky deníku pro účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="78b37-118">Journal entries for the vendor account</span></span></td>
+<td><span data-ttu-id="78b37-119">Výchozí protiúčty pro účty dodavatele jsou zobrazeny jako výchozí protiúčty pro položky deníku pro účet dodavatele.</span><span class="sxs-lookup"><span data-stu-id="78b37-119">The default offset accounts for vendor accounts are shown as default offset accounts for journal entries for the vendor account.</span></span></td>
+<td><span data-ttu-id="78b37-120">Tuto možnost použijte, pokud obvykle platíte za stejné typy věcí od stejných dodavatelů během času.</span><span class="sxs-lookup"><span data-stu-id="78b37-120">Use this option if you typically pay for the same types of things from the same vendors over time.</span></span></td>
 </tr>
 <tr class="odd">
-<td><strong>Názvy deníků</strong> – nastavte výchozí protiúčty pro deníky na stránce <strong>Názvy deníků</strong>. Vyberte možnost <strong>Pevný protiúčet</strong>. Poznámka: není možné zadat výchozí protiúčty pro názvy deníků, pokud je typ deníku u názvů deníků <strong>Registr faktur</strong> nebo <strong>Schválení</strong>.</td>
+<td><span data-ttu-id="78b37-121"><strong>Názvy deníků</strong> – nastavte výchozí protiúčty pro deníky na stránce <strong>Názvy deníků</strong>.</span><span class="sxs-lookup"><span data-stu-id="78b37-121"><strong>Journal names</strong> – Set up default offset accounts for journals on the <strong>Journal names</strong> page.</span></span> <span data-ttu-id="78b37-122">Vyberte možnost <strong>Pevný protiúčet</strong>.</span><span class="sxs-lookup"><span data-stu-id="78b37-122">Select the <strong>Fixed offset account</strong> option.</span></span> <span data-ttu-id="78b37-123">Poznámka: není možné zadat výchozí protiúčty pro názvy deníků, pokud je typ deníku u názvů deníků <strong>Registr faktur</strong> nebo <strong>Schválení</strong>.</span><span class="sxs-lookup"><span data-stu-id="78b37-123">Note that you can't specify default offset accounts on journal names if the journal type of the journal names is <strong>Invoice register</strong> or <strong>Approval</strong>.</span></span></td>
 <td><ul>
-<li>Záhlaví deínku používajícího název deníku</li>
-<li>Položky deníku v denících, které používají název deníku</li>
+<li><span data-ttu-id="78b37-124">Záhlaví deínku používajícího název deníku</span><span class="sxs-lookup"><span data-stu-id="78b37-124">Journal header that uses the journal name</span></span></li>
+<li><span data-ttu-id="78b37-125">Položky deníku v denících, které používají název deníku</span><span class="sxs-lookup"><span data-stu-id="78b37-125">Journal entries in journals that use the journal name</span></span></li>
 </ul></td>
-<td>Pokud je vybrána možnost <strong>Pevný protiúčet</strong> na stránce <strong>Názvy deníků</strong>, bude protiúčet pro název deníku mít přednost před výchozím protiúčtem pro dodavatele nebo skupinu dodavatelů.</td>
-<td>Tato možnost slouží k nastavení deníků pro specifické výdaje a náklady, které jsou účtovány na konkrétní účty, bez ohledu na to, kdo je dodavatelem nebo které skupiny dodavatelů je součástí.</td>
+<td><span data-ttu-id="78b37-126">Pokud je vybrána možnost <strong>Pevný protiúčet</strong> na stránce <strong>Názvy deníků</strong>, bude protiúčet pro název deníku mít přednost před výchozím protiúčtem pro dodavatele nebo skupinu dodavatelů.</span><span class="sxs-lookup"><span data-stu-id="78b37-126">If the <strong>Fixed offset account</strong> option on the <strong>Journal names</strong> page is selected, the offset account for the journal name overrides the default offset account for the vendor or vendor group.</span></span></td>
+<td><span data-ttu-id="78b37-127">Tato možnost slouží k nastavení deníků pro specifické výdaje a náklady, které jsou účtovány na konkrétní účty, bez ohledu na to, kdo je dodavatelem nebo které skupiny dodavatelů je součástí.</span><span class="sxs-lookup"><span data-stu-id="78b37-127">Use this option to set up journals for specific costs and expenses that are charged to specific accounts, regardless of the vendor or the vendor group that the vendor belongs to.</span></span></td>
 </tr>
 <tr class="even">
-<td><strong>Názvy deníků</strong> – nastavte výchozí protiúčty pro deníky na stránce <strong>Názvy deníků</strong>. Zrušte výběr možnosti <strong>Pevný protiúčet</strong>. Poznámka: není možné zadat výchozí protiúčty pro názvy deníků, pokud je typ deníku u názvů deníků <strong>Registr faktur</strong> nebo <strong>Schválení</strong>.</td>
+<td><span data-ttu-id="78b37-128"><strong>Názvy deníků</strong> – nastavte výchozí protiúčty pro deníky na stránce <strong>Názvy deníků</strong>.</span><span class="sxs-lookup"><span data-stu-id="78b37-128"><strong>Journal names</strong> – Set up default offset accounts for journals on the <strong>Journal names</strong> page.</span></span> <span data-ttu-id="78b37-129">Zrušte výběr možnosti <strong>Pevný protiúčet</strong>.</span><span class="sxs-lookup"><span data-stu-id="78b37-129">Clear the <strong>Fixed offset account</strong> option.</span></span> <span data-ttu-id="78b37-130">Poznámka: není možné zadat výchozí protiúčty pro názvy deníků, pokud je typ deníku u názvů deníků <strong>Registr faktur</strong> nebo <strong>Schválení</strong>.</span><span class="sxs-lookup"><span data-stu-id="78b37-130">Note that you can't specify default offset accounts on journal names if the journal type of the journal names is <strong>Invoice register</strong> or <strong>Approval</strong>.</span></span></td>
 <td><ul>
-<li>Záhlaví deníku</li>
-<li>Položky deníku v denících, které používají název deníku</li>
+<li><span data-ttu-id="78b37-131">Záhlaví deníku</span><span class="sxs-lookup"><span data-stu-id="78b37-131">Journal header</span></span></li>
+<li><span data-ttu-id="78b37-132">Položky deníku v denících, které používají název deníku</span><span class="sxs-lookup"><span data-stu-id="78b37-132">Journal entries in journals that use the journal name</span></span></li>
 </ul></td>
-<td>Tyto výchozí položky se používají na stránkách pro záhlaví deníku a protiúčet na stránce pro záhlaví deníku se používá jako výchozí položka na stránkách pro doklad deníku. Výchozí účty na stránce <strong>Názvy deníku </strong>se používají pouze v případě, že nejsou nastaveny výchozí účty pro účet dodavatele.</td>
-<td>Tato možnost slouží k vytvoření výchozích účtů, které použijete, pokud protiúčet dodavatele není přiřazen.</td>
+<td><span data-ttu-id="78b37-133">Tyto výchozí položky se používají na stránkách pro záhlaví deníku a protiúčet na stránce pro záhlaví deníku se používá jako výchozí položka na stránkách pro doklad deníku.</span><span class="sxs-lookup"><span data-stu-id="78b37-133">These default entries are used on journal header pages, and the offset account on the journal header page is used as a default entry on the journal voucher pages.</span></span> <span data-ttu-id="78b37-134">Výchozí účty na stránce <strong>Názvy deníku </strong>se používají pouze v případě, že nejsou nastaveny výchozí účty pro účet dodavatele.</span><span class="sxs-lookup"><span data-stu-id="78b37-134">Default accounts from the <strong>Journal names </strong>page are used only if default accounts aren’t set up for the vendor account.</span></span></td>
+<td><span data-ttu-id="78b37-135">Tato možnost slouží k vytvoření výchozích účtů, které použijete, pokud protiúčet dodavatele není přiřazen.</span><span class="sxs-lookup"><span data-stu-id="78b37-135">Use this option to set up default accounts that are used when a default vendor offset account isn't assigned.</span></span></td>
 </tr>
 <tr class="odd">
-<td><strong>Záhlaví deníku</strong> – Nastavte výchozí protiúčet pro deník, který má být použit jako výchozí položka na stránkách pro doklad deníku. Poznámka: není možné zadat výchozí protiúčty pro záhlaví deníků, pokud je typ deníku u názvů deníků <strong>Registr faktur</strong> nebo <strong>Schválení</strong>.</td>
-<td>Položky deníku v deníku</td>
-<td>Výchozí protiúčet pro deník se používá jako výchozí položka na stránkách pro doklad deníku.</td>
-<td>Tato možnost slouží k urychlení zadávání dat, pokud většina položek v deníku má stejný protiúčet.</td>
+<td><span data-ttu-id="78b37-136"><strong>Záhlaví deníku</strong> – Nastavte výchozí protiúčet pro deník, který má být použit jako výchozí položka na stránkách pro doklad deníku.</span><span class="sxs-lookup"><span data-stu-id="78b37-136"><strong>Journal header</strong> – Set up a default offset account for a journal as a default entry on the journal voucher pages.</span></span> <span data-ttu-id="78b37-137">Poznámka: není možné zadat výchozí protiúčty pro záhlaví deníků, pokud je typ deníku u názvů deníků <strong>Registr faktur</strong> nebo <strong>Schválení</strong>.</span><span class="sxs-lookup"><span data-stu-id="78b37-137">Note that you can't specify default offset accounts on the journal header if the journal type of the journal names is <strong>Invoice register</strong> or <strong>Approval</strong>.</span></span></td>
+<td><span data-ttu-id="78b37-138">Položky deníku v deníku</span><span class="sxs-lookup"><span data-stu-id="78b37-138">Journal entries in the journal</span></span></td>
+<td><span data-ttu-id="78b37-139">Výchozí protiúčet pro deník se používá jako výchozí položka na stránkách pro doklad deníku.</span><span class="sxs-lookup"><span data-stu-id="78b37-139">The default offset account for a journal is used as the default entry on the journal voucher pages.</span></span></td>
+<td><span data-ttu-id="78b37-140">Tato možnost slouží k urychlení zadávání dat, pokud většina položek v deníku má stejný protiúčet.</span><span class="sxs-lookup"><span data-stu-id="78b37-140">Use this option to help speed up data entry if most entries in a journal have the same offset account.</span></span></td>
 </tr>
 </tbody>
 </table>

@@ -16,51 +16,51 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: e84432faf32e519059a21d2b56e320a46599c1e8
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: adb759c59d7275e7323dbb760de56acdef2e3cff
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-vendor-bank-account"></a>Vytvoření bankovního účtu dodavatele
+# <a name="create-a-vendor-bank-account"></a><span data-ttu-id="305c5-103">Vytvoření bankovního účtu dodavatele</span><span class="sxs-lookup"><span data-stu-id="305c5-103">Create a vendor bank account</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tato procedura popisuje způsob vytváření bankovního účtu pro dodavatele. Tento postup můžete projít v ukázkových datech společnosti USMF.
+<span data-ttu-id="305c5-104">Tato procedura popisuje způsob vytváření bankovního účtu pro dodavatele.</span><span class="sxs-lookup"><span data-stu-id="305c5-104">This procedure shows you how to create a bank account for a vendor.</span></span> <span data-ttu-id="305c5-105">Tento postup můžete projít v ukázkových datech společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="305c5-105">You can use this procedure in demo data company USMF.</span></span>
 
-1. Přejděte na Zásobování a zdroje > Dodavatelé > Všichni dodavatelé.
-2. Vyberte dodavatele, pro kterého chcete vytvořit bankovní účet, a klepněte na odkaz u ID účtu dodavatele.
-3. V podokně akcí klikněte na možnost Dodavatel.
-4. Klikněte na možnost Bankovní účty.
-5. Klikněte na položku Nová.
-6. Zadejte hodnotu do pole Bankovní účet.
-    * Toto ID se použije k určení bankovního účtu v záznamu dodavatele.  
-7. Zadejte hodnotu do pole Název.
-8. V poli Bankovní skupiny zadejte nebo vyberte hodnotu.
-9. V poli Typ směrového kódu vyberte vhodnou možnost.
-    * Toto je typ směrového kódu banky používaného pro mezinárodní platby.  
-10. Zadejte hodnotu do pole Číslo bankovního účtu.
-11. V poli Kód SWIFT zadejte hodnotu.
-12. Zadejte hodnotu do pole IBAN.
-    * Číslo IBAN musí být ve správném formátu. Například DE89370400440532013000.  
-    * Stav bankovního účtu je aktivní v případě, že bylo dosaženo aktivní datum, a nepřesáhli jste datum vypršení platnosti. Je rovněž aktivní, pokud je prázdné aktivní datum i pole Datum vypršení platnosti. Obsahují-li pole Aktivní datum i Datum vypršení platnosti data spadající do budoucnosti, elektronické platby nejsou k dispozici. Lze však použít jiné typy plateb a bankovní účet je aktivní.  
-13. Rozbalte sekci Nastavení.
-14. V poli Kód textu zadejte hodnotu.
-    * Toto pole určuje kód, který se zobrazí na bankovním výpisu příjemce.  
-15. Zadejte hodnotu do pole Zpráva bance.
-16. Zadejte hodnotu do pole Odkaz na kurz.
-    * Toto je referenční číslo sazby směnného kurzu pro fixní nebo budoucí datum.  
-17. V poli Měna zadejte nebo vyberte hodnotu.
-    * Při vystavení verifikační transakce poskytuje tato část přehled stavu (v čekání nebo schválené).  
-18. Rozbalte sekci Adresa.
-19. Rozbalte sekci Verifikační transakce.
-20. Rozbalte oddíl Kontaktní informace.
-21. Zadejte hodnotu do pole Telefon.
-22. Zavřete stránku.
-23. Klikněte na položku Upravit.
-24. Rozbalte sekci Platba.
-25. V poli Bankovní účet vyberte účet, který jste právě vytvořili.
-26. Klikněte na položku Uložit.
-    * Adresa může být zděděna z bankovní skupiny, pokud je určena, nebo ji můžete přidat zde.  
+1. <span data-ttu-id="305c5-106">Přejděte na Zásobování a zdroje > Dodavatelé > Všichni dodavatelé.</span><span class="sxs-lookup"><span data-stu-id="305c5-106">Go to Procurement and sourcing > Vendors > All vendors.</span></span>
+2. <span data-ttu-id="305c5-107">Vyberte dodavatele, pro kterého chcete vytvořit bankovní účet, a klepněte na odkaz u ID účtu dodavatele.</span><span class="sxs-lookup"><span data-stu-id="305c5-107">Select the vendor that you want to create a bank account for, and then click the link on the Vendor account ID.</span></span>
+3. <span data-ttu-id="305c5-108">V podokně akcí klikněte na možnost Dodavatel.</span><span class="sxs-lookup"><span data-stu-id="305c5-108">On the Action Pane, click Vendor.</span></span>
+4. <span data-ttu-id="305c5-109">Klikněte na možnost Bankovní účty.</span><span class="sxs-lookup"><span data-stu-id="305c5-109">Click Bank accounts.</span></span>
+5. <span data-ttu-id="305c5-110">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="305c5-110">Click New.</span></span>
+6. <span data-ttu-id="305c5-111">Zadejte hodnotu do pole Bankovní účet.</span><span class="sxs-lookup"><span data-stu-id="305c5-111">In the Bank account field, type a value.</span></span>
+    * <span data-ttu-id="305c5-112">Toto ID se použije k určení bankovního účtu v záznamu dodavatele.</span><span class="sxs-lookup"><span data-stu-id="305c5-112">This ID will be used to identify the bank account on the vendor record.</span></span>  
+7. <span data-ttu-id="305c5-113">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="305c5-113">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="305c5-114">V poli Bankovní skupiny zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="305c5-114">In the Bank groups field, enter or select a value.</span></span>
+9. <span data-ttu-id="305c5-115">V poli Typ směrového kódu vyberte vhodnou možnost.</span><span class="sxs-lookup"><span data-stu-id="305c5-115">In the Routing number type field, select an option.</span></span>
+    * <span data-ttu-id="305c5-116">Toto je typ směrového kódu banky používaného pro mezinárodní platby.</span><span class="sxs-lookup"><span data-stu-id="305c5-116">This is the type of routing number that’s used for international payments.</span></span>  
+10. <span data-ttu-id="305c5-117">Zadejte hodnotu do pole Číslo bankovního účtu.</span><span class="sxs-lookup"><span data-stu-id="305c5-117">In the Bank account number field, type a value.</span></span>
+11. <span data-ttu-id="305c5-118">V poli Kód SWIFT zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="305c5-118">In the SWIFT code field, type a value.</span></span>
+12. <span data-ttu-id="305c5-119">Zadejte hodnotu do pole IBAN.</span><span class="sxs-lookup"><span data-stu-id="305c5-119">In the IBAN field, type a value.</span></span>
+    * <span data-ttu-id="305c5-120">Číslo IBAN musí být ve správném formátu.</span><span class="sxs-lookup"><span data-stu-id="305c5-120">The IBAN number must be in the correct format.</span></span> <span data-ttu-id="305c5-121">Například DE89370400440532013000.</span><span class="sxs-lookup"><span data-stu-id="305c5-121">For example, you could use DE89370400440532013000.</span></span>  
+    * <span data-ttu-id="305c5-122">Stav bankovního účtu je aktivní v případě, že bylo dosaženo aktivní datum, a nepřesáhli jste datum vypršení platnosti.</span><span class="sxs-lookup"><span data-stu-id="305c5-122">The status of the bank account is Active if the Active date has been reached, and the Expiration date has not been exceeded.</span></span> <span data-ttu-id="305c5-123">Je rovněž aktivní, pokud je prázdné aktivní datum i pole Datum vypršení platnosti.</span><span class="sxs-lookup"><span data-stu-id="305c5-123">It’s also active if both the Active date and Expiration date fields are blank.</span></span> <span data-ttu-id="305c5-124">Obsahují-li pole Aktivní datum i Datum vypršení platnosti data spadající do budoucnosti, elektronické platby nejsou k dispozici.</span><span class="sxs-lookup"><span data-stu-id="305c5-124">If the dates in both the Active date and Expiration date fields are in the future electronic payments are not available.</span></span> <span data-ttu-id="305c5-125">Lze však použít jiné typy plateb a bankovní účet je aktivní.</span><span class="sxs-lookup"><span data-stu-id="305c5-125">Other payment types are available and the bank account is active.</span></span>  
+13. <span data-ttu-id="305c5-126">Rozbalte sekci Nastavení.</span><span class="sxs-lookup"><span data-stu-id="305c5-126">Expand the Setup section.</span></span>
+14. <span data-ttu-id="305c5-127">V poli Kód textu zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="305c5-127">In the Text code field, type a value.</span></span>
+    * <span data-ttu-id="305c5-128">Toto pole určuje kód, který se zobrazí na bankovním výpisu příjemce.</span><span class="sxs-lookup"><span data-stu-id="305c5-128">This field specifies a code that will appear on the bank statement of the recipient.</span></span>  
+15. <span data-ttu-id="305c5-129">Zadejte hodnotu do pole Zpráva bance.</span><span class="sxs-lookup"><span data-stu-id="305c5-129">In the Message to bank field, type a value.</span></span>
+16. <span data-ttu-id="305c5-130">Zadejte hodnotu do pole Odkaz na kurz.</span><span class="sxs-lookup"><span data-stu-id="305c5-130">In the Exchange reference field, type a value.</span></span>
+    * <span data-ttu-id="305c5-131">Toto je referenční číslo sazby směnného kurzu pro fixní nebo budoucí datum.</span><span class="sxs-lookup"><span data-stu-id="305c5-131">This is the reference number for any forward-term or fixed-term rate of exchange.</span></span>  
+17. <span data-ttu-id="305c5-132">V poli Měna zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="305c5-132">In the Currency field, enter or select a value.</span></span>
+    * <span data-ttu-id="305c5-133">Při vystavení verifikační transakce poskytuje tato část přehled stavu (v čekání nebo schválené).</span><span class="sxs-lookup"><span data-stu-id="305c5-133">When prenotes are issued, this section provides an overview of their status (pending or approved).</span></span>  
+18. <span data-ttu-id="305c5-134">Rozbalte sekci Adresa.</span><span class="sxs-lookup"><span data-stu-id="305c5-134">Expand the Address section.</span></span>
+19. <span data-ttu-id="305c5-135">Rozbalte sekci Verifikační transakce.</span><span class="sxs-lookup"><span data-stu-id="305c5-135">Expand the Prenotes section.</span></span>
+20. <span data-ttu-id="305c5-136">Rozbalte oddíl Kontaktní informace.</span><span class="sxs-lookup"><span data-stu-id="305c5-136">Expand the Contact information section.</span></span>
+21. <span data-ttu-id="305c5-137">Zadejte hodnotu do pole Telefon.</span><span class="sxs-lookup"><span data-stu-id="305c5-137">In the Telephone field, type a value.</span></span>
+22. <span data-ttu-id="305c5-138">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="305c5-138">Close the page.</span></span>
+23. <span data-ttu-id="305c5-139">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="305c5-139">Click Edit.</span></span>
+24. <span data-ttu-id="305c5-140">Rozbalte sekci Platba.</span><span class="sxs-lookup"><span data-stu-id="305c5-140">Expand the Payment section.</span></span>
+25. <span data-ttu-id="305c5-141">V poli Bankovní účet vyberte účet, který jste právě vytvořili.</span><span class="sxs-lookup"><span data-stu-id="305c5-141">In the Bank  account field, select the account that you’ve just created.</span></span>
+26. <span data-ttu-id="305c5-142">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="305c5-142">Click Save.</span></span>
+    * <span data-ttu-id="305c5-143">Adresa může být zděděna z bankovní skupiny, pokud je určena, nebo ji můžete přidat zde.</span><span class="sxs-lookup"><span data-stu-id="305c5-143">The address may be inherited from the bank group, if one is specified, or you can add it here.</span></span>  
 
 

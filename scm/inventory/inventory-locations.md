@@ -1,7 +1,7 @@
 ---
 title: "Skladová místa"
 description: "Skladová místa se používají se základní funkcí skladu (WMS I) k určení toho, kde jsou položky uskladněny, a kde se položky vybírají v rámci skladu WMS I."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,66 +10,62 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WMSLocation
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2134
 ms.assetid: 69bf6922-4151-447f-b678-4ba95637f54c
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 95d93c9d471cc86877f35340693c171958db71df
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: 22f4d0c93b0fccdb5439998a68add7b7e0e7750b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
 
-# <a name="inventory-locations"></a>Skladová místa
+# <a name="inventory-locations"></a><span data-ttu-id="ff77b-103">Skladová místa</span><span class="sxs-lookup"><span data-stu-id="ff77b-103">Inventory locations</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Skladová místa se používají se základní funkcí skladu (WMS I) k určení toho, kde jsou položky uskladněny, a kde se položky vybírají v rámci skladu WMS I.
+<span data-ttu-id="ff77b-104">Skladová místa se používají se základní funkcí skladu (WMS I) k určení toho, kde jsou položky uskladněny, a kde se položky vybírají v rámci skladu WMS I.</span><span class="sxs-lookup"><span data-stu-id="ff77b-104">Inventory locations are used with basic warehousing (WMS I) to determine where items are stored and where items are picked from in a WMS I warehouse.</span></span>
 
-V tomto tématu se týká funkcí v modulu Správa zboží. Nevztahuje se na funkce v modulu Řízení skladu.
+<span data-ttu-id="ff77b-105">V tomto tématu se týká funkcí v modulu Správa zboží.</span><span class="sxs-lookup"><span data-stu-id="ff77b-105">This topic applies to features in the Inventory management module.</span></span> <span data-ttu-id="ff77b-106">Nevztahuje se na funkce v modulu Řízení skladu.</span><span class="sxs-lookup"><span data-stu-id="ff77b-106">It does not apply to features in the Warehouse management module.</span></span>
 
-Termín skladové místo je definován jako místo, ze kterého se vybírají, a kam se ukládají položky.
+<span data-ttu-id="ff77b-107">Termín skladové místo je definován jako místo, ze kterého se vybírají, a kam se ukládají položky.</span><span class="sxs-lookup"><span data-stu-id="ff77b-107">The term location refers to the place that items are stored and drawn from.</span></span>
 
-Lze také určit místo vložení položky pro každé skladové místo. Implicitně jsou totožná. Položky se obvykle ukládají a vybírají ze stejné strany skladového místa, ale ne vždy. Například položky uložené v průběžných regálech se vkládají z jedné uličky a vybírají se z druhé uličky. Hlavním vstupním údajem je název skladového místa, který je obvykle určen svými souřadnicemi: sklad, ulička, stojan, police a přihrádka. Tento název nebo ID lze zadat ručně nebo vytvořit ze souřadnic skladového místa – například 01-02-03-4, kde platí, že ulička = 1, stojan = 2, police = 3, přihrádka = 4 (stránka Skladové místo).
-Vlastnosti skladového místa
--------------------
+<span data-ttu-id="ff77b-108">Lze také určit místo vložení položky pro každé skladové místo.</span><span class="sxs-lookup"><span data-stu-id="ff77b-108">For each location, the place where the item is inserted can also be specified.</span></span> <span data-ttu-id="ff77b-109">Implicitně jsou totožná.</span><span class="sxs-lookup"><span data-stu-id="ff77b-109">By default, they are the same.</span></span> <span data-ttu-id="ff77b-110">Položky se obvykle ukládají a vybírají ze stejné strany skladového místa, ale ne vždy.</span><span class="sxs-lookup"><span data-stu-id="ff77b-110">Items are usually inserted and drawn from the same side of a location, but not always.</span></span> <span data-ttu-id="ff77b-111">Například položky uložené v průběžných regálech se vkládají z jedné uličky a vybírají se z druhé uličky.</span><span class="sxs-lookup"><span data-stu-id="ff77b-111">For example, items that are stored in live storage racks are inserted from one aisle and drawn from another.</span></span> <span data-ttu-id="ff77b-112">Hlavním vstupním údajem je název skladového místa, který je obvykle určen svými souřadnicemi: sklad, ulička, stojan, police a přihrádka.</span><span class="sxs-lookup"><span data-stu-id="ff77b-112">The main input is given by a location name, which is usually determined by its coordinates: warehouse, aisle, rack, shelf, and bin.</span></span> <span data-ttu-id="ff77b-113">Tento název nebo ID lze zadat ručně nebo vytvořit ze souřadnic skladového místa – například 01-02-03-4, kde platí, že ulička = 1, stojan = 2, police = 3, přihrádka = 4 (stránka Skladové místo).</span><span class="sxs-lookup"><span data-stu-id="ff77b-113">This name or ID can be entered manually or generated from the location coordinates—for example, 01-02-03-4 for aisle 1, rack 2, shelf 3, bin 4 in the Inventory locations page.</span></span>
+<span data-ttu-id="ff77b-114">Vlastnosti skladového místa</span><span class="sxs-lookup"><span data-stu-id="ff77b-114">Location properties</span></span>
 
-Skladové místo má následující charakteristiky:
--   Velikost (výška, šířka a hloubka a tím také objem)
--   Sklad, Ulička, Stojan, Police a Přihrádka
--   Typ skladového místa (velkosklad, výdejní skladové místo, vstupní přepraviště, výstupní přepraviště, vstupní místo výroby, inspekční umístění nebo kanbanový zásobník materiálu)
+<span data-ttu-id="ff77b-115">Skladové místo má následující charakteristiky:</span><span class="sxs-lookup"><span data-stu-id="ff77b-115">A location has the following characteristics:</span></span>
+-   <span data-ttu-id="ff77b-116">Velikost (výška, šířka a hloubka a tím také objem)</span><span class="sxs-lookup"><span data-stu-id="ff77b-116">Size (height, width, depth, and thereby volume)</span></span>
+-   <span data-ttu-id="ff77b-117">Sklad, Ulička, Stojan, Police a Přihrádka</span><span class="sxs-lookup"><span data-stu-id="ff77b-117">Warehouse, aisle, rack, shelf, and bin position</span></span>
+-   <span data-ttu-id="ff77b-118">Typ skladového místa (velkosklad, výdejní skladové místo, vstupní přepraviště, výstupní přepraviště, vstupní místo výroby, inspekční umístění nebo kanbanový zásobník materiálu)</span><span class="sxs-lookup"><span data-stu-id="ff77b-118">Location type (bulk location, picking location, inbound dock, outbound dock, production input location, inspection location, or kanban supermarket)</span></span>
 
-V online systémech lze pomocí kontrolního textu ověřit, že operátor pro určitou položku vybral správné skladové místo. Tento kontrolní text lze vytvořit ručně nebo lze použít výchozí.
+<span data-ttu-id="ff77b-119">V online systémech lze pomocí kontrolního textu ověřit, že operátor pro určitou položku vybral správné skladové místo.</span><span class="sxs-lookup"><span data-stu-id="ff77b-119">Check text can be used in online systems to verify that the operator has selected the correct location for a specific item.</span></span> <span data-ttu-id="ff77b-120">Tento kontrolní text lze vytvořit ručně nebo lze použít výchozí.</span><span class="sxs-lookup"><span data-stu-id="ff77b-120">This check text can be created manually or by default.</span></span>
 
-## <a name="sort-codes"></a>Kódy třídění
-Kódy třídění se používají k optimalizaci zpracování řádků výdeje, ve kterých jsou uvedeny informace nutné pro výdej položek ze skladu včetně objednávky výdeje. Kódy třídění lze určovat podle uličky a dalších souřadnic nebo je lze přiřazovat skladovému místu ručně.
+## <a name="sort-codes"></a><span data-ttu-id="ff77b-121">Kódy třídění</span><span class="sxs-lookup"><span data-stu-id="ff77b-121">Sort codes</span></span>
+<span data-ttu-id="ff77b-122">Kódy třídění se používají k optimalizaci zpracování řádků výdeje, ve kterých jsou uvedeny informace nutné pro výdej položek ze skladu včetně objednávky výdeje.</span><span class="sxs-lookup"><span data-stu-id="ff77b-122">Use sort codes to optimize the handling of picking lines, which describe the information that is required for picking items from inventory, including the picking order.</span></span> <span data-ttu-id="ff77b-123">Kódy třídění lze určovat podle uličky a dalších souřadnic nebo je lze přiřazovat skladovému místu ručně.</span><span class="sxs-lookup"><span data-stu-id="ff77b-123">Sort codes can be specified by the aisle and other coordinates, or assigned manually for the location.</span></span>
 
-## <a name="blocked-locations"></a>Blokovaná skladová místa
-Příležitostně je nutné skladové místo na určitou dobu zablokovat, například kvůli opravám. Jindy bude třeba spustit blokování jen pro vstup nebo výstup.
-Stromová struktura
---------------
+## <a name="blocked-locations"></a><span data-ttu-id="ff77b-124">Blokovaná skladová místa</span><span class="sxs-lookup"><span data-stu-id="ff77b-124">Blocked locations</span></span>
+<span data-ttu-id="ff77b-125">Příležitostně je nutné skladové místo na určitou dobu zablokovat, například kvůli opravám.</span><span class="sxs-lookup"><span data-stu-id="ff77b-125">Occasionally, you might want to indicate that a location is blocked for a period of time, for example, to allow for repairs.</span></span> <span data-ttu-id="ff77b-126">Jindy bude třeba spustit blokování jen pro vstup nebo výstup.</span><span class="sxs-lookup"><span data-stu-id="ff77b-126">At other times, you may want to indicate blocking of only the input or only output.</span></span>
 
-Na stránce Skladová místa můžete zobrazit rozvržení skladu ve stromové struktuře podle souřadnic umístění zásob, a to v definovaném formátu zobrazení.
-Spravovat skladová místa pomocí formuláře Sklad
----------------------------------------------------
+## <a name="tree-structure"></a><span data-ttu-id="ff77b-127">Stromová struktura</span><span class="sxs-lookup"><span data-stu-id="ff77b-127">Tree structure</span></span>
 
-Je možné kopírovat umístění z jednoho skladu do jiného a vytvořit umístění pomocí průvodce. Před spuštěním průvodce se ujistěte, že jste definovali výchozí názvy skladového místa na stránce Sklad.
+<span data-ttu-id="ff77b-128">Na stránce Skladová místa můžete zobrazit rozvržení skladu ve stromové struktuře podle souřadnic umístění zásob, a to v definovaném formátu zobrazení.</span><span class="sxs-lookup"><span data-stu-id="ff77b-128">In the Inventory locations page, you can view the warehouse layout in a tree structure based on the coordinates of inventory locations, in a defined display format.</span></span>
 
+## <a name="maintain-inventory-locations-via-the-warehouse-form"></a><span data-ttu-id="ff77b-129">Spravovat skladová místa pomocí formuláře Sklad</span><span class="sxs-lookup"><span data-stu-id="ff77b-129">Maintain inventory locations via the warehouse form</span></span>
+
+<span data-ttu-id="ff77b-130">Je možné kopírovat umístění z jednoho skladu do jiného a vytvořit umístění pomocí průvodce.</span><span class="sxs-lookup"><span data-stu-id="ff77b-130">It is possible to copy locations from one warehouse to another and to create locations via a wizard.</span></span> <span data-ttu-id="ff77b-131">Před spuštěním průvodce se ujistěte, že jste definovali výchozí názvy skladového místa na stránce Sklad.</span><span class="sxs-lookup"><span data-stu-id="ff77b-131">Before you run the wizard you should make sure that you have defined the default location names on the Warehouse page.</span></span>
 
 
-<a name="see-also"></a>Viz také
+
+<a name="see-also"></a><span data-ttu-id="ff77b-132">Viz také</span><span class="sxs-lookup"><span data-stu-id="ff77b-132">See also</span></span>
 --------
 
-[Vytvoření nového rozvržení skladu (Průvodce záznamem úloh)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-new-warehouse-layout)
-
-
-
+[<span data-ttu-id="ff77b-133">Vytvoření nového rozvržení skladu (Průvodce záznamem úloh)</span><span class="sxs-lookup"><span data-stu-id="ff77b-133">Create a new warehouse layout (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-new-warehouse-layout)
 

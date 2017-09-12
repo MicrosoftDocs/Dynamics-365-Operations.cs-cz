@@ -16,60 +16,60 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 492e4a94ec0caef8c51a691043a1ffb9e6a04758
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: fbd44816fc2f2569dd477fc21f59418a575bb835
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-assign-a-cost-distribution-policy-to-a-cost-control-unit"></a>Vytvoření zásad distribuce nákladů a jejich přiřazení jednotce řízení nákladů
+# <a name="create-and-assign-a-cost-distribution-policy-to-a-cost-control-unit"></a><span data-ttu-id="f7dce-103">Vytvoření zásad distribuce nákladů a jejich přiřazení jednotce řízení nákladů</span><span class="sxs-lookup"><span data-stu-id="f7dce-103">Create and assign a cost distribution policy to a cost control unit</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Pravidla pro rozdělení nákladů se používají k rozdělení nákladů, které byly finančně vypočítány z hromadného nákladového střediska. Nákladový účetní zajišťuje, že jsou náklady distribuovány do nákladových středisek na základě vybraného základu přidělení. Kontrolní jednotce nákladů jsou přiřazeny zásada a odpovídajících pravidla. Tento průvodce záznamem úloh slouží jako příklad toho, jak vytvořit zásadu distribuce nákladů a odpovídajících pravidel.
+<span data-ttu-id="f7dce-104">Pravidla pro rozdělení nákladů se používají k rozdělení nákladů, které byly finančně vypočítány z hromadného nákladového střediska.</span><span class="sxs-lookup"><span data-stu-id="f7dce-104">Cost distribution rules are used to distribute costs that have been financially counted on a collective cost center.</span></span> <span data-ttu-id="f7dce-105">Nákladový účetní zajišťuje, že jsou náklady distribuovány do nákladových středisek na základě vybraného základu přidělení.</span><span class="sxs-lookup"><span data-stu-id="f7dce-105">The cost accountant makes sure that the cost is distributed to the cost centers, based on the selected allocation base.</span></span> <span data-ttu-id="f7dce-106">Kontrolní jednotce nákladů jsou přiřazeny zásada a odpovídajících pravidla.</span><span class="sxs-lookup"><span data-stu-id="f7dce-106">A policy and the corresponding rules are assigned to a cost control unit.</span></span> <span data-ttu-id="f7dce-107">Tento průvodce záznamem úloh slouží jako příklad toho, jak vytvořit zásadu distribuce nákladů a odpovídajících pravidel.</span><span class="sxs-lookup"><span data-stu-id="f7dce-107">This task guide uses an example to show how to create a cost distribution policy and the corresponding rules.</span></span>
 
 
-## <a name="create-a-policy"></a>Vytvořte zásadu
-1. Přejděte na Nákladové účetnictví > Zásady > Zásady distribuce nákladů.
-2. Klikněte na položku Nová.
-3. Do pole Název zásady zadejte hodnotu.
-4. Zadejte nějakou hodnotu do pole Popis.
-5. V poli Hierarchie dimenze objektu nákladů zadejte nebo vyberte hodnotu.
-    * Vyberte organizaci.  
-6. V poli Hierarchie dimenze prvku nákladů zadejte nebo vyberte hodnotu.
-    * Vyberte CDS P/L.  
-7. V poli Statistická dimenze zadejte nebo vyberte hodnotu.
-    * Vyberte Statistické prvky.  
-8. Klikněte na položku Uložit.
+## <a name="create-a-policy"></a><span data-ttu-id="f7dce-108">Vytvořte zásadu</span><span class="sxs-lookup"><span data-stu-id="f7dce-108">Create a policy</span></span>
+1. <span data-ttu-id="f7dce-109">Přejděte na Nákladové účetnictví > Zásady > Zásady distribuce nákladů.</span><span class="sxs-lookup"><span data-stu-id="f7dce-109">Go to Cost accounting > Policies > Cost distribution policies.</span></span>
+2. <span data-ttu-id="f7dce-110">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="f7dce-110">Click New.</span></span>
+3. <span data-ttu-id="f7dce-111">Do pole Název zásady zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f7dce-111">In the Policy name field, type a value.</span></span>
+4. <span data-ttu-id="f7dce-112">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="f7dce-112">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="f7dce-113">V poli Hierarchie dimenze objektu nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f7dce-113">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="f7dce-114">Vyberte organizaci.</span><span class="sxs-lookup"><span data-stu-id="f7dce-114">Select Organization.</span></span>  
+6. <span data-ttu-id="f7dce-115">V poli Hierarchie dimenze prvku nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f7dce-115">In the Cost element dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="f7dce-116">Vyberte CDS P/L.</span><span class="sxs-lookup"><span data-stu-id="f7dce-116">Select CDS P/L.</span></span>  
+7. <span data-ttu-id="f7dce-117">V poli Statistická dimenze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f7dce-117">In the Statistical dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="f7dce-118">Vyberte Statistické prvky.</span><span class="sxs-lookup"><span data-stu-id="f7dce-118">Select Statistical elements.</span></span>  
+8. <span data-ttu-id="f7dce-119">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="f7dce-119">Click Save.</span></span>
 
-## <a name="create-rules-for-the-policy"></a>Vytvoření pravidel zásady
-1. Klikněte na položku Nová.
-2. Označte v seznamu vybraný řádek.
-3. V poli Uzel hierarchie dimenze objektu nákladů zadejte nebo vyberte hodnotu.
-    * Rozbalte hierarchii a vyberte 094.  
-4. V poli Uzel hierarchie dimenze prvku nákladů zadejte nebo vyberte hodnotu.
-    * Vyberte Další provozní výdaje a poté vyberte 605110 čištění.  
-5. V poli Chování nákladů vyberte možnost.
-    * Vyberte Pevné náklady.  
-6. V poli Základ přidělení zadejte nebo vyberte hodnotu.
-7. Klikněte na položku Nová.
-8. Označte na seznamu vybraný řádek.
-9. V poli Uzel hierarchie dimenze objektu nákladů zadejte nebo vyberte hodnotu.
-    * Rozbalte hierarchii a vyberte 094.  
-10. V poli Uzel hierarchie dimenze prvku nákladů zadejte nebo vyberte hodnotu.
-    * Vyberte Další provozní výdaje a poté vyberte 605150 Renta.  
-11. V poli Chování nákladů vyberte možnost.
-    * Vyberte Pevné náklady.  
-12. V poli Základ přidělení zadejte nebo vyberte hodnotu.
-13. Klikněte na položku Uložit.
+## <a name="create-rules-for-the-policy"></a><span data-ttu-id="f7dce-120">Vytvoření pravidel zásady</span><span class="sxs-lookup"><span data-stu-id="f7dce-120">Create rules for the policy</span></span>
+1. <span data-ttu-id="f7dce-121">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="f7dce-121">Click New.</span></span>
+2. <span data-ttu-id="f7dce-122">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="f7dce-122">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="f7dce-123">V poli Uzel hierarchie dimenze objektu nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f7dce-123">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="f7dce-124">Rozbalte hierarchii a vyberte 094.</span><span class="sxs-lookup"><span data-stu-id="f7dce-124">Expand the hierarchy to select 094.</span></span>  
+4. <span data-ttu-id="f7dce-125">V poli Uzel hierarchie dimenze prvku nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f7dce-125">In the Cost element dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="f7dce-126">Vyberte Další provozní výdaje a poté vyberte 605110 čištění.</span><span class="sxs-lookup"><span data-stu-id="f7dce-126">Select Other operating expenses and then select 605110 Cleaning.</span></span>  
+5. <span data-ttu-id="f7dce-127">V poli Chování nákladů vyberte možnost.</span><span class="sxs-lookup"><span data-stu-id="f7dce-127">In the Cost behavior field, select an option.</span></span>
+    * <span data-ttu-id="f7dce-128">Vyberte Pevné náklady.</span><span class="sxs-lookup"><span data-stu-id="f7dce-128">Select Fixed cost.</span></span>  
+6. <span data-ttu-id="f7dce-129">V poli Základ přidělení zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f7dce-129">In the Allocation base field, enter or select a value.</span></span>
+7. <span data-ttu-id="f7dce-130">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="f7dce-130">Click New.</span></span>
+8. <span data-ttu-id="f7dce-131">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="f7dce-131">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="f7dce-132">V poli Uzel hierarchie dimenze objektu nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f7dce-132">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="f7dce-133">Rozbalte hierarchii a vyberte 094.</span><span class="sxs-lookup"><span data-stu-id="f7dce-133">Expand the hierarchy to select 094.</span></span>  
+10. <span data-ttu-id="f7dce-134">V poli Uzel hierarchie dimenze prvku nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f7dce-134">In the Cost element dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="f7dce-135">Vyberte Další provozní výdaje a poté vyberte 605150 Renta.</span><span class="sxs-lookup"><span data-stu-id="f7dce-135">Select Other operating expenses and then select 605150 Rent.</span></span>  
+11. <span data-ttu-id="f7dce-136">V poli Chování nákladů vyberte možnost.</span><span class="sxs-lookup"><span data-stu-id="f7dce-136">In the Cost behavior field, select an option.</span></span>
+    * <span data-ttu-id="f7dce-137">Vyberte Pevné náklady.</span><span class="sxs-lookup"><span data-stu-id="f7dce-137">Select Fixed cost.</span></span>  
+12. <span data-ttu-id="f7dce-138">V poli Základ přidělení zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f7dce-138">In the Allocation base field, enter or select a value.</span></span>
+13. <span data-ttu-id="f7dce-139">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="f7dce-139">Click Save.</span></span>
 
-## <a name="assign-rules-to-a-cost-control-unit"></a>Přiřazení pravidel k jednotce pro řízení nákladů
-1. Klikněte na Přiřazení zásady pro kontrolní jednotky nákladů.
-2. Klikněte na položku Nová.
-3. Označte v seznamu vybraný řádek.
-4. Zadejte datum do pole Platné od data účtování.
-    * Vyberte platný fiskální rok – 1. září.  
-5. V poli Jednotka řízení nákladů zadejte nebo vyberte hodnotu.
-6. Klikněte na položku Uložit.
+## <a name="assign-rules-to-a-cost-control-unit"></a><span data-ttu-id="f7dce-140">Přiřazení pravidel k jednotce pro řízení nákladů</span><span class="sxs-lookup"><span data-stu-id="f7dce-140">Assign rules to a cost control unit</span></span>
+1. <span data-ttu-id="f7dce-141">Klikněte na Přiřazení zásady pro kontrolní jednotky nákladů.</span><span class="sxs-lookup"><span data-stu-id="f7dce-141">Click Policy assignments for cost control unit.</span></span>
+2. <span data-ttu-id="f7dce-142">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="f7dce-142">Click New.</span></span>
+3. <span data-ttu-id="f7dce-143">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="f7dce-143">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="f7dce-144">Zadejte datum do pole Platné od data účtování.</span><span class="sxs-lookup"><span data-stu-id="f7dce-144">In the Valid from accounting date field, enter a date.</span></span>
+    * <span data-ttu-id="f7dce-145">Vyberte platný fiskální rok – 1. září.</span><span class="sxs-lookup"><span data-stu-id="f7dce-145">Select September 1 in the valid fiscal year.</span></span>  
+5. <span data-ttu-id="f7dce-146">V poli Jednotka řízení nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f7dce-146">In the Cost control unit field, enter or select a value.</span></span>
+6. <span data-ttu-id="f7dce-147">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="f7dce-147">Click Save.</span></span>
 
 

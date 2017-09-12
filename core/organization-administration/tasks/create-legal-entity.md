@@ -16,45 +16,45 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: e07adb5f77681c7901662ae94b6d916008ac3c6d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 89d3babc4447ca7398521b93634db7ecb6cfb5de
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-legal-entity"></a>Vytvoření právnické osoby
+# <a name="create-a-legal-entity"></a><span data-ttu-id="a3cb9-103">Vytvoření právnické osoby</span><span class="sxs-lookup"><span data-stu-id="a3cb9-103">Create a legal entity</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Právnická osoba je organizace, která je identifikována prostřednictvím registrace u právního orgánu. Právnické osoby mohou uzavírat smlouvy a je po nich vyžadována příprava výkazů s informacemi o jejich výkonu. Při vytváření právnické osoby postupujte následujícím způsobem. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
+<span data-ttu-id="a3cb9-104">Právnická osoba je organizace, která je identifikována prostřednictvím registrace u právního orgánu.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-104">A legal entity is an organization that is identified through registration with a legal authority.</span></span> <span data-ttu-id="a3cb9-105">Právnické osoby mohou uzavírat smlouvy a je po nich vyžadována příprava výkazů s informacemi o jejich výkonu.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-105">Legal entities can enter into contracts and are required to prepare statements that report on their performance.</span></span> <span data-ttu-id="a3cb9-106">Při vytváření právnické osoby postupujte následujícím způsobem.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-106">The following procedure explains how to create a legal entity.</span></span> <span data-ttu-id="a3cb9-107">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-107">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Přejděte do části na Správa organizace > Organizace > Právnické osoby.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Název.
-4. Zadejte hodnotu do pole Společnost.
-5. V poli Země/oblast zadejte nebo vyberte hodnotu.
-6. Klikněte na tlačítko OK.
-    * V části Obecné zadejte následující obecné informace o právnické osobě: jestliže je nutné zadat vyhledávací název, zadejte jej. Vyhledávací název je alternativní název, který lze použít k hledání tohoto právního subjektu. Vyberte, zda je tato právnická osoba používána jako konsolidační společnost. Vyberte, zda je tato právnická osoba používána jako eliminační společnost.  
-7. Rozbalte sekci Adresy.
-    * V části Adresy zadejte údaje adresy, například název ulice, číslo, PSČ a město.  
-8. Rozbalte oddíl Kontaktní informace.
-    * V části Kontaktní informace zadejte informace o metodách komunikace, například e-mailové adresy, adresy URL a telefonní čísla.  
-9. Rozbalte část Statutární vykazování.
-    * V části Statutární vykazování zadejte registrační čísla, která se používají pro statutární vykazování.  
-10. Rozbalte položku Registrační čísla.
-    * V části Registrační čísla zadejte informace vyžadované právnickou osobou.  
-11. Rozbalte část informací o bankovním účtu.
-    * V části Informace o bankovním účtu zadejte bankovní účty a směrové kódy pro právnickou osobu.  
-12. Rozbalte oddíl Zahraniční obchod a logistika.
-    * V části Zahraniční obchod a logistika zadejte dodací informace pro právnickou osobu.  
-13. Rozbalte oddíl Číselné řady.
-    * V části Číselné řady můžete zobrazit číselné řady, které jsou spojeny s právním subjektem.  
-14. Rozbalte sekci Obrázky.
-    * V části Obrázky můžete zobrazit nebo změnit obrázek loga a/nebo řídicího panelu přidružený k právnické osobě.  
-15. Rozbalte položku Daňová registrace.
-    * V části Daňová registrace zadejte registrační čísla, která se používají při styku s finančními úřady.  
-16. Rozbalte sekci Daň 1099.
-    * V části Daň 1099 zadejte informace 1099 pro právní subjekt.  
-17. Klikněte na položku Uložit.
+1. <span data-ttu-id="a3cb9-108">Přejděte do části na Správa organizace > Organizace > Právnické osoby.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-108">Go to Organization administration > Organizations > Legal entities.</span></span>
+2. <span data-ttu-id="a3cb9-109">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-109">Click New.</span></span>
+3. <span data-ttu-id="a3cb9-110">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="a3cb9-111">Zadejte hodnotu do pole Společnost.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-111">In the Company field, type a value.</span></span>
+5. <span data-ttu-id="a3cb9-112">V poli Země/oblast zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-112">In the Country/region field, enter or select a value.</span></span>
+6. <span data-ttu-id="a3cb9-113">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-113">Click OK.</span></span>
+    * <span data-ttu-id="a3cb9-114">V části Obecné zadejte následující obecné informace o právnické osobě: jestliže je nutné zadat vyhledávací název, zadejte jej.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-114">In the General section, provide the following general information about the legal entity: Enter a search name, if a search name is required.</span></span> <span data-ttu-id="a3cb9-115">Vyhledávací název je alternativní název, který lze použít k hledání tohoto právního subjektu.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-115">A search name is an alternate name that can be used to search for this legal entity.</span></span> <span data-ttu-id="a3cb9-116">Vyberte, zda je tato právnická osoba používána jako konsolidační společnost.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-116">Select whether this legal entity is being used as a consolidation company.</span></span> <span data-ttu-id="a3cb9-117">Vyberte, zda je tato právnická osoba používána jako eliminační společnost.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-117">Select whether this legal entity is being used as an elimination company.</span></span>  
+7. <span data-ttu-id="a3cb9-118">Rozbalte sekci Adresy.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-118">Expand the Addresses section.</span></span>
+    * <span data-ttu-id="a3cb9-119">V části Adresy zadejte údaje adresy, například název ulice, číslo, PSČ a město.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-119">In the Addresses section, enter address information, such as the street name and number, postal code, and city.</span></span>  
+8. <span data-ttu-id="a3cb9-120">Rozbalte oddíl Kontaktní informace.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-120">Expand the Contact information section.</span></span>
+    * <span data-ttu-id="a3cb9-121">V části Kontaktní informace zadejte informace o metodách komunikace, například e-mailové adresy, adresy URL a telefonní čísla.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-121">In the Contact information section, enter information about methods of communication, such as email addresses, URLs, and telephone numbers.</span></span>  
+9. <span data-ttu-id="a3cb9-122">Rozbalte část Statutární vykazování.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-122">Expand the Statutory reporting section.</span></span>
+    * <span data-ttu-id="a3cb9-123">V části Statutární vykazování zadejte registrační čísla, která se používají pro statutární vykazování.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-123">In the Statutory reporting section, enter the registration numbers that are used for statutory reporting.</span></span>  
+10. <span data-ttu-id="a3cb9-124">Rozbalte položku Registrační čísla.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-124">Expand the Registration numbers section.</span></span>
+    * <span data-ttu-id="a3cb9-125">V části Registrační čísla zadejte informace vyžadované právnickou osobou.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-125">In the Registration numbers section, enter any information required by the legal entity.</span></span>  
+11. <span data-ttu-id="a3cb9-126">Rozbalte část informací o bankovním účtu.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-126">Expand the Bank account information section.</span></span>
+    * <span data-ttu-id="a3cb9-127">V části Informace o bankovním účtu zadejte bankovní účty a směrové kódy pro právnickou osobu.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-127">In the Bank account information section, enter bank accounts and routing numbers for the legal entity.</span></span>  
+12. <span data-ttu-id="a3cb9-128">Rozbalte oddíl Zahraniční obchod a logistika.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-128">Expand the Foreign trade and logistics section.</span></span>
+    * <span data-ttu-id="a3cb9-129">V části Zahraniční obchod a logistika zadejte dodací informace pro právnickou osobu.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-129">In the Foreign trade and logistics section, enter shipping information for the legal entity.</span></span>  
+13. <span data-ttu-id="a3cb9-130">Rozbalte oddíl Číselné řady.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-130">Expand the Number sequences section.</span></span>
+    * <span data-ttu-id="a3cb9-131">V části Číselné řady můžete zobrazit číselné řady, které jsou spojeny s právním subjektem.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-131">In the Number sequences section, you can view the number sequences that are associated with the legal entity.</span></span>  
+14. <span data-ttu-id="a3cb9-132">Rozbalte sekci Obrázky.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-132">Expand the Images section.</span></span>
+    * <span data-ttu-id="a3cb9-133">V části Obrázky můžete zobrazit nebo změnit obrázek loga a/nebo řídicího panelu přidružený k právnické osobě.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-133">In the Images section, view or change the logo and/or dashboard image that are associated with the legal entity.</span></span>  
+15. <span data-ttu-id="a3cb9-134">Rozbalte položku Daňová registrace.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-134">Expand the Tax registration section.</span></span>
+    * <span data-ttu-id="a3cb9-135">V části Daňová registrace zadejte registrační čísla, která se používají při styku s finančními úřady.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-135">In the Tax registration section, enter the registration numbers that are used to report to tax authorities.</span></span>  
+16. <span data-ttu-id="a3cb9-136">Rozbalte sekci Daň 1099.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-136">Expand the Tax 1099 section.</span></span>
+    * <span data-ttu-id="a3cb9-137">V části Daň 1099 zadejte informace 1099 pro právní subjekt.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-137">In the Tax 1099 section, enter 1099 information for the legal entity.</span></span>  
+17. <span data-ttu-id="a3cb9-138">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="a3cb9-138">Click Save.</span></span>
 
 

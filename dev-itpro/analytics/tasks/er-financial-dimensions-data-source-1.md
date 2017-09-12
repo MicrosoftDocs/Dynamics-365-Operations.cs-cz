@@ -16,94 +16,94 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 35cfeb2220d615e5c9096d524d3deb10a4299f0e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0953ffb3a98d4f2852caecc3a59792698d1c9d9b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="design-data-model-to-use-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a>Návrh datového model k používání finančních dimenzí jako zdroje dat pro elektronické výkaznictví (ER)
+# <a name="design-data-model-to-use-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a><span data-ttu-id="7f6be-103">Návrh datového model k používání finančních dimenzí jako zdroje dat pro elektronické výkaznictví (ER)</span><span class="sxs-lookup"><span data-stu-id="7f6be-103">Design data model to use financial dimensions as a data source for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Následující postup popisuje, jak správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) použití finančních dimenzí jako zdroje dat pro sestavy elektronického výkaznictví. Tyto kroky lze provést v rámci libovolné společnosti.
+<span data-ttu-id="7f6be-104">Následující postup popisuje, jak správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) použití finančních dimenzí jako zdroje dat pro sestavy elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="7f6be-104">The following steps explain how either a system administrator or electronic reporting developer can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports.</span></span> <span data-ttu-id="7f6be-105">Tyto kroky lze provést v rámci libovolné společnosti.</span><span class="sxs-lookup"><span data-stu-id="7f6be-105">These steps can be performed in any company.</span></span>
 
-K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proceduře "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního".
+<span data-ttu-id="7f6be-106">K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proceduře "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního".</span><span class="sxs-lookup"><span data-stu-id="7f6be-106">To complete these steps, you must first complete the steps in the procedure, “Create a configuration provider and mark it as active”.</span></span>
 
 
-## <a name="create-a-new-data-model"></a>Vytvoření nového datového modelu
-1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
-    * Ujistěte se, že poskytovatel 'Litware, Inc.' je k dispozici a označen jako aktivní.  
-2. Klikněte na Konfigurace výkaznictví.
-3. Kliknutím na možnost Vytvořit konfiguraci otevřete dialogové okno.
-4. V poli Název zadejte Vzorový model finančních dimenzí.
-5. Klepněte na možnost Vytvořit konfiguraci.
-6. Klikněte na možnost Návrhář.
-7. Kliknutím na možnost Nový otevřete dialogové okno.
-8. Do pole Název zadejte Položka.
-9. Klepněte na možnost Přidat.
-10. Kliknutím na možnost Nový otevřete dialogové okno.
-11. Do pole Název zadejte text „Společnost“.
-12. Klepněte na možnost Přidat.
-    * Přidáme do našeho modelu nový seznam záznamů. Tento seznam bude uvádět (pro všechny sestavy ER používající tento model jako zdroj dat) nastavení pro vybrané finanční dimenze. Každá finanční dimenze se zobrazí v tomto seznamu jako záznam s odpovídajícími poli představujícími nastavení dimenze.  
-13. Kliknutím na možnost Nový otevřete dialogové okno.
-14. Do pole Název dimenze zadejte Nastavení dimenze.
-15. V poli Typ položky vyberte Seznam záznamů.
-16. Klepněte na možnost Přidat.
-17. Kliknutím na možnost Nový otevřete dialogové okno.
-18. Do pole Název zadejte Kód.
-19. V poli Typ položky vyberte Řetězec.
-20. Klepněte na možnost Přidat.
-21. Kliknutím na možnost Nový otevřete dialogové okno.
-22. Do pole Název zadejte název.
-23. Klepněte na možnost Přidat.
-24. Ve stromovém zobrazení vyberte 'Položka'.
-25. Kliknutím na možnost Nový otevřete dialogové okno.
-26. Do pole Název zadejte Deník.
-27. V poli Typ položky vyberte Seznam záznamů.
-28. Klepněte na možnost Přidat.
-29. Kliknutím na možnost Nový otevřete dialogové okno.
-30. Do pole Název zadejte Dávka.
-31. V poli Typ položky vyberte Řetězec.
-32. Klepněte na možnost Přidat.
-33. Kliknutím na možnost Nový otevřete dialogové okno.
-34. Do pole Název zadejte Transakce.
-35. V poli Typ položky vyberte Seznam záznamů.
-36. Klepněte na možnost Přidat.
-37. Kliknutím na možnost Nový otevřete dialogové okno.
-38. Do pole Název zadejte Datum.
-39. V poli Typ položky vyberte Datum.
-40. Klepněte na možnost Přidat.
-41. Kliknutím na možnost Nový otevřete dialogové okno.
-42. Do pole Název zadejte Má dáti.
-43. V poli Typ položky vyberte Reálný.
-44. Klepněte na možnost Přidat.
-45. Kliknutím na možnost Nový otevřete dialogové okno.
-46. Do pole Název zadejte Dal.
-47. Klepněte na možnost Přidat.
-48. Kliknutím na možnost Nový otevřete dialogové okno.
-49. Do pole Název zadejte Měna.
-50. V poli Typ položky vyberte Řetězec.
-51. Klepněte na možnost Přidat.
-52. Kliknutím na možnost Nový otevřete dialogové okno.
-53. Do pole Název zadejte Doklad.
-54. Klepněte na možnost Přidat.
-55. Kliknutím na možnost Nový otevřete dialogové okno.
-56. Do pole Název zadejte Data dimenze.
-57. V poli Typ položky vyberte Seznam záznamů.
-58. Klepněte na možnost Přidat.
-    * Přidali jsme do našeho modelu nový seznam záznamů. Tento seznam bude uvádět (pro všechny sestavy ER používající tento model jako zdroj dat) hodnoty vybraných finančních dimenzích. Každá finanční dimenze se zobrazí v tomto seznamu jako záznam s odpovídajícími poli představujícími hodnoty dimenze. Název dimenze bude také prezentován v tomto záznamu jako pole, které se má v případě potřeby použít pro účely výběru.  
-59. Kliknutím na možnost Nový otevřete dialogové okno.
-60. Do pole Název zadejte Kód.
-61. V poli Typ položky vyberte Řetězec.
-62. Klepněte na možnost Přidat.
-63. Kliknutím na možnost Nový otevřete dialogové okno.
-64. Do pole Název zadejte Popis.
-65. Klepněte na možnost Přidat.
-66. Kliknutím na možnost Nový otevřete dialogové okno.
-67. Do pole Název zadejte název.
-68. Klepněte na možnost Přidat.
-69. Klikněte na položku Uložit.
-70. Zavřete stránku.
+## <a name="create-a-new-data-model"></a><span data-ttu-id="7f6be-107">Vytvoření nového datového modelu</span><span class="sxs-lookup"><span data-stu-id="7f6be-107">Create a new data model</span></span>
+1. <span data-ttu-id="7f6be-108">Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="7f6be-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="7f6be-109">Ujistěte se, že poskytovatel 'Litware, Inc.'</span><span class="sxs-lookup"><span data-stu-id="7f6be-109">Make sure that the “Litware, Inc.”</span></span> <span data-ttu-id="7f6be-110">je k dispozici a označen jako aktivní.</span><span class="sxs-lookup"><span data-stu-id="7f6be-110">provider is available and marked as active.</span></span>  
+2. <span data-ttu-id="7f6be-111">Klikněte na Konfigurace výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="7f6be-111">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="7f6be-112">Kliknutím na možnost Vytvořit konfiguraci otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-112">Click Create configuration to open the drop dialog.</span></span>
+4. <span data-ttu-id="7f6be-113">V poli Název zadejte Vzorový model finančních dimenzí.</span><span class="sxs-lookup"><span data-stu-id="7f6be-113">In the Name field, type 'Financial dimensions sample model'.</span></span>
+5. <span data-ttu-id="7f6be-114">Klepněte na možnost Vytvořit konfiguraci.</span><span class="sxs-lookup"><span data-stu-id="7f6be-114">Click Create configuration.</span></span>
+6. <span data-ttu-id="7f6be-115">Klikněte na možnost Návrhář.</span><span class="sxs-lookup"><span data-stu-id="7f6be-115">Click Designer.</span></span>
+7. <span data-ttu-id="7f6be-116">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-116">Click New to open the drop dialog.</span></span>
+8. <span data-ttu-id="7f6be-117">Do pole Název zadejte Položka.</span><span class="sxs-lookup"><span data-stu-id="7f6be-117">In the Name field, type 'Entry'.</span></span>
+9. <span data-ttu-id="7f6be-118">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7f6be-118">Click Add.</span></span>
+10. <span data-ttu-id="7f6be-119">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-119">Click New to open the drop dialog.</span></span>
+11. <span data-ttu-id="7f6be-120">Do pole Název zadejte text „Společnost“.</span><span class="sxs-lookup"><span data-stu-id="7f6be-120">In the Name field, type 'Company'.</span></span>
+12. <span data-ttu-id="7f6be-121">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7f6be-121">Click Add.</span></span>
+    * <span data-ttu-id="7f6be-122">Přidáme do našeho modelu nový seznam záznamů.</span><span class="sxs-lookup"><span data-stu-id="7f6be-122">We will add to our model a new record list.</span></span> <span data-ttu-id="7f6be-123">Tento seznam bude uvádět (pro všechny sestavy ER používající tento model jako zdroj dat) nastavení pro vybrané finanční dimenze.</span><span class="sxs-lookup"><span data-stu-id="7f6be-123">This list will expose (for any ER reports using this model as data source) the settings of selected financial dimensions.</span></span> <span data-ttu-id="7f6be-124">Každá finanční dimenze se zobrazí v tomto seznamu jako záznam s odpovídajícími poli představujícími nastavení dimenze.</span><span class="sxs-lookup"><span data-stu-id="7f6be-124">Each financial dimension will be presented in this list as a record with appropriate fields representing dimension’s setting.</span></span>  
+13. <span data-ttu-id="7f6be-125">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-125">Click New to open the drop dialog.</span></span>
+14. <span data-ttu-id="7f6be-126">Do pole Název dimenze zadejte Nastavení dimenze.</span><span class="sxs-lookup"><span data-stu-id="7f6be-126">In the Name field, type 'Dimensions setting'.</span></span>
+15. <span data-ttu-id="7f6be-127">V poli Typ položky vyberte Seznam záznamů.</span><span class="sxs-lookup"><span data-stu-id="7f6be-127">In the Item type field, select 'Record list'.</span></span>
+16. <span data-ttu-id="7f6be-128">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7f6be-128">Click Add.</span></span>
+17. <span data-ttu-id="7f6be-129">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-129">Click New to open the drop dialog.</span></span>
+18. <span data-ttu-id="7f6be-130">Do pole Název zadejte Kód.</span><span class="sxs-lookup"><span data-stu-id="7f6be-130">In the Name field, type 'Code'.</span></span>
+19. <span data-ttu-id="7f6be-131">V poli Typ položky vyberte Řetězec.</span><span class="sxs-lookup"><span data-stu-id="7f6be-131">In the Item type field, select 'String'.</span></span>
+20. <span data-ttu-id="7f6be-132">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7f6be-132">Click Add.</span></span>
+21. <span data-ttu-id="7f6be-133">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-133">Click New to open the drop dialog.</span></span>
+22. <span data-ttu-id="7f6be-134">Do pole Název zadejte název.</span><span class="sxs-lookup"><span data-stu-id="7f6be-134">In the Name field, type 'Name'.</span></span>
+23. <span data-ttu-id="7f6be-135">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7f6be-135">Click Add.</span></span>
+24. <span data-ttu-id="7f6be-136">Ve stromovém zobrazení vyberte 'Položka'.</span><span class="sxs-lookup"><span data-stu-id="7f6be-136">In the tree, select 'Entry'.</span></span>
+25. <span data-ttu-id="7f6be-137">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-137">Click New to open the drop dialog.</span></span>
+26. <span data-ttu-id="7f6be-138">Do pole Název zadejte Deník.</span><span class="sxs-lookup"><span data-stu-id="7f6be-138">In the Name field, type 'Journal'.</span></span>
+27. <span data-ttu-id="7f6be-139">V poli Typ položky vyberte Seznam záznamů.</span><span class="sxs-lookup"><span data-stu-id="7f6be-139">In the Item type field, select 'Record list'.</span></span>
+28. <span data-ttu-id="7f6be-140">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7f6be-140">Click Add.</span></span>
+29. <span data-ttu-id="7f6be-141">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-141">Click New to open the drop dialog.</span></span>
+30. <span data-ttu-id="7f6be-142">Do pole Název zadejte Dávka.</span><span class="sxs-lookup"><span data-stu-id="7f6be-142">In the Name field, type 'Batch'.</span></span>
+31. <span data-ttu-id="7f6be-143">V poli Typ položky vyberte Řetězec.</span><span class="sxs-lookup"><span data-stu-id="7f6be-143">In the Item type field, select 'String'.</span></span>
+32. <span data-ttu-id="7f6be-144">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7f6be-144">Click Add.</span></span>
+33. <span data-ttu-id="7f6be-145">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-145">Click New to open the drop dialog.</span></span>
+34. <span data-ttu-id="7f6be-146">Do pole Název zadejte Transakce.</span><span class="sxs-lookup"><span data-stu-id="7f6be-146">In the Name field, type 'Transaction'.</span></span>
+35. <span data-ttu-id="7f6be-147">V poli Typ položky vyberte Seznam záznamů.</span><span class="sxs-lookup"><span data-stu-id="7f6be-147">In the Item type field, select 'Record list'.</span></span>
+36. <span data-ttu-id="7f6be-148">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7f6be-148">Click Add.</span></span>
+37. <span data-ttu-id="7f6be-149">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-149">Click New to open the drop dialog.</span></span>
+38. <span data-ttu-id="7f6be-150">Do pole Název zadejte Datum.</span><span class="sxs-lookup"><span data-stu-id="7f6be-150">In the Name field, type 'Date'.</span></span>
+39. <span data-ttu-id="7f6be-151">V poli Typ položky vyberte Datum.</span><span class="sxs-lookup"><span data-stu-id="7f6be-151">In the Item type field, select 'Date'.</span></span>
+40. <span data-ttu-id="7f6be-152">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7f6be-152">Click Add.</span></span>
+41. <span data-ttu-id="7f6be-153">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-153">Click New to open the drop dialog.</span></span>
+42. <span data-ttu-id="7f6be-154">Do pole Název zadejte Má dáti.</span><span class="sxs-lookup"><span data-stu-id="7f6be-154">In the Name field, type 'Debit'.</span></span>
+43. <span data-ttu-id="7f6be-155">V poli Typ položky vyberte Reálný.</span><span class="sxs-lookup"><span data-stu-id="7f6be-155">In the Item type field, select 'Real'.</span></span>
+44. <span data-ttu-id="7f6be-156">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7f6be-156">Click Add.</span></span>
+45. <span data-ttu-id="7f6be-157">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-157">Click New to open the drop dialog.</span></span>
+46. <span data-ttu-id="7f6be-158">Do pole Název zadejte Dal.</span><span class="sxs-lookup"><span data-stu-id="7f6be-158">In the Name field, type 'Credit'.</span></span>
+47. <span data-ttu-id="7f6be-159">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7f6be-159">Click Add.</span></span>
+48. <span data-ttu-id="7f6be-160">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-160">Click New to open the drop dialog.</span></span>
+49. <span data-ttu-id="7f6be-161">Do pole Název zadejte Měna.</span><span class="sxs-lookup"><span data-stu-id="7f6be-161">In the Name field, type 'Currency'.</span></span>
+50. <span data-ttu-id="7f6be-162">V poli Typ položky vyberte Řetězec.</span><span class="sxs-lookup"><span data-stu-id="7f6be-162">In the Item type field, select 'String'.</span></span>
+51. <span data-ttu-id="7f6be-163">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7f6be-163">Click Add.</span></span>
+52. <span data-ttu-id="7f6be-164">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-164">Click New to open the drop dialog.</span></span>
+53. <span data-ttu-id="7f6be-165">Do pole Název zadejte Doklad.</span><span class="sxs-lookup"><span data-stu-id="7f6be-165">In the Name field, type 'Voucher'.</span></span>
+54. <span data-ttu-id="7f6be-166">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7f6be-166">Click Add.</span></span>
+55. <span data-ttu-id="7f6be-167">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-167">Click New to open the drop dialog.</span></span>
+56. <span data-ttu-id="7f6be-168">Do pole Název zadejte Data dimenze.</span><span class="sxs-lookup"><span data-stu-id="7f6be-168">In the Name field, type 'Dimensions data'.</span></span>
+57. <span data-ttu-id="7f6be-169">V poli Typ položky vyberte Seznam záznamů.</span><span class="sxs-lookup"><span data-stu-id="7f6be-169">In the Item type field, select 'Record list'.</span></span>
+58. <span data-ttu-id="7f6be-170">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7f6be-170">Click Add.</span></span>
+    * <span data-ttu-id="7f6be-171">Přidali jsme do našeho modelu nový seznam záznamů.</span><span class="sxs-lookup"><span data-stu-id="7f6be-171">We added to our model a new record list.</span></span> <span data-ttu-id="7f6be-172">Tento seznam bude uvádět (pro všechny sestavy ER používající tento model jako zdroj dat) hodnoty vybraných finančních dimenzích.</span><span class="sxs-lookup"><span data-stu-id="7f6be-172">This list will expose (for any ER reports using this model as data source) the values of selected financial dimensions.</span></span> <span data-ttu-id="7f6be-173">Každá finanční dimenze se zobrazí v tomto seznamu jako záznam s odpovídajícími poli představujícími hodnoty dimenze.</span><span class="sxs-lookup"><span data-stu-id="7f6be-173">Each financial dimension will be presented in this list as a record with appropriate fields representing dimension’s values.</span></span> <span data-ttu-id="7f6be-174">Název dimenze bude také prezentován v tomto záznamu jako pole, které se má v případě potřeby použít pro účely výběru.</span><span class="sxs-lookup"><span data-stu-id="7f6be-174">Dimension name will be also presented in this record as a field to be used, if needed, for selection purposes.</span></span>  
+59. <span data-ttu-id="7f6be-175">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-175">Click New to open the drop dialog.</span></span>
+60. <span data-ttu-id="7f6be-176">Do pole Název zadejte Kód.</span><span class="sxs-lookup"><span data-stu-id="7f6be-176">In the Name field, type 'Code'.</span></span>
+61. <span data-ttu-id="7f6be-177">V poli Typ položky vyberte Řetězec.</span><span class="sxs-lookup"><span data-stu-id="7f6be-177">In the Item type field, select 'String'.</span></span>
+62. <span data-ttu-id="7f6be-178">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7f6be-178">Click Add.</span></span>
+63. <span data-ttu-id="7f6be-179">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-179">Click New to open the drop dialog.</span></span>
+64. <span data-ttu-id="7f6be-180">Do pole Název zadejte Popis.</span><span class="sxs-lookup"><span data-stu-id="7f6be-180">In the Name field, type 'Description'.</span></span>
+65. <span data-ttu-id="7f6be-181">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7f6be-181">Click Add.</span></span>
+66. <span data-ttu-id="7f6be-182">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="7f6be-182">Click New to open the drop dialog.</span></span>
+67. <span data-ttu-id="7f6be-183">Do pole Název zadejte název.</span><span class="sxs-lookup"><span data-stu-id="7f6be-183">In the Name field, type 'Name'.</span></span>
+68. <span data-ttu-id="7f6be-184">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7f6be-184">Click Add.</span></span>
+69. <span data-ttu-id="7f6be-185">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="7f6be-185">Click Save.</span></span>
+70. <span data-ttu-id="7f6be-186">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="7f6be-186">Close the page.</span></span>
 
 

@@ -15,32 +15,32 @@ ms.custom: 206434
 ms.assetid: 8a6238bd-9d6f-48d9-8752-3966836364a4
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: 3482aacba9315606a7751adc5839a8a11c2d4490
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 6b576be9986a0c0701792a87422a0865cd3f8e7a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/29/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="financial-management-home-page"></a>Domovská stránka Správy financí
+# <a name="financial-management-home-page"></a><span data-ttu-id="350bb-103">Domovská stránka Správy financí</span><span class="sxs-lookup"><span data-stu-id="350bb-103">Financial management home page</span></span>
 
 [!include[banner](includes/banner.md)]
 
-Toto téma obsahuje seznam témat nápovědy a další zdroje pro funkce správy financí v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. 
+<span data-ttu-id="350bb-104">Toto téma obsahuje seznam témat nápovědy a další zdroje pro funkce správy financí v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.</span><span class="sxs-lookup"><span data-stu-id="350bb-104">This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> 
 
-Vyberte oblast funkce, o které chcete získat informace.
-- [Závazky](accounts-payable\accounts-payable.md) 
-- [Pohledávky](accounts-receivable\accounts-receivable.md) 
-- [Pokladna a banka](cash-bank-management\cash-bank-management.md)
-- [Nákladové účetnictví](cost-accounting\cost-accounting-home-page.md)
-- [Dlouhodobý majetek](fixed-assets\fixed-assets.md)
-- [Hlavní kniha](general-ledger\general-ledger.md) 
-- [Správa projektu](project-management\overview-project-management-accounting.md)
-- [Veřejný sektor](public-sector\public-sector-functionality.md) 
-- [Rozpočtování](budgeting\budgeting-overview.md) 
+<span data-ttu-id="350bb-105">Vyberte oblast funkce, o které chcete získat informace.</span><span class="sxs-lookup"><span data-stu-id="350bb-105">Select a feature area to learn more about it.</span></span>
+- [<span data-ttu-id="350bb-106">Závazky</span><span class="sxs-lookup"><span data-stu-id="350bb-106">Accounts payable</span></span>](accounts-payable\accounts-payable.md) 
+- [<span data-ttu-id="350bb-107">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="350bb-107">Accounts receivable</span></span>](accounts-receivable\accounts-receivable.md) 
+- [<span data-ttu-id="350bb-108">Pokladna a banka</span><span class="sxs-lookup"><span data-stu-id="350bb-108">Cash and bank management</span></span>](cash-bank-management\cash-bank-management.md)
+- [<span data-ttu-id="350bb-109">Nákladové účetnictví</span><span class="sxs-lookup"><span data-stu-id="350bb-109">Cost accounting</span></span>](cost-accounting\cost-accounting-home-page.md)
+- [<span data-ttu-id="350bb-110">Dlouhodobý majetek</span><span class="sxs-lookup"><span data-stu-id="350bb-110">Fixed assets</span></span>](fixed-assets\fixed-assets.md)
+- [<span data-ttu-id="350bb-111">Hlavní kniha</span><span class="sxs-lookup"><span data-stu-id="350bb-111">General ledger</span></span>](general-ledger\general-ledger.md) 
+- [<span data-ttu-id="350bb-112">Správa projektu</span><span class="sxs-lookup"><span data-stu-id="350bb-112">Project management</span></span>](project-management\overview-project-management-accounting.md)
+- [<span data-ttu-id="350bb-113">Veřejný sektor</span><span class="sxs-lookup"><span data-stu-id="350bb-113">Public sector</span></span>](public-sector\public-sector-functionality.md) 
+- [<span data-ttu-id="350bb-114">Rozpočtování</span><span class="sxs-lookup"><span data-stu-id="350bb-114">Budgeting</span></span>](budgeting\budgeting-overview.md) 
 
 
 

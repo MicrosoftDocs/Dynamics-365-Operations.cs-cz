@@ -16,127 +16,127 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 55f62b501b545db54d717d8c66d09ec831cb286f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 07fef304361fa0008f57425ff27596e4e382072a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="export-a-letter-of-credit"></a>Export akreditivu
+# <a name="export-a-letter-of-credit"></a><span data-ttu-id="36d89-103">Export akreditivu</span><span class="sxs-lookup"><span data-stu-id="36d89-103">Export a letter of credit</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tato procedura vás provede procesem exportního akreditivu.
+<span data-ttu-id="36d89-104">Tato procedura vás provede procesem exportního akreditivu.</span><span class="sxs-lookup"><span data-stu-id="36d89-104">This procedure walks through the process of the Export letter of credit.</span></span>
 
-Pojem akreditiv označuje bankovní smlouvu, ve které banka souhlasí se zajištěním platby jménem kupujícího za předpokladu, že jsou splněny podmínky mezi kupujícím a prodávajícím.
-
-
-
-Před provedením této procedury spusťte procedury „Nastavení zařízení banky a zaúčtování profilů“ a „Akreditiv_Vytvoření smlouvy o bankovních zařízeních“. Abyste mohli úspěšně spustit tuto proceduru, musí být vybrána ukázková společnost USMF.
+<span data-ttu-id="36d89-105">Pojem akreditiv označuje bankovní smlouvu, ve které banka souhlasí se zajištěním platby jménem kupujícího za předpokladu, že jsou splněny podmínky mezi kupujícím a prodávajícím.</span><span class="sxs-lookup"><span data-stu-id="36d89-105">A letter of credit is an agreement that is issued by a bank, in which the bank agrees to ensure payment on behalf of the buyer, if the terms of the agreement between the buyer and seller are met.</span></span>
 
 
 
+<span data-ttu-id="36d89-106">Před provedením této procedury spusťte procedury „Nastavení zařízení banky a zaúčtování profilů“ a „Akreditiv_Vytvoření smlouvy o bankovních zařízeních“.</span><span class="sxs-lookup"><span data-stu-id="36d89-106">Run the 'Set up bank facilities and posting profiles' procedure and the 'Letter of Credit_Create a bank facility agreement' procedure prior to this procedure.</span></span> <span data-ttu-id="36d89-107">Abyste mohli úspěšně spustit tuto proceduru, musí být vybrána ukázková společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="36d89-107">The USMF demo company must be selected in order to run this procedure successfully.</span></span>
 
-## <a name="create-sales-order-for-export-letter-of-credit"></a>Vytvoření prodejní objednávky pro exportní akreditiv
-1. Přejděte na Pohledávky > Objednávky > Všechny prodejní objednávky.
-2. Klikněte na položku Nová.
-3. V poli Účet odběratele kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-4. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-5. Klikněte na odkaz na vybraném řádku v seznamu.
-6. Rozbalte nebo sbalte oddíl Obecné.
-7. V poli Lokalita kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-    * Umožňuje vybrat nebo zobrazit lokalitu, ve které je uloženo zboží k vydání.  
-8. Klikněte na odkaz na vybraném řádku v seznamu.
-9. V poli Sklad kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-    * Umožňuje vybrat nebo zobrazit sklad, ve kterém je uloženo zboží k vydání.  
-10. Klikněte na odkaz na vybraném řádku v seznamu.
-    * Poznámka: V poli Typ bankovního dokumentu musí být vybrána hodnota „Akreditiv“.  
-11. Vyberte v poli Typ bankovního dokumentu možnost „Akreditiv“.
-12. Rozbalte nebo sbalte oddíl Dodání.
-    * Vyberte Řízení data dodání = Žádné.  
-13. Zadejte datum do pole Požadované datum příjmu.
-14. Klikněte na tlačítko OK.
-15. V poli Číslo zboží kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-    * Vyberte požadované zboží k výdeji nebo prodeji.  
-16. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-17. Klikněte na odkaz na vybraném řádku v seznamu.
-18. Zadejte číslo do pole Jednotková cena.
-19. Rozbalte nebo sbalte oddíl Podrobnosti řádku.
-20. Klepněte na kartu Doručení.
-21. Zadejte datum do pole Požadované datum expedice.
-22. Zadejte datum do pole Potvrzené datum expedice.
-23. V podokně akcí klepněte na možnost Spravovat.
-24. Klikněte na možnost Akreditiv.
-25. Zadejte hodnotu do pole Číslo bankovního dokumentu.
-26. Do pole Datum vypršení platnosti zadejte datum a čas.
-27. Rozbalte nebo sbalte oddíl Bankovní údaje.
-28. V poli Vydávající banka kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-29. Klikněte na odkaz na vybraném řádku v seznamu.
-30. V poli Avizující banka kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-31. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-32. Klikněte na odkaz na vybraném řádku v seznamu.
-33. Klikněte na možnost Načíst dodávky prodejní objednávky.
-34. Klikněte na možnost Vydat bankovní dokument.
-35. Zavřete stránku.
 
-## <a name="post-packing-slip"></a>Zaúčtovat dodací list
-1. V podokně akcí klikněte na položku Vyskladnit a zabalit.
-2. Klikněte na položku Zaúčtovat dodací list.
-3. Rozbalte nebo sbalte oddíl Parametry.
-4. V poli Množství vyberte možnost „Vše“.
-5. Rozbalte nebo sbalte oddíl Nastavení.
-6. Do pole Datum dodacího listu zadejte datum.
-7. Vyberte číslo dodávky.
-8. Klikněte na odkaz na vybraném řádku v seznamu.
-9. Klikněte na tlačítko OK.
-10. Klikněte na tlačítko OK.
 
-## <a name="post-sales-invoice"></a>Zaúčtovat prodejní fakturu
-1. V podokně akcí klikněte na položku Faktura.
-2. Klikněte na položku Faktura.
-3. Rozbalte nebo sbalte oddíl Přehled.
-4. Vyberte číslo dodávky.
-5. Klikněte na odkaz na vybraném řádku v seznamu.
-6. Rozbalte nebo sbalte oddíl Nastavení.
-7. Do pole Datum faktury zadejte datum.
-8. Klikněte na tlačítko OK.
-9. Klikněte na tlačítko OK.
 
-## <a name="shipment-document-submitted-status"></a>Stav odeslaného dodacího dokladu
-1. V podokně akcí klepněte na možnost Spravovat.
-2. Klikněte na možnost Akreditiv.
-3. Rozbalte nebo sbalte oddíl Řádky.
-    * Poznámka: Pole Dokument odeslán je nastaveno na hodnotu „Ano“.  
+## <a name="create-sales-order-for-export-letter-of-credit"></a><span data-ttu-id="36d89-108">Vytvoření prodejní objednávky pro exportní akreditiv</span><span class="sxs-lookup"><span data-stu-id="36d89-108">Create Sales Order for Export letter of credit</span></span>
+1. <span data-ttu-id="36d89-109">Přejděte na Pohledávky > Objednávky > Všechny prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="36d89-109">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="36d89-110">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="36d89-110">Click New.</span></span>
+3. <span data-ttu-id="36d89-111">V poli Účet odběratele kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="36d89-111">In the Customer account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="36d89-112">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="36d89-112">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="36d89-113">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="36d89-113">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="36d89-114">Rozbalte nebo sbalte oddíl Obecné.</span><span class="sxs-lookup"><span data-stu-id="36d89-114">Expand or collapse the General section.</span></span>
+7. <span data-ttu-id="36d89-115">V poli Lokalita kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="36d89-115">In the Site field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="36d89-116">Umožňuje vybrat nebo zobrazit lokalitu, ve které je uloženo zboží k vydání.</span><span class="sxs-lookup"><span data-stu-id="36d89-116">Select the Site where the item to be issued is stocked.</span></span>  
+8. <span data-ttu-id="36d89-117">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="36d89-117">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="36d89-118">V poli Sklad kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="36d89-118">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="36d89-119">Umožňuje vybrat nebo zobrazit sklad, ve kterém je uloženo zboží k vydání.</span><span class="sxs-lookup"><span data-stu-id="36d89-119">Select the Warehouse where item to be issued is stocked.</span></span>  
+10. <span data-ttu-id="36d89-120">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="36d89-120">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="36d89-121">Poznámka: V poli Typ bankovního dokumentu musí být vybrána hodnota „Akreditiv“.</span><span class="sxs-lookup"><span data-stu-id="36d89-121">Note: The Bank document type field should be selected with the value 'Letter of credit'.</span></span>  
+11. <span data-ttu-id="36d89-122">Vyberte v poli Typ bankovního dokumentu možnost „Akreditiv“.</span><span class="sxs-lookup"><span data-stu-id="36d89-122">In the Bank document type field, select 'Letter of credit'.</span></span>
+12. <span data-ttu-id="36d89-123">Rozbalte nebo sbalte oddíl Dodání.</span><span class="sxs-lookup"><span data-stu-id="36d89-123">Expand or collapse the Delivery section.</span></span>
+    * <span data-ttu-id="36d89-124">Vyberte Řízení data dodání = Žádné.</span><span class="sxs-lookup"><span data-stu-id="36d89-124">Select Delivery date control = None.</span></span>  
+13. <span data-ttu-id="36d89-125">Zadejte datum do pole Požadované datum příjmu.</span><span class="sxs-lookup"><span data-stu-id="36d89-125">In the Requested receipt date field, enter a date.</span></span>
+14. <span data-ttu-id="36d89-126">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="36d89-126">Click OK.</span></span>
+15. <span data-ttu-id="36d89-127">V poli Číslo zboží kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="36d89-127">In the Item number field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="36d89-128">Vyberte požadované zboží k výdeji nebo prodeji.</span><span class="sxs-lookup"><span data-stu-id="36d89-128">Select the required item to be Issued/Sold.</span></span>  
+16. <span data-ttu-id="36d89-129">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="36d89-129">In the list, find and select the desired record.</span></span>
+17. <span data-ttu-id="36d89-130">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="36d89-130">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="36d89-131">Zadejte číslo do pole Jednotková cena.</span><span class="sxs-lookup"><span data-stu-id="36d89-131">In the Unit price field, enter a number.</span></span>
+19. <span data-ttu-id="36d89-132">Rozbalte nebo sbalte oddíl Podrobnosti řádku.</span><span class="sxs-lookup"><span data-stu-id="36d89-132">Expand or collapse the Line details section.</span></span>
+20. <span data-ttu-id="36d89-133">Klepněte na kartu Doručení.</span><span class="sxs-lookup"><span data-stu-id="36d89-133">Click the Delivery tab.</span></span>
+21. <span data-ttu-id="36d89-134">Zadejte datum do pole Požadované datum expedice.</span><span class="sxs-lookup"><span data-stu-id="36d89-134">In the Requested ship date field, enter a date.</span></span>
+22. <span data-ttu-id="36d89-135">Zadejte datum do pole Potvrzené datum expedice.</span><span class="sxs-lookup"><span data-stu-id="36d89-135">In the Confirmed ship date field, enter a date.</span></span>
+23. <span data-ttu-id="36d89-136">V podokně akcí klepněte na možnost Spravovat.</span><span class="sxs-lookup"><span data-stu-id="36d89-136">On the Action Pane, click Manage.</span></span>
+24. <span data-ttu-id="36d89-137">Klikněte na možnost Akreditiv.</span><span class="sxs-lookup"><span data-stu-id="36d89-137">Click Letter of credit.</span></span>
+25. <span data-ttu-id="36d89-138">Zadejte hodnotu do pole Číslo bankovního dokumentu.</span><span class="sxs-lookup"><span data-stu-id="36d89-138">In the Bank document number field, type a value.</span></span>
+26. <span data-ttu-id="36d89-139">Do pole Datum vypršení platnosti zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="36d89-139">In the Expiration date field, enter a date and time.</span></span>
+27. <span data-ttu-id="36d89-140">Rozbalte nebo sbalte oddíl Bankovní údaje.</span><span class="sxs-lookup"><span data-stu-id="36d89-140">Expand or collapse the Bank details section.</span></span>
+28. <span data-ttu-id="36d89-141">V poli Vydávající banka kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="36d89-141">In the Issuing bank field, click the drop-down button to open the lookup.</span></span>
+29. <span data-ttu-id="36d89-142">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="36d89-142">In the list, click the link in the selected row.</span></span>
+30. <span data-ttu-id="36d89-143">V poli Avizující banka kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="36d89-143">In the Advising bank field, click the drop-down button to open the lookup.</span></span>
+31. <span data-ttu-id="36d89-144">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="36d89-144">In the list, find and select the desired record.</span></span>
+32. <span data-ttu-id="36d89-145">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="36d89-145">In the list, click the link in the selected row.</span></span>
+33. <span data-ttu-id="36d89-146">Klikněte na možnost Načíst dodávky prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="36d89-146">Click Fetch sales order shipments.</span></span>
+34. <span data-ttu-id="36d89-147">Klikněte na možnost Vydat bankovní dokument.</span><span class="sxs-lookup"><span data-stu-id="36d89-147">Click Issue bank document.</span></span>
+35. <span data-ttu-id="36d89-148">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="36d89-148">Close the page.</span></span>
 
-## <a name="verify-export-letter-of-credit"></a>Ověřit exportní akreditiv
-1. Přejděte na Pokladna a banka > Akreditivy > Exportovat akreditiv a kolekci importu.
-2. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-3. Klikněte na odkaz na vybraném řádku v seznamu.
-    * Ověřte, že exportní akreditiv má stav dodávky „Fakturováno“.  
+## <a name="post-packing-slip"></a><span data-ttu-id="36d89-149">Zaúčtovat dodací list</span><span class="sxs-lookup"><span data-stu-id="36d89-149">Post Packing slip</span></span>
+1. <span data-ttu-id="36d89-150">V podokně akcí klikněte na položku Vyskladnit a zabalit.</span><span class="sxs-lookup"><span data-stu-id="36d89-150">On the Action Pane, click Pick and pack.</span></span>
+2. <span data-ttu-id="36d89-151">Klikněte na položku Zaúčtovat dodací list.</span><span class="sxs-lookup"><span data-stu-id="36d89-151">Click Post packing slip.</span></span>
+3. <span data-ttu-id="36d89-152">Rozbalte nebo sbalte oddíl Parametry.</span><span class="sxs-lookup"><span data-stu-id="36d89-152">Expand or collapse the Parameters section.</span></span>
+4. <span data-ttu-id="36d89-153">V poli Množství vyberte možnost „Vše“.</span><span class="sxs-lookup"><span data-stu-id="36d89-153">In the Quantity field, select 'All'.</span></span>
+5. <span data-ttu-id="36d89-154">Rozbalte nebo sbalte oddíl Nastavení.</span><span class="sxs-lookup"><span data-stu-id="36d89-154">Expand or collapse the Setup section.</span></span>
+6. <span data-ttu-id="36d89-155">Do pole Datum dodacího listu zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="36d89-155">In the Packing slip date field, enter a date.</span></span>
+7. <span data-ttu-id="36d89-156">Vyberte číslo dodávky.</span><span class="sxs-lookup"><span data-stu-id="36d89-156">Select the Shipment number.</span></span>
+8. <span data-ttu-id="36d89-157">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="36d89-157">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="36d89-158">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="36d89-158">Click OK.</span></span>
+10. <span data-ttu-id="36d89-159">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="36d89-159">Click OK.</span></span>
 
-## <a name="customer-payment"></a>Platba odběratele
-1. Přejděte na Pohledávky > Platby > Deník plateb.
-2. Klikněte na položku Nová.
-3. Označte v seznamu vybraný řádek.
-4. V poli Název kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-5. Klikněte na odkaz na vybraném řádku v seznamu.
-6. Klikněte na možnost Řádky.
-7. Do pole Datum zadejte datum.
-8. Zadejte požadované hodnoty do pole Účet.
-9. Klepněte na vyrovnání.
-10. Zaškrtněte políčko záhlaví součtů.
-    * Poznámka: Nastavte možnost Zobrazit pole na hodnotu „akreditiv“.  
-11. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-12. Zaškrtněte políčko Označit nebo jeho zaškrtnutí zrušte.
-13. Klikněte na tlačítko OK.
-14. Klikněte na kartu Platba.
-    * Ověření čísla bankovního dokumentu čísla dokladu a podrobností o čísle dodávky  
-15. Klikněte na položku Zaúčtovat.
+## <a name="post-sales-invoice"></a><span data-ttu-id="36d89-160">Zaúčtovat prodejní fakturu</span><span class="sxs-lookup"><span data-stu-id="36d89-160">Post sales invoice</span></span>
+1. <span data-ttu-id="36d89-161">V podokně akcí klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="36d89-161">On the Action Pane, click Invoice.</span></span>
+2. <span data-ttu-id="36d89-162">Klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="36d89-162">Click Invoice.</span></span>
+3. <span data-ttu-id="36d89-163">Rozbalte nebo sbalte oddíl Přehled.</span><span class="sxs-lookup"><span data-stu-id="36d89-163">Expand or collapse the Overview section.</span></span>
+4. <span data-ttu-id="36d89-164">Vyberte číslo dodávky.</span><span class="sxs-lookup"><span data-stu-id="36d89-164">Select the Shipment number.</span></span>
+5. <span data-ttu-id="36d89-165">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="36d89-165">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="36d89-166">Rozbalte nebo sbalte oddíl Nastavení.</span><span class="sxs-lookup"><span data-stu-id="36d89-166">Expand or collapse the Setup section.</span></span>
+7. <span data-ttu-id="36d89-167">Do pole Datum faktury zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="36d89-167">In the Invoice date field, enter a date.</span></span>
+8. <span data-ttu-id="36d89-168">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="36d89-168">Click OK.</span></span>
+9. <span data-ttu-id="36d89-169">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="36d89-169">Click OK.</span></span>
 
-## <a name="verify-export-letter-of-credit-after-payment"></a>Ověřit exportní akreditiv po platbě
-1. Přejděte na Pokladna a banka > Akreditivy > Exportovat akreditiv a kolekci importu.
-2. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-3. Klikněte na odkaz na vybraném řádku v seznamu.
-    * Ověřit stav dodávky = přijaté platby a částka zůstatku = 0,00.  
+## <a name="shipment-document-submitted-status"></a><span data-ttu-id="36d89-170">Stav odeslaného dodacího dokladu</span><span class="sxs-lookup"><span data-stu-id="36d89-170">Shipment document submitted status</span></span>
+1. <span data-ttu-id="36d89-171">V podokně akcí klepněte na možnost Spravovat.</span><span class="sxs-lookup"><span data-stu-id="36d89-171">On the Action Pane, click Manage.</span></span>
+2. <span data-ttu-id="36d89-172">Klikněte na možnost Akreditiv.</span><span class="sxs-lookup"><span data-stu-id="36d89-172">Click Letter of credit.</span></span>
+3. <span data-ttu-id="36d89-173">Rozbalte nebo sbalte oddíl Řádky.</span><span class="sxs-lookup"><span data-stu-id="36d89-173">Expand or collapse the Lines section.</span></span>
+    * <span data-ttu-id="36d89-174">Poznámka: Pole Dokument odeslán je nastaveno na hodnotu „Ano“.</span><span class="sxs-lookup"><span data-stu-id="36d89-174">Note: The 'Document submitted' field should be set to 'Yes'.</span></span>  
+
+## <a name="verify-export-letter-of-credit"></a><span data-ttu-id="36d89-175">Ověřit exportní akreditiv</span><span class="sxs-lookup"><span data-stu-id="36d89-175">Verify Export letter of credit</span></span>
+1. <span data-ttu-id="36d89-176">Přejděte na Pokladna a banka > Akreditivy > Exportovat akreditiv a kolekci importu.</span><span class="sxs-lookup"><span data-stu-id="36d89-176">Go to Cash and bank management > Letters of credit > Export letter of credit and import collection.</span></span>
+2. <span data-ttu-id="36d89-177">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="36d89-177">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="36d89-178">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="36d89-178">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="36d89-179">Ověřte, že exportní akreditiv má stav dodávky „Fakturováno“.</span><span class="sxs-lookup"><span data-stu-id="36d89-179">Verify that the Export letter of credit has a Shipment status of 'Invoiced'.</span></span>  
+
+## <a name="customer-payment"></a><span data-ttu-id="36d89-180">Platba odběratele</span><span class="sxs-lookup"><span data-stu-id="36d89-180">Customer payment</span></span>
+1. <span data-ttu-id="36d89-181">Přejděte na Pohledávky > Platby > Deník plateb.</span><span class="sxs-lookup"><span data-stu-id="36d89-181">Go to Accounts receivable > Payments > Payment journal.</span></span>
+2. <span data-ttu-id="36d89-182">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="36d89-182">Click New.</span></span>
+3. <span data-ttu-id="36d89-183">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="36d89-183">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="36d89-184">V poli Název kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="36d89-184">In the Name field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="36d89-185">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="36d89-185">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="36d89-186">Klikněte na možnost Řádky.</span><span class="sxs-lookup"><span data-stu-id="36d89-186">Click Lines.</span></span>
+7. <span data-ttu-id="36d89-187">Do pole Datum zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="36d89-187">In the Date field, enter a date.</span></span>
+8. <span data-ttu-id="36d89-188">Zadejte požadované hodnoty do pole Účet.</span><span class="sxs-lookup"><span data-stu-id="36d89-188">In the Account field, specify the desired values.</span></span>
+9. <span data-ttu-id="36d89-189">Klepněte na vyrovnání.</span><span class="sxs-lookup"><span data-stu-id="36d89-189">Click Settlement.</span></span>
+10. <span data-ttu-id="36d89-190">Zaškrtněte políčko záhlaví součtů.</span><span class="sxs-lookup"><span data-stu-id="36d89-190">Select the check box on the header of Totals.</span></span>
+    * <span data-ttu-id="36d89-191">Poznámka: Nastavte možnost Zobrazit pole na hodnotu „akreditiv“.</span><span class="sxs-lookup"><span data-stu-id="36d89-191">Note: Set the Show field to 'Letter of credit'.</span></span>  
+11. <span data-ttu-id="36d89-192">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="36d89-192">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="36d89-193">Zaškrtněte políčko Označit nebo jeho zaškrtnutí zrušte.</span><span class="sxs-lookup"><span data-stu-id="36d89-193">Select or clear the Mark check box.</span></span>
+13. <span data-ttu-id="36d89-194">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="36d89-194">Click OK.</span></span>
+14. <span data-ttu-id="36d89-195">Klikněte na kartu Platba.</span><span class="sxs-lookup"><span data-stu-id="36d89-195">Click the Payment tab.</span></span>
+    * <span data-ttu-id="36d89-196">Ověření čísla bankovního dokumentu čísla dokladu a podrobností o čísle dodávky</span><span class="sxs-lookup"><span data-stu-id="36d89-196">Verify Bank document number and Shipment number details</span></span>  
+15. <span data-ttu-id="36d89-197">Klikněte na položku Zaúčtovat.</span><span class="sxs-lookup"><span data-stu-id="36d89-197">Click Post.</span></span>
+
+## <a name="verify-export-letter-of-credit-after-payment"></a><span data-ttu-id="36d89-198">Ověřit exportní akreditiv po platbě</span><span class="sxs-lookup"><span data-stu-id="36d89-198">Verify Export letter of credit after payment</span></span>
+1. <span data-ttu-id="36d89-199">Přejděte na Pokladna a banka > Akreditivy > Exportovat akreditiv a kolekci importu.</span><span class="sxs-lookup"><span data-stu-id="36d89-199">Go to Cash and bank management > Letters of credit > Export letter of credit and import collection.</span></span>
+2. <span data-ttu-id="36d89-200">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="36d89-200">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="36d89-201">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="36d89-201">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="36d89-202">Ověřit stav dodávky = přijaté platby a částka zůstatku = 0,00.</span><span class="sxs-lookup"><span data-stu-id="36d89-202">Verify Shipment status = Payment received and balance amount = 0.00.</span></span>  
 
 

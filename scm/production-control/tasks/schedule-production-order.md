@@ -17,41 +17,41 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: c71192e93ca44efb69dea5622a48a3e462c54ec5
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 4aeb51fd2d9e916d5838b47c4a6b74800572a9ca
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="schedule-a-production-order"></a>Naplánování výrobní zakázky
+# <a name="schedule-a-production-order"></a><span data-ttu-id="c1640-103">Naplánování výrobní zakázky</span><span class="sxs-lookup"><span data-stu-id="c1640-103">Schedule a production order</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tato procedura popisuje způsob plánování výrobní zakázky. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Jedná se o třetí proceduru ze sedmi, která vysvětluje životního cyklus výrobní zakázky.
+<span data-ttu-id="c1640-104">Tato procedura popisuje způsob plánování výrobní zakázky.</span><span class="sxs-lookup"><span data-stu-id="c1640-104">This procedure shows how to schedule a production order.</span></span> <span data-ttu-id="c1640-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="c1640-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="c1640-106">Jedná se o třetí proceduru ze sedmi, která vysvětluje životního cyklus výrobní zakázky.</span><span class="sxs-lookup"><span data-stu-id="c1640-106">This is the third procedure out of seven which explains the production order lifecycle.</span></span>
 
 
-## <a name="schedule-a-production-order"></a>Naplánování výrobní zakázky
-1. Přejděte na Řízení výroby > Výrobní zakázky > Všechny výrobní zakázky.
-    * Vyberte výrobní zakázku, která má stav Odhadováno.  
-2. V podokně akcí klikněte na možnost Plán.
-3. Klikněte na Plánovat úlohy.
-    * Parametry pro plánování se nastavují na této stránce. Můžete nastavit parametry pro konkrétní uživatelé nebo u všech uživatelů.  
-4. V poli Způsob plánování vyberte „Vpřed ode dneška“.
-5. Do pole Datum plánování zadejte datum.
-6. Zaškrtněte políčko Omezená kapacita, nebo jeho zaškrtnutí zrušte.
-7. Zaškrtněte políčko Omezený materiál, nebo jeho zaškrtnutí zrušte.
-8. Klikněte na tlačítko OK.
+## <a name="schedule-a-production-order"></a><span data-ttu-id="c1640-107">Naplánování výrobní zakázky</span><span class="sxs-lookup"><span data-stu-id="c1640-107">Schedule a production order</span></span>
+1. <span data-ttu-id="c1640-108">Přejděte na Řízení výroby > Výrobní zakázky > Všechny výrobní zakázky.</span><span class="sxs-lookup"><span data-stu-id="c1640-108">Go to Production control > Production orders > All production orders.</span></span>
+    * <span data-ttu-id="c1640-109">Vyberte výrobní zakázku, která má stav Odhadováno.</span><span class="sxs-lookup"><span data-stu-id="c1640-109">Select a production order that has the Estimated status.</span></span>  
+2. <span data-ttu-id="c1640-110">V podokně akcí klikněte na možnost Plán.</span><span class="sxs-lookup"><span data-stu-id="c1640-110">On the Action Pane, click Schedule.</span></span>
+3. <span data-ttu-id="c1640-111">Klikněte na Plánovat úlohy.</span><span class="sxs-lookup"><span data-stu-id="c1640-111">Click Schedule jobs.</span></span>
+    * <span data-ttu-id="c1640-112">Parametry pro plánování se nastavují na této stránce.</span><span class="sxs-lookup"><span data-stu-id="c1640-112">The parameters for scheduling are set up on this page.</span></span> <span data-ttu-id="c1640-113">Můžete nastavit parametry pro konkrétní uživatelé nebo u všech uživatelů.</span><span class="sxs-lookup"><span data-stu-id="c1640-113">You can set up the parameters for specific users or all users.</span></span>  
+4. <span data-ttu-id="c1640-114">V poli Způsob plánování vyberte „Vpřed ode dneška“.</span><span class="sxs-lookup"><span data-stu-id="c1640-114">In the Scheduling direction field, select 'Forward from today'.</span></span>
+5. <span data-ttu-id="c1640-115">Do pole Datum plánování zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="c1640-115">In the Scheduling date field, enter a date.</span></span>
+6. <span data-ttu-id="c1640-116">Zaškrtněte políčko Omezená kapacita, nebo jeho zaškrtnutí zrušte.</span><span class="sxs-lookup"><span data-stu-id="c1640-116">Select or clear the Finite capacity check box.</span></span>
+7. <span data-ttu-id="c1640-117">Zaškrtněte políčko Omezený materiál, nebo jeho zaškrtnutí zrušte.</span><span class="sxs-lookup"><span data-stu-id="c1640-117">Select or clear the Finite material check box.</span></span>
+8. <span data-ttu-id="c1640-118">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="c1640-118">Click OK.</span></span>
 
-## <a name="view-the-scheduling-results"></a>Zobrazte výsledky plánování
-1. V podokně akcí klikněte na položku Výrobní zakázka.
-2. Klikněte na Všechny úlohy.
-    * Tato stránka zobrazuje naplánované úlohy, které jste právě vygenerovali.  
-3. Rozbalte nebo sbalte oddíl Plánování.
-    * Na pevné záložce Plánování můžete zobrazit plánované datum a čas.  
-4. Klepněte na možnost Dotazy.
-5. Klikněte na možnost Vytížení kapacity.
-    * Na stránce Vytížení kapacity se zobrazí kapacita rezervovaná pomocí plánování práce, celkový počet hodin, které jsou aktuálně rezervovány u prostředku a počet hodin, které jsou nadále k dispozici pro plánování úlohy u prostředku.  
-6. Zavřete stránku.
-7. Zavřete stránku.
+## <a name="view-the-scheduling-results"></a><span data-ttu-id="c1640-119">Zobrazte výsledky plánování</span><span class="sxs-lookup"><span data-stu-id="c1640-119">View the scheduling results</span></span>
+1. <span data-ttu-id="c1640-120">V podokně akcí klikněte na položku Výrobní zakázka.</span><span class="sxs-lookup"><span data-stu-id="c1640-120">On the Action Pane, click Production order.</span></span>
+2. <span data-ttu-id="c1640-121">Klikněte na Všechny úlohy.</span><span class="sxs-lookup"><span data-stu-id="c1640-121">Click All jobs.</span></span>
+    * <span data-ttu-id="c1640-122">Tato stránka zobrazuje naplánované úlohy, které jste právě vygenerovali.</span><span class="sxs-lookup"><span data-stu-id="c1640-122">This page displays the scheduled jobs that you have just generated.</span></span>  
+3. <span data-ttu-id="c1640-123">Rozbalte nebo sbalte oddíl Plánování.</span><span class="sxs-lookup"><span data-stu-id="c1640-123">Expand or collapse the Scheduling section.</span></span>
+    * <span data-ttu-id="c1640-124">Na pevné záložce Plánování můžete zobrazit plánované datum a čas.</span><span class="sxs-lookup"><span data-stu-id="c1640-124">On the Scheduling FastTab, you can view the scheduled date and time.</span></span>  
+4. <span data-ttu-id="c1640-125">Klepněte na možnost Dotazy.</span><span class="sxs-lookup"><span data-stu-id="c1640-125">Click Inquiries.</span></span>
+5. <span data-ttu-id="c1640-126">Klikněte na možnost Vytížení kapacity.</span><span class="sxs-lookup"><span data-stu-id="c1640-126">Click Capacity load.</span></span>
+    * <span data-ttu-id="c1640-127">Na stránce Vytížení kapacity se zobrazí kapacita rezervovaná pomocí plánování práce, celkový počet hodin, které jsou aktuálně rezervovány u prostředku a počet hodin, které jsou nadále k dispozici pro plánování úlohy u prostředku.</span><span class="sxs-lookup"><span data-stu-id="c1640-127">The Capacity load page displays the capacity that is reserved through job scheduling, the total number of hours that are currently reserved on the resource, and the number of hours that remain available for job scheduling on the resource.</span></span>  
+6. <span data-ttu-id="c1640-128">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="c1640-128">Close the page.</span></span>
+7. <span data-ttu-id="c1640-129">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="c1640-129">Close the page.</span></span>
 
 

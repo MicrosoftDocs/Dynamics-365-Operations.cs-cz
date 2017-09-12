@@ -1,7 +1,7 @@
 ---
 title: "Blokování zásob"
 description: "Tento článek obsahuje přehled informací o blokování zásob, které je součástí vlastního procesu kontroly kvality v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Blokování zásob můžete použít pro zabránění zpracování nebo spotřeby položek."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,66 +10,63 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBlocking, InventQualityOrderTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2094
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7d00aaa272de32d4ef2082bf1822125800ca8a1e
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: eed2f3e203808f378ce954b6cc308859fea89e60
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
 
-# <a name="inventory-blocking"></a>Blokování zásob
+# <a name="inventory-blocking"></a><span data-ttu-id="ba4e4-104">Blokování zásob</span><span class="sxs-lookup"><span data-stu-id="ba4e4-104">Inventory blocking</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek obsahuje přehled informací o blokování zásob, které je součástí vlastního procesu kontroly kvality v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Blokování zásob můžete použít pro zabránění zpracování nebo spotřeby položek.
+<span data-ttu-id="ba4e4-105">Tento článek obsahuje přehled informací o blokování zásob, které je součástí vlastního procesu kontroly kvality v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-105">This article provides an overview of inventory blocking, which is part of the quality inspection process in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="ba4e4-106">Blokování zásob můžete použít pro zabránění zpracování nebo spotřeby položek.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-106">You can use inventory blocking to prevent items from being processed or consumed.</span></span>
 
-Skladové položky lze blokovat následujícími způsoby:
--   Ručně
--   Vytvořením objednávky kvality.
--   Pomocí procesu, který generuje objednávku kvality.
--   Použitím blokování stavu zásob
+<span data-ttu-id="ba4e4-107">Skladové položky lze blokovat následujícími způsoby:</span><span class="sxs-lookup"><span data-stu-id="ba4e4-107">You can block inventory items in the following ways:</span></span>
+-   <span data-ttu-id="ba4e4-108">Ručně</span><span class="sxs-lookup"><span data-stu-id="ba4e4-108">Manually</span></span>
+-   <span data-ttu-id="ba4e4-109">Vytvořením objednávky kvality.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-109">By creating a quality order</span></span>
+-   <span data-ttu-id="ba4e4-110">Pomocí procesu, který generuje objednávku kvality.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-110">By using a process that generates a quality order</span></span>
+-   <span data-ttu-id="ba4e4-111">Použitím blokování stavu zásob</span><span class="sxs-lookup"><span data-stu-id="ba4e4-111">By using inventory status blocking</span></span>
 
-## <a name="blocking-items-manually"></a>Ruční blokování položek
-Množství položky je možné blokovat tak, že vytvoříte transakci na stránce **Blokování zásob**. Blokovat lze ručně pouze zboží, které je dostupné na skladě. Při ručním blokování množství je nutné zvážit, zda budou do plánování aktivit zahrnuty očekávané příjmy jako očekávané množství na skladě. Očekávané příjmy jsou blokované položky, u nichž je očekávána dostupnost ve skladu po dokončení kontroly. Očekávané datum můžete spravovat. Standardně je vybrána možnost **Očekávané příjmy** pro položky, které jsou zablokovány pomocí objednávky kvality. Ruční blokování množství lze zrušit odstraněním transakce na stránce **Blokování zásob**.
+## <a name="blocking-items-manually"></a><span data-ttu-id="ba4e4-112">Ruční blokování položek</span><span class="sxs-lookup"><span data-stu-id="ba4e4-112">Blocking items manually</span></span>
+<span data-ttu-id="ba4e4-113">Množství položky je možné blokovat tak, že vytvoříte transakci na stránce **Blokování zásob**.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-113">You can block a quantity of an item by creating a transaction on the **Inventory blocking** page.</span></span> <span data-ttu-id="ba4e4-114">Blokovat lze ručně pouze zboží, které je dostupné na skladě.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-114">Only items that are available as on-hand inventory can be blocked manually.</span></span> <span data-ttu-id="ba4e4-115">Při ručním blokování množství je nutné zvážit, zda budou do plánování aktivit zahrnuty očekávané příjmy jako očekávané množství na skladě.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-115">For manually blocked quantities, you must decide whether planning activities include expected receipts as an expected on-hand quantity.</span></span> <span data-ttu-id="ba4e4-116">Očekávané příjmy jsou blokované položky, u nichž je očekávána dostupnost ve skladu po dokončení kontroly.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-116">Expected receipts are blocked items that you expect to be available as on-hand inventory after inspection is completed.</span></span> <span data-ttu-id="ba4e4-117">Očekávané datum můžete spravovat.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-117">You can maintain the expected date.</span></span> <span data-ttu-id="ba4e4-118">Standardně je vybrána možnost **Očekávané příjmy** pro položky, které jsou zablokovány pomocí objednávky kvality.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-118">By default, the **Expected receipts** option is selected for items that are blocked through a quality order.</span></span> <span data-ttu-id="ba4e4-119">Ruční blokování množství lze zrušit odstraněním transakce na stránce **Blokování zásob**.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-119">You can cancel a manual block on a quantity by deleting the transaction on the **Inventory blocking** page.</span></span>
 
-## <a name="blocking-items-by-creating-a-quality-order"></a>Blokování položek vytvořením objednávky kvality
-Je možné zadání položek, které musí být kontrolovány pro vytváření objednávky kvality na stránce **Objednávky kvality**. Při vytváření objednávky kvality je blokováno množství položek, které zadáte. Plán vzorkování, který je spojený s objednávkou kvality, řídí pouze množství položek, které musí být zkontrolovány, nikoli množství, které je blokováno. Bez ohledu na množství, které bude odesláno ke kontrole podle plánu vzorkování, bude blokováno množství položek, které je zadáno v objednávce kvality.
+## <a name="blocking-items-by-creating-a-quality-order"></a><span data-ttu-id="ba4e4-120">Blokování položek vytvořením objednávky kvality</span><span class="sxs-lookup"><span data-stu-id="ba4e4-120">Blocking items by creating a quality order</span></span>
+<span data-ttu-id="ba4e4-121">Je možné zadání položek, které musí být kontrolovány pro vytváření objednávky kvality na stránce **Objednávky kvality**.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-121">You can specify items that must be inspected by creating a quality order on the **Quality orders** page.</span></span> <span data-ttu-id="ba4e4-122">Při vytváření objednávky kvality je blokováno množství položek, které zadáte.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-122">When you create a quality order, the quantity that you specify for an item is blocked.</span></span> <span data-ttu-id="ba4e4-123">Plán vzorkování, který je spojený s objednávkou kvality, řídí pouze množství položek, které musí být zkontrolovány, nikoli množství, které je blokováno.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-123">The sampling plan that is associated with a quality order controls only the quantity of items that must be inspected, not the quantity that is blocked.</span></span> <span data-ttu-id="ba4e4-124">Bez ohledu na množství, které bude odesláno ke kontrole podle plánu vzorkování, bude blokováno množství položek, které je zadáno v objednávce kvality.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-124">The quantity that is entered on the quality order is the quantity that is blocked, regardless of the quantity that the sampling plan specifies should be sent for inspection.</span></span>
 
-## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a>Blokování položek pomocí procesu, který generuje objednávku kvality
-Pokud množství položek uvádí, že je nutné položku zkontrolovat, je množství položek blokováno automaticky. Proto při automatickém generování objednávky kvality řídí vzorkovací položka, která je spojena s objednávkou kvality, počet blokovaných položek a nejen množství položek, které budou zkontrolovány. Je-li vybrána možnost **Úplné blokování** na stránce **Vzorkování položek**, celé množství, například řádek nákupní objednávky, bude blokováno při inventuře bez ohledu na množství vzorkování položky.
-### <a name="example"></a>Příklad
+## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a><span data-ttu-id="ba4e4-125">Blokování položek pomocí procesu, který generuje objednávku kvality</span><span class="sxs-lookup"><span data-stu-id="ba4e4-125">Blocking items by using a process that generates a quality order</span></span>
+<span data-ttu-id="ba4e4-126">Pokud množství položek uvádí, že je nutné položku zkontrolovat, je množství položek blokováno automaticky.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-126">If a quality process specifies that an item must be inspected, a quantity of the item is blocked automatically.</span></span> <span data-ttu-id="ba4e4-127">Proto při automatickém generování objednávky kvality řídí vzorkovací položka, která je spojena s objednávkou kvality, počet blokovaných položek a nejen množství položek, které budou zkontrolovány.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-127">Therefore, when a quality order is generated automatically, the item sampling plan that is associated with the quality order controls the both quantity of items that is blocked and the quantity that must be inspected.</span></span> <span data-ttu-id="ba4e4-128">Je-li vybrána možnost **Úplné blokování** na stránce **Vzorkování položek**, celé množství, například řádek nákupní objednávky, bude blokováno při inventuře bez ohledu na množství vzorkování položky.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-128">If the **Full blocking** option on the **Item sampling** page is selected, the full quantity of, for example, a purchase order line is blocked during inspection, regardless of the item sampling quantity.</span></span>
+### <a name="example"></a><span data-ttu-id="ba4e4-129">Příklad</span><span class="sxs-lookup"><span data-stu-id="ba4e4-129">Example</span></span>
 
-V následujícím příkladu je generována objednávka kvality po zaúčtování dodacího listu k nákupní objednávce. Na stránce **Přiřazení kvality** jste uvedli, že zaúčtování dodacího listu nákupní objednávky je proces, který aktivuje objednávku kvality.
+<span data-ttu-id="ba4e4-130">V následujícím příkladu je generována objednávka kvality po zaúčtování dodacího listu k nákupní objednávce.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-130">In the following example, a quality order is generated when a purchase order packing slip is posted.</span></span> <span data-ttu-id="ba4e4-131">Na stránce **Přiřazení kvality** jste uvedli, že zaúčtování dodacího listu nákupní objednávky je proces, který aktivuje objednávku kvality.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-131">On the **Quality associations** page, you specified that posting of a purchase order packing slip is the process that activates a quality order.</span></span>
 
-|Nastavení                                                                     |Uživatelská akce                 |Výsledek             |
+|<span data-ttu-id="ba4e4-132">Nastavení</span><span class="sxs-lookup"><span data-stu-id="ba4e4-132">Setup</span></span>                                                                     |<span data-ttu-id="ba4e4-133">Uživatelská akce</span><span class="sxs-lookup"><span data-stu-id="ba4e4-133">User action</span></span>                 |<span data-ttu-id="ba4e4-134">Výsledek</span><span class="sxs-lookup"><span data-stu-id="ba4e4-134">Result</span></span>             |
 |--------------------------------------------------------------------------|----------------------------|-------------------|
-| Přiřazení kvality určuje, že při zaúčtování dodacího listu nákupní objednávky musí být vygenerovaná objednávky kvality. Nastavení vzorkování položky objednávky kvality určuje, že musí být zkontrolováno 10 % z počtu řádků nákupní objednávky. Kromě toho vybraná možnost **Úplné blokování** v nastavení položky vzorkování značí, že musí být blokován celý počet řádků nákupní objednávky při inventuře bez ohledu na množství, které je odesláno ke kontrole. | Dodací list bude zaúčtován. | Objednávka kvality bude vygenerována. 10 % z množství položky na nákupní objednávce bude odesláno ke kontrole. Plný počet řádků nákupní objednávky bude blokován. |
+| <span data-ttu-id="ba4e4-135">Přiřazení kvality určuje, že při zaúčtování dodacího listu nákupní objednávky musí být vygenerovaná objednávky kvality.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-135">A quality association specifies that a quality order must be generated when a purchase order packing slip is posted.</span></span> <span data-ttu-id="ba4e4-136">Nastavení vzorkování položky objednávky kvality určuje, že musí být zkontrolováno 10 % z počtu řádků nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-136">The item sampling setup of the quality order specifies that 10 percent of the quantity on the purchase order line must be inspected.</span></span> <span data-ttu-id="ba4e4-137">Kromě toho vybraná možnost **Úplné blokování** v nastavení položky vzorkování značí, že musí být blokován celý počet řádků nákupní objednávky při inventuře bez ohledu na množství, které je odesláno ke kontrole.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-137">Furthermore, because the **Full blocking** option selected in the item sampling setup, the full quantity of the purchase order line must be blocked during inspection, regardless of the quantity that is sent for inspection.</span></span> | <span data-ttu-id="ba4e4-138">Dodací list bude zaúčtován.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-138">The packing slip is posted.</span></span> | <span data-ttu-id="ba4e4-139">Objednávka kvality bude vygenerována.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-139">A quality order is generated.</span></span> <span data-ttu-id="ba4e4-140">10 % z množství položky na nákupní objednávce bude odesláno ke kontrole.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-140">Ten percent of the purchase order quantity for the item is sent to inspection.</span></span> <span data-ttu-id="ba4e4-141">Plný počet řádků nákupní objednávky bude blokován.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-141">The full quantity of the purchase order line is blocked.</span></span> |
 
-## <a name="blocking-items-by-using-inventory-status-blocking"></a>Blokování položek použitím blokování stavu zásob
-Můžete určit, jaké stavy zásob jsou stavy blokování, pomocí parametru **Blokování zásob** na stránce **Stavy zásob**.  Stavy zásob nelze použít jako stavy blokování pro výrobní zakázky, prodejní objednávky, převodní příkazy, výstupní transakce nebo integrace projektu. Pro výstupní práci používejte položky, které mají stav zásob „dostupné“. Pokud máte položky se stavem **Zničeno** a použijete u těchto položek hlavní plánování, položky budou považovány za chybějící a sklad se automaticky doplní.
+## <a name="blocking-items-by-using-inventory-status-blocking"></a><span data-ttu-id="ba4e4-142">Blokování položek použitím blokování stavu zásob</span><span class="sxs-lookup"><span data-stu-id="ba4e4-142">Blocking items by using inventory status blocking</span></span>
+<span data-ttu-id="ba4e4-143">Můžete určit, jaké stavy zásob jsou stavy blokování, pomocí parametru **Blokování zásob** na stránce **Stavy zásob**.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-143">You can specify which inventory statuses are blocking statuses by using the **Inventory blocking** parameter on the **Inventory statuses** page.</span></span> <span data-ttu-id="ba4e4-144"> Stavy zásob nelze použít jako stavy blokování pro výrobní zakázky, prodejní objednávky, převodní příkazy, výstupní transakce nebo integrace projektu.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-144">You can't use inventory statuses as blocking statuses for production orders, sales orders, transfer orders, outbound transactions, or project integrations.</span></span> <span data-ttu-id="ba4e4-145">Pro výstupní práci používejte položky, které mají stav zásob „dostupné“.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-145">For outbound work, use items that have an available inventory status.</span></span> <span data-ttu-id="ba4e4-146">Pokud máte položky se stavem **Zničeno** a použijete u těchto položek hlavní plánování, položky budou považovány za chybějící a sklad se automaticky doplní.</span><span class="sxs-lookup"><span data-stu-id="ba4e4-146">If items have a status of **Broken**, and master planning is run on those items, the items are considered missing, and inventory is automatically replenished.</span></span>
 
 
 
-<a name="see-also"></a>Viz také
+<a name="see-also"></a><span data-ttu-id="ba4e4-147">Viz také</span><span class="sxs-lookup"><span data-stu-id="ba4e4-147">See also</span></span>
 --------
 
-[Vytvoření a správa blokování zásob (Průvodce záznamem úloh)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-maintain-inventory-blocking)
+[<span data-ttu-id="ba4e4-148">Vytvoření a správa blokování zásob (Průvodce záznamem úloh)</span><span class="sxs-lookup"><span data-stu-id="ba4e4-148">Create and maintain an inventory blocking (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-maintain-inventory-blocking)
 
-[Procesy správy kvality](quality-management-processes.md)
+[<span data-ttu-id="ba4e4-149">Procesy správy kvality</span><span class="sxs-lookup"><span data-stu-id="ba4e4-149">Quality management processes</span></span>](quality-management-processes.md)
 
-[Kontrola kvality zboží (průvodce záznamem úloh)](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods)
-
-
-
+[<span data-ttu-id="ba4e4-150">Kontrola kvality zboží (průvodce záznamem úloh)</span><span class="sxs-lookup"><span data-stu-id="ba4e4-150">Inspect the quality of goods (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods)
 

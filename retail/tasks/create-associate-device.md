@@ -17,27 +17,27 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 4c4d4f3d531108c931096069f49e424bfd5e908a
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a281b6397e6bee64e6e10bdcd2fb5539c5f73adc
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-associate-a-device"></a> Vytvoření a přidružení zařízení
+# <a name="create-and-associate-a-device"></a><span data-ttu-id="afc0f-103"> Vytvoření a přidružení zařízení</span><span class="sxs-lookup"><span data-stu-id="afc0f-103">Create and associate a device</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Tato procedura vás provede vytvořením nového zařízení a jeho přidružením k registrační pokladně. Předpokládá se, že registrační pokladna již je vytvořena.  Tento úkol používá v ukázkových datech společnost USRT. Tento úkol je určen pro role Správci, Odborník IT nebo IT pro maloobchod a Manažer obchodu.
+<span data-ttu-id="afc0f-104">Tato procedura vás provede vytvořením nového zařízení a jeho přidružením k registrační pokladně.</span><span class="sxs-lookup"><span data-stu-id="afc0f-104">This procedure walks through how to create a new device and associate it to a register.</span></span> <span data-ttu-id="afc0f-105">Předpokládá se, že registrační pokladna již je vytvořena.</span><span class="sxs-lookup"><span data-stu-id="afc0f-105">It is assumed that the register is already created.</span></span>  <span data-ttu-id="afc0f-106">Tento úkol používá v ukázkových datech společnost USRT.</span><span class="sxs-lookup"><span data-stu-id="afc0f-106">This task uses the USRT company in demo data.</span></span> <span data-ttu-id="afc0f-107">Tento úkol je určen pro role Správci, Odborník IT nebo IT pro maloobchod a Manažer obchodu.</span><span class="sxs-lookup"><span data-stu-id="afc0f-107">This task is intended for Administrators, IT Professional or Retail IT, and the Store Manager roles.</span></span>
 
-1. Přejděte na Maloobchodní a velkoobchodní prodej > .. > Zařízení.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole ID zařízení.
-4. V poli Typ zařízení kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-5. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-6. Klikněte na odkaz na vybraném řádku v seznamu.
-7. V poli Číslo registru kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-8. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-9. Klikněte na odkaz na vybraném řádku v seznamu.
-10. Klikněte na položku Uložit.
+1. <span data-ttu-id="afc0f-108">Přejděte na Maloobchodní a velkoobchodní prodej > ..</span><span class="sxs-lookup"><span data-stu-id="afc0f-108">Go to Retail and commerce > ..</span></span> <span data-ttu-id="afc0f-109">> Zařízení.</span><span class="sxs-lookup"><span data-stu-id="afc0f-109">> Devices.</span></span>
+2. <span data-ttu-id="afc0f-110">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="afc0f-110">Click New.</span></span>
+3. <span data-ttu-id="afc0f-111">Zadejte hodnotu do pole ID zařízení.</span><span class="sxs-lookup"><span data-stu-id="afc0f-111">In the Device ID field, type a value.</span></span>
+4. <span data-ttu-id="afc0f-112">V poli Typ zařízení kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="afc0f-112">In the Device type field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="afc0f-113">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="afc0f-113">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="afc0f-114">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="afc0f-114">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="afc0f-115">V poli Číslo registru kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="afc0f-115">In the Register number field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="afc0f-116">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="afc0f-116">In the list, find and select the desired record.</span></span>
+9. <span data-ttu-id="afc0f-117">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="afc0f-117">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="afc0f-118">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="afc0f-118">Click Save.</span></span>
 
 

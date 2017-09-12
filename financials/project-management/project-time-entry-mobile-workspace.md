@@ -26,92 +26,92 @@ ms.lasthandoff: 08/10/2017
 
 ---
 
-# <a name="project-time-entry-mobile-workspace"></a>Mobilní pracovní prostor zadání času projektu
+# <a name="project-time-entry-mobile-workspace"></a><span data-ttu-id="3264f-104">Mobilní pracovní prostor zadání času projektu</span><span class="sxs-lookup"><span data-stu-id="3264f-104">Project time entry mobile workspace</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o mobilním pracovním prostoru **Zadání času projektu**. Tento pracovní prostor uživatelům umožňuje zadat a uložit čas na projekt pomocí svých mobilních zařízení.
+<span data-ttu-id="3264f-105">Toto téma obsahuje informace o mobilním pracovním prostoru **Zadání času projektu**.</span><span class="sxs-lookup"><span data-stu-id="3264f-105">This topic provides information about the **Project time entry** mobile workspace.</span></span> <span data-ttu-id="3264f-106">Tento pracovní prostor uživatelům umožňuje zadat a uložit čas na projekt pomocí svých mobilních zařízení.</span><span class="sxs-lookup"><span data-stu-id="3264f-106">This workspace lets users enter and save time against a project by using their mobile device.</span></span>
 
-Tento mobilní pracovní prostor je určen k použití s mobilní aplikací Microsoft Dynamics 365 for Unified Operations. 
+<span data-ttu-id="3264f-107">Tento mobilní pracovní prostor je určen k použití s mobilní aplikací Microsoft Dynamics 365 for Unified Operations.</span><span class="sxs-lookup"><span data-stu-id="3264f-107">This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.</span></span> 
 
-## <a name="overview"></a>Přehled
-Při své každodenní práci jsou zdroje projektu často buď na místě nebo cestují. Mobilní pracovní prostor **zadání času projektu** umožní uživatelům zadat jejich fakturovatelný nebo nefakturovatelný čas proti projektu na libovolném mobilním zařízení. Proto zmohou zdroje projektu zaznamenat časové vstupy kdykoliv a kdekoliv. Mohou také zobrazit časové vstupy, které již byly zaznamenány. 
+## <a name="overview"></a><span data-ttu-id="3264f-108">Přehled</span><span class="sxs-lookup"><span data-stu-id="3264f-108">Overview</span></span>
+<span data-ttu-id="3264f-109">Při své každodenní práci jsou zdroje projektu často buď na místě nebo cestují.</span><span class="sxs-lookup"><span data-stu-id="3264f-109">As part of their daily work, project resources are often on-site or traveling.</span></span> <span data-ttu-id="3264f-110">Mobilní pracovní prostor **zadání času projektu** umožní uživatelům zadat jejich fakturovatelný nebo nefakturovatelný čas proti projektu na libovolném mobilním zařízení.</span><span class="sxs-lookup"><span data-stu-id="3264f-110">The **Project time entry** mobile workspace lets users enter their billable or non-billable time against a project on the mobile device of their choice.</span></span> <span data-ttu-id="3264f-111">Proto zmohou zdroje projektu zaznamenat časové vstupy kdykoliv a kdekoliv.</span><span class="sxs-lookup"><span data-stu-id="3264f-111">Therefore, project resources can record time entries anytime and anywhere.</span></span> <span data-ttu-id="3264f-112">Mohou také zobrazit časové vstupy, které již byly zaznamenány.</span><span class="sxs-lookup"><span data-stu-id="3264f-112">They can also view time entries that have already been recorded.</span></span> 
 
-Konkrétně v mobilním pracovním prostoru **Zadání času projektu** mohou uživatelé provádět tyto úlohy:
+<span data-ttu-id="3264f-113">Konkrétně v mobilním pracovním prostoru **Zadání času projektu** mohou uživatelé provádět tyto úlohy:</span><span class="sxs-lookup"><span data-stu-id="3264f-113">Specifically, in the **Project time entry** mobile workspace, users can perform these tasks:</span></span>
 
--   Pro jakékoliv vybrané datum zadejte počet hodin, které jste strávili na konkrétním úkolu.
--   Vyhledejte projekt, pro který chcete zadat čas, podle názvu projektu nebo odběratele.
--   Určete kategorii a aktivitu pro čas, který jste na úkolu strávili.
--   Zaznamenejte čas pro projekt jako fakturovatelný nebo nefakturovatelný.
--   Volitelně zadejte externí nebo interní poznámky.
+-   <span data-ttu-id="3264f-114">Pro jakékoliv vybrané datum zadejte počet hodin, které jste strávili na konkrétním úkolu.</span><span class="sxs-lookup"><span data-stu-id="3264f-114">For any selected date, enter the number of hours that you spent on a specific task.</span></span>
+-   <span data-ttu-id="3264f-115">Vyhledejte projekt, pro který chcete zadat čas, podle názvu projektu nebo odběratele.</span><span class="sxs-lookup"><span data-stu-id="3264f-115">Search by project name or customer to find the project to enter time for.</span></span>
+-   <span data-ttu-id="3264f-116">Určete kategorii a aktivitu pro čas, který jste na úkolu strávili.</span><span class="sxs-lookup"><span data-stu-id="3264f-116">Specify the category and activity for the time that you spent.</span></span>
+-   <span data-ttu-id="3264f-117">Zaznamenejte čas pro projekt jako fakturovatelný nebo nefakturovatelný.</span><span class="sxs-lookup"><span data-stu-id="3264f-117">Record the time as billable or non-billable for the project.</span></span>
+-   <span data-ttu-id="3264f-118">Volitelně zadejte externí nebo interní poznámky.</span><span class="sxs-lookup"><span data-stu-id="3264f-118">Optionally enter any external or internal comments.</span></span>
 
-## <a name="prerequisites"></a>Požadavky
-Předpoklady se liší podle verze aplikace Microsoft Dynamics 365, která byla nasazena ve vaší organizaci.
+## <a name="prerequisites"></a><span data-ttu-id="3264f-119">Požadavky</span><span class="sxs-lookup"><span data-stu-id="3264f-119">Prerequisites</span></span>
+<span data-ttu-id="3264f-120">Předpoklady se liší podle verze aplikace Microsoft Dynamics 365, která byla nasazena ve vaší organizaci.</span><span class="sxs-lookup"><span data-stu-id="3264f-120">The prerequisites differ, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.</span></span>
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, v aktualizaci z července 2017 
-Pokud je ve vaší organizaci nasazena aktualizace aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition z července 2017, správce systému musí mobilní pracovní prostor **Zadání času projektu** publikovat. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a><span data-ttu-id="3264f-121">Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, v aktualizaci z července 2017</span><span class="sxs-lookup"><span data-stu-id="3264f-121">Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update</span></span> 
+<span data-ttu-id="3264f-122">Pokud je ve vaší organizaci nasazena aktualizace aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition z července 2017, správce systému musí mobilní pracovní prostor **Zadání času projektu** publikovat.</span><span class="sxs-lookup"><span data-stu-id="3264f-122">If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update has been deployed for your organization, the system administrator must publish the **Project time entry** mobile workspace.</span></span> <span data-ttu-id="3264f-123">Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).</span><span class="sxs-lookup"><span data-stu-id="3264f-123">For instructions, see [Publish a mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).</span></span>
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější
-Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější, správce systému musí dokončit následující předpoklady. 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a><span data-ttu-id="3264f-124">Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější</span><span class="sxs-lookup"><span data-stu-id="3264f-124">Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later</span></span>
+<span data-ttu-id="3264f-125">Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější, správce systému musí dokončit následující předpoklady.</span><span class="sxs-lookup"><span data-stu-id="3264f-125">If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites.</span></span> 
 
 <table>
 <thead>
 <tr class="header">
-<th>Předpoklad</th>
-<th>Role</th>
-<th>popis</th>
+<th><span data-ttu-id="3264f-126">Předpoklad</span><span class="sxs-lookup"><span data-stu-id="3264f-126">Prerequisite</span></span></th>
+<th><span data-ttu-id="3264f-127">Role</span><span class="sxs-lookup"><span data-stu-id="3264f-127">Role</span></span></th>
+<th><span data-ttu-id="3264f-128">popis</span><span class="sxs-lookup"><span data-stu-id="3264f-128">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 
-<td>Implementujte opravu KB 4018050.</td>
-<td>Správce systému</td>
-<td>KB 4018050 je X ++ aktualizace nebo oprava hotfix metadat obsahující mobilní pracovní prostor <strong>zadání času projektu</strong>. Pro implementaci KB 4018050 musí správce systému provést tyto kroky:
+<td><span data-ttu-id="3264f-129">Implementujte opravu KB 4018050.</span><span class="sxs-lookup"><span data-stu-id="3264f-129">Implement KB 4018050.</span></span></td>
+<td><span data-ttu-id="3264f-130">Správce systému</span><span class="sxs-lookup"><span data-stu-id="3264f-130">System administrator</span></span></td>
+<td><span data-ttu-id="3264f-131">KB 4018050 je X ++ aktualizace nebo oprava hotfix metadat obsahující mobilní pracovní prostor <strong>zadání času projektu</strong>.</span><span class="sxs-lookup"><span data-stu-id="3264f-131">KB 4018050 is an X++ update or metadata hotfix that contains the <strong>Project time entry</strong> mobile workspace.</span></span> <span data-ttu-id="3264f-132">Pro implementaci KB 4018050 musí správce systému provést tyto kroky:</span><span class="sxs-lookup"><span data-stu-id="3264f-132">To implement KB 4018050, your system administrator must follow these steps.</span></span>
 <ol>
-<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Stažení opravy hotfix metadat ze služby Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Nainstalujte opravu hotfix metadat</a>.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Vytvořte nasaditelný balíček</a>, který obsahuje modely <strong>ApplicationSuite</strong> a <strong>ProjectMobile</strong> a odešlete ho do služby LCS.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Použití nasaditelného balíčku</a></li>
+<li><span data-ttu-id="3264f-133"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Stažení opravy hotfix metadat ze služby Microsoft Dynamics Lifecycle Services (LCS)</a>.</span><span class="sxs-lookup"><span data-stu-id="3264f-133"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from Microsoft Dynamics Lifecycle Services (LCS)</a>.</span></span></li>
+<li><span data-ttu-id="3264f-134"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Nainstalujte opravu hotfix metadat</a>.</span><span class="sxs-lookup"><span data-stu-id="3264f-134"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</span></span></li>
+<li><span data-ttu-id="3264f-135"><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Vytvořte nasaditelný balíček</a>, který obsahuje modely <strong>ApplicationSuite</strong> a <strong>ProjectMobile</strong> a odešlete ho do služby LCS.</span><span class="sxs-lookup"><span data-stu-id="3264f-135"><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>ApplicationSuite</strong> and <strong>ProjectMobile</strong> models, and then upload the deployable package to LCS.</span></span></li>
+<li><span data-ttu-id="3264f-136"><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Použití nasaditelného balíčku</a></span><span class="sxs-lookup"><span data-stu-id="3264f-136"><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a>.</span></span></li>
 
 </ol></td>
 </tr>
 <tr class="even">
-<td>Publikujte mobilní pracovní prostor <strong>Zadání času projektu</strong>.</td>
-<td>Správce systému</td>
-<td>Viz téma <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publikování mobilního pracovního prostoru</a>.</td>
+<td><span data-ttu-id="3264f-137">Publikujte mobilní pracovní prostor <strong>Zadání času projektu</strong>.</span><span class="sxs-lookup"><span data-stu-id="3264f-137">Publish the <strong>Project time entry</strong> mobile workspace.</span></span></td>
+<td><span data-ttu-id="3264f-138">Správce systému</span><span class="sxs-lookup"><span data-stu-id="3264f-138">System administrator</span></span></td>
+<td><span data-ttu-id="3264f-139">Viz téma <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publikování mobilního pracovního prostoru</a>.</span><span class="sxs-lookup"><span data-stu-id="3264f-139">See <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci
+## <a name="download-and-install-the-mobile-app"></a><span data-ttu-id="3264f-140">Stáhněte a nainstalujte mobilní aplikaci</span><span class="sxs-lookup"><span data-stu-id="3264f-140">Download and install the mobile app</span></span>
 
-Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
+<span data-ttu-id="3264f-141">Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:</span><span class="sxs-lookup"><span data-stu-id="3264f-141">Download and install the Dynamics 365 for Unified Operations mobile app:</span></span>
 
--   [Pro telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
--   [Pro telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
+-   [<span data-ttu-id="3264f-142">Pro telefony Android</span><span class="sxs-lookup"><span data-stu-id="3264f-142">For Android phones</span></span>](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [<span data-ttu-id="3264f-143">Pro telefony iPhone</span><span class="sxs-lookup"><span data-stu-id="3264f-143">For iPhones</span></span>](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## <a name="sign-in-to-the-mobile-app"></a>Přihlaste se do mobilní aplikace
-1.  Spusťte aplikaci na svém mobilním zařízení.
-2.  Zadejte adresu URL aplikace Dynamics 365.
-3.  Při prvním přihlášení se zobrazí výzva k zadání uživatelského jména a hesla. Zadejte své přihlašovací údaje.
-4.  Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost. Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, budete muset aktualizovat seznam mobilních pracovních prostorů.
+## <a name="sign-in-to-the-mobile-app"></a><span data-ttu-id="3264f-144">Přihlaste se do mobilní aplikace</span><span class="sxs-lookup"><span data-stu-id="3264f-144">Sign in to the mobile app</span></span>
+1.  <span data-ttu-id="3264f-145">Spusťte aplikaci na svém mobilním zařízení.</span><span class="sxs-lookup"><span data-stu-id="3264f-145">Start the app on your mobile device.</span></span>
+2.  <span data-ttu-id="3264f-146">Zadejte adresu URL aplikace Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="3264f-146">Enter your Dynamics 365 URL.</span></span>
+3.  <span data-ttu-id="3264f-147">Při prvním přihlášení se zobrazí výzva k zadání uživatelského jména a hesla.</span><span class="sxs-lookup"><span data-stu-id="3264f-147">The first time that you sign in, you're prompted for your user name and password.</span></span> <span data-ttu-id="3264f-148">Zadejte své přihlašovací údaje.</span><span class="sxs-lookup"><span data-stu-id="3264f-148">Enter your credentials.</span></span>
+4.  <span data-ttu-id="3264f-149">Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost.</span><span class="sxs-lookup"><span data-stu-id="3264f-149">After you sign in, the available workspaces for your company are shown.</span></span> <span data-ttu-id="3264f-150">Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, budete muset aktualizovat seznam mobilních pracovních prostorů.</span><span class="sxs-lookup"><span data-stu-id="3264f-150">Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.</span></span>
 
-[![Vyžádání aktualizace](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+<span data-ttu-id="3264f-151">[![Vyžádání aktualizace](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="3264f-151">[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span></span>
 
-## <a name="enter-time-by-using-the-project-time-entry-mobile-workspace"></a>Zadejte čas pomocí mobilního pracovního prostoru zadání času projektu.
-1.  Na svém mobilním zařízení vyberte pracovní prostor **zadání času projektu**.
-2.  Vyberte **Časový záznam**. Zobrazí se kalendářní data pro aktuální týden.
-3.  Pro vybrané datum zvolte možnosti **Akce**&gt;**Nový záznam**.
-4.  Zadejte počet hodin, který chcete zaznamenat.
-5.  Vyberte projekt pro časový záznam. Seznam uvádí projekty, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
-6.  Není-li váš projekt v seznamu, vyberte možnost **Vyhledávat další**. Hledejte podle názvu nebo přepněte pro hledání podle názvu projektu nebo odběratele.
-7.  Vyberte kategorii. Seznam uvádí kategorie, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
-8.  Není-li vaše kategorie v seznamu, vyberte možnost **Vyhledávat další**. Hledejte podle kategorie nebo přepněte pro hledání podle názvu kategorie.
-9.  Vyberte aktivitu. Seznam uvádí aktivity, které jsou načteny do vaší aplikace pro použití v režimu offline. Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit. Další informace najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
-10. Není-li vaše aktivita v seznamu, vyberte možnost **Vyhledávat další**. Hledejte podle čísla aktivity nebo přepněte pro hledání podle účelu.
+## <a name="enter-time-by-using-the-project-time-entry-mobile-workspace"></a><span data-ttu-id="3264f-152">Zadejte čas pomocí mobilního pracovního prostoru zadání času projektu.</span><span class="sxs-lookup"><span data-stu-id="3264f-152">Enter time by using the Project time entry mobile workspace</span></span>
+1.  <span data-ttu-id="3264f-153">Na svém mobilním zařízení vyberte pracovní prostor **zadání času projektu**.</span><span class="sxs-lookup"><span data-stu-id="3264f-153">On your mobile device, select the **Project time entry** workspace.</span></span>
+2.  <span data-ttu-id="3264f-154">Vyberte **Časový záznam**.</span><span class="sxs-lookup"><span data-stu-id="3264f-154">Select **Time entry**.</span></span> <span data-ttu-id="3264f-155">Zobrazí se kalendářní data pro aktuální týden.</span><span class="sxs-lookup"><span data-stu-id="3264f-155">The calendar dates for the current week are shown.</span></span>
+3.  <span data-ttu-id="3264f-156">Pro vybrané datum zvolte možnosti **Akce**&gt;**Nový záznam**.</span><span class="sxs-lookup"><span data-stu-id="3264f-156">For a selected date, select **Actions** &gt; **New entry**.</span></span>
+4.  <span data-ttu-id="3264f-157">Zadejte počet hodin, který chcete zaznamenat.</span><span class="sxs-lookup"><span data-stu-id="3264f-157">Enter the number of hours to record.</span></span>
+5.  <span data-ttu-id="3264f-158">Vyberte projekt pro časový záznam.</span><span class="sxs-lookup"><span data-stu-id="3264f-158">Select the project for the time entry.</span></span> <span data-ttu-id="3264f-159">Seznam uvádí projekty, které jsou načteny do vaší aplikace pro použití v režimu offline.</span><span class="sxs-lookup"><span data-stu-id="3264f-159">A list shows the projects that are loaded into your app for offline use.</span></span> <span data-ttu-id="3264f-160">Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit.</span><span class="sxs-lookup"><span data-stu-id="3264f-160">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="3264f-161">Další informace najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span><span class="sxs-lookup"><span data-stu-id="3264f-161">For more information, see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span>
+6.  <span data-ttu-id="3264f-162">Není-li váš projekt v seznamu, vyberte možnost **Vyhledávat další**.</span><span class="sxs-lookup"><span data-stu-id="3264f-162">If your project isn't in the list, select **Search**.</span></span> <span data-ttu-id="3264f-163">Hledejte podle názvu nebo přepněte pro hledání podle názvu projektu nebo odběratele.</span><span class="sxs-lookup"><span data-stu-id="3264f-163">Search by name, or switch to search by project name or customer.</span></span>
+7.  <span data-ttu-id="3264f-164">Vyberte kategorii.</span><span class="sxs-lookup"><span data-stu-id="3264f-164">Select a category.</span></span> <span data-ttu-id="3264f-165">Seznam uvádí kategorie, které jsou načteny do vaší aplikace pro použití v režimu offline.</span><span class="sxs-lookup"><span data-stu-id="3264f-165">A list shows the categories that are loaded into your app for offline use.</span></span> <span data-ttu-id="3264f-166">Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit.</span><span class="sxs-lookup"><span data-stu-id="3264f-166">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="3264f-167">Další informace najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span><span class="sxs-lookup"><span data-stu-id="3264f-167">For more information, see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span>
+8.  <span data-ttu-id="3264f-168">Není-li vaše kategorie v seznamu, vyberte možnost **Vyhledávat další**.</span><span class="sxs-lookup"><span data-stu-id="3264f-168">If your category isn't in the list, select **Search**.</span></span> <span data-ttu-id="3264f-169">Hledejte podle kategorie nebo přepněte pro hledání podle názvu kategorie.</span><span class="sxs-lookup"><span data-stu-id="3264f-169">Search by category, or switch to search by category name.</span></span>
+9.  <span data-ttu-id="3264f-170">Vyberte aktivitu.</span><span class="sxs-lookup"><span data-stu-id="3264f-170">Select an activity.</span></span> <span data-ttu-id="3264f-171">Seznam uvádí aktivity, které jsou načteny do vaší aplikace pro použití v režimu offline.</span><span class="sxs-lookup"><span data-stu-id="3264f-171">A list shows the activities that are loaded into your app for offline use.</span></span> <span data-ttu-id="3264f-172">Ve výchozím nastavení je načteno 50 položek, ale vývojář může tuto hodnotu změnit.</span><span class="sxs-lookup"><span data-stu-id="3264f-172">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="3264f-173">Další informace najdete v tématu [Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span><span class="sxs-lookup"><span data-stu-id="3264f-173">For more information, see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span>
+10. <span data-ttu-id="3264f-174">Není-li vaše aktivita v seznamu, vyberte možnost **Vyhledávat další**.</span><span class="sxs-lookup"><span data-stu-id="3264f-174">If your activity isn't in the list, select **Search**.</span></span> <span data-ttu-id="3264f-175">Hledejte podle čísla aktivity nebo přepněte pro hledání podle účelu.</span><span class="sxs-lookup"><span data-stu-id="3264f-175">Search by activity number, or switch to search by purpose.</span></span>
 
-11. Zvolte vlastnost řádku.
-12. Volitelně: Zadejte externí nebo interní poznámky.
-13. Vyberte **Hotovo**.
+11. <span data-ttu-id="3264f-176">Zvolte vlastnost řádku.</span><span class="sxs-lookup"><span data-stu-id="3264f-176">Select the line property.</span></span>
+12. <span data-ttu-id="3264f-177">Volitelně: Zadejte externí nebo interní poznámky.</span><span class="sxs-lookup"><span data-stu-id="3264f-177">Optional: Enter any external and internal comments.</span></span>
+13. <span data-ttu-id="3264f-178">Vyberte **Hotovo**.</span><span class="sxs-lookup"><span data-stu-id="3264f-178">Select **Done**.</span></span>
 

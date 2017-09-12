@@ -18,57 +18,57 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: f07aea0b87bc3e09982f9ba248d3c28540fd2dc5
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0017d13b7f7594462dfff4ef896f4139607d4bc5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="income-statement-financial-report"></a>Finanční sestava výkazu příjmu
+# <a name="income-statement-financial-report"></a><span data-ttu-id="04097-104">Finanční sestava výkazu příjmu</span><span class="sxs-lookup"><span data-stu-id="04097-104">Income statement financial report</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje výchozí sestavu pro výsledovky. Popisuje také stavební bloky, které jsou přidruženy k této sestavě. 
+<span data-ttu-id="04097-105">Tento článek popisuje výchozí sestavu pro výsledovky.</span><span class="sxs-lookup"><span data-stu-id="04097-105">This article describes the default report for income statements.</span></span> <span data-ttu-id="04097-106">Popisuje také stavební bloky, které jsou přidruženy k této sestavě.</span><span class="sxs-lookup"><span data-stu-id="04097-106">It also describes the building blocks that are associated with this report.</span></span> 
 
-<a name="default-income-statement-report"></a>Výchozí sestava výkazu příjmu
+<a name="default-income-statement-report"></a><span data-ttu-id="04097-107">Výchozí sestava výkazu příjmu</span><span class="sxs-lookup"><span data-stu-id="04097-107">Default income statement report</span></span>
 -------------------------------
 
-| Výchozí sestava             | Jak funguje                                                                                              |
+| <span data-ttu-id="04097-108">Výchozí sestava</span><span class="sxs-lookup"><span data-stu-id="04097-108">Default report</span></span>             | <span data-ttu-id="04097-109">Jak funguje</span><span class="sxs-lookup"><span data-stu-id="04097-109">What it does</span></span>                                                                                              |
 |----------------------------|-----------------------------------------------------------------------------------------------------------|
-| Výkaz příjmu – výchozí | Umožňuje zobrazit ziskovost organizace za aktuální období a také od začátku roku. |
+| <span data-ttu-id="04097-110">Výkaz příjmu – výchozí</span><span class="sxs-lookup"><span data-stu-id="04097-110">Income Statement – Default</span></span> | <span data-ttu-id="04097-111">Umožňuje zobrazit ziskovost organizace za aktuální období a také od začátku roku.</span><span class="sxs-lookup"><span data-stu-id="04097-111">Provides a view of the organization’s profitability for the current period and also for the year to date.</span></span> |
 
-## <a name="building-blocks"></a>Stavební bloky
-Finanční sestava výkazu příjmu používá následující stavební bloky.
+## <a name="building-blocks"></a><span data-ttu-id="04097-112">Stavební bloky</span><span class="sxs-lookup"><span data-stu-id="04097-112">Building blocks</span></span>
+<span data-ttu-id="04097-113">Finanční sestava výkazu příjmu používá následující stavební bloky.</span><span class="sxs-lookup"><span data-stu-id="04097-113">The income statement financial report uses the following building blocks.</span></span>
 
-| Výchozí sestava             | Definice řádku                     | Definice sloupce          |
+| <span data-ttu-id="04097-114">Výchozí sestava</span><span class="sxs-lookup"><span data-stu-id="04097-114">Default report</span></span>             | <span data-ttu-id="04097-115">Definice řádku</span><span class="sxs-lookup"><span data-stu-id="04097-115">Row definition</span></span>                     | <span data-ttu-id="04097-116">Definice sloupce</span><span class="sxs-lookup"><span data-stu-id="04097-116">Column definition</span></span>          |
 |----------------------------|------------------------------------|----------------------------|
-| Výkaz příjmu – výchozí | Souhrnný výkazu příjmu – výchozí | Periodický a od začátku roku – výchozí |
+| <span data-ttu-id="04097-117">Výkaz příjmu – výchozí</span><span class="sxs-lookup"><span data-stu-id="04097-117">Income Statement - Default</span></span> | <span data-ttu-id="04097-118">Souhrnný výkazu příjmu – výchozí</span><span class="sxs-lookup"><span data-stu-id="04097-118">Summary Income Statement - Default</span></span> | <span data-ttu-id="04097-119">Periodický a od začátku roku – výchozí</span><span class="sxs-lookup"><span data-stu-id="04097-119">Periodic and YTD - Default</span></span> |
 
-### <a name="row-definition"></a>Definice řádku
+### <a name="row-definition"></a><span data-ttu-id="04097-120">Definice řádku</span><span class="sxs-lookup"><span data-stu-id="04097-120">Row definition</span></span>
 
-Definice řádku Souhrnný výkazu příjmu – výchozí obsahuje oddíl pro každou část tradičního výkazu příjmu. Dimenze kategorie hlavního účtu se používá k vytvoření této definice řádku. Z toho vyplývá, že každý může generovat sestavu bez nutnosti provádět změny.
+<span data-ttu-id="04097-121">Definice řádku Souhrnný výkazu příjmu – výchozí obsahuje oddíl pro každou část tradičního výkazu příjmu.</span><span class="sxs-lookup"><span data-stu-id="04097-121">The row definition, Summary Income Statement – Default, contains a section for each part of a traditional income statement.</span></span> <span data-ttu-id="04097-122">Dimenze kategorie hlavního účtu se používá k vytvoření této definice řádku.</span><span class="sxs-lookup"><span data-stu-id="04097-122">The Main Account Category dimension is used to build this row definition.</span></span> <span data-ttu-id="04097-123">Z toho vyplývá, že každý může generovat sestavu bez nutnosti provádět změny.</span><span class="sxs-lookup"><span data-stu-id="04097-123">Therefore, anyone can generate the report without having to make any modifications.</span></span>
 
-### <a name="column-definition"></a>Definice sloupce
+### <a name="column-definition"></a><span data-ttu-id="04097-124">Definice sloupce</span><span class="sxs-lookup"><span data-stu-id="04097-124">Column Definition</span></span>
 
-Definice sloupců obsahují různé typy sloupců, které poskytují různé úrovně podrobností a finanční údaje.
+<span data-ttu-id="04097-125">Definice sloupců obsahují různé typy sloupců, které poskytují různé úrovně podrobností a finanční údaje.</span><span class="sxs-lookup"><span data-stu-id="04097-125">The column definitions contain different types of columns to provide different levels of detail and financial data.</span></span>
 
--   **Periodický a od začátku roku – výchozí typy sloupce:**
-    -   **DESC** – popis z definice řádku
-    -   **FD** – finanční údaje pro aktuální období
-    -   **FD** – finanční údaje od začátku roku
+-   <span data-ttu-id="04097-126">**Periodický a od začátku roku – výchozí typy sloupce:**</span><span class="sxs-lookup"><span data-stu-id="04097-126">**Periodic and YTD – Default column types:**</span></span>
+    -   <span data-ttu-id="04097-127">**DESC** – popis z definice řádku</span><span class="sxs-lookup"><span data-stu-id="04097-127">**DESC** – The description from the row definition</span></span>
+    -   <span data-ttu-id="04097-128">**FD** – finanční údaje pro aktuální období</span><span class="sxs-lookup"><span data-stu-id="04097-128">**FD** – Financial data for the current period</span></span>
+    -   <span data-ttu-id="04097-129">**FD** – finanční údaje od začátku roku</span><span class="sxs-lookup"><span data-stu-id="04097-129">**FD** – Financial data for the year to date</span></span>
 
  
 
-<a name="see-also"></a>Viz také
+<a name="see-also"></a><span data-ttu-id="04097-130">Viz také</span><span class="sxs-lookup"><span data-stu-id="04097-130">See also</span></span>
 --------
 
-[Finanční výkaznictví](financial-reporting-getting-started.md)
+[<span data-ttu-id="04097-131">Finanční výkaznictví</span><span class="sxs-lookup"><span data-stu-id="04097-131">Financial reporting</span></span>](financial-reporting-getting-started.md)
 
-[Zobrazení finančních sestav](view-financial-reports.md)
+[<span data-ttu-id="04097-132">Zobrazení finančních sestav</span><span class="sxs-lookup"><span data-stu-id="04097-132">View financial reports</span></span>](view-financial-reports.md)
 
-[Blog o finančním výkaznictví v Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[<span data-ttu-id="04097-133">Blog o finančním výkaznictví v Dynamics</span><span class="sxs-lookup"><span data-stu-id="04097-133">Dynamics Financial Reporting Blog</span></span>](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

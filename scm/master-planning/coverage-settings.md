@@ -20,40 +20,40 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b42f0515823bd42ec260aa1d175855a923162b62
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: fb11a470d98a9742749daaac3244a5bb0d3a689c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="coverage-settings"></a>Nastavení pokrytí
+# <a name="coverage-settings"></a><span data-ttu-id="79ec4-103">Nastavení pokrytí</span><span class="sxs-lookup"><span data-stu-id="79ec4-103">Coverage settings</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Při hlavním plánování se používá nastavení disponibility k výpočtu požadavků na položku. 
+<span data-ttu-id="79ec4-104">Při hlavním plánování se používá nastavení disponibility k výpočtu požadavků na položku.</span><span class="sxs-lookup"><span data-stu-id="79ec4-104">Master scheduling uses coverage settings to calculate item requirements.</span></span> 
 
-Existuje několik způsobů, jak zadat nastavení disponibility:
+<span data-ttu-id="79ec4-105">Existuje několik způsobů, jak zadat nastavení disponibility:</span><span class="sxs-lookup"><span data-stu-id="79ec4-105">You can specify coverage settings in several ways:</span></span>
 
--   Nastavte disponibilitu skupiny. Můžete vytvořit skupinu disponibility, která obsahuje nastavení pro všechny produkty spojené s touto skupinou disponibility. Klikněte na tlačítko **Hlavní plánování &gt; Nastavení &gt; Disponibilita &gt; Skupiny disponibility** a vytvořte tak skupinu disponibility. Můžete propojit skupinu disponibility s produktem. Pokud je odkaz na konkrétní pracoviště, sklad nebo dimenze produktu, použijte pole **Skupina disponibility** na stránce **Disponibilita položky**. Pokud je propojení obecné, bez ohledu na dimenze produktu, použijte **Skupina disponibility** na pevné záložce **Plán** na stránce **Podrobnosti o produktu**. Pokud nespojíte skupinu disponibility s produktem, hlavní plánování bude ve výchozím nastavení používat **Obecná skupina disponibility**, která je určena na stránce **Parametry hlavního plánování**.
+-   <span data-ttu-id="79ec4-106">Nastavte disponibilitu skupiny.</span><span class="sxs-lookup"><span data-stu-id="79ec4-106">Specify coverage settings for a coverage group.</span></span> <span data-ttu-id="79ec4-107">Můžete vytvořit skupinu disponibility, která obsahuje nastavení pro všechny produkty spojené s touto skupinou disponibility.</span><span class="sxs-lookup"><span data-stu-id="79ec4-107">You can create a coverage group that contains settings for all products that are linked to the coverage group.</span></span> <span data-ttu-id="79ec4-108">Klikněte na tlačítko **Hlavní plánování &gt; Nastavení &gt; Disponibilita &gt; Skupiny disponibility** a vytvořte tak skupinu disponibility.</span><span class="sxs-lookup"><span data-stu-id="79ec4-108">Click **Master planning &gt; Setup &gt; Coverage &gt; Coverage groups** to create a coverage group.</span></span> <span data-ttu-id="79ec4-109">Můžete propojit skupinu disponibility s produktem.</span><span class="sxs-lookup"><span data-stu-id="79ec4-109">You can link a coverage group to a product.</span></span> <span data-ttu-id="79ec4-110">Pokud je odkaz na konkrétní pracoviště, sklad nebo dimenze produktu, použijte pole **Skupina disponibility** na stránce **Disponibilita položky**.</span><span class="sxs-lookup"><span data-stu-id="79ec4-110">If the link is specific to a site, warehouse, or product dimension, use the **Coverage group** field on the **Item coverage** page.</span></span> <span data-ttu-id="79ec4-111">Pokud je propojení obecné, bez ohledu na dimenze produktu, použijte **Skupina disponibility** na pevné záložce **Plán** na stránce **Podrobnosti o produktu**.</span><span class="sxs-lookup"><span data-stu-id="79ec4-111">If the link is generic, regardless of the product dimensions, use the **Coverage group** on the **Plan** FastTab on the **Product details** page.</span></span> <span data-ttu-id="79ec4-112">Pokud nespojíte skupinu disponibility s produktem, hlavní plánování bude ve výchozím nastavení používat **Obecná skupina disponibility**, která je určena na stránce **Parametry hlavního plánování**.</span><span class="sxs-lookup"><span data-stu-id="79ec4-112">If you do not link a coverage group to a product, master planning uses the **General coverage group** that is specified on the **Master planning parameters** page as the default.</span></span>
 
--   Nastavte disponibilitu produktu. Nastavení pokrytí lze vytvořit pro určitý produkt. Klikněte na možnosti **Řízení informací o produktech &gt; Produkty &gt; Uvolněné produkty**. Vyberte produkt v **podokně akcí** na kartě **Plán** a ve **skupině disponibility**otevřete kliknutím na tlačítko **Disponibilita položky** stránku **Disponibilita položky**. Je-li produkt již spojen se skupinou disponibility, můžete nastavení skupiny disponibility přepsat v poli **Přepsat**. Nastavení disponibility na stránce**Disponibilita položky** má přednost před nastavením na stránce **Skupina disponibility**.
-
-<!-- -->
-
--   Nastavení disponibility produktu pomocí průvodce. Průvodce vám pomůže nastavit parametry disponibility pro hlavní položku krok za krokem. Na stránce **Disponibilita položky** klepnutím na **Průvodce** otevřete **Průvodce disponibilitou položky**.
+-   <span data-ttu-id="79ec4-113">Nastavte disponibilitu produktu.</span><span class="sxs-lookup"><span data-stu-id="79ec4-113">Specify coverage settings for a product.</span></span> <span data-ttu-id="79ec4-114">Nastavení pokrytí lze vytvořit pro určitý produkt.</span><span class="sxs-lookup"><span data-stu-id="79ec4-114">You can create coverage settings for a specific product.</span></span> <span data-ttu-id="79ec4-115">Klikněte na možnosti **Řízení informací o produktech &gt; Produkty &gt; Uvolněné produkty**.</span><span class="sxs-lookup"><span data-stu-id="79ec4-115">Click **Product information management &gt; Products &gt; Released products**.</span></span> <span data-ttu-id="79ec4-116">Vyberte produkt v **podokně akcí** na kartě **Plán** a ve **skupině disponibility**otevřete kliknutím na tlačítko **Disponibilita položky** stránku **Disponibilita položky**.</span><span class="sxs-lookup"><span data-stu-id="79ec4-116">Select the product, on the **Action Pane**, on the **Plan** tab, in the **Coverage group**, click **Item coverage** to open the **Item coverage** page.</span></span> <span data-ttu-id="79ec4-117">Je-li produkt již spojen se skupinou disponibility, můžete nastavení skupiny disponibility přepsat v poli **Přepsat**.</span><span class="sxs-lookup"><span data-stu-id="79ec4-117">If the product is already linked to a coverage group, you can override the coverage group settings by using the **Override** field.</span></span> <span data-ttu-id="79ec4-118">Nastavení disponibility na stránce**Disponibilita položky** má přednost před nastavením na stránce **Skupina disponibility**.</span><span class="sxs-lookup"><span data-stu-id="79ec4-118">The coverage settings on the **Item coverage** page take precedence over the settings on the **Coverage group** page.</span></span>
 
 <!-- -->
 
--   Nastavení disponibility pro skupinu dimenzí. Klikněte na **Řízení informací o produktech &gt; Společné &gt; Uvolněné produkty**. Na stránce **Podrobnosti o uvolněném produktu **na kartě **Hlavní** ve skupině **Správa** klikněte na odkaz **Skupina dimenze úložiště**. Na stránce **Skupina dimenze úložiště** vyberte pole **Plán disponibility podle dimenzí** a vytvořte tak nastavení disponibility pro dimenzi ve skupině dimenzí úložiště. Všechny dimenze produktu, například jako konfigurace, barva, velikost nebo styl, musí mít vybráno pole **Plán disponibility podle dimenzí**.
+-   <span data-ttu-id="79ec4-119">Nastavení disponibility produktu pomocí průvodce.</span><span class="sxs-lookup"><span data-stu-id="79ec4-119">Specify coverage settings for a product by using a wizard.</span></span> <span data-ttu-id="79ec4-120">Průvodce vám pomůže nastavit parametry disponibility pro hlavní položku krok za krokem.</span><span class="sxs-lookup"><span data-stu-id="79ec4-120">The wizard is a step-by-step guide to help you set up the primary item coverage parameters.</span></span> <span data-ttu-id="79ec4-121">Na stránce **Disponibilita položky** klepnutím na **Průvodce** otevřete **Průvodce disponibilitou položky**.</span><span class="sxs-lookup"><span data-stu-id="79ec4-121">On the **Item coverage** page, click **Wizard** to open the **Item Coverage Wizard**.</span></span>
+
+<!-- -->
+
+-   <span data-ttu-id="79ec4-122">Nastavení disponibility pro skupinu dimenzí.</span><span class="sxs-lookup"><span data-stu-id="79ec4-122">Specify coverage settings for a dimension group.</span></span> <span data-ttu-id="79ec4-123">Klikněte na **Řízení informací o produktech &gt; Společné &gt; Uvolněné produkty**.</span><span class="sxs-lookup"><span data-stu-id="79ec4-123">Click **Product information management &gt; Common &gt; Released products**.</span></span> <span data-ttu-id="79ec4-124">Na stránce **Podrobnosti o uvolněném produktu **na kartě **Hlavní** ve skupině **Správa** klikněte na odkaz **Skupina dimenze úložiště**.</span><span class="sxs-lookup"><span data-stu-id="79ec4-124">On the **Released product detail **page, on the **General** tab, in the **Administration** group, click the **Storage dimension group** link.</span></span> <span data-ttu-id="79ec4-125">Na stránce **Skupina dimenze úložiště** vyberte pole **Plán disponibility podle dimenzí** a vytvořte tak nastavení disponibility pro dimenzi ve skupině dimenzí úložiště.</span><span class="sxs-lookup"><span data-stu-id="79ec4-125">On the **Storage dimension group** page, select the **Coverage plan by dimension** field to create the coverage settings for a dimension in the storage dimension group.</span></span> <span data-ttu-id="79ec4-126">Všechny dimenze produktu, například jako konfigurace, barva, velikost nebo styl, musí mít vybráno pole **Plán disponibility podle dimenzí**.</span><span class="sxs-lookup"><span data-stu-id="79ec4-126">All product dimensions, such as configuration, color, size, style, must have the **Coverage plan by dimension** field selected.</span></span>
 
 
 
-<a name="see-also"></a>Viz také
+<a name="see-also"></a><span data-ttu-id="79ec4-127">Viz také</span><span class="sxs-lookup"><span data-stu-id="79ec4-127">See also</span></span>
 --------
 
-[Hlavní plány](master-plans.md)
+[<span data-ttu-id="79ec4-128">Hlavní plány</span><span class="sxs-lookup"><span data-stu-id="79ec4-128">Master plans</span></span>](master-plans.md)
 
 
 

@@ -15,56 +15,56 @@ ms.custom: 17491
 ms.assetid: 541e6012-4680-4684-8494-e9b5ca4684ee
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: acbab3c833c109576f1e1e26fefeee770a29aeaf
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 754cd81a4550318de7003d847fafb2bcc7414b32
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="configure-and-filter-workspaces"></a>Konfigurace a filtrování pracovních prostorů
+# <a name="configure-and-filter-workspaces"></a><span data-ttu-id="45d1f-103">Konfigurace a filtrování pracovních prostorů</span><span class="sxs-lookup"><span data-stu-id="45d1f-103">Configure and filter workspaces</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-V tomto článku je přehled o tom, jak konfigurovat a filtrovat pracovní prostory.
+<span data-ttu-id="45d1f-104">V tomto článku je přehled o tom, jak konfigurovat a filtrovat pracovní prostory.</span><span class="sxs-lookup"><span data-stu-id="45d1f-104">This article provides an overview about how to configure and filter workspaces.</span></span>
 
-<a name="configuring-a-workspace"></a>Konfigurace pracovního prostoru
+<a name="configuring-a-workspace"></a><span data-ttu-id="45d1f-105">Konfigurace pracovního prostoru</span><span class="sxs-lookup"><span data-stu-id="45d1f-105">Configuring a workspace</span></span>
 -----------------------
 
-Aktualizováním nastavení, které platí pro celý pracovní prostor, můžete změnit vzhled a chování některých pracovních prostorů. Pokud lze pracovní prostor konfigurovat, podokno akcí obsahuje tlačítko pro změny konfigurace. Například na následujícím obrázku je tlačítko s názvem **Konfigurovat můj pracovní prostor**. 
+<span data-ttu-id="45d1f-106">Aktualizováním nastavení, které platí pro celý pracovní prostor, můžete změnit vzhled a chování některých pracovních prostorů.</span><span class="sxs-lookup"><span data-stu-id="45d1f-106">You can change the appearance and behavior of some workspaces by updating settings that apply to the whole workspace.</span></span> <span data-ttu-id="45d1f-107">Pokud lze pracovní prostor konfigurovat, podokno akcí obsahuje tlačítko pro změny konfigurace.</span><span class="sxs-lookup"><span data-stu-id="45d1f-107">When a workspace can be configured, the Action Pane includes a button that instructs you to click it to make configuration changes.</span></span> <span data-ttu-id="45d1f-108">Například na následujícím obrázku je tlačítko s názvem **Konfigurovat můj pracovní prostor**.</span><span class="sxs-lookup"><span data-stu-id="45d1f-108">For example, in the following illustration, the button is named **Configure my workspace**.</span></span> 
 
-[![Konfigurace a filtrování pracovních prostorů](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)   
+<span data-ttu-id="45d1f-109">[![Konfigurace a filtrování pracovních prostorů](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="45d1f-109">[![configure-and-filter-workspaces](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)</span></span>   
 
-Při kliknutí na toto tlačítko se zobrazí dialogové okno, kde můžete upravit předdefinovaná nastavení pracovního prostoru. Specifická nastavení, která se zobrazí v tomto dialogovém okně, budou u každého pracovního prostoru jiná a závisí na konkrétních ovládacích prvcích a obchodních datech, která jsou v pracovním prostoru k dispozici. 
+<span data-ttu-id="45d1f-110">Při kliknutí na toto tlačítko se zobrazí dialogové okno, kde můžete upravit předdefinovaná nastavení pracovního prostoru.</span><span class="sxs-lookup"><span data-stu-id="45d1f-110">When you click the button, a dialog appears, where you can modify the predefined settings for the workspace.</span></span> <span data-ttu-id="45d1f-111">Specifická nastavení, která se zobrazí v tomto dialogovém okně, budou u každého pracovního prostoru jiná a závisí na konkrétních ovládacích prvcích a obchodních datech, která jsou v pracovním prostoru k dispozici.</span><span class="sxs-lookup"><span data-stu-id="45d1f-111">The specific settings that you see in this dialog vary by workspace, and depend on the specific controls and business data that are available in the workspace.</span></span> 
 
-[![Konfigurace mého pracovního prostoru](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
+<span data-ttu-id="45d1f-112">[![Konfigurace mého pracovního prostoru](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)</span><span class="sxs-lookup"><span data-stu-id="45d1f-112">[![configure-my-workspace](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)</span></span>
 
-## <a name="filtering-a-workspace"></a>Filtrování pracovního prostoru
-Mnoho pracovních prostorů umožňuje filtrovat obsah, který se v nich má zobrazit. Ovládací prvky, které jsou k dispozici, mohou umožňovat filtrování veškerého obsahu v pracovním prostoru nebo pouze obsahu v určité části pracovního prostoru. Filtry pracovního prostoru mohou mít podobu vyhledávání, polí se seznamem, polí s volným textem nebo jiných typů ovládacích prvků. Každý typ filtru má však stejný účinek, jak je popsáno v následujících částech.
+## <a name="filtering-a-workspace"></a><span data-ttu-id="45d1f-113">Filtrování pracovního prostoru</span><span class="sxs-lookup"><span data-stu-id="45d1f-113">Filtering a workspace</span></span>
+<span data-ttu-id="45d1f-114">Mnoho pracovních prostorů umožňuje filtrovat obsah, který se v nich má zobrazit.</span><span class="sxs-lookup"><span data-stu-id="45d1f-114">Many workspaces let you filter the content that appears in them.</span></span> <span data-ttu-id="45d1f-115">Ovládací prvky, které jsou k dispozici, mohou umožňovat filtrování veškerého obsahu v pracovním prostoru nebo pouze obsahu v určité části pracovního prostoru.</span><span class="sxs-lookup"><span data-stu-id="45d1f-115">The controls that are available might let you filter all the content in the workspace or only the content in a specific section of the workspace.</span></span> <span data-ttu-id="45d1f-116">Filtry pracovního prostoru mohou mít podobu vyhledávání, polí se seznamem, polí s volným textem nebo jiných typů ovládacích prvků.</span><span class="sxs-lookup"><span data-stu-id="45d1f-116">The filters on workspaces can be lookups, combo boxes, free-form text fields, or other types of controls.</span></span> <span data-ttu-id="45d1f-117">Každý typ filtru má však stejný účinek, jak je popsáno v následujících částech.</span><span class="sxs-lookup"><span data-stu-id="45d1f-117">However, every type of filter has the same effects, as described in the following sections.</span></span>
 
-### <a name="workspace-wide-filters"></a>Filtry celého pracovního prostoru
+### <a name="workspace-wide-filters"></a><span data-ttu-id="45d1f-118">Filtry celého pracovního prostoru</span><span class="sxs-lookup"><span data-stu-id="45d1f-118">Workspace-wide filters</span></span>
 
-Celý pracovní prostor můžete filtrovat pomocí filtru celého pracovního prostoru. Filtr celého pracovního prostoru je zobrazený v horním levém rohu pracovního prostoru. Když vyberete konkrétní hodnotu v rozevíracím seznamu, obsah pracovního prostoru bude filtrován na základě tohoto výběru. 
+<span data-ttu-id="45d1f-119">Celý pracovní prostor můžete filtrovat pomocí filtru celého pracovního prostoru.</span><span class="sxs-lookup"><span data-stu-id="45d1f-119">You can filter the whole workspace by using a workspace-wide filter.</span></span> <span data-ttu-id="45d1f-120">Filtr celého pracovního prostoru je zobrazený v horním levém rohu pracovního prostoru.</span><span class="sxs-lookup"><span data-stu-id="45d1f-120">A workspace-wide filter appears in the upper-left corner of the workspace.</span></span> <span data-ttu-id="45d1f-121">Když vyberete konkrétní hodnotu v rozevíracím seznamu, obsah pracovního prostoru bude filtrován na základě tohoto výběru.</span><span class="sxs-lookup"><span data-stu-id="45d1f-121">When you select a specific value in the drop-down list, the contents of the workspace are filtered based on that selection.</span></span> 
 
-[![Filtr pracovního prostoru](./media/workspace-filter.png)](./media/workspace-filter.png) 
+<span data-ttu-id="45d1f-122">[![Filtr pracovního prostoru](./media/workspace-filter.png)](./media/workspace-filter.png)</span><span class="sxs-lookup"><span data-stu-id="45d1f-122">[![workspace-filter](./media/workspace-filter.png)](./media/workspace-filter.png)</span></span> 
 
-Po kliknutí na tlačítko k otevření filtru se zobrazí několik možností. 
+<span data-ttu-id="45d1f-123">Po kliknutí na tlačítko k otevření filtru se zobrazí několik možností.</span><span class="sxs-lookup"><span data-stu-id="45d1f-123">When you click to open the filter, you're presented with several options.</span></span> 
 
-[![Rozšířený filtr pracovního prostoru](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png) 
+<span data-ttu-id="45d1f-124">[![Rozšířený filtr pracovního prostoru](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)</span><span class="sxs-lookup"><span data-stu-id="45d1f-124">[![workspace-filter-expanded](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)</span></span> 
 
-Vyberte požadovanou možnost k filtrování pracovního prostoru na základě této možnosti.
+<span data-ttu-id="45d1f-125">Vyberte požadovanou možnost k filtrování pracovního prostoru na základě této možnosti.</span><span class="sxs-lookup"><span data-stu-id="45d1f-125">Select an option to filter the workspace based on that option.</span></span>
 
-### <a name="workspace-section-filters"></a>Filtry části pracovního prostoru
+### <a name="workspace-section-filters"></a><span data-ttu-id="45d1f-126">Filtry části pracovního prostoru</span><span class="sxs-lookup"><span data-stu-id="45d1f-126">Workspace section filters</span></span>
 
-Pokud jednotlivé části pracovního prostoru mají filtry, můžete filtrovat každou část samostatně. Na následujícím obrázku (pole obsahující text „Filtr“) je příklad filtru pole s volným textem. 
+<span data-ttu-id="45d1f-127">Pokud jednotlivé části pracovního prostoru mají filtry, můžete filtrovat každou část samostatně.</span><span class="sxs-lookup"><span data-stu-id="45d1f-127">If individual sections of the workspace have filters, you can filter each section separately.</span></span> <span data-ttu-id="45d1f-128">Na následujícím obrázku (pole obsahující text „Filtr“) je příklad filtru pole s volným textem.</span><span class="sxs-lookup"><span data-stu-id="45d1f-128">In the following illustration, the filter (the field that contains the text "Filter") is an example of a free-form text field filter.</span></span> 
 
-[![Konfigurace a filtrování pracovních prostorů](./media/workspace-section-filters.png)](./media/workspace-section-filters.png) 
+<span data-ttu-id="45d1f-129">[![Konfigurace a filtrování pracovních prostorů](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)</span><span class="sxs-lookup"><span data-stu-id="45d1f-129">[![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)</span></span> 
 
-Stejně jako v případě filtru celého pracovního prostoru vyberte nebo zadejte do pole hodnotu k filtrování obsahu části.
+<span data-ttu-id="45d1f-130">Stejně jako v případě filtru celého pracovního prostoru vyberte nebo zadejte do pole hodnotu k filtrování obsahu části.</span><span class="sxs-lookup"><span data-stu-id="45d1f-130">As with a workspace-wide filter, select or enter a value in the field to filter the contents of the section.</span></span>
 
 
 

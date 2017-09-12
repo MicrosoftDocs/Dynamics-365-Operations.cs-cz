@@ -16,93 +16,93 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 8eb4cd47104e2df1c973e5e508c1da02617b9a1d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 07fe007005fcbbac1beecadb14dbd752376a0bd4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-requisition-for-consumption"></a>Vytvoření žádanky pro spotřebu
+# <a name="create-a-requisition-for-consumption"></a><span data-ttu-id="11e26-103">Vytvoření žádanky pro spotřebu</span><span class="sxs-lookup"><span data-stu-id="11e26-103">Create a requisition for consumption</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tato procedura vás provede procesem vytvoření žádanky. Ukazuje různé způsoby, jak vyhledávat produkty v zásobovacím katalogu a jak přidat produkt, který není ve vašem katalogu. Před zahájením tohoto postupu je nutné mít nastavenou zásadu nákupu s výchozím typem žádanky Spotřeba. Tento proces můžete projít pomocí ukázkových dat společnosti USMF nebo pomocí vlastních dat. Postup můžete provést pouze pomocí uživatelského profilu, který je nastavený jako pracovník.  Tento úkol běžně provádí zaměstnanec. Role zabezpečení zaměstnance vám umožní provádět úkoly a pokud používáte data USMF, můžete se přihlásit jako Alicia.
+<span data-ttu-id="11e26-104">Tato procedura vás provede procesem vytvoření žádanky.</span><span class="sxs-lookup"><span data-stu-id="11e26-104">This procedure walks you through the process of creating a requisition.</span></span> <span data-ttu-id="11e26-105">Ukazuje různé způsoby, jak vyhledávat produkty v zásobovacím katalogu a jak přidat produkt, který není ve vašem katalogu.</span><span class="sxs-lookup"><span data-stu-id="11e26-105">It shows you different ways to search for products in your procurement catalogue and how to add a product that isn’t in your catalogue.</span></span> <span data-ttu-id="11e26-106">Před zahájením tohoto postupu je nutné mít nastavenou zásadu nákupu s výchozím typem žádanky Spotřeba.</span><span class="sxs-lookup"><span data-stu-id="11e26-106">Before you start this procedure, you must have a purchasing policy set up with Consumption as the default type of requisition.</span></span> <span data-ttu-id="11e26-107">Tento proces můžete projít pomocí ukázkových dat společnosti USMF nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="11e26-107">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="11e26-108">Postup můžete provést pouze pomocí uživatelského profilu, který je nastavený jako pracovník.</span><span class="sxs-lookup"><span data-stu-id="11e26-108">The procedure can only be carried out by a user profile that is set up as worker.</span></span>  <span data-ttu-id="11e26-109">Tento úkol běžně provádí zaměstnanec.</span><span class="sxs-lookup"><span data-stu-id="11e26-109">This task would normally be carried out by an employee.</span></span> <span data-ttu-id="11e26-110">Role zabezpečení zaměstnance vám umožní provádět úkoly a pokud používáte data USMF, můžete se přihlásit jako Alicia.</span><span class="sxs-lookup"><span data-stu-id="11e26-110">The Employee employ security role will allow you to carry out the tasks, or if you’re using USMF, you can log in as Alicia.</span></span>
 
 
-## <a name="create-a-new-requisition"></a>Vytvoření nové žádanky
-1. Přejděte do nabídky Zásobování a zdroje > Nákupní žádanky > Nákupní žádanky připravené mnou.
-2. Klikněte na položku Nová.
-3. V poli Název zadejte pro žádanku název.
-4. Zadejte datum do pole Požadované datum.
-    * Ve výchozím nastavení je požadované datum a datum účtování zkopírováno na řádky nákupních žádanek. Ty lze měnit na úrovni řádku. Požadované datum představuje požadované datum dodávky.  
-5. Zadejte datum do pole Datum účtování.
-    * Účetní datum je použité k záznamu účetní položky v hlavní knize a ověření dostupných rozpočtových prostředků.  
-6. Klikněte na tlačítko OK.
-7. V poli Důvod kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-    * Vybraná obchodní zdůvodnění se ve výchozím nastavení zobrazí na řádcích nákupní žádanky. Podle potřeby je však můžete změnit na úrovni řádku.    
-8. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-9. Volba důvodu
-10. V poli Podrobnosti zadejte popisnější odůvodnění žádanky.
+## <a name="create-a-new-requisition"></a><span data-ttu-id="11e26-111">Vytvoření nové žádanky</span><span class="sxs-lookup"><span data-stu-id="11e26-111">Create a new requisition</span></span>
+1. <span data-ttu-id="11e26-112">Přejděte do nabídky Zásobování a zdroje > Nákupní žádanky > Nákupní žádanky připravené mnou.</span><span class="sxs-lookup"><span data-stu-id="11e26-112">Go to Procurement and sourcing > Purchase requisitions > Purchase requisitions prepared by me.</span></span>
+2. <span data-ttu-id="11e26-113">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="11e26-113">Click New.</span></span>
+3. <span data-ttu-id="11e26-114">V poli Název zadejte pro žádanku název.</span><span class="sxs-lookup"><span data-stu-id="11e26-114">In the Name field, give the requisition a name.</span></span>
+4. <span data-ttu-id="11e26-115">Zadejte datum do pole Požadované datum.</span><span class="sxs-lookup"><span data-stu-id="11e26-115">In the Requested date field, enter a date.</span></span>
+    * <span data-ttu-id="11e26-116">Ve výchozím nastavení je požadované datum a datum účtování zkopírováno na řádky nákupních žádanek.</span><span class="sxs-lookup"><span data-stu-id="11e26-116">By default, the requested date and accounting date are copied to the purchase requisition lines.</span></span> <span data-ttu-id="11e26-117">Ty lze měnit na úrovni řádku.</span><span class="sxs-lookup"><span data-stu-id="11e26-117">They can be changed at the line level.</span></span> <span data-ttu-id="11e26-118">Požadované datum představuje požadované datum dodávky.</span><span class="sxs-lookup"><span data-stu-id="11e26-118">The requested date is the requested delivery date.</span></span>  
+5. <span data-ttu-id="11e26-119">Zadejte datum do pole Datum účtování.</span><span class="sxs-lookup"><span data-stu-id="11e26-119">In the Accounting date field, enter a date.</span></span>
+    * <span data-ttu-id="11e26-120">Účetní datum je použité k záznamu účetní položky v hlavní knize a ověření dostupných rozpočtových prostředků.</span><span class="sxs-lookup"><span data-stu-id="11e26-120">The accounting date is used to record the accounting entry in the general ledger, and to validate whether budget funds are available.</span></span>  
+6. <span data-ttu-id="11e26-121">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="11e26-121">Click OK.</span></span>
+7. <span data-ttu-id="11e26-122">V poli Důvod kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="11e26-122">In the Reason field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="11e26-123">Vybraná obchodní zdůvodnění se ve výchozím nastavení zobrazí na řádcích nákupní žádanky. Podle potřeby je však můžete změnit na úrovni řádku.</span><span class="sxs-lookup"><span data-stu-id="11e26-123">By default, the business justification reason that you select appears for the purchase requisition lines, but you can change it at the line level.</span></span>    
+8. <span data-ttu-id="11e26-124">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="11e26-124">In the list, find and select the desired record.</span></span>
+9. <span data-ttu-id="11e26-125">Volba důvodu</span><span class="sxs-lookup"><span data-stu-id="11e26-125">Select the reason</span></span>
+10. <span data-ttu-id="11e26-126">V poli Podrobnosti zadejte popisnější odůvodnění žádanky.</span><span class="sxs-lookup"><span data-stu-id="11e26-126">In the details field enter a more descriptive justification for the requisition</span></span>
 
-## <a name="add-a-line-to-the-requisition"></a>Přidání řádku do žádanky
-1. Klikněte na položku Přidat řádek.
-    * Existují dva způsoby přidání řádků do nákupní žádanky. Pokud již znáte číslo produktu nebo již víte, že požadujete produkt, který se nenachází v katalogu produktů, přidejte řádek přímo pomocí možnosti „Přidat řádek“. Můžete také použít možnost „Přidat produkty“ a pomocí vyhledávání a filtrování najít položky v katalogu produktů.    
-2. Klikněte na řádek, který jste právě vytvořili.
-    * Žadatel je pracovník, který vyžaduje žádanku.   
-    * Ve výchozím nastavení je osoba připravující žádanku pracovníkem, který odeslal požadavek. Musíte mít oprávnění k přípravě řádku žádanky jménem jiného pracovníka. Pokud takové oprávnění máte, v tomto vyhledávání se zobrazí tito ostatní pracovníci.  
-3. Zadejte hodnotu do pole Číslo zboží.
-    * Položky, které můžete vybrat, jsou omezeny zásadami přístupu ke kategorii a zásobovacím katalogem pro kupující právnickou osobu.    
-4. Zadejte číslo do pole Množství.
+## <a name="add-a-line-to-the-requisition"></a><span data-ttu-id="11e26-127">Přidání řádku do žádanky</span><span class="sxs-lookup"><span data-stu-id="11e26-127">Add a line to the requisition</span></span>
+1. <span data-ttu-id="11e26-128">Klikněte na položku Přidat řádek.</span><span class="sxs-lookup"><span data-stu-id="11e26-128">Click Add line.</span></span>
+    * <span data-ttu-id="11e26-129">Existují dva způsoby přidání řádků do nákupní žádanky.</span><span class="sxs-lookup"><span data-stu-id="11e26-129">There are two ways of adding lines to the purchase requisition.</span></span> <span data-ttu-id="11e26-130">Pokud již znáte číslo produktu nebo již víte, že požadujete produkt, který se nenachází v katalogu produktů, přidejte řádek přímo pomocí možnosti „Přidat řádek“.</span><span class="sxs-lookup"><span data-stu-id="11e26-130">If you already know the product number or you already  know that you are requesting a product that is not in the product catalogueue, then you can add the line directly with "Add line".</span></span> <span data-ttu-id="11e26-131">Můžete také použít možnost „Přidat produkty“ a pomocí vyhledávání a filtrování najít položky v katalogu produktů.</span><span class="sxs-lookup"><span data-stu-id="11e26-131">The other way is to use "Add products" where you can use searching and filtering to find items in the product catalogueue.</span></span>    
+2. <span data-ttu-id="11e26-132">Klikněte na řádek, který jste právě vytvořili.</span><span class="sxs-lookup"><span data-stu-id="11e26-132">Click on the row you just created.</span></span>
+    * <span data-ttu-id="11e26-133">Žadatel je pracovník, který vyžaduje žádanku.</span><span class="sxs-lookup"><span data-stu-id="11e26-133">The requester is the worker that has requested the requisition.</span></span>   
+    * <span data-ttu-id="11e26-134">Ve výchozím nastavení je osoba připravující žádanku pracovníkem, který odeslal požadavek.</span><span class="sxs-lookup"><span data-stu-id="11e26-134">By default the person preparing the requisition is the worker who has requested it.</span></span> <span data-ttu-id="11e26-135">Musíte mít oprávnění k přípravě řádku žádanky jménem jiného pracovníka.</span><span class="sxs-lookup"><span data-stu-id="11e26-135">You have to be given permission to prepare a requisition line on behalf of another worker.</span></span> <span data-ttu-id="11e26-136">Pokud takové oprávnění máte, v tomto vyhledávání se zobrazí tito ostatní pracovníci.</span><span class="sxs-lookup"><span data-stu-id="11e26-136">If you have such permissions then the other workers will show up in this lookup.</span></span>  
+3. <span data-ttu-id="11e26-137">Zadejte hodnotu do pole Číslo zboží.</span><span class="sxs-lookup"><span data-stu-id="11e26-137">In the Item number field, type a value.</span></span>
+    * <span data-ttu-id="11e26-138">Položky, které můžete vybrat, jsou omezeny zásadami přístupu ke kategorii a zásobovacím katalogem pro kupující právnickou osobu. </span><span class="sxs-lookup"><span data-stu-id="11e26-138">The items that are available for you to choose are limited by the category access policy and the procurement catalogue for the buying legal entity.</span></span>   
+4. <span data-ttu-id="11e26-139">Zadejte číslo do pole Množství.</span><span class="sxs-lookup"><span data-stu-id="11e26-139">In the Quantity field, enter a number.</span></span>
 
-## <a name="add-more-products-to-the-requisition"></a>Přidání dalších produktů do žádanky
-1. Klikněte na možnost Přidat produkty.
-    * Toto je možnost, kde lze vyhledávat produkty v katalogu produktů.      
-2. V poli Vyhledání uzlu kategorie zásobování zadejte první část názvu kategorie, kterou hledáte, a pak klikněte na Zadat.
-    * Zadejte například počít.  
-3. Použijte zástupce InvokeDefaultButton.
-4. Pomocí filtru filtrujte seznam produktů ve vybrané kategorii.
-5. Vyberte kartu produktu, který chcete do žádanky přidat.
-6. Klikněte na možnost Přidat na řádky.
-7. Zadejte číslo do pole Množství.
-8. V poli Vyhledání uzlu kategorie zásobování zadejte první část názvu kategorie, kterou hledáte, a pak klikněte na Zadat.
-    * Zadejte například zvýraz (zvýrazňovače).  
-9. Použijte zástupce InvokeDefaultButton.
-10. Klikněte na možnost Přidat neuvedené produkty na řádky, chcete-li přidat produkt neuvedený v zásobovacím katalogu.
-11. Do pole Název produktu zadejte hodnotu.
-12. Zadejte hodnotu do pole Jednotka.
-13. Klepněte na tlačítko OK.
-14. Do pole Popis položky zadejte popis produktu.
-15. Zadejte číslo do pole Množství.
-16. Zadejte číslo do pole Jednotková cena.
-    * Pokud víte cenu pro určitého dodavatele (vybraného v poli Účet dodavatele), můžete cenu zadat.   
-17. V poli Účet dodavatele kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-    * Dodavatelé, kteří jsou k dispozici v tomto poli, závisí na zásadách nákupu a stavu dodavatele pro aktuální kategorii zásobování. Místo volby dodavatele v tomto poli můžete kliknout na tlačítko Navrhnout dodavatele.    
-18. Ze seznamu vyberte dodavatele, kterého chcete použít.
-19. Zadejte hodnotu do pole Externí číslo položky.
-    * Toto je referenční číslo produktu, který dodavatel zná. Například se může jednat o čísla položky produktu ve vlastním katalogu dodavatele.  
-20. Klikněte na tlačítko OK.
+## <a name="add-more-products-to-the-requisition"></a><span data-ttu-id="11e26-140">Přidání dalších produktů do žádanky</span><span class="sxs-lookup"><span data-stu-id="11e26-140">Add more products to the requisition</span></span>
+1. <span data-ttu-id="11e26-141">Klikněte na možnost Přidat produkty.</span><span class="sxs-lookup"><span data-stu-id="11e26-141">Click Add products.</span></span>
+    * <span data-ttu-id="11e26-142">Toto je možnost, kde lze vyhledávat produkty v katalogu produktů.  </span><span class="sxs-lookup"><span data-stu-id="11e26-142">This is the option where you can search for products in the product catalogueue.</span></span>    
+2. <span data-ttu-id="11e26-143">V poli Vyhledání uzlu kategorie zásobování zadejte první část názvu kategorie, kterou hledáte, a pak klikněte na Zadat.</span><span class="sxs-lookup"><span data-stu-id="11e26-143">In the Find procurement category node field, type the first part of the name of the category that you are looking for, and then click Enter.</span></span>
+    * <span data-ttu-id="11e26-144">Zadejte například počít.</span><span class="sxs-lookup"><span data-stu-id="11e26-144">For example, type comput.</span></span>  
+3. <span data-ttu-id="11e26-145">Použijte zástupce InvokeDefaultButton.</span><span class="sxs-lookup"><span data-stu-id="11e26-145">Use the InvokeDefaultButton shortcut.</span></span>
+4. <span data-ttu-id="11e26-146">Pomocí filtru filtrujte seznam produktů ve vybrané kategorii.</span><span class="sxs-lookup"><span data-stu-id="11e26-146">Use the Filter to filter the list of products in the selected category.</span></span>
+5. <span data-ttu-id="11e26-147">Vyberte kartu produktu, který chcete do žádanky přidat.</span><span class="sxs-lookup"><span data-stu-id="11e26-147">Select the product card that you want to add to the requisition.</span></span>
+6. <span data-ttu-id="11e26-148">Klikněte na možnost Přidat na řádky.</span><span class="sxs-lookup"><span data-stu-id="11e26-148">Click Add to lines.</span></span>
+7. <span data-ttu-id="11e26-149">Zadejte číslo do pole Množství.</span><span class="sxs-lookup"><span data-stu-id="11e26-149">In the Quantity field, enter a number.</span></span>
+8. <span data-ttu-id="11e26-150">V poli Vyhledání uzlu kategorie zásobování zadejte první část názvu kategorie, kterou hledáte, a pak klikněte na Zadat.</span><span class="sxs-lookup"><span data-stu-id="11e26-150">In the Find procurement category node field, type the first part of the name of the category that you are looking for, and then click Enter.</span></span>
+    * <span data-ttu-id="11e26-151">Zadejte například zvýraz (zvýrazňovače).</span><span class="sxs-lookup"><span data-stu-id="11e26-151">For example, type High (highlighters).</span></span>  
+9. <span data-ttu-id="11e26-152">Použijte zástupce InvokeDefaultButton.</span><span class="sxs-lookup"><span data-stu-id="11e26-152">Use the InvokeDefaultButton shortcut.</span></span>
+10. <span data-ttu-id="11e26-153">Klikněte na možnost Přidat neuvedené produkty na řádky, chcete-li přidat produkt neuvedený v zásobovacím katalogu.</span><span class="sxs-lookup"><span data-stu-id="11e26-153">Click Add unlisted product to lines to add a product that’s not listed in the procurement catalogue.</span></span>
+11. <span data-ttu-id="11e26-154">Do pole Název produktu zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="11e26-154">In the Product name field, type a value.</span></span>
+12. <span data-ttu-id="11e26-155">Zadejte hodnotu do pole Jednotka.</span><span class="sxs-lookup"><span data-stu-id="11e26-155">In the Unit field, type a value.</span></span>
+13. <span data-ttu-id="11e26-156">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="11e26-156">Click OK.</span></span>
+14. <span data-ttu-id="11e26-157">Do pole Popis položky zadejte popis produktu.</span><span class="sxs-lookup"><span data-stu-id="11e26-157">In the Item description field, add a description of the product.</span></span>
+15. <span data-ttu-id="11e26-158">Zadejte číslo do pole Množství.</span><span class="sxs-lookup"><span data-stu-id="11e26-158">In the Quantity field, enter a number.</span></span>
+16. <span data-ttu-id="11e26-159">Zadejte číslo do pole Jednotková cena.</span><span class="sxs-lookup"><span data-stu-id="11e26-159">In the Unit price field, enter a number.</span></span>
+    * <span data-ttu-id="11e26-160">Pokud víte cenu pro určitého dodavatele (vybraného v poli Účet dodavatele), můžete cenu zadat.</span><span class="sxs-lookup"><span data-stu-id="11e26-160">If you know the price for a particular vendor (that you select in the vendor account field) then that price can be entered</span></span>   
+17. <span data-ttu-id="11e26-161">V poli Účet dodavatele kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="11e26-161">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="11e26-162">Dodavatelé, kteří jsou k dispozici v tomto poli, závisí na zásadách nákupu a stavu dodavatele pro aktuální kategorii zásobování.</span><span class="sxs-lookup"><span data-stu-id="11e26-162">The vendors that are available in this field depend on the purchasing policies and the status that the vendor has for the current procurement category.</span></span> <span data-ttu-id="11e26-163">Místo volby dodavatele v tomto poli můžete kliknout na tlačítko Navrhnout dodavatele.</span><span class="sxs-lookup"><span data-stu-id="11e26-163">As an alternative to selecting a vendor here, you can click the Suggest vendor button.</span></span>    
+18. <span data-ttu-id="11e26-164">Ze seznamu vyberte dodavatele, kterého chcete použít.</span><span class="sxs-lookup"><span data-stu-id="11e26-164">In the list, select the vendor you want to use.</span></span>
+19. <span data-ttu-id="11e26-165">Zadejte hodnotu do pole Externí číslo položky.</span><span class="sxs-lookup"><span data-stu-id="11e26-165">In the External item number field, type a value.</span></span>
+    * <span data-ttu-id="11e26-166">Toto je referenční číslo produktu, který dodavatel zná.</span><span class="sxs-lookup"><span data-stu-id="11e26-166">This is a reference number for the product that is known by the vendor.</span></span> <span data-ttu-id="11e26-167">Například se může jednat o čísla položky produktu ve vlastním katalogu dodavatele.</span><span class="sxs-lookup"><span data-stu-id="11e26-167">For example, this could be the item number of the product in the vendor's own catalogue.</span></span>  
+20. <span data-ttu-id="11e26-168">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="11e26-168">Click OK.</span></span>
 
-## <a name="distribute-amounts"></a>Distribuovat částky
-1. Klepněte na tlačítko Finanční údaje.
-2. Klikněte na možnost Distribuovat částky.
-    * Tento proces ukazuje, jak rozdělit náklady pro první řádek mezi 2 účty. To lze také provést později, když je požadavek ve stavu kontroly.  
-3. Kliknutím na Rozdělit vytvořte nový řádek distribuce.
-4. V poli Účet hlavní knihy vyberte první nákladové středisko, kde má být provedena část nákladů.
-5. Vyberte druhý řádek distribuce.
-6. Do pole Účet hlavní knihy zadejte druhé nákladové středisko.
-7. Klikněte na možnost Distribuovat rovnoměrně.
-8. Zavřete stránku.
+## <a name="distribute-amounts"></a><span data-ttu-id="11e26-169">Distribuovat částky</span><span class="sxs-lookup"><span data-stu-id="11e26-169">Distribute amounts</span></span>
+1. <span data-ttu-id="11e26-170">Klepněte na tlačítko Finanční údaje.</span><span class="sxs-lookup"><span data-stu-id="11e26-170">Click Financials.</span></span>
+2. <span data-ttu-id="11e26-171">Klikněte na možnost Distribuovat částky.</span><span class="sxs-lookup"><span data-stu-id="11e26-171">Click Distribute amounts.</span></span>
+    * <span data-ttu-id="11e26-172">Tento proces ukazuje, jak rozdělit náklady pro první řádek mezi 2 účty.</span><span class="sxs-lookup"><span data-stu-id="11e26-172">This process shows you how to distribute the cost for the first line between 2 accounts.</span></span> <span data-ttu-id="11e26-173">To lze také provést později, když je požadavek ve stavu kontroly.</span><span class="sxs-lookup"><span data-stu-id="11e26-173">This can also be done later when the requisition is in review.</span></span>  
+3. <span data-ttu-id="11e26-174">Kliknutím na Rozdělit vytvořte nový řádek distribuce.</span><span class="sxs-lookup"><span data-stu-id="11e26-174">Click Split to create a new distribution line.</span></span>
+4. <span data-ttu-id="11e26-175">V poli Účet hlavní knihy vyberte první nákladové středisko, kde má být provedena část nákladů.</span><span class="sxs-lookup"><span data-stu-id="11e26-175">In the Ledger account field select the first cost centre that should take part of the cost.</span></span>
+5. <span data-ttu-id="11e26-176">Vyberte druhý řádek distribuce.</span><span class="sxs-lookup"><span data-stu-id="11e26-176">Select the other distribution line.</span></span>
+6. <span data-ttu-id="11e26-177">Do pole Účet hlavní knihy zadejte druhé nákladové středisko.</span><span class="sxs-lookup"><span data-stu-id="11e26-177">In the Ledger account field specify the other cost centre.</span></span>
+7. <span data-ttu-id="11e26-178">Klikněte na možnost Distribuovat rovnoměrně.</span><span class="sxs-lookup"><span data-stu-id="11e26-178">Click Distribute equally.</span></span>
+8. <span data-ttu-id="11e26-179">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="11e26-179">Close the page.</span></span>
 
-## <a name="view-line-details"></a>Zobrazit podrobnosti řádku
-1. Přepněte rozšíření oddílu Podrobnosti řádku.
+## <a name="view-line-details"></a><span data-ttu-id="11e26-180">Zobrazit podrobnosti řádku</span><span class="sxs-lookup"><span data-stu-id="11e26-180">View line details</span></span>
+1. <span data-ttu-id="11e26-181">Přepněte rozšíření oddílu Podrobnosti řádku.</span><span class="sxs-lookup"><span data-stu-id="11e26-181">Toggle the expansion of the Line details section.</span></span>
 
-## <a name="submit-the-requisition"></a>Odeslání žádanky
-1. Kliknutím na možnost Workflow otevřete dialogové okno.
-2. Klepněte na tlačítko Odeslat.
-3. Zavřete stránku.
-4. Do pole Komentář zadejte poznámky pro schvalovatele žádanky.
-5. Klepněte na tlačítko Odeslat.
-6. Zavřete stránku.
-7. Aktualizujte stránku.
+## <a name="submit-the-requisition"></a><span data-ttu-id="11e26-182">Odeslání žádanky</span><span class="sxs-lookup"><span data-stu-id="11e26-182">Submit the requisition</span></span>
+1. <span data-ttu-id="11e26-183">Kliknutím na možnost Workflow otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="11e26-183">Click Workflow to open the drop dialog.</span></span>
+2. <span data-ttu-id="11e26-184">Klepněte na tlačítko Odeslat.</span><span class="sxs-lookup"><span data-stu-id="11e26-184">Click Submit.</span></span>
+3. <span data-ttu-id="11e26-185">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="11e26-185">Close the page.</span></span>
+4. <span data-ttu-id="11e26-186">Do pole Komentář zadejte poznámky pro schvalovatele žádanky.</span><span class="sxs-lookup"><span data-stu-id="11e26-186">In the Comment field, type a note for the approver of the requisition.</span></span>
+5. <span data-ttu-id="11e26-187">Klepněte na tlačítko Odeslat.</span><span class="sxs-lookup"><span data-stu-id="11e26-187">Click Submit.</span></span>
+6. <span data-ttu-id="11e26-188">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="11e26-188">Close the page.</span></span>
+7. <span data-ttu-id="11e26-189">Aktualizujte stránku.</span><span class="sxs-lookup"><span data-stu-id="11e26-189">Refresh the page.</span></span>
 
 

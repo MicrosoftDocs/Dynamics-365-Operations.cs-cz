@@ -1,7 +1,7 @@
 ---
 title: "Karanténní příkazy"
 description: "Tento článek popisuje použití karanténních příkazů k blokování zásob."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,66 +10,63 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30021
 ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: ec3d54e8e08850cd81891e7058b2b787e08b0fb9
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: 17dde4a4e3380beb98eeb71c719fb898b40a94f7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/12/2017
 
 ---
 
-# <a name="quarantine-orders"></a>Karanténní příkazy
+# <a name="quarantine-orders"></a><span data-ttu-id="ea5f8-103">Karanténní příkazy</span><span class="sxs-lookup"><span data-stu-id="ea5f8-103">Quarantine orders</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje použití karanténních příkazů k blokování zásob. 
+<span data-ttu-id="ea5f8-104">Tento článek popisuje použití karanténních příkazů k blokování zásob.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-104">This article describes how quarantine orders are used to block inventory.</span></span>
 
-Karanténní příkazy lze použít k blokování zásob. Můžete například chtít umístit do karantény položky z důvodů kontroly kvality. Sklad, který byl umístěn do karantény, je převeden do karanténního skladu. **Poznámka:** Pokud používáte rozšířené procesy správy skladu (v modulu Řízení skladu), zpracování karanténní objednávky se používá pouze pro vrácení prodejní objednávky.
+<span data-ttu-id="ea5f8-105">Karanténní příkazy lze použít k blokování zásob.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-105">Quarantine orders can be used to block inventory.</span></span> <span data-ttu-id="ea5f8-106">Můžete například chtít umístit do karantény položky z důvodů kontroly kvality.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-106">For example, you might want to quarantine items for quality control reasons.</span></span> <span data-ttu-id="ea5f8-107">Sklad, který byl umístěn do karantény, je převeden do karanténního skladu.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-107">Inventory that has been quarantined is transferred to a quarantine warehouse.</span></span> <span data-ttu-id="ea5f8-108">**Poznámka:** Pokud používáte rozšířené procesy správy skladu (v modulu Řízení skladu), zpracování karanténní objednávky se používá pouze pro vrácení prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-108">**Note:** If you're using advanced warehouse management processes (in Warehouse management), quarantine order processing is used only for return sales orders.</span></span>
 
-## <a name="quarantine-onhand-inventory-items"></a>Karanténní zásoby položek na skladě
-Při umístění položek do karantény můžete vytvořit karanténní příkazy ručně nebo systém nastavit tak, aby vytvářel karanténní příkazy automaticky při zpracování příchozích. Pokud chcete automaticky vytvořit karanténní příkazy, zaškrtněte možnost **Řízení karantény** na kartě **Zásady zásob** na stránce **Skupiny modelů položek**. Je nutné také určit výchozí karanténní sklad v poli **Karanténní sklad** pro přijímací sklady. Když jsou zásoby fyzicky na skladě zaznamenány v nákupní objednávce nebo výrobní zakázce, položky umístěné do karantény jsou automaticky přesunuty do karanténního skladu v aplikaci Microsoft Dynamics 365 for Finance and Operations. K tomuto pohybu dochází, pokud se změní stav karanténního příkazu na **Zahájeno**. Při ručním vytváření karanténních příkazů, není požadováno, aby v přidružené skupině modelů položek položka byla nastavena pro řízení karantény. Za tímto účelem je nutné zadat zásob na skladě, která mají být umístěny do karantény, a karanténní sklad, který má být použit. Můžete použít stavy karanténních příkazů pro usnadnění plánování procesu.
+## <a name="quarantine-onhand-inventory-items"></a><span data-ttu-id="ea5f8-109">Karanténní zásoby položek na skladě</span><span class="sxs-lookup"><span data-stu-id="ea5f8-109">Quarantine onhand inventory items</span></span>
+<span data-ttu-id="ea5f8-110">Při umístění položek do karantény můžete vytvořit karanténní příkazy ručně nebo systém nastavit tak, aby vytvářel karanténní příkazy automaticky při zpracování příchozích.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-110">When you quarantine items, you can either create the quarantine orders manually or set up the system to create the quarantine orders automatically during inbound processing.</span></span> <span data-ttu-id="ea5f8-111">Pokud chcete automaticky vytvořit karanténní příkazy, zaškrtněte možnost **Řízení karantény** na kartě **Zásady zásob** na stránce **Skupiny modelů položek**.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-111">To create quarantine orders automatically, select the **Quarantine management** option on the **Inventory policies** tab on the **Item model groups** page.</span></span> <span data-ttu-id="ea5f8-112">Je nutné také určit výchozí karanténní sklad v poli **Karanténní sklad** pro přijímací sklady.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-112">You must also specify a default quarantine warehouse in the **Quarantine warehouse** field for the receiving warehouses.</span></span> <span data-ttu-id="ea5f8-113">Když jsou zásoby fyzicky na skladě zaznamenány v nákupní objednávce nebo výrobní zakázce, položky umístěné do karantény jsou automaticky přesunuty do karanténního skladu v aplikaci Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-113">When the physically on-hand inventory is recorded in a purchase order or production order, quarantined items are automatically moved to a quarantine warehouse in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="ea5f8-114">K tomuto pohybu dochází, pokud se změní stav karanténního příkazu na **Zahájeno**.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-114">This movement occurs because the status of the quarantine order is changed to **Started**.</span></span> <span data-ttu-id="ea5f8-115">Při ručním vytváření karanténních příkazů, není požadováno, aby v přidružené skupině modelů položek položka byla nastavena pro řízení karantény.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-115">When you create quarantine orders manually, the item doesn't have to be set up for quarantine management in the associated item model group.</span></span> <span data-ttu-id="ea5f8-116">Za tímto účelem je nutné zadat zásob na skladě, která mají být umístěny do karantény, a karanténní sklad, který má být použit.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-116">For this process, you must specify the on-hand inventory that should be quarantined and the quarantine warehouse that should be used.</span></span> <span data-ttu-id="ea5f8-117">Můžete použít stavy karanténních příkazů pro usnadnění plánování procesu.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-117">You can use the quarantine order statuses to help plan the process.</span></span>
 
-## <a name="quarantine-order-statuses"></a>Stavy karanténního příkazu
-Karanténní příkazy mohou mít tyto stavy:
+## <a name="quarantine-order-statuses"></a><span data-ttu-id="ea5f8-118">Stavy karanténního příkazu</span><span class="sxs-lookup"><span data-stu-id="ea5f8-118">Quarantine order statuses</span></span>
+<span data-ttu-id="ea5f8-119">Karanténní příkazy mohou mít tyto stavy:</span><span class="sxs-lookup"><span data-stu-id="ea5f8-119">Quarantine orders can have the following statuses:</span></span>
 
--   Vytvořeno
--   Zahájeno
--   Ohlášeno jako dokončené
--   Ukončeno
+-   <span data-ttu-id="ea5f8-120">Vytvořeno</span><span class="sxs-lookup"><span data-stu-id="ea5f8-120">Created</span></span>
+-   <span data-ttu-id="ea5f8-121">Zahájeno</span><span class="sxs-lookup"><span data-stu-id="ea5f8-121">Started</span></span>
+-   <span data-ttu-id="ea5f8-122">Ohlášeno jako dokončené</span><span class="sxs-lookup"><span data-stu-id="ea5f8-122">Reported as finished</span></span>
+-   <span data-ttu-id="ea5f8-123">Ukončeno</span><span class="sxs-lookup"><span data-stu-id="ea5f8-123">Ended</span></span>
 
-### <a name="created"></a>Vytvořeno
+### <a name="created"></a><span data-ttu-id="ea5f8-124">Vytvořeno</span><span class="sxs-lookup"><span data-stu-id="ea5f8-124">Created</span></span>
 
-Jestliže byla ručně vytvořena karanténní objednávka, ale položka ještě není uložena do karanténního skladu, karanténní příkaz obdrží stav **Vytvořeno**. Vygenerují se dvě skladové transakce. Jedna je transakce výdeje, která může mít stav **Na objednávce**, **Rezervované – fyzicky** nebo **Vyskladněno**. Druhá je příjmová transakce, která může mít v karanténním skladu stav **Objednáno** nebo **Registrováno**. Rezervaci, vyskladnění a aktualizaci registrace zásob můžete provádět pomocí obvyklých procesů.
+<span data-ttu-id="ea5f8-125">Jestliže byla ručně vytvořena karanténní objednávka, ale položka ještě není uložena do karanténního skladu, karanténní příkaz obdrží stav **Vytvořeno**.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-125">When a quarantine order has been created manually, but the item isn't yet in the quarantine warehouse, the quarantine order has a status of **Created**.</span></span> <span data-ttu-id="ea5f8-126">Vygenerují se dvě skladové transakce.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-126">Two inventory transactions are generated.</span></span> <span data-ttu-id="ea5f8-127">Jedna je transakce výdeje, která může mít stav **Na objednávce**, **Rezervované – fyzicky** nebo **Vyskladněno**.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-127">One transaction is an issue transaction that can have a status of **On order**, **Reserved physical**, or **Picked**.</span></span> <span data-ttu-id="ea5f8-128">Druhá je příjmová transakce, která může mít v karanténním skladu stav **Objednáno** nebo **Registrováno**.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-128">The other transaction is a receipt transaction that can have a status of **Ordered** or **Registered** at the quarantine warehouse.</span></span> <span data-ttu-id="ea5f8-129">Rezervaci, vyskladnění a aktualizaci registrace zásob můžete provádět pomocí obvyklých procesů.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-129">You can reserve, pick, and register updates to the inventory by using the usual processes.</span></span>
 
-### <a name="started"></a>Zahájeno
+### <a name="started"></a><span data-ttu-id="ea5f8-130">Zahájeno</span><span class="sxs-lookup"><span data-stu-id="ea5f8-130">Started</span></span>
 
-Když je karanténní příkaz ve stavu **Zahájeno** jsou pak položky přesunuty z obyčejného skladu do karanténního skladu a vytvoří se dvě skladové transakce. Jedna transakce se nachází ve stavu **Odečteno** a jiné transakce nachází ve stavu **Přijato**. Zároveň se vytvoří také dvě skladové transakce k zajištění zpětného převodu. Tyto transakce nejsou datovány. Jedna transakce se nachází ve stavu **Rezervované – fyzicky** a jiné transakce nachází ve stavu **Objednáno**.
+<span data-ttu-id="ea5f8-131">Když je karanténní příkaz ve stavu **Zahájeno** jsou pak položky přesunuty z obyčejného skladu do karanténního skladu a vytvoří se dvě skladové transakce.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-131">When a quarantine order has a status of **Started**, the inventory is transferred from the regular warehouse to the quarantine warehouse, and two inventory transactions are generated.</span></span> <span data-ttu-id="ea5f8-132">Jedna transakce se nachází ve stavu **Odečteno** a jiné transakce nachází ve stavu **Přijato**.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-132">One transaction has a status of **Deducted**, and the other transaction has a status of **Received**.</span></span> <span data-ttu-id="ea5f8-133">Zároveň se vytvoří také dvě skladové transakce k zajištění zpětného převodu.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-133">At the same time, two inventory transactions are created to handle the return transfer.</span></span> <span data-ttu-id="ea5f8-134">Tyto transakce nejsou datovány.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-134">These transactions aren't dated.</span></span> <span data-ttu-id="ea5f8-135">Jedna transakce se nachází ve stavu **Rezervované – fyzicky** a jiné transakce nachází ve stavu **Objednáno**.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-135">One transaction has a status of **Reserved physical**, and the other transaction has a status of **Ordered**.</span></span>
 
-### <a name="reported-as-finished"></a>Ohlášeno jako dokončené
+### <a name="reported-as-finished"></a><span data-ttu-id="ea5f8-136">Ohlášeno jako dokončené</span><span class="sxs-lookup"><span data-stu-id="ea5f8-136">Reported as finished</span></span>
 
-Klepnutím na položku **Ohlásit jako dokončené** můžete ohlásit zahájený karanténní příkaz jako dokončený. Položka je uvolněna z karantény, ale ještě nebyla přesunuta zpět do běžného skladu. Přesun zpět do běžného skladu je možné zpracovat pomocí deníku doručení položky, který může být inicializován během procesu Vykázat jako dokončené.
+<span data-ttu-id="ea5f8-137">Klepnutím na položku **Ohlásit jako dokončené** můžete ohlásit zahájený karanténní příkaz jako dokončený.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-137">By clicking **Report as finished**, you can report a started quarantine order as finished.</span></span> <span data-ttu-id="ea5f8-138">Položka je uvolněna z karantény, ale ještě nebyla přesunuta zpět do běžného skladu.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-138">The item is released from quarantine but isn't yet moved back to the regular warehouse.</span></span> <span data-ttu-id="ea5f8-139">Přesun zpět do běžného skladu je možné zpracovat pomocí deníku doručení položky, který může být inicializován během procesu Vykázat jako dokončené.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-139">The movement back to the regular warehouse can be procesed via an Item arrival journal that can be initialized during the Report as finished process.</span></span>
 
-### <a name="ended"></a>Ukončeno
+### <a name="ended"></a><span data-ttu-id="ea5f8-140">Ukončeno</span><span class="sxs-lookup"><span data-stu-id="ea5f8-140">Ended</span></span>
 
-Když je karanténní příkaz ukončen, je položka přesunuta z karanténního skladu zpět do běžného skladu. Stav transakce zboží je v karanténním skladu nastaven na hodnotu **Prodáno** a v běžném skladu na **Koupeno**.
+<span data-ttu-id="ea5f8-141">Když je karanténní příkaz ukončen, je položka přesunuta z karanténního skladu zpět do běžného skladu.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-141">When a quarantine order is ended, the item is moved from the quarantine warehouse back to the regular warehouse.</span></span> <span data-ttu-id="ea5f8-142">Stav transakce zboží je v karanténním skladu nastaven na hodnotu **Prodáno** a v běžném skladu na **Koupeno**.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-142">The status of the item transaction is set to **Sold** at the quarantine warehouse and **Purchased** at the regular warehouse.</span></span>
 
-## <a name="quarantine-order-scrap"></a>Vyřazení karanténních příkazů
-Jako součást procesu karanténní objednávky je možné zásoby vyřadit. Při zpracování vyřazených zásob bude stav zásob nastaven na **Prodáno** podle transakce výdeje z karanténního skladu.
+## <a name="quarantine-order-scrap"></a><span data-ttu-id="ea5f8-143">Vyřazení karanténních příkazů</span><span class="sxs-lookup"><span data-stu-id="ea5f8-143">Quarantine order scrap</span></span>
+<span data-ttu-id="ea5f8-144">Jako součást procesu karanténní objednávky je možné zásoby vyřadit.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-144">As part of the quarantine order process, you can scrap inventory.</span></span> <span data-ttu-id="ea5f8-145">Při zpracování vyřazených zásob bude stav zásob nastaven na **Prodáno** podle transakce výdeje z karanténního skladu.</span><span class="sxs-lookup"><span data-stu-id="ea5f8-145">When you process scrap, the status of the inventory will be set to **Sold** by an issue transaction from the quarantine warehouse.</span></span>
 
-<a name="see-also"></a>Viz také
+<a name="see-also"></a><span data-ttu-id="ea5f8-146">Viz také</span><span class="sxs-lookup"><span data-stu-id="ea5f8-146">See also</span></span>
 --------
 
-[Blokování zásob](inventory-blocking.md)
-
-
-
+[<span data-ttu-id="ea5f8-147">Blokování zásob</span><span class="sxs-lookup"><span data-stu-id="ea5f8-147">Inventory blocking</span></span>](inventory-blocking.md)
 

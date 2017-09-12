@@ -17,62 +17,62 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 80f71f4ec5710ab257a45edbaee06d7c0e6a281e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 4721ec8437ff7907a417a331bba887847c7e447a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrace položek pro položky umožňující pokročilé uskladnění s použitím deníku doručení zboží
+# <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a><span data-ttu-id="10e08-103">Registrace položek pro položky umožňující pokročilé uskladnění s použitím deníku doručení zboží</span><span class="sxs-lookup"><span data-stu-id="10e08-103">Register items for an advanced warehousing enabled item using an item arrival journal</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup popisuje, jak zaregistrovat položky pomocí deníku doručení položek, když použijete pokročilé postupy řízení skladu. To obvykle provádí přijímající pracovník. 
+<span data-ttu-id="10e08-104">Tento postup popisuje, jak zaregistrovat položky pomocí deníku doručení položek, když použijete pokročilé postupy řízení skladu.</span><span class="sxs-lookup"><span data-stu-id="10e08-104">This procedure shows you how to register items using the item arrival journal when you are using advanced warehouse management processes.</span></span> <span data-ttu-id="10e08-105">To obvykle provádí přijímající pracovník.</span><span class="sxs-lookup"><span data-stu-id="10e08-105">This would usually be done by a receiving clerk.</span></span> 
 
-Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Před zahájením tohoto průvodce musíte mít potvrzenou nákupní objednávku s otevřeným řádkem nákupní objednávky. Položky na řádku musí být na skladě a nesmí používat varianty produktu a nesmí obsahovat sledovací dimenze. Položka zároveň musí být přidružena ke skupině dimenzí úložiště, kde jsou aktivní postupy řízení skladu. Sklad, který se používá, musí být povolen pro procesy správy skladu a umístění, které používáte pro příjem, musí být řízeno registrační značkou. V případě, že používáte USMF, můžete k vytvoření nákupní objednávky použít účet společnosti 1001, sklad 51 a položku M9200. 
+<span data-ttu-id="10e08-106">Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="10e08-106">You can run this procedure in demo data company USMF, or on your own data.</span></span> <span data-ttu-id="10e08-107">Před zahájením tohoto průvodce musíte mít potvrzenou nákupní objednávku s otevřeným řádkem nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="10e08-107">You need to have a confirmed purchase order with an open purchase order line before you start this guide.</span></span> <span data-ttu-id="10e08-108">Položky na řádku musí být na skladě a nesmí používat varianty produktu a nesmí obsahovat sledovací dimenze.</span><span class="sxs-lookup"><span data-stu-id="10e08-108">The item on the line must be stocked, and it must not use product variants, and must not have tracking dimensions.</span></span> <span data-ttu-id="10e08-109">Položka zároveň musí být přidružena ke skupině dimenzí úložiště, kde jsou aktivní postupy řízení skladu.</span><span class="sxs-lookup"><span data-stu-id="10e08-109">And the item needs to be associated with a warehouse management process enabled storage dimension group.</span></span> <span data-ttu-id="10e08-110">Sklad, který se používá, musí být povolen pro procesy správy skladu a umístění, které používáte pro příjem, musí být řízeno registrační značkou.</span><span class="sxs-lookup"><span data-stu-id="10e08-110">The warehouse that’s used must be enabled for warehouse management processes and the location that you use for receiving must be license plate controlled.</span></span> <span data-ttu-id="10e08-111">V případě, že používáte USMF, můžete k vytvoření nákupní objednávky použít účet společnosti 1001, sklad 51 a položku M9200.</span><span class="sxs-lookup"><span data-stu-id="10e08-111">If you’re using USMF, you can use company account 1001, Warehouse 51, and item M9200 to create your PO.</span></span> 
 
-Poznamenejte si číslo nákupní objednávky, kterou vytvoříte, a také si poznamenejte číslo položky a pracoviště, které se používá pro váš řádek nákupní objednávky.
+<span data-ttu-id="10e08-112">Poznamenejte si číslo nákupní objednávky, kterou vytvoříte, a také si poznamenejte číslo položky a pracoviště, které se používá pro váš řádek nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="10e08-112">Make a note of the number of the purchase order that you create, and also note the item number and the site that you used for your purchase order line.</span></span>
 
 
-## <a name="create-an-item-arrival-journal-header"></a>Vytvoření záhlaví deníku pro doručení položky
-1. Přejděte na Doručení položky.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Název.
-    * Pokud používáte data USMF, můžete zadat „WHS“. Pokud používáte jiná data, deník s názvem, který zvolíte, musí mít následující vlastnosti: u možnosti Zkontrolovat výdejní skl. místo musí být nastavena hodnota Ne a u Řízení karantény musí být nastavena hodnota Ne.  
-4. Zadejte hodnotu do pole Číslo.
-5. Zadejte hodnotu do pole Pracoviště.
-    * Vyberte pracoviště, které jste používali pro na řádek nákupní objednávky. To bude sloužit jako výchozí hodnota, která bude výchozí pro všechny řádky v deníku. Pokud jste použili sklad 51 USMF, zvolte pracoviště 5.  
-6. Zadejte hodnotu do pole Sklad.
-    * Vyberte platný sklad pro pracoviště, které jste vybrali. To bude sloužit jako výchozí hodnota, která bude výchozí pro všechny řádky v deníku. Používáte-li například hodnoty v USMF, vyberte 51.  
-7. Zadejte hodnotu do pole Místo konání.
-    * Vyberte platné umístění ve skladu, který jste vybrali. Skladové místo musí být přiděleno k profilu skladového místa, které je řízeno registrační značkou. To bude sloužit jako výchozí hodnota, která bude výchozí pro všechny řádky v deníku. Používáte-li například hodnoty v USMF, vyberte Bulk-008.  
-8. Klepněte pravým tlačítkem myši na šipku rozevíracího seznamu v poli Registrační značka, a pak vyberte možnost Zobrazit podrobnosti.
-9. Klikněte na položku Nová.
-10. V poli Registrační značka zadejte hodnotu.
-    * Poznamenejte si hodnoty.  
-11. Klikněte na položku Uložit.
-12. Zavřete stránku.
-13. V poli Registrační značka zadejte hodnotu.
-    * Zadejte hodnotu registrační značky, kterou jste právě vytvořili. To bude sloužit jako výchozí hodnota, která bude výchozí pro všechny řádky v deníku.  
-14. Klikněte na tlačítko OK.
+## <a name="create-an-item-arrival-journal-header"></a><span data-ttu-id="10e08-113">Vytvoření záhlaví deníku pro doručení položky</span><span class="sxs-lookup"><span data-stu-id="10e08-113">Create an item arrival journal header</span></span>
+1. <span data-ttu-id="10e08-114">Přejděte na Doručení položky.</span><span class="sxs-lookup"><span data-stu-id="10e08-114">Go to Item arrival.</span></span>
+2. <span data-ttu-id="10e08-115">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="10e08-115">Click New.</span></span>
+3. <span data-ttu-id="10e08-116">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="10e08-116">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="10e08-117">Pokud používáte data USMF, můžete zadat „WHS“.</span><span class="sxs-lookup"><span data-stu-id="10e08-117">If you are using USMF, you can type WHS.</span></span> <span data-ttu-id="10e08-118">Pokud používáte jiná data, deník s názvem, který zvolíte, musí mít následující vlastnosti: u možnosti Zkontrolovat výdejní skl. místo musí být nastavena hodnota Ne a u Řízení karantény musí být nastavena hodnota Ne.</span><span class="sxs-lookup"><span data-stu-id="10e08-118">If you’re using other data, the journal whose name you choose has to have the following properties: Check picking location must be set to No, and Quarantine management must be set to No.</span></span>  
+4. <span data-ttu-id="10e08-119">Zadejte hodnotu do pole Číslo.</span><span class="sxs-lookup"><span data-stu-id="10e08-119">In the Number field, type a value.</span></span>
+5. <span data-ttu-id="10e08-120">Zadejte hodnotu do pole Pracoviště.</span><span class="sxs-lookup"><span data-stu-id="10e08-120">In the Site field, type a value.</span></span>
+    * <span data-ttu-id="10e08-121">Vyberte pracoviště, které jste používali pro na řádek nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="10e08-121">Select the site that you used for your purchase order line.</span></span> <span data-ttu-id="10e08-122">To bude sloužit jako výchozí hodnota, která bude výchozí pro všechny řádky v deníku.</span><span class="sxs-lookup"><span data-stu-id="10e08-122">This will serve as a default value, which will default to all lines in the journal.</span></span> <span data-ttu-id="10e08-123">Pokud jste použili sklad 51 USMF, zvolte pracoviště 5.</span><span class="sxs-lookup"><span data-stu-id="10e08-123">If you used warehouse 51 in USMF, choose site 5.</span></span>  
+6. <span data-ttu-id="10e08-124">Zadejte hodnotu do pole Sklad.</span><span class="sxs-lookup"><span data-stu-id="10e08-124">In the Warehouse field, type a value.</span></span>
+    * <span data-ttu-id="10e08-125">Vyberte platný sklad pro pracoviště, které jste vybrali.</span><span class="sxs-lookup"><span data-stu-id="10e08-125">Select a valid warehouse for the site that you’ve selected.</span></span> <span data-ttu-id="10e08-126">To bude sloužit jako výchozí hodnota, která bude výchozí pro všechny řádky v deníku.</span><span class="sxs-lookup"><span data-stu-id="10e08-126">This will serve as a default value, which will default to all lines in the journal.</span></span> <span data-ttu-id="10e08-127">Používáte-li například hodnoty v USMF, vyberte 51.</span><span class="sxs-lookup"><span data-stu-id="10e08-127">If you’re using the example values in USMF, select 51.</span></span>  
+7. <span data-ttu-id="10e08-128">Zadejte hodnotu do pole Místo konání.</span><span class="sxs-lookup"><span data-stu-id="10e08-128">In the Location field, type a value.</span></span>
+    * <span data-ttu-id="10e08-129">Vyberte platné umístění ve skladu, který jste vybrali.</span><span class="sxs-lookup"><span data-stu-id="10e08-129">Select a valid location in the warehouse that you’ve selected.</span></span> <span data-ttu-id="10e08-130">Skladové místo musí být přiděleno k profilu skladového místa, které je řízeno registrační značkou.</span><span class="sxs-lookup"><span data-stu-id="10e08-130">The location has to be associated with a location profile, which is license plate controlled.</span></span> <span data-ttu-id="10e08-131">To bude sloužit jako výchozí hodnota, která bude výchozí pro všechny řádky v deníku.</span><span class="sxs-lookup"><span data-stu-id="10e08-131">This will serve as a default value, which will default to all lines in the journal.</span></span> <span data-ttu-id="10e08-132">Používáte-li například hodnoty v USMF, vyberte Bulk-008.</span><span class="sxs-lookup"><span data-stu-id="10e08-132">If you’re using the example values in USMF, select Bulk-008.</span></span>  
+8. <span data-ttu-id="10e08-133">Klepněte pravým tlačítkem myši na šipku rozevíracího seznamu v poli Registrační značka, a pak vyberte možnost Zobrazit podrobnosti.</span><span class="sxs-lookup"><span data-stu-id="10e08-133">Right-click on the drop-down arrow in the License plate field and then select View details.</span></span>
+9. <span data-ttu-id="10e08-134">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="10e08-134">Click New.</span></span>
+10. <span data-ttu-id="10e08-135">V poli Registrační značka zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="10e08-135">In the License plate field, type a value.</span></span>
+    * <span data-ttu-id="10e08-136">Poznamenejte si hodnoty.</span><span class="sxs-lookup"><span data-stu-id="10e08-136">Make a note of the value.</span></span>  
+11. <span data-ttu-id="10e08-137">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="10e08-137">Click Save.</span></span>
+12. <span data-ttu-id="10e08-138">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="10e08-138">Close the page.</span></span>
+13. <span data-ttu-id="10e08-139">V poli Registrační značka zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="10e08-139">In the License plate field, type a value.</span></span>
+    * <span data-ttu-id="10e08-140">Zadejte hodnotu registrační značky, kterou jste právě vytvořili.</span><span class="sxs-lookup"><span data-stu-id="10e08-140">Enter the value of the license plate that you just created.</span></span> <span data-ttu-id="10e08-141">To bude sloužit jako výchozí hodnota, která bude výchozí pro všechny řádky v deníku.</span><span class="sxs-lookup"><span data-stu-id="10e08-141">This will serve as a default value, which will default to all lines in the journal.</span></span>  
+14. <span data-ttu-id="10e08-142">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="10e08-142">Click OK.</span></span>
 
-## <a name="add-a-line"></a>Přidání řádku
-1. Klikněte na položku Přidat řádek.
-2. Zadejte hodnotu do pole Číslo zboží.
-    * Zadejte číslo položky, která je použita na řádku nákupní objednávky.  
-3. Zadejte číslo do pole Množství.
-    * Zadejte množství, které chcete registrovat.  
-    * Pole Datum určuje datum, kdy bude na skladě registrováno množství této položky.  
-    * ID šarže bude vyplněno systémem, pokud může být jedinečně identifikováno z uvedených informací. V opačném případě bude nutné ho přidat ručně. Toto je povinné pole, které propojí tuto registraci k řádku konkrétního zdrojového dokumentu.  
+## <a name="add-a-line"></a><span data-ttu-id="10e08-143">Přidání řádku</span><span class="sxs-lookup"><span data-stu-id="10e08-143">Add a line</span></span>
+1. <span data-ttu-id="10e08-144">Klikněte na položku Přidat řádek.</span><span class="sxs-lookup"><span data-stu-id="10e08-144">Click Add line.</span></span>
+2. <span data-ttu-id="10e08-145">Zadejte hodnotu do pole Číslo zboží.</span><span class="sxs-lookup"><span data-stu-id="10e08-145">In the Item number field, type a value.</span></span>
+    * <span data-ttu-id="10e08-146">Zadejte číslo položky, která je použita na řádku nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="10e08-146">Enter the item number that you used on the purchase order line.</span></span>  
+3. <span data-ttu-id="10e08-147">Zadejte číslo do pole Množství.</span><span class="sxs-lookup"><span data-stu-id="10e08-147">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="10e08-148">Zadejte množství, které chcete registrovat.</span><span class="sxs-lookup"><span data-stu-id="10e08-148">Enter the quantity that you want to register.</span></span>  
+    * <span data-ttu-id="10e08-149">Pole Datum určuje datum, kdy bude na skladě registrováno množství této položky.</span><span class="sxs-lookup"><span data-stu-id="10e08-149">The Date field determines the date on which the on-hand quantity of this item will be registered in the inventory.</span></span>  
+    * <span data-ttu-id="10e08-150">ID šarže bude vyplněno systémem, pokud může být jedinečně identifikováno z uvedených informací.</span><span class="sxs-lookup"><span data-stu-id="10e08-150">The lot ID will be populated by the system if it can be uniquely identified from the information provided.</span></span> <span data-ttu-id="10e08-151">V opačném případě bude nutné ho přidat ručně.</span><span class="sxs-lookup"><span data-stu-id="10e08-151">Otherwise you will have to add this manually.</span></span> <span data-ttu-id="10e08-152">Toto je povinné pole, které propojí tuto registraci k řádku konkrétního zdrojového dokumentu.</span><span class="sxs-lookup"><span data-stu-id="10e08-152">This is a mandatory field, which links this registration to a specific source document line.</span></span>  
 
-## <a name="complete-the-registration"></a>Dokončení registrace
-1. Klikněte na tlačítko Ověřit.
-    * To kontroluje, zda je deník připraven k zaúčtování. Jestliže se ověření nezdaří, které bude nutné před zaúčtováním deníku opravit chyby.  
-2. Klikněte na tlačítko OK.
-    * Poté, co jste klepnuli na tlačítko OK, zkontrolujte zprávu. Musí existovat zpráva o tom, že deník je v pořádku.  
-3. Klikněte na položku Zaúčtovat.
-4. Klikněte na tlačítko OK.
-    * Poté, co jste kliknuli na tlačítko OK, zkontrolujte pruh zpráv. Musí existovat zpráva o tom, že operace byla dokončena.  
-5. Zavřete stránku.
+## <a name="complete-the-registration"></a><span data-ttu-id="10e08-153">Dokončení registrace</span><span class="sxs-lookup"><span data-stu-id="10e08-153">Complete the registration</span></span>
+1. <span data-ttu-id="10e08-154">Klikněte na tlačítko Ověřit.</span><span class="sxs-lookup"><span data-stu-id="10e08-154">Click Validate.</span></span>
+    * <span data-ttu-id="10e08-155">To kontroluje, zda je deník připraven k zaúčtování.</span><span class="sxs-lookup"><span data-stu-id="10e08-155">This checks that the journal is ready to be posted.</span></span> <span data-ttu-id="10e08-156">Jestliže se ověření nezdaří, které bude nutné před zaúčtováním deníku opravit chyby.</span><span class="sxs-lookup"><span data-stu-id="10e08-156">If the validation fails you will need to fix the errors before you can post the journal.</span></span>  
+2. <span data-ttu-id="10e08-157">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="10e08-157">Click OK.</span></span>
+    * <span data-ttu-id="10e08-158">Poté, co jste klepnuli na tlačítko OK, zkontrolujte zprávu.</span><span class="sxs-lookup"><span data-stu-id="10e08-158">After you clicked OK, check the message.</span></span> <span data-ttu-id="10e08-159">Musí existovat zpráva o tom, že deník je v pořádku.</span><span class="sxs-lookup"><span data-stu-id="10e08-159">There should be a message saying that the journal is OK.</span></span>  
+3. <span data-ttu-id="10e08-160">Klikněte na položku Zaúčtovat.</span><span class="sxs-lookup"><span data-stu-id="10e08-160">Click Post.</span></span>
+4. <span data-ttu-id="10e08-161">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="10e08-161">Click OK.</span></span>
+    * <span data-ttu-id="10e08-162">Poté, co jste kliknuli na tlačítko OK, zkontrolujte pruh zpráv.</span><span class="sxs-lookup"><span data-stu-id="10e08-162">After you have clicked OK, check the message bar.</span></span> <span data-ttu-id="10e08-163">Musí existovat zpráva o tom, že operace byla dokončena.</span><span class="sxs-lookup"><span data-stu-id="10e08-163">There should be a message saying that the operation completed.</span></span>  
+5. <span data-ttu-id="10e08-164">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="10e08-164">Close the page.</span></span>
 
 

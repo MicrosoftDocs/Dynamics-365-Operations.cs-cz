@@ -19,75 +19,75 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5376278b2db7a998796f2f84ec23bd2f848bfe59
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 46afd002a370a43c9e1d2fb7cc5e61ece9033be9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="200-percent-reducing-balance-depreciation"></a>Degresivní odpis 200 procent
+# <a name="200-percent-reducing-balance-depreciation"></a><span data-ttu-id="04fc2-103">Degresivní odpis 200 procent</span><span class="sxs-lookup"><span data-stu-id="04fc2-103">200 percent reducing balance depreciation</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 200 procent“.
+<span data-ttu-id="04fc2-104">Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 200 procent“.</span><span class="sxs-lookup"><span data-stu-id="04fc2-104">This article gives an overview of the 200 percent reducing balance method of depreciation.</span></span>
 
-Pokud nastavujete odpisový profil dlouhodobého majetku a zaškrtnete volbu **Degresivní 200 %** v poli **Metoda** na stránce **Odpisové profily**, dlouhodobý majetek, který je přiřazen k tomuto odpisovému profilu, bude odpisován o stejný procentní podíl v každém období odpisu. Procentuální hodnota se vypočte na základě životnosti majetku. Když má například majetek životnost pět let, procentuální hodnota se vypočte jako 40 procent (200 % ÷ 5). 
+<span data-ttu-id="04fc2-105">Pokud nastavujete odpisový profil dlouhodobého majetku a zaškrtnete volbu **Degresivní 200 %** v poli **Metoda** na stránce **Odpisové profily**, dlouhodobý majetek, který je přiřazen k tomuto odpisovému profilu, bude odpisován o stejný procentní podíl v každém období odpisu.</span><span class="sxs-lookup"><span data-stu-id="04fc2-105">When you set up a fixed asset depreciation profile and select **200% reducing balance** in the **Method** field on the **Depreciation profiles** page, fixed assets that are assigned the depreciation profile are depreciated by the same percentage in each depreciation period.</span></span> <span data-ttu-id="04fc2-106">Procentuální hodnota se vypočte na základě životnosti majetku.</span><span class="sxs-lookup"><span data-stu-id="04fc2-106">The percentage is calculated based on the service life of the asset.</span></span> <span data-ttu-id="04fc2-107">Když má například majetek životnost pět let, procentuální hodnota se vypočte jako 40 procent (200 % ÷ 5).</span><span class="sxs-lookup"><span data-stu-id="04fc2-107">For example, if an asset has a service life of five years, the percentage is calculated as 40 percent (200% ÷ 5).</span></span> 
 
-Tato metoda je také známá jako klesající dvojitý zůstatek.
+<span data-ttu-id="04fc2-108">Tato metoda je také známá jako klesající dvojitý zůstatek.</span><span class="sxs-lookup"><span data-stu-id="04fc2-108">This method is also known as double declining balance.</span></span>
 
-Pokud chcete nastavit 200% degresivní odpisování, je nutné také vybrat možnosti v polích **Odpisový rok** a **Frekvence období** na stránce **Odpisové profily**. Možnosti dostupné v poli **Frekvence období** se liší v závislosti na hodnotě vybrané v poli **Odpisový rok**.
+<span data-ttu-id="04fc2-109">Pokud chcete nastavit 200% degresivní odpisování, je nutné také vybrat možnosti v polích **Odpisový rok** a **Frekvence období** na stránce **Odpisové profily**.</span><span class="sxs-lookup"><span data-stu-id="04fc2-109">To set up 200% reducing balance depreciation, you must also select options in the **Depreciation year** field and the **Period frequency** field on the **Depreciation profiles** page.</span></span> <span data-ttu-id="04fc2-110">Možnosti dostupné v poli **Frekvence období** se liší v závislosti na hodnotě vybrané v poli **Odpisový rok**.</span><span class="sxs-lookup"><span data-stu-id="04fc2-110">The options that are available in the **Period frequency** field vary, depending on the value that you select in the **Depreciation year** field.</span></span>
 
-## <a name="select-a-depreciation-year"></a>Výběr odpisového roku
-V poli **Odpisový rok** na stránce **Odpisové plány** můžete vybrat buď **Kalendářní** nebo **Fiskální**. Výchozí hodnota je **Kalendářní**. 
+## <a name="select-a-depreciation-year"></a><span data-ttu-id="04fc2-111">Výběr odpisového roku</span><span class="sxs-lookup"><span data-stu-id="04fc2-111">Select a depreciation year</span></span>
+<span data-ttu-id="04fc2-112">V poli **Odpisový rok** na stránce **Odpisové plány** můžete vybrat buď **Kalendářní** nebo **Fiskální**.</span><span class="sxs-lookup"><span data-stu-id="04fc2-112">You can select either **Calendar** or **Fiscal** in the **Depreciation year** field on the **Depreciation profiles** page.</span></span> <span data-ttu-id="04fc2-113">Výchozí hodnota je **Kalendářní**.</span><span class="sxs-lookup"><span data-stu-id="04fc2-113">The default value is **Calendar**.</span></span> 
 
-Vaše volba určí, jaké možnosti budou dostupné v poli **Frekvence období**. Toto pole definuje časové rozdělení zaúčtování odpisů a částky v kalendářním roce.
+<span data-ttu-id="04fc2-114">Vaše volba určí, jaké možnosti budou dostupné v poli **Frekvence období**.</span><span class="sxs-lookup"><span data-stu-id="04fc2-114">Your selection determines the options that are available in the **Period frequency** field.</span></span> <span data-ttu-id="04fc2-115">Toto pole definuje časové rozdělení zaúčtování odpisů a částky v kalendářním roce.</span><span class="sxs-lookup"><span data-stu-id="04fc2-115">This field defines the depreciation accrual posting dates and amounts throughout the calendar year.</span></span>
 
-### <a name="calendar"></a>Kalendář
+### <a name="calendar"></a><span data-ttu-id="04fc2-116">Kalendář</span><span class="sxs-lookup"><span data-stu-id="04fc2-116">Calendar</span></span>
 
-V poli **Odpisový rok** můžete ponechat výchozí hodnotu **Kalendářní**. 
+<span data-ttu-id="04fc2-117">V poli **Odpisový rok** můžete ponechat výchozí hodnotu **Kalendářní**.</span><span class="sxs-lookup"><span data-stu-id="04fc2-117">You can keep the default value in the **Depreciation year** field, **Calendar**.</span></span> 
 
-Možnost **Kalendářní** aktualizuje odpisovou základnu 1. ledna každého roku. Odpis obvykle zůstatková účetní hodnota mínus likvidační hodnota. V níže uvedených příkladech této kapitoly je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. 
+<span data-ttu-id="04fc2-118">Možnost **Kalendářní** aktualizuje odpisovou základnu 1. ledna každého roku.</span><span class="sxs-lookup"><span data-stu-id="04fc2-118">The **Calendar** option updates the depreciation base on January 1 of each year.</span></span> <span data-ttu-id="04fc2-119">Odpis obvykle zůstatková účetní hodnota mínus likvidační hodnota.</span><span class="sxs-lookup"><span data-stu-id="04fc2-119">Typically, the depreciation is the net book value minus the scrap value.</span></span> <span data-ttu-id="04fc2-120">V níže uvedených příkladech této kapitoly je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace.</span><span class="sxs-lookup"><span data-stu-id="04fc2-120">In the examples later in this topic, the depreciation base is the numerator in the first expression in the calculations column.</span></span> 
 
-Vyberete-li jako odpisový rok možnost **Kalendář**, v poli **Frekvence období** jsou k dispozici následující možnosti:
+<span data-ttu-id="04fc2-121">Vyberete-li jako odpisový rok možnost **Kalendář**, v poli **Frekvence období** jsou k dispozici následující možnosti:</span><span class="sxs-lookup"><span data-stu-id="04fc2-121">If you select **Calendar** as the depreciation year, the following options are available in the **Period frequency** field:</span></span>
 
--   Možnost **Ročně** provede zaúčtování 31. prosince.
--   **Měsíčně** provádí zaúčtování měsíčně na konci každého kalendářního měsíce.
--   **Čtvrtletně** provádí zaúčtování čtvrtletní částky na konci každého kalendářního čtvrtletí (31. března, 30. června, 30. září a 31. prosince).
--   **Pololetně** provádí zaúčtování pololetní částky na konci poloviny kalendářního roku (30. června a 31. prosince).
--   Položka **Denně** zaúčtuje částku odpisu pro metodu denních odpisů s použitím jedné transakce pro každý den.
+-   <span data-ttu-id="04fc2-122">Možnost **Ročně** provede zaúčtování 31. prosince.</span><span class="sxs-lookup"><span data-stu-id="04fc2-122">**Yearly** posts an amount on December 31.</span></span>
+-   <span data-ttu-id="04fc2-123">**Měsíčně** provádí zaúčtování měsíčně na konci každého kalendářního měsíce.</span><span class="sxs-lookup"><span data-stu-id="04fc2-123">**Monthly** posts a monthly amount at the end of each calendar month.</span></span>
+-   <span data-ttu-id="04fc2-124">**Čtvrtletně** provádí zaúčtování čtvrtletní částky na konci každého kalendářního čtvrtletí (31. března, 30. června, 30. září a 31. prosince).</span><span class="sxs-lookup"><span data-stu-id="04fc2-124">**Quarterly** posts a quarterly amount at the end of each calendar quarter (March 31, June 30, September 30, and December 31).</span></span>
+-   <span data-ttu-id="04fc2-125">**Pololetně** provádí zaúčtování pololetní částky na konci poloviny kalendářního roku (30. června a 31. prosince).</span><span class="sxs-lookup"><span data-stu-id="04fc2-125">**Half-Yearly** posts a half-yearly amount at the calendar half year (June 30 and December 31).</span></span>
+-   <span data-ttu-id="04fc2-126">Položka **Denně** zaúčtuje částku odpisu pro metodu denních odpisů s použitím jedné transakce pro každý den.</span><span class="sxs-lookup"><span data-stu-id="04fc2-126">**Daily** posts the depreciation amount for the daily depreciation method by using one transaction for each day.</span></span>
 
-### <a name="fiscal"></a>Fiskální
+### <a name="fiscal"></a><span data-ttu-id="04fc2-127">Fiskální</span><span class="sxs-lookup"><span data-stu-id="04fc2-127">Fiscal</span></span>
 
-Vyberete-li možnost **Fiskální** v poli **Odpisový rok**, degresivní odpis 200 % je vypočten na základě fiskálního roku pro fiskální kalendář, který je určen pro knihu, nebo pro fiskální kalendář, který je vybrán na stránce **Hlavní kniha**. Fiskální kalendáře se nastavují na stránce **Fiskální kalendáře**. 
+<span data-ttu-id="04fc2-128">Vyberete-li možnost **Fiskální** v poli **Odpisový rok**, degresivní odpis 200 % je vypočten na základě fiskálního roku pro fiskální kalendář, který je určen pro knihu, nebo pro fiskální kalendář, který je vybrán na stránce **Hlavní kniha**.</span><span class="sxs-lookup"><span data-stu-id="04fc2-128">If you select **Fiscal** in the **Depreciation** year field, 200% reducing balance depreciation is calculated based on the fiscal year for the fiscal calendar that is specified for the book, or for the fiscal calendar that is selected on the **Ledger** page.</span></span> <span data-ttu-id="04fc2-129">Fiskální kalendáře se nastavují na stránce **Fiskální kalendáře**.</span><span class="sxs-lookup"><span data-stu-id="04fc2-129">Fiscal calendars are set up on the **Fiscal calendars** page.</span></span> 
 
-Například pro fiskální rok od 1. července do 30. června začíná výpočet odpisů datem 1. července. Fiskální rok může být delší nebo kratší než 12 měsíců. Odpisy se upravují pro jednotlivá období. Délka dalšího fiskálního roku záleží na nastavení období na stránce **Fiskální kalendáře**. 
+<span data-ttu-id="04fc2-130">Například pro fiskální rok od 1. července do 30. června začíná výpočet odpisů datem 1. července.</span><span class="sxs-lookup"><span data-stu-id="04fc2-130">For example, for the fiscal year July 1 through June 30, the depreciation calculation starts on July 1.</span></span> <span data-ttu-id="04fc2-131">Fiskální rok může být delší nebo kratší než 12 měsíců.</span><span class="sxs-lookup"><span data-stu-id="04fc2-131">The fiscal year can be longer or shorter than 12 months.</span></span> <span data-ttu-id="04fc2-132">Odpisy se upravují pro jednotlivá období.</span><span class="sxs-lookup"><span data-stu-id="04fc2-132">The depreciation is adjusted for each period.</span></span> <span data-ttu-id="04fc2-133">Délka dalšího fiskálního roku záleží na nastavení období na stránce **Fiskální kalendáře**.</span><span class="sxs-lookup"><span data-stu-id="04fc2-133">The length of the next fiscal year is determined by the setup of periods on the **Fiscal calendars** page.</span></span> 
 
-Vyberete-li jako odpisový rok možnost **Fiskální**, v poli **Frekvence období** jsou k dispozici následující možnosti:
+<span data-ttu-id="04fc2-134">Vyberete-li jako odpisový rok možnost **Fiskální**, v poli **Frekvence období** jsou k dispozici následující možnosti:</span><span class="sxs-lookup"><span data-stu-id="04fc2-134">When **Fiscal** is selected as the depreciation year, the following options are available in the **Period frequency** field:</span></span>
 
--   Možnost **Ročně** zaúčtuje celkovou částku odpisu vypočteného pro fiskální rok jako jednu částku poslední den fiskálního roku.
--   **Fiskální období** zaúčtuje celkovou částku odpisu vypočteného pro fiskální rok. Tato částka se rozloží do fiskálních období, která jsou definována na stránce **Fiskální kalendáře**.
+-   <span data-ttu-id="04fc2-135">Možnost **Ročně** zaúčtuje celkovou částku odpisu vypočteného pro fiskální rok jako jednu částku poslední den fiskálního roku.</span><span class="sxs-lookup"><span data-stu-id="04fc2-135">**Yearly** posts the total amount of the depreciation that is calculated for the fiscal year as one amount, on the last day of the fiscal year.</span></span>
+-   <span data-ttu-id="04fc2-136">**Fiskální období** zaúčtuje celkovou částku odpisu vypočteného pro fiskální rok.</span><span class="sxs-lookup"><span data-stu-id="04fc2-136">**Fiscal period** posts the total amount of the depreciation that is calculated for the fiscal year.</span></span> <span data-ttu-id="04fc2-137">Tato částka se rozloží do fiskálních období, která jsou definována na stránce **Fiskální kalendáře**.</span><span class="sxs-lookup"><span data-stu-id="04fc2-137">This amount is accrued into the fiscal periods that are defined on the **Fiscal calendars** page.</span></span>
 
-## <a name="example-of-200-reducing-balance-depreciation"></a>Příklad 200% degresivního odpisování
+## <a name="example-of-200-reducing-balance-depreciation"></a><span data-ttu-id="04fc2-138">Příklad 200% degresivního odpisování</span><span class="sxs-lookup"><span data-stu-id="04fc2-138">Example of 200% reducing balance depreciation</span></span>
 |                                |        |
 |--------------------------------|--------|
-| Pořizovací náklady               | 11 000 |
-| Zůstatková hodnota                  | 1 000 |
-| Odpisová základna              | 10 000 |
-| Roky životnosti             | 5      |
-| Roční procentuální hodnota odpisu | 40 %    |
+| <span data-ttu-id="04fc2-139">Pořizovací náklady</span><span class="sxs-lookup"><span data-stu-id="04fc2-139">Acquisition cost</span></span>               | <span data-ttu-id="04fc2-140">11 000</span><span class="sxs-lookup"><span data-stu-id="04fc2-140">11,000</span></span> |
+| <span data-ttu-id="04fc2-141">Zůstatková hodnota</span><span class="sxs-lookup"><span data-stu-id="04fc2-141">Salvage value</span></span>                  | <span data-ttu-id="04fc2-142">1 000</span><span class="sxs-lookup"><span data-stu-id="04fc2-142">1, 000</span></span> |
+| <span data-ttu-id="04fc2-143">Odpisová základna</span><span class="sxs-lookup"><span data-stu-id="04fc2-143">Depreciation base</span></span>              | <span data-ttu-id="04fc2-144">10 000</span><span class="sxs-lookup"><span data-stu-id="04fc2-144">10,000</span></span> |
+| <span data-ttu-id="04fc2-145">Roky životnosti</span><span class="sxs-lookup"><span data-stu-id="04fc2-145">Service life years</span></span>             | <span data-ttu-id="04fc2-146">5</span><span class="sxs-lookup"><span data-stu-id="04fc2-146">5</span></span>      |
+| <span data-ttu-id="04fc2-147">Roční procentuální hodnota odpisu</span><span class="sxs-lookup"><span data-stu-id="04fc2-147">Yearly depreciation percentage</span></span> | <span data-ttu-id="04fc2-148">40 %</span><span class="sxs-lookup"><span data-stu-id="04fc2-148">40%</span></span>    |
 
-Metoda degresivního odepisování 200 % vydělí 200 procent počtem roků životnosti. Procentuální hodnota se vynásobí čistou účetní hodnotou majetku, aby byla určena částka odpisu pro rok.
+<span data-ttu-id="04fc2-149">Metoda degresivního odepisování 200 % vydělí 200 procent počtem roků životnosti.</span><span class="sxs-lookup"><span data-stu-id="04fc2-149">The 200% reducing balance method divides 200 percent by the service life years.</span></span> <span data-ttu-id="04fc2-150">Procentuální hodnota se vynásobí čistou účetní hodnotou majetku, aby byla určena částka odpisu pro rok.</span><span class="sxs-lookup"><span data-stu-id="04fc2-150">That percentage will be multiplied by the net book value of the asset to determine the depreciation amount for the year.</span></span>
 
-| Období | Výpočet částky ročního odpisu | Účetní hodnota             | Čistá účetní hodnota na konci roku |
+| <span data-ttu-id="04fc2-151">Období</span><span class="sxs-lookup"><span data-stu-id="04fc2-151">Period</span></span> | <span data-ttu-id="04fc2-152">Výpočet částky ročního odpisu</span><span class="sxs-lookup"><span data-stu-id="04fc2-152">Calculation of the yearly depreciation amount</span></span> | <span data-ttu-id="04fc2-153">Účetní hodnota</span><span class="sxs-lookup"><span data-stu-id="04fc2-153">Book value</span></span>             | <span data-ttu-id="04fc2-154">Čistá účetní hodnota na konci roku</span><span class="sxs-lookup"><span data-stu-id="04fc2-154">Net book value at the end of the year</span></span> |
 |--------|-----------------------------------------------|------------------------|---------------------------------------|
-| Rok 1 | (11 000 – 1 000) × 40% = 4 000                | 11 000 – 4 000 = 7 000 | 11 000 – 1 000 – 4 000 = 6 000        |
-| Rok 2 | 6 000 × 40% = 2 400                           | 7 000 – 2 400 = 4 600  | 6 000 – 2 400 = 3 600                 |
-| Rok 3 | 3 600 × 40% = 1 440                           | 4 600 – 1 440 = 3 160  | 3 600 – 1 440 = 2 160                 |
+| <span data-ttu-id="04fc2-155">Rok 1</span><span class="sxs-lookup"><span data-stu-id="04fc2-155">Year 1</span></span> | <span data-ttu-id="04fc2-156">(11 000 – 1 000) × 40% = 4 000</span><span class="sxs-lookup"><span data-stu-id="04fc2-156">(11,000 – 1,000) × 40% = 4,000</span></span>                | <span data-ttu-id="04fc2-157">11 000 – 4 000 = 7 000</span><span class="sxs-lookup"><span data-stu-id="04fc2-157">11,000 – 4,000 = 7,000</span></span> | <span data-ttu-id="04fc2-158">11 000 – 1 000 – 4 000 = 6 000</span><span class="sxs-lookup"><span data-stu-id="04fc2-158">11,000 – 1,000 – 4,000 = 6,000</span></span>        |
+| <span data-ttu-id="04fc2-159">Rok 2</span><span class="sxs-lookup"><span data-stu-id="04fc2-159">Year 2</span></span> | <span data-ttu-id="04fc2-160">6 000 × 40% = 2 400</span><span class="sxs-lookup"><span data-stu-id="04fc2-160">6,000 × 40% = 2,400</span></span>                           | <span data-ttu-id="04fc2-161">7 000 – 2 400 = 4 600</span><span class="sxs-lookup"><span data-stu-id="04fc2-161">7,000 – 2,400 = 4,600</span></span>  | <span data-ttu-id="04fc2-162">6 000 – 2 400 = 3 600</span><span class="sxs-lookup"><span data-stu-id="04fc2-162">6,000 – 2,400 = 3,600</span></span>                 |
+| <span data-ttu-id="04fc2-163">Rok 3</span><span class="sxs-lookup"><span data-stu-id="04fc2-163">Year 3</span></span> | <span data-ttu-id="04fc2-164">3 600 × 40% = 1 440</span><span class="sxs-lookup"><span data-stu-id="04fc2-164">3,600 × 40% = 1,440</span></span>                           | <span data-ttu-id="04fc2-165">4 600 – 1 440 = 3 160</span><span class="sxs-lookup"><span data-stu-id="04fc2-165">4,600 – 1,440 = 3,160</span></span>  | <span data-ttu-id="04fc2-166">3 600 – 1 440 = 2 160</span><span class="sxs-lookup"><span data-stu-id="04fc2-166">3,600 – 1,440 = 2,160</span></span>                 |
 
 > [!NOTE] 
-> Když částka vypočtená s použitím metody 200% degresivního odpisování klesne pod hodnotu menší než má částka, která by byla vypočtena s použitím lineární metody, obvykle dojde k převodu na lineární metodu pro zbytek životnosti.
+> <span data-ttu-id="04fc2-167">Když částka vypočtená s použitím metody 200% degresivního odpisování klesne pod hodnotu menší než má částka, která by byla vypočtena s použitím lineární metody, obvykle dojde k převodu na lineární metodu pro zbytek životnosti.</span><span class="sxs-lookup"><span data-stu-id="04fc2-167">Typically, when the amount that is calculated by using the 200% reducing balance depreciation method becomes less than the amount that would be calculated by using the straight line method, there is a conversion to the straight line method for the remaining life.</span></span>
 
 
 

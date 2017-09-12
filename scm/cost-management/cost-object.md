@@ -17,71 +17,71 @@ ms.assetid: ec776b98-813a-490d-848f-468452d98fac
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
-ms.openlocfilehash: 823d3edd106925339607d01fbf5f1921b85ff244
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: d43ea6c0d80a1602f298bbbedb88dd8f7decca4e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="cost-objects"></a>Nákladové objekty
+# <a name="cost-objects"></a><span data-ttu-id="158a8-105">Nákladové objekty</span><span class="sxs-lookup"><span data-stu-id="158a8-105">Cost objects</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek poskytuje informace o nákladových objektech a vysvětluje, jakým způsobem se kumulují náklady a množství. Nákladový objekt je entita, pro kterou se kumulují náklady a množství. Entita nákladového objektu může být produkt a varianty produktu, například varianty pro styl a barvu.  
+<span data-ttu-id="158a8-106">Tento článek poskytuje informace o nákladových objektech a vysvětluje, jakým způsobem se kumulují náklady a množství.</span><span class="sxs-lookup"><span data-stu-id="158a8-106">This article provides information about costs objects, and explains how costs and quantities are accumulated.</span></span> <span data-ttu-id="158a8-107">Nákladový objekt je entita, pro kterou se kumulují náklady a množství.</span><span class="sxs-lookup"><span data-stu-id="158a8-107">A cost object is an entity that costs and quantities are accumulated for.</span></span> <span data-ttu-id="158a8-108">Entita nákladového objektu může být produkt a varianty produktu, například varianty pro styl a barvu.</span><span class="sxs-lookup"><span data-stu-id="158a8-108">A cost object entity can be either a product or product variants, such as variants for style and color.</span></span>  
 
-<a name="cost-objects"></a>Nákladové objekty
+<a name="cost-objects"></a><span data-ttu-id="158a8-109">Nákladové objekty</span><span class="sxs-lookup"><span data-stu-id="158a8-109">Cost objects</span></span>
 ------------
 
-Stránka **Nákladové objekty** obsahuje všechny nákladové objekty, které jsou registrovány v produktu. Nákladové objekty jsou definovány dle údajů z následujících zdrojů:
+<span data-ttu-id="158a8-110">Stránka **Nákladové objekty** obsahuje všechny nákladové objekty, které jsou registrovány v produktu.</span><span class="sxs-lookup"><span data-stu-id="158a8-110">The **Cost objects** page lists all cost objects that are registered on a product.</span></span> <span data-ttu-id="158a8-111">Nákladové objekty jsou definovány dle údajů z následujících zdrojů:</span><span class="sxs-lookup"><span data-stu-id="158a8-111">The cost objects are defined by data from the following sources:</span></span>
 
--   Produkt
--   Skupina dimenzí produktů
--   Skupina dimenze úložiště
--   Skupina sledovací dimenze
+-   <span data-ttu-id="158a8-112">Produkt</span><span class="sxs-lookup"><span data-stu-id="158a8-112">Product</span></span>
+-   <span data-ttu-id="158a8-113">Skupina dimenzí produktů</span><span class="sxs-lookup"><span data-stu-id="158a8-113">Product dimension group</span></span>
+-   <span data-ttu-id="158a8-114">Skupina dimenze úložiště</span><span class="sxs-lookup"><span data-stu-id="158a8-114">Storage dimension group</span></span>
+-   <span data-ttu-id="158a8-115">Skupina sledovací dimenze</span><span class="sxs-lookup"><span data-stu-id="158a8-115">Tracking dimension group</span></span>
 
-**Poznámka:** Nákladový objekt představuje nákladový prvek pouze typu **Přímý materiál**. Nákladový objekt a objektu zásob se liší způsobem, že nákladový objekt je definován podle dimenzí zásob, které jsou vybrány pro finanční zásoby. Například zboží má následující konfiguraci:
+<span data-ttu-id="158a8-116">**Poznámka:** Nákladový objekt představuje nákladový prvek pouze typu **Přímý materiál**.</span><span class="sxs-lookup"><span data-stu-id="158a8-116">**Note:** A cost object represents a cost element of the **Direct material** type only.</span></span> <span data-ttu-id="158a8-117">Nákladový objekt a objektu zásob se liší způsobem, že nákladový objekt je definován podle dimenzí zásob, které jsou vybrány pro finanční zásoby.</span><span class="sxs-lookup"><span data-stu-id="158a8-117">A cost object and an inventory object differ in the way that a cost object is defined by the inventory dimensions that are selected for financial inventory.</span></span> <span data-ttu-id="158a8-118">Například zboží má následující konfiguraci:</span><span class="sxs-lookup"><span data-stu-id="158a8-118">For example, an item has the following configuration:</span></span>
 
--   **Web:** Fyzické zásoby = Ano, Finanční zásoby = Ano
--   **Sklad:** Fyzické zásoby = Ano, Finanční zásoby = Ne
--   **Č. dávky:** Fyzické zásoby = Ano, Finanční zásoby = Ne
+-   <span data-ttu-id="158a8-119">**Web:** Fyzické zásoby = Ano, Finanční zásoby = Ano</span><span class="sxs-lookup"><span data-stu-id="158a8-119">**Site:** Physical inventory = Yes, Financial inventory = Yes</span></span>
+-   <span data-ttu-id="158a8-120">**Sklad:** Fyzické zásoby = Ano, Finanční zásoby = Ne</span><span class="sxs-lookup"><span data-stu-id="158a8-120">**Warehouse:** Physical inventory = Yes, Financial inventory = No</span></span>
+-   <span data-ttu-id="158a8-121">**Č. dávky:** Fyzické zásoby = Ano, Finanční zásoby = Ne</span><span class="sxs-lookup"><span data-stu-id="158a8-121">**Batch No.:** Physical inventory = Yes, Financial inventory = No</span></span>
 
-Následující tabulka zobrazuje, co je nákladový objekt a co je objekt zásob.
+<span data-ttu-id="158a8-122">Následující tabulka zobrazuje, co je nákladový objekt a co je objekt zásob.</span><span class="sxs-lookup"><span data-stu-id="158a8-122">The following table shows what is a cost object and what is an inventory object.</span></span>
 
-| Typ objektu      | Číslo zboží | Lokalita | Sklad | Č. dávky |
+| <span data-ttu-id="158a8-123">Typ objektu</span><span class="sxs-lookup"><span data-stu-id="158a8-123">Object type</span></span>      | <span data-ttu-id="158a8-124">Číslo zboží</span><span class="sxs-lookup"><span data-stu-id="158a8-124">Item number</span></span> | <span data-ttu-id="158a8-125">Lokalita</span><span class="sxs-lookup"><span data-stu-id="158a8-125">Site</span></span> | <span data-ttu-id="158a8-126">Sklad</span><span class="sxs-lookup"><span data-stu-id="158a8-126">Warehouse</span></span> | <span data-ttu-id="158a8-127">Č. dávky</span><span class="sxs-lookup"><span data-stu-id="158a8-127">Batch No.</span></span> |
 |------------------|-------------|------|-----------|-----------|
-| Nákladový objekt      |  linka           |  linka    |           |           |
-| Objekt zásob |  linka           |  linka    |   linka        |  linka         |
+| <span data-ttu-id="158a8-128">Nákladový objekt</span><span class="sxs-lookup"><span data-stu-id="158a8-128">Cost object</span></span>      | <span data-ttu-id="158a8-129"> linka</span><span class="sxs-lookup"><span data-stu-id="158a8-129">x</span></span>           | <span data-ttu-id="158a8-130"> linka</span><span class="sxs-lookup"><span data-stu-id="158a8-130">x</span></span>    |           |           |
+| <span data-ttu-id="158a8-131">Objekt zásob</span><span class="sxs-lookup"><span data-stu-id="158a8-131">Inventory object</span></span> | <span data-ttu-id="158a8-132"> linka</span><span class="sxs-lookup"><span data-stu-id="158a8-132">x</span></span>           | <span data-ttu-id="158a8-133"> linka</span><span class="sxs-lookup"><span data-stu-id="158a8-133">x</span></span>    |  <span data-ttu-id="158a8-134"> linka</span><span class="sxs-lookup"><span data-stu-id="158a8-134">x</span></span>        | <span data-ttu-id="158a8-135"> linka</span><span class="sxs-lookup"><span data-stu-id="158a8-135">x</span></span>         |
 
-## <a name="accumulation-of-costs-and-quantities"></a>Kumulace nákladů a množství
--   Hodnota v poli **Hodnota** je součet následujících hodnot:
-    -   Fyzická částka nákladů
-    -   Částka finančních nákladů
-    -   Množství úprav
--   Hodnota v poli **Množství** je součet následujících hodnot:
-    -   Přijato
-    -   Odečteno
-    -   Zaúčtované mn.
--   Pole **Průměrné náklady na jednotku** je vypočítané. Hodnota se vypočítá jako podíl hodnoty pole **Hodnota** a hodnoty pole **Množství**.
+## <a name="accumulation-of-costs-and-quantities"></a><span data-ttu-id="158a8-136">Kumulace nákladů a množství</span><span class="sxs-lookup"><span data-stu-id="158a8-136">Accumulation of costs and quantities</span></span>
+-   <span data-ttu-id="158a8-137">Hodnota v poli **Hodnota** je součet následujících hodnot:</span><span class="sxs-lookup"><span data-stu-id="158a8-137">The value in the **Value** fieldis a sum of the following values:</span></span>
+    -   <span data-ttu-id="158a8-138">Fyzická částka nákladů</span><span class="sxs-lookup"><span data-stu-id="158a8-138">Physical cost amount</span></span>
+    -   <span data-ttu-id="158a8-139">Částka finančních nákladů</span><span class="sxs-lookup"><span data-stu-id="158a8-139">Financial cost amount</span></span>
+    -   <span data-ttu-id="158a8-140">Množství úprav</span><span class="sxs-lookup"><span data-stu-id="158a8-140">Adjustments</span></span>
+-   <span data-ttu-id="158a8-141">Hodnota v poli **Množství** je součet následujících hodnot:</span><span class="sxs-lookup"><span data-stu-id="158a8-141">The value in the **Quantity** field is a sum of the following values:</span></span>
+    -   <span data-ttu-id="158a8-142">Přijato</span><span class="sxs-lookup"><span data-stu-id="158a8-142">Received</span></span>
+    -   <span data-ttu-id="158a8-143">Odečteno</span><span class="sxs-lookup"><span data-stu-id="158a8-143">Deducted</span></span>
+    -   <span data-ttu-id="158a8-144">Zaúčtované mn.</span><span class="sxs-lookup"><span data-stu-id="158a8-144">Posted quantity</span></span>
+-   <span data-ttu-id="158a8-145">Pole **Průměrné náklady na jednotku** je vypočítané.</span><span class="sxs-lookup"><span data-stu-id="158a8-145">The **Average unit cost** field is a calculated field.</span></span> <span data-ttu-id="158a8-146">Hodnota se vypočítá jako podíl hodnoty pole **Hodnota** a hodnoty pole **Množství**.</span><span class="sxs-lookup"><span data-stu-id="158a8-146">The value is calculated by dividing the **Value** value by the **Quantity** value.</span></span>
 
-**Poznámka:** Parametr **Zahrnovat fyzickou hodnotu **nemá žádný vliv na předchozí výpočty.
+<span data-ttu-id="158a8-147">**Poznámka:** Parametr **Zahrnovat fyzickou hodnotu **nemá žádný vliv na předchozí výpočty.</span><span class="sxs-lookup"><span data-stu-id="158a8-147">**Note:** The **Include physical value **parameter has no effect on the preceding calculations.</span></span>
 
-<a name="see-also"></a>Viz také
+<a name="see-also"></a><span data-ttu-id="158a8-148">Viz také</span><span class="sxs-lookup"><span data-stu-id="158a8-148">See also</span></span>
 --------
 
-[Skupina dimenzí produktů](https://technet.microsoft.com/en-us/library/aa499382.aspx)
+[<span data-ttu-id="158a8-149">Skupina dimenzí produktů</span><span class="sxs-lookup"><span data-stu-id="158a8-149">Product dimension group</span></span>](https://technet.microsoft.com/en-us/library/aa499382.aspx)
 
-[Skupina dimenze úložiště](https://technet.microsoft.com/en-us/library/hh209317.aspx)
+[<span data-ttu-id="158a8-150">Skupina dimenze úložiště</span><span class="sxs-lookup"><span data-stu-id="158a8-150">Storage dimension group</span></span>](https://technet.microsoft.com/en-us/library/hh209317.aspx)
 
-[Skupina sledovací dimenze](https://technet.microsoft.com/en-us/library/hh209465.aspx)
+[<span data-ttu-id="158a8-151">Skupina sledovací dimenze</span><span class="sxs-lookup"><span data-stu-id="158a8-151">Tracking dimension group</span></span>](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[Co je nového a co se změnilo](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed)
+[<span data-ttu-id="158a8-152">Co je nového a co se změnilo</span><span class="sxs-lookup"><span data-stu-id="158a8-152">What's new or changed</span></span>](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed)
 
-[Položky nákladů](cost-entries.md)
+[<span data-ttu-id="158a8-153">Položky nákladů</span><span class="sxs-lookup"><span data-stu-id="158a8-153">Cost entries</span></span>](cost-entries.md)
 
 
 

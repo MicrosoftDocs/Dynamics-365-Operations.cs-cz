@@ -19,124 +19,124 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f5d75794146eada9b9f439d99ad272f5af8db53b
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 5604f806eed81c60dfcae7cb7b1a22bba25aa454
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="handling-cash-discounts-for-overpayments"></a>Zpracování platebních slev u přeplatků
+# <a name="handling-cash-discounts-for-overpayments"></a><span data-ttu-id="ec6ba-103">Zpracování platebních slev u přeplatků</span><span class="sxs-lookup"><span data-stu-id="ec6ba-103">Handling cash discounts for overpayments</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje scénáře, které znázorňují způsob zpracování platby, když zákazník využije platební slevu, ale má také přeplatek. 
+<span data-ttu-id="ec6ba-104">Tento článek popisuje scénáře, které znázorňují způsob zpracování platby, když zákazník využije platební slevu, ale má také přeplatek.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-104">This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays.</span></span> 
 
-Faktura je považována za přeplacenou, pokud je částka platby větší než částka faktury bez platební slevy. K určení dostupného rozdílu platební slevy je zpracováno, když je faktura přeplacená, použijte pole **Správa platební slevy** a **Maximální přeplatek nebo nedoplatek** na stránce **Parametry pohledávek**. V následujícím příkladu odběratel přeplatil fakturu o 0,50.
+<span data-ttu-id="ec6ba-105">Faktura je považována za přeplacenou, pokud je částka platby větší než částka faktury bez platební slevy.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-105">An invoice is considered overpaid when the payment amount is more than the invoice amount minus the cash discount.</span></span> <span data-ttu-id="ec6ba-106">K určení dostupného rozdílu platební slevy je zpracováno, když je faktura přeplacená, použijte pole **Správa platební slevy** a **Maximální přeplatek nebo nedoplatek** na stránce **Parametry pohledávek**.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-106">To specify how an obtainable cash discount difference is handled when an invoice is overpaid, use the **Cash discount administration** and **Maximum overpayment or underpayment** fields on the **Accounts receivable parameters** page.</span></span> <span data-ttu-id="ec6ba-107">V následujícím příkladu odběratel přeplatil fakturu o 0,50.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-107">In the following example, the customer has overpaid the invoice by 0.50.</span></span>
 
-| Faktura celkem | Dostupná platební sleva | Částka k úhradě obsahující platební slevu | Částka skutečně uhrazená odběratelem |
+| <span data-ttu-id="ec6ba-108">Faktura celkem</span><span class="sxs-lookup"><span data-stu-id="ec6ba-108">Invoice total</span></span> | <span data-ttu-id="ec6ba-109">Dostupná platební sleva</span><span class="sxs-lookup"><span data-stu-id="ec6ba-109">Cash discount available</span></span> | <span data-ttu-id="ec6ba-110">Částka k úhradě obsahující platební slevu</span><span class="sxs-lookup"><span data-stu-id="ec6ba-110">Amount to be paid, which includes the cash discount</span></span> | <span data-ttu-id="ec6ba-111">Částka skutečně uhrazená odběratelem</span><span class="sxs-lookup"><span data-stu-id="ec6ba-111">Amount the customer actually pays</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|-----------------------------------|
-| 105,00 USD        | 10,50 USD                   | 94,50 USD                                               | 95,00 USD                             |
+| <span data-ttu-id="ec6ba-112">105,00 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-112">105.00</span></span>        | <span data-ttu-id="ec6ba-113">10,50 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-113">10.50</span></span>                   | <span data-ttu-id="ec6ba-114">94,50 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-114">94.50</span></span>                                               | <span data-ttu-id="ec6ba-115">95,00 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-115">95.00</span></span>                             |
 
-## <a name="cash-discount-administration--specific"></a>Správa platební slevy = specifická
-Při výběru možnosti **Specifické** v poli **Správa platební slevy** na stránce **Účty pro automatické transakce** je převzata úplná platební sleva. Částka přeplatku buď je zaúčtována na účet hlavní knihy s rozdílem platební slevy, nebo zůstane zůstatek na účtu odběratele. Chování závisí na tom, zda je částka přeplatku mezi 0,00 a částkou zadanou v poli **Maximální přeplatek či nedoplatek**, nebo zda je částka přeplatku větší než částka **Maximální přeplatek či nedoplatek**.
+## <a name="cash-discount-administration--specific"></a><span data-ttu-id="ec6ba-116">Správa platební slevy = specifická</span><span class="sxs-lookup"><span data-stu-id="ec6ba-116">Cash discount administration = Specific</span></span>
+<span data-ttu-id="ec6ba-117">Při výběru možnosti **Specifické** v poli **Správa platební slevy** na stránce **Účty pro automatické transakce** je převzata úplná platební sleva.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-117">When **Specific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the full cash discount is taken.</span></span> <span data-ttu-id="ec6ba-118">Částka přeplatku buď je zaúčtována na účet hlavní knihy s rozdílem platební slevy, nebo zůstane zůstatek na účtu odběratele.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-118">The overpayment amount either is posted to a cash discount difference ledger account or remains a balance on the customer’s account.</span></span> <span data-ttu-id="ec6ba-119">Chování závisí na tom, zda je částka přeplatku mezi 0,00 a částkou zadanou v poli **Maximální přeplatek či nedoplatek**, nebo zda je částka přeplatku větší než částka **Maximální přeplatek či nedoplatek**.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-119">The behavior depends on whether the overpayment amount is between 0.00 and the amount that is entered in the **Maximum overpayment or underpayment** field, or whether the overpayment amount is more than the **Maximum overpayment or underpayment** amount.</span></span>
 
-### <a name="scenario-1"></a>Scénář 1
+### <a name="scenario-1"></a><span data-ttu-id="ec6ba-120">Scénář 1</span><span class="sxs-lookup"><span data-stu-id="ec6ba-120">Scenario 1</span></span>
 
-V tomto scénáři se částka přeplatku nachází mezi hodnotami 0,00 a maximálním přeplatkem nebo nedoplatkem. Pokud je faktura zaplacena v rámci sedmi dní, faktura bude zadána na částku 105,00 s dostupnou platební slevou.
+<span data-ttu-id="ec6ba-121">V tomto scénáři se částka přeplatku nachází mezi hodnotami 0,00 a maximálním přeplatkem nebo nedoplatkem.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-121">In this scenario, the overpayment amount is between 0.00 and the maximum overpayment or underpayment.</span></span> <span data-ttu-id="ec6ba-122">Pokud je faktura zaplacena v rámci sedmi dní, faktura bude zadána na částku 105,00 s dostupnou platební slevou.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-122">An invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Faktura celkem | Dostupná platební sleva | Částka k úhradě obsahující platební slevu |
+| <span data-ttu-id="ec6ba-123">Faktura celkem</span><span class="sxs-lookup"><span data-stu-id="ec6ba-123">Invoice total</span></span> | <span data-ttu-id="ec6ba-124">Dostupná platební sleva</span><span class="sxs-lookup"><span data-stu-id="ec6ba-124">Cash discount available</span></span> | <span data-ttu-id="ec6ba-125">Částka k úhradě obsahující platební slevu</span><span class="sxs-lookup"><span data-stu-id="ec6ba-125">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00 USD        | 10,50 USD                   | 94,50 USD                                               |
+| <span data-ttu-id="ec6ba-126">105,00 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-126">105.00</span></span>        | <span data-ttu-id="ec6ba-127">10,50 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-127">10.50</span></span>                   | <span data-ttu-id="ec6ba-128">94,50 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-128">94.50</span></span>                                               |
 
-Odběratel odešle platbu za 95,00 v rámci období platební slevy. Platba je poté vyrovnána podle faktury ve výši 105,00. Po vyrovnání faktury a platby se u pohledávky odběratele vytvoří následující transakce.
+<span data-ttu-id="ec6ba-129">Odběratel odešle platbu za 95,00 v rámci období platební slevy.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-129">The customer submits a payment for 95.00 within the cash discount period.</span></span> <span data-ttu-id="ec6ba-130">Platba je poté vyrovnána podle faktury ve výši 105,00.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-130">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="ec6ba-131">Po vyrovnání faktury a platby se u pohledávky odběratele vytvoří následující transakce.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-131">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Transakce   | Částka | Zůstatek |
+| <span data-ttu-id="ec6ba-132">Transakce</span><span class="sxs-lookup"><span data-stu-id="ec6ba-132">Transaction</span></span>   | <span data-ttu-id="ec6ba-133">Částka</span><span class="sxs-lookup"><span data-stu-id="ec6ba-133">Amount</span></span> | <span data-ttu-id="ec6ba-134">Zůstatek</span><span class="sxs-lookup"><span data-stu-id="ec6ba-134">Balance</span></span> |
 |---------------|--------|---------|
-| Faktura       | 105,00 USD | 0,00    |
-| Platba       | -95,00 | 0,00    |
-| Platební sleva | -10,50 | 0,00    |
+| <span data-ttu-id="ec6ba-135">Faktura</span><span class="sxs-lookup"><span data-stu-id="ec6ba-135">Invoice</span></span>       | <span data-ttu-id="ec6ba-136">105,00 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-136">105.00</span></span> | <span data-ttu-id="ec6ba-137">0,00</span><span class="sxs-lookup"><span data-stu-id="ec6ba-137">0.00</span></span>    |
+| <span data-ttu-id="ec6ba-138">Platba</span><span class="sxs-lookup"><span data-stu-id="ec6ba-138">Payment</span></span>       | <span data-ttu-id="ec6ba-139">-95,00</span><span class="sxs-lookup"><span data-stu-id="ec6ba-139">-95.00</span></span> | <span data-ttu-id="ec6ba-140">0,00</span><span class="sxs-lookup"><span data-stu-id="ec6ba-140">0.00</span></span>    |
+| <span data-ttu-id="ec6ba-141">Platební sleva</span><span class="sxs-lookup"><span data-stu-id="ec6ba-141">Cash discount</span></span> | <span data-ttu-id="ec6ba-142">-10,50</span><span class="sxs-lookup"><span data-stu-id="ec6ba-142">-10.50</span></span> | <span data-ttu-id="ec6ba-143">0,00</span><span class="sxs-lookup"><span data-stu-id="ec6ba-143">0.00</span></span>    |
 
-Pro platby a vyrovnání jsou generovány následující účetní položky. **Platba**
+<span data-ttu-id="ec6ba-144">Pro platby a vyrovnání jsou generovány následující účetní položky.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-144">The following accounting entries are generated for the payment and the settlement.</span></span> <span data-ttu-id="ec6ba-145">**Platba**</span><span class="sxs-lookup"><span data-stu-id="ec6ba-145">**Payment**</span></span>
 
-| Účet             | Částka Má dáti | Částka kreditu |
+| <span data-ttu-id="ec6ba-146">Účet</span><span class="sxs-lookup"><span data-stu-id="ec6ba-146">Account</span></span>             | <span data-ttu-id="ec6ba-147">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="ec6ba-147">Debit amount</span></span> | <span data-ttu-id="ec6ba-148">Částka kreditu</span><span class="sxs-lookup"><span data-stu-id="ec6ba-148">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Hotovost                | 95,00 USD        |               |
-| Pohledávky |              | 95,00 USD         |
+| <span data-ttu-id="ec6ba-149">Hotovost</span><span class="sxs-lookup"><span data-stu-id="ec6ba-149">Cash</span></span>                | <span data-ttu-id="ec6ba-150">95,00 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-150">95.00</span></span>        |               |
+| <span data-ttu-id="ec6ba-151">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="ec6ba-151">Accounts receivable</span></span> |              | <span data-ttu-id="ec6ba-152">95,00 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-152">95.00</span></span>         |
 
-**Vyrovnání**
+<span data-ttu-id="ec6ba-153">**Vyrovnání**</span><span class="sxs-lookup"><span data-stu-id="ec6ba-153">**Settlement**</span></span>
 
-| Účet                                                                                                          | Částka Má dáti | Částka kreditu |
+| <span data-ttu-id="ec6ba-154">Účet</span><span class="sxs-lookup"><span data-stu-id="ec6ba-154">Account</span></span>                                                                                                          | <span data-ttu-id="ec6ba-155">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="ec6ba-155">Debit amount</span></span> | <span data-ttu-id="ec6ba-156">Částka kreditu</span><span class="sxs-lookup"><span data-stu-id="ec6ba-156">Credit amount</span></span> |
 |------------------------------------------------------------------------------------------------------------------|--------------|---------------|
-| Pole Platební sleva (**Hlavní účet pro slevy odběratele** na stránce **Platební slevy**).                 | 10,50 USD        |               |
-| Pohledávky                                                                                              |              | 10,50 USD         |
-| Platební slevy pro odběratele (pole **Platební slevy pro odběratele** na stránce **Účty pro automatické transakce**. |              | 0,50          |
-| Pohledávky                                                                                              | 0,50         |               |
+| <span data-ttu-id="ec6ba-157">Pole Platební sleva (**Hlavní účet pro slevy odběratele** na stránce **Platební slevy**).</span><span class="sxs-lookup"><span data-stu-id="ec6ba-157">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span>                 | <span data-ttu-id="ec6ba-158">10,50 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-158">10.50</span></span>        |               |
+| <span data-ttu-id="ec6ba-159">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="ec6ba-159">Accounts receivable</span></span>                                                                                              |              | <span data-ttu-id="ec6ba-160">10,50 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-160">10.50</span></span>         |
+| <span data-ttu-id="ec6ba-161">Platební slevy pro odběratele (pole **Platební slevy pro odběratele** na stránce **Účty pro automatické transakce**.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-161">Customer cash discount (the **Customer cash discount** field on the **Account for automatic transactions** page)</span></span> |              | <span data-ttu-id="ec6ba-162">0,50</span><span class="sxs-lookup"><span data-stu-id="ec6ba-162">0.50</span></span>          |
+| <span data-ttu-id="ec6ba-163">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="ec6ba-163">Accounts receivable</span></span>                                                                                              | <span data-ttu-id="ec6ba-164">0,50</span><span class="sxs-lookup"><span data-stu-id="ec6ba-164">0.50</span></span>         |               |
 
-### <a name="scenario-2"></a>Scénář 2
+### <a name="scenario-2"></a><span data-ttu-id="ec6ba-165">Scénář 2</span><span class="sxs-lookup"><span data-stu-id="ec6ba-165">Scenario 2</span></span>
 
-V tomto scénáři částka přeplatku přesahuje maximální přeplatek nebo nedoplatek. Pokud je faktura zaplacena v rámci sedmi dní, faktura bude zadána na částku 105,00 s dostupnou platební slevou.
+<span data-ttu-id="ec6ba-166">V tomto scénáři částka přeplatku přesahuje maximální přeplatek nebo nedoplatek.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-166">In this scenario, the overpayment amount exceeds the maximum overpayment or underpayment amount.</span></span> <span data-ttu-id="ec6ba-167">Pokud je faktura zaplacena v rámci sedmi dní, faktura bude zadána na částku 105,00 s dostupnou platební slevou.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-167">An invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Faktura celkem | Dostupná platební sleva | Částka k úhradě obsahující platební slevu |
+| <span data-ttu-id="ec6ba-168">Faktura celkem</span><span class="sxs-lookup"><span data-stu-id="ec6ba-168">Invoice total</span></span> | <span data-ttu-id="ec6ba-169">Dostupná platební sleva</span><span class="sxs-lookup"><span data-stu-id="ec6ba-169">Cash discount available</span></span> | <span data-ttu-id="ec6ba-170">Částka k úhradě obsahující platební slevu</span><span class="sxs-lookup"><span data-stu-id="ec6ba-170">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00 USD        | 10,50 USD                   | 94,50 USD                                               |
+| <span data-ttu-id="ec6ba-171">105,00 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-171">105.00</span></span>        | <span data-ttu-id="ec6ba-172">10,50 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-172">10.50</span></span>                   | <span data-ttu-id="ec6ba-173">94,50 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-173">94.50</span></span>                                               |
 
-Odběratel odešle platbu za 95,00 v rámci období platební slevy. Platba je poté vyrovnána podle faktury ve výši 105,00. Po vyrovnání faktury a platby se u pohledávky odběratele vytvoří následující transakce.
+<span data-ttu-id="ec6ba-174">Odběratel odešle platbu za 95,00 v rámci období platební slevy.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-174">The customer submits a payment for 95.00 within the cash discount period.</span></span> <span data-ttu-id="ec6ba-175">Platba je poté vyrovnána podle faktury ve výši 105,00.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-175">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="ec6ba-176">Po vyrovnání faktury a platby se u pohledávky odběratele vytvoří následující transakce.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-176">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Transakce   | Částka | Zůstatek |
+| <span data-ttu-id="ec6ba-177">Transakce</span><span class="sxs-lookup"><span data-stu-id="ec6ba-177">Transaction</span></span>   | <span data-ttu-id="ec6ba-178">Částka</span><span class="sxs-lookup"><span data-stu-id="ec6ba-178">Amount</span></span> | <span data-ttu-id="ec6ba-179">Zůstatek</span><span class="sxs-lookup"><span data-stu-id="ec6ba-179">Balance</span></span> |
 |---------------|--------|---------|
-| Faktura       | 105,00 USD | 0,00    |
-| Platba       | -95,00 | -0,50   |
-| Platební sleva | -10,50 | 0,00    |
+| <span data-ttu-id="ec6ba-180">Faktura</span><span class="sxs-lookup"><span data-stu-id="ec6ba-180">Invoice</span></span>       | <span data-ttu-id="ec6ba-181">105,00 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-181">105.00</span></span> | <span data-ttu-id="ec6ba-182">0,00</span><span class="sxs-lookup"><span data-stu-id="ec6ba-182">0.00</span></span>    |
+| <span data-ttu-id="ec6ba-183">Platba</span><span class="sxs-lookup"><span data-stu-id="ec6ba-183">Payment</span></span>       | <span data-ttu-id="ec6ba-184">-95,00</span><span class="sxs-lookup"><span data-stu-id="ec6ba-184">-95.00</span></span> | <span data-ttu-id="ec6ba-185">-0,50</span><span class="sxs-lookup"><span data-stu-id="ec6ba-185">-0.50</span></span>   |
+| <span data-ttu-id="ec6ba-186">Platební sleva</span><span class="sxs-lookup"><span data-stu-id="ec6ba-186">Cash discount</span></span> | <span data-ttu-id="ec6ba-187">-10,50</span><span class="sxs-lookup"><span data-stu-id="ec6ba-187">-10.50</span></span> | <span data-ttu-id="ec6ba-188">0,00</span><span class="sxs-lookup"><span data-stu-id="ec6ba-188">0.00</span></span>    |
 
-Částka přeplatku ve výši 0,50 zůstane jako otevřený zůstatek platby a lze ji vyrovnat podle další faktury. Pro platby a vyrovnání jsou generovány následující účetní položky. **Platba**
+<span data-ttu-id="ec6ba-189">Částka přeplatku ve výši 0,50 zůstane jako otevřený zůstatek platby a lze ji vyrovnat podle další faktury.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-189">The overpayment amount of 0.50 will remain as an open balance on the payment and can be settled against another invoice.</span></span> <span data-ttu-id="ec6ba-190">Pro platby a vyrovnání jsou generovány následující účetní položky.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-190">The following accounting entries are generated for the payment and the settlement.</span></span> <span data-ttu-id="ec6ba-191">**Platba**</span><span class="sxs-lookup"><span data-stu-id="ec6ba-191">**Payment**</span></span>
 
-| Účet             | Částka Má dáti | Částka kreditu |
+| <span data-ttu-id="ec6ba-192">Účet</span><span class="sxs-lookup"><span data-stu-id="ec6ba-192">Account</span></span>             | <span data-ttu-id="ec6ba-193">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="ec6ba-193">Debit amount</span></span> | <span data-ttu-id="ec6ba-194">Částka kreditu</span><span class="sxs-lookup"><span data-stu-id="ec6ba-194">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Hotovost                | 95,00 USD        |               |
-| Pohledávky |              | 95,00 USD         |
+| <span data-ttu-id="ec6ba-195">Hotovost</span><span class="sxs-lookup"><span data-stu-id="ec6ba-195">Cash</span></span>                | <span data-ttu-id="ec6ba-196">95,00 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-196">95.00</span></span>        |               |
+| <span data-ttu-id="ec6ba-197">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="ec6ba-197">Accounts receivable</span></span> |              | <span data-ttu-id="ec6ba-198">95,00 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-198">95.00</span></span>         |
 
-**Vyrovnání**
+<span data-ttu-id="ec6ba-199">**Vyrovnání**</span><span class="sxs-lookup"><span data-stu-id="ec6ba-199">**Settlement**</span></span>
 
-| Účet                                                                                          | Částka Má dáti | Částka kreditu |
+| <span data-ttu-id="ec6ba-200">Účet</span><span class="sxs-lookup"><span data-stu-id="ec6ba-200">Account</span></span>                                                                                          | <span data-ttu-id="ec6ba-201">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="ec6ba-201">Debit amount</span></span> | <span data-ttu-id="ec6ba-202">Částka kreditu</span><span class="sxs-lookup"><span data-stu-id="ec6ba-202">Credit amount</span></span> |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Pole Platební sleva (**Hlavní účet pro slevy odběratele** na stránce**Platební slevy**). | 10,50 USD        |               |
-| Pohledávky                                                                              |              | 10,50 USD         |
+| <span data-ttu-id="ec6ba-203">Pole Platební sleva (**Hlavní účet pro slevy odběratele** na stránce**Platební slevy**).</span><span class="sxs-lookup"><span data-stu-id="ec6ba-203">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span> | <span data-ttu-id="ec6ba-204">10,50 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-204">10.50</span></span>        |               |
+| <span data-ttu-id="ec6ba-205">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="ec6ba-205">Accounts receivable</span></span>                                                                              |              | <span data-ttu-id="ec6ba-206">10,50 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-206">10.50</span></span>         |
 
-## <a name="cash-discount-administration--unspecific"></a>Správa platební slevy = nespecifická
-Při výběru možnosti **Nespecifické** v poli **Správa platební slevy** na stránce **Účty pro automatické transakce** je částka platební slevy snížena částkou přeplatku. Toto chování se vždy používá bez ohledu na to, zda je částka přeplatku větší nebo menší než částka zadaná v poli **Maximální přeplatek či nedoplatek**.
+## <a name="cash-discount-administration--unspecific"></a><span data-ttu-id="ec6ba-207">Správa platební slevy = nespecifická</span><span class="sxs-lookup"><span data-stu-id="ec6ba-207">Cash discount administration = Unspecific</span></span>
+<span data-ttu-id="ec6ba-208">Při výběru možnosti **Nespecifické** v poli **Správa platební slevy** na stránce **Účty pro automatické transakce** je částka platební slevy snížena částkou přeplatku.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-208">When **Unspecific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the cash discount amount is reduced by the overpayment amount.</span></span> <span data-ttu-id="ec6ba-209">Toto chování se vždy používá bez ohledu na to, zda je částka přeplatku větší nebo menší než částka zadaná v poli **Maximální přeplatek či nedoplatek**.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-209">This behavior always applies, regardless of whether the overpayment amount is over or under the amount that is entered in the **Maximum overpayment or underpayment** field.</span></span>
 
-### <a name="scenario-3"></a>Scénář 3
+### <a name="scenario-3"></a><span data-ttu-id="ec6ba-210">Scénář 3</span><span class="sxs-lookup"><span data-stu-id="ec6ba-210">Scenario 3</span></span>
 
-V tomto scénáři je faktura zaplacena v rámci sedmi dní, faktura bude zadána na částku 105,00 s dostupnou platební slevou.
+<span data-ttu-id="ec6ba-211">V tomto scénáři je faktura zaplacena v rámci sedmi dní, faktura bude zadána na částku 105,00 s dostupnou platební slevou.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-211">In this scenario, an invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Faktura celkem | Dostupná platební sleva | Částka k úhradě obsahující platební slevu |
+| <span data-ttu-id="ec6ba-212">Faktura celkem</span><span class="sxs-lookup"><span data-stu-id="ec6ba-212">Invoice total</span></span> | <span data-ttu-id="ec6ba-213">Dostupná platební sleva</span><span class="sxs-lookup"><span data-stu-id="ec6ba-213">Cash discount available</span></span> | <span data-ttu-id="ec6ba-214">Částka k úhradě obsahující platební slevu</span><span class="sxs-lookup"><span data-stu-id="ec6ba-214">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00 USD        | 10,50 USD                   | 94,50 USD                                               |
+| <span data-ttu-id="ec6ba-215">105,00 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-215">105.00</span></span>        | <span data-ttu-id="ec6ba-216">10,50 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-216">10.50</span></span>                   | <span data-ttu-id="ec6ba-217">94,50 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-217">94.50</span></span>                                               |
 
-Odběratel odešle platbu za 95,00 v rámci data platební slevy. Platba je poté vyrovnána podle faktury ve výši 105,00. Po vyrovnání faktury a platby se u pohledávky odběratele vytvoří následující transakce.
+<span data-ttu-id="ec6ba-218">Odběratel odešle platbu za 95,00 v rámci data platební slevy.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-218">The customer submits a payment for 95.00 within the cash discount date.</span></span> <span data-ttu-id="ec6ba-219">Platba je poté vyrovnána podle faktury ve výši 105,00.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-219">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="ec6ba-220">Po vyrovnání faktury a platby se u pohledávky odběratele vytvoří následující transakce.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-220">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Transakce   | Částka | Zůstatek |
+| <span data-ttu-id="ec6ba-221">Transakce</span><span class="sxs-lookup"><span data-stu-id="ec6ba-221">Transaction</span></span>   | <span data-ttu-id="ec6ba-222">Částka</span><span class="sxs-lookup"><span data-stu-id="ec6ba-222">Amount</span></span> | <span data-ttu-id="ec6ba-223">Zůstatek</span><span class="sxs-lookup"><span data-stu-id="ec6ba-223">Balance</span></span> |
 |---------------|--------|---------|
-| Faktura       | 105,00 USD | 0,00    |
-| Platba       | -95,00 | -0,00   |
-| Platební sleva | -10,00 | 0,00    |
+| <span data-ttu-id="ec6ba-224">Faktura</span><span class="sxs-lookup"><span data-stu-id="ec6ba-224">Invoice</span></span>       | <span data-ttu-id="ec6ba-225">105,00 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-225">105.00</span></span> | <span data-ttu-id="ec6ba-226">0,00</span><span class="sxs-lookup"><span data-stu-id="ec6ba-226">0.00</span></span>    |
+| <span data-ttu-id="ec6ba-227">Platba</span><span class="sxs-lookup"><span data-stu-id="ec6ba-227">Payment</span></span>       | <span data-ttu-id="ec6ba-228">-95,00</span><span class="sxs-lookup"><span data-stu-id="ec6ba-228">-95.00</span></span> | <span data-ttu-id="ec6ba-229">-0,00</span><span class="sxs-lookup"><span data-stu-id="ec6ba-229">-0.00</span></span>   |
+| <span data-ttu-id="ec6ba-230">Platební sleva</span><span class="sxs-lookup"><span data-stu-id="ec6ba-230">Cash discount</span></span> | <span data-ttu-id="ec6ba-231">-10,00</span><span class="sxs-lookup"><span data-stu-id="ec6ba-231">-10.00</span></span> | <span data-ttu-id="ec6ba-232">0,00</span><span class="sxs-lookup"><span data-stu-id="ec6ba-232">0.00</span></span>    |
 
-Částka platební slevy se sníží z 10,50 na 10,00. Platba a faktura je považována za vyrovnanou. **Platba**
+<span data-ttu-id="ec6ba-233">Částka platební slevy se sníží z 10,50 na 10,00.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-233">The cash discount amount is reduced from 10.50 to 10.00.</span></span> <span data-ttu-id="ec6ba-234">Platba a faktura je považována za vyrovnanou.</span><span class="sxs-lookup"><span data-stu-id="ec6ba-234">The payment and invoice are considered settled.</span></span> <span data-ttu-id="ec6ba-235">**Platba**</span><span class="sxs-lookup"><span data-stu-id="ec6ba-235">**Payment**</span></span>
 
-| Účet             | Částka Má dáti | Částka kreditu |
+| <span data-ttu-id="ec6ba-236">Účet</span><span class="sxs-lookup"><span data-stu-id="ec6ba-236">Account</span></span>             | <span data-ttu-id="ec6ba-237">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="ec6ba-237">Debit amount</span></span> | <span data-ttu-id="ec6ba-238">Částka kreditu</span><span class="sxs-lookup"><span data-stu-id="ec6ba-238">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Hotovost                | 95,00 USD        |               |
-| Pohledávky |              | 95,00 USD         |
+| <span data-ttu-id="ec6ba-239">Hotovost</span><span class="sxs-lookup"><span data-stu-id="ec6ba-239">Cash</span></span>                | <span data-ttu-id="ec6ba-240">95,00 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-240">95.00</span></span>        |               |
+| <span data-ttu-id="ec6ba-241">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="ec6ba-241">Accounts receivable</span></span> |              | <span data-ttu-id="ec6ba-242">95,00 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-242">95.00</span></span>         |
 
-**Vyrovnání**
+<span data-ttu-id="ec6ba-243">**Vyrovnání**</span><span class="sxs-lookup"><span data-stu-id="ec6ba-243">**Settlement**</span></span>
 
-| Účet                                                                                          | Částka Má dáti | Částka kreditu |
+| <span data-ttu-id="ec6ba-244">Účet</span><span class="sxs-lookup"><span data-stu-id="ec6ba-244">Account</span></span>                                                                                          | <span data-ttu-id="ec6ba-245">Částka Má dáti</span><span class="sxs-lookup"><span data-stu-id="ec6ba-245">Debit amount</span></span> | <span data-ttu-id="ec6ba-246">Částka kreditu</span><span class="sxs-lookup"><span data-stu-id="ec6ba-246">Credit amount</span></span> |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Pole Platební sleva (**Hlavní účet pro slevy odběratele** na stránce **Platební slevy**). | 10,50 USD        |               |
-| Pohledávky                                                                              |              | 10,50 USD         |
+| <span data-ttu-id="ec6ba-247">Pole Platební sleva (**Hlavní účet pro slevy odběratele** na stránce **Platební slevy**).</span><span class="sxs-lookup"><span data-stu-id="ec6ba-247">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span> | <span data-ttu-id="ec6ba-248">10,50 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-248">10.50</span></span>        |               |
+| <span data-ttu-id="ec6ba-249">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="ec6ba-249">Accounts receivable</span></span>                                                                              |              | <span data-ttu-id="ec6ba-250">10,50 USD</span><span class="sxs-lookup"><span data-stu-id="ec6ba-250">10.50</span></span>         |
 
 
 

@@ -16,65 +16,65 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: a4b7f54dfd4f88688691fd9294d71aaae121382b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c23fe66c58e9ceff74469cc8eab61eb606c57ee1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-bank-facilities-and-posting-profiles-for-letters-of-guarantee"></a>Nastavení zařízení banky a zaúčtování profilů pro záruční listiny
+# <a name="set-up-bank-facilities-and-posting-profiles-for-letters-of-guarantee"></a><span data-ttu-id="5aef0-103">Nastavení zařízení banky a zaúčtování profilů pro záruční listiny</span><span class="sxs-lookup"><span data-stu-id="5aef0-103">Set up bank facilities and posting profiles for letters of guarantee</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tato úloha vytvoří bankovní zařízení a účetní profil potřebný pro zpracování záruční listiny.
+<span data-ttu-id="5aef0-104">Tato úloha vytvoří bankovní zařízení a účetní profil potřebný pro zpracování záruční listiny.</span><span class="sxs-lookup"><span data-stu-id="5aef0-104">This task creates a Bank facility and posting profile that is needed to process a letter of guarantee.</span></span>
 
 
 
-Tento úkol používá ukázkovou společnost USMF. 
+<span data-ttu-id="5aef0-105">Tento úkol používá ukázkovou společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="5aef0-105">This task uses the USMF demo company.</span></span> 
 
 
 
 
-## <a name="general-ledger-parameter"></a>Parametr hlavní knihy
-1. Přejděte do nabídky Pokladna a banka > Nastavení > Parametry pokladny a banky.
-2. Rozbalte oddíl Bankovní dokument.
-3. Vyberte možnost Povolit záruční listinu.
-4. V poli Deník transakce kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-5. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-6. Klikněte na odkaz na vybraném řádku v seznamu.
-7. Klikněte na kartu Číselné řady.
-    * Definování kódu číselné řady pro číslo záruční listiny záruční a odkazy na transakce záruční listiny  
-8. Klikněte na položku Uložit.
-9. Zavřete stránku.
+## <a name="general-ledger-parameter"></a><span data-ttu-id="5aef0-106">Parametr hlavní knihy</span><span class="sxs-lookup"><span data-stu-id="5aef0-106">General ledger parameter</span></span>
+1. <span data-ttu-id="5aef0-107">Přejděte do nabídky Pokladna a banka > Nastavení > Parametry pokladny a banky.</span><span class="sxs-lookup"><span data-stu-id="5aef0-107">Go to Cash and bank management > Setup > Cash and bank management parameters.</span></span>
+2. <span data-ttu-id="5aef0-108">Rozbalte oddíl Bankovní dokument.</span><span class="sxs-lookup"><span data-stu-id="5aef0-108">Expand the Bank document section.</span></span>
+3. <span data-ttu-id="5aef0-109">Vyberte možnost Povolit záruční listinu.</span><span class="sxs-lookup"><span data-stu-id="5aef0-109">Select the Enable letter of guarantee option.</span></span>
+4. <span data-ttu-id="5aef0-110">V poli Deník transakce kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="5aef0-110">In the Transaction journal field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="5aef0-111">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="5aef0-111">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="5aef0-112">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="5aef0-112">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="5aef0-113">Klikněte na kartu Číselné řady.</span><span class="sxs-lookup"><span data-stu-id="5aef0-113">Click the Number sequences tab.</span></span>
+    * <span data-ttu-id="5aef0-114">Definování kódu číselné řady pro číslo záruční listiny záruční a odkazy na transakce záruční listiny</span><span class="sxs-lookup"><span data-stu-id="5aef0-114">Define number sequence code for Letter of guarantee number and Letter of guarantee transaction references</span></span>  
+8. <span data-ttu-id="5aef0-115">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="5aef0-115">Click Save.</span></span>
+9. <span data-ttu-id="5aef0-116">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="5aef0-116">Close the page.</span></span>
 
-## <a name="create-bank-facility"></a>Vytvoření bankovního zařízení
-1. Přejděte do nabídky Pokladna a banka > Nastavení > Bankovní zařízení.
-2. Klikněte na položku Nová.
-3. V poli Skupina zařízení zadejte název skupiny bankovních zařízení pro transakci záruční listiny.
-4. Zadejte nějakou hodnotu do pole Popis.
-5. Klikněte na položku Uložit.
-6. Klikněte na kartu Typy zařízení.
-7. Klikněte na položku Nová.
-8. V poli Typ zařízení zadejte název typu bankovního zařízení, který se vztahuje se k zařízení smlouvy bankovního zařízení.
-9. Zadejte hodnotu do pole Popis.
-10. V poli Skupina zařízení kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-11. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-12. Klikněte na odkaz na vybraném řádku v seznamu.
-13. Vyberte možnost v poli Druh zařízení.
-14. Klikněte na položku Uložit.
-15. Zavřete stránku.
+## <a name="create-bank-facility"></a><span data-ttu-id="5aef0-117">Vytvoření bankovního zařízení</span><span class="sxs-lookup"><span data-stu-id="5aef0-117">Create Bank facility</span></span>
+1. <span data-ttu-id="5aef0-118">Přejděte do nabídky Pokladna a banka > Nastavení > Bankovní zařízení.</span><span class="sxs-lookup"><span data-stu-id="5aef0-118">Go to Cash and bank management > Setup > Bank facilities.</span></span>
+2. <span data-ttu-id="5aef0-119">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="5aef0-119">Click New.</span></span>
+3. <span data-ttu-id="5aef0-120">V poli Skupina zařízení zadejte název skupiny bankovních zařízení pro transakci záruční listiny.</span><span class="sxs-lookup"><span data-stu-id="5aef0-120">In the Facility group field, enter the bank facility group name for the letter of guarantee transaction.</span></span>
+4. <span data-ttu-id="5aef0-121">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="5aef0-121">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="5aef0-122">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="5aef0-122">Click Save.</span></span>
+6. <span data-ttu-id="5aef0-123">Klikněte na kartu Typy zařízení.</span><span class="sxs-lookup"><span data-stu-id="5aef0-123">Click the Facility types tab.</span></span>
+7. <span data-ttu-id="5aef0-124">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="5aef0-124">Click New.</span></span>
+8. <span data-ttu-id="5aef0-125">V poli Typ zařízení zadejte název typu bankovního zařízení, který se vztahuje se k zařízení smlouvy bankovního zařízení.</span><span class="sxs-lookup"><span data-stu-id="5aef0-125">In the Facility type field, enter the name of the bank facility type that is related to the bank facility agreement.</span></span>
+9. <span data-ttu-id="5aef0-126">Zadejte hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="5aef0-126">In the Description field, type a value.</span></span>
+10. <span data-ttu-id="5aef0-127">V poli Skupina zařízení kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="5aef0-127">In the Facility group field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="5aef0-128">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="5aef0-128">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="5aef0-129">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="5aef0-129">In the list, click the link in the selected row.</span></span>
+13. <span data-ttu-id="5aef0-130">Vyberte možnost v poli Druh zařízení.</span><span class="sxs-lookup"><span data-stu-id="5aef0-130">In the Facility nature field, select an option.</span></span>
+14. <span data-ttu-id="5aef0-131">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="5aef0-131">Click Save.</span></span>
+15. <span data-ttu-id="5aef0-132">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="5aef0-132">Close the page.</span></span>
 
-## <a name="bank-posting-profile"></a>Účetní profil banky
-1. Přejděte do nabídky Pokladna a banka > Nastavení > Profil účtování bankovních dokumentů.
-2. Klikněte na položku Nová.
-3. V poli Číslo účtu/skupiny kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-4. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-5. Klikněte na odkaz na vybraném řádku v seznamu.
-6. V poli Účet vyrovnání vyberte hlavní účet pro vyrovnání.
-7. V poli Poplatkový účet vyberte účet pro výdajové transakce.
-8. V poli Maržový účet vyberte účet pro transakci marže.
-9. V poli Účet likvidace vyberte účet likvidace pro transakci záruční listiny. 
-10. Klepněte na tlačítko Uložit.
-11. Zavřete stránku.
+## <a name="bank-posting-profile"></a><span data-ttu-id="5aef0-133">Účetní profil banky</span><span class="sxs-lookup"><span data-stu-id="5aef0-133">Bank posting profile</span></span>
+1. <span data-ttu-id="5aef0-134">Přejděte do nabídky Pokladna a banka > Nastavení > Profil účtování bankovních dokumentů.</span><span class="sxs-lookup"><span data-stu-id="5aef0-134">Go to Cash and bank management > Setup > Bank documents posting profile.</span></span>
+2. <span data-ttu-id="5aef0-135">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="5aef0-135">Click New.</span></span>
+3. <span data-ttu-id="5aef0-136">V poli Číslo účtu/skupiny kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="5aef0-136">In the Account/Group number field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="5aef0-137">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="5aef0-137">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="5aef0-138">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="5aef0-138">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="5aef0-139">V poli Účet vyrovnání vyberte hlavní účet pro vyrovnání.</span><span class="sxs-lookup"><span data-stu-id="5aef0-139">In the Settle account field, select the main account for settlement.</span></span>
+7. <span data-ttu-id="5aef0-140">V poli Poplatkový účet vyberte účet pro výdajové transakce.</span><span class="sxs-lookup"><span data-stu-id="5aef0-140">In the Charges account field, select the account for expense transactions.</span></span>
+8. <span data-ttu-id="5aef0-141">V poli Maržový účet vyberte účet pro transakci marže.</span><span class="sxs-lookup"><span data-stu-id="5aef0-141">In the Margin account field, select the account for the margin transaction.</span></span>
+9. <span data-ttu-id="5aef0-142">V poli Účet likvidace vyberte účet likvidace pro transakci záruční listiny.</span><span class="sxs-lookup"><span data-stu-id="5aef0-142">In the Liquidation account field, select the liquidation account for the letter of guarantee transaction.</span></span> 
+10. <span data-ttu-id="5aef0-143">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="5aef0-143">Click Save.</span></span>
+11. <span data-ttu-id="5aef0-144">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="5aef0-144">Close the page.</span></span>
 
 

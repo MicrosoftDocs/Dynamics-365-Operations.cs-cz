@@ -18,69 +18,69 @@ ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 10c803903f656f7152adb6d0bdc77240dad5b507
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 9003adfd463b0d912776ce112b08179d83a03fab
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="credit-note-on-cash-discount"></a>Dobropis u hotovostní slevy
+# <a name="credit-note-on-cash-discount"></a><span data-ttu-id="103d7-103">Dobropis u hotovostní slevy</span><span class="sxs-lookup"><span data-stu-id="103d7-103">Credit note on cash discount</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma obsahuje informace, které pomohou právnickým osobám v rámci České republiky vytvořit, zaúčtovat a tisknout dobropisy pro hotovostní slevy, které jsou přiřazeny odběratelům.
+<span data-ttu-id="103d7-104">Toto téma obsahuje informace, které pomohou právnickým osobám v rámci České republiky vytvořit, zaúčtovat a tisknout dobropisy pro hotovostní slevy, které jsou přiřazeny odběratelům.</span><span class="sxs-lookup"><span data-stu-id="103d7-104">This topic provides information that will help legal entities in the Czech Republic create, post, and print credit notes for cash discounts that are given to customers.</span></span>
 
-Společnosti v rámci České republiky musí vydávat dobropisy pro hotovostní slevy, které jsou přiřazeny odběratelům. Tyto dobropisy musí obsahovat následující informace:
+<span data-ttu-id="103d7-105">Společnosti v rámci České republiky musí vydávat dobropisy pro hotovostní slevy, které jsou přiřazeny odběratelům.</span><span class="sxs-lookup"><span data-stu-id="103d7-105">Companies in the Czech Republic must issue credit notes for cash discounts that are given to customers.</span></span> <span data-ttu-id="103d7-106">Tyto dobropisy musí obsahovat následující informace:</span><span class="sxs-lookup"><span data-stu-id="103d7-106">These credit notes must include the following information:</span></span>
 
--   Číslo faktury
--   Daň z přidané hodnoty (DPH) a částka z původního dokumentu.
--   Důvod opravy
+-   <span data-ttu-id="103d7-107">Číslo faktury</span><span class="sxs-lookup"><span data-stu-id="103d7-107">Invoice number</span></span>
+-   <span data-ttu-id="103d7-108">Daň z přidané hodnoty (DPH) a částka z původního dokumentu.</span><span class="sxs-lookup"><span data-stu-id="103d7-108">Value-added tax (VAT) base and amount from the original document</span></span>
+-   <span data-ttu-id="103d7-109">Důvod opravy</span><span class="sxs-lookup"><span data-stu-id="103d7-109">Reason for a correction</span></span>
 
-<a name="prerequisites"></a>Požadavky
+<a name="prerequisites"></a><span data-ttu-id="103d7-110">Požadavky</span><span class="sxs-lookup"><span data-stu-id="103d7-110">Prerequisites</span></span>
 -------------
 
-### <a name="set-up-number-sequences"></a>Nastavit číselné řady
+### <a name="set-up-number-sequences"></a><span data-ttu-id="103d7-111">Nastavit číselné řady</span><span class="sxs-lookup"><span data-stu-id="103d7-111">Set up number sequences</span></span>
 
-Vytvořte souvislou číselnou řadu pro právnickou osobu. Další informace naleznete v tématu [Přehled číselných řad](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview). Na stránce **Parametry pohledávek** vyberte číselnou řadu, kterou jste vytvořili pro **prodejní dobropis**. Dále byste nastavte číselnou řadu pro **prodejní doklad dobropisu**. Můžete použít stejnou číselnou řadu, jakou jste použili **prodejní dobropis**.
+<span data-ttu-id="103d7-112">Vytvořte souvislou číselnou řadu pro právnickou osobu.</span><span class="sxs-lookup"><span data-stu-id="103d7-112">Create a continuous number sequence for a legal entity.</span></span> <span data-ttu-id="103d7-113">Další informace naleznete v tématu [Přehled číselných řad](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview). Na stránce **Parametry pohledávek** vyberte číselnou řadu, kterou jste vytvořili pro **prodejní dobropis**.</span><span class="sxs-lookup"><span data-stu-id="103d7-113">For more information, see [Number sequences overview](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview) On the **Accounts receivable parameters** page, select the number sequence that you created for **Sales credit note**.</span></span> <span data-ttu-id="103d7-114">Dále byste nastavte číselnou řadu pro **prodejní doklad dobropisu**.</span><span class="sxs-lookup"><span data-stu-id="103d7-114">Additionally, set up a number sequencevfor **Sales credit note voucher**.</span></span> <span data-ttu-id="103d7-115">Můžete použít stejnou číselnou řadu, jakou jste použili **prodejní dobropis**.</span><span class="sxs-lookup"><span data-stu-id="103d7-115">You can use the same number sequence that you used for **Sales credit note**.</span></span>
 
-### <a name="set-up-sales-tax-codes"></a>Nastavit kódy DPH
+### <a name="set-up-sales-tax-codes"></a><span data-ttu-id="103d7-116">Nastavit kódy DPH</span><span class="sxs-lookup"><span data-stu-id="103d7-116">Set up sales tax codes</span></span>
 
-Další informace naleznete v tématu [Přehled o DPH](../general-ledger/indirect-taxes-overview.md).
+<span data-ttu-id="103d7-117">Další informace naleznete v tématu [Přehled o DPH](../general-ledger/indirect-taxes-overview.md).</span><span class="sxs-lookup"><span data-stu-id="103d7-117">For more information, see [Sales tax overview](../general-ledger/indirect-taxes-overview.md).</span></span>
 
-### <a name="set-up-report-formats-for-documents"></a>Nastavení formátů sestavy pro dokumenty
+### <a name="set-up-report-formats-for-documents"></a><span data-ttu-id="103d7-118">Nastavení formátů sestavy pro dokumenty</span><span class="sxs-lookup"><span data-stu-id="103d7-118">Set up report formats for documents</span></span>
 
-1.  Přejděte do nabídky **Pohledávky** \> **Nastavení** \> **Formuláře** \> **Nastavení formuláře**.
+1.  <span data-ttu-id="103d7-119">Přejděte do nabídky **Pohledávky** \> **Nastavení** \> **Formuláře** \> **Nastavení formuláře**.</span><span class="sxs-lookup"><span data-stu-id="103d7-119">Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.</span></span>
 
-2.  Na kartě **Obecné** v části **Nastavit možnosti pro formuláře odběratelů** klikněte na **Správa tisku**.
+2.  <span data-ttu-id="103d7-120">Na kartě **Obecné** v části **Nastavit možnosti pro formuláře odběratelů** klikněte na **Správa tisku**.</span><span class="sxs-lookup"><span data-stu-id="103d7-120">On the **General** tab, under **Set up options for customer forms**, click **Print management**.</span></span>
 
-3.  Ve stromu rozbalte položky **Modul – pohledávky** \> **Dokumenty** \> **Faktura odběratele**. V poli **Název sestavy** zadejte nebo vyberte hodnotu.
+3.  <span data-ttu-id="103d7-121">Ve stromu rozbalte položky **Modul – pohledávky** \> **Dokumenty** \> **Faktura odběratele**.</span><span class="sxs-lookup"><span data-stu-id="103d7-121">In the tree, expand **Module - accounts receivable** \> **Documents** \> **Customer invoice**.</span></span> <span data-ttu-id="103d7-122">V poli **Název sestavy** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="103d7-122">In the **Report format** field, enter or select a value.</span></span>
 
-4.  Ve stromové struktuře pod uzlem **Faktura odběratele** vyberte **Původní**. V poli **Název sestavy** zadejte nebo vyberte hodnotu.
+4.  <span data-ttu-id="103d7-123">Ve stromové struktuře pod uzlem **Faktura odběratele** vyberte **Původní**.</span><span class="sxs-lookup"><span data-stu-id="103d7-123">In the tree, under the **Customer invoice** node, select **Original**.</span></span> <span data-ttu-id="103d7-124">V poli **Název sestavy** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="103d7-124">In the **Report format** field, enter or select a value.</span></span>
 
-5.  Ve stromu rozbalte položky **Modul – pohledávky** \> **Dokumenty** \> **Volné faktury**. V poli **Název sestavy** zadejte nebo vyberte hodnotu.
+5.  <span data-ttu-id="103d7-125">Ve stromu rozbalte položky **Modul – pohledávky** \> **Dokumenty** \> **Volné faktury**.</span><span class="sxs-lookup"><span data-stu-id="103d7-125">In the tree, expand **Module - accounts receivable** \> **Documents** \> **Free text invoice**.</span></span> <span data-ttu-id="103d7-126">V poli **Název sestavy** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="103d7-126">In the **Report format** field, enter or select a value.</span></span>
 
-6.  Ve stromové struktuře pod uzlem **Volná faktura** vyberte **Původní**. V poli **Název sestavy** zadejte nebo vyberte hodnotu.
+6.  <span data-ttu-id="103d7-127">Ve stromové struktuře pod uzlem **Volná faktura** vyberte **Původní**.</span><span class="sxs-lookup"><span data-stu-id="103d7-127">In the tree, under the **Free text invoice** node, select **Original**.</span></span> <span data-ttu-id="103d7-128">V poli **Název sestavy** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="103d7-128">In the **Report format** field, enter or select a value.</span></span>
 
-### <a name="set-up-customer-reason-codes"></a>Nastavte kódy důvodů odběratele.
+### <a name="set-up-customer-reason-codes"></a><span data-ttu-id="103d7-129">Nastavte kódy důvodů odběratele.</span><span class="sxs-lookup"><span data-stu-id="103d7-129">Set up customer reason codes.</span></span>
 
-Na stránce **Kódy důvodů odběratele** (**Pohledávky** \> **Nastavení** \> **Kódy důvodů odběratele**) vytvořte nebo upravte kódy důvodů, které se používají pro opravné daňové doklady.
+<span data-ttu-id="103d7-130">Na stránce **Kódy důvodů odběratele** (**Pohledávky** \> **Nastavení** \> **Kódy důvodů odběratele**) vytvořte nebo upravte kódy důvodů, které se používají pro opravné daňové doklady.</span><span class="sxs-lookup"><span data-stu-id="103d7-130">On the **Customer reason codes** page (**Accounts receivable** \> **Setup** \> **Customer reason codes**), create or edit the reason codes that are used for tax corrective documents.</span></span>
 
-### <a name="set-up-accounts-receivable-parameters"></a>Nastavení parametrů pohledávek
+### <a name="set-up-accounts-receivable-parameters"></a><span data-ttu-id="103d7-131">Nastavení parametrů pohledávek</span><span class="sxs-lookup"><span data-stu-id="103d7-131">Set up Accounts receivable parameters</span></span>
 
-Na stránce **Parametry pohledávek** (**Pohledávky** \> **Nastavení** \> **Parametry pohledávek**) na kartě **Vyrovnání** na pevné záložce **Možnosti** nastavte následující parametry:
+<span data-ttu-id="103d7-132">Na stránce **Parametry pohledávek** (**Pohledávky** \> **Nastavení** \> **Parametry pohledávek**) na kartě **Vyrovnání** na pevné záložce **Možnosti** nastavte následující parametry:</span><span class="sxs-lookup"><span data-stu-id="103d7-132">On the **Accounts receivable parameters** page (**Accounts receivable** \> **Setup** \> **Accounts receivable parameters**), on **Settlement** tab, on the **Options** FastTab, set up the following parameters:</span></span>
 
--   Zaškrtněte políčko **Vyžadovat kódy důvodu pro dobropisy**.
+-   <span data-ttu-id="103d7-133">Zaškrtněte políčko **Vyžadovat kódy důvodu pro dobropisy**.</span><span class="sxs-lookup"><span data-stu-id="103d7-133">Select the **Require reason codes for credit notes** check box.</span></span>
 
--   Zaškrtněte políčko **Zaúčtovat dobropis pro platební slevu**.
+-   <span data-ttu-id="103d7-134">Zaškrtněte políčko **Zaúčtovat dobropis pro platební slevu**.</span><span class="sxs-lookup"><span data-stu-id="103d7-134">Select the **Post credit note for cash discount** check box.</span></span>
 
-V poli **Kód důvodu pro platební slevy** vyberte výchozí kód důvodu pro opravné daňové doklady.
+<span data-ttu-id="103d7-135">V poli **Kód důvodu pro platební slevy** vyberte výchozí kód důvodu pro opravné daňové doklady.</span><span class="sxs-lookup"><span data-stu-id="103d7-135">In the **Reason code for cash discounts** field, select a default reason code to use for tax corrective documents.</span></span>
 
-## <a name="credit-notes-for-cash-discounts"></a>Dobropisy pro platební slevy
+## <a name="credit-notes-for-cash-discounts"></a><span data-ttu-id="103d7-136">Dobropisy pro platební slevy</span><span class="sxs-lookup"><span data-stu-id="103d7-136">Credit notes for cash discounts</span></span>
 
-Dobropisy pro hotovostní slevy se automaticky zaúčtují při vyrovnání otevřených transakcí odběratele (faktury odběratele a platbu odběratele). Při zaúčtování dobropisů pro hotovostní slevy jsou zahrnuty kódy důvodů, které nastavíte v parametrech pohledávek, a odkaz na původní fakturu.
-Dobropisy pro platební slevy jsou číslovány podle číselné řady nastavené pro dobropisy. Výtisk dokumentu je nazván **Opravný dokument daně**. Obsahuje původní číslo faktury, základ a částku DPH a důvod, proč byla vytištěna oprava.
+<span data-ttu-id="103d7-137">Dobropisy pro hotovostní slevy se automaticky zaúčtují při vyrovnání otevřených transakcí odběratele (faktury odběratele a platbu odběratele).</span><span class="sxs-lookup"><span data-stu-id="103d7-137">Credit notes for cash discounts are posted automatically when open customer transactions (customer invoice and customer payment) are settled.</span></span> <span data-ttu-id="103d7-138">Při zaúčtování dobropisů pro hotovostní slevy jsou zahrnuty kódy důvodů, které nastavíte v parametrech pohledávek, a odkaz na původní fakturu.</span><span class="sxs-lookup"><span data-stu-id="103d7-138">When credit notes for cash discounts are posted, they include the reason codes that you set up in Account receivable parameters, and a reference to the original invoice.</span></span>
+<span data-ttu-id="103d7-139">Dobropisy pro platební slevy jsou číslovány podle číselné řady nastavené pro dobropisy.</span><span class="sxs-lookup"><span data-stu-id="103d7-139">Credit notes for cash discounts are numbered by using the number sequence that you set up for credit notes.</span></span> <span data-ttu-id="103d7-140">Výtisk dokumentu je nazván **Opravný dokument daně**.</span><span class="sxs-lookup"><span data-stu-id="103d7-140">The document printout is named **Tax corrective document**.</span></span> <span data-ttu-id="103d7-141">Obsahuje původní číslo faktury, základ a částku DPH a důvod, proč byla vytištěna oprava.</span><span class="sxs-lookup"><span data-stu-id="103d7-141">It includes the original invoice number, the VAT base and amount, and the reason why a correction was printed.</span></span>
 
 

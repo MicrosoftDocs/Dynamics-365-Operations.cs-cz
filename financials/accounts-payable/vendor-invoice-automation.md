@@ -15,217 +15,217 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 172d952c79347e7dd563cfda70729750fa0ddde9
-ms.openlocfilehash: c47ca406e2c8be98f26f1c78d6f5e0a3f66690a5
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: cd9be16ee30a62235f20f23f9cd50fb954cfe8a4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="vendor-invoice-automation"></a>Automatizace faktur dodavatele
+# <a name="vendor-invoice-automation"></a><span data-ttu-id="efc9c-103">Automatizace faktur dodavatele</span><span class="sxs-lookup"><span data-stu-id="efc9c-103">Vendor invoice automation</span></span>
 
-Toto téma popisuje funkce, které jsou k dispozici pro celkovou automatizaci dodavatelských faktur, a to dokonce i faktur, které obsahují přílohy.
+<span data-ttu-id="efc9c-104">Toto téma popisuje funkce, které jsou k dispozici pro celkovou automatizaci dodavatelských faktur, a to dokonce i faktur, které obsahují přílohy.</span><span class="sxs-lookup"><span data-stu-id="efc9c-104">This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.</span></span>
 
-Organizace, které chtějí usnadnit své procesy v oblasti závazků (AP), často identifikují zpracování faktury jako jeden z hlavních procesních oblastí, které by měly být efektivnější. V mnoha případech organizace svěřují zpracování papírových faktur nezávislým poskytovatelům služeb optického rozpoznávání znaků (OCR). Poté obdrží strojově čitelná metadata faktury spolu s naskenovaným obrázkem jednotlivých faktur. Na pomoc s automatizací je pak k dispozici řešení na poslední chvíli, které umožňuje spotřebu těchto artefaktů ve fakturačním systému. Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, umožňuje nyní vydání této automatizace na poslední chvíli prostřednictvím řešení automatizace faktury.
+<span data-ttu-id="efc9c-105">Organizace, které chtějí usnadnit své procesy v oblasti závazků (AP), často identifikují zpracování faktury jako jeden z hlavních procesních oblastí, které by měly být efektivnější.</span><span class="sxs-lookup"><span data-stu-id="efc9c-105">Organizations that want to streamline their Accounts payable (AP) processes often identify invoice processing as one of the top process areas that should be more efficient.</span></span> <span data-ttu-id="efc9c-106">V mnoha případech organizace svěřují zpracování papírových faktur nezávislým poskytovatelům služeb optického rozpoznávání znaků (OCR).</span><span class="sxs-lookup"><span data-stu-id="efc9c-106">In many cases, these organizations offload the processing of paper invoices to a third-party optical character recognition (OCR) service provider.</span></span> <span data-ttu-id="efc9c-107">Poté obdrží strojově čitelná metadata faktury spolu s naskenovaným obrázkem jednotlivých faktur.</span><span class="sxs-lookup"><span data-stu-id="efc9c-107">They then receive machine-readable invoice metadata together with a scanned image of each invoice.</span></span> <span data-ttu-id="efc9c-108">Na pomoc s automatizací je pak k dispozici řešení na poslední chvíli, které umožňuje spotřebu těchto artefaktů ve fakturačním systému.</span><span class="sxs-lookup"><span data-stu-id="efc9c-108">To help with automation, a “last mile” solution is then built to enable consumption of these artifacts in the invoicing system.</span></span> <span data-ttu-id="efc9c-109">Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, umožňuje nyní vydání této automatizace na poslední chvíli prostřednictvím řešení automatizace faktury.</span><span class="sxs-lookup"><span data-stu-id="efc9c-109">Microsoft Dynamics 365 for Finance and Operations, Enterprise edition now enables this “last mile” automation out of the box, through an invoice automation solution.</span></span>
 
-## <a name="solution-context"></a>Kontext řešení
+## <a name="solution-context"></a><span data-ttu-id="efc9c-110">Kontext řešení</span><span class="sxs-lookup"><span data-stu-id="efc9c-110">Solution context</span></span>
 
-Automatické řešení faktur má standardní rozhraní, které přijímá metadata faktury pro hlavičku faktury a řádky faktury, a také přílohy použitelné u faktury. Jakýkoli externí systém, který dokáže generovat artefakty vyhovující tomuto rozhraní, bude moci odesílat informační kanál do aplikace Finance and Operations k automatickému zpracování faktur a příloh.
+<span data-ttu-id="efc9c-111">Automatické řešení faktur má standardní rozhraní, které přijímá metadata faktury pro hlavičku faktury a řádky faktury, a také přílohy použitelné u faktury.</span><span class="sxs-lookup"><span data-stu-id="efc9c-111">The invoice automation solution enables a standard interface that can accept invoice metadata for the invoice header and invoice lines, and also attachments that are applicable to the invoice.</span></span> <span data-ttu-id="efc9c-112">Jakýkoli externí systém, který dokáže generovat artefakty vyhovující tomuto rozhraní, bude moci odesílat informační kanál do aplikace Finance and Operations k automatickému zpracování faktur a příloh.</span><span class="sxs-lookup"><span data-stu-id="efc9c-112">Any external system that can generate artifacts that comply with this interface will be able to send the feed into Finance and Operations for automatic processing of invoices and attachments.</span></span>
 
-Následující obrázek znázorňuje scénář integrace vzorku, kde se společnost Contoso stala partnerem poskytovatele služeb OCR ke zpracování faktur dodavatele. Dodavatelé společnosti Contoso odesílají faktury poskytovateli služeb e-mailem. Prostřednictvím zpracování OCR poskytovatel služby generuje metadata faktury (záhlaví a řádky) a naskenovanou kopii faktury. Vrstva integrace pak transformuje tyto artefakty tak, aby je bylo možné používat v modulu Finance and Operations.
+<span data-ttu-id="efc9c-113">Následující obrázek znázorňuje scénář integrace vzorku, kde se společnost Contoso stala partnerem poskytovatele služeb OCR ke zpracování faktur dodavatele.</span><span class="sxs-lookup"><span data-stu-id="efc9c-113">The following illustration shows a sample integration scenario where Contoso has partnered with an OCR service provider for vendor invoice processing.</span></span> <span data-ttu-id="efc9c-114">Dodavatelé společnosti Contoso odesílají faktury poskytovateli služeb e-mailem.</span><span class="sxs-lookup"><span data-stu-id="efc9c-114">Contoso’s vendors send invoices to the service provider by email.</span></span> <span data-ttu-id="efc9c-115">Prostřednictvím zpracování OCR poskytovatel služby generuje metadata faktury (záhlaví a řádky) a naskenovanou kopii faktury.</span><span class="sxs-lookup"><span data-stu-id="efc9c-115">Through OCR processing, the service provider generates invoice metadata (header and/or lines) and a scanned image of the invoice.</span></span> <span data-ttu-id="efc9c-116">Vrstva integrace pak transformuje tyto artefakty tak, aby je bylo možné používat v modulu Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="efc9c-116">An integration layer then transforms these artifacts so that Finance and Operations can consume them.</span></span>
 
 ![Vzorový scénář integrace](media/vendor_invoice_automation_01.png)
 
-Předchozí scénář umožňuje několik variant v případě, že je nutná integrace faktury. Migrace dat představuje jiný příklad použití tohoto rozhraní k vytvoření faktur a příloh faktur v modulu Finance and Operations.
+<span data-ttu-id="efc9c-118">Předchozí scénář umožňuje několik variant v případě, že je nutná integrace faktury.</span><span class="sxs-lookup"><span data-stu-id="efc9c-118">Several variations of the preceding scenario are possible if invoice integration is required.</span></span> <span data-ttu-id="efc9c-119">Migrace dat představuje jiný příklad použití tohoto rozhraní k vytvoření faktur a příloh faktur v modulu Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="efc9c-119">Data migration is another use case where this interface can be used to create invoices and attachments in Finance and Operations.</span></span>
 
-### <a name="solution-components"></a>Komponenty řešení
+### <a name="solution-components"></a><span data-ttu-id="efc9c-120">Komponenty řešení</span><span class="sxs-lookup"><span data-stu-id="efc9c-120">Solution components</span></span>
 
-Řešení obsahuje následující součásti:
+<span data-ttu-id="efc9c-121">Řešení obsahuje následující součásti:</span><span class="sxs-lookup"><span data-stu-id="efc9c-121">The solution footprint consists of the following components:</span></span>
 
-+ Datové entity pro záhlaví faktury, řádky faktury a přílohy faktury
-+ Zpracování výjimek u faktur
-+ Prohlížeč příloh faktur vedle sebe
++ <span data-ttu-id="efc9c-122">Datové entity pro záhlaví faktury, řádky faktury a přílohy faktury</span><span class="sxs-lookup"><span data-stu-id="efc9c-122">Data entities for the invoice header, invoice lines, and invoice attachments</span></span>
++ <span data-ttu-id="efc9c-123">Zpracování výjimek u faktur</span><span class="sxs-lookup"><span data-stu-id="efc9c-123">Exception processing for invoices</span></span>
++ <span data-ttu-id="efc9c-124">Prohlížeč příloh faktur vedle sebe</span><span class="sxs-lookup"><span data-stu-id="efc9c-124">A side-by-side attachment viewer in invoices</span></span>
 
-Zbývající část tohoto tématu obsahuje podrobné popisy těchto komponent řešení.
+<span data-ttu-id="efc9c-125">Zbývající část tohoto tématu obsahuje podrobné popisy těchto komponent řešení.</span><span class="sxs-lookup"><span data-stu-id="efc9c-125">The rest of this topic provides detailed descriptions of these solution components.</span></span>
 
-## <a name="data-entities"></a>Datové entity
+## <a name="data-entities"></a><span data-ttu-id="efc9c-126">Datové entity</span><span class="sxs-lookup"><span data-stu-id="efc9c-126">Data entities</span></span>
 
-Datový balík je jednotka práce, které musí být odeslána do modulu Finance and Operations, aby bylo možné vytvořit záhlaví faktury, řádky faktury a přílohy faktur. Následující datové entity se používají pro artefakty tvořících datový balíček:
+<span data-ttu-id="efc9c-127">Datový balík je jednotka práce, které musí být odeslána do modulu Finance and Operations, aby bylo možné vytvořit záhlaví faktury, řádky faktury a přílohy faktur.</span><span class="sxs-lookup"><span data-stu-id="efc9c-127">A data package is the unit of work that must be sent to Finance and Operations, so that invoice headers, invoice lines, and invoice attachments can be created.</span></span> <span data-ttu-id="efc9c-128">Následující datové entity se používají pro artefakty tvořících datový balíček:</span><span class="sxs-lookup"><span data-stu-id="efc9c-128">The following data entities are used for the artifacts that make up the data package:</span></span>
 
-+ Záhlaví faktury dodavatele
-+ Řádek dodavatelské faktury
-+ Příloha dokumentu faktury dodavatele
++ <span data-ttu-id="efc9c-129">Záhlaví faktury dodavatele</span><span class="sxs-lookup"><span data-stu-id="efc9c-129">Vendor invoice header</span></span>
++ <span data-ttu-id="efc9c-130">Řádek dodavatelské faktury</span><span class="sxs-lookup"><span data-stu-id="efc9c-130">Vendor invoice line</span></span>
++ <span data-ttu-id="efc9c-131">Příloha dokumentu faktury dodavatele</span><span class="sxs-lookup"><span data-stu-id="efc9c-131">Vendor invoice document attachment</span></span>
 
-Příloha dokumentu faktury dodavatele je nová datová entita, která je zavedena jako součást této funkce. Entita v záhlaví faktury dodavatele byla upravena tak, aby podporovala přílohy. Entita řádku faktury dodavatele pro tuto funkci nebyla změněna.
+<span data-ttu-id="efc9c-132">Příloha dokumentu faktury dodavatele je nová datová entita, která je zavedena jako součást této funkce.</span><span class="sxs-lookup"><span data-stu-id="efc9c-132">Vendor invoice document attachment is a new data entity that is introduced as part of this feature.</span></span> <span data-ttu-id="efc9c-133">Entita v záhlaví faktury dodavatele byla upravena tak, aby podporovala přílohy.</span><span class="sxs-lookup"><span data-stu-id="efc9c-133">The Vendor invoice header entity has been modified so that it supports attachments.</span></span> <span data-ttu-id="efc9c-134">Entita řádku faktury dodavatele pro tuto funkci nebyla změněna.</span><span class="sxs-lookup"><span data-stu-id="efc9c-134">The Vendor invoice line entity hasn’t been modified for this feature.</span></span>
 
-Toto téma neposkytuje podrobnou definici datového balíku. Také nevysvětluje, jak vytvářet datové balíčky. Tyto informace lze najít v tématu [Systém datových entit a balíčků](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages).
+<span data-ttu-id="efc9c-135">Toto téma neposkytuje podrobnou definici datového balíku.</span><span class="sxs-lookup"><span data-stu-id="efc9c-135">This topic doesn’t give a detailed definition of a data package.</span></span> <span data-ttu-id="efc9c-136">Také nevysvětluje, jak vytvářet datové balíčky.</span><span class="sxs-lookup"><span data-stu-id="efc9c-136">It also doesn’t explain how to create data packages.</span></span> <span data-ttu-id="efc9c-137">Tyto informace lze najít v tématu [Systém datových entit a balíčků](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages).</span><span class="sxs-lookup"><span data-stu-id="efc9c-137">For this information, see [Data entities and packages framework](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages).</span></span>
 
-Chcete-li rychle generovat testovací data, která zahrnují faktury a přílohy, postupujte takto.
+<span data-ttu-id="efc9c-138">Chcete-li rychle generovat testovací data, která zahrnují faktury a přílohy, postupujte takto.</span><span class="sxs-lookup"><span data-stu-id="efc9c-138">To quickly generate test data that includes invoices and attachments, follow these steps.</span></span>
 
-1. Přihlaste se k instanci aplikace Finance and Operations.
-1. Přejděte na **Závazky** > **Faktury** > **Otevřít faktury dodavatele**.
-1. Vytvořte faktury, které mají řádky a přílohy.
+1. <span data-ttu-id="efc9c-139">Přihlaste se k instanci aplikace Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="efc9c-139">Sign in to your Finance and Operations instance.</span></span>
+1. <span data-ttu-id="efc9c-140">Přejděte na **Závazky** > **Faktury** > **Otevřít faktury dodavatele**.</span><span class="sxs-lookup"><span data-stu-id="efc9c-140">Go to **Accounts payables** > **Invoices** > **Pending vendor invoices**.</span></span>
+1. <span data-ttu-id="efc9c-141">Vytvořte faktury, které mají řádky a přílohy.</span><span class="sxs-lookup"><span data-stu-id="efc9c-141">Create invoices that have lines and attachments.</span></span>
 
     > [!NOTE]
-    > Přílohy musí být přílohy záhlaví. V současné době entita přílohy dokumentu dodavatelské faktury nepodporuje přílohy řádků.
+    > <span data-ttu-id="efc9c-142">Přílohy musí být přílohy záhlaví.</span><span class="sxs-lookup"><span data-stu-id="efc9c-142">The attachments must be header attachments.</span></span> <span data-ttu-id="efc9c-143">V současné době entita přílohy dokumentu dodavatelské faktury nepodporuje přílohy řádků.</span><span class="sxs-lookup"><span data-stu-id="efc9c-143">Currently, the Vendor invoice document attachment entity doesn’t support line attachments.</span></span>
 
-1. Otevřete pracovní prostor **Správa dat**.
-1. Vytvořte úlohu exportu, která obsahuje záhlaví faktury dodavatele, řádku faktury dodavatele a entity příloh dokumentu faktury dodavatele.
-1. Exportujte data.
-1. Stáhněte exportovaná data jako balíček. Nyní můžete balíček použít k importu dat do cílových instancí pro účely testování.
+1. <span data-ttu-id="efc9c-144">Otevřete pracovní prostor **Správa dat**.</span><span class="sxs-lookup"><span data-stu-id="efc9c-144">Open the **Data management** workspace.</span></span>
+1. <span data-ttu-id="efc9c-145">Vytvořte úlohu exportu, která obsahuje záhlaví faktury dodavatele, řádku faktury dodavatele a entity příloh dokumentu faktury dodavatele.</span><span class="sxs-lookup"><span data-stu-id="efc9c-145">Create an export job that includes the Vendor invoice header, Vendor invoice line, and Vendor invoice document attachment entities.</span></span>
+1. <span data-ttu-id="efc9c-146">Exportujte data.</span><span class="sxs-lookup"><span data-stu-id="efc9c-146">Export the data.</span></span>
+1. <span data-ttu-id="efc9c-147">Stáhněte exportovaná data jako balíček.</span><span class="sxs-lookup"><span data-stu-id="efc9c-147">Download the exported data as a package.</span></span> <span data-ttu-id="efc9c-148">Nyní můžete balíček použít k importu dat do cílových instancí pro účely testování.</span><span class="sxs-lookup"><span data-stu-id="efc9c-148">You can now use the package to import data into target instances for testing purposes.</span></span>
 
-### <a name="determining-the-legal-entity-for-an-invoice"></a>Určení právnické osoby faktury
+### <a name="determining-the-legal-entity-for-an-invoice"></a><span data-ttu-id="efc9c-149">Určení právnické osoby faktury</span><span class="sxs-lookup"><span data-stu-id="efc9c-149">Determining the legal entity for an invoice</span></span>
 
-Faktury importované pomocí datových balíčků lze přidružit k právnické osobě, ke které patří, dvěma způsoby:
+<span data-ttu-id="efc9c-150">Faktury importované pomocí datových balíčků lze přidružit k právnické osobě, ke které patří, dvěma způsoby:</span><span class="sxs-lookup"><span data-stu-id="efc9c-150">Invoices that are imported via data packages can be associated with the legal entity that they belong to in two ways:</span></span>
 
-+ Úloha importu, která fakturu zpracovává, ji importuje do stejné společnosti, ve které byla úloha naplánována v pracovním prostoru **Správa dat**. Jinými slovy společnost úlohy určuje společnost, do které faktura patří.
-+ Při odeslání datového balíčku obsahujícího faktury do aplikace Finance and Operations může volající (tedy aplikace integrace běžící mimo Finance and Operations) explicitně zmínit ID společnosti v požadavku HTTP V tomto případě bude kontext společnosti, ve kterém je úloha zpracování spuštěná v modulu Finance and Operations, přepsán a faktury jsou importovány do společnosti, která byla předána v požadavku HTTP.
++ <span data-ttu-id="efc9c-151">Úloha importu, která fakturu zpracovává, ji importuje do stejné společnosti, ve které byla úloha naplánována v pracovním prostoru **Správa dat**.</span><span class="sxs-lookup"><span data-stu-id="efc9c-151">The import job that processes the invoice imports it into the same company in which the job was scheduled in the **Data management** workspace.</span></span> <span data-ttu-id="efc9c-152">Jinými slovy společnost úlohy určuje společnost, do které faktura patří.</span><span class="sxs-lookup"><span data-stu-id="efc9c-152">In other words, the company of the job determines the company that the invoice belongs to.</span></span>
++ <span data-ttu-id="efc9c-153">Při odeslání datového balíčku obsahujícího faktury do aplikace Finance and Operations může volající (tedy aplikace integrace běžící mimo Finance and Operations) explicitně zmínit ID společnosti v požadavku HTTP</span><span class="sxs-lookup"><span data-stu-id="efc9c-153">When the data package that contains invoices is sent to Finance and Operations, the caller (that is, the integration application that runs outside of Finance and Operations) can explicitly mention the company ID in the HTTP request.</span></span> <span data-ttu-id="efc9c-154">V tomto případě bude kontext společnosti, ve kterém je úloha zpracování spuštěná v modulu Finance and Operations, přepsán a faktury jsou importovány do společnosti, která byla předána v požadavku HTTP.</span><span class="sxs-lookup"><span data-stu-id="efc9c-154">In this case, the company context in which the processing job runs in Finance and Operations is overridden, and the invoices are imported into the company that was passed via the HTTP request.</span></span>
 
 > [!NOTE]
-> Toto chování je standardní chování správy dat. Je zde vysvětleno v kontextu faktur jenom pro úplnost.
+> <span data-ttu-id="efc9c-155">Toto chování je standardní chování správy dat.</span><span class="sxs-lookup"><span data-stu-id="efc9c-155">This behavior is standard data management behavior.</span></span> <span data-ttu-id="efc9c-156">Je zde vysvětleno v kontextu faktur jenom pro úplnost.</span><span class="sxs-lookup"><span data-stu-id="efc9c-156">It’s explained here, in the context of invoices, just for the sake of completeness.</span></span>
 
-## <a name="exception-processing"></a>Zpracování výjimky
+## <a name="exception-processing"></a><span data-ttu-id="efc9c-157">Zpracování výjimky</span><span class="sxs-lookup"><span data-stu-id="efc9c-157">Exception processing</span></span>
 
-V situacích, kdy faktury dodavatele přecházejí do aplikace Finance and Operations prostřednictvím integrace, musí existovat jednoduchý způsob zpracování výjimek nebo neúspěšných faktur členem týmu modulu Závazky a k vytvoření čekajících faktur mimo neúspěšné faktury. Toto zpracování výjimek pro faktury dodavatele je nyní součástí modulu Finance and Operations.
+<span data-ttu-id="efc9c-158">V situacích, kdy faktury dodavatele přecházejí do aplikace Finance and Operations prostřednictvím integrace, musí existovat jednoduchý způsob zpracování výjimek nebo neúspěšných faktur členem týmu modulu Závazky a k vytvoření čekajících faktur mimo neúspěšné faktury.</span><span class="sxs-lookup"><span data-stu-id="efc9c-158">In scenarios where vendor invoices come into Finance and Operations via integration, there must be an easy way for an Accounts payable team member to process exceptions or failed invoices, and to create pending invoices out of failed invoices.</span></span> <span data-ttu-id="efc9c-159">Toto zpracování výjimek pro faktury dodavatele je nyní součástí modulu Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="efc9c-159">This exception processing for vendor invoices is now part of Finance and Operations.</span></span>
 
-### <a name="exceptions-list-page"></a>Stránka seznamu výjimek
+### <a name="exceptions-list-page"></a><span data-ttu-id="efc9c-160">Stránka seznamu výjimek</span><span class="sxs-lookup"><span data-stu-id="efc9c-160">Exceptions list page</span></span>
 
-Stránka s novým seznamem výjimek faktur je k dispozici zde: **Závazky** > **Faktury** > **Selhání importu** > **Dodavatelské faktury, které se nepodařilo importovat**. Na této stránce se zobrazují všechny záznamy v záhlaví dodavatelské faktury z tabulky fázování entity dat záhlaví faktury dodavatele. Všimněte si, že můžete zobrazit stejné záznamy z pracovního prostoru **Správa dat**, kde můžete provést stejné akce, které jsou k dispozici ve funkci zpracování výjimky. Uživatelské rozhraní, které funkce zpracování výjimek poskytuje, je však optimalizováno pro funkčního uživatele.
+<span data-ttu-id="efc9c-161">Stránka s novým seznamem výjimek faktur je k dispozici zde: **Závazky** > **Faktury** > **Selhání importu** > **Dodavatelské faktury, které se nepodařilo importovat**.</span><span class="sxs-lookup"><span data-stu-id="efc9c-161">The new list page for invoice exceptions is available at **Accounts payable** > **Invoices** > **Import failures** > **Vendor invoices that failed to import**.</span></span> <span data-ttu-id="efc9c-162">Na této stránce se zobrazují všechny záznamy v záhlaví dodavatelské faktury z tabulky fázování entity dat záhlaví faktury dodavatele.</span><span class="sxs-lookup"><span data-stu-id="efc9c-162">This page shows all the vendor invoice header records from the staging table of the Vendor invoice header data entity.</span></span> <span data-ttu-id="efc9c-163">Všimněte si, že můžete zobrazit stejné záznamy z pracovního prostoru **Správa dat**, kde můžete provést stejné akce, které jsou k dispozici ve funkci zpracování výjimky.</span><span class="sxs-lookup"><span data-stu-id="efc9c-163">Note that you can view the same records from the **Data management** workspace, where you can also perform the same actions that are provided in the exception handling feature.</span></span> <span data-ttu-id="efc9c-164">Uživatelské rozhraní, které funkce zpracování výjimek poskytuje, je však optimalizováno pro funkčního uživatele.</span><span class="sxs-lookup"><span data-stu-id="efc9c-164">However, the UI that the exception handling feature provides is optimized for a functional user.</span></span>
 
 ![Stránka seznamu výjimek](media/vendor_invoice_automation_02.png)
 
-Tato stránka seznamu zahrnuje následující pole, která se dodávají prostřednictvím kanálu:
+<span data-ttu-id="efc9c-166">Tato stránka seznamu zahrnuje následující pole, která se dodávají prostřednictvím kanálu:</span><span class="sxs-lookup"><span data-stu-id="efc9c-166">This list page includes the following fields that come in via the feed:</span></span>
 
-+ **Společnost** – Společnost, které faktura náleží
-+ **Chybová zpráva** – chybová zpráva, kterou vydává systém správy platformy k vysvětlení, proč nelze vytvořit fakturu
-+ **Číslo** – číslo faktury
-+ **Účet faktury**
-+ **Název** – Název dodavatele
-+ **Účet dodavatele**
-+ **Nákupní objednávka** – Číslo nákupní objednávky pro vybranou fakturu
-+ **Datum zaúčtování**
-+ **Datum fakturace**
-+ **Popis faktury**
-+ **Měna**
-+ **Protokol**
-+ **Reference na řádek** –Identifikátor, který pochází z externího systému
++ <span data-ttu-id="efc9c-167">**Společnost** – Společnost, které faktura náleží</span><span class="sxs-lookup"><span data-stu-id="efc9c-167">**Company** – The company that the invoice belongs to</span></span>
++ <span data-ttu-id="efc9c-168">**Chybová zpráva** – chybová zpráva, kterou vydává systém správy platformy k vysvětlení, proč nelze vytvořit fakturu</span><span class="sxs-lookup"><span data-stu-id="efc9c-168">**Error message** – The error message that the data management framework issues to explain why the invoice could not be created</span></span>
++ <span data-ttu-id="efc9c-169">**Číslo** – číslo faktury</span><span class="sxs-lookup"><span data-stu-id="efc9c-169">**Number** – The invoice number</span></span>
++ <span data-ttu-id="efc9c-170">**Účet faktury**</span><span class="sxs-lookup"><span data-stu-id="efc9c-170">**Invoice account**</span></span>
++ <span data-ttu-id="efc9c-171">**Název** – Název dodavatele</span><span class="sxs-lookup"><span data-stu-id="efc9c-171">**Name** – The vendor’s name</span></span>
++ <span data-ttu-id="efc9c-172">**Účet dodavatele**</span><span class="sxs-lookup"><span data-stu-id="efc9c-172">**Vendor account**</span></span>
++ <span data-ttu-id="efc9c-173">**Nákupní objednávka** – Číslo nákupní objednávky pro vybranou fakturu</span><span class="sxs-lookup"><span data-stu-id="efc9c-173">**Purchase order** – The purchase order (PO) number for the invoice</span></span>
++ <span data-ttu-id="efc9c-174">**Datum zaúčtování**</span><span class="sxs-lookup"><span data-stu-id="efc9c-174">**Posting date**</span></span>
++ <span data-ttu-id="efc9c-175">**Datum fakturace**</span><span class="sxs-lookup"><span data-stu-id="efc9c-175">**Invoice date**</span></span>
++ <span data-ttu-id="efc9c-176">**Popis faktury**</span><span class="sxs-lookup"><span data-stu-id="efc9c-176">**Invoice description**</span></span>
++ <span data-ttu-id="efc9c-177">**Měna**</span><span class="sxs-lookup"><span data-stu-id="efc9c-177">**Currency**</span></span>
++ <span data-ttu-id="efc9c-178">**Protokol**</span><span class="sxs-lookup"><span data-stu-id="efc9c-178">**Log**</span></span>
++ <span data-ttu-id="efc9c-179">**Reference na řádek** –Identifikátor, který pochází z externího systému</span><span class="sxs-lookup"><span data-stu-id="efc9c-179">**Line reference** – The identifier that comes from the external system</span></span>
 
     > [!NOTE]
-    > Odkaz na řádek není ID faktury.
+    > <span data-ttu-id="efc9c-180">Odkaz na řádek není ID faktury.</span><span class="sxs-lookup"><span data-stu-id="efc9c-180">The line reference isn’t the invoice ID.</span></span>
 
-Tato stránka seznamu dále obsahuje podokno náhledu, které lze použít následujícími způsoby:
+<span data-ttu-id="efc9c-181">Tato stránka seznamu dále obsahuje podokno náhledu, které lze použít následujícími způsoby:</span><span class="sxs-lookup"><span data-stu-id="efc9c-181">This list page also has a preview pane that you can used in the following ways:</span></span>
 
-+ Zobrazte celou chybovou zprávu, abyste nemuseli rozbalovat sloupec **Chybová zpráva** v mřížce.
-+ Zobrazte celý seznam příloh faktury, pokud existují.
++ <span data-ttu-id="efc9c-182">Zobrazte celou chybovou zprávu, abyste nemuseli rozbalovat sloupec **Chybová zpráva** v mřížce.</span><span class="sxs-lookup"><span data-stu-id="efc9c-182">View the whole error message, so that you don’t have to expand the **Error message** column in the grid.</span></span>
++ <span data-ttu-id="efc9c-183">Zobrazte celý seznam příloh faktury, pokud existují.</span><span class="sxs-lookup"><span data-stu-id="efc9c-183">View the whole list of attachments for the invoice, if any attachments came with the invoice.</span></span>
 
-Stránka seznamu podporuje následující akce:
+<span data-ttu-id="efc9c-184">Stránka seznamu podporuje následující akce:</span><span class="sxs-lookup"><span data-stu-id="efc9c-184">The list page supports the following actions:</span></span>
 
-+ **Upravit** – otevřete záznam o výjimce v režimu úprav, abyste mohli opravit problémy.
-+ **Možnosti** – přejděte ke standardním možnostem, které jsou k dispozici na stránkách seznamů. Můžete použít možnost **Přidat do pracovního prostoru** pro připnutí stránky se seznamem výjimek jako seznamu nebo dlaždice.
++ <span data-ttu-id="efc9c-185">**Upravit** – otevřete záznam o výjimce v režimu úprav, abyste mohli opravit problémy.</span><span class="sxs-lookup"><span data-stu-id="efc9c-185">**Edit** – Open the exception record in edit mode, so that you can fix the issues.</span></span>
++ <span data-ttu-id="efc9c-186">**Možnosti** – přejděte ke standardním možnostem, které jsou k dispozici na stránkách seznamů.</span><span class="sxs-lookup"><span data-stu-id="efc9c-186">**Options** – Access the standard options that are available on list pages.</span></span> <span data-ttu-id="efc9c-187">Můžete použít možnost **Přidat do pracovního prostoru** pro připnutí stránky se seznamem výjimek jako seznamu nebo dlaždice.</span><span class="sxs-lookup"><span data-stu-id="efc9c-187">You can use the **Add to workspace** option to pin the exceptions list page to your workspace as a list or tile.</span></span>
 
-### <a name="exception-details-page"></a>Stránka podrobností o výjimce
+### <a name="exception-details-page"></a><span data-ttu-id="efc9c-188">Stránka podrobností o výjimce</span><span class="sxs-lookup"><span data-stu-id="efc9c-188">Exception details page</span></span>
 
-Při spuštění režimu úprav se zobrazí stránka podrobností výjimky pro fakturu s problémy. Pokud existují nějaké přílohy, faktura a výchozí příloha se zobrazí vedle sebe na stránce Podrobnosti o výjimce.
+<span data-ttu-id="efc9c-189">Při spuštění režimu úprav se zobrazí stránka podrobností výjimky pro fakturu s problémy.</span><span class="sxs-lookup"><span data-stu-id="efc9c-189">When you start edit mode, the exception details page for the invoice that has issues appears.</span></span> <span data-ttu-id="efc9c-190">Pokud existují nějaké přílohy, faktura a výchozí příloha se zobrazí vedle sebe na stránce Podrobnosti o výjimce.</span><span class="sxs-lookup"><span data-stu-id="efc9c-190">If there are any attachments, the invoice and the default attachment appear side by side on the exception details page.</span></span>
 
 ![Stránka podrobností o výjimce](media/vendor_invoice_automation_03.png)
 
-V předcházejícím ilustračním příkladu nebyly žádné řádky pro záhlaví faktury dodavatele, která byla dodána. Oddíl pro řádky je tedy prázdný.
+<span data-ttu-id="efc9c-192">V předcházejícím ilustračním příkladu nebyly žádné řádky pro záhlaví faktury dodavatele, která byla dodána.</span><span class="sxs-lookup"><span data-stu-id="efc9c-192">In the preceding illustration, there weren’t any lines for the vendor invoice header that came in.</span></span> <span data-ttu-id="efc9c-193">Oddíl pro řádky je tedy prázdný.</span><span class="sxs-lookup"><span data-stu-id="efc9c-193">Therefore, the lines section is empty.</span></span>
 
-Stránka podrobností o výjimce podporuje následující operace:
+<span data-ttu-id="efc9c-194">Stránka podrobností o výjimce podporuje následující operace:</span><span class="sxs-lookup"><span data-stu-id="efc9c-194">The exception details page supports the following operation:</span></span>
 
-+ **Vytvořit čekající fakturu** – po opravě problémů na faktuře v rámci zpracování výjimky můžete klepnutím na toto tlačítko vytvořit čekající fakturu. Dojde k vytvoření čekajících faktur na pozadí (jako asynchronní operace).
++ <span data-ttu-id="efc9c-195">**Vytvořit čekající fakturu** – po opravě problémů na faktuře v rámci zpracování výjimky můžete klepnutím na toto tlačítko vytvořit čekající fakturu.</span><span class="sxs-lookup"><span data-stu-id="efc9c-195">**Create pending invoice** – After you’ve fixed the issues on the invoice as part of exception processing, you can click this button to create the pending invoice.</span></span> <span data-ttu-id="efc9c-196">Dojde k vytvoření čekajících faktur na pozadí (jako asynchronní operace).</span><span class="sxs-lookup"><span data-stu-id="efc9c-196">The creation of pending invoices occurs in the background (as an asynchronous operation).</span></span>
 
-### <a name="shared-service-vs-organization-based-exception-processing"></a>Sdílené služby vs. zpracování výjimek organizace
+### <a name="shared-service-vs-organization-based-exception-processing"></a><span data-ttu-id="efc9c-197">Sdílené služby vs. zpracování výjimek organizace</span><span class="sxs-lookup"><span data-stu-id="efc9c-197">Shared service vs. organization-based exception processing</span></span>
 
-Stránka seznamu výjimek podporuje standardní konstrukty zabezpečení, které pracovní prostor **Správa dat** podporuje pro zpracování záznamů fázování. Úlohu importu faktury můžete zabezpečit následujícím způsobem:
+<span data-ttu-id="efc9c-198">Stránka seznamu výjimek podporuje standardní konstrukty zabezpečení, které pracovní prostor **Správa dat** podporuje pro zpracování záznamů fázování.</span><span class="sxs-lookup"><span data-stu-id="efc9c-198">The exceptions list page supports the standard security constructs that the **Data management** workspace supports for the processing of staging records.</span></span> <span data-ttu-id="efc9c-199">Úlohu importu faktury můžete zabezpečit následujícím způsobem:</span><span class="sxs-lookup"><span data-stu-id="efc9c-199">The invoice import job can be secured in the following ways:</span></span>
 
-+ Podle role uživatele
-+ Podle uživatelů
-+ Podle právnické osoby
++ <span data-ttu-id="efc9c-200">Podle role uživatele</span><span class="sxs-lookup"><span data-stu-id="efc9c-200">By user role</span></span>
++ <span data-ttu-id="efc9c-201">Podle uživatelů</span><span class="sxs-lookup"><span data-stu-id="efc9c-201">By user</span></span>
++ <span data-ttu-id="efc9c-202">Podle právnické osoby</span><span class="sxs-lookup"><span data-stu-id="efc9c-202">By legal entity</span></span>
 
 ![Úloha importu, která je zabezpečena pomocí role uživatele a právnické osoby](media/vendor_invoice_automation_04.png)
 
-Pokud je pro úlohu importu faktury nakonfigurované zabezpečení, stránka seznamu výjimek toto nastavení ocení. Uživatelé budou moci zobrazit pouze záznamy výjimky faktury, které jim toto nastavení umožňuje zobrazit.
+<span data-ttu-id="efc9c-204">Pokud je pro úlohu importu faktury nakonfigurované zabezpečení, stránka seznamu výjimek toto nastavení ocení.</span><span class="sxs-lookup"><span data-stu-id="efc9c-204">If security is configured for the invoice import job, the exceptions list page honors those settings.</span></span> <span data-ttu-id="efc9c-205">Uživatelé budou moci zobrazit pouze záznamy výjimky faktury, které jim toto nastavení umožňuje zobrazit.</span><span class="sxs-lookup"><span data-stu-id="efc9c-205">Users will be able to see only the invoice exception records that this setup allows them to see.</span></span>
 
-Společnost Contoso se například rozhodla pro zpracování výjimek faktury podle právnické osoby. Proto je nastavení u úlohy importu faktury nakonfigurováno tak, aby uživatel u právnické osoby A mohl zobrazit pouze výjimky faktury v právnické osobě A, zatímco uživatel v právnické osobě B může zobrazit pouze výjimky faktury v právnické osobě B. Toto nastavení umožňuje dělení zodpovědností pro správu výjimek faktury.
+<span data-ttu-id="efc9c-206">Společnost Contoso se například rozhodla pro zpracování výjimek faktury podle právnické osoby.</span><span class="sxs-lookup"><span data-stu-id="efc9c-206">For example, Contoso has decided to process invoice exceptions by legal entity.</span></span> <span data-ttu-id="efc9c-207">Proto je nastavení u úlohy importu faktury nakonfigurováno tak, aby uživatel u právnické osoby A mohl zobrazit pouze výjimky faktury v právnické osobě A, zatímco uživatel v právnické osobě B může zobrazit pouze výjimky faktury v právnické osobě B. Toto nastavení umožňuje dělení zodpovědností pro správu výjimek faktury.</span><span class="sxs-lookup"><span data-stu-id="efc9c-207">Therefore, security is configured on the invoice import job in such a way that a user in legal entity A can see only invoice exceptions in legal entity A, whereas a user in legal entity B can see only invoice exceptions in legal entity B. This setup enables segregation of duties for the management of invoice exceptions.</span></span>
 
-Společnost Contoso by se také mohla rozhodnout, že nevynutí žádné zabezpečení, takže stejní uživatelé mohou zpracovávat výjimky faktury pro všechny právnické osoby. Toto nastavení umožňuje scénář sdílených služeb pro správu výjimek faktury.
+<span data-ttu-id="efc9c-208">Společnost Contoso by se také mohla rozhodnout, že nevynutí žádné zabezpečení, takže stejní uživatelé mohou zpracovávat výjimky faktury pro všechny právnické osoby.</span><span class="sxs-lookup"><span data-stu-id="efc9c-208">Contoso could also decide not to enforce any security, so that the same users can process invoice exceptions for all legal entities.</span></span> <span data-ttu-id="efc9c-209">Toto nastavení umožňuje scénář sdílených služeb pro správu výjimek faktury.</span><span class="sxs-lookup"><span data-stu-id="efc9c-209">This setup enables a shared services scenario for the management of invoice exceptions.</span></span>
 
-## <a name="side-by-side-attachment-viewer"></a>Prohlížeč příloh faktur vedle sebe
+## <a name="side-by-side-attachment-viewer"></a><span data-ttu-id="efc9c-210">Prohlížeč příloh faktur vedle sebe</span><span class="sxs-lookup"><span data-stu-id="efc9c-210">Side-by-side attachment viewer</span></span>
 
-Na pomoc se snadným zobrazením příloh pro faktury dodavatele obsahují následující stránky, které se používají v procesu fakturace, prohlížeč formátu připojení:
+<span data-ttu-id="efc9c-211">Na pomoc se snadným zobrazením příloh pro faktury dodavatele obsahují následující stránky, které se používají v procesu fakturace, prohlížeč formátu připojení:</span><span class="sxs-lookup"><span data-stu-id="efc9c-211">To help you easily view the attachments for vendor invoices, the following pages that are used in the invoicing process now provide an attachment viewer:</span></span>
 
-+ **Ošetření výjimek**
-+ Stránka **Nevyřízené faktury dodavatele** (k dispozici také v procesu kontroly faktury)
-+ Stránka s dotazem **Deník faktur** (pro zaúčtované faktury)
++ <span data-ttu-id="efc9c-212">**Ošetření výjimek**</span><span class="sxs-lookup"><span data-stu-id="efc9c-212">**Exception handling**</span></span>
++ <span data-ttu-id="efc9c-213">Stránka **Nevyřízené faktury dodavatele** (k dispozici také v procesu kontroly faktury)</span><span class="sxs-lookup"><span data-stu-id="efc9c-213">**Pending vendor invoices** page (also available in the invoice review process)</span></span>
++ <span data-ttu-id="efc9c-214">Stránka s dotazem **Deník faktur** (pro zaúčtované faktury)</span><span class="sxs-lookup"><span data-stu-id="efc9c-214">**Invoice journal** inquiry page (for posted invoices)</span></span>
 
-Tady jsou hlavní funkce, které poskytuje prohlížeč příloh:
+<span data-ttu-id="efc9c-215">Tady jsou hlavní funkce, které poskytuje prohlížeč příloh:</span><span class="sxs-lookup"><span data-stu-id="efc9c-215">Here is the main functionality that the attachment viewer provides:</span></span>
 
-+ Zobrazte všechny typy příloh, které Správa dokumentů podporuje (soubory, obrázky, adresy URL a poznámky).
-+ Zobrazte vícestránkové soubory TIFF.
-+ U souborů obrázků proveďte následující akce:
-  + Zvýrazněte části obrázku.
-  + Zablokujte části obrázku.
-  + Přidejte poznámky do obrázku.
-  + Přibližte nebo oddalte obrázek.
-  + Naklopte obrázek.
-  + Vraťte a opakujte akce.
-  + Přizpůsobte velikost obrázku.
-
-> [!NOTE]
-> Tyto akce jsou k dispozici pouze pro soubory obrázků (JPEG, TIFF, PNG a tak dále). Jakékoli změny provedené u obrázku pomocí těchto akcí jsou uloženy do souboru s obrázkem. V současné době prohlížeč příloh neobsahuje správy verzí nebo schopnosti auditu.
-
-### <a name="default-attachment"></a>Výchozí příloha
-
-Pokud faktura dodavatele má více než jednu přílohu, můžete nastavit jeden z dokumentů jako výchozí přílohu na stránce **Přílohy**. Možnost **Je výchozí příloha** je novou možností, která byla přidaná v rámci této funkce. Tato možnost je také vystavena v datové entitě Příloha dokumentu faktury dodavatele. Proto lze výchozí přílohu nastavit pomocí integrace.
-
-Jako výchozí přílohu lze nastavit pouze jeden dokument. Po nastavení dokumentu jako výchozí přílohy se dokument automaticky zobrazí v prohlížeči příloh při otevření faktury. Pokud jako výchozí přílohu nenastavíte žádný dokument, v prohlížeči se při otevření faktury automaticky nezobrazí žádná příloha.
-
-### <a name="showhide-invoice-attachments"></a>Zobrazit přílohy faktur
-
-Na stránkách **Zpracování výjimek**, **Čekající faktura** a **Deník faktur** je k dispozici nové tlačítko, které umožňuje zobrazit nebo skrýt prohlížeč příloh.
-
-### <a name="security"></a>Zabezpečení
-
-Pomocí rolí zabezpečení jsou v rámci zabezpečení založeného na rolích řízeny následující akce:
-
-+ Zvýraznění
-+ Blokovat
-+ Poznámky
-
-### <a name="pending-vendor-invoices-page"></a>Stránka Čekající faktury dodavatele
-
-Následující oprávnění poskytují přístup jen ke čtení nebo přístup pro čtení a zápis k prohlížeči příloh pro zvýrazněný blok a akce anotací:
-
-+ **Spravovat obrázek faktury dodavatele** – toto oprávnění poskytuje přístup pro čtení a zápis.
-+ **Zobrazit obrázek faktury dodavatele** – toto oprávnění poskytuje přístup pouze pro čtení.
-
-Následující funkční oprávnění poskytují přístup jen pro čtení a zápis k prohlížeči příloh pro tyto akce:
-
-+ **Spravovat faktury dodavatele** – Tomuto funkčnímu oprávnění je přiděleno oprávnění Spravovat obrázek faktury dodavatele.
-+ **Dotaz na stav faktury dodavatele** – Tomuto funkčnímu oprávnění je přiděleno oprávnění Zobrazit obrázek faktury dodavatele.
-
-Následující role poskytují přístup jen pro čtení a zápis k prohlížeči příloh pro tyto akce:
-
-+ **Úředník závazků** a **Manažer závazků** – Těmto rolím je přiřazeno funkční oprávnění Spravovat faktury dodavatele.
-+ **Úředník závazků**, **Manažer závazků**, **Úředník centralizovaných plateb závazků** a **Úředník plateb závazků** – Těmto rolím je přiřazeno funkční oprávnění Dotázat se na stav faktury dodavatele.
-
-### <a name="invoice-exception-details-page"></a>Stránka podrobností o výjimce faktury
-
-Následující oprávnění poskytují přístup jen ke čtení nebo přístup pro čtení a zápis k prohlížeči příloh pro zvýrazněný blok a akce anotací.
++ <span data-ttu-id="efc9c-216">Zobrazte všechny typy příloh, které Správa dokumentů podporuje (soubory, obrázky, adresy URL a poznámky).</span><span class="sxs-lookup"><span data-stu-id="efc9c-216">View all attachment types that Document management supports (files, images, URLs, and notes).</span></span>
++ <span data-ttu-id="efc9c-217">Zobrazte vícestránkové soubory TIFF.</span><span class="sxs-lookup"><span data-stu-id="efc9c-217">View multi-page TIFF files.</span></span>
++ <span data-ttu-id="efc9c-218">U souborů obrázků proveďte následující akce:</span><span class="sxs-lookup"><span data-stu-id="efc9c-218">Perform the following actions on image files:</span></span>
+  + <span data-ttu-id="efc9c-219">Zvýrazněte části obrázku.</span><span class="sxs-lookup"><span data-stu-id="efc9c-219">Highlight parts of the image.</span></span>
+  + <span data-ttu-id="efc9c-220">Zablokujte části obrázku.</span><span class="sxs-lookup"><span data-stu-id="efc9c-220">Block parts of the image.</span></span>
+  + <span data-ttu-id="efc9c-221">Přidejte poznámky do obrázku.</span><span class="sxs-lookup"><span data-stu-id="efc9c-221">Add annotations to the image.</span></span>
+  + <span data-ttu-id="efc9c-222">Přibližte nebo oddalte obrázek.</span><span class="sxs-lookup"><span data-stu-id="efc9c-222">Zoom in and out on the image.</span></span>
+  + <span data-ttu-id="efc9c-223">Naklopte obrázek.</span><span class="sxs-lookup"><span data-stu-id="efc9c-223">Pan the image.</span></span>
+  + <span data-ttu-id="efc9c-224">Vraťte a opakujte akce.</span><span class="sxs-lookup"><span data-stu-id="efc9c-224">Undo and redo actions.</span></span>
+  + <span data-ttu-id="efc9c-225">Přizpůsobte velikost obrázku.</span><span class="sxs-lookup"><span data-stu-id="efc9c-225">Fit the image to size.</span></span>
 
 > [!NOTE]
-> Role, které jsou uvedeny v této části, poskytují z výroby přístup k obrázkům faktury v prohlížeči příloh jen pro čtení. Pokud role musí mít také přístup pro zápis do obrázků, můžete této roli udělit přístup pro zápis pomocí oprávnění a funkčního oprávnění, které jsou zde popsány.
+> <span data-ttu-id="efc9c-226">Tyto akce jsou k dispozici pouze pro soubory obrázků (JPEG, TIFF, PNG a tak dále).</span><span class="sxs-lookup"><span data-stu-id="efc9c-226">These actions are available only for image files (JPEG, TIFF, PNG, and so on).</span></span> <span data-ttu-id="efc9c-227">Jakékoli změny provedené u obrázku pomocí těchto akcí jsou uloženy do souboru s obrázkem.</span><span class="sxs-lookup"><span data-stu-id="efc9c-227">Any changes that you make to an image by using these actions are saved to the image file.</span></span> <span data-ttu-id="efc9c-228">V současné době prohlížeč příloh neobsahuje správy verzí nebo schopnosti auditu.</span><span class="sxs-lookup"><span data-stu-id="efc9c-228">Currently, the attachment viewer doesn’t include versioning or auditing capabilities.</span></span>
 
-+ **Udržovat obrázek entity záhlaví faktury dodavatele** – toto oprávnění poskytuje přístup pro čtení a zápis k obrázkům faktury v prohlížeči příloh.
-+ **Zobrazit obrázek entity záhlaví faktury dodavatele** – toto oprávnění poskytuje přístup pouze pro čtení k obrázkům faktury v prohlížeči příloh.
+### <a name="default-attachment"></a><span data-ttu-id="efc9c-229">Výchozí příloha</span><span class="sxs-lookup"><span data-stu-id="efc9c-229">Default attachment</span></span>
 
-Následující funkční oprávnění poskytují přístup jen pro čtení k prohlížeči příloh pro tyto akce:
+<span data-ttu-id="efc9c-230">Pokud faktura dodavatele má více než jednu přílohu, můžete nastavit jeden z dokumentů jako výchozí přílohu na stránce **Přílohy**.</span><span class="sxs-lookup"><span data-stu-id="efc9c-230">If a vendor invoice has more than one attachment, you can set one of the documents as the default attachment on the **Attachments** page.</span></span> <span data-ttu-id="efc9c-231">Možnost **Je výchozí příloha** je novou možností, která byla přidaná v rámci této funkce.</span><span class="sxs-lookup"><span data-stu-id="efc9c-231">The **Is default attachment** option is a new option that was added as part of this feature.</span></span> <span data-ttu-id="efc9c-232">Tato možnost je také vystavena v datové entitě Příloha dokumentu faktury dodavatele.</span><span class="sxs-lookup"><span data-stu-id="efc9c-232">This option is also exposed in the Vendor invoice document attachment data entity.</span></span> <span data-ttu-id="efc9c-233">Proto lze výchozí přílohu nastavit pomocí integrace.</span><span class="sxs-lookup"><span data-stu-id="efc9c-233">Therefore, the default attachment can be set through integrations.</span></span>
 
-+ **Spravovat faktury dodavatele** – Tomuto funkčnímu oprávnění je přiděleno oprávnění entity záhlaví Spravovat fakturu dodavatele.
+<span data-ttu-id="efc9c-234">Jako výchozí přílohu lze nastavit pouze jeden dokument.</span><span class="sxs-lookup"><span data-stu-id="efc9c-234">Only one document can be set as the default attachment.</span></span> <span data-ttu-id="efc9c-235">Po nastavení dokumentu jako výchozí přílohy se dokument automaticky zobrazí v prohlížeči příloh při otevření faktury.</span><span class="sxs-lookup"><span data-stu-id="efc9c-235">After you set a document as the default attachment, it’s automatically shown in the attachment viewer when the invoice is opened.</span></span> <span data-ttu-id="efc9c-236">Pokud jako výchozí přílohu nenastavíte žádný dokument, v prohlížeči se při otevření faktury automaticky nezobrazí žádná příloha.</span><span class="sxs-lookup"><span data-stu-id="efc9c-236">If you don’t set any document as the default attachment, the viewer doesn’t automatically show any attachment when the invoice is opened.</span></span>
 
-Následující role poskytují přístup jen pro čtení k prohlížeči příloh pro tyto akce:
+### <a name="showhide-invoice-attachments"></a><span data-ttu-id="efc9c-237">Zobrazit přílohy faktur</span><span class="sxs-lookup"><span data-stu-id="efc9c-237">Show/hide invoice attachments</span></span>
 
-+ **Úředník závazků** a **Manažer závazků** – Těmto rolím je přiřazeno funkční oprávnění Spravovat faktury dodavatele.
+<span data-ttu-id="efc9c-238">Na stránkách **Zpracování výjimek**, **Čekající faktura** a **Deník faktur** je k dispozici nové tlačítko, které umožňuje zobrazit nebo skrýt prohlížeč příloh.</span><span class="sxs-lookup"><span data-stu-id="efc9c-238">A new button that is available on the **Exception processing**, **Pending invoice**, and **Invoice journal** inquiry pages lets you show or hide the attachment viewer.</span></span>
 
-Pokud role uživatele poskytuje práva pro úpravy na jakékoli stránce, bude mít ve výchozím nastavení uživatel také oprávnění pro úpravy v prohlížeči úprav pro akce zvýraznění, blokování a poznámky. Pokud však existují scénáře, ve kterých by měla mít konkrétní role oprávnění pro úpravy na stránce, ale ne v prohlížeči příloh, příslušná oprávnění v předchozím seznamu lze použít k vyřešení případu použití.
+### <a name="security"></a><span data-ttu-id="efc9c-239">Zabezpečení</span><span class="sxs-lookup"><span data-stu-id="efc9c-239">Security</span></span>
+
+<span data-ttu-id="efc9c-240">Pomocí rolí zabezpečení jsou v rámci zabezpečení založeného na rolích řízeny následující akce:</span><span class="sxs-lookup"><span data-stu-id="efc9c-240">The following actions in the attachment viewer are controlled via role-based security:</span></span>
+
++ <span data-ttu-id="efc9c-241">Zvýraznění</span><span class="sxs-lookup"><span data-stu-id="efc9c-241">Highlighting</span></span>
++ <span data-ttu-id="efc9c-242">Blokovat</span><span class="sxs-lookup"><span data-stu-id="efc9c-242">Block</span></span>
++ <span data-ttu-id="efc9c-243">Poznámky</span><span class="sxs-lookup"><span data-stu-id="efc9c-243">Annotation</span></span>
+
+### <a name="pending-vendor-invoices-page"></a><span data-ttu-id="efc9c-244">Stránka Čekající faktury dodavatele</span><span class="sxs-lookup"><span data-stu-id="efc9c-244">Pending vendor invoices page</span></span>
+
+<span data-ttu-id="efc9c-245">Následující oprávnění poskytují přístup jen ke čtení nebo přístup pro čtení a zápis k prohlížeči příloh pro zvýrazněný blok a akce anotací:</span><span class="sxs-lookup"><span data-stu-id="efc9c-245">The following privileges provide ready-only access or read/write access to the attachment viewer for the highlighting, block, and annotation actions:</span></span>
+
++ <span data-ttu-id="efc9c-246">**Spravovat obrázek faktury dodavatele** – toto oprávnění poskytuje přístup pro čtení a zápis.</span><span class="sxs-lookup"><span data-stu-id="efc9c-246">**Maintain vendor invoice image** – This privilege provides read/write access.</span></span>
++ <span data-ttu-id="efc9c-247">**Zobrazit obrázek faktury dodavatele** – toto oprávnění poskytuje přístup pouze pro čtení.</span><span class="sxs-lookup"><span data-stu-id="efc9c-247">**View vendor invoice image** – This privilege provides read-only access.</span></span>
+
+<span data-ttu-id="efc9c-248">Následující funkční oprávnění poskytují přístup jen pro čtení a zápis k prohlížeči příloh pro tyto akce:</span><span class="sxs-lookup"><span data-stu-id="efc9c-248">The following duties provide read-only access or read/write access to the attachment viewer for those actions:</span></span>
+
++ <span data-ttu-id="efc9c-249">**Spravovat faktury dodavatele** – Tomuto funkčnímu oprávnění je přiděleno oprávnění Spravovat obrázek faktury dodavatele.</span><span class="sxs-lookup"><span data-stu-id="efc9c-249">**Maintain vendor invoices** – The Maintain vendor invoice image privilege is assigned to this duty.</span></span>
++ <span data-ttu-id="efc9c-250">**Dotaz na stav faktury dodavatele** – Tomuto funkčnímu oprávnění je přiděleno oprávnění Zobrazit obrázek faktury dodavatele.</span><span class="sxs-lookup"><span data-stu-id="efc9c-250">**Inquire into vendor invoice status** – The View vendor invoice image privilege is assigned to this duty.</span></span>
+
+<span data-ttu-id="efc9c-251">Následující role poskytují přístup jen pro čtení a zápis k prohlížeči příloh pro tyto akce:</span><span class="sxs-lookup"><span data-stu-id="efc9c-251">The following roles provide read-only access or read/write access to the attachment viewer for those actions:</span></span>
+
++ <span data-ttu-id="efc9c-252">**Úředník závazků** a **Manažer závazků** – Těmto rolím je přiřazeno funkční oprávnění Spravovat faktury dodavatele.</span><span class="sxs-lookup"><span data-stu-id="efc9c-252">**Accounts payable clerk** and **Accounts payable manager** – The Maintain vendor invoices duty is assigned to these roles.</span></span>
++ <span data-ttu-id="efc9c-253">**Úředník závazků**, **Manažer závazků**, **Úředník centralizovaných plateb závazků** a **Úředník plateb závazků** – Těmto rolím je přiřazeno funkční oprávnění Dotázat se na stav faktury dodavatele.</span><span class="sxs-lookup"><span data-stu-id="efc9c-253">**Accounts payable clerk**, **Accounts payable manager**, **Accounts payable centralized payments clerk**, and **Accounts payable payments clerk** – The Inquire into vendor invoice status duty is assigned to these roles.</span></span>
+
+### <a name="invoice-exception-details-page"></a><span data-ttu-id="efc9c-254">Stránka podrobností o výjimce faktury</span><span class="sxs-lookup"><span data-stu-id="efc9c-254">Invoice exception details page</span></span>
+
+<span data-ttu-id="efc9c-255">Následující oprávnění poskytují přístup jen ke čtení nebo přístup pro čtení a zápis k prohlížeči příloh pro zvýrazněný blok a akce anotací.</span><span class="sxs-lookup"><span data-stu-id="efc9c-255">The following privileges provide ready-only access or read/write access to the attachment viewer for the highlighting, block, and annotation actions.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="efc9c-256">Role, které jsou uvedeny v této části, poskytují z výroby přístup k obrázkům faktury v prohlížeči příloh jen pro čtení.</span><span class="sxs-lookup"><span data-stu-id="efc9c-256">Out of the box, the roles that are mentioned in this section provide read-only access to the invoice images in the attachment viewer.</span></span> <span data-ttu-id="efc9c-257">Pokud role musí mít také přístup pro zápis do obrázků, můžete této roli udělit přístup pro zápis pomocí oprávnění a funkčního oprávnění, které jsou zde popsány.</span><span class="sxs-lookup"><span data-stu-id="efc9c-257">If a role must also have write access to the images, you can grant write access to that role by using the privilege and duty that are described here.</span></span>
+
++ <span data-ttu-id="efc9c-258">**Udržovat obrázek entity záhlaví faktury dodavatele** – toto oprávnění poskytuje přístup pro čtení a zápis k obrázkům faktury v prohlížeči příloh.</span><span class="sxs-lookup"><span data-stu-id="efc9c-258">**Maintain vendor invoice header entity image** – This privilege provides read/write access to the invoice images in the attachment viewer.</span></span>
++ <span data-ttu-id="efc9c-259">**Zobrazit obrázek entity záhlaví faktury dodavatele** – toto oprávnění poskytuje přístup pouze pro čtení k obrázkům faktury v prohlížeči příloh.</span><span class="sxs-lookup"><span data-stu-id="efc9c-259">**View vendor invoice header entity image** – This privilege provides read-only view to the invoice image in the attachment viewer.</span></span>
+
+<span data-ttu-id="efc9c-260">Následující funkční oprávnění poskytují přístup jen pro čtení k prohlížeči příloh pro tyto akce:</span><span class="sxs-lookup"><span data-stu-id="efc9c-260">The following duties provide read-only access to the attachment viewer for those actions:</span></span>
+
++ <span data-ttu-id="efc9c-261">**Spravovat faktury dodavatele** – Tomuto funkčnímu oprávnění je přiděleno oprávnění entity záhlaví Spravovat fakturu dodavatele.</span><span class="sxs-lookup"><span data-stu-id="efc9c-261">**Maintain vendor invoices** – The Maintain vendor invoice header entity image privilege is assigned to this duty.</span></span>
+
+<span data-ttu-id="efc9c-262">Následující role poskytují přístup jen pro čtení k prohlížeči příloh pro tyto akce:</span><span class="sxs-lookup"><span data-stu-id="efc9c-262">The following roles provide read-only access to the attachment viewer for those actions:</span></span>
+
++ <span data-ttu-id="efc9c-263">**Úředník závazků** a **Manažer závazků** – Těmto rolím je přiřazeno funkční oprávnění Spravovat faktury dodavatele.</span><span class="sxs-lookup"><span data-stu-id="efc9c-263">**Accounts payable clerk** and **Accounts payable manager** – The Maintain vendor invoices duty is assigned to these roles.</span></span>
+
+<span data-ttu-id="efc9c-264">Pokud role uživatele poskytuje práva pro úpravy na jakékoli stránce, bude mít ve výchozím nastavení uživatel také oprávnění pro úpravy v prohlížeči úprav pro akce zvýraznění, blokování a poznámky.</span><span class="sxs-lookup"><span data-stu-id="efc9c-264">By default, if the user role provides edit rights on any page, the user will also have edit rights on the attachments viewer for the highlighting, block, and annotation actions.</span></span> <span data-ttu-id="efc9c-265">Pokud však existují scénáře, ve kterých by měla mít konkrétní role oprávnění pro úpravy na stránce, ale ne v prohlížeči příloh, příslušná oprávnění v předchozím seznamu lze použít k vyřešení případu použití.</span><span class="sxs-lookup"><span data-stu-id="efc9c-265">However, if there are scenarios where a specific role should have edit rights on the page but not on the attachment viewer, the appropriate privileges from the preceding list can be used to satisfy the use case.</span></span>
 

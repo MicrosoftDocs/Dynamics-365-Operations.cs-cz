@@ -18,321 +18,219 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 52a16be4b07eafb493c7fd7ad52a6d9d1bb9ee89
-ms.openlocfilehash: 77049ba4c9c39cd44f1919b672deaf700b91357d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e886411421fda17bb67f8ecedc1f7f3420e1fa72
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="retail-peripherals-overview"></a>Přehled maloobchodních periferních zařízení
+# <a name="retail-peripherals-overview"></a><span data-ttu-id="7128b-104">Přehled maloobchodních periferních zařízení</span><span class="sxs-lookup"><span data-stu-id="7128b-104">Retail peripherals overview</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Toto téma vysvětluje pojmy související s maloobchodními periferními zařízeními. Popisuje různé způsoby, jakými mohou být periferní zařízení připojena k pokladnímu místu (POS) a komponenty odpovídající za správu připojení k POS.
+<span data-ttu-id="7128b-105">Toto téma vysvětluje pojmy související s maloobchodními periferními zařízeními.</span><span class="sxs-lookup"><span data-stu-id="7128b-105">This topic explains the concepts that are related to retail peripherals.</span></span> <span data-ttu-id="7128b-106">Popisuje různé způsoby, jakými mohou být periferní zařízení připojena k pokladnímu místu (POS) a komponenty odpovídající za správu připojení k POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-106">It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.</span></span>
 
-## <a name="concepts"></a>Koncepty
+## <a name="concepts"></a><span data-ttu-id="7128b-107">Koncepty</span><span class="sxs-lookup"><span data-stu-id="7128b-107">Concepts</span></span>
 
-### <a name="pos-registers"></a>Registry POS
+### <a name="pos-registers"></a><span data-ttu-id="7128b-108">Registry POS</span><span class="sxs-lookup"><span data-stu-id="7128b-108">POS registers</span></span>
 
-Navigace: klikněte na tlačítko **Retail** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Pokladny**. Registr místa prodeje (POS) je entita, která se používá k definování vlastností konkrétní instance POS. Tyto vlastnosti zahrnují hardwarový profil nebo nastavení maloobchodních periferních zařízení, která budou použita na pokladně, obchod, ke kterému je pokladna namapována a vizuální prostředí uživatele, který se k dané pokladně přihlásí.
+<span data-ttu-id="7128b-109">Navigace: klikněte na tlačítko **Retail** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Pokladny**.</span><span class="sxs-lookup"><span data-stu-id="7128b-109">Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.</span></span> <span data-ttu-id="7128b-110">Registr místa prodeje (POS) je entita, která se používá k definování vlastností konkrétní instance POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-110">The point of sale (POS) register is an entity that is used to define the characteristics of a specific instance of the POS.</span></span> <span data-ttu-id="7128b-111">Tyto vlastnosti zahrnují hardwarový profil nebo nastavení maloobchodních periferních zařízení, která budou použita na pokladně, obchod, ke kterému je pokladna namapována a vizuální prostředí uživatele, který se k dané pokladně přihlásí.</span><span class="sxs-lookup"><span data-stu-id="7128b-111">These characteristics include the hardware profile or setup for retail peripherals that will be used at the register, the store that the register is mapped to, and the visual experience for the user who signs in to that register.</span></span>
 
-### <a name="devices"></a>Zařízení
+### <a name="devices"></a><span data-ttu-id="7128b-112">Zařízení</span><span class="sxs-lookup"><span data-stu-id="7128b-112">Devices</span></span>
 
-Navigace: klikněte na tlačítko **Retail** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Zařízení**. Zařízení je entita, která představuje fyzickou instanci zařízení, která je namapována k pokladně POS. Při vytvoření je zařízení mapováno k pokladně POS. Zařízení sleduje informace o tom, kdy dojde k aktivaci pokladny POS, typu používaného klienta a balíčku aplikace, který byl nasazen na konkrétní zařízení. Zařízení lze mapovat na následující typy aplikací: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android a Retail Modern POS – iOS.
+<span data-ttu-id="7128b-113">Navigace: klikněte na tlačítko **Retail** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Zařízení**.</span><span class="sxs-lookup"><span data-stu-id="7128b-113">Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**.</span></span> <span data-ttu-id="7128b-114">Zařízení je entita, která představuje fyzickou instanci zařízení, která je namapována k pokladně POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-114">A device is an entity that represents a physical instance of a device that is mapped to a POS register.</span></span> <span data-ttu-id="7128b-115">Při vytvoření je zařízení mapováno k pokladně POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-115">When a device is created, it’s mapped to a POS register.</span></span> <span data-ttu-id="7128b-116">Zařízení sleduje informace o tom, kdy dojde k aktivaci pokladny POS, typu používaného klienta a balíčku aplikace, který byl nasazen na konkrétní zařízení.</span><span class="sxs-lookup"><span data-stu-id="7128b-116">The device entity tracks information about when a POS register is activated, the type of client that is being used, and the application package that has been deployed to a specific device.</span></span> <span data-ttu-id="7128b-117">Zařízení lze mapovat na následující typy aplikací: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android a Retail Modern POS – iOS.</span><span class="sxs-lookup"><span data-stu-id="7128b-117">Devices can be mapped to the following application types: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android, and Retail Modern POS – iOS.</span></span>
 
-### <a name="retail-modern-pos"></a>Moderní Retail POS
+### <a name="retail-modern-pos"></a><span data-ttu-id="7128b-118">Moderní Retail POS</span><span class="sxs-lookup"><span data-stu-id="7128b-118">Retail Modern POS</span></span>
 
-Modern POS je program POS pro systém Microsoft Windows. Může být nasazen v operačních systémech Windows 10.
+<span data-ttu-id="7128b-119">Modern POS je program POS pro systém Microsoft Windows.</span><span class="sxs-lookup"><span data-stu-id="7128b-119">Modern POS is the POS program for Microsoft Windows.</span></span> <span data-ttu-id="7128b-120">Může být nasazen v operačních systémech Windows 10.</span><span class="sxs-lookup"><span data-stu-id="7128b-120">It can be deployed on Windows 10 operating systems (OSs).</span></span>
 
-### <a name="cloud-pos"></a>Cloud POS
+### <a name="cloud-pos"></a><span data-ttu-id="7128b-121">Cloud POS</span><span class="sxs-lookup"><span data-stu-id="7128b-121">Cloud POS</span></span>
 
-Cloud POS je verze programu Modern POS pro prohlížeč, která je přístupná prostřednictvím webového prohlížeče.
+<span data-ttu-id="7128b-122">Cloud POS je verze programu Modern POS pro prohlížeč, která je přístupná prostřednictvím webového prohlížeče.</span><span class="sxs-lookup"><span data-stu-id="7128b-122">Cloud POS is a browser-based version of the Modern POS program that can be accessed in a web browser.</span></span>
 
-### <a name="modern-pos-for-ios"></a>Modern POS pro iOS
+### <a name="modern-pos-for-ios"></a><span data-ttu-id="7128b-123">Modern POS pro iOS</span><span class="sxs-lookup"><span data-stu-id="7128b-123">Modern POS for iOS</span></span>
 
-Modern POS pro iOS je verze programu Modern POS založená na iOS, kterou lze implementovat na zařízeních se systémem iOS.
+<span data-ttu-id="7128b-124">Modern POS pro iOS je verze programu Modern POS založená na iOS, kterou lze implementovat na zařízeních se systémem iOS.</span><span class="sxs-lookup"><span data-stu-id="7128b-124">Modern POS for iOS is an iOS-based version of the Modern POS program that can be deployed on iOS devices.</span></span>
 
-### <a name="modern-pos-for-android"></a>Modern POS pro Android
+### <a name="modern-pos-for-android"></a><span data-ttu-id="7128b-125">Modern POS pro Android</span><span class="sxs-lookup"><span data-stu-id="7128b-125">Modern POS for Android</span></span>
 
-Modern POS pro Android je verze programu Modern POS založená na Androidu, kterou lze implementovat na zařízeních se systémem Android.
+<span data-ttu-id="7128b-126">Modern POS pro Android je verze programu Modern POS založená na Androidu, kterou lze implementovat na zařízeních se systémem Android.</span><span class="sxs-lookup"><span data-stu-id="7128b-126">Modern POS for Android is an Android-based version of the Modern POS program that can be deployed on Android devices.</span></span>
 
-### <a name="pos-peripherals"></a>Periferní položky POS
+### <a name="pos-peripherals"></a><span data-ttu-id="7128b-127">Periferní položky POS</span><span class="sxs-lookup"><span data-stu-id="7128b-127">POS peripherals</span></span>
 
-Periferní položky POS jsou zařízení, která jsou explicitně podporována pro funkce POS. Tyto periferie jsou obvykle rozděleny do konkrétních tříd. Další informace o těchto třídách naleznete v části Třídy zařízení tohoto tématu.
+<span data-ttu-id="7128b-128">Periferní položky POS jsou zařízení, která jsou explicitně podporována pro funkce POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-128">POS peripherals are devices that are explicitly supported for POS functions.</span></span> <span data-ttu-id="7128b-129">Tyto periferie jsou obvykle rozděleny do konkrétních tříd.</span><span class="sxs-lookup"><span data-stu-id="7128b-129">These peripherals are typically divided into specific classes.</span></span> <span data-ttu-id="7128b-130">Další informace o těchto třídách naleznete v části Třídy zařízení tohoto tématu.</span><span class="sxs-lookup"><span data-stu-id="7128b-130">For more information about these classes, see the “Device classes” section of this topic.</span></span>
 
-### <a name="hardware-station"></a>Hardwarová stanice
+### <a name="hardware-station"></a><span data-ttu-id="7128b-131">Hardwarová stanice</span><span class="sxs-lookup"><span data-stu-id="7128b-131">Hardware station</span></span>
 
-Navigace: klikněte na **Retail** &gt; **Kanály** &gt; **Maloobchody** &gt; **Všechny maloobchody**. Vyberte obchod a potom klikněte na pevnou záložku **Hardwarové stanice**. Nastavení **hardwarové stanice** je nastavení na úrovni kanálu, které slouží k definování instancí, kde bude nasazena maloobchodní periferní logika. Toto nastavení na úrovni kanálů se používá k určení vlastností hardwarové stanice. Slouží také k výpisu hardwarových stanic, které jsou k dispozici pro instanci Modern POS v daném obchodě. Hardwarová stanice je součástí programu Modern POS for Windows. Hardwarovou stanici lze také nasadit nezávisle jako samostatný program Internetové informační služby (IIS) Microsoft. V tomto případě je přístupný prostřednictvím sítě.
+<span data-ttu-id="7128b-132">Navigace: klikněte na **Retail** &gt; **Kanály** &gt; **Maloobchody** &gt; **Všechny maloobchody**.</span><span class="sxs-lookup"><span data-stu-id="7128b-132">Navigation: Click **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**.</span></span> <span data-ttu-id="7128b-133">Vyberte obchod a potom klikněte na pevnou záložku **Hardwarové stanice**.</span><span class="sxs-lookup"><span data-stu-id="7128b-133">Select a store, and then click the **Hardware stations** FastTab.</span></span> <span data-ttu-id="7128b-134">Nastavení **hardwarové stanice** je nastavení na úrovni kanálu, které slouží k definování instancí, kde bude nasazena maloobchodní periferní logika.</span><span class="sxs-lookup"><span data-stu-id="7128b-134">The **Hardware station** setting is a channel-level setting that is used to define instances where the retail peripheral logic will be deployed.</span></span> <span data-ttu-id="7128b-135">Toto nastavení na úrovni kanálů se používá k určení vlastností hardwarové stanice.</span><span class="sxs-lookup"><span data-stu-id="7128b-135">This setting at the channel level is used to determine characteristics of the hardware station.</span></span> <span data-ttu-id="7128b-136">Slouží také k výpisu hardwarových stanic, které jsou k dispozici pro instanci Modern POS v daném obchodě.</span><span class="sxs-lookup"><span data-stu-id="7128b-136">It's also used to list hardware stations that are available for a Modern POS instance in a given store.</span></span> <span data-ttu-id="7128b-137">Hardwarová stanice je součástí programu Modern POS for Windows.</span><span class="sxs-lookup"><span data-stu-id="7128b-137">The hardware station is built into the Modern POS program for Windows.</span></span> <span data-ttu-id="7128b-138">Hardwarovou stanici lze také nasadit nezávisle jako samostatný program Internetové informační služby (IIS) Microsoft.</span><span class="sxs-lookup"><span data-stu-id="7128b-138">The hardware station can also be deployed independently as a stand-alone Microsoft Internet Information Services (IIS) program.</span></span> <span data-ttu-id="7128b-139">V tomto případě je přístupný prostřednictvím sítě.</span><span class="sxs-lookup"><span data-stu-id="7128b-139">In this case, it can be accessed via a network.</span></span>
 
-### <a name="hardware-profile"></a>Profil hardwaru
+### <a name="hardware-profile"></a><span data-ttu-id="7128b-140">Profil hardwaru</span><span class="sxs-lookup"><span data-stu-id="7128b-140">Hardware profile</span></span>
 
-Navigace: klikněte na **Maloobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Hardwarové profily**. Hardwarový profil je seznam zaříení, která jsou nakonfigurována pro pokladnu POS nebo hardwarovou stanici. Hardwarový profil lze přiřadit přímo k pokladně POS nebo k hardwarové stanici.
+<span data-ttu-id="7128b-141">Navigace: klikněte na **Maloobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Hardwarové profily**.</span><span class="sxs-lookup"><span data-stu-id="7128b-141">Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.</span></span> <span data-ttu-id="7128b-142">Hardwarový profil je seznam zaříení, která jsou nakonfigurována pro pokladnu POS nebo hardwarovou stanici.</span><span class="sxs-lookup"><span data-stu-id="7128b-142">The hardware profile is a list of devices that are configured for a POS register or a hardware station.</span></span> <span data-ttu-id="7128b-143">Hardwarový profil lze přiřadit přímo k pokladně POS nebo k hardwarové stanici.</span><span class="sxs-lookup"><span data-stu-id="7128b-143">The hardware profile can be mapped directly to a POS register or a hardware station.</span></span>
 
-## <a name="devices-classes"></a>Třídy zařízení
-Periferie POS jsou obvykle rozděleny do tříd. Tato část popisuje a poskytuje přehled zařízení, která podporuje Modern POS.
+## <a name="devices-classes"></a><span data-ttu-id="7128b-144">Třídy zařízení</span><span class="sxs-lookup"><span data-stu-id="7128b-144">Devices classes</span></span>
+<span data-ttu-id="7128b-145">Periferie POS jsou obvykle rozděleny do tříd.</span><span class="sxs-lookup"><span data-stu-id="7128b-145">POS peripherals are typically divided into classes.</span></span> <span data-ttu-id="7128b-146">Tato část popisuje a poskytuje přehled zařízení, která podporuje Modern POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-146">This section describes and gives an overview of the devices that Modern POS supports.</span></span>
 
-### <a name="printer"></a>Tiskárna
+### <a name="printer"></a><span data-ttu-id="7128b-147">Tiskárna</span><span class="sxs-lookup"><span data-stu-id="7128b-147">Printer</span></span>
 
-Tiskárny jsou tradiční tiskárny stvrzenek POS a tiskárny celých stránek. Tiskárny jsou podporovány prostřednictvím Object Linking and Embedding Retail POS (OPOS) a rozhraní ovladačů Microsoft Windows. Současně lze použít maximálně dvě tiskárny. Tato funkce umožňuje podporu scénářů, kdy se stvrzenky cash-and-carry pro zákazníky tisknou na tiskárnách strvzenek, zatímco objednávky zákazníků, které obsahují více informací, se tisknou na celostránkových tiskárnách. Tiskárny stvrzenek mohou být připojeny přímo k počítači pomocí USB, připojeny k síti přes Ethernet nebo připojeny přes Bluetooth.
+<span data-ttu-id="7128b-148">Tiskárny jsou tradiční tiskárny stvrzenek POS a tiskárny celých stránek.</span><span class="sxs-lookup"><span data-stu-id="7128b-148">Printers include traditional POS receipt printers and full-page printers.</span></span> <span data-ttu-id="7128b-149">Tiskárny jsou podporovány prostřednictvím Object Linking and Embedding Retail POS (OPOS) a rozhraní ovladačů Microsoft Windows.</span><span class="sxs-lookup"><span data-stu-id="7128b-149">Printer are supported through Object Linking and Embedding for Retail POS (OPOS) and Microsoft Windows driver interfaces.</span></span> <span data-ttu-id="7128b-150">Současně lze použít maximálně dvě tiskárny.</span><span class="sxs-lookup"><span data-stu-id="7128b-150">Up to two printers can be used at the same time.</span></span> <span data-ttu-id="7128b-151">Tato funkce umožňuje podporu scénářů, kdy se stvrzenky cash-and-carry pro zákazníky tisknou na tiskárnách strvzenek, zatímco objednávky zákazníků, které obsahují více informací, se tisknou na celostránkových tiskárnách.</span><span class="sxs-lookup"><span data-stu-id="7128b-151">This capability supports scenarios where cash-and-carry customer receipts are printed on receipt printers, whereas customer orders, which carry more information, are printed on a full-page printer.</span></span> <span data-ttu-id="7128b-152">Tiskárny stvrzenek mohou být připojeny přímo k počítači pomocí USB, připojeny k síti přes Ethernet nebo připojeny přes Bluetooth.</span><span class="sxs-lookup"><span data-stu-id="7128b-152">Receipt printers can be connected directly to a computer via USB, connected to a network via Ethernet, or connected via Bluetooth.</span></span>
 
-### <a name="scanner"></a>Skener
+### <a name="scanner"></a><span data-ttu-id="7128b-153">Skener</span><span class="sxs-lookup"><span data-stu-id="7128b-153">Scanner</span></span>
 
-Současně lze používat maximálně dva skenery čárových kódů. Tato funkce podporuje scénáře, kdy je nějaký skener, který je mobilnější, potřebný ke skenování velkých nebo těžkých položek, zatímco pevně uložený skener se používá pro většinu položek standardní velikosti pro urychlení doby rezervace. Skenery mohou být podporovány prostřednictvím OPOS, Universal Windows Platform (UWP) nebo rozhraní platebního terminálu klávesnice. Pro připojení skeneru k počítači lze použít USB nebo Bluetooth.
+<span data-ttu-id="7128b-154">Současně lze používat maximálně dva skenery čárových kódů.</span><span class="sxs-lookup"><span data-stu-id="7128b-154">Up to two bar code scanners can be used at the same time.</span></span> <span data-ttu-id="7128b-155">Tato funkce podporuje scénáře, kdy je nějaký skener, který je mobilnější, potřebný ke skenování velkých nebo těžkých položek, zatímco pevně uložený skener se používá pro většinu položek standardní velikosti pro urychlení doby rezervace.</span><span class="sxs-lookup"><span data-stu-id="7128b-155">This capability supports scenarios where a scanner that is more mobile is required in order to scan large or heavy items, whereas a fixed embedded scanner is used for most standard-sized items, to speed up checkout times.</span></span> <span data-ttu-id="7128b-156">Skenery mohou být podporovány prostřednictvím OPOS, Universal Windows Platform (UWP) nebo rozhraní platebního terminálu klávesnice.</span><span class="sxs-lookup"><span data-stu-id="7128b-156">Scanners can be supported through OPOS, Universal Windows Platform (UWP), or keyboard wedge interfaces.</span></span> <span data-ttu-id="7128b-157">Pro připojení skeneru k počítači lze použít USB nebo Bluetooth.</span><span class="sxs-lookup"><span data-stu-id="7128b-157">USB or Bluetooth can be used to connect a scanner to a computer.</span></span>
 
-### <a name="msr"></a>MSR
+### <a name="msr"></a><span data-ttu-id="7128b-158">MSR</span><span class="sxs-lookup"><span data-stu-id="7128b-158">MSR</span></span>
 
-Jednu USB čtečku magnetického proužku (MSR) lze nastavit pomocí ovladačů OPOS. Pokud chcete použít samostatnou čtečku MSR pro platební transakce elektronického převodu peněžních prostředků, musí být čtečka MSR spravována konektorem platby. Samostatné čtečky MSR lze použít pro věrnostní položku zákazníka, přihlášení zaměstnance a položku dárkového poukazu nezávisle na konektoru platby.
+<span data-ttu-id="7128b-159">Jednu USB čtečku magnetického proužku (MSR) lze nastavit pomocí ovladačů OPOS.</span><span class="sxs-lookup"><span data-stu-id="7128b-159">One USB magnetic stripe reader (MSR) can be set up by using OPOS drivers.</span></span> <span data-ttu-id="7128b-160">Pokud chcete použít samostatnou čtečku MSR pro platební transakce elektronického převodu peněžních prostředků, musí být čtečka MSR spravována konektorem platby.</span><span class="sxs-lookup"><span data-stu-id="7128b-160">If you want to use a stand-alone MSR for electronic funds transfer (EFT) payment transactions, the MSR must be managed by a payment connector.</span></span> <span data-ttu-id="7128b-161">Samostatné čtečky MSR lze použít pro věrnostní položku zákazníka, přihlášení zaměstnance a položku dárkového poukazu nezávisle na konektoru platby.</span><span class="sxs-lookup"><span data-stu-id="7128b-161">Stand-alone MSRs can be used for customer loyalty entry, employee sign-in, and gift card entry, independently of the payment connector.</span></span>
 
-### <a name="cash-drawer"></a>Zásuvka s hotovostí
+### <a name="cash-drawer"></a><span data-ttu-id="7128b-162">Zásuvka s hotovostí</span><span class="sxs-lookup"><span data-stu-id="7128b-162">Cash drawer</span></span>
 
-Na jeden profil hardwaru mohou být podporovány dvě zásuvky s hotovostí. Tato funkce umožňuje, aby jedné pokladně byly současně k dispozici dvě aktivní směny. V případě sdílené směny nebo v případě zásuvky s hotovostí, která je používána více mobilními zařízeními POS současně, je povolena pouze jedna zásuvka na jeden hardwarový profil. Zásuvky s hotovostí mohou být připojeny přímo k počítači pomocí USB, připojeny k síti nebo připojeny k tiskárně stvrzenek prostřednictvím rozhraní RJ12. V některých případech mohou být zásuvky s hotovostí připojeny také přes Bluetooth.
+<span data-ttu-id="7128b-163">Na jeden profil hardwaru mohou být podporovány dvě zásuvky s hotovostí.</span><span class="sxs-lookup"><span data-stu-id="7128b-163">Two cash drawers can be supported per hardware profile.</span></span> <span data-ttu-id="7128b-164">Tato funkce umožňuje, aby jedné pokladně byly současně k dispozici dvě aktivní směny.</span><span class="sxs-lookup"><span data-stu-id="7128b-164">This capability enables two active shifts per register to be available at the same time.</span></span> <span data-ttu-id="7128b-165">V případě sdílené směny nebo v případě zásuvky s hotovostí, která je používána více mobilními zařízeními POS současně, je povolena pouze jedna zásuvka na jeden hardwarový profil.</span><span class="sxs-lookup"><span data-stu-id="7128b-165">In the case of a shared shift, or a cash drawer that is used by multiple mobile POS devices at the same time, only one cash drawer is allowed per hardware profile.</span></span> <span data-ttu-id="7128b-166">Zásuvky s hotovostí mohou být připojeny přímo k počítači pomocí USB, připojeny k síti nebo připojeny k tiskárně stvrzenek prostřednictvím rozhraní RJ12.</span><span class="sxs-lookup"><span data-stu-id="7128b-166">Cash drawers can be connected directly to a computer via USB, connected to a network, or connected to a receipt printer via an RJ12 interface.</span></span> <span data-ttu-id="7128b-167">V některých případech mohou být zásuvky s hotovostí připojeny také přes Bluetooth.</span><span class="sxs-lookup"><span data-stu-id="7128b-167">In some cases, cash drawers can also be connected via Bluetooth.</span></span>
 
-### <a name="line-display"></a>Řádkový displej
+### <a name="line-display"></a><span data-ttu-id="7128b-168">Řádkový displej</span><span class="sxs-lookup"><span data-stu-id="7128b-168">Line display</span></span>
 
-Řádkové displeje slouží k zobrazení produktů, částek transakcí a dalších užitečných informací zákazníkovi během transakce. K počítači lze prostřednictvím USB pomocí ovladače OPOS připojit jeden řádkový displej.
+<span data-ttu-id="7128b-169">Řádkové displeje slouží k zobrazení produktů, částek transakcí a dalších užitečných informací zákazníkovi během transakce.</span><span class="sxs-lookup"><span data-stu-id="7128b-169">Line displays are used to show products, transaction balances, and other useful information to the customer during a transaction.</span></span> <span data-ttu-id="7128b-170">K počítači lze prostřednictvím USB pomocí ovladače OPOS připojit jeden řádkový displej.</span><span class="sxs-lookup"><span data-stu-id="7128b-170">One line display can be connected to the computer via USB by using OPOS drivers.</span></span>
 
-### <a name="signature-capture"></a>Zaznamenání podpisu
+### <a name="signature-capture"></a><span data-ttu-id="7128b-171">Zaznamenání podpisu</span><span class="sxs-lookup"><span data-stu-id="7128b-171">Signature capture</span></span>
 
-K počítači lze přes USB pomocí ovladače OPOS přímo připojit zařízení zaznamenání podpisu. Když bude nakonfigurován odběr podpisů, zákazník bude vyzván, aby se na zařízení podepsal. Po dodání podpisu bude podpis zobrazen pokladníkovi k přijetí.
+<span data-ttu-id="7128b-172">K počítači lze přes USB pomocí ovladače OPOS přímo připojit zařízení zaznamenání podpisu.</span><span class="sxs-lookup"><span data-stu-id="7128b-172">Signature capture devices can be connected directly to a computer via USB by using OPOS drivers.</span></span> <span data-ttu-id="7128b-173">Když bude nakonfigurován odběr podpisů, zákazník bude vyzván, aby se na zařízení podepsal.</span><span class="sxs-lookup"><span data-stu-id="7128b-173">When signature capture is configured, the customer is prompted to sign on the device.</span></span> <span data-ttu-id="7128b-174">Po dodání podpisu bude podpis zobrazen pokladníkovi k přijetí.</span><span class="sxs-lookup"><span data-stu-id="7128b-174">After the signature is provided, it's shown to the cashier for acceptance.</span></span>
 
-### <a name="scale"></a>Měřítko
+### <a name="scale"></a><span data-ttu-id="7128b-175">Měřítko</span><span class="sxs-lookup"><span data-stu-id="7128b-175">Scale</span></span>
 
-K počítači lze přes USP pomocí ovladače OPOS připojit váhu. Když bude k transakci přidán produkt označený jako "Vážený" produkt, POS odečte z váhy jeho hmotnost, přidá produkt k transakci a použije množství, které dodala váha.
+<span data-ttu-id="7128b-176">K počítači lze přes USP pomocí ovladače OPOS připojit váhu.</span><span class="sxs-lookup"><span data-stu-id="7128b-176">Scales can be connected to the computer via USP by using OPOS drivers.</span></span> <span data-ttu-id="7128b-177">Když bude k transakci přidán produkt označený jako "Vážený" produkt, POS odečte z váhy jeho hmotnost, přidá produkt k transakci a použije množství, které dodala váha.</span><span class="sxs-lookup"><span data-stu-id="7128b-177">When a product that is marked as a “Weighed” product is added to a transaction, the POS reads the weight from the scale, adds the product to the transaction, and uses the quantity that the scale provided.</span></span>
 
-### <a name="pin-pad"></a>Klávesnice pro kód PIN
+### <a name="pin-pad"></a><span data-ttu-id="7128b-178">Klávesnice pro kód PIN</span><span class="sxs-lookup"><span data-stu-id="7128b-178">PIN pad</span></span>
 
-Vložky na osobní identifikační číslo (PIN) jsou podporovány prostřednictvím OPOS, ale musí být spravovány prostřednictvím platebního konektoru.
+<span data-ttu-id="7128b-179">Vložky na osobní identifikační číslo (PIN) jsou podporovány prostřednictvím OPOS, ale musí být spravovány prostřednictvím platebního konektoru.</span><span class="sxs-lookup"><span data-stu-id="7128b-179">Personal identification number (PIN) pads are supported through OPOS, but they must be managed via a payment connector.</span></span>
 
-### <a name="secondary-display"></a>Sekundární displej
+### <a name="secondary-display"></a><span data-ttu-id="7128b-180">Sekundární displej</span><span class="sxs-lookup"><span data-stu-id="7128b-180">Secondary display</span></span>
 
-Je-li nakonfigurován sekundární displej, bude k zobrazení základních informací používán displej Windows číslo 2. Účelem sekundárního displeje je podporovat rozšíření nezávislého dodavatele softwaru (ISV), protože sekundární displej nelze okamžitě konfigurovat a zobrazuje omezený obsah.
+<span data-ttu-id="7128b-181">Je-li nakonfigurován sekundární displej, bude k zobrazení základních informací používán displej Windows číslo 2.</span><span class="sxs-lookup"><span data-stu-id="7128b-181">When a secondary display is configured, the number 2 Windows display is used to show basic information.</span></span> <span data-ttu-id="7128b-182">Účelem sekundárního displeje je podporovat rozšíření nezávislého dodavatele softwaru (ISV), protože sekundární displej nelze okamžitě konfigurovat a zobrazuje omezený obsah.</span><span class="sxs-lookup"><span data-stu-id="7128b-182">The purpose of the secondary display is to support independent software vendor (ISV) extension, because out of the box, the secondary display isn't configurable and shows limited content.</span></span>
 
-### <a name="payment-device"></a>Platební zařízení
+### <a name="payment-device"></a><span data-ttu-id="7128b-183">Platební zařízení</span><span class="sxs-lookup"><span data-stu-id="7128b-183">Payment device</span></span>
 
-Podpora platebního zařízení je implementována prostřednictvím platebního konektoru. Platební zařízení mohou provádět jednu nebo mnoho funkcí, které poskytují jiné třídy zařízení. Platební zařízení může například pracovat jako čtečka MSR/karet, řádkový displej, zařízení k odběru podpisů, nebo jako klávesnice na kódy PIN. Podpora pro platební zařízení je zavedena nezávisle na podpoře samostatných zařízení, která je k dispozici pro další zařízení, která jsou součástí hardwarového profilu.
+<span data-ttu-id="7128b-184">Podpora platebního zařízení je implementována prostřednictvím platebního konektoru.</span><span class="sxs-lookup"><span data-stu-id="7128b-184">Payment device support is implemented through the payment connector.</span></span> <span data-ttu-id="7128b-185">Platební zařízení mohou provádět jednu nebo mnoho funkcí, které poskytují jiné třídy zařízení.</span><span class="sxs-lookup"><span data-stu-id="7128b-185">Payment devices can perform one or many of the functions that other device classes provide.</span></span> <span data-ttu-id="7128b-186">Platební zařízení může například pracovat jako čtečka MSR/karet, řádkový displej, zařízení k odběru podpisů, nebo jako klávesnice na kódy PIN.</span><span class="sxs-lookup"><span data-stu-id="7128b-186">For example, a payment device can function as an MSR/card reader, line display, signature capture device, or PIN pad.</span></span> <span data-ttu-id="7128b-187">Podpora pro platební zařízení je zavedena nezávisle na podpoře samostatných zařízení, která je k dispozici pro další zařízení, která jsou součástí hardwarového profilu.</span><span class="sxs-lookup"><span data-stu-id="7128b-187">Support for payment devices is implemented independently of the stand-alone device support that is provided for other devices that are included in the hardware profile.</span></span>
 
-## <a name="supported-interfaces"></a>Podporovaná rozhraní
-### <a name="opos"></a>OPOS
+## <a name="supported-interfaces"></a><span data-ttu-id="7128b-188">Podporovaná rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-188">Supported interfaces</span></span>
+### <a name="opos"></a><span data-ttu-id="7128b-189">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-189">OPOS</span></span>
 
-Aby bylo možno zaručit, že spolu s aplikací Microsoft Dynamics 365 for Operations - Retail bude možné používat co nejširší škálu zařízení, je primární platformou pro maloobchodní periferní zařízení podporovanou aplikací Microsoft Dynamics 365 for Retail průmyslový standard OLE pro POS. Standard OLE pro POS byl vytvořen Národní maloobchodní federací (National Retail Federation, NRF), která stanovuje standardní komunikační protokoly pro maloobchodní periferní zařízení. OPOS je široce přijímaná implementace standardu OLE pro POS. Byla vyvinuta v polovině 90. let 20. století a od té doby několikrát aktualizována. OPOS poskytuje architekturu ovladačů zařízení, která umožňuje snadnou integraci hardwaru POS se systémy POS založenými na Windows. OPOS řídí zpracování komunikace mezi kompatibilním hardwarem a mezi softwarem POS. Ovládací prvek OPOS se skládá ze dvou částí:
+<span data-ttu-id="7128b-190">Aby bylo možno zaručit, že spolu s aplikací Microsoft Dynamics 365 for Operations - Retail bude možné používat co nejširší škálu zařízení, je primární platformou pro maloobchodní periferní zařízení podporovanou aplikací Microsoft Dynamics 365 for Retail průmyslový standard OLE pro POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-190">To help guarantee that the largest range of devices can be used with Microsoft Dynamics 365 for Retail, the OLE for POS industry standard is the primary retail peripheral device platform that is supported in Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="7128b-191">Standard OLE pro POS byl vytvořen Národní maloobchodní federací (National Retail Federation, NRF), která stanovuje standardní komunikační protokoly pro maloobchodní periferní zařízení.</span><span class="sxs-lookup"><span data-stu-id="7128b-191">The OLE for POS standard was produced by the National Retail Federation (NRF), which establishes industry-standard communication protocols for retail peripheral devices.</span></span> <span data-ttu-id="7128b-192">OPOS je široce přijímaná implementace standardu OLE pro POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-192">OPOS is a widely adopted implementation of the OLE for POS standard.</span></span> <span data-ttu-id="7128b-193">Byla vyvinuta v polovině 90. let 20. století a od té doby několikrát aktualizována.</span><span class="sxs-lookup"><span data-stu-id="7128b-193">It was developed in the mid-1990s and has been updated several times since then.</span></span> <span data-ttu-id="7128b-194">OPOS poskytuje architekturu ovladačů zařízení, která umožňuje snadnou integraci hardwaru POS se systémy POS založenými na Windows.</span><span class="sxs-lookup"><span data-stu-id="7128b-194">OPOS provides a device driver architecture that enables easy integration of POS hardware with Windows–based POS systems.</span></span> <span data-ttu-id="7128b-195">OPOS řídí zpracování komunikace mezi kompatibilním hardwarem a mezi softwarem POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-195">OPOS controls handle communication between compatible hardware and the POS software.</span></span> <span data-ttu-id="7128b-196">Ovládací prvek OPOS se skládá ze dvou částí:</span><span class="sxs-lookup"><span data-stu-id="7128b-196">An OPOS control consists of two parts:</span></span>
 
--   **Objekt ovládacího prvku** – objekt ovládacího prvku pro určitou třídu zařízení (jako například řádkový displej) poskytuje rozhraní pro softwarový program. Konzultační služby Monroe (Monroe Consulting Services, [www.monroecs.com](http://www.monroecs.com/)) je společnost, která poskytuje standardizovanou sadu ovládacích prvků řízení OPOS, které jsou označovány jako objekty společných ovládacích prvků (Common Control Objects, CCO). CCO se používají k testování komponenty POS u Microsoft Dynamics 365 for Retail. Proto testování pomáhá zaručit, aby, pokud Microsoft Dynamics 365 for Retail podporuje nějakou třídu zařízení prostřednictvím OPOS, mohlo být podporováno mnoho typů zařízení za předpokladu, že výrobce dodává servisní objekt určený pro OPOS. Není nutné explicitně testovat každý typ zařízení.
--   **Objekt služby** – objekt služby zajišťuje komunikaci mezi objektem ovládacího prvku (CCO) a zařízením. Objekt služby pro nějaké zařízení obvykle pochází od výrobce zařízení. V některých případech však bude pravděpodobně nutné stáhnout objekt služby z webu výrobce. Například může být k dispozici novější objekt služby. Adresu webu výrobce najdete v dokumentaci k hardwaru.
+-   <span data-ttu-id="7128b-197">**Objekt ovládacího prvku** – objekt ovládacího prvku pro určitou třídu zařízení (jako například řádkový displej) poskytuje rozhraní pro softwarový program.</span><span class="sxs-lookup"><span data-stu-id="7128b-197">**Control object** – The control object for a device class (such as line displays) provides the interface for the software program.</span></span> <span data-ttu-id="7128b-198">Konzultační služby Monroe (Monroe Consulting Services, [www.monroecs.com](http://www.monroecs.com/)) je společnost, která poskytuje standardizovanou sadu ovládacích prvků řízení OPOS, které jsou označovány jako objekty společných ovládacích prvků (Common Control Objects, CCO).</span><span class="sxs-lookup"><span data-stu-id="7128b-198">Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) provides a standardized set of OPOS control objects that are known as the common control objects (CCOs).</span></span> <span data-ttu-id="7128b-199">CCO se používají k testování komponenty POS u Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="7128b-199">The CCOs are used to test the POS component of Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="7128b-200">Proto testování pomáhá zaručit, aby, pokud Microsoft Dynamics 365 for Retail podporuje nějakou třídu zařízení prostřednictvím OPOS, mohlo být podporováno mnoho typů zařízení za předpokladu, že výrobce dodává servisní objekt určený pro OPOS.</span><span class="sxs-lookup"><span data-stu-id="7128b-200">Therefore, the testing helps guarantee that, if Microsoft Dynamics 365 for Retail supports a device class through OPOS, many device types can be supported, provided that the manufacturer provides a service object that is built for OPOS.</span></span> <span data-ttu-id="7128b-201">Není nutné explicitně testovat každý typ zařízení.</span><span class="sxs-lookup"><span data-stu-id="7128b-201">You don't have to explicitly test each device type.</span></span>
+-   <span data-ttu-id="7128b-202">**Objekt služby** – objekt služby zajišťuje komunikaci mezi objektem ovládacího prvku (CCO) a zařízením.</span><span class="sxs-lookup"><span data-stu-id="7128b-202">**Service object** – The service object provides communication between the control object (CCO) and the device.</span></span> <span data-ttu-id="7128b-203">Objekt služby pro nějaké zařízení obvykle pochází od výrobce zařízení.</span><span class="sxs-lookup"><span data-stu-id="7128b-203">Typically, the service object for a device is provided by the device manufacturer.</span></span> <span data-ttu-id="7128b-204">V některých případech však bude pravděpodobně nutné stáhnout objekt služby z webu výrobce.</span><span class="sxs-lookup"><span data-stu-id="7128b-204">However, in some cases, you might have to download the service object from the manufacturer’s website.</span></span> <span data-ttu-id="7128b-205">Například může být k dispozici novější objekt služby.</span><span class="sxs-lookup"><span data-stu-id="7128b-205">For example, a more recent service object might be available.</span></span> <span data-ttu-id="7128b-206">Adresu webu výrobce najdete v dokumentaci k hardwaru.</span><span class="sxs-lookup"><span data-stu-id="7128b-206">To find the address of the manufacturer's website, see your hardware documentation.</span></span>
 
-[![Ovládací prvek objektu a objekt služby](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Podpora pro implementaci OPOS OLE pro POS pomáhá zaručit aby, v případě, že výrobci zařízení a vydavatelé POS standard správně implementují, mohly pokladní systémy a podporovaná zařízení řádně spolupracovat, i kdyby nebyly nejprve společně otestovány. **Poznámka:** Podpora OPOS nezaručuje podporu pro všechna zařízení, která mají ovladače OPOS. Microsoft Dynamics 365 for Retail musí nejprve podporovat tento typ zařízení nebo třídy prostřednictvím OPOS. Kromě toho objekty služby nemusí být vždy aktuální s nejnovější verzí CCO. Měli byste také pamatovat na to, že kvalita objektů služby bývá obecně různá.
+<span data-ttu-id="7128b-207">[![Ovládací prvek objektu a objekt služby](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Podpora pro implementaci OPOS OLE pro POS pomáhá zaručit aby, v případě, že výrobci zařízení a vydavatelé POS standard správně implementují, mohly pokladní systémy a podporovaná zařízení řádně spolupracovat, i kdyby nebyly nejprve společně otestovány.</span><span class="sxs-lookup"><span data-stu-id="7128b-207">[![Control object and service object](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Support for the OPOS implementation of OLE for POS helps guarantee that, if the device manufacturers and POS publishers implement the standard correctly, POS systems and supported devices can work together, even if they weren't previously tested together.</span></span> <span data-ttu-id="7128b-208">**Poznámka:** Podpora OPOS nezaručuje podporu pro všechna zařízení, která mají ovladače OPOS.</span><span class="sxs-lookup"><span data-stu-id="7128b-208">**Note:** OPOS support doesn't guarantee support for all devices that have OPOS drivers.</span></span> <span data-ttu-id="7128b-209">Microsoft Dynamics 365 for Retail musí nejprve podporovat tento typ zařízení nebo třídy prostřednictvím OPOS.</span><span class="sxs-lookup"><span data-stu-id="7128b-209">Microsoft Dynamics 365 for Retail must first support that device type, or class, through OPOS.</span></span> <span data-ttu-id="7128b-210">Kromě toho objekty služby nemusí být vždy aktuální s nejnovější verzí CCO.</span><span class="sxs-lookup"><span data-stu-id="7128b-210">In addition, service objects might not always be up to date with the latest version of the CCOs.</span></span> <span data-ttu-id="7128b-211">Měli byste také pamatovat na to, že kvalita objektů služby bývá obecně různá.</span><span class="sxs-lookup"><span data-stu-id="7128b-211">You should also be aware that, in general, the quality of service objects varies.</span></span>
 
-### <a name="windows"></a>Windows
+### <a name="windows"></a><span data-ttu-id="7128b-212">Windows</span><span class="sxs-lookup"><span data-stu-id="7128b-212">Windows</span></span>
 
-Tisk účtenky v POS je optimalizován pro OPOS. OPOS má tendenci být mnohem rychlejší než tisk pomocí systému Windows. Je tedy vhodné použít OPOS, zejména v maloobchodním prostředí, kde jsou tištěny účtenky se 40 sloupci a časy transakcí musí být rychlé. U většiny zařízení budete používat ovládací prvky OPOS. Některé tiskárny účtenek OPOS podporují také ovladače systému Windows. Pomocí ovladače pro Windows můžete získat přístup k nejnovějším písmům a jednu tiskárnu zařadit do sítě pro více pokladen. Použití ovladačů systému Windows má však také nevýhody. Následuje několik příkladů těchto nevýhod:
+<span data-ttu-id="7128b-213">Tisk účtenky v POS je optimalizován pro OPOS.</span><span class="sxs-lookup"><span data-stu-id="7128b-213">Receipt printing at the POS is optimized for OPOS.</span></span> <span data-ttu-id="7128b-214">OPOS má tendenci být mnohem rychlejší než tisk pomocí systému Windows.</span><span class="sxs-lookup"><span data-stu-id="7128b-214">OPOS tends to be much faster than printing through Windows.</span></span> <span data-ttu-id="7128b-215">Je tedy vhodné použít OPOS, zejména v maloobchodním prostředí, kde jsou tištěny účtenky se 40 sloupci a časy transakcí musí být rychlé.</span><span class="sxs-lookup"><span data-stu-id="7128b-215">Therefore, it's a good idea to use OPOS, especially in retail environments where 40-column receipts are printed and transaction times must be fast.</span></span> <span data-ttu-id="7128b-216">U většiny zařízení budete používat ovládací prvky OPOS.</span><span class="sxs-lookup"><span data-stu-id="7128b-216">For most devices, you will use OPOS controls.</span></span> <span data-ttu-id="7128b-217">Některé tiskárny účtenek OPOS podporují také ovladače systému Windows.</span><span class="sxs-lookup"><span data-stu-id="7128b-217">However, some OPOS receipt printers also support Windows drivers.</span></span> <span data-ttu-id="7128b-218">Pomocí ovladače pro Windows můžete získat přístup k nejnovějším písmům a jednu tiskárnu zařadit do sítě pro více pokladen.</span><span class="sxs-lookup"><span data-stu-id="7128b-218">By using a Windows driver, you can access the latest fonts and network one printer for multiple registers.</span></span> <span data-ttu-id="7128b-219">Použití ovladačů systému Windows má však také nevýhody.</span><span class="sxs-lookup"><span data-stu-id="7128b-219">However, there are drawbacks to using Windows drivers.</span></span> <span data-ttu-id="7128b-220">Následuje několik příkladů těchto nevýhod:</span><span class="sxs-lookup"><span data-stu-id="7128b-220">Here are some examples of these drawbacks:</span></span>
 
--   Při použití ovladačů Windows jsou obrázky před vytištěním vykreslovány. Tisk proto bývá pomalejší než u tiskáren, které používají ovládací prvky OPOS.
--   Zařízení, která jsou připojena prostřednictvím tiskárny („sériově“), nemusí při použití ovladače Windows správně fungovat. Například by se zásuvka s hotovostí nemusela otevřít nebo by tiskárna dokladů nemusela fungovat, jak má.
--   OPOS podporuje také rozsáhlejší sadu proměnných, které jsou specifické pro maloobchodní tiskárny účtenek, jako například řezání papíru nebo tisk účtenek.
+-   <span data-ttu-id="7128b-221">Při použití ovladačů Windows jsou obrázky před vytištěním vykreslovány.</span><span class="sxs-lookup"><span data-stu-id="7128b-221">When Windows drivers are used, images are rendered before printing occurs.</span></span> <span data-ttu-id="7128b-222">Tisk proto bývá pomalejší než u tiskáren, které používají ovládací prvky OPOS.</span><span class="sxs-lookup"><span data-stu-id="7128b-222">Therefore, printing tends to be slower than it is on printers that use OPOS controls.</span></span>
+-   <span data-ttu-id="7128b-223">Zařízení, která jsou připojena prostřednictvím tiskárny („sériově“), nemusí při použití ovladače Windows správně fungovat.</span><span class="sxs-lookup"><span data-stu-id="7128b-223">Devices that are connected through the printer (“daisy-chained”) might not work correctly when Windows drivers are used.</span></span> <span data-ttu-id="7128b-224">Například by se zásuvka s hotovostí nemusela otevřít nebo by tiskárna dokladů nemusela fungovat, jak má.</span><span class="sxs-lookup"><span data-stu-id="7128b-224">For example, the cash drawer might not open, or the slip printer might not word as you expect.</span></span>
+-   <span data-ttu-id="7128b-225">OPOS podporuje také rozsáhlejší sadu proměnných, které jsou specifické pro maloobchodní tiskárny účtenek, jako například řezání papíru nebo tisk účtenek.</span><span class="sxs-lookup"><span data-stu-id="7128b-225">OPOS also supports a more extensive set of variables that are specific to retail receipt printers, such as paper cutting or slip printing.</span></span>
 
-Pokud budou pro tiskárnu systému Windows, kterou používáte, k dispozici ovládací prvky OPOS, tiskárna by měla s aplikací Microsoft Dynamics 365 for Retail stále pracovat správně.
+<span data-ttu-id="7128b-226">Pokud budou pro tiskárnu systému Windows, kterou používáte, k dispozici ovládací prvky OPOS, tiskárna by měla s aplikací Microsoft Dynamics 365 for Retail stále pracovat správně.</span><span class="sxs-lookup"><span data-stu-id="7128b-226">If OPOS controls are available for the Windows printer that you're using, the printer should still work correctly with Microsoft Dynamics 365 for Retail.</span></span>
 
-### <a name="universal-windows-platform"></a>Univerzální platforma Windows
+### <a name="universal-windows-platform"></a><span data-ttu-id="7128b-227">Univerzální platforma Windows</span><span class="sxs-lookup"><span data-stu-id="7128b-227">Universal Windows Platform</span></span>
 
-UWP se v případě maloobchodních periferních zařízení vztahuje na podporu systému Windows pro zařízení Plug and Play. Zařízení Plug and Play je připojeno k verzi operačního systému Windows, která tento typ zařízení podporuje. K použití zařízení dle způsobu určení není třeba žádný ovladač. Například pokud systém Windows rozpozná zařízení typu reproduktor Bluetooth, operační systém ví, že zařízení má typ třídy **reproduktor**. A bude s tímto zařízením nakládat jako s reproduktorem. Žádné další nastavení není třeba. V případě zařízení POS lze připojit mnoho zařízení USB a systém Windows je rozpozná jako zařízení standardu HID. Systém však nemusí být schopen určit schopnosti, které toto zařízení poskytuje, protože zařízení neurčuje třídu nebo typ zařízení. V systému Windows 10 byly přidány třídy zařízení pro čtečky čárových kódů a magnetických proužků. Proto pokud se zařízení systému Windows 10 ohlašuje jako zařízení jedné z těchto tříd, Windows bude ve vhodnou dobu naslouchat událostem ze zařízení. Modern POS podporuje UWP čtečky MSR a skenery. Proto když je připraven pro vstup z jednoho z těchto zařízení a bude připojeno zařízení patřící do jedné z těchto tříd, bude možno toto zařízení použít. Například pokud je k počítači s Windows 10 připojena čtečka čárových kódů UWP a je nakonfigurován vstup čárových kódů pro Modern POS, bude čtečka čárových kódů na přihlašovací obrazovce aktivní. Žádné další nastavení není třeba. Do systému Windows jsou přidávány další třídy zařízení UWP obslužných míst. Tyto třídy zahrnují třídy pro zásuvky s hotovostí a tiskárny účtenek. Podpora pro tyto nové třídy zařízení v Modern POS se očekává v brzké době.
+<span data-ttu-id="7128b-228">UWP se v případě maloobchodních periferních zařízení vztahuje na podporu systému Windows pro zařízení Plug and Play.</span><span class="sxs-lookup"><span data-stu-id="7128b-228">UWP, in the case of retail peripherals, is related to Windows support for Plug and Play devices.</span></span> <span data-ttu-id="7128b-229">Zařízení Plug and Play je připojeno k verzi operačního systému Windows, která tento typ zařízení podporuje. K použití zařízení dle způsobu určení není třeba žádný ovladač.</span><span class="sxs-lookup"><span data-stu-id="7128b-229">When a Plug and Play device is connected to a Windows OS version that supports that type of device, no driver is required for the device to be used as intended.</span></span> <span data-ttu-id="7128b-230">Například pokud systém Windows rozpozná zařízení typu reproduktor Bluetooth, operační systém ví, že zařízení má typ třídy **reproduktor**.</span><span class="sxs-lookup"><span data-stu-id="7128b-230">For example, if Windows detects a Bluetooth speaker device, the OS knows that the device has the **Speaker** class type.</span></span> <span data-ttu-id="7128b-231">A bude s tímto zařízením nakládat jako s reproduktorem.</span><span class="sxs-lookup"><span data-stu-id="7128b-231">Therefore, and it treats that device as a speaker.</span></span> <span data-ttu-id="7128b-232">Žádné další nastavení není třeba.</span><span class="sxs-lookup"><span data-stu-id="7128b-232">No additional setup is required.</span></span> <span data-ttu-id="7128b-233">V případě zařízení POS lze připojit mnoho zařízení USB a systém Windows je rozpozná jako zařízení standardu HID.</span><span class="sxs-lookup"><span data-stu-id="7128b-233">In the case of POS devices, many USB devices can be plugged in, and Windows will recognize them as Human Interface Devices (HIDs).</span></span> <span data-ttu-id="7128b-234">Systém však nemusí být schopen určit schopnosti, které toto zařízení poskytuje, protože zařízení neurčuje třídu nebo typ zařízení.</span><span class="sxs-lookup"><span data-stu-id="7128b-234">However, it might not be able to determine the capabilities that the device provides, because the device doesn't specify the class, or type, of device.</span></span> <span data-ttu-id="7128b-235">V systému Windows 10 byly přidány třídy zařízení pro čtečky čárových kódů a magnetických proužků.</span><span class="sxs-lookup"><span data-stu-id="7128b-235">In Windows 10, device classes for bar code scanners and MSRs have been added.</span></span> <span data-ttu-id="7128b-236">Proto pokud se zařízení systému Windows 10 ohlašuje jako zařízení jedné z těchto tříd, Windows bude ve vhodnou dobu naslouchat událostem ze zařízení.</span><span class="sxs-lookup"><span data-stu-id="7128b-236">Therefore, if a device declares itself to Windows 10 as a device of one of these classes, Windows will listen for events from the device at the appropriate times.</span></span> <span data-ttu-id="7128b-237">Modern POS podporuje UWP čtečky MSR a skenery.</span><span class="sxs-lookup"><span data-stu-id="7128b-237">Modern POS supports UWP MSRs and scanners.</span></span> <span data-ttu-id="7128b-238">Proto když je připraven pro vstup z jednoho z těchto zařízení a bude připojeno zařízení patřící do jedné z těchto tříd, bude možno toto zařízení použít.</span><span class="sxs-lookup"><span data-stu-id="7128b-238">Therefore, when it's ready for input from one of these devices, and a device that belongs to one of these classes is connected, the device can be used.</span></span> <span data-ttu-id="7128b-239">Například pokud je k počítači s Windows 10 připojena čtečka čárových kódů UWP a je nakonfigurován vstup čárových kódů pro Modern POS, bude čtečka čárových kódů na přihlašovací obrazovce aktivní.</span><span class="sxs-lookup"><span data-stu-id="7128b-239">For example, if a UWP bar code scanner is plugged into a Windows 10 computer, and bar code sign-in is configured for Modern POS, the bar code scanner will become active on the sign-in screen.</span></span> <span data-ttu-id="7128b-240">Žádné další nastavení není třeba.</span><span class="sxs-lookup"><span data-stu-id="7128b-240">No additional setup is required.</span></span> <span data-ttu-id="7128b-241">Do systému Windows jsou přidávány další třídy zařízení UWP obslužných míst.</span><span class="sxs-lookup"><span data-stu-id="7128b-241">Additional classes of point of service UWP devices are being added to Windows.</span></span> <span data-ttu-id="7128b-242">Tyto třídy zahrnují třídy pro zásuvky s hotovostí a tiskárny účtenek.</span><span class="sxs-lookup"><span data-stu-id="7128b-242">These classes include classes for cash drawers and receipt printers.</span></span> <span data-ttu-id="7128b-243">Podpora pro tyto nové třídy zařízení v Modern POS se očekává v brzké době.</span><span class="sxs-lookup"><span data-stu-id="7128b-243">Support for these new device classes in Modern POS is pending.</span></span>
 
-### <a name="keyboard-wedge"></a>Převodník na signál klávesnice
+### <a name="keyboard-wedge"></a><span data-ttu-id="7128b-244">Převodník na signál klávesnice</span><span class="sxs-lookup"><span data-stu-id="7128b-244">Keyboard wedge</span></span>
 
-Zařízení typu převodníku na signál klávesnice odesílá data do počítače, jako by tato data byla zadána na klávesnici. Proto ve výchozím nastavení obdrží pole, které je aktivní v POS, data z výsledku skenování nebo protahování proužku. V některých případech může toto chování způsobit načtení nesprávného typu dat do nesprávného pole. Například může být čárový kód naskenován do pole, které je určeno k zadání údajů platební karty. V mnoha případech je v POS logika, která určuje, zda data z výsledku skenování nebo protahování proužku jsou čárovým kódm nebo výsledkem protažení karty. Proto jsou pak data zpracována správně. Avšak jsou-li zařízení nastavena jako OPOS a ne jako zařízení typu převodníku na signál klávesnice, existuje větší možnost kontroly nad tím, jak budou data z těchto zařízení využívána, protože je více známo o zařízení, z nějž data pocházejí. Například data ze čtečky čárových kódů budou automaticky rozpoznána jako čárový kód a příslušný záznam v databázi bude nalezen mnohem snadněji a rychleji, než při použití obecného vyhledávacího řetězce, jako je tomu v případě zařízení typu převodníků na signál klávesnice.
+<span data-ttu-id="7128b-245">Zařízení typu převodníku na signál klávesnice odesílá data do počítače, jako by tato data byla zadána na klávesnici.</span><span class="sxs-lookup"><span data-stu-id="7128b-245">Keyboard wedge devices send data to the computer as if that data were typed on a keyboard.</span></span> <span data-ttu-id="7128b-246">Proto ve výchozím nastavení obdrží pole, které je aktivní v POS, data z výsledku skenování nebo protahování proužku.</span><span class="sxs-lookup"><span data-stu-id="7128b-246">Therefore, by default, the field that is active at the POS will receive the data that is scanned or swiped.</span></span> <span data-ttu-id="7128b-247">V některých případech může toto chování způsobit načtení nesprávného typu dat do nesprávného pole.</span><span class="sxs-lookup"><span data-stu-id="7128b-247">In some cases, this behavior can cause the wrong type of data to be scanned into the wrong field.</span></span> <span data-ttu-id="7128b-248">Například může být čárový kód naskenován do pole, které je určeno k zadání údajů platební karty.</span><span class="sxs-lookup"><span data-stu-id="7128b-248">For example, a bar code might be scanned into a field that is intended for input of credit card data.</span></span> <span data-ttu-id="7128b-249">V mnoha případech je v POS logika, která určuje, zda data z výsledku skenování nebo protahování proužku jsou čárovým kódm nebo výsledkem protažení karty.</span><span class="sxs-lookup"><span data-stu-id="7128b-249">In many cases, there is logic at the POS that determines whether the data that is scanned or swiped is a bar code or card swipe.</span></span> <span data-ttu-id="7128b-250">Proto jsou pak data zpracována správně.</span><span class="sxs-lookup"><span data-stu-id="7128b-250">Therefore, the data is handled correctly.</span></span> <span data-ttu-id="7128b-251">Avšak jsou-li zařízení nastavena jako OPOS a ne jako zařízení typu převodníku na signál klávesnice, existuje větší možnost kontroly nad tím, jak budou data z těchto zařízení využívána, protože je více známo o zařízení, z nějž data pocházejí.</span><span class="sxs-lookup"><span data-stu-id="7128b-251">However, when devices are set up as OPOS instead of keyboard wedge devices, there is more control over how the data from those devices can be consumed, because more is “known” about the device that the data originates from.</span></span> <span data-ttu-id="7128b-252">Například data ze čtečky čárových kódů budou automaticky rozpoznána jako čárový kód a příslušný záznam v databázi bude nalezen mnohem snadněji a rychleji, než při použití obecného vyhledávacího řetězce, jako je tomu v případě zařízení typu převodníků na signál klávesnice.</span><span class="sxs-lookup"><span data-stu-id="7128b-252">For example, data from a bar code scanner is automatically recognized as a bar code, and the associated record in the database is found more easily and faster than if a generic string search were used, as in the case of keyboard wedge devices.</span></span>
 
-### <a name="native-printer"></a>Nativní tiskárna
+### <a name="native-printer"></a><span data-ttu-id="7128b-253">Nativní tiskárna</span><span class="sxs-lookup"><span data-stu-id="7128b-253">Native printer</span></span>
 
-Nativní (neboli "Zařízení", jak je tento typ nazýván v hardwarovém profilu) tiskárny lze nakonfigurovat tak, aby zobrazily uživateli výzvu k výběru tiskárny nakonfigurované pro daný počítač. Jestliže je nakonfigurována tiskárna typu **Zařízení**, pak pokud Modern POS narazí příkaz pro tisk, bude uživatel vyzván k výběru tiskárny ze seznamu. Toto chování se liší od chování ovladačů pro systém Windows, protože typ tiskárny **Windows** v hardwarovém profilu nezobrazí seznam tiskáren. Namísto toho vyžadují, aby v poli **Název zařízení** byla uvedena pojmenovaná tiskárna.
+<span data-ttu-id="7128b-254">Nativní (neboli "Zařízení", jak je tento typ nazýván v hardwarovém profilu) tiskárny lze nakonfigurovat tak, aby zobrazily uživateli výzvu k výběru tiskárny nakonfigurované pro daný počítač.</span><span class="sxs-lookup"><span data-stu-id="7128b-254">Native (or "Device" as the type is named in the hardware profile) printers can be configured to prompt the user to select a printer that is configured for the computer.</span></span> <span data-ttu-id="7128b-255">Jestliže je nakonfigurována tiskárna typu **Zařízení**, pak pokud Modern POS narazí příkaz pro tisk, bude uživatel vyzván k výběru tiskárny ze seznamu.</span><span class="sxs-lookup"><span data-stu-id="7128b-255">When a printer of the **Device** type is configured, if Modern POS encounters a print command, the user is prompted to select a printer in a list.</span></span> <span data-ttu-id="7128b-256">Toto chování se liší od chování ovladačů pro systém Windows, protože typ tiskárny **Windows** v hardwarovém profilu nezobrazí seznam tiskáren.</span><span class="sxs-lookup"><span data-stu-id="7128b-256">This behavior differs from the behavior for Windows drivers, because the **Windows** printer type in the hardware profile doesn't show a list of printers.</span></span> <span data-ttu-id="7128b-257">Namísto toho vyžadují, aby v poli **Název zařízení** byla uvedena pojmenovaná tiskárna.</span><span class="sxs-lookup"><span data-stu-id="7128b-257">Instead, it requires that a named printer be provided in the **Device name** field.</span></span>
 
-### <a name="windows"></a>Windows
+### <a name="windows"></a><span data-ttu-id="7128b-258">Windows</span><span class="sxs-lookup"><span data-stu-id="7128b-258">Windows</span></span>
 
-Typ zařízení **Windows** se používá pouze pro tiskárny. Když bude v hardwarovém profilu nakonfigurována tiskárna systému Windows, bude třeba zadat konkrétní název tiskárny. Když se Modern POS setká s tiskovou událostí, pak pokud je nakonfigurována tiskárna systému Windows, bude událost předána zadané tiskárně systému Windows. Uživatel nebude vyzván k výběru tiskárny.
+<span data-ttu-id="7128b-259">Typ zařízení **Windows** se používá pouze pro tiskárny.</span><span class="sxs-lookup"><span data-stu-id="7128b-259">The **Windows** device type is used for printers only.</span></span> <span data-ttu-id="7128b-260">Když bude v hardwarovém profilu nakonfigurována tiskárna systému Windows, bude třeba zadat konkrétní název tiskárny.</span><span class="sxs-lookup"><span data-stu-id="7128b-260">When a Windows printer is configured in the hardware profile, the specific printer name must be provided.</span></span> <span data-ttu-id="7128b-261">Když se Modern POS setká s tiskovou událostí, pak pokud je nakonfigurována tiskárna systému Windows, bude událost předána zadané tiskárně systému Windows.</span><span class="sxs-lookup"><span data-stu-id="7128b-261">When Modern POS encounters print events, if a Windows printer is configured, the event will be passed to the specified Windows printer.</span></span> <span data-ttu-id="7128b-262">Uživatel nebude vyzván k výběru tiskárny.</span><span class="sxs-lookup"><span data-stu-id="7128b-262">The user won't be prompted to select a printer.</span></span>
 
-### <a name="network"></a>Síť
+### <a name="network"></a><span data-ttu-id="7128b-263">Síť</span><span class="sxs-lookup"><span data-stu-id="7128b-263">Network</span></span>
 
-Ze sítě adresovatelné zásuvky s hotovostí, tiskárny účtenek a platební terminály lze používat po síti buďto přímo prostřednictvím hardwarové stanice interprocesní komunikace (Interprocess Communications, IPC), která je integrována do aplikace Modern POS for Windows, nebo prostřednictvím hardwarové stanice služby IIS pro ostatní klienty Modern POS.
+<span data-ttu-id="7128b-264">Ze sítě adresovatelné zásuvky s hotovostí, tiskárny účtenek a platební terminály lze používat po síti buďto přímo prostřednictvím hardwarové stanice interprocesní komunikace (Interprocess Communications, IPC), která je integrována do aplikace Modern POS for Windows, nebo prostřednictvím hardwarové stanice služby IIS pro ostatní klienty Modern POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-264">Network-addressable cash drawers, receipt printers, and payment terminals can be used over a network, either directly through the Interprocess Communications (IPC) hardware station that is built into the Modern POS for Windows application or through the IIS hardware station for other Modern POS clients.</span></span>
 
-## <a name="hardware-station-deployment-options"></a>Možnosti nasazení hardwarové stanice
-### <a name="ipc-built-in"></a>IPC (vestavěný)
+## <a name="hardware-station-deployment-options"></a><span data-ttu-id="7128b-265">Možnosti nasazení hardwarové stanice</span><span class="sxs-lookup"><span data-stu-id="7128b-265">Hardware station deployment options</span></span>
+### <a name="ipc-built-in"></a><span data-ttu-id="7128b-266">IPC (vestavěný)</span><span class="sxs-lookup"><span data-stu-id="7128b-266">IPC (built-in)</span></span>
 
-Hardwarová stanice Interprocesní komunikace (Interprocess Communications, IPC) je součástí aplikace Modern POS for Windows. Chcete-li použít hardwarovou stanici IPC, přiřaďte k registru hardwarový profil, který bude používat aplikaci Modern POS for Windows. Pak vytvořte hardwarovou stanici typu **Vyhrazený** pro obchod, kde bude registr používán. Když spustíte Modern POS, bude hardwarová stanice IPC aktivní a periferie POS, které byly nakonfigurovány, budou připraveny k použití. Jestliže z nějakého důvodu dočasně nepožadujete místní hardware, použijte operaci **Spravovat hardwarové stanice** k vypnutí schopností hardwarové stanice. Modern POS může také využívat hardwarovou stanici IPC k přímé komunikaci se síťovými periferními zařízeními.
+<span data-ttu-id="7128b-267">Hardwarová stanice Interprocesní komunikace (Interprocess Communications, IPC) je součástí aplikace Modern POS for Windows.</span><span class="sxs-lookup"><span data-stu-id="7128b-267">The Interprocess Communications (IPC) hardware station is built into the Modern POS for Windows application.</span></span> <span data-ttu-id="7128b-268">Chcete-li použít hardwarovou stanici IPC, přiřaďte k registru hardwarový profil, který bude používat aplikaci Modern POS for Windows.</span><span class="sxs-lookup"><span data-stu-id="7128b-268">To use the IPC hardware station, assign a hardware profile to a register that will use the Modern POS for Windows application.</span></span> <span data-ttu-id="7128b-269">Pak vytvořte hardwarovou stanici typu **Vyhrazený** pro obchod, kde bude registr používán.</span><span class="sxs-lookup"><span data-stu-id="7128b-269">Then create a hardware station of the **Dedicated** type for the store where the register will be used.</span></span> <span data-ttu-id="7128b-270">Když spustíte Modern POS, bude hardwarová stanice IPC aktivní a periferie POS, které byly nakonfigurovány, budou připraveny k použití.</span><span class="sxs-lookup"><span data-stu-id="7128b-270">When you start Modern POS, the IPC hardware station will be active, and the POS peripherals that have been configured will be ready to use.</span></span> <span data-ttu-id="7128b-271">Jestliže z nějakého důvodu dočasně nepožadujete místní hardware, použijte operaci **Spravovat hardwarové stanice** k vypnutí schopností hardwarové stanice.</span><span class="sxs-lookup"><span data-stu-id="7128b-271">If you temporarily don't require the local hardware for some reason, use the **Manage hardware stations** operation to turn off the hardware station capabilities.</span></span> <span data-ttu-id="7128b-272">Modern POS může také využívat hardwarovou stanici IPC k přímé komunikaci se síťovými periferními zařízeními.</span><span class="sxs-lookup"><span data-stu-id="7128b-272">Modern POS can also use the IPC hardware station to communicate directly with network peripherals.</span></span>
 
-### <a name="iis"></a>služba IIS,
+### <a name="iis"></a><span data-ttu-id="7128b-273">služba IIS,</span><span class="sxs-lookup"><span data-stu-id="7128b-273">IIS</span></span>
 
-Službu IIS nebo samostatnou verzi hardwarové stanice můžete využívat dvěma způsoby. Deskriptor "IIS" znamená, že aplikace POS se k hardwarové stanici připojuje prostřednictvím Internetové informační služby Microsoft. Aplikace POS se k hardwarové stanici služby IIS připojuje prostřednictvím webových služeb, které jsou spuštěny v počítači, ke kterému jsou zařízení připojena. Při použití služby IIS může kterákoli registrační pokladna POS nacházející se na stejné síti jako hardwarová stanice IIS využívat maloobchodní periferní zařízení připojená k hardwarové stanici. Protože pouze Modern POS for Windows obsahuje integrovanou podporu pro maloobchodní periferní zařízení, všechny ostatní aplikace Modern POS musejí používat hardwarovou stanici služby IIS ke komunikaci s periferiemi POS, které jsou nakonfigurovány v hardwarovém profilu. Proto každá instance služby hardwarové stanice IIS vyžaduje počítač, na kterém je spuštěna webová služba a aplikaci, která komunikuje s zařízeními. Hardwarová stanice IIS je nezbytná pro všechny aplikace Modern POS, které nejsou pro Windows.
+<span data-ttu-id="7128b-274">Službu IIS nebo samostatnou verzi hardwarové stanice můžete využívat dvěma způsoby.</span><span class="sxs-lookup"><span data-stu-id="7128b-274">You can use the IIS or stand-alone version of the hardware station in two ways.</span></span> <span data-ttu-id="7128b-275">Deskriptor "IIS" znamená, že aplikace POS se k hardwarové stanici připojuje prostřednictvím Internetové informační služby Microsoft.</span><span class="sxs-lookup"><span data-stu-id="7128b-275">The descriptor “IIS” implies that the POS application connects to the hardware station via Microsoft Internet Information Services.</span></span> <span data-ttu-id="7128b-276">Aplikace POS se k hardwarové stanici služby IIS připojuje prostřednictvím webových služeb, které jsou spuštěny v počítači, ke kterému jsou zařízení připojena.</span><span class="sxs-lookup"><span data-stu-id="7128b-276">The POS application connects to the IIS hardware station via web services that run on a computer where the devices are connected.</span></span> <span data-ttu-id="7128b-277">Při použití služby IIS může kterákoli registrační pokladna POS nacházející se na stejné síti jako hardwarová stanice IIS využívat maloobchodní periferní zařízení připojená k hardwarové stanici.</span><span class="sxs-lookup"><span data-stu-id="7128b-277">When IIS is used, the retail peripherals that are connected to a hardware station can be used by any POS register that is on the same network as the IIS hardware station.</span></span> <span data-ttu-id="7128b-278">Protože pouze Modern POS for Windows obsahuje integrovanou podporu pro maloobchodní periferní zařízení, všechny ostatní aplikace Modern POS musejí používat hardwarovou stanici služby IIS ke komunikaci s periferiemi POS, které jsou nakonfigurovány v hardwarovém profilu.</span><span class="sxs-lookup"><span data-stu-id="7128b-278">Because only Modern POS for Windows includes built-in support for retail peripherals, all other Modern POS applications must use the IIS hardware station to communicate with POS peripherals that are configured in the hardware profile.</span></span> <span data-ttu-id="7128b-279">Proto každá instance služby hardwarové stanice IIS vyžaduje počítač, na kterém je spuštěna webová služba a aplikaci, která komunikuje s zařízeními.</span><span class="sxs-lookup"><span data-stu-id="7128b-279">Therefore, each instance of the IIS hardware station requires a computer that runs the web service and application that communicates with the devices.</span></span> <span data-ttu-id="7128b-280">Hardwarová stanice IIS je nezbytná pro všechny aplikace Modern POS, které nejsou pro Windows.</span><span class="sxs-lookup"><span data-stu-id="7128b-280">The IIS hardware station is required for all non-Windows Modern POS applications.</span></span>
 
-#### <a name="dedicated"></a>Vyhrazeno
+#### <a name="dedicated"></a><span data-ttu-id="7128b-281">Vyhrazeno</span><span class="sxs-lookup"><span data-stu-id="7128b-281">Dedicated</span></span>
 
-Moderní POS používá hardwarové stanice **Vyhrazeného** typu ke zjišťování, zda jsou periferní zařízení přímo připojena k počítači, na kterém je aplikace používána. Avšak typ **Vyhrazený** lze používat také pro hardwarové stanice služby IIS. V tradičním pevném scénáři POS, který používá Cloud POS jako aplikaci Retail POS, se typ hardwarové stanice **Vyhrazený** používá pro hardwarové stanice služby IIS, které jsou nasazeny ve stejném počítači, na kterém je spuštěn Cloud POS. Z hlediska maloobchodních periferní zařízení, vyhrazené hardwarové stanice IIS mají větší podporu periferních zařízení pro tradiční pevné scénáře POS. Vyhrazené hardwarové stanice podporují všechna periferní zařízení, která jsou podporována v hardwarovém profilu.
+<span data-ttu-id="7128b-282">Moderní POS používá hardwarové stanice **Vyhrazeného** typu ke zjišťování, zda jsou periferní zařízení přímo připojena k počítači, na kterém je aplikace používána.</span><span class="sxs-lookup"><span data-stu-id="7128b-282">Modern POS uses hardware stations of the **Dedicated** type to detect that peripherals are directly connected to the computer where the app is being used.</span></span> <span data-ttu-id="7128b-283">Avšak typ **Vyhrazený** lze používat také pro hardwarové stanice služby IIS.</span><span class="sxs-lookup"><span data-stu-id="7128b-283">However, the **Dedicated** type can also be used for IIS hardware stations.</span></span> <span data-ttu-id="7128b-284">V tradičním pevném scénáři POS, který používá Cloud POS jako aplikaci Retail POS, se typ hardwarové stanice **Vyhrazený** používá pro hardwarové stanice služby IIS, které jsou nasazeny ve stejném počítači, na kterém je spuštěn Cloud POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-284">In a traditional, fixed POS scenario that uses Cloud POS as the POS application, the **Dedicated** hardware station type is used for IIS hardware stations that are deployed on the same computer that is running Cloud POS.</span></span> <span data-ttu-id="7128b-285">Z hlediska maloobchodních periferní zařízení, vyhrazené hardwarové stanice IIS mají větší podporu periferních zařízení pro tradiční pevné scénáře POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-285">From a retail peripherals perspective, the dedicated IIS hardware station has better retail peripheral support for traditional, fixed POS scenarios.</span></span> <span data-ttu-id="7128b-286">Vyhrazené hardwarové stanice podporují všechna periferní zařízení, která jsou podporována v hardwarovém profilu.</span><span class="sxs-lookup"><span data-stu-id="7128b-286">Dedicated hardware stations support all peripherals that are supported in the hardware profile.</span></span>
 
-#### <a name="shared"></a>Sdílený
+#### <a name="shared"></a><span data-ttu-id="7128b-287">Sdílený</span><span class="sxs-lookup"><span data-stu-id="7128b-287">Shared</span></span>
 
-Sdílené hardwarové stanice jsou určeny pro použití více zařízeními POS v průběhu dne. Sdílené hardwarové stanice jsou optimalizovány tak, že podporují pouze zásuvky s hotovostí, tiskárny účtenek a platební terminály. Nelze přímo připojit samostatné čtečky čárových kódů, MSR, řádkové displeje, váhy či jiná zařízení. Jinak bude docházet ke konfliktům, když se více zařízení POS pokusí nárokovat si tato periferní zařízení současně. Zde je způsob správy konfliktů u podporovaných zařízení:
+<span data-ttu-id="7128b-288">Sdílené hardwarové stanice jsou určeny pro použití více zařízeními POS v průběhu dne.</span><span class="sxs-lookup"><span data-stu-id="7128b-288">Shared hardware stations are intended to be used by multiple POS devices through the course of the day.</span></span> <span data-ttu-id="7128b-289">Sdílené hardwarové stanice jsou optimalizovány tak, že podporují pouze zásuvky s hotovostí, tiskárny účtenek a platební terminály.</span><span class="sxs-lookup"><span data-stu-id="7128b-289">Shared hardware stations are optimized to support only cash drawers, receipt printers, and payment terminals.</span></span> <span data-ttu-id="7128b-290">Nelze přímo připojit samostatné čtečky čárových kódů, MSR, řádkové displeje, váhy či jiná zařízení.</span><span class="sxs-lookup"><span data-stu-id="7128b-290">You can't directly connect stand-alone bar code scanners, MSRs, line displays, scales, or other devices.</span></span> <span data-ttu-id="7128b-291">Jinak bude docházet ke konfliktům, když se více zařízení POS pokusí nárokovat si tato periferní zařízení současně.</span><span class="sxs-lookup"><span data-stu-id="7128b-291">Otherwise, conflicts will occur when multiple POS devices try to claim those peripherals at the same time.</span></span> <span data-ttu-id="7128b-292">Zde je způsob správy konfliktů u podporovaných zařízení:</span><span class="sxs-lookup"><span data-stu-id="7128b-292">Here is how conflicts are managed for supported devices:</span></span>
 
--   **Zásuvka s hotovostí** – Zásuvka se otevírá prostřednictvím události, která se odesílá do zařízení. Jediný problém, ke kterému může docházet při volání zásuvky s hotovostí, nastává tehdy, když je zásuvka s hotovostí již otevřena. V případě sdílených hardwarových stanic by měla být zásuvka s hotovostí v hardwarovém profilu nastavena na **Sdílené**. Toto nastavení zabrání POS v kontrole, zda je zásuvka již otevřena při odesílání příkazů k otevření.
--   **Tiskárna účtenek** – Budou-li do hardwarové stanice odeslány dva příkazy pro tisk účtenek současně, může se jeden z příkazů můžete ztratit, což závisí na zařízení. Některá zařízení mají interní paměť nebo sjednocené prostředky, které mohou tomuto problému zabránit. Pokud tiskový příkaz není úspěšný, pokladník obdrží chybovou zprávu a můžete tiskový příkaz zopakovat z programu POS.
--   **Platební terminál** – Jestliže se pokladník pokusí zařídit transakci na platebním terminálu, který je již používán, bude pokladník upozorněn zprávou, že terminál je používán, a požádán, aby se o tuto akci pokusil později. Pokladníci obvykle sami zjistí, že terminál je již používán, a než se znovu pokusí o řízení, počkají na dokončení druhé transakce.
+-   <span data-ttu-id="7128b-293">**Zásuvka s hotovostí** – Zásuvka se otevírá prostřednictvím události, která se odesílá do zařízení.</span><span class="sxs-lookup"><span data-stu-id="7128b-293">**Cash drawer** – The cash drawer is opened via an event that is sent to the device.</span></span> <span data-ttu-id="7128b-294">Jediný problém, ke kterému může docházet při volání zásuvky s hotovostí, nastává tehdy, když je zásuvka s hotovostí již otevřena.</span><span class="sxs-lookup"><span data-stu-id="7128b-294">The only issue that can occur when a cash drawer is called occurs if the cash drawer is already open.</span></span> <span data-ttu-id="7128b-295">V případě sdílených hardwarových stanic by měla být zásuvka s hotovostí v hardwarovém profilu nastavena na **Sdílené**.</span><span class="sxs-lookup"><span data-stu-id="7128b-295">In the case of shared hardware stations, the cash drawer should be set to **Shared** in the hardware profile.</span></span> <span data-ttu-id="7128b-296">Toto nastavení zabrání POS v kontrole, zda je zásuvka již otevřena při odesílání příkazů k otevření.</span><span class="sxs-lookup"><span data-stu-id="7128b-296">This setting prevents the POS from checking whether the cash drawer is already open when it sends open commands.</span></span>
+-   <span data-ttu-id="7128b-297">**Tiskárna účtenek** – Budou-li do hardwarové stanice odeslány dva příkazy pro tisk účtenek současně, může se jeden z příkazů můžete ztratit, což závisí na zařízení.</span><span class="sxs-lookup"><span data-stu-id="7128b-297">**Receipt printer** – If two receipt printing commands are sent to the hardware station at the same time, one of the commands can be lost, depending on the device.</span></span> <span data-ttu-id="7128b-298">Některá zařízení mají interní paměť nebo sjednocené prostředky, které mohou tomuto problému zabránit.</span><span class="sxs-lookup"><span data-stu-id="7128b-298">Some devices have internal memory or pooling that can prevent this issue.</span></span> <span data-ttu-id="7128b-299">Pokud tiskový příkaz není úspěšný, pokladník obdrží chybovou zprávu a můžete tiskový příkaz zopakovat z programu POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-299">If a print command isn't successful, the cashier receives an error message and can retry the print command from the POS.</span></span>
+-   <span data-ttu-id="7128b-300">**Platební terminál** – Jestliže se pokladník pokusí zařídit transakci na platebním terminálu, který je již používán, bude pokladník upozorněn zprávou, že terminál je používán, a požádán, aby se o tuto akci pokusil později.</span><span class="sxs-lookup"><span data-stu-id="7128b-300">**Payment terminal** – If a cashier tries to tender a transaction on a payment terminal that is already being used, a message notifies the cashier that the terminal is being used and asks the cashier to try again later.</span></span> <span data-ttu-id="7128b-301">Pokladníci obvykle sami zjistí, že terminál je již používán, a než se znovu pokusí o řízení, počkají na dokončení druhé transakce.</span><span class="sxs-lookup"><span data-stu-id="7128b-301">Usually, cashiers can see that a terminal is already being used and will wait until the other transaction is completed before they try to tender again.</span></span>
 
-Pro budoucí verze je plánováno ověřování za účelem detekce, zda jsou nepodporovaná zařízení nakonfigurována pro hardwarový profil mapovaný na sdílenou hardwarovou stanici. Pokud budou zjištěna jakákoli nepodporovaná zařízení, uživatel obdrží zprávu uvádějící, že zařízení nejsou pro sdílené hardware stanice podporována. V případě sdílených hardwarových stanic je volba **Vybrat po řízení** nastavena na **Ano** na úrovni registru. Uživatel POS je potom vyzván k výběru hardwarové stanice při výběru nabídky pro transakci v POS. Vybráno hardwarové stanice pouze v době vyhlášení výběr hardware stanice přidá přímo do pracovního postupu POS pro mobilní scénáře. Další výhodou je, že zobrazený řádek na platebním terminálu není použit pro sdílené scénáře. Pokud je platební terminál použit pro zobrazení řádku, ostatní uživatelé mohou být blokováni od používání tohoto terminálu, dokud transakce neskončí. V mobilních scénářích mohou být přidány řádky ke transakci za delší období. Proto možnost **Vybrat při úhradách** je vyžadována k zajištění optimální dostupnosti zařízení.
+<span data-ttu-id="7128b-302">Pro budoucí verze je plánováno ověřování za účelem detekce, zda jsou nepodporovaná zařízení nakonfigurována pro hardwarový profil mapovaný na sdílenou hardwarovou stanici.</span><span class="sxs-lookup"><span data-stu-id="7128b-302">Validation is planned for a future release, to detect whether unsupported devices are set up for a hardware profile that is mapped to a shared hardware station.</span></span> <span data-ttu-id="7128b-303">Pokud budou zjištěna jakákoli nepodporovaná zařízení, uživatel obdrží zprávu uvádějící, že zařízení nejsou pro sdílené hardware stanice podporována.</span><span class="sxs-lookup"><span data-stu-id="7128b-303">If any unsupported devices are detected, the user will receive a message that states that the devices aren't supported for shared hardware stations.</span></span> <span data-ttu-id="7128b-304">V případě sdílených hardwarových stanic je volba **Vybrat po řízení** nastavena na **Ano** na úrovni registru.</span><span class="sxs-lookup"><span data-stu-id="7128b-304">In the case of shared hardware stations, the **Select upon tendering** option is set to **Yes** at the register level.</span></span> <span data-ttu-id="7128b-305">Uživatel POS je potom vyzván k výběru hardwarové stanice při výběru nabídky pro transakci v POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-305">The POS user is then prompted to select a hardware station when a tender is selected for a transaction at the POS.</span></span> <span data-ttu-id="7128b-306">Vybráno hardwarové stanice pouze v době vyhlášení výběr hardware stanice přidá přímo do pracovního postupu POS pro mobilní scénáře.</span><span class="sxs-lookup"><span data-stu-id="7128b-306">When the hardware station is selected only at the time of tender, the hardware station selection is added directly to the POS workflow for mobile scenarios.</span></span> <span data-ttu-id="7128b-307">Další výhodou je, že zobrazený řádek na platebním terminálu není použit pro sdílené scénáře.</span><span class="sxs-lookup"><span data-stu-id="7128b-307">As an additional benefit, the line display on the payment terminal isn't used for shared scenarios.</span></span> <span data-ttu-id="7128b-308">Pokud je platební terminál použit pro zobrazení řádku, ostatní uživatelé mohou být blokováni od používání tohoto terminálu, dokud transakce neskončí.</span><span class="sxs-lookup"><span data-stu-id="7128b-308">If the payment terminal is used as a line display, other users might be blocked from using that terminal until the transaction is completed.</span></span> <span data-ttu-id="7128b-309">V mobilních scénářích mohou být přidány řádky ke transakci za delší období.</span><span class="sxs-lookup"><span data-stu-id="7128b-309">In mobile scenarios, lines might be added to a transaction over a longer period.</span></span> <span data-ttu-id="7128b-310">Proto možnost **Vybrat při úhradách** je vyžadována k zajištění optimální dostupnosti zařízení.</span><span class="sxs-lookup"><span data-stu-id="7128b-310">Therefore, the **Select upon tendering** option is required in order to ensure optimum device availability.</span></span>
 
-### <a name="network-peripherals"></a>Síťová příslušenství
+### <a name="network-peripherals"></a><span data-ttu-id="7128b-311">Síťová příslušenství</span><span class="sxs-lookup"><span data-stu-id="7128b-311">Network peripherals</span></span>
 
-Označení sítí pro zařízení v profilu hardwaru umožňuje připojit zásuvky na hotovosti, tiskárny účtů a platební terminály prostřednictvím síťového připojení.
+<span data-ttu-id="7128b-312">Označení sítí pro zařízení v profilu hardwaru umožňuje připojit zásuvky na hotovosti, tiskárny účtů a platební terminály prostřednictvím síťového připojení.</span><span class="sxs-lookup"><span data-stu-id="7128b-312">The network designation for devices in the hardware profile enables cash drawers, receipt printers, and payment terminals to be connected via a network connection.</span></span>
 
-#### <a name="modern-pos-for-windows"></a>Moderní POS pro Windows
+#### <a name="modern-pos-for-windows"></a><span data-ttu-id="7128b-313">Moderní POS pro Windows</span><span class="sxs-lookup"><span data-stu-id="7128b-313">Modern POS for Windows</span></span>
 
-Můžete určit adresy IP síťových příslušenství na dvou místech. Pokud Moderní POS klient systému Windows používá jednu sadu síťových příslušenství, měli byste nastavit adresy IP těchto zařízení pomocí možnosti **konfigurace IP** v Podokně akcí u samotné registrační pokladny. V případě síťových zařízení, která budou sdílena mezi registry POS, může být hardwarový profil, který má přidělena síťová zařízení, mapován přímo na sdílenou hardwarovou stanici. Chcete-li přiřadit adresy IP, vyberte tuto hardwarovou stanici na stránce **Maloobchodní obchody**, potom použijte volbu **Konfigurace IP** v sekci **Hardwarové stanice** pro zadání síťových zařízení, která budou přiřazena k této hardwarové stanici. U hardwarových stanic, které mají pouze síťová zařízení, nemusíte instalovat samotnou hardwarovou stanici. V tomto případě je hardwarová stanice požadována pouze za účelem konceptuálního seskupení síťově adresovatelných zařízení podle jejich umístění v maloobchodě.
+<span data-ttu-id="7128b-314">Můžete určit adresy IP síťových příslušenství na dvou místech.</span><span class="sxs-lookup"><span data-stu-id="7128b-314">You can specify IP addresses for network peripherals in two places.</span></span> <span data-ttu-id="7128b-315">Pokud Moderní POS klient systému Windows používá jednu sadu síťových příslušenství, měli byste nastavit adresy IP těchto zařízení pomocí možnosti **konfigurace IP** v Podokně akcí u samotné registrační pokladny.</span><span class="sxs-lookup"><span data-stu-id="7128b-315">If the Modern POS Windows client is using a single set of network peripherals, you should set the IP addresses for those devices by using the **IP configuration** option on the Action Pane for the register itself.</span></span> <span data-ttu-id="7128b-316">V případě síťových zařízení, která budou sdílena mezi registry POS, může být hardwarový profil, který má přidělena síťová zařízení, mapován přímo na sdílenou hardwarovou stanici.</span><span class="sxs-lookup"><span data-stu-id="7128b-316">In the case of network devices that will be shared among POS registers, a hardware profile that has network devices assigned to it can be mapped directly to a shared hardware station.</span></span> <span data-ttu-id="7128b-317">Chcete-li přiřadit adresy IP, vyberte tuto hardwarovou stanici na stránce **Maloobchodní obchody**, potom použijte volbu **Konfigurace IP** v sekci **Hardwarové stanice** pro zadání síťových zařízení, která budou přiřazena k této hardwarové stanici.</span><span class="sxs-lookup"><span data-stu-id="7128b-317">To assign IP addresses, select that hardware station on the **Retail stores** page, and then use the **IP configuration** option in the **Hardware stations** section to specify the network devices that are assigned to that hardware station.</span></span> <span data-ttu-id="7128b-318">U hardwarových stanic, které mají pouze síťová zařízení, nemusíte instalovat samotnou hardwarovou stanici.</span><span class="sxs-lookup"><span data-stu-id="7128b-318">For hardware stations that have only network devices, you don't have to deploy the hardware station itself.</span></span> <span data-ttu-id="7128b-319">V tomto případě je hardwarová stanice požadována pouze za účelem konceptuálního seskupení síťově adresovatelných zařízení podle jejich umístění v maloobchodě.</span><span class="sxs-lookup"><span data-stu-id="7128b-319">In this case, the hardware station is required only in order to conceptually group network-addressable devices according to their location in the retail store.</span></span>
 
-#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a>Cloudový POS, Moderní POS pro iOS a Moderní POS pro Android
+#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a><span data-ttu-id="7128b-320">Cloudový POS, Moderní POS pro iOS a Moderní POS pro Android</span><span class="sxs-lookup"><span data-stu-id="7128b-320">Cloud POS, Modern POS for iOS, and Modern POS for Android</span></span>
 
-Logika, která řídí fyzicky připojené a síťově adresovatelné periferie, je obsažena v hardwarové stanici. Proto pro všechny klienty POS kromě Moderního POS pro Windows musí být zavedena a aktivní hardwarová stanice IIS umožňující těmto POS komunikovat s periferními zařízeními bez ohledu na to, zda jsou tyto periferie fyzicky připojeny k hardwarové stanici nebo adresovány po síti.
+<span data-ttu-id="7128b-321">Logika, která řídí fyzicky připojené a síťově adresovatelné periferie, je obsažena v hardwarové stanici.</span><span class="sxs-lookup"><span data-stu-id="7128b-321">The logic that drives physically connected and network-addressable peripherals is contained in the hardware station.</span></span> <span data-ttu-id="7128b-322">Proto pro všechny klienty POS kromě Moderního POS pro Windows musí být zavedena a aktivní hardwarová stanice IIS umožňující těmto POS komunikovat s periferními zařízeními bez ohledu na to, zda jsou tyto periferie fyzicky připojeny k hardwarové stanici nebo adresovány po síti.</span><span class="sxs-lookup"><span data-stu-id="7128b-322">Therefore, for all POS clients except Modern POS for Windows, an IIS hardware station must be deployed and active to enable the POS to communicate with peripherals, regardless of whether those peripherals are physically connected to a hardware station or addressed over the network.</span></span>
 
-## <a name="setup-and-configuration"></a>Instalace a konfigurace
-### <a name="hardware-station-installation"></a>Instalace hardwarové stanice
+## <a name="setup-and-configuration"></a><span data-ttu-id="7128b-323">Instalace a konfigurace</span><span class="sxs-lookup"><span data-stu-id="7128b-323">Setup and configuration</span></span>
+### <a name="hardware-station-installation"></a><span data-ttu-id="7128b-324">Instalace hardwarové stanice</span><span class="sxs-lookup"><span data-stu-id="7128b-324">Hardware station installation</span></span>
 
-Informace naleznete v tématu [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md).
+<span data-ttu-id="7128b-325">Informace naleznete v tématu [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md).</span><span class="sxs-lookup"><span data-stu-id="7128b-325">For information, see [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md).</span></span>
 
-### <a name="modern-pos-for-windows-setup-and-configuration"></a>Instalace a konfigurace Moderního POS pro Windows
+### <a name="modern-pos-for-windows-setup-and-configuration"></a><span data-ttu-id="7128b-326">Instalace a konfigurace Moderního POS pro Windows</span><span class="sxs-lookup"><span data-stu-id="7128b-326">Modern POS for Windows setup and configuration</span></span>
 
-Informace naleznete v tématu [Konfigurace a instalace maloobchodního Moderního POS](retail-modern-pos-device-activation.md).
+<span data-ttu-id="7128b-327">Informace naleznete v tématu [Konfigurace a instalace maloobchodního Moderního POS](retail-modern-pos-device-activation.md).</span><span class="sxs-lookup"><span data-stu-id="7128b-327">For information, see [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md).</span></span>
 
-### <a name="opos-device-setup-and-configuration"></a>Instalace a konfigurace zařízení OPOS
+### <a name="opos-device-setup-and-configuration"></a><span data-ttu-id="7128b-328">Instalace a konfigurace zařízení OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-328">OPOS device setup and configuration</span></span>
 
-Další informace o součástech OPOS naleznete v části "Podporovaná rozhraní" v tomto dokumentu. Ovladače OPOS obvykle poskytuje výrobce zařízení. Když je nainstalován ovladač zařízení OPOS, přidá se klíč registru systému Windows do jednoho z následujících umístění:
+<span data-ttu-id="7128b-329">Další informace o součástech OPOS naleznete v části "Podporovaná rozhraní" v tomto dokumentu.</span><span class="sxs-lookup"><span data-stu-id="7128b-329">For more information about OPOS components, see the "Supported interfaces" section of this document.</span></span> <span data-ttu-id="7128b-330">Ovladače OPOS obvykle poskytuje výrobce zařízení.</span><span class="sxs-lookup"><span data-stu-id="7128b-330">Typically, OPOS drivers are provided by the device manufacturer.</span></span> <span data-ttu-id="7128b-331">Když je nainstalován ovladač zařízení OPOS, přidá se klíč registru systému Windows do jednoho z následujících umístění:</span><span class="sxs-lookup"><span data-stu-id="7128b-331">When an OPOS device driver is installed, it adds a key to the Windows registry in one of the following locations:</span></span>
 
--   **32bitový systém:** HKEY\_LOCAL\_MACHINESOFTWAREOLEforRetailServiceOPOS
--   **64bitový systém:** HKEY\_LOCAL\_MACHINESOFTWAREWOW6432NodeOLEforRetailServiceOPOS
+-   <span data-ttu-id="7128b-332">**32bitový systém:** HKEY\_LOCAL\_MACHINESOFTWAREOLEforRetailServiceOPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-332">**32-bit system:** HKEY\_LOCAL\_MACHINESOFTWAREOLEforRetailServiceOPOS</span></span>
+-   <span data-ttu-id="7128b-333">**64bitový systém:** HKEY\_LOCAL\_MACHINESOFTWAREWOW6432NodeOLEforRetailServiceOPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-333">**64-bit system:** HKEY\_LOCAL\_MACHINESOFTWAREWOW6432NodeOLEforRetailServiceOPOS</span></span>
 
-V rámci umístění registru ServiceOPOS jsou nakonfigurovaná zařízení uspořádána podle třídy zařízení OPOS. Více ovladačů zařízení je uloženo.
+<span data-ttu-id="7128b-334">V rámci umístění registru ServiceOPOS jsou nakonfigurovaná zařízení uspořádána podle třídy zařízení OPOS.</span><span class="sxs-lookup"><span data-stu-id="7128b-334">Within the ServiceOPOS registry location, configured devices are organized according to the OPOS device class.</span></span> <span data-ttu-id="7128b-335">Více ovladačů zařízení je uloženo.</span><span class="sxs-lookup"><span data-stu-id="7128b-335">Multiple device drivers are saved.</span></span>
 
-## <a name="supported-scenarios-by-hardware-station-type"></a>Podporované scénáře podle typu hardwaru stanice
-### <a name="client-support--ipc-hardware-station-vs-iis-hardware-station"></a>Podpora klientů – IPC hardwarová stanice vs. IIS hardwarová stanice
+## <a name="supported-scenarios-by-hardware-station-type"></a><span data-ttu-id="7128b-336">Podporované scénáře podle typu hardwaru stanice</span><span class="sxs-lookup"><span data-stu-id="7128b-336">Supported scenarios by hardware station type</span></span>
+### <a name="client-support--ipc-hardware-station-vs-iis-hardware-station"></a><span data-ttu-id="7128b-337">Podpora klientů – IPC hardwarová stanice vs. IIS hardwarová stanice</span><span class="sxs-lookup"><span data-stu-id="7128b-337">Client support – IPC hardware station vs. IIS hardware station</span></span>
 
-V následující tabulce jsou uvedeny podporované topologie a scénáře nasazení.
+<span data-ttu-id="7128b-338">V následující tabulce jsou uvedeny podporované topologie a scénáře nasazení.</span><span class="sxs-lookup"><span data-stu-id="7128b-338">The following table shows the topologies and deployment scenarios that are supported.</span></span>
 
-| Klient      | Hardwarová stanice IPC | Hardwarová stanice IIS |
+| <span data-ttu-id="7128b-339">Klient</span><span class="sxs-lookup"><span data-stu-id="7128b-339">Client</span></span>      | <span data-ttu-id="7128b-340">Hardwarová stanice IPC</span><span class="sxs-lookup"><span data-stu-id="7128b-340">IPC hardware station</span></span> | <span data-ttu-id="7128b-341">Hardwarová stanice IIS</span><span class="sxs-lookup"><span data-stu-id="7128b-341">IIS hardware station</span></span> |
 |-------------|----------------------|----------------------|
-| Aplikace systému Windows | Ano                  | Ano                  |
-| Cloud POS   | Žádný                   | Ano                  |
-| Android     | Žádný                   | Ano                  |
-| iOS         | Žádný                   | Ano                  |
+| <span data-ttu-id="7128b-342">Aplikace systému Windows</span><span class="sxs-lookup"><span data-stu-id="7128b-342">Windows app</span></span> | <span data-ttu-id="7128b-343">Ano</span><span class="sxs-lookup"><span data-stu-id="7128b-343">Yes</span></span>                  | <span data-ttu-id="7128b-344">Ano</span><span class="sxs-lookup"><span data-stu-id="7128b-344">Yes</span></span>                  |
+| <span data-ttu-id="7128b-345">Cloud POS</span><span class="sxs-lookup"><span data-stu-id="7128b-345">Cloud POS</span></span>   | <span data-ttu-id="7128b-346">Žádný</span><span class="sxs-lookup"><span data-stu-id="7128b-346">No</span></span>                   | <span data-ttu-id="7128b-347">Ano</span><span class="sxs-lookup"><span data-stu-id="7128b-347">Yes</span></span>                  |
+| <span data-ttu-id="7128b-348">Android</span><span class="sxs-lookup"><span data-stu-id="7128b-348">Android</span></span>     | <span data-ttu-id="7128b-349">Žádný</span><span class="sxs-lookup"><span data-stu-id="7128b-349">No</span></span>                   | <span data-ttu-id="7128b-350">Ano</span><span class="sxs-lookup"><span data-stu-id="7128b-350">Yes</span></span>                  |
+| <span data-ttu-id="7128b-351">iOS</span><span class="sxs-lookup"><span data-stu-id="7128b-351">iOS</span></span>         | <span data-ttu-id="7128b-352">Žádný</span><span class="sxs-lookup"><span data-stu-id="7128b-352">No</span></span>                   | <span data-ttu-id="7128b-353">Ano</span><span class="sxs-lookup"><span data-stu-id="7128b-353">Yes</span></span>                  |
 
-### <a name="network-peripherals"></a>Síťová příslušenství
+### <a name="network-peripherals"></a><span data-ttu-id="7128b-354">Síťová příslušenství</span><span class="sxs-lookup"><span data-stu-id="7128b-354">Network peripherals</span></span>
 
-Periferní síťová zařízení mohou být podporována přímo prostřednictvím hardwarové stanice, jež je integrována do aplikace Moderního POS pro Windows. Pro ostatní klienty je nutné nasadit hardwarovou stanici IIS.
+<span data-ttu-id="7128b-355">Periferní síťová zařízení mohou být podporována přímo prostřednictvím hardwarové stanice, jež je integrována do aplikace Moderního POS pro Windows.</span><span class="sxs-lookup"><span data-stu-id="7128b-355">Network peripherals can be supported directly through the hardware station that is built into the Modern POS for Windows application.</span></span> <span data-ttu-id="7128b-356">Pro ostatní klienty je nutné nasadit hardwarovou stanici IIS.</span><span class="sxs-lookup"><span data-stu-id="7128b-356">For all other clients, you must deploy an IIS hardware station.</span></span>
 
-| Klient      | Hardwarová stanice IPC | Hardwarová stanice IIS |
+| <span data-ttu-id="7128b-357">Klient</span><span class="sxs-lookup"><span data-stu-id="7128b-357">Client</span></span>      | <span data-ttu-id="7128b-358">Hardwarová stanice IPC</span><span class="sxs-lookup"><span data-stu-id="7128b-358">IPC hardware station</span></span> | <span data-ttu-id="7128b-359">Hardwarová stanice IIS</span><span class="sxs-lookup"><span data-stu-id="7128b-359">IIS hardware station</span></span> |
 |-------------|----------------------|----------------------|
-| Aplikace systému Windows | Ano                  | Ano                  |
-| Cloud POS   | Žádný                   | Ano                  |
-| Android     | Žádný                   | Ano                  |
-| iOS         | Žádný                   | Ano                  |
+| <span data-ttu-id="7128b-360">Aplikace systému Windows</span><span class="sxs-lookup"><span data-stu-id="7128b-360">Windows app</span></span> | <span data-ttu-id="7128b-361">Ano</span><span class="sxs-lookup"><span data-stu-id="7128b-361">Yes</span></span>                  | <span data-ttu-id="7128b-362">Ano</span><span class="sxs-lookup"><span data-stu-id="7128b-362">Yes</span></span>                  |
+| <span data-ttu-id="7128b-363">Cloud POS</span><span class="sxs-lookup"><span data-stu-id="7128b-363">Cloud POS</span></span>   | <span data-ttu-id="7128b-364">Žádný</span><span class="sxs-lookup"><span data-stu-id="7128b-364">No</span></span>                   | <span data-ttu-id="7128b-365">Ano</span><span class="sxs-lookup"><span data-stu-id="7128b-365">Yes</span></span>                  |
+| <span data-ttu-id="7128b-366">Android</span><span class="sxs-lookup"><span data-stu-id="7128b-366">Android</span></span>     | <span data-ttu-id="7128b-367">Žádný</span><span class="sxs-lookup"><span data-stu-id="7128b-367">No</span></span>                   | <span data-ttu-id="7128b-368">Ano</span><span class="sxs-lookup"><span data-stu-id="7128b-368">Yes</span></span>                  |
+| <span data-ttu-id="7128b-369">iOS</span><span class="sxs-lookup"><span data-stu-id="7128b-369">iOS</span></span>         | <span data-ttu-id="7128b-370">Žádný</span><span class="sxs-lookup"><span data-stu-id="7128b-370">No</span></span>                   | <span data-ttu-id="7128b-371">Ano</span><span class="sxs-lookup"><span data-stu-id="7128b-371">Yes</span></span>                  |
 
-## <a name="supported-device-types-by-hardware-station-type"></a>Podporované druhy zařízení podle typu hardwaru stanice
-### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Moderní POS pro systém Windows s hardwarovou stanicí IPC (vestavěnou)
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Podporovaná třída zařízení</th>
-<th>Podporovaná rozhraní</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Tiskárna</td>
-<td><ul>
-<li>OPOS</li>
-<li>Ovladač systému Windows</li>
-<li>Zařízení</li>
-<li>Síť</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Tiskárna 2</td>
-<td><ul>
-<li>OPOS</li>
-<li>Ovladač systému Windows</li>
-<li>Zařízení</li>
-<li>Síť</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Řádkový displej</td>
-<td>OPOS</td>
-</tr>
-<tr class="even">
-<td>Duální displej</td>
-<td>Ovladač systému Windows</td>
-</tr>
-<tr class="odd">
-<td>MSR</td>
-<td><ul>
-<li>OPOS</li>
-<li>UWP (Není nutná instalace.)</li>
-<li>Převodník na signál klávesnice (Není nutná instalace.)</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Výstavce</td>
-<td><ul>
-<li>OPOS</li>
-<li>Síťová <strong>poznámka:</strong> pouze jednu zásuvku lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Zásuvka 2</td>
-<td><ul>
-<li>OPOS</li>
-<li>Síťová <strong>poznámka:</strong> pouze jednu zásuvku lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Skener</td>
-<td><ul>
-<li>OPOS</li>
-<li>UWP (Není nutná instalace.)</li>
-<li>Převodník na signál klávesnice (Není nutná instalace.)</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Skener 2</td>
-<td><ul>
-<li>OPOS</li>
-<li>UWP (Není nutná instalace.)</li>
-<li>Převodník na signál klávesnice (Není nutná instalace.)</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Měřítko</td>
-<td>OPOS</td>
-</tr>
-<tr class="odd">
-<td>Klávesnice pro kód PIN</td>
-<td>OPOS (podpora je poskytována prostřednictvím přizpůsobení platebního konektoru.)</td>
-</tr>
-<tr class="even">
-<td>Zaznamenání podpisu</td>
-<td>OPOS</td>
-</tr>
-<tr class="odd">
-<td>Patební terminál </td>
-<td><ul>
-<li>Podpora vlastního zařízení</li>
-<li>Síť (další informace naleznete v dokumentaci konektoru platby.)</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a>Všechny moderní POS klienty, které mají vyhrazené hardwarové stanice IIS
-
-**Poznámka:** pokud je hardwarová stanice "vyhrazena", je vztah 1:1 mezi klientem POS a hardwarovou stanicí.
+## <a name="supported-device-types-by-hardware-station-type"></a><span data-ttu-id="7128b-372">Podporované druhy zařízení podle typu hardwaru stanice</span><span class="sxs-lookup"><span data-stu-id="7128b-372">Supported device types by hardware station type</span></span>
+### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a><span data-ttu-id="7128b-373">Moderní POS pro systém Windows s hardwarovou stanicí IPC (vestavěnou)</span><span class="sxs-lookup"><span data-stu-id="7128b-373">Modern POS for Windows with an IPC (built-in) hardware station</span></span>
 
 <table>
 <colgroup>
@@ -341,82 +239,100 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 </colgroup>
 <thead>
 <tr class="header">
-<th>Podporovaná třída zařízení</th>
-<th>Podporovaná rozhraní</th>
+<th><span data-ttu-id="7128b-374">Podporovaná třída zařízení</span><span class="sxs-lookup"><span data-stu-id="7128b-374">Supported device class</span></span></th>
+<th><span data-ttu-id="7128b-375">Podporovaná rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-375">Supported interfaces</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Tiskárna</td>
+<td><span data-ttu-id="7128b-376">Tiskárna</span><span class="sxs-lookup"><span data-stu-id="7128b-376">Printer</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li><strong>Poznámka</strong> k ovladači Windows: U tiskáren Windows v síti musí mít uživatel hardwarové stanice oprávnění k přístupu k tiskárně.</li>
-<li>Síť</li>
+<li><span data-ttu-id="7128b-377">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-377">OPOS</span></span></li>
+<li><span data-ttu-id="7128b-378">Ovladač systému Windows</span><span class="sxs-lookup"><span data-stu-id="7128b-378">Windows driver</span></span></li>
+<li><span data-ttu-id="7128b-379">Zařízení</span><span class="sxs-lookup"><span data-stu-id="7128b-379">Device</span></span></li>
+<li><span data-ttu-id="7128b-380">Síť</span><span class="sxs-lookup"><span data-stu-id="7128b-380">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Tiskárna 2</td>
+<td><span data-ttu-id="7128b-381">Tiskárna 2</span><span class="sxs-lookup"><span data-stu-id="7128b-381">Printer 2</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Ovladač systému Windows</li>
-<li>Síť</li>
+<li><span data-ttu-id="7128b-382">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-382">OPOS</span></span></li>
+<li><span data-ttu-id="7128b-383">Ovladač systému Windows</span><span class="sxs-lookup"><span data-stu-id="7128b-383">Windows driver</span></span></li>
+<li><span data-ttu-id="7128b-384">Zařízení</span><span class="sxs-lookup"><span data-stu-id="7128b-384">Device</span></span></li>
+<li><span data-ttu-id="7128b-385">Síť</span><span class="sxs-lookup"><span data-stu-id="7128b-385">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Řádkový displej</td>
-<td>OPOS</td>
+<td><span data-ttu-id="7128b-386">Řádkový displej</span><span class="sxs-lookup"><span data-stu-id="7128b-386">Line display</span></span></td>
+<td><span data-ttu-id="7128b-387">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-387">OPOS</span></span></td>
 </tr>
 <tr class="even">
-<td>MSR</td>
-<td>OPOS</td>
+<td><span data-ttu-id="7128b-388">Duální displej</span><span class="sxs-lookup"><span data-stu-id="7128b-388">Dual display</span></span></td>
+<td><span data-ttu-id="7128b-389">Ovladač systému Windows</span><span class="sxs-lookup"><span data-stu-id="7128b-389">Windows driver</span></span></td>
 </tr>
 <tr class="odd">
-<td>Výstavce</td>
+<td><span data-ttu-id="7128b-390">MSR</span><span class="sxs-lookup"><span data-stu-id="7128b-390">MSR</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Síťová <strong>poznámka:</strong> pouze jednu zásuvku na každý hardwarový profil lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</li>
+<li><span data-ttu-id="7128b-391">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-391">OPOS</span></span></li>
+<li><span data-ttu-id="7128b-392">UWP (Není nutná instalace.)</span><span class="sxs-lookup"><span data-stu-id="7128b-392">UWP (No setup is required.)</span></span></li>
+<li><span data-ttu-id="7128b-393">Převodník na signál klávesnice (Není nutná instalace.)</span><span class="sxs-lookup"><span data-stu-id="7128b-393">Keyboard wedge (No setup is required.)</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Zásuvka 2</td>
+<td><span data-ttu-id="7128b-394">Výstavce</span><span class="sxs-lookup"><span data-stu-id="7128b-394">Drawer</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Síť</li>
+<li><span data-ttu-id="7128b-395">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-395">OPOS</span></span></li>
+<li><span data-ttu-id="7128b-396">Síťová <strong>poznámka:</strong> pouze jednu zásuvku lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</span><span class="sxs-lookup"><span data-stu-id="7128b-396">Network <strong>Note:</strong> Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Skener</td>
-<td>OPOS</td>
-</tr>
-<tr class="even">
-<td>Skener 2</td>
-<td>OPOS</td>
-</tr>
-<tr class="odd">
-<td>Měřítko</td>
-<td>OPOS</td>
-</tr>
-<tr class="even">
-<td>Klávesnice pro kód PIN</td>
-<td>OPOS (podpora je poskytována prostřednictvím přizpůsobení platebního konektoru.)</td>
-</tr>
-<tr class="odd">
-<td>Podpis zachycení</td>
-<td>OPOS</td>
-</tr>
-<tr class="even">
-<td>Patební terminál </td>
+<td><span data-ttu-id="7128b-397">Zásuvka 2</span><span class="sxs-lookup"><span data-stu-id="7128b-397">Drawer 2</span></span></td>
 <td><ul>
-<li>Podpora vlastního zařízení</li>
-<li>Síť (další informace naleznete v dokumentaci konektoru platby.)</li>
+<li><span data-ttu-id="7128b-398">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-398">OPOS</span></span></li>
+<li><span data-ttu-id="7128b-399">Síťová <strong>poznámka:</strong> pouze jednu zásuvku lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</span><span class="sxs-lookup"><span data-stu-id="7128b-399">Network <strong>Note:</strong> Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="7128b-400">Skener</span><span class="sxs-lookup"><span data-stu-id="7128b-400">Scanner</span></span></td>
+<td><ul>
+<li><span data-ttu-id="7128b-401">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-401">OPOS</span></span></li>
+<li><span data-ttu-id="7128b-402">UWP (Není nutná instalace.)</span><span class="sxs-lookup"><span data-stu-id="7128b-402">UWP (No setup is required.)</span></span></li>
+<li><span data-ttu-id="7128b-403">Převodník na signál klávesnice (Není nutná instalace.)</span><span class="sxs-lookup"><span data-stu-id="7128b-403">Keyboard wedge (No setup is required.)</span></span></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="7128b-404">Skener 2</span><span class="sxs-lookup"><span data-stu-id="7128b-404">Scanner 2</span></span></td>
+<td><ul>
+<li><span data-ttu-id="7128b-405">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-405">OPOS</span></span></li>
+<li><span data-ttu-id="7128b-406">UWP (Není nutná instalace.)</span><span class="sxs-lookup"><span data-stu-id="7128b-406">UWP (No setup is required.)</span></span></li>
+<li><span data-ttu-id="7128b-407">Převodník na signál klávesnice (Není nutná instalace.)</span><span class="sxs-lookup"><span data-stu-id="7128b-407">Keyboard wedge (No setup is required.)</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="7128b-408">Měřítko</span><span class="sxs-lookup"><span data-stu-id="7128b-408">Scale</span></span></td>
+<td><span data-ttu-id="7128b-409">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-409">OPOS</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="7128b-410">Klávesnice pro kód PIN</span><span class="sxs-lookup"><span data-stu-id="7128b-410">PIN pad</span></span></td>
+<td><span data-ttu-id="7128b-411">OPOS (podpora je poskytována prostřednictvím přizpůsobení platebního konektoru.)</span><span class="sxs-lookup"><span data-stu-id="7128b-411">OPOS (Support is provided through customization of the payment connector.)</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="7128b-412">Zaznamenání podpisu</span><span class="sxs-lookup"><span data-stu-id="7128b-412">Signature capture</span></span></td>
+<td><span data-ttu-id="7128b-413">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-413">OPOS</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="7128b-414">Patební terminál </span><span class="sxs-lookup"><span data-stu-id="7128b-414">Payment terminal</span></span></td>
+<td><ul>
+<li><span data-ttu-id="7128b-415">Podpora vlastního zařízení</span><span class="sxs-lookup"><span data-stu-id="7128b-415">Custom device support</span></span></li>
+<li><span data-ttu-id="7128b-416">Síť (další informace naleznete v dokumentaci konektoru platby.)</span><span class="sxs-lookup"><span data-stu-id="7128b-416">Network (For more information, see the payment connector documentation.)</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a>Všechny moderní POS klienty, které mají sdílenou hardwarovou stanici IIS
+### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a><span data-ttu-id="7128b-417">Všechny moderní POS klienty, které mají vyhrazené hardwarové stanice IIS</span><span class="sxs-lookup"><span data-stu-id="7128b-417">All Modern POS clients that have a dedicated IIS hardware station</span></span>
 
-**Poznámka:** Když je hardwarová stanice IIS "sdílena", více zařízení může používat hardwarovou stanici najednou. V tomto scénáři byste měli používat pouze zařízení uvedená v následující tabulce. Pokud se pokoušíte sdílet zařízení, která zde nejsou uvedena, jako například čtečky čárových kódů a MSR, dojde k chybě, jakmile se několik zařízení pokusí uplatnit stejné periferní zařízení. V budoucnu se takové konfiguraci explicitně zabrání.
+<span data-ttu-id="7128b-418">**Poznámka:** pokud je hardwarová stanice "vyhrazena", je vztah 1:1 mezi klientem POS a hardwarovou stanicí.</span><span class="sxs-lookup"><span data-stu-id="7128b-418">**Note:** When the IIS hardware station is “dedicated,” there is a one-to-one relationship between the POS client and the hardware station.</span></span>
 
 <table>
 <colgroup>
@@ -425,386 +341,470 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 </colgroup>
 <thead>
 <tr class="header">
-<th>Podporovaná třída zařízení</th>
-<th>Podporovaná rozhraní</th>
+<th><span data-ttu-id="7128b-419">Podporovaná třída zařízení</span><span class="sxs-lookup"><span data-stu-id="7128b-419">Supported device class</span></span></th>
+<th><span data-ttu-id="7128b-420">Podporovaná rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-420">Supported interfaces</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Tiskárna</td>
+<td><span data-ttu-id="7128b-421">Tiskárna</span><span class="sxs-lookup"><span data-stu-id="7128b-421">Printer</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li><strong>Poznámka</strong> k ovladači Windows: U tiskáren Windows v síti musí mít uživatel hardwarové stanice oprávnění k přístupu k tiskárně.</li>
-<li>Síť</li>
+<li><span data-ttu-id="7128b-422">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-422">OPOS</span></span></li>
+<li><span data-ttu-id="7128b-423"><strong>Poznámka</strong> k ovladači Windows: U tiskáren Windows v síti musí mít uživatel hardwarové stanice oprávnění k přístupu k tiskárně.</span><span class="sxs-lookup"><span data-stu-id="7128b-423">Windows driver <strong>Note:</strong> For Windows printers on a network, the user of the hardware station must have permission to access the printer.</span></span></li>
+<li><span data-ttu-id="7128b-424">Síť</span><span class="sxs-lookup"><span data-stu-id="7128b-424">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Tiskárna 2</td>
+<td><span data-ttu-id="7128b-425">Tiskárna 2</span><span class="sxs-lookup"><span data-stu-id="7128b-425">Printer 2</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Ovladač systému Windows</li>
-<li>Síť</li>
+<li><span data-ttu-id="7128b-426">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-426">OPOS</span></span></li>
+<li><span data-ttu-id="7128b-427">Ovladač systému Windows</span><span class="sxs-lookup"><span data-stu-id="7128b-427">Windows driver</span></span></li>
+<li><span data-ttu-id="7128b-428">Síť</span><span class="sxs-lookup"><span data-stu-id="7128b-428">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Výstavce</td>
+<td><span data-ttu-id="7128b-429">Řádkový displej</span><span class="sxs-lookup"><span data-stu-id="7128b-429">Line display</span></span></td>
+<td><span data-ttu-id="7128b-430">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-430">OPOS</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="7128b-431">MSR</span><span class="sxs-lookup"><span data-stu-id="7128b-431">MSR</span></span></td>
+<td><span data-ttu-id="7128b-432">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-432">OPOS</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="7128b-433">Výstavce</span><span class="sxs-lookup"><span data-stu-id="7128b-433">Drawer</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Síťová <strong>poznámka:</strong> pouze jednu zásuvku na každý hardwarový profil lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</li>
+<li><span data-ttu-id="7128b-434">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-434">OPOS</span></span></li>
+<li><span data-ttu-id="7128b-435">Síťová <strong>poznámka:</strong> pouze jednu zásuvku na každý hardwarový profil lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</span><span class="sxs-lookup"><span data-stu-id="7128b-435">Network <strong>Note:</strong> Only one drawer per hardware profile can be set up if <strong>Use shared shift</strong> is configured on the drawer.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Zásuvka 2</td>
+<td><span data-ttu-id="7128b-436">Zásuvka 2</span><span class="sxs-lookup"><span data-stu-id="7128b-436">Drawer 2</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Síť</li>
+<li><span data-ttu-id="7128b-437">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-437">OPOS</span></span></li>
+<li><span data-ttu-id="7128b-438">Síť</span><span class="sxs-lookup"><span data-stu-id="7128b-438">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Patební terminál </td>
+<td><span data-ttu-id="7128b-439">Skener</span><span class="sxs-lookup"><span data-stu-id="7128b-439">Scanner</span></span></td>
+<td><span data-ttu-id="7128b-440">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-440">OPOS</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="7128b-441">Skener 2</span><span class="sxs-lookup"><span data-stu-id="7128b-441">Scanner 2</span></span></td>
+<td><span data-ttu-id="7128b-442">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-442">OPOS</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="7128b-443">Měřítko</span><span class="sxs-lookup"><span data-stu-id="7128b-443">Scale</span></span></td>
+<td><span data-ttu-id="7128b-444">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-444">OPOS</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="7128b-445">Klávesnice pro kód PIN</span><span class="sxs-lookup"><span data-stu-id="7128b-445">PIN pad</span></span></td>
+<td><span data-ttu-id="7128b-446">OPOS (podpora je poskytována prostřednictvím přizpůsobení platebního konektoru.)</span><span class="sxs-lookup"><span data-stu-id="7128b-446">OPOS (Support is provided through customization of the payment connector.)</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="7128b-447">Podpis</span><span class="sxs-lookup"><span data-stu-id="7128b-447">Sig.</span></span> <span data-ttu-id="7128b-448">zachycení</span><span class="sxs-lookup"><span data-stu-id="7128b-448">capture</span></span></td>
+<td><span data-ttu-id="7128b-449">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-449">OPOS</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="7128b-450">Patební terminál </span><span class="sxs-lookup"><span data-stu-id="7128b-450">Payment terminal</span></span></td>
 <td><ul>
-<li>Podpora vlastního zařízení</li>
-<li>Síť (další informace naleznete v dokumentaci konektoru platby.)</li>
+<li><span data-ttu-id="7128b-451">Podpora vlastního zařízení</span><span class="sxs-lookup"><span data-stu-id="7128b-451">Custom device support</span></span></li>
+<li><span data-ttu-id="7128b-452">Síť (další informace naleznete v dokumentaci konektoru platby.)</span><span class="sxs-lookup"><span data-stu-id="7128b-452">Network (For more information, see the payment connector documentation.)</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="configuration-for-supported-scenarios"></a>Konfigurace pro podporované scénáře
-Další informace o vytváření hardwarových profilů naleznete v tématu [Definování a udržování kanálových klientů, včetně registrů a hardwarových stanic](define-maintain-channel-clients-registers-hw-stations.md). **Poznámka:** V aplikaci Microsoft Dynamics 365 for Retail, verze 1611 se hardwarový profil stanice již nepoužívá. Atributy, které jste dříve nastavili v profilu hardwarové stanice, jsou nyní součástí samotné hardwarové stanice.
+### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a><span data-ttu-id="7128b-453">Všechny moderní POS klienty, které mají sdílenou hardwarovou stanici IIS</span><span class="sxs-lookup"><span data-stu-id="7128b-453">All Modern POS clients that have a shared IIS hardware station</span></span>
 
-### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Moderní POS pro systém Windows s hardwarovou stanicí IPC (vestavěnou)
+<span data-ttu-id="7128b-454">**Poznámka:** Když je hardwarová stanice IIS "sdílena", více zařízení může používat hardwarovou stanici najednou.</span><span class="sxs-lookup"><span data-stu-id="7128b-454">**Note:** When the IIS hardware station is “shared,” multiple devices can use the hardware station at the same time.</span></span> <span data-ttu-id="7128b-455">V tomto scénáři byste měli používat pouze zařízení uvedená v následující tabulce.</span><span class="sxs-lookup"><span data-stu-id="7128b-455">For this scenario, you should use only the devices that are listed in the following table.</span></span> <span data-ttu-id="7128b-456">Pokud se pokoušíte sdílet zařízení, která zde nejsou uvedena, jako například čtečky čárových kódů a MSR, dojde k chybě, jakmile se několik zařízení pokusí uplatnit stejné periferní zařízení.</span><span class="sxs-lookup"><span data-stu-id="7128b-456">If you try to share devices that aren't listed here, such as bar code scanners and MSRs, errors will occur when multiple devices try to claim the same peripheral.</span></span> <span data-ttu-id="7128b-457">V budoucnu se takové konfiguraci explicitně zabrání.</span><span class="sxs-lookup"><span data-stu-id="7128b-457">In the future, such a configuration will be explicitly prevented.</span></span>
 
-Tato konfigurace je nejtypičtější konfigurací tradičních pevných POS registrů. Pro tento scénář jsou informace o hardwarovém profilu mapovány přímo do samotného registru. Číslo terminálu EFT by mělo být také nastaveno v samotném registru. Chcete-li nastavit tuto konfiguraci, postupujte následujícím způsobem:
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><span data-ttu-id="7128b-458">Podporovaná třída zařízení</span><span class="sxs-lookup"><span data-stu-id="7128b-458">Supported device class</span></span></th>
+<th><span data-ttu-id="7128b-459">Podporovaná rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-459">Supported interfaces</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span data-ttu-id="7128b-460">Tiskárna</span><span class="sxs-lookup"><span data-stu-id="7128b-460">Printer</span></span></td>
+<td><ul>
+<li><span data-ttu-id="7128b-461">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-461">OPOS</span></span></li>
+<li><span data-ttu-id="7128b-462"><strong>Poznámka</strong> k ovladači Windows: U tiskáren Windows v síti musí mít uživatel hardwarové stanice oprávnění k přístupu k tiskárně.</span><span class="sxs-lookup"><span data-stu-id="7128b-462">Windows driver <strong>Note:</strong> For Windows printers on a network, the user of the hardware station must have permission to access the printer.</span></span></li>
+<li><span data-ttu-id="7128b-463">Síť</span><span class="sxs-lookup"><span data-stu-id="7128b-463">Network</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="7128b-464">Tiskárna 2</span><span class="sxs-lookup"><span data-stu-id="7128b-464">Printer 2</span></span></td>
+<td><ul>
+<li><span data-ttu-id="7128b-465">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-465">OPOS</span></span></li>
+<li><span data-ttu-id="7128b-466">Ovladač systému Windows</span><span class="sxs-lookup"><span data-stu-id="7128b-466">Windows driver</span></span></li>
+<li><span data-ttu-id="7128b-467">Síť</span><span class="sxs-lookup"><span data-stu-id="7128b-467">Network</span></span></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="7128b-468">Výstavce</span><span class="sxs-lookup"><span data-stu-id="7128b-468">Drawer</span></span></td>
+<td><ul>
+<li><span data-ttu-id="7128b-469">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-469">OPOS</span></span></li>
+<li><span data-ttu-id="7128b-470">Síťová <strong>poznámka:</strong> pouze jednu zásuvku na každý hardwarový profil lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</span><span class="sxs-lookup"><span data-stu-id="7128b-470">Network <strong>Note:</strong> Only one drawer per hardware profile can be set up if <strong>Use shared shift</strong> is configured on the drawer.</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="7128b-471">Zásuvka 2</span><span class="sxs-lookup"><span data-stu-id="7128b-471">Drawer 2</span></span></td>
+<td><ul>
+<li><span data-ttu-id="7128b-472">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-472">OPOS</span></span></li>
+<li><span data-ttu-id="7128b-473">Síť</span><span class="sxs-lookup"><span data-stu-id="7128b-473">Network</span></span></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="7128b-474">Patební terminál </span><span class="sxs-lookup"><span data-stu-id="7128b-474">Payment terminal</span></span></td>
+<td><ul>
+<li><span data-ttu-id="7128b-475">Podpora vlastního zařízení</span><span class="sxs-lookup"><span data-stu-id="7128b-475">Custom device support</span></span></li>
+<li><span data-ttu-id="7128b-476">Síť (další informace naleznete v dokumentaci konektoru platby.)</span><span class="sxs-lookup"><span data-stu-id="7128b-476">Network (For more information, see the payment connector documentation.)</span></span></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
-1.  Vytvořte profil hardwaru, ve kterém jsou nakonfigurovány všechny potřebné periferie.
-2.  Namapovat hardwarový profil k pokladně POS.
-3.  Pak vytvořte hardwarovou stanici typu **Vyhrazený** pro obchod, kde bude pokladna POS používána. Popis je volitelný. **Poznámka:** Na hardwarové stanici nemusíte nastavovat žádné jiné vlastnosti. Všechny další požadované informace, například profil hardwaru budou pocházet ze samotné poklady.
-4.  Klikněte na **Maloobchodní prodej** &gt; **Maloobchodní IT** &gt; **Distribuční plán**.
-5.  Vyberte plán distribuce **1090** pro synchronizování nového hardwarového profilu do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
-6.  Vyberte plán distribuce **1040** pro synchronizování nové hardwarové stanice do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
-7.  Instalace a aktivace moderní POS pro systém Windows.
-8.  Spusťte moderní POS pro systém Windows spustit a začněte používat připojená periferní zařízení.
+## <a name="configuration-for-supported-scenarios"></a><span data-ttu-id="7128b-477">Konfigurace pro podporované scénáře</span><span class="sxs-lookup"><span data-stu-id="7128b-477">Configuration for supported scenarios</span></span>
+<span data-ttu-id="7128b-478">Další informace o vytváření hardwarových profilů naleznete v tématu [Definování a udržování kanálových klientů, včetně registrů a hardwarových stanic](define-maintain-channel-clients-registers-hw-stations.md).</span><span class="sxs-lookup"><span data-stu-id="7128b-478">For more information about how to create hardware profiles, see [Define and maintain channel clients, including registers and hardware stations](define-maintain-channel-clients-registers-hw-stations.md).</span></span> <span data-ttu-id="7128b-479">**Poznámka:** V aplikaci Microsoft Dynamics 365 for Retail, verze 1611 se hardwarový profil stanice již nepoužívá.</span><span class="sxs-lookup"><span data-stu-id="7128b-479">**Note:** For Microsoft Dynamics 365 for Retail version 1611, the hardware station profile is no longer used.</span></span> <span data-ttu-id="7128b-480">Atributy, které jste dříve nastavili v profilu hardwarové stanice, jsou nyní součástí samotné hardwarové stanice.</span><span class="sxs-lookup"><span data-stu-id="7128b-480">Attributes that you previously set up in the hardware station profile are now part of the hardware station itself.</span></span>
 
-### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a>Všechny moderní POS klienty, které mají vyhrazené hardwarové stanice IIS
+### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a><span data-ttu-id="7128b-481">Moderní POS pro systém Windows s hardwarovou stanicí IPC (vestavěnou)</span><span class="sxs-lookup"><span data-stu-id="7128b-481">Modern POS for Windows with an IPC (built-in) hardware station</span></span>
 
-Tato konfigurace může být použita pro všechny moderní POS klienty, které mají hardwarovou stanici, která je používána výlučně jednou pokladnou POS. Chcete-li nastavit tuto konfiguraci, postupujte následujícím způsobem:
+<span data-ttu-id="7128b-482">Tato konfigurace je nejtypičtější konfigurací tradičních pevných POS registrů.</span><span class="sxs-lookup"><span data-stu-id="7128b-482">This configuration is the most typical configuration for traditional, fixed POS registers.</span></span> <span data-ttu-id="7128b-483">Pro tento scénář jsou informace o hardwarovém profilu mapovány přímo do samotného registru.</span><span class="sxs-lookup"><span data-stu-id="7128b-483">For this scenario, the hardware profile information is mapped directly to the register itself.</span></span> <span data-ttu-id="7128b-484">Číslo terminálu EFT by mělo být také nastaveno v samotném registru.</span><span class="sxs-lookup"><span data-stu-id="7128b-484">The EFT terminal number should also be set on the register itself.</span></span> <span data-ttu-id="7128b-485">Chcete-li nastavit tuto konfiguraci, postupujte následujícím způsobem:</span><span class="sxs-lookup"><span data-stu-id="7128b-485">To set up this configuration, follow these steps.</span></span>
 
-1.  Vytvořte profil hardwaru, ve kterém jsou nakonfigurovány všechny potřebné periferie.
-2.  Pak vytvořte hardwarovou stanici typu **Vyhrazený** pro obchod, kde bude pokladna POS používána.
-3.  Na vyhrazené hardwarové stanici nastavte následující vlastnosti:
-    -   **Název hostitele** – název hostitelského počítače kde bude spuštěna hardwarová stanice. **Poznámka:** Cloudová POS dokáže rozluštit **localhost** pro určení místního počítače, kde běží tato cloudová POS. Certifikát, který je požadován pro spárování cloudové POS s hardwarovou stanicí, však musí mít jako název počítače také "Localhost". Chcete-li se vyhnout problémům, doporučujeme v případě potřeby uvést instanci každé vyhrazené hardwarové stanice pro úložiště. Pro každou hardwarovou stanici by měl název hostitele odpovídat názvu počítače, kde bude tato hardwarová stanice umístěna.
-    -   **Port** – Port, který má hardwarová stanice použít pro komunikaci s moderním POS klientem.
-    -   **Hardwarový profil** - Není-li hardwarový profil poskytován na samotné hardwarové stanici, použije se hardwarový profil, který je přiřazen k pokladně.
-    -   **Číslo EFT POS** – ID terminálu EFT, které je použito při odesílání EFT autorizací. Toto ID je poskytováno procesorem platební karty.
-    -   **Název balíčku** – balíček hardwarové stanice pro použití při nasazení hardwarové stanice.
+1.  <span data-ttu-id="7128b-486">Vytvořte profil hardwaru, ve kterém jsou nakonfigurovány všechny potřebné periferie.</span><span class="sxs-lookup"><span data-stu-id="7128b-486">Create a hardware profile where all the required peripherals are configured.</span></span>
+2.  <span data-ttu-id="7128b-487">Namapovat hardwarový profil k pokladně POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-487">Map the hardware profile to the POS register.</span></span>
+3.  <span data-ttu-id="7128b-488">Pak vytvořte hardwarovou stanici typu **Vyhrazený** pro obchod, kde bude pokladna POS používána.</span><span class="sxs-lookup"><span data-stu-id="7128b-488">Create a hardware station of the **Dedicated** type for the retail store where the POS register will be used.</span></span> <span data-ttu-id="7128b-489">Popis je volitelný.</span><span class="sxs-lookup"><span data-stu-id="7128b-489">A description is optional.</span></span> <span data-ttu-id="7128b-490">**Poznámka:** Na hardwarové stanici nemusíte nastavovat žádné jiné vlastnosti.</span><span class="sxs-lookup"><span data-stu-id="7128b-490">**Note:** You don't have to set any other properties on the hardware station.</span></span> <span data-ttu-id="7128b-491">Všechny další požadované informace, například profil hardwaru budou pocházet ze samotné poklady.</span><span class="sxs-lookup"><span data-stu-id="7128b-491">All other required information, such as the hardware profile, will come from the register itself.</span></span>
+4.  <span data-ttu-id="7128b-492">Klikněte na **Maloobchodní prodej** &gt; **Maloobchodní IT** &gt; **Distribuční plán**.</span><span class="sxs-lookup"><span data-stu-id="7128b-492">Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
+5.  <span data-ttu-id="7128b-493">Vyberte plán distribuce **1090** pro synchronizování nového hardwarového profilu do úložiště.</span><span class="sxs-lookup"><span data-stu-id="7128b-493">Select the **1090** distribution schedule to sync the new hardware profile to the store.</span></span> <span data-ttu-id="7128b-494">Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-494">Click **Run now** to sync changes to the POS.</span></span>
+6.  <span data-ttu-id="7128b-495">Vyberte plán distribuce **1040** pro synchronizování nové hardwarové stanice do úložiště.</span><span class="sxs-lookup"><span data-stu-id="7128b-495">Select the **1040** distribution schedule to sync the new hardware station to the store.</span></span> <span data-ttu-id="7128b-496">Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-496">Click **Run now** to sync changes to the POS.</span></span>
+7.  <span data-ttu-id="7128b-497">Instalace a aktivace moderní POS pro systém Windows.</span><span class="sxs-lookup"><span data-stu-id="7128b-497">Install and activate Modern POS for Windows.</span></span>
+8.  <span data-ttu-id="7128b-498">Spusťte moderní POS pro systém Windows spustit a začněte používat připojená periferní zařízení.</span><span class="sxs-lookup"><span data-stu-id="7128b-498">Start Modern POS for Windows, and begin to use the connected peripheral devices.</span></span>
 
-4.  Klikněte na **Maloobchodní prodej** &gt; **Maloobchodní IT** &gt; **Distribuční plán**.
-5.  Vyberte plán distribuce **1090** pro synchronizování nového hardwarového profilu do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
-6.  Vyberte plán distribuce **1040** pro synchronizování nové hardwarové stanice do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
-7.  Instalace hardwarové stanice. Další informace o instalaci hardwarové stanice, viz [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md).
-8.  Instalace a aktivace moderní POS. Další informace o instalaci moderní POS, viz [Instalace a konfigurace moderní POS pro maloobchod](retail-modern-pos-device-activation.md).
-9.  Přihlášte se do moderní POS a vyberte **Provést operace bez zásuvky**.
-10. Spusťte operaci **Spravovat hardwarové stanice**.
-11. Klikněte na **Spravovat**.
-12. Na stránce správy hardwarových stanic použijte možnost zapnutí hardwarové stanice.
-13. Vyberte hardwarovou stanici, kterou chcete použít a potom klikněte na **Spárovat**.
-14. Poté, co je hardwarová stanice spárována, klikněte na tlačítko **Zavřít**.
-15. Na stránce výběru hardwarové stanice klikněte na nedávno vybranou hardwarovou stanici, abyste ji aktivovali.
+### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a><span data-ttu-id="7128b-499">Všechny moderní POS klienty, které mají vyhrazené hardwarové stanice IIS</span><span class="sxs-lookup"><span data-stu-id="7128b-499">All Modern POS clients that have a dedicated IIS hardware station</span></span>
 
-### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a>Všechny moderní POS klienty, které mají sdílenou hardwarovou stanici IIS
+<span data-ttu-id="7128b-500">Tato konfigurace může být použita pro všechny moderní POS klienty, které mají hardwarovou stanici, která je používána výlučně jednou pokladnou POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-500">This configuration can be used for all Modern POS clients that have a hardware station that is used exclusively by one POS register.</span></span> <span data-ttu-id="7128b-501">Chcete-li nastavit tuto konfiguraci, postupujte následujícím způsobem:</span><span class="sxs-lookup"><span data-stu-id="7128b-501">To set up this configuration, follow these steps.</span></span>
 
-Tato konfigurace může být použita pro všechny moderní POS klienty, které sdílejí hardwarové stanice s jinými zařízeními. Chcete-li nastavit tuto konfiguraci, postupujte následujícím způsobem:
+1.  <span data-ttu-id="7128b-502">Vytvořte profil hardwaru, ve kterém jsou nakonfigurovány všechny potřebné periferie.</span><span class="sxs-lookup"><span data-stu-id="7128b-502">Create a hardware profile where all the required peripherals are configured.</span></span>
+2.  <span data-ttu-id="7128b-503">Pak vytvořte hardwarovou stanici typu **Vyhrazený** pro obchod, kde bude pokladna POS používána.</span><span class="sxs-lookup"><span data-stu-id="7128b-503">Create a hardware station of the **Dedicated** type for the retail store where the POS register will be used.</span></span>
+3.  <span data-ttu-id="7128b-504">Na vyhrazené hardwarové stanici nastavte následující vlastnosti:</span><span class="sxs-lookup"><span data-stu-id="7128b-504">On the dedicated hardware station, set the following properties:</span></span>
+    -   <span data-ttu-id="7128b-505">**Název hostitele** – název hostitelského počítače kde bude spuštěna hardwarová stanice.</span><span class="sxs-lookup"><span data-stu-id="7128b-505">**Host name** – The name of the host computer where the hardware station will run.</span></span> <span data-ttu-id="7128b-506">**Poznámka:** Cloudová POS dokáže rozluštit **localhost** pro určení místního počítače, kde běží tato cloudová POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-506">**Note:** Cloud POS can resolve **localhost** to determine the local computer where Cloud POS is running.</span></span> <span data-ttu-id="7128b-507">Certifikát, který je požadován pro spárování cloudové POS s hardwarovou stanicí, však musí mít jako název počítače také "Localhost".</span><span class="sxs-lookup"><span data-stu-id="7128b-507">However, the certificate that is required in order to pair Cloud POS with the hardware station must also have "Localhost" as the computer name.</span></span> <span data-ttu-id="7128b-508">Chcete-li se vyhnout problémům, doporučujeme v případě potřeby uvést instanci každé vyhrazené hardwarové stanice pro úložiště.</span><span class="sxs-lookup"><span data-stu-id="7128b-508">To avoid issues, we recommend that you list an instance of each dedicated hardware station for the store, as required.</span></span> <span data-ttu-id="7128b-509">Pro každou hardwarovou stanici by měl název hostitele odpovídat názvu počítače, kde bude tato hardwarová stanice umístěna.</span><span class="sxs-lookup"><span data-stu-id="7128b-509">For each hardware station, the host name should be the specific computer name where the hardware station will be deployed.</span></span>
+    -   <span data-ttu-id="7128b-510">**Port** – Port, který má hardwarová stanice použít pro komunikaci s moderním POS klientem.</span><span class="sxs-lookup"><span data-stu-id="7128b-510">**Port** – The port to use for the hardware station to communicate with the Modern POS client.</span></span>
+    -   <span data-ttu-id="7128b-511">**Hardwarový profil** - Není-li hardwarový profil poskytován na samotné hardwarové stanici, použije se hardwarový profil, který je přiřazen k pokladně.</span><span class="sxs-lookup"><span data-stu-id="7128b-511">**Hardware profile** – If the hardware profile isn't provided on the hardware station itself, the hardware profile that is assigned to the register will be used.</span></span>
+    -   <span data-ttu-id="7128b-512">**Číslo EFT POS** – ID terminálu EFT, které je použito při odesílání EFT autorizací.</span><span class="sxs-lookup"><span data-stu-id="7128b-512">**EFT POS number** – The EFT terminal ID to use when EFT authorizations are sent.</span></span> <span data-ttu-id="7128b-513">Toto ID je poskytováno procesorem platební karty.</span><span class="sxs-lookup"><span data-stu-id="7128b-513">This ID is provided by the credit card processor.</span></span>
+    -   <span data-ttu-id="7128b-514">**Název balíčku** – balíček hardwarové stanice pro použití při nasazení hardwarové stanice.</span><span class="sxs-lookup"><span data-stu-id="7128b-514">**Package name** – The hardware station package to use when the hardware station is deployed.</span></span>
 
-1.  Vytvořte hardwarový profil, ve kterém jsou nakonfigurovány potřebné periferie.
-2.  Pak vytvořte hardwarovou stanici typu **Sdílený** pro obchod, kde bude pokladna POS používána.
-3.  Na sdílené hardwarové stanici nastavte následující vlastnosti:
-    -   **Název hostitele** – název hostitelského počítače kde bude spuštěna hardwarová stanice.
-    -   **Popis** – Text, který pomůže identifikovat hardwarovou stanici, jako například **Vratky** nebo **Přední část obchodu**.
-    -   **Port** – Port, který má hardwarová stanice použít pro komunikaci s moderním POS klientem.
-    -   **Hardwarový profil** – každá sdílená hardwarové stanice by měla mít svůj hardwarový profil. Hardwarové profily lze sdílet mezi jednotlivými hardwarovými stanicemi, ale musí být namapovány na každou z nich. Navíc doporučujeme použít sdílené směny, pokud více zařízení používá stejnou sdílenou hardwarovou stanici. Pro nastavení sdílené směny, klikněte na **Maloobchodní prodej** &gt; **Konfigurace kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Hardwarové profily**. Pro každý sdílený hardwarový profil vyberte zásuvku hotovosti a nastavte možnost **Zásuvka sdílené směny** na **Ano**.
-    -   **Číslo EFT POS** – ID terminálu EFT, které je použito při odesílání EFT autorizací. Toto ID je poskytováno procesorem platební karty.
-    -   **Název balíčku** – balíček hardwarové stanice pro použití při nasazení hardwarové stanice.
+4.  <span data-ttu-id="7128b-515">Klikněte na **Maloobchodní prodej** &gt; **Maloobchodní IT** &gt; **Distribuční plán**.</span><span class="sxs-lookup"><span data-stu-id="7128b-515">Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
+5.  <span data-ttu-id="7128b-516">Vyberte plán distribuce **1090** pro synchronizování nového hardwarového profilu do úložiště.</span><span class="sxs-lookup"><span data-stu-id="7128b-516">Select the **1090** distribution schedule to sync the new hardware profile to the store.</span></span> <span data-ttu-id="7128b-517">Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-517">Click **Run now** to sync changes to the POS.</span></span>
+6.  <span data-ttu-id="7128b-518">Vyberte plán distribuce **1040** pro synchronizování nové hardwarové stanice do úložiště.</span><span class="sxs-lookup"><span data-stu-id="7128b-518">Select the **1040** distribution schedule to sync the new hardware station to the store.</span></span> <span data-ttu-id="7128b-519">Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-519">Click **Run now** to sync changes to the POS.</span></span>
+7.  <span data-ttu-id="7128b-520">Instalace hardwarové stanice.</span><span class="sxs-lookup"><span data-stu-id="7128b-520">Install the hardware station.</span></span> <span data-ttu-id="7128b-521">Další informace o instalaci hardwarové stanice, viz [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md).</span><span class="sxs-lookup"><span data-stu-id="7128b-521">For more information about how to install the hardware station, see [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md).</span></span>
+8.  <span data-ttu-id="7128b-522">Instalace a aktivace moderní POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-522">Install and activate Modern POS.</span></span> <span data-ttu-id="7128b-523">Další informace o instalaci moderní POS, viz [Instalace a konfigurace moderní POS pro maloobchod](retail-modern-pos-device-activation.md).</span><span class="sxs-lookup"><span data-stu-id="7128b-523">For more information about how to install Modern POS, see [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md).</span></span>
+9.  <span data-ttu-id="7128b-524">Přihlášte se do moderní POS a vyberte **Provést operace bez zásuvky**.</span><span class="sxs-lookup"><span data-stu-id="7128b-524">Sign in to Modern POS, and select **Perform non-drawer operations**.</span></span>
+10. <span data-ttu-id="7128b-525">Spusťte operaci **Spravovat hardwarové stanice**.</span><span class="sxs-lookup"><span data-stu-id="7128b-525">Start the **Manage hardware stations** operation.</span></span>
+11. <span data-ttu-id="7128b-526">Klikněte na **Spravovat**.</span><span class="sxs-lookup"><span data-stu-id="7128b-526">Click **Manage**.</span></span>
+12. <span data-ttu-id="7128b-527">Na stránce správy hardwarových stanic použijte možnost zapnutí hardwarové stanice.</span><span class="sxs-lookup"><span data-stu-id="7128b-527">On the hardware station management page, set the option to turn on the hardware station.</span></span>
+13. <span data-ttu-id="7128b-528">Vyberte hardwarovou stanici, kterou chcete použít a potom klikněte na **Spárovat**.</span><span class="sxs-lookup"><span data-stu-id="7128b-528">Select the hardware station to use, and then click **Pair**.</span></span>
+14. <span data-ttu-id="7128b-529">Poté, co je hardwarová stanice spárována, klikněte na tlačítko **Zavřít**.</span><span class="sxs-lookup"><span data-stu-id="7128b-529">After the hardware station is paired, click **Close**.</span></span>
+15. <span data-ttu-id="7128b-530">Na stránce výběru hardwarové stanice klikněte na nedávno vybranou hardwarovou stanici, abyste ji aktivovali.</span><span class="sxs-lookup"><span data-stu-id="7128b-530">On the hardware station selection page, click the recently selected hardware station to make it active.</span></span>
 
-4.  Opakujte kroky 2 a 3 pro každou další hardwarovou stanici, která je v obchodě vyžadována.
-5.  Klikněte na **Maloobchodní prodej** &gt; **Maloobchodní IT** &gt; **Distribuční plán**.
-6.  Vyberte plán distribuce **1090** pro synchronizování nového hardwarového profilu do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
-7.  Vyberte plán distribuce **1040** pro synchronizování nové hardwarové stanice do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
-8.  Nainstalujte hardwarovou stanici na každý hostitelský počítač, který jste vytvořili v krocích 2 a 3. Další informace o instalaci hardwarové stanice, viz [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md).
-9.  Instalace a aktivace moderní POS. Další informace o instalaci moderní POS, viz [Instalace a konfigurace moderní POS pro maloobchod](retail-modern-pos-device-activation.md).
-10. Přihlášte se do moderní POS a vyberte **Provést operace bez zásuvky**.
-11. Spusťte operaci **Spravovat hardwarové stanice**.
+### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a><span data-ttu-id="7128b-531">Všechny moderní POS klienty, které mají sdílenou hardwarovou stanici IIS</span><span class="sxs-lookup"><span data-stu-id="7128b-531">All Modern POS clients that have a shared IIS hardware station</span></span>
 
-12. Klikněte na **Spravovat**.
-13. Na stránce správy hardwarových stanic použijte možnost zapnutí hardwarové stanice.
-14. Vyberte hardwarovou stanici, kterou chcete použít a potom klikněte na **Spárovat**.
-15. Zopakujte krok 14 pro každou hardwarovou stanici, kterou bude používat moderní POS.
-16. Jakmile jsou spárovány všechny potřebné hardwarové stanice, klikněte na tlačítko **Zavřít**.
-17. Na stránce výběru hardwarové stanice klikněte na nedávno vybranou hardwarovou stanici, abyste ji aktivovali. **Poznámka:** Pokud zařízení často používají různé hardwarové stanice, doporučujeme, abyste nakonfigurovali moderní POS tak, aby vyzvaly pokladníky k výběru hardwarové stanice při zahájení úhradového procesu. Klikněte na tlačítko **Retail** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Pokladny**. Vyberte pokladu a poté nastavte možnost **Vybrat při úhradě** na **Ano**. Použijte plán distribuce **1090** k synchronizování změn do databáze kanálů.
+<span data-ttu-id="7128b-532">Tato konfigurace může být použita pro všechny moderní POS klienty, které sdílejí hardwarové stanice s jinými zařízeními.</span><span class="sxs-lookup"><span data-stu-id="7128b-532">This configuration can be used for all Modern POS clients that share hardware stations with other devices.</span></span> <span data-ttu-id="7128b-533">Chcete-li nastavit tuto konfiguraci, postupujte následujícím způsobem:</span><span class="sxs-lookup"><span data-stu-id="7128b-533">To set up this configuration, follow these steps.</span></span>
 
-## <a name="extensibility"></a>Rozšiřitelnost
-Pro více informací o scénářích rozšiřitelnosti hardwarových stanic, viz [Rozšíření hardwarových stanic](dev-itpro/hardware-station-extensibility.md).
+1.  <span data-ttu-id="7128b-534">Vytvořte hardwarový profil, ve kterém jsou nakonfigurovány potřebné periferie.</span><span class="sxs-lookup"><span data-stu-id="7128b-534">Create a hardware profile where the required peripherals are configured.</span></span>
+2.  <span data-ttu-id="7128b-535">Pak vytvořte hardwarovou stanici typu **Sdílený** pro obchod, kde bude pokladna POS používána.</span><span class="sxs-lookup"><span data-stu-id="7128b-535">Create a hardware station of the **Shared** type for the retail store where the POS register will be used.</span></span>
+3.  <span data-ttu-id="7128b-536">Na sdílené hardwarové stanici nastavte následující vlastnosti:</span><span class="sxs-lookup"><span data-stu-id="7128b-536">On the shared hardware station, set the following properties:</span></span>
+    -   <span data-ttu-id="7128b-537">**Název hostitele** – název hostitelského počítače kde bude spuštěna hardwarová stanice.</span><span class="sxs-lookup"><span data-stu-id="7128b-537">**Host name** – The name of the host computer where the hardware station will run.</span></span>
+    -   <span data-ttu-id="7128b-538">**Popis** – Text, který pomůže identifikovat hardwarovou stanici, jako například **Vratky** nebo **Přední část obchodu**.</span><span class="sxs-lookup"><span data-stu-id="7128b-538">**Description** – Text that will help identify the hardware station, such as **Returns** or **Front of store**.</span></span>
+    -   <span data-ttu-id="7128b-539">**Port** – Port, který má hardwarová stanice použít pro komunikaci s moderním POS klientem.</span><span class="sxs-lookup"><span data-stu-id="7128b-539">**Port** – The port to use for the hardware station to communicate with the Modern POS client.</span></span>
+    -   <span data-ttu-id="7128b-540">**Hardwarový profil** – každá sdílená hardwarové stanice by měla mít svůj hardwarový profil.</span><span class="sxs-lookup"><span data-stu-id="7128b-540">**Hardware profile** – For shared hardware stations, each hardware station should have a hardware profile.</span></span> <span data-ttu-id="7128b-541">Hardwarové profily lze sdílet mezi jednotlivými hardwarovými stanicemi, ale musí být namapovány na každou z nich.</span><span class="sxs-lookup"><span data-stu-id="7128b-541">Hardware profiles can be shared among hardware stations, but they must be mapped to each hardware station.</span></span> <span data-ttu-id="7128b-542">Navíc doporučujeme použít sdílené směny, pokud více zařízení používá stejnou sdílenou hardwarovou stanici.</span><span class="sxs-lookup"><span data-stu-id="7128b-542">In addition, we recommend that you use shared shifts when multiple devices use the same shared hardware station.</span></span> <span data-ttu-id="7128b-543">Pro nastavení sdílené směny, klikněte na **Maloobchodní prodej** &gt; **Konfigurace kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Hardwarové profily**.</span><span class="sxs-lookup"><span data-stu-id="7128b-543">To set up a shared shift, click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.</span></span> <span data-ttu-id="7128b-544">Pro každý sdílený hardwarový profil vyberte zásuvku hotovosti a nastavte možnost **Zásuvka sdílené směny** na **Ano**.</span><span class="sxs-lookup"><span data-stu-id="7128b-544">For each shared hardware profile, select the cash drawer, and set the **Shared shift drawer** option to **Yes**.</span></span>
+    -   <span data-ttu-id="7128b-545">**Číslo EFT POS** – ID terminálu EFT, které je použito při odesílání EFT autorizací.</span><span class="sxs-lookup"><span data-stu-id="7128b-545">**EFT POS number** – The EFT terminal ID to use when EFT authorizations are sent.</span></span> <span data-ttu-id="7128b-546">Toto ID je poskytováno procesorem platební karty.</span><span class="sxs-lookup"><span data-stu-id="7128b-546">This ID is provided by the credit card processor.</span></span>
+    -   <span data-ttu-id="7128b-547">**Název balíčku** – balíček hardwarové stanice pro použití při nasazení hardwarové stanice.</span><span class="sxs-lookup"><span data-stu-id="7128b-547">**Package name** – The hardware station package to use when the hardware station is deployed.</span></span>
 
-## <a name="security"></a>Zabezpečení
-Podle stávajících bezpečnostních standardů je třeba ve výrobním prostředí použít následující nastavení: **Poznámka:** Instalátor hardwarových stanic automaticky provede tyto úpravy registru jako součást instalace prostřednictvím samoobsluhy.
+4.  <span data-ttu-id="7128b-548">Opakujte kroky 2 a 3 pro každou další hardwarovou stanici, která je v obchodě vyžadována.</span><span class="sxs-lookup"><span data-stu-id="7128b-548">Repeat steps 2 and 3 for each additional hardware station that is required in the store.</span></span>
+5.  <span data-ttu-id="7128b-549">Klikněte na **Maloobchodní prodej** &gt; **Maloobchodní IT** &gt; **Distribuční plán**.</span><span class="sxs-lookup"><span data-stu-id="7128b-549">Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
+6.  <span data-ttu-id="7128b-550">Vyberte plán distribuce **1090** pro synchronizování nového hardwarového profilu do úložiště.</span><span class="sxs-lookup"><span data-stu-id="7128b-550">Select the **1090** distribution schedule to sync the new hardware profile to the store.</span></span> <span data-ttu-id="7128b-551">Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-551">Click **Run now** to sync changes to the POS.</span></span>
+7.  <span data-ttu-id="7128b-552">Vyberte plán distribuce **1040** pro synchronizování nové hardwarové stanice do úložiště.</span><span class="sxs-lookup"><span data-stu-id="7128b-552">Select the **1040** distribution schedule to sync the new hardware station to the store.</span></span> <span data-ttu-id="7128b-553">Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-553">Click **Run now** to sync changes to the POS.</span></span>
+8.  <span data-ttu-id="7128b-554">Nainstalujte hardwarovou stanici na každý hostitelský počítač, který jste vytvořili v krocích 2 a 3.</span><span class="sxs-lookup"><span data-stu-id="7128b-554">Install the hardware station on each host computer that you set up in steps 2 and 3.</span></span> <span data-ttu-id="7128b-555">Další informace o instalaci hardwarové stanice, viz [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md).</span><span class="sxs-lookup"><span data-stu-id="7128b-555">For more information about how to install the hardware station, see [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md).</span></span>
+9.  <span data-ttu-id="7128b-556">Instalace a aktivace moderní POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-556">Install and activate Modern POS.</span></span> <span data-ttu-id="7128b-557">Další informace o instalaci moderní POS, viz [Instalace a konfigurace moderní POS pro maloobchod](retail-modern-pos-device-activation.md).</span><span class="sxs-lookup"><span data-stu-id="7128b-557">For more information about how to install Modern POS, see [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md).</span></span>
+10. <span data-ttu-id="7128b-558">Přihlášte se do moderní POS a vyberte **Provést operace bez zásuvky**.</span><span class="sxs-lookup"><span data-stu-id="7128b-558">Sign in to Modern POS, and select **Perform non-drawer operations**.</span></span>
+11. <span data-ttu-id="7128b-559">Spusťte operaci **Spravovat hardwarové stanice**.</span><span class="sxs-lookup"><span data-stu-id="7128b-559">Start the **Manage hardware stations** operation.</span></span>
 
--   Protokol Secure Sockets Layer (SSL) by měl být vypnut.
--   Je třeba povolit a používat pouze bezpečnostní vrstvu Transport Layer Security (TLS) verze 1.2 (nebo stávající nejnovější verzi). **Poznámka:** Ve výchozím nastavení, SSL a všechny verze TLS, s vyjímkou TLS 1.2, jsou zakázány. Chcete-li upravit nebo povolit tyto hodnoty, postupujte takto:
-    1.  Stiskněte klávesu s logem Windows + R pro otevření okna **Spustit**.
-    2.  V poli **Otevřít** zadejte **Regedit** a potom klikněte na tlačítko **OK**.
-    3.  Pokud se zobrazí okno **Řízení uživatelských účtů**, klikněte na tlačítko **Ano**.
-    4.  V okně **Editoru registru** přejděte na **HKEY\_LOCAL\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols**. Následující klíče byly automaticky vloženy, aby umožnily použití pouze protokolu TLS 1.2:
-        -   TLS 1.2Server:Enabled=1
-        -   TLS 1.2Server:DisabledByDefault=0
-        -   TLS 1.2Client:Enabled=1
-        -   TLS 1.2Client:DisabledByDefault=0
-        -   TLS 1.1Server:Enabled=0
-        -   TLS 1.1Client:Enabled=0
-        -   TLS 1.0Server:Enabled=0
-        -   TLS 1.0Client:Enabled=0
-        -   SSL 3.0Server:Enabled=0
-        -   SSL 3.0Client:Enabled=0
-        -   SSL 2.0Server:Enabled=0
-        -   SSL 2.0Client:Enabled=0
--   Žádné další síťové porty by neměly být otevřené, pokud nejsou vyžadovány ze známých a konkrétních důvodů.
--   Sdílení prostředků mezi zdroji musí být zakázáno a musí specifikovat povolené zdroje, které jsou akceptovány.
--   K získání certifikátů, které budou použity v počítačích, které spouštějí hardwarovou stanici, by měly být použity pouze důvěryhodné certifikační autority.
+12. <span data-ttu-id="7128b-560">Klikněte na **Spravovat**.</span><span class="sxs-lookup"><span data-stu-id="7128b-560">Click **Manage**.</span></span>
+13. <span data-ttu-id="7128b-561">Na stránce správy hardwarových stanic použijte možnost zapnutí hardwarové stanice.</span><span class="sxs-lookup"><span data-stu-id="7128b-561">On the hardware station management page, set the option to turn on the hardware station.</span></span>
+14. <span data-ttu-id="7128b-562">Vyberte hardwarovou stanici, kterou chcete použít a potom klikněte na **Spárovat**.</span><span class="sxs-lookup"><span data-stu-id="7128b-562">Select the hardware station to use, and then click **Pair**.</span></span>
+15. <span data-ttu-id="7128b-563">Zopakujte krok 14 pro každou hardwarovou stanici, kterou bude používat moderní POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-563">Repeat step 14 for each hardware station that Modern POS will use.</span></span>
+16. <span data-ttu-id="7128b-564">Jakmile jsou spárovány všechny potřebné hardwarové stanice, klikněte na tlačítko **Zavřít**.</span><span class="sxs-lookup"><span data-stu-id="7128b-564">After all the required hardware stations are paired, click **Close**.</span></span>
+17. <span data-ttu-id="7128b-565">Na stránce výběru hardwarové stanice klikněte na nedávno vybranou hardwarovou stanici, abyste ji aktivovali.</span><span class="sxs-lookup"><span data-stu-id="7128b-565">On the hardware station selection page, click the recently selected hardware station to make it active.</span></span> <span data-ttu-id="7128b-566">**Poznámka:** Pokud zařízení často používají různé hardwarové stanice, doporučujeme, abyste nakonfigurovali moderní POS tak, aby vyzvaly pokladníky k výběru hardwarové stanice při zahájení úhradového procesu.</span><span class="sxs-lookup"><span data-stu-id="7128b-566">**Note:** If devices often use different hardware stations, we recommend that you configure Modern POS to prompt cashiers to select a hardware station when they begin the tender process.</span></span> <span data-ttu-id="7128b-567">Klikněte na tlačítko **Retail** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Pokladny**.</span><span class="sxs-lookup"><span data-stu-id="7128b-567">Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.</span></span> <span data-ttu-id="7128b-568">Vyberte pokladu a poté nastavte možnost **Vybrat při úhradě** na **Ano**.</span><span class="sxs-lookup"><span data-stu-id="7128b-568">Select the register, and then set the **Select upon tender** option to **Yes**.</span></span> <span data-ttu-id="7128b-569">Použijte plán distribuce **1090** k synchronizování změn do databáze kanálů.</span><span class="sxs-lookup"><span data-stu-id="7128b-569">Use the **1090** distribution schedule to sync changes to the channel database.</span></span>
 
-**Poznámka:** Je velmi důležité, abyste přezkoumali bezpečnostní pokyny IIS a také požadavky od Payment Card Industry (PCI).
+## <a name="extensibility"></a><span data-ttu-id="7128b-570">Rozšiřitelnost</span><span class="sxs-lookup"><span data-stu-id="7128b-570">Extensibility</span></span>
+<span data-ttu-id="7128b-571">Pro více informací o scénářích rozšiřitelnosti hardwarových stanic, viz [Rozšíření hardwarových stanic](dev-itpro/hardware-station-extensibility.md).</span><span class="sxs-lookup"><span data-stu-id="7128b-571">For information about extensibility scenarios for the hardware station, see [Hardware Station extensibility](dev-itpro/hardware-station-extensibility.md).</span></span>
 
-## <a name="peripheral-simulator"></a>Simulátor periferních zařízení
-Informace naleznete v tématu [Maloobchodní simulátor periferií](dev-itpro/retail-peripheral-simulator.md).
+## <a name="security"></a><span data-ttu-id="7128b-572">Zabezpečení</span><span class="sxs-lookup"><span data-stu-id="7128b-572">Security</span></span>
+<span data-ttu-id="7128b-573">Podle stávajících bezpečnostních standardů je třeba ve výrobním prostředí použít následující nastavení: **Poznámka:** Instalátor hardwarových stanic automaticky provede tyto úpravy registru jako součást instalace prostřednictvím samoobsluhy.</span><span class="sxs-lookup"><span data-stu-id="7128b-573">According to current security standards, the following settings should be used in a production environment: **Note:** The hardware station installer will automatically make these registry edits as part of the installation through self-service.</span></span>
 
-## <a name="microsofttested-peripheral-devices"></a>Periferní zařízení otestována Microsoftem
-### <a name="ipc-built-in-hardware-station"></a>Hardwarová stanice IPC (vestavěná)
+-   <span data-ttu-id="7128b-574">Protokol Secure Sockets Layer (SSL) by měl být vypnut.</span><span class="sxs-lookup"><span data-stu-id="7128b-574">Secure Sockets Layer (SSL) should be disabled.</span></span>
+-   <span data-ttu-id="7128b-575">Je třeba povolit a používat pouze bezpečnostní vrstvu Transport Layer Security (TLS) verze 1.2 (nebo stávající nejnovější verzi).</span><span class="sxs-lookup"><span data-stu-id="7128b-575">Only Transport Layer Security (TLS) version 1.2 (or the current highest version) should be enabled and used.</span></span> <span data-ttu-id="7128b-576">**Poznámka:** Ve výchozím nastavení, SSL a všechny verze TLS, s vyjímkou TLS 1.2, jsou zakázány.</span><span class="sxs-lookup"><span data-stu-id="7128b-576">**Note:** By default, SSL and all version of TLS except TLS 1.2 are disabled.</span></span> <span data-ttu-id="7128b-577">Chcete-li upravit nebo povolit tyto hodnoty, postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="7128b-577">To edit or enable these values, follow these steps:</span></span>
+    1.  <span data-ttu-id="7128b-578">Stiskněte klávesu s logem Windows + R pro otevření okna **Spustit**.</span><span class="sxs-lookup"><span data-stu-id="7128b-578">Press the Windows logo key+R to open a **Run** window.</span></span>
+    2.  <span data-ttu-id="7128b-579">V poli **Otevřít** zadejte **Regedit** a potom klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="7128b-579">In the **Open** field, type **Regedit**, and then click **OK**.</span></span>
+    3.  <span data-ttu-id="7128b-580">Pokud se zobrazí okno **Řízení uživatelských účtů**, klikněte na tlačítko **Ano**.</span><span class="sxs-lookup"><span data-stu-id="7128b-580">If a **User Account Control** message box appears, click **Yes**.</span></span>
+    4.  <span data-ttu-id="7128b-581">V okně **Editoru registru** přejděte na **HKEY\_LOCAL\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols**.</span><span class="sxs-lookup"><span data-stu-id="7128b-581">In the **Registry Editor** window, navigate to **HKEY\_LOCAL\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols**.</span></span> <span data-ttu-id="7128b-582">Následující klíče byly automaticky vloženy, aby umožnily použití pouze protokolu TLS 1.2:</span><span class="sxs-lookup"><span data-stu-id="7128b-582">The following keys have been automatically entered to allow for TLS 1.2 only:</span></span>
+        -   <span data-ttu-id="7128b-583">TLS 1.2Server:Enabled=1</span><span class="sxs-lookup"><span data-stu-id="7128b-583">TLS 1.2Server:Enabled=1</span></span>
+        -   <span data-ttu-id="7128b-584">TLS 1.2Server:DisabledByDefault=0</span><span class="sxs-lookup"><span data-stu-id="7128b-584">TLS 1.2Server:DisabledByDefault=0</span></span>
+        -   <span data-ttu-id="7128b-585">TLS 1.2Client:Enabled=1</span><span class="sxs-lookup"><span data-stu-id="7128b-585">TLS 1.2Client:Enabled=1</span></span>
+        -   <span data-ttu-id="7128b-586">TLS 1.2Client:DisabledByDefault=0</span><span class="sxs-lookup"><span data-stu-id="7128b-586">TLS 1.2Client:DisabledByDefault=0</span></span>
+        -   <span data-ttu-id="7128b-587">TLS 1.1Server:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="7128b-587">TLS 1.1Server:Enabled=0</span></span>
+        -   <span data-ttu-id="7128b-588">TLS 1.1Client:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="7128b-588">TLS 1.1Client:Enabled=0</span></span>
+        -   <span data-ttu-id="7128b-589">TLS 1.0Server:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="7128b-589">TLS 1.0Server:Enabled=0</span></span>
+        -   <span data-ttu-id="7128b-590">TLS 1.0Client:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="7128b-590">TLS 1.0Client:Enabled=0</span></span>
+        -   <span data-ttu-id="7128b-591">SSL 3.0Server:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="7128b-591">SSL 3.0Server:Enabled=0</span></span>
+        -   <span data-ttu-id="7128b-592">SSL 3.0Client:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="7128b-592">SSL 3.0Client:Enabled=0</span></span>
+        -   <span data-ttu-id="7128b-593">SSL 2.0Server:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="7128b-593">SSL 2.0Server:Enabled=0</span></span>
+        -   <span data-ttu-id="7128b-594">SSL 2.0Client:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="7128b-594">SSL 2.0Client:Enabled=0</span></span>
+-   <span data-ttu-id="7128b-595">Žádné další síťové porty by neměly být otevřené, pokud nejsou vyžadovány ze známých a konkrétních důvodů.</span><span class="sxs-lookup"><span data-stu-id="7128b-595">No additional network ports should be open, unless they are required for known, specified reasons.</span></span>
+-   <span data-ttu-id="7128b-596">Sdílení prostředků mezi zdroji musí být zakázáno a musí specifikovat povolené zdroje, které jsou akceptovány.</span><span class="sxs-lookup"><span data-stu-id="7128b-596">Cross-origin resource sharing must be disabled and must specify the allowed origins that are accepted.</span></span>
+-   <span data-ttu-id="7128b-597">K získání certifikátů, které budou použity v počítačích, které spouštějí hardwarovou stanici, by měly být použity pouze důvěryhodné certifikační autority.</span><span class="sxs-lookup"><span data-stu-id="7128b-597">Only trusted certificate authorities should be used to obtain certificates that will be used on computers that run the hardware station.</span></span>
 
-Následující periferní zařízení byla testována pomocí hardwarové stanice IPC, která je zabudována do moderního POS pro systém Windows.
+<span data-ttu-id="7128b-598">**Poznámka:** Je velmi důležité, abyste přezkoumali bezpečnostní pokyny IIS a také požadavky od Payment Card Industry (PCI).</span><span class="sxs-lookup"><span data-stu-id="7128b-598">**Note:** It’s very important that you review security guidelines for IIS and the Payment Card Industry (PCI) requirements.</span></span>
 
-#### <a name="printer"></a>Tiskárna
+## <a name="peripheral-simulator"></a><span data-ttu-id="7128b-599">Simulátor periferních zařízení</span><span class="sxs-lookup"><span data-stu-id="7128b-599">Peripheral simulator</span></span>
+<span data-ttu-id="7128b-600">Informace naleznete v tématu [Maloobchodní simulátor periferií](dev-itpro/retail-peripheral-simulator.md).</span><span class="sxs-lookup"><span data-stu-id="7128b-600">For information, see [Retail peripheral simulator](dev-itpro/retail-peripheral-simulator.md).</span></span>
 
-| Výrobce | Model    | Rozhraní | Poznámky                |
+## <a name="microsofttested-peripheral-devices"></a><span data-ttu-id="7128b-601">Periferní zařízení otestována Microsoftem</span><span class="sxs-lookup"><span data-stu-id="7128b-601">Microsofttested peripheral devices</span></span>
+### <a name="ipc-built-in-hardware-station"></a><span data-ttu-id="7128b-602">Hardwarová stanice IPC (vestavěná)</span><span class="sxs-lookup"><span data-stu-id="7128b-602">IPC (built-in) hardware station</span></span>
+
+<span data-ttu-id="7128b-603">Následující periferní zařízení byla testována pomocí hardwarové stanice IPC, která je zabudována do moderního POS pro systém Windows.</span><span class="sxs-lookup"><span data-stu-id="7128b-603">The following peripherals were tested by using the IPC hardware station that is built into Modern POS for Windows.</span></span>
+
+#### <a name="printer"></a><span data-ttu-id="7128b-604">Tiskárna</span><span class="sxs-lookup"><span data-stu-id="7128b-604">Printer</span></span>
+
+| <span data-ttu-id="7128b-605">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-605">Manufacturer</span></span> | <span data-ttu-id="7128b-606">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-606">Model</span></span>    | <span data-ttu-id="7128b-607">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-607">Interface</span></span> | <span data-ttu-id="7128b-608">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-608">Comments</span></span>                |
 |--------------|----------|-----------|-------------------------|
-| Epson        | Tm-T88IV | OPOS      |                         |
-| Epson        | TM-T88V  | OPOS      |                         |
-| Star         | TSP650II | OPOS      |                         |
-| Star         | TSP650II | Vlastní    | Připojeno prostřednictvím sítě   |
-| Star         | mPOP     | OPOS      | Připojeno pomocí Bluetooth |
-| HP           | F7M67AA  | OPOS      | Napájené USB             |
+| <span data-ttu-id="7128b-609">Epson</span><span class="sxs-lookup"><span data-stu-id="7128b-609">Epson</span></span>        | <span data-ttu-id="7128b-610">Tm-T88IV</span><span class="sxs-lookup"><span data-stu-id="7128b-610">Tm-T88IV</span></span> | <span data-ttu-id="7128b-611">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-611">OPOS</span></span>      |                         |
+| <span data-ttu-id="7128b-612">Epson</span><span class="sxs-lookup"><span data-stu-id="7128b-612">Epson</span></span>        | <span data-ttu-id="7128b-613">TM-T88V</span><span class="sxs-lookup"><span data-stu-id="7128b-613">TM-T88V</span></span>  | <span data-ttu-id="7128b-614">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-614">OPOS</span></span>      |                         |
+| <span data-ttu-id="7128b-615">Star</span><span class="sxs-lookup"><span data-stu-id="7128b-615">Star</span></span>         | <span data-ttu-id="7128b-616">TSP650II</span><span class="sxs-lookup"><span data-stu-id="7128b-616">TSP650II</span></span> | <span data-ttu-id="7128b-617">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-617">OPOS</span></span>      |                         |
+| <span data-ttu-id="7128b-618">Star</span><span class="sxs-lookup"><span data-stu-id="7128b-618">Star</span></span>         | <span data-ttu-id="7128b-619">TSP650II</span><span class="sxs-lookup"><span data-stu-id="7128b-619">TSP650II</span></span> | <span data-ttu-id="7128b-620">Vlastní</span><span class="sxs-lookup"><span data-stu-id="7128b-620">Custom</span></span>    | <span data-ttu-id="7128b-621">Připojeno prostřednictvím sítě</span><span class="sxs-lookup"><span data-stu-id="7128b-621">Connected via network</span></span>   |
+| <span data-ttu-id="7128b-622">Star</span><span class="sxs-lookup"><span data-stu-id="7128b-622">Star</span></span>         | <span data-ttu-id="7128b-623">mPOP</span><span class="sxs-lookup"><span data-stu-id="7128b-623">mPOP</span></span>     | <span data-ttu-id="7128b-624">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-624">OPOS</span></span>      | <span data-ttu-id="7128b-625">Připojeno pomocí Bluetooth</span><span class="sxs-lookup"><span data-stu-id="7128b-625">Connected via Bluetooth</span></span> |
+| <span data-ttu-id="7128b-626">HP</span><span class="sxs-lookup"><span data-stu-id="7128b-626">HP</span></span>           | <span data-ttu-id="7128b-627">F7M67AA</span><span class="sxs-lookup"><span data-stu-id="7128b-627">F7M67AA</span></span>  | <span data-ttu-id="7128b-628">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-628">OPOS</span></span>      | <span data-ttu-id="7128b-629">Napájené USB</span><span class="sxs-lookup"><span data-stu-id="7128b-629">Powered USB</span></span>             |
 
-#### <a name="bar-code-scanner"></a>Skener čárových kódů
+#### <a name="bar-code-scanner"></a><span data-ttu-id="7128b-630">Skener čárových kódů</span><span class="sxs-lookup"><span data-stu-id="7128b-630">Bar code scanner</span></span>
 
-| Výrobce  | Model         | Rozhraní | Poznámky |
+| <span data-ttu-id="7128b-631">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-631">Manufacturer</span></span>  | <span data-ttu-id="7128b-632">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-632">Model</span></span>         | <span data-ttu-id="7128b-633">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-633">Interface</span></span> | <span data-ttu-id="7128b-634">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-634">Comments</span></span> |
 |---------------|---------------|-----------|----------|
-| Motorola      | DS9208        | OPOS      |          |
-| Honeywell     | 1900          | UWP       |          |
-| Symbol        | LS2208        | OPOS      |          |
-| HP Integrated | E1L07AA       | OPOS      |          |
-| Datalogic     | Magellan 8400 | OPOS      |          |
+| <span data-ttu-id="7128b-635">Motorola</span><span class="sxs-lookup"><span data-stu-id="7128b-635">Motorola</span></span>      | <span data-ttu-id="7128b-636">DS9208</span><span class="sxs-lookup"><span data-stu-id="7128b-636">DS9208</span></span>        | <span data-ttu-id="7128b-637">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-637">OPOS</span></span>      |          |
+| <span data-ttu-id="7128b-638">Honeywell</span><span class="sxs-lookup"><span data-stu-id="7128b-638">Honeywell</span></span>     | <span data-ttu-id="7128b-639">1900</span><span class="sxs-lookup"><span data-stu-id="7128b-639">1900</span></span>          | <span data-ttu-id="7128b-640">UWP</span><span class="sxs-lookup"><span data-stu-id="7128b-640">UWP</span></span>       |          |
+| <span data-ttu-id="7128b-641">Symbol</span><span class="sxs-lookup"><span data-stu-id="7128b-641">Symbol</span></span>        | <span data-ttu-id="7128b-642">LS2208</span><span class="sxs-lookup"><span data-stu-id="7128b-642">LS2208</span></span>        | <span data-ttu-id="7128b-643">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-643">OPOS</span></span>      |          |
+| <span data-ttu-id="7128b-644">HP Integrated</span><span class="sxs-lookup"><span data-stu-id="7128b-644">HP Integrated</span></span> | <span data-ttu-id="7128b-645">E1L07AA</span><span class="sxs-lookup"><span data-stu-id="7128b-645">E1L07AA</span></span>       | <span data-ttu-id="7128b-646">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-646">OPOS</span></span>      |          |
+| <span data-ttu-id="7128b-647">Datalogic</span><span class="sxs-lookup"><span data-stu-id="7128b-647">Datalogic</span></span>     | <span data-ttu-id="7128b-648">Magellan 8400</span><span class="sxs-lookup"><span data-stu-id="7128b-648">Magellan 8400</span></span> | <span data-ttu-id="7128b-649">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-649">OPOS</span></span>      |          |
 
-#### <a name="pin-pad"></a>Klávesnice pro kód PIN
+#### <a name="pin-pad"></a><span data-ttu-id="7128b-650">Klávesnice pro kód PIN</span><span class="sxs-lookup"><span data-stu-id="7128b-650">PIN pad</span></span>
 
-| Výrobce | Model  | Rozhraní | Poznámky                                        |
+| <span data-ttu-id="7128b-651">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-651">Manufacturer</span></span> | <span data-ttu-id="7128b-652">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-652">Model</span></span>  | <span data-ttu-id="7128b-653">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-653">Interface</span></span> | <span data-ttu-id="7128b-654">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-654">Comments</span></span>                                        |
 |--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Vyžaduje úpravu konektoru platby |
+| <span data-ttu-id="7128b-655">VeriFone</span><span class="sxs-lookup"><span data-stu-id="7128b-655">VeriFone</span></span>     | <span data-ttu-id="7128b-656">1000SE</span><span class="sxs-lookup"><span data-stu-id="7128b-656">1000SE</span></span> | <span data-ttu-id="7128b-657">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-657">OPOS</span></span>      | <span data-ttu-id="7128b-658">Vyžaduje úpravu konektoru platby</span><span class="sxs-lookup"><span data-stu-id="7128b-658">Requires customization of the payment connector</span></span> |
 
-#### <a name="payment-terminal"></a>Patební terminál 
+#### <a name="payment-terminal"></a><span data-ttu-id="7128b-659">Patební terminál </span><span class="sxs-lookup"><span data-stu-id="7128b-659">Payment terminal</span></span>
 
-| Výrobce | Model | Rozhraní | Poznámky                                                                       |
+| <span data-ttu-id="7128b-660">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-660">Manufacturer</span></span> | <span data-ttu-id="7128b-661">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-661">Model</span></span> | <span data-ttu-id="7128b-662">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-662">Interface</span></span> | <span data-ttu-id="7128b-663">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-663">Comments</span></span>                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Vlastní    | Vyžaduje úpravu konektoru platby                                |
-| VeriFone     | MX925 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
-| VeriFone     | MX915 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
+| <span data-ttu-id="7128b-664">Equinox</span><span class="sxs-lookup"><span data-stu-id="7128b-664">Equinox</span></span>      | <span data-ttu-id="7128b-665">L5300</span><span class="sxs-lookup"><span data-stu-id="7128b-665">L5300</span></span> | <span data-ttu-id="7128b-666">Vlastní</span><span class="sxs-lookup"><span data-stu-id="7128b-666">Custom</span></span>    | <span data-ttu-id="7128b-667">Vyžaduje úpravu konektoru platby</span><span class="sxs-lookup"><span data-stu-id="7128b-667">Requires customization of the payment connector</span></span>                                |
+| <span data-ttu-id="7128b-668">VeriFone</span><span class="sxs-lookup"><span data-stu-id="7128b-668">VeriFone</span></span>     | <span data-ttu-id="7128b-669">MX925</span><span class="sxs-lookup"><span data-stu-id="7128b-669">MX925</span></span> | <span data-ttu-id="7128b-670">Vlastní</span><span class="sxs-lookup"><span data-stu-id="7128b-670">Custom</span></span>    | <span data-ttu-id="7128b-671">Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB</span><span class="sxs-lookup"><span data-stu-id="7128b-671">Requires customization of the payment connector; connected via network and USB</span></span> |
+| <span data-ttu-id="7128b-672">VeriFone</span><span class="sxs-lookup"><span data-stu-id="7128b-672">VeriFone</span></span>     | <span data-ttu-id="7128b-673">MX915</span><span class="sxs-lookup"><span data-stu-id="7128b-673">MX915</span></span> | <span data-ttu-id="7128b-674">Vlastní</span><span class="sxs-lookup"><span data-stu-id="7128b-674">Custom</span></span>    | <span data-ttu-id="7128b-675">Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB</span><span class="sxs-lookup"><span data-stu-id="7128b-675">Requires customization of the payment connector; connected via network and USB</span></span> |
 
-#### <a name="cash-drawer"></a>Zásuvka s hotovostí
+#### <a name="cash-drawer"></a><span data-ttu-id="7128b-676">Zásuvka s hotovostí</span><span class="sxs-lookup"><span data-stu-id="7128b-676">Cash drawer</span></span>
 
-| Výrobce | Model     | Rozhraní | Poznámky                |
+| <span data-ttu-id="7128b-677">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-677">Manufacturer</span></span> | <span data-ttu-id="7128b-678">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-678">Model</span></span>     | <span data-ttu-id="7128b-679">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-679">Interface</span></span> | <span data-ttu-id="7128b-680">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-680">Comments</span></span>                |
 |--------------|-----------|-----------|-------------------------|
-| Star         | mPOP      | OPOS      | Připojeno pomocí Bluetooth |
-| APG          | Atwood    | Vlastní    | Připojeno prostřednictvím sítě   |
-| Star         | SMD2-1317 | OPOS      |                         |
-| HP           | QT457AA   | OPOS      |                         |
+| <span data-ttu-id="7128b-681">Star</span><span class="sxs-lookup"><span data-stu-id="7128b-681">Star</span></span>         | <span data-ttu-id="7128b-682">mPOP</span><span class="sxs-lookup"><span data-stu-id="7128b-682">mPOP</span></span>      | <span data-ttu-id="7128b-683">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-683">OPOS</span></span>      | <span data-ttu-id="7128b-684">Připojeno pomocí Bluetooth</span><span class="sxs-lookup"><span data-stu-id="7128b-684">Connected via Bluetooth</span></span> |
+| <span data-ttu-id="7128b-685">APG</span><span class="sxs-lookup"><span data-stu-id="7128b-685">APG</span></span>          | <span data-ttu-id="7128b-686">Atwood</span><span class="sxs-lookup"><span data-stu-id="7128b-686">Atwood</span></span>    | <span data-ttu-id="7128b-687">Vlastní</span><span class="sxs-lookup"><span data-stu-id="7128b-687">Custom</span></span>    | <span data-ttu-id="7128b-688">Připojeno prostřednictvím sítě</span><span class="sxs-lookup"><span data-stu-id="7128b-688">Connected via network</span></span>   |
+| <span data-ttu-id="7128b-689">Star</span><span class="sxs-lookup"><span data-stu-id="7128b-689">Star</span></span>         | <span data-ttu-id="7128b-690">SMD2-1317</span><span class="sxs-lookup"><span data-stu-id="7128b-690">SMD2-1317</span></span> | <span data-ttu-id="7128b-691">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-691">OPOS</span></span>      |                         |
+| <span data-ttu-id="7128b-692">HP</span><span class="sxs-lookup"><span data-stu-id="7128b-692">HP</span></span>           | <span data-ttu-id="7128b-693">QT457AA</span><span class="sxs-lookup"><span data-stu-id="7128b-693">QT457AA</span></span>   | <span data-ttu-id="7128b-694">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-694">OPOS</span></span>      |                         |
 
-#### <a name="line-display"></a>Řádkový displej
+#### <a name="line-display"></a><span data-ttu-id="7128b-695">Řádkový displej</span><span class="sxs-lookup"><span data-stu-id="7128b-695">Line display</span></span>
 
-| Výrobce  | Model   | Rozhraní | Poznámky |
+| <span data-ttu-id="7128b-696">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-696">Manufacturer</span></span>  | <span data-ttu-id="7128b-697">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-697">Model</span></span>   | <span data-ttu-id="7128b-698">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-698">Interface</span></span> | <span data-ttu-id="7128b-699">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-699">Comments</span></span> |
 |---------------|---------|-----------|----------|
-| HP Integrated | G6U79AA | OPOS      |          |
-| Epson         | M58DC   | OPOS      |          |
+| <span data-ttu-id="7128b-700">HP Integrated</span><span class="sxs-lookup"><span data-stu-id="7128b-700">HP integrated</span></span> | <span data-ttu-id="7128b-701">G6U79AA</span><span class="sxs-lookup"><span data-stu-id="7128b-701">G6U79AA</span></span> | <span data-ttu-id="7128b-702">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-702">OPOS</span></span>      |          |
+| <span data-ttu-id="7128b-703">Epson</span><span class="sxs-lookup"><span data-stu-id="7128b-703">Epson</span></span>         | <span data-ttu-id="7128b-704">M58DC</span><span class="sxs-lookup"><span data-stu-id="7128b-704">M58DC</span></span>   | <span data-ttu-id="7128b-705">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-705">OPOS</span></span>      |          |
 
-#### <a name="signature-capture"></a>Zaznamenání podpisu
+#### <a name="signature-capture"></a><span data-ttu-id="7128b-706">Zaznamenání podpisu</span><span class="sxs-lookup"><span data-stu-id="7128b-706">Signature capture</span></span>
 
-| Výrobce | Model  | Rozhraní | Poznámky |
+| <span data-ttu-id="7128b-707">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-707">Manufacturer</span></span> | <span data-ttu-id="7128b-708">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-708">Model</span></span>  | <span data-ttu-id="7128b-709">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-709">Interface</span></span> | <span data-ttu-id="7128b-710">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-710">Comments</span></span> |
 |--------------|--------|-----------|----------|
-| Scriptel     | ST1550 | OPOS      |          |
+| <span data-ttu-id="7128b-711">Scriptel</span><span class="sxs-lookup"><span data-stu-id="7128b-711">Scriptel</span></span>     | <span data-ttu-id="7128b-712">ST1550</span><span class="sxs-lookup"><span data-stu-id="7128b-712">ST1550</span></span> | <span data-ttu-id="7128b-713">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-713">OPOS</span></span>      |          |
 
-#### <a name="scale"></a>Měřítko
+#### <a name="scale"></a><span data-ttu-id="7128b-714">Měřítko</span><span class="sxs-lookup"><span data-stu-id="7128b-714">Scale</span></span>
 
-| Výrobce | Model         | Rozhraní | Poznámky |
+| <span data-ttu-id="7128b-715">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-715">Manufacturer</span></span> | <span data-ttu-id="7128b-716">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-716">Model</span></span>         | <span data-ttu-id="7128b-717">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-717">Interface</span></span> | <span data-ttu-id="7128b-718">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-718">Comments</span></span> |
 |--------------|---------------|-----------|----------|
-| Datalogic    | Magellan 8400 | OPOS      |          |
+| <span data-ttu-id="7128b-719">Datalogic</span><span class="sxs-lookup"><span data-stu-id="7128b-719">Datalogic</span></span>    | <span data-ttu-id="7128b-720">Magellan 8400</span><span class="sxs-lookup"><span data-stu-id="7128b-720">Magellan 8400</span></span> | <span data-ttu-id="7128b-721">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-721">OPOS</span></span>      |          |
 
-#### <a name="msr"></a>MSR
+#### <a name="msr"></a><span data-ttu-id="7128b-722">MSR</span><span class="sxs-lookup"><span data-stu-id="7128b-722">MSR</span></span>
 
-| Výrobce | Model       | Rozhraní | Poznámky |
+| <span data-ttu-id="7128b-723">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-723">Manufacturer</span></span> | <span data-ttu-id="7128b-724">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-724">Model</span></span>       | <span data-ttu-id="7128b-725">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-725">Interface</span></span> | <span data-ttu-id="7128b-726">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-726">Comments</span></span> |
 |--------------|-------------|-----------|----------|
-| Magtek       | 21073075    | UWP       |          |
-| Magtek       | 21073062    | OPOS      |          |
-| HP           | IDRA-334133 | OPOS      |          |
+| <span data-ttu-id="7128b-727">Magtek</span><span class="sxs-lookup"><span data-stu-id="7128b-727">Magtek</span></span>       | <span data-ttu-id="7128b-728">21073075</span><span class="sxs-lookup"><span data-stu-id="7128b-728">21073075</span></span>    | <span data-ttu-id="7128b-729">UWP</span><span class="sxs-lookup"><span data-stu-id="7128b-729">UWP</span></span>       |          |
+| <span data-ttu-id="7128b-730">Magtek</span><span class="sxs-lookup"><span data-stu-id="7128b-730">Magtek</span></span>       | <span data-ttu-id="7128b-731">21073062</span><span class="sxs-lookup"><span data-stu-id="7128b-731">21073062</span></span>    | <span data-ttu-id="7128b-732">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-732">OPOS</span></span>      |          |
+| <span data-ttu-id="7128b-733">HP</span><span class="sxs-lookup"><span data-stu-id="7128b-733">HP</span></span>           | <span data-ttu-id="7128b-734">IDRA-334133</span><span class="sxs-lookup"><span data-stu-id="7128b-734">IDRA-334133</span></span> | <span data-ttu-id="7128b-735">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-735">OPOS</span></span>      |          |
 
-### <a name="dedicated-iis-hardware-station"></a>Vyhrazená hardwarová stanice IIS
+### <a name="dedicated-iis-hardware-station"></a><span data-ttu-id="7128b-736">Vyhrazená hardwarová stanice IIS</span><span class="sxs-lookup"><span data-stu-id="7128b-736">Dedicated IIS hardware station</span></span>
 
-Následující periferní zařízení byly testovány pomocí vyhrazené, nesdílené, hardwarové stanice (IIS), společně s moderním POS pro systém Windows a cloudovým POS.
+<span data-ttu-id="7128b-737">Následující periferní zařízení byly testovány pomocí vyhrazené, nesdílené, hardwarové stanice (IIS), společně s moderním POS pro systém Windows a cloudovým POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-737">The following peripherals were tested by using a dedicated (not shared) IIS hardware station together with Modern POS for Windows and Cloud POS.</span></span>
 
-#### <a name="printer"></a>Tiskárna
+#### <a name="printer"></a><span data-ttu-id="7128b-738">Tiskárna</span><span class="sxs-lookup"><span data-stu-id="7128b-738">Printer</span></span>
 
-| Výrobce | Model    | Rozhraní | Poznámky                  |
+| <span data-ttu-id="7128b-739">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-739">Manufacturer</span></span> | <span data-ttu-id="7128b-740">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-740">Model</span></span>    | <span data-ttu-id="7128b-741">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-741">Interface</span></span> | <span data-ttu-id="7128b-742">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-742">Comments</span></span>                  |
 |--------------|----------|-----------|---------------------------|
-| Epson        | Tm-T88IV | OPOS      |                           |
-| Epson        | TM-T88V  | OPOS      |                           |
-| Star         | TSP650II | OPOS      |                           |
-| Star         | TSP650II | Vlastní    | Připojeno prostřednictvím sítě     |
-| Star         | TSP100   | OPOS      | Vyžaduje ovladače TSP650II |
-| HP           | F7M67AA  | OPOS      | Napájené USB               |
+| <span data-ttu-id="7128b-743">Epson</span><span class="sxs-lookup"><span data-stu-id="7128b-743">Epson</span></span>        | <span data-ttu-id="7128b-744">Tm-T88IV</span><span class="sxs-lookup"><span data-stu-id="7128b-744">Tm-T88IV</span></span> | <span data-ttu-id="7128b-745">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-745">OPOS</span></span>      |                           |
+| <span data-ttu-id="7128b-746">Epson</span><span class="sxs-lookup"><span data-stu-id="7128b-746">Epson</span></span>        | <span data-ttu-id="7128b-747">TM-T88V</span><span class="sxs-lookup"><span data-stu-id="7128b-747">TM-T88V</span></span>  | <span data-ttu-id="7128b-748">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-748">OPOS</span></span>      |                           |
+| <span data-ttu-id="7128b-749">Star</span><span class="sxs-lookup"><span data-stu-id="7128b-749">Star</span></span>         | <span data-ttu-id="7128b-750">TSP650II</span><span class="sxs-lookup"><span data-stu-id="7128b-750">TSP650II</span></span> | <span data-ttu-id="7128b-751">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-751">OPOS</span></span>      |                           |
+| <span data-ttu-id="7128b-752">Star</span><span class="sxs-lookup"><span data-stu-id="7128b-752">Star</span></span>         | <span data-ttu-id="7128b-753">TSP650II</span><span class="sxs-lookup"><span data-stu-id="7128b-753">TSP650II</span></span> | <span data-ttu-id="7128b-754">Vlastní</span><span class="sxs-lookup"><span data-stu-id="7128b-754">Custom</span></span>    | <span data-ttu-id="7128b-755">Připojeno prostřednictvím sítě</span><span class="sxs-lookup"><span data-stu-id="7128b-755">Connected via network</span></span>     |
+| <span data-ttu-id="7128b-756">Star</span><span class="sxs-lookup"><span data-stu-id="7128b-756">Star</span></span>         | <span data-ttu-id="7128b-757">TSP100</span><span class="sxs-lookup"><span data-stu-id="7128b-757">TSP100</span></span>   | <span data-ttu-id="7128b-758">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-758">OPOS</span></span>      | <span data-ttu-id="7128b-759">Vyžaduje ovladače TSP650II</span><span class="sxs-lookup"><span data-stu-id="7128b-759">Requires TSP650II drivers</span></span> |
+| <span data-ttu-id="7128b-760">HP</span><span class="sxs-lookup"><span data-stu-id="7128b-760">HP</span></span>           | <span data-ttu-id="7128b-761">F7M67AA</span><span class="sxs-lookup"><span data-stu-id="7128b-761">F7M67AA</span></span>  | <span data-ttu-id="7128b-762">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-762">OPOS</span></span>      | <span data-ttu-id="7128b-763">Napájené USB</span><span class="sxs-lookup"><span data-stu-id="7128b-763">Powered USB</span></span>               |
 
-#### <a name="bar-code-scanner"></a>Skener čárových kódů
+#### <a name="bar-code-scanner"></a><span data-ttu-id="7128b-764">Skener čárových kódů</span><span class="sxs-lookup"><span data-stu-id="7128b-764">Bar code scanner</span></span>
 
-| Výrobce  | Model   | Rozhraní | Poznámky |
+| <span data-ttu-id="7128b-765">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-765">Manufacturer</span></span>  | <span data-ttu-id="7128b-766">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-766">Model</span></span>   | <span data-ttu-id="7128b-767">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-767">Interface</span></span> | <span data-ttu-id="7128b-768">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-768">Comments</span></span> |
 |---------------|---------|-----------|----------|
-| Motorola      | DS9208  | OPOS      |          |
-| Symbol        | LS2208  | OPOS      |          |
-| HP Integrated | E1L07AA | OPOS      |          |
+| <span data-ttu-id="7128b-769">Motorola</span><span class="sxs-lookup"><span data-stu-id="7128b-769">Motorola</span></span>      | <span data-ttu-id="7128b-770">DS9208</span><span class="sxs-lookup"><span data-stu-id="7128b-770">DS9208</span></span>  | <span data-ttu-id="7128b-771">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-771">OPOS</span></span>      |          |
+| <span data-ttu-id="7128b-772">Symbol</span><span class="sxs-lookup"><span data-stu-id="7128b-772">Symbol</span></span>        | <span data-ttu-id="7128b-773">LS2208</span><span class="sxs-lookup"><span data-stu-id="7128b-773">LS2208</span></span>  | <span data-ttu-id="7128b-774">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-774">OPOS</span></span>      |          |
+| <span data-ttu-id="7128b-775">HP Integrated</span><span class="sxs-lookup"><span data-stu-id="7128b-775">HP Integrated</span></span> | <span data-ttu-id="7128b-776">E1L07AA</span><span class="sxs-lookup"><span data-stu-id="7128b-776">E1L07AA</span></span> | <span data-ttu-id="7128b-777">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-777">OPOS</span></span>      |          |
 
-#### <a name="pin-pad"></a>Klávesnice pro kód PIN
+#### <a name="pin-pad"></a><span data-ttu-id="7128b-778">Klávesnice pro kód PIN</span><span class="sxs-lookup"><span data-stu-id="7128b-778">PIN pad</span></span>
 
-| Výrobce | Model  | Rozhraní | Poznámky                                        |
+| <span data-ttu-id="7128b-779">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-779">Manufacturer</span></span> | <span data-ttu-id="7128b-780">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-780">Model</span></span>  | <span data-ttu-id="7128b-781">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-781">Interface</span></span> | <span data-ttu-id="7128b-782">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-782">Comments</span></span>                                        |
 |--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Vyžaduje úpravu konektoru platby |
+| <span data-ttu-id="7128b-783">VeriFone</span><span class="sxs-lookup"><span data-stu-id="7128b-783">VeriFone</span></span>     | <span data-ttu-id="7128b-784">1000SE</span><span class="sxs-lookup"><span data-stu-id="7128b-784">1000SE</span></span> | <span data-ttu-id="7128b-785">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-785">OPOS</span></span>      | <span data-ttu-id="7128b-786">Vyžaduje úpravu konektoru platby</span><span class="sxs-lookup"><span data-stu-id="7128b-786">Requires customization of the payment connector</span></span> |
 
-#### <a name="payment-terminal"></a>Patební terminál 
+#### <a name="payment-terminal"></a><span data-ttu-id="7128b-787">Patební terminál </span><span class="sxs-lookup"><span data-stu-id="7128b-787">Payment terminal</span></span>
 
-| Výrobce | Model | Rozhraní | Poznámky                                                                       |
+| <span data-ttu-id="7128b-788">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-788">Manufacturer</span></span> | <span data-ttu-id="7128b-789">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-789">Model</span></span> | <span data-ttu-id="7128b-790">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-790">Interface</span></span> | <span data-ttu-id="7128b-791">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-791">Comments</span></span>                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Vlastní    | Vyžaduje úpravu konektoru platby                                |
-| VeriFone     | MX925 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
-| VeriFone     | MX915 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
+| <span data-ttu-id="7128b-792">Equinox</span><span class="sxs-lookup"><span data-stu-id="7128b-792">Equinox</span></span>      | <span data-ttu-id="7128b-793">L5300</span><span class="sxs-lookup"><span data-stu-id="7128b-793">L5300</span></span> | <span data-ttu-id="7128b-794">Vlastní</span><span class="sxs-lookup"><span data-stu-id="7128b-794">Custom</span></span>    | <span data-ttu-id="7128b-795">Vyžaduje úpravu konektoru platby</span><span class="sxs-lookup"><span data-stu-id="7128b-795">Requires customization of the payment connector</span></span>                                |
+| <span data-ttu-id="7128b-796">VeriFone</span><span class="sxs-lookup"><span data-stu-id="7128b-796">VeriFone</span></span>     | <span data-ttu-id="7128b-797">MX925</span><span class="sxs-lookup"><span data-stu-id="7128b-797">MX925</span></span> | <span data-ttu-id="7128b-798">Vlastní</span><span class="sxs-lookup"><span data-stu-id="7128b-798">Custom</span></span>    | <span data-ttu-id="7128b-799">Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB</span><span class="sxs-lookup"><span data-stu-id="7128b-799">Requires customization of the payment connector; connected via network and USB</span></span> |
+| <span data-ttu-id="7128b-800">VeriFone</span><span class="sxs-lookup"><span data-stu-id="7128b-800">VeriFone</span></span>     | <span data-ttu-id="7128b-801">MX915</span><span class="sxs-lookup"><span data-stu-id="7128b-801">MX915</span></span> | <span data-ttu-id="7128b-802">Vlastní</span><span class="sxs-lookup"><span data-stu-id="7128b-802">Custom</span></span>    | <span data-ttu-id="7128b-803">Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB</span><span class="sxs-lookup"><span data-stu-id="7128b-803">Requires customization of the payment connector; connected via network and USB</span></span> |
 
-#### <a name="cash-drawer"></a>Zásuvka s hotovostí
+#### <a name="cash-drawer"></a><span data-ttu-id="7128b-804">Zásuvka s hotovostí</span><span class="sxs-lookup"><span data-stu-id="7128b-804">Cash drawer</span></span>
 
-| Výrobce | Model     | Rozhraní | Poznámky              |
+| <span data-ttu-id="7128b-805">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-805">Manufacturer</span></span> | <span data-ttu-id="7128b-806">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-806">Model</span></span>     | <span data-ttu-id="7128b-807">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-807">Interface</span></span> | <span data-ttu-id="7128b-808">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-808">Comments</span></span>              |
 |--------------|-----------|-----------|-----------------------|
-| APG          | Atwood    | Vlastní    | Připojeno prostřednictvím sítě |
-| Star         | SMD2-1317 | OPOS      |                       |
-| HP           | QT457AA   | OPOS      |                       |
+| <span data-ttu-id="7128b-809">APG</span><span class="sxs-lookup"><span data-stu-id="7128b-809">APG</span></span>          | <span data-ttu-id="7128b-810">Atwood</span><span class="sxs-lookup"><span data-stu-id="7128b-810">Atwood</span></span>    | <span data-ttu-id="7128b-811">Vlastní</span><span class="sxs-lookup"><span data-stu-id="7128b-811">Custom</span></span>    | <span data-ttu-id="7128b-812">Připojeno prostřednictvím sítě</span><span class="sxs-lookup"><span data-stu-id="7128b-812">Connected via network</span></span> |
+| <span data-ttu-id="7128b-813">Star</span><span class="sxs-lookup"><span data-stu-id="7128b-813">Star</span></span>         | <span data-ttu-id="7128b-814">SMD2-1317</span><span class="sxs-lookup"><span data-stu-id="7128b-814">SMD2-1317</span></span> | <span data-ttu-id="7128b-815">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-815">OPOS</span></span>      |                       |
+| <span data-ttu-id="7128b-816">HP</span><span class="sxs-lookup"><span data-stu-id="7128b-816">HP</span></span>           | <span data-ttu-id="7128b-817">QT457AA</span><span class="sxs-lookup"><span data-stu-id="7128b-817">QT457AA</span></span>   | <span data-ttu-id="7128b-818">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-818">OPOS</span></span>      |                       |
 
-#### <a name="line-display"></a>Řádkový displej
+#### <a name="line-display"></a><span data-ttu-id="7128b-819">Řádkový displej</span><span class="sxs-lookup"><span data-stu-id="7128b-819">Line display</span></span>
 
-| Výrobce  | Model   | Rozhraní | Poznámky |
+| <span data-ttu-id="7128b-820">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-820">Manufacturer</span></span>  | <span data-ttu-id="7128b-821">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-821">Model</span></span>   | <span data-ttu-id="7128b-822">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-822">Interface</span></span> | <span data-ttu-id="7128b-823">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-823">Comments</span></span> |
 |---------------|---------|-----------|----------|
-| HP Integrated | G6U79AA | OPOS      |          |
-| Epson         | M58DC   | OPOS      |          |
+| <span data-ttu-id="7128b-824">HP Integrated</span><span class="sxs-lookup"><span data-stu-id="7128b-824">HP integrated</span></span> | <span data-ttu-id="7128b-825">G6U79AA</span><span class="sxs-lookup"><span data-stu-id="7128b-825">G6U79AA</span></span> | <span data-ttu-id="7128b-826">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-826">OPOS</span></span>      |          |
+| <span data-ttu-id="7128b-827">Epson</span><span class="sxs-lookup"><span data-stu-id="7128b-827">Epson</span></span>         | <span data-ttu-id="7128b-828">M58DC</span><span class="sxs-lookup"><span data-stu-id="7128b-828">M58DC</span></span>   | <span data-ttu-id="7128b-829">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-829">OPOS</span></span>      |          |
 
-#### <a name="signature-capture"></a>Zaznamenání podpisu
+#### <a name="signature-capture"></a><span data-ttu-id="7128b-830">Zaznamenání podpisu</span><span class="sxs-lookup"><span data-stu-id="7128b-830">Signature capture</span></span>
 
-| Výrobce | Model  | Rozhraní | Poznámky |
+| <span data-ttu-id="7128b-831">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-831">Manufacturer</span></span> | <span data-ttu-id="7128b-832">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-832">Model</span></span>  | <span data-ttu-id="7128b-833">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-833">Interface</span></span> | <span data-ttu-id="7128b-834">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-834">Comments</span></span> |
 |--------------|--------|-----------|----------|
-| Scriptel     | ST1550 | OPOS      |          |
+| <span data-ttu-id="7128b-835">Scriptel</span><span class="sxs-lookup"><span data-stu-id="7128b-835">Scriptel</span></span>     | <span data-ttu-id="7128b-836">ST1550</span><span class="sxs-lookup"><span data-stu-id="7128b-836">ST1550</span></span> | <span data-ttu-id="7128b-837">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-837">OPOS</span></span>      |          |
 
-#### <a name="scale"></a>Měřítko
+#### <a name="scale"></a><span data-ttu-id="7128b-838">Měřítko</span><span class="sxs-lookup"><span data-stu-id="7128b-838">Scale</span></span>
 
-| Výrobce | Model         | Rozhraní | Poznámky |
+| <span data-ttu-id="7128b-839">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-839">Manufacturer</span></span> | <span data-ttu-id="7128b-840">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-840">Model</span></span>         | <span data-ttu-id="7128b-841">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-841">Interface</span></span> | <span data-ttu-id="7128b-842">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-842">Comments</span></span> |
 |--------------|---------------|-----------|----------|
-| Datalogic    | Magellan 8400 | OPOS      |          |
+| <span data-ttu-id="7128b-843">Datalogic</span><span class="sxs-lookup"><span data-stu-id="7128b-843">Datalogic</span></span>    | <span data-ttu-id="7128b-844">Magellan 8400</span><span class="sxs-lookup"><span data-stu-id="7128b-844">Magellan 8400</span></span> | <span data-ttu-id="7128b-845">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-845">OPOS</span></span>      |          |
 
-#### <a name="msr"></a>MSR
+#### <a name="msr"></a><span data-ttu-id="7128b-846">MSR</span><span class="sxs-lookup"><span data-stu-id="7128b-846">MSR</span></span>
 
-| Výrobce | Model       | Rozhraní | Poznámky |
+| <span data-ttu-id="7128b-847">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-847">Manufacturer</span></span> | <span data-ttu-id="7128b-848">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-848">Model</span></span>       | <span data-ttu-id="7128b-849">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-849">Interface</span></span> | <span data-ttu-id="7128b-850">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-850">Comments</span></span> |
 |--------------|-------------|-----------|----------|
-| Magtek       | 21073075    | UWP       |          |
-| Magtek       | 21073062    | OPOS      |          |
-| HP           | IDRA-334133 | OPOS      |          |
+| <span data-ttu-id="7128b-851">Magtek</span><span class="sxs-lookup"><span data-stu-id="7128b-851">Magtek</span></span>       | <span data-ttu-id="7128b-852">21073075</span><span class="sxs-lookup"><span data-stu-id="7128b-852">21073075</span></span>    | <span data-ttu-id="7128b-853">UWP</span><span class="sxs-lookup"><span data-stu-id="7128b-853">UWP</span></span>       |          |
+| <span data-ttu-id="7128b-854">Magtek</span><span class="sxs-lookup"><span data-stu-id="7128b-854">Magtek</span></span>       | <span data-ttu-id="7128b-855">21073062</span><span class="sxs-lookup"><span data-stu-id="7128b-855">21073062</span></span>    | <span data-ttu-id="7128b-856">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-856">OPOS</span></span>      |          |
+| <span data-ttu-id="7128b-857">HP</span><span class="sxs-lookup"><span data-stu-id="7128b-857">HP</span></span>           | <span data-ttu-id="7128b-858">IDRA-334133</span><span class="sxs-lookup"><span data-stu-id="7128b-858">IDRA-334133</span></span> | <span data-ttu-id="7128b-859">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-859">OPOS</span></span>      |          |
 
-### <a name="shared-iis-hardware-station"></a>Sdílená hardwarová stanice IIS
+### <a name="shared-iis-hardware-station"></a><span data-ttu-id="7128b-860">Sdílená hardwarová stanice IIS</span><span class="sxs-lookup"><span data-stu-id="7128b-860">Shared IIS hardware station</span></span>
 
-Následující periferní zařízení byla testována pomocí sdílené hardwarové stanice (IIS), společně s moderním POS pro systém Windows a cloudovým POS. **Poznámka:** je podporována pouze tiskárna, platební terminál a zásuvka hotovosti.
+<span data-ttu-id="7128b-861">Následující periferní zařízení byla testována pomocí sdílené hardwarové stanice (IIS), společně s moderním POS pro systém Windows a cloudovým POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-861">The following peripherals were tested by using a shared IIS hardware station together with Modern POS for Windows and Cloud POS.</span></span> <span data-ttu-id="7128b-862">**Poznámka:** je podporována pouze tiskárna, platební terminál a zásuvka hotovosti.</span><span class="sxs-lookup"><span data-stu-id="7128b-862">**Note:** Only a printer, payment terminal, and cash drawer are supported.</span></span>
 
-#### <a name="printer"></a>Tiskárna
+#### <a name="printer"></a><span data-ttu-id="7128b-863">Tiskárna</span><span class="sxs-lookup"><span data-stu-id="7128b-863">Printer</span></span>
 
-| Výrobce | Model    | Rozhraní | Poznámky                  |
+| <span data-ttu-id="7128b-864">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-864">Manufacturer</span></span> | <span data-ttu-id="7128b-865">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-865">Model</span></span>    | <span data-ttu-id="7128b-866">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-866">Interface</span></span> | <span data-ttu-id="7128b-867">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-867">Comments</span></span>                  |
 |--------------|----------|-----------|---------------------------|
-| Epson        | Tm-T88IV | OPOS      |                           |
-| Epson        | TM-T88V  | OPOS      |                           |
-| Star         | TSP650II | OPOS      |                           |
-| Star         | TSP650II | Vlastní    | Připojeno prostřednictvím sítě     |
-| Star         | TSP100   | OPOS      | Vyžaduje ovladače TSP650II |
-| HP           | F7M67AA  | OPOS      | Napájené USB               |
+| <span data-ttu-id="7128b-868">Epson</span><span class="sxs-lookup"><span data-stu-id="7128b-868">Epson</span></span>        | <span data-ttu-id="7128b-869">Tm-T88IV</span><span class="sxs-lookup"><span data-stu-id="7128b-869">Tm-T88IV</span></span> | <span data-ttu-id="7128b-870">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-870">OPOS</span></span>      |                           |
+| <span data-ttu-id="7128b-871">Epson</span><span class="sxs-lookup"><span data-stu-id="7128b-871">Epson</span></span>        | <span data-ttu-id="7128b-872">TM-T88V</span><span class="sxs-lookup"><span data-stu-id="7128b-872">TM-T88V</span></span>  | <span data-ttu-id="7128b-873">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-873">OPOS</span></span>      |                           |
+| <span data-ttu-id="7128b-874">Star</span><span class="sxs-lookup"><span data-stu-id="7128b-874">Star</span></span>         | <span data-ttu-id="7128b-875">TSP650II</span><span class="sxs-lookup"><span data-stu-id="7128b-875">TSP650II</span></span> | <span data-ttu-id="7128b-876">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-876">OPOS</span></span>      |                           |
+| <span data-ttu-id="7128b-877">Star</span><span class="sxs-lookup"><span data-stu-id="7128b-877">Star</span></span>         | <span data-ttu-id="7128b-878">TSP650II</span><span class="sxs-lookup"><span data-stu-id="7128b-878">TSP650II</span></span> | <span data-ttu-id="7128b-879">Vlastní</span><span class="sxs-lookup"><span data-stu-id="7128b-879">Custom</span></span>    | <span data-ttu-id="7128b-880">Připojeno prostřednictvím sítě</span><span class="sxs-lookup"><span data-stu-id="7128b-880">Connected via network</span></span>     |
+| <span data-ttu-id="7128b-881">Star</span><span class="sxs-lookup"><span data-stu-id="7128b-881">Star</span></span>         | <span data-ttu-id="7128b-882">TSP100</span><span class="sxs-lookup"><span data-stu-id="7128b-882">TSP100</span></span>   | <span data-ttu-id="7128b-883">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-883">OPOS</span></span>      | <span data-ttu-id="7128b-884">Vyžaduje ovladače TSP650II</span><span class="sxs-lookup"><span data-stu-id="7128b-884">Requires TSP650II drivers</span></span> |
+| <span data-ttu-id="7128b-885">HP</span><span class="sxs-lookup"><span data-stu-id="7128b-885">HP</span></span>           | <span data-ttu-id="7128b-886">F7M67AA</span><span class="sxs-lookup"><span data-stu-id="7128b-886">F7M67AA</span></span>  | <span data-ttu-id="7128b-887">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-887">OPOS</span></span>      | <span data-ttu-id="7128b-888">Napájené USB</span><span class="sxs-lookup"><span data-stu-id="7128b-888">Powered USB</span></span>               |
 
-#### <a name="payment-terminal"></a>Patební terminál 
+#### <a name="payment-terminal"></a><span data-ttu-id="7128b-889">Patební terminál </span><span class="sxs-lookup"><span data-stu-id="7128b-889">Payment terminal</span></span>
 
-| Výrobce | Model | Rozhraní | Poznámky                                                                       |
+| <span data-ttu-id="7128b-890">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-890">Manufacturer</span></span> | <span data-ttu-id="7128b-891">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-891">Model</span></span> | <span data-ttu-id="7128b-892">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-892">Interface</span></span> | <span data-ttu-id="7128b-893">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-893">Comments</span></span>                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
-| VeriFone     | MX925 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
-| VeriFone     | MX915 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
+| <span data-ttu-id="7128b-894">VeriFone</span><span class="sxs-lookup"><span data-stu-id="7128b-894">VeriFone</span></span>     | <span data-ttu-id="7128b-895">MX925</span><span class="sxs-lookup"><span data-stu-id="7128b-895">MX925</span></span> | <span data-ttu-id="7128b-896">Vlastní</span><span class="sxs-lookup"><span data-stu-id="7128b-896">Custom</span></span>    | <span data-ttu-id="7128b-897">Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB</span><span class="sxs-lookup"><span data-stu-id="7128b-897">Requires customization of the payment connector; connected via network and USB</span></span> |
+| <span data-ttu-id="7128b-898">VeriFone</span><span class="sxs-lookup"><span data-stu-id="7128b-898">VeriFone</span></span>     | <span data-ttu-id="7128b-899">MX915</span><span class="sxs-lookup"><span data-stu-id="7128b-899">MX915</span></span> | <span data-ttu-id="7128b-900">Vlastní</span><span class="sxs-lookup"><span data-stu-id="7128b-900">Custom</span></span>    | <span data-ttu-id="7128b-901">Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB</span><span class="sxs-lookup"><span data-stu-id="7128b-901">Requires customization of the payment connector; connected via network and USB</span></span> |
 
-#### <a name="cash-drawer"></a>Zásuvka s hotovostí
+#### <a name="cash-drawer"></a><span data-ttu-id="7128b-902">Zásuvka s hotovostí</span><span class="sxs-lookup"><span data-stu-id="7128b-902">Cash drawer</span></span>
 
-| Výrobce | Model     | Rozhraní | Poznámky              |
+| <span data-ttu-id="7128b-903">Výrobce</span><span class="sxs-lookup"><span data-stu-id="7128b-903">Manufacturer</span></span> | <span data-ttu-id="7128b-904">Model</span><span class="sxs-lookup"><span data-stu-id="7128b-904">Model</span></span>     | <span data-ttu-id="7128b-905">Rozhraní</span><span class="sxs-lookup"><span data-stu-id="7128b-905">Interface</span></span> | <span data-ttu-id="7128b-906">Poznámky</span><span class="sxs-lookup"><span data-stu-id="7128b-906">Comments</span></span>              |
 |--------------|-----------|-----------|-----------------------|
-| APG          | Atwood    | Vlastní    | Připojeno prostřednictvím sítě |
-| Star         | SMD2-1317 | OPOS      |                       |
-| HP           | QT457AA   | OPOS      |                       |
+| <span data-ttu-id="7128b-907">APG</span><span class="sxs-lookup"><span data-stu-id="7128b-907">APG</span></span>          | <span data-ttu-id="7128b-908">Atwood</span><span class="sxs-lookup"><span data-stu-id="7128b-908">Atwood</span></span>    | <span data-ttu-id="7128b-909">Vlastní</span><span class="sxs-lookup"><span data-stu-id="7128b-909">Custom</span></span>    | <span data-ttu-id="7128b-910">Připojeno prostřednictvím sítě</span><span class="sxs-lookup"><span data-stu-id="7128b-910">Connected via network</span></span> |
+| <span data-ttu-id="7128b-911">Star</span><span class="sxs-lookup"><span data-stu-id="7128b-911">Star</span></span>         | <span data-ttu-id="7128b-912">SMD2-1317</span><span class="sxs-lookup"><span data-stu-id="7128b-912">SMD2-1317</span></span> | <span data-ttu-id="7128b-913">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-913">OPOS</span></span>      |                       |
+| <span data-ttu-id="7128b-914">HP</span><span class="sxs-lookup"><span data-stu-id="7128b-914">HP</span></span>           | <span data-ttu-id="7128b-915">QT457AA</span><span class="sxs-lookup"><span data-stu-id="7128b-915">QT457AA</span></span>   | <span data-ttu-id="7128b-916">OPOS</span><span class="sxs-lookup"><span data-stu-id="7128b-916">OPOS</span></span>      |                       |
 
-## <a name="troubleshooting"></a>Řešení potíží
-### <a name="modern-pos-can-detect-the-hardware-station-in-its-list-for-selection-but-it-cant-complete-the-pairing"></a>Moderní POS může detekovat hardwarové stanice v seznamu pro výběr, ale nemůže dokončit spárování
+## <a name="troubleshooting"></a><span data-ttu-id="7128b-917">Řešení potíží</span><span class="sxs-lookup"><span data-stu-id="7128b-917">Troubleshooting</span></span>
+### <a name="modern-pos-can-detect-the-hardware-station-in-its-list-for-selection-but-it-cant-complete-the-pairing"></a><span data-ttu-id="7128b-918">Moderní POS může detekovat hardwarové stanice v seznamu pro výběr, ale nemůže dokončit spárování</span><span class="sxs-lookup"><span data-stu-id="7128b-918">Modern POS can detect the hardware station in its list for selection, but it can’t complete the pairing</span></span>
 
-**Řešení:** zkontrolujte následující seznam možných bodů selhání:
+<span data-ttu-id="7128b-919">**Řešení:** zkontrolujte následující seznam možných bodů selhání:</span><span class="sxs-lookup"><span data-stu-id="7128b-919">**Solution:** Verify the following list of potential failure points:</span></span>
 
--   Počítač, na kterém běží moderní POS, důvěřuje certifikátu používanému v počítači, který spouští hardwarovou stanici.
-    -   Chcete-li ověřit tato nastavení, přejděte na následující adresu URL ve webovém prohlížeči: https://&lt;Název počítače&gt;:&lt;Číslo portu&gt;/HardwarováStanice/ping.
-    -   Tato adresa URL použije příkaz ping k ověření, zda je počítač dostupný a prohlížeč ukáže, zda je certifikát důvěryhodný. (Například v aplikaci Internet Explorer se zobrazí ikona zámku v adresním řádku. Po kliknutí na tuto ikonu Internet Explorer ověří, zda je certifikát v současné době důvěryhodný. Můžete nainstalovat certifikát na místní počítač pomocí zobrazení podrobností o aktuálně zobrazeném certifikátu.)
--   V počítači, který spouští hardwarovou stanici, je v bráně firewall otevřen port, který tato hardwarová stanice používá.
--   Hardwarová stanice správně nainstalovala informace o obchodním účtu pomocí nástroje Instalovat informace o obchodníkovi, který běží na konci instalátoru hardwarové stanice.
+-   <span data-ttu-id="7128b-920">Počítač, na kterém běží moderní POS, důvěřuje certifikátu používanému v počítači, který spouští hardwarovou stanici.</span><span class="sxs-lookup"><span data-stu-id="7128b-920">The computer that is running Modern POS trusts the certificate that is used on the computer that runs the hardware station.</span></span>
+    -   <span data-ttu-id="7128b-921">Chcete-li ověřit tato nastavení, přejděte na následující adresu URL ve webovém prohlížeči: https://&lt;Název počítače&gt;:&lt;Číslo portu&gt;/HardwarováStanice/ping.</span><span class="sxs-lookup"><span data-stu-id="7128b-921">To verify this setup, in a web browser, go to the following URL: https://&lt;Computer Name&gt;:&lt;Port Number&gt;/HardwareStation/ping.</span></span>
+    -   <span data-ttu-id="7128b-922">Tato adresa URL použije příkaz ping k ověření, zda je počítač dostupný a prohlížeč ukáže, zda je certifikát důvěryhodný.</span><span class="sxs-lookup"><span data-stu-id="7128b-922">This URL uses a ping to verify that the computer can be accessed, and the browser indicates whether the certificate is trusted.</span></span> <span data-ttu-id="7128b-923">(Například v aplikaci Internet Explorer se zobrazí ikona zámku v adresním řádku.</span><span class="sxs-lookup"><span data-stu-id="7128b-923">(For example, in Internet Explorer, a lock icon appears in the address bar.</span></span> <span data-ttu-id="7128b-924">Po kliknutí na tuto ikonu Internet Explorer ověří, zda je certifikát v současné době důvěryhodný.</span><span class="sxs-lookup"><span data-stu-id="7128b-924">When you click this icon, Internet Explorer verifies whether the certificate is currently trusted.</span></span> <span data-ttu-id="7128b-925">Můžete nainstalovat certifikát na místní počítač pomocí zobrazení podrobností o aktuálně zobrazeném certifikátu.)</span><span class="sxs-lookup"><span data-stu-id="7128b-925">You can install the certificate on the local computer by viewing the details of the certificate that is shown.)</span></span>
+-   <span data-ttu-id="7128b-926">V počítači, který spouští hardwarovou stanici, je v bráně firewall otevřen port, který tato hardwarová stanice používá.</span><span class="sxs-lookup"><span data-stu-id="7128b-926">On the computer that runs the hardware station, the port that will be used by the hardware station is opened in the firewall.</span></span>
+-   <span data-ttu-id="7128b-927">Hardwarová stanice správně nainstalovala informace o obchodním účtu pomocí nástroje Instalovat informace o obchodníkovi, který běží na konci instalátoru hardwarové stanice.</span><span class="sxs-lookup"><span data-stu-id="7128b-927">The hardware station has correctly installed merchant account information through the Install merchant information tool that runs at the end of the hardware station installer.</span></span>
 
-### <a name="modern-pos-cant-detect-the-hardware-station-in-its-list-for-selection"></a>Moderní POS nemůže rozpoznat hardwarovou stanici v seznamu pro výběr
+### <a name="modern-pos-cant-detect-the-hardware-station-in-its-list-for-selection"></a><span data-ttu-id="7128b-928">Moderní POS nemůže rozpoznat hardwarovou stanici v seznamu pro výběr</span><span class="sxs-lookup"><span data-stu-id="7128b-928">Modern POS can’t detect the hardware station in its list for selection</span></span>
 
-**Řešení:** tento problém může způsobit některý z následujících faktorů:
+<span data-ttu-id="7128b-929">**Řešení:** tento problém může způsobit některý z následujících faktorů:</span><span class="sxs-lookup"><span data-stu-id="7128b-929">**Solution:** Either of the following factors can cause this issue:</span></span>
 
--   Hardwarová stanice nebyla v sídle správně nastavena. Pomocí kroků uvedených dříve v tomto tématu ověřte, zda je správně zadán profil hardwarové stanice a hardwarová stanice.
--   Úlohy nebyly spuštěny pro aktualizaci konfigurace kanálu. V takovém případě spusťte úlohu 1070 pro konfiguraci kanálu.
+-   <span data-ttu-id="7128b-930">Hardwarová stanice nebyla v sídle správně nastavena.</span><span class="sxs-lookup"><span data-stu-id="7128b-930">The hardware station hasn’t been set up correctly in headquarters.</span></span> <span data-ttu-id="7128b-931">Pomocí kroků uvedených dříve v tomto tématu ověřte, zda je správně zadán profil hardwarové stanice a hardwarová stanice.</span><span class="sxs-lookup"><span data-stu-id="7128b-931">Use the steps earlier in this topic to verify that the hardware station profile and the hardware station are correctly entered.</span></span>
+-   <span data-ttu-id="7128b-932">Úlohy nebyly spuštěny pro aktualizaci konfigurace kanálu.</span><span class="sxs-lookup"><span data-stu-id="7128b-932">The jobs haven’t been run to update the channel configuration.</span></span> <span data-ttu-id="7128b-933">V takovém případě spusťte úlohu 1070 pro konfiguraci kanálu.</span><span class="sxs-lookup"><span data-stu-id="7128b-933">In this case, run the 1070 job for channel configuration.</span></span>
 
-### <a name="modern-pos-doesnt-reflect-new-cash-drawer-settings"></a>Moderní POS neodráží nové nastavení pokladní zásuvky
+### <a name="modern-pos-doesnt-reflect-new-cash-drawer-settings"></a><span data-ttu-id="7128b-934">Moderní POS neodráží nové nastavení pokladní zásuvky</span><span class="sxs-lookup"><span data-stu-id="7128b-934">Modern POS doesn't reflect new cash drawer settings</span></span>
 
-**Řešení:** Uzavřete aktuální dávku. Změny v zásuvce s hotovostí nejsou načteny do moderního POS, dokud není aktuální dávka uzavřena.
+<span data-ttu-id="7128b-935">**Řešení:** Uzavřete aktuální dávku.</span><span class="sxs-lookup"><span data-stu-id="7128b-935">**Solution:** Close the current batch.</span></span> <span data-ttu-id="7128b-936">Změny v zásuvce s hotovostí nejsou načteny do moderního POS, dokud není aktuální dávka uzavřena.</span><span class="sxs-lookup"><span data-stu-id="7128b-936">Changes to the cash drawer aren't updated to Modern POS until the current batch is closed.</span></span>
 
-### <a name="modern-pos-is-reporting-an-issue-with-a-retail-peripheral"></a>Moderní POS hlásí problém s maloobchodní periferií
+### <a name="modern-pos-is-reporting-an-issue-with-a-retail-peripheral"></a><span data-ttu-id="7128b-937">Moderní POS hlásí problém s maloobchodní periferií</span><span class="sxs-lookup"><span data-stu-id="7128b-937">Modern POS is reporting an issue with a retail peripheral</span></span>
 
-**Řešení:** Zde jsou některé obvyklé příčiny tohoto problému:
+<span data-ttu-id="7128b-938">**Řešení:** Zde jsou některé obvyklé příčiny tohoto problému:</span><span class="sxs-lookup"><span data-stu-id="7128b-938">**Solution:** Here are some typical causes of this issue:</span></span>
 
--   Ujistěte se, že další nástroje pro konfiguraci ovladače zařízení jsou uzavřeny. Pokud tyto nástroje jsou otevřeny, mohou zabránit modernímu POS nebo hardwarové stanici ve vyžádání zařízení.
--   Pokud je maloobchodní periferie sdílena s více zařízeními POS, ujistěte se, že patří k jedné z následujících kategorií:
-    -   Zásuvka s hotovostí
-    -   Tiskárna účtenek
-    -   Patební terminál 
+-   <span data-ttu-id="7128b-939">Ujistěte se, že další nástroje pro konfiguraci ovladače zařízení jsou uzavřeny.</span><span class="sxs-lookup"><span data-stu-id="7128b-939">Make sure that other device driver configuration utilities are closed.</span></span> <span data-ttu-id="7128b-940">Pokud tyto nástroje jsou otevřeny, mohou zabránit modernímu POS nebo hardwarové stanici ve vyžádání zařízení.</span><span class="sxs-lookup"><span data-stu-id="7128b-940">If these utilities are open, they might prevent Modern POS or the hardware station from claiming the device.</span></span>
+-   <span data-ttu-id="7128b-941">Pokud je maloobchodní periferie sdílena s více zařízeními POS, ujistěte se, že patří k jedné z následujících kategorií:</span><span class="sxs-lookup"><span data-stu-id="7128b-941">If the retail peripheral is shared with multiple POS devices, make sure that it belongs to one of the following categories:</span></span>
+    -   <span data-ttu-id="7128b-942">Zásuvka s hotovostí</span><span class="sxs-lookup"><span data-stu-id="7128b-942">Cash drawer</span></span>
+    -   <span data-ttu-id="7128b-943">Tiskárna účtenek</span><span class="sxs-lookup"><span data-stu-id="7128b-943">Receipt printer</span></span>
+    -   <span data-ttu-id="7128b-944">Patební terminál </span><span class="sxs-lookup"><span data-stu-id="7128b-944">Payment terminal</span></span>
 
-    Pokud periferie nepatří do jedné z těchto kategorií, není hardwarová stanice navržena tak, aby umožňovala sdílení periferií mezi více POS zařízeními.
--   Někdy mohou ovladače zařízení způsobit, že běžné ovládací objekty (CCO) přestanou správně fungovat. Pokud bylo zařízení nedávno nainstalováno a nyní nepracuje správně nebo si všimnete jiných problémů, lze často vyřešit tento problém přeinstalací CCO. Pro stažení CCO běžte na stránku <http://monroecs.com/oposccos_current.htm>.
--   Pokud provádíte časté změny periferních zařízení během testování nebo odstraňování problémů, pravděpodobně budete muset obnovit službu IIS namísto čekání na obnovení samotné mezipaměti. Chcete-li provést reset služby IIS, postupujte takto:
-    1.  V nabídce **Start** napište **CMD**.
-    2.  V okně Výsledky hledání klikněte pravým tlačítkem myši na **Příkazový řádek** a potom klikněte na tlačítko **Spustit jako správce**.
-    3.  V okně **Příkazový řádek** napište příkaz **iisreset /Restart** a stiskněte klávesu Enter.
-    4.  Po restartu IIS restartujte také moderní POS.
--   Během častých změn periferních zařízení, pokud často spouštíte a opoušíte klient POS, může proces dllhost z předchozí relace POS zasahovat do aktuální relace. V tomto případě zařízení nemusí být použitelné, dokud nezavřete hostitele knihovny dynamické vazby (DLL), která spravuje předchozí relaci. Chcete-li zavřít hostitele DLL, postupujte takto:
-    1.  V nabídce **Start** napište **Správce úloh**.
-    2.  V okně Výsledky hledání klikněte na tlačítko **Správce úloh**.
-    3.  Ve Správci úloh na kartě **Podrobnosti** klikněte na záhlaví sloupce, který je označen jako **Jméno** pro seřazení tabulky abecedně.
-    4.  Skrolujte níže, dokud nenajdete dllhost.exe.
-    5.  Vyberte každou DLL hostitele a potom klikněte na tlačítko **Ukončit úlohu**.
-    6.  Jakmile byli hostitelé DLL uzavřeni, restartujte také moderní POS.
+    <span data-ttu-id="7128b-945">Pokud periferie nepatří do jedné z těchto kategorií, není hardwarová stanice navržena tak, aby umožňovala sdílení periferií mezi více POS zařízeními.</span><span class="sxs-lookup"><span data-stu-id="7128b-945">If the peripheral doesn't belong to one of these categories, the hardware station isn't designed to enable the peripheral to be shared among multiple POS devices.</span></span>
+-   <span data-ttu-id="7128b-946">Někdy mohou ovladače zařízení způsobit, že běžné ovládací objekty (CCO) přestanou správně fungovat.</span><span class="sxs-lookup"><span data-stu-id="7128b-946">Sometimes, device drivers can cause the common control objects (CCOs) to stop working correctly.</span></span> <span data-ttu-id="7128b-947">Pokud bylo zařízení nedávno nainstalováno a nyní nepracuje správně nebo si všimnete jiných problémů, lze často vyřešit tento problém přeinstalací CCO.</span><span class="sxs-lookup"><span data-stu-id="7128b-947">If a device has recently been installed, but it isn't working properly or you notice other issues, you can often resolve the issue by reinstalling the CCOs.</span></span> <span data-ttu-id="7128b-948">Pro stažení CCO běžte na stránku <http://monroecs.com/oposccos_current.htm>.</span><span class="sxs-lookup"><span data-stu-id="7128b-948">To download the CCOs, visit <http://monroecs.com/oposccos_current.htm>.</span></span>
+-   <span data-ttu-id="7128b-949">Pokud provádíte časté změny periferních zařízení během testování nebo odstraňování problémů, pravděpodobně budete muset obnovit službu IIS namísto čekání na obnovení samotné mezipaměti.</span><span class="sxs-lookup"><span data-stu-id="7128b-949">If you make frequent peripheral changes during testing or troubleshooting, you might have to reset IIS instead of waiting for the cache to refresh itself.</span></span> <span data-ttu-id="7128b-950">Chcete-li provést reset služby IIS, postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="7128b-950">To reset IIS, follow these steps:</span></span>
+    1.  <span data-ttu-id="7128b-951">V nabídce **Start** napište **CMD**.</span><span class="sxs-lookup"><span data-stu-id="7128b-951">From the **Start** menu, type **CMD**.</span></span>
+    2.  <span data-ttu-id="7128b-952">V okně Výsledky hledání klikněte pravým tlačítkem myši na **Příkazový řádek** a potom klikněte na tlačítko **Spustit jako správce**.</span><span class="sxs-lookup"><span data-stu-id="7128b-952">In the search results, right-click **Command prompt**, and then click **Run as administrator**.</span></span>
+    3.  <span data-ttu-id="7128b-953">V okně **Příkazový řádek** napište příkaz **iisreset /Restart** a stiskněte klávesu Enter.</span><span class="sxs-lookup"><span data-stu-id="7128b-953">In the **Command prompt** window, type **iisreset /Restart** and then press Enter.</span></span>
+    4.  <span data-ttu-id="7128b-954">Po restartu IIS restartujte také moderní POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-954">After IIS has restarted, restart Modern POS.</span></span>
+-   <span data-ttu-id="7128b-955">Během častých změn periferních zařízení, pokud často spouštíte a opoušíte klient POS, může proces dllhost z předchozí relace POS zasahovat do aktuální relace.</span><span class="sxs-lookup"><span data-stu-id="7128b-955">While you're making frequent changes to peripheral devices, if you also frequently start and exit the POS client, the dllhost process from a previous POS session can interfere with the current session.</span></span> <span data-ttu-id="7128b-956">V tomto případě zařízení nemusí být použitelné, dokud nezavřete hostitele knihovny dynamické vazby (DLL), která spravuje předchozí relaci.</span><span class="sxs-lookup"><span data-stu-id="7128b-956">In this case, a device might not be usable until you close the dynamic-link library (DLL) host that is managing the previous session.</span></span> <span data-ttu-id="7128b-957">Chcete-li zavřít hostitele DLL, postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="7128b-957">To close the DLL host, follow these steps:</span></span>
+    1.  <span data-ttu-id="7128b-958">V nabídce **Start** napište **Správce úloh**.</span><span class="sxs-lookup"><span data-stu-id="7128b-958">From the **Start** menu, type **Task manager**.</span></span>
+    2.  <span data-ttu-id="7128b-959">V okně Výsledky hledání klikněte na tlačítko **Správce úloh**.</span><span class="sxs-lookup"><span data-stu-id="7128b-959">In the search results, click **Task manager**.</span></span>
+    3.  <span data-ttu-id="7128b-960">Ve Správci úloh na kartě **Podrobnosti** klikněte na záhlaví sloupce, který je označen jako **Jméno** pro seřazení tabulky abecedně.</span><span class="sxs-lookup"><span data-stu-id="7128b-960">In Task manager, on the **Details** tab, click the column header that is labeled **Name** to sort the table alphabetically by name.</span></span>
+    4.  <span data-ttu-id="7128b-961">Skrolujte níže, dokud nenajdete dllhost.exe.</span><span class="sxs-lookup"><span data-stu-id="7128b-961">Scroll down until you find dllhost.exe.</span></span>
+    5.  <span data-ttu-id="7128b-962">Vyberte každou DLL hostitele a potom klikněte na tlačítko **Ukončit úlohu**.</span><span class="sxs-lookup"><span data-stu-id="7128b-962">Select each DLL host, and then click **End task**.</span></span>
+    6.  <span data-ttu-id="7128b-963">Jakmile byli hostitelé DLL uzavřeni, restartujte také moderní POS.</span><span class="sxs-lookup"><span data-stu-id="7128b-963">After the DLL hosts have been closed, restart Modern POS.</span></span>
 
 
-<a name="see-also"></a>Viz také
+<a name="see-also"></a><span data-ttu-id="7128b-964">Viz také</span><span class="sxs-lookup"><span data-stu-id="7128b-964">See also</span></span>
 --------
 
-[Periferní simulátor pro maloobchod](dev-itpro/retail-peripheral-simulator.md)
+[<span data-ttu-id="7128b-965">Periferní simulátor pro maloobchod</span><span class="sxs-lookup"><span data-stu-id="7128b-965">Retail peripheral simulator</span></span>](dev-itpro/retail-peripheral-simulator.md)
 
 
 

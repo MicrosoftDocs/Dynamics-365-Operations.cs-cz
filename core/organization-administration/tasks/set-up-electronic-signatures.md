@@ -16,65 +16,65 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 43ac3aecd9290e496fc8dd237c0d09b60638f442
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 11fee0b2358e6a2b84c221f8eb06e32c888e5f44
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-electronic-signatures"></a>Nastavení elektronických podpisů
+# <a name="set-up-electronic-signatures"></a><span data-ttu-id="21bb7-103">Nastavení elektronických podpisů</span><span class="sxs-lookup"><span data-stu-id="21bb7-103">Set up electronic signatures</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup použijte k nastavení elektronických podpisů. Elektronický podpis potvrzuje identitu osoby, která spouští nebo schvaluje určitý proces využívající výpočetní techniku. K vytvoření tohoto postupu jsou použita ukázková data společnosti DAT.
+<span data-ttu-id="21bb7-104">Tento postup použijte k nastavení elektronických podpisů.</span><span class="sxs-lookup"><span data-stu-id="21bb7-104">Use this procedure to set up electronic signatures.</span></span> <span data-ttu-id="21bb7-105">Elektronický podpis potvrzuje identitu osoby, která spouští nebo schvaluje určitý proces využívající výpočetní techniku.</span><span class="sxs-lookup"><span data-stu-id="21bb7-105">An electronic signature confirms the identity of a person who is about to start or approve a computing process.</span></span> <span data-ttu-id="21bb7-106">K vytvoření tohoto postupu jsou použita ukázková data společnosti DAT.</span><span class="sxs-lookup"><span data-stu-id="21bb7-106">The demo data company used to create this procedure is DAT.</span></span>
 
 
-## <a name="enable-the-electronic-signature-configuration-key"></a>Povolení konfiguračního klíče Elektronický podpis
-1. Přejděte do nabídky Správa systému > Nastavení > Konfigurace licence.
-2. Ve stromu rozbalte možnost Správa.
-    * Zkontrolujte, zda je zaškrtnuto políčko Elektronický podpis.  
-    * Pokud není zaškrtnuté políčko Elektronický podpis, je nutné povolit režim údržby. Režim údržby lze povolit v tomto prostředí jen provedením úlohy údržby pomocí služeb Lifecycle Services nebo místním použitím nástroje Deployment.Setup.  
-3. Zavřete stránku.
+## <a name="enable-the-electronic-signature-configuration-key"></a><span data-ttu-id="21bb7-107">Povolení konfiguračního klíče Elektronický podpis</span><span class="sxs-lookup"><span data-stu-id="21bb7-107">Enable the Electronic signature configuration key</span></span>
+1. <span data-ttu-id="21bb7-108">Přejděte do nabídky Správa systému > Nastavení > Konfigurace licence.</span><span class="sxs-lookup"><span data-stu-id="21bb7-108">Go to System administration > Setup > License configuration.</span></span>
+2. <span data-ttu-id="21bb7-109">Ve stromu rozbalte možnost Správa.</span><span class="sxs-lookup"><span data-stu-id="21bb7-109">In the tree, expand 'Administration'.</span></span>
+    * <span data-ttu-id="21bb7-110">Zkontrolujte, zda je zaškrtnuto políčko Elektronický podpis.</span><span class="sxs-lookup"><span data-stu-id="21bb7-110">Verify that the Electronic signature check box is selected.</span></span>  
+    * <span data-ttu-id="21bb7-111">Pokud není zaškrtnuté políčko Elektronický podpis, je nutné povolit režim údržby.</span><span class="sxs-lookup"><span data-stu-id="21bb7-111">If the Electronic signature check box is not selected, you must enable maintenance mode.</span></span> <span data-ttu-id="21bb7-112">Režim údržby lze povolit v tomto prostředí jen provedením úlohy údržby pomocí služeb Lifecycle Services nebo místním použitím nástroje Deployment.Setup.</span><span class="sxs-lookup"><span data-stu-id="21bb7-112">Maintenance mode can be enabled in this environment by running a maintenance job from Lifecycle Services, or by using the Deployment.Setup tool locally.</span></span>  
+3. <span data-ttu-id="21bb7-113">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="21bb7-113">Close the page.</span></span>
 
-## <a name="set-up-electronic-signature-parameters"></a>Nastavení parametrů elektronického podpisu
-1. Přejděte do nabídky Správa organizace > Nastavení > Elektronický podpis > Parametry elektronického podpisu.
-2. Klikněte na položku Upravit.
-3. Zadejte hodnotu do pole Oznámení.
-    * Zadejte zprávu, kterou podepisující uživatelé uvidí v případech, kdy je vyžadován podpis. Můžete zadat libovolný text. Tato zpráva uživatele obvykle informuje o významu elektronického podpisu dokumentu.  
-    * Pokud chcete zadat text oznámení v dalších jazycích, klikněte na tlačítko Překlady.  
-4. Klikněte na položku Uložit.
-5. Zavřete stránku.
+## <a name="set-up-electronic-signature-parameters"></a><span data-ttu-id="21bb7-114">Nastavení parametrů elektronického podpisu</span><span class="sxs-lookup"><span data-stu-id="21bb7-114">Set up electronic signature parameters</span></span>
+1. <span data-ttu-id="21bb7-115">Přejděte do nabídky Správa organizace > Nastavení > Elektronický podpis > Parametry elektronického podpisu.</span><span class="sxs-lookup"><span data-stu-id="21bb7-115">Go to Organization administration > Setup > Electronic signature > Electronic signature parameters.</span></span>
+2. <span data-ttu-id="21bb7-116">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="21bb7-116">Click Edit.</span></span>
+3. <span data-ttu-id="21bb7-117">Zadejte hodnotu do pole Oznámení.</span><span class="sxs-lookup"><span data-stu-id="21bb7-117">In the Notice field, type a value.</span></span>
+    * <span data-ttu-id="21bb7-118">Zadejte zprávu, kterou podepisující uživatelé uvidí v případech, kdy je vyžadován podpis.</span><span class="sxs-lookup"><span data-stu-id="21bb7-118">Enter the notice that signers will receive when a signature is requested.</span></span> <span data-ttu-id="21bb7-119">Můžete zadat libovolný text.</span><span class="sxs-lookup"><span data-stu-id="21bb7-119">You can enter any text.</span></span> <span data-ttu-id="21bb7-120">Tato zpráva uživatele obvykle informuje o významu elektronického podpisu dokumentu.</span><span class="sxs-lookup"><span data-stu-id="21bb7-120">Typically, this text tells the user what it means to sign a document electronically.</span></span>  
+    * <span data-ttu-id="21bb7-121">Pokud chcete zadat text oznámení v dalších jazycích, klikněte na tlačítko Překlady.</span><span class="sxs-lookup"><span data-stu-id="21bb7-121">If you want to enter the Notice text in additional languages, click the Translations button.</span></span>  
+4. <span data-ttu-id="21bb7-122">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="21bb7-122">Click Save.</span></span>
+5. <span data-ttu-id="21bb7-123">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="21bb7-123">Close the page.</span></span>
 
-## <a name="set-up-reason-codes-for-electronic-signatures"></a>Nastavení kódů důvodů pro elektronické podpisy
-1. Přejděte do nabídky Správa organizace > Nastavení > Elektronický podpis > Kódy důvodů pro elektronický podpis.
-2. Klikněte na položku Nová.
-    * Kódy důvodů je třeba nastavit dříve, než začnete elektronické podpisy používat. Při podepisování dokumentu je vyžadován platný kód důvodu.     Podepisující uživatel vybere kód důvodu, který bude vyjadřovat účel elektronického podpisu. Jeden z kódů důvodu může například označovat schválení dokumentu právníkem.  
-3. Zadejte hodnotu do pole Kód důvodu.
-4. Zadejte nějakou hodnotu do pole Popis.
-    * Zadejte další kódy důvodů, pokud je to nutné.  
-5. Klikněte na položku Uložit.
-6. Zavřete stránku.
+## <a name="set-up-reason-codes-for-electronic-signatures"></a><span data-ttu-id="21bb7-124">Nastavení kódů důvodů pro elektronické podpisy</span><span class="sxs-lookup"><span data-stu-id="21bb7-124">Set up reason codes for electronic signatures</span></span>
+1. <span data-ttu-id="21bb7-125">Přejděte do nabídky Správa organizace > Nastavení > Elektronický podpis > Kódy důvodů pro elektronický podpis.</span><span class="sxs-lookup"><span data-stu-id="21bb7-125">Go to Organization administration > Setup > Electronic signature > Electronic signature reason codes.</span></span>
+2. <span data-ttu-id="21bb7-126">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="21bb7-126">Click New.</span></span>
+    * <span data-ttu-id="21bb7-127">Kódy důvodů je třeba nastavit dříve, než začnete elektronické podpisy používat.</span><span class="sxs-lookup"><span data-stu-id="21bb7-127">You must set up reason codes before using electronic signatures.</span></span> <span data-ttu-id="21bb7-128">Při podepisování dokumentu je vyžadován platný kód důvodu.</span><span class="sxs-lookup"><span data-stu-id="21bb7-128">A valid reason code is required when signing a document.</span></span>     <span data-ttu-id="21bb7-129">Podepisující uživatel vybere kód důvodu, který bude vyjadřovat účel elektronického podpisu.</span><span class="sxs-lookup"><span data-stu-id="21bb7-129">A signer selects a reason code to indicate the purpose of an electronic signature.</span></span> <span data-ttu-id="21bb7-130">Jeden z kódů důvodu může například označovat schválení dokumentu právníkem.</span><span class="sxs-lookup"><span data-stu-id="21bb7-130">For example, a reason code could be used to indicate legal approval.</span></span>  
+3. <span data-ttu-id="21bb7-131">Zadejte hodnotu do pole Kód důvodu.</span><span class="sxs-lookup"><span data-stu-id="21bb7-131">In the Reason code field, type a value.</span></span>
+4. <span data-ttu-id="21bb7-132">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="21bb7-132">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="21bb7-133">Zadejte další kódy důvodů, pokud je to nutné.</span><span class="sxs-lookup"><span data-stu-id="21bb7-133">Enter additional reason codes, if needed.</span></span>  
+5. <span data-ttu-id="21bb7-134">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="21bb7-134">Click Save.</span></span>
+6. <span data-ttu-id="21bb7-135">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="21bb7-135">Close the page.</span></span>
 
-## <a name="require-electronic-signatures-for-existing-processes"></a>Vyžádání elektronických podpisů pro existující procesy
-1. Přejděte do nabídky Správa organizace > Nastavení > Elektronický podpis > Požadavky na elektronický podpis.
-2. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-    * Vyberte proces vyžadující elektronický podpis.  
-3. Zaškrtněte políčko Je požadován podpis nebo jeho zaškrtnutí zrušte.
-    * Opakujte tyto kroky pro každý proces, který vyžaduje elektronický podpis.  
-4. Klikněte na položku Uložit.
+## <a name="require-electronic-signatures-for-existing-processes"></a><span data-ttu-id="21bb7-136">Vyžádání elektronických podpisů pro existující procesy</span><span class="sxs-lookup"><span data-stu-id="21bb7-136">Require electronic signatures for existing processes</span></span>
+1. <span data-ttu-id="21bb7-137">Přejděte do nabídky Správa organizace > Nastavení > Elektronický podpis > Požadavky na elektronický podpis.</span><span class="sxs-lookup"><span data-stu-id="21bb7-137">Go to Organization administration > Setup > Electronic signature > Electronic signature requirements.</span></span>
+2. <span data-ttu-id="21bb7-138">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="21bb7-138">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="21bb7-139">Vyberte proces vyžadující elektronický podpis.</span><span class="sxs-lookup"><span data-stu-id="21bb7-139">Select a process that requires electronic signatures.</span></span>  
+3. <span data-ttu-id="21bb7-140">Zaškrtněte políčko Je požadován podpis nebo jeho zaškrtnutí zrušte.</span><span class="sxs-lookup"><span data-stu-id="21bb7-140">Select or clear the Signature required check box.</span></span>
+    * <span data-ttu-id="21bb7-141">Opakujte tyto kroky pro každý proces, který vyžaduje elektronický podpis.</span><span class="sxs-lookup"><span data-stu-id="21bb7-141">Repeat these steps for each process that requires electronic signatures.</span></span>  
+4. <span data-ttu-id="21bb7-142">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="21bb7-142">Click Save.</span></span>
 
-## <a name="create-a-custom-requirement-for-electronic-signatures"></a>Vytvoření vlastního požadavku na elektronické podpisy
-1. Klikněte na položku Nová.
-2. Zaškrtněte políčko Je požadován podpis nebo jeho zaškrtnutí zrušte.
-3. V poli Název zadejte název procesu, který vyžaduje elektronický podpis.
-4. V poli Název tabulky kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-5. V seznamu najděte a vyberte tabulku, v níž jsou uložena data, která je třeba podepsat.
-6. Klikněte na odkaz na vybraném řádku v seznamu.
-7. V poli Název pole kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-8. V seznamu najděte a vyberte pole tabulky, které chcete sledovat.
-9. Klikněte na odkaz na vybraném řádku v seznamu.
-    * Určete, kdy je podpis požadován.     Je-li požadován podpis při každé změně dat v poli, vyberte možnost Vždy.     Vyberte možnost Pouze, pokud je podpis vyžadován pouze za určitých podmínek. Pokud vyberete Pouze, je nutné vybrat také jednu z následujících možností: Při vložení záznamu, Při aktualizaci záznamu nebo Při odstranění záznamu.  
-10. Klikněte na položku Uložit.
-11. Zavřete stránku.
+## <a name="create-a-custom-requirement-for-electronic-signatures"></a><span data-ttu-id="21bb7-143">Vytvoření vlastního požadavku na elektronické podpisy</span><span class="sxs-lookup"><span data-stu-id="21bb7-143">Create a custom requirement for electronic signatures</span></span>
+1. <span data-ttu-id="21bb7-144">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="21bb7-144">Click New.</span></span>
+2. <span data-ttu-id="21bb7-145">Zaškrtněte políčko Je požadován podpis nebo jeho zaškrtnutí zrušte.</span><span class="sxs-lookup"><span data-stu-id="21bb7-145">Select or clear the Signature required check box.</span></span>
+3. <span data-ttu-id="21bb7-146">V poli Název zadejte název procesu, který vyžaduje elektronický podpis.</span><span class="sxs-lookup"><span data-stu-id="21bb7-146">In the Name field, enter a name for the process that requires electronic signatures.</span></span>
+4. <span data-ttu-id="21bb7-147">V poli Název tabulky kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="21bb7-147">In the Table name field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="21bb7-148">V seznamu najděte a vyberte tabulku, v níž jsou uložena data, která je třeba podepsat.</span><span class="sxs-lookup"><span data-stu-id="21bb7-148">In the list, find and select the table where the data that must be signed is stored.</span></span>
+6. <span data-ttu-id="21bb7-149">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="21bb7-149">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="21bb7-150">V poli Název pole kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="21bb7-150">In the Field name field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="21bb7-151">V seznamu najděte a vyberte pole tabulky, které chcete sledovat.</span><span class="sxs-lookup"><span data-stu-id="21bb7-151">In the list, find and select the field in the table that you want to monitor.</span></span>
+9. <span data-ttu-id="21bb7-152">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="21bb7-152">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="21bb7-153">Určete, kdy je podpis požadován.</span><span class="sxs-lookup"><span data-stu-id="21bb7-153">Specify when a signature is required.</span></span>     <span data-ttu-id="21bb7-154">Je-li požadován podpis při každé změně dat v poli, vyberte možnost Vždy.</span><span class="sxs-lookup"><span data-stu-id="21bb7-154">Select Always if a signature is required when the data in the field changes.</span></span>     <span data-ttu-id="21bb7-155">Vyberte možnost Pouze, pokud je podpis vyžadován pouze za určitých podmínek.</span><span class="sxs-lookup"><span data-stu-id="21bb7-155">Select Only if a signature is required only under certain conditions.</span></span> <span data-ttu-id="21bb7-156">Pokud vyberete Pouze, je nutné vybrat také jednu z následujících možností: Při vložení záznamu, Při aktualizaci záznamu nebo Při odstranění záznamu.</span><span class="sxs-lookup"><span data-stu-id="21bb7-156">If you select Only, you must also select one of the following options: When a record is inserted, When a record is updated, or When a record is deleted.</span></span>  
+10. <span data-ttu-id="21bb7-157">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="21bb7-157">Click Save.</span></span>
+11. <span data-ttu-id="21bb7-158">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="21bb7-158">Close the page.</span></span>
 
 

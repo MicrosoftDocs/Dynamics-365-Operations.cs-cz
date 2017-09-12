@@ -17,53 +17,53 @@ ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: e948525d4c7873fdc5101136ee37cd117268f4dd
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 9ba616550120e273429e348ea9cddf7c9e8baee4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="generate-and-run-out-of-box-reports"></a> Generování a spouštění předpřipravených sestav
+# <a name="generate-and-run-out-of-box-reports"></a><span data-ttu-id="f7332-103"> Generování a spouštění předpřipravených sestav</span><span class="sxs-lookup"><span data-stu-id="f7332-103">Generate and run out-of-box reports</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Použijte tohoto průvodce úkolem ke spuštění předem připravených sestav v centrále z jiných pracovních prostorů a dotazy a prodejní sestavy, které jsou umístěny pod Maloobchodní a velkoobchodní prodej.
+<span data-ttu-id="f7332-104">Použijte tohoto průvodce úkolem ke spuštění předem připravených sestav v centrále z jiných pracovních prostorů a dotazy a prodejní sestavy, které jsou umístěny pod Maloobchodní a velkoobchodní prodej.</span><span class="sxs-lookup"><span data-stu-id="f7332-104">Use this task guide to run out of box reports in headquarters from different workspaces and Inquiries & Sales reports located under Retail & Commerce.</span></span>
 
 
 
-K vytvoření tohoto záznamu jsou použita ukázková data společnosti USRT. Tento záznam je určen pro roli Správce systému.
+<span data-ttu-id="f7332-105">K vytvoření tohoto záznamu jsou použita ukázková data společnosti USRT.</span><span class="sxs-lookup"><span data-stu-id="f7332-105">The demo data company used to create this recording is USRT.</span></span> <span data-ttu-id="f7332-106">Tento záznam je určen pro roli Správce systému.</span><span class="sxs-lookup"><span data-stu-id="f7332-106">This recording is intended for the System administrator role.</span></span>
 
 
-## <a name="launch-reports-from-workspaces"></a>Spuštění sestav z pracovních ploch
-1. Přejděte do nabídky Maloobchodní a velkoobchodní prodej > Produkty a kategorie > Správa kategorií a produktů.
-2. Kliknutím na šipku rozbalte nebo sbalte oddíl Sestavy.
-3. Klikněte na Sestava nejlepších produktů.
-4. Zadejte datum do pole Od data.
-5. Do pole Do data zadejte datum.
-6. V poli Kanál kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-7. Ve stromovém zobrazení vyberte „Contoso Retail\Contoso Retail USA\Central\Houston“.
-    * Tím se zobrazí výchozí hierarchie organizace maloobchodu pro účely vykazování maloobchodu.   Přejděte do nabídky Správa organizace > Organizace > Účely organizační hierarchie, vyberte Vykazování maloobchodu a ověřte v poli Přiřazené hierarchie název hierarchie, u které je zaškrtnut Výchozí sloupec.      Jako součást ukázkových dat (použitých k záznamu tohoto úkolu) si můžete všimnout, že možnost Maloobchody podle regionu je výchozí organizační hierarchie pro účely maloobchodního vykazování.     
-8. Klikněte na tlačítko OK.
-9. Vyberte volbu v poli Zobrazení.
-10. Vyberte volbu v poli Podle.
-11. Klikněte na tlačítko OK.
+## <a name="launch-reports-from-workspaces"></a><span data-ttu-id="f7332-107">Spuštění sestav z pracovních ploch</span><span class="sxs-lookup"><span data-stu-id="f7332-107">Launch reports from workspaces</span></span>
+1. <span data-ttu-id="f7332-108">Přejděte do nabídky Maloobchodní a velkoobchodní prodej > Produkty a kategorie > Správa kategorií a produktů.</span><span class="sxs-lookup"><span data-stu-id="f7332-108">Go to Retail and commerce > Products and categories > Category and product management.</span></span>
+2. <span data-ttu-id="f7332-109">Kliknutím na šipku rozbalte nebo sbalte oddíl Sestavy.</span><span class="sxs-lookup"><span data-stu-id="f7332-109">Click the arrow to expand or collapse the Reports section.</span></span>
+3. <span data-ttu-id="f7332-110">Klikněte na Sestava nejlepších produktů.</span><span class="sxs-lookup"><span data-stu-id="f7332-110">Click Top products report.</span></span>
+4. <span data-ttu-id="f7332-111">Zadejte datum do pole Od data.</span><span class="sxs-lookup"><span data-stu-id="f7332-111">In the From date field, enter a date.</span></span>
+5. <span data-ttu-id="f7332-112">Do pole Do data zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="f7332-112">In the To date field, enter a date.</span></span>
+6. <span data-ttu-id="f7332-113">V poli Kanál kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="f7332-113">In the Channel field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="f7332-114">Ve stromovém zobrazení vyberte „Contoso Retail\Contoso Retail USA\Central\Houston“.</span><span class="sxs-lookup"><span data-stu-id="f7332-114">In the tree, select 'Contoso Retail\Contoso Retail USA\Central\Houston'.</span></span>
+    * <span data-ttu-id="f7332-115">Tím se zobrazí výchozí hierarchie organizace maloobchodu pro účely vykazování maloobchodu.</span><span class="sxs-lookup"><span data-stu-id="f7332-115">This shows the default retail organization hierarchy for Retail reporting purpose.</span></span>   <span data-ttu-id="f7332-116">Přejděte do nabídky Správa organizace > Organizace > Účely organizační hierarchie, vyberte Vykazování maloobchodu a ověřte v poli Přiřazené hierarchie název hierarchie, u které je zaškrtnut Výchozí sloupec.</span><span class="sxs-lookup"><span data-stu-id="f7332-116">Go to Organization administration >Organizations >Organization hierarchy purposes and choose Retail reporting and under Assigned hierarchies, check the hierarchy name for which Default column is checked.</span></span>      <span data-ttu-id="f7332-117">Jako součást ukázkových dat (použitých k záznamu tohoto úkolu) si můžete všimnout, že možnost Maloobchody podle regionu je výchozí organizační hierarchie pro účely maloobchodního vykazování.</span><span class="sxs-lookup"><span data-stu-id="f7332-117">As part of demo data (used for this task recording) you would notice, Retail Stores by Region, is the default organization hierarchy for the Retail reporting purpose.</span></span>     
+8. <span data-ttu-id="f7332-118">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="f7332-118">Click OK.</span></span>
+9. <span data-ttu-id="f7332-119">Vyberte volbu v poli Zobrazení.</span><span class="sxs-lookup"><span data-stu-id="f7332-119">In the View field, select an option.</span></span>
+10. <span data-ttu-id="f7332-120">Vyberte volbu v poli Podle.</span><span class="sxs-lookup"><span data-stu-id="f7332-120">In the By field, select an option.</span></span>
+11. <span data-ttu-id="f7332-121">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="f7332-121">Click OK.</span></span>
 
-## <a name="launch-reports-from-the-inquiries-and-sales-reports-located-under-retail--commerce-app-link"></a>Sestavy spuštění z dotazů a sestav prodejů jsou umístěny v odkazu aplikace Maloobchodní a velkoobchodní prodej.
-1. Přejděte na Maloobchodní a velkoobchodní prodej > Dotazy a sestavy > Prodejní sestavy > Prodejní sestava kategorií.
-2. Zadejte datum do pole Od data.
-3. Do pole Do data zadejte datum.
-4. V poli Kanál kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-5. Ve stromovém zobrazení vyberte „Contoso Retail\Contoso Retail USA\West\Seattle“.
-    * Tím se zobrazí výchozí hierarchie organizace maloobchodu pro účely vykazování maloobchodu.   Přejděte do nabídky Správa organizace > Organizace > Účely organizační hierarchie, vyberte Vykazování maloobchodu a ověřte v poli Přiřazené hierarchie název hierarchie, u které je zaškrtnut Výchozí sloupec.      Jako součást ukázkových dat (použitých k záznamu tohoto úkolu) si můžete všimnout, že možnost Maloobchody podle regionu je výchozí organizační hierarchie pro účely maloobchodního vykazování.     
-6. Klikněte na tlačítko OK.
-7. Klikněte na tlačítko OK.
+## <a name="launch-reports-from-the-inquiries-and-sales-reports-located-under-retail--commerce-app-link"></a><span data-ttu-id="f7332-122">Sestavy spuštění z dotazů a sestav prodejů jsou umístěny v odkazu aplikace Maloobchodní a velkoobchodní prodej.</span><span class="sxs-lookup"><span data-stu-id="f7332-122">Launch reports from the inquiries and sales reports located under Retail & Commerce app link.</span></span>
+1. <span data-ttu-id="f7332-123">Přejděte na Maloobchodní a velkoobchodní prodej > Dotazy a sestavy > Prodejní sestavy > Prodejní sestava kategorií.</span><span class="sxs-lookup"><span data-stu-id="f7332-123">Go to Retail and commerce > Inquiries and reports > Sales reports > Category sales report.</span></span>
+2. <span data-ttu-id="f7332-124">Zadejte datum do pole Od data.</span><span class="sxs-lookup"><span data-stu-id="f7332-124">In the From date field, enter a date.</span></span>
+3. <span data-ttu-id="f7332-125">Do pole Do data zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="f7332-125">In the To date field, enter a date.</span></span>
+4. <span data-ttu-id="f7332-126">V poli Kanál kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="f7332-126">In the Channel field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="f7332-127">Ve stromovém zobrazení vyberte „Contoso Retail\Contoso Retail USA\West\Seattle“.</span><span class="sxs-lookup"><span data-stu-id="f7332-127">In the tree, select 'Contoso Retail\Contoso Retail USA\West\Seattle'.</span></span>
+    * <span data-ttu-id="f7332-128">Tím se zobrazí výchozí hierarchie organizace maloobchodu pro účely vykazování maloobchodu.</span><span class="sxs-lookup"><span data-stu-id="f7332-128">This shows the default retail organization hierarchy for Retail reporting purpose.</span></span>   <span data-ttu-id="f7332-129">Přejděte do nabídky Správa organizace > Organizace > Účely organizační hierarchie, vyberte Vykazování maloobchodu a ověřte v poli Přiřazené hierarchie název hierarchie, u které je zaškrtnut Výchozí sloupec.</span><span class="sxs-lookup"><span data-stu-id="f7332-129">Go to Organization administration >Organizations >Organization hierarchy purposes and choose Retail reporting and under Assigned hierarchies, check the hierarchy name for which Default column is checked.</span></span>      <span data-ttu-id="f7332-130">Jako součást ukázkových dat (použitých k záznamu tohoto úkolu) si můžete všimnout, že možnost Maloobchody podle regionu je výchozí organizační hierarchie pro účely maloobchodního vykazování.</span><span class="sxs-lookup"><span data-stu-id="f7332-130">As part of demo data (used for this task recording) you would notice, Retail Stores by Region, is the default organization hierarchy for the Retail reporting purpose.</span></span>     
+6. <span data-ttu-id="f7332-131">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="f7332-131">Click OK.</span></span>
+7. <span data-ttu-id="f7332-132">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="f7332-132">Click OK.</span></span>
 
-## <a name="export-an-hq-reports"></a>Exportujte sestavy HQ
-1. Přejděte na Maloobchodní a velkoobchodní prodej > Dotazy a sestavy > Prodejní sestavy > Sestava prodejů organizace.
-2. Zadejte datum do pole Od data.
-3. Do pole Do data zadejte datum.
-4. Klikněte na tlačítko OK.
-5. Klikněte na Exportovat.
-6. Klikněte na PDF.
+## <a name="export-an-hq-reports"></a><span data-ttu-id="f7332-133">Exportujte sestavy HQ</span><span class="sxs-lookup"><span data-stu-id="f7332-133">Export an HQ reports</span></span>
+1. <span data-ttu-id="f7332-134">Přejděte na Maloobchodní a velkoobchodní prodej > Dotazy a sestavy > Prodejní sestavy > Sestava prodejů organizace.</span><span class="sxs-lookup"><span data-stu-id="f7332-134">Go to Retail and commerce > Inquiries and reports > Sales reports > Organization sales report.</span></span>
+2. <span data-ttu-id="f7332-135">Zadejte datum do pole Od data.</span><span class="sxs-lookup"><span data-stu-id="f7332-135">In the From date field, enter a date.</span></span>
+3. <span data-ttu-id="f7332-136">Do pole Do data zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="f7332-136">In the To date field, enter a date.</span></span>
+4. <span data-ttu-id="f7332-137">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="f7332-137">Click OK.</span></span>
+5. <span data-ttu-id="f7332-138">Klikněte na Exportovat.</span><span class="sxs-lookup"><span data-stu-id="f7332-138">Click Export.</span></span>
+6. <span data-ttu-id="f7332-139">Klikněte na PDF.</span><span class="sxs-lookup"><span data-stu-id="f7332-139">Click PDF.</span></span>
 
 

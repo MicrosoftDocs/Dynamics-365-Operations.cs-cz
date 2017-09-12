@@ -16,57 +16,57 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: c364bd96d3d7d5ac4e709cd0f034a177b5b80724
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: ec99b86d77c1381b4323a5faaea0487752eee9ed
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="deliver-an-employee-benefits-program"></a>Definování programu zaměstnaneckých výhod
+# <a name="deliver-an-employee-benefits-program"></a><span data-ttu-id="19368-103">Definování programu zaměstnaneckých výhod</span><span class="sxs-lookup"><span data-stu-id="19368-103">Deliver an employee benefits program</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tato úloha znázorňuje, jak vytvořit prvky zaměstnanecké výhody, které budou použity při vytváření nových zaměstnaneckých výhod. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF. Tato úloha je určena pro správce kompenzací a zaměstnaneckých výhod.
+<span data-ttu-id="19368-104">Tato úloha znázorňuje, jak vytvořit prvky zaměstnanecké výhody, které budou použity při vytváření nových zaměstnaneckých výhod.</span><span class="sxs-lookup"><span data-stu-id="19368-104">This task will show you how to create benefit elements which will be used when creating a new benefit.</span></span> <span data-ttu-id="19368-105">Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="19368-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="19368-106">Tato úloha je určena pro správce kompenzací a zaměstnaneckých výhod.</span><span class="sxs-lookup"><span data-stu-id="19368-106">This task is intended for a Compensation and Benefits manager.</span></span>
 
 
-## <a name="create-benefit-elements"></a>Vytvoření prvků zaměstnanecké výhody
-1. Úkol začíná ze stránky Seznam zaměstnaneckých výhod. Spustíte úlohu otevřením této stránky nebo vyhledáváním stránky se seznamem zaměstnaneckých výhod.
-2. Klepněte na možnost Nový.
-3. Do pole Typ zadejte typ vytvářené výhody.
-4. Zadejte nějakou hodnotu do pole Popis.
-5. Vyberte volbu v poli Souběžné přihlášení.
-    * Chcete-li omezit možnosti zaměstnanců pro přihlášení do více zdravotních plánů, vyberte možnost Jedno přihlášení na typ.  
-6. Vyberte volbu v poli Kategorie mzdy.
-7. Klikněte na kartu Plány.
-8. Klikněte na možnost Nový.
-9. Zadejte hodnotu do pole Plán.
-10. Zadejte nějakou hodnotu do pole Popis.
-11. V poli Typ kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-12. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-13. Klikněte na odkaz na vybraném řádku v seznamu.
-14. Vyberte volbu v poli Dopad mzdy.
-15. Klikněte na kartu Možnosti.
-16. Klepněte na možnost Nový.
-17. Zadejte hodnotu do pole Možnosti.
-18. Zadejte nějakou hodnotu do pole Popis.
+## <a name="create-benefit-elements"></a><span data-ttu-id="19368-107">Vytvoření prvků zaměstnanecké výhody</span><span class="sxs-lookup"><span data-stu-id="19368-107">Create benefit elements</span></span>
+1. <span data-ttu-id="19368-108">Úkol začíná ze stránky Seznam zaměstnaneckých výhod.</span><span class="sxs-lookup"><span data-stu-id="19368-108">This task starts from the Benefits list page.</span></span> <span data-ttu-id="19368-109">Spustíte úlohu otevřením této stránky nebo vyhledáváním stránky se seznamem zaměstnaneckých výhod.</span><span class="sxs-lookup"><span data-stu-id="19368-109">Start the task by opening that page or searching the Benefits list page.</span></span>
+2. <span data-ttu-id="19368-110">Klepněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="19368-110">Click New.</span></span>
+3. <span data-ttu-id="19368-111">Do pole Typ zadejte typ vytvářené výhody.</span><span class="sxs-lookup"><span data-stu-id="19368-111">In the Type field, Enter the name of the type of benefit you are creating..</span></span>
+4. <span data-ttu-id="19368-112">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="19368-112">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="19368-113">Vyberte volbu v poli Souběžné přihlášení.</span><span class="sxs-lookup"><span data-stu-id="19368-113">In the Concurrent enrollment field, select an option.</span></span>
+    * <span data-ttu-id="19368-114">Chcete-li omezit možnosti zaměstnanců pro přihlášení do více zdravotních plánů, vyberte možnost Jedno přihlášení na typ.</span><span class="sxs-lookup"><span data-stu-id="19368-114">To restrict employees' ability to enroll in multiple medical plans, select One enrollment per type.</span></span>  
+6. <span data-ttu-id="19368-115">Vyberte volbu v poli Kategorie mzdy.</span><span class="sxs-lookup"><span data-stu-id="19368-115">In the Payroll category field, select an option.</span></span>
+7. <span data-ttu-id="19368-116">Klikněte na kartu Plány.</span><span class="sxs-lookup"><span data-stu-id="19368-116">Click the Plans tab.</span></span>
+8. <span data-ttu-id="19368-117">Klikněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="19368-117">Click New.</span></span>
+9. <span data-ttu-id="19368-118">Zadejte hodnotu do pole Plán.</span><span class="sxs-lookup"><span data-stu-id="19368-118">In the Plan field, type a value.</span></span>
+10. <span data-ttu-id="19368-119">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="19368-119">In the Description field, type a value.</span></span>
+11. <span data-ttu-id="19368-120">V poli Typ kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="19368-120">In the Type field, click the drop-down button to open the lookup.</span></span>
+12. <span data-ttu-id="19368-121">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="19368-121">In the list, find and select the desired record.</span></span>
+13. <span data-ttu-id="19368-122">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="19368-122">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="19368-123">Vyberte volbu v poli Dopad mzdy.</span><span class="sxs-lookup"><span data-stu-id="19368-123">In the Payroll impact field, select an option.</span></span>
+15. <span data-ttu-id="19368-124">Klikněte na kartu Možnosti.</span><span class="sxs-lookup"><span data-stu-id="19368-124">Click the Options tab.</span></span>
+16. <span data-ttu-id="19368-125">Klepněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="19368-125">Click New.</span></span>
+17. <span data-ttu-id="19368-126">Zadejte hodnotu do pole Možnosti.</span><span class="sxs-lookup"><span data-stu-id="19368-126">In the Option field, type a value.</span></span>
+18. <span data-ttu-id="19368-127">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="19368-127">In the Description field, type a value.</span></span>
 
-## <a name="create-a-benefit"></a>Vytvořit zaměstnaneckou výhodu
-1. Zavřete stránku.
-2. Přejděte k nabídce Lidské zdroje > Výhody > Výhody.
-3. Kliknutím na možnost Nový otevřete dialogové okno.
-4. V poli Plán kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-5. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-6. Klikněte na odkaz na vybraném řádku v seznamu.
-7. V poli Možnost kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-8. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-9. Klikněte na odkaz na vybraném řádku v seznamu.
-10. Do pole Platnost zadejte datum a čas.
-11. Klepněte na Vytvořit zaměstnaneckou výhodu.
-12. Přepněte rozšíření oddílu Podrobností mezd.
-13. V poli Četnost kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-14. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-15. Klikněte na odkaz na vybraném řádku v seznamu.
-16. Vyberte volbu v poli Základ.
-17. Zadejte číslo do pole Částka nebo sazba.
+## <a name="create-a-benefit"></a><span data-ttu-id="19368-128">Vytvořit zaměstnaneckou výhodu</span><span class="sxs-lookup"><span data-stu-id="19368-128">Create a benefit</span></span>
+1. <span data-ttu-id="19368-129">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="19368-129">Close the page.</span></span>
+2. <span data-ttu-id="19368-130">Přejděte k nabídce Lidské zdroje > Výhody > Výhody.</span><span class="sxs-lookup"><span data-stu-id="19368-130">Go to Human resources > Benefits > Benefits.</span></span>
+3. <span data-ttu-id="19368-131">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="19368-131">Click New to open the drop dialog.</span></span>
+4. <span data-ttu-id="19368-132">V poli Plán kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="19368-132">In the Plan field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="19368-133">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="19368-133">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="19368-134">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="19368-134">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="19368-135">V poli Možnost kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="19368-135">In the Option field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="19368-136">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="19368-136">In the list, find and select the desired record.</span></span>
+9. <span data-ttu-id="19368-137">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="19368-137">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="19368-138">Do pole Platnost zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="19368-138">In the Effective field, enter a date and time.</span></span>
+11. <span data-ttu-id="19368-139">Klepněte na Vytvořit zaměstnaneckou výhodu.</span><span class="sxs-lookup"><span data-stu-id="19368-139">Click Create benefit.</span></span>
+12. <span data-ttu-id="19368-140">Přepněte rozšíření oddílu Podrobností mezd.</span><span class="sxs-lookup"><span data-stu-id="19368-140">Toggle the expansion of the Payroll details section.</span></span>
+13. <span data-ttu-id="19368-141">V poli Četnost kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="19368-141">In the Frequency field, click the drop-down button to open the lookup.</span></span>
+14. <span data-ttu-id="19368-142">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="19368-142">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="19368-143">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="19368-143">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="19368-144">Vyberte volbu v poli Základ.</span><span class="sxs-lookup"><span data-stu-id="19368-144">In the Basis field, select an option.</span></span>
+17. <span data-ttu-id="19368-145">Zadejte číslo do pole Částka nebo sazba.</span><span class="sxs-lookup"><span data-stu-id="19368-145">In the Amount or rate field, enter a number.</span></span>
 
 

@@ -16,32 +16,32 @@ ms.custom: 193583
 ms.assetid: 1ad0c1cb-4346-4042-a59b-923115fac03e
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f3010daa41f54cf026d46b1b7648a277651173da
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: b274ff572d2be9a71b91d533023b95be98591e4f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="create-a-bill-of-lading"></a>Vytvoření přepravního dokladu
+# <a name="create-a-bill-of-lading"></a><span data-ttu-id="1b121-103">Vytvoření přepravního dokladu</span><span class="sxs-lookup"><span data-stu-id="1b121-103">Create a bill of lading</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje, jak vytvořit přepravní doklad při používání procesů pro řízení skladu.  
+<span data-ttu-id="1b121-104">Toto téma popisuje, jak vytvořit přepravní doklad při používání procesů pro řízení skladu.</span><span class="sxs-lookup"><span data-stu-id="1b121-104">This topic describes how to create a bill of lading when using warehouse management processes.</span></span>  
 
-Přepravní doklad je právním dokumentem mezi společností, která dodává položky, a dopravcem. Dokument doprovází dodané položky a slouží jako potvrzení expedice při dodání položek do cílového umístění. Jestliže používáte řízení skladu, existují dva způsoby, jak přepravní doklad generovat:
+<span data-ttu-id="1b121-105">Přepravní doklad je právním dokumentem mezi společností, která dodává položky, a dopravcem.</span><span class="sxs-lookup"><span data-stu-id="1b121-105">A bill of lading is a legal document between the company that ships the items and the carrier.</span></span> <span data-ttu-id="1b121-106">Dokument doprovází dodané položky a slouží jako potvrzení expedice při dodání položek do cílového umístění.</span><span class="sxs-lookup"><span data-stu-id="1b121-106">The document accompanies the shipped items, and it serves as a receipt of shipment when the items are delivered at the destination.</span></span> <span data-ttu-id="1b121-107">Jestliže používáte řízení skladu, existují dva způsoby, jak přepravní doklad generovat:</span><span class="sxs-lookup"><span data-stu-id="1b121-107">If you're using warehouse management, there are two ways to generate a bill of lading:</span></span>
 
-  -   Vytvoření sestavy ručně pomocí stránky **Přepravní doklad**.
-  -   Generování sestavy z **pracovní plochy plánování vytížení**.
+  -   <span data-ttu-id="1b121-108">Vytvoření sestavy ručně pomocí stránky **Přepravní doklad**.</span><span class="sxs-lookup"><span data-stu-id="1b121-108">Create the report manually, using the **Bill of lading** page.</span></span>
+  -   <span data-ttu-id="1b121-109">Generování sestavy z **pracovní plochy plánování vytížení**.</span><span class="sxs-lookup"><span data-stu-id="1b121-109">Generate the report from the **Load planning workbench**.</span></span>
 
-Pokud generujete přepravní doklad z **pracovní plochy plánování vytížení**, stav vytížení musí být **Expedováno**. Pokud existuje více než jedna dodávka v nákladu, u každé dodávky dojde k vytvoření jednoho přepravního dokladu. Poté, co byl přepravní doklad vytvořen, můžete provést jeho změny na stránce **Přepravní doklad**.
+<span data-ttu-id="1b121-110">Pokud generujete přepravní doklad z **pracovní plochy plánování vytížení**, stav vytížení musí být **Expedováno**.</span><span class="sxs-lookup"><span data-stu-id="1b121-110">If you generate the bill of lading from the **Load planning workbench**, the load status must be **Shipped.**</span></span> <span data-ttu-id="1b121-111">Pokud existuje více než jedna dodávka v nákladu, u každé dodávky dojde k vytvoření jednoho přepravního dokladu.</span><span class="sxs-lookup"><span data-stu-id="1b121-111">If there's more than one shipment in the load, a bill of lading is created for each shipment.</span></span> <span data-ttu-id="1b121-112">Poté, co byl přepravní doklad vytvořen, můžete provést jeho změny na stránce **Přepravní doklad**.</span><span class="sxs-lookup"><span data-stu-id="1b121-112">After a bill of lading has been created you can make changes to it on the **Bill of lading** page.</span></span>
 
-## <a name="master-bill-of-lading"></a>Hlavní přepravní doklad
-Pokud je ve vytížení více než jedna dodávka, můžete vygenerovat hlavní přepravní doklad. Ten má stejné rozvržení a obsahuje stejné informace jako přepravní doklad, ale obsahuje souhrnný obsah všech dodávek. Pokud možnost **Vytvořit hlavní přepravní doklad, když je ve vytížení více než jedna dodávka** nastavíte na **Ano** na stránce **Parametry správy přepravy**, hlavní přepravní doklad bude vygenerován automaticky po vytvoření přepravního dokladu z **pracovní plochy plánování vytížení**, existuje-li více než jedna dodávka. Seznam přepravních dokladů získáte rovněž kliknutím na **Související informace** &gt; **Přepravní doklad**. Pokud vytváříte přepravní doklad ručně, můžete hlavní přepravní doklad vytvořit na stránce **Přepravní doklad**.
+## <a name="master-bill-of-lading"></a><span data-ttu-id="1b121-113">Hlavní přepravní doklad</span><span class="sxs-lookup"><span data-stu-id="1b121-113">Master bill of lading</span></span>
+<span data-ttu-id="1b121-114">Pokud je ve vytížení více než jedna dodávka, můžete vygenerovat hlavní přepravní doklad.</span><span class="sxs-lookup"><span data-stu-id="1b121-114">If there's more than one shipment in the load, you can generate a master bill of lading.</span></span> <span data-ttu-id="1b121-115">Ten má stejné rozvržení a obsahuje stejné informace jako přepravní doklad, ale obsahuje souhrnný obsah všech dodávek.</span><span class="sxs-lookup"><span data-stu-id="1b121-115">This has the same layout and information as a bill of lading, but contains the summarized content for all the shipments.</span></span> <span data-ttu-id="1b121-116">Pokud možnost **Vytvořit hlavní přepravní doklad, když je ve vytížení více než jedna dodávka** nastavíte na **Ano** na stránce **Parametry správy přepravy**, hlavní přepravní doklad bude vygenerován automaticky po vytvoření přepravního dokladu z **pracovní plochy plánování vytížení**, existuje-li více než jedna dodávka.</span><span class="sxs-lookup"><span data-stu-id="1b121-116">If the **Create a master bill of lading when there's more than one shipment on a load** option is set to **Yes** on the **Transportation management parameters** page, a master bill of lading is automatically generated if you create a bill of lading from the **Load planning workbench**, and there's more than one shipment.</span></span> <span data-ttu-id="1b121-117">Seznam přepravních dokladů získáte rovněž kliknutím na **Související informace** &gt; **Přepravní doklad**.</span><span class="sxs-lookup"><span data-stu-id="1b121-117">You can also get a list of the bills of lading by clicking **Related information** &gt; **Bill of lading**.</span></span> <span data-ttu-id="1b121-118">Pokud vytváříte přepravní doklad ručně, můžete hlavní přepravní doklad vytvořit na stránce **Přepravní doklad**.</span><span class="sxs-lookup"><span data-stu-id="1b121-118">If you're creating bills of lading manually, you can create a master bill of lading on the **Bill of lading** page.</span></span>
 
 
 

@@ -15,70 +15,70 @@ ms.custom: 195583
 ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-08-30T00:00:00.000Z
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 138cf8d60f5a6e1ec1e46837a516e981c8ff4c19
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 4d57e47fe7f38a43ecfdfbdd701d7e6a7d7800d6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="create-a-workflow"></a>Vytvořit workflow
+# <a name="create-a-workflow"></a><span data-ttu-id="a307a-103">Vytvořit workflow</span><span class="sxs-lookup"><span data-stu-id="a307a-103">Create a workflow</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tato témata vysvětluje postup při vytváření workflowu.
+<span data-ttu-id="a307a-104">Tato témata vysvětluje postup při vytváření workflowu.</span><span class="sxs-lookup"><span data-stu-id="a307a-104">This topics explains how to create a workflow.</span></span>
 
-<a name="open-the-workflow-editor"></a>Otevřete editor workflowu
+<a name="open-the-workflow-editor"></a><span data-ttu-id="a307a-105">Otevřete editor workflowu</span><span class="sxs-lookup"><span data-stu-id="a307a-105">Open the workflow editor</span></span>
 ------------------------
 
-Modul aplikace Microsoft Dynamics 365 for Finance and Operations, ve kterém pracujete, určuje typy workflowu, které můžete vytvořit. Podle následujících kroků vyberte typ workflowu k vytvoření a otevření editoru workflowu.
+<span data-ttu-id="a307a-106">Modul aplikace Microsoft Dynamics 365 for Finance and Operations, ve kterém pracujete, určuje typy workflowu, které můžete vytvořit.</span><span class="sxs-lookup"><span data-stu-id="a307a-106">The Microsoft Dynamics 365 for Finance and Operations module that you're working in determines the types of workflow that you can create.</span></span> <span data-ttu-id="a307a-107">Podle následujících kroků vyberte typ workflowu k vytvoření a otevření editoru workflowu.</span><span class="sxs-lookup"><span data-stu-id="a307a-107">Follow these steps to select the type of workflow to create and open the workflow editor.</span></span>
 
-1.  Otevřete modul, pro který chcete vytvořit nový workflow. Když například chcete vytvořit workflow pro nákupní žádanky, klepněte na **Zásobování a zdroje**.
-2.  Klikněte na **Nastavení** &gt; **\[Název modulu\] workflowy**.
-3.  Na stránce seznamu, která se zobrazí, v podokně akcí klikněte na kartu klikněte na **Nový**.
-4.  Na stránce **Vytvořit workflow** vyberte typ workflowu, který chcete vytvořit, a klepněte na tlačítko **Vytvořit workflow**. Otevře se editor workflowu. Při navrhování workflowu postupujte následujícím způsobem.
+1.  <span data-ttu-id="a307a-108">Otevřete modul, pro který chcete vytvořit nový workflow.</span><span class="sxs-lookup"><span data-stu-id="a307a-108">Open the module that you want to create a new workflow for.</span></span> <span data-ttu-id="a307a-109">Když například chcete vytvořit workflow pro nákupní žádanky, klepněte na **Zásobování a zdroje**.</span><span class="sxs-lookup"><span data-stu-id="a307a-109">For example, to create a workflow for purchase requisitions, click **Procurement and sourcing**.</span></span>
+2.  <span data-ttu-id="a307a-110">Klikněte na **Nastavení** &gt; **\[Název modulu\] workflowy**.</span><span class="sxs-lookup"><span data-stu-id="a307a-110">Click **Setup** &gt; **\[Module name\] workflows**.</span></span>
+3.  <span data-ttu-id="a307a-111">Na stránce seznamu, která se zobrazí, v podokně akcí klikněte na kartu klikněte na **Nový**.</span><span class="sxs-lookup"><span data-stu-id="a307a-111">On the list page that appears, on the Action Pane, click **New**.</span></span>
+4.  <span data-ttu-id="a307a-112">Na stránce **Vytvořit workflow** vyberte typ workflowu, který chcete vytvořit, a klepněte na tlačítko **Vytvořit workflow**.</span><span class="sxs-lookup"><span data-stu-id="a307a-112">On the **Create workflow** page, select the type of workflow to create, and then click **Create workflow**.</span></span> <span data-ttu-id="a307a-113">Otevře se editor workflowu.</span><span class="sxs-lookup"><span data-stu-id="a307a-113">The workflow editor appears.</span></span> <span data-ttu-id="a307a-114">Při navrhování workflowu postupujte následujícím způsobem.</span><span class="sxs-lookup"><span data-stu-id="a307a-114">You can now use the following procedures to design the workflow.</span></span>
 
-## <a name="drag-workflow-elements-onto-the-canvas"></a>Přetáhněte prvky workflowu na plátno
-Oblast **Prvky workflowu** editoru workflowu obsahuje prvky, které můžete přiřadit k workflowu. Prvky do workflowu přidáte tak, že je přetáhnete na plátno.
+## <a name="drag-workflow-elements-onto-the-canvas"></a><span data-ttu-id="a307a-115">Přetáhněte prvky workflowu na plátno</span><span class="sxs-lookup"><span data-stu-id="a307a-115">Drag workflow elements onto the canvas</span></span>
+<span data-ttu-id="a307a-116">Oblast **Prvky workflowu** editoru workflowu obsahuje prvky, které můžete přiřadit k workflowu.</span><span class="sxs-lookup"><span data-stu-id="a307a-116">The **Workflow elements** area of the workflow editor contains the elements that you can add to your workflow.</span></span> <span data-ttu-id="a307a-117">Prvky do workflowu přidáte tak, že je přetáhnete na plátno.</span><span class="sxs-lookup"><span data-stu-id="a307a-117">To add elements to the workflow, drag them onto the canvas.</span></span>
 
-## <a name="connect-the-elements"></a>Připojení prvků
-Jeden prvek workflowu k jinému připojíte podržením ukazatele nad prvkem, dokud se neobjeví spojovací body. Klikněte na spojovací bod a přetáhněte jej na jiný prvek. Nezapomeňte spojit všechny prvky.
+## <a name="connect-the-elements"></a><span data-ttu-id="a307a-118">Připojení prvků</span><span class="sxs-lookup"><span data-stu-id="a307a-118">Connect the elements</span></span>
+<span data-ttu-id="a307a-119">Jeden prvek workflowu k jinému připojíte podržením ukazatele nad prvkem, dokud se neobjeví spojovací body.</span><span class="sxs-lookup"><span data-stu-id="a307a-119">To connect one workflow element to another, hold the pointer over an element until connection points appear.</span></span> <span data-ttu-id="a307a-120">Klikněte na spojovací bod a přetáhněte jej na jiný prvek.</span><span class="sxs-lookup"><span data-stu-id="a307a-120">Click a connection point, and drag it to another element.</span></span> <span data-ttu-id="a307a-121">Nezapomeňte spojit všechny prvky.</span><span class="sxs-lookup"><span data-stu-id="a307a-121">Be sure to connect all the elements.</span></span>
 
-## <a name="configure-the-properties-of-the-workflow"></a>Konfigurace vlastností workflowu
-Nakonfigurujte vlastnosti workflowu pomocí následujících kroků.
+## <a name="configure-the-properties-of-the-workflow"></a><span data-ttu-id="a307a-122">Konfigurace vlastností workflowu</span><span class="sxs-lookup"><span data-stu-id="a307a-122">Configure the properties of the workflow</span></span>
+<span data-ttu-id="a307a-123">Nakonfigurujte vlastnosti workflowu pomocí následujících kroků.</span><span class="sxs-lookup"><span data-stu-id="a307a-123">Follow these steps to configure the properties of the workflow.</span></span>
 
-1.  Klepnutím na plátno se ujistěte, že není vybrán žádný prvek workflowu.
-2.  Kliknutím na **Vlastnosti** otevřete formulář **Vlastnosti** pro workflow.
-3.  Postupujte podle pokynů v tématu [Konfigurace vlastností workflowu](configure-workflow-properties.md).
+1.  <span data-ttu-id="a307a-124">Klepnutím na plátno se ujistěte, že není vybrán žádný prvek workflowu.</span><span class="sxs-lookup"><span data-stu-id="a307a-124">Click the canvas to make sure that no workflow element is selected.</span></span>
+2.  <span data-ttu-id="a307a-125">Kliknutím na **Vlastnosti** otevřete formulář **Vlastnosti** pro workflow.</span><span class="sxs-lookup"><span data-stu-id="a307a-125">Click **Properties** to open the **Properties** page for the workflow.</span></span>
+3.  <span data-ttu-id="a307a-126">Postupujte podle pokynů v tématu [Konfigurace vlastností workflowu](configure-workflow-properties.md).</span><span class="sxs-lookup"><span data-stu-id="a307a-126">Follow the procedures in the [Configure the properties of a workflow](configure-workflow-properties.md) topic.</span></span>
 
-## <a name="configure-the-elements-of-the-workflow"></a>Konfigurace prvků workflowu
-Nakonfigurujte každý prvek, který jste přetáhli na plátno. Další informace o konfiguraci jednotlivých prvků workflowu naleznete v následujících tématech:
+## <a name="configure-the-elements-of-the-workflow"></a><span data-ttu-id="a307a-127">Konfigurace prvků workflowu</span><span class="sxs-lookup"><span data-stu-id="a307a-127">Configure the elements of the workflow</span></span>
+<span data-ttu-id="a307a-128">Nakonfigurujte každý prvek, který jste přetáhli na plátno.</span><span class="sxs-lookup"><span data-stu-id="a307a-128">Configure each element that you dragged onto the canvas.</span></span> <span data-ttu-id="a307a-129">Další informace o konfiguraci jednotlivých prvků workflowu naleznete v následujících tématech:</span><span class="sxs-lookup"><span data-stu-id="a307a-129">For information about how to configure each workflow element, see the following topics:</span></span>
 
--   [Konfigurace ručního úkolu](configure-manual-task-workflow.md)
--   [Konfigurace automatizované úlohy](configure-automated-task-workflow.md)
--   [Konfigurace procesu schválení](configure-approval-process-workflow.md)
--   [Konfigurace kroku schválení](configure-approval-step-workflow.md)
--   [Konfigurace ručního rozhodnutí](configure-manual-decision-workflow.md)
--   [Konfigurace podmíněného rozhodnutí](configure-conditional-decision-workflow.md)
--   [Konfigurace paralelní aktivity](configure-parallel-activity-workflow.md)
--   [Konfigurace paralelní větve](configure-parallel-branch-workflow.md)
--   [Konfigurace workflow položky řádku](configure-line-item-workflow.md)
+-   [<span data-ttu-id="a307a-130">Konfigurace ručního úkolu</span><span class="sxs-lookup"><span data-stu-id="a307a-130">Configure a manual task</span></span>](configure-manual-task-workflow.md)
+-   [<span data-ttu-id="a307a-131">Konfigurace automatizované úlohy</span><span class="sxs-lookup"><span data-stu-id="a307a-131">Configure an automated task</span></span>](configure-automated-task-workflow.md)
+-   [<span data-ttu-id="a307a-132">Konfigurace procesu schválení</span><span class="sxs-lookup"><span data-stu-id="a307a-132">Configure an approval process</span></span>](configure-approval-process-workflow.md)
+-   [<span data-ttu-id="a307a-133">Konfigurace kroku schválení</span><span class="sxs-lookup"><span data-stu-id="a307a-133">Configure an approval step</span></span>](configure-approval-step-workflow.md)
+-   [<span data-ttu-id="a307a-134">Konfigurace ručního rozhodnutí</span><span class="sxs-lookup"><span data-stu-id="a307a-134">Configure a manual decision</span></span>](configure-manual-decision-workflow.md)
+-   [<span data-ttu-id="a307a-135">Konfigurace podmíněného rozhodnutí</span><span class="sxs-lookup"><span data-stu-id="a307a-135">Configure a conditional decision</span></span>](configure-conditional-decision-workflow.md)
+-   [<span data-ttu-id="a307a-136">Konfigurace paralelní aktivity</span><span class="sxs-lookup"><span data-stu-id="a307a-136">Configure a parallel activity</span></span>](configure-parallel-activity-workflow.md)
+-   [<span data-ttu-id="a307a-137">Konfigurace paralelní větve</span><span class="sxs-lookup"><span data-stu-id="a307a-137">Configure a parallel branch</span></span>](configure-parallel-branch-workflow.md)
+-   [<span data-ttu-id="a307a-138">Konfigurace workflow položky řádku</span><span class="sxs-lookup"><span data-stu-id="a307a-138">Configure a line-item workflow</span></span>](configure-line-item-workflow.md)
 
-## <a name="resolve-any-errors-or-warnings"></a>Vyřešení chyb nebo varování
-Podokno **Chyby a varování** v dolní části editoru workflowu zobrazuje zprávy, které byly vygenerovány pro workflow. Pokud chcete vyhledat prvek, kde došlo k chybě nebo upozornění, poklepejte na chybu nebo upozornění. Předtím, než je možné aktivovat workflow, musí být vyřešeny všechny chyby a upozornění.
+## <a name="resolve-any-errors-or-warnings"></a><span data-ttu-id="a307a-139">Vyřešení chyb nebo varování</span><span class="sxs-lookup"><span data-stu-id="a307a-139">Resolve any errors or warnings</span></span>
+<span data-ttu-id="a307a-140">Podokno **Chyby a varování** v dolní části editoru workflowu zobrazuje zprávy, které byly vygenerovány pro workflow.</span><span class="sxs-lookup"><span data-stu-id="a307a-140">The **Errors and warnings** pane at the bottom of the workflow editor shows messages that have been generated for the workflow.</span></span> <span data-ttu-id="a307a-141">Pokud chcete vyhledat prvek, kde došlo k chybě nebo upozornění, poklepejte na chybu nebo upozornění.</span><span class="sxs-lookup"><span data-stu-id="a307a-141">To find the element where an error or warning occurred, double-click the error or warning message.</span></span> <span data-ttu-id="a307a-142">Předtím, než je možné aktivovat workflow, musí být vyřešeny všechny chyby a upozornění.</span><span class="sxs-lookup"><span data-stu-id="a307a-142">You must resolve all errors and warnings before you can make the workflow active.</span></span>
 
-## <a name="save-and-activate-the-workflow"></a>Uložení a aktivace workflowu
-Až budete připraveni uložit a aktivovat workflow, postupujte následovně.
+## <a name="save-and-activate-the-workflow"></a><span data-ttu-id="a307a-143">Uložení a aktivace workflowu</span><span class="sxs-lookup"><span data-stu-id="a307a-143">Save and activate the workflow</span></span>
+<span data-ttu-id="a307a-144">Až budete připraveni uložit a aktivovat workflow, postupujte následovně.</span><span class="sxs-lookup"><span data-stu-id="a307a-144">When you're ready to save and activate the workflow, follow these steps.</span></span>
 
-1.  Kliknutím na tlačítko **Uložit a zavřít** zavřete editor workflowu a otevřete formulář **Uložit workflow**.
-2.  Zadejte komentáře ke změnám provedeným v daném workflowu a potom klikněte na **OK**.
-3.  Pokud byly vyřešeny všechny chyby a upozornění, zobrazí se stránka **Aktivovat workflow**. Vyberte některou z následujících možností:
-    -   Pokud chcete aktivovat tuto verzi workflowu, klepněte na tlačítko **Aktivovat novou verzi**. Když je workflow aktivní, uživatelé do něj mohou odesílat dokumenty ke zpracování a schválení.
-    -   Pokud nechcete tuto verzi aktivovat, klepněte na tlačítko **Neaktivovat novou verzi**. Workflow můžete aktivovat později.
+1.  <span data-ttu-id="a307a-145">Kliknutím na tlačítko **Uložit a zavřít** zavřete editor workflowu a otevřete formulář **Uložit workflow**.</span><span class="sxs-lookup"><span data-stu-id="a307a-145">Click **Save and close** to close the workflow editor and open the **Save workflow** page.</span></span>
+2.  <span data-ttu-id="a307a-146">Zadejte komentáře ke změnám provedeným v daném workflowu a potom klikněte na **OK**.</span><span class="sxs-lookup"><span data-stu-id="a307a-146">Enter comments about the changes that you've made to the workflow, and then click **OK**.</span></span>
+3.  <span data-ttu-id="a307a-147">Pokud byly vyřešeny všechny chyby a upozornění, zobrazí se stránka **Aktivovat workflow**.</span><span class="sxs-lookup"><span data-stu-id="a307a-147">If all errors and warnings have been resolved, the **Activate workflow** page appears.</span></span> <span data-ttu-id="a307a-148">Vyberte některou z následujících možností:</span><span class="sxs-lookup"><span data-stu-id="a307a-148">Select one of the following options:</span></span>
+    -   <span data-ttu-id="a307a-149">Pokud chcete aktivovat tuto verzi workflowu, klepněte na tlačítko **Aktivovat novou verzi**.</span><span class="sxs-lookup"><span data-stu-id="a307a-149">To activate this version of the workflow, click **Activate the new version**.</span></span> <span data-ttu-id="a307a-150">Když je workflow aktivní, uživatelé do něj mohou odesílat dokumenty ke zpracování a schválení.</span><span class="sxs-lookup"><span data-stu-id="a307a-150">When a workflow is active, users can submit documents to it for processing.</span></span>
+    -   <span data-ttu-id="a307a-151">Pokud nechcete tuto verzi aktivovat, klepněte na tlačítko **Neaktivovat novou verzi**.</span><span class="sxs-lookup"><span data-stu-id="a307a-151">If you don't want to activate this version, click **Do not activate the new version**.</span></span> <span data-ttu-id="a307a-152">Workflow můžete aktivovat později.</span><span class="sxs-lookup"><span data-stu-id="a307a-152">You can activate the workflow later.</span></span>
 
 
 

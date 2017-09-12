@@ -16,34 +16,34 @@ ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 0ecd161cf779977b34017561529cd73961f3c936
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e6e5c84d379ad6a94099cdb68d44d5c7b9ce0969
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-the-global-address-book"></a>Konfigurace globálního adresáře
+# <a name="configure-the-global-address-book"></a><span data-ttu-id="e1c1b-103">Konfigurace globálního adresáře</span><span class="sxs-lookup"><span data-stu-id="e1c1b-103">Configure the global address book</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup slouží k nastavení výchozích hodnot a zásad zabezpečení pro globální adresář. 
+<span data-ttu-id="e1c1b-104">Tento postup slouží k nastavení výchozích hodnot a zásad zabezpečení pro globální adresář.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-104">Use this procedure to set the default values and security policies for the global address book.</span></span> 
 
-Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF. Tento úkol je určen pro tým plánování a konfigurace.
+<span data-ttu-id="e1c1b-105">Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="e1c1b-106">Tento úkol je určen pro tým plánování a konfigurace.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-106">This task is intended for the Planning and configuration team.</span></span>
 
-1. Přejděte do nabídky Správa organizace > Globální adresář > Parametry globálního adresáře.
-2. V poli Řada jmen vyberte, jakým způsobem mají být zobrazeny názvy.
-3. Vyberte, zda chcete odstranit strany, kterým dosud nebyla přiřazena role.
-4. Vyberte, zda chcete kontrolovat duplicitní záznamy.
-5. Vyberte, zda se má zobrazit číslo DUNS na adresách.
-6. Vyberte, zda chcete kontrolovat jedinečná čísla DUNS.
-7. Vyberte možnost v poli Strana.
-8. Vyberte možnost v poli Odběratel.
-9. Vyberte možnost v poli Dodavatel.
-10. Vyberte možnost v poli Potenciální zákazník.
-11. Vyberte možnost v poli Konkurent.
-12. Klikněte na kartu Zabezpečení soukromého umístění.
-13. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-    * Stiskněte klávesu Shift, chcete-li vybrat více rolí, které chcete přidat do podokna Vybrané role, a kliknutím na šipku vybrané role přidejte.  
-14. Klikněte na položku Uložit.
+1. <span data-ttu-id="e1c1b-107">Přejděte do nabídky Správa organizace > Globální adresář > Parametry globálního adresáře.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-107">Go to Organization administration > Global address book > Global address book parameters.</span></span>
+2. <span data-ttu-id="e1c1b-108">V poli Řada jmen vyberte, jakým způsobem mají být zobrazeny názvy.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-108">In the Name sequence field, select how names should be shown.</span></span>
+3. <span data-ttu-id="e1c1b-109">Vyberte, zda chcete odstranit strany, kterým dosud nebyla přiřazena role.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-109">Select whether to delete parties with that have not been assigned a role.</span></span>
+4. <span data-ttu-id="e1c1b-110">Vyberte, zda chcete kontrolovat duplicitní záznamy.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-110">Select whether to check for duplicate records.</span></span>
+5. <span data-ttu-id="e1c1b-111">Vyberte, zda se má zobrazit číslo DUNS na adresách.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-111">Select whether to display the DUNS number on addresses.</span></span>
+6. <span data-ttu-id="e1c1b-112">Vyberte, zda chcete kontrolovat jedinečná čísla DUNS.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-112">Select whether to check for unique DUNS numbers.</span></span>
+7. <span data-ttu-id="e1c1b-113">Vyberte možnost v poli Strana.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-113">In the Party field, select an option.</span></span>
+8. <span data-ttu-id="e1c1b-114">Vyberte možnost v poli Odběratel.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-114">In the Customer field, select an option.</span></span>
+9. <span data-ttu-id="e1c1b-115">Vyberte možnost v poli Dodavatel.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-115">In the Vendor field, select an option.</span></span>
+10. <span data-ttu-id="e1c1b-116">Vyberte možnost v poli Potenciální zákazník.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-116">In the Prospect field, select an option.</span></span>
+11. <span data-ttu-id="e1c1b-117">Vyberte možnost v poli Konkurent.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-117">In the Competitor field, select an option.</span></span>
+12. <span data-ttu-id="e1c1b-118">Klikněte na kartu Zabezpečení soukromého umístění.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-118">Click the Private location security tab.</span></span>
+13. <span data-ttu-id="e1c1b-119">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-119">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="e1c1b-120">Stiskněte klávesu Shift, chcete-li vybrat více rolí, které chcete přidat do podokna Vybrané role, a kliknutím na šipku vybrané role přidejte.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-120">Press the Shift key to select multiple roles to add to the Selected roles pane and then click the arrow to add the selected roles.</span></span>  
+14. <span data-ttu-id="e1c1b-121">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e1c1b-121">Click Save.</span></span>
 
 

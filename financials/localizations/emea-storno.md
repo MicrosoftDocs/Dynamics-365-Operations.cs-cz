@@ -17,156 +17,156 @@ ms.author: v-semaz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: cd234755bbe92e8f1c78a2dd6e7d05e5372c4692
+ms.sourcegitcommit: 97d374230cc6e833b9f585de000e1252f2a78b9d
+ms.openlocfilehash: e042435dacb9ab4c5390ee1fb758e1cc4aeb3b70
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 
-# <a name="storno-accounting"></a>Záporné storno
+# <a name="storno-accounting"></a><span data-ttu-id="9ace1-103">Záporné storno</span><span class="sxs-lookup"><span data-stu-id="9ace1-103">Storno accounting</span></span>
 
-Záporné storno je praxe používání záporných čísel ke stornování původních účetních položek deníku.
+<span data-ttu-id="9ace1-104">Záporné storno je praxe používání záporných čísel ke stornování původních účetních položek deníku.</span><span class="sxs-lookup"><span data-stu-id="9ace1-104">Storno accounting is the practice of using negative numbers to reverse original journal account entries.</span></span>
 
-*Záporné storno* je praxe používání záporných debetních nebo kreditních částek ke stornování původních účetních položek deníku. Vzhledem k tomu, že účetní obvykle zapisují položky záporného storna červeně, tento účetní standard se také označuje jako *červené storno*. Pomocí záporného storna můžete zrušit dokument s nesprávnými částkami, po zrušení byste však vždy měli zadat správnou částku dokumentu.
+<span data-ttu-id="9ace1-105">*Záporné storno* je praxe používání záporných debetních nebo kreditních částek ke stornování původních účetních položek deníku.</span><span class="sxs-lookup"><span data-stu-id="9ace1-105">*Storno accounting* is a practice of using negative debit or credit amounts to reverse original journal account entries.</span></span> <span data-ttu-id="9ace1-106">Vzhledem k tomu, že účetní obvykle zapisují položky záporného storna červeně, tento účetní standard se také označuje jako *červené storno*.</span><span class="sxs-lookup"><span data-stu-id="9ace1-106">Because bookkeepers typically write Storno entries in red ink, this accounting practice is also known as *Red Storno*.</span></span> <span data-ttu-id="9ace1-107">Pomocí záporného storna můžete zrušit dokument s nesprávnými částkami, po zrušení byste však vždy měli zadat správnou částku dokumentu.</span><span class="sxs-lookup"><span data-stu-id="9ace1-107">Using Storno accounting you can cancel a document with incorrect amounts, however you should always enter the correct document amount after the cancellation.</span></span>
 
-## <a name="example"></a>Příklad
-Účetní zaúčtuje fakturu dodavatele s částkou 1 200 Kč. Během procesu platby se zjistí, že účetní omylem zadal 1 200 Kč namísto 1 002 Kč. Účetní teď musí vytvořit storno původního dokumentu a následně vytvořit správnou fakturu na 1 002 Kč. Další informace získáte v části [Faktura od dodavatele](../accounts-payable/vendor-invoices-overview.md). Následující tabulka uvádí obecné záznamy pro Storno.
+## <a name="example"></a><span data-ttu-id="9ace1-108">Příklad</span><span class="sxs-lookup"><span data-stu-id="9ace1-108">Example</span></span>
+<span data-ttu-id="9ace1-109">Účetní zaúčtuje fakturu dodavatele s částkou 1 200 Kč.</span><span class="sxs-lookup"><span data-stu-id="9ace1-109">A bookkeeper posts an invoice from a vendor for 120 USD.</span></span> <span data-ttu-id="9ace1-110">Během procesu platby se zjistí, že účetní omylem zadal 1 200 Kč namísto 1 002 Kč.</span><span class="sxs-lookup"><span data-stu-id="9ace1-110">During the payment process, it's discovered that the bookkeeper mistakenly entered 120 USD instead of 102 USD.</span></span> <span data-ttu-id="9ace1-111">Účetní teď musí vytvořit storno původního dokumentu a následně vytvořit správnou fakturu na 1 002 Kč.</span><span class="sxs-lookup"><span data-stu-id="9ace1-111">Now, the bookkeeper needs to create Storno for the original document, and then create the correct invoice for 102 USD.</span></span> <span data-ttu-id="9ace1-112">Další informace získáte v části [Faktura od dodavatele](../accounts-payable/vendor-invoices-overview.md).</span><span class="sxs-lookup"><span data-stu-id="9ace1-112">For more information, see [Invoice from Vendor](../accounts-payable/vendor-invoices-overview.md).</span></span> <span data-ttu-id="9ace1-113">Následující tabulka uvádí obecné záznamy pro Storno.</span><span class="sxs-lookup"><span data-stu-id="9ace1-113">The following table shows the general entry for Storno.</span></span>
 
-| **ID dokumentu** | **Účet** | **Má Dáti** | **Dal** | **Poznámka**                  |
+| <span data-ttu-id="9ace1-114">**ID dokumentu**</span><span class="sxs-lookup"><span data-stu-id="9ace1-114">**Document ID**</span></span> | <span data-ttu-id="9ace1-115">**Účet**</span><span class="sxs-lookup"><span data-stu-id="9ace1-115">**Account**</span></span> | <span data-ttu-id="9ace1-116">**Má Dáti**</span><span class="sxs-lookup"><span data-stu-id="9ace1-116">**Debit**</span></span> | <span data-ttu-id="9ace1-117">**Dal**</span><span class="sxs-lookup"><span data-stu-id="9ace1-117">**Credit**</span></span> | <span data-ttu-id="9ace1-118">**Poznámka**</span><span class="sxs-lookup"><span data-stu-id="9ace1-118">**Comment**</span></span>                  |
 |-----------------|-------------|-----------|------------|------------------------------|
-| Faktura0001     | Nákupní vratka   | 120       |            | Původní faktura (nesprávná) |
-| Faktura0001     | Účet dodavatele  |           | 120        | Původní faktura (nesprávná) |
+| <span data-ttu-id="9ace1-119">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="9ace1-119">Invoice0001</span></span>     | <span data-ttu-id="9ace1-120">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="9ace1-120">Purch acc</span></span>   | <span data-ttu-id="9ace1-121">120</span><span class="sxs-lookup"><span data-stu-id="9ace1-121">120</span></span>       |            | <span data-ttu-id="9ace1-122">Původní faktura (nesprávná)</span><span class="sxs-lookup"><span data-stu-id="9ace1-122">Original Invoice (incorrect)</span></span> |
+| <span data-ttu-id="9ace1-123">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="9ace1-123">Invoice0001</span></span>     | <span data-ttu-id="9ace1-124">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="9ace1-124">Vendor acc</span></span>  |           | <span data-ttu-id="9ace1-125">120</span><span class="sxs-lookup"><span data-stu-id="9ace1-125">120</span></span>        | <span data-ttu-id="9ace1-126">Původní faktura (nesprávná)</span><span class="sxs-lookup"><span data-stu-id="9ace1-126">Original Invoice (incorrect)</span></span> |
 |                 |             |           |            |                              |
-| Storno0001      | Nákupní vratka   | -120     |            | Storno                       |
-| Storno0001      | Účet dodavatele  |           | -120      | Storno                       |
+| <span data-ttu-id="9ace1-127">Storno0001</span><span class="sxs-lookup"><span data-stu-id="9ace1-127">Storno0001</span></span>      | <span data-ttu-id="9ace1-128">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="9ace1-128">Purch acc</span></span>   | <span data-ttu-id="9ace1-129">-120</span><span class="sxs-lookup"><span data-stu-id="9ace1-129">-120</span></span>     |            | <span data-ttu-id="9ace1-130">Storno</span><span class="sxs-lookup"><span data-stu-id="9ace1-130">Storno</span></span>                       |
+| <span data-ttu-id="9ace1-131">Storno0001</span><span class="sxs-lookup"><span data-stu-id="9ace1-131">Storno0001</span></span>      | <span data-ttu-id="9ace1-132">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="9ace1-132">Vendor acc</span></span>  |           | <span data-ttu-id="9ace1-133">-120</span><span class="sxs-lookup"><span data-stu-id="9ace1-133">-120</span></span>      | <span data-ttu-id="9ace1-134">Storno</span><span class="sxs-lookup"><span data-stu-id="9ace1-134">Storno</span></span>                       |
 |                 |             |           |            |                              |
-| Faktura0002     | Nákupní vratka   | 102       |            | Správná faktura              |
-| Faktura0002     | Účet dodavatele  |           | 102        | Správná faktura              |
+| <span data-ttu-id="9ace1-135">Faktura0002</span><span class="sxs-lookup"><span data-stu-id="9ace1-135">Invoice0002</span></span>     | <span data-ttu-id="9ace1-136">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="9ace1-136">Purch acc</span></span>   | <span data-ttu-id="9ace1-137">102</span><span class="sxs-lookup"><span data-stu-id="9ace1-137">102</span></span>       |            | <span data-ttu-id="9ace1-138">Správná faktura</span><span class="sxs-lookup"><span data-stu-id="9ace1-138">Correct Invoice</span></span>              |
+| <span data-ttu-id="9ace1-139">Faktura0002</span><span class="sxs-lookup"><span data-stu-id="9ace1-139">Invoice0002</span></span>     | <span data-ttu-id="9ace1-140">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="9ace1-140">Vendor acc</span></span>  |           | <span data-ttu-id="9ace1-141">102</span><span class="sxs-lookup"><span data-stu-id="9ace1-141">102</span></span>        | <span data-ttu-id="9ace1-142">Správná faktura</span><span class="sxs-lookup"><span data-stu-id="9ace1-142">Correct Invoice</span></span>              |
 
-V tomto příkladu výpis zůstatku ukazuje následující.
+<span data-ttu-id="9ace1-143">V tomto příkladu výpis zůstatku ukazuje následující.</span><span class="sxs-lookup"><span data-stu-id="9ace1-143">In this example, the balance statement shows the following.</span></span>
 
-| Účet    | Má Dáti | Kreditní | Rozvaha |
+| <span data-ttu-id="9ace1-144">Účet</span><span class="sxs-lookup"><span data-stu-id="9ace1-144">Account</span></span>    | <span data-ttu-id="9ace1-145">Má Dáti</span><span class="sxs-lookup"><span data-stu-id="9ace1-145">Debit</span></span> | <span data-ttu-id="9ace1-146">Kreditní</span><span class="sxs-lookup"><span data-stu-id="9ace1-146">Credit</span></span> | <span data-ttu-id="9ace1-147">Rozvaha</span><span class="sxs-lookup"><span data-stu-id="9ace1-147">Balance</span></span> |
 |------------|-------|--------|---------|
-| Nákupní vratka  | 102   | 0      | 102     |
-| Účet dodavatele | 0     | 102    | -102    |
+| <span data-ttu-id="9ace1-148">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="9ace1-148">Purch acc</span></span>  | <span data-ttu-id="9ace1-149">102</span><span class="sxs-lookup"><span data-stu-id="9ace1-149">102</span></span>   | <span data-ttu-id="9ace1-150">0</span><span class="sxs-lookup"><span data-stu-id="9ace1-150">0</span></span>      | <span data-ttu-id="9ace1-151">102</span><span class="sxs-lookup"><span data-stu-id="9ace1-151">102</span></span>     |
+| <span data-ttu-id="9ace1-152">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="9ace1-152">Vendor acc</span></span> | <span data-ttu-id="9ace1-153">0</span><span class="sxs-lookup"><span data-stu-id="9ace1-153">0</span></span>     | <span data-ttu-id="9ace1-154">102</span><span class="sxs-lookup"><span data-stu-id="9ace1-154">102</span></span>    | <span data-ttu-id="9ace1-155">-102</span><span class="sxs-lookup"><span data-stu-id="9ace1-155">-102</span></span>    |
 
-## <a name="differences-between-storno-and-reverse-entries"></a>Rozdíly mezi stornem a opačnými zápisy
-Existují dva způsoby opravy účetních položek – opačný zápis a storno. Při použití opačného zápisu je vytvořena kopie původního obecného zápisu se zpětným zápisem debetního a kreditního účtu, přičemž u částek bude stejné znaménko. Používáte-li storno, systém vytvoří kopii původní obecné položky, ale částky budou zapsány se záporným znaménkem. Následující tabulka uvádí obecné záznamy pro Storno.
+## <a name="differences-between-storno-and-reverse-entries"></a><span data-ttu-id="9ace1-156">Rozdíly mezi stornem a opačnými zápisy</span><span class="sxs-lookup"><span data-stu-id="9ace1-156">Differences between Storno and reverse entries</span></span>
+<span data-ttu-id="9ace1-157">Existují dva způsoby opravy účetních položek – opačný zápis a storno.</span><span class="sxs-lookup"><span data-stu-id="9ace1-157">There are two ways in which to correct posting entries – reverse and storno.</span></span> <span data-ttu-id="9ace1-158">Při použití opačného zápisu je vytvořena kopie původního obecného zápisu se zpětným zápisem debetního a kreditního účtu, přičemž u částek bude stejné znaménko.</span><span class="sxs-lookup"><span data-stu-id="9ace1-158">If you use a reverse entry, a copy of the original general entry is created with reverse debit and credit accounts, and the amounts remain with the same sign.</span></span> <span data-ttu-id="9ace1-159">Používáte-li storno, systém vytvoří kopii původní obecné položky, ale částky budou zapsány se záporným znaménkem.</span><span class="sxs-lookup"><span data-stu-id="9ace1-159">If you use Storno, the system creates a copy of the original general entry, but the amounts are recorded with a negative sign.</span></span> <span data-ttu-id="9ace1-160">Následující tabulka uvádí obecné záznamy pro Storno.</span><span class="sxs-lookup"><span data-stu-id="9ace1-160">The following table shows the general entry for Storno.</span></span>
 
-| **ID dokumentu** | **Účet** | **Má Dáti** | **Dal** | **Poznámka**                  |
+| <span data-ttu-id="9ace1-161">**ID dokumentu**</span><span class="sxs-lookup"><span data-stu-id="9ace1-161">**Document ID**</span></span> | <span data-ttu-id="9ace1-162">**Účet**</span><span class="sxs-lookup"><span data-stu-id="9ace1-162">**Account**</span></span> | <span data-ttu-id="9ace1-163">**Má Dáti**</span><span class="sxs-lookup"><span data-stu-id="9ace1-163">**Debit**</span></span> | <span data-ttu-id="9ace1-164">**Dal**</span><span class="sxs-lookup"><span data-stu-id="9ace1-164">**Credit**</span></span> | <span data-ttu-id="9ace1-165">**Poznámka**</span><span class="sxs-lookup"><span data-stu-id="9ace1-165">**Comment**</span></span>                  |
 |-----------------|-------------|-----------|------------|------------------------------|
-| Faktura0001     | Nákupní vratka   | 120       |            | Původní faktura (nesprávná) |
-| Faktura0001     | Účet dodavatele  |           | 120        | Původní faktura (nesprávná) |
+| <span data-ttu-id="9ace1-166">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="9ace1-166">Invoice0001</span></span>     | <span data-ttu-id="9ace1-167">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="9ace1-167">Purch acc</span></span>   | <span data-ttu-id="9ace1-168">120</span><span class="sxs-lookup"><span data-stu-id="9ace1-168">120</span></span>       |            | <span data-ttu-id="9ace1-169">Původní faktura (nesprávná)</span><span class="sxs-lookup"><span data-stu-id="9ace1-169">Original Invoice (incorrect)</span></span> |
+| <span data-ttu-id="9ace1-170">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="9ace1-170">Invoice0001</span></span>     | <span data-ttu-id="9ace1-171">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="9ace1-171">Vendor acc</span></span>  |           | <span data-ttu-id="9ace1-172">120</span><span class="sxs-lookup"><span data-stu-id="9ace1-172">120</span></span>        | <span data-ttu-id="9ace1-173">Původní faktura (nesprávná)</span><span class="sxs-lookup"><span data-stu-id="9ace1-173">Original Invoice (incorrect)</span></span> |
 |                 |             |           |            |                              |
-| Reverse0001     | Nákupní vratka   |           | 120        | Stornovat                      |
-| Reverse0001     | Účet dodavatele  | 120       |            | Stornovat                      |
+| <span data-ttu-id="9ace1-174">Reverse0001</span><span class="sxs-lookup"><span data-stu-id="9ace1-174">Reverse0001</span></span>     | <span data-ttu-id="9ace1-175">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="9ace1-175">Purch acc</span></span>   |           | <span data-ttu-id="9ace1-176">120</span><span class="sxs-lookup"><span data-stu-id="9ace1-176">120</span></span>        | <span data-ttu-id="9ace1-177">Stornovat</span><span class="sxs-lookup"><span data-stu-id="9ace1-177">Reverse</span></span>                      |
+| <span data-ttu-id="9ace1-178">Reverse0001</span><span class="sxs-lookup"><span data-stu-id="9ace1-178">Reverse0001</span></span>     | <span data-ttu-id="9ace1-179">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="9ace1-179">Vendor acc</span></span>  | <span data-ttu-id="9ace1-180">120</span><span class="sxs-lookup"><span data-stu-id="9ace1-180">120</span></span>       |            | <span data-ttu-id="9ace1-181">Stornovat</span><span class="sxs-lookup"><span data-stu-id="9ace1-181">Reverse</span></span>                      |
 |                 |             |           |            |                              |
-| Faktura0002     | Nákupní vratka   | 102       |            | Správná faktura              |
-| Faktura0002     | Účet dodavatele  |           | 102        | Správná faktura              |
+| <span data-ttu-id="9ace1-182">Faktura0002</span><span class="sxs-lookup"><span data-stu-id="9ace1-182">Invoice0002</span></span>     | <span data-ttu-id="9ace1-183">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="9ace1-183">Purch acc</span></span>   | <span data-ttu-id="9ace1-184">102</span><span class="sxs-lookup"><span data-stu-id="9ace1-184">102</span></span>       |            | <span data-ttu-id="9ace1-185">Správná faktura</span><span class="sxs-lookup"><span data-stu-id="9ace1-185">Correct Invoice</span></span>              |
+| <span data-ttu-id="9ace1-186">Faktura0002</span><span class="sxs-lookup"><span data-stu-id="9ace1-186">Invoice0002</span></span>     | <span data-ttu-id="9ace1-187">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="9ace1-187">Vendor acc</span></span>  |           | <span data-ttu-id="9ace1-188">102</span><span class="sxs-lookup"><span data-stu-id="9ace1-188">102</span></span>        | <span data-ttu-id="9ace1-189">Správná faktura</span><span class="sxs-lookup"><span data-stu-id="9ace1-189">Correct Invoice</span></span>              |
 
-V tomto příkladu výpis zůstatku ukazuje následující.
+<span data-ttu-id="9ace1-190">V tomto příkladu výpis zůstatku ukazuje následující.</span><span class="sxs-lookup"><span data-stu-id="9ace1-190">In this example, the balance statement shows the following.</span></span>
 
-| Účet    | Má Dáti | Kreditní | Rozvaha |
+| <span data-ttu-id="9ace1-191">Účet</span><span class="sxs-lookup"><span data-stu-id="9ace1-191">Account</span></span>    | <span data-ttu-id="9ace1-192">Má Dáti</span><span class="sxs-lookup"><span data-stu-id="9ace1-192">Debit</span></span> | <span data-ttu-id="9ace1-193">Kreditní</span><span class="sxs-lookup"><span data-stu-id="9ace1-193">Credit</span></span> | <span data-ttu-id="9ace1-194">Rozvaha</span><span class="sxs-lookup"><span data-stu-id="9ace1-194">Balance</span></span> |
 |------------|-------|--------|---------|
-| Nákupní vratka  | 222   | 120    | 102     |
-| Účet dodavatele | 120   | 222    | -102    |
+| <span data-ttu-id="9ace1-195">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="9ace1-195">Purch acc</span></span>  | <span data-ttu-id="9ace1-196">222</span><span class="sxs-lookup"><span data-stu-id="9ace1-196">222</span></span>   | <span data-ttu-id="9ace1-197">120</span><span class="sxs-lookup"><span data-stu-id="9ace1-197">120</span></span>    | <span data-ttu-id="9ace1-198">102</span><span class="sxs-lookup"><span data-stu-id="9ace1-198">102</span></span>     |
+| <span data-ttu-id="9ace1-199">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="9ace1-199">Vendor acc</span></span> | <span data-ttu-id="9ace1-200">120</span><span class="sxs-lookup"><span data-stu-id="9ace1-200">120</span></span>   | <span data-ttu-id="9ace1-201">222</span><span class="sxs-lookup"><span data-stu-id="9ace1-201">222</span></span>    | <span data-ttu-id="9ace1-202">-102</span><span class="sxs-lookup"><span data-stu-id="9ace1-202">-102</span></span>    |
 
-Všimněte si, že jsou zůstatky záporného účtování a storna stejné. Existuje rozdíl mezi debetním a kreditním obratem, protože opačný zápis způsobuje redundantní obrat debetu a kreditu. Opačný zápis se používá v zemích/oblastech, kde se obrat používá jen zřídka. Jiné země nebo oblasti používají záporné storno.
+<span data-ttu-id="9ace1-203">Všimněte si, že jsou zůstatky záporného účtování a storna stejné.</span><span class="sxs-lookup"><span data-stu-id="9ace1-203">Note that the balances are equal for the reverse and the storno.</span></span> <span data-ttu-id="9ace1-204">Existuje rozdíl mezi debetním a kreditním obratem, protože opačný zápis způsobuje redundantní obrat debetu a kreditu.</span><span class="sxs-lookup"><span data-stu-id="9ace1-204">There is a difference between debit turnover and credit turnover, because the reverse entry makes redundant debit and credit turnover.</span></span> <span data-ttu-id="9ace1-205">Opačný zápis se používá v zemích/oblastech, kde se obrat používá jen zřídka.</span><span class="sxs-lookup"><span data-stu-id="9ace1-205">The reverse entry is used in countries/regions where turnover is rarely use.</span></span> <span data-ttu-id="9ace1-206">Jiné země nebo oblasti používají záporné storno.</span><span class="sxs-lookup"><span data-stu-id="9ace1-206">Other countries/regions use Storno accounting.</span></span>
 
-## <a name="partial-storno"></a>Částečná storno
-*Částečné storno* je účetní praxe používání záporných debetních nebo kreditních částek ke stornování původních účetních položek deníku. Některé země nebo oblasti umožňují používání částečného storna. Účetní například zaúčtuje fakturu dodavatele s částkou 1 200 Kč. Během procesu platby je zjištěno, že účetní omylem zadal nesprávnou číselnou řadu. Původní faktura na 1 002 Kč obsahovala chybu v číselné řadě. Pomocí částečného storna by měl účetní vytvořit storno na 180 Kč. Následující tabulka uvádí obecné záznamy pro částečné storno.
+## <a name="partial-storno"></a><span data-ttu-id="9ace1-207">Částečná storno</span><span class="sxs-lookup"><span data-stu-id="9ace1-207">Partial Storno</span></span>
+<span data-ttu-id="9ace1-208">*Částečné storno* je účetní praxe používání záporných debetních nebo kreditních částek ke stornování původních účetních položek deníku.</span><span class="sxs-lookup"><span data-stu-id="9ace1-208">*Partial Storno* is an accounting practice of using negative debit or credit amounts to reverse part of the original journal account entries.</span></span> <span data-ttu-id="9ace1-209">Některé země nebo oblasti umožňují používání částečného storna.</span><span class="sxs-lookup"><span data-stu-id="9ace1-209">Some countries/regions allow the use the partial Storno.</span></span> <span data-ttu-id="9ace1-210">Účetní například zaúčtuje fakturu dodavatele s částkou 1 200 Kč.</span><span class="sxs-lookup"><span data-stu-id="9ace1-210">For example, a bookkeeper posts an invoice from a vendor for 120 USD.</span></span> <span data-ttu-id="9ace1-211">Během procesu platby je zjištěno, že účetní omylem zadal nesprávnou číselnou řadu.</span><span class="sxs-lookup"><span data-stu-id="9ace1-211">During the payment process, it's discovered that the bookkeeper mistakenly entered an incorrect number sequence.</span></span> <span data-ttu-id="9ace1-212">Původní faktura na 1 002 Kč obsahovala chybu v číselné řadě.</span><span class="sxs-lookup"><span data-stu-id="9ace1-212">The original invoice for 102 USD had a mistake in the number sequence.</span></span> <span data-ttu-id="9ace1-213">Pomocí částečného storna by měl účetní vytvořit storno na 180 Kč.</span><span class="sxs-lookup"><span data-stu-id="9ace1-213">Using partial Storno, the bookkeeper should create Storno for 18 USD.</span></span> <span data-ttu-id="9ace1-214">Následující tabulka uvádí obecné záznamy pro částečné storno.</span><span class="sxs-lookup"><span data-stu-id="9ace1-214">The following table shows the general entry for partial Storno.</span></span>
 
-| **ID dokumentu** | **Účet** | **Má Dáti** | **Kreditní** | **Poznámka**                  |
+| <span data-ttu-id="9ace1-215">**ID dokumentu**</span><span class="sxs-lookup"><span data-stu-id="9ace1-215">**Document ID**</span></span> | <span data-ttu-id="9ace1-216">**Účet**</span><span class="sxs-lookup"><span data-stu-id="9ace1-216">**Account**</span></span> | <span data-ttu-id="9ace1-217">**Má Dáti**</span><span class="sxs-lookup"><span data-stu-id="9ace1-217">**Debit**</span></span> | <span data-ttu-id="9ace1-218">**Kreditní**</span><span class="sxs-lookup"><span data-stu-id="9ace1-218">**Credit**</span></span> | <span data-ttu-id="9ace1-219">**Poznámka**</span><span class="sxs-lookup"><span data-stu-id="9ace1-219">**Comment**</span></span>                  |
 |-----------------|-------------|-----------|------------|------------------------------|
-| Faktura0001     | Nákupní vratka   | 120       |            | Původní faktura (nesprávná) |
-| Faktura0001     | Účet dodavatele  |           | 120        | Původní faktura (nesprávná) |
+| <span data-ttu-id="9ace1-220">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="9ace1-220">Invoice0001</span></span>     | <span data-ttu-id="9ace1-221">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="9ace1-221">Purch acc</span></span>   | <span data-ttu-id="9ace1-222">120</span><span class="sxs-lookup"><span data-stu-id="9ace1-222">120</span></span>       |            | <span data-ttu-id="9ace1-223">Původní faktura (nesprávná)</span><span class="sxs-lookup"><span data-stu-id="9ace1-223">Original Invoice (incorrect)</span></span> |
+| <span data-ttu-id="9ace1-224">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="9ace1-224">Invoice0001</span></span>     | <span data-ttu-id="9ace1-225">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="9ace1-225">Vendor acc</span></span>  |           | <span data-ttu-id="9ace1-226">120</span><span class="sxs-lookup"><span data-stu-id="9ace1-226">120</span></span>        | <span data-ttu-id="9ace1-227">Původní faktura (nesprávná)</span><span class="sxs-lookup"><span data-stu-id="9ace1-227">Original Invoice (incorrect)</span></span> |
 |                 |             |           |            |                              |
-| Storno0001      | Nákupní vratka   | 18. \-      |            | Částečná storno               |
-| Storno0001      | Účet dodavatele  |           | 18. \-       | Částečná storno               |
+| <span data-ttu-id="9ace1-228">Storno0001</span><span class="sxs-lookup"><span data-stu-id="9ace1-228">Storno0001</span></span>      | <span data-ttu-id="9ace1-229">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="9ace1-229">Purch acc</span></span>   | <span data-ttu-id="9ace1-230">18. \-</span><span class="sxs-lookup"><span data-stu-id="9ace1-230">\-18</span></span>      |            | <span data-ttu-id="9ace1-231">Částečná storno</span><span class="sxs-lookup"><span data-stu-id="9ace1-231">Partial Storno</span></span>               |
+| <span data-ttu-id="9ace1-232">Storno0001</span><span class="sxs-lookup"><span data-stu-id="9ace1-232">Storno0001</span></span>      | <span data-ttu-id="9ace1-233">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="9ace1-233">Vendor acc</span></span>  |           | <span data-ttu-id="9ace1-234">18. \-</span><span class="sxs-lookup"><span data-stu-id="9ace1-234">\-18</span></span>       | <span data-ttu-id="9ace1-235">Částečná storno</span><span class="sxs-lookup"><span data-stu-id="9ace1-235">Partial Storno</span></span>               |
 
-V tomto příkladu výpis zůstatku ukazuje následující.
+<span data-ttu-id="9ace1-236">V tomto příkladu výpis zůstatku ukazuje následující.</span><span class="sxs-lookup"><span data-stu-id="9ace1-236">In this example, the balance statement shows the following.</span></span>
 
-| Účet    | Má Dáti | Kreditní | Rozvaha |
+| <span data-ttu-id="9ace1-237">Účet</span><span class="sxs-lookup"><span data-stu-id="9ace1-237">Account</span></span>    | <span data-ttu-id="9ace1-238">Má Dáti</span><span class="sxs-lookup"><span data-stu-id="9ace1-238">Debit</span></span> | <span data-ttu-id="9ace1-239">Kreditní</span><span class="sxs-lookup"><span data-stu-id="9ace1-239">Credit</span></span> | <span data-ttu-id="9ace1-240">Rozvaha</span><span class="sxs-lookup"><span data-stu-id="9ace1-240">Balance</span></span> |
 |------------|-------|--------|---------|
-| Nákupní vratka  | 102   | 0      | 102     |
-| Účet dodavatele | 0     | 102    | -102    |
+| <span data-ttu-id="9ace1-241">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="9ace1-241">Purch acc</span></span>  | <span data-ttu-id="9ace1-242">102</span><span class="sxs-lookup"><span data-stu-id="9ace1-242">102</span></span>   | <span data-ttu-id="9ace1-243">0</span><span class="sxs-lookup"><span data-stu-id="9ace1-243">0</span></span>      | <span data-ttu-id="9ace1-244">102</span><span class="sxs-lookup"><span data-stu-id="9ace1-244">102</span></span>     |
+| <span data-ttu-id="9ace1-245">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="9ace1-245">Vendor acc</span></span> | <span data-ttu-id="9ace1-246">0</span><span class="sxs-lookup"><span data-stu-id="9ace1-246">0</span></span>     | <span data-ttu-id="9ace1-247">102</span><span class="sxs-lookup"><span data-stu-id="9ace1-247">102</span></span>    | <span data-ttu-id="9ace1-248">-102</span><span class="sxs-lookup"><span data-stu-id="9ace1-248">-102</span></span>    |
 
-Částečné storno může vytvořit problém ve formuláři Tisk předlohy. Pokud existuje rozdíl mezi datem původního dokladu a datem storna, může být obtížné získat přesnou částku měny. V důsledku toho je částečné storno povoleno pouze pro určité dokumenty. Aplikace Microsoft Dynamics 365 for Operations poskytuje funkci částečného storna pro dokumenty a země/oblasti, kde je povoleno.
+<span data-ttu-id="9ace1-249">Částečné storno může vytvořit problém ve formuláři Tisk předlohy.</span><span class="sxs-lookup"><span data-stu-id="9ace1-249">Partial Storno can create an issue on the Original Print form.</span></span> <span data-ttu-id="9ace1-250">Pokud existuje rozdíl mezi datem původního dokladu a datem storna, může být obtížné získat přesnou částku měny.</span><span class="sxs-lookup"><span data-stu-id="9ace1-250">If there is a difference between the date of the original document and the date of Storno, it can make it difficult to get an accurate currency amount.</span></span> <span data-ttu-id="9ace1-251">V důsledku toho je částečné storno povoleno pouze pro určité dokumenty.</span><span class="sxs-lookup"><span data-stu-id="9ace1-251">As a result, partial Storno is only allowed for certain documents.</span></span> <span data-ttu-id="9ace1-252">Aplikace Microsoft Dynamics 365 for Operations poskytuje funkci částečného storna pro dokumenty a země/oblasti, kde je povoleno.</span><span class="sxs-lookup"><span data-stu-id="9ace1-252">Microsoft Dynamics 365 for Operations provides partial Storno functionality for documents and countries/regions where it is allowed.</span></span>
 
-## <a name="how-to-enter-storno-on-journal-lines"></a>Jak zadat storno na řádcích deníku
-Zadejte částku Má dáti nebo Dal se záporným znaménkem v řádku deníku k vytvoření položky storna. Pole **Oprava** je nastaveno během procesu zaúčtování. 
+## <a name="how-to-enter-storno-on-journal-lines"></a><span data-ttu-id="9ace1-253">Jak zadat storno na řádcích deníku</span><span class="sxs-lookup"><span data-stu-id="9ace1-253">How to enter Storno on journal lines</span></span>
+<span data-ttu-id="9ace1-254">Zadejte částku Má dáti nebo Dal se záporným znaménkem v řádku deníku k vytvoření položky storna.</span><span class="sxs-lookup"><span data-stu-id="9ace1-254">Enter the debit or credit amount with a negative sign on the journal line to make a Storno entry.</span></span> <span data-ttu-id="9ace1-255">Pole **Oprava** je nastaveno během procesu zaúčtování.</span><span class="sxs-lookup"><span data-stu-id="9ace1-255">The **Correction** field is set during the posting process.</span></span> 
 
-## <a name="how-storno-is-displayed"></a>Zobrazení storna
-Aplikace Dynamics 365 for Operations zpracovává záporné částky deníku speciálním způsobem. Položka hlavního deníku, transakce odběratele, transakce dodavatele a jiné transakce poskytují funkce storna, jak je uvedeno níže.
+## <a name="how-storno-is-displayed"></a><span data-ttu-id="9ace1-256">Zobrazení storna</span><span class="sxs-lookup"><span data-stu-id="9ace1-256">How Storno is displayed</span></span>
+<span data-ttu-id="9ace1-257">Aplikace Dynamics 365 for Operations zpracovává záporné částky deníku speciálním způsobem.</span><span class="sxs-lookup"><span data-stu-id="9ace1-257">Dynamics 365 for Operations handles negative journal amounts in a special way.</span></span> <span data-ttu-id="9ace1-258">Položka hlavního deníku, transakce odběratele, transakce dodavatele a jiné transakce poskytují funkce storna, jak je uvedeno níže.</span><span class="sxs-lookup"><span data-stu-id="9ace1-258">The general journal entry, customer transaction, vendor transaction, and other transactions provide a Storno function, as shown below.</span></span>
 
 <table>
 <thead>
 <tr class="row-1">
-<th class="column-1" rowspan="2">Uživatelský vstup na řádku deníku</th>
-<th class="column-2" colspan="2">Princip úložiště</th>
-<th class="column-4" colspan="2">Pravidlo zobrazení</th>
-<th class="column-6" colspan="3">Dopad na sestavu výpisu</th>
+<th class="column-1" rowspan="2"><span data-ttu-id="9ace1-259">Uživatelský vstup na řádku deníku</span><span class="sxs-lookup"><span data-stu-id="9ace1-259">User input at journal line</span></span></th>
+<th class="column-2" colspan="2"><span data-ttu-id="9ace1-260">Princip úložiště</span><span class="sxs-lookup"><span data-stu-id="9ace1-260">Storage principle</span></span></th>
+<th class="column-4" colspan="2"><span data-ttu-id="9ace1-261">Pravidlo zobrazení</span><span class="sxs-lookup"><span data-stu-id="9ace1-261">Display principle</span></span></th>
+<th class="column-6" colspan="3"><span data-ttu-id="9ace1-262">Dopad na sestavu výpisu</span><span class="sxs-lookup"><span data-stu-id="9ace1-262">Impact to the Statement report</span></span></th>
 </tr>
 <tr class="row-1">
-<th class="column-2">Pole Oprava</th>
-<th class="column-3">Pole Částka</th>
-<th class="column-4">Částka v měně transakce</th>
-<th class="column-5">Množství</th>
-<th class="column-6">Sloupec Má dáti</th>
-<th class="column-7">Sloupec Dal</th>
-<th class="column-8">Sloupec Zůstatek</th>
+<th class="column-2"><span data-ttu-id="9ace1-263">Pole Oprava</span><span class="sxs-lookup"><span data-stu-id="9ace1-263">Correction field</span></span></th>
+<th class="column-3"><span data-ttu-id="9ace1-264">Pole Částka</span><span class="sxs-lookup"><span data-stu-id="9ace1-264">Amount field</span></span></th>
+<th class="column-4"><span data-ttu-id="9ace1-265">Částka v měně transakce</span><span class="sxs-lookup"><span data-stu-id="9ace1-265">Amount in transaction currency</span></span></th>
+<th class="column-5"><span data-ttu-id="9ace1-266">Množství</span><span class="sxs-lookup"><span data-stu-id="9ace1-266">Amount</span></span></th>
+<th class="column-6"><span data-ttu-id="9ace1-267">Sloupec Má dáti</span><span class="sxs-lookup"><span data-stu-id="9ace1-267">Debit column</span></span></th>
+<th class="column-7"><span data-ttu-id="9ace1-268">Sloupec Dal</span><span class="sxs-lookup"><span data-stu-id="9ace1-268">Credit column</span></span></th>
+<th class="column-8"><span data-ttu-id="9ace1-269">Sloupec Zůstatek</span><span class="sxs-lookup"><span data-stu-id="9ace1-269">Balance column</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-2">
-<td class="column-1"> Má Dáti</td>
-<td class="column-2">Žádný</td>
-<td class="column-3">0. &gt;</td>
-<td class="column-4" align="right">Množství</td>
-<td class="column-5" align="right">Množství</td>
-<td class="column-6">Zvýšení</td>
+<td class="column-1"> <span data-ttu-id="9ace1-270">Má Dáti</span><span class="sxs-lookup"><span data-stu-id="9ace1-270">Debit</span></span></td>
+<td class="column-2"><span data-ttu-id="9ace1-271">Žádný</span><span class="sxs-lookup"><span data-stu-id="9ace1-271">No</span></span></td>
+<td class="column-3"><span data-ttu-id="9ace1-272">0. &gt;</span><span class="sxs-lookup"><span data-stu-id="9ace1-272">&gt;0</span></span></td>
+<td class="column-4" align="right"><span data-ttu-id="9ace1-273">Množství</span><span class="sxs-lookup"><span data-stu-id="9ace1-273">Amount</span></span></td>
+<td class="column-5" align="right"><span data-ttu-id="9ace1-274">Množství</span><span class="sxs-lookup"><span data-stu-id="9ace1-274">Amount</span></span></td>
+<td class="column-6"><span data-ttu-id="9ace1-275">Zvýšení</span><span class="sxs-lookup"><span data-stu-id="9ace1-275">Increases</span></span></td>
 <td class="column-7"></td>
-<td class="column-8">Zvýšení</td>
+<td class="column-8"><span data-ttu-id="9ace1-276">Zvýšení</span><span class="sxs-lookup"><span data-stu-id="9ace1-276">Increases</span></span></td>
 </tr>
 <tr class="row-3">
-<td class="column-1"> Kreditní</td>
-<td class="column-2">Žádný</td>
-<td class="column-3">0. &lt;</td>
-<td class="column-4" align="right">-Částka</td>
-<td class="column-5" align="right">Množství</td>
+<td class="column-1"> <span data-ttu-id="9ace1-277">Kreditní</span><span class="sxs-lookup"><span data-stu-id="9ace1-277">Credit</span></span></td>
+<td class="column-2"><span data-ttu-id="9ace1-278">Žádný</span><span class="sxs-lookup"><span data-stu-id="9ace1-278">No</span></span></td>
+<td class="column-3"><span data-ttu-id="9ace1-279">0. &lt;</span><span class="sxs-lookup"><span data-stu-id="9ace1-279">&lt;0</span></span></td>
+<td class="column-4" align="right"><span data-ttu-id="9ace1-280">-Částka</span><span class="sxs-lookup"><span data-stu-id="9ace1-280">-Amount</span></span></td>
+<td class="column-5" align="right"><span data-ttu-id="9ace1-281">Množství</span><span class="sxs-lookup"><span data-stu-id="9ace1-281">Amount</span></span></td>
 <td class="column-6"></td>
-<td class="column-7">Zvýšení</td>
-<td class="column-8">Snížení</td>
+<td class="column-7"><span data-ttu-id="9ace1-282">Zvýšení</span><span class="sxs-lookup"><span data-stu-id="9ace1-282">Increases</span></span></td>
+<td class="column-8"><span data-ttu-id="9ace1-283">Snížení</span><span class="sxs-lookup"><span data-stu-id="9ace1-283">Decreases</span></span></td>
 </tr>
 <tr class="row-4">
-<td class="column-1">-Má Dáti</td>
-<td class="column-2">Ano</td>
-<td class="column-3">0. &gt;</td>
-<td class="column-4" align="right">+Částka</td>
-<td class="column-5" align="right">-Částka</td>
-<td class="column-6">Snížení</td>
+<td class="column-1"><span data-ttu-id="9ace1-284">-Má Dáti</span><span class="sxs-lookup"><span data-stu-id="9ace1-284">-Debit</span></span></td>
+<td class="column-2"><span data-ttu-id="9ace1-285">Ano</span><span class="sxs-lookup"><span data-stu-id="9ace1-285">Yes</span></span></td>
+<td class="column-3"><span data-ttu-id="9ace1-286">0. &gt;</span><span class="sxs-lookup"><span data-stu-id="9ace1-286">&gt;0</span></span></td>
+<td class="column-4" align="right"><span data-ttu-id="9ace1-287">+Částka</span><span class="sxs-lookup"><span data-stu-id="9ace1-287">+Amount</span></span></td>
+<td class="column-5" align="right"><span data-ttu-id="9ace1-288">-Částka</span><span class="sxs-lookup"><span data-stu-id="9ace1-288">-Amount</span></span></td>
+<td class="column-6"><span data-ttu-id="9ace1-289">Snížení</span><span class="sxs-lookup"><span data-stu-id="9ace1-289">Decreases</span></span></td>
 <td class="column-7"></td>
-<td class="column-8">Zvýšení</td>
+<td class="column-8"><span data-ttu-id="9ace1-290">Zvýšení</span><span class="sxs-lookup"><span data-stu-id="9ace1-290">Increases</span></span></td>
 </tr>
 <tr class="row-5">
-<td class="column-1">-Kredit</td>
-<td class="column-2">Ano</td>
-<td class="column-3">0. &lt;</td>
-<td class="column-4" align="right">-Částka</td>
-<td class="column-5" align="right">-Částka</td>
+<td class="column-1"><span data-ttu-id="9ace1-291">-Kredit</span><span class="sxs-lookup"><span data-stu-id="9ace1-291">-Credit</span></span></td>
+<td class="column-2"><span data-ttu-id="9ace1-292">Ano</span><span class="sxs-lookup"><span data-stu-id="9ace1-292">Yes</span></span></td>
+<td class="column-3"><span data-ttu-id="9ace1-293">0. &lt;</span><span class="sxs-lookup"><span data-stu-id="9ace1-293">&lt;0</span></span></td>
+<td class="column-4" align="right"><span data-ttu-id="9ace1-294">-Částka</span><span class="sxs-lookup"><span data-stu-id="9ace1-294">-Amount</span></span></td>
+<td class="column-5" align="right"><span data-ttu-id="9ace1-295">-Částka</span><span class="sxs-lookup"><span data-stu-id="9ace1-295">-Amount</span></span></td>
 <td class="column-6"></td>
-<td class="column-7">Snížení</td>
-<td class="column-8">Snížení</td>
+<td class="column-7"><span data-ttu-id="9ace1-296">Snížení</span><span class="sxs-lookup"><span data-stu-id="9ace1-296">Decreases</span></span></td>
+<td class="column-8"><span data-ttu-id="9ace1-297">Snížení</span><span class="sxs-lookup"><span data-stu-id="9ace1-297">Decreases</span></span></td>
 </tr>
 </tbody>
 </table>
 
-Můžete upravit zobrazení storna pro formuláře, tabulky, sloupce a pole. Například můžete vypnout zobrazení znaménka nebo změnit odsazení pro záporné částky. Můžete také použít pole **oprava** se všemi nastaveními zobrazení, pokud má pole **Oprava** zadanou hodnotu "Ano", po které následuje položka Storno.
+<span data-ttu-id="9ace1-298">Můžete upravit zobrazení storna pro formuláře, tabulky, sloupce a pole.</span><span class="sxs-lookup"><span data-stu-id="9ace1-298">You can customize the display of Storno in forms, grids, columns, and fields.</span></span> <span data-ttu-id="9ace1-299">Například můžete vypnout zobrazení znaménka nebo změnit odsazení pro záporné částky.</span><span class="sxs-lookup"><span data-stu-id="9ace1-299">For example, you can turn off sign display or change padding for negative amounts.</span></span> <span data-ttu-id="9ace1-300">Můžete také použít pole **oprava** se všemi nastaveními zobrazení, pokud má pole **Oprava** zadanou hodnotu "Ano", po které následuje položka Storno.</span><span class="sxs-lookup"><span data-stu-id="9ace1-300">You can also use the **Correction** field with all display settings, if the **Correction** field has ‘Yes’, then it is a Storno entry.</span></span>
 
 ![Částky storna položky deníku](./media/journal-storno.png)
 
-## <a name="how-documents-create-storno"></a>Jak dokumenty vytvářejí storno
-Některé dokumenty vytvářejí transakce zrušení. Následující přecenění cizí měny pro hlavní knihu, závazky a dokumenty pohledávek stornují nerealizovaé zisky a ztráty. Podrobnější informace získáte v tématu [Přecenění cizí měny pro hlavní knihu](../general-ledger/foreign-currency-revaluation-general-ledger.md) nebo [Závazky a pohledávky](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Po vytvoření transakce zrušení budou vytvořeny nové transakce s nerealizovanými zisky a ztrátami. Transakce zrušení jsou vytvořeny také pro zásoby. Další informace naleznete v tématu [Uzávěrka zásob](/dynamics365/unified-operations/supply-chain/cost-management/inventory-close). Existují dokumenty, které umožňují zrušení dříve zaúčtovaného dokladu. Uživatel může například vytvořit dobropis ke zrušení dříve vytvořené faktury. Dokumenty používají specifické parametry pro vytváření zpětných transakcí nebo transakcí storna. Například přecenění cizí měny vytvoří transakce zpětného zápisu nebo storna na základě parametru opravy hlavní knihy. Dobropis odběratele vytvoří zpětné transakce nebo transakce storna na základě parametru opravy dobropisu závazků.
+## <a name="how-documents-create-storno"></a><span data-ttu-id="9ace1-302">Jak dokumenty vytvářejí storno</span><span class="sxs-lookup"><span data-stu-id="9ace1-302">How documents create Storno</span></span>
+<span data-ttu-id="9ace1-303">Některé dokumenty vytvářejí transakce zrušení.</span><span class="sxs-lookup"><span data-stu-id="9ace1-303">Certain documents create cancellation transactions.</span></span> <span data-ttu-id="9ace1-304">Následující přecenění cizí měny pro hlavní knihu, závazky a dokumenty pohledávek stornují nerealizovaé zisky a ztráty.</span><span class="sxs-lookup"><span data-stu-id="9ace1-304">For example, the foreign currency revaluation for general ledger, accounts payable, and accounts receivable documents cancel unrealized gain and loss.</span></span> <span data-ttu-id="9ace1-305">Podrobnější informace získáte v tématu [Přecenění cizí měny pro hlavní knihu](../general-ledger/foreign-currency-revaluation-general-ledger.md) nebo [Závazky a pohledávky](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md).</span><span class="sxs-lookup"><span data-stu-id="9ace1-305">For more details, see [Foreign currency revaluation for General Ledger](../general-ledger/foreign-currency-revaluation-general-ledger.md) or [Accounts payable and Accounts receivable](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md).</span></span> <span data-ttu-id="9ace1-306">Po vytvoření transakce zrušení budou vytvořeny nové transakce s nerealizovanými zisky a ztrátami.</span><span class="sxs-lookup"><span data-stu-id="9ace1-306">After a cancellation transaction is created, new transactions will be created with unrealized gain and loss.</span></span> <span data-ttu-id="9ace1-307">Transakce zrušení jsou vytvořeny také pro zásoby.</span><span class="sxs-lookup"><span data-stu-id="9ace1-307">Cancellation transactions are also created for inventory.</span></span> <span data-ttu-id="9ace1-308">Další informace naleznete v tématu [Uzávěrka zásob](/dynamics365/unified-operations/supply-chain/cost-management/inventory-close).</span><span class="sxs-lookup"><span data-stu-id="9ace1-308">For more information, see [Inventory close](/dynamics365/unified-operations/supply-chain/cost-management/inventory-close).</span></span> <span data-ttu-id="9ace1-309">Existují dokumenty, které umožňují zrušení dříve zaúčtovaného dokladu.</span><span class="sxs-lookup"><span data-stu-id="9ace1-309">There are documents that allow you to cancel the previously posted document.</span></span> <span data-ttu-id="9ace1-310">Uživatel může například vytvořit dobropis ke zrušení dříve vytvořené faktury.</span><span class="sxs-lookup"><span data-stu-id="9ace1-310">For example, the User can create a Credit Note to cancel a previously created Invoice.</span></span> <span data-ttu-id="9ace1-311">Dokumenty používají specifické parametry pro vytváření zpětných transakcí nebo transakcí storna.</span><span class="sxs-lookup"><span data-stu-id="9ace1-311">Documents use specific parameters to create reverse or Storno transactions.</span></span> <span data-ttu-id="9ace1-312">Například přecenění cizí měny vytvoří transakce zpětného zápisu nebo storna na základě parametru opravy hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="9ace1-312">For example, the foreign currency revaluation creates reverse or Storno transactions based on the general ledger correction parameter.</span></span> <span data-ttu-id="9ace1-313">Dobropis odběratele vytvoří zpětné transakce nebo transakce storna na základě parametru opravy dobropisu závazků.</span><span class="sxs-lookup"><span data-stu-id="9ace1-313">The customer credit note creates reverse or Storno transactions based on the accounts receivable credit note correction parameter.</span></span>
 
 

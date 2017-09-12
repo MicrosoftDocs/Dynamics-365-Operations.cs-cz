@@ -16,53 +16,53 @@ ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 8afbcf781e917f48136e06692234d49302b077fb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f2dab127a40a1a48b49077d4b2395f5b8c58116b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-payment-slip-format-for-project-invoices"></a>Nastavení formátu platebního dokladu pro faktury projektů
+# <a name="set-up-payment-slip-format-for-project-invoices"></a><span data-ttu-id="469b1-103">Nastavení formátu platebního dokladu pro faktury projektů</span><span class="sxs-lookup"><span data-stu-id="469b1-103">Set up payment slip format for project invoices</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Společnosti obvykle přiřadí vytištěné platební doklady k fakturám, aby poskytli asistenci odběratelům a určili platební odkaz pro zaúčtování a vyrovnání. Kromě prodejních a volných faktur můžete platební doklad použít i pro faktury za projekt nebo služby, upomínky, oznámení úroků a výpisy z účtu. Chcete-li zpracovat platební doklady, nejprve nastavte identifikační číslo příjemce a formáty přílohy platebního dokladu.
+<span data-ttu-id="469b1-104">Společnosti obvykle přiřadí vytištěné platební doklady k fakturám, aby poskytli asistenci odběratelům a určili platební odkaz pro zaúčtování a vyrovnání.</span><span class="sxs-lookup"><span data-stu-id="469b1-104">Businesses commonly attach printed payment slips to invoices to assist customers and provide a payment reference for posting and settlement.</span></span> <span data-ttu-id="469b1-105">Kromě prodejních a volných faktur můžete platební doklad použít i pro faktury za projekt nebo služby, upomínky, oznámení úroků a výpisy z účtu.</span><span class="sxs-lookup"><span data-stu-id="469b1-105">The payment slip can be used for project or service invoices, collection letters, interest notes, and account statements, in addition to sales invoices and free text invoices.</span></span> <span data-ttu-id="469b1-106">Chcete-li zpracovat platební doklady, nejprve nastavte identifikační číslo příjemce a formáty přílohy platebního dokladu.</span><span class="sxs-lookup"><span data-stu-id="469b1-106">To process payment slips, first set up your creditor identification number and payment slip attachment formats.</span></span>
 
-Tato procedura používá ukázkovou společnost DEMF. 
+<span data-ttu-id="469b1-107">Tato procedura používá ukázkovou společnost DEMF.</span><span class="sxs-lookup"><span data-stu-id="469b1-107">This procedure uses the DEMF demo company.</span></span> 
 
-Tato funkce je k dispozici pro právnické osoby, jejichž primární adresa je v Dánsku.
+<span data-ttu-id="469b1-108">Tato funkce je k dispozici pro právnické osoby, jejichž primární adresa je v Dánsku.</span><span class="sxs-lookup"><span data-stu-id="469b1-108">This functionality is available for legal entities whose primary address is in Denmark.</span></span>
 
 
-## <a name="set-up-a-creditor-id-number"></a>Nastavte číslo ID příjemce
-1. Přejděte do části na Správa organizace > Organizace > Právnické osoby.
-2. Rozbalte nebo sbalte oddíl Informace o bankovním účtu.
-3. Klikněte na položku Upravit.
-4. Zadejte typ a hodnotu do pole ID věřitele FI.
-5. Klikněte na položku Uložit.
-6. Zavřete stránku.
+## <a name="set-up-a-creditor-id-number"></a><span data-ttu-id="469b1-109">Nastavte číslo ID příjemce</span><span class="sxs-lookup"><span data-stu-id="469b1-109">Set up a creditor ID number</span></span>
+1. <span data-ttu-id="469b1-110">Přejděte do části na Správa organizace > Organizace > Právnické osoby.</span><span class="sxs-lookup"><span data-stu-id="469b1-110">Go to Organization administration > Organizations > Legal entities.</span></span>
+2. <span data-ttu-id="469b1-111">Rozbalte nebo sbalte oddíl Informace o bankovním účtu.</span><span class="sxs-lookup"><span data-stu-id="469b1-111">Expand or collapse the Bank account information section.</span></span>
+3. <span data-ttu-id="469b1-112">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="469b1-112">Click Edit.</span></span>
+4. <span data-ttu-id="469b1-113">Zadejte typ a hodnotu do pole ID věřitele FI.</span><span class="sxs-lookup"><span data-stu-id="469b1-113">In the FI-Creditor ID field, type a value.</span></span>
+5. <span data-ttu-id="469b1-114">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="469b1-114">Click Save.</span></span>
+6. <span data-ttu-id="469b1-115">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="469b1-115">Close the page.</span></span>
 
-## <a name="set-up-a-payment-slip-format-for-invoices-notes-letters-and-statements"></a>Nastavení formátu platebního dokladu pro faktury, poznámky, upomínky a výkazy
-1. Přejděte do nabídky Pohledávky > Nastavení > Formuláře > Nastavení formuláře.
-2. Klikněte na kartu Faktura.
-3. Vyberte požadovanou možnost v příloze přidružené platby pole faktury odběratele.
-    * Žádné – Netisknout platební doklad. Tuto možnost vyberte, pokud je částka platby v jiné měně než Dánská koruna (DKK).   FIK 751 – Pokud chcete ručně napsat částku platby a datum splatnosti na platební doklad, vytiskněte platební doklad FIK 751.   FIK 752 – Vytiskněte platební doklad FIK 752, pokud máte v úmyslu použít počítačově generovaný platební doklad s předtištěnou částkou platby a datem splatnosti.  
-4. Klikněte na položku Uložit.
-5. Klikněte na kartu Volná faktura.
-6. Vyberte požadovanou možnost v příloze přidružené platby pole volné faktury.
-    * Žádné – Netisknout platební doklad. Tuto možnost vyberte, pokud je částka platby v jiné měně než Dánská koruna (DKK).   FIK 751 – Pokud chcete ručně napsat částku platby a datum splatnosti na platební doklad, vytiskněte platební doklad FIK 751.   FIK 752 – Vytiskněte platební doklad FIK 752, pokud máte v úmyslu použít počítačově generovaný platební doklad s předtištěnou částkou platby a datem splatnosti.  
-7. Klikněte na položku Uložit.
-8. Klikněte na kartu Oznámení úroků.
-9. Vyberte požadovanou možnost v příloze přidružené platby pole oznámení úroků.
-    * Žádné – Netisknout platební doklad. Tuto možnost vyberte, pokud je částka platby v jiné měně než Dánská koruna (DKK).   FIK 751 – Pokud chcete ručně napsat částku platby a datum splatnosti na platební doklad, vytiskněte platební doklad FIK 751.   FIK 752 – Vytiskněte platební doklad FIK 752, pokud máte v úmyslu použít počítačově generovaný platební doklad s předtištěnou částkou platby a datem splatnosti.  
-10. Klikněte na položku Uložit.
-11. Klikněte na kartu Upomínka.
-12. Vyberte požadovanou možnost v příloze přidružené platby pole upomínky.
-    * Žádné – Netisknout platební doklad. Tuto možnost vyberte, pokud je částka platby v jiné měně než Dánská koruna (DKK).   FIK 751 – Pokud chcete ručně napsat částku platby a datum splatnosti na platební doklad, vytiskněte platební doklad FIK 751.   FIK 752 – Vytiskněte platební doklad FIK 752, pokud máte v úmyslu použít počítačově generovaný platební doklad s předtištěnou částkou platby a datem splatnosti.  
-13. Klikněte na položku Uložit.
-14. Klikněte na kartu Výpis z účtu.
-15. Vyberte požadovanou možnost v příloze přidružené platby v poli výpis z účtu.
-    * Žádné – Netisknout platební doklad. Tuto možnost vyberte, pokud je částka platby v jiné měně než Dánská koruna (DKK).   FIK 751 – Pokud chcete ručně napsat částku platby a datum splatnosti na platební doklad, vytiskněte platební doklad FIK 751.   FIK 752 – Vytiskněte platební doklad FIK 752, pokud máte v úmyslu použít počítačově generovaný platební doklad s předtištěnou částkou platby a datem splatnosti.  
-16. Klikněte na položku Uložit.
-17. Zavřete stránku.
+## <a name="set-up-a-payment-slip-format-for-invoices-notes-letters-and-statements"></a><span data-ttu-id="469b1-116">Nastavení formátu platebního dokladu pro faktury, poznámky, upomínky a výkazy</span><span class="sxs-lookup"><span data-stu-id="469b1-116">Set up a payment slip format for invoices, notes, letters, and statements</span></span>
+1. <span data-ttu-id="469b1-117">Přejděte do nabídky Pohledávky > Nastavení > Formuláře > Nastavení formuláře.</span><span class="sxs-lookup"><span data-stu-id="469b1-117">Go to Accounts receivable > Setup > Forms > Form setup.</span></span>
+2. <span data-ttu-id="469b1-118">Klikněte na kartu Faktura.</span><span class="sxs-lookup"><span data-stu-id="469b1-118">Click the Invoice tab.</span></span>
+3. <span data-ttu-id="469b1-119">Vyberte požadovanou možnost v příloze přidružené platby pole faktury odběratele.</span><span class="sxs-lookup"><span data-stu-id="469b1-119">In the Associated payment attachment on customer invoice field, select an option.</span></span>
+    * <span data-ttu-id="469b1-120">Žádné – Netisknout platební doklad.</span><span class="sxs-lookup"><span data-stu-id="469b1-120">None – Do not print a payment slip.</span></span> <span data-ttu-id="469b1-121">Tuto možnost vyberte, pokud je částka platby v jiné měně než Dánská koruna (DKK).</span><span class="sxs-lookup"><span data-stu-id="469b1-121">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="469b1-122">FIK 751 – Pokud chcete ručně napsat částku platby a datum splatnosti na platební doklad, vytiskněte platební doklad FIK 751.</span><span class="sxs-lookup"><span data-stu-id="469b1-122">FIK 751 – Print an FIK 751 payment slip if you intend to manually write the payment amount and due date on the payment slip.</span></span>   <span data-ttu-id="469b1-123">FIK 752 – Vytiskněte platební doklad FIK 752, pokud máte v úmyslu použít počítačově generovaný platební doklad s předtištěnou částkou platby a datem splatnosti.</span><span class="sxs-lookup"><span data-stu-id="469b1-123">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+4. <span data-ttu-id="469b1-124">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="469b1-124">Click Save.</span></span>
+5. <span data-ttu-id="469b1-125">Klikněte na kartu Volná faktura.</span><span class="sxs-lookup"><span data-stu-id="469b1-125">Click the Free text invoice tab.</span></span>
+6. <span data-ttu-id="469b1-126">Vyberte požadovanou možnost v příloze přidružené platby pole volné faktury.</span><span class="sxs-lookup"><span data-stu-id="469b1-126">In the Associated payment attachment on free text invoice field, select an option.</span></span>
+    * <span data-ttu-id="469b1-127">Žádné – Netisknout platební doklad.</span><span class="sxs-lookup"><span data-stu-id="469b1-127">None – Do not print a payment slip.</span></span> <span data-ttu-id="469b1-128">Tuto možnost vyberte, pokud je částka platby v jiné měně než Dánská koruna (DKK).</span><span class="sxs-lookup"><span data-stu-id="469b1-128">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="469b1-129">FIK 751 – Pokud chcete ručně napsat částku platby a datum splatnosti na platební doklad, vytiskněte platební doklad FIK 751.</span><span class="sxs-lookup"><span data-stu-id="469b1-129">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="469b1-130">FIK 752 – Vytiskněte platební doklad FIK 752, pokud máte v úmyslu použít počítačově generovaný platební doklad s předtištěnou částkou platby a datem splatnosti.</span><span class="sxs-lookup"><span data-stu-id="469b1-130">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+7. <span data-ttu-id="469b1-131">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="469b1-131">Click Save.</span></span>
+8. <span data-ttu-id="469b1-132">Klikněte na kartu Oznámení úroků.</span><span class="sxs-lookup"><span data-stu-id="469b1-132">Click the Interest note tab.</span></span>
+9. <span data-ttu-id="469b1-133">Vyberte požadovanou možnost v příloze přidružené platby pole oznámení úroků.</span><span class="sxs-lookup"><span data-stu-id="469b1-133">In the Associated payment attachment on interest note field, select an option.</span></span>
+    * <span data-ttu-id="469b1-134">Žádné – Netisknout platební doklad.</span><span class="sxs-lookup"><span data-stu-id="469b1-134">None – Do not print a payment slip.</span></span> <span data-ttu-id="469b1-135">Tuto možnost vyberte, pokud je částka platby v jiné měně než Dánská koruna (DKK).</span><span class="sxs-lookup"><span data-stu-id="469b1-135">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="469b1-136">FIK 751 – Pokud chcete ručně napsat částku platby a datum splatnosti na platební doklad, vytiskněte platební doklad FIK 751.</span><span class="sxs-lookup"><span data-stu-id="469b1-136">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="469b1-137">FIK 752 – Vytiskněte platební doklad FIK 752, pokud máte v úmyslu použít počítačově generovaný platební doklad s předtištěnou částkou platby a datem splatnosti.</span><span class="sxs-lookup"><span data-stu-id="469b1-137">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+10. <span data-ttu-id="469b1-138">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="469b1-138">Click Save.</span></span>
+11. <span data-ttu-id="469b1-139">Klikněte na kartu Upomínka.</span><span class="sxs-lookup"><span data-stu-id="469b1-139">Click the Collection letter tab.</span></span>
+12. <span data-ttu-id="469b1-140">Vyberte požadovanou možnost v příloze přidružené platby pole upomínky.</span><span class="sxs-lookup"><span data-stu-id="469b1-140">In the Associated payment attachment on collection letter field, select an option.</span></span>
+    * <span data-ttu-id="469b1-141">Žádné – Netisknout platební doklad.</span><span class="sxs-lookup"><span data-stu-id="469b1-141">None – Do not print a payment slip.</span></span> <span data-ttu-id="469b1-142">Tuto možnost vyberte, pokud je částka platby v jiné měně než Dánská koruna (DKK).</span><span class="sxs-lookup"><span data-stu-id="469b1-142">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="469b1-143">FIK 751 – Pokud chcete ručně napsat částku platby a datum splatnosti na platební doklad, vytiskněte platební doklad FIK 751.</span><span class="sxs-lookup"><span data-stu-id="469b1-143">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="469b1-144">FIK 752 – Vytiskněte platební doklad FIK 752, pokud máte v úmyslu použít počítačově generovaný platební doklad s předtištěnou částkou platby a datem splatnosti.</span><span class="sxs-lookup"><span data-stu-id="469b1-144">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+13. <span data-ttu-id="469b1-145">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="469b1-145">Click Save.</span></span>
+14. <span data-ttu-id="469b1-146">Klikněte na kartu Výpis z účtu.</span><span class="sxs-lookup"><span data-stu-id="469b1-146">Click the Account statement tab.</span></span>
+15. <span data-ttu-id="469b1-147">Vyberte požadovanou možnost v příloze přidružené platby v poli výpis z účtu.</span><span class="sxs-lookup"><span data-stu-id="469b1-147">In the Associated payment attachment on account statement field, select an option.</span></span>
+    * <span data-ttu-id="469b1-148">Žádné – Netisknout platební doklad.</span><span class="sxs-lookup"><span data-stu-id="469b1-148">None – Do not print a payment slip.</span></span> <span data-ttu-id="469b1-149">Tuto možnost vyberte, pokud je částka platby v jiné měně než Dánská koruna (DKK).</span><span class="sxs-lookup"><span data-stu-id="469b1-149">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="469b1-150">FIK 751 – Pokud chcete ručně napsat částku platby a datum splatnosti na platební doklad, vytiskněte platební doklad FIK 751.</span><span class="sxs-lookup"><span data-stu-id="469b1-150">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="469b1-151">FIK 752 – Vytiskněte platební doklad FIK 752, pokud máte v úmyslu použít počítačově generovaný platební doklad s předtištěnou částkou platby a datem splatnosti.</span><span class="sxs-lookup"><span data-stu-id="469b1-151">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+16. <span data-ttu-id="469b1-152">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="469b1-152">Click Save.</span></span>
+17. <span data-ttu-id="469b1-153">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="469b1-153">Close the page.</span></span>
 
 

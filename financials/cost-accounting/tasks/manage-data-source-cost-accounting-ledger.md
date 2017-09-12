@@ -16,35 +16,35 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 3003a0dfa30c981eacfd5a643a1c5e902c2ba45d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5735cabd5a1eab23fbe2b92cf1395110cb33a93c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>Správa datového zdroje pro hlavní knihu nákladového účetnictví
+# <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a><span data-ttu-id="96415-103">Správa datového zdroje pro hlavní knihu nákladového účetnictví</span><span class="sxs-lookup"><span data-stu-id="96415-103">Manage a data source for the cost accounting ledger</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup slouží k řízení zdroje dat hlavní knihy pro hlavní knihu nákladového účetnictví. Před dokončením tohoto úkolu se nezapomeňte podívat na průvodce Tvorba hlavní knihy nákladového účetnictví a Definování jednotek řízení nákladů. Tento záznam používá v ukázkových datech společnost USP2.
+<span data-ttu-id="96415-104">Tento postup slouží k řízení zdroje dat hlavní knihy pro hlavní knihu nákladového účetnictví.</span><span class="sxs-lookup"><span data-stu-id="96415-104">Use this procedure to manage the general ledger data source for a cost accounting ledger.</span></span> <span data-ttu-id="96415-105">Před dokončením tohoto úkolu se nezapomeňte podívat na průvodce Tvorba hlavní knihy nákladového účetnictví a Definování jednotek řízení nákladů.</span><span class="sxs-lookup"><span data-stu-id="96415-105">Before you complete this task, make sure that you play the "Create a cost accounting ledger" and "Define cost control units" task guides.</span></span> <span data-ttu-id="96415-106">Tento záznam používá v ukázkových datech společnost USP2.</span><span class="sxs-lookup"><span data-stu-id="96415-106">This recording uses the USP2 demo data company.</span></span>
 
-1. Přejděte na Nákladové účetnictví > Nastavení hlavní knihy > Hlavní knihy nákladového účetnictví.
-2. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-3. Klikněte na Skutečné verze.
-4. V podokně akcí klepněte na možnost Spravovat.
-5. Klikněte na Nastavení hlavní knihy.
-6. Klikněte na položku Nová.
-7. Zadejte hodnotu do pole Název.
-8. V poli Poskytovatel dat zadejte nebo vyberte hodnotu.
-    * V tomto příkladu vyberte Dynamics 365 for Finance and Operations - Položky hlavní knihy.  
-9. V poli Dimenze prvku nákladů zadejte nebo vyberte hodnotu.
-    * V tomto příkladu vyberte Nákladové elementy.  
-10. Klikněte na položku Uložit.
-11. Klikněte na Konfigurovat poskytovatele dat.
-12. V poli Právnická osoba zadejte nebo vyberte hodnotu.
-    * V tomto příkladu vyberte USP2.  
-13. Klikněte na položku Nová.
-14. V poli Účtovací vrstvy vyberte Aktuální.
-15. Klikněte na tlačítko OK.
+1. <span data-ttu-id="96415-107">Přejděte na Nákladové účetnictví > Nastavení hlavní knihy > Hlavní knihy nákladového účetnictví.</span><span class="sxs-lookup"><span data-stu-id="96415-107">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
+2. <span data-ttu-id="96415-108">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="96415-108">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="96415-109">Klikněte na Skutečné verze.</span><span class="sxs-lookup"><span data-stu-id="96415-109">Click Actual versions.</span></span>
+4. <span data-ttu-id="96415-110">V podokně akcí klepněte na možnost Spravovat.</span><span class="sxs-lookup"><span data-stu-id="96415-110">On the Action Pane, click Manage.</span></span>
+5. <span data-ttu-id="96415-111">Klikněte na Nastavení hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="96415-111">Click General ledger.</span></span>
+6. <span data-ttu-id="96415-112">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="96415-112">Click New.</span></span>
+7. <span data-ttu-id="96415-113">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="96415-113">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="96415-114">V poli Poskytovatel dat zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="96415-114">In the Data provider field, enter or select a value.</span></span>
+    * <span data-ttu-id="96415-115">V tomto příkladu vyberte Dynamics 365 for Finance and Operations - Položky hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="96415-115">For this example, select Dynamics 365 for Finance and Operations - General ledger entries.</span></span>  
+9. <span data-ttu-id="96415-116">V poli Dimenze prvku nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="96415-116">In the Cost element dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="96415-117">V tomto příkladu vyberte Nákladové elementy.</span><span class="sxs-lookup"><span data-stu-id="96415-117">For this example, select Cost elements.</span></span>  
+10. <span data-ttu-id="96415-118">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="96415-118">Click Save.</span></span>
+11. <span data-ttu-id="96415-119">Klikněte na Konfigurovat poskytovatele dat.</span><span class="sxs-lookup"><span data-stu-id="96415-119">Click Configure data provider.</span></span>
+12. <span data-ttu-id="96415-120">V poli Právnická osoba zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="96415-120">In the Legal entity field, enter or select a value.</span></span>
+    * <span data-ttu-id="96415-121">V tomto příkladu vyberte USP2.</span><span class="sxs-lookup"><span data-stu-id="96415-121">For this example, select USP2.</span></span>  
+13. <span data-ttu-id="96415-122">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="96415-122">Click New.</span></span>
+14. <span data-ttu-id="96415-123">V poli Účtovací vrstvy vyberte Aktuální.</span><span class="sxs-lookup"><span data-stu-id="96415-123">In the Posting layer field, select Current.</span></span>
+15. <span data-ttu-id="96415-124">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="96415-124">Click OK.</span></span>
 
 

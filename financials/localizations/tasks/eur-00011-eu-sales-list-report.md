@@ -16,88 +16,88 @@ ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 10e7399b058695fb1c1b0db8c696c926619c995a
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1e80df13edea758f4e476a36b40480352a84366d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="generate-an-eu-sales-list-report"></a>Vygenerování sestavy souhrnného hlášení (EU)
+# <a name="generate-an-eu-sales-list-report"></a><span data-ttu-id="fa339-103">Vygenerování sestavy souhrnného hlášení (EU)</span><span class="sxs-lookup"><span data-stu-id="fa339-103">Generate an EU sales list report</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup vás provede generováním sestavy souhrnného hlášení EU. To zahrnuje převod interních obchodních transakcí do souhrnného hlášení EU a spuštění sestavy. Tento postup také zahrnuje vytváření interních obchodních transakcí pro účely ukázky. Další informace o výkazu se seznamem prodeje v EU včetně případných požadovaných předpokladů naleznete v nápovědě aplikace Dynamics 365 for Finance and Operations.
+<span data-ttu-id="fa339-104">Tento postup vás provede generováním sestavy souhrnného hlášení EU.</span><span class="sxs-lookup"><span data-stu-id="fa339-104">This procedure walks you through generating the EU sales list report.</span></span> <span data-ttu-id="fa339-105">To zahrnuje převod interních obchodních transakcí do souhrnného hlášení EU a spuštění sestavy.</span><span class="sxs-lookup"><span data-stu-id="fa339-105">This includes transferring intra-community trade transactions to the EU sales list and running the report.</span></span> <span data-ttu-id="fa339-106">Tento postup také zahrnuje vytváření interních obchodních transakcí pro účely ukázky.</span><span class="sxs-lookup"><span data-stu-id="fa339-106">This  procedure also includes creating an intra-community trade transaction for demo purposes.</span></span> <span data-ttu-id="fa339-107">Další informace o výkazu se seznamem prodeje v EU včetně případných požadovaných předpokladů naleznete v nápovědě aplikace Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="fa339-107">For more information about EU Sales list reporting, including required prerequisites, refer to the Dynamics 365 for Finance and Operations Help.</span></span>
 
-Postup se vztahuje na všechny evropské země/oblasti. Postup byl vytvořen použitím ukázkových dat společnosti DEMF a následně Německa jako příklad pro domácí zemi nebo oblast. Postup také využívá Portugalsko jako příklad země nebo oblasti EU. Před dokončením tohoto postupu, je nutné konfigurovat vytváření souhrnného hlášení EU.
+<span data-ttu-id="fa339-108">Postup se vztahuje na všechny evropské země/oblasti.</span><span class="sxs-lookup"><span data-stu-id="fa339-108">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="fa339-109">Postup byl vytvořen použitím ukázkových dat společnosti DEMF a následně Německa jako příklad pro domácí zemi nebo oblast.</span><span class="sxs-lookup"><span data-stu-id="fa339-109">The procedure was created using the demo data company DEMF and consequently Germany as an exemplar domestic country/region.</span></span> <span data-ttu-id="fa339-110">Postup také využívá Portugalsko jako příklad země nebo oblasti EU.</span><span class="sxs-lookup"><span data-stu-id="fa339-110">The procedure also uses Portugal as an exemplar EU country/region.</span></span> <span data-ttu-id="fa339-111">Před dokončením tohoto postupu, je nutné konfigurovat vytváření souhrnného hlášení EU.</span><span class="sxs-lookup"><span data-stu-id="fa339-111">Before you can complete this procedure, you must configure EU sales list reporting.</span></span>
 
-Tento postup je určen pouze pro účetní.
+<span data-ttu-id="fa339-112">Tento postup je určen pouze pro účetní.</span><span class="sxs-lookup"><span data-stu-id="fa339-112">This procedure is intended for accountants.</span></span>
 
 
-## <a name="create-an-intra-community-sales-transaction-for-demo-purposes"></a>Vytvoření interních prodejních transakcí pro účely ukázky
-1. Přejděte na Pohledávky > Objednávky > Všechny prodejní objednávky.
-2. Klikněte na položku Nová.
-3. V poli Účet odběratele zadejte „PRT-001“.
-4. Klikněte na tlačítko OK.
-5. Do pole Číslo položky zadejte D0001.
-6. Rozbalte sekci Podrobnosti řádku.
-7. Klepněte na kartu Nastavení.
-8. V poli Skupina DPH zboží zadejte „FULL“.
-9. Klikněte na Přidat řádek.
-10. Do pole Číslo položky zadejte D0003.
-11. V poli Skupina DPH zboží zadejte „RED“.
-12. Klikněte na položku Uložit.
-13. V podokně akcí klikněte na položku Faktura.
-14. Klikněte na položku Faktura.
-15. Rozbalte sekci Parametry.
-16. V poli Množství vyberte možnost Vše.
-17. Rozbalte sekci Nastavení.
-18. V poli Datum faktury nastavte datum a čas na „01/11/2016“ .
-19. Klikněte na tlačítko OK.
-20. Klikněte na tlačítko OK.
+## <a name="create-an-intra-community-sales-transaction-for-demo-purposes"></a><span data-ttu-id="fa339-113">Vytvoření interních prodejních transakcí pro účely ukázky</span><span class="sxs-lookup"><span data-stu-id="fa339-113">Create an intra-community sales transaction for demo purposes</span></span>
+1. <span data-ttu-id="fa339-114">Přejděte na Pohledávky > Objednávky > Všechny prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="fa339-114">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="fa339-115">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="fa339-115">Click New.</span></span>
+3. <span data-ttu-id="fa339-116">V poli Účet odběratele zadejte „PRT-001“.</span><span class="sxs-lookup"><span data-stu-id="fa339-116">In the Customer account field, type 'PRT-001'.</span></span>
+4. <span data-ttu-id="fa339-117">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="fa339-117">Click OK.</span></span>
+5. <span data-ttu-id="fa339-118">Do pole Číslo položky zadejte D0001.</span><span class="sxs-lookup"><span data-stu-id="fa339-118">In the Item number field, type 'D0001'.</span></span>
+6. <span data-ttu-id="fa339-119">Rozbalte sekci Podrobnosti řádku.</span><span class="sxs-lookup"><span data-stu-id="fa339-119">Expand the Line details section.</span></span>
+7. <span data-ttu-id="fa339-120">Klepněte na kartu Nastavení.</span><span class="sxs-lookup"><span data-stu-id="fa339-120">Click the Setup tab.</span></span>
+8. <span data-ttu-id="fa339-121">V poli Skupina DPH zboží zadejte „FULL“.</span><span class="sxs-lookup"><span data-stu-id="fa339-121">In the Item sales tax group field, type 'FULL'.</span></span>
+9. <span data-ttu-id="fa339-122">Klikněte na Přidat řádek.</span><span class="sxs-lookup"><span data-stu-id="fa339-122">Click Add line.</span></span>
+10. <span data-ttu-id="fa339-123">Do pole Číslo položky zadejte D0003.</span><span class="sxs-lookup"><span data-stu-id="fa339-123">In the Item number field, type 'D0003'.</span></span>
+11. <span data-ttu-id="fa339-124">V poli Skupina DPH zboží zadejte „RED“.</span><span class="sxs-lookup"><span data-stu-id="fa339-124">In the Item sales tax group field, type 'RED'.</span></span>
+12. <span data-ttu-id="fa339-125">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="fa339-125">Click Save.</span></span>
+13. <span data-ttu-id="fa339-126">V podokně akcí klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="fa339-126">On the Action Pane, click Invoice.</span></span>
+14. <span data-ttu-id="fa339-127">Klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="fa339-127">Click Invoice.</span></span>
+15. <span data-ttu-id="fa339-128">Rozbalte sekci Parametry.</span><span class="sxs-lookup"><span data-stu-id="fa339-128">Expand the Parameters section.</span></span>
+16. <span data-ttu-id="fa339-129">V poli Množství vyberte možnost Vše.</span><span class="sxs-lookup"><span data-stu-id="fa339-129">In the Quantity field, select 'All'.</span></span>
+17. <span data-ttu-id="fa339-130">Rozbalte sekci Nastavení.</span><span class="sxs-lookup"><span data-stu-id="fa339-130">Expand the Setup section.</span></span>
+18. <span data-ttu-id="fa339-131">V poli Datum faktury nastavte datum a čas na „01/11/2016“ .</span><span class="sxs-lookup"><span data-stu-id="fa339-131">In the Invoice date field, set the date to '01/11/2016'.</span></span>
+19. <span data-ttu-id="fa339-132">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="fa339-132">Click OK.</span></span>
+20. <span data-ttu-id="fa339-133">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="fa339-133">Click OK.</span></span>
 
-## <a name="transfer-intra-community-trade-transactions-to-the-eu-sales-list"></a>Převod interní obchodních transakcí do souhrnného hlášení pro EU
-1. Přejděte na Daně > Deklarace > Zahraniční obchod > Souhrnné hlášení EU.
-2. Klepněte na položku Převod.
-3. K převodu transakcí zboží vyberte v poli Zboží možnost Ano.
-4. K převodu servisních transakcí vyberte v poli Servis možnost Ano.
-    * Můžete také nastavit další filtry interní obchodních transakcí k převodu.  
-5. Klepněte na položku Převod.
-    * Ověřte, zda byly interní transakce prodeje úspěšně přeneseny do souhrnného hlášení EU.  
+## <a name="transfer-intra-community-trade-transactions-to-the-eu-sales-list"></a><span data-ttu-id="fa339-134">Převod interní obchodních transakcí do souhrnného hlášení pro EU</span><span class="sxs-lookup"><span data-stu-id="fa339-134">Transfer intra-community trade transactions to the EU sales list</span></span>
+1. <span data-ttu-id="fa339-135">Přejděte na Daně > Deklarace > Zahraniční obchod > Souhrnné hlášení EU.</span><span class="sxs-lookup"><span data-stu-id="fa339-135">Go to Tax > Declarations > Foreign trade > EU sales list.</span></span>
+2. <span data-ttu-id="fa339-136">Klepněte na položku Převod.</span><span class="sxs-lookup"><span data-stu-id="fa339-136">Click Transfer.</span></span>
+3. <span data-ttu-id="fa339-137">K převodu transakcí zboží vyberte v poli Zboží možnost Ano.</span><span class="sxs-lookup"><span data-stu-id="fa339-137">Select Yes in the Item field to transfer item transactions.</span></span>
+4. <span data-ttu-id="fa339-138">K převodu servisních transakcí vyberte v poli Servis možnost Ano.</span><span class="sxs-lookup"><span data-stu-id="fa339-138">Select Yes in the Service field to transfer service transactions.</span></span>
+    * <span data-ttu-id="fa339-139">Můžete také nastavit další filtry interní obchodních transakcí k převodu.</span><span class="sxs-lookup"><span data-stu-id="fa339-139">You can also specify additional filters on intra-community trade transactions to transfer.</span></span>  
+5. <span data-ttu-id="fa339-140">Klepněte na položku Převod.</span><span class="sxs-lookup"><span data-stu-id="fa339-140">Click Transfer.</span></span>
+    * <span data-ttu-id="fa339-141">Ověřte, zda byly interní transakce prodeje úspěšně přeneseny do souhrnného hlášení EU.</span><span class="sxs-lookup"><span data-stu-id="fa339-141">Verify that the intra-community sales transaction is successfully transferred to the EU sales list.</span></span>  
 
-## <a name="generate-the-eu-sales-list-report"></a>Generování sestavy souhrnného hlášení EU
-1. Klepněte na Sestavování.
-2. V poli Období vykazování vyberte „Měsíční“.
-3. V poli Datum od nastavte datum a čas na „01/01/2016“ .
-4. Vyberte možnost Ano v poli Generovat soubor.
-5. Vyberte možnost Ano v poli Generovat sestavu.
-6. V poli Název souboru zadejte „EUSalesList“.
-7. V poli Název souboru sestavy zadejte „EUSalesList“.
-8. Do pole ID registrace souhrnného hlášení EU zadejte „123“.
-    * Toto pole je k dispozici jen pro Německo.  
-    * Můžete také nastavit další filtry interní obchodních transakcí k převodu pro zahrnutí v sestavě.  
-9. Klikněte na tlačítko OK.
-    * Ověřte, že se zobrazí místní podokno pro potvrzení, že soubor a kontrolní sestava jsou stahovány.  
+## <a name="generate-the-eu-sales-list-report"></a><span data-ttu-id="fa339-142">Generování sestavy souhrnného hlášení EU</span><span class="sxs-lookup"><span data-stu-id="fa339-142">Generate the EU sales list report</span></span>
+1. <span data-ttu-id="fa339-143">Klepněte na Sestavování.</span><span class="sxs-lookup"><span data-stu-id="fa339-143">Click Reporting.</span></span>
+2. <span data-ttu-id="fa339-144">V poli Období vykazování vyberte „Měsíční“.</span><span class="sxs-lookup"><span data-stu-id="fa339-144">In the Reporting period field, select 'Monthly'.</span></span>
+3. <span data-ttu-id="fa339-145">V poli Datum od nastavte datum a čas na „01/01/2016“ .</span><span class="sxs-lookup"><span data-stu-id="fa339-145">In the From date field, set the date to '01/01/2016'.</span></span>
+4. <span data-ttu-id="fa339-146">Vyberte možnost Ano v poli Generovat soubor.</span><span class="sxs-lookup"><span data-stu-id="fa339-146">Select Yes in the Generate file field.</span></span>
+5. <span data-ttu-id="fa339-147">Vyberte možnost Ano v poli Generovat sestavu.</span><span class="sxs-lookup"><span data-stu-id="fa339-147">Select Yes in the Generate report field.</span></span>
+6. <span data-ttu-id="fa339-148">V poli Název souboru zadejte „EUSalesList“.</span><span class="sxs-lookup"><span data-stu-id="fa339-148">In the File name field, type 'EUSalesList'.</span></span>
+7. <span data-ttu-id="fa339-149">V poli Název souboru sestavy zadejte „EUSalesList“.</span><span class="sxs-lookup"><span data-stu-id="fa339-149">In the Report file name field, type 'EUSalesList'.</span></span>
+8. <span data-ttu-id="fa339-150">Do pole ID registrace souhrnného hlášení EU zadejte „123“.</span><span class="sxs-lookup"><span data-stu-id="fa339-150">In the EU Sales List Registration ID field, type '123'.</span></span>
+    * <span data-ttu-id="fa339-151">Toto pole je k dispozici jen pro Německo.</span><span class="sxs-lookup"><span data-stu-id="fa339-151">This field is only available for Germany.</span></span>  
+    * <span data-ttu-id="fa339-152">Můžete také nastavit další filtry interní obchodních transakcí k převodu pro zahrnutí v sestavě.</span><span class="sxs-lookup"><span data-stu-id="fa339-152">You can also specify additional filters on intra-community trade transactions to include in the report.</span></span>  
+9. <span data-ttu-id="fa339-153">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="fa339-153">Click OK.</span></span>
+    * <span data-ttu-id="fa339-154">Ověřte, že se zobrazí místní podokno pro potvrzení, že soubor a kontrolní sestava jsou stahovány.</span><span class="sxs-lookup"><span data-stu-id="fa339-154">Verify that pop-up windows appear to confirm that the file and the control report are being downloaded.</span></span>  
 
-## <a name="mark-eu-sales-list-lines-as-reported"></a>Označit řádky souhrnného hlášení EU jako Ohlášeno
-1. Klepněte na položku Označit.
-2. Klepněte na Označit jako ohlášené.
-3. V seznamu vyberte řádek pro pole Datum fakturace.
-4. Zadejte hodnotu „01/01/2016…01/31/2016“ do pole Kritéria.
-5. V seznamu vyberte řádek pro pole Stav vykazování.
-6. Vyberte volbu „Zahrnuto“ v poli Kritérium.
-    * Můžete také nastavit další filtry interní obchodních transakcí k převodu pro označení jako Hlášeno.  
-7. Klikněte na tlačítko OK.
-8. Vyberte volbu „Hlášeno“ v poli Výběr.
+## <a name="mark-eu-sales-list-lines-as-reported"></a><span data-ttu-id="fa339-155">Označit řádky souhrnného hlášení EU jako Ohlášeno</span><span class="sxs-lookup"><span data-stu-id="fa339-155">Mark EU sales list lines as Reported</span></span>
+1. <span data-ttu-id="fa339-156">Klepněte na položku Označit.</span><span class="sxs-lookup"><span data-stu-id="fa339-156">Click Mark.</span></span>
+2. <span data-ttu-id="fa339-157">Klepněte na Označit jako ohlášené.</span><span class="sxs-lookup"><span data-stu-id="fa339-157">Click Mark as reported.</span></span>
+3. <span data-ttu-id="fa339-158">V seznamu vyberte řádek pro pole Datum fakturace.</span><span class="sxs-lookup"><span data-stu-id="fa339-158">In the list, select the row for the Invoice date field.</span></span>
+4. <span data-ttu-id="fa339-159">Zadejte hodnotu „01/01/2016…01/31/2016“ do pole Kritéria.</span><span class="sxs-lookup"><span data-stu-id="fa339-159">In the Criteria field, type '01/01/2016..01/31/2016'.</span></span>
+5. <span data-ttu-id="fa339-160">V seznamu vyberte řádek pro pole Stav vykazování.</span><span class="sxs-lookup"><span data-stu-id="fa339-160">In the list, select the row for the Reporting status field.</span></span>
+6. <span data-ttu-id="fa339-161">Vyberte volbu „Zahrnuto“ v poli Kritérium.</span><span class="sxs-lookup"><span data-stu-id="fa339-161">In the Criteria field, select 'Included'.</span></span>
+    * <span data-ttu-id="fa339-162">Můžete také nastavit další filtry interní obchodních transakcí k převodu pro označení jako Hlášeno.</span><span class="sxs-lookup"><span data-stu-id="fa339-162">You can also specify additional filters on intra-community trade transactions to mark as Reported.</span></span>  
+7. <span data-ttu-id="fa339-163">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="fa339-163">Click OK.</span></span>
+8. <span data-ttu-id="fa339-164">Vyberte volbu „Hlášeno“ v poli Výběr.</span><span class="sxs-lookup"><span data-stu-id="fa339-164">In the Selection field, select 'Reported'.</span></span>
 
-## <a name="mark-eu-sales-list-lines-as-closed"></a>Označit řádky souhrnného hlášení EU jako Uzavřeno
-1. Klepněte na položku Označit.
-2. Klepněte na Označit jako uzavřené.
-3. V seznamu označte řádek pro pole Datum fakturace.
-4. Zadejte hodnotu „01/01/2016…01/31/2016“ do pole Kritéria.
-5. V seznamu označte řádek pro pole Stav vykazování.
-6. Vyberte volbu „Hlášeno“ v poli Kritérium.
-    * Můžete také nastavit další filtry interní obchodních transakcí k převodu pro označení jako Uzavřeno.  
-7. Klikněte na tlačítko OK.
-8. Vyberte volbu „Uzavřeno“ v poli Výběr.
+## <a name="mark-eu-sales-list-lines-as-closed"></a><span data-ttu-id="fa339-165">Označit řádky souhrnného hlášení EU jako Uzavřeno</span><span class="sxs-lookup"><span data-stu-id="fa339-165">Mark EU sales list lines as Closed</span></span>
+1. <span data-ttu-id="fa339-166">Klepněte na položku Označit.</span><span class="sxs-lookup"><span data-stu-id="fa339-166">Click Mark.</span></span>
+2. <span data-ttu-id="fa339-167">Klepněte na Označit jako uzavřené.</span><span class="sxs-lookup"><span data-stu-id="fa339-167">Click Mark as closed.</span></span>
+3. <span data-ttu-id="fa339-168">V seznamu označte řádek pro pole Datum fakturace.</span><span class="sxs-lookup"><span data-stu-id="fa339-168">In the list, mark the row for the Invoice date field.</span></span>
+4. <span data-ttu-id="fa339-169">Zadejte hodnotu „01/01/2016…01/31/2016“ do pole Kritéria.</span><span class="sxs-lookup"><span data-stu-id="fa339-169">In the Criteria field, type '01/01/2016..01/31/2016'.</span></span>
+5. <span data-ttu-id="fa339-170">V seznamu označte řádek pro pole Stav vykazování.</span><span class="sxs-lookup"><span data-stu-id="fa339-170">In the list, mark the row for the Reporting status field.</span></span>
+6. <span data-ttu-id="fa339-171">Vyberte volbu „Hlášeno“ v poli Kritérium.</span><span class="sxs-lookup"><span data-stu-id="fa339-171">In the Criteria field, select ‘Reported’.</span></span>
+    * <span data-ttu-id="fa339-172">Můžete také nastavit další filtry interní obchodních transakcí k převodu pro označení jako Uzavřeno.</span><span class="sxs-lookup"><span data-stu-id="fa339-172">You can also specify additional filters on intra-community trade transactions to mark as Closed.</span></span>  
+7. <span data-ttu-id="fa339-173">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="fa339-173">Click OK.</span></span>
+8. <span data-ttu-id="fa339-174">Vyberte volbu „Uzavřeno“ v poli Výběr.</span><span class="sxs-lookup"><span data-stu-id="fa339-174">In the Selection field, select 'Closed'.</span></span>
 
 

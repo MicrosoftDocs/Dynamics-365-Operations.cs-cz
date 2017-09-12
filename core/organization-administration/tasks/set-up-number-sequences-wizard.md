@@ -16,24 +16,24 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 5fe6e54b4ebcf6cd611af54e7066a3e39d0e677d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 96c1bc711350b447611977c3f2070fbc08fbae0f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-number-sequences-by-using-a-wizard"></a>Nastavení číselných řad pomocí průvodce
+# <a name="set-up-number-sequences-by-using-a-wizard"></a><span data-ttu-id="f85fd-103">Nastavení číselných řad pomocí průvodce</span><span class="sxs-lookup"><span data-stu-id="f85fd-103">Set up number sequences by using a wizard</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Číselné řady slouží ke generování čitelných, jedinečných identifikátorů pro záznamy hlavních dat a záznamy transakcí, které je požadují. Hlavní záznam dat nebo transakce, která vyžaduje identifikátor, je označován jako odkaz. Než bude možné vytvořit nové záznamy pro odkaz, musíte nastavit číselné řady a spojit je s odkazem. Tento postup popisuje, jak nastavit všechny požadované číselné řady současně pomocí průvodce. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
+<span data-ttu-id="f85fd-104">Číselné řady slouží ke generování čitelných, jedinečných identifikátorů pro záznamy hlavních dat a záznamy transakcí, které je požadují.</span><span class="sxs-lookup"><span data-stu-id="f85fd-104">Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require them.</span></span> <span data-ttu-id="f85fd-105">Hlavní záznam dat nebo transakce, která vyžaduje identifikátor, je označován jako odkaz.</span><span class="sxs-lookup"><span data-stu-id="f85fd-105">A master data or transaction record that requires an identifier is referred to as a reference.</span></span> <span data-ttu-id="f85fd-106">Než bude možné vytvořit nové záznamy pro odkaz, musíte nastavit číselné řady a spojit je s odkazem.</span><span class="sxs-lookup"><span data-stu-id="f85fd-106">Before you can create new records for a reference, you must set up a number sequence and associate it with the reference.</span></span> <span data-ttu-id="f85fd-107">Tento postup popisuje, jak nastavit všechny požadované číselné řady současně pomocí průvodce.</span><span class="sxs-lookup"><span data-stu-id="f85fd-107">This procedure explains how to set up all required number sequences at the same time by using a wizard.</span></span> <span data-ttu-id="f85fd-108">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="f85fd-108">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Přejděte na Správa organizace > Číselné řady > Číselné řady.
-2. Klepněte na tlačítko Generovat.
-3. Klepněte na tlačítko Další.
-    * Na této stránce můžete upravit identifikační kód, nejnižší hodnotu a nejvyšší hodnotu. Kromě toho můžete určit, zda musí být číselné řady souvislé.   
-    * Nevybírejte možnost Souvislá, pokud musíte předem přidělit čísla pro číselnou řadu.     Chcete-li přidat rozsah segmentu do formátu číselné řady, vyberte formát v seznamu a potom klikněte na možnost Zahrnout obor do formátu.     Chcete-li odebrat rozsah segmentu z formátu číselné řady, vyberte formát v seznamu a potom klikněte na možnost Odebrat obor z formátu.     Chcete-li vyloučit číselnou řadu z automatického generování, vyberte číselnou řadu v seznamu a potom klikněte na tlačítko Odstranit.  
-4. Klepněte na tlačítko Další.
-5. Klepněte na tlačítko Dokončit.
+1. <span data-ttu-id="f85fd-109">Přejděte na Správa organizace > Číselné řady > Číselné řady.</span><span class="sxs-lookup"><span data-stu-id="f85fd-109">Go to Organization administration > Number sequences > Number sequences.</span></span>
+2. <span data-ttu-id="f85fd-110">Klepněte na tlačítko Generovat.</span><span class="sxs-lookup"><span data-stu-id="f85fd-110">Click Generate.</span></span>
+3. <span data-ttu-id="f85fd-111">Klepněte na tlačítko Další.</span><span class="sxs-lookup"><span data-stu-id="f85fd-111">Click Next.</span></span>
+    * <span data-ttu-id="f85fd-112">Na této stránce můžete upravit identifikační kód, nejnižší hodnotu a nejvyšší hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f85fd-112">On this page, you can modify the identification code, the lowest value, and the highest value.</span></span> <span data-ttu-id="f85fd-113">Kromě toho můžete určit, zda musí být číselné řady souvislé.</span><span class="sxs-lookup"><span data-stu-id="f85fd-113">In addition, you can indicate whether the number sequence must be continuous.</span></span>   
+    * <span data-ttu-id="f85fd-114">Nevybírejte možnost Souvislá, pokud musíte předem přidělit čísla pro číselnou řadu.</span><span class="sxs-lookup"><span data-stu-id="f85fd-114">Do not select the Continuous option if you must preallocate numbers for the number sequence.</span></span>     <span data-ttu-id="f85fd-115">Chcete-li přidat rozsah segmentu do formátu číselné řady, vyberte formát v seznamu a potom klikněte na možnost Zahrnout obor do formátu.</span><span class="sxs-lookup"><span data-stu-id="f85fd-115">To add a scope segment to the format of a number sequence, select the format in the list, and then click Include scope in format.</span></span>     <span data-ttu-id="f85fd-116">Chcete-li odebrat rozsah segmentu z formátu číselné řady, vyberte formát v seznamu a potom klikněte na možnost Odebrat obor z formátu.</span><span class="sxs-lookup"><span data-stu-id="f85fd-116">To remove a scope segment from the format of a number sequence, select the format in the list, and then click Remove scope from format.</span></span>     <span data-ttu-id="f85fd-117">Chcete-li vyloučit číselnou řadu z automatického generování, vyberte číselnou řadu v seznamu a potom klikněte na tlačítko Odstranit.</span><span class="sxs-lookup"><span data-stu-id="f85fd-117">To exclude a number sequence from automatic generation, select the number sequence in the list, and then click Delete.</span></span>  
+4. <span data-ttu-id="f85fd-118">Klepněte na tlačítko Další.</span><span class="sxs-lookup"><span data-stu-id="f85fd-118">Click Next.</span></span>
+5. <span data-ttu-id="f85fd-119">Klepněte na tlačítko Dokončit.</span><span class="sxs-lookup"><span data-stu-id="f85fd-119">Click Finish.</span></span>
 
 

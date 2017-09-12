@@ -16,41 +16,41 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: a31a18ee075c865d5ad99f7cf4ca2eac7c6281c9
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 9d1718c5e9c98c77fbc274de1bf94f7f0e5eccb4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-finished-product-february-2016-only"></a>Vytvoření dokončeného produktu (jen ve verzi z února 2016)
+# <a name="create-a-finished-product-february-2016-only"></a><span data-ttu-id="20918-103">Vytvoření dokončeného produktu (jen ve verzi z února 2016)</span><span class="sxs-lookup"><span data-stu-id="20918-103">Create a finished product (February 2016 only)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tato úloha je zaměřena na vytvoření dokončeného produktu. Je to první úloha v řadě Kalkulace kusovníku. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF.
+<span data-ttu-id="20918-104">Tato úloha je zaměřena na vytvoření dokončeného produktu.</span><span class="sxs-lookup"><span data-stu-id="20918-104">This task focuses on creating a finished product.</span></span> <span data-ttu-id="20918-105">Je to první úloha v řadě Kalkulace kusovníku.</span><span class="sxs-lookup"><span data-stu-id="20918-105">It is the first task in the BOM calculation series.</span></span> <span data-ttu-id="20918-106">Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="20918-106">The demo data company used to create this task is USMF.</span></span>
 
-1. Přejděte na možnosti Řízení informací o produktech > Produkty > Uvolněné produkty.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Číslo produktu.
-    * Pro ukázku zadejte BOM_1.  
-4. V poli Skupina modelů zboží zadejte nebo vyberte hodnotu.
-    * Vyberte volbu „STD“. STD zastupuje standardní náklady a je to nejčastěji používaný model při práci s výpočty nákladů.  
-5. V poli Skupina zboží zadejte nebo vyberte hodnotu.
-    * Vyberte například Audio. To nemá žádný vliv na výpočty nákladů.  
-6. V poli Skupina dimenze úložiště zadejte nebo vyberte hodnotu.
-    * Vyberte SiteWH. Pro ukázku se použije pouze Pracoviště a Sklad.  
-7. V poli Skupina sledovací dimenze zadejte nebo vyberte hodnotu.
-    * Sledovací dimenze v tomto příkladu nebudou použity, vyberte Žádné.  
-8. Klikněte na tlačítko OK.
-9. V podokně akcí klikněte na možnost Spravovat sklad.
-10. Klikněte na Výchozí nastavení objednávky.
-11. V poli Výchozí typ objednávky vyberte Výroba.
-    * Protože se jedná o dokončený produkt, který bude vyroben, zvolte Výroba.  
-12. V poli Nákupní pracoviště zadejte nebo vyberte hodnotu.
-    * Pro ukázku zvolte Pracoviště 1.  
-13. V poli Skladové pracoviště zadejte nebo vyberte hodnotu.
-    * V tomto příkladu vyberte Pracoviště 1.  
-14. V poli Prodejní pracoviště zadejte nebo vyberte hodnotu.
-    * V tomto příkladu vyberte Pracoviště 1.  
-15. Zavřete stránku.
+1. <span data-ttu-id="20918-107">Přejděte na možnosti Řízení informací o produktech > Produkty > Uvolněné produkty.</span><span class="sxs-lookup"><span data-stu-id="20918-107">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="20918-108">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="20918-108">Click New.</span></span>
+3. <span data-ttu-id="20918-109">Zadejte hodnotu do pole Číslo produktu.</span><span class="sxs-lookup"><span data-stu-id="20918-109">In the Product number field, type a value.</span></span>
+    * <span data-ttu-id="20918-110">Pro ukázku zadejte BOM_1.</span><span class="sxs-lookup"><span data-stu-id="20918-110">For the demonstration, type BOM_1.</span></span>  
+4. <span data-ttu-id="20918-111">V poli Skupina modelů zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="20918-111">In the Item model group field, enter or select a value.</span></span>
+    * <span data-ttu-id="20918-112">Vyberte volbu „STD“.</span><span class="sxs-lookup"><span data-stu-id="20918-112">Select STD.</span></span> <span data-ttu-id="20918-113">STD zastupuje standardní náklady a je to nejčastěji používaný model při práci s výpočty nákladů.</span><span class="sxs-lookup"><span data-stu-id="20918-113">STD stands for standard cost and is the most commonly used model when working with cost calculations.</span></span>  
+5. <span data-ttu-id="20918-114">V poli Skupina zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="20918-114">In the Item group field, enter or select a value.</span></span>
+    * <span data-ttu-id="20918-115">Vyberte například Audio.</span><span class="sxs-lookup"><span data-stu-id="20918-115">For example, select Audio.</span></span> <span data-ttu-id="20918-116">To nemá žádný vliv na výpočty nákladů.</span><span class="sxs-lookup"><span data-stu-id="20918-116">This has no impact on cost calculations.</span></span>  
+6. <span data-ttu-id="20918-117">V poli Skupina dimenze úložiště zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="20918-117">In the Storage dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="20918-118">Vyberte SiteWH.</span><span class="sxs-lookup"><span data-stu-id="20918-118">Select SiteWH.</span></span> <span data-ttu-id="20918-119">Pro ukázku se použije pouze Pracoviště a Sklad.</span><span class="sxs-lookup"><span data-stu-id="20918-119">Only Site and Warehouse will be used for the demonstration.</span></span>  
+7. <span data-ttu-id="20918-120">V poli Skupina sledovací dimenze zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="20918-120">In the Tracking dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="20918-121">Sledovací dimenze v tomto příkladu nebudou použity, vyberte Žádné.</span><span class="sxs-lookup"><span data-stu-id="20918-121">Tracking dimensions will not be used for this example, select None.</span></span>  
+8. <span data-ttu-id="20918-122">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="20918-122">Click OK.</span></span>
+9. <span data-ttu-id="20918-123">V podokně akcí klikněte na možnost Spravovat sklad.</span><span class="sxs-lookup"><span data-stu-id="20918-123">On the Action Pane, click Manage inventory.</span></span>
+10. <span data-ttu-id="20918-124">Klikněte na Výchozí nastavení objednávky.</span><span class="sxs-lookup"><span data-stu-id="20918-124">Click Default order settings.</span></span>
+11. <span data-ttu-id="20918-125">V poli Výchozí typ objednávky vyberte Výroba.</span><span class="sxs-lookup"><span data-stu-id="20918-125">In the Default order type field, select 'Production'.</span></span>
+    * <span data-ttu-id="20918-126">Protože se jedná o dokončený produkt, který bude vyroben, zvolte Výroba.</span><span class="sxs-lookup"><span data-stu-id="20918-126">Because this is a finished product that will be produced, select Production.</span></span>  
+12. <span data-ttu-id="20918-127">V poli Nákupní pracoviště zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="20918-127">In the Purchase site field, enter or select a value.</span></span>
+    * <span data-ttu-id="20918-128">Pro ukázku zvolte Pracoviště 1.</span><span class="sxs-lookup"><span data-stu-id="20918-128">For the demonstration, select Site 1.</span></span>  
+13. <span data-ttu-id="20918-129">V poli Skladové pracoviště zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="20918-129">In the Inventory site field, enter or select a value.</span></span>
+    * <span data-ttu-id="20918-130">V tomto příkladu vyberte Pracoviště 1.</span><span class="sxs-lookup"><span data-stu-id="20918-130">For this example, select Site 1.</span></span>  
+14. <span data-ttu-id="20918-131">V poli Prodejní pracoviště zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="20918-131">In the Sales site field, enter or select a value.</span></span>
+    * <span data-ttu-id="20918-132">V tomto příkladu vyberte Pracoviště 1.</span><span class="sxs-lookup"><span data-stu-id="20918-132">For this example, select Site 1.</span></span>  
+15. <span data-ttu-id="20918-133">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="20918-133">Close the page.</span></span>
 
 

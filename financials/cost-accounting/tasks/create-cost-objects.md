@@ -16,38 +16,38 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 79cb18717c6b42ef0307f304d28902dd66f0f932
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5d43274aed2edbb91fd4e399cb8d45e91646b055
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-cost-objects"></a>Vytváření objektů nákladů   
+# <a name="create-cost-objects"></a><span data-ttu-id="8f73a-103">Vytváření objektů nákladů  </span><span class="sxs-lookup"><span data-stu-id="8f73a-103">Create cost objects</span></span> 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tato procedura popisuje, jak vytvořit objekty nákladů importováním finanční dimenze nákladového střediska aplikace Dynamics 365 for Finance and Operations, Enterprise edition v nákladovém účetnictví prostřednictvím datového konektoru. K vytvoření této procedury byla použita ukázková společnost USMF. Tato procedura je určena pro funkci nákladového účetnictví, která byla přidána do aplikace Dynamics 365 for Operations, verze 1611.
+<span data-ttu-id="8f73a-104">Tato procedura popisuje, jak vytvořit objekty nákladů importováním finanční dimenze nákladového střediska aplikace Dynamics 365 for Finance and Operations, Enterprise edition v nákladovém účetnictví prostřednictvím datového konektoru.</span><span class="sxs-lookup"><span data-stu-id="8f73a-104">This procedure shows how to create cost objects by importing the Dynamics 365 for Finance and Operations, Enterprise edition cost center financial dimension into Cost accounting via a data connector.</span></span> <span data-ttu-id="8f73a-105">K vytvoření této procedury byla použita ukázková společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="8f73a-105">The USMF demo company was used to create this procedure.</span></span> <span data-ttu-id="8f73a-106">Tato procedura je určena pro funkci nákladového účetnictví, která byla přidána do aplikace Dynamics 365 for Operations, verze 1611.</span><span class="sxs-lookup"><span data-stu-id="8f73a-106">This procedure is for a Cost accounting feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 
 
-## <a name="create-new-cost-objects"></a>Vytvoření nových objektů nákladů
-1. Přejděte na položky Nákladové účetnictví > Dimenze > Dimenze objektu nákladů.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Název.
-4. V poli Datový konektor pro členy dimenzí zadejte nebo vyberte hodnotu.
-5. Zadejte nějakou hodnotu do pole Popis.
-6. Klikněte na položku Uložit.
+## <a name="create-new-cost-objects"></a><span data-ttu-id="8f73a-107">Vytvoření nových objektů nákladů</span><span class="sxs-lookup"><span data-stu-id="8f73a-107">Create new cost objects</span></span>
+1. <span data-ttu-id="8f73a-108">Přejděte na položky Nákladové účetnictví > Dimenze > Dimenze objektu nákladů.</span><span class="sxs-lookup"><span data-stu-id="8f73a-108">Go to Cost accounting > Dimensions > Cost object dimensions.</span></span>
+2. <span data-ttu-id="8f73a-109">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8f73a-109">Click New.</span></span>
+3. <span data-ttu-id="8f73a-110">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="8f73a-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="8f73a-111">V poli Datový konektor pro členy dimenzí zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8f73a-111">In the Data connector for dimension members field, enter or select a value.</span></span>
+5. <span data-ttu-id="8f73a-112">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="8f73a-112">In the Description field, type a value.</span></span>
+6. <span data-ttu-id="8f73a-113">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8f73a-113">Click Save.</span></span>
 
-## <a name="configure-the-data-connector"></a>Konfigurace datového konektoru
-1. Klikněte na Konfigurovat poskytovatele členů dimenzí.
-    * Vyberte CostCenter pro import dimenze CostCenter do nákladového účetnictví.  
-2. V poli Název dimenze vyberte Nákladové středisko.
-3. Klikněte na tlačítko OK.
+## <a name="configure-the-data-connector"></a><span data-ttu-id="8f73a-114">Konfigurace datového konektoru</span><span class="sxs-lookup"><span data-stu-id="8f73a-114">Configure the data connector</span></span>
+1. <span data-ttu-id="8f73a-115">Klikněte na Konfigurovat poskytovatele členů dimenzí.</span><span class="sxs-lookup"><span data-stu-id="8f73a-115">Click Configure dimension member provider.</span></span>
+    * <span data-ttu-id="8f73a-116">Vyberte CostCenter pro import dimenze CostCenter do nákladového účetnictví.</span><span class="sxs-lookup"><span data-stu-id="8f73a-116">Select CostCenter to import the CostCenter dimension into Cost accounting.</span></span>  
+2. <span data-ttu-id="8f73a-117">V poli Název dimenze vyberte Nákladové středisko.</span><span class="sxs-lookup"><span data-stu-id="8f73a-117">In the Dimension name field, select Cost center.</span></span>
+3. <span data-ttu-id="8f73a-118">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="8f73a-118">Click OK.</span></span>
 
-## <a name="import-cost-centers"></a>Import nákladových středisek
-1. Klikněte na Importovat členy dimenze.
-2. Klikněte na tlačítko OK.
+## <a name="import-cost-centers"></a><span data-ttu-id="8f73a-119">Import nákladových středisek</span><span class="sxs-lookup"><span data-stu-id="8f73a-119">Import cost centers</span></span>
+1. <span data-ttu-id="8f73a-120">Klikněte na Importovat členy dimenze.</span><span class="sxs-lookup"><span data-stu-id="8f73a-120">Click Import dimension members.</span></span>
+2. <span data-ttu-id="8f73a-121">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="8f73a-121">Click OK.</span></span>
 
-## <a name="view-the-imported-cost-centers"></a>Zobrazení importovaných nákladových středisek
-1. Klikněte na Zobrazit členy dimenze.
+## <a name="view-the-imported-cost-centers"></a><span data-ttu-id="8f73a-122">Zobrazení importovaných nákladových středisek</span><span class="sxs-lookup"><span data-stu-id="8f73a-122">View the imported cost centers</span></span>
+1. <span data-ttu-id="8f73a-123">Klikněte na Zobrazit členy dimenze.</span><span class="sxs-lookup"><span data-stu-id="8f73a-123">Click View dimension members.</span></span>
 
 

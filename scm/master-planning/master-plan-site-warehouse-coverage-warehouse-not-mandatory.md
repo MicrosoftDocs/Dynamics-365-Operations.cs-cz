@@ -20,31 +20,31 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ec5150abd297a7c00ac180db581adb30bef65b3f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 9c7b13a7a018ce584c877fed6212abc3c2913903
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="master-planning-for-site-and-warehouse-coverage-warehouse-not-mandatory"></a>Hlavní plánování pro disponibilitu pracoviště a skladu, sklad není povinný
+# <a name="master-planning-for-site-and-warehouse-coverage-warehouse-not-mandatory"></a><span data-ttu-id="faa32-104">Hlavní plánování pro disponibilitu pracoviště a skladu, sklad není povinný</span><span class="sxs-lookup"><span data-stu-id="faa32-104">Master planning for site and warehouse coverage, warehouse not mandatory</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje, jak je plánována položka, která má pracoviště a sklad, jako dimenze disponibility. Dimenze skladu není povinná.
+<span data-ttu-id="faa32-105">Toto téma popisuje, jak je plánována položka, která má pracoviště a sklad, jako dimenze disponibility.</span><span class="sxs-lookup"><span data-stu-id="faa32-105">This topic describes how an item that has site and warehouse as coverage dimensions is planned.</span></span> <span data-ttu-id="faa32-106">Dimenze skladu není povinná.</span><span class="sxs-lookup"><span data-stu-id="faa32-106">The warehouse dimension is not mandatory.</span></span>
 
-Pro tento scénář hlavního plánování platí následující podmínky:
+<span data-ttu-id="faa32-107">Pro tento scénář hlavního plánování platí následující podmínky:</span><span class="sxs-lookup"><span data-stu-id="faa32-107">This master planning scenario involves the following conditions:</span></span>
 
--   Dimenze pracoviště je nastavena jako povinná a musí být zadána v transakci poptávky. Toto nastavení nelze změnit.
--   Dimenze skladu není povinná. Sklad může být znám, ale při výpočtu během hlavního plánování se nepoužije.
--   Dimenze pracoviště a skladová dimenze není nastavena pro plánování disponibility. Pro disponibilitu lze nastavit také další dimenze. Ty však nejsou ovlivněny funkcí více pracovišť.
+-   <span data-ttu-id="faa32-108">Dimenze pracoviště je nastavena jako povinná a musí být zadána v transakci poptávky.</span><span class="sxs-lookup"><span data-stu-id="faa32-108">The site dimension is set to mandatory and must be entered on the demand transaction.</span></span> <span data-ttu-id="faa32-109">Toto nastavení nelze změnit.</span><span class="sxs-lookup"><span data-stu-id="faa32-109">This setting can't be modified.</span></span>
+-   <span data-ttu-id="faa32-110">Dimenze skladu není povinná.</span><span class="sxs-lookup"><span data-stu-id="faa32-110">The warehouse dimension is not set to mandatory.</span></span> <span data-ttu-id="faa32-111">Sklad může být znám, ale při výpočtu během hlavního plánování se nepoužije.</span><span class="sxs-lookup"><span data-stu-id="faa32-111">The warehouse may be known, but it is not used in the master planning calculation.</span></span>
+-   <span data-ttu-id="faa32-112">Dimenze pracoviště a skladová dimenze není nastavena pro plánování disponibility.</span><span class="sxs-lookup"><span data-stu-id="faa32-112">The site and warehouse dimensions are set for coverage planning.</span></span> <span data-ttu-id="faa32-113">Pro disponibilitu lze nastavit také další dimenze.</span><span class="sxs-lookup"><span data-stu-id="faa32-113">Other dimensions may be set for coverage planning also.</span></span> <span data-ttu-id="faa32-114">Ty však nejsou ovlivněny funkcí více pracovišť.</span><span class="sxs-lookup"><span data-stu-id="faa32-114">However, they are not affected by the multisite functionality.</span></span>
 
-Následující obrázek ilustruje postup hlavního plánování. V obrázku jsou odkazy na následující parametry (v popisu je informace, kde je najdete):
--   Sklad je nastaven na možnost Ruční. Klikněte postupně na možnosti **Řízení zásob &gt; Nastavení &gt; Rozdělení zásob &gt; Sklady**. Na pevné záložce **Hlavní plánování** zkontrolujte pole **Ruční**.
--   Je definovaná disponibilita položky. Klikněte na možnosti **Řízení informací o produktech &gt; Produkty&gt; Uvolněné produkty**. Zvolte položku a poté v podokně Akce na kartě **Plán** klikněte na **Disponibilita položky**.
--   Pro sklad jsou definovány vztahy doplnění. Klikněte postupně na možnosti **Řízení zásob &gt; Nastavení &gt; Rozdělení zásob &gt; Sklady**. Na pevné záložce **Hlavní plánování** zkontrolujte skupinu polí **Hlavní sklad**.
--   Výchozí typ objednávky je nastaven na možnost Výroba, Nákupní objednávka nebo Kanban. Klikněte na možnosti **Řízení informací o produktech &gt; Produkty&gt; Uvolněné produkty**. Zvolte položku a poté v podokně Akce na kartě **Plán** klikněte na možnost **Výchozí nastavení objednávky**. Ve formuláři **Výchozí nastavení objednávky** zkontrolujte pole **Výchozí typ objednávky**.
+<span data-ttu-id="faa32-115">Následující obrázek ilustruje postup hlavního plánování.</span><span class="sxs-lookup"><span data-stu-id="faa32-115">The following graphic illustrates how master planning proceeds.</span></span> <span data-ttu-id="faa32-116">V obrázku jsou odkazy na následující parametry (v popisu je informace, kde je najdete):</span><span class="sxs-lookup"><span data-stu-id="faa32-116">The parameters that are referred to in the graphic, and their locations, are as follows:</span></span>
+-   <span data-ttu-id="faa32-117">Sklad je nastaven na možnost Ruční.</span><span class="sxs-lookup"><span data-stu-id="faa32-117">The warehouse is set to Manual.</span></span> <span data-ttu-id="faa32-118">Klikněte postupně na možnosti **Řízení zásob &gt; Nastavení &gt; Rozdělení zásob &gt; Sklady**.</span><span class="sxs-lookup"><span data-stu-id="faa32-118">Click **Inventory management &gt; Setup &gt; Inventory breakdown &gt; Warehouses**.</span></span> <span data-ttu-id="faa32-119">Na pevné záložce **Hlavní plánování** zkontrolujte pole **Ruční**.</span><span class="sxs-lookup"><span data-stu-id="faa32-119">On the **Master planning** FastTab, see the **Manual** field.</span></span>
+-   <span data-ttu-id="faa32-120">Je definovaná disponibilita položky.</span><span class="sxs-lookup"><span data-stu-id="faa32-120">Item coverage is defined for the item.</span></span> <span data-ttu-id="faa32-121">Klikněte na možnosti **Řízení informací o produktech &gt; Produkty&gt; Uvolněné produkty**.</span><span class="sxs-lookup"><span data-stu-id="faa32-121">Click **Product information management &gt; Products&gt; Released products**.</span></span> <span data-ttu-id="faa32-122">Zvolte položku a poté v podokně Akce na kartě **Plán** klikněte na **Disponibilita položky**.</span><span class="sxs-lookup"><span data-stu-id="faa32-122">Select the item, and then, on the Action pane, on the **Plan** tab, click **Item coverage**.</span></span>
+-   <span data-ttu-id="faa32-123">Pro sklad jsou definovány vztahy doplnění.</span><span class="sxs-lookup"><span data-stu-id="faa32-123">Refill relations are defined for the warehouse.</span></span> <span data-ttu-id="faa32-124">Klikněte postupně na možnosti **Řízení zásob &gt; Nastavení &gt; Rozdělení zásob &gt; Sklady**.</span><span class="sxs-lookup"><span data-stu-id="faa32-124">Click **Inventory management &gt; Setup &gt; Inventory breakdown &gt; Warehouses**.</span></span> <span data-ttu-id="faa32-125">Na pevné záložce **Hlavní plánování** zkontrolujte skupinu polí **Hlavní sklad**.</span><span class="sxs-lookup"><span data-stu-id="faa32-125">On the **Master planning** FastTab, see the **Main warehouse** field group.</span></span>
+-   <span data-ttu-id="faa32-126">Výchozí typ objednávky je nastaven na možnost Výroba, Nákupní objednávka nebo Kanban.</span><span class="sxs-lookup"><span data-stu-id="faa32-126">The default order type is set to Production, Purchase order, or Kanban.</span></span> <span data-ttu-id="faa32-127">Klikněte na možnosti **Řízení informací o produktech &gt; Produkty&gt; Uvolněné produkty**.</span><span class="sxs-lookup"><span data-stu-id="faa32-127">Click **Product information management &gt; Products&gt; Released products**.</span></span> <span data-ttu-id="faa32-128">Zvolte položku a poté v podokně Akce na kartě **Plán** klikněte na možnost **Výchozí nastavení objednávky**.</span><span class="sxs-lookup"><span data-stu-id="faa32-128">Select the item, and then, on the Action pane, on the **Plan** tab, click **Default order settings**.</span></span> <span data-ttu-id="faa32-129">Ve formuláři **Výchozí nastavení objednávky** zkontrolujte pole **Výchozí typ objednávky**.</span><span class="sxs-lookup"><span data-stu-id="faa32-129">In the **Default order settings** form, see the **Default order type**.</span></span>
 
 ![Požadavek na pracoviště a sklad, sklad není](./media/multisitedemandexplosionscenarioforsiteandwarehousecoveragewarehousenotmandatory.jpg)
 
@@ -53,18 +53,18 @@ Následující obrázek ilustruje postup hlavního plánování. V obrázku jsou
 
 
 
-<a name="see-also"></a>Viz také
+<a name="see-also"></a><span data-ttu-id="faa32-131">Viz také</span><span class="sxs-lookup"><span data-stu-id="faa32-131">See also</span></span>
 --------
 
-[Hlavní plánování a funkce více pracovišť](master-plan-multisite-functionality.md)
+[<span data-ttu-id="faa32-132">Hlavní plánování a funkce více pracovišť</span><span class="sxs-lookup"><span data-stu-id="faa32-132">Master planning and multisite functionality</span></span>](master-plan-multisite-functionality.md)
 
-[Hlavní plánování – disponibilita pracoviště a skladu, sklad povinný](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+[<span data-ttu-id="faa32-133">Hlavní plánování – disponibilita pracoviště a skladu, sklad povinný</span><span class="sxs-lookup"><span data-stu-id="faa32-133">Master planning - site and warehouse coverage, warehouse mandatory</span></span>](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Hlavní plánování – disponibilita pracoviště, sklad povinný](master-plan-site-coverage-warehouse-mandatory.md)
+[<span data-ttu-id="faa32-134">Hlavní plánování – disponibilita pracoviště, sklad povinný</span><span class="sxs-lookup"><span data-stu-id="faa32-134">Master planning - site coverage, warehouse mandatory</span></span>](master-plan-site-coverage-warehouse-mandatory.md)
 
-[Hlavní plánování – disponibilita pracoviště, sklad není povinný](master-plan-site-coverage-warehouse-not-mandatory.md)
+[<span data-ttu-id="faa32-135">Hlavní plánování – disponibilita pracoviště, sklad není povinný</span><span class="sxs-lookup"><span data-stu-id="faa32-135">Master planning - site coverage, warehouse not mandatory</span></span>](master-plan-site-coverage-warehouse-not-mandatory.md)
 
-[Hlavní plánování – jak se určuje verze kusovníku](master-plan-bom-version-determined.md)
+[<span data-ttu-id="faa32-136">Hlavní plánování – jak se určuje verze kusovníku</span><span class="sxs-lookup"><span data-stu-id="faa32-136">Master planning - How the BOM version is determined</span></span>](master-plan-bom-version-determined.md)
 
 
 

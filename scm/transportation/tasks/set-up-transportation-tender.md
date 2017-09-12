@@ -17,34 +17,34 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: a8ad2469bbe51648369d2df17fc027c03e6c97ca
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 8ccd82b3249e99dd2884fb257f3e65261ab64d96
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-a-transportation-tender"></a>Nastavení úhrady přepravy
+# <a name="set-up-a-transportation-tender"></a><span data-ttu-id="87fcb-103">Nastavení úhrady přepravy</span><span class="sxs-lookup"><span data-stu-id="87fcb-103">Set up a transportation tender</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tato procedura popisuje, jak nastavíte úhradu přepravy. To obvykle provádí koordinátor přepravy. Tento postup můžete projít v ukázkových datech společnosti USMF.
+<span data-ttu-id="87fcb-104">Tato procedura popisuje, jak nastavíte úhradu přepravy.</span><span class="sxs-lookup"><span data-stu-id="87fcb-104">This procedure shows how to set up a transportation tender.</span></span> <span data-ttu-id="87fcb-105">To obvykle provádí koordinátor přepravy.</span><span class="sxs-lookup"><span data-stu-id="87fcb-105">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="87fcb-106">Tento postup můžete projít v ukázkových datech společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="87fcb-106">You can use this procedure in the USMF demo data company.</span></span>
 
 
-## <a name="select-a-route"></a>Vyberte trasu.
-1. Přejděte do nabídky Správa přepravy > Plánování > Pracovní plocha plánování vytížení.
-2. Zrušte zaškrtnutí políčka Skrýt expedované a přijaté.
-3. Vyberte řádek s ID nákladu 00006.
-4. Klikněte na možnost Hodnocení a směrování.
-5. Klikněte na Trasy.
+## <a name="select-a-route"></a><span data-ttu-id="87fcb-107">Vyberte trasu.</span><span class="sxs-lookup"><span data-stu-id="87fcb-107">Select a route</span></span>
+1. <span data-ttu-id="87fcb-108">Přejděte do nabídky Správa přepravy > Plánování > Pracovní plocha plánování vytížení.</span><span class="sxs-lookup"><span data-stu-id="87fcb-108">Go to Transportation management > Planning > Load planning workbench.</span></span>
+2. <span data-ttu-id="87fcb-109">Zrušte zaškrtnutí políčka Skrýt expedované a přijaté.</span><span class="sxs-lookup"><span data-stu-id="87fcb-109">Clear the Hide shipped and received check box.</span></span>
+3. <span data-ttu-id="87fcb-110">Vyberte řádek s ID nákladu 00006.</span><span class="sxs-lookup"><span data-stu-id="87fcb-110">Select the line with Load ID 00006.</span></span>
+4. <span data-ttu-id="87fcb-111">Klikněte na možnost Hodnocení a směrování.</span><span class="sxs-lookup"><span data-stu-id="87fcb-111">Click Rating and routing.</span></span>
+5. <span data-ttu-id="87fcb-112">Klikněte na Trasy.</span><span class="sxs-lookup"><span data-stu-id="87fcb-112">Click Routes.</span></span>
 
-## <a name="create-the-transportation-tender"></a>Vytvoření úhrady přepravy
-1. Klikněte na Úhrady přepravy.
-2. Klikněte na položku Nová.
-3. Rozbalte sekci Obecné.
-4. V poli Požadované sazby zadejte číslo.
-5. Klikněte na položku Uložit.
-6. Klikněte na Aktualizovat stav.
-7. Klepněte na tlačítko Odeslat.
-8. Vyberte trasu.
+## <a name="create-the-transportation-tender"></a><span data-ttu-id="87fcb-113">Vytvoření úhrady přepravy</span><span class="sxs-lookup"><span data-stu-id="87fcb-113">Create the transportation tender</span></span>
+1. <span data-ttu-id="87fcb-114">Klikněte na Úhrady přepravy.</span><span class="sxs-lookup"><span data-stu-id="87fcb-114">Click Transportation tenders.</span></span>
+2. <span data-ttu-id="87fcb-115">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="87fcb-115">Click New.</span></span>
+3. <span data-ttu-id="87fcb-116">Rozbalte sekci Obecné.</span><span class="sxs-lookup"><span data-stu-id="87fcb-116">Expand the General section.</span></span>
+4. <span data-ttu-id="87fcb-117">V poli Požadované sazby zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="87fcb-117">In the Requested rates field, enter a number.</span></span>
+5. <span data-ttu-id="87fcb-118">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="87fcb-118">Click Save.</span></span>
+6. <span data-ttu-id="87fcb-119">Klikněte na Aktualizovat stav.</span><span class="sxs-lookup"><span data-stu-id="87fcb-119">Click Update status.</span></span>
+7. <span data-ttu-id="87fcb-120">Klepněte na tlačítko Odeslat.</span><span class="sxs-lookup"><span data-stu-id="87fcb-120">Click Submit.</span></span>
+8. <span data-ttu-id="87fcb-121">Vyberte trasu.</span><span class="sxs-lookup"><span data-stu-id="87fcb-121">Select a route.</span></span>
 
 

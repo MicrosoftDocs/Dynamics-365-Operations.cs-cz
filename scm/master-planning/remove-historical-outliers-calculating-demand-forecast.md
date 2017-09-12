@@ -20,36 +20,36 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 72735c9e3fb4291076f0b577f45384dec319b2a7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: ea3f08b20e25af6ebb738c2373b65532d74a0c80
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>Odebrání odlehlých hodnot z historických dat transakcí při výpočtu prognózy poptávky
+# <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a><span data-ttu-id="c5d68-104">Odebrání odlehlých hodnot z historických dat transakcí při výpočtu prognózy poptávky</span><span class="sxs-lookup"><span data-stu-id="c5d68-104">Remove outliers from historical transaction data when calculating a demand forecast</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje, jak vyloučit odlehlé hodnoty z historických dat, která se používají k výpočtu prognózy poptávky. Vyloučením odlehlých hodnot můžete zlepšit přesnost prognózy.
+<span data-ttu-id="c5d68-105">Tento článek popisuje, jak vyloučit odlehlé hodnoty z historických dat, která se používají k výpočtu prognózy poptávky.</span><span class="sxs-lookup"><span data-stu-id="c5d68-105">This article describes how to exclude outliers from the historical data that is used to calculate a demand forecast.</span></span> <span data-ttu-id="c5d68-106">Vyloučením odlehlých hodnot můžete zlepšit přesnost prognózy.</span><span class="sxs-lookup"><span data-stu-id="c5d68-106">By excluding outliers, you can improve forecast accuracy.</span></span>
 
-Přesnost prognózy můžete zlepšit vyloučením odlehlých hodnot. Tato úloha je volitelná. Přehled procesu:
+<span data-ttu-id="c5d68-107">Přesnost prognózy můžete zlepšit vyloučením odlehlých hodnot.</span><span class="sxs-lookup"><span data-stu-id="c5d68-107">You can exclude outliers to improve forecast accuracy.</span></span> <span data-ttu-id="c5d68-108">Tato úloha je volitelná.</span><span class="sxs-lookup"><span data-stu-id="c5d68-108">This is an optional task.</span></span> <span data-ttu-id="c5d68-109">Přehled procesu:</span><span class="sxs-lookup"><span data-stu-id="c5d68-109">Here is an overview of the process:</span></span>
 
-1.  Klikněte na **Hlavní plánování** &gt; **Nastavení** &gt; **Prognóza poptávky** &gt; **Odebrání odlehlé hodnoty**. Otevře se stránka **Odebrání odlehlé hodnoty**, na které můžete pomocí dotazu vybrat transakce k vyloučení.
-2.  Vyberte společnost, pro kterou se použije dotaz, a pak zadejte název a popis. Pole **Datum dotazu** je automaticky nastaveno na aktuální datum.
-3.  Zaškrtněte políčko **Aktivní**, chcete-li vyloučit transakce, které byly nalezeny dotazem, z historických dat. Toto nastavení se projeví při vytváření základní prognózy.
-4.  Na stránce **Dotaz na odebrání odlehlé hodnoty** lze přidat, odebrat a vybrat kritéria, která definují transakce, které budou vyloučeny při výpočtu základní prognózy. Například vyberte konkrétní položku nebo transakci zakázky, kterou chcete vyloučit.
-5.  Klikněte na možnost **Zobrazit transakce**. Stránka **Transakce odlehlé hodnoty** uvádí seznam transakcí, které splňují kritéria, která jste definovali v dotazu, a které budou vyloučeny z historických dat při výpočtu prognózy poptávky.
+1.  <span data-ttu-id="c5d68-110">Klikněte na **Hlavní plánování** &gt; **Nastavení** &gt; **Prognóza poptávky** &gt; **Odebrání odlehlé hodnoty**. Otevře se stránka **Odebrání odlehlé hodnoty**, na které můžete pomocí dotazu vybrat transakce k vyloučení.</span><span class="sxs-lookup"><span data-stu-id="c5d68-110">Click **Master planning** &gt; **Setup** &gt; **Demand forecasting** &gt; **Outlier removal** to open the **Outlier removal** page, where you can use a query to select the transactions to exclude.</span></span>
+2.  <span data-ttu-id="c5d68-111">Vyberte společnost, pro kterou se použije dotaz, a pak zadejte název a popis.</span><span class="sxs-lookup"><span data-stu-id="c5d68-111">Select the company that the query applies to, and then enter a name and description.</span></span> <span data-ttu-id="c5d68-112">Pole **Datum dotazu** je automaticky nastaveno na aktuální datum.</span><span class="sxs-lookup"><span data-stu-id="c5d68-112">The **Query date** field is automatically set to the current date.</span></span>
+3.  <span data-ttu-id="c5d68-113">Zaškrtněte políčko **Aktivní**, chcete-li vyloučit transakce, které byly nalezeny dotazem, z historických dat.</span><span class="sxs-lookup"><span data-stu-id="c5d68-113">Select the **Active** check box to exclude the transactions that the query finds from the historical data.</span></span> <span data-ttu-id="c5d68-114">Toto nastavení se projeví při vytváření základní prognózy.</span><span class="sxs-lookup"><span data-stu-id="c5d68-114">This setting will take effect when you create a baseline forecast.</span></span>
+4.  <span data-ttu-id="c5d68-115">Na stránce **Dotaz na odebrání odlehlé hodnoty** lze přidat, odebrat a vybrat kritéria, která definují transakce, které budou vyloučeny při výpočtu základní prognózy.</span><span class="sxs-lookup"><span data-stu-id="c5d68-115">On the **Outlier removal query** page, you can add, remove, and select the criteria that define which transactions will be excluded when the baseline forecast is calculated.</span></span> <span data-ttu-id="c5d68-116">Například vyberte konkrétní položku nebo transakci zakázky, kterou chcete vyloučit.</span><span class="sxs-lookup"><span data-stu-id="c5d68-116">For example, select a specific item or order transaction to exclude.</span></span>
+5.  <span data-ttu-id="c5d68-117">Klikněte na možnost **Zobrazit transakce**.</span><span class="sxs-lookup"><span data-stu-id="c5d68-117">Click **Display transactions**.</span></span> <span data-ttu-id="c5d68-118">Stránka **Transakce odlehlé hodnoty** uvádí seznam transakcí, které splňují kritéria, která jste definovali v dotazu, a které budou vyloučeny z historických dat při výpočtu prognózy poptávky.</span><span class="sxs-lookup"><span data-stu-id="c5d68-118">The **Outlier transactions** page lists the transactions that meet the criteria that you defined in the query, and that will be excluded from the historical data when the demand forecast is calculated.</span></span>
 
-**Poznámka:** Můžete také vytvořit dotaz, který vychází z existujícího dotazu. Vyberte dotaz, který se má kopírovat, a klikněte na možnost **Duplikovat**. Pole **Datum dotazu** určuje verzi. Můžete vybrat dotaz, jak je, nebo můžete kliknout na možnost **Upravit dotaz**, chcete-li změnit kritéria. Volitelně můžete upravit název a popis nového dotazu.
+<span data-ttu-id="c5d68-119">**Poznámka:** Můžete také vytvořit dotaz, který vychází z existujícího dotazu.</span><span class="sxs-lookup"><span data-stu-id="c5d68-119">**Note:** You can also create a query that is based on an existing query.</span></span> <span data-ttu-id="c5d68-120">Vyberte dotaz, který se má kopírovat, a klikněte na možnost **Duplikovat**.</span><span class="sxs-lookup"><span data-stu-id="c5d68-120">Select the query to copy, and then click **Duplicate**.</span></span> <span data-ttu-id="c5d68-121">Pole **Datum dotazu** určuje verzi.</span><span class="sxs-lookup"><span data-stu-id="c5d68-121">The **Query date** field identifies the version.</span></span> <span data-ttu-id="c5d68-122">Můžete vybrat dotaz, jak je, nebo můžete kliknout na možnost **Upravit dotaz**, chcete-li změnit kritéria.</span><span class="sxs-lookup"><span data-stu-id="c5d68-122">You can use the query as it is, or you can click **Edit query** to modify the criteria.</span></span> <span data-ttu-id="c5d68-123">Volitelně můžete upravit název a popis nového dotazu.</span><span class="sxs-lookup"><span data-stu-id="c5d68-123">You can optionally modify the name and description of the new query.</span></span>
 
-<a name="see-also"></a>Viz také
+<a name="see-also"></a><span data-ttu-id="c5d68-124">Viz také</span><span class="sxs-lookup"><span data-stu-id="c5d68-124">See also</span></span>
 --------
 
-[Úvod do prognózy poptávky](introduction-demand-forecasting.md)
+[<span data-ttu-id="c5d68-125">Úvod do prognózy poptávky</span><span class="sxs-lookup"><span data-stu-id="c5d68-125">Introduction to demand forecasting</span></span>](introduction-demand-forecasting.md)
 
-[Měření přesnosti prognózy](monitor-forecast-accuracy.md)
+[<span data-ttu-id="c5d68-126">Měření přesnosti prognózy</span><span class="sxs-lookup"><span data-stu-id="c5d68-126">Monitoring forecast accuracy</span></span>](monitor-forecast-accuracy.md)
 
 
 

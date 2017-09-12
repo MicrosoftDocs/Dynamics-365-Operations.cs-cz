@@ -17,38 +17,38 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 1b95b797d5e2b9dbf6e325e71705727b87c5e10e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 9824971eb2a970f6136df9cc2c5feffc038b8f09
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-project-resource-information"></a>Nastavení informací o prostředku projektu
+# <a name="set-up-project-resource-information"></a><span data-ttu-id="dd07d-103">Nastavení informací o prostředku projektu</span><span class="sxs-lookup"><span data-stu-id="dd07d-103">Set up project resource information</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tato procedura popisuje, jak nastavíte prostředek projektu. Tato úloha používá sadu dat USMF.
+<span data-ttu-id="dd07d-104">Tato procedura popisuje, jak nastavíte prostředek projektu.</span><span class="sxs-lookup"><span data-stu-id="dd07d-104">This procedure shows how to set up a project resource.</span></span> <span data-ttu-id="dd07d-105">Tato úloha používá sadu dat USMF.</span><span class="sxs-lookup"><span data-stu-id="dd07d-105">This task uses the USMF data set.</span></span>
 
-1. Přejděte na Řízení a účetnictví projektů > Prostředky projektu > Seznam zdrojů.
-2. Klikněte na Nový prostředek
-3. V poli Pracovník zadejte nebo vyberte hodnotu.
-4. V poli Kalendář zadejte nebo vyberte hodnotu.
-5. V poli Kód období zadejte nebo vyberte hodnotu.
-6. Klikněte na položku Vytvořit.
-7. Klikněte na Nákladové ceny.
-8. Klikněte na Nákladová cena - (hodina).
-9. Klikněte na položku Nová.
-10. Zadejte datum do pole Datum platnosti.
-11. Zadejte číslo do pole Nákladová cena.
-12. Klikněte na položku Uložit.
-13. Zavřete stránku.
-14. Klikněte na Prodejní ceny.
-15. Klikněte na Prodejní cena - hodina.
-16. Klikněte na položku Nová.
-17. Zadejte datum do pole Datum platnosti.
-18. Do pole Oceňování zadejte číslo.
-19. Vyberte volbu v poli Platné pro.
-20. Klikněte na položku Uložit.
-21. Zavřete stránku.
+1. <span data-ttu-id="dd07d-106">Přejděte na Řízení a účetnictví projektů > Prostředky projektu > Seznam zdrojů.</span><span class="sxs-lookup"><span data-stu-id="dd07d-106">Go to Project management and accounting > Project resources > Resources list.</span></span>
+2. <span data-ttu-id="dd07d-107">Klikněte na Nový prostředek</span><span class="sxs-lookup"><span data-stu-id="dd07d-107">Click New resource.</span></span>
+3. <span data-ttu-id="dd07d-108">V poli Pracovník zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="dd07d-108">In the Worker field, enter or select a value.</span></span>
+4. <span data-ttu-id="dd07d-109">V poli Kalendář zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="dd07d-109">In the Calendar field, enter or select a value.</span></span>
+5. <span data-ttu-id="dd07d-110">V poli Kód období zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="dd07d-110">In the Period code field, enter or select a value.</span></span>
+6. <span data-ttu-id="dd07d-111">Klikněte na položku Vytvořit.</span><span class="sxs-lookup"><span data-stu-id="dd07d-111">Click Create.</span></span>
+7. <span data-ttu-id="dd07d-112">Klikněte na Nákladové ceny.</span><span class="sxs-lookup"><span data-stu-id="dd07d-112">Click Cost prices.</span></span>
+8. <span data-ttu-id="dd07d-113">Klikněte na Nákladová cena - (hodina).</span><span class="sxs-lookup"><span data-stu-id="dd07d-113">Click Cost price - hour.</span></span>
+9. <span data-ttu-id="dd07d-114">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="dd07d-114">Click New.</span></span>
+10. <span data-ttu-id="dd07d-115">Zadejte datum do pole Datum platnosti.</span><span class="sxs-lookup"><span data-stu-id="dd07d-115">In the Effective date field, enter a date.</span></span>
+11. <span data-ttu-id="dd07d-116">Zadejte číslo do pole Nákladová cena.</span><span class="sxs-lookup"><span data-stu-id="dd07d-116">In the Cost price field, enter a number.</span></span>
+12. <span data-ttu-id="dd07d-117">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="dd07d-117">Click Save.</span></span>
+13. <span data-ttu-id="dd07d-118">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="dd07d-118">Close the page.</span></span>
+14. <span data-ttu-id="dd07d-119">Klikněte na Prodejní ceny.</span><span class="sxs-lookup"><span data-stu-id="dd07d-119">Click Sales prices.</span></span>
+15. <span data-ttu-id="dd07d-120">Klikněte na Prodejní cena - hodina.</span><span class="sxs-lookup"><span data-stu-id="dd07d-120">Click Sales price - hour.</span></span>
+16. <span data-ttu-id="dd07d-121">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="dd07d-121">Click New.</span></span>
+17. <span data-ttu-id="dd07d-122">Zadejte datum do pole Datum platnosti.</span><span class="sxs-lookup"><span data-stu-id="dd07d-122">In the Effective date field, enter a date.</span></span>
+18. <span data-ttu-id="dd07d-123">Do pole Oceňování zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="dd07d-123">In the Pricing field, enter a number.</span></span>
+19. <span data-ttu-id="dd07d-124">Vyberte volbu v poli Platné pro.</span><span class="sxs-lookup"><span data-stu-id="dd07d-124">In the Valid for field, select an option.</span></span>
+20. <span data-ttu-id="dd07d-125">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="dd07d-125">Click Save.</span></span>
+21. <span data-ttu-id="dd07d-126">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="dd07d-126">Close the page.</span></span>
 
 

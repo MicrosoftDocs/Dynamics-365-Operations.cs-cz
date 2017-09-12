@@ -16,32 +16,32 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 52d502a53deb6defa619af4ca8cdc3158e086bae
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 71c0175178203006e297466c4a37cd3e6319b6ea
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="import-iso20022-credit-transfer-configuration"></a>Import konfigurace převodu kreditu ve formátu ISO20022
+# <a name="import-iso20022-credit-transfer-configuration"></a><span data-ttu-id="3726c-103">Import konfigurace převodu kreditu ve formátu ISO20022</span><span class="sxs-lookup"><span data-stu-id="3726c-103">Import ISO20022 credit transfer configuration</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup ukazuje, jak importovat konfiguraci elektronického výkaznictví pro platby dodavatelů. Formát pro peněžní převod podle německé normy ISO 20022 slouží jako příklad. Tento postup lze použít pro jiný dostupný formát elektronického výkaznictví. 
+<span data-ttu-id="3726c-104">Tento postup ukazuje, jak importovat konfiguraci elektronického výkaznictví pro platby dodavatelů.</span><span class="sxs-lookup"><span data-stu-id="3726c-104">This procedure shows how to import a vendor payment electronic reporting configuration.</span></span> <span data-ttu-id="3726c-105">Formát pro peněžní převod podle německé normy ISO 20022 slouží jako příklad.</span><span class="sxs-lookup"><span data-stu-id="3726c-105">The German ISO 20022 credit transfer format is used as an example.</span></span> <span data-ttu-id="3726c-106">Tento postup lze použít pro jiný dostupný formát elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="3726c-106">This procedure can be used for other available electronic reporting format.</span></span> 
 
-Tento úkol byl vytvořen pomocí ukázkových dat společnosti DEMF, ale k jeho dokončení můžete použít ukázková data libovolné společnosti.
+<span data-ttu-id="3726c-107">Tento úkol byl vytvořen pomocí ukázkových dat společnosti DEMF, ale k jeho dokončení můžete použít ukázková data libovolné společnosti.</span><span class="sxs-lookup"><span data-stu-id="3726c-107">This task was created using the demo data company DEMF but you can use any demo data company to complete this task.</span></span>
 
-Toto je první z pěti úkolů, které společně popisují proces platby dodavatele pomocí konfigurací elektronického výkaznictví. Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.
+<span data-ttu-id="3726c-108">Toto je první z pěti úkolů, které společně popisují proces platby dodavatele pomocí konfigurací elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="3726c-108">This is the first of five tasks, that together illustrate the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="3726c-109">Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="3726c-109">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
-1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
-2. V seznamu dostupných poskytovatelů konfigurace vyberte Microsoft.
-3. Klikněte na možnost Nastavit jako aktivní.
-4. Klikněte na možnost Úložiště.
-5. Klikněte na možnost Otevřít.
-6. Klepněte na tlačítko Zobrazit filtry.
-7. Použijte následující filtry: Do pole Název konfigurace zadejte hodnotu filtru ISO20022 Credit transfer (DE) a použijte operátor filtru začíná na
-    * Případně vyhledejte konfiguraci v seznamu, vyberte ji a převeďte na úlohu importu.  
-8. Klepněte na tlačítko Importovat.
-    * Pokud tlačítko Importovat není k dispozici, znamená to, že tato konfigurace je již po importu.  
-9. Klepněte na tlačítko Ano.
+1. <span data-ttu-id="3726c-110">Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="3726c-110">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="3726c-111">V seznamu dostupných poskytovatelů konfigurace vyberte Microsoft.</span><span class="sxs-lookup"><span data-stu-id="3726c-111">In the list of available configuration providers, select Microsoft.</span></span>
+3. <span data-ttu-id="3726c-112">Klikněte na možnost Nastavit jako aktivní.</span><span class="sxs-lookup"><span data-stu-id="3726c-112">Click Set active.</span></span>
+4. <span data-ttu-id="3726c-113">Klikněte na možnost Úložiště.</span><span class="sxs-lookup"><span data-stu-id="3726c-113">Click Repositories.</span></span>
+5. <span data-ttu-id="3726c-114">Klikněte na možnost Otevřít.</span><span class="sxs-lookup"><span data-stu-id="3726c-114">Click Open.</span></span>
+6. <span data-ttu-id="3726c-115">Klepněte na tlačítko Zobrazit filtry.</span><span class="sxs-lookup"><span data-stu-id="3726c-115">Click Show filters.</span></span>
+7. <span data-ttu-id="3726c-116">Použijte následující filtry: Do pole Název konfigurace zadejte hodnotu filtru ISO20022 Credit transfer (DE) a použijte operátor filtru začíná na</span><span class="sxs-lookup"><span data-stu-id="3726c-116">Apply the following filters: Enter a filter value of "ISO20022 Credit transfer (DE)" on the "Configuration name" field using the "begins with" filter operator</span></span>
+    * <span data-ttu-id="3726c-117">Případně vyhledejte konfiguraci v seznamu, vyberte ji a převeďte na úlohu importu.</span><span class="sxs-lookup"><span data-stu-id="3726c-117">Alternatively, you can find the configuration in the list, select it, and then move it to the Import task.</span></span>  
+8. <span data-ttu-id="3726c-118">Klepněte na tlačítko Importovat.</span><span class="sxs-lookup"><span data-stu-id="3726c-118">Click Import.</span></span>
+    * <span data-ttu-id="3726c-119">Pokud tlačítko Importovat není k dispozici, znamená to, že tato konfigurace je již po importu.</span><span class="sxs-lookup"><span data-stu-id="3726c-119">If the Import button is not available, it means that the configuration has  already been imported.</span></span>  
+9. <span data-ttu-id="3726c-120">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="3726c-120">Click Yes.</span></span>
 
 

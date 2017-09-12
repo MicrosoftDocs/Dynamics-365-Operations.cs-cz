@@ -16,37 +16,37 @@ ms.custom: 3401
 ms.assetid: 862d6450-187b-497f-9822-cce45f2c65a9
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3cf2f1143837a35a41b12ef566743aefd90fc462
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 5afdabf93128bc52cb223d0c35c6bcdae5f5ca2a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="derived-books"></a>Odvozené knihy
+# <a name="derived-books"></a><span data-ttu-id="45cfa-103">Odvozené knihy</span><span class="sxs-lookup"><span data-stu-id="45cfa-103">Derived books</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek podává přehled o funkci Odvozená kniha.
+<span data-ttu-id="45cfa-104">Tento článek podává přehled o funkci Odvozená kniha.</span><span class="sxs-lookup"><span data-stu-id="45cfa-104">This article provides an overview of derived book functionality.</span></span>
 
-Smyslem odvozených knih je zjednodušit zaúčtování transakcí knih dlouhodobého majetku naplánovaných v pravidelných intervalech.  Zvolíte jednu knihu jako primární. Jde obvykle o knihu používanou pro účetní odpisy. Pak ji připojíte k ostatním knihám, které jsou nastaveny pro zaúčtování transakcí ve stejných intervalech jako primární kniha. Knihy odpisů hodnoty DPH jsou často nastaveny jako odvozené knihy. 
+<span data-ttu-id="45cfa-105">Smyslem odvozených knih je zjednodušit zaúčtování transakcí knih dlouhodobého majetku naplánovaných v pravidelných intervalech.</span><span class="sxs-lookup"><span data-stu-id="45cfa-105">The purpose of derived books is to simplify the posting of fixed asset book transactions that are planned for regular intervals.</span></span>  <span data-ttu-id="45cfa-106">Zvolíte jednu knihu jako primární.</span><span class="sxs-lookup"><span data-stu-id="45cfa-106">You choose one book as the primary book.</span></span> <span data-ttu-id="45cfa-107">Jde obvykle o knihu používanou pro účetní odpisy.</span><span class="sxs-lookup"><span data-stu-id="45cfa-107">This usually is the book that is used for accounting depreciation.</span></span> <span data-ttu-id="45cfa-108">Pak ji připojíte k ostatním knihám, které jsou nastaveny pro zaúčtování transakcí ve stejných intervalech jako primární kniha.</span><span class="sxs-lookup"><span data-stu-id="45cfa-108">You then attach to it other books that are set up to post transactions in the same intervals as the primary book.</span></span> <span data-ttu-id="45cfa-109">Knihy odpisů hodnoty DPH jsou často nastaveny jako odvozené knihy.</span><span class="sxs-lookup"><span data-stu-id="45cfa-109">Tax depreciation books are often set up as derived books.</span></span> 
 
-Nejběžnější transakce pro nastavení zaúčtování odvozených knih jsou pořízení, úprava pořízení a likvidace. 
+<span data-ttu-id="45cfa-110">Nejběžnější transakce pro nastavení zaúčtování odvozených knih jsou pořízení, úprava pořízení a likvidace.</span><span class="sxs-lookup"><span data-stu-id="45cfa-110">The most common transactions to set up to post to derived books are acquisitions, acquisition adjustments, and disposals.</span></span> 
 
-## <a name="example"></a>Příklad
+## <a name="example"></a><span data-ttu-id="45cfa-111">Příklad</span><span class="sxs-lookup"><span data-stu-id="45cfa-111">Example</span></span>
 
-Kniha B a kniha C jsou nastaveny jako odvozené knihy pro knihu A pro typ transakce pořízení. V knize A zadáte transakci pořízení majetku 123 s hodnotou 1 500,00. 
+<span data-ttu-id="45cfa-112">Kniha B a kniha C jsou nastaveny jako odvozené knihy pro knihu A pro typ transakce pořízení.</span><span class="sxs-lookup"><span data-stu-id="45cfa-112">Book B and book C are set up as derived books for book A for the Acquisition transaction type.</span></span> <span data-ttu-id="45cfa-113">V knize A zadáte transakci pořízení majetku 123 s hodnotou 1 500,00.</span><span class="sxs-lookup"><span data-stu-id="45cfa-113">In book A, you enter an acquisition transaction for asset 123 for 1,500.00.</span></span> 
 
-Při zaúčtování transakce je vygenerována transakce pořízení a je zaúčtována do majetku 123 pro knihu B a do majetku 123 pro knihu C s hodnotou 1 500,00. Při přípravě transakcí primární knihy k zaúčtování do deníku dlouhodobého majetku lze také zobrazit a upravit transakce odvozených knih odpisů. Při přípravě transakcí primární knihy v jiném deníku nelze zobrazit transakce odvozených hodnot. Avšak zaúčtováním do příslušných účtů a účtovacích vrstev po zaúčtování transakcí primární knihy.
+<span data-ttu-id="45cfa-114">Při zaúčtování transakce je vygenerována transakce pořízení a je zaúčtována do majetku 123 pro knihu B a do majetku 123 pro knihu C s hodnotou 1 500,00.</span><span class="sxs-lookup"><span data-stu-id="45cfa-114">When the transaction is posted, an acquisition transaction is generated and posted in asset 123 for book B and in asset 123 for book C for 1,500.00.</span></span> <span data-ttu-id="45cfa-115">Při přípravě transakcí primární knihy k zaúčtování do deníku dlouhodobého majetku lze také zobrazit a upravit transakce odvozených knih odpisů.</span><span class="sxs-lookup"><span data-stu-id="45cfa-115">When you prepare the transactions of the primary book for posting in the fixed asset journal, you can also view and modify the transactions of the derived books.</span></span> <span data-ttu-id="45cfa-116">Při přípravě transakcí primární knihy v jiném deníku nelze zobrazit transakce odvozených hodnot.</span><span class="sxs-lookup"><span data-stu-id="45cfa-116">If you prepare the primary book transactions in another journal, the transactions of the derived value are not displayed.</span></span> <span data-ttu-id="45cfa-117">Avšak zaúčtováním do příslušných účtů a účtovacích vrstev po zaúčtování transakcí primární knihy.</span><span class="sxs-lookup"><span data-stu-id="45cfa-117">However, they are posted to the appropriate accounts and posting layers when you post the primary book transactions.</span></span>
 
 > [!NOTE]                                                                                                                               
-> Knihy, které jsou nastaveny pro zaúčtování transakcí v intervalech jiných než je interval pro primární knihu, musí být připojeny k dlouhodobému majetku jako samostatné knihy a nikoliv jako odvozené knihy.  
+> <span data-ttu-id="45cfa-118">Knihy, které jsou nastaveny pro zaúčtování transakcí v intervalech jiných než je interval pro primární knihu, musí být připojeny k dlouhodobému majetku jako samostatné knihy a nikoliv jako odvozené knihy.</span><span class="sxs-lookup"><span data-stu-id="45cfa-118">Books that are set up to post transactions at intervals other than the primary book intervals must be attached to the fixed asset as separate books and not as derived books.</span></span>  
 
-Další informace naleznete v tématu [Zaúčtování pomocí odvozených knih](post-derived-value-models.md).
+<span data-ttu-id="45cfa-119">Další informace naleznete v tématu [Zaúčtování pomocí odvozených knih](post-derived-value-models.md).</span><span class="sxs-lookup"><span data-stu-id="45cfa-119">For more information, see [Posting with derived books](post-derived-value-models.md).</span></span>
 
 
 

@@ -19,40 +19,40 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0909b64a77024d551af0dad2de985887cf6ff06d
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: f45d180dc8dcafb0579e76b890dd5d516df5b8c0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="balanced-journals-for-interunit-accounting"></a>Vyrovnávací deníky pro mezijednotkové účetnictví
+# <a name="balanced-journals-for-interunit-accounting"></a><span data-ttu-id="573e7-103">Vyrovnávací deníky pro mezijednotkové účetnictví</span><span class="sxs-lookup"><span data-stu-id="573e7-103">Balanced journals for interunit accounting</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek ukazuje, jak je deník automaticky vyrovnán pro výběru možnosti vyrovnávací finanční dimenzi na stránce hlavní knihy. 
+<span data-ttu-id="573e7-104">Tento článek ukazuje, jak je deník automaticky vyrovnán pro výběru možnosti vyrovnávací finanční dimenzi na stránce hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="573e7-104">This article shows how a journal is automatically balanced when a balancing financial dimension is selected on the Ledger page.</span></span> 
 
-Pokud účetní zápisy nejsou vyrovnány na úrovni hodnot finančních dimenzí, jsou automaticky vytvořeny další položky účtu za účelem vyrovnání deníku. Použijte tyto účetní položky v typech zaúčtování **Mezijednotkové účetnictví – má dáti** a**Mezijednotkové účetnictví – dal** na stránce **Účty pro automatické transakce**. Například pobočka, tj. druhý segment účtu hlavní knihy, bude vybrána jako vyrovnávací finanční dimenze, a budou vytvořeny následující účetní položky.
+<span data-ttu-id="573e7-105">Pokud účetní zápisy nejsou vyrovnány na úrovni hodnot finančních dimenzí, jsou automaticky vytvořeny další položky účtu za účelem vyrovnání deníku.</span><span class="sxs-lookup"><span data-stu-id="573e7-105">If account entries don't balance at the level of the financial dimension values, additional account entries are created automatically to balance the journal.</span></span> <span data-ttu-id="573e7-106">Použijte tyto účetní položky v typech zaúčtování **Mezijednotkové účetnictví – má dáti** a**Mezijednotkové účetnictví – dal** na stránce **Účty pro automatické transakce**.</span><span class="sxs-lookup"><span data-stu-id="573e7-106">These account entries use the **Interunit - debit** and **Interunit - credit** posting types on the **Accounts for automatic transactions** page to determine the main account.</span></span> <span data-ttu-id="573e7-107">Například pobočka, tj. druhý segment účtu hlavní knihy, bude vybrána jako vyrovnávací finanční dimenze, a budou vytvořeny následující účetní položky.</span><span class="sxs-lookup"><span data-stu-id="573e7-107">For example, Branch, which is the second segment of the ledger account, is selected as the balancing financial dimension, and the following accounting entries are about to be created.</span></span>
 
 |                      |           |
 |----------------------|-----------|
-| 6100 – MSP – OU\_256 | 100.00 OŘ |
-| 6100 – NY – OU\_249  | 100.00 OŘ |
-| 2100 – MSP – OU\_256 | 200.00 CR |
+| <span data-ttu-id="573e7-108">6100 – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="573e7-108">6100 – MSP – OU\_256</span></span> | <span data-ttu-id="573e7-109">100.00 OŘ</span><span class="sxs-lookup"><span data-stu-id="573e7-109">100.00 DR</span></span> |
+| <span data-ttu-id="573e7-110">6100 – NY – OU\_249</span><span class="sxs-lookup"><span data-stu-id="573e7-110">6100 – NY – OU\_249</span></span>  | <span data-ttu-id="573e7-111">100.00 OŘ</span><span class="sxs-lookup"><span data-stu-id="573e7-111">100.00 DR</span></span> |
+| <span data-ttu-id="573e7-112">2100 – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="573e7-112">2100 – MSP – OU\_256</span></span> | <span data-ttu-id="573e7-113">200.00 CR</span><span class="sxs-lookup"><span data-stu-id="573e7-113">200.00 CR</span></span> |
 
-V tomto případě dojde k určení následujících zůstatků:
+<span data-ttu-id="573e7-114">V tomto případě dojde k určení následujících zůstatků:</span><span class="sxs-lookup"><span data-stu-id="573e7-114">In this case, the following balances are determined:</span></span>
 
--   Pro pobočku MSP = 100,00 CR
--   Pro pobočku NY = 100,00 DR
+-   <span data-ttu-id="573e7-115">Pro pobočku MSP = 100,00 CR</span><span class="sxs-lookup"><span data-stu-id="573e7-115">For Branch MSP = 100.00 CR</span></span>
+-   <span data-ttu-id="573e7-116">Pro pobočku NY = 100,00 DR</span><span class="sxs-lookup"><span data-stu-id="573e7-116">For Branch NY = 100.00 DR</span></span>
 
-Následující účetní položky jsou proto vytvořeny automaticky tak, aby vyrovnaly deník na úrovni hodnot finančních dimenzí.
+<span data-ttu-id="573e7-117">Následující účetní položky jsou proto vytvořeny automaticky tak, aby vyrovnaly deník na úrovni hodnot finančních dimenzí.</span><span class="sxs-lookup"><span data-stu-id="573e7-117">Therefore, the following accounting entries are created automatically to balance the  journal at the level of the financial dimension values.</span></span>
 
 |                                   |           |
 |-----------------------------------|-----------|
-| (Mezijednotkový debit) – MSP – OU\_256 | 100.00 OŘ |
-| (Interunit Credit) – NY – OU\_249 | 100.00 CR |
+| <span data-ttu-id="573e7-118">(Mezijednotkový debit) – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="573e7-118">(Interunit Debit) – MSP – OU\_256</span></span> | <span data-ttu-id="573e7-119">100.00 OŘ</span><span class="sxs-lookup"><span data-stu-id="573e7-119">100.00 DR</span></span> |
+| <span data-ttu-id="573e7-120">(Interunit Credit) – NY – OU\_249</span><span class="sxs-lookup"><span data-stu-id="573e7-120">(Interunit Credit) – NY – OU\_249</span></span> | <span data-ttu-id="573e7-121">100.00 CR</span><span class="sxs-lookup"><span data-stu-id="573e7-121">100.00 CR</span></span> |
 
 
 

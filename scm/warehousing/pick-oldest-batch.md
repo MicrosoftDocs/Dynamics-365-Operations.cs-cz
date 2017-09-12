@@ -14,31 +14,31 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: ee45fed40b10dbe913c73e1186b726a39831816d
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 25056886b1a18dbaef12c8732a1fd0bd92a6d04b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="pick-oldest-batch-on-a-mobile-device"></a>Vyskladnění nejstarší dávky na mobilním zařízení
+# <a name="pick-oldest-batch-on-a-mobile-device"></a><span data-ttu-id="f9ddb-103">Vyskladnění nejstarší dávky na mobilním zařízení</span><span class="sxs-lookup"><span data-stu-id="f9ddb-103">Pick oldest batch on a mobile device</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Ke konfiguraci použít **Vyskladnit nejstarší dávku** lze přejít prostřednictvím nabídky mobilního zařízení a umožňuje vynutit nebo upozornit pracovníky skladu na vyskladnění nejstarší dávky na aktuálním místě.  
+<span data-ttu-id="f9ddb-104">Ke konfiguraci použít **Vyskladnit nejstarší dávku** lze přejít prostřednictvím nabídky mobilního zařízení a umožňuje vynutit nebo upozornit pracovníky skladu na vyskladnění nejstarší dávky na aktuálním místě.</span><span class="sxs-lookup"><span data-stu-id="f9ddb-104">You can access the configuration **Pick oldest batch** via a mobile device menu and it allows you to force or warn warehouse workers to pick the oldest batch in their current location.</span></span>  
 
-## <a name="where-it-applies"></a>Kdy se to používá
-Možnost Vyskladnit nejstarší dávku je nakonfigurována pro položky nabídky mobilního zařízení a má vliv na vyskladnění dávky pod položkami.
+## <a name="where-it-applies"></a><span data-ttu-id="f9ddb-105">Kdy se to používá</span><span class="sxs-lookup"><span data-stu-id="f9ddb-105">Where it applies</span></span>
+<span data-ttu-id="f9ddb-106">Možnost Vyskladnit nejstarší dávku je nakonfigurována pro položky nabídky mobilního zařízení a má vliv na vyskladnění dávky pod položkami.</span><span class="sxs-lookup"><span data-stu-id="f9ddb-106">Pick oldest batch is configured on mobile device menu items and effects the pick for batch below items.</span></span>
 
-## <a name="how-to-set-up-the-configuration-for-pick-oldest-batch"></a>Nastavení konfigurace pro vyskladnění nejstarší dávky 
-Pro položky, které jsou nastaveny na použít stávající práce lze možnost **Vyskladnit nejstarší dávku** nastavit na hodnoty **žádná**, **upozornit** nebo **Vynutit** z nabídky mobilního zařízení.
+## <a name="how-to-set-up-the-configuration-for-pick-oldest-batch"></a><span data-ttu-id="f9ddb-107">Nastavení konfigurace pro vyskladnění nejstarší dávky</span><span class="sxs-lookup"><span data-stu-id="f9ddb-107">How to set up the configuration for Pick oldest batch</span></span> 
+<span data-ttu-id="f9ddb-108">Pro položky, které jsou nastaveny na použít stávající práce lze možnost **Vyskladnit nejstarší dávku** nastavit na hodnoty **žádná**, **upozornit** nebo **Vynutit** z nabídky mobilního zařízení.</span><span class="sxs-lookup"><span data-stu-id="f9ddb-108">For items that are set to use existing work, **Pick oldest batch** can be set to **None**, **Warn**, or **Force** from a mobile device menu.</span></span>
 
-**Žádná**: Pracovníci nebudou dostávat žádné zprávy a budou mít dovoleny vybrat všechny dávky v umístění.
+<span data-ttu-id="f9ddb-109">**Žádná**: Pracovníci nebudou dostávat žádné zprávy a budou mít dovoleny vybrat všechny dávky v umístění.</span><span class="sxs-lookup"><span data-stu-id="f9ddb-109">**None**: Workers will not receive any messages and they will be allowed to pick any batch in their location.</span></span>
 
-**Upozornit** a **Vynutit**: seznam dávek s nejstarším datem vypršení platnosti se zobrazí nad ovládacím prvkem dávky, když pracovník vybere dávku. Pokud je skladové místo řízeno registrační značkou, seznam registračních značek vozidel, které mají nejstarší dávku, se zobrazí nad ovládacím prvkem registrační značky vozidla. 
--   **Upozornění**: Pokud zaměstnanec zvolí registrační značku nebo dávku, které nejsou uvedeny v seznamu, ovládací prvek bude ignorován a zobrazí se upozornění, že existuje starší dávka k výběru. Aby bylo možné pokračovat v práci, pracovník může vybrat stejnou registrační značku nebo dávku znovu.  
--   **Vynutit**: Zaměstnanci budou dále dostávat zprávy, že existuje starší dávka pro výdej.
+<span data-ttu-id="f9ddb-110">**Upozornit** a **Vynutit**: seznam dávek s nejstarším datem vypršení platnosti se zobrazí nad ovládacím prvkem dávky, když pracovník vybere dávku.</span><span class="sxs-lookup"><span data-stu-id="f9ddb-110">**Warn** and **Force**:  A list of the batch(es) with the oldest expiration date will be displayed above the batch control when the worker selects a batch.</span></span> <span data-ttu-id="f9ddb-111">Pokud je skladové místo řízeno registrační značkou, seznam registračních značek vozidel, které mají nejstarší dávku, se zobrazí nad ovládacím prvkem registrační značky vozidla.</span><span class="sxs-lookup"><span data-stu-id="f9ddb-111">If the location is license plate controlled, a list of license plates that have the oldest batch will be displayed above the license plate control.</span></span> 
+-   <span data-ttu-id="f9ddb-112">**Upozornění**: Pokud zaměstnanec zvolí registrační značku nebo dávku, které nejsou uvedeny v seznamu, ovládací prvek bude ignorován a zobrazí se upozornění, že existuje starší dávka k výběru.</span><span class="sxs-lookup"><span data-stu-id="f9ddb-112">**Warn**: If a worker chooses a license plate or batch that is not on the shown list, the control will be blanked and a warning will be shown that there is an older batch to select.</span></span> <span data-ttu-id="f9ddb-113">Aby bylo možné pokračovat v práci, pracovník může vybrat stejnou registrační značku nebo dávku znovu.</span><span class="sxs-lookup"><span data-stu-id="f9ddb-113">To be allowed to continue the work, the worker can select the same license plate or batch again.</span></span>  
+-   <span data-ttu-id="f9ddb-114">**Vynutit**: Zaměstnanci budou dále dostávat zprávy, že existuje starší dávka pro výdej.</span><span class="sxs-lookup"><span data-stu-id="f9ddb-114">**Force**: Workers will continue to receive the message that there is an older batch to pick.</span></span>
 

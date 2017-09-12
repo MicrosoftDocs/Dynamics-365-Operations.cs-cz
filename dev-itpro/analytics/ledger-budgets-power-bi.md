@@ -13,55 +13,55 @@ ms.reviewer: sericks
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: ryansand
-ms.search.validFrom: 2017-06-30T00:00:00.000Z
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 5d52cce3cccb16f0645d9de1832ebeffbfaf3a09
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 6e675ccd610561668dec4f5c7410530edaa122b8
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="actual-vs-budget-power-bi-content"></a>Obsah Power BI pro porovnání skutečné situace s rozpočtem
+# <a name="actual-vs-budget-power-bi-content"></a><span data-ttu-id="62794-104">Obsah Power BI pro porovnání skutečné situace s rozpočtem</span><span class="sxs-lookup"><span data-stu-id="62794-104">Actual vs budget Power BI content</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje obsah Microsoft Power BI **Skutečnost a rozpočet**. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu. 
+<span data-ttu-id="62794-105">Toto téma popisuje obsah Microsoft Power BI **Skutečnost a rozpočet**.</span><span class="sxs-lookup"><span data-stu-id="62794-105">This topic describes the **Actual vs budget** Microsoft Power BI content.</span></span> <span data-ttu-id="62794-106">Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.</span><span class="sxs-lookup"><span data-stu-id="62794-106">It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.</span></span> 
 
-# <a name="overview"></a>Přehled
+# <a name="overview"></a><span data-ttu-id="62794-107">Přehled</span><span class="sxs-lookup"><span data-stu-id="62794-107">Overview</span></span>
 
-Obsah Power BI **Skutečnost a rozpočet** byl vytvořen pro uživatele, kteří odpovídají za sledování a porovnávání skutečných výsledků s rozpočtem v rámci organizace. Obsah Power BI **Skutečnost a rozpočet** usnadňuje kontrolu odchylek rozpočtu. Můžete analyzovat rozpočet pro aktuální rok podle kategorie účtu, kódu rozpočtu, hlavního účtu, popisu hlavního účtu nebo fiskálního období a získat užitečné informace o příčinách odchylek. 
+<span data-ttu-id="62794-108">Obsah Power BI **Skutečnost a rozpočet** byl vytvořen pro uživatele, kteří odpovídají za sledování a porovnávání skutečných výsledků s rozpočtem v rámci organizace.</span><span class="sxs-lookup"><span data-stu-id="62794-108">The **Actual vs budget** Power BI content was created for individuals who are responsible for monitoring actual versus budget performance in their organization.</span></span> <span data-ttu-id="62794-109">Obsah Power BI **Skutečnost a rozpočet** usnadňuje kontrolu odchylek rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="62794-109">The **Actual vs budget** Power BI content provides visibility into your budget variances.</span></span> <span data-ttu-id="62794-110">Můžete analyzovat rozpočet pro aktuální rok podle kategorie účtu, kódu rozpočtu, hlavního účtu, popisu hlavního účtu nebo fiskálního období a získat užitečné informace o příčinách odchylek.</span><span class="sxs-lookup"><span data-stu-id="62794-110">You can analyze budget for the current year by account category, budget code, main account, main account descriptions, or fiscal period to get a better understanding of the cause of any variances.</span></span> 
 
-# <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Pokud používáte aktualizaci aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition z července 2017, zobrazují se sestavy z obsahu Power BI **Skutečnost a rozpočet** v pracovních prostorech **Rozpočty hlavní knihy a prognózy** a **CFO**.
+# <a name="accessing-the-power-bi-content"></a><span data-ttu-id="62794-111">Přístup k obsahu Power BI</span><span class="sxs-lookup"><span data-stu-id="62794-111">Accessing the Power BI content</span></span>
+<span data-ttu-id="62794-112">Pokud používáte aktualizaci aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition z července 2017, zobrazují se sestavy z obsahu Power BI **Skutečnost a rozpočet** v pracovních prostorech **Rozpočty hlavní knihy a prognózy** a **CFO**.</span><span class="sxs-lookup"><span data-stu-id="62794-112">If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, reports from the **Actual vs budget** Power BI content are shown in the **Ledger budget and forecasts** and **CFO** workspaces.</span></span>
 
-# <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
-Následující tabulka obsahuje podrobnosti o metrikách, které jsou k dispozici na každé stránce sestavy obsahu Power BI **Skutečnost a rozpočet**.
+# <a name="reports-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="62794-113">Sestavy, které jsou součástí obsahu Power BI</span><span class="sxs-lookup"><span data-stu-id="62794-113">Reports that are included in the Power BI content</span></span>
+<span data-ttu-id="62794-114">Následující tabulka obsahuje podrobnosti o metrikách, které jsou k dispozici na každé stránce sestavy obsahu Power BI **Skutečnost a rozpočet**.</span><span class="sxs-lookup"><span data-stu-id="62794-114">The following table provides details about the metrics that are found on each report page in the **Actual vs budget** Power BI content.</span></span>
 
-| Sestava                      | Metrika |
+| <span data-ttu-id="62794-115">Sestava</span><span class="sxs-lookup"><span data-stu-id="62794-115">Report</span></span>                      | <span data-ttu-id="62794-116">Metrika</span><span class="sxs-lookup"><span data-stu-id="62794-116">Metrics</span></span> |
 |-----------------------------|---------|
-| Výdaje - Skutečné a rozpočtové | <ul><li>Celkové výdaje za tento rok</li><li>Celkové výdaje v rozpočtu za tento rok</li></ul> |
-| Výnosy - Skutečné a rozpočtové  | <ul><li>Celkové výnosy za tento rok</li><li>Celkové výnosy v rozpočtu za tento rok</li><ul> |
-| Výdaj                     | <ul><li>Celkové výdaje za tento rok</li><li>Cílová výše výdajů podle rozpočtu </li><ul> |
-| Výnosy                     | <ul><li>Celkové výnosy za tento rok</li><li>Cílová výše výnosů podle rozpočtu </li><ul> |
-| Čistý příjem                  | <ul><li>Čistý příjem za tento rok</li><li>Cílová výše čistého příjmu podle rozpočtu </li><ul> |
+| <span data-ttu-id="62794-117">Výdaje - Skutečné a rozpočtové</span><span class="sxs-lookup"><span data-stu-id="62794-117">Expenses - Actual vs budget</span></span> | <ul><li><span data-ttu-id="62794-118">Celkové výdaje za tento rok</span><span class="sxs-lookup"><span data-stu-id="62794-118">Total expenses this year</span></span></li><li><span data-ttu-id="62794-119">Celkové výdaje v rozpočtu za tento rok</span><span class="sxs-lookup"><span data-stu-id="62794-119">Budget total expenses this year</span></span></li></ul> |
+| <span data-ttu-id="62794-120">Výnosy - Skutečné a rozpočtové</span><span class="sxs-lookup"><span data-stu-id="62794-120">Revenue - Actual vs budget</span></span>  | <ul><li><span data-ttu-id="62794-121">Celkové výnosy za tento rok</span><span class="sxs-lookup"><span data-stu-id="62794-121">Total revenue this year</span></span></li><li><span data-ttu-id="62794-122">Celkové výnosy v rozpočtu za tento rok</span><span class="sxs-lookup"><span data-stu-id="62794-122">Budget total revenue this year</span></span></li><ul> |
+| <span data-ttu-id="62794-123">Výdaj</span><span class="sxs-lookup"><span data-stu-id="62794-123">Expense</span></span>                     | <ul><li><span data-ttu-id="62794-124">Celkové výdaje za tento rok</span><span class="sxs-lookup"><span data-stu-id="62794-124">Total expenses this year</span></span></li><li><span data-ttu-id="62794-125">Cílová výše výdajů podle rozpočtu</span><span class="sxs-lookup"><span data-stu-id="62794-125">Goal for expenses based on budget</span></span> </li><ul> |
+| <span data-ttu-id="62794-126">Výnosy</span><span class="sxs-lookup"><span data-stu-id="62794-126">Revenue</span></span>                     | <ul><li><span data-ttu-id="62794-127">Celkové výnosy za tento rok</span><span class="sxs-lookup"><span data-stu-id="62794-127">Total revenue this year</span></span></li><li><span data-ttu-id="62794-128">Cílová výše výnosů podle rozpočtu</span><span class="sxs-lookup"><span data-stu-id="62794-128">Goal for revenue based on budget</span></span> </li><ul> |
+| <span data-ttu-id="62794-129">Čistý příjem</span><span class="sxs-lookup"><span data-stu-id="62794-129">Net income</span></span>                  | <ul><li><span data-ttu-id="62794-130">Čistý příjem za tento rok</span><span class="sxs-lookup"><span data-stu-id="62794-130">Net income this year</span></span></li><li><span data-ttu-id="62794-131">Cílová výše čistého příjmu podle rozpočtu</span><span class="sxs-lookup"><span data-stu-id="62794-131">Goal for net income based on budget</span></span> </li><ul> |
 
-## <a name="extending-the-power-bi-content"></a>Rozšíření obsahu v Power BI
-Pomocí balíčků obsahu, které jsou k dispozici ve službě Microsoft Dynamics Lifecycle Services (LCS) můžete poskytovat skvělou analýzu osobám, které nejsou přihlášeny k aplikaci Microsoft Dynamics 365. Tyto balíčky obsahu můžete upravit tak, aby zahrnovaly jiné sestavy nebo vizuály, a potom publikovat balíčky obsahu na svého klienta Power BI.com pro analýzu. 
+## <a name="extending-the-power-bi-content"></a><span data-ttu-id="62794-132">Rozšíření obsahu v Power BI</span><span class="sxs-lookup"><span data-stu-id="62794-132">Extending the Power BI content</span></span>
+<span data-ttu-id="62794-133">Pomocí balíčků obsahu, které jsou k dispozici ve službě Microsoft Dynamics Lifecycle Services (LCS) můžete poskytovat skvělou analýzu osobám, které nejsou přihlášeny k aplikaci Microsoft Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="62794-133">By using the content packs that are available in Microsoft Dynamics Lifecycle Services (LCS), you can provide great analytics to people who don't sign in to Microsoft Dynamics 365.</span></span> <span data-ttu-id="62794-134">Tyto balíčky obsahu můžete upravit tak, aby zahrnovaly jiné sestavy nebo vizuály, a potom publikovat balíčky obsahu na svého klienta Power BI.com pro analýzu.</span><span class="sxs-lookup"><span data-stu-id="62794-134">You can modify these content packs so that they include other reports or visuals, and then publish the content packs to your Power BI.com tenant for analysis.</span></span> 
 
-Obsah **Skutečnost a rozpočet** v Power BI najdete v knihovně sdíleného majetku ve službě LCS. Další informace o stažení obsahu a jeho implementaci ve vaší organizaci naleznete v tématu [Obsah Power BI v LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md). Pokud se chcete podívat na ukázku, jak implementovat obsah Power BI, najdete informace v tématu [Obsah Power BI od společnosti Microsoft a partnerů ve službě Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) pro Office Mix.
+<span data-ttu-id="62794-135">Obsah **Skutečnost a rozpočet** v Power BI najdete v knihovně sdíleného majetku ve službě LCS.</span><span class="sxs-lookup"><span data-stu-id="62794-135">You can find the **Actual vs budget** Power BI content in the Shared assets library in LCS.</span></span> <span data-ttu-id="62794-136">Další informace o stažení obsahu a jeho implementaci ve vaší organizaci naleznete v tématu [Obsah Power BI v LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md).</span><span class="sxs-lookup"><span data-stu-id="62794-136">For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).</span></span> <span data-ttu-id="62794-137">Pokud se chcete podívat na ukázku, jak implementovat obsah Power BI, najdete informace v tématu [Obsah Power BI od společnosti Microsoft a partnerů ve službě Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) pro Office Mix.</span><span class="sxs-lookup"><span data-stu-id="62794-137">To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.</span></span>
 
-# <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
+# <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="62794-138">Informace o datovém modelu a entitách</span><span class="sxs-lookup"><span data-stu-id="62794-138">Understanding the data model and entities</span></span>
 
-| Celek                    | Obsah |
+| <span data-ttu-id="62794-139">Celek</span><span class="sxs-lookup"><span data-stu-id="62794-139">Entity</span></span>                    | <span data-ttu-id="62794-140">Obsah</span><span class="sxs-lookup"><span data-stu-id="62794-140">Contents</span></span> |
 |---------------------------|----------|
-| Aktivity hlavní knihy | Částky transakcí pro hlavní knihu |
-| Aktivity rozpočtu         | Částky transakcí pro registr rozpočtu |
-| Hlavní účty             | Hlavní účty pro filtrování sestav |
-| Fiskální kalendáře          | Fiskální kalendáře pro filtrování sestav |
-| Hlavní knihy                   | Hlavní knihy, které lze použít k filtrování sestavy u aktuální hlavní knihy |
-| Kódy rozpočtu              | Kódy rozpočtu pro filtrování sestav |
-| Právnické osoby            | Právnické osoby, které lze použít k filtrování sestavy u aktuální právnické osoby |
+| <span data-ttu-id="62794-141">Aktivity hlavní knihy</span><span class="sxs-lookup"><span data-stu-id="62794-141">General Ledger Activities</span></span> | <span data-ttu-id="62794-142">Částky transakcí pro hlavní knihu</span><span class="sxs-lookup"><span data-stu-id="62794-142">Transaction amounts for the general ledger</span></span> |
+| <span data-ttu-id="62794-143">Aktivity rozpočtu</span><span class="sxs-lookup"><span data-stu-id="62794-143">Budget Activities</span></span>         | <span data-ttu-id="62794-144">Částky transakcí pro registr rozpočtu</span><span class="sxs-lookup"><span data-stu-id="62794-144">Transaction amounts for the budget register</span></span> |
+| <span data-ttu-id="62794-145">Hlavní účty</span><span class="sxs-lookup"><span data-stu-id="62794-145">Main Accounts</span></span>             | <span data-ttu-id="62794-146">Hlavní účty pro filtrování sestav</span><span class="sxs-lookup"><span data-stu-id="62794-146">Main accounts to filter reports by</span></span> |
+| <span data-ttu-id="62794-147">Fiskální kalendáře</span><span class="sxs-lookup"><span data-stu-id="62794-147">Fiscal Calendars</span></span>          | <span data-ttu-id="62794-148">Fiskální kalendáře pro filtrování sestav</span><span class="sxs-lookup"><span data-stu-id="62794-148">Fiscal calendars to filter reports by</span></span> |
+| <span data-ttu-id="62794-149">Hlavní knihy</span><span class="sxs-lookup"><span data-stu-id="62794-149">Ledgers</span></span>                   | <span data-ttu-id="62794-150">Hlavní knihy, které lze použít k filtrování sestavy u aktuální hlavní knihy</span><span class="sxs-lookup"><span data-stu-id="62794-150">Ledgers that can be used to filter the report to the current ledger</span></span> |
+| <span data-ttu-id="62794-151">Kódy rozpočtu</span><span class="sxs-lookup"><span data-stu-id="62794-151">Budget Codes</span></span>              | <span data-ttu-id="62794-152">Kódy rozpočtu pro filtrování sestav</span><span class="sxs-lookup"><span data-stu-id="62794-152">Budget codes to filter reports by</span></span> |
+| <span data-ttu-id="62794-153">Právnické osoby</span><span class="sxs-lookup"><span data-stu-id="62794-153">Legal Entities</span></span>            | <span data-ttu-id="62794-154">Právnické osoby, které lze použít k filtrování sestavy u aktuální právnické osoby</span><span class="sxs-lookup"><span data-stu-id="62794-154">Legal entities that can be used to filter the report to the current legal entity</span></span> |
 

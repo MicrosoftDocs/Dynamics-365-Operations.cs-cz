@@ -17,36 +17,36 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 93ad6face77cf47b1512697e819271e1d1d09761
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 31787aa180639b934b837b98dc170070d33fd56f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-accessorial-assignments"></a>Nastavení přiřazení dodatečných služeb
+# <a name="set-up-accessorial-assignments"></a><span data-ttu-id="d6841-103">Nastavení přiřazení dodatečných služeb</span><span class="sxs-lookup"><span data-stu-id="d6841-103">Set up accessorial assignments</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup popisuje, jak nastavíte přiřazení doplňkové služby. To obvykle provádí koordinátor přepravy. Před použitím této příručky je nutné spustit příručku "Nastavení poplatků za dodatečnou službu centra a základní dodatečné služby".
+<span data-ttu-id="d6841-104">Tento postup popisuje, jak nastavíte přiřazení doplňkové služby.</span><span class="sxs-lookup"><span data-stu-id="d6841-104">This procedure shows how to set up an accessorial assignment.</span></span> <span data-ttu-id="d6841-105">To obvykle provádí koordinátor přepravy.</span><span class="sxs-lookup"><span data-stu-id="d6841-105">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="d6841-106">Před použitím této příručky je nutné spustit příručku "Nastavení poplatků za dodatečnou službu centra a základní dodatečné služby".</span><span class="sxs-lookup"><span data-stu-id="d6841-106">Before you use this guide you need to run the "Set up hub accessorial charges and accessorial masters" guide.</span></span>
 
 
-## <a name="set-up-accessorial-assignment"></a>Nastavení přiřazení dodatečné služby
-1. Přejděte do nabídky Správa přepravy > Nastavení > Ohodnocení > Přiřazení dodatečných služeb.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Název.
-4. Přepněte rozšíření oddílu Podrobnosti.
-5. V poli Centrum kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-6. V seznamu vyberte centrum, pro které jste vytvořili hlavní dodatečnou službu během spuštění průvodce "Nastavení poplatků za dodatečnou službu centra a základní dodatečné služby". 
-7. V poli ID dodatečné služby centra kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-8. Klikněte na odkaz na vybraném řádku v seznamu.
-9. Přepněte rozšíření oddílu Kritéria.
-    * V části Kritéria můžete vybrat přesná kritéria pro případ, kdy mají být použity náklady, a to na základě toho, které hodnoty jsou zde k dispozici.  
-10. Nastavte možnost Vždy použít na Ano.
-11. Vyberte volbu v poli Úroveň přiřazení doplňkové služby.
-12. Přepněte rozšíření oddílu Výpočet.
-13. Vyberte možnost Jednotný v poli Typ poplatku za dodatečné služby.
-    * Typ Poplatek za dodatečné služby určuje způsob výpočtu skutečných nákladů. V tomto příkladu se jedná o paušální náklady.  
-14. V poli Poplatek za dodatečné služby zadejte číslo.
-15. Klikněte na položku Uložit.
+## <a name="set-up-accessorial-assignment"></a><span data-ttu-id="d6841-107">Nastavení přiřazení dodatečné služby</span><span class="sxs-lookup"><span data-stu-id="d6841-107">Set up Accessorial assignment</span></span>
+1. <span data-ttu-id="d6841-108">Přejděte do nabídky Správa přepravy > Nastavení > Ohodnocení > Přiřazení dodatečných služeb.</span><span class="sxs-lookup"><span data-stu-id="d6841-108">Go to Transportation management > Setup > Rating > Accessorial assignments.</span></span>
+2. <span data-ttu-id="d6841-109">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="d6841-109">Click New.</span></span>
+3. <span data-ttu-id="d6841-110">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="d6841-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="d6841-111">Přepněte rozšíření oddílu Podrobnosti.</span><span class="sxs-lookup"><span data-stu-id="d6841-111">Toggle the expansion of the Details section.</span></span>
+5. <span data-ttu-id="d6841-112">V poli Centrum kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="d6841-112">In the Hub field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="d6841-113">V seznamu vyberte centrum, pro které jste vytvořili hlavní dodatečnou službu během spuštění průvodce "Nastavení poplatků za dodatečnou službu centra a základní dodatečné služby".</span><span class="sxs-lookup"><span data-stu-id="d6841-113">In the list, select the Hub that you created an accessorial master for when you ran the "Set up hub accessorial charges and accessorial masters" guide.</span></span> 
+7. <span data-ttu-id="d6841-114">V poli ID dodatečné služby centra kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="d6841-114">In the Hub accessorial ID field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="d6841-115">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="d6841-115">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="d6841-116">Přepněte rozšíření oddílu Kritéria.</span><span class="sxs-lookup"><span data-stu-id="d6841-116">Toggle the expansion of the Criteria section.</span></span>
+    * <span data-ttu-id="d6841-117">V části Kritéria můžete vybrat přesná kritéria pro případ, kdy mají být použity náklady, a to na základě toho, které hodnoty jsou zde k dispozici.</span><span class="sxs-lookup"><span data-stu-id="d6841-117">In the Criteria section you can choose the exact criteria for when the charge should apply, based on the different values offered here.</span></span>  
+10. <span data-ttu-id="d6841-118">Nastavte možnost Vždy použít na Ano.</span><span class="sxs-lookup"><span data-stu-id="d6841-118">Set the Always apply option to Yes.</span></span>
+11. <span data-ttu-id="d6841-119">Vyberte volbu v poli Úroveň přiřazení doplňkové služby.</span><span class="sxs-lookup"><span data-stu-id="d6841-119">In the Accessorial assignment level field, select an option.</span></span>
+12. <span data-ttu-id="d6841-120">Přepněte rozšíření oddílu Výpočet.</span><span class="sxs-lookup"><span data-stu-id="d6841-120">Toggle the expansion of the Calculation section.</span></span>
+13. <span data-ttu-id="d6841-121">Vyberte možnost Jednotný v poli Typ poplatku za dodatečné služby.</span><span class="sxs-lookup"><span data-stu-id="d6841-121">In the Accessorial fee type field, select 'Flat'.</span></span>
+    * <span data-ttu-id="d6841-122">Typ Poplatek za dodatečné služby určuje způsob výpočtu skutečných nákladů.</span><span class="sxs-lookup"><span data-stu-id="d6841-122">The Accessorial fee type determines how to calculate the actual charge.</span></span> <span data-ttu-id="d6841-123">V tomto příkladu se jedná o paušální náklady.</span><span class="sxs-lookup"><span data-stu-id="d6841-123">In this example it's a flat charge.</span></span>  
+14. <span data-ttu-id="d6841-124">V poli Poplatek za dodatečné služby zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="d6841-124">In the Accessorial fee field, enter a number.</span></span>
+15. <span data-ttu-id="d6841-125">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="d6841-125">Click Save.</span></span>
 
 

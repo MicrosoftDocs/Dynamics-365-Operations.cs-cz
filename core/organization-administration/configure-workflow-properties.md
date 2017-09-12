@@ -15,109 +15,109 @@ ms.custom: 196083
 ms.assetid: 192b7a98-7d04-4c7a-a986-29d797a8a837
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 713204bc1e9c757bda48d556ea5b0f66ed79a5c9
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 6cad67d4108a81de545a1e633dc4e12a31af683b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="configure-the-properties-of-a-workflow"></a>Konfigurace vlastností workflowu
+# <a name="configure-the-properties-of-a-workflow"></a><span data-ttu-id="995a7-103">Konfigurace vlastností workflowu</span><span class="sxs-lookup"><span data-stu-id="995a7-103">Configure the properties of a workflow</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma vysvětluje, jak nakonfigurovat různé vlastnosti workflowu.
+<span data-ttu-id="995a7-104">Toto téma vysvětluje, jak nakonfigurovat různé vlastnosti workflowu.</span><span class="sxs-lookup"><span data-stu-id="995a7-104">This topic explains how to configure the various properties of a workflow.</span></span>
 
-Pokud chcete konfigurovat vlastnosti workflowu, otevřete workflow v editoru workflowu. Klikněte na plátno editoru workflowu a klepněte na tlačítko **Vlastnosti** k otevření stránky **Vlastnosti**. Pro konfiguraci vlastností workflowu můžete použít následující kroky.
+<span data-ttu-id="995a7-105">Pokud chcete konfigurovat vlastnosti workflowu, otevřete workflow v editoru workflowu.</span><span class="sxs-lookup"><span data-stu-id="995a7-105">To configure the properties of a workflow, open the workflow in the workflow editor.</span></span> <span data-ttu-id="995a7-106">Klikněte na plátno editoru workflowu a klepněte na tlačítko **Vlastnosti** k otevření stránky **Vlastnosti**.</span><span class="sxs-lookup"><span data-stu-id="995a7-106">Click the canvas of the workflow editor, and then click **Properties** to open the **Properties** page.</span></span> <span data-ttu-id="995a7-107">Pro konfiguraci vlastností workflowu můžete použít následující kroky.</span><span class="sxs-lookup"><span data-stu-id="995a7-107">You can then use the following procedures to configure the various properties of the workflow.</span></span>
 
-## <a name="name-the-workflow"></a>Pojmenování workflowu
-Pomocí následujících kroků zadejte název workflowu.
+## <a name="name-the-workflow"></a><span data-ttu-id="995a7-108">Pojmenování workflowu</span><span class="sxs-lookup"><span data-stu-id="995a7-108">Name the workflow</span></span>
+<span data-ttu-id="995a7-109">Pomocí následujících kroků zadejte název workflowu.</span><span class="sxs-lookup"><span data-stu-id="995a7-109">Follow these steps to enter a name for the workflow.</span></span>
 
-1.  V levém podokně klepněte na tlačítko **Základní nastavení**.
-2.  V poli **Název** zadejte jedinečný název workflowu. Předpokládejme například, že vytváříte workflowy nákupních požadavků pro každou zemi nebo oblast, ve které působíte. Pro workflow nákupního požadavku můžete například zadat název **Nákupní požadavky – Dánsko** nebo **Nákupní požadavky – Španělsko**.
+1.  <span data-ttu-id="995a7-110">V levém podokně klepněte na tlačítko **Základní nastavení**.</span><span class="sxs-lookup"><span data-stu-id="995a7-110">In the left pane, click **Basic Settings**.</span></span>
+2.  <span data-ttu-id="995a7-111">V poli **Název** zadejte jedinečný název workflowu.</span><span class="sxs-lookup"><span data-stu-id="995a7-111">In the **Name** field, enter a unique name for the workflow.</span></span> <span data-ttu-id="995a7-112">Předpokládejme například, že vytváříte workflowy nákupních požadavků pro každou zemi nebo oblast, ve které působíte. Pro workflow nákupního požadavku můžete například zadat název **Nákupní požadavky – Dánsko** nebo **Nákupní požadavky – Španělsko**.</span><span class="sxs-lookup"><span data-stu-id="995a7-112">For example, if you create a purchase requisition workflow for each country/region that you operate in, you can name the purchase requisition workflow **Purchase Requisitions Denmark** or **Purchase Requisitions Spain**.</span></span>
 
-## <a name="specify-the-workflow-owner"></a>Zadání vlastníka workflowu
-Vlastník workflowu je osoba, která bude spravovat workflow. Vlastníka workflowu můžete zadat provedením následujícího postupu.
+## <a name="specify-the-workflow-owner"></a><span data-ttu-id="995a7-113">Zadání vlastníka workflowu</span><span class="sxs-lookup"><span data-stu-id="995a7-113">Specify the workflow owner</span></span>
+<span data-ttu-id="995a7-114">Vlastník workflowu je osoba, která bude spravovat workflow.</span><span class="sxs-lookup"><span data-stu-id="995a7-114">The workflow owner is the person who manages and maintains the workflow.</span></span> <span data-ttu-id="995a7-115">Vlastníka workflowu můžete zadat provedením následujícího postupu.</span><span class="sxs-lookup"><span data-stu-id="995a7-115">Follow these steps to specify the workflow owner.</span></span>
 
-1.  V levém podokně klepněte na tlačítko **Základní nastavení**.
-2.  V seznamu **Vlastník** vyberte jméno osoby, který bude spravovat tento workflow.
+1.  <span data-ttu-id="995a7-116">V levém podokně klepněte na tlačítko **Základní nastavení**.</span><span class="sxs-lookup"><span data-stu-id="995a7-116">In the left pane, click **Basic Settings**.</span></span>
+2.  <span data-ttu-id="995a7-117">V seznamu **Vlastník** vyberte jméno osoby, který bude spravovat tento workflow.</span><span class="sxs-lookup"><span data-stu-id="995a7-117">In the **Owner** list, select the name of the person who will manage the workflow.</span></span>
 
-## <a name="select-an-email-template"></a>Výběr šablony e-mailu
-Podle těchto kroků vyberte šablonu e-mailu, která se používá k vytvoření oznámení o workflowu.
+## <a name="select-an-email-template"></a><span data-ttu-id="995a7-118">Výběr šablony e-mailu</span><span class="sxs-lookup"><span data-stu-id="995a7-118">Select an email template</span></span>
+<span data-ttu-id="995a7-119">Podle těchto kroků vyberte šablonu e-mailu, která se používá k vytvoření oznámení o workflowu.</span><span class="sxs-lookup"><span data-stu-id="995a7-119">Follow these steps to select the email template that is used to generate notification messages about the workflow.</span></span>
 
-1.  V levém podokně klepněte na tlačítko **Základní nastavení**.
-2.  V seznamu **Šablona e-mailu k oznámení pro workflow** vyberte šablonu.
+1.  <span data-ttu-id="995a7-120">V levém podokně klepněte na tlačítko **Základní nastavení**.</span><span class="sxs-lookup"><span data-stu-id="995a7-120">In the left pane, click **Basic Settings**.</span></span>
+2.  <span data-ttu-id="995a7-121">V seznamu **Šablona e-mailu k oznámení pro workflow** vyberte šablonu.</span><span class="sxs-lookup"><span data-stu-id="995a7-121">In the **Email template for workflow notifications** list, select the template.</span></span>
 
-## <a name="enter-instructions-for-users"></a>Zadání pokynů pro uživatele
-Můžete zadat pokyny pro uživatele, kteří budou odesílat dokumenty ke zpracování a schválení. Tito uživatelé jsou označovány jako *původci*. Budeme například předpokládat, že vytváříte workflow nákupní žádanky, a že jste zadali pokyny. Tyto pokyny mohou zobrazit uživatelé zadáním nákupního požadavku na stránce **Nákupní požadavky**. Původce může zobrazit pokyny klepnutím na příslušnou ikonu na panelu zpráv pro workflow. Pokyny pro uživatele můžete zadat provedením následujícího postupu.
+## <a name="enter-instructions-for-users"></a><span data-ttu-id="995a7-122">Zadání pokynů pro uživatele</span><span class="sxs-lookup"><span data-stu-id="995a7-122">Enter instructions for users</span></span>
+<span data-ttu-id="995a7-123">Můžete zadat pokyny pro uživatele, kteří budou odesílat dokumenty ke zpracování a schválení.</span><span class="sxs-lookup"><span data-stu-id="995a7-123">You can provide instructions to users who submit documents for processing and approval.</span></span> <span data-ttu-id="995a7-124">Tito uživatelé jsou označovány jako *původci*.</span><span class="sxs-lookup"><span data-stu-id="995a7-124">These users are also referred to as *originators*.</span></span> <span data-ttu-id="995a7-125">Budeme například předpokládat, že vytváříte workflow nákupní žádanky, a že jste zadali pokyny.</span><span class="sxs-lookup"><span data-stu-id="995a7-125">For example, you're creating a purchase requisition workflow, and you enter instructions.</span></span> <span data-ttu-id="995a7-126">Tyto pokyny mohou zobrazit uživatelé zadáním nákupního požadavku na stránce **Nákupní požadavky**.</span><span class="sxs-lookup"><span data-stu-id="995a7-126">Those instructions can then be viewed by users who enter purchase requisitions on the **Purchase requisitions** page.</span></span> <span data-ttu-id="995a7-127">Původce může zobrazit pokyny klepnutím na příslušnou ikonu na panelu zpráv pro workflow.</span><span class="sxs-lookup"><span data-stu-id="995a7-127">To view instructions, the originator clicks the icon in the workflow message bar.</span></span> <span data-ttu-id="995a7-128">Pokyny pro uživatele můžete zadat provedením následujícího postupu.</span><span class="sxs-lookup"><span data-stu-id="995a7-128">Follow these steps to enter instructions for users.</span></span>
 
-1.  V levém podokně klepněte na tlačítko **Základní nastavení**.
-2.  V poli **Pokyny pro odeslání** zadejte pokyny.
-3.  Pokyny můžete přizpůsobit vložením zástupného textu. Zástupný text bude při zobrazení pokynů uživatelům nahrazen odpovídacími daty. Při vkládání zástupného textu postupujte takto:
-    1.  Klepnutím v poli **Pokyny pro odeslání** zadejte, kde se má zástupný text zobrazit.
-    2.  Klikněte na **Vložit zástupný text**.
-    3.  V nově otevřeném seznamu vyberte vkládaný zástupný text.
-    4.  Klepněte na tlačítko **Vložit**.
+1.  <span data-ttu-id="995a7-129">V levém podokně klepněte na tlačítko **Základní nastavení**.</span><span class="sxs-lookup"><span data-stu-id="995a7-129">In the left pane, click **Basic Settings**.</span></span>
+2.  <span data-ttu-id="995a7-130">V poli **Pokyny pro odeslání** zadejte pokyny.</span><span class="sxs-lookup"><span data-stu-id="995a7-130">In the **Submission instructions** field, enter the instructions.</span></span>
+3.  <span data-ttu-id="995a7-131">Pokyny můžete přizpůsobit vložením zástupného textu.</span><span class="sxs-lookup"><span data-stu-id="995a7-131">To personalize the instructions, you can insert placeholders.</span></span> <span data-ttu-id="995a7-132">Zástupný text bude při zobrazení pokynů uživatelům nahrazen odpovídacími daty.</span><span class="sxs-lookup"><span data-stu-id="995a7-132">Placeholders are replaced with the appropriate data when the instructions are shown to users.</span></span> <span data-ttu-id="995a7-133">Při vkládání zástupného textu postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="995a7-133">To insert a placeholder, follow these steps:</span></span>
+    1.  <span data-ttu-id="995a7-134">Klepnutím v poli **Pokyny pro odeslání** zadejte, kde se má zástupný text zobrazit.</span><span class="sxs-lookup"><span data-stu-id="995a7-134">Click in the **Submission instructions** field to specify where the placeholder should appear.</span></span>
+    2.  <span data-ttu-id="995a7-135">Klikněte na **Vložit zástupný text**.</span><span class="sxs-lookup"><span data-stu-id="995a7-135">Click **Insert placeholder**.</span></span>
+    3.  <span data-ttu-id="995a7-136">V nově otevřeném seznamu vyberte vkládaný zástupný text.</span><span class="sxs-lookup"><span data-stu-id="995a7-136">In the list that appears, select the placeholder to insert.</span></span>
+    4.  <span data-ttu-id="995a7-137">Klepněte na tlačítko **Vložit**.</span><span class="sxs-lookup"><span data-stu-id="995a7-137">Click **Insert**.</span></span>
 
-4.  Chcete-li přidat překlady pokynů, postupujte takto:
-    1.  Klikněte na **Překlady**.
-    2.  Na nově otevřené stránce klikněte na **Přidat**.
-    3.  V nově otevřeném seznamu vyberte jazyk, který chcete použít pro zadání textu.
-    4.  V poli **Přeložený text** zadejte text.
-    5.  Text můžete přizpůsobit vložením zástupného textu. Pokyny, jak zadat zástupný text, naleznete v kroku 3.
-    6.  Klepněte na tlačítko **Zavřít**.
+4.  <span data-ttu-id="995a7-138">Chcete-li přidat překlady pokynů, postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="995a7-138">To add translations of the instructions, follow these steps:</span></span>
+    1.  <span data-ttu-id="995a7-139">Klikněte na **Překlady**.</span><span class="sxs-lookup"><span data-stu-id="995a7-139">Click **Translations**.</span></span>
+    2.  <span data-ttu-id="995a7-140">Na nově otevřené stránce klikněte na **Přidat**.</span><span class="sxs-lookup"><span data-stu-id="995a7-140">On the page that appears, click **Add**.</span></span>
+    3.  <span data-ttu-id="995a7-141">V nově otevřeném seznamu vyberte jazyk, který chcete použít pro zadání textu.</span><span class="sxs-lookup"><span data-stu-id="995a7-141">In the list that appears, select the language that you will enter the text in.</span></span>
+    4.  <span data-ttu-id="995a7-142">V poli **Přeložený text** zadejte text.</span><span class="sxs-lookup"><span data-stu-id="995a7-142">In the **Translated text** field, enter the text.</span></span>
+    5.  <span data-ttu-id="995a7-143">Text můžete přizpůsobit vložením zástupného textu.</span><span class="sxs-lookup"><span data-stu-id="995a7-143">To personalize the text, you can insert placeholders.</span></span> <span data-ttu-id="995a7-144">Pokyny, jak zadat zástupný text, naleznete v kroku 3.</span><span class="sxs-lookup"><span data-stu-id="995a7-144">For instructions about how to enter a placeholder, see step 3.</span></span>
+    6.  <span data-ttu-id="995a7-145">Klepněte na tlačítko **Zavřít**.</span><span class="sxs-lookup"><span data-stu-id="995a7-145">Click **Close**.</span></span>
 
-## <a name="specify-when-this-workflow-is-used"></a>Určete, kdy se má použít tento workflow.
-Můžete vytvořit více workflowů založených na stejném typu. Můžete například vytvořit workflow nákupních požadavků, pro každou zemi nebo oblast, ve které působíte, například Nákupní požadavky – Dánsko a Nákupní požadavky – Španělsko. Pokud máte více workflowů založených na stejném typu, je nutné zadat, kdy má být který workflow použit. U předchozího příkladu zadáte následující podmínky:
+## <a name="specify-when-this-workflow-is-used"></a><span data-ttu-id="995a7-146">Určete, kdy se má použít tento workflow.</span><span class="sxs-lookup"><span data-stu-id="995a7-146">Specify when this workflow is used</span></span>
+<span data-ttu-id="995a7-147">Můžete vytvořit více workflowů založených na stejném typu.</span><span class="sxs-lookup"><span data-stu-id="995a7-147">You can create multiple workflows that are based on the same type.</span></span> <span data-ttu-id="995a7-148">Můžete například vytvořit workflow nákupních požadavků, pro každou zemi nebo oblast, ve které působíte, například Nákupní požadavky – Dánsko a Nákupní požadavky – Španělsko.</span><span class="sxs-lookup"><span data-stu-id="995a7-148">For example, you can create a purchase requisition workflow for each country/region that you operate in, such as Purchase Requisitions Denmark and Purchase Requisitions Spain.</span></span> <span data-ttu-id="995a7-149">Pokud máte více workflowů založených na stejném typu, je nutné zadat, kdy má být který workflow použit.</span><span class="sxs-lookup"><span data-stu-id="995a7-149">When you have multiple workflows that are based on the same type, you must specify when each workflow is used.</span></span> <span data-ttu-id="995a7-150">U předchozího příkladu zadáte následující podmínky:</span><span class="sxs-lookup"><span data-stu-id="995a7-150">For the preceding example, you specify the following conditions:</span></span>
 
--   Nákupní požadavky – Dánsko se má používat v případě, že země či oblast = DK
--   Nákupní požadavky – Španělsko se má používat v případě, že země či oblast = ES
+-   <span data-ttu-id="995a7-151">Nákupní požadavky – Dánsko se má používat v případě, že země či oblast = DK</span><span class="sxs-lookup"><span data-stu-id="995a7-151">Purchase Requisitions Denmark is used when: country/region = DK</span></span>
+-   <span data-ttu-id="995a7-152">Nákupní požadavky – Španělsko se má používat v případě, že země či oblast = ES</span><span class="sxs-lookup"><span data-stu-id="995a7-152">Purchase Requisitions Spain is used when: country/region = ES</span></span>
 
-Pomocí následujících kroků zadejte, kdy se má použít workflow, který konfigurujete.
+<span data-ttu-id="995a7-153">Pomocí následujících kroků zadejte, kdy se má použít workflow, který konfigurujete.</span><span class="sxs-lookup"><span data-stu-id="995a7-153">Follow these steps to specify when the workflow that you're configuring is used.</span></span>
 
-1.  V levém podokně klikněte na **Aktivace**.
-2.  Označte pole **Nastavit podmínky pro spuštění tohoto workflowu**.
-3.  Klepněte na možnost **Přidat podmínku**.
-4.  Zadání podmínky
-5.  Zadejte všechny další podmínky, které jsou požadovány.
-6.  Chcete-li ověřit, zda jsou zadané podmínky nastaveny správně, postupujte následovně:
-    1.  Klepněte na možnost **Test**.
-    2.  Na stránce **Podmínka testovacího workflowu** v oblasti **Ověřit podmínku** vyberte záznam.
-    3.  Klepněte na možnost **Test**. Systém záznam vyhodnotí a určí, zda odpovídá zadaným podmínkám. Například pokud vytváříte workflow nákupního požadavku pro Španělsko, oblast **Ověřit podmínku** na stránce bude obsahovat seznam nákupních žádanek. Po klepnutí na možnost **Test** systém vyhodnotí vybraný nákupní požadavek, aby zjistil, zda země či oblast = ES.
-    4.  Klikněte na tlačítko **OK** nebo klepnutím na tlačítko **Storno** se vraťte na stránku **Vlastnosti**.
+1.  <span data-ttu-id="995a7-154">V levém podokně klikněte na **Aktivace**.</span><span class="sxs-lookup"><span data-stu-id="995a7-154">In the left pane, click **Activation**.</span></span>
+2.  <span data-ttu-id="995a7-155">Označte pole **Nastavit podmínky pro spuštění tohoto workflowu**.</span><span class="sxs-lookup"><span data-stu-id="995a7-155">Select the **Set the conditions for running this workflow** check box.</span></span>
+3.  <span data-ttu-id="995a7-156">Klepněte na možnost **Přidat podmínku**.</span><span class="sxs-lookup"><span data-stu-id="995a7-156">Click **Add condition**.</span></span>
+4.  <span data-ttu-id="995a7-157">Zadání podmínky</span><span class="sxs-lookup"><span data-stu-id="995a7-157">Enter a condition.</span></span>
+5.  <span data-ttu-id="995a7-158">Zadejte všechny další podmínky, které jsou požadovány.</span><span class="sxs-lookup"><span data-stu-id="995a7-158">Enter any additional conditions that are required.</span></span>
+6.  <span data-ttu-id="995a7-159">Chcete-li ověřit, zda jsou zadané podmínky nastaveny správně, postupujte následovně:</span><span class="sxs-lookup"><span data-stu-id="995a7-159">To verify that the conditions that you entered are set correctly, follow these steps:</span></span>
+    1.  <span data-ttu-id="995a7-160">Klepněte na možnost **Test**.</span><span class="sxs-lookup"><span data-stu-id="995a7-160">Click **Test**.</span></span>
+    2.  <span data-ttu-id="995a7-161">Na stránce **Podmínka testovacího workflowu** v oblasti **Ověřit podmínku** vyberte záznam.</span><span class="sxs-lookup"><span data-stu-id="995a7-161">On the **Test workflow condition** page, in the **Validate condition** area, select a record.</span></span>
+    3.  <span data-ttu-id="995a7-162">Klepněte na možnost **Test**.</span><span class="sxs-lookup"><span data-stu-id="995a7-162">Click **Test**.</span></span> <span data-ttu-id="995a7-163">Systém záznam vyhodnotí a určí, zda odpovídá zadaným podmínkám.</span><span class="sxs-lookup"><span data-stu-id="995a7-163">The system evaluates the record to determine whether it meets the conditions that you specified.</span></span> <span data-ttu-id="995a7-164">Například pokud vytváříte workflow nákupního požadavku pro Španělsko, oblast **Ověřit podmínku** na stránce bude obsahovat seznam nákupních žádanek.</span><span class="sxs-lookup"><span data-stu-id="995a7-164">For example, if you're creating a purchase requisition workflow for Spain, the **Validate condition** area of the page shows a list of purchase requisitions.</span></span> <span data-ttu-id="995a7-165">Po klepnutí na možnost **Test** systém vyhodnotí vybraný nákupní požadavek, aby zjistil, zda země či oblast = ES.</span><span class="sxs-lookup"><span data-stu-id="995a7-165">When you click **Test**, the system evaluates the selected purchase requisition to determine whether the country/region is ES.</span></span>
+    4.  <span data-ttu-id="995a7-166">Klikněte na tlačítko **OK** nebo klepnutím na tlačítko **Storno** se vraťte na stránku **Vlastnosti**.</span><span class="sxs-lookup"><span data-stu-id="995a7-166">Click **OK** or **Cancel** to return to the **Properties** page.</span></span>
 
-## <a name="specify-when-notifications-are-sent"></a>Zadejte, kdy se mají odesílat oznámení.
-Když je dokument odeslán ke zpracování, je vytvořena instance workflowu. Uživatelům lze odeslat oznámení v případech, kdy jsou instance workflowu (na základě tohoto workflowu) spuštěny, dokončeny, zrušeny nebo zastaveny z důvodu chyby. Pomocí následujících kroků můžete zadat, kdy mají být odeslána oznámení.
+## <a name="specify-when-notifications-are-sent"></a><span data-ttu-id="995a7-167">Zadejte, kdy se mají odesílat oznámení.</span><span class="sxs-lookup"><span data-stu-id="995a7-167">Specify when notifications are sent</span></span>
+<span data-ttu-id="995a7-168">Když je dokument odeslán ke zpracování, je vytvořena instance workflowu.</span><span class="sxs-lookup"><span data-stu-id="995a7-168">When a document is submitted for processing, a workflow instance is created.</span></span> <span data-ttu-id="995a7-169">Uživatelům lze odeslat oznámení v případech, kdy jsou instance workflowu (na základě tohoto workflowu) spuštěny, dokončeny, zrušeny nebo zastaveny z důvodu chyby.</span><span class="sxs-lookup"><span data-stu-id="995a7-169">You can send notifications to users when workflow instances that are based on the workflow are started, completed, terminated, or stopped because of an error.</span></span> <span data-ttu-id="995a7-170">Pomocí následujících kroků můžete zadat, kdy mají být odeslána oznámení.</span><span class="sxs-lookup"><span data-stu-id="995a7-170">Follow these steps to specify when notifications are sent.</span></span>
 
-1.  V levém podokně klikněte na **Oznámení**.
-2.  Označte pole u každé události, která má spustit oznámení:
-    -   **Zahájeno** – odesílat oznámení při zahájení instance workflowu.
-    -   **Zastaveno** – odesílat oznámení v případě, že je instance workflowu zastavena z důvodu chyby.
-    -   **Dokončeno** – odesílat oznámení při dokončení instance workflowu.
-    -   **Bez možnosti obnovy** – odesílat oznámení v případě, že je instance workflowu zastavena z důvodu neobnovitelné chyby.
-    -   **Ukončeno** – odesílat oznámení při ukončení instance workflowu.
+1.  <span data-ttu-id="995a7-171">V levém podokně klikněte na **Oznámení**.</span><span class="sxs-lookup"><span data-stu-id="995a7-171">In the left pane, click **Notifications**.</span></span>
+2.  <span data-ttu-id="995a7-172">Označte pole u každé události, která má spustit oznámení:</span><span class="sxs-lookup"><span data-stu-id="995a7-172">Select the check box for each event that should trigger notifications:</span></span>
+    -   <span data-ttu-id="995a7-173">**Zahájeno** – odesílat oznámení při zahájení instance workflowu.</span><span class="sxs-lookup"><span data-stu-id="995a7-173">**Started** – Send notifications when a workflow instance is started.</span></span>
+    -   <span data-ttu-id="995a7-174">**Zastaveno** – odesílat oznámení v případě, že je instance workflowu zastavena z důvodu chyby.</span><span class="sxs-lookup"><span data-stu-id="995a7-174">**Stopped** – Send notifications when a workflow instance is stopped because of an error.</span></span>
+    -   <span data-ttu-id="995a7-175">**Dokončeno** – odesílat oznámení při dokončení instance workflowu.</span><span class="sxs-lookup"><span data-stu-id="995a7-175">**Completed** – Send notifications when a workflow instance is completed.</span></span>
+    -   <span data-ttu-id="995a7-176">**Bez možnosti obnovy** – odesílat oznámení v případě, že je instance workflowu zastavena z důvodu neobnovitelné chyby.</span><span class="sxs-lookup"><span data-stu-id="995a7-176">**Unrecoverable** – Send notifications when a workflow instance is stopped because of an unrecoverable error.</span></span>
+    -   <span data-ttu-id="995a7-177">**Ukončeno** – odesílat oznámení při ukončení instance workflowu.</span><span class="sxs-lookup"><span data-stu-id="995a7-177">**Terminated** – Send notifications when a workflow instance is terminated.</span></span>
 
-3.  Vyberte řádek pro událost, kterou jste vybrali v kroku 2.
-4.  Na kartě **Text oznámení** zadejte text oznámení.
-5.  Text můžete přizpůsobit vložením zástupného textu. Zástupný text bude při zobrazení textu uživatelům nahrazen odpovídacími daty. Při vkládání zástupného textu postupujte takto:
-    1.  Klepnutím do pole zadejte, kde se má zástupný text zobrazit.
-    2.  Klikněte na **Vložit zástupný text**.
-    3.  V nově otevřeném seznamu vyberte vkládaný zástupný text.
-    4.  Klepněte na tlačítko **Vložit**.
+3.  <span data-ttu-id="995a7-178">Vyberte řádek pro událost, kterou jste vybrali v kroku 2.</span><span class="sxs-lookup"><span data-stu-id="995a7-178">Select the row for an event that you selected in step 2.</span></span>
+4.  <span data-ttu-id="995a7-179">Na kartě **Text oznámení** zadejte text oznámení.</span><span class="sxs-lookup"><span data-stu-id="995a7-179">On the **Notification text** tab, enter the text of the notification.</span></span>
+5.  <span data-ttu-id="995a7-180">Text můžete přizpůsobit vložením zástupného textu.</span><span class="sxs-lookup"><span data-stu-id="995a7-180">To personalize the text, you can insert placeholders.</span></span> <span data-ttu-id="995a7-181">Zástupný text bude při zobrazení textu uživatelům nahrazen odpovídacími daty.</span><span class="sxs-lookup"><span data-stu-id="995a7-181">Placeholders are replaced with the appropriate data when the text is shown to users.</span></span> <span data-ttu-id="995a7-182">Při vkládání zástupného textu postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="995a7-182">To insert a placeholder, follow these steps:</span></span>
+    1.  <span data-ttu-id="995a7-183">Klepnutím do pole zadejte, kde se má zástupný text zobrazit.</span><span class="sxs-lookup"><span data-stu-id="995a7-183">Click in the field to specify where the placeholder should appear.</span></span>
+    2.  <span data-ttu-id="995a7-184">Klikněte na **Vložit zástupný text**.</span><span class="sxs-lookup"><span data-stu-id="995a7-184">Click **Insert placeholder**.</span></span>
+    3.  <span data-ttu-id="995a7-185">V nově otevřeném seznamu vyberte vkládaný zástupný text.</span><span class="sxs-lookup"><span data-stu-id="995a7-185">In the list that appears, select the placeholder to insert.</span></span>
+    4.  <span data-ttu-id="995a7-186">Klepněte na tlačítko **Vložit**.</span><span class="sxs-lookup"><span data-stu-id="995a7-186">Click **Insert**.</span></span>
 
-6.  Chcete-li přidat překlady textu, postupujte takto:
-    1.  Klikněte na **Překlady**.
-    2.  Na nově otevřené stránce klikněte na **Přidat**.
-    3.  V nově otevřeném seznamu vyberte jazyk, který chcete použít pro zadání textu.
-    4.  V poli **Přeložený text** zadejte text.
-    5.  Text můžete přizpůsobit vložením zástupného textu. Pokyny, jak zadat zástupný text, naleznete v kroku 5.
-    6.  Klepněte na tlačítko **Zavřít**.
+6.  <span data-ttu-id="995a7-187">Chcete-li přidat překlady textu, postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="995a7-187">To add translations of the text, follow these steps:</span></span>
+    1.  <span data-ttu-id="995a7-188">Klikněte na **Překlady**.</span><span class="sxs-lookup"><span data-stu-id="995a7-188">Click **Translations**.</span></span>
+    2.  <span data-ttu-id="995a7-189">Na nově otevřené stránce klikněte na **Přidat**.</span><span class="sxs-lookup"><span data-stu-id="995a7-189">On the page that appears, Click **Add**.</span></span>
+    3.  <span data-ttu-id="995a7-190">V nově otevřeném seznamu vyberte jazyk, který chcete použít pro zadání textu.</span><span class="sxs-lookup"><span data-stu-id="995a7-190">In the list that appears, select the language that you will enter the text in.</span></span>
+    4.  <span data-ttu-id="995a7-191">V poli **Přeložený text** zadejte text.</span><span class="sxs-lookup"><span data-stu-id="995a7-191">In the **Translated text** field, enter the text.</span></span>
+    5.  <span data-ttu-id="995a7-192">Text můžete přizpůsobit vložením zástupného textu.</span><span class="sxs-lookup"><span data-stu-id="995a7-192">To personalize the text, you can insert placeholders.</span></span> <span data-ttu-id="995a7-193">Pokyny, jak zadat zástupný text, naleznete v kroku 5.</span><span class="sxs-lookup"><span data-stu-id="995a7-193">For instructions about how to enter a placeholder, see step 5.</span></span>
+    6.  <span data-ttu-id="995a7-194">Klepněte na tlačítko **Zavřít**.</span><span class="sxs-lookup"><span data-stu-id="995a7-194">Click **Close**.</span></span>
 
-7.  Na kartě **Příjemce** použijte následující možnosti k určení příjemce oznámení.
+7.  <span data-ttu-id="995a7-195">Na kartě **Příjemce** použijte následující možnosti k určení příjemce oznámení.</span><span class="sxs-lookup"><span data-stu-id="995a7-195">On the **Recipient** tab, use the following options to specify who should receive the notifications.</span></span>
     <table>
     <colgroup>
     <col width="33%" />
@@ -126,49 +126,49 @@ Když je dokument odeslán ke zpracování, je vytvořena instance workflowu. U�
     </colgroup>
     <thead>
     <tr class="header">
-    <th>Možnost</th>
-    <th>Oznámení bude odesláno těmto uživatelům</th>
-    <th>Při odesílání oznámení postupujte takto</th>
+    <th><span data-ttu-id="995a7-196">Možnost</span><span class="sxs-lookup"><span data-stu-id="995a7-196">Option</span></span></th>
+    <th><span data-ttu-id="995a7-197">Oznámení bude odesláno těmto uživatelům</span><span class="sxs-lookup"><span data-stu-id="995a7-197">Notifications are sent to these users</span></span></th>
+    <th><span data-ttu-id="995a7-198">Při odesílání oznámení postupujte takto</span><span class="sxs-lookup"><span data-stu-id="995a7-198">To send notifications, follow these steps</span></span></th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td>Účastník</td>
-    <td>Uživatelé, kteří jsou přiřazeni k určité skupině nebo roli</td>
+    <td><span data-ttu-id="995a7-199">Účastník</span><span class="sxs-lookup"><span data-stu-id="995a7-199">Participant</span></span></td>
+    <td><span data-ttu-id="995a7-200">Uživatelé, kteří jsou přiřazeni k určité skupině nebo roli</span><span class="sxs-lookup"><span data-stu-id="995a7-200">Users who are assigned to a specific group or role</span></span></td>
     <td><ol>
-    <li>Na kartě <strong>Příjemce</strong> klepněte na možnost <strong>Účastník</strong>.</li>
-    <li>Na kartě <strong>Založeno na roli</strong> v seznamu <strong>Typ účastníka</strong> vyberte typ skupiny nebo role, které chcete oznámení odeslat.</li>
-    <li>V seznamu <strong>Účastník</strong> vyberte skupinu nebo roli, které chcete oznámení odeslat.</li>
+    <li><span data-ttu-id="995a7-201">Na kartě <strong>Příjemce</strong> klepněte na možnost <strong>Účastník</strong>.</span><span class="sxs-lookup"><span data-stu-id="995a7-201">On the <strong>Recipient</strong> tab, click <strong>Participant</strong>.</span></span></li>
+    <li><span data-ttu-id="995a7-202">Na kartě <strong>Založeno na roli</strong> v seznamu <strong>Typ účastníka</strong> vyberte typ skupiny nebo role, které chcete oznámení odeslat.</span><span class="sxs-lookup"><span data-stu-id="995a7-202">On the <strong>Role based</strong> tab, in the <strong>Type of participant</strong> list, select the type of group or role to send notifications to.</span></span></li>
+    <li><span data-ttu-id="995a7-203">V seznamu <strong>Účastník</strong> vyberte skupinu nebo roli, které chcete oznámení odeslat.</span><span class="sxs-lookup"><span data-stu-id="995a7-203">In the <strong>Participant</strong> list, select the group or role to send notifications to.</span></span></li>
     </ol></td>
     </tr>
     <tr class="even">
-    <td>Uživatel workflowu</td>
-    <td>Uživatelé, kteří jsou účastníci tohoto workflowu</td>
+    <td><span data-ttu-id="995a7-204">Uživatel workflowu</span><span class="sxs-lookup"><span data-stu-id="995a7-204">Workflow user</span></span></td>
+    <td><span data-ttu-id="995a7-205">Uživatelé, kteří jsou účastníci tohoto workflowu</span><span class="sxs-lookup"><span data-stu-id="995a7-205">Users who are participants in this workflow</span></span></td>
     <td><ol>
-    <li>Na kartě <strong>Příjemce</strong> klepněte na možnost <strong>Uživatel workflowu</strong>.</li>
-    <li>Na kartě <strong>Uživatel workflowu</strong> v seznamu <strong>Uživatel workflowu</strong> vyberte účastníka tohoto workflowu.</li>
+    <li><span data-ttu-id="995a7-206">Na kartě <strong>Příjemce</strong> klepněte na možnost <strong>Uživatel workflowu</strong>.</span><span class="sxs-lookup"><span data-stu-id="995a7-206">On the <strong>Recipient</strong> tab, click <strong>Workflow user</strong>.</span></span></li>
+    <li><span data-ttu-id="995a7-207">Na kartě <strong>Uživatel workflowu</strong> v seznamu <strong>Uživatel workflowu</strong> vyberte účastníka tohoto workflowu.</span><span class="sxs-lookup"><span data-stu-id="995a7-207">On the <strong>Workflow user</strong> tab, in the <strong>Workflow user</strong> list, select a participant in this workflow.</span></span></li>
     </ol></td>
     </tr>
     <tr class="odd">
-    <td>Uživatel</td>
-    <td>Konkrétní uživatelé aplikace Finance and Operations</td>
+    <td><span data-ttu-id="995a7-208">Uživatel</span><span class="sxs-lookup"><span data-stu-id="995a7-208">User</span></span></td>
+    <td><span data-ttu-id="995a7-209">Konkrétní uživatelé aplikace Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="995a7-209">Specific Finance and Operations users</span></span></td>
     <td><ol>
-    <li>Na kartě <strong>Příjemce</strong> klepněte na možnost <strong>Uživatel</strong>.</li>
-    <li>Na kartě <strong>Uživatel</strong> obsahuje seznam <strong>Dostupní uživatelé</strong> všechny uživatele aplikace Finance and Operations. Vyberte uživatele, kterým chcete odeslat oznámení, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    <li><span data-ttu-id="995a7-210">Na kartě <strong>Příjemce</strong> klepněte na možnost <strong>Uživatel</strong>.</span><span class="sxs-lookup"><span data-stu-id="995a7-210">On the <strong>Recipient</strong> tab, click <strong>User</strong>.</span></span></li>
+    <li><span data-ttu-id="995a7-211">Na kartě <strong>Uživatel</strong> obsahuje seznam <strong>Dostupní uživatelé</strong> všechny uživatele aplikace Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="995a7-211">On the <strong>User</strong> tab, the <strong>Available users</strong> list includes all Finance and Operations users.</span></span> <span data-ttu-id="995a7-212">Vyberte uživatele, kterým chcete odeslat oznámení, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</span><span class="sxs-lookup"><span data-stu-id="995a7-212">Select the users to send notifications to, and move those users into the <strong>Selected users</strong> list.</span></span></li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
-8.  Zopakujte kroky 3 až 7 pro každou událost, kterou jste vybrali v kroku 2.
+8.  <span data-ttu-id="995a7-213">Zopakujte kroky 3 až 7 pro každou událost, kterou jste vybrali v kroku 2.</span><span class="sxs-lookup"><span data-stu-id="995a7-213">Repeat steps 3 through 7 for each event that you selected in step 2.</span></span>
 
-## <a name="enter-comments-about-the-changes-that-you-made-to-the-workflow"></a>Zadejte komentáře ke změnám provedeným v daném workflowu
-Chcete-li zadat komentáře ke změnám provedeným u tohoto workflowu, proveďte následující kroky.
+## <a name="enter-comments-about-the-changes-that-you-made-to-the-workflow"></a><span data-ttu-id="995a7-214">Zadejte komentáře ke změnám provedeným v daném workflowu</span><span class="sxs-lookup"><span data-stu-id="995a7-214">Enter comments about the changes that you made to the workflow</span></span>
+<span data-ttu-id="995a7-215">Chcete-li zadat komentáře ke změnám provedeným u tohoto workflowu, proveďte následující kroky.</span><span class="sxs-lookup"><span data-stu-id="995a7-215">To enter comments about the changes that you made to the workflow, follow these steps.</span></span>
 
-1.  V levém podokně klikněte na **Poznámky**.
-2.  V poli **Zadat komentáře k workflowu** zadejte své poznámky.
-3.  Zkontrolujte své komentáře. Po přidání komentáře je již nelze upravit.
-4.  Kliknutím na **Přidat** přidáte komentáře do oblasti **Historie poznámek**.
+1.  <span data-ttu-id="995a7-216">V levém podokně klikněte na **Poznámky**.</span><span class="sxs-lookup"><span data-stu-id="995a7-216">In the left pane, click **Notes**.</span></span>
+2.  <span data-ttu-id="995a7-217">V poli **Zadat komentáře k workflowu** zadejte své poznámky.</span><span class="sxs-lookup"><span data-stu-id="995a7-217">In the **Enter comments about the workflow** field, enter your comments.</span></span>
+3.  <span data-ttu-id="995a7-218">Zkontrolujte své komentáře.</span><span class="sxs-lookup"><span data-stu-id="995a7-218">Review your comments.</span></span> <span data-ttu-id="995a7-219">Po přidání komentáře je již nelze upravit.</span><span class="sxs-lookup"><span data-stu-id="995a7-219">After you add comments, you can't modify them.</span></span>
+4.  <span data-ttu-id="995a7-220">Kliknutím na **Přidat** přidáte komentáře do oblasti **Historie poznámek**.</span><span class="sxs-lookup"><span data-stu-id="995a7-220">Click **Add** to add your comments to the **Comment history** area.</span></span>
 
 
 

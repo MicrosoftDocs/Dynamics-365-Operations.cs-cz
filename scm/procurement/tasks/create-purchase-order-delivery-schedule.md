@@ -16,63 +16,63 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 93bd832b4bbb91e6bd0288042098383eb5f4488d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1e4a0204d74c8966cd90b52ae13c88e222ebc3ef
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Vytvoření nákupní objednávky s plánem dodávek
+# <a name="create-a-purchase-order-with-a-delivery-schedule"></a><span data-ttu-id="88948-103">Vytvoření nákupní objednávky s plánem dodávek</span><span class="sxs-lookup"><span data-stu-id="88948-103">Create a purchase order with a delivery schedule</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup ukazuje, jak vytvořit plán dodávek pro nákupní objednávku. Plán dodávek se používá, pokud množství z objednávky nebo deníku má být dodáno v podobě vícenásobné expedice. Příklad v této příručce lze použít v rámci ukázkových dat společnosti USMF. Tento postup by obvykle prováděl nákupčí.
+<span data-ttu-id="88948-104">Tento postup ukazuje, jak vytvořit plán dodávek pro nákupní objednávku.</span><span class="sxs-lookup"><span data-stu-id="88948-104">This procedure demonstrates how to create a delivery schedule for a purchase order.</span></span> <span data-ttu-id="88948-105">Plán dodávek se používá, pokud množství z objednávky nebo deníku má být dodáno v podobě vícenásobné expedice.</span><span class="sxs-lookup"><span data-stu-id="88948-105">A delivery schedule is used when a quantity on an order or a journal is requested to be delivered in multiple shipments.</span></span> <span data-ttu-id="88948-106">Příklad v této příručce lze použít v rámci ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="88948-106">The example shown in this guide can be used in the USMF demo data company.</span></span> <span data-ttu-id="88948-107">Tento postup by obvykle prováděl nákupčí.</span><span class="sxs-lookup"><span data-stu-id="88948-107">This procedure would typically be done by a purchasing agent.</span></span>
 
 
-## <a name="create-a-delivery-schedule"></a>Vytvoření plánu dodávek
-1. Přejděte do nabídky Zásobování a zdroje > Nákupní objednávky > Všechny nákupní objednávky.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu US-101 do pole Účet dodavatele.
-4. Klikněte na tlačítko OK.
-5. V poli Číslo zboží zadejte 'M0001'.
-6. Zadejte číslo 10 do pole Množství.
-7. Klikněte na Řádek nákupní objednávky.
-8. Klikněte na položku Plán dodávek.
-    * Stránka Plán dodávek je místo, kde můžete zadat počet dodávek, ve kterých budou dodány celková množství řádku objednávky od dodavatele.  
-    * Ve výchozím stavu systém zkopíruje celkové množství a další podrobnosti o původním nákupním řádku na první řádek plánu dodávek. V tomto příkladu vytvoříme plán na dvě dodávky s posunem data druhé dodávky o týden od první.  
-9. V poli Množství upravte množství na 4.
-10. Klikněte na položku Nová.
-11. V poli Množství zadejte zbývající množství 6.
-    * V poli Datum dodání vyberte datum, které je týden po datu z prvního řádku dodávky.  
-    * Je možné sledovat celkové množství, která je přiděleno na řádky plánu dodávek tím, že si prohlédnete pole Součet a Zbývající. Pokud je zbývající množství nulové, bylo do plánu přiděleno celé množství z původního řádku.  
-12. Rozbalte část Převod nákladů.
-    * Možnosti zde umožňují řídit způsob, jakým se náklady distribuují na řádcích plánu dodávek. Pokud vyberete Kopírovat hrubé částky, částka nákladů v původním řádku objednávky se zkopíruje do každého dodacího řádku. Možnost Přidělit řádkům dodávek rozděluje náklady z původního řádku podle množství na každém řádku dodávky.  
-13. Sbalte část Převod nákladů.
-14. Klikněte na tlačítko OK.
-    * Plán dodávek nyní byl použit v objednávce.  
-    * Původní řádek objednávky, nově označovaný jako obchodní řádek, byl předveden na řádek objednávky s více dodávkami. Je označen jedinečnou ikonou a funguje jako záhlaví pro řádky dodávky.  
-15. Vyberte druhý řádek objednávky, který představuje první ze dvou řádků dodávky.
-    * Dva nové řádky označované jako řádky dodávky tvoří jeden plán dodávek. Objednávka bude zpracována s ohledem na tyto řádky, nikoli na původní řádek. Pokud jsou vytištěny dokumenty, jako například potvrzení, deníky příjemek produktu nebo faktury, budou zobrazeny pouze řádky dodávky.  
+## <a name="create-a-delivery-schedule"></a><span data-ttu-id="88948-108">Vytvoření plánu dodávek</span><span class="sxs-lookup"><span data-stu-id="88948-108">Create a delivery schedule</span></span>
+1. <span data-ttu-id="88948-109">Přejděte do nabídky Zásobování a zdroje > Nákupní objednávky > Všechny nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="88948-109">Go to Procurement and sourcing > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="88948-110">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="88948-110">Click New.</span></span>
+3. <span data-ttu-id="88948-111">Zadejte hodnotu US-101 do pole Účet dodavatele.</span><span class="sxs-lookup"><span data-stu-id="88948-111">In the Vendor account field, enter US-101.</span></span>
+4. <span data-ttu-id="88948-112">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="88948-112">Click OK.</span></span>
+5. <span data-ttu-id="88948-113">V poli Číslo zboží zadejte 'M0001'.</span><span class="sxs-lookup"><span data-stu-id="88948-113">In the Item number field, enter M0001.</span></span>
+6. <span data-ttu-id="88948-114">Zadejte číslo 10 do pole Množství.</span><span class="sxs-lookup"><span data-stu-id="88948-114">In the Quantity field, enter 10.</span></span>
+7. <span data-ttu-id="88948-115">Klikněte na Řádek nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="88948-115">Click Purchase order line.</span></span>
+8. <span data-ttu-id="88948-116">Klikněte na položku Plán dodávek.</span><span class="sxs-lookup"><span data-stu-id="88948-116">Click Delivery schedule.</span></span>
+    * <span data-ttu-id="88948-117">Stránka Plán dodávek je místo, kde můžete zadat počet dodávek, ve kterých budou dodány celková množství řádku objednávky od dodavatele.</span><span class="sxs-lookup"><span data-stu-id="88948-117">The Delivery schedule page allows you to specify the number of shipments in which the total quantity of the order line will be delivered from the vendor.</span></span>  
+    * <span data-ttu-id="88948-118">Ve výchozím stavu systém zkopíruje celkové množství a další podrobnosti o původním nákupním řádku na první řádek plánu dodávek.</span><span class="sxs-lookup"><span data-stu-id="88948-118">By default, the system copies the total quantity and other delivery details of the original purchase line into the first delivery schedule line.</span></span> <span data-ttu-id="88948-119">V tomto příkladu vytvoříme plán na dvě dodávky s posunem data druhé dodávky o týden od první.</span><span class="sxs-lookup"><span data-stu-id="88948-119">In this example, we’ll create a schedule for two shipments, with the second shipment’s date offset by a week from the first shipment.</span></span>  
+9. <span data-ttu-id="88948-120">V poli Množství upravte množství na 4.</span><span class="sxs-lookup"><span data-stu-id="88948-120">In the Quantity field, change the quantity to 4.</span></span>
+10. <span data-ttu-id="88948-121">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="88948-121">Click New.</span></span>
+11. <span data-ttu-id="88948-122">V poli Množství zadejte zbývající množství 6.</span><span class="sxs-lookup"><span data-stu-id="88948-122">In the Quantity field, enter 6 as the remaining quantity.</span></span>
+    * <span data-ttu-id="88948-123">V poli Datum dodání vyberte datum, které je týden po datu z prvního řádku dodávky.</span><span class="sxs-lookup"><span data-stu-id="88948-123">In the delivery date field, select a date that’s one week after the date on the first delivery line.</span></span>  
+    * <span data-ttu-id="88948-124">Je možné sledovat celkové množství, která je přiděleno na řádky plánu dodávek tím, že si prohlédnete pole Součet a Zbývající.</span><span class="sxs-lookup"><span data-stu-id="88948-124">You can keep track of the total quantity that’s allocated to the delivery schedule lines by looking at the Total and Remaining fields.</span></span> <span data-ttu-id="88948-125">Pokud je zbývající množství nulové, bylo do plánu přiděleno celé množství z původního řádku.</span><span class="sxs-lookup"><span data-stu-id="88948-125">When the remaining quantity is zero, the full quantity from the original line has been allocated to the schedule.</span></span>  
+12. <span data-ttu-id="88948-126">Rozbalte část Převod nákladů.</span><span class="sxs-lookup"><span data-stu-id="88948-126">Expand the Charges conversion section.</span></span>
+    * <span data-ttu-id="88948-127">Možnosti zde umožňují řídit způsob, jakým se náklady distribuují na řádcích plánu dodávek.</span><span class="sxs-lookup"><span data-stu-id="88948-127">The options here allow you to control how you want charges to be distributed across the delivery schedule lines.</span></span> <span data-ttu-id="88948-128">Pokud vyberete Kopírovat hrubé částky, částka nákladů v původním řádku objednávky se zkopíruje do každého dodacího řádku.</span><span class="sxs-lookup"><span data-stu-id="88948-128">If you select Copy gross amounts, the charge amount on the original order line is copied to each delivery line.</span></span> <span data-ttu-id="88948-129">Možnost Přidělit řádkům dodávek rozděluje náklady z původního řádku podle množství na každém řádku dodávky.</span><span class="sxs-lookup"><span data-stu-id="88948-129">The Allocate to delivery lines option divides the original line charge according to the quantity on each delivery line.</span></span>  
+13. <span data-ttu-id="88948-130">Sbalte část Převod nákladů.</span><span class="sxs-lookup"><span data-stu-id="88948-130">Collapse the Charges conversion section.</span></span>
+14. <span data-ttu-id="88948-131">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="88948-131">Click OK.</span></span>
+    * <span data-ttu-id="88948-132">Plán dodávek nyní byl použit v objednávce.</span><span class="sxs-lookup"><span data-stu-id="88948-132">The delivery schedule has now been applied to the order.</span></span>  
+    * <span data-ttu-id="88948-133">Původní řádek objednávky, nově označovaný jako obchodní řádek, byl předveden na řádek objednávky s více dodávkami.</span><span class="sxs-lookup"><span data-stu-id="88948-133">The original order line, now referred to as a Commercial line, has been converted to an Order line with multiple deliveries.</span></span> <span data-ttu-id="88948-134">Je označen jedinečnou ikonou a funguje jako záhlaví pro řádky dodávky.</span><span class="sxs-lookup"><span data-stu-id="88948-134">It is marked with a distinct icon and acts as a header for the delivery lines.</span></span>  
+15. <span data-ttu-id="88948-135">Vyberte druhý řádek objednávky, který představuje první ze dvou řádků dodávky.</span><span class="sxs-lookup"><span data-stu-id="88948-135">Select the second order line, which is the first of the two delivery lines.</span></span>
+    * <span data-ttu-id="88948-136">Dva nové řádky označované jako řádky dodávky tvoří jeden plán dodávek.</span><span class="sxs-lookup"><span data-stu-id="88948-136">The two new lines, referred to as Delivery lines, make up one delivery schedule.</span></span> <span data-ttu-id="88948-137">Objednávka bude zpracována s ohledem na tyto řádky, nikoli na původní řádek.</span><span class="sxs-lookup"><span data-stu-id="88948-137">The order will be processed against these lines and not the original line.</span></span> <span data-ttu-id="88948-138">Pokud jsou vytištěny dokumenty, jako například potvrzení, deníky příjemek produktu nebo faktury, budou zobrazeny pouze řádky dodávky.</span><span class="sxs-lookup"><span data-stu-id="88948-138">If documents such as confirmations, product receipt journals, or invoices are printed, only the delivery lines are shown.</span></span>  
 
-## <a name="change-the-delivery-schedule"></a>Upravte plán dodávek
-    * Množství na dodacích řádcích lze změnit. Pokud to provedete, aktualizuje se automaticky obchodní řádek o celkové množství z řádků dodávky.  
-1. Do pole Množství na prvním řádku dodávky změňte množství ze 4 na 5.
-2. Vyberte první řádek objednávky (obchodní řádek).
-    * Množství na obchodním řádku bylo změněno na 11.  
+## <a name="change-the-delivery-schedule"></a><span data-ttu-id="88948-139">Upravte plán dodávek</span><span class="sxs-lookup"><span data-stu-id="88948-139">Change the delivery schedule</span></span>
+    * <span data-ttu-id="88948-140">Množství na dodacích řádcích lze změnit.</span><span class="sxs-lookup"><span data-stu-id="88948-140">You can change the quantity on delivery lines.</span></span> <span data-ttu-id="88948-141">Pokud to provedete, aktualizuje se automaticky obchodní řádek o celkové množství z řádků dodávky.</span><span class="sxs-lookup"><span data-stu-id="88948-141">If you do this, the commercial line is automatically updated to the total quantity in the delivery lines.</span></span>  
+1. <span data-ttu-id="88948-142">Do pole Množství na prvním řádku dodávky změňte množství ze 4 na 5.</span><span class="sxs-lookup"><span data-stu-id="88948-142">In the Quantity field of the first delivery line, change the quantity from 4 to 5.</span></span>
+2. <span data-ttu-id="88948-143">Vyberte první řádek objednávky (obchodní řádek).</span><span class="sxs-lookup"><span data-stu-id="88948-143">Select the first order line (the commercial line).</span></span>
+    * <span data-ttu-id="88948-144">Množství na obchodním řádku bylo změněno na 11.</span><span class="sxs-lookup"><span data-stu-id="88948-144">The quantity on the commercial line has been changed to 11.</span></span>  
 
-## <a name="process-product-receipt-using-delivery-schedules"></a>Zpracování příjmu produktu pomocí plánů dodávek
-    * Nákupní objednávka musí být potvrzena, než bude možné zpracovat příjemku produktu. V tomto případě je příjem zaznamenán přímo v nákupní objednávce. Příjem může také byly zaznamenány při příjmu zboží ve skladu.  
-1. V podokně akcí klikněte na položku Nákup.
-2. Klikněte na tlačítko Potvrdit.
-3. V podokně akcí klikněte na položku Přijmout.
-4. Klikněte na položku Příjemka produktu.
-5. Zadejte libovolnou hodnotu do pole Příjemka produktu.
-    * Toto pole slouží k zadání reference, která bude použita jako doklad pro deník příjemek produktů.  
-    * V poli Množství vyberte Objednané množství. Tato možnost znamená, že se během příjmu zpracuje množství, se kterým byly řádky objednávky vytvořeny.  
-    * Ujistěte se, že pole Vytisknout příjemku produktu je nastaveno na hodnotu Ne. V tomto příkladu není třeba provádět tisk.  
-6. Rozbalte sekci Řádky.
-    * Všimněte si, že je vytvořena příjemka produktu pro dva řádky dodávky, ale ne pro původní řádek objednávky. Pokud byl zaznamenán příjem ve skladu, byl také zaznamenán na řádcích plánu dodávky.  
-7. Sbalte oddíl Řádky.
-8. Klepněte na možnost OK a zaznamenejte příjem.
+## <a name="process-product-receipt-using-delivery-schedules"></a><span data-ttu-id="88948-145">Zpracování příjmu produktu pomocí plánů dodávek</span><span class="sxs-lookup"><span data-stu-id="88948-145">Process product receipt using delivery schedules</span></span>
+    * <span data-ttu-id="88948-146">Nákupní objednávka musí být potvrzena, než bude možné zpracovat příjemku produktu.</span><span class="sxs-lookup"><span data-stu-id="88948-146">The purchase order must be confirmed before product receipt can be processed.</span></span> <span data-ttu-id="88948-147">V tomto případě je příjem zaznamenán přímo v nákupní objednávce.</span><span class="sxs-lookup"><span data-stu-id="88948-147">In this example, receipt is recorded directly on the purchase order.</span></span> <span data-ttu-id="88948-148">Příjem může také byly zaznamenány při příjmu zboží ve skladu.</span><span class="sxs-lookup"><span data-stu-id="88948-148">Receipt could also have been recorded when the goods arrived in the warehouse.</span></span>  
+1. <span data-ttu-id="88948-149">V podokně akcí klikněte na položku Nákup.</span><span class="sxs-lookup"><span data-stu-id="88948-149">On the Action Pane, click Purchase.</span></span>
+2. <span data-ttu-id="88948-150">Klikněte na tlačítko Potvrdit.</span><span class="sxs-lookup"><span data-stu-id="88948-150">Click Confirm.</span></span>
+3. <span data-ttu-id="88948-151">V podokně akcí klikněte na položku Přijmout.</span><span class="sxs-lookup"><span data-stu-id="88948-151">On the Action Pane, click Receive.</span></span>
+4. <span data-ttu-id="88948-152">Klikněte na položku Příjemka produktu.</span><span class="sxs-lookup"><span data-stu-id="88948-152">Click Product receipt.</span></span>
+5. <span data-ttu-id="88948-153">Zadejte libovolnou hodnotu do pole Příjemka produktu.</span><span class="sxs-lookup"><span data-stu-id="88948-153">In the Product receipt field, type any value.</span></span>
+    * <span data-ttu-id="88948-154">Toto pole slouží k zadání reference, která bude použita jako doklad pro deník příjemek produktů.</span><span class="sxs-lookup"><span data-stu-id="88948-154">This field is used to enter a reference that will be used as voucher for the product receipt journal.</span></span>  
+    * <span data-ttu-id="88948-155">V poli Množství vyberte Objednané množství.</span><span class="sxs-lookup"><span data-stu-id="88948-155">In the Quantity field, select ‘Ordered quantity’.</span></span> <span data-ttu-id="88948-156">Tato možnost znamená, že se během příjmu zpracuje množství, se kterým byly řádky objednávky vytvořeny.</span><span class="sxs-lookup"><span data-stu-id="88948-156">This option means that receipt will process for the quantity that the order lines were created with.</span></span>  
+    * <span data-ttu-id="88948-157">Ujistěte se, že pole Vytisknout příjemku produktu je nastaveno na hodnotu Ne.</span><span class="sxs-lookup"><span data-stu-id="88948-157">Make sure that the Print product receipt field is set to No.</span></span> <span data-ttu-id="88948-158">V tomto příkladu není třeba provádět tisk.</span><span class="sxs-lookup"><span data-stu-id="88948-158">Printing isn’t needed in this example.</span></span>  
+6. <span data-ttu-id="88948-159">Rozbalte sekci Řádky.</span><span class="sxs-lookup"><span data-stu-id="88948-159">Expand the Lines section.</span></span>
+    * <span data-ttu-id="88948-160">Všimněte si, že je vytvořena příjemka produktu pro dva řádky dodávky, ale ne pro původní řádek objednávky.</span><span class="sxs-lookup"><span data-stu-id="88948-160">Notice how the product receipt is created for the two delivery lines and not the original order line.</span></span> <span data-ttu-id="88948-161">Pokud byl zaznamenán příjem ve skladu, byl také zaznamenán na řádcích plánu dodávky.</span><span class="sxs-lookup"><span data-stu-id="88948-161">If receipt had been recorded in the warehouse, it would also have been recorded on the delivery schedule lines.</span></span>  
+7. <span data-ttu-id="88948-162">Sbalte oddíl Řádky.</span><span class="sxs-lookup"><span data-stu-id="88948-162">Collapse the Lines section.</span></span>
+8. <span data-ttu-id="88948-163">Klepněte na možnost OK a zaznamenejte příjem.</span><span class="sxs-lookup"><span data-stu-id="88948-163">Click OK to post the receipt.</span></span>
 
 

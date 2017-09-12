@@ -16,50 +16,50 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: f9b82db94d98fb19c67888a1f8a35b2fe62c98fe
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 7cc024caa54db6629a1e573df295fe8333996647
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-purchase-order-governed-by-budget"></a>Vytvoření nákupní objednávky řízené rozpočtem
+# <a name="create-a-purchase-order-governed-by-budget"></a><span data-ttu-id="f736a-103">Vytvoření nákupní objednávky řízené rozpočtem</span><span class="sxs-lookup"><span data-stu-id="f736a-103">Create a purchase order governed by budget</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Pomocí tohoto postupu lze vytvořit nákupní objednávku, u které proběhne kontrola dostupného rozpočtu. Tento záznam používá v ukázkových datech společnost USMF.
+<span data-ttu-id="f736a-104">Pomocí tohoto postupu lze vytvořit nákupní objednávku, u které proběhne kontrola dostupného rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="f736a-104">Use this procedure to create a purchase order that is checked for available budget.</span></span> <span data-ttu-id="f736a-105">Tento záznam používá v ukázkových datech společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="f736a-105">This recording uses the USMF demo data company.</span></span>
 
 
-## <a name="review-the-budget-control-configuration"></a>Zkontrolujte konfiguraci kontroly rozpočtu
-1. Přejděte na Rozpočtování > Nastavení > Kontrola rozpočtu > Konfigurace kontroly rozpočtu.
-2. Klikněte na kartu Dostupné rozpočtové prostředky.
-3. Klepněte na kartu Dokumenty a deníky.
-4. Klepněte na kartu Definovat pravidla kontroly rozpočtu.
-5. Klepněte na kartu Definovat rozpočtové skupiny.
-6. Zavřete stránku.
+## <a name="review-the-budget-control-configuration"></a><span data-ttu-id="f736a-106">Zkontrolujte konfiguraci kontroly rozpočtu</span><span class="sxs-lookup"><span data-stu-id="f736a-106">Review the budget control configuration</span></span>
+1. <span data-ttu-id="f736a-107">Přejděte na Rozpočtování > Nastavení > Kontrola rozpočtu > Konfigurace kontroly rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="f736a-107">Go to Budgeting > Setup > Budget control > Budget control configuration.</span></span>
+2. <span data-ttu-id="f736a-108">Klikněte na kartu Dostupné rozpočtové prostředky.</span><span class="sxs-lookup"><span data-stu-id="f736a-108">Click the Budget funds available tab.</span></span>
+3. <span data-ttu-id="f736a-109">Klepněte na kartu Dokumenty a deníky.</span><span class="sxs-lookup"><span data-stu-id="f736a-109">Click the Documents and journals tab.</span></span>
+4. <span data-ttu-id="f736a-110">Klepněte na kartu Definovat pravidla kontroly rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="f736a-110">Click the Define budget control rules tab.</span></span>
+5. <span data-ttu-id="f736a-111">Klepněte na kartu Definovat rozpočtové skupiny.</span><span class="sxs-lookup"><span data-stu-id="f736a-111">Click the Define budget groups tab.</span></span>
+6. <span data-ttu-id="f736a-112">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="f736a-112">Close the page.</span></span>
 
-## <a name="create-the-purchase-order-header"></a>Vytvoření záhlaví nákupní objednávky
-1. Přejděte do nabídky Zásobování a zdroje > Nákupní objednávky > Všechny nákupní objednávky.
-2. Klikněte na položku Nová.
-3. V poli Účet dodavatele zadejte nebo vyberte hodnotu.
-4. Rozbalte sekci Obecné.
-5. Do pole Datum účtování nastavte datum 2016-01-01.
-6. Klikněte na tlačítko OK.
+## <a name="create-the-purchase-order-header"></a><span data-ttu-id="f736a-113">Vytvoření záhlaví nákupní objednávky</span><span class="sxs-lookup"><span data-stu-id="f736a-113">Create the purchase order header</span></span>
+1. <span data-ttu-id="f736a-114">Přejděte do nabídky Zásobování a zdroje > Nákupní objednávky > Všechny nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="f736a-114">Go to Procurement and sourcing > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="f736a-115">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="f736a-115">Click New.</span></span>
+3. <span data-ttu-id="f736a-116">V poli Účet dodavatele zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f736a-116">In the Vendor account field, enter or select a value.</span></span>
+4. <span data-ttu-id="f736a-117">Rozbalte sekci Obecné.</span><span class="sxs-lookup"><span data-stu-id="f736a-117">Expand the General section.</span></span>
+5. <span data-ttu-id="f736a-118">Do pole Datum účtování nastavte datum 2016-01-01.</span><span class="sxs-lookup"><span data-stu-id="f736a-118">In the Accounting date field, set the date to '2016-01-01'.</span></span>
+6. <span data-ttu-id="f736a-119">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="f736a-119">Click OK.</span></span>
 
-## <a name="add-a-purchase-order-line"></a>Přidání řádku nákupní objednávky
-1. V Kategorie zásobování zadejte nebo vyberte hodnotu.
-2. Nastavte množství na „2“.
-3. V poli Jednotka zadejte nebo vyberte hodnotu.
-4. Nastavte jednotkovou cenu na 10000.
-5. Klepněte na tlačítko Finanční údaje.
-6. Klikněte na možnost Distribuovat částky.
-7. Do pole Účet hlavní knihy zadejte hodnotu 601300-001-023--.
-8. Zavřete stránku.
+## <a name="add-a-purchase-order-line"></a><span data-ttu-id="f736a-120">Přidání řádku nákupní objednávky</span><span class="sxs-lookup"><span data-stu-id="f736a-120">Add a purchase order line</span></span>
+1. <span data-ttu-id="f736a-121">V Kategorie zásobování zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f736a-121">In the Procurement category field, enter or select a value.</span></span>
+2. <span data-ttu-id="f736a-122">Nastavte množství na „2“.</span><span class="sxs-lookup"><span data-stu-id="f736a-122">Set Quantity to '2'.</span></span>
+3. <span data-ttu-id="f736a-123">V poli Jednotka zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f736a-123">In the Unit field, enter or select a value.</span></span>
+4. <span data-ttu-id="f736a-124">Nastavte jednotkovou cenu na 10000.</span><span class="sxs-lookup"><span data-stu-id="f736a-124">Set Unit price to '10000'.</span></span>
+5. <span data-ttu-id="f736a-125">Klepněte na tlačítko Finanční údaje.</span><span class="sxs-lookup"><span data-stu-id="f736a-125">Click Financials.</span></span>
+6. <span data-ttu-id="f736a-126">Klikněte na možnost Distribuovat částky.</span><span class="sxs-lookup"><span data-stu-id="f736a-126">Click Distribute amounts.</span></span>
+7. <span data-ttu-id="f736a-127">Do pole Účet hlavní knihy zadejte hodnotu 601300-001-023--.</span><span class="sxs-lookup"><span data-stu-id="f736a-127">In the Ledger account field, specify the value '601300-001-023--'.</span></span>
+8. <span data-ttu-id="f736a-128">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="f736a-128">Close the page.</span></span>
 
-## <a name="perform-budget-checking"></a>Provést kontrolu rozpočtu
-1. Klepněte na tlačítko Finanční údaje.
-2. Klikněte na Provést kontrolu rozpočtu.
-3. Klepněte na tlačítko Finanční údaje.
-4. Klikněte na Zobrazit chyby a varování kontroly rozpočtu.
-5. Klikněte na tlačítko Zavřít.
+## <a name="perform-budget-checking"></a><span data-ttu-id="f736a-129">Provést kontrolu rozpočtu</span><span class="sxs-lookup"><span data-stu-id="f736a-129">Perform budget checking</span></span>
+1. <span data-ttu-id="f736a-130">Klepněte na tlačítko Finanční údaje.</span><span class="sxs-lookup"><span data-stu-id="f736a-130">Click Financials.</span></span>
+2. <span data-ttu-id="f736a-131">Klikněte na Provést kontrolu rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="f736a-131">Click Perform budget checking.</span></span>
+3. <span data-ttu-id="f736a-132">Klepněte na tlačítko Finanční údaje.</span><span class="sxs-lookup"><span data-stu-id="f736a-132">Click Financials.</span></span>
+4. <span data-ttu-id="f736a-133">Klikněte na Zobrazit chyby a varování kontroly rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="f736a-133">Click Budget check errors or warnings.</span></span>
+5. <span data-ttu-id="f736a-134">Klikněte na tlačítko Zavřít.</span><span class="sxs-lookup"><span data-stu-id="f736a-134">Click Close.</span></span>
 
 

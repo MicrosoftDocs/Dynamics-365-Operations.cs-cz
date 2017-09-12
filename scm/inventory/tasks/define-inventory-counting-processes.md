@@ -1,4 +1,4 @@
---- 
+---
 title: "Definování procesů inventur zásob"
 description: "Tento postup vás provede konfigurací základního inventurního procesu vytvořením inventurní skupiny a deníku inventur."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,72 +17,71 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 62c60faafd9ad96ce636a08102bc8652f9fff870
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: c14c846c55a3d821945160835817cd4f467deda9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="define-inventory-counting-processes"></a>Definování procesů inventur zásob
+# <a name="define-inventory-counting-processes"></a><span data-ttu-id="31599-103">Definování procesů inventur zásob</span><span class="sxs-lookup"><span data-stu-id="31599-103">Define inventory counting processes</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup vás provede konfigurací základního inventurního procesu vytvořením inventurní skupiny a deníku inventur. Je zde také uveden postup povolení zásady inventury na úrovni skladu a položky. Tyto úkoly obvykle provádějí vedoucí skladu. Jedná se o předpoklad, aby bylo možné použít stávající uvolněné produkty a sklady. Používáte-li ukázková data společnosti, můžete tento postup provést se společností USMF a s každou naskladněnou položkou.
+<span data-ttu-id="31599-104">Tento postup vás provede konfigurací základního inventurního procesu vytvořením inventurní skupiny a deníku inventur.</span><span class="sxs-lookup"><span data-stu-id="31599-104">This procedure walks you through the configuration of basic inventory counting processes by creating a counting group and a counting journal.</span></span> <span data-ttu-id="31599-105">Je zde také uveden postup povolení zásady inventury na úrovni skladu a položky.</span><span class="sxs-lookup"><span data-stu-id="31599-105">It also shows you how to enable counting policies on a warehouse and item level.</span></span> <span data-ttu-id="31599-106">Tyto úkoly obvykle provádějí vedoucí skladu.</span><span class="sxs-lookup"><span data-stu-id="31599-106">These tasks would typically be carried out by a warehouse supervisor.</span></span> <span data-ttu-id="31599-107">Jedná se o předpoklad, aby bylo možné použít stávající uvolněné produkty a sklady.</span><span class="sxs-lookup"><span data-stu-id="31599-107">It is a prerequisite to have some existing released products and warehouses.</span></span> <span data-ttu-id="31599-108">Používáte-li ukázková data společnosti, můžete tento postup provést se společností USMF a s každou naskladněnou položkou.</span><span class="sxs-lookup"><span data-stu-id="31599-108">If you're using a demo data company, you can run this procedure in the USMF company with any stocked item.</span></span>
 
 
-## <a name="create-a-counting-group"></a>Vytvoření inventurní skupiny
-1. Přejděte do možnosti Řízení zásob > Nastavení > Sklady > Inventurní skupiny.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Inventurní skupina.
-4. Zadejte hodnotu do pole Název.
-5. Vyberte možnost v poli Kód inventur.
-    * Ručně - Zahrne řádky pokaždé, když spustíte úkol. Jinak řečeno, rozhodujete o intervalu načítání pro skupinu načítání.  Období - Zahrne řádky pro období v deníku načítání po vypršení intervalu období.   Nula na skladě - Pokud množství na skladě dosáhne hodnoty nula (0), budou se řádky generovat v deníku načítání během spuštění úkolu. Pokud po načtení dosáhne hodnota množství na skladě nuly, budou se řádky generovat při následujícím spuštění načítání.   Minimum - Vloží řádky do deníku načítání, pokud je množství na skladě rovno nebo menší než minimální stanovené množství.  
-    * Volitelně: Pokud bylo v poli Kód inventur zvoleno období, je třeba do tohoto pole zadat časový interval období inventury. Jednotkou pro intervaly jsou dny.  
-    * Pokud spustíte úlohu pro vytvoření nových řádků v deníku inventur, nové řádky se vytvoří v intervalu zadaném pro toto pole bez ohledu na četnost spouštění stejné úlohy. Pokud období inventury je nastaveno na 7 a řádky deníku byly naposled generovány pro inventuru 1. ledna a jiná úloha je spuštěna 5. ledna, ještě neuplynulo sedm dní a tedy v deníku pro tento interval období nebudou generovány žádné řádky. Pokud se s úkolem opět začne 8. ledna, budou řádky v deníku inventury generovány za toto období, protože již uplynulo 7 dní.  
-6. Klikněte na položku Uložit.
+## <a name="create-a-counting-group"></a><span data-ttu-id="31599-109">Vytvoření inventurní skupiny</span><span class="sxs-lookup"><span data-stu-id="31599-109">Create a counting group</span></span>
+1. <span data-ttu-id="31599-110">Přejděte do možnosti Řízení zásob > Nastavení > Sklady > Inventurní skupiny.</span><span class="sxs-lookup"><span data-stu-id="31599-110">Go to Inventory management > Setup > Inventory > Counting groups.</span></span>
+2. <span data-ttu-id="31599-111">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="31599-111">Click New.</span></span>
+3. <span data-ttu-id="31599-112">Zadejte hodnotu do pole Inventurní skupina.</span><span class="sxs-lookup"><span data-stu-id="31599-112">In the Counting group field, type a value.</span></span>
+4. <span data-ttu-id="31599-113">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="31599-113">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="31599-114">Vyberte možnost v poli Kód inventur.</span><span class="sxs-lookup"><span data-stu-id="31599-114">In the Counting code field, select an option.</span></span>
+    * <span data-ttu-id="31599-115">Ručně - Zahrne řádky pokaždé, když spustíte úkol.</span><span class="sxs-lookup"><span data-stu-id="31599-115">Manual – Includes lines every time you run the job.</span></span> <span data-ttu-id="31599-116">Jinak řečeno, rozhodujete o intervalu načítání pro skupinu načítání.</span><span class="sxs-lookup"><span data-stu-id="31599-116">In other words, you decide the counting interval for the counting group.</span></span>  <span data-ttu-id="31599-117">Období - Zahrne řádky pro období v deníku načítání po vypršení intervalu období.</span><span class="sxs-lookup"><span data-stu-id="31599-117">Period – Includes lines for the period in the counting journal when the period interval has expired.</span></span>   <span data-ttu-id="31599-118">Nula na skladě - Pokud množství na skladě dosáhne hodnoty nula (0), budou se řádky generovat v deníku načítání během spuštění úkolu.</span><span class="sxs-lookup"><span data-stu-id="31599-118">Zero in stock – If on-hand inventory reaches zero (0), lines are generated in the counting journal when the job is run.</span></span> <span data-ttu-id="31599-119">Pokud po načtení dosáhne hodnota množství na skladě nuly, budou se řádky generovat při následujícím spuštění načítání.</span><span class="sxs-lookup"><span data-stu-id="31599-119">If the on-hand inventory reaches 0 after a count, lines are generated the next time that you start the count.</span></span>   <span data-ttu-id="31599-120">Minimum - Vloží řádky do deníku načítání, pokud je množství na skladě rovno nebo menší než minimální stanovené množství.</span><span class="sxs-lookup"><span data-stu-id="31599-120">Minimum – Inserts lines in the counting journal if the on-hand inventory is equal to or less than the minimum that is specified.</span></span>  
+    * <span data-ttu-id="31599-121">Volitelně: Pokud bylo v poli Kód inventur zvoleno období, je třeba do tohoto pole zadat časový interval období inventury.</span><span class="sxs-lookup"><span data-stu-id="31599-121">Optional: If you have specified Period in the Counting code field, you must type the interval for the period in the Counting period field.</span></span> <span data-ttu-id="31599-122">Jednotkou pro intervaly jsou dny.</span><span class="sxs-lookup"><span data-stu-id="31599-122">The unit for intervals is days.</span></span>  
+    * <span data-ttu-id="31599-123">Pokud spustíte úlohu pro vytvoření nových řádků v deníku inventur, nové řádky se vytvoří v intervalu zadaném pro toto pole bez ohledu na četnost spouštění stejné úlohy.</span><span class="sxs-lookup"><span data-stu-id="31599-123">When you run the job for creating new lines in the counting journal, new lines are created at the interval specified in this field, regardless of how often you run the same job.</span></span> <span data-ttu-id="31599-124">Pokud období inventury je nastaveno na 7 a řádky deníku byly naposled generovány pro inventuru 1. ledna a jiná úloha je spuštěna 5. ledna, ještě neuplynulo sedm dní a tedy v deníku pro tento interval období nebudou generovány žádné řádky.</span><span class="sxs-lookup"><span data-stu-id="31599-124">For example, if Counting period is set to 7, and journal lines were last generated for a count on January 1, if another job is started on January 5, seven days have not passed and so no lines are generated in the journal for that period interval.</span></span> <span data-ttu-id="31599-125">Pokud se s úkolem opět začne 8. ledna, budou řádky v deníku inventury generovány za toto období, protože již uplynulo 7 dní.</span><span class="sxs-lookup"><span data-stu-id="31599-125">If you start the job again on January 8, lines are generated for the period in the counting journal, because 7 days have passed.</span></span>  
+6. <span data-ttu-id="31599-126">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="31599-126">Click Save.</span></span>
 
-## <a name="create-a-counting-journal-name"></a>Vytvoření názvu deníku inventury
-1. Přejděte do možnosti Řízení zásob > Nastavení > Názvy deníků > Zásoby.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Název.
-4. Zadejte nějakou hodnotu do pole Popis.
-5. V poli Typ deníku vyberte Inventura.
-    * Volitelné: můžete vybrat jiné ID číselné řady dokladů, pokud chcete určitou číselnou řadu pro ID dokladů generované při vytvoření deníků inventur. Číselná řada dokladů vytvoříte na stránce Číselné řady.  
-6. Vyberte volbu v poli Úroveň podrobností.
-    * Toto je úroveň podrobností, která se použije při zaúčtování deníku.  
-    * Volitelně: hodnotu můžete změnit v poli Rezervace. Toto je způsob pro rezervaci položek během inventury.   
-    * Ručně – položky jsou rezervovány ručně ve formuláři rezervace.   Automaticky - množství objednávky se zarezervuje z dostupného množství položky na skladě.   Rozpad – rezervace je součástí hlavního plánování transakce.  
-7. Klikněte na položku Uložit.
+## <a name="create-a-counting-journal-name"></a><span data-ttu-id="31599-127">Vytvoření názvu deníku inventury</span><span class="sxs-lookup"><span data-stu-id="31599-127">Create a counting journal name</span></span>
+1. <span data-ttu-id="31599-128">Přejděte do možnosti Řízení zásob > Nastavení > Názvy deníků > Zásoby.</span><span class="sxs-lookup"><span data-stu-id="31599-128">Go to Inventory management > Setup > Journal names > Inventory.</span></span>
+2. <span data-ttu-id="31599-129">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="31599-129">Click New.</span></span>
+3. <span data-ttu-id="31599-130">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="31599-130">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="31599-131">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="31599-131">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="31599-132">V poli Typ deníku vyberte Inventura.</span><span class="sxs-lookup"><span data-stu-id="31599-132">In the Journal type field, select 'Counting'.</span></span>
+    * <span data-ttu-id="31599-133">Volitelné: můžete vybrat jiné ID číselné řady dokladů, pokud chcete určitou číselnou řadu pro ID dokladů generované při vytvoření deníků inventur.</span><span class="sxs-lookup"><span data-stu-id="31599-133">Optional: you can select a different voucher series ID if you want a specific number sequence for the voucher IDs generated when creating counting journals.</span></span> <span data-ttu-id="31599-134">Číselná řada dokladů vytvoříte na stránce Číselné řady.</span><span class="sxs-lookup"><span data-stu-id="31599-134">Voucher series are created in the Number sequences page.</span></span>  
+6. <span data-ttu-id="31599-135">Vyberte volbu v poli Úroveň podrobností.</span><span class="sxs-lookup"><span data-stu-id="31599-135">In the Detail level field, select an option.</span></span>
+    * <span data-ttu-id="31599-136">Toto je úroveň podrobností, která se použije při zaúčtování deníku.</span><span class="sxs-lookup"><span data-stu-id="31599-136">This is the level of detail that is applied when the journal is posted.</span></span>  
+    * <span data-ttu-id="31599-137">Volitelně: hodnotu můžete změnit v poli Rezervace.</span><span class="sxs-lookup"><span data-stu-id="31599-137">Optional: you can change the value in the Reservation field.</span></span> <span data-ttu-id="31599-138">Toto je způsob pro rezervaci položek během inventury.</span><span class="sxs-lookup"><span data-stu-id="31599-138">This is the method used to reserve items during counting.</span></span>   
+    * <span data-ttu-id="31599-139">Ručně – položky jsou rezervovány ručně ve formuláři rezervace.</span><span class="sxs-lookup"><span data-stu-id="31599-139">Manual – The items are reserved manually in the Reservation form.</span></span>   <span data-ttu-id="31599-140">Automaticky - množství objednávky se zarezervuje z dostupného množství položky na skladě.</span><span class="sxs-lookup"><span data-stu-id="31599-140">Automatic – The order quantity is reserved from the available, on-hand inventory for the item.</span></span>   <span data-ttu-id="31599-141">Rozpad – rezervace je součástí hlavního plánování transakce.</span><span class="sxs-lookup"><span data-stu-id="31599-141">Explosion – The reservation is part of the master planning of the transaction.</span></span>  
+7. <span data-ttu-id="31599-142">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="31599-142">Click Save.</span></span>
 
-## <a name="set-standard-counting-journal-name"></a>Nastavení standardního názvu deníku inventury
-1. Přejděte do nabídky Řízení zásob > Nastavení > Parametry řízení zásob a skladu.
-2. Klikněte na kartu Deníky.
-3. V poli Inventura kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-4. Vyberte dříve vytvořený deník.
-    * Tento deník bude výchozí název pro skladové deníky typu Inventura.  
-5. Klikněte na záložku Obecné.
-    * Volitelně: Tuto možnost vyberte, pokud chcete uzamknout položku během procesu inventury, aby nedošlo k aktualizaci například dodacích listů, výdejek nebo registrací dodacího listu.  
+## <a name="set-standard-counting-journal-name"></a><span data-ttu-id="31599-143">Nastavení standardního názvu deníku inventury</span><span class="sxs-lookup"><span data-stu-id="31599-143">Set standard counting journal name</span></span>
+1. <span data-ttu-id="31599-144">Přejděte do nabídky Řízení zásob > Nastavení > Parametry řízení zásob a skladu.</span><span class="sxs-lookup"><span data-stu-id="31599-144">Go to Inventory management > Setup > Inventory and warehouse management parameters.</span></span>
+2. <span data-ttu-id="31599-145">Klikněte na kartu Deníky.</span><span class="sxs-lookup"><span data-stu-id="31599-145">Click the Journals tab.</span></span>
+3. <span data-ttu-id="31599-146">V poli Inventura kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="31599-146">In the Counting field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="31599-147">Vyberte dříve vytvořený deník.</span><span class="sxs-lookup"><span data-stu-id="31599-147">Select the journal you previously created.</span></span>
+    * <span data-ttu-id="31599-148">Tento deník bude výchozí název pro skladové deníky typu Inventura.</span><span class="sxs-lookup"><span data-stu-id="31599-148">This journal will then be the default journal name for inventory journals of the Counting type.</span></span>  
+5. <span data-ttu-id="31599-149">Klikněte na záložku Obecné.</span><span class="sxs-lookup"><span data-stu-id="31599-149">Click the General tab.</span></span>
+    * <span data-ttu-id="31599-150">Volitelně: Tuto možnost vyberte, pokud chcete uzamknout položku během procesu inventury, aby nedošlo k aktualizaci například dodacích listů, výdejek nebo registrací dodacího listu.</span><span class="sxs-lookup"><span data-stu-id="31599-150">Optional: Select this option to lock an item during the counting process to prevent updates for packing slips, picking lists, or picking list registrations.</span></span>  
 
-## <a name="set-the-counting-policy-for-an-item"></a>Nastavení zásady inventury pro položku
-1. Přejděte na možnosti Řízení informací o produktech > Produkty > Uvolněné produkty.
-2. V seznamu klepněte na odkaz pro číslo položky produktu, pro který chcete nastavit zásady inventury.
-    * Všimněte si, že je nutné vybrat položku, u které jsou sledovány zásoby. Nenaskladněný produkt nelze započítat. Používáte-li ukázková data USMF a vyberte položku A0001.  
-3. Klikněte na položku Upravit.
-4. Rozbalte oddíl Spravovat sklad.
-5. V poli Inventurní skupina kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-6. V seznamu klepněte na dříve vytvořenou inventurní skupinu.
-    * Tento produkt nyní bude zahrnut při vytvoření řádků deníku inventur zásob pomocí této inventurní skupiny.  
-7. Klikněte na položku Uložit.
+## <a name="set-the-counting-policy-for-an-item"></a><span data-ttu-id="31599-151">Nastavení zásady inventury pro položku</span><span class="sxs-lookup"><span data-stu-id="31599-151">Set the counting policy for an item</span></span>
+1. <span data-ttu-id="31599-152">Přejděte na možnosti Řízení informací o produktech > Produkty > Uvolněné produkty.</span><span class="sxs-lookup"><span data-stu-id="31599-152">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="31599-153">V seznamu klepněte na odkaz pro číslo položky produktu, pro který chcete nastavit zásady inventury.</span><span class="sxs-lookup"><span data-stu-id="31599-153">In the list, click on the link for the Item number of the product that you want to set counting policies on.</span></span>
+    * <span data-ttu-id="31599-154">Všimněte si, že je nutné vybrat položku, u které jsou sledovány zásoby.</span><span class="sxs-lookup"><span data-stu-id="31599-154">Note that you need to select an item that is inventory tracked.</span></span> <span data-ttu-id="31599-155">Nenaskladněný produkt nelze započítat.</span><span class="sxs-lookup"><span data-stu-id="31599-155">A non-stocked product can't be counted.</span></span> <span data-ttu-id="31599-156">Používáte-li ukázková data USMF a vyberte položku A0001.</span><span class="sxs-lookup"><span data-stu-id="31599-156">If you are using USMF demo data you can select item A0001.</span></span>  
+3. <span data-ttu-id="31599-157">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="31599-157">Click Edit.</span></span>
+4. <span data-ttu-id="31599-158">Rozbalte oddíl Spravovat sklad.</span><span class="sxs-lookup"><span data-stu-id="31599-158">Toggle the expansion of the Manage inventory section.</span></span>
+5. <span data-ttu-id="31599-159">V poli Inventurní skupina kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="31599-159">In the Counting group field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="31599-160">V seznamu klepněte na dříve vytvořenou inventurní skupinu.</span><span class="sxs-lookup"><span data-stu-id="31599-160">In the list, click on the counting group you previously created.</span></span>
+    * <span data-ttu-id="31599-161">Tento produkt nyní bude zahrnut při vytvoření řádků deníku inventur zásob pomocí této inventurní skupiny.</span><span class="sxs-lookup"><span data-stu-id="31599-161">This product will now be included when inventory counting journal lines are created using this counting group.</span></span>  
+7. <span data-ttu-id="31599-162">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="31599-162">Click Save.</span></span>
 
-## <a name="set-the-counting-policy-for-an-item-in-a-specific-warehouse"></a>Nastavení zásady inventury pro položku v určitém skladu
-1. V podokně akcí klikněte na možnost Spravovat sklad.
-2. Klikněte na Skladové položky.
-3. Klepněte na možnost Nový.
-4. V poli Sklad kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-5. V seznamu vyberte sklad, pro který chcete nastavit konkrétní zásady inventury.
-6. V poli Inventurní skupina kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-7. V seznamu vyberte skupinu inventury
-    * Můžete zde vybrat konkrétní inventurní skupinu, která má být použita pro položku v určitém skladu, který jste vybrali. Při provádění inventury skladu tato zásada inventury přepíše hlavní zásady inventury pro položku.  
-8. Klikněte na položku Uložit.
-
+## <a name="set-the-counting-policy-for-an-item-in-a-specific-warehouse"></a><span data-ttu-id="31599-163">Nastavení zásady inventury pro položku v určitém skladu</span><span class="sxs-lookup"><span data-stu-id="31599-163">Set the counting policy for an item in a specific warehouse</span></span>
+1. <span data-ttu-id="31599-164">V podokně akcí klikněte na možnost Spravovat sklad.</span><span class="sxs-lookup"><span data-stu-id="31599-164">On the Action Pane, click Manage inventory.</span></span>
+2. <span data-ttu-id="31599-165">Klikněte na Skladové položky.</span><span class="sxs-lookup"><span data-stu-id="31599-165">Click Warehouse items.</span></span>
+3. <span data-ttu-id="31599-166">Klepněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="31599-166">Click New.</span></span>
+4. <span data-ttu-id="31599-167">V poli Sklad kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="31599-167">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="31599-168">V seznamu vyberte sklad, pro který chcete nastavit konkrétní zásady inventury.</span><span class="sxs-lookup"><span data-stu-id="31599-168">In the list, select the warehouse you want set up specific counting policies for.</span></span>
+6. <span data-ttu-id="31599-169">V poli Inventurní skupina kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="31599-169">In the Counting group field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="31599-170">V seznamu vyberte skupinu inventury</span><span class="sxs-lookup"><span data-stu-id="31599-170">In the list, select a counting group</span></span>
+    * <span data-ttu-id="31599-171">Můžete zde vybrat konkrétní inventurní skupinu, která má být použita pro položku v určitém skladu, který jste vybrali.</span><span class="sxs-lookup"><span data-stu-id="31599-171">Here you can select a specific counting group that should apply to the item in the specific warehouse you have selected.</span></span> <span data-ttu-id="31599-172">Při provádění inventury skladu tato zásada inventury přepíše hlavní zásady inventury pro položku.</span><span class="sxs-lookup"><span data-stu-id="31599-172">When counting is performed in that warehouse, this counting policy will override the general counting policy for the item.</span></span>  
+8. <span data-ttu-id="31599-173">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="31599-173">Click Save.</span></span>
 

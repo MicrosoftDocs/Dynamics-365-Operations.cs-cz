@@ -18,246 +18,246 @@ ms.author: cmercado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: a7275e9ad8d655d0d2ee5ba90a792775dec0cf05
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: fc36d399759b6321995f9bd827849c8a0bced090
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="project-resourcing"></a>Prostředky pro projekt
+# <a name="project-resourcing"></a><span data-ttu-id="f76ed-103">Prostředky pro projekt</span><span class="sxs-lookup"><span data-stu-id="f76ed-103">Project resourcing</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-V tomto tématu jsou informace o přidělování prostředků k projektu.
+<span data-ttu-id="f76ed-104">V tomto tématu jsou informace o přidělování prostředků k projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-104">This topic provides information about project resourcing.</span></span>
 
-Jednou z výzev pro správce projektu a prostředků ve fázi plánování projektu je přiřazení zdrojů, kdy musí určit a rezervovat správné zdroje pro práci na projektu. V aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition umožňuje přidělení prostředků pro projekty definovat role, které jsou považovány za dočasné zdroje, které mohou být vyhrazeny pro konkrétní pracovní balíček nebo součásti zapojení. Tento typ přidělování prostředků umožňuje manažerům projektů a prostředků provádět následující úkony:
+<span data-ttu-id="f76ed-105">Jednou z výzev pro správce projektu a prostředků ve fázi plánování projektu je přiřazení zdrojů, kdy musí určit a rezervovat správné zdroje pro práci na projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-105">One challenge for project managers and resource managers during the project planning stage is resource allocation, where they must determine and reserve the correct resource to work on a project.</span></span> <span data-ttu-id="f76ed-106">V aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition umožňuje přidělení prostředků pro projekty definovat role, které jsou považovány za dočasné zdroje, které mohou být vyhrazeny pro konkrétní pracovní balíček nebo součásti zapojení.</span><span class="sxs-lookup"><span data-stu-id="f76ed-106">In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, resourcing capabilities for projects let you define roles that are treated as temporary resources that can be reserved for a specific engagement, or part of an engagement.</span></span> <span data-ttu-id="f76ed-107">Tento typ přidělování prostředků umožňuje manažerům projektů a prostředků provádět následující úkony:</span><span class="sxs-lookup"><span data-stu-id="f76ed-107">This type of resourcing lets project managers and resource managers complete the following tasks:</span></span>
 
--   Definovat roli, která má požadované kompetence pro snadné spárování zdrojů.
--   Používat role k definování původního schématu zapojení založeného na rezervovaných prostředcích.
--   Odhadovat náklady a určovat původní rozpočet na základě přiřazených rolí a zdrojů pro projekt.
--   Používat role pro odhad počtu rezervací prostředků, které jsou nutné pro každé zapojení.
--   Odhadovat počet prostředků, které jsou požadovány pro celý životní cyklus projektu.
--   Vytvářet koncept strukturovaného rozpisu prací pomocí prvotního přiřazení prostředků.
+-   <span data-ttu-id="f76ed-108">Definovat roli, která má požadované kompetence pro snadné spárování zdrojů.</span><span class="sxs-lookup"><span data-stu-id="f76ed-108">Define a role that has the required competencies to make it easy to match resources.</span></span>
+-   <span data-ttu-id="f76ed-109">Používat role k definování původního schématu zapojení založeného na rezervovaných prostředcích.</span><span class="sxs-lookup"><span data-stu-id="f76ed-109">Use roles to define an initial engagement schedule that is based on reserved resources.</span></span>
+-   <span data-ttu-id="f76ed-110">Odhadovat náklady a určovat původní rozpočet na základě přiřazených rolí a zdrojů pro projekt.</span><span class="sxs-lookup"><span data-stu-id="f76ed-110">Estimate costs and determine an initial budget, based on assigned roles and resources for a project.</span></span>
+-   <span data-ttu-id="f76ed-111">Používat role pro odhad počtu rezervací prostředků, které jsou nutné pro každé zapojení.</span><span class="sxs-lookup"><span data-stu-id="f76ed-111">Use roles to estimate the number of resource reservations that are required for each engagement.</span></span>
+-   <span data-ttu-id="f76ed-112">Odhadovat počet prostředků, které jsou požadovány pro celý životní cyklus projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-112">Estimate the number of resources that are required for the entire life cycle of a project.</span></span>
+-   <span data-ttu-id="f76ed-113">Vytvářet koncept strukturovaného rozpisu prací pomocí prvotního přiřazení prostředků.</span><span class="sxs-lookup"><span data-stu-id="f76ed-113">Draft a work breakdown structure (WBS) by using the initial resource assignments.</span></span>
 
-[![Životní cyklus projektu](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg) 
+<span data-ttu-id="f76ed-114">[![Životní cyklus projektu](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg)</span><span class="sxs-lookup"><span data-stu-id="f76ed-114">[![Project life cycle](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg)</span></span> 
 
-Jak probíhá plánování projektu, plánované prostředky je možné nahradit personálními zdroji. Manažer projektu se může také vrátit zpět a aktualizovat rezervace prostředků v libovolné fázi projektu
+<span data-ttu-id="f76ed-115">Jak probíhá plánování projektu, plánované prostředky je možné nahradit personálními zdroji.</span><span class="sxs-lookup"><span data-stu-id="f76ed-115">As project planning proceeds, planned resources can be replaced with staffed resources.</span></span> <span data-ttu-id="f76ed-116">Manažer projektu se může také vrátit zpět a aktualizovat rezervace prostředků v libovolné fázi projektu</span><span class="sxs-lookup"><span data-stu-id="f76ed-116">The project manager can also go back and update the resourcing reservations during any of the project stages.</span></span>
 
-## <a name="set-up-project-resources"></a>Nastavení prostředků projektu
-Musíte nastavit kalendář a přidružit jej se zaměstnancem nebo pracovníkem. Kalendář lze použít pro naplánování projektu a pracovní doby prostředků, které jsou na projekt rezervovány. Během nastavení kalendáře může projektoví manažer provádět vyrovnání prostředků v rámci optimalizace prostředku. Na základě plánu kalendáře lze pro prostředky uvalit omezení. Můžete nastavit kalendář na stránce **Kalendáře**. 
+## <a name="set-up-project-resources"></a><span data-ttu-id="f76ed-117">Nastavení prostředků projektu</span><span class="sxs-lookup"><span data-stu-id="f76ed-117">Set up project resources</span></span>
+<span data-ttu-id="f76ed-118">Musíte nastavit kalendář a přidružit jej se zaměstnancem nebo pracovníkem.</span><span class="sxs-lookup"><span data-stu-id="f76ed-118">You must set up a calendar and associate it with an employee or a worker.</span></span> <span data-ttu-id="f76ed-119">Kalendář lze použít pro naplánování projektu a pracovní doby prostředků, které jsou na projekt rezervovány.</span><span class="sxs-lookup"><span data-stu-id="f76ed-119">The calendar is used to schedule the project and the working time of the resources that are reserved for the project.</span></span> <span data-ttu-id="f76ed-120">Během nastavení kalendáře může projektoví manažer provádět vyrovnání prostředků v rámci optimalizace prostředku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-120">During calendar setup, project managers can perform resource leveling as part of resource optimization.</span></span> <span data-ttu-id="f76ed-121">Na základě plánu kalendáře lze pro prostředky uvalit omezení.</span><span class="sxs-lookup"><span data-stu-id="f76ed-121">Based on the calendar schedule, restrictions can be placed on resources.</span></span> <span data-ttu-id="f76ed-122">Můžete nastavit kalendář na stránce **Kalendáře**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-122">You can set up a calendar on the **Calendars** page.</span></span> 
 
-Při nastavení pracovníka jako projektového prostředku můžete vybírat z pracovníků, kteří pracují ve firmě, pro kterou nastavujete prostředky, nebo můžete vybrat pracovníky z jiných firem ve vaší organizaci. Jedná se o mezipodnikové prostředky. Následující postupy vysvětlují, jak nastavit pracovníka jako zdroj projektu v rámci společnosti a jak nastavit prostředek mezipodnikové projektu.
+<span data-ttu-id="f76ed-123">Při nastavení pracovníka jako projektového prostředku můžete vybírat z pracovníků, kteří pracují ve firmě, pro kterou nastavujete prostředky, nebo můžete vybrat pracovníky z jiných firem ve vaší organizaci.</span><span class="sxs-lookup"><span data-stu-id="f76ed-123">When you set up a worker as a project resource, you can select from workers that work in the company for which you are setting up resources or, you can select workers from other companies within your organization.</span></span> <span data-ttu-id="f76ed-124">Jedná se o mezipodnikové prostředky.</span><span class="sxs-lookup"><span data-stu-id="f76ed-124">These are intercompany resources.</span></span> <span data-ttu-id="f76ed-125">Následující postupy vysvětlují, jak nastavit pracovníka jako zdroj projektu v rámci společnosti a jak nastavit prostředek mezipodnikové projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-125">The following procedures explain how to set up a worker as a project resource within your company and how to set up an intercompany project resource.</span></span>
 
-### <a name="set-up-a-worker-as-a-project-resource"></a>Nastavení pracovníka jako prostředek projektu
+### <a name="set-up-a-worker-as-a-project-resource"></a><span data-ttu-id="f76ed-126">Nastavení pracovníka jako prostředek projektu</span><span class="sxs-lookup"><span data-stu-id="f76ed-126">Set up a worker as a project resource</span></span>
 
-1.  Na stránce **Pracovníci** v seznamu **Pracovníci** vyberte pracovníka, kterého chcete přidat jako prostředek projektu, a otevřete záznam pracovníka.
-2.  V podokně akcí klepněte na **Projekt** &gt; **Nastavení** &gt; **Nastavení projektu**.
-3.  Vyberte kalendář a zavřete stránku.
+1.  <span data-ttu-id="f76ed-127">Na stránce **Pracovníci** v seznamu **Pracovníci** vyberte pracovníka, kterého chcete přidat jako prostředek projektu, a otevřete záznam pracovníka.</span><span class="sxs-lookup"><span data-stu-id="f76ed-127">On the **Workers** page, in the **Workers** list, select the worker that you're adding as a project resource, and open the worker record.</span></span>
+2.  <span data-ttu-id="f76ed-128">V podokně akcí klepněte na **Projekt** &gt; **Nastavení** &gt; **Nastavení projektu**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-128">On the Action Pane, click **Project** &gt; **Setup** &gt; **Project setup**.</span></span>
+3.  <span data-ttu-id="f76ed-129">Vyberte kalendář a zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-129">Select a calendar, and then close the page.</span></span>
 
-Můžete také určit výchozí projekty pro prostředky jako typ předběžného přiřazení. Předběžné přiřazení lze použít, pokud manažer prostředků nebo projektu dopředu ví, na kterých projektech budou prostředky pracovat. Předběžné přiřazení může být založeno také na žádosti investora projektu nebo odběratele. Pokud chcete předběžně přiřadit projekt, na stránce **Přiřadit projekty** na kartě **Projekty** v seznamu **Zbývající projekty** vyberte příslušný projekt.
+<span data-ttu-id="f76ed-130">Můžete také určit výchozí projekty pro prostředky jako typ předběžného přiřazení.</span><span class="sxs-lookup"><span data-stu-id="f76ed-130">You can also specify default projects for a resource as a type of pre-assignment.</span></span> <span data-ttu-id="f76ed-131">Předběžné přiřazení lze použít, pokud manažer prostředků nebo projektu dopředu ví, na kterých projektech budou prostředky pracovat.</span><span class="sxs-lookup"><span data-stu-id="f76ed-131">Pre-assignments can be used when the resource manager or project manager knows which projects the resource will be working on in advance.</span></span> <span data-ttu-id="f76ed-132">Předběžné přiřazení může být založeno také na žádosti investora projektu nebo odběratele.</span><span class="sxs-lookup"><span data-stu-id="f76ed-132">Pre-assignments can also be based on the request of a project sponsor or customer.</span></span> <span data-ttu-id="f76ed-133">Pokud chcete předběžně přiřadit projekt, na stránce **Přiřadit projekty** na kartě **Projekty** v seznamu **Zbývající projekty** vyberte příslušný projekt.</span><span class="sxs-lookup"><span data-stu-id="f76ed-133">To pre-assign a project, on the **Assign projects** page, on the **Projects** tab, in the **Remaining projects** list, select the appropriate project.</span></span>
 
-### <a name="set-up-an-intercompany-resource"></a>Nastavení mezipodnikového zdroje
+### <a name="set-up-an-intercompany-resource"></a><span data-ttu-id="f76ed-134">Nastavení mezipodnikového zdroje</span><span class="sxs-lookup"><span data-stu-id="f76ed-134">Set up an intercompany resource</span></span>
 
-Při nastavování pracovníka jako mezipodnikového zdroje je nutné dokončit nastavení ve společnosti poskytující půjčku a společnosti, která zažádala o půjčku. 
+<span data-ttu-id="f76ed-135">Při nastavování pracovníka jako mezipodnikového zdroje je nutné dokončit nastavení ve společnosti poskytující půjčku a společnosti, která zažádala o půjčku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-135">When you set up a worker as an intercompany resource, you must complete the setup in the lending company and the borrowing company.</span></span> 
 
-**Společnost poskytující půjčku:**
+<span data-ttu-id="f76ed-136">**Společnost poskytující půjčku:**</span><span class="sxs-lookup"><span data-stu-id="f76ed-136">**In the lending company:**</span></span>
 
-1.  V aplikaci Finance and Operations ověřte, zda je vybrána společnost poskytující půjčku, a pak dokončete výše uvedený postup Nastavení pracovníka jako prostředku projektu.
-2.  Přejděte na **Hlavní kniha **&gt; **Nastavení účetnictví **&gt; **Mezipodnikové účetnictví**. Klepněte na možnost **Nový**.
-3.  V poli **ID právnické osoby ** vyberte společnost poskytující půjčku. Podle potřeby vyplňte zbývající pole a potom klepněte na tlačítko **Uložit**.
-4.  Přejděte na **Řízení a účetnictví projektu **&gt; **Nastavení **&gt; **Ceny ** &gt; **Převést cenu**.** **
-5.  Ve formuláři **Převést cenu ** klepněte na tlačítko **Nový** a v poli ** Právnická osoba, která si půjčuje ** vyberte příslušnou společnost.
-6.  Pokud chcete si od společnosti poskytující půjčku chcete pouze vypůjčit prostředek, který jste vytvořili na začátku této části, v poli **Zdroje**, vyberte název zdroje, který jste vytvořili. Pokud chcete zpřístupnit všechny prostředky ve firmě půjčující si společnosti, ponechejte pole **Zdroj **prázdné.
-7.  Přejděte na položky **Řízení a účetnictví projektu **&gt; **Nastavení **&gt; **Parametry správy projektu a účetnictví** a na kartě **Mezipodnikové **nastavte hodnotu v poli **Povolit mezipodnikové plánování prostředků a časové rozvrhy**na **Ano**.
+1.  <span data-ttu-id="f76ed-137">V aplikaci Finance and Operations ověřte, zda je vybrána společnost poskytující půjčku, a pak dokončete výše uvedený postup Nastavení pracovníka jako prostředku projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-137">In Finance and Operations, verify that the lending company is selected, and then complete the procedure above, "Set up a worker as a project resource."</span></span>
+2.  <span data-ttu-id="f76ed-138">Přejděte na **Hlavní kniha **&gt; **Nastavení účetnictví **&gt; **Mezipodnikové účetnictví**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-138">Go to **General ledger **&gt; **Posting setup **&gt; **Intercompany accounting**.</span></span> <span data-ttu-id="f76ed-139">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-139">Click **New**.</span></span>
+3.  <span data-ttu-id="f76ed-140">V poli **ID právnické osoby ** vyberte společnost poskytující půjčku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-140">In the **Legal entity ID **field, select the lending company.</span></span> <span data-ttu-id="f76ed-141">Podle potřeby vyplňte zbývající pole a potom klepněte na tlačítko **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-141">Fill in the remaining fields as appropriate, and then click **Save**.</span></span>
+4.  <span data-ttu-id="f76ed-142">Přejděte na **Řízení a účetnictví projektu **&gt; **Nastavení **&gt; **Ceny ** &gt; **Převést cenu**.**</span><span class="sxs-lookup"><span data-stu-id="f76ed-142">Go the **Project management and accounting **&gt; **Setup **&gt; **Prices ** &gt; **Transfer price**.**</span></span> **
+5.  <span data-ttu-id="f76ed-143">Ve formuláři **Převést cenu ** klepněte na tlačítko **Nový** a v poli ** Právnická osoba, která si půjčuje ** vyberte příslušnou společnost.</span><span class="sxs-lookup"><span data-stu-id="f76ed-143">On the **Transfer price **form, click **New**, and in the **Borrowing legal entity **field, select the appropriate company.</span></span>
+6.  <span data-ttu-id="f76ed-144">Pokud chcete si od společnosti poskytující půjčku chcete pouze vypůjčit prostředek, který jste vytvořili na začátku této části, v poli **Zdroje**, vyberte název zdroje, který jste vytvořili.</span><span class="sxs-lookup"><span data-stu-id="f76ed-144">If you want to only loan the borrowing company the resource that you created at the beginning of this section, in the **Resource** field, select the name of the resource that you created.</span></span> <span data-ttu-id="f76ed-145">Pokud chcete zpřístupnit všechny prostředky ve firmě půjčující si společnosti, ponechejte pole **Zdroj **prázdné.</span><span class="sxs-lookup"><span data-stu-id="f76ed-145">If you want to make all resources in the company available to the borrowing company, leave the **Resource **field blank.</span></span>
+7.  <span data-ttu-id="f76ed-146">Přejděte na položky **Řízení a účetnictví projektu **&gt; **Nastavení **&gt; **Parametry správy projektu a účetnictví** a na kartě **Mezipodnikové **nastavte hodnotu v poli **Povolit mezipodnikové plánování prostředků a časové rozvrhy**na **Ano**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-146">Go to **Project management and accounting **&gt; **Setup **&gt; **Project management and accounting parameters**, and on the **Intercompany **tab, set the **Enable intercompany resource scheduling and timesheets **field to **Yes**.</span></span>
 
-**Společnost, která zažádala o půjčku:**
+<span data-ttu-id="f76ed-147">**Společnost, která zažádala o půjčku:**</span><span class="sxs-lookup"><span data-stu-id="f76ed-147">**In the borrowing company:**</span></span>
 
-1.  Přejděte na **Řízení a účetnictví projektů** &gt; **Prostředky projektu** &gt; **Seznam prostředků**.
-2.  Ve filtru vyhledávání zadejte název prostředku, který jste vytvořili v předchozím postupu pro společnost poskytující půjčku, ověřte, že název je zahrnut v seznamu zdrojů pro společnost, která žádá o půjčku.
+1.  <span data-ttu-id="f76ed-148">Přejděte na **Řízení a účetnictví projektů** &gt; **Prostředky projektu** &gt; **Seznam prostředků**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-148">Go to **Project management and accounting** &gt; **Project resources** &gt; **Resources list**.</span></span>
+2.  <span data-ttu-id="f76ed-149">Ve filtru vyhledávání zadejte název prostředku, který jste vytvořili v předchozím postupu pro společnost poskytující půjčku, ověřte, že název je zahrnut v seznamu zdrojů pro společnost, která žádá o půjčku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-149">In the search filter, enter the name of the resource that you created in the previous procedure for the lending company to verify that the name is included in the resource list for the borrowing company.</span></span>
 
-## <a name="manage-resource-competencies"></a>Správa kompetencí prostředků
-Kompetence prostředků jsou důležitou částí správy prostředku. Kompetence slouží jako základ pro určení zdroje, který má správný poměr dovedností, vzdělání, kvalifikace a zkušeností s projektem. Doporučujeme nastavit tento údaj pro každý zdroj a aktualizovat jej v pravidelných intervalech. Tímto způsobem můžete maximalizovat možnosti v případě, že jsou porovnány konkrétní kompetence prostředků při přiřazení prostředků k projektu. [![Příklady dovedností, certifikátů, vzdělání a zkušeností z projektu](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg) 
+## <a name="manage-resource-competencies"></a><span data-ttu-id="f76ed-150">Správa kompetencí prostředků</span><span class="sxs-lookup"><span data-stu-id="f76ed-150">Manage resource competencies</span></span>
+<span data-ttu-id="f76ed-151">Kompetence prostředků jsou důležitou částí správy prostředku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-151">Resource competencies are an essential part of resource management.</span></span> <span data-ttu-id="f76ed-152">Kompetence slouží jako základ pro určení zdroje, který má správný poměr dovedností, vzdělání, kvalifikace a zkušeností s projektem.</span><span class="sxs-lookup"><span data-stu-id="f76ed-152">Competencies can be used as a baseline to determine resources that have the correct balance of skills, education, certification, and project experience.</span></span> <span data-ttu-id="f76ed-153">Doporučujeme nastavit tento údaj pro každý zdroj a aktualizovat jej v pravidelných intervalech.</span><span class="sxs-lookup"><span data-stu-id="f76ed-153">You should set up this information for each resource and update it on a regular basis.</span></span> <span data-ttu-id="f76ed-154">Tímto způsobem můžete maximalizovat možnosti v případě, že jsou porovnány konkrétní kompetence prostředků při přiřazení prostředků k projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-154">In this way, you can maximize capabilities when specific resource competencies are matched during project resource assignment.</span></span> <span data-ttu-id="f76ed-155">[![Příklady dovedností, certifikátů, vzdělání a zkušeností z projektu](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg)</span><span class="sxs-lookup"><span data-stu-id="f76ed-155">[![Examples of skills, certifications, education, and project experience](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg)</span></span> 
 
-Následující postupy vysvětlují, jak nastavit některé kompetence prostředku. 
+<span data-ttu-id="f76ed-156">Následující postupy vysvětlují, jak nastavit některé kompetence prostředku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-156">The following procedures explain how to set up some of the competencies for a resource.</span></span> 
 
-Pro nastavení kompetencí pracovníka slouží buď stránka se seznamem **Pracovníci** v rámci lidských zdrojů, nebo stránka se seznamem **Prostředky** v rámci Řízení a účetnictví projektů. Pro následující procesy bude použita stránka se seznamem **Pracovníci** v rámci lidských zdrojů.
+<span data-ttu-id="f76ed-157">Pro nastavení kompetencí pracovníka slouží buď stránka se seznamem **Pracovníci** v rámci lidských zdrojů, nebo stránka se seznamem **Prostředky** v rámci Řízení a účetnictví projektů.</span><span class="sxs-lookup"><span data-stu-id="f76ed-157">To set up competencies for a worker, you can use either the **Workers** list page in Human resources or the **Resources** list page in Project management and accounting.</span></span> <span data-ttu-id="f76ed-158">Pro následující procesy bude použita stránka se seznamem **Pracovníci** v rámci lidských zdrojů.</span><span class="sxs-lookup"><span data-stu-id="f76ed-158">For the following procedures, the **Workers** list page in Human resources is used.</span></span>
 
-### <a name="set-up-competencies-certificates"></a>Nastavení kompetencí: certifikáty
+### <a name="set-up-competencies-certificates"></a><span data-ttu-id="f76ed-159">Nastavení kompetencí: certifikáty</span><span class="sxs-lookup"><span data-stu-id="f76ed-159">Set up competencies: Certificates</span></span>
 
-1.  Na stránce se seznamem **Pracovníci** vyberte řádek zaměstnance, pro kterého přidáváte informace o certifikátu.
-2.  Na panelu akcí na kartě **Pracovník** ve skupině **Kompetence** klikněte na možnost **Certifikáty**.
-3.  Klepněte na možnost **Nový**.
-4.  V poli **Typ certifikátu** vyberte **PMP**.
-5.  V poli **Počáteční datum** vyberte **10/1/2015**.
-6.  Klikněte na tlačítko **Uložit** a pak zavřete stránku.
+1.  <span data-ttu-id="f76ed-160">Na stránce se seznamem **Pracovníci** vyberte řádek zaměstnance, pro kterého přidáváte informace o certifikátu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-160">On the **Workers** list page, select the line of the worker that you're adding certificate information for.</span></span>
+2.  <span data-ttu-id="f76ed-161">Na panelu akcí na kartě **Pracovník** ve skupině **Kompetence** klikněte na možnost **Certifikáty**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-161">On the Action Pane, on the **Worker** tab, in the **Competencies** group, click **Certificates**.</span></span>
+3.  <span data-ttu-id="f76ed-162">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-162">Click **New**.</span></span>
+4.  <span data-ttu-id="f76ed-163">V poli **Typ certifikátu** vyberte **PMP**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-163">In the **Certificate type** field, select **PMP**.</span></span>
+5.  <span data-ttu-id="f76ed-164">V poli **Počáteční datum** vyberte **10/1/2015**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-164">In the **Start date** field, select **10/1/2015**.</span></span>
+6.  <span data-ttu-id="f76ed-165">Klikněte na tlačítko **Uložit** a pak zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-165">Click **Save**, and then close the page.</span></span>
 
-### <a name="set-up-competencies-skills"></a>Nastavení kompetencí: dovednosti
+### <a name="set-up-competencies-skills"></a><span data-ttu-id="f76ed-166">Nastavení kompetencí: dovednosti</span><span class="sxs-lookup"><span data-stu-id="f76ed-166">Set up competencies: Skills</span></span>
 
-1.  Na stránce se seznamem **Pracovníci** vyberte pracovníka, kterého jste použili v předchozím postupu. Poté v podokně akcí na kartě **Pracovník** ve skupině **Kompetence** klikněte na **Dovednosti**.
-2.  Klepněte na možnost **Nový**.
-3.  V poli **Dovednost** vyberte **Správa projektu**.
-4.  V poli **Úroveň** vyberte **5 Odborník**.
-5.  V poli **Datum úrovně** vyberte **1-/14/2014**.
-6.  V poli **Roky praxe** zadejte **10**.
-7.  Klikněte na tlačítko **Uložit** a pak zavřete stránku.
+1.  <span data-ttu-id="f76ed-167">Na stránce se seznamem **Pracovníci** vyberte pracovníka, kterého jste použili v předchozím postupu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-167">On the **Workers** list page, make sure that the worker that you used in the previous procedure is still selected.</span></span> <span data-ttu-id="f76ed-168">Poté v podokně akcí na kartě **Pracovník** ve skupině **Kompetence** klikněte na **Dovednosti**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-168">Then, on the Action Pane, on the **Worker** tab, in the **Competencies** group, click **Skills**.</span></span>
+2.  <span data-ttu-id="f76ed-169">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-169">Click **New**.</span></span>
+3.  <span data-ttu-id="f76ed-170">V poli **Dovednost** vyberte **Správa projektu**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-170">In the **Skill** field, select **Project management**.</span></span>
+4.  <span data-ttu-id="f76ed-171">V poli **Úroveň** vyberte **5 Odborník**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-171">In the **Level** field, select **5 Expert**.</span></span>
+5.  <span data-ttu-id="f76ed-172">V poli **Datum úrovně** vyberte **1-/14/2014**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-172">In the **Level date** field, select **1-/14/2014**.</span></span>
+6.  <span data-ttu-id="f76ed-173">V poli **Roky praxe** zadejte **10**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-173">In the **Years of experience** field, enter **10**.</span></span>
+7.  <span data-ttu-id="f76ed-174">Klikněte na tlačítko **Uložit** a pak zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-174">Click **Save**, and then close the page.</span></span>
 
-## <a name="create-a-new-project"></a>Vytvořit nový projekt
-1.  Klikněte na **Řízení a účetnictví projektů** &gt; **Pracovní prostory** &gt; **Řízení projektu**.
-2.  Klepněte na **Nový projekt** a zadejte následující hodnoty:
-    -   **Typ projektu:** - Čas a materiál
-    -   **Název projektu:** - Upgrade XYZ fáze 2
-    -   **Skupina projektu** - TM\_WIP
-    -   **ID projektové smlouvy:** - 00000002
-3.  Klikněte na **Vytvoření projektu**.
+## <a name="create-a-new-project"></a><span data-ttu-id="f76ed-175">Vytvořit nový projekt</span><span class="sxs-lookup"><span data-stu-id="f76ed-175">Create a new project</span></span>
+1.  <span data-ttu-id="f76ed-176">Klikněte na **Řízení a účetnictví projektů** &gt; **Pracovní prostory** &gt; **Řízení projektu**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-176">Click **Project management and accounting** &gt; **Workspaces** &gt; **Project management**.</span></span>
+2.  <span data-ttu-id="f76ed-177">Klepněte na **Nový projekt** a zadejte následující hodnoty:</span><span class="sxs-lookup"><span data-stu-id="f76ed-177">Click **New project**, and enter the following values:</span></span>
+    -   <span data-ttu-id="f76ed-178">**Typ projektu:** - Čas a materiál</span><span class="sxs-lookup"><span data-stu-id="f76ed-178">**Project type** - Time and material</span></span>
+    -   <span data-ttu-id="f76ed-179">**Název projektu:** - Upgrade XYZ fáze 2</span><span class="sxs-lookup"><span data-stu-id="f76ed-179">**Project name** - XYZ Upgrade Phase 2</span></span>
+    -   <span data-ttu-id="f76ed-180">**Skupina projektu** - TM\_WIP</span><span class="sxs-lookup"><span data-stu-id="f76ed-180">**Project group** - TM\_WIP</span></span>
+    -   <span data-ttu-id="f76ed-181">**ID projektové smlouvy:** - 00000002</span><span class="sxs-lookup"><span data-stu-id="f76ed-181">**Project contract ID**  - 00000002</span></span>
+3.  <span data-ttu-id="f76ed-182">Klikněte na **Vytvoření projektu**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-182">Click **Create project**.</span></span>
 
-### <a name="assign-a-resource-to-a-project"></a>Přiřazení prostředku k projektu
+### <a name="assign-a-resource-to-a-project"></a><span data-ttu-id="f76ed-183">Přiřazení prostředku k projektu</span><span class="sxs-lookup"><span data-stu-id="f76ed-183">Assign a resource to a project</span></span>
 
-1.  Klikněte na **Lidské zdroje** &gt; **Pracovníci** &gt; **Pracovníci**.
-2.  V seznamu **Pracovníci** vyberte záznam o zaměstnanci, pro kterého jste dříve nastavili kompetence, a otevřete záznam pracovníka.
-3.  V podokně akcí na kartě **Projekt** ve skupině **Nastavení** klikněte na **Přiřadit projekty**.
-4.  Na stránce **Přiřazení projektů ověření prostředku** klikněte na kartu **Projekty**.
-5.  V části **Přidat projekt do vybraných projektů** vyfiltrujte projekt, Upgrade XYZ fáze 2
-6.  V podokně **Zbývající projekty** vyberte projekt a kliknutím na šipku jej přidejte do podokna **Vybrané projekty**.
-7.  Zavřete stránku.
+1.  <span data-ttu-id="f76ed-184">Klikněte na **Lidské zdroje** &gt; **Pracovníci** &gt; **Pracovníci**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-184">Click **Human resources** &gt; **Workers** &gt; **Workers**.</span></span>
+2.  <span data-ttu-id="f76ed-185">V seznamu **Pracovníci** vyberte záznam o zaměstnanci, pro kterého jste dříve nastavili kompetence, a otevřete záznam pracovníka.</span><span class="sxs-lookup"><span data-stu-id="f76ed-185">In the **Workers** list, select the record for the worker that you previously set up competencies for, and open the worker record.</span></span>
+3.  <span data-ttu-id="f76ed-186">V podokně akcí na kartě **Projekt** ve skupině **Nastavení** klikněte na **Přiřadit projekty**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-186">On the Action Pane, on the **Project** tab, in the **Setup** group, click **Assign projects**.</span></span>
+4.  <span data-ttu-id="f76ed-187">Na stránce **Přiřazení projektů ověření prostředku** klikněte na kartu **Projekty**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-187">On the **Resource validation project assignments** page, click the **Projects** tab.</span></span>
+5.  <span data-ttu-id="f76ed-188">V části **Přidat projekt do vybraných projektů** vyfiltrujte projekt, Upgrade XYZ fáze 2</span><span class="sxs-lookup"><span data-stu-id="f76ed-188">In the **Add the project to selected projects**, filter on the project, XYZ Upgrade Phase 2</span></span>
+6.  <span data-ttu-id="f76ed-189">V podokně **Zbývající projekty** vyberte projekt a kliknutím na šipku jej přidejte do podokna **Vybrané projekty**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-189">In the **Remaining projects** pane, select a project, and then click the arrow to add it to the **Selected projects** pane.</span></span>
+7.  <span data-ttu-id="f76ed-190">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-190">Close the page.</span></span>
 
-V případě potřeby můžete také přiřadit kategorie ke zdroji. Typ kategorie jsou Náklady nebo Výnosy. Ten je určen vaší organizací. Pokud neexistují žádné přiřazené kategorie pro prostředek, aplikace Finance and Operations vyhledá výchozí kategorii pro hodinové ceny pro náklady a výnosy.
+<span data-ttu-id="f76ed-191">V případě potřeby můžete také přiřadit kategorie ke zdroji.</span><span class="sxs-lookup"><span data-stu-id="f76ed-191">If needed, you can also assign categories for a resource.</span></span> <span data-ttu-id="f76ed-192">Typ kategorie jsou Náklady nebo Výnosy.</span><span class="sxs-lookup"><span data-stu-id="f76ed-192">The category type is either Cost or Revenue.</span></span> <span data-ttu-id="f76ed-193">Ten je určen vaší organizací.</span><span class="sxs-lookup"><span data-stu-id="f76ed-193">This is determined by your organization.</span></span> <span data-ttu-id="f76ed-194">Pokud neexistují žádné přiřazené kategorie pro prostředek, aplikace Finance and Operations vyhledá výchozí kategorii pro hodinové ceny pro náklady a výnosy.</span><span class="sxs-lookup"><span data-stu-id="f76ed-194">If there are no assigned categories for the resource, Finance and Operations will look up the default category on hour prices for cost and revenue.</span></span>
 
-### <a name="set-up-project-resource-and-role-characteristics"></a>Nastavení vlastností prostředků a role projektu
+### <a name="set-up-project-resource-and-role-characteristics"></a><span data-ttu-id="f76ed-195">Nastavení vlastností prostředků a role projektu</span><span class="sxs-lookup"><span data-stu-id="f76ed-195">Set up project resource and role characteristics</span></span>
 
-Manažer projektu může použít funkci přidělení prostředků k projektu pro vytvoření rolí potřebných pro daný projekt. Role lze použít, pokud potvrzené prostředky jsou během rezervace prostředku zatím neznámé. Role lze použít pro dočasné rezervování jako plánovaných zdrojů, abyste mohli pokračovat ve fázi plánování projektu. 
+<span data-ttu-id="f76ed-196">Manažer projektu může použít funkci přidělení prostředků k projektu pro vytvoření rolí potřebných pro daný projekt.</span><span class="sxs-lookup"><span data-stu-id="f76ed-196">A project manager can use the project resourcing functionality to create the roles that are required for the project.</span></span> <span data-ttu-id="f76ed-197">Role lze použít, pokud potvrzené prostředky jsou během rezervace prostředku zatím neznámé.</span><span class="sxs-lookup"><span data-stu-id="f76ed-197">Roles can be used when confirmed resources are still unknown when reserving resources.</span></span> <span data-ttu-id="f76ed-198">Role lze použít pro dočasné rezervování jako plánovaných zdrojů, abyste mohli pokračovat ve fázi plánování projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-198">Roles can be temporarily reserved as planned resources, so that you can continue the project planning stages.</span></span> 
 
-[![Příklad role](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg) 
+<span data-ttu-id="f76ed-199">[![Příklad role](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg)</span><span class="sxs-lookup"><span data-stu-id="f76ed-199">[![Example of a role](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg)</span></span> 
 
-**Scénář:** Společnost Contoso byla najata na dokončení projektu Čas a materiál, který má schválené stanovy projektu. Nižší manažer projektu stále dokončuje rozsah projektu. Manažer prostředků aktuálně identifikuje konkrétní zdroje, které budou rezervovány k práci na novém projektu. Jedna z rolí, kterou investor projektu požaduje s ohledem na kritickou povahu projektu, je Vrchní vedoucí projektu. Správce zdrojů musí získat nový prostředek a rozhodne se, že určí roli v systému pro případ, že nižší manažer projektu bude potřebovat informace o prostředku během plánování projektu. 
+<span data-ttu-id="f76ed-200">**Scénář:** Společnost Contoso byla najata na dokončení projektu Čas a materiál, který má schválené stanovy projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-200">**Scenario:** Contoso was hired to complete a Time and material project that has an approved project charter.</span></span> <span data-ttu-id="f76ed-201">Nižší manažer projektu stále dokončuje rozsah projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-201">The junior project manager is still completing the scope of the project.</span></span> <span data-ttu-id="f76ed-202">Manažer prostředků aktuálně identifikuje konkrétní zdroje, které budou rezervovány k práci na novém projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-202">The resource manager is currently identifying specific resources that will be reserved to work on the new project.</span></span> <span data-ttu-id="f76ed-203">Jedna z rolí, kterou investor projektu požaduje s ohledem na kritickou povahu projektu, je Vrchní vedoucí projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-203">One of the roles that the project sponsor requested, because of the critical nature of the project, is the Senior project manager.</span></span> <span data-ttu-id="f76ed-204">Správce zdrojů musí získat nový prostředek a rozhodne se, že určí roli v systému pro případ, že nižší manažer projektu bude potřebovat informace o prostředku během plánování projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-204">The resource manager must acquire the new resource and define the role in the system in case the junior project manager requires the resource information during the project planning.</span></span> 
 
-Následující pokyny popisují, jak může manažer prostředků nastavit roli Vrchní vedoucí projektu a přidružit k ní vlastnosti prostředků. Později slouží role k vyhledání dostupných zdrojů, které odpovídají požadovaným kompetencím prostředku.
+<span data-ttu-id="f76ed-205">Následující pokyny popisují, jak může manažer prostředků nastavit roli Vrchní vedoucí projektu a přidružit k ní vlastnosti prostředků.</span><span class="sxs-lookup"><span data-stu-id="f76ed-205">The following steps show how the resource manager can set up the Senior project manager role and associate resource characteristics with it.</span></span> <span data-ttu-id="f76ed-206">Později slouží role k vyhledání dostupných zdrojů, které odpovídají požadovaným kompetencím prostředku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-206">Later, the role can be used to search for available resources that match the required resource competencies.</span></span>
 
-1.  Klepněte na tlačítko **Řízení a účetnictví projektu** &gt; **Nastavení** &gt; **Zdroje** &gt; **Nastavení rolí**.
-2.  Klepněte na **Nový** a zadejte následující hodnoty:
-    -   **ID role:** - vrchní manažer projektu
-    -   **Popis:** - vrchní manažer projektu
-3.  Klepněte na volbu **Nový**.
-4.  Vyberte roli **Vrchní manažer projektu** a klepněte na tlačítko **Konfigurace vlastností**.
-5.  V poli **Typ charakteristik** vyberte **Dovednost**.
-6.  V poli **Dostupné charakteristiky** zadejte dovednost, kterou hledáte.
-7.  V poli **Typ charakteristiky** vyberte **Certifikát**.
-8.  V poli **Dostupné charakteristiky** zadejte hledaný typ certifikátu.
-9.  Klikněte na tlačítko **OK** a pak zavřete stránku.
+1.  <span data-ttu-id="f76ed-207">Klepněte na tlačítko **Řízení a účetnictví projektu** &gt; **Nastavení** &gt; **Zdroje** &gt; **Nastavení rolí**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-207">Click **Project management and accounting** &gt; **Setup** &gt; **Resources** &gt; **Setup roles**.</span></span>
+2.  <span data-ttu-id="f76ed-208">Klepněte na **Nový** a zadejte následující hodnoty:</span><span class="sxs-lookup"><span data-stu-id="f76ed-208">Click **New**, and enter the following values:</span></span>
+    -   <span data-ttu-id="f76ed-209">**ID role:** - vrchní manažer projektu</span><span class="sxs-lookup"><span data-stu-id="f76ed-209">**Role ID** - Senior Project Manager</span></span>
+    -   <span data-ttu-id="f76ed-210">**Popis:** - vrchní manažer projektu</span><span class="sxs-lookup"><span data-stu-id="f76ed-210">**Description** - Senior Project Manager</span></span>
+3.  <span data-ttu-id="f76ed-211">Klepněte na volbu **Nový**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-211">Click **Create**.</span></span>
+4.  <span data-ttu-id="f76ed-212">Vyberte roli **Vrchní manažer projektu** a klepněte na tlačítko **Konfigurace vlastností**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-212">Select the **Senior Project Manager** role, and then click **Configure characteristics**.</span></span>
+5.  <span data-ttu-id="f76ed-213">V poli **Typ charakteristik** vyberte **Dovednost**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-213">In the **Characteristics type** field, select **Skill**.</span></span>
+6.  <span data-ttu-id="f76ed-214">V poli **Dostupné charakteristiky** zadejte dovednost, kterou hledáte.</span><span class="sxs-lookup"><span data-stu-id="f76ed-214">In the **Available characteristics** field, enter the skill that you're searching for.</span></span>
+7.  <span data-ttu-id="f76ed-215">V poli **Typ charakteristiky** vyberte **Certifikát**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-215">In the **Characteristic type** field, select **Certificate**.</span></span>
+8.  <span data-ttu-id="f76ed-216">V poli **Dostupné charakteristiky** zadejte hledaný typ certifikátu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-216">In the **Available characteristics** field, enter the certificate type to search for.</span></span>
+9.  <span data-ttu-id="f76ed-217">Klikněte na tlačítko **OK** a pak zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-217">Click **OK**, and close the page.</span></span>
 
-### <a name="assign-a-project-resource-to-a-project"></a>Přiřazení prostředku projektu k projektu
+### <a name="assign-a-project-resource-to-a-project"></a><span data-ttu-id="f76ed-218">Přiřazení prostředku projektu k projektu</span><span class="sxs-lookup"><span data-stu-id="f76ed-218">Assign a project resource to a project</span></span>
 
-1.  Klikněte na **Řízení a účetnictví projektů** &gt; **Obecné** &gt; **Projekty** &gt; **Všechny projekty** a otevřete projekt **Upgrade XYZ fáze 2**.
-2.  Na kartě **Projektový tým a plánování** klikněte na možnost **Přidat**.
-3.  V poli **Role** vyberte **Člen týmu**.
-4.  Klikněte na **Rezervovat z kalendáře**.
-5.  Na stránce **Dostupnost prostředku** klepněte na **Zobrazit nastavení**.
-6.  Na stránce **Upravit nastavení zobrazení** zadejte následující hodnoty:
-    -   **Formát pro zobrazení rozsahu dat:** - den
-    -   **Zobrazit popisy dostupnosti:** - Ano
-    -   **Zobrazit zbývající kapacitu** - Ano
-7.  V seznamu zdrojů vyberte prostředek.
-8.  Klepněte na tlačítko **Závazně rezervovat** &gt; **Plná kapacita**.
-9.  Zavřete stránku.
+1.  <span data-ttu-id="f76ed-219">Klikněte na **Řízení a účetnictví projektů** &gt; **Obecné** &gt; **Projekty** &gt; **Všechny projekty** a otevřete projekt **Upgrade XYZ fáze 2**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-219">Click **Project management and accounting** &gt; **Common** &gt; **Projects** &gt; **All projects**, and open the **XYZ Upgrade Phase 2** project.</span></span>
+2.  <span data-ttu-id="f76ed-220">Na kartě **Projektový tým a plánování** klikněte na možnost **Přidat**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-220">On the **Project team and scheduling** tab, click **Add**.</span></span>
+3.  <span data-ttu-id="f76ed-221">V poli **Role** vyberte **Člen týmu**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-221">In the **Role** field, select **Team member**.</span></span>
+4.  <span data-ttu-id="f76ed-222">Klikněte na **Rezervovat z kalendáře**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-222">Click **Book from calendar**.</span></span>
+5.  <span data-ttu-id="f76ed-223">Na stránce **Dostupnost prostředku** klepněte na **Zobrazit nastavení**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-223">On the **Resource availability** page, click **View settings**.</span></span>
+6.  <span data-ttu-id="f76ed-224">Na stránce **Upravit nastavení zobrazení** zadejte následující hodnoty:</span><span class="sxs-lookup"><span data-stu-id="f76ed-224">On the **Adjust view settings** page, enter the following values:</span></span>
+    -   <span data-ttu-id="f76ed-225">**Formát pro zobrazení rozsahu dat:** - den</span><span class="sxs-lookup"><span data-stu-id="f76ed-225">**Format for date range view** - Day</span></span>
+    -   <span data-ttu-id="f76ed-226">**Zobrazit popisy dostupnosti:** - Ano</span><span class="sxs-lookup"><span data-stu-id="f76ed-226">**Display availability descriptions** - Yes</span></span>
+    -   <span data-ttu-id="f76ed-227">**Zobrazit zbývající kapacitu** - Ano</span><span class="sxs-lookup"><span data-stu-id="f76ed-227">**Display remaining capacity** - Yes</span></span>
+7.  <span data-ttu-id="f76ed-228">V seznamu zdrojů vyberte prostředek.</span><span class="sxs-lookup"><span data-stu-id="f76ed-228">In the list of resources, select a resource.</span></span>
+8.  <span data-ttu-id="f76ed-229">Klepněte na tlačítko **Závazně rezervovat** &gt; **Plná kapacita**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-229">Click **Hard book** &gt; **Full capacity**.</span></span>
+9.  <span data-ttu-id="f76ed-230">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-230">Close the page.</span></span>
 
-### <a name="assign-a-resource-to-a-default-role"></a>Přiřazení prostředku k jiné roli
+### <a name="assign-a-resource-to-a-default-role"></a><span data-ttu-id="f76ed-231">Přiřazení prostředku k jiné roli</span><span class="sxs-lookup"><span data-stu-id="f76ed-231">Assign a resource to a default role</span></span>
 
-Pokud chcete usnadnit práci manažerům projektu nebo prostředků, můžete přejít hlouběji do podrobností, které lze pro projekt rezervovat. Můžete přiřadit výchozí roli k existujícímu prostředku nebo nově získanému prostředku. Například když byl přijat Daniel, měl zkušenosti a schopnosti plnit roli obchodního analytika. Správce prostředků přiřadil tuto roli Danielovi jako výchozí. Proto správce prostředků přidal Daniela do fondu obchodních analytiků, kteří jsou k dispozici pro práci na projektech. 
+<span data-ttu-id="f76ed-232">Pokud chcete usnadnit práci manažerům projektu nebo prostředků, můžete přejít hlouběji do podrobností, které lze pro projekt rezervovat.</span><span class="sxs-lookup"><span data-stu-id="f76ed-232">To help project or resource managers, you can drill down further on the resources that can be reserved for a project.</span></span> <span data-ttu-id="f76ed-233">Můžete přiřadit výchozí roli k existujícímu prostředku nebo nově získanému prostředku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-233">You can associate a default role with an existing resource or a newly acquired resource.</span></span> <span data-ttu-id="f76ed-234">Například když byl přijat Daniel, měl zkušenosti a schopnosti plnit roli obchodního analytika.</span><span class="sxs-lookup"><span data-stu-id="f76ed-234">For example, when Daniel was hired, he had the experience and skills to fill the Business analyst role.</span></span> <span data-ttu-id="f76ed-235">Správce prostředků přiřadil tuto roli Danielovi jako výchozí.</span><span class="sxs-lookup"><span data-stu-id="f76ed-235">The resource manager assigned this role as Daniel's default role.</span></span> <span data-ttu-id="f76ed-236">Proto správce prostředků přidal Daniela do fondu obchodních analytiků, kteří jsou k dispozici pro práci na projektech.</span><span class="sxs-lookup"><span data-stu-id="f76ed-236">Therefore, the resource manager added Daniel to a pool of business analysts who are available to work on projects.</span></span> 
 
-Během rezervování zdrojů mohou projektoví manažeři filtrovat zdroje v roli, které jsou k dispozici pro práci na projektech. Tyto údaje lze použít jako jednu z kritérií při provádění analýzy rozhodnutí s více kritérii během plnění prostředků. Mohou také přidat další charakteristiky prostředků do filtru a vyhledat zdroje, které mají určité dovednosti, vzdělání a zkušenosti s daným projektem. 
+<span data-ttu-id="f76ed-237">Během rezervování zdrojů mohou projektoví manažeři filtrovat zdroje v roli, které jsou k dispozici pro práci na projektech.</span><span class="sxs-lookup"><span data-stu-id="f76ed-237">During resource reservation, project managers can filter the role resources that are available to work on projects.</span></span> <span data-ttu-id="f76ed-238">Tyto údaje lze použít jako jednu z kritérií při provádění analýzy rozhodnutí s více kritérii během plnění prostředků.</span><span class="sxs-lookup"><span data-stu-id="f76ed-238">They can use this information as one criterion when they perform multi-criteria decision analysis during resource fulfillment.</span></span> <span data-ttu-id="f76ed-239">Mohou také přidat další charakteristiky prostředků do filtru a vyhledat zdroje, které mají určité dovednosti, vzdělání a zkušenosti s daným projektem.</span><span class="sxs-lookup"><span data-stu-id="f76ed-239">They can also add other resource characteristics to the filter to search for resources that have specific skills, education, and experience for a given project.</span></span> 
 
-**Situace:** začal schválený projekt a role Hlavní manažer projektu byla během fáze plánování projektu rezervována jako plánovaný zdroj. Manažer prostředků získá prostředek pro naplnění role Hlavní manažer projektu.
+<span data-ttu-id="f76ed-240">**Situace:** začal schválený projekt a role Hlavní manažer projektu byla během fáze plánování projektu rezervována jako plánovaný zdroj.</span><span class="sxs-lookup"><span data-stu-id="f76ed-240">**Scenario:** An approved project has started, and the Senior project manager role was reserved as a planned resource during the project planning stage.</span></span> <span data-ttu-id="f76ed-241">Manažer prostředků získá prostředek pro naplnění role Hlavní manažer projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-241">The resource manager has now acquired a resource to fulfill the Senior project manager role.</span></span>
 
-1.  Klepněte na tlačítko **Řízení a účetnictví projektů** &gt; **Zdroje projektu** &gt; **Seznam zdrojů**.
-2.  V seznamu **Prostředky** vyberte položku **Daniel Goldschmidt**.
-3.  Klepněte na tlačítko **Prostředek projektu** &gt; **Udržovat** &gt; **Role prostředku**.
-4.  Klepněte na **Nový** a zadejte následující hodnoty:
-    -   **Platnost:** - (aktuální datum)
-    -   **Vypršení platnosti:** - nikdy
-    -   **Role:** - hlavní manažer projektu
-5.  Klikněte na tlačítko **Uložit** a pak zavřete stránku.
-6.  Na kartě **Kompetence** přidejte dovednost **ProjectMgmt** a certifikát **PMP**.
+1.  <span data-ttu-id="f76ed-242">Klepněte na tlačítko **Řízení a účetnictví projektů** &gt; **Zdroje projektu** &gt; **Seznam zdrojů**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-242">Click **Project management and accounting** &gt; **Project resources** &gt; **Resources list**.</span></span>
+2.  <span data-ttu-id="f76ed-243">V seznamu **Prostředky** vyberte položku **Daniel Goldschmidt**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-243">In the **Resource** list, select **Daniel Goldschmidt**.</span></span>
+3.  <span data-ttu-id="f76ed-244">Klepněte na tlačítko **Prostředek projektu** &gt; **Udržovat** &gt; **Role prostředku**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-244">Click **Project resource** &gt; **Maintain** &gt; **Resource role**.</span></span>
+4.  <span data-ttu-id="f76ed-245">Klepněte na **Nový** a zadejte následující hodnoty:</span><span class="sxs-lookup"><span data-stu-id="f76ed-245">Click **New**, and enter the following values:</span></span>
+    -   <span data-ttu-id="f76ed-246">**Platnost:** - (aktuální datum)</span><span class="sxs-lookup"><span data-stu-id="f76ed-246">**Effective** - (The current date)</span></span>
+    -   <span data-ttu-id="f76ed-247">**Vypršení platnosti:** - nikdy</span><span class="sxs-lookup"><span data-stu-id="f76ed-247">**Expiration** - Never</span></span>
+    -   <span data-ttu-id="f76ed-248">**Role:** - hlavní manažer projektu</span><span class="sxs-lookup"><span data-stu-id="f76ed-248">**Role** - Senior Project Manager</span></span>
+5.  <span data-ttu-id="f76ed-249">Klikněte na tlačítko **Uložit** a pak zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-249">Click **Save**, and then close the page.</span></span>
+6.  <span data-ttu-id="f76ed-250">Na kartě **Kompetence** přidejte dovednost **ProjectMgmt** a certifikát **PMP**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-250">On the **Competencies** tab, add the **ProjectMgmt** skill and the **PMP** certificate.</span></span>
 
-## <a name="set-up-role-based-pricing"></a>Nastavení cen na základě role
-Pro role lze nastavit všechny náklady, prodeje, a převodní ceny.
+## <a name="set-up-role-based-pricing"></a><span data-ttu-id="f76ed-251">Nastavení cen na základě role</span><span class="sxs-lookup"><span data-stu-id="f76ed-251">Set up role-based pricing</span></span>
+<span data-ttu-id="f76ed-252">Pro role lze nastavit všechny náklady, prodeje, a převodní ceny.</span><span class="sxs-lookup"><span data-stu-id="f76ed-252">All cost, sales, and transfer prices can be set up for roles.</span></span>
 
-1.  Klepněte na tlačítko **Řízení a účetnictví projektu >** &gt; **Nastavení** &gt; **Ceny** &gt; **Prodejní cena (hodinová)**.
-2.  Klepněte na možnost **Nový**.
-3.  Zadejte datum platnosti.
-4.  Ve sloupci **Role** vyberte roli.
-5.  Ve sloupci **Ocenění** zadejte cenu pro vybranou roli prostředku.
+1.  <span data-ttu-id="f76ed-253">Klepněte na tlačítko **Řízení a účetnictví projektu >** &gt; **Nastavení** &gt; **Ceny** &gt; **Prodejní cena (hodinová)**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-253">Click **Project management and accounting** &gt; **Setup** &gt; **Prices** &gt; **Sales price (hour)**.</span></span>
+2.  <span data-ttu-id="f76ed-254">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-254">Click **New**.</span></span>
+3.  <span data-ttu-id="f76ed-255">Zadejte datum platnosti.</span><span class="sxs-lookup"><span data-stu-id="f76ed-255">Enter an effective date.</span></span>
+4.  <span data-ttu-id="f76ed-256">Ve sloupci **Role** vyberte roli.</span><span class="sxs-lookup"><span data-stu-id="f76ed-256">In the **Role** column, select a role.</span></span>
+5.  <span data-ttu-id="f76ed-257">Ve sloupci **Ocenění** zadejte cenu pro vybranou roli prostředku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-257">In the **Pricing** column, enter a price for the selected resource role.</span></span>
 
-## <a name="form-a-project-team"></a>Formování projektového týmu
-Pokud chcete použít role, které byly dříve nastaveny, v projektu, projektový manažer musí přiřadit role k projektu. Pro projekt lze přiřadit více rolí a aplikace Finance and Operations tyto role automaticky při rezervaci označí, aby se zabránilo nejasnostem. Například pokud manažer projektu požaduje tři softwarové techniky, automaticky se vygenerují tři role Softwarový technik, které jsou pojmenovány jako Softwarový technik 1, Softwarový technik 2 a Softwarový technik 3. Pokud byly dříve pro roli nastaveny charakteristiky role, jsou použity jako filtr při hledání zdroje. Pro další upřesnění hledání lze volitelně přidat další charakteristiky. 
+## <a name="form-a-project-team"></a><span data-ttu-id="f76ed-258">Formování projektového týmu</span><span class="sxs-lookup"><span data-stu-id="f76ed-258">Form a project team</span></span>
+<span data-ttu-id="f76ed-259">Pokud chcete použít role, které byly dříve nastaveny, v projektu, projektový manažer musí přiřadit role k projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-259">To use the roles that were previously set up in a project, a project manager must associate the roles with the project.</span></span> <span data-ttu-id="f76ed-260">Pro projekt lze přiřadit více rolí a aplikace Finance and Operations tyto role automaticky při rezervaci označí, aby se zabránilo nejasnostem.</span><span class="sxs-lookup"><span data-stu-id="f76ed-260">Multiple roles can be assigned for a project, and Finance and Operations automatically labels these roles during reservation to prevent confusion.</span></span> <span data-ttu-id="f76ed-261">Například pokud manažer projektu požaduje tři softwarové techniky, automaticky se vygenerují tři role Softwarový technik, které jsou pojmenovány jako Softwarový technik 1, Softwarový technik 2 a Softwarový technik 3.</span><span class="sxs-lookup"><span data-stu-id="f76ed-261">For example, if the project manager requires three software engineers, three Software engineer roles that have software engineer 1, software engineer 2, and software engineer 3 as their labels are automatically generated.</span></span> <span data-ttu-id="f76ed-262">Pokud byly dříve pro roli nastaveny charakteristiky role, jsou použity jako filtr při hledání zdroje.</span><span class="sxs-lookup"><span data-stu-id="f76ed-262">If role characteristics were previously set for the role, they are applied as a filter during searches for a resource.</span></span> <span data-ttu-id="f76ed-263">Pro další upřesnění hledání lze volitelně přidat další charakteristiky.</span><span class="sxs-lookup"><span data-stu-id="f76ed-263">Additional characteristics can be added as required to further refine the search.</span></span> 
 
-Možnost Zobrazit nastavení lze také upravit tak, aby poskytovala lepší pohled na dostupnost prostředků. K dispozici je možnost zobrazit dostupnost hodinově, denně, týdně, měsíčně, čtvrtletně a ročně. Existuje také možnost zobrazit dostupnou a zbývající kapacitu prostředků. Tato možnost je užitečná pro časovou správu, pokud odhadujete dostupný čas pro aktivity nebo dostupnost prostředku. 
+<span data-ttu-id="f76ed-264">Možnost Zobrazit nastavení lze také upravit tak, aby poskytovala lepší pohled na dostupnost prostředků.</span><span class="sxs-lookup"><span data-stu-id="f76ed-264">View settings can also be customized to give a better view of resource availability.</span></span> <span data-ttu-id="f76ed-265">K dispozici je možnost zobrazit dostupnost hodinově, denně, týdně, měsíčně, čtvrtletně a ročně.</span><span class="sxs-lookup"><span data-stu-id="f76ed-265">There are options to show hourly, daily, weekly, monthly, quarterly, and annual availability.</span></span> <span data-ttu-id="f76ed-266">Existuje také možnost zobrazit dostupnou a zbývající kapacitu prostředků.</span><span class="sxs-lookup"><span data-stu-id="f76ed-266">There is also an option to show available and remaining capacity on resources.</span></span> <span data-ttu-id="f76ed-267">Tato možnost je užitečná pro časovou správu, pokud odhadujete dostupný čas pro aktivity nebo dostupnost prostředku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-267">This option is useful for time management when you're estimating available time for activities or resource availability.</span></span> 
 
-Manažer projektu může vybrat roli na stránce a poté, je-li dostupný prostředek, který odpovídá požadavkům, může vybrat a rezervovat prostředek pro obsazení role. Mějte na paměti, že prostředky nemusí být v této fázi plánování rezervovány. Při vytváření struktury WBS můžete nahradit role skutečnými personálními prostředky pro daný projekt. Pokud role budou nahrazeny skutečnými zaměstnanci ve struktuře WBS, nastavení prostředků automaticky aktualizuje výpis a plánování projektového týmu. 
+<span data-ttu-id="f76ed-268">Manažer projektu může vybrat roli na stránce a poté, je-li dostupný prostředek, který odpovídá požadavkům, může vybrat a rezervovat prostředek pro obsazení role.</span><span class="sxs-lookup"><span data-stu-id="f76ed-268">The project manager can select a role on the page and then, if there is an available resource that fits the requirement, select to reserve a resource to fill the role.</span></span> <span data-ttu-id="f76ed-269">Mějte na paměti, že prostředky nemusí být v této fázi plánování rezervovány.</span><span class="sxs-lookup"><span data-stu-id="f76ed-269">Note that the resources don't have to be reserved at this point during the planning stage.</span></span> <span data-ttu-id="f76ed-270">Při vytváření struktury WBS můžete nahradit role skutečnými personálními prostředky pro daný projekt.</span><span class="sxs-lookup"><span data-stu-id="f76ed-270">When you create a WBS, you can replace roles with staffed resources for the project.</span></span> <span data-ttu-id="f76ed-271">Pokud role budou nahrazeny skutečnými zaměstnanci ve struktuře WBS, nastavení prostředků automaticky aktualizuje výpis a plánování projektového týmu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-271">If roles are replaced with staffed resources in the WBS, the resource setup automatically updates the project team listing and scheduling.</span></span> 
 
-[![Seznam týmů projektu, který obsahuje role a skutečné zdroje](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg) 
+<span data-ttu-id="f76ed-272">[![Seznam týmů projektu, který obsahuje role a skutečné zdroje](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg)</span><span class="sxs-lookup"><span data-stu-id="f76ed-272">[![Project team listing that includes both roles and actual resources](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg)</span></span> 
 
-Vedoucí projektu má řadu možností pro rezervaci zdroje na projekt, například **Zbývající kapacita**, **Plná kapacita**, **Procento kapacity** a **Zadání hodin**. Tyto možnosti rezervace lze kdykoli zrušit v případě, že se změní přiřazení prostředků. Podporovány jsou dva typy rezervace:
+<span data-ttu-id="f76ed-273">Vedoucí projektu má řadu možností pro rezervaci zdroje na projekt, například **Zbývající kapacita**, **Plná kapacita**, **Procento kapacity** a **Zadání hodin**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-273">The project manager has various options for booking a resource for a project, such as **Remaining capacity**, **Full capacity**, **Capacity percentage**, and **Specify hours**.</span></span> <span data-ttu-id="f76ed-274">Tyto možnosti rezervace lze kdykoli zrušit v případě, že se změní přiřazení prostředků.</span><span class="sxs-lookup"><span data-stu-id="f76ed-274">These booking options can be canceled at any time if resource assignments change.</span></span> <span data-ttu-id="f76ed-275">Podporovány jsou dva typy rezervace:</span><span class="sxs-lookup"><span data-stu-id="f76ed-275">Two types of booking are supported:</span></span>
 
--   **Závazná rezervace** – Rezervace prostředku byla schválena a práce na projektu byla po určenou dobu trvání potvrzena.
--   **Předběžná rezervace** – rezervace prostředku a účast na projektu po určenou dobu trvání je nezávazně schválena.
+-   <span data-ttu-id="f76ed-276">**Závazná rezervace** – Rezervace prostředku byla schválena a práce na projektu byla po určenou dobu trvání potvrzena.</span><span class="sxs-lookup"><span data-stu-id="f76ed-276">**Hard Book** – The resource reservation was approved and confirmed to work on the engagement for the specified duration.</span></span>
+-   <span data-ttu-id="f76ed-277">**Předběžná rezervace** – rezervace prostředku a účast na projektu po určenou dobu trvání je nezávazně schválena.</span><span class="sxs-lookup"><span data-stu-id="f76ed-277">**Soft book** – The resource reservations was tentatively set to work on the engagement for the specified duration.</span></span>
 
-Při vytváření projektového týmu postupujte následujícím způsobem.
+<span data-ttu-id="f76ed-278">Při vytváření projektového týmu postupujte následujícím způsobem.</span><span class="sxs-lookup"><span data-stu-id="f76ed-278">The following procedure explains how to create a project team.</span></span>
 
-### <a name="create-a-project-team"></a>Vytvoření projektového týmu
+### <a name="create-a-project-team"></a><span data-ttu-id="f76ed-279">Vytvoření projektového týmu</span><span class="sxs-lookup"><span data-stu-id="f76ed-279">Create a project team</span></span>
 
-1.  Na stránce se seznamem **Všechny projekty** vyberte projekt a klepněte na **Upravit**.
-2.  Na kartě **Projektový tým a plánování** v poli **Naplánovat koncové datum** zadejte datum zahájení plánu posunuté o jeden měsíc. Je-li datum zahájení plánu například 24. června 2017 (24/06/2017), zadejte **24/07/2017**.
-3.  Klikněte na tlačítko **Přidat**.
-4.  V podokně **Přidat role do projektu** v poli **Role** vyberte **Vrchní manažer projektu**.
-5.  Klikněte na **Požadované kompetence**.
-6.  Na stránce **Vybrat charakteristiky** jsou standardně zvoleny charakteristiky, které jste dříve nastavili pro roli Vrchní manažer projektu. Klepněte na tlačítko **OK**.
-7.  Na stránce **Přidat role do projektu** v poli **Počet prostředků** zadejte **1**.
-8.  V poli **Prostředek** vyhledávání zobrazí všechny zdroje, které mají požadované kompetence. Vyberte **Daniel Goldschmidt** a klepněte na tlačítko **Vytvořit**.
-9.  Na stránce **Projekt** klikněte na **Přidat**.
-10. V podokně **Přidat role do projektu** v poli **Role** vyberte **Člen týmu**. V poli **Počet prostředků** zadejte hodnotu **5**.
-11. Klepněte na volbu **Nový**.
-12. Na stránce **Projekty** klepněte na **Splnit prostředek**.
+1.  <span data-ttu-id="f76ed-280">Na stránce se seznamem **Všechny projekty** vyberte projekt a klepněte na **Upravit**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-280">On the **All projects** list page, select a project, and then click **Edit**.</span></span>
+2.  <span data-ttu-id="f76ed-281">Na kartě **Projektový tým a plánování** v poli **Naplánovat koncové datum** zadejte datum zahájení plánu posunuté o jeden měsíc.</span><span class="sxs-lookup"><span data-stu-id="f76ed-281">On the **Project team and scheduling** tab, in the **Schedule end date** field, enter the schedule start date plus one month.</span></span> <span data-ttu-id="f76ed-282">Je-li datum zahájení plánu například 24. června 2017 (24/06/2017), zadejte **24/07/2017**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-282">For example, if the schedule start date is June 24, 2017 (24/06/2017), enter **24/07/2017**.</span></span>
+3.  <span data-ttu-id="f76ed-283">Klikněte na tlačítko **Přidat**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-283">Click **Add**.</span></span>
+4.  <span data-ttu-id="f76ed-284">V podokně **Přidat role do projektu** v poli **Role** vyberte **Vrchní manažer projektu**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-284">In the **Add roles to the project** pane, in the **Role** field, select **Senior Project Manager**.</span></span>
+5.  <span data-ttu-id="f76ed-285">Klikněte na **Požadované kompetence**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-285">Click **Required competencies**.</span></span>
+6.  <span data-ttu-id="f76ed-286">Na stránce **Vybrat charakteristiky** jsou standardně zvoleny charakteristiky, které jste dříve nastavili pro roli Vrchní manažer projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-286">On the **Choose characteristics** page, the characteristics that you previously set for the Senior project manager role are selected by default.</span></span> <span data-ttu-id="f76ed-287">Klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-287">Click **OK**.</span></span>
+7.  <span data-ttu-id="f76ed-288">Na stránce **Přidat role do projektu** v poli **Počet prostředků** zadejte **1**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-288">On the **Add roles to project** page, in the **Number of resources** field, enter **1**.</span></span>
+8.  <span data-ttu-id="f76ed-289">V poli **Prostředek** vyhledávání zobrazí všechny zdroje, které mají požadované kompetence.</span><span class="sxs-lookup"><span data-stu-id="f76ed-289">In the **Resource** field, the lookup shows all resources that have the required competencies.</span></span> <span data-ttu-id="f76ed-290">Vyberte **Daniel Goldschmidt** a klepněte na tlačítko **Vytvořit**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-290">Select **Daniel Goldschmidt**, and then click **Create**.</span></span>
+9.  <span data-ttu-id="f76ed-291">Na stránce **Projekt** klikněte na **Přidat**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-291">On the **Project** page, click **Add**.</span></span>
+10. <span data-ttu-id="f76ed-292">V podokně **Přidat role do projektu** v poli **Role** vyberte **Člen týmu**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-292">In the **Add roles to the project** pane, in the **Role** field, select **Team member**.</span></span> <span data-ttu-id="f76ed-293">V poli **Počet prostředků** zadejte hodnotu **5**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-293">In the **Number of resources** field, enter **5**.</span></span>
+11. <span data-ttu-id="f76ed-294">Klepněte na volbu **Nový**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-294">Click **Create**.</span></span>
+12. <span data-ttu-id="f76ed-295">Na stránce **Projekty** klepněte na **Splnit prostředek**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-295">On the **Projects** page, click **Fulfill resource**.</span></span>
 
-## <a name="resource-capacity-synchronization"></a>Synchronizace kapacity prostředku
-Procesy pro synchronizaci prostředků pomáhají zajistit, aby kalendář a základní informace o kalendáři přešly dále do plánování prostředků pro projekt. Pokud dojde ke změně kalendáře, procesy provedou požadované aktualizace v plánování zdrojů pro projekt. Procesy také pomáhají zvýšit efektivitu, protože informace o prostředcích v kalendáři jsou synchronizovány v předstihu tak, aby se informace o plánování prostředků předávaly rychleji. Doporučujeme naplánovat procesy jako dávku namísto postupného zpracování. V opačném případě je riziko, že někdo zapomene inkluzivní datum, kdy byly informace naposled synchronizovány. Pokud inkluzivní data nejsou použity, mohou vzniknout mezery v synchronizaci dat.
+## <a name="resource-capacity-synchronization"></a><span data-ttu-id="f76ed-296">Synchronizace kapacity prostředku</span><span class="sxs-lookup"><span data-stu-id="f76ed-296">Resource capacity synchronization</span></span>
+<span data-ttu-id="f76ed-297">Procesy pro synchronizaci prostředků pomáhají zajistit, aby kalendář a základní informace o kalendáři přešly dále do plánování prostředků pro projekt.</span><span class="sxs-lookup"><span data-stu-id="f76ed-297">The processes for resource synchronization helps guarantee that the calendar and base calendar information trickles down into project resource scheduling.</span></span> <span data-ttu-id="f76ed-298">Pokud dojde ke změně kalendáře, procesy provedou požadované aktualizace v plánování zdrojů pro projekt.</span><span class="sxs-lookup"><span data-stu-id="f76ed-298">If the calendar is changed, the processes make the required updates to the scheduling of project resources.</span></span> <span data-ttu-id="f76ed-299">Procesy také pomáhají zvýšit efektivitu, protože informace o prostředcích v kalendáři jsou synchronizovány v předstihu tak, aby se informace o plánování prostředků předávaly rychleji.</span><span class="sxs-lookup"><span data-stu-id="f76ed-299">The processes also help improve performance, because the calendar’s resource information is synchronized in advance, so that updates to resource scheduling information occur more quickly.</span></span> <span data-ttu-id="f76ed-300">Doporučujeme naplánovat procesy jako dávku namísto postupného zpracování.</span><span class="sxs-lookup"><span data-stu-id="f76ed-300">We recommend that you schedule the processes as a batch instead of one at a time.</span></span> <span data-ttu-id="f76ed-301">V opačném případě je riziko, že někdo zapomene inkluzivní datum, kdy byly informace naposled synchronizovány.</span><span class="sxs-lookup"><span data-stu-id="f76ed-301">Otherwise, there is a risk that someone will forget the inclusive dates when the information was last synchronized.</span></span> <span data-ttu-id="f76ed-302">Pokud inkluzivní data nejsou použity, mohou vzniknout mezery v synchronizaci dat.</span><span class="sxs-lookup"><span data-stu-id="f76ed-302">If inclusive dates aren't used, gaps can occur during date synchronization.</span></span>
 
 ### <a name="calendar-synchronizationmediaprojectresourcing04-1024x471jpg"></a>![Synchronizace kalendáře](./media/projectresourcing04-1024x471.jpg)
 
-**Synchronizace shrnutí kapacity pro prostředek**
+<span data-ttu-id="f76ed-304">**Synchronizace shrnutí kapacity pro prostředek**</span><span class="sxs-lookup"><span data-stu-id="f76ed-304">**Synchronize resource capacity roll-ups**</span></span>
 
-Proces synchronizace umožňuje synchronizovat všechny informace v kalendáři prostředku. Tyto informace zahrnují základní informace z kalendáře o všech změnách v tabulce kapacity kalendáře prostředků projektu. Pokud jsou do projektu přidány nové prostředky, synchronizace pomáhá zajistit, že jsou aktualizované informace k dispozici. Tuto synchronizaci lze provádět kdykoliv. 
+<span data-ttu-id="f76ed-305">Proces synchronizace umožňuje synchronizovat všechny informace v kalendáři prostředku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-305">The synchronization process is designed to synchronize all resource calendar information.</span></span> <span data-ttu-id="f76ed-306">Tyto informace zahrnují základní informace z kalendáře o všech změnách v tabulce kapacity kalendáře prostředků projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-306">This information includes base calendar information about any changes to the project’s Resource calendar capacity table.</span></span> <span data-ttu-id="f76ed-307">Pokud jsou do projektu přidány nové prostředky, synchronizace pomáhá zajistit, že jsou aktualizované informace k dispozici.</span><span class="sxs-lookup"><span data-stu-id="f76ed-307">If new resources are added in the project, synchronization helps ensure that the updated calendar information is available.</span></span> <span data-ttu-id="f76ed-308">Tuto synchronizaci lze provádět kdykoliv.</span><span class="sxs-lookup"><span data-stu-id="f76ed-308">This synchronization can be done at any time.</span></span> 
 
-Doporučujeme používat dávky. Možnosti jsou dostupné při synchronizaci rezervací kapacity.
+<span data-ttu-id="f76ed-309">Doporučujeme používat dávky.</span><span class="sxs-lookup"><span data-stu-id="f76ed-309">We recommend that you use a batch.</span></span> <span data-ttu-id="f76ed-310">Možnosti jsou dostupné při synchronizaci rezervací kapacity.</span><span class="sxs-lookup"><span data-stu-id="f76ed-310">The options are available in synchronizing capacity reservations.</span></span>
 
--   Klikněte na **Řízení a účetnictví projektů** &gt; **Periodicky** &gt; **Synchronizace kapacity** &gt; **Synchronizace shrnutí kapacity pro prostředek**.
+-   <span data-ttu-id="f76ed-311">Klikněte na **Řízení a účetnictví projektů** &gt; **Periodicky** &gt; **Synchronizace kapacity** &gt; **Synchronizace shrnutí kapacity pro prostředek**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-311">Click **Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resources capacity roll-ups**.</span></span>
 
-| Parametr | popis                                                                                                                                                                                          |
+| <span data-ttu-id="f76ed-312">Parametr</span><span class="sxs-lookup"><span data-stu-id="f76ed-312">Option</span></span> | <span data-ttu-id="f76ed-313">popis</span><span class="sxs-lookup"><span data-stu-id="f76ed-313">Description</span></span>                                                                                                                                                                                          |
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ano    | Synchronizujte všechna data prostředků s kalendářem a základními informacemi o kalendáři a nahraďte všechny informace v kalendáři kapacity prostředku projektu.                                                  |
-| Č.     | Synchronizujte data prostředků na základě kódu intervalu dat a zadaném počátečním a koncovým datem. Tato možnost neodstraní existující data, a aktualizuje údaje pouze pro nově přidané prostředky. |
+| <span data-ttu-id="f76ed-314">Ano</span><span class="sxs-lookup"><span data-stu-id="f76ed-314">Yes</span></span>    | <span data-ttu-id="f76ed-315">Synchronizujte všechna data prostředků s kalendářem a základními informacemi o kalendáři a nahraďte všechny informace v kalendáři kapacity prostředku projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-315">Synchronize all resource data with calendar and base calendar information, and replace all information in the project's resource capacity calendar.</span></span>                                                  |
+| <span data-ttu-id="f76ed-316">Č.</span><span class="sxs-lookup"><span data-stu-id="f76ed-316">No</span></span>     | <span data-ttu-id="f76ed-317">Synchronizujte data prostředků na základě kódu intervalu dat a zadaném počátečním a koncovým datem.</span><span class="sxs-lookup"><span data-stu-id="f76ed-317">Synchronize resource data, based on the date interval code, and the specified start and end dates.</span></span> <span data-ttu-id="f76ed-318">Tato možnost neodstraní existující data, a aktualizuje údaje pouze pro nově přidané prostředky.</span><span class="sxs-lookup"><span data-stu-id="f76ed-318">This option doesn't remove existing data, and updates information only for newly added resources.</span></span> |
 
-[![Proces synchronizace](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)
+<span data-ttu-id="f76ed-319">[![Proces synchronizace](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)</span><span class="sxs-lookup"><span data-stu-id="f76ed-319">[![Synchronization process](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)</span></span>
 
-## <a name="set-up-roles-on-wbs-templates"></a>Nastavení rolí v šablonách WBS
-Vedoucí projektu může nastavit šablony WBS, které později použijí při vytváření struktury WBS pro nové projekty. Vedoucí projektu nyní může při vytváření šablony přidat role. Pomocí následujícího postupu se přiřadí role k šabloně WBS.** **
+## <a name="set-up-roles-on-wbs-templates"></a><span data-ttu-id="f76ed-320">Nastavení rolí v šablonách WBS</span><span class="sxs-lookup"><span data-stu-id="f76ed-320">Set up roles on WBS templates</span></span>
+<span data-ttu-id="f76ed-321">Vedoucí projektu může nastavit šablony WBS, které později použijí při vytváření struktury WBS pro nové projekty.</span><span class="sxs-lookup"><span data-stu-id="f76ed-321">Project managers can set up WBS templates that they can apply when they create a WBS for new projects.</span></span> <span data-ttu-id="f76ed-322">Vedoucí projektu nyní může při vytváření šablony přidat role.</span><span class="sxs-lookup"><span data-stu-id="f76ed-322">Project managers can add roles when they create a template.</span></span> <span data-ttu-id="f76ed-323">Pomocí následujícího postupu se přiřadí role k šabloně WBS.** **</span><span class="sxs-lookup"><span data-stu-id="f76ed-323">Use the following procedure to assign a role to a WBS template.** **</span></span>
 
-1.  Klikněte na **Řízení a účetnictví projektů** &gt; **Nastavení** &gt; **Projekty** &gt; **Šablony strukturovaného rozpisu prací**.
-2.  Klepněte na tlačítko **Podrobnosti** u vybrané šablony WBS.
-3.  Vyberte úkol v seznamu a pak v poli **Role** vyberte roli pro přiřazení k úloze.
+1.  <span data-ttu-id="f76ed-324">Klikněte na **Řízení a účetnictví projektů** &gt; **Nastavení** &gt; **Projekty** &gt; **Šablony strukturovaného rozpisu prací**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-324">Click **Project management and accounting** &gt; **Setup** &gt; **Projects** &gt; **Work breakdown structure templates**.</span></span>
+2.  <span data-ttu-id="f76ed-325">Klepněte na tlačítko **Podrobnosti** u vybrané šablony WBS.</span><span class="sxs-lookup"><span data-stu-id="f76ed-325">Click **Details** for a selected WBS template.</span></span>
+3.  <span data-ttu-id="f76ed-326">Vyberte úkol v seznamu a pak v poli **Role** vyberte roli pro přiřazení k úloze.</span><span class="sxs-lookup"><span data-stu-id="f76ed-326">Select a task in the list, and then, in the **Role** field, select a role to assign to the task.</span></span>
 
-### <a name="work-with-a-wbs"></a>Práce se strukturou WBS
+### <a name="work-with-a-wbs"></a><span data-ttu-id="f76ed-327">Práce se strukturou WBS</span><span class="sxs-lookup"><span data-stu-id="f76ed-327">Work with a WBS</span></span>
 
-Můžete vytvořit novou strukturu WBS, nebo můžete zkopírovat strukturu WBS z existující šablony WBS. Manažer projektu může snadno spravovat prostředky přiřazením rolí k novým úkolům v rámci WBS. Role lze nahradit po pořízení prostředku, nebo po určení prostředku, který potvrdil práci na úkolu. Tato možnost umožňuje vedoucím projektu provádět následující úkoly:
+<span data-ttu-id="f76ed-328">Můžete vytvořit novou strukturu WBS, nebo můžete zkopírovat strukturu WBS z existující šablony WBS.</span><span class="sxs-lookup"><span data-stu-id="f76ed-328">You can create a new WBS, or you can copy a WBS from an existing WBS template.</span></span> <span data-ttu-id="f76ed-329">Manažer projektu může snadno spravovat prostředky přiřazením rolí k novým úkolům v rámci WBS.</span><span class="sxs-lookup"><span data-stu-id="f76ed-329">A project manager can easily manage the resources by assigning roles to new tasks on the WBS.</span></span> <span data-ttu-id="f76ed-330">Role lze nahradit po pořízení prostředku, nebo po určení prostředku, který potvrdil práci na úkolu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-330">Roles can be replaced after a resource is acquired, or after a confirmed resource to work on the task is identified.</span></span> <span data-ttu-id="f76ed-331">Tato možnost umožňuje vedoucím projektu provádět následující úkoly:</span><span class="sxs-lookup"><span data-stu-id="f76ed-331">This flexibility lets project managers perform the following tasks:</span></span>
 
--   Určit počet prostředků, které jsou požadovány pro balíky práce WBS.
--   Odhadovat náklady na projekt.
--   Určovat předběžný rozpočet.
--   Odhadovat dobu trvání aktivity na základě rolí a zdrojů.
--   Vyvíjet některé plány pro vedení projektu, které jsou založené na informacích o projektu.
+-   <span data-ttu-id="f76ed-332">Určit počet prostředků, které jsou požadovány pro balíky práce WBS.</span><span class="sxs-lookup"><span data-stu-id="f76ed-332">Identify the number of resources that are required for WBS work packages.</span></span>
+-   <span data-ttu-id="f76ed-333">Odhadovat náklady na projekt.</span><span class="sxs-lookup"><span data-stu-id="f76ed-333">Estimate project costs.</span></span>
+-   <span data-ttu-id="f76ed-334">Určovat předběžný rozpočet.</span><span class="sxs-lookup"><span data-stu-id="f76ed-334">Determine a preliminary budget.</span></span>
+-   <span data-ttu-id="f76ed-335">Odhadovat dobu trvání aktivity na základě rolí a zdrojů.</span><span class="sxs-lookup"><span data-stu-id="f76ed-335">Estimate activity duration, based on roles and resources.</span></span>
+-   <span data-ttu-id="f76ed-336">Vyvíjet některé plány pro vedení projektu, které jsou založené na informacích o projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-336">Develop some project management plans, based on the available project information.</span></span>
 
-Další možnosti byly přidány do struktury WBS a umožňují lepší využití přidělování prostředků.
+<span data-ttu-id="f76ed-337">Další možnosti byly přidány do struktury WBS a umožňují lepší využití přidělování prostředků.</span><span class="sxs-lookup"><span data-stu-id="f76ed-337">Additional options have been added in the WBS to better use the resourcing functionality.</span></span>
 
 <table>
 <colgroup>
@@ -266,95 +266,95 @@ Další možnosti byly přidány do struktury WBS a umožňují lepší využit�
 </colgroup>
 <thead>
 <tr class="header">
-<th>Možnost</th>
-<th>Popis</th>
+<th><span data-ttu-id="f76ed-338">Možnost</span><span class="sxs-lookup"><span data-stu-id="f76ed-338">Option</span></span></th>
+<th><span data-ttu-id="f76ed-339">Popis</span><span class="sxs-lookup"><span data-stu-id="f76ed-339">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Přiřazení prostředků</td>
-<td>Úlohy spojené se strukturou WBS viz přidělené prostředky, data, počty hodin a typ rezervace.</td>
+<td><span data-ttu-id="f76ed-340">Přiřazení prostředků</span><span class="sxs-lookup"><span data-stu-id="f76ed-340">Resource assignments</span></span></td>
+<td><span data-ttu-id="f76ed-341">Úlohy spojené se strukturou WBS viz přidělené prostředky, data, počty hodin a typ rezervace.</span><span class="sxs-lookup"><span data-stu-id="f76ed-341">View the assigned resources, dates, number of hours, and booking type for tasks on the WBS.</span></span></td>
 </tr>
 <tr class="even">
-<td>Automaticky generovat tým</td>
-<td>Automaticky přidělíte plánované prostředky pomocí rolí, které jsou přidruženy k úkolu. Aplikace Finance and Operations automaticky navrhuje plánované prostředky použitím analýzy kritérií s více rozhodnutími založené na rolích. Po nastavení rolí a úsilí (hodiny) pro úkoly ve struktuře WBS a vydání struktury klepněte na tlačítko <strong>Automaticky generovat tým</strong>. Požadovaný počet plánovaných prostředků je přidán do struktury WBS a na kartu <strong>Plánování projektu a týmu</strong>.</td>
+<td><span data-ttu-id="f76ed-342">Automaticky generovat tým</span><span class="sxs-lookup"><span data-stu-id="f76ed-342">Auto generate team</span></span></td>
+<td><span data-ttu-id="f76ed-343">Automaticky přidělíte plánované prostředky pomocí rolí, které jsou přidruženy k úkolu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-343">Automatically add planned resources by using roles that are associated with a task.</span></span> <span data-ttu-id="f76ed-344">Aplikace Finance and Operations automaticky navrhuje plánované prostředky použitím analýzy kritérií s více rozhodnutími založené na rolích.</span><span class="sxs-lookup"><span data-stu-id="f76ed-344">Finance and Operations automatically suggests planned resources by using multi-criteria decision analysis that is based on roles.</span></span> <span data-ttu-id="f76ed-345">Po nastavení rolí a úsilí (hodiny) pro úkoly ve struktuře WBS a vydání struktury klepněte na tlačítko <strong>Automaticky generovat tým</strong>.</span><span class="sxs-lookup"><span data-stu-id="f76ed-345">After the roles and effort (hours) have been set for the tasks in a WBS, and the structure has been released, click <strong>Auto generate team</strong>.</span></span> <span data-ttu-id="f76ed-346">Požadovaný počet plánovaných prostředků je přidán do struktury WBS a na kartu <strong>Plánování projektu a týmu</strong>.</span><span class="sxs-lookup"><span data-stu-id="f76ed-346">The required number of planned resources is added to the WBS and the <strong>Project and team scheduling</strong> tab.</span></span></td>
 </tr>
 <tr class="odd">
-<td>Prostředek (rozevírací seznam)</td>
-<td>Na stránce <strong>Spuštění přiřazení zdrojů </strong>můžete vybrat prostředky, které chcete závazně nebo nezávazně rezervovat podle zadaného trvání. Můžete upravit nastavení zobrazení a prohlédnout si trvání aktivit prostředku. Pomocí následujících možností můžete vybrat a přiřadit prostředky na úrovni balíčku práce:
+<td><span data-ttu-id="f76ed-347">Prostředek (rozevírací seznam)</span><span class="sxs-lookup"><span data-stu-id="f76ed-347">Resource (drop-down list)</span></span></td>
+<td><span data-ttu-id="f76ed-348">Na stránce <strong>Spuštění přiřazení zdrojů </strong>můžete vybrat prostředky, které chcete závazně nebo nezávazně rezervovat podle zadaného trvání.</span><span class="sxs-lookup"><span data-stu-id="f76ed-348">On the <strong>Launch resource assignment </strong>page, you can select resources to hard-book or soft-book, based on the specified duration.</span></span> <span data-ttu-id="f76ed-349">Můžete upravit nastavení zobrazení a prohlédnout si trvání aktivit prostředku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-349">You can adjust the view settings to see and set the duration of resource activities.</span></span> <span data-ttu-id="f76ed-350">Pomocí následujících možností můžete vybrat a přiřadit prostředky na úrovni balíčku práce:</span><span class="sxs-lookup"><span data-stu-id="f76ed-350">You can select and assign resources at the work package level by using the following options:</span></span>
 <ul>
-<li><strong>Přijmout</strong> – potvrdit změny u prostředku, který je přiřazen k úkolu.</li>
-<li><strong>Storno</strong> – zrušit změny u prostředku, který je přiřazen k úkolu.</li>
-<li><strong>Automaticky přiřadit</strong> – tato možnost vybere dostupný personální prostředek s odpovídající rolí pro vybraný úkol.</li>
+<li><span data-ttu-id="f76ed-351"><strong>Přijmout</strong> – potvrdit změny u prostředku, který je přiřazen k úkolu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-351"><strong>Accept</strong> – Confirm changes to the resource that is assigned to a task.</span></span></li>
+<li><span data-ttu-id="f76ed-352"><strong>Storno</strong> – zrušit změny u prostředku, který je přiřazen k úkolu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-352"><strong>Cancel</strong> – Cancel changes to the resource that is assigned to a task.</span></span></li>
+<li><span data-ttu-id="f76ed-353"><strong>Automaticky přiřadit</strong> – tato možnost vybere dostupný personální prostředek s odpovídající rolí pro vybraný úkol.</span><span class="sxs-lookup"><span data-stu-id="f76ed-353"><strong>Assign automatically</strong> – This option selects an available staffed resource with a matching role to the selected task.</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-1.  Klikněte na **Řízení projektu a účetnictví** &gt; **Projekty** &gt; **Všechny projekty**.
-2.  V seznamu vyberte projekt **Upgrade XYZ fáze 2**.
-3.  Klikněte na možnosti **Plán** &gt; **Aktivity** &gt; **Strukturovaný rozpis prací**.
-4.  Klepněte na tlačítko **Nový** a přidejte tak následující činnosti první úrovně do struktury WBS:
-    -   Inicializace
-    -   Plánování
-    -   Zpracování
-    -   Sledování a řízení
-    -   Zavřít
+1.  <span data-ttu-id="f76ed-354">Klikněte na **Řízení projektu a účetnictví** &gt; **Projekty** &gt; **Všechny projekty**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-354">Click **Project management and accounting** &gt; **Projects** &gt; **All projects**.</span></span>
+2.  <span data-ttu-id="f76ed-355">V seznamu vyberte projekt **Upgrade XYZ fáze 2**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-355">In the list, select the **XYZ Upgrade Phase 2** project.</span></span>
+3.  <span data-ttu-id="f76ed-356">Klikněte na možnosti **Plán** &gt; **Aktivity** &gt; **Strukturovaný rozpis prací**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-356">Click **Plan** &gt; **Activities** &gt; **Work breakdown structure**.</span></span>
+4.  <span data-ttu-id="f76ed-357">Klepněte na tlačítko **Nový** a přidejte tak následující činnosti první úrovně do struktury WBS:</span><span class="sxs-lookup"><span data-stu-id="f76ed-357">Click **New** to add the following level-one activities to the WBS:</span></span>
+    -   <span data-ttu-id="f76ed-358">Inicializace</span><span class="sxs-lookup"><span data-stu-id="f76ed-358">Initiating</span></span>
+    -   <span data-ttu-id="f76ed-359">Plánování</span><span class="sxs-lookup"><span data-stu-id="f76ed-359">Planning</span></span>
+    -   <span data-ttu-id="f76ed-360">Zpracování</span><span class="sxs-lookup"><span data-stu-id="f76ed-360">Executing</span></span>
+    -   <span data-ttu-id="f76ed-361">Sledování a řízení</span><span class="sxs-lookup"><span data-stu-id="f76ed-361">Monitoring and Control</span></span>
+    -   <span data-ttu-id="f76ed-362">Zavřít</span><span class="sxs-lookup"><span data-stu-id="f76ed-362">Close</span></span>
 
-5.  Nastavte data a úsilí (v hodinách), jak je uvedeno na následujícím snímku obrazovky.[![Nastavení dat a úsilí](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)
-6.  Vyberte řádek úlohy **Inicializace** a v poli **Role** vyberte **Vyšší manažer projektu**.
-7.  Klikněte na tlačítko **Publikovat**.
-8.  Na stejném řádku v poli **Prostředky** vyberte **Daniel Goldschmidt**.
-9.  Klepněte na možnost **Přijmout**.
-10. Vyberte řádek úlohy **Plánování** a v poli **Role** vyberte **Obchodní analytik**.
-11. Klepněte na tlačítko **Publikovat** a poté na tlačítko **Automaticky generovat tým**.
-12. V nově otevřeném dialogovém okně klepněte na tlačítko **Ano**.
-13. V poli **Prostředek** zkontrolujte, zda je hodnota **Obchodní analytik 1**.
-14. U prostředku **Obchodní analytik 1** spusťte vyhledávání a klepněte na **Spustit formulář přiřazení prostředku**.
-15. Vyberte pracovníka pro úlohu.
-16. Klepněte na tlačítko **Předběžně přiřadit** &gt; **Plná kapacita**.
-17. Klikněte na tlačítko **Uložit** a pak zavřete stránku. 
+5.  <span data-ttu-id="f76ed-363">Nastavte data a úsilí (v hodinách), jak je uvedeno na následujícím snímku obrazovky.[![Nastavení dat a úsilí](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)</span><span class="sxs-lookup"><span data-stu-id="f76ed-363">Set the dates and effort (hours), as shown in the following screenshot.[![Setting the dates and effort](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)</span></span>
+6.  <span data-ttu-id="f76ed-364">Vyberte řádek úlohy **Inicializace** a v poli **Role** vyberte **Vyšší manažer projektu**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-364">Select the **Initiating** task line, and then, in the **Role** field, select **Senior Project Manager**.</span></span>
+7.  <span data-ttu-id="f76ed-365">Klikněte na tlačítko **Publikovat**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-365">Click **Publish**.</span></span>
+8.  <span data-ttu-id="f76ed-366">Na stejném řádku v poli **Prostředky** vyberte **Daniel Goldschmidt**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-366">On the same line, in the **Resource** field, select **Daniel Goldschmidt**.</span></span>
+9.  <span data-ttu-id="f76ed-367">Klepněte na možnost **Přijmout**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-367">Click **Accept**.</span></span>
+10. <span data-ttu-id="f76ed-368">Vyberte řádek úlohy **Plánování** a v poli **Role** vyberte **Obchodní analytik**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-368">Select the **Planning** task line, and then, in the **Role** field, select **Business analyst**.</span></span>
+11. <span data-ttu-id="f76ed-369">Klepněte na tlačítko **Publikovat** a poté na tlačítko **Automaticky generovat tým**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-369">Click **Publish**, and then click **Auto generate team**.</span></span>
+12. <span data-ttu-id="f76ed-370">V nově otevřeném dialogovém okně klepněte na tlačítko **Ano**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-370">In the dialog box that appears, click **Yes**.</span></span>
+13. <span data-ttu-id="f76ed-371">V poli **Prostředek** zkontrolujte, zda je hodnota **Obchodní analytik 1**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-371">In the **Resource** field, verify that the value is **Business analyst 1**.</span></span>
+14. <span data-ttu-id="f76ed-372">U prostředku **Obchodní analytik 1** spusťte vyhledávání a klepněte na **Spustit formulář přiřazení prostředku**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-372">For the **Business analyst 1** resource, open the lookup, and click **Launch resource assignments form**.</span></span>
+15. <span data-ttu-id="f76ed-373">Vyberte pracovníka pro úlohu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-373">Select a worker for the task.</span></span>
+16. <span data-ttu-id="f76ed-374">Klepněte na tlačítko **Předběžně přiřadit** &gt; **Plná kapacita**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-374">Click **Soft assign** &gt; **Full capacity**.</span></span>
+17. <span data-ttu-id="f76ed-375">Klikněte na tlačítko **Uložit** a pak zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="f76ed-375">Click **Save**, and close the page.</span></span> 
 
 > [!NOTE] 
-> Neobdržíte upozornění, že vybraný prostředek je nyní „2“, protože počet prostředků zůstává „1“.
-18. Na stránce **Strukturovaný rozpis prací** ověřte přiřazení prostředku ve struktuře WBS a klepněte na tlačítko **Uložit**.
+> <span data-ttu-id="f76ed-376">Neobdržíte upozornění, že vybraný prostředek je nyní „2“, protože počet prostředků zůstává „1“.</span><span class="sxs-lookup"><span data-stu-id="f76ed-376">You don't receive a warning that the specified resource is now 2, because the number of resources remains at 1.</span></span>
+18. <span data-ttu-id="f76ed-377">Na stránce **Strukturovaný rozpis prací** ověřte přiřazení prostředku ve struktuře WBS a klepněte na tlačítko **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-377">On the **Work breakdown structure** page, validate the resource assignment on the WBS, and then click **Save**.</span></span>
 
-## <a name="resource-fulfillment-for-planned-resources"></a>Plnění prostředků pro plánované prostředky
-Manažer projektu může naplánovat požadované role prostředku pro projekt. Správce prostředků uvidí tyto plánované prostředky jako požadavky na stránce **Plnění prostředků** a má možnost přiřadit skutečné prostředky.
+## <a name="resource-fulfillment-for-planned-resources"></a><span data-ttu-id="f76ed-378">Plnění prostředků pro plánované prostředky</span><span class="sxs-lookup"><span data-stu-id="f76ed-378">Resource fulfillment for planned resources</span></span>
+<span data-ttu-id="f76ed-379">Manažer projektu může naplánovat požadované role prostředku pro projekt.</span><span class="sxs-lookup"><span data-stu-id="f76ed-379">A project manager can plan required resource roles for a project.</span></span> <span data-ttu-id="f76ed-380">Správce prostředků uvidí tyto plánované prostředky jako požadavky na stránce **Plnění prostředků** a má možnost přiřadit skutečné prostředky.</span><span class="sxs-lookup"><span data-stu-id="f76ed-380">The resource manager will see these planned resources as requests on the **Resource fulfillment** page and can assign actual resources.</span></span>
 
-1.  Klikněte na **Řízení projektu a účetnictví** &gt; **Projekty** &gt; **Všechny projekty**.
-2.  V seznamu vyberte projekt **Upgrade XYZ fáze 2**.
-3.  Klikněte na **Projekt**.
-4.  Klikněte na možnost **Upravit**.
-5.  Na kartě **Projektový tým a plánování** klikněte na možnost **Přidat**.
-6.  V dialogovém okně **Přidat role** vyberte roli **Softwarový vývojář**.
-7.  Klepněte na volbu **Nový**.
-8.  Zavřete stránku s projektem.
-9.  Klepněte na tlačítko **Řízení a účetnictví projektů** &gt; **Zdroje projektu** &gt; **Plnění prostředků**.
-10. Vyberte **Vývojář softwaru 1** pro projekt **Upgrade XYZ fáze 2**.
-11. Vyberte pracovníka a klikněte na možnost **Přiřadit**.
-12. Ověřte, že byl odstraněn řádek **Vývojář softwaru 1** z projektu **Upgrade XYZ fáze 2**.
-13. Na kartě **Projektový tým a plánování** u projektu **Upgrade XYZ fáze 2** ověřte, zda byl přidán pracovník, kterého jste vybrali v kroku 11, jako **Vývojář softwaru**.
+1.  <span data-ttu-id="f76ed-381">Klikněte na **Řízení projektu a účetnictví** &gt; **Projekty** &gt; **Všechny projekty**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-381">Click **Project management and accounting** &gt; **Projects** &gt; **All projects**.</span></span>
+2.  <span data-ttu-id="f76ed-382">V seznamu vyberte projekt **Upgrade XYZ fáze 2**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-382">In the list, select the **XYZ Upgrade Phase 2** project.</span></span>
+3.  <span data-ttu-id="f76ed-383">Klikněte na **Projekt**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-383">Click **Project**.</span></span>
+4.  <span data-ttu-id="f76ed-384">Klikněte na možnost **Upravit**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-384">Click **Edit**.</span></span>
+5.  <span data-ttu-id="f76ed-385">Na kartě **Projektový tým a plánování** klikněte na možnost **Přidat**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-385">On the **Project team and scheduling** tab,** **click **Add**.</span></span>
+6.  <span data-ttu-id="f76ed-386">V dialogovém okně **Přidat role** vyberte roli **Softwarový vývojář**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-386">In the **Add roles** dialog box, select the **Software developer** role.</span></span>
+7.  <span data-ttu-id="f76ed-387">Klepněte na volbu **Nový**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-387">Click **Create**.</span></span>
+8.  <span data-ttu-id="f76ed-388">Zavřete stránku s projektem.</span><span class="sxs-lookup"><span data-stu-id="f76ed-388">Close the project page.</span></span>
+9.  <span data-ttu-id="f76ed-389">Klepněte na tlačítko **Řízení a účetnictví projektů** &gt; **Zdroje projektu** &gt; **Plnění prostředků**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-389">Click **Project management and accounting** &gt; **Project resources** &gt; **Resource fulfillment**.</span></span>
+10. <span data-ttu-id="f76ed-390">Vyberte **Vývojář softwaru 1** pro projekt **Upgrade XYZ fáze 2**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-390">Select **Software developer 1** for the **XYZ Upgrade project Phase 2** project.</span></span>
+11. <span data-ttu-id="f76ed-391">Vyberte pracovníka a klikněte na možnost **Přiřadit**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-391">Select a worker, and then click **Assign**.</span></span>
+12. <span data-ttu-id="f76ed-392">Ověřte, že byl odstraněn řádek **Vývojář softwaru 1** z projektu **Upgrade XYZ fáze 2**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-392">Verify that the line for **Software developer 1** has been removed for the **XYZ Upgrade project Phase 2** project.</span></span>
+13. <span data-ttu-id="f76ed-393">Na kartě **Projektový tým a plánování** u projektu **Upgrade XYZ fáze 2** ověřte, zda byl přidán pracovník, kterého jste vybrali v kroku 11, jako **Vývojář softwaru**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-393">On the **Project team and scheduling** tab, for the **XYZ Upgrade Phase 2** project, verify that the worker that you selected in step 11 has been added as **Software developer**.</span></span>
 
-## <a name="requests-for-project-resources"></a>Požadavky na prostředky projektu
-Funkce plánování zdrojů podporuje pouze správce prostředků k distribuci personálních prostředků k distribuci personálních prostředků nebo projektů. Chcete-li povolit tuto funkci, proveďte následující úlohy nebo ověřte, že byly dokončeny.
+## <a name="requests-for-project-resources"></a><span data-ttu-id="f76ed-394">Požadavky na prostředky projektu</span><span class="sxs-lookup"><span data-stu-id="f76ed-394">Requests for project resources</span></span>
+<span data-ttu-id="f76ed-395">Funkce plánování zdrojů podporuje pouze správce prostředků k distribuci personálních prostředků k distribuci personálních prostředků nebo projektů.</span><span class="sxs-lookup"><span data-stu-id="f76ed-395">The project resource scheduling functionality only supports resource managers to distribute staffed resources on engagements or projects.</span></span> <span data-ttu-id="f76ed-396">Chcete-li povolit tuto funkci, proveďte následující úlohy nebo ověřte, že byly dokončeny.</span><span class="sxs-lookup"><span data-stu-id="f76ed-396">To enable this functionality, complete the following tasks, or verify that they have been completed.</span></span>
 
--   Nastavte číselné řady.
--   Nastavte workflowy pro řízení a účetnictví projektu.
--   Povolte workflow žádosti o prostředek.
+-   <span data-ttu-id="f76ed-397">Nastavte číselné řady.</span><span class="sxs-lookup"><span data-stu-id="f76ed-397">Set up number sequences.</span></span>
+-   <span data-ttu-id="f76ed-398">Nastavte workflowy pro řízení a účetnictví projektu.</span><span class="sxs-lookup"><span data-stu-id="f76ed-398">Set up project management and accounting workflows.</span></span>
+-   <span data-ttu-id="f76ed-399">Povolte workflow žádosti o prostředek.</span><span class="sxs-lookup"><span data-stu-id="f76ed-399">Enable resource request workflow.</span></span>
 
-Poté, co jste ověřili nebo dokončili výše uvedené úkoly, můžete provést následující úkoly podle potřeby.
+<span data-ttu-id="f76ed-400">Poté, co jste ověřili nebo dokončili výše uvedené úkoly, můžete provést následující úkoly podle potřeby.</span><span class="sxs-lookup"><span data-stu-id="f76ed-400">After you have either verified or completed the tasks above, you can complete the following tasks as needed.</span></span>
 
--   Vytvořte požadavek na prostředek z předběžně definovaných personálních prostředků.
--   Monitorujte požadavky na prostředky.
--   Naplňte požadavky na prostředky
--   Požádejte o personální prostředek z WBS.
--   Zarezervujte si zdroje na projektu bez požadavku na personální prostředek.
+-   <span data-ttu-id="f76ed-401">Vytvořte požadavek na prostředek z předběžně definovaných personálních prostředků.</span><span class="sxs-lookup"><span data-stu-id="f76ed-401">Create a resource request from a soft-booked staffed resource.</span></span>
+-   <span data-ttu-id="f76ed-402">Monitorujte požadavky na prostředky.</span><span class="sxs-lookup"><span data-stu-id="f76ed-402">Monitor resource requests.</span></span>
+-   <span data-ttu-id="f76ed-403">Naplňte požadavky na prostředky</span><span class="sxs-lookup"><span data-stu-id="f76ed-403">Fulfill resource requests.</span></span>
+-   <span data-ttu-id="f76ed-404">Požádejte o personální prostředek z WBS.</span><span class="sxs-lookup"><span data-stu-id="f76ed-404">Request a staffed resource from WBS.</span></span>
+-   <span data-ttu-id="f76ed-405">Zarezervujte si zdroje na projektu bez požadavku na personální prostředek.</span><span class="sxs-lookup"><span data-stu-id="f76ed-405">Book resources to a project without a request for a staffed resource.</span></span>
 
-## <a name="monitor-project-teams"></a>Monitorování projektových týmů
-1.  Klikněte na **Řízení projektu a účetnictví** &gt; **Projekty** &gt; **Všechny projekty**.
-2.  V seznamu projektů klepněte na odkaz **ID projektu** u projektu **Upgrade XYZ fáze 2**.
-3.  Na pevné záložce **Projektový tým a plánování** ověřte správnost uvedených prostředků.
+## <a name="monitor-project-teams"></a><span data-ttu-id="f76ed-406">Monitorování projektových týmů</span><span class="sxs-lookup"><span data-stu-id="f76ed-406">Monitor project teams</span></span>
+1.  <span data-ttu-id="f76ed-407">Klikněte na **Řízení projektu a účetnictví** &gt; **Projekty** &gt; **Všechny projekty**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-407">Click **Project management and accounting** &gt; **Projects** &gt; **All projects**.</span></span>
+2.  <span data-ttu-id="f76ed-408">V seznamu projektů klepněte na odkaz **ID projektu** u projektu **Upgrade XYZ fáze 2**.</span><span class="sxs-lookup"><span data-stu-id="f76ed-408">In the list of projects, click the **Project ID** link for the **XYZ Upgrade Phase 2** project.</span></span>
+3.  <span data-ttu-id="f76ed-409">Na pevné záložce **Projektový tým a plánování** ověřte správnost uvedených prostředků.</span><span class="sxs-lookup"><span data-stu-id="f76ed-409">On the **Project team and scheduling** FastTab, verify that the project resources that are listed are correct.</span></span>
 
 
 

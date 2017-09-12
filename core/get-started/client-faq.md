@@ -15,46 +15,46 @@ ms.custom: 12334
 ms.assetid: a9a57f0e-a67c-46b1-83c9-5d6350fb3b86
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b7618f5150b55542d26d10000a644a13a8651e82
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 55d4fa4629d203aa888fe6400126a872d2eee000
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="finance-and-operations-client-faq"></a>Nejčastější dotazy týkající se klienta aplikace Finance and Operations
+# <a name="finance-and-operations-client-faq"></a><span data-ttu-id="c8c4e-103">Nejčastější dotazy týkající se klienta aplikace Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="c8c4e-103">Finance and Operations client FAQ</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-V tomto článku jsou odpovědi na časté otázky týkající se klienta Microsoft Dynamics 365 for Finance and Operations.
+<span data-ttu-id="c8c4e-104">V tomto článku jsou odpovědi na časté otázky týkající se klienta Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-104">This article provides answers to frequently asked questions about the Microsoft Dynamics 365 for Finance and Operations client.</span></span>
 
-<a name="why-arent-symbols-loaded-when-i-use-finance-and-operations"></a>Proč se při používání Finance and Operations nenačtou symboly?
+<a name="why-arent-symbols-loaded-when-i-use-finance-and-operations"></a><span data-ttu-id="c8c4e-105">Proč se při používání Finance and Operations nenačtou symboly?</span><span class="sxs-lookup"><span data-stu-id="c8c4e-105">Why aren't symbols loaded when I use Finance and Operations?</span></span>
 -----------------------------------------------------------------
 
-Nastavení zabezpečení ve vašem prohlížeči může bránit správnému načtení symbolů. K vyřešení problému proveďte následující kroky:
+<span data-ttu-id="c8c4e-106">Nastavení zabezpečení ve vašem prohlížeči může bránit správnému načtení symbolů.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-106">The security settings on your browser might prevent the symbols from being loaded correctly.</span></span> <span data-ttu-id="c8c4e-107">K vyřešení problému proveďte následující kroky:</span><span class="sxs-lookup"><span data-stu-id="c8c4e-107">To resolve this issue, try the following steps:</span></span>
 
--   Pokud dochází k problému v prohlížeči Internet Explorer, klikněte na tlačítko **Nástroje** a potom klikněte na tlačítko **Možnosti Internetu**.  V dialogovém okně Možnosti Internetu na kartě **Ochrana osobních údajů** klikněte na **Vlastní úroveň** a ujistěte se, že je vybrána možnost **Stažení písma**.
--   V ostatních případech je třeba přidat web Finance and Operations do seznamu důvěryhodných webů.
+-   <span data-ttu-id="c8c4e-108">Pokud dochází k problému v prohlížeči Internet Explorer, klikněte na tlačítko **Nástroje** a potom klikněte na tlačítko **Možnosti Internetu**.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-108">If you're experiencing this issue in Internet Explorer, click **Tools**, and then click **Internet Options**.</span></span>  <span data-ttu-id="c8c4e-109">V dialogovém okně Možnosti Internetu na kartě **Ochrana osobních údajů** klikněte na **Vlastní úroveň** a ujistěte se, že je vybrána možnost **Stažení písma**.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-109">In the Internet Options dialog box, on the **Privacy** tab, click **Custom level**, and make sure the **Font download** option is selected.</span></span>
+-   <span data-ttu-id="c8c4e-110">V ostatních případech je třeba přidat web Finance and Operations do seznamu důvěryhodných webů.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-110">Otherwise, you might have to add the Finance and Operations site to the list of trusted sites.</span></span>
 
-## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>Chybí mi pás karet z aplikace Dynamics AX 2012. Mohu nechat karty podokna akcí trvale otevřené?
-Plánujeme přidání této funkce v blízké budoucnosti. Uživatelé pak budou moci ponechat karty podokna akcí trvale otevřené. V opačném případě se karty skryjí, když je uživatel nepoužívá, aby se uvolnilo místo na obrazovce pro stránku.
+## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a><span data-ttu-id="c8c4e-111">Chybí mi pás karet z aplikace Dynamics AX 2012.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-111">I miss the ribbon from Dynamics AX 2012.</span></span> <span data-ttu-id="c8c4e-112">Mohu nechat karty podokna akcí trvale otevřené?</span><span class="sxs-lookup"><span data-stu-id="c8c4e-112">Can I keep Action Pane tabs open all the time?</span></span>
+<span data-ttu-id="c8c4e-113">Plánujeme přidání této funkce v blízké budoucnosti.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-113">We are planning to implement this feature soon.</span></span> <span data-ttu-id="c8c4e-114">Uživatelé pak budou moci ponechat karty podokna akcí trvale otevřené.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-114">Users will then be able to choose to keep the tabs on Action Panes open all the time.</span></span> <span data-ttu-id="c8c4e-115">V opačném případě se karty skryjí, když je uživatel nepoužívá, aby se uvolnilo místo na obrazovce pro stránku.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-115">Otherwise, the tabs will be collapsed when they aren't being used, to gain more screen space for the page.</span></span>
 
-## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-rightclick"></a>Proč se někdy při kliknutí pravým tlačítkem myši zobrazují jiné místní nabídky?
-Když klepnete pravým tlačítkem myši do pole, které lze upravit (nebo pokud je vybraný text), se zobrazí v prohlížeči místní nabídka. Tato nabídka umožňuje přístup k příkazům **Vyjmout**, **Kopírovat** a **Vložit**. Z bezpečnostních důvodů nemůžeme tyto příkazy vložit do místní nabídky Finance and Operations, protože prohlížeče nám neumožňují programátorsky přistupovat do schránky systému.
+## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-rightclick"></a><span data-ttu-id="c8c4e-116">Proč se někdy při kliknutí pravým tlačítkem myši zobrazují jiné místní nabídky?</span><span class="sxs-lookup"><span data-stu-id="c8c4e-116">Why do I sometimes see different shortcut menus when I rightclick?</span></span>
+<span data-ttu-id="c8c4e-117">Když klepnete pravým tlačítkem myši do pole, které lze upravit (nebo pokud je vybraný text), se zobrazí v prohlížeči místní nabídka.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-117">If you right-click in an editable field (or if text is selected), the browser's shortcut menu is displayed.</span></span> <span data-ttu-id="c8c4e-118">Tato nabídka umožňuje přístup k příkazům **Vyjmout**, **Kopírovat** a **Vložit**.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-118">This menu gives you access to the **Cut**, **Copy**, and **Paste** commands.</span></span> <span data-ttu-id="c8c4e-119">Z bezpečnostních důvodů nemůžeme tyto příkazy vložit do místní nabídky Finance and Operations, protože prohlížeče nám neumožňují programátorsky přistupovat do schránky systému.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-119">We can't embed these commands into the Finance and Operations shortcut menus because, for security reasons, browsers don’t allow us to programmatically access the system clipboard.</span></span>
 
-Když kliknete pravým tlačítkem myši na popisek pole nebo na hodnotu ovládacího prvku jen pro čtení, zobrazí se místní nabídka Finance and Operations.
+<span data-ttu-id="c8c4e-120">Když kliknete pravým tlačítkem myši na popisek pole nebo na hodnotu ovládacího prvku jen pro čtení, zobrazí se místní nabídka Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-120">If you right-click a field label or the value of a read-only control, you'll see the Finance and Operations shortcut menu.</span></span>
 
-Aby byla práce s klávesnicí snazší, plánujeme v budoucnu implementovat funkci klávesových zkratek, která otevře místní nabídku aplikace Finance and Operations.
+<span data-ttu-id="c8c4e-121">Aby byla práce s klávesnicí snazší, plánujeme v budoucnu implementovat funkci klávesových zkratek, která otevře místní nabídku aplikace Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-121">To make keyboard access easier, we plan to implement a keyboard shortcut in the future that will open the Finance and Operations shortcut menu.</span></span>
 
-## <a name="where-is-the-view-details-functionality-in-finance-and-operations"></a>Kde je funkce Zobrazit podrobnosti v aplikaci Finance and Operations?
-Volba **Zobrazit podrobnosti** je k dispozici v několika způsoby:
+## <a name="where-is-the-view-details-functionality-in-finance-and-operations"></a><span data-ttu-id="c8c4e-122">Kde je funkce Zobrazit podrobnosti v aplikaci Finance and Operations?</span><span class="sxs-lookup"><span data-stu-id="c8c4e-122">Where is the View details functionality in Finance and Operations?</span></span>
+<span data-ttu-id="c8c4e-123">Volba **Zobrazit podrobnosti** je k dispozici v několika způsoby:</span><span class="sxs-lookup"><span data-stu-id="c8c4e-123">The **View details** option is available in a couple of ways:</span></span>
 
--   Má-li ovládací prvek schopnost **Zobrazit podrobnosti** a pokud má ovládací prvek hodnotu, tato hodnota je zobrazena jako hypertextový odkaz. Klepnutím na odkaz otevřete stránku, která obsahuje další podrobnosti.
--   Možnost **Zobrazit podrobnosti** je také v místní nabídce aplikace Finance and Operations. Další informace o tom, kdy se místní nabídky aplikace Finance and Operations zobrazí při kliknutí pravým tlačítkem myši, naleznete v předchozím oddílu.
+-   <span data-ttu-id="c8c4e-124">Má-li ovládací prvek schopnost **Zobrazit podrobnosti** a pokud má ovládací prvek hodnotu, tato hodnota je zobrazena jako hypertextový odkaz.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-124">If a control has **View details** capabilities, and if the control has a value, that value is displayed as a hyperlink.</span></span> <span data-ttu-id="c8c4e-125">Klepnutím na odkaz otevřete stránku, která obsahuje další podrobnosti.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-125">You can click the hyperlink to open a page that contains additional details.</span></span>
+-   <span data-ttu-id="c8c4e-126">Možnost **Zobrazit podrobnosti** je také v místní nabídce aplikace Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-126">**View details** is also an option on Finance and Operations shortcut menus.</span></span> <span data-ttu-id="c8c4e-127">Další informace o tom, kdy se místní nabídky aplikace Finance and Operations zobrazí při kliknutí pravým tlačítkem myši, naleznete v předchozím oddílu.</span><span class="sxs-lookup"><span data-stu-id="c8c4e-127">For more information about when Finance and Operations shortcut menus are displayed when you right-click, see the previous section.</span></span>
 
 
 

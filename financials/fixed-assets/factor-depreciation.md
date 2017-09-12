@@ -19,66 +19,66 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 131045a5702f8c85be44ba1ebae1866c033850b9
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 4b87d96e80b343a2b57db59b5d4c19e70d0a94ea
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="factor-depreciation"></a>Odpis koeficientem
+# <a name="factor-depreciation"></a><span data-ttu-id="13eb3-103">Odpis koeficientem</span><span class="sxs-lookup"><span data-stu-id="13eb3-103">Factor depreciation</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek poskytuje přehled o metodě odpisu koeficientem.
+<span data-ttu-id="13eb3-104">Tento článek poskytuje přehled o metodě odpisu koeficientem.</span><span class="sxs-lookup"><span data-stu-id="13eb3-104">This article gives an overview of the factor depreciation method.</span></span>
 
-Koeficienty jsou procenta, která se používají při odpisování majetku. Když nastavíte odpisový plán dlouhodobého majetku a v poli **Metoda** na stránce **Odpisové profily** vyberete hodnotu **Koeficient**, můžete nastavit progresivní, degresivní nebo lineární metodu odepisování:
+<span data-ttu-id="13eb3-105">Koeficienty jsou procenta, která se používají při odpisování majetku.</span><span class="sxs-lookup"><span data-stu-id="13eb3-105">Factors are the percentages that are used to depreciate assets.</span></span> <span data-ttu-id="13eb3-106">Když nastavíte odpisový plán dlouhodobého majetku a v poli **Metoda** na stránce **Odpisové profily** vyberete hodnotu **Koeficient**, můžete nastavit progresivní, degresivní nebo lineární metodu odepisování:</span><span class="sxs-lookup"><span data-stu-id="13eb3-106">When you set up a fixed asset depreciation profile and select **Factor** in the **Method** field on the **Depreciation profiles** page, you can set up progressive, digressive, or straight line depreciation:</span></span>
 
--   Jestliže vyberete progresivní metodu odepisování, částka odpisu se v každém období odpisu zvýší.
--   Jestliže vyberete degresivní metodu odepisování, částka odpisu za dané období se bude v průběhu let snižovat.
--   Jestliže vyberete lineární metodu odepisování, odpis bude v každém období stejný.
+-   <span data-ttu-id="13eb3-107">Jestliže vyberete progresivní metodu odepisování, částka odpisu se v každém období odpisu zvýší.</span><span class="sxs-lookup"><span data-stu-id="13eb3-107">In progressive depreciation, the amount of depreciation increases each depreciation period.</span></span>
+-   <span data-ttu-id="13eb3-108">Jestliže vyberete degresivní metodu odepisování, částka odpisu za dané období se bude v průběhu let snižovat.</span><span class="sxs-lookup"><span data-stu-id="13eb3-108">In digressive depreciation, the amount of depreciation per period decreases over time.</span></span>
+-   <span data-ttu-id="13eb3-109">Jestliže vyberete lineární metodu odepisování, odpis bude v každém období stejný.</span><span class="sxs-lookup"><span data-stu-id="13eb3-109">In straight line depreciation, the depreciation is the same in each period.</span></span>
 
-Níže uvedená pravidla a příklady ukazují, jak lze nastavit koeficienty pro jednotlivé typy odpisů. 
+<span data-ttu-id="13eb3-110">Níže uvedená pravidla a příklady ukazují, jak lze nastavit koeficienty pro jednotlivé typy odpisů.</span><span class="sxs-lookup"><span data-stu-id="13eb3-110">The rules and examples that follow indicate how you can set up factors for each type of depreciation.</span></span> 
 
 > [!NOTE] 
-> Když vyberete možnost **Faktor** v poli **Metoda**, zobrazí se pole **Faktor** a pole **Interval**.
+> <span data-ttu-id="13eb3-111">Když vyberete možnost **Faktor** v poli **Metoda**, zobrazí se pole **Faktor** a pole **Interval**.</span><span class="sxs-lookup"><span data-stu-id="13eb3-111">When you select **Factor** in the **Method** field, the **Factor** field and the **Interval** field are displayed.</span></span>
 
-## <a name="progressive-depreciation"></a>Progresivní metoda odepisování
-Hodnota v poli **Koeficient** je větší než **50**.
+## <a name="progressive-depreciation"></a><span data-ttu-id="13eb3-112">Progresivní metoda odepisování</span><span class="sxs-lookup"><span data-stu-id="13eb3-112">Progressive depreciation</span></span>
+<span data-ttu-id="13eb3-113">Hodnota v poli **Koeficient** je větší než **50**.</span><span class="sxs-lookup"><span data-stu-id="13eb3-113">The value in the **Factor** field is more than **50**.</span></span>
 
-### <a name="example"></a>Příklad
+### <a name="example"></a><span data-ttu-id="13eb3-114">Příklad</span><span class="sxs-lookup"><span data-stu-id="13eb3-114">Example</span></span>
 
-Pořizovací cena je 100 000, koeficient je 70, doba životnosti je 10 let a odepisování začíná 1. ledna. Částky odpisů a zůstatkové účetní hodnoty jsou zobrazeny pouze pro prvních šest let životnosti.
+<span data-ttu-id="13eb3-115">Pořizovací cena je 100 000, koeficient je 70, doba životnosti je 10 let a odepisování začíná 1. ledna.</span><span class="sxs-lookup"><span data-stu-id="13eb3-115">The acquisition price is 100,000, the factor is 70, the service life is 10 years, and depreciation starts on January 1.</span></span> <span data-ttu-id="13eb3-116">Částky odpisů a zůstatkové účetní hodnoty jsou zobrazeny pouze pro prvních šest let životnosti.</span><span class="sxs-lookup"><span data-stu-id="13eb3-116">The depreciation amounts and net book value amounts are shown only for the first six years of service life.</span></span>
 
-| Rok | Období      | Odpisovaná částka | Zůstatková účetní hodnota |
+| <span data-ttu-id="13eb3-117">Rok</span><span class="sxs-lookup"><span data-stu-id="13eb3-117">Year</span></span> | <span data-ttu-id="13eb3-118">Období</span><span class="sxs-lookup"><span data-stu-id="13eb3-118">Period</span></span>      | <span data-ttu-id="13eb3-119">Odpisovaná částka</span><span class="sxs-lookup"><span data-stu-id="13eb3-119">Depreciation amount</span></span> | <span data-ttu-id="13eb3-120">Zůstatková účetní hodnota</span><span class="sxs-lookup"><span data-stu-id="13eb3-120">Net book value amount</span></span> |
 |------|-------------|---------------------|-----------------------|
-| 1    | 31. prosince | 307,69              | 99 692,31             |
-| 2    | 31. prosince | 1 447,21            | 98 245,10             |
-| 3    | 31. prosince | 3 104,50            | 95 140,60             |
-| 4    | 31. prosince | 5 150,21            | 89 990,39             |
-| 5    | 31. prosince | 7 522,95            | 82 467,44             |
-| 6    | 31. prosince | 10 184,06           | 72 283,38             |
+| <span data-ttu-id="13eb3-121">1</span><span class="sxs-lookup"><span data-stu-id="13eb3-121">1</span></span>    | <span data-ttu-id="13eb3-122">31. prosince</span><span class="sxs-lookup"><span data-stu-id="13eb3-122">December 31</span></span> | <span data-ttu-id="13eb3-123">307,69</span><span class="sxs-lookup"><span data-stu-id="13eb3-123">307.69</span></span>              | <span data-ttu-id="13eb3-124">99 692,31</span><span class="sxs-lookup"><span data-stu-id="13eb3-124">99,692.31</span></span>             |
+| <span data-ttu-id="13eb3-125">2</span><span class="sxs-lookup"><span data-stu-id="13eb3-125">2</span></span>    | <span data-ttu-id="13eb3-126">31. prosince</span><span class="sxs-lookup"><span data-stu-id="13eb3-126">December 31</span></span> | <span data-ttu-id="13eb3-127">1 447,21</span><span class="sxs-lookup"><span data-stu-id="13eb3-127">1,447.21</span></span>            | <span data-ttu-id="13eb3-128">98 245,10</span><span class="sxs-lookup"><span data-stu-id="13eb3-128">98,245.10</span></span>             |
+| <span data-ttu-id="13eb3-129">3</span><span class="sxs-lookup"><span data-stu-id="13eb3-129">3</span></span>    | <span data-ttu-id="13eb3-130">31. prosince</span><span class="sxs-lookup"><span data-stu-id="13eb3-130">December 31</span></span> | <span data-ttu-id="13eb3-131">3 104,50</span><span class="sxs-lookup"><span data-stu-id="13eb3-131">3,104.50</span></span>            | <span data-ttu-id="13eb3-132">95 140,60</span><span class="sxs-lookup"><span data-stu-id="13eb3-132">95,140.60</span></span>             |
+| <span data-ttu-id="13eb3-133">4</span><span class="sxs-lookup"><span data-stu-id="13eb3-133">4</span></span>    | <span data-ttu-id="13eb3-134">31. prosince</span><span class="sxs-lookup"><span data-stu-id="13eb3-134">December 31</span></span> | <span data-ttu-id="13eb3-135">5 150,21</span><span class="sxs-lookup"><span data-stu-id="13eb3-135">5,150.21</span></span>            | <span data-ttu-id="13eb3-136">89 990,39</span><span class="sxs-lookup"><span data-stu-id="13eb3-136">89,990.39</span></span>             |
+| <span data-ttu-id="13eb3-137">5</span><span class="sxs-lookup"><span data-stu-id="13eb3-137">5</span></span>    | <span data-ttu-id="13eb3-138">31. prosince</span><span class="sxs-lookup"><span data-stu-id="13eb3-138">December 31</span></span> | <span data-ttu-id="13eb3-139">7 522,95</span><span class="sxs-lookup"><span data-stu-id="13eb3-139">7,522.95</span></span>            | <span data-ttu-id="13eb3-140">82 467,44</span><span class="sxs-lookup"><span data-stu-id="13eb3-140">82,467.44</span></span>             |
+| <span data-ttu-id="13eb3-141">6</span><span class="sxs-lookup"><span data-stu-id="13eb3-141">6</span></span>    | <span data-ttu-id="13eb3-142">31. prosince</span><span class="sxs-lookup"><span data-stu-id="13eb3-142">December 31</span></span> | <span data-ttu-id="13eb3-143">10 184,06</span><span class="sxs-lookup"><span data-stu-id="13eb3-143">10,184.06</span></span>           | <span data-ttu-id="13eb3-144">72 283,38</span><span class="sxs-lookup"><span data-stu-id="13eb3-144">72,283.38</span></span>             |
 
-## <a name="digressive-depreciation"></a>Degresivní metoda odepisování
-Hodnota v poli **Koeficient** je menší než **50**.
+## <a name="digressive-depreciation"></a><span data-ttu-id="13eb3-145">Degresivní metoda odepisování</span><span class="sxs-lookup"><span data-stu-id="13eb3-145">Digressive depreciation</span></span>
+<span data-ttu-id="13eb3-146">Hodnota v poli **Koeficient** je menší než **50**.</span><span class="sxs-lookup"><span data-stu-id="13eb3-146">The value in the **Factor** field is less than **50**.</span></span>
 
-### <a name="example"></a>Příklad
+### <a name="example"></a><span data-ttu-id="13eb3-147">Příklad</span><span class="sxs-lookup"><span data-stu-id="13eb3-147">Example</span></span>
 
-Pořizovací cena je 100 000, koeficient je 20, doba životnosti je 10 let a odepisování začíná 1. ledna. Částky odpisů a zůstatkové účetní hodnoty jsou zobrazeny pouze pro prvních šest let životnosti.
+<span data-ttu-id="13eb3-148">Pořizovací cena je 100 000, koeficient je 20, doba životnosti je 10 let a odepisování začíná 1. ledna.</span><span class="sxs-lookup"><span data-stu-id="13eb3-148">The acquisition price is 100,000, the factor is 20, the service life is 10 years, and depreciation starts on January 1.</span></span> <span data-ttu-id="13eb3-149">Částky odpisů a zůstatkové účetní hodnoty jsou zobrazeny pouze pro prvních šest let životnosti.</span><span class="sxs-lookup"><span data-stu-id="13eb3-149">The depreciation amounts and net book value amounts are shown only for the first six years of service life.</span></span>
 
-| Rok | Období      | Odpisovaná částka | Zůstatková účetní hodnota |
+| <span data-ttu-id="13eb3-150">Rok</span><span class="sxs-lookup"><span data-stu-id="13eb3-150">Year</span></span> | <span data-ttu-id="13eb3-151">Období</span><span class="sxs-lookup"><span data-stu-id="13eb3-151">Period</span></span>      | <span data-ttu-id="13eb3-152">Odpisovaná částka</span><span class="sxs-lookup"><span data-stu-id="13eb3-152">Depreciation amount</span></span> | <span data-ttu-id="13eb3-153">Zůstatková účetní hodnota</span><span class="sxs-lookup"><span data-stu-id="13eb3-153">Net book value amount</span></span> |
 |------|-------------|---------------------|-----------------------|
-| 1    | 31. prosince | 56 080,43           | 43 919,57             |
-| 2    | 31. prosince | 10 665,70           | 33 253,87             |
-| 3    | 31. prosince | 7 156,22            | 26 097,65             |
-| 4    | 31. prosince | 5 538,06            | 20 559,59             |
-| 5    | 31. prosince | 4 579,89            | 15 979,70             |
-| 6    | 31. prosince | 3 937,36            | 12 042,34             |
+| <span data-ttu-id="13eb3-154">1</span><span class="sxs-lookup"><span data-stu-id="13eb3-154">1</span></span>    | <span data-ttu-id="13eb3-155">31. prosince</span><span class="sxs-lookup"><span data-stu-id="13eb3-155">December 31</span></span> | <span data-ttu-id="13eb3-156">56 080,43</span><span class="sxs-lookup"><span data-stu-id="13eb3-156">56,080.43</span></span>           | <span data-ttu-id="13eb3-157">43 919,57</span><span class="sxs-lookup"><span data-stu-id="13eb3-157">43,919.57</span></span>             |
+| <span data-ttu-id="13eb3-158">2</span><span class="sxs-lookup"><span data-stu-id="13eb3-158">2</span></span>    | <span data-ttu-id="13eb3-159">31. prosince</span><span class="sxs-lookup"><span data-stu-id="13eb3-159">December 31</span></span> | <span data-ttu-id="13eb3-160">10 665,70</span><span class="sxs-lookup"><span data-stu-id="13eb3-160">10,665.70</span></span>           | <span data-ttu-id="13eb3-161">33 253,87</span><span class="sxs-lookup"><span data-stu-id="13eb3-161">33,253.87</span></span>             |
+| <span data-ttu-id="13eb3-162">3</span><span class="sxs-lookup"><span data-stu-id="13eb3-162">3</span></span>    | <span data-ttu-id="13eb3-163">31. prosince</span><span class="sxs-lookup"><span data-stu-id="13eb3-163">December 31</span></span> | <span data-ttu-id="13eb3-164">7 156,22</span><span class="sxs-lookup"><span data-stu-id="13eb3-164">7,156.22</span></span>            | <span data-ttu-id="13eb3-165">26 097,65</span><span class="sxs-lookup"><span data-stu-id="13eb3-165">26,097.65</span></span>             |
+| <span data-ttu-id="13eb3-166">4</span><span class="sxs-lookup"><span data-stu-id="13eb3-166">4</span></span>    | <span data-ttu-id="13eb3-167">31. prosince</span><span class="sxs-lookup"><span data-stu-id="13eb3-167">December 31</span></span> | <span data-ttu-id="13eb3-168">5 538,06</span><span class="sxs-lookup"><span data-stu-id="13eb3-168">5,538.06</span></span>            | <span data-ttu-id="13eb3-169">20 559,59</span><span class="sxs-lookup"><span data-stu-id="13eb3-169">20,559.59</span></span>             |
+| <span data-ttu-id="13eb3-170">5</span><span class="sxs-lookup"><span data-stu-id="13eb3-170">5</span></span>    | <span data-ttu-id="13eb3-171">31. prosince</span><span class="sxs-lookup"><span data-stu-id="13eb3-171">December 31</span></span> | <span data-ttu-id="13eb3-172">4 579,89</span><span class="sxs-lookup"><span data-stu-id="13eb3-172">4,579.89</span></span>            | <span data-ttu-id="13eb3-173">15 979,70</span><span class="sxs-lookup"><span data-stu-id="13eb3-173">15,979.70</span></span>             |
+| <span data-ttu-id="13eb3-174">6</span><span class="sxs-lookup"><span data-stu-id="13eb3-174">6</span></span>    | <span data-ttu-id="13eb3-175">31. prosince</span><span class="sxs-lookup"><span data-stu-id="13eb3-175">December 31</span></span> | <span data-ttu-id="13eb3-176">3 937,36</span><span class="sxs-lookup"><span data-stu-id="13eb3-176">3,937.36</span></span>            | <span data-ttu-id="13eb3-177">12 042,34</span><span class="sxs-lookup"><span data-stu-id="13eb3-177">12,042.34</span></span>             |
 
-## <a name="straight-line-depreciation"></a>Lineární metoda odepisování
-Hodnota v poli **Koeficient** je rovna **50**. V tomto případě bude odpis stejný v každém období a je třeba zvážit vliv vámi vybraných hodnot na ostatní pole tak, jak je to popsáno v tématu [Lineární odpisování](straight-line-service-life-depreciation.md).
+## <a name="straight-line-depreciation"></a><span data-ttu-id="13eb3-178">Lineární metoda odepisování</span><span class="sxs-lookup"><span data-stu-id="13eb3-178">Straight line depreciation</span></span>
+<span data-ttu-id="13eb3-179">Hodnota v poli **Koeficient** je rovna **50**.</span><span class="sxs-lookup"><span data-stu-id="13eb3-179">The value in the **Factor** field is equal to **50**.</span></span> <span data-ttu-id="13eb3-180">V tomto případě bude odpis stejný v každém období a je třeba zvážit vliv vámi vybraných hodnot na ostatní pole tak, jak je to popsáno v tématu [Lineární odpisování](straight-line-service-life-depreciation.md).</span><span class="sxs-lookup"><span data-stu-id="13eb3-180">In this case, the depreciation is the same in each period, and you should consider the implications of the values that you have specified in other fields, as described in [Straight line service life depreciation](straight-line-service-life-depreciation.md).</span></span>
 
 
 

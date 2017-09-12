@@ -16,46 +16,46 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 5aea1aab9f6b084bd0c5bd2119639bff3555bb8a
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: b4c1b39bcae1fa3830f3a217d1ad89e84cd72134
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="split-a-fixed-asset"></a>Rozdělení dlouhodobého majetku
+# <a name="split-a-fixed-asset"></a><span data-ttu-id="53c00-103">Rozdělení dlouhodobého majetku</span><span class="sxs-lookup"><span data-stu-id="53c00-103">Split a fixed asset</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento průvodce záznamem úloh rozdělí procento jedné knihy majetku na novou knihu majetku.  Používá účetní roli a vzorová data USMF.
+<span data-ttu-id="53c00-104">Tento průvodce záznamem úloh rozdělí procento jedné knihy majetku na novou knihu majetku.</span><span class="sxs-lookup"><span data-stu-id="53c00-104">This task guide will split a percentage of one asset book to a new asset book.</span></span>  <span data-ttu-id="53c00-105">Používá účetní roli a vzorová data USMF.</span><span class="sxs-lookup"><span data-stu-id="53c00-105">It uses the Accountant role and USMF demo data.</span></span>
 
 
-## <a name="create-a-new-fixed-asset"></a>Vytvořit nový dlouhodobý majetek
-1. Přejděte do části Dlouhodobý majetek > Dlouhodobý majetek > Dlouhodobý majetek.
-2. Klikněte na položku Nová.
-3. Zadejte nebo vyberte hodnotu v poli Skupina dlouhodobého majetku.
-4. Poznamenejte si číslo dlouhodobého majetku pro pozdější použití v procesu rozdělení.
-5. Zadejte hodnotu do pole Název.
-6. Zavřete formulář.
+## <a name="create-a-new-fixed-asset"></a><span data-ttu-id="53c00-106">Vytvořit nový dlouhodobý majetek</span><span class="sxs-lookup"><span data-stu-id="53c00-106">Create a new fixed asset</span></span>
+1. <span data-ttu-id="53c00-107">Přejděte do části Dlouhodobý majetek > Dlouhodobý majetek > Dlouhodobý majetek.</span><span class="sxs-lookup"><span data-stu-id="53c00-107">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
+2. <span data-ttu-id="53c00-108">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="53c00-108">Click New.</span></span>
+3. <span data-ttu-id="53c00-109">Zadejte nebo vyberte hodnotu v poli Skupina dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="53c00-109">In the Fixed asset group field, enter or select a value.</span></span>
+4. <span data-ttu-id="53c00-110">Poznamenejte si číslo dlouhodobého majetku pro pozdější použití v procesu rozdělení.</span><span class="sxs-lookup"><span data-stu-id="53c00-110">Note the fixed asset number to use in the split process later.</span></span>
+5. <span data-ttu-id="53c00-111">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="53c00-111">In the Name field, type a value.</span></span>
+6. <span data-ttu-id="53c00-112">Zavřete formulář.</span><span class="sxs-lookup"><span data-stu-id="53c00-112">Close the form.</span></span>
 
-## <a name="split-a-fixed-asset"></a>Rozdělení dlouhodobého majetku
-1. V seznamu najděte a vyberte dlouhodobý majetek, který chcete rozdělit.
-2. Klikněte na odkaz na vybraném řádku v seznamu.
-3. Klepněte na Knihy.
-    * Vyberte knihu určenou pro rozdělení na nový majetek.  
-4. Klepněte na možnost Funkce.
-5. Klikněte na Rozdělit dlouhodobý majetek.
-6. Zadejte nebo vyberte hodnotu v poli Do dlouhodobého majetku.
-7. V poli Do knihy kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-8. Zadejte datum do pole Datum transakce.
-9. Zadejte číslo do pole Procento.
-10. V poli Název deníku zadejte nebo vyberte hodnotu.
-11. Klikněte na tlačítko OK.
+## <a name="split-a-fixed-asset"></a><span data-ttu-id="53c00-113">Rozdělení dlouhodobého majetku</span><span class="sxs-lookup"><span data-stu-id="53c00-113">Split a fixed asset</span></span>
+1. <span data-ttu-id="53c00-114">V seznamu najděte a vyberte dlouhodobý majetek, který chcete rozdělit.</span><span class="sxs-lookup"><span data-stu-id="53c00-114">In the list, find and select the fixed asset to split.</span></span>
+2. <span data-ttu-id="53c00-115">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="53c00-115">In the list, click the link in the selected row.</span></span>
+3. <span data-ttu-id="53c00-116">Klepněte na Knihy.</span><span class="sxs-lookup"><span data-stu-id="53c00-116">Click Books.</span></span>
+    * <span data-ttu-id="53c00-117">Vyberte knihu určenou pro rozdělení na nový majetek.</span><span class="sxs-lookup"><span data-stu-id="53c00-117">Select the book to split to the new asset.</span></span>  
+4. <span data-ttu-id="53c00-118">Klepněte na možnost Funkce.</span><span class="sxs-lookup"><span data-stu-id="53c00-118">Click Functions.</span></span>
+5. <span data-ttu-id="53c00-119">Klikněte na Rozdělit dlouhodobý majetek.</span><span class="sxs-lookup"><span data-stu-id="53c00-119">Click Split fixed asset.</span></span>
+6. <span data-ttu-id="53c00-120">Zadejte nebo vyberte hodnotu v poli Do dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="53c00-120">In the To fixed asset field, enter or select a value.</span></span>
+7. <span data-ttu-id="53c00-121">V poli Do knihy kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="53c00-121">In the To book field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="53c00-122">Zadejte datum do pole Datum transakce.</span><span class="sxs-lookup"><span data-stu-id="53c00-122">In the Transaction date field, enter a date.</span></span>
+9. <span data-ttu-id="53c00-123">Zadejte číslo do pole Procento.</span><span class="sxs-lookup"><span data-stu-id="53c00-123">In the Percent field, enter a number.</span></span>
+10. <span data-ttu-id="53c00-124">V poli Název deníku zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="53c00-124">In the Journal name field, enter or select a value.</span></span>
+11. <span data-ttu-id="53c00-125">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="53c00-125">Click OK.</span></span>
 
-## <a name="post-the-journal-transaction"></a>Zaúčtování transakce deníku
-1. Přejděte na Dlouhodobý majetek > Položky deníku > Deník dlouhodobého majetku.
-2. V seznamu vyberte deník vytvořený pomocí procesu rozdělení.
-3. Klikněte na položku Řádky.
-    * Ověřte, že byly vytvořeny řádky deníku.  Transakce Oprava pořizovací ceny byla vytvořena pro původní majetek s cílem snížit hodnotu o procento uvedené během procesu rozdělení.  Je vytvořena transakce pořízení pro nový majetek na stejnou částku.  
-4. Klikněte na položku Zaúčtovat.
+## <a name="post-the-journal-transaction"></a><span data-ttu-id="53c00-126">Zaúčtování transakce deníku</span><span class="sxs-lookup"><span data-stu-id="53c00-126">Post the journal transaction</span></span>
+1. <span data-ttu-id="53c00-127">Přejděte na Dlouhodobý majetek > Položky deníku > Deník dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="53c00-127">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
+2. <span data-ttu-id="53c00-128">V seznamu vyberte deník vytvořený pomocí procesu rozdělení.</span><span class="sxs-lookup"><span data-stu-id="53c00-128">In the list, select the journal created with the split process.</span></span>
+3. <span data-ttu-id="53c00-129">Klikněte na položku Řádky.</span><span class="sxs-lookup"><span data-stu-id="53c00-129">Click Lines.</span></span>
+    * <span data-ttu-id="53c00-130">Ověřte, že byly vytvořeny řádky deníku.</span><span class="sxs-lookup"><span data-stu-id="53c00-130">Verify the journal lines created.</span></span>  <span data-ttu-id="53c00-131">Transakce Oprava pořizovací ceny byla vytvořena pro původní majetek s cílem snížit hodnotu o procento uvedené během procesu rozdělení.</span><span class="sxs-lookup"><span data-stu-id="53c00-131">An Acquisition adjustment transaction is created for the original asset to decrease the value by the percentage specified during the split process.</span></span>  <span data-ttu-id="53c00-132">Je vytvořena transakce pořízení pro nový majetek na stejnou částku.</span><span class="sxs-lookup"><span data-stu-id="53c00-132">An Acquisition transaction is created for the new asset for the same amount.</span></span>  
+4. <span data-ttu-id="53c00-133">Klikněte na položku Zaúčtovat.</span><span class="sxs-lookup"><span data-stu-id="53c00-133">Click Post.</span></span>
 
 

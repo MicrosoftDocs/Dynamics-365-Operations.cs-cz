@@ -20,33 +20,33 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: efb184269c66483304af0589e4305a55ae08ce08
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f8c633e09103c45aff5614270a94a3bfe4fc5e20
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="explosion-of-a-bom-version"></a>Rozpad verze kusovníku
+# <a name="explosion-of-a-bom-version"></a><span data-ttu-id="584bd-103">Rozpad verze kusovníku</span><span class="sxs-lookup"><span data-stu-id="584bd-103">Explosion of a BOM version</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje scénář hlavního plánování, který zahrnuje rozpad verze kusovníku.
+<span data-ttu-id="584bd-104">Tento článek popisuje scénář hlavního plánování, který zahrnuje rozpad verze kusovníku.</span><span class="sxs-lookup"><span data-stu-id="584bd-104">This article explains a master planning scenario that involves explosion of a bill of materials (BOM) version.</span></span>
 
-Rozpad poptávky verze kusovníku vytvoří poptávku pro každou řádkovou položku kusovníku na konkrétním pracovišti a v určitém skladu (pokud taková možnost existuje). Kusovník určitého pracoviště může mít pro každý řádek definovaný konkrétní sklad. Nastavení dimenzí položky na každém řádku kusovníku dále určuje, zda je zadání skladu povinné. Výsledná poptávka pro každý řádek kusovníku se potom stane výchozím bodem pro další rozpad poptávky. Pro tento scénář hlavního plánování platí následující podmínky:
+<span data-ttu-id="584bd-105">Rozpad poptávky verze kusovníku vytvoří poptávku pro každou řádkovou položku kusovníku na konkrétním pracovišti a v určitém skladu (pokud taková možnost existuje).</span><span class="sxs-lookup"><span data-stu-id="584bd-105">A demand explosion of a bill of materials (BOM) version creates a demand for each BOM line item at a specific site and, possibly, at a specific warehouse.</span></span> <span data-ttu-id="584bd-106">Kusovník určitého pracoviště může mít pro každý řádek definovaný konkrétní sklad.</span><span class="sxs-lookup"><span data-stu-id="584bd-106">In a site-specific BOM, a specific warehouse can be defined for each BOM line.</span></span> <span data-ttu-id="584bd-107">Nastavení dimenzí položky na každém řádku kusovníku dále určuje, zda je zadání skladu povinné.</span><span class="sxs-lookup"><span data-stu-id="584bd-107">Additionally, for each BOM line, the item's dimension settings determine whether the warehouse is required.</span></span> <span data-ttu-id="584bd-108">Výsledná poptávka pro každý řádek kusovníku se potom stane výchozím bodem pro další rozpad poptávky.</span><span class="sxs-lookup"><span data-stu-id="584bd-108">The resulting demand for each BOM line item then becomes the starting point for additional demand explosion.</span></span> <span data-ttu-id="584bd-109">Pro tento scénář hlavního plánování platí následující podmínky:</span><span class="sxs-lookup"><span data-stu-id="584bd-109">This master planning scenario involves the following conditions:</span></span>
 
--   Dimenze pracoviště je povinná a v případě transakce poptávky musí být zadaná.
--   Dimenze pracoviště je konzistentní. To znamená, že pracoviště v poptávce nižší úrovně je stejné, jako pracoviště v původní transakci poptávky.
+-   <span data-ttu-id="584bd-110">Dimenze pracoviště je povinná a v případě transakce poptávky musí být zadaná.</span><span class="sxs-lookup"><span data-stu-id="584bd-110">The site dimension is mandatory and must be entered on the demand transaction.</span></span>
+-   <span data-ttu-id="584bd-111">Dimenze pracoviště je konzistentní.</span><span class="sxs-lookup"><span data-stu-id="584bd-111">The site dimension is consistent.</span></span> <span data-ttu-id="584bd-112">To znamená, že pracoviště v poptávce nižší úrovně je stejné, jako pracoviště v původní transakci poptávky.</span><span class="sxs-lookup"><span data-stu-id="584bd-112">Therefore, the site for lower-level demand is the same as the site on the initial demand transaction.</span></span>
 
-Následující obrázek ilustruje, jakým způsobem postupuje rozpad poptávky při hlavním plánování. ![Rozpad poptávky pomocí verze kusovníku](./media/multisitedemandexplosionscenariousingbomversion.gif)
+<span data-ttu-id="584bd-113">Následující obrázek ilustruje, jakým způsobem postupuje rozpad poptávky při hlavním plánování.</span><span class="sxs-lookup"><span data-stu-id="584bd-113">The following illustration shows how the process for master planning demand explosion.</span></span> ![Rozpad poptávky pomocí verze kusovníku](./media/multisitedemandexplosionscenariousingbomversion.gif)
 
-<a name="see-also"></a>Viz také
+<a name="see-also"></a><span data-ttu-id="584bd-115">Viz také</span><span class="sxs-lookup"><span data-stu-id="584bd-115">See also</span></span>
 --------
 
-[Hlavní plánování – jak se určuje verze kusovníku](master-plan-bom-version-determined.md)
+[<span data-ttu-id="584bd-116">Hlavní plánování – jak se určuje verze kusovníku</span><span class="sxs-lookup"><span data-stu-id="584bd-116">Master planning - how the BOM version is determined</span></span>](master-plan-bom-version-determined.md)
 
-[Hlavní plánování a funkce více pracovišť](master-plan-multisite-functionality.md)
+[<span data-ttu-id="584bd-117">Hlavní plánování a funkce více pracovišť</span><span class="sxs-lookup"><span data-stu-id="584bd-117">Master planning and multisite functionality</span></span>](master-plan-multisite-functionality.md)
 
 
 

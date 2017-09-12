@@ -17,32 +17,32 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 56f11484d960ab22aefef359c18f71d54dc50071
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 05237a0ba3aa785432c8b1fc36284a47f9aabd4a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-loyalty-reward-points"></a> Definování bodů věrnostních odměn
+# <a name="define-loyalty-reward-points"></a><span data-ttu-id="73d12-103"> Definování bodů věrnostních odměn</span><span class="sxs-lookup"><span data-stu-id="73d12-103">Define loyalty reward points</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Tato procedura vás provede definováním bodů věrnostních odměn. Body věrnostní odměny byste měli nastavit ještě před nastavením věrnostního programu. Tato procedura používá data ukázkové společnosti USRT.
+<span data-ttu-id="73d12-104">Tato procedura vás provede definováním bodů věrnostních odměn.</span><span class="sxs-lookup"><span data-stu-id="73d12-104">This procedure walks through defining loyalty reward points.</span></span> <span data-ttu-id="73d12-105">Body věrnostní odměny byste měli nastavit ještě před nastavením věrnostního programu.</span><span class="sxs-lookup"><span data-stu-id="73d12-105">You should set up loyalty reward points before you set up a loyalty program.</span></span> <span data-ttu-id="73d12-106">Tato procedura používá data ukázkové společnosti USRT.</span><span class="sxs-lookup"><span data-stu-id="73d12-106">This procedure uses the USRT demo data company.</span></span>
 
-1. Přejděte do nabídky Maloobchodní a velkoobchodní prodej > Odběratelé > Věrnost > Body věrnostní odměny.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole ID bodu odměny.
-4. Zadejte nějakou hodnotu do pole Popis.
-5. Vyberte možnost v poli Typ bodu odměny.
-    * Vyberte Množství, pokud chcete věrnostní body zaokrouhlit na nejbližší celé číslo. Pokud chcete, aby body odměny byly zaokrouhlování podle pravidel zaokrouhlení měny, vyberte Množství. Vyberete-li možnost Množství, přeskočte další krok této procedury.  
-6. Zadejte hodnotu do pole Měna.
-    * Pro typ částky bodů odměny budou mít všechny udělené body vybranou měnu. Pro body odměny pro typ množství toto pole nelze použít – vynechejte tento krok.  
-7. Zaškrtněte nebo zrušte zaškrtnutí políčka Lze uplatnit.
-8. Zadejte číslo do pole Uplatnit hodnocení.
-    * Uplatnit hodnocení se používá, když dvě nebo více uplatnitelných bodových odměn je možné použít pro zaplacení produktů. Pokud dva body odměny mají stejné hodnocení pro uplatnění, pak se použije ten, který vyžaduje snížení počtu bodů.  
-9. Zadejte číslo do pole Hodnota času konce platnosti.
-    * Body odměny vyprší za zadaný počet dní, měsíců nebo roků po jejich vydání. Hodnota „0“ znamená, že body věrnostní odměny nikdy nevyprší.  
-10. Vyberte možnost v poli Jednotka času konce platnosti.
-11. Klikněte na položku Uložit.
+1. <span data-ttu-id="73d12-107">Přejděte do nabídky Maloobchodní a velkoobchodní prodej > Odběratelé > Věrnost > Body věrnostní odměny.</span><span class="sxs-lookup"><span data-stu-id="73d12-107">Go to Retail and commerce > Customers > Loyalty > Loyalty reward points.</span></span>
+2. <span data-ttu-id="73d12-108">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="73d12-108">Click New.</span></span>
+3. <span data-ttu-id="73d12-109">Zadejte hodnotu do pole ID bodu odměny.</span><span class="sxs-lookup"><span data-stu-id="73d12-109">In the Reward point ID field, type a value.</span></span>
+4. <span data-ttu-id="73d12-110">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="73d12-110">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="73d12-111">Vyberte možnost v poli Typ bodu odměny.</span><span class="sxs-lookup"><span data-stu-id="73d12-111">In the Reward point type field, select an option.</span></span>
+    * <span data-ttu-id="73d12-112">Vyberte Množství, pokud chcete věrnostní body zaokrouhlit na nejbližší celé číslo.</span><span class="sxs-lookup"><span data-stu-id="73d12-112">Select Quantity if you want the reward points to be rounded to the nearest integer.</span></span> <span data-ttu-id="73d12-113">Pokud chcete, aby body odměny byly zaokrouhlování podle pravidel zaokrouhlení měny, vyberte Množství.</span><span class="sxs-lookup"><span data-stu-id="73d12-113">Select Amount if you want the reward points to be rounded according to currency rounding rules.</span></span> <span data-ttu-id="73d12-114">Vyberete-li možnost Množství, přeskočte další krok této procedury.</span><span class="sxs-lookup"><span data-stu-id="73d12-114">If you select Quantity, skip the next step of this procedure..</span></span>  
+6. <span data-ttu-id="73d12-115">Zadejte hodnotu do pole Měna.</span><span class="sxs-lookup"><span data-stu-id="73d12-115">In the Currency field, type a value.</span></span>
+    * <span data-ttu-id="73d12-116">Pro typ částky bodů odměny budou mít všechny udělené body vybranou měnu.</span><span class="sxs-lookup"><span data-stu-id="73d12-116">For Amount type reward points, all points issued will have the selected currency.</span></span> <span data-ttu-id="73d12-117">Pro body odměny pro typ množství toto pole nelze použít – vynechejte tento krok.</span><span class="sxs-lookup"><span data-stu-id="73d12-117">For Quantity type reward points, this field doesn't apply—skip this step.</span></span>  
+7. <span data-ttu-id="73d12-118">Zaškrtněte nebo zrušte zaškrtnutí políčka Lze uplatnit.</span><span class="sxs-lookup"><span data-stu-id="73d12-118">Check or uncheck the Redeemable checkbox.</span></span>
+8. <span data-ttu-id="73d12-119">Zadejte číslo do pole Uplatnit hodnocení.</span><span class="sxs-lookup"><span data-stu-id="73d12-119">In the Redeem ranking field, enter a number.</span></span>
+    * <span data-ttu-id="73d12-120">Uplatnit hodnocení se používá, když dvě nebo více uplatnitelných bodových odměn je možné použít pro zaplacení produktů.</span><span class="sxs-lookup"><span data-stu-id="73d12-120">Redeem ranking is used when two or more redeemable reward points can be used to pay for products.</span></span> <span data-ttu-id="73d12-121">Pokud dva body odměny mají stejné hodnocení pro uplatnění, pak se použije ten, který vyžaduje snížení počtu bodů.</span><span class="sxs-lookup"><span data-stu-id="73d12-121">If the two reward points have the same redeem ranking, then the one that needs to lower number of points will be used.</span></span>  
+9. <span data-ttu-id="73d12-122">Zadejte číslo do pole Hodnota času konce platnosti.</span><span class="sxs-lookup"><span data-stu-id="73d12-122">In the Expiration time value field, enter a number.</span></span>
+    * <span data-ttu-id="73d12-123">Body odměny vyprší za zadaný počet dní, měsíců nebo roků po jejich vydání.</span><span class="sxs-lookup"><span data-stu-id="73d12-123">The reward points will expire the specified number of days, months, or years after when the points are issued.</span></span> <span data-ttu-id="73d12-124">Hodnota „0“ znamená, že body věrnostní odměny nikdy nevyprší.</span><span class="sxs-lookup"><span data-stu-id="73d12-124">A value of ‘0’ means the loyalty reward points will never expire.</span></span>  
+10. <span data-ttu-id="73d12-125">Vyberte možnost v poli Jednotka času konce platnosti.</span><span class="sxs-lookup"><span data-stu-id="73d12-125">In the Expiration time unit field, select an option.</span></span>
+11. <span data-ttu-id="73d12-126">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="73d12-126">Click Save.</span></span>
 
 

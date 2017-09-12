@@ -17,115 +17,115 @@ ms.assetid: c0286bba-f54b-42de-904c-81fd796bdd1d
 ms.search.region: global
 ms.search.industry: Product information
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d232473a1df0b821c6f39553ad826c61ff9ecff8
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: c18d50122e22c3f3476a1b204ea302d1b05e7c75
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="product-related-translations-faq"></a>Překlady související s produktem – nejčastější dotazy
+# <a name="product-related-translations-faq"></a><span data-ttu-id="53fa6-103">Překlady související s produktem – nejčastější dotazy</span><span class="sxs-lookup"><span data-stu-id="53fa6-103">Product-related translations FAQ</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje, jak spravovat překlady pro produkty, hodnoty dimenze produktu a atributy produktu. 
+<span data-ttu-id="53fa6-104">Toto téma popisuje, jak spravovat překlady pro produkty, hodnoty dimenze produktu a atributy produktu.</span><span class="sxs-lookup"><span data-stu-id="53fa6-104">This topic describes how to manage translations for products, product dimension values, and product attributes.</span></span> 
 
-<a name="what-product-related-data-can-be-translated"></a>Jaká data související s produktem lze přeložit?
+<a name="what-product-related-data-can-be-translated"></a><span data-ttu-id="53fa6-105">Jaká data související s produktem lze přeložit?</span><span class="sxs-lookup"><span data-stu-id="53fa6-105">What product-related data can be translated?</span></span>
 --------------------------------------------
 
-Můžete vytvářet překlady následujících informací souvisejících s produkty:
--   Názvy a popisy produktů.
--   Popisy, popisné názvy a text nápovědy hodnot atributů produktu.
--   Názvy a popisy hodnot dimenze produktu
+<span data-ttu-id="53fa6-106">Můžete vytvářet překlady následujících informací souvisejících s produkty:</span><span class="sxs-lookup"><span data-stu-id="53fa6-106">You can create translations for the following product-related information:</span></span>
+-   <span data-ttu-id="53fa6-107">Názvy a popisy produktů.</span><span class="sxs-lookup"><span data-stu-id="53fa6-107">Names and descriptions of products.</span></span>
+-   <span data-ttu-id="53fa6-108">Popisy, popisné názvy a text nápovědy hodnot atributů produktu.</span><span class="sxs-lookup"><span data-stu-id="53fa6-108">Descriptions, friendly names, and help text of product attribute values.</span></span>
+-   <span data-ttu-id="53fa6-109">Názvy a popisy hodnot dimenze produktu</span><span class="sxs-lookup"><span data-stu-id="53fa6-109">Names and descriptions of product dimension values.</span></span>
 
-Informace související s produkty můžete překládat do jakéhokoli jazyka, který je k dispozici ze stránky **Překlad textu**. Další informace naleznete v následující části **Vytvoření překladů pro informace související s produktem**.
+<span data-ttu-id="53fa6-110">Informace související s produkty můžete překládat do jakéhokoli jazyka, který je k dispozici ze stránky **Překlad textu**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-110">You can translate the product-related information into any language that is available from the **Text translation** page.</span></span> <span data-ttu-id="53fa6-111">Další informace naleznete v následující části **Vytvoření překladů pro informace související s produktem**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-111">For more information, see the following section **How do I created translations for product-related information**.</span></span>
 
-## <a name="where-can-i-view-the-translated-information"></a>Kde se můžu podívat na přeložené informace?
-Překlad informací o produktu můžete zobrazit v jakémkoli externím zdrojovém dokumentu, jako je faktura, která používá jazyk, kde jsou k dispozici překlady.
+## <a name="where-can-i-view-the-translated-information"></a><span data-ttu-id="53fa6-112">Kde se můžu podívat na přeložené informace?</span><span class="sxs-lookup"><span data-stu-id="53fa6-112">Where can I view the translated information?</span></span>
+<span data-ttu-id="53fa6-113">Překlad informací o produktu můžete zobrazit v jakémkoli externím zdrojovém dokumentu, jako je faktura, která používá jazyk, kde jsou k dispozici překlady.</span><span class="sxs-lookup"><span data-stu-id="53fa6-113">You can view translations of product-related information in any external source document, such as an invoice, that uses a language where translations are available.</span></span>
 
-## <a name="how-do-i-create-translations-for-productrelated-information"></a>Jak se vytvářejí překlady pro informace související s produktem?
-Při vytváření překladů produktu postupujte takto:
-1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Uvolněné produkty**.
-2.  Vyberte produkt a v podokně akcí ve skupině **Jazyky** klikněte na **Překlady**.
-3.  Na stránce **Překlad textu** v poli **Jazyk** vyberte jazyk. Pokud chcete přidat více jazyků, rozbalte pole **Jazyk** a klikněte na **OK**.
-4.  Ve skupině **Přeložený text** Zadejte překlad do polí **Popis** d **Název produktu**.
+## <a name="how-do-i-create-translations-for-productrelated-information"></a><span data-ttu-id="53fa6-114">Jak se vytvářejí překlady pro informace související s produktem?</span><span class="sxs-lookup"><span data-stu-id="53fa6-114">How do I create translations for productrelated information?</span></span>
+<span data-ttu-id="53fa6-115">Při vytváření překladů produktu postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="53fa6-115">To create translations for a product, follow these steps:</span></span>
+1.  <span data-ttu-id="53fa6-116">Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Uvolněné produkty**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-116">Click **Product information management** &gt; **Common** &gt; **Released products**.</span></span>
+2.  <span data-ttu-id="53fa6-117">Vyberte produkt a v podokně akcí ve skupině **Jazyky** klikněte na **Překlady**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-117">Select a product, and on the Action Pane, in the **Languages** group, click **Translations**.</span></span>
+3.  <span data-ttu-id="53fa6-118">Na stránce **Překlad textu** v poli **Jazyk** vyberte jazyk.</span><span class="sxs-lookup"><span data-stu-id="53fa6-118">In the **Text translation** page, in the **Language** field, select a language.</span></span> <span data-ttu-id="53fa6-119">Pokud chcete přidat více jazyků, rozbalte pole **Jazyk** a klikněte na **OK**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-119">To add more languages, expand the **Language** field, and then click **OK**.</span></span>
+4.  <span data-ttu-id="53fa6-120">Ve skupině **Přeložený text** Zadejte překlad do polí **Popis** d **Název produktu**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-120">In the **Translated text** group, enter translations in the **Description** and **Product name** fields.</span></span>
 
-Při vytváření překladů atributů produktu postupujte takto:
-1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Uvolněné produkty**.
-2.  Ve skupinovém rámečku **Nastavení** klepněte na tlačítko **Atributy** a klepněte na tlačítko **Atributy**.
-3.  Na stránce **Atributy** klepněte na **Přeložit**.
-4.  Na stránce **Překlad textu** v poli **Jazyk** vyberte jazyk. Pokud chcete přidat více jazyků, rozbalte pole **Jazyk** a klikněte na **OK**.
-5.  Ve skupině **Přeložený text** napište překlady do polí **Popis**, **Popisný název** a **Text nápovědy**.
+<span data-ttu-id="53fa6-121">Při vytváření překladů atributů produktu postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="53fa6-121">To create translations for product attributes, follow these steps:</span></span>
+1.  <span data-ttu-id="53fa6-122">Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Uvolněné produkty**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-122">Click **Product information management** &gt; **Common** &gt; **Released products**.</span></span>
+2.  <span data-ttu-id="53fa6-123">Ve skupinovém rámečku **Nastavení** klepněte na tlačítko **Atributy** a klepněte na tlačítko **Atributy**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-123">Under **Setup**, click **Attributes**, and then click **Attributes**.</span></span>
+3.  <span data-ttu-id="53fa6-124">Na stránce **Atributy** klepněte na **Přeložit**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-124">In the **Attributes** page, click **Translate**.</span></span>
+4.  <span data-ttu-id="53fa6-125">Na stránce **Překlad textu** v poli **Jazyk** vyberte jazyk.</span><span class="sxs-lookup"><span data-stu-id="53fa6-125">In the **Text translation** page, in the **Language** field, select a language.</span></span> <span data-ttu-id="53fa6-126">Pokud chcete přidat více jazyků, rozbalte pole **Jazyk** a klikněte na **OK**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-126">To add more languages, expand the **Language** field, and then click **OK**.</span></span>
+5.  <span data-ttu-id="53fa6-127">Ve skupině **Přeložený text** napište překlady do polí **Popis**, **Popisný název** a **Text nápovědy**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-127">In the **Translated text** group, enter translations in the **Description**, **Friendly name**, and **Help text** fields.</span></span>
 
-Při vytváření překladů hodnot dimenze produktu postupujte takto:
-1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Uvolněné produkty**.
-2.  Vyberte produkt a klepněte na možnost **Rozměry produktu**.
-3.  Vyberte jeden z odkazů pro dimenze produktu: **Konfigurace**, **Velikosti**, **Barvy** nebo **Styl**.
-4.  Vyberte hodnotu dimenze a poté klikněte na položku **Přeložit**.
-5.  Na stránce **Překlad textu** v poli **Jazyk** vyberte jazyk. Pokud chcete přidat více jazyků, rozbalte pole **Jazyk** a klikněte na **OK**.
-6.  Ve skupině **Přeložený text** zadejte překlady do polí **Název** a **Popis**.
+<span data-ttu-id="53fa6-128">Při vytváření překladů hodnot dimenze produktu postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="53fa6-128">To create translations for product dimension values, follow these steps:</span></span>
+1.  <span data-ttu-id="53fa6-129">Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Uvolněné produkty**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-129">Click **Product information management** &gt; **Common** &gt; **Released products**.</span></span>
+2.  <span data-ttu-id="53fa6-130">Vyberte produkt a klepněte na možnost **Rozměry produktu**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-130">Select a product, and then click **Product dimensions**.</span></span>
+3.  <span data-ttu-id="53fa6-131">Vyberte jeden z odkazů pro dimenze produktu: **Konfigurace**, **Velikosti**, **Barvy** nebo **Styl**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-131">Select one of the links for the product dimensions: **Configurations**, **Sizes**, **Colors**, or **Style**.</span></span>
+4.  <span data-ttu-id="53fa6-132">Vyberte hodnotu dimenze a poté klikněte na položku **Přeložit**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-132">Select a dimension value and then click **Translate**.</span></span>
+5.  <span data-ttu-id="53fa6-133">Na stránce **Překlad textu** v poli **Jazyk** vyberte jazyk.</span><span class="sxs-lookup"><span data-stu-id="53fa6-133">In the **Text translation** page, in the **Language** field, select a language.</span></span> <span data-ttu-id="53fa6-134">Pokud chcete přidat více jazyků, rozbalte pole **Jazyk** a klikněte na **OK**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-134">To add more languages, expand the **Language** field, and then click **OK**.</span></span>
+6.  <span data-ttu-id="53fa6-135">Ve skupině **Přeložený text** zadejte překlady do polí **Název** a **Popis**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-135">In the **Translated text** group, enter translations in the **Name** and **Description** fields.</span></span>
 
-## <a name="can-the-names-of-product-variants-be-translated"></a>Je možné přeložit názvy variant produktu?
-Varianty produktu, které jsou založené na dimenzích vydaného produktu. Názvy variant produktu jsou založeny na kombinaci hodnot dimenzí. Pokud jsou přeloženy hodnoty dimenze, které jsou přidruženy k variantě produktu, název varianty produktu se zobrazí v přeloženou verzi.  
+## <a name="can-the-names-of-product-variants-be-translated"></a><span data-ttu-id="53fa6-136">Je možné přeložit názvy variant produktu?</span><span class="sxs-lookup"><span data-stu-id="53fa6-136">Can the names of product variants be translated?</span></span>
+<span data-ttu-id="53fa6-137">Varianty produktu, které jsou založené na dimenzích vydaného produktu.</span><span class="sxs-lookup"><span data-stu-id="53fa6-137">Product variants are based on the dimensions of a released product.</span></span> <span data-ttu-id="53fa6-138">Názvy variant produktu jsou založeny na kombinaci hodnot dimenzí.</span><span class="sxs-lookup"><span data-stu-id="53fa6-138">Product variant names are based on a combination of dimension values.</span></span> <span data-ttu-id="53fa6-139">Pokud jsou přeloženy hodnoty dimenze, které jsou přidruženy k variantě produktu, název varianty produktu se zobrazí v přeloženou verzi.</span><span class="sxs-lookup"><span data-stu-id="53fa6-139">When the dimension values that are associated with a product variant are translated, the name of the product variant appears in the translated version.</span></span>  
 
-**Příklad**  
+<span data-ttu-id="53fa6-140">**Příklad**</span><span class="sxs-lookup"><span data-stu-id="53fa6-140">**Example**</span></span>  
 
-Produkt je tričko dodávané v různých velikostech a barvách a názvy variant jsou založeny na následujících údajích:
--   Číslo produktu: \#3
--   Dimenze: Velikost a barva
--   Hodnoty velikosti dimenze: malá, střední, velká
--   Hodnoty barvy dimenze: červená, zelená, černá
+<span data-ttu-id="53fa6-141">Produkt je tričko dodávané v různých velikostech a barvách a názvy variant jsou založeny na následujících údajích:</span><span class="sxs-lookup"><span data-stu-id="53fa6-141">Your product is a T-shirt that comes in different sizes and colors and the variant names are based on the following details:</span></span>
+-   <span data-ttu-id="53fa6-142">Číslo produktu: \#3</span><span class="sxs-lookup"><span data-stu-id="53fa6-142">Product number: \#3</span></span>
+-   <span data-ttu-id="53fa6-143">Dimenze: Velikost a barva</span><span class="sxs-lookup"><span data-stu-id="53fa6-143">Dimensions: Size and color</span></span>
+-   <span data-ttu-id="53fa6-144">Hodnoty velikosti dimenze: malá, střední, velká</span><span class="sxs-lookup"><span data-stu-id="53fa6-144">Size dimension values: Small, Medium, Large</span></span>
+-   <span data-ttu-id="53fa6-145">Hodnoty barvy dimenze: červená, zelená, černá</span><span class="sxs-lookup"><span data-stu-id="53fa6-145">Color dimension values: Red, Green, Black</span></span>
 
-Název varianty produktu, která je založená na hodnotách dimenze Malá a Červená, je **\#3:Malá:Červená**.  
+<span data-ttu-id="53fa6-146">Název varianty produktu, která je založená na hodnotách dimenze Malá a Červená, je **\#3:Malá:Červená**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-146">The name of a product variant that is based on the dimension values Small and Red is **\#3:Small:Red**.</span></span>  
 
-Zákazník chce koupit nějaká malá červená trička a název tričko musí být na faktuře ve francouzštině. Přeložíte hodnoty dimenze Malá a Červená do francouzštiny a název varianty produktu je **\#3:Petit:Rouge**.
+<span data-ttu-id="53fa6-147">Zákazník chce koupit nějaká malá červená trička a název tričko musí být na faktuře ve francouzštině.</span><span class="sxs-lookup"><span data-stu-id="53fa6-147">A customer wants to buy some small, red T-shirts and the name of the T-shirt must appear in French on the invoice.</span></span> <span data-ttu-id="53fa6-148">Přeložíte hodnoty dimenze Malá a Červená do francouzštiny a název varianty produktu je **\#3:Petit:Rouge**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-148">You translate the dimension values, Small and Red, into French, and the name of the product variant is **\#3:Petit:Rouge**.</span></span>
 <table>
 <colgroup>
 <col width="100%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Tip</strong></th>
+<th><span data-ttu-id="53fa6-149"><strong>Tip</strong></span><span class="sxs-lookup"><span data-stu-id="53fa6-149"><strong>Tip</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Pokud chcete nastavit upřednostňovaný jazyk odběratele, postupujte takto:
+<td><span data-ttu-id="53fa6-150">Pokud chcete nastavit upřednostňovaný jazyk odběratele, postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="53fa6-150">To set the preferred language of a customer, follow these steps:</span></span>
 <ol>  
-<li>Klikněte na <strong>Prodej a marketing</strong> &gt; <strong>Společné</strong> &gt; <strong>Zákazníci</strong> &gt; <strong>Všichni</strong> <strong>zákazníci</strong>.</li>
-<li>Kliknutím dvakrát na účet odběratele otevřete formulář <strong>Zákazníci</strong>. Na kartě <strong>Obecné</strong> vyberte v poli <strong>Jazyk</strong> požadovaný <strong>jazyk</strong>.</li>
+<li><span data-ttu-id="53fa6-151">Klikněte na <strong>Prodej a marketing</strong> &gt; <strong>Společné</strong> &gt; <strong>Zákazníci</strong> &gt; <strong>Všichni</strong> <strong>zákazníci</strong>.</span><span class="sxs-lookup"><span data-stu-id="53fa6-151">Click <strong>Sales and marketing</strong> &gt; <strong>Common</strong> &gt; <strong>Customers</strong> &gt; <strong>All</strong> <strong>customers</strong>.</span></span></li>
+<li><span data-ttu-id="53fa6-152">Kliknutím dvakrát na účet odběratele otevřete formulář <strong>Zákazníci</strong>.</span><span class="sxs-lookup"><span data-stu-id="53fa6-152">Double-click a customer to open the <strong>Customers</strong> page.</span></span> <span data-ttu-id="53fa6-153">Na kartě <strong>Obecné</strong> vyberte v poli <strong>Jazyk</strong> požadovaný <strong>jazyk</strong>.</span><span class="sxs-lookup"><span data-stu-id="53fa6-153">On the <strong>General</strong> tab, in the <strong>Language</strong> field, select the <strong>language</strong>.</span></span></li>
 </ol></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="what-happens-if-a-customer-has-a-preferred-language-for-which-no-translations-are-available"></a>Co se stane, pokud má odběratel preferovaný jazyk, pro který není k dispozici žádný překlad?
-Pokud pro upřednostňovaný jazyk odběratele nejsou k dispozici překlady, názvy a popisy se zobrazují v globálním jazyce vaší vlastní společnosti.
+## <a name="what-happens-if-a-customer-has-a-preferred-language-for-which-no-translations-are-available"></a><span data-ttu-id="53fa6-154">Co se stane, pokud má odběratel preferovaný jazyk, pro který není k dispozici žádný překlad?</span><span class="sxs-lookup"><span data-stu-id="53fa6-154">What happens if a customer has a preferred language for which no translations are available?</span></span>
+<span data-ttu-id="53fa6-155">Pokud pro upřednostňovaný jazyk odběratele nejsou k dispozici překlady, názvy a popisy se zobrazují v globálním jazyce vaší vlastní společnosti.</span><span class="sxs-lookup"><span data-stu-id="53fa6-155">If translations are not available in the customer’s preferred language, the names and descriptions are displayed in the global language of your own company.</span></span>
 
-## <a name="can-i-manage-translations-for-a-series-of-dimension-values-at-the-same-time"></a>Lze spravovat současně překlady pro celou řadu hodnot dimenzí?
-Hodnoty dimenzí jsou specifické pro produkt a můžete spravovat překlady hodnot dimenzí pro každý výrobek. Pokud ale vytvoříte skupinu hodnot dimenze a přeložíte hodnoty ve skupině hodnot, je správa překladů jednodušší.   
+## <a name="can-i-manage-translations-for-a-series-of-dimension-values-at-the-same-time"></a><span data-ttu-id="53fa6-156">Lze spravovat současně překlady pro celou řadu hodnot dimenzí?</span><span class="sxs-lookup"><span data-stu-id="53fa6-156">Can I manage translations for a series of dimension values at the same time?</span></span>
+<span data-ttu-id="53fa6-157">Hodnoty dimenzí jsou specifické pro produkt a můžete spravovat překlady hodnot dimenzí pro každý výrobek.</span><span class="sxs-lookup"><span data-stu-id="53fa6-157">Dimension values are product specific and you can manage the translations for the dimension values for each product.</span></span> <span data-ttu-id="53fa6-158">Pokud ale vytvoříte skupinu hodnot dimenze a přeložíte hodnoty ve skupině hodnot, je správa překladů jednodušší.</span><span class="sxs-lookup"><span data-stu-id="53fa6-158">However, if you create a dimension value group and create translations for the values in the value group, it is easier to manage the translations.</span></span>   
 
-**Příklad**  
+<span data-ttu-id="53fa6-159">**Příklad**</span><span class="sxs-lookup"><span data-stu-id="53fa6-159">**Example**</span></span>  
 
-Společnost vyrábí trička v různých stylech a všechny jsou dostupné ve velikostech Malá, Střední a Velká. Velikosti jsou shromážděny v jedné skupině hodnot dimenzí. Když je přidán nový styl trička, můžete jej přidružit ke skupině hodnot dimenze, která se použije pro velikosti, tak, aby všechny velikosti byly k dispozici pro produkt. Můžete také kdykoli přidat nebo změnit překlady velikostí ve skupině hodnot dimenzí.  
+<span data-ttu-id="53fa6-160">Společnost vyrábí trička v různých stylech a všechny jsou dostupné ve velikostech Malá, Střední a Velká.</span><span class="sxs-lookup"><span data-stu-id="53fa6-160">Your company produces T-shirts in different styles, and each style is available in the sizes Small, Medium, and Large.</span></span> <span data-ttu-id="53fa6-161">Velikosti jsou shromážděny v jedné skupině hodnot dimenzí.</span><span class="sxs-lookup"><span data-stu-id="53fa6-161">The sizes are collected in one dimension value group.</span></span> <span data-ttu-id="53fa6-162">Když je přidán nový styl trička, můžete jej přidružit ke skupině hodnot dimenze, která se použije pro velikosti, tak, aby všechny velikosti byly k dispozici pro produkt.</span><span class="sxs-lookup"><span data-stu-id="53fa6-162">When a new T-shirt style is added, you can associate it with the dimension value group that is used for sizes, so that all the sizes are available for the product.</span></span> <span data-ttu-id="53fa6-163">Můžete také kdykoli přidat nebo změnit překlady velikostí ve skupině hodnot dimenzí.</span><span class="sxs-lookup"><span data-stu-id="53fa6-163">You can also add or change translations for the sizes in the dimension value group at any time.</span></span>  
 
-Hodnota dimenze přiřazená k produktu prostřednictvím skupiny variant dimenzí musí být spravovaná ze skupiny variant produktu.   
-Pokud chcete vytvořit skupinu pro hodnotu dimenze, postupujte takto:
-1.  Klepněte na tlačítko **Řízení informací o produktech** &gt; **Nastavení** &gt; **Skupiny variant**.
-2.  Vyberte **Skupiny** **velikostí**, **Skupiny barev** nebo **Skupiny stylů**.
-3.  Klepněte na tlačítko **Nový** a poté zadejte název skupiny do pole **Skupina** **velikostí**, **Skupina barev** nebo **Skupina stylů**. Kliknutím na **Velikosti**, **Barvy** nebo **Styly** vytvořte řádky pro skupiny.
-4.  Na stránce řádků **Skupina** **velikostí**, **Řádky** **skupiny** **barev** nebo **Řádky skupiny stylů** klikněte na **Nový** a vytvořte velikosti, barvy a styly skupin.
+<span data-ttu-id="53fa6-164">Hodnota dimenze přiřazená k produktu prostřednictvím skupiny variant dimenzí musí být spravovaná ze skupiny variant produktu.</span><span class="sxs-lookup"><span data-stu-id="53fa6-164">A dimension value that is associated with a product through a dimension variant group must be maintained from the product variant group.</span></span>   
+<span data-ttu-id="53fa6-165">Pokud chcete vytvořit skupinu pro hodnotu dimenze, postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="53fa6-165">To create a dimension value group, follow these steps:</span></span>
+1.  <span data-ttu-id="53fa6-166">Klepněte na tlačítko **Řízení informací o produktech** &gt; **Nastavení** &gt; **Skupiny variant**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-166">Click **Product information management** &gt; **Setup** &gt; **Variant groups**.</span></span>
+2.  <span data-ttu-id="53fa6-167">Vyberte **Skupiny** **velikostí**, **Skupiny barev** nebo **Skupiny stylů**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-167">Select **Size** **groups**, **Color groups**, or **Style groups**.</span></span>
+3.  <span data-ttu-id="53fa6-168">Klepněte na tlačítko **Nový** a poté zadejte název skupiny do pole **Skupina** **velikostí**, **Skupina barev** nebo **Skupina stylů**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-168">Click **New**, and then enter a name for the group in the **Size** **group**, **Color group**, or **Style group** field.</span></span> <span data-ttu-id="53fa6-169">Kliknutím na **Velikosti**, **Barvy** nebo **Styly** vytvořte řádky pro skupiny.</span><span class="sxs-lookup"><span data-stu-id="53fa6-169">Click **Sizes**, **Colors**, or **Styles** to create lines for the groups.</span></span>
+4.  <span data-ttu-id="53fa6-170">Na stránce řádků **Skupina** **velikostí**, **Řádky** **skupiny** **barev** nebo **Řádky skupiny stylů** klikněte na **Nový** a vytvořte velikosti, barvy a styly skupin.</span><span class="sxs-lookup"><span data-stu-id="53fa6-170">In the **Size** **group** lines, **Color** **group** **lines**, or **Style group lines** page, click **New**, and then create the sizes, colors, and styles for the groups.</span></span>
 
-Pokud chcete spravovat překlady hodnot v určité skupině hodnot dimenze, postupujte takto:
-1.  Postupujte podle pokynů v předchozím postupu pro vytvoření skupiny hodnot dimenzí k otevření stránky **Řádky skupiny velikostí**, **Řádky skupiny barev**, nebo **Řádky skupiny stylů**.
-2.  Klikněte na **Překlad textu**. Na stránce **Překlad textu** ve skupině **Přeložený text** zadejte překlady do pole **Název** a **Popis**.
+<span data-ttu-id="53fa6-171">Pokud chcete spravovat překlady hodnot v určité skupině hodnot dimenze, postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="53fa6-171">To manage translations for values in a dimension value group, follow these steps:</span></span>
+1.  <span data-ttu-id="53fa6-172">Postupujte podle pokynů v předchozím postupu pro vytvoření skupiny hodnot dimenzí k otevření stránky **Řádky skupiny velikostí**, **Řádky skupiny barev**, nebo **Řádky skupiny stylů**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-172">Follow the steps in the previous procedure for creating a dimension value group to open the **Size group lines**, **Color group lines**, or **Style group lines** page.</span></span>
+2.  <span data-ttu-id="53fa6-173">Klikněte na **Překlad textu**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-173">Click **Text translation**.</span></span> <span data-ttu-id="53fa6-174">Na stránce **Překlad textu** ve skupině **Přeložený text** zadejte překlady do pole **Název** a **Popis**.</span><span class="sxs-lookup"><span data-stu-id="53fa6-174">In the **Text translation** page, in the **Translated text** group, enter translations in the **Name** and **Description** fields.</span></span>
 
-## <a name="when-can-translations-of-productrelated-information-be-managed"></a>Kdy lze spravovat překlady informací souvisejících s produktem?
-Překlady informací souvisejících s produktem lze spravovat kdykoli. Při aktualizaci překladů pro hodnotu dimenze, která je přidružena k produktu, se aktualizují informace o produktu, bez ohledu na to, zda má produkt transakce.
+## <a name="when-can-translations-of-productrelated-information-be-managed"></a><span data-ttu-id="53fa6-175">Kdy lze spravovat překlady informací souvisejících s produktem?</span><span class="sxs-lookup"><span data-stu-id="53fa6-175">When can translations of productrelated information be managed?</span></span>
+<span data-ttu-id="53fa6-176">Překlady informací souvisejících s produktem lze spravovat kdykoli.</span><span class="sxs-lookup"><span data-stu-id="53fa6-176">Translations of product-related information can be managed at any time.</span></span> <span data-ttu-id="53fa6-177">Při aktualizaci překladů pro hodnotu dimenze, která je přidružena k produktu, se aktualizují informace o produktu, bez ohledu na to, zda má produkt transakce.</span><span class="sxs-lookup"><span data-stu-id="53fa6-177">When translations are updated for a dimension value that is associated with a product, the product information is updated, regardless of whether the product has transactions.</span></span>
 
 
 

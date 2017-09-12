@@ -16,7 +16,7 @@ ms.custom: 7171
 ms.assetid: 381fc309-b32a-4927-b5b8-fa1c31b0bd72
 ms.search.region: Global
 ms.author: vstehman
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
@@ -26,165 +26,165 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a>Sazby DPH na základě polí Základ marže a Metody výpočtu
+# <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a><span data-ttu-id="a0d5b-103">Sazby DPH na základě polí Základ marže a Metody výpočtu</span><span class="sxs-lookup"><span data-stu-id="a0d5b-103">Sales tax rates based on the Marginal base and Calculation methods</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek vysvětluje, jak hodnoty v poli Základ marže a Metoda výpočtu určují sazby daně v prodejních a nákupních transakcích.
+<span data-ttu-id="a0d5b-104">Tento článek vysvětluje, jak hodnoty v poli Základ marže a Metoda výpočtu určují sazby daně v prodejních a nákupních transakcích.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-104">This article explains how the values in the fields Marginal base and Calculation method determine the tax rate(s) in sales and purchase transactions.</span></span>
 
-Základ marže na pevné záložce Výpočet na stránce Kódy DPH určuje částku, která je použita k výběru odpovídající sazby daně ze sazeb na stránce Hodnoty kódu DPH. Typ částky v poli Základ marže v kombinaci s metodu v poli Metoda výpočtu určuje logiku, podle které je hledána správná sazba daně pro transakci. 
+<span data-ttu-id="a0d5b-105">Základ marže na pevné záložce Výpočet na stránce Kódy DPH určuje částku, která je použita k výběru odpovídající sazby daně ze sazeb na stránce Hodnoty kódu DPH.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-105">The Marginal base on the Calculation FastTab on the Sales tax codes page determines which amount is used to pick the appropriate tax rate(s) from the rates in the Sales tax code values page.</span></span> <span data-ttu-id="a0d5b-106">Typ částky v poli Základ marže v kombinaci s metodu v poli Metoda výpočtu určuje logiku, podle které je hledána správná sazba daně pro transakci.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-106">The amount type in the Marginal base field in combination with the method in the Calculation method field determines the logic to find the correct tax rate(s) for a transaction.</span></span> 
 
-Různé kombinace hodnot v těchto polích poskytují velmi rozdílné výpočty DPH, jak je uvedeno v následujících příkladech. V příkladech jsou použity stejné hodnoty daňového období, jaké se nastavují pro každý kód DPH na stránce Hodnoty kódů DPH. Tuto stránku otevřete kliknutím na možnosti Kód prodejní daně &gt; Hodnoty na stránce Kódy DPH.
+<span data-ttu-id="a0d5b-107">Různé kombinace hodnot v těchto polích poskytují velmi rozdílné výpočty DPH, jak je uvedeno v následujících příkladech.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-107">Various combinations of values in these fields produce very different sales tax calculations, as shown by the following examples.</span></span> <span data-ttu-id="a0d5b-108">V příkladech jsou použity stejné hodnoty daňového období, jaké se nastavují pro každý kód DPH na stránce Hodnoty kódů DPH.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-108">The examples use the same tax interval values, which are set up for each tax code in the Sales tax codes values page.</span></span> <span data-ttu-id="a0d5b-109">Tuto stránku otevřete kliknutím na možnosti Kód prodejní daně &gt; Hodnoty na stránce Kódy DPH.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-109">To open this page, click Sales tax code &gt; Values in the Sales tax codes page.</span></span>
 
 > [!Important]                                                                                                                  
-> Je-li základ marže některého kódu DPH založen na částkách nebo jednotkách řádku, je nutné v poli Metoda výpočtu na stránce Parametry hlavní knihy nastavit hodnotu Řádek. |
+> <span data-ttu-id="a0d5b-110">Je-li základ marže některého kódu DPH založen na částkách nebo jednotkách řádku, je nutné v poli Metoda výpočtu na stránce Parametry hlavní knihy nastavit hodnotu Řádek.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-110">If the Marginal base on one or more of your sales tax codes is based on line amounts or units, the value of the Calculation method field in the General ledger parameters page must be set to Line.</span></span> |
 
-## <a name="net-amount-per-line"></a> Čistá částka za řádek
-Tuto možnost vyberte k určení sazeb DPH na základě čisté částky na řádcích faktury bez jakýchkoliv jiných daní.
+## <a name="net-amount-per-line"></a><span data-ttu-id="a0d5b-111"> Čistá částka za řádek</span><span class="sxs-lookup"><span data-stu-id="a0d5b-111">Net amount per line</span></span>
+<span data-ttu-id="a0d5b-112">Tuto možnost vyberte k určení sazeb DPH na základě čisté částky na řádcích faktury bez jakýchkoliv jiných daní.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-112">Select this option to determine sales tax rates based on the net amount for the invoice lines, excluding any other taxes.</span></span>
 
-### <a name="example"></a>Příklad
+### <a name="example"></a><span data-ttu-id="a0d5b-113">Příklad</span><span class="sxs-lookup"><span data-stu-id="a0d5b-113">Example</span></span>
 
-Sazby DPH jsou nastaveny v následujících intervalech.
+<span data-ttu-id="a0d5b-114">Sazby DPH jsou nastaveny v následujících intervalech.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-114">The sales tax rates are set up in the following intervals.</span></span>
 
-| Intervaly pro částky    | Daňová sazba |
+| <span data-ttu-id="a0d5b-115">Intervaly pro částky</span><span class="sxs-lookup"><span data-stu-id="a0d5b-115">Amount interval</span></span>    | <span data-ttu-id="a0d5b-116">Daňová sazba</span><span class="sxs-lookup"><span data-stu-id="a0d5b-116">Tax rate</span></span> |
 |--------------------|----------|
-| 0–50             | 30 %      |
-| 50–100           | 20 %      |
-| 100 - 0 (&gt; 100) | 10 %      |
+| <span data-ttu-id="a0d5b-117">0–50</span><span class="sxs-lookup"><span data-stu-id="a0d5b-117">0 - 50</span></span>             | <span data-ttu-id="a0d5b-118">30 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-118">30%</span></span>      |
+| <span data-ttu-id="a0d5b-119">50–100</span><span class="sxs-lookup"><span data-stu-id="a0d5b-119">50 - 100</span></span>           | <span data-ttu-id="a0d5b-120">20 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-120">20%</span></span>      |
+| <span data-ttu-id="a0d5b-121">100 - 0 (&gt; 100)</span><span class="sxs-lookup"><span data-stu-id="a0d5b-121">100 - 0 (&gt; 100)</span></span> | <span data-ttu-id="a0d5b-122">10 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-122">10%</span></span>      |
 
 > [!NOTE]                                                                                                             
-> Horní limit 0 v posledním intervalu značí zahrnutí všech částek větších než 100 do intervalu.
+> <span data-ttu-id="a0d5b-123">Horní limit 0 v posledním intervalu značí zahrnutí všech částek větších než 100 do intervalu.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-123">The upper limit of zero (0) in the last interval means that all amounts that exceed 100 are included in the interval.</span></span>
 
-Základ marže: **Čistá částka podle řádku** 
+<span data-ttu-id="a0d5b-124">Základ marže: **Čistá částka podle řádku**</span><span class="sxs-lookup"><span data-stu-id="a0d5b-124">Marginal base: **Net amount per line**</span></span> 
 
-Způsob výpočtu: **Interval** 
+<span data-ttu-id="a0d5b-125">Způsob výpočtu: **Interval**</span><span class="sxs-lookup"><span data-stu-id="a0d5b-125">Calculation method: **Interval**</span></span> 
 
-Koupíte 8 lamp po 25,00 za kus. 
+<span data-ttu-id="a0d5b-126">Koupíte 8 lamp po 25,00 za kus.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-126">You buy 8 lamps that cost 25.00 each.</span></span> 
 
-Čistá částka řádku faktury je 200,00. 
+<span data-ttu-id="a0d5b-127">Čistá částka řádku faktury je 200,00.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-127">The net amount for the invoice line is 200.00.</span></span> 
 
-Daň se vypočítá následovně: 
+<span data-ttu-id="a0d5b-128">Daň se vypočítá následovně:</span><span class="sxs-lookup"><span data-stu-id="a0d5b-128">The tax is calculated as follows:</span></span> 
 
-Celková DPH = 50 x 30 % + 50 x 20 % + 100 x 10 % = 15 + 10 + 10 = 35,00 
+<span data-ttu-id="a0d5b-129">Celková DPH = 50 x 30 % + 50 x 20 % + 100 x 10 % = 15 + 10 + 10 = 35,00</span><span class="sxs-lookup"><span data-stu-id="a0d5b-129">Total sales tax = 50 x 30% + 50 x 20% + 100 x 10% = 15 + 10 + 10 = 35.00</span></span> 
 
-Celková fakturovaná částka = 200,00 + 35,00 = 235,00 
+<span data-ttu-id="a0d5b-130">Celková fakturovaná částka = 200,00 + 35,00 = 235,00</span><span class="sxs-lookup"><span data-stu-id="a0d5b-130">Total invoice amount = 200.00 + 35.00 = 235.00</span></span> 
 
-**Odchylka** 
+<span data-ttu-id="a0d5b-131">**Odchylka**</span><span class="sxs-lookup"><span data-stu-id="a0d5b-131">**Variation**</span></span> 
 
-Pokud má faktura dva řádky se čtyřmi položkami na každém řádku, čistá částka na každém řádku je 100 a DPH se vypočítá následovně: 
+<span data-ttu-id="a0d5b-132">Pokud má faktura dva řádky se čtyřmi položkami na každém řádku, čistá částka na každém řádku je 100 a DPH se vypočítá následovně:</span><span class="sxs-lookup"><span data-stu-id="a0d5b-132">If the invoice has two lines with four items on each line, the net amount on each line is 100.00 and the sales tax is calculated as follows:</span></span> 
 
-DPH – řádek 1 = 50 x 30 % + 50 x 20 % = 15 + 10 = 25,00 
+<span data-ttu-id="a0d5b-133">DPH – řádek 1 = 50 x 30 % + 50 x 20 % = 15 + 10 = 25,00</span><span class="sxs-lookup"><span data-stu-id="a0d5b-133">Sales tax line 1 = 50 x 30% + 50 x 20% = 15 + 10 = 25.00</span></span> 
 
-DPH - řádek 2 = 50 x 30 % + 50 x 20 % = 15 + 10 = 25,00 
+<span data-ttu-id="a0d5b-134">DPH - řádek 2 = 50 x 30 % + 50 x 20 % = 15 + 10 = 25,00</span><span class="sxs-lookup"><span data-stu-id="a0d5b-134">Sales tax line 2 = 50 x 30% + 50 x 20% = 15 + 10 = 25.00</span></span> 
 
-Celková DPH = 25,00 + 25,00 = 50,00 
+<span data-ttu-id="a0d5b-135">Celková DPH = 25,00 + 25,00 = 50,00</span><span class="sxs-lookup"><span data-stu-id="a0d5b-135">Total sales tax = 25.00 + 25.00 = 50.00</span></span> 
 
-Celková fakturovaná částka = 200,00 + 50,00 = 250,00
+<span data-ttu-id="a0d5b-136">Celková fakturovaná částka = 200,00 + 50,00 = 250,00</span><span class="sxs-lookup"><span data-stu-id="a0d5b-136">Total invoice amount = 200.00 + 50.00 = 250.00</span></span>
 
-## <a name="net-amount-per-unit"></a> Čistá částka za jednotku
-Tuto možnost vyberte k určení sazeb DPH na základě hodnoty jednotlivých jednotek bez jakýchkoliv jiných daní. Je-li vybrán základ marže vycházející z jednotek, je nutné určit jednotku také pro kód DPH.
+## <a name="net-amount-per-unit"></a><span data-ttu-id="a0d5b-137"> Čistá částka za jednotku</span><span class="sxs-lookup"><span data-stu-id="a0d5b-137">Net amount per unit</span></span>
+<span data-ttu-id="a0d5b-138">Tuto možnost vyberte k určení sazeb DPH na základě hodnoty jednotlivých jednotek bez jakýchkoliv jiných daní.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-138">Select this option to determine sales tax rates based on the value of each unit, excluding any other taxes.</span></span> <span data-ttu-id="a0d5b-139">Je-li vybrán základ marže vycházející z jednotek, je nutné určit jednotku také pro kód DPH.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-139">When a unit based Marginal base is selected then also a Unit has to be specified for the Sales tax code.</span></span>
 
-### <a name="example"></a>Příklad
+### <a name="example"></a><span data-ttu-id="a0d5b-140">Příklad</span><span class="sxs-lookup"><span data-stu-id="a0d5b-140">Example</span></span>
 
-Sazby DPH jsou nastaveny v následujících intervalech.
+<span data-ttu-id="a0d5b-141">Sazby DPH jsou nastaveny v následujících intervalech.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-141">The sales tax rates are set up in the following intervals.</span></span>
 
-| Částka             | Daňová sazba |
+| <span data-ttu-id="a0d5b-142">Částka</span><span class="sxs-lookup"><span data-stu-id="a0d5b-142">Amount</span></span>             | <span data-ttu-id="a0d5b-143">Daňová sazba</span><span class="sxs-lookup"><span data-stu-id="a0d5b-143">Tax rate</span></span> |
 |--------------------|----------|
-| 0–50             | 30 %      |
-| 50–100           | 20 %      |
-| 100 - 0 (&gt; 100) | 10 %      |
+| <span data-ttu-id="a0d5b-144">0–50</span><span class="sxs-lookup"><span data-stu-id="a0d5b-144">0 - 50</span></span>             | <span data-ttu-id="a0d5b-145">30 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-145">30%</span></span>      |
+| <span data-ttu-id="a0d5b-146">50–100</span><span class="sxs-lookup"><span data-stu-id="a0d5b-146">50 - 100</span></span>           | <span data-ttu-id="a0d5b-147">20 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-147">20%</span></span>      |
+| <span data-ttu-id="a0d5b-148">100 - 0 (&gt; 100)</span><span class="sxs-lookup"><span data-stu-id="a0d5b-148">100 - 0 (&gt; 100)</span></span> | <span data-ttu-id="a0d5b-149">10 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-149">10%</span></span>      |
 
-Základ marže: **Čistá částka podle jednotky** 
+<span data-ttu-id="a0d5b-150">Základ marže: **Čistá částka podle jednotky**</span><span class="sxs-lookup"><span data-stu-id="a0d5b-150">Marginal base: **Net amount per unit**</span></span> 
 
-Metoda výpočtu: **Celková částka** 
+<span data-ttu-id="a0d5b-151">Metoda výpočtu: **Celková částka**</span><span class="sxs-lookup"><span data-stu-id="a0d5b-151">Calculation method: **Whole amount**</span></span> 
 
-Koupíte 8 lamp po 25,00 za kus. 
+<span data-ttu-id="a0d5b-152">Koupíte 8 lamp po 25,00 za kus.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-152">You buy 8 lamps that cost 25.00 each.</span></span> 
 
-Čistá částka řádku faktury je 200,00. 
+<span data-ttu-id="a0d5b-153">Čistá částka řádku faktury je 200,00.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-153">The net amount for the invoice line is 200.00.</span></span> 
 
-Daň se vypočítá takto: DPH za jednotku = 25,00 x 30 % = 7,50 Celková DPH = 7,50 x 8 jednotek = 60,00 Celková fakturovaná částka = 200,00 + 60,00 = 260,00
+<span data-ttu-id="a0d5b-154">Daň se vypočítá takto: DPH za jednotku = 25,00 x 30 % = 7,50 Celková DPH = 7,50 x 8 jednotek = 60,00 Celková fakturovaná částka = 200,00 + 60,00 = 260,00</span><span class="sxs-lookup"><span data-stu-id="a0d5b-154">The tax is calculated as follows: Sales tax per unit = 25.00 x 30% = 7.50 Total sales tax = 7.50 x 8 units = 60.00 Total invoice amount = 200.00 + 60.00 = 260.00</span></span>
 
-## <a name="net-amount-of-invoice-balance"></a> Čistá částka zůstatku faktury
+## <a name="net-amount-of-invoice-balance"></a><span data-ttu-id="a0d5b-155"> Čistá částka zůstatku faktury</span><span class="sxs-lookup"><span data-stu-id="a0d5b-155">Net amount of invoice balance</span></span>
 
-Tuto možnost vyberte k určení sazeb DPH na základě celkové hodnoty faktury bez jakýchkoliv jiných daní.
+<span data-ttu-id="a0d5b-156">Tuto možnost vyberte k určení sazeb DPH na základě celkové hodnoty faktury bez jakýchkoliv jiných daní.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-156">Select this option to determine sales tax rates based on the total value for the invoice, excluding any other taxes.</span></span>
 
-### <a name="example"></a>Příklad
+### <a name="example"></a><span data-ttu-id="a0d5b-157">Příklad</span><span class="sxs-lookup"><span data-stu-id="a0d5b-157">Example</span></span>
 
-Sazby DPH jsou nastaveny v následujících intervalech.
+<span data-ttu-id="a0d5b-158">Sazby DPH jsou nastaveny v následujících intervalech.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-158">The sales tax rates are set up in the following intervals.</span></span>
 
-| Částka            | Daňová sazba |
+| <span data-ttu-id="a0d5b-159">Částka</span><span class="sxs-lookup"><span data-stu-id="a0d5b-159">Amount</span></span>            | <span data-ttu-id="a0d5b-160">Daňová sazba</span><span class="sxs-lookup"><span data-stu-id="a0d5b-160">Tax rate</span></span> |
 |-------------------|----------|
-| 0–50            | 30 %      |
-| 50–100          | 20 %      |
-| 100 - 0 (&gt; 100) | 10 %      |
+| <span data-ttu-id="a0d5b-161">0–50</span><span class="sxs-lookup"><span data-stu-id="a0d5b-161">0 - 50</span></span>            | <span data-ttu-id="a0d5b-162">30 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-162">30%</span></span>      |
+| <span data-ttu-id="a0d5b-163">50–100</span><span class="sxs-lookup"><span data-stu-id="a0d5b-163">50 - 100</span></span>          | <span data-ttu-id="a0d5b-164">20 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-164">20%</span></span>      |
+| <span data-ttu-id="a0d5b-165">100 - 0 (&gt; 100)</span><span class="sxs-lookup"><span data-stu-id="a0d5b-165">100 -0 (&gt; 100)</span></span> | <span data-ttu-id="a0d5b-166">10 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-166">10%</span></span>      |
 
-Základ marže: **Čistá částka zůstatku faktury** 
+<span data-ttu-id="a0d5b-167">Základ marže: **Čistá částka zůstatku faktury**</span><span class="sxs-lookup"><span data-stu-id="a0d5b-167">Marginal base: **Net amount of invoice balance**</span></span> 
 
-Metoda výpočtu: **Interval** Prodejní faktura obsahuje 2 řádky se 4 zářivkami na jednotlivých řádkách pro 25,00 ks. Čistá částka zůstatku faktury je 4 x 25,00 + 4 x 25,00 = 200,00. Daň se vypočítá takto: Celková DPH = 50 x 0,30 + 50 x 0,20 + 100 x 0,10 = 15 + 10 + 10 = 35,00 Celková fakturovaná částka = 200,00 + 35,00 = 235,00
+<span data-ttu-id="a0d5b-168">Metoda výpočtu: **Interval** Prodejní faktura obsahuje 2 řádky se 4 zářivkami na jednotlivých řádkách pro 25,00 ks.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-168">Calculation method: **Interval** A sales invoice has 2 lines with 4 lamps on each lines for 25.00 each.</span></span> <span data-ttu-id="a0d5b-169">Čistá částka zůstatku faktury je 4 x 25,00 + 4 x 25,00 = 200,00.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-169">The net amount of invoice balance is 4 x 25.00 + 4 x 25.00 = 200.00.</span></span> <span data-ttu-id="a0d5b-170">Daň se vypočítá takto: Celková DPH = 50 x 0,30 + 50 x 0,20 + 100 x 0,10 = 15 + 10 + 10 = 35,00 Celková fakturovaná částka = 200,00 + 35,00 = 235,00</span><span class="sxs-lookup"><span data-stu-id="a0d5b-170">The tax is calculated as follows: Total sales tax = 50 x 0.30 + 50 x 0.20 + 100 x 0.10 = 15 + 10 + 10 = 35.00 Total invoice amount = 200.00 + 35.00 = 235.00</span></span>
 
-## <a name="gross-amount-per-line"></a> Hrubá částka za řádek
+## <a name="gross-amount-per-line"></a><span data-ttu-id="a0d5b-171"> Hrubá částka za řádek</span><span class="sxs-lookup"><span data-stu-id="a0d5b-171">Gross amount per line</span></span>
 
-Tuto možnost vyberte k určení sazeb DPH na základě hodnoty řádku včetně jakýchkoliv jiných daní pro daný řádek.
-
-> [!NOTE]
-> Ve skupině DPH může být s touto hodnotou v poli Základ marže uveden pouze jeden kód DPH.
-
-### <a name="example"></a>Příklad
-
-Sazby DPH jsou nastaveny v následujících intervalech.
-
-| Částka             | Daňová sazba |
-|--------------------|----------|
-| 0–50             | 30 %      |
-| 50–100           | 20 %      |
-| 100 - 0 (&gt; 100) | 10 %      |
-
-Základ marže: **Hrubá částka za řádek** Metoda výpočtu: **Interval** Dále je zde vypočítán jiný kód daně pro zvláštní clo 5,00 na každou lampu. Toto clo je k čisté částce přidáno před výpočtem DPH. Koupíte 8 lamp po 25,00 za kus. Čistá částka řádku faktury je 200,00. Hrubá částka řádku faktury je 8 x 25,00 + 8 x 5,00 = 240,00. Daň se vypočítá takto: Celková DPH = 50 x 0,30 + 50 x 0,20 + 140 x 0,10 = 15 + 20 + 14 = 39,00 Celkové clo = 5,00 x 8 = 40,00 Celková fakturovaná částka = 200,00 + 39,00 + 40,00 = 279,00
-
-**Odchylka** 
-
-Pokud dojde k vytvoření faktury pomocí dvou řádků se čtyřmi položkami na každém řádku, čistá částka na řádek je 100,00. Hrubá částka (včetně cla 4 x 5,00) na každém řádku faktury by byla 120,00 a DPH se vypočte následujícím způsobem: DPH pro řádek faktury 1 = 50 x 0,30 + 50 x 0,20 + 20 x 0,10 = 15 + 10 + 2 = 27,00 DPH pro řádek faktury 2 = 50 x 0,30 + 50 x 0,20 + 20 x 0,10 = 15 + 10 + 2 = 27,00 Celková DPH = 27,00 + 27,00 = 54,00 Celkové clo = 5,00 x 8 = 40,00 Celková fakturovaná částka = 200,00 + 54,00 + 40,00 = 294,00
-
-## <a name="gross-amount-per-unit"></a> Hrubá částka za jednotku
-
-Tuto možnost vyberte k určení sazeb DPH na základě hodnoty jednotky včetně jakýchkoliv jiných daní.
+<span data-ttu-id="a0d5b-172">Tuto možnost vyberte k určení sazeb DPH na základě hodnoty řádku včetně jakýchkoliv jiných daní pro daný řádek.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-172">Select this option to determine sales tax rates based on the value of the line including all other taxes for that line.</span></span>
 
 > [!NOTE]
-> Ve skupině DPH může být s touto hodnotou v poli Základ marže uveden pouze jeden kód DPH.
+> <span data-ttu-id="a0d5b-173">Ve skupině DPH může být s touto hodnotou v poli Základ marže uveden pouze jeden kód DPH.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-173">In a sales tax group, you can only have one sales tax code with this selection in the Marginal base field.</span></span>
 
-### <a name="example"></a>Příklad
+### <a name="example"></a><span data-ttu-id="a0d5b-174">Příklad</span><span class="sxs-lookup"><span data-stu-id="a0d5b-174">Example</span></span>
 
-Sazby DPH jsou nastaveny v následujících intervalech.
+<span data-ttu-id="a0d5b-175">Sazby DPH jsou nastaveny v následujících intervalech.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-175">The sales tax rates are set up in the following intervals.</span></span>
 
-| Částka             | Daňová sazba |
+| <span data-ttu-id="a0d5b-176">Částka</span><span class="sxs-lookup"><span data-stu-id="a0d5b-176">Amount</span></span>             | <span data-ttu-id="a0d5b-177">Daňová sazba</span><span class="sxs-lookup"><span data-stu-id="a0d5b-177">Tax rate</span></span> |
 |--------------------|----------|
-| 0–50             | 30 %      |
-| 50–100           | 20 %      |
-| 100 - 0 (&gt; 100) | 10 %      |
+| <span data-ttu-id="a0d5b-178">0–50</span><span class="sxs-lookup"><span data-stu-id="a0d5b-178">0 - 50</span></span>             | <span data-ttu-id="a0d5b-179">30 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-179">30%</span></span>      |
+| <span data-ttu-id="a0d5b-180">50–100</span><span class="sxs-lookup"><span data-stu-id="a0d5b-180">50 - 100</span></span>           | <span data-ttu-id="a0d5b-181">20 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-181">20%</span></span>      |
+| <span data-ttu-id="a0d5b-182">100 - 0 (&gt; 100)</span><span class="sxs-lookup"><span data-stu-id="a0d5b-182">100 - 0 (&gt; 100)</span></span> | <span data-ttu-id="a0d5b-183">10 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-183">10%</span></span>      |
 
-Základ marže: **Hrubá částka za jednotku** Je uloženo zvláštní clo 5,00 na každou lampu. Toto clo je k čisté částce přidáno před výpočtem DPH. Koupíte 8 lamp po 25,00 za kus. Hrubá částka na jednotku je 30,00. Daň se vypočítá takto: DPH za jednotku = 30 x 30 % = 9,00 Celková DPH = 9,00 x 8 = 72,00 Celkové clo= 5,00 x 8 = 40,00 Celková fakturovaná částka = 200,00 + 72,00 + 40,00 = 312,00
+<span data-ttu-id="a0d5b-184">Základ marže: **Hrubá částka za řádek** Metoda výpočtu: **Interval** Dále je zde vypočítán jiný kód daně pro zvláštní clo 5,00 na každou lampu.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-184">Marginal base: **Gross amount per line** Calculation method: **Interval** Additionally there is an other tax code calculated for a special duty of 5.00 on each lamp.</span></span> <span data-ttu-id="a0d5b-185">Toto clo je k čisté částce přidáno před výpočtem DPH.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-185">The duty is added to the net amount before the sales tax calculation.</span></span> <span data-ttu-id="a0d5b-186">Koupíte 8 lamp po 25,00 za kus.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-186">You buy 8 lamps that cost 25.00 each.</span></span> <span data-ttu-id="a0d5b-187">Čistá částka řádku faktury je 200,00.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-187">The net amount for the invoice line is 200.00.</span></span> <span data-ttu-id="a0d5b-188">Hrubá částka řádku faktury je 8 x 25,00 + 8 x 5,00 = 240,00.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-188">The gross amount for the invoice line is 8 x 25.00 + 8 x 5.00 = 240.00.</span></span> <span data-ttu-id="a0d5b-189">Daň se vypočítá takto: Celková DPH = 50 x 0,30 + 50 x 0,20 + 140 x 0,10 = 15 + 20 + 14 = 39,00 Celkové clo = 5,00 x 8 = 40,00 Celková fakturovaná částka = 200,00 + 39,00 + 40,00 = 279,00</span><span class="sxs-lookup"><span data-stu-id="a0d5b-189">The tax is calculated as follows: Total sales tax = 50 x 0.30 + 50 x 0.20 + 140 x 0.10 = 15 + 20 + 14 = 39.00 Total duty = 5.00 x 8 = 40.00 Total invoice amount = 200.00 + 39.00 + 40.00 = 279.00</span></span>
 
-## <a name="invoice-total-incl-other-sales-tax-amounts"></a> Celková fakturovaná částka, včetně částek DPH
+<span data-ttu-id="a0d5b-190">**Odchylka**</span><span class="sxs-lookup"><span data-stu-id="a0d5b-190">**Variation**</span></span> 
 
-Tuto možnost vyberte k určení sazeb DPH na základě celkové hodnoty faktury včetně jakýchkoliv jiných daní.
+<span data-ttu-id="a0d5b-191">Pokud dojde k vytvoření faktury pomocí dvou řádků se čtyřmi položkami na každém řádku, čistá částka na řádek je 100,00.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-191">If the invoice is created by using 2 invoice lines with 4 items on each line, the net amount per invoice line is 100.00.</span></span> <span data-ttu-id="a0d5b-192">Hrubá částka (včetně cla 4 x 5,00) na každém řádku faktury by byla 120,00 a DPH se vypočte následujícím způsobem: DPH pro řádek faktury 1 = 50 x 0,30 + 50 x 0,20 + 20 x 0,10 = 15 + 10 + 2 = 27,00 DPH pro řádek faktury 2 = 50 x 0,30 + 50 x 0,20 + 20 x 0,10 = 15 + 10 + 2 = 27,00 Celková DPH = 27,00 + 27,00 = 54,00 Celkové clo = 5,00 x 8 = 40,00 Celková fakturovaná částka = 200,00 + 54,00 + 40,00 = 294,00</span><span class="sxs-lookup"><span data-stu-id="a0d5b-192">The gross amount (including the duty of 4 x 5.00) per invoice line would be 120.00, and the sales tax is created as follows: Sales tax invoice line 1 = 50 x 0.30 + 50 x 0.20 + 20 x 0.10 = 15 + 10 + 2 = 27.00 Sales tax invoice line 2 = 50 x 0.30 + 50 x 0.20 + 20 x 0.10 = 15 + 10 + 2 = 27.00 Total sales tax = 27.00 + 27.00 = 54.00 Total duty = 5.00 x 8 = 40.00 Total invoice amount = 200.00 + 54.00 + 40.00 = 294.00</span></span>
+
+## <a name="gross-amount-per-unit"></a><span data-ttu-id="a0d5b-193"> Hrubá částka za jednotku</span><span class="sxs-lookup"><span data-stu-id="a0d5b-193">Gross amount per unit</span></span>
+
+<span data-ttu-id="a0d5b-194">Tuto možnost vyberte k určení sazeb DPH na základě hodnoty jednotky včetně jakýchkoliv jiných daní.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-194">Select this option to determine sales tax rates based on the value of the unit including any other taxes.</span></span>
+
 > [!NOTE]
-> Ve skupině DPH může být s touto hodnotou v poli Základ marže uveden pouze jeden kód DPH.
+> <span data-ttu-id="a0d5b-195">Ve skupině DPH může být s touto hodnotou v poli Základ marže uveden pouze jeden kód DPH.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-195">In a sales tax group, you can only have one sales tax code with this selection in the Marginal base field.</span></span>
 
-### <a name="example"></a>Příklad
+### <a name="example"></a><span data-ttu-id="a0d5b-196">Příklad</span><span class="sxs-lookup"><span data-stu-id="a0d5b-196">Example</span></span>
 
-Sazby DPH jsou nastaveny v následujících intervalech.
+<span data-ttu-id="a0d5b-197">Sazby DPH jsou nastaveny v následujících intervalech.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-197">The sales tax rates are set up in the following intervals.</span></span>
 
-| Částka             | Daňová sazba |
+| <span data-ttu-id="a0d5b-198">Částka</span><span class="sxs-lookup"><span data-stu-id="a0d5b-198">Amount</span></span>             | <span data-ttu-id="a0d5b-199">Daňová sazba</span><span class="sxs-lookup"><span data-stu-id="a0d5b-199">Tax rate</span></span> |
 |--------------------|----------|
-| 0–50             | 30 %      |
-| 50–100           | 20 %      |
-| 100 - 0 (&gt; 100) | 10 %      |
+| <span data-ttu-id="a0d5b-200">0–50</span><span class="sxs-lookup"><span data-stu-id="a0d5b-200">0 - 50</span></span>             | <span data-ttu-id="a0d5b-201">30 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-201">30%</span></span>      |
+| <span data-ttu-id="a0d5b-202">50–100</span><span class="sxs-lookup"><span data-stu-id="a0d5b-202">50 - 100</span></span>           | <span data-ttu-id="a0d5b-203">20 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-203">20%</span></span>      |
+| <span data-ttu-id="a0d5b-204">100 - 0 (&gt; 100)</span><span class="sxs-lookup"><span data-stu-id="a0d5b-204">100 - 0 (&gt; 100)</span></span> | <span data-ttu-id="a0d5b-205">10 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-205">10%</span></span>      |
 
-Základ marže: **Faktura celkem včetně částek DPH** metoda výpočtu: **Interval**   
-Pro každou lampu existuje speciální clo ve výši 5,00 eur. Toto clo je k čisté částce přidáno před výpočtem DPH. Koupíte 8 lamp po 25,00 za kus. Čistá částka faktury je 200,00. Hrubá částka faktury je 200,00 + (8 x 5,00) = 240,00. Daň se vypočítá takto: Celková DPH = 50 x 0,30 + 50 x 0,20 + 140 x 0,10 = 15 + 10 + 14 = 39,00 Celkové clo = 5,00 x 8 = 40,00 Celková fakturovaná částka = 200,00 + 39,00 + 40,00 = 279,00
+<span data-ttu-id="a0d5b-206">Základ marže: **Hrubá částka za jednotku** Je uloženo zvláštní clo 5,00 na každou lampu.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-206">Marginal base: **Gross amount per unit** There is a special duty of 5.00 on each lamp.</span></span> <span data-ttu-id="a0d5b-207">Toto clo je k čisté částce přidáno před výpočtem DPH.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-207">The duty is added to the net amount before the sales tax calculation.</span></span> <span data-ttu-id="a0d5b-208">Koupíte 8 lamp po 25,00 za kus.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-208">You buy 8 lamps that cost 25.00 each.</span></span> <span data-ttu-id="a0d5b-209">Hrubá částka na jednotku je 30,00.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-209">The gross amount per unit is 30.00.</span></span> <span data-ttu-id="a0d5b-210">Daň se vypočítá takto: DPH za jednotku = 30 x 30 % = 9,00 Celková DPH = 9,00 x 8 = 72,00 Celkové clo= 5,00 x 8 = 40,00 Celková fakturovaná částka = 200,00 + 72,00 + 40,00 = 312,00</span><span class="sxs-lookup"><span data-stu-id="a0d5b-210">The tax is calculated as follows: Sales tax per unit = 30 x 30% = 9.00 Total sales tax = 9.00 x 8 = 72.00 Total duty = 5.00 x 8 = 40.00 Total invoice amount = 200.00 + 72.00 + 40.00 = 312.00</span></span>
 
-Další informace viz [Možnost Celková částka a Interval výpočtu pro kódy DPH](whole-amount-interval-options-sales-tax-codes.md) a [Metody výpočtu DPH v poli Zdroj](sales-tax-calculation-methods-origin-field.md).
+## <a name="invoice-total-incl-other-sales-tax-amounts"></a><span data-ttu-id="a0d5b-211"> Celková fakturovaná částka, včetně částek DPH</span><span class="sxs-lookup"><span data-stu-id="a0d5b-211">Invoice total incl. other sales tax amounts</span></span>
+
+<span data-ttu-id="a0d5b-212">Tuto možnost vyberte k určení sazeb DPH na základě celkové hodnoty faktury včetně jakýchkoliv jiných daní.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-212">Select this option to determine sales tax rates based on the total value for the invoice including any other taxes.</span></span>
+> [!NOTE]
+> <span data-ttu-id="a0d5b-213">Ve skupině DPH může být s touto hodnotou v poli Základ marže uveden pouze jeden kód DPH.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-213">In a sales tax group, you can only have one sales tax code with this selection in the Marginal base field</span></span>
+
+### <a name="example"></a><span data-ttu-id="a0d5b-214">Příklad</span><span class="sxs-lookup"><span data-stu-id="a0d5b-214">Example</span></span>
+
+<span data-ttu-id="a0d5b-215">Sazby DPH jsou nastaveny v následujících intervalech.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-215">The sales tax rates are set up in the following intervals.</span></span>
+
+| <span data-ttu-id="a0d5b-216">Částka</span><span class="sxs-lookup"><span data-stu-id="a0d5b-216">Amount</span></span>             | <span data-ttu-id="a0d5b-217">Daňová sazba</span><span class="sxs-lookup"><span data-stu-id="a0d5b-217">Tax rate</span></span> |
+|--------------------|----------|
+| <span data-ttu-id="a0d5b-218">0–50</span><span class="sxs-lookup"><span data-stu-id="a0d5b-218">0 - 50</span></span>             | <span data-ttu-id="a0d5b-219">30 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-219">30%</span></span>      |
+| <span data-ttu-id="a0d5b-220">50–100</span><span class="sxs-lookup"><span data-stu-id="a0d5b-220">50 - 100</span></span>           | <span data-ttu-id="a0d5b-221">20 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-221">20%</span></span>      |
+| <span data-ttu-id="a0d5b-222">100 - 0 (&gt; 100)</span><span class="sxs-lookup"><span data-stu-id="a0d5b-222">100 - 0 (&gt; 100)</span></span> | <span data-ttu-id="a0d5b-223">10 %</span><span class="sxs-lookup"><span data-stu-id="a0d5b-223">10%</span></span>      |
+
+<span data-ttu-id="a0d5b-224">Základ marže: **Faktura celkem včetně částek DPH** metoda výpočtu: **Interval** </span><span class="sxs-lookup"><span data-stu-id="a0d5b-224">Marginal base: **Invoice total incl. other sales tax amounts** Calculation method: **Interval** </span></span>  
+<span data-ttu-id="a0d5b-225">Pro každou lampu existuje speciální clo ve výši 5,00 eur.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-225">There is a special duty of 5.00 on each lamp.</span></span> <span data-ttu-id="a0d5b-226">Toto clo je k čisté částce přidáno před výpočtem DPH.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-226">The duty is added to the net amount before the sales tax calculation.</span></span> <span data-ttu-id="a0d5b-227">Koupíte 8 lamp po 25,00 za kus.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-227">You buy 8 lamps that cost 25.00 each.</span></span> <span data-ttu-id="a0d5b-228">Čistá částka faktury je 200,00.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-228">The net amount for the invoice is 200.00.</span></span> <span data-ttu-id="a0d5b-229">Hrubá částka faktury je 200,00 + (8 x 5,00) = 240,00.</span><span class="sxs-lookup"><span data-stu-id="a0d5b-229">The gross amount for the invoice is 200.00 + (8 x 5.00) = 240.00.</span></span> <span data-ttu-id="a0d5b-230">Daň se vypočítá takto: Celková DPH = 50 x 0,30 + 50 x 0,20 + 140 x 0,10 = 15 + 10 + 14 = 39,00 Celkové clo = 5,00 x 8 = 40,00 Celková fakturovaná částka = 200,00 + 39,00 + 40,00 = 279,00</span><span class="sxs-lookup"><span data-stu-id="a0d5b-230">The tax is calculated as follows: Total sales tax = 50 x 0.30 + 50 x 0.20 + 140 x 0.10 = 15 + 10 + 14 = 39.00 Total duty = 5.00 x 8 = 40.00 Total invoice amount = 200.00 + 39.00 + 40.00 = 279.00</span></span>
+
+<span data-ttu-id="a0d5b-231">Další informace viz [Možnost Celková částka a Interval výpočtu pro kódy DPH](whole-amount-interval-options-sales-tax-codes.md) a [Metody výpočtu DPH v poli Zdroj](sales-tax-calculation-methods-origin-field.md).</span><span class="sxs-lookup"><span data-stu-id="a0d5b-231">For more information, see [Whole amount and Interval calculation options for sales tax codes](whole-amount-interval-options-sales-tax-codes.md) and [Sales tax calculation methods in the Origin field](sales-tax-calculation-methods-origin-field.md).</span></span>
 
 
 

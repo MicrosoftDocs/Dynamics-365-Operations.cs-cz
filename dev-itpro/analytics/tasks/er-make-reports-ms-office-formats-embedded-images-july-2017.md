@@ -16,108 +16,108 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ed1ea3499e338220428b8a9db489e40694b5ee79
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: bfc3d09017b864e6b2811cab9d7f4b05b048148b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="make-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er--part-1"></a>Provedení sestav ve formátu Microsoft Office s integrovanými obrázky pro elektronické výkaznictví (ER) (Část 1) 
+# <a name="make-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er--part-1"></a><span data-ttu-id="379ad-103">Provedení sestav ve formátu Microsoft Office s integrovanými obrázky pro elektronické výkaznictví (ER) (Část 1)</span><span class="sxs-lookup"><span data-stu-id="379ad-103">Make reports in Microsoft Office formats with embedded images for electronic reporting (ER)  (Part 1)</span></span> 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhnout konfigurace pro elektronické výkaznictví (ER) a vygenerovat tak elektronické dokumenty ve formátu MS Office (Excel nebo Word) s vloženými obrázky.
+<span data-ttu-id="379ad-104">Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhnout konfigurace pro elektronické výkaznictví (ER) a vygenerovat tak elektronické dokumenty ve formátu MS Office (Excel nebo Word) s vloženými obrázky.</span><span class="sxs-lookup"><span data-stu-id="379ad-104">The following steps explain how a user playing either ‘System administrator’ or ‘Electronic reporting developer’ role can design Electronic reporting (ER) configurations to generate electronic documents in MS office formats (Excel and Word) containing embedded images.</span></span>
 
-V tomto příkladu použijete vytvořené konfigurace ER pro vzorovou společnost Litware, Inc.  K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh Vytváření sestav ER ve formátu MS Office s vloženými obrázky (část 2: konfigurace přehledu). Tyto kroky lze provést v rámci společnosti USMF.
+<span data-ttu-id="379ad-105">V tomto příkladu použijete vytvořené konfigurace ER pro vzorovou společnost Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="379ad-105">In this example, you will use created ER configurations for sample company, ‘Litware, Inc.’.</span></span>  <span data-ttu-id="379ad-106">K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh Vytváření sestav ER ve formátu MS Office s vloženými obrázky (část 2: konfigurace přehledu).</span><span class="sxs-lookup"><span data-stu-id="379ad-106">To complete these steps, you must first complete the steps in the “ER Make reports in MS Office formats with embedded images (Part 2: Review configurations)” task guide.</span></span> <span data-ttu-id="379ad-107">Tyto kroky lze provést v rámci společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="379ad-107">These steps can be performed in ‘USMF’ company.</span></span>
 
 
-## <a name="run-format-with-initial-model-mapping"></a>Spuštění formátu s počátečním mapováním modelu
-1. Přejděte do části Pokladna a banka > Bankovní účty > Bankovní účty.
-2. Použijte rychlý filtr k filtrování v poli Bankovní účet s hodnotou 'USMF OPER.
-3. V podokně akcí klikněte na možnost Nastavit.
-4. Klepněte na možnost Kontrola.
-5. Klikněte na možnost Tisk testu.
-    * Spusťte formát pro účely testování.  
-6. V poli Obchodovatelný formát šeku vyberte Ano.
-7. Klikněte na tlačítko OK.
-    * Prohlédněte si vytvořený výstup. Všimněte si, že logo společnosti se zobrazí v sestavě společně s podpisem oprávněné osoby. Obrázek podpisu je převzat z pole typu dat Kontejner ze záznamu rozvržení šeku, který je přidružen k vybranému bankovnímu účtu.  
-8. Rozbalte sekci Kopie.
-9. Klikněte na položku Upravit.
-10. V poli Vodoznak zadejte Tisknout vodoznak jako anulovaný.
-    * Změňte nastavení rozložení vodoznaku tak, aby byl zobrazen text vodoznaku při generování dokumentu v elementu tvaru Excel.  
-11. Klikněte na možnost Tisk testu.
-12. Klikněte na tlačítko OK.
-    * Prohlédněte si vytvořený výstup. Všimněte si, že vodoznak je uveden v sestavě v souladu s možností výběru.  
-13. Zavřete stránku.
-14. V podokně akcí klikněte na možnost Spravovat platby.
-15. Klikněte na možnost Kontroly.
-16. Klepněte na tlačítko Zobrazit filtry.
-17. Použijte následující filtry: zadejte hodnotu filtru "381","385","389" v poli Číslo kontroly za pomocí operátoru filtru „je jeden z“.
-18. V seznamu označte všechny řádky.
-19. Klikněte na Tisknout kopii šeku.
-    * Spusťte formát a znovu vytiskněte vybrané šeky.  
-    * Prohlédněte si vytvořený výstup. Všimněte si, že vybrané šeky byly znovu vytištěny. Logo společnosti a popisky nejsou vytištěny, protože jsou uvedeny na předtištěném formuláři.  
+## <a name="run-format-with-initial-model-mapping"></a><span data-ttu-id="379ad-108">Spuštění formátu s počátečním mapováním modelu</span><span class="sxs-lookup"><span data-stu-id="379ad-108">Run format with initial model mapping</span></span>
+1. <span data-ttu-id="379ad-109">Přejděte do části Pokladna a banka > Bankovní účty > Bankovní účty.</span><span class="sxs-lookup"><span data-stu-id="379ad-109">Go to Cash and bank management > Bank accounts > Bank accounts.</span></span>
+2. <span data-ttu-id="379ad-110">Použijte rychlý filtr k filtrování v poli Bankovní účet s hodnotou 'USMF OPER.</span><span class="sxs-lookup"><span data-stu-id="379ad-110">Use the Quick Filter to filter on the Bank account field with a value of 'USMF OPER'.</span></span>
+3. <span data-ttu-id="379ad-111">V podokně akcí klikněte na možnost Nastavit.</span><span class="sxs-lookup"><span data-stu-id="379ad-111">On the Action Pane, click Set up.</span></span>
+4. <span data-ttu-id="379ad-112">Klepněte na možnost Kontrola.</span><span class="sxs-lookup"><span data-stu-id="379ad-112">Click Check.</span></span>
+5. <span data-ttu-id="379ad-113">Klikněte na možnost Tisk testu.</span><span class="sxs-lookup"><span data-stu-id="379ad-113">Click Print test.</span></span>
+    * <span data-ttu-id="379ad-114">Spusťte formát pro účely testování.</span><span class="sxs-lookup"><span data-stu-id="379ad-114">Run the format for testing purposes.</span></span>  
+6. <span data-ttu-id="379ad-115">V poli Obchodovatelný formát šeku vyberte Ano.</span><span class="sxs-lookup"><span data-stu-id="379ad-115">Select Yes in the Negotiable check format field.</span></span>
+7. <span data-ttu-id="379ad-116">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="379ad-116">Click OK.</span></span>
+    * <span data-ttu-id="379ad-117">Prohlédněte si vytvořený výstup.</span><span class="sxs-lookup"><span data-stu-id="379ad-117">Review the created output.</span></span> <span data-ttu-id="379ad-118">Všimněte si, že logo společnosti se zobrazí v sestavě společně s podpisem oprávněné osoby.</span><span class="sxs-lookup"><span data-stu-id="379ad-118">Note that the company logo is presented in the report as well as the authorized person’s signature.</span></span> <span data-ttu-id="379ad-119">Obrázek podpisu je převzat z pole typu dat Kontejner ze záznamu rozvržení šeku, který je přidružen k vybranému bankovnímu účtu.</span><span class="sxs-lookup"><span data-stu-id="379ad-119">The signature image is taken from the field of the ‘Container’ data type of the cheque layout record which is associated with the selected bank account.</span></span>  
+8. <span data-ttu-id="379ad-120">Rozbalte sekci Kopie.</span><span class="sxs-lookup"><span data-stu-id="379ad-120">Expand the Copies section.</span></span>
+9. <span data-ttu-id="379ad-121">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="379ad-121">Click Edit.</span></span>
+10. <span data-ttu-id="379ad-122">V poli Vodoznak zadejte Tisknout vodoznak jako anulovaný.</span><span class="sxs-lookup"><span data-stu-id="379ad-122">In the Watermark field, enter 'Print watermark as Void'.</span></span>
+    * <span data-ttu-id="379ad-123">Změňte nastavení rozložení vodoznaku tak, aby byl zobrazen text vodoznaku při generování dokumentu v elementu tvaru Excel.</span><span class="sxs-lookup"><span data-stu-id="379ad-123">Change the watermark layout setting to show the watermark text in generating document in an Excel shape element.</span></span>  
+11. <span data-ttu-id="379ad-124">Klikněte na možnost Tisk testu.</span><span class="sxs-lookup"><span data-stu-id="379ad-124">Click Print test.</span></span>
+12. <span data-ttu-id="379ad-125">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="379ad-125">Click OK.</span></span>
+    * <span data-ttu-id="379ad-126">Prohlédněte si vytvořený výstup.</span><span class="sxs-lookup"><span data-stu-id="379ad-126">Review the created output.</span></span> <span data-ttu-id="379ad-127">Všimněte si, že vodoznak je uveden v sestavě v souladu s možností výběru.</span><span class="sxs-lookup"><span data-stu-id="379ad-127">Note that the watermark is shown in the created report in accordance to the selection option.</span></span>  
+13. <span data-ttu-id="379ad-128">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="379ad-128">Close the page.</span></span>
+14. <span data-ttu-id="379ad-129">V podokně akcí klikněte na možnost Spravovat platby.</span><span class="sxs-lookup"><span data-stu-id="379ad-129">On the Action Pane, click Manage payments.</span></span>
+15. <span data-ttu-id="379ad-130">Klikněte na možnost Kontroly.</span><span class="sxs-lookup"><span data-stu-id="379ad-130">Click Checks.</span></span>
+16. <span data-ttu-id="379ad-131">Klepněte na tlačítko Zobrazit filtry.</span><span class="sxs-lookup"><span data-stu-id="379ad-131">Click Show filters.</span></span>
+17. <span data-ttu-id="379ad-132">Použijte následující filtry: zadejte hodnotu filtru "381","385","389" v poli Číslo kontroly za pomocí operátoru filtru „je jeden z“.</span><span class="sxs-lookup"><span data-stu-id="379ad-132">Apply the following filters: Enter a filter value of "381","385","389" on the "Check number" field using the "is one of" filter operator.</span></span>
+18. <span data-ttu-id="379ad-133">V seznamu označte všechny řádky.</span><span class="sxs-lookup"><span data-stu-id="379ad-133">In the list, mark all rows.</span></span>
+19. <span data-ttu-id="379ad-134">Klikněte na Tisknout kopii šeku.</span><span class="sxs-lookup"><span data-stu-id="379ad-134">Click Print check copy.</span></span>
+    * <span data-ttu-id="379ad-135">Spusťte formát a znovu vytiskněte vybrané šeky.</span><span class="sxs-lookup"><span data-stu-id="379ad-135">Run the format to re-print the selected cheques.</span></span>  
+    * <span data-ttu-id="379ad-136">Prohlédněte si vytvořený výstup.</span><span class="sxs-lookup"><span data-stu-id="379ad-136">Review the created output.</span></span> <span data-ttu-id="379ad-137">Všimněte si, že vybrané šeky byly znovu vytištěny.</span><span class="sxs-lookup"><span data-stu-id="379ad-137">Note that the selected cheques have been re-printed.</span></span> <span data-ttu-id="379ad-138">Logo společnosti a popisky nejsou vytištěny, protože jsou uvedeny na předtištěném formuláři.</span><span class="sxs-lookup"><span data-stu-id="379ad-138">The company logo and labels are not printed out since they are presented on the pre-printed form.</span></span>  
 
-## <a name="modify-the-mapping-of-the-imported-data-model"></a>Úprava mapování importovaného modelu dat
-1. Zavřete stránku.
-2. Zavřete stránku.
-3. Přejděte do části Správa organizace > Elektronické výkaznictví > Konfigurace.
-4. Ve stromové struktuře zvolte Model pro šeky.
-5. Klikněte na možnost Návrhář.
-6. Klikněte na možnost Mapovat model na datový zdroj.
-7. Klikněte na možnost Návrhář.
-    * Upravíme vazbu položky podpisu datového modelu a získáme tak obrázek podpisu ze souboru připojeného k záznamu rozvržení šeku, který je přidružen k vybranému bankovnímu účtu.  
-8. Vypněte Zobrazit podrobnosti.
-9. Ve stromové struktuře rozbalte Rozvržení.
-10. Ve stromovém zobrazení rozbalte layout\signature.
-11. Ve stromovém zobrazení vyberte layout\signature\image = chequesaccount.'<Relations'.BankChequeLayout.Signature1Bmp.
-12. Ve stromovém zobrazení rozbalte Chequesaccount.
-13. Ve stromovém zobrazení rozbalte chequesaccount\<Relations.
-14. Ve stromovém zobrazení rozbalte chequesaccount\<Relations\BankChequeLayout.
-15. Ve stromovém zobrazení rozbalte chequesaccount\<Relations\BankChequeLayout\<Relations.
-16. Ve stromovém zobrazení rozbalte chequesaccount\<Relations\BankChequeLayout\<Relations\<Document.
-17. Ve stromovém zobrazení vyberte chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents\getFileContentAsContainer().
-18. Klikněte na možnost Vazba.
-19. Klikněte na položku Uložit.
-20. Zavřete stránku.
-21. Zavřete stránku.
-22. Zavřete stránku.
-23. Zavřete stránku.
+## <a name="modify-the-mapping-of-the-imported-data-model"></a><span data-ttu-id="379ad-139">Úprava mapování importovaného modelu dat</span><span class="sxs-lookup"><span data-stu-id="379ad-139">Modify the mapping of the imported data model</span></span>
+1. <span data-ttu-id="379ad-140">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="379ad-140">Close the page.</span></span>
+2. <span data-ttu-id="379ad-141">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="379ad-141">Close the page.</span></span>
+3. <span data-ttu-id="379ad-142">Přejděte do části Správa organizace > Elektronické výkaznictví > Konfigurace.</span><span class="sxs-lookup"><span data-stu-id="379ad-142">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+4. <span data-ttu-id="379ad-143">Ve stromové struktuře zvolte Model pro šeky.</span><span class="sxs-lookup"><span data-stu-id="379ad-143">In the tree, select 'Model for cheques'.</span></span>
+5. <span data-ttu-id="379ad-144">Klikněte na možnost Návrhář.</span><span class="sxs-lookup"><span data-stu-id="379ad-144">Click Designer.</span></span>
+6. <span data-ttu-id="379ad-145">Klikněte na možnost Mapovat model na datový zdroj.</span><span class="sxs-lookup"><span data-stu-id="379ad-145">Click Map model to datasource.</span></span>
+7. <span data-ttu-id="379ad-146">Klikněte na možnost Návrhář.</span><span class="sxs-lookup"><span data-stu-id="379ad-146">Click Designer.</span></span>
+    * <span data-ttu-id="379ad-147">Upravíme vazbu položky podpisu datového modelu a získáme tak obrázek podpisu ze souboru připojeného k záznamu rozvržení šeku, který je přidružen k vybranému bankovnímu účtu.</span><span class="sxs-lookup"><span data-stu-id="379ad-147">We will change the binding of the data model’s signature item to get the signature image from the file that has been attached to the cheque layout record which is associated with the selected bank account.</span></span>  
+8. <span data-ttu-id="379ad-148">Vypněte Zobrazit podrobnosti.</span><span class="sxs-lookup"><span data-stu-id="379ad-148">Turn Show details off.</span></span>
+9. <span data-ttu-id="379ad-149">Ve stromové struktuře rozbalte Rozvržení.</span><span class="sxs-lookup"><span data-stu-id="379ad-149">In the tree, expand 'layout'.</span></span>
+10. <span data-ttu-id="379ad-150">Ve stromovém zobrazení rozbalte layout\signature.</span><span class="sxs-lookup"><span data-stu-id="379ad-150">In the tree, expand 'layout\signature'.</span></span>
+11. <span data-ttu-id="379ad-151">Ve stromovém zobrazení vyberte layout\signature\image = chequesaccount.'<Relations'.BankChequeLayout.Signature1Bmp.</span><span class="sxs-lookup"><span data-stu-id="379ad-151">In the tree, select 'layout\signature\image = chequesaccount.'<Relations'.BankChequeLayout.Signature1Bmp'.</span></span>
+12. <span data-ttu-id="379ad-152">Ve stromovém zobrazení rozbalte Chequesaccount.</span><span class="sxs-lookup"><span data-stu-id="379ad-152">In the tree, expand 'chequesaccount'.</span></span>
+13. <span data-ttu-id="379ad-153">Ve stromovém zobrazení rozbalte chequesaccount\<Relations.</span><span class="sxs-lookup"><span data-stu-id="379ad-153">In the tree, expand 'chequesaccount\<Relations'.</span></span>
+14. <span data-ttu-id="379ad-154">Ve stromovém zobrazení rozbalte chequesaccount\<Relations\BankChequeLayout.</span><span class="sxs-lookup"><span data-stu-id="379ad-154">In the tree, expand 'chequesaccount\<Relations\BankChequeLayout'.</span></span>
+15. <span data-ttu-id="379ad-155">Ve stromovém zobrazení rozbalte chequesaccount\<Relations\BankChequeLayout\<Relations.</span><span class="sxs-lookup"><span data-stu-id="379ad-155">In the tree, expand 'chequesaccount\<Relations\BankChequeLayout\<Relations'.</span></span>
+16. <span data-ttu-id="379ad-156">Ve stromovém zobrazení rozbalte chequesaccount\<Relations\BankChequeLayout\<Relations\<Document.</span><span class="sxs-lookup"><span data-stu-id="379ad-156">In the tree, expand 'chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents'.</span></span>
+17. <span data-ttu-id="379ad-157">Ve stromovém zobrazení vyberte chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents\getFileContentAsContainer().</span><span class="sxs-lookup"><span data-stu-id="379ad-157">In the tree, select 'chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents\getFileContentAsContainer()'.</span></span>
+18. <span data-ttu-id="379ad-158">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="379ad-158">Click Bind.</span></span>
+19. <span data-ttu-id="379ad-159">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="379ad-159">Click Save.</span></span>
+20. <span data-ttu-id="379ad-160">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="379ad-160">Close the page.</span></span>
+21. <span data-ttu-id="379ad-161">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="379ad-161">Close the page.</span></span>
+22. <span data-ttu-id="379ad-162">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="379ad-162">Close the page.</span></span>
+23. <span data-ttu-id="379ad-163">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="379ad-163">Close the page.</span></span>
 
-## <a name="run-format-using-the-adjusted-model-mapping"></a>Spuštění formátu pomocí upraveného mapování modelu
-1. Přejděte do části Pokladna a banka > Bankovní účty > Bankovní účty.
-2. Použijte rychlý filtr pro hledání záznamů. Můžete například filtrovat v poli Bankovní účet pomocí hodnoty „USMF OPER“.
-3. V podokně akcí klikněte na možnost Nastavit.
-4. Klepněte na možnost Kontrola.
-5. Klikněte na možnost Tisk testu.
-6. Klikněte na tlačítko OK.
-    * Prohlédněte si vytvořený výstup. Všimněte si, že obrázek z přílohy správy dokumentů je zobrazen jako podpis oprávněné osoby.  
+## <a name="run-format-using-the-adjusted-model-mapping"></a><span data-ttu-id="379ad-164">Spuštění formátu pomocí upraveného mapování modelu</span><span class="sxs-lookup"><span data-stu-id="379ad-164">Run format using the adjusted model mapping</span></span>
+1. <span data-ttu-id="379ad-165">Přejděte do části Pokladna a banka > Bankovní účty > Bankovní účty.</span><span class="sxs-lookup"><span data-stu-id="379ad-165">Go to Cash and bank management > Bank accounts > Bank accounts.</span></span>
+2. <span data-ttu-id="379ad-166">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="379ad-166">Use the Quick Filter to find records.</span></span> <span data-ttu-id="379ad-167">Můžete například filtrovat v poli Bankovní účet pomocí hodnoty „USMF OPER“.</span><span class="sxs-lookup"><span data-stu-id="379ad-167">For example, filter on the Bank account field with a value of 'USMF OPER'.</span></span>
+3. <span data-ttu-id="379ad-168">V podokně akcí klikněte na možnost Nastavit.</span><span class="sxs-lookup"><span data-stu-id="379ad-168">On the Action Pane, click Set up.</span></span>
+4. <span data-ttu-id="379ad-169">Klepněte na možnost Kontrola.</span><span class="sxs-lookup"><span data-stu-id="379ad-169">Click Check.</span></span>
+5. <span data-ttu-id="379ad-170">Klikněte na možnost Tisk testu.</span><span class="sxs-lookup"><span data-stu-id="379ad-170">Click Print test.</span></span>
+6. <span data-ttu-id="379ad-171">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="379ad-171">Click OK.</span></span>
+    * <span data-ttu-id="379ad-172">Prohlédněte si vytvořený výstup.</span><span class="sxs-lookup"><span data-stu-id="379ad-172">Review the created output.</span></span> <span data-ttu-id="379ad-173">Všimněte si, že obrázek z přílohy správy dokumentů je zobrazen jako podpis oprávněné osoby.</span><span class="sxs-lookup"><span data-stu-id="379ad-173">Note that the image from the Document Management attachment is presented as the signature of an authorized person.</span></span>  
 
-## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a>Použití dokumentu MS Word jako šablony v importovaném formátu
-1. Zavřete stránku.
-2. Zavřete stránku.
-3. Přejděte do části Správa organizace > Elektronické výkaznictví > Konfigurace.
-4. Ve stromové struktuře rozbalte Model pro šeky.
-5. Ve stromovém zobrazení vyberte Model for cheques\Cheques printing format.
-6. Klikněte na možnost Návrhář.
-7. Klikněte na Přílohy.
-8. Klepněte na tlačítko Odstranit.
-9. Klepněte na tlačítko Ano.
-10. Klikněte na položku Nová.
-11. Klepněte na volby Soubor.
-    * Klepněte na tlačítko Procházet a vyberte předem stažený soubor Cheque template Word.docx.  
-12. Zavřete stránku.
-13. V poli Šablona zadejte nebo vyberte hodnotu.
-14. Klikněte na položku Uložit.
-15. Zavřete stránku.
-16. Klikněte na položku Upravit.
-17. Vyberte možnost Ano v poli Koncept běhu.
-18. Zavřete stránku.
-19. Přejděte do části Pokladna a banka > Bankovní účty > Bankovní účty.
-20. Použijte rychlý filtr k filtrování v poli Bankovní účet s hodnotou 'USMF OPER.
-21. Klepněte na možnost Kontrola.
-22. Klikněte na možnost Tisk testu.
-23. Klikněte na tlačítko OK.
-    * Prohlédněte si vytvořený výstup. Všimněte si, že výstup byl vygenerován jako dokument aplikace Word s vloženými obrázky loga společnosti, podpisem oprávněné osoby a vybraným textem vodoznaku.  
+## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a><span data-ttu-id="379ad-174">Použití dokumentu MS Word jako šablony v importovaném formátu</span><span class="sxs-lookup"><span data-stu-id="379ad-174">Use MS Word document as a template in the imported format</span></span>
+1. <span data-ttu-id="379ad-175">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="379ad-175">Close the page.</span></span>
+2. <span data-ttu-id="379ad-176">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="379ad-176">Close the page.</span></span>
+3. <span data-ttu-id="379ad-177">Přejděte do části Správa organizace > Elektronické výkaznictví > Konfigurace.</span><span class="sxs-lookup"><span data-stu-id="379ad-177">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+4. <span data-ttu-id="379ad-178">Ve stromové struktuře rozbalte Model pro šeky.</span><span class="sxs-lookup"><span data-stu-id="379ad-178">In the tree, expand 'Model for cheques'.</span></span>
+5. <span data-ttu-id="379ad-179">Ve stromovém zobrazení vyberte Model for cheques\Cheques printing format.</span><span class="sxs-lookup"><span data-stu-id="379ad-179">In the tree, select 'Model for cheques\Cheques printing format'.</span></span>
+6. <span data-ttu-id="379ad-180">Klikněte na možnost Návrhář.</span><span class="sxs-lookup"><span data-stu-id="379ad-180">Click Designer.</span></span>
+7. <span data-ttu-id="379ad-181">Klikněte na Přílohy.</span><span class="sxs-lookup"><span data-stu-id="379ad-181">Click Attachments.</span></span>
+8. <span data-ttu-id="379ad-182">Klepněte na tlačítko Odstranit.</span><span class="sxs-lookup"><span data-stu-id="379ad-182">Click Delete.</span></span>
+9. <span data-ttu-id="379ad-183">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="379ad-183">Click Yes.</span></span>
+10. <span data-ttu-id="379ad-184">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="379ad-184">Click New.</span></span>
+11. <span data-ttu-id="379ad-185">Klepněte na volby Soubor.</span><span class="sxs-lookup"><span data-stu-id="379ad-185">Click File.</span></span>
+    * <span data-ttu-id="379ad-186">Klepněte na tlačítko Procházet a vyberte předem stažený soubor Cheque template Word.docx.</span><span class="sxs-lookup"><span data-stu-id="379ad-186">Click Browse and select the downloaded in advance ‘Cheque template Word.docx’ file.</span></span>  
+12. <span data-ttu-id="379ad-187">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="379ad-187">Close the page.</span></span>
+13. <span data-ttu-id="379ad-188">V poli Šablona zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="379ad-188">In the Template field, enter or select a value.</span></span>
+14. <span data-ttu-id="379ad-189">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="379ad-189">Click Save.</span></span>
+15. <span data-ttu-id="379ad-190">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="379ad-190">Close the page.</span></span>
+16. <span data-ttu-id="379ad-191">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="379ad-191">Click Edit.</span></span>
+17. <span data-ttu-id="379ad-192">Vyberte možnost Ano v poli Koncept běhu.</span><span class="sxs-lookup"><span data-stu-id="379ad-192">Select Yes in the Run Draft field.</span></span>
+18. <span data-ttu-id="379ad-193">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="379ad-193">Close the page.</span></span>
+19. <span data-ttu-id="379ad-194">Přejděte do části Pokladna a banka > Bankovní účty > Bankovní účty.</span><span class="sxs-lookup"><span data-stu-id="379ad-194">Go to Cash and bank management > Bank accounts > Bank accounts.</span></span>
+20. <span data-ttu-id="379ad-195">Použijte rychlý filtr k filtrování v poli Bankovní účet s hodnotou 'USMF OPER.</span><span class="sxs-lookup"><span data-stu-id="379ad-195">Use the Quick Filter to filter on the Bank account field with a value of 'USMF OPER'.</span></span>
+21. <span data-ttu-id="379ad-196">Klepněte na možnost Kontrola.</span><span class="sxs-lookup"><span data-stu-id="379ad-196">Click Check.</span></span>
+22. <span data-ttu-id="379ad-197">Klikněte na možnost Tisk testu.</span><span class="sxs-lookup"><span data-stu-id="379ad-197">Click Print test.</span></span>
+23. <span data-ttu-id="379ad-198">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="379ad-198">Click OK.</span></span>
+    * <span data-ttu-id="379ad-199">Prohlédněte si vytvořený výstup.</span><span class="sxs-lookup"><span data-stu-id="379ad-199">Review the created output.</span></span> <span data-ttu-id="379ad-200">Všimněte si, že výstup byl vygenerován jako dokument aplikace Word s vloženými obrázky loga společnosti, podpisem oprávněné osoby a vybraným textem vodoznaku.</span><span class="sxs-lookup"><span data-stu-id="379ad-200">Note that the output has been generated as a MS Word document with embedded images presenting the company logo, the signature of an authorized person and the selected text of the watermark.</span></span>  
 
 

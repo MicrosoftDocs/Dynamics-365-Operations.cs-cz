@@ -16,24 +16,24 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: f009d040d7bdc419363dd9d7bc84fdeae5284ea6
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: b6a0ffb1b5be1ecda929ad604fc39b260fa1c34c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="add-an-image-to-a-product"></a>Přidání obrázku k produktu
+# <a name="add-an-image-to-a-product"></a><span data-ttu-id="f5fc8-103">Přidání obrázku k produktu</span><span class="sxs-lookup"><span data-stu-id="f5fc8-103">Add an image to a product</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tato procedura ukazuje, jak přidat obrázek k produktu. Společnost s ukázkovými daty použitá k vytvoření tohoto úkolu je USMF.
+<span data-ttu-id="f5fc8-104">Tato procedura ukazuje, jak přidat obrázek k produktu. Společnost s ukázkovými daty použitá k vytvoření tohoto úkolu je USMF.</span><span class="sxs-lookup"><span data-stu-id="f5fc8-104">This procedure shows how to add an image to a product The demo data company used to create this task is USMF.</span></span>
 
-1. Přejděte na možnosti Řízení informací o produktech > Produkty > Uvolněné produkty.
-2. Rozbalte okno s fakty Obrázek produktu.
-3. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-    * V tomto příkladu vyberte číslo položky C0002.  
-4. Klikněte na Změnit obrázek.
-5. Klikněte na položku Nová.
-    * Klikněte na tlačítko Procházet. Vyhledejte obrázek, který chcete použít, vyberte jej a potom zavřete dialogové okno.    
+1. <span data-ttu-id="f5fc8-105">Přejděte na možnosti Řízení informací o produktech > Produkty > Uvolněné produkty.</span><span class="sxs-lookup"><span data-stu-id="f5fc8-105">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="f5fc8-106">Rozbalte okno s fakty Obrázek produktu.</span><span class="sxs-lookup"><span data-stu-id="f5fc8-106">Expand the Product image FactBox.</span></span>
+3. <span data-ttu-id="f5fc8-107">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="f5fc8-107">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="f5fc8-108">V tomto příkladu vyberte číslo položky C0002.</span><span class="sxs-lookup"><span data-stu-id="f5fc8-108">For example, select the item number C0002.</span></span>  
+4. <span data-ttu-id="f5fc8-109">Klikněte na Změnit obrázek.</span><span class="sxs-lookup"><span data-stu-id="f5fc8-109">Click Change image.</span></span>
+5. <span data-ttu-id="f5fc8-110">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="f5fc8-110">Click New.</span></span>
+    * <span data-ttu-id="f5fc8-111">Klikněte na tlačítko Procházet.</span><span class="sxs-lookup"><span data-stu-id="f5fc8-111">Click Browse.</span></span> <span data-ttu-id="f5fc8-112">Vyhledejte obrázek, který chcete použít, vyberte jej a potom zavřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="f5fc8-112">Find the image that you want to use, select it, and then close the dialog box.</span></span>    
 
 

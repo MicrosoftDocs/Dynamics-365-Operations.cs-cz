@@ -17,133 +17,133 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 01a0c42c43a23234e0e355193f8dd7e8ee116f71
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 02af5d1beb2d4eb6a7162b47c42854725fbdbec2
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-a-min-max-replenishment-process"></a>Vytvoření procesu minimálního nebo maximálního doplňování
+# <a name="set-up-a-min-max-replenishment-process"></a><span data-ttu-id="51ce2-103">Vytvoření procesu minimálního nebo maximálního doplňování</span><span class="sxs-lookup"><span data-stu-id="51ce2-103">Set up a min-max replenishment process</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup popisuje, jak nastavit nový proces doplnění využívající strategii doplnění metodou min/max. Pokud zásoby klesnou pod minimální úroveň, vytvoří se práce pro doplnění skladového místa. Postup také popisuje, jak používat pevná výdejní skladová místa a povolit tak doplnění i v případě, že zásoby klesnou pod minimální úroveň, a jak povolit pravidelné spuštění doplnění za pomoci dávkové úlohy. Tyto úkoly obvykle provádějí vedoucí skladu. Tento postup lze spustit s ukázkovými daty společnosti USMF základě vzorových hodnot v poznámkách nebo při použití vlastních dat. Jestliže používáte vlastní data, ujistěte se, že používáte sklad, který je povolen pro procesy správy skladu.
+<span data-ttu-id="51ce2-104">Tento postup popisuje, jak nastavit nový proces doplnění využívající strategii doplnění metodou min/max.</span><span class="sxs-lookup"><span data-stu-id="51ce2-104">This procedure shows you how to set up a new replenishment process which uses the minimum/maximum replenishment strategy.</span></span> <span data-ttu-id="51ce2-105">Pokud zásoby klesnou pod minimální úroveň, vytvoří se práce pro doplnění skladového místa.</span><span class="sxs-lookup"><span data-stu-id="51ce2-105">When inventory falls below the minimum level, work will be created to replenish the location.</span></span> <span data-ttu-id="51ce2-106">Postup také popisuje, jak používat pevná výdejní skladová místa a povolit tak doplnění i v případě, že zásoby klesnou pod minimální úroveň, a jak povolit pravidelné spuštění doplnění za pomoci dávkové úlohy.</span><span class="sxs-lookup"><span data-stu-id="51ce2-106">The procedure also shows how to use fixed picking locations to allow restocking even if inventory falls below the minimum level, and how to enable the replenishment process to run regularly using a batch job.</span></span> <span data-ttu-id="51ce2-107">Tyto úkoly obvykle provádějí vedoucí skladu.</span><span class="sxs-lookup"><span data-stu-id="51ce2-107">These tasks would typically be carried out by a warehouse manager.</span></span> <span data-ttu-id="51ce2-108">Tento postup lze spustit s ukázkovými daty společnosti USMF základě vzorových hodnot v poznámkách nebo při použití vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="51ce2-108">You can run this procedure in the USMF demo data company using the example values in the notes, or can run it on your own data.</span></span> <span data-ttu-id="51ce2-109">Jestliže používáte vlastní data, ujistěte se, že používáte sklad, který je povolen pro procesy správy skladu.</span><span class="sxs-lookup"><span data-stu-id="51ce2-109">If you’re using your own data, make sure that you have a warehouse that’s enabled for Warehouse management processes.</span></span>
 
 
-## <a name="create-a-fixed-picking-location"></a>Vytvoření pevně stanoveného výdejního skladového místa
-1. Přejděte do nabídky Řízení skladu > Nastavení > Sklad > Pevná skladová místa.
-    * Tento úkol je volitelný pro doplnění metodou min/max, ale pokud používáte dlouhodobé výdejní skladové místo, úkol umožňuje provést doplnění i v případě, že hodnoty klesnou pod minimální úroveň, protože systém může určit, jaké položky je nutné doplnit, i když nejsou žádné k dispozici.  
-2. Klikněte na položku Nová.
-3. V poli Číslo zboží zadejte nebo vyberte hodnotu.
-    * Pokud používáte data USMF, můžete vybrat položku A0001.  
-4. V poli Lokalita zadejte nebo vyberte hodnotu.
-    * Pokud používáte data USMF, můžete vybrat pracoviště 2.  
-5. V poli Sklad zadejte nebo vyberte hodnotu.
-    * Pokud používáte USMF, můžete vybrat sklad 24.  
-6. V poli Umístění zadejte nebo vyberte hodnotu.
-    * Pokud používáte data USMF, můžete vybrat „CP-003“.  
-7. Zavřete stránku.
+## <a name="create-a-fixed-picking-location"></a><span data-ttu-id="51ce2-110">Vytvoření pevně stanoveného výdejního skladového místa</span><span class="sxs-lookup"><span data-stu-id="51ce2-110">Create a fixed picking location</span></span>
+1. <span data-ttu-id="51ce2-111">Přejděte do nabídky Řízení skladu > Nastavení > Sklad > Pevná skladová místa.</span><span class="sxs-lookup"><span data-stu-id="51ce2-111">Go to Warehouse management > Setup > Warehouse > Fixed locations.</span></span>
+    * <span data-ttu-id="51ce2-112">Tento úkol je volitelný pro doplnění metodou min/max, ale pokud používáte dlouhodobé výdejní skladové místo, úkol umožňuje provést doplnění i v případě, že hodnoty klesnou pod minimální úroveň, protože systém může určit, jaké položky je nutné doplnit, i když nejsou žádné k dispozici.</span><span class="sxs-lookup"><span data-stu-id="51ce2-112">This is an optional task for min-max replenishment, but if you use fixed picking location, this allows stock to be replenished even if it falls below the minimum level, because the system can determine which items need to be replenished, even if there aren't any left.</span></span>  
+2. <span data-ttu-id="51ce2-113">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="51ce2-113">Click New.</span></span>
+3. <span data-ttu-id="51ce2-114">V poli Číslo zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="51ce2-114">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="51ce2-115">Pokud používáte data USMF, můžete vybrat položku A0001.</span><span class="sxs-lookup"><span data-stu-id="51ce2-115">If you’re using USMF, you can select item A0001.</span></span>  
+4. <span data-ttu-id="51ce2-116">V poli Lokalita zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="51ce2-116">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="51ce2-117">Pokud používáte data USMF, můžete vybrat pracoviště 2.</span><span class="sxs-lookup"><span data-stu-id="51ce2-117">If you’re using USMF, you can select site 2.</span></span>  
+5. <span data-ttu-id="51ce2-118">V poli Sklad zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="51ce2-118">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="51ce2-119">Pokud používáte USMF, můžete vybrat sklad 24.</span><span class="sxs-lookup"><span data-stu-id="51ce2-119">If you’re using USMF, you can select warehouse 24.</span></span>  
+6. <span data-ttu-id="51ce2-120">V poli Umístění zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="51ce2-120">In the Location field, enter or select a value.</span></span>
+    * <span data-ttu-id="51ce2-121">Pokud používáte data USMF, můžete vybrat „CP-003“.</span><span class="sxs-lookup"><span data-stu-id="51ce2-121">If you’re using USMF, you can select CP-003.</span></span>  
+7. <span data-ttu-id="51ce2-122">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="51ce2-122">Close the page.</span></span>
 
-## <a name="create-a-replenishment-location-directive"></a>Vytvoření směrnice pro doplnění místa
-1. Přejděte do nabídky Řízení skladu > Nastavení > Směrnice skladového místa.
-    * Směrnice skladového místa slouží k určení toho, kde mají být položky v procesu doplnění vydány.  
-2. V poli Typ pořadí pracovních činností vyberte možnost Doplnění.
-3. Klikněte na položku Nová.
-4. Zadejte hodnotu do pole Název.
-5. V poli Typ práce vyberte „Vybrat“.
-6. V poli Lokalita zadejte nebo vyberte hodnotu.
-    * Pokud používáte data USMF, můžete vybrat pracoviště 2.  
-7. V poli Sklad zadejte nebo vyberte hodnotu.
-    * Pokud používáte USMF, můžete vybrat sklad 24.  
-8. Klikněte na položku Uložit.
-9. Klikněte na položku Nová.
-10. Označte v seznamu vybraný řádek.
-11. Zadejte číslo do pole Do množství.
-    * Například nastavte hodnotu 9999.  
-12. Zaškrtněte políčko Povolit rozdělení.
-    * Pokud vyberete tuto možnost, proces vytváření práce umožní rozdělení množství na řádku práce mezi více umístění.  
-13. Klikněte na položku Uložit.
-14. Klikněte na položku Nová.
-15. Označte v seznamu vybraný řádek.
-16. Zadejte hodnotu do pole Název.
-17. Klikněte na položku Uložit.
-18. Klikněte na možnost Upravit dotaz.
-    * Můžete tento dotaz upravit a přidat tak omezení, kde mohou být zásoby v procesu doplnění vybrány. Například je možné nastavit, že zásob lze používat pouze ze skladové oblasti ve skladu.  
-19. Klikněte na tlačítko OK.
-20. Zavřete stránku.
+## <a name="create-a-replenishment-location-directive"></a><span data-ttu-id="51ce2-123">Vytvoření směrnice pro doplnění místa</span><span class="sxs-lookup"><span data-stu-id="51ce2-123">Create a replenishment location directive</span></span>
+1. <span data-ttu-id="51ce2-124">Přejděte do nabídky Řízení skladu > Nastavení > Směrnice skladového místa.</span><span class="sxs-lookup"><span data-stu-id="51ce2-124">Go to Warehouse management > Setup > Location directives.</span></span>
+    * <span data-ttu-id="51ce2-125">Směrnice skladového místa slouží k určení toho, kde mají být položky v procesu doplnění vydány.</span><span class="sxs-lookup"><span data-stu-id="51ce2-125">Location directives are used to determine where items should be picked from in the replenishment process.</span></span>  
+2. <span data-ttu-id="51ce2-126">V poli Typ pořadí pracovních činností vyberte možnost Doplnění.</span><span class="sxs-lookup"><span data-stu-id="51ce2-126">In the Work order type field, select 'Replenishment'.</span></span>
+3. <span data-ttu-id="51ce2-127">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="51ce2-127">Click New.</span></span>
+4. <span data-ttu-id="51ce2-128">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="51ce2-128">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="51ce2-129">V poli Typ práce vyberte „Vybrat“.</span><span class="sxs-lookup"><span data-stu-id="51ce2-129">In the Work type field, select 'Pick'.</span></span>
+6. <span data-ttu-id="51ce2-130">V poli Lokalita zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="51ce2-130">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="51ce2-131">Pokud používáte data USMF, můžete vybrat pracoviště 2.</span><span class="sxs-lookup"><span data-stu-id="51ce2-131">If you’re using USMF, you can select site 2.</span></span>  
+7. <span data-ttu-id="51ce2-132">V poli Sklad zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="51ce2-132">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="51ce2-133">Pokud používáte USMF, můžete vybrat sklad 24.</span><span class="sxs-lookup"><span data-stu-id="51ce2-133">If you’re using USMF, you can select warehouse 24.</span></span>  
+8. <span data-ttu-id="51ce2-134">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="51ce2-134">Click Save.</span></span>
+9. <span data-ttu-id="51ce2-135">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="51ce2-135">Click New.</span></span>
+10. <span data-ttu-id="51ce2-136">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="51ce2-136">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="51ce2-137">Zadejte číslo do pole Do množství.</span><span class="sxs-lookup"><span data-stu-id="51ce2-137">In the To quantity field, enter a number.</span></span>
+    * <span data-ttu-id="51ce2-138">Například nastavte hodnotu 9999.</span><span class="sxs-lookup"><span data-stu-id="51ce2-138">For example, you can set it to 9999.</span></span>  
+12. <span data-ttu-id="51ce2-139">Zaškrtněte políčko Povolit rozdělení.</span><span class="sxs-lookup"><span data-stu-id="51ce2-139">Select the Allow split check box.</span></span>
+    * <span data-ttu-id="51ce2-140">Pokud vyberete tuto možnost, proces vytváření práce umožní rozdělení množství na řádku práce mezi více umístění.</span><span class="sxs-lookup"><span data-stu-id="51ce2-140">If you select this option, the work creation process will allow work line quantities to be split across multiple locations.</span></span>  
+13. <span data-ttu-id="51ce2-141">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="51ce2-141">Click Save.</span></span>
+14. <span data-ttu-id="51ce2-142">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="51ce2-142">Click New.</span></span>
+15. <span data-ttu-id="51ce2-143">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="51ce2-143">In the list, mark the selected row.</span></span>
+16. <span data-ttu-id="51ce2-144">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="51ce2-144">In the Name field, type a value.</span></span>
+17. <span data-ttu-id="51ce2-145">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="51ce2-145">Click Save.</span></span>
+18. <span data-ttu-id="51ce2-146">Klikněte na možnost Upravit dotaz.</span><span class="sxs-lookup"><span data-stu-id="51ce2-146">Click Edit query.</span></span>
+    * <span data-ttu-id="51ce2-147">Můžete tento dotaz upravit a přidat tak omezení, kde mohou být zásoby v procesu doplnění vybrány.</span><span class="sxs-lookup"><span data-stu-id="51ce2-147">You can edit this query to add restrictions where inventory can be selected from in the replenishment process.</span></span> <span data-ttu-id="51ce2-148">Například je možné nastavit, že zásob lze používat pouze ze skladové oblasti ve skladu.</span><span class="sxs-lookup"><span data-stu-id="51ce2-148">For example, it could be that inventory should only be used from the Bulk area of the warehouse.</span></span>  
+19. <span data-ttu-id="51ce2-149">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="51ce2-149">Click OK.</span></span>
+20. <span data-ttu-id="51ce2-150">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="51ce2-150">Close the page.</span></span>
 
-## <a name="create-a-replenishment-work-template"></a>Vytvoření šablony doplnění
-1. Přejděte do nabídky Řízení skladu > Nastavení > Práce > Pracovní šablony.
-    * Šablona práce se používá jako vodítko pro určení toho, jak musí být doplnění metodou min/max vytvořeno. Jako základ musí existovat řádek šablony práce pro výdej a vložení. Šablona práce například stanoví, že je proces neplatný, až dokud nejsou uvedeny všechny potřebné informace.  
-2. V poli Typ pořadí pracovních činností vyberte možnost Doplnění.
-3. Klikněte na položku Nová.
-4. Zadejte hodnotu do pole Šablona práce.
-5. Klikněte na položku Uložit.
-6. Klikněte na položku Nová.
-7. V poli Typ práce vyberte „Vybrat“.
-8. V poli ID pracovní třídy zadejte nebo vyberte hodnotu.
-    * Mělo by se jednat o pracovní třídu související s doplněním. V případě, že používáte USMF, vyberte „Doplnění“.  
-9. Klikněte na položku Nová.
-10. Označte v seznamu vybraný řádek.
-11. V poli Typ práce vyberte „Vložit“.
-12. V poli ID pracovní třídy zadejte nebo vyberte hodnotu.
-13. Klikněte na položku Uložit.
-14. Zavřete stránku.
+## <a name="create-a-replenishment-work-template"></a><span data-ttu-id="51ce2-151">Vytvoření šablony doplnění</span><span class="sxs-lookup"><span data-stu-id="51ce2-151">Create a replenishment work template</span></span>
+1. <span data-ttu-id="51ce2-152">Přejděte do nabídky Řízení skladu > Nastavení > Práce > Pracovní šablony.</span><span class="sxs-lookup"><span data-stu-id="51ce2-152">Go to Warehouse management > Setup > Work > Work templates.</span></span>
+    * <span data-ttu-id="51ce2-153">Šablona práce se používá jako vodítko pro určení toho, jak musí být doplnění metodou min/max vytvořeno.</span><span class="sxs-lookup"><span data-stu-id="51ce2-153">The work template is use to guide the system as to how the min/max replenishment work must be created.</span></span> <span data-ttu-id="51ce2-154">Jako základ musí existovat řádek šablony práce pro výdej a vložení.</span><span class="sxs-lookup"><span data-stu-id="51ce2-154">As a minimum, there must be a work template line for a pick and a put.</span></span> <span data-ttu-id="51ce2-155">Šablona práce například stanoví, že je proces neplatný, až dokud nejsou uvedeny všechny potřebné informace.</span><span class="sxs-lookup"><span data-stu-id="51ce2-155">The work template will say that it’s Invalid until all the necessary information has been filled in.</span></span>  
+2. <span data-ttu-id="51ce2-156">V poli Typ pořadí pracovních činností vyberte možnost Doplnění.</span><span class="sxs-lookup"><span data-stu-id="51ce2-156">In the Work order type field, select 'Replenishment'.</span></span>
+3. <span data-ttu-id="51ce2-157">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="51ce2-157">Click New.</span></span>
+4. <span data-ttu-id="51ce2-158">Zadejte hodnotu do pole Šablona práce.</span><span class="sxs-lookup"><span data-stu-id="51ce2-158">In the Work template field, type a value.</span></span>
+5. <span data-ttu-id="51ce2-159">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="51ce2-159">Click Save.</span></span>
+6. <span data-ttu-id="51ce2-160">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="51ce2-160">Click New.</span></span>
+7. <span data-ttu-id="51ce2-161">V poli Typ práce vyberte „Vybrat“.</span><span class="sxs-lookup"><span data-stu-id="51ce2-161">In the Work type field, select 'Pick'.</span></span>
+8. <span data-ttu-id="51ce2-162">V poli ID pracovní třídy zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="51ce2-162">In the Work class ID field, enter or select a value.</span></span>
+    * <span data-ttu-id="51ce2-163">Mělo by se jednat o pracovní třídu související s doplněním.</span><span class="sxs-lookup"><span data-stu-id="51ce2-163">This should be a work class related to replenishment.</span></span> <span data-ttu-id="51ce2-164">V případě, že používáte USMF, vyberte „Doplnění“.</span><span class="sxs-lookup"><span data-stu-id="51ce2-164">If you’re using USMF, select Replenish.</span></span>  
+9. <span data-ttu-id="51ce2-165">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="51ce2-165">Click New.</span></span>
+10. <span data-ttu-id="51ce2-166">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="51ce2-166">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="51ce2-167">V poli Typ práce vyberte „Vložit“.</span><span class="sxs-lookup"><span data-stu-id="51ce2-167">In the Work type field, select 'Put'.</span></span>
+12. <span data-ttu-id="51ce2-168">V poli ID pracovní třídy zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="51ce2-168">In the Work class ID field, enter or select a value.</span></span>
+13. <span data-ttu-id="51ce2-169">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="51ce2-169">Click Save.</span></span>
+14. <span data-ttu-id="51ce2-170">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="51ce2-170">Close the page.</span></span>
 
-## <a name="create-a-new-replenishment-template"></a>Vytvoření nové šablony doplnění
-1. Přejděte na Řízení skladu > Nastavení > Doplnění > Šablony doplnění.
-    * Šablona doplnění se používá k definici položek, množství a místa pro doplnění.  
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Šablona doplnění.
-    * Pojmenujte šablonu tak, aby bylo jasné, že je určena pro doplnění metodou min/max.  
-4. Zadejte nějakou hodnotu do pole Popis.
-5. Označte pole Povolit u vlny poptávky použití nerezervovaných množství.
-    * Pokud vyberete tuto možnost, bude doplnění poptávky vlny mít možnost spotřebovat množství, která souvisejí s doplněním metodou min/max. To může být například užitečné, pokud doplnění metodou min/max není zpracováno okamžitě, a aby se tak zabránilo vytvoření nutnosti doplnění nadměrné poptávky.  
-6. Klikněte na položku Nová.
-7. V poli Pořadové číslo zadejte číslo.
-8. Zadejte nějakou hodnotu do pole Popis.
-9. Označte v seznamu vybraný řádek.
-10. V poli Jednotka doplnění zadejte nebo vyberte hodnotu.
-    * Vyberte například ks. Zadání tohoto nastavení je povinné. Umožňuje zadat jiné měrné jednotky pro doplnění ve srovnání s jednotkou zadanou pro minimální a maximální úroveň zásob v této šabloně.  
-11. V poli Šablona práce zadejte nebo vyberte hodnotu.
-    * Vyberte šablonu práce, kterou jste vytvořili dříve.  
-12. V poli Minimální množství zadejte číslo.
-    * Výběr minimální množství, které spustí proces doplnění. Nastavte například hodnotu 50. Je možné ponechte nastavenou hodnotu 0, a to pokud se jedná o doplňování pevného skladového místa, a pokud je možnost Doplnit prázdná pevná skladová místa nastavena na hodnotu Ano. Rovněž kvůli efektivitě doporučujeme vybrat možnost Doplnit pouze pevná skladová místa.  
-13. V poli Maximální množství zadejte číslo.
-    * Nastavte například hodnotu 100.  
-14. V poli Jednotka zadejte nebo vyberte hodnotu.
-    * Přiřadíte jednotku pro minimální a maximální množství. Nastavte například ks.  
-15. Označte pole Doplnit prázdná pevná skladová místa.
-    * Zaškrtnutím tohoto políčka doplníte pevná skladovací místa, jsou-li prázdná. V opačném případě budou doplněna pouze místa, kde je množství na skladě.  
-16. Označte pole Doplnit pouze pevná skladová místa.
-17. Klikněte na Vybrané produkty.
-    * Jedná se o místo, kde můžete definovat, které produkty mají být doplněny. Pokud je vybrána možnost Pevně stanovené výdejní skladové místo, musíte v tomto dotazu také definovat skladová místa. Dotazy specifické pro varianty jsou k dispozici společně s dotazy specifickými pro produkty.  
-18. Vyberte řádek Položky.
-19. Zadejte hodnotu do pole Kritéria.
-    * Vyberte položky, které mají být doplněny na pevném skladovém místě. Například zadejte A* pro výběr všech položek začínajících na A.  
-20. Klepněte na možnost Přidat.
-    * Přidáte-li entitu Místo (pokud již neexistuje), můžete omezit doplnění na pevná výdejní skladová místa v rámci určité oblasti skladu.  
-21. Označte v seznamu vybraný řádek.
-22. Nastavte pole Tabulka pro umístění.
-23. Vyberte ID profilu skladového místa v poli Pole.
-24. V poli Kritéria zadejte nebo vyberte hodnotu.
-25. Klikněte na tlačítko OK.
-26. Zavřete stránku.
+## <a name="create-a-new-replenishment-template"></a><span data-ttu-id="51ce2-171">Vytvoření nové šablony doplnění</span><span class="sxs-lookup"><span data-stu-id="51ce2-171">Create a new replenishment template</span></span>
+1. <span data-ttu-id="51ce2-172">Přejděte na Řízení skladu > Nastavení > Doplnění > Šablony doplnění.</span><span class="sxs-lookup"><span data-stu-id="51ce2-172">Go to Warehouse management > Setup > Replenishment > Replenishment templates.</span></span>
+    * <span data-ttu-id="51ce2-173">Šablona doplnění se používá k definici položek, množství a místa pro doplnění.</span><span class="sxs-lookup"><span data-stu-id="51ce2-173">The replenishment template is used to define the items and quantities, and the location to replenish.</span></span>  
+2. <span data-ttu-id="51ce2-174">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="51ce2-174">Click New.</span></span>
+3. <span data-ttu-id="51ce2-175">Zadejte hodnotu do pole Šablona doplnění.</span><span class="sxs-lookup"><span data-stu-id="51ce2-175">In the Replenish template field, type a value.</span></span>
+    * <span data-ttu-id="51ce2-176">Pojmenujte šablonu tak, aby bylo jasné, že je určena pro doplnění metodou min/max.</span><span class="sxs-lookup"><span data-stu-id="51ce2-176">Give the template a name to indicate that it’s for min/max replenishment.</span></span>  
+4. <span data-ttu-id="51ce2-177">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="51ce2-177">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="51ce2-178">Označte pole Povolit u vlny poptávky použití nerezervovaných množství.</span><span class="sxs-lookup"><span data-stu-id="51ce2-178">Select the Allow wave demand to use unreserved quantities check box.</span></span>
+    * <span data-ttu-id="51ce2-179">Pokud vyberete tuto možnost, bude doplnění poptávky vlny mít možnost spotřebovat množství, která souvisejí s doplněním metodou min/max.</span><span class="sxs-lookup"><span data-stu-id="51ce2-179">If you select this option, it enables wave demand replenishment to consume quantities that are related to min/max replenishment.</span></span> <span data-ttu-id="51ce2-180">To může být například užitečné, pokud doplnění metodou min/max není zpracováno okamžitě, a aby se tak zabránilo vytvoření nutnosti doplnění nadměrné poptávky.</span><span class="sxs-lookup"><span data-stu-id="51ce2-180">For example, this might be useful if the min/max replenishment work isn’t processed immediately, to avoid unnecessary demand replenishment work from being created.</span></span>  
+6. <span data-ttu-id="51ce2-181">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="51ce2-181">Click New.</span></span>
+7. <span data-ttu-id="51ce2-182">V poli Pořadové číslo zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="51ce2-182">In the Sequence number field, enter a number.</span></span>
+8. <span data-ttu-id="51ce2-183">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="51ce2-183">In the Description field, type a value.</span></span>
+9. <span data-ttu-id="51ce2-184">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="51ce2-184">In the list, mark the selected row.</span></span>
+10. <span data-ttu-id="51ce2-185">V poli Jednotka doplnění zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="51ce2-185">In the Replenishment unit field, enter or select a value.</span></span>
+    * <span data-ttu-id="51ce2-186">Vyberte například ks.</span><span class="sxs-lookup"><span data-stu-id="51ce2-186">For example, select pcs.</span></span> <span data-ttu-id="51ce2-187">Zadání tohoto nastavení je povinné.</span><span class="sxs-lookup"><span data-stu-id="51ce2-187">This setting is mandatory.</span></span> <span data-ttu-id="51ce2-188">Umožňuje zadat jiné měrné jednotky pro doplnění ve srovnání s jednotkou zadanou pro minimální a maximální úroveň zásob v této šabloně.</span><span class="sxs-lookup"><span data-stu-id="51ce2-188">It allows you to specify a different unit of measurement for replenishment work compared to the unit specified for the minimum and maximum stock levels in this template.</span></span>  
+11. <span data-ttu-id="51ce2-189">V poli Šablona práce zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="51ce2-189">In the Work template field, enter or select a value.</span></span>
+    * <span data-ttu-id="51ce2-190">Vyberte šablonu práce, kterou jste vytvořili dříve.</span><span class="sxs-lookup"><span data-stu-id="51ce2-190">Choose the work template that you created earlier.</span></span>  
+12. <span data-ttu-id="51ce2-191">V poli Minimální množství zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="51ce2-191">In the Minimum quantity field, enter a number.</span></span>
+    * <span data-ttu-id="51ce2-192">Výběr minimální množství, které spustí proces doplnění.</span><span class="sxs-lookup"><span data-stu-id="51ce2-192">Select the minimum quantity that should trigger the replenishment.</span></span> <span data-ttu-id="51ce2-193">Nastavte například hodnotu 50.</span><span class="sxs-lookup"><span data-stu-id="51ce2-193">For example, set this to 50.</span></span> <span data-ttu-id="51ce2-194">Je možné ponechte nastavenou hodnotu 0, a to pokud se jedná o doplňování pevného skladového místa, a pokud je možnost Doplnit prázdná pevná skladová místa nastavena na hodnotu Ano.</span><span class="sxs-lookup"><span data-stu-id="51ce2-194">It is possible to leave this set to zero, if you’re replenishing a fixed location and the Replenish empty fixed locations option is set to Yes.</span></span> <span data-ttu-id="51ce2-195">Rovněž kvůli efektivitě doporučujeme vybrat možnost Doplnit pouze pevná skladová místa.</span><span class="sxs-lookup"><span data-stu-id="51ce2-195">We also recommend that you select the Replenish only fixed locations option for performance reasons.</span></span>  
+13. <span data-ttu-id="51ce2-196">V poli Maximální množství zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="51ce2-196">In the Maximum quantity field, enter a number.</span></span>
+    * <span data-ttu-id="51ce2-197">Nastavte například hodnotu 100.</span><span class="sxs-lookup"><span data-stu-id="51ce2-197">For example, set this to 100.</span></span>  
+14. <span data-ttu-id="51ce2-198">V poli Jednotka zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="51ce2-198">In the Unit field, enter or select a value.</span></span>
+    * <span data-ttu-id="51ce2-199">Přiřadíte jednotku pro minimální a maximální množství.</span><span class="sxs-lookup"><span data-stu-id="51ce2-199">Assign the unit for the minimum and maximum quantities.</span></span> <span data-ttu-id="51ce2-200">Nastavte například ks.</span><span class="sxs-lookup"><span data-stu-id="51ce2-200">For example, set this to pcs.</span></span>  
+15. <span data-ttu-id="51ce2-201">Označte pole Doplnit prázdná pevná skladová místa.</span><span class="sxs-lookup"><span data-stu-id="51ce2-201">Select the Replenish empty fixed locations check box.</span></span>
+    * <span data-ttu-id="51ce2-202">Zaškrtnutím tohoto políčka doplníte pevná skladovací místa, jsou-li prázdná.</span><span class="sxs-lookup"><span data-stu-id="51ce2-202">Select this check box to replenish fixed locations when they are empty.</span></span> <span data-ttu-id="51ce2-203">V opačném případě budou doplněna pouze místa, kde je množství na skladě.</span><span class="sxs-lookup"><span data-stu-id="51ce2-203">Otherwise, only the locations where there is a quantity on hand will be replenished.</span></span>  
+16. <span data-ttu-id="51ce2-204">Označte pole Doplnit pouze pevná skladová místa.</span><span class="sxs-lookup"><span data-stu-id="51ce2-204">Select the Replenish only fixed locations check box.</span></span>
+17. <span data-ttu-id="51ce2-205">Klikněte na Vybrané produkty.</span><span class="sxs-lookup"><span data-stu-id="51ce2-205">Click Select products.</span></span>
+    * <span data-ttu-id="51ce2-206">Jedná se o místo, kde můžete definovat, které produkty mají být doplněny.</span><span class="sxs-lookup"><span data-stu-id="51ce2-206">This is the place to define which products should be replenished.</span></span> <span data-ttu-id="51ce2-207">Pokud je vybrána možnost Pevně stanovené výdejní skladové místo, musíte v tomto dotazu také definovat skladová místa.</span><span class="sxs-lookup"><span data-stu-id="51ce2-207">If the Fixed picking locations option is selected, you also need to define the locations in this query.</span></span> <span data-ttu-id="51ce2-208">Dotazy specifické pro varianty jsou k dispozici společně s dotazy specifickými pro produkty.</span><span class="sxs-lookup"><span data-stu-id="51ce2-208">Variant-specific queries are available as well product-specific queries.</span></span>  
+18. <span data-ttu-id="51ce2-209">Vyberte řádek Položky.</span><span class="sxs-lookup"><span data-stu-id="51ce2-209">Select the Items row.</span></span>
+19. <span data-ttu-id="51ce2-210">Zadejte hodnotu do pole Kritéria.</span><span class="sxs-lookup"><span data-stu-id="51ce2-210">In the Criteria field, type a value.</span></span>
+    * <span data-ttu-id="51ce2-211">Vyberte položky, které mají být doplněny na pevném skladovém místě.</span><span class="sxs-lookup"><span data-stu-id="51ce2-211">Select the items that should be replenished at the fixed locations.</span></span> <span data-ttu-id="51ce2-212">Například zadejte A* pro výběr všech položek začínajících na A.</span><span class="sxs-lookup"><span data-stu-id="51ce2-212">For example, type A* to select all item numbers beginning with A.</span></span>  
+20. <span data-ttu-id="51ce2-213">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="51ce2-213">Click Add.</span></span>
+    * <span data-ttu-id="51ce2-214">Přidáte-li entitu Místo (pokud již neexistuje), můžete omezit doplnění na pevná výdejní skladová místa v rámci určité oblasti skladu.</span><span class="sxs-lookup"><span data-stu-id="51ce2-214">Add the Location entity (unless it already exists) to be able to restrict the replenishment work to the fixed picking locations within a specific area of the warehouse.</span></span>  
+21. <span data-ttu-id="51ce2-215">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="51ce2-215">In the list, mark the selected row.</span></span>
+22. <span data-ttu-id="51ce2-216">Nastavte pole Tabulka pro umístění.</span><span class="sxs-lookup"><span data-stu-id="51ce2-216">Set the Table field to Locations.</span></span>
+23. <span data-ttu-id="51ce2-217">Vyberte ID profilu skladového místa v poli Pole.</span><span class="sxs-lookup"><span data-stu-id="51ce2-217">In the Field field, select Location profile ID.</span></span>
+24. <span data-ttu-id="51ce2-218">V poli Kritéria zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="51ce2-218">In the Criteria field, enter or select a value.</span></span>
+25. <span data-ttu-id="51ce2-219">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="51ce2-219">Click OK.</span></span>
+26. <span data-ttu-id="51ce2-220">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="51ce2-220">Close the page.</span></span>
 
-## <a name="set-the-replenishment-process-to-run-as-a-batch-job"></a>Nastavení procesu doplnění tak, aby byl spouštěn jako dávková úloha
-1. Přejděte na Správa skladu > Doplnění > Doplnění.
-    * Na stránce Doplnění můžete nastavit doplnění tak, aby se spustilo jako dávková úloha, nebo aby se vyžadovalo její ruční spuštění.  
-2. Klepněte na tlačítko Filtr.
-3. Označte v seznamu vybraný řádek.
-4. V poli Kritéria zadejte nebo vyberte hodnotu.
-5. Klepněte na tlačítko OK.
-6. Rozbalte sekci Spustit na pozadí.
-7. Nastavte Dávkové zpracování na hodnotu Ano.
-8. Klepněte na tlačítko Opakování.
-9. Vyberte možnost Bez koncového data.
-10. Nastavte vzor opakování.
-    * V tomto příkladu vyberte Dny.  
-11. Klikněte na tlačítko OK.
-12. Klikněte na tlačítko OK.
+## <a name="set-the-replenishment-process-to-run-as-a-batch-job"></a><span data-ttu-id="51ce2-221">Nastavení procesu doplnění tak, aby byl spouštěn jako dávková úloha</span><span class="sxs-lookup"><span data-stu-id="51ce2-221">Set the replenishment process to run as a batch job</span></span>
+1. <span data-ttu-id="51ce2-222">Přejděte na Správa skladu > Doplnění > Doplnění.</span><span class="sxs-lookup"><span data-stu-id="51ce2-222">Go to Warehouse management > Replenishment > Replenishments.</span></span>
+    * <span data-ttu-id="51ce2-223">Na stránce Doplnění můžete nastavit doplnění tak, aby se spustilo jako dávková úloha, nebo aby se vyžadovalo její ruční spuštění.</span><span class="sxs-lookup"><span data-stu-id="51ce2-223">The Replenishments page allows you to set up replenishment to run as a batch job, or to require that it’s started manually.</span></span>  
+2. <span data-ttu-id="51ce2-224">Klepněte na tlačítko Filtr.</span><span class="sxs-lookup"><span data-stu-id="51ce2-224">Click Filter.</span></span>
+3. <span data-ttu-id="51ce2-225">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="51ce2-225">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="51ce2-226">V poli Kritéria zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="51ce2-226">In the Criteria field, enter or select a value.</span></span>
+5. <span data-ttu-id="51ce2-227">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="51ce2-227">Click OK.</span></span>
+6. <span data-ttu-id="51ce2-228">Rozbalte sekci Spustit na pozadí.</span><span class="sxs-lookup"><span data-stu-id="51ce2-228">Expand the Run in the background section.</span></span>
+7. <span data-ttu-id="51ce2-229">Nastavte Dávkové zpracování na hodnotu Ano.</span><span class="sxs-lookup"><span data-stu-id="51ce2-229">Set the Batch processing option to Yes.</span></span>
+8. <span data-ttu-id="51ce2-230">Klepněte na tlačítko Opakování.</span><span class="sxs-lookup"><span data-stu-id="51ce2-230">Click Recurrence.</span></span>
+9. <span data-ttu-id="51ce2-231">Vyberte možnost Bez koncového data.</span><span class="sxs-lookup"><span data-stu-id="51ce2-231">Select the No end date option.</span></span>
+10. <span data-ttu-id="51ce2-232">Nastavte vzor opakování.</span><span class="sxs-lookup"><span data-stu-id="51ce2-232">Set the Recurrance pattern.</span></span>
+    * <span data-ttu-id="51ce2-233">V tomto příkladu vyberte Dny.</span><span class="sxs-lookup"><span data-stu-id="51ce2-233">For example, select Days.</span></span>  
+11. <span data-ttu-id="51ce2-234">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="51ce2-234">Click OK.</span></span>
+12. <span data-ttu-id="51ce2-235">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="51ce2-235">Click OK.</span></span>
 
 

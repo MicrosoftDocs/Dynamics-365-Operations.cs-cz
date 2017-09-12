@@ -16,39 +16,39 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 147d8fa82bf15c984ad263cada42789038fa7371
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f01947840553a65af4aba1309d89f9b3e9ced872
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-vendors-and-vendor-bank-accounts-for-iso20022-credit-transfers"></a>Nastavení dodavatelů a bankovních účtů dodavatelů pro převody kreditu ve formátu ISO20022
+# <a name="set-up-vendors-and-vendor-bank-accounts-for-iso20022-credit-transfers"></a><span data-ttu-id="c1a8d-103">Nastavení dodavatelů a bankovních účtů dodavatelů pro převody kreditu ve formátu ISO20022</span><span class="sxs-lookup"><span data-stu-id="c1a8d-103">Set up vendors and vendor bank accounts for ISO20022 credit transfers</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup popisuje způsob nastavení informací o dodavateli a konkrétním bankovním účtu dodavatele požadovaných pro převedení kreditu SEPA nebo jakéhokoli jiného generování souboru pro platbu dodavatele podle normy ISO20022. 
+<span data-ttu-id="c1a8d-104">Tento postup popisuje způsob nastavení informací o dodavateli a konkrétním bankovním účtu dodavatele požadovaných pro převedení kreditu SEPA nebo jakéhokoli jiného generování souboru pro platbu dodavatele podle normy ISO20022.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-104">This procedure demonstrates how to set up the vendor and vendor specific bank account information required for ISO20022 Credit transfer or any other vendor payment file generation.</span></span> 
 
-K vytvoření tohoto postupu jsou použita ukázková data společnosti DEMF.
-Toto je čtvrtý z pěti úkolů, které společně popisují proces platby dodavatele pomocí konfigurací elektronického výkaznictví. Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.
+<span data-ttu-id="c1a8d-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti DEMF.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-105">The demo data company used to create this procedure is DEMF.</span></span>
+<span data-ttu-id="c1a8d-106">Toto je čtvrtý z pěti úkolů, které společně popisují proces platby dodavatele pomocí konfigurací elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-106">This is the fourth procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="c1a8d-107">Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="set-up-bank-details"></a>Nastavení podrobností o bance
-1. Přejděte do části Závazky > Dodavatelé > Všichni dodavatelé.
-2. Použijte rychlý filtr pro hledání záznamů. V poli Účet dodavatele můžete například filtrovat pomocí hodnoty „DE-001“.
-3. Klepnutím na položku DE-001 zobrazíte podrobnosti o dodavateli.
-4. V podokně akcí klikněte na možnost Dodavatel.
-5. Klikněte na možnost Bankovní účty.
-6. Klikněte na položku Upravit.
-    * Pokud není k dispozici žádný bankovní účet, musíte vytvořit nový.  
-7. V poli Kód SWIFT zadejte hodnotu COBADEFFXXX".
-8. Zadejte do pole IBAN hodnotu „DE36200400000628808808“.
-9. Zavřete stránku.
+## <a name="set-up-bank-details"></a><span data-ttu-id="c1a8d-108">Nastavení podrobností o bance</span><span class="sxs-lookup"><span data-stu-id="c1a8d-108">Set up bank details</span></span>
+1. <span data-ttu-id="c1a8d-109">Přejděte do části Závazky > Dodavatelé > Všichni dodavatelé.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-109">Go to Accounts payable > Vendors > All vendors.</span></span>
+2. <span data-ttu-id="c1a8d-110">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-110">Use the Quick Filter to find records.</span></span> <span data-ttu-id="c1a8d-111">V poli Účet dodavatele můžete například filtrovat pomocí hodnoty „DE-001“.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-111">For example, filter on the Vendor account field with a value of 'DE-001'.</span></span>
+3. <span data-ttu-id="c1a8d-112">Klepnutím na položku DE-001 zobrazíte podrobnosti o dodavateli.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-112">Click DE-001 to open vendor details.</span></span>
+4. <span data-ttu-id="c1a8d-113">V podokně akcí klikněte na možnost Dodavatel.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-113">On the Action Pane, click Vendor.</span></span>
+5. <span data-ttu-id="c1a8d-114">Klikněte na možnost Bankovní účty.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-114">Click Bank accounts.</span></span>
+6. <span data-ttu-id="c1a8d-115">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-115">Click Edit.</span></span>
+    * <span data-ttu-id="c1a8d-116">Pokud není k dispozici žádný bankovní účet, musíte vytvořit nový.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-116">If there is no bank account available, you need to create a new one.</span></span>  
+7. <span data-ttu-id="c1a8d-117">V poli Kód SWIFT zadejte hodnotu COBADEFFXXX".</span><span class="sxs-lookup"><span data-stu-id="c1a8d-117">In the SWIFT code field, type 'COBADEFFXXX'.</span></span>
+8. <span data-ttu-id="c1a8d-118">Zadejte do pole IBAN hodnotu „DE36200400000628808808“.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-118">In the IBAN field, type 'DE36200400000628808808'.</span></span>
+9. <span data-ttu-id="c1a8d-119">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-119">Close the page.</span></span>
 
-## <a name="set-up-a-method-of-payment-for-the-vendor"></a>Nastavení metody platby pro dodavatele
-1. Klikněte na položku Upravit.
-2. Rozbalte nebo sbalte oddíl Platba.
-3. V poli Způsob platby kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-4. Klikněte na odkaz na řádku SEPA CT v seznamu.
-5. Klikněte na položku Uložit.
+## <a name="set-up-a-method-of-payment-for-the-vendor"></a><span data-ttu-id="c1a8d-120">Nastavení metody platby pro dodavatele</span><span class="sxs-lookup"><span data-stu-id="c1a8d-120">Set up a method of payment for the vendor</span></span>
+1. <span data-ttu-id="c1a8d-121">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-121">Click Edit.</span></span>
+2. <span data-ttu-id="c1a8d-122">Rozbalte nebo sbalte oddíl Platba.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-122">Expand or collapse the Payment section.</span></span>
+3. <span data-ttu-id="c1a8d-123">V poli Způsob platby kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-123">In the Method of payment field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="c1a8d-124">Klikněte na odkaz na řádku SEPA CT v seznamu.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-124">In the list, click the link in the SEPA CT row.</span></span>
+5. <span data-ttu-id="c1a8d-125">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="c1a8d-125">Click Save.</span></span>
 
 

@@ -16,48 +16,48 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 88927a220246d11e48b210eb5648d7e7c2a7cef8
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1187448393e4905ed5f2dfe826ec843fdcf0cb67
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-destinations-for-electronic-reporting-er"></a>Konfigurace místa určení pro elektronické výkaznictví (ER)
+# <a name="configure-destinations-for-electronic-reporting-er"></a><span data-ttu-id="7a17a-103">Konfigurace místa určení pro elektronické výkaznictví (ER)</span><span class="sxs-lookup"><span data-stu-id="7a17a-103">Configure destinations for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup ukazuje, jak nastavit a používat různé cíle pro výstupní součásti elektronického vykazování (ER), jako například složku nebo soubor. K vytvoření tohoto postupu jsou použita ukázková data společnosti DEMF. Německo je země\oblast s primární adresou právnické osoby, ale pro tuto proceduru můžete použít jakoukoli právnickou osobu. 
+<span data-ttu-id="7a17a-104">Tento postup ukazuje, jak nastavit a používat různé cíle pro výstupní součásti elektronického vykazování (ER), jako například složku nebo soubor.</span><span class="sxs-lookup"><span data-stu-id="7a17a-104">This procedure demonstrates how to set up and use different destinations for Electronic reporting (ER) output components, such as a folder or a file.</span></span> <span data-ttu-id="7a17a-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti DEMF.</span><span class="sxs-lookup"><span data-stu-id="7a17a-105">The demo data company used to create this procedure is DEMF.</span></span> <span data-ttu-id="7a17a-106">Německo je země\oblast s primární adresou právnické osoby, ale pro tuto proceduru můžete použít jakoukoli právnickou osobu.</span><span class="sxs-lookup"><span data-stu-id="7a17a-106">Germany is the country\region of the legal entity’s primary address, however you can use any legal entity for this procedure.</span></span> 
 
-Formát použitý v tomto případě je „platební převod ISO 20022 (DE)“, ale můžete vybrat jakýkoli formát, který již byl importován. Všimněte si, že tato procedura je příkladem nastavení jednoho souboru a cíle. Další informace o správě cílů pro elektronické sestavy naleznete v nápovědě k aplikaci Dynamics 365 for Finance and Operations.
+<span data-ttu-id="7a17a-107">Formát použitý v tomto případě je „platební převod ISO 20022 (DE)“, ale můžete vybrat jakýkoli formát, který již byl importován.</span><span class="sxs-lookup"><span data-stu-id="7a17a-107">The format used in this example is ISO20022 Credit transfer, but you can use any format that you have already imported.</span></span> <span data-ttu-id="7a17a-108">Všimněte si, že tato procedura je příkladem nastavení jednoho souboru a cíle.</span><span class="sxs-lookup"><span data-stu-id="7a17a-108">Note, this procedure is an example of a single file and a single destination setup.</span></span> <span data-ttu-id="7a17a-109">Další informace o správě cílů pro elektronické sestavy naleznete v nápovědě k aplikaci Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="7a17a-109">More information about Electronic reporting destination management can be found in the Dynamics 365 for Finance and Operations Help.</span></span>
 
-1. Přejděte do nabídky Správa organizace > Elektronická sestava > Místo určení elektronického výkaznictví.
-2. Klepnutím na tlačítko Nový vytvoříte novou sadu míst určení pro daný formát.
-3. V poli Odkaz vyberte formát, pro který chcete konfigurovat místa určení.
-    * Pokud nemáte hodnotu, kterou by bylo možné vybrat, znamená to, že nebyly importovány žádné konfigurace pro Formát elektronického výkaznictví. Před nastavením cíle je nutné importovat formát konfigurace.  
-4. Kliknutím na Nový vytvořte nový cíl souboru.
-    * Všimněte si, že můžete vytvořit jeden cíl souboru pro každou komponentu výstupu ve stejném formátu, jako je složka nebo soubor. Bude možné povolit nebo zakázat cíle samostatně skrze nastavení.  
-5. V poli Název zadejte popisný název komponenty výstupu.
-    * Doporučujeme používat smysluplné názvy, jako je "Soubor platby" nebo "Kontrolní sestava". Tyto názvy pak budou prezentovány uživatelům v rámci konfigurace spolu s nastavením cíle.  
-6. V nabídce Název souboru vyberte soubor nebo složku specifickou pro daný formát.
-7. Klepněte na Nastavení.
-8. Vyberte možnost Ano v poli Povoleno.
-    * Políčko Povoleno na každé kartě umožňuje povolit nebo zakázat jednotlivé místa určení samostatně. V tomto příkladu povolíte odesílání výstupního souboru příjemci pošty při vygenerování souboru.  
-9. Klepněte na Upravit pro nastavení příjemců e-mailu.
-10. Klepněte na možnost Přidat.
-11. Klikněte na Správa tisku – e-mail.
-12. Vyberte volbu v poli Typ zdroje e-mailu.
-    * Můžete vybrat jiné typy zdrojů e-mailu, jako je například typ zákazníka nebo dodavatele. To definuje typ argumentu, který bude vrácen vzorcem účtu zdroje e-mailu. Vzorec účtu zdroje e-mailu je popsán v následujícím kroku a značí místo, skrze které provážete zdroj e-mailu. Pokud váš vzorec vrátí účet dodavatele, vyberte Dodavatel. Pokud používáte příklad konfigurace „platební převod ISO 20022“, vyberte Dodavatel.  
-13. Klikněte na tlačítko Vazba pro zdroj e-mailu.
-14. V části Vzorec zadejte odkaz specifický pro dokument pro typ strany, který jste vybrali předtím.
-    * Namísto zadávání můžete najít uzel zdroje dat, který reprezentuje účet strany, a kliknutím na tlačítko Přidat zdroj dat aktualizovat vzorec. Příklad: Pokud používáte konfiguraci platební převod ISO 20022, uzel představující účet dodavatele má tvar $PaymentsForCoveringLetter'.Creditor.Identification.SourceID. V opačném případě uložte řetězec zadáním libovolné hodnoty řetězce, jako například DE-001.  
-15. Klikněte na položku Uložit.
-16. Zavřete stránku.
-17. Klepněte na tlačítko Upravit, chcete-li konfigurovat podrobnosti o straně.
-18. Vyberte možnost Ano v poli Primární kontakt.
-    * Můžete použít různé možnosti k označení, jaký typ kontaktu by měla strana používat jako e-mailovou adresu pro tento cíl. V tomto příkladu používáme primární kontakt.  
-19. Klikněte na tlačítko OK.
-20. Klikněte na tlačítko OK.
-21. Zadejte hodnotu do pole Předmět.
-22. Klikněte na tlačítko OK.
+1. <span data-ttu-id="7a17a-110">Přejděte do nabídky Správa organizace > Elektronická sestava > Místo určení elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="7a17a-110">Go to Organization administration > Electronic reporting > Electronic reporting destination.</span></span>
+2. <span data-ttu-id="7a17a-111">Klepnutím na tlačítko Nový vytvoříte novou sadu míst určení pro daný formát.</span><span class="sxs-lookup"><span data-stu-id="7a17a-111">Click New to create a new set of destinations for a format.</span></span>
+3. <span data-ttu-id="7a17a-112">V poli Odkaz vyberte formát, pro který chcete konfigurovat místa určení.</span><span class="sxs-lookup"><span data-stu-id="7a17a-112">In the Reference field, select a format for which you want to configure destinations.</span></span>
+    * <span data-ttu-id="7a17a-113">Pokud nemáte hodnotu, kterou by bylo možné vybrat, znamená to, že nebyly importovány žádné konfigurace pro Formát elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="7a17a-113">If you don't have a value to select, it means that you have not imported any Electronic reporting format configurations.</span></span> <span data-ttu-id="7a17a-114">Před nastavením cíle je nutné importovat formát konfigurace.</span><span class="sxs-lookup"><span data-stu-id="7a17a-114">You must import a format configuration before setting up destinations.</span></span>  
+4. <span data-ttu-id="7a17a-115">Kliknutím na Nový vytvořte nový cíl souboru.</span><span class="sxs-lookup"><span data-stu-id="7a17a-115">Click New to create a new file destination.</span></span>
+    * <span data-ttu-id="7a17a-116">Všimněte si, že můžete vytvořit jeden cíl souboru pro každou komponentu výstupu ve stejném formátu, jako je složka nebo soubor.</span><span class="sxs-lookup"><span data-stu-id="7a17a-116">Note, you can create one file destination for each output component of the same format, such as a folder or a file.</span></span> <span data-ttu-id="7a17a-117">Bude možné povolit nebo zakázat cíle samostatně skrze nastavení.</span><span class="sxs-lookup"><span data-stu-id="7a17a-117">You will be able to enable and disable destinations separately in the settings.</span></span>  
+5. <span data-ttu-id="7a17a-118">V poli Název zadejte popisný název komponenty výstupu.</span><span class="sxs-lookup"><span data-stu-id="7a17a-118">In the Name field, enter the user-friendly name of output component.</span></span>
+    * <span data-ttu-id="7a17a-119">Doporučujeme používat smysluplné názvy, jako je "Soubor platby" nebo "Kontrolní sestava".</span><span class="sxs-lookup"><span data-stu-id="7a17a-119">We recommend that you use meaningful names, such as "Payment file" or "Control report".</span></span> <span data-ttu-id="7a17a-120">Tyto názvy pak budou prezentovány uživatelům v rámci konfigurace spolu s nastavením cíle.</span><span class="sxs-lookup"><span data-stu-id="7a17a-120">These names will be presented to users at configuration runtime along with the destination settings.</span></span>  
+6. <span data-ttu-id="7a17a-121">V nabídce Název souboru vyberte soubor nebo složku specifickou pro daný formát.</span><span class="sxs-lookup"><span data-stu-id="7a17a-121">In the File name, select a file or folder that is specific to the format.</span></span>
+7. <span data-ttu-id="7a17a-122">Klepněte na Nastavení.</span><span class="sxs-lookup"><span data-stu-id="7a17a-122">Click Settings.</span></span>
+8. <span data-ttu-id="7a17a-123">Vyberte možnost Ano v poli Povoleno.</span><span class="sxs-lookup"><span data-stu-id="7a17a-123">Select Yes in the Enabled field.</span></span>
+    * <span data-ttu-id="7a17a-124">Políčko Povoleno na každé kartě umožňuje povolit nebo zakázat jednotlivé místa určení samostatně.</span><span class="sxs-lookup"><span data-stu-id="7a17a-124">The Enabled check box on each tab enables and disables each destination separately.</span></span> <span data-ttu-id="7a17a-125">V tomto příkladu povolíte odesílání výstupního souboru příjemci pošty při vygenerování souboru.</span><span class="sxs-lookup"><span data-stu-id="7a17a-125">In this example, you'll enable sending an output file to a mail recipient when the file is generated.</span></span>  
+9. <span data-ttu-id="7a17a-126">Klepněte na Upravit pro nastavení příjemců e-mailu.</span><span class="sxs-lookup"><span data-stu-id="7a17a-126">Click Edit, to set up email recipients.</span></span>
+10. <span data-ttu-id="7a17a-127">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="7a17a-127">Click Add.</span></span>
+11. <span data-ttu-id="7a17a-128">Klikněte na Správa tisku – e-mail.</span><span class="sxs-lookup"><span data-stu-id="7a17a-128">Click Print Management email.</span></span>
+12. <span data-ttu-id="7a17a-129">Vyberte volbu v poli Typ zdroje e-mailu.</span><span class="sxs-lookup"><span data-stu-id="7a17a-129">In the Email source  field, select an option.</span></span>
+    * <span data-ttu-id="7a17a-130">Můžete vybrat jiné typy zdrojů e-mailu, jako je například typ zákazníka nebo dodavatele.</span><span class="sxs-lookup"><span data-stu-id="7a17a-130">You can select different email source types, such as a customer or a vendor type.</span></span> <span data-ttu-id="7a17a-131">To definuje typ argumentu, který bude vrácen vzorcem účtu zdroje e-mailu.</span><span class="sxs-lookup"><span data-stu-id="7a17a-131">This defines the type of argument that will be returned by the Email source account formula.</span></span> <span data-ttu-id="7a17a-132">Vzorec účtu zdroje e-mailu je popsán v následujícím kroku a značí místo, skrze které provážete zdroj e-mailu.</span><span class="sxs-lookup"><span data-stu-id="7a17a-132">The Email source account formula, described in a following step, is the place where you bind an email source.</span></span> <span data-ttu-id="7a17a-133">Pokud váš vzorec vrátí účet dodavatele, vyberte Dodavatel.</span><span class="sxs-lookup"><span data-stu-id="7a17a-133">Select Vendor if your formula will return a vendor account.</span></span> <span data-ttu-id="7a17a-134">Pokud používáte příklad konfigurace „platební převod ISO 20022“, vyberte Dodavatel.</span><span class="sxs-lookup"><span data-stu-id="7a17a-134">Use Vendor if you are using the ISO 20022 Credit Transfer configuration example.</span></span>  
+13. <span data-ttu-id="7a17a-135">Klikněte na tlačítko Vazba pro zdroj e-mailu.</span><span class="sxs-lookup"><span data-stu-id="7a17a-135">Click Email source bind button.</span></span>
+14. <span data-ttu-id="7a17a-136">V části Vzorec zadejte odkaz specifický pro dokument pro typ strany, který jste vybrali předtím.</span><span class="sxs-lookup"><span data-stu-id="7a17a-136">In the Formula, enter a document-specific reference to a party type that you selected earlier.</span></span>
+    * <span data-ttu-id="7a17a-137">Namísto zadávání můžete najít uzel zdroje dat, který reprezentuje účet strany, a kliknutím na tlačítko Přidat zdroj dat aktualizovat vzorec.</span><span class="sxs-lookup"><span data-stu-id="7a17a-137">Instead of typing, you can find a data source node that represents the party account, and click the Add data source button to update the formula.</span></span> <span data-ttu-id="7a17a-138">Příklad: Pokud používáte konfiguraci platební převod ISO 20022, uzel představující účet dodavatele má tvar $PaymentsForCoveringLetter'.Creditor.Identification.SourceID.</span><span class="sxs-lookup"><span data-stu-id="7a17a-138">For example, if you use the ISO 20022 Credit Transfer configuration, the node representing a vendor account is '$PaymentsForCoveringLetter'.Creditor.Identification.SourceID.</span></span> <span data-ttu-id="7a17a-139">V opačném případě uložte řetězec zadáním libovolné hodnoty řetězce, jako například DE-001.</span><span class="sxs-lookup"><span data-stu-id="7a17a-139">Otherwise, enter any string value, such as "DE-001", to save a formula.</span></span>  
+15. <span data-ttu-id="7a17a-140">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="7a17a-140">Click Save.</span></span>
+16. <span data-ttu-id="7a17a-141">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="7a17a-141">Close the page.</span></span>
+17. <span data-ttu-id="7a17a-142">Klepněte na tlačítko Upravit, chcete-li konfigurovat podrobnosti o straně.</span><span class="sxs-lookup"><span data-stu-id="7a17a-142">Click Edit to configure contact details for the party.</span></span>
+18. <span data-ttu-id="7a17a-143">Vyberte možnost Ano v poli Primární kontakt.</span><span class="sxs-lookup"><span data-stu-id="7a17a-143">Select Yes in the Primary contact field.</span></span>
+    * <span data-ttu-id="7a17a-144">Můžete použít různé možnosti k označení, jaký typ kontaktu by měla strana používat jako e-mailovou adresu pro tento cíl.</span><span class="sxs-lookup"><span data-stu-id="7a17a-144">You may use different options to indicate what contact type of the party should be used as an email address for this destination.</span></span> <span data-ttu-id="7a17a-145">V tomto příkladu používáme primární kontakt.</span><span class="sxs-lookup"><span data-stu-id="7a17a-145">We use primary contact in this example.</span></span>  
+19. <span data-ttu-id="7a17a-146">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="7a17a-146">Click OK.</span></span>
+20. <span data-ttu-id="7a17a-147">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="7a17a-147">Click OK.</span></span>
+21. <span data-ttu-id="7a17a-148">Zadejte hodnotu do pole Předmět.</span><span class="sxs-lookup"><span data-stu-id="7a17a-148">In the Subject field, type a value.</span></span>
+22. <span data-ttu-id="7a17a-149">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="7a17a-149">Click OK.</span></span>
 
 

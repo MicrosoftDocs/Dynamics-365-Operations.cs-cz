@@ -16,33 +16,33 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 17d0653890236ba5517b854088c04ea7db2593d7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: bdb3a3857a7293828a7766b6988c123a43e0673c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-configuration-providand-mark-it-as-active-for-electronic-reporting-er"></a>Vytvoření poskytovatele konfigurace a jeho označení jako aktivního pro elektronické výkaznictví (ER)
+# <a name="create-a-configuration-providand-mark-it-as-active-for-electronic-reporting-er"></a><span data-ttu-id="16bc5-103">Vytvoření poskytovatele konfigurace a jeho označení jako aktivního pro elektronické výkaznictví (ER)</span><span class="sxs-lookup"><span data-stu-id="16bc5-103">Create a configuration providand mark it as active for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Následující procedura vysvětluje, jak uživatel přiřazený k roli Správce systému nebo Návrhář elektronického výkaznictví může vytvořit poskytovatele konfigurace pro elektronické výkaznictví. Každá konfigurace ER bude odkazovat na zprostředkovatele jako na autora konfigurace. V tomto příkladu vytvoříte konfiguraci poskytovatele pro vzorovou společnost Litware, Inc. Tyto kroky lze provést v kterékoli společnosti, protože konfigurace poskytovatele ER se sdílí mezi všemi společnostmi.
+<span data-ttu-id="16bc5-104">Následující procedura vysvětluje, jak uživatel přiřazený k roli Správce systému nebo Návrhář elektronického výkaznictví může vytvořit poskytovatele konfigurace pro elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="16bc5-104">The following steps explain how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider for Electronic reporting (ER).</span></span> <span data-ttu-id="16bc5-105">Každá konfigurace ER bude odkazovat na zprostředkovatele jako na autora konfigurace.</span><span class="sxs-lookup"><span data-stu-id="16bc5-105">Each ER configuration will refer to the provider as the author of the configuration.</span></span> <span data-ttu-id="16bc5-106">V tomto příkladu vytvoříte konfiguraci poskytovatele pro vzorovou společnost Litware, Inc. Tyto kroky lze provést v kterékoli společnosti, protože konfigurace poskytovatele ER se sdílí mezi všemi společnostmi.</span><span class="sxs-lookup"><span data-stu-id="16bc5-106">In this example, you will create a configuration provider for sample company, Litware, Inc. These steps can be performed in any company as ER configuration providers are shared among all companies.</span></span>
 
 
-## <a name="create-a-provider"></a>Vytvoření poskytovatele
-1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
-2. Klikněte na Poskytovatelé konfigurace.
-3. Klikněte na položku Nová.
-    * Záznam poskytovatele má jedinečný název a adresu URL. Pokud záznam pro společnosti Litware, Inc. (http://www.litware.com) již existuje, zkontrolujte obsah této stránky a přeskočte tento postup.  
-4. Zadejte Litware, Inc. do pole Název.
-    * Litware, Inc.  
-5. V poli internetové adresy zadejte "http://www.litware.com".
-    * http://www.litware.com  
-6. Klikněte na položku Uložit.
-7. Zavřete stránku.
+## <a name="create-a-provider"></a><span data-ttu-id="16bc5-107">Vytvoření poskytovatele</span><span class="sxs-lookup"><span data-stu-id="16bc5-107">Create a provider</span></span>
+1. <span data-ttu-id="16bc5-108">Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="16bc5-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="16bc5-109">Klikněte na Poskytovatelé konfigurace.</span><span class="sxs-lookup"><span data-stu-id="16bc5-109">Click Configuration providers.</span></span>
+3. <span data-ttu-id="16bc5-110">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="16bc5-110">Click New.</span></span>
+    * <span data-ttu-id="16bc5-111">Záznam poskytovatele má jedinečný název a adresu URL.</span><span class="sxs-lookup"><span data-stu-id="16bc5-111">A provider record has a unique name and URL.</span></span> <span data-ttu-id="16bc5-112">Pokud záznam pro společnosti Litware, Inc. (http://www.litware.com) již existuje, zkontrolujte obsah této stránky a přeskočte tento postup.</span><span class="sxs-lookup"><span data-stu-id="16bc5-112">Review the content of this page and skip this procedure if a record for Litware, Inc. (http://www.litware.com) already exists.</span></span>  
+4. <span data-ttu-id="16bc5-113">Zadejte Litware, Inc. do pole Název.</span><span class="sxs-lookup"><span data-stu-id="16bc5-113">In the Name field, type 'Litware, Inc.'.</span></span>
+    * <span data-ttu-id="16bc5-114">Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="16bc5-114">Litware, Inc.</span></span>  
+5. <span data-ttu-id="16bc5-115">V poli internetové adresy zadejte "http://www.litware.com".</span><span class="sxs-lookup"><span data-stu-id="16bc5-115">In the Internet address field, type 'http://www.litware.com'.</span></span>
+    * <span data-ttu-id="16bc5-116">http://www.litware.com</span><span class="sxs-lookup"><span data-stu-id="16bc5-116">http://www.litware.com</span></span>  
+6. <span data-ttu-id="16bc5-117">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="16bc5-117">Click Save.</span></span>
+7. <span data-ttu-id="16bc5-118">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="16bc5-118">Close the page.</span></span>
 
-## <a name="select-as-an-active-provider"></a>Výběr ve formě aktivního poskytovatele
-1. Vyberte poskytovatele Litware, Inc.
-2. Klikněte na možnost Nastavit jako aktivní.
+## <a name="select-as-an-active-provider"></a><span data-ttu-id="16bc5-119">Výběr ve formě aktivního poskytovatele</span><span class="sxs-lookup"><span data-stu-id="16bc5-119">Select as an active provider</span></span>
+1. <span data-ttu-id="16bc5-120">Vyberte poskytovatele Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="16bc5-120">Select the Litware, Inc. provider.</span></span>
+2. <span data-ttu-id="16bc5-121">Klikněte na možnost Nastavit jako aktivní.</span><span class="sxs-lookup"><span data-stu-id="16bc5-121">Click Set active.</span></span>
 
 

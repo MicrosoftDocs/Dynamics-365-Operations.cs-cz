@@ -17,60 +17,60 @@ ms.assetid: dd2663d8-bcc0-47b1-b36d-57433143487c
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1045ecbf7080f12bc60336609180173544e4e0eb
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 8df830b54d578ed9be4f34c8f52986aca16dc5dc
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="cost-entries"></a>Položky nákladů
+# <a name="cost-entries"></a><span data-ttu-id="b2bcd-104">Položky nákladů</span><span class="sxs-lookup"><span data-stu-id="b2bcd-104">Cost entries</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek obsahuje informace o položkách nákladů a o tom, kdy se vytváří. Položka nákladů je záznam, který registruje množství a náklady na danou událost.
+<span data-ttu-id="b2bcd-105">Tento článek obsahuje informace o položkách nákladů a o tom, kdy se vytváří.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-105">This article provides information about cost entries and when they are created.</span></span> <span data-ttu-id="b2bcd-106">Položka nákladů je záznam, který registruje množství a náklady na danou událost.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-106">A cost entry is a record that registers the quantity and cost of a given event.</span></span>
 
-Položky nákladů jsou seskupení skladových transakcí, které jsou zaznamenány v aktivních dimenzích finančních zásob.
+<span data-ttu-id="b2bcd-107">Položky nákladů jsou seskupení skladových transakcí, které jsou zaznamenány v aktivních dimenzích finančních zásob.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-107">Cost entries are aggregations of inventory transactions that are recorded on active financial inventory dimensions.</span></span>
 
-## <a name="examples"></a>Příklad
-### <a name="example-1-no-cost-entries-are-created"></a>Příklad 1: Nejsou vytvořeny žádné položky nákladů
+## <a name="examples"></a><span data-ttu-id="b2bcd-108">Příklad</span><span class="sxs-lookup"><span data-stu-id="b2bcd-108">Examples</span></span>
+### <a name="example-1-no-cost-entries-are-created"></a><span data-ttu-id="b2bcd-109">Příklad 1: Nejsou vytvořeny žádné položky nákladů</span><span class="sxs-lookup"><span data-stu-id="b2bcd-109">Example 1: No cost entries are created</span></span>
 
-Je registrována událost deníku převodů. Událost převede jeden kus zboží A z místa A do místa B. Dimenze zásob skladového místa není považována za součást objektu nákladů. Událost tedy vytvoří dvě skladové transakce a žádné položky nákladů.
+<span data-ttu-id="b2bcd-110">Je registrována událost deníku převodů.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-110">A transfer journal event is registered.</span></span> <span data-ttu-id="b2bcd-111">Událost převede jeden kus zboží A z místa A do místa B. Dimenze zásob skladového místa není považována za součást objektu nákladů.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-111">The event transfers one piece of item A from location A to location B. The Location inventory dimension isn't considered part of the cost object.</span></span> <span data-ttu-id="b2bcd-112">Událost tedy vytvoří dvě skladové transakce a žádné položky nákladů.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-112">Therefore, the event creates two inventory transactions and no cost entries.</span></span>
 
-### <a name="example-2-cost-entries-are-created"></a>Příklad 2: Jsou vytvořeny položky nákladů
+### <a name="example-2-cost-entries-are-created"></a><span data-ttu-id="b2bcd-113">Příklad 2: Jsou vytvořeny položky nákladů</span><span class="sxs-lookup"><span data-stu-id="b2bcd-113">Example 2: Cost entries are created</span></span>
 
-Je registrována událost deníku převodů. Událost převede jeden kus zboží A z pracoviště 1 na pracoviště 2. Dimenze zásob pracoviště je považována za součást objektu nákladů. Událost tedy vytvoří dvě skladové transakce a dvě položky nákladů.
+<span data-ttu-id="b2bcd-114">Je registrována událost deníku převodů.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-114">A transfer journal event is registered.</span></span> <span data-ttu-id="b2bcd-115">Událost převede jeden kus zboží A z pracoviště 1 na pracoviště 2.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-115">The event transfers one piece of item A from site 1 to site 2.</span></span> <span data-ttu-id="b2bcd-116">Dimenze zásob pracoviště je považována za součást objektu nákladů.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-116">The Site inventory dimension is considered part of the cost object.</span></span> <span data-ttu-id="b2bcd-117">Událost tedy vytvoří dvě skladové transakce a dvě položky nákladů.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-117">Therefore, the event creates two inventory transactions and two cost entries.</span></span>
 
-### <a name="example-3-one-cost-entry-is-created"></a>Příklad 3: Je vytvořena jedna položka nákladů
+### <a name="example-3-one-cost-entry-is-created"></a><span data-ttu-id="b2bcd-118">Příklad 3: Je vytvořena jedna položka nákladů</span><span class="sxs-lookup"><span data-stu-id="b2bcd-118">Example 3: One cost entry is created</span></span>
 
-Událost příjemky produktu je registrována pro nákupní objednávku. Událost registruje 100 kusů položky A za pořizovací cena 10,00 amerických dolarů (USD). Vzhledem k tomu, že položka A používá pro sledování účel řízení zásob sériové číslo, bude pro každou přijatou položku vytvořeno jedinečné sériové číslo. Událost tedy vytvoří 100 skladových transakcí a jednu položku nákladů.
+<span data-ttu-id="b2bcd-119">Událost příjemky produktu je registrována pro nákupní objednávku.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-119">A product receipt event is registered for a purchase order.</span></span> <span data-ttu-id="b2bcd-120">Událost registruje 100 kusů položky A za pořizovací cena 10,00 amerických dolarů (USD).</span><span class="sxs-lookup"><span data-stu-id="b2bcd-120">The event registers 100 pieces of item A at a unit cost of 10.00 U.S. dollars (USD).</span></span> <span data-ttu-id="b2bcd-121">Vzhledem k tomu, že položka A používá pro sledování účel řízení zásob sériové číslo, bude pro každou přijatou položku vytvořeno jedinečné sériové číslo.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-121">Because item A uses a serial number to track the purpose of inventory management, a unique serial number is created for each item that is received.</span></span> <span data-ttu-id="b2bcd-122">Událost tedy vytvoří 100 skladových transakcí a jednu položku nákladů.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-122">Therefore, the event creates 100 inventory transactions and one cost entry.</span></span>
 
-## <a name="cost-entries-page"></a>Stránka Položky nákladů
-Nová stránka **Položky nákladů** umožňuje zobrazit a kontrolovat registrace množství a nákladů. Tato stránka doplňuje stránky **Skladová transakce** a **Vyrovnání zásob**. Záznamy jsou registrovány v chronologickém pořadí pro událost. Lze tedy rychle vyhledat a zkontrolovat akumulované náklady na určitou událost nebo všechny události, které se vztahují k dokumentu. Zde je příklad:
+## <a name="cost-entries-page"></a><span data-ttu-id="b2bcd-123">Stránka Položky nákladů</span><span class="sxs-lookup"><span data-stu-id="b2bcd-123">Cost entries page</span></span>
+<span data-ttu-id="b2bcd-124">Nová stránka **Položky nákladů** umožňuje zobrazit a kontrolovat registrace množství a nákladů.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-124">The new **Cost entries** page lets you view and control registrations of quantities and costs.</span></span> <span data-ttu-id="b2bcd-125">Tato stránka doplňuje stránky **Skladová transakce** a **Vyrovnání zásob**.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-125">This page complements the **Inventory transaction** and **Inventory settlement** pages.</span></span> <span data-ttu-id="b2bcd-126">Záznamy jsou registrovány v chronologickém pořadí pro událost.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-126">Records are registered in chronological order for an event.</span></span> <span data-ttu-id="b2bcd-127">Lze tedy rychle vyhledat a zkontrolovat akumulované náklady na určitou událost nebo všechny události, které se vztahují k dokumentu.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-127">Therefore, you can quickly find and control the accumulated costs of a specific event or all events that are related to a document.</span></span> <span data-ttu-id="b2bcd-128">Zde je příklad:</span><span class="sxs-lookup"><span data-stu-id="b2bcd-128">Here is an example:</span></span>
 
--   Události příjemky produktu je registrována pro zboží A. Sto kusů je přijato za pořizovací cenu 10,00 USD.
--   Několik dní po registraci události faktury se náklady zvýší na 11,00 USD. Celková částka je tedy 1 100 USD. Je vytvořen druhý doklad na rozdíl 100 USD.
--   O několik dní později jsou v nákupní objednávce registrovány vedlejší náklady ve výši 15,00 USD k pokrytí nákladů na přepravu.
+-   <span data-ttu-id="b2bcd-129">Události příjemky produktu je registrována pro zboží A. Sto kusů je přijato za pořizovací cenu 10,00 USD.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-129">A product receipt event is registered for item A. One hundred pieces are received at a unit cost of 10.00 USD.</span></span>
+-   <span data-ttu-id="b2bcd-130">Několik dní po registraci události faktury se náklady zvýší na 11,00 USD.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-130">A few days after the invoice event is registered, the cost increases to 11.00 USD.</span></span> <span data-ttu-id="b2bcd-131">Celková částka je tedy 1 100 USD.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-131">Therefore, the total amount is 1,100 USD.</span></span> <span data-ttu-id="b2bcd-132">Je vytvořen druhý doklad na rozdíl 100 USD.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-132">A second voucher is created to account for the difference of 100 USD.</span></span>
+-   <span data-ttu-id="b2bcd-133">O několik dní později jsou v nákupní objednávce registrovány vedlejší náklady ve výši 15,00 USD k pokrytí nákladů na přepravu.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-133">A few days later, a miscellaneous charge of 15.00 USD to cover the transportation cost is registered on the purchase order.</span></span>
 
-| Doklad | Datum       | Odkaz      | Počet | ID šarže  | Množství | Částka  |
+| <span data-ttu-id="b2bcd-134">Doklad</span><span class="sxs-lookup"><span data-stu-id="b2bcd-134">Voucher</span></span> | <span data-ttu-id="b2bcd-135">Datum</span><span class="sxs-lookup"><span data-stu-id="b2bcd-135">Date</span></span>       | <span data-ttu-id="b2bcd-136">Odkaz</span><span class="sxs-lookup"><span data-stu-id="b2bcd-136">Reference</span></span>      | <span data-ttu-id="b2bcd-137">Počet</span><span class="sxs-lookup"><span data-stu-id="b2bcd-137">Number</span></span> | <span data-ttu-id="b2bcd-138">ID šarže</span><span class="sxs-lookup"><span data-stu-id="b2bcd-138">Lot ID</span></span>  | <span data-ttu-id="b2bcd-139">Množství</span><span class="sxs-lookup"><span data-stu-id="b2bcd-139">Quantity</span></span> | <span data-ttu-id="b2bcd-140">Částka</span><span class="sxs-lookup"><span data-stu-id="b2bcd-140">Amount</span></span>  |
 |---------|------------|----------------|--------|---------|---------------|----|
-| 00001   | 01. 01. 2015 | Nákupní objednávka | 100001 | 0000101 | 100,00   | 1000,00 |
-| 00002   | 20. 01. 2015 | Nákupní objednávka | 100001 | 0000101 |          | 100,00  |
-| 00003   | 31. 01. 2015 | Úprava     | 100001 | 0000101 |          | 15:00   |
+| <span data-ttu-id="b2bcd-141">00001</span><span class="sxs-lookup"><span data-stu-id="b2bcd-141">00001</span></span>   | <span data-ttu-id="b2bcd-142">01. 01. 2015</span><span class="sxs-lookup"><span data-stu-id="b2bcd-142">01-01-2015</span></span> | <span data-ttu-id="b2bcd-143">Nákupní objednávka</span><span class="sxs-lookup"><span data-stu-id="b2bcd-143">Purchase order</span></span> | <span data-ttu-id="b2bcd-144">100001</span><span class="sxs-lookup"><span data-stu-id="b2bcd-144">100001</span></span> | <span data-ttu-id="b2bcd-145">0000101</span><span class="sxs-lookup"><span data-stu-id="b2bcd-145">0000101</span></span> | <span data-ttu-id="b2bcd-146">100,00</span><span class="sxs-lookup"><span data-stu-id="b2bcd-146">100.00</span></span>   | <span data-ttu-id="b2bcd-147">1000,00</span><span class="sxs-lookup"><span data-stu-id="b2bcd-147">1000.00</span></span> |
+| <span data-ttu-id="b2bcd-148">00002</span><span class="sxs-lookup"><span data-stu-id="b2bcd-148">00002</span></span>   | <span data-ttu-id="b2bcd-149">20. 01. 2015</span><span class="sxs-lookup"><span data-stu-id="b2bcd-149">20-01-2015</span></span> | <span data-ttu-id="b2bcd-150">Nákupní objednávka</span><span class="sxs-lookup"><span data-stu-id="b2bcd-150">Purchase order</span></span> | <span data-ttu-id="b2bcd-151">100001</span><span class="sxs-lookup"><span data-stu-id="b2bcd-151">100001</span></span> | <span data-ttu-id="b2bcd-152">0000101</span><span class="sxs-lookup"><span data-stu-id="b2bcd-152">0000101</span></span> |          | <span data-ttu-id="b2bcd-153">100,00</span><span class="sxs-lookup"><span data-stu-id="b2bcd-153">100.00</span></span>  |
+| <span data-ttu-id="b2bcd-154">00003</span><span class="sxs-lookup"><span data-stu-id="b2bcd-154">00003</span></span>   | <span data-ttu-id="b2bcd-155">31. 01. 2015</span><span class="sxs-lookup"><span data-stu-id="b2bcd-155">31-01-2015</span></span> | <span data-ttu-id="b2bcd-156">Úprava</span><span class="sxs-lookup"><span data-stu-id="b2bcd-156">Adjustment</span></span>     | <span data-ttu-id="b2bcd-157">100001</span><span class="sxs-lookup"><span data-stu-id="b2bcd-157">100001</span></span> | <span data-ttu-id="b2bcd-158">0000101</span><span class="sxs-lookup"><span data-stu-id="b2bcd-158">0000101</span></span> |          | <span data-ttu-id="b2bcd-159">15:00</span><span class="sxs-lookup"><span data-stu-id="b2bcd-159">15.00</span></span>   |
 
-Stránka **Položky nákladů** umožňuje filtrovat podle ID doklad a data dokladu. 
+<span data-ttu-id="b2bcd-160">Stránka **Položky nákladů** umožňuje filtrovat podle ID doklad a data dokladu.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-160">The **Cost entries** page enables filtering by document ID and document date.</span></span> 
 
 > [!NOTE]
-> Položky nákladů jsou k dispozici pouze pro [objekty nákladů](cost-object.md) nebo uvolněné produkty.
+> <span data-ttu-id="b2bcd-161">Položky nákladů jsou k dispozici pouze pro [objekty nákladů](cost-object.md) nebo uvolněné produkty.</span><span class="sxs-lookup"><span data-stu-id="b2bcd-161">Cost entries are available only for [cost objects](cost-object.md) or released products.</span></span>
 
-<a name="see-also"></a>Viz také
+<a name="see-also"></a><span data-ttu-id="b2bcd-162">Viz také</span><span class="sxs-lookup"><span data-stu-id="b2bcd-162">See also</span></span>
 --------
 
-[Nákladové objekty](cost-object.md)
+[<span data-ttu-id="b2bcd-163">Nákladové objekty</span><span class="sxs-lookup"><span data-stu-id="b2bcd-163">Cost objects</span></span>](cost-object.md)
 
 
 

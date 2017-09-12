@@ -16,56 +16,56 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7c38debf005cf14176a5184c489242e914c1ff4c
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: ebad4ec9ec6242978a26007a64416ae1b2af5c28
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-assign-advanced-rule-structures"></a>Vytvoření a přiřazení struktur rozšířeného pravidla
+# <a name="create-and-assign-advanced-rule-structures"></a><span data-ttu-id="3a1fa-103">Vytvoření a přiřazení struktur rozšířeného pravidla</span><span class="sxs-lookup"><span data-stu-id="3a1fa-103">Create and assign advanced rule structures</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento průvodce úkoly vás provede vytvářením a přiřazením struktury rozšířeného pravidla do účetní struktury. Tento průvodce používá ukázkovou společnost USMF.
+<span data-ttu-id="3a1fa-104">Tento průvodce úkoly vás provede vytvářením a přiřazením struktury rozšířeného pravidla do účetní struktury.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-104">This task guide steps through creating and assigning an advanced rule structure to an account structure.</span></span> <span data-ttu-id="3a1fa-105">Tento průvodce používá ukázkovou společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-105">This guide uses the USMF demo company.</span></span>
 
 
-## <a name="create-an-advanced-rule-structure"></a>Vytvořit strukturu rozšířeného pravidla
-1. Přejděte do části Hlavní kniha > Účtová osnova > Struktury > Rozšířené struktury pravidel.
-2. Kliknutím na možnost Nový otevřete dialogové okno.
-3. V poli Rozšířené struktury pravidel zadejte název k popisu struktury pravidla.
-4. V poli Popis zadejte hodnotu k popisu struktury.
-5. Klepněte na tlačítko OK.
-6. Klepněte na Přidat segment.
-7. V seznamu segmentů vyberte finanční dimenzi.
-    * Například Obchod.  
-8. Klepněte na Přidat segment.
-9. Pro zobrazení klepněte v seznamu na odkaz struktura rozšířeného pravidla.
-10. Klepněte na tlačítko Aktivovat.
-11. Klepněte na tlačítko Aktivovat.
+## <a name="create-an-advanced-rule-structure"></a><span data-ttu-id="3a1fa-106">Vytvořit strukturu rozšířeného pravidla</span><span class="sxs-lookup"><span data-stu-id="3a1fa-106">Create an advanced rule structure</span></span>
+1. <span data-ttu-id="3a1fa-107">Přejděte do části Hlavní kniha > Účtová osnova > Struktury > Rozšířené struktury pravidel.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-107">Go to General ledger > Chart of accounts > Structures > Advanced rule structures.</span></span>
+2. <span data-ttu-id="3a1fa-108">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-108">Click New to open the drop dialog.</span></span>
+3. <span data-ttu-id="3a1fa-109">V poli Rozšířené struktury pravidel zadejte název k popisu struktury pravidla.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-109">In the Advanced rule structure field, type a name to descritbe the rule structure.</span></span>
+4. <span data-ttu-id="3a1fa-110">V poli Popis zadejte hodnotu k popisu struktury.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-110">In the Description field, type a value to describe the structure.</span></span>
+5. <span data-ttu-id="3a1fa-111">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-111">Click OK.</span></span>
+6. <span data-ttu-id="3a1fa-112">Klepněte na Přidat segment.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-112">Click Add segment.</span></span>
+7. <span data-ttu-id="3a1fa-113">V seznamu segmentů vyberte finanční dimenzi.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-113">In the list of segments, select a financial dimension.</span></span>
+    * <span data-ttu-id="3a1fa-114">Například Obchod.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-114">For example, Store.</span></span>  
+8. <span data-ttu-id="3a1fa-115">Klepněte na Přidat segment.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-115">Click Add segment.</span></span>
+9. <span data-ttu-id="3a1fa-116">Pro zobrazení klepněte v seznamu na odkaz struktura rozšířeného pravidla.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-116">In the list, click the link of the advanced rule structure to view it.</span></span>
+10. <span data-ttu-id="3a1fa-117">Klepněte na tlačítko Aktivovat.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-117">Click Activate.</span></span>
+11. <span data-ttu-id="3a1fa-118">Klepněte na tlačítko Aktivovat.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-118">Click Activate.</span></span>
 
-## <a name="apply-an-advanced-rule-structure-to-an-account-structure"></a>Použití struktury rozšířeného pravidla na účetní strukturu
-1. Zavřete formulář.
-2. Zavřete stránku.
-3. Přejděte do části Hlavní kniha > Účtová osnova > Struktury > Konfigurovat účetní struktury.
-4. V seznamu vyhledejte a vyberte účetní struktury, na které chcete uplatnit rozšířené pravidlo.
-5. Účetní strukturu otevřete klepnutím na její název.
-6. Klikněte na položku Upravit.
-    * Můžete také klepnout na Rozšířená pravidla a budete vyzváni vložit účetní strukturu do stavu konceptu.  
-7. Klepněte na Rozšířená pravidla.
-8. Kliknutím na možnost Nový otevřete dialogové okno.
-9. Zadejte hodnotu do pole Rozšířené pravidlo.
-10. Zadejte hodnotu do pole Název.
-11. Klepněte na volbu Nový.
-12. Klepněte na Přidat nová kritéria.
-13. V poli Kde vyberte hlavní účet nebo finanční dimenzi.
-14. V poli Operátor vyberte možnost, jako je „mezi“ a „zahrnuje“.
-15. Zadejte hodnotu do pole Hodnota.
-16. Zadejte hodnotu do pole „prostřednictvím“.
-17. Klepnutím na možnost Přidat otevřete dialogové okno.
-18. V seznamu vyhledejte pokročilé pravidlo, které chcete použít, když jsou splněna zadaná kritéria.
-19. Klepněte na možnost Přidat.
-20. Zavřete stránku.
-21. Klepněte na tlačítko Aktivovat.
-22. Klepněte na tlačítko Aktivovat.
+## <a name="apply-an-advanced-rule-structure-to-an-account-structure"></a><span data-ttu-id="3a1fa-119">Použití struktury rozšířeného pravidla na účetní strukturu</span><span class="sxs-lookup"><span data-stu-id="3a1fa-119">Apply an advanced rule structure to an account structure</span></span>
+1. <span data-ttu-id="3a1fa-120">Zavřete formulář.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-120">Close the form.</span></span>
+2. <span data-ttu-id="3a1fa-121">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-121">Close the page.</span></span>
+3. <span data-ttu-id="3a1fa-122">Přejděte do části Hlavní kniha > Účtová osnova > Struktury > Konfigurovat účetní struktury.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-122">Go to General ledger > Chart of accounts > Structures > Configure account structures.</span></span>
+4. <span data-ttu-id="3a1fa-123">V seznamu vyhledejte a vyberte účetní struktury, na které chcete uplatnit rozšířené pravidlo.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-123">In the list, find and select the account structure you want to apply the advanced rule to.</span></span>
+5. <span data-ttu-id="3a1fa-124">Účetní strukturu otevřete klepnutím na její název.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-124">Click the name of the account structure to open it.</span></span>
+6. <span data-ttu-id="3a1fa-125">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-125">Click Edit.</span></span>
+    * <span data-ttu-id="3a1fa-126">Můžete také klepnout na Rozšířená pravidla a budete vyzváni vložit účetní strukturu do stavu konceptu.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-126">You can also click Advanced rules and you will be prompted to put the account structure in Draft mode.</span></span>  
+7. <span data-ttu-id="3a1fa-127">Klepněte na Rozšířená pravidla.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-127">Click Advanced rules.</span></span>
+8. <span data-ttu-id="3a1fa-128">Kliknutím na možnost Nový otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-128">Click New to open the drop dialog.</span></span>
+9. <span data-ttu-id="3a1fa-129">Zadejte hodnotu do pole Rozšířené pravidlo.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-129">In the Advanced rule field, type a value.</span></span>
+10. <span data-ttu-id="3a1fa-130">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-130">In the Name field, type a value.</span></span>
+11. <span data-ttu-id="3a1fa-131">Klepněte na volbu Nový.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-131">Click Create.</span></span>
+12. <span data-ttu-id="3a1fa-132">Klepněte na Přidat nová kritéria.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-132">Click Add new criteria.</span></span>
+13. <span data-ttu-id="3a1fa-133">V poli Kde vyberte hlavní účet nebo finanční dimenzi.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-133">In the Where field, select main account or a financial dimension.</span></span>
+14. <span data-ttu-id="3a1fa-134">V poli Operátor vyberte možnost, jako je „mezi“ a „zahrnuje“.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-134">In the Operator field, select an option, such as is between and includes.</span></span>
+15. <span data-ttu-id="3a1fa-135">Zadejte hodnotu do pole Hodnota.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-135">In the Value field, type a value.</span></span>
+16. <span data-ttu-id="3a1fa-136">Zadejte hodnotu do pole „prostřednictvím“.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-136">In the through field, type a value.</span></span>
+17. <span data-ttu-id="3a1fa-137">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-137">Click Add to open the drop dialog.</span></span>
+18. <span data-ttu-id="3a1fa-138">V seznamu vyhledejte pokročilé pravidlo, které chcete použít, když jsou splněna zadaná kritéria.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-138">In the list, find the advanced rule structure you want to use when the criteria you entered is met.</span></span>
+19. <span data-ttu-id="3a1fa-139">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-139">Click Add.</span></span>
+20. <span data-ttu-id="3a1fa-140">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-140">Close the page.</span></span>
+21. <span data-ttu-id="3a1fa-141">Klepněte na tlačítko Aktivovat.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-141">Click Activate.</span></span>
+22. <span data-ttu-id="3a1fa-142">Klepněte na tlačítko Aktivovat.</span><span class="sxs-lookup"><span data-stu-id="3a1fa-142">Click Activate.</span></span>
 
 

@@ -15,36 +15,36 @@ ms.custom: 265434
 ms.assetid: 3cd9dfce-2687-4303-bc78-349e7cb5ea75
 ms.search.region: global
 ms.author: fdahl
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: daba17aed7e6cc475a16d6100c5c99ee747ca048
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 4e60a6c7d79f59382b3958b849d78aac18550bc3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="purchase-spend-analysis-power-bi-content"></a>Analýza obsahu Power BI výdajů na nákup
+# <a name="purchase-spend-analysis-power-bi-content"></a><span data-ttu-id="0cab7-104">Analýza obsahu Power BI výdajů na nákup</span><span class="sxs-lookup"><span data-stu-id="0cab7-104">Purchase spend analysis Power BI content</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma popisuje, co je součástí obsahu analýzy **nákupu a výdajů** v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které jsou použity k sestavení obsahu.
+<span data-ttu-id="0cab7-105">Toto téma popisuje, co je součástí obsahu analýzy **nákupu a výdajů** v Power BI.</span><span class="sxs-lookup"><span data-stu-id="0cab7-105">This topic describes what is included in the **Purchase spend analysis** Microsoft Power BI content.</span></span> <span data-ttu-id="0cab7-106">Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které jsou použity k sestavení obsahu.</span><span class="sxs-lookup"><span data-stu-id="0cab7-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 
-## <a name="overview"></a>Přehled
+## <a name="overview"></a><span data-ttu-id="0cab7-107">Přehled</span><span class="sxs-lookup"><span data-stu-id="0cab7-107">Overview</span></span>
 
-Obsah Power BI **Analýza nákupních výdajů** byl vytvořen na pomoc nákupním manažerům a vedoucím pracovníkům, kteří odpovídají za rozpočty, prohlížet nákupní výdaje. Manažeři mohou analyzovat nákupní výdaje následujícím způsobem:
+<span data-ttu-id="0cab7-108">Obsah Power BI **Analýza nákupních výdajů** byl vytvořen na pomoc nákupním manažerům a vedoucím pracovníkům, kteří odpovídají za rozpočty, prohlížet nákupní výdaje.</span><span class="sxs-lookup"><span data-stu-id="0cab7-108">The **Purchase spend analysis** Power BI content was designed to help purchasing managers and managers who are responsible for budgets keep an eye on purchase spending.</span></span> <span data-ttu-id="0cab7-109">Manažeři mohou analyzovat nákupní výdaje následujícím způsobem:</span><span class="sxs-lookup"><span data-stu-id="0cab7-109">Managers can analyze purchase spending in the following ways:</span></span>
 
--   Nákup k datu v daném roce (podle skupiny dodavatelů a jednotlivých dodavatelů, kategorie zásobování a jednotlivých produktů a umístění dodavatele)
--   Rok přes rok nákupu změna (podle skupiny a zadávání zakázek kategorií dodavatele)
+-   <span data-ttu-id="0cab7-110">Nákup k datu v daném roce (podle skupiny dodavatelů a jednotlivých dodavatelů, kategorie zásobování a jednotlivých produktů a umístění dodavatele)</span><span class="sxs-lookup"><span data-stu-id="0cab7-110">Year-to-date purchase (by vendor group and individual vendors, procurement category and individual products, and vendor location)</span></span>
+-   <span data-ttu-id="0cab7-111">Rok přes rok nákupu změna (podle skupiny a zadávání zakázek kategorií dodavatele)</span><span class="sxs-lookup"><span data-stu-id="0cab7-111">Year-over-year purchase change (by vendor group and procurement category)</span></span>
 
-Obsah používá nákupní transakční data a poskytuje agregované zobrazení nákupní celopodnikových údajů a rozpis nákupních výdajů podle dodavatelů a produktů. V sestavách jsou zvýrazněny změny nákupních výdajů v průběhu času. Proto lze sestavy používat k upozornění manažerů na pozitivní a negativní trendy výdajů u jednotlivých dodavatelů a výrobků. Grafy dále zobrazují nákupní výdaje pro zásobování různých kategorií a skupin dodavatelů. Proto manažeři pro kategorie a regionální manažeři mohou tyto grafy používat k identifikaci změn v chování při výdajích.
+<span data-ttu-id="0cab7-112">Obsah používá nákupní transakční data a poskytuje agregované zobrazení nákupní celopodnikových údajů a rozpis nákupních výdajů podle dodavatelů a produktů.</span><span class="sxs-lookup"><span data-stu-id="0cab7-112">The content uses purchase transactional data, and provides both an aggregate view of the company-wide purchase figures and a breakdown of purchase spending by vendor and product.</span></span> <span data-ttu-id="0cab7-113">V sestavách jsou zvýrazněny změny nákupních výdajů v průběhu času.</span><span class="sxs-lookup"><span data-stu-id="0cab7-113">Reports highlight changes in purchase spending over time.</span></span> <span data-ttu-id="0cab7-114">Proto lze sestavy používat k upozornění manažerů na pozitivní a negativní trendy výdajů u jednotlivých dodavatelů a výrobků.</span><span class="sxs-lookup"><span data-stu-id="0cab7-114">Therefore, the reports can be used to alert managers about positive and negative spending trends for individual vendors and products.</span></span> <span data-ttu-id="0cab7-115">Grafy dále zobrazují nákupní výdaje pro zásobování různých kategorií a skupin dodavatelů.</span><span class="sxs-lookup"><span data-stu-id="0cab7-115">Additionally, charts show purchase spending for different procurement categories and vendor groups.</span></span> <span data-ttu-id="0cab7-116">Proto manažeři pro kategorie a regionální manažeři mohou tyto grafy používat k identifikaci změn v chování při výdajích.</span><span class="sxs-lookup"><span data-stu-id="0cab7-116">Therefore, category and regional managers can use the charts to help identify changes in spending behavior.</span></span>
 
-## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Pokud používáte aktualizaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition z července 2017, obsah Power BI **Analýza nákupu a výdajů** se zobrazí na stránce **Analýza nákupu a výdajů** (**Nákup a zdroje** > **Dotazy a sestavy** > **Analýza výkonu nákupu** > **Analýza nákupu a investic**). 
+## <a name="accessing-the-power-bi-content"></a><span data-ttu-id="0cab7-117">Přístup k obsahu Power BI</span><span class="sxs-lookup"><span data-stu-id="0cab7-117">Accessing the Power BI content</span></span>
+<span data-ttu-id="0cab7-118">Pokud používáte aktualizaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition z července 2017, obsah Power BI **Analýza nákupu a výdajů** se zobrazí na stránce **Analýza nákupu a výdajů** (**Nákup a zdroje** > **Dotazy a sestavy** > **Analýza výkonu nákupu** > **Analýza nákupu a investic**).</span><span class="sxs-lookup"><span data-stu-id="0cab7-118">If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, the **Purchase spend analysis** Power BI content is shown on the **Purchase and spend analysis** page (**Procurement and sourcing** > **Inquiries and reports** > **Purchase performance analysis** > **Purchase and spend analysis**).</span></span> 
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriky, které jsou součástí obsahu Power BI
-Obsahu Power BI **Analýza nákupu a výdajů** obsahuje sestavu, která obsahuje sadu metrik. Tyto metriky jsou zobrazována jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizací.
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="0cab7-119">Metriky, které jsou součástí obsahu Power BI</span><span class="sxs-lookup"><span data-stu-id="0cab7-119">Metrics that are included in the Power BI content</span></span>
+<span data-ttu-id="0cab7-120">Obsahu Power BI **Analýza nákupu a výdajů** obsahuje sestavu, která obsahuje sadu metrik.</span><span class="sxs-lookup"><span data-stu-id="0cab7-120">The **Purchase spend analysis** Power BI content includes a report that consists of a set of metrics.</span></span> <span data-ttu-id="0cab7-121">Tyto metriky jsou zobrazována jako grafy, dlaždice a tabulky.</span><span class="sxs-lookup"><span data-stu-id="0cab7-121">These metrics are visualized as charts, tiles, and tables.</span></span> <span data-ttu-id="0cab7-122">Následující tabulka poskytuje přehled vizualizací.</span><span class="sxs-lookup"><span data-stu-id="0cab7-122">The following table provides an overview of the visualizations.</span></span>
 
 <table>
 <colgroup>
@@ -54,120 +54,120 @@ Obsahu Power BI **Analýza nákupu a výdajů** obsahuje sestavu, která obsahuj
 </colgroup>
 <thead>
 <tr class="header">
-<th>Stránka sestavy</th>
-<th>Grafy</th>
-<th>Dlaždice</th>
+<th><span data-ttu-id="0cab7-123">Stránka sestavy</span><span class="sxs-lookup"><span data-stu-id="0cab7-123">Report page</span></span></th>
+<th><span data-ttu-id="0cab7-124">Grafy</span><span class="sxs-lookup"><span data-stu-id="0cab7-124">Charts</span></span></th>
+<th><span data-ttu-id="0cab7-125">Dlaždice</span><span class="sxs-lookup"><span data-stu-id="0cab7-125">Tiles</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Nákup podle dodavatele</td>
+<td><span data-ttu-id="0cab7-126">Nákup podle dodavatele</span><span class="sxs-lookup"><span data-stu-id="0cab7-126">Purchase by vendor</span></span></td>
 <td><ul>
-<li>Prvních 10 dodavatelů podle nákupu (skládaný sloupcový graf)</li>
-<li>Celkový nákup podle skupiny dodavatelů / země / name (výsečový graf)</li>
-<li>Nákup podle skupiny dodavatelů / země / název (sloupcový graf)</li>
-<li>Průměrný nákup podle skupiny dodavatelů / země / název (sloupcový graf)</li>
+<li><span data-ttu-id="0cab7-127">Prvních 10 dodavatelů podle nákupu (skládaný sloupcový graf)</span><span class="sxs-lookup"><span data-stu-id="0cab7-127">Top 10 vendors by purchase (stacked bar chart)</span></span></li>
+<li><span data-ttu-id="0cab7-128">Celkový nákup podle skupiny dodavatelů / země / name (výsečový graf)</span><span class="sxs-lookup"><span data-stu-id="0cab7-128">Total purchase by vendor group / country / name (pie chart)</span></span></li>
+<li><span data-ttu-id="0cab7-129">Nákup podle skupiny dodavatelů / země / název (sloupcový graf)</span><span class="sxs-lookup"><span data-stu-id="0cab7-129">Purchase by vendor group / country / name (column chart)</span></span></li>
+<li><span data-ttu-id="0cab7-130">Průměrný nákup podle skupiny dodavatelů / země / název (sloupcový graf)</span><span class="sxs-lookup"><span data-stu-id="0cab7-130">Average purchase by vendor group / country / name (column chart)</span></span></li>
 </ul></td>
 <td><ul>
-<li>Celkový nákup</li>
-<li>Meziroční růst nákupů</li>
-<li>Celkový počet dodavatelů</li>
-<li>Celkový počet aktivních dodavatelů</li>
+<li><span data-ttu-id="0cab7-131">Celkový nákup</span><span class="sxs-lookup"><span data-stu-id="0cab7-131">Total purchase</span></span></li>
+<li><span data-ttu-id="0cab7-132">Meziroční růst nákupů</span><span class="sxs-lookup"><span data-stu-id="0cab7-132">YOY purchase growth</span></span></li>
+<li><span data-ttu-id="0cab7-133">Celkový počet dodavatelů</span><span class="sxs-lookup"><span data-stu-id="0cab7-133">Total # vendors</span></span></li>
+<li><span data-ttu-id="0cab7-134">Celkový počet aktivních dodavatelů</span><span class="sxs-lookup"><span data-stu-id="0cab7-134">Total # of active vendors</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Nákup podle produktu</td>
+<td><span data-ttu-id="0cab7-135">Nákup podle produktu</span><span class="sxs-lookup"><span data-stu-id="0cab7-135">Purchase by product</span></span></td>
 <td><ul>
-<li>Nákup podle kategorie zásobování / název produktu (sloupcový graf)</li>
-<li>Celkový nákup podle kategorie zásobování / název produktu (výsečový graf)</li>
-<li>Prvních 10 produktů podle nákupu (skládaný sloupcový graf)</li>
+<li><span data-ttu-id="0cab7-136">Nákup podle kategorie zásobování / název produktu (sloupcový graf)</span><span class="sxs-lookup"><span data-stu-id="0cab7-136">Purchase by procurement category / product name (column chart)</span></span></li>
+<li><span data-ttu-id="0cab7-137">Celkový nákup podle kategorie zásobování / název produktu (výsečový graf)</span><span class="sxs-lookup"><span data-stu-id="0cab7-137">Total purchase by procurement category / product name (pie chart)</span></span></li>
+<li><span data-ttu-id="0cab7-138">Prvních 10 produktů podle nákupu (skládaný sloupcový graf)</span><span class="sxs-lookup"><span data-stu-id="0cab7-138">Top 10 products by purchase (stacked bar chart)</span></span></li>
 </ul></td>
 <td><ul>
-<li>Celkový počet produktů</li>
-<li>Celkové procento aktivních produktů z celkového počtu produktů</li>
-<li>Počet účtování produktů pro 80 % nákupů</li>
+<li><span data-ttu-id="0cab7-139">Celkový počet produktů</span><span class="sxs-lookup"><span data-stu-id="0cab7-139">Total # of products</span></span></li>
+<li><span data-ttu-id="0cab7-140">Celkové procento aktivních produktů z celkového počtu produktů</span><span class="sxs-lookup"><span data-stu-id="0cab7-140">Total active products percentage of total # of products</span></span></li>
+<li><span data-ttu-id="0cab7-141">Počet účtování produktů pro 80 % nákupů</span><span class="sxs-lookup"><span data-stu-id="0cab7-141">Number of products accounting for 80% purchase</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Nákup podle období*</td>
+<td><span data-ttu-id="0cab7-142">Nákup podle období*</span><span class="sxs-lookup"><span data-stu-id="0cab7-142">Purchase by period*</span></span></td>
 <td><ul>
-<li>Nákup za měsíc / den (sloupcový graf)</li>
-<li>Kumulativní mezirodčí nákupní odchylka (vodopádový graf)</li>
-<li>Meziroční růst celkového nákupu (sloupcový graf)</li>
-<li>Prohlášení o zadávání veřejných zakázek (matice)</li>
+<li><span data-ttu-id="0cab7-143">Nákup za měsíc / den (sloupcový graf)</span><span class="sxs-lookup"><span data-stu-id="0cab7-143">Purchase by month / day (column chart)</span></span></li>
+<li><span data-ttu-id="0cab7-144">Kumulativní mezirodčí nákupní odchylka (vodopádový graf)</span><span class="sxs-lookup"><span data-stu-id="0cab7-144">Cumulative purchase YOY variance (waterfall chart)</span></span></li>
+<li><span data-ttu-id="0cab7-145">Meziroční růst celkového nákupu (sloupcový graf)</span><span class="sxs-lookup"><span data-stu-id="0cab7-145">Total purchase YOY growth (column chart)</span></span></li>
+<li><span data-ttu-id="0cab7-146">Prohlášení o zadávání veřejných zakázek (matice)</span><span class="sxs-lookup"><span data-stu-id="0cab7-146">Procurement statement (matrix)</span></span></li>
 </ul></td>
 <td><ul>
-<li>Meziroční růst nákupů</li>
-<li>Meziroční růst nákupů v %</li>
+<li><span data-ttu-id="0cab7-147">Meziroční růst nákupů</span><span class="sxs-lookup"><span data-stu-id="0cab7-147">YOY purchase growth</span></span></li>
+<li><span data-ttu-id="0cab7-148">Meziroční růst nákupů v %</span><span class="sxs-lookup"><span data-stu-id="0cab7-148">YOY purchase growth %</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Nákup podle místa dodavatele</td>
+<td><span data-ttu-id="0cab7-149">Nákup podle místa dodavatele</span><span class="sxs-lookup"><span data-stu-id="0cab7-149">Purchase by vendor location</span></span></td>
 <td><ul>
-<li>Nákup podle města</li>
-<li>Meziroční růst nákupů v %</li>
-<li>Nákup podle země</li>
+<li><span data-ttu-id="0cab7-150">Nákup podle města</span><span class="sxs-lookup"><span data-stu-id="0cab7-150">Purchase by city</span></span></li>
+<li><span data-ttu-id="0cab7-151">Meziroční růst nákupů v %</span><span class="sxs-lookup"><span data-stu-id="0cab7-151">Purchase YOY growth %</span></span></li>
+<li><span data-ttu-id="0cab7-152">Nákup podle země</span><span class="sxs-lookup"><span data-stu-id="0cab7-152">Purchase by country</span></span></li>
 </ul></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>Analýza výdajů při nákupu podle času</td>
+<td><span data-ttu-id="0cab7-153">Analýza výdajů při nákupu podle času</span><span class="sxs-lookup"><span data-stu-id="0cab7-153">Purchase spend analysis by time</span></span></td>
 <td><ul>
-<li>Aktální rok nákupu podle měsíců / den (spojnicový graf)</li>
-<li>Nákup za aktuální a předchozí rok (řádkový a sloupcový graf)</li>
+<li><span data-ttu-id="0cab7-154">Aktální rok nákupu podle měsíců / den (spojnicový graf)</span><span class="sxs-lookup"><span data-stu-id="0cab7-154">Purchase current year by month / day (line chart)</span></span></li>
+<li><span data-ttu-id="0cab7-155">Nákup za aktuální a předchozí rok (řádkový a sloupcový graf)</span><span class="sxs-lookup"><span data-stu-id="0cab7-155">Purchase current and last year (line and column chart)</span></span></li>
 </ul></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>Analýza výdajů při nákupu podle dodavatele</td>
+<td><span data-ttu-id="0cab7-156">Analýza výdajů při nákupu podle dodavatele</span><span class="sxs-lookup"><span data-stu-id="0cab7-156">Purchase spend analysis by vendor</span></span></td>
 <td><ul>
-<li>TOP 10 % nákupů dodavatele nákupní (trychtýřový graf)</li>
-<li>Top 10 dodavatelů se zvýšenými investicemi meziročně</li>
-<li>Top 10 dodavatelů se sníženými investicemi meziročně</li>
+<li><span data-ttu-id="0cab7-157">TOP 10 % nákupů dodavatele nákupní (trychtýřový graf)</span><span class="sxs-lookup"><span data-stu-id="0cab7-157">Top 10 vendor purchase % of purchase (funnel)</span></span></li>
+<li><span data-ttu-id="0cab7-158">Top 10 dodavatelů se zvýšenými investicemi meziročně</span><span class="sxs-lookup"><span data-stu-id="0cab7-158">Top 10 vendors with increased spending YOY</span></span></li>
+<li><span data-ttu-id="0cab7-159">Top 10 dodavatelů se sníženými investicemi meziročně</span><span class="sxs-lookup"><span data-stu-id="0cab7-159">Top 10 vendors with decreased spending YOY</span></span></li>
 </ul></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
-\* Nákup v tomto a minulém roce a růst podle kategorie zásobování
+<span data-ttu-id="0cab7-160">\* Nákup v tomto a minulém roce a růst podle kategorie zásobování</span><span class="sxs-lookup"><span data-stu-id="0cab7-160">\* Purchase this year and last year, and growth by procurement category</span></span>
 
-## <a name="extending-the-power-bi-content"></a>Rozšíření obsahu v Power BI
-Pomocí balíčků obsahu, které jsou k dispozici ve službě Microsoft Dynamics Lifecycle Services (LCS) můžete poskytovat skvělou analýzu osobám, které nejsou přihlášeny k aplikaci Microsoft Dynamics 365. Tyto balíčky obsahu můžete upravit tak, aby zahrnovaly jiné sestavy nebo vizuály, a potom publikovat balíčky obsahu na svého klienta Power BI.com pro analýzu. 
+## <a name="extending-the-power-bi-content"></a><span data-ttu-id="0cab7-161">Rozšíření obsahu v Power BI</span><span class="sxs-lookup"><span data-stu-id="0cab7-161">Extending the Power BI content</span></span>
+<span data-ttu-id="0cab7-162">Pomocí balíčků obsahu, které jsou k dispozici ve službě Microsoft Dynamics Lifecycle Services (LCS) můžete poskytovat skvělou analýzu osobám, které nejsou přihlášeny k aplikaci Microsoft Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="0cab7-162">By using the content packs that are available in Microsoft Dynamics Lifecycle Services (LCS), you can provide great analytics to people who don't sign in to Microsoft Dynamics 365.</span></span> <span data-ttu-id="0cab7-163">Tyto balíčky obsahu můžete upravit tak, aby zahrnovaly jiné sestavy nebo vizuály, a potom publikovat balíčky obsahu na svého klienta Power BI.com pro analýzu.</span><span class="sxs-lookup"><span data-stu-id="0cab7-163">You can modify these content packs so that they include other reports or visuals, and then publish the content packs to your Power BI.com tenant for analysis.</span></span> 
 
-Obsah Power BI **Analýza nákupu a výdajů** naleznete v knihovně sdíleného majetku ve službě LCS. Další informace o stažení obsahu a jeho implementaci ve vaší organizaci naleznete v tématu [Obsah Power BI v LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md). Pokud se chcete podívat na ukázku, jak implementovat obsah Power BI, najdete informace v tématu [Obsah Power BI od společnosti Microsoft a partnerů ve službě Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) pro Office Mix.
+<span data-ttu-id="0cab7-164">Obsah Power BI **Analýza nákupu a výdajů** naleznete v knihovně sdíleného majetku ve službě LCS.</span><span class="sxs-lookup"><span data-stu-id="0cab7-164">You can find the **Purchase spend analysis** Power BI content in the Shared assets library in LCS.</span></span> <span data-ttu-id="0cab7-165">Další informace o stažení obsahu a jeho implementaci ve vaší organizaci naleznete v tématu [Obsah Power BI v LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md).</span><span class="sxs-lookup"><span data-stu-id="0cab7-165">For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).</span></span> <span data-ttu-id="0cab7-166">Pokud se chcete podívat na ukázku, jak implementovat obsah Power BI, najdete informace v tématu [Obsah Power BI od společnosti Microsoft a partnerů ve službě Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) pro Office Mix.</span><span class="sxs-lookup"><span data-stu-id="0cab7-166">To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.</span></span>
 
-Nezapomeňte si stáhnout obsah **Analýza nákupu a výdajů**, který se vztahuje k vámi používané verzi aplikace Dynamics 365.
+<span data-ttu-id="0cab7-167">Nezapomeňte si stáhnout obsah **Analýza nákupu a výdajů**, který se vztahuje k vámi používané verzi aplikace Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="0cab7-167">Be sure to download the **Purchase spend analysis** content that applies to the version of Dynamics 365 that you're using.</span></span>
 
 > [!NOTE]
-> Pokud používáte verzi Microsoft Dynamics 365 for Operations 1611, je předpokladem pro tento obsah Power BI článek znalostní báze KB 4011327. Po přihlášení ke službě LCS můžete přejít k článku znalostní báze zde: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+> <span data-ttu-id="0cab7-168">Pokud používáte verzi Microsoft Dynamics 365 for Operations 1611, je předpokladem pro tento obsah Power BI článek znalostní báze KB 4011327.</span><span class="sxs-lookup"><span data-stu-id="0cab7-168">If you're using Microsoft Dynamics 365 for Operations version 1611, KB 4011327 is a prerequisite for this Power BI content.</span></span> <span data-ttu-id="0cab7-169">Po přihlášení ke službě LCS můžete přejít k článku znalostní báze zde: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.</span><span class="sxs-lookup"><span data-stu-id="0cab7-169">After you sign in to LCS, you can access the KB at https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.</span></span>
 
-## <a name="data-model-and-entities"></a>Datový model a entity
-Následující data se používají k naplnění stránek sestavy v obsahu **Analýza nákupu a výdajů** v Power BI. Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Přehled integrace Power BI úložištěm entit](power-bi-integration-entity-store.md).
+## <a name="data-model-and-entities"></a><span data-ttu-id="0cab7-170">Datový model a entity</span><span class="sxs-lookup"><span data-stu-id="0cab7-170">Data model and entities</span></span>
+<span data-ttu-id="0cab7-171">Následující data se používají k naplnění stránek sestavy v obsahu **Analýza nákupu a výdajů** v Power BI.</span><span class="sxs-lookup"><span data-stu-id="0cab7-171">The following data is used to fill the report pages in the **Purchase spend analysis** Power BI content.</span></span> <span data-ttu-id="0cab7-172">Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit.</span><span class="sxs-lookup"><span data-stu-id="0cab7-172">This data is represented as aggregate measurements that are staged in the Entity store.</span></span> <span data-ttu-id="0cab7-173">Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu.</span><span class="sxs-lookup"><span data-stu-id="0cab7-173">The Entity store is a Microsoft SQL Server database that is optimized for analytics.</span></span> <span data-ttu-id="0cab7-174">Další informace naleznete v tématu [Přehled integrace Power BI úložištěm entit](power-bi-integration-entity-store.md).</span><span class="sxs-lookup"><span data-stu-id="0cab7-174">For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).</span></span>
 
-Souhrnná opatření v tomto obsahu jsou podmnožinou celkových opatření, která byla k dispozici v nákupní datové krychli v aplikaci Microsoft Dynamics AX 2012 a AX 2012 R3. Příprava fází agregovaných opatření v úložišti Entity vyžaduje, aby bylo možné je nasadit. Další informace získáte v postupu nastavování agregovaných opatření v úložišti entity v příspěvku v blogu [Přehled integrace Power BI s úložištěm entit](power-bi-integration-entity-store.md). Následující klíčová agregovaná opatření jsou k dispozici přímo z entity řádky faktury a slouží jako základ obsahu.
+<span data-ttu-id="0cab7-175">Souhrnná opatření v tomto obsahu jsou podmnožinou celkových opatření, která byla k dispozici v nákupní datové krychli v aplikaci Microsoft Dynamics AX 2012 a AX 2012 R3.</span><span class="sxs-lookup"><span data-stu-id="0cab7-175">The aggregate measurements in this content are the subset of aggregate measurements that were available in the Purchase Cube in Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 R3.</span></span> <span data-ttu-id="0cab7-176">Příprava fází agregovaných opatření v úložišti Entity vyžaduje, aby bylo možné je nasadit.</span><span class="sxs-lookup"><span data-stu-id="0cab7-176">To stage the cube’s aggregate measurements in the Entity store, you must make them deployable.</span></span> <span data-ttu-id="0cab7-177">Další informace získáte v postupu nastavování agregovaných opatření v úložišti entity v příspěvku v blogu [Přehled integrace Power BI s úložištěm entit](power-bi-integration-entity-store.md).</span><span class="sxs-lookup"><span data-stu-id="0cab7-177">For more information, see the procedure for staging aggregate measurements in the Entity store in [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).</span></span> <span data-ttu-id="0cab7-178">Následující klíčová agregovaná opatření jsou k dispozici přímo z entity řádky faktury a slouží jako základ obsahu.</span><span class="sxs-lookup"><span data-stu-id="0cab7-178">The following key aggregate measurements are available directly from the Invoice lines entity and are used as the basis of the content.</span></span>
 
-| Celek        | Klíčová opatření agregace | Zdroj dat                                 | Pole              | popis                            |
+| <span data-ttu-id="0cab7-179">Celek</span><span class="sxs-lookup"><span data-stu-id="0cab7-179">Entity</span></span>        | <span data-ttu-id="0cab7-180">Klíčová opatření agregace</span><span class="sxs-lookup"><span data-stu-id="0cab7-180">Key aggregate measurements</span></span> | <span data-ttu-id="0cab7-181">Zdroj dat</span><span class="sxs-lookup"><span data-stu-id="0cab7-181">Data source</span></span>                                 | <span data-ttu-id="0cab7-182">Pole</span><span class="sxs-lookup"><span data-stu-id="0cab7-182">Field</span></span>              | <span data-ttu-id="0cab7-183">popis</span><span class="sxs-lookup"><span data-stu-id="0cab7-183">Description</span></span>                            |
 |---------------|----------------------------|---------------------------------------------|--------------------|----------------------------------------|
-| Řádky faktury | Nákup                   | VendInvoiceTrans                            | SUM(LineAmountMST) | Částka v zúčtovací měně. |
+| <span data-ttu-id="0cab7-184">Řádky faktury</span><span class="sxs-lookup"><span data-stu-id="0cab7-184">Invoice lines</span></span> | <span data-ttu-id="0cab7-185">Nákup</span><span class="sxs-lookup"><span data-stu-id="0cab7-185">Purchase</span></span>                   | <span data-ttu-id="0cab7-186">VendInvoiceTrans</span><span class="sxs-lookup"><span data-stu-id="0cab7-186">VendInvoiceTrans</span></span>                            | <span data-ttu-id="0cab7-187">SUM(LineAmountMST)</span><span class="sxs-lookup"><span data-stu-id="0cab7-187">SUM(LineAmountMST)</span></span> | <span data-ttu-id="0cab7-188">Částka v zúčtovací měně.</span><span class="sxs-lookup"><span data-stu-id="0cab7-188">The amount in the accounting currency.</span></span> |
 
-V následující tabulce jsou uvedena klíčová opatření, která jsou vypočtena z entity řádky faktury.
+<span data-ttu-id="0cab7-189">V následující tabulce jsou uvedena klíčová opatření, která jsou vypočtena z entity řádky faktury.</span><span class="sxs-lookup"><span data-stu-id="0cab7-189">The following table shows the key measurements in the content that are calculated from the Invoice lines entity.</span></span>
 
-| Výměra               | Výpočet                                                                                         |
+| <span data-ttu-id="0cab7-190">Výměra</span><span class="sxs-lookup"><span data-stu-id="0cab7-190">Measure</span></span>               | <span data-ttu-id="0cab7-191">Výpočet</span><span class="sxs-lookup"><span data-stu-id="0cab7-191">Calculation</span></span>                                                                                         |
 |-----------------------|-----------------------------------------------------------------------------------------------------|
-| Aktuální rok nákupu | Aktuální rok nákupu = SUM (Řádky faktury\[Nákup\])                                            |
-| Minulý nákupní rok    | Minulý nákupní rok = CALCULATE(SUM('Invoice lines'\[Purchase\]), SAMEPERIODLASTYEAR(Dates\[Date\])) |
-| Meziroční růst nákupů   | Meziroční růst nákup = \[Aktuální nákupní rok\] – \[Minulý nákupní rok\]                            |
+| <span data-ttu-id="0cab7-192">Aktuální rok nákupu</span><span class="sxs-lookup"><span data-stu-id="0cab7-192">Purchase current year</span></span> | <span data-ttu-id="0cab7-193">Aktuální rok nákupu = SUM (Řádky faktury\[Nákup\])</span><span class="sxs-lookup"><span data-stu-id="0cab7-193">Purchase current year = SUM('Invoice lines'\[Purchase\])</span></span>                                            |
+| <span data-ttu-id="0cab7-194">Minulý nákupní rok</span><span class="sxs-lookup"><span data-stu-id="0cab7-194">Purchase last year</span></span>    | <span data-ttu-id="0cab7-195">Minulý nákupní rok = CALCULATE(SUM('Invoice lines'\[Purchase\]), SAMEPERIODLASTYEAR(Dates\[Date\]))</span><span class="sxs-lookup"><span data-stu-id="0cab7-195">Purchase last year = CALCULATE(SUM('Invoice lines'\[Purchase\]), SAMEPERIODLASTYEAR(Dates\[Date\]))</span></span> |
+| <span data-ttu-id="0cab7-196">Meziroční růst nákupů</span><span class="sxs-lookup"><span data-stu-id="0cab7-196">YOY purchase growth</span></span>   | <span data-ttu-id="0cab7-197">Meziroční růst nákup = \[Aktuální nákupní rok\] – \[Minulý nákupní rok\]</span><span class="sxs-lookup"><span data-stu-id="0cab7-197">YOY purchase growth = \[Purchase current year\] – \[Purchase last year\]</span></span>                            |
 
-Následující klíčové dimenze v obsahu se používají jako filtry k rozdělení agregovaných opatření, aby bylo možné dosažení většího rozlišení a získání hlubších analytických poznatků.
+<span data-ttu-id="0cab7-198">Následující klíčové dimenze v obsahu se používají jako filtry k rozdělení agregovaných opatření, aby bylo možné dosažení většího rozlišení a získání hlubších analytických poznatků.</span><span class="sxs-lookup"><span data-stu-id="0cab7-198">The following key dimensions in the content are used as filters to slice the aggregate measurements, so that you can achieve more granularity and gain deeper analytical insights.</span></span>
 
-| Celek                 | Příklady atributů                                |
+| <span data-ttu-id="0cab7-199">Celek</span><span class="sxs-lookup"><span data-stu-id="0cab7-199">Entity</span></span>                 | <span data-ttu-id="0cab7-200">Příklady atributů</span><span class="sxs-lookup"><span data-stu-id="0cab7-200">Examples of attributes</span></span>                                |
 |------------------------|-------------------------------------------------------|
-| Dodavatelé                | Skupiny dodavatelů, země nebo oblast dodavatele nebo název dodavatele |
-| Produkty               | Číslo produktu, název produktu, název skupiny zboží        |
-| Kategorie zásobování | Kategorie zásobování, názvy kategorií zásobování      |
-| Právnické osoby         | Jméno právnické osoby                                     |
-| Data                  | Data, Posun o rok                                    |
+| <span data-ttu-id="0cab7-201">Dodavatelé</span><span class="sxs-lookup"><span data-stu-id="0cab7-201">Vendors</span></span>                | <span data-ttu-id="0cab7-202">Skupiny dodavatelů, země nebo oblast dodavatele nebo název dodavatele</span><span class="sxs-lookup"><span data-stu-id="0cab7-202">Vendor groups, Vendor country or regions, Vendor name</span></span> |
+| <span data-ttu-id="0cab7-203">Produkty</span><span class="sxs-lookup"><span data-stu-id="0cab7-203">Products</span></span>               | <span data-ttu-id="0cab7-204">Číslo produktu, název produktu, název skupiny zboží</span><span class="sxs-lookup"><span data-stu-id="0cab7-204">Product number, Product name, Item groups name</span></span>        |
+| <span data-ttu-id="0cab7-205">Kategorie zásobování</span><span class="sxs-lookup"><span data-stu-id="0cab7-205">Procurement categories</span></span> | <span data-ttu-id="0cab7-206">Kategorie zásobování, názvy kategorií zásobování</span><span class="sxs-lookup"><span data-stu-id="0cab7-206">Procurement category, Procurement category names</span></span>      |
+| <span data-ttu-id="0cab7-207">Právnické osoby</span><span class="sxs-lookup"><span data-stu-id="0cab7-207">Legal entities</span></span>         | <span data-ttu-id="0cab7-208">Jméno právnické osoby</span><span class="sxs-lookup"><span data-stu-id="0cab7-208">Legal entity name</span></span>                                     |
+| <span data-ttu-id="0cab7-209">Data</span><span class="sxs-lookup"><span data-stu-id="0cab7-209">Dates</span></span>                  | <span data-ttu-id="0cab7-210">Data, Posun o rok</span><span class="sxs-lookup"><span data-stu-id="0cab7-210">Dates, Year offset</span></span>                                    |
 
-Ve výchozím nastavení obsah zobrazuje data pro aktuální kalendářní rok. Můžete však změnit filtr dat v části filtrů sestavy. Můžete také změnit filtr společnosti.
+<span data-ttu-id="0cab7-211">Ve výchozím nastavení obsah zobrazuje data pro aktuální kalendářní rok.</span><span class="sxs-lookup"><span data-stu-id="0cab7-211">By default, the content shows data for the current calendar year.</span></span> <span data-ttu-id="0cab7-212">Můžete však změnit filtr dat v části filtrů sestavy.</span><span class="sxs-lookup"><span data-stu-id="0cab7-212">However, you can change the date filter in the report filters section.</span></span> <span data-ttu-id="0cab7-213">Můžete také změnit filtr společnosti.</span><span class="sxs-lookup"><span data-stu-id="0cab7-213">You can also change the company filter.</span></span>
 

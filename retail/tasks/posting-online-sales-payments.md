@@ -17,29 +17,29 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 15196b9d651402a7530613ae218fabb7fb71b799
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e8c3f861a53a3f5c2de29248523ff4efd5e1d072
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="post-online-sales-and-payments"></a> Zaúčtování online prodeje a plateb
+# <a name="post-online-sales-and-payments"></a><span data-ttu-id="ede57-103"> Zaúčtování online prodeje a plateb</span><span class="sxs-lookup"><span data-stu-id="ede57-103">Post online sales and payments</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Tato procedura vás provede konfigurací a spuštěním opakující se dávkové úlohy pro vytváření prodejních objednávek a plateb za transakce obchodu online. Tato procedura používá v ukázkových datech společnost USRT.
+<span data-ttu-id="ede57-104">Tato procedura vás provede konfigurací a spuštěním opakující se dávkové úlohy pro vytváření prodejních objednávek a plateb za transakce obchodu online.</span><span class="sxs-lookup"><span data-stu-id="ede57-104">This procedure walks through configuring and running a recurrent batch job to create sales orders and payments for online store transactions.</span></span> <span data-ttu-id="ede57-105">Tato procedura používá v ukázkových datech společnost USRT.</span><span class="sxs-lookup"><span data-stu-id="ede57-105">This procedure uses the USRT company in demo data.</span></span>
 
-1. Přejděte na Všechny pracovní prostory > Finance maloobchodu.
-2. Klikněte na Synchronizovat objednávky.
-3. Vyberte „Maloobchody podle regionu“ v poli Organizační hierarchie.
-    * Pokud chcete vytvořit dávkovou úlohu pro skupinu obchodů, vyberte určitý obchod online nebo vyberte uzel.  
-    * Kliknutím na šipku přidejte výběr.  
-4. Klikněte na kartu Spustit na pozadí.
-5. Zaškrtněte nebo zrušte zaškrtnutí políčka Dávkové zpracování.
-6. Klepněte na tlačítko Opakování.
-7. Vyberte možnost Bez koncového data.
-8. Zadejte číslo do pole Počet.
-9. Klikněte na tlačítko OK.
-10. Klikněte na tlačítko OK.
+1. <span data-ttu-id="ede57-106">Přejděte na Všechny pracovní prostory > Finance maloobchodu.</span><span class="sxs-lookup"><span data-stu-id="ede57-106">Go to All workspaces > Retail store financials.</span></span>
+2. <span data-ttu-id="ede57-107">Klikněte na Synchronizovat objednávky.</span><span class="sxs-lookup"><span data-stu-id="ede57-107">Click Synchronize orders.</span></span>
+3. <span data-ttu-id="ede57-108">Vyberte „Maloobchody podle regionu“ v poli Organizační hierarchie.</span><span class="sxs-lookup"><span data-stu-id="ede57-108">In the Organization hierarchy field, select 'Retail Stores by Region'.</span></span>
+    * <span data-ttu-id="ede57-109">Pokud chcete vytvořit dávkovou úlohu pro skupinu obchodů, vyberte určitý obchod online nebo vyberte uzel.</span><span class="sxs-lookup"><span data-stu-id="ede57-109">Select either a specific online store, or select a node if you want to create the batch job for a group of stores.</span></span>  
+    * <span data-ttu-id="ede57-110">Kliknutím na šipku přidejte výběr.</span><span class="sxs-lookup"><span data-stu-id="ede57-110">Click the arrow to add your selection.</span></span>  
+4. <span data-ttu-id="ede57-111">Klikněte na kartu Spustit na pozadí.</span><span class="sxs-lookup"><span data-stu-id="ede57-111">Click the Run in the background tab.</span></span>
+5. <span data-ttu-id="ede57-112">Zaškrtněte nebo zrušte zaškrtnutí políčka Dávkové zpracování.</span><span class="sxs-lookup"><span data-stu-id="ede57-112">Check or uncheck the Batch processing checkbox.</span></span>
+6. <span data-ttu-id="ede57-113">Klepněte na tlačítko Opakování.</span><span class="sxs-lookup"><span data-stu-id="ede57-113">Click Recurrence.</span></span>
+7. <span data-ttu-id="ede57-114">Vyberte možnost Bez koncového data.</span><span class="sxs-lookup"><span data-stu-id="ede57-114">Select the No end date option.</span></span>
+8. <span data-ttu-id="ede57-115">Zadejte číslo do pole Počet.</span><span class="sxs-lookup"><span data-stu-id="ede57-115">In the Count field, enter a number.</span></span>
+9. <span data-ttu-id="ede57-116">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="ede57-116">Click OK.</span></span>
+10. <span data-ttu-id="ede57-117">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="ede57-117">Click OK.</span></span>
 
 

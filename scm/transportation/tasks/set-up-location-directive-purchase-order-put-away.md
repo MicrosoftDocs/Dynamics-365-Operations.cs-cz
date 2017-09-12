@@ -17,81 +17,81 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 4c2456fffd9a010728154749b35c58db13f142bb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 45e1e54c807597d4d5ff7370748012cbf28c1c6b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Nastavení směrnice skladového místa pro vyskladnění v rámci nákupní objednávky
+# <a name="set-up-a-location-directive-for-purchase-order-put-away"></a><span data-ttu-id="bcc96-103">Nastavení směrnice skladového místa pro vyskladnění v rámci nákupní objednávky</span><span class="sxs-lookup"><span data-stu-id="bcc96-103">Set up a location directive for purchase order put-away</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup popisuje nastavení jednoduché směrnice skladového místa. Uvedený příklad vytvoří směrnici skladového místa, který má být použita k určení umístění položek, které byly přijaty pro nákupní objednávku. Tohoto průvodce úkolem můžete použít s uvedenými daty za použití ukázkových dat společnosti USMF. Předpoklady: Je nutné vytvořit dispoziční kód. V tomto postupu používáme dispoziční kód Relabel. Pokud vytváříte směrnici skladového místa ve vlastních datech, je nutné nastavit pro sklad a položky pokročilou správu skladu.  Tento postup je určen pro vedoucího skladu.
+<span data-ttu-id="bcc96-104">Tento postup popisuje nastavení jednoduché směrnice skladového místa.</span><span class="sxs-lookup"><span data-stu-id="bcc96-104">This procedure shows you how to set up a simple location directive.</span></span> <span data-ttu-id="bcc96-105">Uvedený příklad vytvoří směrnici skladového místa, který má být použita k určení umístění položek, které byly přijaty pro nákupní objednávku.</span><span class="sxs-lookup"><span data-stu-id="bcc96-105">The example that’s shown creates a location directive to be used to determine where to put items that have been received for a purchase order.</span></span> <span data-ttu-id="bcc96-106">Tohoto průvodce úkolem můžete použít s uvedenými daty za použití ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="bcc96-106">You can play this task guide with the data mentioned using demo data company USMF.</span></span> <span data-ttu-id="bcc96-107">Předpoklady: Je nutné vytvořit dispoziční kód.</span><span class="sxs-lookup"><span data-stu-id="bcc96-107">Pre-conditions: You need to create a disposition code.</span></span> <span data-ttu-id="bcc96-108">V tomto postupu používáme dispoziční kód Relabel.</span><span class="sxs-lookup"><span data-stu-id="bcc96-108">In this procedure we use a disposition code called Relabel.</span></span> <span data-ttu-id="bcc96-109">Pokud vytváříte směrnici skladového místa ve vlastních datech, je nutné nastavit pro sklad a položky pokročilou správu skladu.</span><span class="sxs-lookup"><span data-stu-id="bcc96-109">If you’re creating a location directive in your own data, you need to have set up advanced warehouse management for your warehouse and items.</span></span>  <span data-ttu-id="bcc96-110">Tento postup je určen pro vedoucího skladu.</span><span class="sxs-lookup"><span data-stu-id="bcc96-110">This procedure is intended for the warehouse manager.</span></span>
 
-1. Přejděte do nabídky Řízení skladu > Nastavení > Směrnice skladového místa.
-2. V poli Typ pořadí pracovních činností vyberte možnost Nákupní objednávky.
+1. <span data-ttu-id="bcc96-111">Přejděte do nabídky Řízení skladu > Nastavení > Směrnice skladového místa.</span><span class="sxs-lookup"><span data-stu-id="bcc96-111">Go to Warehouse management > Setup > Location directives.</span></span>
+2. <span data-ttu-id="bcc96-112">V poli Typ pořadí pracovních činností vyberte možnost Nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="bcc96-112">In the Work order type field, select 'Purchase orders'.</span></span>
 
-## <a name="create-a-location-directive-header"></a>Vytvoření záhlaví směrnice skladového místa
-1. Klikněte na položku Nová.
-2. V poli Pořadové číslo zadejte číslo.
-    * Toto je pořadí, ve kterém je zpracována směrnice skladového místa pro vybraný typ práce. Pořadí můžete v případě potřeby změnit.  
-3. Zadejte hodnotu do pole Název.
-    * Toto je jedinečný identifikátor pro tuto směrnici.  
-4. V poli Typ práce vyberte „Vložit“.
-    * Vybrat typ práce, která má být vykonávána. Vložit je jediná podporovaná hodnota pro směrnici s typem pořadí pracovních činností Nákupní objednávka.  
-5. Zadejte hodnotu do pole Pracoviště.
-6. Zadejte hodnotu do pole Sklad.
-    * Pole Kód předpisu nevyplňujte.  Kódy předpisů umožňují propojit řádek pořadí pracovních činností typu Vložit s konkrétním předpisem. Pro nákupní objednávky se umístění posledního řádku pořadí pracovních činností typu Vložit přeloží předtím, než je určena šablona práce. Proto není možné připojit poslední řádek šablony práce k určitému předpisu.   
-7. Zadejte hodnotu do pole Dispoziční kód.
-    * Dispoziční kód omezuje použití směrnice skladového místa, aby se směrnice skladového místa používala, jen pokud pracovník skladu zadá tuto konkrétní hodnotu během registrace položky pomocí mobilního zařízení.  
-8. Klikněte na položku Uložit.
+## <a name="create-a-location-directive-header"></a><span data-ttu-id="bcc96-113">Vytvoření záhlaví směrnice skladového místa</span><span class="sxs-lookup"><span data-stu-id="bcc96-113">Create a location directive header</span></span>
+1. <span data-ttu-id="bcc96-114">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="bcc96-114">Click New.</span></span>
+2. <span data-ttu-id="bcc96-115">V poli Pořadové číslo zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="bcc96-115">In the Sequence number field, enter a number.</span></span>
+    * <span data-ttu-id="bcc96-116">Toto je pořadí, ve kterém je zpracována směrnice skladového místa pro vybraný typ práce.</span><span class="sxs-lookup"><span data-stu-id="bcc96-116">This is the sequence in which the location directive is processed for the selected work type.</span></span> <span data-ttu-id="bcc96-117">Pořadí můžete v případě potřeby změnit.</span><span class="sxs-lookup"><span data-stu-id="bcc96-117">You can also modify the sequence, if needed.</span></span>  
+3. <span data-ttu-id="bcc96-118">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="bcc96-118">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="bcc96-119">Toto je jedinečný identifikátor pro tuto směrnici.</span><span class="sxs-lookup"><span data-stu-id="bcc96-119">This is the unique identifier for this directive.</span></span>  
+4. <span data-ttu-id="bcc96-120">V poli Typ práce vyberte „Vložit“.</span><span class="sxs-lookup"><span data-stu-id="bcc96-120">In the Work type field, select 'Put'.</span></span>
+    * <span data-ttu-id="bcc96-121">Vybrat typ práce, která má být vykonávána.</span><span class="sxs-lookup"><span data-stu-id="bcc96-121">Select the type of work to be performed.</span></span> <span data-ttu-id="bcc96-122">Vložit je jediná podporovaná hodnota pro směrnici s typem pořadí pracovních činností Nákupní objednávka.</span><span class="sxs-lookup"><span data-stu-id="bcc96-122">For directive with work order type Purchase order, Put is the only supported value.</span></span>  
+5. <span data-ttu-id="bcc96-123">Zadejte hodnotu do pole Pracoviště.</span><span class="sxs-lookup"><span data-stu-id="bcc96-123">In the Site field, type a value.</span></span>
+6. <span data-ttu-id="bcc96-124">Zadejte hodnotu do pole Sklad.</span><span class="sxs-lookup"><span data-stu-id="bcc96-124">In the Warehouse field, type a value.</span></span>
+    * <span data-ttu-id="bcc96-125">Pole Kód předpisu nevyplňujte.</span><span class="sxs-lookup"><span data-stu-id="bcc96-125">Leave the Directive code blank.</span></span>  <span data-ttu-id="bcc96-126">Kódy předpisů umožňují propojit řádek pořadí pracovních činností typu Vložit s konkrétním předpisem.</span><span class="sxs-lookup"><span data-stu-id="bcc96-126">Directive codes are used to link a work order line of type Put to a specific directive.</span></span> <span data-ttu-id="bcc96-127">Pro nákupní objednávky se umístění posledního řádku pořadí pracovních činností typu Vložit přeloží předtím, než je určena šablona práce.</span><span class="sxs-lookup"><span data-stu-id="bcc96-127">For purchase orders, the location of the last work order line of type Put is resolved before the work template is determined.</span></span> <span data-ttu-id="bcc96-128">Proto není možné připojit poslední řádek šablony práce k určitému předpisu.</span><span class="sxs-lookup"><span data-stu-id="bcc96-128">Therefore it is not possible to connect the last line of a work template to a specific directive.</span></span>   
+7. <span data-ttu-id="bcc96-129">Zadejte hodnotu do pole Dispoziční kód.</span><span class="sxs-lookup"><span data-stu-id="bcc96-129">In the Disposition code field, type a value.</span></span>
+    * <span data-ttu-id="bcc96-130">Dispoziční kód omezuje použití směrnice skladového místa, aby se směrnice skladového místa používala, jen pokud pracovník skladu zadá tuto konkrétní hodnotu během registrace položky pomocí mobilního zařízení.</span><span class="sxs-lookup"><span data-stu-id="bcc96-130">The Disposition code limits the use of the location directive, so the location directive is only used if the warehouse worker enters this specific value during registration of the item using a mobile device.</span></span>  
+8. <span data-ttu-id="bcc96-131">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="bcc96-131">Click Save.</span></span>
 
-## <a name="edit-the-query-for-directive"></a>Úprava dotazu pro směrnici
-1. Klikněte na možnost Upravit dotaz.
-    * Použití této směrnice již omezené pro položky, které jsou registrovány do skladu, který jste zadali, a s dispozičním kódem, který jste zadali. Pomocí dotazu můžete přidat další omezení.  
-2. Klikněte na tlačítko OK.
+## <a name="edit-the-query-for-directive"></a><span data-ttu-id="bcc96-132">Úprava dotazu pro směrnici</span><span class="sxs-lookup"><span data-stu-id="bcc96-132">Edit the query for directive</span></span>
+1. <span data-ttu-id="bcc96-133">Klikněte na možnost Upravit dotaz.</span><span class="sxs-lookup"><span data-stu-id="bcc96-133">Click Edit query.</span></span>
+    * <span data-ttu-id="bcc96-134">Použití této směrnice již omezené pro položky, které jsou registrovány do skladu, který jste zadali, a s dispozičním kódem, který jste zadali.</span><span class="sxs-lookup"><span data-stu-id="bcc96-134">The use of this directive is already limited to be used for items registered in the warehouse that you specified, and with the disposition code that you specified.</span></span> <span data-ttu-id="bcc96-135">Pomocí dotazu můžete přidat další omezení.</span><span class="sxs-lookup"><span data-stu-id="bcc96-135">You can add other constraints using the query.</span></span>  
+2. <span data-ttu-id="bcc96-136">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="bcc96-136">Click OK.</span></span>
 
-## <a name="add-directive-lines"></a>Přidání řádků směrnice
-1. Klikněte na položku Nová.
-    * Toto je pořadí, ve kterém jsou zpracovány řádky předpisu skladového místa pro vybraný typ práce. Pořadí můžete v případě potřeby změnit.  
-2. V poli Od množství zadejte číslo.
-    * Toto je minimální množství, pro které platí tento řádek směrnice.  
-3. Zadejte číslo do pole Do množství.
-4. Zadejte hodnotu do pole Jednotka.
-    * Jednotka hodnoty Od množství a Do množství. Pokud toto pole zůstane prázdné, bude použita skladová položka z této položky.  
-5. Vyberte volbu v poli Vyhledat množství.
-    * Žádná nebo Registrační značka – množství: Množství registrované pro každou registrační značku. Sjednocené množství: Celé množství, které bylo registrováno. Zbývající množství: Množství, které má být teprve registrováno z řádku nákupní objednávky. Očekávané množství: Celkové množství zadané na řádku nákupní objednávky.  
-6. Zaškrtněte nebo zrušte zaškrtnutí políčka Omezit podle jednotky.
-    * Pokud vyberete tuto možnost a určíte jednotku na stránce Omezit podle jednotky, do skladového místa lze umístit jen položky s touto jednotkou měření. Například pokud je měrná jednotka PL (palety), na určité skladové místo lze umístit jen položky na paletách.  
-7. Zaškrtněte nebo zrušte zaškrtnutí políčka Povolit rozdělení.
-    * Umožňuje, aby směrnice rozdělila množství do více skladových míst.  
-8. Klikněte na položku Uložit.
+## <a name="add-directive-lines"></a><span data-ttu-id="bcc96-137">Přidání řádků směrnice</span><span class="sxs-lookup"><span data-stu-id="bcc96-137">Add directive lines</span></span>
+1. <span data-ttu-id="bcc96-138">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="bcc96-138">Click New.</span></span>
+    * <span data-ttu-id="bcc96-139">Toto je pořadí, ve kterém jsou zpracovány řádky předpisu skladového místa pro vybraný typ práce.</span><span class="sxs-lookup"><span data-stu-id="bcc96-139">This is the sequence in which the location directive lines are processed for the selected work type.</span></span> <span data-ttu-id="bcc96-140">Pořadí můžete v případě potřeby změnit.</span><span class="sxs-lookup"><span data-stu-id="bcc96-140">You can also modify the sequence, if needed.</span></span>  
+2. <span data-ttu-id="bcc96-141">V poli Od množství zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="bcc96-141">In the From quantity field, enter a number.</span></span>
+    * <span data-ttu-id="bcc96-142">Toto je minimální množství, pro které platí tento řádek směrnice.</span><span class="sxs-lookup"><span data-stu-id="bcc96-142">This is the lowest quantity that this directive line is valid for.</span></span>  
+3. <span data-ttu-id="bcc96-143">Zadejte číslo do pole Do množství.</span><span class="sxs-lookup"><span data-stu-id="bcc96-143">In the To quantity field, enter a number.</span></span>
+4. <span data-ttu-id="bcc96-144">Zadejte hodnotu do pole Jednotka.</span><span class="sxs-lookup"><span data-stu-id="bcc96-144">In the Unit field, type a value.</span></span>
+    * <span data-ttu-id="bcc96-145">Jednotka hodnoty Od množství a Do množství.</span><span class="sxs-lookup"><span data-stu-id="bcc96-145">The unit the From quantity and To quantity is expressed in.</span></span> <span data-ttu-id="bcc96-146">Pokud toto pole zůstane prázdné, bude použita skladová položka z této položky.</span><span class="sxs-lookup"><span data-stu-id="bcc96-146">If you leave this field blank the inventory unit from the item is used.</span></span>  
+5. <span data-ttu-id="bcc96-147">Vyberte volbu v poli Vyhledat množství.</span><span class="sxs-lookup"><span data-stu-id="bcc96-147">In the Locate quantity field, select an option.</span></span>
+    * <span data-ttu-id="bcc96-148">Žádná nebo Registrační značka – množství: Množství registrované pro každou registrační značku.</span><span class="sxs-lookup"><span data-stu-id="bcc96-148">None, or licence plate quantity: The quantity registered on each licence plate.</span></span> <span data-ttu-id="bcc96-149">Sjednocené množství: Celé množství, které bylo registrováno.</span><span class="sxs-lookup"><span data-stu-id="bcc96-149">Unitized quantity: The entire quantity that’s been registered.</span></span> <span data-ttu-id="bcc96-150">Zbývající množství: Množství, které má být teprve registrováno z řádku nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="bcc96-150">Remaining quantity: The quantity that is yet to be registered from the purchase order line.</span></span> <span data-ttu-id="bcc96-151">Očekávané množství: Celkové množství zadané na řádku nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="bcc96-151">Expected quantity: The total quantity that is specified on the purchase order line.</span></span>  
+6. <span data-ttu-id="bcc96-152">Zaškrtněte nebo zrušte zaškrtnutí políčka Omezit podle jednotky.</span><span class="sxs-lookup"><span data-stu-id="bcc96-152">Check or uncheck the Restrict by unit checkbox.</span></span>
+    * <span data-ttu-id="bcc96-153">Pokud vyberete tuto možnost a určíte jednotku na stránce Omezit podle jednotky, do skladového místa lze umístit jen položky s touto jednotkou měření.</span><span class="sxs-lookup"><span data-stu-id="bcc96-153">If you select this option, and specify the unit on the Restrict by unit page, only items with that unit of measurement can be put into the location.</span></span> <span data-ttu-id="bcc96-154">Například pokud je měrná jednotka PL (palety), na určité skladové místo lze umístit jen položky na paletách.</span><span class="sxs-lookup"><span data-stu-id="bcc96-154">For example, if the unit of measurement is PL (pallets), only items in pallets can be put into the specified location.</span></span>  
+7. <span data-ttu-id="bcc96-155">Zaškrtněte nebo zrušte zaškrtnutí políčka Povolit rozdělení.</span><span class="sxs-lookup"><span data-stu-id="bcc96-155">Check or uncheck the Allow split checkbox.</span></span>
+    * <span data-ttu-id="bcc96-156">Umožňuje, aby směrnice rozdělila množství do více skladových míst.</span><span class="sxs-lookup"><span data-stu-id="bcc96-156">This allows the directive to split the quantity across multiple locations.</span></span>  
+8. <span data-ttu-id="bcc96-157">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="bcc96-157">Click Save.</span></span>
 
-## <a name="restrict-the-directive-line-to-a-specific-unit"></a>Omezení řádku směrnice na konkrétní jednotku
-1. Klikněte na možnost Omezit podle jednotky.
-    * Toto tlačítko je k dispozici pouze v případě, že stisknete Uložit po zaškrtnutí políčka Omezit podle jednotky.  
-2. Zadejte hodnotu do pole Jednotka.
-3. Zavřete stránku.
+## <a name="restrict-the-directive-line-to-a-specific-unit"></a><span data-ttu-id="bcc96-158">Omezení řádku směrnice na konkrétní jednotku</span><span class="sxs-lookup"><span data-stu-id="bcc96-158">Restrict the directive line to a specific unit</span></span>
+1. <span data-ttu-id="bcc96-159">Klikněte na možnost Omezit podle jednotky.</span><span class="sxs-lookup"><span data-stu-id="bcc96-159">Click Restrict by unit.</span></span>
+    * <span data-ttu-id="bcc96-160">Toto tlačítko je k dispozici pouze v případě, že stisknete Uložit po zaškrtnutí políčka Omezit podle jednotky.</span><span class="sxs-lookup"><span data-stu-id="bcc96-160">This button is only available when you press Save after you have selected the Restrict by unit check box.</span></span>  
+2. <span data-ttu-id="bcc96-161">Zadejte hodnotu do pole Jednotka.</span><span class="sxs-lookup"><span data-stu-id="bcc96-161">In the Unit field, type a value.</span></span>
+3. <span data-ttu-id="bcc96-162">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="bcc96-162">Close the page.</span></span>
 
-## <a name="add-a-location-directive-action-line"></a>Přidání řádku akce směrnice pro skladová místa
-1. Klikněte na položku Nová.
-    * Toto je pořadí, ve kterém jsou zpracovány řádky akcí předpisu skladového místa pro vybraný typ práce. Pořadí můžete v případě potřeby změnit.  
-2. Zadejte hodnotu do pole Název.
-    * Toto je jedinečný identifikátor pro tuto akci směrnice.  
-3. Vyberte volbu v poli Využití pevného skladového místa.
-    * Pevná a ostatní skladová místa: Všechna jiná než pevná skladová místa jsou platná stejně jako vlastní pevné skladové místo produktu v zadaném rozsahu v dotazu.  Pouze pevná skladová místa pro produkt: Pevná skladová místa produktu jsou platná a všechny varianty produktu sdílejí stejnou skupinu pevných skladových míst. Pouze pevná skladová místa pro variantu produktu: Jsou platná pouze pevná skladová místa, která jsou zadaná pro každou variantu produktu.  
-4. Vyberte volbu v poli Strategie.
-    * Pořadí pracovních činností typu nákupní objednávka podporují následující strategie: Žádné: Položka je vložena na první nalezené skladové místo. Konsolidovat: Položka je umístěna na skladové místo, kde jsou již k dispozici podobné položky. Prázdné umístění s žádnou příchozí prací: Položka je umístěna na první prázdné nalezené skladové místo. Skladové místo je považováno za prázdné, pokud nemá žádné fyzické zásoby a neočekává příchozí práci.  
-5. Klikněte na položku Uložit.
+## <a name="add-a-location-directive-action-line"></a><span data-ttu-id="bcc96-163">Přidání řádku akce směrnice pro skladová místa</span><span class="sxs-lookup"><span data-stu-id="bcc96-163">Add a location directive action line</span></span>
+1. <span data-ttu-id="bcc96-164">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="bcc96-164">Click New.</span></span>
+    * <span data-ttu-id="bcc96-165">Toto je pořadí, ve kterém jsou zpracovány řádky akcí předpisu skladového místa pro vybraný typ práce.</span><span class="sxs-lookup"><span data-stu-id="bcc96-165">This is the sequence in which the location directive action lines are processed for the selected work type.</span></span> <span data-ttu-id="bcc96-166">Pořadí můžete v případě potřeby změnit.</span><span class="sxs-lookup"><span data-stu-id="bcc96-166">You can also modify the sequence, if needed.</span></span>  
+2. <span data-ttu-id="bcc96-167">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="bcc96-167">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="bcc96-168">Toto je jedinečný identifikátor pro tuto akci směrnice.</span><span class="sxs-lookup"><span data-stu-id="bcc96-168">This is the unique identifier for this directive action.</span></span>  
+3. <span data-ttu-id="bcc96-169">Vyberte volbu v poli Využití pevného skladového místa.</span><span class="sxs-lookup"><span data-stu-id="bcc96-169">In the Fixed location usage field, select an option.</span></span>
+    * <span data-ttu-id="bcc96-170">Pevná a ostatní skladová místa: Všechna jiná než pevná skladová místa jsou platná stejně jako vlastní pevné skladové místo produktu v zadaném rozsahu v dotazu.</span><span class="sxs-lookup"><span data-stu-id="bcc96-170">Fixed and non-fixed locations: All non-fixed locations are valid as well as the product’s own fixed location, within the range specified in the query.</span></span>  <span data-ttu-id="bcc96-171">Pouze pevná skladová místa pro produkt: Pevná skladová místa produktu jsou platná a všechny varianty produktu sdílejí stejnou skupinu pevných skladových míst.</span><span class="sxs-lookup"><span data-stu-id="bcc96-171">Only fixed location for the product: Fixed locations for the product are valid, and all product variants share the same set of fixed locations.</span></span> <span data-ttu-id="bcc96-172">Pouze pevná skladová místa pro variantu produktu: Jsou platná pouze pevná skladová místa, která jsou zadaná pro každou variantu produktu.</span><span class="sxs-lookup"><span data-stu-id="bcc96-172">Only fixed location for the product variants: Only fixed locations specified for each product variant are valid.</span></span>  
+4. <span data-ttu-id="bcc96-173">Vyberte volbu v poli Strategie.</span><span class="sxs-lookup"><span data-stu-id="bcc96-173">In the Strategy field, select an option.</span></span>
+    * <span data-ttu-id="bcc96-174">Pořadí pracovních činností typu nákupní objednávka podporují následující strategie: Žádné: Položka je vložena na první nalezené skladové místo.</span><span class="sxs-lookup"><span data-stu-id="bcc96-174">Work orders of type Purchase order support the following strategies: None: the item is placed at the first location that’s found.</span></span> <span data-ttu-id="bcc96-175">Konsolidovat: Položka je umístěna na skladové místo, kde jsou již k dispozici podobné položky.</span><span class="sxs-lookup"><span data-stu-id="bcc96-175">Consolidate: The item is placed in a location where similar items are already available.</span></span> <span data-ttu-id="bcc96-176">Prázdné umístění s žádnou příchozí prací: Položka je umístěna na první prázdné nalezené skladové místo.</span><span class="sxs-lookup"><span data-stu-id="bcc96-176">Empty location with no incoming work: the item is placed in the first empty location that’s found.</span></span> <span data-ttu-id="bcc96-177">Skladové místo je považováno za prázdné, pokud nemá žádné fyzické zásoby a neočekává příchozí práci.</span><span class="sxs-lookup"><span data-stu-id="bcc96-177">A location is considered to be empty if it has no physical inventory and no expected incoming work.</span></span>  
+5. <span data-ttu-id="bcc96-178">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="bcc96-178">Click Save.</span></span>
 
-## <a name="edit-the-query-for-directive-action-line"></a>Úprava řádku akce dotazu pro směrnici
-1. Klikněte na možnost Upravit dotaz.
-2. Klepněte na možnost Přidat.
-3. Zadejte „ID profilu skladového místa“ do pole Pole.
-    * V tomto příkladu omezíme možná skladová místa pomocí ID profilu skladového místa.  
-4. Zadejte hodnotu do pole Kritéria.
-5. Klikněte na tlačítko OK.
-    * Můžete pokračovat v přidávání řádků směrnice a akcí směrnice, dokud nebudete mít pokryty všechny možné scénáře skladu.  
+## <a name="edit-the-query-for-directive-action-line"></a><span data-ttu-id="bcc96-179">Úprava řádku akce dotazu pro směrnici</span><span class="sxs-lookup"><span data-stu-id="bcc96-179">Edit the query for directive action line</span></span>
+1. <span data-ttu-id="bcc96-180">Klikněte na možnost Upravit dotaz.</span><span class="sxs-lookup"><span data-stu-id="bcc96-180">Click Edit query.</span></span>
+2. <span data-ttu-id="bcc96-181">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="bcc96-181">Click Add.</span></span>
+3. <span data-ttu-id="bcc96-182">Zadejte „ID profilu skladového místa“ do pole Pole.</span><span class="sxs-lookup"><span data-stu-id="bcc96-182">In the Field field, type 'location profile ID'.</span></span>
+    * <span data-ttu-id="bcc96-183">V tomto příkladu omezíme možná skladová místa pomocí ID profilu skladového místa.</span><span class="sxs-lookup"><span data-stu-id="bcc96-183">In this example, we’ll restrict the possible locations using a location profile ID.</span></span>  
+4. <span data-ttu-id="bcc96-184">Zadejte hodnotu do pole Kritéria.</span><span class="sxs-lookup"><span data-stu-id="bcc96-184">In the Criteria field, type a value.</span></span>
+5. <span data-ttu-id="bcc96-185">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="bcc96-185">Click OK.</span></span>
+    * <span data-ttu-id="bcc96-186">Můžete pokračovat v přidávání řádků směrnice a akcí směrnice, dokud nebudete mít pokryty všechny možné scénáře skladu.</span><span class="sxs-lookup"><span data-stu-id="bcc96-186">You can continue to add directive lines and directive actions until you have covered all the possible scenarios in your warehouse.</span></span>  
 
 

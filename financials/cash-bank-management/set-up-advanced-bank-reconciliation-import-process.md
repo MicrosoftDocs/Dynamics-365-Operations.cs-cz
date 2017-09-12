@@ -18,165 +18,165 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: a4d1c81386c0ef03391f3127fa51a6b09a5142b3
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 785da18a851c4d040843f49ca9f1b9ae12d701d3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Nastavení procesu importu rozšířené bankovního odsouhlasení
+# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a><span data-ttu-id="bc0c9-104">Nastavení procesu importu rozšířené bankovního odsouhlasení</span><span class="sxs-lookup"><span data-stu-id="bc0c9-104">Set up the advanced bank reconciliation import process</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Tento článek vysvětluje, jak nastavit funkci importu pro bankovní výpisy. 
+<span data-ttu-id="bc0c9-105">Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-105">The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="bc0c9-106">Tento článek vysvětluje, jak nastavit funkci importu pro bankovní výpisy.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-106">This article explains how to set up the import functionality for your bank statements.</span></span> 
 
-Nastavení import bankovního výpisu závisí na formátu vašeho elektronického bankovního výpisu. Aplikace Finance and Operations standardně podporuje tři formáty bankovního příkazu: ISO20022, MT940 a BAI2.
+<span data-ttu-id="bc0c9-107">Nastavení import bankovního výpisu závisí na formátu vašeho elektronického bankovního výpisu.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-107">The setup for bank statement import varies, depending on the format of your electronic bank statement.</span></span> <span data-ttu-id="bc0c9-108">Aplikace Finance and Operations standardně podporuje tři formáty bankovního příkazu: ISO20022, MT940 a BAI2.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-108">Finance and Operations supports three bank statement formats out of the box: ISO20022, MT940, and BAI2.</span></span>
 
-## <a name="sample-files"></a>Vzorové soubory
-Pro všechny tři formáty musíte mít soubory, které překládají elektronický bankovní výpis z původního formátu do formátu, který aplikace Finance and Operations může použít. Požadované soubory s prostředky můžete najít v uzlu **Prostředky** v průzkumníkovi aplikací v aplikaci Microsoft Visual Studio. Po nalezení souborů je zkopírujte na jedno známé umístění, ze kterého je můžete snadno odeslat během procesu instalace.
+## <a name="sample-files"></a><span data-ttu-id="bc0c9-109">Vzorové soubory</span><span class="sxs-lookup"><span data-stu-id="bc0c9-109">Sample files</span></span>
+<span data-ttu-id="bc0c9-110">Pro všechny tři formáty musíte mít soubory, které překládají elektronický bankovní výpis z původního formátu do formátu, který aplikace Finance and Operations může použít.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-110">For all three formats, you must have files that translate the electronic bank statement from the original format to a format that Finance and Operations can use.</span></span> <span data-ttu-id="bc0c9-111">Požadované soubory s prostředky můžete najít v uzlu **Prostředky** v průzkumníkovi aplikací v aplikaci Microsoft Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-111">You can find the required resource files under the **Resources** node in Application Explorer in Microsoft Visual Studio.</span></span> <span data-ttu-id="bc0c9-112">Po nalezení souborů je zkopírujte na jedno známé umístění, ze kterého je můžete snadno odeslat během procesu instalace.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-112">After you find the files, copy them to a single known location, so that you can more easily upload them during the setup process.</span></span>
 
-| Název prostředku                                           | Název souboru                            |
+| <span data-ttu-id="bc0c9-113">Název prostředku</span><span class="sxs-lookup"><span data-stu-id="bc0c9-113">Resource name</span></span>                                           | <span data-ttu-id="bc0c9-114">Název souboru</span><span class="sxs-lookup"><span data-stu-id="bc0c9-114">File name</span></span>                            |
 |---------------------------------------------------------|--------------------------------------|
-| BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt              | BAI2CSV-to-BAI2XML.xslt              |
-| BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt       | BAI2XML-to-Reconciliation.xslt       |
-| BankStmtImport\_BankReconciliation\_to\_Composite\_xslt | BankReconciliation-to-Composite.xslt |
-| BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt   | ISO20022XML-to-Reconciliation.xslt   |
-| BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt            | MT940TXT-to-MT940XML.xslt            |
-| BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt      | MT940XML-to-Reconciliation.xslt      |
-| BankStmtImport\_SampleBankCompositeEntity\_xml          | SampleBankCompositeEntity.xml        |
+| <span data-ttu-id="bc0c9-115">BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt</span><span class="sxs-lookup"><span data-stu-id="bc0c9-115">BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt</span></span>              | <span data-ttu-id="bc0c9-116">BAI2CSV-to-BAI2XML.xslt</span><span class="sxs-lookup"><span data-stu-id="bc0c9-116">BAI2CSV-to-BAI2XML.xslt</span></span>              |
+| <span data-ttu-id="bc0c9-117">BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="bc0c9-117">BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt</span></span>       | <span data-ttu-id="bc0c9-118">BAI2XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="bc0c9-118">BAI2XML-to-Reconciliation.xslt</span></span>       |
+| <span data-ttu-id="bc0c9-119">BankStmtImport\_BankReconciliation\_to\_Composite\_xslt</span><span class="sxs-lookup"><span data-stu-id="bc0c9-119">BankStmtImport\_BankReconciliation\_to\_Composite\_xslt</span></span> | <span data-ttu-id="bc0c9-120">BankReconciliation-to-Composite.xslt</span><span class="sxs-lookup"><span data-stu-id="bc0c9-120">BankReconciliation-to-Composite.xslt</span></span> |
+| <span data-ttu-id="bc0c9-121">BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="bc0c9-121">BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt</span></span>   | <span data-ttu-id="bc0c9-122">ISO20022XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="bc0c9-122">ISO20022XML-to-Reconciliation.xslt</span></span>   |
+| <span data-ttu-id="bc0c9-123">BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt</span><span class="sxs-lookup"><span data-stu-id="bc0c9-123">BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt</span></span>            | <span data-ttu-id="bc0c9-124">MT940TXT-to-MT940XML.xslt</span><span class="sxs-lookup"><span data-stu-id="bc0c9-124">MT940TXT-to-MT940XML.xslt</span></span>            |
+| <span data-ttu-id="bc0c9-125">BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="bc0c9-125">BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt</span></span>      | <span data-ttu-id="bc0c9-126">MT940XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="bc0c9-126">MT940XML-to-Reconciliation.xslt</span></span>      |
+| <span data-ttu-id="bc0c9-127">BankStmtImport\_SampleBankCompositeEntity\_xml</span><span class="sxs-lookup"><span data-stu-id="bc0c9-127">BankStmtImport\_SampleBankCompositeEntity\_xml</span></span>          | <span data-ttu-id="bc0c9-128">SampleBankCompositeEntity.xml</span><span class="sxs-lookup"><span data-stu-id="bc0c9-128">SampleBankCompositeEntity.xml</span></span>        |
 
-## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Příklady formátů bankovních výpisů a technické rozložení
-Níže jsou uvedeny příklady rozšířených definicí pokročilého souboru importu bankovního sesouhlasení a tři související ukázkové soubory výpisu: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a><span data-ttu-id="bc0c9-129">Příklady formátů bankovních výpisů a technické rozložení</span><span class="sxs-lookup"><span data-stu-id="bc0c9-129">Examples of bank statement formats and technical layouts</span></span>
+<span data-ttu-id="bc0c9-130">Níže jsou uvedeny příklady rozšířených definicí pokročilého souboru importu bankovního sesouhlasení a tři související ukázkové soubory výpisu: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</span><span class="sxs-lookup"><span data-stu-id="bc0c9-130">Below are examples of the advanced bank reconciliation import file technical layout definitions and three related bank statement example files: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</span></span>  
 
-| Technická definice rozložení                             | Vzorový soubor s bankovním výpisem          |
+| <span data-ttu-id="bc0c9-131">Technická definice rozložení</span><span class="sxs-lookup"><span data-stu-id="bc0c9-131">Technical layout definition</span></span>                             | <span data-ttu-id="bc0c9-132">Vzorový soubor s bankovním výpisem</span><span class="sxs-lookup"><span data-stu-id="bc0c9-132">Bank statement example file</span></span>          |
 |---------------------------------------------------------|--------------------------------------|
-| DynamicsAXMT940Layout                                   | MT940StatementExample                |
-| DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
-| DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
+| <span data-ttu-id="bc0c9-133">DynamicsAXMT940Layout</span><span class="sxs-lookup"><span data-stu-id="bc0c9-133">DynamicsAXMT940Layout</span></span>                                   | <span data-ttu-id="bc0c9-134">MT940StatementExample</span><span class="sxs-lookup"><span data-stu-id="bc0c9-134">MT940StatementExample</span></span>                |
+| <span data-ttu-id="bc0c9-135">DynamicsAXISO20022Layout</span><span class="sxs-lookup"><span data-stu-id="bc0c9-135">DynamicsAXISO20022Layout</span></span>                                | <span data-ttu-id="bc0c9-136">ISO20022StatementExample</span><span class="sxs-lookup"><span data-stu-id="bc0c9-136">ISO20022StatementExample</span></span>             |
+| <span data-ttu-id="bc0c9-137">DynamicsAXBAI2Layout</span><span class="sxs-lookup"><span data-stu-id="bc0c9-137">DynamicsAXBAI2Layout</span></span>                                    | <span data-ttu-id="bc0c9-138">BAI2StatementExample</span><span class="sxs-lookup"><span data-stu-id="bc0c9-138">BAI2StatementExample</span></span>                 |
 
  
 
-## <a name="set-up-the-import-of-iso20022-bank-statements"></a>Nastavení importu bankovních výpisů ISO20022
-Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpisů pro bankovní výpisy ISO20022 pomocí rozhraní datové entity.
+## <a name="set-up-the-import-of-iso20022-bank-statements"></a><span data-ttu-id="bc0c9-139">Nastavení importu bankovních výpisů ISO20022</span><span class="sxs-lookup"><span data-stu-id="bc0c9-139">Set up the import of ISO20022 bank statements</span></span>
+<span data-ttu-id="bc0c9-140">Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpisů pro bankovní výpisy ISO20022 pomocí rozhraní datové entity.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-140">First, you must define the bank statement format processing group for ISO20022 bank statements by using the data entity framework.</span></span>
 
-1.  Přejděte na **Pracovní prostory** &gt; **Správa dat**.
-2.  Klepněte na tlačítko **Import**.
-3.  Zadat název formátu, jako např. **ISO20022**.
-4.  V poli **Formát dat zdroje** zadejte **Prvek XML**.
-5.  V poli **Název entity** zadejte **Bankovní výpisy**.
-6.  Pro odeslání souborů pro import klepněte na tlačítko **Odeslat** a potom vyhledejte a vyberte soubor **SampleBankCompositeEntity.xml**, který jste dříve uložili.
-7.  Po odeslání entity bankovního výpisu a po dokončení mapování klepněte na akci **Zobrazit mapu** pro entitu.
-8.  Entita bankovního výpisu je složená entita, která se skládá ze čtyř samostatných entit. V seznamu vyberte **BankStatementDocumentEntity** a potom klepněte na akci **Zobrazit mapu**.
-9.  Na kartě **Transformace** klikněte na **Nový**.
-10. Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **ISO20022XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** Transformační soubory Finance and Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
-11. Klepněte na možnost **Nový**.
-12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BankReconciliation-to-Composite.xslt**, který jste dříve uložili.
-13. Klikněte na **Použít transformace**.
+1.  <span data-ttu-id="bc0c9-141">Přejděte na **Pracovní prostory** &gt; **Správa dat**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-141">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="bc0c9-142">Klepněte na tlačítko **Import**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-142">Click **Import**.</span></span>
+3.  <span data-ttu-id="bc0c9-143">Zadat název formátu, jako např. **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-143">Enter a name for the format, such as **ISO20022**.</span></span>
+4.  <span data-ttu-id="bc0c9-144">V poli **Formát dat zdroje** zadejte **Prvek XML**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-144">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="bc0c9-145">V poli **Název entity** zadejte **Bankovní výpisy**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-145">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="bc0c9-146">Pro odeslání souborů pro import klepněte na tlačítko **Odeslat** a potom vyhledejte a vyberte soubor **SampleBankCompositeEntity.xml**, který jste dříve uložili.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-146">To upload the import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="bc0c9-147">Po odeslání entity bankovního výpisu a po dokončení mapování klepněte na akci **Zobrazit mapu** pro entitu.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-147">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="bc0c9-148">Entita bankovního výpisu je složená entita, která se skládá ze čtyř samostatných entit.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-148">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="bc0c9-149">V seznamu vyberte **BankStatementDocumentEntity** a potom klepněte na akci **Zobrazit mapu**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-149">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="bc0c9-150">Na kartě **Transformace** klikněte na **Nový**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-150">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="bc0c9-151">Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **ISO20022XML-to-Reconciliation.xslt**, který jste dříve uložili.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-151">For sequence number 1, click **Upload file**, and select the **ISO20022XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="bc0c9-152">**Poznámka:** Transformační soubory Finance and Operations jsou vytvořeny pro standardní formát.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-152">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="bc0c9-153">Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-153">Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format.</span></span> <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+11. <span data-ttu-id="bc0c9-154">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-154">Click **New**.</span></span>
+12. <span data-ttu-id="bc0c9-155">Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BankReconciliation-to-Composite.xslt**, který jste dříve uložili.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-155">For sequence number 2, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+13. <span data-ttu-id="bc0c9-156">Klikněte na **Použít transformace**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-156">Click **Apply transforms**.</span></span>
 
-Po nastavení skupiny zpracování formátu je dalším krokem definovat pravidla formátu bankovního výpisu pro bankovní výpisy ISO20022.
+<span data-ttu-id="bc0c9-157">Po nastavení skupiny zpracování formátu je dalším krokem definovat pravidla formátu bankovního výpisu pro bankovní výpisy ISO20022.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-157">After the format processing group is set up, the next step is to define the bank statement format rules for ISO20022 bank statements.</span></span>
 
-1.  Přejděte do nabídky **Pokladna a banka** &gt; **Nastavení** &gt; **Nastavení rozšířeného odsouhlasení banky** &gt; **Formát bankovního výpisu**.
-2.  Klepněte na možnost **Nový**.
-3.  Určete formát výpisu jako například **ISO20022**.
-4.  Zadejte název formátu.
-5.  Nastavte pole **Skupina zpracování** na skupinu, kterou jste definovali dříve, jako například **ISO20022**.
-6.  Zaškrtněte políčko **XML file**.
+1.  <span data-ttu-id="bc0c9-158">Přejděte do nabídky **Pokladna a banka** &gt; **Nastavení** &gt; **Nastavení rozšířeného odsouhlasení banky** &gt; **Formát bankovního výpisu**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-158">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="bc0c9-159">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-159">Click **New**.</span></span>
+3.  <span data-ttu-id="bc0c9-160">Určete formát výpisu jako například **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-160">Specify a statement format, such as **ISO20022**.</span></span>
+4.  <span data-ttu-id="bc0c9-161">Zadejte název formátu.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-161">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="bc0c9-162">Nastavte pole **Skupina zpracování** na skupinu, kterou jste definovali dříve, jako například **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-162">Set the **Processing group** field to the group that you defined earlier, such as **ISO20022**.</span></span>
+6.  <span data-ttu-id="bc0c9-163">Zaškrtněte políčko **XML file**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-163">Select the **XML file** check box.</span></span>
 
-Posledním krokem je povolení rozšířeného odsouhlasení banky a nastavení formátu výpisu u bankovního účtu.
+<span data-ttu-id="bc0c9-164">Posledním krokem je povolení rozšířeného odsouhlasení banky a nastavení formátu výpisu u bankovního účtu.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-164">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Přejděte do části **Pokladna a banka** &gt; **Bankovní účty**.
-2.  Vyberte bankovní účet a jeho otevřením zobrazte jeho podrobnosti.
-3.  Na kartě **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení banky** na **Ano**.
-4.  Nastavte pole **Formát výpisu** na formát, který jste vytvořili dříve, jako například **ISO20022**.
+1.  <span data-ttu-id="bc0c9-165">Přejděte do části **Pokladna a banka** &gt; **Bankovní účty**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-165">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="bc0c9-166">Vyberte bankovní účet a jeho otevřením zobrazte jeho podrobnosti.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-166">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="bc0c9-167">Na kartě **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení banky** na **Ano**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-167">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="bc0c9-168">Nastavte pole **Formát výpisu** na formát, který jste vytvořili dříve, jako například **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-168">Set the **Statement format** field to the format that you created earlier, such as **ISO20022**.</span></span>
 
-## <a name="set-up-the-import-of-mt940-bank-statements"></a>Nastavení importu bankovních výpisů MT940
-Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpisů pro bankovní výpisy MT940 pomocí rozhraní datové entity.
+## <a name="set-up-the-import-of-mt940-bank-statements"></a><span data-ttu-id="bc0c9-169">Nastavení importu bankovních výpisů MT940</span><span class="sxs-lookup"><span data-stu-id="bc0c9-169">Set up the import of MT940 bank statements</span></span>
+<span data-ttu-id="bc0c9-170">Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpisů pro bankovní výpisy MT940 pomocí rozhraní datové entity.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-170">First, you must define the bank statement format processing group for MT940 bank statements by using the data entity framework.</span></span>
 
-1.  Přejděte na **Pracovní prostory** &gt; **Správa dat**.
-2.  Klepněte na tlačítko **Import**.
-3.  Zadat název formátu, jako např. **MT940**.
-4.  V poli **Formát dat zdroje** zadejte **Prvek XML**.
-5.  V poli **Název entity** zadejte **Bankovní výpisy**.
-6.  Pro odeslání souborů pro import klepněte na tlačítko **Odeslat** a potom vyhledejte a vyberte soubor **SampleBankCompositeEntity.xml**, který jste dříve uložili.
-7.  Po odeslání entity bankovního výpisu a po dokončení mapování klepněte na akci **Zobrazit mapu** pro entitu.
-8.  Entita bankovního výpisu je složená entita, která se skládá ze čtyř samostatných entit. V seznamu vyberte **BankStatementDocumentEntity** a potom klepněte na akci **Zobrazit mapu**.
-9.  Na kartě **Transformace** klikněte na **Nový**.
-10. Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **MT940TXT-to-MT940XML.xslt**, který jste dříve uložili.
-11. Klepněte na možnost **Nový**.
-12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **MT940XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** Transformační soubory Finance and Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
-13. Klepněte na možnost **Nový**.
-14. Pro pořadové číslo 3 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BankReconciliation-to-Composite.xslt**, který jste dříve uložili.
-15. Klikněte na **Použít transformace**.
+1.  <span data-ttu-id="bc0c9-171">Přejděte na **Pracovní prostory** &gt; **Správa dat**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-171">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="bc0c9-172">Klepněte na tlačítko **Import**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-172">Click **Import**.</span></span>
+3.  <span data-ttu-id="bc0c9-173">Zadat název formátu, jako např. **MT940**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-173">Enter a name for the format, such as **MT940**.</span></span>
+4.  <span data-ttu-id="bc0c9-174">V poli **Formát dat zdroje** zadejte **Prvek XML**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-174">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="bc0c9-175">V poli **Název entity** zadejte **Bankovní výpisy**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-175">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="bc0c9-176">Pro odeslání souborů pro import klepněte na tlačítko **Odeslat** a potom vyhledejte a vyberte soubor **SampleBankCompositeEntity.xml**, který jste dříve uložili.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-176">To upload import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="bc0c9-177">Po odeslání entity bankovního výpisu a po dokončení mapování klepněte na akci **Zobrazit mapu** pro entitu.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-177">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="bc0c9-178">Entita bankovního výpisu je složená entita, která se skládá ze čtyř samostatných entit.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-178">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="bc0c9-179">V seznamu vyberte **BankStatementDocumentEntity** a potom klepněte na akci **Zobrazit mapu**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-179">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="bc0c9-180">Na kartě **Transformace** klikněte na **Nový**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-180">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="bc0c9-181">Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **MT940TXT-to-MT940XML.xslt**, který jste dříve uložili.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-181">For sequence number 1, click **Upload file**, and select the **MT940TXT-to-MT940XML.xslt** file that you saved earlier.</span></span>
+11. <span data-ttu-id="bc0c9-182">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-182">Click **New**.</span></span>
+12. <span data-ttu-id="bc0c9-183">Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **MT940XML-to-Reconciliation.xslt**, který jste dříve uložili.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-183">For sequence number 2, click **Upload file**, and select the **MT940XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="bc0c9-184">**Poznámka:** Transformační soubory Finance and Operations jsou vytvořeny pro standardní formát.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-184">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="bc0c9-185">Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-185">Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format.</span></span> <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
+13. <span data-ttu-id="bc0c9-186">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-186">Click **New**.</span></span>
+14. <span data-ttu-id="bc0c9-187">Pro pořadové číslo 3 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BankReconciliation-to-Composite.xslt**, který jste dříve uložili.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-187">For sequence number 3, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+15. <span data-ttu-id="bc0c9-188">Klikněte na **Použít transformace**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-188">Click **Apply transforms**.</span></span>
 
-Po nastavení skupiny zpracování formátu je dalším krokem definovat pravidla formátu bankovního výpisu pro bankovní výpisy MT940.
+<span data-ttu-id="bc0c9-189">Po nastavení skupiny zpracování formátu je dalším krokem definovat pravidla formátu bankovního výpisu pro bankovní výpisy MT940.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-189">After the format processing group is set up, the next step is to define the bank statement format rules for MT940 bank statements.</span></span>
 
-1.  Přejděte do nabídky **Pokladna a banka** &gt; **Nastavení** &gt; **Nastavení rozšířeného odsouhlasení banky** &gt; **Formát bankovního výpisu**.
-2.  Klepněte na možnost **Nový**.
-3.  Určete formát výpisu jako například **MT940**.
-4.  Zadejte název formátu.
-5.  Nastavte pole **Skupina zpracování** na skupinu, kterou jste definovali dříve, jako například **MT940**.
-6.  Nastavte pole **Typ souboru** na hodnotu **txt**.
+1.  <span data-ttu-id="bc0c9-190">Přejděte do nabídky **Pokladna a banka** &gt; **Nastavení** &gt; **Nastavení rozšířeného odsouhlasení banky** &gt; **Formát bankovního výpisu**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-190">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="bc0c9-191">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-191">Click **New**.</span></span>
+3.  <span data-ttu-id="bc0c9-192">Určete formát výpisu jako například **MT940**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-192">Specify a statement format, such as **MT940**.</span></span>
+4.  <span data-ttu-id="bc0c9-193">Zadejte název formátu.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-193">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="bc0c9-194">Nastavte pole **Skupina zpracování** na skupinu, kterou jste definovali dříve, jako například **MT940**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-194">Set the **Processing group** field to the group that you defined earlier, such as **MT940**.</span></span>
+6.  <span data-ttu-id="bc0c9-195">Nastavte pole **Typ souboru** na hodnotu **txt**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-195">Set the **File type** field to **txt**.</span></span>
 
-Posledním krokem je povolení rozšířeného odsouhlasení banky a nastavení formátu výpisu u bankovního účtu.
+<span data-ttu-id="bc0c9-196">Posledním krokem je povolení rozšířeného odsouhlasení banky a nastavení formátu výpisu u bankovního účtu.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-196">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Přejděte do části **Pokladna a banka** &gt; **Bankovní účty**.
-2.  Vyberte bankovní účet a jeho otevřením zobrazte jeho podrobnosti.
-3.  Na kartě **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení banky** na **Ano**.
-4.  Po zobrazení výzvy k potvrzení výběru a povolení rozšířeného odsouhlasení banky klepněte na tlačítko **OK**.
-5.  Nastavte pole **Formát výpisu** na formát, který jste vytvořili dříve, jako například **MT940**.
+1.  <span data-ttu-id="bc0c9-197">Přejděte do části **Pokladna a banka** &gt; **Bankovní účty**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-197">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="bc0c9-198">Vyberte bankovní účet a jeho otevřením zobrazte jeho podrobnosti.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-198">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="bc0c9-199">Na kartě **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení banky** na **Ano**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-199">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="bc0c9-200">Po zobrazení výzvy k potvrzení výběru a povolení rozšířeného odsouhlasení banky klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-200">When you're prompted to confirm your selection and enable Advanced bank reconciliation, click **OK**.</span></span>
+5.  <span data-ttu-id="bc0c9-201">Nastavte pole **Formát výpisu** na formát, který jste vytvořili dříve, jako například **MT940**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-201">Set the **Statement format** field to the format that you created earlier, such as **MT940**.</span></span>
 
-## <a name="set-up-the-import-of-bai2-bank-statements"></a>Nastavení importu bankovních výpisů BAI2
-Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpisů pro bankovní výpisy BAI2 pomocí rozhraní datové entity.
+## <a name="set-up-the-import-of-bai2-bank-statements"></a><span data-ttu-id="bc0c9-202">Nastavení importu bankovních výpisů BAI2</span><span class="sxs-lookup"><span data-stu-id="bc0c9-202">Set up the import of BAI2 bank statements</span></span>
+<span data-ttu-id="bc0c9-203">Nejprve je nutné definovat skupinu pro zpracování formátu bankovních výpisů pro bankovní výpisy BAI2 pomocí rozhraní datové entity.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-203">First, you must define the bank statement format processing group for BAI2 bank statements by using the data entity framework.</span></span>
 
-1.  Přejděte na **Pracovní prostory** &gt; **Správa dat**.
-2.  Klepněte na tlačítko **Import**.
-3.  Zadat název formátu, jako např. **BAI2**.
-4.  V poli **Formát dat zdroje** zadejte **Prvek XML**.
-5.  V poli **Název entity** zadejte **Bankovní výpisy**.
-6.  Pro odeslání souborů pro import klepněte na tlačítko **Odeslat** a potom vyhledejte a vyberte soubor **SampleBankCompositeEntity.xml**, který jste dříve uložili.
-7.  Po odeslání entity bankovního výpisu a po dokončení mapování klepněte na akci **Zobrazit mapu** pro entitu.
-8.  Entita bankovního výpisu je složená entita, která se skládá ze čtyř samostatných entit. V seznamu vyberte **BankStatementDocumentEntity** a potom klepněte na akci **Zobrazit mapu**.
-9.  Na kartě **Transformace** klikněte na **Nový**.
-10. Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BAI2CSV-to-BAI2XML.xslt**, který jste dříve uložili.
-11. Klepněte na možnost **Nový**.
-12. Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BAI2XML-to-Reconciliation.xslt**, který jste dříve uložili. **Poznámka:** Transformační soubory Finance and Operations jsou vytvořeny pro standardní formát. Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
-13. Klepněte na možnost **Nový**.
-14. Pro pořadové číslo 3 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BankReconciliation-to-Composite.xslt**, který jste dříve uložili.
-15. Klikněte na **Použít transformace**.
+1.  <span data-ttu-id="bc0c9-204">Přejděte na **Pracovní prostory** &gt; **Správa dat**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-204">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="bc0c9-205">Klepněte na tlačítko **Import**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-205">Click **Import**.</span></span>
+3.  <span data-ttu-id="bc0c9-206">Zadat název formátu, jako např. **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-206">Enter a name for the format, such as **BAI2**.</span></span>
+4.  <span data-ttu-id="bc0c9-207">V poli **Formát dat zdroje** zadejte **Prvek XML**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-207">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="bc0c9-208">V poli **Název entity** zadejte **Bankovní výpisy**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-208">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="bc0c9-209">Pro odeslání souborů pro import klepněte na tlačítko **Odeslat** a potom vyhledejte a vyberte soubor **SampleBankCompositeEntity.xml**, který jste dříve uložili.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-209">To upload import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="bc0c9-210">Po odeslání entity bankovního výpisu a po dokončení mapování klepněte na akci **Zobrazit mapu** pro entitu.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-210">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="bc0c9-211">Entita bankovního výpisu je složená entita, která se skládá ze čtyř samostatných entit.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-211">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="bc0c9-212">V seznamu vyberte **BankStatementDocumentEntity** a potom klepněte na akci **Zobrazit mapu**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-212">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="bc0c9-213">Na kartě **Transformace** klikněte na **Nový**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-213">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="bc0c9-214">Pro pořadové číslo 1 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BAI2CSV-to-BAI2XML.xslt**, který jste dříve uložili.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-214">For sequence number 1, click **Upload file**, and select the **BAI2CSV-to-BAI2XML.xslt** file that you saved earlier.</span></span>
+11. <span data-ttu-id="bc0c9-215">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-215">Click **New**.</span></span>
+12. <span data-ttu-id="bc0c9-216">Pro pořadové číslo 2 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BAI2XML-to-Reconciliation.xslt**, který jste dříve uložili.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-216">For sequence number 2, click **Upload file**, and select the **BAI2XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="bc0c9-217">**Poznámka:** Transformační soubory Finance and Operations jsou vytvořeny pro standardní formát.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-217">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="bc0c9-218">Vzhledem k tomu, že banka se často odchyluje od tohoto formátu, bude možná nutné aktualizovat soubor transformace tak, aby mapoval váš formát bankovního výpisu.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-218">Because banks often diverge from this format, and you may have to update the transformation file to map to your bank statement format.</span></span> <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
+13. <span data-ttu-id="bc0c9-219">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-219">Click **New**.</span></span>
+14. <span data-ttu-id="bc0c9-220">Pro pořadové číslo 3 klepněte na tlačítko **Odeslat soubor** a vyberte soubor **BankReconciliation-to-Composite.xslt**, který jste dříve uložili.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-220">For sequence number 3, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+15. <span data-ttu-id="bc0c9-221">Klikněte na **Použít transformace**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-221">Click **Apply transforms**.</span></span>
 
-Po nastavení skupiny zpracování formátu je dalším krokem definovat pravidla formátu bankovního výpisu pro bankovní výpisy BAI2.
+<span data-ttu-id="bc0c9-222">Po nastavení skupiny zpracování formátu je dalším krokem definovat pravidla formátu bankovního výpisu pro bankovní výpisy BAI2.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-222">After the format processing group is set up, the next step is to define the bank statement format rules for BAI2 bank statements.</span></span>
 
-1.  Přejděte do nabídky **Pokladna a banka** &gt; **Nastavení** &gt; **Nastavení rozšířeného odsouhlasení banky** &gt; **Formát bankovního výpisu**.
-2.  Klepněte na možnost **Nový**.
-3.  Určete formát výpisu jako například **BAI2**.
-4.  Zadejte název formátu.
-5.  Nastavte pole **Skupina zpracování** na skupinu, kterou jste definovali dříve, jako například **BAI2**.
-6.  Nastavte pole **Typ souboru** na hodnotu **txt**.
+1.  <span data-ttu-id="bc0c9-223">Přejděte do nabídky **Pokladna a banka** &gt; **Nastavení** &gt; **Nastavení rozšířeného odsouhlasení banky** &gt; **Formát bankovního výpisu**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-223">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="bc0c9-224">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-224">Click **New**.</span></span>
+3.  <span data-ttu-id="bc0c9-225">Určete formát výpisu jako například **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-225">Specify a statement format, such as **BAI2**.</span></span>
+4.  <span data-ttu-id="bc0c9-226">Zadejte název formátu.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-226">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="bc0c9-227">Nastavte pole **Skupina zpracování** na skupinu, kterou jste definovali dříve, jako například **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-227">Set the **Processing group** field to the group that you defined earlier, such as **BAI2**.</span></span>
+6.  <span data-ttu-id="bc0c9-228">Nastavte pole **Typ souboru** na hodnotu **txt**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-228">Set the **File type** field to **txt**.</span></span>
 
-Posledním krokem je povolení rozšířeného odsouhlasení banky a nastavení formátu výpisu u bankovního účtu.
+<span data-ttu-id="bc0c9-229">Posledním krokem je povolení rozšířeného odsouhlasení banky a nastavení formátu výpisu u bankovního účtu.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-229">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Přejděte do části **Pokladna a banka** &gt; **Bankovní účty**.
-2.  Vyberte bankovní účet a jeho otevřením zobrazte jeho podrobnosti.
-3.  Na kartě **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení banky** na **Ano**.
-4.  Po zobrazení výzvy k potvrzení výběru a povolení rozšířeného odsouhlasení banky klepněte na tlačítko **OK**.
-5.  Nastavte pole **Formát výpisu** na formát, který jste vytvořili dříve, jako například **BAI2**.
+1.  <span data-ttu-id="bc0c9-230">Přejděte do části **Pokladna a banka** &gt; **Bankovní účty**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-230">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="bc0c9-231">Vyberte bankovní účet a jeho otevřením zobrazte jeho podrobnosti.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-231">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="bc0c9-232">Na kartě **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení banky** na **Ano**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-232">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="bc0c9-233">Po zobrazení výzvy k potvrzení výběru a povolení rozšířeného odsouhlasení banky klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-233">When you're prompted to confirm your selection and enable Advanced bank reconciliation, click **OK**.</span></span>
+5.  <span data-ttu-id="bc0c9-234">Nastavte pole **Formát výpisu** na formát, který jste vytvořili dříve, jako například **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-234">Set the **Statement format** field to the format that you created earlier, such as **BAI2**.</span></span>
 
-## <a name="test-the-bank-statement-import"></a>Testování importu bankovního výpisu
-Posledním krokem je testování toho, že můžete importovat bankovní výpis.
+## <a name="test-the-bank-statement-import"></a><span data-ttu-id="bc0c9-235">Testování importu bankovního výpisu</span><span class="sxs-lookup"><span data-stu-id="bc0c9-235">Test the bank statement import</span></span>
+<span data-ttu-id="bc0c9-236">Posledním krokem je testování toho, že můžete importovat bankovní výpis.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-236">The final step is to test that you can import your bank statement.</span></span>
 
-1.  Přejděte do části **Pokladna a banka** &gt; **Bankovní účty**.
-2.  Vyberte bankovní účet, pro který je povolena funkce Rozšířené odsouhlasení banky.
-3.  Na kartě **Odsouhlasit** klepněte na tlačítko **Bankovní výpisy**.
-4.  Na stránce **Bankovní výpis** klepněte na tlačítko **Import výpisu**.
-5.  Nastavte pole **Bankovní účet** na vybraný bankovní účet. Pole **Formát výpisu** bude nastaveno automaticky na základě nastavení v bankovním účtu.
-6.  Klepněte na tlačítko **Procházet** a vyberte váš soubor elektronického bankovního výpisu.
-7.  Klepněte na položku **Odeslat**.
-8.  Klepněte na tlačítko **OK**.
+1.  <span data-ttu-id="bc0c9-237">Přejděte do části **Pokladna a banka** &gt; **Bankovní účty**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-237">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="bc0c9-238">Vyberte bankovní účet, pro který je povolena funkce Rozšířené odsouhlasení banky.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-238">Select the bank account that Advanced bank reconciliation functionality is enabled for.</span></span>
+3.  <span data-ttu-id="bc0c9-239">Na kartě **Odsouhlasit** klepněte na tlačítko **Bankovní výpisy**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-239">On the **Reconcile** tab, click **Bank statements**.</span></span>
+4.  <span data-ttu-id="bc0c9-240">Na stránce **Bankovní výpis** klepněte na tlačítko **Import výpisu**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-240">On the **Bank statement** page, click **Import statement**.</span></span>
+5.  <span data-ttu-id="bc0c9-241">Nastavte pole **Bankovní účet** na vybraný bankovní účet.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-241">Set the **Bank account** field to the selected bank account.</span></span> <span data-ttu-id="bc0c9-242">Pole **Formát výpisu** bude nastaveno automaticky na základě nastavení v bankovním účtu.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-242">The **Statement format** field will be set automatically, based on the setting on the bank account.</span></span>
+6.  <span data-ttu-id="bc0c9-243">Klepněte na tlačítko **Procházet** a vyberte váš soubor elektronického bankovního výpisu.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-243">Click **Browse**, and select your electronic bank statement file.</span></span>
+7.  <span data-ttu-id="bc0c9-244">Klepněte na položku **Odeslat**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-244">Click **Upload**.</span></span>
+8.  <span data-ttu-id="bc0c9-245">Klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-245">Click **OK**.</span></span>
 
-Pokud import proběhne úspěšně, zobrazí se vám zpráva oznamující, že byl výkaz importován. Pokud import nebyl úspěšný, v pracovním prostoru **Správa dat** v části **Historie úlohy** vyhledejte úlohu. Kliknutím na tlačítko **Podrobnosti o spuštění** u úlohy otevřete stránku **Souhrn spuštění** a potom kliknutím na tlačítko **Zobrazit protokol provádění** zobrazte chyby importu.
+<span data-ttu-id="bc0c9-246">Pokud import proběhne úspěšně, zobrazí se vám zpráva oznamující, že byl výkaz importován.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-246">If the import is successful, you will receive a message that states that your statement was imported.</span></span> <span data-ttu-id="bc0c9-247">Pokud import nebyl úspěšný, v pracovním prostoru **Správa dat** v části **Historie úlohy** vyhledejte úlohu.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-247">If the import wasn't successful, in the **Data management** workspace, in the **Job history** section, find the job.</span></span> <span data-ttu-id="bc0c9-248">Kliknutím na tlačítko **Podrobnosti o spuštění** u úlohy otevřete stránku **Souhrn spuštění** a potom kliknutím na tlačítko **Zobrazit protokol provádění** zobrazte chyby importu.</span><span class="sxs-lookup"><span data-stu-id="bc0c9-248">Click **Execution details** for the job to open the **Execution summary** page, and then click **View execution log** to view the import errors.</span></span>
 
 
 

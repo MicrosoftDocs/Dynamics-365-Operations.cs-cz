@@ -16,30 +16,30 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 3f545d5792a0a5cf132799d5fb04bb43f63343b9
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 324be23a1e26de0d05c7cf6a61567f7260d0c390
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-accrual-schemes"></a>Vytvoření schémat časového rozlišení
+# <a name="create-accrual-schemes"></a><span data-ttu-id="8cb5d-103">Vytvoření schémat časového rozlišení</span><span class="sxs-lookup"><span data-stu-id="8cb5d-103">Create accrual schemes</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento průvodce úkoly vás provede vytvořením schématu časového rozlišení. Tento úkol používá ukázkovou společnost USMF.
+<span data-ttu-id="8cb5d-104">Tento průvodce úkoly vás provede vytvořením schématu časového rozlišení.</span><span class="sxs-lookup"><span data-stu-id="8cb5d-104">This task guide steps through creating an accrual scheme.</span></span> <span data-ttu-id="8cb5d-105">Tento úkol používá ukázkovou společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="8cb5d-105">This task uses the USMF demo company.</span></span>
 
-1. Přejděte do hlavní knihy > Nastavení deníku > Schémata časového rozlišení.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Identifikace časového rozlišení.
-4. Do pole Popis schématu časového rozlišení zadejte hodnotu.
-5. Zadejte požadované hodnoty do pole Má dáti.
-    * Definovaný hlavní účet nahradí hlavní účet Má dáti v řádku dokladu deníku také bude použit pro stornování časově rozlišených položek na základě transakcí časového rozlišení hlavní knihy.  
-6. Zadejte požadované hodnoty do pole Dal.
-    * Definovaný hlavní účet nahradí kreditní hlavní účet řádku dokladu deníku a také bude použit pro stornování časově rozlišených položek podle transakcí časového rozlišení hlavní knihy.  
-7. V poli Doklad vyberte způsob určení dokladu, když jsou transakce zaúčtovány.
-8. V poli Popis zadejte hodnotu k popisu transakcí, které mají být zaúčtovány.
-9. V poli Frekvence období vyberte, jak často by transakce měla být zaznamenána.
-10. Do pole Počet výskytů podle období zadejte číslo.
-11. V poli Zaúčtovat transakce vyberte, kdy transakce mají být zaúčtovány – například měsíčně.
+1. <span data-ttu-id="8cb5d-106">Přejděte do hlavní knihy > Nastavení deníku > Schémata časového rozlišení.</span><span class="sxs-lookup"><span data-stu-id="8cb5d-106">Go to General ledger > Journal setup > Accrual schemes.</span></span>
+2. <span data-ttu-id="8cb5d-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8cb5d-107">Click New.</span></span>
+3. <span data-ttu-id="8cb5d-108">Zadejte hodnotu do pole Identifikace časového rozlišení.</span><span class="sxs-lookup"><span data-stu-id="8cb5d-108">In the Accrual identification field, type a value.</span></span>
+4. <span data-ttu-id="8cb5d-109">Do pole Popis schématu časového rozlišení zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8cb5d-109">In the Description of accrual scheme field, type a value.</span></span>
+5. <span data-ttu-id="8cb5d-110">Zadejte požadované hodnoty do pole Má dáti.</span><span class="sxs-lookup"><span data-stu-id="8cb5d-110">In the Debit field, specify the desired values.</span></span>
+    * <span data-ttu-id="8cb5d-111">Definovaný hlavní účet nahradí hlavní účet Má dáti v řádku dokladu deníku také bude použit pro stornování časově rozlišených položek na základě transakcí časového rozlišení hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="8cb5d-111">The main account defined will replace the debit main account on the journal voucher line and it will also be used for the reversal of the deferral based on the ledger accrual transactions.</span></span>  
+6. <span data-ttu-id="8cb5d-112">Zadejte požadované hodnoty do pole Dal.</span><span class="sxs-lookup"><span data-stu-id="8cb5d-112">In the Credit field, specify the desired values.</span></span>
+    * <span data-ttu-id="8cb5d-113">Definovaný hlavní účet nahradí kreditní hlavní účet řádku dokladu deníku a také bude použit pro stornování časově rozlišených položek podle transakcí časového rozlišení hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="8cb5d-113">The main account defined will replace the credit main account on the journal voucher line and it will also be used for the reversal of the deferral based on the ledger accrual transactions.</span></span>  
+7. <span data-ttu-id="8cb5d-114">V poli Doklad vyberte způsob určení dokladu, když jsou transakce zaúčtovány.</span><span class="sxs-lookup"><span data-stu-id="8cb5d-114">In the Voucher field, select how you want the voucher determined when the transactions are posted.</span></span>
+8. <span data-ttu-id="8cb5d-115">V poli Popis zadejte hodnotu k popisu transakcí, které mají být zaúčtovány.</span><span class="sxs-lookup"><span data-stu-id="8cb5d-115">In the Description field, type a value to describe the transactions that will be posted.</span></span>
+9. <span data-ttu-id="8cb5d-116">V poli Frekvence období vyberte, jak často by transakce měla být zaznamenána.</span><span class="sxs-lookup"><span data-stu-id="8cb5d-116">In the Period frequency field, select how often the transactions should occur.</span></span>
+10. <span data-ttu-id="8cb5d-117">Do pole Počet výskytů podle období zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="8cb5d-117">In the Number of occurrences by period field, enter a number.</span></span>
+11. <span data-ttu-id="8cb5d-118">V poli Zaúčtovat transakce vyberte, kdy transakce mají být zaúčtovány – například měsíčně.</span><span class="sxs-lookup"><span data-stu-id="8cb5d-118">In the Post transactions field, select when the transactions should be posted, such as Monthly.</span></span>
 
 

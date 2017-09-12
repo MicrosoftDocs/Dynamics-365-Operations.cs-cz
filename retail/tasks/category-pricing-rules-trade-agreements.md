@@ -17,45 +17,45 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: dd6233146c7c38e729ef2f250177691967427df9
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: bfd3dd7f7b804eb53cee2f6a9a056ae1a693cfa6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="category-pricing-rules-to-create-trade-agreements"></a> Cenová pravidla kategorií pro vytváření obchodních smluv
+# <a name="category-pricing-rules-to-create-trade-agreements"></a><span data-ttu-id="7fd44-103"> Cenová pravidla kategorií pro vytváření obchodních smluv</span><span class="sxs-lookup"><span data-stu-id="7fd44-103">Category pricing rules to create trade agreements</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Tato procedura ukazuje, jak vytvořit obchodní smlouvy o prodejních cenách pomocí kategorizace cenových pravidel. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USRT. Tento úkol je určen pro roli Manažer maloobchodního prodeje.
+<span data-ttu-id="7fd44-104">Tato procedura ukazuje, jak vytvořit obchodní smlouvy o prodejních cenách pomocí kategorizace cenových pravidel.</span><span class="sxs-lookup"><span data-stu-id="7fd44-104">This procedure demonstrates how to create sales price trade agreements using a category pricing rule.</span></span> <span data-ttu-id="7fd44-105">Tento úkol byl vytvořen pomocí ukázkových dat společnosti USRT.</span><span class="sxs-lookup"><span data-stu-id="7fd44-105">The demo data company used to create this task is USRT.</span></span> <span data-ttu-id="7fd44-106">Tento úkol je určen pro roli Manažer maloobchodního prodeje.</span><span class="sxs-lookup"><span data-stu-id="7fd44-106">This task is intended for the Retail merchandising manager role.</span></span>
 
-1. Klikněte na Správa cen a slev.
-2. Klikněte na položku Nová.
-3. Klikněte na Cenové pravidlo kategorie.
-4. Označte v seznamu vybraný řádek.
-5. Vyberte možnost v poli Kód účtu.
-    * Kód typu účtu „Skupina“ se používá pro stanovení obchodních smluv o prodejních cenách, které jsou specifické pro kanály, věrnostní programy, katalogy a umístění.  
-6. V poli Výběr účtu zadejte nebo vyberte hodnotu.
-7. V poli Kategorie zadejte nebo vyberte hodnotu.
-8. Zadejte číslo do pole Částka/procenta.
-9. V poli Verze zaokrouhlování zadejte nebo vyberte hodnotu.
-10. Klikněte na možnost Generovat obchodní smlouvy.
-11. Klepněte na tlačítko Další.
-12. Zadejte datum do pole Od data.
-13. Do pole Do data zadejte datum.
-14. Vyberte možnost Ano v poli Najít další.
-15. Klepněte na tlačítko Další.
-16. Klepněte na tlačítko Dokončit.
-    * Tím vytvoříte deník obchodních smluv a otevře jej pro kontrolu.  
-17. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-    * Deníky obchodních smluv, které jsou vytvořeny z Kategorizace cenových pravidel, nebudou zaúčtovány. Můžete zkontrolovat a upravit ceny vygenerované před jejich zaúčtováním.  
-18. Klikněte na položku Upravit.
-19. Zadejte číslo do pole Částka v měně.
-20. Klikněte na položku Zaúčtovat.
-21. Klikněte na tlačítko OK.
-22. Zavřete stránku.
-23. Zavřete stránku.
-24. Klikněte na kartu Cenová pravidla kategorie.
-    * Kategorizace cenových pravidel specifická pro kanál se zobrazí na tomto seznamu.  
+1. <span data-ttu-id="7fd44-107">Klikněte na Správa cen a slev.</span><span class="sxs-lookup"><span data-stu-id="7fd44-107">Click Pricing and discount management.</span></span>
+2. <span data-ttu-id="7fd44-108">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="7fd44-108">Click New.</span></span>
+3. <span data-ttu-id="7fd44-109">Klikněte na Cenové pravidlo kategorie.</span><span class="sxs-lookup"><span data-stu-id="7fd44-109">Click Category price rule.</span></span>
+4. <span data-ttu-id="7fd44-110">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="7fd44-110">In the list, mark the selected row.</span></span>
+5. <span data-ttu-id="7fd44-111">Vyberte možnost v poli Kód účtu.</span><span class="sxs-lookup"><span data-stu-id="7fd44-111">In the Account code field, select an option.</span></span>
+    * <span data-ttu-id="7fd44-112">Kód typu účtu „Skupina“ se používá pro stanovení obchodních smluv o prodejních cenách, které jsou specifické pro kanály, věrnostní programy, katalogy a umístění.</span><span class="sxs-lookup"><span data-stu-id="7fd44-112">A "Group" type account code is used to set up sales price trade agreements that are specific for Channels, Loyalty programs, Catalogs, and Affiliations.</span></span>  
+6. <span data-ttu-id="7fd44-113">V poli Výběr účtu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="7fd44-113">In the Account selection field, enter or select a value.</span></span>
+7. <span data-ttu-id="7fd44-114">V poli Kategorie zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="7fd44-114">In the Category field, enter or select a value.</span></span>
+8. <span data-ttu-id="7fd44-115">Zadejte číslo do pole Částka/procenta.</span><span class="sxs-lookup"><span data-stu-id="7fd44-115">In the Amount/Percent field, enter a number.</span></span>
+9. <span data-ttu-id="7fd44-116">V poli Verze zaokrouhlování zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="7fd44-116">In the Rounding version field, enter or select a value.</span></span>
+10. <span data-ttu-id="7fd44-117">Klikněte na možnost Generovat obchodní smlouvy.</span><span class="sxs-lookup"><span data-stu-id="7fd44-117">Click Generate trade agreements.</span></span>
+11. <span data-ttu-id="7fd44-118">Klepněte na tlačítko Další.</span><span class="sxs-lookup"><span data-stu-id="7fd44-118">Click Next.</span></span>
+12. <span data-ttu-id="7fd44-119">Zadejte datum do pole Od data.</span><span class="sxs-lookup"><span data-stu-id="7fd44-119">In the From date field, enter a date.</span></span>
+13. <span data-ttu-id="7fd44-120">Do pole Do data zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="7fd44-120">In the To date field, enter a date.</span></span>
+14. <span data-ttu-id="7fd44-121">Vyberte možnost Ano v poli Najít další.</span><span class="sxs-lookup"><span data-stu-id="7fd44-121">Select Yes in the Find next field.</span></span>
+15. <span data-ttu-id="7fd44-122">Klepněte na tlačítko Další.</span><span class="sxs-lookup"><span data-stu-id="7fd44-122">Click Next.</span></span>
+16. <span data-ttu-id="7fd44-123">Klepněte na tlačítko Dokončit.</span><span class="sxs-lookup"><span data-stu-id="7fd44-123">Click Finish.</span></span>
+    * <span data-ttu-id="7fd44-124">Tím vytvoříte deník obchodních smluv a otevře jej pro kontrolu.</span><span class="sxs-lookup"><span data-stu-id="7fd44-124">This creates a Trade agreement journal and opens it for your review.</span></span>  
+17. <span data-ttu-id="7fd44-125">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="7fd44-125">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="7fd44-126">Deníky obchodních smluv, které jsou vytvořeny z Kategorizace cenových pravidel, nebudou zaúčtovány.</span><span class="sxs-lookup"><span data-stu-id="7fd44-126">The trade agreement journals created from the Category pricing rules aren't posted.</span></span> <span data-ttu-id="7fd44-127">Můžete zkontrolovat a upravit ceny vygenerované před jejich zaúčtováním.</span><span class="sxs-lookup"><span data-stu-id="7fd44-127">You can  review and edit the prices generated before posting them.</span></span>  
+18. <span data-ttu-id="7fd44-128">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="7fd44-128">Click Edit.</span></span>
+19. <span data-ttu-id="7fd44-129">Zadejte číslo do pole Částka v měně.</span><span class="sxs-lookup"><span data-stu-id="7fd44-129">In the Amount in currency field, enter a number.</span></span>
+20. <span data-ttu-id="7fd44-130">Klikněte na položku Zaúčtovat.</span><span class="sxs-lookup"><span data-stu-id="7fd44-130">Click Post.</span></span>
+21. <span data-ttu-id="7fd44-131">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="7fd44-131">Click OK.</span></span>
+22. <span data-ttu-id="7fd44-132">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="7fd44-132">Close the page.</span></span>
+23. <span data-ttu-id="7fd44-133">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="7fd44-133">Close the page.</span></span>
+24. <span data-ttu-id="7fd44-134">Klikněte na kartu Cenová pravidla kategorie.</span><span class="sxs-lookup"><span data-stu-id="7fd44-134">Click the Category price rules tab.</span></span>
+    * <span data-ttu-id="7fd44-135">Kategorizace cenových pravidel specifická pro kanál se zobrazí na tomto seznamu.</span><span class="sxs-lookup"><span data-stu-id="7fd44-135">Channel specific Category pricing rules will show in this list.</span></span>  
 
 
