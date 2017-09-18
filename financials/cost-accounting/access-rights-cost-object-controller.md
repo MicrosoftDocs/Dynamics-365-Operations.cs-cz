@@ -27,7 +27,7 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-## <a name="access-rights-of-a-cost-object-controller"></a>Přístupová práva kontrolora objektu nákladů
+# <a name="access-rights-of-a-cost-object-controller"></a>Přístupová práva kontrolora objektu nákladů
 
 [!include[banner](../includes/banner.md)]
 
