@@ -1,0 +1,340 @@
+---
+title: "Konfigurace ručního rozhodnutí ve workflowu"
+description: "Toto téma vysvětluje, jak nakonfigurovat vlastnosti ručního rozhodnutí."
+author: sericks007
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+audience: Application User, IT Pro
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.custom: 192101
+ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
+ms.search.region: Global
+ms.author: donaldc
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.dyn365.ops.version: AX 7.0.0
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 6ea8b060741ea94af16861d5bb52894a577e5521
+ms.contentlocale: cs-cz
+ms.lasthandoff: 06/13/2017
+
+---
+
+# <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurace ručního rozhodnutí ve workflowu
+
+[!include[banner](../includes/banner.md)]
+
+
+Toto téma vysvětluje, jak nakonfigurovat vlastnosti ručního rozhodnutí.
+
+Pokud budete chtít nakonfigurovat ruční rozhodnutí v editoru workflowu, klikněte pravým tlačítkem myši na ruční rozhodnutí a kliknutím na tlačítko **Vlastnosti** otevřete stránku **Vlastnosti**. Následně nakonfigurujte vlastnosti dílčího workflowu pomocí ručního rozhodnutí.
+
+## <a name="name-the-decision"></a>Název rozhodnutí
+Pomocí následujících kroků zadejte název ručního rozhodnutí.
+
+1.  V levém podokně klepněte na tlačítko **Základní nastavení**.
+2.  V poli **Název** zadejte jedinečný název ručního rozhodnutí.
+
+## <a name="enter-a-subject-line-and-instructions"></a>Zadání řádku předmětu a pokynů
+Musíte zadat řádek předmětu a pokyny pro uživatele přiřazené k tomuto ručnímu rozhodnutí. Například pokud konfigurujete rozhodnutí pro nákupní požadavky, uživatel, který je k rozhodnutí přiřazeno, uvidí řádek s předmětem a pokyny na stránce **Nákupní žádanky**. Řádek předmětu se zobrazí na panelu zpráv na stránce. Uživatel poté může kliknutím na ikonu na panelu zpráv zobrazit pokyny. K zadání řádku předmětu a pokynů použijte následující postup.
+
+1.  V levém podokně klepněte na tlačítko **Základní nastavení**.
+2.  Na kartě **Pokyny** v poli **Předmět pracovní položky** zadejte řádek předmětu.
+3.  Řádek předmětu můžete přizpůsobit vložením zástupného textu. Zástupný text bude při zobrazení řádku předmětu uživatelům nahrazen odpovídacími daty. Při vkládání zástupného textu postupujte takto:
+    1.  V textovém poli klepnutím zadejte, kde se má zástupný text zobrazit.
+    2.  Klikněte na **Vložit zástupný text**.
+    3.  V nově otevřeném seznamu vyberte vkládaný zástupný text.
+    4.  Klepněte na tlačítko **Vložit**.
+
+4.  Chcete-li přidat překlady řádku předmětu, postupujte takto:
+    1.  Klikněte na **Překlady**.
+    2.  Na nově otevřené stránce klikněte na **Přidat**.
+    3.  V nově otevřeném seznamu vyberte jazyk, který chcete použít pro zadání textu.
+    4.  V poli **Přeložený text** zadejte text.
+    5.  Text můžete přizpůsobit vložením zástupného textu podle pokynů v kroku 3.
+    6.  Klepněte na tlačítko **Zavřít**.
+
+5.  V poli **Pokyny pracovní položky** zadejte pokyny.
+6.  Pokyny můžete přizpůsobit vložením zástupného textu. Zástupný text bude při zobrazení pokynů uživatelům nahrazen odpovídacími daty. Při vkládání zástupného textu postupujte takto:
+    1.  V textovém poli klepnutím zadejte, kde se má zástupný text zobrazit.
+    2.  Klikněte na **Vložit zástupný text**.
+    3.  V nově otevřeném seznamu vyberte vkládaný zástupný text.
+    4.  Klepněte na tlačítko **Vložit**.
+
+7.  Chcete-li přidat překlady pokynů, postupujte takto:
+    1.  Klikněte na **Překlady**.
+    2.  Na nově otevřené stránce klikněte na **Přidat**.
+    3.  V nově otevřeném seznamu vyberte jazyk, který chcete použít pro zadání textu.
+    4.  V poli **Přeložený text** zadejte text.
+    5.  Text můžete přizpůsobit vložením zástupného textu podle pokynů v kroku 6.
+    6.  Klepněte na tlačítko **Zavřít**.
+
+## <a name="specify-the-possible-outcomes-of-a-decision"></a>Určete možné výsledky rozhodnutí
+obvykle pokud je dokument přiřazen pracovníkovi s rozhodovací pravomocí, je tomuto pracovníkovi kladena otázka. Na tuto otázku se obvykle odpovídá možnostmi **Ano** nebo **Ne**, nebo **Pravda** nebo **Nepravda**. Podle následujících kroků můžete určit možné výsledky ručního rozhodnutí.
+
+1.  V levém podokně klepněte na tlačítko **Základní nastavení**.
+2.  Na kartě **Výsledky** v poli **Výsledek 1** zadejte název výsledku nebo možnost.
+3.  Chcete-li přidat překlady výsledků, postupujte takto:
+    1.  Klikněte na **Překlady**.
+    2.  Na nově otevřené stránce klikněte na **Přidat**.
+    3.  V nově otevřeném seznamu vyberte jazyk, který chcete použít pro zadání textu.
+    4.  V poli **Přeložený text** zadejte text.
+    5.  Klepněte na tlačítko **Zavřít**.
+
+4.  V poli **Výsledek 2** zadejte název výsledku nebo možnost.
+5.  Chcete-li přidat překlady výsledků, postupujte takto:
+    1.  Klikněte na **Překlady**.
+    2.  Na nově otevřené stránce klikněte na **Přidat**.
+    3.  V nově otevřeném seznamu vyberte jazyk, který chcete použít pro zadání textu.
+    4.  V poli **Přeložený text** zadejte text.
+    5.  Klepněte na tlačítko **Zavřít**.
+
+## <a name="specify-when-notifications-are-sent"></a>Zadejte, kdy se mají odesílat oznámení.
+Můžete odeslat oznámení uživatelům, jakmile bude rozhodnutí provedeno, delegováno nebo eskalováno. Podle těchto kroků můžete určit oznámení, které se odešle, a osoby, kterým se odešle.
+
+1.  V levém podokně klikněte na **Oznámení**.
+2.  Označte pole vedle událostí, při kterých se oznámení odešle:
+    -   **\[Volba 1\]** – přiřazený uživatel vybral možnost **\[Volba 1\]**.
+    -   **\[Volba 2\]** – přiřazený uživatel vybral možnost **\[Volba 2\]**.
+    -   **Delegovat** – přiřazený uživatel přiřadil rozhodnutí jinému uživateli.
+    -   **Eskalovat** – přiřazený uživatel neučinil rozhodnutí v přiděleném čase.
+
+3.  Vyberte řádek pro událost, kterou jste vybrali v kroku 2.
+4.  Na kartě **Text oznámení** zadejte v textovém poli text oznámení.
+5.  Oznámení můžete přizpůsobit vložením zástupného textu. Zástupný text bude při zobrazení oznámení uživatelům nahrazen odpovídacími daty. Při vkládání zástupného textu postupujte takto:
+    1.  V textovém poli klepnutím zadejte, kde se má zástupný text zobrazit.
+    2.  Klikněte na **Vložit zástupný text**.
+    3.  V nově otevřeném seznamu vyberte vkládaný zástupný text.
+    4.  Klepněte na tlačítko **Vložit**.
+
+6.  Chcete-li přidat překlady oznámení, postupujte takto:
+    1.  Klikněte na **Překlady**.
+    2.  Na nově otevřené stránce klikněte na **Přidat**.
+    3.  V nově otevřeném seznamu vyberte jazyk, který chcete použít pro zadání textu.
+    4.  V poli **Přeložený text** zadejte text.
+    5.  Text můžete přizpůsobit vložením zástupného textu podle pokynů v kroku 5.
+    6.  Klepněte na tlačítko **Zavřít**.
+
+7.  Na kartě **Příjemce** zadejte osoby, kterým budou upozornění odesílána. Vyberte jednu z možností v následující tabulce a před přechodem na krok 8 postupujte podle dalších kroků pro tuto možnost.
+    <table>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Možnost</th>
+    <th>Příjemce oznámení</th>
+    <th>Další kroky</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Účastník</td>
+    <td>Uživatelé, kteří jsou přiřazeni k určité skupině nebo roli</td>
+    <td><ol>
+    <li>Po výběru možnosti <strong>Účastník</strong> na kartě <strong>Založeno na roli</strong> v seznamu <strong>Typ účastníka</strong> vyberte typ skupiny nebo role, které chcete oznámení odeslat.</li>
+    <li>V seznamu <strong>Účastník</strong> vyberte skupinu, které chcete oznámení odeslat.</li>
+    </ol></td>
+    </tr>
+    <tr class="even">
+    <td>Uživatel workflowu</td>
+    <td>Uživatelé v aktuálním workflowu</td>
+    <td><ul>
+    <li>Po výběru možnosti <strong>Uživatel workflowu</strong> na kartě <strong>Uživatel workflowu</strong> v seznamu <strong>Uživatel workflowu</strong> vyberte uživatele, který se podílí na workflowu.</li>
+    </ul></td>
+    </tr>
+    <tr class="odd">
+    <td>Uživatel</td>
+    <td>Konkrétní uživatelé aplikace Microsoft Dynamics 365 for Finance and Operations</td>
+    <td><ol>
+    <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
+    <li>Seznam <strong>Dostupní uživatelé</strong> obsahuje všechny uživatele aplikace Finance and Operations. Vyberte uživatele, kterým chcete odeslat oznámení, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    </ol></td>
+    </tr>
+    </tbody>
+    </table>
+
+8.  Zopakujte kroky 3 až 7 pro každou událost, kterou jste vybrali v kroku 2.
+
+## <a name="assign-a-decision"></a>Přiřazení rozhodnutí
+Pomocí následujícího postupu určíte, komu má být ruční rozhodnutí přiřazeno.
+
+1.  V levém podokně klikněte na **Přiřazení**.
+2.  Na kartě **Typ přiřazení** vyberte jednu z možností v následující tabulce a před přechodem na krok 3 postupujte podle dalších kroků pro tuto možnost.
+    <table>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Možnost</th>
+    <th>Uživatelé, kterým je rozhodnutí přiřazeno</th>
+    <th>Další kroky</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Účastník</td>
+    <td>Uživatelé, kteří jsou přiřazeni k určité skupině nebo roli</td>
+    <td><ol>
+    <li>Po výběru možnosti <strong>Účastník</strong> na kartě <strong>Založeno na roli</strong> v seznamu <strong>Typ účastníka</strong> vyberte typ skupiny nebo role, které chcete rozhodnutí přiřadit.</li>
+    <li>V seznamu <strong>Účastník</strong> vyberte skupinu nebo roli, které chcete rozhodnutí přiřadit.</li>
+    </ol></td>
+    </tr>
+    <tr class="even">
+    <td>Hierarchie</td>
+    <td>Uživatelé v určité organizační hierarchii</td>
+    <td><ol>
+    <li>Po výběru možnosti <strong>Hierarchie</strong> na kartě <strong>Výběr hierarchie</strong> v seznamu <strong>Typ hierarchie</strong> vyberte typ hierarchie, které chcete rozhodnutí přiřadit.</li>
+    <li>Systém musí z hierarchie načíst rozsah jmen uživatelů. Tato jména představují uživatele, kterým může být rozhodnutí přiřazen. Podle těchto kroků určete počáteční a koncový bod rozsahu uživatelských jmen, které systém obdrží: <ol>
+    <li>Chcete-li zadat počáteční bod, vyberte osobu v seznamu <strong>Začátek od</strong>.</li>
+    <li>Chcete-li zadat koncový bod, klepněte na možnost <strong>Přidat podmínku</strong>. Poté zadáním podmínky označte, kde v hierarchii má systém přestat načítat jména.</li>
+    </ol></li>
+    <li>Na kartě <strong>Možnosti hierarchie</strong> zadejte uživatele v rozsahu, kterým by měl být rozhodnutí přiřazeno: <ul>
+    <li><strong>Přiřadit všechny načtené uživatele</strong> – rozhodnutí bude přiřazeno všem uživatelům v rozsahu.</li>
+    <li><strong>Přiřadit pouze poslednímu načtenému uživateli</strong> – rozhodnutí bude přiřazeno pouze poslednímu uživateli v rozsahu.</li>
+    <li><strong>Vyloučit uživatele splňující následující podmínku</strong> – rozhodnutí není přiřazeno žádnému uživateli v rozsahu, který odpovídá konkrétní podmínce. Po klepnutí na volbu <strong>Přidat podmínku</strong> určete požadovanou podmínku.</li>
+    </ul></li>
+    </ol></td>
+    </tr>
+    <tr class="odd">
+    <td>Uživatel workflowu</td>
+    <td>Uživatelé v aktuálním workflowu</td>
+    <td><ul>
+    <li>Po výběru možnosti <strong>Uživatel workflowu</strong> na kartě <strong>Uživatel workflowu</strong> v seznamu <strong>Uživatel workflowu</strong> vyberte uživatele, který se podílí na workflowu.</li>
+    </ul></td>
+    </tr>
+    <tr class="even">
+    <td>Uživatel</td>
+    <td>Konkrétní uživatelé aplikace Finance and Operations</td>
+    <td><ol>
+    <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
+    <li>Seznam <strong>Dostupní uživatelé</strong> obsahuje všechny uživatele aplikace Finance and Operations. Vyberte uživatele, kterým chcete rozhodnutí přiřadit, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    </ol></td>
+    </tr>
+    <tr class="odd">
+    <td>Fronta</td>
+    <td>Fronta pracovních položek</td>
+    <td><ol>
+    <li>Po výběru možnosti <strong>Fronta</strong> klepněte na kartu <strong>Založeno na frontě</strong>.</li>
+    <li>Chcete-li přiřadit rozhodnutí konkrétní frontě, postupujte následujícím způsobem: <ol>
+    <li>V seznamu <strong>Typ fronty</strong> vyberte <strong>Fronty pracovních položek</strong>.</li>
+    <li>V seznamu <strong>Název fronty</strong> vyberte frontu.</li>
+    </ol></li>
+    <li>Pokud by konkrétní podmínka měla určit frontu, které bude rozhodnutí přiřazeno, postupujte takto: <ol>
+    <li>V seznamu <strong>Typ fronty</strong> vyberte <strong>Podmíněné fronty pracovních položek</strong>.</li>
+    <li>V seznamu <strong>Název fronty</strong> vyberte <strong>Podmíněná fronta</strong>.</li>
+    </ol></li>
+    </ol>
+    <strong>Poznámka:</strong> tato možnost se používá pouze u několika workflowů, jako je například správa případů.</td>
+    </tr>
+    </tbody>
+    </table>
+
+3.  Na kartě **Časový limit** v poli **Trvání** určete, kolik času má uživatel na rozhodnutí. Vyberte některou z následujících možností:
+    -   **Hodiny** – zadejte počet hodin, které má uživatel na rozhodnutí. Pak vyberte kalendář, který vaše organizace používá, a zadejte informace o pracovním týdnu vaší organizace.
+    -   **Dny** – zadejte počet dnů, které má uživatel na rozhodnutí. Pak vyberte kalendář, který vaše organizace používá, a zadejte informace o pracovním týdnu vaší organizace.
+    -   **Týdny** – zadejte počet týdnů, které má uživatel na rozhodnutí.
+    -   **Měsíce** – vyberte den a týden, do kdy se musí uživatel rozhodnout. Můžete například požadovat, aby uživatel učinil rozhodnutí do třetího pátku v daném měsíci.
+    -   **Roky** – vyberte den, týden a měsíc, do kdy se musí uživatel rozhodnout. Můžete například požadovat, aby uživatel učinil rozhodnutí do třetího pátku v prosinci.
+
+    Pokud uživatel v přiděleném čase rozhodnutí neučiní, rozhodnutí bude v prodlení. Rozhodnutí v prodlení je eskalován na základě možností vybraných v oblasti stránky **Eskalace**.
+
+## <a name="specify-what-happens-when-a-decision-is-overdue"></a>Určení akce prováděné při zpoždění rozhodnutí
+Pokud uživatel v přiděleném čase rozhodnutí neučiní, rozhodnutí bude v prodlení. Rozhodnutí, které je v prodlení, může být eskalováno nebo automaticky přiřazeno jinému uživateli. Pro eskalování rozhodnutí v prodlení postupujte následovně.
+
+1.  V levém podokně klikněte na **Eskalování**.
+2.  Označte pole **Použít eskalační cestu** a vytvořte tak eskalační cestu. Systém automaticky přiřadí dané rozhodnutí uživatelům uvedeným v cestě eskalace. Například v následující tabulce naleznete příklad eskalační cesty.
+    | Pořadí | Eskalační cesta            |
+    |----------|----------------------------|
+    | 1        | Přiřadit k: Donna           |
+    | 2        | Přiřadit k: Erin            |
+    | 3        | Konečná akce: \[Volba 1\] |
+
+    V tomto příkladu systém přiřadí zpožděné rozhodnutí Donně. Pokud Donna v určeném čase rozhodnutí neučiní, systém přiřadí rozhodnutí Erin. Pokud Erin v určeném čase rozhodnutí neučiní, systém jako rozhodnutí vybere možnost **\[Volba 1\]**.
+3.  Pokud chcete přidat uživatele do eskalační cesty, klepněte na tlačítko **Přidat eskalaci**. Vyberte jednu z možností v následující tabulce a před přechodem na krok 4 postupujte podle dalších kroků pro tuto možnost.
+    <table>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Možnost</th>
+    <th>Uživatelé, kterým je rozhodnutí eskalováno</th>
+    <th>Další kroky</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Hierarchie</td>
+    <td>Uživatelé v určité organizační hierarchii</td>
+    <td><ol>
+    <li>Po výběru možnosti <strong>Hierarchie</strong> na kartě <strong>Výběr hierarchie</strong> v seznamu <strong>Typ hierarchie</strong> vyberte typ hierarchie, ke které rozhodnutí eskalovat.</li>
+    <li>Systém musí z hierarchie načíst rozsah jmen uživatelů. Tato jména představují uživatele, ke kterým může být rozhodnutí eskalováno. Podle těchto kroků určete počáteční a koncový bod rozsahu uživatelských jmen, které systém obdrží: <ol>
+    <li>Chcete-li zadat počáteční bod, vyberte osobu v seznamu <strong>Začátek od</strong>.</li>
+    <li>Chcete-li zadat koncový bod, klepněte na možnost <strong>Přidat podmínku</strong>. Poté zadáním podmínky označte, kde v hierarchii má systém přestat načítat jména.</li>
+    </ol></li>
+    <li>Na kartě <strong>Možnosti hierarchie</strong> zadejte uživatele v rozsahu, ke kterým by měl být rozhodnutí eskalováno: <ul>
+    <li><strong>Přiřadit všechny načtené uživatele</strong> – rozhodnutí dokument bude eskalováno všem uživatelům v rozsahu.</li>
+    <li><strong>Přiřadit pouze poslednímu načtenému uživateli</strong> – rozhodnutí bude eskalováno pouze poslednímu uživateli v rozsahu.</li>
+    <li><strong>Vyloučit uživatele splňující následující podmínku</strong> – rozhodnutí není eskalováno žádnému uživateli v rozsahu, který odpovídá konkrétní podmínce. Po klepnutí na volbu <strong>Přidat podmínku</strong> určete požadovanou podmínku.</li>
+    </ul></li>
+    </ol></td>
+    </tr>
+    <tr class="even">
+    <td>Uživatel workflowu</td>
+    <td>Uživatelé v aktuálním workflowu</td>
+    <td><ul>
+    <li>Po výběru možnosti <strong>Uživatel workflowu</strong> na kartě <strong>Uživatel workflowu</strong> v seznamu <strong>Uživatel workflowu</strong> vyberte uživatele, který se podílí na workflowu.</li>
+    </ul></td>
+    </tr>
+    <tr class="odd">
+    <td>Uživatel</td>
+    <td>Konkrétní uživatelé aplikace Finance and Operations</td>
+    <td><ol>
+    <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
+    <li>Seznam <strong>Dostupní uživatelé</strong> obsahuje všechny uživatele aplikace Finance and Operations. Vyberte uživatele, ke kterým chcete rozhodnutí eskalovat, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    </ol></td>
+    </tr>
+    </tbody>
+    </table>
+
+4.  Na kartě **Časový limit** v poli **Trvání** určete, kolik času má uživatel na rozhodnutí. Vyberte některou z následujících možností:
+    -   **Hodiny** – zadejte počet hodin, které má uživatel na rozhodnutí. Pak vyberte kalendář, který vaše organizace používá, a zadejte informace o pracovním týdnu vaší organizace.
+    -   **Dny** – zadejte počet dnů, které má uživatel na rozhodnutí. Pak vyberte kalendář, který vaše organizace používá, a zadejte informace o pracovním týdnu vaší organizace.
+    -   **Týdny** – zadejte počet týdnů, které má uživatel na rozhodnutí.
+    -   **Měsíce** – vyberte den a týden, do kdy se musí uživatel rozhodnout. Můžete například požadovat, aby uživatel učinil rozhodnutí do třetího pátku v daném měsíci.
+    -   **Roky** – vyberte den, týden a měsíc, do kdy se musí uživatel rozhodnout. Můžete například požadovat, aby uživatel učinil rozhodnutí do třetího pátku v prosinci.
+
+5.  Zopakujte kroky 3 a 4 u každého uživatele, který má být přidán do eskalační cesty. Pořadí uživatelů lze změnit.
+6.  Pokud uživatelé v eskalační cestě v určeném čase rozhodnutí neučiní, systém sám provede rozhodnutí. Možnost, kterou systém vybere, můžete vybrat výběrem řádku **Akce** a na kartě **Konečná akce** vyberte možnost.
+
+## <a name="set-a-time-limit"></a>Nastavení časového limitu
+Tento postup použijte, pokud je rozhodnutí nutné učinit v určitém čase. **Poznámka:** možnosti, které vyberete v rámci této procedury, přepíší možnosti vybrané v oblasti **Přiřazení** a **Eskalace** na stránce.
+
+1.  V levém podokně klepněte na tlačítko **Pokročilá nastavení**.
+2.  Označte pole **Nastavit časový limit pro prvek workflowu**.
+3.  V poli **Trvání** upřesněte, kdy má být rozhodnutí učiněno. Vyberte některou z následujících možností:
+    -   **Hodiny** – zadejte počet hodin Pak vyberte kalendář, který vaše organizace používá, a zadejte informace o pracovním týdnu vaší organizace.
+    -   **Dny** – zadejte počet dnů Pak vyberte kalendář, který vaše organizace používá, a zadejte informace o pracovním týdnu vaší organizace.
+    -   **Týdny** – zadejte počet týdnů.
+    -   **Měsíce** – vyberte den a týden, do kdy má být rozhodnutí učiněno. Můžete například požadovat, aby bylo rozhodnutí učiněno do třetího pátku v daném měsíci.
+    -   **Roky** – vyberte den, týden a měsíc, do kdy má být rozhodnutí učiněno. Můžete například požadovat, aby bylo rozhodnutí učiněno do třetího pátku v prosinci.
+
+4.  Dojde-li k překročení časového limitu, systém učiní rozhodnutí. V seznamu **Akce** vyberte možnost, která má být vybrána.
+
+
+
+
+
