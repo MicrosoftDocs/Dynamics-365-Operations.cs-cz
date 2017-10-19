@@ -1,7 +1,10 @@
 # [Vítá vás aplikace Dynamics 365 for Retail](index.md)
 
+# Začínáme
+## [Co je nového a co se změnilo](get-started/whats-new.md)
+
 # Platby
-## [Způsoby platby](payment-methods.md)
+## [Metody platby](payment-methods.md)
 ## [Nastavení platební karty, autorizace a záznam](../financials/accounts-receivable/credit-card-authorizations.md)
 ## [Konfigurace způsobu platby obchodu pro POS](cash-denominations.md)
 ## [Časté dotazy k platbám](dev-itpro/payments-retail.md)
@@ -59,7 +62,7 @@
 ### [Sledování provizí v POS pomocí prodejních skupin](pos-sales-groups-track-commissions.md)
 ## Aktivace zařízení
 ### [Instalace a konfigurace MPOS](retail-modern-pos-device-activation.md)
-### [Nastavení rozšířeného přihlášení pro cloudový POS a MPOS](extended-logon.md)
+### [Nastavení rozšířeného přihlášení pro Cloud POS a MPOS](extended-logon.md)
 ### [Správa maloobchodních účtů a zařízení z centrály](set-up-activation-accounts-validate-devices-hq.md)
 ## Účtenky
 ### [Nastavení šablon účtenek](receipt-templates-printing.md) 
@@ -173,8 +176,9 @@
 ### [Konfigurace a instalace Retail Modern POS](retail-modern-pos-device-activation.md)
 #### [Správa maloobchodních účtů a zařízení z centrály](set-up-activation-accounts-validate-devices-hq.md)
 #### [Aktivace zařízení Retail POS](dev-itpro/retail-device-activation.md)
-#### [Zabezpečení maloobchodního Cloud POS](dev-itpro/secure-retail-cloud-pos.md)
+#### [Zabezpečení Retail Cloud POS](dev-itpro/secure-retail-cloud-pos.md)
 ### [Konfigurace a instalace Retail Hardware Station](retail-hardware-station-configuration-installation.md)
+### [Hromadné nasazení samoobslužných komponent modulu Retail](dev-itpro/retail-mass-deployment.md)
 ### [Události komponent Retail pro diagnostiku a řešení potíží](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
 ### [Použití nasaditelného balíčku](../dev-itpro/deployment/apply-deployable-package-system.md)
 

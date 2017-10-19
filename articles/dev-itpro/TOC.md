@@ -451,6 +451,7 @@
 ### [Rozdělení modelů](dev-tools/model-split.md)
 ### [Použití delegátů pro vyřešení závislostí mezi modely](migration-upgrade/delegates-migration.md)
 
+
 ## Upgrade na nejnovější aktualizaci
 ### [Proces přechodu na nejnovější aktualizaci](migration-upgrade/upgrade-latest-update.md)
 ### [Zásady životního cyklu](migration-upgrade/versions-update-policy.md)
@@ -511,6 +512,8 @@
 ## [Odeslání vlastních podnikových procesů](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Monitorování a diagnostika ](lifecycle-services/monitoring-diagnostics.md)
 ## [Knihovna majetku](lifecycle-services/asset-library.md)
+## [Microsoft Dynamics 365 - Přehled překladové služby](lifecycle-services/translation-service-overview.md)
+### [Microsoft Dynamics 365 - Uživatelská příručka překladové služby ](lifecycle-services/use-translation-service.md)
 
 ## Funkce aplikace Dynamics AX 2012 Lifecycle Services
 ### Nasazení
