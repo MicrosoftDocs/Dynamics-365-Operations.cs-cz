@@ -16,13 +16,13 @@ ms.custom: 3421
 ms.assetid: f5187c21-eec5-4148-b178-b8a5feff7f23
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: aaacf596f2ea1107a53647d779e9d2b6c37ab530
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -48,7 +48,7 @@ Níže naleznete informace popisující nastavení transakcí pořízení s funk
     -   Kniha pro účetnictví: OM 1, aktuální účtovací vrstva
     -   Kniha pro daňové účely: OM 2, účtovací vrstva pro daně
 
-2.  V modelu OM 1 klikněte na kartu Odvozené knihy. Vyberte možnost OM 2 v poli Kniha a Pořízení v poli Typ transakce.
+2.  Na virtuálním počítači 1 klikněte na kartu Odvozené knihy. Zvolte virtuální počítač 2 v poli Kniha a Pořízení v poli Typ transakce.
 
 Knihy lze potom připojit k určitému dlouhodobému majetku. 
 

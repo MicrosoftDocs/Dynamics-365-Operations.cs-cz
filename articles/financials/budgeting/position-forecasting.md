@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 2dffb2634701210852b4b146a762434cf6df07e3
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 9c0ae4ed27578301573bead17ff2175bb9042036
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -131,7 +130,7 @@ Tyto možnosti nabízí funkce **Kopírovat do scénáře**. Nezapomeňte, že j
 
 ### <a name="modifying-forecast-positions"></a>Úprava pozic prognózy
 
-Změny provedené v pozicích prognózy jsou omezeny na tyto pozice prognózy. Změny neovlivní záznamy pozice v modulu Lidské zdroje. Většina změn je také omezena na pozici prognózy, která je zpracovávána. Jinak řečeno změny jsou specifické pro proces plánování rozpočtu a scénář plánu rozpočtu, které jsou přiřazeny. Výjimku tvoří změny polí, která jsou sdílena u pozic v rámci procesů a scénářů. Tato pole zahrnují pole na kartě **Obecné** a **Finanční dimenze**. Při změně těchto polí budou nové hodnoty použity u pozice ve všech scénářích plánování rozpočtu. Z toho vyplývá, že tato pole umožňují rychle aktualizovat všechny verze.
+Změny provedené v pozicích prognózy jsou omezeny na tyto pozice prognózy. Změny neovlivní záznamy pozice v modulu Lidské zdroje. Většina změn je také omezena na pozici prognózy, která je zpracovávána. Jinak řečeno změny jsou specifické pro proces plánování rozpočtu a scénář plánu rozpočtu, které jsou přiřazeny. Výjimku tvoří změny polí, která jsou sdílena u pozic v rámci procesů a scénářů. Tato pole zahrnují pole na kartách **Obecné** a **Finanční dimenze**. Při změně těchto polí se použijí nové hodnoty na pozici ve všech scénářích plánování rozpočtu. Z toho vyplývá, že tato pole umožňují rychle aktualizovat všechny verze.
 
 #### <a name="budget-cost-elements"></a>Prvky rozpočtových nákladů
 

@@ -1,6 +1,6 @@
 ---
-title: "Vyhledávání produktů a variant produktu během zadání objednávky"
-description: "Použijte pole <strong>Číslo položky </strong>k vyhledání produktů a variant produktů, až budete ručně vytvářet řádek prodejní objednávky nebo řádek nákupní objednávky.  Tímto způsobem můžete rychle vyhledat varianty produktu, pokud máte k dispozici pouze konfigurační řetězec nebo jednu z dimenzí produktu."
+title: "Vyhledávání produktů a variant produktu během zadávání objednávky"
+description: "Použijte pole <strong>Číslo položky </strong> k vyhledání produktů a variant produktů, až budete ručně vytvářet řádek prodejní objednávky nebo řádek nákupní objednávky.  Tímto způsobem můžete rychle vyhledat varianty produktu, pokud máte k dispozici pouze konfigurační řetězec nebo jednu z dimenzí produktu."
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,11 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3960cc3eb9b8d488973d258db45aa0ab9f1dd988
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: dd1b1229385b3c900d1b111ec6d0225cd5286542
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 

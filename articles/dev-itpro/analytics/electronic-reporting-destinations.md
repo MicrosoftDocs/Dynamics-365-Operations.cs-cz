@@ -16,13 +16,13 @@ ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
 ms.author: mrolecki
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: fb2aeee1f38823e7ea96071f773e8448d65ba8ff
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: dedabf13044be30a67a945ff4ca2ecfb1eea8150
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -101,7 +101,7 @@ Umístění určuje, kde bude soubor uložen. Po povolení cíle **Archiv** lze 
 
 #### <a name="sharepoint"></a>SharePoint
 
-Soubor můžete uložit do určené složky SharePoint. Výchozí server SharePoint definujete v nabídce **Správa organizace** &gt; **Správa dokumentu** &gt; **Parametry správy dokumentů** na kartě **SharePoint**. Po konfiguraci složky SharePoint ji můžete vybrat u typu dokumentu jako složku, kde se ukládají výstupy z EV pro typ dokumentu. 
+Soubor můžete uložit do určené složky SharePoint. Výchozí server služby SharePoint určíte v možnostech **Správa organizace** &gt; **Správa dokumentů** &gt; **Parametry správy dokumentů** na kartě **SharePoint**. Po konfiguraci složky SharePoint ji můžete vybrat jako složku k uložení výstupu elektronického výkaznictví pro typ dokumentu. 
 
 [![Výběr složky služby SharePoint](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg) 
 

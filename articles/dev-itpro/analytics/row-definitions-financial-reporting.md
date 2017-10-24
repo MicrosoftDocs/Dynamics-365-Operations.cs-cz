@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: 6d4697af6f7467f25a461fae4e9320402f83b0e3
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 06a75889e62cbba6e47a8543cf663868df5ae2e3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 06/13/2017
 
 Definice řádku je součástí sestavy nebo stavebního bloku, který určuje obsah jednotlivých řádků ve finanční sestavě. Definici řádku lze kombinovat s definicemi sloupců, definicemi stromu výkaznictví a definicemi sestav a vytvořit tak skupinu stavebních bloků, které může používat více společností.
 
-<a name="create-a-row-definition"></a>vytvoření definice řádku,
+<a name="create-a-row-definition"></a>Vytvoření definice řádků
 -----------------------
 
 1.  V Návrháři sestav v navigačním podokně klikněte na tlačítko **Definice řádku**.
@@ -68,7 +68,7 @@ Dimenze je protnutím dat a hodnot. Můžete seskupit data a hodnoty v návrhá�
 | Možnost                | Popis                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dimenze             | Vzor, který identifikuje dimenzi pro přidání definice řádku. Tento vzor obsahuje jeden znak ampersand (&) nebo znak křížku (\#) pro každou pozici v dimenzích. Obecně byste měli používat všechny ampersandy pro dimenzi hlavního účtu a všechny křížky pro jiné dimenze. |
-| Počátek rozsahu dimenzí | První hodnota pro tuto dimenzi k přidání do definice řádku.                                                                                                                                                                                                                 |
+| Začátek rozsahu dimenzí | První hodnota pro tuto dimenzi, která se má přidat do definice řádku                                                                                                                                                                                                                 |
 | Konec rozsahu dimenzí   | Poslední hodnota pro tuto dimenzi k přidání do definice řádku.                                                                                                                                                                                                                  |
 
 Chcete-li přidat dimenze do definice řádku, proveďte následující kroky.
@@ -93,7 +93,7 @@ Pokud máte rozvahu, ve které jsou částky zaokrouhleny, součty mohou překra
 Chcete-li upravit zaokrouhlování v rozvaze, proveďte následující kroky.
 
 1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
-2.  V nabídce **Upravit** klikněte na tlačítko **Úprava zaokrouhlení**.
+2.  V nabídce **Úpravy** klikněte na příkaz **Vyrovnání rozdílů po zaokrouhlení**.
 3.  V dialogovém okně **Vyrovnání rozdílů po zaokrouhlení** zadejte následující hodnoty:
     -   **Řádek vyrovnání rozdílů po zaokrouhlení** – kód řádku, který bude upraven kvůli vyrovnání rozvahy.
     -   **Řádek součtu majetku** – kód řádku v rozvaze, který obsahuje součet majetku.
@@ -121,23 +121,23 @@ Můžete vytvořit a upravit styly písem pro sestavy. Můžete také použít t
 <td>Vytvoření stylu písma</td>
 <td><ol>
 <li>V Návrháři sestav v nabídce <strong>Formát </strong>klikněte na tlačítko <strong>Styly a formátování</strong>.</li>
-<li>Klikněte na tlačítko <strong>Nový</strong> v dialogovém okně <strong>Styly a formátování</strong> a pak zadejte jedinečný název nového stylu.</li>
-<li>Proveďte výběr písem a klikněte na tlačítko <strong>OK</strong>.</li>
+<li>V dialogovém okně <strong>Styly a formátování</strong> klikněte na položku <strong>Nový</strong> a pak zadejte jedinečný název pro nový styl.</li>
+<li>Vyberte požadované možnosti písma a pak klikněte na tlačítko <strong>OK</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Úprava stylu písma</td>
 <td><ol>
 <li>V Návrháři sestav v nabídce <strong>Formát </strong>klikněte na tlačítko <strong>Styly a formátování</strong>.</li>
-<li>Vyberte styl k úpravě v dialogovém okně <strong>Styly a formátování</strong> a klikněte na tlačítko <strong>Upravit</strong>.</li>
-<li>Proveďte výběr písem a klikněte na tlačítko <strong>OK</strong>.</li>
+<li>V dialogovém okně <strong>Styly a formátování</strong> vyberte styl písma, který chcete upravit, a klikněte na položku <strong>Upravit</strong>.</li>
+<li>Vyberte požadované možnosti písma a pak klikněte na tlačítko <strong>OK</strong>.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Použití stylu písma</td>
 <td><ol>
 <li>V návrháři sestav v definici či definici sloupce nebo v záhlavích a zápatích vyberte jednu nebo více buněk.</li>
-<li>V seznamu <strong>Styl</strong> na panelu nástrojů vyberte styl písma.</li>
+<li>V seznamu <strong>Styl</strong> na panelu nástrojů vyberte styl písma.</li>
 </ol></td>
 </tr>
 </tbody>

@@ -1,7 +1,7 @@
 ---
 title: "Klouzavý průměr"
 description: 
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0018f5df3d0d2882c300b6458bfb8adfba84e2ad
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: afc8f4922810983a6582558f0577a05aa21cbdbb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/25/2017
 Následují předpoklady pro použití klouzavého průměru nákladů jako nákladové metody.
 1.  V poli **Skupiny modelů položek** nastavte skupinu modelů položky, u kterých je vybrán Klouzavý průměr v poli **Skladový model**. **Poznámka:** Ve výchozím nastavení po výběru klouzavého průměru jsou vybrána také pole **Zaúčtovat fyzické zásoby** a **Zaúčtovat finanční zásoby**. 
 
-2.  Na stránce **Zaúčtování** přiřaďte účty k účtu **Cenová odchylka pro klouzavý průměr** a **Přecenění pro klouzavý průměr** na kartě **Zásoby**. Můžete použít účet **Cenová odchylka pro klouzavý průměr**, když mají náklady být proporcionálně zaneseny. K tomu dochází v důsledku rozdílů nákladů mezi nákupním příjmem a nákupní fakturou, a kvůli rozdílu mezi původním množstvím zásob a aktuálním množstvím na skladě. Účet **Přecenění nákladů pro klouzavý průměr** můžete použít, pokud chcete upravit klouzavý průměr nákladů na produkt pro novou jednotkovou cenu.
+2.  Na stránce **Zaúčtování** přiřaďte účty do účtů **Cenová odchylka pro klouzavý průměr** a **Přecenění nákladů pro klouzavý průměr** na kartě **Zásoby**. Použijte účet **Cenová odchylka pro klouzavý průměr**, pokud musí být náklady proporcionálně zanesené do výdajů. K tomu dochází v důsledku rozdílů nákladů mezi nákupním příjmem a nákupní fakturou, a kvůli rozdílu mezi původním množstvím zásob a aktuálním množstvím na skladě. Účet **Přecenění nákladů pro klouzavý průměr** můžete použít, pokud chcete upravit klouzavý průměr nákladů na produkt pro novou jednotkovou cenu.
 3.  Na stránce **Uvolněné produkty** přiřaďte skupinu modelu položky klouzavého průměru k produktu. **Poznámka:** Proces uzávěrky skladu pouze uzavírá účetní období. Neovlivňuje produkty, které mají přiřazený klouzavý průměr jako skupinu modelů zboží.
 
 ## <a name="convert-to-the-moving-average-costing-method"></a>Převedení na metodu klouzavého průměru nákladů

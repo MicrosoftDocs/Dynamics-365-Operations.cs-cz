@@ -16,13 +16,13 @@ ms.custom: 59131
 ms.assetid: 966a3f1d-c59c-4a84-acd4-5bb7e65144c8
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 86b527b72ef0c9af71e70fe280bcdfe3992a36b1
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 96090a3ae15294d98d6207c8eb4a1e58429ca9eb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,20 +33,20 @@ ms.lasthandoff: 05/25/2017
 
 Tento článek obsahuje informace o definicích sestavy. Definice sestavy představuje součást sestavy (nebo stavební blok), který využívá definici řádku, definici sloupce a volitelně definici stromu výkaznictví pro vytvoření sestavy. Definice sestavy také poskytuje možnosti a nastavení pro přizpůsobení sestavy. 
 
-Definice sestavy představuje součást sestavy (nebo stavební blok), který využívá definici řádku, definici sloupce a volitelně definici stromu výkaznictví pro vytvoření sestavy. Definice sestavy také nabízí možnosti a nastavení, které můžete použít pro přizpůsobení sestavy. Po definování definic řádků a sloupců je musíte zkombinovat do definice sestavy. V tomto okamžiku můžete také definovat další aspekty definic, například úroveň podrobností a datum sestavy. Poté můžete sestavu uložit a vygenerovat. Finanční výkaznictví nabízí následující úrovně podrobností:
+Definice sestavy představuje součást sestavy (nebo stavební blok), který využívá definici řádku, definici sloupce a volitelně definici stromu výkaznictví pro vytvoření sestavy. Definice sestavy nabízí také další možnosti a nastavení, které můžete použít pro přizpůsobení sestavy. Po vytvoření definic řádků a sloupců je nutno je zkombinovat do definice sestavy. V tomto okamžiku můžete také definovat další aspekty definic, například úroveň podrobností a datum sestavy. Poté můžete sestavu uložit a vygenerovat. Finanční výkaznictví nabízí následující úrovně podrobností:
 
 -   Finanční
 -   Finanční a účetní
 -   Finanční, účetní a transakční
 
-V závislosti na tom, jakým způsobem jsou data uložena v systému Microsoft Dynamics ERP, však nemusí být detaily transakcí k dispozici v sestavách.
+V závislosti na tom, jak jsou data v systému Microsoft Dynamics ERP uložena, však v sestavách nemusejí být dostupné podrobnosti transakcí.
 
 ## <a name="create-a-report-definition"></a>Vytvoření definice sestavy
 1.  V Návrháři sestav v nabídce **Soubor** klikněte na tlačítko **Nový** a vyberte možnost **Definice sestavy**.
 2.  Zadejte příslušné informace na kartách **Sestava**, **Výstup a distribuce**, **Záhlaví a zápatí** a **Nastavení**.
 
 ## <a name="contents-of-a-report-definition"></a>Obsah definice sestavy
-V následující tabulce jsou popsány karty v definici sestavy a způsob použití zadaných informací.
+Následující tabulka popisuje karty v definici sestavy a způsob použití těchto informací.
 
 <table>
 <colgroup>
@@ -55,30 +55,30 @@ V následující tabulce jsou popsány karty v definici sestavy a způsob použi
 </colgroup>
 <thead>
 <tr class="header">
-<th>Karta</th>
+<th>TAB</th>
 <th>Popis</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Sestava</td>
-<td>Umožňuje vytvořit sestavu, nakonfigurovat sestavu nebo upravit existující sestavu.</td>
+<td>Umožňuje vytvořit sestavu, konfigurovat sestavu nebo změnit existující sestavu.</td>
 </tr>
 <tr class="even">
 <td>Výstup a distribuce</td>
-<td>Umožňuje změnit typ výstupu a místo určení sestavy.</td>
+<td>Umožňuje změnit typ výstupu a cílové umístění sestavy.</td>
 </tr>
 <tr class="odd">
 <td>Záhlaví a zápatí</td>
-<td>Umožňuje definovat a formátovat záhlaví a zápatí sestavy. Například můžete přidat text a obrázky pro záhlaví nebo zápatí. Finanční výkaznictví podporuje soubory BMP, JPG a PNG jako obrázky. Můžete také přidat kódy automatického textu a vložit tak další informace, například název společnosti, název sestavy nebo číslo stránky.</td>
+<td>Umožňuje definovat a naformátovat záhlaví a zápatí sestavy. Například můžete přidat text a obrázky pro záhlaví nebo zápatí. Finanční výkaznictví podporuje soubory BMP, JPG a PNG jako obrázky. Můžete také přidat kódy automatického textu a vložit tak další informace, například název společnosti, název sestavy nebo číslo stránky.</td>
 </tr>
 <tr class="even">
 <td>Nastavení</td>
-<td>Umožňuje určit nastavení definice sestavy, například následující nastavení:
+<td>Zadejte nastavení definice sestavy, například následující nastavení:
 <ul>
-<li>Formátování a zaokrouhlování částek</li>
-<li>Formátování sestav s podrobnostmi</li>
-<li>Formátování stromů výkaznictví</li>
+<li>Formátování a částky ze zaokrouhlení</li>
+<li>Formát sestavy podrobností</li>
+<li>Formátování organizačního stromu</li>
 <li>Generování sestavy výjimek</li>
 <li>Určení převodu měny</li>
 <li>Mezisoučty a filtrování podrobností účtu</li>
