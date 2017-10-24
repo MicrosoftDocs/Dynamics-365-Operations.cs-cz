@@ -1,0 +1,89 @@
+---
+title: "Odchozí proces"
+description: "Toto téma obsahuje přehled odchozího procesu v modulu Řízení zásob."
+author: perlynne
+manager: AnnBe
+ms.date: 10/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
+audience: Application User
+ms.reviewer: YuyuScheller
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.custom: 274363
+ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
+ms.search.region: global
+ms.search.industry: Distribution
+ms.author: perlynne
+ms.dyn365.ops.intro: AX 7.0.0
+ms.search.validFrom: 2016-02-28
+ms.translationtype: HT
+ms.sourcegitcommit: 9c09a7bd314bb9005eb0b6c69d7cccad1c30cfdb
+ms.openlocfilehash: 7b395cab2184f8f9f3f50a7a595c6ed782645323
+ms.contentlocale: cs-cz
+ms.lasthandoff: 10/04/2017
+
+---
+
+# <a name="outbound-process"></a><span data-ttu-id="11a45-103">Odchozí proces</span><span class="sxs-lookup"><span data-stu-id="11a45-103">Outbound process</span></span>
+
+[!include[banner](../includes/banner.md)]
+
+<span data-ttu-id="11a45-104">Toto téma obsahuje přehled odchozího procesu v modulu Řízení zásob.</span><span class="sxs-lookup"><span data-stu-id="11a45-104">This topic provides an overview of the outbound process in Inventory management.</span></span>
+
+## <a name="output-orders"></a><span data-ttu-id="11a45-105">Výstupní objednávky</span><span class="sxs-lookup"><span data-stu-id="11a45-105">Output orders</span></span>
+
+<span data-ttu-id="11a45-106">Výstupní objednávky se používají k propojení řádků prodejní objednávky a řádků převodního příkazu s odchozími procesy výdeje, které používají výdejky.</span><span class="sxs-lookup"><span data-stu-id="11a45-106">Output orders are used to link sales order lines and transfer order lines with the outbound picking processes that use picking lists.</span></span>
+
+<span data-ttu-id="11a45-107">Pokud jsou dodací listy generovány buď z prodejních objednávek nebo převodních příkazů, budou automaticky vytvořeny výstupní objednávky a dodávky.</span><span class="sxs-lookup"><span data-stu-id="11a45-107">When picking lists are generated from either sales orders or transfer orders, output orders and shipments are automatically created.</span></span> <span data-ttu-id="11a45-108">Výdejka má vztah jedna ku jedné s dodávkou.</span><span class="sxs-lookup"><span data-stu-id="11a45-108">A picking list has a one-to-one relationship with a shipment.</span></span> <span data-ttu-id="11a45-109">Dodávku převodního příkazu nebo dodací list prodejní objednávky lze zpracovat z dodávky.</span><span class="sxs-lookup"><span data-stu-id="11a45-109">The transfer order shipment or the sales order packing slip can be processed from the shipment.</span></span> 
+
+<span data-ttu-id="11a45-110">Následující diagram znázorňuje přehled procesu výstupních objednávek.</span><span class="sxs-lookup"><span data-stu-id="11a45-110">The following diagram shows an overview of the process for outbound orders.</span></span> 
+
+<span data-ttu-id="11a45-111">[![Přehled procesu výstupních objednávek](./media/outbound-order.png)](./media/outbound-order.png)</span><span class="sxs-lookup"><span data-stu-id="11a45-111">[![Overview of the outbound order process](./media/outbound-order.png)](./media/outbound-order.png)</span></span>
+
+<span data-ttu-id="11a45-112">Můžete nastavit výstupní pravidla určující způsob, jak má program zpracovat odchozí proces.</span><span class="sxs-lookup"><span data-stu-id="11a45-112">You can set up outbound rules to define how the program should handle the outbound process.</span></span> <span data-ttu-id="11a45-113">Tato pravidla můžete použít ke kontrole procesu dodávky.</span><span class="sxs-lookup"><span data-stu-id="11a45-113">You can use these rules to control the shipment process.</span></span> <span data-ttu-id="11a45-114">Pravidla můžete použít obzvláště ke kontrole toho, během které fáze procesu lze odeslat dodávku.</span><span class="sxs-lookup"><span data-stu-id="11a45-114">In particular, you can use the rules to control which stage in the process a shipment can be sent during.</span></span> <span data-ttu-id="11a45-115">Následující nastavení určují způsob zpracování odchozích procesů.</span><span class="sxs-lookup"><span data-stu-id="11a45-115">The following settings define how the outbound processes are handled.</span></span>
+
+## <a name="picking-route-status-for-sales-and-transfer-orders"></a><span data-ttu-id="11a45-116">Stav postupu výdeje pro prodejní objednávky a převodní příkazy</span><span class="sxs-lookup"><span data-stu-id="11a45-116">Picking route status for sales and transfer orders</span></span> 
+
+<span data-ttu-id="11a45-117">Přejděte na **Pohledávky** \> **Nastavení** \> **Parametry pohledávek** a poté na kartě **Aktualizace** vyberte hodnotu v poli **Stav postupu výdeje**.</span><span class="sxs-lookup"><span data-stu-id="11a45-117">Go to **Account receivable** \> **Setup** \> **Account receivable parameters**, and then, on the **Updates** tab, select a value in the **Picking route status** field.</span></span>
+
+<span data-ttu-id="11a45-118">[![Pole stav postupu výdeje pro prodejní objednávky](./media/picking-route-status-sales-order.png)](./media/picking-route-status-sales-order.png)</span><span class="sxs-lookup"><span data-stu-id="11a45-118">[![Picking route status field for sales orders](./media/picking-route-status-sales-order.png)](./media/picking-route-status-sales-order.png)</span></span>
+
+<span data-ttu-id="11a45-119">Pokud je pole **Stav postupu výdeje** nastaveno na **Dokončeno**, dojde k procesu výdeje automaticky jako součásti procesu generování výdejek.</span><span class="sxs-lookup"><span data-stu-id="11a45-119">If the **Picking route status** field is set to **Completed**, the picking process occurs automatically as part of the process of generating picking lists.</span></span> <span data-ttu-id="11a45-120">Pokud je pole nastaveno na **Aktivováno**, řádky výdejky musíte aktualizovat ručně.</span><span class="sxs-lookup"><span data-stu-id="11a45-120">If the field is set to **Activated**, the picking list lines must be manually updated.</span></span>
+
+<span data-ttu-id="11a45-121">Stejné nastavení se vztahuje k převodním příkazům.</span><span class="sxs-lookup"><span data-stu-id="11a45-121">The same setup applies to transfer orders.</span></span> <span data-ttu-id="11a45-122">Přejděte na **Řízení zásob** \> **Nastavení** \> **Parametry řízení zásob a skladu** a poté na kartě **Přeprava** vyberte hodnotu v poli **Stav postupu výdeje**.</span><span class="sxs-lookup"><span data-stu-id="11a45-122">Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**, and then, on the **Transport** tab, select a value in the **Picking route status** field.</span></span>
+
+<span data-ttu-id="11a45-123">[![Pole stav postupu výdeje pro převodní příkazy](./media/picking-route-status-transfer-order.png)](./media/picking-route-status-transfer-order.png)</span><span class="sxs-lookup"><span data-stu-id="11a45-123">[![Picking route status field for transfer orders](./media/picking-route-status-transfer-order.png)](./media/picking-route-status-transfer-order.png)</span></span>
+
+## <a name="end-output-inventory-orders"></a><span data-ttu-id="11a45-124">Ukončení výstupních skladových objednávek</span><span class="sxs-lookup"><span data-stu-id="11a45-124">End output inventory orders</span></span>
+
+<span data-ttu-id="11a45-125">Přejděte na **Řízení zásob** \> **Nastavení** \> **Parametry řízení zásob a skladu** a poté na kartě **Obecné** nastavte možnost **Ukončit výstupní skladovou objednávku**.</span><span class="sxs-lookup"><span data-stu-id="11a45-125">Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**, and then, on the **General** tab, set the **End output inventory order** option.</span></span>
+
+<span data-ttu-id="11a45-126">[![Možnost Ukončit výstupní skladovou objednávku](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)</span><span class="sxs-lookup"><span data-stu-id="11a45-126">[![End output inventory order option](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)</span></span>
+
+<span data-ttu-id="11a45-127">V některých případech nelze některé položky na skladě vydat jako součást procesu výdejek.</span><span class="sxs-lookup"><span data-stu-id="11a45-127">Sometimes, some items in inventory can't be picked as part of the picking list process.</span></span> <span data-ttu-id="11a45-128">Může dojít například k takové situaci, že pracovník skladu sníží množství na řádcích výdeje a zpracuje výdejku.</span><span class="sxs-lookup"><span data-stu-id="11a45-128">For example, this situation might occur if a warehouse worker reduces the quantities on picking lines and processes the picking list.</span></span> <span data-ttu-id="11a45-129">Pokud je možnost **Ukončit výstupní skladovou objednávku** nastavena na **Ano**, zbývající nevyskladněné množství je nahlášeno zpět na úroveň objednávky.</span><span class="sxs-lookup"><span data-stu-id="11a45-129">If the **End output inventory order** option is set to **Yes**, the remaining unpicked quantities are reported back to the order level.</span></span> <span data-ttu-id="11a45-130">Pokud je možnost nastavena na **ne**, zbývající nevyskladněné množství je zachováno jako otevřené množství výstupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="11a45-130">If the option is set to **No**, the remaining unpicked quantities are kept as an open output order quantity.</span></span> <span data-ttu-id="11a45-131">V takovém případě množství zůstanou uvolněná do skladu a je nutné je přidat na novou výdejku jako součást funkce **Otevřít výstupní objednávky**.</span><span class="sxs-lookup"><span data-stu-id="11a45-131">In this case, the quantities remain released to the warehouse and must be added to a new picking list as part of the **Open output orders** functionality.</span></span>
+
+<span data-ttu-id="11a45-132">[![Příkaz Otevřít výstupní objednávky v nabídce funkcí](./media/open-output-order.png)](./media/open-output-order.png)</span><span class="sxs-lookup"><span data-stu-id="11a45-132">[![Open output orders command on the Functions menu](./media/open-output-order.png)](./media/open-output-order.png)</span></span>
+
+<span data-ttu-id="11a45-133">[![Nabídka funkcí na stránce Otevřít výstupní objednávky](./media/open-output-order-function.png)](./media/open-output-order-function.png)</span><span class="sxs-lookup"><span data-stu-id="11a45-133">[![Functions menu on the Open output orders page](./media/open-output-order-function.png)](./media/open-output-order-function.png)</span></span>
+
+## <a name="reduce-quantity"></a><span data-ttu-id="11a45-134">Snížit množství</span><span class="sxs-lookup"><span data-stu-id="11a45-134">Reduce quantity</span></span>
+
+<span data-ttu-id="11a45-135">Třetí parametr, který můžete použít jako součást procesu generování výdejek, je parametr **Snížit množství**.</span><span class="sxs-lookup"><span data-stu-id="11a45-135">The third parameter that you can use as part of the process of generating picking lists is the **Reduce quantity** parameter.</span></span> <span data-ttu-id="11a45-136">Nastavení tohoto parametru se používá spolu s nastavením **Rezervace**, které spustí proces rezervace jako součást uvolnění do skladu.</span><span class="sxs-lookup"><span data-stu-id="11a45-136">The setting of this parameter works together with the **Reservation** setting that triggers a reservation process as part of the release to the warehouse.</span></span>
+
+<span data-ttu-id="11a45-137">[![Parametr Snížit množství](./media/reduce-quantity.png)](./media/reduce-quantity.png)</span><span class="sxs-lookup"><span data-stu-id="11a45-137">[![Reduce quantity parameter](./media/reduce-quantity.png)](./media/reduce-quantity.png)</span></span>
+
+## <a name="example-of-an-outbound-process-for-a-sales-order"></a><span data-ttu-id="11a45-138">Příklad odchozího procesu pro prodejní objednávku</span><span class="sxs-lookup"><span data-stu-id="11a45-138">Example of an outbound process for a sales order</span></span>
+
+<span data-ttu-id="11a45-139">V tomto příkladu je prodejní objednávka pro dvě položky.</span><span class="sxs-lookup"><span data-stu-id="11a45-139">For this example, there is a sales order for two items.</span></span> <span data-ttu-id="11a45-140">Během generování seznamu výdejek zvolte parametr **Snížit množství**.</span><span class="sxs-lookup"><span data-stu-id="11a45-140">During picking list generation, you select the **Reduce quantity** parameter.</span></span> <span data-ttu-id="11a45-141">Tím uvolníte a vytvoříte řádky výdeje pouze pro dostupné zásoby na skladě.</span><span class="sxs-lookup"><span data-stu-id="11a45-141">Therefore, you release and create picking lines only for available on-hand inventory.</span></span> <span data-ttu-id="11a45-142">Výdej musí být nahlášen pomocí procesu registrace výdejek (**Stav postupu výdeje** = **Aktivováno**).</span><span class="sxs-lookup"><span data-stu-id="11a45-142">The picking must be reported via a registration process for picking lists (**Picking route status** = **Activated**).</span></span>
+
+<span data-ttu-id="11a45-143">Zásoby. které nebyly ještě rezervovány, se zarezervují během generování výdejek.</span><span class="sxs-lookup"><span data-stu-id="11a45-143">The inventory that hasn't already been reserved is reserved during picking list generation.</span></span> <span data-ttu-id="11a45-144">Nedostupné zásoby lze buď odebrat z prodejní objednávky nebo uvolnit do skladu pro pozdější odchozí zpracování, až budou zásoby k dispozici pro výdej.</span><span class="sxs-lookup"><span data-stu-id="11a45-144">The unavailable inventory can be either removed from the sales order or released to the warehouse for outbound processing later, when inventory is available for picking.</span></span>
+
+<span data-ttu-id="11a45-145">[![Aktualizace výdejky](./media/update-picking-list.png)](./media/update-picking-list.png)</span><span class="sxs-lookup"><span data-stu-id="11a45-145">[![Update the picking list](./media/update-picking-list.png)](./media/update-picking-list.png)</span></span>
+
+<span data-ttu-id="11a45-146">Jakmile byly vyskladněny všechny řádků výdeje na stránce **Registrace výdejky**, přidružená dodávka je dokončena.</span><span class="sxs-lookup"><span data-stu-id="11a45-146">As soon as all the picking lines have been picked on the **Picking list registration** page, the associated shipment is completed.</span></span> <span data-ttu-id="11a45-147">Poté lze inicializovat proces pro dodací listy prodejní objednávky na základě vyskladněných zásob.</span><span class="sxs-lookup"><span data-stu-id="11a45-147">The process for sales order packing slips can then be initialized based on the picked inventory.</span></span>
+
+<span data-ttu-id="11a45-148">[![Aktualizace odchozích dodávek](./media/outbound-shipments.png)](./media/outbound-shipments.png)</span><span class="sxs-lookup"><span data-stu-id="11a45-148">[![Update outbound shipments](./media/outbound-shipments.png)](./media/outbound-shipments.png)</span></span>
+

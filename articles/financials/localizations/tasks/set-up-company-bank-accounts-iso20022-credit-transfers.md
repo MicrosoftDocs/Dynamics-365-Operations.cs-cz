@@ -16,39 +16,39 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 1d0eabdfdeb5ed7d0bdb6df87ebdfa0d41e87492
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="set-up-company-bank-accounts-for-iso20022-credit-transfers"></a><span data-ttu-id="f74b7-103">Nastavení bankovních účtů společnosti pro převody kreditu ve formátu ISO20022</span><span class="sxs-lookup"><span data-stu-id="f74b7-103">Set up company bank accounts for ISO20022 credit transfers</span></span>
+# <a name="set-up-company-bank-accounts-for-iso20022-credit-transfers"></a><span data-ttu-id="0c504-103">Nastavení bankovních účtů společnosti pro převody kreditu ve formátu ISO20022</span><span class="sxs-lookup"><span data-stu-id="0c504-103">Set up company bank accounts for ISO20022 credit transfers</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="f74b7-104">Tento postup popisuje způsob nastavení informací o konkrétním bankovním účtu společnosti, které jsou vyžadované pro generování souboru platby.</span><span class="sxs-lookup"><span data-stu-id="f74b7-104">This procedure shows how to set up company-specific bank account information that is required for payment file generation.</span></span> <span data-ttu-id="f74b7-105">Můžete nastavit informace požadované ke generování formátu pro převod kreditu ISO 20022, ale v závislosti na formátu mohou být požadovány další informace, jako je ID společnosti nebo kód třídění.</span><span class="sxs-lookup"><span data-stu-id="f74b7-105">You set up information required to generate ISO 20022 credit transfer format but depending on the format there might be other information required, such as the Company ID or the Sort code.</span></span> 
+<span data-ttu-id="0c504-104">Tento postup popisuje způsob nastavení informací o konkrétním bankovním účtu společnosti, které jsou vyžadované pro generování souboru platby.</span><span class="sxs-lookup"><span data-stu-id="0c504-104">This procedure shows how to set up company-specific bank account information that is required for payment file generation.</span></span> <span data-ttu-id="0c504-105">Můžete nastavit informace požadované ke generování formátu pro převod kreditu ISO 20022, ale v závislosti na formátu mohou být požadovány další informace, jako je ID společnosti nebo kód třídění.</span><span class="sxs-lookup"><span data-stu-id="0c504-105">You set up information required to generate ISO 20022 credit transfer format but depending on the format there might be other information required, such as the Company ID or the Sort code.</span></span> 
 
-<span data-ttu-id="f74b7-106">K vytvoření tohoto postupu jsou použita ukázková data společnosti DEMF.</span><span class="sxs-lookup"><span data-stu-id="f74b7-106">The demo data company used to create this procedure is DEMF.</span></span>
+<span data-ttu-id="0c504-106">K vytvoření tohoto postupu jsou použita ukázková data společnosti DEMF.</span><span class="sxs-lookup"><span data-stu-id="0c504-106">The demo data company used to create this procedure is DEMF.</span></span>
 
-<span data-ttu-id="f74b7-107">Toto je druhý z pěti úkolů, které společně popisují proces platby dodavatele pomocí konfigurací elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f74b7-107">This is the second procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="f74b7-108">Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="f74b7-108">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="0c504-107">Toto je druhý z pěti úkolů, které společně popisují proces platby dodavatele pomocí konfigurací elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="0c504-107">This is the second procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="0c504-108">Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="0c504-108">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="set-up-iban-and-swift-code"></a><span data-ttu-id="f74b7-109">Nastavení kódu IBAN a SWIFT</span><span class="sxs-lookup"><span data-stu-id="f74b7-109">Set up IBAN and SWIFT code</span></span>
-1. <span data-ttu-id="f74b7-110">Přejděte do části Pokladna a banka > Bankovní účty.</span><span class="sxs-lookup"><span data-stu-id="f74b7-110">Go to Cash and bank management > Bank accounts.</span></span>
-2. <span data-ttu-id="f74b7-111">Použijte rychlý filtr k filtrování v poli Bankovní účet s hodnotou 'DEMF OPER.</span><span class="sxs-lookup"><span data-stu-id="f74b7-111">Use the Quick Filter to filter on the Bank account field with a value of 'DEMF OPER'.</span></span>
-3. <span data-ttu-id="f74b7-112">Kliknutím na tlačítko DEMF OPER otevřete podrobnosti o účtu.</span><span class="sxs-lookup"><span data-stu-id="f74b7-112">Click DEMF OPER to open bank account details.</span></span>
-4. <span data-ttu-id="f74b7-113">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="f74b7-113">Click Edit.</span></span>
-5. <span data-ttu-id="f74b7-114">Rozbalte oddíl Další identifikace.</span><span class="sxs-lookup"><span data-stu-id="f74b7-114">Expand the Additional identification section.</span></span>
-6. <span data-ttu-id="f74b7-115">Zadejte do pole IBAN hodnotu „DE89370400440532013000“.</span><span class="sxs-lookup"><span data-stu-id="f74b7-115">In the IBAN field, type 'DE89370400440532013000'.</span></span>
-7. <span data-ttu-id="f74b7-116">V poli Kód SWIFT zadejte hodnotu DEUTDEFF.</span><span class="sxs-lookup"><span data-stu-id="f74b7-116">In the SWIFT code field, type 'DEUTDEFF'.</span></span>
-    * <span data-ttu-id="f74b7-117">Všimněte si, že pro spoustu formátů platby není požadován SWIFT\BIC, doporučujeme ho však pro bankovní účet zaregistrovat.</span><span class="sxs-lookup"><span data-stu-id="f74b7-117">Note that SWIFT\BIC is not required for many payment formats, however it is recommended to have it registered for a bank account.</span></span>  
-8. <span data-ttu-id="f74b7-118">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="f74b7-118">Click Save.</span></span>
+## <a name="set-up-iban-and-swift-code"></a><span data-ttu-id="0c504-109">Nastavení kódu IBAN a SWIFT</span><span class="sxs-lookup"><span data-stu-id="0c504-109">Set up IBAN and SWIFT code</span></span>
+1. <span data-ttu-id="0c504-110">Přejděte do části Pokladna a banka > Bankovní účty.</span><span class="sxs-lookup"><span data-stu-id="0c504-110">Go to Cash and bank management > Bank accounts.</span></span>
+2. <span data-ttu-id="0c504-111">Použijte rychlý filtr k filtrování v poli Bankovní účet s hodnotou 'DEMF OPER.</span><span class="sxs-lookup"><span data-stu-id="0c504-111">Use the Quick Filter to filter on the Bank account field with a value of 'DEMF OPER'.</span></span>
+3. <span data-ttu-id="0c504-112">Kliknutím na tlačítko DEMF OPER otevřete podrobnosti o účtu.</span><span class="sxs-lookup"><span data-stu-id="0c504-112">Click DEMF OPER to open bank account details.</span></span>
+4. <span data-ttu-id="0c504-113">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="0c504-113">Click Edit.</span></span>
+5. <span data-ttu-id="0c504-114">Rozbalte oddíl Další identifikace.</span><span class="sxs-lookup"><span data-stu-id="0c504-114">Expand the Additional identification section.</span></span>
+6. <span data-ttu-id="0c504-115">Zadejte do pole IBAN hodnotu „DE89370400440532013000“.</span><span class="sxs-lookup"><span data-stu-id="0c504-115">In the IBAN field, type 'DE89370400440532013000'.</span></span>
+7. <span data-ttu-id="0c504-116">V poli Kód SWIFT zadejte hodnotu DEUTDEFF.</span><span class="sxs-lookup"><span data-stu-id="0c504-116">In the SWIFT code field, type 'DEUTDEFF'.</span></span>
+    * <span data-ttu-id="0c504-117">Všimněte si, že pro spoustu formátů platby není požadován SWIFT\BIC, doporučujeme ho však pro bankovní účet zaregistrovat.</span><span class="sxs-lookup"><span data-stu-id="0c504-117">Note that SWIFT\BIC is not required for many payment formats, however it is recommended to have it registered for a bank account.</span></span>  
+8. <span data-ttu-id="0c504-118">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="0c504-118">Click Save.</span></span>
 
-## <a name="set-up-bank-account-for-the-legal-entity"></a><span data-ttu-id="f74b7-119">Nastavení bankovního účtu pro právnickou osobu</span><span class="sxs-lookup"><span data-stu-id="f74b7-119">Set up bank account for the legal entity</span></span>
-1. <span data-ttu-id="f74b7-120">Přejděte do části na Správa organizace > Organizace > Právnické osoby.</span><span class="sxs-lookup"><span data-stu-id="f74b7-120">Go to Organization administration > Organizations > Legal entities.</span></span>
-2. <span data-ttu-id="f74b7-121">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="f74b7-121">Click Edit.</span></span>
-3. <span data-ttu-id="f74b7-122">Rozbalte část informací o bankovním účtu.</span><span class="sxs-lookup"><span data-stu-id="f74b7-122">Expand the Bank account information section.</span></span>
-4. <span data-ttu-id="f74b7-123">V poli Bankovní účet zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f74b7-123">In the Bank account field, enter or select a value.</span></span>
-5. <span data-ttu-id="f74b7-124">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="f74b7-124">Click Save.</span></span>
+## <a name="set-up-bank-account-for-the-legal-entity"></a><span data-ttu-id="0c504-119">Nastavení bankovního účtu pro právnickou osobu</span><span class="sxs-lookup"><span data-stu-id="0c504-119">Set up bank account for the legal entity</span></span>
+1. <span data-ttu-id="0c504-120">Přejděte do části na Správa organizace > Organizace > Právnické osoby.</span><span class="sxs-lookup"><span data-stu-id="0c504-120">Go to Organization administration > Organizations > Legal entities.</span></span>
+2. <span data-ttu-id="0c504-121">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="0c504-121">Click Edit.</span></span>
+3. <span data-ttu-id="0c504-122">Rozbalte část informací o bankovním účtu.</span><span class="sxs-lookup"><span data-stu-id="0c504-122">Expand the Bank account information section.</span></span>
+4. <span data-ttu-id="0c504-123">V poli Bankovní účet zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="0c504-123">In the Bank account field, enter or select a value.</span></span>
+5. <span data-ttu-id="0c504-124">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="0c504-124">Click Save.</span></span>
 
 

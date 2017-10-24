@@ -17,65 +17,65 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: e5187c44aac881273900b2fc0ca91045a65cd838
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/12/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="create-and-process-a-conformance"></a><span data-ttu-id="6f7d9-103">Vytvoření a zpracování neshody</span><span class="sxs-lookup"><span data-stu-id="6f7d9-103">Create and process a conformance</span></span>
+# <a name="create-and-process-a-conformance"></a><span data-ttu-id="7247d-103">Vytvoření a zpracování neshody</span><span class="sxs-lookup"><span data-stu-id="7247d-103">Create and process a conformance</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="6f7d9-104">Tento postup slouží k provádění správy neshody a je založen na existující objednávce kvality.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-104">Use this procedure to perform nonconformance management, based on an existing quality order.</span></span> <span data-ttu-id="6f7d9-105">Tento záznam lze spustit v ukázkové společnosti USMF a můžete navrhované hodnoty.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-105">You can run this recording in the USMF demo company and can use the suggested values.</span></span> <span data-ttu-id="6f7d9-106">Tento postup obvykle provádí úředník řízení kvality.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-106">Typically, this procedure is performed by a quality clerk.</span></span>  <span data-ttu-id="6f7d9-107">Nezbytným předpokladem je spuštění záznamu úkolu „Kontrola kvality zboží“.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-107">As a prerequisite, run the “Inspect the quality of goods” task recording.</span></span> <span data-ttu-id="6f7d9-108">Aby bylo možné zpracovat schválení neshody, uživatel, který spustí záznam úkolu, musí mít hodnotu "Název" přiřazenou na stránce Uživatelé.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-108">To process the approval of a nonconformance, the user who runs the task recording must have a “Name” value assigned on the Users page.</span></span> <span data-ttu-id="6f7d9-109">Aby bylo možné použít poznámky k dokumentům, uživatel musí také mít aktivováno řízení dokumentů v možnostech uživatele.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-109">To use the document notes, the user must also have Document handling activated in the user options.</span></span>
+<span data-ttu-id="7247d-104">Tento postup slouží k provádění správy neshody a je založen na existující objednávce kvality.</span><span class="sxs-lookup"><span data-stu-id="7247d-104">Use this procedure to perform nonconformance management, based on an existing quality order.</span></span> <span data-ttu-id="7247d-105">Tento záznam lze spustit v ukázkové společnosti USMF a můžete navrhované hodnoty.</span><span class="sxs-lookup"><span data-stu-id="7247d-105">You can run this recording in the USMF demo company and can use the suggested values.</span></span> <span data-ttu-id="7247d-106">Tento postup obvykle provádí úředník řízení kvality.</span><span class="sxs-lookup"><span data-stu-id="7247d-106">Typically, this procedure is performed by a quality clerk.</span></span>  <span data-ttu-id="7247d-107">Nezbytným předpokladem je spuštění záznamu úkolu „Kontrola kvality zboží“.</span><span class="sxs-lookup"><span data-stu-id="7247d-107">As a prerequisite, run the “Inspect the quality of goods” task recording.</span></span> <span data-ttu-id="7247d-108">Aby bylo možné zpracovat schválení neshody, uživatel, který spustí záznam úkolu, musí mít hodnotu "Název" přiřazenou na stránce Uživatelé.</span><span class="sxs-lookup"><span data-stu-id="7247d-108">To process the approval of a nonconformance, the user who runs the task recording must have a “Name” value assigned on the Users page.</span></span> <span data-ttu-id="7247d-109">Aby bylo možné použít poznámky k dokumentům, uživatel musí také mít aktivováno řízení dokumentů v možnostech uživatele.</span><span class="sxs-lookup"><span data-stu-id="7247d-109">To use the document notes, the user must also have Document handling activated in the user options.</span></span>
 
 
-## <a name="select-a-quality-order"></a><span data-ttu-id="6f7d9-110">Vyberte objednávku kvality</span><span class="sxs-lookup"><span data-stu-id="6f7d9-110">Select a quality order</span></span>
-1. <span data-ttu-id="6f7d9-111">Přejděte do nabídky Objednávky kvality.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-111">Go to Quality orders.</span></span>
-2. <span data-ttu-id="6f7d9-112">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-112">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="6f7d9-113">Vyberte objednávku kvality, která byla vytvořena na základě záznamu úkolu "Kontrola kvality zboží".</span><span class="sxs-lookup"><span data-stu-id="6f7d9-113">Select the quality order that was created from the "Inspect the quality of goods" task recording.</span></span>  
+## <a name="select-a-quality-order"></a><span data-ttu-id="7247d-110">Vyberte objednávku kvality</span><span class="sxs-lookup"><span data-stu-id="7247d-110">Select a quality order</span></span>
+1. <span data-ttu-id="7247d-111">Přejděte do nabídky Objednávky kvality.</span><span class="sxs-lookup"><span data-stu-id="7247d-111">Go to Quality orders.</span></span>
+2. <span data-ttu-id="7247d-112">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="7247d-112">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="7247d-113">Vyberte objednávku kvality, která byla vytvořena na základě záznamu úkolu "Kontrola kvality zboží".</span><span class="sxs-lookup"><span data-stu-id="7247d-113">Select the quality order that was created from the "Inspect the quality of goods" task recording.</span></span>  
 
-## <a name="create-a-nonconformance"></a><span data-ttu-id="6f7d9-114">Vytvoření neshody</span><span class="sxs-lookup"><span data-stu-id="6f7d9-114">Create a nonconformance</span></span>
-1. <span data-ttu-id="6f7d9-115">Klepněte na možnost Dotazy.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-115">Click Inquiries.</span></span>
-2. <span data-ttu-id="6f7d9-116">Klikněte na možnost Neshody.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-116">Click Non conformances.</span></span>
-3. <span data-ttu-id="6f7d9-117">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-117">Click New.</span></span>
-4. <span data-ttu-id="6f7d9-118">V poli Typ problému kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-118">In the Problem type field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="6f7d9-119">Vyberte problém, který byl zjištěn během procesu kontroly.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-119">Select the problem that was found during the inspection process.</span></span>  
-5. <span data-ttu-id="6f7d9-120">V poli Typ problému kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-120">In the Problem type field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="6f7d9-121">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-121">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="6f7d9-122">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-122">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="6f7d9-123">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-123">Click OK.</span></span>
+## <a name="create-a-nonconformance"></a><span data-ttu-id="7247d-114">Vytvoření neshody</span><span class="sxs-lookup"><span data-stu-id="7247d-114">Create a nonconformance</span></span>
+1. <span data-ttu-id="7247d-115">Klepněte na možnost Dotazy.</span><span class="sxs-lookup"><span data-stu-id="7247d-115">Click Inquiries.</span></span>
+2. <span data-ttu-id="7247d-116">Klikněte na možnost Neshody.</span><span class="sxs-lookup"><span data-stu-id="7247d-116">Click Non conformances.</span></span>
+3. <span data-ttu-id="7247d-117">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="7247d-117">Click New.</span></span>
+4. <span data-ttu-id="7247d-118">V poli Typ problému kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="7247d-118">In the Problem type field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="7247d-119">Vyberte problém, který byl zjištěn během procesu kontroly.</span><span class="sxs-lookup"><span data-stu-id="7247d-119">Select the problem that was found during the inspection process.</span></span>  
+5. <span data-ttu-id="7247d-120">V poli Typ problému kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="7247d-120">In the Problem type field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="7247d-121">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="7247d-121">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="7247d-122">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="7247d-122">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="7247d-123">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="7247d-123">Click OK.</span></span>
 
-## <a name="approvereject-a-nonconformance"></a><span data-ttu-id="6f7d9-124">Schválení/zamítnutí neshody</span><span class="sxs-lookup"><span data-stu-id="6f7d9-124">Approve/reject a nonconformance</span></span>
-1. <span data-ttu-id="6f7d9-125">Klepněte na možnost Funkce.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-125">Click Functions.</span></span>
-2. <span data-ttu-id="6f7d9-126">Klikněte na možnost Schválit neshodu.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-126">Click Approve non conformance.</span></span>
-    * <span data-ttu-id="6f7d9-127">V tomto příkladu to je schválení neshody.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-127">For this example, approve the nonconformance.</span></span> <span data-ttu-id="6f7d9-128">Schválené neshody lze přidružit k souvisejícím operacím k zaznamenání práce, která je provedena v průběhu zpracování neshody nebo během zpracování oprav jako v rámci tohoto záznamu úkolu.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-128">Approved nonconformances can be associated with related operations to record work that is done as part of the nonconformance handling and, as in this task recording, the processing of correction handling.</span></span>  
-3. <span data-ttu-id="6f7d9-129">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-129">Click Yes.</span></span>
+## <a name="approvereject-a-nonconformance"></a><span data-ttu-id="7247d-124">Schválení/zamítnutí neshody</span><span class="sxs-lookup"><span data-stu-id="7247d-124">Approve/reject a nonconformance</span></span>
+1. <span data-ttu-id="7247d-125">Klepněte na možnost Funkce.</span><span class="sxs-lookup"><span data-stu-id="7247d-125">Click Functions.</span></span>
+2. <span data-ttu-id="7247d-126">Klikněte na možnost Schválit neshodu.</span><span class="sxs-lookup"><span data-stu-id="7247d-126">Click Approve non conformance.</span></span>
+    * <span data-ttu-id="7247d-127">V tomto příkladu to je schválení neshody.</span><span class="sxs-lookup"><span data-stu-id="7247d-127">For this example, approve the nonconformance.</span></span> <span data-ttu-id="7247d-128">Schválené neshody lze přidružit k souvisejícím operacím k zaznamenání práce, která je provedena v průběhu zpracování neshody nebo během zpracování oprav jako v rámci tohoto záznamu úkolu.</span><span class="sxs-lookup"><span data-stu-id="7247d-128">Approved nonconformances can be associated with related operations to record work that is done as part of the nonconformance handling and, as in this task recording, the processing of correction handling.</span></span>  
+3. <span data-ttu-id="7247d-129">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="7247d-129">Click Yes.</span></span>
 
-## <a name="create-a-correction-action"></a><span data-ttu-id="6f7d9-130">Vytvoření akce opravy</span><span class="sxs-lookup"><span data-stu-id="6f7d9-130">Create a correction action</span></span>
-1. <span data-ttu-id="6f7d9-131">Klikněte na možnost Opravy.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-131">Click Corrections.</span></span>
-2. <span data-ttu-id="6f7d9-132">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-132">Click New.</span></span>
-3. <span data-ttu-id="6f7d9-133">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-133">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="6f7d9-134">V poli Číslo pracovníka kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-134">In the Personnel number field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="6f7d9-135">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-135">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="6f7d9-136">Klepněte na tlačítko Vybrat.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-136">Click Select.</span></span>
-7. <span data-ttu-id="6f7d9-137">Klikněte na možnost Připojit.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-137">Click Attach.</span></span>
-    * <span data-ttu-id="6f7d9-138">Vytvořte poznámku o opravě.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-138">Create a note about the correction.</span></span> <span data-ttu-id="6f7d9-139">V tomto příkladu akce představuje kontaktování dodavatele za účelem diskuze o případu neshody.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-139">For this example, the action is to contact the vendor to discuss the nonconformance case.</span></span>  
-8. <span data-ttu-id="6f7d9-140">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-140">Click New.</span></span>
-9. <span data-ttu-id="6f7d9-141">Klikněte na možnost Poznámka.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-141">Click Note.</span></span>
-    * <span data-ttu-id="6f7d9-142">Všimněte si, že v závislosti na nastavení sestavy lze vytisknout různé typy dokumentů v sestavách, které se vztahují ke správě neshody.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-142">Note that, depending on the report setup, different document types can be printed on the reports that are related to nonconformance management.</span></span>  
-10. <span data-ttu-id="6f7d9-143">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-143">In the Description field, type a value.</span></span>
-11. <span data-ttu-id="6f7d9-144">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-144">Close the page.</span></span>
+## <a name="create-a-correction-action"></a><span data-ttu-id="7247d-130">Vytvoření akce opravy</span><span class="sxs-lookup"><span data-stu-id="7247d-130">Create a correction action</span></span>
+1. <span data-ttu-id="7247d-131">Klikněte na možnost Opravy.</span><span class="sxs-lookup"><span data-stu-id="7247d-131">Click Corrections.</span></span>
+2. <span data-ttu-id="7247d-132">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="7247d-132">Click New.</span></span>
+3. <span data-ttu-id="7247d-133">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="7247d-133">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="7247d-134">V poli Číslo pracovníka kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="7247d-134">In the Personnel number field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="7247d-135">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="7247d-135">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="7247d-136">Klepněte na tlačítko Vybrat.</span><span class="sxs-lookup"><span data-stu-id="7247d-136">Click Select.</span></span>
+7. <span data-ttu-id="7247d-137">Klikněte na možnost Připojit.</span><span class="sxs-lookup"><span data-stu-id="7247d-137">Click Attach.</span></span>
+    * <span data-ttu-id="7247d-138">Vytvořte poznámku o opravě.</span><span class="sxs-lookup"><span data-stu-id="7247d-138">Create a note about the correction.</span></span> <span data-ttu-id="7247d-139">V tomto příkladu akce představuje kontaktování dodavatele za účelem diskuze o případu neshody.</span><span class="sxs-lookup"><span data-stu-id="7247d-139">For this example, the action is to contact the vendor to discuss the nonconformance case.</span></span>  
+8. <span data-ttu-id="7247d-140">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="7247d-140">Click New.</span></span>
+9. <span data-ttu-id="7247d-141">Klikněte na možnost Poznámka.</span><span class="sxs-lookup"><span data-stu-id="7247d-141">Click Note.</span></span>
+    * <span data-ttu-id="7247d-142">Všimněte si, že v závislosti na nastavení sestavy lze vytisknout různé typy dokumentů v sestavách, které se vztahují ke správě neshody.</span><span class="sxs-lookup"><span data-stu-id="7247d-142">Note that, depending on the report setup, different document types can be printed on the reports that are related to nonconformance management.</span></span>  
+10. <span data-ttu-id="7247d-143">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="7247d-143">In the Description field, type a value.</span></span>
+11. <span data-ttu-id="7247d-144">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="7247d-144">Close the page.</span></span>
 
-## <a name="maintain-a-correction"></a><span data-ttu-id="6f7d9-145">Údržba opravy</span><span class="sxs-lookup"><span data-stu-id="6f7d9-145">Maintain a correction</span></span>
-1. <span data-ttu-id="6f7d9-146">Klikněte na možnost Označit jako dokončené.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-146">Click Mark complete.</span></span>
-2. <span data-ttu-id="6f7d9-147">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-147">Click OK.</span></span>
-3. <span data-ttu-id="6f7d9-148">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-148">Close the page.</span></span>
+## <a name="maintain-a-correction"></a><span data-ttu-id="7247d-145">Údržba opravy</span><span class="sxs-lookup"><span data-stu-id="7247d-145">Maintain a correction</span></span>
+1. <span data-ttu-id="7247d-146">Klikněte na možnost Označit jako dokončené.</span><span class="sxs-lookup"><span data-stu-id="7247d-146">Click Mark complete.</span></span>
+2. <span data-ttu-id="7247d-147">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="7247d-147">Click OK.</span></span>
+3. <span data-ttu-id="7247d-148">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="7247d-148">Close the page.</span></span>
 
-## <a name="close-a-nonconformance"></a><span data-ttu-id="6f7d9-149">Zavření neshody</span><span class="sxs-lookup"><span data-stu-id="6f7d9-149">Close a nonconformance</span></span>
-1. <span data-ttu-id="6f7d9-150">Klepněte na možnost Funkce.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-150">Click Functions.</span></span>
-2. <span data-ttu-id="6f7d9-151">Klikněte na možnost Zavřít neshodu.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-151">Click Close non conformance.</span></span>
-3. <span data-ttu-id="6f7d9-152">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-152">Click Yes.</span></span>
-4. <span data-ttu-id="6f7d9-153">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-153">Close the page.</span></span>
-5. <span data-ttu-id="6f7d9-154">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="6f7d9-154">Close the page.</span></span>
+## <a name="close-a-nonconformance"></a><span data-ttu-id="7247d-149">Zavření neshody</span><span class="sxs-lookup"><span data-stu-id="7247d-149">Close a nonconformance</span></span>
+1. <span data-ttu-id="7247d-150">Klepněte na možnost Funkce.</span><span class="sxs-lookup"><span data-stu-id="7247d-150">Click Functions.</span></span>
+2. <span data-ttu-id="7247d-151">Klikněte na možnost Zavřít neshodu.</span><span class="sxs-lookup"><span data-stu-id="7247d-151">Click Close non conformance.</span></span>
+3. <span data-ttu-id="7247d-152">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="7247d-152">Click Yes.</span></span>
+4. <span data-ttu-id="7247d-153">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="7247d-153">Close the page.</span></span>
+5. <span data-ttu-id="7247d-154">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="7247d-154">Close the page.</span></span>
 

@@ -18,67 +18,67 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 6d8044b177d963842f02d787b7e40c96287f4b11
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
-# <a name="user-preferences-in-financial-report-designer"></a><span data-ttu-id="bc4fc-104">Uživatelské předvolby v návrháři finančních sestav</span><span class="sxs-lookup"><span data-stu-id="bc4fc-104">User preferences in financial report designer</span></span>
+# <a name="user-preferences-in-financial-report-designer"></a><span data-ttu-id="b9505-104">Uživatelské předvolby v návrháři finančních sestav</span><span class="sxs-lookup"><span data-stu-id="b9505-104">User preferences in financial report designer</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-<span data-ttu-id="bc4fc-105">Tento článek vysvětluje, jak nastavit uživatelské předvolby pro přizpůsobení interakce uživatelů v návrháři finančních sestav, a pro řízení výchozího prostředí po přihlášení.</span><span class="sxs-lookup"><span data-stu-id="bc4fc-105">This article explains how to set user preferences to customize your user interactions in financial report designer and control the initial sign-in experience.</span></span> <span data-ttu-id="bc4fc-106">Můžete také určit, jak se zobrazí jednotlivé sestavy, knihovna sestav a výchozí umístění souborů.</span><span class="sxs-lookup"><span data-stu-id="bc4fc-106">You can also control how individual reports, the report library, and the default file locations are displayed.</span></span> 
+<span data-ttu-id="b9505-105">Tento článek vysvětluje, jak nastavit uživatelské předvolby pro přizpůsobení interakce uživatelů v návrháři finančních sestav, a pro řízení výchozího prostředí po přihlášení.</span><span class="sxs-lookup"><span data-stu-id="b9505-105">This article explains how to set user preferences to customize your user interactions in financial report designer and control the initial sign-in experience.</span></span> <span data-ttu-id="b9505-106">Můžete také určit, jak se zobrazí jednotlivé sestavy, knihovna sestav a výchozí umístění souborů.</span><span class="sxs-lookup"><span data-stu-id="b9505-106">You can also control how individual reports, the report library, and the default file locations are displayed.</span></span> 
 
-<a name="set-user-preferences"></a><span data-ttu-id="bc4fc-107">Nastavení uživatelských předvoleb</span><span class="sxs-lookup"><span data-stu-id="bc4fc-107">Set user preferences</span></span>
+<a name="set-user-preferences"></a><span data-ttu-id="b9505-107">Nastavení uživatelských předvoleb</span><span class="sxs-lookup"><span data-stu-id="b9505-107">Set user preferences</span></span>
 --------------------
 
-1.  <span data-ttu-id="bc4fc-108">V návrháři sestav v nabídce **Nástroje** klikněte na položku **Možnosti**.</span><span class="sxs-lookup"><span data-stu-id="bc4fc-108">In Report Designer, on the **Tools** menu, click **Options**.</span></span>
-2.  <span data-ttu-id="bc4fc-109">V dialogovém okně **Možnosti** vyberte předvolby.</span><span class="sxs-lookup"><span data-stu-id="bc4fc-109">In the **Options** dialog box, select your preferences.</span></span>
-3.  <span data-ttu-id="bc4fc-110">Klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="bc4fc-110">Click **OK**.</span></span>
+1.  <span data-ttu-id="b9505-108">V návrháři sestav v nabídce **Nástroje** klikněte na položku **Možnosti**.</span><span class="sxs-lookup"><span data-stu-id="b9505-108">In Report Designer, on the **Tools** menu, click **Options**.</span></span>
+2.  <span data-ttu-id="b9505-109">V dialogovém okně **Možnosti** vyberte předvolby.</span><span class="sxs-lookup"><span data-stu-id="b9505-109">In the **Options** dialog box, select your preferences.</span></span>
+3.  <span data-ttu-id="b9505-110">Klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="b9505-110">Click **OK**.</span></span>
 
-## <a name="options-dialog-box-options"></a><span data-ttu-id="bc4fc-111">Možnosti dialogového okna Možnosti</span><span class="sxs-lookup"><span data-stu-id="bc4fc-111">Options dialog box options</span></span>
+## <a name="options-dialog-box-options"></a><span data-ttu-id="b9505-111">Možnosti dialogového okna Možnosti</span><span class="sxs-lookup"><span data-stu-id="b9505-111">Options dialog box options</span></span>
 <table>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="bc4fc-112">Možnost pro uživatele</span><span class="sxs-lookup"><span data-stu-id="bc4fc-112">User option</span></span></th>
-<th><span data-ttu-id="bc4fc-113">popis</span><span class="sxs-lookup"><span data-stu-id="bc4fc-113">Description</span></span></th>
+<th><span data-ttu-id="b9505-112">Možnost pro uživatele</span><span class="sxs-lookup"><span data-stu-id="b9505-112">User option</span></span></th>
+<th><span data-ttu-id="b9505-113">popis</span><span class="sxs-lookup"><span data-stu-id="b9505-113">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="bc4fc-114">Při spuštění</span><span class="sxs-lookup"><span data-stu-id="bc4fc-114">At startup</span></span></td>
-<td><span data-ttu-id="bc4fc-115">Vyberte, co chcete zobrazit po spuštění aplikace Návrhář sestav.</span><span class="sxs-lookup"><span data-stu-id="bc4fc-115">Select what you see when Report Designer starts.</span></span> <span data-ttu-id="bc4fc-116">Vyberte některou z následujících možností:</span><span class="sxs-lookup"><span data-stu-id="bc4fc-116">Select one of the following options:</span></span>
+<td><span data-ttu-id="b9505-114">Při spuštění</span><span class="sxs-lookup"><span data-stu-id="b9505-114">At startup</span></span></td>
+<td><span data-ttu-id="b9505-115">Vyberte, co chcete zobrazit po spuštění aplikace Návrhář sestav.</span><span class="sxs-lookup"><span data-stu-id="b9505-115">Select what you see when Report Designer starts.</span></span> <span data-ttu-id="b9505-116">Vyberte některou z následujících možností:</span><span class="sxs-lookup"><span data-stu-id="b9505-116">Select one of the following options:</span></span>
 <ul>
-<li><span data-ttu-id="bc4fc-117"><strong>Načíst poslední načtenou sestavu</strong> – otevře naposledy prohlíženou sestavu.</span><span class="sxs-lookup"><span data-stu-id="bc4fc-117"><strong>Load last loaded report</strong> – Open the last report that you viewed.</span></span></li>
-<li><span data-ttu-id="bc4fc-118"><strong>Zobrazit otevřené okno</strong> – otevře okno <strong>Otevřeno</strong>.</span><span class="sxs-lookup"><span data-stu-id="bc4fc-118"><strong>Show Open window</strong> – Open the <strong>Open</strong> window.</span></span> <span data-ttu-id="bc4fc-119">Okno <strong>Otevřeno</strong> představuje okno pro rychlé vyhledávání stavebních bloků.</span><span class="sxs-lookup"><span data-stu-id="bc4fc-119">The <strong>Open</strong> window provides a search window that you can use to quickly find building blocks.</span></span></li>
-<li><span data-ttu-id="bc4fc-120"><strong>Zobrazit prázdné prostředí</strong> – otevře prázdné okno návrháře.</span><span class="sxs-lookup"><span data-stu-id="bc4fc-120"><strong>Show empty environment</strong> – Open an empty designer window.</span></span></li>
+<li><span data-ttu-id="b9505-117"><strong>Načíst poslední načtenou sestavu</strong> – otevře naposledy prohlíženou sestavu.</span><span class="sxs-lookup"><span data-stu-id="b9505-117"><strong>Load last loaded report</strong> – Open the last report that you viewed.</span></span></li>
+<li><span data-ttu-id="b9505-118"><strong>Zobrazit otevřené okno</strong> – otevře okno <strong>Otevřeno</strong>.</span><span class="sxs-lookup"><span data-stu-id="b9505-118"><strong>Show Open window</strong> – Open the <strong>Open</strong> window.</span></span> <span data-ttu-id="b9505-119">Okno <strong>Otevřeno</strong> představuje okno pro rychlé vyhledávání stavebních bloků.</span><span class="sxs-lookup"><span data-stu-id="b9505-119">The <strong>Open</strong> window provides a search window that you can use to quickly find building blocks.</span></span></li>
+<li><span data-ttu-id="b9505-120"><strong>Zobrazit prázdné prostředí</strong> – otevře prázdné okno návrháře.</span><span class="sxs-lookup"><span data-stu-id="b9505-120"><strong>Show empty environment</strong> – Open an empty designer window.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="bc4fc-121">Zobrazit potvrzení před ukončením aplikace Návrhář sestav</span><span class="sxs-lookup"><span data-stu-id="bc4fc-121">Display confirmation before exiting Report Designer</span></span></td>
-<td><span data-ttu-id="bc4fc-122">Vyberte, zda chcete zobrazit upozornění při ukončení aplikace.</span><span class="sxs-lookup"><span data-stu-id="bc4fc-122">Select whether to receive a warning message when you exit the application.</span></span> <span data-ttu-id="bc4fc-123">Tato zpráva pomáhá zajistit, že program není ukončen neúmyslně.</span><span class="sxs-lookup"><span data-stu-id="bc4fc-123">This message helps guarantee that you don't exit the program unintentionally.</span></span></td>
+<td><span data-ttu-id="b9505-121">Zobrazit potvrzení před ukončením aplikace Návrhář sestav</span><span class="sxs-lookup"><span data-stu-id="b9505-121">Display confirmation before exiting Report Designer</span></span></td>
+<td><span data-ttu-id="b9505-122">Vyberte, zda chcete zobrazit upozornění při ukončení aplikace.</span><span class="sxs-lookup"><span data-stu-id="b9505-122">Select whether to receive a warning message when you exit the application.</span></span> <span data-ttu-id="b9505-123">Tato zpráva pomáhá zajistit, že program není ukončen neúmyslně.</span><span class="sxs-lookup"><span data-stu-id="b9505-123">This message helps guarantee that you don't exit the program unintentionally.</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="bc4fc-124">Automaticky použít podtržení buněk v záhlaví sloupců</span><span class="sxs-lookup"><span data-stu-id="bc4fc-124">Automatically apply cell underline in column headers</span></span></td>
-<td><span data-ttu-id="bc4fc-125">Určete, zda chcete vložit podtržení do buňky nového záhlaví sloupce.</span><span class="sxs-lookup"><span data-stu-id="bc4fc-125">Select whether to insert an underline in the cell of a new column header.</span></span></td>
+<td><span data-ttu-id="b9505-124">Automaticky použít podtržení buněk v záhlaví sloupců</span><span class="sxs-lookup"><span data-stu-id="b9505-124">Automatically apply cell underline in column headers</span></span></td>
+<td><span data-ttu-id="b9505-125">Určete, zda chcete vložit podtržení do buňky nového záhlaví sloupce.</span><span class="sxs-lookup"><span data-stu-id="b9505-125">Select whether to insert an underline in the cell of a new column header.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="bc4fc-126">Umístění souborů aplikace Management Reporter</span><span class="sxs-lookup"><span data-stu-id="bc4fc-126">Management Reporter files location</span></span></td>
-<td><span data-ttu-id="bc4fc-127">Určuje výchozí umístění souborů.</span><span class="sxs-lookup"><span data-stu-id="bc4fc-127">Specify the default location for files.</span></span> <span data-ttu-id="bc4fc-128">Aplikace používá výchozí umístění při exportu skupin stavebních bloků.</span><span class="sxs-lookup"><span data-stu-id="bc4fc-128">The application uses the default location when you export building block groups.</span></span></td>
+<td><span data-ttu-id="b9505-126">Umístění souborů aplikace Management Reporter</span><span class="sxs-lookup"><span data-stu-id="b9505-126">Management Reporter files location</span></span></td>
+<td><span data-ttu-id="b9505-127">Určuje výchozí umístění souborů.</span><span class="sxs-lookup"><span data-stu-id="b9505-127">Specify the default location for files.</span></span> <span data-ttu-id="b9505-128">Aplikace používá výchozí umístění při exportu skupin stavebních bloků.</span><span class="sxs-lookup"><span data-stu-id="b9505-128">The application uses the default location when you export building block groups.</span></span></td>
 </tr>
 </tbody>
 </table>
 
 
 
-<a name="see-also"></a><span data-ttu-id="bc4fc-129">Viz také</span><span class="sxs-lookup"><span data-stu-id="bc4fc-129">See also</span></span>
+<a name="see-also"></a><span data-ttu-id="b9505-129">Viz také</span><span class="sxs-lookup"><span data-stu-id="b9505-129">See also</span></span>
 --------
 
-[<span data-ttu-id="bc4fc-130">Finanční výkaznictví</span><span class="sxs-lookup"><span data-stu-id="bc4fc-130">Financial reporting</span></span>](financial-reporting-intro.md)
+[<span data-ttu-id="b9505-130">Finanční výkaznictví</span><span class="sxs-lookup"><span data-stu-id="b9505-130">Financial reporting</span></span>](financial-reporting-intro.md)
 
 
 

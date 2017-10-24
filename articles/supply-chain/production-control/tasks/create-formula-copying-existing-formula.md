@@ -17,43 +17,43 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: d34ca5befd04b0f82bf9564fd3976f4c2daab0ce
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="create-a-formula-by-copying-from-an-existing-formula"></a><span data-ttu-id="74a30-103">Vytvoření receptury kopírováním z existující receptury</span><span class="sxs-lookup"><span data-stu-id="74a30-103">Create a formula by copying from an existing formula</span></span>
+# <a name="create-a-formula-by-copying-from-an-existing-formula"></a><span data-ttu-id="69c3c-103">Vytvoření receptury kopírováním z existující receptury</span><span class="sxs-lookup"><span data-stu-id="69c3c-103">Create a formula by copying from an existing formula</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="74a30-104">Tento postup popisuje, jak rychle vytvořit novou recepturu zkopírování z některé existující receptury.</span><span class="sxs-lookup"><span data-stu-id="74a30-104">This procedure shows how to quickly create a new formula by copying from an existing formula.</span></span> <span data-ttu-id="74a30-105">Můžete použít společnosti USMF, USP2 nebo USPI s ukázkovými daty pro vytvoření této procedury.</span><span class="sxs-lookup"><span data-stu-id="74a30-105">You can use the demo data companies USMF, USP2, or USPI to create this procedure.</span></span>
+<span data-ttu-id="69c3c-104">Tento postup popisuje, jak rychle vytvořit novou recepturu zkopírování z některé existující receptury.</span><span class="sxs-lookup"><span data-stu-id="69c3c-104">This procedure shows how to quickly create a new formula by copying from an existing formula.</span></span> <span data-ttu-id="69c3c-105">Můžete použít společnosti USMF, USP2 nebo USPI s ukázkovými daty pro vytvoření této procedury.</span><span class="sxs-lookup"><span data-stu-id="69c3c-105">You can use the demo data companies USMF, USP2, or USPI to create this procedure.</span></span>
 
 
-## <a name="create-a-new-formula"></a><span data-ttu-id="74a30-106">Vytvořit novou recepturu</span><span class="sxs-lookup"><span data-stu-id="74a30-106">Create a new formula</span></span>
-1. <span data-ttu-id="74a30-107">Přejděte na Vzorce.</span><span class="sxs-lookup"><span data-stu-id="74a30-107">Go to Formulas.</span></span>
-2. <span data-ttu-id="74a30-108">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="74a30-108">Click New.</span></span>
-3. <span data-ttu-id="74a30-109">Zadejte hodnotu do pole Receptura.</span><span class="sxs-lookup"><span data-stu-id="74a30-109">In the Formula field, type a value.</span></span>
-4. <span data-ttu-id="74a30-110">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="74a30-110">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="74a30-111">V poli Lokalita zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="74a30-111">In the Site field, enter or select a value.</span></span>
-6. <span data-ttu-id="74a30-112">V poli Skupina zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="74a30-112">In the Item group field, enter or select a value.</span></span>
-7. <span data-ttu-id="74a30-113">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="74a30-113">Click Save.</span></span>
+## <a name="create-a-new-formula"></a><span data-ttu-id="69c3c-106">Vytvořit novou recepturu</span><span class="sxs-lookup"><span data-stu-id="69c3c-106">Create a new formula</span></span>
+1. <span data-ttu-id="69c3c-107">Přejděte na Vzorce.</span><span class="sxs-lookup"><span data-stu-id="69c3c-107">Go to Formulas.</span></span>
+2. <span data-ttu-id="69c3c-108">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="69c3c-108">Click New.</span></span>
+3. <span data-ttu-id="69c3c-109">Zadejte hodnotu do pole Receptura.</span><span class="sxs-lookup"><span data-stu-id="69c3c-109">In the Formula field, type a value.</span></span>
+4. <span data-ttu-id="69c3c-110">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="69c3c-110">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="69c3c-111">V poli Lokalita zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="69c3c-111">In the Site field, enter or select a value.</span></span>
+6. <span data-ttu-id="69c3c-112">V poli Skupina zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="69c3c-112">In the Item group field, enter or select a value.</span></span>
+7. <span data-ttu-id="69c3c-113">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="69c3c-113">Click Save.</span></span>
 
-## <a name="copy-from-an-existing-formula"></a><span data-ttu-id="74a30-114">Kopírovat z existující receptury</span><span class="sxs-lookup"><span data-stu-id="74a30-114">Copy from an existing formula</span></span>
-1. <span data-ttu-id="74a30-115">Klepněte na tlačítko Kopírovat.</span><span class="sxs-lookup"><span data-stu-id="74a30-115">Click Copy.</span></span>
-2. <span data-ttu-id="74a30-116">V poli Číslo zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="74a30-116">In the Item number field, enter or select a value.</span></span>
-3. <span data-ttu-id="74a30-117">V poli Verze receptury zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="74a30-117">In the Formula version field, enter or select a value.</span></span>
-4. <span data-ttu-id="74a30-118">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="74a30-118">Click OK.</span></span>
+## <a name="copy-from-an-existing-formula"></a><span data-ttu-id="69c3c-114">Kopírovat z existující receptury</span><span class="sxs-lookup"><span data-stu-id="69c3c-114">Copy from an existing formula</span></span>
+1. <span data-ttu-id="69c3c-115">Klepněte na tlačítko Kopírovat.</span><span class="sxs-lookup"><span data-stu-id="69c3c-115">Click Copy.</span></span>
+2. <span data-ttu-id="69c3c-116">V poli Číslo zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="69c3c-116">In the Item number field, enter or select a value.</span></span>
+3. <span data-ttu-id="69c3c-117">V poli Verze receptury zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="69c3c-117">In the Formula version field, enter or select a value.</span></span>
+4. <span data-ttu-id="69c3c-118">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="69c3c-118">Click OK.</span></span>
 
-## <a name="revise-the-copied-formula"></a><span data-ttu-id="74a30-119">Zkontrolujte zkopírovanou recepturu</span><span class="sxs-lookup"><span data-stu-id="74a30-119">Revise the copied formula</span></span>
-1. <span data-ttu-id="74a30-120">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="74a30-120">In the list, find and select the desired record.</span></span>
-2. <span data-ttu-id="74a30-121">Klepněte na tlačítko Odstranit.</span><span class="sxs-lookup"><span data-stu-id="74a30-121">Click Delete.</span></span>
-3. <span data-ttu-id="74a30-122">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="74a30-122">Click Yes.</span></span>
+## <a name="revise-the-copied-formula"></a><span data-ttu-id="69c3c-119">Zkontrolujte zkopírovanou recepturu</span><span class="sxs-lookup"><span data-stu-id="69c3c-119">Revise the copied formula</span></span>
+1. <span data-ttu-id="69c3c-120">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="69c3c-120">In the list, find and select the desired record.</span></span>
+2. <span data-ttu-id="69c3c-121">Klepněte na tlačítko Odstranit.</span><span class="sxs-lookup"><span data-stu-id="69c3c-121">Click Delete.</span></span>
+3. <span data-ttu-id="69c3c-122">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="69c3c-122">Click Yes.</span></span>
 
-## <a name="approve-formula"></a><span data-ttu-id="74a30-123">Schválit recepturu</span><span class="sxs-lookup"><span data-stu-id="74a30-123">Approve formula</span></span>
-1. <span data-ttu-id="74a30-124">Klepněte na možnost Schválit recepturu.</span><span class="sxs-lookup"><span data-stu-id="74a30-124">Click Approve formula.</span></span>
-2. <span data-ttu-id="74a30-125">V poli Schválil(a) zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="74a30-125">In the Approved by field, enter or select a value.</span></span>
-3. <span data-ttu-id="74a30-126">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="74a30-126">Click OK.</span></span>
-4. <span data-ttu-id="74a30-127">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="74a30-127">Close the page.</span></span>
+## <a name="approve-formula"></a><span data-ttu-id="69c3c-123">Schválit recepturu</span><span class="sxs-lookup"><span data-stu-id="69c3c-123">Approve formula</span></span>
+1. <span data-ttu-id="69c3c-124">Klepněte na možnost Schválit recepturu.</span><span class="sxs-lookup"><span data-stu-id="69c3c-124">Click Approve formula.</span></span>
+2. <span data-ttu-id="69c3c-125">V poli Schválil(a) zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="69c3c-125">In the Approved by field, enter or select a value.</span></span>
+3. <span data-ttu-id="69c3c-126">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="69c3c-126">Click OK.</span></span>
+4. <span data-ttu-id="69c3c-127">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="69c3c-127">Close the page.</span></span>
 
 

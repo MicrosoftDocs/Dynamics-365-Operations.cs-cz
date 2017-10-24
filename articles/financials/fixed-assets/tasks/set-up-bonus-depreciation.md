@@ -16,36 +16,36 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 7e6ebb13084626b477b6e0b24acdc09e2c0d3d6d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="set-up-bonus-depreciation"></a><span data-ttu-id="9454c-103">Nastavení počátečního mimořádného odpisu</span><span class="sxs-lookup"><span data-stu-id="9454c-103">Set up bonus depreciation</span></span>
+# <a name="set-up-bonus-depreciation"></a><span data-ttu-id="bd7b9-103">Nastavení počátečního mimořádného odpisu</span><span class="sxs-lookup"><span data-stu-id="bd7b9-103">Set up bonus depreciation</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="9454c-104">Tento postup popisuje vytvoření nové náhrady za zvláštní odpisy a její přiřazení ke knize dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="9454c-104">This procedure shows how to create a special depreciation allowance and associate it with a fixed asset book.</span></span> <span data-ttu-id="9454c-105">Využívá účetní role a ukázková data pro právnické osoby USMF.</span><span class="sxs-lookup"><span data-stu-id="9454c-105">It uses the accountant role and demo data for the USMF legal entity.</span></span>
+<span data-ttu-id="bd7b9-104">Tento postup popisuje vytvoření nové náhrady za zvláštní odpisy a její přiřazení ke knize dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="bd7b9-104">This procedure shows how to create a special depreciation allowance and associate it with a fixed asset book.</span></span> <span data-ttu-id="bd7b9-105">Využívá účetní role a ukázková data pro právnické osoby USMF.</span><span class="sxs-lookup"><span data-stu-id="bd7b9-105">It uses the accountant role and demo data for the USMF legal entity.</span></span>
 
 
-## <a name="create-a-special-depreciation-allowance"></a><span data-ttu-id="9454c-106">Vytvoření náhrady za zvláštní odpisy</span><span class="sxs-lookup"><span data-stu-id="9454c-106">Create a special depreciation allowance</span></span>
-1. <span data-ttu-id="9454c-107">Přejděte do části Dlouhodobý majetek > Nastavení > Náhrada za zvláštní odpisy.</span><span class="sxs-lookup"><span data-stu-id="9454c-107">Go to Fixed assets > Setup > Special depreciation allowance.</span></span>
-2. <span data-ttu-id="9454c-108">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="9454c-108">Click New.</span></span>
-3. <span data-ttu-id="9454c-109">Zadejte hodnotu do pole Náhrada za zvláštní odpisy.</span><span class="sxs-lookup"><span data-stu-id="9454c-109">In the Special depreciation allowance field, type a value.</span></span>
-4. <span data-ttu-id="9454c-110">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="9454c-110">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="9454c-111">V poli Procento zadejte požadované číslo.</span><span class="sxs-lookup"><span data-stu-id="9454c-111">In the Percentage field, enter a number.</span></span>
-    * <span data-ttu-id="9454c-112">Pokud nebylo určeno procento, nastavte částku.</span><span class="sxs-lookup"><span data-stu-id="9454c-112">If a percentage was not indicated, set an amount.</span></span>  
+## <a name="create-a-special-depreciation-allowance"></a><span data-ttu-id="bd7b9-106">Vytvoření náhrady za zvláštní odpisy</span><span class="sxs-lookup"><span data-stu-id="bd7b9-106">Create a special depreciation allowance</span></span>
+1. <span data-ttu-id="bd7b9-107">Přejděte do části Dlouhodobý majetek > Nastavení > Náhrada za zvláštní odpisy.</span><span class="sxs-lookup"><span data-stu-id="bd7b9-107">Go to Fixed assets > Setup > Special depreciation allowance.</span></span>
+2. <span data-ttu-id="bd7b9-108">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="bd7b9-108">Click New.</span></span>
+3. <span data-ttu-id="bd7b9-109">Zadejte hodnotu do pole Náhrada za zvláštní odpisy.</span><span class="sxs-lookup"><span data-stu-id="bd7b9-109">In the Special depreciation allowance field, type a value.</span></span>
+4. <span data-ttu-id="bd7b9-110">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="bd7b9-110">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="bd7b9-111">V poli Procento zadejte požadované číslo.</span><span class="sxs-lookup"><span data-stu-id="bd7b9-111">In the Percentage field, enter a number.</span></span>
+    * <span data-ttu-id="bd7b9-112">Pokud nebylo určeno procento, nastavte částku.</span><span class="sxs-lookup"><span data-stu-id="bd7b9-112">If a percentage was not indicated, set an amount.</span></span>  
 
-## <a name="associate-a-special-depreciation-allowance-with-a-fixed-asset-group-book"></a><span data-ttu-id="9454c-113">Přiřazení náhrady za zvláštní odpisy ke knize pro skupinu dlouhodobého majetku</span><span class="sxs-lookup"><span data-stu-id="9454c-113">Associate a special depreciation allowance with a fixed asset group book</span></span>
-1. <span data-ttu-id="9454c-114">Přejděte do části Dlouhodobý majetek > Nastavení > Skupiny dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="9454c-114">Go to Fixed assets > Setup > Fixed asset groups.</span></span>
-2. <span data-ttu-id="9454c-115">V seznamu vyberte skupinu dlouhodobého majetku, která je přiřazena k náhradě za zvláštní odpisy.</span><span class="sxs-lookup"><span data-stu-id="9454c-115">In the list, select the fixed asset group associated with the special depreciation allowance.</span></span>
-3. <span data-ttu-id="9454c-116">Klepněte na Knihy.</span><span class="sxs-lookup"><span data-stu-id="9454c-116">Click Books.</span></span>
-4. <span data-ttu-id="9454c-117">V seznamu vyberte knihu, která je přiřazena k náhradě za zvláštní odpisy.</span><span class="sxs-lookup"><span data-stu-id="9454c-117">In the list, select the book that is associated with the special depreciation allowance.</span></span>
-5. <span data-ttu-id="9454c-118">Klikněte na Náhrada za zvláštní odpisy.</span><span class="sxs-lookup"><span data-stu-id="9454c-118">Click Special depreciation allowance.</span></span>
-6. <span data-ttu-id="9454c-119">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="9454c-119">Click New.</span></span>
-7. <span data-ttu-id="9454c-120">V poli Náhrada za zvláštní odpisy zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="9454c-120">In the Special depreciation allowance field, enter or select a value.</span></span>
-    * <span data-ttu-id="9454c-121">Výchozí hodnota pro procento nebo částku je převzatá z nastavení náhrady za zvláštní odpisy.</span><span class="sxs-lookup"><span data-stu-id="9454c-121">The default for Percentage or Amount comes from the special depreciation allowance setup.</span></span>  
-8. <span data-ttu-id="9454c-122">V poli Priorita zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="9454c-122">In the Priority field, enter a number.</span></span>
+## <a name="associate-a-special-depreciation-allowance-with-a-fixed-asset-group-book"></a><span data-ttu-id="bd7b9-113">Přiřazení náhrady za zvláštní odpisy ke knize pro skupinu dlouhodobého majetku</span><span class="sxs-lookup"><span data-stu-id="bd7b9-113">Associate a special depreciation allowance with a fixed asset group book</span></span>
+1. <span data-ttu-id="bd7b9-114">Přejděte do části Dlouhodobý majetek > Nastavení > Skupiny dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="bd7b9-114">Go to Fixed assets > Setup > Fixed asset groups.</span></span>
+2. <span data-ttu-id="bd7b9-115">V seznamu vyberte skupinu dlouhodobého majetku, která je přiřazena k náhradě za zvláštní odpisy.</span><span class="sxs-lookup"><span data-stu-id="bd7b9-115">In the list, select the fixed asset group associated with the special depreciation allowance.</span></span>
+3. <span data-ttu-id="bd7b9-116">Klepněte na Knihy.</span><span class="sxs-lookup"><span data-stu-id="bd7b9-116">Click Books.</span></span>
+4. <span data-ttu-id="bd7b9-117">V seznamu vyberte knihu, která je přiřazena k náhradě za zvláštní odpisy.</span><span class="sxs-lookup"><span data-stu-id="bd7b9-117">In the list, select the book that is associated with the special depreciation allowance.</span></span>
+5. <span data-ttu-id="bd7b9-118">Klikněte na Náhrada za zvláštní odpisy.</span><span class="sxs-lookup"><span data-stu-id="bd7b9-118">Click Special depreciation allowance.</span></span>
+6. <span data-ttu-id="bd7b9-119">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="bd7b9-119">Click New.</span></span>
+7. <span data-ttu-id="bd7b9-120">V poli Náhrada za zvláštní odpisy zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="bd7b9-120">In the Special depreciation allowance field, enter or select a value.</span></span>
+    * <span data-ttu-id="bd7b9-121">Výchozí hodnota pro procento nebo částku je převzatá z nastavení náhrady za zvláštní odpisy.</span><span class="sxs-lookup"><span data-stu-id="bd7b9-121">The default for Percentage or Amount comes from the special depreciation allowance setup.</span></span>  
+8. <span data-ttu-id="bd7b9-122">V poli Priorita zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="bd7b9-122">In the Priority field, enter a number.</span></span>
 
 
