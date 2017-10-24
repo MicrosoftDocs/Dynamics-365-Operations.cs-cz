@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 5de5e3aad0b7a5853653ae53326dac078ec94fea
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 0bbf8f979aeb8b861164e345f9e46bb396f370ce
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,7 +41,7 @@ Nejprve je nutné vybrat plán uzávěrky v horní části pracovního prostoru.
 
 ### <a name="summary-tiles"></a>Dlaždice souhrnu
 
-Dlaždice **Souhrn** poskytují přehled procesu a ukazatele, které vám pomohou udržet proces uzávěrky podle plánu. Můžete zobrazit úkoly, které jsou po splatnosti, zbývající úkoly pro dnešní den, úkoly, které mají být splněny dnes, ale jsou blokovány z důvodu závislostí a všechny zbývající úkoly pro proces. Tyto informace jsou pro všechny společnosti, které jsou zahrnuté do vybraného plánu uzávěrky.
+Dlaždice **Souhrn** poskytují přehled procesu a ukazatele vám pomohou udržovat uzávěrku podle plánu. Můžete zobrazovat úlohy, které jsou po termínu, zbývající úlohy pro dnešní den, jejichž termín je dnes, ale jsou blokovány kvůli závislostem, a všechny zbývající úlohy procesu. Tyto informace jsou pro všechny společnosti, které jsou zahrnuté do vybraného plánu uzávěrky.
 
 ### <a name="tasks-and-status-section"></a>Úkoly a výběr stavu
 
@@ -82,7 +81,7 @@ Pomocí oblastí úkolů seřaďte úkoly uzávěrky do logických skupin vlastn
 
 ### <a name="calendars"></a>Kalendáře
 
-Vytvořte a upravte na kartě kalendářů kalendáře finanční uzávěrky.  Zde budete definovat pracovní dny pro procesy uzávěrky a toto místo bude použito pro plánování úkolů uzávěrky.  Vytvořte nový kalendář a určete pracovní dny používané k plánování úloh.  Doporučujeme vytvořit kalendář na dlouhou dobu, například na rok nebo více let, protože jej lze po vytvoření upravit.  Po vytvoření kalendáře klepněte na tlačítko Upravit, aby se aktualizoval kalendář pro konkrétní dny, například svátky.  Úkoly uzávěrky budou naplánovány na dny, kdy je hodnota Řízení nastavena na Otevřeno.  Pokud úkoly uzávěrky nelze naplánovat na konkrétní den, měla by na tento den být hodnota ovládacího prvku nastavena na Uzavřeno.
+Vytvořte a upravte kalendáře finanční uzávěrky pomocí karty Kalendáře. Zde můžete definovat pracovní dny pro procesy uzávěrky a můžete je také použít k plánování úkolů uzávěrky.  Vytvořte nový kalendář a určete pracovní dny používané k plánování úloh.  Doporučujeme vytvořit kalendář na dlouhou dobu, například na rok nebo více let, protože jej lze po vytvoření upravit.  Po vytvoření kalendáře klepněte na tlačítko Upravit, aby se aktualizoval kalendář pro konkrétní dny, například svátky.  Úkoly uzávěrky budou naplánovány na dny, kdy je hodnota Řízení nastavena na Otevřeno.  Pokud úkoly uzávěrky nelze naplánovat na konkrétní den, měla by na tento den být hodnota ovládacího prvku nastavena na Uzavřeno.
 
 ### <a name="templates"></a>Šablony
 

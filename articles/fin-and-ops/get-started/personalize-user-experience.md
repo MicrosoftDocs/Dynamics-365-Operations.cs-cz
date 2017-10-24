@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: dbc80ff756a5286a98489f1f1403959d9b18ebe6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -63,7 +63,7 @@ Explicitní individuální nastavení jsou taková, která provádíte explicitn
 
 Prvek na vaší stránce přizpůsobíte tímto způsobem: pokud jednoduše chcete změnit popisek prvku, skrýt prvek tak, aby nebyl zobrazen na stránce (to nezmění všechna data, jednoduše se vám nezobrazí informace), včetně informací v oddílu souhrnu pevné záložky (pokud je prvek v pevné záložce), při použití tabulátoru vynechejte pole nebo to zařiďte tak, aby nemohla být data změněna jeho označením jako „Neupravovat“. 
 
-Pokud chcete přesunout nebo skrýt prvky nebo provést několik změn, můžete použít nástroj individuálního nastavení, který je k dispozici v okně Vlastnosti prvků výběrem **Přizpůsobit tento formulář**. Panel nástrojů přizpůsobení je také dostupný na podokno akcí formuláře, pod skupinou přizpůsobení karty **Možnosti**. Vyberte **přizpůsobit tento formulář** a zobrazí se vám panel nástrojů přizpůsobení. 
+Pokud chcete přesunout nebo skrýt prvky nebo provést několik změn, můžete použít nástroj individuálního nastavení, který je k dispozici v okně Vlastnosti prvků výběrem **Přizpůsobit tento formulář**. Panel nástrojů individuálních nastavení je též k dispozici v podokně akcí formuláře pod skupinou přizpůsobení na kartě **Možnosti**. Zvolte **Přizpůsobit tento formulář** a zobrazí se panel nástrojů individuálních nastavení. 
 
 [![Panel nástrojů Přizpůsobení](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
@@ -90,7 +90,7 @@ Zvolte tlačítko **Zavřít** k zavření panelu nástrojů a návratu na strá
 Pomocí panelu nástrojů individuálního nastavení je uložení změn implicitní. Vaše individuální nastavení se provádí okamžitě, jakmile je učiníte, a není nutné klepnout tlačítko **Uložit**. V některých případech se zobrazí ikona visacího zámku s prvkem pro výběr nástroje. To znamená, že pokud má stránka pracovat správně, nemůžete měnit vlastnosti související s vybraným nástrojem. Po otevření nástrojů přizpůsobení se stránka stane neinteraktivní. Nelze zadat data nebo rozbalit nebo sbalit oddíly.
 
 ## <a name="explicit-personalization-adding-a-tile-or-list-to-a-workspace"></a>Explicitní přizpůsobení: Přidat dlaždici nebo seznam do pracovního prostoru
-Některé stránky se seznamy mají funkci dalšího přizpůsobení, která je k dispozici v rámci podokna akcí, ve skupině přizpůsobit na kartě Možnosti. Vyberte možnost **Přidat na pracovní prostor** k otevření rozevíracího seznamu, v němž můžete zobrazit informace v aktuálním seznamu (filtrovaném a řazeném nebo výchozím) na pracovní prostor jako seznam nebo dlaždici souhrnu (kterou lze použít pro zobrazení počtu položek v seznamu). 
+Některé stránky se seznamy budou mít k dispozici funkci dalšího individuálního nastavení v rámci svého podokna akcí ve skupině přizpůsobení na kartě Možnosti. Zvolte možnost **Přidat do pracovního prostoru** a otevřete rozevírací seznam, v němž můžete zobrazit informace v aktuálním seznamu (filtrované a řazené nebo výchozí) v pracovním prostoru jako seznam nebo dlaždici souhrnu (který lze použít k zobrazení počtu položek v seznamu). 
 
 [![Přidat na pracovní prostor](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png) 
 

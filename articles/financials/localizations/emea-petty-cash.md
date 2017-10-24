@@ -17,12 +17,11 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7acabdec9133b4b4cc8fc8861ee097aa2a00e191
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 3ed41a57e40e8d90ebfd996f855a8dc8dc16de13
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -413,7 +412,7 @@ Chcete-li vytvořit platební transakce prostřednictvím hlavního deníku, př
 </tbody>
 </table>
 
-Na kartě **Fakturace** můžete zadat účetní profily pro vybraný účet a protiúčet. Pokud je registrovaná transakce je zálohová, zaškrtněte políčko **Záloha** na kartě **Platba**. Ve skupině polí **Zástupce** vyplňte pole, stejně jako u řádků deníku dokladů pro tisk na **Platební** sestavě. Při kontrole položky deníku v podokně akcí klepněte na **Ověřit**.
+Na kartě **Fakturace** můžete zadat účetní profily pro vybraný účet a protiúčet. Pokud je registrovaná transakce placením zálohy, vyberte zaškrtávací políčko **Zálohy** na kartě **Platba**. Ve skupině polí **Zástupce** vyplňte pole stejně jako u řádků deníku dodacích listů, které chcete vytisknout v sestavě **Hotovost**. Při kontrole položky deníku v podokně akcí klepněte na **Ověřit**.
 
 ## <a name="cash-transaction-approval-and-posting"></a>Schválení a zaúčtování hotovostní transakce
 Pro hotovostní transakce mohou být použity následující stavy: **žádný**, **potvrzeno**, **schváleno** a **odmítnuto**. Parametr **použít stav potvrzení** na pevné záložce **Schválení** karty **Hotovost** v okně **Pokladna a banka** &gt; **Nastavení** &gt; **Parametry pokladny a banky** umožňuje aktivovat další dva stavy: **Potvrzeno** a **Odmítnuto**. Potvrzení je vhodné, když jsou vydávány pokladní doklady a hotovostní příjmy a výdaje, které jsou sdíleny mezi dvěma zaměstnanci: účetní a pokladní. Funkce **Resetovat stav** změní stav aktuální transakce. Z možnosti **Schválené** se stane **potvrzeno** a z možnosti **potvrzeno** se stane **žádný**. Položky pokladního deníku lze upravit, pouze pokud je stav **žádný**. Hotovostní transakce mohou být odmítnuty pouze v případě, že je stav transakce **potvrzeno**. Odmítnuté platební doklady jsou k dispozici v sestavě **Deník registrace pokladních dokladů**, ale neprojeví se v sestavě **Pokladní kniha**. K potvrzení transakce vyberte odpovídající řádek deníku dokladů a klepněte na tlačítko **Schválení dokumentů** &gt; **potvrzení**. Číslo objednávky je generováno podle určené číselné řady. Stav transakce se změní na **potvrzeno** a již nemůžete upravit řádek deníku. Pokladní zůstatek účtu se nezmění. Pokud chcete pokladní doklad odmítnout, klepněte na tlačítko **Schválení dokumentů** &gt; **odmítnout**. Tato možnost je k dispozici pouze pro dokumenty, které mají stav **potvrzeno**. Ke schválení transakce vyberte odpovídající řádek deníku dokladů a klepněte na tlačítko **Schválení dokumentů** &gt; **Schválit**. Stav **Schváleno** znamená, že peněžní prostředky byly přijaty nebo použity. Zůstatek hotovosti se změní. Platební transakci lze zaúčtovat. Pokud chcete zrušit stav **schváleno** obnovit stav na **žádný**, klepněte na tlačítko **schválení dokumentů** &gt; **resetovat stav**. Zaúčtovat lze pouze schválené hotovostní transakce. Když chcete zaúčtovat deník, klepněte na **Zaúčtovat** &gt; **Zaúčtovat**.

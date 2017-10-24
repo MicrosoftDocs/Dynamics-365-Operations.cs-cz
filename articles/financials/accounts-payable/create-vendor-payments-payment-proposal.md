@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: aac70abc25c45ef4479425cdb648f4450d5db2dc
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: e8afadb83ac60f51ba7a9bcdd0fd184058ba1ef9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -56,7 +56,7 @@ Dotaz na návrh platby obsahuje různé karty, z nichž každá má různé mož
 -   **Měna platby** – toto pole specifikuje měnu, ve které jsou vytvořeny všechny platby. Pokud není měna definována, každý faktura je zaplacena v měně faktury.
 -   **Den v týdnu pro platbu** – zadejte den v týdnu, kdy bude provedena platba. Toto pole se používá pouze v případě, že je metoda nastavena na celkové faktury k platbě pro určitý den v týdnu.
 -   **Typ protiúčtu** a **Protiúčet** – tato pole nastavte, pokud chcete definovat určitý typ účtu (například **Hlavní kniha** nebo **Banka**) a protiúčet (například konkrétní bankovní účet). Metoda platby pro fakturu definuje výchozí typ protiúčtu a protiúčet, ale můžete přepsat výchozí hodnoty těchto polí.
--   **Další filtry** – Na pevné záložce **Záznamy**, které chcete zahrnout** můžete definovat další rozsahy kritérií. Například pokud chcete zaplatit pouze pro určitý rozsah dodavatelů, můžete definovat filtr pro rozsah dodavatelů. Tato funkce se často používá k výběru faktur pro konkrétní platební metodu. Například můžete definovat filtr, kde **Způsob platby** = **Kontrola** a pouze faktury, které mají tento způsob platby, budou vybrány pro platbu, za předpokladu, že splňují také jiná kritéria zadaná v dotazu.
+-   **Další filtry** – Na pevné záložce **Záznamy**, které chcete zahrnout můžete definovat další rozsahy kritérií. Například pokud chcete zaplatit pouze pro určitý rozsah dodavatelů, můžete definovat filtr pro rozsah dodavatelů. Tato funkce se často používá k výběru faktur pro konkrétní platební metodu. Například můžete definovat filtr, kde **Způsob platby** = **Kontrola** a pouze faktury, které mají tento způsob platby, budou vybrány pro platbu, za předpokladu, že splňují také jiná kritéria zadaná v dotazu.
 
 ## <a name="scenarios"></a>Scénáře
 | Dodavatel | Faktura | Datum fakturace | Fakturovaná částka | Datum splatnosti | Datum platební slevy | Částka platební slevy |

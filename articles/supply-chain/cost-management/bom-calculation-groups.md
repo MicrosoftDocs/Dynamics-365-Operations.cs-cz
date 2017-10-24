@@ -1,7 +1,7 @@
 ---
 title: "Skupiny výpočtů kusovníku"
 description: "Tento článek obsahuje informace o skupinách výpočtu kusovníků, a o tom, jak je nastavit. Pro spuštění výpočtu kusovníku musíte buď nastavit skupiny kalkulace a přiřadit je k jednotlivým položkám, nebo nastavit výchozí skupinu výpočtu. Nastavení výpočtu ze skupiny výpočtu jsou použita jako výchozí hodnoty na stránce Kalkulace kusovníku v době výpočtu kusovníku."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: 63e1b7dc-c2c5-41b0-81ed-e3e02d1b39e0
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3372c22d6ed90e7669f1335fdd3366b8e167ad27
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: c91f7ac3ded942afd5e359b59cee2ff58256622f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -72,13 +72,21 @@ Pole **Zastavit rozpad** slouží k určení toho, kdy se má vyrobené zboží 
 
 ### <a name="warnings"></a>Upozornění
 
-Na pevné záložce **Upozornění** vyberte možnosti pro všechny zprávy s upozorněním, které mají uživatelé obdržet, pokud provedou výpočet kusovníku. Například, pokud označíte pole **Žádný kusovník**, uživatel obdrží upozornění, pokud není nalezena žádná aktivní verze kusovníku pro jednu z komponent nebo nadřízené zboží, u kterého je výpočet kusovníku spuštěn. Pokud označíte pole **Bez postupu**, uživatelé obdrží varování v případě, že není nalezena žádná aktivní verze postupu. Pokud používáte prostředky u vašich postupů a operací, můžete dát pokyn systému ke kontrole těchto prostředků. Poté pokud prostředek není nalezen na každém řádku v aktivním postupu, uživatel obdrží upozornění. Můžete také ověřit a zkontrolovat spotřebu. Spotřeba je množství v určitém postupu. Obvykle představuje množství času, které je vyžadováno k provedení určité operace pro výrobní proces. Můžete zkontrolovat, zda položka neobsahuje žádné nákladové ceny. Pokud neexistuje žádná aktivní nákladová cena pro položku, do výpočtu kusovníku se nepřidají žádné náklady. Můžete také zkontrolovat a ověřit věk nákladové ceny. Například zadáním hodnoty **60** označíte, že jednotková nákladová cena musí být znovu vyhodnocena po 60 dnech. Pokud je dosaženo tohoto omezení, systém vygeneruje upozornění. Například je v lednu tohoto roku zadána nákladová cena pro položku. Pokud je nyní srpen, což je více než 60 dnů poté, co byla zadána nákladová cena, uživatel obdrží upozornění při spuštění výpočtu kusovníku. Můžete zadat hodnotu v procentech do pole **Minimální příspěvková marže**. Tato hodnota označuje bod, do kterého není minimální příspěvková marže naplněna. Pokud příspěvková marže pro konkrétní součást není naplněna, uživatel obdrží upozornění. Toto pole proto pomáhá zaručit, že nejsou ohroženy náklady a další skladové náklady, které mohou být vyžadovány pro vaše položky.
-Výchozí nastavení parametrů modulu Řízení zásob a skladu
---------------------------------------------------------------
+Na pevné záložce **Upozornění** vyberte možnosti pro všechny zprávy s upozorněním, které mají uživatelé obdržet, pokud provedou výpočet kusovníku. 
 
-Vzhledem k tomu, že jsou skupiny výpočtů požadovány pro spuštění výpočtů, musíte nastavit výchozí skupinu výpočtu v parametrech řízení zásob. Toto nastavení umožňuje společnostem využívat standardní nákladovou skupinu a nastavení zisku pro všechny položky. Má-li poté některá položka zvláštní požadavky na výpočet, uživatel může přiřadit jinou výpočetní skupinu k dané položce. Obvykle můžete nastavit skupiny výpočtů u položek součástí kusovníku namísto u položek kusovníku. Nicméně pokud se zobrazí upozornění, lze použít skupiny výpočtů. Skupina výpočtu, která je přiřazena ke zboží, přepíše výchozí hodnotu, která je nastavena v parametrech řízení zásob. Výchozí parametr můžete nastavit v části **Řízení nákladů** &gt; **Nastavení zásad skladového účetnictví** &gt; **Parametry** &gt; **Skladové účetnictví** &gt; **Skupina výpočtu**. Nastavením výchozí skupiny konfigurace můžete také nakonfigurovat podmínky pro upozornění, které se zobrazí uživatelům během procesu výpočtu kusovníku, pokud vybrané součásti mohou způsobit chyby ve výpočtu.
-Zobrazení upozornění na stránce Dokončeno
-------------------------------------------
+Například, pokud označíte pole **Žádný kusovník**, uživatel obdrží upozornění, pokud není nalezena žádná aktivní verze kusovníku pro jednu z komponent nebo nadřízené zboží, u kterého je výpočet kusovníku spuštěn. Pokud označíte pole **Bez postupu**, uživatelé obdrží varování v případě, že není nalezena žádná aktivní verze postupu. Pokud používáte prostředky u vašich postupů a operací, můžete dát pokyn systému ke kontrole těchto prostředků. Poté pokud prostředek není nalezen na každém řádku v aktivním postupu, uživatel obdrží upozornění. 
+
+Můžete také ověřit a zkontrolovat spotřebu. Spotřeba je množství v určitém postupu. Obvykle představuje množství času, které je vyžadováno k provedení určité operace pro výrobní proces. Můžete zkontrolovat, zda položka neobsahuje žádné nákladové ceny. Pokud neexistuje žádná aktivní nákladová cena pro položku, do výpočtu kusovníku se nepřidají žádné náklady. 
+
+Můžete také zkontrolovat a ověřit věk nákladové ceny. Například zadáním hodnoty **60** označíte, že jednotková nákladová cena musí být znovu vyhodnocena po 60 dnech. Pokud je dosaženo tohoto omezení, systém vygeneruje upozornění. Například je v lednu tohoto roku zadána nákladová cena pro položku. Pokud je nyní srpen, což je více než 60 dnů poté, co byla zadána nákladová cena, uživatel obdrží upozornění při spuštění výpočtu kusovníku. Můžete zadat hodnotu v procentech do pole **Minimální příspěvková marže**. Tato hodnota označuje bod, do kterého není minimální příspěvková marže naplněna. Pokud příspěvková marže pro konkrétní součást není naplněna, uživatel obdrží upozornění. Toto pole proto pomáhá zaručit, že nejsou ohroženy náklady a další skladové náklady, které mohou být vyžadovány pro vaše položky.
+
+### <a name="default-setup-in-inventory-and-warehouse-management-parameters"></a>Výchozí nastavení parametrů modulu Řízení zásob a skladu
+
+Vzhledem k tomu, že jsou skupiny výpočtů požadovány pro spuštění výpočtů, musíte nastavit výchozí skupinu výpočtu v parametrech řízení zásob. Toto nastavení umožňuje společnostem využívat standardní nákladovou skupinu a nastavení zisku pro všechny položky. Má-li poté některá položka zvláštní požadavky na výpočet, uživatel může přiřadit jinou výpočetní skupinu k dané položce. Obvykle můžete nastavit skupiny výpočtů u položek součástí kusovníku namísto u položek kusovníku. Nicméně pokud se zobrazí upozornění, lze použít skupiny výpočtů. Skupina výpočtu, která je přiřazena ke zboží, přepíše výchozí hodnotu, která je nastavena v parametrech řízení zásob. 
+
+Výchozí parametr můžete nastavit v části **Řízení nákladů** &gt; **Nastavení zásad skladového účetnictví** &gt; **Parametry** &gt; **Skladové účetnictví** &gt; **Skupina výpočtu**. Nastavením výchozí skupiny konfigurace můžete také nakonfigurovat podmínky pro upozornění, které se zobrazí uživatelům během procesu výpočtu kusovníku, pokud vybrané součásti mohou způsobit chyby ve výpočtu.
+
+### <a name="view-warning-messages-on-the-complete-page"></a>Zobrazení upozornění na stránce Dokončeno
 
 Výpočet kusovníku vygeneruje upozornění. Můžete zobrazit upozornění týkající se vybrané položky. Například v okně Prodej a marketing vytvořte novou prodejní objednávku pro položku D0001. Poté na řádku prodejní objednávky v nabídce **Aktualizovat řádek** klepnutím na tlačítko **Výpočet na základě kusovníku/vzorce** zobrazte podrobnosti o výpočtu a upozornění. Výsledky výpočtu kusovníku lze rovněž prohlížet na stránce **Dokončeno**. Pro upozornění: u vyráběných položek se používají pouze dvě podmínky výstrah, zatímco u všech ostatních položek se používají čtyři podmínky výstrah:
 -   Identifikovat, když vyráběná položka nemá aktivní kusovník.

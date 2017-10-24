@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 624f38a7348ede3cc9e6fb7ce0b78a61b1452b61
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 6f665f34055e36775c8bb41be4aae9c4577639d7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -59,7 +58,7 @@ Tento článek popisuje typy deníků, které lze nastavit pro finanční deník
 | Bankovní převod dodavatele            | Vytvořte soubor úhrady vlastní směnky, který lze odeslat bance vaší společnosti.                                                                                                                                                                                                                                                                      | Deník úhrad                                             |
 | Úhrady dodavateli               | Vytvořte transakce úhrad dodavateli.                                                                                                                                                                                                                                                                                                                    | Deník plateb                                                |
 | Vystavení vlastní směnky dodavateli       | Vystavte způsob platby prostřednictvím vlastních směnek dodavatele. Chcete-li použít tento typ deníku, zrušte zaškrtnutí možnosti **Při zaúčtování faktur automaticky vytvořte a zaúčtujte deník vystavení** na stránce **Způsob platby – dodavatelé**.                                                                                                                                          | Deník vlastních vystavených směnek                                   |
-| Evidence faktur dodavatele bez zaúčtování | Vytvořte transakce faktury dodavatele, které nebyly dosud zaúčtovány do dočasného účtu doručení.                                                                                                                                                                                                                                                             | Podrobnosti evidence faktur dodavatelů bez zaúčtování                  |
+| Evidence faktur dodavatele – vyloučené zaúčtování | Vytvořte transakce faktury dodavatele, které nebyly dosud zaúčtovány do dočasného účtu doručení.                                                                                                                                                                                                                                                             | Podrobnosti evidence faktur dodavatelů bez zaúčtování                  |
 | Evidence faktur dodavatele               | Vytvořte transakce evidence faktur dodavatele.                                                                                                                                                                                                                                                                                                                    |                                                                |
 | Zápis faktury dodavatele          | Zaúčtujte faktury dodavatele, které jsou v deníku.                                                                                                                                                                                                                                                                                                                 | Deník faktur                                                |
 | Dodavatel – vystavit návratnou vlastní směnku     | Znovu vystavte vlastní směnku, která již byla proplacena bankou vaší organizace.                                                                                                                                                                                                                                                                      | Deník vystavených návratných vlastních směnek                                 |

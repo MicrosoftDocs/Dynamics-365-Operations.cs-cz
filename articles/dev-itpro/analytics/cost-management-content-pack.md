@@ -16,13 +16,13 @@ ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 387b804cb20ffdc17ad74dac5d927ecbaf421bae
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fb5c39a65ea59acda05b0828f84bfaea4ad75062
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -52,7 +52,7 @@ Obsah **Správy nákladů** sady nástrojů Microsoft Power BI je určen pro skl
 Primárním datovým zdrojem pro CostAggregatedCostStatementEntryEntity je tabulka CostStatementCache. Tato tabulka je spravována rozhraním mezipaměti sady dat. Ve výchozím nastavení je tabulka aktualizována každých 24 hodin, ale můžete povolit ruční aktualizace v konfiguraci mezipaměti dat. Pak můžete provést ruční aktualizaci v pracovním prostoru **Správa nákladů** nebo **Analýza nákladů**. Po spuštění aktualizace CostStatementCache je nutné aktualizovat OData připojení na Power BI.com, pokud chcete zobrazit aktualizovaná data na webu. Měření odchylky (nákup, výroba) v tomto obsahu Power BI se vztahují pouze na položky, které jsou ohodnoceny skladovou metodou standardních nákladů. Výrobní odchylka se vypočítá jako rozdíl mezi aktivními a realizovanými náklady. Výrobní odchylka se vypočítá, když má výrobní zakázka stav **Ukončeno**. Další informace o typech výrobní odchylky a způsobu výpočtu jednotlivých typů naleznete v tématu [Analýza odchylek pro dokončenou výrobní zakázku](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Obsah **správy nákladů** v Power BI je k dispozici na PowerBI.com. Další informace o připojení a načtení dat aplikace Microsoft Dynamics 365 for Finance and Operations naleznete v tématu [Přístup k obsahu Power BI z webu PowerBI.com](power-bi-home-page.md).
+Obsah Power BI **Řízení nákladů** je k dispozici z PowerBI.com. Další informace o připojení a načtení dat aplikace Microsoft Dynamics 365 for Finance and Operations naleznete v tématu [Přístup k obsahu Power BI z PowerBI.com](power-bi-home-page.md).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriky, které jsou součástí obsahu Power BI
 Obsah zahrnuje sadu stránek sestav. Každá stránka obsahuje sadu metrik, které jsou zobrazovány jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizace v obsahu **správy nákladů** v Power BI.

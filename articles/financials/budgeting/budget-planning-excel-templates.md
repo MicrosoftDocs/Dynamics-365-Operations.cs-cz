@@ -18,10 +18,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 7cec40859a8c68cb8a9751c5531c67cef7706258
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -133,7 +133,7 @@ Klikněte na šipku pro další nabídku. Vyberte **Uzamknout**.
 
 Ano, většina standardních funkcí aplikace Excel bude fungovat i v šablonách plánu rozpočtu. Doporučujeme používat barevné kódy pro uživatele k rozlišení mezi sloupci jen pro čtení a sloupci, které lze upravit. Podmíněné formátování lze použít ke zvýraznění problematických oblastí rozpočtu. Součty sloupců lze snadno získat pomocí standardních vzorců aplikace Excel nad tabulkou.
 
-Můžete také vytvořit a použít kontingenční tabulky a grafy pro další seskupení a vizualizace dat rozpočtu. Na kartě **Data** ve skupině **Připojení** klikněte na tlačítko **Aktualizovat vše** a potom klikněte na tlačítko **Vlastnosti připojení**. Klikněte na kartu **Použití**. Pod položkou **Aktualizovat**, zaškrtněte políčko **Aktualizovat data při otevření souboru**. 
+Můžete také vytvořit a použít kontingenční tabulky a grafy pro další seskupení a vizualizace dat rozpočtu. Na kartě **Data** ve skupině **Připojení** klikněte na tlačítko **Aktualizovat vše** a potom klikněte na tlačítko **Vlastnosti připojení**. Klikněte na kartu **Použití**. Pod možností **Aktualizovat** zvolte zaškrtávací políčko **Aktualizovat data při otevření souboru**. 
 
 [![bpt17](./media/bpt17-1024x614.png)](./media/bpt17.png)
 

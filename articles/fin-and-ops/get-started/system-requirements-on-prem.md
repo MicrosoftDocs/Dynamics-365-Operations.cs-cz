@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
-ms.openlocfilehash: 721c5851cd399398a8dcec5ae110b97a4f17ae0a
+ms.sourcegitcommit: 25a6f326c57e84d6a7c356ac5407be7ed3095f83
+ms.openlocfilehash: 5edc6f0b2240e9dd2d3b72a13f35e96f016aa013
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/04/2017
 
 ---
 
@@ -87,7 +87,7 @@ Konkrétní hardware se liší v závislosti na systémové konfiguraci, složen
 - Počet souběžných uživatelů
 
 ## <a name="minimum-infrastructure-requirements"></a>Minimální požadavky na infrastrukturu
-Finance and Operations (místní) používají Service Fabric pro hostování služeb AOS, dávky, správu dat, management reporter a orchestrátor prostředí. Služby Microsoft SQL Server Reporting Services (SSRS) nejsou hostovány v clusteru Service Fabric.
+Finance and Operations (místní) používají Service Fabric pro hostování služeb AOS, dávky, správu dat, management reporter a orchestrátor prostředí. 
 
 SQL Server musí mít vysoce dostupné nastavení HADRON, která má alespoň dva uzly pro produkční užívání.
 
@@ -225,6 +225,12 @@ Následující tabulka obsahuje seznam SQL Server verzí, které jsou podporová
 |------------------------------------------------------------------|-------|
 | Microsoft SQL Server 2016 Standard Edition nebo Enterprise Edition | Pro požadavky na hardware pro SQL Server viz [Požadavky na hardware a software pro instalaci SQL Serveru 2016](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). |
 
+## <a name="software-requirements-for-application-object-server-aos"></a>Požadavky na software pro aplikační objektový server (AOS) 
+- Služby SQL Server Integration Services (SSIS)
+
+## <a name="software-requirements-for-reporting-server-bi"></a>Požadavky na software pro server sestav (BI)
+- Služby SQL Server Reporting Services (SSRS)
+
 ## <a name="software-requirements-for-client-computers"></a>Požadavky na software pro klientské počítače
 Webová aplikace Finance and Operations může být provozována na jakémkoliv přístroji, který má webový prohlížeč kompatibilní s HTML 5.0. Zde jsou některé konkrétní kombinace zařízení/prohlížeč, které potvrdil Microsoft:
 
@@ -244,7 +250,7 @@ Je vyžadován Active Directory Federation Services (AD FS) na Windows Server 20
 ## <a name="supported-microsoft-office-applications"></a>Podporované aplikace Microsoft Office
 V cloudovém a místním nasazení Finance and Operations jsou podporovány následující aplikace Microsoft Office:
 
--   Chcete-li používat doplňky aplikace Microsoft Excel a Microsoft Word, musíte mít nainstalovanou sadu Microsoft Office 2016 pro Windows nebo Mac. Další informace o požadavcích na verzi naleznete v tématu [Řešení problémů s integrací se sadou Office](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting).
+-   Chcete-li používat doplňky aplikace Microsoft Excel a Microsoft Word, musíte mít nainstalovanou sadu Microsoft Office 2016 pro Windows nebo Mac. Další informace o požadavcích na verzi naleznete v tématu [Řešení problémů s integrací se sadou Office](../../dev-itpro/office-integration/office-integration-troubleshooting.md).
 -   Chcete-li zobrazit dokumenty, které jsou generovány pomocí funkce exportu do aplikace Excel nebo Word funkce, musíte mít nainstalovanou sadu Microsoft Office 2007 nebo novější.
  
 ## <a name="hardware-and-software-requirements-for-retail-components"></a>Požadavky na hardware a software pro retailové komponenty

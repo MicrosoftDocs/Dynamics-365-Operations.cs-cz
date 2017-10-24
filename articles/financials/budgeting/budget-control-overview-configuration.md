@@ -15,13 +15,13 @@ ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 77d6d9afeb5669c2ae8460f0503e68a3559514ec
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: d8565ec692036d7a9411cb8663d7293d3ab91a44
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -116,7 +116,7 @@ Pokud mají být potlačena upozornění na kontrolu rozpočtu pro jakékoli už
 
 ### <a name="activate-budget-control"></a>Aktivovat kontrolu rozpočtu
 
-Po konfiguraci kontroly rozpočtu můžete kontrolu zapnout nebo ji aktivovat na kartě **Aktivovat kontrolu rozpočtu**. Pracovní verze potom vstoupí v platnost.
+Po konfiguraci kontroly rozpočtu ji můžete zapnout nebo aktivovat na kartě **Aktivovat kontrolu rozpočtu**. Pracovní verze potom vstoupí v platnost.
 > [!Important]
 > Po zapnutí a aktivaci kontroly rozpočtu a zaúčtování transakcí by vypnutí kontroly nemělo proběhnout v průběhu roku. Když je kontrola rozpočtu vypnuta, aktivity nejsou zaznamenávány pro účely kontroly rozpočtu, takže kontroly rozpočtu se již neprovádí. Dokumenty, které již byly zaúčtovány, tedy nemusí správně odrážet jakékoli uvolněné částky a zůstatky v dotazech a sestavách, které souvisejí s kontrolou rozpočtu. Patří mezi ně statistika kontroly rozpočtu pro jakékoli podřízené nebo upravující dokumenty a deníky. 
 

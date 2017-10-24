@@ -1,7 +1,7 @@
 ---
 title: "Nákladové objekty"
 description: "Tento článek poskytuje informace o nákladových objektech a vysvětluje, jakým způsobem se kumulují náklady a množství. Nákladový objekt je entita, pro kterou se kumulují náklady a množství. Entita nákladového objektu může být produkt a varianty produktu, například varianty pro styl a barvu."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: ec776b98-813a-490d-848f-468452d98fac
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
-ms.openlocfilehash: 823d3edd106925339607d01fbf5f1921b85ff244
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 2549ace837fcdfb9f927e6b486b6a94566bcbbd2
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -34,8 +34,7 @@ ms.lasthandoff: 06/13/2017
 
 Tento článek poskytuje informace o nákladových objektech a vysvětluje, jakým způsobem se kumulují náklady a množství. Nákladový objekt je entita, pro kterou se kumulují náklady a množství. Entita nákladového objektu může být produkt a varianty produktu, například varianty pro styl a barvu.  
 
-<a name="cost-objects"></a>Nákladové objekty
-------------
+## <a name="cost-objects"></a>Nákladové objekty
 
 Stránka **Nákladové objekty** obsahuje všechny nákladové objekty, které jsou registrovány v produktu. Nákladové objekty jsou definovány dle údajů z následujících zdrojů:
 
@@ -79,7 +78,7 @@ Následující tabulka zobrazuje, co je nákladový objekt a co je objekt zásob
 
 [Skupina sledovací dimenze](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[Co je nového a co se změnilo](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed)
+[Co je nového a co se změnilo](../../fin-and-ops/get-started/whats-new-changed.md)
 
 [Položky nákladů](cost-entries.md)
 
