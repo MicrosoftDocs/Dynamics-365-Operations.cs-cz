@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
-ms.openlocfilehash: 46eacb2a01c3bfcc7144c7d8c39ee0189fd72e16
+ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
+ms.openlocfilehash: 7fe11966b27eb0793a47835e05e465d809bf3407
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,7 +42,7 @@ Webová aplikace může běžet v kterémkoli z následujících webových prohl
 Poslední verzi pro každý webový prohlížeč naleznete na webu výrobce softwaru. 
 
 > [!NOTE]
-> -   Musíte nainstalovat předběžnou verzi doplňku Chrome, abyste umožnili záznamníku úloh pořídit snímky obrazovky a zahrnout je do generovaných dokumentů aplikace Microsoft Word. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder).-->
+> -   Musíte nainstalovat předběžnou verzi doplňku Chrome, abyste umožnili záznamníku úloh pořídit snímky obrazovky a zahrnout je do generovaných dokumentů aplikace Microsoft Word. <!---For instructions about how to install the extension, see [Screenshot Extension setup](../../dev-itpro/user-interface/task-recorder).-->
 > -   Editor pracovního postupu je spuštěn jako aplikace ClickOnce. Aplikace ClickOnce podporují pouze Microsoft Edge and Internet Explorer (v podporované verzi systému Microsoft Windows). Editor pracovního postupu aplikace ClickOnce vyžaduje 64bitový kompatibilní operační systém.
 > -   Návrhář sestav pro finanční vykazování je uveden jako aplikace ClickOnce. Vyžaduje 64bitový kompatibilní operační systém. Pokud používáte Chrome, je nutné nainstalovat doplněk ClickOnce, abyste mohli stáhnout klienta Návrháře sestav. Pokud používáte Chrome s anonymním režimem, zkontrolujte, zda je povoleno rozšíření ClickOnce pro anonymní režim.
 > -   K zobrazení náhledu souborů PDF doporučujeme používat prohlížeče, jako je Microsoft Edge (nejnovější veřejně dostupnou verzi) na operačním systému Windows 10, nebo Google Chrome (nejnovější veřejně dostupnou verzi) na operačních systémech Windows 10, Windows 8.1, Windows 8, Windows 7 nebo na tabletu Google Nexus 10.
@@ -70,7 +70,7 @@ Finance and Operations vyžaduje rozhraní Microsoft .NET Framework verze 4.6.2 
 ## <a name="supported-microsoft-office-applications"></a>Podporované aplikace Microsoft Office
 V cloudovém a místním nasazení Finance and Operations jsou podporovány následující aplikace Microsoft Office:
 
--   Chcete-li používat doplňky aplikace Microsoft Excel a Word, musíte mít nainstalovanou sadu Microsoft Office 2016 pro Windows nebo Mac. Další informace o požadavcích na verzi naleznete v tématu [Řešení problémů s integrací se sadou Office](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting).
+-   Chcete-li používat doplňky aplikace Microsoft Excel a Word, musíte mít nainstalovanou sadu Microsoft Office 2016 pro Windows nebo Mac. Další informace o požadavcích na verzi naleznete v tématu [Řešení problémů s integrací se sadou Office](../../dev-itpro/office-integration/office-integration-troubleshooting.md).
 -   Chcete-li zobrazit dokumenty, které jsou generovány pomocí funkce exportu do aplikace Excel nebo Word funkce, musíte mít nainstalovanou sadu Microsoft Office 2007 nebo novější.
 
 ## <a name="retail-modern-pos-requirements"></a>Požadavky na Retail Modern POS
@@ -153,10 +153,10 @@ Počítač musí splňovat všechny požadavky na systém pro instalaci a použ�
 -   Alespoň 10 GB volného místa (databáze kanálu může vyžadovat velké množství místa.)
 
 ## <a name="requirements-for-development-on-local-vms"></a>Požadavky na vývoj na místních virtuálních počítačích
-Informace o požadavcích na vývoj na místních virtuálních počítačích (VM) naleznete v tématu [místní spuštění virtuálního počítače](../dev-tools/access-instances.md).
+Informace o požadavcích na vývoj na místních virtuálních počítačích (VM) naleznete v tématu [místní spuštění virtuálního počítače](../../dev-itpro/dev-tools/access-instances.md).
 
 
 ## <a name="see-also"></a>Viz také
 
-[Získání kopie Dynamics 365 for Finance and Operations, Enterprise edition ve verzi pro hodnocení](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy)
+[Získání kopie Dynamics 365 for Finance and Operations, Enterprise edition ve verzi pro hodnocení](../../dev-itpro/dev-tools/get-evaluation-copy.md)
 

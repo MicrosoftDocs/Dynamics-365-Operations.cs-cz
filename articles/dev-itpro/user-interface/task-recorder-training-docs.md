@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
-ms.openlocfilehash: d5e4857081134808b194d3248dd8739f83b57d6e
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: 297fe730a432e05e1ab490be4802c37f9402b0a7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -116,14 +116,14 @@ Můžete stáhnout a upravovat záznamy úkolů společnosti Microsoft a použí
 11. Vyberte, jak chcete záznam úkolu uložit.
 
 ## <a name="include-your-task-recordings-in-the-help-pane"></a>Zahrnutí záznamu úkolu do podokna nápovědy
-Chcete-li zobrazovat vlastní záznamy úkolů v podokně nápovědy, aby je bylo možné přehrát jako průvodce úkolem nebo zobrazit jako text, je třeba záznamy úkolů uložit do vlastní knihovny BPM a poté aktualizovat systémové parametry nápovědy tak, aby odkazovaly na knihovnu BPM. Další informace naleznete v tématu [Připojení systému nápovědy](../get-started/help-connect.md).
+Chcete-li zobrazovat vlastní záznamy úkolů v podokně nápovědy, aby je bylo možné přehrát jako průvodce úkolem nebo zobrazit jako text, je třeba záznamy úkolů uložit do vlastní knihovny BPM a poté aktualizovat systémové parametry nápovědy tak, aby odkazovaly na knihovnu BPM. Další informace naleznete v tématu [Připojení systému nápovědy](../../fin-and-ops/get-started/help-connect.md).
 
 <a name="see-also"></a>Viz také
 --------
 
-[Přehled nápovědy](..\get-started\help-overview.md)
+[Přehled nápovědy](../../fin-and-ops/get-started/help-overview.md)
 
-[Připojení nápovědy](..\get-started\help-connect.md)
+[Připojení nápovědy](../../fin-and-ops/get-started/help-connect.md)
 
 [Záznamník úkolů](task-recorder.md)
 

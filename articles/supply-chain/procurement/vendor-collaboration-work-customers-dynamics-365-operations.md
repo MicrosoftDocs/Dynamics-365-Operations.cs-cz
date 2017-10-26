@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 41436dab710a5fee0fe0800dff1ebefefa841afc
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 6119f1c85b68e6ed5dce01a266c4e681dfc4cd30
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 06/13/2017
 
 Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci s nákupními objednávkami v aplikaci Finance and Operations ke sledování zásob na skladě.
 
-Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci se zákazníky v aplikaci Microsoft Finance and Operations. Obsahuje informace o tom, jak sledovat a reagovat na nákupní objednávky a jak sledovat zásoby dodávek. Při práci s fakturami lze také využít dodavatelskou spolupráci. Další informace naleznete v části [Pracovní prostor fakturace dodavatelské spolupráce](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
+Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci se zákazníky v aplikaci Microsoft Finance and Operations. Obsahuje informace o tom, jak sledovat a reagovat na nákupní objednávky a jak sledovat zásoby dodávek. Při práci s fakturami lze také využít dodavatelskou spolupráci. Další informace naleznete v části [Pracovní prostor fakturace dodavatelské spolupráce](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 ## <a name="working-with-purchase-orders"></a>Práce s nákupními objednávkami
 Pracovní prostor **Potvrzení nákupní objednávky** umožňuje reagovat na nákupní objednávku, která vám byl odeslána ke kontrole. Umožňuje také zobrazit informace o nákupních objednávkách, které čekají na akci od odběratele a objednávkách, které byly potvrzeny, ale jsou stále otevřené. V pracovním prostoru **Potvrzení nákupní objednávky** existují tři seznamy:

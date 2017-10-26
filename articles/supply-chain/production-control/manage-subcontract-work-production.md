@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ebcae0e323203a98a9b8ed1113db945fceaaa4af
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: e1c29f597b190bd36b6fc64b16913ecdd02daf75
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -68,7 +68,7 @@ Při použití této konfigurace je vytvořena nákupní objednávka produktu so
 Výrobní zakázka může mít mnoho operací a každou operaci lze přidělit jinému dodavateli. Proto může koncový výrobní příkaz aktivovat více nákupních objednávek.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Subdodávky aktivity výrobního toku
-Řešení [lean manufacturing](lean-manufacturing-overview.md)modeluje subdodavatelskou práci jako službu, která souvisí s aktivitou výrobního toku [výrobní tok](/dynamics365/unified-operations/supply-chain/production-control/tasks/create-production-flow-version) (Téma Průvodce záznamem úloh). Proto je tento typ subdodávky také označován jako [subdodávky podle aktivity](activity-based-subcontracting.md) Zavádíme speciální typ nákladové skupiny s názvem **Přímý outsourcing** a subdodavatelské služby nejsou součástí kusovníku hotového zboží. Při použití lean manufacturing jsou všechny aktivity definovány kanbany, které lze propojit s jednou nebo více aktivitami výrobního toku. Toto vysvětlení zatím zní jako popis výrobních zakázek. Zatímco výrobní zakázky musí vždy končit hotovým výrobkem, můžete vytvořit kanbany pro dodávku polotovarů. Není nutné zavést novou úroveň produktu a kusovníku.  
+Řešení [lean manufacturing](lean-manufacturing-overview.md)modeluje subdodavatelskou práci jako službu, která souvisí s aktivitou výrobního toku [výrobní tok](tasks/create-production-flow-version.md) (Téma Průvodce záznamem úloh). Proto je tento typ subdodávky také označován jako [subdodávky podle aktivity](activity-based-subcontracting.md) Zavádíme speciální typ nákladové skupiny s názvem **Přímý outsourcing** a subdodavatelské služby nejsou součástí kusovníku hotového zboží. Při použití lean manufacturing jsou všechny aktivity definovány kanbany, které lze propojit s jednou nebo více aktivitami výrobního toku. Toto vysvětlení zatím zní jako popis výrobních zakázek. Zatímco výrobní zakázky musí vždy končit hotovým výrobkem, můžete vytvořit kanbany pro dodávku polotovarů. Není nutné zavést novou úroveň produktu a kusovníku.  
 
 Kanbanová pravidla mohou být velmi dynamická, můžete modelovat různé varianty zásobování pro stejný produkt ve výrobním toku. Při použití štíhlých subdodávek jsou tok materiálu a finanční toku striktně odděleny. Všechny toky materiálu jsou reprezentovány kanbanovými aktivitami. Nákupní objednávky pro produkty služby a zaúčtování příjmu těchto služeb lze automatizovat na základě stavu kanbanových úloh ve výrobním toku. Kanbanové úlohy můžete spustit a dokončit ještě dříve, než jsou vytvořeny nákupní objednávky. Doklady o subdodávce mohou být agregovány (nákupní objednávka a nákupní příjemka služby) podle období a služby. Proto počet nákupních dokladů a řádků může být uchováván v malém množství i v často opakovaných operacích, kde dodavatelé poskytují subdodavatelské služby v toku jednoho kusu.
 

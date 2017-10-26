@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 0dc453ab56a2d381afa6e22d847f0b1eb7a16e7e
+ms.translationtype: HT
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: d1fbcefd80f1c48fafbbcb6315406856eaae68a0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -50,7 +49,7 @@ Pro toto cvičení budete generovat a prohlížet existující výchozí sestavu
 4.  Přejděte do části **Finanční sestavy** pod částí **Dotazy a sestavy** v hlavní knize.
 5.  Vyberte řádek sestavy s názvem **Podrobnosti hlavní knihy – výchozí.**
 6.  Vyberte možnost **Upravit.** Poznámka: zobrazí se výzva ke stažení návrháře sestav na jedno kliknutí a přihlášení. Přihlaste se pomocí vlastních přihlašovacích údajů.
-7.  Změňte základní rok na 2012 a vyberte **Generovat**. Při generování sestavy v Návrháři sestav se sestava otevře na nové kartě prohlížeče. Můžete buď prohlížet sestavu v nové kartě prohlížeče, nebo přejít do původní karty prohlížeče a otevřít sestavu z tohoto umístění jejím vybráním ze seznamu **Finančních sestav** .
+7.  Změňte základní rok na 2012 a vyberte **Generovat**. Po vygenerování sestavy v návrháři sestav se sestava otevře na nové kartě prohlížeče. Sestavu můžete procházet buď na nové kartě prohlížeče, nebo můžete přejít do na svou původní kartu prohlížeče a otevřít sestavu tam pomocí volby ze seznamu **Finanční sestavy**.
 8.  V otevřené sestavě vyberte jednu z částek k procházení podrobností o účtu pro sestavu.
 9.  V podrobnostech účtu vyberte účet s daty a **procházejte na úroveň sestavy transakcí**. Na úrovni sestavy transakcí se zobrazí vlastnosti (atributy), které jsou zahrnuty do návrhu této sestavy. V závislosti na transakci a účtu mohou být zobrazeny jen některé nebo všechny atributy.
 10. Zavřete úroveň transakce sestavy.
@@ -183,8 +182,8 @@ V tomto cvičení budete vytvářet novou sestavu. Sestava je výkaz příjmu od
 18. **Uložte** provedené změny a **generujte**. Po dokončení generování sestavy a jejím otevření můžete sestavu prohlížet.
 
 ## <a name="additional-resources"></a>Další prostředky
-[Finanční vykazování](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
-[Zobrazit finanční sestavy](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
+[Finanční vykazování](../../financials/general-ledger/financial-reporting-getting-started.md) 
+[Zobrazit finanční sestavy](../../financials/general-ledger/view-financial-reports.md) 
 [Blog Dynamics Financial Reporting](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

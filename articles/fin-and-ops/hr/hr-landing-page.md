@@ -17,10 +17,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
-ms.openlocfilehash: 49f7a8f69729002812e78de757ae889266327ff4
+ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
+ms.openlocfilehash: e074426f4b863e692b91ce1ebf3b428435dadd94
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -47,38 +47,38 @@ Modul Lidské zdroje lze použít k těmto úkolům:
 
 Při práci s lidskými zdroji budete rozhodovat o tom, jak nastavit strukturu organizace pomocí prvků, jako jsou oddělení, práce a pozice. Ty patří mezi základní prvky, které budete konfigurovat v lidských zdrojích. Jednotliví zaměstnanci se přiřazují k pozicím, které jsou přidruženy k pracím.
 
--   [Uspořádání zaměstnanců podle oddělení, prací a pozic](/dynamics365/unified-operations/talent/departments-jobs-positions)
--   [Nastavení parametrů lidských zdrojů pro konkrétní společnost](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters)
--   [Nastavení parametrů lidských zdrojů mezi právnickými osobami](/dynamics365/unified-operations/talent/set-up-hr-parameters-across-legal-entities) 
+-   [Uspořádání zaměstnanců podle oddělení, prací a pozic](../../talent/departments-jobs-positions.md)
+-   [Nastavení parametrů lidských zdrojů pro konkrétní společnost](../../talent/set-up-company-specific-hr-parameters.md)
+-   [Nastavení parametrů lidských zdrojů mezi právnickými osobami](../../talent/set-up-hr-parameters-across-legal-entities.md) 
 
 ## <a name="recruit-hire-and-motivate-employees"></a>Nábor, zařazení a motivace zaměstnanců
 
 Náborové projekty slouží ke správě obsahu použitého v reklamě na otevřené pozice a mohou vám pomoci se správou žádostí o volná pracovní místa. S jejich pomocí sledujte odpovědi na nabídku pozic pro konkrétní náborový projekt nebo konkrétní uchazeče a aktualizujte stav otevřených pozic. Také můžete najmout jednoho uchazeče nebo spravovat "projekty hromadného zařazení," které usnadňují zařazení více pracovníků, například pro sezónní obchodní potřeby.
 
--   [Řízení náborového procesu](/dynamics365/unified-operations/talent/manage-recruiting-process)
--   [Projekty hromadného zařazení](/dynamics365/unified-operations/talent/mass-hire-projects) 
+-   [Řízení náborového procesu](manage-recruiting-process.md)
+-   [Projekty hromadného zařazení](mass-hire-projects.md) 
 
 Poté, co jste přijali zaměstnance, můžete nastavit plány pro efektivní a spravedlivé řízení kompenzací, stejně jako správu položek, jako jsou počítače nebo telefony, které organizace poskytuje zaměstnancům. Je možné vytvářet pevné a variabilní plány kompenzace, jakož i definovat pravidla týkající se plánu kompenzace, která splňují kritéria pro tento plán.
 
--   [Plány kompenzace](/dynamics365/unified-operations/talent/compensation-plans)
--   [Vytvoření plánů fixní kompenzace](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
--   [Vytvoření plánů variabilní kompenzace](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+-   [Plány kompenzace](../../talent/compensation-plans.md)
+-   [Vytvoření plánů fixní kompenzace](../../talent/create-fixed-compensation-plans.md)
+-   [Vytvoření plánů variabilní kompenzace](../../talent/create-variable-compensation-plans.md)
 
 ## <a name="develop-and-train-employees"></a>Vytvoření pracovních pozic zaměstnanců a jejich zaškolení
 
 Abyste pomohli vašim zaměstnancům dosahovat jejich kariérních cílů za současného plnění důležitých firemních potřeb, můžete stanovovat cíle, vytvářet hodnocení výkonnosti a sledovat zpětnou vazbu. Pro rozvoj potřebných zaměstnaneckých dovedností můžete nastavovat instruktory, typy kurzů, popisy kurzů, agendy, cvičení a relace před přiřazením instruktora ke kurzu nebo registrací osoby do kurzu. Instruktoři musí již existovat jako pracovníci, uchazeči nebo kontakty.
 
--   [Řízení výkonnosti](/dynamics365/unified-operations/talent/performance-management-overview)
--   [Sladění dovedností zaměstnanců s potřebami společnosti](/dynamics365/unified-operations/talent/skills)
--   [Správa školení prostřednictvím kurzů](/dynamics365/unified-operations/talent/courses)
+-   [Řízení výkonnosti](../../talent/performance-management-overview.md)
+-   [Sladění dovedností zaměstnanců s potřebami společnosti](../../talent/skills.md)
+-   [Správa školení prostřednictvím kurzů](../../talent/courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>Vytvoření a správa výhod
 
 Kromě kompenzací zaměstnanců skrze mzdy, platy a odměny můžete vyvíjet programy zaměstnaneckých výhod, jako je zdravotní pojištění a důchodové plány. Můžete také spravovat výhody, jako jsou například výpůjčky, ve kterých vaše společnost poskytuje svým zaměstnancům věci, jako jsou počítače nebo telefony, .
 
--   [Definování a správa programu zaměstnaneckých výhod](/dynamics365/unified-operations/talent/manage-benefit-program)
--   [Zásady způsobilosti k zaměstnaneckým výhodám](/dynamics365/unified-operations/talent/benefit-eligibility-policies)
--   [Spravovat položky půjčené zaměstnancům](/dynamics365/unified-operations/talent/loan-items)
+-   [Definování a správa programu zaměstnaneckých výhod](../../talent/manage-benefit-program.md)
+-   [Zásady způsobilosti k zaměstnaneckým výhodám](../../talent/benefit-eligibility-policies.md)
+-   [Spravovat položky půjčené zaměstnancům](../../talent/loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Zachování bezpečnosti na pracovišti a dodržování předpisů
 
@@ -92,10 +92,10 @@ Aplikace Microsoft Dynamics AX umožňuje udržovat bezpečné pracovní prostř
 
 Můžete navrhovat a rozdávat dotazníky, které slouží ke shromažďování informací pro různé účely. Funkce Dotazník umožňuje navrhovat a vytvářet dotazníky. Když je dotazník připraven, můžete jej distribuovat k vyplnění plošně nebo určité sadě respondentů. Poté, co respondenti poskytnou své odpovědi, můžete zobrazit a analyzovat výsledky.
 
--   [Dotazníky](/dynamics365/unified-operations/talent/questionnaires)
--   [Návrh dotazníku](/dynamics365/unified-operations/talent/design-questionnaires)
--   [Distribuce a vyplnění dotazníku](/dynamics365/unified-operations/talent/distribute-questionnaires)
--   [Zobrazení a vyhodnocení výsledků dotazníku](/dynamics365/unified-operations/talent/evaluate-questionnaire-results)
+-   [Dotazníky](../../talent/questionnaires.md)
+-   [Návrh dotazníku](../../talent/design-questionnaires.md)
+-   [Distribuce a vyplnění dotazníku](../../talent/distribute-questionnaires.md)
+-   [Zobrazení a vyhodnocení výsledků dotazníku](../../talent/evaluate-questionnaire-results.md)
 
 
 
