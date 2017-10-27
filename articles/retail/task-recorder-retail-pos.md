@@ -18,11 +18,11 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 007a7e8a34f3f5a2d0d18eb3955822a8fd8bdd0a
+ms.translationtype: HT
+ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
+ms.openlocfilehash: 9a1e3f08eeda93adeac4509edad244754770db65
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -126,7 +126,7 @@ Text, který zadáte do pole **Text**, se zobrazí *nad* krokem v Průvodci záz
 Text, který zadáte do pole **Poznámky**, se zobrazí *pod* krokem v Průvodci záznamem úloh. Aby si uživatel mohl přečíst text poznámky, musí rozbalit text kroku v místním okně. Toto umístění je vhodné pro volitelný materiál ke čtení nebo další informace, které mohou být pro uživatele užitečné, ale uživatel je nevyžaduje pro dokončení akce.
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Nápověda v Retail Modern POS a Cloud POS
-Chcete-li zobrazovat vlastní záznamy úkolů v podokně nápovědy pro Retail Modern POS a Cloud POS, aby je bylo možné přehrát jako průvodce úkolem nebo zobrazit jako text, je třeba záznamy úkolů uložit do vlastní knihovny BPM a poté aktualizovat systémové parametry nápovědy tak, aby odkazovaly na knihovnu BPM. Další informace naleznete v tématu [Připojení systému nápovědy](/dynamics365/unified-operations/dev-itpro/get-started/help-connect). Nápověda pro Retail Modern POS a Cloud POS prohlledává LCS v reálném čase. Vyhledává ve všech knihovnách BPM, které jsou vybrány v parametrech systému nápovědy aplikace Microsoft Dynamics 365 for Retail a zobrazí příslušné výsledky. Pro přístup do nabídky **Nápověda** klikněte na tlačítko **Nápověda** (otazník) v horní části obrazovky a do vyhledávacího pole napište název procesu. Potom klikněte na tlačítko pro vyhledávání. 
+Chcete-li zobrazovat vlastní záznamy úkolů v podokně nápovědy pro Retail Modern POS a Cloud POS, aby je bylo možné přehrát jako průvodce úkolem nebo zobrazit jako text, je třeba záznamy úkolů uložit do vlastní knihovny BPM a poté aktualizovat systémové parametry nápovědy tak, aby odkazovaly na knihovnu BPM. Další informace naleznete v tématu [Připojení systému nápovědy](../fin-and-ops/get-started/help-connect.md). Nápověda pro Retail Modern POS a Cloud POS prohlledává LCS v reálném čase. Vyhledává ve všech knihovnách BPM, které jsou vybrány v parametrech systému nápovědy aplikace Microsoft Dynamics 365 for Retail a zobrazí příslušné výsledky. Pro přístup do nabídky **Nápověda** klikněte na tlačítko **Nápověda** (otazník) v horní části obrazovky a do vyhledávacího pole napište název procesu. Potom klikněte na tlačítko pro vyhledávání. 
 
 [![Tlačítko Nápověda](./media/help.jpg)](./media/help.jpg) 
 

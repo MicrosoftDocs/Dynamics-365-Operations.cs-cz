@@ -16,13 +16,13 @@ ms.custom: 11124
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: bc14ab554a298d09bb852e96503b4cd3f4b36d3c
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 49dfae79fe3914bcac9447d4fe3959128ff434ec
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ Tento článek poskytuje obecné informace o převodech kreditů ISO 20022, kter
 
 ## <a name="what-is-a-credit-transfer-message"></a>Co je zpráva o bezhotovostním převodu?
 Zpráva o převodu kreditu je požadavek, který odešle iniciující strana (vaše společnost) pro převod financí z vlastního účtu věřiteli. Existuje celá řada implementací specifických pro zemi/oblast a konkrétní implementace zpráv o převodu kreditu. Některé z nich se používají v rámci jedné země nebo oblasti a některé se stávají standardem. Jeden dobře zavedený globální standard je ISO 20022 a jeho iniciační zprávy, jako je například převod kreditu. Následující obrázek znázorňuje vztahy a pokrytí pro vybrané zprávy o převodu kreditu. 
-![Převod kreditu](./media/credit-transfer.jpg) Zprávy o převodu kreditu\[/titulek\] 
+![Převod kreditu](./media/credit-transfer.jpg) Zprávy o převodu kreditu 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>Co jsou platby ISO 20022 a SEPA?
 Jednotná oblast pro platby v eurech (SEPA) je definována Evropskou komisí a určuje, že všechny elektronické platby jsou považovány za domácí bez ohledu na zemi nebo oblast, kde se osoba, podnik, nebo organizace a banka nachází. Neexistuje žádný rozdíl mezi národní a zahraniční platbou. SEPA zahrnuje 28 členských států Evropské unie (EU) plus Island, Lichtenštejnsko, Norsko, Švýcarsko, Monako a San Marino. SEPA umožňuje vytvořit jednotný trh pro platební transakce v Evropském hospodářském prostoru (EHP). Použitím SEPA se očekává snížit počet formátů plateb, se kterými banky, společnosti a jednotlivci musí pracovat. Evropská komise ustanovila právní základ pro platby SEPA prostřednictvím směrnice týkající se platebních služeb (PSD). Evropská rada pro platby (EPC) podporuje platby SEPA prostřednictvím následujících činností:
@@ -59,7 +59,7 @@ Formát platby platebního převodu pro evropské země je implementován pomoc�
 Měli byste vždy přejít do knihovny sdílený majetek ve službě Microsoft Dynamics Lifecycle services (LCS) a zobrazit nejaktuálnější seznam dostupných souborů, které mají typ majetku **konfigurace GER**. Další oddíl "Co musím nastavit?" obsahuje odkaz na téma, které vysvětluje, jak vytvořit úložiště LCS ke kontrole dostupných konfigurací a importovat vybrané konfigurace.
 
 ## <a name="what-do-i-have-to-set-up"></a>Co je nutné nastavit?
--   Před vytvořením souborů převodu kreditu je třeba alespoň jednu aktivní konfigurace převodu importovat do vaší konfigurace obecného elektronického výkaznictví. Pokyny viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+-   Před vytvořením souborů převodu kreditu je třeba alespoň jednu aktivní konfigurace převodu importovat do vaší konfigurace obecného elektronického výkaznictví. Pokyny viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 -   Při konfiguraci metody platby Závazky zaškrtněte políčko **Obecné elektronické výkaznictví** a vyberte vhodný formát převodu kreditu (například **Převod kreditu ISO 20022 (AT)**) jako konfiguraci formátu exportu.
 -   Musíte nastavit také informace o právnické osobě a bankovním účtu v aplikaci Finance and Operations.
 -   Čísla bankovních účtů, IBAN a někdy SWIFT kódy (BIC) nebo jiné ID, která jsou potřebná k vytvoření platné bezhotovostní platby. Proto je musíte nastavit pro bankovní účet dodavatele a bankovní účet pro organizaci, která žádá o převod.

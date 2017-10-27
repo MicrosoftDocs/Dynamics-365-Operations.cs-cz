@@ -18,10 +18,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
-ms.openlocfilehash: 108a4f4ce366d2efd66fc1ed27ffb6b23ff0e933
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 661c5a14d27f3ad9df6088c2977c507ca315a998
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,7 +37,7 @@ Mobilní funkce v aplikaci Microsoft Dynamics 365 for Finance and Operations, En
 
 | Předpoklad                                                                                            | popis                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Předběžná verze mobilní příručky                                                                                |[Mobilní platforma](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)                                                                                                  |
+| Předběžná verze mobilní příručky                                                                                |[Mobilní platforma](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 for Finance and Operations                                                                             | Prostředí, které má Microsoft Dynamics 365 for Operations verzi 1611 a Microsoft Dynamics for Operations aktualizaci platformy 3 (listopad 2016)                   |
 | Nainstalujte opravu hotfix KB 3204341.                                                                              | Záznamník úloh může omylem zaznamenat dva příkazy k zavření rozevíracích dialogových oken, které jsou součástí aktualizace 3 Dynamics 365 for Operations (aktualizace z listopadu 2016) |
 | Nainstalujte opravu hotfix KB 3207800.                                                                              | Tato oprava hotfix umožňuje zobrazovat přílohy v mobilním klientovi, který je zahrnutý v aktualizaci 3 platformy Dynamics 365 for Operations (aktualizace z listopadu 2016).           |

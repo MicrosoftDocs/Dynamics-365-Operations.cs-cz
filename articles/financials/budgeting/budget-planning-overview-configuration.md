@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: e2c956969626836fadb0a6cac6dbb1d57f169f28
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 64d915a5e039ba242f6d5ae5f43c8e09d6ca282e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -78,7 +77,7 @@ V následujícím příkladu ředitelství podniku odhaduje částky prvotního 
 
 Na stránce **Organizační hierarchie** lze označit organizační hierarchii jako hierarchii plánování rozpočtu pro každý procesu plánování rozpočtu. Plánování rozpočtu nemusí odpovídat standardní organizační hierarchii, která se používá pro jiné účely. Vzhledem k tomu, že tuto hierarchii lze použít k agregaci a distribuci dat, můžete jí dát jinou strukturu. V příkladu schématu jsou prodejní oddělení pod úrovní centrály, která zahrnuje rozpočet a finanční oddělení. Tato struktura se pravděpodobně liší od struktury, která se používá ke správě operací pro prodejní oddělení. Pouze jednu hierarchii plánování lze přiřadit ke každému procesu plánování rozpočtu. 
 
-Další informace viz [Organizace a organizační hierarchie](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies).
+Další informace viz [Organizace a organizační hierarchie](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### <a name="user-security"></a>Uživatelské zabezpečení
 

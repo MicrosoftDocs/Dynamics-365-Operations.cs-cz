@@ -16,13 +16,13 @@ ms.custom: 11534
 ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 7898ff427ede4447a5798d4989ffd3088a776d9c
+ms.translationtype: HT
+ms.sourcegitcommit: 908f854e5ca50f4298110c08c87fefd9427b5cc9
+ms.openlocfilehash: 841c18630a59c3f5a7b51cd005962fa8a7f7163f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,7 +37,7 @@ Microsoft Dynamics 365 for Finance and Operations má k dispozici pro některá 
 
 Ne všechny stránky obsahují popis polí. Chceme poskytnout popisy pro složitější pole a nikoliv pro ty, kde je jejich použití zřejmé. Proto některé stránky nemají žádné popisy pole, některé stránky mají několik popisů a některé složitější stránky, například mnoho stránek s parametry, mají mnoho popisů. 
 
-Pokud máte přístup k vývojovému prostředí v aplikaci Finance and Operations, můžete přidat nový popis polí nebo stávající popisy přizpůsobit. Můžete například přidat informace specifické pro společnost do popisu pole. Další informace naleznete viz [Přizpůsobení nápovědy pole](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help).
+Pokud máte přístup k vývojovému prostředí v aplikaci Finance and Operations, můžete přidat nový popis polí nebo stávající popisy přizpůsobit. Můžete například přidat informace specifické pro společnost do popisu pole. Další informace naleznete viz [Přizpůsobení nápovědy pole](../../dev-itpro/user-interface/customize-field-help.md).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Zobrazení popisu pole v uživatelském rozhraní
 Popis polí lze zobrazit umístěním ukazatele myši na pole. Pokud není k dispozici žádný popis, zobrazí se po přesunutí ukazatele myši na pole název pole. (Poznámka: V aplikaci Dynamics AX 7.0 (únor 2016) lze zobrazit popisy polí jen na stránce **Popisy polí**.) Následující obrázek znázorňuje popisy polí, které se zobrazí při přesunutí ukazatele myši na pole **Uzamknout položky během inventury**. 
@@ -101,7 +101,7 @@ Informace o různých způsobech, jak vyhledat stránky, naleznete v části "Hl
 <a name="see-also"></a>Viz také
 --------
 
-[Přizpůsobení nápovědy pole](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help)
+[Přizpůsobení nápovědy pole](../../dev-itpro/user-interface/customize-field-help.md)
 
 
 

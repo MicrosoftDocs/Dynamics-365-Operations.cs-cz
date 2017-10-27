@@ -15,18 +15,18 @@ ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
 ms.author: chwolf
-ms.search.validFrom: 2016-08-30T00:00:00.000Z
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 4a1cab8c126ad063a52827421d2ea1104d0c7287
+ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
+ms.openlocfilehash: 5be9b195754d6c8315342c83451128092f64a241
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
 # <a name="hardware-sizing-for-on-premises-environments"></a>Nastavení velikosti hardwaru pro místní prostředí
-Než zahájíte proces nastavení velikosti hardwaru a infrastruktury pro místní prostředí, seznamte se s informacemi z témat [Požadavky na systém](../get-started/system-requirements.md) a [Pokyny k nastavení a nasazení](../deployment/setup-deploy-on-premises-environments.md), abyste dobře rozuměli základní infrastruktuře. 
+Než zahájíte proces nastavení velikosti hardwaru a infrastruktury pro místní prostředí, seznamte se s informacemi z témat [Požadavky na systém](system-requirements.md) a [Pokyny k nastavení a nasazení](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md), abyste dobře rozuměli základní infrastruktuře. 
 
   **Poznámka:** Věnujte velkou pozornost doporučeným postupům nastavení systému pro dosažení optimálního výkonu. 
 
@@ -89,7 +89,7 @@ Abyste mohli porozumět požadavkům nastavení velikosti, je nutné znát maxim
 Doporučujeme vždy využít serveru SQL Server v jednom seskupení nebo zrcadlení nastavení. Druhý uzel SQL by měl mít stejný počet jader jako primární. 
 
 ### <a name="active-directory-federation-services-ad-fs"></a>Active Directory Federation Services (AD FS)
-Pro nastavení velikosti AD FS viz [Dokumentace kapacity serveru AD FS](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).
+Pro nastavení velikosti AD FS viz [Dokumentace kapacity serveru AD FS](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).
 
 [Tabulka třídění](http://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx) je k dispozici pro plánování počtu instancí v nasazení.
 
