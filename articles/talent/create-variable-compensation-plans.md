@@ -1,7 +1,7 @@
 ---
 title: "Vytvoření plánů variabilní kompenzace"
 description: "Variabilní kompenzace tvoří nestandardní mzdu zaměstnance, jako jsou například mzdové bonusy nebo odměny v akciích. Toto téma popisuje součásti, které je nutné nastavit před použitím variabilní kompenzace a přihlášení zaměstnance k plánu variabilní kompenzace."
-author: twheeloc
+author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,19 +10,19 @@ ms.service: dynamics-365-talent
 ms.technology: 
 ms.search.form: HCMCompEligibility, HcmJobFunction, HcmWorker, HRMCompPerfPlan
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: rschloma
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 16011
 ms.assetid: fc3a394e-9ac6-4f8c-9162-dc16ec22720f
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: kherr75
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 2be3dc22977d6c00a9542211bfb7aaf649b17e1a
+ms.sourcegitcommit: e57db8f4b692aa9c27916625897e268f63031782
+ms.openlocfilehash: 62026b7a448d20ae357c2d7c6b770c216836afb1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/30/2017
 
 ---
 
