@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: TaxGroup, VendParameters
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 1696023
 ms.search.region: Czech Republic
 ms.author: v-elgolu
