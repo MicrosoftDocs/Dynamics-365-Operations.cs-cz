@@ -3,24 +3,24 @@ title: "Lidské zdroje"
 description: "Lidské zdroje zjednodušují mnoho rutinních administrativních úkolů a automatizují řadu procesů souvisejících s pracovníky ve vaší organizaci. Také poskytuje rámec pro oddělení lidských zdrojů ke správě řady oblastí dohledu. Mezi tyto oblasti spadá nábor a udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn."
 author: rschloma
 manager: AnnBe
-ms.date: 07/06/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Operations, Core
 ms.custom: 20931
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
-ms.openlocfilehash: e074426f4b863e692b91ce1ebf3b428435dadd94
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 217eef722383cf0ad9dfdfbe5ca2973eb1337fe1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -66,7 +66,7 @@ Poté, co jste přijali zaměstnance, můžete nastavit plány pro efektivní a 
 
 ## <a name="develop-and-train-employees"></a>Vytvoření pracovních pozic zaměstnanců a jejich zaškolení
 
-Abyste pomohli vašim zaměstnancům dosahovat jejich kariérních cílů za současného plnění důležitých firemních potřeb, můžete stanovovat cíle, vytvářet hodnocení výkonnosti a sledovat zpětnou vazbu. Pro rozvoj potřebných zaměstnaneckých dovedností můžete nastavovat instruktory, typy kurzů, popisy kurzů, agendy, cvičení a relace před přiřazením instruktora ke kurzu nebo registrací osoby do kurzu. Instruktoři musí již existovat jako pracovníci, uchazeči nebo kontakty.
+Chcete-li pomoci svým zaměstnancům dosáhnout svých kariérních cílů a přitom poskytovat kritické obchodní potřeby, můžete nastavit cíle, vytvořit hodnocení výkonu a sledovat zpětnou vazbu. Abyste pomohli zaměstnancům rozvíjet potřebné schopnosti, můžete nastavit instruktory, typy kurzů, kurzy, popisy kurzů, agendy, cvičení a relace před přiřazením instruktora ke kurzu nebo registrací osoby do kurzu. Instruktoři musí již existovat jako pracovníci, uchazeči nebo kontakty.
 
 -   [Řízení výkonnosti](../../talent/performance-management-overview.md)
 -   [Sladění dovedností zaměstnanců s potřebami společnosti](../../talent/skills.md)

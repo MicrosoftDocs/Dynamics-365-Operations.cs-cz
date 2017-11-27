@@ -1,6 +1,6 @@
 ---
 title: "Vyhledání podpory pro Finance and Operations and Dynamics Lifecycle Services"
-description: "Tento článek vysvětluje, jak získat nápovědu k aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition nebo službě Microsoft Dynamics Lifecycle Services (LCS)."
+description: "Tento článek vysvětluje, jak získat nápovědu k aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition nebo službě Microsoft Dynamics Lifecycle Services (LCS)."
 author: kfend
 manager: AnnBe
 ms.date: 06/23/2017
@@ -18,14 +18,14 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 19b038db79eb4fc132c7cbb5ae68be26b847dbbc
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: d5593c54cf139e38da51a0932382a4baecb83898
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="find-support-for-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-and-dynamics-lifecycle-services"></a>Získání podpory pro aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition a Dynamics Lifecycle Services
+# <a name="find-support-for-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-and-dynamics-lifecycle-services"></a>Získání podpory pro aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition a Dynamics Lifecycle Services
 
 [!include[banner](../includes/banner.md)]
 

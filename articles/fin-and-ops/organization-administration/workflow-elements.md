@@ -1,27 +1,27 @@
 ---
 title: Prvky workflowu
-description: "Tento článek popisuje různé prvky, které tvoří workflow."
+description: "Toto téma popisuje různé prvky, které tvoří workflow."
 author: sericks007
 manager: AnnBe
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 56441
 ms.assetid: de740262-6ffd-42b9-a325-540eae5cec94
 ms.search.region: Global
-ms.author: tjvass
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 255777651a45b899850fc870c9da288f65df702c
+ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
+ms.openlocfilehash: 15cac09a97305c1b467cbb97da2d4b8a864ccbc7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje různé prvky, které tvoří workflow.
+Toto téma popisuje různé prvky, které tvoří workflow.
 
 Workflow se skládá z jednotlivých prvků. Následující části popisují jednotlivé typy prvků.
 
@@ -59,7 +59,7 @@ Workflow se skládá z jednotlivých prvků. Následující části popisují je
 -   Zadat požadavek na změnu dokumentu.
 -   Postoupit dokument ke schválení jinému uživateli.
 
-## <a name="lineitem-workflow-elements"></a>Prvky pracovního procesu řádkové položky
+## <a name="line-item-workflow-elements"></a>Prvek workflowu položky řádku
 Workflow lze vytvořit pro zpracování dokumentů nebo položek řádku v dokumentu. Například vytvoříte workflow schválení pro časové rozvrhy. (Tento pracovní postup budeme označovat jako *pracovní postup dokumentu*.) K tomuto pracovnímu procesu dokumentu můžete přidat prvek *pracovního postupu řádkové položky*. Při spuštění prvku položky řádku je každá položka řádku v dokumentu odeslána ke zpracování. Je vhodné řádkové položky zpracovávat ve stejném workflowu položky řádku, nebo můžete každou položku řádku zpracovat jiným workflowem položky řádku. Představte si, že zaměstnanec odeslal časový rozvrh, který se podobá na následujícímu obrázku.
 
 ![Workflow položek na řádku](./media/workflow_lineitemworkflow.gif) 
@@ -70,7 +70,7 @@ V tomto scénáři může být třeba vytvořit následující workflowy položk
 -   **Workflow položky řádku 2** – tento workflow slouží pro zpracování položek řádků, ve kterém je ID projektu 2222.
 -   **Workflow položky řádku 3** – tento workflow slouží pro zpracování položek řádků, ve kterém je ID projektu 3333.
 
-## <a name="flowcontrol-elements"></a>Prvky ovládání toku
+## <a name="flow-control-elements"></a>Prvky ovládání toku
 Následující prvky umožňují navrhovat workflowy, které mají alternativní větve nebo větve, které běží současně
 
 ### <a name="manual-decision"></a>Ruční rozhodnutí

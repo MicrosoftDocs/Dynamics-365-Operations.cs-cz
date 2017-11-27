@@ -16,10 +16,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 07fe007005fcbbac1beecadb14dbd752376a0bd4
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 55ef4b1757a6f3c28c8575412d66488fda8608a5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="create-a-requisition-for-consumption"></a>Vytvoření žádanky pro spotřebu
@@ -51,12 +51,12 @@ Tato procedura vás provede procesem vytvoření žádanky. Ukazuje různé způ
     * Žadatel je pracovník, který vyžaduje žádanku.   
     * Ve výchozím nastavení je osoba připravující žádanku pracovníkem, který odeslal požadavek. Musíte mít oprávnění k přípravě řádku žádanky jménem jiného pracovníka. Pokud takové oprávnění máte, v tomto vyhledávání se zobrazí tito ostatní pracovníci.  
 3. Zadejte hodnotu do pole Číslo zboží.
-    * Položky, které můžete vybrat, jsou omezeny zásadami přístupu ke kategorii a zásobovacím katalogem pro kupující právnickou osobu.    
+    * Položky, které můžete vybrat, jsou omezeny zásadami přístupu ke kategorii a zásobovacím katalogem pro kupující právnickou osobu.   
 4. Zadejte číslo do pole Množství.
 
 ## <a name="add-more-products-to-the-requisition"></a>Přidání dalších produktů do žádanky
 1. Klikněte na možnost Přidat produkty.
-    * Toto je možnost, kde lze vyhledávat produkty v katalogu produktů.      
+    * Toto je možnost, kde lze vyhledávat produkty v katalogu produktů.    
 2. V poli Vyhledání uzlu kategorie zásobování zadejte první část názvu kategorie, kterou hledáte, a pak klikněte na Zadat.
     * Zadejte například počít.  
 3. Použijte zástupce InvokeDefaultButton.

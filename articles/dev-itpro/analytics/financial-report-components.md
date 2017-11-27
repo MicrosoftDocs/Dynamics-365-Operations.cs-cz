@@ -1,17 +1,17 @@
 ---
 title: "Součásti finančních sestav"
 description: "Tento článek popisuje způsob použití komponent nebo stavebních bloků z definic sestavy ve finančních sestavách. Tyto stavební bloky zahrnují definice řádku, definice sloupce a definice stromu výkaznictví. Tento článek vysvětluje způsob uspořádání a uzamčení stavebních bloků a způsob, jak pracovat se skupinami stavebních bloků."
-author: ShylaThompson
+author: aolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 074a2f377c16d47e95343dae3ebec6cbba4d5050
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 7b283b8550bd7e5eff969d45c761d0a54d93a33e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje způsob použití komponent nebo stavebních bloků z definic sestavy ve finančních sestavách. Tyto stavební bloky zahrnují definice řádku, definice sloupce a definice stromu výkaznictví. Tento článek vysvětluje způsob uspořádání a uzamčení stavebních bloků a způsob, jak pracovat se skupinami stavebních bloků. 
+Tento článek popisuje způsob použití komponent nebo stavebních bloků z definic sestavy ve finančních sestavách. Tyto stavební bloky zahrnují definice řádku, definice sloupce a definice stromu výkaznictví. Článek vysvětluje, jak uspořádat a uzamknout stavební bloky. 
 
-Konstrukční filozofie za návrhářem finančních sestav je rozdělit informace na nejmenší součásti nebo stavební bloky a potom zkombinovat a spárovat součásti podle potřeby. Proto je formátování sestavy odděleno od finančních dat, a návrh sestavy můžete změnit bez úpravy finančních dat v systému Microsoft Dynamics ERP. Pomocí tohoto přístupu stavebních bloků můžete kombinovat text, částky a výpočty a vytvářet tak sestavy, jaké potřebujete. Navíc tato flexibilita podporuje tvořivost, protože usnadňuje zobrazování operací různými způsoby. Jednotlivé stavební bloky definice sestavy jsou podobné trojrozměrné tabulce, ale s ještě lepší využitelností. Definice sestavy určuje definici řádku, definici sloupce a volitelně definici stromu výkaznictví pro použití v sestavě. Také obsahuje informace o umístění pro uložení vygenerovaných sestav a o jejich formátování. Kvůli lepším možnostem opakovaného používání a sdílení můžete vytvořit skupinu stavebních bloků, což je kolekce existujících definic sestavy, definic řádku definic sloupce, definic stromu výkaznictví a sad dimenzí, které jsou přidruženy ke společnosti.
+Konstrukční filozofie za návrhářem finančních sestav je rozdělit informace na nejmenší součásti nebo stavební bloky a potom zkombinovat a spárovat součásti podle potřeby. Proto je formátování sestavy odděleno od finančních dat, a návrh sestavy můžete změnit bez úpravy finančních dat v systému Microsoft Dynamics ERP. Pomocí tohoto přístupu stavebních bloků můžete kombinovat text, částky a výpočty a vytvářet tak sestavy, jaké potřebujete. Navíc tato flexibilita podporuje tvořivost, protože usnadňuje zobrazování operací různými způsoby. Jednotlivé stavební bloky definice sestavy jsou podobné trojrozměrné tabulce, ale s ještě lepší využitelností. Definice sestavy určuje definici řádku, definici sloupce a volitelně definici stromu výkaznictví pro použití v sestavě. Také obsahuje informace o umístění pro uložení vygenerovaných sestav a o jejich formátování. 
 
-## <a name="building-blocks-of-a-report"></a> Stavební bloky sestavy
-| Stavební blok            | Popis                                                                                                                                                                                                                                                                              | Získání dalších informací                                                                                                 |
-|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+## <a name="building-blocks-of-a-report"></a>Stavební bloky sestavy
+| Stavební blok            | popis                     | Získání dalších informací                                    |
+|---------------------------|---------------------------------|---------------------------------------------------------|
 | Definice řádku            | Definice řádku definuje v sestavě popisné řádky, například pro platy nebo prodeje. Také uvádí hodnoty segmentů nebo dimenze, které obsahují hodnoty pro každou položku řádku, a obsahuje formátování a výpočty řádků.                                                    | [Definice řádku](row-definitions-financial-reporting.md)                       |
 | Definice sloupce         | Definice sloupce určuje období, které má být použito k extrahování dat z finančních dimenzí. Dále zahrnuje formátování a výpočty sloupců.                                                                                                                                 | [Definice sloupce](column-definitions-financial-reports.md)         |
 | Definice organizačního stromu | Definice organizačního stromu se podobá organizačnímu grafu. Obsahuje jednotlivé jednotky výkaznictví, které reprezentují jednotlivá políčka v diagramu. Jednotky mohou být buď individuální oddělení z finančních dat, nebo jednotky na vyšší úrovni, které sumarizují data z jiných organizačních jednotek. | [Definice stromu výkaznictví](financial-reporting-tree-definitions.md) |
@@ -67,44 +67,20 @@ Abyste odemkli uzamčený stavební blok, otevřete stavební blok a poté klikn
 
 ## <a name="building-block-groups"></a>Skupiny stavebních bloků
 
-Stavební bloky jsou definice řádků, definice sloupců, definice stromu výkaznictví a definice sestav, které vytvoříte pro sestavy. Stavební bloky jsou kolekce definic a sad dimenzí, které jsou přidruženy ke společnosti. Skupiny stavebních bloků mohou být specifické pro společnost, nebo může více společností sdílet stejnou sadu stavebních bloků. Pokud máte některé společnosti, které mají různé účtové osnovy, zvažte použití jiné skupiny stavebních bloků pro každou společnost. Můžete také zvážit pojmenování všech svých jednotlivých stavebních bloků podle společnosti, se kterou jsou kompatibilní.
-### <a name="create-a-building-block-group"></a>Vytvoření skupiny stavebních bloků
+Stavební bloky jsou definice řádků, definice sloupců, definice stromu výkaznictví a definice sestav, které vytvoříte pro sestavy. Skupiny stavebních bloků jsou kolekce definicí a sad dimenzí. 
 
-1.  V Návrháři sestav v nabídce **Společnost** klikněte na položku **Skupiny stavebních bloků**.
-2.  V dialogovém okně **Skupiny stavebních bloků** klikněte na tlačítko **Nová**.
-3.  Zadejte jedinečný název a popis skupiny stavebních bloků. Každé pole může obsahovat maximálně 256 znaků. (Toto číslo zahrnuje mezery).
-4.  Kliknutím na tlačítko **OK** vytvořte novou skupinu stavebních bloků.
 
-### <a name="assign-a-building-block-group"></a>Přiřaďte skupinu stavebních bloků
+### <a name="view-a-building-block-group"></a>Zobrazení skupiny stavebních bloků
 
-Po vytvoření skupiny bloků je nutné přiřadit ji alespoň k jedné společnosti. Můžete poté vytvořit definice sestavy, řádku, sloupce a stromu výkaznictví a uložit je do skupiny stavebních bloků. Před zahájením následujícího postupu je nutné zavřít všechny stavební bloky.
-1.  V Návrháři sestav v nabídce **Společnost** klikněte na položku **Společnosti**.
-2.  V dialogovém okně **Společnosti** vyberte společnost, které chcete přiřadit skupinu stavebních bloků.
-3.  Klikněte na tlačítko **Změnit**.
-4.  V dialogovém okně **Upravit společnost** v poli **Skupina stavebních bloků** vyberte skupinu stavebních bloků, kterou chcete přiřadit ke společnosti, nebo kliknutím na položku **Nová** vytvořte novou skupinu stavebních bloků.
-5.  Kliknutím na tlačítko **OK** přiřaďte skupinu stavebních bloků.
-6.  Klepnutím na tlačítko **Zavřít** zavřete dialogové okno **Společnosti**. Společnosti bude nyní přidělena skupina stavebních bloků, kterou jste vybrali. Nyní budou všechny nové definice řádku, definice sloupce atd. součástí skupiny stavebních bloků přiřazené k dané společnosti. Můžete také importovat soubor TDBX nebo sestavu z jiného systému.
-
-### <a name="view-a-building-block-group"></a> Zobrazení skupiny stavebních bloků
-
-Po vytvoření a použití skupiny stavebních bloků, lze zobrazit všechny stavební bloky přiřazené k ní. Můžete také exportovat nebo importovat skupinu stavebních bloků a provádět další údržbu skupin stavebních bloků.
-1.  V Návrháři sestav v nabídce **Společnost** klikněte na položku **Skupiny stavebních bloků**.
+Můžete zobrazit všechny stavební bloky, které jsou přiřazeny ke skupině stavebních bloků. Můžete také exportovat nebo importovat skupinu stavebních bloků.
+1.  V Návrháři sestav klikněte v nabídce **Společnost** na položku **Skupiny stavebních bloků**.
 2.  V dialogovém okně **Skupiny stavebních bloků** vyberte stavební blok k zobrazení.
 3.  Kliknutím na tlačítko **Zobrazení** otevřete dialogové okno **Zobrazení skupiny stavebních bloků** a zobrazíte obsah skupiny stavebních bloků.
-4.  Kliknutím na tlačítko **Zavřít** zavřete dialogová okna.
+4.  Kliknutím na tlačítko **Zavřít** zavřete dialogová okna.
 
-### <a name="save-a-building-block-group-under-a-new-name"></a>Uložení skupiny stavebních bloků pod novým názvem
+### <a name="export-a-building-block-group"></a>Export skupiny stavebních bloků
 
-Existující skupinu stavebních bloků je možné uložit pod novým názvem. Poté můžete novou skupinu stavebních bloků upravovat beze změny původní skupiny stavebních bloků.
-1.  V Návrháři sestav klikněte v nabídce **Společnost** na položku **Skupiny stavebních bloků**.
-2.  V dialogovém okně **Skupiny stavebních bloků** vyberte skupinu stavebních bloků k uložení pod novým názvem.
-3.  Klikněte na možnost **Uložit jako**.
-4.  Zadejte nový název a popis skupiny stavebních bloků.
-5.  Klepněte na tlačítko **OK**. Nová skupina stavebních bloků se zobrazí v dialogovém okně **Skupiny stavebních bloků**.
-
-### <a name="export-a-building-block-group"></a> Export skupiny stavebních bloků
-
-Můžete vyexportovat celou skupinu stavebních bloků nebo jen určité stavební bloky sestavy ze skupiny stavebních bloků. Skupinu exportovaných stavebních bloků můžete použít jako zálohu. Exportovaná data také můžete kopírovat mezi skupinami stavebních bloků nebo instalacemi aplikace Finance and Operations. Návrhář sestav zahrnuje odkazované styly písem a sady dimenzí společně se skupinou stavebních bloků.
+Můžete vyexportovat celou skupinu stavebních bloků nebo jen určité stavební bloky sestavy ze skupiny stavebních bloků. Skupinu exportovaných stavebních bloků můžete použít jako zálohu. Exportovaná data také můžete kopírovat mezi instalacemi aplikace Finance and Operations. Návrhář sestav zahrnuje odkazované styly písem a sady dimenzí společně se skupinou stavebních bloků.
 1.  V Návrháři sestav v nabídce **Společnost** klikněte na položku **Skupiny stavebních bloků**.
 2.  V dialogovém okně **Skupiny stavebních bloků** vyberte skupinu stavebních bloků, kterou chcete vyexportovat, a pak klikněte na položku **Export**.
 3.  V dialogovém okně **Export** vyberte definice sestavy k exportu:
@@ -118,7 +94,7 @@ Můžete vyexportovat celou skupinu stavebních bloků nebo jen určité stavebn
 
 ### <a name="import-a-building-block-group"></a> Import skupiny stavebních bloků
 
-Skupinu stavebních bloků můžete importovat do stávající skupiny stavebních bloků nebo můžete vytvořit novou skupinu stavebních bloků pro data. Všechny importované skupiny stavebních bloků si zachovají původní styly písem a odkazy na společnost a budou zahrnovat odpovídající sady dimenzí.
+Skupinu stavebních bloků můžete importovat do existující skupiny stavebních bloků. Všechny importované skupiny stavebních bloků si zachovají původní styly písem a odkazy na společnost a budou zahrnovat odpovídající sady dimenzí.
 1.  V Návrháři sestav v nabídce **Společnost** klikněte na položku **Skupiny stavebních bloků**.
 2.  V dialogovém okně **Skupiny stavebních bloků** vyberte stavební blok, do kterého chcete skupinu stavebních bloků naimportovat, a pak klikněte na položku **Import**.
 3.  V dialogovém okně **Otevřít** vyberte skupinu stavebních bloků, kterou chcete naimportovat, a pak klikněte na položku **Otevřít**.

@@ -20,10 +20,10 @@ ms.author: YuyuScheller
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: a59d9768161e0f456873b939c89b6e89b2fa0f67
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 2c0a00b6a1956f1f22a50951308c434c3f0eefc4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -73,7 +73,7 @@ Zde je několik příkladů typických členů statistické dimenze.
 
 ## <a name="statistical-measure-provider-template"></a>Šablona poskytovatele statistického měření
 
-Statistická měření mohou pocházet z mnoha zdrojů. Aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, je skvělým zdrojem k extrahování statistických měření. Šablonu poskytovatele statistických měření můžete použít ke snadné konfiguraci statistických měření, která budete extrahovat.
+Statistická měření mohou pocházet z mnoha zdrojů. Aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, je skvělým zdrojem k extrahování statistických měření. Šablonu poskytovatele statistických měření můžete použít ke snadné konfiguraci statistických měření, která budete extrahovat.
 
 Definice šablony poskytovatele statistických měření je obecná a lze ji opakovaně používat ve více členech statistické dimenze.
 
@@ -132,7 +132,7 @@ Předtím, než do nákladového účetnictví zadáte statistické hodnoty, je 
 > [!NOTE]
 > V tomto příkladu vytvoříme vztah pouze pro **skutečnou verzi**.
 
-Při vytváření vztahu přejděte postupně na položky **Hlavní kniha nákladového účetnictví** \> **Skutečná verze** \> **Spravovat** \> **Statistická měření**. V tomto scénáři vyberte datový konektor **Dynamics 365 for Finance and Operations, Enterprise edition – Statistická měření**, protože chceme extrahovat data z aplikace Finance and Operations.
+Při vytváření vztahu přejděte postupně na položky **Hlavní kniha nákladového účetnictví** \> **Skutečná verze** \> **Spravovat** \> **Statistická měření**. V tomto scénáři vyberte datový konektor **Dynamics 365 for Finance and Operations, Enterprise Edition – Statistická měření**, protože chceme extrahovat data z aplikace Finance and Operations.
 
 **Zdroj dat**
 
@@ -220,7 +220,7 @@ Předtím, než do nákladového účetnictví zadáte statistické hodnoty, je 
 > [!NOTE]
 > V tomto příkladu vytvoříme vztah pouze pro **skutečnou verzi**.
 
-Při vytváření vztahu přejděte postupně na položky **Hlavní kniha nákladového účetnictví** \> **Skutečná verze** \> **Spravovat** \> **Statistická měření**. V tomto scénáři vyberte datový konektor **Dynamics 365 for Finance and Operations, Enterprise edition – Statistická měření**, protože chceme extrahovat data z aplikace Finance and Operations.
+Při vytváření vztahu přejděte postupně na položky **Hlavní kniha nákladového účetnictví** \> **Skutečná verze** \> **Spravovat** \> **Statistická měření**. V tomto scénáři vyberte datový konektor **Dynamics 365 for Finance and Operations, Enterprise Edition – Statistická měření**, protože chceme extrahovat data z aplikace Finance and Operations.
 
 **Zdroj dat**
 

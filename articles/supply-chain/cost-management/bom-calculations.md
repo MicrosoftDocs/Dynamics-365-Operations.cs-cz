@@ -1,7 +1,7 @@
 ---
 title: "Výpočty hodnoty BOM"
 description: "Shrnutí nákladů a výpočty prodejní ceny jsou označovány jako výpočty kusovníku a spouštějí se ze stránky Výpočty. V tomto tématu jsou informace o výpočtech kusovníku."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, SalesQuotationTable, SalesTable, SMAServiceOrderTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 273763
 ms.assetid: c6fa3348-eafa-4847-9132-e65c5f55cbf4
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: b1bcf11a8f6fc4921e8659fe1d00c093e3ad5b74
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: ad00a3b5e41892aaa705fd8eafa52cc199e1d806
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -87,7 +87,7 @@ Při použití principu "náklady plus přirážka" vypočtená prodejní cena p
 -   **Výpočet kusovníku pro položku a zadanou nákladovou verzi** − Při výpočtu kusovníku se v rámci nákladové verze generuje čekající záznam o prodejní ceně. Tento záznam poskytuje výchozí bod pro zobrazení podrobností o výpočtu (například na stránce **Vypočítat náklady na položku**). Záznam o prodejní ceně slouží především jako referenční informace a nepoužívá se jako základ prodejní ceny v prodejních objednávkách.
 -   **Výpočet kusovníku podle objednávky** – Varianta stránky **Výpočet kusovník**u se používá v souvislosti s prodejní objednávkou, prodejní nabídkou nebo v souvislosti s řádkem servisní zakázky. Výpočet kusovníku specifický podle objednávky nevygeneruje záznam o nákladech na položku v rámci nákladové verze. Místo toho vygeneruje záznam výpočtu, který se zobrazí na stránce **Výsledky výpočtu kusovníku**. Tento záznam výpočtu poskytuje výchozí bod pro zobrazení podrobností o výpočtu (například na stránce **Vypočítat náklady na položku**). Informace o vybraném záznamu výpočtu lze převést na původní položku řádku. Například lze převést vypočtenou prodejní cenu na řádkovou položku prodejní objednávky.
 
-## <a name="orderspecific-bom-calculations"></a>Výpočty kusovníku specifické podle objednávek
+## <a name="order-specific-bom-calculations"></a>Výpočty kusovníků specifických podle objednávek
 Výpočet kusovníku specifický podle objednávky reprezentuje odchylku výpočtu kusovníku pro vyráběnou položku. Výpočet kusovníku specifický podle objednávky je prováděn v kontextu položky řádku servisní zakázky, prodejní objednávky nebo prodejní nabídky. Při výpočtu kusovníku specifického podle objednávky se vygeneruje záznam výpočtu, který se zobrazí na stránce **Výsledky výpočtu kusovníku**. Záznam výpočtu obsahuje vypočtenou váhu, vypočtené náklady založené na aktivních záznamech nákladů a vypočtenou prodejní cenu. Záznam výpočtu, který každý výpočet kusovníku pro položku generuje na stránce **Výsledky výpočtu kusovníku** je jedinečným způsobem identifikován číslem výpočtu. Výsledky záznamu výpočtu mohou být volitelně přeneseny do původní položky řádku. Výpočet kusovníku specifický podle objednávky se liší od výpočtu kusovníku pro vyráběnou položku dvěma způsoby:
 
 -   Výpočet kusovníku specifický podle objednávky nevygeneruje záznam o nákladech na položku v rámci nákladové verze. To znamená, že zásady výpočtu kusovníku nejsou použity pro vytváření záznamů o nákladech na položku ani pro přepsání záznamů o nákladech.

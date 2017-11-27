@@ -3,24 +3,24 @@ title: "Pracovní prostor pro správu dlouhodobého majetku"
 description: "Toto téma obsahuje informace o pracovním prostoru Správa dlouhodobého majetku. Tento pracovní prostor zobrazuje informace vztahující se k dlouhodobému majetku, který je zadán v systému. Obsahuje souhrnné a analytické zobrazení."
 author: saraschi
 manager: AnnBe
-ms.date: 06/06/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.assetid: 
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: c87cd29f46acb44faddaf5552de21fb8f4c5c71d
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c544ae60433dd14d061bc1a78d5cad6577cf579d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -58,7 +58,7 @@ Můžete přejít přímo na stránku **Nastavení knih**, **Dotaz na transakce 
 
 ### <a name="analytics--all-companies"></a>Analýza – všechny společnosti
 
-Stránka **Analýza** obsahuje důležité metriky týkající se dlouhodobého majetku u všech právnických osob v systému. Přístup k této kartě je řízen bezpečnostním oprávněním Zobrazit analýzu dlouhodobého majetku pro všechny společnosti.
+Stránka **Analýza** obsahuje důležité metriky týkající se dlouhodobého majetku u všech právnických osob v systému. Přístup k této kartě je řízen bezpečnostními oprávněními Zobrazit analýzu dlouhodobého majetku pro všechny společnosti.
 
 V následující tabulce jsou uvedeny vizualizace dostupné na stránkách sestav.
 

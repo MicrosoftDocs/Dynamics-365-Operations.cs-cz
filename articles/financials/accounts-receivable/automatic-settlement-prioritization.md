@@ -1,9 +1,9 @@
 ---
-title: "Automatické vyrovnání a stanovení priority"
-description: "Tento článek popisuje způsob vyrovnání transakcí, pokud vyberete možnost Automatické vyrovnání na straně Parametry pohledávek. Vysvětluje také, jak lze automatické vyrovnání použít v kombinaci s prioritou platby."
+title: "Automatické vyrovnání a stanovení priorit"
+description: "Toto téma popisuje způsob vyrovnání transakcí, pokud vyberete možnost Automatické vyrovnání na straně Parametry pohledávek. Vysvětluje také, jak lze automatické vyrovnání použít v kombinaci s prioritou platby."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 14531
 ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
 ms.search.region: Global
@@ -19,19 +19,19 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7a0f87aca78f1263f1f6ce65e2629b91312716cb
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: fc091e401f84ce2ac425897ad6cbd92fd7399736
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="automatic-settlement-and-prioritization"></a>Automatické vyrovnání a stanovení priority
+# <a name="automatic-settlement-and-prioritization"></a>Automatické vyrovnání a stanovení priorit
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje způsob vyrovnání transakcí, pokud vyberete možnost Automatické vyrovnání na straně Parametry pohledávek. Vysvětluje také, jak lze automatické vyrovnání použít v kombinaci s prioritou platby.
+Toto téma popisuje způsob vyrovnání transakcí, pokud vyberete možnost Automatické vyrovnání na straně Parametry pohledávek. Vysvětluje také, jak lze automatické vyrovnání použít v kombinaci s prioritou platby.
 
 Při vyrovnání plateb pomocí faktur a ostatních transakcí, máte k dispozici dvě možnosti. Transakce pro vyrovnání je možné vybrat ručně, nebo aplikace Microsoft Dynamics 365 for Finance and Operations tyto transakce vybere automaticky pomocí funkce automatického vyrovnání. Můžete také upravit, jak je automatické vyrovnání zpracováno, pomocí možnosti **Určit prioritu vyrovnání**. Všechny z těchto možností jsou součástí parametrů vyrovnání , které jsou definovány na stránce **Parametry pohledávek**. Způsob automatického vyrovnání transakcí se může lišit v závislosti na metodě, kterou používáte pro automatické vyrovnání. K dispozici jsou následující metody:
 
@@ -50,7 +50,7 @@ Příklady vyrovnání dále v tomto článku jsou založeny na následujících
 | Faktura 3     | 15. října  | 500,00 | 2% 14/netto 30        | 29. října         |                                                                                                                                                                                               |
 | Oznámení úroků | 15. října  | 7:00   |                     |                    | Toto oznámení úroků je pro fakturu 1 a fakturu 2. Částka se počítá jako 2% úrok z částek, které jsou 30 nebo více dnů po splatnosti. Například 0,02 × (100,00 + 250,00) = 7,00. |
 
-## <a name="userdefined-settlement-priority"></a>Priorita vyrovnání definovaná uživatelem
+## <a name="user-defined-settlement-priority"></a>Priorita vyrovnání definovaná uživatelem
 Nastavíte-li **Použít prioritu pro automatické vyrovnání** na **Ano** na stránce **Parametry pohledávek**, priorita vyrovnání, která je definována na stránce **Priorita vyrovnání**, se použije při výběru transakcí pro automatické vyrovnání. V tomto příkladu je definována následující priorita vyrovnání:
 
 1.  Typ transakce

@@ -3,7 +3,7 @@ title: "Správa subdodavatelské práce při výrobě"
 description: "Toto téma vysvětluje, jak jsou subdodavatelské operace spravovány v aplikaci Microsoft Dynamics 365 for Finance and Operations. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 268174
 ms.assetid: fe47c498-4f48-42a2-a0cf-5436c19ab3ea
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: e1c29f597b190bd36b6fc64b16913ecdd02daf75
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 26feea4d86cf8b976f41342c8543594593c4b135
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/29/2017
 
 Toto téma vysvětluje, jak jsou subdodavatelské operace spravovány v aplikaci Microsoft Dynamics 365 for Finance and Operations. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku.
 
-Ve [výrobních procesech](production-process-overview.md) mohou práci provádět zdroje, které jsou vlastněné nebo spravované dodavateli. Prostředky dodavatele se používají k vyrovnání pravidelné nadměrné poptávky, která překračuje dostupnou kapacitu vlastních prostředků společnosti. Dodavatel může být také schopen nabídnout konkrétní [schopnosti prostředku](resource-capabilities.md)nebo prostředky za nižší cenu.  
+Ve [výrobních procesech](production-process-overview.md) mohou práci provádět zdroje, které jsou vlastněné nebo spravované dodavateli. Prostředky dodavatele se používají k vyrovnání pravidelné nadměrné poptávky, která překračuje dostupnou kapacitu vlastních prostředků společnosti. Dodavatel může být také schopen nabídnout konkrétní [schopnosti prostředku](resource-capabilities.md) nebo prostředky za nižší cenu.  
 
 V závislosti na prostředcích dodavatele použitých ve výrobním procesu [postupu](routes-operations.md) často existují další logistické požadavky, protože materiál a polotovary musí nejprve přepraveny do sídla dodavatele. Pak musí být výsledek operace subdodávek přepraven buď do umístění, které je přiřazeno k další operaci, nebo do skladu hotových výrobků.  
 
@@ -68,7 +68,7 @@ Při použití této konfigurace je vytvořena nákupní objednávka produktu so
 Výrobní zakázka může mít mnoho operací a každou operaci lze přidělit jinému dodavateli. Proto může koncový výrobní příkaz aktivovat více nákupních objednávek.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Subdodávky aktivity výrobního toku
-Řešení [lean manufacturing](lean-manufacturing-overview.md)modeluje subdodavatelskou práci jako službu, která souvisí s aktivitou výrobního toku [výrobní tok](tasks/create-production-flow-version.md) (Téma Průvodce záznamem úloh). Proto je tento typ subdodávky také označován jako [subdodávky podle aktivity](activity-based-subcontracting.md) Zavádíme speciální typ nákladové skupiny s názvem **Přímý outsourcing** a subdodavatelské služby nejsou součástí kusovníku hotového zboží. Při použití lean manufacturing jsou všechny aktivity definovány kanbany, které lze propojit s jednou nebo více aktivitami výrobního toku. Toto vysvětlení zatím zní jako popis výrobních zakázek. Zatímco výrobní zakázky musí vždy končit hotovým výrobkem, můžete vytvořit kanbany pro dodávku polotovarů. Není nutné zavést novou úroveň produktu a kusovníku.  
+Řešení [lean manufacturing](lean-manufacturing-overview.md) modeluje subdodavatelskou práci jako službu, která souvisí s aktivitou výrobního toku [výrobní tok](tasks/create-production-flow-version.md) (Téma Průvodce záznamem úloh). Proto je tento typ subdodávky také označován jako [subdodávky podle aktivity](activity-based-subcontracting.md) Zavádíme speciální typ nákladové skupiny s názvem **Přímý outsourcing** a subdodavatelské služby nejsou součástí kusovníku hotového zboží. Při použití lean manufacturing jsou všechny aktivity definovány kanbany, které lze propojit s jednou nebo více aktivitami výrobního toku. Toto vysvětlení zatím zní jako popis výrobních zakázek. Zatímco výrobní zakázky musí vždy končit hotovým výrobkem, můžete vytvořit kanbany pro dodávku polotovarů. Není nutné zavést novou úroveň produktu a kusovníku.  
 
 Kanbanová pravidla mohou být velmi dynamická, můžete modelovat různé varianty zásobování pro stejný produkt ve výrobním toku. Při použití štíhlých subdodávek jsou tok materiálu a finanční toku striktně odděleny. Všechny toky materiálu jsou reprezentovány kanbanovými aktivitami. Nákupní objednávky pro produkty služby a zaúčtování příjmu těchto služeb lze automatizovat na základě stavu kanbanových úloh ve výrobním toku. Kanbanové úlohy můžete spustit a dokončit ještě dříve, než jsou vytvořeny nákupní objednávky. Doklady o subdodávce mohou být agregovány (nákupní objednávka a nákupní příjemka služby) podle období a služby. Proto počet nákupních dokladů a řádků může být uchováván v malém množství i v často opakovaných operacích, kde dodavatelé poskytují subdodavatelské služby v toku jednoho kusu.
 

@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e5f96b3eb0df3e35486a08e55439fb59e3479fac
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c858cc24cbba961024a67a2477d7271f64f9a0d4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -41,7 +41,7 @@ Ve scénářích výroby založených na výrobních zakázkách je materiálu v
 
 Ke snížení doby realizace dodávky a nadbytečných zásob mezi pracovními středisky, které jsou způsobené výrobními dávkami, zavádí lean manufacturing doplnění kanbanu a supermarkety ve výrobě a doplnění skladu. Tyto prvky obvykle naruší výrobu částečně nezávislých kanbanových cyklů. Doplnění kanbanu pro polotovar již není aktivováno objednávkou hotového výrobku. 
 
-Aby bylo možné znovu vytvořit kontext výroby a nákladů pro různé scénáře kanbanu navržené v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, byly zavedeny výrobní toky zavedené na aktivitě jako základní stavební prvky lean manufacturingu. Všechna kanbanová pravidla naleznete v této předdefinované struktuře. Model založený na aktivitách podporuje širší škálu scénářů, než tomu bylo v předchozích verzích Lean manufacturingu aplikace Dynamics AX. Avšak tento model nezvyšuje náročnost pro dílenské pracovníky, protože všechny scénáře používají stejné uživatelské rozhraní založené na aktivitách.
+Aby bylo možné znovu vytvořit kontext výroby a nákladů pro různé scénáře kanbanu navržené v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, byly zavedeny výrobní toky zavedené na aktivitě jako základní stavební prvky lean manufacturingu. Všechna kanbanová pravidla naleznete v této předdefinované struktuře. Model založený na aktivitách podporuje širší škálu scénářů, než tomu bylo v předchozích verzích Lean manufacturingu aplikace Dynamics AX. Avšak tento model nezvyšuje náročnost pro dílenské pracovníky, protože všechny scénáře používají stejné uživatelské rozhraní založené na aktivitách.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Polotovary (bez úrovní kusovníku)
 Lean manufacturing pro aplikaci Dynamics AX integruje kanbany pro produkty na skladě a polotovary v jednom rámci, tudíž nabízí ve všech případech sjednocené uživatelské prostředí. Díky této architektuře není třeba zavádět další úrovně kusovníku, aby bylo možné použít kanbany pro polotovary. Tato architektura také umožňuje omezit skladové transakce na minimum.

@@ -3,7 +3,7 @@ title: "zpeněžení potenciálního zákazníka"
 description: "Toto téma uvádí přehled řešení zpeněžení potenciálního zákazníka mezi aplikacemi Dynamics 365 for Finance and Operations, Enterprise Edition a Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User, IT Pro
 ms.reviewer: yuyus
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 47e70cb1291e390b42b7feff844b2aca141f09b7
-ms.openlocfilehash: a5f1ecd5f8b46287839439a963e571531ae161a7
+ms.sourcegitcommit: 674d2e1f2c5cdbccf43618a9083ca01abed0735a
+ms.openlocfilehash: 2accf77c5241adff7ad1648737dde451153fde46
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -42,25 +42,39 @@ Toto řešení umožňuje integraci v rámci následujících oblastí:
 -   [Vytvoření prodejních objednávek v aplikaci Finance and Operations a jejich synchronizace do aplikace Sales](sales-order-template-mapping.md)
 -   [Vytvoření prodejních faktur v aplikaci Finance and Operations a jejich synchronizace do aplikace Sales](sales-invoice-template-mapping.md)
 
+Toto řešení umožňuje přímou synchronizaci v rámci následujících oblastí:
+
+-   [Správa účtů v aplikaci Sales a jejich synchronizace přímo z aplikace Sales do aplikace Finance and Operations](accounts-template-mapping-direct.md)
+-   [Správa produktů v aplikaci Finance and Operations a jejich synchronizace přímo do aplikace Sales](products-template-mapping-direct.md)
+-   [Správa kontaktů v aplikaci Sales a jejich přímá synchronizace na kontakty nebo odběratele v aplikaci Finance and Operations](contacts-template-mapping-direct.md)
+-   [Synchronizace hlaviček a řádků prodejních nabídek přímo z aplikace Sales do aplikace Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
+-   [Vytvoření prodejních objednávek v aplikaci Finance and Operations a jejich synchronizace přímo do aplikace Sales](sales-order-template-mapping-direct.md)
+-  [Synchronizace hlaviček a řádků prodejní objednávky přímo mezi aplikacemi Sales a Finance and Operations](sales-order-template-mapping-between-sales-fin.md)
+-   [Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
+-   [Vytvoření prodejních faktur v aplikaci Finance and Operations a jejich synchronizace přímo do aplikace Sales](sales-invoice-template-mapping-direct.md)
+
+
 ## <a name="system-requirements-for-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Systémové požadavky pro aplikaci Dynamics 365 for Finance and Operations, Enterprise Edition
 
 Chcete-li použít řešení zpeněžení potenciálního zákazníka, je nutné nainstalovat následující:
 
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (července 2017) s aktualizací Platform update 8 (aplikací 7.2.11792.56024 s platformou 7.0.4565.16212)
 
-- Dvě opravy hotfix Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017).
+- Opravy hotfix Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017).
+        
+    -  [KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160) – Tato oprava hotfix umožňuje podporu pro synchronizaci prodejní objednávky s funkcí integrace dat z aplikace Sales do aplikace Finance and Operations, spolu s řadou dalších vylepšení.
 
     -  [KB4036524](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036524&bugId=3847504&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2) - Tato oprava hotfix umožňuje synchronizaci řádku prodejní objednávky pomocí funkce integrace z aplikace Finance and Operations do Sales.
         
     -  [KB4036461](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036461&bugId=3847029&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2) - Tato oprava hotfix umožňuje synchronizaci prodejní objednávky pomocí funkce integrace z aplikace Finance and Operations do Sales.
-    
-**Poznámka**: Musíte pouze nainstalovat KB4036524, protože instalace obsahuje změny z KB4036461.
+
+**Poznámka**: Musíte pouze nainstalovat KB4045570, protože instalace obsahuje změny z jiných článků znalostní báze.
  
 ## <a name="system-requirements-for-dynamics-365-for-sales"></a>Systémové požadavky pro Dynamics 365 for Sales
 
 Chcete-li použít řešení zpeněžení potenciálního zákazníka, je nutné nainstalovat následující:
 
-- Dynamics 365 for Sales verze 1612 (8.2.1.207) (DB 8.2.1.207) online nebo vyšší.
+- Dynamics 365 for Sales verze 1612 (8.2.1.207) (DB 8.2.1.207) online.
 - Řešení zpeněžení potenciálního zákazníka pro Dynamics 365 for Sales, verze 1.14.0.0 (v14) nebo pozdější.
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Instalace řešení zpeněžení potenciálního zákazníka pro aplikaci Sales

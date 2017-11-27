@@ -3,7 +3,7 @@ title: "Spuštění sestavy používající finanční dimenze jako zdroj dat pr
 description: "Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) použití finančních dimenzí jako zdroje dat pro sestavy elektronického výkaznictví."
 author: NickSelin
 manager: AnnBe
-ms.date: 10/14/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: cdecf5fb3f3047a56353ee6d4a8f94957f508e4b
+ms.sourcegitcommit: 5d4f57ae2a309d9e15c1afe60c3e91d7d7eb3870
+ms.openlocfilehash: c5aefc44adc24f9d216f9470e4307a3723690173
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="run-a-report-that-uses-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a>Spuštění sestavy používající finanční dimenze jako zdroj dat pro elektronické výkaznictví (ER)
@@ -44,6 +44,6 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 9. Zadejte hodnotu 00057 do pole Kritéria.
 10. Klikněte na tlačítko OK.
 11. Klikněte na tlačítko OK.
-    * Prohlédněte si generovaný výstup. Všimněte si, že pro každou transakci vybrané dávky jsou uvedeny finanční dimenze z odpovídající sady dimenzí. Spusťte tuto sestavu a vyberte různé dimenze k ověření, že sestava není závisí na počtu vybraných dimenzí nebo několika dimenzí nakonfigurovaných pro tuto instanci Dynamics 365 for Finance and Operations, edice Enterprise.  
+    * Prohlédněte si generovaný výstup. Všimněte si, že pro každou transakci vybrané dávky jsou uvedeny finanční dimenze z odpovídající sady dimenzí. Spusťte tuto sestavu a vyberte různé dimenze k ověření, že sestava není závisí na počtu vybraných dimenzí nebo několika dimenzí nakonfigurovaných pro tuto instanci Dynamics 365 for Finance and Operations, Enterprise Edition.  
 
 

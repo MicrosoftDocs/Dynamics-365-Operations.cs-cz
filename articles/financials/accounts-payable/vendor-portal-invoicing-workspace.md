@@ -18,10 +18,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 6b05dbef279b06fefc1eccd87689693edf2a418e
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 506dd06790f40fbba272811a59281add1a86b179
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 
 Toto téma vysvětluje, jak můžete zobrazit faktury dodavatele a přijmout faktury z pracovního prostoru spolupráce dodavatele.
 
-Pracovní prostor **fakturace dodavatelské spolupráce** lze použít pro zobrazení informace o faktuře dodavatele a odeslání faktur do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition pomocí možností workflowu.
+Pracovní prostor **fakturace dodavatelské spolupráce** lze použít pro zobrazení informace o faktuře dodavatele a odeslání faktur do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition pomocí možností workflowu.
 
 
 <a name="vendor-collaboration-invoicing-workspace"></a>Pracovní prostor fakturace dodavatelské spolupráce

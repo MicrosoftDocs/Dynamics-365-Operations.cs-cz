@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
-ms.openlocfilehash: dfc5b5f1ced098a445762653f98c672eb896a104
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: e08277850d36804e3d4508b87547d2c819e2faf3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ Toto téma popisuje obsah **Přehled CFO** v Microsoft Power BI.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 
-Pokud používáte aplikaci Microsoft Dynamics 365 Finance and Operations, Enterprise Edition (červenec 2017), sestavy z obsahu **Přehled CFO** v Power BI jsou zobrazeny v pracovním prostoru **Přehled CFO**.
+Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017), sestavy z obsahu **Přehled CFO** v Power BI jsou zobrazeny v pracovním prostoru **Přehled CFO**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
 Obsah **Přehled CFO** v Power BI je složený ze sestav z různých dalších obsahů Power BI, spolu s některými aktuálními a rozpočtovými zůstatky z hlavní knihy. Proto tento obsah Power BI poskytuje přehled organizace vedoucímu finančního oddělení (Power).

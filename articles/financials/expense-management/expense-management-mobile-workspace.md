@@ -18,10 +18,10 @@ ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 7ce4c9d13a8686c82af8acad39d68858e52ba520
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 4880c74047f53704f5f4d8efb19b6f8c6b04d479
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -42,7 +42,7 @@ Mnoho organizací vyžaduje, aby byla připojena k sestavě cestovních nebo obc
 
 Konkrétně mobilní pracovní prostor **Správa výdajů** uživatelům umožňuje provádění těchto úloh:
 
-- Pořízení fotografie účtenky a její nahrání do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Následně můžete připojit uvedenou fotografii k sestavě výdajů později.
+- Pořízení fotografie účtenky a její nahrání do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Následně můžete připojit uvedenou fotografii k sestavě výdajů později.
 - Odešlete soubor jako zdokumentovanou účtenku. Následně můžete připojit uvedený soubor k sestavě výdajů později.
 - Vytvořte nový řádek výdajů pomocí připojené účtenky. Později můžete přidat položku řádku k sestavě výdajů a odeslat ke schválení a refundaci.
 
@@ -61,7 +61,7 @@ Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, E
 Předpoklady se liší podle verze aplikace Microsoft Dynamics 365, která byla nasazena ve vaší organizaci.
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017) 
-Pokud je ve vaší organizaci nasazena aktualizace aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (červenec 2017), správce systému musí mobilní pracovní prostor **Správa výdajů** publikovat. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Pokud je ve vaší organizaci nasazena aktualizace aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017), správce systému musí mobilní pracovní prostor **Správa výdajů** publikovat. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější
 Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější, správce systému musí dokončit následující předpoklady. 

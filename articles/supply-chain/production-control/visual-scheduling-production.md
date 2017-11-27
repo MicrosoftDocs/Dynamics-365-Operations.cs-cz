@@ -3,7 +3,7 @@ title: "Ganttův diagram pro plánování úloh"
 description: "Plánovači výroby mohou kontrolovat a optimalizovat plány výroby pomocí Ganttova diagramu."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: cc7543305ac634dfed3779bb83806ee4fd97d7fa
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 5a4b0450cc76c8d9307b9b21b78a170afcc298e4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -39,7 +39,7 @@ Ganttův diagram je vizuální znázornění naplánovaných aktivit v rámci de
 -   Úlohy z plánovaných výrobních zakázek.
 -   Naplánované aktivity projektu podle úlohy typu Hodinová prognóza.
 
-Ganttův diagram je možné otevřít ve dvou různých zobrazeních: **Zobrazení zakázky** a **Zobrazení prostředku**[.](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true)V **zobrazení zakázky** jsou aktivity seskupeny podle výrobních zakázek. To může být užitečné, například pokud chcete mít přehled o všech úlohách náležejících do stejné objednávky. V **Zobrazení zdrojů** jsou všechny úlohy seskupeny podle jednotlivých zdrojů. Toto zobrazení je vhodné při optimalizaci plánu na úrovni zdroje, například stroje nebo skupiny strojů. Ganttův diagram na následujícím obrázku ukazuje **zobrazení objednávky** a **zobrazení zdrojů** s těmito klíčovými prvky:
+Ganttův graf lze otevřít dvěma různými způsoby, **Zobrazení objednávky** a **Zobrazení zdrojů**[](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true). V **Zobrazení objednávky** jsou aktivity seskupeny pod výrobními zakázkami. To může být užitečné, například pokud chcete mít přehled o všech úlohách náležejících do stejné objednávky. V **Zobrazení zdrojů** jsou všechny úlohy seskupeny podle jednotlivých zdrojů. Toto zobrazení je vhodné při optimalizaci plánu na úrovni zdroje, například stroje nebo skupiny strojů. Ganttův diagram na následujícím obrázku ukazuje **zobrazení objednávky** a **zobrazení zdrojů** s těmito klíčovými prvky:
 
 1.  Aktivita Ganttova diagramu
 2.  Ikona nedostatku materiálu
@@ -156,5 +156,7 @@ Ganttův diagram lze otevřít z následujících stránek.
 | **Výrobní zakázky pro uvolnění** (otevřena z pracovního prostoru **Dílenské řízení výroby**) | Stránka Výrobní zakázky pro uvolnění se otevírá z pracovního prostoru **Dílenské řízení výroby**. Na této stránce se zobrazí plánované výrobní a dávkové objednávky čekající na uvolnění. Na této stránce můžete otevřít Ganttův diagram pro vybrané výrobní zakázky.                                                                                                                                                                                                                                                        |
 ## <a name="see-also"></a>Viz také  
 [Vizuální plánování s Ganntovým diagramem pro výrobu a dávkové objednávky (video)](https://youtu.be/BtbuShkGj4I)
+
+[Vizuální plánování výroby (ukázkový skript)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)
 
 

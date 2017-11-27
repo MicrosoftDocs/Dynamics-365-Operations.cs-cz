@@ -1,9 +1,9 @@
 ---
 title: "Přehled nákupních žádanek"
-description: "Tento článek popisuje workflow nákupního požadavku a různé stavy, které může mít nákupní požadavek."
+description: "Toto téma popisuje workflow nákupní žádanky a různé možné stavy nákupních žádanek."
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 6fb8bbc7340650341618f3a9613f4234ef1e9c04
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: b96a89bcabdaa3e3a3be3786dda15f9725f5a50d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje workflow nákupního požadavku a různé stavy, které může mít nákupní požadavek.
+Toto téma popisuje workflow nákupní žádanky a různé možné stavy nákupních žádanek.
 
 V závislosti na nastavení vaší organizace můžete vytvářet a odesílat nákupní požadavky pro produkty, které vaše organizace používá. Nákupní požadavek je interní dokument, který opravňuje nákupní oddělení k nákupu položek nebo služeb.  
 
@@ -70,7 +70,7 @@ Celkový stav nákupní žádanky se řídí stavem řádků nákupní žádanky
 <tr class="odd">
 <td>Koncept</td>
 <td>Koncept</td>
-<td>Nákupní požadavek a řádek nákupní žádanky byly vytvořeny, ale nebyly odeslány ke kontrole. Nákupní žádanky a řádky nákupního požadavku, které mají stav <strong>Koncept</strong>, lze upravit. Nákupní žádanka nebo řádek nákupního požadavku mají také stav <strong>Koncept</strong>, pokud byla tato stornována, ale nebyla znovu odeslána ke kontrole.<strong>Poznámka:</strong> Můžete odevzdávat nebo vyvolat nákupní požadavek na úrovni dokumentů. Nelze však odeslat nebo odvolat jeden řádek nákupní žádanky.</td>
+<td>Nákupní požadavek a řádek nákupní žádanky byly vytvořeny, ale nebyly odeslány ke kontrole. Nákupní žádanky a řádky nákupní žádanky, které mají stav <strong>Koncept</strong>, lze upravit. Nákupní žádanka nebo řádek nákupní žádanky mají také stav <strong>Koncept</strong>, pokud byly stornovány, ale nebyly odeslány na kontrolu. <strong>Poznámka:</strong> Můžete odeslat nebo stornovat nákupní žádanku na úrovni dokumentů. Nelze však odeslat nebo odvolat jeden řádek nákupní žádanky.</td>
 </tr>
 <tr class="even">
 <td>Probíhá kontrola</td>
@@ -111,7 +111,7 @@ Pokud znovu odešlete řádek nákupní žádanky, který byl zamítnut, proces 
 <tr class="odd">
 <td>Stornováno</td>
 <td>Stornováno</td>
-<td>Nákupní žádanka a všechny řádky nákupní žádanky byly stornovány.<strong>Poznámka:</strong> Pokud již položku, která je na řádku nákupní žádanky, nepotřebujete, je nutné zrušit řádek nákupní žádanky, pokud byl již schválen. Zrušit lze pouze řádky nákupního požadavku, které byly schváleny. Pokud všechny řádky nákupního požadavku jsou vystaveny kontrole, nákupní požadavek se bude nacházet ve stavu <strong>Kontrolované</strong>. V takovém případě lze odvolat nákupní požadavek a odstranit odpovídající řádek nákupní žádanky.</td>
+<td>Nákupní žádanka a všechny řádky nákupní žádanky byly zrušeny. <strong>Poznámka:</strong> Pokud již položku, která je na řádku nákupní žádanky, nepotřebujete, je nutné zrušit řádek nákupní žádanky, pokud byl již schválen. Zrušit lze pouze řádky nákupního požadavku, které byly schváleny. Pokud všechny řádky nákupního požadavku jsou vystaveny kontrole, nákupní požadavek se bude nacházet ve stavu <strong>Kontrolované</strong>. V takovém případě lze odvolat nákupní požadavek a odstranit odpovídající řádek nákupní žádanky.</td>
 </tr>
 <tr class="even">
 <td>Uzavřené</td>

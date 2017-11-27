@@ -18,10 +18,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 97c8f3d57ba1accb8d940c7edd3ddcac2146968b
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 3692b9be0fb93e0e2de743775a54bb9c9dbf5809
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -49,7 +49,7 @@ Ziskovost lze analyzovat následujícími způsoby:
 -   Ziskovost zákazníků (podle výnosů versus hrubá marže)
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, (červenec 2017), obsah **Prodej a ziskovost** v Power BI se zobrazuje na stránce **Prodej a ziskovost** (**Prodej a marketing** > **Dotazy a sestavy** > **Analýza výkonnosti prodeje** > **Výkonnost prodeje a ziskovosti**). 
+Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, (červenec 2017), obsah **Prodej a ziskovost** v Power BI se zobrazuje na stránce **Prodej a ziskovost** (**Prodej a marketing** > **Dotazy a sestavy** > **Analýza výkonnosti prodeje** > **Výkonnost prodeje a ziskovosti**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriky, které jsou součástí obsahu Power BI
 Obsah Power BI **Výkon prodeje a ziskovosti** obsahuje sestavu, která obsahuje sadu metrik. Tyto metriky jsou zobrazována jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizací v obsahu.

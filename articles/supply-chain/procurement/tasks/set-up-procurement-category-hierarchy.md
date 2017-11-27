@@ -3,7 +3,7 @@ title: "Nastavení hierarchie kategorií zásobování"
 description: "Tento postup popisuje vytvoření nových uzlů v hierarchii kategorií zásobování a konfiguraci kategorie zásobování pro použití v procesu zásobování."
 author: mkirknel
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 11/06/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b9897b1184e8159b20a45d4cedbba56baef31a3c
+ms.sourcegitcommit: 6ad5c8552a6989e9093d0b1325754bc0f6d19372
+ms.openlocfilehash: 4541d029c9c3be3ee42332e5d8ff183dd503f13e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Nastavení hierarchie kategorií zásobování
@@ -30,7 +30,7 @@ Tento postup popisuje vytvoření nových uzlů v hierarchii kategorií zásobov
 
 
 ## <a name="add-a-new-procurement-category"></a>Přidání nové kategorie zásobování
-1. Přejděte na Zásobování a zdroje > .. > Kategorie zásobování.
+1. Přejděte do nabídky Zásobování a zdroje > Kategorie zásobování.
 2. Klikněte na možnost Upravit hierarchii kategorií.
     * Aktuální hierarchie kategorií zásobování se zobrazí v levé části stránky. Chystáte se upravit hierarchii.  
 3. Klikněte na možnost Nový uzel kategorie.
@@ -42,7 +42,7 @@ Tento postup popisuje vytvoření nových uzlů v hierarchii kategorií zásobov
 7. Klikněte na položku Uložit.
 
 ## <a name="add-products-to-your-new-procurement-category"></a>Přidání produktů do nové kategorie zásobování
-1. Přejděte na Zásobování a zdroje > .. > Kategorie zásobování.
+1. Přejděte do nabídky Zásobování a zdroje > Kategorie zásobování.
     * Vyberte uzel, který jste právě přidali. Pokud tento postup používáte jako průvodce úkolem, možná bude třeba průvodce odemknout, aby bylo možné uzel vybrat.  
 2. Rozbalte oddíl Produkty.
 3. Kliknutím na tlačítko Přidat přidružte produkty ke kategorii zásobování.

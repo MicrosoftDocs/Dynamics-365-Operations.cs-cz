@@ -1,6 +1,6 @@
 ---
 title: "Synchronizace kontaktů z aplikace Sales s kontakty nebo odběrateli v aplikaci Finance and Operations"
-description: "Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci kontaktu (Kontakty) a kontaktu (odběratelé) z aplikace Microsoft Dynamics 365 for Sales do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+description: "Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci kontaktu (Kontakty) a kontaktu (odběratelé) z aplikace Microsoft Dynamics 365 for Sales do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/28/2017
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 47e70cb1291e390b42b7feff844b2aca141f09b7
-ms.openlocfilehash: 41e27776b94df059ada13efb9a3dbf6a29d67f36
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c838fef502f643c764fade9cd79ae770ffc36974
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/29/2017
 > [!NOTE]
 > Než budete moci použít řešení Zpeněžnění potenciálního zákazníka, seznamte se s modulem [Integrace dat Dynamics 365](/common-data-service/entity-reference/dynamics-365-integration). 
 
-Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci entit Kontakt (Kontakty) a Kontakt (Odběratelé) z aplikace Microsoft Dynamics 365 for Sales (Sales) do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations).
+Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci entit Kontakt (Kontakty) a Kontakt (Odběratelé) z aplikace Microsoft Dynamics 365 for Sales (Sales) do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (Finance and Operations).
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 

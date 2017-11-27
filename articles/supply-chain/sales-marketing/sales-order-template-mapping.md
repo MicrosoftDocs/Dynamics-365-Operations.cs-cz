@@ -3,7 +3,7 @@ title: "Synchronizace hlaviček a řádků prodejní objednávky z aplikace Fi
 description: "Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci hlaviček a řádků prodejních objednávek z aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition do aplikace Microsoft Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User, IT Pro
 ms.reviewer: yuyus
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 707efc97afc0679ed1fc22539789e98cbabcb581
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c7b2ff6430e99661ee284f65089086df9fa5a1ad
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -106,7 +106,7 @@ Před synchronizací prodejních objednávek je důležité aktualizovat systém
 
 ### <a name="setup-in-sales"></a>Nastavení v aplikaci Sales
 
-- Zajistěte oprávnění pro tým, ke kterému je uživatel (ze **sady připojení** aplikace Sales) přiřazen. Používáte-li ukázková data, má obvykle uživatel přístup správce, ale nikoli týmu. Bez toho je vygenerována chyba, která oznamuje, že chybí hlavní tým při spuštění projektu z integrátoru dat. 
+- Zajistěte oprávnění pro tým, ke kterému je uživatel (ze **sady připojení** aplikace Sales) přiřazen. Používáte-li ukázková data, má obvykle uživatel přístup správce, ale tým nikoliv. Bez toho je vygenerována chyba, která oznamuje, že chybí hlavní tým při spuštění projektu z integrátoru dat. 
 
     - V **Nastavení** > **Zabezpečení** > **Týmy**, vyberte příslušný tým, klikněte na **Spravovat role** a vyberte roli s požadovanými oprávněními, například správce systému.
 

@@ -3,7 +3,7 @@ title: "Vypracování plánu kariérního postupu"
 description: "Jak v průběhu času vaše organizace roste a vy zvažujete plánování následnictví, můžete chtít vyhledat osobu, která má podobné dovednosti, jako jiný uživatel."
 author: kherr75
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/01/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b1caaf5f52282a8daae62602dcc5ef86b901e338
+ms.sourcegitcommit: 63a02a64ff28531bae950f1b61d9167eaa0b0373
+ms.openlocfilehash: 2ca5f541abe4f85187aaefdbb03ca84e4f314b3c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/01/2017
 
 ---
 # <a name="develop-a-succession-plan"></a>Vypracování plánu kariérního postupu
@@ -36,7 +36,7 @@ Jak v průběhu času vaše organizace roste a vy zvažujete plánování násle
 6. Klikněte na Načíst profil.
 7. Klikněte na možnost Osoba.
 8. V poli osoba zadejte jméno, nebo ji vyberte z rozevíracího seznamu.  Příklad: Cassie Hicks.
-9. Klepněte na tlačítko OK.
+9. Klikněte na tlačítko OK.
 10. Rozbalte pevnou záložku Certifikáty a prohlédněte si nebo upravte certifikáty, které jsou zahrnuty do mapování dovedností.
 11. Rozbalte pevnou záložku dovedností pro zobrazení nebo úpravu dovedností, které chcete zahrnout.
 12. Označte na seznamu první řádek.  Příklad: Účetnictví

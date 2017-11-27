@@ -3,14 +3,14 @@ title: "Zastaralé funkce"
 description: "Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění."
 author: sericks007
 manager: AnnBe
-ms.date: 07/10/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.search.scope: Operations
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: HT
-ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
-ms.openlocfilehash: 3ebe8f2869b93050d320456ff457c0b5692c5eae
+ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
+ms.openlocfilehash: ee051bbf50a6124fe1700a244b36b5f9c599e714
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 
@@ -29,13 +29,13 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma popisuje funkce, které byly odebrány z aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, nebo jejichž odebrání je plánováno.
+Toto téma popisuje funkce, které byly odebrány z aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, nebo jejichž odebrání je plánováno.
 
 ## <a name="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Funkce, které se již nepoužívají v aplikaci Dynamics 365 for Finance and Operations, Enterprise Edition, (červenec 2017) s platform update 8
 
 ### <a name="warehouse-mobile-devices-portal"></a>Portál skladu pro mobilní zařízení
 
-Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, určená pro místní vlastní nasazení. Tato komponenta již není aplikací Microsoft Dynamics 365 for Finance and Operations, Enterprise edition podporována. Funkce portálu skladu pro mobilní zařízení byla nahrazena nativní aplikací, která vylepšuje uživatelské prostředí. 
+Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, určená pro místní vlastní nasazení. Tato komponenta již není aplikací Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition podporována. Funkce portálu skladu pro mobilní zařízení byla nahrazena nativní aplikací, která vylepšuje uživatelské prostředí. 
 
 |                                  |                                                 |
 |----------------------------------|-------------------------------------------------|
@@ -382,7 +382,7 @@ Federální daňový výkaz ICMS
 
 |                              |                                                                                                                       |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| **Důvod pro zrušení**       | Toto prohlášení se již v některých brazilských zemích nepoužívá.                                                     |
+| **Důvod pro zrušení**       | Toto prohlášení se již v některých brazilských státech nepoužívá.                                                     |
 | **Nahrazeno jinou funkcí?** | Ne. Uživatelé mohou používat nástroj obecného elektronického vykazování pro konfiguraci výkazu, pokud je v určitých situacích požadován. |
 | **Ovlivněné moduly**             | Fiskální knihy                                                                                                          |
 

@@ -3,7 +3,7 @@ title: "Nastavení účetních skupin pro DPH"
 description: "DPH je vypočítáno a zaúčtováno do hlavních účtů, které jsou zadány v části Účetní skupiny."
 author: twheeloc
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 10/26/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 10386719e925e53e26c7e547b29a72873a4d000d
+ms.sourcegitcommit: ef3cad6538d9efbd1c1881f4b7d771382d9b1ba8
+ms.openlocfilehash: e50fc2b6b8f4cd91e9a5593297fff2e9a6ef5525
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/26/2017
 
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Nastavení účetních skupin pro DPH
@@ -36,8 +36,8 @@ DPH je vypočítáno a zaúčtováno do hlavních účtů, které jsou zadány v
     * DPH se vybírají jménem finančního úřadu při prodeji zdanitelného zboží a služeb.  
 6. V poli DPH na vstupu vyberte hlavní účet pro příchozí DPH, které jsou přijatelné od finančního úřadu.
     * Dodavatelé vybírají daně jménem finančního úřadu při nákupu zdanitelného zboží a služeb. Toto pole není k dispozici v případě, že je vybrána možnost Použít daňové předpisy pro DPH na stránce Parametry hlavní knihy. DPH zaplacená dodavatelům je místo toho připsána na stejný účet, jako při nákupu.   
-7. V poli Importní DPH – výdaj vyberte hlavní účet pro zaúčtování odečitatelných importních daní, které nejsou dodavateli nárokovány ani vykazovány finančnímu úřadu jako součást stornovacího poplatku GST/HST pro EU.
-    * Možnosti Použít daň musíte vybrat pro kód DPH ve skupině DPH, která je použitá v transakci.  Toto pole nebude k dispozici v případě, že je vybrána možnost Použít daňové předpisy pro DPH na stránce Parametry hlavní knihy.   
+7. V poli Importní DPH – výdaj vyberte hlavní účet pro zaúčtování odečitatelných importních daní, které nejsou dodavateli nárokovány ani vykazovány finančnímu úřadu jako součást přenesené daňové povinnosti GST/HST pro EU.
+    * Možnosti Použít daň musíte vybrat pro kód DPH ve skupině DPH, která je použitá v transakci.  Toto pole není k dispozici v případě, že je vybrána možnost Použít daňové předpisy pro DPH na stránce Parametry hlavní knihy.   
 8. V poli Splatná importní DPH vyberte hlavní účet pro zaúčtování příchozích importních daní, které jsou splatné finančním úřadům.
     * Možnosti Použít daň musíte vybrat pro kód DPH ve skupině DPH pro zaúčtování hodnoty v části Použít daň. Pokud je vybrána možnost Použít daňové předpisy pro DPH v parametrech hlavní knihy, protiúčet je zaúčtován na výdajový účet transakce.   
 9. V poli Účet vyrovnání vyberte hlavní účet na který bude zaúčtován čistý zůstatek účtů hlavní knihy podle pole Splatná importní DPH a DPH na vstupu.

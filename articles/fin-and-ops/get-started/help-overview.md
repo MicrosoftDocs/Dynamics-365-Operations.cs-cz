@@ -1,16 +1,16 @@
 ---
 title: "Přehled nápovědy"
-description: "V tomto článku je uveden přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations. Také je zde vysvětleno, jak můžete poskytnout vlastní dokumentaci a školení pro vaši organizaci."
+description: "Toto téma poskytuje přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations. Také je zde vysvětleno, jak můžete poskytnout vlastní dokumentaci a školení pro vaši organizaci."
 author: margoc
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
@@ -18,24 +18,24 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
-ms.openlocfilehash: 2df27a23d31ecde99bb31b4f8a19295c331cae09
+ms.sourcegitcommit: d2063cd0ae592357d57fb3c787450c604fb9be58
+ms.openlocfilehash: 549d059e549ba470eb299753fd7b87920e6dd43d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/11/2017
 
 ---
 
-# <a name="help-overview"></a>Přehled nápovědy
+# <a name="help-system-overview"></a>Přehled systému nápovědy
 
 [!include[banner](../includes/banner.md)]
 
-V tomto článku je uveden přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations. Také je zde vysvětleno, jak můžete poskytnout vlastní dokumentaci a školení pro vaši organizaci. 
+Toto téma poskytuje přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations. Také je zde vysvětleno, jak můžete poskytnout vlastní dokumentaci a školení pro vaši organizaci. 
 
 > [!NOTE] 
-> Tyto produkty spolu úzce souvisí: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail a Dynamics 365 for Talent. Stejné funkce se mohou objevovat ve všech třech produktech. U témat, která se vztahují především k aplikaci Retail, proto bude uveden název produktu Dynamics 365 for Retail; u témat souvisejících s aplikací Talent bude uveden název Dynamics 365 for Talent a u témat souvisejících se základním produktem bude uveden název Dynamics 365 for Finance and Operations. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
+> Tyto produkty spolu úzce souvisí: Dynamics 365 for Finance and Operations, Enterprise Edition; Dynamics 365 for Retail a Dynamics 365 for Talent. Stejné funkce se mohou objevovat ve všech třech produktech. U témat, která se vztahují především k aplikaci Retail, proto bude uveden název produktu Dynamics 365 for Retail; u témat souvisejících s aplikací Talent bude uveden název Dynamics 365 for Talent a u témat souvisejících se základním produktem bude uveden název Dynamics 365 for Finance and Operations. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
 
 Systém nápovědy je společný pro všechny následující produkty:
-- Dynamics 365 for Finance and Operations, Enterprise edition
+- Dynamics 365 for Finance and Operations, Enterprise Edition
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
@@ -69,16 +69,17 @@ Dostáváme spousty dotazů, jak vyhledávat náš obsah. Pokud na našem webu z
 
 Obsah lze také vyhledat pomocí libovolného modulu pro vyhledávání. Pro dosažení nejlepších výsledků vám doporučujeme použít vyhledávání na webu, například site:docs.microsoft.com dynamics 365 "hledaný termín".  
 
-![Hledání na webu](./media/site-search-1.png)
-
-![Výsledky hledání na webu](./media/site-search-results-2.png)
-
 ### <a name="the-docsmicrosoftcom-table-of-contents"></a>Obsah docs.microsoft.com
-Všechny produkty mají na stránce dokumentace jednu stránku s obsahem. Uživatelé díky tomu vidí kontext zobrazeného tématu. Je díky tomu také možné najít požadovaná témata pomocí filtrů.
+Aplikace Finance and Operations, Retail a Talent sdílejí jednu tabulku obsahu na stránce s dokumenty, což umožňuje uživatelům zobrazit kontext tématu, na kterém se nacházejí. Je díky tomu také možné najít požadovaná témata pomocí filtrů nad tabulkou obsahu.
 
-### <a name="how-can-i-contribute"></a>Jak mohu přispět? 
+### <a name="follow-a-topic"></a>Sledování tématu
+Chcete-li sledovat téma, klikněte na tlačítko +Sledovat pod polem komentáře. Abyste mohli sledovat téma, musíte se přihlásit. Více informací naleznete v části [Nechte nám komentář](#leave-us-a-comment).  
 
-Nechte nám komentář. 
+### <a name="give-feedback"></a>Poskytnutí zpětné vazby 
+Máme rádi zpětnou vazbu uživatelů. Můžete buď komentovat nebo navrhovat změny našeho obsahu prostřednictvím GitHub.
+
+##### <a name="leave-us-a-comment"></a>Nechte nám komentář 
+Máte-li nějakou zpětnou vazbu nebo otázky, nechte nám komentář v dolní části stránky.  
 
 1 Klikněte na **Komentáře** pro získání komentářů ve spodní části stránky.
 
@@ -96,6 +97,19 @@ Nebo
 Vpravo zadejte e-mailovou adresu a nové heslo k vytvoření nového účtu pro dané místo. 
 
 ![Možnosti přihlášení](./media/signin-options.png)
+
+
+##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Navržení změny nebo přispění do obsahu prostřednictvím GitHub
+Chcete-li navrhnout změnu, musíte mít účet GitHub a podepsat licenční smlouvu přispěvatele.  Po odeslání požadavku na vložení zkontrolujeme navrhované změny. V případě potřeby je projednáme interně a ozveme se vám zpět.  
+
+Pro začátek klikněte na tlačítko **Upravit** (tužka) na tématu nebo přejděte do našeho úložiště na https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public. 
+
+Další informace naleznete v příručce našich přispěvatelů: https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
+
+
+> [!NOTE]
+> V současnosti budeme přijímat pouze příspěvky do našeho anglického úložiště.  
+> Nepřijímáme problémy reportované prostřednictvím GitHub--ujistěte se, že pro návrhy na obsah použijete požadavek na vložení. Zpětná vazba k produktům a funkcím se nejlépe spravuje pomocí portálu Dynamics 365 Ideas Portal: https://ideas.dynamics.com/ideas/. 
 
 
 ## <a name="task-guides"></a>Průvodci záznamem úloh
@@ -196,9 +210,4 @@ V následující tabulce jsou uvedeny naše weby. Naše weby s obsahem jsou uspo
 [Noví nebo aktualizovaní Průvodci záznamem úloh (srpen 2016)](new-updated-task-guides-available-august-2016.md)
 [Noví nebo aktualizovaní Průvodci záznamem úloh (květen 2016)](new-updated-task-guides-available-may-2016.md)
 [Noví Průvodci záznamem úloh (únor 2016)](new-task-guides-available-february-2016.md)
-
-
-
-
-
 

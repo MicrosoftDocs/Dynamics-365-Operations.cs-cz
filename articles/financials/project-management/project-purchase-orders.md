@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 985a57ae9fb116b1c4514b836b35c5da0f8838fd
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 0cf1effee6fd9e08b85d30f90c5e83aa77bc22cc
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 
 Tento článek popisuje různé metody, které slouží k vytváření nákupních objednávek pro určitý projekt. Použitá metodu závisí na účelu nákupní objednávky a kdy jsou zakoupené položky spotřebovány a účtovány v projektu.
 
-V aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition můžete použít několik způsobů pro vytvoření nákupních objednávek pro určitý projekt. Použitá metodu závisí na účelu nákupní objednávky, kdy jsou zakoupené položky spotřebovány, a kdy jsou zakoupené položky účtovány v projektu.
+V aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition můžete použít několik způsobů pro vytvoření nákupních objednávek pro určitý projekt. Použitá metodu závisí na účelu nákupní objednávky, kdy jsou zakoupené položky spotřebovány, a kdy jsou zakoupené položky účtovány v projektu.
 
 ### <a name="methods-for-creating-a-purchase-order"></a>Způsoby vytvoření nákupní objednávky
 

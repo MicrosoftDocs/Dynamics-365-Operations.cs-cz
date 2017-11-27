@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 01bb8999e5d9c0e16f133a621ebfe1d102565f2f
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 2986d218318951b7e46cb5dfafcbd17f2d513755
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -34,9 +34,9 @@ ms.lasthandoff: 09/29/2017
 Toto téma obsahuje informace o generování finančních sestav. 
 
 Chcete-li vygenerovat sestavu, otevřete definici sestavy a klikněte na tlačítko Generovat na panelu nástrojů. Otevře se okno Stav fronty sestav a označí umístění vaší sestavy ve frontě. Ve výchozím nastavení se generovaná sestava otevře ve Web Viewer.
-| ![Poznámka](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Poznámka")**Poznámka**        |
-|------------------------------------------------------------------------------------------------|
-| Můžete generovat sestavy pouze do složek a umístění, k nimž máte oprávnění pro přístup. |
+
+> [!NOTE]
+> Můžete generovat sestavy pouze do složek a umístění, k nimž máte oprávnění pro přístup.
 
 Následující tabulka vysvětluje dostupné možnosti pro generování sestav.
 
@@ -51,9 +51,10 @@ Při generování sestavy se používají možnosti, které jste zadali na kart�
 Mnoho společností má základní sadu sestav, které jsou spouštěny v plánovaných intervalech, aby odpovídaly obchodním procesům. Můžete naplánovat generování sestavy pravidelně, například denně, týdně, měsíčně nebo ročně. Může se jednat o jednu sestavu nebo skupinu sestav zahrnující několik společností. Pro všechny zadané společnosti, které pocházejí například z definice organizačního stromu, je nutné zadat přihlašovací údaje. Pokud přihlašovací údaje nejsou platné, sestava zobrazí pouze informace, pro přístup k nimž máte oprávnění, například pro společnost, ke které jste momentálně přihlášeni. Výstupní informace jsou nejprve přečteny ze skupiny sestav a poté z jednotlivých sestav.
 
 Jak jsou plány sestav vytvářeny a ukládány, jsou zobrazovány v navigačním podokně v části Plány sestav. Vytvořením složek můžete sestavy uspořádat. Pokud se jedna sestava v plánu nespustí, všechny ostatní sestavy se normálně spustí.
-| ![Důležité](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Důležité")**Důležité**                                                                                                           |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Abyste mohli vytvářet, měnit a odstraňovat plány sestav, potřebujete roli návrháře nebo správce. Při spuštění sestavy jsou použity přihlašovací údaje uživatele, který plán vytvořil, k vygenerování sestavy. |
+
+> [!IMPORTANT]
+> Abyste mohli vytvářet, měnit a odstraňovat plány sestav, potřebujete roli návrháře nebo správce. Při spuštění sestavy jsou použity přihlašovací údaje uživatele, který plán vytvořil, k vygenerování sestavy.
+
 
 ### <a name="create-a-report-schedule"></a>Vytvoření plánu sestavy
 
@@ -100,14 +101,15 @@ Pokračujte kliknutím na tlačítko Oprávnění v dialogovém okně Plánován
 Můžete hledat finanční účty a dimenze, které mohou chybět v rámci všech definic řádků, definic stromu výkaznictví a definic sestav ve skupině stavebních bloků. To je užitečné při vytváření nebo aktualizaci více účtů nebo stavebních bloků v krátkém časovém období, když chcete ověřit, že všechny nové informace budou zahrnuty do sestav.
 
 Chybějící účty se určují použitím nejnižší a nejvyšší hodnoty z definice řádku nebo definice stromu výkaznictví a zobrazí seznam účtů, které nejsou v definici řádku nebo definici stromu výkaznictví, ale jsou ve finančních datech. Pokud je chybějící účet větší nebo menší než hodnoty v definici řádku, nebude tento účet zahrnut do seznamu chybějících účtů.
-| ![Tip](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Tip")**Tip**                                             |
-|----------------------------------------------------------------------------------------------------------------------------------|
-| Pro účely ověření doporučujeme tento proces spustit před generováním měsíčních sestav a při vytváření nových stavebních bloků. |
+
+> [!TIP]
+> Pro účely ověření doporučujeme tento proces spustit před generováním měsíčních sestav a při vytváření nových stavebních bloků.
 
 Sestavy, které mají rozsahy hodnot, mají menší pravděpodobnost chybějících účtů. Pokud je to možné, používejte rozsahy ve stavebních blocích, aby byly zahrnuty nově vytvořené účty. Pokud je jakákoli definice sestavy nastavena na hodnotu společnosti @ANY, můžete se přihlásit k určité společnosti a spustit analýzu chybějících účtů pro danou společnost.
-| ![Poznámka](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Poznámka")**Poznámka**                                                                                           |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Pokud byla přidána nová společnost, je nutné přidat novou společnost do stromů výkaznictví ve všech existujících sestavách, jinak společnost nebude zahrnuta do analýzy chybějících účtů. |
+
+> [!NOTE]
+> Pokud byla přidána nová společnost, je nutné přidat novou společnost do stromů výkaznictví ve všech existujících sestavách, jinak společnost nebude zahrnuta do analýzy chybějících účtů.
+
 
 ### <a name="run-missing-account-analysis"></a>Spuštění analýzy chybějícího účtu
 
@@ -117,11 +119,11 @@ Sestavy, které mají rozsahy hodnot, mají menší pravděpodobnost chybějíc�
 4.  V poli Seskupit podle vyberte možnost pro řazení výsledků. Výsledky můžete řadit podle příslušného stavebního bloku nebo podle sad hodnot a dimenzí.
 5.  Projděte si zobrazené výsledky. Když vyberete položku v horním podokně, v dolním podokně se zobrazí další informace o výjimce. To zahrnuje související dimenze, hodnoty a sestavy.
 6.  Chcete-li otevřít ovlivněnou položku, klikněte na přidruženou ikonu zobrazenou v podokně seznamu nebo pravým tlačítkem myši klikněte na položku a vyberte možnost Otevřít. Lze vybrat více položek – stiskněte a podržte klávesu Ctrl a vyberte položky v dolním podokně.
-7.  Pokud je vrácena jakákoli hodnota, stavební blok či sestava, které nemají být zahrnuty do analýzy, klikněte pravým tlačítkem na položku a vyberte možnost Vyloučit nebo zaškrtněte políčko Vyloučit vedle položky k odstranění položky ze seznamu. Vyloučené položky nebudou zahrnuty při aktualizaci seznamu. Lze vybrat více položek – stiskněte a podržte klávesu Ctrl a vyberte položky v dolním podokně. Chcete-li zobrazit všechny položky, včetně všech výsledků, které jste označili k vyloučení z analýzy, zaškrtněte políčko Zobrazit vyloučené stavební bloky a hodnoty a poté klikněte na tlačítko Aktualizovat.
-8.  Kliknutím na tlačítko Aktualizovat výjimky aktualizujete. Kliknutím na tlačítko Ano proveďte úplnou aktualizaci všech výsledků nebo kliknutím na tlačítko Ne proveďte částečnou aktualizaci adresovaných položek.
-    | ![Poznámka](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Poznámka")**Poznámka**                    |
-    |------------------------------------------------------------------------------------------------------------|
-    | Formulář je automaticky aktualizován při otevření, pokud nebyl otevřen v posledních 15 minutách. |
+7.  Pokud je vrácena jakákoli hodnota, stavební blok či sestava, které nemají být zahrnuty do analýzy, klikněte pravým tlačítkem na položku a vyberte možnost Vyloučit nebo zaškrtněte políčko Vyloučit vedle položky k odstranění položky ze seznamu. Vyloučené položky nebudou zahrnuty při aktualizaci seznamu. Pokud chcete vybrat více položek, podržte při jejich výběru v dolním podokně klávesu CTRL. Chcete-li zobrazit všechny položky, včetně všech výsledků, které jste dříve z analýzy vyloučili, zaškrtněte políčko Zobrazit vyloučené stavební bloky a hodnoty a potom klikněte na tlačítko Aktualizovat.
+8.  Kliknutím na tlačítko Aktualizovat výjimky aktualizujete. Kliknutím na tlačítko Ano provedete úplnou aktualizaci všech výsledků. Kliknutím na tlačítko Ne provedete částečnou aktualizaci příslušných položek.
+
+    > [!NOTE]
+    > Formulář je automaticky aktualizován při otevření, pokud nebyl otevřen v posledních 15 minutách.
 
 9.  Po vyřešení potíží kliknutím na tlačítko OK dialogové okno zavřete.
 

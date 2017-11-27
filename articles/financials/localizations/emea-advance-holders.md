@@ -1,6 +1,6 @@
 ---
 title: "Držitelé zálohy"
-description: "Poznejte funkce držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+description: "Poznejte funkce držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: LizaGolub
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,10 +18,10 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: a6531cc059428f6601eae907584d0ef6b0ffb70d
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 36b6d74d29ed4606c1b501b68e0f2253e66c8eb6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Poznejte funkce držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+Poznejte funkce držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
 
 *Držitel zálohy* je zaměstnanec společnosti, který je zodpovědný za částku výdajů, kterou poskytuje organizace. Pouze pracovník společnosti může být držitelem zálohy. Pokud dojde k pořízení, držitel zálohy nahlásí společnosti uskutečněné výdaje. Společnost refunduje zaměstnanci částku výdajů. Společnost kontroluje zůstatek pro každého držitele zálohy. Uživatelé v právnických osobách v Estonsku, Lotyšsku, Litvě, Polsku, České republice, Maďarsku a Rusku mohou reflektovat určité transakce doprovázející operace se zaměstnanci společnosti, kteří jsou odpovědní za částku výdajů poskytovanou organizací.
 
@@ -105,7 +105,7 @@ Chcete-li zobrazit a vytisknout sestavu na základě transakcí držitele záloh
 
 ## <a name="advance-holder-transactions"></a>Transakce držitelů záloh
 
-Poznejte, jak pracovat s transakcemi držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+Poznejte, jak pracovat s transakcemi držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
 
 Transakce pro tyto pracovníky, kteří jsou držitelé zálohy, mohou být zaúčtovány pomocí účtů držitele zálohy. ID pracovníka, které je určeno pro každého držitele zálohy, lze použít ke sledování všech transakcí držitele zálohy. Toto číslo je načteno jako číslo účtu pro transakce držitele zálohy na stránkách **Hlavní deníky** a **Transakce držitele zálohy**.
 

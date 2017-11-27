@@ -3,7 +3,7 @@ title: "Nastavení vytváření kontejnerů"
 description: "Tento postup popisuje postup automatizace vytváření kontejnerů vytížení v modulu Řízení skladu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/07/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: aeb7d956560c513c08d5e20dcf20989b49137a52
+ms.sourcegitcommit: 76334f7ee4efe33df4a86aaa11a59748387cec89
+ms.openlocfilehash: c5faf926071dec5d2ddc1c9e921a98ecd0754917
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="set-up-containerization"></a>Nastavení vytváření kontejnerů
@@ -83,7 +83,7 @@ Tento postup popisuje postup automatizace vytváření kontejnerů vytížení v
 ## <a name="set-up-a-container-group"></a>Nastavení skupin kontejneru
 1. Přejděte na Řízení skladu > Nastavení > Kontejnery > Skupiny kontejnerů.
 2. Klikněte na položku Nová.
-    * Můžete nastavit skupiny kontejnerů logických skupin. Pro každou skupinu můžete určit pořadí, v němž mají být zabaleny kontejnery a procento zaplnění kontejnerů. Dimenze velikosti se používá k určení, zda bude pasovat do kontejneru. Použije se kontejner, který nejlépe odpovídá dimenzím velikosti. Pokud máte více typů kontejnerů ve skupině, doporučujeme, abyste uspořádali pořadí podle velikosti tak, aby největší kontejner byl první (číslo 1 v číselné řadě) a nejmenší kontejner byl poslední.    
+    * Můžete nastavit skupiny kontejnerů logických skupin. Pro každou skupinu můžete určit pořadí, v němž dojde k zabalení kontejnerů, a vyžadované procento naplnění kontejnerů. Používá se dimenze velikosti pro položky k určení toho, zda budou odpovídat kontejneru. Použije se kontejner, který nejlépe odpovídá dimenzím velikosti. Pokud máte více typů kontejnerů ve skupině, doporučujeme, abyste uspořádali pořadí podle velikosti tak, aby největší kontejner byl první (číslo 1 v číselné řadě) a nejmenší kontejner byl poslední.    
 3. Zadejte hodnotu do pole ID skupiny kontejnerů.
 4. Zadejte nějakou hodnotu do pole Popis.
 5. Klepněte na možnost Nový.

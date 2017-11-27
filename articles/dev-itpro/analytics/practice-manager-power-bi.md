@@ -17,10 +17,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 99e5b5087cc72c01ff3e92d0b2b3a6279385eb19
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 3462ef1bbde9a98ac6a7bc9a5c54e58ff98559c8
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -39,7 +39,7 @@ Obsah Power BI pro **Manažera školení** obsahuje pět stránek sestav: jednu 
 Všechny částky v obsahu jsou zobrazeny v měně systému. Systémovou měnu můžete nastavit na stránce **Parametry systému**.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Pokud používáte aplikaci Microsoft Dynamics 365 Finance and Operations, Enterprise Edition (červenec 2017), obsah Power BI **Manažer školení** se zobrazuje v pracovním prostoru **Řízení projektu**.
+Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017), obsah Power BI **Manažer školení** se zobrazuje v pracovním prostoru **Řízení projektu**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
 

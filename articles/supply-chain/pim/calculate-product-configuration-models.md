@@ -1,9 +1,9 @@
 ---
 title: "Výpočty pro modely konfigurace produktu - často kladené dotazy"
-description: "Tento článek popisuje výpočty pro modely konfigurace produktu a vysvětluje, jak použít výpočty spolu s omezeními."
+description: "Toto téma popisuje výpočty pro modely konfigurace produktu a vysvětluje, jak použít výpočty spolu s omezeními."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fea4e139d32c780769bafe08d603b828d366550c
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 0763e5a02e7a14b6ef369103aa25e435559abe19
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje výpočty pro modely konfigurace produktu a vysvětluje, jak použít výpočty spolu s omezeními.
+Toto téma popisuje výpočty pro modely konfigurace produktu a vysvětluje, jak použít výpočty spolu s omezeními.
 
 Výpočty lze použít pro aritmetické nebo logické operace. Doplňují omezení výrazu v modelech konfigurace produktu. Je možné určit výpočty na stránce **Podrobnosti modelu produktu s konfigurací založenou na omezeních** a pak vytvořit výrazy pro výpočty v editoru výrazu. Další informace viz Vytvořit výpočty.
 
@@ -75,7 +75,7 @@ Výpočet proběhne při zadání hodnoty všech vstupních atributů.
 ## <a name="can-i-overwrite-the-value-that-is-calculated-for-the-target-attribute"></a>Lze přepsat hodnotu, která byla vypočtena pro cílový atribut?
 Můžete přepsat hodnotu, která byla vypočtena pro cílový atribut, ledaže by byl cílový atribut nastaven jako skrytý nebo jen pro čtení.
 
-## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Jak nastavím cílový atribut jako skrytý nebo jen pro čtení?
+## <a name="how-do-i-set-a-target-attribute-as-hidden-or-read-only"></a>Jak nastavím cílový atribut jako skrytý nebo jen pro čtení?
 Pokud chcete nastavit atribut jako skrytý nebo jen pro čtení, postupujte takto.
 
 1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Modely konfigurace produktu**.

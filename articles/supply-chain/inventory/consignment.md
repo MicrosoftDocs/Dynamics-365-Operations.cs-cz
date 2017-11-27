@@ -1,5 +1,5 @@
 ---
-title: "Zásilka"
+title: "Nastavení zásilky"
 description: "Toto téma vysvětluje, jak používat procesy příchozí skladové zásilky."
 author: perlynne
 manager: AnnBe
@@ -8,10 +8,10 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchVendorPortalConfirmedOrders
+ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchVendorPortalConfirmedOrders, DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventOwner, InventTableInventoryDimensionGroups, VendTable
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 220834
 ms.assetid: 3c9d6de4-45d4-459a-aef7-0d9ad2c22b3a
 ms.search.region: Global
@@ -19,21 +19,21 @@ ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b5f2f6d24537a6e28a820b298a88525553e1cd18
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: df5862a75646976d315fa77531d7c4fe9b1ec499
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="consignment"></a>Zásilka
+# <a name="set-up-consignment"></a>Nastavení zásilky
 
 [!include[banner](../includes/banner.md)]
 
 
 Toto téma vysvětluje, jak používat procesy příchozí skladové zásilky.
 
-Zásoby dodávky jsou zásoby, které vlastní dodavatel, ale jsou uloženy ve vaší společnosti. Až budete připraveni spotřebovat nebo použít zásoby, převezmete vlastnictví zásob. Toto téma obsahuje informace o tom, jak fyzicky přijmout zásoby dodavatele na skladě bez nutnosti vytvoření transakcí v hlavní knize, jak spustit výrobní proces, kde lze fyzicky rezervovat zásoby vlastněné dodavatele, a jak změnit vlastnictví suroviny, aby bylo možné zpracovat spotřebu jakou součást zpracování výrobní zakázky. Je zda také pár informací o tom, jak může dodavatel sledovat spotřebu skladových zásob pomocí rozhraní dodavatelské spolupráce. Zobrazit informace o způsobech, jak povolit a konfigurovat procesy příchozí zásilky, můžete na [Nastavení zásilky](set-up-consignment.md).
+Zásoby dodávky jsou zásoby, které vlastní dodavatel, ale jsou uloženy ve vaší společnosti. Až budete připraveni spotřebovat nebo použít zásoby, převezmete vlastnictví zásob. Toto téma obsahuje informace o tom, jak fyzicky přijmout zásoby dodavatele na skladě bez nutnosti vytvoření transakcí v hlavní knize, jak spustit výrobní proces, kde lze fyzicky rezervovat zásoby vlastněné dodavatele, a jak změnit vlastnictví suroviny, aby bylo možné zpracovat spotřebu jakou součást zpracování výrobní zakázky. Je zda také pár informací o tom, jak může dodavatel sledovat spotřebu skladových zásob pomocí rozhraní dodavatelské spolupráce. 
 
 ## <a name="overview-of-the-consignment-process"></a>Přehled procesu zásilky
 V tomto vzorovém scénáři společnost USMF má smlouvu o zásilce s dodavatelem US-104 na suroviny M9211CI.
@@ -43,7 +43,6 @@ V tomto vzorovém scénáři společnost USMF má smlouvu o zásilce s dodavatel
     -   Pracovník v USMF odešle dodavateli informaci o objednávce.
     -   Dodavatel může také monitorovat očekávané zásoby na skladě u zákazníka pomocí rozhraní dodavatelské spolupráce.
     -   Pracovník v USMF filtruje data na stránce **Zásoby na skladě** a zobrazuje pouze záznamy dodavatele US-104, kde je stav příjmu **Objednáno**. Tyto informace pak odešle dodavateli.
-
 3.  Zásoby jsou přesunuty od US-104 do USMF.
 4.  Když materiál dorazí do USMF, objednávka doplňovací zásilky se při přijetí produktu aktualizuje. Zaznamenává se pouze fyzické množství zásob vlastněné dodavatelem. Nevytváří se žádné transakce do hlavní knihy, protože zásoby jsou doposud ve vlastnictví dodavatele.
 5.  Dodavatel sleduje aktualizace fyzických zásob na skladě pomocí stránky **Zásoby dodávky na skladě**.
@@ -61,7 +60,9 @@ USMF provede dodatečné periodické procesy:
 Dodavatel US-104 můžete sledovat aktualizace pomocí stránky **Zásoby zásilky na skladě**.
 
 ## <a name="consignment-replenishment-orders"></a>Zakázky na doplnění stavu zásob dodávky
-Objednávka doplňovací zásilky je dokument, který se používá pro zažádání a sledovat skladového množství produktů, které má dodavatel v úmyslu dodat do určitého data vytvořením transakcí objednaných zásob. Obvykle se to bude opírat o prognózy a skutečnou poptávku specifických produktů. Zásoby, které má získat oproti objednávce doplňující zásilky, zůstávají ve vlastnictví dodavatele. Zaznamenává se pouze změna vlastnictví produktů souvisejících s fyzickým příjmem, a proto nedochází k žádné aktualizaci transakcí hlavní knihy. Dimenze **Vlastník** se používá k oddělení informací o tom, které zásoby vlastní dodavatel a které vlastní přijímající právnická osoba. Řádky objednávky doplnění stavu zásob dodávky mají stav **Otevřená objednávka**, dokud nedojde k přijetí nebo zrušení úplného množství řádků. Až dojde k přijetí nebo zrušení úplného množství, stav se změní na **Dokončeno**. Fyzické zásoby na skladě související s objednávkou doplňovací dodávky lze zaznamenat pomocí registračního procesu a také procesu aktualizace příjemky produktu. Registraci lze provést jako součást procesu doručení položky, nebo lze ručně aktualizovat řádky objednávky. Při procesu aktualizace příjemky produktu se provádí záznam do deníku příjemek produktů, který pro dodavatele slouží k potvrzení o přijetí zboží.
+Objednávka doplňovací zásilky je dokument, který se používá pro zažádání a sledovat skladového množství produktů, které má dodavatel v úmyslu dodat do určitého data vytvořením transakcí objednaných zásob. Obvykle se to bude opírat o prognózy a skutečnou poptávku specifických produktů. Zásoby, které má získat oproti objednávce doplňující zásilky, zůstávají ve vlastnictví dodavatele. Zaznamenává se pouze změna vlastnictví produktů souvisejících s fyzickým příjmem, a proto nedochází k žádné aktualizaci transakcí hlavní knihy. 
+
+Dimenze **Vlastník** se používá k oddělení informací o tom, které zásoby vlastní dodavatel a které vlastní přijímající právnická osoba. Řádky objednávky doplnění stavu zásob dodávky mají stav **Otevřená objednávka**, dokud nedojde k přijetí nebo zrušení úplného množství řádků. Až dojde k přijetí nebo zrušení úplného množství, stav se změní na **Dokončeno**. Fyzické zásoby na skladě související s objednávkou doplňovací dodávky lze zaznamenat pomocí registračního procesu a také procesu aktualizace příjemky produktu. Registraci lze provést jako součást procesu doručení položky, nebo lze ručně aktualizovat řádky objednávky. Při procesu aktualizace příjemky produktu se provádí záznam do deníku příjemek produktů, který pro dodavatele slouží k potvrzení o přijetí zboží.
 
 [![Zakázka na doplnění stavu zásob dodávky](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
@@ -81,4 +82,27 @@ Rozhraní dodavatelské spolupráce má tři stránky související s procesem p
 -   **Nákupní objednávky** **spotřebovávající zásoby dodávek** - zobrazí podrobné informace o nákupní objednávce související se změnou vlastnictví z procesu zásilky.
 -   **Produkty přijaty ze skladové zásilky** – zobrazuje informace o položkách a množství, jejichž příjemky produktu se aktualizují při změně procesu vlastnictví.
 -   **Zásoby dodávky na skladě** - zobrazí informace o dodávce položky, které mají dle očekávání dorazit a položky, které jsou již fyzicky k dispozici u zákazníka.
+
+## <a name="inventory-owners"></a>Vlastníci zásob
+Aby bylo možné zaznamenat fyzickou zásilku zásob, je třeba definovat dodavatele vlastníka. To se provádí na stránce **Vlastník zásob**. Při výběru **Účet dodavatele** se generují výchozí hodnoty pro pole **Název** a **Vlastník**. Hodnota v poli **Vlastník** se zobrazí dodavateli, takže ji můžete změnit v případě, že název účtu dodavatele se špatně rozpoznává externím uživatelům. Je možné upravit pole **Vlastník**, ale pouze do okamžiku, když ukládáte záznam **Vlastník zásob**. Pole **Název** se vyplňuje s názvem strany, k níž je přidružen účet dodavatele, a nemůže být změněno.
+
+[![vlastníci-zásob](./media/inventory-owners.png)](./media/inventory-owners.png)
+
+## <a name="tracking-dimension-group"></a>Skupina sledovací dimenze
+Položky, které chcete použít v procesech dodávky, musí být přidruženy k **Skupina sledovací dimenze** kde dimenze **Vlastník** je nastavena na **Aktivní**. Dimenze vlastníka má vždy vybrané možnosti **Fyzické zásoby** a **Finanční zásoby**. Nikdy není vybrána možnost **Plán disponibility podle dimenzí**.
+
+[![skupina-sledovací-dimenze](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
+
+## <a name="inventory-ownership-change-journal"></a>Deník změn vlastnictví zásob
+Deník **Změny vlastnictví zásob**se používá k zaznamenání k přesunu vlastnictví dodávek zásob od dodavatele na stávající právnickou osobu, která ho využívá. Stejně jako jakýkoliv deník zásob musí být označen názvem deníku zásob. Tyto názvy jsou vytvářeny na stránce **Názvy deníků zásob**, kde **Typ deníku** musí být nastaven na **Změny vlastnictví**.
+
+[![Deník-změn-vlastnictví-zásob](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+
+## <a name="vendor-collaboration-in-consignment-processes"></a>Dodavatelská spolupráce v procesech zásilky
+Pokud vaši dodavatelé využívají rozhraní dodavatelské spolupráce, mohou ho využívat ke sledování spotřeby zásob vaší společnosti. Další informace o nastavení dodavatelů pro použití dodavatelské spolupráce naleznete v tématu [Konfigurace zabezpečení pro uživatele portálu Spolupráce dodavatele](../procurement/configure-security-vendor-portal-users.md).
+
+
+
+
+
 

@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 9c09a7bd314bb9005eb0b6c69d7cccad1c30cfdb
-ms.openlocfilehash: 7b395cab2184f8f9f3f50a7a595c6ed782645323
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 1b8b17b719713097d77a117cca53eff6886ff1c7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -63,7 +63,7 @@ Přejděte na **Řízení zásob** \> **Nastavení** \> **Parametry řízení z�
 
 [![Možnost Ukončit výstupní skladovou objednávku](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
-V některých případech nelze některé položky na skladě vydat jako součást procesu výdejek. Může dojít například k takové situaci, že pracovník skladu sníží množství na řádcích výdeje a zpracuje výdejku. Pokud je možnost **Ukončit výstupní skladovou objednávku** nastavena na **Ano**, zbývající nevyskladněné množství je nahlášeno zpět na úroveň objednávky. Pokud je možnost nastavena na **ne**, zbývající nevyskladněné množství je zachováno jako otevřené množství výstupní objednávky. V takovém případě množství zůstanou uvolněná do skladu a je nutné je přidat na novou výdejku jako součást funkce **Otevřít výstupní objednávky**.
+Když pracovníci ve skladu snižují množství výdejky, budou z expedice odebrána odpovídající množství oskladové objednávky. Při aktualizaci výdejky v určitý okamžik se zbývající množství vykáže zpět do objednávky, pokud je možnost **Ukončit výstupní skladovou objednávku** nastavena na **Ano**. Pokud je možnost **Ukončit výstupní skladovou objednávku** nastavena na **Ne**, zbývající množství se zachová jako otevřené množství výstupní objednávky a je nutné ho přidat do nové výdejky jako součást funkce **Otevřené výstupní objednávky**. 
 
 [![Příkaz Otevřít výstupní objednávky v nabídce funkcí](./media/open-output-order.png)](./media/open-output-order.png)
 

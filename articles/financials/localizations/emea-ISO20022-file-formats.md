@@ -1,6 +1,6 @@
 ---
 title: "Import souborů ISO20022"
-description: "Toto téma popisuje, jak importovat soubory plateb formátů ISO 20022 camt.054 a pain.002 do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+description: "Toto téma popisuje, jak importovat soubory plateb formátů ISO 20022 camt.054 a pain.002 do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: neserovleo
 manager: AnnBe
 ms.date: 07/27/2017
@@ -16,10 +16,10 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: fcab30f03aebf7dbe76d5b3b64260f726f291fb8
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 599440449f1e8c8dcc3762ce9f6da7a37beb358f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 

@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7f8fe754a27a825ace862d5eac992c42ef973f10
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 818572a8d1f790aaa7c6e4befc1d2222a1c35c50
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -132,7 +132,7 @@ Vaše právnická osoba, právnická osoba A prodává určité produkty jiné p
 Všechny tyto operace vedou k tomu, že vnitropodnikové transakce jsou zaúčtovávány na debetní a kreditní účty. Kromě toho mohou tyto transakce zahrnovat částky přirážek nebo srážek, zejména pokud výše vnitropodnikových prodejů neodpovídá nákladům na prodané zboží.
 
 ## <a name="set-up-elimination-rules"></a>Nastavení pravidel eliminace
-Při nastavování pravidel eliminace v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition doporučujeme, abyste vytvořili finanční dimenzi konkrétně pro účely eliminace. Většina zákazníků jí nazývá obchodní partner nebo podobně. Pokud se rozhodnete nepoužít finanční dimenzi, pak je nutné mít hlavní účty, které jsou specifické pro pouze mezipodnikové transakce. 
+Při nastavování pravidel eliminace v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition doporučujeme, abyste vytvořili finanční dimenzi konkrétně pro účely eliminace. Většina zákazníků jí nazývá obchodní partner nebo podobně. Pokud se rozhodnete nepoužít finanční dimenzi, pak je nutné mít hlavní účty, které jsou specifické pro pouze mezipodnikové transakce. 
 
 Nastavení pro eliminace naleznete v části Nastavení modulu Konsolidace. Jakmile zadáte popis pravidla, je třeba vybrat společnost, do které bude deník eliminace účtovat. Mělo by se jednat o společnost, která má vybranou volbu **Použít pro proces finanční eliminace** v nastavení právnické osoby. 
 

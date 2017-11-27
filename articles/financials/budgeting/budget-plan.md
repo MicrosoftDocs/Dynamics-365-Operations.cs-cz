@@ -1,6 +1,6 @@
 ---
 title: "Plánování rozpočtu"
-description: "Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition v oblasti Plánování rozpočtu. Tento seminář ukazuje příklad rychlé konfigurace modulu plánování rozpočtu a znázorňuje, jak lze provést plánování rozpočtu pomocí této konfigurace.  Tento seminář se zaměří na následujících obchodní procesy nebo úkoly -    - Vytvoření organizační hierarchie pro plánování rozpočtu a konfiguraci zabezpečení pro uživatele   - Definování scénářů plánu rozpočtu, sloupců plánu rozpočtu, rozvržení a šablon aplikace Excel   - Vytvoření a aktivace procesu plánování rozpočtu   - Vytvoření dokumentu plánu rozpočtu za použití skutečných hodnot z hlavní knihy   - Použití přidělení k úpravě dat dokumentu plánu rozpočtu   - Úprava dat dokumentu plánu rozpočtu v aplikaci Excel"
+description: "Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition v oblasti Plánování rozpočtu. Tento seminář ukazuje příklad rychlé konfigurace modulu plánování rozpočtu a znázorňuje, jak lze provést plánování rozpočtu pomocí této konfigurace.  Tento seminář se zaměří na následujících obchodní procesy nebo úkoly -    - Vytvoření organizační hierarchie pro plánování rozpočtu a konfiguraci zabezpečení pro uživatele   - Definování scénářů plánu rozpočtu, sloupců plánu rozpočtu, rozvržení a šablon aplikace Excel   - Vytvoření a aktivace procesu plánování rozpočtu   - Vytvoření dokumentu plánu rozpočtu za použití skutečných hodnot z hlavní knihy   - Použití přidělení k úpravě dat dokumentu plánu rozpočtu   - Úprava dat dokumentu plánu rozpočtu v aplikaci Excel"
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,10 +18,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 608ec87233acb05b0d46e367bcb7cd14985d7813
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c6440591f847cbbb6be352270e3629a49d71598e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition v oblasti Plánování rozpočtu. Tento seminář ukazuje příklad rychlé konfigurace modulu plánování rozpočtu a znázorňuje, jak lze provést plánování rozpočtu pomocí této konfigurace.  Tento seminář se zaměří na následujících obchodní procesy nebo úkoly -    - Vytvoření organizační hierarchie pro plánování rozpočtu a konfiguraci zabezpečení pro uživatele   - Definování scénářů plánu rozpočtu, sloupců plánu rozpočtu, rozvržení a šablon aplikace Excel   - Vytvoření a aktivace procesu plánování rozpočtu   - Vytvoření dokumentu plánu rozpočtu za použití skutečných hodnot z hlavní knihy   - Použití přidělení k úpravě dat dokumentu plánu rozpočtu   - Úprava dat dokumentu plánu rozpočtu v aplikaci Excel 
+Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition v oblasti Plánování rozpočtu. Tento seminář ukazuje příklad rychlé konfigurace modulu plánování rozpočtu a znázorňuje, jak lze provést plánování rozpočtu pomocí této konfigurace.  Tento seminář se zaměří na následujících obchodní procesy nebo úkoly -    - Vytvoření organizační hierarchie pro plánování rozpočtu a konfiguraci zabezpečení pro uživatele   - Definování scénářů plánu rozpočtu, sloupců plánu rozpočtu, rozvržení a šablon aplikace Excel   - Vytvoření a aktivace procesu plánování rozpočtu   - Vytvoření dokumentu plánu rozpočtu za použití skutečných hodnot z hlavní knihy   - Použití přidělení k úpravě dat dokumentu plánu rozpočtu   - Úprava dat dokumentu plánu rozpočtu v aplikaci Excel 
 
 <a name="prerequisites"></a>Požadavky 
 ------------------

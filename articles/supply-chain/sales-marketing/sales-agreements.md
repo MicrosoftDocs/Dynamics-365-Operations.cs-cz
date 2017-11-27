@@ -1,9 +1,9 @@
 ---
 title: "Prodejní smlouvy"
-description: "V tomto článku jsou informace o prodejních smlouvách. Prodejní smlouva je smlouva, která zaváže odběratele k nákupu produktů v určitém množství nebo stanovené částce za určitý čas výměnou za zvláštní ceny nebo slevy."
+description: "V tomto tématu jsou informace o prodejních smlouvách. Prodejní smlouva je smlouva, která zaváže odběratele k nákupu produktů v určitém množství nebo stanovené částce za určitý čas výměnou za zvláštní ceny nebo slevy."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 9554
 ms.assetid: c5d55c8d-99f2-44f9-a897-5b0dee85fc81
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 15e3f872e4ded027734ee73081ba7af68be5107d
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 21e9c53f39b0f4def0052bf7f04c77279bfc610b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-V tomto článku jsou informace o prodejních smlouvách. Prodejní smlouva je smlouva, která zaváže odběratele k nákupu produktů v určitém množství nebo stanovené částce za určitý čas výměnou za zvláštní ceny nebo slevy.
+V tomto tématu jsou informace o prodejních smlouvách. Prodejní smlouva je smlouva, která zaváže odběratele k nákupu produktů v určitém množství nebo stanovené částce za určitý čas výměnou za zvláštní ceny nebo slevy.
 
 Prodejní smlouva je smlouva, která umožní odběrateli zakoupit produkty v určitém množství nebo za specifickou částku za určitý čas, výměnou za zvláštní ceny, speciální slevy a další speciální podmínky, například platby a dodací podmínky. Ceny a slevy prodejní smlouvy přepíší všechny ceny a slevy, uvedené ve všech obchodních smlouvách, které existují.  
 
@@ -88,7 +88,7 @@ Pokud není prodejní smlouva potvrzena, je možné ji stále používat k vytvo
 Můžete zobrazit náhled všech revizí potvrzení nebo je vytisknout. Poté můžete sdílet revize s odběratelem a získat schválení.
 
 ## <a name="applying-sales-agreements-during-the-ordering-process"></a>Použití prodejních smluv v procesu objednávky
-Pokud nevydáváte prodejní objednávky přímo pro prodejní smlouvy, stále během procesu zadávání objednávek můžete propojovat prodejní smlouvy k objednávce. Při vytváření nové prodejní objednávky a výběru prodejní smlouvy jsou dohody, jako jsou například platební podmínky, dodací podmínky a adresa dodání, použity v záhlaví objednávky, a vytvoří se propojení mezi dohodou a objednávkou. Poté, když na řádcích objednávky můžete vybrat produkty a kategorie, které jsou zadané v prodejní smlouvě, se ceny a slevy zkopírují z dané smlouvy. Stejná prodejní objednávka může zahrnovat řádky, které nesouvisí s prodejní smlouvou, i řádky, které mají závazek plnění prodejní smlouvy.
+Pokud nevydáváte prodejní objednávky přímo pro prodejní smlouvu, stále během procesu zadávání objednávek můžete propojovat prodejní smlouvy k objednávce. Při vytváření nové prodejní objednávky a výběru prodejní smlouvy jsou dohody, jako jsou například platební podmínky, dodací podmínky a adresa dodání, použity v záhlaví objednávky, a vytvoří se propojení mezi dohodou a objednávkou. Poté, když na řádcích objednávky můžete vybrat produkty a kategorie, které jsou zadané v prodejní smlouvě, se ceny a slevy zkopírují z dané smlouvy. Stejná prodejní objednávka může zahrnovat řádky, které nesouvisí s prodejní smlouvou, i řádky, které mají závazek plnění prodejní smlouvy.
 
 ## <a name="modifying-sales-orders-that-are-linked-to-sales-agreements"></a>Úprava prodejních objednávek, které jsou propojeny s prodejní smlouvou
 Pokud jste vytvořili (vydali) prodejní objednávku proti prodejní smlouvě, některá pole na řádcích prodejní objednávky bude možné změnit pouze v případě, že odeberete odkaz na přiřazené řádky prodejní smlouvy. V následující tabulce jsou uvedeny některá z těchto polí.
