@@ -54,57 +54,54 @@
 #### [X++ třidy atributů](dev-ref/xpp-attribute-classes.md)
 #### [Porovnání X++ a C\#](dev-ref/xpp-cs-comparison.md)
 #### [Syntaxe X++](dev-ref/xpp-syntax.md)
-## Funkce za kompilace
+## [API, třída a odkazy na tabulku](dev-ref/api-reference.md)
 ### [Funkce X++ za kompilace](dev-ref/xpp-compile-time-functions.md)
-## Funkce za běhu
-### [Funkce X++ za běhu obchodu](dev-ref/xpp-business-run-time-functions.md)
-### [Funkce X++ za běhu kontejneru](dev-ref/xpp-container-run-time-functions.md)
-### [Funkce X++ za běhu konverze](dev-ref/xpp-conversion-run-time-functions.md)
-### [Funkce X++ za běhu data](dev-ref/xpp-date-run-time-functions.md)
-### [Funkce X++ za běhu výpočtu](dev-ref/xpp-math-run-time-functions.md)
-### [Funkce X++ za běhu reflexe](dev-ref/xpp-reflection-run-time-functions.md)
 ### [Funkce X++ za běhu](dev-ref/xpp-run-time-functions.md)
-### [Funkce X++ za běhu relace](dev-ref/xpp-session-run-time-functions.md)
-### [Funkce X++ za běhu řetězce](dev-ref/xpp-string-run-time-functions.md)
-## Systémové tabulky
+#### [Funkce X++ za běhu obchodu](dev-ref/xpp-business-run-time-functions.md)
+#### [Funkce X++ za běhu kontejneru](dev-ref/xpp-container-run-time-functions.md)
+#### [Funkce X++ za běhu konverze](dev-ref/xpp-conversion-run-time-functions.md)
+#### [Funkce X++ za běhu data](dev-ref/xpp-date-run-time-functions.md)
+#### [Funkce X++ za běhu výpočtu](dev-ref/xpp-math-run-time-functions.md)
+#### [Funkce X++ za běhu reflexe](dev-ref/xpp-reflection-run-time-functions.md)
+#### [Funkce X++ za běhu relace](dev-ref/xpp-session-run-time-functions.md)
+#### [Funkce X++ za běhu řetězce](dev-ref/xpp-string-run-time-functions.md)
 ### [Systémové tabulky](dev-ref/system-tables.md)
-## Systémové třídy
-### [API, třída a odkazy na tabulku](dev-ref/api-reference.md)
-### [Třídy A](dev-ref/a-classes.md)
-### [Třídy B](dev-ref/b-classes.md)
-### [Třídy C](dev-ref/c-classes.md)
-### [Třídy D](dev-ref/d-classes.md)
-### [Třídy E](dev-ref/e-classes.md)
-### [F třídy: FieldBinding až FormBuildAnimateControl](dev-ref/fieldbinding-classes.md)
-### [F třídy: FormBuildButtonControl až FormBuildFastTabSummarySeparator](dev-ref/formbuildbuttoncontrol-classes.md)
-### [F třídy: FormBuildFilterPaneControl až FormBuildRealControl](dev-ref/formbuildfilterpanecontrol-classes.md)
-### [F třídy: FormBuildReferenceControl až FormButtonSeparatorControl](dev-ref/formbuildreferencecontrol-classes.md)
-### [F třídy: FormChangeTracker až FormControlEventArgs](dev-ref/formchangetracker-classes.md)
-### [F třídy: FormDataObject až FormFastTabHeaderControl](dev-ref/formdataobject-classes.md)
-### [F třídy: FormFastTabSummarySeparator až FormGridControl](dev-ref/formfasttabsummaryseparator-classes.md)
-### [F třídy: FormGroupControl až FormIntControl](dev-ref/formgroupcontrol-classes.md)
-### [F třídy: FormListBoxControl až FormNotifyEventArgs](dev-ref/formlistboxcontrol-classes.md)
-### [F třídy: FormObject až FormRealControl](dev-ref/formobject-classes.md)
-### [F třídy: FormReferenceControl až FormStringControl](dev-ref/formreferencecontrol-classes.md)
-### [F třídy: FormTabControl až FormWindowControl](dev-ref/formtabcontrol-classes.md)
-### [Třídy G](dev-ref/g-classes.md)
-### [Třídy H](dev-ref/h-classes.md)
-### [Třídy I](dev-ref/i-classes.md)
-### [Třídy J](dev-ref/j-classes.md)
-### [Třídy K](dev-ref/k-classes.md)
-### [Třídy L](dev-ref/l-classes.md)
-### [Třídy M](dev-ref/m-classes.md)
-### [Třídy N](dev-ref/n-classes.md)
-### [Třídy O](dev-ref/o-classes.md)
-### [Třídy P](dev-ref/p-classes.md)
-### [Třídy Q](dev-ref/q-classes.md)
-### [Třídy R](dev-ref/r-classes.md)
-### [Třídy S](dev-ref/s-classes.md)
-### [Třídy T](dev-ref/t-classes.md)
-### [Třídy U](dev-ref/u-classes.md)
-### [Třídy V](dev-ref/v-classes.md)
-### [Třídy W](dev-ref/w-classes.md)
-### [Třídy X](dev-ref/x-classes.md)
+### Systémové třídy
+#### [Třídy A](dev-ref/a-classes.md)
+#### [Třídy B](dev-ref/b-classes.md)
+#### [Třídy C](dev-ref/c-classes.md)
+#### [Třídy D](dev-ref/d-classes.md)
+#### [Třídy E](dev-ref/e-classes.md)
+#### [F třídy: FieldBinding až FormBuildAnimateControl](dev-ref/fieldbinding-classes.md)
+#### [F třídy: FormBuildButtonControl až FormBuildFastTabSummarySeparator](dev-ref/formbuildbuttoncontrol-classes.md)
+#### [F třídy: FormBuildFilterPaneControl až FormBuildRealControl](dev-ref/formbuildfilterpanecontrol-classes.md)
+#### [F třídy: FormBuildReferenceControl až FormButtonSeparatorControl](dev-ref/formbuildreferencecontrol-classes.md)
+#### [F třídy: FormChangeTracker až FormControlEventArgs](dev-ref/formchangetracker-classes.md)
+#### [F třídy: FormDataObject až FormFastTabHeaderControl](dev-ref/formdataobject-classes.md)
+#### [F třídy: FormFastTabSummarySeparator až FormGridControl](dev-ref/formfasttabsummaryseparator-classes.md)
+#### [F třídy: FormGroupControl až FormIntControl](dev-ref/formgroupcontrol-classes.md)
+#### [F třídy: FormListBoxControl až FormNotifyEventArgs](dev-ref/formlistboxcontrol-classes.md)
+#### [F třídy: FormObject až FormRealControl](dev-ref/formobject-classes.md)
+#### [F třídy: FormReferenceControl až FormStringControl](dev-ref/formreferencecontrol-classes.md)
+#### [F třídy: FormTabControl až FormWindowControl](dev-ref/formtabcontrol-classes.md)
+#### [Třídy G](dev-ref/g-classes.md)
+#### [Třídy H](dev-ref/h-classes.md)
+#### [Třídy I](dev-ref/i-classes.md)
+#### [Třídy J](dev-ref/j-classes.md)
+#### [Třídy K](dev-ref/k-classes.md)
+#### [Třídy L](dev-ref/l-classes.md)
+#### [Třídy M](dev-ref/m-classes.md)
+#### [Třídy N](dev-ref/n-classes.md)
+#### [Třídy O](dev-ref/o-classes.md)
+#### [Třídy P](dev-ref/p-classes.md)
+#### [Třídy Q](dev-ref/q-classes.md)
+#### [Třídy R](dev-ref/r-classes.md)
+#### [Třídy S](dev-ref/s-classes.md)
+#### [Třídy T](dev-ref/t-classes.md)
+#### [Třídy U](dev-ref/u-classes.md)
+#### [Třídy V](dev-ref/v-classes.md)
+#### [Třídy W](dev-ref/w-classes.md)
+#### [Třídy X](dev-ref/x-classes.md)
 
 ## [Domovská stránka pro rozšiřitelnost](extensibility/extensibility-home-page.md)
 ### Úvod a informace, jak začít
@@ -140,13 +137,10 @@
 #### [Změna popisku](extensibility/change-label.md)
 #### [Rozšíření rozsahu číselné řady](extensibility/extend-number-sequence-scope.md)
 
-## [Domovská stránka o průběžném doručování](dev-tools/continuous-delivery-home-page.md)
-### [Časté otázky k vývoji a průběžnému doručování](dev-tools/continuous-delivery-faq.md)
-### [Vyloučení testovacích balíčků z výstupu sestavení](dev-tools/exclude-test-packages.md)
-### [Správa modelů třetích stran a balíčků runtime pomocí správy zdrojového kódu](dev-tools/manage-runtime-packages.md)
-### [Modely verze v automatizovaném sestavení](dev-tools/version-models-build.md)
 
-## Domovská stránka výkonnosti
+
+
+## Výkonnost
 ### [Sledování pomocí analyzátoru sledování](perf-test/trace-trace-tutorial.md)
 ### [PerfSDK a testování více uživatelů pomocí služby Visual Studio Team Services](perf-test/perfsdk-tutorial.md)
 ### [Diagnostika problémů a analýza problémů s výkonem pomocí analyzátoru sledování](perf-test/trace-parser.md)
@@ -155,10 +149,8 @@
 ### [Testování a ověřování](perf-test/testing-validation.md)
 ### [Testovací projekty v aplikaci Visual Studio](perf-test/testing-support.md)
 ### [Nasazení s průběžným sestavováním a automatizací testování](perf-test/continuous-build-test-automation.md)
-## Data
-### [Platnost od](dev-tools/date-effectivity.md)
-## Licence
-### [ISV licence](dev-tools/isv-licensing.md)
+## [Platnost od](dev-tools/date-effectivity.md)
+## [ISV licence](dev-tools/isv-licensing.md)
 
 # [Vývoj uživatelského rozhraní](user-interface/user-interface-development-home-page.md)
 ## Kurzy
@@ -197,7 +189,7 @@
 ## Zprávy
 ### [Posuvník a MessageBox](user-interface/slider-messagebox.md)
 ### [API pro centrum zpráv, panel zpráv a podrobnosti o zprávách](user-interface/messaging-api-center-bar-details.md)
-### [Časté dotazy pro centrum zpráv, panel zpráv a podrobnosti o zprávách](user-interface/messaging-user.md)
+### [Často kladené dotazy pro centrum zpráv, panel zpráv a podrobnosti o zprávách](user-interface/messaging-user.md)
 ## Pokyny pro primární vzor formuláře
 ### [Výběr vzoru formuláře](user-interface/select-form-pattern.md)
 ### [Styly a vzory formulářů](user-interface/form-styles-patterns.md)
@@ -359,6 +351,104 @@
 #### [Typ ValueDesign](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md)
 #### [Typ ValueMetadata](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
 
+# Integrace dat
+## [Vzory integrace](data-entities/integration-overview.md)
+
+## API integrace dat
+### [API balíčku správy dat](data-entities/data-management-api.md)
+### [Koncové body služby](data-entities/services-home-page.md)
+#### [Řešení problému s ověřením služby](data-entities/troubleshoot-service-authentication.md)
+### [OData](data-entities/odata.md)
+### [Vlastní služby](data-entities/custom-services.md)
+### [Opakované integrace](data-entities/recurring-integrations.md)
+
+## Vývoj pro integraci
+### [Integrace dat s použitím datových entit](data-entities/data-management-integration-data-entity.md)
+#### [Vývoj entity pro migraci dat](data-entities/develop-entity-for-data-migration.md)
+#### [Vývoj kombinované datové entity](data-entities/develop-composite-data-entities.md)
+#### [Konfigurace sdílení finančních dat mezi společnostmi](data-entities/tasks/configure-financial-cross-company-data-sharing.md)
+#### [Vytvoření šablony záznamu pro usnadnění zadávání dat](data-entities/tasks/create-record-template-facilitate-data-entry.md)
+#### [Vytvoření nového záznamu s použitím šablony záznamu](data-entities/tasks/use-record-template-new-record.md)
+
+### [Integrace dat s použitím služby Common Data Service](data-entities/data-integration-cds.md) 
+#### [Konfigurace scénáře zpeněžení potenciálního zákazníka](../supply-chain/sales-marketing/prospect-to-cash.md)
+##### [Synchronizace produktů z aplikace Finance and Operations na produkty v aplikaci Sales](../supply-chain/sales-marketing/products-template-mapping.md)
+##### [Synchronizace obchodních vztahů z aplikace Sales na odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
+##### [Synchronizace kontaktů z aplikace Sales na kontakty nebo odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
+##### [Synchronizace hlaviček a řádků prodejních nabídek z aplikace Sales do aplikace Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
+##### [Synchronizace hlaviček a řádků prodejní objednávky z aplikace Finance and Operations do Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
+##### [Synchronizace hlaviček a řádků prodejní faktury z aplikace Finance and Operations do Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+##### [Synchronizace obchodních vztahů přímo z aplikace Sales na odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+##### [Synchronizace produktů přímo z aplikace Finance and Operations na produkty v aplikaci Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+##### [Synchronizace kontaktů přímo z aplikace Sales na kontakty nebo odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+##### [Synchronizace hlaviček a řádků prodejní objednávky přímo z aplikace Finance and Operations do Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+##### [Synchronizace hlaviček a řádků prodejní faktury přímo z aplikace Finance and Operations do Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+
+### [Spotřeba externích webových služeb](data-entities/consume-external-web-service.md)
+
+
+# [Správa dat](data-entities/data-entities-data-packages.md)
+
+## [Datové entity](data-entities/data-entities.md)
+
+### [Projekty dat konfigurace](data-entities/configuration-data-projects.md)
+### [Balíčky dat konfigurace](data-entities/configuration-data-packages.md)
+### [Zkopírování dat konfigurace mezi společnostmi](data-entities/copy-configuration.md)
+### [Šablony dat konfigurací](data-entities/configuration-data-templates.md)
+### [Sledování změn entity](data-entities/entity-change-track.md)
+
+## Standardní datové entity
+### [Sestava datových entit](data-entities/data-entities-report.md)
+### [Datové entity: Závazky a daně](data-entities/data-entities-accounts-payable-taxes.md)
+### [Datové entity: Pohledávky](data-entities/data-entities-accounts-receivable.md)
+### [Datové entity: Banka](data-entities/data-entities-bank.md)
+### [Datové entity: Počáteční zůstatky](data-entities/data-entities-beginning-balances.md)
+### [Datové entity: Plánování rozpočtu](data-entities/data-entities-budget-plan.md)
+### [Datové entity: Rozpočtování](data-entities/data-entities-budgeting.md)
+### [Datové entity: Výpočet nákladů](data-entities/data-entities-costing.md)
+### [Datové entity: Správa výdajů](data-entities/data-entities-expense-management.md)
+### [Datové entity: Dlouhodobý majetek](data-entities/data-entities-fixed-assets.md)
+### [Datové entity: Hlavní kniha](data-entities/data-entities-general-ledger.md)
+### [Datové entity: Globální adresář](data-entities/data-entities-global-address-book.md)
+### [Datové entity: Lidské zdroje](data-entities/data-entities-human-resources.md)
+### [Datové entity: Řízení zásob](data-entities/data-entities-inventory-management.md)
+### [Datové entity: Hlavní plánování](data-entities/data-entities-master-plan.md)
+### [Datové entity: Zásobování a zdroje](data-entities/data-entities-procurement-sourcing.md)
+### [Datové entity: Řízení informací o produktu](data-entities/data-entities-product-information-management.md)
+### [Datové entity: Řízení výroby](data-entities/data-entities-production-control.md)
+### [Datové entity: Projektové účetnictví](data-entities/data-entities-project-accounting.md)
+### [Datové entity: Veřejný sektor](data-entities/data-entities-public-sector.md)
+### [Datové entity: Retail](data-entities/data-entities-retail.md)
+### [Datové entity: Provádění prodeje a marketingu](data-entities/data-entities-sales-marketing.md)
+### [Datové entity: Předprodej při prodeji a marketingu](data-entities/data-entities-sales-marketing-pre-sales.md)
+### [Datové entity: Správa systému](data-entities/data-entities-system-administration.md)
+### [Datové entity: Workflow](data-entities/data-entities-workflow.md)
+
+## [Úlohy importu a exportu dat](data-entities/data-import-export-job.md)
+
+### [Osvědčené postupy pro import dokladů pomocí entity hlavního deníku](data-entities/tips-tricks-import-general-journal-entity.md)
+
+## Vývoj pro datové entity
+### [Vytváření nových datových entit](data-entities/build-consuming-data-entities.md)
+### [Vlastnosti datových entit](data-entities/behavioral-properties-data-entities.md)
+### [Vytváření výpočtu sloupců a virtuálních polí](data-entities/data-entity-computed-columns-virtual-fields.md)
+### [Chování napříč společnostmi](data-entities/cross-company-behavior.md)
+### [Zpracování kódů zemí/oblastí](data-entities/countryregion-codes-configuration-keys.md)
+### [Vzory dědičnosti](data-entities/support-super-type-sub-type.md)
+### [Pravidla průvodce datovými entitami](data-entities/data-entity-wizard-rules.md)
+### [Vlastnosti metadat](data-entities/behavioral-properties-data-entities.md)
+### [Ověření, výchozí hodnoty a nemapovaná pole](data-entities/validations-defaults-unmapped-fields.md)
+### [Zabezpečení a datové entity](data-entities/security-data-entities.md)
+
+## [Použití vlastní databáze](analytics/export-entities-to-your-own-database.md)
+
+# [Domovská stránka o průběžném doručování](dev-tools/continuous-delivery-home-page.md)
+## [Často kladené dotazy k vývoji a průběžnému doručování](dev-tools/continuous-delivery-faq.md)
+## [Vyloučení testovacích balíčků z výstupu sestavení](dev-tools/exclude-test-packages.md)
+## [Správa modelů třetích stran a balíčků runtime pomocí správy zdrojového kódu](dev-tools/manage-runtime-packages.md)
+## [Modely verze v automatizovaném sestavení](dev-tools/version-models-build.md)
+
+
 # Řešení vydávání pomocí služby Lifecycle Services
 ## [Vývoj a vydávání](lcs-solutions/lcs-solutions-app-source.md)
 ## [Fáze a uveřejnění](lcs-solutions/marketing-content-lcs-solutions.md)
@@ -377,9 +467,7 @@
 ### [Samostatné lokalizační modely](lcs-solutions/separate-localization-models.md)
 ### [Odeslání regulační výstrahy](lcs-solutions/submit-localization-alerts.md)
 
-
-
-# Vývoj financí
+# [Vývoj financí](financial/financial-dev-home-page.md)
 ## [Dimenze](financial/dimensions.md)
 ## [Přidání dimenzí do šablony aplikace Excel](financial/dimensions-overview.md)
 ## [Podpora dialogového okna ovládacího prvku zadávání dimenze](financial/dimension-entry-control-dialog-support.md)
@@ -416,6 +504,7 @@
 ### [Vytvoření projektu on-premises](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Nastavení a nasazení místních prostředí](deployment/setup-deploy-on-premises-environments.md)
 ### [Vývoj a nasazení vlastních modelů do místních prostředí](deployment/develop-deploy-custom-models-on-premises.md)
+### [Použití aktualizací nasazení on-premises](deployment/apply-updates-on-premises.md)
 
 ## Nasazení vlastního kódu
 ### [Vytvoření nasaditelného balíčku](deployment/create-apply-deployable-package.md)
@@ -445,7 +534,7 @@
 #### [Migrace upgradované prodejní krychle do úložiště entit](migration-upgrade/migrate-upgraded-cube-entity-store.md)
 #### [Upgrade plánování rozpočtu](migration-upgrade/upgrade-budget-planning.md)
 
-## Migrace a upgrade kódu
+## [Migrace a upgrade kódu](migration-upgrade/code-migration-home-page.md)
 ### [Příprava na migraci kódu](migration-upgrade/prepare-migration.md)
 ### [Konfigurace mapování služby Visual Studio Team Services během migrace kódu](migration-upgrade/configure-vso-solution.md)
 ### [Rozdělení modelů](dev-tools/model-split.md)
@@ -471,11 +560,12 @@
 ### [Zastaralé funkce](migration-upgrade/deprecated-features.md)
 
 # [Správa systému](sysadmin/system-administration-home-page.md)
-## [Časté dotazy k měsíčním aktualizacím platformy](sysadmin/faq-platform-monthly-updates.md)
+## [Často kladené dotazy k měsíčním aktualizacím platformy](sysadmin/faq-platform-monthly-updates.md)
 ## [Přidání odkazů na právní podmínky a zásady ochrany osobních údajů ve vaší organizaci](sysadmin/legal-terms-privacy-statement.md)
 ## [Licenční kódy a sestavy konfiguračních klíčů](sysadmin/license-codes-configuration-keys-report.md)
 ## [Sdílení dat mezi společnostmi](sysadmin/cross-company-data-sharing.md)
 ## [Režim údržby](sysadmin/maintenance-mode.md)
+## [Předkonfigurované systémové účty](sysadmin/pre-configured-system-accounts.md)
 ## [Zabezpečení na základě rolí](sysadmin/role-based-security.md)
 ### [Architektura zabezpečení](sysadmin/security-architecture.md)
 ### [Sestavy zabezpečení](sysadmin/security-reports.md)
@@ -496,10 +586,11 @@
 ### [Novinky](lifecycle-services/whats-new-lcs.md)
 ### [Známé problémy](lifecycle-services/known-issues.md)
 ## [Uživatelská příručka Dynamics Lifecycle Services](lifecycle-services/lcs-user-guide.md)
+## [Odhad předplatného](lifecycle-services/subscription-estimator.md)
 ## [Konfigurace zabezpečení](lifecycle-services/configure-lcs-security.md)
 ## [Hledání problémů](lifecycle-services/issue-search-lcs.md)
 ## [Správce konfigurace](lifecycle-services/configuration-manager-lcs.md)
-### [Nastavení Správce konfigurace ](lifecycle-services/set-up-configuration-manager-lcs.md)
+### [Nastavení Správce konfigurace](lifecycle-services/set-up-configuration-manager-lcs.md)
 ## [Konfigurace služby upgradu kódu](lifecycle-services/configure-execute-code-upgrade.md)
 ## [Vytvoření metodologie ](lifecycle-services/create-methodology.md)
 ## [Modul Modelování podnikových procesů](lifecycle-services/bpm-overview.md)
@@ -511,6 +602,7 @@
 ## [Vývojové diagramy modelování podnikových procesů](lifecycle-services/flowcharts-business-process-modeler.md)
 ## [Odeslání vlastních podnikových procesů](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Monitorování a diagnostika ](lifecycle-services/monitoring-diagnostics.md)
+## [Sledování přihlášení uživatelů](lifecycle-services/user-logins.md)
 ## [Knihovna majetku](lifecycle-services/asset-library.md)
 ## [Microsoft Dynamics 365 - Přehled překladové služby](lifecycle-services/translation-service-overview.md)
 ### [Microsoft Dynamics 365 - Uživatelská příručka překladové služby ](lifecycle-services/use-translation-service.md)
@@ -594,12 +686,13 @@
 ## [Kopírování databáze z SQL Serveru do produkčního prostředí databáze Azure SQL](database/copy-database-from-sql-server-to-azure-sql.md)
 ## [Obnovení databáze na neprodukčním prostředí](database/request-point-in-time-restore.md)
 ## [Export kopie databáze pro pozdější obnovení](database/copy-operations-database.md)
+## [Žádost o obnovení databáze sandbox](database/database-refresh.md)
 
 # Podpora
 ## [Získání podpory pro aplikaci Dynamics 365 for Finance and Operations, Enterprise edition a Lifecycle Services](lifecycle-services/lcs-support.md)
 ## [Zadání lístku podpory Premier](lifecycle-services/premier-support.md)
 ## [Odeslání požadavku na tým Dynamics Service Engineering](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
 ## [Nastavení technické podpory pro aplikaci Dynamics 365 for Finance and Operations, Enterprise Edition](lifecycle-services/support-experience.md) 
-## [Časté dotazy k oknu plánované údržby](lifecycle-services/planned-maintenance-window-faq.md) 
+## [Často kladené dotazy k oknu plánované údržby](lifecycle-services/planned-maintenance-window-faq.md) 
 ## [Cloudové operace a obsluha](lifecycle-services/cloud-operations-servicing.md)
 ## [Správa zkušeností s Finance and Operations Support](lifecycle-services/cloud-powered-support-lcs.md)

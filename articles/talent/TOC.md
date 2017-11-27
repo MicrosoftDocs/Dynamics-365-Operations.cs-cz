@@ -1,10 +1,9 @@
 # [Vítá vás aplikace Dynamics 365 for Talent](index.md)
 
-# Začínáme
+# [Začínáme](talent-get-started.md)
 ## [Systémové požadavky a zásady aktualizace](talent-versions-update-policy.md)
 
-# Vytvoření strategie lidských zdrojů
-## [Uspořádání zaměstnanců podle oddělení, prací a pozic](departments-jobs-positions.md)
+# [Vytvoření strategie lidských zdrojů](departments-jobs-positions.md)
 ## [Nastavení komponent práce](create-job.md)
 ## [Vytvoření oddělení a jeho přidružení k hierarchii oddělení](create-department-add-department-hierarchy.md)
 ## [Nastavení parametrů lidských zdrojů mezi právnickými osobami](set-up-hr-parameters-across-legal-entities.md)
@@ -28,13 +27,11 @@
 ## [Vyrovnání dovedností zaměstnanců s obchodními potřebami](skills.md)
 ## [Nastavení školicích kurzů](courses.md)
 
-# Vytvoření a správa výhod
-## [Správa programu výhod](manage-benefit-program.md)
-## [Zásady způsobilosti k zaměstnaneckým výhodám](benefit-eligibility-policies.md)
+# [Vytvoření a správa výhod](manage-benefit-program.md)
+# [Zásady způsobilosti k zaměstnaneckým výhodám](benefit-eligibility-policies.md)
 ## [Spravovat položky půjčené zaměstnancům](loan-items.md)
 
-# Shromáždění informací pomocí dotazníku
-## [Dotazníky](questionnaires.md)
+# [Shromáždění informací pomocí dotazníku](questionnaires.md)
 ## [Návrh dotazníku](design-questionnaires.md)
 ## [Distribuce a vyplnění dotazníku](distribute-questionnaires.md)
 ## [Hodnocení výsledků dotazníku](evaluate-questionnaire-results.md)

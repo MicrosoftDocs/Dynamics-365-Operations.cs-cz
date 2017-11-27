@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: b53f95a55e66f7df4f7b3b85dd0dee2047019439
-ms.openlocfilehash: f0f601b2cf66daf0d7d3175bc78938e13aa6cd19
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 35b574e24e721e80ca1469878697aba4c1699dff
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 Microsoft Dynamics 365 for Retail je komplexní maloobchodní řešení, které zajišťuje sjednocené obchodování napříč všemi prodejními kanály. Zahrnuje prodeje, mobilitu, zpravodajství a produktivitu, které obchodníkům a pracovníkům pomáhají dosahovat lepších výsledků způsobem využívajícím především cloudová úložiště a mobilní zařízení. Modul Retail nabízí rozsáhlou podporu pro provoz celé řady obchodních procesů, jako jsou možnosti nákupu, skladů a správa prodejních kanálů. Poskytuje také dokonalé zkušenosti uživatelům napříč všemi styčnými body.
 
 > [!NOTE] 
-> Dynamics 365 for Retail se úzce vztahuje k aplikacím Dynamics 365 for Finance and Operations, edice Enterprise, a Dynamics 365 for Talent. Stejné funkce se mohou objevit ve všech třech produktech. Proto bude v tématech, která primárně souvisí s modulem Retail, název produktu Microsoft Dynamics 365 for Retail; v tématech, která primárně souvisí s hlavním produktem (Finance and Operations, pak bude název produktu Microsoft Dynamics 365 for Finance and Operations, edice Enterprise. A v tématech, která primárně souvisí s lidskými zdroji, bude název produktu Dynamics 365 for Talent. 
+> Dynamics 365 for Retail se úzce vztahuje k aplikacím Dynamics 365 for Finance and Operations, Enterprise Edition, a Dynamics 365 for Talent. Stejné funkce se mohou objevit ve všech třech produktech. Proto bude v tématech, která primárně souvisí s modulem Retail, název produktu Microsoft Dynamics 365 for Retail; v tématech, která primárně souvisí s hlavním produktem (Finance and Operations, pak bude název produktu Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. A v tématech, která primárně souvisí s lidskými zdroji, bude název produktu Dynamics 365 for Talent. 
 
 V levém podokně vyberte funkční oblast, o které se chcete dozvědět více.
 
@@ -74,7 +74,7 @@ Pokud jste byli požádáni o přizpůsobení vašeho prostředí nebo pokud zod
 
 ## <a name="additional-resources"></a>Další zdroje
 ### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
-Přejděte na [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) a zjistěte, jaké nové funkce se vydávají a jaké se chystají.
+Přejděte na [Přehled Microsoft Dynamics 365](https://roadmap.dynamics.com/) a zjistěte, jaké nové funkce se vydávají a jaké se chystají.
 
 ### <a name="blogs"></a>Blogy
 Názory, novinky a jiné informace o aplikaci Retail a jiná řešení naleznete v [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog).

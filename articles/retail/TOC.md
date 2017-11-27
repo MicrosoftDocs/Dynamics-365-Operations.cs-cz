@@ -2,12 +2,17 @@
 
 # Začínáme
 ## [Co je nového a co se změnilo](get-started/whats-new.md)
+## [Než si koupíte aplikaci Dynamics 365 for Retail](get-started/before-you-buy.md)
+## [Registrace ukázkového předplatného](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
+## [Nasazení ukázkového prostředí](../dev-itpro/deployment/deploy-demo-environment.md)
+## [Možnosti nasazení](dev-itpro/choose-deployment.md)
+
 
 # Platby
 ## [Metody platby](payment-methods.md)
 ## [Nastavení platební karty, autorizace a záznam](../financials/accounts-receivable/credit-card-authorizations.md)
 ## [Konfigurace způsobu platby obchodu pro POS](cash-denominations.md)
-## [Časté dotazy k platbám](dev-itpro/payments-retail.md)
+## [Často kladené dotazy k platbám](dev-itpro/payments-retail.md)
 
 # Nákupní objednávky
 ## [Přehled nákupních objednávek](../supply-chain/procurement/purchase-order-overview.md)
@@ -32,17 +37,19 @@
 ## [Možnosti platby](work-with-payments.md)
 
 # Nastavení a správa kanálů
-## [Inicializace počátečních dat v prostředí maloobchodu](enable-configure-retail-functionality.md)
+## [Inicializace počátečních dat v prostředí Retail](enable-configure-retail-functionality.md)
 ## [Definování maloobchodních sítí](define-maintain-retail-channels.md)
 ## [Přehled online obchodu](online-stores.md)
-## [Konfigurace a instalace hardwarové stanice pro obchod](retail-hardware-station-configuration-installation.md)
-## [Časové pásmo a návštěvnost maloobchodu](retail-time-attendance.md)
+## [Konfigurace a instalace hardwarové stanice Retail](retail-hardware-station-configuration-installation.md)
+## [Čas a docházka v aplikaci Retail](retail-time-attendance.md)
 
 # Domovská stránka Moderního pokladního místa MPOS a Cloud POS
-## Hardware a periferní zařízení
-### [Přehled maloobchodních zařízení](retail-peripherals-overview.md)
+## [Operace POS](POS-operations.md)
+## [Rozložení obrazovky ukázkových dat v MPOS/CPOS](demo-data.md)
+## Hardwarová periferní zařízení
+### [Přehled periferní zařízení aplikace Retail](retail-peripherals-overview.md)
 ### [Hardwarová periferní zařízení POS testovaná společností Microsoft](microsoft-tested-pos-hardware-peripherals.md)
-### [Simulátor periferních zařízení maloobchodu](dev-itpro/retail-peripheral-simulator.md)
+### [Simulátor periferních zařízení Retail](dev-itpro/retail-peripheral-simulator.md)
 ### [Definování a správa klientů z obchodních kanálů, pokladen a hardwarových stanic](define-maintain-channel-clients-registers-hw-stations.md)
 ## Rozložení obrazovky
 ### [Konfigurace rozložení obrazovky pro POS](pos-screen-layouts.md)
@@ -60,10 +67,11 @@
 ### [Hybridní objednávky zákazníka](hybrid-customer-orders.md)
 ## Zaměstnanci obchodu
 ### [Sledování provizí v POS pomocí prodejních skupin](pos-sales-groups-track-commissions.md)
+## [Odeslání objednávky z jiného obchodu](charge-send.md)
 ## Aktivace zařízení
 ### [Instalace a konfigurace MPOS](retail-modern-pos-device-activation.md)
 ### [Nastavení rozšířeného přihlášení pro Cloud POS a MPOS](extended-logon.md)
-### [Správa maloobchodních účtů a zařízení z centrály](set-up-activation-accounts-validate-devices-hq.md)
+### [Správa účtů Retail a zařízení z centrály](set-up-activation-accounts-validate-devices-hq.md)
 ## Účtenky
 ### [Nastavení šablon účtenek](receipt-templates-printing.md) 
 ### [Odesílání účtenek e-mailem z MPOS](email-receipts.md)
@@ -132,7 +140,7 @@
 ## [ Vytvoření, výpočet a zaúčtování výkazu pro maloobchod](tasks/create-calculate-post-statement-retail-store.md)
 ## [ Vytváření objednávek v kontaktním středisku](tasks/create-call-center-orders.md)
 ## [ Vytvoření finančních dimenzí pro pokladny POS a konfigurace hodnot dimenzí na pokladnách](tasks/create-financial-dimensions-pos.md)
-## [ Vytváření finančních dimenzí pro maloobchodní sítě a konfigurace hodnot dimenzí v obchodech](tasks/create-financial-dimensions-retail-channels.md)
+## [Vytváření finančních dimenzí pro sítě Retail a konfigurace hodnot dimenzí v obchodech](tasks/create-financial-dimensions-retail-channels.md)
 ## [ Vytváření online kanálů a definování atributů kanálu](tasks/create-online-channel-define-channel-attributes.md)
 ## [ Vytváření skupin oprávnění POS](tasks/create-pos-permission-groups.md)
 ## [ Vytvoření vizuálního profilu POS ](tasks/create-pos-visual-profile-2016-02.md)
@@ -145,8 +153,8 @@
 ## [ Definování věrnostních schémat](tasks/define-loyalty-schemes.md)
 ## [ Návrh vztahů mezi organizačními jednotkami](tasks/design-relationships-between-organizational-units.md)
 ## [ Správa sortimentu ](tasks/manage-assortments-2016-11.md)
-## [ Konfigurace parametrů pro maloobchodní výkazy](tasks/parameter-configurations-retail-statements.md)
-## [ Konfigurace plateb pro maloobchodní výkazy](tasks/payment-configurations-retail-statements.md)
+## [ Konfigurace parametrů pro výkazy Retail](tasks/parameter-configurations-retail-statements.md)
+## [ Konfigurace plateb pro výkazy Retail](tasks/payment-configurations-retail-statements.md)
 ## [ Samoobslužné stažení hardwarové stanice](tasks/perform-self-service-download-hardware-station.md)
 ## [ Zaúčtování online prodeje a plateb](tasks/posting-online-sales-payments.md)
 ## [ Zpracování úprav bodů věrnostních odměn](tasks/process-loyalty-reward-point-adjustments.md)
@@ -156,25 +164,25 @@
 ## [ Konfigurace a spuštění úlohy pro zaúčtování výkazů](tasks/run-job-post-statements.md)
 ## [ Generování a spouštění předpřipravených sestav](tasks/run-out-box-reports.md)
 ## [ Nastavení pravidel a parametrů pro cross docking a metodu buyer's push](tasks/set-up-rules-parameters-cross-docking-buyers-push.md)
-## [ Konfigurace obchodů pro maloobchodní výkazy](tasks/store-configurations-retail-statements.md)
+## [ Konfigurace obchodů pro výkazy Retail](tasks/store-configurations-retail-statements.md)
 ## [ Používání programu kontinuity](tasks/use-continuity-program.md)
 ## [ Konfigurace pracovníka](tasks/worker.md)
 
-# [Vývoj a správa maloobchodu](dev-itpro/dev-retail-home-page.md)
+# [Vývoj a správa Retail](dev-itpro/dev-retail-home-page.md)
 
 ## Architektura
 ### [Komponenty aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition - Retail](retail-components.md)
-### [Architektura serveru maloobchodu](dev-itpro/retail-server-architecture.md)
+### [Architektura serveru Retail](dev-itpro/retail-server-architecture.md)
 ### [Komunikace maloobchodní sítě](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS architektura](dev-itpro/retail-modern-pos-architecture.md)
 ### [Architektura publikování maloobchodního online obchodu](dev-itpro/retail-online-store-publishing-architecture.md)
 ### [Obsah výkonnosti maloobchodní sítě Power BI](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Nasazení a opravy hotfix
-### [Konfigurace a instalace Retail Store Scale Unit](dev-itpro/retail-store-scale-unit-configuration-installation.md)
-#### [Maloobchodní systém před tím, než začnete](dev-itpro/retail-store-system-begin.md)
+### [Přehled Retail Store Scale Unit](dev-itpro/retail-store-system-begin.md)
+#### [Konfigurace a instalace Retail Store Scale Unit](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [Konfigurace a instalace Retail Modern POS](retail-modern-pos-device-activation.md)
-#### [Správa maloobchodních účtů a zařízení z centrály](set-up-activation-accounts-validate-devices-hq.md)
+#### [Správa účtů Retail a zařízení z centrály](set-up-activation-accounts-validate-devices-hq.md)
 #### [Aktivace zařízení Retail POS](dev-itpro/retail-device-activation.md)
 #### [Zabezpečení Retail Cloud POS](dev-itpro/secure-retail-cloud-pos.md)
 ### [Konfigurace a instalace Retail Hardware Station](retail-hardware-station-configuration-installation.md)
@@ -187,6 +195,7 @@
 ### [Instalace N-1 komponent](dev-itpro/n-1-installation-configuration.md)
 
 ## Konfigurace prostředí
+### [Přidání odkazů na právní podmínky a zásady ochrany osobních údajů ve vaší organizaci](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
 ### [Správa Map Bing](dev-itpro/manage-bing-maps.md)
 
 ## Rozšiřitelnost
@@ -197,6 +206,7 @@
 #### [Rozšiřitelnost spouštění MPOS and Cloud POS](dev-itpro/modern-pos-trigger-extensibility.md)
 #### [Přidat vlastní ovládací prvek do POS zobrazení](dev-itpro/pos-custom-control.md)
 #### [Rozšíření POS plateb](dev-itpro/pos-payment-extension.md)
+#### [Externí podpora dárkových poukazů](dev-itpro/gift-card.md)
 ### [Vytvoření aplikace Retail Experience](dev-itpro/create-retail-experience-app.md)
 ### [Přehled a rozšiřitelnost Hardware Station](dev-itpro/hardware-station-extensibility.md)
 
@@ -230,10 +240,16 @@
 ### [Vzory rozšiřitelnosti sady Retail SDK](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Registrační pokladny ve Švédsku](localizations/emea-swe-cash-registers.md)
 ### [Vzor pro integraci Retail POS s kontrolními jednotkami pro Švédsko](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+### [Registrační pokladny pro Norsko](localizations/emea-nor-cash-registers.md)
+### [Pokyny k nasazení registračních pokladen pro Norsko](localizations/emea-nor-loc-deployment-guidelines.md)
 ### [Balíčky sady Retail SDK](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Vzory sady Retail SDK ](dev-itpro/retail-sdk/retail-sdk-samples.md)
 ### [Rozšíření databáze kanálů](dev-itpro/channel-db-extensions.md)
 ### [Rozšiřitelnost CDX](dev-itpro/cdx-extensibility.md)
+### [Atributy objednávky](dev-itpro/order-attributes.md)
+### [Atributy odběratele](dev-itpro/customer-attributes.md)
+### [Retail Typescript a C# proxy](dev-itpro/typescript-proxy-retail-pos.md)
+
 
 ## Commerce runtime
 ### [Rozšíření věrnostního programu](dev-itpro/retail-sdk/loyalty-extension-sample.md)

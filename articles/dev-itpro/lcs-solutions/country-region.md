@@ -3,24 +3,24 @@ title: "Lokalizace a funkce týkající se předpisů"
 description: "Toto téma obsahuje seznam prostředků, které vám pomohou dozvědět se více o funkci specifické pro zemi/oblast."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 104173
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
-ms.openlocfilehash: fd01d40d3e74503e3e310132882306ed8c23ad1d
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 25c8c6c9bbccf07ce94a909824ecc8096081cd2c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -126,7 +126,7 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 -   [Porovnání kusovníků](../../financials/localizations/apac-chn-bom-comparison.md)
 -   [Čínské doklady](../../financials/localizations/apac-chn-vouchers.md)
 -   [Konfigurace integrace daní](../../financials/localizations/apac-chn-tax-integration.md)
-    -   [Nejčastější dotazy týkající se zákaznických faktur s DPH](../../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
+    -   [Často kladené dotazy týkající se zákaznických faktur s DPH](../../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
     -   [Metody odpisu dlouhodobého majetku ](../../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md)
 -   [Import čínské daňové entity Chinese Golden](../../financials/localizations/apac-chn-import-golden-tax-data-entity.md)
 -   [Model měsíčních průměrných nákladů](../../financials/localizations/apac-chn-monthly-average-cost-model.md)
