@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
-ms.openlocfilehash: 358f5bf6194f5dd3f1639425e6633aa1a855bdc1
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 449643cc34e67388210e0b4e9d04d615d2420610
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](includes/banner.md)]
 
-Aplikace Microsoft Dynamics 365 for Talent usnadňuje spousty rutinních úkolů vedení záznamů a automatizuje řadu procesů souvisejících s personálním zajištěním ve vaší organizace. Mezi tyto procesy patří udržení zaměstnanců, správa odměňování, školení, kontroly výkonnosti a správa změn. Nabízí také systém, ve kterém mohou pracovníci oddělení lidských zdrojů spravovat různé oblasti dohledu.
+Aplikace Microsoft Dynamics 365 for Talent zjednodušuje mnoho rutinních administrativních úkolů a automatizuje řadu procesů souvisejících s pracovníky ve vaší organizaci. Mezi tyto procesy spadá udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn. Nabízí také systém, ve kterém mohou pracovníci oddělení lidských zdrojů spravovat různé oblasti dohledu.
 
 Modul Talent lze použít k provádění těchto úkonů:
 
