@@ -27,23 +27,23 @@ ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="consolidated-batch-orders"></a><span data-ttu-id="0953f-103">Konsolidované dávkové objednávky</span><span class="sxs-lookup"><span data-stu-id="0953f-103">Consolidated batch orders</span></span>
+# <a name="consolidated-batch-orders"></a><span data-ttu-id="a71c1-103">Konsolidované dávkové objednávky</span><span class="sxs-lookup"><span data-stu-id="a71c1-103">Consolidated batch orders</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-<span data-ttu-id="0953f-104">Tento článek popisuje koncept konsolidované dávkové objednávky.</span><span class="sxs-lookup"><span data-stu-id="0953f-104">This article describes the concept of consolidated batch orders.</span></span>
+<span data-ttu-id="a71c1-104">Tento článek popisuje koncept konsolidované dávkové objednávky.</span><span class="sxs-lookup"><span data-stu-id="a71c1-104">This article describes the concept of consolidated batch orders.</span></span>
 
-<span data-ttu-id="0953f-105">Vyrobená nebalená položka je považována za nadřazenou položku, zatímco zabalená položka je považována za podřízenou položku.</span><span class="sxs-lookup"><span data-stu-id="0953f-105">A bulk item that is produced is considered a parent item, whereas a packed item is considered a child item.</span></span> <span data-ttu-id="0953f-106">Vztah mezi nebalenou položkou a zabalenou položkou je vyjádřen v převodu nebalené položky.</span><span class="sxs-lookup"><span data-stu-id="0953f-106">The relation between the bulk item and the packed item is expressed in a bulk item conversion.</span></span> <span data-ttu-id="0953f-107">Tento převod nebalené položky je definován pro nebalenou položku samotnou.</span><span class="sxs-lookup"><span data-stu-id="0953f-107">This bulk item conversion is defined on the bulk item itself.</span></span>  
+<span data-ttu-id="a71c1-105">Vyrobená nebalená položka je považována za nadřazenou položku, zatímco zabalená položka je považována za podřízenou položku.</span><span class="sxs-lookup"><span data-stu-id="a71c1-105">A bulk item that is produced is considered a parent item, whereas a packed item is considered a child item.</span></span> <span data-ttu-id="a71c1-106">Vztah mezi nebalenou položkou a zabalenou položkou je vyjádřen v převodu nebalené položky.</span><span class="sxs-lookup"><span data-stu-id="a71c1-106">The relation between the bulk item and the packed item is expressed in a bulk item conversion.</span></span> <span data-ttu-id="a71c1-107">Tento převod nebalené položky je definován pro nebalenou položku samotnou.</span><span class="sxs-lookup"><span data-stu-id="a71c1-107">This bulk item conversion is defined on the bulk item itself.</span></span>  
 
-<span data-ttu-id="0953f-108">Zabalené položky lze balit do kontejnerů jedné nebo více velikostí, které jsou považovány za jednu jednotku.</span><span class="sxs-lookup"><span data-stu-id="0953f-108">Packed items can be packaged into containers of either a single size or multiple sizes that are considered one unit.</span></span> <span data-ttu-id="0953f-109">Při konsolidaci objednávek nebalené položky můžete zobrazit všechny související dávkové objednávky v jednom zobrazení, abyste zjistili, zda musí být dokončena nějaká zbývající práce.</span><span class="sxs-lookup"><span data-stu-id="0953f-109">By consolidating the orders for a bulk item, you can see all the related batch orders in a single view that can help you determine any remaining work that must be completed.</span></span>  
+<span data-ttu-id="a71c1-108">Zabalené položky lze balit do kontejnerů jedné nebo více velikostí, které jsou považovány za jednu jednotku.</span><span class="sxs-lookup"><span data-stu-id="a71c1-108">Packed items can be packaged into containers of either a single size or multiple sizes that are considered one unit.</span></span> <span data-ttu-id="a71c1-109">Při konsolidaci objednávek nebalené položky můžete zobrazit všechny související dávkové objednávky v jednom zobrazení, abyste zjistili, zda musí být dokončena nějaká zbývající práce.</span><span class="sxs-lookup"><span data-stu-id="a71c1-109">By consolidating the orders for a bulk item, you can see all the related batch orders in a single view that can help you determine any remaining work that must be completed.</span></span>  
 
-<span data-ttu-id="0953f-110">Konsolidovaná dávková objednávka může obsahovat kombince následujících objednávek:</span><span class="sxs-lookup"><span data-stu-id="0953f-110">A consolidated batch order can contain any combination of the following orders:</span></span>
+<span data-ttu-id="a71c1-110">Konsolidovaná dávková objednávka může obsahovat kombince následujících objednávek:</span><span class="sxs-lookup"><span data-stu-id="a71c1-110">A consolidated batch order can contain any combination of the following orders:</span></span>
 
--   <span data-ttu-id="0953f-111">Jedna objednávka nebaleného zboží a více objednávek baleného zboží</span><span class="sxs-lookup"><span data-stu-id="0953f-111">A single bulk order and multiple packed orders</span></span>
--   <span data-ttu-id="0953f-112">Více objednávek nebaleného zboží a více objednávek baleného zboží</span><span class="sxs-lookup"><span data-stu-id="0953f-112">Multiple bulk orders and multiple packed orders</span></span>
--   <span data-ttu-id="0953f-113">Více objednávek nebaleného zboží a jedna objednávka baleného zboží</span><span class="sxs-lookup"><span data-stu-id="0953f-113">Multiple bulk orders and a single packed order</span></span>
--   <span data-ttu-id="0953f-114">Pouze objednávky baleného zboží</span><span class="sxs-lookup"><span data-stu-id="0953f-114">Only packed orders</span></span>
+-   <span data-ttu-id="a71c1-111">Jedna objednávka nebaleného zboží a více objednávek baleného zboží</span><span class="sxs-lookup"><span data-stu-id="a71c1-111">A single bulk order and multiple packed orders</span></span>
+-   <span data-ttu-id="a71c1-112">Více objednávek nebaleného zboží a více objednávek baleného zboží</span><span class="sxs-lookup"><span data-stu-id="a71c1-112">Multiple bulk orders and multiple packed orders</span></span>
+-   <span data-ttu-id="a71c1-113">Více objednávek nebaleného zboží a jedna objednávka baleného zboží</span><span class="sxs-lookup"><span data-stu-id="a71c1-113">Multiple bulk orders and a single packed order</span></span>
+-   <span data-ttu-id="a71c1-114">Pouze objednávky baleného zboží</span><span class="sxs-lookup"><span data-stu-id="a71c1-114">Only packed orders</span></span>
 
 
 

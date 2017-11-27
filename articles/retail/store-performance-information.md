@@ -26,26 +26,26 @@ ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="analyze-store-performance"></a><span data-ttu-id="7290a-103">Analýza výkonnosti obchodu</span><span class="sxs-lookup"><span data-stu-id="7290a-103">Analyze store performance</span></span>
+# <a name="analyze-store-performance"></a><span data-ttu-id="f7a9d-103">Analýza výkonnosti obchodu</span><span class="sxs-lookup"><span data-stu-id="f7a9d-103">Analyze store performance</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-<span data-ttu-id="7290a-104">Tento článek vysvětluje použití analýzy v paměti a v reálném čase pro přístup, prohlížení a získání přehledu o výkonu obchodu na základě vašich dat z aplikace Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="7290a-104">This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about store performance, based on your Microsoft Dynamics 365 for Retail data.</span></span> 
+<span data-ttu-id="f7a9d-104">Tento článek vysvětluje použití analýzy v paměti a v reálném čase pro přístup, prohlížení a získání přehledu o výkonu obchodu na základě vašich dat z aplikace Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="f7a9d-104">This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about store performance, based on your Microsoft Dynamics 365 for Retail data.</span></span> 
 
-<span data-ttu-id="7290a-105">V rámci aplikace Microsoft Dynamics 365 for Retail mohou uživatelé studovat výkon v reálném čase v rámci rozdílných úrovní organizační hierarchie ve vybraném období otevřením sestavy **Souhrn kanálu** připravené okamžitě z některého z následujících umístění:</span><span class="sxs-lookup"><span data-stu-id="7290a-105">As part of Dynamics 365 for Retail, users can study store performance in real time across different levels of the organization hierarchy over a selected period by opening the out-of-box **Channel summary** report from any of the following locations:</span></span>
+<span data-ttu-id="f7a9d-105">V rámci aplikace Microsoft Dynamics 365 for Retail mohou uživatelé studovat výkon v reálném čase v rámci rozdílných úrovní organizační hierarchie ve vybraném období otevřením sestavy **Souhrn kanálu** připravené okamžitě z některého z následujících umístění:</span><span class="sxs-lookup"><span data-stu-id="f7a9d-105">As part of Dynamics 365 for Retail, users can study store performance in real time across different levels of the organization hierarchy over a selected period by opening the out-of-box **Channel summary** report from any of the following locations:</span></span>
 
--   <span data-ttu-id="7290a-106">Pracovní prostor **Řízení maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava souhrnu kanálu**</span><span class="sxs-lookup"><span data-stu-id="7290a-106">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel summary report**</span></span>
--   <span data-ttu-id="7290a-107">Pracovní prostor **Finance maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Finance maloobchodu** &gt; **Sestavy** &gt; **Sestava souhrnu kanálu**</span><span class="sxs-lookup"><span data-stu-id="7290a-107">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel summary report**</span></span>
--   <span data-ttu-id="7290a-108">Část **Dotazy a sestavy** &gt; **Maloobchod** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava souhrnu kanálu**</span><span class="sxs-lookup"><span data-stu-id="7290a-108">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel summary report**</span></span>
+-   <span data-ttu-id="f7a9d-106">Pracovní prostor **Řízení maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava souhrnu kanálu**</span><span class="sxs-lookup"><span data-stu-id="f7a9d-106">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel summary report**</span></span>
+-   <span data-ttu-id="f7a9d-107">Pracovní prostor **Finance maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Finance maloobchodu** &gt; **Sestavy** &gt; **Sestava souhrnu kanálu**</span><span class="sxs-lookup"><span data-stu-id="f7a9d-107">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel summary report**</span></span>
+-   <span data-ttu-id="f7a9d-108">Část **Dotazy a sestavy** &gt; **Maloobchod** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava souhrnu kanálu**</span><span class="sxs-lookup"><span data-stu-id="f7a9d-108">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel summary report**</span></span>
 
-<span data-ttu-id="7290a-109">Tato sestava poskytuje snímek následujícího souhrnu v rámci výkonnosti obchodu:</span><span class="sxs-lookup"><span data-stu-id="7290a-109">This report provides a snapshot of following summaries as part of store performance:</span></span>
+<span data-ttu-id="f7a9d-109">Tato sestava poskytuje snímek následujícího souhrnu v rámci výkonnosti obchodu:</span><span class="sxs-lookup"><span data-stu-id="f7a9d-109">This report provides a snapshot of following summaries as part of store performance:</span></span>
 
--   <span data-ttu-id="7290a-110">Souhrn hrubých prodejů</span><span class="sxs-lookup"><span data-stu-id="7290a-110">Gross sales summary</span></span>
--   <span data-ttu-id="7290a-111">Souhrn typu úhrad</span><span class="sxs-lookup"><span data-stu-id="7290a-111">Tender type summary</span></span>
--   <span data-ttu-id="7290a-112">Souhrn daně</span><span class="sxs-lookup"><span data-stu-id="7290a-112">Tax summary</span></span>
--   <span data-ttu-id="7290a-113">Souhrn přepisů ceny</span><span class="sxs-lookup"><span data-stu-id="7290a-113">Price overrides summary</span></span>
--   <span data-ttu-id="7290a-114">Souhrn slev</span><span class="sxs-lookup"><span data-stu-id="7290a-114">Discounts summary</span></span>
+-   <span data-ttu-id="f7a9d-110">Souhrn hrubých prodejů</span><span class="sxs-lookup"><span data-stu-id="f7a9d-110">Gross sales summary</span></span>
+-   <span data-ttu-id="f7a9d-111">Souhrn typu úhrad</span><span class="sxs-lookup"><span data-stu-id="f7a9d-111">Tender type summary</span></span>
+-   <span data-ttu-id="f7a9d-112">Souhrn daně</span><span class="sxs-lookup"><span data-stu-id="f7a9d-112">Tax summary</span></span>
+-   <span data-ttu-id="f7a9d-113">Souhrn přepisů ceny</span><span class="sxs-lookup"><span data-stu-id="f7a9d-113">Price overrides summary</span></span>
+-   <span data-ttu-id="f7a9d-114">Souhrn slev</span><span class="sxs-lookup"><span data-stu-id="f7a9d-114">Discounts summary</span></span>
 
 
 
