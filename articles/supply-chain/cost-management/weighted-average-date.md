@@ -1,9 +1,9 @@
 ---
 title: "Datum váženého průměru"
-description: 
+description: "Datum váženého průměru je skladovým modelem založeným na principu váženého průměru, kde jsou výdeje ze skladu oceňovány průměrnou cenou položek přijatých na sklad v jednotlivých dnech období uzávěrky skladu."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 95cc937a97596e4f6ce28636fb30b86e9b328220
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a258c7d6314546262a3f9d07d06da5cad797d99b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,8 +33,9 @@ ms.lasthandoff: 09/29/2017
 
 [!include[retail name](../includes/retail-name.md)]
 
+Datum váženého průměru je skladový model založený na principu váženého průměru. Pro princip váženého průměru jsou vydání ze skladu zváženy pomocí průměrné hodnoty položek přijatých do skladu pro každý den v období uzávěrky skladu. 
 
-Datum váženého průměru je skladový model založený na principu váženého průměru. Pro princip váženého průměru jsou vydání ze skladu zváženy pomocí průměrné hodnoty položek přijatých do skladu pro každý den v období uzávěrky skladu. Při spuštění uzávěrky skladu s použitím data váženého průměru budou všechny denní příjmy vyrovnány s jedním virtuálním výdejem. Tento virtuální výdej obsahuje celkové přijaté množství a hodnotu za daný den. Virtuální výdej má odpovídající virtuální příjem, kterým jsou výdeje vyrovnány. Proto budou mít všechny příjmy stejnou průměrnou cenu. Na virtuální výdej a příjem lze nahlížet jako na virtuální převod, označovaný také jako *převod uzávěrky skladu s váženým průměrem*”. 
+Při spuštění uzávěrky skladu s použitím data váženého průměru budou všechny denní příjmy vyrovnány s jedním virtuálním výdejem. Tento virtuální výdej obsahuje celkové přijaté množství a hodnotu za daný den. Virtuální výdej má odpovídající virtuální příjem, kterým jsou výdeje vyrovnány. Proto budou mít všechny příjmy stejnou průměrnou cenu. Na virtuální výdej a příjem lze nahlížet jako na virtuální převod, označovaný také jako *převod uzávěrky skladu s váženým průměrem*”. 
 
 Pokud dojde pouze k jednomu příjmu k datu nebo před ním, není nutné počítat průměrnou hodnotu. Protože všechny výdeje jsou vyrovnány z daného příjmu, virtuální převod nebude vytvořen. Podobně pokud dojde k výdejům pouze v den s daným datem, nejsou k dispozici žádné příjmy, ze kterých by bylo možné vypočítat průměrnou hodnotu, a virtuální přenosy nebudou vytvořeny. Při používání data váženého průměru můžete označit skladové transakce tak, aby byl příjem určitých položek vyrovnán konkrétním výdejem. V takovém případě nepoužíváte pravidlo data váženého průměru. Používáte-li jako skladový model datum váženého průměru, doporučujeme provádět uzávěrku skladu měsíčně. 
 

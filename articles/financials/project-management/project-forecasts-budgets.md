@@ -1,9 +1,9 @@
 ---
 title: "Prognózy projektu a rozpočty"
-description: 
+description: "Aplikace Microsoft Dynamics 365 for Finance and Operations poskytuje prognózy projektu a rozpočty projektu pro správu a řízení vašich projektů."
 author: KimANelson
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: ForecastModel, ProjYearEndProcess
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 23501
 ms.assetid: 4e6d1384-19a2-4232-b3f3-d2590c218bd7
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 32dd89d92a496d6601d1983dbc3c8e7e579ee0b3
+ms.sourcegitcommit: 31abc719a8df7507e74b3bf6823306ba52261bc3
+ms.openlocfilehash: ebb3574b3f5c40b5512c0352c83520558f63879a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/10/2017
 
 ---
 
@@ -31,9 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-
-
-Aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition poskytuje dva způsoby, jak spravovat a řídit projekty: prognózy projektu a rozpočty projektu. 
+Aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition poskytuje dva způsoby, jak spravovat a řídit projekty: prognózy projektu a rozpočty projektu. 
 
 Prognózu projektu můžete použít, má-li vaše organizace operační perspektivu a zaměřuje se na výnosy a náklady, které jsou odvozeny od specifických transakcí. Rozpočty projektu můžete použít, pokud se vaše organizace více zaměřuje na finanční částky. 
 
@@ -41,16 +39,16 @@ Prognózy projektu a rozpočty projektu se používají k předvídání modelů
 
 Každá metoda má své výhody. Měli byste zvážit následující body, než vyberete metodu pro vaši organizaci.
 
-|                           |                                                                                                                                                                                                                                                         |                                                                                                                                                                         |
-|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                           | **Prognóza projektu**                                                                                                                                                                                                                                 | **Rozpočty projektu**                                                                                                                                                   |
+|                           |                                          |                                                    |
+|---------------------------|------------------------------------------|----------------------------------------------------|
+|                           | **Prognóza projektu**                  | **Rozpočty projektu**                              |
 | **Přidělení období**     | Transakce nelze přidělit explicitně za fiskální období. Místo toho prognóza a řízení prognózy vychází z životního cyklu projektu. Vzhledem k tomu, že prognózy jsou založeny na konkrétním datu, musíte období odvodit z data. | Transakce lze přidělit za celý projekt nebo fiskální období. Pokud provedete přidělení za období, můžete přenést nevyužité částky do dalšího fiskálního období. |
 | **Zobrazení transakcí**  | Transakce můžete zobrazit ve formulářích prognózy, kde uvidíte prognózy pro celou společnost a pro všechny projekty, bez ohledu na hierarchii. Chcete-li se zaměřit na určitý projekt, musíte filtrovat data.                                       | Můžete zobrazit rozpočtové transakce pro jedinou hierarchii projektů. Proto můžete zobrazit podrobnosti o transakcích pro nadřízený projekt a jeho dílčí projekty.                 |
-| **Proměnné transakcí** | Po zadání transakcí prognózy můžete využít každý atribut, který existuje, pro skutečnou transakci. To umožňuje větší podrobnosti v prognóze. Například můžete zadat podrobnosti o množství, pracovnících, zboží nebo vlastnostech řádku.         | Když zadáte podrobnosti rozpočtu, můžete použít pouze částky, kategorie a aktivity.                                                                                    |
-| **Zabezpečení**              | Prognóza je založena na transakcích, které zadáte ve formuláři prognózy, a nezahrnuje žádný mechanismus kontroly procesu. Jakýkoli pracovník, který má oprávnění pro formulář prognózy, může informace revidovat bez schválení.                                        | Rozpočtování využívá systém workflow, který umožňuje správu změn a zachování historie revizí.                                                       |
-| **Typy položek**           | Položky transakcí prognózy jsou založeny na počtu jednotek a na nákladových a prodejních jednotkových cenách.                                                                                                                                                       | Podrobnosti rozpočtu jsou založeny na částkách, které jsou rozděleny mezi náklady a výnosy.                                                                                        |
-| **Modely prognóz**       | Vzhledem k tomu, že každá prognóza musí být přidružena modelu, lze vytvořit několik modelů prognózy a rovněž nastavit dílčí modely.                                                                                                                               | Rozpočty projektu omezují modely prognózy, které se používají pro rozpočtování. Méně modelů prognózy může přispět ke zvýšení konzistence v projekcích.                           |
-| **Překročení nákladů**         | Můžete povolit nebo zakázat pouze položky transakcí, které způsobí překročení nákladů.                                                                                                                                                                | Sestavování rozpočtu projektu poskytuje další možnosti kontroly pro uživatele. Můžete povolit upozornění a překročení.                                                                   |
+| **Proměnné transakcí** | Po zadání transakcí prognózy můžete využít každý atribut, který existuje, pro skutečnou transakci. To umožňuje větší podrobnosti v prognóze. Například můžete zadat podrobnosti o množství, pracovnících, zboží nebo vlastnostech řádku.         | Když zadáte podrobnosti rozpočtu, můžete použít pouze částky, kategorie a aktivity.                    |
+| **Zabezpečení**              | Prognóza je založena na transakcích, které zadáte ve formuláři prognózy, a nezahrnuje žádný mechanismus kontroly procesu. Jakýkoli pracovník, který má oprávnění pro formulář prognózy, může informace revidovat bez schválení.                                        | Rozpočtování využívá systém workflow, který umožňuje správu změn a zachování historie revizí.         |
+| **Typy položek**           | Položky transakcí prognózy jsou založeny na počtu jednotek a na nákladových a prodejních jednotkových cenách.  | Podrobnosti rozpočtu jsou založeny na částkách, které jsou rozděleny mezi náklady a výnosy.                                          |
+| **Modely prognóz**       | Vzhledem k tomu, že každá prognóza musí být přidružena modelu, lze vytvořit několik modelů prognózy a rovněž nastavit dílčí modely.           | Rozpočty projektu omezují modely prognózy, které se používají pro rozpočtování. Méně modelů prognózy může přispět ke zvýšení konzistence v projekcích.                           |
+| **Překročení nákladů**         | Můžete povolit nebo zakázat pouze položky transakcí, které způsobí překročení nákladů.   | Sestavování rozpočtu projektu poskytuje další možnosti kontroly pro uživatele. Můžete povolit upozornění a překročení.                    |
 | **Kontrola**               | Ovládací prvek prognózy se provádí pomocí snížení prognózy. Skutečné částky jsou odečteny od zůstatků transakcí prognózy bez jakéhokoli záznamu pro audit. Proto může být složitější sledovat, kde ke skutečným transakcím došlo.                   | V kontrole rozpočtu projektu jsou skutečné částky odečteny od částek ve zbývajícím rozpočtu. To umožňuje lepší sledování auditu.                                   |
 
 ## <a name="project-forecasts"></a>Prognózy projektu
@@ -66,7 +64,7 @@ Modely prognóz mohou využívat snížení prognózy jako ovládací prvek pro 
 
 Prognózy projektu je možné opravit, kopírovat, odstraňovat nebo přenášet do rozpočtu hlavní knihy. Neexistuje však žádná kontrola procesů. Kterýkoli pracovník s oprávněním pro přístup k formuláři prognózy můžete provést jednotlivé opravy bez kontroly.
 
--   **Opravit ** – Umožňuje provést revizi transakcí prognóz ve stejných formulářích, kde byly vytvořeny původní záznamy.
+-   **Opravit** – Umožňuje provést revizi transakcí prognóz ve stejných formulářích, kde byly vytvořeny původní záznamy.
 -   **Kopírovat nebo odstranit** – Při kopírování transakcí prognóz můžete zkopírovat řádky transakce jednoho modelu prognóz do jiného modelu prognózy. Při odstraňování prognóz dochází k odstranění transakcí prognózy z modelu prognózy. Pokud chcete omezit transakce prognóz, které jsou zkopírovány nebo odstraněny, vyberte vhodné typy a data transakce. Tímto způsobem lze zkopírovat nebo odstranit pouze konkrétní části prognózy.
 -   **Převod** – Při přenosu prognózy projektu do rozpočtu hlavní knihy přenášíte transakce prognózy modelu prognózy do rozpočtu hlavní knihy. Transakce, které byly dříve přeneseny do rozpočtu hlavní knihy, do kterého přenášíte prognózu projektu, je možné přepsat.
 

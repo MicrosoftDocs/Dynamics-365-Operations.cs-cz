@@ -1,9 +1,9 @@
 ---
 title: "Klouzavý průměr"
-description: 
+description: "Klouzavý průměr je trvalá metoda nákladů založená na principu průměru, kde se náklady na skladový výdej nemění, když se mění nákupní ceny. Rozdíl je kapitalizován a je založen na proporcionálním výpočtu. Zbývající částka je zanesena do výdajů."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: afc8f4922810983a6582558f0577a05aa21cbdbb
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c1f8a8cf4a58177d423709f245760a5ba9ca7e4e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,8 +31,12 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](../includes/banner.md)]
 
+Klouzavý průměr je trvalá metoda nákladů založená na principu průměru, kde se náklady na skladový výdej nemění, když se mění nákupní ceny. Rozdíl je kapitalizován a je založen na proporcionálním výpočtu. Zbývající částka je zanesena do výdajů. 
+
+Při použití klouzavého průměru nejsou podporována vyrovnání a označení zásob. Uzávěrka skladu nemá vliv na produkty, které mají klouzavý průměr jako skupinu skladových modelů, a negeneruje žádná vyrovnání mezi transakcemi.
 
 Následují předpoklady pro použití klouzavého průměru nákladů jako nákladové metody.
+
 1.  V poli **Skupiny modelů položek** nastavte skupinu modelů položky, u kterých je vybrán Klouzavý průměr v poli **Skladový model**. **Poznámka:** Ve výchozím nastavení po výběru klouzavého průměru jsou vybrána také pole **Zaúčtovat fyzické zásoby** a **Zaúčtovat finanční zásoby**. 
 
 2.  Na stránce **Zaúčtování** přiřaďte účty do účtů **Cenová odchylka pro klouzavý průměr** a **Přecenění nákladů pro klouzavý průměr** na kartě **Zásoby**. Použijte účet **Cenová odchylka pro klouzavý průměr**, pokud musí být náklady proporcionálně zanesené do výdajů. K tomu dochází v důsledku rozdílů nákladů mezi nákupním příjmem a nákupní fakturou, a kvůli rozdílu mezi původním množstvím zásob a aktuálním množstvím na skladě. Účet **Přecenění nákladů pro klouzavý průměr** můžete použít, pokud chcete upravit klouzavý průměr nákladů na produkt pro novou jednotkovou cenu.
@@ -83,7 +87,7 @@ V tomto příkladu se upraví klouzavý průměr nákladů pro produkt.
 Na stránce **Vyrovnání pro doklad** se zobrazí úpravy 4,00 zaúčtované do účtu Přecenění nákladů pro klouzavý průměr.
 
 ## <a name="moving-average-with-production"></a>Klouzavý průměr pro výrobu
-Klouzavý průměr podporuje vyrobené položky. Pokud chcete použít klouzavý průměr v provozním prostředím, vyberte posuvník **Použít odhadovanou nákladovou cenu** na stránce **Parametry modulu řízení výroby**. To znamená, že nákladová cena, která se vypočítá během odhadu, bude použita místo skutečné nákladové ceny z výpočtu v kusovníku.
+Klouzavý průměr podporuje vyrobené položky. Pokud chcete použít klouzavý průměr v provozním prostředím, vyberte posuvník **Použít odhadovanou nákladovou cenu** na stránce **Parametry modulu Řízení výroby**. To znamená, že nákladová cena, která se vypočítá během odhadu, bude použita místo skutečné nákladové ceny z výpočtu v kusovníku.
 
 ## <a name="moving-average-with-a-backdated-transaction"></a>Klouzavý průměr s datovanou transakcí
 Zpětně datované transakce jsou přiřazeny k aktuálnímu klouzavému průměru nákladů a aktualizuje se fyzické množství produktu, ale neovlivní se klouzavý průměr nákladů produktu. V tomto příkladu klouzavého průměru je zaúčtována zpětně datovaná transakce pro klouzavý průměr produktu.

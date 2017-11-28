@@ -16,10 +16,10 @@ ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: e891f501727842e176741953df5ef9dd0336a2d5
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: fdcd3083f475967ec2e5f94dad850a1bf98c864a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -35,7 +35,7 @@ Obsah **Přehled hotovosti** v Power BI byl vytvořen pro jednotlivce, kteří z
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 
-Pokud používáte aplikaci Dynamics 365 Finance and Operations, Enterprise Edition (červenec 2017), sestavy z obsahu **Přehled hotovosti** v Power BI jsou zobrazeny v pracovních prostorech **Přehled hotovosti** a **Správy banky**.
+Pokud používáte aplikaci Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017), sestavy z obsahu **Přehled hotovosti** v Power BI jsou zobrazeny v pracovních prostorech **Přehled hotovosti** a **Správy banky**.
 
 Aby bylo možné zobrazit sestavy hotovostního toku s datem, je nutné nejprve spustit proces výpočtu prognózy pomocí funkce **Vypočítat prognózy hotovostního toku** v oblasti správy hotovosti a banky.  To je třeba dokončit pro každou společnost zahrnutou do prognózy.  Potom je nutné aktualizovat souhrnné měření LedgerCovLiquidityMeasurement na stránce **Úložiště entit**.  
 

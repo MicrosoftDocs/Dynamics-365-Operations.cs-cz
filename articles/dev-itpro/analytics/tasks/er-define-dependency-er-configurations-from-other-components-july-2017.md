@@ -16,19 +16,19 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 1a627e2261c4c9c854b68262d7ce316ab6d40dd4
+ms.sourcegitcommit: 7de5fbcaa9f287752e3ae4834eb48d622d263579
+ms.openlocfilehash: 890f035a291dbec936594ceeabc5de284d160ad4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/25/2017
 
 ---
-# <a name="define-the-dependency-of-configurations-from-othcomponents-for-electronic-reporting-er"></a>Definování závislosti konfigurací z jiných komponent pro elektronické výkaznictví (ER)
+# <a name="define-the-dependency-of-configurations-from-other-components-for-electronic-reporting-er"></a>Definování závislosti konfigurací z jiných komponent pro elektronické výkaznictví (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
 K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh, ER Správa konfigurací mapování modelů, a mít přístup k aplikaci Microsoft Dynamics Lifecycle Services (LCS).
 
-Tento postup popisuje postup návrhu konfigurace elektronických sestav (ER) a zadání závislosti z dalších softwarových komponent, abyste tak mohli zajistit správné stažení konfigurace pro specifickou verzi aplikace Microsoft Dynamics 365 for Finance and Operations, edice Enterprise. V tomto příkladu vytvoříte požadované ER konfigurace pro vzorovou společnost Litware, Inc. 
+Tento postup popisuje postup návrhu konfigurace elektronických sestav (ER) a zadání závislosti z dalších softwarových komponent, abyste tak mohli zajistit správné stažení konfigurace pro specifickou verzi aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. V tomto příkladu vytvoříte požadované ER konfigurace pro vzorovou společnost Litware, Inc. 
 
 Tento postup je navržen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. Kroky lze provést v každé společnosti, protože konfigurace ER jsou sdíleny společnostmi. 
 
@@ -62,7 +62,7 @@ Tento postup je navržen pro uživatele s přiřazenou rolí správce systému n
 18. Vyberte Microsoft Dynamics AX 7.0 RTW.
 19. V poli Verze zadejte [7.0.1265.3015,7.1).
     * [7.0.1265.3015,7.1)  
-    * Závislosti budou vyhodnoceny po stažení této konfigurace z některého úložiště ER. Tato verze konfigurace bude stažena z úložiště ER, pokud je verze 1 konfigurace Vzorový model dat již k dispozici nebo stažena předem. Pokud dojde ke stažení předem, musí být proces dokončen v aplikaci Microsoft Dynamics 365 for Finance and Operations, edice Enterprise, a verze musí být 7.0.1265.3015 nebo novější, ale nesmí přesáhnout menší verzi 1.   
+    * Závislosti budou vyhodnoceny po stažení této konfigurace z některého úložiště ER. Tato verze konfigurace bude stažena z úložiště ER, pokud je verze 1 konfigurace Vzorový model dat již k dispozici nebo stažena předem. Pokud dojde ke stažení předem, musí být proces dokončen v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, a verze musí být 7.0.1265.3015 nebo novější, ale nesmí přesáhnout menší verzi 1.   
 20. Klikněte na položku Uložit.
 21. Zavřete stránku.
 22. Klikněte na položku Změnit stav.
@@ -139,6 +139,6 @@ Tento postup je navržen pro uživatele s přiřazenou rolí správce systému n
 25. Přejděte do části Správa organizace > Elektronické výkaznictví > Konfigurace.
 26. Ve stromovém zobrazení rozbalte Ukázkový datový model.
     * Všimněte si, že konfigurace modelu mapování Vzorové mapování bylo staženo spolu s vybranou konfigurací modelu dat. Dva soubory jsou staženy společně vzhledem k tomu, že 'Ukázkové mapování' bylo definováno jako implementace vybraného datového modelu a vzhledem k tomu, že je použitelné pro Finance a Operace. Konfigurace Vzorové mapování (alternativní) nebylo staženo, protože podmínky pro požadovanou aplikační verzi nebyly splněny.   
-    * Pokud jste přihlášeni k Dynamics 365 for Finance and Operations, Enterprise edition, zaregistrujte si stejného poskytovatele, přejděte na projekt LCS a stáhněte stejnou konfiguraci datového modelu, stáhne se konfigurace Ukázkové mapování (alternativní) a konfigurace "Ukázkové mapování" bude přeskočena.  
+    * Pokud jste přihlášeni k Dynamics 365 for Finance and Operations, Enterprise Edition, zaregistrujte si stejného poskytovatele, přejděte na projekt LCS a stáhněte stejnou konfiguraci datového modelu, stáhne se konfigurace Ukázkové mapování (alternativní) a konfigurace "Ukázkové mapování" bude přeskočena.  
 
 

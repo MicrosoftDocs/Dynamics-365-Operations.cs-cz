@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fbe32e248727912073631f1dfb8ee0a49cbf0a5e
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 7563c749d0d2b5747f1b7886def82ba7191499b1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -36,11 +36,10 @@ Konfigurujte modul Pohledávky a Kredit a inkasa pro sledování faktur a příc
 Můžete vytvořit skupiny odběratelů, odběratele, účetní profily, různé možnosti platby, oznámení úroků, upomínky, provize, parametry týkající se odběratelů, poplatků, dodání a míst určení, cizí směnky nebo další typy informací o pohledávkách a kreditu a inkasu.
 V následující tabulce jsou uvedeny stránky, které slouží ke konfiguraci a údržbě pohledávek a úvěrů a inkas. Položky těchto tabulek jsou uspořádány podle úkolů a poté abecedně podle názvu stránky.
 
-| ![Poznámka](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Poznámka")**Poznámka**          |
-|--------------------------------------------------------------------------------------------------|
-| Aby bylo možné na některé stránky v následující tabulce přejít, jsou nutné určité informace nebo nastavení parametrů. |
+> [!NOTE]
+> Nelze přejít na některé stránky v následující tabulce, pokud na jiných stránkách nebyla zadána data nebo nastavení parametrů.
 
-| Úkol                                                 | Název webové stránky                            | Použití                                                                                                                                                                                                                                                                             |
+| Úkol                                                 | Název stránky                            | Použití                                                                                                                                                                                                                                                                             |
 |------------------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfigurace požadovaných informací o pohledávkách | Parametry pohledávek       | Nastavení parametrů modulu Pohledávky.                                                                                                                                                                                                                             |
 |                                                      | Workflowy pohledávek        | Vytvoření workflowu nebo jeho úprava.                                                                                                                                                                                                                                      |

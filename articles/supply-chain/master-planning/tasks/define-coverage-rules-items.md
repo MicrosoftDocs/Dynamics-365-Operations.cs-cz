@@ -3,7 +3,7 @@ title: "Definování pravidel disponibility pro položky"
 description: "K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 14f56c30753da9458d66a46da8935305619fd0b8
+ms.sourcegitcommit: 76334f7ee4efe33df4a86aaa11a59748387cec89
+ms.openlocfilehash: fe92393cc264df68f084db6974f7d4607d37d3ab
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="define-coverage-rules-for-items"></a>Definování pravidel disponibility pro položky
@@ -100,7 +100,7 @@ K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. T
 4. Klikněte na záložku Obecné.
 5. Zaškrtněte políčko v záhlaví Přepsat nastavení skupiny disponibility.
 6. V poli Ochranná doba disponibility (ve dnech) zadejte číslo 60.
-    * I když jsou položky ve skupině disponibility Požadavky plánované 90 dnů dopředu, tato položka bude plánovaná 60 dní dopředu.  
+    * I když jsou položky ve skupině disponibility Požadavek plánované 90 dnů dopředu, tato položka bude plánovaná 60 dní dopředu.  
 7. V poli Dny zpoždění zadejte číslo 2.
 8. V poli Kladné dny zadejte číslo 2.
 9. Klikněte na kartu Doba realizace.

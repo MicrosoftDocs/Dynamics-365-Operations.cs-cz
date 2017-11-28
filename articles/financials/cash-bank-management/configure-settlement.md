@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: ade348540a6d3e9210321d3661e97ac716efaf58
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 0069246a60f1db6297df45fa57cd52d90cdb4ab5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/29/2017
 
 To, jak a kdy jsou transakce vyrovnány, může být poměrně složité, proto je nutné pochopit a správně definovat parametry pro splnění požadavků společnosti. Tento článek popisuje parametry, které se používají k vyrovnání pro závazky i pohledávky. 
 
-Následující parametry ovlivní způsob zpracování vyrovnání v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Vyrovnání je proces vyrovnání faktury podle platbou nebo dobropisem. Tyto parametry jsou umístěny v oblasti **Vyrovnání** stránek **Parametry pohledávek** a **Parametry závazků**.
+Následující parametry ovlivní způsob zpracování vyrovnání v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Vyrovnání je proces vyrovnání faktury podle platbou nebo dobropisem. Tyto parametry jsou umístěny v oblasti **Vyrovnání** stránek **Parametry pohledávek** a **Parametry závazků**.
 
 -   **Automatické vyrovnání** – nastavte možnost na hodnotu **Ano**, má-li se transakce automaticky vyrovnat oproti otevřeným transakcím při zaúčtování. Je-li tato možnost je nastavena na hodnotu **Ne**, uživatelé mohou transakce vyrovnat ručně při zadávání plateb nebo později pomocí stránky **Vyrovnat transakce**.
 -   **Správa platební slevy** – zadejte způsob [zpracování platební slevy při přeplacení faktury](cash-discount-handling-overpayments.md). U přeplatku lze platební slevu snížit, považovat za rozdíl nebo ponechat na účtu pro dodavatele nebo odběratele.

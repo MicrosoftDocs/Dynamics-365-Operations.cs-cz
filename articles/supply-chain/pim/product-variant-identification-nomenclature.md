@@ -1,9 +1,9 @@
 ---
 title: "Názvosloví čísel a názvů variant produktu"
-description: "Toto téma popisuje, jak nastavit názvosloví pro čísla produktu, které nahradí opravený formát [základní produkt - konfigurace – velikost – barva – styl]. Nové názvosloví má cílený formát, který zahrnuje číslo základního produktu, rozměry aktivního produktu a textové oddělovače podle vašeho výběru. Můžete také vytvořit názvosloví pro názvy produktů. A konečně můžete také vytvořit názvosloví k identifikaci konfigurací, které jsou vytvořeny konfigurátorem produktu založeném na omezeních. Tato názvosloví můžou obsahovat atributy podle vašeho výběru."
+description: "Toto téma popisuje, jak nastavit názvosloví pro čísla produktu, které nahradí opravený formát [základní produkt - konfigurace – velikost – barva – styl]."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 4ebebc1d287908dbe8ac7557c34fc6693c88bfae
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 067e14d8a0ab9cb5b703c1d2596dab3e20487336
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -68,7 +68,7 @@ Tričko (TS1234) se vyrábí ve třech velikostech (S, M, L), čtyřech barvách
 
 V tomto případě bude číslo varianty produktu pro červené, malé polo tričko: TS1234-Red-Small-Polo.
 
-## <a name="nomenclature-of-constraintbased-configurations"></a>Názvosloví konfigurací založených na omezeních
+## <a name="nomenclature-of-constraint-based-configurations"></a>Názvosloví konfigurací založených na dimenzích
 Pro konfigurace založené na omezeních můžete vytvořit vyhrazené názvosloví pro dimenzi konfiguračního produktu. Můžete vybrat následující segmenty na stránce **Názvosloví produktu**:
 
 -   Hodnota číselné řady
@@ -92,7 +92,7 @@ Vytvoříte názvosloví konfigurace, které obsahuje následující segmenty:
 
 V takovém případě bude ID konfigurace dřevěného materiálu, který má délku 78, WoodAAA78.
 
-## <a name="nomenclature-of-dimensionbased-configurations"></a>Názvosloví konfigurací založených na dimenzích
+## <a name="nomenclature-of-dimension-based-configurations"></a>Názvosloví konfigurací založených na dimenzích
 Pro konfigurace založené na dimenzích můžete vytvořit vyhrazené názvosloví pro dimenzi konfiguračního produktu. Můžete vybrat následující segmenty na stránce **Názvosloví produktu**:
 
 -   Hodnota číselné řady

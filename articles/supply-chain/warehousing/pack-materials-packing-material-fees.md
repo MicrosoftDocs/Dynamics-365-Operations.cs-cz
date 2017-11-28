@@ -3,7 +3,7 @@ title: "Obalové materiály a poplatky"
 description: "Poplatky za balicí materiál se recyklační společnosti hradí v určitých intervalech. Platí se částka za hmotnostní jednotku za každý materiál, ze kterého se skládá jednotka balného. Poplatky za balicí materiál jsou vypočítány a vykázány, ale nezaúčtují se žádné nikdy neúčtované transakce, protože poplatky se nepovažují za daně, které je třeba zaplatit úřadům."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2194
 ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5d7cd7b3d60e9c265a766695b53d8d27ee2a8d0a
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: b131cdfa2f0e3b6a8f116464323d49eaa4584634
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -56,7 +56,7 @@ Při vytvoření řádku prodejní objednávky systém zkontroluje, zda jsou pro
 ## <a name="packing-units-on-purchase-order-lines"></a>Jednotky balení na řádcích nákupní objednávky
 Transakce obalového materiálu pro řádek nákupní objednávky nejsou systémem vytvářeny. Na stránce **Transakce obalového materiálu** můžete ručně vytvořit transakce pro fakturované řádky nákupní objednávky.
 
-## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Nastavení licenčních čísel poplatku za obalový materiál odběratelů
+## <a name="set-up-customer-packaging-material-fee-license-numbers"></a>Nastavení licenčních čísel poplatku za obalový materiál odběratelů
 Pokud odběratelé platí poplatky za obalový materiál, zadejte licenční čísla poplatku za obalový materiál odběratelů na stránce **Odběratelé**. Po přiřazení licenčního čísla odběrateli se při fakturování prodejních objednávek automaticky vypočítávají poplatky za obalový materiál. Po fakturování se označení zaškrtávacího políčka **Vypočítat poplatek** na stránce **Transakce obalového materiálu** zruší, protože není nutné vypočítávat a tisknout sestavu. Na faktuře můžete vytisknout hmotnosti obalového materiálu a informovat odběratele, že platí poplatky. 
 
 Pokud vaše společnost platí poplatky za obalový materiál, nezadávejte licenční čísla odběratelů. Po vyfakturování se označí zaškrtávací políčko **Vypočítat poplatek** na stránce **Transakce obalového materiálu**. To znamená, že se poplatky vypočítají při vytvoření sestavy. Na faktuře můžete vytisknout hmotnosti a informovat o tom, že poplatky za obalový materiál platí vaše společnost.

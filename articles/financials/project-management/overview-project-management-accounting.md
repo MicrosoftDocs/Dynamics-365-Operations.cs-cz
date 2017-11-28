@@ -3,7 +3,7 @@ title: "Řízení a účetnictví projektů"
 description: "Funkci řízení projektu a účetnictví lze použít v několika odvětvích k poskytování služeb, výrobě produktů nebo dosažení výsledků."
 author: KimANelson
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: cd30c9278c58f8e0ca9b50f67a999708bd64c0a2
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 6a2c51d9ffe288dad2db43ecd0a4c8f717c6379a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -247,11 +247,11 @@ Finance and Operations nesnižuje automaticky prognózované odhady. Je proto vh
 </tr>
 <tr class="even">
 <td>Jako předchozí odhad</td>
-<td>Použije se stejná metoda odhadu jako v předchozím období. Tato metoda vyžaduje model prognózy, pokud ho vyžadovalo předchozí období.</td>
+<td>Použije se stejná metoda odhadu, která byla použita v předchozím období. Tato metoda vyžaduje model prognózy, pokud předchozí období vyžadovalo model prognózy.</td>
 </tr>
 <tr class="odd">
 <td>Nastavit náklady dokončení na nulu</td>
-<td>Tato metoda se obvykle používá předtím, než se eliminuje projekt odhadu. Tato metoda přiřadí celkové odhady skutečným transakcím, které byly zaúčtovány, a vymaže sloupec <strong>Náklady na dokončení</strong>. Výsledná procentuální hodnota dokončení je vždy 100 procent. Pole <strong>Prognózování</strong> není vybráno pro každý řádek nákladů, který vytvoříte, a celkový odhad se zkopíruje z předchozího odhadu nákladů. Skutečná spotřeba pro období odhadu se odvozuje z nákladů na dokončení projektu. Tato metoda nevyžaduje model prognózy.</td>
+<td>Tato metoda se obvykle používá předtím, než se eliminuje projekt odhadu. Tato metoda přiřadí celkové odhady skutečným transakcím, které byly zaúčtovány, a vymaže sloupec <strong>Náklady na dokončení</strong>. Výsledná procentuální hodnota dokončení je vždy 100 procent. Pole <strong>Prognózování</strong> není vybráno pro každý řádek nákladů, který vytvoříte, a celkový odhad se zkopíruje z předchozího odhadu nákladů. Aktuální spotřeba pro období odhadu je odvozena z nákladů na dokončení projektu. Tato metoda nevyžaduje model prognózy.</td>
 </tr>
 <tr class="even">
 <td>Z šablony nákladů</td>

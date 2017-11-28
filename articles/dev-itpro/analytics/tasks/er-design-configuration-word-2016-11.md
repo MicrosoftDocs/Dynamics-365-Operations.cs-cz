@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d602e07548d22bcdee3f375c3c327c0e8963c3b4
+ms.sourcegitcommit: 7f80dc8411d38d051b01d77e35635a920d8803a6
+ms.openlocfilehash: 300cf6ed1a5a7098e71b812d682c1b51c2cf786c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 # <a name="design-a-configuration-for-generating-reports-in-microsoft-word-format-for-electronic-reporting-er"></a>Návrh konfigurace pro generování sestav ve formátu Microsoft Word pro elektronické výkaznictví (ER)
@@ -30,9 +30,9 @@ Následující kroky vysvětlují, jak uživatel v roli správce systému nebo v
 
 K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh s názvem „Vytvoření konfigurace ER pro generování sestav ve formátu OPENXML“. Předem musíte také stáhnout a uložit následující šablony pro vzorovou sestavu:
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReport.docx
+[Šablona sestavy platby](https://go.microsoft.com/fwlink/?linkid=862266)
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReportBounded.docx
+[Vázaná šablona sestavy platby](https://go.microsoft.com/fwlink/?linkid=862266)
 
 Tato procedura je určena pro funkci, která byla přidána do aplikace Microsoft Dynamics 365 for Operations, verze 1611.
 
@@ -49,7 +49,7 @@ Tato procedura je určena pro funkci, která byla přidána do aplikace Microsof
 ## <a name="replace-the-excel-template-with-the-word-template"></a>Výměna šablony aplikace Excel za šablonu aplikace Word
     * V současné době se používá dokument Excel jako šablona pro generování výstupu ve formátu OPENXML. Budeme importovat šablonu sestavy ve formátu Word.  
 1. Klikněte na Přílohy.
-    * Nahraďte existující šablonu aplikace Excel za šablonu Word s názvem SampleVendPaymDocReport.docx, kterou jste předtím stáhli. Všimněte si, že tato šablona obsahuje pouze rozvržení dokumentu, který chceme generovat jako ER výstup.  
+    * Nahraďte existující šablonu aplikace Excel za šablonu Word, kterou jste předtím stáhli, šablonu sestavy platby. Všimněte si, že tato šablona obsahuje pouze rozvržení dokumentu, který chceme generovat jako ER výstup.  
 2. Klepněte na tlačítko Odstranit.
 3. Klepněte na tlačítko Ano.
 4. Klikněte na položku Nová.

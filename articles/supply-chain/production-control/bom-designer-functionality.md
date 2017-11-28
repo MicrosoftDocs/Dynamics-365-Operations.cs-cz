@@ -1,9 +1,9 @@
 ---
-title: "Funkce pro návrh kusovníku"
-description: "Tento článek popisuje, jak můžete na stránce Návrhář kusovníku navrhnout a používat stromové struktury pro kusovníky (BOM). Kliknutím na možnost Nastavení můžete vybrat různé konfigurace a určit, které informace mají být zobrazeny v rámci jednotlivých liniích stromu."
+title: "Funkce návrháře kusovníku"
+description: "Toto téma popisuje, jak můžete na stránce Návrhář kusovníku navrhnout a používat stromové struktury pro kusovníky (BOM)."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMDesigner
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 20981
 ms.assetid: 2b92eec1-d28c-4965-9086-939c77b3c62b
 ms.search.region: Global
@@ -20,19 +20,19 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 011e8220e155a5202b7b0a18bbfa9581826645d0
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 41f629401731920a9cb6443ada8b1a34a70e8da9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="bom-designer-functionality"></a>Funkce pro návrh kusovníku
+# <a name="bom-designer-functionality"></a>Funkce návrháře kusovníku
 
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje, jak můžete na stránce Návrhář kusovníku navrhnout a používat stromové struktury pro kusovníky (BOM). Kliknutím na možnost Nastavení můžete vybrat různé konfigurace a určit, které informace mají být zobrazeny v rámci jednotlivých liniích stromu.
+Toto téma popisuje, jak můžete na stránce Návrhář kusovníku navrhnout a používat stromové struktury pro kusovníky (BOM). Kliknutím na možnost Nastavení můžete vybrat různé konfigurace a určit, které informace mají být zobrazeny v rámci jednotlivých liniích stromu.
 
 Otevřete-li stránku **Návrhář Kusovníku** ze stránky **Uvolněné produkty**, zobrazí se na ní hierarchie kusovníků (BOM), které jsou aktivní a schválené pro vybranou položku, výchozí objednací web položky a skutečné datum.  
 
@@ -66,7 +66,7 @@ Filtr, který je použit pro kusovník a postup se zobrazí v záhlaví návrhá
 <tbody>
 <tr class="odd">
 <td>Dimenze produktu</td>
-<td>Pokud je vybraný hotový produkt základním produktem, můžete definovat aktivní dimenze produktu pro hlavní výběr.<strong>Poznámka:</strong> Pokud otevřete návrhář kusovníku pro produkt, který není základním produktem, nelze v dialogovém okně <strong>Filtr</strong> vybrat žádné dimenze produktu.</td>
+<td>Pokud je vybraný hotový produkt základním produktem, můžete u hlavního výběru definovat aktivní dimenze produktu. <strong>Poznámka:</strong> Pokud otevřete návrhář kusovníku pro produkt, který není základní, v dialogovém okně <strong>Filtr</strong> nebude možné vybrat žádné dimenze produktu.</td>
 </tr>
 <tr class="even">
 <td>Lokalita</td>

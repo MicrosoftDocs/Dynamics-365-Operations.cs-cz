@@ -1,6 +1,6 @@
 ---
 title: "Typy deníků hl. knihy"
-description: "Tento článek popisuje typy deníků, které lze nastavit pro finanční deníky. Na stránce Názvy deníků lze nastavit deníky, které můžete používat v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+description: "Tento článek popisuje typy deníků, které lze nastavit pro finanční deníky. Na stránce Názvy deníků lze nastavit deníky, které můžete používat v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,10 +18,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6f665f34055e36775c8bb41be4aae9c4577639d7
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c05b199104af2c367266e3cd15937425e6457397
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tento článek popisuje typy deníků, které lze nastavit pro finanční deníky. Na stránce Názvy deníků lze nastavit deníky, které můžete používat v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+Tento článek popisuje typy deníků, které lze nastavit pro finanční deníky. Na stránce Názvy deníků lze nastavit deníky, které můžete používat v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
 
 | Typ deníku                      | Účel                                                                                                                                                                                                                                                                                                                                                     | Zadejte transakce na této stránce                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|

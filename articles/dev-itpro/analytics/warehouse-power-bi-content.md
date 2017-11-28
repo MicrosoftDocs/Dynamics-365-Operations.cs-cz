@@ -18,10 +18,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: b4963c11f0cf3fb05e1905b265d4156323407e84
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: d30a14e78e35c94b9f8945d2fcc973f921698953
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -42,7 +42,7 @@ Vedoucí skladu mohou používat obsah **výkonu skladu** v Power BI k měření
 -   **Přesnost umístění zásob** – Přesnost zásob je důležitá interní skladová business intelligence. Je velmi důležité, abyste stanovili, s jakou přesností obecně provádíte inventuru. Také je však důležité určit, jak přesní jste při skladování zboží na správných místech, a poukázat na nesrovnalosti, abyste mohli najít pro zboží lepší umístění nebo zahájit celkovou inventuru konkrétního zboží. (V současné době nová funkce inventury podle zboží je poskytována jako oprava hotfix.) Používáte-li tento obsah Power BI k určení správnosti údajů množství na skladě podle skladového místa, můžete též určit krádeže ve vašich obchodech. Můžete také určit, zda má nějaké skladové místo na skladě taková množství, která se liší od údajů v systému plánování podnikových zdrojů. Taková skladová místa mohou být příliš velká nebo v nich nelze inventuru provést. Případně některá fyzická umístění mohou být nesprávná, takže je obtížné udržet jeden typ zboží v souladu s daty o zásobách na skladě.
 
 ## <a name="accessing-the-power-bi-content-pack"></a>Přístup k balíčku obsahu Power BI
-Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, (červenec 2017), obsah **Výkonnost skladu** v Power BI se zobrazuje na stránce **Výkonnost skladu** (**Řízení výroby** > **Dotazy a sestavy** > **Analýza výkonnosti skladu** > **Výkonnost skladu**). 
+Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, (červenec 2017), obsah **Výkonnost skladu** v Power BI se zobrazuje na stránce **Výkonnost skladu** (**Řízení výroby** > **Dotazy a sestavy** > **Analýza výkonnosti skladu** > **Výkonnost skladu**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriky, které jsou součástí obsahu Power BI
 Obsah **výkonu skladu** Power BI zahrnuje sestavu. Tato sestava obsahuje sadu metrik, které jsou zobrazovány jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizace v obsahu **výkonu skladu** v Power BI.

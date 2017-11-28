@@ -1,9 +1,8 @@
 ---
 title: "Přehled maloobchodních periferních zařízení"
-description: "Toto téma vysvětluje pojmy související s maloobchodními periferními zařízeními. Popisuje různé způsoby, jakými mohou být periferní zařízení připojena k pokladnímu místu (POS) a komponenty odpovídající za správu připojení k POS."
-author: rubencdelgado
+description: "Toto téma vysvětluje pojmy související s maloobchodními periferními zařízeními."
 manager: AnnBe
-ms.date: 06/19/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,14 +17,14 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e886411421fda17bb67f8ecedc1f7f3420e1fa72
+ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
+ms.openlocfilehash: 347100651302bb97806783d00559f2396d031fcc
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
-# <a name="retail-peripherals-overview"></a>Přehled maloobchodních periferních zařízení
+# <a name="retail-peripherals-overview"></a>Přehled maloobchodních zařízení
 
 [!include[banner](includes/banner.md)]
 
@@ -575,7 +574,7 @@ Podle stávajících bezpečnostních standardů je třeba ve výrobním prostř
 ## <a name="peripheral-simulator"></a>Simulátor periferních zařízení
 Informace naleznete v tématu [Maloobchodní simulátor periferií](dev-itpro/retail-peripheral-simulator.md).
 
-## <a name="microsofttested-peripheral-devices"></a>Periferní zařízení otestována Microsoftem
+## <a name="microsoft-tested-peripheral-devices"></a>Periferní zařízení otestována Microsoftem
 ### <a name="ipc-built-in-hardware-station"></a>Hardwarová stanice IPC (vestavěná)
 
 Následující periferní zařízení byla testována pomocí hardwarové stanice IPC, která je zabudována do moderního POS pro systém Windows.

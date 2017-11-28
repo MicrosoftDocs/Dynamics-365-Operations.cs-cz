@@ -1,7 +1,7 @@
 ---
 title: "Návrhář receptur v elektronickém výkaznictví"
-description: "Toto téma popisuje, jak lze používat návrháře receptur v elektronickém výkaznictví. Při vytváření formátu pro určitý elektronický dokument pro elektronické výkaznictví můžete použít vzorce podobné vzorcům aplikace Microsoft Excel pro transformaci dat za účelem plnění požadavků na plnění a formátování daného dokumentu. Jsou podporovány různé typy funkcí – text, datum a čas, matematická logika, informace, převod datových typů a další (funkce specifické pro danou obchodní doménu)."
-author: kfend
+description: "Toto téma popisuje, jak lze používat návrháře receptur v elektronickém výkaznictví."
+author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
@@ -19,14 +19,14 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 37c860599ad555846d11711e9f3cfb29c599131e
-ms.openlocfilehash: 7704b0545f4264be1f844ed6ad9e4b44df0c4ef8
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 58bef33642d83def841eaa8334ea6f942063e0b3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="formula-designer-in-electronic-reporting"></a>Návrhář receptur v elektronickém výkaznictví
+# <a name="formula-designer-in-electronic-reporting"></a>Návrhář vzorců v elektronickém výkaznictví
 
 [!include[banner](../includes/banner.md)]
 
@@ -593,11 +593,12 @@ Zde je vzorec, který lze vytvořit: FORMAT (CONCATENATE (@&quot;SYS70894&quot;,
 <td>GETENUMVALUEBYNAME (cesta zdroje dat výčtu, text popisku hodnoty výčtu)</td>
 <td>Vrátí hodnotu zadaného zdroje dat výčtu podle zadaného textu tohoto popisku výčtu.</td>
 <td>Následující příklad ukazuje výčet ReportDirection zavedený v datovém modelu. Pro hodnoty výčtu jsou definovány popisky.
-<a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> Následující příklady ukazují:
+<a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>  
+<p>Následující příklady ukazují:</p>
 <ul><li>Výčet modelu <strong>ReportDirection</strong> vložený do sestavy jako zdroj dat <strong>$Direction</strong>.</li>
 <li>Výraz elektronického výkaznictví <strong>$IsArrivals</strong> nastavený na použití výčtu modelu jako parametru této funkce. Hodnota tohoto výrazu je <strong>TRUE</strong>.
-
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></li></ul></td>
+</li></ul>
+<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></td>
 </tr>
 </tbody>
 </table>

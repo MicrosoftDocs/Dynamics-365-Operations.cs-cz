@@ -3,7 +3,7 @@ title: "Překlady související s produktem – nejčastější dotazy"
 description: "Toto téma popisuje, jak spravovat překlady pro produkty, hodnoty dimenze produktu a atributy produktu."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b2976d4fc62a71039da0bc8be5b50be92a95959c
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 2c58e3e2f60c00d8d834c1d80b347e2e7087809d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -47,7 +47,7 @@ Informace související s produkty můžete překládat do jakéhokoli jazyka, k
 ## <a name="where-can-i-view-the-translated-information"></a>Kde se můžu podívat na přeložené informace?
 Překlad informací o produktu můžete zobrazit v jakémkoli externím zdrojovém dokumentu, jako je faktura, která používá jazyk, kde jsou k dispozici překlady.
 
-## <a name="how-do-i-create-translations-for-productrelated-information"></a>Jak se vytvářejí překlady pro informace související s produktem?
+## <a name="how-do-i-create-translations-for-product-related-information"></a>Další informace naleznete v tématu Vytvoření překladů pro informace související s produktem.
 Při vytváření překladů produktu postupujte takto:
 1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Uvolněné produkty**.
 2.  Vyberte produkt a v podokně akcí ve skupině **Jazyky** klikněte na **Překlady**.
@@ -124,7 +124,7 @@ Pokud chcete spravovat překlady hodnot v určité skupině hodnot dimenze, post
 1.  Postupujte podle pokynů v předchozím postupu pro vytvoření skupiny hodnot dimenzí k otevření stránky **Řádky skupiny velikostí**, **Řádky skupiny barev**, nebo **Řádky skupiny stylů**.
 2.  Klikněte na **Překlad textu**. Na stránce **Překlad textu** ve skupině **Přeložený text** zadejte překlady do pole **Název** a **Popis**.
 
-## <a name="when-can-translations-of-productrelated-information-be-managed"></a>Kdy lze spravovat překlady informací souvisejících s produktem?
+## <a name="when-can-translations-of-product-related-information-be-managed"></a>Kdy lze spravovat překlady informací souvisejících s produktem?
 Překlady informací souvisejících s produktem lze spravovat kdykoli. Při aktualizaci překladů pro hodnotu dimenze, která je přidružena k produktu, se aktualizují informace o produktu, bez ohledu na to, zda má produkt transakce.
 
 

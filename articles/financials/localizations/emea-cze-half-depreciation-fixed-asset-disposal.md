@@ -3,24 +3,24 @@ title: "Pololetní odpisy vyřazení dlouhodobého majetku pro Českou republiku
 description: "Toto téma vysvětluje, jak nastavit pololetní odpisy, tak abyste mohli použít pololetní odpisy dlouhodobého majetku, který je prodaný nebo jinak vyřazený."
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 264554
 ms.search.region: Czech Republic
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: d3c33a8280392ea4cf3e150e2080dc0f0a237e2e
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 4d2498c21cefa9c03a1570e60f70eacc25480b63
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -42,7 +42,7 @@ Použijte metody odpisů Rovnoměrné CZ a Zrychlené CZ pro uplatnění pololet
 4.  V poli **Odpisový rok** vyberte jako základ pro výpočet odpisů možnost **Kalendář**.
 5.  V poli **Frekvence období** vyberte **Roční**.
 
-## <a name="apply-the-halfyearly-depreciation-method"></a>Použití pololetní metody odpisů
+## <a name="apply-the-half-yearly-depreciation-method"></a>Použití pololetní metody odpisů
 Po nastavení metod odpisů lze použít pololetní odpisy majetku pro vyřazený majetek.
 
 1.  Klikněte na **Dlouhodobý majetek** &gt; **Deníky** &gt; **Dlouhodobý majetek**.

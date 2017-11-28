@@ -1,6 +1,6 @@
 ---
 title: "Nastavení platební karty, autorizace a záznam"
-description: "Tento článek podává přehled o autorizaci platební karty v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Obsahuje informace o způsobu nastavení platební služby, přidání platební karty do prodejní objednávky a anulování ověření."
+description: "Tento článek podává přehled o autorizaci platební karty v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Obsahuje informace o způsobu nastavení platební služby, přidání platební karty do prodejní objednávky a anulování ověření."
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: dad3964003d0be0c22b0346aba2b3319278ffaa9
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 40d636cac477871f094286d29edc32cd5616ad44
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/29/2017
 [!include[retail name](../includes/retail-name.md)]
 
 
-Tento článek podává přehled o autorizaci platební karty v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Obsahuje informace o způsobu nastavení platební služby, přidání platební karty do prodejní objednávky a anulování ověření.
+Tento článek podává přehled o autorizaci platební karty v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Obsahuje informace o způsobu nastavení platební služby, přidání platební karty do prodejní objednávky a anulování ověření.
 
 <a name="setting-up-the-credit-card-payment-service"></a>Nastavení služby pro platby platební kartou
 ------------------------------------------

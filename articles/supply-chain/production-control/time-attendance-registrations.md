@@ -1,9 +1,9 @@
 ---
 title: "Registrace času a docházky"
-description: "Pracovníci z oblasti registrace času mohou zadat různé typy registrace pracovní doby, například registraci příchodu, odchodu, registraci nepřímých aktivit a registraci absencí. Tento článek popisuje registrace, jejich výpočet, schválení a použití workflowu pro přidání struktury a automatického schválení pro proces schválení časových rozvrhů."
+description: "Pracovníci z oblasti registrace času mohou zadat různé typy registrace pracovní doby, například registraci příchodu, odchodu, registraci nepřímých aktivit a registraci absencí. Toto téma popisuje registrace, jejich výpočet, schválení a použití workflowu pro přidání struktury a automatického schválení pro proces schválení časových rozvrhů."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: HcmWorker, JmgCalcApprovePickDialog, JmgGroupApprove, JmgGroupCalc, JmgGroupSigningTable, JmgRegistration, JmgTimeCalcParmeters, WorkflowTableListPageRnr
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 53351
 ms.assetid: 885b0cdf-53d7-4cb4-92fe-da1b9e32b39f
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 83603b1f8d20c18b7f10cd7224d491b558ee1b8b
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 29040d0c96183898672bc405364ec59707bff53a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Pracovníci z oblasti registrace času mohou zadat různé typy registrace pracovní doby, například registraci příchodu, odchodu, registraci nepřímých aktivit a registraci absencí. Tento článek popisuje registrace, jejich výpočet, schválení a použití workflowu pro přidání struktury a automatického schválení pro proces schválení časových rozvrhů. 
+Pracovníci z oblasti registrace času mohou zadat různé typy registrace pracovní doby, například registraci příchodu, odchodu, registraci nepřímých aktivit a registraci absencí. Toto téma popisuje registrace, jejich výpočet, schválení a použití workflowu pro přidání struktury a automatického schválení pro proces schválení časových rozvrhů. 
 
 <a name="registrations"></a>Registrace
 -------------
@@ -66,7 +66,7 @@ Po nastavení mohou pracovníci zadat různé typy registrací.
 -   Nepřímé činnosti, které jsou neproduktivními aktivitami, které může pracovník provádět během pracovního dne. Mezi tyto činnosti může patřit schůzka nebo čištění pracovního prostoru.
 -   Přesčas, který lze registrovat jako hodiny navíc, pružnou pracovní dobou nebo přesčas.
 
-## <a name="adding-clockout-registrations"></a>Přidání registrací odchodů
+## <a name="adding-clock-out-registrations"></a>Přidání registrací odchodu
 Pokud se pracovník zapomene odhlásit na konci pracovního dne, lze přidat chybějící registraci spuštěním dávkové úlohy. Systém porovná čas příchodu a odchodu čas podle přidruženého profilu pracovníka a automaticky vloží chybějící registraci odchodu v souladu s koncovým časem v profilu. Registrace příchodu a odchodu jsou důležité pro následující výpočet a schválení registrací času před jejich přenesením do mzdového systému.
 
 ## <a name="calculating-registrations"></a>Výpočet registrací

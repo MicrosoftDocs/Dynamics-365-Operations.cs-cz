@@ -3,7 +3,7 @@ title: "Vytvoření formátu pro počítání a sčítání pro elektronické v�
 description: "Následující procedura popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) k vytvoření počtu a součtu na základě dat již generovaného textového výstupu."
 author: NickSelin
 manager: AnnBe
-ms.date: 10/28/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: efdb64fa157af0d96c2ff0e5de3db5a98190bc68
+ms.sourcegitcommit: 5d4f57ae2a309d9e15c1afe60c3e91d7d7eb3870
+ms.openlocfilehash: 3c4ae958a03d4681a85f5b83d81fe64b9ac99cf5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
-# <a name="create-formate-for-counting-and-summing-for-electronic-reporting-er"></a>Vytvoření formátu pro počítání a sčítání pro elektronické výkaznictví (ER)
+# <a name="create-format-for-counting-and-summing-for-electronic-reporting-er"></a>Vytvoření formátu pro počítání a sčítání pro elektronické výkaznictví (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

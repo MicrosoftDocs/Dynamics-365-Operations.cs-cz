@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 8a5138a75ff17575ae789124b1d1aa08eaa4a986
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 1212a46cc937b9ccc6ebfa9cc4b89b931f144130
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/29/2017
 
 Tento článek představuje koncept nabídky projektu, který můžete použít k předložení atraktivní nabídky odběrateli v rámci prvního kroku fáze projektu. Nabídka projektu může obsahovat položky a služby, základní kontaktní údaje, zvláštní obchodní ujednání a slevy, případně daně a příplatky. 
 
-Schopnost sledovat, kontrolovat a řídit příležitosti projektových nabídek a objednávek přestavuje důležitou část projektového řízení. Různé nástroje v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition vám mohou s těmito úkoly pomoci. Například správné definice referenčních dat (typy nabídek, původ nabídky, prognóza a pravděpodobnost nabídky) pomáhají analyzovat příležitosti. Tyto nástroje lze využít k uspořádání důvodů, proč byla nabídka projektu úspěšná nebo neúspěšná, a ke zjištění potenciální hodnoty nabídky. 
+Schopnost sledovat, kontrolovat a řídit příležitosti projektových nabídek a objednávek přestavuje důležitou část projektového řízení. Různé nástroje v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition vám mohou s těmito úkoly pomoci. Například správné definice referenčních dat (typy nabídek, původ nabídky, prognóza a pravděpodobnost nabídky) pomáhají analyzovat příležitosti. Tyto nástroje lze využít k uspořádání důvodů, proč byla nabídka projektu úspěšná nebo neúspěšná, a ke zjištění potenciální hodnoty nabídky. 
 
 Zadejte do nabídky projektu služby, základní kontaktní údaje, zvláštní obchodní ujednání a slevy, případně odhadované daně a příplatky pro projekt. Můžete také vybrat aktivity nebo úlohy projektu a vytvořit hierarchii a dílčí úkoly. Pro každou aktivitu můžete zadat podrobnosti o načasování a době trvání aktivity a také o dovednostech a zkušenostech, které jsou požadovány pro pracovníky, kteří provádějí aktivitu. 
 

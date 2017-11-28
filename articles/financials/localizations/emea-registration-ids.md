@@ -18,10 +18,10 @@ ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: c2c625e9c4f0df762abd6120201a2623ac756bf9
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: e85e1ef9bb27e3644264c898feb3a484c5b3ec3f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -56,7 +56,7 @@ Registrace kategorie je identifikátor země registrace schválený pro použív
 |-----------------------|----------------|
 | Typ registrace     | Typ registrace v konkrétní zemi nebo oblasti.|
 | Omezení         | Typ omezení, které platí pro typ daňové registrace: žádné, osoba, organizace.|
-| Kategorie registrace | Jedinečný identifikátor registrace schválený pro použití v dané zemi. Úplný seznam kategorií podporovaných v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition je uveden níže. |
+| Kategorie registrace | Jedinečný identifikátor registrace schválený pro použití v dané zemi. Úplný seznam kategorií podporovaných v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition je uveden níže. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Zadejte ID registrace pro záznamy globálního adresáře
 

@@ -18,10 +18,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 93eaaad55c64ca6a0f3c4008149cf6ecc622d2a3
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: ad76f286d16b149affa110aef75874a52b66798f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -54,7 +54,7 @@ Můžete použít stránku **Nastavení výpočtu pro datum vystavení faktury**
 Můžete nastavit parametry kontroly data, abyste zajistili, že faktury odběratelů a dobropisy pro odběratele jsou generovány během zadaného období po dodání. Tyto parametry v naleznete v části **Kontrola dat faktury** na stránce **Parametry pohledávek**.
 
 ## <a name="example"></a>Příklad
-Chcete-li nastavit aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition tak, aby počítala data vystavení faktur při dodávce v rámci EU vždy patnáctý den měsíce následujícího po dodání, vytvořte kód časového intervalu a pravidlo pro výpočet s následujícími parametry.
+Chcete-li nastavit aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition tak, aby počítala data vystavení faktur při dodávce v rámci EU vždy patnáctý den měsíce následujícího po dodání, vytvořte kód časového intervalu a pravidlo pro výpočet s následujícími parametry.
 
 ### <a name="date-interval-code"></a>Kód časového intervalu
 

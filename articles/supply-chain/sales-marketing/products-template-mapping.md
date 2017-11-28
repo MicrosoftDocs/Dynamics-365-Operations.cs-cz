@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 47e70cb1291e390b42b7feff844b2aca141f09b7
-ms.openlocfilehash: 063a20f133a00620bdf389b0a52a90bc61e2f7d4
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 405a6cf9f3e6cc52925ff7d9f10836196343c36b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -38,7 +38,7 @@ Toto téma popisuje šablony a základní úlohy, které se používají k synch
 
 ## <a name="template-and-task"></a>Šablona a úkol
 
-Následující šablony a základní úlohy se používají k synchronizaci produktů z aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations) do aplikace Microsoft Dynamics 365 for Sales (Sales).
+Následující šablony a základní úlohy se používají k synchronizaci produktů z aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (Finance and Operations) do aplikace Microsoft Dynamics 365 for Sales (Sales).
 
 -   Název šablony: Products (Fin and Ops to Sales)
 

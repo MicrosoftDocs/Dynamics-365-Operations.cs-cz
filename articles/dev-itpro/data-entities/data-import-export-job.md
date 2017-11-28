@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c788b018f621144755cc0b4ee4b55cb633cd81be
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: e79fcaa634c4b4eb601241d75da2f36f2455db4e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -60,7 +60,7 @@ Můžete přidat konkrétní entity do úlohy importu nebo exportu, nebo zvolit 
 ### <a name="set-the-data-format-for-the-job"></a>Nastavení formátu dat pro úlohu
 Vyberete-li entitu, je nutné vybrat formát dat, která budou exportována nebo importována. Formáty definujete pomocí dlaždice **Nastavení datových zdrojů**. Mnoho společností vychází z formátů, které jsou součástí výchozího nastavení v sadě ukázkových dat. Zde je uveden seznam některých formátů:
 
-- AX (pro data, která je třeba importovat nebo exportovat ve stejném formátu, který se používá pro aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition)
+- AX (pro data, která je třeba importovat nebo exportovat ve stejném formátu, který se používá pro aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition)
 - ColonSeparated
 - CSV
 - Excel

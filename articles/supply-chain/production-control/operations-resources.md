@@ -3,7 +3,7 @@ title: "Prostředky aplikace Operations"
 description: "Provozní prostředek provádí aktivity projektu nebo výrobního procesu. Mohou být různého typu a mohou mít různé schopnosti."
 author: sorenva
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WrkCtrCapability
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 61943
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7a333c4d9c0e614c513bf3e1a02b943b186fb1e5
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c4018632e5e20470948ee59e4bb2a1cab905d829
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -63,7 +63,7 @@ Provozní prostředky jsou přiřazeny k aktivitám, když je naplánován proje
 
 -   **Kapacita**: Zadejte kapacitu provozního prostředku na hodinu za použití měrné jednotky kapacity.
 -   **Kapacita dávky**: Zadejte maximální počet kusů, které může zpracovat provozní prostředek za operaci.
--   **Procento účinnosti**: Určete účinnost, kterou očekáváte od provozního prostředku. Procenta účinnosti upraví propustnosti provozních prostředků a má vliv na dobu rezervovanou pro prostředek. Jsou také náležitě upraveny doby realizace pro operace, které používají provozní prostředek. Zde je vzorec použitý k výpočtu: Plánovaný čas = Čas × 100 ÷ procento účinnosti v tomto vzorci, *čas* zahrnuje operační čas a dobu nastavení.
+-   **Procento účinnosti**: Určete účinnost, kterou očekáváte od provozního prostředku. Procenta účinnosti upraví propustnosti provozních prostředků a má vliv na dobu rezervovanou pro prostředek. Jsou také náležitě upraveny doby realizace pro operace, které používají provozní prostředek. Zde je vzorec, který se používá pro výpočet: čas plánování = čas x 100 ÷ procento účinnosti. *Čas* zahrnuje operační čas i dobu nastavení.
 -   **Procento plánování operací**: Zadejte maximální procento kapacity provozního prostředku, kterou chcete použít při plánování operací. Tato procentuální hodnota by měla být menší než 100 procent, aby byla při plánování úloh prací k dispozici určitá kapacitní flexibilita.
 -   **Omezená kapacita**: Nastavte možnost **Ano** v případě, že provozní prostředek má být naplánován podle skutečné dostupné kapacity a zda by se měly zvážit existující rezervace kapacity. Je-li tato možnost je nastavena na hodnotu **Ne**, u provozního prostředku se předpokládá, že je nastavena neomezená kapacita, a zdroj může být tím pádem přeplněn.
 -   **Omezená vlastnost**: Nastavte tuto možnost na hodnotu **Ano**, chcete-li provozní prostředek naplánovat na základě skutečné kapacity dostupné s ohledem na požadované vlastnosti plánování pracovní doby.

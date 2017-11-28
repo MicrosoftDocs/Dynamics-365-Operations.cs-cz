@@ -3,14 +3,14 @@ title: "Co je nového nebo změněného v aplikaci Dynamics AX 7.0 (únor 2016)
 description: "Tento článek popisuje funkce, které jsou v aplikaci Microsoft Dynamics AX 7.0 nové nebo změněné. Tato verze obsahuje funkce pro obě platformy a byla vydána v únoru 2016."
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 ms.custom: 91243
 ms.assetid: 515bc6e7-a85d-4995-95c6-6cab6c8aa0f9
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 57b4f0c0b76445a333ad3eecb2fccddd8619613c
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 5e1a5f28dbe7f93fc8bf4d7a5c4385aac8f5a1b7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -555,7 +555,8 @@ Nebyly přidány následující nové funkce.
 </table>
 
 ## <a name="manufacturing"></a>Výroba
-|                                                                                                                                                      |                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                       |
+|                                                                                                                                                      |                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                             
+|
 |------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Co můžete udělat?**                                                                                                                                 | **Dynamics AX 2012**                                                                                                             | **Dynamics AX 7.0**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | **Proč je to důležité?**                                                                                                                                                                                                                                            |
 | Provedení kontroly dostupnosti materiálu pro výrobní zakázky na samostatné stránce, která se otevírá z pracovního prostoru **Správa výrobního provozu**. | Není k dispozici.                                                                                                                    | Vedoucí výrobní může zkontrolovat, zda je na požadované datum pro plánované výrobní zakázky dostupný materiál. V pracovním prostoru si může vedoucí výroby prohlédnout, kolik výrobních zakázek je v naplánovaném stavu a kolik čeká na uvolnění. Na základě dynamického základního plánu jsou informace o dostupnosti materiálu aktualizovány, pokud množství na skladě odpovídá požadavkům na materiál pro aktuální nebo plánované zakázky. Na základě informací o dostupnost materiálu může vedoucí uvolnit zakázky na stránce **Dostupnost materiálu**.                                                                                                                                                                                                                                                                                                                        | Vedoucí výroby mohou snáze dělat správná rozhodnutí ohledně přidělování materiálu zakázkám při uvolňování výrobních zakázek do dílny.                                                                                                       |
@@ -865,7 +866,7 @@ Maloobchod nabízí dokonalý mobilní zážitek kdekoliv, kdykoliv a na jakémk
 <tr class="odd">
 <td>Spuštění POS jako webové aplikace prostřednictvím cloudu POS.</td>
 <td>Není k dispozici.</td>
-<td>K dispozici je funkční parita s MPOS. Ta zahrnuje tyto funkce:
+<td>K dispozici je funkční parita s MPOS. Ta zahrnuje tyto funkce:
 <ul>
 <li>Aktivace zařízení pomocí AAD</li>
 <li>Interaktivní rozvržení</li>
