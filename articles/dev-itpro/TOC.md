@@ -124,6 +124,7 @@
 #### [Registrace podtřídy pro metody factory](extensibility/register-subclass-factory-methods.md)
 #### [Reakce s použitím parametru EventHandlerResult](extensibility/respond-event-handler-result.md)
 #### [Rozšíření třídy RunBase](extensibility/extend-runbase-class.md)
+#### [Použití delegátů pro přizpůsobení Spuštění aplikace](extensibility/startup-customizations.md)
 #### [Úprava existujícího pole v tabulce](extensibility/modify-existing-field.md)
 #### [Přidání nového pole do existující tabulky](extensibility/add-field-extension.md)
 #### [Přidání indexu do existující tabulky](extensibility/add-index.md)
@@ -505,10 +506,12 @@
 ### [Nastavení a nasazení místních prostředí](deployment/setup-deploy-on-premises-environments.md)
 ### [Vývoj a nasazení vlastních modelů do místních prostředí](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Použití aktualizací nasazení on-premises](deployment/apply-updates-on-premises.md)
+### [Opětovné nasazení místního nasazení](deployment/redeploy-on-prem.md)
+### [Řešení problémů aplikace Dynamics 365 for Finance and Operations, Enterprise edition on-premises](deployment/troubleshoot-on-prem.md)
 
 ## Nasazení vlastního kódu
 ### [Vytvoření nasaditelného balíčku](deployment/create-apply-deployable-package.md)
-### [Použití nasaditelného balíčku](deployment/apply-deployable-package-system.md)
+### [Použití aktualizací na cloudové prostředí](deployment/apply-deployable-package-system.md)
 ### [Instalace nasaditelného balíčku](deployment/install-deployable-package.md)
 ### [Řešení potíží s použitím balíčku](deployment/deployable-package-troubleshooting.md)
 
@@ -544,11 +547,13 @@
 ## Upgrade na nejnovější aktualizaci
 ### [Proces přechodu na nejnovější aktualizaci](migration-upgrade/upgrade-latest-update.md)
 ### [Zásady životního cyklu](migration-upgrade/versions-update-policy.md)
-### [Upgrade na nejnovější aktualizaci platformy](migration-upgrade/upgrade-latest-platform-update.md)
+### [Použití nejnovější aktualizaci platformy na vaše prostředí](migration-upgrade/upgrade-latest-platform-update.md)
 ### [Upgrade platformy Dynamics na vydání ze srpna 2016](migration-upgrade/update-platform-each-release.md)
 ### [Upgrade na prostředí sandbox](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Upgrade dat ve vývojovém nebo ukázkovém prostředí](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [Aktualizace vývojových nástrojů](dev-tools/update-development-tools.md)
+### [Použití aktualizací nasazení on-premises](deployment/apply-updates-on-premises.md)
+### [Opětovné nasazení místního nasazení](deployment/redeploy-on-prem.md)
 
 ## Opravy hotfix a obsluha
 ### [Stažení oprav hotfix z Lifecycle Services](migration-upgrade/download-hotfix-lcs.md)
@@ -566,6 +571,7 @@
 ## [Sdílení dat mezi společnostmi](sysadmin/cross-company-data-sharing.md)
 ## [Režim údržby](sysadmin/maintenance-mode.md)
 ## [Předkonfigurované systémové účty](sysadmin/pre-configured-system-accounts.md)
+## [Export B2B uživatelů do Azure AD](sysadmin/implement-b2b.md)
 ## [Zabezpečení na základě rolí](sysadmin/role-based-security.md)
 ### [Architektura zabezpečení](sysadmin/security-architecture.md)
 ### [Sestavy zabezpečení](sysadmin/security-reports.md)

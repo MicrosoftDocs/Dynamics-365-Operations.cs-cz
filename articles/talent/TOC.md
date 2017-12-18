@@ -2,6 +2,8 @@
 
 # [Začínáme](talent-get-started.md)
 ## [Systémové požadavky a zásady aktualizace](talent-versions-update-policy.md)
+## [Zřízení Microsoft Dynamics 365 for Talent](provisioning-talent.md)
+## [Rozšíření funkce Talent](extend-talent-functionality.md)
 
 # [Vytvoření strategie lidských zdrojů](departments-jobs-positions.md)
 ## [Nastavení komponent práce](create-job.md)
