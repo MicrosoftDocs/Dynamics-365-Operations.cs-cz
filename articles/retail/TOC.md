@@ -172,7 +172,7 @@
 
 ## Architektura
 ### [Komponenty aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition - Retail](retail-components.md)
-### [Architektura serveru Retail](dev-itpro/retail-server-architecture.md)
+### [Architektura serveru Retail Server](dev-itpro/retail-server-architecture.md)
 ### [Komunikace maloobchodní sítě](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS architektura](dev-itpro/retail-modern-pos-architecture.md)
 ### [Architektura publikování maloobchodního online obchodu](dev-itpro/retail-online-store-publishing-architecture.md)
@@ -180,11 +180,11 @@
 
 ## Nasazení a opravy hotfix
 ### [Přehled Retail Store Scale Unit](dev-itpro/retail-store-system-begin.md)
-#### [Konfigurace a instalace Retail Store Scale Unit](dev-itpro/retail-store-scale-unit-configuration-installation.md)
+### [Konfigurace a instalace Retail Store Scale Unit](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [Konfigurace a instalace Retail Modern POS](retail-modern-pos-device-activation.md)
-#### [Správa účtů Retail a zařízení z centrály](set-up-activation-accounts-validate-devices-hq.md)
-#### [Aktivace zařízení Retail POS](dev-itpro/retail-device-activation.md)
-#### [Zabezpečení Retail Cloud POS](dev-itpro/secure-retail-cloud-pos.md)
+### [Správa účtů Retail a zařízení z centrály](set-up-activation-accounts-validate-devices-hq.md)
+### [Aktivace zařízení Retail POS](dev-itpro/retail-device-activation.md)
+### [Zabezpečení Retail Cloud POS](dev-itpro/secure-retail-cloud-pos.md)
 ### [Konfigurace a instalace Retail Hardware Station](retail-hardware-station-configuration-installation.md)
 ### [Hromadné nasazení samoobslužných komponent modulu Retail](dev-itpro/retail-mass-deployment.md)
 ### [Události komponent Retail pro diagnostiku a řešení potíží](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
@@ -194,48 +194,52 @@
 ### [Přehled upgradu a N-1 podpory](dev-itpro/overview-upgrade-n-minus1.md)
 ### [Instalace N-1 komponent](dev-itpro/n-1-installation-configuration.md)
 
+## Průvodce implementací
+### [Průvodce implementací správy zařízení](implementation-considerations-devices.md)
+
 ## Konfigurace prostředí
 ### [Přidání odkazů na právní podmínky a zásady ochrany osobních údajů ve vaší organizaci](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
 ### [Správa Map Bing](dev-itpro/manage-bing-maps.md)
 
-## Rozšiřitelnost
-### Pokladní místo
-#### [Rozvržení obrazovky Retail POS](pos-screen-layouts.md)
-##### [Instalace návrháře rozložení POS](install-pos-layout-designer.md)
-#### [Konfigurace MPOS pro režim offline](dev-itpro/retail-modern-pos-offline.md)
-#### [Rozšiřitelnost spouštění MPOS and Cloud POS](dev-itpro/modern-pos-trigger-extensibility.md)
-#### [Přidat vlastní ovládací prvek do POS zobrazení](dev-itpro/pos-custom-control.md)
-#### [Rozšíření POS plateb](dev-itpro/pos-payment-extension.md)
-#### [Externí podpora dárkových poukazů](dev-itpro/gift-card.md)
+## Rozšiřitelnost pokladních míst
+### [Rozvržení obrazovky Retail POS](pos-screen-layouts.md)
+### [Instalace návrháře rozložení POS](install-pos-layout-designer.md)
+### [Konfigurace MPOS pro režim offline](dev-itpro/retail-modern-pos-offline.md)
+### [Rozšiřitelnost spouštění MPOS and Cloud POS](dev-itpro/modern-pos-trigger-extensibility.md)
+### [Přidat vlastní ovládací prvek do POS zobrazení](dev-itpro/pos-custom-control.md)
+### [Rozšíření POS plateb](dev-itpro/pos-payment-extension.md)
+### [Externí podpora dárkových poukazů](dev-itpro/gift-card.md)
 ### [Vytvoření aplikace Retail Experience](dev-itpro/create-retail-experience-app.md)
 ### [Přehled a rozšiřitelnost Hardware Station](dev-itpro/hardware-station-extensibility.md)
 
-### Retail Server
-#### [Rozšíření kontroloru Retail Server OData](dev-itpro/extend-retail-server-odata-controller.md)
-#### [Kontrolery Web API a OData](dev-itpro/odata-controllers-api.md)
-#### [Zákazník serveru Retail Server a API příjemce](dev-itpro/retail-server-customer-consumer-api.md)
-#### [Rozšíření metadat](dev-itpro/extend-metadata.md)
-#### [Rozšíření Commerce Runtime pro podporu offline režimu POS](dev-itpro/call-crt-service-offline.md)
-### Commerce runtime
-#### [Přehled Commerce runtime](dev-itpro/commerce-runtime-overview.md)
-#### [Rozšiřitelnost Commerce runtime a Retail Server ](dev-itpro/commerce-runtime-extensibility.md)
-#### [Přidání preferenčních dat zákazníka do databáze kanálů](dev-itpro/add-customer-preference-channel.md)
-#### [Přidání vlastností do prodejní objednávky](dev-itpro/add-properties-sales-order.md)
-#### [Rozšiřitelnost a spouštění Commerce Runtime](dev-itpro/commerce-runtime-extensibility-trigger.md)
-#### [Příklad aktivační události: Transakce blokování](dev-itpro/trigger-example-blocking-transaction.md)
-#### [Příklad aktivační události: Zásady vracení](dev-itpro/trigger-example-return-policy.md)
-### Elektronický obchod
-#### [Konfigurace online obchodu](dev-itpro/configure-online-store.md)
-#### [Konfigurovat zprostředkovatelů ověřování](dev-itpro/configure-authentication-providers.md)
-#### [Platforma elektronického obchodu](dev-itpro/ecommerce-platform.md)
-#### [Sada SDK platformy elektronického obchodu](dev-itpro/ecommerce-platform-sdk.md)
-### Konektor platby
-#### [Implementace konektoru platby a platebního zařízení (dokument white paper)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
-#### [Nasazení konektoru platby](dev-itpro/deploy-payment-connector.md)
-#### [vytvoření instalační služby systému Windows pro konektor platby](dev-itpro/create-windows-installer-payment-connector.md)
+## Rozšiřitelnost serveru Retail Server
+### [Rozšíření kontroloru Retail Server OData](dev-itpro/extend-retail-server-odata-controller.md)
+### [Kontrolery Web API a OData](dev-itpro/odata-controllers-api.md)
+### [Zákazník serveru Retail Server a API příjemce](dev-itpro/retail-server-customer-consumer-api.md)
+### [Rozšíření metadat](dev-itpro/extend-metadata.md)
+### [Rozšíření Commerce Runtime pro podporu offline režimu POS](dev-itpro/call-crt-service-offline.md)
 
-## Retail SDK
-### [Přehled doplňku Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
+## Rozšiřitelnost Commerce Runtime
+### [Přehled Commerce runtime](dev-itpro/commerce-runtime-overview.md)
+### [Rozšiřitelnost Commerce runtime a Retail Server ](dev-itpro/commerce-runtime-extensibility.md)
+### [Přidání preferenčních dat zákazníka do databáze kanálů](dev-itpro/add-customer-preference-channel.md)
+### [Přidání vlastností do prodejní objednávky](dev-itpro/add-properties-sales-order.md)
+### [Rozšiřitelnost a spouštění Commerce Runtime](dev-itpro/commerce-runtime-extensibility-trigger.md)
+### [Příklad aktivační události: Transakce blokování](dev-itpro/trigger-example-blocking-transaction.md)
+### [Příklad aktivační události: Zásady vracení](dev-itpro/trigger-example-return-policy.md)
+
+## Rozšiřitelnost e-Commerce
+### [Konfigurace online obchodu](dev-itpro/configure-online-store.md)
+### [Konfigurace zprostředkovatelů ověřování](dev-itpro/configure-authentication-providers.md)
+### [Platforma elektronického obchodu](dev-itpro/ecommerce-platform.md)
+### [Sada SDK platformy elektronického obchodu](dev-itpro/ecommerce-platform-sdk.md)
+
+## Rozšiřitelnost konektoru platby
+### [Implementace konektoru platby a platebního zařízení (dokument white paper)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+### [Nasazení konektoru platby](dev-itpro/deploy-payment-connector.md)
+### [vytvoření instalační služby systému Windows pro konektor platby](dev-itpro/create-windows-installer-payment-connector.md)
+
+## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Integrace sady Retail SDK do souvisle sestavovaného systému](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 ### [Vzory rozšiřitelnosti sady Retail SDK](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Registrační pokladny ve Švédsku](localizations/emea-swe-cash-registers.md)
@@ -249,7 +253,13 @@
 ### [Atributy objednávky](dev-itpro/order-attributes.md)
 ### [Atributy odběratele](dev-itpro/customer-attributes.md)
 ### [Retail Typescript a C# proxy](dev-itpro/typescript-proxy-retail-pos.md)
-
+### [Spuštění vzorů sady Retail POS](dev-itpro/pos-run-samples.md)
+### [Rozšíření stávajících zobrazení POS pro přidání vlastních sloupců a tlačítek panelu aplikací](dev-itpro/pos-view-extension.md)
+### [Přidání vlastních ovládacích prvků na stránky transakcí Retail Modern POS.](dev-itpro/pos-custom-transaction.md)
+### [Přidání vlastních transakci k mřížce transakcí POS](dev-itpro/pos-custom-transaction-column.md)
+### [Volání API POS nebo operace z rozšíření POS](dev-itpro/pos-api-extension.md)
+### [Rozšíření stávajících zobrazení POS pro přidání vlastních sloupců a tlačítek panelu aplikací](dev-itpro/pos-view-extension.md)
+### [Spouštěče Retail Modern POS a tisk](dev-itpro/pos-trigger-printing.md)
 
 ## Commerce runtime
 ### [Rozšíření věrnostního programu](dev-itpro/retail-sdk/loyalty-extension-sample.md)

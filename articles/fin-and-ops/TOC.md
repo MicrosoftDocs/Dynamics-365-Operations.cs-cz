@@ -8,8 +8,9 @@
 #### [Výběr možnosti nasazení](../dev-itpro/deployment/choose-deployment-type.md)
 ##### [Nasazení cloudu](../dev-itpro/deployment/cloud-deployment-overview.md)
 ##### [Systémové požadavky pro nasazení cloudu](get-started/system-requirements.md)
-##### [Nasazení on-premises](../dev-itpro/deployment/on-premises-deployment-landing-page.md)
+##### [Místní nasazení](../dev-itpro/deployment/on-premises-deployment-landing-page.md)
 ##### [Systémové požadavky pro místní nasazení](get-started/system-requirements-on-prem.md)
+##### [Sklady pro místní nasazení](../dev-itpro/deployment/warehousing-for-on-premise-deployments.md)
 
 #### Zakoupení aplikace Finance and Operations
 ##### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
@@ -20,6 +21,7 @@
 #### [Odložené funkce AX 2012](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Funkce neimplementované v místních nasazeních](get-started/features-not-implemented-on-prem.md)
 #### [Zásady životního cyklu](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Platform update 12 (listopad 2017)](get-started/whats-new-platform-update-12.md)
 #### [Platform update 11 (říjen 2017)](get-started/whats-new-platform-update-11.md)
 #### [Platform update 10 (srpen 2017)](get-started/whats-new-platform-update-10.md)
 #### [Finance and Operations, Enterprise Edition, (červenec 2017)](get-started/whats-new-application-July-2017-update.md)
@@ -42,6 +44,7 @@
 ##### [Průvodci záznamem úloh - únor 2016](get-started/new-task-guides-available-february-2016.md)
 
 ### Prozkoumání uživatelského rozhraní
+#### [Funkce usnadnění přístupu](get-started/accessibility-features.md)
 #### [Často kladené dotazy týkající se klientského uživatelského rozhraní](get-started/client-faq.md)
 #### [Vyhledání akce](get-started/action-search.md)
 #### [Pokročilé filtrování a syntaxe dotazu](get-started/advanced-filtering-query-options.md)
@@ -56,7 +59,7 @@
 #### [Nastavení upřednostňovaného časového pásma uživatele](organization-administration/tasks/set-users-preferred-time-zone.md)
 #### [Vysvětlení služeb Lifecycle Services](../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
-### Získání nápovědy a podpory
+### Přečtěte si a spusťte dokumentaci
 #### [Přehled nápovědy](get-started/help-overview.md)
 #### [Připojení nápovědy](get-started/help-connect.md)
 #### [Zobrazení a export popisů polí](get-started/view-export-field-descriptions.md)
@@ -152,17 +155,21 @@
 
 #### [Integrace dat s použitím služby Common Data Service](../dev-itpro/data-entities/data-integration-cds.md) 
 ##### [Konfigurace scénáře zpeněžení potenciálního zákazníka](../supply-chain/sales-marketing/prospect-to-cash.md)
-###### [Synchronizace produktů z aplikace Finance and Operations na produkty v aplikaci Sales](../supply-chain/sales-marketing/products-template-mapping.md)
-###### [Synchronizace obchodních vztahů z aplikace Sales na odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
-###### [Synchronizace kontaktů z aplikace Sales na kontakty nebo odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
-###### [Synchronizace hlaviček a řádků prodejních nabídek z aplikace Sales do aplikace Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-###### [Synchronizace hlaviček a řádků prodejní objednávky z aplikace Finance and Operations do Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-###### [Synchronizace hlaviček a řádků prodejní faktury z aplikace Finance and Operations do Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
-###### [Synchronizace obchodních vztahů přímo z aplikace Sales na odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-###### [Synchronizace produktů přímo z aplikace Finance and Operations na produkty v aplikaci Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-###### [Synchronizace kontaktů přímo z aplikace Sales na kontakty nebo odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-###### [Synchronizace hlaviček a řádků prodejní objednávky přímo z aplikace Finance and Operations do Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
-###### [Synchronizace hlaviček a řádků prodejní faktury přímo z aplikace Finance and Operations do Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Správa účtů v aplikaci Sales a jejich synchronizace přímo z aplikace Sales do aplikace Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+###### [Správa produktů v aplikaci Finance and Operations a jejich synchronizace přímo do aplikace Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+###### [Správa kontaktů v aplikaci Sales a jejich přímá synchronizace na kontakty nebo odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+###### [Synchronizace prodejních nabídek z aplikace Sales do aplikace Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+###### [Synchronizace prodejních objednávek přímo z aplikace Finance and Operations do aplikace Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+###### [Synchronizace prodejních objednávek přímo mezi aplikací Finance and Operations a aplikací Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+###### [Synchronizace prodejních faktur přímo z aplikace Finance and Operations do aplikace Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Správa účtů v aplikaci Sales a jejich synchronizace do aplikace Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
+###### [Správa kontaktů v aplikaci Sales a jejich synchronizace do aplikace Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
+###### [Správa produktů v aplikaci Finance and Operations a jejich synchronizace do aplikace Sales](../supply-chain/sales-marketing/products-template-mapping.md)
+###### [Vytvoření prodejních nabídek v aplikaci Sales a jejich synchronizace do aplikace Finance and Operations.](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
+###### [Vytvoření prodejních objednávek v aplikaci Finance and Operations a jejich synchronizace do aplikace Sales.](../supply-chain/sales-marketing/sales-order-template-mapping.md)
+###### [Vytvoření prodejních faktur v aplikaci Finance and Operations a jejich synchronizace do aplikace Sales.](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+
+
 
 #### [Spotřeba externích webových služeb](../dev-itpro/data-entities/consume-external-web-service.md)
 
@@ -894,6 +901,7 @@
 ##### [Sestava černé listiny](../financials/localizations/emea-ita-black-list-report.md)
 ##### [Datum kompetence](../financials/localizations/emea-ita-competence-date.md)
 ##### [Odpisování dlouhodobého majetku](../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
+##### [Modello 770](../financials/localizations/emea-ita-modello770.md)
 ##### [Ověření data dodacího listu na fakturách](../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
 ##### [Knihy DPH](../financials/localizations/emea-ita-fiscal-books.md)
 ##### [Rozdělená platba za faktury vydané pro veřejnou správu](../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
@@ -1347,7 +1355,29 @@
 ### [Sledování průběžných průměrných nákladů pro dimenzi zboží](../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md)
 
 
-## Hlavní plánování
+## [Hlavní plánování](../supply-chain/master-planning/master-planning-home-page.md)
+### [Hlavní plán](../supply-chain/master-planning/master-plans.md)
+#### [Nastavení disponibility](../supply-chain/master-planning/coverage-settings.md)
+#### [Definování pravidel disponibility pro položky (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
+#### [Vygenerování plánu s omezeními (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/constrained-plan.md)
+#### [Vytvoření materiálového plánu pro vedlejší produkty (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
+#### [Správa plánovaných objednávek](../supply-chain/master-planning/maintain-planned-orders.md)
+#### [Zpracování zpoždění](../supply-chain/master-planning/delays.md)
+#### [Sledování rozpadu](../supply-chain/master-planning/trace-explosion.md)
+#### [Zprávy akce](../supply-chain/master-planning/action-messages.md)
+#### [Sledování běhu hlavního plánování (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
+#### [Vytvoření plánu pro pracoviště (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/create-schedule-site.md)
+#### [Vytvoření plánu pro pracoviště (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/create-plan-site.md)
+#### [Hlavní plány a funkce více pracovišť](../supply-chain/master-planning/master-plan-multisite-functionality.md)
+##### [Plán pro disponibilitu pracoviště, sklad je povinný](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
+##### [Plán pro disponibilitu pracoviště, sklad je není povinný](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
+##### [Plán pro disponibilitu pracoviště a skladu, sklad je povinný](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+##### [Plán pro disponibilitu pracoviště a skladu, sklad není povinný](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+##### [Určení verze kusovníku](../supply-chain/master-planning/master-plan-bom-version-determined.md)
+##### [Rozpad verze kusovníku](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
+#### [Vytvoření mezipodnikového plánu (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
+#### [Zobrazení výstupní plánované mezipodnikové poptávky (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
+#### [Spolupráce s odběrateli interního dodavatelského řetězce (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
 ### [Prognóza poptávky](../supply-chain/master-planning/introduction-demand-forecasting.md)
 #### [Nastavení prognózy poptávky](../supply-chain/master-planning/demand-forecasting-setup.md)
 #### [Import historických dat pro prognózy poptávky](../supply-chain/master-planning/import-historical-data.md)
@@ -1359,29 +1389,6 @@
 #### [Redukční klíče](../supply-chain/master-planning/reduction-keys.md)
 #### [Vytvoření základní prognózy (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/create-baseline-forecast.md)
 #### [Ruční úprava prognózy poptávky (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md)
-
-### [Hlavní plán](../supply-chain/master-planning/master-plans.md)
-#### [Nastavení disponibility](../supply-chain/master-planning/coverage-settings.md)
-#### [Správa plánovaných objednávek](../supply-chain/master-planning/maintain-planned-orders.md)
-#### [Zpoždění](../supply-chain/master-planning/delays.md)
-#### [Zprávy akce](../supply-chain/master-planning/action-messages.md)
-#### [Sledování a rozpad](../supply-chain/master-planning/trace-explosion.md)
-#### [Hlavní plány a funkce více pracovišť](../supply-chain/master-planning/master-plan-multisite-functionality.md)
-##### [Plán pro disponibilitu pracoviště, sklad je povinný](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
-##### [Plán pro disponibilitu pracoviště, sklad je není povinný](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
-##### [Plán pro disponibilitu pracoviště a skladu, sklad je povinný](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-##### [Plán pro disponibilitu pracoviště a skladu, sklad není povinný](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
-##### [Určení verze kusovníku](../supply-chain/master-planning/master-plan-bom-version-determined.md)
-##### [Rozpad verze kusovníku](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
-#### [Sledování běhu hlavního plánování (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
-#### [Definování pravidel disponibility pro položky (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
-#### [Vytvoření plánu pro pracoviště (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/create-plan-site.md)
-#### [Vytvoření plánu pro pracoviště (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/create-schedule-site.md)
-#### [Vygenerování plánu s omezeními (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/constrained-plan.md)
-#### [Vytvoření mezipodnikového plánu (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
-#### [Vytvoření materiálového plánu pro vedlejší produkty (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
-#### [Zobrazení výstupní plánované mezipodnikové poptávky (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
-#### [Spolupráce s odběrateli interního dodavatelského řetězce (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
 
 
 ## [Mobilní aplikace](../dev-itpro/mobile-apps/Mobile-app-home-page.md)
@@ -1853,7 +1860,7 @@
 #### [Nastavení šablony práce pro nákupní objednávky](../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md)
 #### [Plánování vytížení a dodávek s použitím pracovní plochy plánování vytížení](../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md)
 
-# [Vývoj a správa](../dev-itpro/toc.md)
+# [Vývoj a správa pro aplikaci Finance and Operations](../dev-itpro/toc.md)
 
 # [Dynamics 365 for Retail](../retail/toc.md)
 
