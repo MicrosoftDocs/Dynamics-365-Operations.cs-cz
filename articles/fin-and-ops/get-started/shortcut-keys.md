@@ -3,7 +3,7 @@ title: "Klávesové zkratky"
 description: "Následující klávesové zkratky platí v celé aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: jasongre
 manager: AnnBe
-ms.date: 09/12/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 39ffbe81c0cc9ecb3f91f791442bfd27231a0516
+ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
+ms.openlocfilehash: 8e87721af34e1527d1d8eb254f0443e37d137730
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 
@@ -33,6 +33,10 @@ ms.lasthandoff: 11/03/2017
 Následující klávesové zkratky platí v celé aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. 
 
 **Poznámka:** klávesové zkratky, jež jsou zde popsány, se vztahují na rozvržení klávesnice pro Spojené státy. Klávesy na klávesnicích s jiným rozvržením nemusí přesně odpovídat klávesám klávesnice pro USA.
+
+## <a name="finding-a-shorcut"></a>Nalezení klávesových zkratek
+Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné klávesové zkratky přímo z uživatelského rozhraní. Stačí kliknout pravým tlačítkem na ovládací prvek a zvolit **Zobrazit klávesové zkratky**. Otevře se dialogové okno zobrazující klávesové zkratky, které lze použít podle toho, kde na stránce se nalézáte. 
+
 
 ## <a name="action-shortcuts"></a>Zkratky akcí
 |                                                   |                                  |
@@ -48,13 +52,14 @@ Následující klávesové zkratky platí v celé aplikaci Microsoft Dynamics 36
 | Stisk výchozího tlačítka ve formuláři nebo dialogovém okně   | Alt+Enter                        |
 | Klepnutí na tlačítko nebo dlaždici                            | Enter nebo Mezerník                   |
 | Zobrazení obnovených informací pro dlaždici s počtem         | ALT+Šipka nahoru                     |
+| Zobrazit aktuálně dostupné klávesové zkratky                | Alt+Shift+K                      |                              
 
 ## <a name="date-picker-shortcuts"></a>Zkratky pro výběr data
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Akce**                        | **Stisknout**                                 |
 | Otevření výběru data                  | ALT+Šipka dolů                            |
-| Přechod mezi daty ve výběru data | CTRL+Šipka nahoru                               |
+| Přechod mezi daty ve výběru data | CTRL+Šipka nahoru                           |
 | Přechod na další nebo předchozí měsíc       | Page down / Page up                       |
 | Přechod na další nebo předchozí rok        | Ctrl+Shift+Page down / Ctrl+Shift+Page up |
 | Přesunutí na dnes                         | CTRL+HOME                                 |
@@ -65,6 +70,7 @@ Následující klávesové zkratky platí v celé aplikaci Microsoft Dynamics 36
 ## <a name="factbox-shortcuts"></a>Zkratky pro okno s fakty
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
+| **Akce**                                                                  | **Stisknout**                                 |
 | Otevření okna s fakty (nebo aktivace okna s fakty, pokud je již otevřeno) | Alt+M,B nebo Ctrl+F2                        |
 | Zavření okna s fakty (pokud je aktivní okno s fakty)                         | Esc                                       |
 | Přesunutí na další nebo předchozí okno s fakty (pokud je aktivní okno s fakty)              | Alt+Shift+Šipka dolů a Alt+Shift+Šipka nahoru |

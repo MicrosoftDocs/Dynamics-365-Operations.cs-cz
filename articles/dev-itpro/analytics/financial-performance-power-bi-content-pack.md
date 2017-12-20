@@ -3,7 +3,7 @@ title: "Obsah finanční výkonnosti Power BI"
 description: "Toto téma popisuje obsah Power BI pro finanční výkonnost. Popisuje příslušné sestavy a řídicí panel a obsahuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu."
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f111698315cd42c0c1c0d470b94688b548375bee
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 3638f5acf6a05ec419dc4308e861d95f0d7b2cea
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -38,7 +38,7 @@ Obsah Power BI **Finanční výkonnost** najdete ve službě Microsoft Dynamics 
 ### <a name="available-from-lcs"></a>K dispozici ve službě LCS
 Obsah Power BI **Finanční výkonnost**, který je k dispozici v LCS, podporuje následující verze:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017)
+- Verze aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition
 - Microsoft Dynamics 365 for Operations verze 1611 
 
 Obsah Power BI najdete v knihovně sdíleného majetku ve službě LCS. Další informace o stažení balíčku obsahu a jeho implementaci ve vaší organizaci najdete v tématu [Obsah Power BI v LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md). Pokud se chcete podívat na ukázku, jak implementovat obsah Power BI, najdete informace v tématu [Obsah Power BI od společnosti Microsoft a partnerů ve službě Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) pro Office Mix.

@@ -3,7 +3,7 @@ title: "Obsah Power BI pro manažery školení"
 description: "Toto téma popisuje, co je součástí obsahu pro manažery školení v Power BI. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření obsahu."
 author: KimANelson
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3462ef1bbde9a98ac6a7bc9a5c54e58ff98559c8
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 836997f9f5b146ff48252c3f06153791ec1aabed
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -39,7 +39,7 @@ Obsah Power BI pro **Manažera školení** obsahuje pět stránek sestav: jednu 
 Všechny částky v obsahu jsou zobrazeny v měně systému. Systémovou měnu můžete nastavit na stránce **Parametry systému**.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017), obsah Power BI **Manažer školení** se zobrazuje v pracovním prostoru **Řízení projektu**.
+Obsah Power BI **Manažer školení** se zobrazí v pracovním prostoru **Manažer školení**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
 

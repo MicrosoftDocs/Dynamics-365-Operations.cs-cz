@@ -1,9 +1,9 @@
 ---
 title: "zpeněžení potenciálního zákazníka"
-description: "Toto téma uvádí přehled řešení zpeněžení potenciálního zákazníka mezi aplikacemi Dynamics 365 for Finance and Operations, Enterprise Edition a Dynamics 365 for Sales."
+description: "Toto téma uvádí přehled řešení zpeněžení potenciálního zákazníka mezi aplikacemi Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition a Microsoft Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,78 +20,91 @@ ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 674d2e1f2c5cdbccf43618a9083ca01abed0735a
-ms.openlocfilehash: 2accf77c5241adff7ad1648737dde451153fde46
+ms.sourcegitcommit: 788e64476094e84eb4d438890776306c05b20582
+ms.openlocfilehash: 762699cf68ec8a9df5db20d7dd33bc9248f0a36e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/11/2017
 
 ---
 
-# <a name="prospect-to-cash"></a>zpeněžení potenciálního zákazníka  
+# <a name="prospect-to-cash"></a>zpeněžení potenciálního zákazníka
 
 [!include[banner](../includes/banner.md)]
 
-Řešení zpeněžení potenciálního zákazníka používá [Integraci dat](/common-data-service/entity-reference/dynamics-365-integration) k synchronizaci dat mezi instancemi aplikací Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition a Dynamics 365 for Sales prostřednictvím služby Common Data Service (CDS). Šablony zpeněžení potenciálního zákazníka dostupné v rámci funkce integrace dat umožňují tok účtů, kontaktů, produktů, prodejních kvót, prodejních objednávek a prodejních faktur mezi aplikacemi Finance and Operations a Sales. V průběhu toku dat mezi aplikacemi Finance and Operations a Sales můžete provádět prodejní a marketingové aktivity v aplikaci Sales a zpracovávat plnění objednávky v rámci správy skladů v aplikaci Finance and Operations. 
+Řešení zpeněžení potenciálního zákazníka nabízí přímou synchronizaci mezi aplikacemi Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition a Microsoft Dynamics 365 for Sales. Šablony zpeněžení potenciálního zákazníka dostupné v rámci funkce integrace dat umožňují tok dat účtů, kontaktů, produktů, prodejních kvót, prodejních objednávek a prodejních faktur mezi aplikacemi Finance and Operations a Sales. V průběhu toku dat mezi aplikacemi Finance and Operations a Sales můžete provádět prodejní a marketingové aktivity v aplikaci Sales a můžete zpracovávat plnění objednávky pomocí správy skladů v aplikaci Finance and Operations.
 
-Toto řešení umožňuje integraci v rámci následujících oblastí: 
+V aktuální verzi poskytuje řešení zpeněžení potenciálního zákazníka následující typy přímé synchronizace:
 
--   [Správa účtů v aplikaci Sales a jejich synchronizace do aplikaci Finance and Operations](accounts-template-mapping.md)
--   [Správa kontaktů v aplikaci Sales a jejich synchronizace do aplikaci Finance and Operations](contacts-template-mapping.md)
--   [Správa produktů v aplikaci Finance and Operations a jejich synchronizace do aplikace Sales](products-template-mapping.md)
--   [Vytvoření prodejních nabídek v aplikaci Sales a jejich synchronizace do aplikace Finance and Operations.](sales-quotation-template-mapping.md)
--   [Vytvoření prodejních objednávek v aplikaci Finance and Operations a jejich synchronizace do aplikace Sales](sales-order-template-mapping.md)
--   [Vytvoření prodejních faktur v aplikaci Finance and Operations a jejich synchronizace do aplikace Sales](sales-invoice-template-mapping.md)
+- [Správa účtů v aplikaci Sales a jejich synchronizace přímo z aplikace Sales do aplikace Finance and Operations](accounts-template-mapping-direct.md)
+- [Správa produktů v aplikaci Finance and Operations a jejich synchronizace přímo do aplikace Sales](products-template-mapping-direct.md)
+- [Správa kontaktů v aplikaci Sales a jejich přímá synchronizace na kontakty nebo odběratele v aplikaci Finance and Operations](contacts-template-mapping-direct.md)
+- [Synchronizace prodejních nabídek z aplikace Sales do aplikace Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
+- [Synchronizace prodejních objednávek přímo z aplikace Finance and Operations do aplikace Sales](sales-order-template-mapping-direct.md)
+- [Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
+- [Synchronizace prodejních faktur přímo z aplikace Finance and Operations do aplikace Sales](sales-invoice-template-mapping-direct.md)
 
-Toto řešení umožňuje přímou synchronizaci v rámci následujících oblastí:
+V dřívějších verzích poskytuje řešení zpeněžení potenciálního zákazníka následující typy nepřímé synchronizace:
 
--   [Správa účtů v aplikaci Sales a jejich synchronizace přímo z aplikace Sales do aplikace Finance and Operations](accounts-template-mapping-direct.md)
--   [Správa produktů v aplikaci Finance and Operations a jejich synchronizace přímo do aplikace Sales](products-template-mapping-direct.md)
--   [Správa kontaktů v aplikaci Sales a jejich přímá synchronizace na kontakty nebo odběratele v aplikaci Finance and Operations](contacts-template-mapping-direct.md)
--   [Synchronizace hlaviček a řádků prodejních nabídek přímo z aplikace Sales do aplikace Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
--   [Vytvoření prodejních objednávek v aplikaci Finance and Operations a jejich synchronizace přímo do aplikace Sales](sales-order-template-mapping-direct.md)
--  [Synchronizace hlaviček a řádků prodejní objednávky přímo mezi aplikacemi Sales a Finance and Operations](sales-order-template-mapping-between-sales-fin.md)
--   [Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
--   [Vytvoření prodejních faktur v aplikaci Finance and Operations a jejich synchronizace přímo do aplikace Sales](sales-invoice-template-mapping-direct.md)
+- [Správa účtů v aplikaci Sales a jejich synchronizace do aplikaci Finance and Operations](accounts-template-mapping.md)
+- [Správa kontaktů v aplikaci Sales a jejich synchronizace do aplikaci Finance and Operations](contacts-template-mapping.md)
+- [Správa produktů v aplikaci Finance and Operations a jejich synchronizace do aplikace Sales](products-template-mapping.md)
+- [Vytvoření prodejních nabídek v aplikaci Sales a jejich synchronizace do aplikace Finance and Operations.](sales-quotation-template-mapping.md)
+- [Vytvoření prodejních objednávek v aplikaci Finance and Operations a jejich synchronizace do aplikace Sales](sales-order-template-mapping.md)
+- [Vytvoření prodejních faktur v aplikaci Finance and Operations a jejich synchronizace do aplikace Sales](sales-invoice-template-mapping.md)
+
+## <a name="system-requirements-for-finance-and-operations"></a>Systémové požadavky aplikaci Finance and Operations
+
+Chcete-li použít řešení zpeněžení potenciálního zákazníka, je nutné nainstalovat následující komponenty:
+
+### <a name="july-2017"></a>Červenec 2017 
+
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (července 2017) s aktualizací Platform update 8 (sestavení aplikace 7.2.11792.56024 se sestavením platformou 7.0.4565.16212)
+- Následující opravy hotfix pro aplikaci Finance and Operations:
+
+    - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – Tato oprava hotfix umožňuje synchronizaci prodejní objednávky pomocí funkce integrace z aplikace Sales do aplikace Finance and Operations. Poskytuje několik různých vylepšení.
+    - **[KB4036524](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036524&bugId=3847504&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2)** – Tato oprava hotfix umožňuje synchronizaci řádku prodejní objednávky pomocí funkce integrace z aplikace Finance and Operations do aplikace Sales.
+    - **[KB4036461](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036461&bugId=3847029&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2)** – Tato oprava hotfix umožňuje synchronizaci prodejní objednávky pomocí funkce integrace z aplikace Finance and Operations do aplikace Sales.
+
+    > [!NOTE]
+    > Musíte pouze nainstalovat KB4045570, protože instalace obsahuje změny z jiných článků znalostní báze.
+
+### <a name="november-2016-version-1611"></a>Listopad 2016 (verze 1611)
+
+- Co je nového nebo co se změnilo v aktualizaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, s aktualizací platformy 2016 (listopad 2016)
+
+- Následující opravy hotfix pro aplikaci Finance and Operations:
+
+    - **[KB4051266](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4051266&bugId=3863566&qc=ee80faaa7bc6c77b368d5eaf456c9c08e0b9fba5903a7b6fd8c13756c3a4b757)** - Povoluje synchronizaci prodejní objednávky s integrátorem dat z aplikace Microsoft Dynamics 365 for Finance and Operations do Sales 
+    - **[KB4037542](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4037542&bugId=3848253&qc=8323b93c15280172c5ab4159e0256e37104ced1729462c91ab2f7d00cb8d419c)** - Povoluje synchronizaci hlavičky a řádku prodejní objednávky s integrátorem dat z aplikace Microsoft Dynamics 365 for Finance and Operations do Sales
+    - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** - Podpora integrace zpeněžení potenciálního zákazníka prostřednictvím datových entit je požadována
+    
+    > [!NOTE]
+    > Po instalaci oprav hotfix je nutné spustit následující dávkovou úlohu z formuláře SalesPopulateProspectToCash. Tento formulář je skrytý, protože ho potřebujete pouze jednou. Abyste k němu získali přístup, přidejte při přihlášení do prostředí do svého prohlížeče toto: &mi=action:SalesPopulateProspectToCash Například https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash Ve formuláři, který se otevře, klikněte na OK.
+    Vypublikuje se nové pole v tabulkách LineCreationSequnceNumber, SalesLine, SalesQuotationLine a CustInvoiceTrans s jedinečnými hodnotami a obnoví se seznam produktů. To je nutné pro integraci P2C, aby bylo možné pracovat ve verzi 7.1.
 
 
-## <a name="system-requirements-for-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Systémové požadavky pro aplikaci Dynamics 365 for Finance and Operations, Enterprise Edition
+## <a name="system-requirements-for-sales"></a>Systémové požadavky pro aplikaci Sales
 
-Chcete-li použít řešení zpeněžení potenciálního zákazníka, je nutné nainstalovat následující:
+Chcete-li použít řešení zpeněžení potenciálního zákazníka, je nutné nainstalovat následující komponenty:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (července 2017) s aktualizací Platform update 8 (aplikací 7.2.11792.56024 s platformou 7.0.4565.16212)
+- Microsoft Dynamics 365 for Sales verze 1612 (8.2.1.207) (DB 8.2.1.207) online
+- Řešení zpeněžení potenciálního zákazníka pro Microsoft Dynamics 365 for Sales, verze 1.15.0.0 (v15) 
 
-- Opravy hotfix Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017).
-        
-    -  [KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160) – Tato oprava hotfix umožňuje podporu pro synchronizaci prodejní objednávky s funkcí integrace dat z aplikace Sales do aplikace Finance and Operations, spolu s řadou dalších vylepšení.
-
-    -  [KB4036524](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036524&bugId=3847504&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2) - Tato oprava hotfix umožňuje synchronizaci řádku prodejní objednávky pomocí funkce integrace z aplikace Finance and Operations do Sales.
-        
-    -  [KB4036461](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036461&bugId=3847029&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2) - Tato oprava hotfix umožňuje synchronizaci prodejní objednávky pomocí funkce integrace z aplikace Finance and Operations do Sales.
-
-**Poznámka**: Musíte pouze nainstalovat KB4045570, protože instalace obsahuje změny z jiných článků znalostní báze.
- 
-## <a name="system-requirements-for-dynamics-365-for-sales"></a>Systémové požadavky pro Dynamics 365 for Sales
-
-Chcete-li použít řešení zpeněžení potenciálního zákazníka, je nutné nainstalovat následující:
-
-- Dynamics 365 for Sales verze 1612 (8.2.1.207) (DB 8.2.1.207) online.
-- Řešení zpeněžení potenciálního zákazníka pro Dynamics 365 for Sales, verze 1.14.0.0 (v14) nebo pozdější.
+   > [!NOTE]
+   >
+   > Šablony s verzí 1.0.0.0 a 1.0.0.1 jsou podporovány na řešení zpeněžení potenciálního zákazníka pro aplikaci Microsoft Dynamics 365 for Sales, verze 1.14.1.0
+   >
+   > Šablony s verzí 2.0.0.0 a 2.1.0.0 jsou podporovány na řešení zpeněžení potenciálního zákazníka pro aplikaci Microsoft Dynamics 365 for Sales, verze 1.15.0.0
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Instalace řešení zpeněžení potenciálního zákazníka pro aplikaci Sales
 
-- Stáhněte [Zip soubor s balíčkem řešení zpeněžení potenciálního zákazníka pro Dynamics 365 for Sales](https://mbs.microsoft.com/customersource/Global/365Enterprise/downloads/product-releases/MD365FNOPENTProspectToCash) z webu CustomerSource.
+1. Stáhněte [Zip soubor s balíčkem řešení zpeněžení potenciálního zákazníka pro Dynamics 365 for Sales](https://mbs.microsoft.com/customersource/Global/365Enterprise/downloads/product-releases/MD365FNOPENTProspectToCash) z webu CustomerSource.
+2. Ověřte, že soubor zip není blokován. V opačném případě se při pokusu o instalací balíčku řešení zobrazí následující chybová zpráva: Nebyly nalezeny žádné balíčky pro import. Chcete-li odblokovat zip soubor, klikněte pravým tlačítkem a vyberte **Vlastnosti**. Vyberte **Odblokovat**.
+3. Rozbalte a spusťte soubor **PackageDeployer.exe**.
+4. Nainstalujte řešení zpeněžení potenciálního zákazníka na své instanci aplikace Sales:
 
-- Ujistěte se, že ZIP soubor není blokován, aby se vám při instalaci balíčku řešení nezobrazila chybová zpráva „Nebyl nalezen žádný balíček pro import“. Abyste odblokovali soubor, proveďte následující:
-
-    -  Klikněte pravým tlačítkem soubor ZIP.
-    -  Vyberte **Vlastnosti** a poté vyberte **Odblokovat**. 
-
-- Rozbalte a spusťte soubor PackageDeployer.exe.
-
-- Nainstalujte řešení zpeněžení potenciálního zákazníka do své instance aplikace Sales.
-
-    - Vyberte typ nasazení **Office 365**.
-    - Vyberte **Zobrazit podrobné**.
-    - Pro rychlou instalaci zvolte **Oblast**. Vyberete-li **Nevím**, systém vyhledá všechny oblasti a instalace bude trvat déle.
-    - Zadejte **Uživatelské jméno** a **Heslo** uživatele s rolí správce, který má k instalaci uživatelská práva.
+    1. Vyberte **Office 365** jako typ nasazení.
+    2. Vyberte **Zobrazit podrobné**.
+    3. Pro rychlou instalaci zvolte oblast. Vyberete-li **Nevím**, systém vyhledá všechny oblasti a instalace bude trvat déle.
+    4. Zadejte uživatelské jméno a heslo uživatele s rolí správce, který má k instalaci práva.
 

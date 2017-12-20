@@ -3,7 +3,7 @@ title: "Analýza obsahu Power BI výdajů na nákup"
 description: "Toto téma popisuje, co je součástí obsahu analýzy nákupu a výdajů v Power BI. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření obsahu."
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6485f36802fc4e327e223f47d65c4bdca11c1609
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: f38f82b4275599a6b958c495f32b72778b400024
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -41,7 +41,7 @@ Obsah Power BI **Analýza nákupních výdajů** byl vytvořen na pomoc nákupn�
 Obsah používá nákupní transakční data a poskytuje agregované zobrazení nákupní celopodnikových údajů a rozpis nákupních výdajů podle dodavatelů a produktů. V sestavách jsou zvýrazněny změny nákupních výdajů v průběhu času. Proto lze sestavy používat k upozornění manažerů na pozitivní a negativní trendy výdajů u jednotlivých dodavatelů a výrobků. Grafy dále zobrazují nákupní výdaje pro zásobování různých kategorií a skupin dodavatelů. Proto manažeři pro kategorie a regionální manažeři mohou tyto grafy používat k identifikaci změn v chování při výdajích.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Pokud používáte aktualizaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017), obsah Power BI **Analýza nákupu a výdajů** se zobrazí na stránce **Analýza nákupu a výdajů** (**Nákup a zdroje** > **Dotazy a sestavy** > **Analýza výkonu nákupu** > **Analýza nákupu a investic**). 
+Obsah Power BI **Analýza nákupu a výdajů** se zobrazí na stránce **Analýza nákupu a výdajů]** (**Zásobování a zdroje** > **Dotazy a sestavy** > **Analýza výkonu nákupu** > **Analýza nákupu a výdajů]**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriky, které jsou součástí obsahu Power BI
 Obsahu Power BI **Analýza nákupu a výdajů** obsahuje sestavu, která obsahuje sadu metrik. Tyto metriky jsou zobrazována jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizací.

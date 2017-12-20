@@ -3,7 +3,7 @@ title: Obsah Power BI
 description: "V tomto tématu je uveden seznam obsahu Power BI, který je k dispozici a odkazuje na zdroje, které uvádějí podrobnější informace."
 author: sericks007
 manager: AnnBe
-ms.date: 08/07/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ffae237693ebf0b0feedf7c60230590d95eed3d4
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: ae19b4afa9e36800988b790398e46d8861ba432d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -31,8 +31,8 @@ ms.lasthandoff: 11/03/2017
 
 V tomto tématu je uveden seznam obsahu Microsoft Power BI, který je k dispozici a odkazuje na zdroje, které uvádějí podrobnější informace.
 
-## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Obsah Power BI content pro aktualizaci Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017)
-Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017), je k dispozici následující obsah Power BI:
+## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Obsah Power BI content pro aktualizaci Dynamics 365 for Finance and Operations, Enterprise Edition
+Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, je k dispozici následující obsah Power BI:
 
 - [Obsah Power BI pro porovnání skutečné situace s rozpočtem](ledger-budgets-power-bi.md)
 - [Obsah zaměstnaneckých výhod v Power BI](benefits-power-bi.md)

@@ -3,7 +3,7 @@ title: "Obsah zaměstnaneckých výhod v Power BI"
 description: "Toto téma popisuje obsah zaměstnaneckých výhod v Power BI. Vysvětluje přístup k obsaženým sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu."
 author: jcart1106
 manager: AnnBe
-ms.date: 05/24/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 21f7f77148728a6e7584af76ec053250f52bc73c
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 25111ac7ae07e04bc81ac23a348464bcbe1393af
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,8 +32,8 @@ Toto téma popisuje obsah **zaměstnaneckých výhod** v Microsoft Power BI. Vys
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 Obsah **Zaměstnanecké výhody** v Power BI se zobrazuje v pracovním prostoru **Správa zaměstnaneckých výhod**, pokud používáte jeden z následujících produktů:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017)
-- Aplikace Microsoft Dynamics 365 for Talent
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition
+- Microsoft Dynamics 365 for Talent
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
 Sestavy, které jsou součástí obsahu **Zaměstnanecké výhody**, mají grafy a tabulky obsahující další informace. Následující tabulka obsahuje popis daných sestav.
