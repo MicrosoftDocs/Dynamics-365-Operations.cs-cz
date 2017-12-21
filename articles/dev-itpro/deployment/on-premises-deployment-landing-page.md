@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 61395e0e57eb02aaa1c95a7dbd9c15082b822701
-ms.openlocfilehash: 15992b1666caea21cdcf440fefcf65ff18111801
+ms.sourcegitcommit: 855967a9aacd4881315c5d5fefa06b909cd4cb59
+ms.openlocfilehash: 69151ed1c0a0a06e72bbdc8b33eb2fc68e9cc8eb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 11/28/2017
 
 ---
 # <a name="on-premises-deployment-landing-page"></a>Úvodní stránka Místní nasazení
@@ -30,14 +30,13 @@ ms.lasthandoff: 10/05/2017
 
 Můžete nasadit aplikaci aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (místní). Když se rozhodnete pro typ místního nasazení, budou se požadavky na systém, rozměry hardwaru a funkce lišit od cloudového nasazení. Toto téma obsahuje odkazy na obsah s informacemi specifickými pro místní nasazení.
 
-**Poznámka:** V současné době probíhá přejmenování aplikace Dynamics 365 for Operations (místní). V průběhu komunikace a v průvodcích licencování budou uváděny odkazy na aplikaci Dynamics 365 for Operations (místní). Název v produktu, který se zobrazí při nasazování produktu, je Dynamics 365 for Finance and Operations, Enterprise Edition. Oba názvy odkazují na stejný výrobek.
-
 ## <a name="get-started"></a>Začínáme
 - [Přehled aplikace Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](on-premises-overview.md)
 - [Konkrétní systémové požadavky pro místní nasazení](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Nastavení velikosti hardwaru pro místní prostředí](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Zásady životního cyklu online služby a místního softwaru](../migration-upgrade/versions-update-policy.md)
 - [Zakoupení aplikace Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](../../fin-and-ops/get-started/purchase-on-premises.md)
+- [Srovnání funkce cloudu a on-premises](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
 ## <a name="onboard"></a>Onboard
 - [Vytvoření místního projektu ve službě Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
@@ -51,9 +50,12 @@ Můžete nasadit aplikaci aplikace Microsoft Dynamics 365 for Finance and Operat
 - [Generování dokumentů, publikování a možnosti tisku v nasazeních on-premises](../analytics/printing-capabilities-on-premises.md)
 - [Nastavení technické podpory](../lifecycle-services/support-experience.md)
 - [Řešení problémů s internetovým připojením klienta](../user-interface/client-disconnected.md)
+- [Použití aktualizací nasazení on-premises](apply-updates-on-premises.md)
+- [Opětovné nasazení místního nasazení](redeploy-on-prem.md)
 
 ## <a name="other-resources"></a>Další zdroje
 - [Funkce neimplementované v nasazeních on-premises](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Zastaralé funkce](../migration-upgrade/deprecated-features.md)
+- [Zásady životního cyklu softwaru a seznam vydání](../migration-upgrade/versions-update-policy.md)
  
 

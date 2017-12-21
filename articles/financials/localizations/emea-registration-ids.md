@@ -3,7 +3,7 @@ title: ID registrace
 description: "Toto téma poskytuje informace o nastavení a používání ID registrace."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e85e1ef9bb27e3644264c898feb3a484c5b3ec3f
+ms.sourcegitcommit: 3d3ad89f80c3e3f42e117109f4a76232795b7d64
+ms.openlocfilehash: e908d4ec41263ed4230ea5e70fa08db793abedc6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/28/2017
 
 ---
 
@@ -98,6 +98,12 @@ V následující tabulce jsou uvedeny typy registrací podporovaných v aplika
 | OGRN                                                          | Ruská federace| OGRN (OGRN legislativního typu v aplikaci AX 2012 R3) |
 | SNILS                                                         | Ruská federace| SNILS (SNILS legislativního typu v aplikaci AX 2012 R3)|
 | CIFTS                                                         | Ruská federace| CIFTS (CIFTS legislativního typu v aplikaci AX 2012 R3)|
+| Pas                                                      | Španělsko             | Pas|
+| Oficiální identifikační doklad                              | Španělsko             | Oficiální identifikační doklad|
+| Certifikát o pobytu                                         | Španělsko             | Certifikát o pobytu|
+| Jiný identifikační dokument                                 | Španělsko             | Jiný identifikační dokument|
+| Nesečteno                                                  | Španělsko             | Není k dispozici v aplikaci AX 2012 R3|
+
 
 Další informace o zpracování ID registrace, včetně nezbytných předpokladů, naleznete v následujících záznamech úloh pro ID DPH v Lifecycle Services (LCS):
 

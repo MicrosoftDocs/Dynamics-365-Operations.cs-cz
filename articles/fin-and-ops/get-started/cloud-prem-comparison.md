@@ -3,7 +3,7 @@ title: "Srovnání funkce cloudu a on-premises"
 description: "Toto téma popisuje funkce, které jsou podporovány v cloudu a instalaci on-premises."
 author: robinarh
 manager: AnnBe
-ms.date: 07/13/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,13 +15,13 @@ ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 ms.author: robinr
-ms.search.validFrom: 2017-07-13
+ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: efe06929db414475f6457dfe49ff1791a3d609d5
+ms.sourcegitcommit: cfd3b475b113fdab4ceeb3e636fea6c9134ab982
+ms.openlocfilehash: 32cc0c01a096cd678c605f57e0cccfe42d0479aa
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -57,8 +57,11 @@ Následující tabulka uvádí oblasti produktu. Podpora cloudu a instalace on-p
 | | Elektronické výkaznictví (ER) - Integrace s LCS | Ano | Ne|
 | | Elektronické výkaznictví (ER) - Integrace s aplikací SharePoint | Ano | Ne|
 | | Integrace s PowerBI.com| Ano | Ne |
-| | Analytické pracovní prostory | Ano | Ne |
-| | Inteligentní obchodní proces: doporučení| Ano | Ne |
+| | Analytické pracovní prostory | Ano | Žádný |
+| | Inteligentní obchodní proces: doporučení| Ano | Žádný |
+| | Vytváření sestav Power BI s OData pomocí pracovní plochy Power BI nebo nástroje PowerQuery aplikace Excel | Ano | Žádný |
+| | Služba SQL Server Reporting Services podporuje rozšiřování  | Ano | Žádný |
+| | Telemetrie je přenesena do cloudu | Ano | Žádný |
 | Řízení zásob| | Ano | Ano |
 | Lifecycle Services| | Ano | Ano |
 | | Konfigurovatelné obchodní procesy | Ano | Ne |
@@ -86,8 +89,8 @@ Následující tabulka uvádí oblasti produktu. Podpora cloudu a instalace on-p
 | Správa přepravy| | Ano | Ano |
 | Dodavatelská spolupráce| | Ano | Ano|
 | Řízení skladu| | Ano | Ano |
-| | Mobilní aplikace skladu| Ano | Ne |
-| | Power BI sestavy skladu| Ano | Ne |
+| | Mobilní aplikace skladu| Ano | Ano |
+| | Power BI sestavy skladu| Ano | Žádný |
 | Webový klient | | Ano | Ano |
 | | Záznamník úloh - Uložení nebo načtení záznamu úloh z knihovny BPM| Ano | Ne |
 | Podpora | | Ano | Ano |
@@ -102,9 +105,10 @@ Následující tabulka uvádí oblasti produktu. Podpora cloudu a instalace on-p
 | Monitorování a telemetrie  || Ano | Ano |
 | Kompatibilita platformy  || Ano | Ano |
 | Servis | | Ano | Ano |
-| | Upgrade v různých prostředích | Ano | Ne |
+| | Upgrade v různých prostředích | Ano | Žádný |
+| Trace Parser a PerfTimer | | Ano | Žádný |
 | Upgradovat | | Ano | Ano |
-| | Upgradovat | Ano | Ne |
+| | Upgradovat | Ano | Žádný |
 | | Upgrade a podpora předchozích verzí | Ano | Ne |
 | Vývoj sady Visual Studio |  | Ano | Ano |
 
@@ -119,8 +123,10 @@ Následující tabulka uvádí oblasti produktu. Podpora cloudu a instalace on-p
 
 | Plošný | Funkce | Cloudový | Místní|
 |---|---|---|---|
-| Všechny oblasti Talent | Všechny funkce Talent | Ano | Ne |
+| Všechny oblasti Talent | Všechny funkce Talent | Ano | Žádný |
 
+## <a name="see-also"></a>Viz také
 
+- [Funkce neimplementované v nasazeních on-premises](features-not-implemented-on-prem.md)
 
 

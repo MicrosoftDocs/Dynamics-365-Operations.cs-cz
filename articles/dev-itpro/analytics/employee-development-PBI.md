@@ -3,7 +3,7 @@ title: "Obsah Power BI pro rozvoj zaměstnanců"
 description: "Toto téma popisuje obsah Power BI pro rozvoj zaměstnanců. Vysvětluje přístup k sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu."
 author: jcart1106
 manager: AnnBe
-ms.date: 05/24/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c6a1125d56239f4370d6219a93988d50d402045e
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: f8ba7a968a1a5b376bac52106671607247f061d9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -31,7 +31,7 @@ Toto téma popisuje obsah Microsoft Power BI – **Rozvoj zaměstnance**. Vysvě
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 
-Pokud používáte aktualizaci aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017), najdete balíček obsahu **Rozvoj zaměstnance** v knihovně sdíleného majetku ve službě Microsoft Dynamics Lifecycle Services (LCS). Další informace o tom, jak obsah stáhnout a spojit ho s daty, najdete v tématu [Obsah Power BI ve službě LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md).
+Sadu obsahu **Rozvoj zaměstnance** najdete ve sdílené knihovně aktiv služby Microsoft Dynamics Lifecycle Services (LCS). Další informace o tom, jak obsah stáhnout a spojit ho s daty, najdete v tématu [Obsah Power BI ve službě LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md).
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
 Sestavy, které jsou součástí obsahu Power BI **Rozvoj zaměstnance**, obsahují grafy a tabulky s dalšími informacemi. Následující tabulka obsahuje popis daných sestav.

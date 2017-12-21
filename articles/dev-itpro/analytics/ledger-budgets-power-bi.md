@@ -3,7 +3,7 @@ title: "Obsah Power BI pro porovnání skutečné situace s rozpočtem"
 description: "Toto téma popisuje obsah Power BI pro porovnání skutečné situace s rozpočtem. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření obsahu."
 author: ryansandness
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: ryansand
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f09af96fb1c76d8737d2c535f1a46565a18deca0
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 2a0ad5af4e4d7da09690331dc9d1a51d2e97a664
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -35,7 +35,7 @@ Toto téma popisuje obsah Microsoft Power BI **Skutečnost a rozpočet**. Vysv�
 Obsah Power BI **Skutečnost a rozpočet** byl vytvořen pro uživatele, kteří odpovídají za sledování a porovnávání skutečných výsledků s rozpočtem v rámci organizace. Obsah Power BI **Skutečnost a rozpočet** usnadňuje kontrolu odchylek rozpočtu. Můžete analyzovat rozpočet pro aktuální rok podle kategorie účtu, kódu rozpočtu, hlavního účtu, popisu hlavního účtu nebo fiskálního období a získat užitečné informace o příčinách odchylek. 
 
 # <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Pokud používáte aktualizaci aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017), zobrazují se sestavy z obsahu Power BI **Skutečnost a rozpočet** v pracovních prostorech **Rozpočty hlavní knihy a prognózy** a **CFO**.
+Sestavy z obsahu Power BI **Skutečnost a rozpočet** se zobrazují v pracovních prostorech **Rozpočty hlavní knihy a prognózy** a **CFO**.
 
 # <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
 Následující tabulka obsahuje podrobnosti o metrikách, které jsou k dispozici na každé stránce sestavy obsahu Power BI **Skutečnost a rozpočet**.

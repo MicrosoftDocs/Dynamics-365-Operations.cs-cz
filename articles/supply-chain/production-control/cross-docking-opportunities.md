@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ef58898a6822224e44873afdd7c55800215c37a0
+ms.sourcegitcommit: ff0d19a2d712ccb17762803e2fe4ab2ed5aa024e
+ms.openlocfilehash: bd5f055ef816f050ed99390c455a613d46dd6323
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/06/2017
 
 ---
 
@@ -74,7 +74,7 @@ V **zásadě cross dockingu** definujete, jaké typy dokumentů jsou použiteln�
 ### <a name="cross-docking-policy-name-transfer-order"></a>Název zásady cross dockingu: Objednávka transferu
 
 -   Pořadové číslo: 10
--   Typ pracovního příkazu: Vydání transferu
+ -   Typ pracovního příkazu: Vydání transferu
 -   Poptávka po cross dockingu vyžaduje skladové místo: Ne
 -   Strategie cross dockingu: Datum a čas
 
@@ -102,10 +102,9 @@ Po vykázání produktu jako dokončeného na výrobní lince je produkt doprave
 6.  Vytvořte převodní příkaz. Vytvořte objednávku transferu pro položku číslo L0101. Množství = 20.
 7.  Uvolněte objednávku transferu z pracovní plochy plánování nákladu. Na kartě **Expedice** vyberte položku nabídky pro pracovní plochu plánování nákladu a v nabídce **Uvolnit** řádku nákladu vyberte **Uvolnit do skladu**. Nyní existuje otevřený řádek vlny typu **Objednávka transferu** pro objednávku transferu.
 8.  Vytvořte výrobní zakázku. Přejděte na stránku seznamu **Výrobní zakázka** a vytvořte výrobní zakázku pro produkt L0101. Množství = 20. Odhadněte a zahajte výrobní zakázku. Všimněte si, že pole **Zaúčtovat výdejku** zůstává nastaveno na **Ne**.
-9.  Vykázání jako dokončené z mobilního zařízení. Přejděte k portálu mobilního zařízení a vyberte položku nabídky **Ohlásit jako dokončené a odložit**. Nyní vykažte jako dokončené L0101 z mobilního zařízení. Všimněte si, že skladové místo je **BAYDOOR**. Toto skladové místo naleznete ze směrnice skladového místa **Vydání transferu** pro typ pracovního příkazu **Vložit**. Všimněte si též, že práce typu **Vydání transferu** byla vytvořena a dokončena. Přejděte na podrobnosti práce objednávky transferu, chcete-li ověřit práci.
-10. Nyní se pokuste spustit o 20 kusů více na výrobní zakázce a poté zkuste vykázat 20 kusů jako dokončených pomocí ručního zařízení. Tentokrát se jako skladové místo nabídne **LP-001**. Toto umístění se nalezne ze směrnice skladového místa pro **Výdej dokončeného zboží**. Tato směrnice skladového místa se používá, protože neexistuje žádná příležitost pro cross docking. Objednávka transferu pro LP-001 byla zcela splněna první aktivitou cross dockingu.
-
-Typ práce **Výdej dokončeného zboží** byl vytvořen a zpracován.
+9.  Vykázání jako dokončené z mobilního zařízení. Přejděte k portálu mobilního zařízení a vyberte položku nabídky **Ohlásit jako dokončené a odložit**. Nyní vykažte jako dokončené L0101 z mobilního zařízení. Množství = 10. Všimněte si, že skladové místo je **BAYDOOR**. Toto skladové místo naleznete ze směrnice skladového místa **Vydání transferu** pro typ pracovního příkazu **Vložit**. Všimněte si též, že práce typu **Vydání transferu** byla vytvořena a dokončena. Přejděte na podrobnosti práce objednávky transferu, chcete-li ověřit práci.
+10. Nyní vykažte dalších 10 kusů z mobilního zařízení. Všimněte si, že skladové místo je opět **BAYDOOR**. Všimněte si též, že nová práce typu **Vydání transferu** byla vytvořena pro těchto 10 kusů.
+11. Nyní se pokuste spustit o 20 kusů více na výrobní zakázce a poté zkuste vykázat 20 kusů jako dokončených pomocí ručního zařízení. Tentokrát se jako skladové místo nabídne **LP-001**. Toto umístění se nalezne ze směrnice skladového místa pro **Výdej dokončeného zboží**. Tato směrnice skladového místa se používá, protože neexistuje žádná příležitost pro cross docking. Objednávka transferu pro LP-001 byla zcela splněna dvěma aktivitami cross dockingu v kroku 9 a 10. Všimněte si, že práce typu **Výdej dokončeného zboží** byla vytvořena a zpracována.
 
 #### <a name="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule"></a>Scénář 2 - Cross docking z výroby k objednávce transferu s plánem události
 
@@ -123,7 +122,7 @@ Poté, co je výrobek vykázán jako dokončený na výrobní lince, je přeprav
 
 ### <a name="additional-information"></a>Doplňkové informace
 
--   Scénář cross dockingu je podporován pro dávku a sériové řízené zboží, přičemž jak dimenze dávky, tak dimenze sériového čísla jsou definovány nad a pod skladovým místem v hierarchii rezervací.
+-   Scénář cross dockingu je podporován pro dávku a sériové řízené zboží, přičemž jak dimenze dávky, tak dimenze sériového čísla jsou definovány nad a pod skladovým místem v hierarchii rezervací. 
 
 
 

@@ -3,7 +3,7 @@ title: "Zastaralé funkce"
 description: "Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění."
 author: sericks007
 manager: AnnBe
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: ee051bbf50a6124fe1700a244b36b5f9c599e714
+ms.sourcegitcommit: 408854737847590841814ed74209618bbf22ec23
+ms.openlocfilehash: b0eb041ee1a4309b010e510e1f7428d6c930e4a0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/27/2017
 
 ---
 
@@ -490,8 +490,8 @@ Datové oddíly poskytují logické oddělení dat v databázi aplikace Microsof
 
 |   |   |
 |---|---|
-| **Důvod pro zrušení**       | Datové oddíly byly zavedeny v aplikaci Microsoft Dynamics AX 2012 R2 a umožňují izolaci dat. V běžné situaci má společnost pobočky a data z jedné dceřiné společnosti by neměla být viditelná pro jiné dceřiné společnosti, přestože obě pobočky jsou spravovány ve stejném oddělení IT. Nicméně by byly vyžadovány dodatečné skripty a další správní režie v celém programu pro vytvoření nových oddílů, naplnění je daty a zálohování data oddílu. V cloudu, kde máte přístup k databázové službě Platforma jako služba (PaaS – Microsoft Azure SQL Database), je mnohem efektivnější použít databázi pro izolační kontejner, než provádět izolaci v programu. Bez ohledu na to, zda je rozdělení dat požadované pro dceřiné společnosti, pro více klientů nebo pouze pro škálování, věříme, že situace je možné vyřešit efektivněji s využitím více databází nebo instancí aplikace Dynamics AX. |
-| **Nahrazeno jinou funkcí?** | Datové oddíly budou v budoucí verzi nahrazeny prostřednictvím podpory více databází nebo instancí aplikace Dynamics AX.    |
+| **Důvod pro zrušení**       | Datové oddíly byly zavedeny v aplikaci Microsoft Dynamics AX 2012 R2 a umožňují izolaci dat. V běžné situaci má společnost pobočky a data z jedné dceřiné společnosti by neměla být viditelná pro jiné dceřiné společnosti, přestože obě pobočky jsou spravovány ve stejném oddělení IT. Nicméně by byly vyžadovány dodatečné skripty a další správní režie v celém programu pro vytvoření nových oddílů, naplnění je daty a zálohování data oddílu. V cloudu, kde máte přístup k databázové službě Platforma jako služba (PaaS – Microsoft Azure SQL Database), je mnohem efektivnější použít databázi pro izolační kontejner, než provádět izolaci v programu. Bez ohledu na to, zda je rozdělení dat požadované pro dceřiné společnosti, pro více klientů nebo pouze pro škálování, věříme, že situace je možné vyřešit efektivněji s využitím více instancí aplikace Finance and Operations. |
+| **Nahrazeno jinou funkcí?** | Odběratelé používající datové oddíly musí použít více instancí aplikace Finance and Operations, pokud je oddělení úrovně databáze kritickým problémem.    |
 | **Ovlivněné moduly**             | Vše  |
 
 ### <a name="database-and-file-share-storage-for-attachments"></a>Úložiště databáze a sdílené složky souborů pro přílohy

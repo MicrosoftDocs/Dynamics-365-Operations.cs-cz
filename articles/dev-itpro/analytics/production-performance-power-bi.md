@@ -3,7 +3,7 @@ title: "Obsah výkonosti výroby v Power BI"
 description: "Toto téma popisuje, co je součástí obsahu výkonosti výroby v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: baa0343713e8f75e1c9637a903b9008db0968fd4
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 898a1a513850024fd0164955bdd204ee4b08c632
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -42,7 +42,7 @@ Tento obsah Power BI také lze analyzuje výrobní odchylky. Výrobní odchylky 
 Obsah **Výkonnost výroby** v Power BI zahrnuje data, která pocházejí z výrobních zakázek a dávkových objednávek. Sestavy neobsahují data, která souvisí s kanbanovými výrobami.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017), obsah **Výkonnosti výroby** v Power BI se zobrazuje na stránce **Výkonnost výroby** (**Řízení výroby** > **Dotazy a sestavy** > **Analýza výkonnosti výroby** > **Výkonnost výroby**). 
+Obsah Power BI **Výkonnost výroby** se zobrazí na stránce **Výkonnost výroby** (**Řízení výroby** > **Dotazy a sestavy** > **Analýza výkonnosti výroby** > **Výkonnost výroby**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriky, které jsou součástí obsahu Power BI
 
