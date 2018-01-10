@@ -3,7 +3,7 @@ title: "Řízení a účetnictví projektů"
 description: "Funkci řízení projektu a účetnictví lze použít v několika odvětvích k poskytování služeb, výrobě produktů nebo dosažení výsledků."
 author: KimANelson
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

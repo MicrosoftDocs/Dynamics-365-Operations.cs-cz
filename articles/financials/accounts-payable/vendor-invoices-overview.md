@@ -3,7 +3,7 @@ title: "Přehled faktur dodavatele"
 description: "V tomto článku jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na zaplacení za přijaté produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
