@@ -3,7 +3,7 @@ title: "Odsouhlasení bankovního výpisu pomocí rozšířeného odsouhlasení 
 description: "Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Toto téma popisuje proces odsouhlasení."
 author: saraschi2
 manager: AnnBe
-ms.date: 09/11/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

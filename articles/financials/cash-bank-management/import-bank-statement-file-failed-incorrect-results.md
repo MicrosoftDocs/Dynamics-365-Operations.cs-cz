@@ -3,7 +3,7 @@ title: "Poradce při potížích s importem souboru bankovního výpisu"
 description: "Je důležité, aby se rozvržení souboru s bankovním výpisem od banky shodovalo s rozvržením podporovaným v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Díky přísným standardům pro bankovní výpisy bude většina integrací fungovat správně. Někdy však soubor s prohlášením nemusí být možné importovat, nebo bude obsahovat nesprávné výsledky. Tyto problémy jsou obvykle způsobeny drobnými rozdíly v souboru s bankovním výpisem. V tomto článku je popsán postup pro vyřešení těchto rozdílů a potíží."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
