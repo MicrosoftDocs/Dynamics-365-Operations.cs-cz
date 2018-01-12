@@ -3,14 +3,14 @@ title: Pravidla eliminace
 description: "V tomto tématu jsou informace o pravidlech eliminace a různých možnostech pro vytváření sestav o eliminacích."
 author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerEliminationRule
 audience: Application User
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 13131
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 818572a8d1f790aaa7c6e4befc1d2222a1c35c50
+ms.sourcegitcommit: 47336a19899b1fad0e63265173fd7fd02fc74ec3
+ms.openlocfilehash: 2a0897bd80a508474be384e8086ca47dd9de7efb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/12/2018
 
 ---
 
@@ -140,7 +140,7 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="0c97c-182">Po definování základů můžete určit skutečná pravidla zpracování kliknutím na možnost **Řádky**.</span><span class="sxs-lookup"><span data-stu-id="0c97c-182">After you have defined the basics, you can define the actual processing rules by clicking **Lines**.</span></span> <span data-ttu-id="0c97c-183">Existují dvě možnosti pro eliminace - eliminace změny čisté částky nebo určení pevné částky.</span><span class="sxs-lookup"><span data-stu-id="0c97c-183">There are two options for eliminations, eliminating the net change amount or defining a fixed amount.</span></span> 
 
-<span data-ttu-id="0c97c-184">Vyberte svůj zdrojový účet.</span><span class="sxs-lookup"><span data-stu-id="0c97c-184">Select your source account.</span></span> <span data-ttu-id="0c97c-185">Jako zástupný znak můžete použít hvězdičku (\*).</span><span class="sxs-lookup"><span data-stu-id="0c97c-185">You can use an asterisk (\*) as a wild card.</span></span> <span data-ttu-id="0c97c-186">Například hodnota 1\* by zvolila jako zdroj dat pro přidělení všechny účty začínající číslem 1.</span><span class="sxs-lookup"><span data-stu-id="0c97c-186">For example, 1\* would select all accounts that start with a 1 as a source of data for the allocation.</span></span> 
+<span data-ttu-id="0c97c-184">Vyberte svůj zdrojový účet.</span><span class="sxs-lookup"><span data-stu-id="0c97c-184">Select your source account.</span></span> <span data-ttu-id="0c97c-185">Jako zástupný znak můžete použít hvězdičku (\\*).</span><span class="sxs-lookup"><span data-stu-id="0c97c-185">You can use an asterisk (\\*) as a wild card.</span></span> <span data-ttu-id="0c97c-186">Například hodnota 1\\* by zvolila jako zdroj dat pro přidělení všechny účty začínající číslem 1.</span><span class="sxs-lookup"><span data-stu-id="0c97c-186">For example, 1\\* would select all accounts that start with a 1 as a source of data for the allocation.</span></span> 
 
 <span data-ttu-id="0c97c-187">Po výběru svých zdrojových účtů určí položka **Specifikace účtu** účet z cílové společnosti, která je použita.</span><span class="sxs-lookup"><span data-stu-id="0c97c-187">After you have selected your source accounts, the **Account specification** determines the account from the destination company that is used.</span></span> <span data-ttu-id="0c97c-188">Vyberte **Zdroj**, pokud chcete použít stejný hlavní účet definovaný v účtu **Zdroj**.</span><span class="sxs-lookup"><span data-stu-id="0c97c-188">Select **Source** if you want to use the same main account defined in the **Source** account.</span></span> <span data-ttu-id="0c97c-189">Vyberete-li možnost **Definováno uživatelem**, pak je nutné zadat cílový účet.</span><span class="sxs-lookup"><span data-stu-id="0c97c-189">If you select **User defined**, then you must specify a destination account.</span></span> 
 
