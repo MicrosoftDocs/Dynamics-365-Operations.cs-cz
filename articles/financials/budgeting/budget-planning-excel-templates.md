@@ -3,7 +3,7 @@ title: "Šablony plánování rozpočtu pro Excel"
 description: "Toto téma popisuje, jak vytvořit šablony aplikace Microsoft Excel, které lze použít pro plány rozpočtu."
 author: ryansandness
 manager: AnnBe
-ms.date: 07/27/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 96df6bbfe5c9e158b616230c2b061762a5edda08
+ms.sourcegitcommit: 63bf043124797b328116fd7951913eaeda6ff97b
+ms.openlocfilehash: 747e57b11c13f71c672d43531255751ff273f57c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/12/2018
 
 ---
 
@@ -92,7 +92,7 @@ ms.lasthandoff: 11/03/2017
 > [!NOTE] 
 > <span data-ttu-id="2cb8c-154">Abyste definovali vzorec, vytvořte vzorec v tabulce a zkopírujte ho do okna **Návrh**.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-154">To define the formula, create the formula in the spreadsheet, and then copy it to the **Design** window.</span></span> <span data-ttu-id="2cb8c-155">Tabulka vázaná na aplikaci Finance and Operations se obvykle nazývá "AXTable1".</span><span class="sxs-lookup"><span data-stu-id="2cb8c-155">A Finance and Operations bound table will typically be named "AXTable1".</span></span> <span data-ttu-id="2cb8c-156">Například k sumarizaci sloupců požadavků na první až čtvrté čtvrtletí v tabulce je vzorec = AxTable1\[Požadavek na 1. čtvrtletí\]+ AxTable1\[Požadavek na 2. čtvrtletí\]+ AxTable1\[Požadavek na 3. čtvrtletí\]+ AxTable1\[Požadavek na 4. čtvrtletí\].</span><span class="sxs-lookup"><span data-stu-id="2cb8c-156">For example, to summarize Request Q1 : Request Q4 columns in the spreadsheet, the formula = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].</span></span>
 
-<span data-ttu-id="2cb8c-157">Opakujte tyto kroky pro vložení sloupce **Úprava**.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-157">Repeat these steps to insert the **Adjustment** column.</span></span> <span data-ttu-id="2cb8c-158">Použijte vzorec = AxTable1\[Celkový požadavek\]\*$I$ 1 pro tento sloupec.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-158">Use formula = AxTable1\[Total request\]\*$I$1 for this column.</span></span> <span data-ttu-id="2cb8c-159">Vezme se hodnota v buňce I1 a vynásobí se hodnoty ve sloupci **Celkový požadavek** pro výpočet částek úprav.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-159">This will take the value in cell I1 and multiply the values in the **Total request** column to calculate adjustment amounts.</span></span>
+<span data-ttu-id="2cb8c-157">Opakujte tyto kroky pro vložení sloupce **Úprava**.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-157">Repeat these steps to insert the **Adjustment** column.</span></span> <span data-ttu-id="2cb8c-158">Použijte vzorec = AxTable1\[Celkový požadavek\]\\*$I$ 1 pro tento sloupec.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-158">Use formula = AxTable1\[Total request\]\\*$I$1 for this column.</span></span> <span data-ttu-id="2cb8c-159">Vezme se hodnota v buňce I1 a vynásobí se hodnoty ve sloupci **Celkový požadavek** pro výpočet částek úprav.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-159">This will take the value in cell I1 and multiply the values in the **Total request** column to calculate adjustment amounts.</span></span>
 
 <span data-ttu-id="2cb8c-160">Uložte a zavřete soubor aplikace Excel.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-160">Save and close the Excel file.</span></span> <span data-ttu-id="2cb8c-161">Vraťte se aplikace Finance and Operations a v **Rozvržení** klikněte na **Šablona &gt; Odeslat** k odeslání uložené šablony aplikace Excel, která se použije pro plán rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="2cb8c-161">Return to Finance and Operations, and in **Layouts**, click **Template &gt; Upload** to upload the saved Excel template to be used for the budget plan.</span></span> 
 
