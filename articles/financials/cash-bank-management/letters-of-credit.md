@@ -3,7 +3,7 @@ title: Akreditivy
 description: "Akreditivy jsou bankovní dokumenty běžně používané pro nákup a prodej zboží v zahraničí."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
