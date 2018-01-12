@@ -3,7 +3,7 @@ title: "Pracovní prostor ověření dat"
 description: "Pracovní prostor Kontrolní seznam ověřování dat umožňuje sledování procesů ověřování dat mezi společnostmi, oblastmi a osobami. Kontrolní seznam lze použít během nové implementace, po upgradu nebo po migraci."
 author: bking
 manager: AnnBe
-ms.date: 05/11/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,10 +15,10 @@ ms.assetid:
 ms.search.region: Global
 ms.author: bking
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: daded9d8ef48456cbd3f97a7bae5fa75885ce9d1
+ms.sourcegitcommit: 8db36355f4ef05fb6c11b9eff2090df8d6ad03b4
+ms.openlocfilehash: 935e8901758a1779af2273b74f55a5becedc3e07
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/12/2018
 
 ---
 
