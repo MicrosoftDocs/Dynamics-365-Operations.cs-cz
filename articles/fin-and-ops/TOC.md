@@ -17,10 +17,11 @@
 ##### [Zakoupení aplikace Finance and Operations (on-premises)](get-started/purchase-on-premises.md)
 
 ### [Co je nového a co se změnilo](get-started/whats-new-changed.md)
-#### [Zastaralé funkce](../dev-itpro/migration-upgrade/deprecated-features.md)
+#### [Odstraněné nebo zastaralé funkce](../dev-itpro/migration-upgrade/deprecated-features.md)
 #### [Odložené funkce AX 2012](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Funkce neimplementované v místních nasazeních](get-started/features-not-implemented-on-prem.md)
-#### [Zásady životního cyklu](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Vydání a zásady životního cyklu](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Finance and Operations, Enterprise Edition 7.3](get-started/whats-new-application-7.3-update.md)
 #### [Platform update 12 (listopad 2017)](get-started/whats-new-platform-update-12.md)
 #### [Platform update 11 (říjen 2017)](get-started/whats-new-platform-update-11.md)
 #### [Platform update 10 (srpen 2017)](get-started/whats-new-platform-update-10.md)
@@ -141,7 +142,7 @@
 #### [API balíčku správy dat](../dev-itpro/data-entities/data-management-api.md)
 #### [Koncové body služby](../dev-itpro/data-entities/services-home-page.md)
 ##### [Řešení problému s ověřením služby](../dev-itpro/data-entities/troubleshoot-service-authentication.md)
-#### [OData](../dev-itpro//data-entities/odata.md)
+#### [OData](../dev-itpro/data-entities/odata.md)
 #### [Vlastní služby](../dev-itpro/data-entities/custom-services.md)
 #### [Opakované integrace](../dev-itpro/data-entities/recurring-integrations.md)
 
@@ -179,9 +180,10 @@
 ### [Datové entity](../dev-itpro/data-entities/data-entities.md)
 
 #### [Projekty dat konfigurace](../dev-itpro/data-entities/configuration-data-projects.md)
-#### [Balíčky dat konfigurace](../dev-itpro/data-entities/configuration-data-packages.md)
 #### [Zkopírování dat konfigurace mezi společnostmi](../dev-itpro/data-entities/copy-configuration.md)
+##### [Balíčky konfiguračních dat (pouze vydání z července 2017)](../dev-itpro/data-entities/configuration-data-packages.md)
 #### [Šablony dat konfigurací](../dev-itpro/data-entities/configuration-data-templates.md)
+
 #### [Sledování změn entity](../dev-itpro/data-entities/entity-change-track.md)
 
 ### Standardní datové entity
@@ -646,6 +648,11 @@
 ##### [Nastavení kreditů záporných zůstatků ](../financials/localizations/apac-chn-negative-debits-credits.md)
 ##### [Protokol uživatelských operací podle čínského pracovního pravidla](../financials/localizations/tasks/user-operation-log-china-working-rule.md)
 ##### [Často kladené dotazy týkající se zákaznických faktur s DPH](../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
+
+#### Indie
+##### [Přehled daňového modulu](../financials/general-ledger/tax-engine.md)
+##### [Integrace daňového modulu](../financials/general-ledger/tax-engine-integration.md)
+##### [Rozšíření daňového modulu](../financials/general-ledger/extend-tax-engine-configurations.md)
 
 #### Japonsko
 ##### [Pořízení dlouhodobého majetku a nárokování subvencí státního grantu](../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md)
@@ -1215,6 +1222,7 @@
 
 ### Vykazování a tisk dokumentů
 #### [Přehled služby vykazování dokumentů](../dev-itpro/analytics/document-reporting-services.md)
+#### [Instalace zařízení síťové tiskárny v místních prostředích](../dev-itpro/analytics/install-network-printer-onprem.md)
 #### [Konfigurace služby SSRS pro nasazení on-premises](../dev-itpro/analytics/configure-ssrs-on-premises.md)
 #### [Tisk](../dev-itpro/analytics/print-documents.md)
 ##### [Instalace agenta směrování dokumentu pro aktivaci zařízení síťové tiskárny](../dev-itpro/analytics/install-document-routing-agent.md)
@@ -1285,30 +1293,28 @@
 ##### [Zvolení definice datového modelu při vytváření formátu pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md)
 ##### [Upgrade formátu přijetím nové základní verze tohoto formátu pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-upgrade-format.md)
 ##### [Odeslání konfigurace do služby Lifecycle Services pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md)
+##### [Změny API architektury elektronického výkaznictví pro Application update 7.3](../dev-itpro/analytics/er-apis-app73.md)
 
-### Analytické nástroje a vizualizace
+### Integrovaná analytická řešení
+#### [Embedded Power BI v pracovních prostorech](../dev-itpro/analytics/embed-power-bi-workspaces.md)
+#### [Integrace služby Power BI Embedded](../dev-itpro/analytics/power-bi-embedded-integration.md)
+
+### Možnosti individuálního nastavení s PowerBI.com
+#### [Integrace služby Power BI](../dev-itpro/analytics/power-bi-integration.md)
+#### [Připnutí sestav Power BI do pracovní prostor](../dev-itpro/analytics/pin-power-bi-reports.md)
+
+### Nástroje pro vytváření a rozšíření řešení
 #### [Analýzy, měrné systémy agregace a modelování klíčového indikátoru výkonnosti](../dev-itpro/analytics/analytics.md)
+#### [Vytváření analytických sestav pomocí Power BI Desktop](../dev-itpro/analytics/author-distribute-power-bi-reports.md)
 #### [Modelování a agregovaná data](../dev-itpro/analytics/model-aggregate-data.md)
 #### [Přidání finančních dimenzí k měrným systémům agregace](../dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md)
-#### [Přidání kontextové BI do formulářů](../dev-itpro/analytics/add-contextual-bi-forms.md)
-#### [Sestava měrných systémů agregace](../dev-itpro/analytics/aggregate-measurements-report.md)
-#### [Sestava entit agregovaných dat](../dev-itpro/analytics/aggregate-data-entities-report.md)
-#### [Sestava klíčového indikátoru výkonnosti (KPI.md)](../dev-itpro/analytics/key-performance-indicators-report.md)
-#### [Integrace služby Power BI](../dev-itpro/analytics/power-bi-integration.md)
-#### [Přístup k obsahu v Power BI](../dev-itpro/analytics/power-bi-content-microsoft-partners.md)
-#### [Vytvoření sestavy Power BI a řídicího panelu](../dev-itpro/analytics/create-powerbi-report-dashboard.md)
-#### [Vytvoření sestavy Power BI pomocí dat aplikace Finance and Operations](../dev-itpro/analytics/create-powerbi-report-data.md)
-#### [Konfigurace integrace služby Power BI pro pracovní prostory](../dev-itpro/analytics/configure-power-bi-integration.md)
-#### [Integrace služby Power BI Embedded](../dev-itpro/analytics/power-bi-embedded-integration.md)
-#### [Embedded Power BI v pracovních prostorech](../dev-itpro/analytics/embed-power-bi-workspaces.md)
 #### [Přidání analýz do pracovního prostoru pomocí Power BI Embedded](../dev-itpro/analytics/add-analytics-tab-workspaces.md)
 #### [Pomoc se zabezpečením analytických pracovních prostorů a sestav pomocí Power BI Embedded](../dev-itpro/analytics/secure-analytical-workspaces.md)
-#### [Přidání Power BI do pracovních prostor](../dev-itpro/analytics/add-bi-workspaces.md)
-#### [Připnutí sestav Power BI do pracovní prostor](../dev-itpro/analytics/pin-power-bi-reports.md)
+
+### Nástroje správy pro uživatele Power user
 #### [Integrace Power BI s úložištěm entit](../dev-itpro/analytics/power-bi-integration-entity-store.md)
+#### [Konfigurace integrace služby Power BI pro pracovní prostory](../dev-itpro/analytics/configure-power-bi-integration.md)
 #### [Použití vlastní databáze](../dev-itpro/analytics/export-entities-to-your-own-database.md)
-#### [Vytváření analytických sestav pomocí Power BI Desktop](../dev-itpro/analytics/author-distribute-power-bi-reports.md)
-#### [Publikování analytických aplikací v Power BI](../dev-itpro/analytics/publish-apps-powerbi.md)
 
 
 ## [Řízení zásob](../supply-chain/inventory/inventory-home-page.md)
@@ -1362,6 +1368,7 @@
 #### [Vygenerování plánu s omezeními (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/constrained-plan.md)
 #### [Vytvoření materiálového plánu pro vedlejší produkty (Průvodce záznamem úloh)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
 #### [Správa plánovaných objednávek](../supply-chain/master-planning/maintain-planned-orders.md)
+#### [Zpracování pojistných zásob](../supply-chain/master-planning/safety-stock-replenishment.md)
 #### [Zpracování zpoždění](../supply-chain/master-planning/delays.md)
 #### [Sledování rozpadu](../supply-chain/master-planning/trace-explosion.md)
 #### [Zprávy akce](../supply-chain/master-planning/action-messages.md)
@@ -1438,6 +1445,8 @@
 #### [Nastavení a správa dodavatelské spolupráce](../supply-chain/procurement/set-up-maintain-vendor-collaboration.md)
 #### [Správa uživatelů dodavatelské spolupráce](../supply-chain/procurement/manage-vendor-collaboration-users.md)
 #### [Nastavení účtů dodavatele](../supply-chain/procurement/set-up-vendor-accounts.md)
+#### [Konfigurace oslovení dodavatele](../supply-chain/procurement/vendor-request-configurations.md)
+#### [Zaškolení dodavatele](../supply-chain/procurement/vendor-onboarding.md)
 #### [Dodavatelská spolupráce s externími dodavateli](../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 #### [Dodavatelská spolupráce se zákazníky](../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
 #### [Nastavení externího katalogu pro funkci PunchOut eProcurement](../supply-chain/procurement/set-up-external-catalog-for-punchout.md)
@@ -1550,7 +1559,9 @@
 #### Provozování výrobních úloh
 ##### [Vytvoření výrobních zakázek](../supply-chain/production-control/create-production-orders.md)
 ##### [Uvolnění výrobních zakázek](../supply-chain/production-control/release-production-orders.md)
-##### [Vrácení stavu výrobní zakázky](../supply-chain/production-control/reverse-production-order-status.md)
+##### [Viditelnost výjimek materiálu](../supply-chain/production-control/improved-visibility-into-material-exceptions.md)
+##### [Uvolnění kusovníku a řádků receptury do skladu](../supply-chain/production-control/releasing-bom-and-formula-lines-to-warehouse.md)
+#####[Vrácení stavu výrobní zakázky](../supply-chain/production-control/reverse-production-order-status.md)
 ##### [Registrace spotřeby materiálu pomocí mobilního zařízení](../supply-chain/production-control/register-material-consumption-hand-held-device.md)
 ##### [Kontrola spotřeby surovin pomocí principů vyprazdňování](../supply-chain/production-control/flushing-principles.md) 
 ##### [Cross docking z výrobních zazázek na výstupní překladiště](../supply-chain/production-control/cross-docking-opportunities.md)
@@ -1561,7 +1572,7 @@
 ##### [Registrace pro realizaci výroby](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [Zpětná vazba z výroby](../supply-chain/production-control/production-feedback.md)
 ##### [Registrace času a docházky](../supply-chain/production-control/time-attendance-registrations.md)
-##### [Registrace absence v modulu Čas a docházka](..//supply-chain/production-control/absence-registration-in-time-and-attendance.md)
+##### [Registrace absence v modulu Čas a docházka](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 #### Správa financí ve výrobě
 ##### [Přidělení času úlohám v sadě úloh](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Výpočet spotřeby materiálu](../supply-chain/production-control/consumption.md)
@@ -1686,6 +1697,7 @@
 #### [Vytvoření základního produktu (Průvodce záznamem úloh)](../supply-chain/pim/tasks/create-product-master.md)
 #### [Vytváření předdefinovaných variant produktů (Průvodce záznamem úloh)](../supply-chain/pim/tasks/create-predefined-product-variants.md)
 #### [Vytvoření uvolněného produktu pro jednu společnost (Průvodce záznamem úloh)](../supply-chain/pim/tasks/create-released-product-single-company.md)
+#### [Stav životního cyklu produktu](../supply-chain/pim/product-lifecycle.md)
 #### [Vytvoření čárového kódu pro produkt (Průvodce záznamem úloh)](../supply-chain/pim/tasks/create-bar-code-product.md)
 #### [Zadání kódu GTIN pro produkt (Průvodce záznamem úloh)](../supply-chain/pim/tasks/enter-gtin-code-product.md)
 #### [Vytvoření atributů dávky pro produkt (Průvodce záznamem úloh)](../supply-chain/pim/tasks/create-batch-attributes-product.md)
@@ -1800,7 +1812,8 @@
 ### [Nastavení omezení přepravy pro položku](../supply-chain/transportation/tasks/set-up-transportation-constraints-item.md)
 
 ## [Řízení skladu](../supply-chain/warehousing/warehouse-management-overview.md)
-### [Konfigurace skladu](../supply-chain/warehousing/warehouse-configuration.md) 
+### [Konfigurace skladu](../supply-chain/warehousing/warehouse-configuration.md)
+#### [Nastavení skladu pomocí šablony konfigurace skladu](../supply-chain/inventory/warehouse-template.md)
 #### [Řízení práce pomocí šablon práce a směrnice pro místa](../supply-chain/warehousing/control-warehouse-location-directives.md)
 #### [Měrná jednotka a zásady uskladnění](../supply-chain/warehousing/unit-measure-stocking-policies.md)
 #### [Obsah skladu v Power BI](../dev-itpro/analytics/warehouse-power-bi-content.md)

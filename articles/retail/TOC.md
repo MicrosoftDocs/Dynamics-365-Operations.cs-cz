@@ -44,6 +44,7 @@
 ## [Čas a docházka v aplikaci Retail](retail-time-attendance.md)
 
 # Domovská stránka Moderního pokladního místa MPOS a Cloud POS
+## [Výběr mezi Modern POS a Cloud POS](MPOS-or-CPOS.md)
 ## [Operace POS](POS-operations.md)
 ## [Rozložení obrazovky ukázkových dat v MPOS/CPOS](demo-data.md)
 ## Hardwarová periferní zařízení
@@ -76,6 +77,11 @@
 ### [Nastavení šablon účtenek](receipt-templates-printing.md) 
 ### [Odesílání účtenek e-mailem z MPOS](email-receipts.md)
 ## [Záznamník úloh a nápověda pro POS](task-recorder-retail-pos.md)
+
+# Plnění objednávek
+## [Přehled plnění objednávek obchodu](Order-fulfillment-overview.md)
+## [Nastavení plnění v obchodě](Order-fulfillment-POS-setup.md)
+## [Povolení oznámení v pokladním místě](Notifications-POS.md)
 
 # Monitorování a analýza
 ## [Monitorování výkonnosti z hlediska prodejů a marží](monitor-sales-margin-performance.md)
@@ -258,8 +264,10 @@
 ### [Přidání vlastních ovládacích prvků na stránky transakcí Retail Modern POS.](dev-itpro/pos-custom-transaction.md)
 ### [Přidání vlastních transakci k mřížce transakcí POS](dev-itpro/pos-custom-transaction-column.md)
 ### [Volání API POS nebo operace z rozšíření POS](dev-itpro/pos-api-extension.md)
-### [Rozšíření stávajících zobrazení POS pro přidání vlastních sloupců a tlačítek panelu aplikací](dev-itpro/pos-view-extension.md)
 ### [Spouštěče Retail Modern POS a tisk](dev-itpro/pos-trigger-printing.md)
+### [Přidání vlastních ovládacích prvků do zobrazení na základě návrháře bez obrazovky Retail Modern POS](dev-itpro/pos-control-non-screen.md)
+### [Generování Retail proxy pro POS a e-Commerce](dev-itpro/pos-generate-retail-proxy.md)
+### [Konfigurační kroky pro vývojáře Retail pracující na vývojářských polích hostovaných na cloudu](dev-itpro/cloud-dev-box.md)
 
 ## Commerce runtime
 ### [Rozšíření věrnostního programu](dev-itpro/retail-sdk/loyalty-extension-sample.md)
