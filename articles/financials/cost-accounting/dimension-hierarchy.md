@@ -16,14 +16,14 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: YuyuScheller
+ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d183654ada9cdca23cf906f250988a967ffcf1f6
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: d55e9a520b1f895d130f24834626429e19b4b939
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -255,10 +255,10 @@ ms.lasthandoff: 11/03/2017
 |---------------------------------------|--------------------------------------|------------------|--------------|------------|----------|
 | <span data-ttu-id="1d477-340">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="1d477-340">Fixed cost</span></span>                            | <span data-ttu-id="1d477-341">Organizace</span><span class="sxs-lookup"><span data-stu-id="1d477-341">Organization</span></span>                         | <span data-ttu-id="1d477-342">100,00</span><span class="sxs-lookup"><span data-stu-id="1d477-342">100.00</span></span>           | <span data-ttu-id="1d477-343">0,00</span><span class="sxs-lookup"><span data-stu-id="1d477-343">0.00</span></span>         | <span data-ttu-id="1d477-344">1. 1. 2017</span><span class="sxs-lookup"><span data-stu-id="1d477-344">1/1/2017</span></span>   | <span data-ttu-id="1d477-345">Nikdy</span><span class="sxs-lookup"><span data-stu-id="1d477-345">Never</span></span>    |
 | <span data-ttu-id="1d477-346">10001</span><span class="sxs-lookup"><span data-stu-id="1d477-346">10001</span></span>                                 | <span data-ttu-id="1d477-347">Organizace</span><span class="sxs-lookup"><span data-stu-id="1d477-347">Organization</span></span>                         | <span data-ttu-id="1d477-348">0,00</span><span class="sxs-lookup"><span data-stu-id="1d477-348">0.00</span></span>             | <span data-ttu-id="1d477-349">150,00</span><span class="sxs-lookup"><span data-stu-id="1d477-349">150.00</span></span>       | <span data-ttu-id="1d477-350">1. 1. 2017</span><span class="sxs-lookup"><span data-stu-id="1d477-350">1/1/2017</span></span>   | <span data-ttu-id="1d477-351">Nikdy</span><span class="sxs-lookup"><span data-stu-id="1d477-351">Never</span></span>    |
-| <span data-ttu-id="1d477-352">10001 (\*)</span><span class="sxs-lookup"><span data-stu-id="1d477-352">10001 (\*)</span></span>                             | <span data-ttu-id="1d477-353">Finance</span><span class="sxs-lookup"><span data-stu-id="1d477-353">Finance</span></span>                              |                  | <span data-ttu-id="1d477-354">50,00</span><span class="sxs-lookup"><span data-stu-id="1d477-354">50.00</span></span>        | <span data-ttu-id="1d477-355">1. 1. 2017</span><span class="sxs-lookup"><span data-stu-id="1d477-355">1/1/2017</span></span>   | <span data-ttu-id="1d477-356">Nikdy</span><span class="sxs-lookup"><span data-stu-id="1d477-356">Never</span></span>    |
+| <span data-ttu-id="1d477-352">10001 (\\*)</span><span class="sxs-lookup"><span data-stu-id="1d477-352">10001 (\\*)</span></span>                             | <span data-ttu-id="1d477-353">Finance</span><span class="sxs-lookup"><span data-stu-id="1d477-353">Finance</span></span>                              |                  | <span data-ttu-id="1d477-354">50,00</span><span class="sxs-lookup"><span data-stu-id="1d477-354">50.00</span></span>        | <span data-ttu-id="1d477-355">1. 1. 2017</span><span class="sxs-lookup"><span data-stu-id="1d477-355">1/1/2017</span></span>   | <span data-ttu-id="1d477-356">Nikdy</span><span class="sxs-lookup"><span data-stu-id="1d477-356">Never</span></span>    |
 | <span data-ttu-id="1d477-357">Chování nákladů nebo variabilní náklady (\*\*)</span><span class="sxs-lookup"><span data-stu-id="1d477-357">Cost behavior or Variable cost (\*\*)</span></span>   | <span data-ttu-id="1d477-358">Organizace</span><span class="sxs-lookup"><span data-stu-id="1d477-358">Organization</span></span>                         | <span data-ttu-id="1d477-359">0,00</span><span class="sxs-lookup"><span data-stu-id="1d477-359">0.00</span></span>             | <span data-ttu-id="1d477-360">0,00</span><span class="sxs-lookup"><span data-stu-id="1d477-360">0.00</span></span>         | <span data-ttu-id="1d477-361">1. 1. 2017</span><span class="sxs-lookup"><span data-stu-id="1d477-361">1/1/2017</span></span>   | <span data-ttu-id="1d477-362">Nikdy</span><span class="sxs-lookup"><span data-stu-id="1d477-362">Never</span></span>    |
 
-<span data-ttu-id="1d477-363">\* Není požadován uzel variabilních nákladů.</span><span class="sxs-lookup"><span data-stu-id="1d477-363">\* The variable cost node isn't required.</span></span> <span data-ttu-id="1d477-364">Pokud nejsou náklady klasifikovány jako pevné náklady, musí se jednat o variabilní náklady.</span><span class="sxs-lookup"><span data-stu-id="1d477-364">If a cost isn't classified as a fixed cost, it must be a variable cost.</span></span>
+<span data-ttu-id="1d477-363">\\* Není požadován uzel variabilních nákladů.</span><span class="sxs-lookup"><span data-stu-id="1d477-363">\\* The variable cost node isn't required.</span></span> <span data-ttu-id="1d477-364">Pokud nejsou náklady klasifikovány jako pevné náklady, musí se jednat o variabilní náklady.</span><span class="sxs-lookup"><span data-stu-id="1d477-364">If a cost isn't classified as a fixed cost, it must be a variable cost.</span></span>
 
 <span data-ttu-id="1d477-365">\*\* Podrobné pravidlo je vytvořeno pro kombinaci člena prvku nákladů 10001 a všechny členy objektu nákladů agregované pod úrovní hierarchie Finance(CC002 CC003, CC007).</span><span class="sxs-lookup"><span data-stu-id="1d477-365">\*\* A detailed rule is created for the combination of cost element member 10001 and all cost object members that are aggregated under the Finance hierarchy level (CC002, CC003, CC007).</span></span>
 
