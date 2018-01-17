@@ -1,0 +1,118 @@
+---
+title: "Stav životního cyklu produktu"
+description: "Stav životního cyklu produktu dokumentuje životní cyklus uvolněného produktu nebo varianty produktu."
+author: cvocph
+manager: AnnBe
+ms.date: 12/08/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
+audience: Application User, IT Pro
+ms.reviewer: yuyus
+ms.search.scope: Core (Operations, Core)
+ms.custom: 
+ms.assetid: 
+ms.search.region: global
+ms.search.industry: 
+ms.author: cvocph
+ms.dyn365.ops.intro: 7.3
+ms.search.validFrom: 2017-12-31
+ms.translationtype: HT
+ms.sourcegitcommit: 33130a4061f22335aeeffa69c478b693604393a9
+ms.openlocfilehash: a57f306ba02c5758c39c4bd29d9a4fa0d7efbcd3
+ms.contentlocale: cs-cz
+ms.lasthandoff: 12/20/2017
+
+---
+
+# <a name="product-lifecycle-state"></a><span data-ttu-id="d6730-103">Stav životního cyklu produktu</span><span class="sxs-lookup"><span data-stu-id="d6730-103">Product lifecycle state</span></span> 
+
+[!include[banner](../includes/banner.md)]
+
+
+<span data-ttu-id="d6730-104">Stav životního cyklu produktu dokumentuje životní cyklus uvolněného produktu nebo varianty produktu.</span><span class="sxs-lookup"><span data-stu-id="d6730-104">A product lifecycle state documents the lifecycle state of a released product or product variant.</span></span> <span data-ttu-id="d6730-105">Stavy životního cyklu produktu definuje uživatel, obvykle manažer produktu nebo manažer hlavních dat produktu.</span><span class="sxs-lookup"><span data-stu-id="d6730-105">Product lifecycle states are defined by the user, typically a product manager or a product master data manager.</span></span> <span data-ttu-id="d6730-106">Určité obchodní procesy, například hlavní plánování, mohou být ovlivněny konkrétním stavem životního cyklu.</span><span class="sxs-lookup"><span data-stu-id="d6730-106">Specific business processes, such as master planning, can be affected by a specific lifecycle state.</span></span>   
+ 
+<span data-ttu-id="d6730-107">Uvolněný produkt nebo variantu produktu lze přidružit ke stavu životního cyklu produktu, který dokumentuje, v jakém stavu životního cyklu je momentálně určitý produktu nebo varianta.</span><span class="sxs-lookup"><span data-stu-id="d6730-107">A released product or product variant can be associated with a product lifecycle state that documents in which lifecycle state a specific product or variant is currently in.</span></span> <span data-ttu-id="d6730-108">Přiřazením názvu stavu a popisu můžete definovat jakýkoliv počet stavů životního cyklu produktu.</span><span class="sxs-lookup"><span data-stu-id="d6730-108">You can define any number of product lifecycle states by assigning a state name and description.</span></span> <span data-ttu-id="d6730-109">Můžete vybrat jeden stav životního cyklu jako výchozí stav pro nové uvolněné produkty.</span><span class="sxs-lookup"><span data-stu-id="d6730-109">You can select one lifecycle state as the default state for new released products.</span></span> <span data-ttu-id="d6730-110">Uvolněné varianty produktu zdědí svůj stav životního cyklu produktu ze svého uvolněného hlavního produktu při jeho vytvoření.</span><span class="sxs-lookup"><span data-stu-id="d6730-110">Released product variants inherit their product lifecycle state from their released product master on creation.</span></span> <span data-ttu-id="d6730-111">Při změně stavu životního cyklu uvolněného hlavního produktu můžete aktualizovat všechny existující varianty, které mají stejný původní stav.</span><span class="sxs-lookup"><span data-stu-id="d6730-111">When changing the lifecycle state on a released product master, you can choose to update all existing variants that have the same original state.</span></span>  
+
+## <a name="create-a-new-product-lifecycle-state"></a><span data-ttu-id="d6730-112">Vytvoření nového stavu životního cyklu produktu</span><span class="sxs-lookup"><span data-stu-id="d6730-112">Create a new product lifecycle state</span></span> 
+ 
+- <span data-ttu-id="d6730-113">Chcete-li vytvořit nový stav životního cyklu produktu, pusťte si nebo si přečtěte průvodce záznamem úloh **Vytvoření nového stavu životního cyklu produktu**.</span><span class="sxs-lookup"><span data-stu-id="d6730-113">To create a new product lifecycle state, play or read the task guide **Create a new product lifecycle state**.</span></span> 
+
+-  <span data-ttu-id="d6730-114">Chcete-li vytvořit výchozí stav životního cyklu produktu, pusťte si nebo si přečtěte průvodce záznamem úloh **Vytvoření výchozího stavu životního cyklu produktu**.</span><span class="sxs-lookup"><span data-stu-id="d6730-114">To create a default product lifecycle state, play or read the task guide **Create a default product lifecycle state**.</span></span>   
+
+## <a name="associate-product-lifecycle-states-to-released-products"></a><span data-ttu-id="d6730-115">Přidružení stavů životního cyklu produktu k uvolněným produktům</span><span class="sxs-lookup"><span data-stu-id="d6730-115">Associate product lifecycle states to released products</span></span>  
+
+<span data-ttu-id="d6730-116">Existuje více způsobů, jak přidružit stav životního cyklu produktu k uvolněným produktům nebo variantám produktu.</span><span class="sxs-lookup"><span data-stu-id="d6730-116">There are multiple ways to associate a product lifecycle state to released products or product variants.</span></span>
+
+-  <span data-ttu-id="d6730-117">Při vytvoření nového uvolněného produktu je automaticky přiřazen výchozí **Stav životního cyklu produktu**.</span><span class="sxs-lookup"><span data-stu-id="d6730-117">On creation of a new released product, the default **Product lifecycle state** is automatically assigned.</span></span> 
+-  <span data-ttu-id="d6730-118">Při uvolnění produktu do právnické osoby je automaticky přiřazen výchozí **Stav životního cyklu produktu**.</span><span class="sxs-lookup"><span data-stu-id="d6730-118">On release of a product to a legal entity, the default **Product lifecycle state** is automatically assigned.</span></span> 
+-  <span data-ttu-id="d6730-119">Při uvolnění varianty produktu do právnické osoby je automaticky nové variantě přiřazen **Stav životního cyklu produktu** přidružený k uvolněnému základnímu produktu v této právnické osobě.</span><span class="sxs-lookup"><span data-stu-id="d6730-119">On release of a product variant to a legal entity, the **Product lifecycle state** associated to the released product master in this legal entity is automatically assigned to the new variant.</span></span> 
+
+<span data-ttu-id="d6730-120">Stav životního cyklu produktu lze aktualizovat ručně pomocí:</span><span class="sxs-lookup"><span data-stu-id="d6730-120">You can manually update the product lifecycle state by using:</span></span> 
+
+-    <span data-ttu-id="d6730-121">Stránky se seznamem **Uvolněné produkty** nebo **Zobrazení podrobností**.</span><span class="sxs-lookup"><span data-stu-id="d6730-121">The **Released products** list page or **Details view**.</span></span> 
+-  <span data-ttu-id="d6730-122">Stránky se seznamem **Uvolněné varianty produkty** nebo **Zobrazení podrobností**.</span><span class="sxs-lookup"><span data-stu-id="d6730-122">The **Released product variants** list page or **Details view**.</span></span> 
+-  <span data-ttu-id="d6730-123">Najděte zastaralé produkty nebo varianty produktu na základě poptávky a přidružte stav životního cyklu.</span><span class="sxs-lookup"><span data-stu-id="d6730-123">Find the obsolete products or product variants based on demand and associate a lifecycle state.</span></span>  
+
+<span data-ttu-id="d6730-124">Podrobné informace o přidružení stavů životního cyklu produktu získáte přehráním nebo přečtením následujících dvou záznamů průvodcem úloh.</span><span class="sxs-lookup"><span data-stu-id="d6730-124">For detailed information about how to associate product lifecycle states, play or read the following two task guides.</span></span>
+
+-  <span data-ttu-id="d6730-125">Chcete-li přidružit stav životního cyklu produktu k uvolněnému základnímu produktu, přehrajte si nebo přečtěte průvodce záznamem úloh **Přiřadit stav životního cyklu k uvolněnému hlavnímu produktu**.</span><span class="sxs-lookup"><span data-stu-id="d6730-125">To associate a product lifecycle state to a released product master, play or read the task guide **Assign a product lifecycle state to a released product master**.</span></span> 
+
+-  <span data-ttu-id="d6730-126">Chcete-li přidružit stav životního cyklu produktu k uvolněnému produktu, přehrajte si nebo přečtěte průvodce záznamem úloh **Přiřadit stav životního cyklu k uvolněnému produktu**.</span><span class="sxs-lookup"><span data-stu-id="d6730-126">To associate a product lifecycle state to a release product, play or read the task guide **Assign a product lifecycle state to a released product**.</span></span> 
+
+## <a name="impact-on-master-planning"></a><span data-ttu-id="d6730-127">Dopad na hlavní plánování</span><span class="sxs-lookup"><span data-stu-id="d6730-127">Impact on master planning</span></span> 
+
+<span data-ttu-id="d6730-128">Stav životního cyklu produktu má pouze jeden kontrolní příznak: **Je aktivní pro plánování**.</span><span class="sxs-lookup"><span data-stu-id="d6730-128">The product lifecycle state has only one control flag: **Is active for planning**.</span></span> <span data-ttu-id="d6730-129">Ve výchozím nastavení je tato hodnota nastavena na **Ano** pro všechny vytvořené stavy životního cyklu produktu, ale lze ji změnit na **Ne**.</span><span class="sxs-lookup"><span data-stu-id="d6730-129">By default, this is set to **Yes** for all created product lifecycle states, but it can be changed to **No**.</span></span> <span data-ttu-id="d6730-130">Pokud je nastavena na **Ne**, přiřazené uvolněné produkty nebo uvolněné varianty produktu jsou:</span><span class="sxs-lookup"><span data-stu-id="d6730-130">When set to **No**, the associated released products or released product variants are:</span></span> 
+
+-  <span data-ttu-id="d6730-131">Vyloučeno z hlavního plánování.</span><span class="sxs-lookup"><span data-stu-id="d6730-131">Excluded from master planning.</span></span> 
+-  <span data-ttu-id="d6730-132">Vyloučeno z výpočtu úrovně kusovníku.</span><span class="sxs-lookup"><span data-stu-id="d6730-132">Excluded from BOM-level calculation.</span></span> 
+
+<span data-ttu-id="d6730-133">Podrobné informace o použití stavu životního cyklu produktu k vyloučení produktů z hlavního plánování a výpočtu úrovně kusovníku získáte přehráním nebo přečtením průvodce záznamem úloh **Vytvoření stavu životního cyklu produktu k vyloučení produktů z hlavního plánování**.</span><span class="sxs-lookup"><span data-stu-id="d6730-133">For detailed information about how to use product lifecycle state to exclude products from master planning and BOM-level calculation, play or read the task guide **Create a product lifecycle state to exclude products from Master planning**.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="d6730-134">Z důvodu výkonu doporučujeme přidružit všechny zastaralé uvolněné produkty nebo varianty produktu, zejména při práci s opětovně nepoužitelnými variantami konfigurace produktu ke stavu životního cyklu produktu, který je deaktivován pro hlavní plánování.</span><span class="sxs-lookup"><span data-stu-id="d6730-134">For performance reasons, it is highly recommended to associate all obsolete released products or product variants, especially when working with non-reusable product configuration variants, with a product lifecycle state that is deactivated for master planning.</span></span>  
+ 
+## <a name="default-migration-import-and-export"></a><span data-ttu-id="d6730-135">Výchozí migrace, export a import</span><span class="sxs-lookup"><span data-stu-id="d6730-135">Default migration, import, and export</span></span> 
+
+<span data-ttu-id="d6730-136">Stavy životního cyklu produktu nejsou podporovány datovými entitami a stav životního cyklu nelze nastavit na proměnlivý stav prostřednictvím datových entit uvolněného produktu.</span><span class="sxs-lookup"><span data-stu-id="d6730-136">The product lifecycle states are not supported by data entities, and the lifecycle state cannot be set to a variable state through the released product data entities.</span></span>
+
+-  <span data-ttu-id="d6730-137">Při migraci z předchozích vydání bude stav životního cyklu všech produktů a variant produktů prázdný.</span><span class="sxs-lookup"><span data-stu-id="d6730-137">On migration from previous releases, the lifecycle state of all products and product variants will be blank.</span></span>  
+-  <span data-ttu-id="d6730-138">Při importu uvolněných produktů pomocí datové entity se použije při vytvoření výchozí stav životního cyklu.</span><span class="sxs-lookup"><span data-stu-id="d6730-138">When importing released products through a data entity, the default lifecycle state will be applied on creation.</span></span>  
+-  <span data-ttu-id="d6730-139">Při importu uvolněných variant produktu pomocí datové entity dat bude importován stav životního cyklu produktu hlavního uvolněného produktu.</span><span class="sxs-lookup"><span data-stu-id="d6730-139">When importing released product variants through a data entity, the product lifecycle state of the released product master will be imported.</span></span>   
+ 
+## <a name="find-obsolete-products-and-products-variants"></a><span data-ttu-id="d6730-140">Nalezení zastaralých produktů a variant produktů</span><span class="sxs-lookup"><span data-stu-id="d6730-140">Find obsolete products and products variants</span></span> 
+ 
+<span data-ttu-id="d6730-141">Můžete spustit simulační analýzu, abyste nalezli zastaralé uvolněné produkty nebo varianty produktu, a poté aktualizovat jejich stav životního cyklu produktu.</span><span class="sxs-lookup"><span data-stu-id="d6730-141">You can run a simulation analysis to find the obsolete released products or product variants and then update their product lifecycle status.</span></span> <span data-ttu-id="d6730-142">Chcete-li nalézt zastaralé produkty, přehrajte si nebo si přečtěte průvodce záznamem úloh **Nalezení zastaralých variant produktu a přiřazení stavu životního cyklus produktu**.</span><span class="sxs-lookup"><span data-stu-id="d6730-142">To find obsolete products, play and read the task guide **Find obsolete product variants and assign a product lifecycle state**.</span></span> <span data-ttu-id="d6730-143">Tento průvodce záznamem ukazuje, jak nalézt zastaralé uvolněné produkty nebo varianty produktu a jak přiřadit stav životního cyklu produktu k zastaralým produktům.</span><span class="sxs-lookup"><span data-stu-id="d6730-143">This task guide shows how to find obsolete released products or product variants and how to associate a product lifecycle state to the obsolete products.</span></span> <span data-ttu-id="d6730-144">Také ukazuje, jak zobrazit výsledky simulace, a vyhodnocuje počet produktů a variant produktů, který bude přidružen k novému stavu životního cyklu produktu při spuštění aktualizace bez simulace.</span><span class="sxs-lookup"><span data-stu-id="d6730-144">It also shows hot to view the simulation results and assess how many products and product variants will be associated with a new product lifecycle state when running the update without simulation.</span></span>  
+ 
+<span data-ttu-id="d6730-145">Spuštěním analýzy v režimu simulace se zobrazí produkty a varianty produktů identifikované jako zastaralé v konkrétním formuláři, kde je lze snadno zkontrolovat.</span><span class="sxs-lookup"><span data-stu-id="d6730-145">By running the analysis in a simulation mode, the products and product variants identified as obsolete are displayed in a specific form, where they can easily be reviewed.</span></span> <span data-ttu-id="d6730-146">Analýza vyhledá transakce a konkrétní hlavní data k určení produktů, které nemají žádnou poptávku v rámci proměnného období a žádná hlavní data, která mohou mít za následek poptávku.</span><span class="sxs-lookup"><span data-stu-id="d6730-146">The analysis searches for transactions and specific master data to identify products that have no demand within a variable period and no master data that can result in demand.</span></span> <span data-ttu-id="d6730-147">Nové uvolněné produkty v rámci proměnného období lze vyloučit z analýzy.</span><span class="sxs-lookup"><span data-stu-id="d6730-147">New released products within a variable period can be excluded from the analysis.</span></span> <span data-ttu-id="d6730-148">Když simulace analýzy vrátí očekávaný výsledek, může uživatel spustit analýzu a nastavit nový stav životního cyklu produktu pro všechny produkty identifikované analýzou jako zastaralé.</span><span class="sxs-lookup"><span data-stu-id="d6730-148">When the analysis simulation returns the expected result, the user can run the analysis and set a new product lifecycle state to all products identified as obsolete by the analysis.</span></span>  
+ 
+> [!NOTE]
+> <span data-ttu-id="d6730-149">Mějte na paměti, že všechny analýzy a aktualizace je třeba provést v rámci stejné právnické osoby.</span><span class="sxs-lookup"><span data-stu-id="d6730-149">Note that all analysis and updates must be done within the same legal entity.</span></span>  
+ 
+## <a name="criteria-to-select-and-update-released-products-or-product-variants"></a><span data-ttu-id="d6730-150">Kritéria pro výběr a aktualizaci uvolněných produktů nebo variant produktu</span><span class="sxs-lookup"><span data-stu-id="d6730-150">Criteria to select and update released products or product variants</span></span> 
+ 
+<span data-ttu-id="d6730-151">Použijte následující kritéria pro výběr a aktualizaci uvolněných produktů nebo variant produktu:</span><span class="sxs-lookup"><span data-stu-id="d6730-151">Use the following criteria to select and update the released products and product variants:</span></span> 
+
+-    <span data-ttu-id="d6730-152">Stav životního cyklu produktu nebo variant produktu musí být odlišný od nového požadovaného stavu.</span><span class="sxs-lookup"><span data-stu-id="d6730-152">The product lifecycle state of the product or product variant must be different from the new desired state.</span></span> 
+-  <span data-ttu-id="d6730-153">Produkt nebo varianta produktu byly vytvořeny před několika dny na základě počtu dní, které zadáte do dialogového okna výběru.</span><span class="sxs-lookup"><span data-stu-id="d6730-153">The product or product variant was created some days ago based on the number of days that you enter in the selection dialog box.</span></span> 
+-  <span data-ttu-id="d6730-154">Neexistují žádné otevřené výrobní zakázky (= stav < ukončeno) pro produkt nebo variantu produktu.</span><span class="sxs-lookup"><span data-stu-id="d6730-154">There are no open production orders (= status < ended) for the product or product variant.</span></span> 
+-  <span data-ttu-id="d6730-155">Neexistují otevřené skladové transakce (= stav výdeje ReservPhysical do QuotationIssue nebo stavu příjmu Registrered do QuotationReceipt) pro produkt nebo variantu produktu.</span><span class="sxs-lookup"><span data-stu-id="d6730-155">There are no open inventory transactions (= status issue ReservPhysical to QuotationIssue or status receipt Registrered to QuotationReceipt) for the product or product variant.</span></span> 
+-  <span data-ttu-id="d6730-156">Během posledních dní neexistují žádné skladové transakce pro produkt nebo variantu produktu.</span><span class="sxs-lookup"><span data-stu-id="d6730-156">There are no inventory transactions within the last number of days for the product or product variant.</span></span> 
+-  <span data-ttu-id="d6730-157">Neexistuje budoucí poptávka nebo prognóza dodávek pro produkt nebo variantu produktu.</span><span class="sxs-lookup"><span data-stu-id="d6730-157">There is no future demand or supply forecast for the product or product variant.</span></span>  
+-  <span data-ttu-id="d6730-158">Nebyla nastavena minimální úroveň zásob v disponibilitě položky pro produkt nebo variantu produktu.</span><span class="sxs-lookup"><span data-stu-id="d6730-158">No minimum stock level has been set in item coverage for the product or product variant.</span></span> 
+-  <span data-ttu-id="d6730-159">Žádné aktivní kanbanové pravidlo pro pevné množství pro produkt nebo variantu produktu.</span><span class="sxs-lookup"><span data-stu-id="d6730-159">No active fixed quantity kanban rule for the product or product variant.</span></span>  
+-  <span data-ttu-id="d6730-160">Žádný řádek servisní zakázky pro produkt nebo variantu produktu.</span><span class="sxs-lookup"><span data-stu-id="d6730-160">No service order line for the product or product variant.</span></span> 
+-  <span data-ttu-id="d6730-161">Žádný aktivní či budoucí řádky prodejní nebo nákupní smlouvy pro produkt nebo variantu produktu.</span><span class="sxs-lookup"><span data-stu-id="d6730-161">No active or future sales or purchase agreement lines for the product or product variant.</span></span> 
+-  <span data-ttu-id="d6730-162">Produkt nebo varianta produktu se nepoužívá v kusovníku, který je přidružený se schválenou verzí kusovníku, který ještě nevypršel, pro produkt nebo variantu, která jsou aktivní pro plánování.</span><span class="sxs-lookup"><span data-stu-id="d6730-162">The product or product variant is not used in a BOM that is associated with a non-expired approved BOM version for a product or variant that is active for planning.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="d6730-163">Související témata</span><span class="sxs-lookup"><span data-stu-id="d6730-163">Related topics</span></span>
+
+-  <span data-ttu-id="d6730-164">Vytvoření nového stavu životního cyklu produktu</span><span class="sxs-lookup"><span data-stu-id="d6730-164">Create a new product lifecycle state</span></span>
+-  <span data-ttu-id="d6730-165">Vytvoření výchozího nového stavu životního cyklu produktu</span><span class="sxs-lookup"><span data-stu-id="d6730-165">Create a default new product lifecycle state</span></span>
+-  <span data-ttu-id="d6730-166">Přiřazení stavu životního cyklu produktu k uvolněnému hlavní produktu</span><span class="sxs-lookup"><span data-stu-id="d6730-166">Assign a product lifecycle state to a released product master</span></span>
+-  <span data-ttu-id="d6730-167">Přiřazení stavu životního cyklu produktu k uvolněnému produktu</span><span class="sxs-lookup"><span data-stu-id="d6730-167">Assign a product lifecycle state to a released product</span></span>
+-  <span data-ttu-id="d6730-168">Nalezení zastaralých variant produktu a přiřazení stavu životního cyklu produktu</span><span class="sxs-lookup"><span data-stu-id="d6730-168">Find obsolete product variants and assign a product lifecycle state</span></span>
+-  <span data-ttu-id="d6730-169">Vytvoření stavu životního cyklu produktu k vyloučení produktů z hlavního plánování</span><span class="sxs-lookup"><span data-stu-id="d6730-169">Create a product lifecycle state to exclude products from Master planning</span></span>
+
