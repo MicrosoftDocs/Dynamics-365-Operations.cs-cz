@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3bf244786e308ebcaee27a16fae378f41086f963
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: ce9bc42751cf0f537a0ddb5069aca7c9779a6bb1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -44,10 +44,11 @@ Následující typy workflowu jsou k dispozici pro modul Zásobování a zdroje.
 |                                  |                                                               |
 |----------------------------------|---------------------------------------------------------------|
 | **Typ**                         | **Tento typ slouží k:**                                          |
-| Kontrola nákupních žádanek      | Vytváření workflowů kontroly pro nákupní požadavky.            |
-| Kontrola řádku nákupní žádanky | Vytváření workflowů kontroly pro řádky nákupní žádanky.       |
+| Kontrola nákupních žádanek      | Vytvořte kontrolu a workflow schvalování pro nákupní požadavky            |
+| Kontrola řádku nákupní žádanky | Vytvořte kontrolu a workflow schvalování pro řádky nákupního požadavku.       |
 | Workflow nákupní objednávky          | Vytváření workflowů kontroly a schvalování pro nákupní objednávky.     |
 | Workflow řádku nákupní objednávky     | Vytváření workflowů kontroly a schvalování pro řádky nákupní objednávky. |
+| Workflow přihlášky přidání dodavatele  | Vytvořte kontrolu a workflow schvalování pro přidání nových dodavatelů prostřednictvím oslovení dodavatele. |
 
 ## <a name="creating-a-workflow"></a>Vytvoření workflowu
 Chcete-li vytvořit workflow, přejděte do nabídky Zásobování a zdroje &gt; Nastavení &gt; Workflowy zásobování a zdrojů a vytvořte nový workflow tak, že vyberete požadovaný typ workflowu k vytvoření.  
@@ -73,8 +74,8 @@ Můžete přiřadit krok schválení k následujícím skupinám účastníků.
 
 [Definování workflowů pracovních postupů pro nákupní žádanky](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Workflow nákupní žádanky](purchase-requisitions-workflow.md)
+[Workflow nákupního požadavku](purchase-requisitions-workflow.md)
 
-
+[Nabírání dodavatelů](vendor-onboarding.md)
 
 

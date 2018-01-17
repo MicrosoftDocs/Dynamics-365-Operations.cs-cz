@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
-ms.reviewer: robinr
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b744a895bbd494212c4c388362dd7290207af938
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: ed3f8260cace494170bf1d4db80c3bcb9a1a086e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 Toto téma vysvětluje, co je Záznamník úkolů a průvodci záznamem úloh, jak vytvořit nahrávky úkolů a jak přizpůsobit průvodce záznamem úloh Microsoft a zahrnout je do nápovědy.
 
 > [!IMPORTANT]
-> Nelze vytvořit vlastní průvodce záznamem úloh pro aplikaci Dynamics 365 for Talent. Systém nápovědy pro aplikaci Talent se automaticky připojí k průvodcům záznamem úloh pro produkt. 
+> Můžete nahrát své vlastní průvodce záznamem úloh pro aplikaci Dynamics 365 for Talent, ale nebude možné je uložit do knihovny modelování podnikových procesů nebo je otevřít z podokna Nápovědy. Můžete je uložit v místním počítači nebo na umístění v síti a potom je otevřít a přehrát pomocí záznamníku úkolů. 
 
 <a name="learn-about-task-recorder"></a>Informace o Záznamníku úkolů
 -------------------------
@@ -42,7 +42,7 @@ Záznamník úkolů je nástroj aplikace Dynamics AX, který umožňuje zaznamen
 
 -   **Záznamy úkolů lze přehrát jako průvodce úkolem.** Průvodci záznamem úloh jsou nedílnou součástí prostředí nápovědy. Průvodce záznamem úloh je kontrolovaný, řízený a interaktivní způsob, který vás provede kroky daného úkolu nebo obchodního procesu. Uživatel obdrží pokyny k dokončení jednotlivých kroků pomocí je místních výzev (nebo "bublin"), která se zobrazí v uživatelském rozhraní a odkazují na prvek uživatelského rozhraní, který musí uživatel použít. Bublina obsahuje také informace o tom, jak pracovat s prvkem, jako je "Klepněte sem" nebo "Do tohoto pole zadejte hodnotu." Spouští se v rámci aktuální datové sady uživatele a dat, která jsou zadána a uložena v prostředí uživatele.
 -   **Záznamy úloh lze zobrazit jako kroky postupu v podokně nápovědy.** Podokno nápovědy lze použít k hledání a zobrazení záznamů úloh. Do podokna Nápověda můžete přejít kliknutím na ikonu **?** v horním navigačním pruhu nebo můžete použít klávesové zkratky, **Ctrl + Shift +?**. Kroky záznamu úkolu si můžete přečíst v podokně nápovědy nebo můžete zvolit přehrání záznamu jako průvodce úkolem, který vás provede uživatelským rozhraním.
--   **Záznamy úkolů lze uložit do BPM.** Záznam úkolu lze uložit na řádek hierarchie v knihovně modulu Modelování podnikových procesů (MPC) ve službě Lifecycle Services (LCS). Seznam kroků a vývojový diagram podnikového procesu bude vygenerován ze záznamu. Záznamníky úkolů, které byly uloženy do knihovny BPM, lze zobrazit jako nápovědu.
+-   **Záznamy úkolů lze uložit do BPM.** Záznam úkolu lze uložit na řádek hierarchie v knihovně modulu Modelování podnikových procesů ve službě Lifecycle Services (LCS). Seznam kroků a vývojový diagram podnikového procesu bude vygenerován ze záznamu. Záznamníky úkolů, které byly uloženy do knihovny BPM, lze zobrazit jako nápovědu.
 -   **Záznamy úkolů lze uložit jako dokumenty Word.** Tímto způsobem lze snadno vytvářet tisknutelné přepisy školení.
 
 Můžete vytvořit vlastní záznamy úkolů, přehrávat záznamy úkolů poskytované společností Microsoft nebo upravovat záznamy úkolů poskytované společností Microsoft podle konfigurace. Další informace o Záznamníku úkolů naleznete v tématu [Záznamník úloh](task-recorder.md).

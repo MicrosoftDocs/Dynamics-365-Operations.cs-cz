@@ -19,10 +19,10 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a527136f77b65ef5a43576291e38cb168dbbd322
+ms.sourcegitcommit: e66208ccceb4c248c2704bb7358d77447e032205
+ms.openlocfilehash: 43360ea18ccc0fc4622f6da70ff10f2aca8b56c8
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -98,10 +98,10 @@ Pokud chcete záznam po pozastavení obnovit, klikněte na **Pokračovat**.
 
 ### <a name="capture-screenshots"></a>Pořídit snímky obrazovky
 
-Záznamník úkolů může zaznamenat snímky obrazovky uživatelského rozhraní Retail Modern POS při zaznamenávání obchodního procesu. Záznamník úkolů používá snímky obrazovky při stažení nahrávky jako dokumentu aplikace Word. Chcete-li aktivovat funkci záznamu obrazovky, nastavte **Zachytit obrazovku** na **Ano**. 
+Záznamník úkolů může zaznamenat snímky obrazovky uživatelského rozhraní Retail Modern POS při zaznamenávání obchodního procesu. Chcete-li aktivovat funkci pořízení snímku obrazovky, nastavte možnost **Zachytit obrazovku** na **Ano** a poté proveďte záznam. Po ukončení záznamu klikněte na tlačítko **Zastavit** a stáhněte dokument aplikace Word. Dokument bude obsahovat kroky s příslušnými snímky obrazovky.
 
 #### <a name="note"></a>Poznámka
-> Funkce zachycení obrazovky není podporována v prostředí Cloud POS.
+> Funkce pořízení snímku obrazovky není podporována v prostředí Modern POS.
 
 ### <a name="start-task-and-end-task"></a>Počáteční a koncový úkol
 
