@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
+ms.search.form: RetailTillLayout
 audience: Application user
 ms.search.scope: Operations, Retail
 ms.custom: 
@@ -18,10 +19,10 @@ ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 563c89c75e2136294f8f841bec094c2aeb85d580
-ms.openlocfilehash: b758b48230e8d9fabdccbe267a6ad6b9e74af0ff
+ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
+ms.openlocfilehash: 61a1eeba0e44a2600157f2e5c3f2de042c786d91
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -95,13 +96,13 @@ ms.lasthandoff: 10/17/2017
 
 | <span data-ttu-id="f53d6-173">Typ rozvržení</span><span class="sxs-lookup"><span data-stu-id="f53d6-173">Layout type</span></span> | <span data-ttu-id="f53d6-174">Rozlišení</span><span class="sxs-lookup"><span data-stu-id="f53d6-174">Resolution</span></span> | <span data-ttu-id="f53d6-175">Poměr stran</span><span class="sxs-lookup"><span data-stu-id="f53d6-175">Aspect ratio</span></span> | <span data-ttu-id="f53d6-176">Cílový displej</span><span class="sxs-lookup"><span data-stu-id="f53d6-176">Target display</span></span>          |
 |-------------|------------|--------------|-------------------------|
-| <span data-ttu-id="f53d6-177">Komprimovat\*</span><span class="sxs-lookup"><span data-stu-id="f53d6-177">Compact\*</span></span>   | <span data-ttu-id="f53d6-178">480 × 853</span><span class="sxs-lookup"><span data-stu-id="f53d6-178">480 × 853</span></span>  | <span data-ttu-id="f53d6-179">16:9</span><span class="sxs-lookup"><span data-stu-id="f53d6-179">16:9</span></span>         | <span data-ttu-id="f53d6-180">Telefony</span><span class="sxs-lookup"><span data-stu-id="f53d6-180">Phones</span></span>                  |
+| <span data-ttu-id="f53d6-177">Komprimovat\\*</span><span class="sxs-lookup"><span data-stu-id="f53d6-177">Compact\\*</span></span>   | <span data-ttu-id="f53d6-178">480 × 853</span><span class="sxs-lookup"><span data-stu-id="f53d6-178">480 × 853</span></span>  | <span data-ttu-id="f53d6-179">16:9</span><span class="sxs-lookup"><span data-stu-id="f53d6-179">16:9</span></span>         | <span data-ttu-id="f53d6-180">Telefony</span><span class="sxs-lookup"><span data-stu-id="f53d6-180">Phones</span></span>                  |
 | <span data-ttu-id="f53d6-181">Plné</span><span class="sxs-lookup"><span data-stu-id="f53d6-181">Full</span></span>        | <span data-ttu-id="f53d6-182">1024 × 768</span><span class="sxs-lookup"><span data-stu-id="f53d6-182">1024 × 768</span></span> | <span data-ttu-id="f53d6-183">4:3</span><span class="sxs-lookup"><span data-stu-id="f53d6-183">4:3</span></span>          | <span data-ttu-id="f53d6-184">Tablety</span><span class="sxs-lookup"><span data-stu-id="f53d6-184">Tablets</span></span>                 |
-| <span data-ttu-id="f53d6-185">Plné\*</span><span class="sxs-lookup"><span data-stu-id="f53d6-185">Full\*</span></span>      | <span data-ttu-id="f53d6-186">1280 × 720</span><span class="sxs-lookup"><span data-stu-id="f53d6-186">1280 × 720</span></span> | <span data-ttu-id="f53d6-187">16:9</span><span class="sxs-lookup"><span data-stu-id="f53d6-187">16:9</span></span>         | <span data-ttu-id="f53d6-188">Tablety</span><span class="sxs-lookup"><span data-stu-id="f53d6-188">Tablets</span></span>                 |
+| <span data-ttu-id="f53d6-185">Plné\\*</span><span class="sxs-lookup"><span data-stu-id="f53d6-185">Full\\*</span></span>      | <span data-ttu-id="f53d6-186">1280 × 720</span><span class="sxs-lookup"><span data-stu-id="f53d6-186">1280 × 720</span></span> | <span data-ttu-id="f53d6-187">16:9</span><span class="sxs-lookup"><span data-stu-id="f53d6-187">16:9</span></span>         | <span data-ttu-id="f53d6-188">Tablety</span><span class="sxs-lookup"><span data-stu-id="f53d6-188">Tablets</span></span>                 |
 | <span data-ttu-id="f53d6-189">Plné</span><span class="sxs-lookup"><span data-stu-id="f53d6-189">Full</span></span>        | <span data-ttu-id="f53d6-190">1366 × 768</span><span class="sxs-lookup"><span data-stu-id="f53d6-190">1366 × 768</span></span> | <span data-ttu-id="f53d6-191">16:9</span><span class="sxs-lookup"><span data-stu-id="f53d6-191">16:9</span></span>         | <span data-ttu-id="f53d6-192">Tablety, větší obrazovky</span><span class="sxs-lookup"><span data-stu-id="f53d6-192">Tablets, larger screens</span></span> |
 | <span data-ttu-id="f53d6-193">Plné</span><span class="sxs-lookup"><span data-stu-id="f53d6-193">Full</span></span>        | <span data-ttu-id="f53d6-194">1440 × 960</span><span class="sxs-lookup"><span data-stu-id="f53d6-194">1440 × 960</span></span> | <span data-ttu-id="f53d6-195">3:2</span><span class="sxs-lookup"><span data-stu-id="f53d6-195">3:2</span></span>          | <span data-ttu-id="f53d6-196">Tablety, větší obrazovky</span><span class="sxs-lookup"><span data-stu-id="f53d6-196">Tablets, larger screens</span></span> |
 
-<span data-ttu-id="f53d6-197">\* Tyto dodatečné velikosti rozvržení jsou k dispozici pouze v rozvrženích Fabrikam a Adventure Works.</span><span class="sxs-lookup"><span data-stu-id="f53d6-197">\* These additional layout sizes are available only in Adventure Works and Fabrikam layouts.</span></span>
+<span data-ttu-id="f53d6-197">\\* Tyto dodatečné velikosti rozvržení jsou k dispozici pouze v rozvrženích Fabrikam a Adventure Works.</span><span class="sxs-lookup"><span data-stu-id="f53d6-197">\\* These additional layout sizes are available only in Adventure Works and Fabrikam layouts.</span></span>
 
 
 >[!TIP]
