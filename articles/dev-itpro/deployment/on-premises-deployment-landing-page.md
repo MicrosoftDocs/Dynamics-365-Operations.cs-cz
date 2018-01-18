@@ -3,7 +3,7 @@ title: "Místní nasazení"
 description: "Toto téma obsahuje informace a odkazy na obsah týkající se místních nasazení."
 author: kfend
 manager: AnnBe
-ms.date: 06/24/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 855967a9aacd4881315c5d5fefa06b909cd4cb59
-ms.openlocfilehash: 69151ed1c0a0a06e72bbdc8b33eb2fc68e9cc8eb
+ms.sourcegitcommit: 346f5b7a5fbbe2c41aaa54e0b36fe0c46baec0af
+ms.openlocfilehash: 697f5a43124aace645e0cc8c6df98a4f986ab852
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 12/20/2017
 
 ---
 # <a name="on-premises-deployment-landing-page"></a>Úvodní stránka Místní nasazení
@@ -32,7 +32,8 @@ Můžete nasadit aplikaci aplikace Microsoft Dynamics 365 for Finance and Operat
 
 ## <a name="get-started"></a>Začínáme
 - [Přehled aplikace Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](on-premises-overview.md)
-- [Konkrétní systémové požadavky pro místní nasazení](../../fin-and-ops/get-started/system-requirements-on-prem.md)
+- [Plánování pro vaše místní nasazení](plan-onprem-deployment.md)
+- [Systémové požadavky pro místní nasazení](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Nastavení velikosti hardwaru pro místní prostředí](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Zásady životního cyklu online služby a místního softwaru](../migration-upgrade/versions-update-policy.md)
 - [Zakoupení aplikace Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](../../fin-and-ops/get-started/purchase-on-premises.md)
@@ -41,6 +42,7 @@ Můžete nasadit aplikaci aplikace Microsoft Dynamics 365 for Finance and Operat
 ## <a name="onboard"></a>Onboard
 - [Vytvoření místního projektu ve službě Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
 - [Nastavení a nasazení místních prostředí](setup-deploy-on-premises-environments.md)
+- [Instalace zařízení síťové tiskárny v místních prostředích](../analytics/install-network-printer-onprem.md)
 - [Konfigurace služby SQL Server Reporting Services pro místní nasazení](../analytics/configure-ssrs-on-premises.md)
 - [Vývoj a nasazení vlastních modelů do místních prostředí](develop-deploy-custom-models-on-premises.md)
 
@@ -54,6 +56,7 @@ Můžete nasadit aplikaci aplikace Microsoft Dynamics 365 for Finance and Operat
 - [Opětovné nasazení místního nasazení](redeploy-on-prem.md)
 
 ## <a name="other-resources"></a>Další zdroje
+- [Řešení problémů aplikace Dynamics 365 for Finance and Operations, Enterprise edition on-premises](troubleshoot-on-prem.md)
 - [Funkce neimplementované v nasazeních on-premises](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Zastaralé funkce](../migration-upgrade/deprecated-features.md)
 - [Zásady životního cyklu softwaru a seznam vydání](../migration-upgrade/versions-update-policy.md)

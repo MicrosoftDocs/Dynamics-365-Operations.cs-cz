@@ -3,7 +3,7 @@ title: Intelligence
 description: "Toto téma vás nasměruje na zdroje, které můžete použít, abyste se dozvěděli více o business intelligence a nástrojích pro vykazování v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: sericks007
 manager: AnnBe
-ms.date: 09/07/2017
+ms.date: 12/18/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 335d38e0fb5e47136b87bac5bfa9d2fd2923def6
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: 2477062ad324f91ff07f1c79cfccd4389b37badf
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -48,7 +48,6 @@ Uživatelé mohou interagovat s daty kliknutím nebo klepnutím na vizuální pr
  - [Embedded Power BI v pracovních prostorech](embed-power-bi-workspaces.md)
  - [Integrace služby Power BI Embedded](power-bi-embedded-integration.md)
  - [Přidání analýz do pracovního prostoru pomocí Power BI Embedded](add-analytics-tab-workspaces.md)
- - [Publikování analytických aplikací v Power BI](publish-apps-powerbi.md)
  - [Pomoc se zabezpečením analytických pracovních prostorů a sestav pomocí Power BI Embedded](secure-analytical-workspaces.md)
  - [Obsah Power BI pro aplikaci Finance and Operations](power-bi-home-page.md)
 
@@ -88,10 +87,7 @@ Další informace naleznete v následujících tématech:
 ## <a name="technical-reference-reports"></a>Sestavy technických informací
 V následujících sestavách získáte informace o objektech v aplikaci Finance and Operations:
 
-- [Sestava entit agregovaných dat](aggregate-data-entities-report.md)
-- [Sestava měrných systémů agregace](aggregate-measurements-report.md)
 - [Sestava datových entit](../data-entities/data-entities-report.md)
-- [Sestava klíčových indikátorů výkonnosti (KPI)](key-performance-indicators-report.md)
 - [Licenční kódy a sestavy konfiguračních klíčů](../sysadmin/license-codes-configuration-keys-report.md)
 - [Sestava služby SQL Server Reporting Services](SSRS-report.md)
 - [Sestava typů workflow](../../fin-and-ops/organization-administration/workflow-types-report.md)

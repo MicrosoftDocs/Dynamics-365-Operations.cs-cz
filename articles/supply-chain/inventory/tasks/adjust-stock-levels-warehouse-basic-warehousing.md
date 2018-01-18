@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -23,14 +23,14 @@ ms.contentlocale: cs-cz
 ms.lasthandoff: 09/29/2017
 
 ---
-# Úprava úrovně zásob ve skladu (základní správa skladu)
+# <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a>Úprava úrovně zásob ve skladu (základní správa skladu)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup vás provede procesem vytvoření a zaúčtování deníku úpravy zásob za účelem úpravy úrovně zásob produktu ve skladu. Předtím, než začnete, je třeba mít nastaven název deníku zásob pro úpravy zásob. Tento proces můžete projít pomocí ukázkových dat společnosti USMF nebo pomocí vlastních dat. Tyto úkoly obvykle provádějí zaměstnanci skladu.
 
 
-## Vytvoření deníku úprav zásob
+## <a name="create-an-inventory-adjustment-journal"></a>Vytvoření deníku úprav zásob
 1. Přejděte do Řízení zásob > Položky deníku > Zboží > Úprava zásob.
 2. Klikněte na položku Nová.
 3. V poli Název kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
@@ -38,7 +38,7 @@ Tento postup vás provede procesem vytvoření a zaúčtování deníku úpravy 
     * Některá další pole budou vyplněna na základě nastavení názvu deníku úprav zásob, který jste vybrali.  
 5. Klikněte na tlačítko OK.
 
-## Vytvoření řádků deníku
+## <a name="create-journal-lines"></a>Vytvoření řádků deníku
 1. Klikněte na položku Nová.
 2. V seznamu označte pole čísla položky.
 3. V poli Číslo položky vyberte položku. Používáte-li ukázková data společnosti USMF, zadejte hodnotu „D0001“.
@@ -50,7 +50,7 @@ Tento postup vás provede procesem vytvoření a zaúčtování deníku úpravy 
 8. Zadejte číslo do pole Množství.
     * Pole nákladové ceny určuje náklady za jednotku za příjmy na sklad. Pokud náklady nejsou pro číslo položky specifikovány nebo pokud je chcete určit ručně, lze to udělat zde.  
 
-## Proveďte ověření a zaúčtování deníku úprav zásob.
+## <a name="validate-and-post-the-inventory-adjustment-journal"></a>Proveďte ověření a zaúčtování deníku úprav zásob.
 1. Klikněte na tlačítko Ověřit.
 2. Klikněte na tlačítko OK.
 3. Klikněte na položku Zaúčtovat.

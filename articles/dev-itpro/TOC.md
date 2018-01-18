@@ -2,6 +2,7 @@
 # [Systémové požadavky pro nasazení cloudu](../fin-and-ops/get-started/system-requirements.md)
 # [Systémové požadavky pro místní nasazení](../fin-and-ops/get-started/system-requirements-on-prem.md)
 # [Ukázková data](../fin-and-ops/get-started/demo-data.md)
+## [Generování ukázkových dat s balíčky](data-entities/generate-demo-data-packages.md)
 
 
 # [Vývoj a vlastní nastavení pomocí aplikace Visual Studio](dev-tools/developer-home-page.md)
@@ -362,6 +363,7 @@
 ### [OData](data-entities/odata.md)
 ### [Vlastní služby](data-entities/custom-services.md)
 ### [Opakované integrace](data-entities/recurring-integrations.md)
+### [Použití testovacích nástrojů služeb třetí strany se službami](data-entities/third-party-service-test.md)
 
 ## Vývoj pro integraci
 ### [Integrace dat s použitím datových entit](data-entities/data-management-integration-data-entity.md)
@@ -396,6 +398,7 @@
 ### [Balíčky dat konfigurace](data-entities/configuration-data-packages.md)
 ### [Zkopírování dat konfigurace mezi společnostmi](data-entities/copy-configuration.md)
 ### [Šablony dat konfigurací](data-entities/configuration-data-templates.md)
+### [Šablony dat s více listy](data-entities/excel-template-multiple.md)
 ### [Sledování změn entity](data-entities/entity-change-track.md)
 
 ## Standardní datové entity
@@ -499,14 +502,17 @@
 ### [Připojování architektury Azure Resource Manager](deployment/arm-onboarding.md)
 ### [Azure ExpressRoute a Dynamics 365 for Finance and Operations, Enterprise Edition](deployment/expressroute.md)
 
-## [Nasazení on-premises](deployment/on-premises-deployment-landing-page.md)
-### [Přehled On-premises](deployment/on-premises-overview.md)
+## [Místní nasazení](deployment/on-premises-deployment-landing-page.md)
+### [Přehled místního nasazení](deployment/on-premises-overview.md)
+### [Plánování pro vaše místní nasazení](deployment/plan-onprem-deployment.md)
 ### [Rozsah hardwaru](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 ### [Vytvoření projektu on-premises](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Nastavení a nasazení místních prostředí](deployment/setup-deploy-on-premises-environments.md)
 ### [Vývoj a nasazení vlastních modelů do místních prostředí](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Použití aktualizací nasazení on-premises](deployment/apply-updates-on-premises.md)
 ### [Opětovné nasazení místního nasazení](deployment/redeploy-on-prem.md)
+### [Aktualizace místního agenta](lifecycle-services/update-local-agent.md)
+### [Rekonfigurace vašeho prostředí](lifecycle-services/reconfigure-environment.md)
 ### [Řešení problémů aplikace Dynamics 365 for Finance and Operations, Enterprise edition on-premises](deployment/troubleshoot-on-prem.md)
 
 ## Nasazení vlastního kódu

@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 02d777da3b97706f9e63478a1978ac9b230a591e
+ms.sourcegitcommit: 8e294f71355219890ac6f807094a930ac2acc279
+ms.openlocfilehash: 41dc188138436947c4bf7eaf074ef704c201e0cf
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -69,7 +69,7 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 621 | Vytvořit nabídku | Převeďte transakci POS na prodejní nabídku. | Ano | Ano | Ne | Ano\* | Ne |
 | 636 | Vytvoření maloobchodní transakce | Tato operace umožňuje uživateli vytvořit standardní prodejní transakci, když má výchozí chování POS vytvářet objednávky odběratele. | Ano | Ano | Ne | Ano | Ne |
 | 600 | Zákazník | Přidejte konkrétního zákazníka do transakce. | Ne | Ne | Ne | Ano | Ne |
-| 10000 | Vklad na účet odběratele | Provede platbu na účet odběratele. | Ano | Ano | Ano | Ano | Ano |
+| 1100 | Vklad na účet odběratele | Provede platbu na účet odběratele. | Ano | Ano | Ano | Ano | Ano |
 | 612 | Přidat zákazníka | Tato operace umožňuje uživateli vytvořit nový záznam odběratele. | Ano | Ano | Ano | Ano† | Ne |
 | 603 | Vymazat zákazníka | Odstraňte odběratele z aktuální transakce. | Ano | Ano | Ne | Ano | Ne |
 | 602 | Hledat zákazníka | Tato operace umožní uživateli vyhledat záznam o odběrateli pomocí navigace na stránku vyhledávání odběratele v POS. | Ano | Ano | Ano | Ano | Ne |
@@ -103,7 +103,8 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 701 | Odhlásit | Odhlaste aktuálního uživatele z pokladny. | Ano | Ano | Ano | Ano | Ne |
 | 521 | Zůstatek bodů na věrnostní kartě | Zobrazte zůstatek bodů pro konkrétní věrnostní kartu. | Ano | Ano | Ne | Ne | Ne |
 | 914 | Minimalizovat okno POS | Tato operace není podporována. | Nelze použít | Nelze použít | Nelze použít | Nelze použít | Ne |
-| 1 000 | Otevřít zásuvku | Proveďte operaci "bez prodeje" a otevřete aktuálně zvolené zásuvky s hotovostí. | Ano | Ano | Ano | Ano | Ne |
+| 1 000 | Otevřít zásuvku | Proveďte operaci "bez prodeje" a otevřete aktuálně zvolené zásuvky s hotovostí. | Ano | Ano | Ano | Ano | Žádný |
+| 928 | Plnění objednávek | Tato operace umožňuje uživatelům vydat, zabalit, expedovat nebo odvolat objednávky pro vyzvednutí v obchodě. | Ano | Ano | Ano | Žádný | Žádný |
 | 129 | Přepsat daň řádkového produktu | Přepište daň u vybrané položky řádku a použijte jinou konkrétní daň. | Ano | Ano | Ne | Ano | Ne |
 | 1.3.0 | Přepsat daň řádkového produktu ze seznamu | Přepište daň u vybrané položky řádku a použijte daň, kterou uživatel vybere ze seznamu. | Ano | Ano | Ne | Ano | Ne |
 | 127 | Přepsat daň transakce | Přepište daň u transakce a použijte jinou konkrétní daň. | Ano | Ano | Ne | Ano | Ne |
@@ -132,7 +133,7 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 926 | Tisk štítku na polici | Tato operace není podporována. | Nelze použít | Nelze použít | Nelze použít | Nelze použít | Ne |
 | 1056 | Tisknout X | Vytiskněte sestavu X pro aktuální směnu. | Ano | Ano | Ano | Ne | Ne |
 | 103 | Komentář k produktu | Přidá poznámku k vybrané řádkové položce transakce. | Ano | Ano | Ne | Ano | Ne |
-| 1597 | Prodej produktu | Přidejte konkrétní produkt do transakce. | Ano | Ano | Ano | Ano | Ne |
+| 100 | Prodej produktu | Přidejte konkrétní produkt do transakce. | Ano | Ano | Ano | Ano | Ne |
 | 108 | Hledání produktu | Tato operace umožní uživateli vyhledat produkt pomocí navigace na stránku vyhledávání produktu v POS. | Ano | Ano | Ano | Ano | Ne |
 | 633 | Datum vypršení platnosti nabídky | Tato operace umožňuje uživateli zobrazit nebo změnit datum vypršení platnosti prodejní nabídky. | Ano | Ano | Ne | Ano\* | Ne |
 | 627 | Přepočítat | Přepočítejte všechny řádky objednávky odběratele a daně, založené na aktuální konfiguraci. | Ano | Ano | Ne | Ano\* | Ne |

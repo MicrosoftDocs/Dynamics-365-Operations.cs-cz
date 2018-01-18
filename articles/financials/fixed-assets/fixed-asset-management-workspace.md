@@ -3,11 +3,12 @@ title: "Pracovní prostor pro správu dlouhodobého majetku"
 description: "Toto téma obsahuje informace o pracovním prostoru Správa dlouhodobého majetku. Tento pracovní prostor zobrazuje informace vztahující se k dlouhodobému majetku, který je zadán v systému. Obsahuje souhrnné a analytické zobrazení."
 author: saraschi
 manager: AnnBe
-ms.date: 10/27/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

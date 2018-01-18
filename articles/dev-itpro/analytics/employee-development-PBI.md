@@ -1,9 +1,9 @@
 ---
 title: "Obsah Power BI pro rozvoj zaměstnanců"
-description: "Toto téma popisuje obsah Power BI pro rozvoj zaměstnanců. Vysvětluje přístup k sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu."
+description: "Toto téma popisuje obsah Power BI pro rozvoj zaměstnanců."
 author: jcart1106
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: f8ba7a968a1a5b376bac52106671607247f061d9
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 99ae772f3a7fe9ad274a46398a577ad96f18e251
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -27,11 +27,7 @@ ms.lasthandoff: 12/01/2017
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma popisuje obsah Microsoft Power BI – **Rozvoj zaměstnance**. Vysvětluje přístup k sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
-
-## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-
-Sadu obsahu **Rozvoj zaměstnance** najdete ve sdílené knihovně aktiv služby Microsoft Dynamics Lifecycle Services (LCS). Další informace o tom, jak obsah stáhnout a spojit ho s daty, najdete v tématu [Obsah Power BI ve službě LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md).
+Toto téma popisuje obsah Microsoft Power BI – **Rozvoj zaměstnance**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
 Sestavy, které jsou součástí obsahu Power BI **Rozvoj zaměstnance**, obsahují grafy a tabulky s dalšími informacemi. Následující tabulka obsahuje popis daných sestav.
@@ -74,5 +70,4 @@ Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídi
 | Výkonnost              | Ohodnocení, popis a model ohodnocení                                                                      | Aktuální zaměstnanec, aktuální pozice, trend zaměstnance, upřednostňované dovednosti, minulá pozice, trend pozice, ukončený pracovní poměr |
 |  Dovednost                   | Dovednosti, typ dovedností a ohodnocení                                                                              | Analýza dovedností zaměstnanců, upřednostňovaná dovednost |                                                                                                                        
 
-Tyto entity byly použity k vytvoření vypočítaných hodnot v datovém modelu. Tyto vypočtené hodnoty se použijí k výpočtu klíčových ukazatelů výkonu a sestav, které se používají v obsahu Power BI. Pokud chcete zahrnout další výpočty do sestav a řídicího panelu, můžete stáhnout a upravit soubor .pbix z LCS. Tento soubor představuje výchozí datový model, který byl použit k vytvoření obsahu Power BI. Po provedení změn můžete vytvořit organizační balíček obsahu a řídicí panel, který bude obsahovat vámi přidané informace.
 

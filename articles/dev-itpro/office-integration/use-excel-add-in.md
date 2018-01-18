@@ -3,7 +3,7 @@ title: "Použití doplňku Excel"
 description: "Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics Office pro aplikaci Excel."
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: bf2607596993d01abaf5e8a66f14f8c091791d4a
-ms.openlocfilehash: b4151ca929d0dbe073c1a8444cf63a90ac74e20c
+ms.sourcegitcommit: 9b1f25f3630ad5126edd20c5508b83a9811a65f8
+ms.openlocfilehash: dd986d8f82c42c4e229e6e60bdfe8d15a273e149
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 11/07/2017
 
 ---
 
@@ -104,6 +104,18 @@ Chcete-li upravit sloupce, které jsou automaticky přidány do listu, můžete 
 
 4. Abyste provedli změny zdrojů dat, zvolte **Aktualizovat**. Potom zvolte **Hotovo** a ukončete návrháře.
 5. Pokud jste přidali pole (sloupec), zvolte **Aktualizovat** pro načtení aktualizované sady dat.
+
+## <a name="copy-environment-data"></a>Kopírovat data prostředí
+
+Data načtená do sešitu z jednoho prostředí lze zkopírovat do jiného prostředí. Nestačí však změnit jen URL adresu připojení, protože datová mezipaměť v sešitu bude nadále zacházet s daty jako s existujícími daty. Namísto toho je nutné použít funkci Kopírovat data prostředí a publikovat data do nového prostředí jako nová data.
+
+1. Zvolte tlačítko **Možnosti** (symbol ozubeného kola) a poté na pevné záložce **Datový konektor** zvolte **Kopírovat data prostředí**. 
+2. Zadejte adresu URL serveru pro nové prostředí. 
+3. Zvolte **OK** a potom zvolením **Ano** potvrďte akci. Doplněk aplikace Excel se restartuje a připojí do nového prostředí. Jakákoli existující data v sešitu budou zpracována jako nová data.
+
+    Po restartování doplňku aplikace Excel oznámí okno se zprávou, že sešit je v režimu kopie prostředí.
+
+4. Chcete-li zkopírovat data do nového prostředí jako nová data, vyberte **Publikovat**. Chcete-li zrušit operaci kopie prostředí a zkontrolovat existující data v novém prostředí, vyberte **Aktualizovat**.
 
 ## <a name="troubleshooting"></a>Řešení potíží
 Existuje několik problémů, které lze vyřešit pomocí některé jednoduchých kroků.

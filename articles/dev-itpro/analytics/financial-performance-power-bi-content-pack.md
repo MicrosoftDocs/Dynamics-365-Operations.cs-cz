@@ -1,9 +1,9 @@
 ---
 title: "Obsah finanční výkonnosti Power BI"
-description: "Toto téma popisuje obsah Power BI pro finanční výkonnost. Popisuje příslušné sestavy a řídicí panel a obsahuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu."
+description: "Toto téma popisuje obsah Power BI pro finanční výkonnost."
 author: kweekley
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 3638f5acf6a05ec419dc4308e861d95f0d7b2cea
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 83ea868e7612f30afa1b99f374878f4ba415113f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -30,21 +30,6 @@ ms.lasthandoff: 12/01/2017
 [!include[banner](../includes/banner.md)]
 
 Toto téma popisuje obsah Microsoft Power BI **Finanční výkonnost**. Popisuje příslušné sestavy a řídicí panel a obsahuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
-
-## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-
-Obsah Power BI **Finanční výkonnost** najdete ve službě Microsoft Dynamics Lifecycle Services LCS (LCS) a na adrese PowerBI.com.
-
-### <a name="available-from-lcs"></a>K dispozici ve službě LCS
-Obsah Power BI **Finanční výkonnost**, který je k dispozici v LCS, podporuje následující verze:
-
-- Verze aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition
-- Microsoft Dynamics 365 for Operations verze 1611 
-
-Obsah Power BI najdete v knihovně sdíleného majetku ve službě LCS. Další informace o stažení balíčku obsahu a jeho implementaci ve vaší organizaci najdete v tématu [Obsah Power BI v LCS od společnosti Microsoft a vašich partnerů](power-bi-content-microsoft-partners.md). Pokud se chcete podívat na ukázku, jak implementovat obsah Power BI, najdete informace v tématu [Obsah Power BI od společnosti Microsoft a partnerů ve službě Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) pro Office Mix.
-
-### <a name="available-from-powerbicom"></a>Dostupné na adrese PowerBI.com
-Verze obsahu Power BI **Finanční výkonnost** dostupná na adrese PowerBI.com podporuje verze aplikace Microsoft Dynamics AX 7.0 a 7.0.1. Další informace o připojení a načtení dat aplikace Dynamics AX najdete v tématu [Přístup k obsahu Power BI   webu PowerBI.com](power-bi-home-page.md).
 
 ## <a name="main-account-setup"></a>Nastavení hlavního účtu
 Protože pro organizace je žádoucí, aby se závazky a částky výnosů zobrazovaly ve výkazech jako kladné částky, je důležité správně nastavit hlavní účty. Aby se tyto hlavní účty zobrazovaly jako kladné částky, musí být typ hlavního účtu nastaven na **Pasiva** nebo **Výnos**. Při použití těchto typů účtů se při vykazování pomocí nástroje Power BI změní znaménka a částky se zobrazí jako kladné.
@@ -101,5 +86,5 @@ Následující entity byly použity jako základ obsahu Power BI **Finanční v�
 - Hlavní knihy
 - ChartofAccounts
 
-Tyto entity byly použity k vytvoření vypočítaných hodnot v datovém modelu. Vypočtené hodnoty se poté použijí pro výpočet klíčových ukazatelů výkonu a sestav, které se používají v obsahu. Ve výchozím nastavení obsahuje obsah data za poslední tři roky a za jeden budoucí rok. Pokud budete chtít zahrnout další výpočty do svých sestav a řídicího panelu, můžete upravit [sešit aplikace Microsoft Excel](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Tento sešit představuje výchozí datový model, který byl použit k vytvoření obsahu. Po dokončení změn můžete vytvořit organizační balíček obsahu a řídicí panel, který bude obsahovat vámi přidané informace.
+Tyto entity byly použity k vytvoření vypočítaných hodnot v datovém modelu. Vypočtené hodnoty se poté použijí pro výpočet klíčových ukazatelů výkonu a sestav, které se používají v obsahu. Ve výchozím nastavení obsahuje obsah data za poslední tři roky a za jeden budoucí rok. Pokud budete chtít zahrnout další výpočty do svých sestav a řídicího panelu, můžete upravit [sešit aplikace Microsoft Excel](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Tento sešit představuje výchozí datový model, který byl použit k vytvoření obsahu. 
 

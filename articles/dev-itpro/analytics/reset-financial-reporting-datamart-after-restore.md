@@ -3,7 +3,7 @@ title: "Resetování datového tržiště finančního výkaznictví"
 description: "Toto téma popisuje postup resetování datového tržiště finančního výkaznictví."
 author: aolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: aloson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 0786d3377b914791106ef30455d676e5ab2ae03d
-ms.openlocfilehash: c708fa18b8676d8ff57c26b3176a36d86df29387
+ms.sourcegitcommit: 5b956dcc5a4a93033396ae0ffcf8b7aeba2cf3f2
+ms.openlocfilehash: a07e8b5bae2c4f71e9212cd2f8080d2481769818
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,7 +34,7 @@ Toto téma vysvětluje resetování datového tržiště finančního výkaznict
 - Microsoft Dynamics 365 for Finance and Operations: Finanční výkaznictví, vydání 7.0.10000.4 a vyšší
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (místní)
 
-Abyste získali Finance and Operations: Finanční výkaznictví, vydání 7.2.6.0, můžete stáhnout článek znalostní báze KB 4052514 z <https://support.microsoft.com/en-us/help/4052514>.
+Abyste získali Finance and Operations: Finanční výkaznictví, vydání 7.2.6.0, můžete stáhnout článek znalostní báze KB 4052514 z <https://fix.lcs.dynamics.com/Issue/Resolved?kb=4052514>.
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-7260-and-later"></a>Resetování datového tržiště finančního výkaznictví pro Finance and Operations, Finanční výkaznictví, vydání 7.2.6.0 a vyšší
 
@@ -55,7 +55,7 @@ Resetování datového tržiště má být provedeno pouze během situace, kdy j
 
 Chcete-li resetovat datového tržiště, v návrháři sestav v nabídce **Nástroje** zvolte **Resetovat datové tržiště**. Zobrazené dialogové okno má dvě části: **Statistiky** a **Resetování**.
 
-[![Dialogové okno resetování datového tržiště](./media/Statistics.png)](./media/Statistics.png)
+[![Dialogové okno resetování datového tržiště](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
 ##### <a name="integration-attempts"></a>Pokusy o integraci
 
@@ -83,8 +83,10 @@ Pokud určíte, že je nutné resetovat datové tržiště, zvolte zaškrtávac�
 - **Obnovit databázi** – Databáze aplikace Finance and Operations byla obnovena, ale nebyla obnovena databáze datového tržiště finančního výkaznictví.
 - **Ostatní** – Resetujete datové tržiště z jiného důvodu. Pokud se obáváte problému, kontaktujte podporu, která ho identifikuje.
 
+[![Resetovat datové tržiště](./media/Integration.png)](./media/Integration.png)
+
 > [!NOTE]
-> Ověřte, že byla dokončena integrace všech existujících úloh, než dokončíte všechny kroky. Můžete zobrazit stav integrace výběrem položek **Nástroje** &gt; **Stav integrace**.
+> Před zahájením resetu ověřte, zda všechny úlohy resetu datového tržiště dokončily počáteční vytížení. To můžete potvrdit vyhledáním hodnoty ve sloupci Čas posledního spuštění výběrem položek **Nástroje** &gt; **Stav integrace**.
 
 #### <a name="clear-users-and-companies"></a>Vymazat uživatele a společnosti
 
@@ -94,7 +96,10 @@ Jakmile jste připraveni zahájit proces resetování, zvolte **OK**. Budete vyz
 
 Pokud chcete ověřit stav integrace, vyberte **Nástroje** &gt; **Stav integrace** a zobrazí se poslední čas, kdy byla integrace naposledy spuštěna, a její stav.
 
-[![Zobrazení stavu integrace](./media/Integration.png)](./media/Integration.png)
+[![Zobrazení stavu integrace](./media/New-integration.PNG)](./media/New-integration.PNG)
+
+> [!NOTE]
+> Reset je dokončen, když všechna mapování zobrazují stav RanToCompletion a okno stavu integrace okno v levém dolním rohu říká Integrace dokončena.
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-70100004-and-later"></a>Resetování datového tržiště finančního výkaznictví pro Finance and Operations, Finanční výkaznictví, vydání 7.0.10000.4 a vyšší
 
@@ -142,7 +147,9 @@ Následující služby systému Microsoft Windows budou mít otevřená připoje
 
 #### <a name="download-the-latest-minorversiondataupgradezip-package"></a>Stažení nejnovějšího balíčku MinorVersionDataUpgrade.zip
 
-Stáhněte nejnovější balíček MinorVersionDataUpgrade.zip. Pokyny k vyhledání a stažení správné verze balíčku upgradu dat lze najít v části [Stažení nejnovějšího nasaditelného balíčku pro upgrade dat](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-packages). Upgrade ke stažení balíčku MinorVersionDataUpgrade.zip není vyžadován. Proto stačí postupovat podle kroků v části "Stažení nejnovějšího nasaditelného balíčku pro upgrade dat" tohoto tématu. Je možné přeskočit všechny ostatní kroky v tomto tématu.
+Stáhněte nejnovější balíček MinorVersionDataUpgrade.zip. Pokyny k vyhledání a stažení správné verze balíčku upgradu dat lze najít v části [Stažení nejnovějšího nasaditelného balíčku pro upgrade dat](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package). 
+
+Upgrade ke stažení balíčku MinorVersionDataUpgrade.zip není vyžadován. Proto stačí postupovat podle kroků v části "Stažení nejnovějšího nasaditelného balíčku pro upgrade dat" tohoto tématu. Je možné přeskočit všechny ostatní kroky v tomto tématu.
 
 #### <a name="run-scripts-against-the-finance-and-operations-database"></a>Spuštění skriptů proti databázi Finance and Operations
 

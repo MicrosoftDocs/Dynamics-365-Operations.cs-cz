@@ -1,9 +1,9 @@
 ---
 title: "Obsah správy nákladů v Power BI"
-description: "Toto téma popisuje, co je součástí obsahu správy nákladů v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které jsou použity k sestavení obsahu."
+description: "Toto téma popisuje, co je součástí obsahu správy nákladů v Power BI."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f509852f15b9518d0a01be1f89d4f07c76caf341
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: e0f9042b2647a484a70670d1d29e8036401b39f1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma popisuje, co je součástí obsahu správy nákladů v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které jsou použity k sestavení obsahu.
+Toto téma popisuje, co je součástí obsahu správy nákladů v Power BI. 
 
 # <a name="overview"></a>Přehled
 
@@ -51,8 +51,6 @@ Obsah **Správy nákladů** sady nástrojů Microsoft Power BI je určen pro skl
 
 Primárním datovým zdrojem pro CostAggregatedCostStatementEntryEntity je tabulka CostStatementCache. Tato tabulka je spravována rozhraním mezipaměti sady dat. Ve výchozím nastavení je tabulka aktualizována každých 24 hodin, ale můžete povolit ruční aktualizace v konfiguraci mezipaměti dat. Pak můžete provést ruční aktualizaci v pracovním prostoru **Správa nákladů** nebo **Analýza nákladů**. Po spuštění aktualizace CostStatementCache je nutné aktualizovat OData připojení na Power BI.com, pokud chcete zobrazit aktualizovaná data na webu. Měření odchylky (nákup, výroba) v tomto obsahu Power BI se vztahují pouze na položky, které jsou ohodnoceny skladovou metodou standardních nákladů. Výrobní odchylka se vypočítá jako rozdíl mezi aktivními a realizovanými náklady. Výrobní odchylka se vypočítá, když má výrobní zakázka stav **Ukončeno**. Další informace o typech výrobní odchylky a způsobu výpočtu jednotlivých typů naleznete v tématu [Analýza odchylek pro dokončenou výrobní zakázku](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
-## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Obsah Power BI **Řízení nákladů** je k dispozici z PowerBI.com. Další informace o připojení a načtení dat aplikace Microsoft Dynamics 365 for Finance and Operations naleznete v tématu [Přístup k obsahu Power BI z PowerBI.com](power-bi-home-page.md).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriky, které jsou součástí obsahu Power BI
 Obsah zahrnuje sadu stránek sestav. Každá stránka obsahuje sadu metrik, které jsou zobrazovány jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizace v obsahu **správy nákladů** v Power BI.
@@ -136,13 +134,6 @@ Následující klíčové dimenze se používají jako filtry k řezu měrných 
 | Hlavní knihy          | Měna, Název, Popis                  |
 | Pracoviště            | ID, Název, Země, Město                      |
 
-## <a name="additional-resources"></a>Další prostředky
-Zde uvádíme některé užitečné odkazy související s entitami a vytvářením obsahu v aplikaci Power BI:
-
--   [Datové entity](..\data-entities\data-entities.md)
--   [Vytvoření organizačního balíčku obsahu](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Modelování dat pomocí aplikace Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Přidání dlaždic Power BI do pracovních prostorů](configure-power-bi-integration.md)
 
 
 

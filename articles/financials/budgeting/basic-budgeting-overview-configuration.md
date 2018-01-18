@@ -3,11 +3,12 @@ title: "Přehled rozpočtování"
 description: "Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů v aplikaci Finance and Operations, Enterprise Edition nebo pro jejich načítání z programu třetích stran."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BudgetParameters
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
