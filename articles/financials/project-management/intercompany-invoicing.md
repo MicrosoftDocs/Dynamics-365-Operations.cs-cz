@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -59,9 +60,9 @@ V tomto příkladu musí FRSI být odběratelem právnické osoby USSI a USSI mu
 
 1.  Nastavte FRSI jako zákazníka právnické osoby USSI a nastavte USSI jako dodavatele právnické osoby FRSI. Existují tři vstupní body pro kroky, které jsou požadovány pro tento úkol.
     | Krok | Vstupní bod                                                                       | popis   |
-    |------|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | A.    | V rámci USSI klikněte na **Pohledávky** &gt; **Zákazníci** &gt; **Všichni zákazníci**. | Vytvořte nový záznam zákazníka pro FRSI a vyberte skupinu odběratelů.                                                                                                                                                                                                                           |
-    | mld.    | V rámci FRSI klikněte na **Závazky** &gt; **Dodavatelé** &gt; **Všichni dodavatelé**.        | Vytvořit nový záznam dodavatele pro USSI a vyberte skupinu dodavatelů.                                                                                                                                                                                                                               |
+    |------|-----------------------------------------------------------------------------------|------------------|
+    | A.    | V rámci USSI klikněte na **Pohledávky** &gt; **Zákazníci** &gt; **Všichni zákazníci**. | Vytvořte nový záznam zákazníka pro FRSI a vyberte skupinu odběratelů.                                                                                  |
+    | mld.    | V rámci FRSI klikněte na **Závazky** &gt; **Dodavatelé** &gt; **Všichni dodavatelé**.        | Vytvořit nový záznam dodavatele pro USSI a vyberte skupinu dodavatelů.                                                                                    |
     | K    | V FRSI otevřete záznam dodavatele, který jste právě vytvořili.                            | Na panelu akcí na kartě **Obecné** ve skupině **Nastavení** klikněte na možnost **Mezipodnikové**. Na stránce **Mezipodnikové** na kartě **Obchodní vztah** nastavte jezdec **Aktivní** na **Ano**. V poli **Společnost zákazníka** vyberte záznam zákazníka, který jste vytvořili v kroku A. |
 
 2.  Klikněte na **Řízení projektů a účetnictví** &gt; **Nastavení** &gt; **Parametry modulu Řízení a účetnictví projektu** a potom klikněte na kartu **Mezipodnikové**. Způsob nastavení parametrů závisí na tom, zda jste právnická osoba, která si půjčuje nebo která půjčuje.

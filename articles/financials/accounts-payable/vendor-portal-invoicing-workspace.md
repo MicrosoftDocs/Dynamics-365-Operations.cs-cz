@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -47,10 +48,12 @@ Dlaždice **Souhrnu** poskytují přehled o fakturách pro vybraného dodavatele
 -   Zaplacené faktury jsou ty, které byly v aplikaci Finance and Operations plně uhrazeny.
 
 Klepnutím na dlaždici otevřete filtrované zobrazení stránky **seznamu faktur**.
+
 ### <a name="tabular-lists"></a>Tabulkový seznam
 
 V oddíle **Tabulkové seznamy** se stav fakturace rozděluje podobným způsobem jako dlaždice souhrnu: návrhy a odeslané ale neschválené seznamy. Ve stavu návrhu lze fakturu přijmout do workflowu nebo odstranit. Poslední tabulkový seznam je možnost pro vyhledání faktur. Při hledání můžete filtrovat, což umožňuje rychlejší vyhledávání.
-Stránka seznamu všech faktur dodavatelů
+
+<a name="all-vendor-invoices-list-page"></a>Stránka seznamu všech faktur dodavatelů
 -----------------------------
 
 Můžete zobrazit všechny zaúčtované a nezaúčtované faktury dodavatele na stránce seznamu **Faktury dodavatelské spolupráce**. Tuto stránku se seznamem můžete použít, chcete-li zobrazit stav platby faktur. Stavy plateb zahrnují nezaúčtované, nezaplacené, částečně zaplacené a plně zaplacené.
