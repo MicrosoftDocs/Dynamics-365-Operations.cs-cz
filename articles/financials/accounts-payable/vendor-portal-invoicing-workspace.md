@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ff1818d927f7ab9212c4d5d9109c426be5e0e152
-ms.openlocfilehash: 0d11e4fecc4c42636be63c1ce622f0b2f8e58f2c
+ms.sourcegitcommit: 17a7d9c40d07524378a671397fed566b9bd3af6b
+ms.openlocfilehash: af284d31714df7fe87d49b311c951f9df818fa22
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -47,10 +48,12 @@ ms.lasthandoff: 11/29/2017
 -   <span data-ttu-id="4c216-113">Zaplacené faktury jsou ty, které byly v aplikaci Finance and Operations plně uhrazeny.</span><span class="sxs-lookup"><span data-stu-id="4c216-113">Paid invoices are those that have been fully paid in Finance and Operations.</span></span>
 
 <span data-ttu-id="4c216-114">Klepnutím na dlaždici otevřete filtrované zobrazení stránky **seznamu faktur**.</span><span class="sxs-lookup"><span data-stu-id="4c216-114">Clicking on a tile will open a filtered view of the **Invoices list** page.</span></span>
+
 ### <a name="tabular-lists"></a><span data-ttu-id="4c216-115">Tabulkový seznam</span><span class="sxs-lookup"><span data-stu-id="4c216-115">Tabular lists</span></span>
 
 <span data-ttu-id="4c216-116">V oddíle **Tabulkové seznamy** se stav fakturace rozděluje podobným způsobem jako dlaždice souhrnu: návrhy a odeslané ale neschválené seznamy.</span><span class="sxs-lookup"><span data-stu-id="4c216-116">In the **Tabular lists** section, the status of the invoicing is broken down in similar ways as the summary tiles: Draft and Submitted, not approved lists.</span></span> <span data-ttu-id="4c216-117">Ve stavu návrhu lze fakturu přijmout do workflowu nebo odstranit.</span><span class="sxs-lookup"><span data-stu-id="4c216-117">While in the Draft state, an invoice can be submitted to workflow or deleted.</span></span> <span data-ttu-id="4c216-118">Poslední tabulkový seznam je možnost pro vyhledání faktur.</span><span class="sxs-lookup"><span data-stu-id="4c216-118">The last tabular list is an option to find invoices.</span></span> <span data-ttu-id="4c216-119">Při hledání můžete filtrovat, což umožňuje rychlejší vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="4c216-119">You can filter as you search, to allow for faster searches.</span></span>
-<span data-ttu-id="4c216-120">Stránka seznamu všech faktur dodavatelů</span><span class="sxs-lookup"><span data-stu-id="4c216-120">All vendor invoices list page</span></span>
+
+<a name="all-vendor-invoices-list-page"></a><span data-ttu-id="4c216-120">Stránka seznamu všech faktur dodavatelů</span><span class="sxs-lookup"><span data-stu-id="4c216-120">All vendor invoices list page</span></span>
 -----------------------------
 
 <span data-ttu-id="4c216-121">Můžete zobrazit všechny zaúčtované a nezaúčtované faktury dodavatele na stránce seznamu **Faktury dodavatelské spolupráce**.</span><span class="sxs-lookup"><span data-stu-id="4c216-121">You can view all posted and unposted vendor invoices on the **Vendor collaboration invoices** list page.</span></span> <span data-ttu-id="4c216-122">Tuto stránku se seznamem můžete použít, chcete-li zobrazit stav platby faktur.</span><span class="sxs-lookup"><span data-stu-id="4c216-122">You can use this list page to view the payment status of the invoices.</span></span> <span data-ttu-id="4c216-123">Stavy plateb zahrnují nezaúčtované, nezaplacené, částečně zaplacené a plně zaplacené.</span><span class="sxs-lookup"><span data-stu-id="4c216-123">The payment statuses include Unposted, Unpaid, Partially paid, and Fully paid.</span></span>
