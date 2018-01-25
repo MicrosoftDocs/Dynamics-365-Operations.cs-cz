@@ -30,14 +30,14 @@ ms.lasthandoff: 11/06/2017
 > [!NOTE]
 > Tato funkce je podporována v aplikaci Dynamics 365 for Finance and Operations (verze 7.2 a novější).
 
-# <a name="introduction"></a>Úvod
+## <a name="introduction"></a>Úvod
 Toto téma popisuje, jak vložit sestavu Microsoft Power BI na kartě **Analýzy** v pracovním prostoru. V uvedeném příkladu rozšíříme pracovní prostor **Správa rezervací** v aplikaci Správa vozového parku na kartě **Analýzy** tak, aby zahrnovala analytický pracovní prostor.
 
-# <a name="prerequisites"></a>Požadavky
+## <a name="prerequisites"></a>Požadavky
 + Přístup k prostředí pro vývojáře, kde běží aktualizace Platform 8 nebo vyšší.
 + Analytická sestava (soubor .pbix) vytvořená pomocí Microsoft Power BI Desktop, která obsahuje datový model, jehož zdrojem je databáze úložiště Entity.
 
-# <a name="overview"></a>Přehled
+## <a name="overview"></a>Přehled
 Ať rozšíříte existující pracovní prostor aplikace nebo zadáte nový pracovní prostor, můžete použít vložené analytické zobrazení ke kvalifikovaným a interaktivním zobrazením vašich obchodních údajích. Proces přidání karty analytického pracovního prostoru má čtyři kroky.
 
 1. Přidejte soubor .pbix jako prostředek Dynamics 365.
@@ -48,7 +48,7 @@ Ať rozšíříte existující pracovní prostor aplikace nebo zadáte nový pra
 > [!NOTE]
 > Další informace o postupu vytváření analytických sestav naleznete v tématu [Úvod do práce s počítačem Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). Tato stránka je skvělý zdroj informací, které pomáhají vytvořit přinutit řešení generování analytických sestav.
 
-# <a name="add-a-pbix-file-as-a-resource"></a>Přidejte soubor .pbix jako prostředek
+## <a name="add-a-pbix-file-as-a-resource"></a>Přidejte soubor .pbix jako prostředek
 Dříve než začnete, musíte vytvořit nebo získat sestavu Power BI, kterou vložíte do pracovního prostoru. Další informace o postupu vytváření analytických sestav naleznete v tématu [Úvod do práce s počítačem Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
  
 Tento postup slouží k přidání souboru .pbix jako artefaktů projektu Visual Studio.
@@ -66,7 +66,7 @@ Tento postup slouží k přidání souboru .pbix jako artefaktů projektu Visual
   
 Poté, co jako prostředek Dynamics 365 nepřidáte .pbix soubor, můžete vložit sestavy pracovní prostory a přidat přímé odkazy pomocí položky nabídky.
 
-# <a name="add-a-tab-control-to-an-application-workspace"></a>Přidat ovládací prvek karty s pracovním prostorem aplikace
+## <a name="add-a-tab-control-to-an-application-workspace"></a>Přidat ovládací prvek karty s pracovním prostorem aplikace
 V tomto příkladu doporučujeme rozšířit pracovní prostor **řízení rezervací** v modelu Správa vozového parku přidáním karty **Analýzy** kartu pro definici formuláře **FMClerkWorkspace**.
  
 Následující obrázek znázorňuje, jak formulář **FMClerkWorkspace** vypadá v Návrháři v aplikaci Microsoft Visual Studio.
@@ -105,7 +105,7 @@ Poté, co jste přidali ovládací prvky formuláře, které budou použity pro 
  
 Nyní jste dokončili úlohu rozšíření definice formuláře aplikace. Další informace o tom, jak používáte rozšíření přizpůsobení naleznete v tématu [přizpůsobení: rozšíření a vrstvy](../extensibility/customization-overlayering-extensions.md).
 
-# <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Přidání obchodní logiky X ++ pro vložení ovládacího prvku prohlížeče
+## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Přidání obchodní logiky X ++ pro vložení ovládacího prvku prohlížeče
 Pomocí těchto kroků přidejte obchodní logiku, která inicializuje ovládací prvek prohlížeče sestav, který je vložen do pracovního prostoru **řízení rezervací**.
 
 1. Otevřete návrhář formuláře **FMClerkWorkspace** k rozšíření definice návrhu.
@@ -151,12 +151,12 @@ Nyní jste dokončili úkol přidání obchodní logiky v ovládacím prvku proh
 > [!NOTE]
 > Můžete zobrazit stávající operační zobrazení pomocí záložek pracovního prostor pod nadpisem stránky.
 
-# <a name="reference"></a>Odkaz
+## <a name="reference"></a>Odkaz
 
-## <a name="pbireporthelperinitializereportcontrol-method"></a>Metoda PBIReportHelper.initializeReportControl
+### <a name="pbireporthelperinitializereportcontrol-method"></a>Metoda PBIReportHelper.initializeReportControl
 Tento oddíl obsahuje informace o pomocnících třídy, která se používá k vložení do ovládacího prvku skupiny sestavy Power BI (zdroj .pbix).
 
-### <a name="syntax"></a>Syntaxe
+#### <a name="syntax"></a>Syntaxe
 ```
 public static void initializeReportControl(
      str                 _resourceName,
@@ -167,7 +167,7 @@ public static void initializeReportControl(
      List                _defaultFilters = new List(Types::Class))
 ```
 
-### <a name="parameters"></a>Parametry
+#### <a name="parameters"></a>Parametry
 
 | Jméno | popis |
 |---|---|

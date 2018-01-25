@@ -112,7 +112,7 @@ Při otevření stavebního bloku mají k tomuto stavebnímu bloku ostatní uži
 3.  Vyberte stavební blok a klikněte na tlačítko **Zrušit rezervaci**.
 4.  Kliknutím na tlačítko **Ano** zrušíte rezervaci stavebního bloku.
 
-# <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také
 
 [Finanční výkaznictví](financial-reporting-intro.md)
 

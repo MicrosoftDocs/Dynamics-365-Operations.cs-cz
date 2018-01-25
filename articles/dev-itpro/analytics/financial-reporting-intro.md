@@ -98,7 +98,7 @@ Následující součásti finančního výkaznictví umožňují snadné vytvá�
 </tbody>
 </table>
 
-#<a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také
 [Generování finanční sestavy](generate-financial-report.md)
 
 

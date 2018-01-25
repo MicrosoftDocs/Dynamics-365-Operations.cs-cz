@@ -53,10 +53,9 @@ Julie používá následující šablonu aplikace Excel k přípravě rozpočtu:
 
 [![Šablona aplikace Excel](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
 
-<a name="exercise-1-configuration"></a>Cvičení 1: Konfigurace
-=========================
+## <a name="exercise-1-configuration"></a>Cvičení 1: Konfigurace
 
-## <a name="task-1-create-organizational-hierarchy"></a>**Úkol 1: Vytvoření organizační hierarchie**
+### <a name="task-1-create-organizational-hierarchy"></a>**Úkol 1: Vytvoření organizační hierarchie**
 Protože se proces rozpočtování odehrává ve finančním oddělení, Julie potřebuje vytvořit velmi jednoduchou organizační hierarchii tvořenou pouze finančním oddělením. 1.1. Přejděte k Organizačním hierarchiím (Správa organizace &gt; Organizace &gt; Organizační hierarchie) a klikněte na tlačítko Nový
 
 ![Hierarchie organizace](./media/screenshot3.png) 
@@ -85,7 +84,7 @@ Protože se proces rozpočtování odehrává ve finančním oddělení, Julie p
 
 [![Datum platnosti](./media/screenshot9.png)](./media/screenshot9.png)
 
-## <a name="task-2-configure-user-security"></a>Úkol 2: Konfigurace zabezpečení pro uživatele
+### <a name="task-2-configure-user-security"></a>Úkol 2: Konfigurace zabezpečení pro uživatele
 Plánování rozpočtu používá zvláštní zásady zabezpečení pro konfiguraci přístupu k datům rozpočtových plánů. Julie musí udělit přístup k finančním plánům rozpočtu sama sobě. 
 
 2.1. Přepněte do kontextu právnické osoby DEMF. 
@@ -109,7 +108,7 @@ Plánování rozpočtu používá zvláštní zásady zabezpečení pro konfigur
 
 [![Udělení přístupu](./media/screenshot14.png)](./media/screenshot14.png)
 
-## <a name="task-3-create-scenarios"></a>Úkol 3: Vytvoření scénáře
+### <a name="task-3-create-scenarios"></a>Úkol 3: Vytvoření scénáře
 3.1. Přejděte do části Rozpočtování&gt;Nastavení &gt; Plánování rozpočtu &gt; Konfigurace plánování rozpočtu. Na stránce Scénáře si všimněte scénářů, které budeme později v tomto semináři používat: Skutečné hodnoty předchozího roku a Rozpočtováno 
 
 *Poznámka: pokud chcete, můžete pro toto cvičení vytvořit a používat nové scénáře.* 
@@ -118,7 +117,7 @@ Plánování rozpočtu používá zvláštní zásady zabezpečení pro konfigur
 
 *Poznámka: protože Julie nepoužívá formální schvalovací proces pro přípravu rozpočtu, přeskočíme v tomto semináři nastavení Workflowy, Fáze a Fáze workflowu a použijeme existující nastavení pro automatické schválení workflowu. Viz dodatek pro tuto konfiguraci workflow.*
 
-## <a name="task-4-create-budget-plan-columns"></a>Úkol 4: Vytvoření sloupců plánu rozpočtu
+### <a name="task-4-create-budget-plan-columns"></a>Úkol 4: Vytvoření sloupců plánu rozpočtu
 Sloupce plánu rozpočtu jsou buď peněžní, nebo množstevní sloupce, které lze použít v rozvržení dokumentu plánu rozpočtu. V našem příkladu je nutné vytvořit sloupec pro skutečné hodnoty předchozího roku a 12 sloupců představujících každý měsíc rozpočtu předchozího roku. Sloupce lze vytvářet buď kliknutím na tlačítko Přidat a zadáním hodnot, nebo využitím datové entity. V tomto semináři použijeme datovou entitu k vyplnění hodnot. 
 
 4.1. V části Rozpočtování&gt;Nastavení &gt; Plánování rozpočtu &gt; Konfigurace plánování rozpočtu otevřete stránku Sloupce. Klikněte na tlačítko Office v pravém horním rohu formuláře a vyberte Sloupce (nefiltrováno) 
@@ -151,7 +150,7 @@ Sloupce plánu rozpočtu jsou buď peněžní, nebo množstevní sloupce, které
 
 [![Obnovit](./media/screenshot23.png)](./media/screenshot23.png)
 
-## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Úkol 5: Vytváření rozvržení dokumentu plánu rozpočtu a šablon
+### <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Úkol 5: Vytváření rozvržení dokumentu plánu rozpočtu a šablon
 Rozvržení definuje, jakým způsobem bude mřížka řádků dokumentu plánu rozpočtu vypadat, až uživatel otevře dokument plánu rozpočtu. Dále je možné přepnout rozvržení dokumentu plánu rozpočtu, aby se zobrazila stejná data v různých úhlech. Protože Julie definovala sloupce pro použití s dokumentem plánu rozpočtu, potřebuje nyní vytvořit rozvržení dokumentu plánu rozpočtu, které bude vypadat podobně jako tabulka aplikace Excel, kterou používá k vytvoření dat rozpočtu (viz část Přehled scénáře v tomto semináři) 
 
 5.1. V části Rozpočtování&gt;Nastavení &gt; Plánování rozpočtu &gt; Konfigurace plánování rozpočtu otevřete stránku Rozložení. Vytvořte nové rozvržení pro měsíční položku rozpočtu:
@@ -171,7 +170,7 @@ Na základě definice rozložení plánu rozpočtu můžeme vytvořit šablonu a
 
 5.3. &lt; Nepovinný krok&gt; Upravte šablonu aplikace Excel, aby byla uživatelsky přívětivější – přidejte vzorce součtu, pole záhlaví, formátování atd. Uložte změny a odešlete soubor do rozvržení plánu rozpočtu kliknutím na možnost Rozvržení &gt; Odeslat [![Nahrát](./media/screenshot26.png)](./media/screenshot26.png)
 
-## <a name="task-6-create-a-budget-planning-process"></a>Úkol 6: Vytvoření procesu plánování rozpočtu
+### <a name="task-6-create-a-budget-planning-process"></a>Úkol 6: Vytvoření procesu plánování rozpočtu
 Julie potřebuje vytvořit a aktivovat nový procesu plánování rozpočtu spojením celého nastavení uvedeného výše, aby mohla začít zadávat plány rozpočtu. Proces plánování rozpočtu definuje, které rozpočtovací organizace workflow, rozvržení a šablony se použijí pro vytváření plánů rozpočtu. 
 
 6.1. Přejděte do Rozpočtování &gt; Nastavení &gt; Plánování rozpočtu &gt; Proces plánování rozpočtu a vytvořte nový záznam.
@@ -192,10 +191,9 @@ Julie potřebuje vytvořit a aktivovat nový procesu plánování rozpočtu spoj
 
 [![Aktivovat](./media/screenshot28.png)](./media/screenshot28.png)
 
-<a name="exercise-2-process-simulation"></a>Cvičení 2: Simulace procesu
-==============================
+## <a name="exercise-2-process-simulation"></a>Cvičení 2: Simulace procesu
 
-## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Úkol 7: Generování počátečních dat pro plán rozpočtu z hlavní knihy
+### <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Úkol 7: Generování počátečních dat pro plán rozpočtu z hlavní knihy
 7.1. Přejděte do Rozpočtování &gt; Periodicky &gt; Generovat plán rozpočtu z hlavní knihy. Zadejte parametry periodického procesu a klikněte na tlačítko Generovat. 
 
 [![Generovat](./media/screenshot29.png)](./media/screenshot29.png) 
@@ -208,7 +206,7 @@ Julie potřebuje vytvořit a aktivovat nový procesu plánování rozpočtu spoj
 
 [![Zobrazení plánu rozpočtu](./media/screenshot31.png)](./media/screenshot31.png)
 
-## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Úkol 8: Vytvoření rozpočtu pro aktuální rok podle skutečných hodnot předchozího roku
+### <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Úkol 8: Vytvoření rozpočtu pro aktuální rok podle skutečných hodnot předchozího roku
 Metody přidělení lze použít v plánu rozpočtu ke snadnému kopírování informací pro plány rozpočtu z jednoho scénáře do jiného / jejich rozdělení do období / přidělení k dimenzím. Použijeme přidělení k vytvoření rozpočtu pro aktuální rok ze skutečných hodnot předchozího roku. 
 
 8.1. Vyberte všechny řádky v mřížce dokumentu plánu rozpočtu a klikněte na tlačítko pro přidělení rozpočtu 
@@ -223,7 +221,7 @@ Skutečné částky z předchozího roku se zkopírují do aktuálního rozpočt
 
 [![Křivka prodeje](./media/screenshot34.png)](./media/screenshot34.png)
 
-## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Úkol 9: Úprava dokumentu plánu rozpočtu pomocí aplikace Excel a dokončení dokumentu
+### <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Úkol 9: Úprava dokumentu plánu rozpočtu pomocí aplikace Excel a dokončení dokumentu
 9.1. Klikněte na tlačítko list a otevřete obsah dokumentu v aplikaci Excel
 
 [![Excel](./media/screenshot35.png)](./media/screenshot35.png)
@@ -238,8 +236,7 @@ Skutečné částky z předchozího roku se zkopírují do aktuálního rozpočt
 
 Po dokončení workflowu se fáze dokumentu plánu rozpočtu změní na Schváleno. [![Schváleno](./media/screenshot38.png)](./media/screenshot38.png)
 
-<a name="appendix"></a>Dodatek
-========
+## <a name="appendix"></a>Dodatek
 
 ### <a name="auto-approve-workflow-configuration"></a>Konfigurace automatického schválení workflow
 
