@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f6a1bd580de0a2c40ce3a407c0fd056cae98bfee
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: 606f61814bcfc80dc1ef2f88f15fbd0d4a5cbb61
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -44,8 +44,7 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="28f51-118">Při zaúčtování dokumentu, který používá cizí měnu, jsou zaúčtovány všechny vzniklé kurzové rozdíly do konkrétních účtů hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="28f51-118">When you post a document that uses a foreign currency, any exchange rate differences that occur are posted to specific ledger accounts.</span></span>
 
-<a name="prerequisites"></a><span data-ttu-id="28f51-119">Požadavky</span><span class="sxs-lookup"><span data-stu-id="28f51-119">Prerequisites</span></span>
-=============
+## <a name="prerequisites"></a><span data-ttu-id="28f51-119">Požadavky</span><span class="sxs-lookup"><span data-stu-id="28f51-119">Prerequisites</span></span>
 
 <span data-ttu-id="28f51-120">Než budete moci použít tuto funkci, musíte nakonfigurovat systém.</span><span class="sxs-lookup"><span data-stu-id="28f51-120">Before you can use this functionality, you must configure the system.</span></span>
 
@@ -55,8 +54,7 @@ ms.lasthandoff: 11/03/2017
 4.  <span data-ttu-id="28f51-125">Nastavte rozdíl mezi závazky DPH a pohledávkami DPH a rozdíl protiúčtů ve skupinách zaúčtování hlavní knihy v možnostech **Daň** &gt; **Nastavení** &gt; **DPH** &gt; **Skupiny zaúčtování hlavní knihy**.</span><span class="sxs-lookup"><span data-stu-id="28f51-125">Set up sales tax receivable and sales tax payable difference and difference offset accounts in the ledger posting groups at **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Ledger posting groups**.</span></span>
 5.  <span data-ttu-id="28f51-126">Volitelné: Nastavte pravidlo výpočtu směnného kurzu pro pár měny v možnostech **Hlavní kniha** &gt; **Měny** &gt; **Pravidla výpočtu směnného kurzu pro páry měn**.</span><span class="sxs-lookup"><span data-stu-id="28f51-126">Optional: Set up an exchange rate calculation rule for a currency pair at **General ledger** &gt; **Currencies** &gt; **Exchange rate calculation rules for currency pairs**.</span></span> <span data-ttu-id="28f51-127">Pravidla výpočtu směnného kurzu se používají k převodu částek DPH pro prodejní faktury v cizí měně na částky DPH v cílové měně.</span><span class="sxs-lookup"><span data-stu-id="28f51-127">The exchange rate calculation rules are used to convert VAT amounts for foreign currency sales invoices to VAT amounts in a destination currency.</span></span>
 
-<a name="overview"></a><span data-ttu-id="28f51-128">Přehled</span><span class="sxs-lookup"><span data-stu-id="28f51-128">Overview</span></span>
-========
+## <a name="overview"></a><span data-ttu-id="28f51-128">Přehled</span><span class="sxs-lookup"><span data-stu-id="28f51-128">Overview</span></span>
 
 <span data-ttu-id="28f51-129">Po dokončení konfigurace systému pro použití směnných kurzů DPH, pokud je nutné zadat dokument nebo vytvořit objednávku používající cizí měnu, lze použít stránku **Transakce DPH** pro nastavení hodnoty **Datum rejstříku DPH** k vyzvednutí a nastavení výchozí hodnoty **Směnný kurz DPH**.</span><span class="sxs-lookup"><span data-stu-id="28f51-129">After you've configured the system to use VAT exchange rates, if you must enter a document or create an order that uses a foreign currency, you can use **Sales tax transactions** page to set the **Date of VAT register** value to pick up and set the default **Sales tax exchange rate** value.</span></span> <span data-ttu-id="28f51-130">Obě pole lze upravovat.</span><span class="sxs-lookup"><span data-stu-id="28f51-130">You can edit both fields.</span></span> <span data-ttu-id="28f51-131">Můžete také použít pole **Původ opravené částky (směnný kurz DPH)** nebo **Opravená částka DPH (směnný kurz DPH)** pro zadání skutečných částek DPH v místní měně, která je uvedena v externím dokumentu.</span><span class="sxs-lookup"><span data-stu-id="28f51-131">You can also use the **Adjusted amount origin (VAT exchange rate)** or **Adjusted sales tax amount (VAT exchange rate)** field to enter actual VAT amounts in the local currency that is stated in an external document.</span></span> <span data-ttu-id="28f51-132">Při kontrole účetnictví můžete zobrazit částky rozdílu DPH na stránce **Dílčí hlavní kniha**.</span><span class="sxs-lookup"><span data-stu-id="28f51-132">When you review the accounting, you can view sales tax difference amounts on the **Subledger journal** page.</span></span> <span data-ttu-id="28f51-133">Při zaúčtování dokumentu můžete zobrazit jakékoliv rozdíly v částkách DPH způsobené rozdílem mezi směnným kurzem měny DPH a směnným kurzem účetnictví vaší organizace, které jsou zaúčtovány do účtů hlavní knihy, které jste nakonfigurovali.</span><span class="sxs-lookup"><span data-stu-id="28f51-133">When a document is posted, for transactions that are posted to the general ledger accounts that you've configured, you can view any differences in sales tax amounts that are caused by the difference between the VAT currency exchange rate and the accounting currency exchange rate for your organization.</span></span>
 

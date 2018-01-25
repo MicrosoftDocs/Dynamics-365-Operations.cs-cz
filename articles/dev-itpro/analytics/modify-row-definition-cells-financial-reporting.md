@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 49b63216cc306553b2d3b7141f57f3c0581e1d5a
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: f3ed894445c44da6de9062da5c9399e867952d43
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 01/19/2018
 
 <span data-ttu-id="a3c54-104">Tento článek popisuje informace, které jsou nutné pro každou buňku v definici řádku ve finanční sestavě, a vysvětluje, jak tyto informace zadat.</span><span class="sxs-lookup"><span data-stu-id="a3c54-104">This article describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information.</span></span> 
 
-# <a name="specify-a-row-code-in-a-row-definition"></a><span data-ttu-id="a3c54-105">Určení kódu řádku v definici řádku</span><span class="sxs-lookup"><span data-stu-id="a3c54-105">Specify a row code in a row definition</span></span>
+## <a name="specify-a-row-code-in-a-row-definition"></a><span data-ttu-id="a3c54-105">Určení kódu řádku v definici řádku</span><span class="sxs-lookup"><span data-stu-id="a3c54-105">Specify a row code in a row definition</span></span>
 
 <span data-ttu-id="a3c54-106">V definicích řádku čísla nebo popisky v buňce **Kód řádku** identifikují každý řádek v definici řádku.</span><span class="sxs-lookup"><span data-stu-id="a3c54-106">In row definitions, the numbers or labels in the **Row Code** cell identify each line in the row definition.</span></span> <span data-ttu-id="a3c54-107">Kód řádku můžete zadat, jestliže se chcete odkazovat na data ve výpočtech nebo součtech.</span><span class="sxs-lookup"><span data-stu-id="a3c54-107">You can specify the row code to refer to data in calculations and totals.</span></span>
 
@@ -506,8 +506,7 @@ ms.lasthandoff: 01/19/2018
 4.  <span data-ttu-id="a3c54-709">Vyberte sadu, která má být odebrána, a klikněte na tlačítko **Odstranit**.</span><span class="sxs-lookup"><span data-stu-id="a3c54-709">Select the set to delete, and then click **Delete**.</span></span> <span data-ttu-id="a3c54-710">Kliknutím na tlačítko **Ano** trvale odstraňte sadu hodnot dimenze.</span><span class="sxs-lookup"><span data-stu-id="a3c54-710">Click **Yes** to permanently delete the dimension value set.</span></span>
 
 
-<a name="see-also"></a><span data-ttu-id="a3c54-711">Viz také</span><span class="sxs-lookup"><span data-stu-id="a3c54-711">See also</span></span>
---------
+## <a name="see-also"></a><span data-ttu-id="a3c54-711">Viz také</span><span class="sxs-lookup"><span data-stu-id="a3c54-711">See also</span></span>
 
 [<span data-ttu-id="a3c54-712">Finanční výkaznictví</span><span class="sxs-lookup"><span data-stu-id="a3c54-712">Financial reporting</span></span>](financial-reporting-intro.md)
 
