@@ -17,10 +17,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: d56f861dbbf579e44fcd3fc4d8b45c24029acecc
+ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
+ms.openlocfilehash: f9de2f79c68fead5ede714ff05bba97118874aad
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 02/06/2018
 
 ---
 # <a name="configure-a-worker-using-the-mobile-job-device"></a><span data-ttu-id="4e559-103">Konfigurace pracovníka s použitím mobilního pracovního zařízení</span><span class="sxs-lookup"><span data-stu-id="4e559-103">Configure a worker using the mobile job device</span></span>
@@ -68,5 +68,4 @@ ms.lasthandoff: 09/29/2017
 5. <span data-ttu-id="4e559-140">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="4e559-140">Click Edit.</span></span>
 6. <span data-ttu-id="4e559-141">V poli Výrobní jednotka lze nastavit výchozí filtr pro pracovníka.</span><span class="sxs-lookup"><span data-stu-id="4e559-141">In the Production unit field, you can set the default filter for the worker.</span></span> <span data-ttu-id="4e559-142">Tím bude zajištěno, že pouze výrobní práce pro vybrané výrobní jednotky se zobrazí v případě, že se pracovník přihlásí k zařízení.</span><span class="sxs-lookup"><span data-stu-id="4e559-142">This will ensure that only production jobs for the selected production unit are shown when the worker logs on to the device.</span></span>
 7. <span data-ttu-id="4e559-143">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="4e559-143">Close the page.</span></span>
-
 
