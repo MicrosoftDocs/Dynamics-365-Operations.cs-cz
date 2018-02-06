@@ -1,4 +1,4 @@
---- 
+---
 title: "Povolení procesu mezd pro čas a docházku"
 description: "Tento postup popisuje, jak povolit mzdový proces pro čas a docházku."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -68,5 +68,4 @@ Tento postup popisuje, jak povolit mzdový proces pro čas a docházku. K vytvo
 6. Rozbalte položku Časová registrace.
 7. Klikněte na položku Upravit.
 8. V poli Platební smlouva zadejte nebo vyberte hodnotu.
-
 

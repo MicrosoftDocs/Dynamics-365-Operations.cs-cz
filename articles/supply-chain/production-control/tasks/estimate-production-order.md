@@ -1,4 +1,4 @@
---- 
+---
 title: "Odhad výrobní zakázky"
 description: "Tento proces můžete spustit pomocí ukázkových dat společnosti USMF nebo pomocí sady vlastních dat."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -42,5 +42,4 @@ Tento proces můžete spustit pomocí ukázkových dat společnosti USMF nebo po
 1. V podokně akcí klikněte na možnost Spravovat náklady.
 2. Klepněte na Zobrazit podrobnosti výpočtu.
     * Na této stránce se zobrazuje rozúčtování nákladů. Například v prvním řádku můžete zobrazit celkovou cenu nákladů za jednotku hotového výrobku. Následující řádky obsahují náklady na základě kusovníku, výrobního postupu a nepřímých nákladů.  
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Spuštění výrobní zakázky"
 description: "Tento postup ukazuje, jak začít výrobní zakázku v dílenském řízení."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -70,5 +70,4 @@ Tento postup ukazuje, jak začít výrobní zakázku v dílenském řízení. V 
 7. Klikněte na položku Zaúčtovat.
 8. Klikněte na tlačítko OK.
     * V deníku karet postupu je zaznamenáván čas strávený na jednotlivých operacích. Může být rovněž uvedeno dobré a chybné množství.  
-
 

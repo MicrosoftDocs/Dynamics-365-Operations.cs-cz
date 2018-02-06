@@ -1,4 +1,4 @@
---- 
+---
 title: "Vytvoření výrobní zakázky"
 description: "Tato procedura popisuje způsob vytváření výrobní zakázky."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -69,5 +69,4 @@ Tato procedura popisuje způsob vytváření výrobní zakázky. K vytvoření 
     * Změna času zpracování se projeví na odhadované spotřebě a nákladech výrobní zakázky.  
 6. Klikněte na položku Uložit.
 7. Zavřete stránku.
-
 
