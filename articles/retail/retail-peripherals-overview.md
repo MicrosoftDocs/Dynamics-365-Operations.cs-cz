@@ -1,6 +1,7 @@
 ---
 title: "Přehled maloobchodních periferních zařízení"
 description: "Toto téma vysvětluje pojmy související s maloobchodními periferními zařízeními."
+author: rubencdelgado
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article

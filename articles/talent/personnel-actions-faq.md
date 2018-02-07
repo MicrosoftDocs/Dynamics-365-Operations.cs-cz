@@ -1,7 +1,7 @@
 ---
 title: "Akce personálu [Nejčastější dotazy]"
 description: "Toto téma obsahuje odpovědí na možné otázky, pokud vaše organizace používá akce personálu. Akce personálu jsou další kroky, které je třeba splnit při provádění určité úlohy týkající se personálu."
-author: shielas
+author: ShielaSogge
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article

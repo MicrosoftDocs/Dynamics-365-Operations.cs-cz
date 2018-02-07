@@ -1,7 +1,7 @@
 ---
 title: "Sloučit dávky skladových zásob"
 description: "Tento článek obsahuje informace o způsobu sloučení dvou nebo více skladových dávek na sloučenou dávku."
-author: perlynne
+author: pjacobse
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

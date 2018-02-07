@@ -1,7 +1,7 @@
 --- 
 title: "Uvolnění produktu / základního produktu právnickým osobám"
 description: "Tato procedura vás provede způsobem uvolnění produktu nebo základního produktu pro jednu nebo více právnických osob."
-author: josaw1
+author: BibiSp
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
