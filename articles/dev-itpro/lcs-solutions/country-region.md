@@ -8,6 +8,7 @@ ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3d3ad89f80c3e3f42e117109f4a76232795b7d64
-ms.openlocfilehash: 9322b970eea9ab5ac01ae8461285b4dbcc1624a3
+ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
+ms.openlocfilehash: 1cb4305b3ef425ec19ae63c8186bffef212b9890
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/23/2018
 
 ---
 
@@ -46,7 +47,7 @@ Následující zdroje obsahují informace o plánovaných a nových lokalizačn�
 
 ### <a name="localization-updates"></a>Lokalizační aktualizace
 -   [Lokalizační portál](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (aktualizováno týdně)
--   [Hledání problémů LCS](../lifecycle-services/issue-search-lcs.md) (aktualizováno denně))
+-   [Hledání problémů LCS](../lifecycle-services/issue-search-lcs.md) (aktualizováno denně)
 
 ### <a name="communication-and-alerts"></a>Komunikace a výstrahy
 -   [Sledování předpisů a komunikace nových informací o předpisech](regulatory-watch-communication.md)
@@ -162,7 +163,7 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 - [Úprava ID faktur na prodejních objednávkách](../../financials/localizations/emea-edit-invoice-id-sales-orders.md)
 - [Vstupní certifikáty EU](../../financials/localizations/emea-entry-certificates.md)
 - [Souhrnné hlášení EU](../../financials/localizations/emea-eu-sales-list.md)
-- [Úpravy kurzů](../../financials/localizations/emea-exchange-rate-adjustments.md)
+- [Vyrovnání kurzových rozdílů](../../financials/localizations/emea-exchange-rate-adjustments.md)
 - [Formáty souboru pro metody platby](../../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md)
 - [Vyřazení dlouhodobého majetku pro Estonsko a Litvu](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
 - [Import souborů ISO20022](../../financials/localizations/emea-ISO20022-file-formats.md)
@@ -275,6 +276,8 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 
 ### <a name="norway"></a>Norsko
 
+-   [Registrační pokladny pro Norsko](../../retail/localizations/emea-nor-cash-registers.md)
+-   [Pokyny k nasazení registračních pokladen pro Norsko](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
 -   [Formát importu Nets](../../financials/localizations/emea-nor-nets-import-format.md)
 -   [Výpis DPH](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
 

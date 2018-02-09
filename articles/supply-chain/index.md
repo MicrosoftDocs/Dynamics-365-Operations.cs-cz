@@ -3,7 +3,7 @@ title: "Domovská stránka správy dodavatelsko-odběratelského řetězce"
 description: "Toto téma obsahuje seznam témat nápovědy a další zdroje pro funkce správy dodavatelsko-odběratelského řetězce v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 01/10/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 98008b494f675209949afd961e3cd06dfdc9ec9a
-ms.openlocfilehash: 81a5d21233f12e7c26f0cce6a6c05fefde2ca7dd
+ms.sourcegitcommit: 6c193a3a9deba215d4374ccffc3bf2d854fbd0f2
+ms.openlocfilehash: 9314a129b85cf6cb2d2ca379eafc142ce234d535
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/22/2018
 
 ---
 
@@ -52,9 +52,12 @@ Vyberte oblast funkce, o které chcete získat informace.
 
 ## <a name="videos"></a>Videa
 
-### <a name="get-started"></a>Začínáme  
+Tato krátká videa vám představí nové funkce, které přináší aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (prosinec 2017).
 
-Tato krátká videa vám pomohou začít používat nové funkce, které přináší aktualizace aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017).
+-  [Možnost integrace hotovosti](https://youtu.be/AVV9x5x-XCg) 
+-  [Poradce při optimalizaci](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+
+Tato krátká videa vám představí nové funkce, které přináší aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017).
 
 -  [Začínáme s modulem Nákladové účetnictví](https://youtu.be/1pUDtJQZ8FU)
 -  [Mobilní pracovní prostor kontroly nákladů](https://youtu.be/imsuTg8rUVk)
@@ -62,8 +65,7 @@ Tato krátká videa vám pomohou začít používat nové funkce, které přiná
 -  [Schválení nákupních objednávek na mobilním zařízení](https://youtu.be/gZ-gOlJe7H8)
 -  [Vizuální plánování s Ganntovým diagramem pro výrobu a dávkové objednávky](https://youtu.be/BtbuShkGj4I)
 
-### <a name="tech-conference-recordings"></a>Nahrávky z technické konference
-Většina těchto nahrávek se zabývá funkcionalitou produktu v předchozí verzi aplikace Finance and Operations, ale stále platí stejné koncepty a postupy jsou ve stávající verzi podobné. 
+Tyto nahrávky z technické konference se zabývají funkcionalitou produktu v předchozí verzi aplikace Finance and Operations, ale stále platí stejné koncepty a postupy jsou ve stávající verzi podobné. 
 
 -  <a href="https://youtu.be/zotrj3SbCl4">Konfigurátor produktu v aplikaci Microsoft Dynamics AX</a>
 -  <a href="https://youtu.be/7v8BPmEs9Dg">Hlavní plánování – tipy a triky pro řešení problémů s výkonem</a>
