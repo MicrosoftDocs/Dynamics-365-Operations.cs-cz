@@ -112,8 +112,9 @@
 #### [Přechod z překrývání vrstev na rozšíření](extensibility/migrate-overlayer-extension.md)
 #### [Přizpůsobení prvků modelu s použitím rozšíření (kurz)](extensibility/customize-model-elements-extensions.md)
 #### [Přizpůsobení: překrývání vrstev a rozšíření](extensibility/customization-overlayering-extensions.md)
-### Co je nového
-#### [Změny rozšiřitelnosti - červenec 2017](extensibility/changes-july-2017.md)
+### Novinky
+#### [Změny rozšiřitelnosti – červenec 2017](extensibility/changes-july-2017.md)
+#### [Změny rozšiřitelnosti v aplikaci Dynamics 365 for Finance and Operations, Enterprise Edition 7.3](extensibility/extensibility-changes-73.md)
 ### Základy
 #### [Narušující přizpůsobení](extensibility/intrusive-customizations.md)
 #### [Rozšíření tříd](extensibility/class-extensions.md)
@@ -138,12 +139,17 @@
 #### [Úprava vlastností ovládacího prvku formuláře](extensibility/modify-control-properties.md)
 #### [Změna popisku](extensibility/change-label.md)
 #### [Rozšíření rozsahu číselné řady](extensibility/extend-number-sequence-scope.md)
+#### [Přidání nové dimenze zásob](extensibility/inventory-dimensions.md)
+#### [Změny rozšiřitelnosti cen a slev](extensibility/pricing-app73.md)
+#### [Rozšíření mapy tabulek](extensibility/map-extensions.md)
+#### [Rozšíření map tabulek používaných jako rozhraní](extensibility/maps-as-interfaces.md)
+#### [Rozšíření map tabulek používaných pro správu verzí](extensibility/maps-with-versioning.md)
 
 
 
 
 ## Výkonnost
-### [Sledování pomocí analyzátoru sledování](perf-test/trace-trace-tutorial.md)
+### [Sledování pomocí Trace parser](perf-test/trace-trace-tutorial.md)
 ### [PerfSDK a testování více uživatelů pomocí služby Visual Studio Team Services](perf-test/perfsdk-tutorial.md)
 ### [Diagnostika problémů a analýza problémů s výkonem pomocí analyzátoru sledování](perf-test/trace-parser.md)
 ### [Časovač výkonu](perf-test/performance-timer.md)
@@ -337,7 +343,7 @@
 #### [Typ NavigationArgs](mobile-apps/platform/client-apis/interfaces/view-model-ipage-inavigationargs.md)
 #### [Typ NumberSequenceConfig](mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md)
 #### [Typ Page](mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipage.md)
-#### [Typ PageData](mobile-apps/platform/client-apis/interfaces/services-business-logic-services-ipagedata.md)).
+#### [Typ PageData](mobile-apps/platform/client-apis/interfaces/services-business-logic-services-ipagedata.md).
 #### [Typ PageLink](mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelink.md)
 #### [Typ PageLinkDesign](mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md)
 #### [Typ PageLinkMetadata](mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md)
@@ -523,16 +529,16 @@
 
 # [Upgrade a migrace](migration-upgrade/upgrade-home-page.md)
 ## [Upgrade z aplikace AX 2012 na aplikaci Dynamics 365 for Finance and Operations](migration-upgrade/upgrade-overview-2012.md)
-### [Analýza - Použití nástroje Upgrade Analyzer pro plánování upgradu](migration-upgrade/upgrade-analyzer-tool.md)
-### [Analýza – Použití služby Upgrade kódu pro odhad úsilí k upgradu kódu](migration-upgrade/analyze-code-upgrade.md)
-### [Analýza - Nasazení prostředí sandbox](migration-upgrade/analysis-sandbox.md)
-### [Upgrade - Upgrade dat ve vývojovém prostředí](migration-upgrade/data-upgrade-2012.md)
-### [Upgrade - Úlohy upgradu dat v aplikaci AX 2012](migration-upgrade/prepare-data-upgrade.md)
-### [Upgrade - Upgrade dat v prostředí sandbox](migration-upgrade/upgrade-data-sandbox.md)
-### [Ověřování - Přechodové testování](migration-upgrade/upgrade-cutover-testing.md)
-### [Ověřování - Úlohy k provedení po upgradu](migration-upgrade/app-validation-process.md)
-### [Ověřování - Funkční testování](migration-upgrade/upgrade-functional-validation.md)
-### [Ověřování - Příprava pro ostré nasazení](migration-upgrade/upgrade-go-live-prep.md)
+### [Upgrade AX 2012 – použití nástroje Upgrade Analyzer pro plánování](migration-upgrade/upgrade-analyzer-tool.md)
+### [Upgrade AX 2012 – použití služby upgradu kódu pro odhad úsilí](migration-upgrade/analyze-code-upgrade.md)
+### [Upgrade AX 2012 – nasazení prostředí sandbox](migration-upgrade/analysis-sandbox.md)
+### [Upgrade AX 2012 – upgrade dat ve vývojovém prostředí](migration-upgrade/data-upgrade-2012.md)
+### [Upgrade AX 2012 – úlohy upgradu dat v aplikaci AX 2012](migration-upgrade/prepare-data-upgrade.md)
+### [Upgrade AX 2012 – upgrade dat v prostředí sandbox](migration-upgrade/upgrade-data-sandbox.md)
+### [Upgrade AX 2012 – přechodové testování](migration-upgrade/upgrade-cutover-testing.md)
+### [Upgrade AX 2012 – úkoly k dokončení po upgradu](migration-upgrade/app-validation-process.md)
+### [Upgrade AX 2012 – úspěšný funkční test](migration-upgrade/upgrade-functional-validation.md)
+### [Upgrade AX 2012 – příprava pro ostré nasazení](migration-upgrade/upgrade-go-live-prep.md)
 
 
 ### Změny ovlivňující upgrade z aplikace AX 2012
@@ -591,8 +597,10 @@
 ### [Přehled dávkového serveru](sysadmin/batch-server-overview.md)
 ### [Vytvoření dávkové úlohy](sysadmin/tasks/create-batch-job.md)
 
+## [Vytvoření pravidel pro poradce při optimalizaci](sysadmin/optimization-advisor.md)
+
 # Lifecycle Services
-## [Přehled služeb Lifecycle Services](lifecycle-services/lcs.md)
+## [Přehled služby Lifecycle Services](lifecycle-services/lcs.md)
 ### [LCS pro zákazníky](lifecycle-services/lcs-works-lcs.md)
 ### [LCS pro partnery](lifecycle-services/getting-started-lcs.md)
 ### [Novinky](lifecycle-services/whats-new-lcs.md)
