@@ -1,7 +1,7 @@
 ---
 title: Metody platby
 description: "Každý typ platby, kterou prodejce přijímá, musí být nakonfigurován při nastavení systému. Tento článek popisuje typy plateb, které lze nastavit, a také proces jejich nastavení."
-author: MargoC
+author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

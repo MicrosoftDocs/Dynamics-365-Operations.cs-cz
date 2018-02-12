@@ -36,8 +36,7 @@ Toto téma popisuje, jak definovat a konfigurovat názvy polí aplikace skladu a
 
 **Poznámka:** Toto téma se vztahuje k funkcím v modulu Řízení skladu. Nevztahuje se na funkce v modulu Řízení zásob. Finance and Operations - Warehousing je aplikace, která slouží k provádění úloh skladu. Je možné definovat a konfigurovat názvy polí použitých v aplikaci, jakož i konfigurovat priority, do kterých by měly být přiřazeny názvy polí. Toto téma vysvětluje, jak definovat a konfigurovat tyto názvy polí aplikace skladu a priority, a zároveň způsob jejich použití v aplikaci Finance and Operations - Warehousing. Podrobné informace o konfiguraci připojení k aplikac Finance and Operations - Warehousing naleznete v kurzu [Instalace a konfigurace aplikace Finance and Operations - Warehousing](install-configure-warehousing-app.md).
 
-<a name="configure-warehouse-app-field-names"></a>Konfigurace názvů polí aplikace skladu
-===================================
+## <a name="configure-warehouse-app-field-names"></a>Konfigurace názvů polí aplikace skladu
 
 Použijete-li aplikaci Finance and Operations - Warehousing na svém mobilním zařízení, můžete nakonfigurovat, jakým způsobem se zobrazí metadata na vašem zařízení na stránce **Názvy polí aplikace skladu**. V nové společnosti v aplikaci Finance and Operations vyberte možnost **Vytvořit výchozí nastavení** pro vygenerování názvů všech polí, které budou použity ve workflow skladu na mobilním zařízení, přiřaďte jim upřednostňovaný vstupní režim a typ vstupu. Po vygenerování všech názvů polí můžete vybrat následující možnosti vstupu.
 
@@ -70,8 +69,7 @@ Použijete-li aplikaci Finance and Operations - Warehousing na svém mobilním z
 </tbody>
 </table>
 
-<a name="configure-warehouse-app-field-priority"></a>Konfigurace priority pole aplikace skladu
-======================================
+## <a name="configure-warehouse-app-field-priority"></a>Konfigurace priority pole aplikace skladu
 
 Na stránce **Priorita pole aplikace skladu** můžete umístit názvy polí do různých skupin priority. Díky tomu je možné se rozhodnout, jaké informace mají být zobrazeny na hlavní stránce úloh, když pracovníci skladu provádět úlohy pomocí této aplikace. Pokud klikněte na možnost **Vytvořit výchozí nastavení**, vygeneruje se výchozí sada skupin priority. Je možné vytvořit libovolný počet skupin priority podle potřeby, ale pouze tři skupiny priorit se zobrazí na stránce úloh. Když odesílá aplikace Finance and Operations metadata do aplikace, přiřadí každému poli relativní prioritu v závislosti na skupině priority, a aplikace zobrazí první tři skupiny priority obsažené v metadatech na stránce úloh. Zbývající metadata se zobrazí na sekundární stránce podrobností. V následující tabulce je uveden příklad pěti skupin priority.
 

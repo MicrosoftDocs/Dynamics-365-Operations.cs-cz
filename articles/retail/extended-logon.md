@@ -34,8 +34,7 @@ ms.lasthandoff: 11/03/2017
 
 Toto téma zahrnuje možnosti pro nastavení rozšířeného přihlášení pro systém Cloud POS a Retail Modern POS (MPOS).
 
-<a name="setting-up-extended-logon"></a>Nastavení rozšířeného přihlášení
-=========================
+## <a name="setting-up-extended-logon"></a>Nastavení rozšířeného přihlášení
 
 Nastavení masek čárových kódů najdete v části **Maloobchod** &gt; **Instalace kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Funkční profily**. Pevná záložka **Funkce** obsahuje následující volby, které se vztahují k rozšířenému přihlašování.
 
@@ -55,23 +54,19 @@ Pokud je aktivní možnost **Přihlášení zaměstnance kartou**, mohou se prac
 
 Pokud je povolena možnost **Přihlášení zaměstnance pomocí karty vyžaduje heslo.**, přihlášení zaměstnance kartou vybere pouze pracovníky, kterým je přiřazeno rozšířené přihlášení, která je uvedeno. Když je toto políčko zaškrtnuto, zaměstnanci musí i nadále zadávat své heslo.
 
-<a name="assigning-an-extended-logon"></a>Přiřazení rozšířeného přihlášení
-===========================
+## <a name="assigning-an-extended-logon"></a>Přiřazení rozšířeného přihlášení
 
 Ve výchozím nastavení pouze manažeři mohou přiřadit rozšířené přihlášení zaměstnancům. Chcete-li přiřadit rozšířené přihlášení, přejděte na **Rozšířené přihlášení** v POS. Pak vyhledejte pracovníka zadáním jeho ID operátora do vyhledávacího pole. Vyberte pracovníka a klikněte na možnost **Přiřadit**. Na další stránce protáhněte nebo naskenujte rozšířené přihlášení pro přiřazení pracovníka. Pokud je protáhnutí nebo naskenování úspěšné, tlačítko **OK** bude k dispozici. Klepněte na tlačítko **OK** pro uložení rozšířeného přihlášení pro tohoto pracovníka.
 
-<a name="deleting-an-extended-logon"></a>Odstranění rozšířeného přihlášení
-==========================
+## <a name="deleting-an-extended-logon"></a>Odstranění rozšířeného přihlášení
 
 Pokud chcete odstranit rozšířené přihlášení přiřazené k pracovníkovi, vyhledejte pracovníka pomocí operace **Rozšířené přihlášení**. Vyberte pracovníka a klikněte na možnost **Zrušit přiřazení**. Budou odebrány všechny rozšířené přihlašovací údaje, které jsou přidruženy k danému pracovníkovi.
 
-<a name="extending-extended-logon"></a>Rozšíření rozšířeného přihlášení
-========================
+## <a name="extending-extended-logon"></a>Rozšíření rozšířeného přihlášení
 
 Službu pro přihlášení lze rozšířit o podporu dalších zařízení pro rozšířené přihlášení, jako jsou čtečky dlaní. Další informace naleznete v dokumentaci k rozšíření služby POS.
 
-<a name="using-extended-logon"></a>Používání rozšířeného přihlášení
-====================
+## <a name="using-extended-logon"></a>Používání rozšířeného přihlášení
 
 Jakmile je rozšířené přihlášení nakonfigurováno a pracovník má přiřazen čárový kód nebo magnetický proužek, pracovníkovi stačí pouze protáhnout nebo naskenovat svoji kartu po zobrazení přihlašovací stránky POS. Je-li ke zpracování přihlášení nutné také heslo, pracovník je vyzván k zadání svého hesla.
 

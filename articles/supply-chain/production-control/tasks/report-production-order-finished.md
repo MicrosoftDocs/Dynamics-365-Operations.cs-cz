@@ -1,4 +1,4 @@
---- 
+---
 title: "Ohlášení výrobní zakázky jako dokončené"
 description: "Tato procedura popisuje způsob nahlásit výrobní zakázky jako dokončenou."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -50,5 +50,4 @@ Tato procedura popisuje způsob nahlásit výrobní zakázky jako dokončenou. K
 3. Označte v seznamu vybraný řádek.
 4. Klikněte na odkaz na vybraném řádku v seznamu.
     * Je zaúčtován Deník dokončené výroby. Podle potřeby můžete v deníku provádět úpravy, můžete ručně vytvořit nový deník, kde můžete provádět změny.  
-
 

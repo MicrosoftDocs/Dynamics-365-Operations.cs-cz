@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -43,7 +44,7 @@ Můžete přidělovat nebo distribuovat peněžní částky na jeden či na víc
 
 [![Obchodní proces](./media/GL-process.PNG)](./media/GL-process.PNG)
 
-# <a name="sales-tax"></a>DPH
+## <a name="sales-tax"></a>DPH
 Každá společnost shromažďuje a odvádí daně různým finančním úřadům. Pravidla a sazby se liší v jednotlivých zemích/regionech, státech, krajích a městech.
 Kromě toho pravidla musí být aktualizována pravidelně, když finanční úřad změní jejich požadavky. Kódy DPH obsahují základní informace o způsobu výběru a odvádění daní finančním úřadům. Při nastavení daňových kódů je třeba definovat částky nebo procentuální hodnoty, které musí být vybrány. Můžete také definovat různé metody, podle kterých se tyto částky nebo procentuální sazby uplatní na transakční částky. Témata v tomto oddílu poskytují informace o způsobu nastavení kódů DPH pro metody a sazby, které váš finanční úřad vyžaduje.
 
@@ -52,13 +53,13 @@ Kromě toho pravidla musí být aktualizována pravidelně, když finanční ú�
  - [Platby DPH a pravidla zaokrouhlení](round-sales-tax-payments.md)
 
 
-### <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další zdroje
 
-#### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
+### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
 
 Přejděte na [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) a zjistěte, jaké nové funkce se vydávají a jaké se chystají. 
 
-#### <a name="blogs"></a>Blogy
+### <a name="blogs"></a>Blogy
 
 Názory, novinky a jiné informace o modulu Závazky a jiných řešeních naleznete v [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
@@ -66,10 +67,10 @@ Existuje mnoho příspěvků o modulu Hlavní kniha na [blogu týmu produktu Mic
 
 [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci MBS Operations.
 
-#### <a name="task-guides"></a>Průvodci záznamem úloh
+### <a name="task-guides"></a>Průvodci záznamem úloh
 V aplikaci Finance and Operations je k dispozici další nápověda v podobě průvodců záznamem úloh. Průvodce záznamem úloh zobrazíte kliknutím na tlačítko Nápověda na kterékoliv stránce.
 
-#### <a name="videos"></a>Videa
+### <a name="videos"></a>Videa
 
 Prohlédněte si instruktážní videa, která jsou nyní k dispozici na kanálu [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 

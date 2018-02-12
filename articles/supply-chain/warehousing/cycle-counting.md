@@ -137,7 +137,7 @@ K rozdílům v cyklické inventuře dojde, pokud nastavíte možnost **Je superv
 
 Můžete upravit rozdíly ve vypočítané hodnotě, a poté potvrdit vypočítanou hodnotu na stránce **Cyklická inventura čeká na kontrolu**. Upravený počet položek lze ověřit na stránce **Množství na skladě podle skladového místa**. Hodnota inventury bude odmítnuta, pokud rozdíl nelze schválit.
 
-# <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také
 [Konfigurace mobilních zařízení pro práci ve skladu](configure-mobile-devices-warehouse.md)
 
 

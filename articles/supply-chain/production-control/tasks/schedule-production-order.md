@@ -1,4 +1,4 @@
---- 
+---
 title: "Naplánování výrobní zakázky"
 description: "Tato procedura popisuje způsob plánování výrobní zakázky."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -53,5 +53,4 @@ Tato procedura popisuje způsob plánování výrobní zakázky. K vytvoření 
     * Na stránce Vytížení kapacity se zobrazí kapacita rezervovaná pomocí plánování práce, celkový počet hodin, které jsou aktuálně rezervovány u prostředku a počet hodin, které jsou nadále k dispozici pro plánování úlohy u prostředku.  
 6. Zavřete stránku.
 7. Zavřete stránku.
-
 

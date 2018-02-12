@@ -31,14 +31,14 @@ ms.lasthandoff: 12/18/2017
 
 Toto téma popisuje obsah Microsoft Power BI **Skutečnost a rozpočet**. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu. 
 
-# <a name="overview"></a>Přehled
+## <a name="overview"></a>Přehled
 
 Obsah Power BI **Skutečnost a rozpočet** byl vytvořen pro uživatele, kteří odpovídají za sledování a porovnávání skutečných výsledků s rozpočtem v rámci organizace. Obsah Power BI **Skutečnost a rozpočet** usnadňuje kontrolu odchylek rozpočtu. Můžete analyzovat rozpočet pro aktuální rok podle kategorie účtu, kódu rozpočtu, hlavního účtu, popisu hlavního účtu nebo fiskálního období a získat užitečné informace o příčinách odchylek. 
 
-# <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
+## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 Sestavy z obsahu Power BI **Skutečnost a rozpočet** se zobrazují v pracovních prostorech **Rozpočty hlavní knihy a prognózy** a **CFO**.
 
-# <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
 Následující tabulka obsahuje podrobnosti o metrikách, které jsou k dispozici na každé stránce sestavy obsahu Power BI **Skutečnost a rozpočet**.
 
 | Sestava                      | Metrika |
@@ -50,7 +50,7 @@ Následující tabulka obsahuje podrobnosti o metrikách, které jsou k dispoz
 | Čistý příjem                  | <ul><li>Čistý příjem za tento rok</li><li>Cílová výše čistého příjmu podle rozpočtu </li><ul> |
 
 
-# <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
+## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
 
 | Celek                    | Obsah |
 |---------------------------|----------|

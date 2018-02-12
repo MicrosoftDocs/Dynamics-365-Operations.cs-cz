@@ -1,7 +1,7 @@
 ---
 title: "Součásti finančních sestav"
 description: "Tento článek popisuje způsob použití komponent nebo stavebních bloků z definic sestavy ve finančních sestavách. Tyto stavební bloky zahrnují definice řádku, definice sloupce a definice stromu výkaznictví. Tento článek vysvětluje způsob uspořádání a uzamčení stavebních bloků a způsob, jak pracovat se skupinami stavebních bloků."
-author: aolson
+author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
@@ -112,7 +112,7 @@ Při otevření stavebního bloku mají k tomuto stavebnímu bloku ostatní uži
 3.  Vyberte stavební blok a klikněte na tlačítko **Zrušit rezervaci**.
 4.  Kliknutím na tlačítko **Ano** zrušíte rezervaci stavebního bloku.
 
-# <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také
 
 [Finanční výkaznictví](financial-reporting-intro.md)
 

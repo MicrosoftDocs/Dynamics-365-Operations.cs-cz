@@ -69,4 +69,3 @@ Tento postup popisuje způsob přiřazení správných rolí uživatelskému ú�
 6. V poli Výrobní jednotka lze nastavit výchozí filtr pro pracovníka. Tím bude zajištěno, že pouze výrobní práce pro vybrané výrobní jednotky se zobrazí v případě, že se pracovník přihlásí k zařízení.
 7. Zavřete stránku.
 
-

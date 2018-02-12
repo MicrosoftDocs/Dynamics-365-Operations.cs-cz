@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 Tento článek popisuje informace, které jsou nutné pro každou buňku v definici řádku ve finanční sestavě, a vysvětluje, jak tyto informace zadat. 
 
-# <a name="specify-a-row-code-in-a-row-definition"></a>Určení kódu řádku v definici řádku
+## <a name="specify-a-row-code-in-a-row-definition"></a>Určení kódu řádku v definici řádku
 
 V definicích řádku čísla nebo popisky v buňce **Kód řádku** identifikují každý řádek v definici řádku. Kód řádku můžete zadat, jestliže se chcete odkazovat na data ve výpočtech nebo součtech.
 
@@ -506,8 +506,7 @@ Sada hodnot dimenze je pojmenovaná skupina hodnot dimenze. Sada hodnot dimenze 
 4.  Vyberte sadu, která má být odebrána, a klikněte na tlačítko **Odstranit**. Kliknutím na tlačítko **Ano** trvale odstraňte sadu hodnot dimenze.
 
 
-<a name="see-also"></a>Viz také
---------
+## <a name="see-also"></a>Viz také
 
 [Finanční výkaznictví](financial-reporting-intro.md)
 

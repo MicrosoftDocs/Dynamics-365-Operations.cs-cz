@@ -1,4 +1,4 @@
---- 
+---
 title: "Příprava kanbanové úlohy procesu, když pro pracovní buňku jsou k dispozici materiály"
 description: "Tento úkol se zaměřuje na přípravu zpracování kanbanové úlohy, pokud jsou všechny materiály k dispozici pro pracovní buňku."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -40,5 +40,4 @@ Tento úkol se zaměřuje na přípravu zpracování kanbanové úlohy, pokud js
     * Pokud je vybráno více úloh, výdejky zobrazí součet všech položek, které jsou potřebné pro vybrané úlohy.  
 6. Klepněte na Připravit.
     * Proces přípravy je dokončen. Označení pole pro všechny řádky výdejky označuje, že je vybrán stav dodání.  
-
 

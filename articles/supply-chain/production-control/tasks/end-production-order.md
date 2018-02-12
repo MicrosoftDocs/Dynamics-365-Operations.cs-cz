@@ -1,4 +1,4 @@
---- 
+---
 title: "Ukončení výrobní zakázky"
 description: "Tato procedura popisuje způsob ukončení výrobní zakázky."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -46,5 +46,4 @@ Tato procedura popisuje způsob ukončení výrobní zakázky. K vytvoření to
 1. V podokně akcí klikněte na možnost Spravovat náklady.
 2. Klikněte na Zobrazit porovnání nákladů.
     * Po ukončení výrobní zakázky budete mít můžete porovnat odhadovanou cenu nákladu proti skutečné ceně nákladů, abyste získali přehled o výrobních odchylkách.  
-
 

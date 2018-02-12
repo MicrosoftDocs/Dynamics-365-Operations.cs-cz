@@ -1,4 +1,4 @@
---- 
+---
 title: "Uvolnění výrobní zakázky"
 description: "Tato procedura popisuje způsob uvolnění výrobní zakázky."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: johanho
@@ -39,5 +39,4 @@ Tato procedura popisuje způsob uvolnění výrobní zakázky. K vytvoření to
 5. Klikněte na pole Tisk karty postupu.
 6. Klepněte na tlačítko OK.
 7. Zavřete stránku.
-
 

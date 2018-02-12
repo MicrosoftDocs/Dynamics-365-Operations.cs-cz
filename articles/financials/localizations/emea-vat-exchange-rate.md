@@ -44,8 +44,7 @@ Vaše organizace může vybrat směnný kurz, který používá, pro výpočet d
 
 Při zaúčtování dokumentu, který používá cizí měnu, jsou zaúčtovány všechny vzniklé kurzové rozdíly do konkrétních účtů hlavní knihy.
 
-<a name="prerequisites"></a>Požadavky
-=============
+## <a name="prerequisites"></a>Požadavky
 
 Než budete moci použít tuto funkci, musíte nakonfigurovat systém.
 
@@ -55,8 +54,7 @@ Než budete moci použít tuto funkci, musíte nakonfigurovat systém.
 4.  Nastavte rozdíl mezi závazky DPH a pohledávkami DPH a rozdíl protiúčtů ve skupinách zaúčtování hlavní knihy v možnostech **Daň** &gt; **Nastavení** &gt; **DPH** &gt; **Skupiny zaúčtování hlavní knihy**.
 5.  Volitelné: Nastavte pravidlo výpočtu směnného kurzu pro pár měny v možnostech **Hlavní kniha** &gt; **Měny** &gt; **Pravidla výpočtu směnného kurzu pro páry měn**. Pravidla výpočtu směnného kurzu se používají k převodu částek DPH pro prodejní faktury v cizí měně na částky DPH v cílové měně.
 
-<a name="overview"></a>Přehled
-========
+## <a name="overview"></a>Přehled
 
 Po dokončení konfigurace systému pro použití směnných kurzů DPH, pokud je nutné zadat dokument nebo vytvořit objednávku používající cizí měnu, lze použít stránku **Transakce DPH** pro nastavení hodnoty **Datum rejstříku DPH** k vyzvednutí a nastavení výchozí hodnoty **Směnný kurz DPH**. Obě pole lze upravovat. Můžete také použít pole **Původ opravené částky (směnný kurz DPH)** nebo **Opravená částka DPH (směnný kurz DPH)** pro zadání skutečných částek DPH v místní měně, která je uvedena v externím dokumentu. Při kontrole účetnictví můžete zobrazit částky rozdílu DPH na stránce **Dílčí hlavní kniha**. Při zaúčtování dokumentu můžete zobrazit jakékoliv rozdíly v částkách DPH způsobené rozdílem mezi směnným kurzem měny DPH a směnným kurzem účetnictví vaší organizace, které jsou zaúčtovány do účtů hlavní knihy, které jste nakonfigurovali.
 
