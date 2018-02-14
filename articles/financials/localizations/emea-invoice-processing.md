@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustParameters, VendParameters
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,14 +17,16 @@ ms.author: v-kikozl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 25732cf27f91f9a6edf7aae41f7159aadd06b1e2
+ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
+ms.openlocfilehash: d1fca30eb6de22c2d2fb2c4d6bfdfd21fd4bbd6e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/14/2018
 
 ---
 
 # <a name="invoice-processing"></a><span data-ttu-id="e3a8f-103">Zpracování fakturace</span><span class="sxs-lookup"><span data-stu-id="e3a8f-103">Invoice processing</span></span>
+
+[!include[banner](../includes/banner.md)]
 
 <span data-ttu-id="e3a8f-104">Toto téma stručně popisuje některé scénáře specifické pro určité země, jako je například intrakomunitární daň z přidané hodnoty (DPH) a odložená daň.</span><span class="sxs-lookup"><span data-stu-id="e3a8f-104">This topic briefly describes some country-specific scenarios, such as intra-community value-added tax (VAT) and deferred tax.</span></span> <span data-ttu-id="e3a8f-105">Právní požadavky pro některé evropské země mají vliv na proces fakturace.</span><span class="sxs-lookup"><span data-stu-id="e3a8f-105">Legal requirements for some European countries affect the invoicing process.</span></span> <span data-ttu-id="e3a8f-106">Toto téma poskytuje také informace o zpracování faktur odběratelů a dodavatelů pro tyto země.</span><span class="sxs-lookup"><span data-stu-id="e3a8f-106">This topic provides also an information about how customer and vendor invoices are processed for these countries.</span></span> 
 <table>
