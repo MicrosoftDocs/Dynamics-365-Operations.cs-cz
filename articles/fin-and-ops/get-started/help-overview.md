@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d2063cd0ae592357d57fb3c787450c604fb9be58
-ms.openlocfilehash: 549d059e549ba470eb299753fd7b87920e6dd43d
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: 221ce80cb7520f372f38859aa392b1d559448c81
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -74,6 +75,11 @@ Aplikace Finance and Operations, Retail a Talent sdílejí jednu tabulku obsahu 
 
 ### <a name="follow-a-topic"></a>Sledování tématu
 Chcete-li sledovat téma, klikněte na tlačítko +Sledovat pod polem komentáře. Abyste mohli sledovat téma, musíte se přihlásit. Více informací naleznete v části [Nechte nám komentář](#leave-us-a-comment).  
+
+### <a name="use-an-rss-feed"></a>Použití kanálu RSS
+Pro přihlášení k odběru kanálu RSS všech aktualizací obsahu Unified Operations použijte následující odkaz z prohlížeče, který podporuje kanály RSS, jako je například Internet Explorer, nebo správce kanálů RSS: 
+
+[Kanál RSS](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### <a name="give-feedback"></a>Poskytnutí zpětné vazby 
 Máme rádi zpětnou vazbu uživatelů. Můžete buď komentovat nebo navrhovat změny našeho obsahu prostřednictvím GitHub.

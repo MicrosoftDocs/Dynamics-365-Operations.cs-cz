@@ -6,19 +6,22 @@ manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
+ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
-ms.search.scope: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
+ms.search.industry: retail
 ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 346f5b7a5fbbe2c41aaa54e0b36fe0c46baec0af
-ms.openlocfilehash: bb4d8fae432eca7fe9163dcb0763fff5c8d465f0
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: 2fa843aee8927a1cb4f642c31d6f5683098d3c74
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -114,7 +117,7 @@ Ve výchozím nastavení objednávky budou mít stav **Přijato**. Stav objedná
 
 **Balení** - možnost balení podporuje dvě akce: **Tisk dodacího listu** vytiskne dodací list pro vybrané řádky a položka **Označit jako zabaleno** označí řádky jako zabalené a označit řádky jako dodané v účetním systému. Současně lze zabalit pouze řádky objednávky, které patří ke stejné objednávce a se stejným způsobem dodání. Formáty dodacích listů jsou ovládány jako součást formátů příjemek. Další informace o nastavení formátů příjemek naleznete v tématu [Šablony pro příjemky a tisk](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/receipt-templates-printing).
 
-**Expedovat** - akce expedice označí vybrané řádky jako **Dodáno** v účetním systému. Poté, co byl řádek plně expedován, se již nezobrazí v zobrazení plnění obchodu.
+**Expedovat** - akce expedice označí vybrané řádky jako **Dodáno** v účetním systému. Poté, co byl řádek plně expedován, se již nezobrazí v zobrazení plnění objednávky.
 
 **Výdej** - akce vyskladnění přidá řádky k zobrazení transakcí pro výdej. Pokud neexistují další řádky na objednávce, které nejsou aktuálně vydávány, budou přidány k zobrazení transakcí s nulovým množstvím. Poté, co byl řádek plně vydán, se již nezobrazí v zobrazení plnění objednávky. 
 

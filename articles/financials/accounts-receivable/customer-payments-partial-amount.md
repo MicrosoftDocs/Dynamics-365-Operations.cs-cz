@@ -3,11 +3,12 @@ title: "Platby částečných částek odběratelem"
 description: "Odběratelé někdy provedou platbu, která je nižší než částka faktury. Tento článek popisuje různé možnosti pro zvládnutí této situace. Dostupné možnosti závisí na daných obchodních požadavcích a konfiguraci."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustPaymEntry
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c2ba17b97bf7a00ff111e72314e98f5af7aaed80
+ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
+ms.openlocfilehash: 6b7494a05392cbee70e6d5883bae0295e8b55ac9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -41,7 +42,7 @@ Odběratelé mohou provést částečnou úhradu, protože u sebe právě nemaj�
 Můžete zákazníkům nabídnout platební slevu za úhradu faktury před datem splatnosti. Například zadáte fakturu na částku 100,00, která určuje 2% platební slevu, pokud bude faktura zaplacena do 10 dní. Doba splatnosti dle podmínek je 30 dnů. Pokud obdržíte platbu ve výši 98,00 do 10 dnů, zadáte platbu částky 98,00. Poté, jakmile bude faktura označena pro vyrovnání, bude platební sleva přijata automaticky.
 
 ## <a name="partial-payments-with-cash-discounts"></a>Částečné platby s platebními slevami
-Když zákazník provede částečnou úhradu, může plánovat uskutečnění další částečné platby k úplnému vyrovnání faktury. Chcete-li aplikovat hotovostní slevu za částečnou platbu, je nutné nastavit možnost  **Vypočítat platební slevy pro částečné platby** na hodnotu **Ano** na stránce **Parametry pohledávek**. 
+Když zákazník provede částečnou úhradu, může plánovat uskutečnění další částečné platby k úplnému vyrovnání faktury. Chcete-li aplikovat platební slevu za částečnou platbu, je nutné nastavit možnost **Vypočítat platební slevy pro částečné platby** na hodnotu **Ano** na stránce **Parametry pohledávek**. 
 
 Například můžete nabídnout platební slevu 2 %, pokud bude faktura proplacena do 10 dnů po vydání. Je zaúčtována faktura na 100,00. Pokud obdržíte platbu ve výši 49,00 do 10 dnů, zadáte částku Dal ve výši 49,00 do deníku plateb. Při vyrovnání částečné platby na stránce **Vyrovnat transakce**, hodnota **1,00** se zobrazí v poli **Částka platební slevy k přijetí**. Částka slevy je zaúčtována na účet platební slevy. 
 

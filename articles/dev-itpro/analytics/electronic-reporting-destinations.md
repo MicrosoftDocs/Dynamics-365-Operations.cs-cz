@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 211442c7bd0d3079a5eb4f6d01944c0eddf533af
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: cbe0374ff21ff39ed2bbc8d647bd933ced9dcff6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -52,7 +52,7 @@ Poté, co jste vytvořili odkaz, můžete vytvořit cíl souboru pro každou slo
 
 [![Vytvoření cíle souboru](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-**Poznámka:** Můžete vytvořit jedno místo určení souboru pro každou komponentu výstupu ve stejném formátu, jako je složka nebo soubor vybraný v poli **Název souboru**. Poté lze povolit nebo zakázat jednotlivé cíle pro cíl souboru v dialogovém okně **Nastavení cíle**. Tlačítko **Nastavení** se používá k řízení všech cílů pro vybraný cíl souboru. V dialogovém okně **Nastavení cíle** lze ovládat samostatně každý cíl nastavením možnosti **Povoleno**.
+> ![POZNÁMKA] Můžete vytvořit jedno místo určení souboru pro každou komponentu výstupu ve stejném formátu, jako je složka nebo soubor vybraný v poli **Název souboru**. Poté lze povolit nebo zakázat jednotlivé cíle pro cíl souboru v dialogovém okně **Nastavení cíle**. Tlačítko **Nastavení** se používá k řízení všech cílů pro vybraný cíl souboru. V dialogovém okně **Nastavení cíle** lze ovládat samostatně každý cíl nastavením možnosti **Povoleno**.
 
 [![Dialogové okno Nastavení cíle](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
 
@@ -71,7 +71,7 @@ Po kliknutí na tlačítko **Upravit** u pole **Komu** nebo **Kopie** se zobraz�
 
 #### <a name="print-management"></a>Správa tisku
 
-Vyberete-li typ **Správa tisku – e-mail**, můžete zadat pevné e-mailové adresy do pole **Komu**. Pro použití jiných než pevných e-mailových adres je nutné vybrat typ zdroje e-mailu pro cíl souboru. Podporovány jsou následující hodnoty: **Odběratel**, **Dodavatel**, **Potenciální zákazník**, **Kontakt**, **Konkurent**, **Pracovník**, **Uchazeč**, **Potenciální dodavatel** a **Zakázaný dodavatel**. Po výběru typu zdroje e-mailu použijte tlačítko vedle pole **E-mail – zdrojový účet** a otevřete formulář **Návrhář receptur **. Tento formulář můžete použít k připojení vzorce, který představuje účet vybrané strany do cílového umístění e-mailu.
+Vyberete-li typ **Správa tisku – e-mail**, můžete zadat pevné e-mailové adresy do pole **Komu**. Pro použití jiných než pevných e-mailových adres je nutné vybrat typ zdroje e-mailu pro cíl souboru. Podporovány jsou následující hodnoty: **Odběratel**, **Dodavatel**, **Potenciální zákazník**, **Kontakt**, **Konkurent**, **Pracovník**, **Uchazeč**, **Potenciální dodavatel** a **Zakázaný dodavatel**. Po výběru typu zdroje e-mailu použijte tlačítko vedle pole **E-mail – zdrojový účet** a otevřete formulář **Návrhář receptur**. Tento formulář můžete použít k připojení vzorce, který představuje účet vybrané strany do cílového umístění e-mailu.
 
 [![Konfigurace typu e-mailu správy tisku](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) 
 
@@ -131,7 +131,7 @@ Pro cíle EV se používají dva typy oprávnění a povinností. Jeden typ ovl�
 | PaymAccountsPayablePaymentsClerk    | Úředník plateb závazků            | ERFormatDestinationRuntimeConfigure | Konfigurovat místo určení formátu elektronického výkaznictví za běhu |
 | PaymAccountsReceivablePaymentsClerk | Úředník plateb pohledávek         | ERFormatDestinationRuntimeConfigure | Konfigurovat místo určení formátu elektronického výkaznictví za běhu |
 
-**Poznámka:** v předchozích úkolech jsou použita dvě oprávnění. Tato oprávnění mají stejné názvy jako odpovídající role: **ERFormatDestinationConfigure** a **ERFormatDestinationRuntimeConfigure**.
+> ![POZNÁMKA] V předchozích úkolech jsou použita dvě oprávnění. Tato oprávnění mají stejné názvy jako odpovídající role: **ERFormatDestinationConfigure** a **ERFormatDestinationRuntimeConfigure**.
 
 ## <a name="frequently-asked-questions"></a>Časté dotazy
 ### <a name="i-have-imported-electronic-configurations-and-i-see-them-on-the-electronic-reporting-configurations-page-but-why-dont-i-see-them-on-the-electronic-reporting-destinations-page"></a>Provedl(a) jsem import elektronických konfigurací a vidím je na stránce s konfiguracemi elektronického výkaznictví. Proč je ale nevidím na stránce Cíle elektronického výkaznictví?
@@ -154,7 +154,7 @@ Vzorec je specifický pro konfiguraci EV. Například pokud použijete konfigura
 
 Nezbytným předpokladem je, že formát musí být k dispozici v konfiguracích EV. Pokud máte svůj formát, otevřete stránku **Místo určení elektronického výkaznictví** a vytvořte nový odkaz na tuto konfiguraci. Pak je třeba mít k dispozici čtyři cíle souboru, jeden pro každou součást výstupu. Vytvořte první cíl souboru, pojmenujte jej např. jako **Složka** a vyberte název souboru, který představuje složku ve vaší konfiguraci. Poté klepněte na tlačítko **Nastavení** a ujistěte se, že jsou zakázány všechny cíle. Pro tento cíl souboru se složka nevytvoří. Ve výchozím nastavení se soubory budou chovat stejným způsobem díly hierarchickým závislostem mezi soubory a nadřazenými složkami. Jinými slovy se nikam neodešlou. Chcete-li přepsat výchozí chování, je nutné vytvořit tři další cíle souborů, jeden pro každý soubor. V nastavení cíle pro každý ze souborů je nutné povolit cíl, na který má být soubor odeslán.
 
-# <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také
 
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 

@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4b3d068ddbf6f0b28c97618f5fa10fa486f3af51
+ms.sourcegitcommit: 5737d9c52727077d34c6f5553c9788bf07032914
+ms.openlocfilehash: 0521f0b443efb761e7d3f63182728dd836dbf8a0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/15/2018
 
 ---
 
@@ -31,6 +31,9 @@ ms.lasthandoff: 11/03/2017
 
 [!include[banner](../includes/banner.md)]
 
+
+> [!NOTE]
+> Toto téma popisuje způsob konfigurace skladu pro nasazení v cloudu. Postup konfigurace skladu pro místní nasazení naleznete v tématu [Sklady pro místní nasazení](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/warehousing-for-on-premise-deployments).
 
 Toto téma popisuje, jak nainstalovat a nakonfigurovat Microsoft Dynamics 365 for Finance and Operations – Warehousing.
 
@@ -43,32 +46,29 @@ Aplikace je k dispozici v operačních systémech Android a Windows. Chcete-li p
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
 | Windows (UWP)               | Windows 10 (všechny verze)                                                                                                                                                   |
-| Finance and Operations | Microsoft Finance and Operations verze 1611 <br>- nebo - <br>Microsoft Dynamics AX verze 7.0/7.0.1 a platforma Microsoft Dynamics AX s aktualizací 2 a opravou hotfix KB 3210014 |
+| Finance and Operations | Microsoft Dynamics 365 for Operations, verze 1611 <br>- nebo - <br>Microsoft Dynamics AX verze 7.0/7.0.1 a platforma Microsoft Dynamics AX s aktualizací 2 a opravou hotfix KB 3210014 |
 
 ## <a name="get-the-app"></a>Získat aplikaci
--   Windows (UWP): [Finance and Operations – Warehousing v obchodě Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
--   Android:
+-   Windows (UWP)
+     - [Finance and Operations – Sklady v obchodě Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
+-   Android
     - [Finance and Operations – Warehousing v obchodě Google Play](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
     - [Finance and Operations – Warehousing v galerii Zebra App Gallery](https://appgallery.zebra.com/showcase/apps/146?type=showcase)
 
-## <a name="create-a-web-service-application-in-active-directory"></a>Vytvoření aplikace webové služby ve službě Active Directory
+## <a name="create-a-web-service-application-in-azure-active-directory"></a>Vytvoření aplikace webové služby ve službě Azure Active Directory
 Pokud chcete povolit interakci aplikace s konkrétním serverem Finance and Operations, je nutné zaregistrovat aplikaci webové služby v adresáři Azure Active Directory pro klienta Finance and Operations. Z bezpečnostních důvodů doporučujeme vytvořit webovou aplikaci služby pro každé zařízení, které používáte. Chcete-li vytvořit webovou aplikaci služby ve službě Active Directory Azure (Azure AD), proveďte následující kroky:
 
-1.  Ve webovém prohlížeči přejděte na <https://manage.windowsazure.com>.
+1.  Ve webovém prohlížeči přejděte na <https://portal.azure.com>.
 2.  Zadejte jméno a heslo pro uživatele, kteří mají přístup k předplatnému Azure.
-3.  V portálu Azure v levém navigačním podokně klepněte na **Active Directory**.[](./media/wh-01-active-directory-example.png)[![wh-01-active-directory-example](./media/wh-01-active-directory-example.png)](./media/wh-01-active-directory-example.png)
-4.  V mřížce vyberte instanci služby Active Directory používanou aplikací Finance and Operations.
-5.  Na horním panelu nástrojů klepněte na tlačítko **Aplikace**. [![wh-02-active-directory-applications](./media/wh-02-active-directory-applications-1024x197.png)](./media/wh-02-active-directory-applications.png)
-6.  V dolním podokně klikněte na **Přidat**. Spustí se průvodce **Přidat aplikaci**.
-7.  Zadejte název aplikace a vyberte **Webová aplikace nebo webové rozhraní API**. [![wh-03-active-directory-add-application](./media/wh-03-active-directory-add-application.png)](./media/wh-03-active-directory-add-application.png)
-8.  Zadejte přihlašovací adresu URL, tedy adresu URL webové aplikace. Tato adresa URL je stejná jako adresa URL nasazení, ale na konci je uveden řetězec oauth. Zadejte URI ID aplikace. Tato hodnota je povinná, ale není nutná pro ověření. Zajistěte, aby URI ID aplikace byl jen nepravý, například https://contosooperations/wmapp, protože při použití URL nasazení může dojít k potížím s přihlašováním do jiných aplikací AAD, například doplňku aplikace Excel. [![WH-04-AD-add-properties3](./media/WH-04-AD-add-properties3.png)](./media/WH-04-AD-add-properties3.png)
-9.  Přejděte na kartu **Konfigurovat**. [![wh-05-ad-configure-app](./media/wh-05-ad-configure-app.png)](./media/wh-05-ad-configure-app.png)
-10. Přejděte dolů, dokud se nezobrazí oddíl **Oprávnění pro ostatní aplikace**. Klikněte na **Přidat aplikaci**. [![wh-06-ad-app-add-permissions](./media/wh-06-ad-app-add-permissions.png)](./media/wh-06-ad-app-add-permissions.png)
-11. V seznamu vyberte **Microsoft Dynamics ERP**. Klepněte na tlačítko **Dokončit kontrolu** v pravém horním rohu stránky. [![wh-07-ad-select-permissions](./media/wh-07-ad-select-permissions.png)](./media/wh-07-ad-select-permissions.png)
-12. V seznamu **Delegovat oprávnění** zaškrtněte všechna políčka. Klikněte na možnost **Uložit**. [![wh-08-ad-delegate-permissions](./media/wh-08-ad-delegate-permissions.png)](./media/wh-08-ad-delegate-permissions.png)
-13. Poznamenejte si následující informace:
-    -   **ID klienta** - při posouvání nahoru na stránku se zobrazí **ID klienta**.
-    -   **Klíč** - v oddílu **klíče** vytvořte klíč výběrem doby trvání a zkopírováním klíče. Tento klíč bude později označován jako **tajný klíč klienta**.
+3.  V portálu Azure v levém navigačním podokně klepněte na **Azure Active Directory**.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+4.  Ujistěte se, že instance služby Active Directory je ta, kterou používá aplikace Finance and Operations.
+5.  V seznamu klikněte na **Registrace aplikací**. [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+6.  V horním podokně klikněte na **Registrace nové aplikace**. Spustí se průvodce **Přidat aplikaci**.
+7.  Zadejte název aplikace a vyberte **Webová aplikace/webové rozhraní API**. Zadejte přihlašovací adresu URL, tedy adresu URL webové aplikace. Tato adresa URL je stejná jako adresa URL nasazení, ale na konci je uveden řetězec oauth. Klepněte na volbu **Nový**. [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
+8.  Vyberte novou aplikaci v seznamu. [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+9.  Zapamatujte si **ID aplikace**, budete ho potřebovat později. Na **ID aplikace** se bude později odkazovat jako na **ID klienta**.
+10. Klikněte na **Klíče** v podokně **Nastavení**. Vytvořte klíč zadáním popisu klíče a trvání v části **Hesla**. 
+11. Klikněte na **Uložit** a zkopírujte klíč. Tento klíč bude později označován jako **tajný klíč klienta**. [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
 
 ## <a name="create-and-configure-a-user-account-in-finance-and-operations"></a>Vytvoření a konfigurace uživatelských účtů v aplikaci Finance and Operations
 Aby mohla aplikace Finance and Operations používat vaši aplikaci Azure AD, je nutné provést následující kroky konfigurace:
@@ -90,8 +90,8 @@ Aplikaci je třeba nakonfigurovat v zařízení, aby se připojovala k serveru
 1.  V aplikaci přejděte na **Nastavení připojení**.
 2.  Zrušte zaškrtnutí políčka **Demo režim**. <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
 3.  Zadejte následující informace: 
-    + **ID klienta služby Azure Active Directory** – ID klienta získáte v kroku 13 v postupu „Vytvoření aplikace webové služby ve službě Active Directory“. 
-    + **Tajný klíč klienta služby Azure Active Directory** – Tajný klíč získáte v kroku 13 v postupu „Vytvoření aplikace webové služby ve službě Active Directory“. 
+    + **ID klienta služby Azure Active Directory** – ID klienta získáte v kroku 9 v postupu „Vytvoření aplikace webové služby ve službě Active Directory“. 
+    + **Tajný klíč klienta služby Azure Active Directory** – Tajný klíč získáte v kroku 11 v postupu „Vytvoření aplikace webové služby ve službě Active Directory“. 
     + **Prostředek služby Azure Active Directory** – Prostředek určuje kořenovou adresu URL aplikace Finance and Operations. **Poznámka:**: na konci tohoto pole nepoužívejte znak lomítka (/). 
     + **Nájemce služby Azure Active Directory** – Jedná se o klienta služby Azure AD Directory používaného se serverem Finance and Operations: https://login.windows.net/vase-ID-klienta-AD. Příklad: https://login.windows.net/contosooperations.onmicrosoft.com.
     <br>**Poznámka:**: na konci tohoto pole nepoužívejte znak lomítka (/). 
@@ -102,15 +102,11 @@ Aplikaci je třeba nakonfigurovat v zařízení, aby se připojovala k serveru
 Ztraceným nebo narušeným zařízením je nutné odebrat přístup k aplikaci Finance and Operations. Následující kroky popisují doporučený postup odebrání přístupu.
 
 1.  V aplikaci Finance and Operations vyberte položky **Správa systému** &gt; **Nastavení** &gt; **Aplikace Azure Active Directory**.
-2.  Odstraň řádek, který odpovídá zařízení, kterému chcete odebrat přístup. Poznamenejte si **ID klienta** pro odebrané zařízení.
-3.  Přihlaste se na portál Azure classic na stránkách <https://manage.windowsazure.com>.
-4.  Klepněte na ikonu **Active Directory** v levé nabídce a potom klepněte na požadovaný adresář.
-5.  V horní nabídce klepněte na příkaz **Aplikace** a klepněte na aplikaci, kterou chcete konfigurovat. Stránka **Rychlý Start** bude zobrazena pomocí jednotného přihlášení a dalších informací o konfiguraci.
-6.  Klepněte na kartu **konfigurace** kartu, přejděte dolů a ujistěte se, za je **ID klienta** aplikace stejné jako v kroku 2 v této části.
-7.  Klepněte na tlačítko **Odstranit** na panelu nástrojů.
+2.  Odstraň řádek, který odpovídá zařízení, kterému chcete odebrat přístup. Pamatujte, že **ID klienta** se používá pro odebrané zařízení, budete ho potřebovat později.
+3.  Přihlaste se na portál Azure na stránkách <https://portal.azure.com>.
+4.  Klikněte na ikonu **Active Directory** v levé nabídce a ujistěte se, že jste ve správném adresáři.
+5.  V seznamu klikněte na **AppRegistrace aplikací** a klikněte na aplikaci, kterou chcete konfigurovat. Zobrazí se stránka **Nastavení** s informacemi o konfiguraci.
+6.  Ujistěte se, že **ID klienta** aplikace je stejné jako v kroku 2 v této části.
+7.  Klepněte na tlačítko **Odstranit** v horním podokně.
 8.  V potvrzující zprávě, která se otevře, klikněte na tlačítko **Ano**.
-
-
-
-
 
