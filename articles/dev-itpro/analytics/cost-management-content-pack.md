@@ -3,7 +3,7 @@ title: "Obsah správy nákladů v Power BI"
 description: "Toto téma popisuje, co je součástí obsahu správy nákladů v Power BI."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: e0f9042b2647a484a70670d1d29e8036401b39f1
+ms.sourcegitcommit: b167d7577823bbc88d8e64952333110f9a652b64
+ms.openlocfilehash: 1f552e1ee0286326e3a2a8bb6a7bfb84df53b45d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 02/02/2018
 
 ---
 
@@ -30,10 +30,10 @@ ms.lasthandoff: 12/19/2017
 
 [!include[banner](../includes/banner.md)]
 
+> [Poznámka] Tento balíček obsahu je zastaralý, jak je uvedeno v části [Balíčky obsahu Power BI publikované na PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
+
 
 Toto téma popisuje, co je součástí obsahu správy nákladů v Power BI. 
-
-# <a name="overview"></a>Přehled
 
 Obsah **Správy nákladů** sady nástrojů Microsoft Power BI je určen pro skladové účetní zásob nebo pro osoby v organizaci, které jsou odpovědné za zásoby. Obsah **Správy nákladů** v Power BI poskytuje manažerský přehled o zásobách a rozpracované výrobě (NV), a způsobu, jakým jimi náklady procházejí podle kategorie v průběhu času. Informace lze použít také jako podrobný doplněk k finančnímu výkazu.
 

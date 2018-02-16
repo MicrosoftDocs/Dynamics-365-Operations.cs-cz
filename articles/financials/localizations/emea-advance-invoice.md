@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,10 +18,10 @@ ms.author: epopov
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2ec0af71e199075c885fa2f46de6c68397392704
+ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
+ms.openlocfilehash: 3c284b8c67121b39837bef827dea6f24da2a0f4b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/23/2018
 
 ---
 
@@ -44,7 +45,7 @@ Funkce zálohové faktury umožňuje provádět následující činnosti:
 Polské společnosti přijímající zálohy musí vytvořit fakturu pro platbu záloh pro odběratele. Tato zálohová faktura je zaúčtována do hlavní knihy a je to povinný dokument pro daňové účely DPH. Daň, která se vypočítává na zálohové faktuře, musí být nahlášena finančnímu úřadu. Při provádění konečného prodeje zboží by měla zálohová faktura být zadána na prodejní faktuře. Celková částka prodeje musí obsahovat zálohy. Při zaúčtování prodejní faktury bude vyrovnaná zálohová faktura stornována. Původní zálohová faktura bude vyrovnána se stornem zálohové faktury.
 
 ## <a name="set-up-accounts-receivable-for-advance-invoices"></a>Nastavení parametrů modulu Pohledávky pro zálohové faktury
-Na stránce **Parametry závazků** na kartě **Aktualizovat** určete následující parametry.
+Na stránce **Parametry závazků** na kartě **Aktualizace** určete následující parametry.
 
 |Pevná záložka|Parametr|popis|
 |------|----------|------------|

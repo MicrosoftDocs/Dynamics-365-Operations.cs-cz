@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9c0372f3bc4e1fb4394d69f6e3dbf6c0f844b991
+ms.sourcegitcommit: dd34fb71f7a5d31a075c6475c2fe6627193d891f
+ms.openlocfilehash: 6bb405937288b46f49420a1735c32b5b7c16248e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/02/2018
 
 ---
 
@@ -42,8 +42,10 @@ V definicích řádku čísla nebo popisky v buňce **Kód řádku** identifikuj
 Kód řádku je vyžadován pro všechny řádky. Můžete kombinovat číselné, alfanumerické a nenastavené (prázdné) kódy řádků v definici řádku. Kód řádku může být kladné číslo (menší než 100 000 000) nebo popisek, který tento řádek identifikuje. Popisný štítek musí být v souladu se těmito pravidly:
 
 -   Popisek musí začínat abecedním znakem (a až z nebo A až Z) a může být libovolnou kombinací číslic a písmen do maximálně 16 znaků. 
-    > [!NOTE]
-    > Popisek může zahrnovat znak podtržítka (\_), ale nejsou povoleny žádné jiné speciální znaky.
+
+> [!Note] 
+> Popisek může zahrnovat znak podtržítka (\_), ale nejsou povoleny žádné jiné speciální znaky.
+
 -   Popisek nesmí používat žádné z následujících rezervovaných slov: AND, OR, IF, THEN, ELSE, PERIODS, TO, BASEROW, UNIT, NULL, CPO nebo RPO.
 
 Následující příklady jsou platné kódy řádků:
@@ -62,12 +64,14 @@ Následující příklady jsou platné kódy řádků:
 1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2.  V nabídce **Upravit** klikněte na tlačítko **Přečíslovat řádky**.
 3.  V dialogovém okně **Přečíslovat řádky** zadejte nové hodnoty pro počáteční kód řádku a přírůstek kódu řádku. Můžete obnovit číselné kódy řádků na rovnoměrně rozložené hodnoty. Návrhář sestav však přečísluje pouze kódy řádků začínající číslicemi (například 130 nebo 246). Nepřečísluje kódy řádků, které začínají písmeny (například INCOME\_93 nebo TP0693) 
-> [!NOTE]
+
+> [!Note] 
 > Při přečíslování kódů řádků návrhář sestav automaticky aktualizuje odkazy **TOT** and **CAL**. Pokud například řádek **TOT** odkazuje na rozmezí, které začíná kódem řádku 100, a přečíslujete řádky počínaje od 90, počáteční odkaz **TOT** se změní ze 100 na 90.
 
 ## <a name="add-a-description"></a>Přidat popis
 Buňky s popisem poskytují popis finančních dat v řádku sestavy, například „Výnosy“ nebo „Čistý příjem“. Text v buňce **Popis** se zobrazí v sestavě přesně tak, jak ho zadáte do definice řádku. 
-> [!NOTE]
+
+> [!Note] 
 > Šířka sloupce popisu v sestavě je nastavena v definici sloupce. Pokud je text ve sloupci **Popis** v definici řádku dlouhý, ověřte šířku sloupce **DESC**. Když používáte dialogové okno **Vložit řádky z dimenzí**, hodnoty ve sloupci **Popis** jsou hodnoty segmentu nebo hodnoty dimenze z finančních dat. Řádky můžete vkládat, pokud chcete přidat popisný text, například záhlaví oddílu nebo součet pro oddíl, nebo když chcete přidat formátování, například řádek před řádkem s celkovým součtem. Pokud sestava obsahuje organizační strom, můžete zahrnout další text definovaný pro organizační jednotky v organizačním stromu. Můžete také omezit další text na konkrétní organizační jednotku.
 
 ### <a name="add-the-description-for-a-line-on-a-report"></a>Přidání popisu pro řádek v sestavě
@@ -91,7 +95,7 @@ Buňky s popisem poskytují popis finančních dat v řádku sestavy, napřík
 
 ## <a name="add-a-format-code"></a>Přidání kódu formátu
 Buňka **Kód formátu** nabízí výběr předem naformátovaných voleb pro obsah daného řádku. Pokud je buňka **Kód formátu** prázdná, řádek bude interpretován jako řádek podrobností finančních dat. 
-> [!NOTE]
+> [!Note] 
 > Pokud sestava obsahuje řádky s formátováním bez částky, které souvisejí s řádky s částkami, které byly potlačeny (například z důvodu nulových zůstatků), lze použít sloupec **Související vzorce/řádky/jednotky** k zabránění tisku řádků názvu a formátu.
 
 ### <a name="add-a-format-code-to-a-report-row"></a>Přidání kódu formátu k řádku sestavy
@@ -99,26 +103,27 @@ Buňka **Kód formátu** nabízí výběr předem naformátovaných voleb pro ob
 1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom vyberte definici řádku ke změně.
 2.  Dvakrát klikněte na buňku **Kód formátu**.
 3.  Vyberte kód formátu ze seznamu. Následující tabulka popisuje kódy formátů a jejich akce.
-    | Kód formátu                   | Interpretace kódu formátu | Akce|
-    |---|---|---|
-    | (Žádné)                        |                                    | Vymaže buňku **Kód formátu**.                                                                                                                                                                               |
-    | TOT                           | Celkem                              | Identifikuje řádek, který používá matematické operátory ve sloupci **Související vzorce/řádky/jednotky**. Součty obsahují jednoduché operátory, například **+** nebo **-**.                                                      |
-    | CAL                           | Výpočet                        | Identifikuje řádek, který používá matematické operátory ve sloupci **Související vzorce/řádky/jednotky**. Výpočty obsahují složité operátory, například **+**, **-**, **\***, **/** a **IF/THEN/ELSE**. |
-    | DES                           | popis                        | Identifikuje řádek záhlaví nebo prázdný řádek v sestavě.                                                                                                                                                        |
-    | LFT RGT CEN                   | Vlevo Na střed Vpravo                  | Zarovná text popisu řádku na stránce sestavy bez ohledu na jeho umístění v definici sloupce.                                                                                               |
-    | CBR                           | Změna základního řádku                    | Označuje řádek, který nastavuje základní řádek pro výpočty sloupce.                                                                                                                                               |
-    | SLOUPEC                        | Zalomení sloupce                       | Začne nový sloupec v sestavě.                                                                                                                                                                             |
-    | STRANA                          | Konec strany                         | Začne novou stránku v sestavě.                                                                                                                                                                               |
-    | ---                           | Jednoduché podtržení                   | Vloží jednoduchou linku pod všechny sloupce částek v sestavě.                                                                                                                                                     |
-    | ===                           | Dvojité podtržení                   | Vloží dvojitou linku pod všechny sloupce částek v sestavě.                                                                                                                                                     |
-    | LINE1                         | Tenká čára                          | Nakreslí přes celou šířku stránky jednu tenkou čáru.                                                                                                                                                                      |
-    | LINE2                         | Tlustá čára                         | Nakreslí přes celou šířku stránky jednu tlustou čáru.                                                                                                                                                                     |
-    | LINE3                         | Tečkovaná čára                        | Nakreslí jednu tečkovanou čáru přes celou šířku stránky.                                                                                                                                                                    |
-    | LINE4                         | Tlustá čára a tenká čára           | Nakreslí přes celou šířku stránky dvojitou čáru. Horní čára je tlustá a spodní čára je tenká.                                                                                                                       |
-    | LINE5                         | Tenká čára a tlustá čára           | Nakreslí přes celou šířku stránky dvojitou čáru. Horní čára je tenká a spodní čára je tlustá.                                                                                                                       |
-    | BXB BXC                       | Řádek v rámečku                          | Vytvoří ohraničení kolem řádků sestavy, které začínají řádkem **BXB** a končí řádkem **BXC**.                                                                                                               |
-    | REM                           | Poznámka                             | Označuje řádek komentáře, který se nemá tisknout na sestavě. V řádku poznámek se mohou například vysvětlovat vaše metody formátování.                                                            |
-    | SORT ASORT SORTDESC ASORTDESC | Seřadit                               | Umožňuje seřadit výdaje nebo výnosy, seřadit sestavy odchylek skutečnosti a rozpočtu podle největší odchylky nebo abecedně seřadit popisy řádků.                                                                   |
+
+| **Kód formátu**               | **Interpretace kódu formátu** | **Akce**                                                                                                                                                                                                     |
+|-------------------------------|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| (Žádné)                        |                                       | Vymaže buňku **Kód formátu**.                                                                                                                                                                               |
+| TOT                           | Celkem                                 |  Identifikuje řádek, který používá matematické operátory ve sloupci **Související vzorce/řádky/jednotky**. Součty obsahují jednoduché operátory, například **+** nebo **-**.                                                     |
+| CAL                           | Výpočet                           | Identifikuje řádek, který používá matematické operátory ve sloupci **Související vzorce/řádky/jednotky**. Výpočty obsahují složité operátory, například **+**, **-**, **\***, **/** a **IF/THEN/ELSE**. |
+| DES                           | popis                           | Identifikuje řádek záhlaví nebo prázdný řádek v sestavě.                                                                                                                                                        |
+| LFT RGT CEN                   | Vlevo Na střed Vpravo                     |  Zarovná text popisu řádku na stránce sestavy bez ohledu na jeho umístění v definici sloupce.                                                                                              |
+| CBR                           | Změna základního řádku                       | Označuje řádek, který nastavuje základní řádek pro výpočty sloupce.                                                                                                                                               |
+| SLOUPEC                        | Zalomení sloupce                          | Začne nový sloupec v sestavě.                                                                                                                                                                             |
+| STRANA                          | Konec strany                            | Začne novou stránku v sestavě.                                                                                                                                                                               |
+| \---                          | Jednoduché podtržení                      | Vloží jednoduchou linku pod všechny sloupce částek v sestavě.                                                                                                                                                     |
+|  ===                          | Dvojité podtržení                      | Vloží dvojitou linku pod všechny sloupce částek v sestavě.                                                                                                                                                     |
+| LINE1                         | Tenká čára                             | Nakreslí přes celou šířku stránky jednu tenkou čáru.                                                                                                                                                                      |
+| LINE2                         | Tlustá čára                            | Nakreslí přes celou šířku stránky jednu tlustou čáru.                                                                                                                                                                     |
+| LINE3                         | Tečkovaná čára                           | Nakreslí jednu tečkovanou čáru přes celou šířku stránky.                                                                                                                                                                    |
+| LINE4                         | Tlustá čára a tenká čára              | Nakreslí přes celou šířku stránky dvojitou čáru. Horní čára je tlustá a spodní čára je tenká.                                                                                                                       |
+| LINE5                         | Tenká čára a tlustá čára              | Nakreslí přes celou šířku stránky dvojitou čáru. Horní čára je tenká a spodní čára je tlustá.                                                                                                                       |
+| BXB BXC                       | Řádek v rámečku                             | Vytvoří ohraničení kolem řádků sestavy, které začínají řádkem **BXB** a končí řádkem **BXC**.                                                                                                               |
+| REM                           | Poznámka                                | Označuje řádek komentáře, který se nemá tisknout na sestavě. V řádku poznámek se mohou například vysvětlovat vaše metody formátování.                                                            |
+| SORT ASORT SORTDESC ASORTDESC | Seřadit                                  | Umožňuje seřadit výdaje nebo výnosy, seřadit sestavy odchylek skutečnosti a rozpočtu podle největší odchylky nebo abecedně seřadit popisy řádků.                                                                   |
 
 ## <a name="specify-related-formulasrowsunits"></a>Určit související vzorce/řádky/jednotky
 Buňka **Související vzorce/řádky/jednotky** má více účelů. V závislosti na typu řádku může buňka **Související vzorce/řádky/jednotky** provést některou z následujících funkcí:
@@ -152,12 +157,12 @@ Při vytváření vzorce součtového řádku je nutné pomocí kódů řádků 
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Vztažení řádku formátu k řádku částky
 
 Ve sloupci **Kód formátu** v definici řádku kódy formátu **DES**, **LFT**, **RGT**, **CEN**, **---** a **===** aplikují formátování na řádky bez částek. Chcete-li zabránit tisku tohoto formátování při potlačení souvisejících řádků částky (například protože řádky s částkami obsahují nulové hodnoty nebo nemají žádnou aktivitu v období), musíte spojit řádky formátu s odpovídajícími řádky částek. Tato funkce je užitečná, pokud chcete zabránit tisku záhlaví nebo formátování souvisejícího s mezisoučty, když neexistují žádné podrobnosti k tisku pro dané období. 
-    > [!NOTE]
-    >  You can also prevent the detailed amount rows from being printed by clearing the option to display rows without amounts. This option is located on the **Settings** tab of the report definition. By default, transaction detail accounts that have a zero balance or no period activity are suppressed in reports. To show these transaction detail accounts, select the **Display rows without an amounts** check box on the **Settings** tab of the report definition.
+> [!Note] 
+> Poznámka: Můžete také potlačit tisk řádků podrobných částek, pokud zrušíte zaškrtnutí políčka pro zobrazení řádků bez částek. Tato možnost se nachází na kartě **Nastavení** v definici sestavy. Ve výchozím nastavení jsou v sestavách potlačeny účty podrobností transakcí s nulovým zůstatkem nebo bez jakékoli aktivity v daném období. Zobrazit tyto účty podrobností transakcí můžete zaškrtnutím políčka **Zobrazit řádky bez částek** na kartě **Nastavení** definice sestavy.
 
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Spojení řádku formátu s řádkem částky
 
-1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom vyberte definici řádku ke změně.
+1.  V Návrháři sestav klikněte na tlačítko **Definice řádku**a potom vyberte definici řádku ke změně.
 2.  Do řádku formátování v buňce **Související vzorce/řádky/jednotky** zadejte kód řádku částky k potlačení. **Poznámka:** Aby bylo možné potlačit řádek částky, zůstatek na řádku musí být 0 (nula). Částka řádku se zůstatkem není potlačena.
 3.  V nabídce **Soubor** klikněte na možnost **Uložit**.
 
@@ -210,8 +215,8 @@ Kódy řazení slouží k seřazení účtů a hodnot, k seřazení sestavy o
 2.  Dvakrát klikněte na buňku **Kód formátu** a vyberte kód třídění.
 3.  V buňce **Související vzorce/řádky/jednotky** stanovte rozmezí kódů řádků ke třídění. Při zadávání rozsahu zadejte kód prvního řádku, dvojtečku (:) a poté kód posledního řádku. Zadáním například hodnoty **160:490** určete rozmezí od řádku 160 po řádek 490.
 4.  V buňce **Omezení sloupce** zadejte písmeno sloupce sestavy k použití pro řazení. 
-    > [!NOTE]
-    > Do výpočtu řazení zahrnujte pouze řádky částek.
+> [!Note] 
+> Do výpočtu řazení zahrnujte pouze řádky částek.
 
 ### <a name="examples-of-ascending-and-descending-column-values"></a>Příklady vzestupných a sestupných hodnot sloupců
 
@@ -228,30 +233,11 @@ V následujícím příkladu budou hodnoty ve sloupci D sestavy seřazeny ve vze
 | 520      |                                                     | DES         |                             |                |                    |                              |
 | 550      | Seřazeno sestupně podle absolutní odchylky od začátku roku | DES         |                             |                |                    |                              |
 | 580      |                                                     | ASORTDESC   | 610:940                     |                | G                  |                              |
-| 610      | Prodej                                               |             |                             | C              |                    | 4100                         |
+| 610      | Prodej.                                               |             |                             | o              |                    | 4100                         |
 | 640      | Prodejní vratky                                       |             |                             |                |                    | 4110                         |
 |          | ...                                                 |             |                             |                |                    |                              |
-| 940      | Příjem z úroků                                     |             |                             | C              |                    | 7000                         |
+| 940      | Příjem z úroků                                     |             |                             | o              |                    | 7000                         |
 
-Zde je příklad sestavy, která je generována.
-
-|||||||||
-|---|---|---|---|---|---|---|
-|**Analýza odchylek (seřazená podle odchylky)**|||||||
-
-|**Oblasti Peking a Atlanta**|||||||
-
-|**Za sedm měsíců do 31. července 2013**|||||||
-
-||**Červenec**|**Od začátku roku**|||||
-
-||**Skutečné**|**Rozpočet**|**Odchylka**|**Skutečné**|**Rozpočet**|**Odchylka**|
-
-|**Řazení podle měsíční odchylky ve vzestupném pořadí**|||||||
-
-|COGS|873,872|236,144|(637,728)|4,864,274|1,590,315|(3,273,959)|
-
-|Platy a mzdy|97,624|65,573|(32,051)|653,884|441,664|(212,220)| |Prodejní slevy|36,383|24,152|(12,231)|241,562|162,670|(78,892)| |Prodejní vratky|10,917|7,246|(3,671)|62,809|48,803|(14,006)| |Nájemní výdaje|12,052|9,019|(3,033)|80,444|60,748|(19,696)| |Kancelářské výdaje|5,023|3,291|(1,732)|33,420|22,098|(11,322)| |Cestovní výdaje|7,656|7,641|(15)|51,062|51,469|407| |Prodej|1,240,119|410,389|829,730|7,139,288|2,764,549|4,374,739| | |**Řazení podle absolutní odchylky od začátku roku v sestupném pořadí**||||||| |Prodej|1,240,119|410,389|829,730|7,139,288|2,764,549|4,374,739| |Cestovní výdaje|7,656|7,641|(15)|51,062|51,469|407| |Kancelářské výdaje|5,023|3,291|(1,732)|33,420|22,098|(11,322)| |Prodejní vratky|10,917|7,246|(3,671)|62,809|48,803|(14,006)| |Nájemní výdaje|12,052|9,019|(3,033)|80,444|60,748|(19,696)| |Prodejní slevy|36,383|24,152|(12,231)|241,562|162,670|(78,892)| |Platy a mzdy|97,624|65,573|(32,051)|653,884|441,664|(212,220)| |COGS|873,872|236,144|(637,728)|4,864,274|1,590,315|(3,273,959)|
 
 ## <a name="specify-a-format-override-cell"></a>Určení buňky přepsání formátu
 Buňka **Přepsání formátu** určuje formátování použité pro řádek při vytištění sestavy. Toto formátování má přednost před veškerým formátováním, které je určeno v definici sloupce a definici sestavy. Ve výchozím nastavení je formátování určené těmito definicemi měna. Pokud sestava obsahuje v jednom řádku počet aktiv, například počet budov, a v jiném řádku jejich peněžní hodnoty, můžete přepsat formátování měny a zadat pro řádek, který určuje počet budov, číselný formát. Tyto informace můžete zadat v dialogovém okně **Přepsání formátu**. To, jaké možnosti budou dostupné, bude záviset na kategorii formátu, kterou vyberete. Oblast **Ukázka** dialogového okna zobrazuje příklady formátů. Dostupné jsou následující kategorie formátů:
@@ -276,8 +262,8 @@ Formátování měny se použije na fiskální hodnotu a obsahuje symbol měny. 
 -   **Záporná čísla** – záporná čísla mohou obsahovat záporné znaménko (-), mohou se zobrazovat v závorkách nebo mají trojúhelník (∆).
 -   **Desetinná místa** – počet číslic, které chcete zobrazit za desetinnou čárkou.
 -   **Text přepsání nulové hodnoty** – text, který bude zahrnut do sestavy, pokud je částka 0 (nula). Tento text se zobrazí jako poslední řádek oblasti **Ukázka**. 
-    > [!NOTE]
-    >  Je-li tisk pro nulové hodnoty potlačen nebo nebyla žádná aktivita v období, tento text bude potlačen.
+> [!Note] 
+> Je-li tisk pro nulové hodnoty potlačen nebo nebyla žádná aktivita v období, tento text bude potlačen.
 
 ### <a name="numeric-formatting"></a>Číselné formátování
 
@@ -286,8 +272,8 @@ Formátování čísel platí pro všechny částky a nezahrnuje symbol měny. K
 -   **Záporná čísla** – záporná čísla mohou obsahovat záporné znaménko (-), mohou se zobrazovat v závorkách nebo mají trojúhelník (∆).
 -   **Desetinná místa** – počet číslic, které chcete zobrazit za desetinnou čárkou.
 -   **Text přepsání nulové hodnoty** – text, který bude zahrnut do sestavy, pokud je částka 0 (nula). Tento text se zobrazí jako poslední řádek oblasti **Ukázka**. 
-    > [!NOTE]
-    >  Je-li tisk pro nulové hodnoty potlačen nebo nebyla žádná aktivita v období, tento text bude potlačen.
+> [!Note] 
+> Je-li tisk pro nulové hodnoty potlačen nebo nebyla žádná aktivita v období, tento text bude potlačen.
 
 ### <a name="percentage-formatting"></a>Procentuální formátování
 
@@ -296,8 +282,8 @@ Formátování jako procenta zahrnuje znak procent (%). K dispozici jsou tyto m
 -   **Záporná čísla** – záporná čísla mohou obsahovat záporné znaménko (-), mohou se zobrazovat v závorkách nebo mají trojúhelník (∆).
 -   **Desetinná místa** – počet číslic, které chcete zobrazit za desetinnou čárkou.
 -   **Text přepsání nulové hodnoty** – text, který bude zahrnut do sestavy, pokud je částka 0 (nula). Tento text se zobrazí jako poslední řádek oblasti **Ukázka**. 
-    > [!NOTE]
-    >  Je-li tisk pro nulové hodnoty potlačen nebo nebyla žádná aktivita v období, tento text bude potlačen.
+> [!Note] 
+> Je-li tisk pro nulové hodnoty potlačen nebo nebyla žádná aktivita v období, tento text bude potlačen.
 
 ### <a name="custom-formatting"></a>Vlastní formátování
 
@@ -305,8 +291,8 @@ Pomocí kategorie vlastního formátování můžete nakonfigurovat nastavení p
 
 -   **Typ** – Vlastní formátování
 -   **Text přepsání nulové hodnoty** – text, který bude zahrnut do sestavy, pokud je částka 0 (nula). Tento text se zobrazí jako poslední řádek oblasti **Ukázka**. 
-    > [!NOTE]
-    >  Je-li tisk pro nulové hodnoty potlačen nebo nebyla žádná aktivita v období, tento text bude potlačen.
+> [!Note] 
+> Je-li tisk pro nulové hodnoty potlačen nebo nebyla žádná aktivita v období, tento text bude potlačen.
 
 Typ by měl představovat jak kladnou, tak i zápornou hodnotu. Obvykle zadáte podobný formát pro rozlišování mezi kladnými a zápornými hodnotami. Pokud chcete například určit, že kladné i záporné hodnoty mají mít dvě desetinná místa, ale záporné hodnoty se zobrazí v závorkách, zadejte hodnotu **0,00;(0,00)**. V následující tabulce jsou uvedeny vlastní formáty, pomocí kterých lze určovat formát hodnot. Všechny příklady začínají z hodnoty 1234,56.
 
@@ -402,19 +388,19 @@ Ve výchozím nastavení návrhář sestav netiskne řádky, které nemají odpo
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Používání zástupných znaků a rozsahů v definici řádku
 Když zadáte přirozenou hodnotu segmentu do dialogového okna **Dimenze** můžete použít zástupný znak (? nebo \*) na jakékoli pozici segmentu. Aplikace Návrhář sestav extrahuje všechny hodnoty definovaných pozic bez zohlednění zástupných znaků. Například definice řádku obsahuje pouze přirozené hodnoty segmentu a přirozené segmenty mají čtyři znaky. Zadáním hodnoty **6???** na řádku dáte Návrháři sestav pokyn k zahrnutí všech účtů, které mají hodnotu přirozeného segmentu začínající 6. Pokud zadáte **6\***, budou vráceny stejné výsledky, ale výsledky budou obsahovat také hodnoty proměnné šířky, jako je například **60** a **600000**. Návrhář sestav nahradí každý zástupný znak (?) úplným rozsahem možných hodnot, které zahrnují písmena a speciální znaky. Například v rozsahu od **12?0** do **12?4** bude zástupný znak v hodnotě **12?0** nahrazen nejnižší hodnotou ve znakové sadě a zástupný znak v hodnotě **12?4** bude nahrazen nejvyšší hodnotou ve znakové sadě. 
-> [!NOTE]
+> [!Note] 
 > Měli byste se vyhnout používání zástupných znaků pro počáteční a koncové účty v rozsazích. Pokud použijete zástupné znaky u počátečního nebo koncového účtu, mohly by být vráceny neočekávané výsledky.
 
 ### <a name="single-segment-or-single-dimension-ranges"></a>Rozsahy s jedním segmentem nebo jednou dimenzí
 
 Můžete zadat rozsah hodnot segmentů nebo dimenzí. Výhodou zadání rozsahu je, že nemusíte aktualizovat definici řádku pokaždé, když je přidána nová hodnota segmentu nebo hodnota dimenze do finančních dat. Například rozsah **+Účet=\[6100:6900\]** získá hodnoty z účtů 6100 až 6900 do částky řádku. Když rozsah zahrnuje zástupný znak (?), nebude návrhář sestav hodnotit rozsah znak po znaku. Místo toho určí dolní a horní konec rozsahu a potom zahrne koncové hodnoty a veškeré hodnoty mezi nimi. 
-> [!NOTE]
+> [!Note] 
 > Návrhář sestav nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics ERP, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, nebo }. Můžete přidat ampersand (&) pouze při automatickém vytváření definic řádku pomocí dialogového okna **Vložit řádky z dimenzí**.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Rozsahy s více segmenty nebo dimenzemi
 
 Při zadání rozsahu kombinací více hodnot dimenzí se provádí porovnání rozsahu po jednotlivých dimenzích. Porovnání rozsahu nelze provést po znacích nebo částečných segmentech. Například rozsah **+Účet=\[5000:6000\], Oddělení=\[1000:2000\], Nákladové středisko=\[00\]** zahrnuje pouze účty, které odpovídají každému segmentu. V tomto případě první dimenze musí být v rozmezí od 5000 až 6000, druhá dimenze musí být v rozmezí 1000 až 2000 a poslední dimenze musí být 00. Například **+ účet =\[5100\], oddělení =\[1100\], nákladové středisko =\[01\]** není zahrnuto v sestavě, protože poslední segment je mimo zadaný rozsah. Pokud hodnota segmentu zahrnuje mezery, vložte ji do hranatých závorek (\[ \]). Následující hodnoty jsou platné pro čtyřmístný segment: **\[ 234\], \[123 \], \[1 34\]**. Hodnoty dimenze mají být zadávány do hranatých závorek (\[ \]) a návrhář sestav tyto závorky přidá za vás. Pokud rozsah segmentu více nebo více dimenzí obsahuje zástupné znaky (? nebo \*), bude určen horní a dolní konec celého násobného segmentu a potom budou zahrnuty koncové hodnoty a veškeré hodnoty mezi nimi. Pokud máte velký rozsah, například celý rozsah účtů od 40000 do 99999, zadejte platný počáteční účet a koncový účet, kdykoli je to možné. 
-> [!NOTE]
+> [!Note] 
 > Návrhář sestav nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics ERP, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, nebo }. Můžete přidat ampersand (&) pouze při automatickém vytváření definic řádku pomocí dialogového okna **Vložit řádky z dimenzí**.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Sčítání nebo odečítání z jiných účtů v definici řádku
@@ -436,7 +422,7 @@ Chcete-li přičítat nebo odečítat peněžní částky jednoho účtu od pen�
 | Odečtení rozsahu hodnot segmentů obsahujících zástupné znaky.                    | -Účet=\[120?:130?\]                                                                                       |
 
 Ačkoli můžete upravovat účty přímo, můžete použít také dialogové okno **Dimenze** k aplikaci správného formátování na vaše odkazy na finanční údaje. Všechny hodnoty mohou obsahovat zástupné znaky (? nebo \*). Návrhář sestav však nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics ERP, které obsahují kterékoli z následujících vyhrazených znaků: : &, \*, \[, \], {, or }. 
-> [!NOTE]
+> [!Note] 
 > K odečtení hodnot musíte tyto hodnoty umístit do závorek. Zadáte-li například hodnotu **450?-(4509)**, bude zobrazena jako **+Účet==\[4509\]-Účet=\[450?\]** a říká návrháři sestav, aby odečetl částku segmentu účtu 4509 od částky jakéhokoli segmentu účtu, který má na začátku 450.
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Přičítání nebo odečítání účtů od jiných účtů
@@ -451,7 +437,7 @@ Ačkoli můžete upravovat účty přímo, můžete použít také dialogové ok
 
 4.  Opakováním kroků 2 až 3 přidejte další operace.
 
-> [!NOTE]
+> [!Note] 
 > Operátor platí pro všechny dimenze v řádku.
 
 ## <a name="description-of-the-dimensions-dialog-box"></a>Popis dialogového okna Dimenze
@@ -485,8 +471,8 @@ Sada hodnot dimenze je pojmenovaná skupina hodnot dimenze. Sada hodnot dimenze 
 3.  V dialogovém okně **Správa sad hodnot dimenzí** v poli **Dimenze** vyberte typ dimenze.
 4.  V seznamu vyberte sadu hodnot dimenze k aktualizaci a poté klikněte na tlačítko **Upravit**.
 5.  V dialogovém okně **Upravit** upravte hodnoty vzorce k zahrnutí do sady. 
-    > [!NOTE]
-    >  Pokud přidáte nové účty nebo dimenze, nezapomeňte upravit existující sady hodnot dimenzí tak, aby změny zohledňovaly.
+> [!Note] 
+> Pokud přidáte nové účty nebo dimenze, nezapomeňte upravit existující sady hodnot dimenzí tak, aby změny zohledňovaly.
 6.  Klikněte dvakrát na buňku a vyberte odpovídající operátor, účet **Od** a účet **Do**.
 7.  Kliknutím na tlačítko **OK** zavřete dialogové okno **Upravit** a uložte změny.
 

@@ -3,11 +3,12 @@ title: "Integrace plánování rozpočtu s jinými moduly"
 description: "Plány rozpočtu lze vytvořit z několika různých zdrojů. Základní prvky periodického zpracování jsou stejné pro všechny zdroje."
 author: twheeloc
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BudgetPlanGenerate
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7663453ddf87bcb43d2f19ebec3c9bda90eda884
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: f50e58d63a9db4d6a8b5390174e2c7b87970717d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -51,7 +52,7 @@ Základní prvky periodického zpracování jsou stejné u všech procesů. Kart
 
 Pro každý proces generování jsou k dispozici tři akce:
 
--   **Vytvořit nový plán rozpočtu** vytvoří nový plán s atributy, které jsou vybrány v části **Cíl**. Tyto atributy nemusí být jedinečné. Dva plány mohou tudíž být se stejným názvem a jinými hodnotami.
+-   **Vytvořit nový plán rozpočtu** – vytvoření nového plánu s atributy, které jsou vybrány v části **Cíl**. Tyto atributy nemusí být jedinečné. Dva plány mohou tudíž být se stejným názvem a jinými hodnotami.
 -   **Nahradit existující scénář plánu rozpočtu** – odstranění všech dat v cílovém plánu rozpočtu ve vybraném scénáři plánu rozpočtu a vytvoření nových řádků, které používají vybraná zdrojová data.
 -   **Aktualizovat existující scénář plánu rozpočtu a připojit nová data** – aktualizace existujících řádků v cílovém plánu, které odpovídají původním řádkům, a také přidání nových řádků pro nová data. Párování vychází z účtu hlavní knihy, data, třídy rozpočtu a různých ostatních polí. Například při vytvoření plánů rozpočtu z pozic prognózy je číslo pozice důležité pole. Všechny řádky, které mají číslo pozice odpovídající číslu zdrojové pozice, budou nahrazeny novými řádky ze zdroje.
 
@@ -65,7 +66,7 @@ Možnost **Historie** na kartě **Cíl** umožňuje použití dat ze zdrojových
 
 Pole **Agregovat součet podle** v horní části stránky také určuje datum, které je použito. Toto pole je součet částek a volitelně nastaví datum platnosti na první den fiskálního období nebo fiskálního roku. 
 
-Mnoho polí na kartě **Cíl** lze upravit nebo je jen pro čtení – v závislosti na akci, kterou jste vybrali. Při změně z vytváření nového plánu rozpočtu na aktualizaci existujícího plánu pole **Název plánu rozpočtu** nebude k dispozici a pole, která se vztahují k výběru existujícího plánu, bude k dispozici. Na obou kartách **Cíl** i **Zdroj ** není pole **Hlavní kniha** nikdy k dispozici, protože hodnota vychází z vybraného procesu plánování rozpočtu. 
+Mnoho polí na kartě **Cíl** lze upravit nebo je jen pro čtení – v závislosti na akci, kterou jste vybrali. Při změně z vytváření nového plánu rozpočtu na aktualizaci existujícího plánu pole **Název plánu rozpočtu** nebude k dispozici a pole, která se vztahují k výběru existujícího plánu, bude k dispozici. Na obou kartách **Cíl** i **Zdroj** není pole **Hlavní kniha** nikdy k dispozici, protože hodnota vychází z vybraného procesu plánování rozpočtu. 
 
 Pole **Třída rozpočtu** umožňuje nastavit řádky plánu rozpočtu jako výdajové transakce nebo transakce výnosů. Transakce výnosů se obvykle připíší na účet hlavní knihy a jsou tedy uloženy jako záporné. Obvykle se tyto transakce také zobrazí jako záporné částky v plánu rozpočtu. Přidáním třídy rozpočtu jako pole v rozvržení pro plán však můžete povolit výnosy, aby se zobrazily jako kladné množství.
 

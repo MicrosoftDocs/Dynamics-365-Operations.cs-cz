@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustParameters, VendParameters
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -24,6 +25,8 @@ ms.lasthandoff: 09/29/2017
 ---
 
 # <a name="invoice-processing"></a>Zpracování fakturace
+
+[!include[banner](../includes/banner.md)]
 
 Toto téma stručně popisuje některé scénáře specifické pro určité země, jako je například intrakomunitární daň z přidané hodnoty (DPH) a odložená daň. Právní požadavky pro některé evropské země mají vliv na proces fakturace. Toto téma poskytuje také informace o zpracování faktur odběratelů a dodavatelů pro tyto země. 
 <table>
