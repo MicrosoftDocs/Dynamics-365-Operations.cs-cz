@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="generate-electronic-documents-and-update-application-data-using-the-electronic-reporting-tool"></a>Generování elektronických dokumentů a aktualizace dat aplikace pomocí nástroje elektronického výkaznictví
 
+[!include[banner](../includes/banner.md)]
+
 Můžete vytvářet formáty elektronického výkaznictví (ER), které lze použít v aplikaci Finance and Operations ke generování odchozích elektronických dokumentů. Můžete vytvořit také formáty ER, které analyzují příchozí elektronické dokumenty, a použít jejich obsah k aktualizaci dat aplikace. 
 
 Pomocí této funkce lze použít jeden formát ER pro generování odchozích elektronických dokumentů a následné aktualizaci dat aplikace. Tuto funkci lze využít v těchto případech:
