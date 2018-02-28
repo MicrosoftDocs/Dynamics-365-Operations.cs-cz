@@ -62,7 +62,7 @@ Proces vytváření vlastního pole a umístění daného pole ve formuláři je
 10.   Klikněte na tlačítko **Vložit** a vložíte označená pole do vybrané oblasti formuláře. 
 11.   **Volitelné:** Povolte režim **Přesunout** z panelu nástrojů individuálního nastavení a přesuňte nová pole na požadované místo ve vybrané oblasti. Další informace o použití různých funkcí individuálního nastavení za účelem optimalizace formuláře pro vaše osobní použití naleznete v části [Přizpůsobení uživatelského prostředí](personalize-user-experience.md).  
 
-### <a name="sharing-custom-fields-with-other-users"></a>Sdílení vlastních polí s dalšími uživateli
+## <a name="sharing-custom-fields-with-other-users"></a>Sdílení vlastních polí s dalšími uživateli
 Po vytvoření vlastního pole a jeho vystavení ve formuláři můžete chtít poskytnout toto aktualizované zobrazení stránky s novým polem jiným uživatelům v systému. Toho lze dosáhnout dvěma různými způsoby pomocí možností individuálního nastavení produktu:
 
 -   Doporučený postup je prostřednictvím správce systému, který může individuální nastavení předat všem uživatelům nebo podmnožině uživatelů. Další informace najdete v části [Přizpůsobení uživatelského prostředí](personalize-user-experience.md). 
