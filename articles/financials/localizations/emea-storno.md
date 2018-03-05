@@ -26,6 +26,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="storno-accounting"></a>Záporné storno
 
+[!include[banner](../includes/banner.md)]
+
 Záporné storno je praxe používání záporných čísel ke stornování původních účetních položek deníku.
 
 *Záporné storno* je praxe používání záporných debetních nebo kreditních částek ke stornování původních účetních položek deníku. Vzhledem k tomu, že účetní obvykle zapisují položky záporného storna červeně, tento účetní standard se také označuje jako *červené storno*. Pomocí záporného storna můžete zrušit dokument s nesprávnými částkami, po zrušení byste však vždy měli zadat správnou částku dokumentu.

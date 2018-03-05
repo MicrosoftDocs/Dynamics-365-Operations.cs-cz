@@ -25,6 +25,8 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="bank-management-workspace"></a>Pracovní prostor správy banky
 
+[!include[banner](../includes/banner.md)]
+
 Pracovní prostor **Správa banky** zobrazuje informace, které se vztahují k bankovním účtům společnosti. Tento pracovní prostor obsahuje zobrazení **Souhrn** a stránku **Analýzy**. Zobrazení **Souhrn** ukazuje souhrnné dlaždice, informace o bankovním účtu, graf zůstatku a související informace. Stránka **Analýza** používá funkce Microsoft Power BI k zobrazení vizuálů, které se vztahují k zůstatkům na bankovním účtu.
 
 ## <a name="summary-view"></a>Souhrnné zobrazení

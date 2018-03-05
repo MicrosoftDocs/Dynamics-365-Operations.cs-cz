@@ -25,6 +25,9 @@ ms.lasthandoff: 09/29/2017
 ---
 
 # <a name="expense-management-parameters"></a>Parametry správy výdajů
+
+[!include[banner](../includes/banner.md)]
+
 -----------------------------
 
 Obecné chování v modulu Správa výdajů řídí následující parametry.

@@ -24,6 +24,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="tax-directives-for-europe"></a>Daňové předpisy pro Evropu
+
+[!include[banner](../includes/banner.md)]
+
 Směrnice EU obsahuje předpisy pro členské státy ohledně pravidel pro fakturaci a informace, které je při vytváření faktur třeba uvést. Směrnice EU uvádí informace, které vyžadují dodavatelé pro své zákazníky v EU. Faktury mohou například obsahovat odkaz na právní důvody pro uplatnění nulové sazby DPH nebo osvobození od daně. Pokud faktura upravuje dříve vystavenou fakturu, například dobropis, je třeba uvést jednoznačný odkaz na původní fakturu.
 
 - Chcete-li na prodejní fakturu, volnou fakturu nebo sestavu faktur projektu vytisknout popis kódů DPH, nastavte u těchto kódů referenční text daňových předpisů.
