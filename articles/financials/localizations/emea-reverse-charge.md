@@ -24,6 +24,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="reverse-charge-vat"></a>DPH stornovacího poplatku
+
+[!include[banner](../includes/banner.md)]
+
 Toto téma popisuje obecný postup pro určení přenesení daňové povinnosti (reverse charge) pro DPH u evropských zemí.
 
 Mechanismus reverse charge znamená přenesení odpovědnosti za účetnictví a vykazování DPH z prodávajícího na kupujícího. Příjemce tedy do výkazu DPH uvádí DPH na výstupu (v roli prodávajícího) i DPH na vstupu (v roli kupujícího).
