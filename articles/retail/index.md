@@ -19,14 +19,16 @@ ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 35b574e24e721e80ca1469878697aba4c1699dff
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 40d54a9a2920e87caba62c92b5ca6465fa68e3d4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/07/2018
 
 ---
 
 # <a name="welcome-to-dynamics-365-for-retail"></a><span data-ttu-id="d1980-103">Vítá vás aplikace Dynamics 365 for Retail</span><span class="sxs-lookup"><span data-stu-id="d1980-103">Welcome to Dynamics 365 for Retail</span></span>
+
+[!include[banner](includes/banner.md)]
 
 <span data-ttu-id="d1980-104">Microsoft Dynamics 365 for Retail je komplexní maloobchodní řešení, které zajišťuje sjednocené obchodování napříč všemi prodejními kanály.</span><span class="sxs-lookup"><span data-stu-id="d1980-104">Microsoft Dynamics 365 for Retail is an end-to-end retail solution that delivers unified commerce across all channels.</span></span> <span data-ttu-id="d1980-105">Zahrnuje prodeje, mobilitu, zpravodajství a produktivitu, které obchodníkům a pracovníkům pomáhají dosahovat lepších výsledků způsobem využívajícím především cloudová úložiště a mobilní zařízení.</span><span class="sxs-lookup"><span data-stu-id="d1980-105">It encompasses sales, mobility, intelligence, and productivity to help retailers and workers achieve more in a cloud-first, mobile-first manner.</span></span> <span data-ttu-id="d1980-106">Modul Retail nabízí rozsáhlou podporu pro provoz celé řady obchodních procesů, jako jsou možnosti nákupu, skladů a správa prodejních kanálů.</span><span class="sxs-lookup"><span data-stu-id="d1980-106">Retail offers comprehensive support to operate a wide range of business processes, such as merchandising, inventory, and channel management capabilities.</span></span> <span data-ttu-id="d1980-107">Poskytuje také dokonalé zkušenosti uživatelům napříč všemi styčnými body.</span><span class="sxs-lookup"><span data-stu-id="d1980-107">It also provides immersive customer experiences across all touchpoints.</span></span>
 

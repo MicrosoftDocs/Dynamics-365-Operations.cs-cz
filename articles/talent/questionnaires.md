@@ -19,14 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: a892b53b555c29b1fc3928bb24eff98128d648f3
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 84d5f60cdce4cd667c408d17d9892d7079947f58
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 03/07/2018
 
 ---
 
 # <a name="questionnaires"></a><span data-ttu-id="135dc-105">Dotazníky</span><span class="sxs-lookup"><span data-stu-id="135dc-105">Questionnaires</span></span>
+
+[!include[banner](includes/banner.md)]
 
 <span data-ttu-id="135dc-106">Toto téma obsahuje obecné informace o dotaznících a odkazy na podrobnější informace.</span><span class="sxs-lookup"><span data-stu-id="135dc-106">This topic provides general information about questionnaires, and links to more detailed information.</span></span> <span data-ttu-id="135dc-107">Dotazník je sada otázek, které se používají ke shromažďování informací pro různé účely.</span><span class="sxs-lookup"><span data-stu-id="135dc-107">A questionnaire is a set of questions that is used to collect information for various purposes.</span></span> <span data-ttu-id="135dc-108">Můžete navrhovat, vytvářet, rozesílat a vyplňovat dotazníky a následně provádět analýzu výsledků.</span><span class="sxs-lookup"><span data-stu-id="135dc-108">You can design, create, distribute, and complete questionnaires, and then analyze the results.</span></span> 
 
