@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="questionnaires"></a>Dotazníky
 
+[!include[banner](includes/banner.md)]
+
 Toto téma obsahuje obecné informace o dotaznících a odkazy na podrobnější informace. Dotazník je sada otázek, které se používají ke shromažďování informací pro různé účely. Můžete navrhovat, vytvářet, rozesílat a vyplňovat dotazníky a následně provádět analýzu výsledků. 
 
 Dotazník můžete upravit pomocí různých funkcí, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, podle svých specifických požadavků. Zde je několik příkladů použití dotazníků:

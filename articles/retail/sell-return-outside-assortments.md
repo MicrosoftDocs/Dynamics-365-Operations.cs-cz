@@ -27,6 +27,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="sell-and-return-products-outside-of-an-assortment"></a>Prodej a návrat produktů, mimo sortiment
+
+[!include[banner](includes/banner.md)]
+
 Společným scénářem pro všechny prodejce je prodej produktů svým zákazníkům nebo příjem vrácených produktů od zákazníků i v případě, že ve svém obchodě nemají konkrétní produkty (jinými slovy, do obchodu nejsou roztříděné produkty).
 Zde jsou některé typické scénáře:
 

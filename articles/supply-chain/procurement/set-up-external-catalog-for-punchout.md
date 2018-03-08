@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Nastavení externího katalogu pro funkci PunchOut eProcurement
 
+[!include[banner](../includes/banner.md)]
+
 Pomocí externího katalogu můžete zajistit, že informace o produktu a cenách, které následně zpracováváte v aplikaci Dynamics 365 for Finance and Operations, Enterprise Edition z července 2017 jsou přesné a aktuální. Žádanku poté lze schválit a převést na nákupní objednávku a tuto objednávku následně zadat u dodavatele.
 
 Když při nastavování externího katalogu zaměstnanec připravuje žádanku, bude mít možnost přesměrovat ji na externí web, do externího katalogu a vrátit košík, který byl vytvořen na externím webu. Tato komunikace vychází z protokolu cXML a je nutné ji nastavit mezi systémy nákupní a prodejní organizace.

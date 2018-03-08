@@ -26,6 +26,9 @@ ms.lasthandoff: 01/19/2018
 ---
 
 # <a name="configuration-keys-and-data-entities"></a>Konfigurační klíče a datové entity
+
+[!include[banner](../includes/banner.md)]
+
 Před použitím datových entit k importu nebo exportu dat doporučujeme nejprve určit dopadu konfiguračních klíčů na datové entity, které chcete použít. 
 
 Další informace o konfiguračních klíčích v aplikaci Finance and Operations naleznete v části [Licenční kódy a sestavy konfiguračních klíčů](../sysadmin/license-codes-configuration-keys-report.md).

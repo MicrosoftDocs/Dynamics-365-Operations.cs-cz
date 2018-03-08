@@ -28,6 +28,8 @@ ms.lasthandoff: 10/10/2017
 
 # <a name="ship-an-order-from-a-different-store"></a>Dodání objednávky z jiného obchodu
 
+[!include[banner](includes/banner.md)]
+
 Díky funkci odeslání nákladů v aplikaci Dynamics 365 for Retail mohou být objednávky odběratele provedeny v jednom obchodě a expedovány z jiného obchodu. Objednávky odběratele v klientovi pokladního místa (POS) podporují více možností plnění. Některé příklady možností plnění zahrnují:
 -   Vyzvednutí ze stejného obchodu v jiné datum.
 -   Vyzvednutí z jiného obchodu ve stejné nebo jiné datum.

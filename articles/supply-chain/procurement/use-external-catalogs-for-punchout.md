@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: PurchTable, PurchVendorPortalRequests
+ms.search.form: PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: bis
 ms.search.scope: Core, Operations
@@ -27,6 +27,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="use-external-catalogs-for-punchout-eprocurement"></a>Použití externích katalogů pro funkci PunchOut eProcurement
+
+[!include[banner](../includes/banner.md)]
+
 Díky externím katalogům elektronického nákupu PunchOut nemusíte spravovat informace o produktech svých dodavatelů ve svých hlavních datech. Místo toho je nákupní košík na webu dodavatele převeden na řádky požadavku, které mají správné informace o produktu. 
 
 Měli byste se vyhnout udržování popisů a cen produktů svých dodavatelů v hlavních datech svých produktů. Místo toho použijte externí katalogy pro funkci PunchOut eProcurement Když potom zaměstnanci vytvářejí žádanky, mohou „proniknout“ na web externího katalogu dodavatele (jinými slovy - odejdou z vašeho systému a přejdou na web dodavatele). Produkty, které jsou přidány do nákupního košíku na webu dodavatele, lze poté převést na řádky požadavků. Proto získáte správné informace o produktu správné: ID produktu, název, cena a podobně.

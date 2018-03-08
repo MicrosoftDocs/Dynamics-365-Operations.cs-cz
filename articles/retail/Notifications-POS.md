@@ -27,6 +27,8 @@ ms.lasthandoff: 12/20/2017
 
 # <a name="display-notifications-in-point-of-sale"></a>Zobrazení oznámení v pokladním místě
 
+[!include[banner](includes/banner.md)]
+
 V dnešním moderním prostředí maloobchodu jsou zaměstnancům obchodu přiřazovány různé úkoly, jako je pomoc zákazníkům, zadávání transakcí, provádění inventur a přijímání objednávek v obchodě. Klient POS umožňuje zaměstnancům provádět tyto a mnohé další úlohy v jedné jediné aplikaci. Kvůli různým úlohám prováděným během dne může být pro zaměstnance nutné dostávat oznámení, pokud cokoliv vyžaduje jejich pozornost. Architektura oznámení v POS řeší tento problém tím, že maloobchodní prodejci mohou nakonfigurovat oznámení na základě rolí. U aplikace Dynamics 365 for Retail s aktualizací Application update lze tato oznámení konfigurovat pouze pro POS operace.
 
 V současné době systém poskytuje možnost zobrazit oznámení pro operaci plnění objednávky, architektura je však navržena tak, aby byla rozšířitelná, aby v budoucnu mohli vývojáři psát obslužné rutiny oznámení pro jakoukoliv operaci a zobrazit oznámení v POS.  

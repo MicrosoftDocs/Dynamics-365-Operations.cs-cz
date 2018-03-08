@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="design-a-questionnaire"></a>Návrh dotazníku
 
+[!include[banner](includes/banner.md)]
+
 Toto téma popisuje postup vytváření dotazníku. Prvním krokem je návrh dotazníku. Při navrhování dotazníku můžete pouze zapsat otázky a odpovědi, ale také vytvořit strukturu, která umožňuje záznam a uspořádání odpovědí. 
 
 Pečlivě navržený dotazník pomáhá zvyšovat kvalitu dat, která shromažďujete. Díky promyšlenému návrhu můžete lépe a ve vhodný okamžik vybrat požadované otázky k dotazníku. Následující body vám pomohou naplánovat efektivní dotazník:

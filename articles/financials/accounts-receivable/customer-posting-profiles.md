@@ -54,10 +54,6 @@ Určete účty hlavní knihy, které jsou použity při zaúčtování transakc�
 Pokud chcete, aby všechny transakce odběratele měly shodný účetní profil, nastavte pouze jeden účetní profil s hodnotou Vše v poli Kód účtu. Zadejte následující hodnoty pro nastavení účetního profilu:
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Pole</th>

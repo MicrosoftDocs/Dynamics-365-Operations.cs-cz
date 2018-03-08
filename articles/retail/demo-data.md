@@ -29,6 +29,8 @@ ms.lasthandoff: 10/17/2017
 
 # <a name="demo-data-screen-layouts-in-mposcpos"></a>Rozložení obrazovky ukázkových dat v MPOS/CPOS
 
+[!include[banner](includes/banner.md)]
+
 Toto téma poskytuje informace o rozvrženích obrazovky, která jsou zahrnuta se sadou ukázkových dat v uživatelském prostředí pokladních míst (POS) v aplikaci Microsoft Dynamics 365 for Retail.
 
 ## <a name="overview"></a>Přehled

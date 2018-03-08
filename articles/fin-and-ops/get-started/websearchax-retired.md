@@ -27,6 +27,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="websearchax-retired"></a>WebSearchAX vyřazeno
 
+[!include[banner](../includes/banner.md)]
+
 Museli jsme vyřadit stránku WebSearchAX. Doporučujeme použít vyhledání na webu z vašeho oblíbeného vyhledávače pro její nahrazení.  Například: 
 
 site:technet.microsoft.com dynamics ax 2012 "hledaný termín"

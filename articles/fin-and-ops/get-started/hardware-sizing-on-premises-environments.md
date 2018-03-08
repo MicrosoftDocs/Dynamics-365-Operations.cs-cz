@@ -26,6 +26,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="hardware-sizing-for-on-premises-environments"></a>Nastavení velikosti hardwaru pro místní prostředí
+
+[!include[banner](../includes/banner.md)]
+
 Než zahájíte proces nastavení velikosti hardwaru a infrastruktury pro místní prostředí, seznamte se s informacemi z témat [Požadavky na systém](system-requirements.md) a [Pokyny k nastavení a nasazení](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md), abyste dobře rozuměli základní infrastruktuře. 
 
   **Poznámka:** Věnujte velkou pozornost doporučeným postupům nastavení systému pro dosažení optimálního výkonu. 
