@@ -27,6 +27,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="register-material-consumption-using-a-mobile-device"></a>Registrace spotřeby materiálu pomocí mobilního zařízení
+
+[!include[banner](../includes/banner.md)]
+
 Toto téma popisuje workflow, který umožňuje registraci spotřeby surovin ve výrobě pomocí ručního zařízení.
 
 <a name="introduction"></a>Úvod

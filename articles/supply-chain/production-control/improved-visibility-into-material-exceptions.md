@@ -26,6 +26,8 @@ ms.lasthandoff: 12/14/2017
 ---
 # <a name="visibility-into-material-exceptions"></a>Přehled výjimek materiálu
 
+[!include[banner](../includes/banner.md)]
+
 V pracovním prostoru **Správa výrobního provozu** prostoru vám poskytují lepší přehled výjimek surovin pro výrobní zakázky a dávkové objednávky tři dlaždice:
 
 - Neuvolněné řádky materiálu vyžadující pozornost

@@ -30,6 +30,8 @@ ms.lasthandoff: 01/19/2018
 
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Postup přípravy na správu standardních nákladů pro vyráběné položky
 
+[!include[banner](../includes/banner.md)]
+
 Toto téma popisuje kroky pro přípravu správy nákladů pro vyráběné položky. Kroky pro vyrobené položky se mírně liší od kroků pro zakoupené položky.
 
 Zásady přiřazené vyráběným položkám mohou mít vliv na výpočty nákladů pro nadřazené vyráběné položky. Chcete-li připravit na správu nákladů vyráběných položek, postupujte podle těchto kroků.
