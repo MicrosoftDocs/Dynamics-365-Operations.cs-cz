@@ -9,7 +9,7 @@
 ## [Zásobník aplikace a architektura serveru](dev-tools/application-stack-server-architecture.md)
 ## [Získání zkušební kopie](dev-tools/get-evaluation-copy.md)
 ## [Registrace předplatného](dev-tools/sign-up-preview-subscription.md)
-## [Instance přístupu](dev-tools/access-instances.md)
+## [Nasazení a přístup k vývojovému prostředí](dev-tools/access-instances.md)
 ## [Systémové požadavky na vývoj](dev-tools/development-system-requirements.md)
 ## Vzorová aplikace vozového parku
 ### [Vzorová aplikace vozového parku](dev-tools/fleet-management-sample.md)
@@ -360,9 +360,9 @@
 #### [Typ ValueMetadata](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
 
 # Integrace dat
-## [Vzory integrace](data-entities/integration-overview.md)
+## [Zvolení strategie integrace dat (import/export)](data-entities/integration-overview.md)
 
-## API integrace dat
+## Rozhraní API integrace dat
 ### [API balíčku správy dat](data-entities/data-management-api.md)
 ### [Koncové body služby](data-entities/services-home-page.md)
 #### [Řešení problému s ověřením služby](data-entities/troubleshoot-service-authentication.md)
@@ -381,12 +381,12 @@
 
 ### [Integrace dat s použitím služby Common Data Service](data-entities/data-integration-cds.md) 
 #### [Konfigurace scénáře zpeněžení potenciálního zákazníka](../supply-chain/sales-marketing/prospect-to-cash.md)
-##### [Synchronizace produktů z aplikace Finance and Operations na produkty v aplikaci Sales](../supply-chain/sales-marketing/products-template-mapping.md)
-##### [Synchronizace obchodních vztahů z aplikace Sales na odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
-##### [Synchronizace kontaktů z aplikace Sales na kontakty nebo odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
-##### [Synchronizace hlaviček a řádků prodejních nabídek z aplikace Sales do aplikace Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-##### [Synchronizace hlaviček a řádků prodejní objednávky z aplikace Finance and Operations do Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-##### [Synchronizace hlaviček a řádků prodejní faktury z aplikace Finance and Operations do Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+##### [Synchronizace produktů z aplikace Finance and Operations na produkty v aplikaci Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+##### [Synchronizace obchodních vztahů z aplikace Sales na odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+##### [Synchronizace kontaktů z aplikace Sales na kontakty nebo odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+##### [Synchronizace hlaviček a řádků prodejních nabídek z aplikace Sales do aplikace Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+##### [Synchronizace hlaviček a řádků prodejní objednávky z aplikace Finance and Operations do Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+##### [Synchronizace hlaviček a řádků prodejní faktury z aplikace Finance and Operations do Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 ##### [Synchronizace obchodních vztahů přímo z aplikace Sales na odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ##### [Synchronizace produktů přímo z aplikace Finance and Operations na produkty v aplikaci Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ##### [Synchronizace kontaktů přímo z aplikace Sales na kontakty nebo odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
@@ -452,6 +452,8 @@
 
 ## [Použití vlastní databáze](analytics/export-entities-to-your-own-database.md)
 
+## [Zdroje pro odpověď na požadavek na data GDPR](gdpr/gdpr-home-page.md)
+
 # [Domovská stránka o průběžném doručování](dev-tools/continuous-delivery-home-page.md)
 ## [Často kladené dotazy k vývoji a průběžnému doručování](dev-tools/continuous-delivery-faq.md)
 ## [Vyloučení testovacích balíčků z výstupu sestavení](dev-tools/exclude-test-packages.md)
@@ -504,7 +506,7 @@
 # Nasazení
 ## [Nasazení ukázkového prostředí](deployment/deploy-demo-environment.md)
 
-## Nasazení v cloudu
+## Cloudové nasazení
 ### [Připojování architektury Azure Resource Manager](deployment/arm-onboarding.md)
 ### [Azure ExpressRoute a Dynamics 365 for Finance and Operations, Enterprise Edition](deployment/expressroute.md)
 
@@ -515,6 +517,7 @@
 ### [Vytvoření projektu on-premises](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Nastavení a nasazení místních prostředí](deployment/setup-deploy-on-premises-environments.md)
 ### [Vývoj a nasazení vlastních modelů do místních prostředí](deployment/develop-deploy-custom-models-on-premises.md)
+### [Konfigurace reverzní proxy pro vaše místní prostředí](deployment/onprem-reverseproxy.md)
 ### [Použití aktualizací nasazení on-premises](deployment/apply-updates-on-premises.md)
 ### [Opětovné nasazení místního nasazení](deployment/redeploy-on-prem.md)
 ### [Aktualizace místního agenta](lifecycle-services/update-local-agent.md)
@@ -527,7 +530,7 @@
 ### [Instalace nasaditelného balíčku](deployment/install-deployable-package.md)
 ### [Řešení potíží s použitím balíčku](deployment/deployable-package-troubleshooting.md)
 
-# [Upgrade a migrace](migration-upgrade/upgrade-home-page.md)
+# [Upgrady, aktualizace a opravy hotfix](migration-upgrade/upgrade-home-page.md)
 ## [Upgrade z aplikace AX 2012 na aplikaci Dynamics 365 for Finance and Operations](migration-upgrade/upgrade-overview-2012.md)
 ### [Upgrade AX 2012 – použití nástroje Upgrade Analyzer pro plánování](migration-upgrade/upgrade-analyzer-tool.md)
 ### [Upgrade AX 2012 – použití služby upgradu kódu pro odhad úsilí](migration-upgrade/analyze-code-upgrade.md)
@@ -555,8 +558,7 @@
 ### [Rozdělení modelů](dev-tools/model-split.md)
 ### [Použití delegátů pro vyřešení závislostí mezi modely](migration-upgrade/delegates-migration.md)
 
-
-## Upgrade na nejnovější aktualizaci
+## Upgrade na nejnovější aktualizaci (cloud)
 ### [Proces přechodu na nejnovější aktualizaci](migration-upgrade/upgrade-latest-update.md)
 ### [Zásady životního cyklu](migration-upgrade/versions-update-policy.md)
 ### [Použití nejnovější aktualizaci platformy na vaše prostředí](migration-upgrade/upgrade-latest-platform-update.md)
@@ -564,13 +566,17 @@
 ### [Upgrade na prostředí sandbox](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Upgrade dat ve vývojovém nebo ukázkovém prostředí](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [Aktualizace vývojových nástrojů](dev-tools/update-development-tools.md)
+
+## Upgrade na nejnovější aktualizaci (on-premises)
 ### [Použití aktualizací nasazení on-premises](deployment/apply-updates-on-premises.md)
 ### [Opětovné nasazení místního nasazení](deployment/redeploy-on-prem.md)
 
-## Opravy hotfix a obsluha
+## Opravy hotfix
 ### [Stažení oprav hotfix z Lifecycle Services](migration-upgrade/download-hotfix-lcs.md)
+### [Použití aktualizací na cloudové prostředí](deployment/apply-deployable-package-system.md)
 ### [Instalace oprav hotfix metadat](migration-upgrade/install-metadata-hotfix-package.md).
 ### [Služba Patch Reporting Services v samostatném prostředí](migration-upgrade/patch-reporting-service-environment.md)
+### [Aktualizovat vývojové nástroje aplikace Visual Studio](dev-tools/update-development-tools.md)
 
 ## Zastaralé
 ### [Zastaralé API](migration-upgrade/deprecated-apis.md)

@@ -183,6 +183,7 @@
 ### [MPOS architektura](dev-itpro/retail-modern-pos-architecture.md)
 ### [Architektura publikování maloobchodního online obchodu](dev-itpro/retail-online-store-publishing-architecture.md)
 ### [Obsah výkonnosti maloobchodní sítě Power BI](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [Certifikace Payment Application Data Security Standards (PA-DSS)](dev-itpro/PA-DSS-Certification.md)
 
 ## Nasazení a opravy hotfix
 ### [Přehled Retail Store Scale Unit](dev-itpro/retail-store-system-begin.md)
