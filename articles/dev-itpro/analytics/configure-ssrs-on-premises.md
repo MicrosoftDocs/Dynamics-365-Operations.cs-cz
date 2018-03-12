@@ -26,6 +26,8 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="configure-sql-server-reporting-services-for-an-on-premises-deployment"></a>Konfigurace služby SQL Server Reporting Services pro místní nasazení
 
+[!include[banner](../includes/banner.md)]
+
 Kroky v tomto tématu lze použít ke konfiguraci služby SQL Server Reporting Services (SSRS) pro nasazení aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (místní).
 
 1. Otevřete aplikaci Správce konfigurace služby Reporting Services.
