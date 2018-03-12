@@ -1,9 +1,9 @@
 ---
 title: "Domovská stránka správy dodavatelsko-odběratelského řetězce"
-description: "Toto téma obsahuje seznam témat nápovědy a další zdroje pro funkce správy dodavatelsko-odběratelského řetězce v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
+description: "Tato stránka obsahuje seznam témat nápovědy a další zdroje pro funkce správy dodavatelsko-odběratelského řetězce v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 02/15/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6c193a3a9deba215d4374ccffc3bf2d854fbd0f2
-ms.openlocfilehash: 9314a129b85cf6cb2d2ca379eafc142ce234d535
+ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
+ms.openlocfilehash: bf3192a5189a3b18ad28f3c5cb0dd6d402824ed5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/21/2018
 
 ---
 
@@ -40,7 +40,7 @@ Přejděte na web <a href="https://roadmap.dynamics.com/">Přehled Microsoft Dyn
 Vyberte oblast funkce, o které chcete získat informace.
 
 - [Nákladové účetnictví](../financials/cost-accounting/cost-accounting-home-page.md)
-- [Správa nákladů](cost-management/costing-sheets.md)  
+- [Správa nákladů](cost-management/cost-management-home-page.md)  
 - [Řízení zásob](inventory/inventory-home-page.md)
 - [Hlavní plánování](master-planning/master-planning-home-page.md)
 - [Zásobování a zdroje](procurement/procurement-sourcing-overview.md)
@@ -54,8 +54,9 @@ Vyberte oblast funkce, o které chcete získat informace.
 
 Tato krátká videa vám představí nové funkce, které přináší aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (prosinec 2017).
 
--  [Možnost integrace hotovosti](https://youtu.be/AVV9x5x-XCg) 
+-  [Integrace zpeněžení potenciálního zákazníka](https://youtu.be/AVV9x5x-XCg) 
 -  [Poradce při optimalizaci](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+-  [Použití šablony skladu pro kopírování konfigurace](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
 Tato krátká videa vám představí nové funkce, které přináší aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017).
 
@@ -67,17 +68,36 @@ Tato krátká videa vám představí nové funkce, které přináší aplikace M
 
 Tyto nahrávky z technické konference se zabývají funkcionalitou produktu v předchozí verzi aplikace Finance and Operations, ale stále platí stejné koncepty a postupy jsou ve stávající verzi podobné. 
 
--  <a href="https://youtu.be/zotrj3SbCl4">Konfigurátor produktu v aplikaci Microsoft Dynamics AX</a>
--  <a href="https://youtu.be/7v8BPmEs9Dg">Hlavní plánování – tipy a triky pro řešení problémů s výkonem</a>
--  <a href="https://youtu.be/RLXybx20B5o">Pomoc! MRP je pomalé.</a>
--  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Zpracování příchozích avíz expedice zboží v modulu Řízení skladu</a> 
--  <a href="https://www.youtube.com/watch?v=--_didmZKHo&t=10s">Co nejefektivnější využívání systému řízení skladu</a>
--  <a href="https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s">Pokročilé řízení skladu ve verzi R3 – zpracování příchozích položek a minimální/maximální doplňování</a>
--  <a href="https://youtu.be/Og0gLlVp7jA">Pokročilé řízení skladu ve verzi R3 – běžný pracovní den, zpracování odchozích položek a doplňování poptávky</a>
--  <a href="https://youtu.be/5w1MngVchBA">Štítky v novém modulu řízení skladu ve verzi Microsoft Dynamics AX 2012 R3</a>
--  <a href="https://www.youtube.com/embed/QUxXUrN-7n4">Dynamics AX 2012 R3: pokročilé řízení skladu – běžný pracovní den procesní výroby</a>
--  <a href="https://youtu.be/y1jrd3A_k70">Subdodávky operací a aktivit ve výrobě</a>
--  <a href="https://youtu.be/jgmTgJIgEFQ">Správa dopravy (TMS) v nové aplikace Microsoft Dynamics AX</a>
+**Správa nákladů**
+
+-  [Přehled správy nákladů](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
+
+**Hlavní plánování**
+
+-  [Rozšíření funkce prognózy poptávky](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+-  [Hlavní plánování – tipy a triky pro řešení problémů s výkonem](https://youtu.be/7v8BPmEs9Dg)
+-  [Pomoc! MRP je pomalé.](https://youtu.be/RLXybx20B5o)
+
+**Řízení informací o produktech**
+
+-  [Konfigurátor produktu v aplikaci Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
+
+**Řízení skladu** 
+
+-  [Zpracování příchozích avíz expedice zboží v modulu Řízení skladu](https://mix.office.com/watch/wpf78tr7rjuh)  
+-  [Co nejefektivnější využívání systému řízení skladu](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+-  [Pokročilé řízení skladu ve verzi R3 – zpracování příchozích položek a minimální/maximální doplňování](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
+-  [Pokročilé řízení skladu ve verzi R3 – běžný pracovní den, zpracování odchozích položek a doplňování poptávky](https://youtu.be/Og0gLlVp7jA)
+-  [Štítky v novém modulu řízení skladu ve verzi Microsoft Dynamics AX 2012 R3](https://youtu.be/5w1MngVchBA)
+-  [Dynamics AX 2012 R3: pokročilé řízení skladu – běžný pracovní den procesní výroby](https://www.youtube.com/embed/QUxXUrN-7n4)
+
+**Řízení výroby**
+
+-  [Subdodávky operací a aktivit ve výrobě](https://youtu.be/y1jrd3A_k70)
+
+**Správa přepravy**
+
+-  [Správa dopravy (TMS) v nové aplikace Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Blogy
 Výrobě a správě dodavatelského řetězce se věnuje spousta témat v blogu <a href="https://blogs.msdn.microsoft.com/axmfg/">Tým výzkumu a vývoje pro výrobu v Dynamics AX</a> a v blogu <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Tým výzkumu a vývoje pro správu dodavatelského řetězce v Dynamics AX</a>. Většina jich je napsána pro předchozí verzi aplikace Finance and Operations, ale stále platí stejné koncepty a postupy jsou ve stávající verzi podobné. 

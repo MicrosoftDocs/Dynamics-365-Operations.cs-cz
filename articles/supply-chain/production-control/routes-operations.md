@@ -1,7 +1,7 @@
 ---
 title: "Postupy a operace"
 description: "Toto téma obsahuje obecné informace o postupech a operacích."
-author: YuyuScheller
+author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

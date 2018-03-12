@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
-ms.openlocfilehash: 1cb4305b3ef425ec19ae63c8186bffef212b9890
+ms.sourcegitcommit: 1f76359878d162e93d8f8b7c11be529c43c94455
+ms.openlocfilehash: c1c180432e014c69b43612693790a1cac6e54c34
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/08/2018
 
 ---
 
@@ -127,7 +127,7 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 -   [Porovnání kusovníků](../../financials/localizations/apac-chn-bom-comparison.md)
 -   [Čínské doklady](../../financials/localizations/apac-chn-vouchers.md)
 -   [Konfigurace integrace daní](../../financials/localizations/apac-chn-tax-integration.md)
-    -   [Často kladené dotazy týkající se zákaznických faktur s DPH](../../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
+    -   [Často kladené dotazy týkající se faktur odběratele s DPH](../../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
     -   [Metody odpisu dlouhodobého majetku ](../../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md)
 -   [Import čínské daňové entity Chinese Golden](../../financials/localizations/apac-chn-import-golden-tax-data-entity.md)
 -   [Model měsíčních průměrných nákladů](../../financials/localizations/apac-chn-monthly-average-cost-model.md)
@@ -218,6 +218,21 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 -   [Přesun dlouhodobého majetku do zásob](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
 -   [Nízkonákladový dlouhodobý majetek](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
 
+### <a name="india"></a>Indie
+
+- [Dlouhodobý majetek](../../financials/localizations/apac-ind-fixed-assets.md)
+    - [Převod kapitálových položek do dlouhodobého majetku](../../financials/localizations/tasks/apac-ind-transfer-capital-items.md)
+    - [Připojení kalendáře podle dní ke knize dlouhodobého majetku](../../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md)
+    - [Nastavení parametrů pro výpočet odpisů](../../financials/localizations/tasks/apac-ind-set-up-depreciation.md)
+    - [Nastavení odpisu skupiny majetku pro knihy odpisů](../../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md)
+    - [Vytvoření skupiny skladových modelů pro kapitálové položky](../../financials/localizations/tasks/apac-ind-create-inventory-model-group.md)
+    - [Posuv výpočtu odpisů dlouhodobého majetku pro Indii](../../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md)
+    - [Definování typu směny a průmyslu pro knihy a připojení k dlouhodobému majetku](../../financials/localizations/tasks/apac-ind-books-shift-industry-types.md)
+- [Přehled daňového modulu](../../financials/general-ledger/tax-engine.md)
+    - [Integrace daňového modulu](../../financials/general-ledger/tax-engine-integration.md)
+    - [Často kladené dotazy týkající se prahových hodnot daní](../../financials/localizations/apac-ind-tax-thresholds.md)
+    - [Rozšíření daňového modulu](../../financials/general-ledger/extend-tax-engine-configurations.md)
+
 ### <a name="italy"></a>Itálie
 
 -   [Sestava černé listiny pro Itálii](../../financials/localizations/emea-ita-black-list-report.md)
@@ -305,7 +320,7 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 
 -   [Možnosti španělské směnky](../../financials/localizations/emea-esp-bill-of-exchange-options.md)
 -   [U parametru faktury je použita platební sleva](../../financials/localizations/emea-esp-cash-discount-applied-invoice.md)
--   [Podmíněná DPH](../../financials/localizations/emea-esp-conditional-sales-tax.md)
+-   [Nerealizovaná DPH](../../financials/localizations/emea-esp-conditional-sales-tax.md)
 -   [Skupiny přecenění dlouhodobého majetku](../../financials/localizations/emea-esp-fixed-asset-group-revaluation.md)
 -   [DPH intrakomunitárního plnění](../../financials/localizations/emea-esp-intra-community-vat.md)
 -   [Jednorázoví odběratelé](../../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md)
