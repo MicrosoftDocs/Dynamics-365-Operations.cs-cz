@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: b167d7577823bbc88d8e64952333110f9a652b64
-ms.openlocfilehash: 1f552e1ee0286326e3a2a8bb6a7bfb84df53b45d
+ms.sourcegitcommit: 7b5c4428c8610a7b2d4cf1a28287ba2bb1f9c2ea
+ms.openlocfilehash: 6739d769c3f7876f67d80554743458b0abd5aae5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 02/06/2018
 
 ---
 
@@ -30,7 +30,8 @@ ms.lasthandoff: 02/02/2018
 
 [!include[banner](../includes/banner.md)]
 
-> [Poznámka] Tento balíček obsahu je zastaralý, jak je uvedeno v části [Balíčky obsahu Power BI publikované na PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
+> [!Note]
+> Tento balíček obsahu je zastaralý, jak je uvedeno v části [Balíčky obsahu Power BI publikované na PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
 
 
 Toto téma popisuje, co je součástí obsahu správy nákladů v Power BI. 

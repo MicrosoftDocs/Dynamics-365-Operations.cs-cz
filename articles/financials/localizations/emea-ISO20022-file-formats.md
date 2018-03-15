@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,16 +17,17 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 599440449f1e8c8dcc3762ce9f6da7a37beb358f
+ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
+ms.openlocfilehash: 1492e4d8220a3d515145d97ef8dad048727d97c8
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/14/2018
 
 ---
 
 # <a name="import-iso20022-files"></a>Import souborů ISO20022
 
-## <a name="overview"></a>Přehled
+[!include[banner](../includes/banner.md)]
+
 Můžete importovat soubory plateb, které mají následující formáty:
 
  - **Avízo o kreditní transakci ISO20022 camt.054** – Importuje příchozí platby do deníku plateb odběratele ze souboru v tomto formátu.
@@ -40,7 +42,7 @@ Import zpráv s bankovními oznámeními ve formátu camt.054.001.002 do deníku
 4. Na stránce **Bankovní účty** nastavte bankovní účty právnické osoby zadáním následujících informací: IBAN nebo číslo bankovního účtu, kód SWIFT nebo směrové číslo, měna a adresa.
 
     > [!NOTE]
-    > Pokud budete používat rozšířené bankovní odsouhlasení, na pevné záložce **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení bankovního výpisu** na **Ano**. Pokud chcete odsouhlasit nezaúčtované importované platby, nastavte možnost **Použít bankovní výpisy jako potvrzení elektronické platby** na **Ano**.
+        > Pokud budete používat rozšířené bankovní odsouhlasení, na pevné záložce **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení bankovního výpisu** na **Ano**. Pokud chcete odsouhlasit nezaúčtované importované platby, nastavte možnost **Použít bankovní výpisy jako potvrzení elektronické platby** na **Ano**.
 
 5. Volitelné: Na kartě **Mapování kódu transakce** nastavte mapování mezi kódy bankovních transakcív souboru a typy bankovních transakcí.
 6. Pokud soubor obsahuje poplatky za transakce, které chcete zaúčtovat spolu s příchozí platbou, vytvořte pro platební poplatek na stránce **Platební poplatky odběratele**. Poté na stránce **Způsoby platby** přidružte platební poplatek k bankovnímu účtu v nastavení platebního poplatku.
@@ -53,9 +55,7 @@ Import zpráv s bankovními oznámeními ve formátu camt.054.001.002 do deníku
 ## <a name="import-the-camt054-credit-advice-file-into-the-customer-payment-journal"></a>Import souboru kreditního avíza camt.054 do deníku plateb odběratele
 1. Na stránce **Řádky deníku plateb odběratele** klikněte na **Funkce** > **Import plateb**.
 2. Vyberte metodu platby, která má požadované nastavení pro formát camt.054 ISO20022.
-3. Zadejte požadované parametry a cestu k souboru a klepněte na tlačítko **OK**.
-
-Soubor je importován.
+3. Zadejte požadované parametry a cestu k souboru a klepněte na tlačítko **OK**. Soubor je importován.
 
 ## <a name="prerequisites-for-importing-files-in-the-pain002-status-return-and-camt054-debit-advice-formats-into-the-ap-payment-transfer-journal"></a>Předpoklady pro import souborů se stavem pain.002 a Avízo o debetní transakci camt.054 do deníku plateb závazků převodu
 Import bankovních zpráv v následujících formátech ISO20022 na stránku **Převod platby dodavatele** vyžaduje splnění následujících předpokladů: zprávy o stavu vrácení pain.002.001.003 a debetní avízo camt.054.001.002.

@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 602873e8af976c57f27ce53b76391516351755e3
-ms.openlocfilehash: 29d33d3ecf97c15fed0247d172ff6fb3bbdaa018
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 62f328c5a6bf5343c97de0b7d907bbcfe2fcde4d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -46,15 +46,6 @@ V aktuální verzi poskytuje řešení zpeněžení potenciálního zákazníka 
 - [Synchronizace prodejních objednávek přímo z aplikace Finance and Operations do aplikace Sales](sales-order-template-mapping-direct.md)
 - [Synchronizace prodejních objednávek přímo mezi aplikací Finance and Operations a aplikací Sales (šablona čekající na vydání)](sales-order-template-mapping-direct-two-ways.md)
 - [Synchronizace prodejních faktur přímo z aplikace Finance and Operations do aplikace Sales](sales-invoice-template-mapping-direct.md)
-
-V dřívějších verzích poskytuje řešení zpeněžení potenciálního zákazníka následující typy nepřímé synchronizace:
-
-- [Správa účtů v aplikaci Sales a jejich synchronizace do aplikaci Finance and Operations](accounts-template-mapping.md)
-- [Správa kontaktů v aplikaci Sales a jejich synchronizace do aplikace Finance and Operations](contacts-template-mapping.md)
-- [Správa produktů v aplikaci Finance and Operations a jejich synchronizace do aplikace Sales](products-template-mapping.md)
-- [Vytvoření prodejních nabídek v aplikaci Sales a jejich synchronizace do aplikace Finance and Operations.](sales-quotation-template-mapping.md)
-- [Vytvoření prodejních objednávek v aplikaci Finance and Operations a jejich synchronizace do aplikace Sales.](sales-order-template-mapping.md)
-- [Vytvoření prodejních faktur v aplikaci Finance and Operations a jejich synchronizace do aplikace Sales.](sales-invoice-template-mapping.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Systémové požadavky aplikaci Finance and Operations
 
@@ -87,7 +78,7 @@ Integrace zpeněžení potenciálního zákazníka je podporována v následují
     - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** - Podpora integrace zpeněžení potenciálního zákazníka prostřednictvím datových entit je požadována.
     
     > [!NOTE]
-    > Po instalaci oprav hotfix je nutné spustit následující dávkovou úlohu z formuláře **SalesPopulateProspectToCash**. Tento formulář je skrytý, protože ho potřebujete pouze jednou. Pro přístup k formuláři se přihlaste do prostředí a přidejte následující adresu URL do adresy prohlížeče: &mi=action:SalesPopulateProspectToCash, například https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash. Když se formulář otevře, klikněte na OK. Vypublikuje se nové pole **LineCreationSequnceNumber** v tabulkách **SalesLine**, **SalesQuotationLine** a **CustInvoiceTrans** s jedinečnými hodnotami a obnoví se seznam produktů. To je nutné pro fungování integrace zpeněžení potenciálního zákazníka.
+    > Po instalaci oprav hotfix je nutné spustit následující dávkovou úlohu z formuláře **SalesPopulateProspectToCash**. Tento formulář je skrytý, protože ho potřebujete pouze jednou. Abyste získali přístup k formuláři, přihlaste se do prostředí a přidejte do URL adresy ve svém prohlížeči toto: &mi=action:SalesPopulateProspectToCash, například `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. Když se formulář otevře, klikněte na OK. Vypublikuje se nové pole **LineCreationSequnceNumber** v tabulkách **SalesLine**, **SalesQuotationLine** a **CustInvoiceTrans** s jedinečnými hodnotami a obnoví se seznam produktů. To je nutné pro fungování integrace zpeněžení potenciálního zákazníka.
 
 
 ## <a name="system-requirements-for-sales"></a>Systémové požadavky pro aplikaci Sales
@@ -96,12 +87,6 @@ Chcete-li použít řešení zpeněžení potenciálního zákazníka, je nutné
 
 - Dynamics 365 for Sales verze 1612 (8.2.1.207) (DB 8.2.1.207) online
 - Řešení zpeněžení potenciálního zákazníka pro Dynamics 365 for Sales, verze 1.15.0.0 (v15) 
-
-   > [!NOTE]
-   >
-   > Šablony s verzí 1.0.0.0 a 1.0.0.1 jsou podporovány na řešení zpeněžení potenciálního zákazníka pro aplikaci Dynamics 365 for Sales, verze 1.14.1.0
-   >
-   > Šablony s verzí 2.0.0.0 a 2.1.0.0 jsou podporovány na řešení zpeněžení potenciálního zákazníka pro aplikaci Dynamics 365 for Sales, verze 1.15.0.0
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Instalace řešení zpeněžení potenciálního zákazníka pro aplikaci Sales
 

@@ -19,10 +19,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4d1e1f953d0088d6d35025136f486f1ad04a9f18
+ms.sourcegitcommit: b16f4ea27f406f3d5d5957670bd32a73d2d55529
+ms.openlocfilehash: bb616f8102c67db3f8c3e872101d61657b6b64d1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/05/2018
 
 ---
 
@@ -88,7 +88,7 @@ K nastavení různých barev používaných ve zprávách generovaných systéme
 Barvu vyberte na stránce **Vybrat barvu**, klepněte na paletu nebo zadejte hexadecimální barevný kód.
 
 ## <a name="define-the-date-format-to-use-on-mobile-devices"></a>DEfinujte formát data, který má být použit pro mobilní zařízení
-Můžete rozšířit seznam povolených formátů data pro jednotlivé instalace. Tato možnost může být například užitečná, pokud chcete zadat formát, který usnadňuje pracovníkovi zadání data pro mobilní zařízení. Výchozí formát je určen výchozím jazykem uživatele, který je specifikován v poli **Jazyk** na stránce **Možnosti uživatele**. ((Stránka rovněž slouží k přidružení zaměstnance s pracovním uživatelem určitého skladu.).) **Poznámka:** Portál skladu pro mobilní zařízení nepoužívá nastavení pole **Datum, čas a formát čísla** na stránce **Předvolby jazyka a oblasti**. Změna formátu data vyžaduje vaši znalost s regulárními výrazy v rozhraní Microsoft .NET Framework. Další informace naleznete v tématu [Regulární výrazy rozhraní .NET Framework](http://go.microsoft.com/fwlink/?LinkId=391260). Chcete-li definovat formáty data, upravte soubor Dates.ini umístěný v cestě Content\\Settings\\Dates.ini na serveru portálu skladu pro mobilní zařízení. Tento soubor využívá regulární výrazy .NET k určení formátu data. Regulární výraz musí obsahovat dílčí výrazy tvořící pojmenované skupiny pro daný den, měsíc a rok (DDMMRR), jak je uvedeno v následujícím příkladu:
+Můžete rozšířit seznam povolených formátů data pro jednotlivé instalace. Tato možnost může být například užitečná, pokud chcete zadat formát, který usnadňuje pracovníkovi zadání data pro mobilní zařízení. Výchozí formát je určen výchozím jazykem uživatele, který je specifikován v poli **Jazyk** na stránce **Možnosti uživatele**. (Stránka rovněž slouží k přidružení zaměstnance s pracovním uživatelem určitého skladu.) **Poznámka:** Portál skladu pro mobilní zařízení nepoužívá nastavení pole **Datum, čas a formát čísla** na stránce **Předvolby jazyka a oblasti**. Změna formátu data vyžaduje vaši znalost s regulárními výrazy v rozhraní Microsoft .NET Framework. Další informace naleznete v tématu [Regulární výrazy rozhraní .NET Framework](http://go.microsoft.com/fwlink/?LinkId=391260). Chcete-li definovat formáty data, upravte soubor Dates.ini umístěný v cestě Content\\Settings\\Dates.ini na serveru portálu skladu pro mobilní zařízení. Tento soubor využívá regulární výrazy .NET k určení formátu data. Regulární výraz musí obsahovat dílčí výrazy tvořící pojmenované skupiny pro daný den, měsíc a rok (DDMMRR), jak je uvedeno v následujícím příkladu:
 
 ^(?&lt;den&gt;\\d{2})(?&lt;měsíc&gt;\\d{2})(?&lt;rok&gt;\\d{2})$
 

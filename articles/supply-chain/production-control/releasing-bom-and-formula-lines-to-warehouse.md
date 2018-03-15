@@ -18,14 +18,16 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 6aec3532a36a2c1e67ee0c189e45a352ad7670f6
+ms.sourcegitcommit: a1e539c283800035327196520f6438904c94126d
+ms.openlocfilehash: 0affc07293c886c4c65f99259eb19f1998f277f6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/04/2018
 
 ---
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Uvolnění řádků kusovníku a receptury do skladu
+
+[!include[banner](../includes/banner.md)]
 
 Toto téma popisuje proces uvolnění suroviny pro řádky kusovníku a řádky receptury do skladu. Když uvolníte řádek kusovníku nebo receptury do skladu, systém nejdříve určí, zda je materiál již dostupný na vstupním místě pro výrobu v dílenském zařízení materiál, kde bude materiální spotřebován pro výrobní proces.
 
@@ -40,6 +42,9 @@ Metoda, která se používá k uvolnění řádků kusovníku a řádků receptu
 
 - **Uvolnění řádků kusovníku a řádků receptury jako součást výrobní zakázky nebo dávkové objednávky** – v této metodě se řádky kusovníku a receptury pro výrobní zakázku nebo dávkovou objednávku uvolňují součást procesu uvolnění objednávky. Obvykle se během uvolnění výrobní zakázky nebo dávkové úlohy uvolňují výrobní úlohy dílenským pracovníkům a vytisknout se výrobní doklady. Během tohoto procesu se stav objednávky také změní na **Uvolněno**.
 - **Uvolnění řádků kusovníku receptury pomocí dávkové úlohy nebo jako ruční interakce** – v této metodě lze řádky kusovníku a receptury uvolnit pouze prostřednictvím dávkové úlohy **Automaticky uvolnit řádky kusovníku a receptury** nebo ruční interakcí. Chcete-li ručně uvolnit řádky kusovníku a řádky receptury, na stránce se seznamem výrobních zakázek nebo na stránce s podrobnostmi výrobních zakázek v podokně akcí zvolte **Uvolnit do skladu**.
+
+Chcete-li rychle ukázat, jak uvolnit kusovníky a řádky receptury do výroby pomocí dávkové úlohy, podívejte se na toto krátké video na YouTube:
+[!Video https://www.youtube.com/embed/8urAJn50dQ8]
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Uvolnění řádků kusovníku a receptury pomocí dávkové úlohy
 
@@ -79,6 +84,9 @@ Chcete-li kontrolovat operace, ke kterým má být uvolněn materiál, použijte
 Následující obrázek znázorňuje výrobní zakázku, která má dvě operace, 10 a 20. Pokud v tomto příkladu omezíte uvolnění na operaci 10, pouze materiál M9203 bude uvolněn.
 
 ![Příklad uvolnění materiálu podle čísla operace](media/two-operations.PNG)
+
+Chcete-li rychle ukázat, jak uvolnit materiál v poměru k množství hotových výrobků, podívejte se na toto krátké video na YouTube:
+[!Video https://www.youtube.com/embed/Rm3ojAz6Zu0]
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Uvolnění materiálu v poměru k množství dokončeného zboží
 
