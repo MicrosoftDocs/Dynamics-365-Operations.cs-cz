@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: 2dfa04f280249884af2a237807fb283059444a6c
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 018aee917c13f576759ebd812d31cbc9d83e2d1a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 02/23/2018
 
 ---
 # <a name="create-a-configuration-provider-and-mark-it-as-active-for-electronic-reporting-er"></a>Vytvoření poskytovatele konfigurace a jeho označení jako aktivního pro elektronické výkaznictví (ER)
@@ -33,11 +33,10 @@ Následující procedura vysvětluje, jak uživatel přiřazený k roli Správc
 1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
 2. Klikněte na Poskytovatelé konfigurace.
 3. Klikněte na položku Nová.
-    * Záznam poskytovatele má jedinečný název a adresu URL. Pokud záznam pro společnosti Litware, Inc. (http://www.litware.com) již existuje, zkontrolujte obsah této stránky a přeskočte tento postup.  
+    * Záznam poskytovatele má jedinečný název a adresu URL. Pokud již záznam pro společnosti Litware, Inc. (`http://www.litware.com`) exxistuje, zkontrolujte obsah této stránky a přeskočte tuto proceduru.  
 4. Zadejte Litware, Inc. do pole Název.
     * Litware, Inc.  
-5. V poli internetové adresy zadejte "http://www.litware.com".
-    * http://www.litware.com  
+5. Zadejte `http://www.litware.com` do pole internetové adresy.
 6. Klikněte na položku Uložit.
 7. Zavřete stránku.
 

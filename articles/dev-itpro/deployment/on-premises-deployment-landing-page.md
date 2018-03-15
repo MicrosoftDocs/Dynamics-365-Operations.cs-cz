@@ -3,14 +3,14 @@ title: "Místní nasazení"
 description: "Toto téma obsahuje informace a odkazy na obsah týkající se místních nasazení."
 author: kfend
 manager: AnnBe
-ms.date: 12/11/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core
+ms.search.scope: Core, Operations
 ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 346f5b7a5fbbe2c41aaa54e0b36fe0c46baec0af
-ms.openlocfilehash: 697f5a43124aace645e0cc8c6df98a4f986ab852
+ms.sourcegitcommit: 797058bdbbdb63a08eb35034ffe3c913307f38df
+ms.openlocfilehash: 12b8a6e8f28501bce76d5a1d58b39e4711b75330
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 # <a name="on-premises-deployment-landing-page"></a>Úvodní stránka Místní nasazení
@@ -31,6 +31,7 @@ ms.lasthandoff: 12/20/2017
 Můžete nasadit aplikaci aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (místní). Když se rozhodnete pro typ místního nasazení, budou se požadavky na systém, rozměry hardwaru a funkce lišit od cloudového nasazení. Toto téma obsahuje odkazy na obsah s informacemi specifickými pro místní nasazení.
 
 ## <a name="get-started"></a>Začínáme
+- [Co je nového a co se změnilo v místních nasazeních aplikace Dynamics 365 for Finance and Operations, Enterprise edition 7.2 s aktualizací platform update 12 (březen 2018)](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md)
 - [Přehled aplikace Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](on-premises-overview.md)
 - [Plánování pro vaše místní nasazení](plan-onprem-deployment.md)
 - [Systémové požadavky pro místní nasazení](../../fin-and-ops/get-started/system-requirements-on-prem.md)
@@ -50,6 +51,7 @@ Můžete nasadit aplikaci aplikace Microsoft Dynamics 365 for Finance and Operat
 - [Konfigurace správy dokumentů](../../fin-and-ops/organization-administration/configure-document-management.md)
 - [Import konfigurací elektronického výkaznictví](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Generování dokumentů, publikování a možnosti tisku v nasazeních on-premises](../analytics/printing-capabilities-on-premises.md)
+- [Konfigurace reverzní proxy pro vaše místní prostředí](onprem-reverseproxy.md)
 - [Nastavení technické podpory](../lifecycle-services/support-experience.md)
 - [Řešení problémů s internetovým připojením klienta](../user-interface/client-disconnected.md)
 - [Použití aktualizací nasazení on-premises](apply-updates-on-premises.md)

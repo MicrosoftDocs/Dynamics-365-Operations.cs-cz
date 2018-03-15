@@ -3,7 +3,7 @@ title: "Finanční přehledy"
 description: "Finanční přehledy používají Microsoft Power BI pro spojení finančních klíčových indikátorů výkonnosti, grafů a finančních výkazů."
 author: kweekley
 manager: AnnBe
-ms.date: 01/09/2018
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
-ms.openlocfilehash: 3da5344ec6edec0af28aa21d45af962307231e67
+ms.sourcegitcommit: d527df21e791978b41527c01c2e6b68b393861ac
+ms.openlocfilehash: 90dc6214f1eb31440a3ec78a58c6a07394245cd2
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/28/2018
 
 ---
 
@@ -102,10 +102,15 @@ V současné době data v integrovaných sestavách Power BI nelze omezit na pr�
 | Zobrazit finanční přehledy mezi společnostmi   | •   Toto funkční oprávnění není přiřazeno k roli v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3. • V další verzi bude toto funkční přiřazeno k roli vedoucího finančního oddělení. | •    Toto funkční oprávnění poskytuje přístup k položcce nabídky pracovního prostoru Přehled CFO. •    Standardně slouží aktivní společnost jako filtr. Můžete však přidat všechny právnické osoby, bez ohledu na to, zda má uživatel přístup k jiným právnickým osobám.             |
 
 
-## <a name="how-financial-statements-work"></a>Jak fungují finanční výkazy
+## <a name="financial-reporting-vs-finanical-insights"></a>Finanční výkaznictví a Finanční přehledy
 Ačkoli **Finanční přehledy** obsahují finanční výkazy, není to náhrada za finanční výkaznictví v aplikaci Finance and Operations. Výchozí finanční výkazy ve **finančních přehledech** jsou omezeny rozsahem a nezahrnují všechny typy finančních výkazů. Finanční výkaznictví je stále primárním nástroj pro návrh, vytváření a generování zákonem požadovaných finančních výkazů.
 
-Kromě vizuálních prvků z původního pracovního prostoru **Přehled CFO** jsou nyní k dispozici nové indikátory KPI, grafůy finanční výkazy. K dispozici jsou následující finanční výkazy:
+Následující graf s porovnáním vám pomůže rozlišit tyto dvě možnosti:
+
+|                                         | **Finanční výkaznictví**                            | **Finanční přehledy**             | |-----------------------------------------|----------------------------------------------------|---------- -------------------------| | **Upravit výchozí sestavy**                | Ano                                                | Ne                                 | | **Vytvořit nové sestavy**                  | Ano                                                | Ne                                 | | **Tisk sestav**                       | Yes                                                | Ne                                 | | **Export do souboru  Excel**                     | Ano          | Omezený Exportuje nezpracovaná data do souboru Excel, nikoliv do formátované sestavy       | | **Podpora hierarchie vykazování/Organizační hierarchie**   | Ano                               | Ne                                 | | **Sestava dat dílčí hlavní knihy**       | Ano Omezeno pouze na dodavatele, odběratele    | Ano Dodavatelé, odběratelé, skupiny dodavatelů/odběratelů, adresy dodavatelů/odběratelů atd.  | | **Měna sestav**      | Ano Zúčtovací měna a překlad do měny sestav       | Ne Pouze zúčtovací měna      | | **Zabezpečení**                | Ano Odpovídá aplikaci Finance and Operations a zabezpečení organizačního stromu | Omezený Zobrazení sestav pro všechny společnosti (bez ohledu na zabezpečení aplikace) nebo pouze aktivní společnosti | | **Podpora různých účtových osnov a fiskálních roků** | Ano                   | Ne                   | | **Sestava externích dat**                              | Ne                   | Ne                                   | | **Podpora konsolidací**                               | Ano                          | Omezený Lze vykazovat sestavy více společností, ale používat pouze zúčtovací měnu                                     |
+
+
+Kromě uživatelského rozhraní v původní pracovním prostoru **Přehled CFO** jsou nyní k dispozici nové indikátory KPI, grafy a finanční výkazy. K dispozici jsou následující finanční výkazy:
 
 •   Předvaha
 

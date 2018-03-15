@@ -3,7 +3,7 @@ title: Obsah Power BI
 description: "V tomto tématu je uveden seznam obsahu Power BI, který je k dispozici a odkazuje na zdroje, které uvádějí podrobnější informace."
 author: sericks007
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: b0a7adb684850a0f0b914ea89ce3af1636b3084c
-ms.openlocfilehash: 0969f9f30e50a36b667765fbe375e6c14d3412da
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: d5b1bb5f25710b7d4feea55414d68d5390c87308
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -42,6 +42,7 @@ Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, E
 - [Obsah Power BI analýzy nákladového účetnictví](cost-accounting-analysis-content-pack.md) 
 - [Obsah správy úvěru a inkasa v Power BI](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Obsah Power BI pro rozvoj zaměstnanců](employee-development-PBI.md) 
+- [Obsah Power BI Finanční přehledy](financial-insights.md)
 - [Obsah finanční výkonnosti Power BI](financial-performance-power-bi-content-pack.md)
 - [Obsah správy investičního majetku v Power BI](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
 - [Obsah Power BI pro výuku](learning-power-bi.md)
@@ -73,6 +74,9 @@ Pokud používáte verzi Microsoft Dynamics 365 for Operations 1611, je k dispoz
 
 ## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Obsah Power BI pro aplikaci Microsoft Dynamics AX
 Pokud používáte verzi Microsoft Dynamics AX 7.0 or Microsoft Dynamics AX 7.0.1, je k dispozici následující obsah Power BI.
+
+> [!Note]
+> Tyto balíčky obsahu jsou zastaralé, jak je uvedeno v části [Balíčky obsahu Power BI publikované na PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
 
 - [Obsah správy nákladů v Power BI](cost-management-content-pack.md)    
 - [Obsah finanční výkonnosti Power BI](financial-performance-power-bi-content-pack.md)

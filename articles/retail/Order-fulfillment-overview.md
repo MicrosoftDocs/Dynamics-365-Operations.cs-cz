@@ -18,14 +18,16 @@ ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: ec6cb212766dd90fa9db7719a2119419ecb935c7
-ms.openlocfilehash: e0aa0e576f88fd497472aa4141704a66d51605c3
+ms.sourcegitcommit: 997b6843fb729ed204e4e8ec5369c5a380efc25e
+ms.openlocfilehash: fb36f6ce81c5e781e3c98132f18ecbd84d0d4089
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 02/12/2018
 
 ---
 
 # <a name="store-order-fulfillment"></a>Plnění objednávek obchodu
+
+[!include[banner](includes/banner.md)]
 
 Mnoho maloobchodních prodejců by chtělo optimalizovat plnění objednávky tak, že povolí plnění objednávky obchodům. Plnění objednávek na úrovni obchodu může pomoci zmírnit scénáře přeplnění pro konkrétní obchod, nebo může být zapotřebí z logistického hlediska v případech, kdy má obchod dodatečnou kapacitu nebo je umístěn v těsnější vzdálenosti od zákazníka. Aby se vyhovělo této potřebě, je na pokladním místě k dispozici sjednocená operace plnění objednávky.
 
@@ -56,7 +58,7 @@ Operace plnění objednávky zobrazí pouze objednávky, které budou buď vyzve
 
 ## <a name="line-details"></a>Detaily řádku
 
-Podrobnosti řádku lze zobrazit pomocí nabídky plovoucího panelu podrobností řádku. Při použití této nabídky jsou k dispozici dvě karty k zobrazení dalších informací pro vybraný řádek. První karta **Podrobnosti řádku** zobrazuje podrobnosti samotného řádku, jako je například objednané a zbývající množství. Jsou uvedeny i další podrobnosti, včetně vyskladněného, zabaleného a fakturovaného množství, stejně jako způsob doručení a adresa doručení. Karta **Podrobnosti objednávky** obsahuje informace záhlaví objednávky, včetně odběratele, ID odběratele, číslo objednávky, celkovou hodnot objednávky a zůstatek.
+Podrobnosti řádku lze zobrazit pomocí nabídky plovoucího panelu podrobností řádku. Při použití této nabídky jsou k dispozici tři karty k zobrazení dalších informací pro vybraný řádek. První karta **Podrobnosti řádku** zobrazuje podrobnosti samotného řádku, jako je například objednané a zbývající množství. Jsou uvedeny i další podrobnosti, včetně vyskladněného, zabaleného a fakturovaného množství, stejně jako způsob doručení a adresa doručení. Karta **Podrobnosti objednávky** obsahuje informace záhlaví objednávky, včetně odběratele, ID odběratele, číslo objednávky, celkovou hodnot objednávky a zůstatek. Karta **Zásoby** zobrazuje informace pro vybraný řádek s ohledem na dostupné fyzické zásoby, rezervované zásoby a objednané zásoby.
 
 Pokud je vybráno více řádků, nabídka plovoucího panelu podrobností řádku objednávky pouze označí, že je zvoleno více řádků. Chcete-li zobrazit podrobné informace o jednotlivých řádcích, vymažete řádky, dokud nezůstane pouze jeden řádek. 
 
@@ -210,8 +212,8 @@ Pokračujeme-li v uvedeném příkladu, tak pokud je 200 desek je označeno jako
 
 Plnění objednávky na pokladním místě obsahuje filtrování umožňující uživateli snadné vyhledávání podle potřeb. Filtry lze změnit ve spodní části podokna akcí na obrazovce **Pokladní místo**. Ve výchozím nastavení je použit filtr **Typ dodání**, podle nastavení operace. Je-li operaci nastavena s parametrem **Všechny objednávky**, pak se daný filtr použije při přístupu k plnění objednávky. To platí i pro parametry **Vyzvednutí v obchodě** a **Expedovat z obchodu**. Jiné filtry, které lze použít k zobrazení plnění objednávky, zahrnují:
 
-  - Číslo odběratele
-  - Jméno odběratele
+  - Název zákazníka
+  - Jméno zákazníka
   - E-mail odběratele
   - Číslo objednávky
   - Způsob dodání

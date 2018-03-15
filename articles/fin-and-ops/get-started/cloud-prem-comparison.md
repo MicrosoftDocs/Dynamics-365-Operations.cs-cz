@@ -3,7 +3,7 @@ title: "Srovnání funkce cloudu a on-premises"
 description: "Toto téma popisuje funkce, které jsou podporovány v cloudu a instalaci on-premises."
 author: robinarh
 manager: AnnBe
-ms.date: 11/29/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: cfd3b475b113fdab4ceeb3e636fea6c9134ab982
-ms.openlocfilehash: 32cc0c01a096cd678c605f57e0cccfe42d0479aa
+ms.sourcegitcommit: 4ffdc5dd54f8a069676f62c8b43f2892764dc046
+ms.openlocfilehash: 88640007ec54ed0c566e163e3dd701faeebc50ce
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 
@@ -48,9 +48,10 @@ Následující tabulka uvádí oblasti produktu. Podpora cloudu a instalace on-p
 | Správa nákladů| | Ano | Ano |
 | | Balíček obsahu Správa nákladů pro Power BI | Ano | Ne |
 | Integrace a správa dat| | Ano | Ano |
-| | Rozšíření na základě konfigurace| Ano | Ne |
-| | Export dat do svého vlastního datového skladu| Ano | Ne |
-| | Povolení exportu přírůstkových aktualizací datových entit | Ano | Ne |
+| | Rozšíření na základě konfigurace| Ano | Žádný |
+| | Export dat do svého vlastního datového skladu| Ano | Ano |
+| | Povolení exportu přírůstkových aktualizací datových entit | Ano | Žádný |
+| | Opakované integrace                 |Ano | Žádný|
 | Správa dokumentů| | Ano| Ano |
 | Správa financí|  | Ano | Ano |
 | Nápověda| | Ano | Ne |

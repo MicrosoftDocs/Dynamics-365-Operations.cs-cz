@@ -3,7 +3,7 @@ title: "Vytvoření pravidel pro poradce při optimalizaci"
 description: "Toto téma popisuje postup přidání nových pravidel do poradce při optimalizaci."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 01/23/2018
+ms.date: 02/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: yuyus
-ms.search.scope: Core (Operations, Core)
+ms.search.scope: Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 9cb9343028acacc387370e1cdd2202b84919185e
-ms.openlocfilehash: 88739298405343a36ae5bc11f51c666c414e7157
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: e64d4fc1a7425d38d728b11e503d3e7289312495
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -170,6 +170,9 @@ V závislosti na specifikách pravidla, je možné provést automatickou akci po
 
 **securityMenuItem** vrátí název položky nabídky akcí tak, aby pravidlo bylo viditelné pro uživatele, kteří mají přístup k položce nabídky akcí. Zabezpečení může vyžadovat, aby konkrétní pravidla a příležitosti byly přístupné pouze pro oprávněné uživatele. V tomto příkladu pouze uživatelé s přístupem **PurchRFQCaseTitleAction** mohou zobrazit příležitost. Všimněte si, že tato položka nabídky akcí byla vytvořena pro tento příklad a byla přidána jako vstupní bod pro oprávnění zabezpečení **PurchRFQCaseTableMaintain**. 
 
+> [!NOTE]
+> Položka nabídky musí být položka nabídky akcí, aby zabezpečení pracovalo správně. Ostatní typy položky nabídky, jako například **Položky nabídky zobrazení**, nebudou fungovat správně.
+
 ```
 public MenuName securityMenuItem() 
 { 
@@ -192,6 +195,65 @@ class ScanNewRulesJob
 ```
 
 Pravidlo se zobrazí ve formuláři **Pravidlo ověření diagnostiky**, dostupné z **Správa systému** > **Periodické úlohy** > **Udržovat pravidlo ověření diagnostiky**. Pokud ho chcete mít vyhodnocené, přejděte na **Správa systému** > **Periodické úlohy** > **Naplánovat pravidlo ověření diagnostiky**, vyberte četnost pravidla, jako je například **Denně**. Klikněte na tlačítko **OK**. Přejděte na **Správa systému** > **Poradce při optimalizaci** pro zobrazení nové příležitosti. 
+
+V následujícím příkladu je fragment kódu s kostrou pravidla, včetně všech požadovaných metod a atributů. Pomůže vám to při zahájení psaní nových pravidel. Popisky a položky nabídky akcí, které se používají v uvedeném příkladu, slouží pouze pro demonstrační účel.
+
+```
+[DiagnosticsRuleAttribute]
+public final class SkeletonSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule
+{
+    [DiagnosticsRuleSubscription(DiagnosticsArea::SCM,
+                                 "@SkeletonRuleLabels:SkeletonRuleTitle", // Label with the title of the rule
+                                 DiagnosticsRunFrequency::Monthly,
+                                 "@SkeletonRuleLabels:SkeletonRuleDescription")] // Label with a description of the rule
+    public str opportunityTitle()
+    {
+        // Return a label with the title of the opportunity
+        return "@SkeletonRuleLabels:SkeletonOpportunityTitle";
+    }
+
+    public str opportunityDetails(SelfHealingOpportunity _opportunity)
+    {
+        str details = "";
+
+        // Use _opportunity.data to provide details on the opportunity
+
+        return details;
+    }
+
+    protected List evaluate()
+    {
+        List results = new List(Types::Record);
+
+        // Write here the core logic of the rule
+
+        // When creating an opportunity, use:
+        //     * this.getOpportunityForCompany() for company specific opportunities
+        //     * this.getOpportunityAcrossCompanies() for cross-company opportunities
+
+        return results;
+    }
+
+    public boolean providesHealingAction()
+    {
+        return true;
+    }
+
+    protected void performAction(SelfHealingOpportunity _opportunity)
+    {
+        // Place here the code that performs the healing action
+
+        // To open a form, use the following:
+        // new MenuFunction(menuItemDisplayStr(SkeletonRuleDisplayMenuItem), MenuItemType::Display).run();
+    }
+
+    public MenuName securityMenuItem()
+    {
+        return menuItemActionStr(SkeletonRuleActionMenuItem);
+    }
+
+}
+```
 
 Další informace naleznete v krátkém videu na YouTube:
 

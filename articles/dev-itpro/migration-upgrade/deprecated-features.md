@@ -3,7 +3,7 @@ title: "Zastaralé funkce"
 description: "Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění."
 author: sericks007
 manager: AnnBe
-ms.date: 11/28/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: addd8c62ba034b47d8abbec29fa8682deb9698b1
+ms.sourcegitcommit: 16bdf2176869e5822ddf8732c829b65f1e60632c
+ms.openlocfilehash: 03b79816ffea649cf226408ed4660c3419103a7a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -40,6 +40,17 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zast
 > Počínaje vydáním Dynamics 365 for Finance and Operations, Enterprise Edition z července 2017 s aktualizací platform update 8 se uvádí typ nasazení pro každou odstraněnou nebo zastaralou funkci. Všechny předchozí verze uvedené v tomto tématu podporovaly cloudové nasazení.
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 a aktualizací platform update 12
+
+### <a name="personalized-product-recommendations"></a>Přizpůsobená doporučení produktu 
+Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporučení přizpůsobeného produktu na zařízení POS. Další informace naleznete v tématu [Doporučení přizpůsobeného produktu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Aktuální verzi služby doporučení produktu odstraňujeme, protože předěláváme tuto funkci s lepším algoritmem a novějšími funkčnostmi orientovanými na maloobchod.  |
+| **Nahrazeno jinou funkcí?**   | Č. Nicméně po jaru 2018 plánujeme vrátit tuto funkci, abychom využili novou službu doporučení.   |
+| **Ovlivněné oblasti produktu**         | Doporučení přizpůsobeného produktu v POS.                                                    |
+| **Možnost nasazení**              | Všechna                                                                                      |
+| **Stav**                         |Odstraněno od 15. února 2018. To ovlivní zákazníky, kteří používají Dynamics 365 for Operations 1611 a pozdější.  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Rozšíření seznamu funkcí elektronického vykazování
 Možnost zavést vlastní funkce pro použití v tvůrci výrazů ER (další informace naleznete v tématu [Rozšíření seznamu funkcí elektronického výkaznictví](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) již není nadále podporována. Z důvodu změn rozhraní API pro elektronické výkaznictví se stalo API volající vestavěné funkce z tvůrce výkazů ER interním a již nelze rozšířit.
@@ -132,6 +143,19 @@ Uživatelé si mohou stáhnout tento formulář ze státního portálu.
 | **Možnost nasazení**                       | Všechny moduly                                                                    |
 | **Stav**                                  | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.  |    
 
+
+## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
+
+### <a name="personalized-product-recommendations"></a>Přizpůsobená doporučení produktu 
+Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporučení přizpůsobeného produktu na zařízení POS. Další informace naleznete v tématu [Doporučení přizpůsobeného produktu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Aktuální verzi služby doporučení produktu odstraňujeme, protože předěláváme tuto funkci s lepším algoritmem a novějšími funkčnostmi orientovanými na maloobchod.  |
+| **Nahrazeno jinou funkcí?**   | Č. Nicméně po jaru 2018 plánujeme vrátit tuto funkci, abychom využili novou službu doporučení.   |
+| **Ovlivněné oblasti produktu**         | Doporučení přizpůsobeného produktu v POS.                                                    |
+| **Možnost nasazení**              | Všechna                                                                                      |
+| **Stav**                         |Odstraněno od 15. února 2018. To ovlivní zákazníky, kteří používají Dynamics 365 for Retail 7.2 a pozdější. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise Edition červenec 2017 a aktualizací platform update 8
