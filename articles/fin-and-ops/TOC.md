@@ -21,6 +21,7 @@
 #### [Odložené funkce AX 2012](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Funkce neimplementované v místních nasazeních](get-started/features-not-implemented-on-prem.md)
 #### [Vydání a zásady životního cyklu](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Místní nasazení (březen 2018)](get-started/whats-new-LBD-PU12-App72.md)
 #### [Platform update 13 (leden 2018)](get-started/whats-new-platform-update-13.md)
 #### [Finance and Operations, Enterprise Edition 7.3](get-started/whats-new-application-7.3-update.md)
 #### [Platform update 12 (listopad 2017)](get-started/whats-new-platform-update-12.md)
@@ -134,7 +135,7 @@
 ### [Balíček obsahu správy nákladů v Power BI](../dev-itpro/analytics/cost-management-content-pack.md)
 
 ## Integrace dat
-### [Vzory integrace](../dev-itpro/data-entities/integration-overview.md)
+### [Zvolení strategie integrace dat (import/export)](../dev-itpro/data-entities/integration-overview.md)
 
 ### Rozhraní API integrace dat
 #### [API balíčku správy dat](../dev-itpro/data-entities/data-management-api.md)
@@ -157,10 +158,9 @@
 ###### [Správa účtů v aplikaci Sales a jejich synchronizace přímo z aplikace Sales do aplikace Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ###### [Správa produktů v aplikaci Finance and Operations a jejich synchronizace přímo do aplikace Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ###### [Správa kontaktů v aplikaci Sales a jejich přímá synchronizace na kontakty nebo odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-###### [Synchronizace prodejních nabídek z aplikace Sales do aplikace Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
-###### [Synchronizace prodejních objednávek přímo z aplikace Finance and Operations do aplikace Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
-###### [Synchronizace prodejních objednávek přímo mezi aplikací Finance and Operations a aplikací Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
-###### [Synchronizace prodejních faktur přímo z aplikace Finance and Operations do aplikace Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Správa prodejních nabídek v aplikaci Sales a jejich synchronizace přímo do aplikace Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+###### [Správa prodejních objednávek v aplikaci Finance and Operations a jejich synchronizace přímo do aplikace Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+###### [Správa prodejních faktur v aplikaci Finance and Operations a jejich synchronizace přímo do aplikace Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 
 
 #### [Spotřeba externích webových služeb](../dev-itpro/data-entities/consume-external-web-service.md)
@@ -473,7 +473,13 @@
 #### [Distribuce na sestavě výdajů](../financials/expense-management/expense-report-distributions.md)
 #### [Mezipodnikové výdaje](../financials/expense-management/intercompany-expense.md)
 #### [Zásady výdajů](../financials/expense-management/travel-expense-policies.md)
-
+#### [Zobrazit sestavu výdajů](../financials/expense-management/view-expense-report.md)
+#### [Zaúčtovat sestavu výdajů](../financials/expense-management/post-expense.md)
+#### [Sestavy výdajů a více schvalovatelů](../financials/expense-management/expense-report-multiple-approvers.md)
+#### [Vratka DPH ve správě výdajů](../financials/expense-management/VAT-expense-report.md)
+#### [Pravidla denních diet](../financials/expense-management/per-diem.md)
+#### [Cestovní žádanky](../financials/expense-management/travel-req.md)
+#### [Osobní výdaje ve vyúčtování výdajů](../financials/expense-management/personal-expenses.md)
 
 ### [Rozpočtování](../financials/budgeting/budgeting-overview.md)
 #### [Přehled plánování rozpočtu ](../financials/budgeting/budget-planning-overview-configuration.md)
@@ -631,6 +637,8 @@
 ##### [Integrace daňového modulu](../financials/general-ledger/tax-engine-integration.md)
 ##### [Často kladené dotazy týkající se prahových hodnot daní](../financials/localizations/apac-ind-tax-thresholds.md)
 ##### [Rozšíření daňového modulu](../financials/general-ledger/extend-tax-engine-configurations.md)
+##### [GST integrace pro registrační pokladny](../retail/localizations/apac-ind-cash-registers.md)
+##### [Pokyny k nasazení registračních pokladen](../retail/localizations/apac-ind-loc-deployment-guidelines.md)
 
 #### Japonsko
 ##### [Pořízení dlouhodobého majetku a nárokování subvencí státního grantu](../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md)
@@ -910,7 +918,10 @@
 ##### [Formáty plateb odběratelů a dodavatelů](../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md)
 ##### [Platba odběratele na základě ID platby](../financials/localizations/tasks/no-00002-customer-payment-based-payment-id.md)
 ##### [Formát importu Nets](../financials/localizations/emea-nor-nets-import-format.md)
-##### [Výpis DPH](../financials/localizations/emea-nor-sales-tax-payment-report.md) 
+##### [Výpis DPH](../financials/localizations/emea-nor-sales-tax-payment-report.md)
+##### [Registrační pokladny](../retail/localizations/emea-nor-cash-registers.md)
+##### [Pokyny k nasazení registračních pokladen](../retail/localizations/emea-nor-loc-deployment-guidelines.md)
+
 #### Polsko
 ##### [Výpočet slev řádku z jednotkové ceny](../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md)
 ##### [Poznámky k opravě](../financials/localizations/emea-pol-correction-notes.md)
@@ -937,9 +948,10 @@
 ##### [Zvláštní položky a počáteční stavy](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### Švédsko
 ##### [Import formátů plateb](../financials/localizations/emea-swe-payment-formats-import.md)
+##### [Registrační pokladny](../retail/localizations/emea-swe-cash-registers.md)
 #### Švýcarsko
 ##### [Import plateb odběratelů v ESR](../financials/localizations/emea-che-esr-customer-payments-import.md)
-#### Spojené království
+#### Velká Británie
 ##### [Schéma pro obor stavebnictví ](../financials/localizations/emea-gbr-cis-construction-industry-scheme.md)
 ##### [Vytvoření dobropisu pro slevu při vyrovnání](../financials/localizations/tasks/gb-00009-credit-note-settlement-discount.md)
 ##### [Vytvoření nákupní objednávky obsahující položky, na které se vztahuje stornovací poplatek DPH](../financials/localizations/tasks/purchase-order-reverse-charge-vat.md)
@@ -1644,6 +1656,7 @@
 ##### [Provozní prostředky](../supply-chain/production-control/operations-resources.md)
 ##### [Schopnosti zdroje](../supply-chain/production-control/resource-capabilities.md)
 ##### [Atributy dávky](../supply-chain/production-control/batch-attributes.md)
+##### [Vyvážení dávky](../supply-chain/production-control/batch-balancing.md)
 ##### [Zkopírování receptury (průvodci záznamem úloh)](../supply-chain/production-control/tasks/copy-formula.md)
 ##### [Vytvoření receptury kopírováním z existující receptury (průvodce záznamem úloh)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
 ##### [Zkopírování vedlejších produktů z existující verze receptury (průvodce záznamem úloh)](../supply-chain/production-control/tasks/copy-co-products-existing-formula-version.md)
@@ -1808,6 +1821,7 @@
 #### [Měrná jednotka a zásady uskladnění](../supply-chain/warehousing/unit-measure-stocking-policies.md)
 #### [Obsah skladu v Power BI](../dev-itpro/analytics/warehouse-power-bi-content.md)
 #### [Systémové seskupení na otevřeném seznamu úkolů](../supply-chain/warehousing/system-group-on-open-work-list.md)
+#### [Skenování čárových kódů pomocí fotoaparátu v aplikaci Dynamics 365 Finance and Operations](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [Mobilní podpora čárového kódu](../supply-chain/warehousing/mobile-barcode-support.md)
 ### [Zásady práce ve skladu](../supply-chain/warehousing/warehouse-work-policies.md)
 #### [Pohyb zásob s přidruženou prací v řízení skladu](../supply-chain/warehousing/move-inventory-associated-work.md)
@@ -1818,6 +1832,7 @@
 #### [Přijetí smíšené registrační značky](../supply-chain/warehousing/mixed-license-plate-receiving.md)
 #### [Konfigurace možnosti Zobrazení starších dávek v rámci skladu na mobilním zařízení](../supply-chain/warehousing/display-older-batches-within-warehouses.md)
 #### [Vyskladnění nejstarší dávky na mobilním zařízení](../supply-chain/warehousing/pick-oldest-batch.md)
+#### [Skenování čárových kódů pomocí fotoaparátu v aplikaci Dynamics 365 Finance and Operations](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [Potvrzení výdeje kusů](../supply-chain/warehousing/piece-picking-confirmation.md)
 #### [Potvrzení produktu pro výdej v seskupení](../supply-chain/warehousing/cluster-picking-item-confirmation.md)
 #### [Vydání dávky částečně rezervovaných převodních příkazů](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)

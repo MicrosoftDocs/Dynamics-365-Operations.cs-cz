@@ -39,8 +39,9 @@
 # Nastavení a správa kanálů
 ## [Inicializace počátečních dat v prostředí Retail](enable-configure-retail-functionality.md)
 ## [Definování maloobchodních sítí](define-maintain-retail-channels.md)
+## [Správa sortimentu](assortments.md)
 ## [Přehled online obchodu](online-stores.md)
-## [Konfigurace a instalace hardwarové stanice Retail](retail-hardware-station-configuration-installation.md)
+## [Konfigurace a instalace Retail hardware station](retail-hardware-station-configuration-installation.md)
 ## [Čas a docházka v aplikaci Retail](retail-time-attendance.md)
 
 # Domovská stránka Moderního pokladního místa MPOS a Cloud POS
@@ -55,6 +56,7 @@
 ## Rozložení obrazovky
 ### [Konfigurace rozložení obrazovky pro POS](pos-screen-layouts.md)
 ### [Instalace návrháře rozložení Retail POS](install-pos-layout-designer.md)
+### [Vybrat nastavení oznámení](Notifications-POS.md)
 ### [Nastavení aplikace POS a uživatelského jazyka](pos-application-user-language-settings.md)
 ### [Nastavení obrázků pro MPOS](set-up-manage-images-retail-mpos.md)
 ## [Přehled informačních kódů](info-codes-retail.md) 
@@ -97,9 +99,10 @@
 ## [Definování slevy specifické pro kanál](define-channel-specific-discounts.md)
 ## [Vytvoření kupónů pro maloobchodní prodej](retail-coupons.md)
 
-# Produkty a merchandising
+# Produkty a merchandising
 ## [Přehled informací o produktech](../supply-chain/pim/product-information.md)
-## [Hierarchie modulu Retail](retail-hierarchies.md)
+## [Hierarchie maloobchodu](retail-hierarchies.md)
+## [Atributy a přehled skupin atributů](attribute-attributegroups-lifecycle.md)
 ## [Vytvoření a správa atributů](create-manage-attributes.md)
 ## [Nastavení maloobchodních produktů](set-up-retail-products.md)
 ## [Dimenze produktu](../supply-chain/pim/product-dimensions.md)
@@ -130,6 +133,16 @@
 # Lidské zdroje
 ## [Uspořádání zaměstnanců podle oddělení, prací a pozic](../talent/departments-jobs-positions.md)
 ## [Nastavení komponent práce](../talent/create-job.md)
+
+# Lokalizace a funkce týkající se předpisů
+## Indie
+### [GST integrace pro registrační pokladny pro Indii](localizations/apac-ind-cash-registers.md)
+### [Pokyny k nasazení registračních pokladen pro Indii](localizations/apac-ind-loc-deployment-guidelines.md)
+## Norsko
+### [Registrační pokladny pro Norsko](localizations/emea-nor-cash-registers.md)
+### [Pokyny k nasazení registračních pokladen pro Norsko](localizations/emea-nor-loc-deployment-guidelines.md)
+## Švédsko
+### [Registrační pokladny ve Švédsku](localizations/emea-swe-cash-registers.md)
 
 # Úkoly v aplikaci Retail
 ## [Vytvoření produktu](../supply-chain/pim/tasks/create-product.md)
@@ -249,10 +262,6 @@
 ## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Integrace sady Retail SDK do souvisle sestavovaného systému](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 ### [Vzory rozšiřitelnosti sady Retail SDK](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
-### [Registrační pokladny ve Švédsku](localizations/emea-swe-cash-registers.md)
-### [Vzor pro integraci Retail POS s kontrolními jednotkami pro Švédsko](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
-### [Registrační pokladny pro Norsko](localizations/emea-nor-cash-registers.md)
-### [Pokyny k nasazení registračních pokladen pro Norsko](localizations/emea-nor-loc-deployment-guidelines.md)
 ### [Balíčky sady Retail SDK](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Vzory sady Retail SDK ](dev-itpro/retail-sdk/retail-sdk-samples.md)
 ### [Rozšíření databáze kanálů](dev-itpro/channel-db-extensions.md)
