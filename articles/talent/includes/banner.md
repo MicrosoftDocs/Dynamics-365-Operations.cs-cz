@@ -1,2 +1,1 @@
-> [!IMPORTANT]
-> <span data-ttu-id="4a09e-101">Toto téma se vztahuje k aplikacím Dynamics 365 for Talent, Dynamics 365 for Finance and Operations, Enterprise Edition, a Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="4a09e-101">This topic applies to Dynamics 365 for Talent, Dynamics 365 for Finance and Operations, Enterprise edition, and Dynamics 365 for Retail.</span></span> 
+
