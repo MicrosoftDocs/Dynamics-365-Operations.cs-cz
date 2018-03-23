@@ -1,47 +1,63 @@
 ---
-title: "Správa a vytvoření kategorií produktů"
-description: "Toto téma popisuje vylepšení provedená pro správu kategorií maloobchodního produktu. Tato zlepšení umožní obchodním manažerům udržovat korelaci mezi hierarchií maloobchodních produktů a podrobnostmi o uvolněném produktu."
+title: "Správa kategorií produktů"
+description: "Toto téma popisuje, jak obchodní manažeři mohou použít kategorie maloobchodní produktů ke správě vztahů mezi hierarchií maloobchodních produktů a podrobnostmi uvolněného produktu."
 author: ashishmsft
 manager: AnnBe
-ms.date: 09/01/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
-ms.search.form: RetailCategoryAndProductWorkspace, RetailCategory
+ms.search.form: 
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.search.region: Global
-ms.search.industry: retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.custom: 
+ms.assetid: c7ed2ba5-87c6-4d99-9728-2a83e6d95ca9
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
-ms.dyn365.ops.version: 
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 74a8fa863736177bcf8cb4b3d90911c78122252b
+ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
+ms.openlocfilehash: 4b7ef962b777a31e1da238a8ec1be9a42ec5bb5f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
-# <a name="product-category-management-and-creation"></a>Správa a vytvoření kategorií produktů
+
+# <a name="enhanced-product-and-category-management"></a>Rozšířená správa kategorií a produktů
 
 [!include[banner](./includes/banner.md)]
 
-Vylepšení provedená pro správu kategorií maloobchodního produktu umožní obchodním manažerům udržovat korelaci mezi hierarchií maloobchodních produktů a podrobnostmi o uvolněném produktu. Chcete-li zobrazit tato vylepšení, zvolte v pracovním prostoru **Správa kategorií a produktů** možnost **Hierarchie maloobchodních produktů** a otevřete stránku **Nová struktura kategorií maloobchodních produktů**. 
+Toto téma popisuje rozšířený způsob správy kategorií maloobchodních produktů a produktů v aplikaci Dynamics 365 for Retail. Tato zlepšení umožní obchodním manažerům zobrazit společnou strukturu vlastností produktu mezi hierarchií maloobchodních produktů a podrobnostmi uvolněného produktu.
 
-V předchozích verzích byly vlastnosti produktu rozděleny do vlastností základních produktů a vlastností maloobchodních produktů, podle rozsahu použitelnosti. Vlastnosti maloobchodních produktů byly *globální*. Jinými slovy, pro danou vlastnost produktu se stejná hodnota sdílí mezi všemi právnickými osobami. Vlastnosti základních produktů byly *specifické pro právnickou osobu*. Jinými slovy, daná vlastnost produktu se může lišit napříč právnickými osobami, v závislosti na obchodních požadavcích.
+Pro další informace o správě kategorií maloobchodních produktů přejděte na položku **Hierarchie maloobchodních produktů** z pracovního prostoru **Správa kategorií a produktů** a všimněte si rozšířené struktury stránky **Kategorie maloobchodních produktů**.
 
-Pomocí těchto vylepšení vlastností produktů v kategorii maloobchodních produktů pokračujeme v oddělování polí, podle jejich použitelnosti v rámci skupiny tak, aby odrážela strukturu formuláře podrobností uvolněného produktu.
+![Pracovní prostor správy kategorií a produktů](media/LaunchRetailProductHierarchy.png)
 
-Můžete přepínat mezi správou vlastností specifických pro právnickou osobu mezi všemi právnickými osobami a spravovat je pro konkrétní právnickou osobu. Pouze vyberte podle potřeby buď **Zobrazit/upravit pro všechny právnické osoby** nebo **Zobrazit/upravit pro konkrétní právnickou osobu**.
+V předchozích verzích byly vlastnosti produktu rozděleny do **vlastností základních produktů** a **vlastností maloobchodních produktů**, podle rozsahu použitelnosti. **Vlastnosti maloobchodních produktů** byly *globální* podle rozsahu použitelnosti, což znamená, že pro dané **vlastnosti maloobchodních produktů** se sdílela stejná hodnota napříč všemi právnickými osobami. **Vlastnosti základních produktů** jsou *specifické pro právnickou osobu*. Jinými slovy, pro danou **vlastnost základního produktu** se může hodnota lišit napříč právnickými osobami, v závislosti na obchodních požadavcích.
 
-Obchodní manažeři mohou také definovat výchozí hodnoty pro další sadu vlastností produktu na úrovni jednotlivé kategorie. Tyto hodnoty vlastností produkt dědí na základě jejich přidružení k kategorii v době vytvoření produktu.
+V rozšířené struktuře kategorie maloobchodních produktů jsou vlastnosti produktu logicky odděleny podle jejich použitelnosti v rámci skupiny tak, aby odrážely strukturu formuláře podrobností uvolněného produktu.
 
-## <a name="select-properties-to-update-products-from-the-retail-product-category-form"></a>Vyberte vlastnosti, abyste aktualizovali produkty z formuláře kategorií maloobchodních produktů
+![Seskupení polí podle jejich rozsahu použitelnosti](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
 
-Abyste vybrali, které vlastnosti aktualizovaných produktů mají být odeslány k přidruženým produktům, můžete použít vlastnosti logického seskupování.
+Můžete přepínat mezi správou vlastností specifických pro právnickou osobu mezi všemi právnickými osobami a spravovat je pro konkrétní právnickou osobu. To provedete výběrem možnosti **Zobrazit/upravit pro všechny právnické osoby** nebo **Zobrazit/upravit pro konkrétní právnickou osobu**.
+
+![Přepnutí zobrazení mezi jednotlivými a všemi právnickými osobami](media/ToggleBackToEditForSpecificLegalEntity.PNG)
+
+![Přepnutí zobrazení mezi jednotlivými a všemi právnickými osobami](media/ToggleToEditForAllLegalEntities.PNG)  
+
+Ve srovnání s předchozími verzemi může v nové struktuře kategorií maloobchodních produktů obchodní manažer také definovat výchozí hodnoty pro další sadu vlastností produktů na individuální úrovni kategorií. V čase vytvoření produktu se tyto výchozí hodnoty vlastností produktu dědí podle produktu na základě jejich přidružení k jednotlivé kategorii z hierarchie maloobchodních produktů. Tyto zděděné vlastnosti produktu lze upravit pro každý produkt za účelem splnění jednotlivých obchodních požadavků.
+
+## <a name="select-properties-to-update-products-from-the-retail-product-category-form"></a>Vyberte vlastnosti, abyste aktualizovali produkty z formuláře kategorií maloobchodních produktů 
+ 
+Tuto novou rozšířenou strukturu vlastností produktu můžete použít pro výběr aktualizovaných vlastností produktu, které je třeba odeslat k přiřazeným produktům. 
+
+![Nové rozšířené zobrazení možnosti Aktualizovat produkty](media/NewUpdateProductsEnhancedView.PNG) 
 
 Obchodní manažeři mohou upravit tyto zděděné vlastnosti produktů pro každý produkt za účelem splnění jednotlivých obchodních požadavků.
+
 

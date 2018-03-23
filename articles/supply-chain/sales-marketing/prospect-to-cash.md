@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 62f328c5a6bf5343c97de0b7d907bbcfe2fcde4d
+ms.sourcegitcommit: e342c67f53828c77f77d99a2c3f909a23ced8989
+ms.openlocfilehash: 5d9bc41c92258f9856088b04ec5af123c8e915e5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -42,9 +42,8 @@ V aktuální verzi poskytuje řešení zpeněžení potenciálního zákazníka 
 - [Správa účtů v aplikaci Sales a jejich synchronizace přímo z aplikace Sales do aplikace Finance and Operations](accounts-template-mapping-direct.md)
 - [Správa produktů v aplikaci Finance and Operations a jejich synchronizace přímo do aplikace Sales](products-template-mapping-direct.md)
 - [Správa kontaktů v aplikaci Sales a jejich přímá synchronizace na kontakty nebo odběratele v aplikaci Finance and Operations](contacts-template-mapping-direct.md)
-- [Synchronizace prodejních nabídek přímo z aplikace Sales do aplikace Finance and Operations (šablona čekající na vydání)](sales-quotation-template-mapping-sales-fin.md)
-- [Synchronizace prodejních objednávek přímo z aplikace Finance and Operations do aplikace Sales](sales-order-template-mapping-direct.md)
-- [Synchronizace prodejních objednávek přímo mezi aplikací Finance and Operations a aplikací Sales (šablona čekající na vydání)](sales-order-template-mapping-direct-two-ways.md)
+- [Synchronizace prodejních nabídek z aplikace Sales do aplikace Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
+- [Synchronizace prodejních objednávek přímo mezi aplikací Finance and Operations a aplikací Sales](sales-order-template-mapping-direct-two-ways.md)
 - [Synchronizace prodejních faktur přímo z aplikace Finance and Operations do aplikace Sales](sales-invoice-template-mapping-direct.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Systémové požadavky aplikaci Finance and Operations
@@ -85,7 +84,7 @@ Integrace zpeněžení potenciálního zákazníka je podporována v následují
 
 Chcete-li použít řešení zpeněžení potenciálního zákazníka, je nutné nainstalovat následující komponenty:
 
-- Dynamics 365 for Sales verze 1612 (8.2.1.207) (DB 8.2.1.207) online
+- Dynamics 365 for Sales verze 1612 (8.2.1.207) (DB 8.2.1.207) online nebo vyšší verze.
 - Řešení zpeněžení potenciálního zákazníka pro Dynamics 365 for Sales, verze 1.15.0.0 (v15) 
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Instalace řešení zpeněžení potenciálního zákazníka pro aplikaci Sales
