@@ -3,7 +3,7 @@ title: "Místní nasazení"
 description: "Toto téma obsahuje informace a odkazy na obsah týkající se místních nasazení."
 author: kfend
 manager: AnnBe
-ms.date: 03/05/2018
+ms.date: 03/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,13 +18,13 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 797058bdbbdb63a08eb35034ffe3c913307f38df
-ms.openlocfilehash: 12b8a6e8f28501bce76d5a1d58b39e4711b75330
+ms.sourcegitcommit: 0d551818c8d352af96f6e64613cfbbc4aec5bf5b
+ms.openlocfilehash: e35769e45b1017eef2ee5a5b6c2baa35ae13d90c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/15/2018
 
 ---
-# <a name="on-premises-deployment-landing-page"></a>Úvodní stránka Místní nasazení
+# <a name="on-premises-deployment-home-page"></a>Domovská stránka místního nasazení
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,13 +36,13 @@ Můžete nasadit aplikaci aplikace Microsoft Dynamics 365 for Finance and Operat
 - [Plánování pro vaše místní nasazení](plan-onprem-deployment.md)
 - [Systémové požadavky pro místní nasazení](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Nastavení velikosti hardwaru pro místní prostředí](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [Zásady životního cyklu online služby a místního softwaru](../migration-upgrade/versions-update-policy.md)
 - [Zakoupení aplikace Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](../../fin-and-ops/get-started/purchase-on-premises.md)
 - [Srovnání funkce cloudu a on-premises](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
 ## <a name="onboard"></a>Onboard
 - [Vytvoření místního projektu ve službě Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Nastavení a nasazení místních prostředí](setup-deploy-on-premises-environments.md)
+- [Nastavení a nasazení místních prostředí (Platform update 12)](setup-deploy-on-premises-pu12.md)
+- [Nastavení a nasazení místních prostředí (Platform update 8 a 11)](setup-deploy-on-premises-pu8-pu11.md)
 - [Instalace zařízení síťové tiskárny v místních prostředích](../analytics/install-network-printer-onprem.md)
 - [Konfigurace služby SQL Server Reporting Services pro místní nasazení](../analytics/configure-ssrs-on-premises.md)
 - [Vývoj a nasazení vlastních modelů do místních prostředí](develop-deploy-custom-models-on-premises.md)

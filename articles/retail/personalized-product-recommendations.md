@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 16bdf2176869e5822ddf8732c829b65f1e60632c
-ms.openlocfilehash: ce91f675082a34bd5a1e88be7a7af6884dc47add
+ms.sourcegitcommit: c5b9ee57b0b855766628caca239059205c103b86
+ms.openlocfilehash: 4a0586324dddc10d64ad6760222f2540f31d6bce
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 02/07/2018
 
 
 > [!NOTE]
-> Aktuální verzi služby doporučení produktu odstraňujeme, protože předěláváme tuto funkci s lepším algoritmem a novějšími funkčnostmi orientovanými na maloobchod. Další informace naleznete v části [Odstraněné nebo zastaralé funkce](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). 
+> Aktuální verzi služby doporučení produktu odstraňujeme, protože předěláváme tuto funkci s lepším algoritmem a novějšími funkčnostmi orientovanými na maloobchod. Další informace naleznete v části [Odstraněné nebo zastaralé funkce](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). Přejděte do dolní části stránky, pokud čelíte potížím s již povolenými doporučeními produktu pro vaše prostředí. 
 
 V aplikaci Dynamics 365 for Retail je možné zobrazit doporučení ohledně produktů v zařízení pokladního místa (POS). Doporučení jsou položky, které mohou zákazníky zajímat na základě jejich historie nákupů, položky v jejich seznamu požadovaných položek a položky, které jiní zákazníci nakoupili online nebo v kamenných obchodech. Pro maloobchody s velkým katalogy doporučení pomáhají s objevováním produktu. Vystavením produktů zaměřených na zájmy a nákupní zvyklosti zákazníka mohou doporučení produktu pomáhat maloobchodníkům navýšit prodeje a použít křížové prodeje a zlepšit udržení si zákazníka. V aplikaci Dynamics 365 for Retail jsou doporučení produktu podpořena kognitivní službou a službou Microsoft Azure machine learning.
 
@@ -84,6 +84,12 @@ Při zapnutí možnosti **Povolit doporučení** a spuštění úloh konfigurace
 
 -   Pověření a ID modelu jsou vybrána z rozhraní API a uložena do provozní databáze Dynamics 365 for Retail v souboru web.config pro AOS a také na maloobchodním serveru.
 -   ID a pověření modelu jsou zpřístupněny CRT, aby bylo možné provést volání doporučení produktu z Cloud POS a MPOS.
+
+> ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Řešení problémů, když máte doporučení produktu již povolena 
+>- Přejděte na **Parametry maloobchodu** > **Strojové učení** > **Zakázat doporučení produktu** a spusťte **globální konfigurační úlohu [1110]**. Pokud nemůžete nalézt kartu **Strojové účení**, obraťte se na podporu Dynamics. 
+
+>- Pokud jste přidali **Řízení doporučení** na svou obrazovku transakcí pomocí nástroje **Návrhář rozložení obrazovky**, odstraňte ho také. 
+
 
 
 <a name="see-also"></a>Viz také

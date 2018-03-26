@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a20bb97e451ac59ba23c7f767b5feb336278dcd1
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 2c37f0253454a23d90904dd6b000b955146ad121
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/07/2018
 
 ---
 
@@ -71,15 +71,15 @@ Níže naleznete popis štítků, které jsou zahrnuty do šablony:
 
 | Pole | popis | 
 |---------|---------|
-|< Záhlaví >< Od >< doména pověření = "" >|Doména společnosti odběratele.|
-|< Záhlaví >< Od >< Pověření>< Identita >< /Identita > | Identita společnosti odběratele.|
-|< Záhlaví >< Komu >< Doména pověření = "" > | Doména společnosti dodavatele.|
-|< Záhlaví >< Komu >< Pověření>< Identita >< /Identita> | Identita společnosti dodavatele.|
-|< Záhlaví >< Odesílatel >< Doména pověření=”” > | Doména společnosti odběratele.|
-|< Záhlaví >< Odesílatel >< Pověření>< Identita >< /Identita > | Identita společnosti odběratele.|
-|< Záhlaví >< Odesílatel >< Pověření >< SharedSecret >< /SharedSecret >|Tajný pro společnost odběratele.|
+|< Header >< From >< Credential domain=”” >|Doména společnosti odběratele.|
+|< Header >< From >< Credential>< Identity >< /Identity > | Identita společnosti odběratele.|
+|< Header >< To >< Credential domain=”” > | Doména společnosti dodavatele.|
+|< Header >< To >< Credential>< Identity >< /Identity> | Identita společnosti dodavatele.|
+|< Header >< Sender >< Credential domain=”” > | Doména společnosti odběratele.|
+|< Header >< Sender >< Credential >< Identity >< /Identity> | Identita společnosti odběratele.|
+|< Header >< Sender >< Credential >< SharedSecret >< /SharedSecret >|Tajný pro společnost odběratele.|
 |< Požadovat deploymentMode=”” >|Testovací nebo výrobní nasazení.|
-|< Požadavek >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|Adresa URL konečného bodu punchout společnosti dodavatele.|
+|< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|Adresa URL konečného bodu punchout společnosti dodavatele.|
 
 ### <a name="extrinsic-elements"></a>Externí prvky
 
@@ -92,15 +92,15 @@ Zpráva zaslaná zpět je zpráva přijatá od dodavatele v případě, že se u
 
 | Zpráva přijatá od dodavatele | Zkopírovaná do řádku žádanky v aplikaci Finance and Operations.|
 |------------------------------|----------------------------------------------------------|
-|<Množství ItemIn =”” > |Množství|
+|< ItemIn quantity=”” > |Množství|
 |< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|ID externí položky|
-|< ItemDetail>< UnitPrice >< Měna=”” >| Měna|
+|< ItemDetail>< UnitPrice >< Money currency=”” >| Měna|
 |< ItemDetail >< UnitPrice >< Money >< /Money >| Jedn. cena|
 |< ItemDetail >< Description ShortName=”” >|Název produktu|
 |< ItemDetail >< Description >< /Description >|Zahrnuto v popisu položky, Název produktu, pokud není uveden ShortName.|
 |< ItemDetail >< UnitOfMeasure >< /UnitOfMeasure >|Jednotka|
 |< ItemDetail >< Classification >< /Classification >|Součást popisu položky|
-|< ItemDetail >< klasifikace domény = "" >|Součást popisu položky|
+|< ItemDetail >< Classification domain=”” >|Součást popisu položky|
 
 ## <a name="delete-an-external-catalog"></a>Odstranit externí katalog
 Odstraňte externí katalog s akcí odstranění na stránce.

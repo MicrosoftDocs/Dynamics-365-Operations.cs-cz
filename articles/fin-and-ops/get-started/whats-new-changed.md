@@ -3,7 +3,7 @@ title: "Novinky a změny"
 description: "Tato stránka obsahuje odkazy na témata, které můžete pomoci k získání informací o nových funkcích v nejnovější verzi aplikace Microsoft Dynamics 365 for Finance and Operations."
 author: josaw1
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,6 +34,8 @@ Tato stránka obsahuje odkazy na témata, které můžete pomoci k získání in
 
 Informace o tom, jak upgradovat na nejnovější verzi, uvádí téma [Proces upgradu na poslední aktualizaci](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
+
+[!include[release notes](../includes/release-notes.md)]
 
 ## <a name="application-releases"></a>Verze aplikace
 
