@@ -1,7 +1,7 @@
 --- 
 title: "Vytváření postupů (jen ve verzi z února 2016)"
 description: "Tato úloha je zaměřena na vytvoření výrobních postupů pro dokončený produkt a polotovar produktu."
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 02/07/2017
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis
