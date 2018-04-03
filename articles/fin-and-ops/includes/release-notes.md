@@ -1,0 +1,6 @@
+> [!IMPORTANT]
+> <span data-ttu-id="c8f49-101">**Oznámení poznámek k verzi the Dynamics 365 Spring '18**</span><span class="sxs-lookup"><span data-stu-id="c8f49-101">**Announcing the Dynamics 365 Spring '18 release notes**</span></span>
+>
+> <span data-ttu-id="c8f49-102">Zajímáte se o nadcházející a nedávno uvedené funkce jakékoliv z nasích obchodních aplikací nebo platforem?</span><span class="sxs-lookup"><span data-stu-id="c8f49-102">Wondering about upcoming and recently released capabilities in any of our business apps or platform?</span></span> 
+> 
+> <span data-ttu-id="c8f49-103">[Stáhněte si poznámki k verzi Spring '18](http://download.microsoft.com/download/1/C/0/1C0A4DB7-9CE8-4D25-AC7F-65579E713BA8/ReleaseNotes_Dynamics365_03192018.pdf)</span><span class="sxs-lookup"><span data-stu-id="c8f49-103">[Download the Spring '18 release notes](http://download.microsoft.com/download/1/C/0/1C0A4DB7-9CE8-4D25-AC7F-65579E713BA8/ReleaseNotes_Dynamics365_03192018.pdf).</span></span> <span data-ttu-id="c8f49-104">Popsali jsme všechny podrobnosti, od A až do Z, v jednom PDF, které můžete používat pro plánování.</span><span class="sxs-lookup"><span data-stu-id="c8f49-104">We've captured all the details, end to end, top to bottom, in a single PDF that you can use for planning.</span></span> 

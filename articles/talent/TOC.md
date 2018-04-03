@@ -3,6 +3,8 @@
 # [Začínáme](talent-get-started.md)
 ## [Systémové požadavky a zásady aktualizace](talent-versions-update-policy.md)
 ## [Zřízení Microsoft Dynamics 365 for Talent](provisioning-talent.md)
+## [Odstranění prostředí Talent](remove-test-environment.md)
+## [Zřízení modulárních aplikací Microsoft Dynamics 365 for Talent](modular-app-tech-faq.md)
 ## [Rozšíření funkce Talent](extend-talent-functionality.md)
 
 # [Vytvoření strategie lidských zdrojů](departments-jobs-positions.md)
@@ -39,5 +41,5 @@
 ## [Hodnocení výsledků dotazníku](evaluate-questionnaire-results.md)
 
 # Bezpečnost na pracovišti a dodržování předpisů (USA)
-## [Ověřování zaměstnanců pomocí formuláře I-9](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
-## [Vyhovění normě ADA](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md)
+## [Ověřování zaměstnanců pomocí formuláře I-9](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json)
+## [Vyhovění normě ADA](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json)
