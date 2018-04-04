@@ -3,8 +3,8 @@
 # Začínáme
 ## [Co je nového a co se změnilo](get-started/whats-new.md)
 ## [Než si koupíte aplikaci Dynamics 365 for Retail](get-started/before-you-buy.md)
-## [Registrace ukázkového předplatného](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
-## [Nasazení ukázkového prostředí](../dev-itpro/deployment/deploy-demo-environment.md)
+## [Registrace ukázkového předplatného](../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json)
+## [Nasazení ukázkového prostředí](../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json)
 ## [Možnosti nasazení](dev-itpro/choose-deployment.md)
 
 
@@ -44,10 +44,11 @@
 ## [Konfigurace a instalace Retail hardware station](retail-hardware-station-configuration-installation.md)
 ## [Čas a docházka v aplikaci Retail](retail-time-attendance.md)
 
-# Domovská stránka Moderního pokladního místa MPOS a Cloud POS
+# Modern Point of Sale (MPOS) a Cloud POS
 ## [Výběr mezi Modern POS a Cloud POS](MPOS-or-CPOS.md)
-## [Operace POS](POS-operations.md)
+## [Operace POS, online a offline](pos-operations.md)
 ## [Rozložení obrazovky ukázkových dat v MPOS/CPOS](demo-data.md)
+## [Přehled vyhledávání produktu a zákazníka v pokladním místě](POS-search-improvements.md)
 ## Hardwarová periferní zařízení
 ### [Přehled periferní zařízení aplikace Retail](retail-peripherals-overview.md)
 ### [Hardwarová periferní zařízení POS testovaná společností Microsoft](microsoft-tested-pos-hardware-peripherals.md)
@@ -60,6 +61,7 @@
 ### [Nastavení aplikace POS a uživatelského jazyka](pos-application-user-language-settings.md)
 ### [Nastavení obrázků pro MPOS](set-up-manage-images-retail-mpos.md)
 ## [Přehled informačních kódů](info-codes-retail.md) 
+## [Vylepšení POS pro serializované produkty](serialized-inventory.md)
 ## Doporučení produktu
 ### [Přehled doporučení přizpůsobeného produktu](personalized-product-recommendations.md)
 ### [Přidání řízení doporučení na zařízení POS](add-recommendations-control-pos-screen.md)
@@ -97,6 +99,7 @@
 ## [Úpravy ceny a slevy](price-adjustments-discounts.md)
 ## [Určení optimální kombinace překrývajících se slev](optimal-combination-overlapping-discounts.md)
 ## [Definování slevy specifické pro kanál](define-channel-specific-discounts.md)
+## [Zabránění slevám pro maloobchodní produkty](prevent-discounts.md)
 ## [Vytvoření kupónů pro maloobchodní prodej](retail-coupons.md)
 
 # Produkty a merchandising
@@ -105,6 +108,7 @@
 ## [Atributy a přehled skupin atributů](attribute-attributegroups-lifecycle.md)
 ## [Vytvoření a správa atributů](create-manage-attributes.md)
 ## [Nastavení maloobchodních produktů](set-up-retail-products.md)
+## [Rozšířená správa kategorií a produktů](category-management-product-creation.md)
 ## [Dimenze produktu](../supply-chain/pim/product-dimensions.md)
 ## [Nastavení čárových kódů](set-up-bar-codes.md)
 ## [Nastavení masek čárových kódů](set-up-bar-code-masks.md)
@@ -136,7 +140,7 @@
 
 # Lokalizace a funkce týkající se předpisů
 ## Indie
-### [GST integrace pro registrační pokladny pro Indii](localizations/apac-ind-cash-registers.md)
+### [Integrace daně GST pro Indii pro registrační pokladny](localizations/apac-ind-cash-registers.md)
 ### [Pokyny k nasazení registračních pokladen pro Indii](localizations/apac-ind-loc-deployment-guidelines.md)
 ## Norsko
 ### [Registrační pokladny pro Norsko](localizations/emea-nor-cash-registers.md)
@@ -190,13 +194,14 @@
 # [Vývoj a správa Retail](dev-itpro/dev-retail-home-page.md)
 
 ## Architektura
-### [Komponenty aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition - Retail](retail-components.md)
+### [Komponenty aplikace Microsoft Dynamics 365 for Finance and Operations - Retail](retail-components.md)
 ### [Architektura serveru Retail Server](dev-itpro/retail-server-architecture.md)
 ### [Komunikace maloobchodní sítě](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS architektura](dev-itpro/retail-modern-pos-architecture.md)
 ### [Architektura publikování maloobchodního online obchodu](dev-itpro/retail-online-store-publishing-architecture.md)
-### [Obsah výkonnosti maloobchodní sítě Power BI](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [Obsah výkonnosti maloobchodní sítě Power BI](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json)
 ### [Certifikace Payment Application Data Security Standards (PA-DSS)](dev-itpro/PA-DSS-Certification.md)
+### [Funkce aplikace Retail dostupné v nasazení on-premises](retail-onprem.md)
 
 ## Nasazení a opravy hotfix
 ### [Přehled Retail Store Scale Unit](dev-itpro/retail-store-system-begin.md)
@@ -208,7 +213,7 @@
 ### [Konfigurace a instalace Retail Hardware Station](retail-hardware-station-configuration-installation.md)
 ### [Hromadné nasazení samoobslužných komponent modulu Retail](dev-itpro/retail-mass-deployment.md)
 ### [Události komponent Retail pro diagnostiku a řešení potíží](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
-### [Použití nasaditelného balíčku](../dev-itpro/deployment/apply-deployable-package-system.md)
+### [Použití nasaditelného balíčku](../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json)
 
 ## Upgrade a N-1 podpora
 ### [Přehled upgradu a N-1 podpory](dev-itpro/overview-upgrade-n-minus1.md)
@@ -218,7 +223,7 @@
 ### [Průvodce implementací správy zařízení](implementation-considerations-devices.md)
 
 ## Konfigurace prostředí
-### [Přidání odkazů na právní podmínky a zásady ochrany osobních údajů ve vaší organizaci](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
+### [Přidání odkazů na právní podmínky a zásady ochrany osobních údajů ve vaší organizaci](../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json)
 ### [Správa Map Bing](dev-itpro/manage-bing-maps.md)
 
 ## Rozšiřitelnost pokladních míst

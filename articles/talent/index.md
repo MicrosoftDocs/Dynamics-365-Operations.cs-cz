@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 199a8961f782816c71e47f9e76e097c069fbf686
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: db8b2e87ad020dac16ec74f2fea62e445c38e116
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -43,7 +43,7 @@ Modul Talent lze použít k provádění těchto úkonů:
 + Nastavení, poskytování a analýza školení, která mají určitý program, semináře a průběh.
 
 > [!NOTE] 
-> Aplikace Dynamics 365 for Talent úzce souvisí s modulem pro lidské zdroje v aplikaci Dynamics 365 for Finance and Operations, Enterprise Edition. Stejné funkce se mohou objevit v obou produktech. Proto bude v tématech, která primárně souvisí s modulem Lidské zdroje, název produktu Dynamics 365 for Finance and Operations, Enterprise Edition; v tématech, která primárně souvisí s aplikací Talent, pak bude název produktu Dynamics 365 for Talent. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
+> Aplikace Dynamics 365 for Talent úzce souvisí s modulem pro lidské zdroje v aplikaci Dynamics 365 for Finance and Operations. Stejné funkce se mohou objevit v obou produktech. Proto bude v tématech, která primárně souvisí s modulem Lidské zdroje, název produktu Dynamics 365 for Finance and Operations. V tématech, která primárně souvisí s aplikací Talent, pak bude název produktu Dynamics 365 for Talent. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>Vytvoření strategie správy lidských zdrojů
 ---------------------------------------------------------

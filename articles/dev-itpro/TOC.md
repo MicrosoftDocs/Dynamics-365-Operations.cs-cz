@@ -1,7 +1,7 @@
 # [Vývoj a správa pro aplikaci Dynamics 365 for Finance and Operations](index.md)
-# [Systémové požadavky pro nasazení cloudu](../fin-and-ops/get-started/system-requirements.md)
-# [Systémové požadavky pro místní nasazení](../fin-and-ops/get-started/system-requirements-on-prem.md)
-# [Ukázková data](../fin-and-ops/get-started/demo-data.md)
+# [Systémové požadavky pro nasazení cloudu](../fin-and-ops/get-started/system-requirements.md?toc=/dev-itpro/toc.json)
+# [Systémové požadavky pro místní nasazení](../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dev-itpro/toc.json)
+# [Ukázková data](../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json)
 ## [Generování ukázkových dat s balíčky](data-entities/generate-demo-data-packages.md)
 
 
@@ -29,7 +29,7 @@
 ### [Export a import modelu](dev-tools/models-export-import.md)
 ### [Vyhledávání metadat v aplikaci Visual Studio](dev-tools/metadata-search-visual-studio.md)
 ### [Modely](dev-tools/models.md)
-### [Projekty v aplikaci Dynamics 365 for Finance and Operations, Enterprise edition](dev-tools/projects.md)
+### [Projekty v aplikaci Dynamics 365 for Finance and Operations](dev-tools/projects.md)
 ### [Doplňky nástrojů pro Visual Studio](dev-tools/developer-tools-add-ins.md)
 ### [Vypnutí přizpůsobení modelu a neschválení funkce](dev-tools/lock-models.md)
 ### [Aktualizovat vývojové nástroje aplikace Visual Studio](dev-tools/update-development-tools.md)
@@ -114,7 +114,7 @@
 #### [Přizpůsobení: překrývání vrstev a rozšíření](extensibility/customization-overlayering-extensions.md)
 ### Novinky
 #### [Změny rozšiřitelnosti – červenec 2017](extensibility/changes-july-2017.md)
-#### [Změny rozšiřitelnosti v aplikaci Dynamics 365 for Finance and Operations, Enterprise Edition 7.3](extensibility/extensibility-changes-73.md)
+#### [Změny rozšiřitelnosti – verze 7.3](extensibility/extensibility-changes-73.md)
 ### Základy
 #### [Narušující přizpůsobení](extensibility/intrusive-customizations.md)
 #### [Rozšíření tříd](extensibility/class-extensions.md)
@@ -159,7 +159,7 @@
 ### [Nasazení s průběžným sestavováním a automatizací testování](perf-test/continuous-build-test-automation.md)
 ## [Platnost od](dev-tools/date-effectivity.md)
 ## [ISV licence](dev-tools/isv-licensing.md)
-## [ISV licence on-prem](dev-tools/isv-licensing-on-prem.md)
+## [ISV licence on-premises](dev-tools/isv-licensing-on-prem.md)
 
 # [Vývoj uživatelského rozhraní](user-interface/user-interface-development-home-page.md)
 ## Kurzy
@@ -168,8 +168,8 @@
 ### [Vytvoření navigace](user-interface/build-navigation.md)
 ### [Vytvoření pracovního prostoru](user-interface/build-workspace.md)
 ## Formuláře
-### [Navigace v aplikaci Dynamics 365 for Finance and Operations, Enterprise edition](user-interface/page-navigation.md)
-### [Rozvržení v aplikaci Dynamics 365 for Finance and Operations, Enterprise edition](user-interface/page-layout.md)
+### [Navigace v aplikaci Dynamics 365 for Finance and Operations](user-interface/page-navigation.md)
+### [Rozvržení v aplikaci Dynamics 365 for Finance and Operations](user-interface/page-layout.md)
 ### [Font symbolů](user-interface/symbol-font.md)
 ### [Testovací formuláře s vlastními vzory](user-interface/testing-forms-custom-patterns.md)
 ### [Vytvoření a použití vnořených odkazů](user-interface/create-deep-links.md)
@@ -489,12 +489,12 @@
 
 ## Cloudové nasazení
 ### [Připojování architektury Azure Resource Manager](deployment/arm-onboarding.md)
-### [Azure ExpressRoute a Dynamics 365 for Finance and Operations, Enterprise Edition](deployment/expressroute.md)
+### [Azure ExpressRoute a Dynamics 365 for Finance and Operations](deployment/expressroute.md)
 
 ## [Místní nasazení](deployment/on-premises-deployment-landing-page.md)
 ### [Přehled místního nasazení](deployment/on-premises-overview.md)
 ### [Plánování pro vaše místní nasazení](deployment/plan-onprem-deployment.md)
-### [Rozsah hardwaru](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
+### [Rozsah hardwaru](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json)
 ### [Vytvoření projektu on-premises](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Nastavení a nasazení místních prostředí](deployment/setup-deploy-on-premises-environments.md)
 #### [Nasazení místních prostředí s aktualizací Platform update 12](deployment/setup-deploy-on-premises-pu12.md)
@@ -507,7 +507,7 @@
 ### [Aktualizace místního agenta](lifecycle-services/update-local-agent.md)
 ### [Rekonfigurace vašeho prostředí](lifecycle-services/reconfigure-environment.md)
 ### [Připojení klienta k internetu](user-interface/client-disconnected.md)
-### [Řešení problémů aplikace Dynamics 365 for Finance and Operations, Enterprise edition on-premises](deployment/troubleshoot-on-prem.md)
+### [Řešení problémů aplikace Dynamics 365 for Finance and Operations on-premises](deployment/troubleshoot-on-prem.md)
 
 ## Nasazení vlastního kódu
 ### [Vytvoření nasaditelného balíčku](deployment/create-apply-deployable-package.md)
@@ -527,7 +527,7 @@
 ### [Upgrade AX 2012 – úkoly k dokončení po upgradu](migration-upgrade/app-validation-process.md)
 ### [Upgrade AX 2012 – úspěšný funkční test](migration-upgrade/upgrade-functional-validation.md)
 ### [Upgrade AX 2012 – příprava pro ostré nasazení](migration-upgrade/upgrade-go-live-prep.md)
-
+### [Upgrade AX 2012 – Ostré nasazení](migration-upgrade/2012-upgrade-cutover.md)
 
 ### Změny ovlivňující upgrade z aplikace AX 2012
 #### [Upgrade týkající se jednoho dokladu a přecenění měny ](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
@@ -588,7 +588,9 @@
 ### [Přehled dávkového serveru](sysadmin/batch-server-overview.md)
 ### [Vytvoření dávkové úlohy](sysadmin/tasks/create-batch-job.md)
 
-## [Vytvoření pravidel pro poradce při optimalizaci](sysadmin/optimization-advisor.md)
+##  [Přehled poradce při optimalizaci](sysadmin/optimization-advisor-overview.md)
+### [Vytvoření pravidel pro poradce při optimalizaci](sysadmin/create-rules-optimization-advisor.md)
+
 
 # Lifecycle Services
 ## [Přehled služby Lifecycle Services](lifecycle-services/lcs.md)
@@ -701,10 +703,10 @@
 ## [Žádost o obnovení databáze sandbox](database/database-refresh.md)
 
 # Podpora
-## [Získání podpory pro aplikaci Dynamics 365 for Finance and Operations, Enterprise edition a Lifecycle Services](lifecycle-services/lcs-support.md)
+## [Získání podpory pro aplikaci Dynamics 365 for Finance and Operations a Lifecycle Services](lifecycle-services/lcs-support.md)
 ## [Zadání lístku podpory Premier](lifecycle-services/premier-support.md)
 ## [Odeslání požadavku na tým Dynamics Service Engineering](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
-## [Nastavení technické podpory pro aplikaci Dynamics 365 for Finance and Operations, Enterprise Edition](lifecycle-services/support-experience.md) 
+## [Nastavení technické podpory pro aplikaci Dynamics 365 for Finance and Operations](lifecycle-services/support-experience.md) 
 ## [Často kladené dotazy k oknu plánované údržby](lifecycle-services/planned-maintenance-window-faq.md) 
 ## [Cloudové operace a obsluha](lifecycle-services/cloud-operations-servicing.md)
 ## [Správa zkušeností s Finance and Operations Support](lifecycle-services/cloud-powered-support-lcs.md)
