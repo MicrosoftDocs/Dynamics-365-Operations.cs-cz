@@ -18,10 +18,10 @@ ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: bbbe37330e16a079b817dfe04f4a47f046263e88
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 6f6add07a2426b1846cbeb9dee149a63f66f779e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -42,11 +42,11 @@ Mnoho organizací vyžaduje, aby byla připojena k sestavě cestovních nebo obc
 
 Konkrétně mobilní pracovní prostor **Správa výdajů** uživatelům umožňuje provádění těchto úloh:
 
-- Pořízení fotografie účtenky a její nahrání do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Následně můžete připojit uvedenou fotografii k sestavě výdajů později.
+- Pořiďte fotografii účtenky a odešlete ji do aplikace Microsoft Dynamics 365 for Finance and Operations. Následně můžete připojit uvedenou fotografii k sestavě výdajů později.
 - Odešlete soubor jako zdokumentovanou účtenku. Následně můžete připojit uvedený soubor k sestavě výdajů později.
 - Vytvořte nový řádek výdajů pomocí připojené účtenky. Později můžete přidat položku řádku k sestavě výdajů a odeslat ke schválení a refundaci.
 
-Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, můžete používat tyto funkce:
+Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, můžete používat tyto funkce:
 
 - Vytvořte novou sestavu výdajů.
 - Transakce kreditních karet a další dříve vytvořené výdaje připojte k vyúčtování výdajů.
@@ -60,8 +60,8 @@ Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, E
 ## <a name="prerequisites"></a>Požadavky
 Předpoklady se liší podle verze aplikace Microsoft Dynamics 365, která byla nasazena ve vaší organizaci.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 
-Pokud je ve vaší organizaci nasazena aktualizace aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, správce systému musí mobilní pracovní prostor **Správa výdajů** publikovat. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations 
+Pokud je ve vaší organizaci nasazena aktualizace aplikace Microsoft Dynamics 365 for Finance and Operations, správce systému musí mobilní pracovní prostor **Správa výdajů** publikovat. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější
 Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější, správce systému musí dokončit následující předpoklady. 

@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: ef108fb7be65b91c531db750018f00f7fdd67da1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 72dbc5d383352d4d6444d07495fdef00137b1c7f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -58,7 +58,7 @@ Produkt je definován především číslem, názvem a popisem. Jsou však poža
 
 ## <a name="distribution-export-and-import-of-product-data"></a>Distribuce, export a import dat produktu
 
-Definici produktu lze vytvořit v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Lze ji také importovat ze správy životního cyklu produktu (PLM), správy dat správy produktů (PDM) nebo systémů správy informací o produktu (PIM). Při použití více než jedné instance aplikace Finance and Operations se jedna instance běžně používá jako předloha dat produktu pro všechny ostatní instance. Tato metoda je podpořena velkou sadou datových entit, které umožňují export a import dat definice produktů z jedné instance na jinou.
+Definici produktu lze vytvořit v aplikaci Microsoft Dynamics 365 for Finance and Operations. Lze ji také importovat ze správy životního cyklu produktu (PLM), správy dat správy produktů (PDM) nebo systémů správy informací o produktu (PIM). Při použití více než jedné instance aplikace Finance and Operations se jedna instance běžně používá jako předloha dat produktu pro všechny ostatní instance. Tato metoda je podpořena velkou sadou datových entit, které umožňují export a import dat definice produktů z jedné instance na jinou.
 
 Na podporu distribuce dat produktu do mnoha instancí umožňuje aplikace Finance and Operations použití služby Common Data Service. Definice produktů lze exportovat službu běžné dat z instance aplikace Finance and Operations do služby Common Data Service. Definice produktů lze použít k zajištění jinými obchodními aplikacemi, jako například aplikace Microsoft Dynamics 365 for Sales, s daty produktu.
 

@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fa11f1775017dd9bada61340b4bed70ea66a4137
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a44b3d2ee6e47e71103c7be04b731d4faa79c448
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -96,7 +96,7 @@ Nákladový prvek příjmů vybraný ve skupině kompenzací se používá při 
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Vytváření pozic prognózy pro existující pozice
 
-Pro nejpřesnější plánování rozpočtu můžete vytvořit pozice prognózy využívající podrobných údajů z aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, bez ohledu na to, zda je pozice aktuálně zaplněna nebo nezaplněna. 
+Pro nejpřesnější plánování rozpočtu můžete vytvořit pozice prognózy využívající podrobných údajů z aplikace Microsoft Dynamics 365 for Finance and Operations, bez ohledu na to, zda je pozice aktuálně zaplněna nebo nezaplněna. 
 
 Funkce **Přidat existující pozice** zobrazí všechny pozice pro organizaci. Pomocí nastavení pole **K datu** lze seznam pozic změnit tak, aby obsahoval pozice, které existovaly k datu v minulosti nebo, běžněji, v budoucnosti (například k začátku dalšího rozpočtového cyklu). Vyberte proces plánování rozpočtu a scénář plánu rozpočtu, vyberte pozice v seznamu a klepněte na tlačítko **OK** pro vytvoření pozic prognózy pro vybrané pozice. Všimněte si, že lze vytvořit pouze jednu pozici prognózy pro každou existující pozici v procesu plánování rozpočtu a scénáři. Přiřazením odlišných scénářů plánu rozpočtu však můžete vytvořit další verze. 
 

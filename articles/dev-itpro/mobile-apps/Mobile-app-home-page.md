@@ -18,10 +18,10 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 233d91138b11905d971be90154da54e61bbe2919
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b84778bd67e8c5bad6e8858d2af71f46e0dfe145
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -39,7 +39,7 @@ Toto téma popisuje mobilní aplikaci Microsoft Dynamics 365 for Unified Operati
 
 Mobilní aplikace umožňuje vaší organizaci zpřístupnit své obchodní procesy na mobilních zařízeních. Jakmile váš správce IT povolí mobilní pracovní prostory pro vaši organizaci, mohou se uživatelé přihlásit k aplikaci a okamžitě začít pracovat s obchodními procesy ze svých mobilních zařízení. Mobilní aplikace obsahuje následující funkce, které vám mohou pomoci zvýšit produktivitu:
 
-- Uživatelé mohou zobrazit, upravit a reagovat na obchodní data, i v případě, kdy mají občasné síťové připojení nebo kdy jsou jejich mobilní zařízení zcela offline. Poté, co zařízení obnoví připojení k síti, offline datové operace se automaticky synchronizují s aplikací Dynamics 365 for Finance and Operations, Enterprise Edition nebo Microsoft Dynamics 365 for Finance and Operations.
+- Uživatelé mohou zobrazit, upravit a reagovat na obchodní data, i v případě, kdy mají občasné síťové připojení nebo kdy jsou jejich mobilní zařízení zcela offline. Při obnovení připojení k síti se offline datové operace automaticky zesynchronizují s aplikací Dynamics 365 for Finance and Operations.
 - IT správci nebo vývojáři mohou vytvořit a publikovat mobilní pracovní prostory, které byly vytvořeny na míru pro jejich organizace. Aplikace používá vaše existující kódy majetku. Z toho vyplývá, že není nutné znovu zavádět vaše postupy ověření, obchodní logik nebo konfiguraci zabezpečení.
 - IT správci nebo vývojáři mohou snadno navrhnout mobilní pracovní prostory pomocí „ukaž a klikni“ návrháře pracovního prostoru, který je součástí webového klienta.
 - IT správci nebo vývojáři mohou volitelně optimalizovat offline možnosti pracovního prostoru pomocí architektury rozšíření obchodní logiky. Vzhledem k tomu, že data se stále zpracovávají, i když je zařízení v režimu offline, vaše mobilní scénáře zůstávají bohaté a plynulé i tehdy, když nemají stálé síťové připojení.
@@ -90,7 +90,7 @@ Následující tabulka obsahuje odkazy na zdroje, které vám mohou pomoci při 
 <tr class="even">
 <td>2</td>
 <td>Správce systému</td>
-<td><strong>Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations verze 1611:</strong> Stáhněte si a nainstalujte články znalostní báze umožňující mobilní pracovní prostory, které poskytuje Microsoft.</td>
+<td><strong>Pokud používáte aplikaci Microsoft Dynamics 365 for Operations verze 1611:</strong> Stáhněte si a nainstalujte články znalostní báze umožňující mobilní pracovní prostory, které poskytuje Microsoft.</td>
 <td>Další informace naleznete v následujících tématech:
 <ul>
 

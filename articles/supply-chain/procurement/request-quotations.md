@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 42ab7beb8a269cd37fd9100385bd302e4945c1e0
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b86363004b8702d1a654f2a1da49bba82fc8ff2a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -46,7 +46,7 @@ Požadavek na nabídku můžete vytvořit z plánovaných objednávek, z nákupn
 
 Po přípravě případu požadavku na nabídku a přidání dodavatele zvolte v případu požadavku na nabídku **Odeslat**. Deník požadavku na nabídku se vygeneruje pro každého dodavatele, kterému jste odeslali požadavek na nabídku. Můžete nakonfigurovat nastavení správy tisku pro akci Odeslat, aby se buď vytiskla sestava pro každého dodavatele do archivu nebo odeslala sestava na e-mailovou adresu každého dodavatele. Deník požadavku na nabídku pro každého dodavatele lze navíc použít k vytvoření sestavy, kterou lze odeslat nebo později znovu odeslat dodavateli. Také můžete nakonfigurovat akci Odeslat, aby se vygeneroval list odpovědí, který mohou dodavatelé vyplnit.
 
-V tomto tématu je popsán postup zpracování požadavku na nabídku, když se nepoužívá dodavatelská spolupráce. Je-li váš systém nastaven pro dodavatelskou spolupráci, dodavatelé mohou zadat nabídky přímo do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Další informace naleznete v tématu [Dodavatelská spolupráce se zákazníky](vendor-collaboration-work-customers-dynamics-365-operations.md).
+V tomto tématu je popsán postup zpracování požadavku na nabídku, když se nepoužívá dodavatelská spolupráce. Je-li váš systém nastaven pro dodavatelskou spolupráci, dodavatelé mohou zadat nabídky přímo do aplikace Microsoft Dynamics 365 for Finance and Operations. Další informace naleznete v tématu [Dodavatelská spolupráce se zákazníky](vendor-collaboration-work-customers-dynamics-365-operations.md).
  
 Pokud musíte změnit požadavek na nabídku po jeho odeslání, můžete opět odeslat požadavek na nabídku dodavatelům po jeho dokončení s použitím dvou akcí úprav: Vytvoření a Dokončení.
 

@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fa494ab9c3b3f0540ec042f952344c15796845e6
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a0530a569978bafffcdcc63c8d502b9bfa645bc5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -34,7 +34,7 @@ Při plánování a nastavení svých účtových osnov musíte zvážit, jak je
 
 ## <a name="chart-of-accounts-and-financial-dimension-components"></a>Komponenty účetních osnov a finančních dimenzí
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, má bohatý systém na základě pravidel pro určení platných kombinací hlavních účtů a hodnot finančních dimenzí. Tento oddíl poskytuje stručný přehled funkcí jednotlivých komponent a vysvětluje, kde komponenty naleznete.
+Microsoft Dynamics 365 for Finance and Operations má bohatý systém na základě pravidel pro určení platných kombinací hlavních účtů a hodnot finančních dimenzí. Tento oddíl poskytuje stručný přehled funkcí jednotlivých komponent a vysvětluje, kde komponenty naleznete.
 
 ### <a name="account-structures"></a>Účetní struktury
 

@@ -19,10 +19,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 96df6bbfe5c9e158b616230c2b061762a5edda08
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 156688b705337331e083ebc19fded57b028acb67
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -62,7 +62,7 @@ Můžete zkontrolovat konfiguraci rozvržení a podle potřeby ji upravit.
 [![Příklad](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
-> Chcete-li předejít možným problémům se zobrazením a úpravami dat plánu rozpočtu při použití aplikace Excel, měl by být přihlášen do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition a datového konektoru doplňku Microsoft Dynamics pro Office stejný uživatel.
+> Chcete-li předejít možným problémům se zobrazením a úpravami dat plánu rozpočtu při použití aplikace Excel, měl by být přihlášen do aplikace Microsoft Dynamics 365 for Finance and Operations a datového konektoru doplňku Microsoft Dynamics pro Office stejný uživatel.
 
 ## <a name="add-a-header-to-budget-plan-document-template"></a>Přidání záhlaví do šablony dokumentu plánu rozpočtu
 Chcete-li přidat informace záhlaví, vyberte horní řádek v souboru aplikace Excel a vložte prázdné řádky. Klikněte na tlačítko **Návrh** v **datovém konektoru**, pokud chcete přidat pole záhlaví do souboru aplikace Excel.

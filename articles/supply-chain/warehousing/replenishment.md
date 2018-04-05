@@ -20,10 +20,10 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d933910faa726ea279a3371f6c8a3eca9bc9dfee
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 1b6086f7769086a9cdbb61c03882ea21d908ab4a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -56,7 +56,7 @@ Doplnění poptávky je podporována pro prodejní objednávky, převodní pří
 ## <a name="minmax-replenishment"></a>Doplnění metodou min/max.
 U doplnění metodou min/max. probíhá doplnění zásob tak, aby byly ve stanoveném minimálním a maximálním rozsahu. Obvykle tento proces probíhá jednou denně k zajištění toho, že jsou všechna výdejní skladová místa naplněna na maximální úroveň před zahájením výdeje. 
 
-Minimální a maximální objemy jsou nastaveny v šabloně doplnění. Mnoho dalších nastavení v šabloně je podobné, jako v šablonách, které se používají u doplnění na základě poptávky vlny. Šablona by měla obsahovat jeden řádek pro každou položku a skladové místo. Při provádění doplnění pomocí dávkové úlohy Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition vyhodnotí, zda doplnění je vyžadováno pomocí pořadí, ve kterém jsou uspořádány řádky. 
+Minimální a maximální objemy jsou nastaveny v šabloně doplnění. Mnoho dalších nastavení v šabloně je podobné, jako v šablonách, které se používají u doplnění na základě poptávky vlny. Šablona by měla obsahovat jeden řádek pro každou položku a skladové místo. Při provádění doplnění pomocí dávkové úlohy Microsoft Dynamics 365 for Finance and Operations vyhodnotí, zda doplnění je vyžadováno pomocí pořadí, ve kterém jsou uspořádány řádky. 
 
 Všimněte si, že strategie doplnění metodou Min/Max. nedokáže doplnit prázdné místo, pokud není umístění nastaveno jako pevné umístění pro položku. Není-li umístění, které musí být doplněno, nastaveno jako pevné umístění, systém nedokáže určit, kterou položku je třeba doplnit. Proto je nutné před zahájením doplnění mít na skladě alespoň část množství.
 

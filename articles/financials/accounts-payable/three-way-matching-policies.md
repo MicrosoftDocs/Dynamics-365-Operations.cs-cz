@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: da3099a07e3084bf49d03e0f4d421aebe9b39940
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c8ea45ece05f006f1649c79fcdee427a0bc4b0b5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -65,7 +65,7 @@ Zásady párování faktur v tomto příkladu pomáhají osobám v následujíc�
 1.  Sammy, pracovník v oddělení příjmu ve společnosti Fabrikam, obdrží celkové množství strojů dodaných od společnosti Contoso. Zadá na příjemce produktu počet 5. Protože nákupní objednávka byla plně přijata, stav nákupní objednávky se změní na Přijato.
 2.  April, koordinátor závazků ve společnosti Fabrikam, zadá a ověří fakturu odeslanou společností Contoso. Ověří následující informace:
     -   U položek, které vyžadují třícestné párování, ověří zda množství na řádku faktury odpovídá množství, které bylo přijato. Přijaté množství je uvedeno na příjemce produktu, které je párováno s fakturou.
-    -   Pro položky, které vyžadují dvoucestné nebo třícestné párování, jsou ceny na řádku faktury v rámci tolerance definované v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Jedná se o následující typy párování ceny:
+    -   Pro položky, které vyžadují dvoucestné nebo třícestné párování, jsou ceny na řádku faktury v rámci tolerance definované v aplikaci Microsoft Dynamics 365 for Finance and Operations. Jedná se o následující typy párování ceny:
         -   Párování čisté jednotkové ceny – čistá jednotková cena na řádku faktury odpovídá čisté jednotkové ceně na řádku nákupní objednávky v rámci procenta odchylky. V tomto příkladu je tolerance pro čistou jednotkovou cenu +8 %.
         -   Párování celkových cen – čistá částka na řádku faktury odpovídá čisté částce na řádku nákupní objednávky v rámci procenta, částky nebo procenta a částky odchylky. V tomto příkladu je tolerance celkové párované ceny +15 %.
 

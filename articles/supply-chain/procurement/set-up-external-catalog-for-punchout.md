@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 2c37f0253454a23d90904dd6b000b955146ad121
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2892feff0ab8845515543af1a71d8f9642113726
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/07/2018
 
 [!include[banner](../includes/banner.md)]
 
-Pomocí externího katalogu můžete zajistit, že informace o produktu a cenách, které následně zpracováváte v aplikaci Dynamics 365 for Finance and Operations, Enterprise Edition z července 2017 jsou přesné a aktuální. Žádanku poté lze schválit a převést na nákupní objednávku a tuto objednávku následně zadat u dodavatele.
+Pomocí externího katalogu můžete zajistit, zda jsou informace o produktu a cenách, které následně zpracováváte v aplikaci Dynamics 365 for Finance and Operations z července 2017, přesné a aktuální. Žádanku poté lze schválit a převést na nákupní objednávku a tuto objednávku následně zadat u dodavatele.
 
 Když při nastavování externího katalogu zaměstnanec připravuje žádanku, bude mít možnost přesměrovat ji na externí web, do externího katalogu a vrátit košík, který byl vytvořen na externím webu. Tato komunikace vychází z protokolu cXML a je nutné ji nastavit mezi systémy nákupní a prodejní organizace.
 
@@ -85,7 +85,7 @@ Níže naleznete popis štítků, které jsou zahrnuty do šablony:
 
 Externí prvek představuje další informace jako uživatelské jméno uživatele, který provedl punchout. Je nastaven, když je provedena funkce punchout a může být zaslán ve zprávě o nastavení požadavku.
 Dodavatel může mít požadavek na příjem z vnějšího zdroje prvku v nastavení požadavku. V takovém případě byste měli přidat externí prvek do seznamu externích prvků v části **Formát zprávy** na stránce **Externí katalog**. Zadejte název pro externí prvek, který dodavatel rozpozná, a namapujte ho na hodnotu. Možnosti hodnot jsou: uživatelského jméno, uživatelský e-mail nebo náhodná hodnota.
-Další informace o protokolu cXML protokolu naleznete na stránkách: http://cxml.org/
+Další informace o službách protokolu cXML naleznete v tématu http://cxml.org/.
 
 ## <a name="post-back-message"></a>Zpráva zaslaná zpět
 Zpráva zaslaná zpět je zpráva přijatá od dodavatele v případě, že se uživatel odhlásí z externího webu a vrátí do aplikace Finance and Operations. Tyto zprávy nelze konfigurovat. Jsou založeny na definici cXML protokolu. Dále jsou uvedeny informace, které mohou být součástí takové zprávy přijaté na řádku žádanky:

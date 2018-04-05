@@ -19,10 +19,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1eb30ccbaa51bf794c7b3ea2be3fe749fb8ff88d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 02d28aef2316d7cfe5ad4eb45272dc1a22c96789
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -74,7 +74,7 @@ Pro každou transakci (řádky dokumentu k prodeji/nákupu, deníky a tak dále)
 U každé transakce můžete vyhledat vypočítanou daň z prodeje otevřením stránky **Transakce DPH**. Můžete vyhledávat daň z prodeje pro řádek dokumentu nebo pro celý dokument. U některých dokumentů (například faktura dodavatele a hlavní deníky) můžete upravit vypočítanou daň z prodeje, pokud původní dokument vykazuje odchylky částky.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Vyrovnání a vykazování daně z prodeje
-Daň z prodeje musí být vykázána a zaplacena finančním úřadům v daných intervalech (měsíčně, čtvrtletně atd.). Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition nabízí funkce, které umožňují vyrovnat účty DPH pro daný interval a vyrovnat zůstatky na účtu pro vyrovnání daně podle údajů ve skupinách hlavní knihy. Tato funkce je k dispozici na stránce **Vyrovnat a zaúčtovat DPH**. Je nutné zadat období vyrovnání daně, pro které by měna být vyrovnána DPH. 
+Daň z prodeje musí být vykázána a zaplacena finančním úřadům v daných intervalech (měsíčně, čtvrtletně atd.). Microsoft Dynamics 365 for Finance and Operations nabízí funkce, které vám umožňují vyrovnat účty daní pro interval a vyrovnat zůstatky na účet vyrovnání daně, jak je uvedeno ve skupinách pro zaúčtování do hlavní knihy. Tato funkce je k dispozici na stránce **Vyrovnat a zaúčtovat DPH**. Je nutné zadat období vyrovnání daně, pro které by měna být vyrovnána DPH. 
 
 Poté, co byla daň z prodeje zaplacena, zůstatky na účtu vyrovnání daně z prodeje by měly být srovnány dle bankovního účtu. Pokud úřad pro kontrolu daně z prodeje, který je uveden v období vyrovnání daně z prodeje, souvisí s účtem dodavatele, zůstatek daně z prodeje bude zaúčtován jako otevřená faktura dodavatele a lze jej zahrnout do návrhu běžné platby.
 

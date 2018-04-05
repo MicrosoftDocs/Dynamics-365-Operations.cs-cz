@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e444168f249e798fa68b9b082556aa8e5e7d8113
-ms.openlocfilehash: 0e1c5120bf8558b955b66e059a8be8bbec2c2ce1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: bd26ac6fd8376fd42467c7a3d2ecd2ec035a4479
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/13/2018
 
 [!include[banner](../includes/banner.md)]
 
-K vytvoření a správě úloh importu a exportu dat v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition používáte pracovní prostor **Správa dat**. Ve výchozím nastavení proces importu a exportu dat vytvoří tabulky fázování pro každou entitu v cílové databázi. Tabulky fázování umožňují ověřit, vyčistit anebo převést dat předtím, než budou přesunuta.
+K vytvoření a správě úloh importu a exportu dat v aplikaci Microsoft Dynamics 365 for Finance and Operations používáte pracovní prostor **Správa dat**. Ve výchozím nastavení proces importu a exportu dat vytvoří tabulky fázování pro každou entitu v cílové databázi. Tabulky fázování umožňují ověřit, vyčistit anebo převést dat předtím, než budou přesunuta.
 
 > [!NOTE]
 > V tomto tématu se předpokládá, že jste obeznámeni s [datovými entitami](data-entities.md).
@@ -66,7 +66,7 @@ Můžete přidat konkrétní entity do úlohy importu nebo exportu, nebo zvolit 
 ### <a name="set-the-data-format-for-the-job"></a>Nastavení formátu dat pro úlohu
 Vyberete-li entitu, je nutné vybrat formát dat, která budou exportována nebo importována. Formáty definujete pomocí dlaždice **Nastavení datových zdrojů**. Mnoho společností vychází z formátů, které jsou součástí výchozího nastavení v sadě ukázkových dat. Zde je uveden seznam některých formátů:
 
-- AX (pro data, která je třeba importovat nebo exportovat ve stejném formátu, který se používá pro aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition)
+- AX (pro data, která je třeba importovat nebo exportovat ve stejném formátu, který se používá pro aplikaci Microsoft Dynamics 365 for Finance and Operations)
 - ColonSeparated
 - CSV
 - Excel

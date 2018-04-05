@@ -18,10 +18,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 002c3bea2803fdf43b0c35620c8d46fc9400fafc
-ms.openlocfilehash: 9db4f7ed9cba0d91a9a8507a33882a9114bdb1f5
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: f3ed06dbbce21ac093107953d3a72d8ab086af2a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/04/2018
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics Office pro aplikaci Excel. Chcete-li otevřít data entity, můžete začít z aplikace Excel nebo Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
+Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics Office pro aplikaci Excel. Chcete-li otevřít data entity, můžete začít z aplikace Excel nebo Microsoft Dynamics 365 for Finance and Operations.
 
 Otevřením dat entity v aplikaci Microsoft Excel můžete rychle a snadno zobrazit a upravovat data pomocí doplňku aplikace Excel. Tento doplněk vyžaduje aplikaci Microsoft Excel 2016.
 

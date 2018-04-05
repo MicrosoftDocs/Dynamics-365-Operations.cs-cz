@@ -3,7 +3,7 @@ title: "Novinky a změny"
 description: "Tato stránka obsahuje odkazy na témata, které můžete pomoci k získání informací o nových funkcích v nejnovější verzi aplikace Microsoft Dynamics 365 for Finance and Operations."
 author: josaw1
 manager: AnnBe
-ms.date: 03/21/2018
+ms.date: 03/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: ff73fdb3e6ce97e01838228c45795ca64e888add
-ms.openlocfilehash: e00dece6a6f917028379d879ec81a5c7ab210253
+ms.sourcegitcommit: 47de452c2072b6a29d7e2d34eb73b472be669a6c
+ms.openlocfilehash: eb6132b6d535deb13a4cd1343d04967893a2cfe9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/25/2018
 
 ---
 
@@ -120,10 +120,10 @@ Informace o tom, jak upgradovat na nejnovější verzi, uvádí téma [Proces up
 <tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
-<td>Aktualizace platformy 13</td>
-<td>7.0.4764</td>
-<td>Leden 2018 (Jedná se o cílenou verzi, která je k dispozici pouze pro uživatele, kteří se přihlásili do programu CAAP (Continuous Auto-update Advantage Program).)</td>
-<td><a href="whats-new-platform-update-13.md">Co je nového nebo co se změnilo v aktualizaci Dynamics 365 for Finance and Operations, Enterprise Edition, aktualizace 13 platformy (leden 2018)</a></td><tbody>
+<td>Aktualizace platformy 15</td>
+<td>7.0.4839</td>
+<td>Březen 2018 (Jedná se o cílenou verzi, která je k dispozici pouze pro uživatele, kteří se přihlásili do programu CAAP (Continuous Auto-update Advantage Program).)</td>
+<td><a href="whats-new-platform-update-15.md">Co je nového nebo co se změnilo v aktualizaci Dynamics 365 for Finance and Operations, Enterprise Edition, aktualizace 15 platformy (březen 2018)</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Aktualizace platformy 12</td>

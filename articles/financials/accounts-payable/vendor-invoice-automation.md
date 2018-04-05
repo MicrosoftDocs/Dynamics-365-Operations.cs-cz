@@ -17,10 +17,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 34dc8d762db4a4802e52188ebda298db234ee376
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 551f3d5fc52fac725fcc9fedc37dc1c85fac5a26
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="vendor-invoice-automation"></a>Automatizace faktur dodavatele
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/05/2018
 
 Toto téma popisuje funkce, které jsou k dispozici pro celkovou automatizaci dodavatelských faktur, a to dokonce i faktur, které obsahují přílohy.
 
-Organizace, které chtějí usnadnit své procesy v oblasti závazků (AP), často identifikují zpracování faktury jako jeden z hlavních procesních oblastí, které by měly být efektivnější. V mnoha případech organizace svěřují zpracování papírových faktur nezávislým poskytovatelům služeb optického rozpoznávání znaků (OCR). Poté obdrží strojově čitelná metadata faktury spolu s naskenovaným obrázkem jednotlivých faktur. Na pomoc s automatizací je pak k dispozici řešení na poslední chvíli, které umožňuje spotřebu těchto artefaktů ve fakturačním systému. Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, umožňuje nyní vydání této automatizace na poslední chvíli prostřednictvím řešení automatizace faktury.
+Organizace, které chtějí usnadnit své procesy v oblasti závazků (AP), často identifikují zpracování faktury jako jeden z hlavních procesních oblastí, které by měly být efektivnější. V mnoha případech organizace svěřují zpracování papírových faktur nezávislým poskytovatelům služeb optického rozpoznávání znaků (OCR). Poté obdrží strojově čitelná metadata faktury spolu s naskenovaným obrázkem jednotlivých faktur. Na pomoc s automatizací je pak k dispozici řešení na poslední chvíli, které umožňuje spotřebu těchto artefaktů ve fakturačním systému. Microsoft Dynamics 365 for Finance and Operations umožňuje nyní vydání této automatizace na poslední chvíli prostřednictvím řešení automatizace faktury.
 
 ## <a name="solution-context"></a>Kontext řešení
 

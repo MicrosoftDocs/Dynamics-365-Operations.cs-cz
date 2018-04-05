@@ -19,10 +19,10 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 270e0de2d58550e517417076b49a5a8bdc62bc64
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: df07066371cb7d9c69976c9714b6d2fe456a0308
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ Jestliže právnická osoba obdržela faktury v cizí měně, je nutné převés
 V následujících částech je popsán celkový tok informací, které se používají k nastavení a zpracování importu cizích směnných kurzů.
 
 ## <a name="configure-an-exchange-rate-provider"></a>Konfigurace poskytovatele směnných kurzů
-Než bude možné importovat směnné kurzy, musíte nastavit informace vyžadované zprostředkovateli, kteří nabízejí směnné kurzy. Pomocí stránky **Konfigurace zprostředkovatelů směnného kurzu** vyberte poskytovatele směnných kurzů. Někteří poskytovatelé směnných kurzů jsou zahrnuti v demo datech aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Ovládací prvky tohoto formuláře jsou popsány na následující stránce.
+Než bude možné importovat směnné kurzy, musíte nastavit informace vyžadované zprostředkovateli, kteří nabízejí směnné kurzy. Pomocí stránky **Konfigurace zprostředkovatelů směnného kurzu** vyberte poskytovatele směnných kurzů. Někteří poskytovatelé směnných kurzů jsou zahrnuti v demo datech aplikace Microsoft Dynamics 365 for Finance and Operations. Ovládací prvky tohoto formuláře jsou popsány na následující stránce.
 
 |           |                                                                                                                                                                                                                             |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

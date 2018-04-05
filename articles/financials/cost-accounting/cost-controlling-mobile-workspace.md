@@ -18,10 +18,10 @@ ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 5b57bf268ac9e91c98a0b8709061e695ebf482c6
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 39578744654215795f43fec8dcc70c264b66fb0b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -78,8 +78,8 @@ Mobilní pracovní prostor **Řízení nákladů** poskytuje následující akce
 ## <a name="prerequisites"></a>Požadavky
 Předpoklady se liší podle verze aplikace Microsoft Dynamics 365, která byla nasazena ve vaší organizaci.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition
-Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, správce systému musí publikovat mobilní pracovní prostor **Řízení nákladů**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations
+Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Finance and Operations, správce systému musí publikovat mobilní pracovní prostor **Řízení nákladů**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější
 Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější, správce systému musí dokončit následující předpoklady.

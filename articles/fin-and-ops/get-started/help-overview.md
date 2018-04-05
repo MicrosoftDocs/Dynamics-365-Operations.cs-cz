@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
-ms.openlocfilehash: 9c68cd0e1c214e22b8831e4f4a0c5d545387f982
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 5adf73c1316f701b3b5e9b9a22fa5743ba1cc419
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,10 +33,10 @@ ms.lasthandoff: 03/09/2018
 Toto téma poskytuje přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations. Také je zde vysvětleno, jak můžete poskytnout vlastní dokumentaci a školení pro vaši organizaci. 
 
 > [!NOTE] 
-> Tyto produkty spolu úzce souvisí: Dynamics 365 for Finance and Operations, Enterprise Edition; Dynamics 365 for Retail a Dynamics 365 for Talent. Stejné funkce se mohou objevovat ve všech třech produktech. U témat, která se vztahují především k aplikaci Retail, proto bude uveden název produktu Dynamics 365 for Retail; u témat souvisejících s aplikací Talent bude uveden název Dynamics 365 for Talent a u témat souvisejících se základním produktem bude uveden název Dynamics 365 for Finance and Operations. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
+> Tyto produkty spolu úzce souvisí: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail a Dynamics 365 for Talent. Stejné funkce se mohou objevovat ve všech třech produktech. U témat, která se vztahují především k aplikaci Retail, proto bude uveden název produktu Dynamics 365 for Retail; u témat souvisejících s aplikací Talent bude uveden název Dynamics 365 for Talent a u témat souvisejících se základním produktem bude uveden název Dynamics 365 for Finance and Operations. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
 
 Systém nápovědy je společný pro všechny následující produkty:
-- Dynamics 365 for Finance and Operations, Enterprise Edition
+- Dynamics 365 for Finance and Operations
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
@@ -108,7 +108,7 @@ Vpravo zadejte e-mailovou adresu a nové heslo k vytvoření nového účtu pro 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Navržení změny nebo přispění do obsahu prostřednictvím GitHub
 Chcete-li navrhnout změnu, musíte mít účet GitHub a podepsat licenční smlouvu přispěvatele.  Po odeslání požadavku na vložení zkontrolujeme navrhované změny. V případě potřeby je projednáme interně a ozveme se vám zpět.  
 
-Pro začátek klikněte na tlačítko **Upravit** (tužka) na tématu nebo přejděte do našeho úložiště na https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public. 
+Chcete-li začít, klikněte na tlačítko **Upravit** (tužka) na tématu nebo přejděte na naše úložiště https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public. 
 
 Další informace naleznete v příručce našich přispěvatelů: https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
 

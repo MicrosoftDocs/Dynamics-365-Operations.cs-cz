@@ -16,10 +16,10 @@ ms.assetid:
 ms.search.region: Global
 ms.author: bking
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: daded9d8ef48456cbd3f97a7bae5fa75885ce9d1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: bbf4da5a33876973a376a0580fd553e15bd6febc
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -47,7 +47,7 @@ V části **Úkoly a stav** se zobrazí celkový stav projektu ověřování dat
 Poslední karta je určená pro seznam podrobných úkolů. Tento seznam zobrazuje úplný seznam úkolů.
 Můžete filtrovat seznam úkolů v několika způsoby. Chcete-li změnit stav úkolu nebo přiřadit úkol, klikněte na možnost **Upravit úkol**. Chcete-li zobrazit přílohy úkolu, klikněte na možnost **Přílohy**.
 
-Název úkolu je hypertextový odkaz na stránku Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, nebo jinou webovou stránku, kam uživatel musí přejít k dokončení práce. Tento hypertextový odkaz lze nastavit pomocí pole **Název položky nabídky** při úpravě nebo vytváření úkolu z formuláře **Konfigurace projektu ověřování dat**.
+Název úkolu je hypertextový odkaz na stránku Microsoft Dynamics 365 for Finance and Operations, nebo jinou webovou stránku, kam uživatel musí přejít k dokončení práce. Tento hypertextový odkaz lze nastavit pomocí pole **Název položky nabídky** při úpravě nebo vytváření úkolu z formuláře **Konfigurace projektu ověřování dat**.
 
 Soubory, poznámky, obrázky a adresy URL můžete připojit k úkolu pomocí akce **Přílohy**. Například můžete připojit soubor sestavy, který byl vytištěn pro úkol. Ikona se zobrazí ve sloupci **Přílohy** pro úkol, pokud je příloha k dispozici.
 

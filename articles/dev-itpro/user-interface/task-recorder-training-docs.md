@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: ed3f8260cace494170bf1d4db80c3bcb9a1a086e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 9550faec1bbbdc233631e149c09b8e4faf25f5ff
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -85,7 +85,7 @@ Toto je vzhled poznámky v bublině v průvodci záznamem úloh.
 
 [![screen4](./media/screen4.png)](./media/screen4.png)
 
--   **Krok Informace**: Tyto poznámky se vytvářejí kliknutím pravým tlačítkem na ovládací prvek nebo na libovolné místo ve formuláři &lt; **Záznamník úloh** &lt; **Přidat informační krok. **Informační kroky se zobrazují v jakémkoli kroku vložení, i když nebyla zaznamenána žádná akce v uživatelském rozhraní. Můžete přidat krok informací na úrovni formuláře nebo krok informací přidružený k ovládacímu prvku. Je-li krok informací přidružen k formuláři, zobrazí se "bublina" průvodce úkolem jinde ve formuláři, bez ukazatele, když je přehráván průvodce úkolem. Je-li informační krok přidružen k formuláři, bude "bublina" průvodce záznamem úloh odkazovat na ovládací prvek, kde se průvodce záznamem úloh přehrává. V podokně Nápověda se poznámka informačního kroku zobrazuje jako očíslovaný krok s jakýmkoli zadaným textem. Kroky informací slouží k přípravě uživatele na následující kroky, k popisu kroků, které je třeba provést mimo aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, nebo pro účely odkazování na jiné záznamy (i když v poznámkách nelze vytvořit hypertextové odkazy).
+-   **Krok Informace**: Tyto poznámky se vytvářejí kliknutím pravým tlačítkem na ovládací prvek nebo na libovolné místo ve formuláři &lt; **Záznamník úloh** &lt; **Přidat informační krok. **Informační kroky se zobrazují v jakémkoli kroku vložení, i když nebyla zaznamenána žádná akce v uživatelském rozhraní. Můžete přidat krok informací na úrovni formuláře nebo krok informací přidružený k ovládacímu prvku. Je-li krok informací přidružen k formuláři, zobrazí se "bublina" průvodce úkolem jinde ve formuláři, bez ukazatele, když je přehráván průvodce úkolem. Je-li informační krok přidružen k formuláři, bude "bublina" průvodce záznamem úloh odkazovat na ovládací prvek, kde se průvodce záznamem úloh přehrává. V podokně Nápověda se poznámka informačního kroku zobrazuje jako očíslovaný krok s jakýmkoli zadaným textem. Kroky informací slouží k přípravě uživatele na následující kroky, k popisu kroků, které je třeba provést mimo aplikaci Microsoft Dynamics 365 for Finance and Operations, nebo pro účely odkazování na jiné záznamy (i když v poznámkách nelze vytvořit hypertextové odkazy).
 
 **Určete, jak dlouho budete záznam provádět**
 

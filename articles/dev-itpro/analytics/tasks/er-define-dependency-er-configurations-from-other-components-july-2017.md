@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7de5fbcaa9f287752e3ae4834eb48d622d263579
-ms.openlocfilehash: 890f035a291dbec936594ceeabc5de284d160ad4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a1ccd440353e986d296de370506fb1951331e2cf
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/25/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="define-the-dependency-of-configurations-from-other-components-for-electronic-reporting-er"></a>Definování závislosti konfigurací z jiných komponent pro elektronické výkaznictví (ER)
@@ -28,7 +28,7 @@ ms.lasthandoff: 10/25/2017
 
 K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh, ER Správa konfigurací mapování modelů, a mít přístup k aplikaci Microsoft Dynamics Lifecycle Services (LCS).
 
-Tento postup popisuje postup návrhu konfigurace elektronických sestav (ER) a zadání závislosti z dalších softwarových komponent, abyste tak mohli zajistit správné stažení konfigurace pro specifickou verzi aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. V tomto příkladu vytvoříte požadované ER konfigurace pro vzorovou společnost Litware, Inc. 
+Tento postup popisuje postup návrhu konfigurace elektronických sestav (ER) a zadání závislosti z dalších softwarových komponent, abyste tak mohli zajistit správné stažení konfigurace pro specifickou verzi aplikace Microsoft Dynamics 365 for Finance and Operations. V tomto příkladu vytvoříte požadované ER konfigurace pro vzorovou společnost Litware, Inc. 
 
 Tento postup je navržen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. Kroky lze provést v každé společnosti, protože konfigurace ER jsou sdíleny společnostmi. 
 

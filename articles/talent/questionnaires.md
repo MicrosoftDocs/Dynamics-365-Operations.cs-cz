@@ -19,10 +19,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 84d5f60cdce4cd667c408d17d9892d7079947f58
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fc7194e7f95a6a99587a6f7e8ab8a30957bbbd90
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/07/2018
 
 Toto téma obsahuje obecné informace o dotaznících a odkazy na podrobnější informace. Dotazník je sada otázek, které se používají ke shromažďování informací pro různé účely. Můžete navrhovat, vytvářet, rozesílat a vyplňovat dotazníky a následně provádět analýzu výsledků. 
 
-Dotazník můžete upravit pomocí různých funkcí, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, podle svých specifických požadavků. Zde je několik příkladů použití dotazníků:
+Dotazník můžete upravit pomocí různých funkcí, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations, podle svých specifických požadavků. Zde je několik příkladů použití dotazníků:
 
 -   testování profesionálních dovedností zaměstnanců a uchazečů,
 -   Zhodnoťte, zda se účastníci kurzu seznámili s materiály kurzu.

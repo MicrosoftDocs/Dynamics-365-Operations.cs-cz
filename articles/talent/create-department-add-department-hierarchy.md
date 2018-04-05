@@ -19,10 +19,10 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: cea3ecd66a57780c9ef1b3a3c21f1e5273faa0ef
+ms.sourcegitcommit: 812db9f1d319e4d16f83700a7153a0a3b318963e
+ms.openlocfilehash: 3fc30669bf7a16616484bf7115cb121ce463840f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -56,7 +56,6 @@ Pro přidání oddělení do hierarchie oddělení postupujte takto:
 5.  Uložte změny. Obdržíte zprávu, že byla vytvořena pracovní verzi hierarchie.
 6.  Po dokončení práce klikněte v návrháři hierarchie na tlačítko **Publikovat**. Můžete zadat datum začátku platnosti, které určuje, kdy má být hierarchie publikována. Například chcete-li přidat nové oddělení na začátku dalšího kalendářního roku, nastavte platné datum od 1. ledna nového kalendářního roku. Změny hierarchie se projeví k tomuto datu.
 
-
-
-
+## <a name="steps-for-creating-a-department"></a>Postup při vytváření oddělení
+Ohledně podrobného postupu pro vytvoření nového oddělení nahlédněte do tématu [Definování nových oddělení](../fin-and-ops/hr/tasks/define-new-departments.md). 
 

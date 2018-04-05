@@ -3,7 +3,7 @@ title: "Řízení směny a zásuvky s hotovostí"
 description: "Tento článek vysvětluje, jak nastavit a používat dva typy směn pro maloobchodní pokladní místo (POS) - sdílené a samostatné. Sdílené směny může používat více uživatelů na více místech, zatímco samostatné směny může využívat vždy pouze jeden pracovník najednou."
 author: rubencdelgado
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,10 +20,10 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b8e12f3f4c2f8f5a596c8994f2a4571d8a907062
+ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
+ms.openlocfilehash: c1483d3240d266845cea7789b70c038cb98fdfcc
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/22/2018
 
 ---
 
@@ -99,7 +99,60 @@ Sdílené směny se používají v prostředí, kde více pokladníků sdílí z
 9.  Pomocí operace **Deklarovat úhradu** deklarujte celkovou výši hotovosti ze všech zásuvek s hotovostí, které jsou součástí sdílené směny.
 10. Pomocí operace **Zavřít směnu** zavřete sdílenou směnu.
 
+## <a name="shift-operations"></a>Operace směny
+Chcete-li změnit stav směny nebo zvýšit či snížit množství peněz v zásuvce, lze provést různé akce. Níže uvedená část popisuje tyto operace směny pro Dynamics 365 for Retail Modern POS a Cloud POS.
 
+**Otevřená směna**
 
+POS vyžaduje, aby uživatel měl aktivní, otevřenou směnu, aby mohl provádět všechny operace, které by měly za následek finanční transakci, například prodej, vrácení nebo příkaz odběratele.  
 
+Během přihlašování do POS systém nejprve zkontroluje, zda má uživatel k dispozici na aktuální registrační pokladně aktivní směnu. V opačném případě uživatel pak může otevřít novou směnu, pokračovat v existující směně nebo pokračovat v přihlašování v režimu "bez zásuvky" režim, v závislosti na konfiguraci systému a jejich oprávněních.
+
+**Počáteční částka výkazu**
+
+Tato operace je často první akcí, kterou provede nově otevřená směna. Uživatelé určují počáteční množství hotovosti v zásuvce pro směnu. To je důležité kvůli výpočtu přebytku/nedostatku, ke kterému dochází při uzavírání účtů směny pro tuto částku.
+
+**Zadání plovoucího zůstatku**
+
+Plovoucí položky jsou neprodejní transakce, které se provádějí v aktivní směně a které zvyšují částku v hotovosti v zásuvce. Typickým příkladem plovoucí položky je přidání další změny do zásuvky, když se vyčerpává paměť.
+
+**Odstranění úhrady**
+
+Odebrání úhrady jsou neprodejní transakce, které se provádějí v aktivní směně ke snížení částky v zásuvce s hotovostí. To se nejčastěji používá ve spojení s plovoucím zůstatkem na odlišné směně. Například registrace 1 dochází při změně, takže uživatel v registru 2 provede odebrání úhrady ke snížení množství v zásuvce. Uživatel na registrační pokladně 1 by potom provedl plovoucí zůstatek pro zvýšení částky.
+
+**Pozastavit směnu**
+
+Uživatelé mohou pozastavit své aktivní směny k uvolnění aktuální registrační pokladny pro jiného uživatele, nebo pro přesun své směny na jinou registrační pokladnu (to se často označuje jako plovoucí pokladna). 
+
+Pozastavení směny zabraňuje všem novým transakcím a změnám směn až do obnovení.
+
+**Obnovit směnu**
+
+Tato operace umožňuje uživateli obnovit dříve pozastavenou směnu na registrační pokladně, která již nemá aktivní směnu.
+
+**Výkaz úhrad**
+
+Výkaz úhrad je akce, kterou uživatel provedne k určení celkové peněžní částky v zásuvce, nejčastěji před uzavřením směny. Jedná se o hodnotu, která se porovnává proti očekávané směně k výpočtu částky přebytku/nedostatku.
+
+**Odvod do trezoru**
+
+Odvody do trezoru lze provést kdykoli během aktivní směny. Tato operace odstraní peníze ze zásuvky, aby mohly být přeneseny na bezpečnější místo, jako je například trezor v zadní místnosti. Celková částka zaznamenaná pro odvody do trezoru je stále zahrnuta v součtech směny, ale není nutné ji počítat jako součást výkaz úhrad.
+
+**Odvod do banky**
+
+Odvody do banky jsou stejně jako odvody do trezoru prováděny na aktivních směnách. Tato operace odstraní peníze ze směny a připraví je na bankovní vklad.
+
+**Zavřít směnu bez zadání částky**
+
+Neurčené uzavřená směna je směna, která již není aktivní, ale ještě nebyla zcela uzavřena. Směny uzavřené bez zadání částky nelze obnovit jako pozastavené směny, ale postupy, jako jsou výkazy počátečních částek a výkazy úhrad lze provést později nebo z jiné registrační pokladny.
+
+Směny uzavřené bez zadání částky se často používají k uvolnění registru pro nového uživatele nebo směnu, aniž by bylo nutné tuto směnu plně spočítat, odsouhlasit a zavřít. 
+
+**Zavřít směnu**
+
+Tato operace vypočítá součty směny, částky přebytku/nedostatku a potom dokončí aktivní nebo bez zadání částky uzavřenou směnu. Nelze obnovit nebo upravit uzavřené směny.  
+
+**Spravovat směny**
+
+Tato operace umožňuje uživatelům zobrazit všechny aktivní, pozastavené a bez zadání částky uzavřené směny obchodu. V závislosti na svých oprávněních mohou uživatelé provádět závěrečné uzávěrkových postupy, jako je výkaz úhrad a zavírání směn pro neurčené směny uzavřené bez zadání částky. Tato operace také umožní uživatelům zobrazit a odstranit neplatné směny ve vzácných případech, kdy je směna zanechána ve špatném stavu po přepnutí mezi režimy offline a online. Tyto neplatné směny neobsahují žádné finančních informace nebo transakční data potřebná pro vyrovnání. 
 

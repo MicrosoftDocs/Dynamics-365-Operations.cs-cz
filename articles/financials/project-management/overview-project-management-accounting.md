@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: 6a2c51d9ffe288dad2db43ecd0a4c8f717c6379a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3c4720795313180ba7ad784ea39484d6ffb9ac2f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -38,7 +38,7 @@ Projektu je skupina aktivit sloužící k poskytování služby, produkci produk
 ## <a name="projects-across-industries"></a>Projekty napříč odvětvími
 Řízení projektu a funkce účetnictví lze použít v několika průmyslových odvětvích, jak je zachyceno v následujícím obrázku. [![Projekty napříč odvětvími](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-V kontaktnímu středisku lze příkaz použít k popisu sady akcí, které jsou nutné při řešení volání. Konzultační společnosti, jako jsou například organizace pro management nebo technické konzultace nebo reklamní agentury, odkazují na svou činnost jako projekty. V marketingu kampaň představuje sadu práce, která musí být dodána. V projektové výrobě se výrobní zakázka týká různých prací, které je třeba provést, aby bylo možné vyrábět hotové zboží. Bez ohledu na označení tyto projekty zahrnují prostředky, kalendáře a náklady a funkce řízení projektu a účetnictví v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition vám mohou pomoci s plánováním, prováděním a analýzou těchto projektů.
+V kontaktnímu středisku lze příkaz použít k popisu sady akcí, které jsou nutné při řešení volání. Konzultační společnosti, jako jsou například organizace pro management nebo technické konzultace nebo reklamní agentury, odkazují na svou činnost jako projekty. V marketingu kampaň představuje sadu práce, která musí být dodána. V projektové výrobě se výrobní zakázka týká různých prací, které je třeba provést, aby bylo možné vyrábět hotové zboží. Bez ohledu na označení tyto projekty zahrnují prostředky, kalendáře a náklady a funkce řízení projektu a účetnictví v aplikaci Microsoft Dynamics 365 for Finance and Operations vám mohou pomoci s plánováním, prováděním a analýzou těchto projektů.
 
 ## <a name="project-phases"></a>Fáze projektu
 Ačkoli je následující postup určen pro externí projekty nebo projekty dokončené pro jednoho či více zákazníků, funkce platí i pro interní nákladové projekty. 

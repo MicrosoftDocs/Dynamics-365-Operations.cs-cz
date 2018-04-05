@@ -19,10 +19,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b033f6197e61a6030e12081a9e4f1d820bac458f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c4ac839e69440c8d3f1e86007a074999189e391d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -47,7 +47,7 @@ Dokumenty odůvodnění poskytují komentáře pro osoby požadující rozpočet
 
 1.  Klikněte na tlačítko **Návrh** v doplňku Microsoft Dynamics Office poté, co se přihlásíte.
 2.  Pro informace záhlaví použijte tlačítko **Přidat pole**.
-3.  Vyberte zdroj dat entity BudgetPlanJustification a klikněte na **Další**. **Poznámka:** Tato entita je vyžadována pro každý dokument odůvodnění. Ostatní entity lze použít, ale odeslání zpět do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition se nezdaří, pokud není tato entita zahrnuta.
+3.  Vyberte zdroj dat entity BudgetPlanJustification a klikněte na **Další**. **Poznámka:** Tato entita je vyžadována pro každý dokument odůvodnění. Ostatní entity lze použít, ale odeslání zpět do aplikace Microsoft Dynamics 365 for Finance and Operations se nezdaří, pokud není tato entita zahrnuta.
 4.  Přidejte popisky BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter a DocumentNumber do dokumentu aplikace Word. **Poznámka:** V případě potřeby můžete použít vlastní popisky, spíše než standardní popisky.
 5.  Klikněte na **Hotovo** pro dokončení části záhlaví.
 6.  Pro získání podrobností o částkách plánu rozpočtu na úrovni řádků klikněte na tlačítko **Přidat tabulku**.

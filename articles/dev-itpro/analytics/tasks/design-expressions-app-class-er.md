@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: b0a1dba5afbd7beba45149340f637223f6ecedcf
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 631fa7bae808856efb8b95700fd2a85e6d5f8725
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="design-expressions-to-call-application-class-methods-er"></a>Návrh výrazů pro volání metod třídy aplikace (ER)
@@ -28,13 +28,13 @@ ms.lasthandoff: 02/07/2018
 
 Tento průvodce obsahuje informace o tom, jak opakovaně použít existující aplikační logiku v konfiguracích elektronického výkaznictví (ER) voláním požadovaných metod aplikačních tříd ve výrazech ER. Argumenty pro volání třídy hodnoty lze definovat dynamicky při spuštění: například na základě informací v dokumentu určeném k ověření jejich správnosti. V této příručce vytvoříte požadované konfigurace elektronického výkaznictví pro vzorovou společnost Litware, Inc. Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického výkaznictví. 
 
-Tyto kroky lze dokončit za použití libovolné datové sady. Je nutné stáhnout a místně uložit následující soubor: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
+Tyto kroky lze dokončit za použití libovolné datové sady. Je nutné stáhnout a lokálně uložit následující soubor: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
 
 K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proceduře "ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního".
 
 1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
     * Ověřte, zda poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu „Vytvoření poskytovatele konfigurace a jeho označení jako aktivního“.   
-    * Předpokládejme, že navrhujete proces pro analýzu příchozích bankovních výpisů pro aktualizaci dat aplikace. Obdržíte příchozí bankovní výpisy jako TXT soubory, které obsahují kód IBAN kódy. V rámci procesu importu bankovního výpisu je nutné ověřit správnost těchto kódů IBAN na základě logiky, která je již k dispozici v aplikaci Dynamics 365 for Finance and Operations, Enterprise edition.   
+    * Předpokládejme, že navrhujete proces pro analýzu příchozích bankovních výpisů pro aktualizaci dat aplikace. Obdržíte příchozí bankovní výpisy jako TXT soubory, které obsahují kód IBAN kódy. V rámci procesu importu bankovního výpisu je nutné ověřit správnost těchto kódů IBAN na základě logiky, která je již k dispozici v aplikaci Dynamics 365 for Finance and Operations.   
 
 ## <a name="import-a-new-er-model-configuration"></a>Import nové konfigurace ER modelu
 1. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
