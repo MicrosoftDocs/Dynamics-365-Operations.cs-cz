@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1335d95c8bf02d5c571d37d78eca0ee7eae32bad
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3b6ded5e5accbbdba708c8b31119429e72bd58f5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -53,7 +53,7 @@ EPC, která zahrnuje evropské banky, vyvíjí obchodní a technické předlohy 
 Převod SEPA je platba od jedné společnosti nebo osoby pro jinou společnost nebo osobu. Platby musí být v eurech a musí obsahovat mezinárodní číslo bankovního účtu (IBAN) a identifikační kód BIC (Bank Identifier Code) pro obě strany. (BIC je známý také jako kód Society for Worldwide Interbank Financial Telecommunication \[SWIFT\].) Kromě toho musí být náklady na transakce sdíleny mezi oběma stranami. Převody prováděné mezi stranami by měly používat soubory XML, které vyhovují normám zpracování plateb ISO 20022 a formátu XML, jak uvádí EPC.
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>Jak je převod kreditu implementován?
-Formát platby platebního převodu pro evropské země je implementován pomocí funkce elektronického výkaznictví a metod plateb v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Několik formátů převodu kreditu, které se používají v jiných regionech, již používá systém zastaralé platby. Mezi mnoha jinými formáty je dvanáct formátů převodu kreditu ISO 20022, které jsou k dispozici. Tyto formáty pro export odpovídají standardu SEPA ISO 20022 XML. Používají se ke generování platebních převodů jiného typu než euro pro země, kde se používají, a pro a euro platby podle určení ve verzi 8.2 pravidel přenosu, které vydává EPC. Než bude možné implementovat převody kreditu, obraťte se na vaši banku za účelem získání softwaru, který je nutný k načtení souborů elektronického bankovnictví. Tento software budete používat pro přenos souborů XML obsahujících platební příkazy do banky.
+Formát platby platebního převodu pro evropské země je implementován pomocí funkce elektronického výkaznictví a metod plateb v aplikaci Microsoft Dynamics 365 for Finance and Operations. Několik formátů převodu kreditu, které se používají v jiných regionech, již používá systém zastaralé platby. Mezi mnoha jinými formáty je dvanáct formátů převodu kreditu ISO 20022, které jsou k dispozici. Tyto formáty pro export odpovídají standardu SEPA ISO 20022 XML. Používají se ke generování platebních převodů jiného typu než euro pro země, kde se používají, a pro a euro platby podle určení ve verzi 8.2 pravidel přenosu, které vydává EPC. Než bude možné implementovat převody kreditu, obraťte se na vaši banku za účelem získání softwaru, který je nutný k načtení souborů elektronického bankovnictví. Tento software budete používat pro přenos souborů XML obsahujících platební příkazy do banky.
 
 ## <a name="what-credit-transfer-formats-are-currently-supported-in-finance-and-operations"></a>Jaké formáty převodu úvěru jsou aktuálně podporovány v aplikaci Finance and Operations?
 Měli byste vždy přejít do knihovny sdílený majetek ve službě Microsoft Dynamics Lifecycle services (LCS) a zobrazit nejaktuálnější seznam dostupných souborů, které mají typ majetku **konfigurace GER**. Další oddíl "Co musím nastavit?" obsahuje odkaz na téma, které vysvětluje, jak vytvořit úložiště LCS ke kontrole dostupných konfigurací a importovat vybrané konfigurace.

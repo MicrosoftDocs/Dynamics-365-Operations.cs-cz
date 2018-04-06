@@ -18,25 +18,25 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 0d551818c8d352af96f6e64613cfbbc4aec5bf5b
-ms.openlocfilehash: e35769e45b1017eef2ee5a5b6c2baa35ae13d90c
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fa43f6683d43dfb62e8dc2c194ff2b82fe629fe3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="on-premises-deployment-home-page"></a>Domovská stránka místního nasazení
 
 [!include[banner](../includes/banner.md)]
 
-Můžete nasadit aplikaci aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (místní). Když se rozhodnete pro typ místního nasazení, budou se požadavky na systém, rozměry hardwaru a funkce lišit od cloudového nasazení. Toto téma obsahuje odkazy na obsah s informacemi specifickými pro místní nasazení.
+Můžete nasadit Microsoft Dynamics 365 for Finance and Operations (on-premises). Když se rozhodnete pro typ místního nasazení, budou se požadavky na systém, rozměry hardwaru a funkce lišit od cloudového nasazení. Toto téma obsahuje odkazy na obsah s informacemi specifickými pro místní nasazení.
 
 ## <a name="get-started"></a>Začínáme
 - [Co je nového a co se změnilo v místních nasazeních aplikace Dynamics 365 for Finance and Operations, Enterprise edition 7.2 s aktualizací platform update 12 (březen 2018)](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md)
-- [Přehled aplikace Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](on-premises-overview.md)
+- [Přehled aplikace Dynamics 365 for Finance and Operations (místní)](on-premises-overview.md)
 - [Plánování pro vaše místní nasazení](plan-onprem-deployment.md)
 - [Systémové požadavky pro místní nasazení](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Nastavení velikosti hardwaru pro místní prostředí](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [Zakoupení aplikace Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](../../fin-and-ops/get-started/purchase-on-premises.md)
+- [Nákup aplikace Dynamics 365 for Finance and Operations (místní)](../../fin-and-ops/get-started/purchase-on-premises.md)
 - [Srovnání funkce cloudu a on-premises](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
 ## <a name="onboard"></a>Onboard
@@ -58,7 +58,7 @@ Můžete nasadit aplikaci aplikace Microsoft Dynamics 365 for Finance and Operat
 - [Opětovné nasazení místního nasazení](redeploy-on-prem.md)
 
 ## <a name="other-resources"></a>Další zdroje
-- [Řešení problémů aplikace Dynamics 365 for Finance and Operations, Enterprise edition on-premises](troubleshoot-on-prem.md)
+- [Řešení problémů aplikace Dynamics 365 for Finance and Operations on-premises](troubleshoot-on-prem.md)
 - [Funkce neimplementované v nasazeních on-premises](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Zastaralé funkce](../migration-upgrade/deprecated-features.md)
 - [Zásady životního cyklu softwaru a seznam vydání](../migration-upgrade/versions-update-policy.md)

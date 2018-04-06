@@ -1,6 +1,6 @@
 --- 
 title: "Navržení konfigurace pro import dat z externího souboru ve formátu CSV (ER)"
-description: "Tento postup uvádí informace o tom, jak navrhnout konfigurace elektronického vykazování pro import dat do aplikace Dynamics 365 for Finance and Operations, Enterprise edition z externího souboru ve formátu CSV."
+description: "Tento postup uvádí informace o tom, jak navrhnout konfigurace elektronického vykazování pro import dat do aplikace Dynamics 365 for Finance and Operations, z externího souboru ve formátu CSV."
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -16,24 +16,24 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: 5c1766992531ee272ea156bc33c4c0ea8dfac27a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: f6bfa9f7c0638b0eaacf1a49bcd7d84ffab3acbf
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="design-a-configuration-to-import-data-from-an-external-file-in-csv-format-er"></a>Navržení konfigurace pro import dat z externího souboru ve formátu CSV (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup uvádí informace o tom, jak navrhnout konfigurace elektronického vykazování pro import dat do aplikace Dynamics 365 for Finance and Operations, Enterprise edition z externího souboru ve formátu CSV. V tomto postupu vytvoříte požadované ER konfigurace pro vzorovou společnost Litware, Inc. K dokončení těchto kroků musíte nejprve dokončit postup ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního. 
+Tento postup uvádí informace o tom, jak navrhnout konfigurace elektronického vykazování pro import dat do aplikace Dynamics 365 for Finance and Operations, z externího souboru ve formátu CSV. V tomto postupu vytvoříte požadované ER konfigurace pro vzorovou společnost Litware, Inc. K dokončení těchto kroků musíte nejprve dokončit postup ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního. 
 
 Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. Tyto kroky lze dokončit za použití datové sady USMF. 
 
 Je nutné také stáhnout a uložit místně následující soubory: (https://go.microsoft.com/fwlink/?linkid=862266): 1099model.xml, 1099formatcsv.xml, 1099entriescsv.csv.
 
 1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
-    * Můžete nakonfigurovat proces importu externích souborů ve formátu XML, TXT nebo CSV do tabulek aplikace Dynamics 365 for Finance and Operations, Enterprise edition. Nejprve je nutné vytvořit abstraktní datový model představující importu dat z obchodního hlediska – vytvoření – pro tento účel je vytvořena konfigurace datového modelu ER. Dále definujte strukturu importovaného souboru, který se mapuje na určený datový model jako způsob přemostění dat ze souboru do abstraktního datového modelu – pro to je vytvořena konfigurace formátu ER. Pak je nutné rozšířit konfiguraci datového modelu ER o nové mapování modelu, které popisuje, jakým způsobem budou data z importovaného souboru a trvalá data z abstraktního datového modelu použita k aktualizaci tabulek aplikace nebo datových entit.  
+    * Můžete nakonfigurovat proces importu externích souborů ve formátu XML, TXT nebo CSV do tabulek aplikace Dynamics 365 for Finance and Operations. Nejprve je nutné vytvořit abstraktní datový model představující importu dat z obchodního hlediska – vytvoření – pro tento účel je vytvořena konfigurace datového modelu ER. Dále definujte strukturu importovaného souboru, který se mapuje na určený datový model jako způsob přemostění dat ze souboru do abstraktního datového modelu – pro to je vytvořena konfigurace formátu ER. Pak je nutné rozšířit konfiguraci datového modelu ER o nové mapování modelu, které popisuje, jakým způsobem budou data z importovaného souboru a trvalá data z abstraktního datového modelu použita k aktualizaci tabulek aplikace nebo datových entit.  
     * Následující kroky popisují, jak jsou importovány externě sledované transakce dodavatelů z externího souboru CSV pro pozdější použití ve vypořádání dodavatele pro formuláře 1099.   
     * Ověřte, zda poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu „Vytvoření poskytovatele konfigurace a jeho označení jako aktivního“.  
 2. Klikněte na Konfigurace výkaznictví.

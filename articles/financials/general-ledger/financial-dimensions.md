@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 274a5e696bfde4f5e27bc186fadbab69f5fc655d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3e9f00fdc32feda0a62f71a92e503a677dce35cc
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -35,7 +35,7 @@ Pomocí stránky **Finanční dimenze** můžete vytvářet finanční dimenze, 
 
 Po vytvoření finančních dimenzí použijte stránku **Hodnoty finanční dimenze** k přiřazení dalších vlastností ke každé finanční dimenzi. 
 
-Finanční dimenze mohou reprezentovat právnické osoby. V aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition nemusíte právnické osoby vytvářet. Finanční dimenze však nejsou určeny k řešení provozních nebo obchodních požadavků právnických osob. Funkce mezijednotkového účetnictví v aplikaci Finance and Operations je určena pouze k práci s účetními položkami vytvořenými jednotlivými transakcemi. 
+Finanční dimenze mohou reprezentovat právnické osoby. V aplikaci Microsoft Dynamics 365 for Finance and Operations nemusíte právnické osoby vytvářet. Finanční dimenze však nejsou určeny k řešení provozních nebo obchodních požadavků právnických osob. Funkce mezijednotkového účetnictví v aplikaci Finance and Operations je určena pouze k práci s účetními položkami vytvořenými jednotlivými transakcemi. 
 
 Než nastavíte finanční dimenze jako právnické osoby, vyhodnoťte obchodní procesy v následujících oblastech a určete, zda bude tento systém ve vaší organizaci fungovat:
 

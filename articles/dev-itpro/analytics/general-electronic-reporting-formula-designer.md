@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 946584d8afa8937afc7a26835e05b0eecebaad35
-ms.openlocfilehash: 67558889dea03738a665d8f1e2f30833b96c4656
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 41d5671d180bae039d873419352d52afe90e386b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/23/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ Toto téma popisuje, jak lze používat návrháře receptur v elektronickém v�
 
 Elektronické výkaznictví podporuje návrháře receptur. Proto můžete během návrhu konfigurovat výrazy, které lze použít pro následující úkoly za běhu:
 
-- Transformace dat přijatých z databáze Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, která mají být zadána v datovém modelu elektronického výkaznictví, který je určený jako zdroj dat pro formáty elektronického výkaznictví. (Tyto transformace mohou například zahrnovat filtrování, seskupení a převod typů dat.)
+- Transformace dat přijatých z databáze Microsoft Dynamics 365 for Finance and Operations, která mají být zadána v datovém modelu elektronického výkaznictví, který je určený jako zdroj dat pro formáty elektronického výkaznictví. (Tyto transformace mohou například zahrnovat filtrování, seskupení a převod typů dat.)
 - Formátování dat, která musí být odeslána do generovaného elektronické dokument v souladu s rozvržením a podmínkami konkrétního formátu elektronického výkaznictví. (Formátování může být například provedeno v souladu s požadovaným jazykem, jazykovou verzí nebo kódováním).
 - Kontrola procesu vytváření elektronických dokumentů. (Například výrazy mohou povolit nebo zakázat výstup konkrétních prvků formátu, v závislosti na zpracování dat. Mohou rovněž přerušit proces vytváření dokumentu nebo odesílat zprávy uživateli.)
 
@@ -540,7 +540,7 @@ Výraz <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> vrátí též <str
 </tr>
 <tr class="even">
 <td>FORMAT (řetězec 1 řetězce 2[, řetězec 3 ...])</td>
-<td>Vrátí zadaný řetězec po zformátování nahrazením všech výskytů <strong>%N</strong> <em>n</em>. argumentem. Argumenty jsou řetězce. Pokud pro parametr není zadán argument, parametr je vrácen jako <strong>&quot;%N&quot;</strong> v řetězci. Co se týká hodnot typu <strong>real</strong>, převod řetězce je omezen na dvě desetinná místa.</td>
+<td>Vrátí zadaný řetězec po zformátování nahrazením všech výskytů <strong>%N</strong> <em>n-tým</em> argumentem. Argumenty jsou řetězce. Pokud pro parametr není zadán argument, parametr je vrácen jako <strong>&quot;%N&quot;</strong> v řetězci. Co se týká hodnot typu <strong>real</strong>, převod řetězce je omezen na dvě desetinná místa.</td>
 <td>Ná následujícím obrázku vrátí zdroj dat <strong>PaymentModel</strong> seznam záznamů odběratelů prostřednictvím součásti <strong>Customer</strong> a datum zpracování prostřednictvím pole <strong>ProcessingDate</strong>.
 <p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
 <p>Ve formátu elektronického výkaznictví, který je určený ke generování elektronického souboru pro vybrané odběratele, je vybrán řetězec <strong>PaymentModel</strong> jako zdroj dat, který řídí procesní tok. Jestliže je vybraný odběratel zastaven u data zpracování sestavy, je vyvolána výjimka pro informování uživatele. Vzorec, který je určen pro tento typ ovládacího prvku pro zpracování, může využít následující zdroje:</p>

@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 957acdbbc6bba83b8b2e2b83fdf266524385141d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -40,7 +40,7 @@ Základ přidělení se používá k měření a stanovení množství aktivit, 
 
 **Nákladové účetnictví**
 
-Nákladového účetnictví vám umožnuje shromažďovat data z různých zdrojů, jako jsou například hlavní knihy, dílčí knihy, rozpočty a statistické údaje. Pak můžete analyzovat, shrnout a vyhodnocení nákladová data, aby vedení mohlo přijmout nejlepší možná rozhodnutí v oblasti aktualizací cen, rozpočtů, řízení nákladů apod. Zdrojová data, která jsou použita k analýze nákladů, se zpracovávají nezávisle na nákladovém účetnictví. Aktualizace v nákladovém účetnictví tedy zdrojová data neovlivňují. Nicméně při shromažďování nákladových dat z různých zdrojů a zejména, pokud importujete hlavní účty z hlavní knihy v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition jako prvky nákladů, dochází k redundanci dat, protože stejná data existují v hlavní knize i v nákladovém účetnictví. Tato redundance je ale žádoucí, protože finanční správu využíváte k externímu vykazování a nákladového účetnictví pro interní vykazování.
+Nákladového účetnictví vám umožnuje shromažďovat data z různých zdrojů, jako jsou například hlavní knihy, dílčí knihy, rozpočty a statistické údaje. Pak můžete analyzovat, shrnout a vyhodnocení nákladová data, aby vedení mohlo přijmout nejlepší možná rozhodnutí v oblasti aktualizací cen, rozpočtů, řízení nákladů apod. Zdrojová data, která jsou použita k analýze nákladů, se zpracovávají nezávisle na nákladovém účetnictví. Aktualizace v nákladovém účetnictví tedy zdrojová data neovlivňují. Nicméně při shromažďování nákladových dat z různých zdrojů a zejména, pokud importujete hlavní účty z hlavní knihy v aplikaci Microsoft Dynamics 365 for Finance and Operations jako prvky nákladů, dochází k redundanci dat, protože stejná data existují v hlavní knize i v nákladovém účetnictví. Tato redundance je ale žádoucí, protože finanční správu využíváte k externímu vykazování a nákladového účetnictví pro interní vykazování.
 
 **Hlavní kniha nákladového účetnictví**
 
@@ -120,7 +120,7 @@ Existují dvě hierarchie dimenzí: kategorizační hierarchie a klasifikační 
 Nákladové účetnictví podporuje integraci dat ze zdrojových systémů prostřednictvím sady datových konektorů. K dispozici jsou následující datové konektory:
 
 -  Importované transakce (předem nakonfigurované)
--  Dynamics 365 for Finance and Operations, Enterprise Edition (předem nakonfigurované)
+-  Dynamics 365 for Finance and Operations (předem nakonfigurované)
 -  Dynamics AX (vyžaduje se konfigurace)
 
 **Poznámka:** Datový konektor Importované transakce vychází z datových entit.
@@ -129,7 +129,7 @@ Nákladové účetnictví podporuje integraci dat ze zdrojových systémů prost
 
 Většina zdrojových systémů může poskytovat data, která odpovídají jednomu nebo více datovým zdrojům v nákladovém účetnictví. Chcete-li sladit data ze zdrojových systémů s datovým zdrojem v nákladovém účetnictví, je třeba nakonfigurovat poskytovatele dat. V následující tabulce je uvedena dostupnost poskytovatelů dat podle datového konektoru a datového zdroje.
 
-|  **Datové zdroje** |  **datový konektor Importované transakce** | **Datový konektor Dynamics 365 for Finance and Operations, Enterprise Edition**  | **Datový konektor Dynamics AX**  |
+|  **Datové zdroje** |  **datový konektor Importované transakce** | **Datový konektor Dynamics 365 for Finance and Operations**  | **Datový konektor Dynamics AX**  |
 |---|---|---|---|
 | Členy dimenze prvku nákladů  |  Ano | Ano  | Ano  |
 |  Členy dimenze objektu nákladů |  Ano | Ano  | Ano  |

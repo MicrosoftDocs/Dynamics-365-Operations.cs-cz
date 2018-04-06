@@ -1,6 +1,6 @@
 --- 
 title: "Vytvoření požadovaných konfigurací pro import dat z externího souboru pro elektronické výkaznictví (ER)"
-description: "Následující kroky vysvětlují, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhnout konfiguraci elektronického výkaznictví pro import dat v aplikaci Dynamics 365 for Finance and Operations, edice Enterprise, z externího souboru."
+description: "Následující kroky vysvětlují, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhnout konfiguraci elektronického výkaznictví pro import dat v aplikaci Dynamics 365 for Finance and Operations, z externího souboru."
 author: NickSelin
 manager: AnnBe
 ms.date: 02/22/2017
@@ -16,26 +16,26 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c0d9636fe8a8d5230859da8fe557fe11a9513ba0
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 999c6da306ff713521ce3bb5750bd7e65dc5daaf
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="create-required-configurations-to-import-data-from-an-external-file-for-electronic-reporting-er"></a>Vytvoření požadovaných konfigurací pro import dat z externího souboru pro elektronické výkaznictví (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Následující kroky vysvětlují, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhnout konfiguraci elektronického výkaznictví pro import dat v aplikaci Dynamics 365 for Finance and Operations, edice Enterprise, z externího souboru. V tomto příkladu vytvoříte požadované ER konfigurace pro vzorovou společnost Litware, Inc. K dokončení těchto krokůmusíte nejprve dokončit postup z průvodce záznamem úloh ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního. Tyto kroky lze dokončit za použití datové sady USMF. Je nutné stáhnout a uložit lokálně následující soubory pomocí odkazů z tématu Přehled elektronického vykazování (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+Následující kroky vysvětlují, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhnout konfiguraci elektronického výkaznictví pro import dat v aplikaci Dynamics 365 for Finance and Operations, z externího souboru. V tomto příkladu vytvoříte požadované ER konfigurace pro vzorovou společnost Litware, Inc. K dokončení těchto krokůmusíte nejprve dokončit postup z průvodce záznamem úloh ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního. Tyto kroky lze dokončit za použití datové sady USMF. Je nutné stáhnout a uložit lokálně následující soubory pomocí odkazů z tématu Přehled elektronického vykazování (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 
-    * ER umožňuje podnikovým uživatelům konfigurovat proces importu souborů externích dat do tabulek v Dynamics 365 for Finance and Operations, edice Enterprise, ve formátech .XML nebo .TXT. Nejprve je třeba navrhnout konfiguraci abstraktního datového modelu a ER datového modelu, které budou představovat importovaná data. Dále je třeba definovat strukturu souboru, který chcete importovat, a metodu, kterou použijete k importu dat ze souboru do abstraktního datového modelu. Pro tento abstraktní datový model msuí být vytvořena konfigurace formátu ER, která se mapuje na navržený datový model. Poté musí být konfigurace datového modelu rozšířena mapováním, které popisuje, jak jsou importovaná data zachována jako data abstraktního datového modelu a jak se použijí k aktualizaci tabulek v Dynamics 365 for Finance and Operations, edice Enterprise.  Konfigurace ER datového modelu musí být připojena k novému mapování modelu popisujícímu vazbu datového modelu k umístění aplikací.  
-    * Následující scénář ukazuje možnosti importu ER dat. To zahrnuje transakce dodavatele, které jsou sledovány externě a následně importovány do Dynamics 365 for Finance and Operations, edice Enterprise, aby byly uvedeny ve vyrovnání dodavatele pro sestavy 1099.   
+    * ER umožňuje podnikovým uživatelům konfigurovat proces importu souborů externích dat do tabulek v Dynamics 365 for Finance and Operations, ve formátech .XML nebo .TXT. Nejprve je třeba navrhnout konfiguraci abstraktního datového modelu a ER datového modelu, které budou představovat importovaná data. Dále je třeba definovat strukturu souboru, který chcete importovat, a metodu, kterou použijete k importu dat ze souboru do abstraktního datového modelu. Pro tento abstraktní datový model msuí být vytvořena konfigurace formátu ER, která se mapuje na navržený datový model. Poté musí být konfigurace datového modelu rozšířena mapováním, které popisuje, jak jsou importovaná data zachována jako data abstraktního datového modelu a jak se použijí k aktualizaci tabulek v Dynamics 365 for Finance and Operations.  Konfigurace ER datového modelu musí být připojena k novému mapování modelu popisujícímu vazbu datového modelu k umístění aplikací.  
+    * Následující scénář ukazuje možnosti importu ER dat. To zahrnuje transakce dodavatele, které jsou sledovány externě a následně importovány do Dynamics 365 for Finance and Operations, aby byly uvedeny ve vyrovnání dodavatele pro sestavy 1099.   
 
 ## <a name="add-a-new-er-model-configuration"></a>Přidání nové konfigurace ER modelu
 1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
     * Ověřte, že poskytovatel konfigurace pro vzorovou společnost Litware, Inc. je k dispozici a označen jako aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu „Vytvoření poskytovatele konfigurace a jeho označení jako aktivního“.    
 2. Klikněte na Konfigurace výkaznictví.
-    * Místo vytváření nového modelu k podpoře importu dat načtěte soubor 1099model.xml, který jste předtím stáhli. Tento soubor obsahuje vlastní datový model transakcí dodavatele. Tento datový model je mapován na komponenty dat Dynamics 365 for Finance and Operations, edice Enterprise, které jsou v datové entitě AOT.   
+    * Místo vytváření nového modelu k podpoře importu dat načtěte soubor 1099model.xml, který jste předtím stáhli. Tento soubor obsahuje vlastní datový model transakcí dodavatele. Tento datový model je mapován na komponenty dat Dynamics 365 for Finance and Operations, které jsou v datové entitě AOT.   
 3. Klikněte na Směna.
 4. Klikněte na Načíst ze souboru XML.
     * Klikněte na tlačítko Procházet a vyhledejte soubor 1099model.xml, který jste předtím stáhli.  
@@ -44,7 +44,7 @@ Následující kroky vysvětlují, jak uživatel s rolí Správce systému nebo 
 
 ## <a name="review-data-model-settings"></a>Revize nastavení datového modelu
 1. Klikněte na možnost Návrhář.
-    * Tento model je určen k představení transakcí dodavatelů z obchodního hlediska a ty jsou nezávislé na implementaci v Dynamics 365 for Finance and Operations, edice Enterprise.   
+    * Tento model je určen k představení transakcí dodavatelů z obchodního hlediska a ty jsou nezávislé na implementaci v Dynamics 365 for Finance and Operations.   
 2. Ve stromové struktuře rozbalte '1099-MISC'.
 3. Ve stromové struktuře zvolte '1099-MISC\Transakce'.
 4. Ve stromové struktuře rozbalte '1099-MISC\Transakce'.
@@ -106,7 +106,7 @@ Následující kroky vysvětlují, jak uživatel s rolí Správce systému nebo 
 1. Ve stromové struktuře zvolte '1099 Model platby'.
 2. Klikněte na možnost Návrhář.
 3. Klikněte na možnost Mapovat model na datový zdroj.
-    * Mapování Pro 1099 manuální import transakcí bylo definováno typem směru Do cílového umístění. To znamená, že bylo zadáno pro podporu importu dat a obsahuje nastavení pravidel, která definují, jakým způsobem se použije importovaný externí soubor uložený jako data abstraktního datového modelu k aktualizaci tabulek v aplikaci Dynamics 365 for Finance and Operations, edice Enterprise.  
+    * Mapování Pro 1099 manuální import transakcí bylo definováno typem směru Do cílového umístění. To znamená, že bylo zadáno pro podporu importu dat a obsahuje nastavení pravidel, která definují, jakým způsobem se použije importovaný externí soubor uložený jako data abstraktního datového modelu k aktualizaci tabulek v aplikaci Dynamics 365 for Finance and Operations.  
 4. Klikněte na možnost Návrhář.
 5. Ve stromové struktuře rozbalte 'model: Datový model 1099 Platební model'.
 6. Ve stromové struktuře rozbalte 'model: Datový model 1099 Platební model\Transakce: Seznam záznamů'.
@@ -120,7 +120,7 @@ Následující kroky vysvětlují, jak uživatel s rolí Správce systému nebo 
 12. Ve stromové struktuře zvolte 'tax1099trans: Záznamy tabulky 'VendSettlementTax1099'= model.Ověřeno'.
 13. Klikněte na možnost Upravit cíl.
     * Tento cíl ER byl přidán k určení způsobu, jakým importovaná data aktualizují tabulky aplikace. V takovém případě byla zvolena tabulka dat VendSettlementTax1099. Vzhledem k tomu, že byla vybrána akce záznamu Vložit, budou importované transakce vloženy do tabulky VendSettlementTax1099. Pamatujte, že jediné mapování modelu může obsahovat několik cílů. To znamená, že importovaná data lze použít k aktualizaci několika tabulek aplikace současně. Tabulky, zobrazení a datové entity lze použít jako ER cíle.   
-    * Pokud bude mapování voláno z bodu v aplikaci Dynamics 365 for Finance and Operations, edice Enterprise, (např. tlačítko nebo položka nabídky), který byl speciálně pro tuto akci určen, cíl ER je nutné označit jako bod integrace. V tomto příkladu se jedná o bod ERTableDestination VendSettlementTax1099.  
+    * Pokud bude mapování voláno z bodu v aplikaci Dynamics 365 for Finance and Operations, (např. tlačítko nebo položka nabídky), který byl speciálně pro tuto akci určen, cíl ER je nutné označit jako bod integrace. V tomto příkladu se jedná o bod ERTableDestination VendSettlementTax1099.  
 14. Klikněte na možnost Zrušit.
 15. Klikněte na možnost Zobrazit vše.
 16. Klikněte na možnost Zobrazit pouze mapované.
@@ -176,15 +176,15 @@ Následující kroky vysvětlují, jak uživatel s rolí Správce systému nebo 
 18. Zavřete stránku.
 19. Zavřete stránku.
 20. Klikněte na položku Upravit.
-    * Pokud jste nainstalovali opravy hotfix „KB 4012871 Podpora mapování německého modelu v oddělených konfiguracích se schopností určení různých druhů předpokladů pro jejich nasazení v různých verzích Dynamics 365 for Finance and Operations, edice Enterprise“ (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), proveďte další krok „Zapnout příznak ‘Výchozí nastavení pro mapování modelu’” pro zadanou konfiguraci formátu. Jinak přejděte na následující krok.  
+    * Pokud jste nainstalovali opravy hotfix „KB 4012871 Podpora mapování německého modelu v oddělených konfiguracích se schopností určení různých druhů předpokladů pro jejich nasazení v různých verzích aplikace Dynamics 365 for Finance and Operations (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), proveďte další krok „Zapnout příznak ‘Výchozí nastavení pro mapování modelu’” pro zadanou konfiguraci formátu. Jinak přejděte na následující krok.  
 21. Vyberte možnost Ano v položce Výchozí pro pole mapování modelu.
 22. Ve stromové struktuře zvolte '1099 Model platby'.
 23. Klikněte na možnost Návrhář.
 24. Klikněte na možnost Mapovat model na datový zdroj.
 25. Klikněte na položku Spustit.
-    * Pokud jste nainstalovali opravy hotfix „KB 4012871 Podpora mapování německého modelu v oddělených konfiguracích se schopností určení různých druhů předpokladů pro jejich nasazení v různých verzích Dynamics 365 for Finance and Operations, edice Enterprise" (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), ve vyhledávacím poli vyberte upřednostňované mapování modelu. Pokud jste ještě nenainstalovali opravy hotfix, přejděte na další krok, protože mapování již bylo vybráno definicí výchozí konfigurace formátu.  
+    * Pokud jste nainstalovali opravy hotfix „KB 4012871 Podpora mapování německého modelu v oddělených konfiguracích se schopností určení různých druhů předpokladů pro jejich nasazení v různých verzích aplikace Dynamics 365 for Finance and Operations (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), ve vyhledávacím poli vyberte upřednostňované mapování modelu. Pokud jste ještě nenainstalovali opravy hotfix, přejděte na další krok, protože mapování již bylo vybráno definicí výchozí konfigurace formátu.  
     * Pokud jste ještě nenainstalovali opravy hotfix KB 4012871, pamatujte, že dialogové okno obsahuje další dotaz na mapování modelu, který se používá k analýze importovaného souboru. Data jsou pak přenesena z dialogového okna do data modelu. Nyní můžete zvolit, jaké mapování formátu musí být použito v závislosti na typu souboru, který chcete importovat.  
-    * Pokud chcete zavolat toto mapování modelu z bodu v Dynamics 365 for Finance and Operations, edice Enterprise, který je speciálně navržen pro tuto akci, cíl ER a mapování formátu musí být označeno jako součást integrace.  
+    * Pokud chcete zavolat toto mapování modelu z bodu v Dynamics 365 for Finance and Operations, který je speciálně navržen pro tuto akci, cíl ER a mapování formátu musí být označeno jako součást integrace.  
 26. Klikněte na možnost Zrušit.
 27. Zavřete stránku.
 28. Zavřete stránku.

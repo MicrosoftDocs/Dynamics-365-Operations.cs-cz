@@ -19,10 +19,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 156cd33a0216514a70229b4e23fc86c0c68cd940
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 9c2f8fd846181c404492ff32907a3396beb90685
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ Tento článek popisuje konfiguraci skladu. Obsahuje informace o postupu při p
 **Poznámka:** Tento článek se vztahuje k funkcím v modulu **Řízení skladu** (pokročilé uskladnění). Nevztahuje se na funkce skladu v modulu **Řízení zásob**.
 
 ## <a name="warehouse-layout"></a>Rozvržení skladu
-Systému správy skladu v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition umožňuje flexibilní způsoby definování rozvržení skladu podle měnících se potřeb, aby bylo možné dosáhnout optimální efektivity skladu.
+Systému správy skladu v aplikaci Microsoft Dynamics 365 for Finance and Operations umožňuje flexibilní způsoby definování rozvržení skladu podle měnících se potřeb, aby bylo možné dosáhnout optimální efektivity skladu.
 
 -   Je možné vytvořit úložné prostory vysoké a nízké priority pro optimální umístění zboží.
 -   Sklad lze rozdělit do zón a přizpůsobit je různým požadavkům na skladování, jako je například teplota či různé sazby obratu pro zboží.

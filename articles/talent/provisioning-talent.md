@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: e4459e8be4bfab8e0789744eacd533286b6c05e0
+ms.sourcegitcommit: ba1a3a78d59f3aec91473ba9bb20bda4804ec92e
+ms.openlocfilehash: 0a43f5ff0987ede9f0cb80e5b4854f78e19e329b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/23/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Zřízení Microsoft Dynamics 365 for Talent
@@ -47,13 +47,14 @@ Více informací o zahájení práce s aplikací Talent naleznete v metodologii 
 Po vytvoření LCS projektu můžete vytvořit zařadit aplikaci Talent do prostředí.
 
 1. Ve svém LCS projektu vyberte dlaždici **Správa aplikace Talent**.
-2. Talent bude vždy zřízen do prostředí Microsoft PowerApps, aby byla možná integrace a rozšiřitelnost PowerApps. Pokud ještě nemáte PowerApps prostředí, postupujte podle kroků v části „Vytvoření nového prostředí PowerApps (je-li to zapotřebí)“ tohoto tématu, než budete pokračovat.
+2. Talent bude vždy zřízen do prostředí Microsoft PowerApps, aby byla možná integrace a rozšiřitelnost PowerApps. Než budete pokračovat, přečtěte si část Výběr prostředí PowerApps v tomto tématu. 
+3. Pokud ještě nemáte PowerApps prostředí, postupujte podle kroků v části „Vytvoření nového prostředí PowerApps (je-li to zapotřebí)“ tohoto tématu, než budete pokračovat.
 
     > [!NOTE]
     > K zobrazení existujících prostředí nebo vytváření nových prostředí musí být správce klienta zřizujícího aplikaci Talent přiřazen k licenci PowerApps P2. Pokud vaše organizace nemá PowerApps P2 licenci, můžete jednu získat ze svého CSP nebo ze [stránky s cenami PowerApps](https://powerapps.microsoft.com/en-us/pricing/).
 
-3. Vyberte **Přidat**a poté vyberte prostředí, do kterého chcete aplikaci Talent zřídit.
-4. K odsouhlasení smluvních podmínek vyberte **Ano** a začněte s nasazením.
+4. Vyberte **Přidat**a poté vyberte prostředí, do kterého chcete aplikaci Talent zřídit.
+5. K odsouhlasení smluvních podmínek vyberte **Ano** a začněte s nasazením.
 
     Nové prostředí se zobrazí v seznamu prostředí v navigačním podokně na levé straně. Nelze však začít používat prostředí, dokud není stav nasazení aktualizován na **Nasazeno**. Tento proces trvá obvykle několik minut. Pokud není proces zřízení úspěšný, musíte kontaktovat podporu.
 
@@ -65,32 +66,64 @@ Po vytvoření LCS projektu můžete vytvořit zařadit aplikaci Talent do prost
 > [!NOTE]
 > Prostředí Talent, která jsou vytvořena prostřednictvím LCS, neobsahují ukázková data konfigurovaná pro úkoly lidských zdrojů nebo týkající se konkrétně aplikace Talent. Chcete-li prostředí, které obsahuje ukázková data, doporučujeme, abyste se přihlásili k bezplatnému 60-dennímu [zkušebnímu prostředí Talent](https://dynamics.microsoft.com/en-us/talent/overview/). Přestože zkušební prostředí je vlastněno uživatelem, který o něj požádal, mohou být jiní uživatelé pozváni prostřednictvím rozhraní správy pro Core HR. Zkušební prostředí obsahují fiktivní data, která slouží k bezpečnému prohlížení programu. Nejsou určena k použití jako produkční prostředí. Mějte na paměti, že po vypršení zkušebního prostředí po 60 dnech budou všechna data v prostředí smazána a nelze je obnovit. Můžete se zaregistrovat k novému zkušebnímu prostředí po vypršení platnosti existujícího prostředí.
 
+## <a name="select-a-powerapps-environment"></a>Vyberte prostředí PowerApps.
+
+Integrace mezi prostředími Talent a PowerApps umožňuje integraci a rozšíření použití dat aplikace Talent pomocí nástrojů PowerApps. Pochopení účelu prostředí PowerApps vám umožní nejen vytvořit aplikace pro rozšíření aplikace Talent, ale také provést vybrat správné prostředí při zřizování aplikace Talent. Informace o PowerApps prostředí, včetně rozsahu prostředí, přístupu k prostředí a k vytváření a volbě prostředí naleznete v tématu [Oznámení PowerApps prostředí](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/). 
+
+Použijte následující pokyny při určování, do kterého prostředí PowerApps nasadit aplikaci Talent: 
+1. V LCS vyberte Prostředí pro správu nebo přejděte přímo do centra pro správu PowerApps, ve kterém můžete zobrazit existující prostředí a vytvářet nová prostředí.
+2. Jedno prostředí Talent je mapováno na jedno prostředí PowerApps.
+3. Prostředí PowerApps "obsahuje" aplikaci Talent, spolu s odpovídajícími aplikacemi PowerApps, Flow a CDS. Je-li prostředí PowerApps odstraněno, jsou s ním odstraněny i aplikace, které obsahuje.
+4. Měly být zohledněny strategie integrace dat a testování, například: Sandbox, UAT, výroba. Proto doporučujeme zvážit různé implikace na vaše nasazení, protože není snadné později změnit, které prostředí Talent je namapováno na prostředí PowerApps.
+5. Následující prostředí PowerApps nelze použít pro aplikaci Talent a bude odfiltrováno ze seznamu voleb v rámci LCS:
+ 
+    **Prostředí CDS 2.0** CDS 2.0 budou veřejně k dispozici od 21. března 2018; systém Talent však ještě nepodporuje CDS 2.0. I když můpžete vytvářet a zobrazit databáze CDS 2.0 v centru správy PowerApps, nebude je možné použít v aplikaci Talent. Možnost použít prostředí CDS 2.0 v nasazeních aplikace Talent bude k dispozici k pozdějšímu datu.
+   
+ > [!Note]
+ > Chcete-li rozlišit mezi prostředími CDS 1.0 a CDS 2.0 na portálu správy, zvolte prostředí a podívejte se na **Podrobnosti**. Všechna prostředí CDS 2.0 odkazují na skutečnost, že "Můžete spravovat tato nastavení v centru pro správu Dynamics 365," odkazovat na verzi instance a nemít žádnou kartu Databáze. 
+ 
+   **Výchozí prostředí Power Apps** I když je každý klient automaticky vytvořen s výchozím prostředím PowerApps, nedoporučujeme je používat se systémem Talent, protože všichni uživatelé klientů mají přístup do prostředí PowerApps a mohou neúmyslně poškodit data výroby při testování a seznámení s integrací PowerApps nebo Flow.
+   
+   **Testovací jednotka prostředí** Prostředí nazvaná například "TestDrive – alias@domain' jsou vytvářena s dobou platnosti 60 dní a vyprší po uplynutí této doby, což způsobí, že prostředí bude odebráno automaticky.
+   
+   **Nepodporované oblasti** Talent je v současné době podporován pouze v následujících oblastech: Spojené státy, Evropa a Austrálie.
+  
+6. Neexistuje žádná konkrétní akce k provedení po určení správného prostředí k použití. Pokračujte v procesu zajištění. 
+ 
 ## <a name="create-a-new-powerapps-environment-if-required"></a>Vytvoření nového prostředí PowerApps prostředí (je-li požadováno)
-Integrace mezi prostředími Talent a PowerApps umožňuje integraci a rozšíření použití dat aplikace Talent pomocí nástrojů PowerApps. Pochopení účelů prostředí PowerApps vám pomůže sestavit aplikace, které splňují vaše potřeby rozšíření aplikace Talent. Informace o PowerApps prostředí, včetně rozsahu prostředí, přístupu k prostředí a k vytváření a volbě prostředí naleznete v tématu [Oznámení PowerApps prostředí](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/). Zatímco každý klient je automaticky zřízen ve výchozím prostředí PowerApps, nemusí to být nejlepší prostředí pro nasazení aplikace Talent. Během tohoto kroku by se měly zvážit integrace dat a testovací strategie. Doporučujeme tedy zvážit implikace, které mohou mít dopad na vaše nasazení, protože není snadné později některá rozhodnutí změnit. 
 
-Ačkoliv každý klient je automaticky zřízen ve výchozím prostředí PowerApps, nemusí to být nejlepší prostředí pro nasazení aplikace Talent. Integrace dat a testovací strategie by měly být během tohoto kroku zváženy. Proto doporučujeme zvážit různé implikace na vaše nasazení, protože není snadné prostředí PowerApps později změnit.
+Spusťte skript PowerShell pro vytvoření nového prostředí PowerApps pro aplikaci Talent v kontextu správce klienta, který má licenci PowerApps Plan 2. Skript automatizuje následující kroky:
 
-1. Vyberte možnost **Spravovat prostředí** v LCS. Budete nasměrováni na [Centrum pro správu PowerApps](https://preview.admin.powerapps.com/environments), kde můžete zobrazit existující prostředí a vytvořit nová prostředí.
-2. Vyberte **Nové prostředí**.
-3. Zadání jedinečný název prostředí a vyberte umístění, do kterého ho chcete nasadit.
 
-    > [!NOTE]
-    > Talent není k dispozici ve všech oblastech. Nezapomeňte ověřit dostupnost před výběrem umístění vašeho prostředí.
+ + Vytvoření prostředí PowerApps
+ + Vytvoření databáze CDS 1.0
+ + Vymazat všechny ukázková data v databázi CD 1.0
 
-4. Když se objeví dotaz, zda chcete vytvořit databázi, vyberte **Vytvořit databázi** pro vytvoření databáze služby Common Data Service, která musí být hostitelem části vašich dat aplikace Talent Vytvořením databáze také můžete integrovat aplikace PowerApps s aplikací Talent.
-5. Zobrazí se dotaz na úroveň přístupu, kterou chcete použít pro databázi. Doporučujeme, abyste vybrali možnost **Omezit přístup**, protože tato možnost zabraňuje uživatelům aplikace Talent v přímém přístupu k citlivým datům pomocí aplikací PowerApps.
-6. Vytvořená databáze CDS obsahuje ukázková data přidávající mimo jiné neaktivní zaměstnance a fiktivní adresy do vašeho produkčního prostředí. Chcete-li odstranit ukázková data, postupujte po vytvoření CDS databáze takto:
 
-    > [!IMPORTANT]
-    > Pokud jste dříve vytvořili CDS databázi a zadali do ní jakákoliv produkční data své společnosti, že tyto kroky odstraní **všechna** data ve vybrané databázi, včetně produkčních dat vaší společnosti.
+Při spuštění skriptu postupujte následujícím způsobem:
 
-    1. Přihlaste se k [PowerApps](https://preview.web.powerapps.com/home).
-    2. V rozevíracím seznamu v pravé horní části vyberte prostředí, které jste vytvořili v kroku 2.
-    3. Rozbalte **Common Data Service** v levém navigačním podokně a zvolte **Entity**.
-    4. V pravé části stránky vyberte tlačítko s třemi tečkami (**...**) a vyberte **Vymazat všechna data**.
-    5. Vyberte **Odstranit data** pro potvrzení, že si opravdu přejete odstranit data. Tato akce odstraní všechna ukázková data, která jsou ve výchozím nastavení součástí CDS. Odebere také jakákoliv další data, která byla zadána do vybrané databáze.
+1. Stáhněte soubor ProvisionCDSEnvironment.zip z následujícího umístění: [ProvisionCDSEnvironment scripts](https://go.microsoft.com/fwlink/?linkid=870436)  
 
-Nyní můžete používat své nové prostředí.
+2. Rozbalte celý obsah souboru ProvisionCDSEnviroinment.zip soubor do složky.
+
+3. Spusťte program Windows PowerShell nebo Windows PowerShell ISE jako správce.
+
+   Navštivte téma [Nastavení zásad spouštění](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) a dozvíte se více informací o zásadách spouštění, aby bylo možné spouštět skripty.
+  
+4. V prostředí PowerShell přejděte do složky, kde jste rozbalili soubor, a spusťte následující příkaz, s nahrazením hodnot podle pokynů níže:
+ 
+   ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
+
+    
+   **EnvironmentName** má být nahrazena názvem vašeho prostředí. Tento název se objeví v LCS a bude viditelný, když uživatel vybere prostředí Talent, které chce použít. 
+
+   **YourLocation** má být nahrazena jednou z podporovaných oblasteí pro Talent: unitedsates, evropa, austrálie. 
+
+   Volba **-Podrobné** je volitelná a poskytuje podrobné informace pro odeslání podpoře, když jsou zjištěny problémy.
+
+5. Pokračujte v procesu zajištění.
+ 
+
 
 ## <a name="grant-access-to-the-environment"></a>Zřízení přístupu k prostředí
 Ve výchozím nastavení má k prostředí přístup globální správce, který ho vytvořil. Dalším uživatelům aplikace musí být explicitně udělen. Chcete-li udělit přístup, [přidáte uživatele](../dev-itpro/sysadmin/tasks/create-new-users.md) a [přiřadíte jim příslušné role](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) v prostředí Core HR. Je také nutné přidat tyto uživatele do prostředí PowerApps, aby měli přístup k aplikacím Attract a Onboard. Postup je popsán zde. Jestliže požadujete pomoc k dokončení kroků, přečtěte si příspěvek blogu [Představení centra správy PowerApps](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/).
@@ -101,5 +134,5 @@ Dokončení tohoto postupu provede globální správce, který nasadil prostřed
 2. Zvolte příslušná prostředí.
 3. Na kartě **Zabezpečení** přidejte požadované uživatele k roli **Tvůrce prostředí**.
 
-Všimněte si, že tento poslední krok manuálního přidání uživatelů do prostředí PowerApps je dočasný. Popřípadě bude dokončen automaticky po přidání uživatelů do Core HR.
+    Všimněte si, že tento poslední krok manuálního přidání uživatelů do prostředí PowerApps je dočasný. Popřípadě bude dokončen automaticky po přidání uživatelů do Core HR.
 

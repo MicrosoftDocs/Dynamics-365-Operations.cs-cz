@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 82c2fab72923cfec135e207dfe194fda7d16e8e9
+ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
+ms.openlocfilehash: d8cf283321b81c377498cd449b098f8fac1fe01f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 
@@ -41,6 +41,8 @@ Následující sloupce určují, kde lze operace vyvolat:
 - **Mřížka tlačítek** – Operace může být přiřazena k tlačítkům v mřížkách tlačítek POS, které jsou součástí rozložení obrazovky POS.
 - **Obrazovka transakce** – Operaci lze vyvolat z mřížek tlačítek POS, které jsou konfigurovány na obrazovce transakcí POS.
 - **Uvítací obrazovka** – Operaci lze vyvolat z mřížek tlačítek POS, které jsou konfigurovány na uvítací obrazovce POS.
+
+Poznámka: Následující operace se vztahují na nejnovější verzi aplikace Dynamics 365 for Retail. Některé operace se mohly změnit, nebo nemusí být k dispozici v předchozích verzích.
 
 | ID | Operace | popis | Mřížka tlačítek | Obrazovka transakce | Uvítací obrazovka | K dispozici offline | Specifické pro národní prostředí |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
@@ -104,7 +106,8 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 301 | Procento řádkové slevy | Zadá procento slevy pro řádkovou položku v transakci. Tato operace se používá pouze pro položky, u nichž lze použít slevu, a pouze v rámci určeného rozmezí slev. | Ano | Ano | Ne | Ano | Ne |
 | 703 | Zamknout pokladnu | Uzamkněte aktuální pokladnu, aby ji nebylo možné použít, ale neodhlašujte aktuálního uživatele. | Ne | Ne | Ne | Ano | Ne |
 | 701 | Odhlásit | Odhlaste aktuálního uživatele z pokladny. | Ano | Ano | Ano | Ano | Ne |
-| 521 | Zůstatek bodů na věrnostní kartě | Zobrazte zůstatek bodů pro konkrétní věrnostní kartu. | Ano | Ano | Ne | Ne | Ne |
+| 521 | Zůstatek bodů na věrnostní kartě | Zobrazte zůstatek bodů pro konkrétní věrnostní kartu. | Ano | Ano | Žádný | Žádný | Žádný |
+| 918 | Spravovat směny | Zobrazí seznam aktivních, pozastavených a bez zadání částky uzavřených směn. | Ano | Ano | Ano | Žádný | Žádný |
 | 914 | Minimalizovat okno POS | Tato operace není podporována. | Nelze použít | Nelze použít | Nelze použít | Nelze použít | Ne |
 | 1 000 | Otevřít zásuvku | Proveďte operaci "bez prodeje" a otevřete aktuálně zvolené zásuvky s hotovostí. | Ano | Ano | Ano | Ano | Žádný |
 | 928 | Plnění objednávek | Tato operace umožňuje uživatelům vydat, zabalit, expedovat nebo odvolat objednávky pro vyzvednutí v obchodě. | Ano | Ano | Ano | Žádný | Žádný |
@@ -161,8 +164,7 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 105 | Nastavit množství | Změní množství řádkové položky v transakci. | Ano | Ano | Ne | Ano | Ne |
 | 638 | Nastavit prodejního zástupce na řádku | Tato operace umožňuje uživateli vybrat jednu z možných skupin prodejní provize (obchodní zástupce) pro aktuálně zvolený řádek. | Ano | Ano | Ne | Ano | Ne |
 | 630 | Expedovat všechny produkty | Nastavte režim plnění na **Expedice** pro všechny položky řádku. | Ano | Ano | Ne | Ano\* | Ne |
-| 629 | Expedovat vybrané produkty | Nastavte způsob plnění pro zvolené řádky na **Expedice**. | Ano | Ano | Ne | Ano\* | Ne |
-| 918 | Zobrazit směny uzavřené bez zadání částky | Zobrazí seznam směn, které byly uzavřeny bez zadání částky. | Ano | Ano | Ano | Ne | Ne |
+| 629 | Expedovat vybrané produkty | Nastavte způsob plnění pro zvolené řádky na **Expedice**. | Ano | Ano | Žádný | Ano\* | Žádný |
 | 115 | Zobrazit deník | Zobrazte deník obchodu. Můžete zobrazit transakce, znovu vytisknout příjemky a dárkové příjemky a stornovat k vrácení. | Ano | Ano | Ano | Ano\*\* | Ne |
 | 802 | Počet na skladě | Tato operace umožňuje uživateli vytvořit nebo upravit deníky inventur skladu pro fyzické zásoby nebo cyklické inventury. | Ano | Ano | Ano | Ne | Ne |
 | 401 | Podnabídka | Tato operace zavede uživatele k jiné propojené mřížce tlačítek. | Ano | Ano | Ano | Ano | Ne |

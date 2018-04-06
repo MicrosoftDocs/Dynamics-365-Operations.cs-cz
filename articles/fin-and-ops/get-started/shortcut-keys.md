@@ -1,6 +1,6 @@
 ---
 title: "Klávesové zkratky"
-description: "Následující klávesové zkratky platí v celé aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
+description: "Následující klávesové zkratky platí v celé aplikaci Dynamics 365 for Finance and Operations."
 author: jasongre
 manager: AnnBe
 ms.date: 12/12/2017
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 8bf0f44583d183d992547c773f2cf7a8ac1db5fc
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/14/2017
 [!include[banner](../includes/banner.md)]
 
 
-Následující klávesové zkratky platí v celé aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. 
+Následující klávesové zkratky platí v celé aplikaci Dynamics 365 for Finance and Operations. 
 
 **Poznámka:** klávesové zkratky, jež jsou zde popsány, se vztahují na rozvržení klávesnice pro Spojené státy. Klávesy na klávesnicích s jiným rozvržením nemusí přesně odpovídat klávesám klávesnice pro USA.
 
@@ -74,7 +74,7 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Otevření okna s fakty (nebo aktivace okna s fakty, pokud je již otevřeno) | Alt+M,B nebo Ctrl+F2                        |
 | Zavření okna s fakty (pokud je aktivní okno s fakty)                         | Esc                                       |
 | Přesunutí na další nebo předchozí okno s fakty (pokud je aktivní okno s fakty)              | Alt+Shift+Šipka dolů a Alt+Shift+Šipka nahoru |
-| Přesunutí na &lt;n&gt;té okno s fakty (pokud je aktivní okno s fakty)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
+| Přesunutí na &lt;nté&gt; okno s fakty (se zaměřením na okno s fakty)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
 | Rozbalení okna s fakty (pokud je aktivní okno s fakty)                             | Mezerník nebo Enter                            |
 | Sbalení aktuálního okna s fakty                                                    | Alt+0                                     |
 
@@ -115,11 +115,11 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | **Akce**                                      | **Stisknout**                                    |
 | Přechod na další nebo předchozí pole                     | Tab / Shift+Tab                              |
 | Přechod na další nebo předchozí kartu                       | Alt+Shift+Šipka vpravo a Alt+Shift+Šipka vlevo |
-| Přechod na &lt;n&gt;tou kartu                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Přechod na &lt;ntou&gt; kartu                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Přechod na další nebo předchozí pevnou záložku                   | Alt+Shift+Šipka dolů a Alt+Shift+Šipka nahoru    |
-| Přechod na &lt;n&gt;tou pevnou záložku                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
+| Přechod na &lt;ntou&gt; pevnou záložku                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
 | Přesunout na další/předchozí list (svislá karta)      | Alt+Shift+Šipka vpravo a Alt+Shift+Šipka vlevo |
-| Přesunout na &lt;n&gt;tý list (svislá karta)        | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Přesunout &lt;n&gt;tý list (svislá karta)        | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Rozbalení pevné záložky (pokud je aktivní pevná záložka) | Mezerník nebo Enter                               |
 | Sbalení aktuálního pevné záložky                        | Alt+0                                        |
 | Přepnutí na zobrazení mřížky                                 | Ctrl+Shift+G                                 |

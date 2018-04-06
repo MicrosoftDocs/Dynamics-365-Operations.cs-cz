@@ -1,6 +1,6 @@
 ---
 title: "Import dat ze šablon datových entit aplikace Excel s více listy"
-description: "Toto téma popisuje, jak importovat data pomocí šablon datových entit aplikace Excel do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+description: "Toto téma popisuje, jak importovat data pomocí šablon datových entit aplikace Excel do aplikace Microsoft Dynamics 365 for Finance and Operations."
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: b314a649829dd14a525923802e19b847dc5a115e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2aefea9373df20bd3e99026e30aed096dcea9814
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/27/2018
 
 [!include[banner](../includes/banner.md)]
 
-Správa dat v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition podporuje šablony na základě aplikace Microsoft Excel pro datové entity. Tyto šablony mohou obsahovat jeden nebo více listů. Šablony s více listy se často používají tehdy, když je vhodné spravovat data v jednom souboru a importovat je do vícero datových entit. Příkladem by byla pracoviště a sklady.
+Správa dat v aplikaci Microsoft Dynamics 365 for Finance and Operations podporuje šablony na základě aplikace Microsoft Excel pro datové entity. Tyto šablony mohou obsahovat jeden nebo více listů. Šablony s více listy se často používají tehdy, když je vhodné spravovat data v jednom souboru a importovat je do vícero datových entit. Příkladem by byla pracoviště a sklady.
 
 ## <a name="upload-a-file-once-and-map-it-to-all-entities"></a>Nahrajte soubor jednou a namapujte ho na všechny entity
 Podíváme se na příklad, kde existuje jeden soubor aplikace Excel s listy nazvanými **Pracoviště** a **Sklady**. Chcete-li nastavit projekt importu dat, přidali byste první datovou entitu **Pracoviště** a poté odeslali soubor. Budete moci vybrat **Pracoviště** jako list, který bude použit pro tuto entitu.

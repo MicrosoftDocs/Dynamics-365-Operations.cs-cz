@@ -1,6 +1,6 @@
 ---
 title: "Před zakoupením"
-description: "Podrobné pokyny, které mají být použity při zvažování nákupu aplikace Dynamics 365 for Finance and Operations, Enterprise Edition."
+description: "Podrobné pokyny, které mají být použity při zvažování nákupu aplikace Dynamics 365 for Finance and Operations."
 author: kfend
 manager: AnnBe
 ms.date: 07/10/2017
@@ -17,10 +17,10 @@ ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: 98740e5b992283b924adab34f291b9c1f2703457
-ms.openlocfilehash: d6c4e475925cdc94be614822ffb242eb7ac8cfa7
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 160313ac375feb875982bfdbbd850db7f2d8be35
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -28,13 +28,13 @@ ms.lasthandoff: 01/31/2018
 
 [!include[banner](../includes/banner.md)]
 
-Novinka v aplikaci Dynamics 365 for Finance and Operations, Enterprise Edition? Připravili jsme podrobné pokyny, ať již aplikaci Finance and Operations stále hodnotíte, nebo jste připravení na nákup.
+Pracujete s aplikací Dynamics 365 for Finance and Operations poprvé? Připravili jsme podrobné pokyny, ať již aplikaci Finance and Operations stále hodnotíte, nebo jste připravení na nákup.
 
 ## <a name="step-one--try-out-finance-and-operations-free-for-30-days"></a>Krok jedna: Vyzkoušejte si aplikaci Finance and Operations v bezplatné 30denní zkušební verzi
 Aplikaci Dynamics 365 for Finance and Operations můžete zkoušet po dobu 30 dní po jednoduchém přihlášení pomocí e-mailu. Zkušební verze aplikace Finance and Operations obsahuje průvodce Začínáme, který poskytuje podrobné pokyny, které umožňují zobrazení konkrétních scénářů v praxi. Produkt je k dispozici pro prohlížení a zkoušení scénářů, ale nelze ho přizpůsobit. Ukázková data jsou zahrnuta k usnadnění používání produktu a zkušeností požadavků uživatele. 3 dny před vypršení doby platnosti vám bude zaslán e-mail s upozorněním. Podrobnosti získáte na stránce [www.microsoft.com/en-us/dynamics365/operations](https://www.microsoft.com/en-us/dynamics365/operations).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Krok dva: Výběr možnosti nasazení
-Nyní můžete nasadit aplikaci aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition v cloudu nebo místně. Cloudová nasazení nabízejí službu ERP, která je plně spravovaná společností Microsoft, zatímco místní nasazení jsou nasazena do datacentra zákazníka.
+Nyní můžete nasadit aplikaci aplikace Microsoft Dynamics 365 for Finance and Operations v cloudu nebo místně. Cloudová nasazení nabízejí službu ERP, která je plně spravovaná společností Microsoft, zatímco místní nasazení jsou nasazena do datacentra zákazníka.
 
 Pokud zvolíte místní nasazení jako možnost nasazení, musíte vzít v úvahu následující:
 - Potřeby shod s předpisy, které nejsou k dispozici v [certifikátech cloudu](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities)
@@ -43,7 +43,7 @@ Pokud zvolíte místní nasazení jako možnost nasazení, musíte vzít v úvah
 - [Minimální požadavky na infrastrukturu](system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 > [!IMPORTANT]
-> Místní nasazení aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition nejsou podporována na žádné veřejné infrastruktuře cloudu, včetně Azure. 
+> Místní nasazení aplikace Microsoft Dynamics 365 for Finance and Operations nejsou podporována na žádné veřejné infrastruktuře cloudu, včetně Azure. 
 
 Další informace získáte v tématu [Možnosti nasazení](../../dev-itpro/deployment/choose-deployment-type.md).
 
@@ -70,7 +70,7 @@ Při využití multilicence je aplikace Finance and Operations dostupná násled
 Poskytovatele cloudového řešení Microsoft s vámi může spolupracovat, aby porozuměl potřebám vašeho podniku nebo organizace. [Vyhledání partnera vyhovujícího vašim potřebám pomocí portálu Microsoft Partner Center](https://partnercenter.microsoft.com/en-us/partner/home). 
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Nákup prostřednictvím partnera Dynamics (místní)
-Pokud chcete zakoupit místní aplikaci Finance and Operations, je nutná spolupráce s partnerem. Další informace uvádí téma [Zakoupení aplikace Dynamics 365 for Finance and Operations, Enterprise Edition (místní)](purchase-on-premises.md)
+Pokud chcete zakoupit místní aplikaci Finance and Operations, je nutná spolupráce s partnerem. Další informace uvádí téma [Zakoupení aplikace Dynamics 365 for Finance and Operations (místní)](purchase-on-premises.md)
 
 ### <a name="choose-your-support-option"></a>Zvolte možnost podpory
 Společnost Microsoft poskytuje flexibilní přední podporu, služby a zdroje, které umožňují uživatelům rychle řešit technické problémy a maximalizovat návratnost investice do Dynamics 365. Vyberte plán, nejlépe odpovídá požadavkům společnosti. 

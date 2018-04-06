@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d24679a380ec824fe08c56aacb4bc348ff40440a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3d9c2192bac8477e9c9376aab3e3b561da777569
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="upload-a-configuration-into-lifecycle-services-for-electronic-reporting-er"></a>Odeslání konfigurace do služby Lifecycle Services pro elektronické výkaznictví (ER)
@@ -92,6 +92,6 @@ V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc
 10. Klikněte na možnost Otevřít.
     * Vyberte úložiště LCS a otevřete je.  
     * Všimněte si, že vybraná konfigurace je uvedena jako aktiva vybraného projektu LCS.  
-    * Otevřete LCS pomocí https://lcs.dynamics.com. Otevřete projekt, který byl použit dříve pro registraci úložiště, otevřete Knihovnu majetku pro tento projekt a rozbalte obsah s typem majetku Konfigurace GER – odeslané konfigurace ER budou nyní k dispozici. Všimněte si, že odeslané konfigurace LCS je možné importovat do jiné instance aplikace Microsoft Dynamics365 for Finance and Operations, edice Enterprise, pokud poskytovatelé mají přístupová práva k tomuto projektu LCS.  
+    * Otevřete LCS pomocí https://lcs.dynamics.com. Otevřete projekt, který byl použit dříve pro registraci úložiště, otevřete Knihovnu majetku pro tento projekt a rozbalte obsah s typem majetku Konfigurace GER – odeslané konfigurace ER budou nyní k dispozici. Všimněte si, že odeslané konfigurace LCS je možné importovat do jiné instance aplikace Microsoft Dynamics 365 for Finance and Operations, pokud poskytovatelé mají přístupová práva k tomuto projektu LCS.  
 
 

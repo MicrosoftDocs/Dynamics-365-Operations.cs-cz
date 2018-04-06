@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4dbcfd31030db8e40f89f86a76cdc666ac433749
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2d31a5dfd16a4404e19c6c9693dacecff6f2f064
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 
 V tomto tématu jsou informace o přidělování zdrojů k projektu.
 
-Jednou z výzev pro správce projektu a prostředků ve fázi plánování projektu je přiřazení zdrojů, kdy musí určit a rezervovat správné zdroje pro práci na projektu. V aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition umožňuje přidělení zdrojů pro projekty definovat role, které jsou považovány za dočasné zdroje, které mohou být vyhrazeny pro konkrétní pracovní balíček nebo součásti zapojení. Tento typ přidělování zdrojů umožňuje manažerům projektů a zdrojů provádět následující úkony:
+Jednou z výzev pro správce projektu a prostředků ve fázi plánování projektu je přiřazení zdrojů, kdy musí určit a rezervovat správné zdroje pro práci na projektu. V aplikaci Microsoft Dynamics 365 for Finance and Operations umožňuje přidělení prostředků pro projekty definovat role, které jsou považovány za dočasné zdroje, které mohou být vyhrazeny pro konkrétní pracovní balíček nebo součásti zapojení. Tento typ přidělování zdrojů umožňuje manažerům projektů a zdrojů provádět následující úkony:
 
 - Definovat roli, která má požadované kompetence pro snadné spárování zdrojů.
 - Používat role k definování původního schématu zapojení založeného na rezervovaných zdrojích.

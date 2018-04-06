@@ -19,10 +19,10 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 962b3084c5340813d1697cab680621350510d4b9
+ms.sourcegitcommit: 812db9f1d319e4d16f83700a7153a0a3b318963e
+ms.openlocfilehash: aaa8bdedc31ee03e96a0f7a5e78f25f888913e71
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -42,7 +42,7 @@ Některé podrobnosti o práci, jako je například název pracovní pozice, typ
 ## <a name="job-titles"></a>Názvy pracovních pozic
 Před vytvořením úloh musíte nastavit názvy pro tyto úlohy. Pozice dědí názvy úloh z úloh, ke kterým jsou pozice přiřazeny. 
 
-Udržujte názvy pracovních pozic pomocí stránky **Pozice**, kterou lze otevřít pomocí funkce hledání. Na stránce ** Pozice ** zadejte názvy, které budete používat pro vaše práce.
+Udržujte názvy pracovních pozic pomocí stránky **Pozice**, kterou lze otevřít pomocí funkce hledání. Na stránce **Pozice** zadejte názvy, které budete používat pro vaše práce.
 
 ## <a name="job-types"></a>Typ úloh
 Používáte typy prací pro seskupení podobných pozic do kategorií. Typy práce nejsou vyžadovány. Však pokud máte v úmyslu použít typy úloh při nastavování pravidel způsobilosti pro správu kompenzace, je třeba před nastavením úloh nastavit také typy úloh. Některé příklady typů prací jsou na plný úvazek a částečný úvazek, nebo plat a hodinové mzda. Typy práce udržujte pomocí stránky **Typy práce**. Zadejte název a stručný popis typu pozice na stránce **Typy práce**. V poli **Stav osvobození** vyberte jednu z následujících možností pro označení stavu osvobození od zákona Fair Labor Standards Act (FLSA) pro práce, které mají tento typ práce:
@@ -91,6 +91,6 @@ Pracovní úkoly udržujte pomocí stránky **Pracovní úkoly**. Zadejte název
 ## <a name="areas-of-responsibility"></a>Oblasti odpovědnosti
 Za pomoci oblastí odpovědnosti můžete určit pracovní role, procesy a produkty, za které je pracovník na dané pozici odpovědný. Například pro práci s názvem „Účetní“ může být oblast zodpovědnosti „Finanční výkaznictví za výrobek A“. Udržujte oblasti odpovědnosti pomocí stránky **Oblasti odpovědnosti**, kterou lze vyhledat pomocí funkce vyhledávání. Zadejte název a stručný popis odpovědnosti na stránce **Oblasti odpovědnosti**. Do pole **Poznámka** můžete volitelně zadat další informace. Poznámky mohou být aktualizovány pro konkrétní práci beze změny poznámek, které jste v tomto poli zadali.
 
-
-
+## <a name="steps-for-creating-a-job"></a>Postup při vytváření práce
+Ohledně podrobného postupu pro vytvoření nové práce nahlédněte do tématu [Definování nových prací](../fin-and-ops/hr/tasks/define-new-jobs.md). 
 

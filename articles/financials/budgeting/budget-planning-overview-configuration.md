@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d904a2fe9411da1fd1a4e5810f7dcea782f1c2f7
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: e874d7353e0d9561ca55f313bfb5209299298169
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -38,7 +38,7 @@ Tento článek představuje plánování rozpočtu a obsahuje informace, které 
 
 Můžete provádět plánování rozpočtu, zatímco připravujete rozpočty, které bude organizace implementovat. Organizace může nastavit plánování rozpočtu a poté nastavit procesy plánování rozpočtu pro potřeby splnění zásad a postupů a požadavků pro přípravu rozpočtu. 
 
-Pokud rozumíte konceptům a terminologii, které se používají v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition,, bude pro vás snazší provádět plánování rozpočtu ve vaší organizaci.
+Pokud rozumíte konceptům a terminologii, které se používají v aplikaci Microsoft Dynamics 365 for Finance and Operations, bude pro vás snazší provádět plánování rozpočtu ve vaší organizaci.
 
 ### <a name="key-terms"></a>Klíčové podmínky
 

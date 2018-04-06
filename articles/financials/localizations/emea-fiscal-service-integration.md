@@ -17,10 +17,10 @@ ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: a170b39ce5512ca69b1e6b49bce0c3200ca5a239
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 0fb9d48ef6f2fd06223516c0e8af235b354f2a5a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/17/2018
 
 V Rakousku musí být všechny platby v hotovosti podepsány externím zařízením nebo službou, a musí být bezpečně uloženy. V České republice musí být platby v hotovosti odeslány na vládní portál pro fiskální podpis. V obou zemích musí být vystavena hotovostní účtenka s vytištěným podpisem.
 
-K podpoře těchto požadavků specifických pro tyto země vám aplikace Microsoft Dynamics 365 Finance and Operations, Enterprise edition umožňuje integraci s fiskální službou třetí strany, která splňuje specifické požadavky pro řízení hotovostních plateb v různých zemích nebo oblastech.
+K podpoře těchto požadavků specifických pro tyto země vám aplikace Microsoft Dynamics 365 Finance and Operations umožňuje integraci s fiskální službou třetí strany, která splňuje specifické požadavky pro řízení hotovostních plateb v různých zemích nebo oblastech.
 
 > [!NOTE]
 > Předpokládá se, že fiskální služba třetích stran splňuje všechny další právní požadavky specifické pro zemi týkající se zaregistrovaných transakcí. Jste zodpovědni za správné nastavení a správu finanční služby.

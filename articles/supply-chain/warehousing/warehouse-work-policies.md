@@ -20,10 +20,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 83e8dc76350e0d40a392e9a04ddca5b4b45d0da0
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a0c900dc208736f1823be50e8522061406c9f126
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Zásady práce ve skladu v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition řídí, zda je skladová práce vytvářena skladovými procesy ve výrobě na základě typu pracovního příkazu, skladového místa a produktu.
+Zásady práce ve skladu v aplikaci Microsoft Dynamics 365 for Finance and Operations řídí, zda je skladová práce vytvářena skladovými procesy ve výrobě na základě typu pracovního příkazu, skladového místa a produktu.
 
 Tato pracovní zásada řídí, zda je vytvořena práce skladu pro procesy skladu při výrobě. Zásadu práce můžete nastavit použitím kombinace **typů pracovního příkazu**, **skladového místa** a **produktu**. Například produkt L0101 je vykazován jako dokončený na umístění výstupu 001. Hotového výrobek je později spotřebován v jiné výrobní zakázce v umístění výstupu 001. V tomto případě můžete nastavením pracovní zásady zabránit vytvoření práce pro zaskladnění hotových výrobků, když nahlásíte produkt L0101 jako dokončený v umístění výstupu 001. Zásady práce označují individuální entitu, kterou lze popsat pomocí následujících informací:
 

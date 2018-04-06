@@ -1,6 +1,6 @@
 ---
 title: "Poradce při potížích s importem souboru bankovního výpisu"
-description: "Je důležité, aby se rozvržení souboru s bankovním výpisem od banky shodovalo s rozvržením podporovaným v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Díky přísným standardům pro bankovní výpisy bude většina integrací fungovat správně. Někdy však soubor s prohlášením nemusí být možné importovat, nebo bude obsahovat nesprávné výsledky. Tyto problémy jsou obvykle způsobeny drobnými rozdíly v souboru s bankovním výpisem. V tomto článku je popsán postup pro vyřešení těchto rozdílů a potíží."
+description: "Je důležité, aby se soubor s bankovním výpisem z banky shodoval v rozvržení s rozvržením podporovaným v aplikaci Microsoft Dynamics 365 for Finance and Operations. Díky přísným standardům pro bankovní výpisy bude většina integrací fungovat správně. Někdy však soubor s prohlášením nemusí být možné importovat, nebo bude obsahovat nesprávné výsledky. Tyto problémy jsou obvykle způsobeny drobnými rozdíly v souboru s bankovním výpisem. V tomto článku je popsán postup pro vyřešení těchto rozdílů a potíží."
 author: twheeloc
 manager: AnnBe
 ms.date: 01/11/2018
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4feb77bf0031494dfd456c23c632a264c96f0e43
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c408f30c783d58766ab93b13c589079c3ef375de
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Je důležité, aby se rozvržení souboru s bankovním výpisem od banky shodovalo s rozvržením podporovaným v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Díky přísným standardům pro bankovní výpisy bude většina integrací fungovat správně. Někdy však soubor s prohlášením nemusí být možné importovat, nebo bude obsahovat nesprávné výsledky. Tyto problémy jsou obvykle způsobeny drobnými rozdíly v souboru s bankovním výpisem. V tomto článku je popsán postup pro vyřešení těchto rozdílů a potíží.
+Je důležité, aby se soubor s bankovním výpisem z banky shodoval v rozvržení s rozvržením podporovaným v aplikaci Microsoft Dynamics 365 for Finance and Operations. Díky přísným standardům pro bankovní výpisy bude většina integrací fungovat správně. Někdy však soubor s prohlášením nemusí být možné importovat, nebo bude obsahovat nesprávné výsledky. Tyto problémy jsou obvykle způsobeny drobnými rozdíly v souboru s bankovním výpisem. V tomto článku je popsán postup pro vyřešení těchto rozdílů a potíží.
 
 <a name="what-is-the-error"></a>Kde se stala chyba?
 ------------------
@@ -64,7 +64,7 @@ BAI2 a MT940 jsou textové soubory a vyžadují provedení úprav, než bude mo�
 
 ### <a name="debug-the-xslt"></a>Ladění souboru XSLT
 
-Další informace naleznete v tématu <https://msdn.microsoft.com/en-us/library/ms255605.aspx>.
+Další informace naleznete v tématu <https://msdn.microsoft.com/en-us/library/ms255605.aspx>.
 
 1.  Spusťte Microsoft Visual Studio.
 2.  Vytvořte aplikační konzoli.
@@ -92,7 +92,7 @@ V některých případech může být hodnota „má dáti“ importována jako 
 -   Šablona MT940XML-to-Reconcilation.xslt GetCreditDebitIndicator
 
 ## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Příklady formátů bankovních výpisů a technické rozložení
-V následující tabulce jsou uvedeny příklady technických definic rozložení pro komplexní importní soubory s bankovním odsouhlasením a tři související vzorové soubory bankovních výpisů. Můžete stáhnout soubory příkladu a technické rozložení zde: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+V následující tabulce jsou uvedeny příklady technických definic rozložení pro komplexní importní soubory s bankovním odsouhlasením a tři související vzorové soubory bankovních výpisů. Zde můžete stáhnout vzorové soubory a technická rozvržení: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
 
 | Technická definice rozložení                             | Vzorový soubor s bankovním výpisem          |

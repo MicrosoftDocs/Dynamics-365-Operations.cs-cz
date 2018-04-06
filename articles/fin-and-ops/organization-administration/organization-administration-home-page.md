@@ -1,6 +1,6 @@
 ---
 title: "Domovská stránka Správa organizace"
-description: "Toto téma odkazuje na zdroje, které vám pomůžou používat aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition ve vaší organizaci."
+description: "Toto téma odkazuje na zdroje, které vám pomůžou používat aplikaci Microsoft Dynamics 365 for Finance and Operations ve vaší organizaci."
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f1cff2388b02ff6dfd52a39b7f3ea90f10807096
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a2c1d846527eac4db0a043c7f1c51da0e73bd796
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Toto téma odkazuje na obsah, který pomůže uživatelům Power users a správcům nakonfigurovat aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Tento obsah jim pomůže nakonfigurovat systém tak, aby fungoval pro vaši organizaci a obchod hladce a efektivně.
+Toto téma odkazuje na obsah, který pomůže uživatelům Power users a správcům nakonfigurovat aplikaci Microsoft Dynamics 365 for Finance and Operations. Tento obsah jim pomůže nakonfigurovat systém tak, aby fungoval pro vaši organizaci a obchod hladce a efektivně.
 
 Většina zde uvedeného obsahu se použije k funkcím v modulu **Správa organizace**. Existuje však několik úlohy, jako je vytváření a používání šablony záznamu, které lze provést v kterémkoli modulu, aby vaše organizace mohla pracovat efektivněji. 
 

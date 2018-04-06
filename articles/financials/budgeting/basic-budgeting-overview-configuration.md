@@ -1,6 +1,6 @@
 ---
 title: "Přehled rozpočtování"
-description: "Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů v aplikaci Finance and Operations, Enterprise Edition nebo pro jejich načítání z programu třetích stran."
+description: "Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Dynamics 365 for Finance and Operations budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů v aplikaci Finance and Operations nebo pro jejich načítání z programu třetích stran."
 author: twheeloc
 manager: AnnBe
 ms.date: 01/11/2018
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8e8b3a7e801e98929c4ba1b9fefe341abd91dbd4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 1d768ee6d2244a237972f7183f27a60b93eea819
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů v aplikaci Finance and Operations nebo pro jejich načítání z programu třetích stran.
+Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Dynamics 365 for Finance and Operations budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů v aplikaci Finance and Operations nebo pro jejich načítání z programu třetích stran.
 
 <a name="overview"></a>Přehled
 --------
@@ -42,7 +42,7 @@ Vytvoření položek registru rozpočtu v aplikaci Finance and Operations lze n�
 
 -   Ručně zadat informace o dokumentu na stránce **položky registru rozpočtu**.
 -   Použít šablonu aplikace Microsoft Excel, kterou lze otevřít klepnutím na tlačítko **Otevřít v aplikaci Excel** na stránce **položky registru rozpočtu**.
--   Použití datovou entitu **účetní položky rozpočtu** v modulu Správa dat pro import položek registru rozpočtu. Zvažte použití této metody a zapnutí **zpracování parametru **Založeno na sadě** **, když musíte importovat velký počet účetních položek rozpočtu do systému.
+-   Použití datovou entitu **účetní položky rozpočtu** v modulu Správa dat pro import položek registru rozpočtu. Zvažte použití této metody a zapnutí **zpracování** parametru **Založeno na sadě**, když musíte importovat velký počet účetních položek rozpočtu do systému.
 -   Pokud společnost používá funkci plánování rozpočtu pro přípravu dat rozpočtu, můžete použít periodické zpracování **Generovat položku registru rozpočtu**.
 
 Položka registru rozpočtu je považována za dokončenou po aktualizaci rozpočtového zůstatku. Na stránce **Položky registru rozpočtu** klikněte na **Aktualizovat rozpočtové zůstatky** pro výběr položky registru rozpočtu nebo více položek. Po provedení aktualizace zůstatků rozpočtu se stav položky rozpočtu registru změní na **Dokončeno**. Dokončená položka registru rozpočtu nemůže být znovu otevřena pro úpravy. Proto, chcete-li upravit data rozpočtu, musíte vytvořit novou položku registru rozpočtu namísto opravy dat v dokončené položce registru rozpočtu.

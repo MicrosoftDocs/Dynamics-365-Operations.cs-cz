@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: cb5a674472936a52b624c548fd37079d57eb6cb7
-ms.openlocfilehash: 9a36b3e7a8e496632ca7041018abe8176a2e4f25
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 41d7b64f8414385629acef071c47a654d56005bd
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ Tento článek vysvětluje postup při nastavení kladných plateb a generován�
 Nastavte kladné platby pro generování elektronických seznamů šeků, které jsou dodávány bance. Poté při předložení šeku bance ho banka srovná se seznamem šeků. Pokud šek odpovídá tomu, co má banka má v záznamech v seznamu, banka jej zúčtuje. Pokud šek neodpovídá šeku v seznamu, banka předloží šek ke kontrole.
 
 ## <a name="security-for-positive-pay-files"></a>Zabezpečení pro soubory kladných plateb
-Soubory kladných plateb mohou obsahovat citlivé informace o příjemcích plateb a šekových částkách. Nezapomeňte tedy použít dostatečná opatření od doby vytvoření souborů do jejich přijetí do banky. Soubory kladných plateb budou staženy do umístění, které je zadáno ve webovém prohlížeči. Vzhledem k tomu, že soubory kladných plateb mohou obsahovat důvěrné informace, je důležité, aby k vytváření a prohlížení těchto informací v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition měli přístup pouze oprávnění uživatelé. V následující tabulce naleznete postup, jak určit potřebná oprávnění.
+Soubory kladných plateb mohou obsahovat citlivé informace o příjemcích plateb a šekových částkách. Nezapomeňte tedy použít dostatečná opatření od doby vytvoření souborů do jejich přijetí do banky. Soubory kladných plateb budou staženy do umístění, které je zadáno ve webovém prohlížeči. Vzhledem k tomu, že soubory kladných plateb mohou obsahovat důvěrné informace, je důležité, aby k vytváření a prohlížení těchto informací v aplikaci Microsoft Dynamics 365 for Finance and Operations měli přístup pouze oprávnění uživatelé. V následující tabulce naleznete postup, jak určit potřebná oprávnění.
 
 <table>
 <colgroup>

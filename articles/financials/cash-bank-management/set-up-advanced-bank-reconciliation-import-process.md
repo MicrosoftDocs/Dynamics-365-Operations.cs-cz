@@ -1,6 +1,6 @@
 ---
 title: "Nastavení procesu importu rozšířené bankovního odsouhlasení"
-description: "Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Tento článek vysvětluje, jak nastavit funkci importu pro bankovní výpisy."
+description: "Funkce rozšířeného odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Finance and Operations. Tento článek vysvětluje, jak nastavit funkci importu pro bankovní výpisy."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4d7bb0fc5abedcce973632434a5cc174449cdc22
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 7292767f48e94f01c50e12ab02a4483c53046ae9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Tento článek vysvětluje, jak nastavit funkci importu pro bankovní výpisy. 
+Funkce rozšířeného odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Finance and Operations. Tento článek vysvětluje, jak nastavit funkci importu pro bankovní výpisy. 
 
 Nastavení import bankovního výpisu závisí na formátu vašeho elektronického bankovního výpisu. Aplikace Finance and Operations standardně podporuje tři formáty bankovního příkazu: ISO20022, MT940 a BAI2.
 
@@ -49,7 +49,7 @@ Pro všechny tři formáty musíte mít soubory, které překládají elektronic
 | BankStmtImport\_SampleBankCompositeEntity\_xml          | SampleBankCompositeEntity.xml        |
 
 ## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Příklady formátů bankovních výpisů a technické rozložení
-Níže jsou uvedeny příklady rozšířených definicí pokročilého souboru importu bankovního sesouhlasení a tři související ukázkové soubory výpisu: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+Níže jsou uvedeny příklady technických definic rozložení pro komplexní importní soubory s bankovním odsouhlasením a tři související vzorové soubory bankovních výpisů: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
 | Technická definice rozložení                             | Vzorový soubor s bankovním výpisem          |
 |---------------------------------------------------------|--------------------------------------|

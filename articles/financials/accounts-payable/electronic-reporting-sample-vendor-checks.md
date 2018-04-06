@@ -17,10 +17,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c9abea228cdaae84ca2b9aada9f36bbe79c1dc6b
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 6702ac241c41cc99d96bc46a515837235b3ae651
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -34,7 +34,7 @@ Elektronické výkaznictví můžete použít k formátování šeků dodavatele
 
 Měli byste vždy přejít do knihovny sdíleného majetku ve službě Microsoft Dynamics Lifecycle services (LCS) a zobrazit aktuální seznam dostupných souborů, které mají typ majetku **konfigurace GER**. Další oddíl "Co musím nastavit?" obsahuje odkaz na téma, které vysvětluje, jak vytvořit úložiště LCS, abyste mohli revidovat dostupné konfigurace a importovat vybrané konfigurace.
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition obsahuje ukázkový formát, kde je šek nahoře a pod ním jsou dvě části vyplacení. Dále zahrnuje ukázkový formát, kde je šek uprostřed mezi dvěma částmi vyplacení. Tyto ukázkové formáty odpovídají formátům šeků Deluxe business.
+Microsoft Dynamics 365 for Finance and Operations obsahuje ukázkový formát, kde je šek nahoře a pod ním jsou dvě části vyplacení. Dále zahrnuje ukázkový formát, kde je šek uprostřed mezi dvěma částmi vyplacení. Tyto ukázkové formáty odpovídají formátům šeků Deluxe business.
 
 ## <a name="what-do-i-have-to-set-up"></a>Co je nutné nastavit?
 
