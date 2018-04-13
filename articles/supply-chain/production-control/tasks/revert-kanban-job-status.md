@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="revert-kanban-job-status"></a>Vrátit stav kanbanové úlohy
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura se zaměřuje na vrácení zpět nesprávného stavu kanbanové úlohy. To je užitečné v případě, že operátor stroje aktualizuje nesprávné úlohu nebo omylem nastaví nesprávný stav. V tomto postupu kanbanová úloha je registrována jako připravená omylem a stav se vrátí. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tato procedura je určena pro vedoucího dílny nebo operátora stroje pracující ve společnosti s lean manufacturing.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-vendor-accounts"></a>Nastavení účtů dodavatele
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje typy informací, které je nutné zadat při vytváření nového účtu dodavatele.
 

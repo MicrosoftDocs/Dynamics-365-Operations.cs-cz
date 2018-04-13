@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Vyrovnání částečné platby odběratele před datem slevy s konečnou platbou po datu slevy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje účinek plateb pro vyrovnání faktur pro odběratele. Scénáře se zaměřují na dopad v dílčí hlavní knize, není v hlavní knize.
 

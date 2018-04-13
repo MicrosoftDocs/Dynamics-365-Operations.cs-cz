@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="create-service-objects"></a>Tvorba předmětů servisu  
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
    
 Servisní předměty jsou majetek a produkty zákazníka, u kterých je lze provádět servisní úkony. 
 

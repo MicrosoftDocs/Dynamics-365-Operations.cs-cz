@@ -28,14 +28,14 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="financial-report-components"></a>Součásti finančních sestav
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje způsob použití komponent nebo stavebních bloků z definic sestavy ve finančních sestavách. Tyto stavební bloky zahrnují definice řádku, definice sloupce a definice stromu výkaznictví. Článek vysvětluje, jak uspořádat a uzamknout stavební bloky. 
 
 Konstrukční filozofie za návrhářem finančních sestav je rozdělit informace na nejmenší součásti nebo stavební bloky a potom zkombinovat a spárovat součásti podle potřeby. Proto je formátování sestavy odděleno od finančních dat, a návrh sestavy můžete změnit bez úpravy finančních dat v systému Microsoft Dynamics ERP. Pomocí tohoto přístupu stavebních bloků můžete kombinovat text, částky a výpočty a vytvářet tak sestavy, jaké potřebujete. Navíc tato flexibilita podporuje tvořivost, protože usnadňuje zobrazování operací různými způsoby. Jednotlivé stavební bloky definice sestavy jsou podobné trojrozměrné tabulce, ale s ještě lepší využitelností. Definice sestavy určuje definici řádku, definici sloupce a volitelně definici stromu výkaznictví pro použití v sestavě. Také obsahuje informace o umístění pro uložení vygenerovaných sestav a o jejich formátování. 
 
 ## <a name="building-blocks-of-a-report"></a>Stavební bloky sestavy
+
 | Stavební blok            | popis                     | Získání dalších informací                                    |
 |---------------------------|---------------------------------|---------------------------------------------------------|
 | Definice řádku            | Definice řádku definuje v sestavě popisné řádky, například pro platy nebo prodeje. Také uvádí hodnoty segmentů nebo dimenze, které obsahují hodnoty pro každou položku řádku, a obsahuje formátování a výpočty řádků.                                                    | [Definice řádku](row-definitions-financial-reporting.md)                       |

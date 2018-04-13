@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="design-a-configuration-to-import-data-from-an-external-file-in-csv-format-er"></a>Navržení konfigurace pro import dat z externího souboru ve formátu CSV (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup uvádí informace o tom, jak navrhnout konfigurace elektronického vykazování pro import dat do aplikace Dynamics 365 for Finance and Operations, z externího souboru ve formátu CSV. V tomto postupu vytvoříte požadované ER konfigurace pro vzorovou společnost Litware, Inc. K dokončení těchto kroků musíte nejprve dokončit postup ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního. 
 

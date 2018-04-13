@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Plánování kanbanové úlohy pro lean manufacturing
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 V tomto článku jsou informace o vizuální kontrole plánování kanbanové úlohy a různých způsobech plánování kanbanových úloh.  
 

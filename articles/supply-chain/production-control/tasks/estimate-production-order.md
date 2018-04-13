@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="estimate-a-production-order"></a>Odhad výrobní zakázky
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento proces můžete spustit pomocí ukázkových dat společnosti USMF nebo pomocí sady vlastních dat. V obou případech je třeba mít otevřenou výrobní zakázku, která má status Vytvořeno. Jedná se o druhou proceduru ze sedmi, která vysvětluje životního cyklus výrobní zakázky.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-benefit-expiration-dates"></a>Správa dat vypršení platnosti zaměstnaneckých výhod
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak můžete ukončit nebo prodloužit platnost zaměstnaneckých výhod a spravovat data přihlášení zaměstnanců, které jsou registrovaní pro zaměstnanecké výhody. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

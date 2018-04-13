@@ -28,8 +28,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="vendor-invoices-overview"></a>Přehled faktur dodavatele
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 V tomto článku jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na zaplacení za přijaté produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb. 
 
@@ -87,11 +86,11 @@ Další informace naleznete zde:
  - [Nastavení zásad faktur dodavatele](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
 
  - [Zadání dat faktury do závazků s použitím faktury dodavatele](tasks/key-invoice-data-ap-system-vendor-invoice.md)
- 
+
  - [Zadání dat faktury do závazků s použitím deníku schválení](tasks/key-invoice-data-into-ap-system-approval-journal.md)
-  
+
  - [Zadání dat faktury do systému závazků s použitím evidence faktur](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
- 
+
  - [Zaznamenání faktury dodavatele do deníku faktur](tasks/record-vendor-invoice-invoice-journal.md)
 
 

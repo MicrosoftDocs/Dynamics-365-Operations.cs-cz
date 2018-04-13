@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="replenishment-with-withdrawal-kanbans"></a>Doplnění s kanbany odběru
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak se kanban odběru používá pro doplnění materiálu pro výrobní aktivity.
 

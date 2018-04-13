@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="configure-credit-card-processing"></a> Konfigurace zpracování platební karty
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Tato procedura vás provede zobrazením seznamu zprostředkovatelů plateb a způsobem konfigurace účtu plateb pro pohledávky. Tato procedura používá ukázková data společnosti USRT a je určena pro správce a odborníky v oblasti IT.
 

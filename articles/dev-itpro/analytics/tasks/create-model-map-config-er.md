@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-a-model-mapping-configuration-er"></a>Vytvoření konfigurace mapování modelu (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup slouží k navržení nové konfigurace mapování modelu elektronického výkaznictví a použití integrovaných funkcí ER k efektivním agregovaným výpočtům. V tomto postupu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc. 
 

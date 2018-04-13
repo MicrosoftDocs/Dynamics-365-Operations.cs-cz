@@ -24,7 +24,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Nastavení hierarchie kategorií zásobování
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje vytvoření nových uzlů v hierarchii kategorií zásobování a konfiguraci kategorie zásobování pro použití v procesu zásobování. Tyto úkoly obvykle provádějí vedoucí nákupu. Před zahájením tohoto postupu musí existovat hierarchie kategorií typu Zásobování. Používáte-li ukázková data společnosti, můžete tento postup provést se společností USMF.
 

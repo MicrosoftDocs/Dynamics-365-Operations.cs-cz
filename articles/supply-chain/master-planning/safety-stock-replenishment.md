@@ -29,8 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="safety-stock-fulfillment-for-items"></a>Splnění rezervních zásob položek
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Rezervní zásoby označuje dodatečné množství položky uložené ve skladu za účelem snížení rizika, že položka nebude na skladě. Rezervní zásoby se používají jako vyrovnávací zásoby v případě příchozích prodejních objednávek, kdy dodavatel nemůže doručit další položky ke splnění požadovaného data expedice odběrateli. Při použití rezervních zásob pro splnění prodejní objednávky bude snížena rezervní zásoba. Můžete použít hlavní plánování k automatickému vyrovnání zpět na úroveň rezervních zásob.    
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="define-loyalty-schemes"></a> Definování věrnostních schémat
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Tato procedura vás provede definování věrnostního schématu. Věrnostní schémata jsou pravidla pro získání odměny a jejich uplatnění v rámci věrnostního programu. Tato procedura používá data ukázkové společnosti USRT.
 

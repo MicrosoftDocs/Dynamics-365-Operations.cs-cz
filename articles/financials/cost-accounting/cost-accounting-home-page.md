@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-accounting-home-page"></a>Domovská stránka nákladového účetnictví
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="learning-map"></a>Mapa výuky 
 
@@ -37,6 +37,7 @@ Následující mapa výuky zobrazuje hlavní koncepty a úkoly, které tvoří r
 [![Mapa výuky pro nákladové účetnictví](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
 
 ## <a name="quick-links"></a>Rychlé odkazy
+
 |      |   |
 |------|---|
 |  [Konfigurace základních entit (kurz elektronického vzdělávání)](https://mbspartner.microsoft.com/Home) (vyžaduje účet CustomerSource)  |[Vytvořit dimenze](cost-elements.md)  |

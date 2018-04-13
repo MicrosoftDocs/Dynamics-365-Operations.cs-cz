@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="questionnaires"></a>Dotazníky
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Toto téma obsahuje obecné informace o dotaznících a odkazy na podrobnější informace. Dotazník je sada otázek, které se používají ke shromažďování informací pro různé účely. Můžete navrhovat, vytvářet, rozesílat a vyplňovat dotazníky a následně provádět analýzu výsledků. 
 

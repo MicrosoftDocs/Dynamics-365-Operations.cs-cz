@@ -26,8 +26,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="post-the-pre-acquisition-of-a-fixed-asset"></a>Účtování předpořízení dlouhodobého majetku
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma vysvětluje, jak vytvořit a zaúčtovat předpořízení dlouhodobého majetku.
 

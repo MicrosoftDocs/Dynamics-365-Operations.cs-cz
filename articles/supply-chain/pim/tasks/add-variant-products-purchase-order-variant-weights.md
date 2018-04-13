@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="add-variant-products-to-purchase-orders-using-variant-weights"></a>Přidávání variant produktů do nákupních objednávek s použitím různých hmotností
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura vás provede kroky použití hmotností variant pro automatické vyplnění řádků nákupní objednávky pro každou variantu produktu. Když vyberete množství produktu, které chcete nakoupit, budou vytvořeny řádky nákupní objednávky pro všechny varianty produktu s navrženým množstvím podle hmotnosti nakonfigurované pro varianty produktu. Tento postup neobsahuje postup konfigurace hodnot hmotnosti dimenzí produktů a variant produktu. Tato procedura používá v ukázkových datech společnost USRT.
 

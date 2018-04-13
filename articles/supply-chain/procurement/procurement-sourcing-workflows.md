@@ -28,8 +28,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="procurement-and-sourcing-workflows"></a>Workflowy zásobování a zdrojů
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Některé organizace vyžadují, aby nákupní žádanky a nákupní objednávky byly schváleny uživatelem, který se liší od osoby, která transakci vytvořila. Workflow můžete vytvořit za účelem nastavení schvalovacího procesu.
 

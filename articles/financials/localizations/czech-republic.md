@@ -25,7 +25,8 @@ ms.lasthandoff: 03/20/2018
 
 # <a name="czech-republic"></a>Česká republika
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+
 Toto téma obsahuje informace a odkazy na zdroje, které vám pomohou nastavit aplikaci Dynamics 365 for Finance and Operations pro právnické osoby s primární adresou v České republice.
 
 ## <a name="fixed-assets"></a>Dlouhodobý majetek

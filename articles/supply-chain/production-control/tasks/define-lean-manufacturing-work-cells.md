@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="define-lean-manufacturing-work-cells"></a>Definování pracovních buněk pro lean manufacturing
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Pracovní buňka je konkrétní formulář skupin prostředků, které lze použít v aktivitách procesu lean manufacturing. Pracovní buňky mají vstupní a výstupní skladová místa a definování kapacity založená na modelu výrobního toku. Další informace o základních konceptech pracovních buněk lean manufacturingu a výpočtů kapacity najdete v dokumentech white paper o Lean manufacturingu. Použitá ukázková data společnosti USMF k vytvoření tohoto postupu
 

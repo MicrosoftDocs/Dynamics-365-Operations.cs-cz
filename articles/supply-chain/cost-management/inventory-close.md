@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-close"></a>Uzavřít zásoby
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Jako součást procesu vyrovnání výdejových transakcí s příjmovými transakcemi můžete rovněž aktualizovat hlavní knihu tak, aby došlo k promítnutí provedených úprav.
 

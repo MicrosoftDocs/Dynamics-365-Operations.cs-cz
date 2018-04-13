@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="transfer-transactions-to-the-intrastat"></a>Převod transakcí do systému Intrastat
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup vás provede nastavením parametrů systému Intrastat a převodem transakcí do systému Intrastat. Tato procedura byla vytvořena pomocí ukázkových dat společnosti DEMF.
 

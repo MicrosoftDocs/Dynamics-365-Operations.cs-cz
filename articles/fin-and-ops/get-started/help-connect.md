@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="connect-the-help-system"></a>Připojení k systému nápovědy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje součásti systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations. Poskytuje přehled o tom, jak připojit tyto komponenty, a souhrnné informace o tom, jak vytvořit vlastní nápovědu. 
 
@@ -42,7 +41,7 @@ Následující obrázek znázorňuje části systému nápovědy aplikace Financ
 ## <a name="connecting-the-help-system"></a>Připojení systému nápovědy
 > [!NOTE]
 > Karta **Průvodci záznamem úloh** není v současnosti v aplikacích Microsoft Dynamics 365 for Talent a Microsoft Dynamics 365 for Retail k dispozici. Funkci zpřístupníme v budoucí verzi. Průvodci v prostředí Začínáme v aplikaci Talent jsou i nadále k dispozici a zabývají se základními funkcemi. Na webu docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) jsou také k dispozici pokyny pro aplikaci Retail i Talent.
- 
+
 
 Pomocí stránky **Systémové parametry** správci systému připojí části systému nápovědy pro implementaci. [![Formulář Nastavení nápovědy k systémovým parametrům](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) Na stránce **Systémové parametry** proveďte následující kroky:
 

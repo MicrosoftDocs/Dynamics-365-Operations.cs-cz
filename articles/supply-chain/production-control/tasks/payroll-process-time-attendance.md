@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="enable-the-payroll-process-for-time-and-attendance"></a>Povolení procesu mezd pro čas a docházku
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak povolit mzdový proces pro čas a docházku. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

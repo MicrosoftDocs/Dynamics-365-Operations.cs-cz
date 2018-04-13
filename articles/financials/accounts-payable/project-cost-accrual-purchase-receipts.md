@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Časové rozlišení projektu na nákupních příjemkách
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak lze sledovat časově rozlišené náklady na projekt z nákupních příjemek v aplikaci Microsoft Dynamics 365 for Finance and Operations. 
 

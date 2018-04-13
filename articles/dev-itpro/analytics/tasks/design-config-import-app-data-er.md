@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="design-configurations-to-parse-incoming-documents-for-application-data-updates-er"></a>Návrh konfigurací pro analýzu příchozích dokumentů pro aktualizace dat aplikace (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kroky v tomto postupu popisují postup návrhu konfigurace elektronického vykazování k analýze příchozího elektronického dokumentu. V tomto postupu naimportujete požadované konfigurace elektronického výkaznictví, které byly vytvořeny pro vzorovou společnost Litware, Inc., a poté je použijete k analýze příchozích elektronických dokumentů. K provedení kroků v tomto postupu musíte nejprve dokončit postup ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního.
 

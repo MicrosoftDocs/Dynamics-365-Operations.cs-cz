@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-related-translations-faq"></a>Překlady související s produktem – nejčastější dotazy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak spravovat překlady pro produkty, hodnoty dimenze produktu a atributy produktu. 
 
@@ -95,8 +94,7 @@ Zákazník chce koupit nějaká malá červená trička a název tričko musí b
 <tbody>
 <tr class="odd">
 <td>Pokud chcete nastavit upřednostňovaný jazyk odběratele, postupujte takto:
-<ol>  
-<li>Klikněte na <strong>Prodej a marketing</strong> &gt; <strong>Společné</strong> &gt; <strong>Zákazníci</strong> &gt; <strong>Všichni</strong> <strong>zákazníci</strong>.</li>
+<ol><br/><li>Klikněte na <strong>Prodej a marketing</strong> &gt; <strong>Společné</strong> &gt; <strong>Zákazníci</strong> &gt; <strong>Všichni</strong> <strong>zákazníci</strong>.</li>
 <li>Kliknutím dvakrát na účet odběratele otevřete formulář <strong>Zákazníci</strong>. Na kartě <strong>Obecné</strong> vyberte v poli <strong>Jazyk</strong> požadovaný <strong>jazyk</strong>.</li>
 </ol></td>
 </tr>

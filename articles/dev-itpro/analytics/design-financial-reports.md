@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-and-design-financial-reports"></a>Zobrazení a navržení finančních sestav
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek obsahuje cvičení, která vás provedou zobrazením a vytvářením finančních sestav pro aplikaci Microsoft Dynamics 365 for Finance and Operations. Finanční výkaznictví se skládá z lepšího způsobu prohlížení v rámci aplikace Finance and Operations a návrháře sestav na jedno kliknutí, který vám umožní vytvářet a upravovat finanční sestavy.  
 

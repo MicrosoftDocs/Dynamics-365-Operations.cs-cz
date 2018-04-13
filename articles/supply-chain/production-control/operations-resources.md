@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="operations-resources"></a>Prostředky aplikace Operations
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Provozní prostředek provádí aktivity projektu nebo výrobního procesu. Mohou být různého typu a mohou mít různé schopnosti. 
 

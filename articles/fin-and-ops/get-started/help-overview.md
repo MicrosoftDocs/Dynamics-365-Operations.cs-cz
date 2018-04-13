@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="help-system-overview"></a>Přehled systému nápovědy
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma poskytuje přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations. Také je zde vysvětleno, jak můžete poskytnout vlastní dokumentaci a školení pro vaši organizaci. 
 

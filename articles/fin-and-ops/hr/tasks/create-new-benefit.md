@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-new-benefit"></a>Vytvořit novou zaměstnaneckou výhodu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato úloha znázorňuje, jak vytvořit prvky zaměstnanecké výhody, které budou použity při vytváření nových zaměstnaneckých výhod. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF. Tato úloha je určena pro správce kompenzací a zaměstnaneckých výhod.
 

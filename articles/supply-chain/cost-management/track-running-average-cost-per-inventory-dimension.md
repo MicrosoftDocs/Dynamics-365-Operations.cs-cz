@@ -29,10 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="tracking-running-average-cost-per-inventory-dimension"></a>Sledování průběžných průměrných nákladů pro dimenzi zboží
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Každá skladová položka má přiřazenou skupinu dimenzí zásob. Průběžná průměrná nákladová cena položky je tedy vypočtena na základě výběru dimenzí zásob, které jsou finančně sledovány.
 

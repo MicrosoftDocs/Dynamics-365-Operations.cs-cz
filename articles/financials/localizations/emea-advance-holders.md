@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="advance-holders"></a>Držitelé zálohy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Poznejte funkce držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 
@@ -48,11 +47,13 @@ Použijte stránku **Skupiny držitelů záloh** k vytvoření skupiny držitel�
 ### <a name="employee-posting-profile"></a>Účetní profil zaměstnance
 
 Použijte stránku **Účetní profily zaměstnanců** k vytvoření profilu pro transakce držitelů záloh. Můžete zadat následující informace pro účetní profil zaměstnance.
-|Pole |popis|
-|------|-----------|
-|Účetní profil|Zadejte identifikační kód účetního profilu držitele zálohy.|
-|popis|Zadejte stručný popis účetního profilu.|
-|Platné pro|Vyberte jednu z následujících možností pro úroveň seskupení pro nastavení účetního profilu: 
+
+|      Pole      |                                            popis                                            |
+|-----------------|---------------------------------------------------------------------------------------------------|
+| Účetní profil |               Zadejte identifikační kód účetního profilu držitele zálohy.               |
+|   popis   |                         Zadejte stručný popis účetního profilu.                         |
+|    Platné pro    | Vyberte jednu z následujících možností pro úroveň seskupení pro nastavení účetního profilu: |
+
 **Tabulka** – tuto možnost lze použít k nastavení účetního profilu pro jednoho držitele zálohy. Je třeba určit kód držitele zálohy v poli Odkaz.
 **Skupina** – tuto možnost lze použít k nastavení účetního profilu pro skupinu držitelů záloh. Je třeba určit kód skupiny v poli Odkaz.
 **Všechny** – tato možnost slouží k nastavení účetního profilu pro všechny držitele záloh. | |Odkaz| Vyberte kód držitele zálohy, pokud je vybrána Tabulka v poli Platné pro, nebo vyberte skupinu držitelů záloh, pokud je vybrána Skupina v poli Platné pro. | |Součtový účet| Vyberte součtový účet pro zaúčtování transakce.|
@@ -62,6 +63,7 @@ Použijte stránku **Účetní profily zaměstnanců** k vytvoření profilu pro
 ### <a name="account-payable-parameters"></a>Parametry závazku
 
 Pokud chcete, aby se projevily transakce držitele zálohy, musíte nastavit následující položky na stránce **Parametry závazků** v části **Držitelé zálohy**.
+
 |                                                |                   |
 |------------------------------------------------|-------------------|
 |  **Pole**                                     | **Popis**                                                                                                                                                                  |
@@ -80,6 +82,7 @@ Pro správné zaregistrování a zaúčtování nákupní objednávky prostředn
 ### <a name="create-an-advance-holder-creation"></a>Vytvoření držitelů záloh
 
 Před vytvořením držitele zálohy musí mít již nastavené pracovníky. Další informace naleznete v tématu [Zadání informací o pracovníkovi (průvodce záznamem úloh).](../../fin-and-ops/hr/tasks/enter-worker-information.md) Použijte stránku **Držitelé zálohy** k nastavení pracovníka jako držitele zálohy. Vyberte pracovníka, kterého chcete použít jako držitele zálohy, klikněte na možnost **Upravit** a potom nastavte možnost **Držitel zálohy** na **True**. Dále je nutné vyplnit následující pole.
+
 |                |                                                                                             |
 |----------------|---------------------------------------------------------------------------------------------|
 | **Pole**      | **Popis**                                                                             |

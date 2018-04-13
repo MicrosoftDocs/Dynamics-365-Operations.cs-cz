@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-bar-code-masks"></a>Nastavení masek čárových kódů
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Toto téma popisuje, jak nastavit znaky masky čárového kódu a masky čárového kódu a jak přiřadit masky čárového kódu k čárovým kódům.
 

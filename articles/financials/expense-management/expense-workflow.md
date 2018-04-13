@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-workflow"></a>Workflow výdajů
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Můžete použít systém workflow v aplikaci Microsoft Dynamics 365 for Finance and Operations pro nastavení procesu kontroly sestav výdajů v modulu Správa výdajů. Můžete nastavit workflow, které používá k určení osoby schvalující sestavy výdajů následující kritéria:
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-released-product-for-a-single-company"></a>Vytvoření uvolněného produktu pro jednu společnost
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup vás provede vytvořením jednoho uvolněného produktu v kontextu jedné právnické jednotky. Po vytvoření uvolněného produktu je produkt okamžitě k dispozici pouze v této jednotce. Tento postup můžete projít v ukázkových datech společnosti USMF. Tato úloha je obvykle prováděna návrhářem produktu.
 

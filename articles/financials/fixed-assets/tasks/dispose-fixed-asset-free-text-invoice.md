@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Vyřazení dlouhodobého majetku s použitím volné faktury
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje získání dlouhodobého majetku pomocí návrhu pořízení v deníku dlouhodobého majetku. Využívá účetní role a ukázková data pro právnické osoby USMF.
 

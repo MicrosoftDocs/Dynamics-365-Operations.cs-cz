@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configure-expense-management"></a>Konfigurace správy výdajů
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, co je třeba zvážit a jaká rozhodnutí je třeba učinit během procesu plánování před konfigurací oblasti Správa výdajů v aplikaci Microsoft Dynamics 365 for Finance and Operations. Ve správě výdajů můžete ukládat informace například o metodách platby, cestovních žádankách, sestavách výdajů, zásadách atd.
 

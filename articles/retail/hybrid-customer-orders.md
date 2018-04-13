@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="hybrid-customer-orders"></a>Hybridní objednávky odběratele
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Hybridní objednávka odběratele je jedna objednávka, která obsahuje produkty, které si může zákazník odnést z obchodu, jakož i výrobky, které budou dodány nebo vyzvednuty později.
 

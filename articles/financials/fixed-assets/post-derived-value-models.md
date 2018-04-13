@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="post-with-derived-books"></a>Zaúčtování pomocí odvozených knih
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje, jak lze používat odvozené knihy.
 

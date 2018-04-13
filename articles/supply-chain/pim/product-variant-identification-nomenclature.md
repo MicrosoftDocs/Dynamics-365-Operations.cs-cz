@@ -29,7 +29,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Názvosloví čísel a názvů variant produktu
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak nastavit názvosloví pro čísla produktu, které nahradí opravený formát [základní produkt - konfigurace – velikost – barva – styl]. Nové názvosloví má cílený formát, který zahrnuje číslo základního produktu, rozměry aktivního produktu a textové oddělovače podle vašeho výběru. Můžete také vytvořit názvosloví pro názvy produktů. A konečně můžete také vytvořit názvosloví k identifikaci konfigurací, které jsou vytvořeny konfigurátorem produktu založeném na omezeních. Tato názvosloví můžou obsahovat atributy podle vašeho výběru.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-product-model-components"></a>Vytváření komponent modelu produktu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Modely konfigurace produktu založené na omezeních využívají komponenty jako stavební bloky pro vytvoření struktury modelu výrobku. Součásti musí být vytvořeny předtím, než mohou být vytvořeny modelu výrobku. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

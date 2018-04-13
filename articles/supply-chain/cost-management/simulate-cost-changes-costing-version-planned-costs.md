@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Simulace změn nákladů pomocí nákladové verze pro plánované náklady
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje simulaci účinků změn nákladů na vypočtené náklady vyráběné položky za použití samostatné nákladové verze pro plánované náklady.
 

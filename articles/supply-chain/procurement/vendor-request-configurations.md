@@ -25,7 +25,7 @@ ms.lasthandoff: 02/08/2018
 ---
 
 # <a name="vendor-request-configurations"></a>Konfigurace oslovení dodavatele
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Pro dokončení oslovení dodavatele musí kontaktní osoba dodavatele dokončit průvodce registrace potenciálního dodavatele.
 
@@ -39,12 +39,12 @@ Ve výchozím nastavení je konfigurace dodavatele k dispozici ve formuláři Ko
 
 Nelze vybrat země/oblasti pro výchozí konfiguraci, takže nelze změnit část **Země/oblasti**.
 
-1.  Klikněte na **Zásobování a zdroje** > **Nastavení** > **Dodavateée**a klikněte na **Konfigurace oslovení dodavatele**.
-2.  Klikněte na kartu **Pole** pro nastavení stavu uvedených polích.
--   Skryté (není viditelné)
--   Zobrazené (viditelné, ale nepovinné)
--   Požadované (viditelné a povinné)
-3.  Klikněte na kartu **Obsah** a určete, zda text bude zobrazený v průvodci a zda se má zobrazovat potvrzení o nutnosti přijetí uživatelem potenciálního dodavatele předtím, že se v průvodci přesune na další krok. Potvrzení bude požadováno pro všechny smluvní podmínky, které musí uživatel potvrdit, aby mohl pokračovat.
+1. Klikněte na **Zásobování a zdroje** > **Nastavení** > **Dodavateée**a klikněte na **Konfigurace oslovení dodavatele**.
+2. Klikněte na kartu **Pole** pro nastavení stavu uvedených polích.
+3. Skryté (není viditelné)
+4. Zobrazené (viditelné, ale nepovinné)
+5. Požadované (viditelné a povinné)
+6. Klikněte na kartu **Obsah** a určete, zda text bude zobrazený v průvodci a zda se má zobrazovat potvrzení o nutnosti přijetí uživatelem potenciálního dodavatele předtím, že se v průvodci přesune na další krok. Potvrzení bude požadováno pro všechny smluvní podmínky, které musí uživatel potvrdit, aby mohl pokračovat.
 
 Lze také zadat potvrzovací zprávu, která se zobrazí po dokončení průvodce, a můžete přidat jeden nebo více dotazníků.
 

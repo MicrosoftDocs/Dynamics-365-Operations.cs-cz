@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-calendar-and-generate-working-times"></a>Vytvoření kalendáře a vygenerování pracovní doby
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kalendáře popisují kapacitu a pracovní dobu provozních prostředků. Tento postup vám usnadní definování pracovního kalendář podle šablony pracovní doby. Tento proces můžete projít pomocí ukázkových dat společnosti USMF nebo pomocí vlastních dat.
 

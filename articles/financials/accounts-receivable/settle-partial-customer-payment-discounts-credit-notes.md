@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Vyrovnat částečnou platbu odběratele, u níž jsou slevy pro dobropisy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek vás provede scénářem, kde je využita platební sleva na základě dobropisu, když původní faktura měla také platební slevu. 
 

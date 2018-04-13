@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-continuity-schedules"></a> Definování plánů trvání
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Toto téma vás provede nastavením programu trvání (označovaném také jako opakované objednávky). Toto téma používá v ukázkových datech společnost USRT.
 

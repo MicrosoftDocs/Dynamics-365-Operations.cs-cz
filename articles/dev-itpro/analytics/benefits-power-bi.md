@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="benefits-power-bi-content"></a>Obsah zaměstnaneckých výhod v Power BI
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje obsah **zaměstnaneckých výhod** v Microsoft Power BI. Vysvětluje přístup k obsaženým sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 

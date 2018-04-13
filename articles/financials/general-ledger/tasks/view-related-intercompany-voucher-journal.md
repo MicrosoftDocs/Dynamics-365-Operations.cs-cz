@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-a-related-intercompany-voucher-from-a-journal"></a>Zobrazení souvisejícího mezipodnikového dokladu z deníku
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Související doklad zobrazí doklad společností protiúčtu při zaúčtování mezipodnikové transakce z deníku hlavní knihy.
 

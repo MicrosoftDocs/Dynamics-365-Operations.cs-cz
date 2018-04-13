@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="nonconformance-management"></a>Správa neshod
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje základní nastavení, které je vyžadováno při použití neshod. Pokud chcete použít objednávky kvality, je třeba provést další nastavení.
 

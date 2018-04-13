@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a>Úprava úrovně zásob ve skladu (základní správa skladu)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup vás provede procesem vytvoření a zaúčtování deníku úpravy zásob za účelem úpravy úrovně zásob produktu ve skladu. Předtím, než začnete, je třeba mít nastaven název deníku zásob pro úpravy zásob. Tento proces můžete projít pomocí ukázkových dat společnosti USMF nebo pomocí vlastních dat. Tyto úkoly obvykle provádějí zaměstnanci skladu.
 

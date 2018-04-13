@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-open-ended-question"></a>Vytvoření dotazu s otevřeným koncem
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Dotazy s otevřeným koncem povolují respondentům poskytovat vlastní odpovědi. Můžete určit, zda odpověď bude mít formu čísla, desetinného čísla, data, komentáře a tak dále. Tento postup vás provede vytvářením konkrétního typu otázek - otázky s otevřeným koncem. Celý postup zahájíte z nabídky Dotazník > Návrh > Otázky. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

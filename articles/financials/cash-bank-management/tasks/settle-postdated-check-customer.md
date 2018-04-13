@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="settle-a-postdated-check-from-a-customer"></a>Vyrovnání postdatovaného šeku od odběratele
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Postdatovaný šek můžete vyrovnat poté, co byl schválen bankou. Tato finanční transakce rovněž schválí překlenovací transakci účtu pro postdatovaný šek. 
 

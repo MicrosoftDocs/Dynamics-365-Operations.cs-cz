@@ -23,14 +23,14 @@ ms.contentlocale: cs-cz
 ms.lasthandoff: 09/29/2017
 
 ---
-# Vytvoření kanbanového pravidla s použitím události pro minimální úroveň zásob
+# <a name="create-a-kanban-rule-using-a-minimum-stock-event"></a>Vytvoření kanbanového pravidla s použitím události pro minimální úroveň zásob
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup se zaměřuje na nastavení potřebné k vytvoření kanbanového pravidlo pomocí události pro minimální úroveň zásob, aby tak bylo jisté, že bude konkrétní produkt v určitém místě vždy k dispozici. Je vytvořeno kanbanové pravidlo, které při poklesu úrovně zásob pod 200 kusů převede materiál do skladového místa. Spuštěním zpracování události požadavku dojde k vytvoření potřebných kanbanů. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF. Tento úkol je určen pro technologa výrobních procesů nebo správce hodnotového proudu, kteří připravují výrobu nového nebo změněného výrobku v prostředí štíhlé výroby.
 
 
-## Vytvořit nové kanbanové pravidlo
+## <a name="create-a-new-kanban-rule"></a>Vytvořit nové kanbanové pravidlo
 1. Přejděte k Řízení informací o produktech > Lean manufacturing > Kanbanová pravidla.
 2. Klikněte na položku Nová.
 3. V poli Typ vyberte Výběr.
@@ -46,7 +46,7 @@ Tento postup se zaměřuje na nastavení potřebné k vytvoření kanbanového p
 9. V poli Událost doplnění skladu vyberte „Dávka“.
     * Tímto krokem se vytvoří kanbany pro splnění požadavků na materiál v souvisejícím umístění během zpracování události požadavku.  
 
-## Nastavení minimálního množství pro zboží
+## <a name="set-the-minimum-quantity-for-the-item"></a>Nastavení minimálního množství pro zboží
 1. Kliknutím přejdete na odkaz v poli Produkt.
 2. Kliknutím přejdete na odkaz v poli Číslo položky.
 3. Rozbalte okno s fakty Obrázek produktu.
@@ -58,7 +58,7 @@ Tento postup se zaměřuje na nastavení potřebné k vytvoření kanbanového p
     * Nastavte sklad na 12.  
 9. Nastavte Minimum na "200".
 
-## Spuštění dávkové úlohy pro vytvoření události
+## <a name="run-the-batch-event-creation-job"></a>Spuštění dávkové úlohy pro vytvoření události
 1. Přejděte na Řízení výroby > Pravidelné úlohy > Dávkové zpracování kanbanových úloh > Zpracování události požadavku.
 2. Klikněte na tlačítko OK.
 3. Přejděte k Řízení informací o produktech > Lean manufacturing > Kanbanová pravidla.

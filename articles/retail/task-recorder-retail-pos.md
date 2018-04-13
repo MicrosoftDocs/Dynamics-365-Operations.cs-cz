@@ -29,7 +29,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="task-recorder-and-help-for-pos"></a>Záznamník úloh a nápověda pro POS
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Toto téma popisuje, jak používat záznamník úloh v aplikacích Retail Modern POS (MPOS) a Cloud POS.
 

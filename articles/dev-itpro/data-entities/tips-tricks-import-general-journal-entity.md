@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="best-practices-for-importing-vouchers-using-the-general-journal-entity"></a>Osvědčené postupy pro import dokladů pomocí entity obecného deníku
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma obsahuje tipy pro import dat do finančního deníku pomocí entity obecného deníku.  
 

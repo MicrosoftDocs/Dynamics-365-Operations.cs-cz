@@ -24,7 +24,7 @@ ms.lasthandoff: 02/13/2018
 ---
 # <a name="create-routes-february-2016-only"></a>Vytváření postupů (jen ve verzi z února 2016)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato úloha je zaměřena na vytvoření výrobních postupů pro dokončený produkt a polotovar produktu. Je to pátá úloha v řadě Kalkulace kusovníku. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF.
 

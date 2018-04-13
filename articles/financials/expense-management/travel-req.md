@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="travel-requisitions"></a>Cestovní žádanky
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 *Cestovní žádanka* je zdrojový dokument, který uvádí seznam nákladů, které vzniknou pro účely cesty. Cestovní žádanka bude odeslána k revizi a lze ji pak použít k autorizaci výdajů.
 

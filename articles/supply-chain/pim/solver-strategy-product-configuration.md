@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="solver-strategy-for-product-configuration"></a>Strategie řešitele pro konfiguraci produktů
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak můžete použít strategii řešitele ke zlepšení výkonu konfigurace produktu.
 

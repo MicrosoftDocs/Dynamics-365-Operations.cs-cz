@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="manage-warehouse-workers"></a>Řízení pracovníků skladu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje, jak aplikace Microsoft Dynamics 365 for Finance and Operations pomáhá řídit a sledovat práci, kterou provádějí zaměstnanci ve skladech.
 

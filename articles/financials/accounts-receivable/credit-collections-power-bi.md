@@ -26,7 +26,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="credit-and-collections-management-power-bi-content"></a>Obsah správy úvěru a inkasa v Power BI
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, co je součástí obsahu **Správa úvěru a inkasa** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
@@ -69,22 +69,24 @@ Grafy a dlaždice ve všech těchto sestavách můžete filtrovat a ukotvit na �
 
 Následující data se používají k naplnění stránek sestavy v obsahu **Správa úvěru a inkasa** v Power BI. Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Přehled integrace Power BI úložištěm entit](../../dev-itpro/analytics/power-bi-integration-entity-store.md).
 
-| Celek                                      | Klíčová opatření agregace           | Zdroj dat                                 | Pole                                                      | popis |
-|---------------------------------------------|--------------------------------------|---------------------------------------------|------------------------------------------------------------|-------------|
-| CustCollectionsBIActivitiesAverageCloseTime | NumOfActivities, AveragecClosedTime  | smmActivities                               | AverageOfChildren(AverageClosedTime) Count(ActivityNumber) | Počet uzavřených aktivit a průměrná doba k uzavření těchto aktivit. |
-| CustCollectionsBIActivitiesOpen             | ActivityNumber                       | smmActivities                               | Count(ActivityNumber)                                      | Počet otevřených aktivit. |
-| CustCollectionsBIAgedBalances               | AgedBalances                         | CustCollectionsBIAgedBalancesView           | Sum(SystemCurrencyBalance)                                 | Součet splatných zůstatků. |
-| CustCollectionsBIBalancesDue                | SystemCurrencyAmount                 | CustCollectionsBIBalanceDueView             | Sum(SystemCurrencyAmount)                                  | Částky, které jsou po splatnosti. |
-| CustCollectionsBICaseAverageCloseTIme       | NumOfCases, CaseAverageClosedTime    | CustCollectionsCaseDetail                   | AverageOfChildren(CaseAverageClosedTime) Count(NumOfCases) | Počet uzavřených případů a průměrná doba k uzavření těchto případů. |
-| CustCollectionsBICasesOpen                  | CaseId                               | CustCollectionsCaseDetail                   | Count(CaseId)                                              | Počet otevřených případů. |
-| CustCollectionsBICollectionLetter           | CollectionLetterNum                  | CustCollectionLetterJour                    | Count(CollectionLetterNum)                                 | Počet otevřených upomínek. |
-| CustCollectionsBICollectionLetterAmount     | CollectionLetterAmounts              | CustCollectionsBIAccountsReceivables        | Sum(SystemCurrencyAmount)                                  | Zůstatek zaúčtovaných upomínek. |
-| CustCollectionsBICollectionStatus           | CollectionStatusAmounts              | CustCollectionsBIAccountsReceivables        | Sum(SystemCurrencyAmount)                                  | Zůstatek transakce se stavem inkasa. |
-| CustCollectionsBICredit                     | CreditExposed, AmountOverCreditLimit | CustCollectionsBICreditView                 | Sum(CreditExposed), Sum(AmountOverCreditLimit)             | Součet vystavení úvěru a částek, o které odběratelé překročili limit úvěru. |
-| CustCollectionsBICustOnHold                 | Blokováno                              | CustCollectionsBICustTable                  | Count(Blocked)                                             | Počet odběratelů, kteří jsou blokováni. |
-| CustCollectionsBIDSO                        | DSO30                                | CustCollectionsBIDSOView                    | AverageOfChildren(DSO30)                                   | Počet dnů neuhrazeného prodeje pro 30 dnů. |
-| CustCollectionsBIExpectedPayment            | ExpectedPayment                      | CustCollectionsBIExpectedPaymentView        | Sum(SystemCurrencyAmounts)                                 | Součet očekávaných plateb v rámci dalšího roku. |
-| CustCollectionsBIInterestNote               | InterestNote                         | CustInterestJour                            | Count(InterestNote)                                        | Počet oznámení úroků, která byly vytvořeny. |
-| CustCollectionsBISalesOnHold                | SalesId                              | SalesTable                                  | Count(SalesId)                                             | Počet celkových prodejních objednávek, které jsou blokovány. |
-| CustCollectionsBIWriteOff                   | WriteOffAmount                       | CustCollectionsBIWriteOffView               | Sum(SystemCurrencyAmount)                                  | Součet transakcí, které byly odepsány. |
+
+|                   Celek                    |      Klíčová opatření agregace      |             Zdroj dat              |                           Pole                            |                                    popis                                     |
+|---------------------------------------------|--------------------------------------|--------------------------------------|------------------------------------------------------------|------------------------------------------------------------------------------------|
+| CustCollectionsBIActivitiesAverageCloseTime | NumOfActivities, AveragecClosedTime  |            smmActivities             | AverageOfChildren(AverageClosedTime) Count(ActivityNumber) |     Počet uzavřených aktivit a průměrná doba k uzavření těchto aktivit.     |
+|       CustCollectionsBIActivitiesOpen       |            ActivityNumber            |            smmActivities             |                   Count(ActivityNumber)                    |                           Počet otevřených aktivit.                            |
+|        CustCollectionsBIAgedBalances        |             AgedBalances             |  CustCollectionsBIAgedBalancesView   |                 Sum(SystemCurrencyBalance)                 |                             Součet splatných zůstatků.                              |
+|        CustCollectionsBIBalancesDue         |         SystemCurrencyAmount         |   CustCollectionsBIBalanceDueView    |                 Sum(SystemCurrencyAmount)                  |                           Částky, které jsou po splatnosti.                            |
+|    CustCollectionsBICaseAverageCloseTIme    |  NumOfCases, CaseAverageClosedTime   |      CustCollectionsCaseDetail       | AverageOfChildren(CaseAverageClosedTime) Count(NumOfCases) |        Počet uzavřených případů a průměrná doba k uzavření těchto případů.        |
+|         CustCollectionsBICasesOpen          |                CaseId                |      CustCollectionsCaseDetail       |                       Count(CaseId)                        |                              Počet otevřených případů.                              |
+|      CustCollectionsBICollectionLetter      |         CollectionLetterNum          |       CustCollectionLetterJour       |                 Count(CollectionLetterNum)                 |                       Počet otevřených upomínek.                        |
+|   CustCollectionsBICollectionLetterAmount   |       CollectionLetterAmounts        | CustCollectionsBIAccountsReceivables |                 Sum(SystemCurrencyAmount)                  |                     Zůstatek zaúčtovaných upomínek.                      |
+|      CustCollectionsBICollectionStatus      |       CollectionStatusAmounts        | CustCollectionsBIAccountsReceivables |                 Sum(SystemCurrencyAmount)                  |                Zůstatek transakce se stavem inkasa.                 |
+|           CustCollectionsBICredit           | CreditExposed, AmountOverCreditLimit |     CustCollectionsBICreditView      |       Sum(CreditExposed), Sum(AmountOverCreditLimit)       | Součet vystavení úvěru a částek, o které odběratelé překročili limit úvěru. |
+|         CustCollectionsBICustOnHold         |               Blokováno                |      CustCollectionsBICustTable      |                       Count(Blocked)                       |                     Počet odběratelů, kteří jsou blokováni.                      |
+|            CustCollectionsBIDSO             |                DSO30                 |       CustCollectionsBIDSOView       |                  AverageOfChildren(DSO30)                  |                        Počet dnů neuhrazeného prodeje pro 30 dnů.                         |
+|      CustCollectionsBIExpectedPayment       |           ExpectedPayment            | CustCollectionsBIExpectedPaymentView |                 Sum(SystemCurrencyAmounts)                 |                 Součet očekávaných plateb v rámci dalšího roku.                 |
+|        CustCollectionsBIInterestNote        |             InterestNote             |           CustInterestJour           |                    Count(InterestNote)                     |                Počet oznámení úroků, která byly vytvořeny.                |
+|        CustCollectionsBISalesOnHold         |               SalesId                |              SalesTable              |                       Count(SalesId)                       |                 Počet celkových prodejních objednávek, které jsou blokovány.                 |
+|          CustCollectionsBIWriteOff          |            WriteOffAmount            |    CustCollectionsBIWriteOffView     |                 Sum(SystemCurrencyAmount)                  |                Součet transakcí, které byly odepsány.                 |
+
 

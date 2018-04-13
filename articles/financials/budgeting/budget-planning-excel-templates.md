@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-templates-for-excel"></a>Šablony plánování rozpočtu pro Excel
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak vytvořit šablony aplikace Microsoft Excel, které lze použít pro plány rozpočtu.
 
@@ -42,11 +41,11 @@ Dokumenty plánu rozpočtu lze zobrazit a upravit pomocí jednoho nebo více roz
 1. Otevřete **Seznam plánů rozpočtu** (**Rozpočtování** &gt; **Plány rozpočtu**). 
 2. Kliknutím na možnost **Nový** vytvořte nový dokument plánu rozpočtu. 
 
-  [![Seznam plánů rozpočtu](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+   [![Seznam plánů rozpočtu](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 3. Použijte možnost řádku **Přidat** k přidání řádků. Klikněte na možnost **Rozvržení**, abyste zobrazili konfiguraci rozvržení dokumentu plánu rozpočtu. 
 
-  [![Přidání plánů rozpočtu](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+   [![Přidání plánů rozpočtu](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
 Můžete zkontrolovat konfiguraci rozvržení a podle potřeby ji upravit. 
 1. Přejděte na možnosti **Šablona**&gt;**Generovat** k vytvoření souboru aplikace Excel pro toto rozvržení. 

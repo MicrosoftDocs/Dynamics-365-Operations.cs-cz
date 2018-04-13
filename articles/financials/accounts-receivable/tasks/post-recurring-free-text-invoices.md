@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a>Generování a zaúčtování opakovaných volných faktur
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Opakované faktury se používají pro pravidelné fakturování odběratelů na stejnou částku. Tento záznam používá ukázkovou společnost USMF. Záznam je určen pro uživatele, který je odpovědný za správu a zpracování faktur pohledávek.
 

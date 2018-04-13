@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="register-serial-numbers-in-the-sales-process"></a>Registrace sériových čísel v prodejním procesu
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Toto téma vysvětluje, jak lze registrovat sériová čísla v dodacích listech nebo fakturách během prodejního procesu. Tato funkce je užitečná, pokud mnoho společností chce jednoduše zaznamenat sériová čísla pro účely záruky a služeb, a nepotřebuje udržovat sériová čísla v zásobách od příjmu po vydání.
 

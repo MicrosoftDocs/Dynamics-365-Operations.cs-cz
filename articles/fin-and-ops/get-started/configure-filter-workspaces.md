@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-and-filter-workspaces"></a>Konfigurace a filtrování pracovních prostorů
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 V tomto článku je přehled o tom, jak konfigurovat a filtrovat pracovní prostory.
 

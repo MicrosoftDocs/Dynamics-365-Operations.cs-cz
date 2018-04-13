@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="intelligence"></a>Intelligence
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma vás nasměruje na zdroje, které můžete použít, abyste se dozvěděli více o business intelligence a nástrojích pro vykazování v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 

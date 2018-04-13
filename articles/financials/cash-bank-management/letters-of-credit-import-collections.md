@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-credit-and-import-collections"></a>Akreditivy a kolekce importu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 V tomto článku jsou obecné informace o akreditivu a kolekcích importu. Oba typy bankovního dokumentu jsou často používané pro nákup a prodej zboží v zahraničí.
 

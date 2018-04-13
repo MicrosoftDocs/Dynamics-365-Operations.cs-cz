@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-warehouse-work-policies"></a>Nastavení zásad práce ve skladu  
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Skladové procesy ne vždy zahrnují skladovou práci. Definováním zásad práce můžete zabránit vytváření práce pro výdej surovin, ale také vyskladnění dokončených výrobků pro sérii produktů v konkrétních umístěních. K vytvoření tohoto záznamu jsou použita ukázková data společnosti USMF. Tento průvodce úkolem vyžaduje aplikaci Dynamics AX 7.0.1 nebo novější.
 

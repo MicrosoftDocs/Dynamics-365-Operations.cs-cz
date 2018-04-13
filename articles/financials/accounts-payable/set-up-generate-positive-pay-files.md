@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="set-up-and-generate-positive-pay-files"></a>Nastavení a vygenerování souborů kladných plateb
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek vysvětluje postup při nastavení kladných plateb a generování souborů kladných plateb. 
 

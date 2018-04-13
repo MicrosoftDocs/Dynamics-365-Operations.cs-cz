@@ -28,10 +28,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Uspořádání zaměstnanců podle oddělení, prací a pozic
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
-[!include[retail name](includes/retail-name.md)]
-
+[!INCLUDE [retail name](includes/retail-name.md)]
 
 Oddělení, úlohy a pozice jsou organizační prvky, které jsou evidovány v rámci modulu Lidské zdroje. Toto téma obsahuje koncepční informace o těchto prvcích. 
 
@@ -48,7 +47,7 @@ Následující příklad slouží k zobrazení konceptů popsaných v tomto tém
 |**Lidské zdroje**|Manažer lidských zdrojů (západ)|Manažer lidských zdrojů|
 |**Lidské zdroje**|Manažer lidských zdrojů (střed)|Manažer lidských zdrojů|
 
- 
+
  <a name="departments"></a>Oddělení
 ------------
 

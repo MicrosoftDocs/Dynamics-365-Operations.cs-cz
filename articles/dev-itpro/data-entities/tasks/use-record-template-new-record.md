@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="use-a-record-template-to-create-a-new-record"></a>Vytvoření nového záznamu s použitím šablony záznamu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup ukazuje, jak použít dříve definovanou šablonu záznamu pro vytvoření nového záznamu. Pro dokončení tohoto postupu musíte nejprve dokončit postup "Vytvoření šablony záznamů pro usnadnění vkládání dat".
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="action-search"></a>Hledání akce
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje funkci hledání akce v aplikaci Microsoft Dynamics 365 for Finance and Operations. Hledání akce vám pomůže najít a spustit akce na stránce.
 

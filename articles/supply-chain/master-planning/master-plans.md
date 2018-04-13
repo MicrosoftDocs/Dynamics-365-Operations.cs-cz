@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="master-plans"></a>Hlavní plány
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Používání různých hlavních plánů na podporu každodenního provozu své společnosti, simulovat různé strategie plánování,které chcete monitorovat a zavádět podnikovou pravidla, týkající se například zásad interní výkonnosti nebo spokojenosti zákazníka. 
 

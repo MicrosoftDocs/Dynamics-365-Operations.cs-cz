@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="price-adjustments-and-discounts"></a>Úpravy ceny a slevy
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Tento článek obsahuje informace o úpravě ceny a slevách v aplikaci Microsoft Dynamics 365 for Retail.
 

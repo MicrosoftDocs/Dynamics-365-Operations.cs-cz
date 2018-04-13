@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mass-hire-projects"></a>Projekty hromadného zařazení
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Projekty hromadného zařazení umožňují odborníkům z oblasti lidských zdrojů vytvářet více pozic a efektivně zařazovat zaměstnance na tyto pozice.
 
@@ -94,7 +93,7 @@ Na stránce **Projekt hromadného zařazení** klepněte na **Otevřít projekt*
 </tbody>
 </table>
 
- 
+
 
 
 

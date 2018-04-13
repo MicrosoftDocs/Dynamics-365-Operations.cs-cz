@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-process-overview"></a>Přehled výrobního procesu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma poskytuje přehled procesů výroby. Popisuje různé fáze výrobní zakázky, dávkové objednávky a kanbany od vytvoření objednávky po uzavření finančního období. 
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="fixed-asset-management-workspace"></a>Pracovní prostor pro správu dlouhodobého majetku
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Pracovní prostor **Správa dlouhodobého majetku** zobrazuje informace vztahující se k dlouhodobému majetku, který je zadán v systému. Tento pracovní prostor obsahuje souhrnné a analytické zobrazení. Na kartě **Moje práce** jsou zobrazeny souhrnné dlaždice, podrobnosti o majetku a související informace o dlouhodobém majetku v aktuální společnosti. Přímo v pracovním prostoru také můžete do části analýzy Power BI přidat analýzu. Karta **Analýza – všechny společnosti** zobrazuje pomocí funkcí Microsoft Power BI vizuální prvky související s dlouhodobým majetkem ve všech společnostech.
 

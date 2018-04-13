@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="consolidation-and-elimination-overview"></a>Přehled konsolidace a eliminace
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 V tomto článku jsou obecné informace o procesu konsolidace a eliminace. Zahrnuje odpovědi na časté dotazy.
 

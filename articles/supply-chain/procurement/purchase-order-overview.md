@@ -28,10 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchase-order-overview"></a>Přehled nákupních objednávek
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Tento článek poskytuje obecné informace o nákupních objednávkách a odkazy na další články, které se týkají různých fází, kterými prochází nákupní objednávka.
 

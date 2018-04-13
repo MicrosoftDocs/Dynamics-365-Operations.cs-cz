@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="standard-cost-conversion-overview"></a>Přehled převodu standardních nákladů
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 V tomto článku je popsán přehled usnadňující nastavení a spuštění převodu standardních nákladů. Uvedené kroky jsou určeny k dokončení po dokončení předběžných kroků nutných pro převod standardních nákladů. 
 

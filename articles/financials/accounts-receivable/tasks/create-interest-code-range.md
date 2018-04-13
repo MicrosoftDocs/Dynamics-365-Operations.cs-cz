@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-interest-code-with-a-range"></a>Vytvoření kódu úroků s rozsahem
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kódy úroků lze nastavit pro výpočet různých částek úroků podle rozsahu hodnot. Tato procedura vám ukáže, jak přidáte kód úroků a jak k němu přidáte rozsah.
 

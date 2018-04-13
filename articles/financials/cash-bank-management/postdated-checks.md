@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="postdated-checks"></a>Postdatované šeky
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek obsahuje informace o podpoře pro postdatované šeky v aplikaci Microsoft Dynamics 365 for Finance and Operations. Postdatované šeky jsou šeky, které jsou vydány za účelem provedení a přijetí platby v budoucí datu. Takže lze šek proplatit až od určeného data.
 
@@ -76,14 +75,14 @@ V případě ztráty nebo poškození původního šeku pro dodavatele nebo od o
 <td>Zaúčtovaný postdatovaný šek v těchto situacích můžete zrušit - šek je vrácen bankou.
 - Šek je použit k nesprávné faktuře.
 - Proti šeku je provedena hotovostní platba.
-</td>
-</tr>
-<tr class="even">
-<td>Zastavte platbu postdatovaného šeku.</td>
-<td>Můžete zastavit platbu na postdatovaném šeku vystaveném dodavateli z důvodů, jako je nedostatek finančních prostředků, změna podmínek smlouvy s dodavatelem, vadné zboží u dodavatele, dodání nebo vrácení zboží dodavateli. Můžete zastavit platbu pouze u šeků, které nebyly proplaceny.</td>
-</tr>
-</tbody>
-</table>
+  </td>
+  </tr>
+  <tr class="even">
+  <td>Zastavte platbu postdatovaného šeku.</td>
+  <td>Můžete zastavit platbu na postdatovaném šeku vystaveném dodavateli z důvodů, jako je nedostatek finančních prostředků, změna podmínek smlouvy s dodavatelem, vadné zboží u dodavatele, dodání nebo vrácení zboží dodavateli. Můžete zastavit platbu pouze u šeků, které nebyly proplaceny.</td>
+  </tr>
+  </tbody>
+  </table>
 
 
 

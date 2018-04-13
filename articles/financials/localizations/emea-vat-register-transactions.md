@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="vat-register-transactions-for-eastern-europe"></a>Transakce v rejstříku DPH pro východní Evropu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma obsahuje informace o transakcích v rejstříku DPH pro Estonsko, Litvu, Českou republiku, Maďarsko, Lotyšsko a Polsko. 
 

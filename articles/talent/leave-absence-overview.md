@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 ---
 # <a name="leave-and-absence-management-overview"></a>Přehled správy pracovního volna a absencí
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Modul **Správa pracovního volna a absencí** nabízí flexibilní systém pro definování procesu správy absencí. Pro určení časového rozlišení a přidělení pracovního volna zaměstnanců lze vytvořit plány pracovního volna a absencí. Poté, co jsou zaměstnanci zaregistrováni do plánu, mohou odesílat nadřízenému ke schválení své žádosti o pracovní volno. Sledování pracovního volna umožňuje nadřízeným první úrovně a manažerům oddělení HR sledovat, kdo si bere pracovní volno a kolik času volna každému zaměstnanci zbývá.  
 

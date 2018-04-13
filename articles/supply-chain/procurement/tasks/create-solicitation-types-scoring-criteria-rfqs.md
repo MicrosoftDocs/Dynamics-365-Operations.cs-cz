@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a>Vytvoření typů oslovení a kritérií hodnocení pro požadavky na nabídku
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato příručka popisuje způsob vytvoření typu oslovení a jeho přiřazení k metodě hodnocení. Rovněž zobrazuje způsob použití typu oslovení pro požadavek na nabídku, který stanoví výchozí metodu hodnocení. Tyto úkoly obvykle provádějí vedoucí nákupu. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Před zahájením je nutné mít k dispozici metodu hodnocení.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-catalogs"></a>Zásobovací katalogy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje na nejvyšší úrovni, jak mohou odborníci na nákup nastavit a spravovat zásobovací katalogy. Zásobovací katalogy definují položky a služby, které zaměstnanci společnosti mohou objednat pro interní použití.
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="configure-sql-server-reporting-services-for-an-on-premises-deployment"></a>Konfigurace služby SQL Server Reporting Services pro místní nasazení
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kroky v tomto tématu lze použít ke konfiguraci služby SQL Server Reporting Services (SSRS) pro nasazení aplikace Microsoft Dynamics 365 for Finance and Operations, (on-premises).
 
@@ -52,13 +52,13 @@ Kroky v tomto tématu lze použít ke konfiguraci služby SQL Server Reporting S
 
     [![karta Adresa url webového portálu](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)
     
-  Po nakonfigurování portálu bude karta **webový portál** odpovídat následujícímu obrázku.
+   Po nakonfigurování portálu bude karta **webový portál** odpovídat následujícímu obrázku.
     [![karta webový portál](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)
     
 8. Klikněte na adresu URL sestav pro zobrazení webového portálu služby SQL Server Reporting Services. 
-9.  Až budete v portálu, můžete vytvořit novou složku pojmenovanou **Dynamics**.
+9. Až budete v portálu, můžete vytvořit novou složku pojmenovanou **Dynamics**.
 
-    [![složka Dynamics](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
+   [![složka Dynamics](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
     
 10. Ve **Správci konfigurace služby Reporting Services** klepněte na **Nastavení e-mailu** a ověřte, že nastavení odpovídají následujícímu obrázku.
 
@@ -68,15 +68,15 @@ Kroky v tomto tématu lze použít ke konfiguraci služby SQL Server Reporting S
 
     [![karta účet provedení](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)
     
-  Neměňte výchozí nastavení na kartě **Šifrovací klíče**. [![karta šifrovacích klíčů](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
+    Neměňte výchozí nastavení na kartě **Šifrovací klíče**. [![karta šifrovacích klíčů](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
     
 12. Klepněte na kartu **Nastavení předplatného** a ověřte, že parametry odpovídají následujícímu obrázku.
 
     [![karta nastavení předplatného](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)
     
-  Neměňte výchozí nastavení na kartě **Nasazení škálování**. [![karta nasazení škálování](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
+    Neměňte výchozí nastavení na kartě **Nasazení škálování**. [![karta nasazení škálování](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
     
-  Neměňte výchozí nastavení na kartě **Integrace Power BI**. [![karta integrace Power BI](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
+    Neměňte výchozí nastavení na kartě **Integrace Power BI**. [![karta integrace Power BI](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
     
 13. Kliknutím na tlačítko **Konec** zavřete **Správce konfigurace služby Reporting Services**.
 

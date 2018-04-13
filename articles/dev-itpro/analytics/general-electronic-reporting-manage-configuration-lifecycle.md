@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-the-electronic-reporting-configuration-lifecycle"></a>Správa životního cyklu konfigurace elektronického vykazování
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje způsob správy životního cyklu konfigurací elektronického výkaznictví u řešení Microsoft Dynamics 365 for Finance and Operations.
 

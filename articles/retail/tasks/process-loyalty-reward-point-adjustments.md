@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a> Zpracování úprav bodů věrnostních odměn
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Tato procedura demonstruje vyhledávání informace o věrnostní kartě a úpravu bodů věrnostních odměn. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USRT. Tato úloha je určena pro roli Manažer maloobchodních operací nebo roli Manažer odběratelského servisu.
 

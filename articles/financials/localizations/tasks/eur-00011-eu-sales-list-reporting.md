@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-eu-sales-list-reporting"></a>Nastavení souhrnného hlášení EU
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato úloha vás provede přehledem o předpokladech pro vytváření souhrnného hlášení (EU). Další informace o výkazu se seznamem prodeje v EU včetně případných požadovaných předpokladů naleznete v nápovědě aplikace Dynamics 365 for Finance and Operations.
 

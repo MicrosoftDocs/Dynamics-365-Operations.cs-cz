@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="weighted-average-date"></a>Datum váženého průměru
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Datum váženého průměru je skladový model založený na principu váženého průměru. Pro princip váženého průměru jsou vydání ze skladu zváženy pomocí průměrné hodnoty položek přijatých do skladu pro každý den v období uzávěrky skladu. 
 

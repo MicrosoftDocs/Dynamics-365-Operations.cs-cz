@@ -28,8 +28,7 @@ ms.lasthandoff: 02/05/2018
 
 # <a name="warehouse-mobile-device-display-settings"></a>Nastavení displeje mobilního zařízení skladu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje, jak nastavit vzhled displeje mobilního zařízení a namapovat klávesové zkratky na ovládací prvky, jako jsou například tlačítka. 
 

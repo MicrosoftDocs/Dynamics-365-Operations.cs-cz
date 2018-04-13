@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="125-percent-reducing-balance-depreciation"></a>Degresivní odpis 125 procent
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 125 procent“.
 
@@ -68,6 +67,7 @@ Vyberete-li jako odpisový rok možnost **Fiskální**, v poli **Frekvence obdob
 -   **Fiskální období** zaúčtuje celkovou částku odpisu vypočteného pro fiskální rok. Tato částka se rozloží do fiskálních období, která jsou definována na stránce **Fiskální kalendáře**.
 
 ## <a name="example-of-125-reducing-balance-depreciation"></a>Příklad 125% degresivního odpisování
+
 |                                |        |
 |--------------------------------|--------|
 | Pořizovací náklady               | 11 000 |

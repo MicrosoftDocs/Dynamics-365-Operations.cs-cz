@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="advance-holder-transactions"></a>Transakce držitelů záloh
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Naučte se pracovat s transakcemi držitele zálohy v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 

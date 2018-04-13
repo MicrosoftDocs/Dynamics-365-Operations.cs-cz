@@ -27,8 +27,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Konfigurace elektronického výkaznictví pro doplňování dat do Power BI
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma vysvětluje, jak lze použít konfiguraci elektronického vykazování (ER) k uspořádání přenosu dat z aplikace Finance and Operations do služeb Power BI. Toto téma používá jako příklad transakcí v systému Intrastat obchodní údaje, které je nutné převést. Vizualizace map Power BI využívá těchto dat transakcí systému Intrastat, aby představila náhled analýzy aktivit importu a exportu společnosti.
 
@@ -118,9 +117,9 @@ Klepněte na tlačítko **Nastavení** pro nový záznam cíle. Potom můžete v
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Vytvořte sestavu Power BI pomocí nové sady dat
 1. Klikněte na tlačítko **Podrobnosti importu a exportu** sady dat Power BI, kterou jste vytvořili. 
 2. Nakonfigurujte vizualizaci. Vyberte například vizualizaci **Plná mapa** a proveďte její konfiguraci následujícím způsobem:
- -   Přiřaďte sadu dat **CountryOrigin** do pole **Umístění** vizualizace mapy.
- -   Přiřaďte sadu dat **Množství** do pole **Sytost barvy** vizualizace mapy.
- -   Přidejte pole sad dat **aktivity** a **Rok** k polím **Filtry** kolekce vizualizace map.
+   -   Přiřaďte sadu dat **CountryOrigin** do pole **Umístění** vizualizace mapy.
+   -   Přiřaďte sadu dat **Množství** do pole **Sytost barvy** vizualizace mapy.
+   -   Přidejte pole sad dat **aktivity** a **Rok** k polím **Filtry** kolekce vizualizace map.
 
 3. Uložte sestavu Power BI jako **sestava podrobností o Importu a exportu**. [![Sestava podrobností o Importu a exportu](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Všimněte si, že mapa zobrazí země/oblasti, které jsou uvedeny v souboru Excel (Rakousko a Švýcarsko v tomto příkladu). Tyto země/oblasti se vybarví, aby zobrazily podíl fakturovaných částek pro každou z nich. 
 4. Aktualizujte seznam transakcí v systému Intrastat. Byla přidána transakce exportu, která pochází z Itálie. [![Seznam transakcí systému Intrastat](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-collection-letter-sequence"></a>Vytvoření posloupnosti upomínek
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento průvodce úkolem slouží k vytvoření posloupnosti upomínek. Tento úkol používá ukázkovou společnost USMF.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="excel-templates-with-multiple-worksheets"></a>Šablony aplikace Excel s více listy
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Správa dat v aplikaci Microsoft Dynamics 365 for Finance and Operations podporuje šablony na základě aplikace Microsoft Excel pro datové entity. Tyto šablony mohou obsahovat jeden nebo více listů. Šablony s více listy se často používají tehdy, když je vhodné spravovat data v jednom souboru a importovat je do vícero datových entit. Příkladem by byla pracoviště a sklady.
 

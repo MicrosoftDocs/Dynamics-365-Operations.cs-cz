@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="report-boms-as-finished"></a>Ohlášení dokončení kusovníku
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek obsahuje informace o ohlášení kusovníků jako dokončených.
 

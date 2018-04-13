@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-credit"></a>Akreditivy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Akreditivy jsou bankovní dokumenty běžně používané pro nákup a prodej zboží v zahraničí. 
 

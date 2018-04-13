@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-accrual-schemes"></a>Vytvoření schémat časového rozlišení
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento průvodce úkoly vás provede vytvořením schématu časového rozlišení. Tento úkol používá ukázkovou společnost USMF.
 

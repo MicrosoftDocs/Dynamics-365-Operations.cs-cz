@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="post-fixed-asset-transactions-to-posting-layers"></a>Transakce dlouhodobého majetku zaúčtované do účtovací vrstvy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 V tomto článku naleznete přehled o funkci účtovací vrstvy pro transakce dlouhodobého majetku.
 

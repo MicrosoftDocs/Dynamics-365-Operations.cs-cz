@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="import-iso20022-files"></a>Import souborů ISO20022
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Můžete importovat soubory plateb, které mají následující formáty:
 
@@ -41,8 +41,8 @@ Import zpráv s bankovními oznámeními ve formátu camt.054.001.002 do deníku
 3. Na stránce **Bankovní účet odběratele** nastavte bankovní účet záznamu odběratele zadáním následujících informací: IBAN nebo číslo bankovního účtu a kód SWIFT nebo směrové číslo.
 4. Na stránce **Bankovní účty** nastavte bankovní účty právnické osoby zadáním následujících informací: IBAN nebo číslo bankovního účtu, kód SWIFT nebo směrové číslo, měna a adresa.
 
-    > [!NOTE]
-        > Pokud budete používat rozšířené bankovní odsouhlasení, na pevné záložce **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení bankovního výpisu** na **Ano**. Pokud chcete odsouhlasit nezaúčtované importované platby, nastavte možnost **Použít bankovní výpisy jako potvrzení elektronické platby** na **Ano**.
+   > [!NOTE]
+   > Pokud budete používat rozšířené bankovní odsouhlasení, na pevné záložce **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení bankovního výpisu** na **Ano**. Pokud chcete odsouhlasit nezaúčtované importované platby, nastavte možnost **Použít bankovní výpisy jako potvrzení elektronické platby** na **Ano**.
 
 5. Volitelné: Na kartě **Mapování kódu transakce** nastavte mapování mezi kódy bankovních transakcív souboru a typy bankovních transakcí.
 6. Pokud soubor obsahuje poplatky za transakce, které chcete zaúčtovat spolu s příchozí platbou, vytvořte pro platební poplatek na stránce **Platební poplatky odběratele**. Poté na stránce **Způsoby platby** přidružte platební poplatek k bankovnímu účtu v nastavení platebního poplatku.

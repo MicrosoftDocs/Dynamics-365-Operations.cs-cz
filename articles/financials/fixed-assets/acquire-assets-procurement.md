@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="acquire-assets-through-procurement"></a>Pořízení majetku pomocí zásobování
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak integraci modulů Dlouhodobý majetek a Závazky nastavit tak, aby probíhalo automatické vytváření majetku z nákupních objednávek nebo faktur, případně automatické zaúčtování transakcí pořízení a opravy pořizovací ceny dlouhodobého majetku.
 

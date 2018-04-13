@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="hire-an-existing-employee-through-recruiting"></a>Najmutí existujícího zaměstnance prostřednictvím náboru
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Otevřené pozice mohou někdy zaplnit kandidáti, kteří jsou již zaměstnanci ve vaší organizaci. Tento postup vás provede kroky zařazení existujícího zaměstnance prostřednictvím procesu náboru. V tomto postupu je již nastaven náborový projekt a existující zaměstnanec již odeslal přihlášku týkající se daného náborového projektu. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

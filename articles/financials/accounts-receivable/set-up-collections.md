@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-credit-and-collections"></a>Nastavení kreditu a inkas
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje postup nastavení funkce inkasa.
 
@@ -97,9 +96,9 @@ Pokud obchodní zástupce není zadán, použije se primární prodejce pro orga
 Další informace naleznete v následujících tématech:
 
  - [Vytvoření posloupnosti upomínek](tasks/create-collection-letter-sequence.md)
- 
+
  - [Zpracování upomínek](tasks/process-collection-letters.md)
- 
+
  - [Kontrola inkasních informací](tasks/review-collections-information.md)
 
 

@@ -29,10 +29,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-dimensions"></a>Dimenze produktu
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
-
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 Existují čtyři dimenze produktu – barva, konfigurace, velikost a styl. Kombinujte dimenze produktu ve skupinách dimenzí a přiřazujte skupiny dimenzí k základním produktům. Kombinace dimenzí produktu určuje způsob definování variant produktu.
 
@@ -51,6 +50,7 @@ Hodnoty dimenze produktu, jako například Velikost, Barva a Styl, lze vytvořit
 -   Klikněte na možnosti **Řízení informací o produktech** &gt; **Uvolněné produkty**. Vyberte základní produkt. V **podokně akcí** klikněte na **Produkt**. Ve skupině **Základní produkt** klikněte na **Dimenze produktu**.
 
 Počet variant, které je možné vytvořit pro položku, je omezen počet možných kombinací dimenzí produktu.
+
 | **Tip**                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Používáte-li na produkt, například na řádku objednávky, vyberete dimenze produktu pro identifikování varianty produktu, se kterou chcete pracovat. |

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="party-search-using-vat-id"></a>Vyhledání strany s použitím DIČ
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura ukazuje, jak dokončit vyhledávání strany pomocí ID registrace. Před provedením této procedury musíte nastavit DIČ a zadat libovolná DIČ pro dodavatele, zákazníky nebo právnické osoby.
 

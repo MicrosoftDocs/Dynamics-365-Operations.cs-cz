@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-validate-journals"></a>Vytváření a ověřování deníků
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento průvodce úkoly vytvoří a ověří deníky a řádky deníku. Tento úkol využívá ukázkovou společnost USMF.  
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="view-financial-reports"></a>Zobrazit finanční sestavy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek vysvětluje, jak zobrazit a zkoumat finanční sestavy v aplikaci Microsoft Dynamics 365 for Finance and Operations. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-address-books"></a>Konfigurace adresářů
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Pomocí tohoto postupu a rozhodnutí, která byla provedena v tématu o plánování konfigurace globálního adresáře a dalších adresářů, nastavte další adresáře pro vaši organizaci.
 

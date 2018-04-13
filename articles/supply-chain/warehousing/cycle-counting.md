@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cycle-counting"></a>Cyklická inventura
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje postup použití cyklické inventury v rámci řešení skladu, které je k dispozici v modulu Řízení skladu. Tento článek se nevztahuje na skladové řešení, které je k dispozici v modulu Řízení zásob.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-loyalty-programs"></a> Definování věrnostních programů
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Tato procedura popisuje, jak nastavit věrnostní program pomocí dvou věrnostních úrovní. Tato procedura používá data ukázkové společnosti USRT.
 

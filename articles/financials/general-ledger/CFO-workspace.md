@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Přidání finančních dimenzí k pracovnímu prostoru CFO
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma vysvětluje postup při přidání finančních dimenzí do pracovního prostoru CFO (Chief Financial Officer) tak, aby bylo možné je používat pro hlavní knihu a sestavy rozpočtu. Pracovní prostor CFO má kartu **Přehled** a kartu **Finanční**. Sestavy na těchto dvou kartách jsou podloženy dvěma měřeními: LedgerActivityMeasure a BudgetActivityMeasure. V aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017) existuje vztah mezi těmito dvěma měřeními a entitou DimensionCombinationEntity. Z tohoto důvodu lze vybrat dimenze.
 

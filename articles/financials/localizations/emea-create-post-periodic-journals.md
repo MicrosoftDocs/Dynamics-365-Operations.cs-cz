@@ -27,8 +27,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="split-periods-in-periodic-journals"></a>Rozdělení období do periodických deníků
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Periodické deníky se někdy nazývají opakované deníky, protože částka, text a ostatní informace se opakují při každém zaúčtování deníku. Při vytváření deníku zadáte interval pro opakování, například dny nebo měsíce. Můžete také určit počet období, pro které bude deník účtován.
 

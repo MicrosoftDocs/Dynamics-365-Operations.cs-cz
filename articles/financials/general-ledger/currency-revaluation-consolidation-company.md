@@ -28,10 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Přecenění měny v konsolidační společnosti
 
-[!include[banner](../includes/banner.md)]
-
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Při konsolidaci dat z jedné zúčtovací měny na jinou musíte spustit přecenění měny, pokud dojde ke změně směnných kurzů, aby byly správně přehodnoceny zůstatky účtů. Při původní konsolidaci data použijte kartu **Převod měny** k výběru počátečních směnných kurzů pro převod při procesu konsolidace. Po zadání nového směnného kurzu (např. v dalším měsíci) je nutné přecenění zůstatků účtů. Nerealizované zisky nebo ztráty jsou pak odpovídajícím způsobem aktualizovány na základě nového směnného kurzu a data. Následující příklad znázorňuje účetní položky, které jsou vytvořeny během tohoto procesu.
 
@@ -52,6 +49,7 @@ Při konsolidaci dat z jedné zúčtovací měny na jinou musíte spustit přece
 | 11. 10. 2015 | 130100 – Pohledávky | USD      | -500   |
 
 ## <a name="exchange-rates"></a>Směnné kurzy
+
 | Z měny | Do měny | Počáteční datum | Směnný kurz |
 |---------------|-------------|------------|---------------|
 | EUR           | USD         | 1. 10. 2015  | 200           |

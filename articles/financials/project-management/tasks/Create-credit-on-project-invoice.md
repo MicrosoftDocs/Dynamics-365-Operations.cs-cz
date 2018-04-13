@@ -25,7 +25,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="create-a-credit-note-on-project-invoices"></a>Vytvoření dobropisu na fakturách projektu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 1. Přejděte na Řízení projektu a účetnictví > Projekty > Všechny projekty. 
 2. Vyhledejte na seznamu požadovaný záznam a vyberte ho. 

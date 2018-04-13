@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-configuration-groups"></a>Definování konfiguračních skupin
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje definování konfiguračních skupin produktu vytvořením dvou skupin v ukázkových datech společnosti USMF. Jedná se o čtvrtý postup z osmi, který vysvětluje vytvoření kombinací konfigurace založené na dimenzích.
 

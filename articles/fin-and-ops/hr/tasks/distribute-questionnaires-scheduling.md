@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="distribute-questionnaires-using-scheduling"></a>Distribuce dotazníků s použitím plánování
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Plánování dotazníků umožňuje plánovat a rozdělovat dotazníky mezi více respondentů. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

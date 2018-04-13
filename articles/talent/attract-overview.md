@@ -26,7 +26,7 @@ ms.lasthandoff: 03/07/2018
 ---
 # <a name="attract-overview"></a>Přehled aplikace Attract
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Aplikace Attract poskytuje možnosti správy procesu při přijímání nových zaměstnanců. Kandidáti mohou být přidáni k otevřeným pracovním místům a postupovat od fáze k fázi, až po prodloužení nabídky nebo zamítnutí žádosti. V každé fázi se uchazeči přesouvají napříč různými aktivitami, jako je prvotní telefonický pohovor, hodnocení nebo plánování pohovoru. Jakmile kandidáti požádají o místo, dostanou e-mailovou pozvánku k přihlášení se do aplikace Attract, kde mohou sledovat stav pracovní nabídky, svou žádost, a odpovědět na všechny úkoly, které jsou jim přiřazeny.
 

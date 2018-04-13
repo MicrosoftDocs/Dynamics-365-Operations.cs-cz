@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="electronic-signature-overview"></a>Přehled elektronických podpisů
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek obsahuje přehled informací o elektronických podpisech a o možnostech jejich použití v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 

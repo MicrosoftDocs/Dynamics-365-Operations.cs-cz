@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Zadání a porovnání nabídek pro požadavek na nabídku a přidělení smlouvy
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak zadat odpovědi na požadavek na nabídku, hodnocení a porovnání nabídek, a poté přijmout nabídku některého z dodavatelů. Tento postup můžete projít v ukázkových datech společnosti USMF. Než začnete, musíte mít požadavek na nabídku se dvěma řádky, které byly odeslány nejméně dvěma dodavatelům. Pro vytvoření je nezbytným předpokladem vytvoření postupu "Vytvořit požadavek na nabídku". Je nutné nastavit kritéria hodnocení před spuštěním tohoto procesu.
 

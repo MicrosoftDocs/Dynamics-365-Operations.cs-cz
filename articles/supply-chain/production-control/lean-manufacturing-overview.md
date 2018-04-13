@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="lean-manufacturing-overview"></a>Lean manufacturing – přehled
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek obsahuje přehled a popis funkcí lean manufacturingu v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 
@@ -40,6 +39,7 @@ Lean manufacturing nabízí nástroje, které lze použít k modelování štíh
 -   Sledování a správa kanbanovových úloh.
 
 Architektura lean manufacturing v aplikaci Finance and Operations obsahuje výrobní toky, aktivity a kanbanová pravidla. Tyto struktury jsou plně integrovány do procesů Finance and Operations. Lean manufacturing můžete použít ve smíšeném výrobní prostředí, ve kterém se kombinují různé strategie dodávek, výroby a zdrojů. Tyto strategie zahrnují výrobní zakázky, dávkové objednávky pro zpracovatelské odvětví, nákupní objednávky a převodní příkazy.
+
 | **Důležité**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Aplikaci Finance and Operations můžete použít k podpoře implementace lean manufacturingu s kanbany. Úspěšná implementace zásad štíhlé výroby však závisí na vnitřních obchodních procesech, které používáte, a skutečných výrobních podmínkách a prostředí. |

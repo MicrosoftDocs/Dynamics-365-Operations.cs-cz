@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="post-an-expense-report"></a>Zaúčtování sestavy výdajů
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Po schválení a převedení sestavy výdajů do hlavního deníku lze sestavu zaúčtovat do hlavní knihy. Při zaúčtování sestavy výdajů se identifikují výdaje s nárokem na vrácení DPH. Zaměstnanci, který je zodpovědný za ověření sestavy výdajů, je přiřazen úkol ověření a vrácení plateb DPH.
 

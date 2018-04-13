@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-original-budget-and-reverse-preliminary-budget-entries-in-the-public-sector"></a>Vytvoření původního rozpočtu a stornování předběžných položek rozpočtu ve veřejném sektoru
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Pokud vytvoříte původní položku rozpočtu a použijete hodnoty rozpočtových modelů a dimenzí, které obsahují předběžné částky rozpočtu, předběžné částky rozpočtu lze stornovat. Tato procedura byla vytvořena pomocí ukázkových dat společnosti PSUS v oddílu veřejného sektoru.
 

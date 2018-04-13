@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Nastavení položky nabídky na mobilním zařízení pro registraci přijatých položek
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato úloha je zaměřena na nastavení položky nabídky mobilního zařízení. Tato položka nabídky slouží k registraci příjmu položek, které jsou objednány prostřednictvím nákupních objednávek. 
 

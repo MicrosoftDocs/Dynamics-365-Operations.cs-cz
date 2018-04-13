@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-destinations-for-electronic-reporting-er"></a>Konfigurace místa určení pro elektronické výkaznictví (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup ukazuje, jak nastavit a používat různé cíle pro výstupní součásti elektronického vykazování (ER), jako například složku nebo soubor. K vytvoření tohoto postupu jsou použita ukázková data společnosti DEMF. Německo je země\oblast s primární adresou právnické osoby, ale pro tuto proceduru můžete použít jakoukoli právnickou osobu. 
 

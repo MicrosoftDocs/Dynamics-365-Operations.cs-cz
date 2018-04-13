@@ -28,14 +28,14 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="prepayment-invoices-vs-prepayments"></a>Zálohové faktury a zálohy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma nabízí popis a porovnání dvou metod, které organizace mohou použít pro platby záloh (zálohy). Pro jednu metodu je nutné vytvořit zálohovou fakturu, která je přidružená k nákupní objednávce. Pro druhou můžete zálohový doklad deníku vytvořit vytvořením položek deníku a jejich označením jako zálohový doklad deníku.
 
 Organizace může vydávat zálohy (zálohové platby) dodavatelům za zboží nebo služby ještě před splněním objednávky zboží nebo služeb. K vydání záloh dodavatelům lze použít dvě metody. Kvůli minimalizaci rizika můžete sledovat zálohy definováním zálohy na nákupní objednávce. Pro tuto metodu je nutné vytvořit zálohovou fakturu, která je přidružená k nákupní objednávce. Tento způsob je označován jako zálohová fakturace. Organizace, které nechtějí sledovat zálohy tak detailně nebo které nepřijímají zálohové faktury od svého dodavatele, mohou namísto fakturace zálohy použít zálohový doklad deníku. Zálohový doklad deníku můžete vytvořit vytvořením položek deníku a jejich označením jako zálohový doklad deníku. Pro tuto metodu nelze sledovat, které zálohy jsou prováděné u dodavatele se kterými nákupními objednávkami. Můžete však označit zaúčtovanou zálohu k vyrovnání pro nákupní objednávku.
 
 ## <a name="when-to-use-prepayment-invoicing-vs-prepayments"></a>Kdy použít fakturace zálohy a zálohy
+
 | Zálohové faktury                                                                | Zálohy                                                              |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | Určete hodnotu zálohy na nákupní objednávce.                                    | Na nákupní objednávce není definována žádná hodnota zálohy.                    |

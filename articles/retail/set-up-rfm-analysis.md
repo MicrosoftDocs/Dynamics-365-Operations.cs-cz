@@ -29,8 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="set-up-rfm-analysis"></a>Nastavení analýzy RFM
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Toto téma vysvětluje, jak nastavit analýzu RFM (Recency, Frequency, and Monetary) odběratelů.
 
@@ -60,25 +59,25 @@ Pokud vaše organizace používá agregaci těchto čísel, individuální hodno
     - Pokud každý oddíl skóre RFM musí obsahovat stejný počet odběratelů, zaškrtněte políčko **Rovnoměrná distribuce**. 
     - Zaškrtnutím políčka **Přidat hodnocení** budete agregovat tři hodnocení. To dá například odběrateli hodnocení RFM 13 namísto 535. 
     - Zaškrtněte políčko **Uložit historii**, aby systém musela ukládat statistická data pro odběratele, aby bylo data možné použít k výpočtu hodnocení RFM.
-  
+
 5.  Na pevné záložce **Recency** proveďte následující kroky: 
     - Do pole **Divize** zadejte počet divizí nebo skupin, které budou použity pro výpočet skóre recency pro odběratele. Pokud například máte 100 odběratelů, rozdělení po 5 znamená, že pro každé hodnocení je 20 odběratelů. 20 zákazníků, kteří naposledy provedli nákup, mají skóre recency 5. Další 20 zákazníků má skóre recency 4 atd. Pokud máte 50 odběratelů, 10 odběratelů má hodnocení recency 5, 10 má hodnocení recency 4 atd. 
     - V poli **Priorita** vyberte, jakou váhu chcete přiřadit parametru recency ve vztahu k ostatním parametrům při výpočtu hodnocení RFM pro odběratele. Například můžete chtít dát větší hodnotu hodnocení recency než peněžnímu hodnocení. 
     - V poli **Multiplikátor** zadejte hodnotu, kterou se má hodnocení recency násobit. Pokud nezadáte hodnotu, hodnocení nebude vynásobeno. 
     - V poli **Období** vyberte časové období, podle kterého se vypočítá skóre recency. Například podle týdne nebo měsíce.
-   
+
 6.  Na pevné záložce **Frekvence** proveďte následující kroky: 
     - Do pole **Divize** zadejte počet divizí nebo skupin, které budou použity pro výpočet skóre frekvence pro odběratele. 
     - V poli **Priorita** vyberte, jakou váhu chcete přiřadit parametru frekvence ve vztahu k ostatním parametrům při výpočtu hodnocení RFM pro odběratele. 
     - V poli **Multiplikátor** zadejte hodnotu, kterou se má hodnocení frekvence násobit. Pokud nezadáte hodnotu, hodnocení nebude vynásobeno.
-   
+
 7.  Na pevné záložce **Peněžní** proveďte následující kroky: 
     - Do pole **Divize** zadejte počet divizí nebo skupin, které budou použity pro výpočet peněžního skóre pro odběratele. 
     - V poli **Priorita** vyberte, jakou váhu chcete přiřadit peněžnímu parametru ve vztahu k ostatním parametrům při výpočtu hodnocení RFM pro odběratele. 
     - V poli **Multiplikátor** zadejte hodnotu, kterou se má peněžní hodnocení násobit. Pokud nezadáte hodnotu, hodnocení nebude vynásobeno. 
     - V poli **Hrubý/čistý** vyberte, zda má být peněžní hodnocení odběratele vypočteno pomocí hrubé nebo čisté částky faktury. 
     - Pokud mají být vrácené částky odběratele odečteny od výpočtu celkové fakturované částky odběratele, zaškrtněte políčko **Odečíst vrácení**. 
- 
+
 ## <a name="view-a-customers-rfm-score"></a>Zobrazení hodnocení RFM odběratele
 Tento postup použijte k zobrazení hodnocení RFM odběratele. 
 

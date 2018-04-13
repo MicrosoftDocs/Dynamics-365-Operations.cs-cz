@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a>Vytvoření zásad chování nákladů a jejich přiřazení jednotce řízení nákladů
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Chování nákladů je klasifikace nákladů jako fixních nebo variabilních. Zásady a odpovídající pravila musí být přiděleny jednotce řízení nákladů, aby mohly zásady vstoupit v platnost. Tento postup slouží k vytváření zásady a její přidělení k jednotce pro řízení nákladů.
 

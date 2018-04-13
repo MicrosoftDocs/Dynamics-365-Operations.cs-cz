@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-a-customer-loyalty-program"></a>Nastavení zákaznického věrnostního programu
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Tento článek popisuje, jak nastavit věrnostní program. Věrnostní program může pomoci posílit věrnost odběratele, protože zákazníky odměňuje za nákup produktů v maloobchodech. V aplikaci Dynamics 365 for Retail můžete nastavit jednoduché nebo komplexní věrnostní programy, které platí pro různé právnické osoby v libovolné maloobchodní síti.
 

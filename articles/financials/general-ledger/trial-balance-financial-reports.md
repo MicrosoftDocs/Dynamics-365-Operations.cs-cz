@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="trial-balance-financial-reports"></a>Finanční sestavy předvah
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje výchozí sestavy pro předvahy. Popisuje také stavební bloky, které jsou přidruženy k těmto sestavám, a způsob změn sestav tak, aby odpovídaly vašim obchodním požadavkům. 
 
@@ -99,7 +98,7 @@ Každá sestavu předvahy používá jinou definici sloupců. Tyto definice slou
     -   **FD** – finanční data, která obsahují pouze položky má dáti pro předchozí rok
     -   **FD** – finanční data, která obsahují pouze položky dal pro předchozí rok
 
- 
+
 
 <a name="see-also"></a>Viz také
 --------

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-items-lent-to-workers"></a>Spravovat položky půjčené zaměstnancům
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Položky výpůjčky jsou záznamy, které pomáhají manažerům se sledováním fyzických položek, které vaše společnost půjčuje zaměstnancům. 
 
@@ -51,7 +50,7 @@ Manažeři si mohou zobrazit položky zapůjčené jejich přímým podřízený
 
 Pokud došlo ke ztrátě nebo poškození položky, vložte záznam o fiktivním vrácení. Pak lze buď položku smazat, nebo ji dále vést v přehledu, ale je nutné změnit její popis, který bude nadále označovat, že daná položka není k dispozici.
 
- 
+
 <a name="see-also"></a>Viz také
 --------
 

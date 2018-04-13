@@ -26,9 +26,9 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="custom-fields"></a>Vlastní pole
 
-[!include[banner](../includes/banner.md)] 
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 Aplikace Microsoft Dynamics 365 for Finance and Operations sice poskytuje rozsáhlou škálu standardních polí pro správu širokého rozsahu obchodních procesů. Někdy však společnost potřebuje sledovat ve svém systému i další informace. Aplikace Finance and Operation vám umožňuje vytvářet vlastní pole pro přizpůsobení aplikace vašemu podnikání, pokud máte oprávnění pro tuto funkci. 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="category-pricing-rules-to-create-trade-agreements"></a> Cenová pravidla kategorií pro vytváření obchodních smluv
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Tato procedura ukazuje, jak vytvořit obchodní smlouvy o prodejních cenách pomocí kategorizace cenových pravidel. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USRT. Tento úkol je určen pro roli Manažer maloobchodního prodeje.
 

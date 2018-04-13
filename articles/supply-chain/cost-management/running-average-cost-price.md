@@ -29,10 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="running-average-cost-price"></a>Průběžná průměrná nákladová cena
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Proces uzávěrky skladu v aplikaci vyrovná výdejové transakce příjmovými transakcemi podle metody oceňování zásob, která je vybraná ve skupině modelu zboží. Před spuštěním uzávěrky skladu však systém vypočítá průběžnou průměrnou nákladovou cenu, která obvykle slouží k účtování výdejových transakcí.
 

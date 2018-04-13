@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-sales-orders"></a>Vytvářet prodejní objednávky
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura popisuje způsob vytváření prodejní zakázky. Tento postup můžete projít v ukázkových datech společnosti USMF. Prodejní objednávku obvykle vytváří zpracovatel prodejních objednávek. 
 

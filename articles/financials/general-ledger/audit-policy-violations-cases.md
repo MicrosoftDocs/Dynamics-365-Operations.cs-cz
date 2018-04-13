@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="audit-policy-violations-and-cases"></a>Auditní porušení zásad a případy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje, jak jsou generovány případy auditu z porušení pravidel zásad auditu. Dále zahrnuje informace o různých způsobech použití rozsahu dat pro výběr dokumentu v zásadách auditu.
 

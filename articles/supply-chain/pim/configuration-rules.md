@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="configuration-rules"></a>Konfigurační pravidla
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek obsahuje obecné informace o pravidlech konfigurace. Konfigurační pravidla definují vztah mezi položkami v kusovníku pro produkty, které používají technologii konfigurace založené na dimenzích.
 

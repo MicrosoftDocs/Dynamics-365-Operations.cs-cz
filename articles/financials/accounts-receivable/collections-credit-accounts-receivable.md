@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Úvěr a inkasa v modulu Pohledávky
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Informace o inkasu pohledávek jsou spravovány v jednom ústředním zobrazení pomocí stránky Inkasa aplikace Finance and Operations. Vedoucí úvěrů a inkasa mohou používat toto centrální zobrazení ke správě inkas. Inkasní agenti mohou zahájit proces kolekce ze seznamů odběratelů, které jsou generovány pomocí použitím předem definované kolekce kritérií nebo stránky Odběratelé.
 
@@ -70,9 +69,9 @@ Následující stránky se seznamem umožňují uspořádání informací o inka
 
 > [!NOTE]
 > Snímek sledování splatnosti musí být vytvořen dříve, než je možné zobrazit informace na těchto stránkách se seznamem. Zobrazí se informace pouze pro odběratele, pro které byl vytvořen snímek sledování splatnosti. Záznamy, které se zobrazí na stránce seznamu, lze dále filtrovat následujícím způsobem:
-<li>Podle výchozího nastavení uživatel aplikace Finance and Operations má přístup ke všem zákazníkům, kteří mají snímek sledování splatnosti.</li>
-<li>Existují-li fondy zákazníků, uživatel musí být nastaven jako inkasní agent, aby mohl použít fondy pro filtrování informací na stránkách se seznamem inkasa. Informace jsou omezeny na odběratele, kteří jsou zahrnuti ve vybraném fondu odběratelů.</li>
-<li>Pokud je uživatel nastaven jako inkasní agent, pouze skupiny, které jsou vybrány pro daného inkasního agenta, jsou k dispozici na stránce se seznamem. Pokud vyberte možnost Povolit agentovi zobrazit všechny fondy zákazníků na stránce Inkasní agent pro inkasního agenta, všechny fondy budou k dispozici pro tohoto agenta.</li>
+> <li>Podle výchozího nastavení uživatel aplikace Finance and Operations má přístup ke všem zákazníkům, kteří mají snímek sledování splatnosti.</li>
+> <li>Existují-li fondy zákazníků, uživatel musí být nastaven jako inkasní agent, aby mohl použít fondy pro filtrování informací na stránkách se seznamem inkasa. Informace jsou omezeny na odběratele, kteří jsou zahrnuti ve vybraném fondu odběratelů.</li>
+> <li>Pokud je uživatel nastaven jako inkasní agent, pouze skupiny, které jsou vybrány pro daného inkasního agenta, jsou k dispozici na stránce se seznamem. Pokud vyberte možnost Povolit agentovi zobrazit všechny fondy zákazníků na stránce Inkasní agent pro inkasního agenta, všechny fondy budou k dispozici pro tohoto agenta.</li>
 
 
 ## <a name="collections-page"></a> Inkasní stránka

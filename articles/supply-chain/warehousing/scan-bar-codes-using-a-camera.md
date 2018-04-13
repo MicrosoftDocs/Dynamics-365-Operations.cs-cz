@@ -27,7 +27,7 @@ ms.lasthandoff: 03/09/2018
 
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Skenování čárových kódů pomocí fotoaparátu v aplikaci Dynamics 365 Finance and Operations – Sklady
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma vysvětluje, jak nastavit Dynamics 365 for Finance and Operations – Sklady pro skenování čárových kódů pomocí fotoaparátu na mobilním zařízení. 
 

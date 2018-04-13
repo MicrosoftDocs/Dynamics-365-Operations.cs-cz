@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="calculations-for-product-configuration-models-faq"></a>Výpočty pro modely konfigurace produktu - často kladené dotazy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje výpočty pro modely konfigurace produktu a vysvětluje, jak použít výpočty spolu s omezeními.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="invoice-issue-deadline"></a>Termín vystavení faktury
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek vysvětluje, jak nastavit parametry pro výpočet dat splatnosti pro vydání faktur dodavatele a faktur odběratele v Evropské unii (EU).
 

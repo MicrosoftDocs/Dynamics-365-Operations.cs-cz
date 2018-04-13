@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="analyze-store-performance"></a>Analýza výkonnosti obchodu
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Tento článek vysvětluje použití analýzy v paměti a v reálném čase pro přístup, prohlížení a získání přehledu o výkonu obchodu na základě vašich dat z aplikace Microsoft Dynamics 365 for Retail. 
 

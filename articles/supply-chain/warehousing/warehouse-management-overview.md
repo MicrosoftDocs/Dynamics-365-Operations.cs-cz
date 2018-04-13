@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="warehouse-management"></a>Řízení skladu
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Modul Řízení skladu pro aplikaci Dynamics 365 for Finance and Operations umožňuje správu skladových procesů ve výrobních, distribučních a maloobchodních společnostech. Tento modul má celou řadu funkcí pro podporu skladového areálu na optimální úrovni v jakémkoliv čase. Řízení skladu je plně integrováno s ostatními obchodními procesy v aplikaci Finance and Operation, jako je například přeprava, výroba, řízení kvality, nákup, převod, prodej a vrácení.
 

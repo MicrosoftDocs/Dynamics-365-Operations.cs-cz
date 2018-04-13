@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurace schvalovacího procesu ve workflowu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Pomocí následujícího postupu nakonfigurujte vlastnosti schvalovacího procesu.
 
@@ -136,6 +135,7 @@ Můžete určit konečného schvalovatele scénářů, kde je schvalujícím oso
 
 ## <a name="set-a-time-limit"></a>Nastavení časového limitu
 Tento postup použijte, pokud je proces schvalování nutné dokončit v určitém čase.
+
 | **Poznámka**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Možnosti, které v těchto krocích vyberete, přepíší možnosti vybrané v oblasti **Přiřazení** a **Eskalace** jednotlivých schvalovacích kroků. |

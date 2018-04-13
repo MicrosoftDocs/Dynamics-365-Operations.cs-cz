@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="optimization-advisor-overview"></a>Přehled poradce při optimalizaci
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak můžete použít poradce při optimalizaci pro zaručení optimální konfigurace aplikace Microsoft Dynamics 365 Finance and Operations.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Ruční zadávání dat o přihlášce a uchazeči
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak ručně spravovat informace o uchazečích a jejich přihláškách.   Můžete zadat a spravovat osobní údaje, data a časy pohovoru, odkazy, kompetence a požadavky na ubytování pro uchazeče. Také můžete aktualizovat stav uchazečových žádostí o zaměstnání a vytváření dopisů nebo e-mailových zpráv ke komunikaci s uchazeči. Při vytvoření záznamu žadatele se vytvoří osobní záznam tohoto uchazeče v globálním adresáři.       K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

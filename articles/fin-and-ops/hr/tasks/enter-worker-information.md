@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-worker-information"></a>Zadávání informací o pracovnících
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Poté, co náborový pracovník vytvoří projekt hromadného zařazování zaměstnanců a generování pozic, je dalším krokem zadání informací o pracovníkovi pro osoby, které byly přijaty. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Demonstrační data obsahují otevřený projekt masového zařazení. Tento postup zahájíte tak, že přejděte na Lidské zdroje > Nábor > Projekty hromadného zařazení.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="employee-development-power-bi-content"></a>Obsah Power BI pro rozvoj zaměstnanců
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje obsah Microsoft Power BI – **Rozvoj zaměstnance**.
 
@@ -45,6 +45,7 @@ Sestavy, které jsou součástí obsahu Power BI **Rozvoj zaměstnance**, obsahu
 Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
+
 | Celek                   | Obsah                                                                                                   | Vztahy s jinými entitami |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
 | Posuny kalendáře          | Posuny kalendáře pro řez sestav                                                                          | Přiřazení k minulé pozici, trend pozice, trend zaměstnance, ukončený zaměstnanec 

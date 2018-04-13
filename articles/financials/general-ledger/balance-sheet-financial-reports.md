@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="balance-sheet-financial-reports"></a>Finanční sestavy rozvah
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje výchozí sestavy pro rozvahy. Popisuje také stavební bloky, které jsou přidruženy k těmto sestavám. 
 
@@ -71,7 +70,7 @@ Definice sloupců obsahují různé typy sloupců, které poskytují různé úr
     -   **DESC** – popis z definice řádku
     -   **FD** – Finanční data od začátku roku pro aktuální rok
 
- 
+
 
 <a name="see-also"></a>Viz také
 --------

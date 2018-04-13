@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="depreciation-methods-and-conventions"></a>Odpisové metody a způsoby odpisu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek poskytuje přehled odpisových zásad a metod, které jsou podporovány v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 
@@ -62,7 +61,7 @@ Můžete vybírat z následujících metod odpisování:
 -   Degresivní 150 %
 -   Degresivní 125 %
 
- 
+
 
 
 

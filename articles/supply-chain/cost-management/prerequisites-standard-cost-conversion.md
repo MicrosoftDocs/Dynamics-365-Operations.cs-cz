@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Předpoklady pro převod standardních nákladů
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje úkoly prováděné před spuštěním převodu standardních nákladů. 
 

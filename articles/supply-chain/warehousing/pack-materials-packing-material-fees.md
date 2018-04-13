@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="packing-materials-and-fees"></a>Obalové materiály a poplatky
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Poplatky za balicí materiál se recyklační společnosti hradí v určitých intervalech. Platí se částka za hmotnostní jednotku za každý materiál, ze kterého se skládá jednotka balného. Poplatky za balicí materiál jsou vypočítány a vykázány, ale nezaúčtují se žádné nikdy neúčtované transakce, protože poplatky se nepovažují za daně, které je třeba zaplatit úřadům.
 
@@ -63,7 +62,7 @@ Pokud vaše společnost platí poplatky za obalový materiál, nezadávejte lice
 
 ## <a name="print-packaging-material-weights-on-invoices"></a>Tisk hmotností obalového materiálu na fakturách
 Na faktuře můžete vytisknout hmotnosti obalového materiálu a informovat o tom, kdo platí poplatky za obalový materiál. Hmotnosti se sčítají pro jednotlivé kódy obalu.
- 
+
 
 
 

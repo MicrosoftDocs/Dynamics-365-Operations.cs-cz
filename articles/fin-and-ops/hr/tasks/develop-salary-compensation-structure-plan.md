@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="develop-salarycompensation-structure-and-plans"></a>Vývoj struktury platu/kompenzace a plánů
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento průvodce úkolem vás provede procesem vytváření plánu fixní kompenzace a umožňuje zaměstnancům přihlášení do plánu pomocí pravidel způsobilosti. Společnost s ukázkovými daty používaná k tvorbě tohoto úkolu je USMF a tento úkol je určen pro manažera kompenzace a výhod.
 

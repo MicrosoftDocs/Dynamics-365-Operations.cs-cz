@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Párování faktur a mezipodnikové nákupní objednávky
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Nakupující právnická osoba, která se účastní mezipodnikové obchodní transakce, je pravděpodobně nastavena pro použití párování faktur závazků. V tomto případě požadavky zaúčtování pro párování mezipodnikových obchodních účtů a účtů závazků je třeba splnit dříve, než lze zaúčtovat mezipodnikové faktury dodavatele.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="compensation-and-benefits-power-bi-content"></a>Obsah kompenzací a zaměstnaneckých výhod v Power BI
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje Finance and Operations - Obsah kompenzací a zaměstnaneckých výhod v Power BI. 
 

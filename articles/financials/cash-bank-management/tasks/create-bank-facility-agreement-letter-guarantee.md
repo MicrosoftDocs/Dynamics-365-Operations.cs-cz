@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bank-facility-agreement-for-the-letter-of-guarantee"></a>Vytvoření smlouvy bankovního zařízení pro záruční listinu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento úkol vytvoří smlouvu bankovního zařízení ke zpracování záruční listiny. Tento úkol používá ukázkovou společnost USMF. 
 

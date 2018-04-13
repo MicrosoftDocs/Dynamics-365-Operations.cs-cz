@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-fraud-alerts"></a>Nastavení výstrah u podvodů
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Toto téma vysvětluje, jak lze nastavit kritéria a pravidla pro blokování potenciálně podvodných prodejních objednávek do doby, než je zkontrolujete. Funkce kontroly podvodu se používá při ověřování platnosti informací na prodejní objednávce. Pokud se informace v prodejní objednávce zdají být pochybné na základě kritérií a pravidel organizace týkajících se podvodu, objednávku lze pozdržet pro další kontrolu správcem.
 

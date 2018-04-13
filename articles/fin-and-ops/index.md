@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 ---
 
 # <a name="introduction-to-microsoft-dynamics-365-for-finance-and-operations"></a>Úvod do aplikace Microsoft Dynamics 365 for Finance and Operations
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Zjistěte, jak můžete pro svůj obchod využít Microsoft Dynamics 365 for Finance and Operations pomocí níže uvedených zdrojů. Naleznete tak skvělý obsah pro koncové uživatele, vývojáře a profesionály z oblasti IT. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-the-gtin-code-for-a-product"></a>Zadání kódu GTIN pro produkt
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kódy GTIN přiřazuje organizace GS1. V tomto příkladu zadáte kód pro číslo produktu M0001 v ukázkových datech společnosti USMF.
 

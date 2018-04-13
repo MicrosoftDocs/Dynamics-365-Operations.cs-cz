@@ -28,8 +28,7 @@ ms.lasthandoff: 12/01/2017
 
 # <a name="generate-a-financial-report"></a>Generovat finanční sestavu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma obsahuje informace o generování finančních sestav. 
 
@@ -50,13 +49,13 @@ Při generování sestavy se používají možnosti, které jste zadali na kart�
 ## <a name="generate-a-financial-report"></a>Generovat finanční sestavu
 
 Chcete-li generovat finanční sestavu pomocí aplikace Microsoft Dynamics 365 for Finance and Operations, přejděte na **Hlavní kniha** > **Dotazy a sestavy** > **Finanční sestavy**. 
- - Zvolte sestavu, kterou chcete generovat, a klikněte **Generovat**. 
- - Vyplňte pole **Datum sestavy** a klikněte na tlačítko **OK**.
- 
- Po vygenerování sestavy bude sestava k dispozici pro zobrazení v oddílu **Sestavy**.
- Sestavu můžete **Zobrazit** nebo **Odstranit**.
- 
- 
+- Zvolte sestavu, kterou chcete generovat, a klikněte **Generovat**. 
+- Vyplňte pole **Datum sestavy** a klikněte na tlačítko **OK**.
+
+  Po vygenerování sestavy bude sestava k dispozici pro zobrazení v oddílu **Sestavy**.
+  Sestavu můžete **Zobrazit** nebo **Odstranit**.
+
+
 Pro generování sestavy pomocí **návrháře sestav** otevřete definici sestavy a klepněte na tlačítko Generovat na panelu nástrojů. Otevře se okno Stav fronty sestav a označí umístění vaší sestavy ve frontě. Ve výchozím nastavení se generovaná sestava otevře ve Web Viewer.
 
 > [!NOTE]
@@ -159,7 +158,7 @@ Po spuštění analýzy chybějícího účtu jsou k dispozici následující kl
 | Otevření vybrané definice sestavy.  | Ctrl+R                     |
 | Otevření vybrané definice řádku     | Ctrl+O                     |
 
- 
+
 <a name="see-also"></a>Viz také
 --------
 

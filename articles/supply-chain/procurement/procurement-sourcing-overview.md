@@ -28,8 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="procurement-and-sourcing-overview"></a>Přehled zásobování a zdrojů
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek poskytuje přehled funkci, které jsou k dispozici v modulu Zásobování a zdroje.
 
@@ -39,7 +38,7 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 Potřeba produktů nebo služeb může vzniknout ze *žádanek*, například když zaměstnanec vyžaduje produkt. *Katalogy produktů* mohou být nastaveny na průvodce výběrem dostupných produktů, ze kterých lze vybírat nebo požadavky lze vytvořit pro produkty, které nebyly dosud dostupné v katalogu, umožňující nákupnímu oddělení zvážit, jak může být produkt dodán.  
 
 *Omezení útrat* lze použít k omezení útrat žádanek a *nákupnímu workflow* přidá možnost požadovat schválení před objednáváním. V případě potřeby je také možné zadat přidělení finančních prostředků rozpočtu.  
-  
+
 Oddělení zásobování identifikuje dodavatelé pro požadované produkty a služby, a tento výpočet může zahrnovat *požadavek na nabídku* odesílaný několika potenciálním dodavatelům. Je možné sdílet specifikace produktu, které jsou požadovány a potenciální dodavatelé mohou zobrazit, zda mohou dodat produkt, který je v souladu s jejich požadavky. Dodavatelé vracejí své nabídky, které jsou pak kontrolovány oddělením zásobování, předtím, než vyberou dodavatele, kteří je budou zásobovat.  
 
 Nákupní objednávky zahrnují možnost odesílat *nákupní žádanku* dodavateli jako alternativu ke komplexnějšímu zpracování požadavku na nabídku. Nákupní žádanku lze použít při vytváření podmínek, jako jsou ceny, slevy a datum dodání objednávky. Pokud jsou dodavatelé nastaveni k používání **Portálu pro dodavatele**, funkce nákupní žádanky je zakázána. Namísto toho je objednávka sdílena v**dodavatelském portálu**, a když je *potvrzení požadavku* odesláno dodavateli, lze přímo objednávku potvrdit.  

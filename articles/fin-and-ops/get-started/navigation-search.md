@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="navigation-search"></a>Hledání za účelem navigace
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 V tomto tématu je vysvětleno, jak použít funkci vyhledávání k přechodu na stránky v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 

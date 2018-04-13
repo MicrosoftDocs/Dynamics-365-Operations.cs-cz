@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="operations-scheduling"></a>Plánování operací
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma obsahuje obecné informace o plánování operací. Plánování operací můžete použít, když je třeba získat obecný odhad výrobního procesu v čase.
 

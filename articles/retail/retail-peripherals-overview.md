@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="retail-peripherals-overview"></a>Přehled maloobchodních zařízení
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Toto téma vysvětluje pojmy související s maloobchodními periferními zařízeními. Popisuje různé způsoby, jakými mohou být periferní zařízení připojena k pokladnímu místu (POS) a komponenty odpovídající za správu připojení k POS.
 

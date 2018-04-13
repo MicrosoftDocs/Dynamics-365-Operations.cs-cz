@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-posted-sales-tax-transactions"></a>Zobrazit zaúčtované transakce DPH
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Můžete zobrazit transakce zaúčtovaného DPH z různých stránek v závislosti na tom, co chcete zobrazit. Tento úkol používá ukázkovou společnost USMF.
 

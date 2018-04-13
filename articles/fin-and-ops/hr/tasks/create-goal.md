@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-goal"></a>Vytvoření cíle
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Můžete vytvořit cíle, přidat aktivity k cílům, sledovat měrný systém a propojit cíle s kontrolou. Tato procedura byla vytvořena pomocí ukázkových dat společnosti USMF. Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations, verze 1611.
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="cost-accounting-terminology"></a>Terminologie týkající se účtování nákladů
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma definuje klíčové podmínky, které se používají v nákladovém účetnictví.
 
@@ -150,14 +149,14 @@ Základy přidělení vzorce umožňují definovat rozšířené vzorce k dosaž
 |  + |  Dodatek |
 |  – |  Odčítání |
 | *  | Násobení  |
-    
+
 Tradiční výkazy IF nejsou podporovány. Můžete však vytvořit výkazy a ověřit, zda jsou pravdivé.
 
 |  **Ověření výkazu** | **Výsledek**  |
 |---|---|
 |  a > b| True  |
 |  a > b |  False |
-    
+
 **Režijní náklady**
 
 Režijní náklady odkazují k probíhajícím výdajům na provozní náklady. Jde o náklady, které nelze přímo spojit s konkrétními obchodními aktivitami. Následuje několik příkladů režijních nákladů:

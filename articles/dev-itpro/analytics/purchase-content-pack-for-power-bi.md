@@ -28,7 +28,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="purchase-spend-analysis-power-bi-content"></a>Analýza obsahu Power BI výdajů na nákup
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, co je součástí obsahu analýzy **nákupu a výdajů** v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které jsou použity k sestavení obsahu.
 

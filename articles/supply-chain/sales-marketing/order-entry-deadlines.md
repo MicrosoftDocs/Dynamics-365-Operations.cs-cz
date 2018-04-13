@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-entry-deadlines"></a>Konečné termíny zadání objednávek
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek poskytuje informace o konečných termínech objednávky. Konečný termín objednávky je časový interval přerušení, který určuje, zda je objednávka odběratele zpracována (a plněna), jako by byla přijata aktuálního dne nebo následujícího dne.
 

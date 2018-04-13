@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Co je nového nebo upraveného v aplikaci verze Dynamics AX 7.0.1 (květen 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje funkce, které jsou v aplikaci Microsoft Dynamics AX verze 7.0.1 nové nebo změněné. Tato verze byla vydána v květnu 2016 a má číslo sestavení 7.0.1265.23014.
 
@@ -44,12 +43,14 @@ Tento článek popisuje funkce, které jsou v aplikaci Microsoft Dynamics AX ver
 | Nakonfigurujte cíle EV tak, aby výstupní výsledek formátu byl směrován do určitého cíle: soubor, e-mail nebo archív (složka Microsoft SharePoint nebo Microsoft Azure Storage). | Dříve se při spuštění konfigurace EV zobrazilo okno se zprávou akce požadující po uživateli akci pro uložení nebo otevření souboru. Pro každou konfiguraci formátu a její komponenty (složku nebo soubor) lze nově předem konfigurovat cíl samostatně. Uživatelé, kterým jsou udělena přístupová práva, mohou také měnit nastavení cíle v době běhu. |
 
 ## <a name="pos--microsoft-dynamics-ax-retail"></a>POS – Microsoft Dynamics AX Retail
+
 |                                |                                                                                                                                                                                         |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Co můžete udělat?**           | **Proč je to důležité?**                                                                                                                                                              |
 | Použijte prohlížeč Google Chrome. | Prodejci mohou nově spouštět Cloud POS z prohlížeče Chrome a využívat tak všechny funkce, které jsou k dispozici ve verzi Cloud POS pro Microsoft Edge a Internet Explorer. |
 
 ## <a name="financial-reporting"></a>Finanční výkaznictví
+
 |                                                                     |                                                                                                                                                                                                                                                                                                                    |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Co můžete udělat?**                                                | **Proč je to důležité?**                                                                                                                                                                                                                                                                                         |
@@ -57,12 +58,14 @@ Tento článek popisuje funkce, které jsou v aplikaci Microsoft Dynamics AX ver
 | Nově již není možné vybrat možnosti návrháře sestav, které nejsou platné. | Některé možnosti návrháře sestav, které byly použity ve verzích trhu v aplikaci Management Reporter, se na tuto verzi Dynamics AX nevztahují. Tyto možnosti souvisejí s návrhem, výstupem a propojením finanční sestavy. Tyto možnosti byly odebrány z návrháře finančních sestav, aby nedocházelo k chybám uživatele. |
 
 ## <a name="financial-management"></a>Správa financí
+
 |                                                            |                                                                  |
 |------------------------------------------------------------|------------------------------------------------------------------|
 | **Co můžete udělat?**                                       | **Proč je to důležité?**                                       |
 | Generování souborů kladných plateb pro platby závazků. | Je možné generovat soubory kladných plateb, které pomáhají bankám zabránit podvodným šekům. |
 
 ## <a name="warehouse-and-production"></a>Sklad a výroba
+
 |                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Co můžete udělat?**                                                                                                                                                                                                                                                                                                                                                                    | **Proč je to důležité?**                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -72,7 +75,7 @@ Tento článek popisuje funkce, které jsou v aplikaci Microsoft Dynamics AX ver
 | Výrobní zakázky s cyklickými strukturami na první úrovni jejich kusovníků jsou vyloučeny z výpočtu kusovníku pro plánování materiálových zdrojů.                                                                                                                                                                                                                                     | Není možné přiřadit správné úrovně kusovníku k variantám produktů u výrobních zakázek, které způsobují cyklické vztahy v hierarchii kusovníku.                                                                                                                                                                                                                                                                                                  |
 | Výpočet samostatných úrovní kusovníku pro plánování materiálových zdrojů a výpočet nákladů: • Co se týká plánování materiálových zdrojů, úrovně kusovníku se počítají v nové tabulce **ReqItemLevel**. Ve výpočtu jsou ignorovány ukončené výrobní zakázky. • Pro výpočet výrobních nákladů se úrovně kusovníku počítají v tabulce **InventTable**. Ve výpočtu jsou zahrnuty ukončené výrobní zakázky. | • Při spuštění plánování materiálových zdrojů, jako je například plánování hlavního plánu a rozpad, je nutné přepočítat pouze úrovně kusovníku používané pro plánování materiálových zdrojů. Jinými slovy není třeba vypočítat úrovně kusovníku, které jsou použity pro výpočet výrobních nákladů. • Při spuštění operací pro výpočet nákladů, jako jsou například skladové uzávěrky, je nutné přepočítat pouze úrovně kusovníku používané pro výpočet výrobních nákladů. |
 
- 
+
 
 <a name="see-also"></a>Viz také
 --------

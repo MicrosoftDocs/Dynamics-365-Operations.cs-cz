@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="moving-average"></a>Klouzavý průměr
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Klouzavý průměr je trvalá metoda nákladů založená na principu průměru, kde se náklady na skladový výdej nemění, když se mění nákupní ceny. Rozdíl je kapitalizován a je založen na proporcionálním výpočtu. Zbývající částka je zanesena do výdajů. 
 

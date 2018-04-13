@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="convert-accounting-or-reporting-currencies"></a>Převod měn účetnictví nebo vykazování
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Společnost, která musí změnit zúčtovací měnu nebo měnu vykazování, má dvě možnosti. První možnost je vytvoření nové společnosti a postup od začátku. Druhou možností je spuštění procesu převodu zúčtovací měny a měny vykazování. Jedná se o velmi časově náročná proces, který změní každou transakci v systému. Před spuštěním procesu je nutné provést některá nastavení.
 

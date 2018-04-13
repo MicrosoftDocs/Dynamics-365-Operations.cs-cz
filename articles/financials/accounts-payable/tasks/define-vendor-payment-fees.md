@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-vendor-payment-fees"></a>Definování platebních poplatků dodavatelů
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Nastavte poplatky pro platby dodavatelů. Tento úkol používá ukázkovou společnost USMF.
 

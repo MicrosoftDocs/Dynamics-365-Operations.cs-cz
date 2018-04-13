@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Vyrovnání částečné platby dodavatele a plné vyrovnání konečné platby před datem slevy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek vás provede scénářem, kdy jsou částečné platby provedeny pro fakturu dodavatele a je využita platební sleva.
 

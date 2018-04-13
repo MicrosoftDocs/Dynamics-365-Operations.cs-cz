@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="payment-methods"></a>Metody platby
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Každý typ platby, kterou prodejce přijímá, musí být nakonfigurován při nastavení systému. Tento článek popisuje typy plateb, které lze nastavit, a také proces jejich nastavení.
 

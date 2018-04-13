@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Definování a správa klientů z obchodních kanálů, pokladen a hardwarových stanic
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Toto téma popisuje postup připojení periferních zařízení k vaší pokladně POS.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-formula-by-copying-from-an-existing-formula"></a>Vytvoření receptury kopírováním z existující receptury
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak rychle vytvořit novou recepturu zkopírování z některé existující receptury. Můžete použít společnosti USMF, USP2 nebo USPI s ukázkovými daty pro vytvoření této procedury.
 

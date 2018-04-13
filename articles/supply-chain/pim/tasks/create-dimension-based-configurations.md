@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-dimension-based-configurations"></a>Vytváření konfigurací založených na dimenzích
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak definovat konfiguraci produktu založeného na dimenzích. Jedná se o poslední postup v sérii, který vysvětluje vytvoření kombinací konfigurace založené na dimenzích. Spuštění tohoto postupu je závislé na datu vytvořeném v předchozích sedmi záznamech. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

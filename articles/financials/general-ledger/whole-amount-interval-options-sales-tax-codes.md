@@ -28,19 +28,17 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Možnost Celková částka a Interval výpočtu pro kódy DPH
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Tento článek vysvětluje možnosti pro pole Metoda výpočtu pro kódy DPH, a postup výpočtu DPH v rámci intervalů a celých částek.
 
 Můžete nastavit kód DPH, aby byl vypočten na základě celé částky nebo částky intervalu. Na stránce Kódy DPH pomocí pole Metoda výpočtu na pevné záložce Výpočet vyberte způsob výpočtu kódu DPH.
--   Celá částka – Sazba daně se použije na celou zdanitelnou částku.
--   Interval – základ daně je rozdělen do částí, kde každá část spadá do rozsahu, který má konkrétní kurz DPH. Část částky, která spadá do příslušného intervalu, je zdaněna podle sazby daně pro tento interval. Prodejní daň je součtem částek daně, které byly vypočteny pro každou částku intervalu.
-> [!NOTE]                                                                                                                              
-> Možnost Interval je k dispozici pouze při výběru řádku v poli Metoda výpočtu v oblasti DPH na stránce Parametry hlavní knihy. 
+- Celá částka – Sazba daně se použije na celou zdanitelnou částku.
+- Interval – základ daně je rozdělen do částí, kde každá část spadá do rozsahu, který má konkrétní kurz DPH. Část částky, která spadá do příslušného intervalu, je zdaněna podle sazby daně pro tento interval. Prodejní daň je součtem částek daně, které byly vypočteny pro každou částku intervalu.
+  > [!NOTE]                                                                                                                              
+  > Možnost Interval je k dispozici pouze při výběru řádku v poli Metoda výpočtu v oblasti DPH na stránce Parametry hlavní knihy. 
 
 Intervaly jsou nastaveny na stránce Hodnoty kódu DPH zadáním minimálního a maximálního limitu částky pro jednotlivé daňové sazby. U daní, které se počítají z jakéhokoli základu, musejí být u intervalů dodržena následující pravidla (bez ohledu na vybranou metodu výpočtu):
 -   První interval má dolní mez rovnou 0.
@@ -51,6 +49,7 @@ Pokud částka odpovídá horní mezi předchozím intervalem a zároveň dolní
 
 ## <a name="example-whole-amount-method-of-calculation"></a>Příklad: výpočet metodou celkové částky
 Na stránce Hodnoty kódu DPH jsou sazby DPH nastaveny v následujících intervalech:
+
 |                   |                   |              |
 |-------------------|-------------------|--------------|
 | **Minimální limit** | **Maximální limit** | **Sazba daně** |
@@ -86,7 +85,7 @@ Prodejní daň je součtem částek daně, které byly vypočteny pro každou č
 | 85,00                  | (50,00 \* 0,30 = 15,00) + (35,00 \* 0,20 = 7,00)                          | 22,00     |
 | 305,00                 | (50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50) | 45,50     |
 
- 
+
 
 Více informací najdete v části [Určení sazby DPH na základě polí Základ marže a Metoda výpočtu](marginal-base-field.md).
 

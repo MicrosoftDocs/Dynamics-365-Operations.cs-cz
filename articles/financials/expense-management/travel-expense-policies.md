@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-policies"></a>Zásady výdajů
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Můžete definovat zásady, které musí pracovníci dodržovat při zadávání a odesílání sestav výdajů a cestovních žádanek.         
 Implementací zásad výdajů budete moci efektivně spravovat výdaje.         
@@ -39,14 +39,14 @@ definování zásady.
 Můžete definovat tři typy zásad:         
         
 - Upozornění - Umožňuje pracovníkovi odeslat výkaz výdajů nebo cestovní žádanku, ale výdaje budou označeny pro všechny schvalující osoby a        
-pro pozdější vykazování.        
+  pro pozdější vykazování.        
 
 - Chyba – Požaduje po pracovníkovi opravit výdaje, aby byly v souladu se zásadou před odesláním sestavy výdajů nebo cestovní žádanky.       
  
- - Zdůvodnění – Požaduje po pracovníkovi nebo manažerovi zadat odůvodnění částky přesahující zásadu před odesláním sestavy výdajů nebo cestovní žádanky.        
+  - Zdůvodnění – Požaduje po pracovníkovi nebo manažerovi zadat odůvodnění částky přesahující zásadu před odesláním sestavy výdajů nebo cestovní žádanky.        
  
- Můžete také nastavit rozsah dat, pro které jsou zásady výdajů platné. Například letenky pro lety z Dánska      
- do New York City mohou být během cestovní špičky v průběhu dovolených drahé. Můžete definovat pravidlo pro ceny letenek, které bude omezovat      
- náklady na lety do New York City na 5000 DKK, a také zadat, že toto pravidlo má platit od 15. března      
- do 15. září.
+  Můžete také nastavit rozsah dat, pro které jsou zásady výdajů platné. Například letenky pro lety z Dánska      
+  do New York City mohou být během cestovní špičky v průběhu dovolených drahé. Můžete definovat pravidlo pro ceny letenek, které bude omezovat      
+  náklady na lety do New York City na 5000 DKK, a také zadat, že toto pravidlo má platit od 15. března      
+  do 15. září.
 

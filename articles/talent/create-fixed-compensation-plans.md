@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-fixed-compensation-plans"></a>Vytvoření plánů fixní kompenzace
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Fixní kompenzace odkazuje na pravidelný hrubý plat nebo mzdy zaměstnance. Toto téma popisuje součásti, které je nutné nastavit před vytvořením plánu fixní kompenzace a přihlášením zaměstnanců.
 

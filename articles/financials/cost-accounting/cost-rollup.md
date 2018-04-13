@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Zásady shrnutí nákladů a výpočet režijních nákladů 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Nákladové účetnictví vám umožní získat přehled o vztahu toku nákladů k produktům a službám, které jsou dodávány v rámci organizace. Pro zobrazení transparentních nákladů je velmi důležité dosáhnout přidělení nákladů mezi objekty nákladů na základě příslušného základu přidělení. Ve výchozím nastavení je dosaženo přidělení nákladů pro primární prvek nákladů, který je v některých situacích vyžadován, ale je zde několik důsledků, které je třeba zvážit.
 

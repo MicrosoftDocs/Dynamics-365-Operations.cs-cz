@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="migrate-products-and-warehouse-management-from-ax-2012-to-finance-and-operations"></a>Migrace produktů a řízení skladu z aplikace AX 2012 do aplikaci Finance and Operations
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma poskytuje přehled možností migrace produktů a řízení skladů v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 

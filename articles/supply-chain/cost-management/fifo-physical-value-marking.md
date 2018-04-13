@@ -29,10 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fifo-with-physical-value-and-marking"></a>Metoda FIFO s fyzickou hodnotou a označením
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Metoda (FIFO, First in, First out) představuje skladový model, ve kterém jsou nejprve vydávány první uskladněné položky. Finančně aktualizované výdeje ze skladu jsou vyrovnány oproti prvním finančně aktualizovaným příjmům do skladu na základě finančního data skladové transakce. 
 
@@ -60,16 +59,16 @@ Nová průběžná průměrná nákladová cena představuje průměr finančně
 
 **Klíč k diagramu**
 
--   Skladové transakce jsou reprezentovány svislými šipkami.
--   Příjmy do skladu jsou reprezentovány svislými šipkami nad časovou osou.
--   Výdeje ze skladu jsou reprezentovány svislými šipkami pod časovou osou.
--   Nad (nebo pod) každou svislou šipkou je zadána hodnota skladové transakce ve formátu Quantity@Unitprice.
--   Hodnota skladové transakce uzavřená do závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
--   Hodnota skladové transakce neuzavřená do závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
--   Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
--   Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
--   Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
--   Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
+- Skladové transakce jsou reprezentovány svislými šipkami.
+- Příjmy do skladu jsou reprezentovány svislými šipkami nad časovou osou.
+- Výdeje ze skladu jsou reprezentovány svislými šipkami pod časovou osou.
+- Nad (nebo pod) každou svislou šipkou je zadána hodnota skladové transakce ve formátu Quantity@Unitprice.
+- Hodnota skladové transakce uzavřená do závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
+- Hodnota skladové transakce neuzavřená do závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
+- Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
+- Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
 
 ## <a name="fifo-with-the-include-physical-value-option"></a>Metoda FIFO s možností Zahrnovat fyzickou hodnotu
 Pokud zaškrtnete políčko **Zahrnovat fyzickou hodnotu** pro položku na stránce **Skupina modelů zboží**, systém pro výpočet průběžné průměrné ceny použije transakce fyzického i finančního příjmu. V případě potřeby budou v systému také provedeny úpravy fyzicky aktualizované transakce výdeje. Pokud je zaškrtnutí políčka **Zahrnovat fyzickou hodnotu** odstraněno, budou při uzávěrce skladu s použitím skladového modelu FIFO provedena vyrovnání pouze pro finančně aktualizované transakce. Následující obrázek znázorňuje tyto transakce:
@@ -90,16 +89,16 @@ Transakce č. 5b bude vyrovnána transakcí příjmu č. 1b. K této transakci v
 
 **Klíč k diagramu**
 
--   Skladové transakce jsou reprezentovány svislými šipkami.
--   Příjmy do skladu jsou reprezentovány svislými šipkami nad časovou osou.
--   Výdeje ze skladu jsou reprezentovány svislými šipkami pod časovou osou.
--   Nad (nebo pod) každou svislou šipkou je zadána hodnota skladové transakce ve formátu Quantity@Unitprice.
--   Hodnota skladové transakce uzavřená do závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
--   Hodnota skladové transakce neuzavřená do závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
--   Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
--   Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
--   Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
--   Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
+- Skladové transakce jsou reprezentovány svislými šipkami.
+- Příjmy do skladu jsou reprezentovány svislými šipkami nad časovou osou.
+- Výdeje ze skladu jsou reprezentovány svislými šipkami pod časovou osou.
+- Nad (nebo pod) každou svislou šipkou je zadána hodnota skladové transakce ve formátu Quantity@Unitprice.
+- Hodnota skladové transakce uzavřená do závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
+- Hodnota skladové transakce neuzavřená do závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
+- Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
+- Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
 
 ## <a name="fifo-with-marking"></a>Metoda FIFO s označením
 Termínem označení se popisuje proces, který umožňuje propojit transakci výdeje s transakcí příjmu, neboli je označit jako propojené. Označení lze provést před zaúčtováním transakce nebo po ní. Označení lze provést tehdy, pokud chcete zjistit přesné náklady skladu při zaúčtování transakce nebo při provedení uzávěrky skladu. Předpokládejme například, že oddělení služeb odběratelům přijalo spěšnou objednávku od důležitého odběratele. Vzhledem k tomu, že se jedná o spěšnou objednávku, bude nutné pro splnění požadavku zákazníka za tuto položku zaplatit více. Přitom si musíte být jisti, že pro fakturu této prodejní objednávky se náklady na tuto skladovou položku odrazí v marži nebo v nákladech na prodané zboží. Při zaúčtování nákupní objednávky bude ve skladu zaznamenán příjem s náklady 120,00 USD. Je-li tento dokument prodejní objednávky propojen s nákupní objednávkou před zaúčtováním dodacího listu nebo faktury, budou náklady na prodané zboží činit 120,00 USD, namísto aktuální průběžné průměrné hodnoty nákladů na položku. Pokud jsou faktura nebo dodací list prodejní objednávky zaúčtovány ještě předtím, než dojde k tomuto propojení, budou náklady na prodané zboží zaúčtovány s použitím průběžné průměrné ceny. I před provedením uzávěrky skladu lze tyto dvě transakce vzájemně propojit. Pokud je transakce příjmu propojena s transakcí výdeje, nebude metoda vyhodnocení definovaná ve skupině skladových modelů položky vzata v potaz a tyto transakce budou v systému vzájemně vyrovnány. Před zaúčtováním transakce je možné označit transakci výdeje s příjmem. To lze provést na řádku prodejní objednávky na stránce **Podrobnosti prodejní objednávky**. Můžete zobrazit otevřené transakce příjmu na stránce **Označení**. Po zaúčtování transakce je možné také označit transakci výdeje s příjmem. Můžete spárovat nebo označit transakci výdeje pro transakci otevřených příjmů u naskladněné položky z deníku úpravy zaúčtované inventury. Následující obrázek znázorňuje tyto transakce:
@@ -120,16 +119,16 @@ Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančn�
 
 **Klíč k diagramu**
 
--   Skladové transakce jsou reprezentovány svislými šipkami.
--   Příjmy do skladu jsou reprezentovány svislými šipkami nad časovou osou.
--   Výdeje ze skladu jsou reprezentovány svislými šipkami pod časovou osou.
--   Nad (nebo pod) každou svislou šipkou je zadána hodnota skladové transakce ve formátu Quantity@Unitprice.
--   Hodnota skladové transakce uzavřená do závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
--   Hodnota skladové transakce neuzavřená do závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
--   Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
--   Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
--   Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
--   Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
+- Skladové transakce jsou reprezentovány svislými šipkami.
+- Příjmy do skladu jsou reprezentovány svislými šipkami nad časovou osou.
+- Výdeje ze skladu jsou reprezentovány svislými šipkami pod časovou osou.
+- Nad (nebo pod) každou svislou šipkou je zadána hodnota skladové transakce ve formátu Quantity@Unitprice.
+- Hodnota skladové transakce uzavřená do závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
+- Hodnota skladové transakce neuzavřená do závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
+- Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
+- Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
 
 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-rate-masters"></a>Nastavení hlavních sazeb
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak nastavíte hlavní sazby. Hlavní sazby obvykle nastavuje manažer logistiky v závislosti na smlouvách podepsaných s dopravci. V tomto scénáři nastavíte hlavní sazbu pro leteckého dopravce. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

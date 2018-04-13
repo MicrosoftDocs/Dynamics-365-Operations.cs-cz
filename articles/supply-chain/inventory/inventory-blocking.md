@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="inventory-blocking"></a>Blokování zásob
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek obsahuje přehled informací o blokování zásob, které je součástí vlastního procesu kontroly kvality v aplikaci Microsoft Dynamics 365 for Finance and Operations. Blokování zásob můžete použít pro zabránění zpracování nebo spotřeby položek.
 

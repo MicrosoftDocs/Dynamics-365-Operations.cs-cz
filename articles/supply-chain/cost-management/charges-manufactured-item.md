@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="display-charges-for-a-manufactured-item"></a>Zobrazení nákladů na vyráběnou položku
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Konstantní náklady na vyráběnou položku reflektují doby nastavení operace a komponent s konstantní kvalitou nebo s konstantní odpadovostí.
 

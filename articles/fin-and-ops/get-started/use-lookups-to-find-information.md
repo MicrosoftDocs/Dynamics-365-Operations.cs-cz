@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="use-lookups-to-find-information"></a>Zjišťování informací pomocí vyhledávání
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Mnoho polí v aplikaci Microsoft Dynamics 365 for Finance and Operations umožňuje snadné vyhledávání správných a požadovaných hodnot. Vyhledávání bylo několika způsoby vylepšeno – ovládací prvky jsou nyní užitečnější a uživatelé díky nim mohou být produktivnější. V tomto tématu se dozvíte o těchto nových funkcích a užitečných tipech k optimálnímu využití vyhledávání v systému.  
 

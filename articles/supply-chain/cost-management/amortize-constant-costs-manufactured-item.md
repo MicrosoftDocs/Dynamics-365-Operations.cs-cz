@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="amortize-constant-costs-for-a-manufactured-item"></a>Amortizace konstantních nákladů na vyráběné zboží
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Konstantní náklady na vyráběné zboží reflektují doby nastavení operace a komponenty s konstantní kvalitou nebo s konstantní odpadovostí. 
 

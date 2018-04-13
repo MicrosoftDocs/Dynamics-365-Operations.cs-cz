@@ -24,7 +24,7 @@ ms.lasthandoff: 02/14/2018
 ---
 # <a name="benefit-eligibility-process"></a>Proces získání nároku na zaměstnaneckou výhodu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup ukazuje, jak funguje proces nároku na zaměstnanecké výhody. Výsledky se zobrazí po dokončení procesu. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

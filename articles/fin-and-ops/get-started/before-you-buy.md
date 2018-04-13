@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="before-you-buy"></a>Před zakoupením 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Pracujete s aplikací Dynamics 365 for Finance and Operations poprvé? Připravili jsme podrobné pokyny, ať již aplikaci Finance and Operations stále hodnotíte, nebo jste připravení na nákup.
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a>Začínáme s aplikací Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 V aplikaci Microsoft Dynamics 365 for Talent lze snadno upravit uživatelské rozhraní a nastavit volby, které učiní software intuitivnější podle vašich potřeb. Toto téma obsahuje odkazy na témata, která poskytují informace o přizpůsobení uživatelského rozhraní podle vašich požadavků. Témata rovněž obsahuje odkazy na informace, které vám pomohou nalézt informace v systému efektivně a přesně. 
 

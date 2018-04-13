@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Vzdát, obnovit nebo změnit úrokové poplatky
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje, jak odpustit, obnovit a stornovat poplatky za úroky a jiné poplatky.
 

@@ -25,8 +25,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="data-validation-workspace"></a>Pracovní prostor ověření dat
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma poskytuje přehled pracovního prostoru **Kontrolní seznam ověřování dat** a přidružené konfigurace.
 

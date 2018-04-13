@@ -29,8 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="master-planning-home-page"></a>Domovská stránka Hlavního plánování
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ve svém jádru hlavní plánování umožňuje společnostem určit a vyvážit budoucí potřebu surovin a kapacit ke splnění cílů společnosti. Hlavní plánování posuzuje následující: 
 
@@ -58,6 +57,7 @@ Následující mapa výuky zobrazuje hlavní koncepty a úkoly, které tvoří r
 [![Mapa výuky pro hlavní plánování](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## <a name="quick-links"></a>Rychlé odkazy
+
 |      |   |
 |------|---|
 |        [Hlavní plány](master-plans.md)       |     [Vygenerování plánu s omezeními](./tasks/constrained-plan.md)  |

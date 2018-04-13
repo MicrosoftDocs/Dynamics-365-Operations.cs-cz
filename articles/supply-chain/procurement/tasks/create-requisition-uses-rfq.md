@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>Vytvoření žádanky používající požadavek na nabídku
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato příručka popisuje postup přidání informací o ceně a dodavateli do nákupní žádanky z procesu požadavku na nabídku. Příklad uvedený v tomto průvodci lze použít u ukázkových dat společnosti USMF, a vy musíte být k dokončení všech kroků přihlášeni jako správce. Úkoly v této příručce obvykle provádí odborníci v oblasti zásobování.
 

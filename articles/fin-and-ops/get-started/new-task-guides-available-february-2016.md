@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="new-task-guides-february-2016"></a>Noví průvodci úkolem (únor 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma obsahuje průvodce záznamem úloh vydané pro knihovny Microsoft BPM k únoru 2016.  Publikované knihovny zahrnují (únor 2016) knihovnu APQC Unified Library for Microsoft Dynamics AX a (únor 2016) příručku Začínáme.
 
@@ -50,8 +49,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Nastavení ověřování párování faktur závazků       | Globální             |
 | Nastavit zásady faktur dodavatele                            | Globální             |
 
- 
 
+ 
 ### <a name="accounts-receivable"></a>Pohledávky
 
 |                                                             |                    |
@@ -71,8 +70,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Kontrola inkasních informací                              | Globální             |
 | Nastavení a generování informací o splatnosti pohledávek   | Globální             |
 
- 
 
+ 
 ### <a name="cash-and-bank-management"></a>Pokladna a banka
 
 |                                                                      |                    |
@@ -99,8 +98,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Vyrovnání postdatovaného šeku od odběratele                             | Globální             |
 | Přehled plateb dodavatele                                              | Globální             |
 
- 
 
+ 
 ### <a name="compliance"></a>Kompatibilita
 
 |                                            |                    |
@@ -108,8 +107,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | **Řádek BPM**                               | **Země/oblast** |
 | Definování zásad auditu pro zdrojové dokumenty | Globální             |
 
- 
 
+ 
 ### <a name="cost-management"></a>Správa nákladů
 
 |                                                                     |                    |
@@ -121,8 +120,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Zobrazení současného NV stavu u výrobní zakázky                       | Globální             |
 | Zobrazení výkazu zásob a KPI podle objektu nákladů                     | Globální             |
 
- 
 
+ 
 ### <a name="countryregion-functionality"></a>Funkce země nebo oblasti
 
 |                                                                                                        |                                 |
@@ -263,8 +262,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | GB-00009 Vytvoření dobropisu pro slevu pro vyrovnání                                               | Spojené království                  |
 | GB-00009 Nastavení parametrů pro dobropis u slevy za včasnou platbu                                   | Spojené království                  |
 
- 
 
+ 
 ### <a name="develop-vision-and-strategy"></a>Vytvoření vize a strategie
 
 |                                                                                          |                    |
@@ -276,8 +275,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Nastavit dotaz jako závislý na odpovědi na předcházející otázku (podmíněné otázky) | Globální             |
 | Výsledek dotazníku podle procenta                                                   | Globální             |
 
- 
 
+ 
 ### <a name="electronic-reporting"></a>Elektronické výkaznictví
 
 |                                                 |                    |
@@ -289,8 +288,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Elektronické vykazování – namapování datového modelu na vybrané zdroje dat      | Globální             |
 | Elektronické vykazování – volba poskytovatele služeb                      | Globální             |
 
- 
 
+ 
 ### <a name="expense-management"></a>Správa výdajů
 
 |                              |                    |
@@ -298,8 +297,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | **Řádek BPM**                 | **Země/oblast** |
 | Konfigurace správy výdajů | Globální             |
 
- 
 
+ 
 ### <a name="fixed-assets"></a>Dlouhodobý majetek
 
 |                                                           |                    |
@@ -321,8 +320,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Rozdělení dlouhodobého majetku                                       | Globální             |
 | Převedení dlouhodobého majetku                                    | Globální             |
 
- 
 
+ 
 ### <a name="general-ledger"></a>Hlavní kniha
 
 |                                                                   |                    |
@@ -354,8 +353,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Zobrazení položek deníku nebo transakcí                              | Globální             |
 | Zobrazení souvisejícího mezipodnikového dokladu z deníku                    | Globální             |
 
- 
 
+ 
 ### <a name="human-capital-management"></a>Správa lidského kapitálu
 
 |                                                                  |                    |
@@ -398,8 +397,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Nastavení zásad nároků na zaměstnanecké výhody                             | Globální             |
 | Nastavení typy dokumentů i9                                     | Globální             |
 
- 
 
+ 
 ### <a name="inventory-management"></a>Řízení zásob
 
 |                                                                                   |                    |
@@ -422,8 +421,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Sledovat zboží nebo suroviny                                                     | Globální             |
 | Převedení fyzických zásoby ve skladu                                  | Globální             |
 
- 
 
+ 
 ### <a name="manufacturing"></a>Výroba
 
 |                                                               |                    |
@@ -474,8 +473,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Převedení materiálu s kanbanovými úlohami                            | Globální             |
 | Ověřit výrobního toku a verze                          | Globální             |
 
- 
 
+ 
 ### <a name="master-planning"></a>Hlavní plánování
 
 |                                                   |                    |
@@ -487,8 +486,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Identifikování kritického materiálu a kapacity dodavatele | Globální             |
 | Ruční úprava prognózy poptávky                 | Globální             |
 
- 
 
+ 
 ### <a name="organization-administration"></a>Správa organizace
 
 |                                           |                    |
@@ -501,8 +500,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Nastavení elektronických podpisů              | Globální             |
 | Nastavení číselných řad pomocí průvodce | Globální             |
 
- 
 
+ 
 ### <a name="planning"></a>Plánování
 
 |                        |                    |
@@ -510,8 +509,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | **Řádek BPM**           | **Země/oblast** |
 | Určení dostupnosti | Globální             |
 
- 
 
+ 
 ### <a name="procurement-and-sourcing"></a>Zásobování a zdroje
 
 |                                                                  |                    |
@@ -525,8 +524,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Vyhledání dodavatelů                                               | Globální             |
 | Nastavit hierarchii kategorií zásobování                          | Globální             |
 
- 
 
+ 
 ### <a name="product-information-and-configuration"></a>Informace o produktu a konfiguraci
 
 |                                                       |                    |
@@ -551,8 +550,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Vydání ..\financial-dimensions\dimension-based product master              | Globální             |
 | Převedení dat pro modely produktu                      | Globální             |
 
- 
 
+ 
 ### <a name="public-sector"></a>Veřejný sektor
 
 |                                                                                         |                    |
@@ -577,8 +576,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Nastavení fondu pro veřejný sektor                                                         | Globální             |
 | Nastavení klasifikace nákupních smluv pro veřejný sektor                             | Globální             |
 
- 
 
+ 
 ### <a name="retail-and-commerce"></a>Maloobchodní a velkoobchodní prodej
 
 |                                                                                           |                    |
@@ -619,8 +618,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Úpravy maloobchodních cen                                                                  | Globální             |
 | Uložení konfigurace pro maloobchodní výkazy                                                | Globální             |
 
- 
 
+ 
 ### <a name="sales"></a>Prodeje
 
 |                                            |                    |
@@ -642,8 +641,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Expedování objednávek jako přímé dodání           | Globální             |
 | Expedování prodejních objednávek bez skladování      | Globální             |
 
- 
 
+ 
 ### <a name="sales-tax"></a>DPH
 
 |                                                    |                    |
@@ -661,8 +660,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Nastavení srážkové daně                             | Globální             |
 | Zobrazit zaúčtované transakce DPH                 | Globální             |
 
- 
 
+ 
 ### <a name="security"></a>Zabezpečení
 
 |                                                         |                    |
@@ -672,8 +671,8 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Identifikace a vyřešení konfliktů v dělení zodpovědnosti | Globální             |
 | Nastavení dělení zodpovědnosti                            | Globální             |
 
- 
 
+ 
 ### <a name="warehouse-and-transportation"></a>Sklad a doprava
 
 |                                                                                   |                    |
@@ -697,9 +696,10 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 | Nastavení dopravců                                                          | Globální             |
 | Použití pracovní plochy plánování vytížení k plánování vytížení a dodávky                       | Globální             |
 
- 
 
+ 
 ## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Průvodci úkolem v knihovně Začínáme (únor 2016)
+
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | **Řádek BPM**                                       | **Země/oblast** |

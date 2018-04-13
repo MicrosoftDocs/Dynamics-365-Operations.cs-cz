@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="process-collection-letters"></a>Zpracování upomínek
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura popisuje způsob tvorby, tisku a zaúčtování upomínek. Tento úkol používá ukázkovou společnost USMF.
 

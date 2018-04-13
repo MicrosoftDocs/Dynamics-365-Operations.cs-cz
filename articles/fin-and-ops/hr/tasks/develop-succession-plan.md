@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="develop-a-succession-plan"></a>Vypracování plánu kariérního postupu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Jak v průběhu času vaše organizace roste a vy zvažujete plánování následnictví, můžete chtít vyhledat osobu, která má podobné dovednosti, jako jiný uživatel.  Mapování dovedností umožňuje analyzovat existující zaměstnance a uchazeče, u kterých chcete zjistit, zda se shodují jejich kvalifikační předpoklady na hodnotného zaměstnance. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

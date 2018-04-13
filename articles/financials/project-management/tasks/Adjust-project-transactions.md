@@ -25,7 +25,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="adjust-project-transactions"></a>Upravit transakce projektu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento průvodce záznamem úloh znázorňuje, jak upravit transakci v projektu. Můžete však upravit transakce projektu současně, nebo vyberte ze seznamu všech transakcí projektu. Tato úloha je obvykle dokončena supervizorem projektu. Tento průvodce záznamem úloh používá sadu dat USSI.
 

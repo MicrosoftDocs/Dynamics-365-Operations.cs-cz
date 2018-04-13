@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-sales-event-kanban-rule"></a>Vytvoření kanbanového pravidla události prodeje
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup se zaměřuje na potřebné nastavení k vytvoření kanbanového pravidla, které se spustí při vytváření prodejní objednávky. Pravidla kanbanové události doplňuje požadavky, které pocházejí z řádků prodejní objednávky. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Je to určeno pro technologa výrobních procesů nebo správce hodnotového proudu, kteří připravují výrobu nového nebo změněného výrobku.
 

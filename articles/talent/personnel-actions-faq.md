@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="personnel-actions-faq"></a>Akce personálu [Nejčastější dotazy]
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Toto téma obsahuje odpovědí na možné otázky, pokud vaše organizace používá akce personálu. Akce personálu jsou další kroky, které je třeba splnit při provádění určité úlohy týkající se personálu. Příklady úloh, které mohou vyžadovat akce personálu, jsou při vytváření nových pozic, úpravě hodnot existující pozice, náboru nových pracovníků, převodu pracovníků, změně kompenzace pracovníka, změně přiřazení pozic nebo udělení výpovědi pracovníkům.
 
@@ -64,9 +64,9 @@ Otevřete libovolnou stránku seznamu akcí personálu a vyberte akci personálu
 Pokud požadavek akce personálu selže, postupujte v řešení chyby a opětovném odeslání žádosti:
 
 > 1. Klikněte v **podokně akcí** na tlačítko **Text chyby**, aby se zobrazil text zprávy s popisem problému.
-
+> 
 > 2. V **podokně akcí** klikněte na tlačítko **Znovu aktivovat**, abyste načetli nejnovější informace o stavu akce personálu zpět ve stavu **Koncept**.
-
+> 
 > 3. Vyřešte chybu a klikněte na možnost **Dokončit** nebo **Odeslat**.
 
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a>Co se stane s akcí personálu používající workflow po dokončení výsledného schválení?

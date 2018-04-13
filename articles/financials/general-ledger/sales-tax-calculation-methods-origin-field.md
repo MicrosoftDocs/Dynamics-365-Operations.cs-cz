@@ -28,10 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Metody výpočtu DPH v poli Zdroj
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Tento článek vysvětluje možnosti v poli Zdroj na stránce Kódy DPH, a postup výpočtu DPH na základě vybrané možnosti pro kód DPH.
 
@@ -53,11 +52,12 @@ Daňový úřad na položku uložil zvláštní cla. Částky cla se před výpo
 -   DPH = 25% s pomocí metody výpočtu procenta z hrubé částky
 
 Pokud je čistá částka 10,00, pak CLO 1 = 1,00 (10,00 x 10 %) a CLO 2 = 2,00 (10,00 x 20 %). Částky budou vypadat následovně: Hrubá částka: Čistá částka + Částka cla 1 + částka cla 2 (10,00 + 1,00 + 2,00) = 13,00 DPH = 13,00 x 25 % = 3,25 Celkové clo a DPH: 1,00 + 2,00 + 3,25 = 6,25 Celková částka: 10,00 + 6,25 = 16,25
+
 | **Poznámka**                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Pro transakci lze použít pouze jeden daňový kód, kde Zdroj = procento z hrubé částky. Je-li více než jeden takový kód daně určen pro transakci, zobrazí se chyba a DPH nemůže být vypočítána. |
 
- 
+
 <a name="percentage-of-sales-tax"></a>Procento DPH
 -----------------------
 
@@ -70,6 +70,7 @@ Použijme následující kódy DPH:
 -   DPH = 25% s pomocí metody Procento z hrubé částky
 
 Čistá částka: 10,00 Clo 1: 10,00 x 10 % = 1,00 Clo 2: 1,00 x 20 % = 0,20 Hrubá částka: 10,00 + 1,00 + 0,20 = 11,20 DPH: 11,20 x 25 % = 2,80 Celkové clo a DPH: 1,00 + 0,20 + 2,80 = 4,00 Celková částka: 10,00 + 4,00 = 14,00
+
 | **Poznámka**                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Při výpočtu daně není možné použít více úrovní daně. Daň nelze vypočítat na základě DPH, které je již vypočteno na základě jiné daně. U transakce lze vypočítat více jednotlivých úrovní daně u kódů daně. |
@@ -79,6 +80,7 @@ Vyberete-li částky za jednotku v poli Zdroj, DPH se vypočítá jako pevná č
 ### <a name="example"></a>Příklad
 
 Kód DPH je nastaven jako: 1,20 USD za jednotku = balení Na řádku prodejní faktury je prodáno 25 balení položky DPH bude vypočtena jako hodnota 25 x 1,20 = 30,00
+
 | **Poznámka**                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Je-li transakce zadána u jiné jednotky než jednotky zadané v kódu prodejní daně, převede se automaticky podle pravidel převodů jednotek, které jsou nastaveny na stránce Převody jednotek. |

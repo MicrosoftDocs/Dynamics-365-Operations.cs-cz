@@ -29,7 +29,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="cost-management-home-page"></a>Domovská stránka správy nákladů
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [Správa nákladů (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) vám umožňuje pracovat s oceněním a účtováním surovin, polotovarů, dokončeného zboží a nedokončené výroby. Je to proces definování, správy a vykazování [skladového účetnictví](cost-object.md) a [účetnictví pro výrobu](bom-calculations.md).
 

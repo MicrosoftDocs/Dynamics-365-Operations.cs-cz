@@ -27,7 +27,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="practice-manager-power-bi-content"></a>Obsah Power BI pro manažery školení
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, co je součástí obsahu pro **manažery školení** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které jsou použity k sestavení obsahu.
 
@@ -118,7 +118,9 @@ V následujících oddílech jsou popsána agregační měření, která se pou�
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Entita: ProjectAccountingCube\_TotalEstimatedCosts 
 **Zdroj dat:** ProjTable
 
-| Klíčové měření agregace       | Pole               | popis |
-|---------------------------------|---------------------|-------------|
+
+|    Klíčové měření agregace    |        Pole        |                                          popis                                           |
+|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
 | Plánované náklady dokončené aktivity | Sum(TotalCostPrice) | Celková nákladová cena v odhadech pro všechny typy transakcí projektu s dokončenými úlohami. |
+
 

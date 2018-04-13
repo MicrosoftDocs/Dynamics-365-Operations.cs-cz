@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="warehouse-configuration"></a>Konfigurace skladu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje konfiguraci skladu. Obsahuje informace o postupu při povolení rozvržení skladu a procesů skladu.
 

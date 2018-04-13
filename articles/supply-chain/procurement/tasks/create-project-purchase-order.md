@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-project-purchase-order"></a>Vytvoření nákupní objednávky projektu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup ukazuje způsob vytváření nákupní objednávky projektu. Tato úloha používá sadu dat USSI.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="pos-hardware-peripherals"></a>Hardwarová periferní zařízení POS
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Maloobchodní moderní pokladní místo (POS) a cloud POS mohou využívat širokou škálu hardwarových periferních zařízení s více rozhraními a možnostmi nasazení pro dosažení různých obchodních scénářů prodejce. 
 

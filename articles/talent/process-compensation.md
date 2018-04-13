@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="process-compensation"></a>Proces kompenzace
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Zpracování kompenzace umožňuje vypočítat částky nové základní kompenzace pro zaměstnance na základě úpravy jmění, cílů zvýšení zásluh a výkonnosti. Teoto téma se věnuje základnímu zpracování toku kompenzace pro plány fixní kompenzace bez faktoringu ve výkonu zaměstnance.
 

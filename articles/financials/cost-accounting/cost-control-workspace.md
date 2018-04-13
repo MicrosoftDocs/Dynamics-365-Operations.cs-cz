@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-control-overview"></a>Přehled řízení nákladů 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Pracovní prostor **Řízení nákladů** je centrálním místem, kde vedoucí pracovníci, kteří jsou zodpovědní za kontrolu objektu nákladů nebo sady objektů nákladů v rámci dimenze nebo napříč dimenzemi (například nákladovými středisky nebo skupinami produktů), mohou přistupovat k sestavám. Sestavy v pracovním prostoru jsou plně spravovány nákladovými účetními, aby rozvržení a data, která se používají k vykazování, byla konzistentní napříč celou organizací.
 

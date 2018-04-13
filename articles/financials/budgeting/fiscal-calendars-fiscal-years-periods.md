@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Fiskální kalendář, fiskální roky a období
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje fiskální kalendáře, fiskální roky a období a způsoby jejich využití pro právnické osoby, dlouhodobý majetek a tvorbu rozpočtu.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Udržování informací o zraněních a onemocněních zaměstnanců
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Doporučuje se nejprve postupovat podle příručky „Určení zranění a onemocnění“ protože některé se zde uplatňují některé údaje. 
 

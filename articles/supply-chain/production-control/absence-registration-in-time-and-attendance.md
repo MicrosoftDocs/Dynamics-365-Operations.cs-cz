@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="absence-registration-in-time-and-attendance"></a>Registrace absence v modulu Čas a docházka
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje koncept absence a vysvětluje, jak pracovat s absencí v modulu Čas a docházka.
 

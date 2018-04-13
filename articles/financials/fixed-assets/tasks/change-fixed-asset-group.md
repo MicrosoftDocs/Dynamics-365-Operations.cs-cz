@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-a-fixed-asset-group"></a>Změna skupiny dlouhodobého majetku
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Dlouhodobý majetek by měl být přiřazen správné skupině dlouhodobého majetku. Skupina dlouhodobého majetku se používá v těchto případech:
 

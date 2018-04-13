@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="validate-a-production-flow-and-version"></a>Ověření výrobního toku a verze
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura popisuje postup při vytvoření nového výrobního toku a první verze pro lean manufacturing. Předpoklady: Musí být definovány výrobní parametry pro Lean manufacturing a jednotky měření pro čas třídy. Je třeba definovat hodnotový proud a skupinu výroby. S koncepty výrobních toků a aktivitami se seznámíte v dokumentaci o Lean manufacturingu. Tato procedura se vztahuje k právnické osobě USMF v ukázkových datech. Avšak mohou být použity jiní právnické osoby za předpokladu, že právnická osoba je nakonfigurována pro Lean manufacturing.
 

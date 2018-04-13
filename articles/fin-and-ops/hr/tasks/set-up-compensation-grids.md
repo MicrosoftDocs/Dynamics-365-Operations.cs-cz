@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-compensation-grids"></a>Nastavit kompenzační mřížky
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kompenzační mřížky umožňují definovat a spravovat struktury plateb pro plány fixní kompenzace. Kompenzační mřížky můžete sdílet mezi několika plány nebo zkopírovat při vytvoření nového plánu kompenzace.  Před vytvořením kompenzační mřížky, je nutné nastavit úrovně a referenční body. V tomto příkladu vytvoříme nový typ třídy kompenzační mřížky pomocí ukázkových dat pro úrovně a referenční body. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 
