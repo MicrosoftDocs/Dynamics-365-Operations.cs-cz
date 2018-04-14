@@ -19,19 +19,16 @@ ms.author: hminzner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 06490f14ed01c3061b20a0e6977746e9fd2a6ffa
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2330939ddd7ccf4555cf1eff1e264c51f779c4eb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="currency-revaluation-in-a-consolidation-company"></a><span data-ttu-id="ea4eb-103">Přecenění měny v konsolidační společnosti</span><span class="sxs-lookup"><span data-stu-id="ea4eb-103">Currency revaluation in a consolidation company</span></span>
 
-[!include[banner](../includes/banner.md)]
-
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ea4eb-104">Při konsolidaci dat z jedné zúčtovací měny na jinou musíte spustit přecenění měny, pokud dojde ke změně směnných kurzů, aby byly správně přehodnoceny zůstatky účtů.</span><span class="sxs-lookup"><span data-stu-id="ea4eb-104">When you consolidate data from one accounting currency to another, you must still run currency revaluation if there is a change in exchange rates, so that your account balances  are correctly revalued.</span></span> <span data-ttu-id="ea4eb-105">Při původní konsolidaci data použijte kartu **Převod měny** k výběru počátečních směnných kurzů pro převod při procesu konsolidace.</span><span class="sxs-lookup"><span data-stu-id="ea4eb-105">When you originally consolidate the data, use the **Currency translation** tab to select the initial exchange rates to for translation during the consolidation process.</span></span> <span data-ttu-id="ea4eb-106">Po zadání nového směnného kurzu (např. v dalším měsíci) je nutné přecenění zůstatků účtů.</span><span class="sxs-lookup"><span data-stu-id="ea4eb-106">After a new exchange rate is entered (for example, in the next month), you must revalue the account balances.</span></span> <span data-ttu-id="ea4eb-107">Nerealizované zisky nebo ztráty jsou pak odpovídajícím způsobem aktualizovány na základě nového směnného kurzu a data.</span><span class="sxs-lookup"><span data-stu-id="ea4eb-107">The unrealized gains or losses are then updated accordingly, based on the new exchange rate and date.</span></span> <span data-ttu-id="ea4eb-108">Následující příklad znázorňuje účetní položky, které jsou vytvořeny během tohoto procesu.</span><span class="sxs-lookup"><span data-stu-id="ea4eb-108">The following example illustrates the accounting entries that are created during the process.</span></span>
 
@@ -52,6 +49,7 @@ ms.lasthandoff: 01/17/2018
 | <span data-ttu-id="ea4eb-126">11. 10. 2015</span><span class="sxs-lookup"><span data-stu-id="ea4eb-126">10/11/2015</span></span> | <span data-ttu-id="ea4eb-127">130100 – Pohledávky</span><span class="sxs-lookup"><span data-stu-id="ea4eb-127">130100 – Accounts Receivable</span></span> | <span data-ttu-id="ea4eb-128">USD</span><span class="sxs-lookup"><span data-stu-id="ea4eb-128">USD</span></span>      | <span data-ttu-id="ea4eb-129">-500</span><span class="sxs-lookup"><span data-stu-id="ea4eb-129">-500</span></span>   |
 
 ## <a name="exchange-rates"></a><span data-ttu-id="ea4eb-130">Směnné kurzy</span><span class="sxs-lookup"><span data-stu-id="ea4eb-130">Exchange rates</span></span>
+
 | <span data-ttu-id="ea4eb-131">Z měny</span><span class="sxs-lookup"><span data-stu-id="ea4eb-131">From currency</span></span> | <span data-ttu-id="ea4eb-132">Do měny</span><span class="sxs-lookup"><span data-stu-id="ea4eb-132">To currency</span></span> | <span data-ttu-id="ea4eb-133">Počáteční datum</span><span class="sxs-lookup"><span data-stu-id="ea4eb-133">Start date</span></span> | <span data-ttu-id="ea4eb-134">Směnný kurz</span><span class="sxs-lookup"><span data-stu-id="ea4eb-134">Exchange rate</span></span> |
 |---------------|-------------|------------|---------------|
 | <span data-ttu-id="ea4eb-135">EUR</span><span class="sxs-lookup"><span data-stu-id="ea4eb-135">EUR</span></span>           | <span data-ttu-id="ea4eb-136">USD</span><span class="sxs-lookup"><span data-stu-id="ea4eb-136">USD</span></span>         | <span data-ttu-id="ea4eb-137">1. 10. 2015</span><span class="sxs-lookup"><span data-stu-id="ea4eb-137">10/1/2015</span></span>  | <span data-ttu-id="ea4eb-138">200</span><span class="sxs-lookup"><span data-stu-id="ea4eb-138">200</span></span>           |

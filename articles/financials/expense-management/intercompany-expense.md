@@ -19,16 +19,16 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 9a5e06d01449492818decff23c45ba5c808a102d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 861230dd08de570c451c8495bad91f9a4aef3691
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="intercompany-expenses"></a><span data-ttu-id="9d433-104">Mezipodnikové výdaje</span><span class="sxs-lookup"><span data-stu-id="9d433-104">Intercompany expenses</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="9d433-105">Pracovník, který je zaměstnán jednou právnickou osobou v jedné organizaci, může provádět práci pro jinou právnickou osobu v rámci stejné organizace.</span><span class="sxs-lookup"><span data-stu-id="9d433-105">A worker who is employed by one legal entity in an organization might perform work for another legal entity in the same organization.</span></span> <span data-ttu-id="9d433-106">V takové situaci můžete použít funkci mezipodnikových výdajů přiřazení pro přiřazení výdajů pracovníka k právnické osobě, pro kterou byla práce prováděna.</span><span class="sxs-lookup"><span data-stu-id="9d433-106">In this situation, you can use the intercompany expense feature to assign the worker’s expenses to the legal entity for which the work was performed.</span></span> <span data-ttu-id="9d433-107">Právnická osoba, která pracovníka zaměstnává, se nazývá půjčující právnická osoba.</span><span class="sxs-lookup"><span data-stu-id="9d433-107">The legal entity that employs the worker is called the loaning legal entity.</span></span> <span data-ttu-id="9d433-108">Právnická osoba, vůči které pracovník uplatňuje výdaje, se nazývá vypůjčující právnická osoba.</span><span class="sxs-lookup"><span data-stu-id="9d433-108">The legal entity for which the worker incurs expenses is called the borrowing legal entity.</span></span> 
 

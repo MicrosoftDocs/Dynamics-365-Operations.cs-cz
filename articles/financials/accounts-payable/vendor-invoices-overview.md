@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 3d02b2ee0ee748546158bce1094d2b343afef7c5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 82370fffe9c296ef77f3b15929a9028bcac77677
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vendor-invoices-overview"></a><span data-ttu-id="26611-105">Přehled faktur dodavatele</span><span class="sxs-lookup"><span data-stu-id="26611-105">Vendor invoices overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="26611-106">V tomto článku jsou obecné informace o fakturách dodavatele.</span><span class="sxs-lookup"><span data-stu-id="26611-106">This article provides general information about vendor invoices.</span></span> <span data-ttu-id="26611-107">Faktury dodavatele jsou požadavky na zaplacení za přijaté produkty a služby.</span><span class="sxs-lookup"><span data-stu-id="26611-107">Vendor invoices are requests for payment for products and services that were received.</span></span> <span data-ttu-id="26611-108">Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb.</span><span class="sxs-lookup"><span data-stu-id="26611-108">Vendor invoices can represent a bill for ongoing services, or they can be based on purchase orders for specific items and services.</span></span> 
 
@@ -87,11 +86,11 @@ ms.lasthandoff: 01/17/2018
  - [<span data-ttu-id="26611-170">Nastavení zásad faktur dodavatele</span><span class="sxs-lookup"><span data-stu-id="26611-170">Set up vendor invoice policies</span></span>](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
 
  - [<span data-ttu-id="26611-171">Zadání dat faktury do závazků s použitím faktury dodavatele</span><span class="sxs-lookup"><span data-stu-id="26611-171">Key invoice data into accounts payable using a vendor invoice</span></span>](tasks/key-invoice-data-ap-system-vendor-invoice.md)
- 
+
  - [<span data-ttu-id="26611-172">Zadání dat faktury do závazků s použitím deníku schválení</span><span class="sxs-lookup"><span data-stu-id="26611-172">Key invoice data into accounts payable using an approval journal</span></span>](tasks/key-invoice-data-into-ap-system-approval-journal.md)
-  
+
  - [<span data-ttu-id="26611-173">Zadání dat faktury do systému závazků s použitím evidence faktur</span><span class="sxs-lookup"><span data-stu-id="26611-173">Key invoice data into the AP system using invoice pool</span></span>](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
- 
+
  - [<span data-ttu-id="26611-174">Zaznamenání faktury dodavatele do deníku faktur</span><span class="sxs-lookup"><span data-stu-id="26611-174">Record a vendor invoice in the invoice journal</span></span>](tasks/record-vendor-invoice-invoice-journal.md)
 
 

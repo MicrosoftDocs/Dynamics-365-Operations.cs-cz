@@ -18,17 +18,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 445c639dc56a5d240f4e35353276ef893f2137da
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="keyboard-shortcuts"></a><span data-ttu-id="ad88a-103">Klávesové zkratky</span><span class="sxs-lookup"><span data-stu-id="ad88a-103">Keyboard shortcuts</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ad88a-104">Následující klávesové zkratky platí v celé aplikaci Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="ad88a-104">The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations.</span></span> 
 
@@ -39,6 +38,7 @@ ms.lasthandoff: 03/26/2018
 
 
 ## <a name="action-shortcuts"></a><span data-ttu-id="ad88a-111">Zkratky akcí</span><span class="sxs-lookup"><span data-stu-id="ad88a-111">Action shortcuts</span></span>
+
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | <span data-ttu-id="ad88a-112">**Akce**</span><span class="sxs-lookup"><span data-stu-id="ad88a-112">**To do this**</span></span>                                    | <span data-ttu-id="ad88a-113">**Stisknout**</span><span class="sxs-lookup"><span data-stu-id="ad88a-113">**Press**</span></span>                        |
@@ -55,6 +55,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="ad88a-134">Zobrazit aktuálně dostupné klávesové zkratky</span><span class="sxs-lookup"><span data-stu-id="ad88a-134">View currently available shortcuts</span></span>                | <span data-ttu-id="ad88a-135">Alt+Shift+K</span><span class="sxs-lookup"><span data-stu-id="ad88a-135">Alt+Shift+K</span></span>                      |                              
 
 ## <a name="date-picker-shortcuts"></a><span data-ttu-id="ad88a-136">Zkratky pro výběr data</span><span class="sxs-lookup"><span data-stu-id="ad88a-136">Date picker shortcuts</span></span>
+
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | <span data-ttu-id="ad88a-137">**Akce**</span><span class="sxs-lookup"><span data-stu-id="ad88a-137">**To do this**</span></span>                        | <span data-ttu-id="ad88a-138">**Stisknout**</span><span class="sxs-lookup"><span data-stu-id="ad88a-138">**Press**</span></span>                                 |
@@ -68,6 +69,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="ad88a-153">Výběr Nikdy (nebo maximální datum)</span><span class="sxs-lookup"><span data-stu-id="ad88a-153">Pick Never (or the max date)</span></span>          | <span data-ttu-id="ad88a-154">Z</span><span class="sxs-lookup"><span data-stu-id="ad88a-154">N</span></span>                                         |
 
 ## <a name="factbox-shortcuts"></a><span data-ttu-id="ad88a-155">Zkratky pro okno s fakty</span><span class="sxs-lookup"><span data-stu-id="ad88a-155">FactBox shortcuts</span></span>
+
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | <span data-ttu-id="ad88a-156">**Akce**</span><span class="sxs-lookup"><span data-stu-id="ad88a-156">**To do this**</span></span>                                                                  | <span data-ttu-id="ad88a-157">**Stisknout**</span><span class="sxs-lookup"><span data-stu-id="ad88a-157">**Press**</span></span>                                 |
@@ -79,6 +81,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="ad88a-168">Sbalení aktuálního okna s fakty</span><span class="sxs-lookup"><span data-stu-id="ad88a-168">Collapse the current FactBox</span></span>                                                    | <span data-ttu-id="ad88a-169">Alt+0</span><span class="sxs-lookup"><span data-stu-id="ad88a-169">Alt+0</span></span>                                     |
 
 ## <a name="filtering-shortcuts"></a><span data-ttu-id="ad88a-170">Zkratky pro filtrování</span><span class="sxs-lookup"><span data-stu-id="ad88a-170">Filtering shortcuts</span></span>
+
 |                                    |                          |
 |------------------------------------|--------------------------|
 | <span data-ttu-id="ad88a-171">**Akce**</span><span class="sxs-lookup"><span data-stu-id="ad88a-171">**To do this**</span></span>                     | <span data-ttu-id="ad88a-172">**Stisknout**</span><span class="sxs-lookup"><span data-stu-id="ad88a-172">**Press**</span></span>                |
@@ -89,6 +92,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="ad88a-181">Otevření pokročilého filtrování a řazení</span><span class="sxs-lookup"><span data-stu-id="ad88a-181">Open advanced filtering/sort</span></span>                                      | <span data-ttu-id="ad88a-182">Ctrl+Shift+F3</span><span class="sxs-lookup"><span data-stu-id="ad88a-182">Ctrl+Shift+F3</span></span>            | 
 
 ## <a name="form-shortcuts"></a><span data-ttu-id="ad88a-183">Zkratky pro formulář</span><span class="sxs-lookup"><span data-stu-id="ad88a-183">Form shortcuts</span></span>
+
 |                                                     |                   |
 |-----------------------------------------------------|-------------------|
 | <span data-ttu-id="ad88a-184">**Akce**</span><span class="sxs-lookup"><span data-stu-id="ad88a-184">**To do this**</span></span>                                      | <span data-ttu-id="ad88a-185">**Stisknout**</span><span class="sxs-lookup"><span data-stu-id="ad88a-185">**Press**</span></span>         |
@@ -110,6 +114,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="ad88a-216">Zavření formuláře a odstranění neuložených změn</span><span class="sxs-lookup"><span data-stu-id="ad88a-216">Close the form discarding any unsaved changes</span></span>       | <span data-ttu-id="ad88a-217">Alt+Shift+Q</span><span class="sxs-lookup"><span data-stu-id="ad88a-217">Alt+Shift+Q</span></span>       |
 
 ## <a name="form-navigation-shortcuts"></a><span data-ttu-id="ad88a-218">Zkratky pro formulář navigace</span><span class="sxs-lookup"><span data-stu-id="ad88a-218">Form navigation shortcuts</span></span>
+
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | <span data-ttu-id="ad88a-219">**Akce**</span><span class="sxs-lookup"><span data-stu-id="ad88a-219">**To do this**</span></span>                                      | <span data-ttu-id="ad88a-220">**Stisknout**</span><span class="sxs-lookup"><span data-stu-id="ad88a-220">**Press**</span></span>                                    |
@@ -128,6 +133,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="ad88a-245">Přepnout na zobrazení řádků</span><span class="sxs-lookup"><span data-stu-id="ad88a-245">Switch to lines view</span></span>                                | <span data-ttu-id="ad88a-246">Ctrl+Shift+L</span><span class="sxs-lookup"><span data-stu-id="ad88a-246">Ctrl+Shift+L</span></span>                                 |
 
 ## <a name="grid-shortcuts"></a><span data-ttu-id="ad88a-247">Zkratky mřížky</span><span class="sxs-lookup"><span data-stu-id="ad88a-247">Grid shortcuts</span></span>
+
 |                                                                                                                        |                                 |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | <span data-ttu-id="ad88a-248">**Akce**</span><span class="sxs-lookup"><span data-stu-id="ad88a-248">**To do this**</span></span>                                                                                                         | <span data-ttu-id="ad88a-249">**Stisknout**</span><span class="sxs-lookup"><span data-stu-id="ad88a-249">**Press**</span></span>                       |
@@ -148,6 +154,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="ad88a-283">Otevřít filtrování mřížky pro aktuální sloupec (s výběrem v řádku záhlaví)</span><span class="sxs-lookup"><span data-stu-id="ad88a-283">Open grid filtering for the current column (with focus in the header row)</span></span>                                              | <span data-ttu-id="ad88a-284">Zadat</span><span class="sxs-lookup"><span data-stu-id="ad88a-284">Enter</span></span>                           |
 
 ## <a name="input-control-shortcuts"></a><span data-ttu-id="ad88a-285">Zkratky pro ovládání vstupu</span><span class="sxs-lookup"><span data-stu-id="ad88a-285">Input control shortcuts</span></span>
+
 |                                                                              |                               |
 |------------------------------------------------------------------------------|-------------------------------|
 | <span data-ttu-id="ad88a-286">**Akce**</span><span class="sxs-lookup"><span data-stu-id="ad88a-286">**To do this**</span></span>                                                               | <span data-ttu-id="ad88a-287">**Stisknout**</span><span class="sxs-lookup"><span data-stu-id="ad88a-287">**Press**</span></span>                     |
@@ -163,6 +170,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="ad88a-306">Změnit výběr mezi oblastí textu a panelem nástrojů v ovládacím prvku editoru HTML</span><span class="sxs-lookup"><span data-stu-id="ad88a-306">Switch focus between the text area and the toolbar in an HTML editor control</span></span> | <span data-ttu-id="ad88a-307">F6</span><span class="sxs-lookup"><span data-stu-id="ad88a-307">F6</span></span>                            |
 
 ## <a name="messaging-shortcuts"></a><span data-ttu-id="ad88a-308">Zkratky pro zasílání zpráv</span><span class="sxs-lookup"><span data-stu-id="ad88a-308">Messaging shortcuts</span></span>
+
 |                          |               |
 |--------------------------|---------------|
 | <span data-ttu-id="ad88a-309">**Akce**</span><span class="sxs-lookup"><span data-stu-id="ad88a-309">**To do this**</span></span>           | <span data-ttu-id="ad88a-310">**Stisknout**</span><span class="sxs-lookup"><span data-stu-id="ad88a-310">**Press**</span></span>     |
@@ -170,6 +178,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="ad88a-313">Přechod na panel zpráv</span><span class="sxs-lookup"><span data-stu-id="ad88a-313">Go to the Message Bar</span></span>    | <span data-ttu-id="ad88a-314">Ctrl+F7</span><span class="sxs-lookup"><span data-stu-id="ad88a-314">Ctrl+F7</span></span>       |
 
 ## <a name="navigation-shortcuts"></a><span data-ttu-id="ad88a-315">Zkratky pro navigaci</span><span class="sxs-lookup"><span data-stu-id="ad88a-315">Navigation shortcuts</span></span>
+
 |                                                                               |                            |
 |-------------------------------------------------------------------------------|----------------------------|
 | <span data-ttu-id="ad88a-316">**Akce**</span><span class="sxs-lookup"><span data-stu-id="ad88a-316">**To do this**</span></span>                                                                | <span data-ttu-id="ad88a-317">**Stisknout**</span><span class="sxs-lookup"><span data-stu-id="ad88a-317">**Press**</span></span>                  |
@@ -191,6 +200,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="ad88a-348">Přesun do okna s fakty (může zahrnovat jeho otevření)</span><span class="sxs-lookup"><span data-stu-id="ad88a-348">Move to the FactBox pane (which may include opening it)</span></span>                       | <span data-ttu-id="ad88a-349">Alt+M,B nebo Ctrl+F2</span><span class="sxs-lookup"><span data-stu-id="ad88a-349">Alt+M,B or Ctrl+F2</span></span>         |
 
 ## <a name="personalization-shortcuts"></a><span data-ttu-id="ad88a-350">Individuální nastavení klávesových zkratek</span><span class="sxs-lookup"><span data-stu-id="ad88a-350">Personalization shortcuts</span></span>
+
 |                                                                                                                        |                                     |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | <span data-ttu-id="ad88a-351">**Akce**</span><span class="sxs-lookup"><span data-stu-id="ad88a-351">**To do this**</span></span>                                                                                                         | <span data-ttu-id="ad88a-352">**Stisknout**</span><span class="sxs-lookup"><span data-stu-id="ad88a-352">**Press**</span></span>                           |
@@ -219,6 +229,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="ad88a-397">Opuštění režimu přizpůsobení (v režimu přizpůsobení)</span><span class="sxs-lookup"><span data-stu-id="ad88a-397">Exit personalization mode (when in personalization mode)</span></span>                                                               | <span data-ttu-id="ad88a-398">Esc</span><span class="sxs-lookup"><span data-stu-id="ad88a-398">Esc</span></span>                                 |
 
 ## <a name="segmented-entry-shortcuts"></a><span data-ttu-id="ad88a-399">Zkratky pro segmentované zadání</span><span class="sxs-lookup"><span data-stu-id="ad88a-399">Segmented entry shortcuts</span></span>
+
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | <span data-ttu-id="ad88a-400">**Akce**</span><span class="sxs-lookup"><span data-stu-id="ad88a-400">**To do this**</span></span>                                                                                                          | <span data-ttu-id="ad88a-401">**Stisknout**</span><span class="sxs-lookup"><span data-stu-id="ad88a-401">**Press**</span></span>                        |

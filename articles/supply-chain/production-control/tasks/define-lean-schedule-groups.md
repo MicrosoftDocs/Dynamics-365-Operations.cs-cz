@@ -17,15 +17,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3e07fa270b47be3527c572dc53ca30a7bcde5ba6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 50435f858524013c3b0e67939bd29ab18b4272b0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="define-lean-schedule-groups"></a><span data-ttu-id="6c90c-103">Definování skupin štíhlého plánu</span><span class="sxs-lookup"><span data-stu-id="6c90c-103">Define lean schedule groups</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="6c90c-104">Skupiny štíhlého plánu jsou definovány pro rozdělení do skupin a rozlišení produkty v plánování kanbanu.</span><span class="sxs-lookup"><span data-stu-id="6c90c-104">Lean schedule groups are defined to group and distinguish products in kanban scheduling.</span></span> <span data-ttu-id="6c90c-105">Seskupení lze provést jako obecné přidružení společností nebo jako specifické k pracovní buňce.</span><span class="sxs-lookup"><span data-stu-id="6c90c-105">The grouping can be done as generic association per company or specific to a work cell.</span></span> <span data-ttu-id="6c90c-106">Každá skupina má barevný kód přiřazeny pro vizuální označení na stránce se seznamem plánování kanbanu.</span><span class="sxs-lookup"><span data-stu-id="6c90c-106">Each group has a color code assigned for visual indication in the kanban scheduling list page.</span></span> <span data-ttu-id="6c90c-107">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="6c90c-107">The demo data company used to create this procedure is USMF.</span></span>
 

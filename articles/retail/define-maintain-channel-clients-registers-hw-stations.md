@@ -20,17 +20,16 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: c0c130a8e13197bc8e29bcc9b0234a1e957a447e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2bc302c83affbee4ce9d0ab8441cfca61d5d8335
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a><span data-ttu-id="563f1-103">Definování a správa klientů z obchodních kanálů, pokladen a hardwarových stanic</span><span class="sxs-lookup"><span data-stu-id="563f1-103">Define and maintain channel clients, registers, and hardware stations</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="563f1-104">Toto téma popisuje postup připojení periferních zařízení k vaší pokladně POS.</span><span class="sxs-lookup"><span data-stu-id="563f1-104">This topic covers how to connect peripherals to your Retail POS.</span></span>
 

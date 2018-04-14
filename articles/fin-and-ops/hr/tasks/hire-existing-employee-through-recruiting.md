@@ -16,15 +16,15 @@ ms.author: rschloma
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5dfe5c25b299284267bed91d58e0acefb7250570
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: dd8c3355ac63373768292e1623ad6c771ec5ee1c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="hire-an-existing-employee-through-recruiting"></a><span data-ttu-id="ead92-103">Najmutí existujícího zaměstnance prostřednictvím náboru</span><span class="sxs-lookup"><span data-stu-id="ead92-103">Hire an existing employee through recruiting</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ead92-104">Otevřené pozice mohou někdy zaplnit kandidáti, kteří jsou již zaměstnanci ve vaší organizaci.</span><span class="sxs-lookup"><span data-stu-id="ead92-104">Sometimes open positions can be filled by candidates who are already employees in your organization.</span></span> <span data-ttu-id="ead92-105">Tento postup vás provede kroky zařazení existujícího zaměstnance prostřednictvím procesu náboru.</span><span class="sxs-lookup"><span data-stu-id="ead92-105">This procedure walks through the steps of hiring an existing employee through the recruiting process.</span></span> <span data-ttu-id="ead92-106">V tomto postupu je již nastaven náborový projekt a existující zaměstnanec již odeslal přihlášku týkající se daného náborového projektu.</span><span class="sxs-lookup"><span data-stu-id="ead92-106">In this procedure, a recruitment project has already been set up, and an existing employee has already submitted an application for the recruitment project.</span></span> <span data-ttu-id="ead92-107">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="ead92-107">The demo data company used to create this procedure is USMF.</span></span>
 

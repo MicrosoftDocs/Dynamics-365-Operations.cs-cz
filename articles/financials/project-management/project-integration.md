@@ -19,16 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4a3445417d5ae88e2ff3676962a82921a7ab475d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d412c60f22347a38e38ca5f2c5515bd132814f25
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="microsoft-project-client-integration"></a><span data-ttu-id="a3354-104">Klientská integrace aplikace Microsoft Project</span><span class="sxs-lookup"><span data-stu-id="a3354-104">Microsoft Project client integration</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a3354-105">Plánování a údržba plánu projektu může být složitá. Projektoví manažeři proto potřebují používat nástroje, které jim pomohou spravovat tento úkol.</span><span class="sxs-lookup"><span data-stu-id="a3354-105">Planning and maintaining a project schedule can be complex, so project managers need to use tools that help them manage this task.</span></span> <span data-ttu-id="a3354-106">Integrace s klientem Microsoft Project poskytuje podporu pro otevření a správu strukturovaného rozpisu prací na projektu.</span><span class="sxs-lookup"><span data-stu-id="a3354-106">Integration with Microsoft Project Client provides support to open and manage a project work breakdown structure.</span></span> <span data-ttu-id="a3354-107">Projektový manažer může publikovat jakékoliv změny zpět do strukturovaného rozpisu prací na projektu aplikace Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="a3354-107">The project manager can publish any changes back to the Finance and Operations project work breakdown structure.</span></span>
 

@@ -18,16 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 7f378db8390c638a6259cae767cfc9fab20a3c77
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0442cb1ebd4141211102d18038535f220b6f979a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="sales-tax-reporting-for-the-czech-republic"></a><span data-ttu-id="9dc66-103">Vykazování daně z prodeje pro Českou republiku</span><span class="sxs-lookup"><span data-stu-id="9dc66-103">Sales tax reporting for the Czech Republic</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="9dc66-104">Toto téma uvádí informace o tom, jak se vypočítává a zaúčtovává daň z přidané hodnoty (DPH) pro Českou republiku.</span><span class="sxs-lookup"><span data-stu-id="9dc66-104">This topic provides information about how intra-community value-added tax (VAT) is calculated and posted for the Czech Republic.</span></span> 
 

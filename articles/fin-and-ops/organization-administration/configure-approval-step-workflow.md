@@ -18,17 +18,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d2fc157b54401463bbabf1e3f6d5dddc6bda9631
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c142534e9e5b5f154f478889d13540dc3d47ad18
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-an-approval-step-in-a-workflow"></a><span data-ttu-id="8cb72-103">Konfigurace schvalovacího kroku ve workflowu</span><span class="sxs-lookup"><span data-stu-id="8cb72-103">Configure an approval step in a workflow</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="8cb72-104">Toto téma vysvětluje, jak nakonfigurovat vlastnosti schvalovacího kroku.</span><span class="sxs-lookup"><span data-stu-id="8cb72-104">This topic explains how to configure the properties of an approval step.</span></span>
 
@@ -145,9 +144,9 @@ ms.lasthandoff: 11/03/2017
     <span data-ttu-id="8cb72-192">Pokud uživatel u dokumentu neprovede akci v přiděleném čase, dokument bude v prodlení.</span><span class="sxs-lookup"><span data-stu-id="8cb72-192">If the user doesn't take action on the document in the allotted time, the document is overdue.</span></span> <span data-ttu-id="8cb72-193">Dokument v prodlení je eskalován na základě možností vybraných v oblasti stránky **Eskalace**.</span><span class="sxs-lookup"><span data-stu-id="8cb72-193">A document that is overdue is escalated, based on the options that you select in the **Escalation** area of the page.</span></span>
 4.  <span data-ttu-id="8cb72-194">Jestliže přiřadíte schvalovací krok více uživatelům nebo skupině uživatelů na kartě **Zásada dokončení**, vyberte jednu z následujících možností:</span><span class="sxs-lookup"><span data-stu-id="8cb72-194">If you assigned the approval step to multiple users or a group of users, on the **Completion policy** tab, select one of the following options:</span></span>
     -   <span data-ttu-id="8cb72-195">**Jednotlivý schvalovatel** – akce použitá pro dokument je určena první reagující osobou.</span><span class="sxs-lookup"><span data-stu-id="8cb72-195">**Single approver** – The action that is applied to the document is determined by the first person who responds.</span></span> <span data-ttu-id="8cb72-196">Například Sam odeslal vyúčtování výdajů ve výši 15 000 USD.</span><span class="sxs-lookup"><span data-stu-id="8cb72-196">For example, Sam has submitted an expense report for USD 15,000.</span></span> <span data-ttu-id="8cb72-197">Vyúčtování výdajů je aktuálně přiřazeno uživatelům Sue, Jo a Bill.</span><span class="sxs-lookup"><span data-stu-id="8cb72-197">The expense report is currently assigned to Sue, Jo, and Bill.</span></span> <span data-ttu-id="8cb72-198">Pokud je Sue první osobou reagující na dokument, je akce, kterou provede, použita pro dokument.</span><span class="sxs-lookup"><span data-stu-id="8cb72-198">If Sue is the first person who responds to the document, the action that she takes is applied to the document.</span></span> <span data-ttu-id="8cb72-199">Jestliže ho Sue odmítne, je dokument zamítnut a odeslán zpět Samovi.</span><span class="sxs-lookup"><span data-stu-id="8cb72-199">If Sue rejects the document, it's rejected and sent back to Sam.</span></span> <span data-ttu-id="8cb72-200">Jakmile Sue dokument schválí, je odeslán Anně ke schválení.</span><span class="sxs-lookup"><span data-stu-id="8cb72-200">If Sue approves the document, it's sent to Ann for approval.</span></span> 
-    
+
     ![Workflow se schvalovacím procesem](./media/workflow_multipleusersinstep.gif)
-    
+
     -   <span data-ttu-id="8cb72-202">**Většina schvalovatelů** – akce použitá pro dokument je určena, když reaguje většina schvalujících.</span><span class="sxs-lookup"><span data-stu-id="8cb72-202">**Majority of approvers** – The action that is applied to the document is determined when most of the approvers respond.</span></span> <span data-ttu-id="8cb72-203">Například Sam odeslal vyúčtování výdajů ve výši 15 000 USD.</span><span class="sxs-lookup"><span data-stu-id="8cb72-203">For example, Sam has submitted an expense report for USD 15,000.</span></span> <span data-ttu-id="8cb72-204">Vyúčtování výdajů je aktuálně přiřazeno uživatelům Sue, Jo a Bill.</span><span class="sxs-lookup"><span data-stu-id="8cb72-204">The expense report is currently assigned to Sue, Jo, and Bill.</span></span> <span data-ttu-id="8cb72-205">Akci použitou pro dokument určují první dva schvalující, kteří reagují, tedy Sue a Jo.</span><span class="sxs-lookup"><span data-stu-id="8cb72-205">If Sue and Jo are the first two approvers who respond, the action that they take is applied to the document.</span></span>
         -   <span data-ttu-id="8cb72-206">Jestliže Sue dokument schválí a Jo ho zamítne, je dokument zamítnut a odeslán zpět Samovi.</span><span class="sxs-lookup"><span data-stu-id="8cb72-206">If Sue approves the document, but Jo rejects it, the document is rejected and sent back to Sam.</span></span>
         -   <span data-ttu-id="8cb72-207">Jestliže Sue i Jo dokument schválí, je dokument odeslán Anně ke schválení.</span><span class="sxs-lookup"><span data-stu-id="8cb72-207">If both Sue and Jo approve the document, it's sent to Ann for approval.</span></span>

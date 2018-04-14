@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 506ca3aac7ad271ca7472f3b74627e94d97a74ee
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6ca65d3c12abd64bef23954b45f73af1bf62f9f3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="reduction-keys"></a><span data-ttu-id="1aee6-105">Redukční klíče</span><span class="sxs-lookup"><span data-stu-id="1aee6-105">Reduction keys</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="1aee6-106">Tento článek obsahuje příklady nastavení redukčního klíče.</span><span class="sxs-lookup"><span data-stu-id="1aee6-106">This articles provides examples that show how to set up a reduction key.</span></span> <span data-ttu-id="1aee6-107">Obsahuje informace týkající se různého nastavení redukčního klíče a výsledky každého z nich.</span><span class="sxs-lookup"><span data-stu-id="1aee6-107">It includes information about the various reduction key settings and the results of each.</span></span> <span data-ttu-id="1aee6-108">Redukční klíč slouží k definování způsobu snížení požadavků prognózy.</span><span class="sxs-lookup"><span data-stu-id="1aee6-108">You can use a reduction key to define how to reduce forecast requirements.</span></span>
 
@@ -39,17 +38,19 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="1aee6-110">Tento příklad ukazuje, jak redukční klíč snižuje požadavky na prognózu podle procent a období, které jsou definovány podle redukčního klíče.</span><span class="sxs-lookup"><span data-stu-id="1aee6-110">This example shows how a reduction key reduces demand forecast requirements according to the percentages and periods that are defined by the reduction key.</span></span>
 
-1.  <span data-ttu-id="1aee6-111">Na stránce **Redukční klíče** nastavte následující řádky.</span><span class="sxs-lookup"><span data-stu-id="1aee6-111">On the **Reduction keys** page, set up the following lines.</span></span>
-    | <span data-ttu-id="1aee6-112">Vrácená hotovost</span><span class="sxs-lookup"><span data-stu-id="1aee6-112">Change</span></span> | <span data-ttu-id="1aee6-113">Jednotka</span><span class="sxs-lookup"><span data-stu-id="1aee6-113">Unit</span></span>  | <span data-ttu-id="1aee6-114">Procento</span><span class="sxs-lookup"><span data-stu-id="1aee6-114">Percent</span></span> |
-    |--------|-------|---------|
-    | <span data-ttu-id="1aee6-115">1</span><span class="sxs-lookup"><span data-stu-id="1aee6-115">1</span></span>      | <span data-ttu-id="1aee6-116">Měsíc</span><span class="sxs-lookup"><span data-stu-id="1aee6-116">Month</span></span> | <span data-ttu-id="1aee6-117">100</span><span class="sxs-lookup"><span data-stu-id="1aee6-117">100</span></span>     |
-    | <span data-ttu-id="1aee6-118">2</span><span class="sxs-lookup"><span data-stu-id="1aee6-118">2</span></span>      | <span data-ttu-id="1aee6-119">Měsíc</span><span class="sxs-lookup"><span data-stu-id="1aee6-119">Month</span></span> | <span data-ttu-id="1aee6-120">75</span><span class="sxs-lookup"><span data-stu-id="1aee6-120">75</span></span>      |
-    | <span data-ttu-id="1aee6-121">3</span><span class="sxs-lookup"><span data-stu-id="1aee6-121">3</span></span>      | <span data-ttu-id="1aee6-122">Měsíc</span><span class="sxs-lookup"><span data-stu-id="1aee6-122">Month</span></span> | <span data-ttu-id="1aee6-123">50</span><span class="sxs-lookup"><span data-stu-id="1aee6-123">50</span></span>      |
-    | <span data-ttu-id="1aee6-124">4</span><span class="sxs-lookup"><span data-stu-id="1aee6-124">4</span></span>      | <span data-ttu-id="1aee6-125">Měsíc</span><span class="sxs-lookup"><span data-stu-id="1aee6-125">Month</span></span> | <span data-ttu-id="1aee6-126">25</span><span class="sxs-lookup"><span data-stu-id="1aee6-126">25</span></span>      |
+1. <span data-ttu-id="1aee6-111">Na stránce **Redukční klíče** nastavte následující řádky.</span><span class="sxs-lookup"><span data-stu-id="1aee6-111">On the **Reduction keys** page, set up the following lines.</span></span>
 
-2.  <span data-ttu-id="1aee6-127">Propojte redukční klíč se skupinou disponibility položky.</span><span class="sxs-lookup"><span data-stu-id="1aee6-127">Link the reduction key to the item's coverage group.</span></span>
-3.  <span data-ttu-id="1aee6-128">Na stránce **Hlavní plány**v poli **Metoda redukce** vyberte **Procento – redukční klíč**.</span><span class="sxs-lookup"><span data-stu-id="1aee6-128">On the **Master plans** page, in the **Reduction principle** field, select **Percent - reduction key**.</span></span>
-4.  <span data-ttu-id="1aee6-129">Vytvořte prognózu poptávky pro 1000 kusů za měsíc.</span><span class="sxs-lookup"><span data-stu-id="1aee6-129">Create a demand forecast of 1,000 pieces per month.</span></span>
+   | <span data-ttu-id="1aee6-112">Vrácená hotovost</span><span class="sxs-lookup"><span data-stu-id="1aee6-112">Change</span></span> | <span data-ttu-id="1aee6-113">Jednotka</span><span class="sxs-lookup"><span data-stu-id="1aee6-113">Unit</span></span>  | <span data-ttu-id="1aee6-114">Procento</span><span class="sxs-lookup"><span data-stu-id="1aee6-114">Percent</span></span> |
+   |--------|-------|---------|
+   |   <span data-ttu-id="1aee6-115">1</span><span class="sxs-lookup"><span data-stu-id="1aee6-115">1</span></span>    | <span data-ttu-id="1aee6-116">Měsíc</span><span class="sxs-lookup"><span data-stu-id="1aee6-116">Month</span></span> |   <span data-ttu-id="1aee6-117">100</span><span class="sxs-lookup"><span data-stu-id="1aee6-117">100</span></span>   |
+   |   <span data-ttu-id="1aee6-118">2</span><span class="sxs-lookup"><span data-stu-id="1aee6-118">2</span></span>    | <span data-ttu-id="1aee6-119">Měsíc</span><span class="sxs-lookup"><span data-stu-id="1aee6-119">Month</span></span> |   <span data-ttu-id="1aee6-120">75</span><span class="sxs-lookup"><span data-stu-id="1aee6-120">75</span></span>    |
+   |   <span data-ttu-id="1aee6-121">3</span><span class="sxs-lookup"><span data-stu-id="1aee6-121">3</span></span>    | <span data-ttu-id="1aee6-122">Měsíc</span><span class="sxs-lookup"><span data-stu-id="1aee6-122">Month</span></span> |   <span data-ttu-id="1aee6-123">50</span><span class="sxs-lookup"><span data-stu-id="1aee6-123">50</span></span>    |
+   |   <span data-ttu-id="1aee6-124">4</span><span class="sxs-lookup"><span data-stu-id="1aee6-124">4</span></span>    | <span data-ttu-id="1aee6-125">Měsíc</span><span class="sxs-lookup"><span data-stu-id="1aee6-125">Month</span></span> |   <span data-ttu-id="1aee6-126">25</span><span class="sxs-lookup"><span data-stu-id="1aee6-126">25</span></span>    |
+
+
+2. <span data-ttu-id="1aee6-127">Propojte redukční klíč se skupinou disponibility položky.</span><span class="sxs-lookup"><span data-stu-id="1aee6-127">Link the reduction key to the item's coverage group.</span></span>
+3. <span data-ttu-id="1aee6-128">Na stránce **Hlavní plány**v poli **Metoda redukce** vyberte **Procento – redukční klíč**.</span><span class="sxs-lookup"><span data-stu-id="1aee6-128">On the **Master plans** page, in the **Reduction principle** field, select **Percent - reduction key**.</span></span>
+4. <span data-ttu-id="1aee6-129">Vytvořte prognózu poptávky pro 1000 kusů za měsíc.</span><span class="sxs-lookup"><span data-stu-id="1aee6-129">Create a demand forecast of 1,000 pieces per month.</span></span>
 
 <span data-ttu-id="1aee6-130">Pokud spustíte plánování prognózy 1. ledna, požadavky prognózy poptávky se spotřebují podle procentuálních hodnot, které se nastavují na stránce **Redukční klíče**.</span><span class="sxs-lookup"><span data-stu-id="1aee6-130">If you run forecast scheduling on January 1, the demand forecast requirements are consumed according to the percentages that you set up on the **Reduction keys** page.</span></span> <span data-ttu-id="1aee6-131">Do hlavního plánu se přenesou následující požadované objemy.</span><span class="sxs-lookup"><span data-stu-id="1aee6-131">The following requirement quantities are transferred to the master plan.</span></span>
 
@@ -88,20 +89,21 @@ ms.lasthandoff: 11/03/2017
 ## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a><span data-ttu-id="1aee6-171">Příklad 3: Transakce – princip redukce prognózy dynamického období</span><span class="sxs-lookup"><span data-stu-id="1aee6-171">Example 3: Transactions  dynamic period forecast reduction principle</span></span>
 <span data-ttu-id="1aee6-172">Ve většině případů jsou systémy nastaveny tak, aby transakce snižovaly prognózu poptávky v rámci konkrétních obdobích prognózy: týdny, měsíce a tak dále.</span><span class="sxs-lookup"><span data-stu-id="1aee6-172">In most cases, systems are set up so that transactions reduce demand forecast within specific forecast periods: weeks, months, and so on.</span></span> <span data-ttu-id="1aee6-173">Tato období jsou definována v redukčním klíči.</span><span class="sxs-lookup"><span data-stu-id="1aee6-173">These periods are defined in the reduction key.</span></span> <span data-ttu-id="1aee6-174">Čas mezi dvěma řádky však prognózy poptávky může také *vyjadřovat* období.</span><span class="sxs-lookup"><span data-stu-id="1aee6-174">However, the time between two demand forecast lines can also *imply* a period.</span></span>
 
-1.  <span data-ttu-id="1aee6-175">Vytvořte prognózu poptávky pro následující data a množství.</span><span class="sxs-lookup"><span data-stu-id="1aee6-175">Create a demand forecast for the following dates and quantities.</span></span>
-    | <span data-ttu-id="1aee6-176">Datum</span><span class="sxs-lookup"><span data-stu-id="1aee6-176">Date</span></span>       | <span data-ttu-id="1aee6-177">Prognóza poptávky</span><span class="sxs-lookup"><span data-stu-id="1aee6-177">Demand forecast</span></span> |
-    |------------|-----------------|
-    | <span data-ttu-id="1aee6-178">1. leden</span><span class="sxs-lookup"><span data-stu-id="1aee6-178">January 1</span></span>  | <span data-ttu-id="1aee6-179">1 000</span><span class="sxs-lookup"><span data-stu-id="1aee6-179">1,000</span></span>           |
-    | <span data-ttu-id="1aee6-180">5. leden</span><span class="sxs-lookup"><span data-stu-id="1aee6-180">January 5</span></span>  | <span data-ttu-id="1aee6-181">500</span><span class="sxs-lookup"><span data-stu-id="1aee6-181">500</span></span>             |
-    | <span data-ttu-id="1aee6-182">12. leden</span><span class="sxs-lookup"><span data-stu-id="1aee6-182">January 12</span></span> | <span data-ttu-id="1aee6-183">1 000</span><span class="sxs-lookup"><span data-stu-id="1aee6-183">1,000</span></span>           |
+1. <span data-ttu-id="1aee6-175">Vytvořte prognózu poptávky pro následující data a množství.</span><span class="sxs-lookup"><span data-stu-id="1aee6-175">Create a demand forecast for the following dates and quantities.</span></span>
 
-    <span data-ttu-id="1aee6-184">V této prognóze není jasné období mezi daty prognózy: mezi 1. a 2. daty existuje 4denní rozpětí a mezi 2. a 3. daty je 7denní rozpětí.</span><span class="sxs-lookup"><span data-stu-id="1aee6-184">In this forecast, there isn't a clear period between the forecast dates: between the first and second dates there is a four-day span, and between the second and third dates there is a seven-day span.</span></span> <span data-ttu-id="1aee6-185">Tato různá rozpětí jsou dynamická období.</span><span class="sxs-lookup"><span data-stu-id="1aee6-185">These various spans are the dynamic periods.</span></span>
-2.  <span data-ttu-id="1aee6-186">Vytvořte řádky prodejní objednávky následovně.</span><span class="sxs-lookup"><span data-stu-id="1aee6-186">Create sales order lines as follows.</span></span>
-    | <span data-ttu-id="1aee6-187">Datum</span><span class="sxs-lookup"><span data-stu-id="1aee6-187">Date</span></span>                             | <span data-ttu-id="1aee6-188">Množství prodejní objednávky</span><span class="sxs-lookup"><span data-stu-id="1aee6-188">Sales order quantity</span></span> |
-    |----------------------------------|----------------------|
-    | <span data-ttu-id="1aee6-189">15. prosince v minulém roce</span><span class="sxs-lookup"><span data-stu-id="1aee6-189">December 15 in the previous year</span></span> | <span data-ttu-id="1aee6-190">500</span><span class="sxs-lookup"><span data-stu-id="1aee6-190">500</span></span>                  |
-    | <span data-ttu-id="1aee6-191">3. leden</span><span class="sxs-lookup"><span data-stu-id="1aee6-191">January 3</span></span>                        | <span data-ttu-id="1aee6-192">100</span><span class="sxs-lookup"><span data-stu-id="1aee6-192">100</span></span>                  |
-    | <span data-ttu-id="1aee6-193">10. leden</span><span class="sxs-lookup"><span data-stu-id="1aee6-193">January 10</span></span>                       | <span data-ttu-id="1aee6-194">200</span><span class="sxs-lookup"><span data-stu-id="1aee6-194">200</span></span>                  |
+   | <span data-ttu-id="1aee6-176">Datum</span><span class="sxs-lookup"><span data-stu-id="1aee6-176">Date</span></span>       | <span data-ttu-id="1aee6-177">Prognóza poptávky</span><span class="sxs-lookup"><span data-stu-id="1aee6-177">Demand forecast</span></span> |
+   |------------|-----------------|
+   | <span data-ttu-id="1aee6-178">1. leden</span><span class="sxs-lookup"><span data-stu-id="1aee6-178">January 1</span></span>  | <span data-ttu-id="1aee6-179">1 000</span><span class="sxs-lookup"><span data-stu-id="1aee6-179">1,000</span></span>           |
+   | <span data-ttu-id="1aee6-180">5. leden</span><span class="sxs-lookup"><span data-stu-id="1aee6-180">January 5</span></span>  | <span data-ttu-id="1aee6-181">500</span><span class="sxs-lookup"><span data-stu-id="1aee6-181">500</span></span>             |
+   | <span data-ttu-id="1aee6-182">12. leden</span><span class="sxs-lookup"><span data-stu-id="1aee6-182">January 12</span></span> | <span data-ttu-id="1aee6-183">1 000</span><span class="sxs-lookup"><span data-stu-id="1aee6-183">1,000</span></span>           |
+
+   <span data-ttu-id="1aee6-184">V této prognóze není jasné období mezi daty prognózy: mezi 1. a 2. daty existuje 4denní rozpětí a mezi 2. a 3. daty je 7denní rozpětí.</span><span class="sxs-lookup"><span data-stu-id="1aee6-184">In this forecast, there isn't a clear period between the forecast dates: between the first and second dates there is a four-day span, and between the second and third dates there is a seven-day span.</span></span> <span data-ttu-id="1aee6-185">Tato různá rozpětí jsou dynamická období.</span><span class="sxs-lookup"><span data-stu-id="1aee6-185">These various spans are the dynamic periods.</span></span>
+2. <span data-ttu-id="1aee6-186">Vytvořte řádky prodejní objednávky následovně.</span><span class="sxs-lookup"><span data-stu-id="1aee6-186">Create sales order lines as follows.</span></span>
+   | <span data-ttu-id="1aee6-187">Datum</span><span class="sxs-lookup"><span data-stu-id="1aee6-187">Date</span></span>                             | <span data-ttu-id="1aee6-188">Množství prodejní objednávky</span><span class="sxs-lookup"><span data-stu-id="1aee6-188">Sales order quantity</span></span> |
+   |----------------------------------|----------------------|
+   | <span data-ttu-id="1aee6-189">15. prosince v minulém roce</span><span class="sxs-lookup"><span data-stu-id="1aee6-189">December 15 in the previous year</span></span> | <span data-ttu-id="1aee6-190">500</span><span class="sxs-lookup"><span data-stu-id="1aee6-190">500</span></span>                  |
+   | <span data-ttu-id="1aee6-191">3. leden</span><span class="sxs-lookup"><span data-stu-id="1aee6-191">January 3</span></span>                        | <span data-ttu-id="1aee6-192">100</span><span class="sxs-lookup"><span data-stu-id="1aee6-192">100</span></span>                  |
+   | <span data-ttu-id="1aee6-193">10. leden</span><span class="sxs-lookup"><span data-stu-id="1aee6-193">January 10</span></span>                       | <span data-ttu-id="1aee6-194">200</span><span class="sxs-lookup"><span data-stu-id="1aee6-194">200</span></span>                  |
 
 <span data-ttu-id="1aee6-195">Prognóza bude snížena následujícím způsobem:</span><span class="sxs-lookup"><span data-stu-id="1aee6-195">The forecast will be reduced as follows:</span></span>
 

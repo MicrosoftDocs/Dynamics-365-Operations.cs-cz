@@ -17,16 +17,16 @@ ms.author: tbisaacs
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 54caf2648766053ec5a662f48bd50a1ec9b8911a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8db1044d125820319827103182cc29808c60ee5c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-an-engaging-onboarding-experience"></a><span data-ttu-id="7dbb3-103">Vytvoření zaškolení, které zaujme</span><span class="sxs-lookup"><span data-stu-id="7dbb3-103">Create an engaging onboarding experience</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="7dbb3-104">Je-li provedeno efektivně, pomáhá zaškolení nových zaměstnanců jejich efektivnějším výkonům a noví zaměstnanci získají pocit, že do své nové role patří.</span><span class="sxs-lookup"><span data-stu-id="7dbb3-104">When done effectively, onboarding helps new employees perform more effectively while also gaining a sense of belonging in their new role.</span></span> <span data-ttu-id="7dbb3-105">Zaškolení pomůže novým zaměstnancům přesněji a rychleji pochopit svou roli, než by tomu bylo v opačném případě, a vytvořit si hned od začátku vztahy, které jim pomohou uspět.</span><span class="sxs-lookup"><span data-stu-id="7dbb3-105">Onboarding can help new employees understand their new role more quickly and accurately than they would have otherwise, and they get a head start on establishing relationships that can help them succeed.</span></span> <span data-ttu-id="7dbb3-106">Zkušenost s neefektivním zaškolení může naopak vést zaměstnance k pochybám, zda se stát součástí vaší organizace.</span><span class="sxs-lookup"><span data-stu-id="7dbb3-106">Alternatively, an ineffective onboarding experience might leave employees questioning their decision to join your organization.</span></span> <span data-ttu-id="7dbb3-107">Studie Gartner z roku 2014 zjistila, že téměř třetina z 1 005 respondentů, kteří opustili své zaměstnání během prvních šesti měsíců, tak učinili proto, že jim nebyly jasné pokyny, které dostávali od svého vedení, jejich zaškolení bylo neefektivní nebo proto, že si ve svém novém prostředí nevytvořili potřebné vztahy.</span><span class="sxs-lookup"><span data-stu-id="7dbb3-107">A study conducted by Gartner in 2014 found that nearly one third of the 1,005 respondents who quit a job within the first six months, did so because the guidelines they were given by their leadership weren't clear, their training wasn't effective, or because they didn't establish effective relationships in their new environment.</span></span>
 

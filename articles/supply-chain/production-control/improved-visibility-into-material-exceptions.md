@@ -18,15 +18,15 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: eca3141fc48aea24411524e5fc84686d9e4bfaa7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3e67446dbf3d9d7db83def646371f1bf88e9fab3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="visibility-into-material-exceptions"></a><span data-ttu-id="2927e-103">Přehled výjimek materiálu</span><span class="sxs-lookup"><span data-stu-id="2927e-103">Visibility into material exceptions</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="2927e-104">V pracovním prostoru **Správa výrobního provozu** prostoru vám poskytují lepší přehled výjimek surovin pro výrobní zakázky a dávkové objednávky tři dlaždice:</span><span class="sxs-lookup"><span data-stu-id="2927e-104">In the **Production floor management** workspace, three tiles give you better visibility into exceptions for raw materials for production orders and batch orders:</span></span>
 

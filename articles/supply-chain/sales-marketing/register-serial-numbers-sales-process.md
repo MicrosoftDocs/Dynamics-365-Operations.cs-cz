@@ -20,18 +20,18 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 577204b49355a470769237eb46ad74e7f319a55e
-ms.openlocfilehash: 061555a228d1d40f2a2d864e72f39dc27155d1bd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5034ecf6b6d8c27b2b22ce0a36c5ff5df3205e15
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="register-serial-numbers-in-the-sales-process"></a><span data-ttu-id="0c47f-104">Registrace sériových čísel v prodejním procesu</span><span class="sxs-lookup"><span data-stu-id="0c47f-104">Register serial numbers in the sales process</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="0c47f-105">Toto téma vysvětluje, jak lze registrovat sériová čísla v dodacích listech nebo fakturách během prodejního procesu.</span><span class="sxs-lookup"><span data-stu-id="0c47f-105">This topic explains how you can register serial numbers on packing slips or invoices during the sales process.</span></span> <span data-ttu-id="0c47f-106">Tato funkce je užitečná, pokud mnoho společností chce jednoduše zaznamenat sériová čísla pro účely záruky a služeb, a nepotřebuje udržovat sériová čísla v zásobách od příjmu po vydání.</span><span class="sxs-lookup"><span data-stu-id="0c47f-106">This functionality is useful if a company wants to capture serial numbers for service and warranty purposes, but doesn't have to maintain serial numbers in inventory from receipt to issue.</span></span>
 

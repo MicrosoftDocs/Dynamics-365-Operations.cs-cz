@@ -17,17 +17,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4cb29bf004faf95b25850c1a9700c8555da046ba
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 62cad3cf0ee7708f02078bc80a14c9f8ef7fc386
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="post-the-pre-acquisition-of-a-fixed-asset"></a><span data-ttu-id="818a6-103">Účtování předpořízení dlouhodobého majetku</span><span class="sxs-lookup"><span data-stu-id="818a6-103">Post the pre-acquisition of a fixed asset</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="818a6-104">Toto téma vysvětluje, jak vytvořit a zaúčtovat předpořízení dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="818a6-104">This topic explains how to set up and post fixed asset pre-acquisitions.</span></span>
 

@@ -16,16 +16,17 @@ ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 0aecbb129b9545ebed1a797299b4379bbc6ca6b9
-ms.openlocfilehash: 1ed3bab2ec7357714123bc21356809cfa0dd5576
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b1432ca5977fc6cb9700b84585a6e0237f5b5538
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="czech-republic"></a><span data-ttu-id="fd834-103">Česká republika</span><span class="sxs-lookup"><span data-stu-id="fd834-103">Czech Republic</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+
 <span data-ttu-id="fd834-104">Toto téma obsahuje informace a odkazy na zdroje, které vám pomohou nastavit aplikaci Dynamics 365 for Finance and Operations pro právnické osoby s primární adresou v České republice.</span><span class="sxs-lookup"><span data-stu-id="fd834-104">This topic includes information and links to resources that can help you set up Dynamics 365 for Finance and Operations for legal entities with a primary address in the Czech Republic.</span></span>
 
 ## <a name="fixed-assets"></a><span data-ttu-id="fd834-105">Dlouhodobý majetek</span><span class="sxs-lookup"><span data-stu-id="fd834-105">Fixed assets</span></span>

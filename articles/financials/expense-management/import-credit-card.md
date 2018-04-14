@@ -19,16 +19,16 @@ ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: ad5485ec4d8c5f32712e14f7545525ba27b13288
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 65501866f0c465f40de842c5f612aae9349db7be
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="import-and-maintain-credit-card-transactions"></a><span data-ttu-id="7c399-104">Import a udržování transakce platební karty</span><span class="sxs-lookup"><span data-stu-id="7c399-104">Import and maintain credit card transactions</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="7c399-105">Transakce platební karty související s výdaji lze nastavit tak, aby byly automaticky importovány v opakujícím se plánu.</span><span class="sxs-lookup"><span data-stu-id="7c399-105">Expense-related credit card transactions can be set up so that they are automatically imported on a recurring schedule.</span></span> <span data-ttu-id="7c399-106">Popřípadě lze transakce ručně importovat podle potřeby.</span><span class="sxs-lookup"><span data-stu-id="7c399-106">Alternatively, the transactions can be manually imported as they are required.</span></span> <span data-ttu-id="7c399-107">Transakce platebních karet jsou importovány prostřednictvím datové entity Transakce platebních karet.</span><span class="sxs-lookup"><span data-stu-id="7c399-107">The credit card transactions are imported through the Credit card transactions data entity.</span></span>
 

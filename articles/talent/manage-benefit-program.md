@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 3097bd52377a6c431cef6344a6b504fda9f85550
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7344fad7c4dffabd99993924604e2e497bebc5ef
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="define-and-manage-a-benefits-program"></a><span data-ttu-id="d9fcb-104">Definování a správa programu zaměstnaneckých výhod</span><span class="sxs-lookup"><span data-stu-id="d9fcb-104">Define and manage a benefits program</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="d9fcb-105">Lidské zdroje poskytují řadu nástrojů, které vám pomohou k nastavení a správě zaměstnaneckých výhod, srážek a plánů kompenzace pracovníků, které organizace nabízí nebo zpracovává pro své zaměstnance.</span><span class="sxs-lookup"><span data-stu-id="d9fcb-105">Human resources provides a set of tools that can be used to set up and maintain benefits, deductions, and workers' compensation plans that an organization offers or processes for its workers.</span></span> <span data-ttu-id="d9fcb-106">Toto téma obsahuje informace o postupu nastavení a správy zaměstnaneckých výhod.</span><span class="sxs-lookup"><span data-stu-id="d9fcb-106">This topic provides information about how to set up and manage benefits.</span></span>
 

@@ -18,17 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 84471351555d90c5a297d613abf334a26e896e40
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 647bbbc8555e0aa00b2779d87e63cb4dd31edf96
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advance-holders"></a><span data-ttu-id="a6e87-103">Držitelé zálohy</span><span class="sxs-lookup"><span data-stu-id="a6e87-103">Advance holders</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a6e87-104">Poznejte funkce držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="a6e87-104">Learn about advance holder functionality in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
@@ -48,11 +47,13 @@ ms.lasthandoff: 03/26/2018
 ### <a name="employee-posting-profile"></a><span data-ttu-id="a6e87-121">Účetní profil zaměstnance</span><span class="sxs-lookup"><span data-stu-id="a6e87-121">Employee posting profile</span></span>
 
 <span data-ttu-id="a6e87-122">Použijte stránku **Účetní profily zaměstnanců** k vytvoření profilu pro transakce držitelů záloh.</span><span class="sxs-lookup"><span data-stu-id="a6e87-122">Use the **Employee posting profiles** page to create a profile for advance holder transactions.</span></span> <span data-ttu-id="a6e87-123">Můžete zadat následující informace pro účetní profil zaměstnance.</span><span class="sxs-lookup"><span data-stu-id="a6e87-123">You can specify the following information for the employee posting profile.</span></span>
-|<span data-ttu-id="a6e87-124">Pole</span><span class="sxs-lookup"><span data-stu-id="a6e87-124">Field</span></span> |<span data-ttu-id="a6e87-125">popis</span><span class="sxs-lookup"><span data-stu-id="a6e87-125">Description</span></span>|
-|------|-----------|
-|<span data-ttu-id="a6e87-126">Účetní profil</span><span class="sxs-lookup"><span data-stu-id="a6e87-126">Posting profile</span></span>|<span data-ttu-id="a6e87-127">Zadejte identifikační kód účetního profilu držitele zálohy.</span><span class="sxs-lookup"><span data-stu-id="a6e87-127">Enter the posting profile identification code for the advance holder.</span></span>|
-|<span data-ttu-id="a6e87-128">popis</span><span class="sxs-lookup"><span data-stu-id="a6e87-128">Description</span></span>|<span data-ttu-id="a6e87-129">Zadejte stručný popis účetního profilu.</span><span class="sxs-lookup"><span data-stu-id="a6e87-129">Enter a brief description of the posting profile.</span></span>|
-|<span data-ttu-id="a6e87-130">Platné pro</span><span class="sxs-lookup"><span data-stu-id="a6e87-130">Valid for</span></span>|<span data-ttu-id="a6e87-131">Vyberte jednu z následujících možností pro úroveň seskupení pro nastavení účetního profilu:</span><span class="sxs-lookup"><span data-stu-id="a6e87-131">Select one of the following options for the level of grouping for setting up the posting profile:</span></span> 
+
+|      <span data-ttu-id="a6e87-124">Pole</span><span class="sxs-lookup"><span data-stu-id="a6e87-124">Field</span></span>      |                                            <span data-ttu-id="a6e87-125">popis</span><span class="sxs-lookup"><span data-stu-id="a6e87-125">Description</span></span>                                            |
+|-----------------|---------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="a6e87-126">Účetní profil</span><span class="sxs-lookup"><span data-stu-id="a6e87-126">Posting profile</span></span> |               <span data-ttu-id="a6e87-127">Zadejte identifikační kód účetního profilu držitele zálohy.</span><span class="sxs-lookup"><span data-stu-id="a6e87-127">Enter the posting profile identification code for the advance holder.</span></span>               |
+|   <span data-ttu-id="a6e87-128">popis</span><span class="sxs-lookup"><span data-stu-id="a6e87-128">Description</span></span>   |                         <span data-ttu-id="a6e87-129">Zadejte stručný popis účetního profilu.</span><span class="sxs-lookup"><span data-stu-id="a6e87-129">Enter a brief description of the posting profile.</span></span>                         |
+|    <span data-ttu-id="a6e87-130">Platné pro</span><span class="sxs-lookup"><span data-stu-id="a6e87-130">Valid for</span></span>    | <span data-ttu-id="a6e87-131">Vyberte jednu z následujících možností pro úroveň seskupení pro nastavení účetního profilu:</span><span class="sxs-lookup"><span data-stu-id="a6e87-131">Select one of the following options for the level of grouping for setting up the posting profile:</span></span> |
+
 <span data-ttu-id="a6e87-132">**Tabulka** – tuto možnost lze použít k nastavení účetního profilu pro jednoho držitele zálohy.</span><span class="sxs-lookup"><span data-stu-id="a6e87-132">**Table** – This option is used to set up the posting profile for one advance holder.</span></span> <span data-ttu-id="a6e87-133">Je třeba určit kód držitele zálohy v poli Odkaz.</span><span class="sxs-lookup"><span data-stu-id="a6e87-133">You must indicate the advance holder code in the Reference field.</span></span>
 <span data-ttu-id="a6e87-134">**Skupina** – tuto možnost lze použít k nastavení účetního profilu pro skupinu držitelů záloh.</span><span class="sxs-lookup"><span data-stu-id="a6e87-134">**Group** – This option is used to set up the posting profile for a group of advance holders.</span></span> <span data-ttu-id="a6e87-135">Je třeba určit kód skupiny v poli Odkaz.</span><span class="sxs-lookup"><span data-stu-id="a6e87-135">You must indicate the group code in the Reference field.</span></span>
 <span data-ttu-id="a6e87-136">**Všechny** – tato možnost slouží k nastavení účetního profilu pro všechny držitele záloh. | |Odkaz| Vyberte kód držitele zálohy, pokud je vybrána Tabulka v poli Platné pro, nebo vyberte skupinu držitelů záloh, pokud je vybrána Skupina v poli Platné pro. | |Součtový účet| Vyberte součtový účet pro zaúčtování transakce.|</span><span class="sxs-lookup"><span data-stu-id="a6e87-136">**All** – This option is used to set up the posting profile for all advance holders.| |Reference|Select the advance holder code if Table is selected in the Valid for field, or select the advance holder group if Group is selected in the Valid for field.| |Summary account|Select the summary account for posting the transactions.|</span></span>
@@ -62,6 +63,7 @@ ms.lasthandoff: 03/26/2018
 ### <a name="account-payable-parameters"></a><span data-ttu-id="a6e87-137">Parametry závazku</span><span class="sxs-lookup"><span data-stu-id="a6e87-137">Account payable parameters</span></span>
 
 <span data-ttu-id="a6e87-138">Pokud chcete, aby se projevily transakce držitele zálohy, musíte nastavit následující položky na stránce **Parametry závazků** v části **Držitelé zálohy**.</span><span class="sxs-lookup"><span data-stu-id="a6e87-138">To reflect advance holder’s transactions you must set up the following on the **Account payable parameters** page in the **Advance holders** section.</span></span>
+
 |                                                |                   |
 |------------------------------------------------|-------------------|
 |  <span data-ttu-id="a6e87-139">**Pole**</span><span class="sxs-lookup"><span data-stu-id="a6e87-139">**Field**</span></span>                                     | <span data-ttu-id="a6e87-140">**Popis**</span><span class="sxs-lookup"><span data-stu-id="a6e87-140">**Description**</span></span>                                                                                                                                                                  |
@@ -80,6 +82,7 @@ ms.lasthandoff: 03/26/2018
 ### <a name="create-an-advance-holder-creation"></a><span data-ttu-id="a6e87-160">Vytvoření držitelů záloh</span><span class="sxs-lookup"><span data-stu-id="a6e87-160">Create an advance holder creation</span></span>
 
 <span data-ttu-id="a6e87-161">Před vytvořením držitele zálohy musí mít již nastavené pracovníky.</span><span class="sxs-lookup"><span data-stu-id="a6e87-161">Before you can create an advance holder, you must have already set up workers.</span></span> <span data-ttu-id="a6e87-162">Další informace naleznete v tématu [Zadání informací o pracovníkovi (průvodce záznamem úloh).](../../fin-and-ops/hr/tasks/enter-worker-information.md)</span><span class="sxs-lookup"><span data-stu-id="a6e87-162">For more information, see [Enter worker information (Task guide).](../../fin-and-ops/hr/tasks/enter-worker-information.md)</span></span> <span data-ttu-id="a6e87-163">Použijte stránku **Držitelé zálohy** k nastavení pracovníka jako držitele zálohy.</span><span class="sxs-lookup"><span data-stu-id="a6e87-163">Use the **Advance holders** page to set up a worker as an advance holder.</span></span> <span data-ttu-id="a6e87-164">Vyberte pracovníka, kterého chcete použít jako držitele zálohy, klikněte na možnost **Upravit** a potom nastavte možnost **Držitel zálohy** na **True**.</span><span class="sxs-lookup"><span data-stu-id="a6e87-164">Select the worker to use as an advance holder, click **Edit**, and then set the **Advance holder** option to **True**.</span></span> <span data-ttu-id="a6e87-165">Dále je nutné vyplnit následující pole.</span><span class="sxs-lookup"><span data-stu-id="a6e87-165">You must also complete the following fields.</span></span>
+
 |                |                                                                                             |
 |----------------|---------------------------------------------------------------------------------------------|
 | <span data-ttu-id="a6e87-166">**Pole**</span><span class="sxs-lookup"><span data-stu-id="a6e87-166">**Field**</span></span>      | <span data-ttu-id="a6e87-167">**Popis**</span><span class="sxs-lookup"><span data-stu-id="a6e87-167">**Description**</span></span>                                                                             |

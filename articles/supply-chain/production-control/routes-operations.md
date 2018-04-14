@@ -20,17 +20,16 @@ ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7af00d0c66f70aa41cfab0ffccef39ba4c115803
-ms.openlocfilehash: 4026fa937ddf88f006cdcd13a8eda10c326ada62
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 90a12b501b55bc6406ea13c2e643cd58f8128390
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="routes-and-operations"></a><span data-ttu-id="584c5-103">Postupy a operace</span><span class="sxs-lookup"><span data-stu-id="584c5-103">Routes and operations</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="584c5-104">Toto téma obsahuje obecné informace o postupech a operacích.</span><span class="sxs-lookup"><span data-stu-id="584c5-104">This topic provides information about routes and operations.</span></span> <span data-ttu-id="584c5-105">Postup definuje proces pro výrobu produktu nebo varianty produktu.</span><span class="sxs-lookup"><span data-stu-id="584c5-105">A route defines the process for producing a product or product variant.</span></span> <span data-ttu-id="584c5-106">Popisuje jednotlivé kroky (operace) ve výrobním procesu a pořadí, ve kterém je nutné je provádět.</span><span class="sxs-lookup"><span data-stu-id="584c5-106">It describes each step (operation) in the production process and the order that these steps must be performed in.</span></span> <span data-ttu-id="584c5-107">U každého kroku postup také definuje požadované provozní prostředky, čas, který je nutný k přípravě a provedení operace, a způsob výpočtu nákladů.</span><span class="sxs-lookup"><span data-stu-id="584c5-107">For each step, the route also defines the required operations resources, the required setup time and run time, and how the cost should be calculated.</span></span>
 

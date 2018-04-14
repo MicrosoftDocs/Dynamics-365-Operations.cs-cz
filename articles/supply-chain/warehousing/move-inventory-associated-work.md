@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: d3e81475ffdc624fccae0673fd51aa9d742c281c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7d81397ed30751f5b3dd7c46ffe6b27b8153c8f9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="movement-of-inventory-with-associated-work-in-warehouse-management"></a><span data-ttu-id="736e8-103">Pohyb zásob s přidruženou prací v řízení skladu</span><span class="sxs-lookup"><span data-stu-id="736e8-103">Movement of inventory with associated work in Warehouse management</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="736e8-104">Pomocí přesunu zásob, je možné rozhodnout, kteří pracovníci skladu mohou přesunout rezervované zásoby.</span><span class="sxs-lookup"><span data-stu-id="736e8-104">Using movement of inventory, you can decide which warehouse workers are allowed to move reserved inventory.</span></span> <span data-ttu-id="736e8-105">Tím je zajištěna flexibilita v regulovaných skladech, kde se můžete rozhodnout nepovolil pracovníkovi zvolit nové místo vyskladnění pro již vytvořenou práci výdeje.</span><span class="sxs-lookup"><span data-stu-id="736e8-105">This provides a flexibility in regulated warehouses where you can decide to not allow a worker to choose a new pick location for pick work that is already created.</span></span> <span data-ttu-id="736e8-106">Umožňuje také vedoucímu skladu řídit, které možnosti mají někteří méně zkušení pracovníci.</span><span class="sxs-lookup"><span data-stu-id="736e8-106">It also allows a warehouse manager to control which capabilities some less experienced workers should have.</span></span>
 

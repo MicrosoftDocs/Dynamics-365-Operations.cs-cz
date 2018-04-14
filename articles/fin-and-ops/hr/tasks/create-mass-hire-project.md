@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a8789d7c5b06e83d0d1799b249b48a00e7c0ae34
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 91b862155d60f297a1278e44f58804ac385be64c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-mass-hire-project"></a><span data-ttu-id="19f68-103">Vytvoření projektu masového pronájmu</span><span class="sxs-lookup"><span data-stu-id="19f68-103">Create a mass hire project</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="19f68-104">Tento postup vás provede nastavením procesu hromadného zařazování zaměstnanců.</span><span class="sxs-lookup"><span data-stu-id="19f68-104">This procedure walks through the process of setting up a mass hire project.</span></span> <span data-ttu-id="19f68-105">Náborový zaměstnanec může využívat projekty hromadného zařazení pro snadné vytváření více pozic a zařazení většího počtu pracovníků na tyto pozice.</span><span class="sxs-lookup"><span data-stu-id="19f68-105">A recruiter can use mass hire projects to easily create multiple positions and hire a number of workers into those positions.</span></span> <span data-ttu-id="19f68-106">Tento postup zahájíte tak, že přejděte na Lidské zdroje > Nábor > Projekty hromadného zařazení.</span><span class="sxs-lookup"><span data-stu-id="19f68-106">To begin this procedure, go to Human resources > Recruitment > Mass hire projects.</span></span> <span data-ttu-id="19f68-107">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="19f68-107">The demo data company used to create this procedure is USMF.</span></span>
 

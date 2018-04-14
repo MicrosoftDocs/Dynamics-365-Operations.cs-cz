@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: ba8562f01ef440dd98db242550ee0e60db7acfc5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ba4d752304f2bd2e5b53dc3353bed3df34044d12
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-cost-accounting-ledger"></a><span data-ttu-id="8952f-103">Vytvoření hlavní knihy nákladového účetnictví</span><span class="sxs-lookup"><span data-stu-id="8952f-103">Create a cost accounting ledger</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="8952f-104">Hlavní kniha nákladového účetnictví představuje celkovou jednotku výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="8952f-104">A cost accounting ledger represents the overall reporting unit.</span></span> <span data-ttu-id="8952f-105">Je definována dimenzí nákladového prvku, statistickou dimenzí, fiskálním kalendářem a měnou.</span><span class="sxs-lookup"><span data-stu-id="8952f-105">It is defined by a cost element dimension, statistical dimension, fiscal calendar, and currency.</span></span> <span data-ttu-id="8952f-106">Nerozlišuje princip právnických osob.</span><span class="sxs-lookup"><span data-stu-id="8952f-106">It is agnostic to the concept of legal entities.</span></span> <span data-ttu-id="8952f-107">Právnická osoba a její data mohou být přidružena více hlavním knihám nákladového účetnictví.</span><span class="sxs-lookup"><span data-stu-id="8952f-107">A legal entity and its data can be associated with many cost accounting ledgers.</span></span> <span data-ttu-id="8952f-108">Tento záznam používá v ukázkových datech společnost USP2.</span><span class="sxs-lookup"><span data-stu-id="8952f-108">This recording uses the USP2 demo data company.</span></span>
 

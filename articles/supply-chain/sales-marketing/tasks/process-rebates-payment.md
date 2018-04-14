@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 791ec304b9ea7c49fbea506d73c4daffd4478739
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a6eb7fd5a44d5e4fb81f5939d820e429ff131246
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="process-rebates-for-payment"></a><span data-ttu-id="2edfe-103">Zpracování rabatu pro platbu</span><span class="sxs-lookup"><span data-stu-id="2edfe-103">Process rebates for payment</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2edfe-104">Tento postup ukazuje převod schválených a zpracovaných rabatů odběratele na dobropisy.</span><span class="sxs-lookup"><span data-stu-id="2edfe-104">This procedure demonstrates how to convert approved and processed customer rebates to credit notes.</span></span> <span data-ttu-id="2edfe-105">Tohoto průvodce můžete použít s ukázkovou společností USMF.</span><span class="sxs-lookup"><span data-stu-id="2edfe-105">You can use this guide in the USMF demo company.</span></span> <span data-ttu-id="2edfe-106">Předpokladem pro tohoto průvodce je existence jednoho nebo více nároků na rabat ve stavu Označit.</span><span class="sxs-lookup"><span data-stu-id="2edfe-106">The precondition for this guide is to have one or more rebate claims which have a status of Mark.</span></span> <span data-ttu-id="2edfe-107">Pokud používáte data USMF, před použitím tohoto průvodce použijte průvodce "Generování a zpracování rabatů odběratele".</span><span class="sxs-lookup"><span data-stu-id="2edfe-107">If you’re using USMF you should run the "Generate and process customer rebates" guide before you start this guide.</span></span>
 

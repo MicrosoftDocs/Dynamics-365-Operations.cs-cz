@@ -19,17 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 59781da7681ece1c0c013f59e0d1a5d7efc51c3a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c8af5d3343bf8376dfec5a41cd03e1325b10b978
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning"></a><span data-ttu-id="4bcf1-105">Plánování rozpočtu</span><span class="sxs-lookup"><span data-stu-id="4bcf1-105">Budget planning</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="4bcf1-106">Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Microsoft Dynamics 365 for Finance and Operations v oblasti Plánování rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="4bcf1-106">The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations functionality updates in Budget planning area.</span></span> <span data-ttu-id="4bcf1-107">Tento seminář ukazuje příklad rychlé konfigurace modulu plánování rozpočtu a znázorňuje, jak lze provést plánování rozpočtu pomocí této konfigurace.</span><span class="sxs-lookup"><span data-stu-id="4bcf1-107">The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.</span></span>  <span data-ttu-id="4bcf1-108">Tento seminář se zaměří na následujících obchodní procesy nebo úkoly -    - Vytvoření organizační hierarchie pro plánování rozpočtu a konfiguraci zabezpečení pro uživatele   - Definování scénářů plánu rozpočtu, sloupců plánu rozpočtu, rozvržení a šablon aplikace Excel   - Vytvoření a aktivace procesu plánování rozpočtu   - Vytvoření dokumentu plánu rozpočtu za použití skutečných hodnot z hlavní knihy   - Použití přidělení k úpravě dat dokumentu plánu rozpočtu   - Úprava dat dokumentu plánu rozpočtu v aplikaci Excel</span><span class="sxs-lookup"><span data-stu-id="4bcf1-108">This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel</span></span> 
 

@@ -20,17 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 53e038183a10b8732a9a5e0f25aac440c224400e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1bda8d9d656f1760061599d100ca4af9186742ea
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-categories-used-in-production-routing"></a><span data-ttu-id="a270b-103">Nákladové kategorie použité ve výrobních postupech</span><span class="sxs-lookup"><span data-stu-id="a270b-103">Cost categories used in production routing</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a270b-104">Tento článek obsahuje informace o nákladových kategoriích, které se týkají výrobních prostředí využívající trasování.</span><span class="sxs-lookup"><span data-stu-id="a270b-104">This article provides information about cost categories that apply to manufacturing environments that use routing.</span></span>
 

@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: bce608594e2eb0e7769e7dfa2e254e29385000b6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 90a947d4564c8ad97b415b556986c3f815674aa4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-rollup-policy-and-overhead-calculation"></a><span data-ttu-id="7f910-103">Zásady shrnutí nákladů a výpočet režijních nákladů</span><span class="sxs-lookup"><span data-stu-id="7f910-103">Cost rollup policy and overhead calculation</span></span> 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="7f910-104">Nákladové účetnictví vám umožní získat přehled o vztahu toku nákladů k produktům a službám, které jsou dodávány v rámci organizace.</span><span class="sxs-lookup"><span data-stu-id="7f910-104">Cost accounting lets you gain insight into how the cost flow relates to the products and services that are delivered within an organization.</span></span> <span data-ttu-id="7f910-105">Pro zobrazení transparentních nákladů je velmi důležité dosáhnout přidělení nákladů mezi objekty nákladů na základě příslušného základu přidělení.</span><span class="sxs-lookup"><span data-stu-id="7f910-105">To see the cost transparency, it's crucial to achieve cost allocation between cost objects based on an appropriate allocation basis.</span></span> <span data-ttu-id="7f910-106">Ve výchozím nastavení je dosaženo přidělení nákladů pro primární prvek nákladů, který je v některých situacích vyžadován, ale je zde několik důsledků, které je třeba zvážit.</span><span class="sxs-lookup"><span data-stu-id="7f910-106">By default, the cost allocation is achieved for the primary cost element, which is desired in some situations, but it has a few implications that should be considered.</span></span>
 

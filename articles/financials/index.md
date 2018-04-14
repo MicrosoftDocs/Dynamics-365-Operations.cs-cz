@@ -18,16 +18,16 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 881b44f1128e732bc768191088e19efc38552eca
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a0f89579cd921b1036ea102ccc89f3863fb40ac3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="financial-management-home-page"></a><span data-ttu-id="c2fbd-103">Domovská stránka Správy financí</span><span class="sxs-lookup"><span data-stu-id="c2fbd-103">Financial management home page</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="c2fbd-104">Toto téma obsahuje seznam témat nápovědy a další zdroje pro funkce správy financí v aplikaci Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="c2fbd-104">This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations.</span></span> 
 

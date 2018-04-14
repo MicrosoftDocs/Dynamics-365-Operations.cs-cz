@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: fe0be9164a285ce3884d1f35e99bdad80eb8b581
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1a32b49e7589113d518ef17a39eecc4c518b362d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="allocation-bases"></a><span data-ttu-id="124cc-104">Základy přidělení</span><span class="sxs-lookup"><span data-stu-id="124cc-104">Allocation bases</span></span> 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="124cc-105">Základ přidělení je základem, na kterém nákladové účetnictví přiděluje režijní náklady.</span><span class="sxs-lookup"><span data-stu-id="124cc-105">An allocation base is the basis on which Cost accounting allocates overhead costs.</span></span> <span data-ttu-id="124cc-106">Základem přidělení může být množství, jako například použité strojohodiny, spotřebované kilowatthodiny (kWh) nebo obsazená plocha.</span><span class="sxs-lookup"><span data-stu-id="124cc-106">An allocation base can be a quantity, such as machine hours that are used, kilowatt hours (kWh) that are consumed, or square footage that is occupied.</span></span> <span data-ttu-id="124cc-107">Základy přidělení se většinou používají k přiřazení režijních nákladů do produkovaných zásob.</span><span class="sxs-lookup"><span data-stu-id="124cc-107">Allocation bases are mostly used to assign overhead costs to inventory that is produced.</span></span> <span data-ttu-id="124cc-108">Například IT oddělení přiděluje své výdaje podle počtu počítačů používaných každým oddělením.</span><span class="sxs-lookup"><span data-stu-id="124cc-108">For example, an IT department allocates its expenses according to the number of computers that each department uses.</span></span>
 
@@ -424,9 +424,11 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="124cc-775">Následuje příklad pravidla pro rozdělení nákladů, pokud je v něm jako základ přidělení přiřazen základ přidělení vzorce fixního poplatku za elektřinu.</span><span class="sxs-lookup"><span data-stu-id="124cc-775">Here is an example of a cost distribution rule if the Electricity fixed formula allocation base is assigned as the allocation base in it.</span></span>
 
-| <span data-ttu-id="124cc-776">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="124cc-776">Cost object</span></span> |  <span data-ttu-id="124cc-777">popis</span><span class="sxs-lookup"><span data-stu-id="124cc-777">Description</span></span>  | <span data-ttu-id="124cc-778">Hodnota</span><span class="sxs-lookup"><span data-stu-id="124cc-778">Magnitude</span></span> | <span data-ttu-id="124cc-779">Koeficient přidělení</span><span class="sxs-lookup"><span data-stu-id="124cc-779">Allocation factor</span></span>                |
-|-------------|----|-----------|----------------------------------|
-| <span data-ttu-id="124cc-780">CC001</span><span class="sxs-lookup"><span data-stu-id="124cc-780">CC001</span></span>       | <span data-ttu-id="124cc-781">HR</span><span class="sxs-lookup"><span data-stu-id="124cc-781">HR</span></span> | <span data-ttu-id="124cc-782">1,837.50</span><span class="sxs-lookup"><span data-stu-id="124cc-782">1,837.50</span></span>  | <span data-ttu-id="124cc-783">(1 837,50 ÷ 18 162,50) × částka</span><span class="sxs-lookup"><span data-stu-id="124cc-783">(1,837.50 ÷ 18,162.50) × Amount</span></span>  |
-| <span data-ttu-id="124cc-784">CC002</span><span class="sxs-lookup"><span data-stu-id="124cc-784">CC002</span></span>       | <span data-ttu-id="124cc-785">FI</span><span class="sxs-lookup"><span data-stu-id="124cc-785">FI</span></span> | <span data-ttu-id="124cc-786">3,075.00</span><span class="sxs-lookup"><span data-stu-id="124cc-786">3,075.00</span></span>  | <span data-ttu-id="124cc-787">(3 075,00 ÷ 18 162,50) × částka</span><span class="sxs-lookup"><span data-stu-id="124cc-787">(3,075.00 ÷ 18,162.50) × Amount</span></span>  |
-| <span data-ttu-id="124cc-788">CC003</span><span class="sxs-lookup"><span data-stu-id="124cc-788">CC003</span></span>       | <span data-ttu-id="124cc-789">IT</span><span class="sxs-lookup"><span data-stu-id="124cc-789">IT</span></span> | <span data-ttu-id="124cc-790">13,250.00</span><span class="sxs-lookup"><span data-stu-id="124cc-790">13,250.00</span></span> | <span data-ttu-id="124cc-791">(13 250 ÷ 18 162,50) × částka</span><span class="sxs-lookup"><span data-stu-id="124cc-791">(13,250.00 ÷ 18,162.50) × Amount</span></span> |
+
+| <span data-ttu-id="124cc-776">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="124cc-776">Cost object</span></span> | <span data-ttu-id="124cc-777">popis</span><span class="sxs-lookup"><span data-stu-id="124cc-777">Description</span></span> | <span data-ttu-id="124cc-778">Hodnota</span><span class="sxs-lookup"><span data-stu-id="124cc-778">Magnitude</span></span> |        <span data-ttu-id="124cc-779">Koeficient přidělení</span><span class="sxs-lookup"><span data-stu-id="124cc-779">Allocation factor</span></span>         |
+|-------------|-------------|-----------|----------------------------------|
+|    <span data-ttu-id="124cc-780">CC001</span><span class="sxs-lookup"><span data-stu-id="124cc-780">CC001</span></span>    |     <span data-ttu-id="124cc-781">HR</span><span class="sxs-lookup"><span data-stu-id="124cc-781">HR</span></span>      | <span data-ttu-id="124cc-782">1,837.50</span><span class="sxs-lookup"><span data-stu-id="124cc-782">1,837.50</span></span>  | <span data-ttu-id="124cc-783">(1 837,50 ÷ 18 162,50) × částka</span><span class="sxs-lookup"><span data-stu-id="124cc-783">(1,837.50 ÷ 18,162.50) × Amount</span></span>  |
+|    <span data-ttu-id="124cc-784">CC002</span><span class="sxs-lookup"><span data-stu-id="124cc-784">CC002</span></span>    |     <span data-ttu-id="124cc-785">FI</span><span class="sxs-lookup"><span data-stu-id="124cc-785">FI</span></span>      | <span data-ttu-id="124cc-786">3,075.00</span><span class="sxs-lookup"><span data-stu-id="124cc-786">3,075.00</span></span>  | <span data-ttu-id="124cc-787">(3 075,00 ÷ 18 162,50) × částka</span><span class="sxs-lookup"><span data-stu-id="124cc-787">(3,075.00 ÷ 18,162.50) × Amount</span></span>  |
+|    <span data-ttu-id="124cc-788">CC003</span><span class="sxs-lookup"><span data-stu-id="124cc-788">CC003</span></span>    |     <span data-ttu-id="124cc-789">IT</span><span class="sxs-lookup"><span data-stu-id="124cc-789">IT</span></span>      | <span data-ttu-id="124cc-790">13,250.00</span><span class="sxs-lookup"><span data-stu-id="124cc-790">13,250.00</span></span> | <span data-ttu-id="124cc-791">(13 250 ÷ 18 162,50) × částka</span><span class="sxs-lookup"><span data-stu-id="124cc-791">(13,250.00 ÷ 18,162.50) × Amount</span></span> |
+
 

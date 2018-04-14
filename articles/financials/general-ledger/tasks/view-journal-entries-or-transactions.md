@@ -16,15 +16,15 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ef3cad6538d9efbd1c1881f4b7d771382d9b1ba8
-ms.openlocfilehash: 2188d09fc074cdd7a8b1ce20e64652a2d6020e1d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e0be99edee63bde0ae82462bccb6db7d1616903a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="view-journal-entries-or-transactions"></a><span data-ttu-id="c782e-103">Zobrazení položek nebo transakcí deníku</span><span class="sxs-lookup"><span data-stu-id="c782e-103">View journal entries or transactions</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c782e-104">Tato procedura ukazuje, jak pomocí transakcí dokladu vyhledávat položky deníku nebo transakce.</span><span class="sxs-lookup"><span data-stu-id="c782e-104">This procedure shows how to use the Voucher transactions inquiry to search for journal entries or transactions.</span></span>
 

@@ -19,16 +19,16 @@ ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a3b06832112779a4b0826a51b696a1ced10711ec
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1a02c435814e446c6ee5a25ed75e1359455b8f6f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="sales-orders-mobile-workspace"></a><span data-ttu-id="a0893-104">Mobilní pracovní prostor prodejních objednávek</span><span class="sxs-lookup"><span data-stu-id="a0893-104">Sales orders mobile workspace</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a0893-105">Toto téma obsahuje informace o mobilním pracovním prostoru **Prodejní objednávky**.</span><span class="sxs-lookup"><span data-stu-id="a0893-105">This topic provides information about the **Sales orders** mobile workspace.</span></span> <span data-ttu-id="a0893-106">Tento pracovní prostor vám pomáhá mít aktuální přehled o prodejních objednávkách kdekoliv a kdykoliv.</span><span class="sxs-lookup"><span data-stu-id="a0893-106">This workspace helps you stay up to date about your sales orders anywhere and anytime.</span></span> 
 

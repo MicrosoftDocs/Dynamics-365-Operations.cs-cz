@@ -16,15 +16,15 @@ ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fc54b59f6cf8aec8d489955c57cbcf34c4e6be0a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ee2c57d9e42d50823c9f77ebd0f13deec2f4342e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="specify-a-lading-address-for-an-intra-community-transaction"></a><span data-ttu-id="f9a83-103">Zadání adresy nakládky pro intrakomunitární transakci</span><span class="sxs-lookup"><span data-stu-id="f9a83-103">Specify a lading address for an intra-community transaction</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f9a83-104">Tato procedura ukazuje, jak zadat adresu nakládky pro interní obchodní transakci.</span><span class="sxs-lookup"><span data-stu-id="f9a83-104">This procedure shows how to specify a lading address for an intra-community trade transaction.</span></span> <span data-ttu-id="f9a83-105">Německá firma si například objedná zboží od dodavatele s firemní adresou v Německu.</span><span class="sxs-lookup"><span data-stu-id="f9a83-105">For example, a Germany company orders items from a vendor with a German business address.</span></span> <span data-ttu-id="f9a83-106">Tento dodavatel má sklad v Itálii a odtud dodává zboží.</span><span class="sxs-lookup"><span data-stu-id="f9a83-106">This vendor has a warehouse in Italy and ships the items from there.</span></span> <span data-ttu-id="f9a83-107">Tato dodávka musí být vykázána v Intrastatu.</span><span class="sxs-lookup"><span data-stu-id="f9a83-107">This delivery must be reported in the Intrastat.</span></span> <span data-ttu-id="f9a83-108">Stejné chování platí pro vrácené položky odběratele.</span><span class="sxs-lookup"><span data-stu-id="f9a83-108">The same behavior is valid for customer returns.</span></span>
 <span data-ttu-id="f9a83-109">Postup se vztahuje na všechny evropské země/oblasti.</span><span class="sxs-lookup"><span data-stu-id="f9a83-109">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="f9a83-110">Úkol byl vytvořen za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Německu.</span><span class="sxs-lookup"><span data-stu-id="f9a83-110">The task was created using the demo data company DEMF with a primary address in Germany.</span></span> <span data-ttu-id="f9a83-111">Před dokončením této procedury je nutné nakonfigurovat výkaznictví Intrastat.</span><span class="sxs-lookup"><span data-stu-id="f9a83-111">Before you can complete this procedure, you must configure Intrastat reporting.</span></span> <span data-ttu-id="f9a83-112">Tento postup je určen pouze pro účetní.</span><span class="sxs-lookup"><span data-stu-id="f9a83-112">This procedure is intended for accountants.</span></span> <span data-ttu-id="f9a83-113">Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="f9a83-113">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>

@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a9d0d9a3f278a09e89311ee75b6f95fb4f3b04cb
-ms.openlocfilehash: 5856ad54db7ca6ba8840d27bd948868d003fc106
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d276a7119db4bd391d412f028ec20ed1f9a7fb58
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-new-benefit"></a><span data-ttu-id="1461c-103">Vytvořit novou zaměstnaneckou výhodu</span><span class="sxs-lookup"><span data-stu-id="1461c-103">Create a new benefit</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="1461c-104">Tato úloha znázorňuje, jak vytvořit prvky zaměstnanecké výhody, které budou použity při vytváření nových zaměstnaneckých výhod.</span><span class="sxs-lookup"><span data-stu-id="1461c-104">This task will show you how to create benefit elements which will be used when creating a new benefit.</span></span> <span data-ttu-id="1461c-105">Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="1461c-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="1461c-106">Tato úloha je určena pro správce kompenzací a zaměstnaneckých výhod.</span><span class="sxs-lookup"><span data-stu-id="1461c-106">This task is intended for a Compensation and Benefits manager.</span></span>
 

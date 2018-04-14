@@ -16,15 +16,15 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 621ad64c06a6cebff90e888ac89bba922052cf35
-ms.openlocfilehash: f75dea40d0cc77c851569608f18229339ed30af9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d1e3df13c644ffa39621e73d1c907084bbd7ba7c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a><span data-ttu-id="0b3f6-103">Registrace a zaúčtování postdatovaného šeku pro odběratele</span><span class="sxs-lookup"><span data-stu-id="0b3f6-103">Register and post a postdated check for a customer</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0b3f6-104">Podrobnosti postdatovaného šeku přijatého od zákazníka můžete zaregistrovat.</span><span class="sxs-lookup"><span data-stu-id="0b3f6-104">You can register details of a postdated check received from a customer.</span></span> <span data-ttu-id="0b3f6-105">Také můžete postdatovaný šek zaúčtovat a generovat finanční transakce.</span><span class="sxs-lookup"><span data-stu-id="0b3f6-105">You can also post the postdated check and generate financial transactions.</span></span>   <span data-ttu-id="0b3f6-106">Dokončete následující úlohy před registrací a zaúčtováním postdatovaného šeku přijatého od odběratele:  • Nastavte postdatované šeky na stránce Pokladna a banka • Nastavte metodu platby pro postdatované šeky.   Role tohoto postupu je Pokladník</span><span class="sxs-lookup"><span data-stu-id="0b3f6-106">Complete the following tasks before you register and post a postdated check received from a customer:   • Set up postdated check in the Cash and bank management page • Set up a method of payment for postdated checks   The role for this procedure is Treasurer.</span></span> <span data-ttu-id="0b3f6-107">Tato procedura používá ukázkovou společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="0b3f6-107">This procedure uses the USMF demo company.</span></span>
 

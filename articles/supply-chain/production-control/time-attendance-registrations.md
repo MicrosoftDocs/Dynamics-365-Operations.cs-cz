@@ -20,17 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 29040d0c96183898672bc405364ec59707bff53a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a83a3325c80eb6fc1a19371a6115413ca9b82185
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="time-and-attendance-registration"></a><span data-ttu-id="a13c1-104">Registrace času a docházky</span><span class="sxs-lookup"><span data-stu-id="a13c1-104">Time and attendance registration</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a13c1-105">Pracovníci z oblasti registrace času mohou zadat různé typy registrace pracovní doby, například registraci příchodu, odchodu, registraci nepřímých aktivit a registraci absencí.</span><span class="sxs-lookup"><span data-stu-id="a13c1-105">Time registration workers can enter different types of time registrations, for example, clock in, clock out, register indirect activities, and absence registration.</span></span> <span data-ttu-id="a13c1-106">Toto téma popisuje registrace, jejich výpočet, schválení a použití workflowu pro přidání struktury a automatického schválení pro proces schválení časových rozvrhů.</span><span class="sxs-lookup"><span data-stu-id="a13c1-106">This topic describes registrations, their calculation, approval, and the use of workflow to add structure and automated approval to the process of approving timesheets.</span></span> 
 
@@ -95,7 +94,7 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="a13c1-168">Celkový čas a dny docházky</span><span class="sxs-lookup"><span data-stu-id="a13c1-168">Time and attendance days total</span></span>            | <span data-ttu-id="a13c1-169">Workflow ověří registrace například oproti očekávanému počtu pracovních hodin za den.</span><span class="sxs-lookup"><span data-stu-id="a13c1-169">The workflow validates registrations against, for example, the expected number of work hours for the day.</span></span> |                                                                                                                                                                                                                                                       |
 | <span data-ttu-id="a13c1-170">Registrace deníku času a docházky</span><span class="sxs-lookup"><span data-stu-id="a13c1-170">Time and attendance journal registration.</span></span> | <span data-ttu-id="a13c1-171">Workflow ověří každý typ registrace pro datum registrace.</span><span class="sxs-lookup"><span data-stu-id="a13c1-171">The workflow validates each registration type for the date of the registration.</span></span>                           | <span data-ttu-id="a13c1-172">Čas a docházka • Odchod • Příchodu • Absence • Přestávka • Přepínací kód • Projekt • Aktivita projektu • Výrobní úlohy (nepřímá aktivita) • Čekání před operací • Nastavení • Proces • Překrytí • Přeprava • Čekání po operaci • Zahájit asistenci • Ukončit asistenci</span><span class="sxs-lookup"><span data-stu-id="a13c1-172">Time and attendance • Clock-in • Clock-out • Absence • Break • Switch code • Project • Project activity • Indirect activity Production jobs • Queue before • Setup • Process • Overlap • Transport • Queue after • Start assistance • Stop assistance</span></span> |
 
- 
+
 
 ## <a name="transferring-approved-registrations"></a><span data-ttu-id="a13c1-173">Převedení schválených registrací</span><span class="sxs-lookup"><span data-stu-id="a13c1-173">Transferring approved registrations</span></span>
 <span data-ttu-id="a13c1-174">Po schválení registrací je lze převést do pravidelné mzdové úlohy.</span><span class="sxs-lookup"><span data-stu-id="a13c1-174">After approval of the registrations you can transfer them to a periodic payroll job.</span></span> <span data-ttu-id="a13c1-175">Převedená registrace je zaúčtována v aktivitě nebo úloze, která se týká například výrobní zakázky nebo projektu.</span><span class="sxs-lookup"><span data-stu-id="a13c1-175">A transferred registration is posted to an activity or job that it relates to, for example, a production order or a project.</span></span> <span data-ttu-id="a13c1-176">Mzdové transakce jsou generovány pro každého podle registrací.</span><span class="sxs-lookup"><span data-stu-id="a13c1-176">Payroll transactions are generated for each worker based on the registrations.</span></span>  

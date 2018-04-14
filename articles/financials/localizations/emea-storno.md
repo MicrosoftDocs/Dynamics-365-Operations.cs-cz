@@ -17,16 +17,16 @@ ms.author: v-semaz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 1cdc57196c93cb30c7d0bfebca2e533ae6bd7d5a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3b31dd459e15563a2220f893ab487e34a4427e84
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="storno-accounting"></a><span data-ttu-id="c4420-103">Záporné storno</span><span class="sxs-lookup"><span data-stu-id="c4420-103">Storno accounting</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="c4420-104">Záporné storno je praxe používání záporných čísel ke stornování původních účetních položek deníku.</span><span class="sxs-lookup"><span data-stu-id="c4420-104">Storno accounting is the practice of using negative numbers to reverse original journal account entries.</span></span>
 

@@ -20,19 +20,18 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 9cb4bded4b8d841c6d164e6b8ded2cb3fb4d0978
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9ba0c5d44d58faac47b6a44265431a48c49874df
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="product-dimensions"></a><span data-ttu-id="11ffb-105">Dimenze produktu</span><span class="sxs-lookup"><span data-stu-id="11ffb-105">Product dimensions</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
-
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="11ffb-106">Existují čtyři dimenze produktu – barva, konfigurace, velikost a styl.</span><span class="sxs-lookup"><span data-stu-id="11ffb-106">There are four product dimensions -  Color, Configuration, Size and Style.</span></span> <span data-ttu-id="11ffb-107">Kombinujte dimenze produktu ve skupinách dimenzí a přiřazujte skupiny dimenzí k základním produktům.</span><span class="sxs-lookup"><span data-stu-id="11ffb-107">You combine product dimensions in dimension groups and assign dimension groups to product masters.</span></span> <span data-ttu-id="11ffb-108">Kombinace dimenzí produktu určuje způsob definování variant produktu.</span><span class="sxs-lookup"><span data-stu-id="11ffb-108">The combinations of product dimensions determine how product variants are defined.</span></span>
 
@@ -51,6 +50,7 @@ ms.lasthandoff: 02/07/2018
 -   <span data-ttu-id="11ffb-129">Klikněte na možnosti **Řízení informací o produktech** &gt; **Uvolněné produkty**.</span><span class="sxs-lookup"><span data-stu-id="11ffb-129">Click **Product information management** &gt; **Released products**.</span></span> <span data-ttu-id="11ffb-130">Vyberte základní produkt.</span><span class="sxs-lookup"><span data-stu-id="11ffb-130">Select a product master.</span></span> <span data-ttu-id="11ffb-131">V **podokně akcí** klikněte na **Produkt**.</span><span class="sxs-lookup"><span data-stu-id="11ffb-131">On the **Action Pane**, click **Product**.</span></span> <span data-ttu-id="11ffb-132">Ve skupině **Základní produkt** klikněte na **Dimenze produktu**.</span><span class="sxs-lookup"><span data-stu-id="11ffb-132">In the **Product master** group, click **Product dimensions**.</span></span>
 
 <span data-ttu-id="11ffb-133">Počet variant, které je možné vytvořit pro položku, je omezen počet možných kombinací dimenzí produktu.</span><span class="sxs-lookup"><span data-stu-id="11ffb-133">The number of variants that you can create for an item is limited by the number of possible product dimension combinations.</span></span>
+
 | <span data-ttu-id="11ffb-134">**Tip**</span><span class="sxs-lookup"><span data-stu-id="11ffb-134">**Tip**</span></span>                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="11ffb-135">Používáte-li na produkt, například na řádku objednávky, vyberete dimenze produktu pro identifikování varianty produktu, se kterou chcete pracovat.</span><span class="sxs-lookup"><span data-stu-id="11ffb-135">When you use a product on, for example, an order line, you select the product dimensions to identify the product variant that you want to work with.</span></span> |

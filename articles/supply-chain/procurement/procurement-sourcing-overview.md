@@ -19,17 +19,16 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: 91881ca3999b4937d20161b8beab8e80c2675eb6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7c738d888b7177a26b28438c820ce18312947318
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="procurement-and-sourcing-overview"></a><span data-ttu-id="37e5c-103">Přehled zásobování a zdrojů</span><span class="sxs-lookup"><span data-stu-id="37e5c-103">Procurement and sourcing overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="37e5c-104">Tento článek poskytuje přehled funkci, které jsou k dispozici v modulu Zásobování a zdroje.</span><span class="sxs-lookup"><span data-stu-id="37e5c-104">This article gives an overview of the functionality that's available in the Procurement and sourcing module.</span></span>
 
@@ -39,7 +38,7 @@ ms.lasthandoff: 02/08/2018
 <span data-ttu-id="37e5c-108">Potřeba produktů nebo služeb může vzniknout ze *žádanek*, například když zaměstnanec vyžaduje produkt.</span><span class="sxs-lookup"><span data-stu-id="37e5c-108">The need for products or services may arise from *requisitions*, for example, when an employee requires a product.</span></span> <span data-ttu-id="37e5c-109">*Katalogy produktů* mohou být nastaveny na průvodce výběrem dostupných produktů, ze kterých lze vybírat nebo požadavky lze vytvořit pro produkty, které nebyly dosud dostupné v katalogu, umožňující nákupnímu oddělení zvážit, jak může být produkt dodán.</span><span class="sxs-lookup"><span data-stu-id="37e5c-109">*Product catalogs* can be set up to guide the selection of available products to select from, or requests can be made for products that are not yet made available in a catalog, allowing the purchasing department to consider how the product can be supplied.</span></span>  
 
 <span data-ttu-id="37e5c-110">*Omezení útrat* lze použít k omezení útrat žádanek a *nákupnímu workflow* přidá možnost požadovat schválení před objednáváním.</span><span class="sxs-lookup"><span data-stu-id="37e5c-110">*Spending limits* can be used to constrain requisition spending, and the *purchasing workflow* adds the option of requiring approval before ordering happen.</span></span> <span data-ttu-id="37e5c-111">V případě potřeby je také možné zadat přidělení finančních prostředků rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="37e5c-111">It's also possible to specify budget fund allocation, if required.</span></span>  
-  
+
 <span data-ttu-id="37e5c-112">Oddělení zásobování identifikuje dodavatelé pro požadované produkty a služby, a tento výpočet může zahrnovat *požadavek na nabídku* odesílaný několika potenciálním dodavatelům.</span><span class="sxs-lookup"><span data-stu-id="37e5c-112">The procurement department identifies suppliers for required products and services, and this can involve a *request for quotation* being sent out to multiple potential suppliers.</span></span> <span data-ttu-id="37e5c-113">Je možné sdílet specifikace produktu, které jsou požadovány a potenciální dodavatelé mohou zobrazit, zda mohou dodat produkt, který je v souladu s jejich požadavky.</span><span class="sxs-lookup"><span data-stu-id="37e5c-113">It's possible to share the specifications of the product that's being requested and potential vendors can view these to see if they can deliver a product that conforms with them.</span></span> <span data-ttu-id="37e5c-114">Dodavatelé vracejí své nabídky, které jsou pak kontrolovány oddělením zásobování, předtím, než vyberou dodavatele, kteří je budou zásobovat.</span><span class="sxs-lookup"><span data-stu-id="37e5c-114">Vendors return their bids which are then reviewed by the procurement department before they select the supplier that they want to procure from.</span></span>  
 
 <span data-ttu-id="37e5c-115">Nákupní objednávky zahrnují možnost odesílat *nákupní žádanku* dodavateli jako alternativu ke komplexnějšímu zpracování požadavku na nabídku.</span><span class="sxs-lookup"><span data-stu-id="37e5c-115">Purchase orders include an option to send out a *purchase inquiry* to the vendor as an alternative to a more comprehensive request for quotation process.</span></span> <span data-ttu-id="37e5c-116">Nákupní žádanku lze použít při vytváření podmínek, jako jsou ceny, slevy a datum dodání objednávky.</span><span class="sxs-lookup"><span data-stu-id="37e5c-116">The purchase inquiry can be used to help establish terms like prices, discounts, and delivery date for the order.</span></span> <span data-ttu-id="37e5c-117">Pokud jsou dodavatelé nastaveni k používání **Portálu pro dodavatele**, funkce nákupní žádanky je zakázána.</span><span class="sxs-lookup"><span data-stu-id="37e5c-117">If vendors are set up to use the **Vendor** portal, purchase inquiry functionality is disabled.</span></span> <span data-ttu-id="37e5c-118">Namísto toho je objednávka sdílena v**dodavatelském portálu**, a když je *potvrzení požadavku* odesláno dodavateli, lze přímo objednávku potvrdit.</span><span class="sxs-lookup"><span data-stu-id="37e5c-118">Instead the order is shared on the **Vendor** portal, and when a *confirmation request* is sent the vendor can directly confirm the order.</span></span>  

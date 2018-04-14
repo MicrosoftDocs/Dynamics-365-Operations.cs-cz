@@ -17,15 +17,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: e9b22a6f846607e8afc5d4f01c685f1364b1c01d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9089b9ad773890424a6f73107a26a35a32e988ae
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vendor-request-configurations"></a><span data-ttu-id="7ab0f-103">Konfigurace oslovení dodavatele</span><span class="sxs-lookup"><span data-stu-id="7ab0f-103">Vendor request configurations</span></span>
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="7ab0f-104">Pro dokončení oslovení dodavatele musí kontaktní osoba dodavatele dokončit průvodce registrace potenciálního dodavatele.</span><span class="sxs-lookup"><span data-stu-id="7ab0f-104">To complete a vendor request, a vendor contact person must complete the prospective vendor registration wizard.</span></span>
 
@@ -39,12 +39,12 @@ ms.lasthandoff: 02/08/2018
 
 <span data-ttu-id="7ab0f-111">Nelze vybrat země/oblasti pro výchozí konfiguraci, takže nelze změnit část **Země/oblasti**.</span><span class="sxs-lookup"><span data-stu-id="7ab0f-111">It is not possible to select country/regions for the default configuration, so the **Countries/regions** section cannot be changed.</span></span>
 
-1.  <span data-ttu-id="7ab0f-112">Klikněte na **Zásobování a zdroje** > **Nastavení** > **Dodavateée**a klikněte na **Konfigurace oslovení dodavatele**.</span><span class="sxs-lookup"><span data-stu-id="7ab0f-112">Click **Procurement and sourcing** > **Setup** > **Vendors**, and then click **Vendor request configurations**.</span></span>
-2.  <span data-ttu-id="7ab0f-113">Klikněte na kartu **Pole** pro nastavení stavu uvedených polích.</span><span class="sxs-lookup"><span data-stu-id="7ab0f-113">Click the **Fields** tab to set the status of the listed fields.</span></span>
--   <span data-ttu-id="7ab0f-114">Skryté (není viditelné)</span><span class="sxs-lookup"><span data-stu-id="7ab0f-114">Hidden (Not visible)</span></span>
--   <span data-ttu-id="7ab0f-115">Zobrazené (viditelné, ale nepovinné)</span><span class="sxs-lookup"><span data-stu-id="7ab0f-115">Displayed (Visible but not mandatory)</span></span>
--   <span data-ttu-id="7ab0f-116">Požadované (viditelné a povinné)</span><span class="sxs-lookup"><span data-stu-id="7ab0f-116">Required (Visible and mandatory)</span></span>
-3.  <span data-ttu-id="7ab0f-117">Klikněte na kartu **Obsah** a určete, zda text bude zobrazený v průvodci a zda se má zobrazovat potvrzení o nutnosti přijetí uživatelem potenciálního dodavatele předtím, že se v průvodci přesune na další krok.</span><span class="sxs-lookup"><span data-stu-id="7ab0f-117">Click the **Content** tab to specify if text is going to be shown on the wizard and if there should be an acknowledgement that the prospective vendor user must accept this before moving to the next step in the wizard.</span></span> <span data-ttu-id="7ab0f-118">Potvrzení bude požadováno pro všechny smluvní podmínky, které musí uživatel potvrdit, aby mohl pokračovat.</span><span class="sxs-lookup"><span data-stu-id="7ab0f-118">The acknowledgement will be requested for any terms and conditions that the user must accept to continue.</span></span>
+1. <span data-ttu-id="7ab0f-112">Klikněte na **Zásobování a zdroje** > **Nastavení** > **Dodavateée**a klikněte na **Konfigurace oslovení dodavatele**.</span><span class="sxs-lookup"><span data-stu-id="7ab0f-112">Click **Procurement and sourcing** > **Setup** > **Vendors**, and then click **Vendor request configurations**.</span></span>
+2. <span data-ttu-id="7ab0f-113">Klikněte na kartu **Pole** pro nastavení stavu uvedených polích.</span><span class="sxs-lookup"><span data-stu-id="7ab0f-113">Click the **Fields** tab to set the status of the listed fields.</span></span>
+3. <span data-ttu-id="7ab0f-114">Skryté (není viditelné)</span><span class="sxs-lookup"><span data-stu-id="7ab0f-114">Hidden (Not visible)</span></span>
+4. <span data-ttu-id="7ab0f-115">Zobrazené (viditelné, ale nepovinné)</span><span class="sxs-lookup"><span data-stu-id="7ab0f-115">Displayed (Visible but not mandatory)</span></span>
+5. <span data-ttu-id="7ab0f-116">Požadované (viditelné a povinné)</span><span class="sxs-lookup"><span data-stu-id="7ab0f-116">Required (Visible and mandatory)</span></span>
+6. <span data-ttu-id="7ab0f-117">Klikněte na kartu **Obsah** a určete, zda text bude zobrazený v průvodci a zda se má zobrazovat potvrzení o nutnosti přijetí uživatelem potenciálního dodavatele předtím, že se v průvodci přesune na další krok.</span><span class="sxs-lookup"><span data-stu-id="7ab0f-117">Click the **Content** tab to specify if text is going to be shown on the wizard and if there should be an acknowledgement that the prospective vendor user must accept this before moving to the next step in the wizard.</span></span> <span data-ttu-id="7ab0f-118">Potvrzení bude požadováno pro všechny smluvní podmínky, které musí uživatel potvrdit, aby mohl pokračovat.</span><span class="sxs-lookup"><span data-stu-id="7ab0f-118">The acknowledgement will be requested for any terms and conditions that the user must accept to continue.</span></span>
 
 <span data-ttu-id="7ab0f-119">Lze také zadat potvrzovací zprávu, která se zobrazí po dokončení průvodce, a můžete přidat jeden nebo více dotazníků.</span><span class="sxs-lookup"><span data-stu-id="7ab0f-119">You can also enter a confirmation message that will be displayed when the wizard is finalized, and you can add one or more questionnaires.</span></span>
 

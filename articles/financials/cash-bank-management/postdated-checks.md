@@ -19,17 +19,16 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 8fd721dc3166dcd981b749c673d3c625b4e5ae36
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ad4212584b0f9062edbd5c13f4c75eaa03c853f7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="postdated-checks"></a><span data-ttu-id="f396c-105">Postdatované šeky</span><span class="sxs-lookup"><span data-stu-id="f396c-105">Postdated checks</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="f396c-106">Tento článek obsahuje informace o podpoře pro postdatované šeky v aplikaci Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="f396c-106">This article provides information about support for postdated checks in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="f396c-107">Postdatované šeky jsou šeky, které jsou vydány za účelem provedení a přijetí platby v budoucí datu.</span><span class="sxs-lookup"><span data-stu-id="f396c-107">Postdated checks are checks that are issued to make and receive payments on a future date.</span></span> <span data-ttu-id="f396c-108">Takže lze šek proplatit až od určeného data.</span><span class="sxs-lookup"><span data-stu-id="f396c-108">Therefore, the check can't be cashed until the specified date.</span></span>
 
@@ -76,14 +75,14 @@ ms.lasthandoff: 03/26/2018
 <td><span data-ttu-id="f396c-132">Zaúčtovaný postdatovaný šek v těchto situacích můžete zrušit - šek je vrácen bankou.</span><span class="sxs-lookup"><span data-stu-id="f396c-132">You can cancel a posted postdated check in these situations: - The check is returned by the bank.</span></span>
 <span data-ttu-id="f396c-133">- Šek je použit k nesprávné faktuře.</span><span class="sxs-lookup"><span data-stu-id="f396c-133">- The check is applied to an incorrect invoice.</span></span>
 <span data-ttu-id="f396c-134">- Proti šeku je provedena hotovostní platba.</span><span class="sxs-lookup"><span data-stu-id="f396c-134">- A cash payment is made against the check.</span></span>
-</td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="f396c-135">Zastavte platbu postdatovaného šeku.</span><span class="sxs-lookup"><span data-stu-id="f396c-135">Stop payment for a postdated check</span></span></td>
-<td><span data-ttu-id="f396c-136">Můžete zastavit platbu na postdatovaném šeku vystaveném dodavateli z důvodů, jako je nedostatek finančních prostředků, změna podmínek smlouvy s dodavatelem, vadné zboží u dodavatele, dodání nebo vrácení zboží dodavateli.</span><span class="sxs-lookup"><span data-stu-id="f396c-136">You can stop payment on a postdated check that was issued to a vendor, for reasons such as not sufficient funds, changes in the terms of the agreement with the vendor, supply of defective goods by the vendor, or return of goods to the vendor.</span></span> <span data-ttu-id="f396c-137">Můžete zastavit platbu pouze u šeků, které nebyly proplaceny.</span><span class="sxs-lookup"><span data-stu-id="f396c-137">You can stop payment only on checks that haven’t cleared.</span></span></td>
-</tr>
-</tbody>
-</table>
+  </td>
+  </tr>
+  <tr class="even">
+  <td><span data-ttu-id="f396c-135">Zastavte platbu postdatovaného šeku.</span><span class="sxs-lookup"><span data-stu-id="f396c-135">Stop payment for a postdated check</span></span></td>
+  <td><span data-ttu-id="f396c-136">Můžete zastavit platbu na postdatovaném šeku vystaveném dodavateli z důvodů, jako je nedostatek finančních prostředků, změna podmínek smlouvy s dodavatelem, vadné zboží u dodavatele, dodání nebo vrácení zboží dodavateli.</span><span class="sxs-lookup"><span data-stu-id="f396c-136">You can stop payment on a postdated check that was issued to a vendor, for reasons such as not sufficient funds, changes in the terms of the agreement with the vendor, supply of defective goods by the vendor, or return of goods to the vendor.</span></span> <span data-ttu-id="f396c-137">Můžete zastavit platbu pouze u šeků, které nebyly proplaceny.</span><span class="sxs-lookup"><span data-stu-id="f396c-137">You can stop payment only on checks that haven’t cleared.</span></span></td>
+  </tr>
+  </tbody>
+  </table>
 
 
 

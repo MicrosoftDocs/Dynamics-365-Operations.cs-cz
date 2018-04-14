@@ -19,16 +19,16 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 4963cc5fb94097ef831813e7732961821c20ad25
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 37f3b1b4d362bd8b40977648b4aa4387011eea08
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="purchase-spend-analysis-power-bi-content"></a><span data-ttu-id="3382c-104">Analýza obsahu Power BI výdajů na nákup</span><span class="sxs-lookup"><span data-stu-id="3382c-104">Purchase spend analysis Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="3382c-105">Toto téma popisuje, co je součástí obsahu analýzy **nákupu a výdajů** v Power BI.</span><span class="sxs-lookup"><span data-stu-id="3382c-105">This topic describes what is included in the **Purchase spend analysis** Microsoft Power BI content.</span></span> <span data-ttu-id="3382c-106">Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které jsou použity k sestavení obsahu.</span><span class="sxs-lookup"><span data-stu-id="3382c-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 
@@ -131,7 +131,7 @@ ms.lasthandoff: 01/17/2018
 </tbody>
 </table>
 
-<span data-ttu-id="3382c-160">\\* Nákup v tomto a minulém roce a růst podle kategorie zásobování</span><span class="sxs-lookup"><span data-stu-id="3382c-160">\\* Purchase this year and last year, and growth by procurement category</span></span>
+<span data-ttu-id="3382c-160">\* Nákup v tomto a minulém roce a růst podle kategorie zásobování</span><span class="sxs-lookup"><span data-stu-id="3382c-160">\* Purchase this year and last year, and growth by procurement category</span></span>
 
 ## <a name="data-model-and-entities"></a><span data-ttu-id="3382c-161">Datový model a entity</span><span class="sxs-lookup"><span data-stu-id="3382c-161">Data model and entities</span></span>
 <span data-ttu-id="3382c-162">Následující data se používají k naplnění stránek sestavy v obsahu **Analýza nákupu a výdajů** v Power BI.</span><span class="sxs-lookup"><span data-stu-id="3382c-162">The following data is used to fill the report pages in the **Purchase spend analysis** Power BI content.</span></span> <span data-ttu-id="3382c-163">Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit.</span><span class="sxs-lookup"><span data-stu-id="3382c-163">This data is represented as aggregate measurements that are staged in the Entity store.</span></span> <span data-ttu-id="3382c-164">Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu.</span><span class="sxs-lookup"><span data-stu-id="3382c-164">The Entity store is a Microsoft SQL Server database that is optimized for analytics.</span></span> <span data-ttu-id="3382c-165">Další informace naleznete v tématu [Přehled integrace Power BI úložištěm entit](power-bi-integration-entity-store.md).</span><span class="sxs-lookup"><span data-stu-id="3382c-165">For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).</span></span>

@@ -18,16 +18,16 @@ ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 8425387d4004e02e9b8adf9ba3b31a0b4e02b6e9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2b07f9d971dc152e9168b9867e70c59481325284
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="fixed-asset-management-workspace"></a><span data-ttu-id="56964-105">Pracovní prostor pro správu dlouhodobého majetku</span><span class="sxs-lookup"><span data-stu-id="56964-105">Fixed asset management workspace</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="56964-106">Pracovní prostor **Správa dlouhodobého majetku** zobrazuje informace vztahující se k dlouhodobému majetku, který je zadán v systému.</span><span class="sxs-lookup"><span data-stu-id="56964-106">The **Fixed asset management** workspace shows information that is related to fixed assets that are entered in the system.</span></span> <span data-ttu-id="56964-107">Tento pracovní prostor obsahuje souhrnné a analytické zobrazení.</span><span class="sxs-lookup"><span data-stu-id="56964-107">This workspace includes a summary view and an analytics view.</span></span> <span data-ttu-id="56964-108">Na kartě **Moje práce** jsou zobrazeny souhrnné dlaždice, podrobnosti o majetku a související informace o dlouhodobém majetku v aktuální společnosti.</span><span class="sxs-lookup"><span data-stu-id="56964-108">The **My work** tab shows summary tiles, fixed asset details, and related information about fixed assets in the current company.</span></span> <span data-ttu-id="56964-109">Přímo v pracovním prostoru také můžete do části analýzy Power BI přidat analýzu.</span><span class="sxs-lookup"><span data-stu-id="56964-109">You can also add analytics to the Power BI analytics section directly in the workspace.</span></span> <span data-ttu-id="56964-110">Karta **Analýza – všechny společnosti** zobrazuje pomocí funkcí Microsoft Power BI vizuální prvky související s dlouhodobým majetkem ve všech společnostech.</span><span class="sxs-lookup"><span data-stu-id="56964-110">The **Analytics – all companies** tab uses capabilities of Microsoft Power BI to show visuals that are related to fixed assets in all companies.</span></span>
 

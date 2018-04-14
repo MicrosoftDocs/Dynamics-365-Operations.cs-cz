@@ -18,17 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
-ms.openlocfilehash: 7ff098bea0cd2dd071fc5a64dacb322a5d3e3ee6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1b60246b0c546a28720f0d360752738ac81c395f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="half-yearly-depreciation-on-fixed-asset-disposal-for-the-czech-republic"></a><span data-ttu-id="8c153-103">Pololetní odpisy vyřazení dlouhodobého majetku pro Českou republiku</span><span class="sxs-lookup"><span data-stu-id="8c153-103">Half-yearly depreciation on fixed asset disposal for the Czech Republic</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="8c153-104">Toto téma vysvětluje, jak nastavit pololetní odpisy, tak abyste mohli použít pololetní odpisy dlouhodobého majetku, který je prodaný nebo jinak vyřazený.</span><span class="sxs-lookup"><span data-stu-id="8c153-104">This topic explains how to set up half-yearly depreciation, so that you can apply half the yearly depreciation for fixed assets that are sold or otherwise disposed of.</span></span>
 

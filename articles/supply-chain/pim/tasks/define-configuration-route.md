@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: b02cbd9931821c69d8b42f796cdebd2aff6f2ddd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 26fb7dc7113411bb5117476ddfa02ae9d81cf287
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="define-configuration-routes"></a><span data-ttu-id="0a02d-103">Definování konfiguračních postupů</span><span class="sxs-lookup"><span data-stu-id="0a02d-103">Define configuration routes</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0a02d-104">Tento postup se zaměřuje na definování konfiguračního postupu, který určuje pořadí, ve kterém jsou konfigurační skupiny nabídnuty.</span><span class="sxs-lookup"><span data-stu-id="0a02d-104">This procedure focuses on defining a configuration route that determines the sequence in which the configuration groups will be presented.</span></span> <span data-ttu-id="0a02d-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="0a02d-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="0a02d-106">Jedná se o šestý postup z osmi, který vysvětluje vytvoření kombinací konfigurace založené na dimenzích.</span><span class="sxs-lookup"><span data-stu-id="0a02d-106">This is the sixth procedure out of eight that explains how to build combinations for dimension-based configuration.</span></span>
 

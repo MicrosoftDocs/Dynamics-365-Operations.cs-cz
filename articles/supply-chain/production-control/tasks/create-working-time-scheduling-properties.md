@@ -17,15 +17,15 @@ ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: eef5844ade45b0c7fdd38624d842c1a96efcd639
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 87828c5ea2ccd804675f2fbcf7aafef1bf422503
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-working-time-scheduling-properties"></a><span data-ttu-id="5e8d4-103">Vytváření vlastností plánování pracovní doby</span><span class="sxs-lookup"><span data-stu-id="5e8d4-103">Create working time scheduling properties</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5e8d4-104">Vlastnosti plánování pracovní doby se používají ke kategorizaci časových intervalů pracovní doby a definování nastavení, které musí operátoři brát v úvahu.</span><span class="sxs-lookup"><span data-stu-id="5e8d4-104">Working time scheduling properties are used to categorize working time intervals and define the settings that operators must take into account.</span></span> <span data-ttu-id="5e8d4-105">Tento postup popisuje, jak definovat vlastnosti plánování pracovního času a přidružených hodnot vlastností.</span><span class="sxs-lookup"><span data-stu-id="5e8d4-105">This procedure shows how to define a working time scheduling property and associated property values.</span></span> <span data-ttu-id="5e8d4-106">Tento proces můžete projít pomocí ukázkových dat společnosti USMF nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="5e8d4-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
 

@@ -20,17 +20,16 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 99030966587a2784f61cecbfc7f9985f75f6d779
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0feb75e728517d24602025e3ceb12cb6ab1840f4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="lean-manufacturing-overview"></a><span data-ttu-id="64a94-103">Lean manufacturing – přehled</span><span class="sxs-lookup"><span data-stu-id="64a94-103">Lean manufacturing overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="64a94-104">Tento článek obsahuje přehled a popis funkcí lean manufacturingu v aplikaci Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="64a94-104">This article provides an overview and description of the lean manufacturing features in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
@@ -40,6 +39,7 @@ ms.lasthandoff: 03/26/2018
 -   <span data-ttu-id="64a94-109">Sledování a správa kanbanovových úloh.</span><span class="sxs-lookup"><span data-stu-id="64a94-109">Monitor and maintain kanban jobs.</span></span>
 
 <span data-ttu-id="64a94-110">Architektura lean manufacturing v aplikaci Finance and Operations obsahuje výrobní toky, aktivity a kanbanová pravidla.</span><span class="sxs-lookup"><span data-stu-id="64a94-110">The lean manufacturing architecture in Finance and Operations consists of production flows, activities, and kanban rules.</span></span> <span data-ttu-id="64a94-111">Tyto struktury jsou plně integrovány do procesů Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="64a94-111">These structures are fully integrated with Finance and Operations processes.</span></span> <span data-ttu-id="64a94-112">Lean manufacturing můžete použít ve smíšeném výrobní prostředí, ve kterém se kombinují různé strategie dodávek, výroby a zdrojů.</span><span class="sxs-lookup"><span data-stu-id="64a94-112">You can use lean manufacturing in a mixed-mode manufacturing environment that combines various supply, production, and sourcing strategies.</span></span> <span data-ttu-id="64a94-113">Tyto strategie zahrnují výrobní zakázky, dávkové objednávky pro zpracovatelské odvětví, nákupní objednávky a převodní příkazy.</span><span class="sxs-lookup"><span data-stu-id="64a94-113">These strategies include production orders, batch orders for process industries, purchase orders, and transfer orders.</span></span>
+
 | <span data-ttu-id="64a94-114">**Důležité**</span><span class="sxs-lookup"><span data-stu-id="64a94-114">**Important**</span></span>                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="64a94-115">Aplikaci Finance and Operations můžete použít k podpoře implementace lean manufacturingu s kanbany.</span><span class="sxs-lookup"><span data-stu-id="64a94-115">You can use Finance and Operations to support the implementation of lean manufacturing with kanbans.</span></span> <span data-ttu-id="64a94-116">Úspěšná implementace zásad štíhlé výroby však závisí na vnitřních obchodních procesech, které používáte, a skutečných výrobních podmínkách a prostředí.</span><span class="sxs-lookup"><span data-stu-id="64a94-116">However, a successful implementation of lean principles depends on the internal business processes that you use, and the actual production conditions and environment.</span></span> |

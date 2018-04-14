@@ -16,15 +16,15 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: acd6a8076288d8d1d1aa05af33e306c6a29780f7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6e1f6fea560db0e1f96123040f80e79f5fe80886
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-payments-for-a-customer-who-have-direct-debit-mandates"></a><span data-ttu-id="716f5-103">Vytváření plateb pro odběratele, který má zmocnění k přímému debetu</span><span class="sxs-lookup"><span data-stu-id="716f5-103">Create payments for a customer who have direct debit mandates</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="716f5-104">Tato procedura ukazuje, jak generovat soubor plateb přímého debetu ISO20022 pro odběratele, který má nakonfigurován přímý debet a fakturu k zaplacení.</span><span class="sxs-lookup"><span data-stu-id="716f5-104">This procedure shows how to generate an ISO20022 direct debit payment file for a customer who has direct debit configured and an invoice to be paid.</span></span> <span data-ttu-id="716f5-105">Vytvoření a zaúčtování faktury je volitelné.</span><span class="sxs-lookup"><span data-stu-id="716f5-105">Creating and posting an invoice is optional.</span></span> <span data-ttu-id="716f5-106">Namísto faktury k zaplacení můžete vybrat zmocnění v deníku před generováním souboru plateb, na podporu scénáře zálohy odběratele.</span><span class="sxs-lookup"><span data-stu-id="716f5-106">Instead of having an invoice to be paid you can select a mandate in a journal prior to generating a payment file, to support a customer prepayment scenario.</span></span>
 

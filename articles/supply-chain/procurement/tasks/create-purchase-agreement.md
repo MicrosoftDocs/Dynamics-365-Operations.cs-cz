@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0d0cc6508071bea3f622bc21f06aa55d2b757b6f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 84b8f08c5e72d3bae597d78cd8f1f77d59355917
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-purchase-agreement"></a><span data-ttu-id="6b902-103">Vytvoření nákupní smlouvy</span><span class="sxs-lookup"><span data-stu-id="6b902-103">Create a purchase agreement</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="6b902-104">Tento postup vám pomůže vytvořit nákupní smlouvu.</span><span class="sxs-lookup"><span data-stu-id="6b902-104">This procedure guides you through the creation of a purchase agreement.</span></span> <span data-ttu-id="6b902-105">Toto by obvykle prováděl vedoucí nákupu.</span><span class="sxs-lookup"><span data-stu-id="6b902-105">This would typically be done by a purchasing manager.</span></span> <span data-ttu-id="6b902-106">Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="6b902-106">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="6b902-107">Než začnete, je třeba nastavit klasifikace nákupní smlouvy.</span><span class="sxs-lookup"><span data-stu-id="6b902-107">You need to have set up purchase agreement classifications before you start.</span></span> <span data-ttu-id="6b902-108">Vytvořenou smlouvu můžete použít při vytváření nákupní objednávky; tím se zkopírují podmínky nákupní smlouvy do záhlaví a jakýchkoli řádků objednávky ovlivněných touto smlouvou.</span><span class="sxs-lookup"><span data-stu-id="6b902-108">Once you've created an agreement you can use it when you create a PO, and this will copy the purchase agreement conditions to the header and to any lines in the order that are affected by the agreement.</span></span>
 

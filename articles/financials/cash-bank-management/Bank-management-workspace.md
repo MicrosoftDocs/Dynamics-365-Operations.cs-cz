@@ -17,15 +17,15 @@ ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 3c38807e9ed3b2ced37ada35b72e388c125bd654
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 68fe68ba92495eb089e9b38cfbd42eba05b7dc47
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="bank-management-workspace"></a><span data-ttu-id="68da5-106">Pracovní prostor správy banky</span><span class="sxs-lookup"><span data-stu-id="68da5-106">Bank management workspace</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="68da5-107">Pracovní prostor **Správa banky** zobrazuje informace, které se vztahují k bankovním účtům společnosti.</span><span class="sxs-lookup"><span data-stu-id="68da5-107">The **Bank management** workspace shows information that is related to company bank accounts.</span></span> <span data-ttu-id="68da5-108">Tento pracovní prostor obsahuje zobrazení **Souhrn** a stránku **Analýzy**.</span><span class="sxs-lookup"><span data-stu-id="68da5-108">This workspace includes a **Summary** view and an **Analytics** page.</span></span> <span data-ttu-id="68da5-109">Zobrazení **Souhrn** ukazuje souhrnné dlaždice, informace o bankovním účtu, graf zůstatku a související informace.</span><span class="sxs-lookup"><span data-stu-id="68da5-109">The **Summary** view shows summary tiles, bank account information, a balance chart, and related information.</span></span> <span data-ttu-id="68da5-110">Stránka **Analýza** používá funkce Microsoft Power BI k zobrazení vizuálů, které se vztahují k zůstatkům na bankovním účtu.</span><span class="sxs-lookup"><span data-stu-id="68da5-110">The **Analytics** page uses the capabilities of Microsoft Power BI to show visuals that are related to bank account balances.</span></span>
 

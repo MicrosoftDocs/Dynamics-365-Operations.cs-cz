@@ -19,16 +19,16 @@ ms.author: YuyuScheller
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: bf9df2a31c758ba6b63ac7952e00065df04552dc
-ms.openlocfilehash: d785d64e97caabdfb499289c7979654789c97541
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: dc3d7b17cf90c02f96e2d116177d66dc6e162da7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="service-subscriptions"></a><span data-ttu-id="23e9e-104">Předplatné servisu</span><span class="sxs-lookup"><span data-stu-id="23e9e-104">Service subscriptions</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="23e9e-105">Předplatné je založeno na projektu času a materiálu.</span><span class="sxs-lookup"><span data-stu-id="23e9e-105">Subscriptions are based on a time-and-materials project.</span></span> <span data-ttu-id="23e9e-106">Předplatné lze vytvořit z projektu, ze stránky **Předplatné servisu** nebo s použitím skupiny předplatného servisu.</span><span class="sxs-lookup"><span data-stu-id="23e9e-106">You can create subscriptions from a project, from the **Service subscriptions** page, or by using a service subscription group.</span></span>
 

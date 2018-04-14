@@ -20,17 +20,16 @@ ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: 2066f6c9dd71144a330e00a71f02dfc21dd930bc
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: dccb702c072b7fae41f5200783a9c95eb8c54988
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-and-manage-attributes"></a><span data-ttu-id="d4f1f-104">Vytvoření a správa atributů</span><span class="sxs-lookup"><span data-stu-id="d4f1f-104">Create and manage attributes</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="d4f1f-105">Tento článek popisuje atributy v aplikaci Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="d4f1f-105">This article describes attributes in Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="d4f1f-106">Atributy umožňují popis produktu a jeho charakteristik prostřednictvím uživatelem definovaných polí.</span><span class="sxs-lookup"><span data-stu-id="d4f1f-106">Attributes let you describe a product and its characteristics through user-defined fields.</span></span>
 
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/17/2018
 
 ## <a name="attribute-type"></a><span data-ttu-id="d4f1f-173">Typ atributu</span><span class="sxs-lookup"><span data-stu-id="d4f1f-173">Attribute type</span></span>
   <span data-ttu-id="d4f1f-174">[![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png)</span><span class="sxs-lookup"><span data-stu-id="d4f1f-174">[![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png)</span></span> 
-  
+
 <span data-ttu-id="d4f1f-175">Atributy jsou založeny na typech atributů.</span><span class="sxs-lookup"><span data-stu-id="d4f1f-175">Attributes are based on attribute types.</span></span> <span data-ttu-id="d4f1f-176">Typy atributů určují typ dat, který lze zadat pro určitý atribut.</span><span class="sxs-lookup"><span data-stu-id="d4f1f-176">Attribute types identify the type of data that can be entered for a specific attribute.</span></span> <span data-ttu-id="d4f1f-177">Aplikace Microsoft Dynamics 365 for Retail v současné době podporují následující typy atributů:</span><span class="sxs-lookup"><span data-stu-id="d4f1f-177">Currently, Microsoft Dynamics 365 for Retail supports the following attribute types:</span></span>
 
 -   <span data-ttu-id="d4f1f-178">**Měna** – tento typ atributu podporuje měnové hodnoty.</span><span class="sxs-lookup"><span data-stu-id="d4f1f-178">**Currency** – This attribute type supports currency values.</span></span> <span data-ttu-id="d4f1f-179">Mohou být vázané (může tedy podporovat rozsah hodnot), nebo mohou být otevřené.</span><span class="sxs-lookup"><span data-stu-id="d4f1f-179">It can be bounded (that is, it can support a value range), or it can be left open.</span></span>

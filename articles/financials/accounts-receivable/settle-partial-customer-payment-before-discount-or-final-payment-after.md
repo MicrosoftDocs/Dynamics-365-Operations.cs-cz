@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f3843935cf17aeb0fd358398dccbca4cf494b132
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5938f7a439c742426e3e73a1ea6c8f66f2e0efdb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a><span data-ttu-id="7a0ec-104">Vyrovnání částečné platby odběratele před datem slevy s konečnou platbou po datu slevy</span><span class="sxs-lookup"><span data-stu-id="7a0ec-104">Settle a partial customer payment before the discount date with a final payment after the discount date</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="7a0ec-105">Tento článek popisuje účinek plateb pro vyrovnání faktur pro odběratele.</span><span class="sxs-lookup"><span data-stu-id="7a0ec-105">This article discusses the effect of settling payments to invoices for customers.</span></span> <span data-ttu-id="7a0ec-106">Scénáře se zaměřují na dopad v dílčí hlavní knize, není v hlavní knize.</span><span class="sxs-lookup"><span data-stu-id="7a0ec-106">The scenario focuses on the effects in the subledger, not in General ledger.</span></span>
 
@@ -107,7 +106,7 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="7a0ec-281">FTI-10020</span><span class="sxs-lookup"><span data-stu-id="7a0ec-281">FTI-10020</span></span>  | <span data-ttu-id="7a0ec-282">Faktura</span><span class="sxs-lookup"><span data-stu-id="7a0ec-282">Invoice</span></span>          | <span data-ttu-id="7a0ec-283">25. 6. 2015</span><span class="sxs-lookup"><span data-stu-id="7a0ec-283">6/25/2015</span></span> | <span data-ttu-id="7a0ec-284">10020</span><span class="sxs-lookup"><span data-stu-id="7a0ec-284">10020</span></span>   | <span data-ttu-id="7a0ec-285">1 000,00</span><span class="sxs-lookup"><span data-stu-id="7a0ec-285">1,000.00</span></span>                             |                                       | <span data-ttu-id="7a0ec-286">0,00</span><span class="sxs-lookup"><span data-stu-id="7a0ec-286">0.00</span></span>    | <span data-ttu-id="7a0ec-287">USD</span><span class="sxs-lookup"><span data-stu-id="7a0ec-287">USD</span></span>      |
 | <span data-ttu-id="7a0ec-288">ARP-10020</span><span class="sxs-lookup"><span data-stu-id="7a0ec-288">ARP-10020</span></span>  |                  | <span data-ttu-id="7a0ec-289">7/1/2015</span><span class="sxs-lookup"><span data-stu-id="7a0ec-289">7/1/2015</span></span>  |         |                                      | <span data-ttu-id="7a0ec-290">297,00</span><span class="sxs-lookup"><span data-stu-id="7a0ec-290">297.00</span></span>                                | <span data-ttu-id="7a0ec-291">0,00</span><span class="sxs-lookup"><span data-stu-id="7a0ec-291">0.00</span></span>    | <span data-ttu-id="7a0ec-292">USD</span><span class="sxs-lookup"><span data-stu-id="7a0ec-292">USD</span></span>      |
 | <span data-ttu-id="7a0ec-293">SLEV-10020</span><span class="sxs-lookup"><span data-stu-id="7a0ec-293">DISC-10020</span></span> |                  | <span data-ttu-id="7a0ec-294">7/1/2015</span><span class="sxs-lookup"><span data-stu-id="7a0ec-294">7/1/2015</span></span>  |         |                                      | <span data-ttu-id="7a0ec-295">3,00</span><span class="sxs-lookup"><span data-stu-id="7a0ec-295">3.00</span></span>                                  | <span data-ttu-id="7a0ec-296">0,00</span><span class="sxs-lookup"><span data-stu-id="7a0ec-296">0.00</span></span>    | <span data-ttu-id="7a0ec-297">USD</span><span class="sxs-lookup"><span data-stu-id="7a0ec-297">USD</span></span>      |
-| <span data-ttu-id="7a0ec-298">ARP-10021</span><span class="sxs-lookup"><span data-stu-id="7a0ec-298">ARP-10021</span></span>  |                  | <span data-ttu-id="7a0ec-299">4 900 * 30% = 1 470</span><span class="sxs-lookup"><span data-stu-id="7a0ec-299">7/11/2015</span></span> |         |                                      | <span data-ttu-id="7a0ec-300">700,00</span><span class="sxs-lookup"><span data-stu-id="7a0ec-300">700.00</span></span>                                | <span data-ttu-id="7a0ec-301">0,00</span><span class="sxs-lookup"><span data-stu-id="7a0ec-301">0.00</span></span>    | <span data-ttu-id="7a0ec-302">USD</span><span class="sxs-lookup"><span data-stu-id="7a0ec-302">USD</span></span>      |
+| <span data-ttu-id="7a0ec-298">ARP-10021</span><span class="sxs-lookup"><span data-stu-id="7a0ec-298">ARP-10021</span></span>  |                  | <span data-ttu-id="7a0ec-299">4 900 \* 30% = 1 470</span><span class="sxs-lookup"><span data-stu-id="7a0ec-299">7/11/2015</span></span> |         |                                      | <span data-ttu-id="7a0ec-300">700,00</span><span class="sxs-lookup"><span data-stu-id="7a0ec-300">700.00</span></span>                                | <span data-ttu-id="7a0ec-301">0,00</span><span class="sxs-lookup"><span data-stu-id="7a0ec-301">0.00</span></span>    | <span data-ttu-id="7a0ec-302">USD</span><span class="sxs-lookup"><span data-stu-id="7a0ec-302">USD</span></span>      |
 
 
 

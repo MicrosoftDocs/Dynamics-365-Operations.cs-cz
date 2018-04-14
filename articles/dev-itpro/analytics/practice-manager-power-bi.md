@@ -18,16 +18,16 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 903eeac732f0c5dc3d94d609ee08988029e33f0c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1285b62130e0c3b0eb30773b3ccaa7a31d844461
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="practice-manager-power-bi-content"></a><span data-ttu-id="a7bf4-104">Obsah Power BI pro manažery školení</span><span class="sxs-lookup"><span data-stu-id="a7bf4-104">Practice manager Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a7bf4-105">Toto téma popisuje, co je součástí obsahu pro **manažery školení** v Microsoft Power BI.</span><span class="sxs-lookup"><span data-stu-id="a7bf4-105">This topic describes what is included in the **Practice manager** Microsoft Power BI content.</span></span> <span data-ttu-id="a7bf4-106">Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které jsou použity k sestavení obsahu.</span><span class="sxs-lookup"><span data-stu-id="a7bf4-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 
@@ -118,7 +118,9 @@ ms.lasthandoff: 01/17/2018
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a><span data-ttu-id="a7bf4-228">Entita: ProjectAccountingCube\_TotalEstimatedCosts</span><span class="sxs-lookup"><span data-stu-id="a7bf4-228">Entity: ProjectAccountingCube\_TotalEstimatedCosts</span></span> 
 <span data-ttu-id="a7bf4-229">**Zdroj dat:** ProjTable</span><span class="sxs-lookup"><span data-stu-id="a7bf4-229">**Data source:** ProjTable</span></span>
 
-| <span data-ttu-id="a7bf4-230">Klíčové měření agregace</span><span class="sxs-lookup"><span data-stu-id="a7bf4-230">Key aggregate measurement</span></span>       | <span data-ttu-id="a7bf4-231">Pole</span><span class="sxs-lookup"><span data-stu-id="a7bf4-231">Field</span></span>               | <span data-ttu-id="a7bf4-232">popis</span><span class="sxs-lookup"><span data-stu-id="a7bf4-232">Description</span></span> |
-|---------------------------------|---------------------|-------------|
+
+|    <span data-ttu-id="a7bf4-230">Klíčové měření agregace</span><span class="sxs-lookup"><span data-stu-id="a7bf4-230">Key aggregate measurement</span></span>    |        <span data-ttu-id="a7bf4-231">Pole</span><span class="sxs-lookup"><span data-stu-id="a7bf4-231">Field</span></span>        |                                          <span data-ttu-id="a7bf4-232">popis</span><span class="sxs-lookup"><span data-stu-id="a7bf4-232">Description</span></span>                                           |
+|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="a7bf4-233">Plánované náklady dokončené aktivity</span><span class="sxs-lookup"><span data-stu-id="a7bf4-233">Completed activity planned cost</span></span> | <span data-ttu-id="a7bf4-234">Sum(TotalCostPrice)</span><span class="sxs-lookup"><span data-stu-id="a7bf4-234">Sum(TotalCostPrice)</span></span> | <span data-ttu-id="a7bf4-235">Celková nákladová cena v odhadech pro všechny typy transakcí projektu s dokončenými úlohami.</span><span class="sxs-lookup"><span data-stu-id="a7bf4-235">The total cost price in estimates for all project transaction types that have completed tasks.</span></span> |
+
 

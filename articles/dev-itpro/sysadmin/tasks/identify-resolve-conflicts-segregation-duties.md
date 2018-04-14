@@ -16,15 +16,15 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c3a366ea4b558ba4e4af7336992dbb091b0b1414
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 90deb42e8443d6d1ee7edbdfcedf4513c28a3bf1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a><span data-ttu-id="f5f05-103">Identifikace a vyřešení konfliktů v dělení zodpovědnosti</span><span class="sxs-lookup"><span data-stu-id="f5f05-103">Identify and resolve conflicts in segregation of duties</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f5f05-104">Můžete nastavit pravidla k oddělení úkolů, které musí být prováděny různými uživateli.</span><span class="sxs-lookup"><span data-stu-id="f5f05-104">You can set up rules to separate tasks that must be performed by different users.</span></span> <span data-ttu-id="f5f05-105">Tento koncept se nazývá dělení zodpovědnosti.</span><span class="sxs-lookup"><span data-stu-id="f5f05-105">This concept is named segregation of duties.</span></span> <span data-ttu-id="f5f05-106">Pokud definice role zabezpečení nebo přiřazení role uživatele porušuje pravidla, konflikt je zaznamenán.</span><span class="sxs-lookup"><span data-stu-id="f5f05-106">When the definition of a security role or the role assignments of a user violate the rules, the conflict is logged.</span></span> <span data-ttu-id="f5f05-107">Všechny konflikty musí vyřešit správce.</span><span class="sxs-lookup"><span data-stu-id="f5f05-107">All conflicts must be resolved by the administrator.</span></span> <span data-ttu-id="f5f05-108">Chcete-li zjistit a vyřešit konflikty, postupujte následujícím způsobem.</span><span class="sxs-lookup"><span data-stu-id="f5f05-108">Complete the following procedure to identify and resolve conflicts.</span></span> <span data-ttu-id="f5f05-109">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="f5f05-109">The demo data company used to create this procedure is USMF.</span></span>
 

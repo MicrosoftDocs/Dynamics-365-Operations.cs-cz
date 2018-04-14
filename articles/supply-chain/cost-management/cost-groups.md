@@ -20,17 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f44099c2ce30d917838733af072721dd79148d27
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 750853de01213187b4df273087c53321abe25d5d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-groups"></a><span data-ttu-id="b0a53-104">Nákl. skupiny</span><span class="sxs-lookup"><span data-stu-id="b0a53-104">Cost groups</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="b0a53-105">Nákladové skupiny poskytují základ pro segmentaci a analýzu nákladových příspěvků v rámci vypočtených nákladů na určitou vyráběnou položku (například nákladové příspěvky na materiál, práci a režii).</span><span class="sxs-lookup"><span data-stu-id="b0a53-105">Cost groups provide the basis for segmenting and analyzing cost contributions in a manufactured item’s calculated cost, such as the cost contributions for material, labor, and overhead.</span></span> <span data-ttu-id="b0a53-106">Termín segmentace nákladových skupin má ve výrobním prostředí několik dalších synonym (například rozúčtování nákladů, dekompozice nákladů nebo klasifikace nákladů).</span><span class="sxs-lookup"><span data-stu-id="b0a53-106">Cost group segmentation has several synonyms within manufacturing environments, such as cost breakdown, cost decomposition, or cost classification.</span></span> 
 

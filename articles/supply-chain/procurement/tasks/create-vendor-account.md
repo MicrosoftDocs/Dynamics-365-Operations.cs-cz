@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6ff2357d5266c45be2f403e463c72089d73db21b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 829a0bbb1b5ab01728c096872b0ada27cfc570c9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-vendor-account"></a><span data-ttu-id="cee63-103">Vytvoření účtu dodavatele</span><span class="sxs-lookup"><span data-stu-id="cee63-103">Create a vendor account</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="cee63-104">Tento postup popisuje vytvoření účtu dodavatele a přidání adresy a kontaktních informací.</span><span class="sxs-lookup"><span data-stu-id="cee63-104">This procedure shows how to create a vendor account, and add an address and contact information.</span></span> <span data-ttu-id="cee63-105">Postup neukazuje vyplnění všech polí pro nákupní a finanční účely.</span><span class="sxs-lookup"><span data-stu-id="cee63-105">The procedure does not show how to populate all fields for purchasing and financial purposes.</span></span> <span data-ttu-id="cee63-106">Další informace o těchto polích naleznete v popisech polí.</span><span class="sxs-lookup"><span data-stu-id="cee63-106">To learn more about those fields, please read the field descriptions.</span></span> <span data-ttu-id="cee63-107">Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="cee63-107">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="cee63-108">Účty dodavatele jsou obvykle vytvářeny pracovníky zásobování nebo zaměstnanci starající se o pohledávky.</span><span class="sxs-lookup"><span data-stu-id="cee63-108">Vendor accounts are typically created by a procurement professional or accounts receivable personnel.</span></span>
 

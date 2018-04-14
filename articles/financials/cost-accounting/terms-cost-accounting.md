@@ -20,17 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3c493ab60952e60e6816ebdc3decb1ebe670806f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-accounting-terminology"></a><span data-ttu-id="c6fc8-103">Terminologie týkající se účtování nákladů</span><span class="sxs-lookup"><span data-stu-id="c6fc8-103">Cost accounting terminology</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="c6fc8-104">Toto téma definuje klíčové podmínky, které se používají v nákladovém účetnictví.</span><span class="sxs-lookup"><span data-stu-id="c6fc8-104">This topic defines the key terms that are used in Cost accounting.</span></span>
 
@@ -150,14 +149,14 @@ ms.lasthandoff: 03/26/2018
 |  + |  <span data-ttu-id="c6fc8-241">Dodatek</span><span class="sxs-lookup"><span data-stu-id="c6fc8-241">Addition</span></span> |
 |  <span data-ttu-id="c6fc8-242">–</span><span class="sxs-lookup"><span data-stu-id="c6fc8-242">–</span></span> |  <span data-ttu-id="c6fc8-243">Odčítání</span><span class="sxs-lookup"><span data-stu-id="c6fc8-243">Subtraction</span></span> |
 | *  | <span data-ttu-id="c6fc8-244">Násobení</span><span class="sxs-lookup"><span data-stu-id="c6fc8-244">Multiplication</span></span>  |
-    
+
 <span data-ttu-id="c6fc8-245">Tradiční výkazy IF nejsou podporovány.</span><span class="sxs-lookup"><span data-stu-id="c6fc8-245">Traditional IF statements are not supported.</span></span> <span data-ttu-id="c6fc8-246">Můžete však vytvořit výkazy a ověřit, zda jsou pravdivé.</span><span class="sxs-lookup"><span data-stu-id="c6fc8-246">However, you can create statements and validate whether they are true.</span></span>
 
 |  <span data-ttu-id="c6fc8-247">**Ověření výkazu**</span><span class="sxs-lookup"><span data-stu-id="c6fc8-247">**Statement  Validation**</span></span> | <span data-ttu-id="c6fc8-248">**Výsledek**</span><span class="sxs-lookup"><span data-stu-id="c6fc8-248">**Result**</span></span>  |
 |---|---|
 |  <span data-ttu-id="c6fc8-249">a > b</span><span class="sxs-lookup"><span data-stu-id="c6fc8-249">a > b</span></span>| <span data-ttu-id="c6fc8-250">True</span><span class="sxs-lookup"><span data-stu-id="c6fc8-250">True</span></span>  |
 |  <span data-ttu-id="c6fc8-251">a > b</span><span class="sxs-lookup"><span data-stu-id="c6fc8-251">a > b</span></span> |  <span data-ttu-id="c6fc8-252">False</span><span class="sxs-lookup"><span data-stu-id="c6fc8-252">False</span></span> |
-    
+
 <span data-ttu-id="c6fc8-253">**Režijní náklady**</span><span class="sxs-lookup"><span data-stu-id="c6fc8-253">**Overhead cost**</span></span>
 
 <span data-ttu-id="c6fc8-254">Režijní náklady odkazují k probíhajícím výdajům na provozní náklady.</span><span class="sxs-lookup"><span data-stu-id="c6fc8-254">Overhead costs refer to the ongoing expenses of operating a business.</span></span> <span data-ttu-id="c6fc8-255">Jde o náklady, které nelze přímo spojit s konkrétními obchodními aktivitami.</span><span class="sxs-lookup"><span data-stu-id="c6fc8-255">They are the costs that can’t be linked directly to specific business activities.</span></span> <span data-ttu-id="c6fc8-256">Následuje několik příkladů režijních nákladů:</span><span class="sxs-lookup"><span data-stu-id="c6fc8-256">Here are some examples of overhead costs:</span></span>

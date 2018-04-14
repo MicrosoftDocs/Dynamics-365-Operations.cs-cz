@@ -17,15 +17,15 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a2c2dab44d771a7e7b662c808912940eed7473c5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 16b6510e4bc9e844e4bdda372733507937c27315
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-preliminary-budget-for-public-sector"></a><span data-ttu-id="adacf-103">Vytvoření předběžného rozpočtu pro veřejný sektor</span><span class="sxs-lookup"><span data-stu-id="adacf-103">Create a preliminary budget for public sector</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="adacf-104">Můžete vytvořit předběžné položky registru rozpočtu pro určitý rozpočtový model a hodnoty dimenze.</span><span class="sxs-lookup"><span data-stu-id="adacf-104">You can create preliminary budget register entries for a specific budget model and dimension values.</span></span> <span data-ttu-id="adacf-105">Po schválení aktuálního rozpočtu můžete vytvořit původní položky registru rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="adacf-105">After the actual budget is approved, you can create original budget register entries.</span></span> <span data-ttu-id="adacf-106">Tato procedura byla vytvořena pomocí ukázkových dat společnosti PSUS v oddílu veřejného sektoru.</span><span class="sxs-lookup"><span data-stu-id="adacf-106">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f674de4877dd2d6e6f1ff02f16a68cb4805d9864
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8691eea1f339902aa74978fa8f27151754cb3e09
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="ship-orders-as-direct-deliveries"></a><span data-ttu-id="adb6c-103">Expedování objednávek jako přímých dodávek</span><span class="sxs-lookup"><span data-stu-id="adb6c-103">Ship orders as direct deliveries</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="adb6c-104">Tento postup ukazuje, jak vytvořit přímé dodávky pro prodejní objednávku.</span><span class="sxs-lookup"><span data-stu-id="adb6c-104">This procedure demonstrates how to create a direct delivery for a sales order.</span></span> <span data-ttu-id="adb6c-105">Přímou dodávku používejte, pokud chcete zboží expedovat odběrateli přímo od dodavatele, místo expedice nejprve do svého vlastního skladu,.</span><span class="sxs-lookup"><span data-stu-id="adb6c-105">You use direct delivery when you want to ship goods to the customer directly from your vendor, instead of shipping them to your own warehouse first.</span></span> <span data-ttu-id="adb6c-106">Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="adb6c-106">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="adb6c-107">K úspěšnému dokončení druhého podúkolu „Vytvoření přímé dodávky z pracovní plochy“ se ujistěte, že zboží, která vyberete v prodejní objednávce, má určeného výchozího dodavatele na pevné kartě Nákup vydaného základního produktu.</span><span class="sxs-lookup"><span data-stu-id="adb6c-107">To successfully complete the second sub-task "Create direct deliveries from the workbench", make sure that the item that you choose on the sales order has a default Vendor specified on the Purchase FastTab of the Released product master.</span></span>
 

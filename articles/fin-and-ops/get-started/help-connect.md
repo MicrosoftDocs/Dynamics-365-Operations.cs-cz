@@ -19,17 +19,16 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c0942b66859da3659be49b19986bfd146ac43130
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2deb2aea7dce889a655fbd5dec5ec928e0f10bb8
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="connect-the-help-system"></a><span data-ttu-id="cf92f-103">Připojení k systému nápovědy</span><span class="sxs-lookup"><span data-stu-id="cf92f-103">Connect the Help system</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="cf92f-104">Toto téma popisuje součásti systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="cf92f-104">This topic describes the components of the Help system for Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="cf92f-105">Poskytuje přehled o tom, jak připojit tyto komponenty, a souhrnné informace o tom, jak vytvořit vlastní nápovědu.</span><span class="sxs-lookup"><span data-stu-id="cf92f-105">It provides an overview of how to connect these components and a summary of how to create custom help.</span></span> 
 
@@ -42,7 +41,7 @@ ms.lasthandoff: 11/03/2017
 ## <a name="connecting-the-help-system"></a><span data-ttu-id="cf92f-111">Připojení systému nápovědy</span><span class="sxs-lookup"><span data-stu-id="cf92f-111">Connecting the Help system</span></span>
 > [!NOTE]
 > <span data-ttu-id="cf92f-112">Karta **Průvodci záznamem úloh** není v současnosti v aplikacích Microsoft Dynamics 365 for Talent a Microsoft Dynamics 365 for Retail k dispozici.</span><span class="sxs-lookup"><span data-stu-id="cf92f-112">The **Task guides** tab is currently not available in Microsoft Dynamics 365 for Talent and Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="cf92f-113">Funkci zpřístupníme v budoucí verzi.</span><span class="sxs-lookup"><span data-stu-id="cf92f-113">We are currently working to enable this functionality in a future release.</span></span> <span data-ttu-id="cf92f-114">Průvodci v prostředí Začínáme v aplikaci Talent jsou i nadále k dispozici a zabývají se základními funkcemi.</span><span class="sxs-lookup"><span data-stu-id="cf92f-114">The Task guides in the Getting Started experience in Talent remain available to cover basic functionality.</span></span> <span data-ttu-id="cf92f-115">Na webu docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) jsou také k dispozici pokyny pro aplikaci Retail i Talent.</span><span class="sxs-lookup"><span data-stu-id="cf92f-115">Procedural help is also available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) for both Retail and Talent.</span></span>
- 
+
 
 <span data-ttu-id="cf92f-116">Pomocí stránky **Systémové parametry** správci systému připojí části systému nápovědy pro implementaci.</span><span class="sxs-lookup"><span data-stu-id="cf92f-116">Using the **System Parameters** page, system administrators connect the pieces of the Help system for an implementation.</span></span> <span data-ttu-id="cf92f-117">[![Formulář Nastavení nápovědy k systémovým parametrům](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) Na stránce **Systémové parametry** proveďte následující kroky:</span><span class="sxs-lookup"><span data-stu-id="cf92f-117">[![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) On the **System parameters** page, follow these steps:</span></span>
 

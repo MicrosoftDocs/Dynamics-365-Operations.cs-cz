@@ -20,17 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6c18b007a72686b1ede69b750e930d72e86f0aba
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 56691376b639e20751b24e25343d8c71c631ad66
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="batch-attributes"></a><span data-ttu-id="ab9e7-105">Atributy dávky</span><span class="sxs-lookup"><span data-stu-id="ab9e7-105">Batch attributes</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ab9e7-106">Toto téma popisuje informace o atributech dávky.</span><span class="sxs-lookup"><span data-stu-id="ab9e7-106">This topic provides information about batch attributes.</span></span> <span data-ttu-id="ab9e7-107">Atributy dávky umožňují charakterizovat suroviny a hotové výrobky, které vytvářejí skladové dávky.</span><span class="sxs-lookup"><span data-stu-id="ab9e7-107">Batch attributes are characteristics of raw materials and finished products that make up inventory batches.</span></span> <span data-ttu-id="ab9e7-108">Toto téma rovněž vysvětluje postup přiřazení atributů dávky a způsob, jakým je můžete vyhledat při rezervaci dávek.</span><span class="sxs-lookup"><span data-stu-id="ab9e7-108">The topic also explains how to assign batch attributes, and how you can search on them when you reserve batches.</span></span>
 

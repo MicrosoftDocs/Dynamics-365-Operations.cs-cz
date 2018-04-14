@@ -17,15 +17,15 @@ ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 99c230c0e6a580f77d863b6f0be298615966c479
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6cd8b8e409348b4df1144ad58700882879012766
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="define-resource-capabilities"></a><span data-ttu-id="c2c15-103">Definování schopností prostředku</span><span class="sxs-lookup"><span data-stu-id="c2c15-103">Define resource capabilities</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c2c15-104">Schopnosti prostředku popisují, jaké mají provozní prostředky možnosti.</span><span class="sxs-lookup"><span data-stu-id="c2c15-104">Resource capabilities describe what operations resources can do.</span></span> <span data-ttu-id="c2c15-105">Při plánování jsou požadavky jednotlivých úloh a operací porovnávány s možnostmi dostupných prostředků.</span><span class="sxs-lookup"><span data-stu-id="c2c15-105">During scheduling, the requirements of each job and operation are matched against the capabilities of the available resources.</span></span> <span data-ttu-id="c2c15-106">Tento Průvodce úkolem vám pomůže vytvořit schopnosti prostředku a přiřadit je k prostředku.</span><span class="sxs-lookup"><span data-stu-id="c2c15-106">This task guide will help you create a resource capability and assign it to a resource.</span></span> <span data-ttu-id="c2c15-107">Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="c2c15-107">The demo data company used to create this task is USMF.</span></span>
 

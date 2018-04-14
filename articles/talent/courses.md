@@ -19,17 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 27fbc54afca384b804f2b0468206242ff89d4031
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a86709bc222339531a21997510a65c138024256c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-training-courses"></a><span data-ttu-id="c71d7-103">Nastavení školících kurzů</span><span class="sxs-lookup"><span data-stu-id="c71d7-103">Set up training courses</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="c71d7-104">Správci lidských zdrojů a vedoucí pracovníci mohou funkce kurzů používat ke správě informací o školeních nabízených pracovníkům.</span><span class="sxs-lookup"><span data-stu-id="c71d7-104">Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.</span></span>
 
@@ -81,15 +80,15 @@ ms.lasthandoff: 02/23/2018
 
 ## <a name="course-tasks"></a><span data-ttu-id="c71d7-134">Úkoly kurzu</span><span class="sxs-lookup"><span data-stu-id="c71d7-134">Course tasks</span></span>
 <span data-ttu-id="c71d7-135">U každého kurzu můžete provést následující úlohy.</span><span class="sxs-lookup"><span data-stu-id="c71d7-135">For each course, you can complete the following tasks.</span></span>
--   <span data-ttu-id="c71d7-136">Registrovat účastníky</span><span class="sxs-lookup"><span data-stu-id="c71d7-136">Register participants</span></span>
--   <span data-ttu-id="c71d7-137">Nastavit uzávěrku registrace</span><span class="sxs-lookup"><span data-stu-id="c71d7-137">Specify a registration deadline</span></span>
--   <span data-ttu-id="c71d7-138">Definovat minimální a maximální počet účastníků</span><span class="sxs-lookup"><span data-stu-id="c71d7-138">Define the minimum and maximum number of participants</span></span>
--   <span data-ttu-id="c71d7-139">Přiřadit místo konání kurzu a učebnu</span><span class="sxs-lookup"><span data-stu-id="c71d7-139">Assign a course location and classroom</span></span>
--   <span data-ttu-id="c71d7-140">Doporučit hotely účastníkům kurzu</span><span class="sxs-lookup"><span data-stu-id="c71d7-140">Recommend hotels to course participants</span></span>
--   <span data-ttu-id="c71d7-141">Vytvořit popis kurzu, který je poté možné zveřejnit na portálu Samoobsluha pro zaměstnance</span><span class="sxs-lookup"><span data-stu-id="c71d7-141">Create a course description, which you can then advertise on Employee self service</span></span>
+- <span data-ttu-id="c71d7-136">Registrovat účastníky</span><span class="sxs-lookup"><span data-stu-id="c71d7-136">Register participants</span></span>
+- <span data-ttu-id="c71d7-137">Nastavit uzávěrku registrace</span><span class="sxs-lookup"><span data-stu-id="c71d7-137">Specify a registration deadline</span></span>
+- <span data-ttu-id="c71d7-138">Definovat minimální a maximální počet účastníků</span><span class="sxs-lookup"><span data-stu-id="c71d7-138">Define the minimum and maximum number of participants</span></span>
+- <span data-ttu-id="c71d7-139">Přiřadit místo konání kurzu a učebnu</span><span class="sxs-lookup"><span data-stu-id="c71d7-139">Assign a course location and classroom</span></span>
+- <span data-ttu-id="c71d7-140">Doporučit hotely účastníkům kurzu</span><span class="sxs-lookup"><span data-stu-id="c71d7-140">Recommend hotels to course participants</span></span>
+- <span data-ttu-id="c71d7-141">Vytvořit popis kurzu, který je poté možné zveřejnit na portálu Samoobsluha pro zaměstnance</span><span class="sxs-lookup"><span data-stu-id="c71d7-141">Create a course description, which you can then advertise on Employee self service</span></span>
 
   ><span data-ttu-id="c71d7-142">**Poznámka** Kurz lze odstranit pouze v případě, že do něj není nikdo zaregistrován.</span><span class="sxs-lookup"><span data-stu-id="c71d7-142">**Note** You can delete a course only if no one has registered for it.</span></span> 
-    
+
 ## <a name="course-statuses"></a><span data-ttu-id="c71d7-143">Stavy kurzu</span><span class="sxs-lookup"><span data-stu-id="c71d7-143">Course statuses</span></span>
 <span data-ttu-id="c71d7-144">V následující tabulce jsou uvedeny možné stavy kurzu a akce, které lze provádět, je-li kurz nachází ve specifickém stavu.</span><span class="sxs-lookup"><span data-stu-id="c71d7-144">The following table lists the possible course statuses and the actions that you can complete when the course has a specific status.</span></span>
 

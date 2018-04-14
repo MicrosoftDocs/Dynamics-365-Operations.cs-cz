@@ -19,19 +19,18 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b36b290026f384109ccd710a9979892dd5268307
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4c1e1a588e07b9f60880dcf1c34139c5c1ceba35
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a><span data-ttu-id="ab0e4-103">Metody výpočtu DPH v poli Zdroj</span><span class="sxs-lookup"><span data-stu-id="ab0e4-103">Sales tax calculation methods in the Origin field</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="ab0e4-104">Tento článek vysvětluje možnosti v poli Zdroj na stránce Kódy DPH, a postup výpočtu DPH na základě vybrané možnosti pro kód DPH.</span><span class="sxs-lookup"><span data-stu-id="ab0e4-104">This article explains the options in the Origin field on the sales tax codes page and how sales tax is calculated based on the selected option for a sales tax code.</span></span>
 
@@ -53,11 +52,12 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="ab0e4-122">DPH = 25% s pomocí metody výpočtu procenta z hrubé částky</span><span class="sxs-lookup"><span data-stu-id="ab0e4-122">SALESTAX = 25%, using the Percentage of gross amount calculation method</span></span>
 
 <span data-ttu-id="ab0e4-123">Pokud je čistá částka 10,00, pak CLO 1 = 1,00 (10,00 x 10 %) a CLO 2 = 2,00 (10,00 x 20 %).</span><span class="sxs-lookup"><span data-stu-id="ab0e4-123">If the net amount is 10.00, then DUTY 1 is 1.00 (10.00 x 10%) and DUTY 2 = 2.00 (10.00 x 20%).</span></span> <span data-ttu-id="ab0e4-124">Částky budou vypadat následovně: Hrubá částka: Čistá částka + Částka cla 1 + částka cla 2 (10,00 + 1,00 + 2,00) = 13,00 DPH = 13,00 x 25 % = 3,25 Celkové clo a DPH: 1,00 + 2,00 + 3,25 = 6,25 Celková částka: 10,00 + 6,25 = 16,25</span><span class="sxs-lookup"><span data-stu-id="ab0e4-124">The amounts would be as follows: Gross amount: Net amount + DUTY 1 amount + DUTY 2 amount (10.00 + 1.00 + 2.00) = 13.00 SALESTAX = 13.00 x 25% = 3.25 Total DUTIES and SALESTAX: 1.00 + 2.00 + 3.25 = 6.25 Total amount: 10.00 + 6.25 = 16.25</span></span>
+
 | <span data-ttu-id="ab0e4-125">**Poznámka**</span><span class="sxs-lookup"><span data-stu-id="ab0e4-125">**Note**</span></span>                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="ab0e4-126">Pro transakci lze použít pouze jeden daňový kód, kde Zdroj = procento z hrubé částky.</span><span class="sxs-lookup"><span data-stu-id="ab0e4-126">Only one tax code with Origin = Percentage of gross amount can be used for a transaction.</span></span> <span data-ttu-id="ab0e4-127">Je-li více než jeden takový kód daně určen pro transakci, zobrazí se chyba a DPH nemůže být vypočítána.</span><span class="sxs-lookup"><span data-stu-id="ab0e4-127">If more than one such tax code is determined for a transaction an error will be displayed that sales tax cannot be calculated.</span></span> |
 
- 
+
 <a name="percentage-of-sales-tax"></a><span data-ttu-id="ab0e4-128">Procento DPH</span><span class="sxs-lookup"><span data-stu-id="ab0e4-128">Percentage of sales tax</span></span>
 -----------------------
 
@@ -70,6 +70,7 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="ab0e4-136">DPH = 25% s pomocí metody Procento z hrubé částky</span><span class="sxs-lookup"><span data-stu-id="ab0e4-136">SALESTAX = 25%, using the Percentage of gross amount method</span></span>
 
 <span data-ttu-id="ab0e4-137">Čistá částka: 10,00 Clo 1: 10,00 x 10 % = 1,00 Clo 2: 1,00 x 20 % = 0,20 Hrubá částka: 10,00 + 1,00 + 0,20 = 11,20 DPH: 11,20 x 25 % = 2,80 Celkové clo a DPH: 1,00 + 0,20 + 2,80 = 4,00 Celková částka: 10,00 + 4,00 = 14,00</span><span class="sxs-lookup"><span data-stu-id="ab0e4-137">Net amount: 10.00 DUTY 1: 10.00 x 10% = 1.00 DUTY 2: 1.00 x 20% = 0.20 Gross amount: 10.00 + 1.00 + 0.20 = 11.20 SALESTAX: 11.20 x 25% = 2.80 Total DUTIES and SALESTAX: 1.00 + 0.20 + 2.80 = 4.00 Total amount: 10.00 + 4.00 = 14.00</span></span>
+
 | <span data-ttu-id="ab0e4-138">**Poznámka**</span><span class="sxs-lookup"><span data-stu-id="ab0e4-138">**Note**</span></span>                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="ab0e4-139">Při výpočtu daně není možné použít více úrovní daně.</span><span class="sxs-lookup"><span data-stu-id="ab0e4-139">Multilevel tax on tax calculations are not possible.</span></span> <span data-ttu-id="ab0e4-140">Daň nelze vypočítat na základě DPH, které je již vypočteno na základě jiné daně.</span><span class="sxs-lookup"><span data-stu-id="ab0e4-140">A tax cannot be calculated based on a tax which already is calculated based on another tax.</span></span> <span data-ttu-id="ab0e4-141">U transakce lze vypočítat více jednotlivých úrovní daně u kódů daně.</span><span class="sxs-lookup"><span data-stu-id="ab0e4-141">Multiple single level tax on tax codes can be calculated on a transaction.</span></span> |
@@ -79,6 +80,7 @@ ms.lasthandoff: 11/03/2017
 ### <a name="example"></a><span data-ttu-id="ab0e4-146">Příklad</span><span class="sxs-lookup"><span data-stu-id="ab0e4-146">Example</span></span>
 
 <span data-ttu-id="ab0e4-147">Kód DPH je nastaven jako: 1,20 USD za jednotku = balení Na řádku prodejní faktury je prodáno 25 balení položky DPH bude vypočtena jako hodnota 25 x 1,20 = 30,00</span><span class="sxs-lookup"><span data-stu-id="ab0e4-147">Sales tax code is set up as: USD 1.20 per unit = box On a sales invoice line 25 boxes of an item are sold Sales tax is calculated as 25 x 1.20 = 30.00</span></span>
+
 | <span data-ttu-id="ab0e4-148">**Poznámka**</span><span class="sxs-lookup"><span data-stu-id="ab0e4-148">**Note**</span></span>                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="ab0e4-149">Je-li transakce zadána u jiné jednotky než jednotky zadané v kódu prodejní daně, převede se automaticky podle pravidel převodů jednotek, které jsou nastaveny na stránce Převody jednotek.</span><span class="sxs-lookup"><span data-stu-id="ab0e4-149">If the transaction is entered in different unit than the unit specified on the sales tax code, it is converted automatically based on the unit conversions that are set up in the Unit conversions page.</span></span> |

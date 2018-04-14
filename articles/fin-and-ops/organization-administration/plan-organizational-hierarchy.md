@@ -19,17 +19,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a290f6f453d8440d6e68a13915339d3da31d959a
-ms.openlocfilehash: 47c97ee32c345f584c8efa7a00b7ff3ec4b70475
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e04926abca47444d06708f34278eb02bb1640cd6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="plan-your-organizational-hierarchy"></a><span data-ttu-id="42776-103">Plánování organizační hierarchie</span><span class="sxs-lookup"><span data-stu-id="42776-103">Plan your organizational hierarchy</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="42776-104">Před nastavením organizací a organizačních hierarchií v Microsoft Dynamics 365 for Finance and Operations se ujistěte, že máte plán, jak bude vaše společnost modelována.</span><span class="sxs-lookup"><span data-stu-id="42776-104">Before you set up organizations and organization hierarchies in Microsoft Dynamics 365 for Finance and Operations, make sure that you plan how your business will be modeled.</span></span> <span data-ttu-id="42776-105">Organizační model má podstatný vliv na implementaci aplikace Finance and Operations a obchodní procesy.</span><span class="sxs-lookup"><span data-stu-id="42776-105">The organization model has a significant effect on the implementation of Finance and Operations and on business processes.</span></span> 
 
@@ -158,7 +157,7 @@ ms.lasthandoff: 04/03/2018
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a><span data-ttu-id="42776-254">Pokud organizace modelována jako provozní jednotka</span><span class="sxs-lookup"><span data-stu-id="42776-254">If the organization is modeled as an operating unit</span></span> 
 <span data-ttu-id="42776-255">Pokud jsou předpisy a účetní postupy stejné v zemích/oblastech, kde jsou umístěny vaše organizace, můžete použít stejné postupy roční uzávěrky.</span><span class="sxs-lookup"><span data-stu-id="42776-255">If laws and accounting practices are the same among the countries/regions where your organizations are located, you may use a single set of year-end procedures.</span></span> <span data-ttu-id="42776-256">To znamená, že můžete organizace namodelovat jako provozní jednotky.</span><span class="sxs-lookup"><span data-stu-id="42776-256">This means that you can model the organizations as operating units.</span></span> <span data-ttu-id="42776-257">Všechny provozní jednotky musí používat stejný postup roční uzávěrky.</span><span class="sxs-lookup"><span data-stu-id="42776-257">All operating units must use the same year-end closing procedure.</span></span> 
-   
+
 ### <a name="number-sequences"></a><span data-ttu-id="42776-258">Číselné řady</span><span class="sxs-lookup"><span data-stu-id="42776-258">Number sequences</span></span>
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a><span data-ttu-id="42776-259">Pokud organizace modelována jako právnická osoba</span><span class="sxs-lookup"><span data-stu-id="42776-259">If the organization is modeled as a legal entity</span></span>
 <span data-ttu-id="42776-260">Číselné řady pro některé odkazy lze nastavit podle právnické osoby.</span><span class="sxs-lookup"><span data-stu-id="42776-260">Number sequences for some references can be set up per legal entity.</span></span> <span data-ttu-id="42776-261">Některé číselné řady mohou být sdíleny.</span><span class="sxs-lookup"><span data-stu-id="42776-261">Some number sequences can be shared.</span></span> 

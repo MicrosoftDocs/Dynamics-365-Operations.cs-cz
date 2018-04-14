@@ -19,17 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9960af8c4961a42e7e829077da40bcbbf3bc71c2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 52e6003dfddc398c19055405bf936195febe0737
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cash-discounts"></a><span data-ttu-id="cee7e-104">Platební slevy</span><span class="sxs-lookup"><span data-stu-id="cee7e-104">Cash discounts</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="cee7e-105">Platební slevy jsou nastaveny a sdílené pro závazky a pohledávky.</span><span class="sxs-lookup"><span data-stu-id="cee7e-105">Cash discounts are setup and shared for Accounts payable and Accounts receivable.</span></span>  <span data-ttu-id="cee7e-106">Dostupná platební sleva může být definovaná na faktuře odběratele nebo dodavatele a proběhne, jestliže bude faktura zaplacena v rámci data platební slevy.</span><span class="sxs-lookup"><span data-stu-id="cee7e-106">The cash discount available can be defined on the customer invoice or vendor invoice, and will be taken if the invoice is paid within the cash discount date.</span></span> 
 
@@ -65,6 +64,7 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="cee7e-135">1. březen = 80</span><span class="sxs-lookup"><span data-stu-id="cee7e-135">March 1 = 80</span></span>
 
 <span data-ttu-id="cee7e-136">Faktura na 1000 USD s podmínkou platební slevy 20D2% je zaúčtována 15. února.</span><span class="sxs-lookup"><span data-stu-id="cee7e-136">An invoice for 1000 USD with cash discount terms of 20D2% is posted on February 15.</span></span> <span data-ttu-id="cee7e-137">Částka v zúčtovací měně faktury činí 1100 EUR.</span><span class="sxs-lookup"><span data-stu-id="cee7e-137">The accounting currency amount of the invoice is 1100 EUR.</span></span> <span data-ttu-id="cee7e-138">Platba za 980 USD je vyrovnána s fakturou 1. března.</span><span class="sxs-lookup"><span data-stu-id="cee7e-138">A payment for 980 USD is settled with the invoice on March 1.</span></span> <span data-ttu-id="cee7e-139">Částka platební slevy je 20 USD.</span><span class="sxs-lookup"><span data-stu-id="cee7e-139">The cash discount amount is 20 USD.</span></span> <span data-ttu-id="cee7e-140">Částka v zúčtovací měně u dané platby činí 784 EUR.</span><span class="sxs-lookup"><span data-stu-id="cee7e-140">The accounting currency amount of the payment is 784 EUR.</span></span> <span data-ttu-id="cee7e-141">Částka v zúčtovací měně u platební slevy je vypočítána pomocí směnného kurzu ke dni 1. března: 20 \* 80 / 100 = 16 EUR.</span><span class="sxs-lookup"><span data-stu-id="cee7e-141">The accounting currency amount of the cash discount is calculated by using the exchange rate as of March 1: 20 \* 80 / 100 = 16 EUR.</span></span>
+
 | <span data-ttu-id="cee7e-142">**Poznámka**</span><span class="sxs-lookup"><span data-stu-id="cee7e-142">**Note**</span></span>                                                                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="cee7e-143">Je-li na stránce Parametry pohledávek nebo na stránce Parametry závazků zvolena možnost Vypočítat platební slevy pro částečné platby, použije se směnný kurz platný k datu jednotlivých částečných plateb.</span><span class="sxs-lookup"><span data-stu-id="cee7e-143">If the Calculate cash discounts for partial payments option is selected in the Accounts receivable parameters or Accounts payable parameters pages, the exchange rate that is in effect on the date of each partial payment is used.</span></span> |

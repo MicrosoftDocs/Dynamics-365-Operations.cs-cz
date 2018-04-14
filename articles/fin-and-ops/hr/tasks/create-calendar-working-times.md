@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a9d0d9a3f278a09e89311ee75b6f95fb4f3b04cb
-ms.openlocfilehash: 97751310cee3441d80d57860bc90490cf5708de2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a8dcef8d8ba6f6d41a997b5b0623cb9577ce00d3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-calendar-and-generate-working-times"></a><span data-ttu-id="834a7-103">Vytvoření kalendáře a vygenerování pracovní doby</span><span class="sxs-lookup"><span data-stu-id="834a7-103">Create a calendar and generate working times</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="834a7-104">Kalendáře popisují kapacitu a pracovní dobu provozních prostředků.</span><span class="sxs-lookup"><span data-stu-id="834a7-104">Calendars describe the capacity and working times of operations resources.</span></span> <span data-ttu-id="834a7-105">Tento postup vám usnadní definování pracovního kalendář podle šablony pracovní doby.</span><span class="sxs-lookup"><span data-stu-id="834a7-105">This procedure will help you define a work calendar based on a working time template.</span></span> <span data-ttu-id="834a7-106">Tento proces můžete projít pomocí ukázkových dat společnosti USMF nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="834a7-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
 

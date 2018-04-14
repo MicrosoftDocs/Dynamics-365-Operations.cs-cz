@@ -18,16 +18,16 @@ ms.author: shielas
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 58089418ac233d31a2a4f0298af5e884d77a67d3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f3abbb2d124ee6c11e46e3680a342ecb12a12ec3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="personnel-actions-faq"></a><span data-ttu-id="42416-104">Akce personálu [Nejčastější dotazy]</span><span class="sxs-lookup"><span data-stu-id="42416-104">Personnel actions [FAQ]</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="42416-105">Toto téma obsahuje odpovědí na možné otázky, pokud vaše organizace používá akce personálu.</span><span class="sxs-lookup"><span data-stu-id="42416-105">This topic contains answers to questions that you might have if your organization uses personnel actions.</span></span> <span data-ttu-id="42416-106">Akce personálu jsou další kroky, které je třeba splnit při provádění určité úlohy týkající se personálu.</span><span class="sxs-lookup"><span data-stu-id="42416-106">Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks.</span></span> <span data-ttu-id="42416-107">Příklady úloh, které mohou vyžadovat akce personálu, jsou při vytváření nových pozic, úpravě hodnot existující pozice, náboru nových pracovníků, převodu pracovníků, změně kompenzace pracovníka, změně přiřazení pozic nebo udělení výpovědi pracovníkům.</span><span class="sxs-lookup"><span data-stu-id="42416-107">Examples of tasks that might require personnel actions are when you create new positions, modify existing position values, hire new workers, transfer workers, change worker compensation, change position assignments, or terminate workers.</span></span>
 
@@ -64,9 +64,9 @@ ms.lasthandoff: 03/07/2018
 <span data-ttu-id="42416-140">Pokud požadavek akce personálu selže, postupujte v řešení chyby a opětovném odeslání žádosti:</span><span class="sxs-lookup"><span data-stu-id="42416-140">If a personnel action request fails, follow these steps to resolve the error and resubmit the request:</span></span>
 
 > 1. <span data-ttu-id="42416-141">Klikněte v **podokně akcí** na tlačítko **Text chyby**, aby se zobrazil text zprávy s popisem problému.</span><span class="sxs-lookup"><span data-stu-id="42416-141">On the **Action Pane**, click the **Error text** button to view the message text that describes the problem.</span></span>
-
+> 
 > 2. <span data-ttu-id="42416-142">V **podokně akcí** klikněte na tlačítko **Znovu aktivovat**, abyste načetli nejnovější informace o stavu akce personálu zpět ve stavu **Koncept**.</span><span class="sxs-lookup"><span data-stu-id="42416-142">On the **Action Pane**, click **Reactivate** to load the latest information and set the status of the personnel action back to **Draft**.</span></span>
-
+> 
 > 3. <span data-ttu-id="42416-143">Vyřešte chybu a klikněte na možnost **Dokončit** nebo **Odeslat**.</span><span class="sxs-lookup"><span data-stu-id="42416-143">Resolve the error, and then click **Complete** or **Submit**.</span></span>
 
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a><span data-ttu-id="42416-144">Co se stane s akcí personálu používající workflow po dokončení výsledného schválení?</span><span class="sxs-lookup"><span data-stu-id="42416-144">What happens to a personnel action that uses workflow when the final approval is completed?</span></span>

@@ -18,17 +18,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 33cd67bda4d4b868b00cb1c0a062de03d3aa6273
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: caa07418cb834c7f004c4fb95d5ea1c0e3a28f56
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="new-task-guides-february-2016"></a><span data-ttu-id="167b4-104">Noví průvodci úkolem (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="167b4-104">New task guides (February 2016)</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="167b4-105">Toto téma obsahuje průvodce záznamem úloh vydané pro knihovny Microsoft BPM k únoru 2016.</span><span class="sxs-lookup"><span data-stu-id="167b4-105">This topic lists the Task guides that were released to the Microsoft BPM libraries as of February 2016.</span></span>  <span data-ttu-id="167b4-106">Publikované knihovny zahrnují (únor 2016) knihovnu APQC Unified Library for Microsoft Dynamics AX a (únor 2016) příručku Začínáme.</span><span class="sxs-lookup"><span data-stu-id="167b4-106">The libraries that were published include the (February 2016) APQC Unified Library for Microsoft Dynamics AX and (February 2016) Getting started.</span></span>
 
@@ -50,8 +49,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-124">Nastavení ověřování párování faktur závazků</span><span class="sxs-lookup"><span data-stu-id="167b4-124">Set up Accounts payable invoice matching validation</span></span>       | <span data-ttu-id="167b4-125">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-125">Global</span></span>             |
 | <span data-ttu-id="167b4-126">Nastavit zásady faktur dodavatele</span><span class="sxs-lookup"><span data-stu-id="167b4-126">Set up vendor invoice policies</span></span>                            | <span data-ttu-id="167b4-127">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-127">Global</span></span>             |
 
- 
 
+ 
 ### <a name="accounts-receivable"></a><span data-ttu-id="167b4-128">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="167b4-128">Accounts receivable</span></span>
 
 |                                                             |                    |
@@ -71,8 +70,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-153">Kontrola inkasních informací</span><span class="sxs-lookup"><span data-stu-id="167b4-153">Review collections information</span></span>                              | <span data-ttu-id="167b4-154">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-154">Global</span></span>             |
 | <span data-ttu-id="167b4-155">Nastavení a generování informací o splatnosti pohledávek</span><span class="sxs-lookup"><span data-stu-id="167b4-155">Set up and generate accounts receivable aging information</span></span>   | <span data-ttu-id="167b4-156">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-156">Global</span></span>             |
 
- 
 
+ 
 ### <a name="cash-and-bank-management"></a><span data-ttu-id="167b4-157">Pokladna a banka</span><span class="sxs-lookup"><span data-stu-id="167b4-157">Cash and bank management</span></span>
 
 |                                                                      |                    |
@@ -99,8 +98,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-196">Vyrovnání postdatovaného šeku od odběratele</span><span class="sxs-lookup"><span data-stu-id="167b4-196">Settle a postdated check from a customer</span></span>                             | <span data-ttu-id="167b4-197">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-197">Global</span></span>             |
 | <span data-ttu-id="167b4-198">Přehled plateb dodavatele</span><span class="sxs-lookup"><span data-stu-id="167b4-198">Vendor payment overview</span></span>                                              | <span data-ttu-id="167b4-199">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-199">Global</span></span>             |
 
- 
 
+ 
 ### <a name="compliance"></a><span data-ttu-id="167b4-200">Kompatibilita</span><span class="sxs-lookup"><span data-stu-id="167b4-200">Compliance</span></span>
 
 |                                            |                    |
@@ -108,8 +107,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-201">**Řádek BPM**</span><span class="sxs-lookup"><span data-stu-id="167b4-201">**BPM Line**</span></span>                               | <span data-ttu-id="167b4-202">**Země/oblast**</span><span class="sxs-lookup"><span data-stu-id="167b4-202">**Country/Region**</span></span> |
 | <span data-ttu-id="167b4-203">Definování zásad auditu pro zdrojové dokumenty</span><span class="sxs-lookup"><span data-stu-id="167b4-203">Define audit policies for source documents</span></span> | <span data-ttu-id="167b4-204">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-204">Global</span></span>             |
 
- 
 
+ 
 ### <a name="cost-management"></a><span data-ttu-id="167b4-205">Správa nákladů</span><span class="sxs-lookup"><span data-stu-id="167b4-205">Cost management</span></span>
 
 |                                                                     |                    |
@@ -121,8 +120,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-214">Zobrazení současného NV stavu u výrobní zakázky</span><span class="sxs-lookup"><span data-stu-id="167b4-214">View current WIP status on a production order</span></span>                       | <span data-ttu-id="167b4-215">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-215">Global</span></span>             |
 | <span data-ttu-id="167b4-216">Zobrazení výkazu zásob a KPI podle objektu nákladů</span><span class="sxs-lookup"><span data-stu-id="167b4-216">View inventory statement and KPI by cost object</span></span>                     | <span data-ttu-id="167b4-217">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-217">Global</span></span>             |
 
- 
 
+ 
 ### <a name="countryregion-functionality"></a><span data-ttu-id="167b4-218">Funkce země nebo oblasti</span><span class="sxs-lookup"><span data-stu-id="167b4-218">Country/Region functionality</span></span>
 
 |                                                                                                        |                                 |
@@ -263,8 +262,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-485">GB-00009 Vytvoření dobropisu pro slevu pro vyrovnání</span><span class="sxs-lookup"><span data-stu-id="167b4-485">GB-00009 Create a credit note on the settlement discount</span></span>                                               | <span data-ttu-id="167b4-486">Spojené království</span><span class="sxs-lookup"><span data-stu-id="167b4-486">United Kingdom</span></span>                  |
 | <span data-ttu-id="167b4-487">GB-00009 Nastavení parametrů pro dobropis u slevy za včasnou platbu</span><span class="sxs-lookup"><span data-stu-id="167b4-487">GB-00009 Setup parameters for credit note on prompt payment discount</span></span>                                   | <span data-ttu-id="167b4-488">Spojené království</span><span class="sxs-lookup"><span data-stu-id="167b4-488">United Kingdom</span></span>                  |
 
- 
 
+ 
 ### <a name="develop-vision-and-strategy"></a><span data-ttu-id="167b4-489">Vytvoření vize a strategie</span><span class="sxs-lookup"><span data-stu-id="167b4-489">Develop Vision and Strategy</span></span>
 
 |                                                                                          |                    |
@@ -276,8 +275,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-498">Nastavit dotaz jako závislý na odpovědi na předcházející otázku (podmíněné otázky)</span><span class="sxs-lookup"><span data-stu-id="167b4-498">Make a question dependent on the answer of the previous question (Conditional questions)</span></span> | <span data-ttu-id="167b4-499">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-499">Global</span></span>             |
 | <span data-ttu-id="167b4-500">Výsledek dotazníku podle procenta</span><span class="sxs-lookup"><span data-stu-id="167b4-500">Score a questionnaire based on Percent</span></span>                                                   | <span data-ttu-id="167b4-501">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-501">Global</span></span>             |
 
- 
 
+ 
 ### <a name="electronic-reporting"></a><span data-ttu-id="167b4-502">Elektronické výkaznictví</span><span class="sxs-lookup"><span data-stu-id="167b4-502">Electronic reporting</span></span>
 
 |                                                 |                    |
@@ -289,8 +288,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-511">Elektronické vykazování – namapování datového modelu na vybrané zdroje dat</span><span class="sxs-lookup"><span data-stu-id="167b4-511">ER Map data model to selected data sources</span></span>      | <span data-ttu-id="167b4-512">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-512">Global</span></span>             |
 | <span data-ttu-id="167b4-513">Elektronické vykazování – volba poskytovatele služeb</span><span class="sxs-lookup"><span data-stu-id="167b4-513">ER Select service provider</span></span>                      | <span data-ttu-id="167b4-514">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-514">Global</span></span>             |
 
- 
 
+ 
 ### <a name="expense-management"></a><span data-ttu-id="167b4-515">Správa výdajů</span><span class="sxs-lookup"><span data-stu-id="167b4-515">Expense management</span></span>
 
 |                              |                    |
@@ -298,8 +297,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-516">**Řádek BPM**</span><span class="sxs-lookup"><span data-stu-id="167b4-516">**BPM Line**</span></span>                 | <span data-ttu-id="167b4-517">**Země/oblast**</span><span class="sxs-lookup"><span data-stu-id="167b4-517">**Country/Region**</span></span> |
 | <span data-ttu-id="167b4-518">Konfigurace správy výdajů</span><span class="sxs-lookup"><span data-stu-id="167b4-518">Configure expense management</span></span> | <span data-ttu-id="167b4-519">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-519">Global</span></span>             |
 
- 
 
+ 
 ### <a name="fixed-assets"></a><span data-ttu-id="167b4-520">Dlouhodobý majetek</span><span class="sxs-lookup"><span data-stu-id="167b4-520">Fixed assets</span></span>
 
 |                                                           |                    |
@@ -321,8 +320,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-549">Rozdělení dlouhodobého majetku</span><span class="sxs-lookup"><span data-stu-id="167b4-549">Split a fixed asset</span></span>                                       | <span data-ttu-id="167b4-550">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-550">Global</span></span>             |
 | <span data-ttu-id="167b4-551">Převedení dlouhodobého majetku</span><span class="sxs-lookup"><span data-stu-id="167b4-551">Transfer a fixed asset</span></span>                                    | <span data-ttu-id="167b4-552">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-552">Global</span></span>             |
 
- 
 
+ 
 ### <a name="general-ledger"></a><span data-ttu-id="167b4-553">Hlavní kniha</span><span class="sxs-lookup"><span data-stu-id="167b4-553">General ledger</span></span>
 
 |                                                                   |                    |
@@ -354,8 +353,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-602">Zobrazení položek deníku nebo transakcí</span><span class="sxs-lookup"><span data-stu-id="167b4-602">View journal entries or transactions</span></span>                              | <span data-ttu-id="167b4-603">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-603">Global</span></span>             |
 | <span data-ttu-id="167b4-604">Zobrazení souvisejícího mezipodnikového dokladu z deníku</span><span class="sxs-lookup"><span data-stu-id="167b4-604">View related intercompany voucher from journal</span></span>                    | <span data-ttu-id="167b4-605">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-605">Global</span></span>             |
 
- 
 
+ 
 ### <a name="human-capital-management"></a><span data-ttu-id="167b4-606">Správa lidského kapitálu</span><span class="sxs-lookup"><span data-stu-id="167b4-606">Human capital management</span></span>
 
 |                                                                  |                    |
@@ -398,8 +397,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-677">Nastavení zásad nároků na zaměstnanecké výhody</span><span class="sxs-lookup"><span data-stu-id="167b4-677">Setting benefit eligibility policies</span></span>                             | <span data-ttu-id="167b4-678">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-678">Global</span></span>             |
 | <span data-ttu-id="167b4-679">Nastavení typy dokumentů i9</span><span class="sxs-lookup"><span data-stu-id="167b4-679">Setting up i9 document types</span></span>                                     | <span data-ttu-id="167b4-680">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-680">Global</span></span>             |
 
- 
 
+ 
 ### <a name="inventory-management"></a><span data-ttu-id="167b4-681">Řízení zásob</span><span class="sxs-lookup"><span data-stu-id="167b4-681">Inventory management</span></span>
 
 |                                                                                   |                    |
@@ -422,8 +421,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-712">Sledovat zboží nebo suroviny</span><span class="sxs-lookup"><span data-stu-id="167b4-712">Trace an item or raw material</span></span>                                                     | <span data-ttu-id="167b4-713">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-713">Global</span></span>             |
 | <span data-ttu-id="167b4-714">Převedení fyzických zásoby ve skladu</span><span class="sxs-lookup"><span data-stu-id="167b4-714">Transfer physical inventory within the warehouse</span></span>                                  | <span data-ttu-id="167b4-715">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-715">Global</span></span>             |
 
- 
 
+ 
 ### <a name="manufacturing"></a><span data-ttu-id="167b4-716">Výroba</span><span class="sxs-lookup"><span data-stu-id="167b4-716">Manufacturing</span></span>
 
 |                                                               |                    |
@@ -474,8 +473,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-803">Převedení materiálu s kanbanovými úlohami</span><span class="sxs-lookup"><span data-stu-id="167b4-803">Transfer material with Kanban jobs</span></span>                            | <span data-ttu-id="167b4-804">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-804">Global</span></span>             |
 | <span data-ttu-id="167b4-805">Ověřit výrobního toku a verze</span><span class="sxs-lookup"><span data-stu-id="167b4-805">Validate production flow and version</span></span>                          | <span data-ttu-id="167b4-806">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-806">Global</span></span>             |
 
- 
 
+ 
 ### <a name="master-planning"></a><span data-ttu-id="167b4-807">Hlavní plánování</span><span class="sxs-lookup"><span data-stu-id="167b4-807">Master planning</span></span>
 
 |                                                   |                    |
@@ -487,8 +486,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-816">Identifikování kritického materiálu a kapacity dodavatele</span><span class="sxs-lookup"><span data-stu-id="167b4-816">Identify critical materials and supplier capacity</span></span> | <span data-ttu-id="167b4-817">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-817">Global</span></span>             |
 | <span data-ttu-id="167b4-818">Ruční úprava prognózy poptávky</span><span class="sxs-lookup"><span data-stu-id="167b4-818">Modify a demand forecast manually</span></span>                 | <span data-ttu-id="167b4-819">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-819">Global</span></span>             |
 
- 
 
+ 
 ### <a name="organization-administration"></a><span data-ttu-id="167b4-820">Správa organizace</span><span class="sxs-lookup"><span data-stu-id="167b4-820">Organization administration</span></span>
 
 |                                           |                    |
@@ -501,8 +500,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-831">Nastavení elektronických podpisů</span><span class="sxs-lookup"><span data-stu-id="167b4-831">Set up electronic signatures</span></span>              | <span data-ttu-id="167b4-832">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-832">Global</span></span>             |
 | <span data-ttu-id="167b4-833">Nastavení číselných řad pomocí průvodce</span><span class="sxs-lookup"><span data-stu-id="167b4-833">Set up number sequences by using a wizard</span></span> | <span data-ttu-id="167b4-834">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-834">Global</span></span>             |
 
- 
 
+ 
 ### <a name="planning"></a><span data-ttu-id="167b4-835">Plánování</span><span class="sxs-lookup"><span data-stu-id="167b4-835">Planning</span></span>
 
 |                        |                    |
@@ -510,8 +509,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-836">**Řádek BPM**</span><span class="sxs-lookup"><span data-stu-id="167b4-836">**BPM Line**</span></span>           | <span data-ttu-id="167b4-837">**Země/oblast**</span><span class="sxs-lookup"><span data-stu-id="167b4-837">**Country/Region**</span></span> |
 | <span data-ttu-id="167b4-838">Určení dostupnosti</span><span class="sxs-lookup"><span data-stu-id="167b4-838">Determine availability</span></span> | <span data-ttu-id="167b4-839">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-839">Global</span></span>             |
 
- 
 
+ 
 ### <a name="procurement-and-sourcing"></a><span data-ttu-id="167b4-840">Zásobování a zdroje</span><span class="sxs-lookup"><span data-stu-id="167b4-840">Procurement and sourcing</span></span>
 
 |                                                                  |                    |
@@ -525,8 +524,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-853">Vyhledání dodavatelů</span><span class="sxs-lookup"><span data-stu-id="167b4-853">Search for vendors</span></span>                                               | <span data-ttu-id="167b4-854">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-854">Global</span></span>             |
 | <span data-ttu-id="167b4-855">Nastavit hierarchii kategorií zásobování</span><span class="sxs-lookup"><span data-stu-id="167b4-855">Set up a procurement category hierarchy</span></span>                          | <span data-ttu-id="167b4-856">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-856">Global</span></span>             |
 
- 
 
+ 
 ### <a name="product-information-and-configuration"></a><span data-ttu-id="167b4-857">Informace o produktu a konfiguraci</span><span class="sxs-lookup"><span data-stu-id="167b4-857">Product information and configuration</span></span>
 
 |                                                       |                    |
@@ -551,8 +550,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-892">Vydání ..\financial-dimensions\dimension-based product master</span><span class="sxs-lookup"><span data-stu-id="167b4-892">Release a ..\financial-dimensions\dimension-based product master</span></span>              | <span data-ttu-id="167b4-893">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-893">Global</span></span>             |
 | <span data-ttu-id="167b4-894">Převedení dat pro modely produktu</span><span class="sxs-lookup"><span data-stu-id="167b4-894">Transfer data for product models</span></span>                      | <span data-ttu-id="167b4-895">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-895">Global</span></span>             |
 
- 
 
+ 
 ### <a name="public-sector"></a><span data-ttu-id="167b4-896">Veřejný sektor</span><span class="sxs-lookup"><span data-stu-id="167b4-896">Public sector</span></span>
 
 |                                                                                         |                    |
@@ -577,8 +576,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-931">Nastavení fondu pro veřejný sektor</span><span class="sxs-lookup"><span data-stu-id="167b4-931">Set up a fund for Public sector</span></span>                                                         | <span data-ttu-id="167b4-932">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-932">Global</span></span>             |
 | <span data-ttu-id="167b4-933">Nastavení klasifikace nákupních smluv pro veřejný sektor</span><span class="sxs-lookup"><span data-stu-id="167b4-933">Set up purchase agreement classifications for Public Sector</span></span>                             | <span data-ttu-id="167b4-934">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-934">Global</span></span>             |
 
- 
 
+ 
 ### <a name="retail-and-commerce"></a><span data-ttu-id="167b4-935">Maloobchodní a velkoobchodní prodej</span><span class="sxs-lookup"><span data-stu-id="167b4-935">Retail and commerce</span></span>
 
 |                                                                                           |                    |
@@ -619,8 +618,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-1002">Úpravy maloobchodních cen</span><span class="sxs-lookup"><span data-stu-id="167b4-1002">Retail price adjustments</span></span>                                                                  | <span data-ttu-id="167b4-1003">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-1003">Global</span></span>             |
 | <span data-ttu-id="167b4-1004">Uložení konfigurace pro maloobchodní výkazy</span><span class="sxs-lookup"><span data-stu-id="167b4-1004">Store configurations for Retail statements</span></span>                                                | <span data-ttu-id="167b4-1005">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-1005">Global</span></span>             |
 
- 
 
+ 
 ### <a name="sales"></a><span data-ttu-id="167b4-1006">Prodeje</span><span class="sxs-lookup"><span data-stu-id="167b4-1006">Sales</span></span>
 
 |                                            |                    |
@@ -642,8 +641,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-1035">Expedování objednávek jako přímé dodání</span><span class="sxs-lookup"><span data-stu-id="167b4-1035">Ship orders as direct deliveries</span></span>           | <span data-ttu-id="167b4-1036">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-1036">Global</span></span>             |
 | <span data-ttu-id="167b4-1037">Expedování prodejních objednávek bez skladování</span><span class="sxs-lookup"><span data-stu-id="167b4-1037">Ship sales orders without warehousing</span></span>      | <span data-ttu-id="167b4-1038">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-1038">Global</span></span>             |
 
- 
 
+ 
 ### <a name="sales-tax"></a><span data-ttu-id="167b4-1039">DPH</span><span class="sxs-lookup"><span data-stu-id="167b4-1039">Sales tax</span></span>
 
 |                                                    |                    |
@@ -661,8 +660,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-1060">Nastavení srážkové daně</span><span class="sxs-lookup"><span data-stu-id="167b4-1060">Set up withholding tax</span></span>                             | <span data-ttu-id="167b4-1061">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-1061">Global</span></span>             |
 | <span data-ttu-id="167b4-1062">Zobrazit zaúčtované transakce DPH</span><span class="sxs-lookup"><span data-stu-id="167b4-1062">View posted sales tax transactions</span></span>                 | <span data-ttu-id="167b4-1063">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-1063">Global</span></span>             |
 
- 
 
+ 
 ### <a name="security"></a><span data-ttu-id="167b4-1064">Zabezpečení</span><span class="sxs-lookup"><span data-stu-id="167b4-1064">Security</span></span>
 
 |                                                         |                    |
@@ -672,8 +671,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-1069">Identifikace a vyřešení konfliktů v dělení zodpovědnosti</span><span class="sxs-lookup"><span data-stu-id="167b4-1069">Identify and resolve conflicts in segregation of duties</span></span> | <span data-ttu-id="167b4-1070">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-1070">Global</span></span>             |
 | <span data-ttu-id="167b4-1071">Nastavení dělení zodpovědnosti</span><span class="sxs-lookup"><span data-stu-id="167b4-1071">Set up segregation of duties</span></span>                            | <span data-ttu-id="167b4-1072">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-1072">Global</span></span>             |
 
- 
 
+ 
 ### <a name="warehouse-and-transportation"></a><span data-ttu-id="167b4-1073">Sklad a doprava</span><span class="sxs-lookup"><span data-stu-id="167b4-1073">Warehouse and transportation</span></span>
 
 |                                                                                   |                    |
@@ -697,9 +696,10 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="167b4-1106">Nastavení dopravců</span><span class="sxs-lookup"><span data-stu-id="167b4-1106">Set up shipping carriers</span></span>                                                          | <span data-ttu-id="167b4-1107">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-1107">Global</span></span>             |
 | <span data-ttu-id="167b4-1108">Použití pracovní plochy plánování vytížení k plánování vytížení a dodávky</span><span class="sxs-lookup"><span data-stu-id="167b4-1108">Use the Load Planning Workbench to plan loads and shipments</span></span>                       | <span data-ttu-id="167b4-1109">Globální</span><span class="sxs-lookup"><span data-stu-id="167b4-1109">Global</span></span>             |
 
- 
 
+ 
 ## <a name="task-guides-in-the-february-2016-getting-started-library"></a><span data-ttu-id="167b4-1110">Průvodci úkolem v knihovně Začínáme (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="167b4-1110">Task guides in the (February 2016) Getting started library</span></span>
+
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | <span data-ttu-id="167b4-1111">**Řádek BPM**</span><span class="sxs-lookup"><span data-stu-id="167b4-1111">**BPM Line**</span></span>                                       | <span data-ttu-id="167b4-1112">**Země/oblast**</span><span class="sxs-lookup"><span data-stu-id="167b4-1112">**Country/Region**</span></span> |

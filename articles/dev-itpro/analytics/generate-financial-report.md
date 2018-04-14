@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
-ms.openlocfilehash: 95669d83fdf69a6d55dd7ee1e4e33a67108e0371
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e4c49a9aaae2d6c7324dfb6a13f6079610bb24fa
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="generate-a-financial-report"></a><span data-ttu-id="f1324-103">Generovat finanční sestavu</span><span class="sxs-lookup"><span data-stu-id="f1324-103">Generate a financial report</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="f1324-104">Toto téma obsahuje informace o generování finančních sestav.</span><span class="sxs-lookup"><span data-stu-id="f1324-104">This topic provides information about generating a financial report.</span></span> 
 
@@ -50,13 +49,13 @@ ms.lasthandoff: 12/01/2017
 ## <a name="generate-a-financial-report"></a><span data-ttu-id="f1324-115">Generovat finanční sestavu</span><span class="sxs-lookup"><span data-stu-id="f1324-115">Generate a financial report</span></span>
 
 <span data-ttu-id="f1324-116">Chcete-li generovat finanční sestavu pomocí aplikace Microsoft Dynamics 365 for Finance and Operations, přejděte na **Hlavní kniha** > **Dotazy a sestavy** > **Finanční sestavy**.</span><span class="sxs-lookup"><span data-stu-id="f1324-116">To generate a financal report with Microsoft Dynamics 365 for Finance and Operations, go to **General ledger** > **Inquiries and reports** > **Financial reports**.</span></span> 
- - <span data-ttu-id="f1324-117">Zvolte sestavu, kterou chcete generovat, a klikněte **Generovat**.</span><span class="sxs-lookup"><span data-stu-id="f1324-117">Select a report to generate and click **Generate**.</span></span> 
- - <span data-ttu-id="f1324-118">Vyplňte pole **Datum sestavy** a klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="f1324-118">Fill in the **Report date** field and click **OK**.</span></span>
- 
- <span data-ttu-id="f1324-119">Po vygenerování sestavy bude sestava k dispozici pro zobrazení v oddílu **Sestavy**.</span><span class="sxs-lookup"><span data-stu-id="f1324-119">After the report has been generated, the report will be available to view in the **Reports** section.</span></span>
- <span data-ttu-id="f1324-120">Sestavu můžete **Zobrazit** nebo **Odstranit**.</span><span class="sxs-lookup"><span data-stu-id="f1324-120">You can select to **View** or **Delete** the report.</span></span>
- 
- 
+- <span data-ttu-id="f1324-117">Zvolte sestavu, kterou chcete generovat, a klikněte **Generovat**.</span><span class="sxs-lookup"><span data-stu-id="f1324-117">Select a report to generate and click **Generate**.</span></span> 
+- <span data-ttu-id="f1324-118">Vyplňte pole **Datum sestavy** a klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="f1324-118">Fill in the **Report date** field and click **OK**.</span></span>
+
+  <span data-ttu-id="f1324-119">Po vygenerování sestavy bude sestava k dispozici pro zobrazení v oddílu **Sestavy**.</span><span class="sxs-lookup"><span data-stu-id="f1324-119">After the report has been generated, the report will be available to view in the **Reports** section.</span></span>
+  <span data-ttu-id="f1324-120">Sestavu můžete **Zobrazit** nebo **Odstranit**.</span><span class="sxs-lookup"><span data-stu-id="f1324-120">You can select to **View** or **Delete** the report.</span></span>
+
+
 <span data-ttu-id="f1324-121">Pro generování sestavy pomocí **návrháře sestav** otevřete definici sestavy a klepněte na tlačítko Generovat na panelu nástrojů.</span><span class="sxs-lookup"><span data-stu-id="f1324-121">To generate a report using **Report designer**, open the report definition and then click the Generate button in the toolbar.</span></span> <span data-ttu-id="f1324-122">Otevře se okno Stav fronty sestav a označí umístění vaší sestavy ve frontě.</span><span class="sxs-lookup"><span data-stu-id="f1324-122">The Report Queue Status window will open and indicate the location of your report in the queue.</span></span> <span data-ttu-id="f1324-123">Ve výchozím nastavení se generovaná sestava otevře ve Web Viewer.</span><span class="sxs-lookup"><span data-stu-id="f1324-123">By default, the generated report will open in the Web Viewer.</span></span>
 
 > [!NOTE]
@@ -159,7 +158,7 @@ ms.lasthandoff: 12/01/2017
 | <span data-ttu-id="f1324-237">Otevření vybrané definice sestavy.</span><span class="sxs-lookup"><span data-stu-id="f1324-237">Open the selected report definition</span></span>  | <span data-ttu-id="f1324-238">Ctrl+R</span><span class="sxs-lookup"><span data-stu-id="f1324-238">Ctrl+R</span></span>                     |
 | <span data-ttu-id="f1324-239">Otevření vybrané definice řádku</span><span class="sxs-lookup"><span data-stu-id="f1324-239">Open the selected row definition</span></span>     | <span data-ttu-id="f1324-240">Ctrl+O</span><span class="sxs-lookup"><span data-stu-id="f1324-240">Ctrl+O</span></span>                     |
 
- 
+
 <a name="see-also"></a><span data-ttu-id="f1324-241">Viz také</span><span class="sxs-lookup"><span data-stu-id="f1324-241">See also</span></span>
 --------
 

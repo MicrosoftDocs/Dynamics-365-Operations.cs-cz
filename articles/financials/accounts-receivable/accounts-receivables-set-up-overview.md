@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
-ms.openlocfilehash: 7563c749d0d2b5747f1b7886def82ba7191499b1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 43c8d0db28fb0a845c4520b279f16d7c20c6da88
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a><span data-ttu-id="44f3b-103">Konfigurace modulu Pohledávky a Kredit a inkasa</span><span class="sxs-lookup"><span data-stu-id="44f3b-103">Configure Accounts receivables and Credit and collections</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="44f3b-104">Konfigurujte modul Pohledávky a Kredit a inkasa pro sledování faktur a příchozích plateb od odběratelů.</span><span class="sxs-lookup"><span data-stu-id="44f3b-104">Configure Accounts receivable and Credit and Collections to track invoices and incoming payments from customers.</span></span>
 
@@ -107,7 +106,7 @@ ms.lasthandoff: 11/14/2017
 |                                                      | <span data-ttu-id="44f3b-251">Informace o NFP.</span><span class="sxs-lookup"><span data-stu-id="44f3b-251">NSF information.</span></span>                     | <span data-ttu-id="44f3b-252">U bankovního účtu nastavte informace o NFP, které budou na stránce Inkasa použity při označení platby jako transakce NFP.</span><span class="sxs-lookup"><span data-stu-id="44f3b-252">Set up NSF information on the bank account that will be used when a payment is marked as an NSF transaction on the Collections page.</span></span>                                                                                                                                              |
 |                                                      | <span data-ttu-id="44f3b-253">Informace o prodejci</span><span class="sxs-lookup"><span data-stu-id="44f3b-253">Salesperson information</span></span>              | <span data-ttu-id="44f3b-254">Nastavte e-mailovou adresu pro prodejce.</span><span class="sxs-lookup"><span data-stu-id="44f3b-254">Set up the email address for salespersons.</span></span> <span data-ttu-id="44f3b-255">Tyto adresy se zobrazí na stránce inkasa a můžete je použít k odeslání e-mailu prodejci z této stránky.</span><span class="sxs-lookup"><span data-stu-id="44f3b-255">These addresses will appear on the Collections page and you can use them to send email to a salesperson from that page.</span></span>                                                                                                                |
 
- 
+
 <span data-ttu-id="44f3b-256">Další informace naleznete v tématu [Úvěr a inkasa v modulu Pohledávky](collections-credit-accounts-receivable.md).</span><span class="sxs-lookup"><span data-stu-id="44f3b-256">For more information, see [Credit and collections in Accounts receivable](collections-credit-accounts-receivable.md).</span></span>
 
 
