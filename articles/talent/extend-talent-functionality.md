@@ -3,7 +3,7 @@ title: "Rozšíření funkce Microsoft Dynamics 365 for Talent"
 description: "Pokud jste vytvořili jakoukoliv aplikaci Microsoft PowerApps, můžete spustit tyto aplikace z odkazů v rámci aplikace Microsoft Dynamics 365 for Talent."
 author: rschloma
 manager: AnnBe
-ms.date: 11/28/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,15 +35,16 @@ Použijte stránku **Nastavení integrovaných aplikací Microsoft PowerApps** p
 
 Na této stránce se zadávají nebo nastavují následující informace: 
 
-> - Popisný název nebo identifikátor pro každou aplikaci PowerApps.
-> - Jedinečný identifikátor (GUID) pro každou aplikaci přidanou na stránku Talent. ID aplikace je k dispozici na webu PowerApps [powerapps.com](http://powerapps.com/). 
-> - Stránka, odkud mohou uživatelé otevřít aplikaci nebo sestavu. Ne všechny stránky Talent podporují integrované aplikace PowerApps a sestavy Power BI. 
-> 
-> [!NOTE]
->  Zadejte interní název stránky, nikoli zobrazovaný název, který je zobrazen v horní části stránky. K vyhledání interního názvu otevřete stránku, jejíž interní název potřebujete, a kamkoli klikněte pravým tlačítkem na stránce. Po otevření nabídky najeďte myší nad položku **Informace formuláře**. Interní název formuláře se zobrazí vedle položky menu **Informace formuláře**.
-> 
-> - Určete ovládací prvek formuláře, ze kterého aplikace může načíst kontextová data. Aplikace může například použít data týkající se pracovníka. Pokud zadáte stránku **Pracovník** do pole **Kontext**, otevře se stránka **Pracovník** při spuštění aplikace. Zadání do **kontextového pole** není povinné. 
-> - Nastavte velikost dialogové okno, ve kterém bude spuštěna aplikace PowerApps. Dialogová okna jsou označena jako malá nebo velká pro optimalizaci uživatelského rozhraní pro spuštění vaší aplikace buď na telefonu nebo na větším zařízení. 
+ -  Popisný název nebo identifikátor pro každou aplikaci PowerApps.
+ -  Jedinečný identifikátor (GUID) pro každou aplikaci přidanou na stránku Talent. ID aplikace je k dispozici na webu PowerApps [powerapps.com](http://powerapps.com/). 
+ -  Stránka, odkud mohou uživatelé otevřít aplikaci nebo sestavu. Ne všechny stránky Talent podporují integrované aplikace PowerApps a sestavy Power BI. 
+
+ > [!NOTE]
+ >  Zadejte interní název stránky, nikoli zobrazovaný název, který je zobrazen v horní části stránky. K vyhledání interního názvu otevřete stránku, jejíž interní název potřebujete, a kamkoli klikněte pravým tlačítkem na stránce. Po otevření nabídky najeďte myší nad položku **Informace formuláře**. Interní název formuláře se zobrazí vedle položky menu **Informace formuláře**.
+ 
+-   Určete ovládací prvek formuláře, ze kterého aplikace může načíst kontextová data. Aplikace může například použít data týkající se pracovníka. Pokud zadáte stránku **Pracovník** do pole **Kontext**, otevře se stránka **Pracovník** při spuštění aplikace. Zadání do **kontextového pole** není povinné. 
+-   Nastavte velikost dialogové okno, ve kterém bude spuštěna aplikace PowerApps. Dialogová okna jsou označena jako malá nebo velká pro optimalizaci uživatelského rozhraní pro spuštění vaší aplikace buď na telefonu nebo na větším zařízení. 
+
 
 Můžete také určit, pro které právnické osoby bude aplikace dostupná, nebo ji můžete zpřístupnit pro všechny právnické osoby. Standardně jsou aplikace PowerApps k dispozici pro všechny právnické osoby.
 
