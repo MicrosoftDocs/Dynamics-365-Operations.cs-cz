@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a8c2d097626fad905741c35ffa8c13336f8735b9
+ms.sourcegitcommit: 3662bb1a20fbdd3769b94247ac071a7cfd7e04f1
+ms.openlocfilehash: 94c07d18de06a75ad86d69d7c06a78e446f0b506
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 04/20/2018
 
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a><span data-ttu-id="743c3-103">Začínáme s aplikací Microsoft Dynamics 365 for Talent</span><span class="sxs-lookup"><span data-stu-id="743c3-103">Getting started with Microsoft Dynamics 365 for Talent</span></span>
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/13/2018
 > [!NOTE] 
 > <span data-ttu-id="743c3-107">Tyto produkty spolu úzce souvisí: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail a Dynamics 365 for Talent.</span><span class="sxs-lookup"><span data-stu-id="743c3-107">The following products are closely related: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; and Dynamics 365 for Talent.</span></span> <span data-ttu-id="743c3-108">Stejné funkce se mohou objevovat ve všech třech produktech.</span><span class="sxs-lookup"><span data-stu-id="743c3-108">The same functionality may appear in all 3 products.</span></span> <span data-ttu-id="743c3-109">U témat, která se vztahují především k aplikaci Retail, proto bude uveden název produktu Dynamics 365 for Retail; u témat souvisejících s aplikací Talent bude uveden název Dynamics 365 for Talent a u témat souvisejících se základním produktem bude uveden název Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="743c3-109">As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="743c3-110">Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.</span><span class="sxs-lookup"><span data-stu-id="743c3-110">Topics that are written for one product may apply to the same functionality in a related product.</span></span>
 
-### <a name="personalizing-talent"></a><span data-ttu-id="743c3-111">Přizpůsobení aplikace Talent</span><span class="sxs-lookup"><span data-stu-id="743c3-111">Personalizing Talent</span></span> 
+## <a name="personalizing-talent"></a><span data-ttu-id="743c3-111">Přizpůsobení aplikace Talent</span><span class="sxs-lookup"><span data-stu-id="743c3-111">Personalizing Talent</span></span> 
 <span data-ttu-id="743c3-112">Následující témata ukazují, jak nastavit v aplikaci Dynamics 365 for Talent mnoho funkcí, které usnadňují dokončení práce včas.</span><span class="sxs-lookup"><span data-stu-id="743c3-112">The following topics show how to set up many features in Dynamics 365 for Talent that make it easier for you to get your work done in a timely manner.</span></span> 
 
 -   <span data-ttu-id="743c3-113">[Přizpůsobení uživatelského prostředí](../fin-and-ops/get-started/personalize-user-experience.md) -Toto téma vysvětluje různé způsoby, kterými můžete přizpůsobit aplikaci Talent a adaptovat části produktu tak, aby lépe vyhovovaly vašim potřebám.</span><span class="sxs-lookup"><span data-stu-id="743c3-113">[Personalize the user experience](../fin-and-ops/get-started/personalize-user-experience.md) - This topic explains the different ways in which you can personalize Talent and adapt parts of the product to more closely suite your preferences.</span></span>
@@ -44,7 +44,7 @@ ms.lasthandoff: 04/13/2018
 
 -   <span data-ttu-id="743c3-117">[Klávesové zkratky](../fin-and-ops/get-started/shortcut-keys.md) -Toto téma obsahuje seznam klávesových zkratek pro rozvržení klávesnice pro Spojené státy.</span><span class="sxs-lookup"><span data-stu-id="743c3-117">[Keyboard shortcuts](../fin-and-ops/get-started/shortcut-keys.md) - This topic lists keyboard shortcuts for the United States keyboard layout.</span></span> 
 
-### <a name="accessing-information"></a><span data-ttu-id="743c3-118">Přístup k informacím</span><span class="sxs-lookup"><span data-stu-id="743c3-118">Accessing information</span></span>
+## <a name="accessing-information"></a><span data-ttu-id="743c3-118">Přístup k informacím</span><span class="sxs-lookup"><span data-stu-id="743c3-118">Accessing information</span></span>
 <span data-ttu-id="743c3-119">Následující témata vysvětlují používání vyhledávání a funkcí hledání a filtrování pro rychlé nalezení informací.</span><span class="sxs-lookup"><span data-stu-id="743c3-119">The following topics explain how to use lookups, and the search and filtering features, to find information quickly.</span></span> 
 
 -   <span data-ttu-id="743c3-120">[Použití vyhledávání pro nalezení informace](../fin-and-ops/get-started/use-lookups-to-find-information.md) -Toto téma popisuje, jak vyhledávání může pomoci rychle vyhledat správnou nebo požadovanou hodnotu.</span><span class="sxs-lookup"><span data-stu-id="743c3-120">[Use lookups to find information](../fin-and-ops/get-started/use-lookups-to-find-information.md) - This topic shows how lookups can help you quickly find the correct or desired value.</span></span> <span data-ttu-id="743c3-121">Téma popisuje, jak vyhledávání funguje, a zahrnuje tipy pro optimalizaci jeho použití.</span><span class="sxs-lookup"><span data-stu-id="743c3-121">The topic describes how lookups work and includes tips to help you optimize your use of them.</span></span>
