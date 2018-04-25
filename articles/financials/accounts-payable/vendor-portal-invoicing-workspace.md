@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 57fc1c21394d91f6a8bd4726c9d948c8ae2cf4d0
+ms.sourcegitcommit: 8af424d1a1ce41316008649472c2b8748806c6d6
+ms.openlocfilehash: 0a76417e01b67b493b320973c14e059850ab772e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 04/25/2018
 
 ---
 
@@ -52,16 +52,12 @@ ms.lasthandoff: 04/13/2018
 
 <span data-ttu-id="c5a58-116">V oddíle **Tabulkové seznamy** se stav fakturace rozděluje podobným způsobem jako dlaždice souhrnu: návrhy a odeslané ale neschválené seznamy.</span><span class="sxs-lookup"><span data-stu-id="c5a58-116">In the **Tabular lists** section, the status of the invoicing is broken down in similar ways as the summary tiles: Draft and Submitted, not approved lists.</span></span> <span data-ttu-id="c5a58-117">Ve stavu návrhu lze fakturu přijmout do workflowu nebo odstranit.</span><span class="sxs-lookup"><span data-stu-id="c5a58-117">While in the Draft state, an invoice can be submitted to workflow or deleted.</span></span> <span data-ttu-id="c5a58-118">Poslední tabulkový seznam je možnost pro vyhledání faktur.</span><span class="sxs-lookup"><span data-stu-id="c5a58-118">The last tabular list is an option to find invoices.</span></span> <span data-ttu-id="c5a58-119">Při hledání můžete filtrovat, což umožňuje rychlejší vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="c5a58-119">You can filter as you search, to allow for faster searches.</span></span>
 
-<a name="all-vendor-invoices-list-page"></a><span data-ttu-id="c5a58-120">Stránka seznamu všech faktur dodavatelů</span><span class="sxs-lookup"><span data-stu-id="c5a58-120">All vendor invoices list page</span></span>
------------------------------
+### <a name="all-vendor-invoices-list-page"></a><span data-ttu-id="c5a58-120">Stránka seznamu všech faktur dodavatelů</span><span class="sxs-lookup"><span data-stu-id="c5a58-120">All vendor invoices list page</span></span>
 
 <span data-ttu-id="c5a58-121">Můžete zobrazit všechny zaúčtované a nezaúčtované faktury dodavatele na stránce seznamu **Faktury dodavatelské spolupráce**.</span><span class="sxs-lookup"><span data-stu-id="c5a58-121">You can view all posted and unposted vendor invoices on the **Vendor collaboration invoices** list page.</span></span> <span data-ttu-id="c5a58-122">Tuto stránku se seznamem můžete použít, chcete-li zobrazit stav platby faktur.</span><span class="sxs-lookup"><span data-stu-id="c5a58-122">You can use this list page to view the payment status of the invoices.</span></span> <span data-ttu-id="c5a58-123">Stavy plateb zahrnují nezaúčtované, nezaplacené, částečně zaplacené a plně zaplacené.</span><span class="sxs-lookup"><span data-stu-id="c5a58-123">The payment statuses include Unposted, Unpaid, Partially paid, and Fully paid.</span></span>
 <span data-ttu-id="c5a58-124">Vytvořit novou fakturu z nákupní objednávky</span><span class="sxs-lookup"><span data-stu-id="c5a58-124">Creating a new invoice from a purchase order</span></span>
---------------------------------------------
 
 <span data-ttu-id="c5a58-125">Novou fakturu dodavatele můžete vytvořit, pokud vyberete akci **Nová** v pracovním prostoru **fakturace dodavatelské spolupráce**.</span><span class="sxs-lookup"><span data-stu-id="c5a58-125">You can create a new vendor invoice by selecting the **New** action on the **Vendor collaboration invoicing** workspace.</span></span> <span data-ttu-id="c5a58-126">Číslo nákupní objednávky a číslo faktury musí zadat dodavatel.</span><span class="sxs-lookup"><span data-stu-id="c5a58-126">The purchase order number and invoice number must be provided by the vendor.</span></span> <span data-ttu-id="c5a58-127">Ve výchozím nastavení se všechny řádky z nákupní objednávky dodavatele zobrazí na nové faktuře.</span><span class="sxs-lookup"><span data-stu-id="c5a58-127">By default, all of the lines from the vendor's purchase order will appear on the new invoice.</span></span> <span data-ttu-id="c5a58-128">Před odesláním dodavatelské faktury do workflowu lze upravovat informace o množství a nákladech.</span><span class="sxs-lookup"><span data-stu-id="c5a58-128">The quantity and cost information can be edited prior to submitting the vendor invoice to workflow.</span></span> <span data-ttu-id="c5a58-129">Před odesláním můžete k faktuře také připojit soubory, poznámky, obrázky a adresy URL.</span><span class="sxs-lookup"><span data-stu-id="c5a58-129">You can attach files, notes, images, and URLs to an invoice before submitting it.</span></span>
-
-
 
 <span data-ttu-id="c5a58-130">Další informace naleznete v tématu [Dodavatelská spolupráce s externími dodavateli](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)</span><span class="sxs-lookup"><span data-stu-id="c5a58-130">For more information, see [Vendor collaboration with external vendors](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)</span></span>
 
