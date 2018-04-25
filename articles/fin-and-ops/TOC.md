@@ -1,3 +1,4 @@
+
 # [Dynamics 365 for Finance and Operations](index.md)
 
 ## Začínáme
@@ -16,13 +17,15 @@
 #### Zakoupení aplikace Finance and Operations
 ##### [Zakoupení aplikace Finance and Operations (on-premises)](get-started/purchase-on-premises.md)
 
-### [Co je nového a co se změnilo](get-started/whats-new-changed.md)
+### [Co je nového a co se změnilo](get-started/whats-new-changed.md)
+#### [Zásady životního cyklu softwaru a vydání cloudu](../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json)
+#### [Zásady životního cyklu softwaru a vydání on-premises](../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json)
 #### [Odstraněné nebo zastaralé funkce](../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json)
 #### [Odložené funkce AX 2012](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
-#### [Funkce, které nebyly implementovány pro nasazení on-premises](get-started/features-not-implemented-on-prem.md)
+#### [Funkce neimplementované v místních nasazeních](get-started/features-not-implemented-on-prem.md)
+#### [Finance and Operations 8.0 (duben 2018)](get-started/whats-new-changed-8-0-April-2018.md)
 #### [Platform update 15 (březen 2018)](get-started/whats-new-platform-update-15.md)
-#### [Vydání a zásady životního cyklu](../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json)
-#### [Místní nasazení (březen 2018)](get-started/whats-new-LBD-PU12-App72.md)
+#### [Místní nasazení 7.2 s aktualizací Platform update 12 (březen 2018)](get-started/whats-new-LBD-PU12-App72.md)
 #### [Finance and Operations, Enterprise Edition 7.3](get-started/whats-new-application-7.3-update.md)
 #### [Platform update 12 (listopad 2017)](get-started/whats-new-platform-update-12.md)
 #### [Platform update 11 (říjen 2017)](get-started/whats-new-platform-update-11.md)
@@ -161,7 +164,11 @@
 ###### [Synchronizace kontaktů přímo z aplikace Sales na kontakty nebo odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
 ###### [Synchronizace hlaviček a řádků prodejních nabídek přímo z aplikace Sales do aplikace Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
 ###### [Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
-###### [Synchronizace hlaviček a řádků prodejní faktury přímo z aplikace Finance and Operations do Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Synchronizace hlaviček a řádků prodejní faktury přímo z aplikace Finance and Operations do aplikace Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+##### [Konfigurace integrace se službou Field Service](../supply-chain/sales-marketing/field-service.md)
+###### [Synchronizace produktů v aplikaci Finance and Operations do produktů ve službě Field Service](../supply-chain/sales-marketing/field-service-product.md)
+###### [Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v aplikaci Finance and Operations](../supply-chain/sales-marketing/field-service-work-order.md)
+###### [Synchronizace smluvních faktur ve službě Field Service do volných faktur v aplikaci Finance and Operations](../supply-chain/sales-marketing/field-service-invoice.md)
 
 
 #### [Spotřeba externích webových služeb](../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json)
@@ -198,6 +205,8 @@
 #### [Zabezpečení a datové entity](../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json)
 
 ### [Použití vlastní databáze](../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json)
+
+### [Automatizace datové úlohy](../dev-itpro/data-entities/data-task-automation.md)
 
 ## [Správa financí](../financials/index.md)
 
@@ -752,8 +761,9 @@
 #### [Souhrnné hlášení EU](../financials/localizations/emea-eu-sales-list.md)
 #### [Vyrovnání kurzových rozdílů](../financials/localizations/emea-exchange-rate-adjustments.md)
 #### [Formáty souboru pro způsoby platby](../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md)
-#### [Integrace finanční služby (ESR)](../financials/localizations/emea-fiscal-service-integration.md)
+#### [Integrace fiskální služby (ESR)](../financials/localizations/emea-fiscal-service-integration.md)
 #### [Vyřazení dlouhodobého majetku pro Estonsko a Litvu](../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
+#### [Přecenění cizí měny](../financials/localizations/emea-foreign-currency-revaluation.md)
 #### [Vygenerování dokladu převodu pro interní převod zásob](../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md)
 #### [Vygenerování prohlášení Intrastat EU](../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md)
 #### [Vygenerování sestavy souhrnného hlášení (EU)](../financials/localizations/tasks/eur-00011-eu-sales-list-report.md)
@@ -809,13 +819,7 @@
 
 #### [Rakousko](../financials/localizations/austria.md)
 
-#### Belgie
-##### [Bankovní výpis CODA](../financials/localizations/emea-bel-coda-bank-statement-import.md)
-##### [Vytvoření a přenos transakcí do systému BLWI](../financials/localizations/tasks/be-00011-create-transfer-blwi.md)
-##### [Daňové přiznání Intervat](../financials/localizations/emea-bel-intervat-tax-declaration.md)
-##### [Nastavení sestavy PRODCOM](../financials/localizations/emea-bel-prodcom-report.md)
-##### [Sestavy odsouhlasení](../financials/localizations/emea-bel-reconciliation-reports.md)
-##### [Nastavení vykazování zůstatku platby](../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md)
+#### [Belgie](../financials/localizations/belgium.md)
 
 #### [Česká republika](../financials/localizations/czech-republic.md)
 
@@ -833,6 +837,7 @@
 ##### [Nastavení formátu platebního dokladu](../financials/localizations/tasks/set-up-payment-slip-format.md)
 
 #### Estonsko
+##### [Požadavky na osobní informace](../financials/localizations/emea-est-personal-info.md)
 ##### [Výpis DPH](../financials/localizations/emea-est-vat-statement-details.md)
 
 #### Francie
@@ -859,6 +864,9 @@
 ##### [RB/SL odpis](../financials/localizations/emea-fra-rbsl-depreciation.md)
 ##### [Nastavení metody platby](../financials/localizations/tasks/fr-00004-setup-method-payment.md)
 ##### [Aktualizace způsobu platby pro odběratele](../financials/localizations/tasks/fr-00004-update-method-payment-customer.md)
+##### Maloobchod
+###### [Registrační pokladny](../retail/localizations/emea-fra-cash-registers.md)
+###### [Pokyny k nasazení registračních pokladen](../retail/localizations/emea-fra-deployment.md)
 
 #### Německo
 ##### [Odpis dodatečných pořízení](../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
@@ -875,8 +883,9 @@
 #### Maďarsko
 ##### [Výpočet směnného kurzu](../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md)
 ##### [Metody odpisu dlouhodobého majetku](../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)
-##### [Nízkonákladový dlouhodobý majetek](../financials/localizations/emea-hun-low-cost-fixed-assets.md)
+##### [Dlouhodobý majetek s nízkými náklady](../financials/localizations/emea-hun-low-cost-fixed-assets.md)
 ##### [Přesun dlouhodobého majetku do zásob](../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
+##### [Doklady o refundaci daně](../financials/localizations/emea-hun-tax-reimbursement-docs.md)
 
 #### Island
 ##### [Vytvoření účtu dodavatele a připojení kategorie prohlášení k faktuře](../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md)
@@ -891,6 +900,7 @@
 ##### [Odpisování dlouhodobého majetku](../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
 ##### [Modello 770](../financials/localizations/emea-ita-modello770.md)
 ##### [Ověření data dodacího listu na fakturách](../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
+##### [Zaúčtování a tisk dodacího listu s podrobnostmi dopravy](../financials/localizations/emea-ita-packing-slip.md)
 ##### [Knihy DPH](../financials/localizations/emea-ita-fiscal-books.md)
 ##### [Rozdělená platba za faktury vydané pro veřejnou správu](../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
 ##### [Srážková daň](../financials/localizations/emea-ita-withholding-tax.md)
@@ -943,8 +953,9 @@
 ##### [Možnosti vlastní směnky](../financials/localizations/emea-esp-promissory-note-options.md)
 ##### [Sestava 340](../financials/localizations/emea-esp-report-340.md)
 ##### [Prodejní a nákupní cykly](../financials/localizations/emea-esp-sales-purchase-cycle.md)
-##### [Zvláštní položky a počáteční stavy](../financials/localizations/emea-esp-opening-sheets-spain.md)
+##### [Speciální záznamy a počáteční stavy](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### Švédsko
+##### [Export finančních informací pro auditory ve Švédsku](../financials/localizations/emea-swe-sie-standard-report.md)
 ##### [Import formátů plateb](../financials/localizations/emea-swe-payment-formats-import.md)
 ##### [Registrační pokladny](../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json)
 #### Švýcarsko
@@ -1219,6 +1230,7 @@
 #### [Konfigurace služby SSRS pro nasazení on-premises](../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json)
 #### [Tisk](../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json)
 ##### [Instalace agenta směrování dokumentu pro aktivaci zařízení síťové tiskárny](../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json)
+##### [Upgrade agenta směrování dokumentů](../dev-itpro/analytics/upgrade-document-routing-agent.md)
 ##### [Instalace zařízení síťové tiskárny v místních prostředích](../dev-itpro/analytics/install-network-printer-onprem.md?toc=/fin-and-ops/toc.json)
 ##### [Generování dokumentů, publikování a možnosti tisku v nasazeních on-premises](../dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/fin-and-ops/toc.json)
 ##### [Spuštění agenta směrování dokumentu jako služby Windows](../dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/fin-and-ops/toc.json)
@@ -1234,6 +1246,7 @@
 
 ### [Elektronické sestavy](../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json)
 #### [Konfigurace architektury elektronického výkaznictví](../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json)
+#### [Vytvoření konfigurace](../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json)
 ##### [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json)
 ##### [Návrh datového modelu pro určitou doménu pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json)
 ##### [Definování mapování modelů a výběr zdrojů dat pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
@@ -1248,48 +1261,46 @@
 ##### [Konfigurace místa určení pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json)
 #### [Návrh konfigurace pro generování sestav ve formátu Microsoft Word pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json)
 #### [Návrh konfigurace pro generování sestav ve formátu OpenXML pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json)
-#### [Úprava formátu opětovným použitím šablony aplikace Microsoft Excel pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-modify-format-by-reapplying-microsoft-excel-template-july-2017.md?toc=/fin-and-ops/toc.json)
 #### [Úprava formátu elektronického výkaznictví opětovným použitím šablony aplikace Microsoft Excel](../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json)
 #### [Výběr definice datového modelu při vytváření formátu pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json)
-##### [Definování závislosti konfigurací z jiných komponent pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json)
-##### [Návrh datového modelu k používání finančních dimenzí jako zdroje dat pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json)
-##### [Mapování modelů k používání finančních dimenzí jako zdroje dat pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json)
-##### [Návrh sestavy k používání finančních dimenzí jako zdroje dat pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json)
-##### [Spuštění sestavy používající finanční dimenze jako zdroj dat pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json)
-##### [Vytvoření formátu pro počítání a sčítání pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json)
-##### [Konfigurace výpočtů pro provádění počítání a sčítání pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json)
-##### [Použití výpočtů pro provádění výstupu počítání a sčítání pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json)
-##### [Spuštění formátu pro provádění počítání a sčítání pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json)
-##### [Návrh formátu pro použití vodorovně rozbalovacích oblastí k dynamickému přidání sloupců v sestavách aplikace Excel pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json)
-##### [Spuštění formátu používajícího vodorovně rozbalovací oblasti k dynamickému přidání sloupců v sestavách aplikace Excel pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json)
-##### [Příprava datového modelu k použití souborů pro správu dokumentů ve formátech výstupu pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json)
-##### [Rozšíření datového modelu k použití souborů pro správu dokumentů ve formátech výstupu pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json)
-##### [Vytvoření formátu k použití souborů pro správu dokumentů ve formátech výstupu pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json)
-##### [Spuštění formátu k použití souborů pro správu dokumentů ve formátech výstupu pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json)
-##### [Úprava a spuštění formátu k použití souborů pro správu dokumentů ve formátech výstupu pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json)
-##### [Návrh konfigurací pro generování sestav ve formátu Microsoft Office s integrovanými obrázky pro elektronické výkaznictví (ER) (Část 1) ](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json)
-##### [Kontrola konfigurací pro provedení sestav ve formátech Microsoft Office s integrovanými obrázky pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json)
-##### [Generování sestav ve formátech Microsoft Office s integrovanými obrázky pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json)
+#### [Definování závislosti konfigurací z jiných komponent pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json)
+##### [Návrh datového model k používání finančních dimenzí jako zdroje dat​](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json)
+##### [Mapování modelů k používání finančních dimenzí jako zdroje dat​](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json)
+##### [Návrh sestavy k používání finančních dimenzí jako zdroje dat​](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json)
+##### [Spuštění sestavy, která používá finanční dimenze jako zdroje dat​](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json)
+##### [Vytvoření formátu pro počítání a sčítání](../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json)
+##### [Konfigurace výpočtů pro provádění počítání a sčítání](../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json)
+##### [Použití výpočtů pro provádění výstupu počítání a sčítání](../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json)
+##### [Spuštění formátu pro provádění počítání a sčítání](../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json)
+##### [Návrh formátu pro použití vodorovně rozbalovacích oblastí k dynamickému přidání sloupců v sestavách aplikace Excel](../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json)
+##### [Spuštění formátu, který používá vodorovně rozbalovací oblasti k dynamickému přidání sloupců v sestavách aplikace Excel](../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json)
+##### [Příprava datového modelu k použití souborů pro správu dokumentů ve formátech výstupu](../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json)
+##### [Rozšíření datového modelu k použití souborů pro správu dokumentů ve formátech výstupu](../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json)
+##### [Vytvoření formátu k použití souborů pro správu dokumentů ve formátech výstupu](../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json)
+##### [Spuštění formátu k použití souborů pro správu dokumentů ve formátech výstupu](../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json)
+##### [Úprava a spuštění formátu k použití souborů pro správu dokumentů ve formátech výstupu](../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json)
+##### [Návrh konfigurací pro generování sestav ve formátu Microsoft Office s integrovanými obrázky](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json)
+##### [Revize konfigurací pro vytváření sestav ve formátu Microsoft Office s integrovanými obrázky](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json)
+##### [Generování sestav ve formátu Microsoft Office s integrovanými obrázky](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json)
 #### [Generování elektronických dokumentů a aktualizace dat aplikací pomocí nástroje elektronického výkaznictví](../dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/fin-and-ops/toc.json)
-##### [Import konfigurací pro generování dokumentů s aktualizací dat aplikace pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json)
-##### [Generování dokumentů s aktualizací dat aplikace pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json)
-##### [Úprava modelu a mapování pro generování dokumentů s aktualizací dat aplikace pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json)
-##### [Úprava formátu pro generování dokumentů s aktualizací dat aplikace pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json)
-##### [Generování dokumentů s aktualizací dat aplikace pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json)
+##### [Import konfigurací pro generování dokumentů s daty aplikace](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json)
+##### [Návrh konfigurací pro generování dokumentů s daty aplikace](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json)
+##### [Úprava modelu a mapování pro generování dokumentů s daty aplikace](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json)
+##### [Úprava formátu pro generování dokumentů s daty aplikace](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json)
+##### [Generování dokumentů s daty aplikace](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json)
 #### [Vložení obrázků a tvarů do obchodních dokumentů generovaných pomocí nástroje elektronického výkaznictví](../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json)
-#### [Odeslání konfigurace do služby Lifecycle Services pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json)
-##### [Import konfigurace ze služby Lifecycle Services pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json)
 #### [Spravovat životní cyklus konfigurace](../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json)
-#### [Vytvoření konfigurace](../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json)
-#### [Stažení konfigurací z Lifecycle Services](../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json)
-#### [Rozšíření funkcí elektronického výkaznictví](../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json)
-##### [Správa konfigurací mapování modelu pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json)
+##### [Odeslání konfigurace do služby Lifecycle Services pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json)
+##### [Import konfigurace ze služby Lifecycle Services pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json)
+##### [Stažení konfigurací z Lifecycle Services](../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json)
+##### [Import konfigurací elektronického výkaznictví](../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json)
+#### [Správa konfigurací mapování modelu pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json)
 ##### [Vytvoření požadovaných konfigurací pro import dat z externího souboru pro elektronické výkaznictví](../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json)
-#### [Import konfigurací elektronického výkaznictví](../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json)
 #### [Analýza příchozích dokumentů k aktualizaci dat aplikace](../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json)
 #### [Analýza vstupních dokumentů ve formátu CSV](../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json)
-
+##### [Rozšíření funkcí elektronického výkaznictví](../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json)
 ##### [Změny rozhraní API architektury elektronického výkaznictví pro Application update 7.3](../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json)
+
 
 ### Integrovaná analytická řešení
 #### [Embedded Power BI v pracovních prostorech](../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/fin-and-ops/toc.json)
@@ -1451,6 +1462,7 @@
 #### [Zaškolení dodavatele](../supply-chain/procurement/vendor-onboarding.md)
 #### [Dodavatelská spolupráce s externími dodavateli](../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 #### [Dodavatelská spolupráce se zákazníky](../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
+#### [Import katalogů dodavatele](../supply-chain/procurement/vendor-catalogs-import.md)
 #### [Nastavení externího katalogu pro funkci PunchOut eProcurement](../supply-chain/procurement/set-up-external-catalog-for-punchout.md)
 #### [Použití externích katalogů pro funkci PunchOut eProcurement](../supply-chain/procurement/use-external-catalogs-for-punchout.md)
 #### [Mobilní pracovní prostor dodavatelské spolupráce](../supply-chain/procurement/vendor-collaboration-mobile-workspace.md)
@@ -1598,14 +1610,16 @@
 ##### [Nahrazení materiálů ve výrobě](../supply-chain/production-control/substitute-items-bom-lines.md)
 ##### [Registrace pro realizaci výroby](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [Zpětná vazba z výroby](../supply-chain/production-control/production-feedback.md)
-##### [Registrace času a docházky](../supply-chain/production-control/time-attendance-registrations.md)
-##### [Registrace absence v modulu Čas a docházka](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 ##### [Povolení procesu mezd pro čas a docházku](../supply-chain/production-control/tasks/payroll-process-time-attendance.md)
 ##### [Konfigurace pracovníka s použitím mobilního pracovního zařízení](../supply-chain/production-control/tasks/worker-mobile-job-device.md)
 #### Správa financí ve výrobě
 ##### [Přidělení času úlohám v sadě úloh](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Výpočet spotřeby materiálu](../supply-chain/production-control/consumption.md)
 ##### [Zaúčtování výroby](../supply-chain/cost-management/production-posting.md)
+#### [Registrace času a docházky](../supply-chain/production-control/time-attendance-registrations.md)
+##### [Plat na základě registrace](../supply-chain/production-control/pay-based-on-registrations.md)
+##### [Registrace absence v modulu Čas a docházka](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
+##### [Pružné skupiny](../supply-chain/production-control/time-attendance-flex-groups.md)
 
 ### Lean manufacturing 
 #### [Lean manufacturing – přehled](../supply-chain/production-control/lean-manufacturing-overview.md)
@@ -1836,17 +1850,19 @@
 #### [Pohyb zásob s přidruženou prací v řízení skladu](../supply-chain/warehousing/move-inventory-associated-work.md)
 #### [Řízení pracovníků skladu](../supply-chain/warehousing/manage-warehouse-workers.md)
 ### Výdej a balení
+#### [Nastavení výdejů v seskupení](../supply-chain/warehousing/set-up-cluster-picking.md)
 #### [Potvrzení dávky a poznávací značky](../supply-chain/warehousing/batch-and-license-plate-confirmation.md)
 #### [Vytvoření položky nabídky na mobilním zařízení pro konsolidaci registračních značek](../supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation.md)
 #### [Přijetí smíšené registrační značky](../supply-chain/warehousing/mixed-license-plate-receiving.md)
 #### [Konfigurace možnosti Zobrazení starších dávek v rámci skladu na mobilním zařízení](../supply-chain/warehousing/display-older-batches-within-warehouses.md)
 #### [Vyskladnění nejstarší dávky na mobilním zařízení](../supply-chain/warehousing/pick-oldest-batch.md)
-#### [Skenování čárových kódů pomocí fotoaparátu v aplikaci Dynamics 365 Finance and Operations](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
+#### [Skenování čárových kódů pomocí fotoaparátu v aplikaci Dynamics 365 for Finance and Operations](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [Potvrzení výdeje kusů](../supply-chain/warehousing/piece-picking-confirmation.md)
-#### [Potvrzení produktu pro výdej v seskupení](../supply-chain/warehousing/cluster-picking-item-confirmation.md)
+#### [Částečná dodávka nákladu přepravy](../supply-chain/warehousing/partial-shipping-of-transport-loads.md)
 #### [Vydání dávky částečně rezervovaných převodních příkazů](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)
 #### [Obalové materiály a poplatky](../supply-chain/warehousing/pack-materials-packing-material-fees.md)
 ### Inventura skladu
+#### [Kódy důvodů pro inventury zásob](../supply-chain/warehousing/reason-codes-for-counting-journals.md)
 #### [Blokování zásob](../supply-chain/inventory/inventory-blocking.md)
 #### [Cyklická inventura](../supply-chain/warehousing/cycle-counting.md)
 #### [Definování cyklické inventury ](../supply-chain/warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md)
@@ -1857,6 +1873,7 @@
 #### [Stav skladu](../supply-chain/inventory/inventory-statuses.md)
 #### [Počet označení zásob](../supply-chain/inventory/inventory-tag-counting.md)
 ### [Doplnění](../supply-chain/warehousing/replenishment.md)
+#### [Okamžité doplnění](../supply-chain/warehousing/immediate-replenishment.md)
 #### [Doplnění s kanbany odběru](../supply-chain/warehousing/material-replenishment-withdrawal-kanban.md)
 ### [Instalace a konfigurace skladové aplikace ](../supply-chain/warehousing/install-configure-warehousing-app.md)
 #### [Konfigurace názvů polí ve skladové aplikaci](../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md)

@@ -113,8 +113,9 @@
 #### [Přizpůsobení prvků modelu s použitím rozšíření (kurz)](extensibility/customize-model-elements-extensions.md)
 #### [Přizpůsobení: překrývání vrstev a rozšíření](extensibility/customization-overlayering-extensions.md)
 ### Novinky
-#### [Změny rozšiřitelnosti – červenec 2017](extensibility/changes-july-2017.md)
+#### [Změny rozšiřitelnosti - červenec 2017](extensibility/changes-july-2017.md)
 #### [Změny rozšiřitelnosti – verze 7.3](extensibility/extensibility-changes-73.md)
+#### [Změny rozšiřitelnosti – verze 8.0](extensibility/changes-80.md)
 ### Základy
 #### [Narušující přizpůsobení](extensibility/intrusive-customizations.md)
 #### [Rozšíření tříd](extensibility/class-extensions.md)
@@ -382,17 +383,18 @@
 
 ### [Integrace dat s použitím služby Common Data Service](data-entities/data-integration-cds.md) 
 #### [Konfigurace scénáře zpeněžení potenciálního zákazníka](../supply-chain/sales-marketing/prospect-to-cash.md)
-##### [Synchronizace produktů z aplikace Finance and Operations na produkty v aplikaci Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-##### [Synchronizace obchodních vztahů z aplikace Sales na odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-##### [Synchronizace kontaktů z aplikace Sales na kontakty nebo odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-##### [Synchronizace hlaviček a řádků prodejních nabídek z aplikace Sales do aplikace Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
-##### [Synchronizace hlaviček a řádků prodejní objednávky z aplikace Finance and Operations do Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
-##### [Synchronizace hlaviček a řádků prodejní faktury z aplikace Finance and Operations do Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 ##### [Synchronizace obchodních vztahů přímo z aplikace Sales na odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ##### [Synchronizace produktů přímo z aplikace Finance and Operations na produkty v aplikaci Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ##### [Synchronizace kontaktů přímo z aplikace Sales na kontakty nebo odběratele v aplikaci Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-##### [Synchronizace hlaviček a řádků prodejní objednávky přímo z aplikace Finance and Operations do Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
-##### [Synchronizace hlaviček a řádků prodejní faktury přímo z aplikace Finance and Operations do Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+##### [Synchronizace hlaviček a řádků prodejních nabídek přímo z aplikace Sales do aplikace Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+##### [Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+##### [Synchronizace hlaviček a řádků prodejní faktury přímo z aplikace Finance and Operations do aplikace Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+#### [Konfigurace integrace se službou Field Service](../supply-chain/sales-marketing/field-service.md)
+##### [Synchronizace produktů v aplikaci Finance and Operations do produktů ve službě Field Service](../supply-chain/sales-marketing/field-service-product.md)
+##### [Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v aplikaci Finance and Operations](../supply-chain/sales-marketing/field-service-work-order.md)
+##### [Synchronizace smluvních faktur ve službě Field Service do volných faktur v aplikaci Finance and Operations](../supply-chain/sales-marketing/field-service-invoice.md)
+
+
 
 ### [Spotřeba externích webových služeb](data-entities/consume-external-web-service.md)
 
@@ -407,7 +409,9 @@
 ### [Šablony dat konfigurací](data-entities/configuration-data-templates.md)
 ### [Šablony dat s více listy](data-entities/excel-template-multiple.md)
 ### [Sledování změn entity](data-entities/entity-change-track.md)
+
 ### [Hledání informací o standardních datových entitách](data-entities/data-entities-report.md)
+
 
 ## [Úlohy importu a exportu dat](data-entities/data-import-export-job.md)
 
@@ -427,13 +431,18 @@
 
 ## [Použití vlastní databáze](analytics/export-entities-to-your-own-database.md)
 
+
+## [Automatizace datové úlohy](data-entities/data-task-automation.md)
+
 ## [Zdroje pro odpověď na požadavek na data GDPR](gdpr/gdpr-home-page.md)
 ### [Průvodce GDPR pro Microsoft Dynamics 365 for Finance and Operations](gdpr/gdpr-auditing-sensitive-data.md)
+### [Klasifikace majetku](gdpr/gdpr-asset-classification-values.md)
 ### [Použití sestavy vyhledávání osob](gdpr/gdpr-person-search-report.md)
 ### [Rozšíření sestavy vyhledávání osob](gdpr/gdpr-extend-person-search-report.md)
 ### [Správa přístupu k citlivým datům](gdpr/gdpr-auditing-sensitive-data.md)
 ### [Odpověď na požadavek personálních dat pomocí aplikace Talent](gdpr/respond-dsr-request-talent.md)
 ### [Odpověď na požadavek personálních dat pomocí aplikace Microsoft Dynamics AX 2012](gdpr/gdpr-ax2012.md)
+
 
 # [Domovská stránka o průběžném doručování](dev-tools/continuous-delivery-home-page.md)
 ## [Často kladené dotazy k vývoji a průběžnému doručování](dev-tools/continuous-delivery-faq.md)
@@ -530,7 +539,8 @@
 ### [Upgrade AX 2012 – Ostré nasazení](migration-upgrade/2012-upgrade-cutover.md)
 
 ### Změny ovlivňující upgrade z aplikace AX 2012
-#### [Upgrade týkající se jednoho dokladu a přecenění měny ](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
+#### [Oddělovač účtové osnovy musí být jedinečný](migration-upgrade/chart-accounts-delimiter-unique.md)
+#### [Upgrade týkající se jednoho dokladu a přecenění měny](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
 #### [Datový model plánování projektových zdrojů](migration-upgrade/data-model-changes-resource-management.md)
 #### [Změny podsystému workflowu](migration-upgrade/workflow-subsystem.md)
 #### [Proč jsme se přesunuli od krychlí k agregovaným modelům](migration-upgrade/in-memory-real-time-aggregate-models.md)
@@ -568,7 +578,8 @@
 ### [Zastaralé funkce](migration-upgrade/deprecated-features.md)
 
 # [Správa systému](sysadmin/system-administration-home-page.md)
-## [Často kladené dotazy k měsíčním aktualizacím platformy](sysadmin/faq-platform-monthly-updates.md)
+## [Časté dotazy k měsíčním aktualizacím platformy](sysadmin/faq-platform-monthly-updates.md)
+## [Časté dotazy k virtuálním počítačům, které nepovolují přístup správce](sysadmin/VMs-no-admin-access.md)
 ## [Přidání odkazů na právní podmínky a zásady ochrany osobních údajů ve vaší organizaci](sysadmin/legal-terms-privacy-statement.md)
 ## [Licenční kódy a sestavy konfiguračních klíčů](sysadmin/license-codes-configuration-keys-report.md)
 ## [Sdílení dat mezi společnostmi](sysadmin/cross-company-data-sharing.md)
@@ -612,6 +623,7 @@
 ## [Ukončení úloh v knihovně BPM](lifecycle-services/complete-tasks-bpm.md)
 ## [Použití diagramů aktivit](lifecycle-services/using-activity-diagrams.md)
 ## [Synchronizace knihovny BPM se službou Visual Studio Team Services (VSTS)](lifecycle-services/synchronize-bpm-vsts.md)
+## [Vytvoření sady akceptačního testování pomocí průvodců záznamem úloh a BPM](lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
 ## [Vývojové diagramy modelování podnikových procesů](lifecycle-services/flowcharts-business-process-modeler.md)
 ## [Odeslání vlastních podnikových procesů](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Monitorování a diagnostika ](lifecycle-services/monitoring-diagnostics.md)
@@ -619,7 +631,9 @@
 ## [Sledování přihlášení uživatelů](lifecycle-services/user-logins.md)
 ## [Knihovna majetku](lifecycle-services/asset-library.md)
 ## [Microsoft Dynamics 365 - Přehled překladové služby](lifecycle-services/translation-service-overview.md)
-### [Microsoft Dynamics 365 - Uživatelská příručka překladové služby ](lifecycle-services/use-translation-service.md)
+### [Microsoft Dynamics 365 - Uživatelská příručka překladové služby](lifecycle-services/use-translation-service.md)
+### [Microsoft Dynamics 365 Překladová služba - Překlad souboru dokumentace](lifecycle-services/use-translation-service-ua.md)
+### [Microsoft Dynamics 365 Překladová služba - Překladová paměť](lifecycle-services/use-translation-service-tm.md)
 
 ## Funkce aplikace Dynamics AX 2012 Lifecycle Services
 ### Nasazení

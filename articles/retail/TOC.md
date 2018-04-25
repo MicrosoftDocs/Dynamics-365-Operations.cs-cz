@@ -31,7 +31,7 @@
 ## [Katalogy kontaktního střediska](call-center-catalogs.md)
 ## [Vytvoření katalogu kontaktního střediska](create-call-center-catalogs.md)
 ## [Nastavení výstrah u podvodů](set-up-fraud-alerts.md)
-## [Nastavení možností zpracování objednávky](set-up-order-processing-options.md)
+## [Nastavení kontaktního střediska](set-up-order-processing-options.md)
 ## [Nastavení programu kontinuity pro kontaktní středisko](set-up-continuity-program.md)
 ## [Blokování objednávky](work-with-order-holds.md)
 ## [Možnosti platby](work-with-payments.md)
@@ -49,8 +49,9 @@
 ## [Operace POS, online a offline](pos-operations.md)
 ## [Rozložení obrazovky ukázkových dat v MPOS/CPOS](demo-data.md)
 ## [Přehled vyhledávání produktu a zákazníka v pokladním místě](POS-search-improvements.md)
-## Hardwarová periferní zařízení
-### [Přehled periferní zařízení aplikace Retail](retail-peripherals-overview.md)
+## [Vyhledávání zásob v pokladním místě](product-variants-POS.md)
+## Hardwarová periferní zařízení
+### [Přehled maloobchodních zařízení](retail-peripherals-overview.md)
 ### [Hardwarová periferní zařízení POS testovaná společností Microsoft](microsoft-tested-pos-hardware-peripherals.md)
 ### [Simulátor periferních zařízení Retail](dev-itpro/retail-peripheral-simulator.md)
 ### [Definování a správa klientů z obchodních kanálů, pokladen a hardwarových stanic](define-maintain-channel-clients-registers-hw-stations.md)
@@ -96,6 +97,7 @@
 ## [Nastavení analýzy RFM](set-up-rfm-analysis.md)
 
 # Úpravy slev a cen
+## [Řízení maloobchodní prodejní ceny](price-management.md)
 ## [Úpravy ceny a slevy](price-adjustments-discounts.md)
 ## [Určení optimální kombinace překrývajících se slev](optimal-combination-overlapping-discounts.md)
 ## [Definování slevy specifické pro kanál](define-channel-specific-discounts.md)
@@ -139,14 +141,18 @@
 ## [Nastavení komponent práce](../talent/create-job.md)
 
 # Lokalizace a funkce týkající se předpisů
+## Francie
+### [Registrační pokladny pro Francii](localizations/emea-fra-cash-registers.md)
+### [Pokyny k nasazení registračních pokladen pro Francii](localizations/emea-fra-deployment.md)
 ## Indie
-### [Integrace daně GST pro Indii pro registrační pokladny](localizations/apac-ind-cash-registers.md)
-### [Pokyny k nasazení registračních pokladen pro Indii](localizations/apac-ind-loc-deployment-guidelines.md)
+### [Integrace daně GST pro registrační pokladny](localizations/apac-ind-cash-registers.md)
+### [Pokyny k nasazení registračních pokladen v Indii](localizations/apac-ind-loc-deployment-guidelines.md)
 ## Norsko
 ### [Registrační pokladny pro Norsko](localizations/emea-nor-cash-registers.md)
-### [Pokyny k nasazení registračních pokladen pro Norsko](localizations/emea-nor-loc-deployment-guidelines.md)
+### [Pokyny k nasazení registračních pokladen v Norsku](localizations/emea-nor-loc-deployment-guidelines.md)
 ## Švédsko
-### [Registrační pokladny ve Švédsku](localizations/emea-swe-cash-registers.md)
+### [Registrační pokladny pro Švédsko](localizations/emea-swe-cash-registers.md)
+### [Vzor pro integraci Retail POS s kontrolními jednotkami](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
 
 # Úkoly v aplikaci Retail
 ## [Vytvoření produktu](../supply-chain/pim/tasks/create-product.md)
@@ -260,6 +266,7 @@
 ### [Sada SDK platformy elektronického obchodu](dev-itpro/ecommerce-platform-sdk.md)
 
 ## Rozšiřitelnost konektoru platby
+### [Integrace plateb s platebním terminálem](dev-itpro/end-to-end-payment-extension.md)
 ### [Implementace konektoru platby a platebního zařízení (dokument white paper)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 ### [Nasazení konektoru platby](dev-itpro/deploy-payment-connector.md)
 ### [vytvoření instalační služby systému Windows pro konektor platby](dev-itpro/create-windows-installer-payment-connector.md)
@@ -269,6 +276,7 @@
 ### [Vzory rozšiřitelnosti sady Retail SDK](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Balíčky sady Retail SDK](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Vzory sady Retail SDK ](dev-itpro/retail-sdk/retail-sdk-samples.md)
+#### [Body rozšíření pro dodací listy](dev-itpro/extensions-shipping-carrier-integration.md)
 ### [Rozšíření databáze kanálů](dev-itpro/channel-db-extensions.md)
 ### [Rozšiřitelnost CDX](dev-itpro/cdx-extensibility.md)
 ### [Atributy objednávky](dev-itpro/order-attributes.md)
