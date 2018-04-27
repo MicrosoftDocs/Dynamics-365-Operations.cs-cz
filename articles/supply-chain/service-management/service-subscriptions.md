@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-subscriptions"></a>Předplatné servisu
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Předplatné je založeno na projektu času a materiálu. Předplatné lze vytvořit z projektu, ze stránky **Předplatné servisu** nebo s použitím skupiny předplatného servisu.
 

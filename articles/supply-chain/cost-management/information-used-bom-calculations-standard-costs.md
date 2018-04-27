@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="information-used-in-bom-calculations-with-standard-costs"></a>Údaje použité ve výpočtech kusovníku se standardními náklady
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ve výpočtech kusovníku jsou při vyčíslení standardních nákladů na vyráběnou položku použita data z více zdrojů. Mezi tyto zdroje patří informace o různých položkách, postupy a kusovníky, výpočetní vzorce nepřímých nákladů a nákladová verze.
 

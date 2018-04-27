@@ -23,21 +23,21 @@ ms.contentlocale: cs-cz
 ms.lasthandoff: 09/29/2017
 
 ---
-# Použití deníku pojistných zásob pro aktualizaci minimální disponibility
+# <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>Použití deníku pojistných zásob pro aktualizaci minimální disponibility
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje způsob výpočtu návrhů minimální disponibility na základě historických transakcí, a pokrytí následně aktualizaci disponibility položky podle návrhů. To se provádí pomocí deníku pojistných zásob. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF. Tato úloha je určena pro plánovače výroby k zachování minimální disponibility.
 
 
-## Vytvoření názvu nového deníku pojistných zásob
+## <a name="create-a-new-safety-stock-journal-name"></a>Vytvoření názvu nového deníku pojistných zásob
 1. Přejděte na Názvy deníku pojistných zásob.
 2. Klikněte na položku Nová.
 3. Do pole Název zadejte „Materiál“.
 4. V poli Popis uveďte text „Materiál“.
 5. Zavřete stránku.
 
-## Vytvoření deníku pojistných zásob
+## <a name="create-a-safety-stock-journal"></a>Vytvoření deníku pojistných zásob
 1. Přejděte na Výpočet pojistných zásob.
 2. Klikněte na položku Nová.
 3. V poli Název zadejte nebo vyberte hodnotu.
@@ -50,7 +50,7 @@ Tento postup popisuje způsob výpočtu návrhů minimální disponibility na z�
 7. Klikněte na tlačítko OK.
     * Dojde tak k vytvoření řádků pro dimenze, pro něž existují skladové transakce.  
 
-## Vypočítat návrh
+## <a name="calculate-proposal"></a>Vypočítat návrh
 1. Klikněte na Vypočítat návrh.
 2. Vyberte možnost Použít průměrný výdej během doby realizace.
 3. Nastavte Koeficient násobení na 10.
@@ -58,7 +58,7 @@ Tento postup popisuje způsob výpočtu návrhů minimální disponibility na z�
 4. Klikněte na tlačítko OK.
     * Přejděte dolů a vyhledejte M0002 a M0003. Otevřete sloupec Vypočítané minimální množství.   
 
-## Aktualizace minimálního množství
+## <a name="update-minimum-quantity"></a>Aktualizace minimálního množství
 1. V poli Nové minimální množství zadejte číslo.
     * Aktualizujte Nové minimální množství tak, aby odpovídalo hodnotě Vypočítané minimální množství. Pokud je Vypočítané minimální množství nulové, můžete zadat požadovanou budoucí hodnotu. Například můžete zadat Vypočítané minimální množství v tomto poli pro M0002, pro které je přiřazen sklad 12.  
 2. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
@@ -66,7 +66,7 @@ Tento postup popisuje způsob výpočtu návrhů minimální disponibility na z�
 3. V poli Nové minimální množství zadejte číslo.
     * Aktualizujte Nové minimální množství tak, aby odpovídalo hodnotě Vypočítané minimální množství. Pokud je Vypočítané minimální množství nulové, můžete zadat požadovanou budoucí hodnotu.  
 
-## Zaúčtování nového minimálního množství a ověření výsledku
+## <a name="post-the-new-minimum-quantity-and-validate-the-result"></a>Zaúčtování nového minimálního množství a ověření výsledku
 1. Klikněte na položku Zaúčtovat.
 2. Klikněte na tlačítko OK.
 3. Kliknutím přejdete na odkaz v poli Číslo položky.

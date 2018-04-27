@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="resource-capabilities"></a>Schopnosti prostředku
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 V tomto článku jsou informace o možnostech prostředků. Schopnost je možnost provozních prostředků provádět určitou aktivitu. Článek vysvětluje způsob použití možností a souvisejících koncepcí, například úrovní znalosti a priority, k volbě vhodných prostředků pro aktivitu.
 

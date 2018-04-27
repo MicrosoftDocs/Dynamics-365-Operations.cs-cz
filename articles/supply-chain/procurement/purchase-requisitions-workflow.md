@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchase-requisition-workflow"></a>Workflow nákupního požadavku
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Proces workflowu přesouvá nákupní žádanky v procesu kontroly od počátečního stavu Koncept do konečného stavu Schváleno. Když je nákupní požadavek odeslán ke kontrole, proces workflowu se spustí. Po schválení nákupního požadavku lze generovat nákupní objednávku pro řádky nákupního požadavku a odeslat ji dodavateli pro splnění zakázky.
 

@@ -19,17 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5472d69f6d0bb7a60fb417a0d1bdc3fbc6a5e18
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 813d13738171969b48d16a5ed52f2b04a8beaeef
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="transportation-management-engines"></a>Moduly správy přepravy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Moduly správy přepravy definují logiku, které slouží ke generování a zpracování přepravní sazby v rámci správy přepravy. 
 
@@ -47,7 +46,7 @@ Následující tabulka obsahuje moduly správy přepravy, které jsou k dispozic
 | **Modul zóny**                  | Vypočítá zónu na základě aktuální adresy a počet zón, které je třeba překročit při cestě z adresy A na adresu B.                                                                                                                                                                    |
 | **Typ účtu dopravného**            | Standardizuje fakturu za přepravu a řádky účtu dopravného a používá se při automatickém párování účtu dopravného.                                                                                                                                                                                                                |
 
- 
+
 <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Jaké moduly musí být nakonfigurovány pro výpočet sazby dodávky?
 ---------------------------------------------------
 
@@ -60,13 +59,13 @@ Modul správy přepravy vyžaduje určité nastavení dat inicializace. Nastaven
 -   Jednoduchá konfigurační data.
 
 Ve většině případů můžete klepnout na tlačítko **Parametry** ve formuláři pro nastavení modulu správy přepravy a nakonfigurovat tak data inicializace. **Příklad konfigurace modul pro výpočet přepravních sazeb odkazující na modul pro výpočet kilometrovného** Následující příklad ukazuje nastavení, které je nutné pro modul pro výpočet přepravních sazeb, který je založen na typu modulu .NET Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine a odkazuje na modul pro výpočet kilometrovného.
-| Parametr             | Popis                                                                                                                                                                                                                                                                                                                                                                      |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *PřidělovatelZákladuSazby*    | Typ rozhraní .NET, který interpretuje data pro přiřazení základní sazby v konkrétním schématu. Syntaxe hodnoty parametru se skládá ze dvou segmentů oddělených svislou čárou (|). První segment obsahuje název sestavení, který definuje typ přiřazujícího uživatele. Druhý segment definuje plně kvalifikovaný název typu přiřazujícího uživatele. Jedná se o obor názvů typu. |
-| *KódRegistruUjetéVzdálenosti*   | Modul pro výpočet kilometrovného, který identifikuje záznam v modulu kilometrovného v databázi Microsoft Dynamics 365 for Finance and Operations.                                                                                                                                                                                                                                                             |
-| *PřidělovacíStroj* | Modul pro obecný výpočet, který identifikuje výpočet rozdělení nákladů v databázi Microsoft Dynamics 365 for Finance and Operations.                                                                                                                                                                                                                                                              |
 
- 
+|          Parametr           |                                                                                  Popis                                                                                  |
+|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <em>PřidělovatelZákladuSazby</em>   | Typ rozhraní .NET, který interpretuje data pro přiřazení základní sazby v konkrétním schématu. Syntaxe hodnoty parametru se skládá ze dvou segmentů oddělených svislou čárou ( |
+|  <em>KódRegistruUjetéVzdálenosti</em>  |                       Modul pro výpočet kilometrovného, který identifikuje záznam v modulu kilometrovného v databázi Microsoft Dynamics 365 for Finance and Operations.                        |
+| <em>PřidělovacíStroj</em> |                        Modul pro obecný výpočet, který identifikuje výpočet rozdělení nákladů v databázi Microsoft Dynamics 365 for Finance and Operations.                        |
+
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Jaké je použití metadat v modulech správy přepravy?
 ----------------------------------------------------------
 
@@ -77,6 +76,7 @@ Data, která lze použít při výpočtu sazby v rámci Microsoft Dynamics 365 f
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Vyžadují všechny konfigurace modulu metadata?
 Ne. Moduly správy přepravy, které slouží k načtení dat, která jsou vyžadována pro výpočet sazby z externích systémů, nebudou metadat požadovat. Data sazby pro tyto moduly lze získávat z externích přepravních systémů dopravce, obvykle pomocí webové služby. Například můžete používat modul pro výpočet kilometrovného načítající data přímo z map služby Bing a metadata pro tento modul tak nepotřebujete.
+
 | **Poznámka**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Moduly správy přepravy, které jsou dodávány s aplikací Finance and Operations pracují s daty, která se načítají z aplikace. Moduly, které se připojují k externím systémům, nejsou součástí operací. Model rozšíření využívající moduly však umožňují sestavení rozšíření pomocí nástroje Microsoft Dynamics 365 for Finance and Operations Visual Studio Tools. |

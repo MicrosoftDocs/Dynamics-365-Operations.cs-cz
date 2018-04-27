@@ -1,5 +1,5 @@
 --- 
-title: "Návrh konfigurací pro generování sestav ve formátu Microsoft Office s integrovanými obrázky pro elektronické výkaznictví (ER) (Část 1) "
+title: "Návrh konfigurací pro generování sestav ve formátu Microsoft Office s integrovanými obrázky"
 description: "Kroky v tomto tématu popisují informace o navrhování konfigurací elektronického výkaznictví, které generují elektronické dokumenty ve formátech in Microsoft Office formats (Excel a Word) obsahující vložené obrázky."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9cb9343028acacc387370e1cdd2202b84919185e
-ms.openlocfilehash: 844d8de1d5a1958457eaab1d434bef015f92e33c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5e3ba5c76df3dcc5042074a565d102ceaeeadfb0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="design-configurations-to-generate-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er-part-1"></a>Návrh konfigurací pro generování sestav ve formátu Microsoft Office s integrovanými obrázky pro elektronické výkaznictví (ER) (Část 1)  
+# <a name="design-configurations-to-generate-reports-in-microsoft-office-formats-with-embedded-images"></a>Návrh konfigurací pro generování sestav ve formátu Microsoft Office s integrovanými obrázky
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 K provedení kroků v tomto postupu musíte nejprve dokončit postup "Elektronické výkaznictví - Vytvoření poskytovatele konfigurace a jeho označení jako aktivního." Tento postup vysvětluje proces navrhování konfigurací elektronického výkaznictví pro generování dokumentů v aplikacích Microsoft Excel nebo Word obsahujících vložené obrázky. V tomto postupu vytvoříte požadované konfigurace elektronického výkaznictví pro vzorovou společnost Litware, Inc. Tyto kroky lze dokončit pomocí sady dat USMF. Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. Dříve než začnete, stáhněte a uložte soubory uvedené v tématu nápovědy [Vložení obrázků a tvarů v obchodních dokumentech generovaných pomocí nástroje pro elektronické výkaznictví](../electronic-reporting-embed-images-shapes.md). Soubory jsou: Model for cheques.xml, Cheques printing format.xml, Company logo.png, Signature image.png, Signature image 2.png a Cheque template Word.docx.
 

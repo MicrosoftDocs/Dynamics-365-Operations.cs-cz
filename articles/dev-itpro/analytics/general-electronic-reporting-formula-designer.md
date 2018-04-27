@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 41d5671d180bae039d873419352d52afe90e386b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: adbbb36da2bc1e9a2211c703823370571105ecab
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formula-designer-in-electronic-reporting"></a>Návrhář vzorců v elektronickém výkaznictví
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak lze používat návrháře receptur v elektronickém výkaznictví. Při vytváření formátu pro určitý elektronický dokument pro elektronické výkaznictví můžete použít vzorce k převodu dat za účelem plnění požadavků na plnění a formátování daného dokumentu. Tyto vzorce připomínají vzorce aplikace Microsoft Excel. Ve vzorcích jsou podporovány různé typy funkcí: text, datum a čas, matematika, logika, informace, převod datových typů a další (funkce specifické pro danou obchodní doménu).
 
@@ -313,12 +313,12 @@ V následující tabulce jsou popsány funkce pro manipulaci s daty, které lze 
 <tr class="odd">
 <td>ORDERBY (seznam [, výraz 1, výraz 2…])</td>
 <td>Vrátí zadaný seznam po seřazení podle zadaných argumentů. Tyto argumenty lze definovat jako výrazy.</td>
-<td>Jestliže je položka <strong>Vendor</strong> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <strong>ORDERBY (Vendors, Vendors.'name()')</strong> vrátí seznamu dodavatelů seřazených podle názvu ve vzestupném pořadí.</td>
+<td>Jestliže je položka <strong>Vendor</strong> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <strong>ORDERBY (Vendors, Vendors.&#39;name()&#39;)</strong> vrátí seznam dodavatelů seřazených podle názvu ve vzestupném pořadí.</td>
 </tr>
 <tr class="even">
 <td>REVERSE (seznam)</td>
 <td>Vrátí zadaný seznam v obráceném pořadí.</td>
-<td>Jestliže je položka <strong>Vendor</strong> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> vrátí seznamu dodavatelů seřazených podle názvu v sestupném pořadí.</td>
+<td>Jestliže je položka <strong>Vendor</strong> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <strong>REVERSE (ORDERBY (Vendors, Vendors.'nam.&#39;name()&#39;)) )</strong> vrátí seznam dodavatelů seřazených podle názvu v sestupném pořadí.</td>
 </tr>
 <tr class="odd">
 <td>WHERE (seznam, podmínka)</td>
@@ -395,7 +395,9 @@ V takovém případě můžete použít následující výraz k získání popis
 <tr class="even">
 <td>STRINGJOIN (seznam, název pole, oddělovač)</td>
 <td>Vrátí řetězec, který se skládá ze zřetězených hodnot zadaného pole ze zadaného seznamu. Hodnoty jsou odděleny určeným oddělovačem.</td>
-<td>Pokud zadáte <strong>SPLIT(&quot;abc&quot; , 1)</strong> jako datový zdroj, výraz <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> vrátí <strong>&quot;a:b:c&quot;</strong>.</td>
+
+<td>Pokud zadáte <strong>SPLIT(&quot;abc&quot; , 1)</strong> jako zdroj dat (DS), výraz <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> vrátí <strong>&quot;a</strong><strong>:b</strong><strong>:c&quot;</strong>.</td>
+
 </tr>
 <tr class="odd">
 <td>SPLITLISTBYLIMIT (seznamu, hodnota limitu, zdroj limitu)</td>
@@ -553,7 +555,7 @@ Výraz <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> vrátí též <str
 <li>Popisek aplikace Finance and Operations SYS18389, který má následující text:
 <ul>
 <li><strong>Pro jazyk EN-US:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
-<li><strong>Pro jazyk DE:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
+<li><strong>Němčina: </strong> &quot;Debitor &#39;%1&#39; wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
 <p>Zde je vzorec, který lze vytvořit:</p>
@@ -561,7 +563,7 @@ Výraz <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> vrátí též <str
 <p>Pokud je sestava zpracovávána pro odběratele <strong>Litware Retail</strong> 17. prosince 2015, v národním prostředí <strong>EN-US</strong> a jazyce <strong>EN-US</strong>, tento vzorec vrátí následující text, který může být uživateli nabídnut ve formě zprávy výjimky:</p>
 <p>&quot;Nic k tisku. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
 <p>Jestliže je stejná sestava zpracována pro odběratele <strong>Litware Retail</strong> 17. prosince 2015 v jazykové verzi <strong>DE</strong> a jazyce <strong>DE</strong>, tento vzorec vrátí následující text, který používá jiný formát data:</p>
-<p>&quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
+<p>&quot;Nichts zu drucken. Debitor &#39;Litware Retail&#39; wird für 17.12.2015 gesperrt.&quot;</p>
 <blockquote>[!NOTE]<br>
 Následující syntaxe je použita ve vzorcích elektronického výkaznictví pro popisky:
 <ul>

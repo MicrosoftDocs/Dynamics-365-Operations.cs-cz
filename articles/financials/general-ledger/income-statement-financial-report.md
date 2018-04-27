@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="income-statement-financial-report"></a>Finanční sestava výkazu příjmu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje výchozí sestavu pro výsledovky. Popisuje také stavební bloky, které jsou přidruženy k této sestavě. 
 
@@ -60,7 +59,7 @@ Definice sloupců obsahují různé typy sloupců, které poskytují různé úr
     -   **FD** – finanční údaje pro aktuální období
     -   **FD** – finanční údaje od začátku roku
 
- 
+
 
 <a name="see-also"></a>Viz také
 --------

@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="register-and-post-a-postdated-check-for-a-vendor"></a>Registrace a zaúčtování postdatovaného šeku pro dodavatele
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Můžete si zaregistrovat podrobnosti postdatovaného šeku před vydáním šeku na dodavatele pomocí účetního dokladu. Také můžete postdatovaný šek zaúčtovat a generovat finanční transakce. Než můžete zaregistrovat a zaúčtovat postdatovaný šek od dodavatele, proveďte následující úkol: 
 

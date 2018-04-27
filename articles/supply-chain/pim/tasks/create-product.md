@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-product"></a>Vytvoření produktu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura vás provede procesem vytvoření nového produktu v hierarchii maloobchodních produktů. Společnost s ukázkovými daty používaná k tvorbě tohoto úkolu je USRT a tento úkol je určen pro manažera prodeje a návrháře produktu.
 

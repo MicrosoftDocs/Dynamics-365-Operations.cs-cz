@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="ledger-journal-types"></a>Typy deníku hlavní knihy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje typy deníků, které lze nastavit pro finanční deníky. Na stránce **Názvy deníků** lze nastavit deníky, které můžete používat v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 

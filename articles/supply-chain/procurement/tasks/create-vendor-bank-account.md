@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-vendor-bank-account"></a>Vytvoření bankovního účtu dodavatele
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura popisuje způsob vytváření bankovního účtu pro dodavatele. Tento postup můžete projít v ukázkových datech společnosti USMF.
 

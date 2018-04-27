@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Vytvoření nákupní objednávky z prodejní objednávky
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup zobrazuje, jak vytvořit nákupní objednávku na základě plánu prodejní objednávky. Množství produktu na nákupní objednávce je pak označeno k uspokojení poptávky původní prodejní objednávky. Plnění prodejní poptávky tímto způsobem je alternativou k více srozumitelné a optimalizované metodě požadavků plánování distribuce. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.
 

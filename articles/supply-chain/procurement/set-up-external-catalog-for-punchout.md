@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Nastavení externího katalogu pro funkci PunchOut eProcurement
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Pomocí externího katalogu můžete zajistit, zda jsou informace o produktu a cenách, které následně zpracováváte v aplikaci Dynamics 365 for Finance and Operations z července 2017, přesné a aktuální. Žádanku poté lze schválit a převést na nákupní objednávku a tuto objednávku následně zadat u dodavatele.
 

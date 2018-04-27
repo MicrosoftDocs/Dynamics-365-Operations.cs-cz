@@ -17,18 +17,18 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
-ms.openlocfilehash: 1f0b5ff383c8bb2d1ac892ef771e15f0afec2655
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ad9373faa19761cccca2b5d581de05f0ac9dd165
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="alerts-overview"></a>Přehled výstrah
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 ## <a name="about-alerts"></a>O výstrahách
 Výstrahy představují systém oznámení kritické události v aplikaci Microsoft Dynamics 365 for Finance and Operations. Výstrahy lze používat k informování o událostech, které mají být sledovány během pracovního dne. Můžete snadno vytvořit vlastní pravidla výstrah, abyste byli upozorněni na zpožděné dodávky, smazané objednávky, změny cen nebo jiné události, na které musíte reagovat.
@@ -71,4 +71,7 @@ Pravidlo výstrahy obsahuje pět komponent:
 
     > [!NOTE]
     > Tato možnost je omezen na správce organizace.
+
+## <a name="email-notifications-from-alerts"></a>E-mailová oznámení z výstrah
+E-mailová oznámení z výstrah dosud nejsou povolena. To bude k dispozici v budoucí aktualizaci.
 

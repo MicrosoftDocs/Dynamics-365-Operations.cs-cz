@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="intercompany-expenses"></a>Mezipodnikové výdaje
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Pracovník, který je zaměstnán jednou právnickou osobou v jedné organizaci, může provádět práci pro jinou právnickou osobu v rámci stejné organizace. V takové situaci můžete použít funkci mezipodnikových výdajů přiřazení pro přiřazení výdajů pracovníka k právnické osobě, pro kterou byla práce prováděna. Právnická osoba, která pracovníka zaměstnává, se nazývá půjčující právnická osoba. Právnická osoba, vůči které pracovník uplatňuje výdaje, se nazývá vypůjčující právnická osoba. 
 

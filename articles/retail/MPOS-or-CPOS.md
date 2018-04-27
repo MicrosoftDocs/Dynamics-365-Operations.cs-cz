@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="choose-between-modern-pos-and-cloud-pos"></a>Výběr mezi Modern POS a Cloud POS
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Toto téma poskytuje implementátorům dodatečné tipy a návody pro faktory, které je třeba při nasazení aplikace Microsoft Dynamics 365 for Retail zvážit. Zrevidováním a dodržováním těchto pokynů v rámci procesu nasazení se mohou implementátoři vyhnout problémům, které by mohly ovlivnit spokojenost nebo výkon uživatele.
 
@@ -92,8 +92,8 @@ Při plánování POS implementace ve svých maloobchodech vezměte v úvahu ná
 
     Pokud není připojení k pro dané zařízení velmi spolehlivé a stálé, nebo pokud není pro obchodníka přijatelný určitý čas odstávky, doporučujeme jednu z následujících možností:
 
-    - Použít MPOS v systému Windows a povolit offline režim.
-    - Nasadit místní RSSU.
+  - Použít MPOS v systému Windows a povolit offline režim.
+  - Nasadit místní RSSU.
 
     Tyto dvě možnosti se vzájemně nevylučují. Pro většinu spolehlivé topologie mohou obchodníci nasadit místní RSSU ke snížení závislosti na připojení k internetu nebo dostupnosti služby Azure, a rovněž mohou nasadit registrační pokladny POS tam, kde je povolen offline režim, pokud dojde k problému s místním serverem nebo sítí.
 

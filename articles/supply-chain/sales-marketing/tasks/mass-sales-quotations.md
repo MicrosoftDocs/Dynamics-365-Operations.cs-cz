@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="mass-create-sales-quotations"></a>Hromadně vytvořit prodejní nabídky
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup ukazuje, jak účinně vytvářet prodejní nabídky nabízející sadu produktů nebo služeb, které mají být zaslány více zákazníkům. Toto hromadné vytvoření nabídky vychází z šablon nabídek. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.
 

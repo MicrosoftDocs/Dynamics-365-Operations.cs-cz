@@ -3,7 +3,7 @@
 # [Začínáme](talent-get-started.md)
 ## [Systémové požadavky a zásady aktualizace](talent-versions-update-policy.md)
 ## [Zřízení Microsoft Dynamics 365 for Talent](provisioning-talent.md)
-## [Odstranění prostředí Talent](remove-test-environment.md)
+## [Odstranění prostředí Talent](remove-talent-environment.md)
 ## [Zřízení modulárních aplikací Microsoft Dynamics 365 for Talent](modular-app-tech-faq.md)
 ## [Rozšíření funkce Talent](extend-talent-functionality.md)
 
@@ -13,7 +13,8 @@
 ## [Nastavení parametrů lidských zdrojů mezi právnickými osobami](set-up-hr-parameters-across-legal-entities.md)
 ## [Nastavení parametrů lidských zdrojů pro konkrétní společnost](set-up-company-specific-hr-parameters.md)
 ## [Často kladené dotazy k akcím personálu](personnel-actions-faq.md)
-## [Správa informací pomocí workflowu](workflow-manage-employee-information.md)
+## [Formalizace obchodních procesů](formalize-business-processes.md)
+## [Správa informací o zaměstnanci pomocí workflowu](workflow-manage-employee-information.md)
 ## [Přehled pracovního volna a absencí](leave-absence-overview.md)
 
 # Správa zaměstnanců ve vaší organizaci

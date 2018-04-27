@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Vizuální plánování pro lean manufacturing
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma obsahuje informace o desce plánování kanbanu, kterou Plánovač výroby může používat k řízení a optimalizaci výrobního plánu pro kanbanové úlohy.
 

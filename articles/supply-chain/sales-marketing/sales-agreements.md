@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-agreements"></a>Prodejní smlouvy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 V tomto tématu jsou informace o prodejních smlouvách. Prodejní smlouva je smlouva, která zaváže odběratele k nákupu produktů v určitém množství nebo stanovené částce za určitý čas výměnou za zvláštní ceny nebo slevy.
 

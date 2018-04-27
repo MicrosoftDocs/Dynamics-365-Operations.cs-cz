@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="derived-books"></a>Odvozené knihy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek podává přehled o funkci Odvozená kniha.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="plan-your-organizational-hierarchy"></a>Plánování organizační hierarchie
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Před nastavením organizací a organizačních hierarchií v Microsoft Dynamics 365 for Finance and Operations se ujistěte, že máte plán, jak bude vaše společnost modelována. Organizační model má podstatný vliv na implementaci aplikace Finance and Operations a obchodní procesy. 
 
@@ -158,7 +157,7 @@ Pokud se předpisy a účetní postupy liší mezi zeměmi/oblastmi, kde jsou um
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Pokud organizace modelována jako provozní jednotka 
 Pokud jsou předpisy a účetní postupy stejné v zemích/oblastech, kde jsou umístěny vaše organizace, můžete použít stejné postupy roční uzávěrky. To znamená, že můžete organizace namodelovat jako provozní jednotky. Všechny provozní jednotky musí používat stejný postup roční uzávěrky. 
-   
+
 ### <a name="number-sequences"></a>Číselné řady
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Pokud organizace modelována jako právnická osoba
 Číselné řady pro některé odkazy lze nastavit podle právnické osoby. Některé číselné řady mohou být sdíleny. 

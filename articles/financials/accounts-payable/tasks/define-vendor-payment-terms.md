@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-vendor-payment-terms"></a>Definování platebních podmínek dodavatelů
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Nastavte platební podmínky pro faktury dodavatele. Tento úkol používá ukázkovou společnost USMF.
 

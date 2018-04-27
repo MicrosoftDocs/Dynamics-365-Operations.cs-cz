@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Následující klávesové zkratky platí v celé aplikaci Dynamics 365 for Finance and Operations. 
 
@@ -39,6 +38,7 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 
 
 ## <a name="action-shortcuts"></a>Zkratky akcí
+
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | **Akce**                                    | **Stisknout**                        |
@@ -55,6 +55,7 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Zobrazit aktuálně dostupné klávesové zkratky                | Alt+Shift+K                      |                              
 
 ## <a name="date-picker-shortcuts"></a>Zkratky pro výběr data
+
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Akce**                        | **Stisknout**                                 |
@@ -68,6 +69,7 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Výběr Nikdy (nebo maximální datum)          | Z                                         |
 
 ## <a name="factbox-shortcuts"></a>Zkratky pro okno s fakty
+
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | **Akce**                                                                  | **Stisknout**                                 |
@@ -79,6 +81,7 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Sbalení aktuálního okna s fakty                                                    | Alt+0                                     |
 
 ## <a name="filtering-shortcuts"></a>Zkratky pro filtrování
+
 |                                    |                          |
 |------------------------------------|--------------------------|
 | **Akce**                     | **Stisknout**                |
@@ -89,6 +92,7 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Otevření pokročilého filtrování a řazení                                      | Ctrl+Shift+F3            | 
 
 ## <a name="form-shortcuts"></a>Zkratky pro formulář
+
 |                                                     |                   |
 |-----------------------------------------------------|-------------------|
 | **Akce**                                      | **Stisknout**         |
@@ -110,6 +114,7 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Zavření formuláře a odstranění neuložených změn       | Alt+Shift+Q       |
 
 ## <a name="form-navigation-shortcuts"></a>Zkratky pro formulář navigace
+
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | **Akce**                                      | **Stisknout**                                    |
@@ -128,6 +133,7 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Přepnout na zobrazení řádků                                | Ctrl+Shift+L                                 |
 
 ## <a name="grid-shortcuts"></a>Zkratky mřížky
+
 |                                                                                                                        |                                 |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | **Akce**                                                                                                         | **Stisknout**                       |
@@ -148,6 +154,7 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Otevřít filtrování mřížky pro aktuální sloupec (s výběrem v řádku záhlaví)                                              | Zadat                           |
 
 ## <a name="input-control-shortcuts"></a>Zkratky pro ovládání vstupu
+
 |                                                                              |                               |
 |------------------------------------------------------------------------------|-------------------------------|
 | **Akce**                                                               | **Stisknout**                     |
@@ -163,6 +170,7 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Změnit výběr mezi oblastí textu a panelem nástrojů v ovládacím prvku editoru HTML | F6                            |
 
 ## <a name="messaging-shortcuts"></a>Zkratky pro zasílání zpráv
+
 |                          |               |
 |--------------------------|---------------|
 | **Akce**           | **Stisknout**     |
@@ -170,6 +178,7 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Přechod na panel zpráv    | Ctrl+F7       |
 
 ## <a name="navigation-shortcuts"></a>Zkratky pro navigaci
+
 |                                                                               |                            |
 |-------------------------------------------------------------------------------|----------------------------|
 | **Akce**                                                                | **Stisknout**                  |
@@ -191,6 +200,7 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Přesun do okna s fakty (může zahrnovat jeho otevření)                       | Alt+M,B nebo Ctrl+F2         |
 
 ## <a name="personalization-shortcuts"></a>Individuální nastavení klávesových zkratek
+
 |                                                                                                                        |                                     |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | **Akce**                                                                                                         | **Stisknout**                           |
@@ -219,6 +229,7 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Opuštění režimu přizpůsobení (v režimu přizpůsobení)                                                               | Esc                                 |
 
 ## <a name="segmented-entry-shortcuts"></a>Zkratky pro segmentované zadání
+
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | **Akce**                                                                                                          | **Stisknout**                        |

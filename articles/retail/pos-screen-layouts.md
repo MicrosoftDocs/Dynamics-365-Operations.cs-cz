@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-screen-layouts-for-pos"></a>Konfigurace rozložení obrazovky pro POS
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Toto téma obsahuje informace o rozložení obrazovky pro prostředí POS aplikace Microsoft Dynamics 365 for Retail.
 

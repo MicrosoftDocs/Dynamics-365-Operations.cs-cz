@@ -19,17 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f711ef739e8b885f2f09586f34775e826b619c82
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e0033461e7cd2601993c006aba2ec7c8f6ac0c89
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Nastavení mobilních zařízení pro práci ve skladu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje způsob konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení.
 
@@ -203,13 +202,13 @@ Kromě nastavení položek nabídky pro vytvoření skladové práce můžete na
 
 <thead>
 <tr class="header">
-<th>Možnost</th>
-<th>Popis</th>
+<th>Parametr</th>
+<th>popis</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Žádné</td>
+<td>None</td>
 <td>Tato výchozí hodnota práci nezpracuje.</td>
 </tr>
 <tr class="even">

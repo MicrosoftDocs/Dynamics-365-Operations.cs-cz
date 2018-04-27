@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>Správa datového zdroje pro hlavní knihu nákladového účetnictví
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup slouží k řízení zdroje dat hlavní knihy pro hlavní knihu nákladového účetnictví. Před dokončením tohoto úkolu se nezapomeňte podívat na průvodce Tvorba hlavní knihy nákladového účetnictví a Definování jednotek řízení nákladů. Tento záznam používá v ukázkových datech společnost USP2.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="expense-management"></a>Správa výdajů
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Použijte modul Správa výdajů pro vytvoření integrovaného workflow, do kterého lze uložit informace o metodách platby, importovat transakce kreditních karet a sledovat obnosy, které zaměstnanci utrácejí jako výdaje pro dosažený zisku pro vaši společnost. Můžete také definovat zásady výdajů a automatizovat refundace cestovních výdajů. 
 

@@ -19,17 +19,16 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
-ms.openlocfilehash: cbe0374ff21ff39ed2bbc8d647bd933ced9dcff6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5c92c1ca3f46d80a58ca315f1f695f082d1929ca
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="electronic-reporting-destinations"></a>Místa určení elektronického výkaznictví
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Pro každou konfiguraci formátu elektronického výkaznictví (ER) a její komponenty (složku nebo soubor) lze konfigurovat cíl. Uživatelé, kterým jsou udělena přístupová práva, mohou také měnit nastavení cíle v době běhu. Tento článek popisuje správu cílů EV, typy podporovaných cílů a důležité informace o zabezpečení.
 

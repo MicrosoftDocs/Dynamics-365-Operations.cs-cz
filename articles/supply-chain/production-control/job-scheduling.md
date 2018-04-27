@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="job-scheduling"></a>Plánování úlohy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek obsahuje informace o plánování úloh, což je podrobnější forma plánování než plánování operací. Plánování úkolů můžete použít k jednotlivých úkolů nebo dílenských zakázek a k řízení výrobního prostředí.
 

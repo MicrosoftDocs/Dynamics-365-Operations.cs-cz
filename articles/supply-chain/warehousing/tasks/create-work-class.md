@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-work-class"></a>Vytvoření pracovní třídy
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje nastavení pracovní třídy. Pracovní třídy se používají k nasměrování a/nebo omezení typu řádků pracovních příkazů, které pracovník skladu může v mobilním zařízení zpracovat. Řádky, které může pracovník zpracovat, se určují na základě pracovních tříd pro položky nabídky mobilního zařízení, k nimž má pracovník skladu přístup, a pro pracovní třídu specifikovanou na řádcích práce. Pracovní třídy lze také použít k ověření skladového místa pro řádek pracovního příkazu. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Tento postup je určen pro vedoucího skladu.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-legal-entity"></a>Vytvoření právnické osoby
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Právnická osoba je organizace, která je identifikována prostřednictvím registrace u právního orgánu. Právnické osoby mohou uzavírat smlouvy a je po nich vyžadována příprava výkazů s informacemi o jejich výkonu. Při vytváření právnické osoby postupujte následujícím způsobem. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

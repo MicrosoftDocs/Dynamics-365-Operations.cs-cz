@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="registration-for-manufacturing-execution"></a>Registrace pro provádění výroby
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje klíčové pojmy a termíny, které je třeba pochopit ke konfiguraci a používání provádění výroby. 
 

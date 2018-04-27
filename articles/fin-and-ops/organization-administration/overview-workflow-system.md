@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="workflow-overview"></a>Přehled workflowu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje systém workflowu v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 

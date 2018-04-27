@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-transactions-on-settlement-for-eastern-europe"></a>Zobrazení transakcí vyrovnání pro východní Evropu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma obsahuje informace o transakcích vyrovnání na stránce pro zákazníky a dodavatele.
 

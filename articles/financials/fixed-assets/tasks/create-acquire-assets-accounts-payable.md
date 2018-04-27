@@ -24,7 +24,7 @@ ms.lasthandoff: 10/04/2017
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>Vytvoření a získání majetku z modulu Závazky
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento průvodce úkolem vás provede vytvořením a pořízením dlouhodobého majetku s procesem nákupu. Používá účetní a úředníky závazků a vzorovou společnost USMF.
 

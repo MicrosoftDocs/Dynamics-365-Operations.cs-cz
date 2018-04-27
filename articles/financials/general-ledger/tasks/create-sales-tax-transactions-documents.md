@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-sales-tax-transactions-on-documents"></a>Vytváření transakcí DPH v dokladech
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 DPH v dokumentech se vypočítá zadáním skupiny DPH a skupiny DPH položky na řádky dokladu. Ty vychází z hlavních dat, ale lze je změnit ručně, pokud je to nutné. Vypočtenou částku prodejní daně lze zkontrolovat na úrovni řádku a dokumentu. Tento úkol používá ukázkovou společnost USMF.
 

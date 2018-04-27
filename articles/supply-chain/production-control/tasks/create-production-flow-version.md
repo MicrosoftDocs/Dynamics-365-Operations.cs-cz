@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-a-production-flow-version"></a>Vytvoření verze výrobního toku
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup se zaměřuje na vytvoření nové verze výrobního toku. Pro tuto proceduru musí být definovány výrobní parametry pro Lean manufacturing a jednotky měření pro čas třídy. Je třeba také definovat hodnotový proud a skupinu výroby. Další informace o výrobních tocích a aktivitách v lean manufacturingu naleznete v dokumentech white paper pro Lean manufacturing aplikace Microsoft Dynamics AX. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

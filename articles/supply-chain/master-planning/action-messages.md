@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="action-messages"></a>Zprávy akce
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Zpráva opatření je návrh vygenerovaný systémem na změnu existující plánované nebo potvrzené objednávky.
 

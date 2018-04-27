@@ -23,7 +23,7 @@ ms.lasthandoff: 03/12/2018
 ---
 
 # <a name="assortment-management"></a>Správa sortimentu
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>Přehled
 Microsoft Dynamics 365 for Retail nabízí *sortimenty*, které umožňují spravovat dostupnost produktu mezi kanály. Sortimenty určují, které produkty jsou k dispozici v konkrétních obchodech a v konkrétním období.

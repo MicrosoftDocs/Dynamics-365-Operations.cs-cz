@@ -18,17 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 09addfd9e4a5c601970b5c8c24a3d39b041e07e6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: be69aff98b1a3a8304461af0f38760988ac28d42
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Co je nového nebo upraveného v aplikaci verze Dynamics 365 for Operations 1611 (září 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje funkce, které jsou v Dynamics 365 for Operations verze 1611 nové nebo změněné.
 
@@ -113,6 +112,7 @@ Toto téma popisuje funkce, které jsou v Dynamics 365 for Operations verze 1611
 </table>
 
 ## <a name="expense-management"></a>Správa výdajů
+
 | Co můžete dělat                                                            | Proč je to důležité                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Opětovně přiřadit transakce platební karty propuštěných zaměstnanců.                     | Je-li zaměstnance propuštěn, je v určitých případech jeho účet Active Directory Domain Services (AD DS) blokován při importu transakcí aktivní platební karty, které musí být zaneseny do výdajů. Předtím jste nemohli přiřadit zástupce pro vyúčtování výdajů nebo připojit transakce kreditních karet k vyúčtování výdajů. Nyní můžete použít stránku **transakce kreditních karet** k opětovnému přiřazení zaměstnance k libovolné transakci platební karty, pokud byl související zaměstnanec propuštěn. Poté, co přiřadíte transakce platební karty, můžete vybrat transakci pro sestavu výdajů a zaplatit běžným procesem pro hrazení sestavy výdajů. |
@@ -225,6 +225,7 @@ Toto téma popisuje funkce, které jsou v Dynamics 365 for Operations verze 1611
 </table>
 
 ## <a name="human-capital-management"></a>Správa lidského kapitálu
+
 | Co můžete dělat                                                                                | Proč je to důležité                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Vytvoření deníku výkonnosti.                                                                  | Často před provedením svého přezkoumání hledáte informace o aktivitách nebo událostech, které přispěly k vašemu úspěchu coby zaměstnance v období přezkoumání. Do deníku výkonnosti můžete vkládat položky, které budou tyto aktivity a události dokumentovat. Tyto činnosti a události můžete také připojit k cíli nebo přehledu výkonů a poskytnout tak kontrolorovi více informací.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -579,6 +580,7 @@ Následující země také vyžadují lokalizaci maloobchodu. Lokalizace maloobc
 </table>
 
 ## <a name="planning-and-scheduling"></a>Plánování a rozvrhy
+
 | Co můžete dělat                                                                                                                                                                                                      | Proč je to důležité                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nastavte výchozí nastavení objednávek pro nákup i prodej podle všech aktivních dimenzi základního produktu. Můžete tedy definovat výchozích nastavení objednávek pro skladové jednotky zásob (SKU) nebo částečné SKU. | Můžete specifikovat výchozí nastavení objednávek, které se vztahují k dimenzi produktu nebo kombinaci dimenzí produktu. **Příklad:** Prodáváte produkt s názvem Polo tričko. Tento produkt je k dispozici ve dvou barvách: zelená a modrá. Je také dostupná ve dvou velikostech: malá a střední. Barva a velikost jsou aktivní dimenze produktu Polo tričko. Je možné blokovat nákupy všechn zelených Polo triček, bez ohledu na jejich velikost. |
@@ -624,6 +626,7 @@ Následující země také vyžadují lokalizaci maloobchodu. Lokalizace maloobc
 </table>
 
 ## <a name="project-management-and-accounting"></a>Řízení a účetnictví projektů
+
 | Co můžete dělat                                                                                                           | Proč je to důležité                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Používejte pozdější výběr při zaúčtování návrhů faktury v dávce.                                                            | Účetní projektu může nastavit dávkovou úlohu na automatické vyzvedávání návrhů faktur pro zaúčtování, pokud tyto návrhy splňují kritéria, která jsou zadány v dávkové úloze. Tato funkce zlepšuje automatizace zaúčtování faktur, protože dávkovou úlohu lze spustit opakovaně. Navíc automaticky přebírá návrhy pro zaúčtování. |

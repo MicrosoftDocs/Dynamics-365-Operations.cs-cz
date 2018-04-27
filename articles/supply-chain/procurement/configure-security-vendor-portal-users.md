@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="vendor-portal-user-security"></a>Zabezpečení uživatele portálu pro dodavatele
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 V tomto článku se vysvětluje, jak nastavit zabezpečení pro externí dodavatele, kteří používají portál pro dodavatele. Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016.
 

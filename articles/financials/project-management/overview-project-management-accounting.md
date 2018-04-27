@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: ProjTable
+ms.search.form: ProjTable; ProjProjectManagementWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -19,17 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3c4720795313180ba7ad784ea39484d6ffb9ac2f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 404f7d2b050aba1532cae0955a9579e1c2f174e3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="project-management-and-accounting"></a>Řízení a účetnictví projektů
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Funkci řízení projektu a účetnictví lze použít v několika odvětvích k poskytování služeb, výrobě produktů nebo dosažení výsledků.  
 
@@ -83,6 +82,7 @@ Prognózu můžete použít, má-li vaše organizace operační perspektivu a za
 V aplikaci Microsoft Finance and Operations můžete vytvořit šest typů projektů. Každý typ projektu je nastaven jinak pro rozpoznávání výnosů a nákladů. Vybraný typ projektu závisí na jeho účelu. V následující tabulce je popsán typický příklad použití všech typů projektů.
 
                                                                                                                                                                          |
+
 | Typ projektu      | Popis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Čas a materiál | V časových a materiálových projektech jsou odběrateli účtovány všechny náklady, které na projektu vzniknou. Tyto náklady zahrnují náklady za hodiny, výdaje, položky a poplatky.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -127,10 +127,10 @@ Projekt související s výrobní zakázkou lze propojit s prodejní objednávko
 
 V závislosti na kombinací uvedených činitelů použijte jednu z následujících metod:
 
--   **Dokončená položka/propojení k objednávce** – Propojte projekt s nákupní objednávkou nebo s požadavkem na položku. Když použijete tuto metodu, skutečné náklady projektu se zaúčtují při vystavení faktury prodejní objednávky nebo při aktualizaci dodacího listu požadavku na položku. Tyto náklady se zaúčtují jako dokončená položka.
--   **Dokončená položka/bez propojení k objednávce** – skutečné náklady nelze zaúčtovat, dokud výrobní cyklus položky není ve stavu **Ukončeno**. Náklady na dokončenou položku se zaúčtují jako jedna transakce.
--   **Spotřebovaná položka/propojení k objednávce** – Propojte projekt s požadavkem na položku. Při použití této metody budete moci zobrazit skutečné náklady projektu v případě, že se výroba nachází ve stavu **Zahájeno** nebo je označena za dokončenou. Náklady jsou zaúčtovány jako několik transakcí položek projektu pro suroviny a hodiny spotřebované pro výrobu. Při aktualizaci dodacího listu pro požadavek na položku nedojde k zaúčtování žádných nákladů na projekt. Můžete také definovat úroveň hierarchie kusovníku, po kterou se projekty ve výrobě sledují.
--   ****Spotřebovaná položka/bez propojení k objednávce**** – Propojte projekt s požadavkem na položku. Při použití této metody budete moci zobrazit skutečné náklady projektu v případě, že se výroba nachází ve stavu **Zahájeno** nebo je označena za dokončenou. Náklady se zaúčtují jako několik transakcí položek projektu pro suroviny a hodiny spotřebované pro výrobu. Můžete také definovat úroveň hierarchie kusovníku, po kterou se projekty ve výrobě sledují.
+- **Dokončená položka/propojení k objednávce** – Propojte projekt s nákupní objednávkou nebo s požadavkem na položku. Když použijete tuto metodu, skutečné náklady projektu se zaúčtují při vystavení faktury prodejní objednávky nebo při aktualizaci dodacího listu požadavku na položku. Tyto náklady se zaúčtují jako dokončená položka.
+- **Dokončená položka/bez propojení k objednávce** – skutečné náklady nelze zaúčtovat, dokud výrobní cyklus položky není ve stavu **Ukončeno**. Náklady na dokončenou položku se zaúčtují jako jedna transakce.
+- **Spotřebovaná položka/propojení k objednávce** – Propojte projekt s požadavkem na položku. Při použití této metody budete moci zobrazit skutečné náklady projektu v případě, že se výroba nachází ve stavu **Zahájeno** nebo je označena za dokončenou. Náklady jsou zaúčtovány jako několik transakcí položek projektu pro suroviny a hodiny spotřebované pro výrobu. Při aktualizaci dodacího listu pro požadavek na položku nedojde k zaúčtování žádných nákladů na projekt. Můžete také definovat úroveň hierarchie kusovníku, po kterou se projekty ve výrobě sledují.
+- *<strong><em>Spotřebovaná položka/bez propojení k objednávce</em></strong>* – Propojte projekt s požadavkem na položku. Při použití této metody budete moci zobrazit skutečné náklady projektu v případě, že se výroba nachází ve stavu <strong>Zahájeno</strong> nebo je označena za dokončenou. Náklady se zaúčtují jako několik transakcí položek projektu pro suroviny a hodiny spotřebované pro výrobu. Můžete také definovat úroveň hierarchie kusovníku, po kterou se projekty ve výrobě sledují.
 
 ### <a name="procure-products-and-services"></a>Zajišťování produktů a služeb
 
@@ -239,9 +239,8 @@ V následující tabulce jsou popsány metody pro výpočet nákladů na dokonč
 <li>Porovnejte transakce prognózy se skutečnými transakcemi.</li>
 <li>Zachovejte, snižte nebo zvyšte odhady pro další období.</li>
 </ol>
-Finance and Operations nesnižuje automaticky prognózované odhady. Je proto vhodné zachovat původní model prognózy projektu s pevnou cenou, aby se vytvořila základna pro srovnání při dokončení projektu. 
-> [!NOTE] Vyberete-li tuto metodu, použijte nejméně dva modely prognóz. Jeden model by měl obsahovat původní prognózy. Pro další model je třeba z jiného modelu zkopírovat transakce prognózy. Tato metoda je platná pouze pro projekty s pevnou cenou a pro investiční projekty.</td>
-> </tr>
+Finance and Operations nesnižuje automaticky prognózované odhady. Je proto vhodné zachovat původní model prognózy projektu s pevnou cenou, aby se vytvořila základna pro srovnání při dokončení projektu. &gt; [!NOTE] &gt; Vyberete-li tuto metodu, použijte nejméně dva modely prognóz. Jeden model by měl obsahovat původní prognózy. Pro další model je třeba z jiného modelu zkopírovat transakce prognózy. Tato metoda je platná pouze pro projekty s pevnou cenou a pro investiční projekty.</td>
+</tr>
 <tr class="odd">
 <td>Zbývající rozpočet</td>
 <td>Tato metoda používá zbývající rozpočtový model pro výpočet nákladů na dokončení projektu. Pokud použijete tuto metodu, skutečné náklady a prognózy částek ve zbývajícím rozpočtovém modelu se sečtou. Výsledkem jsou celkové náklady. Než použijete tuto metodu, zbývající rozpočtový model se musí nastavit k odečítání transakcí podle skutečných transakcí, které jsou zaznamenány v systému. Na stránce <strong>Modely prognóz</strong> se ujistěte, že pole ve skupině <strong>Automatické snížení prognózy</strong> jsou označena. Zbývající rozpočet se obvykle zkopíruje z původního rozpočtu. Při zadávání transakcí se sníží transakce ve zbývajícím rozpočtu. Pokud v průběhu projektu zjistíte, že se musí upravit zbývající rozpočet, změňte transakce prognózy do zbývajícího rozpočtu. <strong>Poznámka:</strong> Tuto metodu je možné použít pouze v případě, že je model prognózy přiřazen k odhadu.</td>

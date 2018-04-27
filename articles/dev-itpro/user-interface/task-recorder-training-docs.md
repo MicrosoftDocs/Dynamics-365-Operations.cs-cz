@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="create-documentation-or-training-using-task-recordings"></a>Vytváření dokumentace nebo školení pomocí záznamu úkolů
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma vysvětluje, co je Záznamník úkolů a průvodci záznamem úloh, jak vytvořit nahrávky úkolů a jak přizpůsobit průvodce záznamem úloh Microsoft a zahrnout je do nápovědy.
 

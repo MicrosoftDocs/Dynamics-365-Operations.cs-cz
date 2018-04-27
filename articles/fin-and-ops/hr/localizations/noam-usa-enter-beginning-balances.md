@@ -18,29 +18,29 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 27c03f7bd61ee7d4cb1d01f04af2f1821e9988e1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 93333757995c874c2cf03514acff28a54ae7f787
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="enter-payroll-beginning-balances"></a>Zadání počátečních zůstatků mezd
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Toto téma popisuje postup při zadávání počátečních zůstatků pro kódy příjmů, srážky, odměny a daně. Tyto informace jsou důležité pro partnery, kteří přenášejí data pro novou implementaci mezd z jiného systému. V rámci přípravy na zadání počátečních zůstatků mezd ověřujeme následující údaje:
 
 > * Záznamy zaměstnance jsou zadané a dostupné v systému.
 > * Následující údaje jsou nastaveny a přiřazeny zaměstnancům:
-
+> 
 > > * Platební cykly a platební období
 > > * Kódy příjmů
 > > * Daně
 > > * Výhody a srážky
-
+> 
 > * Společnost by měla zvolit datum, kdy lze nastavit počáteční zůstatky mezd.
-
+> 
 > * Informace byly získány na základě všech výdělků, zaměstnaneckých výhod / odpočtů, příspěvků na zaměstnanecké výhody, daní zaměstnanců a daních zaměstnavatelů a jejich částek od začátku roku ze zastaralého systému.
 
 Při plánování zadávání počátečních zůstatků zvažte, jak podrobná mají data být. Většina firem zadává jednu konsolidovanou částku od začátku roku. Pokud jsou však potřeba podrobnější informace, lze zůstatky zadávat v přírůstcích po čtyřech. Rozhodování o tom, jaká úroveň podrobností je potřeba, určuje, kolik ručních výkazů mezd musí být vytvořeno pro každého zaměstnance. U jednotlivé částky od začátku roku je potřeba pouze jeden ruční výkaz pro každého zaměstnance. K tomu použijte dosud realizované částky z výpisu konečné platby z předchozího systému jako částku zadanou do nového mzdového systému.
@@ -128,22 +128,22 @@ Po generování výkazů mezd, které mají počáteční zůstatky, je nutné o
 
 4. Otevřete kartu **Odpočty zaměstnaneckých výhod** a zadejte následující:
 
-| Pole                           | Hodnota            |
-|---------------------------------|------------------|
-| Zam. výhoda                         | Částka odpočtu |
-| 401K | Účast              | 3000.00          |
-| Zubní | SubSp                  | 495,00           |
-| Útrata za péči | Účast | 2500.00          |
-| Vize | SupSp                  | 500.00           |
+|       Pole       |      Hodnota       |
+|-------------------|------------------|
+|      Zam. výhoda      | Částka odpočtu |
+|       401K        |   Účast    |
+|      Zubní       |      SubSp       |
+| Útrata za péči |   Účast    |
+|      Vize       |      SupSp       |
 
 5. Na kartě **Odpočty zaměstnaneckých výhod** zadejte následující:
 
-| Pole              | Hodnota               |
-|--------------------|---------------------|
-| Zam. výhoda            | Částka příspěvku |
-| 401K | Účast | 3000,00             |
-| Zubní | SubSp     | 495,00              |
-| Vize | SubSp     | 500.00              |
+|  Pole  |        Hodnota        |
+|---------|---------------------|
+| Zam. výhoda | Částka příspěvku |
+|  401K   |     Účast     |
+| Zubní  |        SubSp        |
+| Vize  |        SubSp        |
 
 6. Na kartě **Daňové odpočty** zadejte následující:
 
@@ -156,8 +156,8 @@ Po generování výkazů mezd, které mají počáteční zůstatky, je nutné o
 7. Na kartě **Daňové příspěvky** zadejte následující:
 
 8. Klikněte na tlačítko **Vypočítat.**
-> [!IMPORTANT] 
-> Ověřte celkové částky výkazu mezd, aby odpovídaly hodnotě od počátku roku systému ze starší verze pracovníka. Můžete chtít zablokovat dokončení v dalším kroku, abyste mohli provést komplexní ověřování všech výkazů mezd celkem. Po ověření spusťte všechny výkazy mezd a dokončete je.
+   > [!IMPORTANT] 
+   > Ověřte celkové částky výkazu mezd, aby odpovídaly hodnotě od počátku roku systému ze starší verze pracovníka. Můžete chtít zablokovat dokončení v dalším kroku, abyste mohli provést komplexní ověřování všech výkazů mezd celkem. Po ověření spusťte všechny výkazy mezd a dokončete je.
 
 Stejný postup lze provést v přírůstcích po čtvrtletí, pokud je to potřeba u všech předchozích kvartálů v každém období. To je potřeba, pouze pokud zákazník musí zobrazit data podle čtvrtletí bez návratu zpět do systému ze starší verze.
 

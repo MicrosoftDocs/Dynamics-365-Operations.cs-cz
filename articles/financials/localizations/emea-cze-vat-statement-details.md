@@ -18,17 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5b732f8e38b038e35ecd75924a6d16ec21079aae
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 68c52b5f01b917c522bb0c47c38c5ba6bc619b82
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vat-statement-for-the-czech-republic"></a>Výkaz DPH pro Českou republiku
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Nastavení a generování výkazu DPH pro uživatele v rolích právnických osob na území České republiky.
 
@@ -37,8 +36,8 @@ Toto téma obsahuje informace o nastavení výkazu DPH pro uživatele ve funkcí
 ## <a name="set-up-sales-tax-authorities"></a>Nastavení daňových úřadů
 Pokud chcete generovat deklaraci DPH v požadovaném formátu pro konkrétní daňový úřad, je nutné nastavit rozložení sestavy pro daňové úřady.
 
--   Na stránce **Finanční úřady** v části **Obecné** nastavte **Rozložení sestavy **na **Výchozí**.
--   Vyberte **Finanční úřad** pro **Období vyrovnání DPH**, které použijete pro kódy DPH.
+- Na stránce <strong>Finanční úřady</strong> v části <strong>Obecné</strong> nastavte <strong>Rozložení sestavy **na **Výchozí</strong>.
+- Vyberte **Finanční úřad** pro **Období vyrovnání DPH**, které použijete pro kódy DPH.
 
 ## <a name="set-up-sales-tax-reporting-codes"></a>Nastavit kódy vykazování DPH
 Následující příklad uvádí, jak by bylo možné nastavit kódy vykazování DPH pro generování výkazu DPH.

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Delegování pracovních položek ve workflowu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Pokud plánujete být mimo kancelář nebo nemůžete reagovat na pracovní položku, můžete předat nebo znovu přiřadit své pracovní položky jinému uživateli. Tento postup umožňuje konfiguraci systému pro automatické delegování vašich pracovních položek jinému uživateli.
 

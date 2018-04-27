@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-journal-entries-and-transactions"></a>Zobrazení položek deníku a transakcí
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 V tomto článku jsou vysvětleny různé způsoby zobrazení položek deníku a transakcí. 
 
@@ -55,7 +54,7 @@ Následující sestavy hlavní knihy slouží kromě finančních sestav k zobra
 -   **Původ transakce** – tato sestava transakcí zobrazí transakce podle deníku a podle transakce, účetnictví a vykazování měny. Také je zde uveden každý řádek deníku, který byl použit jako posun.
 
 
-##<a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také
 - [Účetní zůstatky hlavní knihy](general-ledger-account-balances.md) 
 - [Průzkumník zdroje účetnictví](..\accounts-payable\accounting-source-explorer.md)
 - [Finanční výkaznictví](financial-reporting-getting-started.md)

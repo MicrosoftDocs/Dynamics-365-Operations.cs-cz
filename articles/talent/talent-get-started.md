@@ -26,14 +26,14 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a>Začínáme s aplikací Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 V aplikaci Microsoft Dynamics 365 for Talent lze snadno upravit uživatelské rozhraní a nastavit volby, které učiní software intuitivnější podle vašich potřeb. Toto téma obsahuje odkazy na témata, která poskytují informace o přizpůsobení uživatelského rozhraní podle vašich požadavků. Témata rovněž obsahuje odkazy na informace, které vám pomohou nalézt informace v systému efektivně a přesně. 
 
 > [!NOTE] 
 > Tyto produkty spolu úzce souvisí: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail a Dynamics 365 for Talent. Stejné funkce se mohou objevovat ve všech třech produktech. U témat, která se vztahují především k aplikaci Retail, proto bude uveden název produktu Dynamics 365 for Retail; u témat souvisejících s aplikací Talent bude uveden název Dynamics 365 for Talent a u témat souvisejících se základním produktem bude uveden název Dynamics 365 for Finance and Operations. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
 
-### <a name="personalizing-talent"></a>Přizpůsobení aplikace Talent 
+## <a name="personalizing-talent"></a>Přizpůsobení aplikace Talent 
 Následující témata ukazují, jak nastavit v aplikaci Dynamics 365 for Talent mnoho funkcí, které usnadňují dokončení práce včas. 
 
 -   [Přizpůsobení uživatelského prostředí](../fin-and-ops/get-started/personalize-user-experience.md) -Toto téma vysvětluje různé způsoby, kterými můžete přizpůsobit aplikaci Talent a adaptovat části produktu tak, aby lépe vyhovovaly vašim potřebám.
@@ -44,7 +44,7 @@ Následující témata ukazují, jak nastavit v aplikaci Dynamics 365 for Talent
 
 -   [Klávesové zkratky](../fin-and-ops/get-started/shortcut-keys.md) -Toto téma obsahuje seznam klávesových zkratek pro rozvržení klávesnice pro Spojené státy. 
 
-### <a name="accessing-information"></a>Přístup k informacím
+## <a name="accessing-information"></a>Přístup k informacím
 Následující témata vysvětlují používání vyhledávání a funkcí hledání a filtrování pro rychlé nalezení informací. 
 
 -   [Použití vyhledávání pro nalezení informace](../fin-and-ops/get-started/use-lookups-to-find-information.md) -Toto téma popisuje, jak vyhledávání může pomoci rychle vyhledat správnou nebo požadovanou hodnotu. Téma popisuje, jak vyhledávání funguje, a zahrnuje tipy pro optimalizaci jeho použití.

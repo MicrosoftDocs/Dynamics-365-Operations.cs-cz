@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reserve-inventory-quantities"></a>Rezervace skladových množství
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 V tomto tématu jsou popsány různé možnosti, které jsou k dispozici pro rezervaci zásob.
 
@@ -50,6 +49,7 @@ Zásady rezervace zásob, které jsou nastaveny na stránce **Skupiny modelů po
 ### <a name="policies-on-the-item-model-groups-page"></a>Zásady na stránce Skupiny modelů položek
 
 Část **Zásady zásob** obsahuje následující zásady rezervace.
+
 |                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Zásada rezervace**  | **Popis**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -63,6 +63,7 @@ Zásady rezervace zásob, které jsou nastaveny na stránce **Skupiny modelů po
 #### <a name="example-for-fifo-date-controlled-and-backward-from-ship-date"></a>Příklad pro volby Řízení FIFO podle data a Zpět od data expedice
 
 V tomto příkladu existují zásoby na skladě pro číslo zboží A pro tři různá čísla dávky.
+
 | Č. položky | Číslo dávky | Množství | Datum             |
 |-------------|--------------|----------|------------------|
 | A.           | 1 000         | 5        | 2. února 2016 |

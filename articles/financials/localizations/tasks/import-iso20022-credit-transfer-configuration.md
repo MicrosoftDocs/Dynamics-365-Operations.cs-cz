@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="import-iso20022-credit-transfer-configuration"></a>Import konfigurace převodu kreditu ve formátu ISO20022
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup ukazuje, jak importovat konfiguraci elektronického výkaznictví pro platby dodavatelů. Formát pro peněžní převod podle německé normy ISO 20022 slouží jako příklad. Tento postup lze použít pro jiný dostupný formát elektronického výkaznictví. 
 

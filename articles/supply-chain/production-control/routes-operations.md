@@ -29,8 +29,7 @@ ms.lasthandoff: 03/09/2018
 
 # <a name="routes-and-operations"></a>Postupy a operace
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma obsahuje obecné informace o postupech a operacích. Postup definuje proces pro výrobu produktu nebo varianty produktu. Popisuje jednotlivé kroky (operace) ve výrobním procesu a pořadí, ve kterém je nutné je provádět. U každého kroku postup také definuje požadované provozní prostředky, čas, který je nutný k přípravě a provedení operace, a způsob výpočtu nákladů.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="retail-price-adjustments"></a> Úpravy maloobchodních cen
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Tato procedura vás provede vytvořením úpravy maloobchodní ceny. Úpravou maloobchodní ceny lze přímo nastavit prodejní cenu zboží, změnit jeho základní prodejní cenu nebo prodejní cenu obchodní smlouvy. Tato procedura používá data ukázkové společnosti USRT.
 

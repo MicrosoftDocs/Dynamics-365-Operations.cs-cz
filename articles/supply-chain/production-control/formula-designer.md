@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: d9b61e545067db592545d5fbce7b4315c51a8bf8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a4cfd017fe10bbda6eda0e3a9a045e0832b08753
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formula-designer"></a>Návrhář receptur
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma vysvětluje, jak pomocí návrháře receptur analyzovat a udržovat receptury ve stromovém zobrazení.
 
@@ -88,7 +88,7 @@ Filtr, který je použit pro recepturu a postup, se zobrazí v záhlaví návr
 </tr>
 <tr class="odd">
 <td>Od množství</td>
-<td>Filtrovat verze můžete výběrem konkrétní hodnoty. Pokud nastavíte nějakou hodnotu, může dojít k výběru jiné verze postupu a receptury.</td>
+<td>Filtrovat verze můžete výběrem konkrétního množství &quot;od&quot;. Pokud nastavíte nějakou hodnotu, může dojít k výběru jiné verze postupu a receptury.</td>
 </tr>
 <tr class="even">
 <td>Zobrazit pouze platné</td>
@@ -116,8 +116,10 @@ Pomocí funkcí **Řádky receptury** nebo **Receptura** můžete upravit řádk
 ## <a name="configuring-the-tree-view"></a>Konfigurace stromového zobrazení
 Kliknutím na tlačítko **Nastavení** můžete upravit informace zobrazené ve stromovém zobrazení návrháře receptur.
 
-| Skupina polí | popis |
-|-------------|-------------|
-| Kusovník         | Pomocí zaškrtávacích políček vyberte kritéria, která se zobrazí ve stromové struktuře. V modulu Návrhář receptur jsou vybraná kritéria zobrazena v dolní části obou tabulek. |
-| Postup       | Pomocí zaškrtávacích políček vyberte kritéria, která se zobrazí pro postupy. |
+
+| Skupina polí |                                                                          popis                                                                          |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     Kusovník     | Pomocí zaškrtávacích políček vyberte kritéria, která se zobrazí ve stromové struktuře. V modulu Návrhář receptur jsou vybraná kritéria zobrazena v dolní části obou tabulek. |
+|    Postup    |                                           Pomocí zaškrtávacích políček vyberte kritéria, která se zobrazí pro postupy.                                           |
+
 

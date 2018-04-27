@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-objects"></a>Servisní objekty 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Servisní předměty jsou majetek a produkty zákazníka, u kterých je lze provádět servisní úkony. V závislosti na typu poskytované služby se může jednat o hmotné či nehmotné předměty:
 

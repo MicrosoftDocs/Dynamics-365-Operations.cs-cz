@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Definování zásad auditu pro zdrojové dokumenty
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje způsob nastavení a spuštění pravidel zásad auditu. Příklad využívá sestavu výdajů s typem Výdaje hotelu. Tato procedura používá ukázkovou společnost USMF. Role auditora obsahuje dostatečná oprávnění k provedení těchto úloh.
 

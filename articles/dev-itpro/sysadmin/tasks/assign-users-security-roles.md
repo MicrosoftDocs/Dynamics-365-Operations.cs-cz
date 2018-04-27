@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="assign-users-to-security-roles"></a>Přiřazení uživatelů k rolím zabezpečení
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Uživatelé musí být přiřazeni k rolím zabezpečení, aby měli přístup k aplikaci Microsoft Dynamics 365 for Finance and Operations. Tento postup vysvětluje způsob, jakým správce systému může přiřadit uživatele k rolím automaticky na základě obchodních dat. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="maintain-a-route-for-a-product-model"></a>Udržování postupu pro model produktu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Spuštění této procedury vyžaduje, aby model konfigurace produktu existoval. Při provádění celým procesem tento postup používá model špičkový model reproduktoru v ukázkové společnosti USMF.
 

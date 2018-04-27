@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="create-required-configurations-to-import-data-from-an-external-file-for-electronic-reporting-er"></a>Vytvoření požadovaných konfigurací pro import dat z externího souboru pro elektronické výkaznictví (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Následující kroky vysvětlují, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhnout konfiguraci elektronického výkaznictví pro import dat v aplikaci Dynamics 365 for Finance and Operations, z externího souboru. V tomto příkladu vytvoříte požadované ER konfigurace pro vzorovou společnost Litware, Inc. K dokončení těchto krokůmusíte nejprve dokončit postup z průvodce záznamem úloh ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního. Tyto kroky lze dokončit za použití datové sady USMF. Je nutné stáhnout a uložit lokálně následující soubory pomocí odkazů z tématu Přehled elektronického vykazování (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 

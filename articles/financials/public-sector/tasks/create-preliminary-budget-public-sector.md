@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-preliminary-budget-for-public-sector"></a>Vytvoření předběžného rozpočtu pro veřejný sektor
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Můžete vytvořit předběžné položky registru rozpočtu pro určitý rozpočtový model a hodnoty dimenze. Po schválení aktuálního rozpočtu můžete vytvořit původní položky registru rozpočtu. Tato procedura byla vytvořena pomocí ukázkových dat společnosti PSUS v oddílu veřejného sektoru.
 

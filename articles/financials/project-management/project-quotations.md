@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-quotations"></a>Nabídky projektu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek představuje koncept nabídky projektu, který můžete použít k předložení atraktivní nabídky odběrateli v rámci prvního kroku fáze projektu. Nabídka projektu může obsahovat položky a služby, základní kontaktní údaje, zvláštní obchodní ujednání a slevy, případně daně a příplatky. 
 

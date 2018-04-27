@@ -19,17 +19,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1fe940d2d282a5b4468b3ba572626b5c87839e6d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4361311be0cf5c33c9b2fa4700b084a7b43f5b65
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advanced-filtering-and-query-syntax"></a>Syntax pokročilého filtrování a dotazů
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozici při použití operátoru "shody" v dialogovém okně Rozšířený filtr či řazení.
 
@@ -68,7 +67,7 @@ Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozic
 <td><em>hodnota od</em>..<em>hodnota do</em> (dvojí období)</td>
 <td>Mezi dvěma zadanými hodnotami oddělenými dvěma tečkami</td>
 <td>Zadejte hodnotu Od, pak dvě tečky a nakonec hodnotu Do.</td>
-<td><strong>1..10</strong> vyhledá všechny hodnoty od 1 do 10. V poli řetězce však zadání hodnot <strong>A..C</strong> vyhledá všechny hodnoty, které začínají písmeny &quot;A&quot; a &quot;B&quot; a hodnoty, které se přesně rovnají &quot;C&quot;. Tento dotaz nebude hledat například &quot;Ca&quot;. Chcete-li vyhledat všechny hodnoty od &quot;A*&quot; do &quot;C*&quot;, <strong>A..D</strong>.</td>
+<td><strong>1..10</strong> vyhledá všechny hodnoty od 1 do 10. V poli řetězce však zadání hodnot <strong>A..C</strong> vyhledá všechny hodnoty, které začínají písmeny &quot;A&quot; a &quot;B&quot; a hodnoty, které se přesně rovnají &quot;C&quot;. Tento dotaz nebude hledat například &quot;Ca&quot;. Chcete-li vyhledat všechny hodnoty od &quot;A<em>&quot; do &quot;C</em>&quot;, <strong>A..D</strong>.</td>
 </tr>
 <tr class="even">
 <td>..<em>hodnota</em> (dvojí období)</td>
@@ -97,20 +96,20 @@ Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozic
 <tr class="even">
 <td><em>hodnota</em>* (hvězdička)</td>
 <td>Začínající od zadané hodnoty</td>
-<td>Zadejte počáteční hodnotu a pak hvězdičku (<strong>*</strong>).</td>
-<td><strong>S*</strong>nalezne libovolný řetězec začínající na &quot;S&quot;, jako například &quot;Stockholm&quot;, &quot;Sydney&quot;, a &quot;San Francisco&quot;.</td>
+<td>Zadejte počáteční hodnotu a pak hvězdičku (<strong><em></strong>).</td>
+<td><strong>S</em></strong> nalezne libovolný řetězec začínající na S, jako například &quot;S&quot;, such as &quot;Stockholm&quot;, &quot;Sydney&quot;, and &quot;San Francisco&quot;.</td>
 </tr>
 <tr class="odd">
-<td>*<em>hodnota</em> (hvězdička)</td>
+<td><em><em>hodnota</em> (hvězdička)</td>
 <td>Končí zadanou hodnotou</td>
 <td>Zadejte hvězdičku a pak konečnou hodnotu.</td>
-<td><strong>*east</strong>nalezne řetězec končící na &quot;východ&quot;, jako například &quot;severovýchod&quot; nebo &quot;jihovýchod&quot;.</td>
+<td><strong></em>východ</strong> alezne řetězec končící na &quot;východ&quot;, jako například &quot;severovýchod&quot; a &quot;jihovýchod&quot;.</td>
 </tr>
 <tr class="even">
-<td>*<em>hodnota</em>* (hvězdička)</td>
+<td><em><em>hodnota</em></em> (hvězdička)</td>
 <td>Obsahující zadanou hodnotu</td>
 <td>Zadejte hvězdičku, pak hodnotu, a nakonec opět hvězdičku.</td>
-<td><strong>*th*</strong> nalezne libovolný řetězec obsahující &quot;ch&quot;, jako například &quot;severovýchod&quot; nebo &quot;jihovýchod&quot;.</td>
+<td><strong><em>th</em></strong> nalezne libovolný řetězec obsahující &quot;ch&quot;, jako například &quot;severovýchod&quot; nebo &quot;jihovýchod&quot;.</td>
 </tr>
 <tr class="odd">
 <td>? (otazník)</td>
@@ -131,7 +130,7 @@ Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozic
 <td><strong><span class="code">(datový zdroj.Název pole != &quot;A&quot;)</span></strong></td>
 </tr>
 <tr class="even">
-<td>bil.</td>
+<td>T</td>
 <td>Dnešní datum</td>
 <td>Zadejte <strong>T</strong>.</td>
 <td><strong>T</strong> odpovídá dnešnímu datu.</td>

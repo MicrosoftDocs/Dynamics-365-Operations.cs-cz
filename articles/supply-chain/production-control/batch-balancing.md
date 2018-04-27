@@ -19,19 +19,20 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 84e00ef62a995d37878de6b2786dbc2ee2277070
-ms.openlocfilehash: 8a1ec5a3b19d1022232527f4960617bd985bc2b3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7d00df6263530ba9fff4c246cb3593cd607f6719
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="batch-balancing"></a>Vyvážení dávky
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
+Toto téma popisuje podporu procesu vyvážení dávky. 
 
-Toto téma popisuje podporu procesu vyvážení dávky.
+Podívejte se na [video o vyrovnání dávky v aplikaci Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
 V procesu vyvážení dávky se množství látek pro použití ve výrobní dávce vypočítá z koncentrace aktivních látek ve vybraných výrobních dávkách.
 
@@ -179,7 +180,7 @@ Poté, co byla vypočtena množství látek, můžete potvrdit a uvolnit receptu
 
 -   Pokud je produkt povolen pro procesy správy skladu, je řádek receptury uvolněn do skladu podle zásad pro procesy správy skladu. Řádek receptury je uvolněn v množstvích, která odpovídají vyrovnaným množstvím, a je uvolněn pro určité dávky vybraných pro aktivní látky.
 
->   [!NOTE]
+> [!NOTE]
 >   Řádky receptury je možné uvolnit do skladu pouze jako součást procesu vyvážení dávky. I když existují další možnosti pro uvolnění materiálu pro výrobu do skladu, tyto možnosti nelze použít pro řádky receptury.
 
 -   Pokud není produkt povolen pro procesy správy skladu, je vytvořena výrobní výdejka pro produkt, když potvrdíte a uvolníte recepturu.

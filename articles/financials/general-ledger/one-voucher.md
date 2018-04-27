@@ -3,7 +3,7 @@ title: Jeden doklad
 description: "Jedno číslo dokladu pro finanční deníky (deník hlavní knihy, deník dlouhodobého majetku, deník platby dodavatele a tak dále) slouží k zadání více transakcí hlavní knihy v rámci jednoho dokladu."
 author: kweekley
 manager: AnnBe
-ms.date: 03/19/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 3831a6b5ec458495134b4b490d33a9acd76b6d2e
-ms.openlocfilehash: 76ea8470786bd50896400a65564d698d96119d6f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9f996131830f9bd4efd534143b3fb761c5ccc756
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="one-voucher"></a>Jeden doklad
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  Tato funkce bude k dispozici v aplikaci Dynamics 365 for Finance and Operations verze 8.0, která bude k dispozici ve vydání Spring '18.   
@@ -38,9 +38,12 @@ ms.lasthandoff: 03/20/2018
 
 Existující funkce pro finanční deníky (deník hlavní knihy, deník dlouhodobého majetku, deník platby dodavatele a tak dále) slouží k zadání více transakcí hlavní knihy v rámci jednoho dokladu. Tuto funkci označujeme jako Jeden doklad. Můžete vytvořit Jeden doklad pomocí jedné z následujících metod:
 
--   Nastavte název deníku (**Hlavní kniha** \> **Nastavení deníku** \>**Názvy deníků**) tak, aby pole **Nový doklad** bylo nastaveno na **Pouze jedno číslo dokladu**. Všechny řádky, které můžete přidat do deníku, jsou nyní zahrnuty na stejném dokladu. Vzhledem k tomu, že je každý řádek přidán do jednoho dokladu, doklad lze zadat pro více řádků dokladu, jako účet nebo protiúčet na stejném řádku nebo kombinaci.
+-   Nastavte název deníku (**Hlavní kniha** \> **Nastavení deníku** \>**Názvy deníků**) tak, aby pole **Nový doklad** bylo nastaveno na **Pouze jedno číslo dokladu**. * Všechny řádky, které přidáte do deníku, jsou nyní zahrnuty na stejném dokladu. Vzhledem k tomu, že je každý řádek přidán do jednoho dokladu, doklad lze zadat pro více řádků dokladu, jako účet nebo protiúčet na stejném řádku nebo kombinaci.
 
 [![Jeden řádek](./media/same-line.png)](./media/same-line.png)
+ 
+> [!IMPORTANT] 
+> *  Nezapomeňte, že definice jednoho dokladu neobsahuje názvy deníků, které jsou nastaveny pouze jako **jedno číslo dokladu** a uživatel poté zadá doklad, který obsahuje pouze typy účtů hlavní knihy.  V tomto dokumentu 'Jeden doklad' znamená, že existuje jeden doklad, který obsahuje více než jednoho dodavatele, odběratele, banku, dlouhodobý majetek nebo projekt. 
 
 -   Zadejte víceřádkový doklad, když neexistuje protiúčet.
 
@@ -68,13 +71,16 @@ Poté vygenerujete sestavu **Výdaje podle dodavatele** v pracovním prostoru **
 
 Z důvodu problémů, které byly uvedeny dříve, je funkce jednoho dokladu zastaralá. Protože však existují funkční mezery závislé na této funkci, funkce nezastarají najednou. Místo toho použijeme následující plán: 
 
--   **Vydání z jara 2018** – Tato funkce bude ve výchozím nastavení vypnuta pomocí parametru hlavní knihy. Tuto funkci však můžete zapnout, pokud vaše organizace používá scénář, který spadá do mezer obchodního scénáře, které jsou uvedeny dále v tomto tématu.
+- **Vydání z jara 2018** – Tato funkce bude ve výchozím nastavení vypnuta pomocí parametru hlavní knihy. Tuto funkci však můžete zapnout, pokud vaše organizace používá scénář, který spadá do mezer obchodního scénáře, které jsou uvedeny dále v tomto tématu.
 
-    -   Jestliže u odběratele figuruje obchodní scénáře, která nevyžaduje jeden doklad, nezapínejte funkci. Nebudeme opravovat chyby v oblastech, které byly identifikovány dále v tomto tématu, je-li tato funkce použita i v případě, že existuje jiné řešení.
+  -   Jestliže u odběratele figuruje obchodní scénáře, která nevyžaduje jeden doklad, nezapínejte funkci. Nebudeme opravovat chyby v oblastech, které byly identifikovány dále v tomto tématu, je-li tato funkce použita i v případě, že existuje jiné řešení.
 
-    -   Přestaňte používat Jeden doklad pro integrace do Microsoft Dynamics 365 Finance and Operations, pokud není funkcionalita požadována pro jednu z funkčních mezer.
+  -   Přestaňte používat Jeden doklad pro integrace do Microsoft Dynamics 365 Finance and Operations, pokud není funkcionalita požadována pro jednu z funkčních mezer.
 
--   **Verze z podzimu 2018 a novějších** – funkční mezery budou doplněny. Po vyplnění funkčních mezer bude funkce jednoho dokladu trvale vypnutá.
+- **Verze z podzimu 2018 a novějších** – funkční mezery budou doplněny. Po vyplnění funkčních mezer bude funkce jednoho dokladu trvale vypnutá.
+
+- > [!IMPORTANT]
+  > Všimněte si, že možnost **pouze jedno číslo dokladu** NEBYLA odebrána z nastavení názvu deníku.  Tato možnost je stále podporována, pokud doklad zahrnuje pouze typy účtů hlavní knihy.  Odběratelé musí být opatrní, když toto nastavení používají, protože doklad se nezaúčtuje v případě, že používají **pouze jedno číslo dokladu**, ale poté zadají více než jednoho odběratele, dodavatele, banku, dlouhodobý majetek nebo projekt.  Odběratelé také mohou zadat kombinaci typů účtů dílčí knihy, například platby v rámci jednoho dokladu, který obsahuje typy účtů dodavatele a banky.  
 
 <a name="why-use-one-voucher"></a>Proč používat Jeden doklad?
 ====================
@@ -102,13 +108,13 @@ Následujících scénářů lze dosáhnout pouze pomocí funkce jednoho dokladu
 
 >   Pokud organizace musí zobrazit účetní položky z obchodní události společně, musí používat jedno číslo dokladu. 
 
--   **Funkce specifické pro zemi**
+- **Funkce specifické pro zemi**
 
- -   Funkce jednoho správního dokumentu (SAD) pro Polsko aktuálně vyžaduje použití jednoho dokladu. Dokud nebude pro tuto funkci možnost seskupení k dispozici , je nutné nadále používat funkci jednoho dokladu. Mohou existovat další funkce specifické pro zemi, které vyžadují funkci jednoho dokladu.
+  -   Funkce jednoho správního dokumentu (SAD) pro Polsko aktuálně vyžaduje použití jednoho dokladu. Dokud nebude pro tuto funkci možnost seskupení k dispozici , je nutné nadále používat funkci jednoho dokladu. Mohou existovat další funkce specifické pro zemi, které vyžadují funkci jednoho dokladu.
 
--   **Zálohový doklad deníku zákazníka, který má daně na více řádcích**
+- **Zálohový doklad deníku zákazníka, který má daně na více řádcích**
 
- -   Odběratel provede zálohu pro objednávku a řádky objednávky mají jiné daně, které musí být zaznamenány pro zálohu. Zálohová platba odběratele je jedna transakce simulující řádky objednávky, aby bylo možné zaznamenat příslušnou daň pro částku na každém řádku.
+  -   Odběratel provede zálohu pro objednávku a řádky objednávky mají jiné daně, které musí být zaznamenány pro zálohu. Zálohová platba odběratele je jedna transakce simulující řádky objednávky, aby bylo možné zaznamenat příslušnou daň pro částku na každém řádku.
 
 V tomto případě je zákazník na jednom dokladu stejný vzhledem k tomu, že transakce simuluje řádky objednávky odběratele. Je nutné zadat zálohu do jednoho dokladu, protože výpočet daně musí být proveden na řádcích jedné platby provedené odběratelem.
 

@@ -3,7 +3,7 @@ title: "Použití doplňku Excel"
 description: "Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics Office pro aplikaci Excel."
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/30/2017
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,16 +18,16 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f3ed06dbbce21ac093107953d3a72d8ab086af2a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e0e3e86820e0857b320d832c3bf3c94757667919
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="use-the-excel-add-in"></a>Použití doplňku Excel
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics Office pro aplikaci Excel. Chcete-li otevřít data entity, můžete začít z aplikace Excel nebo Microsoft Dynamics 365 for Finance and Operations.
 
@@ -35,6 +35,11 @@ Otevřením dat entity v aplikaci Microsoft Excel můžete rychle a snadno zobra
 
 > [!NOTE]
 > Pokud je klient Microsoft Azure Active Directory (Azure AD) nakonfigurován pro použití služby Active Directory Federation Services (AD FS), musíte ověřit, že byla použita aktualizace z května 2016 pro Office, aby vás doplněk aplikace Excel mohl správně přihlásit.
+
+Další informace o používání doplňku aplikace Excel se dozvíte v krátkém videu [Vytvoření šablony aplikace Excel pro vzory záhlaví a řádků v Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI).
+
+> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
+
 
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Otevření dat entity v Excelu při spuštění z aplikace Finance and Operations
 1. Na stránce v aplikaci Finance and Operations zvolte **Otevřít v sadě Microsoft Office**.

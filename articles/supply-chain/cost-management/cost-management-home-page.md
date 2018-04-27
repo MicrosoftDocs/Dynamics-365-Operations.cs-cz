@@ -3,12 +3,12 @@ title: "Domovská stránka správy nákladů"
 description: "Správa nákladů vám umožňuje zpracovat ocenění a účtování surovin, polotovarů, dokončeného zboží a nedokončené výroby."
 author: AndersGirke
 manager: AnnBe
-ms.date: 02/14/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: 
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="cost-management-home-page"></a>Domovská stránka správy nákladů
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [Správa nákladů (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) vám umožňuje pracovat s oceněním a účtováním surovin, polotovarů, dokončeného zboží a nedokončené výroby. Je to proces definování, správy a vykazování [skladového účetnictví](cost-object.md) a [účetnictví pro výrobu](bom-calculations.md).
 

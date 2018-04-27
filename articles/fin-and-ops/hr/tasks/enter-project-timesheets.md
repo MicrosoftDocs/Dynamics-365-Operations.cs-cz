@@ -17,15 +17,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: 17195b28ebe828423b4e5bb862f5c2e9884471ce
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fdc9567040a2ea4e50325c98a2da19da039586bb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="enter-project-timesheets"></a>Zadávání časových rozvrhů projektů
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura vám umožní vytvořit časový rozvrh pomocí prázdného formuláře časového rozvrhu. Nový časový rozvrh můžete založit na informacích z dřívějšího časového rozvrhu nebo na přiřazení projektů a aktivit na stránce Oblíbené položky. Standardně stránka seznamu Všechny časové rozvrhy zobrazí všechny časové rozvrhy pro aktuální období. Můžete použít rozevírací seznam pole Zobrazit na stránce Moje časové rozvrhy pro filtrování seznamu časových rozvrhů podle období nebo projektu nebo k zobrazení časových rozvrhů, které byly vytvořeny jménem ostatních pracovníků. K vytvoření tohoto postupu jsou použita ukázková data společnosti USSI. Tuto proceduru zahájíte pomocí nabídky Řízení projektu a účetnictví > Časové rozvrhy > Moje časové rozvrhy.
 

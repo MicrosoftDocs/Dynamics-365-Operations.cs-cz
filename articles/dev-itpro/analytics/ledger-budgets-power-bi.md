@@ -26,8 +26,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="actual-vs-budget-power-bi-content"></a>Obsah Power BI pro porovnání skutečné situace s rozpočtem
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje obsah Microsoft Power BI **Skutečnost a rozpočet**. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu. 
 
@@ -41,24 +40,25 @@ Sestavy z obsahu Power BI **Skutečnost a rozpočet** se zobrazují v pracovníc
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
 Následující tabulka obsahuje podrobnosti o metrikách, které jsou k dispozici na každé stránce sestavy obsahu Power BI **Skutečnost a rozpočet**.
 
-| Sestava                      | Metrika |
-|-----------------------------|---------|
-| Výdaje - Skutečné a rozpočtové | <ul><li>Celkové výdaje za tento rok</li><li>Celkové výdaje v rozpočtu za tento rok</li></ul> |
-| Výnosy - Skutečné a rozpočtové  | <ul><li>Celkové výnosy za tento rok</li><li>Celkové výnosy v rozpočtu za tento rok</li><ul> |
-| Výdaj                     | <ul><li>Celkové výdaje za tento rok</li><li>Cílová výše výdajů podle rozpočtu </li><ul> |
-| Výnosy                     | <ul><li>Celkové výnosy za tento rok</li><li>Cílová výše výnosů podle rozpočtu </li><ul> |
-| Čistý příjem                  | <ul><li>Čistý příjem za tento rok</li><li>Cílová výše čistého příjmu podle rozpočtu </li><ul> |
 
+|           Sestava            |                                       Metrika                                        |
+|-----------------------------|--------------------------------------------------------------------------------------|
+| Výdaje - Skutečné a rozpočtové |  <ul><li>Celkové výdaje za tento rok</li><li>Celkové výdaje v rozpočtu za tento rok</li></ul>  |
+| Výnosy - Skutečné a rozpočtové  |   <ul><li>Celkové výnosy za tento rok</li><li>Celkové výnosy v rozpočtu za tento rok</li><ul>    |
+|           Výdaj           | <ul><li>Celkové výdaje za tento rok</li><li>Cílová výše výdajů podle rozpočtu </li><ul> |
+|           Výnosy           |  <ul><li>Celkové výnosy za tento rok</li><li>Cílová výše výnosů podle rozpočtu </li><ul>  |
+|         Čistý příjem          |  <ul><li>Čistý příjem za tento rok</li><li>Cílová výše čistého příjmu podle rozpočtu </li><ul>  |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
 
-| Celek                    | Obsah |
-|---------------------------|----------|
-| Aktivity hlavní knihy | Částky transakcí pro hlavní knihu |
-| Aktivity rozpočtu         | Částky transakcí pro registr rozpočtu |
-| Hlavní účty             | Hlavní účty pro filtrování sestav |
-| Fiskální kalendáře          | Fiskální kalendáře pro filtrování sestav |
-| Hlavní knihy                   | Hlavní knihy, které lze použít k filtrování sestavy u aktuální hlavní knihy |
-| Kódy rozpočtu              | Kódy rozpočtu pro filtrování sestav |
-| Právnické osoby            | Právnické osoby, které lze použít k filtrování sestavy u aktuální právnické osoby |
+|          Celek           |                                     Obsah                                     |
+|---------------------------|----------------------------------------------------------------------------------|
+| Aktivity hlavní knihy |                    Částky transakcí pro hlavní knihu                    |
+|     Aktivity rozpočtu     |                   Částky transakcí pro registr rozpočtu                    |
+|       Hlavní účty       |                        Hlavní účty pro filtrování sestav                        |
+|     Fiskální kalendáře      |                      Fiskální kalendáře pro filtrování sestav                       |
+|          Hlavní knihy          |       Hlavní knihy, které lze použít k filtrování sestavy u aktuální hlavní knihy        |
+|       Kódy rozpočtu        |                        Kódy rozpočtu pro filtrování sestav                         |
+|      Právnické osoby       | Právnické osoby, které lze použít k filtrování sestavy u aktuální právnické osoby |
+
 

@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bd85f89917659ac9c94590bace765b2123d6e556
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 591b1cd739bb3be61299f33f180ca7c264d21a35
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="coverage-settings"></a>Nastavení pokrytí
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Při hlavním plánování se používá nastavení disponibility k výpočtu požadavků na položku. 
 
@@ -46,7 +45,7 @@ Existuje několik způsobů, jak zadat nastavení disponibility:
 
 <!-- -->
 
--   Nastavení disponibility pro skupinu dimenzí. Klikněte na **Řízení informací o produktech &gt; Společné &gt; Uvolněné produkty**. Na stránce **Podrobnosti o uvolněném produktu **na kartě **Hlavní** ve skupině **Správa** klikněte na odkaz **Skupina dimenze úložiště**. Na stránce **Skupina dimenze úložiště** vyberte pole **Plán disponibility podle dimenzí** a vytvořte tak nastavení disponibility pro dimenzi ve skupině dimenzí úložiště. Všechny dimenze produktu, například jako konfigurace, barva, velikost nebo styl, musí mít vybráno pole **Plán disponibility podle dimenzí**.
+- Nastavení disponibility pro skupinu dimenzí. Klikněte na <strong>Řízení informací o produktech &gt; Společné &gt; Uvolněné produkty</strong>. Na stránce <strong>Podrobnosti o uvolněném produktu** na kartě **Hlavní</strong> ve skupině <strong>Správa</strong> klepněte na odkaz <strong>Skupina dimenze úložiště</strong>. Na stránce <strong>Skupina dimenze úložiště</strong> vyberte pole <strong>Plán disponibility podle dimenzí</strong> a vytvořte tak nastavení disponibility pro dimenzi ve skupině dimenzí úložiště. Všechny dimenze produktu, například jako konfigurace, barva, velikost nebo styl, musí mít vybráno pole <strong>Plán disponibility podle dimenzí</strong>.
 
 
 

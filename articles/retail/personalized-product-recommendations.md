@@ -29,8 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="personalized-product-recommendations-overview"></a>Přehled doporučení přizpůsobeného produktu
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 > [!NOTE]
 > Aktuální verzi služby doporučení produktu odstraňujeme, protože předěláváme tuto funkci s lepším algoritmem a novějšími funkčnostmi orientovanými na maloobchod. Další informace naleznete v části [Odstraněné nebo zastaralé funkce](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). Přejděte do dolní části stránky, pokud čelíte potížím s již povolenými doporučeními produktu pro vaše prostředí. 
@@ -86,9 +85,9 @@ Při zapnutí možnosti **Povolit doporučení** a spuštění úloh konfigurace
 -   ID a pověření modelu jsou zpřístupněny CRT, aby bylo možné provést volání doporučení produktu z Cloud POS a MPOS.
 
 > ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Řešení problémů, když máte doporučení produktu již povolena 
->- Přejděte na **Parametry maloobchodu** > **Strojové učení** > **Zakázat doporučení produktu** a spusťte **globální konfigurační úlohu [1110]**. Pokud nemůžete nalézt kartu **Strojové účení**, obraťte se na podporu Dynamics. 
-
->- Pokud jste přidali **Řízení doporučení** na svou obrazovku transakcí pomocí nástroje **Návrhář rozložení obrazovky**, odstraňte ho také. 
+> - Přejděte na **Parametry maloobchodu** > **Strojové učení** > **Zakázat doporučení produktu** a spusťte **globální konfigurační úlohu [1110]**. Pokud nemůžete nalézt kartu **Strojové účení**, obraťte se na podporu Dynamics. 
+> 
+> - Pokud jste přidali **Řízení doporučení** na svou obrazovku transakcí pomocí nástroje **Návrhář rozložení obrazovky**, odstraňte ho také. 
 
 
 

@@ -27,13 +27,14 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-online-store"></a>Konfigurovat online obchod
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek poskytuje odkazy na témata, která vám pomohou centrálně konfigurovat a spravovat online obchod.
 
 Témata uvedená v následující tabulce usnadňují konfiguraci komponent Retail a online obchodu Retail v klientovi.
 
 ## <a name="configure-an-online-store"></a>Konfigurovat online obchod
+
 | Úkol                                                | Podrobnosti                                                                                                                                                                                                                                                                                                                                                   | Témata                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nakonfigurujte součásti Retail.                        | Nastavte a spravujte informace pro maloobchodní operace. Tyto informace zahrnují obchody, daně, výrobky, dárkové poukazy, promoakce a slevy.                                                                                                                                                                                                          | [Nastavení a udržování maloobchodu](https://technet.microsoft.com/en-us/library/hh597201.aspx) (Obsah webu TechNet pro Microsoft Dynamics AX 2012)                                                                                                                                                                                                                                                                                          |
@@ -43,6 +44,7 @@ Témata uvedená v následující tabulce usnadňují konfiguraci komponent Reta
 | Namapujte atributy a přidejte metadata.                   | Vyberte možnosti, které určují chování atributů pro každou kategorii nebo produkt kanálu v online obchodě na webu Microsoft SharePoint.                                                                                                                                                                                              | [Nastavení online obchodu](https://technet.microsoft.com/en-us/library/jj682095.aspx) (Obsah webu TechNet pro AX 2012)                                                                                                                                                                                                                                                                                                     |
 
 ## <a name="configure-online-store-products"></a>Konfigurace produktů online obchodu
+
 | Úkol                                 | Podrobnosti                                                                                                                                           | Témata                                                                                                                                                                                                                                                                            |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Přidejte sortimenty do online obchodu. | Přidejte sortimenty obsahující produkty, které nabízíte v online obchodu.                                                                  | [Nastavení online obchodu](https://technet.microsoft.com/en-us/library/jj682095.aspx) (Obsah webu TechNet pro AX 2012)                                                                                                                                              |
@@ -53,11 +55,12 @@ Témata uvedená v následující tabulce usnadňují konfiguraci komponent Reta
 | Spravujte způsoby dodání.            | Spravujte způsoby dodání, které online obchod nabízí.                                                                                        | [Nastavení způsobů dodání](https://technet.microsoft.com/en-us/library/jj728719.aspx) (Obsah webu TechNet pro AX 2012)                                                                                                                                            |
 
 ## <a name="set-up-data-exchange-between-microsoft-dynamics-365-for-retail-and-the-online-store"></a>Nastavení výměny dat mezi Microsoft Dynamics 365 for Retail a online obchodem
+
 | Úkol                                 | Podrobnosti                                                                                                                               | Témata                                                                                                                                                                                                                                                                                  |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nastavte profily integrace kanálů. | Profily umožňují součástem Retail komunikovat mezi sebou. Před konfigurací nastavení výměny dat nastavte profily. | [Nastavení profilu služby Real-time Service](https://technet.microsoft.com/en-us/library/hh580631.aspx) (Obsah webu TechNet pro AX 2012) [Nastavení profilu kanálu](https://technet.microsoft.com/en-us/library/jj677402.aspx) (Obsah webu TechNet pro AX 2012) |
 
- 
+
 
 
 

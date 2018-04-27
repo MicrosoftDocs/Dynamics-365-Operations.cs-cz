@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="info-codes"></a>Informační kódy
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Tento článek podává přehled o informačních kódech, skupinách informačních kódů a jejich použití.
 
@@ -52,7 +51,7 @@ V aplikaci Dynamics 365 for Retail můžete vytvářet skupiny informačních k
 
 **Příklad 2: Propojení informačních kódů se skupinami informačních kódů** Při prodeji některých produktů, např. mobilních zařízení, chcete vždy shromáždit sadu určitých informací, například telefonní číslo, identifikátor mobilního zařízení (MEID) a sériové číslo. Také však chcete získat jiné informace pro tablet a pro mobilní telefon. Lze nastavit skupinu informačních kódů, která zahrnuje výzvy na telefonní číslo, MEID a sériové číslo, a poté propojit skupinu informačních kódů s jednotlivým informačním kódem. Při spuštění informačního kódu specifického pro produkt lze skupinu informačních kódů spustit následně, abyste mohli shromažďovat společná data, aniž by bylo nutné definovat více sad propojených informačních kódů pro každé zařízení.
 
- 
+
 
 
 

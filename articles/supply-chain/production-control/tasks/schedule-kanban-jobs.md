@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="schedule-kanban-jobs"></a>Plánování kanbanových úloh
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup se zaměřuje na plánování zpracování kanbanových úloh pro konkrétní pracovní buňku. Postup "Příprava procesní kanbanové úlohy, pokud nejsou materiály k dispozici" je předpokladem pro vytvoření tohoto postupu. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tato úloha je určena pro dílenského nadřízeného a plánovače výroby pracujícího s kanbany.
 

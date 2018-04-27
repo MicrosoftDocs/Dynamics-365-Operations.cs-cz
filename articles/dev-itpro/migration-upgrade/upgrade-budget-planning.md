@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="upgrade-budget-planning"></a>Upgrade plánování rozpočtu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Mezi aplikacemi Microsoft Dynamics AX 2012 a Microsoft Dynamics 365 for Finance and Operations existují významné rozdíly, pokud jde o plánování rozpočtu. Některé funkce nebyly upgradovány a proto vyžadují rekonfiguraci. Toto téma vysvětluje, co je nutné rekonfigurovat, a také popisuje nové funkce, které mají být brány v úvahu po dokončení upgradu.  
 
@@ -70,26 +69,27 @@ Abychom vám pomohli určit, jak konfigurovat upgradovaný systém, použijeme v
 
 ### <a name="define-columns-and-layouts"></a>Definování sloupců a rozvržení
 
-1.  Na stránce **Konfigurace plánování rozpočtu** klikněte na kartu **sloupce**. Jako součást upgradu se automaticky vytvoří nové sloupce na základě řádků plánu rozpočtu. Sloupce nyní používají dynamická data, kde čas a rok jsou vyrovnány od fiskálního roku, který je definován v procesu plánování rozpočtu. **Poznámka:** Z důvodů výkonnosti při upgradu se předpokládá, že všechny rozpočtové cykly představují kalendářní roky, nikoli fiskální roky. Používáte-li fiskální roky, je třeba provést úpravy pro správné namapování sloupců na jejich fiskální rok. Například v aplikaci AX 2012 existovaly následující prvky:
-    -   Scénáře plánu rozpočtu: Skutečné hodnoty, Základ, Žádost o rozpočet, Rozpočet schválen
-    -   Řádky plánu rozpočtu pro všechny scénáře v roce 2017 a skutečné hodnoty pro roky 2017 a 2016
+1. Na stránce **Konfigurace plánování rozpočtu** klikněte na kartu **sloupce**. Jako součást upgradu se automaticky vytvoří nové sloupce na základě řádků plánu rozpočtu. Sloupce nyní používají dynamická data, kde čas a rok jsou vyrovnány od fiskálního roku, který je definován v procesu plánování rozpočtu. **Poznámka:** Z důvodů výkonnosti při upgradu se předpokládá, že všechny rozpočtové cykly představují kalendářní roky, nikoli fiskální roky. Používáte-li fiskální roky, je třeba provést úpravy pro správné namapování sloupců na jejich fiskální rok. Například v aplikaci AX 2012 existovaly následující prvky:
+   -   Scénáře plánu rozpočtu: Skutečné hodnoty, Základ, Žádost o rozpočet, Rozpočet schválen
+   -   Řádky plánu rozpočtu pro všechny scénáře v roce 2017 a skutečné hodnoty pro roky 2017 a 2016
 
-    V aplikaci Finance and Operations budou vytvořeny následující sloupce:
-    | Název sloupce    | Scénář plánu rozpočtu | Časové období sloupce | Posun roku |
-    |----------------|----------------------|--------------------|-------------|
-    | Led Scénář 1 | Skutečné hodnoty              | 1                  | 0           |
-    | Led Scénář 2 | Základ             | 1                  | 0           |
-    | Led Scénář 3 | Žádost o rozpočet       | 1                  | 0           |
-    | Led Scénář 4 | Rozpočet schválen      | 1                  | 0           |
-    | Led Scénář 5 | Skutečné hodnoty              | 1                  | -1          |
-    | Únor Scénář 1 | Skutečné hodnoty              | 1                  | 0           |
-    | ...            | ...                  | ...                | ...         |
+   V aplikaci Finance and Operations budou vytvořeny následující sloupce:
 
-    V tomto příkladu je vytvořen sloupec s názvem **Led Scénář 1** pro nejnovější data transakce plánu rozpočtu nalezená tam, kde existují transakce v lednu. Podobný sloupec je vytvořen pro každý scénář, který obsahuje data. Poté, co existují sloupce pro všechna období v tomto roce, vytvoří se sloupce za předchozí roky.
-2.  Změňte názvy sloupců a popisy a ostatní podrobnosti, buď ručně v klientovi nebo pomocí hromadné aktualizace prostřednictvím doplňku aplikace Excel odkazujícího na entitu dat sloupce plánu rozpočtu. Ve sloupcích jsou nyní nastaveny všechny filtry, které byly předtím nastaveny na pole matic.
-3.  Vytvořte nové rozvržení plánu rozpočtu. Rozvržení odkazuje na několik sloupců za účelem definice zobrazení, které s objeví v aplikaci Excel a klientovi. Rozvržení nejprve vyžaduje, abyste stanovili sadu dimenzi hlavní knihy a určili tak, které finanční dimenze lze zadat. Po zadání sady dimenzí klikněte na tlačítko **Popisy** a vyberte popisy dimenze, které chcete zahrnout do rozvržení.
-4.  Na pevné záložce **Elementy rozložení** klikněte na tlačítko **Přidat** a přidejte metadata pro každý řádek, jako je například měna, komentář nebo třída rozpočtu, která určuje řádky výnosů oproti výdajům. Dále přidejte sloupce pro časové období a scénáře, které se vztahují k tomuto rozpočtovému cyklu a fázi. Tyto změny můžete provést ručně v klientovi nebo prostřednictvím doplňku aplikace Excel, který odkazuje na entitu data prvků rozvržení plánu rozpočtu.
-5.  Pro každý prvek rozvržení vyberte, zda lze sloupec upravit a zda se má sloupec také zobrazit v sešitu aplikace Excel pro toto rozvržení. **Poznámka:** Pro naše historické plány můžete zvážit rozvržení zobrazující 12 měsíčních sloupců pro všechny scénáře plánu rozpočtu pro tento proces.
+   | Název sloupce    | Scénář plánu rozpočtu | Časové období sloupce | Posun roku |
+   |----------------|----------------------|--------------------|-------------|
+   | Led Scénář 1 | Skutečné hodnoty              | 1                  | 0           |
+   | Led Scénář 2 | Základ             | 1                  | 0           |
+   | Led Scénář 3 | Žádost o rozpočet       | 1                  | 0           |
+   | Led Scénář 4 | Rozpočet schválen      | 1                  | 0           |
+   | Led Scénář 5 | Skutečné hodnoty              | 1                  | -1          |
+   | Únor Scénář 1 | Skutečné hodnoty              | 1                  | 0           |
+   | ...            | ...                  | ...                | ...         |
+
+   V tomto příkladu je vytvořen sloupec s názvem **Led Scénář 1** pro nejnovější data transakce plánu rozpočtu nalezená tam, kde existují transakce v lednu. Podobný sloupec je vytvořen pro každý scénář, který obsahuje data. Poté, co existují sloupce pro všechna období v tomto roce, vytvoří se sloupce za předchozí roky.
+2. Změňte názvy sloupců a popisy a ostatní podrobnosti, buď ručně v klientovi nebo pomocí hromadné aktualizace prostřednictvím doplňku aplikace Excel odkazujícího na entitu dat sloupce plánu rozpočtu. Ve sloupcích jsou nyní nastaveny všechny filtry, které byly předtím nastaveny na pole matic.
+3. Vytvořte nové rozvržení plánu rozpočtu. Rozvržení odkazuje na několik sloupců za účelem definice zobrazení, které s objeví v aplikaci Excel a klientovi. Rozvržení nejprve vyžaduje, abyste stanovili sadu dimenzi hlavní knihy a určili tak, které finanční dimenze lze zadat. Po zadání sady dimenzí klikněte na tlačítko **Popisy** a vyberte popisy dimenze, které chcete zahrnout do rozvržení.
+4. Na pevné záložce **Elementy rozložení** klikněte na tlačítko **Přidat** a přidejte metadata pro každý řádek, jako je například měna, komentář nebo třída rozpočtu, která určuje řádky výnosů oproti výdajům. Dále přidejte sloupce pro časové období a scénáře, které se vztahují k tomuto rozpočtovému cyklu a fázi. Tyto změny můžete provést ručně v klientovi nebo prostřednictvím doplňku aplikace Excel, který odkazuje na entitu data prvků rozvržení plánu rozpočtu.
+5. Pro každý prvek rozvržení vyberte, zda lze sloupec upravit a zda se má sloupec také zobrazit v sešitu aplikace Excel pro toto rozvržení. **Poznámka:** Pro naše historické plány můžete zvážit rozvržení zobrazující 12 měsíčních sloupců pro všechny scénáře plánu rozpočtu pro tento proces.
 
 ### <a name="update-budget-planning-processes-to-use-the-appropriate-layout-for-each-budget-stage"></a>Aktualizace procesů plánování rozpočtu za účelem použití odpovídajícího rozvržení pro každou fázi rozpočtu
 

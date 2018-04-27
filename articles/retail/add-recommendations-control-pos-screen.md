@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device"></a>Přidání ovládacího prvku doporučení na stránku transakce na zařízení POS
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 > [!NOTE]
 > Aktuální verzi služby doporučení produktu odstraňujeme, protože předěláváme tuto funkci s lepším algoritmem a novějšími funkčnostmi orientovanými na maloobchod. Další informace naleznete v části [Odstraněné nebo zastaralé funkce](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). 

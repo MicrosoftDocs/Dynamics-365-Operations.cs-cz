@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-a-product-configuration-model"></a>Schválení modelu konfigurace produktu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Spuštění této procedury vyžaduje, aby nejméně jeden model konfigurace produktu byl k dispozici. Tento postup využívá model špičkového reproduktoru v ukázkové společnosti USMF. Všimněte si, že tento model již byl schválen, ale postup vás provede celým procesem.
 

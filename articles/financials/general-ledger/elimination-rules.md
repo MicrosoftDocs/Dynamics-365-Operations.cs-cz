@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="elimination-rules"></a>Pravidla eliminace
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 V tomto tématu jsou informace o pravidlech eliminace a různých možnostech pro vytváření sestav o eliminacích.
 

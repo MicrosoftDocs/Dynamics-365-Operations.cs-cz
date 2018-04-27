@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-activity-relation-successor"></a>Vytvoření relace aktivity: následník
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tok aktivit ve štíhlém výrobním toku je zaznamenán prostřednictvím vztahů aktivity. Tento záznam ukazuje, jak vytvořit relaci aktivity.
 

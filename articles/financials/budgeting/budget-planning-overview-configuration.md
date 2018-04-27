@@ -19,17 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e874d7353e0d9561ca55f313bfb5209299298169
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b008e70c7d834c6aacad7aef4987e60b12ed8a6d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning-overview"></a>Přehled plánování rozpočtu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek představuje plánování rozpočtu a obsahuje informace, které vám pomohou při konfiguraci plánování rozpočtu a nastavení procesů plánování rozpočtu.
 
@@ -116,18 +115,18 @@ Ve plánování rozpočtu můžete přidělit částky nebo množství na řádc
 
 Plány přidělení automaticky přiřazují řádky plánu rozpočtu během workflowu zpracování. Přidělení lze provádět pomocí některé z následujících metod v seznamu **Metody přidělení**:
 
--   **Přidělit napříč obdobími** – alokační klíč období se používá k přidělení řádků plánu rozpočtu ze zdrojového scénáře plánu rozpočtu napříč obdobími v cílovém scénáři. **Poznámka:** Před přidělením napříč obdobími je nutné nastavit alokační klíče období na stránce ****Kategorie přidělení období****.
--   **Přidělit k dimenzím** – řádky plánu rozpočtu jsou přiděleny ze zdrojového scénáře plánu rozpočtu napříč finančními dimenzemi v cílovém scénáři. **Poznámka:** Dříve než začnete přidělovat dimenze, je nutné nastavit podmínky přidělení rozpočtu na stránce ****Podmínky přidělení rozpočtu****.
--   **Agregovat** – řádky plánu rozpočtu jsou agregovány ze zdrojového scénáře plánu rozpočtu v přidruženém plánu rozpočtu do cílového scénáře v nadřazeném rozpočtovém plánu.
--   **Rozdělit** – řádky plánu rozpočtu jsou distribuovány ze zdrojového scénáře plánu rozpočtu v nadřazeném plánu rozpočtu do cílového scénáře v souvisejících rozpočtových plánech.
--   **Použít pravidla přidělení hlavní knihy** – řádky plánu rozpočtu jsou rozděleny ze zdrojového scénáře plánu rozpočtu do cílového scénáře na základě vybraného pravidla přidělení hlavní knihy.
--   **Kopírovat z plánu rozpočtu** – můžete vybrat jiný plán rozpočtu, který se má použít jako zdroj přidělení.
+- <strong>Přidělit napříč obdobími</strong> – alokační klíč období se používá k přidělení řádků plánu rozpočtu ze zdrojového scénáře plánu rozpočtu napříč obdobími v cílovém scénáři. <strong>Poznámka:</strong> Před přidělením napříč obdobími je nutné nastavit alokační klíče období na stránce *<strong><em>Kategorie přidělení období</em></strong>*.
+- <strong>Přidělit k dimenzím</strong> – řádky plánu rozpočtu jsou přiděleny ze zdrojového scénáře plánu rozpočtu napříč finančními dimenzemi v cílovém scénáři. <strong>Poznámka:</strong> Dříve než začnete přidělovat dimenze, je nutné nastavit podmínky přidělení rozpočtu na stránce *<strong><em>Podmínky přidělení rozpočtu</em></strong>*.
+- **Agregovat** – řádky plánu rozpočtu jsou agregovány ze zdrojového scénáře plánu rozpočtu v přidruženém plánu rozpočtu do cílového scénáře v nadřazeném rozpočtovém plánu.
+- **Rozdělit** – řádky plánu rozpočtu jsou distribuovány ze zdrojového scénáře plánu rozpočtu v nadřazeném plánu rozpočtu do cílového scénáře v souvisejících rozpočtových plánech.
+- **Použít pravidla přidělení hlavní knihy** – řádky plánu rozpočtu jsou rozděleny ze zdrojového scénáře plánu rozpočtu do cílového scénáře na základě vybraného pravidla přidělení hlavní knihy.
+- **Kopírovat z plánu rozpočtu** – můžete vybrat jiný plán rozpočtu, který se má použít jako zdroj přidělení.
 
 ### <a name="stage-allocations"></a>Přidělení fází
 
 Fáze přidělení lze použít k automatickému přidělení řádků plánu rozpočtu během zpracování workflowu. Když se používají fáze přidělení, řádky plánu rozpočtu v cílovém scénáři lze vytvořit a upravit bez zásahu pořizovatele plánu rozpočtu nebo kontrolora.
 
-Při nastavení přidělení fáze můžete přiřadit workflow a fázi plánu rozpočtu k plánu přidělení. Workflow plánování rozpočtu je nutné přiřadit k workflowu rozpočtování, který používá automatickou úlohu workflowu ****Přidělení fáze plánování rozpočtu****. Když workflow dosáhne určité fáze, dojde k automatickému přidělení. Tato automatizovaná úloha slouží k vytvoření řádků plánu rozpočtu v novém scénáři. 
+Při nastavení přidělení fáze můžete přiřadit workflow a fázi plánu rozpočtu k plánu přidělení. Workflow plánování rozpočtu je nutné přiřadit k workflowu rozpočtování, který používá automatickou úlohu workflowu *<strong><em>Přidělení fáze plánování rozpočtu</em></strong>*. Když workflow dosáhne určité fáze, dojde k automatickému přidělení. Tato automatizovaná úloha slouží k vytvoření řádků plánu rozpočtu v novém scénáři. 
 
 V příkladu schématu zobrazeném dříve v tomto tématu je přidělení provedeno k převodu částek z plánu rozpočtu a scénářů v základní fázi ústředí do jiného plánu rozpočtu a scénářů obchodních oddělení ve fázi odhadu. Následující obrázek ukazuje příslušnou část ilustračního schématu.
 

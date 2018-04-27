@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Nastavení a správa obrázků pro Retail Modern POS
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Tento článek vysvětluje postup, který je součástí nastavení a správy obrázků pro různé entity, které jsou obsaženy v modulu Retail Modern POS (MPOS).
 
@@ -141,7 +140,7 @@ Obrázky produktu, které je nutné použít v offline režimu lze nastavit odes
 6.  Při online režimu MPOS spusťte úlohu katalogu v ústředí, abyste se ujistili, že data jsou odeslána alespoň jednou do offline databáze.
 7.  MPOS přepněte do offline režimu. Zobrazí se obrázek, který jste odeslali určitého výrobku v ústředí. [![offline1](./media/offline1.png)](./media/offline1.png)
 
- 
+
 
 ### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a>Nastavení obrázků katalogu, kategorie, zaměstnance a odběratele pro zobrazení v offline režimu MPOS.
 

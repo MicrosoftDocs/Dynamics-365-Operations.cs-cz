@@ -18,17 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 68e9a438a41eb6efd2c1d8eeaac132b1e82f5daf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0c82abe7a34d5882611f0fbd54b2817d54c11eaa
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>Úprava ID faktury v prodejních objednávkách pro východní Evropu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma obsahuje informace o parametrech pohledávek ovlivňujících čísla faktur na dodacích listech a fakturách pro Českou republiku, Estonsko, Maďarsko, Litvu, Lotyšsko a Polsko.
 
@@ -59,7 +58,7 @@ Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsk
 </tbody>
 </table>
 
- 
+
 
 
 

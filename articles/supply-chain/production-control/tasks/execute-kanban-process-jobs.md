@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="execute-kanban-process-jobs"></a>Provádění úloh kanbanových procesů
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup se zaměřuje na realizaci úloh kanbanových procesů. První úloha je dokončena s očekávaným množstvím a bez chyb. Druhá úloha je dokončena s chybami. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup je určen pro operátora stroje.
 

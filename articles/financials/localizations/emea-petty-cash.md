@@ -18,17 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9ecc38597123b74c8368ed41d843826d826f90f8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4467987c4bb25ec7c44550c9e941298e459bbf22
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="petty-cash-for-eastern-europe"></a>Pokladní hotovost pro východní Evropu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma uvádí informace o funkci pokladní hotovosti, která umožňuje uživatelům v Estonsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.
 
@@ -469,6 +468,7 @@ Vyrovnaná částka se projeví v poli <strong>Měna vyrovnání</strong> na str
 </table>
 
 ## <a name="inquiries-and-reports"></a>Dotazy a sestavy
+
 | Dotaz nebo sestava                             | popis                                                                                                                                                                                                                     |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Zobrazení hotovostních transakcí                        | Pro řádek listu deníku použijte tlačítko **dotazy** v podokně akcí k zobrazení transakcí hlavní knihy, zůstatek hotovosti a dalších informací.                                                                                  |

@@ -28,8 +28,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="manage-vendor-collaboration-users"></a>Správa uživatelů dodavatelské spolupráce
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak můžete požadovat zřízení nových uživatelů dodavatelské spolupráce a přidat nové kontakty dodavatelské spolupráce. 
 
@@ -61,11 +60,11 @@ Když je odeslán požadavek, je přidán do seznamu **Žádosti uživatelů o d
 
 Předtím, než můžete požadovat zřízení nového uživatele, musí být tento uživatel nastaven jako kontakt pro jeden nebo více účtů dodavatele. Vytvoření žádosti o nového uživatele dodavatelské spolupráce:
 
-1.  Na stránce **Všechny kontakty** klepněte na **Zřídit dodavatelského uživatele**.
-2.  Zadejte e-mailovou adresu uživatele. Uživatel bude tuto adresu používat pro přihlášení do aplikace Finance and Operations. Pokud e-mailová adresa patří do domény, která je registrována jako tenant v Microsoft Azure, musí být e-mailová adresa existující účte Azure Active Directory (AAD), aby byl proces zřizování úspěšně dokončen. Pokud e-mailová adresa nepatří k doméně registrované službou Microsoft Azure, přidaný účet bude vytvořen jako součást procesu zřizování a nový uživatel obdrží e-mail s pozváním. E-mailové adresy spotřebitelů v doménách jako @hotmail.com, @gmail.com nebo @comcast.net nelze používat k registraci jako uživatele aplikace Finance and Operations.
-3.  Nastavte možnost na **Povolený přístup k dodavatelské spolupráci na** **Ano** pro všechny právnické osoby, ke kterým musí mít uživatel přístup.
-4.  V oddílu **Přiřazení rolí uživatelů** zaškrtněte políčko **Přiřadit** pro role zabezpečení, které by měl mít nový uživatel.
-5.  Klepněte na tlačítko **Odeslat**.
+1. Na stránce **Všechny kontakty** klepněte na **Zřídit dodavatelského uživatele**.
+2. Zadejte e-mailovou adresu uživatele. Uživatel bude tuto adresu používat pro přihlášení do aplikace Finance and Operations. Pokud e-mailová adresa patří do domény, která je registrována jako tenant v Microsoft Azure, musí být e-mailová adresa existující účte Azure Active Directory (AAD), aby byl proces zřizování úspěšně dokončen. Pokud e-mailová adresa nepatří k doméně registrované službou Microsoft Azure, přidaný účet bude vytvořen jako součást procesu zřizování a nový uživatel obdrží e-mail s pozváním. E-mailové adresy spotřebitelů v doménách jako @hotmail.com, @gmail.com nebo @comcast.net nelze používat k registraci jako uživatele aplikace Finance and Operations.
+3. Nastavte možnost na **Povolený přístup k dodavatelské spolupráci na** **Ano** pro všechny právnické osoby, ke kterým musí mít uživatel přístup.
+4. V oddílu **Přiřazení rolí uživatelů** zaškrtněte políčko **Přiřadit** pro role zabezpečení, které by měl mít nový uživatel.
+5. Klepněte na tlačítko **Odeslat**.
 
 Při odeslání požadavku dodavatelského uživatele je pole **Povolen přístup dodavatelské spolupráce** nastaveno na hodnotu **Ano** pro vybraný účet dodavatele a je zahájen workflow požadavku uživatele. V rámci tohoto workflowu je v aplikaci Finance and Operations vytvořen nový uživatel a přirazeny role zabezpečení. Kromě toho se aktivuje služba Azure B2B, která iniciuje interakci s portálem Azure a přidruží nový nebo existující účet AAD k uživatelskému účtu aplikace Finance and Operations. Další informace naleznete v tématu [Co je spolupráce Azure AD B2B?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 

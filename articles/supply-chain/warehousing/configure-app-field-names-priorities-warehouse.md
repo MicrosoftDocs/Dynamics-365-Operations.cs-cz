@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurace názvů polí aplikace v aplikaci Warehousing
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak definovat a konfigurovat názvy polí aplikace skladu a priority v aplikaci Finance and Operations. 
 

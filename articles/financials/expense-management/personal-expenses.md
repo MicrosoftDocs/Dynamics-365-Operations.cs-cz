@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="personal-expenses-on-an-expense-report"></a>Osobní výdaje ve vyúčtování výdajů
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Během služební cesty může dojít k tomu, že zaměstnanec zaplatí osobní výdaje kreditní kartou společnosti. Pokud není definovaný proces pro osobní výdaje, může být schválení vyúčtování výdajů přerušeno, když zaměstnanec odevzdá rozpis vyúčtování výdajů. 
 

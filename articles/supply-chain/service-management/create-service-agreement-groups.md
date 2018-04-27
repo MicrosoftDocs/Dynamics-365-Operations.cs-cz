@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="create-service-agreement-groups"></a>Vytvoření skupin servisních smluv 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Skupiny servisních smluv jsou užitečné při řazení a filtrování servisních smluv.
 

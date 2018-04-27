@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-operating-unit"></a>Vytvoření provozní jednotky
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Provozní jednotka je organizace, která se používá k rozdělení řízení ekonomických zdrojů a operačních procesů v podniku. Osoby v provozní jednotce jsou povinni maximalizovat využívání omezených zdrojů, zdokonalovat procesy a zvažovat jejich výkon. K typům provozních jednotek patří nákladová střediska, obchodní jednotky, oddělení a hodnotové proudy. Následující postup použijte k vytvoření provozní jednotky. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

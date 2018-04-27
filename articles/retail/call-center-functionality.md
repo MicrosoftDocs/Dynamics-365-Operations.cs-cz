@@ -29,8 +29,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="call-center-functionality"></a>Funkce kontaktního střediska
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Tento článek obsahuje přehled o prodejní funkci kontaktního střediska v aplikaci Microsoft Dynamics 365 for Retail.
 

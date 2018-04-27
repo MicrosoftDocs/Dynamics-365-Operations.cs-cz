@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f9b7a3ea23298e5121e161b93faa8f145fdd1860
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: bfcebf61a5f613517e05af5c1548b5ceaaed53ee
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="enter-worker-information"></a>Zadávání informací o pracovnících
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Poté, co náborový pracovník vytvoří projekt hromadného zařazování zaměstnanců a generování pozic, je dalším krokem zadání informací o pracovníkovi pro osoby, které byly přijaty. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Demonstrační data obsahují otevřený projekt masového zařazení. Tento postup zahájíte tak, že přejděte na Lidské zdroje > Nábor > Projekty hromadného zařazení.
 

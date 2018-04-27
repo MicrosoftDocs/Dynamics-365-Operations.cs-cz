@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-centralized-payments"></a>Nastavení centralizovaných plateb
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Postupujte podle těchto kroků k přípravě zpracování plateb v jedné právnické osobě jménem ostatních právnických osob v organizaci. Před zahájením práce je nutné dokončit následující nastavení:
 

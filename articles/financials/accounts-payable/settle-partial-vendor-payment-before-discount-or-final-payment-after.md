@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Vyrovnání částečné platby dodavatele před datem slevy s konečnou platbou po datu slevy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek vás provede scénářem, kde je provedeno více částečných plateb, některé v rámci období platební slevy a jiné mimo období platební slevy.
 

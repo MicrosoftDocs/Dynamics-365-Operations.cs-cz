@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-management-mobile-workspace"></a>Pracovnímu prostor správy výdajů
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma obsahuje informace o mobilním pracovním prostoru **Správa výdajů**. Tento pracovní prostor umožňuje uživatelům zdokumentovat a odeslat účtenku, aby ji mohli připojit později k sestavě výdajů. Uživatelé mohou také rychle vytvořit řádek výdajů pomocí přiloženého příjmu a vytvořit a spravovat svá vyúčtování výdajů. Kromě toho mohou schvalovatelé použít mobilní pracovní prostor **Správa výdajů** k zobrazení vyúčtováí výdajů, která mají přiřazená, a buď schválit nebo zamítnout tato vyúčtování výdajů.
 

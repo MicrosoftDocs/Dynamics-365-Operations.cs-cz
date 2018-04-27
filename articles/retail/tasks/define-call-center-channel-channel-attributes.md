@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-call-center-channel-and-channel-attributes"></a> Definování kanálu kontaktního střediska a atributů kanálu
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Tento postup vás provede vytvářením nového maloobchodního kanálu a definováním atributů kanálu. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USRT. Tento postup je určen pro roli IT pro maloobchod.
 

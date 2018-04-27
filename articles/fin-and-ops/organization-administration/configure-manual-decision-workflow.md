@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurace ručního rozhodnutí ve workflowu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma vysvětluje, jak nakonfigurovat vlastnosti ručního rozhodnutí.
 
@@ -252,73 +251,74 @@ Pomocí následujícího postupu určíte, komu má být ruční rozhodnutí př
 ## <a name="specify-what-happens-when-a-decision-is-overdue"></a>Určení akce prováděné při zpoždění rozhodnutí
 Pokud uživatel v přiděleném čase rozhodnutí neučiní, rozhodnutí bude v prodlení. Rozhodnutí, které je v prodlení, může být eskalováno nebo automaticky přiřazeno jinému uživateli. Pro eskalování rozhodnutí v prodlení postupujte následovně.
 
-1.  V levém podokně klikněte na **Eskalování**.
-2.  Označte pole **Použít eskalační cestu** a vytvořte tak eskalační cestu. Systém automaticky přiřadí dané rozhodnutí uživatelům uvedeným v cestě eskalace. Například v následující tabulce naleznete příklad eskalační cesty.
-    | Pořadí | Eskalační cesta            |
-    |----------|----------------------------|
-    | 1        | Přiřadit k: Donna           |
-    | 2        | Přiřadit k: Erin            |
-    | 3        | Konečná akce: \[Volba 1\] |
+1. V levém podokně klikněte na **Eskalování**.
+2. Označte pole **Použít eskalační cestu** a vytvořte tak eskalační cestu. Systém automaticky přiřadí dané rozhodnutí uživatelům uvedeným v cestě eskalace. Například v následující tabulce naleznete příklad eskalační cesty.
 
-    V tomto příkladu systém přiřadí zpožděné rozhodnutí Donně. Pokud Donna v určeném čase rozhodnutí neučiní, systém přiřadí rozhodnutí Erin. Pokud Erin v určeném čase rozhodnutí neučiní, systém jako rozhodnutí vybere možnost **\[Volba 1\]**.
-3.  Pokud chcete přidat uživatele do eskalační cesty, klepněte na tlačítko **Přidat eskalaci**. Vyberte jednu z možností v následující tabulce a před přechodem na krok 4 postupujte podle dalších kroků pro tuto možnost.
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Možnost</th>
-    <th>Uživatelé, kterým je rozhodnutí eskalováno</th>
-    <th>Další kroky</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Hierarchie</td>
-    <td>Uživatelé v určité organizační hierarchii</td>
-    <td><ol>
-    <li>Po výběru možnosti <strong>Hierarchie</strong> na kartě <strong>Výběr hierarchie</strong> v seznamu <strong>Typ hierarchie</strong> vyberte typ hierarchie, ke které rozhodnutí eskalovat.</li>
-    <li>Systém musí z hierarchie načíst rozsah jmen uživatelů. Tato jména představují uživatele, ke kterým může být rozhodnutí eskalováno. Podle těchto kroků určete počáteční a koncový bod rozsahu uživatelských jmen, které systém obdrží: <ol>
-    <li>Chcete-li zadat počáteční bod, vyberte osobu v seznamu <strong>Začátek od</strong>.</li>
-    <li>Chcete-li zadat koncový bod, klepněte na možnost <strong>Přidat podmínku</strong>. Poté zadáním podmínky označte, kde v hierarchii má systém přestat načítat jména.</li>
-    </ol></li>
-    <li>Na kartě <strong>Možnosti hierarchie</strong> zadejte uživatele v rozsahu, ke kterým by měl být rozhodnutí eskalováno: <ul>
-    <li><strong>Přiřadit všechny načtené uživatele</strong> – rozhodnutí dokument bude eskalováno všem uživatelům v rozsahu.</li>
-    <li><strong>Přiřadit pouze poslednímu načtenému uživateli</strong> – rozhodnutí bude eskalováno pouze poslednímu uživateli v rozsahu.</li>
-    <li><strong>Vyloučit uživatele splňující následující podmínku</strong> – rozhodnutí není eskalováno žádnému uživateli v rozsahu, který odpovídá konkrétní podmínce. Po klepnutí na volbu <strong>Přidat podmínku</strong> určete požadovanou podmínku.</li>
-    </ul></li>
-    </ol></td>
-    </tr>
-    <tr class="even">
-    <td>Uživatel workflowu</td>
-    <td>Uživatelé v aktuálním workflowu</td>
-    <td><ul>
-    <li>Po výběru možnosti <strong>Uživatel workflowu</strong> na kartě <strong>Uživatel workflowu</strong> v seznamu <strong>Uživatel workflowu</strong> vyberte uživatele, který se podílí na workflowu.</li>
-    </ul></td>
-    </tr>
-    <tr class="odd">
-    <td>Uživatel</td>
-    <td>Konkrétní uživatelé aplikace Finance and Operations</td>
-    <td><ol>
-    <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
-    <li>Seznam <strong>Dostupní uživatelé</strong> obsahuje všechny uživatele aplikace Finance and Operations. Vyberte uživatele, ke kterým chcete rozhodnutí eskalovat, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
-    </ol></td>
-    </tr>
-    </tbody>
-    </table>
+   | Pořadí | Eskalační cesta            |
+   |----------|----------------------------|
+   | 1        | Přiřadit k: Donna           |
+   | 2        | Přiřadit k: Erin            |
+   | 3        | Konečná akce: \[Volba 1\] |
 
-4.  Na kartě **Časový limit** v poli **Trvání** určete, kolik času má uživatel na rozhodnutí. Vyberte některou z následujících možností:
-    -   **Hodiny** – zadejte počet hodin, které má uživatel na rozhodnutí. Pak vyberte kalendář, který vaše organizace používá, a zadejte informace o pracovním týdnu vaší organizace.
-    -   **Dny** – zadejte počet dnů, které má uživatel na rozhodnutí. Pak vyberte kalendář, který vaše organizace používá, a zadejte informace o pracovním týdnu vaší organizace.
-    -   **Týdny** – zadejte počet týdnů, které má uživatel na rozhodnutí.
-    -   **Měsíce** – vyberte den a týden, do kdy se musí uživatel rozhodnout. Můžete například požadovat, aby uživatel učinil rozhodnutí do třetího pátku v daném měsíci.
-    -   **Roky** – vyberte den, týden a měsíc, do kdy se musí uživatel rozhodnout. Můžete například požadovat, aby uživatel učinil rozhodnutí do třetího pátku v prosinci.
+   V tomto příkladu systém přiřadí zpožděné rozhodnutí Donně. Pokud Donna v určeném čase rozhodnutí neučiní, systém přiřadí rozhodnutí Erin. Pokud Erin v určeném čase rozhodnutí neučiní, systém jako rozhodnutí vybere možnost **\[Volba 1\]**.
+3. Pokud chcete přidat uživatele do eskalační cesty, klepněte na tlačítko **Přidat eskalaci**. Vyberte jednu z možností v následující tabulce a před přechodem na krok 4 postupujte podle dalších kroků pro tuto možnost.
+   <table>
+   <colgroup>
+   <col width="33%" />
+   <col width="33%" />
+   <col width="33%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th>Možnost</th>
+   <th>Uživatelé, kterým je rozhodnutí eskalováno</th>
+   <th>Další kroky</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td>Hierarchie</td>
+   <td>Uživatelé v určité organizační hierarchii</td>
+   <td><ol>
+   <li>Po výběru možnosti <strong>Hierarchie</strong> na kartě <strong>Výběr hierarchie</strong> v seznamu <strong>Typ hierarchie</strong> vyberte typ hierarchie, ke které rozhodnutí eskalovat.</li>
+   <li>Systém musí z hierarchie načíst rozsah jmen uživatelů. Tato jména představují uživatele, ke kterým může být rozhodnutí eskalováno. Podle těchto kroků určete počáteční a koncový bod rozsahu uživatelských jmen, které systém obdrží: <ol>
+   <li>Chcete-li zadat počáteční bod, vyberte osobu v seznamu <strong>Začátek od</strong>.</li>
+   <li>Chcete-li zadat koncový bod, klepněte na možnost <strong>Přidat podmínku</strong>. Poté zadáním podmínky označte, kde v hierarchii má systém přestat načítat jména.</li>
+   </ol></li>
+   <li>Na kartě <strong>Možnosti hierarchie</strong> zadejte uživatele v rozsahu, ke kterým by měl být rozhodnutí eskalováno: <ul>
+   <li><strong>Přiřadit všechny načtené uživatele</strong> – rozhodnutí dokument bude eskalováno všem uživatelům v rozsahu.</li>
+   <li><strong>Přiřadit pouze poslednímu načtenému uživateli</strong> – rozhodnutí bude eskalováno pouze poslednímu uživateli v rozsahu.</li>
+   <li><strong>Vyloučit uživatele splňující následující podmínku</strong> – rozhodnutí není eskalováno žádnému uživateli v rozsahu, který odpovídá konkrétní podmínce. Po klepnutí na volbu <strong>Přidat podmínku</strong> určete požadovanou podmínku.</li>
+   </ul></li>
+   </ol></td>
+   </tr>
+   <tr class="even">
+   <td>Uživatel workflowu</td>
+   <td>Uživatelé v aktuálním workflowu</td>
+   <td><ul>
+   <li>Po výběru možnosti <strong>Uživatel workflowu</strong> na kartě <strong>Uživatel workflowu</strong> v seznamu <strong>Uživatel workflowu</strong> vyberte uživatele, který se podílí na workflowu.</li>
+   </ul></td>
+   </tr>
+   <tr class="odd">
+   <td>Uživatel</td>
+   <td>Konkrétní uživatelé aplikace Finance and Operations</td>
+   <td><ol>
+   <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
+   <li>Seznam <strong>Dostupní uživatelé</strong> obsahuje všechny uživatele aplikace Finance and Operations. Vyberte uživatele, ke kterým chcete rozhodnutí eskalovat, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+   </ol></td>
+   </tr>
+   </tbody>
+   </table>
 
-5.  Zopakujte kroky 3 a 4 u každého uživatele, který má být přidán do eskalační cesty. Pořadí uživatelů lze změnit.
-6.  Pokud uživatelé v eskalační cestě v určeném čase rozhodnutí neučiní, systém sám provede rozhodnutí. Možnost, kterou systém vybere, můžete vybrat výběrem řádku **Akce** a na kartě **Konečná akce** vyberte možnost.
+4. Na kartě **Časový limit** v poli **Trvání** určete, kolik času má uživatel na rozhodnutí. Vyberte některou z následujících možností:
+   -   **Hodiny** – zadejte počet hodin, které má uživatel na rozhodnutí. Pak vyberte kalendář, který vaše organizace používá, a zadejte informace o pracovním týdnu vaší organizace.
+   -   **Dny** – zadejte počet dnů, které má uživatel na rozhodnutí. Pak vyberte kalendář, který vaše organizace používá, a zadejte informace o pracovním týdnu vaší organizace.
+   -   **Týdny** – zadejte počet týdnů, které má uživatel na rozhodnutí.
+   -   **Měsíce** – vyberte den a týden, do kdy se musí uživatel rozhodnout. Můžete například požadovat, aby uživatel učinil rozhodnutí do třetího pátku v daném měsíci.
+   -   **Roky** – vyberte den, týden a měsíc, do kdy se musí uživatel rozhodnout. Můžete například požadovat, aby uživatel učinil rozhodnutí do třetího pátku v prosinci.
+
+5. Zopakujte kroky 3 a 4 u každého uživatele, který má být přidán do eskalační cesty. Pořadí uživatelů lze změnit.
+6. Pokud uživatelé v eskalační cestě v určeném čase rozhodnutí neučiní, systém sám provede rozhodnutí. Možnost, kterou systém vybere, můžete vybrat výběrem řádku **Akce** a na kartě **Konečná akce** vyberte možnost.
 
 ## <a name="set-a-time-limit"></a>Nastavení časového limitu
 Tento postup použijte, pokud je rozhodnutí nutné učinit v určitém čase. **Poznámka:** možnosti, které vyberete v rámci této procedury, přepíší možnosti vybrané v oblasti **Přiřazení** a **Eskalace** na stránce.

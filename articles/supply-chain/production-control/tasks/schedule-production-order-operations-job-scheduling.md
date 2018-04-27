@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="schedule-a-production-order-with-operations-and-job-scheduling"></a>Naplánování výrobní zakázky s naplánováním operací a úloh
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup je zaměřen na plánování výrobní zakázky pomocí plánování operací a úloh. Žádné úlohy se při plánování operací nevytváří, zatímco při plánování úloh se úlohy vytváří. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF. Tento postup je určen pro vedoucí výroby, výrobní plánovače nebo dílenského vedoucího pracujícího v samostatném výrobním prostředí.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/13/2018
 
 ---
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 # <a name="product-confirmation-for-cluster-picking"></a>Potvrzení produktu pro výdej v seskupení
 Výdej v seskupení umožňuje vyskladnění položek pro několik objednávek současně. Při použití výdeje v seskupení je velmi důležité potvrzení položek k ověření položek, které jsou přidány do seskupení. Při výdeji v seskupení můžete ověřit položky během procesu výdeje v seskupení.
@@ -37,7 +37,8 @@ Ověření položek pro výdej v seskupení funguje stejně jako při ověření
 1.  V položce nabídky mobilního zařízení otevřete formulář nastavení pro potvrzení práce: **Řízení skladu** > **Řízení skladu** > **Nastavení** > **Mobilní zařízení** > **Položky nabídky mobilního zařízení**.
 2.  Z položky nabídky mobilního zařízení otevřete **Nastavení potvrzení práce**.
 
-| Parametr        | popis   | 
-| ------------- | ------------- |
-|Potvrzení produktu | Umožňuje vám ověřit jednotlivé skladové položky z mobilního zařízení při naskenování.|
+|        Parametr        |                                    popis                                    |
+|----------------------|-----------------------------------------------------------------------------------|
+| Potvrzení produktu | Umožňuje vám ověřit jednotlivé skladové položky z mobilního zařízení při naskenování. |
+
 

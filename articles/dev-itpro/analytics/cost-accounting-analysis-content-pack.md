@@ -27,7 +27,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="cost-accounting-analysis-power-bi-content"></a>Obsah analýzy nákladového účetnictví v Power BI
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, co je součástí obsahu **Analýza nákladového účetnictví** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
@@ -111,18 +111,20 @@ Následující tabulka zobrazuje, jak se používají klíčové měrné systém
 
 Následující klíčové dimenze se používají jako filtry k řezu měrných systémů agregace pro dosažení většího rozlišení a poskytnutí hlubších analytických poznatků.
 
-| Celek                             | Příklady atributů                                                                                               |
+
+|               Celek               |                                                Příklady atributů                                                |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Hlavní knihy nákladového účetnictví            | Hlavní kniha nákladového účetnictví                                                                                               |
-| Jednotky řízení nákladů                 | Název jednotky řízení nákladů                                                                                               |
-| Dimenze prvku nákladů            | Název dimenze prvku nákladů, název člena dimenze prvku nákladů a popis člena dimenze prvku nákladů          |
-| Dimenze objektu nákladů             | Název dimenze objektu nákladů, název člena dimenze objektu nákladů a popis člena dimenze objektu nákladů              |
-| Statistické dimenze             | Název statistické dimenze, název člena statistické dimenze a popis člena statistické dimenze              |
-| Hierarchie dimenze objektu nákladů  | Název hierarchie dimenze objektu nákladů, úroveň hierarchie dimenze objektu nákladů, stromová hierarchie dimenze objektu nákladů    |
+|      Hlavní knihy nákladového účetnictví       |                                                Hlavní kniha nákladového účetnictví                                                |
+|         Jednotky řízení nákladů         |                                                Název jednotky řízení nákladů                                                |
+|      Dimenze prvku nákladů       |     Název dimenze prvku nákladů, název člena dimenze prvku nákladů a popis člena dimenze prvku nákladů      |
+|       Dimenze objektu nákladů       |       Název dimenze objektu nákladů, název člena dimenze objektu nákladů a popis člena dimenze objektu nákladů        |
+|       Statistické dimenze       |       Název statistické dimenze, název člena statistické dimenze a popis člena statistické dimenze        |
+| Hierarchie dimenze objektu nákladů  |  Název hierarchie dimenze objektu nákladů, úroveň hierarchie dimenze objektu nákladů, stromová hierarchie dimenze objektu nákladů   |
 | Hierarchie dimenze prvku nákladů | Název hierarchie dimenze prvku nákladů, úroveň hierarchie dimenze prvku nákladů, stromová hierarchie dimenze prvku nákladů |
-| Hierarchie statistické dimenze  | Název hierarchie statistické dimenze, úroveň hierarchie statistické dimenze, stromová hierarchie statistické dimenze    |
-| Verze transakce               | Název verze                                                                                                         |
-| Fiskální kalendáře                   | Kalendář, Popis kalendáře                                                                                       |
-| Fiskální roky                       | Kalendářní rok                                                                                                        |
-| Fiskální období                     | Kalendářní roční období                                                                                                 |
+| Hierarchie statistické dimenze  |  Název hierarchie statistické dimenze, úroveň hierarchie statistické dimenze, stromová hierarchie statistické dimenze   |
+|        Verze transakce        |                                                     Název verze                                                     |
+|          Fiskální kalendáře          |                                            Kalendář, Popis kalendáře                                            |
+|            Fiskální roky            |                                                    Kalendářní rok                                                     |
+|           Fiskální období           |                                                 Kalendářní roční období                                                 |
+
 

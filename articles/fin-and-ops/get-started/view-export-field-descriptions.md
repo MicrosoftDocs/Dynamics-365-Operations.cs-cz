@@ -19,17 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6426f208a51ffbf72c6faa8cb281aba2984052d7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0164d64b8c37c19a3b8b13970dbda5927073eca8
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Zobrazení a export popisů polí
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje, jak zobrazit popisy pole, a jak používat stránku Popisy pole pro export popisů.
 
@@ -77,7 +76,7 @@ Vyhledat stránku v poli **Vybrat stránku** lze několika způsoby. V mnoha př
     -   Pokud existuje více než jediná přesná shoda, nezobrazí se žádné popisy. Bude nutné otevřít rozevírací seznam a vybrat požadovanou možnost.
     -   Pokud název, který jste zadali, je také částí názvu další stránky, zobrazí se popisy pro vaši stránku. Pokud ale otevřete rozevírací seznam, zobrazí se další stránky, které obsahují tento název.
 
-Například nejsou zobrazeny žádné popisy, když zadáte **Inventura** do pole ****Vybrat stránku****. Pokud kliknete na rozevírací seznam, zjistíte, že existují dvě stránky s názvem **Inventura** a také několik stránek, které obsahují v názvu slovo „Inventura“. Pokud vyberete stránku, který má název stromu AOT **InventJournalCount**, zobrazí se pro tuto stránku popisy polí. Pokud však znovu otevřete na rozevírací seznam, zobrazený seznam nyní obsahuje všechny stránky, které mají „InventJournalCount“ jako součást jejich názvu stromu AOT.
+Například nejsou zobrazeny žádné popisy, když zadáte <strong>Inventura</strong> do pole *<strong><em>Vybrat stránku</em></strong>*. Pokud kliknete na rozevírací seznam, zjistíte, že existují dvě stránky s názvem <strong>Inventura</strong> a také několik stránek, které obsahují v názvu slovo „Inventura“. Pokud vyberete stránku, který má název stromu AOT <strong>InventJournalCount</strong>, zobrazí se pro tuto stránku popisy polí. Pokud však znovu otevřete na rozevírací seznam, zobrazený seznam nyní obsahuje všechny stránky, které mají „InventJournalCount“ jako součást jejich názvu stromu AOT.
 
 ## <a name="troubleshooting"></a>Řešení potíží
 Tato sekce obsahuje informace o řešení problémů, ke kterým může dojít při používání popisů pole.

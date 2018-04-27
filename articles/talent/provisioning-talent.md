@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ba1a3a78d59f3aec91473ba9bb20bda4804ec92e
-ms.openlocfilehash: 0a43f5ff0987ede9f0cb80e5b4854f78e19e329b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b4b54e97bdebc158adc3bc6d57a6661cd536f5fb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Zřízení Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Toto téma vás povede procesem zřízení nového produkčního prostředí pro aplikaci Microsoft Dynamics 365 for Talent. Toto téma předpokládá, že jste si zakoupili aplikaci Talent prostřednictvím poskytovatele cloudového řešení (CSP) nebo smlouvy o podnikové architektuře (EA). Pokud máte existující licenci pro Microsoft Dynamics 365, která obsahuje servisní plán aplikace Talent, a nedaří se vám provést kroky uvedené v tomto tématu, kontaktujte podporu.
 
@@ -79,12 +79,12 @@ Použijte následující pokyny při určování, do kterého prostředí PowerA
  
     **Prostředí CDS 2.0** CDS 2.0 budou veřejně k dispozici od 21. března 2018; systém Talent však ještě nepodporuje CDS 2.0. I když můpžete vytvářet a zobrazit databáze CDS 2.0 v centru správy PowerApps, nebude je možné použít v aplikaci Talent. Možnost použít prostředí CDS 2.0 v nasazeních aplikace Talent bude k dispozici k pozdějšímu datu.
    
- > [!Note]
- > Chcete-li rozlišit mezi prostředími CDS 1.0 a CDS 2.0 na portálu správy, zvolte prostředí a podívejte se na **Podrobnosti**. Všechna prostředí CDS 2.0 odkazují na skutečnost, že "Můžete spravovat tato nastavení v centru pro správu Dynamics 365," odkazovat na verzi instance a nemít žádnou kartu Databáze. 
+   > [!Note]
+   > Chcete-li rozlišit mezi prostředími CDS 1.0 a CDS 2.0 na portálu správy, zvolte prostředí a podívejte se na **Podrobnosti**. Všechna prostředí CDS 2.0 odkazují na skutečnost, že "Můžete spravovat tato nastavení v centru pro správu Dynamics 365," odkazovat na verzi instance a nemít žádnou kartu Databáze. 
  
    **Výchozí prostředí Power Apps** I když je každý klient automaticky vytvořen s výchozím prostředím PowerApps, nedoporučujeme je používat se systémem Talent, protože všichni uživatelé klientů mají přístup do prostředí PowerApps a mohou neúmyslně poškodit data výroby při testování a seznámení s integrací PowerApps nebo Flow.
    
-   **Testovací jednotka prostředí** Prostředí nazvaná například "TestDrive – alias@domain' jsou vytvářena s dobou platnosti 60 dní a vyprší po uplynutí této doby, což způsobí, že prostředí bude odebráno automaticky.
+   <strong>Testovací jednotka prostředí</strong> Prostředí nazvaná například "TestDrive – alias@domain' jsou vytvářena s dobou platnosti 60 dní a vyprší po uplynutí této doby, což způsobí, že prostředí bude odebráno automaticky.
    
    **Nepodporované oblasti** Talent je v současné době podporován pouze v následujících oblastech: Spojené státy, Evropa a Austrálie.
   
@@ -115,7 +115,7 @@ Při spuštění skriptu postupujte následujícím způsobem:
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
     
-   **EnvironmentName** má být nahrazena názvem vašeho prostředí. Tento název se objeví v LCS a bude viditelný, když uživatel vybere prostředí Talent, které chce použít. 
+   **MyNewEnvironment** má být nahrazena názvem vašeho prostředí. Tento název se objeví v LCS a bude viditelný, když uživatel vybere prostředí Talent, které chce použít. 
 
    **YourLocation** má být nahrazena jednou z podporovaných oblasteí pro Talent: unitedsates, evropa, austrálie. 
 

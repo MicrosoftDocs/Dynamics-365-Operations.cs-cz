@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-and-manage-attributes"></a>Vytvoření a správa atributů
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Tento článek popisuje atributy v aplikaci Microsoft Dynamics 365 for Retail. Atributy umožňují popis produktu a jeho charakteristik prostřednictvím uživatelem definovaných polí.
 
@@ -58,7 +57,7 @@ Atributy umožňují popis produktu a jeho charakteristik prostřednictvím uži
 
 ## <a name="attribute-type"></a>Typ atributu
   [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
-  
+
 Atributy jsou založeny na typech atributů. Typy atributů určují typ dat, který lze zadat pro určitý atribut. Aplikace Microsoft Dynamics 365 for Retail v současné době podporují následující typy atributů:
 
 -   **Měna** – tento typ atributu podporuje měnové hodnoty. Mohou být vázané (může tedy podporovat rozsah hodnot), nebo mohou být otevřené.

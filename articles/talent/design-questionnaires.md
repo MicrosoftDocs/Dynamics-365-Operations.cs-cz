@@ -28,7 +28,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="design-a-questionnaire"></a>Návrh dotazníku
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Toto téma popisuje postup vytváření dotazníku. Prvním krokem je návrh dotazníku. Při navrhování dotazníku můžete pouze zapsat otázky a odpovědi, ale také vytvořit strukturu, která umožňuje záznam a uspořádání odpovědí. 
 

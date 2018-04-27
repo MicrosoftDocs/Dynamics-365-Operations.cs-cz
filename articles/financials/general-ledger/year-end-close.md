@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="year-end-close"></a>Roční uzávěrka
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje požadované nastavení a postup pro spuštění procesu roční uzávěrky hlavní knihy. 
 

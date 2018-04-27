@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reduce-balance-depreciation"></a>Degresivní odpis
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek poskytuje přehled o metodě degresivního odpisování.
 
@@ -80,7 +79,7 @@ Pomocí metody Degresivní odpisování je 30 % odpisové základny (čistá ú�
 | Rok 2 | (7,000 - 1,000) \* 30% = 1,800            | (7 000 – 1 800) = 5 200                |
 | Rok 3 | (5,200 - 1,000) \* 30% = 1,260            | (5 200 – 1 260) = 3 940               |
 
- 
+
 -
 
 

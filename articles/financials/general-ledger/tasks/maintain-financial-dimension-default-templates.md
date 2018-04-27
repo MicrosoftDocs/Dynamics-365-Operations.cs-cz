@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="maintain-financial-dimension-default-templates"></a>Udržovat výchozí šablony finanční dimenze
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup ukazuje, jak nastavit výchozí šablony finanční dimenze. Šablony lze použít k rychlé distribuci částek ve zdrojových dokumentech.
 

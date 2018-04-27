@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-product-number-for-configured-product-variants"></a>Vytvoření čísla produktu pro nakonfigurované varianty produktu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura ukazuje, jak nastavit názvosloví čísel produktu pro nakonfigurované varianty produktu a jak je přiřadit konfigurovatelnému základnímu produktu. Tato procedura také ukazuje, jak lze vytvářet názvosloví konfigurace komponenty modelu konfigurace produktu. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Základnímu produktu D0004 je přiřazeno nové názvosloví čísla produktu. Tento úkol obvykle provádí návrhář produktu.
 

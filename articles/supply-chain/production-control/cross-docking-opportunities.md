@@ -28,7 +28,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Cross docking z výrobních příkazů na výstupní překladiště
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak spravovat zpracování cross docking materiálu, který je vykazován jako dokončený z výrobní linky do výstupního překladiště.
 
@@ -76,10 +76,10 @@ V **zásadě cross dockingu** definujete, jaké typy dokumentů jsou použiteln�
 
 ### <a name="cross-docking-policy-name-transfer-order"></a>Název zásady cross dockingu: Objednávka transferu
 
--   Pořadové číslo: 10
- -   Typ pracovního příkazu: Vydání transferu
--   Poptávka po cross dockingu vyžaduje skladové místo: Ne
--   Strategie cross dockingu: Datum a čas
+- Pořadové číslo: 10
+  -   Typ pracovního příkazu: Vydání transferu
+- Poptávka po cross dockingu vyžaduje skladové místo: Ne
+- Strategie cross dockingu: Datum a čas
 
 ### <a name="sequence-number"></a>Pořadové číslo
 

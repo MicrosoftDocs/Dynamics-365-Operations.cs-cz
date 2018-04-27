@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-new-users"></a>Vytvoření nových uživatelů
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Uživatelé jsou interní zaměstnanci ve vaší organizaci nebo externí zákazníci a dodavatelé, kteří v rámci své práce vyžadují přístup k systému. K dokončení tohoto postupu pro přidání uživatele do systému musíte být správcem systému. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. 
 

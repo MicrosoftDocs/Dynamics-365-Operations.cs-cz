@@ -24,7 +24,7 @@ ms.lasthandoff: 10/27/2017
 ---
 # <a name="create-and-assign-advanced-rule-structures"></a>Vytvoření a přiřazení struktur rozšířeného pravidla
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento průvodce úkoly vás provede vytvářením a přiřazením struktury rozšířeného pravidla do účetní struktury. Tento průvodce používá ukázkovou společnost USMF.
 

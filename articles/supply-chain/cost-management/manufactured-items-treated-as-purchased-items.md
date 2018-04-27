@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-products-that-can-be-produced-or-procured"></a>Nastavení produktů, které mohou být vyrobeny nebo pořízeny
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Produkty mohou být odebírány různými způsoby – mohou být produkovány (vyrobeny) nebo získané (nakupované). Tento článek popisuje některé typické body, které je třeba zvážit při konfiguraci produktů pro podporu více zdrojů. 
 

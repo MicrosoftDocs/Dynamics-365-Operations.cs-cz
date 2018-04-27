@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="use-a-continuity-program"></a> Používání programu kontinuity
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Tento postup vás provede prodejem programu trvání a zpracováním souvisejících prodejních objednávek. Aby bylo možné tuto proceduru dokončit, musí být uživatel nastaven jako uživatel kontaktního střediska. Tato procedura používá data ukázkové společnosti USRT.
 

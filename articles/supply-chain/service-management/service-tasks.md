@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-tasks"></a>Servisní úlohy  
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Servisní úlohy lze použít k popisu úloh, které mají být dokončeny v průběhu servisní zakázky.
 Tyto informace mohou vidět technici a zákazníci.

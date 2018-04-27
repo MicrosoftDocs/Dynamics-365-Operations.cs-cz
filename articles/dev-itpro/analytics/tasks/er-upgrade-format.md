@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>Upgrade formátu přijetím nové základní verze tohoto formátu pro elektronické výkaznictví (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může spravovat konfiguraci formátu pro elektronické výkaznictví. Tento odstavec vysvětluje, jakým způsobem lze vytvořit vlastní verzi formátu na základě formátu přijatého od poskytovatele konfigurace. Také popisuje, jak přejmout novou základní verzi tohoto formátu.
 

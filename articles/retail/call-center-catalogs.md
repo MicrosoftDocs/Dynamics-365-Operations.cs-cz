@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="call-center-catalogs"></a>Katalogy kontaktního střediska
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Tento článek popisuje funkce kontaktního střediska pro katalogy v aplikaci Microsoft Dynamics 365 for Retail.
 

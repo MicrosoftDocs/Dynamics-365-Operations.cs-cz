@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="exchange-rate-adjustments"></a>Úpravy kurzů
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma uvádí informace o funkci úpravy směnného kurzu, která umožňuje uživatelům v právnickým osobách v Estonsku, Maďarsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.
 
@@ -53,18 +52,21 @@ Zde jsou směnné kurzy pro kanadské dolary (CAD) americké dolary (USD) pro te
 -   3. ledna 2013: 420,0000
 
 ### <a name="invoice"></a>Faktura
+
 | Datum                             | Má dáti / Dal | Částky               | Účet hlavní knihy (HK)    | typ transakce             | Typ zaúčtování       | Kreditní | Oprava |
 |----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
 | 1-Pro-12                         | Má Dáti        | 10,000 CAD/40,000 USD | Pohledávky                             | Faktura                      | Zůstatek odběratele   |        |            |
 | 1-Pro-12                         | Kreditní       | 10,000 CAD/40,000 USD | Protiúčet                         | Faktura                      | Deník hlavní knihy     | X      |
 
 ### <a name="payment"></a>Platba
+
 | Datum                             | Má dáti / Dal | Částky               | Účet hlavní knihy (HK)    | typ transakce             | Typ zaúčtování       | Kreditní | Oprava |
 |----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
 | 3-led-13                         | Má Dáti        | 10,000 CAD/42,000 USD | Protiúčet                         | Platba                      | Deník hlavní knihy     |        |            |
 | 3-led-13                         | Kreditní       | 10,000 CAD/42,000 USD | Pohledávky                             | Platba                      | Zůstatek odběratele   | X      |            |
 
 ### <a name="settlement"></a>Vyrovnání
+
 | Datum                             | Má dáti / Dal | Částky               | Účet hlavní knihy (HK)    | typ transakce             | Typ zaúčtování       | Kreditní | Oprava |
 |----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
 |3. ledna 2013 (= datum platby) | Má Dáti        | 0 CAD/2,000 USD       | Pohledávky                             | Zákazník                     | Zisk ze směnného kurzu |        |            |
@@ -80,7 +82,7 @@ Například u tohoto přecenění si všimněte, že položka ze 3. ledna 2013 j
 | 31-Pro-12           | Kreditní       | 0 CAD/5,000 USD       | Zisk po úpravě v nerealizované měně | Přecenění cizí měny | Zisk ze směnného kurzu | X      |            |
 | 3-led-13            | Má Dáti        | 0 CAD/5,000 USD       | Pohledávky                             | Přecenění cizí měny | Zisk ze směnného kurzu |        | X          |
  3-led-13            | Kreditní       | 0 CAD/5,000 USD       | Zisk po úpravě v nerealizované měně | Přecenění cizí měny | Zisk ze směnného kurzu | X      | X          |
- 
+
 
 ### <a name="revaluation-invoice-date-method-date--january-1-2013"></a>Přecenění (metoda data faktury, datum = 1. ledna 2013)
 Například u tohoto přecenění si všimněte, že položka ze 1. ledna 2013 je přímým stornem položky z 3. ledna 2013. Dokonce účty hlavní knihy a typy zaúčtování jsou shodné. Dále si všimněte, že byl nastaven příznak **Oprava**.

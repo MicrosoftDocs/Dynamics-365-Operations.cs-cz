@@ -17,16 +17,16 @@ ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 0fb9d48ef6f2fd06223516c0e8af235b354f2a5a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 122f8375c50fa62c4831acc0d059e37a7c1c45f5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="fiscal-service-esr-integration"></a>Integrace fiskální služby (ESR)
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 V Rakousku musí být všechny platby v hotovosti podepsány externím zařízením nebo službou, a musí být bezpečně uloženy. V České republice musí být platby v hotovosti odeslány na vládní portál pro fiskální podpis. V obou zemích musí být vystavena hotovostní účtenka s vytištěným podpisem.
 

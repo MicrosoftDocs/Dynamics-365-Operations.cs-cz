@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="initialize-stock-levels-in-the-warehouse"></a>Inicializace úrovní zásob ve skladu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak manuálně aktualizovat zásoby na skladě pomocí deníku pohybu zásob. (Lze rovněž aktualizovat zásoby na skladě pomocí importu transakcí v datových entitách.) Tohoto průvodce můžete spustit v ukázkových datech společnosti USMF, kde všechny požadavky, jako je název deníku, nastavení položky, účetní profily nebo účty jsou k dispozici. Průvodce navrhuje hodnoty specifické pro položku a dimenze, které se používají. Pokud vyberete jinou položku, může být vyžadováno zadání hodnot pro různé dimenze.
 

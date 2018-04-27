@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-data-allocation"></a>Přidělení dat pro plánování rozpočtu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje různé metody přidělení, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations, a jejich použití.  
 

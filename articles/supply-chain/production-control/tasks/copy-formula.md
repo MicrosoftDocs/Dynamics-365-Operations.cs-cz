@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="copy-a-formula"></a>Zkopírování receptury
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup se zaměřuje na vytvoření receptury, která zahrnuje stejné látky jako existující receptura, ale s drobnými odlišnostmi. Chcete-li vytvořit řádky receptury, pomocí funkce Kopírovat můžete zkopírovat existující recepturu, který má většinu potřebných látek. Jednotlivé řádky v nové verzi lze libovolně upravit. Díky funkci Kopírovat není nutno vytvořit více receptur, které jsou téměř totožné. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USP2.
 

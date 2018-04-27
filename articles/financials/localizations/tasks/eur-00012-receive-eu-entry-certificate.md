@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="receive-an-eu-entry-certificate"></a>Přijetí vstupního certifikátu EU
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup vás provede registrací vstupního certifikátu EU vystaveného třetí stranou a přijatého od zákazníka.
 

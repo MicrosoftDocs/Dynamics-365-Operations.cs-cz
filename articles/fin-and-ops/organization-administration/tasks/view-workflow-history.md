@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-workflow-history"></a>Zobrazit historii workflowu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Pomocí těchto kroků můžete zobrazit stav dokumentu odeslaného do systému workflowu ke zpracování a schválení. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

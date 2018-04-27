@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Nastavení účetních skupin pro DPH
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 DPH je vypočítáno a zaúčtováno do hlavních účtů, které jsou zadány v části Účetní skupiny. Účetní skupiny jsou připojeny k jednotlivým kódům DPH. Pro každý kód DPH můžete nastavit individuální účetní skupiny hlavní knihy pro DPH; můžete použít jednu účetní skupinu hlavní knihy pro všechny kódy DPH nebo můžete ke všem kódům DPH přiřadit několik účetních skupin hlavní knihy. Tento záznam používá ukázkovou společnost DEMF. 
 

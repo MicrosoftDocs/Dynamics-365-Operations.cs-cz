@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4ced76315bb4667f84be532a703e7e9b134b829b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6d11e772cfbcd8ab7a0d4a08ccd71049723f9e32
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-variable-compensation-plans"></a>Vytvoření plánů variabilní kompenzace
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Variabilní kompenzace tvoří nestandardní mzdu zaměstnance, jako jsou například mzdové bonusy nebo odměny v akciích. Tento článek popisuje součásti, které je nutné nastavit před použitím variabilní kompenzace a přihlášení zaměstnance k plánu variabilní kompenzace.
 
@@ -78,12 +77,12 @@ Když jste připraveni přihlásit zaměstnance do plánu variabilní kompenzace
 
 **Poznámka:** Pravidla způsobilosti se používají pro určení způsobilosti u fixních kompenzačních plánů a variabilních kompenzačních plánů. Pravidlo způsobilosti používá následující pole v záznamech práce, pozice a zaměstnanec a určí, zda je zaměstnanec způsobilý pro kompenzační plán:
 
--   Na stránce **Práce**:
-    -   Pole **Práce**
-    -   Pole **Funkce** a **Typ práce** na kartě **Klasifikace práce**
-    -   Pole **Úroveň** na kartě **Kompenzace**
--   Na stránce **Pozice**: pole **Oddělení** a **Oblast kompenzace**.
--   Na stránce **Zaměstnanci**: informace o odborech přiřazených k zaměstnanci v části **Osobní údaje** &gt; **Odbory** na kartě ****Pracovník****
+- Na stránce **Práce**:
+  -   Pole **Práce**
+  -   Pole **Funkce** a **Typ práce** na kartě **Klasifikace práce**
+  -   Pole **Úroveň** na kartě **Kompenzace**
+- Na stránce **Pozice**: pole **Oddělení** a **Oblast kompenzace**.
+- Na stránce <strong>Zaměstnanci</strong>: informace o odborech přiřazených k zaměstnanci jsou v části <strong>Osobní údaje</strong> &gt; <strong>Odbory</strong> na kartě *<strong><em>Pracovník</em></strong>*
 
 ### <a name="enable-enrollment-for-the-variable-compensation-plan"></a>Povolení zařazení do plánu variabilní kompenzace
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 02/06/2018
 
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Nastavení skladu s použitím šablony konfigurace skladu
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma vysvětluje nastavení skladu s použitím šablony konfigurace skladu. Existuje několik předdefinovaných šablon konfigurace, které lze použít. Další informace o použití hodnot těchto šablon naleznete v tématu [Šablony dat konfigurací](../../dev-itpro/data-entities/configuration-data-templates.md).
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="performance-management-overview"></a>Přehled řízení výkonnosti
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Proces řízení výkonnosti umožňuje zaměstnancům dokumentovat a diskutovat o jejich výkonnosti s jejich manažerem. Manažerům pak umožňuje poskytovat zpětnou vazbu a zaměstnance vést.  
 

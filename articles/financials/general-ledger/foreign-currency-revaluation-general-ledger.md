@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Přecenění cizí měny pro hlavní knihu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma obsahuje přehled následujících procesů přecenění cizí měny hlavní knihy – nastavení, spuštění procesu, výpočty pro proces a způsob stornování transakcí přecenění v případě potřeby. 
 

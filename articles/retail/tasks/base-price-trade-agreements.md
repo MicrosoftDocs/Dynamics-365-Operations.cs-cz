@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="base-price-and-trade-agreements"></a> Základní cena a obchodní smlouvy
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Tato procedura vás provede postupem vytváření obchodních smluv prodejních cen specifických pro kanál. Tato procedura používá data ukázkové společnosti USRT.
 

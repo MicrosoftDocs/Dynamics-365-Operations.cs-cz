@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-a-recruiting-process"></a>Řízení náborového procesu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje koncept, který náboráři mohou použít pro sledování kroků v procesu náboru, včetně úsilí inzerovat otevřené pozice a provádět nábor uchazečů, sledovat informace v přihlášce a o uchazeči, vést pohovor s uchazeči a vybírat jednoho nebo více uchazečů pro naplnění otevřené pozice ve vaší organizaci.
 

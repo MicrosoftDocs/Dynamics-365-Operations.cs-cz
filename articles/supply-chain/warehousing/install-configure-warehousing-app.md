@@ -29,11 +29,10 @@ ms.lasthandoff: 03/06/2018
 
 # <a name="install-and-configure-microsoft-dynamics-365-for-finance-and-operations-8211-warehousing"></a>Instalace a konfigurace aplikace Microsoft Dynamics 365 for Finance and Operations – Warehousing
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
-
+> 
 > Toto téma popisuje způsob konfigurace skladu pro nasazení v cloudu. Postup konfigurace skladu pro místní nasazení naleznete v tématu [Sklady pro místní nasazení](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 

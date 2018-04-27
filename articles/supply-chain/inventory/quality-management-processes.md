@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="quality-management-processes"></a>Procesy správy kvality
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 V tomto článku jsou informace týkající se procesu řízení kvality u nevyhovujícího produktů. Je zde popsáno, jak můžete použít funkci řízení kvality, definovat a spravovat neshody a zpracovávat opravy.
 

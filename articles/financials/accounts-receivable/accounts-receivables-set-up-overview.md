@@ -28,8 +28,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Konfigurace modulu Pohledávky a Kredit a inkasa
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Konfigurujte modul Pohledávky a Kredit a inkasa pro sledování faktur a příchozích plateb od odběratelů.
 
@@ -107,7 +106,7 @@ V následující tabulce jsou uvedeny stránky, které slouží ke konfiguraci a
 |                                                      | Informace o NFP.                     | U bankovního účtu nastavte informace o NFP, které budou na stránce Inkasa použity při označení platby jako transakce NFP.                                                                                                                                              |
 |                                                      | Informace o prodejci              | Nastavte e-mailovou adresu pro prodejce. Tyto adresy se zobrazí na stránce inkasa a můžete je použít k odeslání e-mailu prodejci z této stránky.                                                                                                                |
 
- 
+
 Další informace naleznete v tématu [Úvěr a inkasa v modulu Pohledávky](collections-credit-accounts-receivable.md).
 
 

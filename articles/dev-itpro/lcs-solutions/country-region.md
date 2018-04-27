@@ -3,7 +3,7 @@ title: "Lokalizace a funkce týkající se předpisů"
 description: "Toto téma obsahuje seznam prostředků, které vám pomohou dozvědět se více o funkci specifické pro zemi/oblast."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 04/12/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1f76359878d162e93d8f8b7c11be529c43c94455
-ms.openlocfilehash: c1c180432e014c69b43612693790a1cac6e54c34
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 389efbe1853264c1503737b55dd7767fdcb966ca
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="localization-and-regulatory-features"></a>Lokalizace a funkce týkající se předpisů
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations zahrnuje funkci pro zemi/oblast popsané v dokumentu [Mezinárodní průvodce dostupností produktu](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Tato funkce je povolena na základě primární adresy aktivní právnické osoby. 
 
@@ -51,13 +50,13 @@ Následující zdroje obsahují informace o plánovaných a nových lokalizačn�
 
 ### <a name="communication-and-alerts"></a>Komunikace a výstrahy
 -   [Sledování předpisů a komunikace nových informací o předpisech](regulatory-watch-communication.md)
--   [Informování společnosti Microsoft o výstrahách týkajících se předpisů země či oblasti a sledování stavu regulačních funkcí](submit-localization-alerts.md)
+-   [Informování společnosti Microsoft o výstrahách týkajících se předpisů země/oblasti a sledování stavu regulačních funkcí](submit-localization-alerts.md)
 
-### <a name="dynamics-365-roadmap"></a>Přehled Dynamics 365
-[Přehled Dynamics 365](https://roadmap.dynamics.com/) obsahuje informace o tom, na čem právě pracujeme. V tomto přehledu můžete zjistit, co se všeobecně zpřístupňuje a co se teprve připravuje. V případě připravovaných funkcí jsou všechny údaje předběžné (podle současného očekávání) a mohou být změněny bez předchozího upozornění.
+### <a name="dynamics-365-release-notes"></a>Poznámky k verzi Dynamics 365
+[Poznámky k verzi Dynamics 365 (PDF ke stažení)](https://aka.ms/businessappsreleasenotes) poskytují popis nových a rozšířených funkcí v obchodních aplikacích a platformách aplikací Dynamics 365. 
 
 ## <a name="electronic-reporting"></a>Elektronické výkaznictví
-Nástroj Elektronické výkaznictví slouží ke konfiguraci formátů pro elektronické dokumenty v souladu s právními požadavky různých zemí a oblastí. EV umožňuje spravovat tyto formáty během jejich životního cyklu. Další informace naleznete v jednom z následujících témat:
+Nástroj Elektronické výkaznictví slouží ke konfiguraci formátů pro elektronické dokumenty v souladu s právními požadavky různých zemí a oblastí. EV umožňuje spravovat tyto formáty během jejich životního cyklu. Další informace naleznete v jednom z následujících témat:
 -   [Přehled elektronického výkaznictví](../analytics/general-electronic-reporting.md)
 -   [Správa životního cyklu konfigurace elektronického vykazování](../analytics/general-electronic-reporting-manage-configuration-lifecycle.md)
 -   [Vytvoření konfigurace elektronického výkaznictví](../analytics/electronic-reporting-configuration.md)
@@ -79,25 +78,9 @@ Další informace naleznete v tématu [Průvodci záznamem úloh](../../fin-and-
 ## <a name="countryregion-specific-help-topics"></a>Témata nápovědy specifická pro zemi/oblast
 V následujících částech je seznam zdrojů podle země/oblasti.
 
-### <a name="australia"></a>Austrálie
-
--   [Formáty bankovních souborů](../../financials/localizations/apac-aus-method-of-payment-pay-vendors-banks.md)
--   [Výkaz podnikatelské činnosti ](../../financials/localizations/apac-aus-business-activity-statement.md)
--   [Odpisy skupiny majetku s nízkou hodnotou](../../financials/localizations/apac-aus-low-value-pool-depreciation.md)
-
-### <a name="austria"></a>Rakousko
-
-- [Půlroční plán odpisů](../../financials/localizations/emea-aut-half-year-depreciation.md)
-- [Poplatky za obalový materiál](../../financials/localizations/emea-aut-packing-material-fee-calculation.md)
-- [Nákupní cla](../../financials/localizations/emea-aut-purchase-duties.md)
-- [Výpis DPH](../../financials/localizations/emea-aut-vat-statement-details.md)
-
-### <a name="belgium"></a>Belgie
-
--   [Bankovní výpis CODA](../../financials/localizations/emea-bel-coda-bank-statement-import.md)
--   [Daňové přiznání Intervat](../../financials/localizations/emea-bel-intervat-tax-declaration.md)
--   [Nastavení sestavy PRODCOM](../../financials/localizations/emea-bel-prodcom-report.md)
--   [Sestavy odsouhlasení](../../financials/localizations/emea-bel-reconciliation-reports.md)
+### <a name="australiafinancialslocalizationsaustraliamd"></a>[Austrálie](../../financials/localizations/australia.md)
+### <a name="austriafinancialslocalizationsaustriamd"></a>[Rakousko](../../financials/localizations/austria.md)
+### <a name="belgiumfinancialslocalizationsbelgiummd"></a>[Belgie](../../financials/localizations/belgium.md)
 
 ### <a name="brazil"></a>Brazílie
 
@@ -134,22 +117,9 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 -   [Zaúčtování hlavních účtů zásob podle pracoviště](../../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md)
 -   [Zobrazení částek MD a Dal pro účty hlavní knihy](../../financials/localizations/apac-chn-negative-debits-credits.md)
 
-### <a name="the-czech-republic"></a>Česká republika
-
--   [Platební sleva na dobropisu](../../financials/localizations/emea-cze-credit-note-cash-discount.md)
--   [Zaokrouhlení odpisování](../../financials/localizations/emea-cze-depreciation-rounding.md)
--   [Pololetní odpisy vyřazení dlouhodobého majetku pro Českou republiku](../../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md)
--   [Přerušení odpisování (holidays.md)](../../financials/localizations/emea-cze-depreciation-suspension-holidays.md)
--   [Metody odpisování dlouhodobého majetku pro Českou republiku](../../financials/localizations/emea-cze-fixed-assets-depreciation.md)
--   [Zaúčtování předpořízení dlouhodobého majetku](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
--   [Výkaz DPH pro Českou republiku](../../financials/localizations/emea-cze-vat-statement-details.md)
--   [Výkaznictví DPH ](../../financials/localizations/emea-cze-intra-community-vat-transactions.md)
--   [Rozdělení období do periodických deníků](../../financials/localizations/emea-create-post-periodic-journals.md)
--   [Nastavení podepisujících uživatelů tištěných formulářů](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
--   [Aktualizace zobrazení částek v sestavách a dokumentech](../../financials/localizations/emea-amount-printing-forms.md)
+### <a name="the-czech-republicfinancialslocalizationsczech-republicmd"></a>[Česká republika](../../financials/localizations/czech-republic.md)
 
 ### <a name="estonia"></a>Estonsko
-
 -   [Podrobnosti výkazu DPH pro Estonsko](../../financials/localizations/emea-est-vat-statement-details.md)
 -   [Vyřazení dlouhodobého majetku](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
 
@@ -280,7 +250,7 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 -   [Sestava prohlášení o úpravě inflace](../../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
 -   [Sestava prohlášení ISR](../../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md)
 -   [Elektronické faktury (CFDI)](../../financials/localizations/latam-mex-CFDI-electronic-invoices.md)
-   
+
 ### <a name="malaysia"></a>Malajsie
 
 -   [Daň ze zboží a služeb (GST)](../../financials/localizations/apac-mys-gst.md)

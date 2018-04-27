@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-current-wip-status-on-a-production-order"></a>Zobrazení aktuálního stavu NV u výrobní zakázky
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura ukazuje, jak u výrobní zakázky zobrazit výkaz nedokončené výroby. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup je určen pro kontrolora nákladů.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="design-expressions-to-call-application-class-methods-er"></a>Návrh výrazů pro volání metod třídy aplikace (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento průvodce obsahuje informace o tom, jak opakovaně použít existující aplikační logiku v konfiguracích elektronického výkaznictví (ER) voláním požadovaných metod aplikačních tříd ve výrazech ER. Argumenty pro volání třídy hodnoty lze definovat dynamicky při spuštění: například na základě informací v dokumentu určeném k ověření jejich správnosti. V této příručce vytvoříte požadované konfigurace elektronického výkaznictví pro vzorovou společnost Litware, Inc. Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického výkaznictví. 
 

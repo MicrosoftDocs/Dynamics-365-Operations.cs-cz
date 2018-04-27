@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="time-and-attendance-registration"></a>Registrace času a docházky
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Pracovníci z oblasti registrace času mohou zadat různé typy registrace pracovní doby, například registraci příchodu, odchodu, registraci nepřímých aktivit a registraci absencí. Toto téma popisuje registrace, jejich výpočet, schválení a použití workflowu pro přidání struktury a automatického schválení pro proces schválení časových rozvrhů. 
 
@@ -95,7 +94,7 @@ Můžete nastavit proces schválení workflowu, který automaticky schvaluje reg
 | Celkový čas a dny docházky            | Workflow ověří registrace například oproti očekávanému počtu pracovních hodin za den. |                                                                                                                                                                                                                                                       |
 | Registrace deníku času a docházky | Workflow ověří každý typ registrace pro datum registrace.                           | Čas a docházka • Odchod • Příchodu • Absence • Přestávka • Přepínací kód • Projekt • Aktivita projektu • Výrobní úlohy (nepřímá aktivita) • Čekání před operací • Nastavení • Proces • Překrytí • Přeprava • Čekání po operaci • Zahájit asistenci • Ukončit asistenci |
 
- 
+
 
 ## <a name="transferring-approved-registrations"></a>Převedení schválených registrací
 Po schválení registrací je lze převést do pravidelné mzdové úlohy. Převedená registrace je zaúčtována v aktivitě nebo úloze, která se týká například výrobní zakázky nebo projektu. Mzdové transakce jsou generovány pro každého podle registrací.  

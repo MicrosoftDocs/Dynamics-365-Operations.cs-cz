@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-quality-orders"></a>Nastavení objednávek kvality
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje povolení procesu řízení kvality, kde musí být příchozí zásoby okamžitě po registraci po doručení prohlédnuty. Postup obvykle provádí správce kvality. Proces zahrnuje vytvoření skupiny kvality, definování položek, které budou testovány, a sestavení skupiny testů, které mají být provedeny u položek ve skupině kvality. Tohoto průvodce můžete spustit s ukázkovými daty společnosti USMF.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="vendor-rebates"></a>Rabaty dodavatele
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Rabaty dodavatele pomáhají společnostem lépe spravovat programy rabatů dodavatelů díky automatizaci úloh potřebných ke správě, sledování a uplatňování nároků na získané rabatů.
 

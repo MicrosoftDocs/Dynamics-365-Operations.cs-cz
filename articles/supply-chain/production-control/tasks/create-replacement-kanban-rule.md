@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-replacement-kanban-rule"></a>Vytvoření nahrazujícího kanbanového pravidla
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup se zaměřuje na nahrazení existujícího kanbanového pravidla za nové kanbanové pravidlo k určitému datu. To je užitečné, pokud je potřeba změny v pravidlech výrobního toku nebo doplnění spravovat nebo naplánovat. Použitá ukázková data společnosti USMF k vytvoření postupu. Tento postup je určen pro technologa výrobních procesů nebo správce hodnotového proudu, kteří připravují výrobu změněného výrobního toku nebo nového pravidla doplnění. Tato úloha nahradí kanbanové pravidlo 000022 za nové pravidlo a zvýší maximální množství z 48 na 100 pro nové pravidlo.
 

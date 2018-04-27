@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="price-simulation"></a>Simulace ceny
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek obsahuje informace o simulaci cen pro nabídky. Simulace cen umožňuje vyhodnotit vliv srážek na budoucí prodejní ceny v průběhu nabídky, a to před potvrzením konkrétní ceny.
 

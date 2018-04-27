@@ -16,16 +16,16 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: bd26ac6fd8376fd42467c7a3d2ecd2ec035a4479
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fc47f6cd9cfe4a850e0959bf89da086ca82f3b69
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="data-import-and-export-jobs"></a>Úlohy importu a exportu dat
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 K vytvoření a správě úloh importu a exportu dat v aplikaci Microsoft Dynamics 365 for Finance and Operations používáte pracovní prostor **Správa dat**. Ve výchozím nastavení proces importu a exportu dat vytvoří tabulky fázování pro každou entitu v cílové databázi. Tabulky fázování umožňují ověřit, vyčistit anebo převést dat předtím, než budou přesunuta.
 
@@ -64,13 +64,15 @@ Doporučujeme, abyste si dali načas s výběrem vhodné kategorie projektu pro 
 Můžete přidat konkrétní entity do úlohy importu nebo exportu, nebo zvolit použití šablony. Šablony naplní úlohu seznamem entit. Možnost **Použít šablonu** je k dispozici po zadání názvu úlohy a uložení úlohy.
 
 ### <a name="set-the-data-format-for-the-job"></a>Nastavení formátu dat pro úlohu
-Vyberete-li entitu, je nutné vybrat formát dat, která budou exportována nebo importována. Formáty definujete pomocí dlaždice **Nastavení datových zdrojů**. Mnoho společností vychází z formátů, které jsou součástí výchozího nastavení v sadě ukázkových dat. Zde je uveden seznam některých formátů:
+Vyberete-li entitu, je nutné vybrat formát dat, která budou exportována nebo importována. Formáty definujete pomocí dlaždice **Nastavení datových zdrojů**. Formát zdrojových dat je kombinací **typ**, **formát**, **oddělovač řádků** a **oddělovač sloupců**. Existují také další atributy, ale ty jsou klíčové pro porozumění. V následující tabulce jsou uvedeny platné kombinace.
 
-- AX (pro data, která je třeba importovat nebo exportovat ve stejném formátu, který se používá pro aplikaci Microsoft Dynamics 365 for Finance and Operations)
-- ColonSeparated
-- CSV
-- Excel
-- Balík
+| **Formát souboru**        | **Oddělovač řádků/sloupců**                   | **Styl XML**             |
+|------------------------|--------------------------------------------|---------------------------|
+| Excel                  | Excel                                      | \-Není k dispozici-                     |
+| XML                    | \-Není k dispozici-                                      | XML-Element XML-Attribute |
+| Oddělené, Pevná šířka | Čárka, středník, tabulátor, svislá čára, dvojtečka | \-Není k dispozici-                     |
+
+
 
 ### <a name="sequence-the-entities"></a>Seřazení entit
 Entity lze seřadit v šabloně dat nebo v úloze importu a exportu. Při spuštění úlohy, která obsahuje více než jednu entitu dat, se musíte ujistit, že jsou entity správně seřazeny. Entity seřazujete především proto, abyste mohli adresovat všechny funkční závislosti mezi entitami. Pokud nemají entity žádnou funkční závislost, lze je naplánovat pro paralelní import nebo export.

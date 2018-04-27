@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="attributes-attribute-groups-and-their-associations-with-various-retail-entities-in-finance-and-operations"></a>Atributy, skupiny atributů a jejich přidružení k různým maloobchodním entitám v aplikaci Finance and Operations
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 *Atributy* poskytují způsob k dalšímu popisu produktu a jeho vlastností prostřednictvím uživatelem definovaných polí (jako například **Velikost paměti**, **Kapacita pevného disku**, **Je kompatibilní se standardem Energy Star** atd). V aplikaci Microsoft Dynamics 365 for Finance and Operations lze atributy přidružit k různým maloobchodním entitám, jako jsou kategorie produktů a maloobchodní sítě, a lze jim nastavit výchozí hodnoty. Produkty pak dědí atributy a výchozí hodnoty při přidružení ke kategorii produktu nebo maloobchodní síti. Výchozí hodnoty lze přepsat na úrovni jednotlivých produktů, na úrovni maloobchodní sítě nebo v maloobchodním katalogu.
  
@@ -227,13 +227,13 @@ Výchozí hodnoty atributů lze přepsat na úrovni produktu pro jednotlivé vý
 5. Na pevné záložce **Produkty** vyberte požadovaný produkt a poté vyberte **Atributy** nad mřížkou produktu.
 6. Na následujících pevných záložkách aktualizujte hodnoty požadovaných atributů:
 
-    - Médium sdíleného produktu
-    - Sdílené atributy produktu
-    - Médium kanálu
-    - Atributy produktu kanálu
+   - Médium sdíleného produktu
+   - Sdílené atributy produktu
+   - Médium kanálu
+   - Atributy produktu kanálu
 
-    > [!NOTE]
-    > Pokud jsou vytvořeny sdílené atributy produktu a sdílená média produktu v aplikaci Finance and Operations, vztahují se na všechny maloobchodní produkty.
+     > [!NOTE]
+     > Pokud jsou vytvořeny sdílené atributy produktu a sdílená média produktu v aplikaci Finance and Operations, vztahují se na všechny maloobchodní produkty.
 
 ![Skupiny atributu produktu katalogu](media/CatalogProdAttrValues.png)
 
@@ -249,11 +249,11 @@ Výchozí hodnoty atributů lze přepsat na úrovni produktu pro jednotlivé vý
 
 5. Na následujících pevných záložkách aktualizujte hodnoty požadovaných atributů:
 
-    - Médium sdíleného produktu
-    - Sdílené atributy produktu
-    - Médium kanálu
-    - Atributy produktu kanálu
+   - Médium sdíleného produktu
+   - Sdílené atributy produktu
+   - Médium kanálu
+   - Atributy produktu kanálu
 
-    > [!NOTE]
-    > Pokud jsou vytvořeny sdílené atributy produktu a sdílená média produktu v aplikaci Finance and Operations, vztahují se na všechny maloobchodní produkty.
+     > [!NOTE]
+     > Pokud jsou vytvořeny sdílené atributy produktu a sdílená média produktu v aplikaci Finance and Operations, vztahují se na všechny maloobchodní produkty.
 

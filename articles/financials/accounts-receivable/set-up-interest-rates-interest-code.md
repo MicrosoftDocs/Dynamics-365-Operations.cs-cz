@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7ae0bfdc157a7e2e5b9f871dae487a6f85e889b9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c0e80bae4716d2b12f515f38d3b641de24680571
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Nastavení úrokových sazeb pro kód úroku
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kódy úroků obsahují nastavení, která určují, kdy bude placen úrok a jak se vypočítá na účtech po splatnosti.
 
@@ -47,17 +46,17 @@ Při použití kódu úroku, který se používá k výpočtu úroku, je pro ka�
 ## <a name="interest-rates-based-on-a-percentage"></a>Úrokové sazby podle procent
 Můžete nastavit úrokové sazby pro výpočet zadané procentní hodnoty.
 
--   Částka úroku platí pro všechny měny.
--   Volitelně lze zadat omezení částky úroku.
--   Na stránce **Nastavení kódů úroků** je v poli **Vypočítat úrok podle** zvolena možnost **Procento**.
+- Částka úroku platí pro všechny měny.
+- Volitelně lze zadat omezení částky úroku.
+- Na stránce <strong>Nastavení kódů úroků**</strong> je v poli <strong>**Vypočítat úrok podle</strong> zvolena možnost <strong>Procento</strong>.
 
 Pokud chcete například nastavit kód úroku, který stanoví 5% úrok po uplynutí každých dvou měsíců, kdy je faktura po splatnosti, zadejte do pole **Vypočítat úroky jednou za** hodnotu 2 a vyberte možnost **Měsíc**.
 
 ## <a name="interest-rates-based-on-amounts"></a>Úrokové sazby podle částek
 Můžete nastavit úrokové sazby pro výpočet určité částky podle měny.
--   Částka úroku se zadává pro každou měnu v kódu úroku.
--   Volitelně lze zadat omezení částky úroku.
--   Na stránce **Nastavení kódů úroků** je v poli **Vypočítat úrok podle** zvolena možnost **Částka **.
+- Částka úroku se zadává pro každou měnu v kódu úroku.
+- Volitelně lze zadat omezení částky úroku.
+- Na stránce <strong>Nastavení kódů úroků** je v poli** Vypočítat úrok podle</strong> zvolena možnost <strong>Částka</strong>.
 
 Pokud chcete například nastavit kód úroku, který stanoví úrok 25,00 po uplynutí každých 20 dnů, kdy je faktura po splatnosti, zadejte do pole **Vypočítat úroky jednou za** hodnotu 20 a vyberte možnost **Den**.
 
@@ -84,7 +83,7 @@ Takto nastavíte rozsah informací.
 | 1,001          | 2                  |
 | 5,001          | 3                  |
 
- 
+
 ## <a name="example-2-interest-by-range--days"></a>Příklad 2: Úrok podle rozsahu = dny
 --------------------------------------------------
 
@@ -105,7 +104,7 @@ Takto nastavíte rozsah informací.
 | 61             | 15                 |
 | 91             | 20                 |
 
- 
+
 ## <a name="example-3-interest-by-range--months"></a>Příklad 3: Úrok podle rozsahu = měsíce
 ----------------------------------------------------
 

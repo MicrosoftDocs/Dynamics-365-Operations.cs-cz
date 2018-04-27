@@ -3,7 +3,7 @@ title: "Zastaralé funkce"
 description: "Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění."
 author: sericks007
 manager: AnnBe
-ms.date: 02/05/2018
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 0618d71fdb4b29bfdacd6b9e1a8ed47e03abe00d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e629673c3a923ec74809e276ec39464bfacda124
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="removed-or-deprecated-features"></a>Odstraněné nebo zastaralé funkce
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje funkce, které byly odebrány z aplikace Microsoft Dynamics 365 for Finance and Operations, nebo které jsou již zastaralé.
 
@@ -37,7 +37,10 @@ Toto téma popisuje funkce, které byly odebrány z aplikace Microsoft Dynamics
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
 > [!Note]
-> Počínaje vydáním Dynamics 365 for Finance and Operations, Enterprise Edition z července 2017 s aktualizací platform update 8 se uvádí typ nasazení pro každou odstraněnou nebo zastaralou funkci. Všechny předchozí verze uvedené v tomto tématu podporovaly cloudové nasazení.
+> Počínaje vydáním Dynamics 365 for Finance and Operations z července 2017 s aktualizací platform update 8 se uvádí typ nasazení pro každou odstraněnou nebo zastaralou funkci. Všechny předchozí verze uvedené v tomto tématu podporovaly cloudové nasazení.
+
+## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 a aktualizací platform update 15
+V této verzi nebyly odebrány ani odepsány žádné funkce. Aktualizace platformy 15 je kumulativní a obsahuje nové a změněné funkce aktualizace platformy 13, aktualizace platformy 14 a aktualizace platformy 15.
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 a aktualizací platform update 12
 
@@ -1033,10 +1036,11 @@ Aplikace pro tablety Windows 8 poskytovala funkci pro zadání a schválení vý
 
 ### <a name="x-financial-statements"></a>Finanční výkazy X++
 
-|   |  |
-|------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Tato funkce byla nahrazena jinou funkcí.                                    |
-| **Nahrazeno jinou funkcí?**   | Management Reporter (v aktuální verzi aplikace Dynamics AX označena jako **Finanční výkaznictví**) |
-| **Ovlivněné oblasti produktu**         | Hlavní kniha                                                                              |
-| **Stav**                         | Odstraněno od verze Dynamics AX 2012.                                                              |
+|                                                 |                                                                                                          |
+|-------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| <strong>Důvod pro zrušení/odstranění</strong> |                         Tato funkce byla nahrazena jinou funkcí.                         |
+|  <strong>Nahrazeno jinou funkcí?</strong>  | Management Reporter (v aktuální verzi aplikace Dynamics AX označena jako <strong>Finanční výkaznictví</strong>) |
+|     <strong>Ovlivněné oblasti produktu</strong>     |                                              Hlavní kniha                                              |
+|             <strong>Stav</strong>             |                                      Odstraněno od verze Dynamics AX 2012.                                      |
+
 

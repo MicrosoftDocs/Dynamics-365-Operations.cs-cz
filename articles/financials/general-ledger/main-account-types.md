@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="main-account-types"></a>Typy hlavního účtu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Typy hlavních účtů určují způsob použití hlavního účtu v účtové osnově.
 

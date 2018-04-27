@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="submit-and-approve-project-budget-revisions"></a>Odesílání a schvalování revizí projektových rozpočtů
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup poskytuje informace o revizi projektového rozpočtu. Rozpočet projektu lze zrevidovat opakovaně podle potřeby, ale nezobrazí se množství jednotlivých revizí, pokud byl rozpočet upravován více než jednou. 
 

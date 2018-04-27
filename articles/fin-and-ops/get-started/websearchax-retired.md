@@ -27,7 +27,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="websearchax-retired"></a>WebSearchAX vyřazeno
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Museli jsme vyřadit stránku WebSearchAX. Doporučujeme použít vyhledání na webu z vašeho oblíbeného vyhledávače pro její nahrazení.  Například: 
 

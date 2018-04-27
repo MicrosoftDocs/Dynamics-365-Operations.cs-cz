@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-and-associate-a-device"></a> Vytvoření a přidružení zařízení
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Tato procedura vás provede vytvořením nového zařízení a jeho přidružením k registrační pokladně. Předpokládá se, že registrační pokladna již je vytvořena.  Tento úkol používá v ukázkových datech společnost USRT. Tento úkol je určen pro role Správci, Odborník IT nebo IT pro maloobchod a Manažer obchodu.
 

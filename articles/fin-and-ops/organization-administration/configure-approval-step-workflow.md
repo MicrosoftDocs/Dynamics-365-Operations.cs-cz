@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-step-in-a-workflow"></a>Konfigurace schvalovacího kroku ve workflowu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma vysvětluje, jak nakonfigurovat vlastnosti schvalovacího kroku.
 
@@ -145,9 +144,9 @@ Pomocí následujícího postupu určíte, komu má být schvalovací krok při�
     Pokud uživatel u dokumentu neprovede akci v přiděleném čase, dokument bude v prodlení. Dokument v prodlení je eskalován na základě možností vybraných v oblasti stránky **Eskalace**.
 4.  Jestliže přiřadíte schvalovací krok více uživatelům nebo skupině uživatelů na kartě **Zásada dokončení**, vyberte jednu z následujících možností:
     -   **Jednotlivý schvalovatel** – akce použitá pro dokument je určena první reagující osobou. Například Sam odeslal vyúčtování výdajů ve výši 15 000 USD. Vyúčtování výdajů je aktuálně přiřazeno uživatelům Sue, Jo a Bill. Pokud je Sue první osobou reagující na dokument, je akce, kterou provede, použita pro dokument. Jestliže ho Sue odmítne, je dokument zamítnut a odeslán zpět Samovi. Jakmile Sue dokument schválí, je odeslán Anně ke schválení. 
-    
+
     ![Workflow se schvalovacím procesem](./media/workflow_multipleusersinstep.gif)
-    
+
     -   **Většina schvalovatelů** – akce použitá pro dokument je určena, když reaguje většina schvalujících. Například Sam odeslal vyúčtování výdajů ve výši 15 000 USD. Vyúčtování výdajů je aktuálně přiřazeno uživatelům Sue, Jo a Bill. Akci použitou pro dokument určují první dva schvalující, kteří reagují, tedy Sue a Jo.
         -   Jestliže Sue dokument schválí a Jo ho zamítne, je dokument zamítnut a odeslán zpět Samovi.
         -   Jestliže Sue i Jo dokument schválí, je dokument odeslán Anně ke schválení.

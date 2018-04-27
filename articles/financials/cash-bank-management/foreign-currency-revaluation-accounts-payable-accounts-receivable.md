@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Přecenění cizí měny pro závazky a pohledávky
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Teoretická hodnota (účetní hodnota) otevřených transakcí v zahraničních měnách se průběžně liší z důvodu fluktuací směnných kurzů. Tento článek poskytuje informace o procesu přecenění cizí měny, kterého lze využít pro aktualizaci hodnoty otevřených transakcí v modulu Závazky a pohledávky. 
 

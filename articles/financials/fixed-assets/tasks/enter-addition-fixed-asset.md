@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-an-addition-to-a-fixed-asset"></a>Zadání příslušenství dlouhodobého majetku
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje přidání příslušenství k existujícímu dlouhodobému majetku. Účel příslušenství k dlouhodobému majetku je sledování příslušenství, údržby nebo vylepšení majetku, a je pouze informativní. Veškeré změny hodnot nebo životnosti dlouhodobého majetku je nutné provést samostatně.   
 

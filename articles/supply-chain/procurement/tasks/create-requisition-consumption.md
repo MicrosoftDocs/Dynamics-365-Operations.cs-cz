@@ -24,7 +24,7 @@ ms.lasthandoff: 11/20/2017
 ---
 # <a name="create-a-requisition-for-consumption"></a>Vytvoření žádanky pro spotřebu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura vás provede procesem vytvoření žádanky. Ukazuje různé způsoby, jak vyhledávat produkty v zásobovacím katalogu a jak přidat produkt, který není ve vašem katalogu. Před zahájením tohoto postupu je nutné mít nastavenou zásadu nákupu s výchozím typem žádanky Spotřeba. Tento proces můžete projít pomocí ukázkových dat společnosti USMF nebo pomocí vlastních dat. Postup můžete provést pouze pomocí uživatelského profilu, který je nastavený jako pracovník.  Tento úkol běžně provádí zaměstnanec. Role zabezpečení zaměstnance vám umožní provádět úkoly a pokud používáte data USMF, můžete se přihlásit jako Alicia.
 

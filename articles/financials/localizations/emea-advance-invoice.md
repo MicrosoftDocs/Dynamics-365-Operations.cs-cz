@@ -18,17 +18,16 @@ ms.author: epopov
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
-ms.openlocfilehash: 3c284b8c67121b39837bef827dea6f24da2a0f4b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 97be3eee9ebb99af33e3153fe7726ed5b086b03c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advance-invoices-for-eastern-europe"></a>Zálohové faktury pro východní Evropu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Zálohová faktura je dokument, který vytvoříte pro odběratele nebo dodavatele. Zálohová faktura uvádí částku, která musí být předplacena na prodejní objednávce. Toto téma obsahuje informace o zálohových fakturách pro východní Evropu.
 
@@ -47,19 +46,20 @@ Polské společnosti přijímající zálohy musí vytvořit fakturu pro platbu 
 ## <a name="set-up-accounts-receivable-for-advance-invoices"></a>Nastavení parametrů modulu Pohledávky pro zálohové faktury
 Na stránce **Parametry závazků** na kartě **Aktualizace** určete následující parametry.
 
-|Pevná záložka|Parametr|popis|
-|------|----------|------------|
-|Zálohová faktura  |Účetní profil|Vyberte účetní profil, který chcete používat pro zálohovou fakturaci (pouze Polsko). **Důležité:** Pro Českou republiku a Maďarsko nejsou zálohové faktury považovány za účetní nebo daňové doklady a nejsou zaúčtovány do hlavní knihy. Proto byste měli toto pole pro tyto země ponechat prázdné, aby se zabránilo zaúčtování zálohových faktur do hlavní knihy.
-|
-|Zálohová faktura  |Vypnuto|protiúčet        |Vyberte výchozí protiúčet pro použití s rozšířenou fakturací.|
-|Zálohová faktura  |Skupina prodejní daně        |Vyberte skupinu DPH, která má být použita, když se pro zálohovou fakturaci vypočítává DPH:|
-|Zálohová faktura  |Storno jako oprava |Toto políčko zaškrtněte, pokud storno zálohové faktury má být považováno za opravu.|
-|Zálohová faktura  |Stornovat k datu faktury|Zaškrtnutím tohoto políčka zajistíte stornování zálohy k datu zaúčtování faktury.|
-|Platba          |Více dat zálohy|Vyberte některou z následujících možností: **přijmout**, **upozornění**, nebo **chyba**.|
-|Platba          |Neshoda data          |Vyberte některou z následujících možností: **přijmout**, **upozornění**, nebo **chyba**.|
-|Platba          |Neshoda částky        |Vyberte některou z následujících možností: **přijmout**, **upozornění**, nebo **chyba**.|
-|Platba          |Propojení na zaúčtovanou zálohovou fakturu|Vyberte některou z následujících možností: **přijmout**, **upozornění**, nebo **chyba**.|
-|Platba          |(CZE), (POL) Zpracování záloh|Vyberte **Upřesnit**.|
+
+|     Pevná záložka     |             Parametr             |                                                                                                                                                                                           popis                                                                                                                                                                                           |
+|-----------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Zálohová faktura |          Účetní profil          | Vyberte účetní profil, který chcete používat pro zálohovou fakturaci (pouze Polsko). <strong>Důležité:</strong> Pro Českou republiku a Maďarsko nejsou zálohové faktury považovány za účetní nebo daňové doklady a nejsou zaúčtovány do hlavní knihy. Proto byste měli toto pole pro tyto země ponechat prázdné, aby se zabránilo zaúčtování zálohových faktur do hlavní knihy. |
+|                 |                                   |                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Zálohová faktura |                Vypnuto                |                                                                                                                                                                                           protiúčet                                                                                                                                                                                           |
+| Zálohová faktura |          Skupina prodejní daně          |                                                                                                                                                      Vyberte skupinu DPH, která má být použita, když se pro zálohovou fakturaci vypočítává DPH:                                                                                                                                                      |
+| Zálohová faktura |      Storno jako oprava       |                                                                                                                                                 Toto políčko zaškrtněte, pokud storno zálohové faktury má být považováno za opravu.                                                                                                                                                  |
+| Zálohová faktura |      Stornovat k datu faktury      |                                                                                                                                                     Zaškrtnutím tohoto políčka zajistíte stornování zálohy k datu zaúčtování faktury.                                                                                                                                                     |
+|     Platba     |     Více dat zálohy     |                                                                                                                                        Vyberte některou z následujících možností: <strong>přijmout</strong>, <strong>upozornění</strong>, nebo <strong>chyba</strong>.                                                                                                                                         |
+|     Platba     |           Neshoda data           |                                                                                                                                        Vyberte některou z následujících možností: <strong>přijmout</strong>, <strong>upozornění</strong>, nebo <strong>chyba</strong>.                                                                                                                                         |
+|     Platba     |          Neshoda částky          |                                                                                                                                        Vyberte některou z následujících možností: <strong>přijmout</strong>, <strong>upozornění</strong>, nebo <strong>chyba</strong>.                                                                                                                                         |
+|     Platba     | Propojení na zaúčtovanou zálohovou fakturu |                                                                                                                                        Vyberte některou z následujících možností: <strong>přijmout</strong>, <strong>upozornění</strong>, nebo <strong>chyba</strong>.                                                                                                                                         |
+|     Platba     | (CZE), (POL) Zpracování záloh  |                                                                                                                                                                                Vyberte <strong>Upřesnit</strong>.                                                                                                                                                                                |
 
 Na kartě **Číselné řady** nastavte číselné řady pro následující reference:
 

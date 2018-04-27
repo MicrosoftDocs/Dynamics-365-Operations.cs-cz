@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="inventory-on-hand-mobile-workspace"></a>Mobilní pracovní prostor zásob na skladě
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma obsahuje informace o mobilním pracovním prostoru **Zásoby na skladě**. Díky tomuto pracovnímu prostor získáte přehled o rezervovaných a dostupných zásobách, a to kdykoli a kdekoli.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="import-users-in-bulk"></a>Hromadné importování uživatelů
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup mohou použít správci systému pro import velkého počtu uživatelů ze služby Active Directory Azure.
 

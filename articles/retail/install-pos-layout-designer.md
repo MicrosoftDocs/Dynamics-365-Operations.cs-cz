@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="install-the-retail-pos-layout-designer"></a>Instalace návrháře rozložení Retail POS
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Můžete použít předdefinovaného návrháře k navržení jiných rozložení Retail Modern POS (MPOS) a Cloud POS v režimu rozložení šířku nebo výšku, pro obchody, registrační pokladny, pokladníky a manažery.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-cost-accounting-ledger"></a>Vytvoření hlavní knihy nákladového účetnictví
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Hlavní kniha nákladového účetnictví představuje celkovou jednotku výkaznictví. Je definována dimenzí nákladového prvku, statistickou dimenzí, fiskálním kalendářem a měnou. Nerozlišuje princip právnických osob. Právnická osoba a její data mohou být přidružena více hlavním knihám nákladového účetnictví. Tento záznam používá v ukázkových datech společnost USP2.
 

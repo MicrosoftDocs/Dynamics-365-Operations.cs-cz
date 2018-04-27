@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="hire-a-candidate-through-recruiting"></a>Přijetí kandidáta prostřednictvím náboru
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup umožňuje náborovým pracovníkům přijmout uchazeče, který podal přihlášku pomocí konkrétního náborového projektu. Pokud přijímáte uchazeče skrze náborový projekt, bude vytvořen nový záznam pracovníka a záznam uchazeče bude mít stav Zaměstnán. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup dokončíte tak, že přejděte na Lidské zdroje > Nábor > Přihlášky > Přihlášky 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-cost-entries-for-a-cost-object"></a>Zobrazení nákladových položek pro objekt nákladů
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje způsob zobrazení záznamů nákladů pro objekt nákladů. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup je určen pro kontrolora nákladů.
 

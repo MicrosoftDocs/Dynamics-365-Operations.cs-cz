@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Nastavení ověření párování faktur závazků
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento záznam používá ukázkovou společnost USMF. Manažer závazků nebo osoba s rolí vedoucího účetnictví by prováděl tyto kroky. Před prvním krokem ověřte, že je vybraný konfigurační klíč Párování faktur. Pokud vaše právnická osoba sleduje výdaje, jako jsou například dopravné, pomocí nákladů, ujistěte se, že je vybrán konfigurační klíč Poplatky.  Párování faktur závazků je procesem párování informací na faktuře dodavatele, nákupní objednávce a příjemce produktu. Rozdíly mezi těmito dokumenty jsou označovány jako odlišnosti v párování. Odlišnosti v párování se porovnávají s odchylkami, které jsou zadány. Pokud odchylka párování překračuje procento nebo částku tolerance, zobrazí se odpovídající ikona ve formuláři Faktura dodavatele a ve formuláři Podrobnosti o párování faktur.
 

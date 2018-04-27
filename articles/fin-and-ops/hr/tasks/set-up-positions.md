@@ -16,15 +16,15 @@ ms.author: dkrame
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c902f532e189753a375d4b48edd9ef0b6d74020e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 110dde293fea31f82fb4b2b1c54bf96d5baa04b3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-positions"></a>Nastavit pozice
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Pozice jsou důležitým prvkem nižší úrovně hierarchie organizace. Pozice je individuální instance práce. Například pozice „Manažer prodeje (východ)“ je jednou z pozic, která je přidružena k úloze „Manažer prodeje“. Pozice se nachází v oddělení a může mít pouze jednoho pracovníka, který je k ní přidružen. V rámci tohoto úkolu vás provedeme kroky potřebnými pro vytvoření pozice. Tato úloha je určena pro odborníka na lidské zdroje.
 

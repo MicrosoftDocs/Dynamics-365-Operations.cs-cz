@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="depreciation-suspension-holidays"></a>Přerušení odpisování (svátky)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma obsahuje informace o přerušení nebo odložení odpisů pro Českou republiku.
 

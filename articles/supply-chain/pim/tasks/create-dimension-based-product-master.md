@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-dimension-based-product-master"></a>Vytvoření základního produktu založeného na dimenzích
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak vytvořit nový základní produkt pomocí technologie konfigurace založené na dimenzích. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Jedná se o první postup z osmi, který vysvětluje vytvoření kombinací konfigurace založené na dimenzích.
 

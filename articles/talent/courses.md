@@ -28,8 +28,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="set-up-training-courses"></a>Nastavení školících kurzů
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Správci lidských zdrojů a vedoucí pracovníci mohou funkce kurzů používat ke správě informací o školeních nabízených pracovníkům.
 
@@ -81,15 +80,15 @@ V následující tabulce jsou uvedeny tři typy nastavení kurzů. Typy nastaven
 
 ## <a name="course-tasks"></a>Úkoly kurzu
 U každého kurzu můžete provést následující úlohy.
--   Registrovat účastníky
--   Nastavit uzávěrku registrace
--   Definovat minimální a maximální počet účastníků
--   Přiřadit místo konání kurzu a učebnu
--   Doporučit hotely účastníkům kurzu
--   Vytvořit popis kurzu, který je poté možné zveřejnit na portálu Samoobsluha pro zaměstnance
+- Registrovat účastníky
+- Nastavit uzávěrku registrace
+- Definovat minimální a maximální počet účastníků
+- Přiřadit místo konání kurzu a učebnu
+- Doporučit hotely účastníkům kurzu
+- Vytvořit popis kurzu, který je poté možné zveřejnit na portálu Samoobsluha pro zaměstnance
 
   >**Poznámka** Kurz lze odstranit pouze v případě, že do něj není nikdo zaregistrován. 
-    
+
 ## <a name="course-statuses"></a>Stavy kurzu
 V následující tabulce jsou uvedeny možné stavy kurzu a akce, které lze provádět, je-li kurz nachází ve specifickém stavu.
 

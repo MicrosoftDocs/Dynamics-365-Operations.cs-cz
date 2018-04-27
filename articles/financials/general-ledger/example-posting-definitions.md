@@ -19,17 +19,16 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1bbd9230219f11407bc7afbd59670c6287b77c02
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 10015952773ce0ae6ab36912df636919b572704d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="posting-definition-examples"></a>Příklady definice účtování
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek obsahuje příklady, které ukazují způsob použití definice zaúčtování břemen nákupních objednávek a přidělení rozpočtu.
 
@@ -53,11 +52,11 @@ Všechny transakce dokladu pro břemeno nákupní objednávky musí mít zůstat
 
 ### <a name="posting-definition--match-criteria"></a>Definice účtování – kritéria shody
 
-| Účetní struktura       | Číslo účtu shody | Priorita |
+| Účetní struktura       | Číslo účtu shody | Priorita  |
 |-------------------------|----------------------|----------|
 | Účetní struktura – zisky a ztráty | \*                   | 1        |
 
-* Prázdná hodnota v poli **Číslo účtu shody** znamená, že všechny odpovídající účty v definované účetní struktuře jsou součástí pravidel párování.
+<em>Prázdná hodnota v poli **Číslo účtu shody</em>* znamená, že všechny odpovídající účty v definované účetní struktuře jsou součástí pravidel párování.
 
 ### <a name="posting-definition--generated-entries"></a>Definice účtování – generované položky
 
@@ -94,11 +93,11 @@ Pokud jsou povoleny rozdělení příjmů rozpočtu a definice účtování, pol
 
 ### <a name="posting-definition--match-criteria"></a>Definice účtování – kritéria shody
 
-| Účetní struktura       | Číslo účtu shody | Priorita |
+| Účetní struktura       | Číslo účtu shody | Priorita  |
 |-------------------------|----------------------|----------|
 | Účetní struktura – zisky a ztráty | \*                   | 1        |
 
-* Prázdná hodnota v poli **Číslo účtu shody** znamená, že všechny odpovídající účty v definované účetní struktuře jsou součástí pravidel párování.
+<em>Prázdná hodnota v poli **Číslo účtu shody</em>* znamená, že všechny odpovídající účty v definované účetní struktuře jsou součástí pravidel párování.
 
 ### <a name="posting-definition--generated-entries"></a>Definice účtování – generované položky
 

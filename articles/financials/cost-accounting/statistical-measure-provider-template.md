@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Členy statistické dimenze a šablony poskytovatelů statistických měření
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Statistické dimenzí a jejich členy se používají pro registraci a kontrole nefinančních položek v nákladovém účetnictví. Členy statistické dimenze lze použít pro dva účely:
 

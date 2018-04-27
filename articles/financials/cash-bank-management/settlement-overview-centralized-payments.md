@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settlement-overview-for-centralized-payments"></a>Mezipodnikové účetnictví pro centralizované platby
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Tento způsob vylučuje nutnost zadávat stejné transakce do několika právnických osob a šetří čas tím, že zjednodušuje proces návrhů plateb, proces vyrovnání, úpravy otevřených a uzavřených transakcí u centralizovaných plateb. 
 

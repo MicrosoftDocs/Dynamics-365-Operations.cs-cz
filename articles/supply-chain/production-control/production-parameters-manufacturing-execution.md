@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 468227e40165fa37e9ce80d5f52ded8e9094e5d1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a0a28ba5072d55b8133f5458f75befa752a3dcdf
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-parameters-in-manufacturing-execution"></a>Parametry výroby v modulu Provádění výroby
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma obsahuje informace o nastavení parametrů výroby v modulu Provádění výroby.
 
@@ -69,17 +69,17 @@ Pro každou fázi můžete v poli **Automatická spotřeba kusovníku** vybrat j
 
 - **Princip vyprazdňování** – tato možnost se používá v kombinaci s možností definované v kusovníku v modulu **Výroba**. Klikněte na **Řízení výroby** &gt; **Společné** &gt; **výrobní zakázky** &gt; **Všechny výrobní zakázky**. Na stránce **Všechny výrobní zakázky** vyberte v seznamu výrobní zakázku a v podokně akcí klikněte na tlačítko **Kusovník**. Na stránce **Kusovník** na kartě **Nastavení** v poli **Princip vyprazdňování** vyberte některou z následujících možností:
 
-    - **Spustit**
-    - **Dokončit**
-    - **Ruční**
-    - Prázdné (žádná možnost není vybrána.)
-    - **K dispozici na skladě**
+  - **Spustit**
+  - **Dokončit**
+  - **Ruční**
+  - Prázdné (žádná možnost není vybrána.)
+  - **K dispozici na skladě**
 
     V modulu Provádění výroby, pokud je vybraný **Princip vyprazdňování** v poli **Automatická spotřeba Kusovníku** na kartě **Spustit**, jsou všechny materiály, které jsou nastaveny na kartě **Spustit** v kusovníku, odečteny ze skladu při zahájení operace. Možnost **K dispozici ve skladovém místě** se používá pro produkty, které jsou povoleny pro pokročilé skladové procesy. Pokud vyberete tento princip vyprazdňování, je materiál vyprázdněn po dokončení skladové práce pro vyskladnění surovin. Materiál je vyprázdněn také v případě, kdy je řádka kusovníku, která používá tento princip vyskladnění, uvolněn do skladu a materiál je dostupný ve vstupním místě výroby.
-    
+
     > [!NOTE]
     > Pokud je **Princip vyprazdňování** nastaven na kartě **Počáteční** v Provádění výroby, je nutné vybrat stejný princip buď na kartě **Operace** nebo na kartě **Ohlásit jako dokončené**. Tento požadavek umožňuje zajistit, že se odečtou materiály ze zásob u kusovníků, které používají **Dokončit** jako princip vyprazdňování na výrobní zakázce. Pokud není vybraný stejný princip vyprazdňování na kartě **Operace** nebo **Vykázat jako dokončené**, mohou být materiály odpočteny ze zásob dvakrát.
- 
+
 - **Vždy** – Pokud vyberete tuto možnost pro fázi, materiály jsou vždy odečteny ze zásob v této fázi. Například materiály pro výrobu jsou odečteny při zahájení výrobní zakázky. Toto nastavení vyžaduje, aby byla vybraná možnost **Nikdy** na kartě **Operace** a **Vykázat jako dokončené**. Tento požadavek umožňuje zabránit odečtení položky ze skladu dvakrát.
 - **Nikdy** – Pokud vyberete tuto možnost pro fázi, neproběhne v této fázi žádná spotřeba Kusovníku. Pokud například vyberete **Nikdy** na všech třech kartách (**Spustit**, **Operace** a **Vykázat jako dokončené**), musí být materiál ručně odečten ze skladu.
 
@@ -146,11 +146,13 @@ Na základě výběrů popsaných výše v této části jsou deníky výdejek z
 
 Když mají být materiály ručně odečteny ze skladu, můžete použít následující nastavení. V takovém případě se nezaúčtují deníky výdejek.
 
-| Karta                | Pole                          | Nastavení    |
-|--------------------|--------------------------------|------------|
-| Spuštění              | Aktualizovat zahájení on-line           | **Stav** |
-| Spuštění              | Automatická spotřeba kusovníku      | **Nikdy**  |
-| Operations         | Automatická spotřeba kusovníku      | **Nikdy**  |
-| Hlášení jako dokončené | Automatická spotřeba kusovníku      | **Nikdy**  |
-| Hlášení jako dokončené | Aktualizovat sestavu o dokončení on-line | **Stav** |
+
+|        Karta         |             Pole              |         Nastavení         |
+|--------------------|--------------------------------|-------------------------|
+|       Spuštění        |      Aktualizovat zahájení on-line      | <strong>Stav</strong> |
+|       Spuštění        |   Automatická spotřeba kusovníku    | <strong>Nikdy</strong>  |
+|     Operations     |   Automatická spotřeba kusovníku    | <strong>Nikdy</strong>  |
+| Hlášení jako dokončené |   Automatická spotřeba kusovníku    | <strong>Nikdy</strong>  |
+| Hlášení jako dokončené | Aktualizovat sestavu o dokončení on-line | <strong>Stav</strong> |
+
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accounts-payable-invoice-matching"></a>Párování faktur závazků
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Párování faktur závazků je procesem párování informací na faktuře dodavatele, nákupní objednávce a příjemce produktu.
 

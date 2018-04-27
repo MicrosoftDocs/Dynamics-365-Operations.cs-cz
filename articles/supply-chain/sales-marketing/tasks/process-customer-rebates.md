@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generování a zpracování rabatů odběratelů
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup ukazuje zpracování rabatů odběratele z generování nároku až do okamžiku jejich předání do pohledávek jako časově rozlišených položek. Provede vás konkrétním příkladem a vysvětlí vliv různých podmínek na řádcích rabatu na konečné částky, které budou připsány odběrateli. Před spuštěním průvodce je třeba použít ukázková data společnosti USMF a provést následující úkoly: (1) Na stránce Parametry pohledávek rozbalte kartu Ceny a potom kartu Podrobnosti o ceně a zkontrolujte, že je možnost Povolit podrobnosti o ceně nastavena na hodnotu Ano. (2) Na stránce Smlouvy o rabatu vyberte smlouvu o rabatu odběratele: USMF-000001. Pokud pole Stav schválení workflowu není nastaveno na Schváleno, proveďte schválení kliknutím na Ověření v podokně akcí.
 

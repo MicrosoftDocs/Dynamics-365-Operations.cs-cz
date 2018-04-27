@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="define-channel-specific-discounts"></a>Definovat slevy specifické pro kanál
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Maloobchodní prodejci často nastavují různé slevy v různých kanálech. Toto téma popisuje koncepty, které je nutné znát k vytvoření slevy pro konkrétní kanál. 
 
@@ -61,7 +60,7 @@ Na následujícím příkladu jsou znázorněny úkoly zahrnuté do nastavován�
 4.  Po vytvoření nové slevy  **Zpět do školy** je nutné kliknout na tlačítko **Cenové skupiny** v horní části stránky **Sleva**. Otevře se stránka **Skupiny slevových cen**. Poté klikněte na tlačítko **Nový** a vyberte cenovou skupinu **Houston-CS**.
 5.  Nyní můžete povolit slevu a zadat ji do kanálu.
 
- 
+
 
 <a name="see-also"></a>Viz také
 --------

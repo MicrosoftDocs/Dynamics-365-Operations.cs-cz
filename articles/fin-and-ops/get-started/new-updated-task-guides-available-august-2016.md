@@ -27,8 +27,7 @@ ms.lasthandoff: 11/06/2017
 
 # <a name="new-or-updated-task-guides-august-2016"></a>Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma obsahuje nové nebo aktualizované průvodce úkolem vydané pro knihovnu Microsoft APQC Unified Library (srpen 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics AX. Nebyly vydány žádné nové knihovny Začínáme.
 

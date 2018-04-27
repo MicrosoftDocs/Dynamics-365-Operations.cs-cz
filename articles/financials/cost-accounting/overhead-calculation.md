@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="overhead-calculation"></a>Výpočet režijních nákladů
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje typické procesy pro výpočet a přidělení režijních nákladů.
 

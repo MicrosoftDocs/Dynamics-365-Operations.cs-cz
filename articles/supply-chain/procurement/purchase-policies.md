@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchasing-policies"></a>Zásady nákupu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 V tomto článku jsou informace o zásadách nákupu. Zásady nákupu jsou soubor pravidel řídících proces nákupní žádanky. Zásady nákupu umožňují správcům zásobování implementovat strategie zásobování vytvořením struktury zásad, které jsou v souladu se strategickými požadavky organizace na nákupy.
 

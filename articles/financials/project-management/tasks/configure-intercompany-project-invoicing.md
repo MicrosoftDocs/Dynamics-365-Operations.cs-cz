@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-intercompany-project-invoicing"></a>Konfigurace fakturování mezipodnikového projektu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje nastavení fakturace projektu mezi dvěma společnostmi v rámci organizace. Tato úloha používá sadu dat USSI.
 

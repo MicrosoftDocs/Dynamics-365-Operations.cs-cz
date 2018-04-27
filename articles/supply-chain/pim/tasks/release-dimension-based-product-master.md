@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="release-a-dimension-based-product-master"></a>Uvolnění základního produktu založeného na dimenzích
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje uvolnění základního produktu, který bude použit pro konfigurace založené na dimenzích. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Nezbytným předpokladem je vytvoření základního produktu s technologii konfigurace založené na dimenzích. Jedná se o druhý postup z osmi, který vysvětluje vytvoření kombinací konfigurace založené na dimenzích.
 

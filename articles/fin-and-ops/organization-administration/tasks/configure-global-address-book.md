@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-the-global-address-book"></a>Konfigurace globálního adresáře
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup slouží k nastavení výchozích hodnot a zásad zabezpečení pro globální adresář. 
 

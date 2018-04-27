@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-management-home-page"></a>Domovská stránka Správy financí
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Toto téma obsahuje seznam témat nápovědy a další zdroje pro funkce správy financí v aplikaci Microsoft Dynamics 365 for Finance and Operations. 
 

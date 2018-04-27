@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-vendor-invoices"></a>Rozúčtování a položky dílčích hlavních knih deníku pro faktury dodavatele
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Rozúčtování slouží k definování, jak budou zaúčtovány částky, například jak budou výdaje, daně a náklady zaúčtovány na fakturách dodavatele. Každá částka, která musí být zaúčtována, když je dodavatelská faktura zapsána do deníku, bude mít jedno nebo více rozúčtování. 
 
@@ -231,7 +230,7 @@ Když zadáváte fakturu dodavatele, jednotlivé částky budou rozděleny násl
 </tbody>
 </table>
 
- 
+
 <a name="distributing-taxes"></a>Distribuce daní
 ------------------
 

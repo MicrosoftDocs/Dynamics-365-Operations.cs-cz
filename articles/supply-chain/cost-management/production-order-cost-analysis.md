@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-order-cost-analysis"></a>Analýza nákladů ve výrobní zakázce
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek obsahuje informace o analýze nákladů, kterou lze provést pro dokončené a aktuální výrobní zakázky. Můžete analyzovat odhadované náklady a skutečné náklady na stránce Kalkulace ceny nebo pomocí sestavy Odhad a výpočet nákladů. Můžete sledovat informace o odhadovaných a skutečných nákladech (a množství) jsou zobrazeny pro každou položku komponenty, operaci postupu a nepřímé náklady.
 

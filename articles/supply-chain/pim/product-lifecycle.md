@@ -29,15 +29,14 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="product-lifecycle-state"></a>Stav životního cyklu produktu 
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Stav životního cyklu produktu dokumentuje životní cyklus uvolněného produktu nebo varianty produktu. Stavy životního cyklu produktu definuje uživatel, obvykle manažer produktu nebo manažer hlavních dat produktu. Určité obchodní procesy, například hlavní plánování, mohou být ovlivněny konkrétním stavem životního cyklu.   
- 
+
 Uvolněný produkt nebo variantu produktu lze přidružit ke stavu životního cyklu produktu, který dokumentuje, v jakém stavu životního cyklu je momentálně určitý produktu nebo varianta. Přiřazením názvu stavu a popisu můžete definovat jakýkoliv počet stavů životního cyklu produktu. Můžete vybrat jeden stav životního cyklu jako výchozí stav pro nové uvolněné produkty. Uvolněné varianty produktu zdědí svůj stav životního cyklu produktu ze svého uvolněného hlavního produktu při jeho vytvoření. Při změně stavu životního cyklu uvolněného hlavního produktu můžete aktualizovat všechny existující varianty, které mají stejný původní stav.  
 
 ## <a name="create-a-new-product-lifecycle-state"></a>Vytvoření nového stavu životního cyklu produktu 
- 
+
 - Chcete-li vytvořit nový stav životního cyklu produktu, pusťte si nebo si přečtěte průvodce záznamem úloh **Vytvoření nového stavu životního cyklu produktu**. 
 
 -  Chcete-li vytvořit výchozí stav životního cyklu produktu, pusťte si nebo si přečtěte průvodce záznamem úloh **Vytvoření výchozího stavu životního cyklu produktu**.   
@@ -73,7 +72,7 @@ Podrobné informace o použití stavu životního cyklu produktu k vyloučení p
 
 > [!NOTE]
 > Z důvodu výkonu doporučujeme přidružit všechny zastaralé uvolněné produkty nebo varianty produktu, zejména při práci s opětovně nepoužitelnými variantami konfigurace produktu ke stavu životního cyklu produktu, který je deaktivován pro hlavní plánování.  
- 
+
 ## <a name="default-migration-import-and-export"></a>Výchozí migrace, export a import 
 
 Stavy životního cyklu produktu nejsou podporovány datovými entitami a stav životního cyklu nelze nastavit na proměnlivý stav prostřednictvím datových entit uvolněného produktu.
@@ -81,18 +80,18 @@ Stavy životního cyklu produktu nejsou podporovány datovými entitami a stav �
 -  Při migraci z předchozích vydání bude stav životního cyklu všech produktů a variant produktů prázdný.  
 -  Při importu uvolněných produktů pomocí datové entity se použije při vytvoření výchozí stav životního cyklu.  
 -  Při importu uvolněných variant produktu pomocí datové entity dat bude importován stav životního cyklu produktu hlavního uvolněného produktu.   
- 
+
 ## <a name="find-obsolete-products-and-products-variants"></a>Nalezení zastaralých produktů a variant produktů 
- 
+
 Můžete spustit simulační analýzu, abyste nalezli zastaralé uvolněné produkty nebo varianty produktu, a poté aktualizovat jejich stav životního cyklu produktu. Chcete-li nalézt zastaralé produkty, přehrajte si nebo si přečtěte průvodce záznamem úloh **Nalezení zastaralých variant produktu a přiřazení stavu životního cyklus produktu**. Tento průvodce záznamem ukazuje, jak nalézt zastaralé uvolněné produkty nebo varianty produktu a jak přiřadit stav životního cyklu produktu k zastaralým produktům. Také ukazuje, jak zobrazit výsledky simulace, a vyhodnocuje počet produktů a variant produktů, který bude přidružen k novému stavu životního cyklu produktu při spuštění aktualizace bez simulace.  
- 
+
 Spuštěním analýzy v režimu simulace se zobrazí produkty a varianty produktů identifikované jako zastaralé v konkrétním formuláři, kde je lze snadno zkontrolovat. Analýza vyhledá transakce a konkrétní hlavní data k určení produktů, které nemají žádnou poptávku v rámci proměnného období a žádná hlavní data, která mohou mít za následek poptávku. Nové uvolněné produkty v rámci proměnného období lze vyloučit z analýzy. Když simulace analýzy vrátí očekávaný výsledek, může uživatel spustit analýzu a nastavit nový stav životního cyklu produktu pro všechny produkty identifikované analýzou jako zastaralé.  
- 
+
 > [!NOTE]
 > Mějte na paměti, že všechny analýzy a aktualizace je třeba provést v rámci stejné právnické osoby.  
- 
+
 ## <a name="criteria-to-select-and-update-released-products-or-product-variants"></a>Kritéria pro výběr a aktualizaci uvolněných produktů nebo variant produktu 
- 
+
 Použijte následující kritéria pro výběr a aktualizaci uvolněných produktů nebo variant produktu: 
 
 -    Stav životního cyklu produktu nebo variant produktu musí být odlišný od nového požadovaného stavu. 

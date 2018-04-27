@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocation-bases"></a>Základy přidělení 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Základ přidělení je základem, na kterém nákladové účetnictví přiděluje režijní náklady. Základem přidělení může být množství, jako například použité strojohodiny, spotřebované kilowatthodiny (kWh) nebo obsazená plocha. Základy přidělení se většinou používají k přiřazení režijních nákladů do produkovaných zásob. Například IT oddělení přiděluje své výdaje podle počtu počítačů používaných každým oddělením.
 
@@ -424,9 +424,11 @@ Podívejme se podrobněji na vzorec pro CC003 (IT):
 
 Následuje příklad pravidla pro rozdělení nákladů, pokud je v něm jako základ přidělení přiřazen základ přidělení vzorce fixního poplatku za elektřinu.
 
-| Objekt nákladů |  popis  | Hodnota | Koeficient přidělení                |
-|-------------|----|-----------|----------------------------------|
-| CC001       | HR | 1,837.50  | (1 837,50 ÷ 18 162,50) × částka  |
-| CC002       | FI | 3,075.00  | (3 075,00 ÷ 18 162,50) × částka  |
-| CC003       | IT | 13,250.00 | (13 250 ÷ 18 162,50) × částka |
+
+| Objekt nákladů | popis | Hodnota |        Koeficient přidělení         |
+|-------------|-------------|-----------|----------------------------------|
+|    CC001    |     HR      | 1,837.50  | (1 837,50 ÷ 18 162,50) × částka  |
+|    CC002    |     FI      | 3,075.00  | (3 075,00 ÷ 18 162,50) × částka  |
+|    CC003    |     IT      | 13,250.00 | (13 250 ÷ 18 162,50) × částka |
+
 

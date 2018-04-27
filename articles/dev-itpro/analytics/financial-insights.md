@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 33a8bc78006ae9e7d5ca905a98886fd7af706604
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6679215a664ddf938a204196b00f3bc28bf65f8f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="financial-insights"></a>Finanční přehledy
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Finanční přehledy** používají Microsoft Power BI pro spojení finančních klíčových indikátorů výkonnosti, grafů a finančních výkazů. Power BI je integrováno v aplikaci Microsoft Dynamics 365 Finance and Operations.
 Záměrem **finančních přehledů** je sestava analýz. Osoby v rámci organizace mohou zobrazit, prohledávat, pochopit a jednat. 
@@ -107,8 +107,20 @@ Ačkoli **Finanční přehledy** obsahují finanční výkazy, není to náhrada
 
 Následující graf s porovnáním vám pomůže rozlišit tyto dvě možnosti:
 
-|                                         | **Finanční výkaznictví**                            | **Finanční přehledy**             | |-----------------------------------------|----------------------------------------------------|---------- -------------------------| | **Upravit výchozí sestavy**                | Ano                                                | Ne                                 | | **Vytvořit nové sestavy**                  | Ano                                                | Ne                                 | | **Tisk sestav**                       | Yes                                                | Ne                                 | | **Export do souboru  Excel**                     | Ano          | Omezený Exportuje nezpracovaná data do souboru Excel, nikoliv do formátované sestavy       | | **Podpora hierarchie vykazování/Organizační hierarchie**   | Ano                               | Ne                                 | | **Sestava dat dílčí hlavní knihy**       | Ano Omezeno pouze na dodavatele, odběratele    | Ano Dodavatelé, odběratelé, skupiny dodavatelů/odběratelů, adresy dodavatelů/odběratelů atd.  | | **Měna sestav**      | Ano Zúčtovací měna a překlad do měny sestav       | Ne Pouze zúčtovací měna      | | **Zabezpečení**                | Ano Odpovídá aplikaci Finance and Operations a zabezpečení organizačního stromu | Omezený Zobrazení sestav pro všechny společnosti (bez ohledu na zabezpečení aplikace) nebo pouze aktivní společnosti | | **Podpora různých účtových osnov a fiskálních roků** | Ano                   | Ne                   | | **Sestava externích dat**                              | Ne                   | Ne                                   | | **Podpora konsolidací**                               | Ano                          | Omezený Lze vykazovat sestavy více společností, ale používat pouze zúčtovací měnu                                     |
 
+|                                                                       |               <strong>Finanční výkaznictví</strong>                |                                      <strong>Finanční přehledy</strong>                                      |
+|-----------------------------------------------------------------------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+|                 <strong>Upravit výchozí sestavy</strong>                 |                                Ano                                |                                                      Žádný                                                       |
+|                  <strong>Vytvořit nové sestavy</strong>                  |                                Ano                                |                                                      Žádný                                                       |
+|                    <strong>Tisk sestav</strong>                     |                                Ano                                |                                                      Žádný                                                       |
+|                   <strong>Export do aplikace Excel</strong>                    |                                Ano                                |                           Omezené exporty nezpracovaných dat do aplikace Excel, ne formátovaná sestava                           |
+|  <strong>Podpora hierarchie vykazování/organizační hierarchie</strong>  |                                Ano                                |                                                      Žádný                                                       |
+|               <strong>Vykázat data dílčí knihy</strong>               |               Ano omezeno pouze na dodavatele, zákazníka                |                 Ano dodavatel, odběratel, skupiny odběratelů nebo dodavatelů, adresy odběratele nebo dodavatele, atd.                 |
+|                  <strong>Měna vykazování</strong>                  |    Ano Zúčtovací měna a Převést na měnu vykazování    |                                          Ne Pouze v zúčtovací měně                                          |
+|                       <strong>Zabezpečení</strong>                       | Ano odpovídá Finance and Operations a vykazování stromového zabezpečení | Omezené zobrazení sestav pro všechny společnosti (bez ohledu na zabezpečení Finance and Operations) nebo jen aktivní společnost |
+| <strong>Podporuje různé účtové osnovy a fiskální roky</strong> |                                Ano                                |                                                      Žádný                                                       |
+|               <strong>vykázat externí data</strong>                |                                Žádný                                 |                                                      Žádný                                                       |
+|                <strong>Podpora konsolidací</strong>                |                                Ano                                |                   Omezené Lze vykázat více společností, ale používat pouze zúčtovací měnu                   |
 
 Kromě uživatelského rozhraní v původní pracovním prostoru **Přehled CFO** jsou nyní k dispozici nové indikátory KPI, grafy a finanční výkazy. K dispozici jsou následující finanční výkazy:
 

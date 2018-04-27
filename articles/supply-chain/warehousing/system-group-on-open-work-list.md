@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6403fea54be4036f7a15c05b46f70d258d97c3e2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d9ca6b0d4a9909d419d6241a044336d7a02aea02
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="system-grouping-on-an-open-work-list"></a>Systémové seskupení na otevřeném seznamu úkolů
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Pomocí pole seskupení systému můžete filtrovat seznam otevřené práci bez nutnosti upravovat položku nabídky mobilního zařízení.
 V příslušných případech funguje seskupování systému k filtrování pracovního seznamu u jednoho pole záhlaví práce. Systémové seskupení nelze použít k filtrování na úrovni polí řádku.
@@ -37,9 +37,10 @@ Tyto kroky slouží k nastavení systémového seskupení v otevřeném seznamu 
 
 -   Z položky nabídky mobilního zařízení vyberte **Režim: Nepřímý** a **Kód aktivity: Zobrazit otevřený pracovní seznam**. K dispozici jsou následující možnosti. Tyto možnosti jsou požadovány pro systémové seskupení v otevřeném pracovním seznamu. 
 
-| Parametr        | popis   | 
-| ------------- | ------------- |
-| Povolit seskupení systému   | Umožňuje seskupení systému pro vybranou položku pracovního seznamu.| 
-| Pole systémového seskupení   | K dispozici pouze v případě, že je možnost **Povolit systémovou práci** nastavena na hodnotu **Ano**. Vyberte pole, které určuje způsob seskupení práce pro pracovníky. Pokud například vyberete pole **ShipmentId**, pracovník naskenuje ID dodávky pro seskupení práce výdeje. Všechna práce pro dodávku bude přiřazena pracovníkovi. Toto pole vyžaduje, abyste vytvořili položku nabídky pro stávající práci, která je seskupena podle systému. Pole **Popisek systémového seskupení** použijte k informování pracovníka, co kontrolovat. |
-| Popisek systémového seskupení   | K dispozici pouze v případě, že je možnost **Povolit systémovou práci** nastavena na hodnotu **Ano**. Zadejte informace pro pracovníka o tom, co kontrolovat při seskupení práce vyskladnění v aplikaci . Používáte-li například pole **ShipmentId** pro seskupení práce výdeje podle dodávky, měli byste do pole zadat ID dodávky. Toto pole vyžaduje, abyste vytvořili položku nabídky pro stávající práci, která je seskupena podle systému. Je nutné zaškrtnout pole definující seskupení v poli **systémové seskupení**.|
+|        Parametr         |                                                                                                                                                                                                                                                                         popis                                                                                                                                                                                                                                                                         |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Povolit seskupení systému |                                                                                                                                                                                                                                                 Umožňuje seskupení systému pro vybranou položku pracovního seznamu.                                                                                                                                                                                                                                                  |
+| Pole systémového seskupení | K dispozici pouze v případě, že je možnost <strong>Povolit systémovou práci</strong> nastavena na hodnotu <strong>Ano</strong>. Vyberte pole, které určuje způsob seskupení práce pro pracovníky. Pokud například vyberete pole <strong>ShipmentId</strong>, pracovník naskenuje ID dodávky pro seskupení práce výdeje. Všechna práce pro dodávku bude přiřazena pracovníkovi. Toto pole vyžaduje, abyste vytvořili položku nabídky pro stávající práci, která je seskupena podle systému. Pole <strong>Popisek systémového seskupení</strong> použijte k informování pracovníka, co kontrolovat. |
+| Popisek systémového seskupení |                       K dispozici pouze v případě, že je možnost <strong>Povolit systémovou práci</strong> nastavena na hodnotu <strong>Ano</strong>. Zadejte informace pro pracovníka o tom, co kontrolovat při seskupení práce vyskladnění v aplikaci . Používáte-li například pole <strong>ShipmentId</strong> pro seskupení práce výdeje podle dodávky, měli byste do pole zadat ID dodávky. Toto pole vyžaduje, abyste vytvořili položku nabídky pro stávající práci, která je seskupena podle systému. Je nutné zaškrtnout pole definující seskupení v poli <strong>systémové seskupení</strong>.                       |
+
 

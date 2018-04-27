@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-access-rights-for-a-cost-object-controller"></a>Konfigurace přístupových práv pro kontrolora objektu nákladů
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Pomocí tohoto postupu proveďte konfiguraci přístupových práv pro kontroloru objektu nákladů. Tento záznam používá v ukázkových datech společnost USP2.
 

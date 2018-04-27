@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="formulas-and-formula-versions"></a>Receptury a verze receptury
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Receptura definuje materiály, suroviny a výsledky konkrétního procesu v procesu výroby. Spolu s odpovídajícími postupy receptura definuje celý proces ve výrobním procesu. Receptury se používají k plánování a výrobě produktů ve výrobním procesu.
 

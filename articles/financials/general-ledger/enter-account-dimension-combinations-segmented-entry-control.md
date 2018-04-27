@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Zadání kombinací účtu a dimenze (řízení segmentového zadání)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje způsob zadání kombinací účtu a dimenzí nebo účtů hlavní knihy. Zadávání je obvykle označováno jako řízení segmentovaného zadávání.
 
@@ -112,7 +111,7 @@ V následující tabulce jsou popsány klávesové zkratky, které lze použít,
 </tbody>
 </table>
 
- 
+
 
 
 

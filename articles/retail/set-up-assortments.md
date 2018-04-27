@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-assortments"></a>Nastavení sortimentu
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Tento článek popisuje, co je sortiment, a vysvětluje, jak nastavit sortimenty v aplikaci Microsoft Dynamics 365 for Retail.
 

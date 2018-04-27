@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cash-discounts"></a>Platební slevy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Platební slevy jsou nastaveny a sdílené pro závazky a pohledávky.  Dostupná platební sleva může být definovaná na faktuře odběratele nebo dodavatele a proběhne, jestliže bude faktura zaplacena v rámci data platební slevy. 
 
@@ -65,6 +64,7 @@ Zúčtovací měna vaší právnické osoby je EUR a pro USD jsou zadány násle
 -   1. březen = 80
 
 Faktura na 1000 USD s podmínkou platební slevy 20D2% je zaúčtována 15. února. Částka v zúčtovací měně faktury činí 1100 EUR. Platba za 980 USD je vyrovnána s fakturou 1. března. Částka platební slevy je 20 USD. Částka v zúčtovací měně u dané platby činí 784 EUR. Částka v zúčtovací měně u platební slevy je vypočítána pomocí směnného kurzu ke dni 1. března: 20 \* 80 / 100 = 16 EUR.
+
 | **Poznámka**                                                                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Je-li na stránce Parametry pohledávek nebo na stránce Parametry závazků zvolena možnost Vypočítat platební slevy pro částečné platby, použije se směnný kurz platný k datu jednotlivých částečných plateb. |

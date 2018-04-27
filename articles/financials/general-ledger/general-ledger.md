@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="general-ledger"></a>Hlavní kniha 
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Pomocí hlavní knihy definujte a spravujte finanční záznamy právnické osoby. Hlavní kniha je registr položek na straně má dáti a dal. Tyto položky jsou klasifikovány pomoc účtů, které jsou uvedeny v účtové osnově. 
 

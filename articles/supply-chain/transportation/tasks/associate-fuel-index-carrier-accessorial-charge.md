@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a>Přidružení indexu paliva k dopravci jako nákladů na dodatečné služby
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento průvodce popisuje vytvoření přiřazení doplňkové služby, nákladů na dodatečné služby dopravce, hlavní dodatečné služby pro palivový příplatek a přidružení dopravce index paliva dopravce. Je nutné nastavit index paliva dopravce před spuštěním tohoto průvodce. K tomu můžete použít postup Nastavení indexu paliva dopravce. Tyto úlohy nastavení jsou obvykle prováděny manažerem logistiky. Jako ukázková data pro tento postup slouží data USMF.
 

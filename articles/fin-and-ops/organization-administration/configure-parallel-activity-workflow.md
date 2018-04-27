@@ -18,17 +18,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a913655b584aa23c2614903e6ede4f5826fec1fb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ec1c1d8abc49deb8ef16322370c59d40b01d344c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-a-parallel-activity-in-a-workflow"></a>Konfigurace paralelních aktivit ve workflowu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Pokud chcete nakonfigurovat paralelní aktivitu, postupujte následovně v editoru workflowu.
 
@@ -43,13 +42,15 @@ Pomocí následujících kroků zadejte název paralelní aktivity.
 
 ## <a name="configure-the-branches-of-a-parallel-activity"></a>Konfigurace větví paralelní aktivity
 Pomocí následujících kroků přidejte a nakonfigurujte větve této paralelní aktivity.
-1.  Poklikejte na paralelní aktivitu, aby se zobrazily její větve.
-2.  Pokud chcete přidat pobočku, přetáhněte prvek **Větev** z oblasti **Prvky workflowu** do oblasti vložení na plátně. Následující obrázek znázorňuje oblast vložení.![Oblast vložení](./media/workflow_insertionpoint.gif)
-    | **Poznámka**                                                                                                         |
-    |------------------------------------------------------------------------------------------------------------------|
-    | Pořadí větví není důležité, protože všechny větve paralelní aktivity běží současně. |
+1. Poklikejte na paralelní aktivitu, aby se zobrazily její větve.
+2. Pokud chcete přidat pobočku, přetáhněte prvek **Větev** z oblasti **Prvky workflowu** do oblasti vložení na plátně. Následující obrázek znázorňuje oblast vložení.![Oblast vložení](./media/workflow_insertionpoint.gif)
 
-3.  Informace o konfiguraci jednotlivých větví uvádí téma [Konfigurace paralelní větve](configure-parallel-branch-workflow.md).
+   |                                              <strong>Poznámka</strong>                                               |
+   |------------------------------------------------------------------------------------------------------------------|
+   | Pořadí větví není důležité, protože všechny větve paralelní aktivity běží současně. |
+
+
+3. Informace o konfiguraci jednotlivých větví uvádí téma [Konfigurace paralelní větve](configure-parallel-branch-workflow.md).
 
 
 

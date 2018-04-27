@@ -17,15 +17,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7265e119a8b59399db1fa35373a7b6aba52ba8e0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 325cf12345afcf531181f65a41d0e5262798c14f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="onboard-vendors"></a>Nábor dodavatelů
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+
 ---
 
 Nové dodavatele lze nabrat a registrovat jako dodavatele v aplikaci Microsoft Dynamics 365 for Finance and Operations na základě informací získaných od osoby, která zastupuje dodavatele.
@@ -164,13 +165,15 @@ Různé stavy požadavku na registraci potenciálního dodavatele poskytují př
 
 Pomocí akce **Odstranit** na požadavku registrace potenciálního dodavatele můžete vymazat a odebrat vytvořený řetězec záznamů a deaktivovat uživatelský účet. Výsledek akce **Odstranit** se liší podle stavu požadavku na registraci potenciálního dodavatele, jak je uvedeno v následující tabulce.
 
-| Stav                   | Popis stavu | Výsledek akce odstranění |
-|--------------------------|--------------------|-----------------------------------|
-| Nová                      | Pro požadavek nebyly provedeny žádné akce. | Požadavek na registraci potenciálního dodavatele je odstraněn. |
-| Vyžádáno uživatelem           | Při výběru **Pozvat uživatele** se stav změní na **Vyžádáno uživatelem** a vytvoří se požadavek na potenciálního uživatele, který je odeslán do workflowu požadavku uživatele. | S tímto stavem požadavek na registraci potenciálního dodavatele nelze odstranit, protože nebyl ukončen workflow požadavku uživatele. |
-| Pozvaný uživatel             | Workflow pro požadavek uživatele je schválen a uživatel je vytvořen. | Je vytvořen požadavek na deaktivaci uživatele a bude odstraněn požadavek na registraci potenciálního dodavatele. |
-| Probíhá registrace | Nový uživatel se přihlásil a spustil průvodce registrace dodavatele. | Je vytvořen požadavek na deaktivaci uživatele a požadavek na registraci potenciálního dodavatele a data, která byla zadána v průvodci registrace dodavatele, budou odstraněna. |
-| Požadavek dodavatele vytvořen   | Průvodce registrace dodavatele byl dokončen. | Je vytvořen požadavek na deaktivaci uživatele a požadavek na registraci potenciálního dodavatele a data, která byla zadána v průvodci registrace dodavatele, spolu s požadavkem na dodavatele, budou odstraněna.<blockquote>[!NOTE]<br>Nelze použít akci **Odstranit**, když je požadavek na dodavatele v procesu revize ve workflowu.</blockquote> |
-| Schváleno                 | Požadavek na dodavatele je schválen. | Požadavek na registraci potenciálního dodavatele a data, která byla zadána v průvodci registrace dodavatele, spolu s požadavkem na dodavatele, budou odstraněna. |
-| Odmítnuto                 | Požadavek na dodavatele je zamítnut. | Požadavek na registraci potenciálního dodavatele a data, která byla zadána v průvodci registrace dodavatele, spolu s požadavkem na dodavatele, budou odstraněna. |
+
+|          Stav          |                                                                                     Popis stavu                                                                                      |                                                                                                                                                            Výsledek akce odstranění                                                                                                                                                             |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|           Nová            |                                                                         Pro požadavek nebyly provedeny žádné akce.                                                                          |                                                                                                                                              Požadavek na registraci potenciálního dodavatele je odstraněn.                                                                                                                                               |
+|      Vyžádáno uživatelem      | Při výběru <strong>Pozvat uživatele</strong> se stav změní na <strong>Vyžádáno uživatelem</strong> a vytvoří se požadavek na potenciálního uživatele, který je odeslán do workflowu požadavku uživatele. |                                                                                                          S tímto stavem požadavek na registraci potenciálního dodavatele nelze odstranit, protože nebyl ukončen workflow požadavku uživatele.                                                                                                          |
+|       Pozvaný uživatel       |                                                               Workflow pro požadavek uživatele je schválen a uživatel je vytvořen.                                                               |                                                                                                                      Je vytvořen požadavek na deaktivaci uživatele a bude odstraněn požadavek na registraci potenciálního dodavatele.                                                                                                                      |
+| Probíhá registrace |                                                         Nový uživatel se přihlásil a spustil průvodce registrace dodavatele.                                                          |                                                                                     Je vytvořen požadavek na deaktivaci uživatele a požadavek na registraci potenciálního dodavatele a data, která byla zadána v průvodci registrace dodavatele, budou odstraněna.                                                                                      |
+|  Požadavek dodavatele vytvořen  |                                                                     Průvodce registrace dodavatele byl dokončen.                                                                      | Je vytvořen požadavek na deaktivaci uživatele a požadavek na registraci potenciálního dodavatele a data, která byla zadána v průvodci registrace dodavatele, spolu s požadavkem na dodavatele, budou odstraněna.<blockquote>[!NOTE]<br>Nelze použít akci <strong>Odstranit</strong>, když je požadavek na dodavatele v procesu revize ve workflowu.</blockquote> |
+|         Schváleno         |                                                                               Požadavek na dodavatele je schválen.                                                                               |                                                                                                   Požadavek na registraci potenciálního dodavatele a data, která byla zadána v průvodci registrace dodavatele, spolu s požadavkem na dodavatele, budou odstraněna.                                                                                                    |
+|         Odmítnuto         |                                                                               Požadavek na dodavatele je zamítnut.                                                                               |                                                                                                   Požadavek na registraci potenciálního dodavatele a data, která byla zadána v průvodci registrace dodavatele, spolu s požadavkem na dodavatele, budou odstraněna.                                                                                                    |
+
 

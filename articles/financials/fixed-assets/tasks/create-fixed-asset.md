@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-fixed-asset"></a>Vytvoření dlouhodobého majetku
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento průvodce úlohou používá ukázkovou společnost USMF.  Vytvoří nový dlouhodobý majetek pomocí stránky Seznam dlouhodobého majetku.
 

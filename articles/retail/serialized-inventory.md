@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="pos-improvements-for-serialized-products"></a>Vylepšení POS pro serializované produkty
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 ## <a name="overview"></a>Přehled 
 Na základě nastavení v modulu Retail headquarters lze produkty klasifikovat jako serializované nebo neserializované. Když jsou produkty serializovány, každé položce lze přiřadit jedinečné číslo, které pomáhá sledovat záruky, sledovat položky a potvrdit vlastnictví. I když možnost poskytovat sériová čísla pro serializované produkty existovala již v našem moderním/cloudovém pokladním místě (POS), byla přidána některé vylepšení usnadňující pokladníkům ušetřit čas a být produktivnější.  

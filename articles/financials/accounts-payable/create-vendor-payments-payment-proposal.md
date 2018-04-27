@@ -3,7 +3,7 @@ title: "Vytvoření plateb dodavatele pomocí návrhu platby"
 description: "Toto téma obsahuje přehled možností návrhu platby a nabízí příklady zobrazující, jak návrh plateb funguje. Návrhy plateb jsou často používány k vytvoření platby dodavatele, protože dotaz umožňuje rychle vybrat faktury dodavatele pro platbu na základě kritérií, jako jsou data splatnosti a platební slevy."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 07/17/2017
+ms.date: 04/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 454a370e73e6e0d33f0aeb1ca2b3f9d6d9f8cb98
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1199329f7d669a291249e22e393842673a8907c3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Vytvoření plateb dodavatele pomocí návrhu platby
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma obsahuje přehled možností návrhu platby a nabízí příklady zobrazující, jak návrh plateb funguje. Návrhy plateb jsou často používány k vytvoření platby dodavatele, protože dotaz umožňuje rychle vybrat faktury dodavatele pro platbu na základě kritérií, jako jsou data splatnosti a platební slevy. 
 
@@ -40,25 +39,26 @@ Dotaz na návrh platby obsahuje různé karty, z nichž každá má různé mož
 ## <a name="parameters"></a>Parametry
 -   **Výběr faktur podle** – faktury v rozsahu dat, který je určen v poli **Od data** a **Do data** lze vybrat podle data splatnosti, data platební slevy nebo obojího. Používáte-li datum platební slevy, systém nejprve vyhledá faktury, které mají datum platební slevy mezi počátečním datem a koncovým datem. Systém pak určuje, zda má faktura nárok na platební slevu použitím data relace pro ujištění se, že datum platební slevy již neuplynulo.
 -   **Od data** a **Do data** – faktury, které mají datum splatnosti nebo datum platební slevy v tomto časovém intervalu, jsou vybrány pro platbu.
--   **Datum platby** – Používá se pouze v případě, kdy je pole **Období** u způsobu platby nastaveno na hodnotu **Celkem**. Pokud je definováno datum, jsou vytvořeny všechny platby k tomuto datu. Pole **Minimální datum platby** je ignorováno.
 -   **Minimální datum platby** – zadejte minimální datum platby. Například pole **Od data** a **Do data** uvádí rozsah od 1. září do 10. září a minimální datum platby je 5. září. V takovém případě všechny faktury, které mají datum splatnosti od 1. září do 5. září, mají datum platby 5. září. Všechny faktury, které mají datum splatnosti od 5. září do 10. září však mají datum platby, které odpovídá datu splatnosti jednotlivých faktur.
 -   **Limit částky** – zadejte maximální celkovou částku u všech plateb.
 -   **Vytvořit platby bez náhledu faktury** – je-li tato možnost nastavena na **Ano**, platby budou vytvořeny okamžitě na stránce **Platby dodavatele**. Stránka **Návrh platby** bude přeskočena. Z toho vyplývá, že platby se vytvoří rychleji. Platby lze měnit i nadále ze stránky **Platby dodavatele**. Alternativně se můžete vrátit na stránku **Návrh platby** pomocí tlačítka **Upravit faktury k vybrané platbě**.
 
 ## <a name="advanced-options"></a>Rozšířené možnosti
--   **Kontrola zůstatku dodavatele** – je-li tato možnost je nastavena na **Ano**, systém potvrdí, že dodavatel nemá záporný zůstatek před zaplacením jakékoli faktury. Pokud dodavatel má záporný zůstatek, nebude vytvořena žádná platba. Dodavatel může mít například dobropisy nebo platby, které byly zaúčtovány, ale dosud nebyly vyrovnány. V takovém případě by neměla být platba dodavateli odeslána. Místo toho by měly být dobropisy nebo platby vyrovnány s ohledem na nevyřízené faktury.
--   **Odstranit záporné platby** – tuto možnost lze použít různě, v závislosti na tom, zda jsou platby vytvořeny pro jednotlivé faktury nebo součet faktur, které splňují kritéria platby. Toto chování je definováno pro metodu platby.
--   **Platba pro každou fakturu** – pokud možnost **Odstranit záporné platby** je nastavena na **Ano** a nevyrovnané faktury a platby existují u dodavatele, jsou k platbě vybrány pouze faktury. Stávající platba je poté vyrovnána podle faktury. Pokud možnost **Odstranit záporné platby** je nastavena na **Ne**, a faktura a platba není vyrovnána, faktura i platba jsou vybrány pro platbu. Vytvoří se platba pro platbu a vytvoří se vrácení (záporná platba) pro platbu.
--   **Platby pro součet faktur** – pokud je možnost **Odstranit záporné platby** nastavena na **Ano**, a nevyrovnané faktury a platby existují pro dodavatele, nevyrovnané faktury i platby jsou vybrány pro platbu, a částky budou přidány společně k vytvoření celkové placené částky. Jediná výjimka nastane, pokud částka vyústí v refundaci. V takovém případě nebude vybrána faktura ani platba. Pokud je možnost **Odstranit záporné platby** nastavena na **Ne**, a faktura ani platba není vyrovnána, faktury i platby jsou vybrány pro platbu, a částky budou přidány společně k vytvoření celkové placené částky.
--   **Pouze tisk sestavy** – nastavte tuto možnost **Ano**, pokud chcete vidět výsledky návrhu platby v sestavě, ale nechcete vytvářet žádné platby.
--   **Zahrnout faktury dodavatelů od ostatních právnických osob** - Pokud má vaše organizace centralizované zpracování plateb a návrh platby by měl mít zahrnuté faktury od ostatních právnických osob, které jsou zahrnuty do kritérií hledání, nastavte tuto možnost na **Ano**.
--   **Navrhnout samostatnou platbu dodavatele za každou právnickou osobu** – je-li tato možnost nastavena na **Ano**, pro každou právnickou osobu u každého dodavatele je vytvořena samostatná platba. Dodavatele u platby je dodavatelem z faktury od každé právnické osoby. Pokud je tato možnost nastavena na **Ne** a stejný dodavatel má faktury z více právnických osob, bude vytvořena jediná platba na celkovou částku vybraných faktur. Dodavatel pro platbu je dodavatel od aktuální právnické osoby. Pokud účet dodavatele u aktuální právnické osoby neexistuje, bude použit účet dodavatele pro první splatnou fakturu.
--   **Měna platby** – toto pole specifikuje měnu, ve které jsou vytvořeny všechny platby. Pokud není měna definována, každý faktura je zaplacena v měně faktury.
--   **Den v týdnu pro platbu** – zadejte den v týdnu, kdy bude provedena platba. Toto pole se používá pouze v případě, že je metoda nastavena na celkové faktury k platbě pro určitý den v týdnu.
--   **Typ protiúčtu** a **Protiúčet** – tato pole nastavte, pokud chcete definovat určitý typ účtu (například **Hlavní kniha** nebo **Banka**) a protiúčet (například konkrétní bankovní účet). Metoda platby pro fakturu definuje výchozí typ protiúčtu a protiúčet, ale můžete přepsat výchozí hodnoty těchto polí.
--   **Další filtry** – Na pevné záložce **Záznamy**, které chcete zahrnout můžete definovat další rozsahy kritérií. Například pokud chcete zaplatit pouze pro určitý rozsah dodavatelů, můžete definovat filtr pro rozsah dodavatelů. Tato funkce se často používá k výběru faktur pro konkrétní platební metodu. Například můžete definovat filtr, kde **Způsob platby** = **Kontrola** a pouze faktury, které mají tento způsob platby, budou vybrány pro platbu, za předpokladu, že splňují také jiná kritéria zadaná v dotazu.
+- **Kontrola zůstatku dodavatele** – je-li tato možnost je nastavena na **Ano**, systém potvrdí, že dodavatel nemá záporný zůstatek před zaplacením jakékoli faktury. Pokud dodavatel má záporný zůstatek, nebude vytvořena žádná platba. Dodavatel může mít například dobropisy nebo platby, které byly zaúčtovány, ale dosud nebyly vyrovnány. V takovém případě by neměla být platba dodavateli odeslána. Místo toho by měly být dobropisy nebo platby vyrovnány s ohledem na nevyřízené faktury.
+- **Odstranit záporné platby** – tuto možnost lze použít různě, v závislosti na tom, zda jsou platby vytvořeny pro jednotlivé faktury nebo součet faktur, které splňují kritéria platby. Toto chování je definováno pro metodu platby.
+- **Platba pro každou fakturu** – pokud možnost **Odstranit záporné platby** je nastavena na **Ano** a nevyrovnané faktury a platby existují u dodavatele, jsou k platbě vybrány pouze faktury. Stávající platba je poté vyrovnána podle faktury. Pokud možnost **Odstranit záporné platby** je nastavena na **Ne**, a faktura a platba není vyrovnána, faktura i platba jsou vybrány pro platbu. Vytvoří se platba pro platbu a vytvoří se vrácení (záporná platba) pro platbu.
+- <strong>Platby pro součet faktur</strong> – pokud je možnost <strong>Odstranit záporné platby</strong> nastavena na <strong>Ano</strong>, a nevyrovnané faktury a platby existují pro dodavatele, nevyrovnané faktury i platby jsou vybrány pro platbu, a částky budou přidány společně k vytvoření celkové placené částky. Jediná výjimka nastane, pokud částka vyústí v refundaci. V takovém případě nebude vybrána faktura ani platba. Pokud je možnost <strong>Odstranit záporné platby **nastavena na **Ne</strong> a faktura ani platba není vyrovnána, faktury i platby jsou vybrány pro platbu, a částky budou přidány společně k vytvoření celkové placené částky.
+- **Pouze tisk sestavy** – nastavte tuto možnost **Ano**, pokud chcete vidět výsledky návrhu platby v sestavě, ale nechcete vytvářet žádné platby.
+- **Zahrnout faktury dodavatelů od ostatních právnických osob** - Pokud má vaše organizace centralizované zpracování plateb a návrh platby by měl mít zahrnuté faktury od ostatních právnických osob, které jsou zahrnuty do kritérií hledání, nastavte tuto možnost na **Ano**.
+- **Navrhnout samostatnou platbu dodavatele za každou právnickou osobu** – je-li tato možnost nastavena na **Ano**, pro každou právnickou osobu u každého dodavatele je vytvořena samostatná platba. Dodavatele u platby je dodavatelem z faktury od každé právnické osoby. Pokud je tato možnost nastavena na **Ne** a stejný dodavatel má faktury z více právnických osob, bude vytvořena jediná platba na celkovou částku vybraných faktur. Dodavatel pro platbu je dodavatel od aktuální právnické osoby. Pokud účet dodavatele u aktuální právnické osoby neexistuje, bude použit účet dodavatele pro první splatnou fakturu.
+- **Měna platby** – toto pole specifikuje měnu, ve které jsou vytvořeny všechny platby. Pokud není měna definována, každý faktura je zaplacena v měně faktury.
+- **Den v týdnu pro platbu** – zadejte den v týdnu, kdy bude provedena platba. Toto pole se používá pouze v případě, že je metoda nastavena na celkové faktury k platbě pro určitý den v týdnu.
+- **Typ protiúčtu** a **Protiúčet** – tato pole nastavte, pokud chcete definovat určitý typ účtu (například **Hlavní kniha** nebo **Banka**) a protiúčet (například konkrétní bankovní účet). Metoda platby pro fakturu definuje výchozí typ protiúčtu a protiúčet, ale můžete přepsat výchozí hodnoty těchto polí.
+- **Souhrnné datum platby** – Používá se pouze v případě, kdy je pole **Období** u způsobu platby nastaveno na hodnotu **Celkem**. Pokud je definováno datum, jsou vytvořeny všechny platby k tomuto datu. Pole **Minimální datum platby** je ignorováno.
+- **Další filtry** – Na pevné záložce **Záznamy**, které chcete zahrnout můžete definovat další rozsahy kritérií. Například pokud chcete zaplatit pouze pro určitý rozsah dodavatelů, můžete definovat filtr pro rozsah dodavatelů. Tato funkce se často používá k výběru faktur pro konkrétní platební metodu. Například můžete definovat filtr, kde **Způsob platby** = **Kontrola** a pouze faktury, které mají tento způsob platby, budou vybrány pro platbu, za předpokladu, že splňují také jiná kritéria zadaná v dotazu.
 
 ## <a name="scenarios"></a>Scénáře
+
 | Dodavatel | Faktura | Datum fakturace | Fakturovaná částka | Datum splatnosti | Datum platební slevy | Částka platební slevy |
 |--------|---------|--------------|----------------|----------|--------------------|----------------------|
 | 3050   | 1 001    | 15. června      | 500,00         | 15. červenec  | 29. června            | 10,00                |

@@ -3,12 +3,12 @@ title: "Domovská stránka nákladového účetnictví"
 description: "V tomto tématu je seznam témat nápovědy a dalších zdrojů, které jsou k dispozici pro nákladové účetnictví."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 08/20/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
+ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration, CAMCostAccountingLedgerAdminWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-accounting-home-page"></a>Domovská stránka nákladového účetnictví
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="learning-map"></a>Mapa výuky 
 
@@ -37,6 +37,7 @@ Následující mapa výuky zobrazuje hlavní koncepty a úkoly, které tvoří r
 [![Mapa výuky pro nákladové účetnictví](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
 
 ## <a name="quick-links"></a>Rychlé odkazy
+
 |      |   |
 |------|---|
 |  [Konfigurace základních entit (kurz elektronického vzdělávání)](https://mbspartner.microsoft.com/Home) (vyžaduje účet CustomerSource)  |[Vytvořit dimenze](cost-elements.md)  |

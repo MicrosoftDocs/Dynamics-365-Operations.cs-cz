@@ -26,7 +26,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="credit-limits-for-customers"></a>Limity úvěru pro odběratele
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Nastavení limitu úvěru vám umožní určit maximální částku úvěru, který poskytnete svým odběratelům. Pokud je limit úvěru určen, je automaticky zkontrolován, když se uživatel pokouší aktualizovat dokument. Při přesažení limitu úvěru se uživateli zobrazí zpráva. Tento článek podává přehled o tom, jak limity úvěrů fungují, a odpovídá na následující dotazy:
 

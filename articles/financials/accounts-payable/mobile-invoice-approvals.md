@@ -18,17 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 98e32298d1c8285437adf3df9820a71e7a0d7f6c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a44e5d04edf327da2b3ba4676c8b823291801abe
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="mobile-invoice-approvals"></a>Mobilní schvalování faktur
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Mobilní funkce v Microsoft Dynamics 365 for Finance and Operations umožňují podnikovým uživatelům navrhovat mobilní prostředí. Pro pokročilé scénáře platforma také vývojářům umožňuje rozšířit možnosti podle vlastních potřeb. Nejúčinnějším způsobem, jak se naučit některé nové pojmy v oblasti mobilních zařízení, je projít proces navrhování několik scénářů. Toto téma poskytuje praktický přístup k navrhování mobilních scénářů převzetím schválení faktur dodavatele pro mobilní zařízení jako příklad použití. Toto téma by vám mělo pomoci navrhnout jiné varianty scénářů a lze je také použít pro další scénáře, které nesouvisejí s fakturami dodavatele.
 
@@ -127,7 +126,7 @@ Platí zásada, abyste při práci s návrhářem mobilních aplikací nezapomn�
 ### <a name="create-the-workspace"></a>Vytvoření pracovního prostoru
 
 1.  V prohlížeči otevřete Finance and Operations a přihlaste se.
-2.  Po přihlášení přidejte k adrese URL text **&mode=mobile**, jak ukazuje následující příklad, a aktualizujte stránku: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
+2.  Po přihlášení přidejte k adrese URL text **&mode=mobile**, jak ukazuje následující příklad, a aktualizujte stránku: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard **&mode=mobile**
 3.  Klikněte na tlačítko **Nastavení** (ozubené kolo) v pravém horním rohu stránky, a pak klikněte na **Mobilní aplikace**. Návrhář mobilní aplikace se musí zobrazit stejně jako Záznam úloh.
 4.  Kliknutím na tlačítko **Přidat** vytvořte nový pracovní prostor. V tomto příkladu pojmenujte pracovní prostor **Moje schválení**.
 5.  Zadejte popis.
@@ -173,23 +172,23 @@ První mobilní stránka, kterou byste měli navrhnout, je seznam faktur, které
 
 Pokud chcete navrhnout stránky podrobností faktury pro mobilní zařízení, použijte stránku **VendMobileInvoiceHeaderDetails** v aplikaci Finance and Operations. Všimněte si, že v závislosti na počtu faktur, které máte v systému, tato stránka zobrazuje nejstarší faktury (faktura, která byla vytvořena jako první). Pokud chcete najít konkrétní fakturu, můžete použít filtr vlevo. Nevyžadujeme ale použití konkrétní faktury pro tento příklad. Vyžadujeme pouze některá data faktury, abychom mohli navrhnout mobilní stránku. [![Stránka workflowu](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
-1.  V adrese URL Finance and Operations nahraďte název položky nabídky názvem **VendMobileInvoiceHeaderDetails** k otevření formuláře
-2.  Otevřete mobilní návrhář z tlačítka **Nastavení** (ozubené kolečko).
-3.  Kliknutím na tlačítko **Upravit** spusťte režim úprav v pracovním prostoru.
-4.  Vyberte stránku **Moje faktury dodavatele**, kterou jste dříve vytvořili, a potom klepněte na tlačítko **Upravit**.
-5.  Na kartě **Pole** klikněte na záhlaví sloupce **Mřížka**.
-6.  Klikněte na **Vlastnosti** &gt; **Přidat stránku**. **Poznámka:** Po klepnutí na záhlaví **Mřížka** a přidání stránky je automaticky navázán vztah.
-7.  Zadejte název stránky, například **Detaily faktury** a popis, jako například **Zobrazení záhlaví faktury a podrobností řádku**.
-8.  Klikněte na **Vybrat pole**. Všimněte si, že pořadí, ve kterém přidáváte, je pořadí, ve kterém se pole zobrazí koncovému uživateli. Jediný způsob, jak změnit pořadí polí, je opětovný výběr všech polí. 
-9.  Na základě požadavků pro tento scénář přidejte následující pole ze záhlaví:
-    - Název dodavatele
-    - Faktura celkem
-    - Účet faktury
-    - Číslo faktury
-    - Datum fakturace
-    - Popis faktury
-    - Datum splatnosti
-    - Měna faktury
+1. V adrese URL Finance and Operations nahraďte název položky nabídky názvem **VendMobileInvoiceHeaderDetails** k otevření formuláře
+2. Otevřete mobilní návrhář z tlačítka **Nastavení** (ozubené kolečko).
+3. Kliknutím na tlačítko **Upravit** spusťte režim úprav v pracovním prostoru.
+4. Vyberte stránku <strong>Moje faktury dodavatele**, kterou jste vytvořili dříve, a klikněte na **Upravit</strong>.
+5. Na kartě **Pole** klikněte na záhlaví sloupce **Mřížka**.
+6. Klikněte na **Vlastnosti** &gt; **Přidat stránku**. **Poznámka:** Po klepnutí na záhlaví **Mřížka** a přidání stránky je automaticky navázán vztah.
+7. Zadejte název stránky, například **Detaily faktury** a popis, jako například **Zobrazení záhlaví faktury a podrobností řádku**.
+8. Klikněte na **Vybrat pole**. Všimněte si, že pořadí, ve kterém přidáváte, je pořadí, ve kterém se pole zobrazí koncovému uživateli. Jediný způsob, jak změnit pořadí polí, je opětovný výběr všech polí. 
+9. Na základě požadavků pro tento scénář přidejte následující pole ze záhlaví:
+   - Název dodavatele
+   - Faktura celkem
+   - Účet faktury
+   - Číslo faktury
+   - Datum fakturace
+   - Popis faktury
+   - Datum splatnosti
+   - Měna faktury
 
 10. Z řádků mřížky na stránce přidejte následující pole:
     - Kategorie zásobování
@@ -199,7 +198,7 @@ Pokud chcete navrhnout stránky podrobností faktury pro mobilní zařízení, p
     - Částka sestavy 1099
 
 11. Po přidání všech polí z předchozích dvou kroků klepněte na **Hotovo**. Stránka musí vypadat podobně jako na následujícím obrázku.
-[![Stránka po přidání polí](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Stránka po přidání polí](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 12. Kliknutím na **Hotovo** ukončete režim úprav.
 13. Klikněte na **Zpět** a potom na **Hotovo** pro odchod z pracovního prostoru
 14. Kliknutím na **Publikovat pracovní prostor** uložte práci.
@@ -296,14 +295,14 @@ Chcete-li přidat akce pracovního postupu, použijte stránku **VendMobileInvoi
 
 ### <a name="vendor-invoice-attachments"></a>Přílohy faktury dodavatele
 
-1.  Klikněte na tlačítko **Nastavení** (ozubené kolo) v pravém horním rohu stránky, a pak klikněte na **Mobilní aplikace**.
-2.  Kliknutím na tlačítko **Upravit** spusťte režim úprav v pracovním prostoru.
-3.  Vyberte stránku **Podrobnosti o faktuře**, kterou jste dříve vytvořili, a potom klepněte na tlačítko **Upravit**.
-4.  Nastavte možnost **Správa dokumentů** na **Ano**, jak je ukázáno níže. **Poznámka:** Pokud neexistují žádné požadavky na mobilním zařízení, můžete nechat tuto možnost nastavenou na **Ne**, což je výchozí nastavení.
-![Správa dokumentů](./media/docmanagement-216x300.png)
-6.  Kliknutím na **Hotovo** ukončete režim úprav.
-7.  Klikněte na **Zpět** a potom na **Hotovo** pro odchod z pracovního prostoru
-8.  Kliknutím na **Publikovat pracovní prostor** uložte práci.
+1. Klikněte na tlačítko **Nastavení** (ozubené kolo) v pravém horním rohu stránky, a pak klikněte na **Mobilní aplikace**.
+2. Kliknutím na tlačítko **Upravit** spusťte režim úprav v pracovním prostoru.
+3. Vyberte stránku <strong>Podrobnosti o faktuře**, kterou jste dříve vytvořili, a potom klikněte na **Upravit</strong>.
+4. Nastavte možnost **Správa dokumentů** na **Ano**, jak je ukázáno níže. **Poznámka:** Pokud neexistují žádné požadavky na mobilním zařízení, můžete nechat tuto možnost nastavenou na **Ne**, což je výchozí nastavení.
+   ![Správa dokumentů](./media/docmanagement-216x300.png)
+5. Kliknutím na **Hotovo** ukončete režim úprav.
+6. Klikněte na **Zpět** a potom na **Hotovo** pro odchod z pracovního prostoru
+7. Kliknutím na **Publikovat pracovní prostor** uložte práci.
 
 ### <a name="vendor-invoice-line-distributions"></a>Distribuce řádky faktury dodavatele
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="assign-a-free-text-invoice-template-to-a-customer"></a>Přiřazení šablony volné faktury odběrateli
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato úloha demonstruje způsob, jak přiřadit šablonu volné faktury pro odběratele. Tento úkol využívá ukázkovou společnost USMF a je určen pro uživatele, který je odpovědný za správu a zpracování faktur pohledávek.
 

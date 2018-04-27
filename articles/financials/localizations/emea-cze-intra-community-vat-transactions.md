@@ -27,7 +27,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="sales-tax-reporting-for-the-czech-republic"></a>Vykazování daně z prodeje pro Českou republiku
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma uvádí informace o tom, jak se vypočítává a zaúčtovává daň z přidané hodnoty (DPH) pro Českou republiku. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="establish-customer-method-of-payment"></a>Stanovení způsobu platby odběratele
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Vytvořte metodu platby pro úhrady odběratelů. Tento úkol používá ukázkovou společnost USMF.
 

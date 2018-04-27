@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a>Vytvoření smlouvy bankovního zařízení pro akreditiv
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato úloha vás provede vytvářením smlouvy bankovního zařízení pro zpracování akreditiv. Před tímto úkolem můžete nastavit bankovní zařízení a profily zaúčtování.  Tento úkol využívá ukázkovou společnost USMF.  
 

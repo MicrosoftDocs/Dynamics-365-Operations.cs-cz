@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>Nastavení šablony práce pro nákupní objednávky
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup se zaměřuje na nastavení jednoduché pracovní šablony pro použití při odložení doručených položek. Šablony práce určují sadu pokynů představovanou pracovníkovi skladu na mobilním zařízení, zatímco jsou položky přesouvány z místa příjmu. Můžete použít tuto proceduru s daty zmíněnými v ukázkových datech společnosti USMF. Před spuštěním tohoto průvodce vytvořte ID fondu práce. V tomto příkladu se používá ID fondu práce nazvaný Příchozí. Tento postup je určen pro vedoucího skladu.
 

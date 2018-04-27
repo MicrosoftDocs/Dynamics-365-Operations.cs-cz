@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="microsoft-project-client-integration"></a>Klientská integrace aplikace Microsoft Project
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Plánování a údržba plánu projektu může být složitá. Projektoví manažeři proto potřebují používat nástroje, které jim pomohou spravovat tento úkol. Integrace s klientem Microsoft Project poskytuje podporu pro otevření a správu strukturovaného rozpisu prací na projektu. Projektový manažer může publikovat jakékoliv změny zpět do strukturovaného rozpisu prací na projektu aplikace Finance and Operations.
 

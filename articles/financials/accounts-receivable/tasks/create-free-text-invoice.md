@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="create-a-free-text-invoice"></a>Vytvořit volnou fakturu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento průvodce úkolem ukazuje vytvoření volné faktury. Tento úkol používá ukázkovou společnost USMF.
 

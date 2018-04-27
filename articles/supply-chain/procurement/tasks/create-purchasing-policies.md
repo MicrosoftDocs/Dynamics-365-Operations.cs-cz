@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-purchasing-policies"></a>Vytvoření zásad nákupu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak vytvořit zásady nákupu a srovnat tak obchodní procesy pro nákup. Před vytvořením zásady nakupování nastavte parametry zásady nákupu. Je možné vytvořit, upravit a vyřadit zásady nákupu, ale zásady nákupu nelze odstranit. Tento proces obvykle provádí manažer nákupu. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.
 

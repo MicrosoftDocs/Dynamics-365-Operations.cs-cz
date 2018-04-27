@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-carrier-fuel-index"></a>Nastavení indexu paliva dopravce
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato příručka popisuje vytváření oblast indexu paliva, indexu paliva a indexu paliva dopravce. Oblast indexu paliva určuje, pro které oblasti má být index paliva použit, a index paliva určuje cenu paliva pro určitý časový úsek. Pokud chcete, aby se projevily změny cen paliva v čase, je možné přiřadit více indexů paliva k dopravci.  Tyto úlohy běžně provádí koordinátor přepravy. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.
 

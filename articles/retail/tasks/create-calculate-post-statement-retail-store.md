@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a> Vytvoření, výpočet a zaúčtování výkazu pro maloobchod
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Tento postup vás provede manuálním postupem pro vytvoření, výpočet a zaúčtování výpisu pro obchod. Existují také dávkové úlohy, které lze konfigurovat pro stejné úkoly. Postup pro konfiguraci a spuštění dávkových úlohy můžete najít v jiných tématech. Chcete-li provést tento postup, musíte mít transakce, které byly dokončeny v POS a potom převedeny do aplikace Dynamics AX. Tento záznam používá v ukázkových datech společnost USRT. Tento postup může odkazovat na Microsoft Dynamics AX. Všimněte si, Dynamics AX se nyní nazývá Microsoft Dynamics 365 for Operations.
 

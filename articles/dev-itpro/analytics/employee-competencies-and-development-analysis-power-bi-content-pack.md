@@ -27,8 +27,7 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="employee-competencies-and-development-power-bi-content"></a>Obsah Power BI kompetencí a rozvoje zaměstnance
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje obsah Power BI kompetencí a rozvoje zaměstnanců v aplikaci Finance and Operations. 
 

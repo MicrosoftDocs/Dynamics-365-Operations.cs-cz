@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="automatic-settlement-and-prioritization"></a>Automatické vyrovnání a stanovení priorit
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje způsob vyrovnání transakcí, pokud vyberete možnost Automatické vyrovnání na straně Parametry pohledávek. Vysvětluje také, jak lze automatické vyrovnání použít v kombinaci s prioritou platby.
 

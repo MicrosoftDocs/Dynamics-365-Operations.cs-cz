@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-contracts"></a>Projektové smlouvy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje projektové smlouvy (obsahuje i příklady), které můžete vytvořit pro různé typy projektů a zdroje financování, dále způsoby, jak lze spravovat smlouvy a fakturovat odběratele projektu v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 

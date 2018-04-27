@@ -19,16 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fc2fa16a44b6421d56e9cb662cfaa26da5b1c5d1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8bc3d23fac6112622e722e57b61fdb686f5a98ed
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="work-breakdown-structures"></a>Strukturované rozpisy prací
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Strukturovaný rozpis prací (WBS) je popis práce, která bude provedena v projektu. Jedná se o hierarchii úkolů, která představuje pochopení projektového týmu v souvislosti se složením práce a velikostí, náklady a dobou trvání jednotlivých součástí nebo úkolů. WBS má tři hlavní účely:
 
@@ -115,7 +115,7 @@ Odhad plánu je obvykle druhým krokem při vytváření struktury WBS. Doporuč
 
 Počáteční datum úkolu listového uzlu, který nemá předchůdce, bude automaticky nastaveno na počáteční datum plánování projektu. Trvání úkolu listového uzlu se vždy počítá jako počet dní mezi jejich počátečním a koncovým datem. 
 
-****Pravidla plánování**** Je-li zapnuta pomoc s automatickým plánováním, platí na plánování úkolů pro úkoly listového uzlu následující pravidla:
+*<strong><em>Pravidla plánování</em></strong>* Je-li zapnuta pomoc s automatickým plánováním, platí na plánování úkolů pro úkoly listového uzlu následující pravidla:
 
 -   Počáteční a koncové datum úkolu musí být v pracovní dny, podle kalendáře pro plánování projektu.
 -   Počáteční datum úkolu, který má předchůdce, je automaticky nastaveno na poslední koncové datum všech jeho předchůdců.

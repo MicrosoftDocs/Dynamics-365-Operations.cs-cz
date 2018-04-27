@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a>Vytvoření kusovníku pro základní produkt založený na dimenzích
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 V tomto postupu je vhodné mít dokončené 4 předchozí průvodce v tomto pořadí z osmi záznamů. První 4 záznamy jsou věnovány nastavení data potřebného k dokončení tohoto postupu. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento úkol obvykle zpracovává návrhář produktu.
 

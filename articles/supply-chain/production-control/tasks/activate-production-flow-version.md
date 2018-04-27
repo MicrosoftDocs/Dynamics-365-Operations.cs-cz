@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="activate-a-production-flow-version"></a>Aktivace verze výrobního toku
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Než bude možné vytvořit kanbanové úlohy a zpracovat aktivity pro verzi výrobního toku, je třeba verzi aktivovat. Nejvhodnějším postupem je aktivovat verzi před vypršením data a času platnosti. Chcete-li provést tento úkol, musíte mít k dispozici verzi výrobního toku, který má stav Koncept, aby tak bylo možné verzi aktivovat. 
 

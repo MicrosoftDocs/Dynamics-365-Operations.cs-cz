@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-object-groups"></a>Skupiny předmětů servisu 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Použití skupin objektů je vhodné při řazení a filtrování dat o objektech pro účely sestav a statistik. Můžete například seskupit předměty podle geografického umístění nebo typu.
 

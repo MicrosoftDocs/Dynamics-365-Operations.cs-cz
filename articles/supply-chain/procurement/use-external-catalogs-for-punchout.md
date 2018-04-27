@@ -28,7 +28,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="use-external-catalogs-for-punchout-eprocurement"></a>Použití externích katalogů pro funkci PunchOut eProcurement
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Díky externím katalogům elektronického nákupu PunchOut nemusíte spravovat informace o produktech svých dodavatelů ve svých hlavních datech. Místo toho je nákupní košík na webu dodavatele převeden na řádky požadavku, které mají správné informace o produktu. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="fulfill-sales-agreements"></a>Plnění prodejních smluv
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak plnit prodejní smlouvy přidružením prodejní objednávky. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Před spuštěním této příručky, zkontrolujte, že máte platnou prodejní smlouvu typu „Závazek – hodnota produktu“. Případně můžete spustit průvodce úkoly nazvaného „Vytvořit prodejní smlouvy“.  
 

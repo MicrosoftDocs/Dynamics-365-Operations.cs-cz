@@ -1,9 +1,9 @@
 ---
 title: "Platební metody v kontaktním středisku"
-description: "Toto téma popisuje různé platební metody, které lze použít v telefonickém centru v aplikaci Dynamics 365 for Retail."
+description: "Toto téma popisuje různé platební metody, které lze použít v kontaktním středisku v aplikaci Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,36 +20,38 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
-ms.openlocfilehash: 321d03d154c224b55ffedbe55a2d5952c2b29d9a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fe8dd3136f14e182e261a4dce57eef0b1946d304
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="payment-methods-in-a-call-center"></a>Platební metody v kontaktním středisku
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
+V aplikaci Microsoft Dynamics 365 for Retail zahrnuje konfigurace kanálu kontaktního střediska nastavení s názvem **Povolit dokončení objednávky**. Toto nastavení pomáhá zajistit, aby všechny objednávky, které vytvořili uživatelé kanálu, byly uvolněny ke zpracování objednávek pouze v případě, že mají předplacenou nebo předběžně autorizovánou platbu ve schválených tolerancích. Pokud je nastavení **Povolit dokončení objednávky** zapnuté, uživatelé kontaktního střediska mohou zadat platby proti prodejním objednávkám pro odběratele pomocí funkcí zpracování plateb kontaktního střediska. Pokud je nastavení vypnuto, uživatelé kontaktního střediska nemohou používat funkce zpracování plateb kontaktního střediska, ale mohou stále použít zálohy na prodejní objednávky pomocí standardních funkcí pohledávek.
 
-Toto téma popisuje různé platební metody, které lze použít v telefonickém centru v aplikaci Dynamics 365 for Retail.
+Jako součást konfigurace kanálu může společnost definovat způsoby platby, které jsou povoleny pro kanál kontaktního střediska. Kanál kontaktního střediska používá stejné metody platby, které jsou definovány pro maloobchodní kanály.
 
-V telefonickém centrech lze použít také metody platby, které se používají u jiných kanálů, jako například pro hotovost, šeky, kreditní karty a dárkové poukazy. Po nastavení způsobu platby pro kontaktní středisko se pro uživatele kontaktního střediska tento způsob zobrazí jako jedna z možností v části **Platby** na stránce **Prodejní objednávka**. Dále můžete nastavit kupóny pro nabízení slev odběratelům při objednávání prostřednictvím kontaktního střediska vaší organizace. Kupóny mohou být pevná částka slevy nebo procento ceny položky nebo celkové částky objednávky. Například kupón částky může nabízet odběratelům slevu 75,00, když odběratele tratí 750,00 nebo více. Můžete vytvořit různé typy kupónů, nastavit nadřazené a podřízené kupóny a kupóny kopírovat nebo anulovat. Pomocí možností v následující tabulce vytvoříte kupóny.
+Chcete-li nastavit způsoby platby pro kanál kontaktního střediska, přejděte na **Maloobchod** \> **Kanály** \> **Kontaktní střediska** \> **Všechna kontaktní střediska** a poté v nabídce **Nastavení** zvolte možnost **Platební metody**.
 
-|                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Atribut**             | Do pole **Umořovací sazba** zadejte očekávanou umořovací sazbu kupónu v procentech a pak vyberte, zda kupón je kupón pro jednorázové použití, bude vydán automaticky znovu nebo je specifický pro odběratele.                                                                                                                                                                                                                                                                                                                                                                                       |
-| **Platné**                 | V polích **Počáteční datum** a **Konečné datum** zadejte data prvního a posledního dne, kdy je kupón platný.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Zahrnout/vyloučit pravidla** | V polích **Katalogy** a **Položky** vyberte, zda jsou v kupónu zahrnuty nebo vyloučeny nějaké katalogy nebo zboží. Vyberete-li možnost **Zahrnout** nebo **Vyloučit**, klepněte na tlačítko **Nastavit**, vyberte **Zahrnout/vyloučit katalogy** nebo **Zahrnout/vyloučit produkty** a zadejte informace o katalogu nebo položce. Vyberete-li v těchto polích **Žádný**, všechny katalogy nebo položky jsou součástí kupónu.                                                                                                                                                                                                                          |
-| **Různé**         | Pokud tento kupón nelze použít společně s dalšími slevami, označte pole **Výhradní**. Pak v poli **Původ** vyberte místo pro použití kupónu. Jedná-li se o kupón výrobce, zaškrtněte políčko **Kupón výrobce**.                                                                                                                                                                                                                                                                                                                                                                |
-| **Budoucí kupón**         | Je-li tento kupón přiřazen ostatním kupónům jako nadřazený kupón, zaškrtněte políčko **Nadřazený kupón**. Má-li být tento kupón přidružen jako podřízený kupón s existujícím kupónem, vyberte nadřazený kupón v poli **ID nadřazeného kupónu**. Můžete například vytvořit kupón nadcházející jarní katalog. Všechny ostatní kupóny, které vytvoříte pro jarní katalog, budou podřízené kupóny kupónu jarního katalogu. Podřízené kupóny mohou zahrnovat 20% slevu pro objednávky nových odběratelů, 10% slevu nově vydané položky nebo slevu 95,00 z objednávek za nejméně 1000,00. |
+Při vytváření způsobu platby existuje pět funkcí metod platby, které lze přiřadit.
 
-Pokud odešlete platbu platební kartou na stránce **Prodejní objednávka** a zobrazí se zpráva oznamující, že karta nebyla autorizována, lze ověření zpracovat ručně. Můžete schválit, odmítnout nebo znovu odeslat transakci platební pomocí stránky **Správa autorizací**. Pomocí stránky Parametry kontaktního střediska můžete konfigurovat další možnosti zpracování platby:
+| Funkce            | popis |
+|---------------------|-------------|
+| Normální              | Použijte funkci **Normální** na váš způsob platby při definování metod platby, jako je například hotovost nebo doklady. Když jsou tyto typy platby použité na prodejní objednávku v kontaktním středisku, jsou okamžitě zaúčtovány jako zálohy na účtu odběratele. Zálohový doklad se zaúčtuje do historie transakcí zákazníka, kde bude systematicky vyrovnán proti faktuře pro prodejní objednávku při vytváření faktur. |
+| Kontrola               | Použijte funkci **Šek** při definování nástroje bankovního šeku jako metody platby. Při použití tohoto typu platby na prodejní objednávku musí uživatel zadat číslo šeku zákazníka v rámci zpracování aplikace plateb. Platby šekem jsou vždy považovány při svém použití jako platby záloh. Co se týká platebí funkce **Normální**, tyto zálohové doklady budou systematicky vyrovnány proti fakturám, které jsou vytvořeny pro objednávku. |
+| Karty               | Typy plateb kartou představují všechny typy platby, které vyžadují zadání čísla karty, které bylo definováno pro platební kartu odběratele. Příklady zahrnují kreditní karty a dárkové poukazy. Při konfiguraci těchto typů plateb je třeba použít nabídku **Nastavení karty** pro definování ID karty, která jsou přidružena k této platební metodě. V době zadání objednávky mohou uživatelé určit, zda platby kartou budou předplaceny pomocí možnosti **Záloha**, která se zobrazí na stránce zadávání plateb. Pokud nepožaduje obchod zálohové platby, je typický postup skutečné platby kredfitní kartou procesem o dvou krocích, kdy je získána autorizace v době zadání objednávky a platba je pak vyrovnána a přijata z karty zákazníka v okamžiku fakturace. Pro platby dárkovým poukazem se doporučuje zálohy, protože zůstatek dárkového poukazu byy měl být snížen okamžitě, aby odběratel nemohl použít stejnou hodnotu někde jinde. |
+| Zákazník            | Funkce **Odběratel** u způsobu platby předpokládá, že platba bude použita na limit kreditu odběratele nebo bude převedena „na účet“. V aplikaci Retail může být odběrateli přiřazen limit úvěru, který lze ověřit v době zadání objednávky. Platby, které se provádí pomocí platební metody navázané na funkci **Odběratel** vytváří závazky proti účtu odběratele. Při fakturaci prodejní objednávky se poté zobrazí splatný zůstatek. V těchto situacích odběratelé obvykle posílají platbu podle stanovených podmínek. Popřípadě lze použít předchozí otevřený kreditní doklad na účtu odběratele pro vyrovnání splatného zůstatku. povšimněte si, že i když definujete tento způsob platby, nezobrazí se mezi možnostmi výběru platby v zadávání objednávek kontaktníhoho střediska, pokud není příznak **Povolit na účet** nastaven na záznamu odběratele pro odběratele, se kterým pracujete. Tento příznak se nachází na kartě **Výchozí nastavení plateb** záznamu odběratele. |
+| Úhrada – odebrat/plovoucí | Funkce **Úhrada – odebrat/plovoucí** se nepoužívá v kontaktním středisku. Je použitelná jen při definování metody platby, kterou používá aplikace pokladního místa v kanálu obchodu. |
 
--   Blokování šeků umožňuje pracovníkům finančního oddělení zpracování objednávek, které byly blokovány, protože byl použit šek jako způsob platby, a mezní hodnota kontroly šeků byla překročena. Blokování je možné ručně uvolnit, nebo jeho platnost automaticky vyprší na konci nakonfigurovaného období.
--   Můžete nastavit prahové hodnoty, kdy při jejich přesažení budou refundace prostřednictvím šeku nebo platebních karet vyžadovat ruční schválení. Částka, která přesahuje prahovou částku, je přidána do fronty na schválení. Po schválení refundace je možné fakturovat prodejní vratku.
+Když jsou metody platby vytvořeny, měly by být navázány na hlavní knihu nebo bankovní účet. Pokud tento krok vynecháte, uživatelé obdrží chyby, když se pokusí uložit typ platby.
 
+## <a name="refund-payment-methods"></a>Způsob refundace platby
 
+Pro scénáře zpracování refundace používá kontaktní středisko také některé z metod platby, které se definují v modulu Pohledávky. Chcete-li konfigurovat tyto metody plateb, přejděte na **Retail** \> **Nastavení kanálu** \> **Nastavení kontaktního střediska** \> **Metody refundace kontaktního střediska**. Je nutné dokončit tuto konfigurace pro zpracování šeků refundace odběratelům. Například platí-li odběratel původně objednávku hotovostí nebo šekem, uživatel může chtít odeslat odběrateli šek refundace prostřednictvím pohledávek. Typy plateb hotovostí a šekem v kontaktním středisku musí být v takovém případě namapovány na správnou metodu platby v modulu Pohledávky, aby se zajistilo správné zpracování refundace.
 
-
+Dále, pokud uživatel zpracovává vratku jako uživatel kontaktního střediska v aplikaci Retail, ale nemůže navázat vratku na původní prodej, musí být definována platební metoda **Vrácení** v parametrech kontaktního střediska. Přejděte na **Retail** \> **Nastavení kanálu** \> **Nastavení kontaktního střediska** \> **Parametry kontaktního střediska** a poté na kartě **RMA/vratky** v poli **Způsob platby** nadefinujte způsob platby. Metoda platby bude metodou platby použitou pro refundace. Obvykle bude definována buď jako metodu šeku nebo jako metoda účtu odběratele.
 

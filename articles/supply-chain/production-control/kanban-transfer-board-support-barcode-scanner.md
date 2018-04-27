@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Rozvrh převodů kanbanu podporuje skenery čárových kódů
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Rozvrh převodů kanbanu podporuje vstup ze skeneru skrze widget pro skener čárového kódu, který umožňuje vybrat, zahájit, dokončit a vyprázdnit kanbanovou úlohu.
 
@@ -38,6 +37,7 @@ Rozvrh převodů kanbanu podporuje vstup ze skeneru skrze widget pro skener čá
 ------------------
 
 Na pevné záložce **Registrace skeneru** můžete vybrat režim registrace, který řídí akci při skenování čísla kanbanové karty ne ručně skenujete číslo v poli Číslo kanbanové karty.
+
 | Nastavit režim registrace | Popis                                                                                     |
 |-----------------------|-------------------------------------------------------------------------------------------------|
 | Počátek                 | Registrovat úlohu převodu kanbanu jako probíhající.                                                 |

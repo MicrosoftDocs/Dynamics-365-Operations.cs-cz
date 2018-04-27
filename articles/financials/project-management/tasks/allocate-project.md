@@ -17,15 +17,17 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: 3d486e5b7a7ef8f711b8f44af81292a7a8f0bcd4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a253a37bc83482c5bc971cad585e18ccb230b16f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a>Přidělení rozpočtu projektu nebo revize rozpočtu v obdobích
 
-[!include[task guide banner](../../includes/task-guide-banner.md)] Po zadání rozpočtu projektu nebo revize rozpočtu projektu a před odesláním ke schválení můžete přidělit částky do období. Pokud jsou rozpočet nebo revize rozpočtu zamítnuty, můžete také přidělit částky před opětovným odesláním. 
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+
+ Po zadání rozpočtu projektu nebo revize rozpočtu projektu a před odesláním ke schválení můžete přidělit částky do období. Pokud jsou rozpočet nebo revize rozpočtu zamítnuty, můžete také přidělit částky před opětovným odesláním. 
 
 Poté, co byl přidělen rozpočet nebo revize rozpočtu, můžete zkontrolovat přidělení částek a provést jejich úpravy před odesláním rozpočtu nebo revize rozpočtu do pracovního postupu schválení. 
 
@@ -34,7 +36,7 @@ Poté, co byl přidělen rozpočet nebo revize rozpočtu, můžete zkontrolovat 
 3. V podokně akcí na kartě Plán ve skupině Rozpočet klikněte na Rozpočet projektu. 
 4. Ve formuláři Rozpočet projektu v podokně akcí na kartě Rozpočet klikněte na Přidělit rozpočet. 
 5. Ve formuláři Přidělit rozpočet v polích Přidělit z a Přidělit do zadejte první a poslední datum, které chcete zahrnout do přidělení rozpočtu. Obvykle jde o první a poslední datum celého projektu nebo první a poslední datum aktuálního roku.  
-> [POZNÁMKA!] Poté, co byl typ transakce přidělen a částky přidělení schváleny, přidělení časového období nelze změnit v budoucích revizích rozpočtu. 
+   > [POZNÁMKA!] Poté, co byl typ transakce přidělen a částky přidělení schváleny, přidělení časového období nelze změnit v budoucích revizích rozpočtu. 
 6. V poli Podle časového období vyberte, zda chcete přidělit rozpočet projektu podle roku, čtvrtletí nebo fiskálního období společnosti v průběhu roku.
 7. Vyberte typy transakcí, které chcete přidělit a klikněte na tlačítko Přidělit. 
 8. Ve formuláři Přidělení rozpočtu projektu nebo ve formuláři Přidělení revize projektového rozpočtu zrevidujte nebo aktualizujte částky, které jsou přiděleny. 

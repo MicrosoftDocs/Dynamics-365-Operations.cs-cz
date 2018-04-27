@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="175-percent-reducing-balance-depreciation"></a>Degresivní odpis 175 %
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma poskytuje přehled metody degresivního odpisu 175 %.
 
@@ -68,6 +67,7 @@ Vyberete-li jako odpisový rok možnost **Fiskální**, v poli **Frekvence obdob
 -   **Fiskální období** vypočte celkovou částku odpisu pro fiskální rok. Tato částka se rozloží do fiskálních období, která jsou definována na stránce **Fiskální kalendáře**.
 
 ## <a name="example-of-175-reducing-balance-depreciation"></a>Příklad 175% degresivního odpisování
+
 |                                |        |
 |--------------------------------|--------|
 | Pořizovací náklady               | 11 000 |

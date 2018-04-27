@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="supply-chain-management-home-page"></a>Domovská stránka správy dodavatelsko-odběratelského řetězce
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Toto téma obsahuje seznam témat nápovědy a další zdroje pro funkce správy dodavatelsko-odběratelského řetězce v aplikaci Microsoft Dynamics 365 for Finance and Operations. 
 
