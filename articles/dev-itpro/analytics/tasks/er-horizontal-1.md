@@ -1,5 +1,5 @@
 --- 
-title: "Návrh formátu pro použití vodorovně rozbalovacích oblastí k dynamickému přidání sloupců v sestavách aplikace Excel pro elektronické výkaznictví (ER)"
+title: "Návrh formátu pro použití vodorovně rozbalovacích oblastí k dynamickému přidání sloupců v sestavách aplikace Excel"
 description: "Následující postup vysvětluje, jak uživatel s přiřazenou rolí správce systému nebo vývojáře elektronického výkaznictví může nakonfigurovat formát elektronických sestav (ER) ke generování sestav jako soubory s listy OPENXML (Excel), ve kterých lze dynamicky vytvářet požadované sloupce jako vodorovně rozbalitelné rozsahy."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1ccf3b2d81066fce80fe14428fab24020ab85496
-ms.openlocfilehash: b921b5ff51f951112031fe8b1bc2faa90cf29a28
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d9c3cf17cd406a50a9f92e78991289f9139d7c73
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-for-electronic-reporting-er"></a>Návrh formátu pro použití vodorovně rozbalovacích oblastí k dynamickému přidání sloupců v sestavách aplikace Excel pro elektronické výkaznictví (ER)
+# <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports"></a>Návrh formátu pro použití vodorovně rozbalovacích oblastí k dynamickému přidání sloupců v sestavách aplikace Excel
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Následující postup vysvětluje, jak uživatel s přiřazenou rolí správce systému nebo vývojáře elektronického výkaznictví může nakonfigurovat formát elektronických sestav (ER) ke generování sestav jako soubory s listy OPENXML (Excel), ve kterých lze dynamicky vytvářet požadované sloupce jako vodorovně rozbalitelné rozsahy. Tyto kroky lze provést v rámci libovolné společnosti.
 
@@ -36,7 +36,7 @@ Elektronické výkaznictví – Používání finančních dimenzí jako zdroje 
 
 Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 2: mapování modelu)
 
-Musíte též stáhnout a uložit místní kopii šablony se vzorovou sestavou, kterou naleznete zde [https://go.microsoft.com/fwlink/?linkid=862266](https://go.microsoft.com/fwlink/?linkid=862266). 
+Je nutné stáhnout a uložit místní kopii šablony se zde nalezenou vzorovou sestavou [https://go.microsoft.com/fwlink/?linkid=862266](https://go.microsoft.com/fwlink/?linkid=862266). 
 
 
 Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.

@@ -19,16 +19,16 @@ ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6cd1e3a1f6b5c979a4f60d97cc2203cdcd32bbbe
-ms.openlocfilehash: 6de88b82c9a663bfe6d2756fde6f1a7412a44b1e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1ae0f142ebd2252b1df414998c153d32127bc1b7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="pay-based-on-registrations"></a>Plat na základě registrace
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma podrobně popisuje způsob výpočtu mzdy na základě registrací pracovníka. Obsahuje příklady ukazující, jak různé kombinace možností nastavení, které jsou k dispozici pro výpočet, ovlivní výsledek. Zde jsou uvedeny některé z oblastí, které budou pokryty:
 
@@ -158,7 +158,7 @@ Například ve scénáři 2 jsou generovány následující položky mzdy.
 
 | Typ mzdy     | Typ mzdy | Mzdové jednotky | Kurz  | Celkové náklady |
 |---------------|----------|-----------|-------|------------|
-| Standardní čas | 1201     | 10.0      | 10    | 1597        |
+| Standardní čas | 1201     | 10.0      | 10    | 100        |
 | Přesčas      | 1301     | 1.50      | 5     | 7.50       |
 |               |          |           | Celkem | 107.50     |
 
@@ -182,7 +182,7 @@ Po úpravě parametrů výpočtu jsou generovány následující položky mzdy.
 | Typ mzdy     | Typ mzdy | Mzdové jednotky | Kurz  | Celkové náklady |
 |---------------|----------|-----------|-------|------------|
 | Standardní čas | 1201     | 8.50      | 10    | 85.0       |
-| Přesčas      | 1301     | 1.50      | září    | 22.50      |
+| Přesčas      | 1301     | 1.50      | 15    | 22.50      |
 |               |          |           | Celkem | 107.50     |
 
 > [!NOTE]
@@ -227,7 +227,7 @@ Po převodu jsou generovány následující položky mzdy.
 | Typ mzdy     | Typ mzdy | Mzdové jednotky | Kurz  | Celkové náklady |
 |---------------|----------|-----------|-------|------------|
 | Standardní čas | 1201     | 8.50      | 10    | 85.0       |
-| Přesčas      | 1305     | 1.50      | září    | 22.50      |
+| Přesčas      | 1305     | 1.50      | 15    | 22.50      |
 |               |          |           | Celkem | 107.50     |
 
 Na stránce **Schválit** zrušte převod a poté pomocí nabídky **Přepínací kód** aplikujte přepínací kód **OTBCI**. Při druhém převodu registrací jsou vygenerovány následující položky mzdy.
@@ -235,7 +235,7 @@ Na stránce **Schválit** zrušte převod a poté pomocí nabídky **Přepínac�
 | Typ mzdy     | Typ mzdy | Mzdové jednotky | Kurz  | Celkové náklady |
 |---------------|----------|-----------|-------|------------|
 | Standardní čas | 1201     | 8.50      | 10    | 80.0       |
-| Přesčas      | 1305     | 2,00      | září    | 30.0       |
+| Přesčas      | 1305     | 2,00      | 15    | 30.0       |
 |               |          |           | Celkem | 107.50     |
 
 > [!NOTE]
@@ -446,7 +446,7 @@ Můžete vytvořit plánovanou absenci pro pracovníky na stránce **Vytvořit p
 Úloha je založena na dotazu. Můžete tedy vytvořit plánovanou absenci u více pracovníků, jako jsou například pracovníci, kteří patří do stejné skupiny výpočtu. Pokud je plánovaná absence pro jednoho zaměstnance, lze zadat registrace ze stránky **Docházka** nebo **Pracovníci s registrací času**.
 
 - Chcete-li zadat registrace absencí ze stránky **Docházka**, vyberte **Čas a docházka** &gt; **Dotazy a sestavy** &gt; **Docházka** &gt; **Docházka**a poté vyberte **Registrace absencí**.
-- Chcete-li zadat registrace absencí ze stránky ***Pracovníci registrace času***, vyberte **Čas a docházka** &gt; **Nastavení** &gt; **Pracovníci registrace času**a poté na kartě **Čas** pod položkou **Přiřazení času** vyberte **Registrace absencí**.
+- Chcete-li zadat registrace absencí ze stránky *<strong><em>Pracovníci registrace času</em></strong>*, vyberte <strong>Čas a docházka</strong> &gt; <strong>Nastavení</strong> &gt; <strong>Pracovníci registrace času</strong> a poté na kartě <strong>Čas</strong> pod položkou <strong>Přiřazení času</strong> vyberte <strong>Registrace absencí</strong>.
 
 Můžete použít sestavu **Plánované absence** pro získání přehledu o plánovaných absencích pracovníků. Chcete-li otevřít tuto sestavu, vyberte **Čas a docházka** &gt; **Dotazy a sestavy** &gt; **Sestavy absencí** &gt; **Plánované absence**.
 
@@ -548,7 +548,7 @@ Pokud je zaškrtnuto políčko **Odečíst přesčas** pro vybraný kód absence
 | Typ mzdy     | Typ mzdy | Mzdové jednotky | Kurz |
 |---------------|----------|-----------|------|
 | Standardní čas | 1201     | 9:00      | 10   |
-| Přesčas      | 1301     | 0.5       | září   |
+| Přesčas      | 1301     | 0.5       | 15   |
 
 Od 1,5 hodin nelegální absence v době z 07:00 do 09:30 hodin ráno se odečte 2,0 hodin přesčasu z 03:30 odpoledne do 05:30 hodin odpoledne. Výsledek registrace je 1,5 hodiny standardního času a 0,5 hodiny přesčasu.
 
@@ -557,7 +557,7 @@ Naopak pokud není zaškrtnuto zaškrtávací políčko **Odečíst přesčas** 
 | Typ mzdy     | Typ mzdy | Mzdové jednotky | Kurz |
 |---------------|----------|-----------|------|
 | Standardní čas | 1201     | 7.50      | 10   |
-| Přesčas      | 1301     | 2.0       | září   |
+| Přesčas      | 1301     | 2.0       | 15   |
 
 ### <a name="scenario-5-the-worker-clocks-out-before-the-planned-clock-out-time-and-can-convert-the-absence-period-to-a-flex--period"></a>Scénář 5: Pracovník označí odchod před plánovaný časem odchodu a může převést dobu absence do pružné pracovní doby (Flex-)
 

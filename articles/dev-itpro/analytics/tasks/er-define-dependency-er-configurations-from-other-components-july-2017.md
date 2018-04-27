@@ -1,5 +1,5 @@
 --- 
-title: "Definování závislosti konfigurací z jiných komponent pro elektronické výkaznictví (ER)"
+title: "Definování závislosti konfigurace ER z jiných komponent"
 description: "K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh, ER Správa konfigurací mapování modelů, a mít přístup k aplikaci Microsoft Dynamics Lifecycle Services (LCS)."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a1ccd440353e986d296de370506fb1951331e2cf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: cbd65f0734f54ed497758faffb452e4f61ab2089
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="define-the-dependency-of-configurations-from-other-components-for-electronic-reporting-er"></a>Definování závislosti konfigurací z jiných komponent pro elektronické výkaznictví (ER)
+# <a name="define-the-dependency-of-configurations-from-other-components"></a>Definování závislosti konfigurace ER z jiných komponent 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh, ER Správa konfigurací mapování modelů, a mít přístup k aplikaci Microsoft Dynamics Lifecycle Services (LCS).
 

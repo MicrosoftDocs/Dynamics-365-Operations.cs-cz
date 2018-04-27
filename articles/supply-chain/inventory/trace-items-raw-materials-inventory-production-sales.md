@@ -19,17 +19,16 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7af00d0c66f70aa41cfab0ffccef39ba4c115803
-ms.openlocfilehash: 98f5696cd6a279bdf0f8d9026a74e5a9bccd2f13
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 60edc05bb45db973eb2e16dd833015c9a4873918
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Sledování zboží a surovin ve skladu, při výrobě a prodeji
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak můžete použít sledování položky k identifikaci, kde bylo použito zboží nebo suroviny, nebo kde budou použity ve výrobě a prodejních procesech.
 
@@ -129,7 +128,7 @@ Po spuštění sledování, můžete pomocí možností tlačítka **Sledovat z 
 Pokud chcete použít možnost **Nové zpětné sledování** nebo **Nové dopředné sledování**, musíte použít funkci **Otevřít v novém okně** a nové sledování tak otevřít v novém okně.
 
 ## <a name="can-i-save-the-trace-details"></a>Je možné uložit podrobnosti o sledování?
-Informace můžete uložit na kartu **Podrobnosti** jako soubor XML kliknutím na **Export** pod akcí ****Sledování**** na panelu akcí. Kromě podrobností o sledování obsahuje soubor XML kritéria sledování, nadřazený uzel a množství na skladě. Možnost uložení podrobností o sledování je užitečné, například pokud mají být připojeny informace o objednávce kvality nebo jiná dokumentace o kompatibilitě. Můžete určit, kde je soubor uložen. Chcete-li zobrazit soubor ihned, vyberte možnost **Zobrazit dokument**. **Poznámka:** Soubor se uloží vždy, i v případě, že ho chcete pouze zobrazit. Ve výchozím nastavení se otevře soubor XML v okně prohlížeče. To lze změnit klepnutím pravým tlačítkem myši na soubor, výběrem volby **Otevřít v programu** a potom výběrem programu, který se má použít k zobrazení obsahu.
+Informace můžete uložit na kartě <strong>Podrobnosti</strong> jako soubor XML kliknutím na <strong>Export</strong> pod položkou *<strong><em>Sledování</em></strong>* v podokně akcí. Kromě podrobností o sledování obsahuje soubor XML kritéria sledování, nadřazený uzel a množství na skladě. Možnost uložení podrobností o sledování je užitečné, například pokud mají být připojeny informace o objednávce kvality nebo jiná dokumentace o kompatibilitě. Můžete určit, kde je soubor uložen. Chcete-li zobrazit soubor ihned, vyberte možnost <strong>Zobrazit dokument</strong>. <strong>Poznámka:</strong> Soubor se uloží vždy, i v případě, že ho chcete pouze zobrazit. Ve výchozím nastavení se otevře soubor XML v okně prohlížeče. To lze změnit klepnutím pravým tlačítkem myši na soubor, výběrem volby <strong>Otevřít v programu</strong> a potom výběrem programu, který se má použít k zobrazení obsahu.
 
 ## <a name="can-i-calculate-a-balance-for-a-particular-item-or-ingredient"></a>Lze vypočítat zůstatek pro konkrétní položku nebo látku?
 Informace můžete exportovat ze souhrnných stránek do aplikace Microsoft Excel. Otevřete odpovídající stránku, klepněte na ikonu **Otevřít v aplikaci Microsoft Office** a poté vyberte **Exportovat do aplikace Excel**. Tato funkce je zvlášť užitečná, když chcete vypočítat hromadný zůstatek položky nebo látky ze stránky **Souhrnné transakce**. Na stránce **Souhrnné transakce** můžete filtrovat podle zboží nebo složky a dávky, pokud chcete, a poté exportovat informace do aplikace Excel. V aplikaci Excel například můžete izolovat množství na skladě, prodané množství a částku, která byla použita ve výrobě.

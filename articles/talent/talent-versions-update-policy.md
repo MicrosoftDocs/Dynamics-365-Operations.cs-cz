@@ -18,17 +18,16 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: fc0e71e2ffc2adbaed598f788141b651fbcc616a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 954f6237739defe14aaa13b19641f9f9d27b5fac
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="microsoft-dynamics-365-for-talent-system-requirements-and-update-policy"></a>Zásady aktualizace a systémové požadavky pro Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 V tomto tématu je uveden seznam požadavků pro aplikaci Microsoft Dynamics 365 for Talent. Jsou zde také popsány zásady aktualizací.
 
@@ -47,21 +46,21 @@ Poslední verzi pro každý webový prohlížeč naleznete na webu výrobce soft
 > * K zachycení bitových kopií, které jsou generovány ze Záznamníku úkolů a jejich zahrnutí do dokumentů aplikace Microsoft Word, musíte mít nainstalováno rozšíření Chrome. 
 > * Editor pracovního postupu je spuštěn jako aplikace ClickOnce. Aplikace ClickOnce podporují pouze Microsoft Edge and Internet Explorer (v podporované verzi systému Microsoft Windows). Editor pracovního postupu aplikace ClickOnce vyžaduje 64bitový kompatibilní operační systém.
 > * K zobrazení náhledu souborů PDF doporučujeme používat moderní prohlížeče, jako je Microsoft Edge (nejnovější veřejně dostupnou verzi) na operačním systému Windows 10, nebo Google Chrome (nejnovější veřejně dostupnou verzi) na operačních systémech Windows 10, Windows 8.1, Windows 8, Windows 7 nebo na tabletu Google Nexus 10.
-Požadavky na síť
-> * Aplikace Dynamics 365 for Talent je určena pro sítě s čekací dobou 250–300 milisekund (ms) nebo méně. Toto je čekací doba z prohlížeče klienta datového centra Microsoft Azure, který je hostitelem aplikace Dynamics 365 for Talent. Doporučujeme otestovat latenci sítě na stránkách [www.azurespeed.com] (http://www.azurespeed.com "Test latence Azure").
+>   Požadavky na síť
+> * Aplikace Dynamics 365 for Talent je určena pro sítě s čekací dobou 250–300 milisekund (ms) nebo méně. Toto je čekací doba z prohlížeče klienta datového centra Microsoft Azure, který je hostitelem aplikace Dynamics 365 for Talent. Doporučujeme otestovat latenci sítě na stránkách [www.azurespeed.com](http://www.azurespeed.com "Test latence Azure").
 > * Požadavky na šířku pásma pro Dynamics 365 for Talent závisí na vašem scénáři. Některé běžné scénáře vyžadují šířku pásma větší než 50 kilobajtů za sekundu (kb/s).
-
+> 
 > [!WARNING]
 > Nepočítejte požadavky na šířku pásma z klientského umístění tím, že vynásobíte počet uživatelů minimálními požadavky na šířku pásma. Souběžné využití daného umístění je velmi obtížné vypočítat. Pro zákazníky, kteří mají pochybnosti ohledně požadavků na šířku pásma, použijte zkušební verzi aplikace Dynamics 365 for Talent.
 
 ## <a name="supported-microsoft-office-applications"></a>Podporované aplikace Microsoft Office
 
-*   Chcete-li používat doplňky aplikace Microsoft Excel a Word, musíte mít nainstalovanou sadu Microsoft Office 2016 pro Windows nebo Mac. Další informace o požadavcích na verzi naleznete v tématu [Řešení problémů s integrací se sadou Office] (../dev-itpro/office-integration/office-integration-troubleshooting.md "Řešení problémů s integrací se sadou Office").
-*   Chcete-li zobrazit dokumenty, které jsou generovány pomocí funkce exportu do aplikace Excel nebo Word funkce, musíte mít nainstalovanou sadu Microsoft Office 2007 nebo novější.
+* Chcete-li používat doplňky aplikace Microsoft Excel a Word, musíte mít nainstalovanou sadu Microsoft Office 2016 pro Windows nebo Mac. Další informace o požadavcích na verzi naleznete v tématu [Office integration troubleshooting](../dev-itpro/office-integration/office-integration-troubleshooting.md "Řešení problémů s integrací se sadou Office").
+* Chcete-li zobrazit dokumenty, které jsou generovány pomocí funkce exportu do aplikace Excel nebo Word funkce, musíte mít nainstalovanou sadu Microsoft Office 2007 nebo novější.
 
 ## <a name="update-policy"></a>Zásady aktualizace
 
 Aplikace Microsoft Dynamics 365 for Talent se servisuje jako cloudová nabídka. Aktualizace pro aplikaci Dynamics 365 for Talent jsou nepřetržité a automaticky aplikované společností Microsoft.
 
-Aktualizace jsou vydávány v pravidelných intervalech a použijí se na všechna prostředí.  Aplikace Dynamics 365 for Talent je podporována v souladu se zásadami [Životní cyklus podpory od společnosti Microsoft] (https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Životní cyklus podpory od společnosti Microsoft"), které poskytují konzistentní a předpověditelné pokyny pro dostupnost podpory produktu.
+Aktualizace jsou vydávány v pravidelných intervalech a použijí se na všechna prostředí.  Aplikace Dynamics 365 for Talent je podporována v souladu se zásadami [Životní cyklus podpory od společnosti Microsoft](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), které poskytují konzistentní a předpověditelné pokyny pro dostupnost podpory produktu.
 

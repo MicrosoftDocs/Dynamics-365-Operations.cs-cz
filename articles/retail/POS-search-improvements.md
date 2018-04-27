@@ -1,9 +1,9 @@
 ---
 title: "Vyhledávání produktu a vyhledávání zákazníka v POS"
-description: "Toto téma poskytuje přehled vylepšení, která byla provedena v aplikaci Dynamics 365 for Retail ohledně funkce vyhledávání produktu a vyhledávání zákazníka."
+description: "Toto téma poskytuje přehled vylepšení, která byla provedena v aplikaci Microsoft Dynamics 365 for Retail ohledně funkce vyhledávání produktu a vyhledávání zákazníka."
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 08/16/2017
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -19,22 +19,22 @@ ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: bd563610616fa72a610e0b134371765cc1edacc6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b055ae09e87434f9e43c558e2a43d0467d70aaed
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="overview-of-product-and-customer-search-in-point-of-sale"></a>Přehled vyhledávání produktu a zákazníka v pokladním místě
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
-Moderní pokladní místo (MPOS) a cloudové pokladní místo (CPOS) poskytují snadno použitelnou funkci vyhledávání, která umožní zaměstnancům rychlé vyhledávání produktů a zákazníků. Panel vyhledávání je vždy k dispozici v horní části MPOS a CPOS, aby zaměstnanci mohli rychle vyhledat produkty a zákazníky.
+Moderní pokladní místo (MPOS) a cloudové pokladní místo (CPOS) poskytují snadno použitelnou funkci vyhledávání produktů a zákazníků. Panel vyhledávání je vždy k dispozici v horní části oken MPOS a CPOS, aby zaměstnanci mohli rychle vyhledat produkty a zákazníky.
 
-Zaměstnanci mohou hledat produkty v sortimentech a katalozích, které jsou přiřazeny k aktuálnímu obchodu, a v sortimentech a katalozích, které jsou spojeny s jiným obchodem ve společnosti. Proto pokladníci mohou prodávat a vracet produkty mimo sortiment obchodu. Stejně tak mohou zaměstnanci vyhledávat zákazníky, kteří jsou ve společnosti spojeni s běžným obchodem nebo jiným obchodem. Kromě toho mohou zaměstnanci vyhledávat zákazníky, kteří jsou spojeni s jinou společností v nadřazené organizaci.
+Zaměstnanci mohou vyhledávat produkty v katalozích, které souvisejí s aktuálním obchodem. Mohou také vyhledávat produkty v katalozích, které souvisejí s jiným obchodem ve společnosti. Proto pokladníci mohou prodávat a vracet produkty mimo sortiment obchodu. Stejně tak mohou zaměstnanci vyhledávat zákazníky, kteří jsou ve společnosti spojeni s běžným obchodem nebo jiným obchodem. Kromě toho mohou zaměstnanci vyhledávat zákazníky, kteří jsou spojeni s jinou společností v nadřazené organizaci.
 
-## <a name="product-search"></a>Hledání produktu 
+## <a name="product-search"></a>Hledání produktu
 
 Ve výchozím nastavení se vyhledávání produktů provádí v sortimentu obchodu. Tento typ vyhledávání se nazývá *vyhledávání místních produktů*. Zaměstnanci však mohou snadno přepnout do libovolného katalogu, který je přidružen k aktuálnímu obchodu, nebo mohou vyhledávat v jiném obchodě. Tento typ vyhledávání se nazývá *vyhledávání vzdálených produktů*. Chcete-li změnit katalog, zvolte tlačítko **Kategorie** v levé části stránky. V horní části zobrazeného podokna vyberte tlačítko **Změnit katalog** a vyberte jeden z dostupných katalogů pro jeho prohlížení. Systém bude prohledávat vybraný katalog produktů.
 
@@ -53,10 +53,10 @@ Vyhledávání místních produktů vyhledává v rámci následujících vlastn
 
 ### <a name="enhancements-to-local-product-searches"></a>Vylepšení vyhledávání místních produktů
 
-Zkušenosti při hledání místních produktů byly provedeny tak, aby byly více uživatelsky přívětivější. Byla provedena následující vylepšení:
+Zkušenosti při hledání místních produktů jsou uživatelsky přívětivější. Byla provedena následující vylepšení:
 
 - Rozbalovací nabídky produktu a zákazníka byly přidány do vyhledávacího panelu, takže zaměstnanci mohou před vyhledáváním vybrat buď **Produkt** nebo **Zákazník**. Ve výchozím nastavení je vybrán **Produkt**, jak je uvedeno na následujícím obrázku.
-- U vyhledávání s více klíčovými slovy (to znamená u vyhledávání, které používají hledané termíny) mohou prodejci nakonfigurovat, zda výsledky vyhledávání mají obsahovat výsledky, které odpovídají libovolnému hledanému termínu, nebo pouze výsledky, které odpovídají všem hledaným termínům. Toto nastavení je k dispozici v profilu funkce POS pod novou skupinu s názvem **Vyhledávání produktu**. Ve výchozím nastavení je **Spárovat jakékoli hledané termíny**. Toto nastavení je rovněž doporučené nastavení. Při použití nastavení **Spárovat jakékoli hledané termíny** se vrátí jako výsledky všechny produkty, které zcela nebo částečně odpovídají jednomu nebo více hledaným termínům, a výsledky jsou roztříděny automaticky podle produktů, které mají největší shodu s klíčovým slovem (úplnou nebo částečnou).
+- U vyhledávání s více klíčovými slovy (to znamená u vyhledávání, které používají hledané termíny) mohou prodejci nakonfigurovat, zda výsledky vyhledávání mají obsahovat výsledky, které odpovídají *libovolnému* hledanému termínu, nebo pouze výsledky, které odpovídají *všem* hledaným termínům. Toto nastavení je k dispozici v profilu funkce POS pod novou skupinu s názvem **Vyhledávání produktu**. Ve výchozím nastavení je **Spárovat jakékoli hledané termíny**. Toto nastavení je rovněž doporučené nastavení. Pokud je použito nastavení **Spárovat jakýkoli zadaný termín**, jsou vráceny všechny produkty, které plně nebo částečně odpovídají jednomu nebo více hledaným termínům. Výsledky se automaticky seřadí vzestupně podle produktů, které mají nejvíce shod klíčových slov (úplných nebo částečných).
 
     Nastavení **Spárovat všechny hledané termíny** vrátí pouze produkty odpovídající všem hledaným termínům (úplné nebo částečné). Toto nastavení je užitečné, když jsou názvy produktu dlouhé a zaměstnanci potřebují zobrazit pouze omezené produkty ve výsledcích vyhledávání. Tento typ vyhledávání však má dvě omezení:
 
@@ -83,7 +83,23 @@ V případě vyhledávání vzdáleného zákazníka se ID zákazníka nezobrazu
 
 ![Vyhledávání globálních zákazníků](./media/Globalcustomersearch.png "Vyhledávání globálních zákazníků")
 
-### <a name="enhancements-to-local-customer-searches"></a>Vylepšení vyhledávání místních zákazníků
+### <a name="enhancements-to-local-customer-search"></a>Vylepšení vyhledávání místních zákazníků
 
-Vyhledávání místních zákazníků pomáhá zaměstnancům rychle nalézt zákazníka podle telefonního čísla. Zaměstnanci nemusí zadávat žádné speciální znaky, které byly přidány do telefonní číslo zákazníka, například mezery, závorky nebo pomlčky. Ačkoli pokladníci mohou ukládat telefonní čísla v libovolném formátu (například mohou obsahovat závorky, pomlčky, symboly atd.), mohou hledat zákazníky zadáním částečného telefonního čísla. Pokud pokladník zahrnul speciální znaky, když zadal telefonní číslo, jiní pokladníci najdou zákazníka zadáním čísel, které se objeví za speciálními znaky. Pokud telefonní číslo zákazníka byl zadáno například jako **123-456-7890**, pokladník můžete hledat zákazníka zadáním **123**, **456**, **7890**, nebo **1234567890**, nebo částečně zadáním několika počátečních čísel telefonního čísla.
+Hledání, které jsou založeny na telefonním čísle, byla zjednodušena. Tato hledání nyní ignorují speciální znaky, například mezery, pomlčky nebo hranaté závorky, které mohly být přidané při vytvoření odběratele. Pokladníci si tak nemusí dělat starosti s formátem telefonního čísla při hledání. Mohou také vyhledávat zákazníky zadáním částečného telefonního čísla. Pokud telefonní číslo zahrnuje speciální znaky, lze je najít také hledáním čísel, která se zobrazí za těmito znaky. Pokud telefonní číslo zákazníka byl zadáno například jako **123-456-7890**, pokladník můžete hledat zákazníka zadáním **123**, **456**, **7890**, nebo **1234567890**, nebo zadáním několika počátečních čísel telefonního čísla.
+
+Tradiční vyhledávání zákazníků může být časově náročné, protože vyhledává mezi více poli. Místo toho mohou pokladníci nyní hledat v jedné vlastní vlastnosti, jako je jméno, e-mailová adresa nebo telefonní číslo. Vlastnosti, které používá algoritmus hledání odběratele, jsou souhrnně označovány jako *kritéria hledání odběratele*. Správce systému může snadno konfigurovat jedno nebo více kritérií jako zástupce, který se zobrazí v POS. Vzhledem k tomu, že je hledání omezeno na jediné kritérium, jsou zobrazeny pouze relevantní výsledky hledání a výkon je mnohem lepší než výkon standardního hledání odběratele. Následující obrázek znázorňuje zkratky hledání odběratele v POS.
+
+![Zkratky hledání odběratele](./media/SearchShortcutsPOS.png "zkratky hledání odběratele")
+
+Aby bylo možné nastavit kritérium hledání jako zástupce, musí správce otevřít stránku **parametry maloobchodu** v aplikaci Microsoft Dynamics 365 for Finance and Operations a poté na stránce **kritéria vyhledávání POS** vyberat všechna kritéria, která se mají zobrazit jako zástupci.
+
+![Konfigurace vyhledávání zástupců](./media/ConfigureShortcutsAX.png "Konfigurace vyhledávání zástupců")
+
+> [!NOTE]
+> Pokud přidáte příliš mnoho zástupců, rozevírací nabídka panelu vyhledávání v POS se přehltí a může to ovlivnit vyhledávání zaměstnance. Doporučujeme přidávat pouze tolik zástupců, kolik potřebujete.
+
+Pole **Pořadí zobrazení** určuje pořadí, ve kterém jsou zobrazeny zkratky v POS. Kritéria, která jsou zobrazena ve vlastnostech ihned po vybalení, které používá algoritmus hledání odběratele pro hledání odběratele. Partneři však mohou přidat vlastní vlastnosti jako zástupce hledání. Pokud chcete přidat vlastní vlastnosti jako zkratky hledání, musí správce systému rozšířit rozšiřitelné vyčíslení (enum), které se používá pro kritéria vyhledávání odběratele, a následně označit vlastní vlastnosti partnera jako zástupce. Partneři zodpovídají za zápis kódu k vyhledání výsledků, když se používají k hledání jejich vlastní zástupci.
+
+> [!NOTE]
+> Vlastní vlastnost, která je přidána do výčtu, neovlivní standardní algoritmus hledání odběratele. Jinými slovy, algoritmus hledání zákazníků nevyhledává ve vlastní vlastnosti. Uživatelé mohou vlastní vlastnosti použít k vyhledávání pouze v případě, že je vlastní vlastnost přidána jako zástupce, případně je přepsán výchozí algoritmus hledání.
 

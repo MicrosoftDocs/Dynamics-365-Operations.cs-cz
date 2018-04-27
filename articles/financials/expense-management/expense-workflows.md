@@ -19,16 +19,18 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 19d725f15f00afce1a2ae4b336226f1dafa94b41
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: cf35406b43c1ec40a7c248b970559b65fcd8a6c6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-workflows-for-expense"></a>Nastavení workflow pro výdaje
 
-[!include[banner](../includes/banner.md)] Můžete nastavit proces workflowu, který se používá ke kontrole a schválení dokumentů cestovného a výdajů. Dokumenty, pro která lze workflow definovat, zahrnují vyúčtování výdajů, cestovní žádanky a požadavky na hotovostní zálohu.
+[!INCLUDE [banner](../includes/banner.md)]
+
+ Můžete nastavit proces workflowu, který se používá ke kontrole a schválení dokumentů cestovného a výdajů. Dokumenty, pro která lze workflow definovat, zahrnují vyúčtování výdajů, cestovní žádanky a požadavky na hotovostní zálohu.
 
 Workflow představuje obchodní proces. Definuje, jakým způsobem dokument prochází systémem a určuje, kdo musí zpracovat úkol nebo schválit dokument. Používání systému workflowu v organizaci má několik výhod:
 
@@ -42,13 +44,15 @@ Workflow představuje obchodní proces. Definuje, jakým způsobem dokument proc
 
 V následující tabulce jsou uvedeny typy pracovních procesů, které můžete vytvořit v části **Výdaje**.
 
-| **Typ**                           | **Tento typ slouží k:**                                                 |     
-|------------------------------------|----------------------------------------------------------------------|
-| **Vyúčtování výdajů**                 | Vytváření workflowů schválení pro sestavy výdajů.                       |      
-| **Automatické zaúčtování sestavy výdajů**    | Vytváření workflowů automatického zaúčtování pro sestavy výdajů.              |     
-| **Položka řádku výdajů**              | Vytváření workflowů schválení pro položky řádků na sestavě výdajů.         |     
-| **Automatické zaúčtování položek řádku výdajů** | Vytváření workflowů automatického zaúčtování pro položky řádků na sestavě výdajů.|
-| **Cestovní žádanka**             | Vytváření workflowů pro cestovní žádanky.                   |    
-| **Požadavek na hotovostní zálohu**           | Vytvoření workflowů schválení pro požadavky na hotovostní zálohu.                 |     
-| **Vratka daně DPH**               | Vytvoření workflowů schválení pro vratky daně DPH. |       
+
+|              <strong>Typ</strong>              |                   <strong>Tento typ slouží k:</strong>                   |
+|-------------------------------------------------|-----------------------------------------------------------------------|
+|         <strong>Vyúčtování výdajů</strong>         |            Vytváření workflowů schválení pro sestavy výdajů.             |
+|  <strong>Automatické zaúčtování sestavy výdajů</strong>   |        Vytváření workflowů automatického zaúčtování pro sestavy výdajů.        |
+|       <strong>Položka řádku výdajů</strong>        |     Vytváření workflowů schválení pro položky řádků na sestavě výdajů.      |
+| <strong>Automatické zaúčtování položek řádku výdajů</strong> | Vytváření workflowů automatického zaúčtování pro položky řádků na sestavě výdajů. |
+|       <strong>Cestovní žádanka</strong>       |          Vytváření workflowů pro cestovní žádanky.           |
+|      <strong>Požadavek na hotovostní zálohu</strong>      |         Vytvoření workflowů schválení pro požadavky na hotovostní zálohu.          |
+|        <strong>Vratka daně DPH</strong>        | Vytvoření workflowů schválení pro vratky daně DPH.  |
+
 

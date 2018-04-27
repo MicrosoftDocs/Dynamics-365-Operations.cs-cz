@@ -18,17 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7c713f3a1cb5aa4758a72a7cc42c73c57b602219
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2ee60f3d1155b89d342b94832fbdbe898a5063c6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="intrastat"></a>Systém Intrastat
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek obsahuje informace o vykazování Intrastat pro obchodování se zbožím a v některých případech mezi zeměmi/oblastmi Evropské unie (EU). Poskytuje přehled o procesu vykazování a popisuje požadované nastavení a požadavky.
 
@@ -228,7 +227,7 @@ Stránka **Parametry zahraničního obchodu** slouží k nastavení parametrů u
 </tr>
 <tr class="even">
 <td>Kontaktní informace o zástupci</td>
-<td>Zadejte jméno zástupce, jeho adresu, číslo osvobození od daně, telefonní číslo a číslo faxu.</td>
+<td>Zadejte jméno zástupce, jeho adresu, číslo osvobození od daně, telefonní číslo a číslo faxu.</td>
 </tr>
 <tr class="odd">
 <td>Vlastnosti země/oblasti</td>
@@ -241,7 +240,7 @@ Stránka **Parametry zahraničního obchodu** slouží k nastavení parametrů u
 </tbody>
 </table>
 
- 
+
 
 
 

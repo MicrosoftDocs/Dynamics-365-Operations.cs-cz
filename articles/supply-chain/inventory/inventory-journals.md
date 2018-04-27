@@ -1,9 +1,9 @@
 ---
 title: "Skladové deníky"
-description: "Tento článek popisuje, jak můžete použít deníky zásob k zaúčtování různých typů transakcí fyzických zásob."
-author: MarkusFogelberg
+description: "Toto téma popisuje, jak můžete použít deníky zásob k zaúčtování různých typů transakcí fyzických zásob."
+author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,21 +19,20 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 968bf9a243d0c0cc9f0dfec474cb207ca32f9eeb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7e6ac46cc4d4961cdd76f6127d8900a9b3d13a39
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="inventory-journals"></a>Skladové deníky
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
-
-Tento článek popisuje, jak můžete použít deníky zásob k zaúčtování různých typů transakcí fyzických zásob.
+Toto téma popisuje, jak můžete použít deníky zásob k zaúčtování různých typů transakcí fyzických zásob.
 
 Deníky zásob v aplikaci Microsoft Dynamics 365 for Finance and Operations se používají ke zpracovávání různých typů transakcí fyzických zásob, například k zaúčtování výdejů a příjmů, pohybu zásob, vytváření kusovníků a odsouhlasení fyzických zásob. Všechny tyto deníky zásob se používají podobným způsobem, avšak rozděleny jsou do různých typů.
 
@@ -51,7 +50,7 @@ K dispozici jsou následující typy deníků zásob:
 
 ### <a name="movement"></a>Pohyb
 
-Při použití deníku pohybů zásob můžete při přidání zásob přidat náklady k položce, ale další náklady je nutné na konkrétní účet hlavní knihy přidělit ručně určením protiúčtu hlavní knihy při vytvoření deníku. Tento typ deníku zásob je užitečný, když chcete položku vydat podle různých oddělení nebo pokud chcete odebrat položky ze skladu pro účely výdajů.
+Při použití deníku pohybů zásob můžete při přidání zásob přidat náklady k položce, ale další náklady je nutné na konkrétní účet hlavní knihy přidělit ručně určením protiúčtu hlavní knihy při vytvoření deníku. Tento typ deníku zásob je užitečný, pokud chcete přepsat výchozí účty pro zaúčtování.
 
 ### <a name="inventory-adjustment"></a>Úprava zásob
 
@@ -95,4 +94,30 @@ Deník může používat vždy jen jeden uživatel. Pokud s deníky chce pracova
 
 ## <a name="posting-journal-lines"></a>Řádky účetních deníků
 Vámi vytvořené řádky deníku můžete zaúčtovat kdykoli, dokud položku neuzamknete před dalšími transakcemi. Data, která zadáte do deníku, zůstanou v deníku, i když deník zavřete bez zaúčtování řádků.
+
+## <a name="data-entity-support-for-inventory-journals"></a>Podpora dat entit pro skladové deníky
+
+Datové entity podporují scénáře integrace mezi následujícími typy:
+-    Synchronní servis (OData)
+-  Asynchronní integrace
+
+Další informace viz [Datové entity](../../dev-itpro/data-entities/data-entities.md).
+
+> [!NOTE]
+> Ne všechny deníky zásob mají povolen OData, proto nemůžete použít konektor excelových dat k publikování, aktualizaci a importu dat zpět do aplikace Dynamics 365 for Finance and Operations. 
+
+Další rozdíl mezi datovými entitami deníku je schopnost používat složené entity, které zahrnují záhlaví a řádků data. Nyní můžete složené entity používat pro:
+-   Deník úprav zásob
+-   Deník pohybu zásob
+
+Tyto dva skladové deníky podporují pouze scénář *Inicializovat sklad* scénář v rámci projektu správy importu dat:
+-  Pokud není zadáno číslo záhlaví deníku, ale je zadána číselná řada pro daný typ deníku, úloha importu automaticky vytvoří deník záhlaví na 1000 řádků. Například import 2020 řádků vytvoří následující tři záhlaví deníku:
+    -  Záhlaví 1: bude obsahovat 1000 řádků
+    -  Záhlaví 2: bude obsahovat 1000 řádků
+    -  Záhlaví 3: bude obsahovat 20 řádků
+-  Předpokládá se, že existují jedinečné informace řádku pro dimenzi zásob, což může být produkt, skladiště a sledovací dimenze. Proto není možné provést import řádků deníku, pokud se liší pouze pole data na řádcích v rámci stejného projektu importu.
+
+## <a name="additional-resources"></a>Další zdroje
+
+[Datové entity](../../dev-itpro/data-entities/data-entities.md)
 

@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 09a182b50917bff449f76598d61c38ae18160dd1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8652766766a557d8399e6a94088a6f9bc82ff018
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Rozšířené možnosti formátování ve finančním výkaznictví
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Vytvoříte-li zprávu ve finančním vykazování, budou k dispozici další funkce formátování, včetně filtrů pro dimenze, omezení pro sloupce a jednotky vykazování, řádky neurčené pro tisk a výrazy IF/THEN/ELSE ve výpočtech. 
 
@@ -66,12 +65,13 @@ V následujících příkladech je ukázáno formátování definice řádku a d
 
 Následující tabulka znázorňuje příklad definice řádku používající základní vynucení.
 
-| Kód řádku | popis                      | Kód formátu | Související vzorce/řádky/jednotky | Modifikátor řádku | Odkaz na finanční dimenze |
-|----------|----------------------------------|-------------|-----------------------------|----------------|----|
-| 100      | Hotovost na začátku období (NP) |             |                             | Modifikátor účtu = \[/BB\] | +Segment2 = \[1100\]         |
-| 1.3.0      | Hotovost na začátku období      | CAL         | C=C.100,F=D.100             |               |     |   |
-| 160      |                                  |             |                             |              |     |   |
-| 190      |                                  |             |                             |                 |     |   |
+
+| Kód řádku |           popis            | Kód formátu | Související vzorce/řádky/jednotky |        Modifikátor řádku        | Odkaz na finanční dimenze |
+|----------|----------------------------------|-------------|-----------------------------|----------------------------|------------------------------|
+|   100    | Hotovost na začátku období (NP) |             |                             | Modifikátor účtu = \[/BB\] |     +Segment2 = \[1100\]     |
+|   1.3.0    |   Hotovost na začátku období    |     CAL     |       C=C.100,F=D.100       |                            |                              |
+|   160    |                                  |             |                             |                            |                              |
+|   190    |                                  |             |                             |                            |                              |
 
 > [!NOTE] 
 > Prázdné sloupce byly odebrány z předchozí tabulky pro účely prezentace: nezobrazují se sloupce Přepsání formátu, Normální zůstatek, Řízení tisku a Omezení sloupce.
@@ -180,11 +180,11 @@ Buňka **Omezení sloupce** v definici řádku slouží více účelům. V závi
 -   Buňka může určit sloupec částek k seřazení.
 
 ## <a name="using-a-calculation-formula-in-a-row-definition"></a>Použití vzorce výpočtu v definici řádku
-Výpočetní vzorec v definici řádku může zahrnovat operátory **+**, **-**, **\***, and **/** a také výrazy **IF/THEN/ELSE**. Výpočet může navíc zahrnovat jednotlivé buňky a absolutní hodnoty (skutečná čísla, která jsou zahrnuta ve vzorci). Vzorec může obsahovat až 1 024 znaků. Výpočty nelze použít pro řádky obsahující buňky typu **Odkaz na finanční dimenze** (FD). Můžete však zahrnout výpočty v rámci po sobě jdoucích řádků, potlačit tisk těchto řádků a poté sečíst řádky výpočtů.
+Výpočetní vzorec v definici řádku může zahrnovat operátory <strong>+</strong>, <strong>-</strong>, <strong>\\</strong>, and **/** a také výrazy <strong>IF/THEN/ELSE</strong>. Výpočet může navíc zahrnovat jednotlivé buňky a absolutní hodnoty (skutečná čísla, která jsou zahrnuta ve vzorci). Vzorec může obsahovat až 1 024 znaků. Výpočty nelze použít pro řádky obsahující buňky typu <strong>Odkaz na finanční dimenze</strong> (FD). Můžete však zahrnout výpočty v rámci po sobě jdoucích řádků, potlačit tisk těchto řádků a poté sečíst řádky výpočtů.
 
 ### <a name="operators-in-a-calculation-formula"></a>Operátory ve výpočetním vzorci
 
-Výpočetní vzorec používá složitější operátory než vzorec součtu řádku. Lze však použít operátory **\*** a **/** spolu s dalšími operátory k násobení (\*) a dělení (/) částek. Pokud chcete použít ve vzorci pro výpočet rozsah nebo součet, je nutné použít zavináč (@) před jakýmkoli kódem řádku, pokud nepoužíváte sloupec v definici řádku. Například pro přičtení částky v řádku 100 k částce v řádku 330 lze použít vzorec součtu řádku **100+330** nebo vzorec výpočtu **@100+@330**. **Poznámka:** Je třeba použít zavináč (@) před každým kódem řádku, který využíváte ve výpočetním vzorci. Jinak bude číslo přečteno jako absolutní hodnota. Například vzorec **@100+330** přidá k částce na řádku 100 částku ve výši 330 USD. Při odkazování na sloupec ve vzorci pro výpočet není znak (@) zapotřebí.
+Výpočetní vzorec používá složitější operátory než vzorec součtu řádku. Lze však použít operátory <strong>\\</strong>* a <strong>/</strong> spolu s dalšími operátory k násobení (\*) a dělení (/) částek. Pokud chcete použít ve vzorci pro výpočet rozsah nebo součet, je nutné použít zavináč (@) před jakýmkoli kódem řádku, pokud nepoužíváte sloupec v definici řádku. Například pro přičtení částky v řádku 100 k částce v řádku 330 lze použít vzorec součtu řádku <strong>100+330</strong> nebo vzorec výpočtu <strong>@100+@330</strong>. <strong>Poznámka:</strong> Je třeba použít zavináč (@) před každým kódem řádku, který využíváte ve výpočetním vzorci. Jinak bude číslo přečteno jako absolutní hodnota. Například vzorec <strong>@100+330</strong> přidá k částce na řádku 100 částku ve výši 330 USD. Při odkazování na sloupec ve vzorci pro výpočet není znak (@) zapotřebí.
 
 ### <a name="create-a-calculation-formula"></a>Vytvoření výpočetního vzorce
 
@@ -202,7 +202,7 @@ V tomto příkladu vzorec výpočtu **@100+@330** znamená, že částka v řád
 | 370      | Hotovost na začátku roku   | CAL         | @100+@330                  | NP            |              |                              |
 | 400      | Hotovost na začátku období | TOT         | 340+370                    |               |              |                              |
 
-Pokud má řádek v definici řádku kód formátu **CAL** a zadáte matematický výpočet do buňky **Související vzorce/řádky/jednotky**, musíte také zadat písmeno přidruženého sloupce a řádku v sestavě. Například zadejte **A.120** pro znázornění sloupce A, řádku 120. Případně můžete použít zavináč (@) k označení všech sloupců. Například zadejte **@120** pro znázornění všech sloupců v řádku 120. Matematický výpočet, který neobsahuje písmeno sloupce nebo znak zavináče (@), se považuje za reálné číslo. **Poznámka:**Když použijete kód řádku popisku pro referenci řádku, musíte použít tečku (.) jako oddělovač mezi písmenem sloupce a popiskem (například **A.GROSS\_MARGIN/A.SALES**). Pokud používáte zavináč (@), oddělovač není požadován (například **@GROSS\_MARGIN/@SALES**).
+Pokud má řádek v definici řádku kód formátu <strong>CAL</strong> a zadáte matematický výpočet do buňky <strong>Související vzorce/řádky/jednotky</strong>, musíte také zadat písmeno přidruženého sloupce a řádku v sestavě. Například zadejte <strong>A.120</strong> pro znázornění sloupce A, řádku 120. Případně můžete použít zavináč (@) k označení všech sloupců. Například zadejte <strong>@120</strong> pro znázornění všech sloupců v řádku 120. Matematický výpočet, který neobsahuje písmeno sloupce nebo znak zavináče (@), se považuje za reálné číslo. <strong>Poznámka:</strong>Když použijete kód řádku popisku pro referenci řádku, musíte použít tečku (.) jako oddělovač mezi písmenem sloupce a popiskem (například <strong>A.GROSS\_MARGIN/A.SALES</strong>). Pokud používáte zavináč (@), oddělovač není požadován (například <strong>@GROSS\_MARGIN/@SALES</strong>).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Příklad výpočetního vzorce pro konkrétní sloupec
 
@@ -255,17 +255,17 @@ Vzorce **THEN** a **ELSE** mohou představovat jakýkoli platný výpočet od ve
 
 ### <a name="restricting-a-calculation-to-a-reporting-unit-in-a-row-definition"></a>Omezení výpočtu na jednotku výkaznictví v definici řádku
 
-Omezit výpočet na jednu jednotku výkaznictví ve stromu výkaznictví tak, aby výsledná částka nebyla shrnuta do jednotky vyšší úrovně, můžete použít kód **@Unit** v buňce **Související vzorce/řádky/jednotky** v definici řádku. Kód **@Unit** je uveden ve sloupci B stromu výkaznictví, **Název jednotky**. Používáte-li kód **@Unit**, hodnoty nejsou shrnuty, ale výpočet bude vyhodnocen na všech úrovních stromu výkaznictví. **Poznámka:** Abyste mohli tuto funkci použít, je nutné přiřadit k definici řádku strom výkaznictví. Řádek výpočtu může odkazovat na řádek výpočtu nebo řádek finančních dat. Výpočet se zaznamenává do buňky **Související vzorce/řádky/jednotky** v definici řádku a do omezení typu finančních dat. Výpočet musí použít podmíněný výpočet, který začíná konstrukcí **IF @Unit**. Příklad: IF @Unit(SALES) THEN @100 ELSE 0 Tento výpočet obsahuje částku z řádku 100 každého sloupce sestavy, ale pouze pro jednotku SALES. Pokud je více jednotek nazváno SALES, částka se zobrazí v každé z těchto jednotek. Řádek 100 může být navíc řádek finančních dat a lze ho definovat jako netisknutý. Částka se v tomto případě nemůže zobrazit u všech jednotek ve stromu. Můžete také omezit částku na jeden sloupec sestavy, například sloupec H pomocí omezení sloupce k tisku hodnoty pouze v daném sloupci sestavy. Můžete zahrnout kombinace **OR** ve výrazu **IF**. Příklad: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 Jednotku lze určit v omezení typu výpočtu jedním z následujících způsobů:
+Omezit výpočet na jednu jednotku výkaznictví ve stromu výkaznictví tak, aby výsledná částka nebyla shrnuta do jednotky vyšší úrovně, můžete použít kód <strong>@Unit</strong> v buňce <strong>Související vzorce/řádky/jednotky</strong> v definici řádku. Kód <strong>@Unit</strong> je uveden ve sloupci B stromu výkaznictví, <strong>Název jednotky</strong>. Používáte-li kód <strong>@Unit</strong>, hodnoty nejsou shrnuty, ale výpočet bude vyhodnocen na všech úrovních stromu výkaznictví. <strong>Poznámka:</strong> Abyste mohli tuto funkci použít, je nutné přiřadit k definici řádku strom výkaznictví. Řádek výpočtu může odkazovat na řádek výpočtu nebo řádek finančních dat. Výpočet se zaznamenává do buňky <strong>Související vzorce/řádky/jednotky</strong> v definici řádku a do omezení typu finančních dat. Výpočet musí použít podmíněný výpočet, který začíná konstrukcí <strong>IF @Unit</strong>. Příklad: IF @Unit(SALES) THEN @100 ELSE 0 Tento výpočet obsahuje částku z řádku 100 každého sloupce sestavy, ale pouze pro jednotku SALES. Pokud je více jednotek nazváno SALES, částka se zobrazí v každé z těchto jednotek. Řádek 100 může být navíc řádek finančních dat a lze ho definovat jako netisknutý. Částka se v tomto případě nemůže zobrazit u všech jednotek ve stromu. Můžete také omezit částku na jeden sloupec sestavy, například sloupec H pomocí omezení sloupce k tisku hodnoty pouze v daném sloupci sestavy. Můžete zahrnout kombinace <strong>OR</strong> ve výrazu <strong>IF</strong>. Příklad: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 Jednotku lze určit v omezení typu výpočtu jedním z následujících způsobů:
 
--   Zadáním názvu jednotky zahrňte jednotky, které odpovídají. Například **IF @Unit(SALES)** umožňuje výpočet pro jakoukoli jednotku názvem SALES, i když ve stromu výkaznictví existuje několik jednotek SALES.
--   Zadejte název společnosti a jednotky pro omezení výpočtu na specifické jednotky v určité společnosti. Zadejte například hodnotu **IF @Unit(ACME:SALES**) k omezení výpočtu na jednotky SALES ve společnosti ACME.
--   Zadejte úplný kód hierarchie ze stromu výkaznictví pro omezení výpočtu na určitou jednotku. Zadejte například výraz **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**. **Poznámka:** Abyste našli úplný kód hierarchie, klikněte pravým tlačítkem myši na definici stromu výkaznictví a poté vyberte možnost **Zkopírovat identifikátor jednotky výkaznictví (kód H)**.
+- Zadáním názvu jednotky zahrňte jednotky, které odpovídají. Například <strong>IF @Unit(SALES)</strong> umožňuje výpočet pro jakoukoli jednotku názvem SALES, i když ve stromu výkaznictví existuje několik jednotek SALES.
+- Zadejte název společnosti a jednotky pro omezení výpočtu na specifické jednotky v určité společnosti. Zadejte například hodnotu <strong>IF @Unit(ACME:SALES</strong>) k omezení výpočtu na jednotky SALES ve společnosti ACME.
+- Zadejte úplný kód hierarchie ze stromu výkaznictví pro omezení výpočtu na určitou jednotku. Zadejte například výraz <strong>IF @Unit(SUMMARY^ACME^WEST COAST^SALES)</strong>. <strong>Poznámka:</strong> Abyste našli úplný kód hierarchie, klikněte pravým tlačítkem myši na definici stromu výkaznictví a poté vyberte možnost <strong>Zkopírovat identifikátor jednotky výkaznictví (kód H)</strong>.
 
 #### <a name="restrict-a-calculation-to-a-reporting-unit"></a>Omezení výpočtu na organizační jednotku
 
-1.  V Návrháři sestav klikněte na položku **Definice řádků** a otevřete definici řádků, kterou chcete změnit.
-2.  Dvakrát klikněte na buňku **Kód formátu** a vyberte kód **CAL**.
-3.  Klikněte na buňku **Související vzorce/řádky/jednotky** a poté zadejte podmíněné výpočty, které začínají konstrukcí **IF @Unit**.
+1. V Návrháři sestav klikněte na položku **Definice řádků** a otevřete definici řádků, kterou chcete změnit.
+2. Dvakrát klikněte na buňku **Kód formátu** a vyberte kód **CAL**.
+3. Klikněte na buňku <strong>Související vzorce/řádky/jednotky</strong> a poté zadejte podmíněné výpočty, které začínají konstrukcí <strong>IF @Unit</strong>.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>Výrazy IF/THEN/ELSE v definici sloupce
 

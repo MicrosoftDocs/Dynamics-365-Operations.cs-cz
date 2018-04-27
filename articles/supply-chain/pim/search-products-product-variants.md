@@ -20,18 +20,18 @@ ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 08715b4c31c42dfa23d72b1035a1e7cc737c13a2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2441f7cbf95512677f62eb862be99af90f3c4b17
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Vyhledávání produktů a variant produktu během zadání objednávky
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 Použijte pole <strong>Číslo položky </strong>k vyhledání produktů a variant produktů, až budete ručně vytvářet řádek prodejní objednávky nebo řádek nákupní objednávky.  Tímto způsobem můžete rychle vyhledat varianty produktu, pokud máte k dispozici pouze konfigurační řetězec nebo jednu z dimenzí produktu.
 
@@ -72,7 +72,7 @@ Příklady identifikátorů produktu a variant produktu i dimenzí, podle nichž
 
 Přejděte na stránku **Prodej a marketing &gt; Nastavení &gt; Vyhledávání &gt; Kritéria vyhledávání**. Stránka **Kritéria vyhledávání** vám umožňuje definovat kritéria pro odběratele, potenciální zákazníky a vyhledávání produktu. Ověřte, že stránku filtrujete pomocí kritérií vyhledávání produktu. To můžete provést přepnutím do **Produkt** v nabídce na stránce.  
 
-Pokud chcete do kritérií vyhledávání přidat číslo zobrazeného produktu, klikněte na **Nový** v nabídce stránky. To přidá nový záznam do mřížky **Kritéria hledání**. Otevřete sloupec vyhledávání **Název pole** a vyberte **DisplayProductNumber**. Chcete-li přidat konfiguraci produktu ke kritériím hledání, vytvořte nový záznam v tabulce **Kritéria vyhledávání** a vyberte **configId** ve sloupci **Název pole**. Stejným způsobem vytvořte záznam s **Název_pole** **InventColorId** pro dimenzi barvy, **InventSizeId** pro dimenzi velikosti a **InventStyleId** pro dimenzi stylu.
+Pokud chcete do kritérií vyhledávání přidat číslo zobrazeného produktu, klikněte na <strong>Nový</strong> v nabídce stránky. To přidá nový záznam do mřížky <strong>Kritéria hledání</strong>. Otevřete sloupec vyhledávání <strong>Název pole</strong> a vyberte <strong>DisplayProductNumber</strong>. Chcete-li přidat konfiguraci produktu ke kritériím hledání, vytvořte nový záznam v mřížce <strong>Kritéria vyhledávání ** a vyberte **configId</strong> v sloupci <strong>Název pole</strong>. Stejným způsobem vytvořte záznam s <strong>Název_pole</strong> <strong>InventColorId</strong> pro dimenzi barvy, <strong>InventSizeId</strong> pro dimenzi velikosti a <strong>InventStyleId</strong> pro dimenzi stylu.
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Krok 2: Vyplňte tabulku databáze, která se používá pro hledání produktu
 

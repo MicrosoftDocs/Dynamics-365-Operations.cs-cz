@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 76c2b078b583a1f8f2235eef15dbba514e57b0f8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 961f0bbc4bb66536d953fa5103f98fcd6924adba
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vendor-collaboration-with-external-vendors"></a>Dodavatelská spolupráce s externími dodavateli
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Modul **Spolupráce s dodavateli** je zaměřen na dodavatele, kteří nemají integraci výměny elektronických dat (EDI) s aplikací Microsoft Dynamics 365 for Finance and Operations. To umožňuje dodavatelům práci s nákupními objednávkami, fakturami, informace o zásobách dodávek a požadavky na nabídku a také jim dává možnost mít přístup k části jejich dodavatelských hlavních dat. Toto téma vysvětluje, jak můžete spolupracovat s externími dodavateli, kteří používají rozhraní dodavatelské spolupráce k práci s nákupními objednávkami, požadavky na nabídku a zásobami dodávek. Také vysvětluje, jak konkrétnímu dodavateli umožnit používání dodavatelské spolupráce a definovat informace, které dodavatelé uvidí při odpovídání na nákupní objednávku.
 
@@ -116,7 +116,7 @@ Nákupní objednávka, která byla odeslána dodavateli a má stav <strong>Exter
 <li>Náhrada zboží.</li>
 </ul>
 Údaje o ceně a náklady nemůže změnit dodavatel. Dodavatel však může navrhnout tyto změny pomocí poznámek.</td>
-<td>Odpověď dodavatele bude zaznamenána jako <strong>Přijato se změnami</strong> a stav nákupní objednávky zůstane <strong>Na externí kontrole</strong>. Stavy zobrazují typy změn, které navrhl dodavatel. Informace týkající se automatické spotřeby změn naleznete níže v tomto tématu v části Aktualizace nákupní objednávky, když dodavatel navrhne změny. </td>
+<td>Odpověď dodavatele bude zaznamenána jako <strong>Přijato se změnami</strong> a stav nákupní objednávky zůstane <strong>Na externí kontrole</strong>. Stavy zobrazují typy změn, které navrhl dodavatel. Informace týkající se automatické spotřeby změn naleznete níže v tomto tématu v části &quot;Aktualizace nákupní objednávky, když dodavatel navrhne změny&quot;. </td>
 </tr>
 </tbody>
 </table>

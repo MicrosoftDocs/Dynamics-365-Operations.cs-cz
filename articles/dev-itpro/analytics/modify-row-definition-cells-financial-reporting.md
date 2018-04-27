@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: dd34fb71f7a5d31a075c6475c2fe6627193d891f
-ms.openlocfilehash: 6bb405937288b46f49420a1735c32b5b7c16248e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3131173e10ff7eefeaca18285054ce2312d7ab57
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="modify-row-definition-cells"></a>Úprava buněk definice řádku
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek popisuje informace, které jsou nutné pro každou buňku v definici řádku ve finanční sestavě, a vysvětluje, jak tyto informace zadat. 
 
@@ -104,26 +103,26 @@ Buňka **Kód formátu** nabízí výběr předem naformátovaných voleb pro ob
 2.  Dvakrát klikněte na buňku **Kód formátu**.
 3.  Vyberte kód formátu ze seznamu. Následující tabulka popisuje kódy formátů a jejich akce.
 
-| **Kód formátu**               | **Interpretace kódu formátu** | **Akce**                                                                                                                                                                                                     |
-|-------------------------------|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| (Žádné)                        |                                       | Vymaže buňku **Kód formátu**.                                                                                                                                                                               |
-| TOT                           | Celkem                                 |  Identifikuje řádek, který používá matematické operátory ve sloupci **Související vzorce/řádky/jednotky**. Součty obsahují jednoduché operátory, například **+** nebo **-**.                                                     |
-| CAL                           | Výpočet                           | Identifikuje řádek, který používá matematické operátory ve sloupci **Související vzorce/řádky/jednotky**. Výpočty obsahují složité operátory, například **+**, **-**, **\***, **/** a **IF/THEN/ELSE**. |
-| DES                           | popis                           | Identifikuje řádek záhlaví nebo prázdný řádek v sestavě.                                                                                                                                                        |
-| LFT RGT CEN                   | Vlevo Na střed Vpravo                     |  Zarovná text popisu řádku na stránce sestavy bez ohledu na jeho umístění v definici sloupce.                                                                                              |
-| CBR                           | Změna základního řádku                       | Označuje řádek, který nastavuje základní řádek pro výpočty sloupce.                                                                                                                                               |
-| SLOUPEC                        | Zalomení sloupce                          | Začne nový sloupec v sestavě.                                                                                                                                                                             |
-| STRANA                          | Konec strany                            | Začne novou stránku v sestavě.                                                                                                                                                                               |
-| \---                          | Jednoduché podtržení                      | Vloží jednoduchou linku pod všechny sloupce částek v sestavě.                                                                                                                                                     |
-|  ===                          | Dvojité podtržení                      | Vloží dvojitou linku pod všechny sloupce částek v sestavě.                                                                                                                                                     |
-| LINE1                         | Tenká čára                             | Nakreslí přes celou šířku stránky jednu tenkou čáru.                                                                                                                                                                      |
-| LINE2                         | Tlustá čára                            | Nakreslí přes celou šířku stránky jednu tlustou čáru.                                                                                                                                                                     |
-| LINE3                         | Tečkovaná čára                           | Nakreslí jednu tečkovanou čáru přes celou šířku stránky.                                                                                                                                                                    |
-| LINE4                         | Tlustá čára a tenká čára              | Nakreslí přes celou šířku stránky dvojitou čáru. Horní čára je tlustá a spodní čára je tenká.                                                                                                                       |
-| LINE5                         | Tenká čára a tlustá čára              | Nakreslí přes celou šířku stránky dvojitou čáru. Horní čára je tenká a spodní čára je tlustá.                                                                                                                       |
-| BXB BXC                       | Řádek v rámečku                             | Vytvoří ohraničení kolem řádků sestavy, které začínají řádkem **BXB** a končí řádkem **BXC**.                                                                                                               |
-| REM                           | Poznámka                                | Označuje řádek komentáře, který se nemá tisknout na sestavě. V řádku poznámek se mohou například vysvětlovat vaše metody formátování.                                                            |
-| SORT ASORT SORTDESC ASORTDESC | Seřadit                                  | Umožňuje seřadit výdaje nebo výnosy, seřadit sestavy odchylek skutečnosti a rozpočtu podle největší odchylky nebo abecedně seřadit popisy řádků.                                                                   |
+| <strong>Kód formátu</strong>  | <strong>Interpretace kódu formátu</strong> |                                                                                                                             <strong>Akce</strong>                                                                                                                              |
+|-------------------------------|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|            (Žádné)             |                                                    |                                                                                                                  Vymaže obsah buňky <strong>Kód formátu</strong>.                                                                                                                   |
+|              TOT              |                       Celkem                        |                                         Identifikuje řádek, který používá matematické operátory ve sloupci <strong>Související vzorce/řádky/jednotky</strong>. Součty obsahují jednoduché operátory, například <strong>+</strong> nebo <strong>-</strong>.                                         |
+|              CAL              |                    Výpočet                     | Identifikuje řádek používající matematické operátory ve sloupci <strong>Související vzorce/řádky/jednotky</strong>. Výpočty obsahují složitější operátory, například <strong>+</strong>, <strong>-</strong>, <strong>\</strong><em>, **/</em><em> a příkazy **IF/THEN/ELSE</em>*. |
+|              DES              |                    popis                     |                                                                                                             Identifikuje řádek záhlaví nebo prázdný řádek v sestavě.                                                                                                              |
+|          LFT RGT CEN          |                 Vlevo Na střed Vpravo                  |                                                                                 Zarovná text popisu řádku na stránce sestavy bez ohledu na jeho umístění v definici sloupce.                                                                                 |
+|              CBR              |                  Změna základního řádku                   |                                                                                                         Označuje řádek, který nastavuje základní řádek pro výpočty sloupce.                                                                                                         |
+|            SLOUPEC             |                    Zalomení sloupce                    |                                                                                                                        Začne nový sloupec v sestavě.                                                                                                                        |
+|             STRANA              |                     Konec strany                     |                                                                                                                         Začne novou stránku v sestavě.                                                                                                                         |
+|             \---              |                  Jednoduché podtržení                  |                                                                                                            Vloží jednoduchou linku pod všechny sloupce částek v sestavě.                                                                                                            |
+|              ===              |                  Dvojité podtržení                  |                                                                                                            Vloží dvojitou linku pod všechny sloupce částek v sestavě.                                                                                                            |
+|             LINE1             |                     Tenká čára                      |                                                                                                                    Nakreslí přes celou šířku stránky jednu tenkou čáru.                                                                                                                     |
+|             LINE2             |                     Tlustá čára                     |                                                                                                                    Nakreslí přes celou šířku stránky jednu tlustou čáru.                                                                                                                    |
+|             LINE3             |                    Tečkovaná čára                     |                                                                                                                   Nakreslí jednu tečkovanou čáru přes celou šířku stránky.                                                                                                                    |
+|             LINE4             |              Tlustá čára a tenká čára              |                                                                                             Nakreslí přes celou šířku stránky dvojitou čáru. Horní čára je tlustá a spodní čára je tenká.                                                                                             |
+|             LINE5             |              Tenká čára a tlustá čára              |                                                                                             Nakreslí přes celou šířku stránky dvojitou čáru. Horní čára je tenká a spodní čára je tlustá.                                                                                             |
+|            BXB BXC            |                     Řádek v rámečku                      |                                                                            Nakreslí kolem řádků sestavy rámeček, který bude začínat řádkem <strong>BXB</strong> a končit řádkem <strong>BXC</strong>.                                                                            |
+|              REM              |                       Poznámka                       |                                                               Označuje řádek komentáře, který se nemá tisknout na sestavě. V řádku poznámek se mohou například vysvětlovat vaše metody formátování.                                                                |
+| SORT ASORT SORTDESC ASORTDESC |                        Seřadit                        |                                                                   Umožňuje seřadit výdaje nebo výnosy, seřadit sestavy odchylek skutečnosti a rozpočtu podle největší odchylky nebo abecedně seřadit popisy řádků.                                                                   |
 
 ## <a name="specify-related-formulasrowsunits"></a>Určit související vzorce/řádky/jednotky
 Buňka **Související vzorce/řádky/jednotky** má více účelů. V závislosti na typu řádku může buňka **Související vzorce/řádky/jednotky** provést některou z následujících funkcí:
@@ -211,12 +210,12 @@ Kódy řazení slouží k seřazení účtů a hodnot, k seřazení sestavy o
 
 ### <a name="select-a-sorting-code"></a>Volba kódu řazení
 
-1.  V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
-2.  Dvakrát klikněte na buňku **Kód formátu** a vyberte kód třídění.
-3.  V buňce **Související vzorce/řádky/jednotky** stanovte rozmezí kódů řádků ke třídění. Při zadávání rozsahu zadejte kód prvního řádku, dvojtečku (:) a poté kód posledního řádku. Zadáním například hodnoty **160:490** určete rozmezí od řádku 160 po řádek 490.
-4.  V buňce **Omezení sloupce** zadejte písmeno sloupce sestavy k použití pro řazení. 
-> [!Note] 
-> Do výpočtu řazení zahrnujte pouze řádky částek.
+1. V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
+2. Dvakrát klikněte na buňku **Kód formátu** a vyberte kód třídění.
+3. V buňce **Související vzorce/řádky/jednotky** stanovte rozmezí kódů řádků ke třídění. Při zadávání rozsahu zadejte kód prvního řádku, dvojtečku (:) a poté kód posledního řádku. Zadáním například hodnoty **160:490** určete rozmezí od řádku 160 po řádek 490.
+4. V buňce **Omezení sloupce** zadejte písmeno sloupce sestavy k použití pro řazení. 
+   > [!Note] 
+   > Do výpočtu řazení zahrnujte pouze řádky částek.
 
 ### <a name="examples-of-ascending-and-descending-column-values"></a>Příklady vzestupných a sestupných hodnot sloupců
 
@@ -258,41 +257,41 @@ Buňka **Přepsání formátu** určuje formátování použité pro řádek př
 
 Formátování měny se použije na fiskální hodnotu a obsahuje symbol měny. K dispozici jsou tyto možnosti:
 
--   **Symbol měny** – Symbol měny pro sestavu Tato hodnota přepíše nastavení **Možnosti místního nastavení** pro informace o společnosti.
--   **Záporná čísla** – záporná čísla mohou obsahovat záporné znaménko (-), mohou se zobrazovat v závorkách nebo mají trojúhelník (∆).
--   **Desetinná místa** – počet číslic, které chcete zobrazit za desetinnou čárkou.
--   **Text přepsání nulové hodnoty** – text, který bude zahrnut do sestavy, pokud je částka 0 (nula). Tento text se zobrazí jako poslední řádek oblasti **Ukázka**. 
-> [!Note] 
-> Je-li tisk pro nulové hodnoty potlačen nebo nebyla žádná aktivita v období, tento text bude potlačen.
+- **Symbol měny** – Symbol měny pro sestavu Tato hodnota přepíše nastavení **Možnosti místního nastavení** pro informace o společnosti.
+- **Záporná čísla** – záporná čísla mohou obsahovat záporné znaménko (-), mohou se zobrazovat v závorkách nebo mají trojúhelník (∆).
+- **Desetinná místa** – počet číslic, které chcete zobrazit za desetinnou čárkou.
+- **Text přepsání nulové hodnoty** – text, který bude zahrnut do sestavy, pokud je částka 0 (nula). Tento text se zobrazí jako poslední řádek oblasti **Ukázka**. 
+  > [!Note] 
+  > Je-li tisk pro nulové hodnoty potlačen nebo nebyla žádná aktivita v období, tento text bude potlačen.
 
 ### <a name="numeric-formatting"></a>Číselné formátování
 
 Formátování čísel platí pro všechny částky a nezahrnuje symbol měny. K dispozici jsou tyto možnosti:
 
--   **Záporná čísla** – záporná čísla mohou obsahovat záporné znaménko (-), mohou se zobrazovat v závorkách nebo mají trojúhelník (∆).
--   **Desetinná místa** – počet číslic, které chcete zobrazit za desetinnou čárkou.
--   **Text přepsání nulové hodnoty** – text, který bude zahrnut do sestavy, pokud je částka 0 (nula). Tento text se zobrazí jako poslední řádek oblasti **Ukázka**. 
-> [!Note] 
-> Je-li tisk pro nulové hodnoty potlačen nebo nebyla žádná aktivita v období, tento text bude potlačen.
+- **Záporná čísla** – záporná čísla mohou obsahovat záporné znaménko (-), mohou se zobrazovat v závorkách nebo mají trojúhelník (∆).
+- **Desetinná místa** – počet číslic, které chcete zobrazit za desetinnou čárkou.
+- **Text přepsání nulové hodnoty** – text, který bude zahrnut do sestavy, pokud je částka 0 (nula). Tento text se zobrazí jako poslední řádek oblasti **Ukázka**. 
+  > [!Note] 
+  > Je-li tisk pro nulové hodnoty potlačen nebo nebyla žádná aktivita v období, tento text bude potlačen.
 
 ### <a name="percentage-formatting"></a>Procentuální formátování
 
 Formátování jako procenta zahrnuje znak procent (%). K dispozici jsou tyto možnosti:
 
--   **Záporná čísla** – záporná čísla mohou obsahovat záporné znaménko (-), mohou se zobrazovat v závorkách nebo mají trojúhelník (∆).
--   **Desetinná místa** – počet číslic, které chcete zobrazit za desetinnou čárkou.
--   **Text přepsání nulové hodnoty** – text, který bude zahrnut do sestavy, pokud je částka 0 (nula). Tento text se zobrazí jako poslední řádek oblasti **Ukázka**. 
-> [!Note] 
-> Je-li tisk pro nulové hodnoty potlačen nebo nebyla žádná aktivita v období, tento text bude potlačen.
+- **Záporná čísla** – záporná čísla mohou obsahovat záporné znaménko (-), mohou se zobrazovat v závorkách nebo mají trojúhelník (∆).
+- **Desetinná místa** – počet číslic, které chcete zobrazit za desetinnou čárkou.
+- **Text přepsání nulové hodnoty** – text, který bude zahrnut do sestavy, pokud je částka 0 (nula). Tento text se zobrazí jako poslední řádek oblasti **Ukázka**. 
+  > [!Note] 
+  > Je-li tisk pro nulové hodnoty potlačen nebo nebyla žádná aktivita v období, tento text bude potlačen.
 
 ### <a name="custom-formatting"></a>Vlastní formátování
 
 Pomocí kategorie vlastního formátování můžete nakonfigurovat nastavení pro přepsání vlastním formátem. K dispozici jsou tyto možnosti:
 
--   **Typ** – Vlastní formátování
--   **Text přepsání nulové hodnoty** – text, který bude zahrnut do sestavy, pokud je částka 0 (nula). Tento text se zobrazí jako poslední řádek oblasti **Ukázka**. 
-> [!Note] 
-> Je-li tisk pro nulové hodnoty potlačen nebo nebyla žádná aktivita v období, tento text bude potlačen.
+- **Typ** – Vlastní formátování
+- **Text přepsání nulové hodnoty** – text, který bude zahrnut do sestavy, pokud je částka 0 (nula). Tento text se zobrazí jako poslední řádek oblasti **Ukázka**. 
+  > [!Note] 
+  > Je-li tisk pro nulové hodnoty potlačen nebo nebyla žádná aktivita v období, tento text bude potlačen.
 
 Typ by měl představovat jak kladnou, tak i zápornou hodnotu. Obvykle zadáte podobný formát pro rozlišování mezi kladnými a zápornými hodnotami. Pokud chcete například určit, že kladné i záporné hodnoty mají mít dvě desetinná místa, ale záporné hodnoty se zobrazí v závorkách, zadejte hodnotu **0,00;(0,00)**. V následující tabulce jsou uvedeny vlastní formáty, pomocí kterých lze určovat formát hodnot. Všechny příklady začínají z hodnoty 1234,56.
 
@@ -387,7 +386,7 @@ Ve výchozím nastavení návrhář sestav netiskne řádky, které nemají odpo
 3.  Chcete-li uložit změny, klikněte v nabídce **Soubor** na tlačítko **Uložit**.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Používání zástupných znaků a rozsahů v definici řádku
-Když zadáte přirozenou hodnotu segmentu do dialogového okna **Dimenze** můžete použít zástupný znak (? nebo \*) na jakékoli pozici segmentu. Aplikace Návrhář sestav extrahuje všechny hodnoty definovaných pozic bez zohlednění zástupných znaků. Například definice řádku obsahuje pouze přirozené hodnoty segmentu a přirozené segmenty mají čtyři znaky. Zadáním hodnoty **6???** na řádku dáte Návrháři sestav pokyn k zahrnutí všech účtů, které mají hodnotu přirozeného segmentu začínající 6. Pokud zadáte **6\***, budou vráceny stejné výsledky, ale výsledky budou obsahovat také hodnoty proměnné šířky, jako je například **60** a **600000**. Návrhář sestav nahradí každý zástupný znak (?) úplným rozsahem možných hodnot, které zahrnují písmena a speciální znaky. Například v rozsahu od **12?0** do **12?4** bude zástupný znak v hodnotě **12?0** nahrazen nejnižší hodnotou ve znakové sadě a zástupný znak v hodnotě **12?4** bude nahrazen nejvyšší hodnotou ve znakové sadě. 
+Když zadáte přirozenou hodnotu segmentu do dialogového okna <strong>Dimenze</strong> můžete použít zástupný znak (? nebo \*) na jakékoli pozici segmentu. Aplikace Návrhář sestav extrahuje všechny hodnoty definovaných pozic bez zohlednění zástupných znaků. Například definice řádku obsahuje pouze přirozené hodnoty segmentu a přirozené segmenty mají čtyři znaky. Zadáním hodnoty <strong>6???</strong> na řádku dáte Návrháři sestav pokyn k zahrnutí všech účtů, které mají hodnotu přirozeného segmentu začínající 6. Pokud zadáte <strong>6\</strong><em>, budou vráceny stejné výsledky, ale výsledky budou obsahovat také hodnoty proměnné šířky, jako je například **60</em>* a <strong>600000</strong>. Návrhář sestav nahradí každý zástupný znak (?) úplným rozsahem možných hodnot, které zahrnují písmena a speciální znaky. Například v rozsahu od <strong>12?0</strong> do <strong>12?4</strong> bude zástupný znak v hodnotě <strong>12?0</strong> nahrazen nejnižší hodnotou ve znakové sadě a zástupný znak v hodnotě <strong>12?4</strong> bude nahrazen nejvyšší hodnotou ve znakové sadě. 
 > [!Note] 
 > Měli byste se vyhnout používání zástupných znaků pro počáteční a koncové účty v rozsazích. Pokud použijete zástupné znaky u počátečního nebo koncového účtu, mohly by být vráceny neočekávané výsledky.
 
@@ -466,15 +465,15 @@ Sada hodnot dimenze je pojmenovaná skupina hodnot dimenze. Sada hodnot dimenze 
 
 ### <a name="update-a-set-of-dimension-values"></a>Aktualizace sady hodnot dimenze
 
-1.  V Návrháři sestav otevřete definici řádků, sloupců nebo stromu, kterou chcete změnit.
-2.  V nabídce **Upravit** klikněte na tlačítko **Správa sad hodnot dimenzí**.
-3.  V dialogovém okně **Správa sad hodnot dimenzí** v poli **Dimenze** vyberte typ dimenze.
-4.  V seznamu vyberte sadu hodnot dimenze k aktualizaci a poté klikněte na tlačítko **Upravit**.
-5.  V dialogovém okně **Upravit** upravte hodnoty vzorce k zahrnutí do sady. 
-> [!Note] 
-> Pokud přidáte nové účty nebo dimenze, nezapomeňte upravit existující sady hodnot dimenzí tak, aby změny zohledňovaly.
-6.  Klikněte dvakrát na buňku a vyberte odpovídající operátor, účet **Od** a účet **Do**.
-7.  Kliknutím na tlačítko **OK** zavřete dialogové okno **Upravit** a uložte změny.
+1. V Návrháři sestav otevřete definici řádků, sloupců nebo stromu, kterou chcete změnit.
+2. V nabídce **Upravit** klikněte na tlačítko **Správa sad hodnot dimenzí**.
+3. V dialogovém okně **Správa sad hodnot dimenzí** v poli **Dimenze** vyberte typ dimenze.
+4. V seznamu vyberte sadu hodnot dimenze k aktualizaci a poté klikněte na tlačítko **Upravit**.
+5. V dialogovém okně **Upravit** upravte hodnoty vzorce k zahrnutí do sady. 
+   > [!Note] 
+   > Pokud přidáte nové účty nebo dimenze, nezapomeňte upravit existující sady hodnot dimenzí tak, aby změny zohledňovaly.
+6. Klikněte dvakrát na buňku a vyberte odpovídající operátor, účet **Od** a účet **Do**.
+7. Kliknutím na tlačítko **OK** zavřete dialogové okno **Upravit** a uložte změny.
 
 ### <a name="copy-a-dimension-set"></a>Kopírování sady dimenzí
 

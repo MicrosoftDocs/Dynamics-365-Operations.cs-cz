@@ -19,17 +19,16 @@ ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7e05361bf865e44ba6073198fba94d7102b1ed19
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9b4e792cae66e38546b3bdfdfbd59a2e36d891c2
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-coupons-for-retail-sales"></a>Vytvoření kupónů pro maloobchodní prodej
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 ## <a name="overview-of-coupons"></a>Přehled kupónů
 
@@ -46,9 +45,12 @@ Kupón vytvoříte tak, že vytvoříte slevu a kupón samostatně. Pak je spoj�
 
 ### <a name="limited-use-coupons"></a>Kupóny s omezeným použitím
 
-Kupóny lze konfigurovat jako kupóny na omezené použití. Limit použití lze definovat na jednoho odběratele nebo kanál nebo jako globální omezení. Toto omezení je vynuceno při zadání kódu nebo čárového kódu nebo naskenování v POS nebo při zadávání prodejní objednávky. Kupón je zaznamenán jako použitý při dokončení objednávky, se kterou je spojený kupón.
+Kupóny lze konfigurovat jako kupóny na omezené použití. Limit použití lze definovat na jednoho odběratele nebo kanál nebo jako globální omezení. Toto omezení je vynuceno při zadání kódu nebo čárového kódu nebo naskenování v POS nebo při zadávání prodejní objednávky.
 
 Limite je vynucen na kód kupónu v kupónu. Jednorázový kupón, který má dva kódy, lze například použít dvakrát: jednou pro každý kód. Každý kód na kupónu může být nezávisle nastaven na aktivní.
+
+> [!NOTE]
+> Jakmile kód kupónu dosáhl limitu počtu použití, systém *nezmění* automaticky stav kódu kupónu na Použitý. Systém však nepovoluje další použití kódu kupónu, který dosáhl svého limitu počtu použití. Je-li stav kódu kupónu ručně nastaven na jakýkoliv jiný stav než Aktivní, nelze tento kód kupónu použít v žádném kanálu.
 
 ## <a name="managing-coupons"></a>Správa kupónů
 
@@ -69,7 +71,7 @@ Před nastavením kupónu je nutné nakonfigurovat čárový kód kupónu a dvě
     > Pro obě číselné řady je nutné nastavit pole **Obor** na **Společnosti**. Ve většině případů byste měli automaticky generovat obě pořadová čísla.
 
 5.  Na stránce **Sdílené maloobchodní parametry** na kartě **Čárové kódy** vyberte čárový kód, který jste vytvořili dříve.
-6.  Na stránce **Parametry maloobchodu** na kartě **číselné řady** vyberte číselné řady, které jste vytvořili pro číslo kupónu a ID kódu kupónu
+6.  Na stránce **Sdílené maloobchodní parametry** na kartě **číselné řady** vyberte číselné řady, které jste vytvořili pro číslo kupónu a ID kódu kupónu
 7.  Nyní můžete otevřít stránku **Kupóny** stránky a vytvořit nové kupóny.
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Vliv částečných aktualizací na kupóny

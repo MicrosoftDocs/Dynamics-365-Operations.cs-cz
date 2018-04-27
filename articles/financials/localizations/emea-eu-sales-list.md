@@ -18,17 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
-ms.openlocfilehash: fe24eb79cbda0aea09ab7de5e4c02189ef3c8ff0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e1eff86902170401e593019ea555d9c2a4c11c04
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="eu-sales-list-reporting"></a>Souhrnné hlášení EU
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 V tomto článku jsou informace o souhrnném hlášení pro Evropskou unii (EU).
 
@@ -150,7 +149,7 @@ Za intrakomunitární obchodní transakce lze považovat transakce následujíc�
 -   Faktury projektu
 -   Faktury dodavatele
 
-Transakce je považována za intrakomunitární obchodní transakci, pokud je dodací adresa transakce v členském státu EU. Pro tyto země/oblasti by měl existovat záznam na kartě **Parametry země/oblasti** na stránce **Parametry zahraničního obchodu** a položku **Typ země/oblasti** je třeba nastavit na hodnotu **EU**. Intrakomunitární obchodní transakce jsou označeny v poli **Kód seznamu**. Pomocí tohoto pole lze také oddělit obecné intrakomunitární obchodní transakce od trojstranných obchodních transakcí. Můžete shromažďovat informace o intrakomunitárních obchodních transakcích na stránce **Souhrnné hlášení (EU)** (klikněte na položky **Daň** &gt; **Přiznání** &gt; **Zahraniční obchod** &gt; **Souhrnné hlášení (EU)**) pomocí funkce **Převod**. Tato funkce umožňuje zahrnout transakce, které mají částky různých typů vykazování (například zboží nebo služby), podle skupin DPH položek, které jsou určeny pro řádky transakcí. Můžete také použít jiné filtry k definování transakcí, které mají být zahrnuty. Funkce **Převod** vytvoří záznam na stránce **Souhrnné hlášení (EU)** pro každou intrakomunitární obchodní transakci, která je zahrnuta, a určí číslo účtu protistrany, zemi/oblast, číslo osvobození od daně, číslo faktury, datum a celkové částky řádků dle typu vykazování. Dále zkopíruje hodnotu **Kód seznamu** z transakce. Kód seznamu pro transakci lze ručně změnit na stránce **Souhrnné hlášení (EU)**. Funkce **Převod** vytvoří záznamy, kde je položka **Stav vykazování** nastaven na hodnotu **Zahrnuto**. Můžete ověřit informace, které jsou shromažďovány na stránce **Souhrnné hlášení (EU)**pomocí funkce **Ověřit**.
+Transakce je považována za intrakomunitární obchodní transakci, pokud je dodací adresa transakce v členském státu EU. Pro tyto země/oblasti by měl existovat záznam na kartě **Parametry země/oblasti** na stránce **Parametry zahraničního obchodu** a položku **Typ země/oblasti** je třeba nastavit na hodnotu **EU**. Intrakomunitární obchodní transakce jsou označeny v poli **Kód seznamu**. Pomocí tohoto pole lze také oddělit obecné intrakomunitární obchodní transakce od trojstranných obchodních transakcí. Můžete shromažďovat informace o intrakomunitárních obchodních transakcích na stránce **Souhrnné hlášení (EU)** (klikněte na položky **Daň** &gt; **Přiznání** &gt; **Zahraniční obchod** &gt; **Souhrnné hlášení (EU)**) pomocí funkce **Převod**. Tato funkce umožňuje zahrnout transakce, které mají částky různých typů vykazování (například zboží nebo služby), podle skupin DPH položek, které jsou určeny pro řádky transakcí. Můžete také použít jiné filtry k definování transakcí, které mají být zahrnuty. Funkce **Převod** vytvoří záznam na stránce **Souhrnné hlášení (EU)** pro každou intrakomunitární obchodní transakci, která je zahrnuta, a určí číslo účtu protistrany, zemi/oblast, číslo osvobození od daně, číslo faktury, datum a celkové částky řádků dle typu vykazování. Dále zkopíruje hodnotu **Kód seznamu** z transakce. Kód seznamu pro transakci lze ručně změnit na stránce **Souhrnné hlášení (EU)**. Funkce **Převod** vytvoří záznamy, kde je položka **Stav vykazování** nastaven na hodnotu **Zahrnuto**. Můžete ověřit informace, které jsou shromažďovány na stránce **Souhrnné hlášení (EU)** pomocí funkce **Ověřit**.
 
 ### <a name="generating-the-eu-sales-list-report"></a>Vygenerování sestavy Souhrnné hlášení (EU)
 

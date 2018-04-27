@@ -1,5 +1,5 @@
 --- 
-title: "Spuštění formátu používajícího vodorovně rozbalovací oblasti k dynamickému přidání sloupců v sestavách aplikace Excel pro elektronické výkaznictví (ER)"
+title: "Spuštění formátu používajícího vodorovně rozbalovací oblasti k dynamickému přidání sloupců v sestavách aplikace Excel"
 description: "Následující postup vysvětluje, jak uživatel s přiřazenou rolí správce systému nebo vývojáře elektronického výkaznictví může nakonfigurovat formát elektronických sestav (ER) ke generování sestav jako soubory s listy OPENXML (Excel), ve kterých lze dynamicky vytvářet požadované sloupce jako vodorovně rozbalitelné rozsahy."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3ca72ab5c7ac15f3a788ea457a360d93a0b505b0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2d705d0d2803b5254adc27e6715c1eac311898a7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="run-a-format-that-uses-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-for-electronic-reporting-er"></a>Spuštění formátu používajícího vodorovně rozbalovací oblasti k dynamickému přidání sloupců v sestavách aplikace Excel pro elektronické výkaznictví (ER)
+# <a name="run-a-format-that-uses-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports"></a>Spuštění formátu používajícího vodorovně rozbalovací oblasti k dynamickému přidání sloupců v sestavách aplikace Excel
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Následující postup vysvětluje, jak uživatel s přiřazenou rolí správce systému nebo vývojáře elektronického výkaznictví může nakonfigurovat formát elektronických sestav (ER) ke generování sestav jako soubory s listy OPENXML (Excel), ve kterých lze dynamicky vytvářet požadované sloupce jako vodorovně rozbalitelné rozsahy. Tyto kroky lze provést v rámci společnosti DEMF.
 

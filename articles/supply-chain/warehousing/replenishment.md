@@ -20,16 +20,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1b6086f7769086a9cdbb61c03882ea21d908ab4a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 41f77a837f446e0ef263f1554a333d6e48248a0e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="replenishment"></a>Doplnění
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje strategie doplnění, které jsou k dispozici pro sklady, které používají funkce, které jsou k dispozici v modulu Řízení skladu. Informace v tomto tématu se nevztahují na skladové řešení, které je k dispozici v modulu Řízení zásob.
 
@@ -67,13 +67,15 @@ Doplnění poptávky nákladu využívá souhrn poptávky po několik nákladů 
 Namísto toho, abyste museli na konci procesu přidělení shrnout poptávku a provést doplnění na základě shrnutého množství, můžete použít strategii okamžitého doplnění. Když použijete tuto strategii, lze po selhání řádku směrnice skladového místa okamžitě doplnit zásoby. Proto můžete nastavit doplnění tak, aby bylo omezeno konkrétními jednotkami a aby používalo množství, která jsou nastavena pro konkrétní skladová místa.
 
 ## <a name="replenishment-prerequisites"></a>Předpoklady doplnění
-| Předpoklad            | popis |
-|-------------------------|-------------|
-| Položka                    | Položky musí být povoleny pro procesy správy skladu. |
-| Sklad               | Sklad musí být povolen pro procesy správy skladu. Pokud chcete povolit sklad pro procesy správy skladu, vyberte na stránce **Sklady** sklad a poté vyberte možnost **Použít procesy řízení skladu**. |
-| Šablony doplnění | Je nutné nastavit alespoň jednu šablonu pro Doplnění metodou min/max., Doplnění na základě poptávky vlny nebo Doplnění poptávky nákladu. |
-| Místa               | Umístění musí být vytvořeno a připojeno k profilu umístění. |
-| Profily umístění       | Profily umístění jsou nutné k vytvoření umístění. |
-| Směrnice skladového místa     | Směrnice umístění jsou nezbytné, aby bylo možné provést práci v umístění, které vyžaduje doplnění, a v umístění, ze kterého zásoby pochází. |
-| Šablony práce          | Šablony práce typu **Doplnění** jsou nutné pro vytvoření doplnění, a aby bylo možné zásoby přenášet do požadovaného umístění. |
+
+|      Předpoklad       |                                                                                                                                popis                                                                                                                                 |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|          Položka           |                                                                                                        Položky musí být povoleny pro procesy správy skladu.                                                                                                        |
+|        Sklad        | Sklad musí být povolen pro procesy správy skladu. Pokud chcete povolit sklad pro procesy správy skladu, vyberte na stránce <strong>Sklady</strong> sklad a poté vyberte možnost <strong>Použít procesy řízení skladu</strong>. |
+| Šablony doplnění |                                                                   Je nutné nastavit alespoň jednu šablonu pro Doplnění metodou min/max., Doplnění na základě poptávky vlny nebo Doplnění poptávky nákladu.                                                                   |
+|        Místa        |                                                                                                       Umístění musí být vytvořeno a připojeno k profilu umístění.                                                                                                       |
+|    Profily umístění    |                                                                                                        Profily umístění jsou nutné k vytvoření umístění.                                                                                                        |
+|   Směrnice skladového místa   |                                                       Směrnice umístění jsou nezbytné, aby bylo možné provést práci v umístění, které vyžaduje doplnění, a v umístění, ze kterého zásoby pochází.                                                        |
+|     Šablony práce      |                                                   Šablony práce typu <strong>Doplnění</strong> jsou nutné pro vytvoření doplnění, a aby bylo možné zásoby přenášet do požadovaného umístění.                                                    |
+
 

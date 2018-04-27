@@ -19,15 +19,15 @@ ms.author: saraschi
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7a81697a8e90fb6b0695a02db0868f5708fdbddf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 16f7c199fb4c9905c465e5d4596d3eaa90104b83
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Sestava dopředného posunutí dlouhodobého majetku
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Sestava **dopředného posunutí dlouhodobého majetku** poskytuje ve snadno čitelném formátu aplikace Microsoft Excel podrobná data dlouhodobého majetku, která vyžadujete pro uzávěrku období, finanční výkazy a vykazování daní. Tato sestava zahrnuje počáteční a koncové zůstatky dlouhodobého majetku, spolu s pohyby ocenění pro dané období, a jakákoliv pořízení nového majetku a vyřazení, ke kterým došlo během tohoto období. Data se vykazujuí pro jednotlivý dlouhodobý majetek a hodnoty jsou dále shrnuty pro skupiny dlouhodobého majetku a právnickou osobu.
 
@@ -41,28 +41,30 @@ Tato sestava je k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Op
 
 V následující tabulce jsou popsána pole, která jsou k dispozici v sestavě.
 
-| Pole                                       | popis |
-|---------------------------------------------|-------------|
-| Zůstatky: Počáteční                           | Zůstatková účetní hodnota dlouhodobého majetku k datu „od“ uvedenému v sestavě. |
-| Zůstatky: Konečné                           | Zůstatková účetní hodnota dlouhodobého majetku k datu „do“ uvedenému v sestavě. |
-| Pořízení: Počáteční hodnota                 | Součet všech transakcí typu **Pořízení** a **Oprava pořizovací ceny** k datu „od“ uvedenému v sestavě. |
-| Pořízení: Pořízení za období           | Součet všech transakcí typu **Pořízení** a **Oprava pořizovací ceny**, které byly zaúčtovány během rozsahu dat sestavy. |
-| Pořízení: Vyřazení za období              | Součet všech zaúčtovaných stornování pořízení, která měla transakci vyřazení během rozsahu dat sestavy. |
-| Pořízení: Konečná hodnota                 | Součet všech transakcí typu **Pořízení** a **Oprava pořizovací ceny** k datu „do“ uvedenému v sestavě. |
-| Odpisy: Počáteční hodnota                | Součet všech transakcí typu **Odpis**, **Oprava odpisu**, **Náhrada za zvláštní odpisy** a **Mimořádný odpis** až do data „od“ uvedeného v sestavě. |
-| Odpisy: Odpisy za období         | Součet všech transakcí typu **Odpis**, **Oprava odpisu** a **Mimořádný odpis**, které byly zaúčtovány během rozsahu dat sestavy. |
-| Odpisy: Speciální odpisy za období | Součet všech transakcí typu **Náhrada za zvláštní odpisy**, které byly zaúčtovány během rozsahu dat sestavy. |
-| Odpisy: Vyřazení za období             | Součet všech zaúčtovaných stornování vyřazení, která měla transakci vyřazení během rozsahu dat sestavy. |
-| Odpisy: Konečná hodnota                | Součet všech transakcí typu **Odpis**, **Oprava odpisu**, **Náhrada za zvláštní odpisy** a **Mimořádný odpis** až do data „do“ uvedeného v sestavě. |
-| Zvýšení odpisu/Snížení odpisu: Počáteční hodnota        | Součet všech transakcí typu **Zvýšení odpisu**, **Snížení odpisu** a **Přecenění** k datu „od“ uvedenému v sestavě. |
-| Zvýšení odpisu/Snížení odpisu: Zvýšení odpisu za období     | Součet všech transakcí typu **Zvýšení odpisu**, které byly zaúčtovány během rozsahu dat sestavy. |
-| Zvýšení odpisu/Snížení odpisu: Snížení odpisu za období   | Součet všech transakcí typu **Snížení odpisu**, které byly zaúčtovány během rozsahu dat sestavy. |
-| Zvýšení odpisu/Snížení odpisu: Přecenění za období  | Součet všech transakcí typu **Přecenění**, které byly zaúčtovány během rozsahu dat sestavy. |
-| Zvýšení odpisu/Snížení odpisu: Vyřazení za období     | Součet všech zaúčtovaných stornování zvýšení odpisu, snížení odpisu a přecenění, která měla transakci vyřazení během rozsahu dat sestavy. |
-| Zvýšení odpisu/Snížení odpisu: Konečná hodnota        | Součet všech transakcí typu **Zvýšení odpisu**, **Snížení odpisu** a **Přecenění** k datu „do“ uvedenému v sestavě. |
-| Vyřazení: Datum vyřazení                    | Datum vyřazení pro knihu dlouhodobého majetku. |
-| Vyřazení: Zůstatková účetní hodnota při vyřazení       | Zůstatková účetní hodnota knihy dlouhodobého majetku při vyřazení. |
-| Vyřazení: Hodnota prodeje                       | Hodnota prodeje pro knihu dlouhodobého majetku s vyřazením – prodejní transakce. |
-| Vyřazení: Likvidační hodnota                      | Likvidační hodnota prodeje pro knihu dlouhodobého majetku s vyřazením – likvidační transakce. |
-| Vyřazení: Zisk/ztráta                      | Hodnota zisku nebo ztráty, která je vypočtena jako součást transakce vyřazení pro knihu dlouhodobého majetku. |
+
+|                    Pole                    |                                                                                                                                popis                                                                                                                                |
+|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|              Zůstatky: Počáteční              |                                                                                           Zůstatková účetní hodnota dlouhodobého majetku k datu „od“ uvedenému v sestavě.                                                                                           |
+|              Zůstatky: Konečné              |                                                                                            Zůstatková účetní hodnota dlouhodobého majetku k datu „do“ uvedenému v sestavě.                                                                                            |
+|         Pořízení: Počáteční hodnota         |                                                 Součet všech transakcí typu <strong>Pořízení</strong> a <strong>Oprava pořizovací ceny</strong> k datu „od“ uvedenému v sestavě.                                                  |
+|      Pořízení: Pořízení za období      |                                                 Součet všech transakcí typu <strong>Pořízení</strong> a <strong>Oprava pořizovací ceny</strong>, které byly zaúčtovány během rozsahu dat sestavy.                                                  |
+|       Pořízení: Vyřazení za období        |                                                                        Součet všech zaúčtovaných stornování pořízení, která měla transakci vyřazení během rozsahu dat sestavy.                                                                        |
+|         Pořízení: Konečná hodnota         |                                                  Součet všech transakcí typu <strong>Pořízení</strong> a <strong>Oprava pořizovací ceny</strong> k datu „do“ uvedenému v sestavě.                                                   |
+|        Odpisy: Počáteční hodnota         | Součet všech transakcí typu <strong>Odpis</strong>, <strong>Oprava odpisu</strong>, <strong>Náhrada za zvláštní odpisy</strong> a <strong>Mimořádný odpis</strong> až do data „od“ uvedeného v sestavě. |
+|     Odpisy: Odpisy za období     |                         Součet všech transakcí typu <strong>Odpis</strong>, <strong>Oprava odpisu</strong> a <strong>Mimořádný odpis</strong>, které byly zaúčtovány během rozsahu dat sestavy.                          |
+| Odpisy: Speciální odpisy za období |                                                              Součet všech transakcí typu <strong>Náhrada za zvláštní odpisy</strong>, které byly zaúčtovány během rozsahu dat sestavy.                                                               |
+|       Odpisy: Vyřazení za období       |                                                                       Součet všech zaúčtovaných stornování vyřazení, která měla transakci vyřazení během rozsahu dat sestavy.                                                                        |
+|        Odpisy: Konečná hodnota         |  Součet všech transakcí typu <strong>Odpis</strong>, <strong>Oprava odpisu</strong>, <strong>Náhrada za zvláštní odpisy</strong> a <strong>Mimořádný odpis</strong> až do data „do“ uvedeného v sestavě.  |
+|    Zvýšení odpisu/Snížení odpisu: Počáteční hodnota     |                              Součet všech transakcí typu <strong>Zvýšení odpisu</strong>, <strong>Snížení odpisu</strong> a <strong>Přecenění</strong> k datu „od“ uvedenému v sestavě.                               |
+|   Zvýšení odpisu/Snížení odpisu: Zvýšení odpisu za období   |                                                                    Součet všech transakcí typu <strong>Zvýšení odpisu</strong>, které byly zaúčtovány během rozsahu dat sestavy.                                                                    |
+|  Zvýšení odpisu/Snížení odpisu: Snížení odpisu za období  |                                                                   Součet všech transakcí typu <strong>Snížení odpisu</strong>, které byly zaúčtovány během rozsahu dat sestavy.                                                                   |
+| Zvýšení odpisu/Snížení odpisu: Přecenění za období  |                                                                        Součet všech transakcí typu <strong>Přecenění</strong>, které byly zaúčtovány během rozsahu dat sestavy.                                                                        |
+|   Zvýšení odpisu/Snížení odpisu: Vyřazení za období   |                                                           Součet všech zaúčtovaných stornování zvýšení odpisu, snížení odpisu a přecenění, která měla transakci vyřazení během rozsahu dat sestavy.                                                           |
+|    Zvýšení odpisu/Snížení odpisu: Konečná hodnota     |                               Součet všech transakcí typu <strong>Zvýšení odpisu</strong>, <strong>Snížení odpisu</strong> a <strong>Přecenění</strong> k datu „do“ uvedenému v sestavě.                                |
+|          Vyřazení: Datum vyřazení           |                                                                                                                Datum vyřazení pro knihu dlouhodobého majetku.                                                                                                                |
+|    Vyřazení: Zůstatková účetní hodnota při vyřazení    |                                                                                                    Zůstatková účetní hodnota knihy dlouhodobého majetku při vyřazení.                                                                                                    |
+|            Vyřazení: Hodnota prodeje            |                                                                                               Hodnota prodeje pro knihu dlouhodobého majetku s vyřazením – prodejní transakce.                                                                                                |
+|           Vyřazení: Likvidační hodnota            |                                                                                               Likvidační hodnota prodeje pro knihu dlouhodobého majetku s vyřazením – likvidační transakce.                                                                                               |
+|           Vyřazení: Zisk/ztráta            |                                                                                 Hodnota zisku nebo ztráty, která je vypočtena jako součást transakce vyřazení pro knihu dlouhodobého majetku.                                                                                 |
+
 

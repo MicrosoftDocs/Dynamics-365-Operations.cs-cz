@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3206e53c4f2659c6d9b9be64b01ac28cdd17bc88
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0235cf112b59ee86f77d26044e47eb9bff8f67db
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Omezení výrazu a omezení tabulky v modelech konfigurace produktu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toto téma popisuje použití omezení výrazu a omezení tabulky. Omezení řídí hodnoty atributů, které jsou k dispozici při konfiguraci produktů pro prodejní nabídku, nákupní objednávku nebo výrobní zakázku. Můžete použít omezení výrazu nebo omezení tabulky v závislosti na tom, jak chcete vytvářet omezení. 
 
@@ -204,23 +203,24 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 
 V následující tabulce jsou uvedeny příklady, jak zapsat infixový zápis.
 
-| Infixový zápis    | popis                                                                                   |
+
+|  Infixový zápis   |                                          popis                                          |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| x + y + z         | Dodatek                                                                                      |
-| x \* y \* z       | Násobení                                                                                |
-| x - y             | Binární odčítání je převedeno stejně jako binární součet, kde je negovaná druhá podmínka. |
-| x ^ y ^ z         | Umocňování s pravou asociativitou                                                   |
-| !x                | Logické ne                                                                                   |
-| x -: y            | Logická implikace                                                                           |
-|  linka | y | z         | Logické nebo                                                                                    |
-| x & y & z         | Logické a                                                                                   |
-| x == y == z       | Rovnost                                                                                      |
-| x != y != z       | Různé                                                                                      |
-| x &lt; y &lt; z   | Je menší než                                                                                     |
-| x &gt; y &gt; z   | Je větší než                                                                                  |
-| x &lt;= y &lt;= z | Menší než nebo rovno                                                                         |
-| x &gt;= y &gt;= z | Větší než nebo rovno                                                                      |
-| (x)               | Závorky ruší výchozí priority.                                                      |
+|     x + y + z     |                                           Dodatek                                            |
+|    x \* y \* z    |                                        Násobení                                         |
+|       x - y       | Binární odčítání je převedeno stejně jako binární součet, kde je negovaná druhá podmínka. |
+|     x ^ y ^ z     |                          Umocňování s pravou asociativitou                          |
+|        !x         |                                          Logické ne                                          |
+|      x -: y       |                                      Logická implikace                                      |
+|         x         |                                               y                                               |
+|     x & y & z     |                                          Logické a                                          |
+|    x == y == z    |                                           Rovnost                                            |
+|    x != y != z    |                                           Různé                                            |
+|  x &lt; y &lt; z  |                                           Je menší než                                           |
+|  x &gt; y &gt; z  |                                         Je větší než                                          |
+| x &lt;= y &lt;= z |                                     Menší než nebo rovno                                     |
+| x &gt;= y &gt;= z |                                   Větší než nebo rovno                                    |
+|        (x)        |                           Závorky ruší výchozí priority.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Proč nejsou má omezení výrazu vyhodnocena správně?
 Rezervovaná slovo nelze použít jako řešitelské názvy atributů, komponentů nebo dílčích komponentů v modelu konfigurace produktu. Následující seznam obsahuje rezervovaná klíčová slova, která nelze použít:

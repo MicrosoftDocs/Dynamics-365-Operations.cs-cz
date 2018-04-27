@@ -1,6 +1,6 @@
 ---
 title: "Vytvoření faktury odběratele"
-description: "**Faktura odběratele pro prodejní objednávku** je účet, který se vztahuje k prodeji a který organizace předává odběrateli."
+description: "**Faktura odběratele pro prodejní objednávku** je účet, který se vztahuje k prodeji a který organizace předává odběrateli."
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 01/12/2018
@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0e5605b65b6203a50ef2fef81d032a887da32bf9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f08131e01fddb259d3bb537b1625ea2615a1e958
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-a-customer-invoice"></a>Vytvoření faktury odběratele
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Faktura odběratele pro prodejní objednávku** je účet, který se vztahuje k prodeji a který organizace předává odběrateli. Tento typ faktury odběratele se vytváří na základě prodejní objednávky, která zahrnuje řádky objednávky a čísla položek. Čísla položek jsou specifikována a zaúčtována v hlavní knize. Položky dílčího hlavního deníku nejsou k dispozici pro fakturu odběratele pro prodejní objednávku. Další informace naleznete v tématu [Vytvoření faktur prodejní objednávky](tasks/create-sales-order-invoices.md).
 

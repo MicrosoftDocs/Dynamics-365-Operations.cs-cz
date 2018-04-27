@@ -3,11 +3,12 @@ title: "Obsah správy nákladů v Power BI"
 description: "Toto téma popisuje, co je součástí obsahu správy nákladů v Power BI."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/02/2018
+ms.date: 03/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -19,124 +20,195 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7b5c4428c8610a7b2d4cf1a28287ba2bb1f9c2ea
-ms.openlocfilehash: 6739d769c3f7876f67d80554743458b0abd5aae5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a4eacafdf9b9e0eabe7fe599e679fca18c749733
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/06/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-management-power-bi-content"></a>Obsah správy nákladů v Power BI
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+
+## <a name="overview"></a>Přehled
+
+Obsah **Řízení nákladů** v Microsoft Power BI je určen pro skladové účetní nebo osoby v rámci organizace, které zodpovídají za nebo se zabývají stavem zásob nebo nedokončenou výrobu (NV) nebo které jsou zodpovědné za nebo se zabývají analýzou odchylek standardních nákladů.
 
 > [!Note]
-> Tento balíček obsahu je zastaralý, jak je uvedeno v části [Balíčky obsahu Power BI publikované na PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
+> Obsah **Řízení nákladů** Power BI popisovaný v tomto v tomto tématu se týká aplikace Dynamics 365 for Finance and Operations 8.0.
+> 
+> Sada obsahu Power BI **Řízení nákladů**, publikovaná na serveru PowerBI.com se již nepoužívá. Další informace o tomto odepsání uvádí [Sady obsahu Power BI publikované na PowerBI.com](../migration-upgrade/deprecated-features.md#power-bi-content-packs-published-to-powerbicom).
 
 
-Toto téma popisuje, co je součástí obsahu správy nákladů v Power BI. 
+Tento obsah Power BI obsahuje kategorizovaný formát, který pomáhá sledovat výkon zásob a vizualizovat, jak jimi protékají náklady. Můžete získat manažerské informace, jako je například ukazatel obratu, počet dní, po který jsou zásoby na skladě, přesnost a "ABC-klasifikace" na preferované agregované úrovni (společnost, položka, skupina položek nebo webové stránky). Zpřístupněné informace lze použít také jako podrobný doplněk k finančnímu výkazu.
 
-Obsah **Správy nákladů** sady nástrojů Microsoft Power BI je určen pro skladové účetní zásob nebo pro osoby v organizaci, které jsou odpovědné za zásoby. Obsah **Správy nákladů** v Power BI poskytuje manažerský přehled o zásobách a rozpracované výrobě (NV), a způsobu, jakým jimi náklady procházejí podle kategorie v průběhu času. Informace lze použít také jako podrobný doplněk k finančnímu výkazu.
+Obsah Power BI je vystavěn na souhrnném měření **CostObjectStatementCacheMonthly**, které má jako primární datový zdroj tabulku **CostObjectStatementCache**. Tato tabulka je spravována rozhraním mezipaměti sady dat. Ve výchozím nastavení je tabulka aktualizována každých 24 hodin, ale můžete změnit četnost aktualizací nebo povolit ruční aktualizace v konfiguraci mezipaměti datové sady. Ruční aktualizace lze spustit v pracovním prostoru **Správa nákladů** nebo **Analýza nákladů**.
 
-## <a name="key-measures"></a>Klíčová měřítka
+Po každé aktualizaci tabulky **CostObjectStatementCache** je nutné aktualizovat souhrnné měření **CostObjectStatementCacheMonthly**, než bude možné aktualizovat data ve vizualizacích Power BI.
 
-+ Počáteční zůstatek
-+ Konečný zůstatek
-+ Čistá změna
-+ Čistá změna v %
-+ Sledování splatnosti
+## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 
-## <a name="key-performance-indicators"></a>Klíčové ukazatele výkonnosti
-+ Obrat zásob
-+ Přesnost zásob
+Obsah Power BI **Řízení nákladů** se zobrazí v pracovním prostoru **Správa nákladů** a **Analýza nákladů**.
 
-Primárním datovým zdrojem pro CostAggregatedCostStatementEntryEntity je tabulka CostStatementCache. Tato tabulka je spravována rozhraním mezipaměti sady dat. Ve výchozím nastavení je tabulka aktualizována každých 24 hodin, ale můžete povolit ruční aktualizace v konfiguraci mezipaměti dat. Pak můžete provést ruční aktualizaci v pracovním prostoru **Správa nákladů** nebo **Analýza nákladů**. Po spuštění aktualizace CostStatementCache je nutné aktualizovat OData připojení na Power BI.com, pokud chcete zobrazit aktualizovaná data na webu. Měření odchylky (nákup, výroba) v tomto obsahu Power BI se vztahují pouze na položky, které jsou ohodnoceny skladovou metodou standardních nákladů. Výrobní odchylka se vypočítá jako rozdíl mezi aktivními a realizovanými náklady. Výrobní odchylka se vypočítá, když má výrobní zakázka stav **Ukončeno**. Další informace o typech výrobní odchylky a způsobu výpočtu jednotlivých typů naleznete v tématu [Analýza odchylek pro dokončenou výrobní zakázku](https://technet.microsoft.com/en-us/library/gg242850.aspx).
+Pracovní prostor **Správa nákladů** obsahuje následující karty:
+
+- **Přehled** – na této kartě se zobrazují data aplikace.
+- **Stav účetnictví zásob** – na této kartě se zobrazuje obsah Power BI.
+- **Stav účetnictví výroby** – na této kartě se zobrazuje obsah Power BI.
+
+Pracovní prostor **Analýza nákladů** obsahuje následující karty:
+
+- **Přehled** – na této kartě se zobrazují data aplikace.
+- **Analýza účetnictví zásob** – na této kartě se zobrazuje obsah Power BI.
+- **Analýza účetnictví výroby** – na této kartě se zobrazuje obsah Power BI.
+- **Analýza odchylky st. nákladů** – na této kartě se zobrazuje obsah Power BI.
+
+## <a name="report-pages-that-are-included-in-the-power-bi-content"></a>Stránky sestav, které jsou součástí obsahu Power BI
+
+Obsah Power BI **Správa nákladů** obsahuje sadu stránek sestavy, které sestávají ze sady metrik. Tyto metriky jsou zobrazována jako grafy, dlaždice a tabulky. 
+
+Následující tabulky poskytují přehled vizualizace v obsahu **správy nákladů** v Power BI.
+
+### <a name="inventory-accounting-status"></a>Stav skladového účetnictví
+
+| Stránka sestavy                               | Vizualizace                                   |
+|-------------------------------------------|-------------------------------------------------|
+| Přehled zásob                        | Počáteční zůstatek                               |
+|                                           | Změna netto                                      |
+|                                           | Čistá změna v %                                    |
+|                                           | Konečný zůstatek                                  |
+|                                           | Přesnost zásob                              |
+|                                           | Ukazatel obratu zásob                        |
+|                                           | Dny zásob na skladě                          |
+|                                           | Aktivní produkt za období                        |
+|                                           | Aktivní objekty nákladů v období                   |
+|                                           | Zůstatek podle skupiny položek                           |
+|                                           | Zůstatek podle pracoviště                                 |
+|                                           | Výpis podle kategorie                           |
+|                                           | Čistá změna podle čtvrtletí                           |
+| Přehled zásob podle skupiny pracoviště a položky | Přesnost zásob podle pracoviště                      |
+|                                           | Ukazatel obratu zásob podle pracoviště                |
+|                                           | Konečný zůstatek zásob podle pracoviště                |
+|                                           | Přesnost zásob podle skupin zboží                |
+|                                           | Ukazatel obratu zásob podle skupiny položek          |
+|                                           | Konečný zůstatek zásob podle pracoviště a skupiny položek |
+| Výkaz inventury                       | Výkaz inventury                             |
+| Výpis zásob podle pracoviště               | Výpis zásob podle pracoviště                     |
+| Výkaz zásob podle hierarchie produktů  | Výkaz inventury                             |
+| Výkaz zásob podle hierarchie produktů  | Výpis zásob podle pracoviště                     |
+
+### <a name="manufacturing-accounting-status"></a>Stav účetnictví pro výrobu
+
+| Stránka sestavy                | Vizualizace                       |
+|----------------------------|-------------------------------------|
+| Přehled NV do konce roku           | Počáteční zůstatek                   |
+|                            | Změna netto                          |
+|                            | Čistá změna v %                        |
+|                            | Konečný zůstatek                      |
+|                            | Ukazatel obratu NP                  |
+|                            | Denní pokladní hotovost NV                    |
+|                            | Aktivní objekt nákladů v období        |
+|                            | Čistá změna podle skupiny prostředků        |
+|                            | Zůstatek podle pracoviště                     |
+|                            | Výpis podle kategorie               |
+|                            | Čistá změna podle čtvrtletí               |
+| výkaz nedokončené výroby              | Počáteční zůstatek                   |
+|                            | Konečný zůstatek                      |
+|                            | Výpis NV podle kategorie           |
+| Výpis zásob NV podle pracoviště      | Počáteční zůstatek                   |
+|                            | Konečný zůstatek                      |
+|                            | Výpis NV podle kategorie a pracoviště  |
+| Výpis NV podle hierarchie | Počáteční zůstatek                   |
+|                            | Konečný zůstatek                      |
+|                            | Výpis NV podle kategorie a hierarchie |
+
+### <a name="inventory-accounting-analysis"></a>Analýza skladového účetnictví
+
+| Stránka sestavy        | Vizualizace                                                                |
+|--------------------|------------------------------------------------------------------------------|
+| Podrobnosti skladu  | Prvních 10 prostředků podle konečného zůstatku                                           |
+|                    | Hlavních 10 zdrojů podle čistého navýšení změny                                      |
+|                    | Hlavních 10 zdrojů podle čistého snížení změny                                      |
+|                    | Hlavních 10 zdrojů podle ukazatele obratu zásob                                 |
+|                    | Zdroje podle nízkého ukazatele obratu a konečného zůstatku nad prahovou hodnotou |
+|                    | Hlavních 10 zdrojů podle nízké přesnosti                                             |
+| Klasifikace ABC | Konečný zůstatek zásob                                                     |
+|                    | Spotřebovaný materiál                                                            |
+|                    | Prodáno (COGS)                                                                  |
+| Trendy zásob   | Konečný zůstatek zásob                                                     |
+|                    | Čistá změna zásob                                                         |
+|                    | Ukazatel obratu zásob                                                     |
+|                    | Přesnost zásob                                                           |
+
+### <a name="manufacturing-accounting-analysis"></a>Analýza účetnictví pro výrobu
+
+| Stránka sestavy | Vizualizace      |
+|-------------|--------------------|
+| Trendy NV  | Konečný zůstatek NV |
+|             | Čistá změna NV     |
+|             | Ukazatel obratu NP |
+
+### <a name="std-cost-variance-analysis"></a>Analýza standardní odchylky nákladů
+
+| Stránka sestavy                             | Vizualizace                                        |
+|-----------------------------------------|------------------------------------------------------|
+| Odchylka nákupní ceny (standardní náklady) od začátku roku | Zůstatek z nákupu                                     |
+|                                         | Odchylka nákupní ceny                              |
+|                                         | Poměr odchylky nákupní ceny                        |
+|                                         | Odchylka podle skupiny položek                               |
+|                                         | Odchylka podle pracoviště                                     |
+|                                         | Nákupní cena podle čtvrtletí                            |
+|                                         | Nákupní cena podle čtvrtletí a skupiny položek             |
+|                                         | Hlavních 10 zdrojů podle poměru nepříznivé nákupní ceny |
+|                                         | Hlavních 10 zdrojů podle poměru příznivé nákupní ceny   |
+| Výrobní odchylka (st. náklady) od začátku roku     | Výrobní náklady                                    |
+|                                         | Výrobní odchylka                                  |
+|                                         | Poměr výrobní odchylky                            |
+|                                         | Odchylka podle skupiny položek                               |
+|                                         | Odchylka podle pracoviště                                     |
+|                                         | Výrobní odchylka množství podle čtvrtletí                       |
+|                                         | Výrobní odchylka podle čtvrtletí a typu odchylky     |
+|                                         | 10 hlavních zdrojů s nepříznivou výrobní odchylkou  |
+|                                         | 10 hlavních zdrojů s příznivou výrobní odchylkou    |
+
+### <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
+
+Data z aplikace Microsoft Dynamics 365 for Finance and Operations se používají k vyplnění stránek sestavy obsahu Power BI **Řízení nákladů**. Tato data jsou reprezentována jako měrné systémy agregace, které jsou rozfázovány v úložišti entit, což je databáze serveru Microsoft SQL optimalizovaná pro analýzy. Další informace naleznete v tématu [Integrace Power BI úložištěm entit](power-bi-integration-entity-store.md).
+
+Klíčová agregovaná opatření následujících objektů se používají jako základ obsahu Power BI.
+
+| Objekt                          | Klíčová opatření agregace | Datový zdroj pro Finance and Operations | Pole               |
+|---------------------------------|----------------------------|----------------------------------------|---------------------|
+| CostObjectStatementCacheMonthly | Množství                     | CostObjectStatementCache               | Množství              |
+| CostObjectStatementCacheMonthly | Množství                   | CostObjectStatementCache               | Množství                 |
+| CostInventoryAccountingKPIGoal  | AnnualInventoryTurn        | CostInventoryAccountingKPIGoal         | AnnualInventoryTurn |
+| CostInventoryAccountingKPIGoal  | InventoryAccuracy          | CostInventoryAccountingKPIGoal         | InventoryAccuracy   |
+
+Následující tabulka zobrazuje klíčová vypočítaná měření v obsahu Power BI.
+
+| Výměra                            | Výpočet |
+|------------------------------------|-------------|
+| Počáteční zůstatek                  | Počáteční zůstatek = [Koncový zůstatek]-[Čistá změna] |
+| Množství počátečního zůstatku             | Množství Počáteční zůstatek = [Množství Koncový zůstatek]-[Množství Čistá změna] |
+| Konečný zůstatek                     | Konečný zůstatek = (CALCULATE(SUM([Amount]) FILTER(ALL(FiscalCalendar), FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE])))) |
+| Množství Konečný zůstatek                | Množství koncového zůstatku = CALCULATE(SUM([QTY]), FILTER(ALL(FiscalCalendar),FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE]))) |
+| Změna netto                         | Změna čisté částky = SUM([AMOUNT]) |
+| Změna čistého množství                    | Změna čistého množství = SUM([QTY]) |
+| Ukazatel obratu zásob podle částky | Ukazatel obratu zásob podle částky = if(OR([Průměrný zůstatek zásob] \<= 0, [Prodané zásoby nebo spotřebované zboží] \>= 0), 0, ABS([Prodané zásoby nebo spotřebované zboží])/[Průměrný zůstatek zásob]) |
+| Průměrný zůstatek zásob          | Průměrný zůstatek zásob = (([konečný zůstatek] + [počáteční zůstatek]) / 2) |
+| Dny zásob na skladě             | Denní zásoby množství na skladě = 365 / CostObjectStatementEntries [ukazatel obratu zásob podle částky] |
+| Přesnost zásob                 | Přesnost zásob podle částky = IF([Konečný zůstatek] \<= 0, IF(OR([Spočítaná částka zásob] \<\> 0, [Konečný zůstatek] \< 0), 0, 1), MAX(0, ([Konečný zůstatek] - ABS([Spočítaná částka zásob]))/[Konečný zůstatek])) |
+
+Následující tabulka uvádí klíčové dimenze, které se používají jako filtry k rozdělení agregovaných měření, aby bylo možné dosáhnout většího odstupňování a získat hlubší analytický přehled.
 
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriky, které jsou součástí obsahu Power BI
-Obsah zahrnuje sadu stránek sestav. Každá stránka obsahuje sadu metrik, které jsou zobrazovány jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizace v obsahu **správy nákladů** v Power BI.
-
-| Stránka sestavy | Grafy | Pozice |
-|---|---|---|
-|Celkové zásoby (výchozí nastavení podle aktuálního období) |Přesnost |Měření zásob:<br>Konečný zůstatek zásob<br>Čistá změna zásob<br>Čistá změna zásob %<br>|
-| |Obrat zásob | |
-| |Konečný zůstatek zásob podle skupiny prostředků | |
-| |Čistá změna zásob podle úrovně názvu kategorie 1 a úrovně názvu kategorie 2| |
-| |Nákupní odchylky podle skupiny prostředků a úrovně názvu kategorie 3 | |
-|Zásoby podle pracoviště (výchozí nastavení podle aktuálního období) |Konečný zůstatek zásob podle názvu pracoviště a skupiny prostředků | |
-| |Obrat zásob podle názvu pracoviště a skupiny prostředků | |
-| |Konečný zůstatek zásob podle města a skupiny prostředků | |
-|Zásoby podle skupiny prostředků (výchozí nastavení podle aktuálního období) |Měření zásob | |
-| |Přesnost zásob podle částky podle skupiny prostředků | |
-| |Obrat zásob podle částky podle skupiny prostředků | |
-|Zásoby po letech (výchozí aktuální rok oproti předchozímu roku) |Měření zásob | |
-| |Ukazatelé KPI zásob:<br>Obrat zásob<br>Přesnost zásob | |
-| |Konečný zůstatek zásob podle roku a skupiny prostředků | |
-| |Nákupní odchylky podle roku a úrovně názvu kategorie 3 | |
-|Prodlení zásob (výchozí nastavení podle aktuálního roku) |Prodlení zásob podle čtvrtletí a skupiny prostředků | |
-| |Prodlení zásob podle čtvrtletí a názvu pracoviště | |
-|Celková NV (výchozí nastavení podle aktuálního období) |Čistá změna NV podle úrovně názvu kategorie 1 a úrovně názvu kategorie 2 |Měření nedokončené výroby:<br>Konečný zůstatek NV<br>Čistá změna NV<br>Čistá změna NV %<br> |
-| |Výrobní odchylky podle skupiny prostředků a úrovně názvu kategorie 3 | |
-| |Čistá změna NV podle skupiny prostředků | |
-|NV podle pracoviště (výchozí nastavení podle aktuálního období) |Měření nedokončené výroby | |
-| |Čistá změna NV podle názvu pracoviště a úrovně názvu kategorie 2 | |
-| |Výrobní odchylky podle názvu pracoviště a úrovně názvu kategorie 3 | |
-
-## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
-Data aplikace Finance and Operations se používají k naplnění stránek sestavy v obsahu **Správa nákladů** v Power BI. Tato data jsou reprezentována jako měrné systémy agregace, které jsou rozfázovány v úložišti entit, což je databáze Microsoft SQL optimalizována pro analýzy. Další informace naleznete v tématu [Přehled integrace Power BI úložištěm entit](power-bi-integration-entity-store.md). Následujících klíčové měrné systémy agregace byly použity jako základ obsahu.
-
-| Celek            | Klíčové měření agregace | Datový zdroj pro Finance and Operations | Pole             | popis                       |
-|-------------------|---------------------------|---------------------------------------------|-------------------|-----------------------------------|
-| Záznamy výpisu | Čistá změna                | CostAggregatedCostStatementEntryEntity      | součet (\[Částka\])   | Částka v zúčtovací měně |
-| Záznamy výpisu | Množství čisté změny       | CostAggregatedCostStatementEntryEntity      | součet\[Množství\] |                                   |
-
-Následující tabulka zobrazuje, jak se používají klíčové měrné systémy agregace k vytvoření několika vypočtených hodnot v souboru dat obsahu.
-
-| Měřítko                                 | Jak vypočítat míru                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Počáteční zůstatek                       | \[Konečný zůstatek\]-\[Čistá změna\]                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Množství počátečního zůstatku              | \[Množství koncového zůstatku\]-\[Množství čisté změny\]                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Konečný zůstatek                          | CALCULATE(SUM(\[Částka\]), FILTER(ALLEXCEPT('Fiskální kalendáře', 'Fiskální kalendáře'\[LedgerRecId\], 'entity'\[ID\], 'entity'\[Název\], 'Hlavní knihy'\[Měna\], 'Hlavní knihy'\[Popis\], 'Hlavní knihy'\[Název\]), 'Fiskální kalendáře'\[Datum\] &lt;= MAX('Fiskální kalendáře'\[Datum\])))                                                                                                                                                                                           |
-| Množství konečného zůstatku                 | CALCULATE(SUM(\[Množství\]), FILTER(ALLEXCEPT('Fiskální kalendáře', 'Fiskální kalendáře'\[LedgerRecId\], 'entity'\[ID\], 'entity'\[Název\], 'Hlavní knihy'\[Měna\], 'Hlavní knihy'\[Popis\], 'Hlavní knihy'\[Název\]), 'Fiskální kalendáře'\[Datum\] &lt;= MAX('Fiskální kalendáře'\[Datum\])))                                                                                                                                                                                         |
-| Počáteční zůstatek zásob             | CALCULATE(\[Počáteční zůstatek\], 'Záznamy výpisu'\[Typ výpisu\] = "Zásoby")                                                                                                                                                                                                                                                                                                                                                                                      |
-| Konečný zůstatek zásob                | CALCULATE(\[Konečný zůstatek\], 'Záznamy výpisu'\[Typ výpisu\] = "Zásoby")                                                                                                                                                                                                                                                                                                                                                                                         |
-| Čistá změna zásob                    | CALCULATE(\[Čistá změna\], 'Záznamy výpisu'\[Typ výpisu\] = "Zásoby")                                                                                                                                                                                                                                                                                                                                                                                             |
-| Množství čisté změny zásob           | CALCULATE(\[Množství čisté změny\], 'Záznamy výpisu'\[Typ výpisu\] = "Zásoby")                                                                                                                                                                                                                                                                                                                                                                                    |
-| Čistá změna zásob %                  | IF (\[Konečný zůstatek zásob\] = 0, 0, \[Čistá změna zásob\] / \[Konečný zůstatek zásob\])                                                                                                                                                                                                                                                                                                                                                                           |
-| Obrat zásob podle částky                | if(OR (\[Průměrný zůstatek zásob\] &lt;= 0, \[Prodané zásoby nebo spotřebované výdeje\] &gt;= 0), 0, ABS (\[Prodané zásoby nebo spotřebované výdeje\]) /\[Průměrný zůstatek zásob\])                                                                                                                                                                                                                                                                                                  |
-| Průměrný zůstatek zásob               | (\[Konečný zůstatek zásob\] + \[Počáteční zůstatek zásob\]) / 2                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Prodané zásoby nebo spotřebované výdeje       | \[Prodané zásoby\] + \[Náklady na spotřebovaný materiál zásob\]                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Náklady na spotřebovaný materiál zásob        | CALCULATE(\[Čistá změna zásob\], 'Záznamy výpisu'\[Název kategorie - úroveň 2\_\] = "ConsumedMaterialsCost")                                                                                                                                                                                                                                                                                                                                                            |
-| Prodané zásoby                          | CALCULATE(\[Čistá změna zásob\], 'Záznamy výpisu'\[Název kategorie - úroveň 2\_\] = "Prodáno")                                                                                                                                                                                                                                                                                                                                                                             |
-| Přesnost zásob podle částky            | IF(\[Konečný zůstatek zásob\] &lt;= 0, IF(OR(\[Spočtená částka zásob\] &lt;&gt; 0, \[Konečný zůstatek zásob\] &lt; 0), 0, 1), MAX (0, (\[Konečný zůstatek zásob\] -ABS (\[Spočtená částka zásob\])) /\[Konečný zůstatek zásob\]))                                                                                                                                                                                                                              |
-| Spočtená částka zásob                | CALCULATE(\[Čistá změna zásob\], 'Záznamy výpisu'\[Název kategorie - úroveň 3\_\] = "Inventura")                                                                                                                                                                                                                                                                                                                                                                         |
-| Prodlení zásob                         | if(ISBLANK(max('Fiskální kalendáře'\[Datum\])), blank(), MAX(0, MIN(\[Množství příjemek prodlení zásob\], \[Množství konečného zůstatku prodlení zásob\] - \[Množství příjemek prodlení zásob v budoucnosti\]))) \* \[Průměrné náklady na jednotku zásob\]                                                                                                                                                                                                                                |
-| Množství příjemek prodlení zásob       | IF(\[minDate\] = \[minDateAllSelected\], CALCULATE (\[Množství čisté změny zásob\], 'Záznamy výpisu'\[Množství\] &gt; 0, FILTER(ALLEXCEPT ('Fiskální kalendáře', 'Fiskální kalendáře'\[LedgerRecId\], 'entity'\[ID\], 'entity'\[název\], 'Hlavní knihy'\[Měna\], 'Hlavní knihy'\[Popis\], 'Hlavní knihy'\[Název\]), 'Fiskální kalendáře'\[Datum\] &lt;= MAX ('Fiskální kalendáře'\[datum\]))), CALCULATE(\[Množství čisté změny zásob\], 'Výpis položek'\[Množství\] &gt; 0)) |
-| Množství koncového zůstatku prodlení zásob | \[Množství konečného zůstatku zásob\] + CALCULATE(\[Množství čisté změny zásob\], FILTER(ALLEXCEPT('Fiskální kalendáře', 'Fiskální kalendáře'\[LedgerRecId\], 'entitiy'\[ID\], 'entitiy'\[Název\], 'Hlavní knihy'\[Měna\], 'Hlavní knihy'\[Popis\], 'Hlavní knihy'\[Název\]), 'Fiskální kalendáře'\[Datum\] &gt; max('Fiskální kalendáře'\[Datum\]) ))                                                                                                                                 |
-| Příjemky prodlení zásob v budoucnosti  | CALCULATE(\[Čistá změna zásob\], 'Záznamy výpisu'\[Částka\] &gt; 0, FILTER(ALLEXCEPT('Fiskální kalendáře', 'Fiskální kalendáře'\[LedgerRecId\], 'entity'\[ID\], 'entity'\[Název\], 'Hlavní knihy'\[Měna\], 'Hlavní knihy'\[Popis\], 'Hlavní knihy'\[Název\]), 'Fiskální kalendáře'\[Datum\] &gt; MAX('Fiskální kalendáře'\[Datum\])))                                                                                                                                             |
-| Průměrné náklady na jednotku zásob                 | CALCULATE(\[Konečný zůstatek zásob\] / \[Množství konečného zůstatku zásob\],ALLEXCEPT('Fiskální kalendáře', 'Fiskální kalendáře'\[LedgerRecId\], 'entity'\[ID\], 'entity'\[Název\], 'Hlavní knihy'\[Měna\], 'Hlavní knihy'\[Popis\], 'Hlavní knihy'\[Název\]))                                                                                                                                                                                                                 |
-| Nákupní odchylky                      | CALCULATE(SUM(\[Částka\]), 'Záznamy výpisu'\[Název kategorie - úroveň 2\_\] = "Pořízeno", 'Záznamy výpisu'\[Typ výpisu\] = "Odchylka")                                                                                                                                                                                                                                                                                                                              |
-| Počáteční zůstatek NV                   | CALCULATE(\[Počáteční zůstatek\], 'Záznamy výpisu'\[Typ výpisu\] = "NV")                                                                                                                                                                                                                                                                                                                                                                                            |
-| Konečný zůstatek NV                      | CALCULATE(\[Konečný zůstatek\], 'Záznamy výpisu'\[Typ výpisu\] = "NV")                                                                                                                                                                                                                                                                                                                                                                                               |
-| Čistá změna NV                          | CALCULATE(\[Čistá změna\], 'Záznamy výpisu'\[Typ výpisu\] = "NV")                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Čistá změna NV %                        | IF(\[Koncový zůstatek NV\] = 0, 0, \[Čistá změna NV\] / \[Koncový zůstatek NV\])                                                                                                                                                                                                                                                                                                                                                                                             |
-| Výrobní odchylky                    | CALCULATE(SUM(\[Částka\]), 'Záznamy výpisu'\[Název kategorie - úroveň 2\_\] = "ManufacturedCost", 'Záznamy výpisu'\[Typ výpisu\] = "Odchylka")                                                                                                                                                                                                                                                                                                                      |
-| Název kategorie - úroveň 1                 | switch(\[Název kategorie - úroveň 1\_\], "None", "Žádný", "NetSourcing", "Čisté zdroje", "NetUsage", "Čisté použití", "NetConversionCost", "Čisté náklady převodu", "NetCostOfGoodsManufactured", "Čisté náklady vyrobeného zboží", "BeginningBalance", "Počáteční zůstatek")                                                                                                                                                                                                         |
-| Název kategorie - úroveň 2                 | switch(\[Název kategorie - úroveň 2\_\], "None", "Žádný", "Procured", "Pořízeno", "Disposed", "Vyřazeno", "Transferred", "Převedeno", "Sold", "Prodáno", "ConsumedMaterialsCost", "Spotřebované náklady na materiál", "ConsumedManufacturingCost", "Spotřebované výrobní náklady", "ConsumedOutsourcingCost", "Spotřebované náklady na outsourcing", "ConsumedIndirectCost", "Spotřebované nepřímé náklady", "ManufacturedCost", "Výrobní náklady", "Variances", "Odchylky")                            |
-| Název kategorie - úroveň 3                 | switch(\[Název kategorie - úroveň 3\_\], "None", "Žádný", "Counting", "Žádný", "ProductionPriceVariance", "Výrobní cena", "QuantityVariance", "Množství", "SubstitutionVariance", "Náhrada", "ScrapVariance", "Odpad", "LotSizeVariance", "Velikost šarže", "RevaluationVariance", "Přecenění", "PurchasePriceVariance", "Nákupní cena", "CostChangeVariance", "Změna nákladů", "RoundingVariance", "Odchylka zaokrouhlení")                                                   |
-
-Následující klíčové dimenze se používají jako filtry k řezu měrných systémů agregace pro dosažení většího rozlišení a poskytnutí hlubších analytických poznatků.
-
-| Celek           | Příklady atributů                       |
-|------------------|----------------------------------------------|
-| Entity         | ID, název                                     |
-| Fiskální kalendáře | Kalendář, měsíc, období, čtvrtletí, rok       |
-| Cíle ukazatele KPI        | Cíl přesnosti zásob, cíl obratu zásob |
-| Hlavní knihy          | Měna, Název, Popis                  |
-| Pracoviště            | ID, Název, Země, Město                      |
-
-
-
-
+|                         Celek                          |             Příklady atributů              |
+|---------------------------------------------------------|-------------------------------------------------|
+|                        Produkty                         | Číslo produktu, název produktu, jednotka, skupiny zboží |
+| Hierarchie kategorií (přiřazeno role Řízení nákladů) |       Hierarchie kategorií, úroveň kategorie        |
+|                     Právnické osoby                      |               Jména právnické osoby                |
+|                    Fiskální kalendáře                     |  Fiskální kalendář, rok, čtvrtletí, období, měsíc  |
+|                          Pracoviště                           |        ID, název, adresa, stát, země        |
 
 

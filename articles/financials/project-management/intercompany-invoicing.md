@@ -19,17 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7cd19340c913fcda3fb537162dfbae52b5c8e922
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3d4354316d0c37c6556c0ec3d27a3c62c5afb7b0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="intercompany-invoicing"></a>Mezipodnikové fakturování
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek obsahuje informace a příklady o vnitropodnikové fakturaci pro projekty v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 
@@ -58,20 +57,22 @@ V tomto příkladu je USSI půjčující právnická osoba a její prostředky v
 
 V tomto příkladu musí FRSI být odběratelem právnické osoby USSI a USSI musí být dodavatelem právnické osoby FRSI. Poté je možné nastavit vnitropodnikový vztah mezi dvěma právnickými osobami. Následující postup ukazuje, jak nastavit parametry tak, aby obě právnické osoby mohly být součástí vnitropodnikové fakturace.
 
-1.  Nastavte FRSI jako zákazníka právnické osoby USSI a nastavte USSI jako dodavatele právnické osoby FRSI. Existují tři vstupní body pro kroky, které jsou požadovány pro tento úkol.
-    | Krok | Vstupní bod                                                                       | popis   |
-    |------|-----------------------------------------------------------------------------------|------------------|
-    | A.    | V rámci USSI klikněte na **Pohledávky** &gt; **Zákazníci** &gt; **Všichni zákazníci**. | Vytvořte nový záznam zákazníka pro FRSI a vyberte skupinu odběratelů.                                                                                  |
-    | mld.    | V rámci FRSI klikněte na **Závazky** &gt; **Dodavatelé** &gt; **Všichni dodavatelé**.        | Vytvořit nový záznam dodavatele pro USSI a vyberte skupinu dodavatelů.                                                                                    |
-    | K    | V FRSI otevřete záznam dodavatele, který jste právě vytvořili.                            | Na panelu akcí na kartě **Obecné** ve skupině **Nastavení** klikněte na možnost **Mezipodnikové**. Na stránce **Mezipodnikové** na kartě **Obchodní vztah** nastavte jezdec **Aktivní** na **Ano**. V poli **Společnost zákazníka** vyberte záznam zákazníka, který jste vytvořili v kroku A. |
+1. Nastavte FRSI jako zákazníka právnické osoby USSI a nastavte USSI jako dodavatele právnické osoby FRSI. Existují tři vstupní body pro kroky, které jsou požadovány pro tento úkol.
 
-2.  Klikněte na **Řízení projektů a účetnictví** &gt; **Nastavení** &gt; **Parametry modulu Řízení a účetnictví projektu** a potom klikněte na kartu **Mezipodnikové**. Způsob nastavení parametrů závisí na tom, zda jste právnická osoba, která si půjčuje nebo která půjčuje.
-    -   Pokud jste právnická osoba, která si půjčuje, vyberte kategorii zásobování, která je používána pro párování faktur dodavatele, které jsou generovány automaticky.
-    -   Pokud jste půjčující právnická osoba pro každou entitu, která si půjčuje, vyberte výchozí kategorii projektu pro každý typ transakce. Kategorie projektu se používají při konfiguraci daně, pokud fakturovaná kategorie v mezipodnikových transakcích existuje pouze u právnické osoby, která si půjčuje. Podle potřeby můžete použít časové rozlišení výnosů pro mezipodnikové transakce. Toto časové rozlišení je provedeno při zaúčtování transakcí, a poté je stornováno při zaúčtování mezipodnikové faktury.
+   | Krok |                                                       Vstupní bod                                                        |                                                                                                                                                                                               popis                                                                                                                                                                                               |
+   |------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |  A.   | V rámci USSI klikněte na <strong>Pohledávky</strong> &gt; <strong>Zákazníci</strong> &gt; <strong>Všichni zákazníci</strong>. |                                                                                                                                                                  Vytvořte nový záznam zákazníka pro FRSI a vyberte skupinu odběratelů.                                                                                                                                                                  |
+   |  mld.   |    V rámci FRSI klikněte na <strong>Závazky</strong> &gt; <strong>Dodavatelé</strong> &gt; <strong>Všichni dodavatelé</strong>.     |                                                                                                                                                                    Vytvořit nový záznam dodavatele pro USSI a vyberte skupinu dodavatelů.                                                                                                                                                                    |
+   |  K   |                                  V FRSI otevřete záznam dodavatele, který jste právě vytvořili.                                  | Na panelu akcí na kartě <strong>Obecné</strong> ve skupině <strong>Nastavení</strong> klikněte na možnost <strong>Mezipodnikové</strong>. Na stránce <strong>Mezipodnikové</strong> na kartě <strong>Obchodní vztah</strong> nastavte jezdec <strong>Aktivní</strong> na <strong>Ano</strong>. V poli <strong>Společnost zákazníka</strong> vyberte záznam zákazníka, který jste vytvořili v kroku A. |
 
-3.  Klepněte na tlačítko **Řízení a účetnictví projektu** &gt; **Nastavení** &gt; **Ceny** &gt; **Převést cenu**.
-4.  Vyberte měnu, typ transakce a model přenosu ceny. Měna, která je použita na faktuře, je měna, která je nakonfigurována v záznamu zákazníka pro právnickou osobu, která si půjčuje od půjčující právnické osoby. Měna je používána pro párování položek v tabulce přenosu ceny.
-5.  Klepněte na tlačítko **Hlavní kniha** &gt; **Nastavení účtování** &gt; **Mezipodnikové účetnictví** a nastavte vztah USSI a FRSI.
+
+2. Klikněte na **Řízení projektů a účetnictví** &gt; **Nastavení** &gt; **Parametry modulu Řízení a účetnictví projektu** a potom klikněte na kartu **Mezipodnikové**. Způsob nastavení parametrů závisí na tom, zda jste právnická osoba, která si půjčuje nebo která půjčuje.
+   -   Pokud jste právnická osoba, která si půjčuje, vyberte kategorii zásobování, která je používána pro párování faktur dodavatele, které jsou generovány automaticky.
+   -   Pokud jste půjčující právnická osoba pro každou entitu, která si půjčuje, vyberte výchozí kategorii projektu pro každý typ transakce. Kategorie projektu se používají při konfiguraci daně, pokud fakturovaná kategorie v mezipodnikových transakcích existuje pouze u právnické osoby, která si půjčuje. Podle potřeby můžete použít časové rozlišení výnosů pro mezipodnikové transakce. Toto časové rozlišení je provedeno při zaúčtování transakcí, a poté je stornováno při zaúčtování mezipodnikové faktury.
+
+3. Klepněte na tlačítko **Řízení a účetnictví projektu** &gt; **Nastavení** &gt; **Ceny** &gt; **Převést cenu**.
+4. Vyberte měnu, typ transakce a model přenosu ceny. Měna, která je použita na faktuře, je měna, která je nakonfigurována v záznamu zákazníka pro právnickou osobu, která si půjčuje od půjčující právnické osoby. Měna je používána pro párování položek v tabulce přenosu ceny.
+5. Klepněte na tlačítko **Hlavní kniha** &gt; **Nastavení účtování** &gt; **Mezipodnikové účetnictví** a nastavte vztah USSI a FRSI.
 
 ## <a name="example-2-create-and-post-an-intercompany-timesheet"></a>Příklad 2: Vytvoření a zaúčtování mezipodnikového časového rozvrhu
 USSI – půjčující právnická osoba, musí vytvořit a odeslat časový rozvrh pro projekt z FRSI – právnické osoby, která si půjčuje. Existují dva vstupní body pro kroky, které jsou požadovány pro tento úkol.

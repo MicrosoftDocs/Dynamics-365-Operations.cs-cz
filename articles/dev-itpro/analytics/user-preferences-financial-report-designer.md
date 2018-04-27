@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1cabaf8a579fcd9722e409630038167afb07ffc6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d0307db3a49bcdb62146b815383f744c5b8e0fde
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="user-preferences-in-financial-report-designer"></a>Uživatelské předvolby v návrháři finančních sestav
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tento článek vysvětluje, jak nastavit uživatelské předvolby pro přizpůsobení interakce uživatelů v návrháři finančních sestav, a pro řízení výchozího prostředí po přihlášení. Můžete také určit, jak se zobrazí jednotlivé sestavy, knihovna sestav a výchozí umístění souborů. 
 
@@ -63,7 +62,7 @@ Tento článek vysvětluje, jak nastavit uživatelské předvolby pro přizpůso
 <td>Vyberte, zda chcete zobrazit upozornění při ukončení aplikace. Tato zpráva pomáhá zajistit, že program není ukončen neúmyslně.</td>
 </tr>
 <tr class="odd">
-<td>Automaticky použít podtržení buněk v záhlaví sloupců</td>
+<td>Automaticky používat podtržení buněk v záhlavích sloupců</td>
 <td>Určete, zda chcete vložit podtržení do buňky nového záhlaví sloupce.</td>
 </tr>
 <tr class="even">

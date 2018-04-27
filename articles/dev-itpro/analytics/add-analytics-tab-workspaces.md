@@ -16,16 +16,16 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: ee95c3d79f7f401c767b9bc8415b21369c14478b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d8cd3a6b3cbfa1219f0ebcf9d4d2132197167220
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Přidání analýz do pracovního prostoru pomocí Power BI Embedded
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Tato funkce je podporována v aplikaci Dynamics 365 for Finance and Operations (verze 7.2 a novější).
@@ -50,7 +50,7 @@ Ať rozšíříte existující pracovní prostor aplikace nebo zadáte nový pra
 
 ## <a name="add-a-pbix-file-as-a-resource"></a>Přidejte soubor .pbix jako prostředek
 Dříve než začnete, musíte vytvořit nebo získat sestavu Power BI, kterou vložíte do pracovního prostoru. Další informace o postupu vytváření analytických sestav naleznete v tématu [Úvod do práce s počítačem Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
- 
+
 Tento postup slouží k přidání souboru .pbix jako artefaktů projektu Visual Studio.
 
 1. Vytvořte nový projekt v příslušném modelu.
@@ -63,12 +63,12 @@ Tento postup slouží k přidání souboru .pbix jako artefaktů projektu Visual
 5. Najděte soubor .pbix, který obsahuje definici analytické sestavy, a klepněte na tlačítko **Otevřít**.
 
     ![Dialogové okno Vybrat soubor zdrojů](media/analytical-workspace-select-resource.png)
-  
+
 Poté, co jako prostředek Dynamics 365 nepřidáte .pbix soubor, můžete vložit sestavy pracovní prostory a přidat přímé odkazy pomocí položky nabídky.
 
 ## <a name="add-a-tab-control-to-an-application-workspace"></a>Přidat ovládací prvek karty s pracovním prostorem aplikace
 V tomto příkladu doporučujeme rozšířit pracovní prostor **řízení rezervací** v modelu Správa vozového parku přidáním karty **Analýzy** kartu pro definici formuláře **FMClerkWorkspace**.
- 
+
 Následující obrázek znázorňuje, jak formulář **FMClerkWorkspace** vypadá v Návrháři v aplikaci Microsoft Visual Studio.
 
 ![Formulář FMClerkWorkspace před změnami](media/analytical-workspace-definition-before.png)
@@ -93,16 +93,16 @@ Pomocí následujícího postupu rozšířit definici formuláře pracovního pr
 16. Klikněte pravým tlačítkem a vyberte **Odebrat vzor**.
 17. Znovu klikněte pravým tlačítkem a vyberte **Přidat vzor** > **Pracovní prostor s kartami**.
 18. Vytvořit nové sestavení pro ověření provedených změn.
- 
+
 Následující obrázek znázorňuje, jak návrh vypadá poté, co tyto změny se projeví.
 
 ![FMClerkWorkspace po provedení změn](media/analytical-workspace-definition-after.png)
 
 Poté, co jste přidali ovládací prvky formuláře, které budou použity pro sestavu pracovního prostoru, je nutné definovat velikost nadřazenému ovládacímu prvku tak, aby se přizpůsobilo rozvržení. Ve výchozím bude v sestavě viditelná stránka **Podokno Filtry** a **Karta**. Můžete však změnit viditelnost zobrazení těchto ovládacích prvků v závislosti na příjemci cílové sestavy.
- 
+
 > [!NOTE]
 > Pro vložené pracovní prostory doporučujeme použití rozšíření ke skrytí stránky **Podokno Filtry** i **Karta**.
- 
+
 Nyní jste dokončili úlohu rozšíření definice formuláře aplikace. Další informace o tom, jak používáte rozšíření přizpůsobení naleznete v tématu [přizpůsobení: rozšíření a vrstvy](../extensibility/customization-overlayering-extensions.md).
 
 ## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Přidání obchodní logiky X ++ pro vložení ovládacího prvku prohlížeče
@@ -169,12 +169,13 @@ public static void initializeReportControl(
 
 #### <a name="parameters"></a>Parametry
 
-| Jméno | popis |
-|---|---|
-| resourceName | Název zdroje .pbix  |
-| formGroupControl | Ovládací prvek skupiny formuláře pro použití sestavy Power BI. |
-| defaultPageName | Výchozí název stránky. |
-| showFilterPane | Logická hodnota, která určuje, zda má být podokno filtru zobrazené (**true**) nebo skryté (**false**). |
-| showNavPane | Logická hodnota, která určuje, zda má být navigační podokno zobrazené (**true**) nebo skryté (**false**). |
-| defaultFilters | Výchozí filtry pro sestavu Power BI. |
+|       Jméno       |                                                              popis                                                               |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|   resourceName   |                                                    Název zdroje .pbix                                                      |
+| formGroupControl |                                    Ovládací prvek skupiny formuláře pro použití sestavy Power BI.                                     |
+| defaultPageName  |                                                         Výchozí název stránky.                                                         |
+|  showFilterPane  |   Logická hodnota, která určuje, zda má být podokno filtru zobrazené (<strong>true</strong>) nebo skryté (<strong>false</strong>).   |
+|   showNavPane    | Logická hodnota, která určuje, zda má být navigační podokno zobrazené (<strong>true</strong>) nebo skryté (<strong>false</strong>). |
+|  defaultFilters  |                                              Výchozí filtry pro sestavu Power BI.                                              |
+
 

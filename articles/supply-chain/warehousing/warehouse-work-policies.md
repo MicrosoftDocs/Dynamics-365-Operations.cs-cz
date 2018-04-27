@@ -20,17 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a0c900dc208736f1823be50e8522061406c9f126
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c2d72509b0dc4d0cea5b4f2478ae7f8fc163e78c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="warehouse-work-policies"></a>Zásady práce ve skladu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Zásady práce ve skladu v aplikaci Microsoft Dynamics 365 for Finance and Operations řídí, zda je skladová práce vytvářena skladovými procesy ve výrobě na základě typu pracovního příkazu, skladového místa a produktu.
 
@@ -68,14 +67,15 @@ Při plánování konfigurace zásad práce ve skladu pro tento scénář je tř
 
 Toto je příklad zásad práce, které můžete nastavit na základě těchto důvodů.
 
-|                                         |                                                       |
-|-----------------------------------------|-------------------------------------------------------|
-|**Název pracovní zásady**<br>                 |**Typy pořadí pracovních činností**<br>                               |
-| Bez zaskladnění 01     `                    |- Zaskladnění dokončeného výrobku<br>                           |
-|                                         |**Umístění**<br>                                      |
-|                                         |- O1   |                                               |
-|                                         |**Produkty** <br>                                      |
-|                                         |- SC1                                                  |
+
+|                                       |                                       |
+|---------------------------------------|---------------------------------------|
+| <strong>Název pracovní zásady</strong><br> | <strong>Typy pořadí pracovních činností</strong><br> |
+|         Bez zaskladnění 01     `          |     - Zaskladnění dokončeného výrobku<br>      |
+|                                       |    <strong>Umístění</strong><br>     |
+|                                       |                 - O1                  |
+|                                       |    <strong>Produkty</strong> <br>     |
+|                                       |                 - SC1                 |
 
 Následující procedury obsahují podrobné pokyny ke způsobu nastavení zásad pracovního skladu pro tento scénář. Je popsána také ukázka nastavení, která uvádí, jak vykázat výrobní zakázku jako dokončenou v místě, které nemá licenční kód.
 
@@ -131,7 +131,7 @@ KROKY (25)
 <tr>
 <td></td>
 <td>3.</td>
-<td>Klikněte na možnost Upravit.</td>
+<td>Klikněte na položku Upravit.</td>
 </tr>
 <tr>
 <td></td>
@@ -174,12 +174,12 @@ KROKY (25)
 <tr>
 <td></td>
 <td>5.</td>
-<td>Klepněte na volbu Nový.</td>
+<td>Klikněte na položku Vytvořit.</td>
 </tr>
 <tr>
 <td></td>
 <td>6.</td>
-<td>V podokně akcí klikněte na možnost Výrobní zakázka.</td>
+<td>V podokně akcí klikněte na položku Výrobní zakázka.</td>
 </tr>
 <tr>
 <td></td>
@@ -199,7 +199,7 @@ KROKY (25)
 <tr>
 <td></td>
 <td>10.</td>
-<td>Klepněte na kartuObecné.</td>
+<td>Klikněte na záložku Obecné.</td>
 </tr>
 <tr>
 <td></td>
@@ -209,17 +209,17 @@ KROKY (25)
 <tr>
 <td></td>
 <td>12.</td>
-<td>Klepněte na tlačítko OK.</td>
+<td>Klikněte na tlačítko OK.</td>
 </tr>
 <tr>
 <td></td>
 <td>13.</td>
-<td>Klepněte na možnost Vykázat jako dokončené.</td>
+<td>Klikněte na položku Oznámit jako dokončené.</td>
 </tr>
 <tr>
 <td></td>
 <td>14.</td>
-<td>Klepněte na kartuObecné.</td>
+<td>Klikněte na záložku Obecné.</td>
 </tr>
 <tr>
 <td></td>
