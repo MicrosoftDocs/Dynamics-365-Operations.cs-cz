@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="update-the-bank-journal-composite-entity"></a>Aktualizace složité entity bankovního deníku
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Pomocí následujících kroků přidejte další pole BankTransactionType field do složitého záznamu BankJournalEntity.
 

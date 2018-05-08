@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="view-an-expense-report"></a>Zobrazit sestavu výdajů
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Po spuštění dotazu pro zobrazení transakcí v hlavní knize nebo zásobování a zdrojích může dotaz vrátit příliš mnoho informací. Můžete tedy vyhledávání zúžit. Chcete-li získat požadované informace, můžete procházet podrobnostmi transakce, chcete-li zobrazit sestavu výdajů, na které se nacházela transakce.
 

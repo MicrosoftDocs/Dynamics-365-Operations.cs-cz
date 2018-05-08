@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="analyze-sales-trends-and-patterns"></a>Analýza trendů a vzorců prodeje
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Můžete studovat trendy prodeje a vzory v reálném čase v aplikaci Microsoft Dynamics 365 for Retail.
 

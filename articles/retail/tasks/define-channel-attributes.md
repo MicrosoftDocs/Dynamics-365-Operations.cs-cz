@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-channel-attributes"></a> Definování atributů kanálu
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Obohaťte kanál přidáním atributů kanálu a produktu. Než budete moci definovat atributy, musíte přidat kanál do výchozí hierarchie organizace.
 

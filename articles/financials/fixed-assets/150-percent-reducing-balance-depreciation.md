@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="150-percent-reducing-balance-depreciation"></a>Degresivní odpis 150 procent
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 150 procent“.
 

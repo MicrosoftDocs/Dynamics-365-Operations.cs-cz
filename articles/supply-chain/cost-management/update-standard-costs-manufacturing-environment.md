@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="update-standard-costs-in-a-manufacturing-environment"></a>Aktualizace standardních nákladů ve výrobním prostředí
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V tomto článku jsou pokyny k tomu, jak aktualizovat standardní náklady ve výrobním prostředí. 
 

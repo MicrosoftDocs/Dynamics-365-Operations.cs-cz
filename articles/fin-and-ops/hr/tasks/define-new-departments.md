@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="define-new-departments"></a>Definování nových oddělení
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Oddělení jsou provozní jednotky, které představují funkční oblasti společnosti, jako například prodejní oddělení nebo účetní oddělení. Mnoho společností má organizační hierarchie, které zobrazují různá oddělení v rámci podniku. Tento postup vás provede procesem vytváření oddělení a přidávání těchto oddělení do hierarchie oddělení společnosti. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

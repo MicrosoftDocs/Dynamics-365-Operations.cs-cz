@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="backflush-costing"></a>Zpětné účtování nákladů
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma představuje koncept zpětného účtování nákladů používané pro Lean manufacturing. 
 

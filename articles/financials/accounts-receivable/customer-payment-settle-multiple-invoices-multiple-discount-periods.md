@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Použití jedné platby odběratele na úhradu několika faktur, které zasahují do více období slevy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak je více faktur vypláceno, pokud jednotlivé faktury splňují nárok na platební slevu. Scénáře v tomto článku popisují, jak se liší využité platební slevy v závislosti na tom, kdy je platba provedena.
 

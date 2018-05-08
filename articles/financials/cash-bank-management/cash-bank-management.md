@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="cash-and-bank-management-home-page"></a>Domovská stránka Pokladna a banka
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Pomocí nástroje Pokladna a banka spravujte bankovní účty a finanční nástroje právnické osoby, které jsou přidruženy k těmto bankovním účtům. 
 

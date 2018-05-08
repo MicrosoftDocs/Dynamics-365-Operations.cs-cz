@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="merge-inventory-batches"></a>Sloučit dávky skladových zásob
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek obsahuje informace o způsobu sloučení dvou nebo více skladových dávek na sloučenou dávku.
 

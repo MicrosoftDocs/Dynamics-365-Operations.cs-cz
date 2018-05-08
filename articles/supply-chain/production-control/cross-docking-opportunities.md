@@ -28,7 +28,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Cross docking z výrobních příkazů na výstupní překladiště
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak spravovat zpracování cross docking materiálu, který je vykazován jako dokončený z výrobní linky do výstupního překladiště.
 

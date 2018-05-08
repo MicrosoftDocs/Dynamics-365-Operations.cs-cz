@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-material-plan-for-co-products"></a>Vytvoření materiálového plánu pro vedlejší produkty
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Plánovač výroby naplánuje materiálové požadavky na položky, které jsou vedlejšími produkty receptury. K vytvoření tohoto postupu jsou použita ukázková data společnosti USP2.
 

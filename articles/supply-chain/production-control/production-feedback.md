@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-feedback"></a>Zpětná vazba z výroby
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek poskytuje informace o zpětné vazbě z výroby, která pracovníkům umožňuje podávat zpětnou vazbu na výrobní úlohy. Článek obsahuje informace o různých způsobech, jak lze zpětné vazby pro výrobu aktualizovat.
 

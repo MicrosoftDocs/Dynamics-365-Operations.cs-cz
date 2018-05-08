@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="advanced-filtering-and-query-syntax"></a>Syntax pokročilého filtrování a dotazů
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozici při použití operátoru "shody" v dialogovém okně Rozšířený filtr či řazení.
 

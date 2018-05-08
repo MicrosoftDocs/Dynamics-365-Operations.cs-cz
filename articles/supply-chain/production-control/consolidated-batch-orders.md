@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="consolidated-batch-orders"></a>Konsolidované dávkové objednávky
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek popisuje koncept konsolidované dávkové objednávky.
 

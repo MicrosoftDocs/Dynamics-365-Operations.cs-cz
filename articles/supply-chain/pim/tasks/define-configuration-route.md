@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-configuration-routes"></a>Definování konfiguračních postupů
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup se zaměřuje na definování konfiguračního postupu, který určuje pořadí, ve kterém jsou konfigurační skupiny nabídnuty. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Jedná se o šestý postup z osmi, který vysvětluje vytvoření kombinací konfigurace založené na dimenzích.
 

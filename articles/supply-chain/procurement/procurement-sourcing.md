@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-and-sourcing-home-page"></a>Domovská stránka modulu Zásobování a zdroje
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V tomto tématu je seznam témat nápovědy a dalších zdrojů, které jsou k dispozici pro Zásobování a zdroje.
 

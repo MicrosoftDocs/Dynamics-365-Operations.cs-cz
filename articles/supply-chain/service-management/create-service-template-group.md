@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="create-a-service-template-group"></a>Vytvoření skupiny šablon servisu  
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Pomocí skupin servisních šablon lze řadit a filtrovat servisní šablony.
 

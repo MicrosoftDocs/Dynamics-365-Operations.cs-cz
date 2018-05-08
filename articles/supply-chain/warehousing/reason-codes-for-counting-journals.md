@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="reason-codes-for-inventory-counting"></a>Kódy důvodů pro inventury zásob
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kódy důvodů umožňují analyzovat výsledky procesu inventury a jakýkoli nesoulad, který se vyskytne během tohoto procesu. Můžete určit důvod pro provádění inventury, například rozbitou paletu nebo úpravu zásob, založenou na vzorku zásob.
 

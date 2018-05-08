@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-return-order"></a>Vytvoření nákupní vratky
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak vytvořit nákupní vratku pomocí akce dobropisu a zkopírovat tak řádky z dokumentu faktury dodavatele do nové nákupní objednávky. Také ukazuje, jak potvrdit objednávku a zpracovat dodávku zboží zpět pro dodavatele. Příklad v této příručce lze použít v rámci ukázkových dat společnosti USMF. Tento úkol obvykle provádí nákupčí.
 

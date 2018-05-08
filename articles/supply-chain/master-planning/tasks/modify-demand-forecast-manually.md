@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Ruční úprava prognózy poptávky
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje postup úpravy prognózy pro položku. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento záznam je určen pro plánujícího produkce. 
 

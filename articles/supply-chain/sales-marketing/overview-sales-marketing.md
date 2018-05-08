@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-and-marketing"></a>Prodej a marketing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Modul prodeje a marketingu můžete používat k získávání, ukládání a používání různých druhů v průběhu prodeje. Mezi tato data patří původní prodejní iniciativy, budoucí následné akce a dodatečné prodeje.
 

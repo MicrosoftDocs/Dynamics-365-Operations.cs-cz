@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Spuštění testovacího nástroj pro přenos dat (beta) pro Dynamics AX (AX 2012)
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Účel funkce Rychlý import / export je umožnit provádění importu a exportu za použití menšího počtu kroků.
 

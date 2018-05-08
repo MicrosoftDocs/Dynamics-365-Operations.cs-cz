@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="deliver-an-employee-benefits-program"></a>Definování programu zaměstnaneckých výhod
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato úloha znázorňuje, jak vytvořit prvky zaměstnanecké výhody, které budou použity při vytváření nových zaměstnaneckých výhod. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF. Tato úloha je určena pro správce kompenzací a zaměstnaneckých výhod.
 

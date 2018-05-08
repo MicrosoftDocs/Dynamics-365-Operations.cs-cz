@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Registrace a zaúčtování postdatovaného šeku pro odběratele
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Podrobnosti postdatovaného šeku přijatého od zákazníka můžete zaregistrovat. Také můžete postdatovaný šek zaúčtovat a generovat finanční transakce.   Dokončete následující úlohy před registrací a zaúčtováním postdatovaného šeku přijatého od odběratele:  • Nastavte postdatované šeky na stránce Pokladna a banka • Nastavte metodu platby pro postdatované šeky.   Role tohoto postupu je Pokladník Tato procedura používá ukázkovou společnost USMF.
 

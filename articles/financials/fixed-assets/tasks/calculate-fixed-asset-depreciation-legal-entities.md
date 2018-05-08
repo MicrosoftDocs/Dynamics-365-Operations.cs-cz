@@ -24,7 +24,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="calculate-fixed-asset-depreciation-across-legal-entities"></a>Výpočet odpisů dlouhodobého majetku mezi právnickými osobami
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Odpis dlouhodobého majetku lze spustit napříč právnickými osobami v jediném kroku. Tento postup ukazuje, jak nastavit a spustit proces pro více právnických osob. Používá roli účetního.  
 

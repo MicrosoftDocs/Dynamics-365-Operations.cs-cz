@@ -28,7 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a>Kontrola spotřeby surovin pomocí principů vyprazdňování
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Principy vyprazdňování odrážejí různé strategie spotřeby surovin, které se používají ve výrobních procesech. Spotřeba je proces, kdy se odečítá materiálu ze zásob na skladě a nastavení této hodnoty pro spotřebované materiály **nedokončené výroby** (výroby NV) pro výrobní zakázky a dávkové objednávky. Obvykle jsou suroviny využívány z umístění, které je nakonfigurováno pro proces, kterým se spotřebuje materiál. Toto skladové místo se označuje jako vstupní místo výroby.
 

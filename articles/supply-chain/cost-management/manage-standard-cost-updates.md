@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-standard-cost-updates"></a>Správa aktualizací standardních nákladů
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Aktualizace dat standardních nákladů lze spravovat pomocí dvou různých metod – metody s jednou verzí nebo se dvěma verzemi. 
 

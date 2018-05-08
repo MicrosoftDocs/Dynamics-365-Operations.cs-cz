@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="one-voucher"></a>Jeden doklad
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  Tato funkce bude k dispozici v aplikaci Dynamics 365 for Finance and Operations verze 8.0, která bude k dispozici ve vydání Spring '18.   

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-dimensions-and-posting"></a>Finanční dimenze a zaúčtování 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Při plánování a nastavení svých účtových osnov musíte zvážit, jak jednotlivé části budou spolupracovat při zaúčtování deníku nebo dokladu. Tyto komponenty zahrnují účetní struktury, rozšířená pravidla a vyrovnávací a pevné dimenze. Toto téma vysvětluje, co jednotlivé komponenty představují a jak pracují dohromady.
 

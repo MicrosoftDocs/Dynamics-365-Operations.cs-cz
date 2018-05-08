@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="plan-your-organizational-hierarchy"></a>Plánování organizační hierarchie
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Před nastavením organizací a organizačních hierarchií v Microsoft Dynamics 365 for Finance and Operations se ujistěte, že máte plán, jak bude vaše společnost modelována. Organizační model má podstatný vliv na implementaci aplikace Finance and Operations a obchodní procesy. 
 

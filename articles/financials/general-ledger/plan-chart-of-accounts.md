@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="plan-your-chart-of-accounts"></a>Plánování účetní osnovy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V tomto tématu jsou informace, které vám pomohou naplánovat účtové osnovy pro vaši organizaci.
 

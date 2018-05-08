@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="master-planning-and-multisite-functionality"></a>Hlavní plánování a funkce více pracovišť
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Hlavní plánování bere v úvahu nastavení dimenzí zásob pracoviště a skladu. 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="accessibility-features"></a>Funkce usnadnění přístupu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma popisuje funkci, která je určená k tomu, aby pomohla uživatelům, kteří mají různá postižení, používat aplikace Dynamics 365 for Finance and Operations, Dynamics 365 for Retail a Dynamics 365 for Talent. Existují například funkce pro zrakově postižené uživatele, kteří používají technologie jako je Microsoft Windows Narrator
 

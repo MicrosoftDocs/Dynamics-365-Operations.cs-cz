@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-the-transfer-documents-for-goods-movement-inside-a-company"></a>Nastavení dokladů převodu pro pohyb zboží v rámci společnosti
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura ukazuje postup vytvoření přepravních dokladů pro pohyb zboží v rámci společnosti. Tato procedura je k dispozici pouze pro právnické osoby, jejichž primární adresa je v Litvě. Procedura byla vytvořena za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Litvě. Než bude možné tuto proceduru dokončit, je nutné dokončit proceduru "Nastavení převodních dokumentů pro pohyb zboží uvnitř společnosti". Tato procedura je určena pouze pro skladové účetní. Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.
 

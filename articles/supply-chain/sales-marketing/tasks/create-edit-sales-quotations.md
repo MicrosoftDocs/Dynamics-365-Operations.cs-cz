@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-and-edit-sales-quotations"></a>Vytváření a úpravy prodejních nabídek
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup ukazuje, jak vytvořit a aktualizovat prodejní nabídku. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.
 

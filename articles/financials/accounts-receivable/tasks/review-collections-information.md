@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="review-collections-information"></a>Kontrola inkasních informací
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura vás provede kontrolou informací inkasa společně s různými možnostmi nastavení a transakcemi inkasa. Tato procedura používá ukázkovou společnost USMF.
 

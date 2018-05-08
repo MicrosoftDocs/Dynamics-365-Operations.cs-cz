@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="expense-reports-and-multiple-approvers"></a>Sestavy výdajů a více schvalovatelů
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V závislosti na zásadách schvalování výdajů ve vaší organizaci může být zapotřebí ke schválení sestavy výdajů odeslané zaměstnancem více než jedna osoba. Při nastavování procesu workflowu pro schválení sestavy výdajů můžete přidat prvky workflowu, které obsahují úkoly nebo kroky pro jednoho nebo více schvalovatelů sestavy výdajů. Můžete například vyžadovat, aby všechny sestavy výdajů schvaloval nejprve manažer zaměstnance, který sestavu odeslal, a poté koordinátorem závazků.
 

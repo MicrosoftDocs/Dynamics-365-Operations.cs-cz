@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="costing-versions"></a>Nákladové verze
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek obsahuje informace o nákladových verzích, způsobu jejich udržování a typech dat, která lze do nich zahrnout. Hlavním účelem nákladové verze je to, že obsahuje záznamy o položkách, kategorie nákladů a vzorce pro výpočet nepřímých nákladů.
 

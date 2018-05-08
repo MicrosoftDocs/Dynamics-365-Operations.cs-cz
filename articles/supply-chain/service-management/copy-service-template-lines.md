@@ -28,7 +28,7 @@ ms.lasthandoff: 02/27/2018
 
 # <a name="copy-service-templates-lines"></a>Kopírování řádků šablon servisu 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Údaje šablony lze zkopírovat do servisní smlouvy nebo do servisní zakázky.
 

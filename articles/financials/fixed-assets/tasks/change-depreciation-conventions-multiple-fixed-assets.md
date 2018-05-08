@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-depreciation-conventions-for-multiple-fixed-assets"></a>Změna způsobu odpisu pro více položek dlouhodobého majetku
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato úloha aktualizuje způsob odpisu pro uvedenou skupinu dlouhodobého majetku. Tento průvodce úlohou používá ukázkovou společnost USMF.
 

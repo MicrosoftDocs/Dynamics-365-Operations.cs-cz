@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="calculate-kanban-quantity-suggestions"></a>Výpočet návrhů kanbanového množství
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup se zaměřuje na optimalizaci velikosti a množství kanbanu u konkrétních kanbanových pravidel pomocí výpočtu kanbanového množství. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup je určen pro vedoucího hodnotového proudu. Je nutné, abyste dokončili postup Přidání zásad výpočtu kanbanového množství ke kanbanovému pravidlu.
 

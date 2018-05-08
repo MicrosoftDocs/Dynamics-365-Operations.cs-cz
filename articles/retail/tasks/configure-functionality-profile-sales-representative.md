@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="configure-the-functionality-profile-for-a-sales-representative"></a> Konfigurace funkčního profilu pro obchodní zástupce
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Tato procedura ukazuje, jak konfigurovat nastavení funkce profilu prodejny vztahující se na obchodní zástupce. Tyto procedury používají data ukázkové společnosti USRT.
 

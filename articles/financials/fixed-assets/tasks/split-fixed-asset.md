@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="split-a-fixed-asset"></a>Rozdělení dlouhodobého majetku
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento průvodce záznamem úloh rozdělí procento jedné knihy majetku na novou knihu majetku.  Používá účetní roli a vzorová data USMF.
 

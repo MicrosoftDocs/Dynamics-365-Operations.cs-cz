@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Expedování objednávek jako přímých dodávek
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup ukazuje, jak vytvořit přímé dodávky pro prodejní objednávku. Přímou dodávku používejte, pokud chcete zboží expedovat odběrateli přímo od dodavatele, místo expedice nejprve do svého vlastního skladu,. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. K úspěšnému dokončení druhého podúkolu „Vytvoření přímé dodávky z pracovní plochy“ se ujistěte, že zboží, která vyberete v prodejní objednávce, má určeného výchozího dodavatele na pevné kartě Nákup vydaného základního produktu.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Výchozí protiúčty pro deníky faktur dodavatele a deníky schvalování faktur
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Výchozí protiúčty se používají v následující stránkách deníku faktury dodavatele:
 

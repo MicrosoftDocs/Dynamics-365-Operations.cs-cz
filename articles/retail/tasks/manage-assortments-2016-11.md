@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="manage-assortments"></a> Správa sortimentu  
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Tato procedura ukazuje, jak vytvářet a publikovat nový sortiment produktů a používá ukázkovou datovou firmu USRT. Tato procedura vyžaduje aplikaci Dynamics AX 7.0.1 nebo novější a platformu Dynamics AX 7.1.  
 

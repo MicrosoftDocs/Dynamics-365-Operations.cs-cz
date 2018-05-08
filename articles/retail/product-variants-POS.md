@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="inventory-lookup-in-the-point-of-sale"></a>Vyhledávání zásob v pokladním místě 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Vyhledávání zásob v pokladním místě pomáhá maloobchodním prodejcům dosáhnout provozní kvality v reálném čase a získat přehledy připojením obchodů, pokladního místa a účetního systému. Tato funkce poskytuje přesné zobrazení zásob produktu v reálném čase napříč obchody a distribučními centry. Rovněž pomáhá maloobchodním prodejcům využít další efektivní možnosti a úspory nákladů díky zlepšenému plánování zásob v reálném čase.
 

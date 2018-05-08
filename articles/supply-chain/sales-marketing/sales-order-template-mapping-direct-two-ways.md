@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma popisuje šablony a základní úlohy, které se používají ke spuštění synchronizace prodejních objednávek přímo mezi aplikacemi Microsoft Dynamics 365 for Sales a Microsoft Dynamics 365 for Finance and Operations.
 

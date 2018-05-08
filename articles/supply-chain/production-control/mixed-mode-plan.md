@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Kombinovaný režim plánování – Kombinování zdrojů samostatné výroby, zpracování a štíhlé výroby
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma obsahuje informace o plánování ve smíšeném režimu. Při plánování ve smíšeném režimu můžete modelovat svůj dodavatelsko-odběratelský řetězec podle toku materiálu. Aplikace Microsoft Dynamics 365 for Finance and Operations zajišťuje, že tok materiálu bude probíhat podle vašich modelů bez ohledu na vybrané zásady dodávek (kanbany, výrobní zakázky, nákupní objednávky, dávkové objednávky nebo převodní příkazy). 
 

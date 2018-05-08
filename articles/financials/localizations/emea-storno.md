@@ -26,7 +26,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="storno-accounting"></a>Záporné storno
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Záporné storno je praxe používání záporných čísel ke stornování původních účetních položek deníku.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="company-directory-mobile-workspace"></a>Mobilní pracovní prostor adresáře společnosti
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma obsahuje informace o mobilním pracovním prostoru **Adresář společnosti**. Tento pracovní prostor uživatelům umožňuje zobrazit a kontaktovat ostatní zaměstnance organizace.
 

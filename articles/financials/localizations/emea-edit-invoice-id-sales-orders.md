@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>Úprava ID faktury v prodejních objednávkách pro východní Evropu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma obsahuje informace o parametrech pohledávek ovlivňujících čísla faktur na dodacích listech a fakturách pro Českou republiku, Estonsko, Maďarsko, Litvu, Lotyšsko a Polsko.
 

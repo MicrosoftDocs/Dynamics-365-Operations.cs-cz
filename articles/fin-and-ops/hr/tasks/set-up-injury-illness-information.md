@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="set-up-injury-and-illness-information"></a>Nastavit informace o zraněních a onemocněních
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Zaměstnavatelé potřebují být informováni, když dojde ke zranění nebo onemocnění zaměstnance v důsledku nebezpečí na pracovišti. Můžete použít stránku zranění a onemocnění k nastavení informací, které napomáhají k vykazování zranění nebo onemocnění na pracovišti. Můžete nastavit typy úrazů a nemocí, včetně typů ošetření, nákladů a výsledků. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

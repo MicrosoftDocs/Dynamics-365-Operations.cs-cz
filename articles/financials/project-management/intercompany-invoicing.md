@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="intercompany-invoicing"></a>Mezipodnikové fakturování
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek obsahuje informace a příklady o vnitropodnikové fakturaci pro projekty v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 

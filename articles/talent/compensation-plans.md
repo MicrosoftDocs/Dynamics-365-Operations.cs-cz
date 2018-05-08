@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="compensation-plans"></a>Plány kompenzace
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Manažeři kompenzací a výhod mohou pomocí správy kompenzací udržovat a zpracovávat fixní i variabilní plány kompenzací pro zaměstnance organizace.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-procurement-catalog"></a>Vytvoření zásobovacího katalogu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje způsob vytváření zásobovacího katalogu. Tento úkol by obvykle prováděl zásobovací pracovník. Zjistíte také, jak mohou zaměstnanci používat katalog při vytváření požadavku. Před vytvořením katalogu musí existovat ve vašem systému hierarchie kategorie zásobování. Hierarchii zdědí nový katalog spolu se všemi produkty, které jsou v hierarchii. Tento postup lze použít u ukázkových dat společnosti USMF, kde je k dispozici hierarchie kategorie zásobování společně s příklady použitými v krocích postupu.
 

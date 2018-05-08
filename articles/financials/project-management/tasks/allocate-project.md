@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a>Přidělení rozpočtu projektu nebo revize rozpočtu v obdobích
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
  Po zadání rozpočtu projektu nebo revize rozpočtu projektu a před odesláním ke schválení můžete přidělit částky do období. Pokud jsou rozpočet nebo revize rozpočtu zamítnuty, můžete také přidělit částky před opětovným odesláním. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-mass-hire-project"></a>Vytvoření projektu masového pronájmu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup vás provede nastavením procesu hromadného zařazování zaměstnanců. Náborový zaměstnanec může využívat projekty hromadného zařazení pro snadné vytváření více pozic a zařazení většího počtu pracovníků na tyto pozice. Tento postup zahájíte tak, že přejděte na Lidské zdroje > Nábor > Projekty hromadného zařazení. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

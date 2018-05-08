@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="vendor-posting-profiles"></a>Účetní profil dodavatele
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Účetní profil dodavatele řídí zaúčtování transakcí dodavatelů do hlavní knihy
 

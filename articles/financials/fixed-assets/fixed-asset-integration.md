@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-assets-integration"></a>Integrace dlouhodobého majetku
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Modulu Dlouhodobý majetek lze integrovat s moduly Hlavní kniha, Řízení zásob, Pohledávky a Závazky. U dlouhodobého majetku lze rovněž nastavit integraci s nákupními objednávkami.
 

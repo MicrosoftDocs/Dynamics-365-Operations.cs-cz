@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-and-create-depreciation-profiles"></a>Nastavení a vytvoření odpisových plánů
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Odpisové profily určují typ a četnost odpisů majetku.   Tento záznam používá ukázkovou společnost USMF a účetní role.
 

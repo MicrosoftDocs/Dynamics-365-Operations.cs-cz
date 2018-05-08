@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bom-calculations"></a>Výpočty hodnoty BOM
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Shrnutí nákladů a výpočty prodejní ceny jsou označovány jako výpočty kusovníku a spouštějí se ze stránky Výpočty. V tomto tématu jsou informace o výpočtech kusovníku.
 

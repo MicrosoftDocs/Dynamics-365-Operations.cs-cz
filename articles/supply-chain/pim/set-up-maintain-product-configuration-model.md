@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="set-up-a-product-configuration-model"></a>Nastavení modelu konfigurace produktu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek popisuje postup nastavení a vytvoření modelu konfigurace produktu.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Nastavení směrnice skladového místa pro vyskladnění v rámci nákupní objednávky
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje nastavení jednoduché směrnice skladového místa. Uvedený příklad vytvoří směrnici skladového místa, který má být použita k určení umístění položek, které byly přijaty pro nákupní objednávku. Tohoto průvodce úkolem můžete použít s uvedenými daty za použití ukázkových dat společnosti USMF. Předpoklady: Je nutné vytvořit dispoziční kód. V tomto postupu používáme dispoziční kód Relabel. Pokud vytváříte směrnici skladového místa ve vlastních datech, je nutné nastavit pro sklad a položky pokročilou správu skladu.  Tento postup je určen pro vedoucího skladu.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="depreciation-book-upgrade-overview"></a>Přehled upgradu knihy odpisů
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V předchozích verzích existovaly dva koncepty ocenění pro dlouhodobý majetek - oceňovací modely a knihy odpisů. V aplikaci Microsoft Dynamics 365 for Operations (1611) byly funkce modelu hodnoty a knihy odpisů sloučeny do jednoho koncept, který je označován jako kniha. Toto téma obsahuje informace, které je třeba zvážit pro upgrade. 
 
@@ -62,17 +62,17 @@ Možnost 2: **Existující uživatelem definovaná číselná řada** – tato m
 Parametry jsou umístěny na začátku třídy ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans. 
 
 *//Určete preferovanou metodu přidělení dokladů* 
-*// true, pokud chcete použít existující kód číselné řady* 
-*// false, chcete-li použití číselnou řadu (výchozí) definovanou systémem* boolean const NumberSequenceUseExistingCode = false;  
+ *// true, pokud chcete použít existující kód číselné řady* 
+ *// false, chcete-li použití číselnou řadu (výchozí) definovanou systémem* boolean const NumberSequenceUseExistingCode = false;  
 
 *// Pokud použijete způsob definované systémem číselné řady, zadejte parametry pro číselnou řadu.*
-*// Vytvoří se nová číselná řada s těmito parametry.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
+ *// Vytvoří se nová číselná řada s těmito parametry.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
 
 *// Používáte-li přístup existující číselné řady, zadejte existující kód číselné řady..* 
-*// Přidělení dokladu půjde po řádcích existující číselné řady.* const str NumberSequenceExistingCode = ''; *// Zadejte identifikační kód pro číselnou řadu.* 
-*// true, pokud je sdílená určená číselné řada* 
-*// false, pokud je určená číselná řada podle společnosti* 
-*// Výchozí číselná řada definovaná systémem se použije, pokud nebude nalezen kód číselné řady se zadaným rozsahem.* const boolean NumberSequenceExistingIsShared = true; 
+ *// Přidělení dokladu půjde po řádcích existující číselné řady.* const str NumberSequenceExistingCode = ''; *// Zadejte identifikační kód pro číselnou řadu.* 
+ *// true, pokud je sdílená určená číselné řada* 
+ *// false, pokud je určená číselná řada podle společnosti* 
+ *// Výchozí číselná řada definovaná systémem se použije, pokud nebude nalezen kód číselné řady se zadaným rozsahem.* const boolean NumberSequenceExistingIsShared = true; 
 
 Znovu vytvořte projekt obsahující třídu po změně konstant. 
 

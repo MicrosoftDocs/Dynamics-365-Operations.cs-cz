@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="general-ledger-account-balances"></a>Zůstatky účtu hlavní knihy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V tomto článku jsou vysvětleny dva způsoby pro zobrazení zůstatků účtů hlavní knihy – stránka se seznamem Předvaha a finanční sestavy. Také popisuje, jak aktualizovat zůstatky pro sadu dimenzí.
 

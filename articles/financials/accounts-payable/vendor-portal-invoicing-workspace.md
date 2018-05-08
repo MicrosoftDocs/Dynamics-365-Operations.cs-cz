@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="vendor-collaboration-invoicing-workspace"></a>Pracovní prostor fakturace dodavatelské spolupráce
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma vysvětluje, jak můžete zobrazit faktury dodavatele a přijmout faktury z pracovního prostoru spolupráce dodavatele.
 

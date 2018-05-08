@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-kanban-rule-using-a-kanban-line-event"></a>Vytvoření kanbanového pravidla s použitím události řádku kanbanu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tímto postupem vytvoříte kanbanové pravidlo pomocí nastavení události řádku kanbanu s cílem spustit vyžádání z aktivity procesu. Kanbanové pravidlo je spuštěno aktivitou procesu kanbanu s množstvím vždy rovným nebo větším, než 25. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF. Tento úkol je určen pro technologa výrobních procesů nebo správce hodnotového proudu, kteří připravují výrobu nového nebo změněného výrobku v prostředí štíhlé výroby.
 

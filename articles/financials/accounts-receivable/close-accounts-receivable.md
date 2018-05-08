@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="close-accounts-receivable"></a>Uzavření účtu pohledávek
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V následující tabulce jsou uvedeny stránky, které podporují obchodní proces uzavření pohledávek.
 

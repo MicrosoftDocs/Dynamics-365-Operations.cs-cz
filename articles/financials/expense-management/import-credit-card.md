@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="import-and-maintain-credit-card-transactions"></a>Import a udržování transakce platební karty
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Transakce platební karty související s výdaji lze nastavit tak, aby byly automaticky importovány v opakujícím se plánu. Popřípadě lze transakce ručně importovat podle potřeby. Transakce platebních karet jsou importovány prostřednictvím datové entity Transakce platebních karet.
 

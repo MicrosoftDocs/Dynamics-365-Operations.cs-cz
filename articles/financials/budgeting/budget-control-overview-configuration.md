@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-control-overview"></a>Přehled řízení 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek obsahuje základní informace o kontrole rozpočtu a poskytuje informace, které umožňují konfiguraci kontroly rozpočtu v aplikaci Microsoft Dynamics 365 for Finance and Operations, abyste mohli spravovat finančních prostředky.
 

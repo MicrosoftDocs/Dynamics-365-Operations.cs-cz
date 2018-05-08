@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="activity-based-subcontracting"></a>Subdodávky na základě aktivit
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma podrobně popisuje, jak používat subdodavatelské aktivity ve výrobním toku pro lean manufacturing.
 

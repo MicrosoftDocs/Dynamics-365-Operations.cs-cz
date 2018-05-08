@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="advance-holders"></a>Držitelé zálohy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Poznejte funkce držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 

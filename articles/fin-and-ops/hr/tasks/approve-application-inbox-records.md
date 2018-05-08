@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-application-inbox-records"></a>Schválení záznamů doručených přihlášek
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje kontrolu přihlášek přijatých prostřednictvím samoobslužných stránek pro zaměstnance. Kromě kontroly přihlášek můžete schválit přihlášku mezi vybranými příchozími záznamy. Příchozí záznamy o přihláškách představují přihlášky k zaměstnání, které byly přeloženy společnosti k uvážení. Po schválení záznamu se vytvoří záznam uchazeče pro uživatele, který podal přihlášku. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

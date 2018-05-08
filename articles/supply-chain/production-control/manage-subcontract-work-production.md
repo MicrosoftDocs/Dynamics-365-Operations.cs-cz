@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-subcontracting-work-in-production"></a>Správa subdodavatelské práce při výrobě
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma vysvětluje, jak jsou subdodavatelské operace spravovány v aplikaci Microsoft Dynamics 365 for Finance and Operations. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku.
 

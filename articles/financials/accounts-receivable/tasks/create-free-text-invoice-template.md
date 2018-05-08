@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-free-text-invoice-template"></a>Vytvoření šablony volné faktury
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento záznam používá ukázkovou společnost USMF. Záznam je určen pro uživatele, který je odpovědný za správu a zpracování faktur pohledávek.
 

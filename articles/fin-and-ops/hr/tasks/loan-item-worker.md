@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="loan-items-to-a-worker"></a>Zapůjčení položek pracovníkovi
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje zapůjčení položky pracovníkovi a záznam vrácení položky pracovníkem. Zaměstnanci mohou také požádat o vypůjčení položek pomocí samoobslužných stránek pro zaměstnance. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

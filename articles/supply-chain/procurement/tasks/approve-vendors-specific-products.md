@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-vendors-for-specific-products"></a>Schválení dodavatelů pro konkrétní produkty
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje způsob schválení dodavatelů pro určité produkty. Tímto způsobem lze určit, které dodavatele lze použít při přidání produktu do nákupní objednávky. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Tento úkol obvykle provádí manažer nákupu.
 

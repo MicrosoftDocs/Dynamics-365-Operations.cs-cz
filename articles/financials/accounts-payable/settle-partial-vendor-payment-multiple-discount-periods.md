@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Vyrovnání částečné platby dodavatele, u níž je více období slev
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek vás provede scénářem, kdy je více částečných plateb provedeno pro dodavatele, který nabízí více platebních slev. 
 

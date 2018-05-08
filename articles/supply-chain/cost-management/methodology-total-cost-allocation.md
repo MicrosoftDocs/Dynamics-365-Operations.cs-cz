@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="total-cost-allocation-method"></a>Metoda přidělení celkových nákladů
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma obsahuje pokyny pro používání celkových přidělených nákladů. Celkové přidělené náklady je metoda výpočtu nákladů mezi hlavní položkou receptury pro dávkovou objednávku a vedlejšími produkty, které jsou definovány pro recepturu.
 

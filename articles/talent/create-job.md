@@ -28,9 +28,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="setting-up-the-components-of-a-job"></a>Nastavení komponent pracovní pozice
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-[!INCLUDE [retail name](includes/retail-name.md)]
+[!include [retail name](includes/retail-name.md)]
 
 Toto téma popisuje rámcové prvky, které může práce obsahovat, a poskytuje příklady použití těchto prvků v organizaci. 
 

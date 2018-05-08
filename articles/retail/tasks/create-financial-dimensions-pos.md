@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a> Vytvoření finančních dimenzí pro pokladny POS a konfigurace hodnot dimenzí na pokladnách
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Tato procedura vás provede procesem vytvoření finančních dimenzí pro registry pokladních míst (POS) a ukazuje, jak nakonfigurovat hodnoty finančních dimenzí na registračních pokladnách. Tato procedura neobsahuje další související postup, jako je například vytváření sad dimenzí a účetních struktur. Tyto úkoly můžete najít v jiných tématech. Tento záznam používá data ukázkové společnosti USRT.
 

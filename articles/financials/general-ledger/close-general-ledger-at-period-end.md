@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="close-the-general-ledger-at-period-end"></a>Uzavření hlavní knihy ke konci období
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma popisuje úlohy, které jsou obvykle dokončeny při provádění uzávěrky období pro hlavní knihu. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="monitor-a-master-planning-run"></a>Sledování běhu hlavního plánování
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Plánovač výroby chce vědět, zda probíhá hlavní plánování. K dokončení tohoto postupu jsou použita ukázková data společnosti USMF.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mobile-workspaces"></a>Mobilní pracovní prostory
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma uvádí seznam mobilních pracovních prostorů, které jsou k použití pro mobilní aplikaci Dynamics 365 for Unified Operations.
 

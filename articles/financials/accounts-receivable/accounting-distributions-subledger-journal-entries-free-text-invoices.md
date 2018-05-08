@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>Rozúčtováních a záznamy v dílčí hlavní knize pro volné faktury
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Rozúčtování slouží k definování, jak budou zaúčtovány částky, například jak budou výnosy, daně a náklady zaúčtovány na volných fakturách. Každá částka, která musí být zaúčtována, když je volná faktura zapsána do deníku, bude mít jedno nebo více rozúčtování.
 

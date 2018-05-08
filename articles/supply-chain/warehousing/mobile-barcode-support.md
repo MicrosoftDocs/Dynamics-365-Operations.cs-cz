@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mobile-bar-code-support"></a>Mobilní podpora čárového kódu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Vzhledem k tomu, že Android je otevřený software, každý výrobce hardwaru pro skenery čárového kódu ve skladech může vytvořit zařízení, na kterém lze spustit operační systém Android. Zařízení je kompatibilní se systémem Android pouze tehdy, pokud na něm lze spustit aplikace napsané pro spouštěcí prostředí Android.
 Dodavatel hardwaru však může upravit a vytvořit překryvný prvek pro verzi Android, která běží na jeho hardwaru. Společnost Microsoft nemůže nést žádnou odpovědnost, aby zajistila, že mobilní aplikace skenování čárových kódů pro systém Android je kompatibilní s hardwarem pro skenování čárových kódů výrobce a verzí systému Android, která se na něm spouští. 

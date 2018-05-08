@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-and-associate-registers"></a> Vytvoření a přidružení pokladen
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Tento postup demonstruje vytvoření pokladních míst. Tato procedura používá data ukázkové společnosti USRT.
 

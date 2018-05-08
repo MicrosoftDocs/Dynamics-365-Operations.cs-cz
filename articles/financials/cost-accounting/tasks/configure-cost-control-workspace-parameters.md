@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-cost-control-workspace-parameters"></a>Konfigurace parametrů pracovního prostoru řízení nákladů
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Pomocí tohoto postupu nastavte pracovní prostor řízení nákladů tak, aby vedoucí pracovníci na různých úrovních v rámci organizace mohli získat přehled o svých objektech nákladů, jako jsou nákladová střediska nebo skupiny produktů. K vytvoření tohoto záznamu jsou použita ukázková data společnosti USP2.
 

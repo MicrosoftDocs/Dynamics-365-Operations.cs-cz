@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-retail-products"></a>Nastavení maloobchodních produktů
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tento článek popisuje způsob nastavení maloobchodních produktů v aplikaci Microsoft Dynamics 365 for Retail.
 

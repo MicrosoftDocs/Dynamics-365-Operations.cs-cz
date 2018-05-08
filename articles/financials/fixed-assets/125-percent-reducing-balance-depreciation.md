@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="125-percent-reducing-balance-depreciation"></a>Degresivní odpis 125 procent
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 125 procent“.
 

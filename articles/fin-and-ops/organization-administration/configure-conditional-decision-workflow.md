@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-conditional-decision-in-a-workflow"></a>Konfigurace podmíněného rozhodnutí ve workflowu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Následně nakonfigurujte vlastnosti podmíněného rozhodnutí pomocí následujícího postupu.
 

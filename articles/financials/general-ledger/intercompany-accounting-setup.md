@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="intercompany-accounting-setup"></a>Nastavení mezipodnikového účetnictví
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma vysvětluje, jak se nastavuje mezipodnikové účetnictví tak, abyste mohli používat mezipodnikové deníky k přidělování knih a finančních deníků, jako jsou každodenní deníky, deníky faktur dodavatele a platební deníky.
 

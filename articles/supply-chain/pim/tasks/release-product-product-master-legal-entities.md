@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="release-a-productproduct-master-to-legal-entities"></a>Uvolnění produktu / základního produktu právnickým osobám
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura vás provede způsobem uvolnění produktu nebo základního produktu pro jednu nebo více právnických osob. Společnost s ukázkovými daty používaná k tvorbě tohoto úkolu je USRT a úkol je určen pro manažera prodeje a návrháře produktu.
 

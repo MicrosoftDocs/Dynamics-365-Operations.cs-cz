@@ -25,9 +25,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="embed-powerapps"></a>Vložené PowerApps
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [banner](../includes/pre-release.md)]
+[!include [banner](../includes/pre-release.md)]
 
 V aktualizaci Platformy 14, Microsoft Dynamics 365 for Finance and Operations podporuje integraci s Microsoft PowerApps, službou pro vývojáře a netechnické uživatele pro vytváření vlastních obchodních aplikací pro mobilní zařízení, tablety a web bez zápisu kódu. PowerApps, které jste vytvořili vy, vaše organizace nebo širší ekosystém, lze poté vložit do klienta Finance and Operations, aby bylo možné vylepšit funkce produktu. Například může vytvořit PowerApp pro doplnění modulu Finance and Operations informacemi získanými z jiného systému. 
 

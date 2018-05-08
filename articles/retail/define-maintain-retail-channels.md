@@ -29,7 +29,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="define-and-maintain-retail-channels"></a>Definování a udržování maloobchodní sítě
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Toto téma poskytuje přehled procesu pro nastavení kamenných obchodů, které se v aplikaci Microsoft Dynamics 365 for Retail označují jako maloobchody. Jsou zde informace o úkolech, které je nutné dokončit před a po nastavení maloobchodu.
 

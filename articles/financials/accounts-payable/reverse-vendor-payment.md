@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reverse-a-vendor-payment"></a>Vrácení platby dodavatele
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek popisuje rozdíly mezi stornováním, odstraněním, anulováním a odmítnutím platby. Dále popisuje dva způsoby stornování kontroly dodavatele. 
 

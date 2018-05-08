@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="costing-sheets"></a>Nákladové formuláře
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Nastavení nákladového formuláře má dva cíle. Prvním je definovat formát zobrazení informací o nákladech na prodané zboží, které se týkají vyrobených položek nebo výrobní zakázky. Vytvořený formát zobrazení je pojmenován nákladový formulář. Druhým je definovat základnu pro výpočet nepřímých nákladů. Nastavení nákladového formuláře je založeno na funkcích nákladové skupiny pro zobrazení informací a vzorců pro výpočet nepřímých nákladů. V tomto článku jsou popsány dva cíle nastavení nákladového formuláře. 
 

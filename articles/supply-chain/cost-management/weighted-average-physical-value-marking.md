@@ -29,9 +29,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="weighted-average-with-physical-value-and-marking"></a>Vážený průměr s fyzickou hodnotou a označením
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Vážený průměr představuje skladový model založený na principu váženého aritmetického průměru. V tomto modelu jsou při uzávěrce skladové výdeje oceňovány průměrnou cenou položek přijatých na sklad plus jakékoli množství na skladě z předcházejícího období.
 

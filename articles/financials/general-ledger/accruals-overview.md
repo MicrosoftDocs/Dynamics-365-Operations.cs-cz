@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accruals-overview"></a>Přehled časově rozlišených položek
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V tomto článku jsou popsána časová rozlišení a jsou zde také informace o způsobu jejich nastavení a vytvoření transakcí.
 

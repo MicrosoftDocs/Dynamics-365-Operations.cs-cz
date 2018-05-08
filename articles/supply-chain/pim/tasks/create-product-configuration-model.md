@@ -24,7 +24,7 @@ ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-a-product-configuration-model"></a>Vytvoření modelu konfigurace produktu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje způsob vytvoření modelu konfigurace produktu a zadání základních informací, jako například atributy a dílčí komponenty. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="distributions-on-an-expense-report"></a>Distribuce na sestavě výdajů
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  Po zadání výdajů do vyúčtování výdajů lze rozdělit výdaje přes několik projektů, právnických osob, finančních dimenzí nebo účtů ve vaší organizaci.
 

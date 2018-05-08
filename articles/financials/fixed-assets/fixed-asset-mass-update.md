@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-asset-mass-update"></a>Hromadná aktualizace dlouhodobého majetku
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Pokud používáte knihy, můžete změnit způsob odpisu pro skupinu majetku, které jsou součástí stejné knihy.
 

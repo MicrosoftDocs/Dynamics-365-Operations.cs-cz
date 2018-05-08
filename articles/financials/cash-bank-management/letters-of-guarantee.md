@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-guarantee"></a>Záruční listiny
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek obsahuje informace o záručních listinách. V záruční listině banka souhlasí s platbou určité částky pro osobu, pokud jeden ze zákazníků banky neprovede požadovanou platbu nebo nesplní závazek vůči dané osobě. 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="classify-a-product-using-category-hierarchies"></a>Klasifikace produktu s použitím hierarchií kategorií
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Pomocí hierarchií kategorií klasifikujte produkty pro export, zásobování, prodeje nebo pro jiné účely. Tato úloha je běžně prováděna návrhářem produktu. V příkladu jsou použita ukázková data společnosti USMF a číslo produktu M0009.
 

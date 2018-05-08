@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-line-item-workflow"></a>Konfigurace workflowu položky řádku
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma vysvětluje, jak nakonfigurovat prvek workflowu položky řádku.
 

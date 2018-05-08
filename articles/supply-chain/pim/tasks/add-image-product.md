@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="add-an-image-to-a-product"></a>Přidání obrázku k produktu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura ukazuje, jak přidat obrázek k produktu. Společnost s ukázkovými daty použitá k vytvoření tohoto úkolu je USMF.
 

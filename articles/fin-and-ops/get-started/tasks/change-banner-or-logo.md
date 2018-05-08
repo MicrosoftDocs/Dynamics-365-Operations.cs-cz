@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-banner-or-logo"></a>Změna nápisu nebo loga
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 V následující proceduře je uveden postup, pomocí kterého mohou správci systému aktualizovat proužkovou reklamu nebo obrázek loga, které se zobrazí pro právnickou osobu. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

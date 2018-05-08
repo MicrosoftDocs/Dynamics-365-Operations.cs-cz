@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bar-code-for-a-product"></a>Vytvoření čárového kódu pro produkt
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura ukazuje, jak ručně vytvořit čárový kód pomocí čísla položky M0001 jako příklad. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

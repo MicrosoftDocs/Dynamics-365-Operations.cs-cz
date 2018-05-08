@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-inventory-counting-processes"></a>Definování procesů inventur zásob
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup vás provede konfigurací základního inventurního procesu vytvořením inventurní skupiny a deníku inventur. Je zde také uveden postup povolení zásady inventury na úrovni skladu a položky. Tyto úkoly obvykle provádějí vedoucí skladu. Jedná se o předpoklad, aby bylo možné použít stávající uvolněné produkty a sklady. Používáte-li ukázková data společnosti, můžete tento postup provést se společností USMF a s každou naskladněnou položkou.
 

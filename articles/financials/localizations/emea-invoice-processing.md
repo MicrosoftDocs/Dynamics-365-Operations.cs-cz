@@ -26,7 +26,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="invoice-processing"></a>Zpracování fakturace
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma stručně popisuje některé scénáře specifické pro určité země, jako je například intrakomunitární daň z přidané hodnoty (DPH) a odložená daň. Právní požadavky pro některé evropské země mají vliv na proces fakturace. Toto téma poskytuje také informace o zpracování faktur odběratelů a dodavatelů pro tyto země. 
 <table>

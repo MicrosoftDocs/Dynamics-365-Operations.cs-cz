@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="handling-cash-discounts-for-overpayments"></a>Zpracování platebních slev u přeplatků
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek popisuje scénáře, které znázorňují způsob zpracování platby, když zákazník využije platební slevu, ale má také přeplatek. 
 

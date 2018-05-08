@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="dimension-hierarchy"></a>Hierarchie dimenzí
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V tomto tématu jsou informace o hierarchiích dimenzí. Hierarchie dimenzí se používá k definování struktury sestav, zásad nákladů a nastavení zabezpečení v nákladovém účetnictví.  
 

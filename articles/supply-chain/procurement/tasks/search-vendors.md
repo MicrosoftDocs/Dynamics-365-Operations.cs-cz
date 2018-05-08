@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="search-for-vendors"></a>Vyhledání dodavatelů
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Zjistěte, jak vyhledávat dodavatele na základě specifických kritérií. Tento příklad ukazuje, jak vyhledávat dodavatele, kteří byli schváleni pro určitou kategorii zásobování a mají primární adresu v určité zemi. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Tento úkol by obvykle prováděl zásobovací pracovník.
 

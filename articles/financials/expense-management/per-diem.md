@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="per-diem-rules"></a>Pravidla denních diet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 *Denní diety* jsou náhradou zaplacenou pracovníkovi, který je na služební cestě. V modulu Správa výdajů můžete vytvořit pravidla pro denní diety pro různé cestovní situace. Denní diety lze nastavit podle roční doby, cíle cesty nebo podle obojího. Při vytvoření pravidla denní diety můžete zadat, aby bylo procento denní diety strženo, pokud zaměstnanec bude mít zajištěno náhradní stravování nebo jiné služby. Dále můžete pro služební cesty pracovníků nastavit minimální a maximální počet hodin pro použití sazby.
 

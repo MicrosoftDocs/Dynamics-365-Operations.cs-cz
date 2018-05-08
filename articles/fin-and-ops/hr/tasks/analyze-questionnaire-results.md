@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="analyze-questionnaire-results"></a>Analýza výsledků dotazníku
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Statistiky dotazníku slouží k výpočtu průměrné hodnoty, součtů a procentuální hodnoty na základě demografických údajů. Chcete-li celý postup spustit, přejděte na Dotazník > Zobrazit a analyzovat výsledky > Statistiky dotazníků. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

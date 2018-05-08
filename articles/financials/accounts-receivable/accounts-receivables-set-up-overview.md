@@ -28,7 +28,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Konfigurace modulu Pohledávky a Kredit a inkasa
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Konfigurujte modul Pohledávky a Kredit a inkasa pro sledování faktur a příchozích plateb od odběratelů.
 

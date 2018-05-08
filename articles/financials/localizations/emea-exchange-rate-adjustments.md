@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="exchange-rate-adjustments"></a>Úpravy kurzů
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma uvádí informace o funkci úpravy směnného kurzu, která umožňuje uživatelům v právnickým osobách v Estonsku, Maďarsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.
 

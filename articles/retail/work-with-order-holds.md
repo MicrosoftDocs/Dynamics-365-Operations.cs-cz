@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-holds"></a>Blokování objednávky
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Toto téma popisuje blokování objednávek v aplikaci Dynamics 365 for Retail.
 

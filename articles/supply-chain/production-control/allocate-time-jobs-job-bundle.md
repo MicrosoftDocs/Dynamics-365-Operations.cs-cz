@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Přidělení času k úlohám ve skupině prací
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V modulu Provádění výroby můžete úlohy ukládat do svazků. Potom můžete spustit více úloh současně na stránce se seznamem úloh.
 

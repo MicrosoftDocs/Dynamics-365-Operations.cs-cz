@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="import-iso20022-direct-debit-configuration"></a>Import konfigurace přímého debetu ve formátu ISO20022
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup ukazuje, jak importovat konfiguraci elektronického výkaznictví pro platby odběratelů. Tento postup používá jako příklad formát přímého debetu ISO 20022. 
 

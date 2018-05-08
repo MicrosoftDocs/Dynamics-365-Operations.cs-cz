@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="organization-administration-home-page"></a>Domovská stránka Správa organizace
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma odkazuje na obsah, který pomůže uživatelům Power users a správcům nakonfigurovat aplikaci Microsoft Dynamics 365 for Finance and Operations. Tento obsah jim pomůže nakonfigurovat systém tak, aby fungoval pro vaši organizaci a obchod hladce a efektivně.
 

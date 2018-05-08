@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="direct-deliveries"></a>Přímé dodávky
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V tomto článku jsou informace o přímých dodávkách. Přímé dodávky jsou dodávky odeslané od dodavatele přímo odběrateli.
 

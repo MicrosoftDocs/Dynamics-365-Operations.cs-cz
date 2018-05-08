@@ -26,7 +26,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="set-up-signers-for-print-forms"></a>Nastavení podepisujících uživatelů pro tiskové formuláře
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsku, Polsku a Rusku můžete nastavit podepisující osoby a tituly pro odběratele a dodavatele, kteří tisknou dokumenty, jako jsou faktury a platební příkazy.
 

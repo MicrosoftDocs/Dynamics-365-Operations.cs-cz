@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="work-breakdown-structures"></a>Strukturované rozpisy prací
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Strukturovaný rozpis prací (WBS) je popis práce, která bude provedena v projektu. Jedná se o hierarchii úkolů, která představuje pochopení projektového týmu v souvislosti se složením práce a velikostí, náklady a dobou trvání jednotlivých součástí nebo úkolů. WBS má tři hlavní účely:
 

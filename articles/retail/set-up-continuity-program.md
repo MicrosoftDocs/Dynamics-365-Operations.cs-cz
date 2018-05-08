@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-a-continuity-program-for-a-call-center"></a>Nastavení programu trvání pro kontaktní středisko
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tento článek popisuje, jak lze nastavit program trvání pro kontaktní středisko.
 

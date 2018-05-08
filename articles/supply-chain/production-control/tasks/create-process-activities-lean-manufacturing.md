@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-process-activities-for-lean-manufacturing"></a>Vytváření aktivit procesu pro lean manufacturing
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Vytvořte aktivitu procesu pro lean manufacturing. 
 

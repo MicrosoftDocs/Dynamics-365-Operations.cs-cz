@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="transportation-management-overview"></a>Přehled správy přepravy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma poskytuje přehled o funkci správy přepravy v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 

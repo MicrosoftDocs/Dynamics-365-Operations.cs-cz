@@ -29,7 +29,7 @@ ms.lasthandoff: 01/17/2018
 
 # <a name="prerequisites-for-standard-costs"></a>Předpoklady pro standardní náklady
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V tomto tématu je popsán základní postup při použití standardních nákladů. Následné kroky závisí na operacích dané společnosti. Kroky se například liší pro nevýrobní prostředí, výrobní prostředí bez postupů nebo výrobní prostředí s postupy. 
 

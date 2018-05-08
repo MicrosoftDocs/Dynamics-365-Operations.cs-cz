@@ -24,7 +24,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Vyhledání platných cen a slev
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje vyhledání ceny a/nebo slevy produktu, které jsou aktuálně platné pro určitého odběratele, aniž by byla vytvořena prodejní objednávka. Postup vás provede konkrétním příkladem a aby bylo možné vybrat potřebné hodnoty, je nutné v příkladu použít ukázkovou společnost USMF.
 

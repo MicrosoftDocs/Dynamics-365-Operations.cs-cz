@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="define-new-jobs"></a>Definování nových pracovních míst
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato úloha se zaměřuje na vytváření nové úlohy. Ta bude dokončena pomocí manuálního zadávání a kopírování z funkce šablony. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF. Tato úloha je určena pro odborníka na lidské zdroje.
 

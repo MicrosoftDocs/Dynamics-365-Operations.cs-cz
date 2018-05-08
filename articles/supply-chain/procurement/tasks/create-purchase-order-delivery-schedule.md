@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Vytvoření nákupní objednávky s plánem dodávek
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup ukazuje, jak vytvořit plán dodávek pro nákupní objednávku. Plán dodávek se používá, pokud množství z objednávky nebo deníku má být dodáno v podobě vícenásobné expedice. Příklad v této příručce lze použít v rámci ukázkových dat společnosti USMF. Tento postup by obvykle prováděl nákupčí.
 

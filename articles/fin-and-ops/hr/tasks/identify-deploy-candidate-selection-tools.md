@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identifikování a nasazení nástrojů pro výběr kandidáta
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Najít kvalifikovaný fond uchazečů pro vyplnění volných pracovních míst může být obtížné, zejména v případě, že pozice vyžaduje jedinečnou sadu dovedností.  Avšak uchazeči s dovednostmi, které potřebujete, mohou již být zaměstnáni ve vaší organizaci. Můžete u stávajících zaměstnanců nebo nových uchazečů vyhledávat konkrétní sady dovedností. To umožňuje náborovým pracovníkům rychle shromažďovat a sledovat uchazeče, kteří se uchází o volnou pozici nyní nebo v minulosti, nebo najít potenciální uchazeče ze stávajícího fondu zaměstnanců. Tento záznam úloh vám usnadní zjistit, jak funkce mapování dovedností může pomoci najít pravou osobu pro volnou pozici. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

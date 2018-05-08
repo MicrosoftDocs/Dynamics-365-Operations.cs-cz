@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="batch-balancing"></a>Vyvážení dávky
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma popisuje podporu procesu vyvážení dávky. 
 

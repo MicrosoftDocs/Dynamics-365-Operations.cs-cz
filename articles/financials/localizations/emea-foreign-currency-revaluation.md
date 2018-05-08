@@ -26,7 +26,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="currency-revaluation-for-bank-account-transactions"></a>Přecenění měny pro transakce bankovních účtů
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## <a name="revalue-foreign-currency-amounts-for-bank-account-transactions"></a>Přecenění částek v cizí měně pro transakce bankovního účtu
 

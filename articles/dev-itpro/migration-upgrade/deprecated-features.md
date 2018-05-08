@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="removed-or-deprecated-features"></a>Odstraněné nebo zastaralé funkce
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma popisuje funkce, které byly odebrány z aplikace Microsoft Dynamics 365 for Finance and Operations, nebo které jsou již zastaralé.
 

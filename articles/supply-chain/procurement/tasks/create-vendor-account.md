@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-vendor-account"></a>Vytvoření účtu dodavatele
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje vytvoření účtu dodavatele a přidání adresy a kontaktních informací. Postup neukazuje vyplnění všech polí pro nákupní a finanční účely. Další informace o těchto polích naleznete v popisech polí. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Účty dodavatele jsou obvykle vytvářeny pracovníky zásobování nebo zaměstnanci starající se o pohledávky.
 
