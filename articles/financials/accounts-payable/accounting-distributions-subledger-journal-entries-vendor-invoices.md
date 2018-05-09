@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 510e3ac8bbec891436eaf6849dfe00b68ba2eb40
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: bc774268bb9b431b033d47f59540db62df2d72a3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-vendor-invoices"></a><span data-ttu-id="bb483-104">Rozúčtování a položky dílčích hlavních knih deníku pro faktury dodavatele</span><span class="sxs-lookup"><span data-stu-id="bb483-104">Accounting distributions and subledger journal entries for vendor invoices</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="bb483-105">Rozúčtování slouží k definování, jak budou zaúčtovány částky, například jak budou výdaje, daně a náklady zaúčtovány na fakturách dodavatele.</span><span class="sxs-lookup"><span data-stu-id="bb483-105">Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice.</span></span> <span data-ttu-id="bb483-106">Každá částka, která musí být zaúčtována, když je dodavatelská faktura zapsána do deníku, bude mít jedno nebo více rozúčtování.</span><span class="sxs-lookup"><span data-stu-id="bb483-106">Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions.</span></span> 
 

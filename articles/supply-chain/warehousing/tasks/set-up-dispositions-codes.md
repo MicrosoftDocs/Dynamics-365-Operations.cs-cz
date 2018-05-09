@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e12a2ac565bb8a8383044bd76a97f01e0434c739
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: dc014e499d5705b8ad72bc502969a6102d89ae36
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-dispositions-codes"></a><span data-ttu-id="d39c2-103">Nastavení dispozičních kódů</span><span class="sxs-lookup"><span data-stu-id="d39c2-103">Set up dispositions codes</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d39c2-104">Tento postup se zaměřuje na nastavení dispozičního kódu, který lze použít v mobilním zařízení pro proces příjmu vratky.</span><span class="sxs-lookup"><span data-stu-id="d39c2-104">This procedure focuses on the setup of a disposition code that can be used on a mobile device for the return order receiving process.</span></span> <span data-ttu-id="d39c2-105">Dispoziční kódy je sada pravidel, které lze použít při příjmu položek.</span><span class="sxs-lookup"><span data-stu-id="d39c2-105">Disposition codes are a collection of rules that can be used when items are received.</span></span> <span data-ttu-id="d39c2-106">Například když uživatel při práci používá mobilní zařízení k příjmu položek, které byly poškozené, uživatel musí naskenovat dispoziční kód pro poškozené položky.</span><span class="sxs-lookup"><span data-stu-id="d39c2-106">For example, when a work user uses a mobile device to receive items that were damaged, the user must scan a disposition code for damaged items.</span></span> <span data-ttu-id="d39c2-107">Podle naskenovaného dispozičního kódu lze určit stav zásob přijatého zboží, šablonu práce a směrnici umístění.</span><span class="sxs-lookup"><span data-stu-id="d39c2-107">The inventory status of the goods received, the work template, and the location directive can be determined from the scanned disposition code.</span></span> <span data-ttu-id="d39c2-108">Pro proces Příjem nákupní objednávky a Vykázat výrobní zakázku jako dokončenou lze dispoziční kód použít volitelně.</span><span class="sxs-lookup"><span data-stu-id="d39c2-108">For the purchase order receiving process and the production order report as finished process, the use of a disposition code is optional.</span></span> <span data-ttu-id="d39c2-109">Pokud v případě procesu příjmu prodejní vratky jsou položky registrovány pomocí mobilního zařízení, použití dispozičního kódu je povinné.</span><span class="sxs-lookup"><span data-stu-id="d39c2-109">For the sales order return receiving process, if the items are registered using a mobile device, the use of disposition code is mandatory.</span></span>  <span data-ttu-id="d39c2-110">Tento průvodce byl vytvořen pomocí ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="d39c2-110">This guide was created using the demo data company USMF.</span></span> <span data-ttu-id="d39c2-111">Tento postup je určen pro vedoucího skladu.</span><span class="sxs-lookup"><span data-stu-id="d39c2-111">This procedure is intended for the warehouse manager.</span></span> 
 

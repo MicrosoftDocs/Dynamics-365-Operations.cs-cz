@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6ddba210ced7c7ed5fad818945765528e5b1c1d1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 36b92b7dfacb781c559e3ab39406b709e7ce5c9a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="costing-sheets"></a><span data-ttu-id="dd39a-108">Nákladové formuláře</span><span class="sxs-lookup"><span data-stu-id="dd39a-108">Costing sheets</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="dd39a-109">Nastavení nákladového formuláře má dva cíle.</span><span class="sxs-lookup"><span data-stu-id="dd39a-109">Setting up the costing sheet involves two objectives.</span></span> <span data-ttu-id="dd39a-110">Prvním je definovat formát zobrazení informací o nákladech na prodané zboží, které se týkají vyrobených položek nebo výrobní zakázky.</span><span class="sxs-lookup"><span data-stu-id="dd39a-110">As the first objective, you define the format for displaying cost of goods sold information about a manufactured item or production order.</span></span> <span data-ttu-id="dd39a-111">Vytvořený formát zobrazení je pojmenován nákladový formulář.</span><span class="sxs-lookup"><span data-stu-id="dd39a-111">The formatted display is termed a costing sheet.</span></span> <span data-ttu-id="dd39a-112">Druhým je definovat základnu pro výpočet nepřímých nákladů.</span><span class="sxs-lookup"><span data-stu-id="dd39a-112">As the second objective, you define the basis for calculating indirect costs.</span></span> <span data-ttu-id="dd39a-113">Nastavení nákladového formuláře je založeno na funkcích nákladové skupiny pro zobrazení informací a vzorců pro výpočet nepřímých nákladů.</span><span class="sxs-lookup"><span data-stu-id="dd39a-113">The costing sheet setup builds on the cost group feature for displaying information and for the indirect cost calculation formulas.</span></span> <span data-ttu-id="dd39a-114">V tomto článku jsou popsány dva cíle nastavení nákladového formuláře.</span><span class="sxs-lookup"><span data-stu-id="dd39a-114">The two objectives of costing sheet setup are described in this article.</span></span> 
 

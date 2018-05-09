@@ -16,16 +16,16 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fc47f6cd9cfe4a850e0959bf89da086ca82f3b69
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ba174973cd730a8ddbde84c877acdee340deda8c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="data-import-and-export-jobs"></a><span data-ttu-id="42779-103">Úlohy importu a exportu dat</span><span class="sxs-lookup"><span data-stu-id="42779-103">Data import and export jobs</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="42779-104">K vytvoření a správě úloh importu a exportu dat v aplikaci Microsoft Dynamics 365 for Finance and Operations používáte pracovní prostor **Správa dat**.</span><span class="sxs-lookup"><span data-stu-id="42779-104">To create and manage data import and export jobs in Microsoft Dynamics 365 for Finance and Operations, you use the **Data management** workspace.</span></span> <span data-ttu-id="42779-105">Ve výchozím nastavení proces importu a exportu dat vytvoří tabulky fázování pro každou entitu v cílové databázi.</span><span class="sxs-lookup"><span data-stu-id="42779-105">By default, the data import and export process creates a staging table for each entity in the target database.</span></span> <span data-ttu-id="42779-106">Tabulky fázování umožňují ověřit, vyčistit anebo převést dat předtím, než budou přesunuta.</span><span class="sxs-lookup"><span data-stu-id="42779-106">Staging tables let you verify, clean up, or convert data before you move it.</span></span>
 

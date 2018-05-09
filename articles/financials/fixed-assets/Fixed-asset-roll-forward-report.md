@@ -19,15 +19,15 @@ ms.author: saraschi
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 16f7c199fb4c9905c465e5d4596d3eaa90104b83
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4bb3865488c7dcb5a8417d277bdae52c2abb23de
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="fixed-assets-roll-forward-report"></a><span data-ttu-id="cdbda-103">Sestava dopředného posunutí dlouhodobého majetku</span><span class="sxs-lookup"><span data-stu-id="cdbda-103">Fixed assets roll forward report</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="cdbda-104">Sestava **dopředného posunutí dlouhodobého majetku** poskytuje ve snadno čitelném formátu aplikace Microsoft Excel podrobná data dlouhodobého majetku, která vyžadujete pro uzávěrku období, finanční výkazy a vykazování daní.</span><span class="sxs-lookup"><span data-stu-id="cdbda-104">The **Fixed assets roll forward** report provides, in an easy-to-read Microsoft Excel format, the detailed fixed asset data that you require for period closing, financial statements, and tax reporting.</span></span> <span data-ttu-id="cdbda-105">Tato sestava zahrnuje počáteční a koncové zůstatky dlouhodobého majetku, spolu s pohyby ocenění pro dané období, a jakákoliv pořízení nového majetku a vyřazení, ke kterým došlo během tohoto období.</span><span class="sxs-lookup"><span data-stu-id="cdbda-105">The report includes start and end balances for fixed assets, together with valuation movements for the period, and any new asset acquisitions and disposals that occurred during the period.</span></span> <span data-ttu-id="cdbda-106">Data se vykazujuí pro jednotlivý dlouhodobý majetek a hodnoty jsou dále shrnuty pro skupiny dlouhodobého majetku a právnickou osobu.</span><span class="sxs-lookup"><span data-stu-id="cdbda-106">Data is reported for individual fixed assets, and values are also summarized for fixed asset groups and the legal entity.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9bd8a506fc0bbf4d4d8127afa71fe371be10b55b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d07df2c2779833485bd70240c47bb569622800f8
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a><span data-ttu-id="4ed13-103">Nastavení účetních profilů dlouhodobého majetku</span><span class="sxs-lookup"><span data-stu-id="4ed13-103">Set up fixed asset posting profiles</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4ed13-104">Tento průvodce úkolem nastaví účetní profily pro dlouhodobý majetek.</span><span class="sxs-lookup"><span data-stu-id="4ed13-104">This task guide will set up Fixed asset posting profiles.</span></span>  <span data-ttu-id="4ed13-105">Využívá účetní role a ukázková data pro právnické osoby USMF.</span><span class="sxs-lookup"><span data-stu-id="4ed13-105">It uses the Accountant role and demo data for the USMF legal entity.</span></span>  <span data-ttu-id="4ed13-106">Příklady uvedené v průvodci úkolem jsou určeny pro základní účetní profil, i když účetní profily je nutné vytvořit pro vaši konkrétní účtovou osnovu a požadavky na finanční výkazy.</span><span class="sxs-lookup"><span data-stu-id="4ed13-106">Examples given in the task guide are for a basic posting profile, though posting profiles must be created for your specific chart of accounts and financial reporting requirements.</span></span>
 

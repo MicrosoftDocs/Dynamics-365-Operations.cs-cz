@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4f2dc9221b72600c928db9fd306038725c7af305
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 27fbf57ba7114ca773f2a80de51b36b4e63c6dd6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-display-older-batches-within-warehouse-on-a-mobile-device"></a><span data-ttu-id="70904-103">Konfigurace možnosti Zobrazení starších dávek v rámci skladu na mobilním zařízení</span><span class="sxs-lookup"><span data-stu-id="70904-103">Configure Display older batches within warehouse on a mobile device</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="70904-104">Konfigurace **Zobrazení starších dávek v rámci skladu** umožňuje zobrazit seznam skladových míst s dávkami, které jsou starší než aktuální umístění řádku práce.</span><span class="sxs-lookup"><span data-stu-id="70904-104">The **Display older batches within warehouse** configuration lets you display a list of locations with batches older than the current location of the work line.</span></span> <span data-ttu-id="70904-105">Seznam skladových míst, která se zobrazují, obsahuje informace o starších dávkách ve skladovém místě s datem vypršení platnosti a fyzickými zásobami pro každou dávku.</span><span class="sxs-lookup"><span data-stu-id="70904-105">The list of locations that are displayed includes information about the older batches in the location with the expiration date and the physical inventory of each batch.</span></span> <span data-ttu-id="70904-106">Můžete se rozhodnout pro vyskladnění z nového skladového místa nebo můžete pokračovat ve vyskladnění z aktuálního skladového místa.</span><span class="sxs-lookup"><span data-stu-id="70904-106">You can choose to pick from a new location or to continue picking from the current location.</span></span> 
 - <span data-ttu-id="70904-107">Vyskladnění z nového umístění – pokud vyberete nové místo k vyskladnění, aktuální řádek práce bude aktualizován na nové skladové místo použití a práce bude v novém místě pokračovat obvyklým způsobem.</span><span class="sxs-lookup"><span data-stu-id="70904-107">Pick from a new location - If you select a new location to pick from, the  current work line will be updated to use the new location and work will continue as usual with the new location.</span></span> <span data-ttu-id="70904-108">Aby bylo nové skladové místo platné, musí mít dostatek disponibilního množství pro celý řádek práce.</span><span class="sxs-lookup"><span data-stu-id="70904-108">For the new location to be valid, it must have enough available quantity for the whole work line.</span></span> <span data-ttu-id="70904-109">Pokud není požadované množství k dispozici, nebude řádek práce aktualizován a zobrazí se seznam.</span><span class="sxs-lookup"><span data-stu-id="70904-109">If the required quantity is not available, the work line will not be updated, and the list will display.</span></span> 

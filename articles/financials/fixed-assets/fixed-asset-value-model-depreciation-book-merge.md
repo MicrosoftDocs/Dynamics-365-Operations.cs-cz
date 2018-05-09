@@ -18,16 +18,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7e03e5fd1458df56cc6c4de0459135305b1ffc41
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 941b224aad9749a372b8b1176e7021985b024a4f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a><span data-ttu-id="d540a-104">Oceňovací model dlouhodobého majetku a slučování knih odpisů</span><span class="sxs-lookup"><span data-stu-id="d540a-104">Fixed asset value model and depreciation book merge</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="d540a-105">V předchozích verzích existovaly dva koncepty ocenění pro dlouhodobý majetek - oceňovací modely a knihy odpisů.</span><span class="sxs-lookup"><span data-stu-id="d540a-105">In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books.</span></span> <span data-ttu-id="d540a-106">V aplikaci Microsoft Dynamics 365 for Operations (verze 1611) byly funkce modelu hodnot a knihy odpisů sloučeny do jednoho celku, který se označuje jako kniha.</span><span class="sxs-lookup"><span data-stu-id="d540a-106">In the Microsoft Dynamics 365 for Operations (1611) release, the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book.</span></span>
 

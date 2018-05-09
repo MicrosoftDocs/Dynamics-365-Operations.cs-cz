@@ -18,16 +18,16 @@ ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 489e837ba599138fcb9986aa509ef428321ab24b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 64aa64cd487dfed1f8930a868da37e93761c2dd3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="credit-note-on-cash-discount"></a><span data-ttu-id="2fb92-103">Dobropis u hotovostní slevy</span><span class="sxs-lookup"><span data-stu-id="2fb92-103">Credit note on cash discount</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="2fb92-104">Toto téma obsahuje informace, které pomohou právnickým osobám v rámci České republiky vytvořit, zaúčtovat a tisknout dobropisy pro hotovostní slevy, které jsou přiřazeny odběratelům.</span><span class="sxs-lookup"><span data-stu-id="2fb92-104">This topic provides information that will help legal entities in the Czech Republic create, post, and print credit notes for cash discounts that are given to customers.</span></span>
 

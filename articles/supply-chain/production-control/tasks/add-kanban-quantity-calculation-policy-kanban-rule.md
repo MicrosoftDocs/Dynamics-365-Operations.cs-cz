@@ -16,15 +16,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 134fbbb2cde4c611798ec010ee7a128c06a80392
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: aae6e85397ed4a09812389bc39306201953ab9c2
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="add-a-kanban-quantity-calculation-policy-to-a-kanban-rule"></a><span data-ttu-id="68b40-103">Přidání zásad výpočtu kanbanového množství ke kanbanovému pravidlu</span><span class="sxs-lookup"><span data-stu-id="68b40-103">Add a kanban quantity calculation policy to a kanban rule</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="68b40-104">Tento postup se zaměřuje na vytváření zásad výpočtu kanbanového množství a jejich přidání do kanbanového pravidla pro optimalizaci velikosti a množství kanbanu.</span><span class="sxs-lookup"><span data-stu-id="68b40-104">This procedure focuses on creating a kanban quantity calculation policy and adding it to a kanban rule to optimize the kanban size and quantities.</span></span> <span data-ttu-id="68b40-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="68b40-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="68b40-106">Tento postup je určen pro vedoucího hodnotového proudu.</span><span class="sxs-lookup"><span data-stu-id="68b40-106">This procedure is intended for the value stream manager.</span></span> <span data-ttu-id="68b40-107">Tento postup je nezbytným předpokladem vytvoření postupu pro výpočet návrhů kanbanového množství.</span><span class="sxs-lookup"><span data-stu-id="68b40-107">This procedure is a prerequisite for creating the procedure Calculate kanban quantity suggestions.</span></span> 
 

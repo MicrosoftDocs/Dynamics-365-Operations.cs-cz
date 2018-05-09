@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 258f3e801b735ee54db3642e7fbdfc0f0ff153a0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6876f8ed0f69ec5a34c4c9671081c76245945b1e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a><span data-ttu-id="f5953-103">Vytvoření typů oslovení a kritérií hodnocení pro požadavky na nabídku</span><span class="sxs-lookup"><span data-stu-id="f5953-103">Create solicitation types and scoring criteria for RFQs</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f5953-104">Tato příručka popisuje způsob vytvoření typu oslovení a jeho přiřazení k metodě hodnocení.</span><span class="sxs-lookup"><span data-stu-id="f5953-104">This guide shows you how to create a solicitation type and associate this with a scoring method.</span></span> <span data-ttu-id="f5953-105">Rovněž zobrazuje způsob použití typu oslovení pro požadavek na nabídku, který stanoví výchozí metodu hodnocení.</span><span class="sxs-lookup"><span data-stu-id="f5953-105">It also shows how to use the solicitation type on a request for quotation (RFQ) which then sets the default scoring method.</span></span> <span data-ttu-id="f5953-106">Tyto úkoly obvykle provádějí vedoucí nákupu.</span><span class="sxs-lookup"><span data-stu-id="f5953-106">These tasks would typically be carried out by a purchasing manager.</span></span> <span data-ttu-id="f5953-107">Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="f5953-107">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="f5953-108">Před zahájením je nutné mít k dispozici metodu hodnocení.</span><span class="sxs-lookup"><span data-stu-id="f5953-108">You need to have a scoring method available before you start.</span></span>
 

@@ -20,16 +20,16 @@ ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 41bd135c1b891841bd147d8ff9c905d49319b88e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 75b77ff633161acf39370a7c0cf522446b3a374a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="demo-data-screen-layouts-in-mposcpos"></a><span data-ttu-id="c1bb8-103">Rozložení obrazovky ukázkových dat v MPOS/CPOS</span><span class="sxs-lookup"><span data-stu-id="c1bb8-103">Demo data screen layouts in MPOS/CPOS</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="c1bb8-104">Toto téma poskytuje informace o rozvrženích obrazovky, která jsou zahrnuta se sadou ukázkových dat v uživatelském prostředí pokladních míst (POS) v aplikaci Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="c1bb8-104">This topic provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Microsoft Dynamics 365 for Retail.</span></span>
 

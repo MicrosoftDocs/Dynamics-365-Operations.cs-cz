@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bad86a4726ce69015f318d9af98992b36d34b29a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ad2a356c4f6bc2c72898e8b841963e6bee6daac0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-requisition-for-consumption"></a><span data-ttu-id="2f28e-103">Vytvoření žádanky pro spotřebu</span><span class="sxs-lookup"><span data-stu-id="2f28e-103">Create a requisition for consumption</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2f28e-104">Tato procedura vás provede procesem vytvoření žádanky.</span><span class="sxs-lookup"><span data-stu-id="2f28e-104">This procedure walks you through the process of creating a requisition.</span></span> <span data-ttu-id="2f28e-105">Ukazuje různé způsoby, jak vyhledávat produkty v zásobovacím katalogu a jak přidat produkt, který není ve vašem katalogu.</span><span class="sxs-lookup"><span data-stu-id="2f28e-105">It shows you different ways to search for products in your procurement catalog and how to add a product that isn’t in your catalog.</span></span> <span data-ttu-id="2f28e-106">Před zahájením tohoto postupu je nutné mít nastavenou zásadu nákupu s výchozím typem žádanky Spotřeba.</span><span class="sxs-lookup"><span data-stu-id="2f28e-106">Before you start this procedure, you must have a purchasing policy set up with Consumption as the default type of requisition.</span></span> <span data-ttu-id="2f28e-107">Tento proces můžete projít pomocí ukázkových dat společnosti USMF nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="2f28e-107">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="2f28e-108">Postup můžete provést pouze pomocí uživatelského profilu, který je nastavený jako pracovník.</span><span class="sxs-lookup"><span data-stu-id="2f28e-108">The procedure can only be carried out by a user profile that is set up as worker.</span></span>  <span data-ttu-id="2f28e-109">Tento úkol běžně provádí zaměstnanec.</span><span class="sxs-lookup"><span data-stu-id="2f28e-109">This task would normally be carried out by an employee.</span></span> <span data-ttu-id="2f28e-110">Role zabezpečení zaměstnance vám umožní provádět úkoly a pokud používáte data USMF, můžete se přihlásit jako Alicia.</span><span class="sxs-lookup"><span data-stu-id="2f28e-110">The Employee employ security role will allow you to carry out the tasks, or if you’re using USMF, you can log in as Alicia.</span></span>
 

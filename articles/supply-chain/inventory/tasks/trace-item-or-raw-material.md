@@ -17,15 +17,15 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5c8126322f85b317a9737978295ec0ebd2fd7cdc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 86868fc3a5d1543e46b3ebd4dcc31cbc3a78479b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="trace-an-item-or-raw-material"></a><span data-ttu-id="9e122-103">Sledování položky nebo suroviny</span><span class="sxs-lookup"><span data-stu-id="9e122-103">Trace an item or raw material</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="9e122-104">Tento postup uvádí použití sledování položky k určení, kde bylo zboží nebo suroviny použity nebo jsou používány.</span><span class="sxs-lookup"><span data-stu-id="9e122-104">This procedure demonstrates how to use item tracing to identify where items or raw materials have been used or are being used.</span></span> <span data-ttu-id="9e122-105">Pomocí tohoto postupu lze identifikovat zboží, vysledovat ho zpět ke zdroji, a potom jej sledovat dopředu přes výrobu a prodeji hotového výrobku.</span><span class="sxs-lookup"><span data-stu-id="9e122-105">With this procedure, you can identify an item, trace it back to the source, and then trace forward through the production and sale of the finished product.</span></span> <span data-ttu-id="9e122-106">Tento proces použít k analýze ovlivněných odběratelů, dotyčných prodejních objednávek a další.</span><span class="sxs-lookup"><span data-stu-id="9e122-106">The process can be used to investigate the customers impacted, the sales orders affected, and more.</span></span> <span data-ttu-id="9e122-107">Tato procedura používá data ukázkové společnosti USP2.</span><span class="sxs-lookup"><span data-stu-id="9e122-107">This procedure uses demo data company USP2.</span></span>
 

@@ -16,16 +16,16 @@ ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b1432ca5977fc6cb9700b84585a6e0237f5b5538
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 338ba1a790ea434d85803b4f4efe5043784fd50e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="czech-republic"></a><span data-ttu-id="fd834-103">Česká republika</span><span class="sxs-lookup"><span data-stu-id="fd834-103">Czech Republic</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="fd834-104">Toto téma obsahuje informace a odkazy na zdroje, které vám pomohou nastavit aplikaci Dynamics 365 for Finance and Operations pro právnické osoby s primární adresou v České republice.</span><span class="sxs-lookup"><span data-stu-id="fd834-104">This topic includes information and links to resources that can help you set up Dynamics 365 for Finance and Operations for legal entities with a primary address in the Czech Republic.</span></span>
 

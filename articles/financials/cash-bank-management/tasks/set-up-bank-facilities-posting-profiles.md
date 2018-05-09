@@ -16,15 +16,15 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 85fefdc847f94baac5900a3a96d3d5f0b47150e3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f4eb3957c1df26e972b2b176bc76c520520ad944
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-bank-facilities-and-posting-profiles-for-letters-of-guarantee"></a><span data-ttu-id="2f9d1-103">Nastavení zařízení banky a zaúčtování profilů pro záruční listiny</span><span class="sxs-lookup"><span data-stu-id="2f9d1-103">Set up bank facilities and posting profiles for letters of guarantee</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2f9d1-104">Tato úloha vytvoří bankovní zařízení a účetní profil potřebný pro zpracování záruční listiny.</span><span class="sxs-lookup"><span data-stu-id="2f9d1-104">This task creates a Bank facility and posting profile that is needed to process a letter of guarantee.</span></span>
 

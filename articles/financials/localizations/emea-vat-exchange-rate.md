@@ -19,16 +19,16 @@ ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a91fa0b2952ef9baad43df63de2a39e00d7ac368
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5f3988e9dea7687d710a7580c0c63d720f3baa0a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vat-exchange-rate-overview"></a><span data-ttu-id="28f51-105">Přehled směnného kurzu DPH</span><span class="sxs-lookup"><span data-stu-id="28f51-105">VAT exchange rate overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="28f51-106">Toto téma obsahuje informace o směnných kurzech pro výpočet DPH.</span><span class="sxs-lookup"><span data-stu-id="28f51-106">This topic provides information about exchange rates for the VAT calculation.</span></span> <span data-ttu-id="28f51-107">Směnný kurz, který se používá k výpočtu DPH, může být odlišný od směnného kurzu, který organizace používá pro funkce účetnictví.</span><span class="sxs-lookup"><span data-stu-id="28f51-107">The exchange rate that is used for VAT calculation can differ from the exchange rate that is used for company accounting functions.</span></span> <span data-ttu-id="28f51-108">Při zaúčtování dokumentu v cizí měně jsou zaúčtovány všechny vzniklé kurzové rozdíly do konkrétních účtů hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="28f51-108">When a document in a foreign currency is posted, any exchange rate differences that occur are posted to specific ledger accounts.</span></span>
 

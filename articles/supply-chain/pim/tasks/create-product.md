@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8eecd5c87e19e36eabf5350bc71d55c4a94f37ba
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6eb0645d199beeb99a943b81c6a187b8a93c5710
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-product"></a><span data-ttu-id="2db41-103">Vytvoření produktu</span><span class="sxs-lookup"><span data-stu-id="2db41-103">Create a product</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2db41-104">Tato procedura vás provede procesem vytvoření nového produktu v hierarchii maloobchodních produktů.</span><span class="sxs-lookup"><span data-stu-id="2db41-104">This procedure walks through creating a new product in the retail product hierarchy.</span></span> <span data-ttu-id="2db41-105">Společnost s ukázkovými daty používaná k tvorbě tohoto úkolu je USRT a tento úkol je určen pro manažera prodeje a návrháře produktu.</span><span class="sxs-lookup"><span data-stu-id="2db41-105">The demo data company used to create this task is USRT, and this task is intended for the Merchandising Manager and Product Designer.</span></span>
 

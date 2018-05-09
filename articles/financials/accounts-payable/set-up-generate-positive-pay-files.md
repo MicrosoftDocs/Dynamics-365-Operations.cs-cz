@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d8a4e6de009efcd5d26954751b2a638766fcee6e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 282be61f5ad789fe40529a96ea8ea8ad56d38d56
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-and-generate-positive-pay-files"></a><span data-ttu-id="4bdd5-103">Nastavení a vygenerování souborů kladných plateb</span><span class="sxs-lookup"><span data-stu-id="4bdd5-103">Set up and generate positive pay files</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="4bdd5-104">Tento článek vysvětluje postup při nastavení kladných plateb a generování souborů kladných plateb.</span><span class="sxs-lookup"><span data-stu-id="4bdd5-104">This article explains how to set up positive pay and generate positive pay files.</span></span> 
 

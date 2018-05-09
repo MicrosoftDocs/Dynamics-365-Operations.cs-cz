@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c2d72509b0dc4d0cea5b4f2478ae7f8fc163e78c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6023f74972bcc3c3110b8efb5ce9bb1558aa2efb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="warehouse-work-policies"></a><span data-ttu-id="a2fac-103">Zásady práce ve skladu</span><span class="sxs-lookup"><span data-stu-id="a2fac-103">Warehouse work policies</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="a2fac-104">Zásady práce ve skladu v aplikaci Microsoft Dynamics 365 for Finance and Operations řídí, zda je skladová práce vytvářena skladovými procesy ve výrobě na základě typu pracovního příkazu, skladového místa a produktu.</span><span class="sxs-lookup"><span data-stu-id="a2fac-104">Warehouse work policies in Microsoft Dynamics 365 for Finance and Operations control whether warehouse work is created by warehouse processes in manufacturing, based on work order type, inventory location, and product.</span></span>
 

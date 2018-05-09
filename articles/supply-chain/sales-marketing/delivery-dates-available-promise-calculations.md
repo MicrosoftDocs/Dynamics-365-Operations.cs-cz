@@ -19,23 +19,23 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 529608ef2a3277eb9d026ee56458738e0ed6576f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1581fb0e30260acb84f7e77cb3571055181d8bdc
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="order-promising"></a><span data-ttu-id="04058-104">Příslib objednávky</span><span class="sxs-lookup"><span data-stu-id="04058-104">Order promising</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="04058-105">Tento článek poskytuje informace o příslibech objednávky.</span><span class="sxs-lookup"><span data-stu-id="04058-105">This article provides information about order promising.</span></span> <span data-ttu-id="04058-106">Příslib objednávky pomáhá spolehlivě přislíbit odběratelům data dodání a poskytuje vám flexibilitu, se kterou můžete tato data dodržet.</span><span class="sxs-lookup"><span data-stu-id="04058-106">Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.</span></span>
 
 <span data-ttu-id="04058-107">Při příslibu objednávky se na základě metody řízení data dodání a počtu přepravních dnů vypočítá nejdřívější datum expedice a příjmu.</span><span class="sxs-lookup"><span data-stu-id="04058-107">Order promising calculates the earliest ship and receipt dates, and is based on the delivery date control method and transport days.</span></span> <span data-ttu-id="04058-108">Vybírat lze ze čtyř metod řízení data dodání:</span><span class="sxs-lookup"><span data-stu-id="04058-108">You can select among four delivery date control methods:</span></span>
 
 -   <span data-ttu-id="04058-109">**Doba realizace prodeje** – doba realizace prodeje je doba mezi vytvořením prodejní objednávky a expedici položek.</span><span class="sxs-lookup"><span data-stu-id="04058-109">**Sales lead time** – Sales lead time is the time between creation of the sales order and shipment of the items.</span></span> <span data-ttu-id="04058-110">Výpočet data dodání je založen na výchozím počtu dnů a nezohledňuje skladovou dostupnost, známou poptávku ani plánovanou dodávku.</span><span class="sxs-lookup"><span data-stu-id="04058-110">The delivery date calculation is based on a default number of days, and does not consider stock availability, known demand, or planned supply.</span></span>
--   <span data-ttu-id="04058-111">**ATP (lze slíbit)** – ATP je množství položky, které je k dispozici a může být odběrateli slíbeno k určitému datu.</span><span class="sxs-lookup"><span data-stu-id="04058-111">**ATP (available-to-promise)** – ATP is the quantity of an item that is available and can be promised to a customer on a specific date.</span></span> <span data-ttu-id="04058-112">Výpočet množství ATP zahrnuje nepotvrzené zásoby, doby realizace, plánované příjmy a výdeje.</span><span class="sxs-lookup"><span data-stu-id="04058-112">The ATP calculation includes uncommitted inventory, lead times, planned receipts, and issues.</span></span>
+-   <span data-ttu-id="04058-111">**ATP (lze slíbit)**  – ATP je množství položky, které je k dispozici a může být odběrateli slíbeno k určitému datu.</span><span class="sxs-lookup"><span data-stu-id="04058-111">**ATP (available-to-promise)** – ATP is the quantity of an item that is available and can be promised to a customer on a specific date.</span></span> <span data-ttu-id="04058-112">Výpočet množství ATP zahrnuje nepotvrzené zásoby, doby realizace, plánované příjmy a výdeje.</span><span class="sxs-lookup"><span data-stu-id="04058-112">The ATP calculation includes uncommitted inventory, lead times, planned receipts, and issues.</span></span>
 -   <span data-ttu-id="04058-113">**ATP + rezerva výdeje**– datum expedice odpovídá datu ATP navýšenému o rezervu výdeje pro položku.</span><span class="sxs-lookup"><span data-stu-id="04058-113">**ATP + Issue margin** – The shipping date is equal to the ATP date plus the issue margin for the item.</span></span> <span data-ttu-id="04058-114">Rezerva výdeje je doba potřebná k přípravě položek na expedici.</span><span class="sxs-lookup"><span data-stu-id="04058-114">The issue margin is the time that is required to prepare the items for shipment.</span></span>
 -   <span data-ttu-id="04058-115">**CTP (příslib na základě ověření dostupné kapacity)**– dostupnost se počítá pomocí rozpadu.</span><span class="sxs-lookup"><span data-stu-id="04058-115">**CTP (capable-to-promise)** – Availability is calculated through explosion.</span></span>
 

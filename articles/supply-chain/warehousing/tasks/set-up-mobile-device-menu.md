@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 37010003ad638e068ed7650532da29c6dbc033cb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c3c048a18ee8150880ed9df139cd498f2ec52852
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-in-a-purchase-order"></a><span data-ttu-id="943c6-103">Nastavení položky nabídky na mobilním zařízení pro dokončení práce v nákupní objednávce</span><span class="sxs-lookup"><span data-stu-id="943c6-103">Set up a mobile device menu item for completing work in a purchase order</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="943c6-104">Tento postup popisuje způsob nastavení položky nabídky Mobilní zařízení.</span><span class="sxs-lookup"><span data-stu-id="943c6-104">This procedure shows how to set up a Mobile device menu item.</span></span> <span data-ttu-id="943c6-105">V tomto příkladu slouží tato položka nabídky k provedení práce typu Nákupní objednávka.</span><span class="sxs-lookup"><span data-stu-id="943c6-105">In this example, the menu item is used for performing work of type Purchase order.</span></span> <span data-ttu-id="943c6-106">Platná práce je určena pracovní třídou, která je přiřazena k položce nabídky.</span><span class="sxs-lookup"><span data-stu-id="943c6-106">The work class that’s associated with the menu item determines which work is valid.</span></span> <span data-ttu-id="943c6-107">Tohoto průvodce můžete použít s ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="943c6-107">You can use this guide in demo data company USMF.</span></span> <span data-ttu-id="943c6-108">Tento proces obvykle provádí správce skladu.</span><span class="sxs-lookup"><span data-stu-id="943c6-108">This procedure is typically carried out by a warehouse manager.</span></span>
 

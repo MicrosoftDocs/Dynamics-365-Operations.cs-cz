@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8b5609c897466dbd0e504740cdc600fb2f800d37
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1bd59ffca94c57ad33f78f9e780d00b368750bc8
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a><span data-ttu-id="b8ea5-103">Nastavení šablony práce pro nákupní objednávky</span><span class="sxs-lookup"><span data-stu-id="b8ea5-103">Set up a work template for purchase orders</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b8ea5-104">Tento postup se zaměřuje na nastavení jednoduché pracovní šablony pro použití při odložení doručených položek.</span><span class="sxs-lookup"><span data-stu-id="b8ea5-104">This procedure focuses on the set up of a simple work template to be used when putting away received items.</span></span> <span data-ttu-id="b8ea5-105">Šablony práce určují sadu pokynů představovanou pracovníkovi skladu na mobilním zařízení, zatímco jsou položky přesouvány z místa příjmu.</span><span class="sxs-lookup"><span data-stu-id="b8ea5-105">Work templates determine the set of instructions presented to the warehouse worker on a mobile device when moving items from the receiving area.</span></span> <span data-ttu-id="b8ea5-106">Můžete použít tuto proceduru s daty zmíněnými v ukázkových datech společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="b8ea5-106">You can use this procedure with the data mentioned in demo data company USMF.</span></span> <span data-ttu-id="b8ea5-107">Před spuštěním tohoto průvodce vytvořte ID fondu práce.</span><span class="sxs-lookup"><span data-stu-id="b8ea5-107">Before you start this guide, create a work pool ID.</span></span> <span data-ttu-id="b8ea5-108">V tomto příkladu se používá ID fondu práce nazvaný Příchozí.</span><span class="sxs-lookup"><span data-stu-id="b8ea5-108">In this example, a work pool ID called in Inbound is used.</span></span> <span data-ttu-id="b8ea5-109">Tento postup je určen pro vedoucího skladu.</span><span class="sxs-lookup"><span data-stu-id="b8ea5-109">This procedure is intended for the warehouse manager.</span></span>
 

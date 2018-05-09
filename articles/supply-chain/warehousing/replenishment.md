@@ -20,16 +20,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 41f77a837f446e0ef263f1554a333d6e48248a0e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1c79e7f43dd239a828a549b326ea84d36d38cc3e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="replenishment"></a><span data-ttu-id="14cb1-103">Doplnění</span><span class="sxs-lookup"><span data-stu-id="14cb1-103">Replenishment</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="14cb1-104">Toto téma popisuje strategie doplnění, které jsou k dispozici pro sklady, které používají funkce, které jsou k dispozici v modulu Řízení skladu.</span><span class="sxs-lookup"><span data-stu-id="14cb1-104">This topic describes the replenishment strategies that are available for warehouses that use the functionality that is available in Warehouse management.</span></span> <span data-ttu-id="14cb1-105">Informace v tomto tématu se nevztahují na skladové řešení, které je k dispozici v modulu Řízení zásob.</span><span class="sxs-lookup"><span data-stu-id="14cb1-105">The information in this topic doesn't apply to the warehousing solution that is available in Inventory management.</span></span>
 

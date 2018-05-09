@@ -16,15 +16,15 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5a7767433750a0f76fa234ebdba91991d3b8e947
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f6624db66a1ff6c227ab002692eea08406f38c59
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="manage-benefit-expiration-dates"></a><span data-ttu-id="ac35d-103">Správa dat vypršení platnosti zaměstnaneckých výhod</span><span class="sxs-lookup"><span data-stu-id="ac35d-103">Manage benefit expiration dates</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ac35d-104">Tento postup popisuje, jak můžete ukončit nebo prodloužit platnost zaměstnaneckých výhod a spravovat data přihlášení zaměstnanců, které jsou registrovaní pro zaměstnanecké výhody.</span><span class="sxs-lookup"><span data-stu-id="ac35d-104">This procedure shows how you can expire or extend a benefit, and manage the enrollment dates of workers that are enrolled in the benefit.</span></span> <span data-ttu-id="ac35d-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="ac35d-105">The demo data company used to create this procedure is USMF.</span></span>
 

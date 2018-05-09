@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1afd58e209e050bc766e6bc76a5f12dafc9bdf95
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 65a91c64c7a622fda2e2358b3a2d46cb05b9bf3a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-sales-orders"></a><span data-ttu-id="3a598-103">Vytvářet prodejní objednávky</span><span class="sxs-lookup"><span data-stu-id="3a598-103">Create sales orders</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="3a598-104">Tato procedura popisuje způsob vytváření prodejní zakázky.</span><span class="sxs-lookup"><span data-stu-id="3a598-104">This procedure shows you how to create a sales order.</span></span> <span data-ttu-id="3a598-105">Tento postup můžete projít v ukázkových datech společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="3a598-105">You can use the procedure in demo data company USMF.</span></span> <span data-ttu-id="3a598-106">Prodejní objednávku obvykle vytváří zpracovatel prodejních objednávek.</span><span class="sxs-lookup"><span data-stu-id="3a598-106">Sales orders are typically created by a sales order processor.</span></span> 
 

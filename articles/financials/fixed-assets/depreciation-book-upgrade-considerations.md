@@ -18,16 +18,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: dfba6a237548d962bd3677d20da3745f59638ede
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7093023713a81980010b8254708801b58bc68475
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="depreciation-book-upgrade-overview"></a><span data-ttu-id="f5f94-105">Přehled upgradu knihy odpisů</span><span class="sxs-lookup"><span data-stu-id="f5f94-105">Depreciation book upgrade overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="f5f94-106">V předchozích verzích existovaly dva koncepty ocenění pro dlouhodobý majetek - oceňovací modely a knihy odpisů.</span><span class="sxs-lookup"><span data-stu-id="f5f94-106">In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books.</span></span> <span data-ttu-id="f5f94-107">V aplikaci Microsoft Dynamics 365 for Operations (1611) byly funkce modelu hodnoty a knihy odpisů sloučeny do jednoho koncept, který je označován jako kniha.</span><span class="sxs-lookup"><span data-stu-id="f5f94-107">In Microsoft Dynamics 365 for Operations (1611), the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book.</span></span> <span data-ttu-id="f5f94-108">Toto téma obsahuje informace, které je třeba zvážit pro upgrade.</span><span class="sxs-lookup"><span data-stu-id="f5f94-108">This topic provides some things to consider for the upgrade.</span></span> 
 
@@ -62,24 +62,24 @@ ms.lasthandoff: 04/13/2018
 <span data-ttu-id="f5f94-145">Parametry jsou umístěny na začátku třídy ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans.</span><span class="sxs-lookup"><span data-stu-id="f5f94-145">The parameters are located at the beginning of the ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans class.</span></span> 
 
 <span data-ttu-id="f5f94-146">*//Určete preferovanou metodu přidělení dokladů* 
-*// true, pokud chcete použít existující kód číselné řady* 
-*// false, chcete-li použití číselnou řadu (výchozí) definovanou systémem* boolean const NumberSequenceUseExistingCode = false;</span><span class="sxs-lookup"><span data-stu-id="f5f94-146">*// Specify a preferable approach of vouchers allocation* 
-*// true, if you want to use an existing number sequence code* 
-*// false, if you intend to use the system-defined number sequence (default)* const boolean NumberSequenceUseExistingCode = false;</span></span>  
+ *// true, pokud chcete použít existující kód číselné řady* 
+ *// false, chcete-li použití číselnou řadu (výchozí) definovanou systémem* boolean const NumberSequenceUseExistingCode = false;</span><span class="sxs-lookup"><span data-stu-id="f5f94-146">*// Specify a preferable approach of vouchers allocation* 
+ *// true, if you want to use an existing number sequence code* 
+ *// false, if you intend to use the system-defined number sequence (default)* const boolean NumberSequenceUseExistingCode = false;</span></span>  
 
 <span data-ttu-id="f5f94-147">*// Pokud použijete způsob definované systémem číselné řady, zadejte parametry pro číselnou řadu.*
-*// Vytvoří se nová číselná řada s těmito parametry.*</span><span class="sxs-lookup"><span data-stu-id="f5f94-147">*// If using the system-defined number sequence approach, specify the parameters for the number sequence.*
-*// A new number sequence will be created with these parameters.*</span></span> <span data-ttu-id="f5f94-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span><span class="sxs-lookup"><span data-stu-id="f5f94-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span></span>   
+ *// Vytvoří se nová číselná řada s těmito parametry.*</span><span class="sxs-lookup"><span data-stu-id="f5f94-147">*// If using the system-defined number sequence approach, specify the parameters for the number sequence.*
+ *// A new number sequence will be created with these parameters.*</span></span> <span data-ttu-id="f5f94-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span><span class="sxs-lookup"><span data-stu-id="f5f94-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span></span>   
 
 <span data-ttu-id="f5f94-149">*// Používáte-li přístup existující číselné řady, zadejte existující kód číselné řady..* 
-*// Přidělení dokladu půjde po řádcích existující číselné řady.*</span><span class="sxs-lookup"><span data-stu-id="f5f94-149">*// If using the existing number sequence approach, specify the existing number sequence code.* 
-*// Voucher allocation will go row-by-row for existing number sequences.*</span></span> <span data-ttu-id="f5f94-150">const str NumberSequenceExistingCode = ''; *// Zadejte identifikační kód pro číselnou řadu.* 
-*// true, pokud je sdílená určená číselné řada* 
-*// false, pokud je určená číselná řada podle společnosti* 
-*// Výchozí číselná řada definovaná systémem se použije, pokud nebude nalezen kód číselné řady se zadaným rozsahem.*</span><span class="sxs-lookup"><span data-stu-id="f5f94-150">const str NumberSequenceExistingCode = ''; *// Specify the scope of the existing number sequence code* 
-*// true, if the specified number sequence is shared* 
-*// false, if the specified number sequence is per-company* 
-*// The default system-defined number sequence will be used if a number sequence code with the specified scope is not found.*</span></span> <span data-ttu-id="f5f94-151">const boolean NumberSequenceExistingIsShared = true;</span><span class="sxs-lookup"><span data-stu-id="f5f94-151">const boolean NumberSequenceExistingIsShared = true;</span></span> 
+ *// Přidělení dokladu půjde po řádcích existující číselné řady.*</span><span class="sxs-lookup"><span data-stu-id="f5f94-149">*// If using the existing number sequence approach, specify the existing number sequence code.* 
+ *// Voucher allocation will go row-by-row for existing number sequences.*</span></span> <span data-ttu-id="f5f94-150">const str NumberSequenceExistingCode = ''; *// Zadejte identifikační kód pro číselnou řadu.* 
+ *// true, pokud je sdílená určená číselné řada* 
+ *// false, pokud je určená číselná řada podle společnosti* 
+ *// Výchozí číselná řada definovaná systémem se použije, pokud nebude nalezen kód číselné řady se zadaným rozsahem.*</span><span class="sxs-lookup"><span data-stu-id="f5f94-150">const str NumberSequenceExistingCode = ''; *// Specify the scope of the existing number sequence code* 
+ *// true, if the specified number sequence is shared* 
+ *// false, if the specified number sequence is per-company* 
+ *// The default system-defined number sequence will be used if a number sequence code with the specified scope is not found.*</span></span> <span data-ttu-id="f5f94-151">const boolean NumberSequenceExistingIsShared = true;</span><span class="sxs-lookup"><span data-stu-id="f5f94-151">const boolean NumberSequenceExistingIsShared = true;</span></span> 
 
 <span data-ttu-id="f5f94-152">Znovu vytvořte projekt obsahující třídu po změně konstant.</span><span class="sxs-lookup"><span data-stu-id="f5f94-152">Rebuild the project that contains the class after the constants have been modified.</span></span> 
 

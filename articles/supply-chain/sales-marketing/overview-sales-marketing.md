@@ -18,16 +18,16 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 84d7cf4e0d0f1e66a8ce6ddf2822e5ca6d2899ab
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4d799b0d74b0f4c86afd8c5a9e37cb3c52c39a7c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="sales-and-marketing"></a><span data-ttu-id="39718-104">Prodej a marketing</span><span class="sxs-lookup"><span data-stu-id="39718-104">Sales and marketing</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="39718-105">Modul prodeje a marketingu můžete používat k získávání, ukládání a používání různých druhů v průběhu prodeje.</span><span class="sxs-lookup"><span data-stu-id="39718-105">You can use Sales and marketing to obtain, store, and use various types of data in the sales flow.</span></span> <span data-ttu-id="39718-106">Mezi tato data patří původní prodejní iniciativy, budoucí následné akce a dodatečné prodeje.</span><span class="sxs-lookup"><span data-stu-id="39718-106">This data includes the original sales initiative, future follow-up action, and additional sales.</span></span>
 

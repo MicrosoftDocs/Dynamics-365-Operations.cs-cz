@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d6e7c8884c0fa29b5c6efc053f2ad8171581b946
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9e7deb10cc0e5669d209ad7340108911a37bbc89
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-request-for-quotation"></a><span data-ttu-id="c3b08-103">Vytvoření požadavku na nabídku</span><span class="sxs-lookup"><span data-stu-id="c3b08-103">Create a request for quotation</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c3b08-104">Tato procedura popisuje způsob ručního vytváření požadavku na nabídku.</span><span class="sxs-lookup"><span data-stu-id="c3b08-104">This procedure shows you how to create a request for quotation.</span></span> <span data-ttu-id="c3b08-105">Toto by obvykle prováděl nákupčí.</span><span class="sxs-lookup"><span data-stu-id="c3b08-105">This would typically be done by a purchasing agent.</span></span> <span data-ttu-id="c3b08-106">Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="c3b08-106">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="c3b08-107">Než začnete, je třeba nastavit typy oslovení.</span><span class="sxs-lookup"><span data-stu-id="c3b08-107">You need to have set up solicitation types before you start.</span></span> <span data-ttu-id="c3b08-108">Po dokončení tohoto úkolu a po vytvoření a odeslání požadavku na nabídku můžete zadat odpovědí pro každého dodavatele, porovnat je a nejlepší smlouvu vybrat.</span><span class="sxs-lookup"><span data-stu-id="c3b08-108">Once you’ve completed this task and you’ve created and sent an RFQ you can then enter the replies per vendor, compare them, and award the contract.</span></span>
 

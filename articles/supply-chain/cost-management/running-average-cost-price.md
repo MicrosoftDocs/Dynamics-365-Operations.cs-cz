@@ -20,18 +20,18 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 36ae8e44043c64984a0a8bb4e16ed5d3517041b7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ee7b8098278b89c19504ebde6745c598fff1a581
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="running-average-cost-price"></a><span data-ttu-id="4f2e9-104">Průběžná průměrná nákladová cena</span><span class="sxs-lookup"><span data-stu-id="4f2e9-104">Running average cost price</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="4f2e9-105">Proces uzávěrky skladu v aplikaci vyrovná výdejové transakce příjmovými transakcemi podle metody oceňování zásob, která je vybraná ve skupině modelu zboží.</span><span class="sxs-lookup"><span data-stu-id="4f2e9-105">The inventory close process settles issue transactions to receipt transactions, based on the inventory valuation method that is selected in the item’s item model group.</span></span> <span data-ttu-id="4f2e9-106">Před spuštěním uzávěrky skladu však systém vypočítá průběžnou průměrnou nákladovou cenu, která obvykle slouží k účtování výdejových transakcí.</span><span class="sxs-lookup"><span data-stu-id="4f2e9-106">However, before inventory close is run, the system calculates a running average cost price that is typically used when issue transactions are posted.</span></span>
 

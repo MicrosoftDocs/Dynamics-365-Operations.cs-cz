@@ -16,15 +16,15 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d8a47dac61705831b330f7b4939a18c865a8ace7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3a9c87b8790ed6cfe4139180f1f1785db04e7431
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a><span data-ttu-id="7e9f7-103">Zaznamenání příjmu zboží na nákupní objednávce</span><span class="sxs-lookup"><span data-stu-id="7e9f7-103">Record the receipt of goods on the purchase order</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7e9f7-104">Tento postup popisuje, jak pořídit záznam příjmu zboží přímo na nákupní objednávce.</span><span class="sxs-lookup"><span data-stu-id="7e9f7-104">This procedure shows you how to record receipt of goods directly on a purchase order.</span></span> <span data-ttu-id="7e9f7-105">Dále je možné zaregistrovat příjemku produktu ve skladu a poté později ji zaznamenat na nákupní objednávce.</span><span class="sxs-lookup"><span data-stu-id="7e9f7-105">It’s also possible to register product receipt in the warehouse, and then later record it on the purchase order.</span></span> <span data-ttu-id="7e9f7-106">Tato úloha je provedena obvykle nákupčím nebo koordinátorem závazků.</span><span class="sxs-lookup"><span data-stu-id="7e9f7-106">This task is typically done by a purchasing agent or an accounts payable coordinator.</span></span> <span data-ttu-id="7e9f7-107">Příklad v této příručce lze použít v rámci ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="7e9f7-107">The example shown in this guide can be used in the USMF demo data company.</span></span> <span data-ttu-id="7e9f7-108">Příklad obsahuje kroky k vytvoření jednoduché nákupní objednávky tak, že umístíte postup jako průvodce úkolem.</span><span class="sxs-lookup"><span data-stu-id="7e9f7-108">The example includes steps to create a simple purchase order so that you can play the procedure as a task guide.</span></span> <span data-ttu-id="7e9f7-109">Pokud jste použili postup na vlastních datech, můžete spustit dílčí úkol Záznam příjmu zboží.</span><span class="sxs-lookup"><span data-stu-id="7e9f7-109">If you were using the procedure on your own data, you would start at the Record receipt of goods subtask.</span></span>
 

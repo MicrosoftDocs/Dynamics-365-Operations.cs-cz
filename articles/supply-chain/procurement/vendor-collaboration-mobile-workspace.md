@@ -18,16 +18,16 @@ ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 83fcf1d0432d5afa71d6f9d7d22cea5a583777bf
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: df27ff3477443611278436a680d70ea81a21763e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vendor-collaboration-mobile-workspace"></a><span data-ttu-id="9c383-105">Mobilní pracovní prostor dodavatelské spolupráce</span><span class="sxs-lookup"><span data-stu-id="9c383-105">Vendor collaboration mobile workspace</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="9c383-106">Toto téma obsahuje informace o mobilním pracovním prostoru **Spolupráce dodavatele**.</span><span class="sxs-lookup"><span data-stu-id="9c383-106">This topic provides information about the **Vendor collaboration** mobile workspace.</span></span> <span data-ttu-id="9c383-107">Tento pracovní prostor pomáhá udržovat přehled o nákupních objednávkách, které byly odeslány ke schválení dodavatelům.</span><span class="sxs-lookup"><span data-stu-id="9c383-107">This workspace helps your vendors stay up to date about the purchase orders that have been sent to them for approval.</span></span> <span data-ttu-id="9c383-108">Dále mohou prohlížet informace o nových a aktualizovaných nákupních objednávkách a kontaktech.</span><span class="sxs-lookup"><span data-stu-id="9c383-108">They can also view information about new and updated purchase orders and contacts.</span></span>
 

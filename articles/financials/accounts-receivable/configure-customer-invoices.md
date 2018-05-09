@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f08131e01fddb259d3bb537b1625ea2615a1e958
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 787c958f07bc3fbd442be8132b55de7f3e769cae
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-a-customer-invoice"></a><span data-ttu-id="74d2e-103">Vytvoření faktury odběratele</span><span class="sxs-lookup"><span data-stu-id="74d2e-103">Create a customer invoice</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="74d2e-104">**Faktura odběratele pro prodejní objednávku** je účet, který se vztahuje k prodeji a který organizace předává odběrateli.</span><span class="sxs-lookup"><span data-stu-id="74d2e-104">A **customer invoice for a sales order** is a bill that is related to a sale, and that an organization gives to a customer.</span></span> <span data-ttu-id="74d2e-105">Tento typ faktury odběratele se vytváří na základě prodejní objednávky, která zahrnuje řádky objednávky a čísla položek.</span><span class="sxs-lookup"><span data-stu-id="74d2e-105">This type of customer invoice is created based on a sales order, which includes order lines and item numbers.</span></span> <span data-ttu-id="74d2e-106">Čísla položek jsou specifikována a zaúčtována v hlavní knize.</span><span class="sxs-lookup"><span data-stu-id="74d2e-106">Item numbers are specified and posted in the ledger.</span></span> <span data-ttu-id="74d2e-107">Položky dílčího hlavního deníku nejsou k dispozici pro fakturu odběratele pro prodejní objednávku.</span><span class="sxs-lookup"><span data-stu-id="74d2e-107">Subledger journal entries aren't available for a customer invoice for a sales order.</span></span> <span data-ttu-id="74d2e-108">Další informace naleznete v tématu [Vytvoření faktur prodejní objednávky](tasks/create-sales-order-invoices.md).</span><span class="sxs-lookup"><span data-stu-id="74d2e-108">For more information, see [Create sales order invoices](tasks/create-sales-order-invoices.md).</span></span>
 

@@ -19,16 +19,16 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 70e6c17b5c7e38c2f9f7a5087175e7cfd2e5542a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 51a2820231583f0936d1a9d5e92003adbb0c342d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="process-allocations"></a><span data-ttu-id="b56ce-105">Zpracování přidělení</span><span class="sxs-lookup"><span data-stu-id="b56ce-105">Process allocations</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="b56ce-106">Tento článek obsahuje informace o přiděleních, možnostech pro jejich zpracování v aplikaci Microsoft Dynamics 365 for Finance and Operations a o tom, jak je lze použít při plánování rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="b56ce-106">This article provides information about allocations, the options for processing them in Microsoft Dynamics 365 for Finance and Operations, and how they can be used in budget planning.</span></span> <span data-ttu-id="b56ce-107">Přidělení se používají k rozdělení částek mezi více kombinací účtů hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="b56ce-107">Allocations are used to distribute amounts across multiple ledger account combinations.</span></span> <span data-ttu-id="b56ce-108">Díky nim lze zajistit, aby se výdaje nebo příjmy účtovaly v účetnictví na správný objekt.</span><span class="sxs-lookup"><span data-stu-id="b56ce-108">They help guarantee that expenses or revenue is charged to the correct object in accounting.</span></span>
 

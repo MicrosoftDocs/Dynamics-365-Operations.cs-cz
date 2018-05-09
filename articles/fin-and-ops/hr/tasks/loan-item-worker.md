@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: aff5ca3a6f3de4d90955e803917d352a21877244
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 34259fa522481b23c16c88f76c1d2c077e747bbf
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="loan-items-to-a-worker"></a><span data-ttu-id="24a71-103">Zapůjčení položek pracovníkovi</span><span class="sxs-lookup"><span data-stu-id="24a71-103">Loan items to a worker</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="24a71-104">Tento postup popisuje zapůjčení položky pracovníkovi a záznam vrácení položky pracovníkem.</span><span class="sxs-lookup"><span data-stu-id="24a71-104">This procedure shows how to loan an item to a worker and record the worker returning an item.</span></span> <span data-ttu-id="24a71-105">Zaměstnanci mohou také požádat o vypůjčení položek pomocí samoobslužných stránek pro zaměstnance.</span><span class="sxs-lookup"><span data-stu-id="24a71-105">Workers can also request loan items through their Employee self-service pages.</span></span> <span data-ttu-id="24a71-106">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="24a71-106">The demo data company used to create this procedure is USMF.</span></span>
 

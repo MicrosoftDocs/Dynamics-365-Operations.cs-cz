@@ -17,16 +17,16 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7e04c046aac0825a6a9d2b2b439bc2261ed61f16
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ab3218debfd3ad10b781ff3e7b4722f5d625f092
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="currency-revaluation-for-bank-account-transactions"></a><span data-ttu-id="29120-103">Přecenění měny pro transakce bankovních účtů</span><span class="sxs-lookup"><span data-stu-id="29120-103">Currency revaluation for bank account transactions</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## <a name="revalue-foreign-currency-amounts-for-bank-account-transactions"></a><span data-ttu-id="29120-104">Přecenění částek v cizí měně pro transakce bankovního účtu</span><span class="sxs-lookup"><span data-stu-id="29120-104">Revalue foreign currency amounts for bank account transactions</span></span>
 

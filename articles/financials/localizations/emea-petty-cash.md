@@ -18,16 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4467987c4bb25ec7c44550c9e941298e459bbf22
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 77159c0ef8e8046b50fa1dae60423823865e80b5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="petty-cash-for-eastern-europe"></a><span data-ttu-id="cd5d1-103">Pokladní hotovost pro východní Evropu</span><span class="sxs-lookup"><span data-stu-id="cd5d1-103">Petty cash for Eastern Europe</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="cd5d1-104">Toto téma uvádí informace o funkci pokladní hotovosti, která umožňuje uživatelům v Estonsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.</span><span class="sxs-lookup"><span data-stu-id="cd5d1-104">This topic provides information about the petty cash functionality that lets users in Estonia, Lithuania, Czech Republic, Hungary, Latvia, Poland, and Russia reflect cash operations in the system.</span></span>
 

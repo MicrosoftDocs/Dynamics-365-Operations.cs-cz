@@ -17,15 +17,15 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d9f9888d04f4e2419de9d4a6857a81ae40f6f21a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 08a8f937f63b93ad15e489dbc53468af6e3827b4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a><span data-ttu-id="9e513-103"> Vytvoření, výpočet a zaúčtování výkazu pro maloobchod</span><span class="sxs-lookup"><span data-stu-id="9e513-103">Create, calculate, and post a statement for a retail store</span></span>
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="9e513-104">Tento postup vás provede manuálním postupem pro vytvoření, výpočet a zaúčtování výpisu pro obchod.</span><span class="sxs-lookup"><span data-stu-id="9e513-104">This procedure walks through the manual steps for creating, calculating, and posting a statement for a store.</span></span> <span data-ttu-id="9e513-105">Existují také dávkové úlohy, které lze konfigurovat pro stejné úkoly.</span><span class="sxs-lookup"><span data-stu-id="9e513-105">There are also batch jobs that can be configured for the same tasks.</span></span> <span data-ttu-id="9e513-106">Postup pro konfiguraci a spuštění dávkových úlohy můžete najít v jiných tématech.</span><span class="sxs-lookup"><span data-stu-id="9e513-106">The steps for configuring and running the batch jobs can be found in other topics.</span></span> <span data-ttu-id="9e513-107">Chcete-li provést tento postup, musíte mít transakce, které byly dokončeny v POS a potom převedeny do aplikace Dynamics AX.</span><span class="sxs-lookup"><span data-stu-id="9e513-107">To complete this procedure, you must have transactions that were completed in POS and then pulled into Dynamics AX.</span></span> <span data-ttu-id="9e513-108">Tento záznam používá v ukázkových datech společnost USRT.</span><span class="sxs-lookup"><span data-stu-id="9e513-108">This recording uses the USRT company in demo data.</span></span> <span data-ttu-id="9e513-109">Tento postup může odkazovat na Microsoft Dynamics AX.</span><span class="sxs-lookup"><span data-stu-id="9e513-109">This procedure may refer to Microsoft Dynamics AX.</span></span> <span data-ttu-id="9e513-110">Všimněte si, Dynamics AX se nyní nazývá Microsoft Dynamics 365 for Operations.</span><span class="sxs-lookup"><span data-stu-id="9e513-110">Please note that Dynamics AX is now called Microsoft Dynamics 365 for Operations.</span></span>
 

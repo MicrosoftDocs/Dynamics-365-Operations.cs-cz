@@ -17,15 +17,15 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e70c7f77ad0bb159f4cc037de895a83928c693c5
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: dc315a53e420049689828cce375630a1adf5d843
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-an-original-budget-and-reverse-preliminary-budget-entries-in-the-public-sector"></a><span data-ttu-id="7cf72-103">Vytvoření původního rozpočtu a stornování předběžných položek rozpočtu ve veřejném sektoru</span><span class="sxs-lookup"><span data-stu-id="7cf72-103">Create an original budget and reverse preliminary budget entries in the public sector</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7cf72-104">Pokud vytvoříte původní položku rozpočtu a použijete hodnoty rozpočtových modelů a dimenzí, které obsahují předběžné částky rozpočtu, předběžné částky rozpočtu lze stornovat.</span><span class="sxs-lookup"><span data-stu-id="7cf72-104">When you create an original budget entry and use the budget model and dimension values that contain preliminary budget amounts, the preliminary budget amounts can be reversed.</span></span> <span data-ttu-id="7cf72-105">Tato procedura byla vytvořena pomocí ukázkových dat společnosti PSUS v oddílu veřejného sektoru.</span><span class="sxs-lookup"><span data-stu-id="7cf72-105">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
 

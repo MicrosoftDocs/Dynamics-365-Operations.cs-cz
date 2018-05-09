@@ -18,16 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 68c52b5f01b917c522bb0c47c38c5ba6bc619b82
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e863eb39a80d1e0bc3ba60a42e364241c1880d6d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vat-statement-for-the-czech-republic"></a><span data-ttu-id="18973-103">Výkaz DPH pro Českou republiku</span><span class="sxs-lookup"><span data-stu-id="18973-103">VAT statement for the Czech Republic</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="18973-104">Nastavení a generování výkazu DPH pro uživatele v rolích právnických osob na území České republiky.</span><span class="sxs-lookup"><span data-stu-id="18973-104">Set up and generate the VAT statement for users in legal entities located in the Czech Republic.</span></span>
 

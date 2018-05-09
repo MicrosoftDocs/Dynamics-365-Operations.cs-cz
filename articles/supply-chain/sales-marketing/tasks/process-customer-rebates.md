@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8278a57271314104c36b074c7a7ee422751f2c19
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5c2235fd8a1d495f0321a84fd63b98f699da34de
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="generate-and-process-customer-rebates"></a><span data-ttu-id="39d9e-103">Generování a zpracování rabatů odběratelů</span><span class="sxs-lookup"><span data-stu-id="39d9e-103">Generate and process customer rebates</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="39d9e-104">Tento postup ukazuje zpracování rabatů odběratele z generování nároku až do okamžiku jejich předání do pohledávek jako časově rozlišených položek.</span><span class="sxs-lookup"><span data-stu-id="39d9e-104">This procedure demonstrates how to process customer rebates from claim generation to the point of passing them as accruals to Accounts receivable.</span></span> <span data-ttu-id="39d9e-105">Provede vás konkrétním příkladem a vysvětlí vliv různých podmínek na řádcích rabatu na konečné částky, které budou připsány odběrateli.</span><span class="sxs-lookup"><span data-stu-id="39d9e-105">It walks you through a specific example to explain how the various conditions on the rebate lines affect the final amounts that will be credited to the customer.</span></span> <span data-ttu-id="39d9e-106">Před spuštěním průvodce je třeba použít ukázková data společnosti USMF a provést následující úkoly: (1) Na stránce Parametry pohledávek rozbalte kartu Ceny a potom kartu Podrobnosti o ceně a zkontrolujte, že je možnost Povolit podrobnosti o ceně nastavena na hodnotu Ano.</span><span class="sxs-lookup"><span data-stu-id="39d9e-106">You need to use the USMF demo data company, and carry out the following tasks before you start the guide: (1) Go to the Accounts receivable parameters page, and expand the Prices tab and then the Price details tab, and check that the Enable price details option is set to Yes.</span></span> <span data-ttu-id="39d9e-107">(2) Na stránce Smlouvy o rabatu vyberte smlouvu o rabatu odběratele: USMF-000001.</span><span class="sxs-lookup"><span data-stu-id="39d9e-107">(2) Go to the Rebate agreements page and select the customer rebate agreement: USMF-000001.</span></span> <span data-ttu-id="39d9e-108">Pokud pole Stav schválení workflowu není nastaveno na Schváleno, proveďte schválení kliknutím na Ověření v podokně akcí.</span><span class="sxs-lookup"><span data-stu-id="39d9e-108">If the Workflow approval status field is not set to Approved, you need click Validation on the Action pane to approve it.</span></span>
 

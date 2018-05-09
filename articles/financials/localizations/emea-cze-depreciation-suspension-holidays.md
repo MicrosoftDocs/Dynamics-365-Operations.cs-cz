@@ -18,16 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 93c9ba5827204c204412d0cd966c60bf0c66f874
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9883a56f2b063863f2451a367b1fdbb81091b16f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="depreciation-suspension-holidays"></a><span data-ttu-id="cd781-103">Přerušení odpisování (svátky)</span><span class="sxs-lookup"><span data-stu-id="cd781-103">Depreciation suspension (holidays)</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="cd781-104">Toto téma obsahuje informace o přerušení nebo odložení odpisů pro Českou republiku.</span><span class="sxs-lookup"><span data-stu-id="cd781-104">This topic provides information about the suspension, or postponement, of depreciation for the Czech Republic.</span></span>
 

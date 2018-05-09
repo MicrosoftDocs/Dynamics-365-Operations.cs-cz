@@ -20,17 +20,17 @@ ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 40bcde0a43386cfd9e55d96e4a1cbc82b47e8494
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9846f66997090de0219f59b4ba33efa15694ce8d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a><span data-ttu-id="2acd5-103">Postup přípravy na správu standardních nákladů pro vyráběné položky</span><span class="sxs-lookup"><span data-stu-id="2acd5-103">Prepare to maintain standard costs for manufactured items</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="2acd5-104">Toto téma popisuje kroky pro přípravu správy nákladů pro vyráběné položky.</span><span class="sxs-lookup"><span data-stu-id="2acd5-104">This topic describes the steps for preparing to maintain costs for manufactured items.</span></span> <span data-ttu-id="2acd5-105">Kroky pro vyrobené položky se mírně liší od kroků pro zakoupené položky.</span><span class="sxs-lookup"><span data-stu-id="2acd5-105">The steps for manufactured items differ slightly from the steps for purchased items.</span></span>
 

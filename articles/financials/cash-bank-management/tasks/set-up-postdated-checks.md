@@ -16,15 +16,15 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 47686504b8fd35898951e2d1e8db5e37110bbe65
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 084b935355625b165aeb09e2cf19df9662982b65
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-postdated-checks"></a><span data-ttu-id="a5e13-103">Nastavení postdatovaných šeků</span><span class="sxs-lookup"><span data-stu-id="a5e13-103">Set up postdated checks</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a5e13-104">Toto téma vysvětluje, jak určit, zda se mají zaúčtovat položky deníku pro postdatované šeky a které účetní deníky se mají použít pro vymazání položek a plateb dodavatele.</span><span class="sxs-lookup"><span data-stu-id="a5e13-104">This topic explains how to specify whether to post journal entries for postdated checks and which posting journals to use for clearing entries and vendor payments.</span></span> <span data-ttu-id="a5e13-105">Můžete také určit clearingové účty pro vydané šeky, přijaté šeky a srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="a5e13-105">You can also specify clearing accounts for issued checks, received checks, and withholding tax.</span></span> <span data-ttu-id="a5e13-106">Postdatované šeky jsou vydány za účelem provedení a přijetí platby v budoucí datu.</span><span class="sxs-lookup"><span data-stu-id="a5e13-106">Postdated checks that are issued to make and receive payments on a future date.</span></span> <span data-ttu-id="a5e13-107">Můžete zadat, zda se má šek odrazit ve vašich účetních knihách před datem splatnosti.</span><span class="sxs-lookup"><span data-stu-id="a5e13-107">You can specify whether the check must be reflected in the accounting books before its maturity date.</span></span>
 

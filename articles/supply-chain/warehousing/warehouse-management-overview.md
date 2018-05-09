@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d090a668988aeaeb8f1b779bc565d03a506a8f15
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a569d9264097d7a0b742bc7bf47c2504c58cdb4e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="warehouse-management"></a><span data-ttu-id="60c80-103">Řízení skladu</span><span class="sxs-lookup"><span data-stu-id="60c80-103">Warehouse management</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="60c80-104">Modul Řízení skladu pro aplikaci Dynamics 365 for Finance and Operations umožňuje správu skladových procesů ve výrobních, distribučních a maloobchodních společnostech.</span><span class="sxs-lookup"><span data-stu-id="60c80-104">The Warehouse management module for Dynamics 365 for Finance and Operations lets you manage warehouse processes in manufacturing, distribution, and retail companies.</span></span> <span data-ttu-id="60c80-105">Tento modul má celou řadu funkcí pro podporu skladového areálu na optimální úrovni v jakémkoliv čase.</span><span class="sxs-lookup"><span data-stu-id="60c80-105">This module has a wide range of features to support the warehouse facility at an optimal level, at any time.</span></span> <span data-ttu-id="60c80-106">Řízení skladu je plně integrováno s ostatními obchodními procesy v aplikaci Finance and Operation, jako je například přeprava, výroba, řízení kvality, nákup, převod, prodej a vrácení.</span><span class="sxs-lookup"><span data-stu-id="60c80-106">Warehouse management is fully integrated with other business processes in Finance and Operations such as transportation, manufacturing, quality control, purchase, transfer, sales, and returns.</span></span>
 

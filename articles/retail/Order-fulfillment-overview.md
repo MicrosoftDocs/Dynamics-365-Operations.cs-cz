@@ -18,16 +18,16 @@ ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5ab58a7e977b5a23825c60a53c8064c831bae512
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 76bdea6e3a90c5984b882dd86b4716647438b91c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="store-order-fulfillment"></a><span data-ttu-id="6cf68-103">Plnění objednávek obchodu</span><span class="sxs-lookup"><span data-stu-id="6cf68-103">Store order fulfillment</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="6cf68-104">Mnoho maloobchodních prodejců by chtělo optimalizovat plnění objednávky tak, že povolí plnění objednávky obchodům.</span><span class="sxs-lookup"><span data-stu-id="6cf68-104">Many retailers would like to optimize order fulfillment by enabling stores to fill orders.</span></span> <span data-ttu-id="6cf68-105">Plnění objednávek na úrovni obchodu může pomoci zmírnit scénáře přeplnění pro konkrétní obchod, nebo může být zapotřebí z logistického hlediska v případech, kdy má obchod dodatečnou kapacitu nebo je umístěn v těsnější vzdálenosti od zákazníka.</span><span class="sxs-lookup"><span data-stu-id="6cf68-105">Order fulfillment at the store level can help to ease overstock scenarios for a specific store, or may be needed from a logistical standpoint in cases where a store has extra capacity or is located within closer shipping distance to the customer.</span></span> <span data-ttu-id="6cf68-106">Aby se vyhovělo této potřebě, je na pokladním místě k dispozici sjednocená operace plnění objednávky.</span><span class="sxs-lookup"><span data-stu-id="6cf68-106">To address this need, a unified order fulfillment operation is available at the point of sale.</span></span>
 

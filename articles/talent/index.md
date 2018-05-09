@@ -18,16 +18,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b0694d74eb5502ac7f1632b4015f78b2341a77e1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 749cbbf53e67798e1a8cfcda645c029cf05de7ce
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="welcome-to-microsoft-dynamics-365-for-talent"></a><span data-ttu-id="d2d6a-104">Vítá vás aplikace Microsoft Dynamics 365 for Talent</span><span class="sxs-lookup"><span data-stu-id="d2d6a-104">Welcome to Microsoft Dynamics 365 for Talent</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="d2d6a-105">Aplikace Microsoft Dynamics 365 for Talent zjednodušuje mnoho rutinních administrativních úkolů a automatizuje řadu procesů souvisejících s pracovníky ve vaší organizaci.</span><span class="sxs-lookup"><span data-stu-id="d2d6a-105">Microsoft Dynamics 365 for Talent streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization.</span></span> <span data-ttu-id="d2d6a-106">Mezi tyto procesy spadá udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn.</span><span class="sxs-lookup"><span data-stu-id="d2d6a-106">These processes include employee retention, benefits administration, training, performance reviews, and change management.</span></span> <span data-ttu-id="d2d6a-107">Nabízí také systém, ve kterém mohou pracovníci oddělení lidských zdrojů spravovat různé oblasti dohledu.</span><span class="sxs-lookup"><span data-stu-id="d2d6a-107">It also provides a framework for human resources staff to manage areas of oversight.</span></span>
 

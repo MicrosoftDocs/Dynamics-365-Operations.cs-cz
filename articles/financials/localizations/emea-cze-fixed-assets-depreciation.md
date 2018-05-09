@@ -18,16 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 245adacd4ccb5cb7b635b9f276fc9831b3de742e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1867a67cb2a92fb71d078a969c46c214e1af2ed3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="fixed-assets-depreciation-methods-for-the-czech-republic"></a><span data-ttu-id="2b377-103">Metody odpisu dlouhodobého majetku pro Českou republiku</span><span class="sxs-lookup"><span data-stu-id="2b377-103">Fixed assets depreciation methods for the Czech Republic</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="2b377-104">Toto téma obsahuje informace o odpisech dlouhodobého majetku pro právnické osoby v České republice.</span><span class="sxs-lookup"><span data-stu-id="2b377-104">This topic provides information about fixed assets depreciation for legal entities in the Czech Republic.</span></span> 
 

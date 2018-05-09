@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 533d592191ba639c9345d23f4daf5bafb6db2766
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0f2c4b8144bf6ad8001aebf816ced9a49f18d2fb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="configure-access-rights-for-a-cost-object-controller"></a><span data-ttu-id="80e1b-103">Konfigurace přístupových práv pro kontrolora objektu nákladů</span><span class="sxs-lookup"><span data-stu-id="80e1b-103">Configure access rights for a cost object controller</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="80e1b-104">Pomocí tohoto postupu proveďte konfiguraci přístupových práv pro kontroloru objektu nákladů.</span><span class="sxs-lookup"><span data-stu-id="80e1b-104">Use this procedure to configure access rights for a cost object controller.</span></span> <span data-ttu-id="80e1b-105">Tento záznam používá v ukázkových datech společnost USP2.</span><span class="sxs-lookup"><span data-stu-id="80e1b-105">This recording uses the USP2 demo data company.</span></span>
 

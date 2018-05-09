@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 165d12efe1e3caf436a7573936e94203bad88330
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e6eddaf80d7b508a2d477bdd731b2b19cb02acd5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-cost-rollup-policy"></a><span data-ttu-id="b3645-103">Vytvoření zásad shrnutí nákladů</span><span class="sxs-lookup"><span data-stu-id="b3645-103">Create a cost rollup policy</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b3645-104">Tento postup popisuje způsob vytvoření zásad shrnutí nákladů a vytváření pravidel zásad.</span><span class="sxs-lookup"><span data-stu-id="b3645-104">This procedure shows how to create a cost rollup policy and create rules for the policy.</span></span> <span data-ttu-id="b3645-105">Jako ukázková data pro tento postup slouží data USP2.</span><span class="sxs-lookup"><span data-stu-id="b3645-105">The demo data used to create this procedure is USP2.</span></span>
 

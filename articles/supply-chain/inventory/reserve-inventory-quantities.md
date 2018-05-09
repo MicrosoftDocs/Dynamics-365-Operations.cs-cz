@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c705f51e32cc03d201eb00b6a1aa8048e59ff59e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6f1cbf7604b6ea5622b7484b8ff9557ad0203caf
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="reserve-inventory-quantities"></a><span data-ttu-id="50653-103">Rezervace skladových množství</span><span class="sxs-lookup"><span data-stu-id="50653-103">Reserve inventory quantities</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="50653-104">V tomto tématu jsou popsány různé možnosti, které jsou k dispozici pro rezervaci zásob.</span><span class="sxs-lookup"><span data-stu-id="50653-104">This topic describes the different options that are available for reserving inventory.</span></span>
 

@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c41194f5d032b3ec59c079c91c83fcbe90f8b47d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 08fbaa1a65b31a0ae4f4669bbe34105dee17e557
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="sepa-direct-debit-overview"></a><span data-ttu-id="f0cda-107">přehled inkasa SEPA</span><span class="sxs-lookup"><span data-stu-id="f0cda-107">SEPA direct debit overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="f0cda-108">Jednotná oblast pro platby v eurech (SEPA) je definována Evropskou komisí a určuje, že všechny elektronické platby jsou považovány za domácí bez ohledu na zemi nebo oblast, kde se osoba, podnik, nebo organizace a banka nachází.</span><span class="sxs-lookup"><span data-stu-id="f0cda-108">The Single Euro Payments Area (SEPA) is set up by the European Commission, and dictates that all electronic payments are considered domestic, regardless of the country/region where the individual, business, or organization, and the bank are located.</span></span> <span data-ttu-id="f0cda-109">Neexistuje žádný rozdíl mezi národní a zahraniční platbou.</span><span class="sxs-lookup"><span data-stu-id="f0cda-109">There is no difference between national and cross-border payments.</span></span> <span data-ttu-id="f0cda-110">SEPA zahrnuje 28 členských států Evropské unie (EU) plus Island, Lichtenštejnsko, Norsko, Švýcarsko, Monako a San Marino.</span><span class="sxs-lookup"><span data-stu-id="f0cda-110">The SEPA includes the 28 European Union (EU) member states, as well as Iceland, Liechtenstein, Norway, Switzerland, Monaco and San Marino.</span></span> <span data-ttu-id="f0cda-111">SEPA umožňuje vytvořit jednotný trh pro platební transakce v Evropském hospodářském prostoru (EHP).</span><span class="sxs-lookup"><span data-stu-id="f0cda-111">The SEPA helps form a single market for payment transactions within the European Economic Area (EEA).</span></span> <span data-ttu-id="f0cda-112">Použitím SEPA se očekává snížit počet formátů plateb, se kterými banky, společnosti a jednotlivci musí pracovat.</span><span class="sxs-lookup"><span data-stu-id="f0cda-112">Ultimately, the SEPA is expected to reduce the number of payment formats that banks, businesses, and individuals must work with.</span></span>   
 

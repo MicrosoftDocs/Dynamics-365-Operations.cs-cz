@@ -19,16 +19,16 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1198da234b9e036e22c29da3c4ab5ec8e0a44431
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c4b53775c9c11a86fcd4fa0c57c6de9d458f93bb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="project-invoicing"></a><span data-ttu-id="076fc-104">Fakturování projektu</span><span class="sxs-lookup"><span data-stu-id="076fc-104">Project invoicing</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="076fc-105">V tomto článku najdete přehled fakturace projektu pro časové a materiálové projekty a projekty s pevnou cenou.</span><span class="sxs-lookup"><span data-stu-id="076fc-105">This article provides an overview of project invoicing for Time and material projects and Fixed-price projects.</span></span> <span data-ttu-id="076fc-106">Zahrnuje informace o návrzích faktur (předběžné faktury), řízení faktur, fakturování na účet, fakturaci dodavatele a dobropisech.</span><span class="sxs-lookup"><span data-stu-id="076fc-106">It includes information about invoice proposals (preliminary invoices), invoice control, on-account invoicing, vendor invoicing, and credit notes.</span></span>
 

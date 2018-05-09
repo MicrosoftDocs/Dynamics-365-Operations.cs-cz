@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 69b9c5590e6f9311696bbbed2e63a6eeba2a90bf
-ms.openlocfilehash: 3f527911183a6e9b335f30d472ff57144e6a5aff
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c376273f901f0c860aea92db587a1b156ab079b5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="requests-for-quotation-rfqs"></a><span data-ttu-id="b0bf5-104">Požadavky na nabídku</span><span class="sxs-lookup"><span data-stu-id="b0bf5-104">Requests for quotation (RFQs)</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="b0bf5-105">Toto téma obsahuje přehled požadavků na nabídku.</span><span class="sxs-lookup"><span data-stu-id="b0bf5-105">This topic provides an overview of requests for quotation (RFQs).</span></span> <span data-ttu-id="b0bf5-106">Organizace vygenerují požadavek na nabídku v případě, že chtějí získat konkurenční nabídky od několika dodavatelů, týkající se zboží nebo služeb, které musí nakoupit.</span><span class="sxs-lookup"><span data-stu-id="b0bf5-106">Organizations issue RFQs when they want to receive competitive offers from several vendors for the items or services that they must purchase.</span></span> <span data-ttu-id="b0bf5-107">V požadavku na nabídku požádejte dodavatele o zadání cen a dodacích lhůt pro zadané množství položek.</span><span class="sxs-lookup"><span data-stu-id="b0bf5-107">In an RFQ, you ask vendors to provide the prices and delivery times for the item quantities that you specify.</span></span>
 <span data-ttu-id="b0bf5-108">Lze také požádat dodavatele, aby určili, zda budou účtovány vedlejší náklady, například přepravní náklady nebo slevy pro velké objednávky či včasnou platbu za fakturu dodavatele.</span><span class="sxs-lookup"><span data-stu-id="b0bf5-108">You can also ask vendors to specify whether there are any incidental charges, such as shipping costs, or any discounts for large orders or early payment of the vendor invoice.</span></span>

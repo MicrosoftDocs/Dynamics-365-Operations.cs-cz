@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: ed88c4c592f9ceb244c7e6eab0f9450a50c5b861
-ms.openlocfilehash: af4db95c04cf6b9d3b74b3575d1ef2eca3aaac2d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 15e9981955fd2b8e1cedad3c70e4a4b6ab9b56bc
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/01/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="bom-calculations"></a><span data-ttu-id="b2585-104">Výpočty hodnoty BOM</span><span class="sxs-lookup"><span data-stu-id="b2585-104">BOM calculations</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="b2585-105">Shrnutí nákladů a výpočty prodejní ceny jsou označovány jako výpočty kusovníku a spouštějí se ze stránky Výpočty.</span><span class="sxs-lookup"><span data-stu-id="b2585-105">The cost roll-up and sales price calculations are known as bill of materials (BOM) calculations, and you initiate them from the Calculations page.</span></span> <span data-ttu-id="b2585-106">V tomto tématu jsou informace o výpočtech kusovníku.</span><span class="sxs-lookup"><span data-stu-id="b2585-106">This topic provides information about BOM calculations.</span></span>
 

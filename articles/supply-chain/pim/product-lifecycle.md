@@ -20,16 +20,16 @@ ms.author: conradv
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8625e9c9b91acee52e2207d462f38286cafeb773
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: bc5a560b25871e5b70cb436bd6dbcbf00d860f61
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="product-lifecycle-state"></a><span data-ttu-id="ba0b8-103">Stav životního cyklu produktu</span><span class="sxs-lookup"><span data-stu-id="ba0b8-103">Product lifecycle state</span></span> 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="ba0b8-104">Stav životního cyklu produktu dokumentuje životní cyklus uvolněného produktu nebo varianty produktu.</span><span class="sxs-lookup"><span data-stu-id="ba0b8-104">A product lifecycle state documents the lifecycle state of a released product or product variant.</span></span> <span data-ttu-id="ba0b8-105">Stavy životního cyklu produktu definuje uživatel, obvykle manažer produktu nebo manažer hlavních dat produktu.</span><span class="sxs-lookup"><span data-stu-id="ba0b8-105">Product lifecycle states are defined by the user, typically a product manager or a product master data manager.</span></span> <span data-ttu-id="ba0b8-106">Určité obchodní procesy, například hlavní plánování, mohou být ovlivněny konkrétním stavem životního cyklu.</span><span class="sxs-lookup"><span data-stu-id="ba0b8-106">Specific business processes, such as master planning, can be affected by a specific lifecycle state.</span></span>   
 

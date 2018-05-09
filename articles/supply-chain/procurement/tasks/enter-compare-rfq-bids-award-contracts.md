@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 140d9f7a48b6cb06f02d3c4e6440d0a99a9d8161
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 15c9f82bcbac23a7b1737f55676e58377272fc8c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a><span data-ttu-id="0ca99-103">Zadání a porovnání nabídek pro požadavek na nabídku a přidělení smlouvy</span><span class="sxs-lookup"><span data-stu-id="0ca99-103">Enter and compare RFQ bids and award contracts</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0ca99-104">Tento postup popisuje, jak zadat odpovědi na požadavek na nabídku, hodnocení a porovnání nabídek, a poté přijmout nabídku některého z dodavatelů.</span><span class="sxs-lookup"><span data-stu-id="0ca99-104">This procedure shows you how to enter replies to an RFQ, score and compare bids, and then award the bid to one of the vendors.</span></span> <span data-ttu-id="0ca99-105">Tento postup můžete projít v ukázkových datech společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="0ca99-105">You can use this procedure in demo data company USMF.</span></span> <span data-ttu-id="0ca99-106">Než začnete, musíte mít požadavek na nabídku se dvěma řádky, které byly odeslány nejméně dvěma dodavatelům.</span><span class="sxs-lookup"><span data-stu-id="0ca99-106">Before you start, you must have an RFQ with two lines that has been sent to at least two vendors.</span></span> <span data-ttu-id="0ca99-107">Pro vytvoření je nezbytným předpokladem vytvoření postupu "Vytvořit požadavek na nabídku".</span><span class="sxs-lookup"><span data-stu-id="0ca99-107">You can run the "Create a request for quotation" procedure as a prerequisite to create this.</span></span> <span data-ttu-id="0ca99-108">Je nutné nastavit kritéria hodnocení před spuštěním tohoto procesu.</span><span class="sxs-lookup"><span data-stu-id="0ca99-108">You need to have set up scoring criteria before you can run this procedure.</span></span>
 

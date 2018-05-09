@@ -17,15 +17,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0e2e99bc1132f50bca4e6c21abccdc685658a178
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0a241ba056051eccb168b5aa9bfd437b519b2bd9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-production-flow-version"></a><span data-ttu-id="09d13-103">Vytvoření verze výrobního toku</span><span class="sxs-lookup"><span data-stu-id="09d13-103">Create a production flow version</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="09d13-104">Tento postup se zaměřuje na vytvoření nové verze výrobního toku.</span><span class="sxs-lookup"><span data-stu-id="09d13-104">This procedure focuses on creating a new production flow version.</span></span> <span data-ttu-id="09d13-105">Pro tuto proceduru musí být definovány výrobní parametry pro Lean manufacturing a jednotky měření pro čas třídy.</span><span class="sxs-lookup"><span data-stu-id="09d13-105">For this procedure, the production parameters for lean manufacturing and the units of measurement for class time must be defined.</span></span> <span data-ttu-id="09d13-106">Je třeba také definovat hodnotový proud a skupinu výroby.</span><span class="sxs-lookup"><span data-stu-id="09d13-106">You also need to define a value stream and a production group.</span></span> <span data-ttu-id="09d13-107">Další informace o výrobních tocích a aktivitách v lean manufacturingu naleznete v dokumentech white paper pro Lean manufacturing aplikace Microsoft Dynamics AX.</span><span class="sxs-lookup"><span data-stu-id="09d13-107">To learn more about production flows and activities in lean manufacturing, see the white papers on Lean manufacturing for Microsoft Dynamics AX.</span></span> <span data-ttu-id="09d13-108">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="09d13-108">The demo data company used to create this procedure is USMF.</span></span>
 

@@ -20,18 +20,18 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1f6a0922ebd0d2436715f0d1a1cc5d99876427f1
-ms.openlocfilehash: 5d8a5d080ba4d682e19dfb6a87924663eefe6257
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: acf58d1d203aefbb9f39a387ea1529b43be826c6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/25/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="product-information-overview"></a><span data-ttu-id="db685-104">Přehled informací o produktech</span><span class="sxs-lookup"><span data-stu-id="db685-104">Product information overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="db685-105">Toto téma poskytuje informace o správě informací o produktu.</span><span class="sxs-lookup"><span data-stu-id="db685-105">This topic provides information about product information management.</span></span> <span data-ttu-id="db685-106">Řízení informací o produktech funguje s definicí sdíleného produktu, kategorizací a identifikátory napříč všemi právnickými osobami a také s určitými konfiguracemi produktů pro obchodní procesy.</span><span class="sxs-lookup"><span data-stu-id="db685-106">Product information management works with a shared product definition, categorization, and identifiers across all legal entities, and also specific configurations of a product, to fit into the business processes.</span></span> 
 

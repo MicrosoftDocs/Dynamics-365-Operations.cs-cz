@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1b49dd7f4cfa0da68337554f21008bd41f9bdda1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a1992aa8e570db294c128313209250e3cf237df6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="generate-electronic-documents-and-update-application-data-using-the-electronic-reporting-tool"></a><span data-ttu-id="29170-104">Generování elektronických dokumentů a aktualizace dat aplikace pomocí nástroje elektronického výkaznictví</span><span class="sxs-lookup"><span data-stu-id="29170-104">Generate electronic documents and update application data using the Electronic reporting tool</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="29170-105">Můžete vytvářet formáty elektronického výkaznictví (ER), které lze použít v aplikaci Finance and Operations ke generování odchozích elektronických dokumentů.</span><span class="sxs-lookup"><span data-stu-id="29170-105">You can design Electronic reporting (ER) formats that can be used in the Finance and Operations application to generate outgoing electronic documents.</span></span> <span data-ttu-id="29170-106">Můžete vytvořit také formáty ER, které analyzují příchozí elektronické dokumenty, a použít jejich obsah k aktualizaci dat aplikace.</span><span class="sxs-lookup"><span data-stu-id="29170-106">You can also design ER formats that parse incoming electronic documents and use the content in those documents to update application data.</span></span> 
 
