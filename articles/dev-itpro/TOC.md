@@ -10,7 +10,12 @@
 ## [Získání zkušební kopie](dev-tools/get-evaluation-copy.md)
 ## [Registrace předplatného](dev-tools/sign-up-preview-subscription.md)
 ## [Nasazení a přístup k vývojovému prostředí](dev-tools/access-instances.md)
-## [Systémové požadavky na vývoj](dev-tools/development-system-requirements.md)
+### [Konfigurace virtuálního počítače vývojáře](dev-tools/configure-developer-vm.md)
+### [Vytvoření nového uživatele na vývojovém počítači](dev-tools/enable-development-machine.md)
+### [Časté dotazy k vývoji a vytváření virtuálních počítačů, které nepovolují přístup správce](sysadmin/VMs-no-admin-access.md)
+### [Přejmenování místního prostředí pro povolení přístupu ke službám Visual Studio Team Services](migration-upgrade/vso-machine-renaming.md)
+### [Systémové požadavky na vývoj](dev-tools/development-system-requirements.md)
+## [Řízení verze, vyhledávání metadat a navigace](dev-tools/version-control-metadata-navigation.md)
 ## Vzorová aplikace vozového parku
 ### [Vzorová aplikace vozového parku](dev-tools/fleet-management-sample.md)
 ### [Přehled vzorové aplikace vozového parku](dev-tools/introduction-fleet-management-sample.md)
@@ -22,7 +27,8 @@
 ### [Sestavení operací](dev-tools/build-operations.md)
 ### [Editor kódu](dev-tools/code-editor.md)
 ### [Vytvoření modelu a prvků datového modelu](dev-tools/create-data-model-elements.md)
-### [Vytvoření nového uživatele na vývojovém počítači](dev-tools/enable-development-machine.md)
+#### [Pokyny k názvům](extensibility/NamingGuidelines.md)
+#### [Vypnutí přizpůsobení modelu a neschválení funkce](dev-tools/lock-models.md)
 ### [Sestava analýz úprav](dev-tools/customization-analysis-report.md)
 ### [Návrháři prvků](dev-tools/element-designers.md)
 ### [Použití prvků](dev-tools/element-usage.md)
@@ -31,7 +37,6 @@
 ### [Modely](dev-tools/models.md)
 ### [Projekty v aplikaci Dynamics 365 for Finance and Operations](dev-tools/projects.md)
 ### [Doplňky nástrojů pro Visual Studio](dev-tools/developer-tools-add-ins.md)
-### [Vypnutí přizpůsobení modelu a neschválení funkce](dev-tools/lock-models.md)
 ### [Aktualizovat vývojové nástroje aplikace Visual Studio](dev-tools/update-development-tools.md)
 ## Programovací jazyk X++
 ### [X++ a funkce ladicího programu ](dev-tools/new-x-debugger-features.md)
@@ -104,7 +109,7 @@
 #### [Třídy W](dev-ref/w-classes.md)
 #### [Třídy X](dev-ref/x-classes.md)
 
-## [Domovská stránka pro rozšiřitelnost](extensibility/extensibility-home-page.md)
+## [Rozšiřitelnost](extensibility/extensibility-home-page.md)
 ### Úvod a informace, jak začít
 #### [Plány rozšíření aplikací](extensibility/extensibility-roadmap.md)
 #### [Požadavky na rozšiřitelnost](extensibility/extensibility-requests.md) 
@@ -261,9 +266,9 @@
 ### [Vytváření dokumentace nebo školení pomocí záznamníku úloh](user-interface/task-recorder-training-docs.md)
 
 # [Mobilní platforma](mobile-apps/platform/mobile-platform-home-page.md)
-## Začínáme
-### [Začínáme](mobile-apps/platform/mobile-platform-getting-started.md)
+## [Začínáme](mobile-apps/platform/mobile-platform-getting-started.md)
 ### [Architektura](mobile-apps/platform/mobile-platform-architecture.md)
+### [Přehled událostí obchodní logiky](mobile-apps/platform/business-logic-events-overview.md)
 ### [Pokyny k navrhování stránek](mobile-apps/platform/page-design-guidelines.md)
 ### [Pokyny k navrhování akcí](mobile-apps/platform/action-design-guidelines.md)
 ### [Požadavky k navrhování formulářů](mobile-apps/platform/form-design-requirements.md)
@@ -409,7 +414,7 @@
 ### [Šablony dat konfigurací](data-entities/configuration-data-templates.md)
 ### [Šablony dat s více listy](data-entities/excel-template-multiple.md)
 ### [Sledování změn entity](data-entities/entity-change-track.md)
-
+### [Konfigurační klíče a datové entity](data-entities/config-key-entities.md)
 ### [Hledání informací o standardních datových entitách](data-entities/data-entities-report.md)
 
 
@@ -418,6 +423,7 @@
 ### [Osvědčené postupy pro import dokladů pomocí entity hlavního deníku](data-entities/tips-tricks-import-general-journal-entity.md)
 
 ## Vývoj pro datové entity
+### [Návrh principů a osvědčených postupů pro datové entity](dev-tools/design-best-practices.md)
 ### [Vytváření nových datových entit](data-entities/build-consuming-data-entities.md)
 ### [Vlastnosti datových entit](data-entities/behavioral-properties-data-entities.md)
 ### [Vytváření výpočtu sloupců a virtuálních polí](data-entities/data-entity-computed-columns-virtual-fields.md)
@@ -428,6 +434,9 @@
 ### [Vlastnosti metadat](data-entities/behavioral-properties-data-entities.md)
 ### [Ověření, výchozí hodnoty a nemapovaná pole](data-entities/validations-defaults-unmapped-fields.md)
 ### [Zabezpečení a datové entity](data-entities/security-data-entities.md)
+### [Vytvoření entity pouze ke čtení, která zveřejňuje pouze finanční dimenze​](financial/read-only-entity-financial.md)
+ 
+
 
 ## [Použití vlastní databáze](analytics/export-entities-to-your-own-database.md)
 
@@ -435,7 +444,7 @@
 ## [Automatizace datové úlohy](data-entities/data-task-automation.md)
 
 ## [Zdroje pro odpověď na požadavek na data GDPR](gdpr/gdpr-home-page.md)
-### [Průvodce GDPR pro Microsoft Dynamics 365 for Finance and Operations](gdpr/gdpr-auditing-sensitive-data.md)
+### [Průvodce GDPR pro Microsoft Dynamics 365 for Finance and Operations](gdpr/gdpr-guide.md)
 ### [Klasifikace majetku](gdpr/gdpr-asset-classification-values.md)
 ### [Použití sestavy vyhledávání osob](gdpr/gdpr-person-search-report.md)
 ### [Rozšíření sestavy vyhledávání osob](gdpr/gdpr-extend-person-search-report.md)
@@ -443,9 +452,10 @@
 ### [Odpověď na požadavek personálních dat pomocí aplikace Talent](gdpr/respond-dsr-request-talent.md)
 ### [Odpověď na požadavek personálních dat pomocí aplikace Microsoft Dynamics AX 2012](gdpr/gdpr-ax2012.md)
 
+## [Pracovní prostor ověření dat](user-interface/data-validation-workspace.md)
 
-# [Domovská stránka o průběžném doručování](dev-tools/continuous-delivery-home-page.md)
-## [Často kladené dotazy k vývoji a průběžnému doručování](dev-tools/continuous-delivery-faq.md)
+# [Průběžné doručování](dev-tools/continuous-delivery-home-page.md)
+## [Časté otázky k vývoji a průběžnému doručování](dev-tools/continuous-delivery-faq.md)
 ## [Vyloučení testovacích balíčků z výstupu sestavení](dev-tools/exclude-test-packages.md)
 ## [Správa modelů třetích stran a balíčků runtime pomocí správy zdrojového kódu](dev-tools/manage-runtime-packages.md)
 ## [Modely verze v automatizovaném sestavení](dev-tools/version-models-build.md)
@@ -487,6 +497,7 @@
 ## [Metody parm ovládacího prvku segmentovaného zadávání](financial/segmented-entry-control-parm-method-specification.md)
 ## [Přidání schopnosti vyhledávání hodnoty pro finanční dimenze v šablonách aplikace Microsoft Excel](financial/add-dimensions-excel-templates.md)
 ## [Vytvoření poskytovatelů směnných kurzů](financial/create-exchange-rate-providers.md)
+## [Vytvoření poskytovatele směnných kurzů v aplikaci Microsoft Dynamics Finance and Operations, verze 8.0](financial/create-exchange-rate-8.md)
 
 # Vývoj dodavatelsko-odběratelského řetězce
 ## [Průvodce Ganttovým vývojem](user-interface/gantt-development-guide.md)
@@ -578,8 +589,7 @@
 ### [Zastaralé funkce](migration-upgrade/deprecated-features.md)
 
 # [Správa systému](sysadmin/system-administration-home-page.md)
-## [Časté dotazy k měsíčním aktualizacím platformy](sysadmin/faq-platform-monthly-updates.md)
-## [Časté dotazy k virtuálním počítačům, které nepovolují přístup správce](sysadmin/VMs-no-admin-access.md)
+## [Často kladené dotazy k měsíčním aktualizacím platformy](sysadmin/faq-platform-monthly-updates.md)
 ## [Přidání odkazů na právní podmínky a zásady ochrany osobních údajů ve vaší organizaci](sysadmin/legal-terms-privacy-statement.md)
 ## [Licenční kódy a sestavy konfiguračních klíčů](sysadmin/license-codes-configuration-keys-report.md)
 ## [Sdílení dat mezi společnostmi](sysadmin/cross-company-data-sharing.md)

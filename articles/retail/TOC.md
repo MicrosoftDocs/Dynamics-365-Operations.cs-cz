@@ -24,6 +24,7 @@
 # DPH
 ## [Přehled DPH](../financials/general-ledger/indirect-taxes-overview.md)
 ## [Metody výpočtu daně z prodeje v poli Zdroj](../financials/general-ledger/sales-tax-calculation-methods-origin-field.md)
+## #### [Přiřazení a přepsání DPH](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)
 ## [Možnosti výpočtu celé částky a intervalu pro kódy DPH](../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md)
 
 # Kontaktní středisko
@@ -165,10 +166,11 @@
 ## [ Konfigurace doporučení produktu využívajícího strojové učení](tasks/configure-machine-learning-product-recommendations.md)
 ## [ Vytvoření a přidružení zařízení](tasks/create-associate-device.md)
 ## [ Vytvoření a přidružení hardwarové stanice](tasks/create-associate-hardware-station.md)
-## [ Vytvoření a přidružení pokladen](tasks/create-associate-registers.md)
-## [ Vytvoření, výpočet a zaúčtování výkazu pro maloobchod](tasks/create-calculate-post-statement-retail-store.md)
-## [ Vytváření objednávek v kontaktním středisku](tasks/create-call-center-orders.md)
-## [ Vytvoření finančních dimenzí pro pokladny POS a konfigurace hodnot dimenzí na pokladnách](tasks/create-financial-dimensions-pos.md)
+## [Vytvoření a přidružení pokladen](tasks/create-associate-registers.md)
+## [Vytvoření, výpočet a zaúčtování výkazu pro maloobchod](tasks/create-calculate-post-statement-retail-store.md)
+## [Vylepšení zaúčtování výkazů](statement-posting-EOD.md)
+## [Vytváření objednávek v kontaktním středisku](tasks/create-call-center-orders.md)
+## [Vytvoření finančních dimenzí pro pokladny POS a konfigurace hodnot dimenzí na pokladnách](tasks/create-financial-dimensions-pos.md)
 ## [Vytváření finančních dimenzí pro sítě Retail a konfigurace hodnot dimenzí v obchodech](tasks/create-financial-dimensions-retail-channels.md)
 ## [ Vytváření online kanálů a definování atributů kanálu](tasks/create-online-channel-define-channel-attributes.md)
 ## [ Vytváření skupin oprávnění POS](tasks/create-pos-permission-groups.md)
@@ -289,7 +291,6 @@
 ### [Volání API POS nebo operace z rozšíření POS](dev-itpro/pos-api-extension.md)
 ### [Spouštěče Retail Modern POS a tisk](dev-itpro/pos-trigger-printing.md)
 ### [Přidání vlastních ovládacích prvků do zobrazení na základě návrháře bez obrazovky Retail Modern POS](dev-itpro/pos-control-non-screen.md)
-### [Generování Retail proxy pro POS a e-Commerce](dev-itpro/pos-generate-retail-proxy.md)
 ### [Konfigurační kroky pro vývojáře Retail pracující na vývojářských polích hostovaných na cloudu](dev-itpro/cloud-dev-box.md)
 
 ## Commerce runtime
