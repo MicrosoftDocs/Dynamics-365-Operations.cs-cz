@@ -3,7 +3,7 @@ title: "Domovská stránka správy dodavatelsko-odběratelského řetězce"
 description: "Tato stránka obsahuje seznam témat nápovědy a další zdroje pro funkce správy dodavatelsko-odběratelského řetězce v aplikaci Microsoft Dynamics 365 for Finance and Operations."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/15/2018
+ms.date: 05/09/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9e3551580cc03ebf62ec42283c5a9a885d8c8d8f
+ms.sourcegitcommit: 02cdf4615e2071f2b7de2e86b6f9e6637c6e5d8d
+ms.openlocfilehash: df35f70d8297aa2a832d143217542e3d558040ea
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
 # <a name="supply-chain-management-home-page"></a>Domovská stránka správy dodavatelsko-odběratelského řetězce
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Toto téma obsahuje seznam témat nápovědy a další zdroje pro funkce správy dodavatelsko-odběratelského řetězce v aplikaci Microsoft Dynamics 365 for Finance and Operations. 
 
@@ -47,10 +47,15 @@ Vyberte oblast funkce, o které chcete získat informace.
 - [Řízení informací o produktech](pim/product-information.md)
 - [Řízení výroby](production-control/production-process-overview.md)
 - [Prodej a marketing](sales-marketing/overview-sales-marketing.md)
+- [Řízení služeb](service-management/service-management-home-page.md)
 - [Správa přepravy](transportation/transportation-management-overview.md)
 - [Řízení skladu](warehousing/warehouse-configuration.md)
 
 ## <a name="videos"></a>Videa
+
+Tato krátká videa vám představí nové funkce, které přináší aplikace Microsoft Dynamics 365 for Finance and Operations, verze 8.0 (duben 2018).
+
+- [Synchronizace pracovního příkazu mezi službou Field Service a aplikací Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
 Tato krátká videa vám představí nové funkce, které přináší aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (prosinec 2017).
 
@@ -84,7 +89,7 @@ Tyto nahrávky z technické konference se zabývají funkcionalitou produktu v p
 
 **Řízení skladu** 
 
--  [Zpracování příchozích avíz expedice zboží v modulu Řízení skladu](https://mix.office.com/watch/wpf78tr7rjuh)  
+<!---  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)-->  
 -  [Co nejefektivnější využívání systému řízení skladu](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
 -  [Pokročilé řízení skladu ve verzi R3 – zpracování příchozích položek a minimální/maximální doplňování](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
 -  [Pokročilé řízení skladu ve verzi R3 – běžný pracovní den, zpracování odchozích položek a doplňování poptávky](https://youtu.be/Og0gLlVp7jA)
