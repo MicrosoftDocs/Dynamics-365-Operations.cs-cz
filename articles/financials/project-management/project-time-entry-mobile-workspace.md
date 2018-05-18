@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-time-entry-mobile-workspace"></a>Mobilní pracovní prostor zadání času projektu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma obsahuje informace o mobilním pracovním prostoru **Zadání času projektu**. Tento pracovní prostor uživatelům umožňuje zadat a uložit čas na projekt pomocí svých mobilních zařízení.
 

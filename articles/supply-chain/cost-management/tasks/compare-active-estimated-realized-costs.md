@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="compare-active-estimated-and-realized-costs-on-a-production-order"></a>Porovnání aktivních, odhadovaných a realizovaných nákladů u výrobní zakázky
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak zobrazit důvody pro vysoké výrobní odchylky pro výrobní zakázku. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup je určen pro kontrolora nákladů.
 

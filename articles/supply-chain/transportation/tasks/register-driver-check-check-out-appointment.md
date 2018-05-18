@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="register-driver-check-in-and-check-out-for-an-appointment"></a>Registrace přihlášení a odhlášení řidiče k události
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak zaregistrovat přihlášení a odhlášení řidiče. To provádí obvykle koordinátor přepravy. Tento postup můžete projít v ukázkových datech společnosti USMF. Než začnete, musí být pro zatížení nastavena událost. Chcete-li vytvořit událost, můžete spustit proceduru "Nastavení události pro zatížení" jako předpoklad.
 

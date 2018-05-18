@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="on-premises-deployment-home-page"></a>Domovská stránka místního nasazení
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Můžete nasadit Microsoft Dynamics 365 for Finance and Operations (on-premises). Když se rozhodnete pro typ místního nasazení, budou se požadavky na systém, rozměry hardwaru a funkce lišit od cloudového nasazení. Toto téma obsahuje odkazy na obsah s informacemi specifickými pro místní nasazení.
 

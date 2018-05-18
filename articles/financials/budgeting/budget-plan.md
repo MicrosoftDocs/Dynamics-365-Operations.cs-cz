@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning"></a>Plánování rozpočtu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Microsoft Dynamics 365 for Finance and Operations v oblasti Plánování rozpočtu. Tento seminář ukazuje příklad rychlé konfigurace modulu plánování rozpočtu a znázorňuje, jak lze provést plánování rozpočtu pomocí této konfigurace.  Tento seminář se zaměří na následujících obchodní procesy nebo úkoly -    - Vytvoření organizační hierarchie pro plánování rozpočtu a konfiguraci zabezpečení pro uživatele   - Definování scénářů plánu rozpočtu, sloupců plánu rozpočtu, rozvržení a šablon aplikace Excel   - Vytvoření a aktivace procesu plánování rozpočtu   - Vytvoření dokumentu plánu rozpočtu za použití skutečných hodnot z hlavní knihy   - Použití přidělení k úpravě dat dokumentu plánu rozpočtu   - Úprava dat dokumentu plánu rozpočtu v aplikaci Excel 
 

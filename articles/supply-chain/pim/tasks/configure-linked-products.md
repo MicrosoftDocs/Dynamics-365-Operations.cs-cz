@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-linked-products"></a>Konfigurace propojených produktů
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura vás provede konfigurací propojených produktů. Tato procedura používá ukázková data USRT a předpokládá se že výrobky již byly vytvořeny a uvolněny.
 

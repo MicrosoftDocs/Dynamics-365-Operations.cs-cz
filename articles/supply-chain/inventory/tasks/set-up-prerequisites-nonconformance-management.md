@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-prerequisites-for-management"></a>Nastavení požadavků pro správu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup použijte pro povolení procesů správy neshod. Neshoda popisuje postup nebo položku, která má potíže s kvalitou, a kde popisné informace zahrnují zdroj a typ problému. Tato procedura používá data ukázkové společnosti USMF. Tento postup obvykle provádí správce řízení kvality.
 

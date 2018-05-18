@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="vat-reconciliation-report"></a>Sestava odsouhlasení DPH
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura ukazuje, jak generovat sestavu odsouhlasení daně, která je k dispozici pro islandské a norské právnické osoby. Byla vytvořena za použití ukázkových dat společnosti DEMF s hodnotou země/oblasti právnické osoby aktualizovanou na Norsko.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="petty-cash-for-eastern-europe"></a>Pokladní hotovost pro východní Evropu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma uvádí informace o funkci pokladní hotovosti, která umožňuje uživatelům v Estonsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.
 

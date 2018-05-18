@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-in-a-purchase-order"></a>Nastavení položky nabídky na mobilním zařízení pro dokončení práce v nákupní objednávce
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje způsob nastavení položky nabídky Mobilní zařízení. V tomto příkladu slouží tato položka nabídky k provedení práce typu Nákupní objednávka. Platná práce je určena pracovní třídou, která je přiřazena k položce nabídky. Tohoto průvodce můžete použít s ukázkových dat společnosti USMF. Tento proces obvykle provádí správce skladu.
 

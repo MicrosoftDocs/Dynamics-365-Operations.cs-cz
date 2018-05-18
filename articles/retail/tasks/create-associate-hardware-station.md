@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-and-associate-a-hardware-station"></a> Vytvoření a přidružení hardwarové stanice
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Tato procedura vás provede postupem vytvoření nové hardwarové stanice. Bude vytvořený nový hardwarový profil a použije se pro přidání nových hardwarových stanic do předem definovaného obchodu (kanálu). Tato procedura používá v ukázkových datech společnost USRT.
 

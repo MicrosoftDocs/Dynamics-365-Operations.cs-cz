@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="develop-and-open-a-job-requisition"></a>Vytvoření a otevření požadavku na pozici
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Náborové projekty umožňují spravovat proces náboru. K jednotlivým náborovým projektům lze nastavit informace, jako například práci, na kterou probíhá nábor, název náborového pracovníka, stav projektu a oddělení, ve kterém se úloha bude nacházet. Po vytvoření náborového projektu můžete napsat inzerát na pozici projektu, publikovat inzerát na samoobslužných stránkách zaměstnanců, přiřadit přihlášky k zaměstnání pro projekt a sledovat aktivity pro daný projekt. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Pokud chcete zahájit postup, přejděte na Lidské zdroje > Nábor > Náborové projekty >Náborové projekty
 

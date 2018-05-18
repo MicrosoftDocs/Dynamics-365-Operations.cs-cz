@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="cash-flow-forecasting"></a>Prognóza cashflow
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Nástroje prognózy cashflow můžete používat k analýze nadcházejících měnových a cashflow požadavků, abyste mohli dobře odhadovat nastávající potřeby společnosti na hotovost. K získání prognózy cashflow je nutné dokončit následující kroky:
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="confirm-sales-orders"></a>Potvrzení prodejních objednávek
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup ukazuje postup potvrzení prodejních objednávek. Bude vám předvedeno, jak potvrdit jednu objednávku a více objednávek najednou. Tyto úkoly obvykle provádějí zpracovatelé prodejních objednávek. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Dříve než začnete, ověřte, že pro stejného odběratele existuje několik otevřených prodejních objednávek. V případě, že používáte data USMF, můžete použít odběratele US-027.
 

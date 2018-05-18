@@ -25,7 +25,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="cfo-overview-power-bi-content"></a>Obsah přehledu CFO v Power BI
 
-[!INCLUDE [banner](../includes/banner.md)] 
+[!include [banner](../includes/banner.md)] 
 
 Toto téma popisuje obsah **Přehled CFO** v Microsoft Power BI. Tento obsah Power BI platí pro ty, kteří používají aplikaci Microsoft Dynamics 365 for Finance and Operations, verze 7.2. Pokud používáte verzi 7.3 nebo pozdější, nahlédněte do tématu [Finanční přehledy](financial-insights.md).
 

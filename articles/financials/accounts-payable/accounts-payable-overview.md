@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configure-accounts-payable"></a>Konfigurace modulu Závazky
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek popisuje stránky, které slouží k nastavení základních a volitelných funkcí pro modul Závazky v aplikaci Microsoft Dynamics 365 for Finance and Operations. Dále popisuje postup nastavení, který musíte dokončit dříve, než začnete nastavovat modul Závazky.
 

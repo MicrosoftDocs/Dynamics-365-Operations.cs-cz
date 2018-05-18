@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="credit-note-on-cash-discount"></a>Dobropis u hotovostní slevy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma obsahuje informace, které pomohou právnickým osobám v rámci České republiky vytvořit, zaúčtovat a tisknout dobropisy pro hotovostní slevy, které jsou přiřazeny odběratelům.
 

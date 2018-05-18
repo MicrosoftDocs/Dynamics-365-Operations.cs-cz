@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocation-bases"></a>Základy přidělení 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Základ přidělení je základem, na kterém nákladové účetnictví přiděluje režijní náklady. Základem přidělení může být množství, jako například použité strojohodiny, spotřebované kilowatthodiny (kWh) nebo obsazená plocha. Základy přidělení se většinou používají k přiřazení režijních nákladů do produkovaných zásob. Například IT oddělení přiděluje své výdaje podle počtu počítačů používaných každým oddělením.
 

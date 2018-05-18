@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a>Vytvoření konsolidačních skupin a dalších konsolidačních účtů
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak vytvořit skupinu konsolidačních účtů a poté do skupiny přidat účty. Tato procedura používá data ukázkové společnosti USMF.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="arrival-overview"></a>Přehled doručení
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma obsahuje informace o funkci Přehled doručení. Stránka Přehled doručení je součástí této funkce a poskytuje přehled všech položek, které jsou očekávány jako příchozí položky.
 

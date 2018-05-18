@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="post-periodic-journals"></a>Účtování periodických deníků
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Periodické deníky se někdy nazývají opakované deníky, protože částka, text a ostatní informace se opakují při každém získání periodického deníku. Při vytváření periodického deníku zadáte interval pro opakování, například dny nebo měsíce. Tento průvodce úkolem vytvoří periodický deník s měsíčním opakováním.
 

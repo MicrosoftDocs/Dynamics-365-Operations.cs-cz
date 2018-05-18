@@ -29,7 +29,7 @@ ms.lasthandoff: 03/22/2018
 
 # <a name="shift-and-cash-drawer-management"></a>Řízení směny a zásuvky s hotovostí
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tento článek vysvětluje, jak nastavit a používat dva typy směn pro maloobchodní pokladní místo (POS) - sdílené a samostatné. Sdílené směny může používat více uživatelů na více místech, zatímco samostatné směny může využívat vždy pouze jeden pracovník najednou.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-cost-object-balance"></a>Zobrazení zůstatku objektu nákladů
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup je určen pro kontrolora nákladů.
 

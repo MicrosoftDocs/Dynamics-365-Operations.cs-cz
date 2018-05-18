@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-new-product"></a>Vytvořit nový produkt
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento úkol popisuje, jak vytvořit nový sdílený produkt. Obvykle jej má na starost návrhář produktu. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF.
 

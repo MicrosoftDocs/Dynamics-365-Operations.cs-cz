@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="specify-a-lading-address-for-an-intra-community-transaction"></a>Zadání adresy nakládky pro intrakomunitární transakci
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura ukazuje, jak zadat adresu nakládky pro interní obchodní transakci. Německá firma si například objedná zboží od dodavatele s firemní adresou v Německu. Tento dodavatel má sklad v Itálii a odtud dodává zboží. Tato dodávka musí být vykázána v Intrastatu. Stejné chování platí pro vrácené položky odběratele.
 Postup se vztahuje na všechny evropské země/oblasti. Úkol byl vytvořen za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Německu. Před dokončením této procedury je nutné nakonfigurovat výkaznictví Intrastat. Tento postup je určen pouze pro účetní. Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.

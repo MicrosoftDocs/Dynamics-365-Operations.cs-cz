@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-product-packages-for-purchase-orders"></a> Vytváření balení produktů pro nákupní objednávky
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Tato procedura vás provede vytvářením balíčku výrobku a jeho použití v nákupní objednávce. Nákupní objednávka se použije k vytvoření objednávky na předdefinování sady produktů. Tato procedura používá data ukázkové společnosti USRT.
 

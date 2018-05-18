@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="project-management-and-accounting"></a>Řízení a účetnictví projektů
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Funkci řízení projektu a účetnictví lze použít v několika odvětvích k poskytování služeb, výrobě produktů nebo dosažení výsledků.  
 

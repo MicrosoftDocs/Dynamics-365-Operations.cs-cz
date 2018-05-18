@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Jeden doklad se záznamy několika odběratelů nebo dodavatelů
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma poskytuje přehled o to, co se stane, když zaúčtujete jeden doklad s více záznamy odběratele nebo dodavatele. Tato funkce nebude podporována v budoucích verzích aplikace Microsoft Dynamics 365 for Finance and Operations, proto nedoporučujeme využívat tuto metodu účtování z důvodu dopadu účetnictví na zpracování vyrovnání. 
 

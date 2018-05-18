@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="start-a-production-order"></a>Spuštění výrobní zakázky
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup ukazuje, jak začít výrobní zakázku v dílenském řízení. V tomto procesu je uveden čas a spotřeba materiálu. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Jedná se o pátou proceduru ze sedmi, která vysvětluje životního cyklus výrobní zakázky.
 

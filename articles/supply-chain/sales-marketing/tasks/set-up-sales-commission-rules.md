@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="set-up-sales-commission-rules"></a>Nastavení pravidel prodejních provizí
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak nastavit a povolit výpočet prodejní provize a sledování. Procedura zobrazuje postup při vytvoření odběratelů a skupiny provize ze zboží a způsob propojení vybraného odběratele a produktu do odpovídajících skupin. Tyto skupiny jsou použity v nastavení pro výpočet provize k vytvoření kombinace odběratele, zboží a obchodního zástupce, které musí podle prodejní objednávky odpovídat, které opravňují prodejce získat provizi. Vytvoření odběratele a skupin provize ze zboží jsou volitelné, výpočet provize také lze vypočítat jednotlivým odběratelům nebo zboží. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.
 

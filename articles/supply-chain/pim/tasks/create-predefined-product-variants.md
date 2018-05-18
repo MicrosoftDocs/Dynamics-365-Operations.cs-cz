@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-predefined-product-variants"></a>Vytváření předdefinovaných variant produktů
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup vás provede vytvořením variant produktu pro základní produkt za pomoci kombinací dimenzí produktu. K vytvoření tohoto postupu je použita ukázková společnost USMF.
 

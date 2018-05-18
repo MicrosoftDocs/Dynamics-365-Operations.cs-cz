@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-wave-processing"></a>Konfigurace zpracování vlny
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento průvodce popisuje, jak nastavit kritéria určující práci, která vznikne pro sklad při zpracování vlny, a zda jsou vlny zpracovány ručně nebo automaticky. Podle potřeby určete kritéria nastavením šablon vlny a dotazů, které odpovídají vlně ve vydaných řádcích u prodejní objednávky, výrobní nebo kanbanové zakázce. Zpracování vlny se používá ve skladech, které používají funkce v modulu řízení skladu, nikoli ty, které používají funkce v modulu Řízení zásob. Tento postup můžete projít v ukázkových datech společnosti USMF.
 

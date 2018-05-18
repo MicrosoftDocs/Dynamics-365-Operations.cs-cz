@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order"></a>Vytvoření nákupní objednávky
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura popisuje způsob ručního vytváření nákupní objednávky. Nákupní objednávky jsou obvykle vytvářeny automaticky jako výsledek hlavního plánování, přímé dodávky a jiných procesů. Nákupní objednávky jsou obvykle vytvořeny agentem pro nákup. Zde uvedený příklad lze použít v rámci dat z ukázkové společnosti USMF při použití hodnot, které jsou doporučeny v rámci poznámek pro různé kroky.
 

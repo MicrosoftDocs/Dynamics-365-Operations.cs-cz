@@ -27,9 +27,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="purchase-order-approval-mobile-workspace"></a>Mobilní pracovní prostor schvalování nákupních objednávek
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Toto téma obsahuje informace o mobilním pracovním prostoru **Schválení nákupní objednávky**. Tento pracovní prostor vám umožní zobrazit nákupní objednávky a reagovat na ně pomocí akcí. Nákupní objednávky můžete například schválit nebo odmítnout.
  

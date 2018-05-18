@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="report-as-finished-to-a-plate-controlled-location"></a>Ohlášení jako dokončené pro skladové místo bez řízení na základě registračních značek  
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento průvodce úkolem obsahuje ukázku dokončeného hlášení do skladového místa, které není řízeno registrační značkou. Předpokladem pro tento úkol je příslušné pracovní pravidlo. Předchozí průvodce úlohou popisoval nastavení pracovních zásad. Tento průvodce úkolem vyžaduje aplikaci Dynamics AX 7.0.1 nebo novější.
 

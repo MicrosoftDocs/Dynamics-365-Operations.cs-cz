@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settlement-overview"></a>Přehled vyrovnání
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V tomto článku jsou obecné informace o procesu vyrovnání. Popisuje typy transakcí, které lze vyrovnat, kdy a jak lze transakce vyrovnat, a jaké jsou výsledky procesu vyrovnání.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-value-stream"></a>Vytvoření hodnotového proudu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Hodnotové proudy jsou provozní jednotky, které seskupují jednu nebo více výrobních toků. Chcete-li definovat výrobní tok, musíte nejprve nutné definovat hodnotový proud.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Nastavení automatického odsouhlasení dopravného
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura ukazuje, jak nastavit data pro automatické odsouhlasení dopravného. Obvykle to provádějí vedoucí skladu. Tento postup můžete projít v ukázkových datech společnosti USMF.
 

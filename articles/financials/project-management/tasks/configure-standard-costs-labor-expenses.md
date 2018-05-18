@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-standard-costs-for-labor-and-expenses"></a>Konfigurace standardních nákladů pro práci a výdaje
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup ukazuje způsob nastavení standardních nákladů na práci a výdaje na projekt. Tato úloha používá sadu dat USSI.
 

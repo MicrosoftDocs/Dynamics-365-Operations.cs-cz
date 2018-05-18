@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurace umístění ve skladu s povolenými procesy řízení skladu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento průvodce popisuje konfiguraci skladového místa pro nový sklad WMS (sklad, který používá procesy rozšířené správy skladu). Proces obvykle provádějí vedoucí skladu. Tohoto průvodce můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Předpokladem je, že máte nakonfigurován alespoň jeden site.
 

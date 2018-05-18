@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Nákladové kategorie, které se používají v modulu Řízení výroby a Řízení a účetnictví projektů
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Některé typy výrobní práce se mohou vztahovat na odhadovaný čas projektu a zprávy. Tento článek obsahuje informace o nákladových kategoriích, které je nutné definovat pro tyto typy výrobních prací pro účely výroby a projektů.
 

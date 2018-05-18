@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Identifikace a vyřešení konfliktů v dělení zodpovědnosti
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Můžete nastavit pravidla k oddělení úkolů, které musí být prováděny různými uživateli. Tento koncept se nazývá dělení zodpovědnosti. Pokud definice role zabezpečení nebo přiřazení role uživatele porušuje pravidla, konflikt je zaznamenán. Všechny konflikty musí vyřešit správce. Chcete-li zjistit a vyřešit konflikty, postupujte následujícím způsobem. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

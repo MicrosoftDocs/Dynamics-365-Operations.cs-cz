@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-ledger-account-alias"></a>Nastavení aliasu účtu hlavní knihy
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak vytvořit alias účtu, který poskytuje zástupce pro zadání čísla účtu. Tato procedura používá data ukázkové společnosti USMF.
 

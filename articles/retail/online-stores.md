@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="online-store-overview"></a>Přehled online obchodu
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tento článek obsahuje informace o online obchodech a jejich nastavení v aplikaci Microsoft Dynamics 365 for Retail.
 

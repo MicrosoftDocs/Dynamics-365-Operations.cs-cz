@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="requests-for-quotation-rfqs"></a>Požadavky na nabídku
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma obsahuje přehled požadavků na nabídku. Organizace vygenerují požadavek na nabídku v případě, že chtějí získat konkurenční nabídky od několika dodavatelů, týkající se zboží nebo služeb, které musí nakoupit. V požadavku na nabídku požádejte dodavatele o zadání cen a dodacích lhůt pro zadané množství položek.
 Lze také požádat dodavatele, aby určili, zda budou účtovány vedlejší náklady, například přepravní náklady nebo slevy pro velké objednávky či včasnou platbu za fakturu dodavatele.
@@ -57,8 +57,8 @@ Jakmile obdržíte nabídky e-mailem, můžete s nimi pracovat na stránce **Odp
 
 Pokud je druhá iterace odpovědi vyžadována od dodavatele, zvolte **Vrácení** na stránce **Odpověď na požadavek na nabídku**. Akce Vrácení vytvoří nový deník a sestavu, která bude vytištěna, archivována a odeslána podle nastavení tisku.
 
-[!NOTE]
-Název stránky **požadavek na nabídku** se změnil. V předchozích verzích aplikace Dynamics 365 for Finance and Operations měla tato stránka název **Požadavek na odpověď nabídky**.
+> [!NOTE]
+> Název stránky **požadavek na nabídku** se změnil. V předchozích verzích aplikace Dynamics 365 for Finance and Operations měla tato stránka název **Požadavek na odpověď nabídky**.
 
 Pokud jste přidali kritéria hodnocení do případu požadavku na nabídku, požadavek na nabídku bude mít panel hodnocení, kde můžete zadat výsledky. Celkové hodnocení se zobrazí na RFQ a při porovnání odpovědí na stránce **Porovnat odpovědi**. Na stránce **Porovnat odpovědi** můžete také porovnat jiná data odpovědi, například řádkovou cenu, datum dodání a celkovou cenu.
 
@@ -126,8 +126,8 @@ Pokud chcete použít kódy důvodu v nabídce a označit tak, proč nabídka by
 
 Vzhled vytištěných a uložených dokumentů požadavku na nabídku můžete nakonfigurovat na stránce **Nastavení formuláře** v modulu Zásobování a zdroje.
 
-[!NOTE]
-U konfigurace veřejného sektoru musíte použít procesu dodatku ke změně požadavku na nabídku, který již byl odeslána. Po odeslání požadavku na nabídku jsou pole uzamčena.
+> [!NOTE]
+> U konfigurace veřejného sektoru musíte použít procesu dodatku ke změně požadavku na nabídku, který již byl odeslána. Po odeslání požadavku na nabídku jsou pole uzamčena.
 Chcete-li tedy provést změny požadavku na nabídku, je nutné vybrat možnost **Vytvořit** pro zahájení procesu dodatku, jak bylo popsáno výše. Chování uzamčení je ovládáno možností **Zamknout požadavky na nabídku při odeslání** na stránce **Parametry modulu Zásobování a zdroje**. Ve výchozím nastavení je tento parametr nastaven na **Ano** a pro konfiguraci veřejného sektoru toto výchozí nastavení nelze změnit. Z toho vyplývá, že ačkoliv proces dodatku lze zpracovat ručně v konfiguraci neveřejného sektoru, je nutné ho použít pro konfiguraci veřejného sektoru.
 
 Při vytváření případu požadavku na nabídku typu nákupní objednávka a přidávání skladových položek do požadavku na nabídku bude vytvořena také skladová transakce, která má stav příjmu **Příjem nabídky**. Při výpočtu zásob pomocí hlavního plánu jsou použity pouze řádky případu požadavku na nabídku tohoto stavu. Pokud chcete, aby hlavní plán zahrnoval řádky případu požadavku na nabídku jako očekávaný příjem, je nutné konfigurovat toto chování v nastavení hlavního plánování.

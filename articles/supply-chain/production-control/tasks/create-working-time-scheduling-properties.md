@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-working-time-scheduling-properties"></a>Vytváření vlastností plánování pracovní doby
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Vlastnosti plánování pracovní doby se používají ke kategorizaci časových intervalů pracovní doby a definování nastavení, které musí operátoři brát v úvahu. Tento postup popisuje, jak definovat vlastnosti plánování pracovního času a přidružených hodnot vlastností. Tento proces můžete projít pomocí ukázkových dat společnosti USMF nebo pomocí vlastních dat.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="employee-development-power-bi-content"></a>Obsah Power BI pro rozvoj zaměstnanců
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma popisuje obsah Microsoft Power BI – **Rozvoj zaměstnance**.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="my-team-mobile-workspace"></a>Mobilní pracovní prostor Můj tým
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma obsahuje informace o mobilním pracovním prostoru **Můj tým**. V tomto pracovním prostoru si manažeři mohou prohlížet informace o přímých podřízených a dalších zaměstnancích. Kromě toho mohou podřízeným také poslat pochvalu.
 

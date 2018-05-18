@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="perform-self-service-to-download-hardware-station"></a> Samoobslužné stažení hardwarové stanice
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Tato procedura vás provede postupem stažení a předem definované hardwarové stanice. Data v tomto postupu jsou ukázkové společnosti USRT. Před spuštěním této úlohy musíte vytvořit nový profil hardwarové stanice a hardwarovou stanici.
 

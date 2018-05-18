@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="payment-methods-in-a-call-center"></a>Platební metody v kontaktním středisku
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 V aplikaci Microsoft Dynamics 365 for Retail zahrnuje konfigurace kanálu kontaktního střediska nastavení s názvem **Povolit dokončení objednávky**. Toto nastavení pomáhá zajistit, aby všechny objednávky, které vytvořili uživatelé kanálu, byly uvolněny ke zpracování objednávek pouze v případě, že mají předplacenou nebo předběžně autorizovánou platbu ve schválených tolerancích. Pokud je nastavení **Povolit dokončení objednávky** zapnuté, uživatelé kontaktního střediska mohou zadat platby proti prodejním objednávkám pro odběratele pomocí funkcí zpracování plateb kontaktního střediska. Pokud je nastavení vypnuto, uživatelé kontaktního střediska nemohou používat funkce zpracování plateb kontaktního střediska, ale mohou stále použít zálohy na prodejní objednávky pomocí standardních funkcí pohledávek.
 

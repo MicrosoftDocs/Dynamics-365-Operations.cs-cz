@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-production-flow-models"></a>Definování modelů výrobních toků
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Modely výrobních toků popisují, jak je vypočtena a spravována kapacita pracovních buněk lean manufacturing. Proto definice modelu výrobního toku je předpokladem definice pracovních buněk. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

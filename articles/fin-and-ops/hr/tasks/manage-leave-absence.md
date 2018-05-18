@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="manage-leave-of-absence"></a>Správa dovolené
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup vás provede vytvářením záznamů o odchodu zaměstnance. Lze sledovat čas odchodu z důvodů, které zahrnují zdravotní, vzdělávací a rodičovské aktivity. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

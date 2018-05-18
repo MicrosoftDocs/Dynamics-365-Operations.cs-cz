@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-payment-slip-format-for-project-invoices"></a>Nastavení formátu platebního dokladu pro faktury projektů
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Společnosti obvykle přiřadí vytištěné platební doklady k fakturám, aby poskytli asistenci odběratelům a určili platební odkaz pro zaúčtování a vyrovnání. Kromě prodejních a volných faktur můžete platební doklad použít i pro faktury za projekt nebo služby, upomínky, oznámení úroků a výpisy z účtu. Chcete-li zpracovat platební doklady, nejprve nastavte identifikační číslo příjemce a formáty přílohy platebního dokladu.
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="welcome-to-human-resources"></a>Vítejte v lidských zdrojích
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Lidské zdroje zjednodušují mnoho rutinních administrativních úkolů a automatizují řadu procesů souvisejících s pracovníky ve vaší organizaci. Také poskytuje rámec pro oddělení lidských zdrojů ke správě řady oblastí dohledu. Mezi tyto oblasti spadá nábor a udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn.
 

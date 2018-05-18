@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-withholding-tax"></a>Nastavení srážkové daně
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Srážková daň je daň uvalená na dodavatele, která nevytváří transakce prodejní daně. Srážková daň vypočtená pro platby dodavatelů je povinná. Pro zaúčtování srážkové daně jsou proto platnými účty pouze účty rozvahy nebo závazků. Tento průvodce úkolem popisuje, jak nastavit srážkovou daň.
 

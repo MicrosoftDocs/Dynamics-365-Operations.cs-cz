@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="build-a-product-configuration-model"></a>Vytváření modelu konfigurace produktu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V jak vztahu mezi společnostmi, tak mezi podniky a odběrateli se stalo pravidlem, že konfigurace produktů musí splňovat zvláštní požadavky.
 

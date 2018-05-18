@@ -25,7 +25,7 @@ ms.lasthandoff: 11/08/2017
 ---
 # <a name="rename-or-modify-a-project-stage"></a>Úprava nebo přejmenování fáze projektu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Fáze projektu mohou sloužit jako vodítka pro životní cyklus projektu. Můžete definovat fáze projektu, které chcete zahrnout do svých projektů v oblasti Fáze projektu na stránce Parametry modulu Řízení a účetnictví projektu. Dynamics 365 for Finance and Operations poskytuje pět předdefinovaných fází projektu a tři fáze definované uživatelem. Můžete aktualizovat název fáze projektu, kterou používáte ke sledování průběhu projektů. Můžete také zadat názvy pro názvy stavů definované uživatelem. Tato úloha znázorňuje, jak přejmenovat nebo upravit fázi projektu, a používá datovou sadu USSI.
 

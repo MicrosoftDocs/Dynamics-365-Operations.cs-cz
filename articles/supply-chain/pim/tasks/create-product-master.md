@@ -24,7 +24,7 @@ ms.lasthandoff: 10/25/2017
 ---
 # <a name="create-a-product-master"></a>Vytvoření základního produktu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Vytvořte základní produkt pro předem definované varianty. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup je určen pro návrháře produktu.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>Registrace a odebrání zaměstnaneckých výhod pracovníků
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup ukazuje, jak jeden pracovník může být registrován do jedné nebo více zaměstnaneckých výhod, a také jak více pracovníků může být registrováno k zaměstnanecké výhodě. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

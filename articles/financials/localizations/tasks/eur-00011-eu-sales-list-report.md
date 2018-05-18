@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-an-eu-sales-list-report"></a>Vygenerování sestavy souhrnného hlášení (EU)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup vás provede generováním sestavy souhrnného hlášení EU. To zahrnuje převod interních obchodních transakcí do souhrnného hlášení EU a spuštění sestavy. Tento postup také zahrnuje vytváření interních obchodních transakcí pro účely ukázky. Další informace o výkazu se seznamem prodeje v EU včetně případných požadovaných předpokladů naleznete v nápovědě aplikace Dynamics 365 for Finance and Operations.
 

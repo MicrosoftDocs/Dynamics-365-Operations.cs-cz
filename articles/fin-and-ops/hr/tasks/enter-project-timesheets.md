@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="enter-project-timesheets"></a>Zadávání časových rozvrhů projektů
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura vám umožní vytvořit časový rozvrh pomocí prázdného formuláře časového rozvrhu. Nový časový rozvrh můžete založit na informacích z dřívějšího časového rozvrhu nebo na přiřazení projektů a aktivit na stránce Oblíbené položky. Standardně stránka seznamu Všechny časové rozvrhy zobrazí všechny časové rozvrhy pro aktuální období. Můžete použít rozevírací seznam pole Zobrazit na stránce Moje časové rozvrhy pro filtrování seznamu časových rozvrhů podle období nebo projektu nebo k zobrazení časových rozvrhů, které byly vytvořeny jménem ostatních pracovníků. K vytvoření tohoto postupu jsou použita ukázková data společnosti USSI. Tuto proceduru zahájíte pomocí nabídky Řízení projektu a účetnictví > Časové rozvrhy > Moje časové rozvrhy.
 

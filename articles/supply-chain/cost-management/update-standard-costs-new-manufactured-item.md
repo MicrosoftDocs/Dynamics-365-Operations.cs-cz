@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>Aktualizace standardních nákladů pro nově vyrobené položky
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek obsahuje pokyny pro aktualizaci standardních nákladů pro nově vyrobenou položku. 
 

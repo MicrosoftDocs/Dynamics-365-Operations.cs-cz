@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="display-pages-side-by-side-using-the-open-in-new-window-icon"></a>Zobrazení stránek vedle sebe pomocí ikony Otevřít v novém okně
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek popisuje způsob zobrazení stránek vedle sebe v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 

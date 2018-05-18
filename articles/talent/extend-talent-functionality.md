@@ -26,7 +26,7 @@ ms.lasthandoff: 03/07/2018
 ---
 # <a name="extend-the-functionality-of-microsoft-dynamics-365-for-talent"></a>Rozšíření funkce Microsoft Dynamics 365 for Talent
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Pokud jste vytvořili jakoukoliv aplikaci Microsoft PowerApps, můžete spustit tyto aplikace z odkazů v rámci aplikace Microsoft Dynamics 365 for Talent. Chcete-li nastavit přístup ke svým aplikacím, musíte nastavit některé informace v aplikaci Talent na stránce konfigurace, kterou lze otevřít z pracovního prostoru **Správa systému**.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="advance-invoices-for-eastern-europe"></a>Zálohové faktury pro východní Evropu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Zálohová faktura je dokument, který vytvoříte pro odběratele nebo dodavatele. Zálohová faktura uvádí částku, která musí být předplacena na prodejní objednávce. Toto téma obsahuje informace o zálohových fakturách pro východní Evropu.
 

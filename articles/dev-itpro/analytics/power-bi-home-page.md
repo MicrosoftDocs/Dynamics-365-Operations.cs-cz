@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 ---
 
 # <a name="power-bi-content"></a>Obsah Power BI
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V tomto tématu je uveden seznam obsahu Microsoft Power BI, který je k dispozici a odkazuje na zdroje, které uvádějí podrobnější informace.
 

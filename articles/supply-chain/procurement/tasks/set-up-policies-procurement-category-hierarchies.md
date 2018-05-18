@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Nastavení zásad pro hierarchie kategorií zásobování
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup použijte k nastavení pravidel pro objednávání produktů v kategorii. Pravidla jsou definována pro určitou zásadu nákupu. Pravidlo zásad přístupu ke kategorii určuje, ke kterým kategoriím zásobování mají uživatelé přístup při vytváření žádanky. Při vytvoření žádanky jsou zásada nákupu a pravidla přístupu ke kategoriím určená k použití určena na základě právního subjektu a provozní jednotky, do které zaměstnanec patří. Tento postup můžete projít v ukázkových datech společnosti USMF. Tento úkol obvykle provádí manažer nákupu.
 

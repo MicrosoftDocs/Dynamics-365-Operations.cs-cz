@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-agreement-groups"></a>Skupiny servisních smluv 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Skupiny servisních smluv jsou užitečné při řazení a filtrování servisních smluv. Tyto skupiny použijte k seskupení smluv například podle velikosti společnosti, geografického umístění nebo typu průmyslu. Skupiny servisních smluv můžete také využít k seskupení servisních smluv podle úrovně služeb poskytovaných zákazníkovi.
 

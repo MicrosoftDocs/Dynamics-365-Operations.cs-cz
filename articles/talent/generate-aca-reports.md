@@ -26,7 +26,7 @@ ms.lasthandoff: 03/07/2018
 ---
 # <a name="generate-affordable-care-act-reports"></a>Generování sestav v rámci zákona o cenově dostupné zdravotní péči (Affordable Care Act)
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tato funkce má pomáhat zaměstnavatelům, kteří potřebují sledovat informace ve formulářích 1095-B a 1095-C v rámci **zmocnění zaměstnavatele** v kontextu zákona Affordable Care Act (ACA). Tato funkce je povolena pouze pro právnické osoby v USA.
 

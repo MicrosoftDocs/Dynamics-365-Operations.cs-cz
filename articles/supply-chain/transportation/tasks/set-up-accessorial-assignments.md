@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-accessorial-assignments"></a>Nastavení přiřazení dodatečných služeb
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak nastavíte přiřazení doplňkové služby. To obvykle provádí koordinátor přepravy. Před použitím této příručky je nutné spustit příručku "Nastavení poplatků za dodatečnou službu centra a základní dodatečné služby".
 

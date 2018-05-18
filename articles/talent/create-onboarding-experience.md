@@ -26,7 +26,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="create-an-engaging-onboarding-experience"></a>Vytvoření zaškolení, které zaujme
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Je-li provedeno efektivně, pomáhá zaškolení nových zaměstnanců jejich efektivnějším výkonům a noví zaměstnanci získají pocit, že do své nové role patří. Zaškolení pomůže novým zaměstnancům přesněji a rychleji pochopit svou roli, než by tomu bylo v opačném případě, a vytvořit si hned od začátku vztahy, které jim pomohou uspět. Zkušenost s neefektivním zaškolení může naopak vést zaměstnance k pochybám, zda se stát součástí vaší organizace. Studie Gartner z roku 2014 zjistila, že téměř třetina z 1 005 respondentů, kteří opustili své zaměstnání během prvních šesti měsíců, tak učinili proto, že jim nebyly jasné pokyny, které dostávali od svého vedení, jejich zaškolení bylo neefektivní nebo proto, že si ve svém novém prostředí nevytvořili potřebné vztahy.
 

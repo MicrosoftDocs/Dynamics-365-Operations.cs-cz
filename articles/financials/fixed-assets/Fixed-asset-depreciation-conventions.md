@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="fixed-asset-depreciation-conventions"></a>Konvence odepisování dlouhodobého majetku
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Konvence odpisů se používají k určení, kdy a jak se vypočítá odpisu pro rok pořízení dlouhodobého majetku a v roce, kdy došlo k vyřazení dlouhodobého majetku.
 

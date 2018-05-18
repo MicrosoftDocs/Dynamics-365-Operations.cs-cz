@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Vyrovnání částečné platby dodavatele, u níž jsou slevy pro dobropisy dodavatele
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V tomto článku budete provedeni scénářem vyrovnání dobropisu pro fakturu.
 

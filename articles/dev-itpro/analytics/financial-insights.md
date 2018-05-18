@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="financial-insights"></a>Finanční přehledy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 **Finanční přehledy** používají Microsoft Power BI pro spojení finančních klíčových indikátorů výkonnosti, grafů a finančních výkazů. Power BI je integrováno v aplikaci Microsoft Dynamics 365 Finance and Operations.
 Záměrem **finančních přehledů** je sestava analýz. Osoby v rámci organizace mohou zobrazit, prohledávat, pochopit a jednat. 

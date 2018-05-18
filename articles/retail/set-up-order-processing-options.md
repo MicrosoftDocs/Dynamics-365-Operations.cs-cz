@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="set-up-a-call-center-channel"></a>Nastavení kanálu kontaktního střediska
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Společnost může definovat více kanálů kontaktního střediska v aplikaci Microsoft Dynamics 365 for Retail. Kanály kontaktního střediska jsou konfigurovány v **Retail** \> **Kanály** \> **Kontaktní střediska** \> **Všechna kontaktní střediska** a jsou specifické pro právnickou osobu.
 

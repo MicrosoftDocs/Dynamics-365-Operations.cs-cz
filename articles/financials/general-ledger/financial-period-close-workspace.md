@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-period-close-workspace"></a>Pracovní prostor uzavření finančního období
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V tomto článku je přehled pracovního prostoru Uzavření finančního období a příslušné konfigurace.
 

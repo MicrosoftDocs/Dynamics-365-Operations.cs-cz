@@ -24,7 +24,7 @@ ms.lasthandoff: 10/30/2017
 ---
 # <a name="vendor-payment-overview"></a>Přehled plateb dodavatele
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento průvodce úkolem vás provede různými metodami pro vytvoření plateb dodavatelů, včetně použití návrhu platby nebo ručního zadání jednorázové platby. Tato procedura používá ukázkovou společnost USMF.
 

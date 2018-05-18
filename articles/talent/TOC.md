@@ -6,6 +6,7 @@
 ## [Odstranění prostředí Talent](remove-talent-environment.md)
 ## [Zřízení modulárních aplikací Microsoft Dynamics 365 for Talent](modular-app-tech-faq.md)
 ## [Rozšíření funkce Talent](extend-talent-functionality.md)
+## [Přístup k funkcím náhledu v aplikaci Dynamics 365 for Talent: Attract](access-preview-feature.md)
 
 # [Vytvoření strategie lidských zdrojů](departments-jobs-positions.md)
 ## [Nastavení komponent práce](create-job.md)

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Určení optimální kombinace překrývajících se slev
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Při překrytí slev je třeba určit kombinaci překrývající se slev, které budou tvořit nejnižší celkové částky transakce nebo nejvyšší celkovou slevu. Pokud se částka slevy liší podle ceny produktů, které jsou zakoupeny, například u běžné maloobchodní slevy “Při nákupu 1 sleva X procent” (BOGO), tento proces bude problémem pro kombinatorní optimalizaci.
 

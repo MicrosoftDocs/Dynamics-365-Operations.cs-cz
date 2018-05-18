@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-a-pos-visual-profile"></a> Vytvoření vizuálního profilu POS  
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Tato procedura vás provede procesem vytvoření nového vizuálního profilu pokladního místa (POS). Vizuální profil obsahuje základní informace, které určuje vzhled pokladen POS. Můžete vytvořit několik vizuálních profilů a přiřadit si konkrétní profily, které mají být v určitých registrech spuštěny. Tato procedura používá data ukázkové společnosti USRT.
 

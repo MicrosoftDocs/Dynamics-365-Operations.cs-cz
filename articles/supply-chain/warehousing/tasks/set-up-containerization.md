@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-containerization"></a>Nastavení vytváření kontejnerů
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje postup automatizace vytváření kontejnerů vytížení v modulu Řízení skladu. Automatické vytváření kontejnerů vytvoří kontejnery a výdejovou práci pro dodávky při zpracování vlny, a řádky práce lze rozdělit na množství, které se vejde do kontejnerů. To pomáhá pracovníkům skladu vyzvednout položky přímo do zvoleného kontejneru. Ve srovnání s procesem ručního balení jsou úlohy, jako je vytváření kontejnerů, přiřazování položek nebo uzavření kontejnerů automatizované systémem. Tento postup používá ukázkovou společnost USMF a provádí jej vedoucí skladu.
 

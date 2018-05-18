@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Plánování tras nákladní dopravy s více zastávkami
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek popisuje různé prvky, které slouží k plánování tras přepravy v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 

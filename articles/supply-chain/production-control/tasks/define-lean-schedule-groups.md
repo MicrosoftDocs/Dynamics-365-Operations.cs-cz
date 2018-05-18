@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="define-lean-schedule-groups"></a>Definování skupin štíhlého plánu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Skupiny štíhlého plánu jsou definovány pro rozdělení do skupin a rozlišení produkty v plánování kanbanu. Seskupení lze provést jako obecné přidružení společností nebo jako specifické k pracovní buňce. Každá skupina má barevný kód přiřazeny pro vizuální označení na stránce se seznamem plánování kanbanu. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

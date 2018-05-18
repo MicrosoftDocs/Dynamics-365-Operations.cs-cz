@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="immediate-replenishment"></a>Okamžité doplnění
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Okamžité doplnění umožňuje doplňování zásob ihned při selhání směrnice skladového místa pro přidělení zásob. Doplnění je založeno na jednom řádku v nastavení směrnice skladového místa. Pokud nejsou zásoby na skladě v jednotce měření, která je určena tímto řádkem, dojde okamžitě doplnění této měrné jednotky.
 

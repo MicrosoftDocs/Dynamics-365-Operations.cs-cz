@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="pay-based-on-registrations"></a>Plat na základě registrace
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma podrobně popisuje způsob výpočtu mzdy na základě registrací pracovníka. Obsahuje příklady ukazující, jak různé kombinace možností nastavení, které jsou k dispozici pro výpočet, ovlivní výsledek. Zde jsou uvedeny některé z oblastí, které budou pokryty:
 

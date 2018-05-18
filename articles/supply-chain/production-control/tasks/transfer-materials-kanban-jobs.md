@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="transfer-materials-with-kanban-jobs-february-2016-only"></a>Převádění materiálů s kanbanovými úlohami (jen ve verzi z února 2016)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup se zaměřuje na provádění kanbanové úlohy pro výběr umožňující převod materiálu. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup je určen pro pracovníka skladu.
 

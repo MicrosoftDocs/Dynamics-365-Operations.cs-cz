@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-date-for-the-session"></a>Změna data pro relaci
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Standardně se při zadávání a publikování položek deníku nebo zdrojových dokumentů používá aktuální datum. Můžete změnit datum používané pro aktuální relaci. Použijte tuto funkci k antedatování položek deníku nebo zdrojových dokumentů podle potřeby.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="overview-of-product-and-customer-search-in-point-of-sale"></a>Přehled vyhledávání produktu a zákazníka v pokladním místě
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Moderní pokladní místo (MPOS) a cloudové pokladní místo (CPOS) poskytují snadno použitelnou funkci vyhledávání produktů a zákazníků. Panel vyhledávání je vždy k dispozici v horní části oken MPOS a CPOS, aby zaměstnanci mohli rychle vyhledat produkty a zákazníky.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Uvolnění řádků kusovníku a receptury do skladu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma popisuje proces uvolnění suroviny pro řádky kusovníku a řádky receptury do skladu. Když uvolníte řádek kusovníku nebo receptury do skladu, systém nejdříve určí, zda je materiál již dostupný na vstupním místě pro výrobu v dílenském zařízení materiál, kde bude materiální spotřebován pro výrobní proces.
 

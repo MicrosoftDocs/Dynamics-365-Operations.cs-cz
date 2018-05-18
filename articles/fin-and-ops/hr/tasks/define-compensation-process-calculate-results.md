@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Definovat proces kompenzací a vypočítat výsledky
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Procesy kompenzace slouží k určení částek nové kompenzace a odměn pro zaměstnance, které jsou přihlášené do plánů fixní i variabilní kompenzace. Procesy kompenzace mohou být spuštěny více než jednou k provedení analýzy „co když“ a ověření správnosti všech změn a nastavení. Tento postup vytvoří proces kompenzace, spustí proces a zobrazí výsledky. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="master-planning-home-page"></a>Domovská stránka Hlavního plánování
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ve svém jádru hlavní plánování umožňuje společnostem určit a vyvážit budoucí potřebu surovin a kapacit ke splnění cílů společnosti. Hlavní plánování posuzuje následující: 
 

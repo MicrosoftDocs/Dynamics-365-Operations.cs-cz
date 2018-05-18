@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="create-rules-for-optimization-advisor"></a>Vytvoření pravidel pro poradce při optimalizaci
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma vysvětluje postup vytvoření nových pravidel pro **Poradce při optimalizaci**. Můžete například vytvořit nové pravidlo, které identifikuje, jaké případy požadavků na nabídku mají prázdný název. Použití názvů u případů je činí snadno identifikovatelné a vyhledávatelné. I když je to docela snadncě, tento příklad ukazuje, čeho lze s pravidly optimalizace dosáhnout. 
 

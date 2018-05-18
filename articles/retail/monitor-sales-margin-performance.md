@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="monitor-sales-and-margin-performance"></a>Monitorování výkonnosti z hlediska prodejů a marží
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Objem prodeje a marže lze sledovat v reálném čase pomocí aplikace Microsoft Dynamics 365 for Retail.
 

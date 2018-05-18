@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="common-sources-of-production-variances"></a>Běžné zdroje výrobních odchylek
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek vysvětluje různé obvyklé zdroje každého typu výrobní odchylky. 
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="bom-designer-functionality"></a>Funkce návrháře kusovníku
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak můžete na stránce Návrhář kusovníku navrhnout a používat stromové struktury pro kusovníky (BOM). Kliknutím na možnost Nastavení můžete vybrat různé konfigurace a určit, které informace mají být zobrazeny v rámci jednotlivých liniích stromu.
 

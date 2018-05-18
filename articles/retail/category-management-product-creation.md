@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="manage-retail-product-categories-and-products"></a>Správa kategorií a produktů maloobchodu
 
-[!INCLUDE [banner](./includes/banner.md)]
+[!include [banner](./includes/banner.md)]
 
 Toto téma popisuje rozšířený způsob správy kategorií maloobchodních produktů a produktů v aplikaci Microsoft Dynamics 365 for Retail. Tato zlepšení umožní obchodním manažerům zobrazit společnou strukturu vlastností produktu sdílenou mezi hierarchií maloobchodních produktů a podrobnostmi uvolněného produktu.
 

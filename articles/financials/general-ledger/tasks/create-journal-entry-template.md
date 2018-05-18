@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-journal-entry-using-a-template"></a>Vytvoření položky deníku pomocí šablony
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Zaúčtované deníky lze uložit jako šablony dokladů a použít v novém dokladu deníku. Tato procedura používá ukázkovou společnost USMF.
 

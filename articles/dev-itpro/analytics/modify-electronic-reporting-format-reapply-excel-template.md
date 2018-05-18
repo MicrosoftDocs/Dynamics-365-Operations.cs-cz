@@ -27,7 +27,7 @@ ms.lasthandoff: 02/27/2018
 ---
 # <a name="modify-an-electronic-reporting-format-by-reapplying-a-microsoft-excel-template"></a>Úprava formátu elektronického výkaznictví opětovným použitím šablony aplikace Microsoft Excel
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Nástroj elektronického výkaznictví (ER) slouží ke generování obchodních dokumentů v elektronické podobě. Ke generování obchodních dokumentů musíte vytvořit formátu elektronického výkaznictví a pak použít návrháře elektronického výkaznictví k definování rozvržení obchodního dokument a určení dat, která v něm mají být obsažena. Poté lze spustit ER formát pro generování obchodního dokumentu.
 

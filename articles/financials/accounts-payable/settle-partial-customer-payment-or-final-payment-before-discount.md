@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Vyrovnání částečné platby odběratele a plné vyrovnání konečné platby před datem slevy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek popisuje scénáře, které zobrazují způsob záznamu částečných plateb pro odběratele a využití platebních slev v rámci období platební slevy.
 

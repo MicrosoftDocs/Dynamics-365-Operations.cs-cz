@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="product-configuration-models-overview"></a>Přehled modelů konfigurace produktu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek definuje termíny a pojmy, které jsou relevantní pro modely konfigurace produktu. Modely konfigurace produktu umožňují vytvořit obecnou strukturu produktu, kterou lze použít ke konfiguraci mnoha variant produktu pro jeden produkt.
 

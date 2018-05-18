@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="define-discrete-manufacturing-resource-group"></a>Definování skupin prostředků diskrétní výroby
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Skupina prostředků je sada provozních prostředků, které obvykle odpovídají fyzické organizaci pracovních buněk, definovaných žlutými pruhy ve výrobní dílně. Tento postup popisuje, jak definovat skupinu prostředků pro použití v samostatné výrobě. Tento proces můžete projít pomocí ukázkových dat společnosti USMF nebo pomocí vlastních dat.
 

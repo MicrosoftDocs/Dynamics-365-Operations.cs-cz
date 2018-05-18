@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-a-call-center-catalog"></a>Vytvoření katalogu kontaktního střediska
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tento článek podává přehled procesu vytvoření katalogu pro kontaktní středisko. 
 

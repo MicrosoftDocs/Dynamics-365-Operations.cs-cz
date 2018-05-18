@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>Použití deníku pojistných zásob pro aktualizaci minimální disponibility
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje způsob výpočtu návrhů minimální disponibility na základě historických transakcí, a pokrytí následně aktualizaci disponibility položky podle návrhů. To se provádí pomocí deníku pojistných zásob. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF. Tato úloha je určena pro plánovače výroby k zachování minimální disponibility.
 

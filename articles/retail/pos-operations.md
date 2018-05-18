@@ -28,7 +28,7 @@ ms.lasthandoff: 03/22/2018
 
 # <a name="pos-operations-online-and-offline"></a>Operace POS, online a offline
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Většina akcí, které uživatel provede v pokladním místě, se považuje za operace. Operace se konfigurují a spravují v aplikaci Microsoft Dynamics 365 for Retail. Mnohé operace lze přidat k tlačítkům v POS mřížce tlačítek. Uživatelé mohou potom vybírat tlačítka k vyvolání operací a provádění jejich funkcí. Další operace jsou součástí hlavní aplikace POS a jsou vyvolávány buď pomocí tlačítek na obrazovce nebo jako součást jiných workflow nebo procesů.
 

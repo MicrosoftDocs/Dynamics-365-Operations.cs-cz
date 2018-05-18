@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="process-interest"></a>Zpracování úroků
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tato procedura popisuje způsob tvorby, tisku a zaúčtování oznámení úroků. Tento úkol používá ukázkovou společnost USMF.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="vendor-payments-workspace"></a>Pracovní prostor plateb dodavatelů
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Pracovní prostor **Platby dodavatele** zobrazuje informace související se zpracováním dodavatelských plateb. Tento pracovní prostor obsahuje zobrazení **Moje práce** a stránku **Analýzy**. Zobrazení **Moje práce** zobrazuje souhrnné dlaždice, mřížky transakce dodavatele a související informace o dodavateli. Stránka **Analýza** používá funkce Microsoft Power BI k zobrazení vizuálů, které se vztahují k platbám dodavatelům.
 

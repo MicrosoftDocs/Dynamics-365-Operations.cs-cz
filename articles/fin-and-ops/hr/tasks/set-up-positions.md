@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="set-up-positions"></a>Nastavit pozice
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Pozice jsou důležitým prvkem nižší úrovně hierarchie organizace. Pozice je individuální instance práce. Například pozice „Manažer prodeje (východ)“ je jednou z pozic, která je přidružena k úloze „Manažer prodeje“. Pozice se nachází v oddělení a může mít pouze jednoho pracovníka, který je k ní přidružen. V rámci tohoto úkolu vás provedeme kroky potřebnými pro vytvoření pozice. Tato úloha je určena pro odborníka na lidské zdroje.
 

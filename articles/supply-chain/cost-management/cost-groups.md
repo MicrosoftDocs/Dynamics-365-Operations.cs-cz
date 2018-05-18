@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-groups"></a>Nákl. skupiny
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Nákladové skupiny poskytují základ pro segmentaci a analýzu nákladových příspěvků v rámci vypočtených nákladů na určitou vyráběnou položku (například nákladové příspěvky na materiál, práci a režii). Termín segmentace nákladových skupin má ve výrobním prostředí několik dalších synonym (například rozúčtování nákladů, dekompozice nákladů nebo klasifikace nákladů). 
 

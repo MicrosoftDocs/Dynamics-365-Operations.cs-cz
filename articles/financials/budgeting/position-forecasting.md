@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="position-forecasting"></a>Prognóza pozice
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Výdaje, které souvisejí s pracovníky, často tvoří velkou část nákladů organizace. Prognózy pozic vám umožní plánovat výdaje a zahrnut je do plánování rozpočtů.
 

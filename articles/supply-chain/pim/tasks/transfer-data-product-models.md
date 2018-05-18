@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="transfer-data-for-product-models"></a>Převedení dat pro modely produktu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Export dat pro model konfigurace produktu vyžaduje, aby alespoň jeden model produktu byl k dispozici. Tento postup používá model špičkového reproduktoru ukázkové společnosti USMF, pro ukázku, jak mají být exportována data pro tento model.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-cost-control-units"></a>Definování jednotek řízení nákladů
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje, jak definovat jednotky řízení nákladů ve hlavní knize nákladového účetnictví. Lze vybrat dimenzi objektu nákladů, pro který chcete řídit náklady v hlavní knize. Členové dimenze nákladového objektu jsou proměněni na nákladové objekty jednotky řízení nákladů. K vytvoření tohoto postupu jsou použita ukázková data společnosti USP2.
 

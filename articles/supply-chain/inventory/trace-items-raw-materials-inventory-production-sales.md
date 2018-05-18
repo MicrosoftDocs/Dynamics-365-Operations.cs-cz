@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Sledování zboží a surovin ve skladu, při výrobě a prodeji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak můžete použít sledování položky k identifikaci, kde bylo použito zboží nebo suroviny, nebo kde budou použity ve výrobě a prodejních procesech.
 
