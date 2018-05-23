@@ -38,9 +38,6 @@ Otevřením dat entity v aplikaci Microsoft Excel můžete rychle a snadno zobra
 
 Další informace o používání doplňku aplikace Excel se dozvíte v krátkém videu [Vytvoření šablony aplikace Excel pro vzory záhlaví a řádků v Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI).
 
-> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
-
-
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Otevření dat entity v Excelu při spuštění z aplikace Finance and Operations
 1. Na stránce v aplikaci Finance and Operations zvolte **Otevřít v sadě Microsoft Office**.
 
