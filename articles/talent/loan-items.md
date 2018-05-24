@@ -19,42 +19,42 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ba1b158908ac2328c29f7efe23756248be5be33c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fe8d8812aaa78c7b5558615f586940488f2dc1b2
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="manage-items-lent-to-workers"></a><span data-ttu-id="391eb-103">Spravovat položky půjčené zaměstnancům</span><span class="sxs-lookup"><span data-stu-id="391eb-103">Manage items lent to workers</span></span>
+# <a name="manage-items-lent-to-workers"></a><span data-ttu-id="31844-103">Spravovat položky půjčené zaměstnancům</span><span class="sxs-lookup"><span data-stu-id="31844-103">Manage items lent to workers</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-<span data-ttu-id="391eb-104">Položky výpůjčky jsou záznamy, které pomáhají manažerům se sledováním fyzických položek, které vaše společnost půjčuje zaměstnancům.</span><span class="sxs-lookup"><span data-stu-id="391eb-104">Loan items are records that help managers track the physical items that your company lends to its workers.</span></span> 
+<span data-ttu-id="31844-104">Položky výpůjčky jsou záznamy, které pomáhají manažerům se sledováním fyzických položek, které vaše společnost půjčuje zaměstnancům.</span><span class="sxs-lookup"><span data-stu-id="31844-104">Loan items are records that help managers track the physical items that your company lends to its workers.</span></span> 
 
-<span data-ttu-id="391eb-105">V následujícím seznamu jsou příklady položek, které může společnost půjčit pracovníkům:</span><span class="sxs-lookup"><span data-stu-id="391eb-105">The following points list examples of items that a company might lend to workers:</span></span>
--   <span data-ttu-id="391eb-106">mobilní telefony;</span><span class="sxs-lookup"><span data-stu-id="391eb-106">Mobile telephones</span></span>
--   <span data-ttu-id="391eb-107">automobily;</span><span class="sxs-lookup"><span data-stu-id="391eb-107">Automobiles</span></span>
--   <span data-ttu-id="391eb-108">počítačové vybavení.</span><span class="sxs-lookup"><span data-stu-id="391eb-108">Computer equipment</span></span>
+<span data-ttu-id="31844-105">V následujícím seznamu jsou příklady položek, které může společnost půjčit pracovníkům:</span><span class="sxs-lookup"><span data-stu-id="31844-105">The following points list examples of items that a company might lend to workers:</span></span>
+-   <span data-ttu-id="31844-106">mobilní telefony;</span><span class="sxs-lookup"><span data-stu-id="31844-106">Mobile telephones</span></span>
+-   <span data-ttu-id="31844-107">automobily;</span><span class="sxs-lookup"><span data-stu-id="31844-107">Automobiles</span></span>
+-   <span data-ttu-id="31844-108">počítačové vybavení.</span><span class="sxs-lookup"><span data-stu-id="31844-108">Computer equipment</span></span>
 
-<span data-ttu-id="391eb-109">Každá fyzická položka musí mít odpovídající položku výpůjčky.</span><span class="sxs-lookup"><span data-stu-id="391eb-109">Each physical item must have a corresponding loan item.</span></span> <span data-ttu-id="391eb-110">Každý záznam o zapůjčené položce by měl obsahovat popis zapůjčené věci, osobu, která je za zapůjčení odpovědná, a počet dní, na které je položka pracovníkovi zapůjčena.</span><span class="sxs-lookup"><span data-stu-id="391eb-110">Each loan item record should describe what is being loaned, who is responsible for the loan, and the number of days the item can loaned to a worker.</span></span> <span data-ttu-id="391eb-111">Můžete vytvořit více položek výpůjčky (například v případě klíčů, přístupových karet nebo stejnokrojů) současně.</span><span class="sxs-lookup"><span data-stu-id="391eb-111">You can create multiple loan items, for items such as keys, access cards or uniforms, at the same time.</span></span> 
+<span data-ttu-id="31844-109">Každá fyzická položka musí mít odpovídající položku výpůjčky.</span><span class="sxs-lookup"><span data-stu-id="31844-109">Each physical item must have a corresponding loan item.</span></span> <span data-ttu-id="31844-110">Každý záznam o zapůjčené položce by měl obsahovat popis zapůjčené věci, osobu, která je za zapůjčení odpovědná, a počet dní, na které je položka pracovníkovi zapůjčena.</span><span class="sxs-lookup"><span data-stu-id="31844-110">Each loan item record should describe what is being loaned, who is responsible for the loan, and the number of days the item can loaned to a worker.</span></span> <span data-ttu-id="31844-111">Můžete vytvořit více položek výpůjčky (například v případě klíčů, přístupových karet nebo stejnokrojů) současně.</span><span class="sxs-lookup"><span data-stu-id="31844-111">You can create multiple loan items, for items such as keys, access cards or uniforms, at the same time.</span></span> 
 
-<span data-ttu-id="391eb-112">Při zapůjčení položky zadejte datum zapůjčení a plánované datum vrácení.</span><span class="sxs-lookup"><span data-stu-id="391eb-112">When loaning an item, enter the date that the item was loaned, and the planned return date.</span></span> <span data-ttu-id="391eb-113">Při vrácení položky zadejte skutečné datum vrácení.</span><span class="sxs-lookup"><span data-stu-id="391eb-113">When the item is returned, enter the actual return date.</span></span>
+<span data-ttu-id="31844-112">Při zapůjčení položky zadejte datum zapůjčení a plánované datum vrácení.</span><span class="sxs-lookup"><span data-stu-id="31844-112">When loaning an item, enter the date that the item was loaned, and the planned return date.</span></span> <span data-ttu-id="31844-113">Při vrácení položky zadejte skutečné datum vrácení.</span><span class="sxs-lookup"><span data-stu-id="31844-113">When the item is returned, enter the actual return date.</span></span>
 
-<span data-ttu-id="391eb-114">Zaměstnanci si mohou prohlížet záznamy položek, které mají vypůjčeny z pracovního prostoru Samoobsluha pro zaměstnance.</span><span class="sxs-lookup"><span data-stu-id="391eb-114">Employees can view the records of the items that have been loaned to them using the Employee self-service workspace.</span></span> <span data-ttu-id="391eb-115">Mohou také upravit existující záznamy nebo zadat nové položky výpůjčky, pokud obdrželi další fyzické položky.</span><span class="sxs-lookup"><span data-stu-id="391eb-115">They can also edit the existing records or enter new loan items, if they've received additional physical items.</span></span>  <span data-ttu-id="391eb-116">Pracovní postup je možné nastavit tak, aby směroval změny do nových nebo existujících položek pomocí schvalovacího procesu.</span><span class="sxs-lookup"><span data-stu-id="391eb-116">Workflow can be set up to route changes to new or existing loan items through an approval process.</span></span> 
+<span data-ttu-id="31844-114">Zaměstnanci si mohou prohlížet záznamy položek, které mají vypůjčeny z pracovního prostoru Samoobsluha pro zaměstnance.</span><span class="sxs-lookup"><span data-stu-id="31844-114">Employees can view the records of the items that have been loaned to them using the Employee self-service workspace.</span></span> <span data-ttu-id="31844-115">Mohou také upravit existující záznamy nebo zadat nové položky výpůjčky, pokud obdrželi další fyzické položky.</span><span class="sxs-lookup"><span data-stu-id="31844-115">They can also edit the existing records or enter new loan items, if they've received additional physical items.</span></span>  <span data-ttu-id="31844-116">Pracovní postup je možné nastavit tak, aby směroval změny do nových nebo existujících položek pomocí schvalovacího procesu.</span><span class="sxs-lookup"><span data-stu-id="31844-116">Workflow can be set up to route changes to new or existing loan items through an approval process.</span></span> 
 
-<span data-ttu-id="391eb-117">Manažeři si mohou zobrazit položky zapůjčené jejich přímým podřízeným.</span><span class="sxs-lookup"><span data-stu-id="391eb-117">Managers can view loaned items for their direct reports.</span></span> <span data-ttu-id="391eb-118">Také mohou mít oprávnění k přidání nových položek výpůjčky jménem svých zaměstnanců.</span><span class="sxs-lookup"><span data-stu-id="391eb-118">They can also be granted permission to add new loan items on behalf of their employees.</span></span>
+<span data-ttu-id="31844-117">Manažeři si mohou zobrazit položky zapůjčené jejich přímým podřízeným.</span><span class="sxs-lookup"><span data-stu-id="31844-117">Managers can view loaned items for their direct reports.</span></span> <span data-ttu-id="31844-118">Také mohou mít oprávnění k přidání nových položek výpůjčky jménem svých zaměstnanců.</span><span class="sxs-lookup"><span data-stu-id="31844-118">They can also be granted permission to add new loan items on behalf of their employees.</span></span>
 
- <a name="account-for-lost-or-misplaced-loan-items"></a><span data-ttu-id="391eb-119"> Účet pro položky výpůjček, které byly ztraceny nebo poškozeny</span><span class="sxs-lookup"><span data-stu-id="391eb-119">Account for lost or misplaced loan items</span></span>
+ <a name="account-for-lost-or-misplaced-loan-items"></a><span data-ttu-id="31844-119"> Účet pro položky výpůjček, které byly ztraceny nebo poškozeny</span><span class="sxs-lookup"><span data-stu-id="31844-119">Account for lost or misplaced loan items</span></span>
 -----------------------------------------
 
-<span data-ttu-id="391eb-120">Pokud došlo ke ztrátě nebo poškození položky, vložte záznam o fiktivním vrácení.</span><span class="sxs-lookup"><span data-stu-id="391eb-120">If an item becomes damaged or misplaced, enter a fictitious return record.</span></span> <span data-ttu-id="391eb-121">Pak lze buď položku smazat, nebo ji dále vést v přehledu, ale je nutné změnit její popis, který bude nadále označovat, že daná položka není k dispozici.</span><span class="sxs-lookup"><span data-stu-id="391eb-121">Then either delete the item or keep it in the overview and change the description to indicate that the item is not available.</span></span>
+<span data-ttu-id="31844-120">Pokud došlo ke ztrátě nebo poškození položky, vložte záznam o fiktivním vrácení.</span><span class="sxs-lookup"><span data-stu-id="31844-120">If an item becomes damaged or misplaced, enter a fictitious return record.</span></span> <span data-ttu-id="31844-121">Pak lze buď položku smazat, nebo ji dále vést v přehledu, ale je nutné změnit její popis, který bude nadále označovat, že daná položka není k dispozici.</span><span class="sxs-lookup"><span data-stu-id="31844-121">Then either delete the item or keep it in the overview and change the description to indicate that the item is not available.</span></span>
 
 
-<a name="see-also"></a><span data-ttu-id="391eb-122">Viz také</span><span class="sxs-lookup"><span data-stu-id="391eb-122">See also</span></span>
+<a name="additional-resources"></a><span data-ttu-id="31844-122">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="31844-122">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="391eb-123">Lidské zdroje</span><span class="sxs-lookup"><span data-stu-id="391eb-123">Human resources</span></span>](index.md)
+[<span data-ttu-id="31844-123">Lidské zdroje</span><span class="sxs-lookup"><span data-stu-id="31844-123">Human resources</span></span>](index.md)
 
 
 
