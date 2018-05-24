@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 08cfd2cfa24bef0f0c92126f5d1052a12ceba37a
-ms.openlocfilehash: 1863814d6dd645da8602495858d024fbad2e7149
+ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
+ms.openlocfilehash: 6672e283a5e56b068e3494d53a0fd6dd08253ba9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/11/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
@@ -95,4 +95,16 @@ Kromě zobrazení v záhlaví faktury lze použít informace **číslo externí 
 Ujistěte se, že výchozí hodnota pro pole Finance and Operations **Zobrazená hodnota hlavního účtu** je aktualizována, aby odpovídala požadované hodnotě.
 
 Výchozí hodnota šablony je **401100**.
+
+## <a name="template-mapping-in-data-integration"></a>Mapování šablony v integraci dat
+
+Na následujícím obrázku je příklad mapování šablony v integraci dat.
+
+### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-headers"></a>Smluvní faktury (Field Service do Fin a Ops): Záhlaví faktury
+
+[![Mapování šablony v integraci dat](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
+
+### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-lines"></a>Smluvní faktury (Field Service do Fin a Ops): Řádky záhlaví faktury
+
+[![Mapování šablony v integraci dat](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
 

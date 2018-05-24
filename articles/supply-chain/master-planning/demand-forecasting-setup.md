@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 974edd06460df4afe594b0a033a042b8c2763f7f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: be962bffd9dfe756b444f6946990058971896a27
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="demand-forecasting-setup"></a>Nastavení prognózy poptávky
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma popisuje úlohy nastavení, které je třeba provést, aby bylo možné používat prognózy poptávky.  
 
@@ -78,7 +78,7 @@ Pokud chcete vytvořit předpovědi poptávky, můžete nasadit vlastní službu
 ## <a name="settings-for-the-finance-and-operations-demand-forecasting-machine-learning-service"></a>Nastavení pro službu Machine Learning pro vytváření prognózy v rámci Finance and Operations
 Chcete-li zobrazit parametry, které lze konfigurovat pro službu vytváření prognózy poptávky v aplikaci Finance and Operations, přejděte na **Hlavní plánování** &gt; **Nastavení** &gt; **Prognóza poptávky** &gt; **Parametry algoritmu prognózy**. Stránka **Parametry algoritmu prognózy** popisuje výchozí hodnoty parametrů. Tyto parametry lze přepsat na stránce **Parametry vytváření prognózy poptávky**. Na kartě **Hlavní** můžete parametry přepsat globálně, nebo použít kartu **Alokační klíče položek** a přepsat tak parametry pro každý alokační klíč položky. Parametry, které budou přepsány pro alokační klíč položky, ovlivní pouze prognózu položek, které jsou přidruženy k danému alokačnímu klíči položky.
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Úvod do prognózy poptávky](introduction-demand-forecasting.md)

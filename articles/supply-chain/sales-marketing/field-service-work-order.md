@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 08cfd2cfa24bef0f0c92126f5d1052a12ceba37a
-ms.openlocfilehash: 854240bef9d6193c8f0f608687b68e6842fe272c
+ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
+ms.openlocfilehash: 933d9755085d507310dd46d96a492d2124647ec3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/11/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
@@ -230,7 +230,47 @@ Integrace pracovního příkazu vyžaduje nastavení původu prodeje. Původ pro
 6. Nastavte hodnotu v poli **Typ původu prodeje** na **Integrace výrobního příkazu**.
 7. Zvolte **Uložit**.
 
-### <a name="template-mapping-in-data-integration"></a>Mapování šablony v integraci dat
 
-(Již brzy)
+### <a name="setup-in-data-integration"></a>Nastavení v integraci dat
+
+Ujistěte se, že **klíč integrace** existuje pro **msdyn_workorders**
+1. Přejít na integraci dat
+2. Vyberte kartu **nastavit připojení**.
+3. Vyberte sadu připojení použitou při synchronizaci pracovního příkazu
+4. Vyberte kartu **klíč integrace**
+5. Vyhledejte msdyn_workorders a zkontrolujte, že je přidán klíč **msdyn_name (číslo výrobní zakázky)**. Pokud se nezobrazuje, přidejte ho klepnutím na tlačítko **Přidat klíč** a klepněte na tlačítko **Uložit** v horní části stránky
+
+## <a name="template-mapping-in-data-integration"></a>Mapování šablony v integraci dat
+
+Na následujícím obrázku je příklad mapování šablony v integraci dat.
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderheader"></a>Výrobní příkazy do prodejních objednávek (Field Service to Fin and Ops): WorkOrderHeader
+
+Filtr: (msdyn_systemstatus ne 690970005) a (msdyn_systemstatus ne 690970000) a (msdynce_hasexternallymaintainedproductsonly eq true)
+
+[![Mapování šablony v integraci dat](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineestimate"></a>Výrobní příkazy do prodejních objednávek (Field Service do Fin and Ops): WorkOrderServiceLineEstimate
+
+Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus ne 690970000) a (msdynce_orderhasexternalmaintainedproductsonly eq true) a (msdyn_linestatus eq 690970000) a (msdynce_headersystemstatus ne 690970004)
+
+[![Mapování šablony v integraci dat](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineused"></a>Výrobní příkazy do prodejních objednávek (Field Service do Fin and Ops): WorkOrderServiceLineUsed
+
+Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus ne 690970000) a (msdynce_orderhasexternalmaintainedproductsonly eq true) a ((msdyn_linestatus eq 690970001) nebo (msdynce_headersystemstatus eq 690970004))
+
+[![Mapování šablony v integraci dat](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineestimate"></a>Výrobní příkazy do prodejních objednávek (Field Service do Fin and Ops): WorkOrderProductLineEstimate
+
+Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus ne 690970000) a (msdynce_orderhasexternalmaintainedproductsonly eq true) a (msdyn_linestatus eq 690970000) a (msdynce_headersystemstatus ne 690970004) a (msdyn_allocated eq true)
+
+[![Mapování šablony v integraci dat](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineused"></a>Výrobní příkazy do prodejních objednávek (Field Service do Fin and Ops): WorkOrderProductLineUsed
+
+Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus ne 690970000) a (msdynce_orderhasexternalmaintainedproductsonly eq true) a ((msdyn_linestatus eq 690970001) nebo (msdynce_headersystemstatus eq 690970004) nebo (msdyn_allocated ne true))
+
+[![Mapování šablony v integraci dat](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 

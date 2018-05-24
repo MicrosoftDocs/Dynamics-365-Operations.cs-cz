@@ -3,27 +3,28 @@ title: "Správa sortimentu"
 description: "Toto téma vysvětluje základní koncepty správy sortimentu v aplikaci Microsoft Dynamics 365 for Retail a poskytuje úvahy nad implementací pro váš projekt."
 author: jblucher
 manager: AnnBe
-ms.date: 3/12/2018
+ms.date: 03/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application user
+ms.reviewer: josaw
 ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
 ms.translationtype: HT
-ms.sourcegitcommit: 44b0c4e39ac7410d27ce531c898bb8c423af334a
-ms.openlocfilehash: 303f86d6a57e039cb51700744697949845239b10
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 033968667048faf475b13f8fb95e693dc26935ca
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="assortment-management"></a>Správa sortimentu
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>Přehled
 Microsoft Dynamics 365 for Retail nabízí *sortimenty*, které umožňují spravovat dostupnost produktu mezi kanály. Sortimenty určují, které produkty jsou k dispozici v konkrétních obchodech a v konkrétním období.
@@ -35,25 +36,25 @@ Celková kombinace produktu kanálu je určena publikovanými sortimenty, které
 ### <a name="basic-assortment-setup"></a>Nastavení základního sortimentu
 V následujícím příkladu je nakonfigurován jedinečný sortiment pro každý obchod. V takovém případě je pouze produkt 1 k dispozici v obchodě 1 a pouze produkt 2 je k dispozici v obchodě 2.
 
-![Každý produkt je k dispozici v jednom obchodě](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure1.png?raw=true "Každý produkt je k dispozici v jednom obchodě")
+![Každý produkt je k dispozici v jednom obchodě](./media/Managing-assortments-figure1.png)
 
 Chcete-li, aby byl produkt 2 k dispozici v obchodě 1, lze přidat produkt do sortimentu 1.
 
-![Produkt 2 přidán do sortimentu 1](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure2.png?raw=true "Produkt 2 přidán do sortimentu 1")
+![Produkt 2 přidán do sortimentu 1.](./media/Managing-assortments-figure2.png)
 
 Případně můžete přidat obchod 1 do sortimentu 2.
 
-![Obchod 1 přidán do sortimentu 2](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure3.png?raw=true "Obchod 1 přidán do sortimentu 2")
+![Obchod 1 přidán do sortimentu 2.](./media/Managing-assortments-figure3.png)
 
 ### <a name="organization-hierarchies"></a>Organizační hierarchie
 V situacích, kdy více kanálů sdílejí stejné sortimenty produktů, můžete nakonfigurovat sortimenty pomocí hierarchie organizace maloobchodního sortimentu. Při přidávání uzlů z této hierarchie budou zahrnuty všechny kanály v tomto uzlu a jeho podřízené uzly.
 
-![Organizační hierarchie](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure4.png?raw=true "Organizační hierarchie")
+![Organizační hierarchie](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Kategorie produktu
 Stejně tak na straně produktu můžete zahrnout skupiny produktů pomocí hierarchie kategorií produktu. Můžete konfigurovat sortimenty zahrnutím jednoho nebo více uzlů hierarchie kategorií. V tomto případě bude sortiment obsahovat všechny produkty v tomto uzlu kategorie a jeho podřízených uzlech.
 
-![Kategorie produktu](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure5.png?raw=true "Kategorie produktu")
+![Kategorie produktu](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Vyloučené produkty nebo kategorie
 Kromě zahrnutí produktů a kategorií do sortimentů můžete použít možnost Vyloučit pro definování specifických produktů nebo kategorií, které mají být vyloučeny ze sortimentů. V následujícím příkladu chcete zahrnout všechny produkty do specifické kategorie, kromě produktu 2. V takovém případě nemusíte definovat produkt sortimentu podle produktu nebo vytvořit další uzly kategorie. Místo toho můžete pouze zahrnout kategorii, ale vyloučit produkt.
@@ -61,7 +62,7 @@ Kromě zahrnutí produktů a kategorií do sortimentů můžete použít možnos
 > [!NOTE]
 > Pokud je produkt současně zahrnut a vyloučen v jednom nebo více sortimentech podle svojí podstatou, produkt bude vždy považován za vyloučený.
 
-![Vyloučený produkt](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure6.png?raw=true "Vyloučený produkt")
+![Vyloučené produkty](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Globální a uvolněné produkty
 Sortimenty definované na úrovni globálního a může obsahovat kanálů z více právnických osob. Produkty a kategorie, které jsou zahrnuty v sortimentech, jsou také sdíleny mezi právnickými osobami. Produkt je však nutné uvolnit předtím, než ho lze prodat, objednat, spočítat nebo přijmout v daném kanálu (například v pokladním místě \[POS\]). Přestože dva obchody v různých právnických osobách mohou sdílet sortiment obsahující stejné produkty, produkty jsou k dispozici pouze v případě, že byly uvolněny do těchto právnických osob.

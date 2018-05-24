@@ -1,6 +1,6 @@
 ---
 title: "Vytvoření plateb dodavatele pomocí návrhu platby"
-description: "Toto téma obsahuje přehled možností návrhu platby a nabízí příklady zobrazující, jak návrh plateb funguje. Návrhy plateb jsou často používány k vytvoření platby dodavatele, protože dotaz umožňuje rychle vybrat faktury dodavatele pro platbu na základě kritérií, jako jsou data splatnosti a platební slevy."
+description: "Toto téma obsahuje přehled možností návrhu platby a nabízí příklady zobrazující, jak návrh plateb funguje."
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 04/04/2018
@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1199329f7d669a291249e22e393842673a8907c3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5afdace14d1db4b36027634b3af3df1029ae12a2
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Vytvoření plateb dodavatele pomocí návrhu platby
+# <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Vytvoření plateb dodavatelů pomocí návrhu platby
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma obsahuje přehled možností návrhu platby a nabízí příklady zobrazující, jak návrh plateb funguje. Návrhy plateb jsou často používány k vytvoření platby dodavatele, protože dotaz umožňuje rychle vybrat faktury dodavatele pro platbu na základě kritérií, jako jsou data splatnosti a platební slevy. 
 
@@ -47,7 +47,7 @@ Dotaz na návrh platby obsahuje různé karty, z nichž každá má různé mož
 - **Kontrola zůstatku dodavatele** – je-li tato možnost je nastavena na **Ano**, systém potvrdí, že dodavatel nemá záporný zůstatek před zaplacením jakékoli faktury. Pokud dodavatel má záporný zůstatek, nebude vytvořena žádná platba. Dodavatel může mít například dobropisy nebo platby, které byly zaúčtovány, ale dosud nebyly vyrovnány. V takovém případě by neměla být platba dodavateli odeslána. Místo toho by měly být dobropisy nebo platby vyrovnány s ohledem na nevyřízené faktury.
 - **Odstranit záporné platby** – tuto možnost lze použít různě, v závislosti na tom, zda jsou platby vytvořeny pro jednotlivé faktury nebo součet faktur, které splňují kritéria platby. Toto chování je definováno pro metodu platby.
 - **Platba pro každou fakturu** – pokud možnost **Odstranit záporné platby** je nastavena na **Ano** a nevyrovnané faktury a platby existují u dodavatele, jsou k platbě vybrány pouze faktury. Stávající platba je poté vyrovnána podle faktury. Pokud možnost **Odstranit záporné platby** je nastavena na **Ne**, a faktura a platba není vyrovnána, faktura i platba jsou vybrány pro platbu. Vytvoří se platba pro platbu a vytvoří se vrácení (záporná platba) pro platbu.
-- <strong>Platby pro součet faktur</strong> – pokud je možnost <strong>Odstranit záporné platby</strong> nastavena na <strong>Ano</strong>, a nevyrovnané faktury a platby existují pro dodavatele, nevyrovnané faktury i platby jsou vybrány pro platbu, a částky budou přidány společně k vytvoření celkové placené částky. Jediná výjimka nastane, pokud částka vyústí v refundaci. V takovém případě nebude vybrána faktura ani platba. Pokud je možnost <strong>Odstranit záporné platby **nastavena na **Ne</strong> a faktura ani platba není vyrovnána, faktury i platby jsou vybrány pro platbu, a částky budou přidány společně k vytvoření celkové placené částky.
+- **Platby pro součet faktur** – pokud je možnost **Odstranit záporné platby** nastavena na **Ano**, a nevyrovnané faktury a platby existují pro dodavatele, nevyrovnané faktury i platby jsou vybrány pro platbu, a částky budou přidány společně k vytvoření celkové placené částky. Jediná výjimka nastane, pokud částka vyústí v refundaci. V takovém případě nebude vybrána faktura ani platba. Pokud je možnost **Odstranit záporné platby** nastavena na **Ne**, a faktura ani platba není vyrovnána, faktury i platby jsou vybrány pro platbu, a částky budou přidány společně k vytvoření celkové placené částky.
 - **Pouze tisk sestavy** – nastavte tuto možnost **Ano**, pokud chcete vidět výsledky návrhu platby v sestavě, ale nechcete vytvářet žádné platby.
 - **Zahrnout faktury dodavatelů od ostatních právnických osob** - Pokud má vaše organizace centralizované zpracování plateb a návrh platby by měl mít zahrnuté faktury od ostatních právnických osob, které jsou zahrnuty do kritérií hledání, nastavte tuto možnost na **Ano**.
 - **Navrhnout samostatnou platbu dodavatele za každou právnickou osobu** – je-li tato možnost nastavena na **Ano**, pro každou právnickou osobu u každého dodavatele je vytvořena samostatná platba. Dodavatele u platby je dodavatelem z faktury od každé právnické osoby. Pokud je tato možnost nastavena na **Ne** a stejný dodavatel má faktury z více právnických osob, bude vytvořena jediná platba na celkovou částku vybraných faktur. Dodavatel pro platbu je dodavatel od aktuální právnické osoby. Pokud účet dodavatele u aktuální právnické osoby neexistuje, bude použit účet dodavatele pro první splatnou fakturu.
@@ -115,7 +115,8 @@ Kontrola dimenzí umožňuje kontrolovat seskupení generovaných řádků podle
 -   Pole **Kontrola dimenzí** je aktivováno bez dalšího definování dimenzí Návrh platby bude vytvořen bez ohledu na dimenzi. Vytvořená transakce nedědí žádné dimenze z aplikované položky.
 -   Pole **Kontrola dimenzí** je aktivováno a jsou povoleny další dimenze. Nyní můžete definovat, jak dimenze budou zkopírovány do deníku. Například: • vyberte zaškrtávací políčko **BusinessUnit**, chcete-li vytvořit návrh platby podle organizační jednotky pro metodu platby • vyberte zaškrtávací políčko **CostCenter**, chcete-li vytvořit návrh platby podle nákladového střediska pro metodu platby.
 
-**Poznámka:** Pokud ve třetí možnosti vyberete více dimenzí, dojde k vytvoření návrhu platby pro danou kombinaci dimenzí.
+> [[!NOTE]
+> Pokud ve třetí možnosti vyberete více dimenzí, dojde k vytvoření návrhu platby pro danou kombinaci dimenzí.
 
 #### <a name="bank-account-selection"></a>Výběr účtu
 

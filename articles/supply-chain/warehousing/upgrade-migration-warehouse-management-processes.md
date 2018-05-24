@@ -1,5 +1,5 @@
 ---
-title: "Migrace produktů a řízení skladu z aplikace AX 2012 do aplikaci Finance and Operations"
+title: "Upgrade procesů řízení skladu z aplikace Microsoft Dynamics AX 2012 na aplikaci Finance and Operations"
 description: "Toto téma poskytuje přehled možností migrace produktů a řízení skladu."
 author: perlynne
 manager: AnnBe
@@ -19,56 +19,52 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 92d0b4dd9611de4d717f30dc8736c673835bea29
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e0ff3a22b89ce22096198d2e1dd1ea9ed10239a9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="migrate-products-and-warehouse-management-from-ax-2012-to-finance-and-operations"></a>Migrace produktů a řízení skladu z aplikace AX 2012 do aplikaci Finance and Operations
+# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Upgrade procesů řízení skladu z aplikace Microsoft Dynamics AX 2012 na aplikaci Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled možností migrace produktů a řízení skladů v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+Toto téma obsahuje přehled procesu upgradu aplikace Microsoft Dynamics AX 2012 R3 s modulem spuštění WMSII do modulu Microsoft Dynamics 365 for Finance and Operations.
 
-<a name="introduction"></a>Úvod
-------------
+Finance and Operations již nepodporuje zastaralý modul **WMSII** aplikace Microsoft Dynamics AX 2012. Místo toho můžete použít modul **Řízení skladu**. V modulu WMSII by mohlo být možné vybrat dimenze Skladové místo a ID palety pro finanční zásoby, dimenzi zásob ID palety však nelze použít pro finanční zásoby v modulu Finance and Operations.
 
-Během upgradu na aplikaci Finance and Operations jsou blokovány produkty, pokud mají přidruženou skupinu dimenzí úložiště, která obsahuje nastavení nesplňující požadavky na nastavení skupiny dimenze úložiště dané aplikací Finance and Operations. Po upgradu však můžete možnosti sady migrace v procesu **změnit skupinu dimenzí úložiště položek** použít k odblokování produktů, které byly zablokovány během upgradu. Poté můžete zpracovávat transakce k těmto produktům. Některé položky mohou již souviset se skupinami dimenze úložiště, kde jsou aktivní a fyzicky sledované dimenze Pracoviště, Sklad a Místo. V takovém případě můžete použít proces **Změnit skupinu dimenze úložiště položek**, aby bylo možné používat tyto položky v procesech správy skladu. Tato funkce je užitečná, pokud chcete použít funkci správy skladu pro existující položky.
+Během upgradu jsou všechny produkty, které jsou přiřazeny ke skupině dimenzí úložiště, která používá dimenzi zásob ID palety, označené jako blokované a Nezpracováno pro upgrade.
 
 ## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Upgrade na Finance and Operations při použití aplikace AX 2012 R3 WMSII
-Finance and Operations již nepodporuje zastaralý modul **WMSII** aplikace Microsoft Dynamics AX 2012. Místo toho můžete použít nový modul **Řízení skladu**. V předchozích verzích bylo možné vybírat dimenze Místo a ID palety pro finančních zásoby. V rámci procesu upgradu však již nelze dimenzi zásob ID palety povolit pro finanční zásoby. Všechny produkty, které jsou přidružené ke skupině dimenzí úložiště, jež používá dimenzi zásob ID palety, bude zablokována a nebude zpracována.
+Po upgradu však můžete možnosti sady migrace v procesu **změnit skupinu dimenzí úložiště položek** použít k odblokování produktů, které byly zablokovány během upgradu, a následně zpracovat transakce pro tyto produkty.
 
 ### <a name="enabling-items-in-finance-and-operations"></a>Povolení položek v aplikaci Finance and Operations
+V aplikaci Finance and Operations je tato změna potřeba, protože sledování položky je součástí procesů řízení skladu. Pro tyto procesy musí být všechny sklady a jejich umístění spojena s profilem skladového místa. Konceptuálně platí, že pokud chcete používat procesy řízení skladů, je nutné nakonfigurovat následující:
+-   Existují sklady musí být povoleny, aby bylo možné používat procesy správy skladu. 
+-   Existující uvolněné produkty musí mít přiřazenu skupinu dimenzí úložiště, která používá procesy správy skladu. 
 
-V aplikaci Finance and Operations musí být položky, které budou použity jako součást procesů správy skladu, přidruženy ke skupině dimenze úložiště, kde je vybrán parametr **Používat procesy správy skladu**. Pokud je vybráno toto nastavení, budou aktivní dimenzí zásob pracoviště, sklad, stav skladu, umístění a registrační značku vozidla. Na tento typ skupiny dimenze úložiště můžete přejít pouze u položek, které jsou již přidruženy ke skupinám dimenzí úložiště, kde je aktivní skladové místo skladových zásob.
+Pokud zdrojové skupiny dimenze úložiště používají dimenzi zásob ID palety, musí být umístění stávajících zásob na skladě, které používají dimenzi skladu ID palety přidružené k profilu umístění, kde je vybrán parametr **Použít sledování registrační značky**. Pokud nemusí být stávající sklady povoleny, aby mohly používat procesy řízení skladů, můžete změnit skupiny dimenzí úložiště ze stávajících zásob na skladě do skupin, které zpracovávají pouze dimenze Pracoviště, Sklad a Umístění zásob. 
 
-### <a name="items-that-are-blocked-for-inventory-updates"></a>Položky se zablokovanými aktualizacemi zásob
+> [!NOTE] 
+>  Můžete změnit skupinu dimenze úložiště i v případě, že existují otevřené skladové transakce.
 
+## <a name="find-products-that-were-blocked-because-of-pallet-id"></a>Vyhledejte produkty, které byly blokovány z důvodu ID palety
 Pokud chcete zobrazit seznam vydaných produktů, které byly zablokovány během upgradu a nelze je zpracovat, klikněte na tlačítko **řízení zásob** &gt; **Nastavení** &gt; **zásoby** &gt; **Položky blokované pro aktualizaci zásob**.
 
-### <a name="reapplying-blocked-products"></a>Opětovné použití blokovaných produktů
+## <a name="change-storage-dimension-group-for-blocked-products"></a>Změnit skupinu dimenze úložiště Blokované produkty 
+ 
+Položky, které budou použity jako součást procesů správy skladu, musí být přidruženy ke skupině dimenze úložiště, kde je vybrán parametr **Používat procesy správy skladu**, aby mohly být použity jako součást procesu řízení skladu. Pokud je vybráno toto nastavení, budou aktivní dimenzí zásob pracoviště, sklad, stav skladu, umístění a registrační značku vozidla.
 
 Pokud chcete odblokovat produkty, které byly zablokovány během upgradu, musíte vybrat novou skupinu dimenzí úložiště pro produkty. Mějte na paměti, že můžete změnit skupinu dimenze úložiště i v případě, že existují otevřené skladové transakce. Chcete-li používat položky, které byly zablokovány během upgradu, jsou k dispozici dvě možnosti:
 
 -   Změňte skupinu dimenze úložiště pro položku na skupinu dimenzí úložiště, která používá pouze dimenze Pracoviště, Sklad a Místo. Výsledkem této změny je, že se přestane používat dimenze zásob ID palety.
 -   Změňte skupinu dimenze úložiště pro položku na skupinu dimenzí úložiště, která používá proces řízení skladů. Výsledkem této změny je, že se nyní začne používat dimenze Registrační značka.
 
-### <a name="migration-processes"></a>Procesy migrace
-
-V aplikaci Finance and Operations je sledování položky součástí procesů řízení skladu. Pro tyto procesy musí být všechny sklady a jejich umístění spojena s profilem skladového místa. Konceptuálně platí, že pokud chcete používat procesy řízení skladů, je nutné zpracovat dva procesy:
-
--   Existují sklady musí být povoleny, aby bylo možné používat procesy správy skladu.
--   Existující uvolněné produkty musí mít přiřazenu novou skupinu dimenzí úložiště, která používá procesy správy skladu.
-
-Pokud zdrojové skupiny dimenze úložiště používají dimenzi zásob ID palety, musí být umístění stávajících zásob na skladě, které používají dimenzi skladu ID palety přidružené k profilu umístění, kde je vybrán parametr **Použít sledování registrační značky**. Pokud nemusí být stávající sklady povoleny, aby mohly používat procesy řízení skladů, můžete změnit skupiny dimenzí úložiště ze stávajících zásob na skladě do skupin, které zpracovávají pouze dimenze Pracoviště, Sklad a Umístění zásob.
-
-### <a name="using-the-warehouse-management-processes"></a>Použití procesů řízení skladu
-
+## <a name="configure-warehouse-management-processes"></a>Konfigurovat procesy řízení skladu
 Než bude možné použít vydané produkty v modulu **Řízení skladu**, musí produkty používat skupinu dimenze úložiště, ve které je vybraný parametr **Používat procesy řízení skladu**.
 
-#### <a name="enable-warehouses-to-use-warehouse-management-processes"></a>Povolení skladům používat procesy řízení skladu
+### <a name="enable-warehouses-to-use-warehouse-management-processes"></a>Povolení skladům používat procesy řízení skladu
 
 1.  Vytvořte alespoň jeden nový profil skladového místa
 2.  Klikněte na **řízení skladu** &gt; **Nastavení** &gt; **Povolit procesy řízení skladu** &gt; **Povolit nastavení skladu**.
@@ -77,7 +73,7 @@ Než bude možné použít vydané produkty v modulu **Řízení skladu**, musí
 5.  Ověřte změny. V rámci procesu ověření probíhají různá ověření integrity dat. V rámci rozsáhlejšího procesu upgradu může být nutné upravit problémy, které nastanou, ve zdrojové implementaci. V tomto případě bude vyžadován další upgrade dat.
 6.  Zpracujte změny.
 
-#### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-warehouse-management-processes"></a>Změňte skupinu dimenzí úložiště pro položky tak, aby používaly procesy řízení skladu.
+### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-warehouse-management-processes"></a>Změňte skupinu dimenzí úložiště pro položky tak, aby používaly procesy řízení skladu.
 
 1.  Vytvořte novou hodnotu **Stav zásob** a přiřaďte ji jako **výchozí ID stavu zásob** v nastavení **parametry správy skladu**.
 2.  Vytvořte novou skupinu dimenzí úložiště, kde je vybrán parametr **používat procesy správy skladu**.
@@ -87,6 +83,4 @@ Než bude možné použít vydané produkty v modulu **Řízení skladu**, musí
 6.  Na stránce **Změnit skupinu dimenzí úložiště položek** přidejte čísla položky, skupiny dimenze úložiště a skupiny klasifikace jednotek. Tento krok můžete dokončit přímo na stránce pomocí integrace Microsoft Office nebo procesu entity dat v modulu [Správa dat](../../dev-itpro/data-entities/data-entities.md).
 7.  Ověřte změny. V rámci procesu ověření probíhají různá ověření integrity dat. V rámci rozsáhlejšího procesu upgradu může být nutné upravit problémy, které nastanou, ve zdrojové implementaci. V tomto případě bude vyžadován další upgrade dat.
 8.  Zpracujte změny. Aktualizace všech dimenzí zásob může chvíli trvat. Průběh můžete sledovat pomocí úkolů dávkové úlohy můžete sledovat.
-
-
 

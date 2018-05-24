@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b4b54e97bdebc158adc3bc6d57a6661cd536f5fb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 343e372ad9e29372649e975a5bee16e8913b66c8
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Zřízení Microsoft Dynamics 365 for Talent
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Toto téma vás povede procesem zřízení nového produkčního prostředí pro aplikaci Microsoft Dynamics 365 for Talent. Toto téma předpokládá, že jste si zakoupili aplikaci Talent prostřednictvím poskytovatele cloudového řešení (CSP) nebo smlouvy o podnikové architektuře (EA). Pokud máte existující licenci pro Microsoft Dynamics 365, která obsahuje servisní plán aplikace Talent, a nedaří se vám provést kroky uvedené v tomto tématu, kontaktujte podporu.
 
@@ -54,17 +54,18 @@ Po vytvoření LCS projektu můžete vytvořit zařadit aplikaci Talent do prost
     > K zobrazení existujících prostředí nebo vytváření nových prostředí musí být správce klienta zřizujícího aplikaci Talent přiřazen k licenci PowerApps P2. Pokud vaše organizace nemá PowerApps P2 licenci, můžete jednu získat ze svého CSP nebo ze [stránky s cenami PowerApps](https://powerapps.microsoft.com/en-us/pricing/).
 
 4. Vyberte **Přidat**a poté vyberte prostředí, do kterého chcete aplikaci Talent zřídit.
-5. K odsouhlasení smluvních podmínek vyberte **Ano** a začněte s nasazením.
+5. Pokud chcete, aby prostředí obsahovalo stejnou datovou sadu, jaká se používá ve zkušenosti talentové zkušební jednotky, zaškrtněte políčko Zahrnout ukázková data.  To je vhodné pro dlouhodobá demonstrační nebo školicí prostředí a nikdy se nemá používat pro výrobní prostředí.  Všimněte si, že musíte vybrat tuto možnost při původním nasazení a nemůžete aktualizovat později stávajícího nasazení.
+6. K odsouhlasení smluvních podmínek vyberte **Ano** a začněte s nasazením.
 
     Nové prostředí se zobrazí v seznamu prostředí v navigačním podokně na levé straně. Nelze však začít používat prostředí, dokud není stav nasazení aktualizován na **Nasazeno**. Tento proces trvá obvykle několik minut. Pokud není proces zřízení úspěšný, musíte kontaktovat podporu.
 
-6. Chcete-li začít používat své nové prostředí, zvolte **Přihlásit se do aplikace Talent**.
+7. Chcete-li začít používat své nové prostředí, zvolte **Přihlásit se do aplikace Talent**.
 
 > [!NOTE]
 > Pokud nesplňujete ještě všechny konečné předpoklady, můžete v projektu nasadit zkušební instanci aplikace Talent. Poté můžete tuto instanci použít k vyzkoušení vašeho řešení, dokud všechny předpoklady nesplníte. Pokud použijete nové prostředí pro testování, musíte stejným způsobem opakovat tento postup k vytvoření produkčního prostředí.
 
 > [!NOTE]
-> Prostředí Talent, která jsou vytvořena prostřednictvím LCS, neobsahují ukázková data konfigurovaná pro úkoly lidských zdrojů nebo týkající se konkrétně aplikace Talent. Chcete-li prostředí, které obsahuje ukázková data, doporučujeme, abyste se přihlásili k bezplatnému 60-dennímu [zkušebnímu prostředí Talent](https://dynamics.microsoft.com/en-us/talent/overview/). Přestože zkušební prostředí je vlastněno uživatelem, který o něj požádal, mohou být jiní uživatelé pozváni prostřednictvím rozhraní správy pro Core HR. Zkušební prostředí obsahují fiktivní data, která slouží k bezpečnému prohlížení programu. Nejsou určena k použití jako produkční prostředí. Mějte na paměti, že po vypršení zkušebního prostředí po 60 dnech budou všechna data v prostředí smazána a nelze je obnovit. Můžete se zaregistrovat k novému zkušebnímu prostředí po vypršení platnosti existujícího prostředí.
+> Protože v rámci předplatného aplikace Talent jsou povolena pouze dvě prostředí LCS, můžete zvážit také využití 60denní zkušenbí verze [zkušební prostředí Talent](https://dynamics.microsoft.com/en-us/talent/overview/). Přestože zkušební prostředí je vlastněno uživatelem, který o něj požádal, mohou být jiní uživatelé pozváni prostřednictvím rozhraní správy pro Core HR. Zkušební prostředí obsahují fiktivní data, která slouží k bezpečnému prohlížení programu. Nejsou určena k použití jako produkční prostředí. Mějte na paměti, že po vypršení zkušebního prostředí po 60 dnech budou všechna data v prostředí smazána a nelze je obnovit. Můžete se zaregistrovat k novému zkušebnímu prostředí po vypršení platnosti existujícího prostředí.
 
 ## <a name="select-a-powerapps-environment"></a>Vyberte prostředí PowerApps.
 
@@ -104,35 +105,29 @@ Při spuštění skriptu postupujte následujícím způsobem:
 
 1. Stáhněte soubor ProvisionCDSEnvironment.zip z následujícího umístění: [ProvisionCDSEnvironment scripts](https://go.microsoft.com/fwlink/?linkid=870436)  
 
-2. Rozbalte celý obsah souboru ProvisionCDSEnviroinment.zip soubor do složky.
+2. Ze složky stahování klepněte pravým tlačítkem myši na právě stažený soubor ProvisionCDSEnvironment.zip a vyberte **vlastnosti**.  Pokud se v dolní části dialogového okna Soubor pochází z jiného počítače a může být blokován pro ochranu tohoto počítače, zaškrtněte políčko **Odblokovat** a klepněte na tlačítko **použít** a pak **OK**.
 
-3. Spusťte program Windows PowerShell nebo Windows PowerShell ISE jako správce.
+3. Rozbalte celý obsah souboru ProvisionCDSEnviroinment.zip soubor do složky jiné než kořenové.
 
-   Navštivte téma [Nastavení zásad spouštění](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) a dozvíte se více informací o zásadách spouštění, aby bylo možné spouštět skripty.
+4. Spusťte program Windows PowerShell nebo Windows PowerShell ISE jako správce.
+
+   Navštivte téma [Nastavení zásad spouštění](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) a dozvíte se více informací o zásadách spouštění, aby bylo možné spouštět skripty. Doporučujeme použití příkazu Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process, ale postupujte podle zásad zabezpečení vaší společnosti a po dokončení zavřete okno PowerShell. 
   
-4. V prostředí PowerShell přejděte do složky, kde jste rozbalili soubor, a spusťte následující příkaz, s nahrazením hodnot podle pokynů níže:
+5. V prostředí PowerShell přejděte do složky, kde jste rozbalili soubor, a spusťte následující příkaz, s nahrazením hodnot podle pokynů níže:
  
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
     
    **MyNewEnvironment** má být nahrazena názvem vašeho prostředí. Tento název se objeví v LCS a bude viditelný, když uživatel vybere prostředí Talent, které chce použít. 
 
-   **YourLocation** má být nahrazena jednou z podporovaných oblasteí pro Talent: unitedsates, evropa, austrálie. 
+   **YourLocation** má být nahrazena jednou z podporovaných oblasteí pro Talent: unitedstates, evropa, austrálie. 
 
    Volba **-Podrobné** je volitelná a poskytuje podrobné informace pro odeslání podpoře, když jsou zjištěny problémy.
 
-5. Pokračujte v procesu zajištění.
+6. Pokračujte v procesu zajištění.
  
 
-
 ## <a name="grant-access-to-the-environment"></a>Zřízení přístupu k prostředí
-Ve výchozím nastavení má k prostředí přístup globální správce, který ho vytvořil. Dalším uživatelům aplikace musí být explicitně udělen. Chcete-li udělit přístup, [přidáte uživatele](../dev-itpro/sysadmin/tasks/create-new-users.md) a [přiřadíte jim příslušné role](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) v prostředí Core HR. Je také nutné přidat tyto uživatele do prostředí PowerApps, aby měli přístup k aplikacím Attract a Onboard. Postup je popsán zde. Jestliže požadujete pomoc k dokončení kroků, přečtěte si příspěvek blogu [Představení centra správy PowerApps](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/).
+Ve výchozím nastavení má k prostředí přístup globální správce, který ho vytvořil. Dalším uživatelům aplikace musí být explicitně udělen. Chcete-li udělit přístup, [přidáte uživatele](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) a [přiřadíte jim příslušné role](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) v prostředí Core HR. Globální správce, který nasadil aplikaci Talent, musí také spustit aplikaci Attract i Onboard k dokončení inicializace a povolit přístup pro ostatní uživatele klienta.  Dokud k tomu nedojde, ostatní uživatelé nebudou mít přístup do aplikací Attract a Onboard a získáte chyby narušení přístupu.
 
-Dokončení tohoto postupu provede globální správce, který nasadil prostředí Talent.
-
-1. Otevřete [Centrum správy PowerApps](https://preview.admin.powerapps.com/environments).
-2. Zvolte příslušná prostředí.
-3. Na kartě **Zabezpečení** přidejte požadované uživatele k roli **Tvůrce prostředí**.
-
-    Všimněte si, že tento poslední krok manuálního přidání uživatelů do prostředí PowerApps je dočasný. Popřípadě bude dokončen automaticky po přidání uživatelů do Core HR.
 

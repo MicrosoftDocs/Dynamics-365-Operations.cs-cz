@@ -1,6 +1,6 @@
 ---
 title: "Vyhledávání produktů a variant produktu během zadání objednávky"
-description: "Použijte pole <strong>Číslo položky </strong>k vyhledání produktů a variant produktů, až budete ručně vytvářet řádek prodejní objednávky nebo řádek nákupní objednávky.  Tímto způsobem můžete rychle vyhledat varianty produktu, pokud máte k dispozici pouze konfigurační řetězec nebo jednu z dimenzí produktu."
+description: "Použijte pole **Číslo položky** k vyhledání produktů a variant produktů, až budete ručně vytvářet řádek prodejní objednávky nebo řádek nákupní objednávky. Tímto způsobem můžete rychle vyhledat varianty produktu, pokud máte k dispozici pouze konfigurační řetězec nebo jednu z dimenzí produktu."
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
@@ -20,20 +20,20 @@ ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2441f7cbf95512677f62eb862be99af90f3c4b17
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d6a45d89ba20994c06a77c646fa5099fa34b3b2e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Vyhledávání produktů a variant produktu během zadání objednávky
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [Retail name](../includes/retail-name.md)]
+[!include [Retail name](../includes/retail-name.md)]
 
-Použijte pole <strong>Číslo položky </strong>k vyhledání produktů a variant produktů, až budete ručně vytvářet řádek prodejní objednávky nebo řádek nákupní objednávky.  Tímto způsobem můžete rychle vyhledat varianty produktu, pokud máte k dispozici pouze konfigurační řetězec nebo jednu z dimenzí produktu.
+Použijte pole **Číslo položky** k vyhledání produktů a variant produktů, až budete ručně vytvářet řádek prodejní objednávky nebo řádek nákupní objednávky.  Tímto způsobem můžete rychle vyhledat varianty produktu, pokud máte k dispozici pouze konfigurační řetězec nebo jednu z dimenzí produktu.
 
 V některých případech mít příliš moc něčeho není tou nejlepší situací, zejména pokud prodáváte více produktů, které jsou si podobné a vy se snažíte zapamatovat si čísla položek nebo vyhledávací názvy produktů, abyste našli správný produkt do prodejní objednávky. Jako vyhledávací pole lze použít pole **číslo položky** na řádku prodejní objednávky nebo řádku nákupní objednávky. Můžete zadat libovolnou část názvu produktu, čísla nebo dimenze a získat vyhledání, které zobrazuje všechny položky, které odpovídají hledanému slovu.
 
@@ -47,7 +47,7 @@ Při hledání produktu nebo varianty produktu, je třeba pochopit, jak funkce h
 
 ### <a name="examples"></a>Příklad
 
-Následující příklady využívají produkty a varianty produktů, aby ilustrovaly způsob, jak hledání probíhá v různých situacích. **Předpoklad:** V části **Prodej a marketing &gt; Nastavení &gt; Hledat &gt; Parametry vyhledávání** &gt; **Typ vyhledávání** vyberte možnost **Úplná shoda**.
+Následující příklady využívají produkty a varianty produktů, aby ilustrovaly způsob, jak hledání probíhá v různých situacích. **Předpoklad:** V části **Prodej a marketing &gt; Nastavení &gt; Hledat &gt; Parametry hledání &gt; Typ hledání** vyberte možnost **Úplná shoda**.
 
 | Typ produktu     | Název produktu    | Zobrazit číslo produktu | Č. položky | Konfigurace |
 |------------------|-----------------|------------------------|-------------|---------------|
@@ -72,7 +72,7 @@ Příklady identifikátorů produktu a variant produktu i dimenzí, podle nichž
 
 Přejděte na stránku **Prodej a marketing &gt; Nastavení &gt; Vyhledávání &gt; Kritéria vyhledávání**. Stránka **Kritéria vyhledávání** vám umožňuje definovat kritéria pro odběratele, potenciální zákazníky a vyhledávání produktu. Ověřte, že stránku filtrujete pomocí kritérií vyhledávání produktu. To můžete provést přepnutím do **Produkt** v nabídce na stránce.  
 
-Pokud chcete do kritérií vyhledávání přidat číslo zobrazeného produktu, klikněte na <strong>Nový</strong> v nabídce stránky. To přidá nový záznam do mřížky <strong>Kritéria hledání</strong>. Otevřete sloupec vyhledávání <strong>Název pole</strong> a vyberte <strong>DisplayProductNumber</strong>. Chcete-li přidat konfiguraci produktu ke kritériím hledání, vytvořte nový záznam v mřížce <strong>Kritéria vyhledávání ** a vyberte **configId</strong> v sloupci <strong>Název pole</strong>. Stejným způsobem vytvořte záznam s <strong>Název_pole</strong> <strong>InventColorId</strong> pro dimenzi barvy, <strong>InventSizeId</strong> pro dimenzi velikosti a <strong>InventStyleId</strong> pro dimenzi stylu.
+Pokud chcete do kritérií vyhledávání přidat číslo zobrazeného produktu, klikněte na **Nový** v nabídce stránky. To přidá nový záznam do mřížky **Kritéria hledání**. Otevřete sloupec vyhledávání **Název pole** a vyberte **DisplayProductNumber**. Chcete-li přidat konfiguraci produktu ke kritériím hledání, vytvořte nový záznam v tabulce **Kritéria vyhledávání** a vyberte **configId** v sloupci **Název pole**. Stejným způsobem vytvořte záznam s **Název_pole** **InventColorId** pro dimenzi barvy, **InventSizeId** pro dimenzi velikosti a **InventStyleId** pro dimenzi stylu.
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Krok 2: Vyplňte tabulku databáze, která se používá pro hledání produktu
 

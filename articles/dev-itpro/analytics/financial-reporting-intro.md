@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f4b70f1aee6b0b55a41dbfd33fcd1216579bb78c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 54a3409e7bd0f1c704cf9f7dd1d860100ec83d7f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-reporting-for-finance-and-operations"></a>Finanční výkaznictví v aplikaci Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Finanční výkaznictví v aplikaci Finance and Operations je nástroj, pomocí kterého mohou pracovníci v oblasti financí a obchodu vytvářet, spravovat, nasazovat a kontrolovat finanční výkazy. Obchází omezení tradičních sestav a pomáhá efektivně navrhnout různé typy sestav.
 
@@ -97,7 +97,7 @@ Následující součásti finančního výkaznictví umožňují snadné vytvá�
 </tbody>
 </table>
 
-## <a name="see-also"></a>Viz také
+## <a name="additional-resources"></a>Další zdroje
 [Generování finanční sestavy](generate-financial-report.md)
 
 

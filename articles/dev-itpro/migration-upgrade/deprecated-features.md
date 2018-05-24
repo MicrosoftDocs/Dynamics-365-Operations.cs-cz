@@ -3,7 +3,7 @@ title: "Zastaralé funkce"
 description: "Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění."
 author: sericks007
 manager: AnnBe
-ms.date: 03/22/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e629673c3a923ec74809e276ec39464bfacda124
+ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
+ms.openlocfilehash: c935b0c14f09b0a3a738266e4c9c577c96f0ea77
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
@@ -78,13 +78,13 @@ Tyto dvě sestavy již nejsou podporovány v aplikaci Finance and Operations. Na
 | **Možnost nasazení**        | Všechna|
 | **Stav**                       | Zastaralé: Položky nabídky pro tyto dvě sestavy byly odstraněny ve verzi 7.3. Kód pro sestavy však zůstane v produktu. V plánu je kód odstranit v budoucích verzích. |
 
-### <a name="power-bi-content-packs-published-to-powerbicom"></a>Balíčky obsahu Power BI publikované do PowerBI.com
-Balíčky obsahu **Řízení nákladů**, **Finanční výkonnost** a **Výkonnost maloobchodního kanálu**, které byly publikovány na webu PowerBI.com, jsou zastaralé v důsledku aktualizace produktů v Microsoft Power BI. Formuláře správy systému používané k nasazení těchto balíčků obsahu do PowerBI.com obsahu jsou také zastaralé v aplikaci Finance and Operations.
+### <a name="power-bi-content-packs-available-on-appsource"></a>Sada obsahu BI dostupná v AppSource
+Balíčky obsahu **Řízení nákladů**, **Finanční výkonnost** a **Výkonnost maloobchodního kanálu**, které byly publikovány na webu [Microsoft AppSource](https://appsource.microsoft.com), jsou zastaralé v důsledku aktualizace produktů v Microsoft Power BI. Formuláře správy systému používané k nasazení těchto balíčků obsahu do PowerBI.com obsahu jsou také zastaralé v aplikaci Finance and Operations.
 
 |   |  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Aktualizace produktu v Microsoft Power BI. |
-| **Nahrazeno jinou funkcí?**   | Balíčky obsahu Power BI (publikované do PowerBI.com) jsou nahrazeny analytickými aplikacemi, které umožňují integrace řešení na úrovni databáze. Další informace o analytických aplikacích naleznete v tématu [Embedded Power BI v pracovních prostorech](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Nahrazeno jinou funkcí?**   | Balíčk y obsahu**Řízení nákladů**, **finanční výsledky**, a **maloobchodní sítě výkonu**, které jsou k dispozici na webu [AppSource](https://appsource.microsoft.com), jsou nahrazeny analytickými aplikacemi umožňujícími integraci řešení na úrovni databáze. Další informace o analytických aplikacích naleznete v tématu [Embedded Power BI v pracovních prostorech](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Ovlivněné oblasti produktu**         | Řízení nákladů, Finance a Maloobchod                                                                                               |
 | **Možnost nasazení**              | Pouze cloud (Inntegrace s PowerBI.com není podporována v místních nasazeních).                                                                                                            |
 | **Stav**                         | Zastaralé: Plánovaná doba pro odstranění funkcionality je druhé čtvrtletí roku 2018.    |

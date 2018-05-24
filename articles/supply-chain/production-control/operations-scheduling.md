@@ -20,16 +20,16 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 81dec9d988b22959df5421b7b84ef532a28e1228
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 660d6b2dfb5fbed58a5c28b77aac3bb4604c7d8d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="operations-scheduling"></a>Plánování operací
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma obsahuje obecné informace o plánování operací. Plánování operací můžete použít, když je třeba získat obecný odhad výrobního procesu v čase.
 
@@ -75,7 +75,7 @@ Když spustíte plánování operací, můžete zrušit konkrétní částí pos
 ## <a name="finite-materials"></a>Omezený materiál
 Pokud pracujete s hotovými materiály, plánování je závislé také na dostupnosti materiálů potřebných k výrobě. Pokud není k dispozici dostatek součástí pro výrobu, může být výroba zpožděna. Plánování můžete založit na použití materiálů zadáním materiálů, které musí být k dispozici pro výrobu. Při optimalizaci kapacity prostředků a dostupnosti materiálů je výroba vypočtena podle těchto omezení. Zahájení výrobní zakázky nelze naplánovat, dokud nebude k dispozici veškerá kapacita a materiály současně a v požadovaných množstvích.
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Možnosti plánování operací](operation-scheduling-options.md)

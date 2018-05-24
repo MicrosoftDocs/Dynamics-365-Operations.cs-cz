@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8931908fbf643a8154da70d2ad065ea47d2aa4e6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3d7afda9371b4d21e58f2e56de3d477b1c9950a1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="maintain-planned-orders"></a>Spravovat plánované objednávky
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek obsahuje informace o postupu správy plánovaných objednávek. Popisuje, jak můžete aktualizovat stav plánovaných objednávek, upevnit je a zobrazit filtr plánovaných objednávek, které mají stejný stav, jako vybraná plánovaná objednávka.
 
@@ -47,7 +47,7 @@ Naplánované objednávky lze spravovat v pracovním prostoru **Hlavní plánov�
 
 Když je plánovaná objednávka potvrzena, přesune se do částí objednávek příslušného modulu. **Poznámka:** Můžete kliknout pravým tlačítkem na plánovanou objednávku s určitým stavem a pomocí filtru zobrazit ostatní objednávky se stejným stavem. Tato funkce je užitečná, pokud například chcete zobrazit všechny plánované objednávky, které mají stav **Schváleno**, abyste je mohli poté potvrdit.
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Hlavní plány](master-plans.md)

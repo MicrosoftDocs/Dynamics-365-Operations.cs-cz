@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4252112272e2f86c2c18dc399a713bf652e4228e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6ab1d60839131b3d4bb1782319754ba63d54cfd7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vendor-collaboration-with-customers"></a>Dodavatelská spolupráce se zákazníky
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci se zákazníky v aplikaci Microsoft Dynamics 365 for Finance and Operations. Dodavatelé mohou dokončit řadu obchodních procesů z následujících pracovních prostorů:
 
@@ -141,7 +141,7 @@ Jako dodavatel můžete přistupovat k části informací, které odběratel spr
 
 Dostupné informace jsou název dodavatele, adresy, kontaktní informace, kontaktní osoby a jejich kontaktní informace, identifikační čísla, registrační čísla daně, kategorie zásobování, pro které je dodavatel schválen při prodeji odběrateli, a informace o certifikátech.
 
-## <a name="see-also"></a>Viz také
+## <a name="additional-resources"></a>Další zdroje
 
 [Správa uživatelů dodavatelské spolupráce](manage-vendor-collaboration-users.md)
 

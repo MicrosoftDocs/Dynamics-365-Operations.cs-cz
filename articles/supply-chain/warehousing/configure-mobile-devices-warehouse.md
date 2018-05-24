@@ -19,16 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e0033461e7cd2601993c006aba2ec7c8f6ac0c89
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: bb0d6af3a17653ea33e3f84a416bda244a27507c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Nastavení mobilních zařízení pro práci ve skladu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek popisuje způsob konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení.
 
@@ -407,10 +407,10 @@ Následující tabulka popisuje různé typy práce, se kterým můžete použí
 
 **Poznámka:** Můžete požádat o potvrzení produktu pouze pro výdej a vložení typů práce.
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
-[Nastavení displeje mobilního zařízení skladu](change-warehouse-mobile-device-displays.md)
+[Nastavení zobrazení skladových mobilních zařízení](change-warehouse-mobile-device-displays.md)
 
 [Nastavení položky nabídky v mobilním zařízení pro dokončení práce typu Nákupní objednávka (Průvodce úkolem)](tasks/set-up-mobile-device-menu.md)
 

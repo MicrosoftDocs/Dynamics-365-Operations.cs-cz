@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 69766e1bf37955bfd4d7253c1b7881780d491d1c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 683d3de59a427df296bb0d3d644f0ec23b3a8e5e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="report-designer-interface"></a>Rozhraní Návrháře sestav
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek vysvětluje, jak navigovat v návrháři sestav, a jak používat různé možnosti podle specifických požadavků. 
 
@@ -220,11 +220,11 @@ Panel nástrojů návrháře sestav poskytuje rychlý přístup k příkazům na
 | [![Tlačítko Definice sloupce](./media/columnc130389.png)](./media/columnc130389.png)                 | Zobrazí definici sloupců, která je přiřazena k definici aktivní sestavy.                                                                                                 |
 | [![Tlačítko Definice stromu výkaznictví](./media/treec130389.png)](./media/treec130389.png)             | Zobrazí definici organizačního stromu, která je přiřazena k definici aktivní sestavy.                                                                                         |
 | [![Tlačítko Report Viewer](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Spustí Prohlížeč sestav s nejnovější verzí vygenerované sestavy. Toto tlačítko je dostupné z definice sestavy, pokud jste vygenerovali alespoň jednu sestavu. |
-| [![Tlačítko Generovat sestavu](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Vygeneruje sestavu z aktivní definice sestavy. Toto tlačítko je k dispozici z definice sestavy.                                                                      |
+| [![Tlačítko Generovat sestavu](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Vygeneruje sestavu z definice aktivní sestavy. Toto tlačítko je dostupné z definice sestavy.                                                                      |
 
 
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Finanční výkaznictví](financial-reporting-intro.md)

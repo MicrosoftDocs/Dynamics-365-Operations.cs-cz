@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3679ccf304a32385c162ba3663eba2300f028817
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5599135eebfcffdedaaadec86beb214c5c04cbaf
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-report-components"></a>Součásti finančních sestav
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek popisuje způsob použití komponent nebo stavebních bloků z definic sestavy ve finančních sestavách. Tyto stavební bloky zahrnují definice řádku, definice sloupce a definice stromu výkaznictví. Článek vysvětluje, jak uspořádat a uzamknout stavební bloky. 
 
@@ -109,10 +109,10 @@ Skupinu stavebních bloků můžete importovat do existující skupiny stavební
 Při otevření stavebního bloku mají k tomuto stavebnímu bloku ostatní uživatelé přístup pouze pro čtení. V některých případech uživatel zapomene zavřít stavební blok nebo vypnout svůj systém bez zavření stavebního bloku. V důsledku toho je stavební blok rezervován a ostatní uživatelé ho nemohou otevřít. V těchto situacích může správce finančních sestav použít dialogové okno **Rezervované položky** pro navrácení stavebních bloků, které uživatelé ponechali rezervované. **Poznámka:** Abyste mohli navrátit stavební bloky pomocí dialogového okna **Rezervované položky**, musíte mít roli správce.
 1.  V Návrháři sestav v nabídce **Nástroje** klikněte na tlačítko **Rezervované položky**.
 2.  V dialogovém okně **Rezervované položky** vyberte možnost **Zobrazit položky od všech uživatelů**. Seznam se aktualizuje a zobrazí se v něm všechny rezervované stavební bloky spolu s informacemi o uživatelích, kteří je rezervovali.
-3.  Vyberte stavební blok a klikněte na tlačítko **Zrušit rezervaci**.
-4.  Kliknutím na tlačítko **Ano** zrušíte rezervaci stavebního bloku.
+3.  Vyberte stavební blok a klikněte na položku **Zrušit rezervaci**.
+4.  Kliknutím na tlačítko **Ano** potvrďte, že se má stavební blok vrátit se změnami.
 
-## <a name="see-also"></a>Viz také
+## <a name="additional-resources"></a>Další zdroje
 
 [Finanční výkaznictví](financial-reporting-intro.md)
 

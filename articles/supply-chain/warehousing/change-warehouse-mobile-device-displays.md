@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: b16f4ea27f406f3d5d5957670bd32a73d2d55529
-ms.openlocfilehash: bb616f8102c67db3f8c3e872101d61657b6b64d1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a1413337888c8e2da95e33ebee6528f228ad3972
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="warehouse-mobile-device-display-settings"></a>Nastavení displeje mobilního zařízení skladu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek popisuje, jak nastavit vzhled displeje mobilního zařízení a namapovat klávesové zkratky na ovládací prvky, jako jsou například tlačítka. 
 
@@ -97,7 +97,7 @@ Každý dílčí výraz vyžaduje jednu nebo dvě číslice pro den a měsíc, a
 
 Ve stejném souboru můžete zadat více než jeden výraz. Každý výraz musí být na samostatných řádcích. První shodný výraz slouží k analýze data.
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Konfigurace mobilních zařízení pro práci ve skladu](configure-mobile-devices-warehouse.md)

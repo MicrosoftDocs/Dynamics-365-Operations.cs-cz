@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f3891688542ac6d4f9afce026808c65992a592d4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2642ced283d815ad671512cc5a17e531e9169f91
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="use-tracing-for-explosion"></a>Použití sledování pro rozpad
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V tomto článku je vysvětleno použití sledování k prozkoumání příčin výsledku rozpadu objednávky.
 
@@ -42,7 +42,7 @@ Po povolení sledování můžete zobrazit informace o činitelích, které tvo�
 
 Můžete zobrazit podrobnosti o termínech a akcích pro vybranou objednávku. Na stránce **Rozpad** jsou na kartě **Vysvětlení** v horním podokně k dispozici informace o sledování. K sledování dochází, když rozložíte objednávku. Sledování objednávky zahájíte kliknutím na možnost **Aktualizace**a následným označením zaškrtávacího políčka **Povolit sledování**. Při vyhledávání konkrétních informací v protokolu můžete použít pole **Najít text**. Výsledky hledání jsou zvýrazněny ve stromové struktuře.
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Hlavní plány](master-plans.md)

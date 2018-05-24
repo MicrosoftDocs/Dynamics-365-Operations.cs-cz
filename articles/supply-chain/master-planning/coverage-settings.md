@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 591b1cd739bb3be61299f33f180ca7c264d21a35
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 858328ec60e0ffa5ca46a98b365fb0fc599ae1f0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="coverage-settings"></a>Nastavení pokrytí
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Při hlavním plánování se používá nastavení disponibility k výpočtu požadavků na položku. 
 
@@ -45,11 +45,11 @@ Existuje několik způsobů, jak zadat nastavení disponibility:
 
 <!-- -->
 
-- Nastavení disponibility pro skupinu dimenzí. Klikněte na <strong>Řízení informací o produktech &gt; Společné &gt; Uvolněné produkty</strong>. Na stránce <strong>Podrobnosti o uvolněném produktu** na kartě **Hlavní</strong> ve skupině <strong>Správa</strong> klepněte na odkaz <strong>Skupina dimenze úložiště</strong>. Na stránce <strong>Skupina dimenze úložiště</strong> vyberte pole <strong>Plán disponibility podle dimenzí</strong> a vytvořte tak nastavení disponibility pro dimenzi ve skupině dimenzí úložiště. Všechny dimenze produktu, například jako konfigurace, barva, velikost nebo styl, musí mít vybráno pole <strong>Plán disponibility podle dimenzí</strong>.
+- Nastavení disponibility pro skupinu dimenzí. Klikněte na **Řízení informací o produktech &gt; Společné &gt; Uvolněné produkty**. Na stránce **Podrobnosti o uvolněném produktu** na kartě **Obecné** ve skupině **Správa** klepněte na odkaz **Skupina dimenze úložiště**. Na stránce **Skupina dimenze úložiště** vyberte pole **Plán disponibility podle dimenzí** a vytvořte tak nastavení disponibility pro dimenzi ve skupině dimenzí úložiště. Všechny dimenze produktu, například jako konfigurace, barva, velikost nebo styl, musí mít vybráno pole **Plán disponibility podle dimenzí**.
 
 
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Hlavní plány](master-plans.md)

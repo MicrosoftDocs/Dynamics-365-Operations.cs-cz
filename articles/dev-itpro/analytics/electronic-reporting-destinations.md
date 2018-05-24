@@ -19,16 +19,16 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5c92c1ca3f46d80a58ca315f1f695f082d1929ca
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fb7d0dc8b3ff9e8f1e4ade5cacfeed8f1a6871ab
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="electronic-reporting-destinations"></a>Místa určení elektronického výkaznictví
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Pro každou konfiguraci formátu elektronického výkaznictví (ER) a její komponenty (složku nebo soubor) lze konfigurovat cíl. Uživatelé, kterým jsou udělena přístupová práva, mohou také měnit nastavení cíle v době běhu. Tento článek popisuje správu cílů EV, typy podporovaných cílů a důležité informace o zabezpečení.
 
@@ -51,7 +51,8 @@ Poté, co jste vytvořili odkaz, můžete vytvořit cíl souboru pro každou slo
 
 [![Vytvoření cíle souboru](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-> ![POZNÁMKA] Můžete vytvořit jedno místo určení souboru pro každou komponentu výstupu ve stejném formátu, jako je složka nebo soubor vybraný v poli **Název souboru**. Poté lze povolit nebo zakázat jednotlivé cíle pro cíl souboru v dialogovém okně **Nastavení cíle**. Tlačítko **Nastavení** se používá k řízení všech cílů pro vybraný cíl souboru. V dialogovém okně **Nastavení cíle** lze ovládat samostatně každý cíl nastavením možnosti **Povoleno**.
+> [!NOTE] 
+> Můžete vytvořit jedno místo určení souboru pro každou komponentu výstupu ve stejném formátu, jako je složka nebo soubor vybraný v poli **Název souboru**. Poté lze povolit nebo zakázat jednotlivé cíle pro cíl souboru v dialogovém okně **Nastavení cíle**. Tlačítko **Nastavení** se používá k řízení všech cílů pro vybraný cíl souboru. V dialogovém okně **Nastavení cíle** lze ovládat samostatně každý cíl nastavením možnosti **Povoleno**.
 
 [![Dialogové okno Nastavení cíle](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
 
@@ -130,7 +131,8 @@ Pro cíle EV se používají dva typy oprávnění a povinností. Jeden typ ovl�
 | PaymAccountsPayablePaymentsClerk    | Úředník plateb závazků            | ERFormatDestinationRuntimeConfigure | Konfigurovat místo určení formátu elektronického výkaznictví za běhu |
 | PaymAccountsReceivablePaymentsClerk | Úředník plateb pohledávek         | ERFormatDestinationRuntimeConfigure | Konfigurovat místo určení formátu elektronického výkaznictví za běhu |
 
-> ![POZNÁMKA] V předchozích úkolech jsou použita dvě oprávnění. Tato oprávnění mají stejné názvy jako odpovídající role: **ERFormatDestinationConfigure** a **ERFormatDestinationRuntimeConfigure**.
+> [!NOTE]
+> V předchozích úkolech jsou použita dvě oprávnění. Tato oprávnění mají stejné názvy jako odpovídající role: **ERFormatDestinationConfigure** a **ERFormatDestinationRuntimeConfigure**.
 
 ## <a name="frequently-asked-questions"></a>Časté dotazy
 ### <a name="i-have-imported-electronic-configurations-and-i-see-them-on-the-electronic-reporting-configurations-page-but-why-dont-i-see-them-on-the-electronic-reporting-destinations-page"></a>Provedl(a) jsem import elektronických konfigurací a vidím je na stránce s konfiguracemi elektronického výkaznictví. Proč je ale nevidím na stránce Cíle elektronického výkaznictví?
@@ -153,7 +155,7 @@ Vzorec je specifický pro konfiguraci EV. Například pokud použijete konfigura
 
 Nezbytným předpokladem je, že formát musí být k dispozici v konfiguracích EV. Pokud máte svůj formát, otevřete stránku **Místo určení elektronického výkaznictví** a vytvořte nový odkaz na tuto konfiguraci. Pak je třeba mít k dispozici čtyři cíle souboru, jeden pro každou součást výstupu. Vytvořte první cíl souboru, pojmenujte jej např. jako **Složka** a vyberte název souboru, který představuje složku ve vaší konfiguraci. Poté klepněte na tlačítko **Nastavení** a ujistěte se, že jsou zakázány všechny cíle. Pro tento cíl souboru se složka nevytvoří. Ve výchozím nastavení se soubory budou chovat stejným způsobem díly hierarchickým závislostem mezi soubory a nadřazenými složkami. Jinými slovy se nikam neodešlou. Chcete-li přepsat výchozí chování, je nutné vytvořit tři další cíle souborů, jeden pro každý soubor. V nastavení cíle pro každý ze souborů je nutné povolit cíl, na který má být soubor odeslán.
 
-## <a name="see-also"></a>Viz také
+## <a name="additional-resources"></a>Další zdroje
 
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 

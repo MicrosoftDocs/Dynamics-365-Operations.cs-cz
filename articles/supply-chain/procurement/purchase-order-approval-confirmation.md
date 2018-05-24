@@ -19,18 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1c7209c91f3821a77e9b127d767c78df403ff6cc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 475470fa87455e187e0a93148046cb1df634da1f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="approve-and-confirm-purchase-orders"></a>Schválení a potvrzení nákupních objednávek
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Tento článek popisuje stavy, kterými prochází nákupní objednávka poté, co byla vytvořena, a efekt umožňující správu změn v nákupních objednávkách.
 
@@ -75,14 +75,14 @@ Pokud byla dodána část objednaného množství pro řádek nákupní objedná
 
 Jakmile je objednávka potvrzena, nemůžete ji již odstranit. Můžete však zrušit celkové množství nebo libovolné zbývající množství na objednávce, a to za předpokladu, že množství nebylo přijato nebo fakturováno.
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Přehled nákupních objednávek](purchase-order-overview.md)
 
 [Vytvoření nákupní objednávky](purchase-order-creation.md)
 
-[Příjem produktů proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
+[Příjemka produktu proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
 
 [Přehled faktur dodavatele](../../financials/accounts-payable/vendor-invoices-overview.md)
 

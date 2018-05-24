@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f7001158a498aa28028167a0f76ad610ec09b43c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c3726038d9782891988e16cb98cf04cf47b7e66c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="gantt-chart-for-job-scheduling"></a>Ganttův diagram pro plánování úloh
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ganttův diagram je navržen tak, aby plánovačům výroby umožňoval řídit a optimalizovat plán výroby. Ganttův diagram nastavuje transparentní tok operací a usnadňuje nastavení plánu výroby. Bere přitom v úvahu úbytky materiálu nebo zdrojů. To plánovačům umožní nejlépe využít dostupné zdroje, minimalizovat nedokončenou výrobu a optimalizovat propustnost u výrobních zakázek.
 
@@ -156,7 +156,7 @@ Ganttův diagram lze otevřít z následujících stránek.
 |           <strong>Úloha k dokončení</strong> (seznam v pracovním prostoru <strong>Dílenské řízení výroby</strong>)            |                                                                                               Pracovní prostor <strong>Úlohy k dokončení seznamu pro Správu dílenské výroby</strong> ukazuje úlohy z výrobních a dávkových objednávek, které budou probíhat z vybraných zdrojů pracovního prostoru. V položce nabídky <strong>Ganttův diagram</strong> můžete otevřít Ganttův diagram, kde budou do grafu načteny všechny úlohy, které jsou v seznamu vybrané.                                                                                               |
 | <strong>Výrobní zakázky pro uvolnění</strong> (otevřena z pracovního prostoru <strong>Dílenské řízení výroby</strong>) |                                                                                                                                         Stránka Výrobní zakázky pro uvolnění se otevírá z pracovního prostoru <strong>Dílenské řízení výroby</strong>. Na této stránce se zobrazí plánované výrobní a dávkové objednávky čekající na uvolnění. Na této stránce můžete otevřít Ganttův diagram pro vybrané výrobní zakázky.                                                                                                                                          |
 
-## <a name="see-also"></a>Viz také  
+## <a name="additional-resources"></a>Další zdroje  
 [Vizuální plánování s Ganntovým diagramem pro výrobu a dávkové objednávky (video)](https://youtu.be/BtbuShkGj4I)
 
 [Vizuální plánování výroby (ukázkový skript)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)

@@ -20,24 +20,22 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 23683ff3b232d485d0e4386963b3dcf37cd96c6f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 62f59c857980932f4cf75d928deb0f89fae2f8eb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="register-serial-numbers-in-the-sales-process"></a>Registrace sériových čísel v prodejním procesu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Toto téma vysvětluje, jak lze registrovat sériová čísla v dodacích listech nebo fakturách během prodejního procesu. Tato funkce je užitečná, pokud mnoho společností chce jednoduše zaznamenat sériová čísla pro účely záruky a služeb, a nepotřebuje udržovat sériová čísla v zásobách od příjmu po vydání.
 
 Mnoho společností chce jednoduše zaznamenat sériová čísla pro účely záruky a služeb, a nepotřebuje udržovat sériová čísla v zásobách od příjmu po vydání. V těchto situacích aplikace Microsoft Dynamics 365 for Finance and Operations umožní registrovat sériová čísla v dodacích listech nebo fakturách při prodeji produktu. Při pozdějším vrácení produktu lze trasovat produkt k faktuře k určení, zda jste produkt prodali a zda jsou služby nebo záruční povinnosti platné.
-Jsou nějaké požadavky?
-----------------------------
 
 Je nutné povolit sériová čísla pro prodejní proces ve skupině sledovací dimenze výběrem možnosti **Aktivní v prodejním procesu** na stránce **Sledování – skupiny dimenze**. V aplikaci Microsoft Dynamics 365 for Finance and Operations pak dojde k následujícím událostem:
 -   Na pevné kartě **Sériová čísla** se vybere možnost **Kontrola sériového čísla**. Je-li tato možnost vybrána, je nutné zaregistrovat jedno sériové číslo pro každou položku dodacího listu nebo faktury.
@@ -71,8 +69,8 @@ Ne, nelze zobrazit serializované položky, které máte na skladě, protože s�
 
 ## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Mohu zaregistrovat sériová čísla pro položky se skutečnou hmotností?
 Ne, v prodejním procesu nemůžete registrovat sériová čísla pro položky skutečné hmotnosti. Dále pokud je produkt nastaven jako položka skutečné hmotnosti, nelze produkt přiřadit do skupiny sledovací dimenze, která je nastavena pro použití sériových čísel pouze během prodejního procesu.
-Je možné registrovat sériová čísla v maloobchodním pokladním systému?
-------------------------------------------------
+
+## <a name="can-i-register-serial-numbers-at-the-retail-pos"></a>Je možné registrovat sériová čísla v maloobchodním pokladním systému?
 
 Ano, maloobchodní pokladních systém (POS) vyzve uživatele k zadání sériového čísla, když uživatel prodává položku, které je přiřazena skupina sledovacích dimenzí, která je nastavena na použití sériových čísel pouze během prodejního procesu.
 

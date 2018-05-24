@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 58030df8db467f754ec93ecc3f41585b20f03893
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ee130dd357b5ae678f623630165a1ab787d6ae2c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="report-definitions-in-financial-report-designer"></a>Definice sestavy v návrháři finanční sestavy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek obsahuje informace o definicích sestavy. Definice sestavy představuje součást sestavy (nebo stavební blok), který využívá definici řádku, definici sloupce a volitelně definici stromu výkaznictví pro vytvoření sestavy. Definice sestavy také poskytuje možnosti a nastavení pro přizpůsobení sestavy. 
 
@@ -79,8 +79,8 @@ Následující tabulka popisuje karty v definici sestavy a způsob použití t
 <li>Formát sestavy podrobností</li>
 <li>Formátování organizačního stromu</li>
 <li>Generování sestavy výjimek</li>
-<li>Určení převodu měny</li>
-<li>Mezisoučty a filtrování podrobností účtu</li>
+<li>Určit převod měny</li>
+<li>Podrobnosti o mezisoučtu a filtrování podrobností účtů.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -88,7 +88,7 @@ Následující tabulka popisuje karty v definici sestavy a způsob použití t
 
 
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Finanční výkaznictví](financial-reporting-intro.md)

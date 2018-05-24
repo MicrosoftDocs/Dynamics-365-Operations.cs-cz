@@ -20,23 +20,23 @@ ms.author: crytt
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 58c083b2fa76e90d10ec8a197a4743a9e315db46
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 855fdd0e57a7001628b715038785379d5a986789
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="delivery-alternatives"></a>Alternativní dodání
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Zájemci o prodejní objednávky mohou využívat stránku Alternativy doručení k zjišťování alternativních možností plnění objednávky.
+Zájemci o prodejní objednávky mohou využívat stránku **Alternativy doručení** k zjišťování alternativních možností plnění objednávky.
 
-V aplikaci Microsoft Dynamics 365 for Operations verze 1611 (listopad 2016) mohou zájemci o prodejní objednávky na stránce **Alternativní doručení** zjistit alternativní možnosti plnění objednávky. Nově navržené rozložení stránky poskytuje lepší přehled o všech alternativních možnostech. Umožňuje také zájemcům o objednávky nahlédnout na stávající společnost z hlediska příležitostí plnění. Mají možnost zobrazit mezipodnikové příležitosti a příležitosti od externích dodavatelů. Díky třídění možností podle data dodání mohou zájemci o prodejní objednávky zobrazit inteligentní seznam alternativ doručení. Kromě toho jim parametry pomohou lépe řídit navrhované dodávky. Vzhledem k tomu, že doba přepravy může ovlivnit data dodání, mohou zájemci o prodejní objednávku prozkoumat různé možnosti, které dopravci nabízejí. Vzhledem k tomu, že pro každý návrh se zobrazí podrobné informace, mohou pořizovatelé objednávky činit informovaná rozhodování přímo ze stránky **Alternativní dodání**.
+Rozložení stránky **Alternativy doručení** poskytuje lepší přehled o všech alternativních možnostech. Umožňuje také zájemcům o objednávky nahlédnout na stávající společnost z hlediska příležitostí plnění. Mají možnost zobrazit mezipodnikové příležitosti a příležitosti od externích dodavatelů. Díky třídění možností podle data dodání mohou zájemci o prodejní objednávky zobrazit inteligentní seznam alternativ doručení. Kromě toho jim parametry pomohou lépe řídit navrhované dodávky. Vzhledem k tomu, že doba přepravy může ovlivnit data dodání, mohou zájemci o prodejní objednávku prozkoumat různé možnosti, které dopravci nabízejí. Vzhledem k tomu, že pro každý návrh se zobrazí podrobné informace, mohou pořizovatelé objednávky činit informovaná rozhodování přímo ze stránky **Alternativní dodání**.
 
 ## <a name="open-the-delivery-alternatives-page"></a>Otevření stránky alternativní dodání
-Stránku **Alternativní** **dodání** můžete otevřít z řádku prodejní objednávky.
+Stránku **Alternativní doručení** můžete otevřít z řádku prodejní objednávky.
 
 1.  Klikněte na **Produkty a dodávka** &gt; **Alternativní dodání**.
 2.  Klekněte na **Podrobnosti řádku** &gt; **Doručení** &gt; **Alternativní doručení.**
@@ -146,7 +146,7 @@ Informace na této kartě souvisí s vybranou alternativní řádkou dodávky. Z
 
 Tato karta se podrobněji věnuje dopadu alternativy vybrané dodávky. Pokud klepnete na tlačítko **OK**, řádek prodeje se aktualizuje zvýrazněnými hodnotami ve VYBRANÝCH sloupcích. Všimněte si, že pokud je množství v alternativě pro vybranou dodávku menší než množství na řádku prodeje, vytvoření plánu dodávek a řádku objednávky je rozděleno do dvou řádků: jeden řádek pro vybrané množství a jeden řádek pro zbývající množství. Můžete také aktualizovat obchodních řádek tak, aby odpovídal řádkům plánu a ovlivňoval tvorbu cen.
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Příslib objednávky](delivery-dates-available-promise-calculations.md)
