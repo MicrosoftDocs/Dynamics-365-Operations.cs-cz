@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 25dd62081e4a6e196bffaa6cc72ff40ed68c736c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2fa152c5586a1122a109762780d23fd8c2240702
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Spolupráce s dodavateli pomocí portálu pro dodavatele
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma vysvětluje, jak nákupčí mohou použít portál pro dodavatele pro spolupráci s externím dodavatelem během procesu potvrzení nákupní objednávky. Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016.
 
@@ -96,7 +96,7 @@ Pokud je povolena Správa změn, následující tabulka zobrazuje příklad změ
 |                           Odešlete novou verzi nákupní objednávky na portál pro dodavatele.                            |                                                                                                                                                                    Nová verze je registrována na portálu pro dodavatele a stav se změní na <strong>Na externí kontrole</strong>.                                                                                                                                                                     |
 |                                Dodavatel schválí novou verzi nákupní objednávky.                                 |                                                                                                                                                     Stav se změní na <strong>Potvrzeno</strong> buď automaticky nebo když obdržíte odpověď od dodavatele a poté potvrdíte nákupní objednávku.                                                                                                                                                     |
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Konfigurace zabezpečení pro uživatele portálu Spolupráce dodavatele](configure-security-vendor-portal-users.md)

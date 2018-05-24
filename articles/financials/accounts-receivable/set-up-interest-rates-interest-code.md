@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c0e80bae4716d2b12f515f38d3b641de24680571
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1c19cb68df5be5245722da43f3ef9c2072873a34
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Nastavení úrokových sazeb pro kód úroku
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kódy úroků obsahují nastavení, která určují, kdy bude placen úrok a jak se vypočítá na účtech po splatnosti.
 
@@ -56,7 +56,7 @@ Pokud chcete například nastavit kód úroku, který stanoví 5% úrok po uplyn
 Můžete nastavit úrokové sazby pro výpočet určité částky podle měny.
 - Částka úroku se zadává pro každou měnu v kódu úroku.
 - Volitelně lze zadat omezení částky úroku.
-- Na stránce <strong>Nastavení kódů úroků** je v poli** Vypočítat úrok podle</strong> zvolena možnost <strong>Částka</strong>.
+- Na stránce **Nastavení kódů úroků** je v poli **Vypočítat úrok podle** zvolena možnost **Částka**.
 
 Pokud chcete například nastavit kód úroku, který stanoví úrok 25,00 po uplynutí každých 20 dnů, kdy je faktura po splatnosti, zadejte do pole **Vypočítat úroky jednou za** hodnotu 20 a vyberte možnost **Den**.
 

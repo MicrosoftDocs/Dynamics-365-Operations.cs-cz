@@ -3,7 +3,7 @@ title: "Funkce kontaktního střediska"
 description: "Toto téma obsahuje přehled o prodejní funkci kontaktního střediska v aplikaci Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,35 +20,43 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
-ms.openlocfilehash: 75dc09ffc84ef8ec48f50ea410974c99aabc212e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e85b65e116b32adca09e46252d7d3bbe5101e1cf
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="call-center-functionality"></a>Funkce kontaktního střediska
+# <a name="call-center"></a>Kontaktní středisko 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-Tento článek obsahuje přehled o prodejní funkci kontaktního střediska v aplikaci Microsoft Dynamics 365 for Retail.
+V aplikaci Dynamics 365 for Retail je kontaktní středisko typu maloobchodní sítě, které lze definovat v aplikaci. Definování konkrétního kanálu pro entity kontaktního střediska umožňuje systému navázat několik výchozích hodnot specifických dat a výchozích nastavení pro prodejní objednávky vytvořené uživatelem kanálu kontaktního střediska.
 
-Dynamics 365 for Retail podporuje také kontaktní střediska jako typ maloobchodní sítě. V kontaktním středisku pracovníci zpracovávají zakázky od odběratele telefonicky a vytvářejí prodejní objednávky. Funkce kontaktního střediska obsahuje funkce, které slouží k usnadnění telefonních objednávek a odběratelského servisu během celého procesu splnění zakázek. Například mohou pracovníci kontaktního střediska přímo zadat informace o platbách do prodejní objednávky a před odesláním objednávky mohou zobrazit podrobný přehled nákladů a plateb. Pracovníci mají také možnosti pro kontrolu cen a přístup k různým datům o odběratelích, produktech a cenách ze stránky **Prodejní objednávka**. Kontaktní střediska mají navíc také rozšířenou funkci ke sledování stavu historie a objednávek. Každé kontaktní středisko může mít vlastní uživatele, platební metody, cenové skupiny, finanční dimenze a způsoby dodání. Tyto možnosti lze nakonfigurovat při vytváření kontaktního střediska. Kromě toho můžete využít stránku **Kontaktní středisko** pro povolení nebo zakázání následujících skupin funkcí, které jsou jedinečné pro kontaktní střediska:
+Kontaktní středisko, které zahrnuje moderní maloobchodní ceny a promoakce, katalogy, dárkové poukazy, věrnostní programy a kupóny. Objednávky kontaktního střediska jsou rovněž využity aplikací pokladních míst (POS) na podporu scénáře splnění objednávky mezi více kanály.
 
--   **Dokončení objednávky** – tato skupina obsahuje funkce, které se vztahují k platbám a dokončení objednávek na stránce **Prodejní objednávka**.
--   **Směrovaný prodej** – tato skupina obsahuje funkce, které souvisejí se zdrojovými kódy, skripty a požadavky na katalog.
+Je důležité poznamenat, zatímco modul kontaktního střediska lze využít v jiných odvětvích mimo Retail, aktuální verze call centra aplikace Dynamics 365 for Retail nebyla optimalizována pro použití ve zpracování – business-to-business (B2B) scénáři nebo scénáři, kde mají objednávky velký počet řádků prodeje. Doporučujeme, aby uživatelé, kteří chtějí využívat funkce call center pro zpracování objednávek mimo typické zpracování přímých transakcí zákazníka, vynaložili dostatečný čas na testování a ověření, že povolení funkce kontaktního střediska splní funkční požadavky a požadavky na výkon.
 
-Jakmile povolíte tyto funkce v nastavení kontaktního střediska, budou k dispozici na stránce **Prodejní objednávka** pro uživatele, kteří jsou přiřazeni ke kontaktnímu středisku. Většina těchto funkcí vyžaduje před použitím další konfiguraci. Předtím, než mohou uživatelé vytvářet objednávky kontaktního střediska, je nutné přidat tyto uživatele do kontaktního střediska jako uživatele kontaktního střediska. Tento krok umožňuje konfiguraci a funkce kontaktního střediska pro konkrétní kanály. Zde je několik příkladů funkcí, které se zpřístupní:
+Kromě podpory vytvoření objednávky modul kontaktního střediska také obsahuje praktickou aplikaci zákaznického servisu, která umožňuje uživatelům ověřit všechny příslušné zákaznické účty a zkontrolovat všechny související objednávky zákazníků a atributy. Servisní obrazovka odběratele je navržena tak, aby uživateli umožnila rychlý přístup k souvisejícím datům objednávky, která umožní odpovídat na nejčastější dotazy související s objednávkami přijatými od odběratelů.
 
--   Řízený prodej nabízí možnosti konfigurace pro skripty prodeje po telefonu a obrázky produktů k nápovědě pro agenty při příjmu objednávek.
--   Objednávky nelze dokončit, dokud agent nezaznamená alespoň jednu platební metodu.
--   Lze konfigurovat pravidla pro navyšovací a křížový prodej a vyzývat agenty k nabízení konkrétních produktů odběrateli.
--   Prodejní agenti mohou zaznamenat zdrojový kód katalogu, ze kterého zákazník objednává.
--   Prodejní agenti mohou do objednávky přidat kupóny prodejce.
--   Prodejní agenti mohou prodávat dlouhodobé programy.
--   Objednávka může být ručně nebo automaticky pozastavena, pokud je nutné zjišťování dalších informací předtím, než bude možné objednávku zpracovat.
+Tato stránka obsahuje odkazy na relevantní dokumentaci týkající se nastavení, konfigurace a funkčního použití funkcí kontaktního střediska aplikace Dynamics 365 for Retail.
 
+## <a name="configure-the-call-center"></a>Konfigurace parametrů kontaktního střediska.
+[Nastavení možností zpracování objednávky](set-up-order-processing-options.md)
 
+## <a name="configure-order-processing"></a>Konfigurace zpracování objednávky
+[Nastavení výstrah při podvodu](set-up-fraud-alerts.md)
+[ruční blokování objednávky](work-with-order-holds.md)
 
+## <a name="configure-payment-processing"></a>Konfigurace zpracování platby
+[Platební metody v kontaktním středisku](work-with-payments.md)
+
+## <a name="configure-direct-marketing"></a>Konfigurace přímého marketingu
+[Katalogy kontaktního střediska](call-center-catalogs.md)
+
+[Nastavení analýzy RFM](set-up-rfm-analysis.md)
+
+## <a name="configure-continuity-programs"></a>Konfigurace programů trvání
+[Nastavení programu kontinuity pro kontaktní středisko](set-up-continuity-program.md)
 
 

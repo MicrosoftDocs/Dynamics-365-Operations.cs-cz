@@ -18,16 +18,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3db07708df55c24108c66797885318486b2b1003
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7708c8e091ef561c1a4205a1424a51d51d05002f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-november-2016"></a>Noví nebo aktualizovaní průvodci záznamem úloh (listopad 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma obsahuje nové nebo aktualizované průvodce záznamem úloh vydané pro knihovnu Microsoft APQC Unified Library (listopad 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics 365 for Operations. Nebyly vydány žádné nové knihovny Začínáme.
 
@@ -587,7 +587,7 @@ Sjednocená knihovna APQC (listopad 2016 -- všechny jazyky) obsahuje průvodce 
 |                       Nastavení automatického odsouhlasení dopravného                       |     Globální     |
 |              <strong>\</strong>*Nastavení opakovaného přidělení zboží při krátkodobém vyskladnění              |     Globální     |
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Nový průvodce úkolem je k dispozici (únor 2016)](new-task-guides-available-february-2016.md)

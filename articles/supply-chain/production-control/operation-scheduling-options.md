@@ -20,16 +20,16 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 56eeb2b56261dc3e576192c0ede405996d82b2b7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 41d5d933a43f5cc4c84c33bdb0896c9d4a9a28cc
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="operations-scheduling-options"></a>Možnosti plánování operací
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V tomto tématu jsou popsány možnosti pro plánování operací. Plánování operací můžete použít, když je třeba získat obecný odhad výrobního procesu v čase.
 
@@ -128,10 +128,10 @@ Aktuální hodnoty můžete uložit jako výchozí hodnoty. K dispozici jsou dv�
 -   Nastavit jako výchozí pro každého
 
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
-[Plánování operací](operations-scheduling.md)
+[Plánování v aplikaci Operations](operations-scheduling.md)
 
 
 

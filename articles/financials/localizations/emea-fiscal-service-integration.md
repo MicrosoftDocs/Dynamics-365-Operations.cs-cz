@@ -17,16 +17,16 @@ ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 122f8375c50fa62c4831acc0d059e37a7c1c45f5
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 04608cee8639258af1502830b60d4afd9e841e8a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="fiscal-service-esr-integration"></a>Integrace fiskální služby (ESR)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V Rakousku musí být všechny platby v hotovosti podepsány externím zařízením nebo službou, a musí být bezpečně uloženy. V České republice musí být platby v hotovosti odeslány na vládní portál pro fiskální podpis. V obou zemích musí být vystavena hotovostní účtenka s vytištěným podpisem.
 
@@ -73,7 +73,7 @@ Každá registrační pokladna musí být nastavena pro komunikaci s fiskální 
 <li><strong>URL adresa registrační pokladny</strong> – Zadejte adresu URL fiskální služby.
 <blockquote>[!WARNING]<br>Služby třetích stran nebo jiné služby, které zde nakonfigurujete, nevyžadují certifikaci, a nemusí splňovat standardy společnosti Microsoft týkající se ochrany osobních údajů. Měli byste ověřit dokumentaci týkající se ochrany osobních údajů každé služny a kontaktovat poskytovatele každé služby, abyste se dozvěděli více informací o úrovni shody, kterou každá služba poskytuje. Jste sami zodpovědni za to, že se ujistíte, zda tyto služby splňují vaše bezpečnostní, ochranné a právní standardy. Odpovědnost za používání těchto služeb je pouze na vás. Společnost Microsoft vám nedává žádné výslovné záruky, garance ani podmínky. Důrazně doporučujeme používat pouze služby, které poskytují zabezpečené a autorizované připojení (to znamená služby, které používají protokol HTTPS).</blockquote>
 </li>
-<li><strong>Název úložiště klíčů</strong> – Je-li fiskální služba přístupná na zabezpečeném připojení (to znamená, že adresa URL začíná https://), je třeba nastavit certifikáty a správně je uložit na obou stranách (Finance and Operations a fiskální služba třetí strany). V tomto poli vyberte název instance Azure Key Vault, kde je uložen certifikát aplikace Finance and Operations. Další informace naleznete v tématu <a href="https://support.microsoft.com/en-us/help/4040305/setting-up-a-key-vault-client">Nastavení klienta Azure Key Vault</a>.</li>
+<li><strong>Název úložiště klíčů</strong> – Je-li fiskální služba přístupná na zabezpečeném připojení (to znamená, že adresa URL začíná https://), je třeba nastavit certifikáty a správně je uložit na obou stranách (Finance and Operations a fiskální služba třetí strany). V tomto poli vyberte název instance Azure Key Vault, kde je uložen certifikát aplikace Finance and Operations. Další informace naleznete v tématu <a href="https://support.microsoft.com/help/4040305/setting-up-a-key-vault-client">Nastavení klienta Azure Key Vault</a>.</li>
 <li><strong>Název třídy</strong> – Vyberte třídu, kde jsou implementována specifika integrace s fiskální službou. Dostupná třída je <strong>CashRegisterProcessingEFSTA_W</strong>.</li>
 </ul>
 </td>
@@ -83,7 +83,7 @@ Každá registrační pokladna musí být nastavena pro komunikaci s fiskální 
 <td>Pro každou registrační pokladnu vyberte formáty elektronického výkaznictví, které se použijí k tisku účtenek, odesílání požadavků do fiskální služby a přijímání odezvy od fiskální služby. Zvolené formáty elektronického výkaznictví musí odpovídat primární adrese právnické osoby.</td>
 <td>Například pro formát účtenky vyberte <strong>Formátu hotovostní příjemky (AT)</strong> pro Rakousko a <strong>Formát hotovostní příjemky (CZ)</strong> pro Českou republiku.
 
-Pokud formát nemůžete najít v seznamu, můžete stáhnout poslední elektronické formáty z LCS. Další informace viz <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs">Stažení konfigurace elektronického vykazování ze služby Lifecycle Services</a>.</td>
+Pokud formát nemůžete najít v seznamu, můžete stáhnout poslední elektronické formáty z LCS. Další informace viz <a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs">Stažení konfigurace elektronického vykazování ze služby Lifecycle Services</a>.</td>
 </tr>
 <tr>
 <td>Nastavení certifikátu registrační pokladny</td>

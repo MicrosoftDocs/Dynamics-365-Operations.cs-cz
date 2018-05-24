@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6d11e772cfbcd8ab7a0d4a08ccd71049723f9e32
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 338e58522f9b9fba3ce22b22488affbab24b1315
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-variable-compensation-plans"></a>Vytvoření plánů variabilní kompenzace
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Variabilní kompenzace tvoří nestandardní mzdu zaměstnance, jako jsou například mzdové bonusy nebo odměny v akciích. Tento článek popisuje součásti, které je nutné nastavit před použitím variabilní kompenzace a přihlášení zaměstnance k plánu variabilní kompenzace.
 
@@ -100,7 +100,7 @@ Lze použít kartu **Přepsání** a přepsat specifické hodnoty pro zaměstnan
 
 **Organizační přepsání** se používají k založení odměny pro zaměstnance na výkonnosti jednoho nebo více oddělení. Procenta, která se rozdělují mezi oddělení, musí v součtu činit 100 procent. Individuální výkonnost zaměstnance se také bere v potaz. Tato nastavení se používají pouze v případě, že je zvolena možnost **Výkonnostní složka** při spuštění procesu kompenzace.
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Plány kompenzace](compensation-plans.md)

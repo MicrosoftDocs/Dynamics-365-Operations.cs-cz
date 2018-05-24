@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9c2f8fd846181c404492ff32907a3396beb90685
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 79e0ce728cb3c1eec450d0814d0a3aeda131fe89
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="warehouse-configuration"></a>Konfigurace skladu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek popisuje konfiguraci skladu. Obsahuje informace o postupu při povolení rozvržení skladu a procesů skladu.
 
@@ -112,7 +112,7 @@ Jako název naznačuje, směrnice skladového místa slouží ke směrování pr
 
 Chcete-li usnadnit a urychlit definování akcí, které jsou přidruženy k jednotlivým řádkům směrnice skladového místa, použijte jednu z předdefinovaných strategií. Můžete například použít strategii **Prázdné umístění s žádnou příchozí prací** k vyhledávání volného místa ve skladu, nebo můžete použít strategii **Rezervace dávky FEFO** pro odchozí výdej prodeje.
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Konfigurujte umístění ve skladu s povoleným WMS (Průvodce záznamů úloh)](tasks/configure-locations-wms-enabled-warehouse.md)

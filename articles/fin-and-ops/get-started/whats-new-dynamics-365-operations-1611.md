@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: be69aff98b1a3a8304461af0f38760988ac28d42
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 53c51ec1be145c72ff5090666399ac4ea113e5df
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Co je nového nebo upraveného v aplikaci verze Dynamics 365 for Operations 1611 (září 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma popisuje funkce, které jsou v Dynamics 365 for Operations verze 1611 nové nebo změněné.
 
@@ -854,10 +854,10 @@ V současné době je Retail Modern POS k dispozici pouze jako aplikace systému
 
 
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
-[Novinky a změny](whats-new-changed.md)
+[Co je nového a co se změnilo](whats-new-changed.md)
 
 
 

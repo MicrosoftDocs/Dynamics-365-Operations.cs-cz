@@ -33,8 +33,6 @@ V aktualizaci Platformy 14, Microsoft Dynamics 365 for Finance and Operations po
 
 Další informace o začlenění PowerApps se dozvíte v krátkém videu [Jak začlenit PowerApps do Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=x3qyA1bH-NY) grafické.
 
-> [!Video https://www.youtube.com/embed/x3qyA1bH-NY]
-
 ## <a name="adding-an-embedded-powerapp-to-a-page"></a>Přidání vložené PowerApp na stránku
 ### <a name="overview"></a>Přehled
 Před vložením PowerApp do klienta Finance and Operations, je nejdříve nutné najít nebo vytvořit PowerApp s požadovanými vizuály nebo funkcemi. Nepopíšeme zde podrobný proces vytváření PowerApp. Téma [Úvod do PowerApps](https://docs.microsoft.com/en-us/powerapps/getting-started) je ideálním výchozím bodem, pokud s PowerApps začínáte.

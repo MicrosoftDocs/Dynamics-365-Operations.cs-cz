@@ -19,16 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0164d64b8c37c19a3b8b13970dbda5927073eca8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d1ee87dbe9dab089a893d9c69d2573a4c4b11b58
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Zobrazení a export popisů polí
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek popisuje, jak zobrazit popisy pole, a jak používat stránku Popisy pole pro export popisů.
 
@@ -97,7 +97,7 @@ Pokud chcete zobrazit všechna pole na stránce, nastavte pro možnost **Zahrnou
 
 Informace o různých způsobech, jak vyhledat stránky, naleznete v části "Hledání stránek" dříve v tomto článku. Pokud jste zadali přesný název stránky, pravděpodobně nebudou zobrazeny v popisech polí, pokud existuje více než jedna stránka se stejným názvem. Klikněte na šipku v poli **Vybrat stránku**, abyste otevřeli filtrovaný seznam dostupných stránek.
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Přizpůsobení nápovědy pole](../../dev-itpro/user-interface/customize-field-help.md)

@@ -3,7 +3,7 @@ title: "zpeněžení potenciálního zákazníka"
 description: "Toto téma uvádí přehled řešení zpeněžení potenciálního zákazníka mezi aplikacemi Microsoft Dynamics 365 for Finance and Operations a Microsoft Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 04/03/2018
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,22 +20,24 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bc0fa8fe3e20ae4be3e572932f99ccc54e3b746b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f43b3943ce27c44cc0b4756d1d5f23e3be093273
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="prospect-to-cash"></a>zpeněžení potenciálního zákazníka
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Řešení zpeněžení potenciálního zákazníka nabízí přímou synchronizaci mezi aplikacemi Dynamics 365 for Finance and Operations a Dynamics 365 for Sales. Šablony zpeněžení potenciálního zákazníka dostupné v rámci funkce integrace dat umožňují tok dat účtů, kontaktů, produktů, prodejních kvót, prodejních objednávek a prodejních faktur mezi aplikacemi Finance and Operations a Sales. V průběhu toku dat mezi aplikacemi Finance and Operations a Sales můžete provádět prodejní a marketingové aktivity v aplikaci Sales a můžete zpracovávat plnění objednávky pomocí správy skladů v aplikaci Finance and Operations. 
 
 Další informace o zpeněžení potenciálního zákazníka naleznete v krátkém videu na YouTube:
 
 > [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
+
+[Integrace zpeněžení potenciálního zákazníka (video na YouTube)](https://youtu.be/AVV9x5x-XCg) 
 
 V aktuální verzi poskytuje řešení zpeněžení potenciálního zákazníka následující typy přímé synchronizace:
 
@@ -76,7 +78,7 @@ Integrace zpeněžení potenciálního zákazníka je podporována v následují
   - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** - Podpora integrace zpeněžení potenciálního zákazníka prostřednictvím datových entit je požadována.
     
     > [!NOTE]
-    > Po instalaci oprav hotfix je nutné spustit následující dávkovou úlohu z formuláře **SalesPopulateProspectToCash**. Tento formulář je skrytý, protože ho potřebujete pouze jednou. Abyste získali přístup k formuláři, přihlaste se do prostředí a přidejte do URL adresy ve svém prohlížeči toto: &mi=action:SalesPopulateProspectToCash, například `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. Když se formulář otevře, klikněte na OK. Vypublikuje se nové pole **LineCreationSequnceNumber** v tabulkách **SalesLine**, **SalesQuotationLine** a **CustInvoiceTrans** s jedinečnými hodnotami a obnoví se seznam produktů. To je nutné pro fungování integrace zpeněžení potenciálního zákazníka.
+    > Po instalaci oprav hotfix je nutné spustit následující dávkovou úlohu z formuláře **SalesPopulateProspectToCash**. Tento formulář je skrytý, protože ho potřebujete pouze jednou. Abyste získali přístup k formuláři, přihlaste se do prostředí a přidejte do URL adresy ve svém prohlížeči toto: *&mi=action:SalesPopulateProspectToCash*, for example, `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. Když se formulář otevře, klikněte na OK. Vypublikuje se nové pole **LineCreationSequnceNumber** v tabulkách **SalesLine**, **SalesQuotationLine** a **CustInvoiceTrans** s jedinečnými hodnotami a obnoví se seznam produktů. To je nutné pro fungování integrace zpeněžení potenciálního zákazníka.
 
 
 ## <a name="system-requirements-for-sales"></a>Systémové požadavky pro aplikaci Sales

@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ab12a55e41cd32c2479eb46796de57926652942f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3ba9025aa5394b29bdba80e589c77fa4bd2bd47f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Co je nového nebo změněného v aplikaci Dynamics AX 7.0 (únor 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek popisuje funkce, které jsou v aplikaci Microsoft Dynamics AX 7.0 nové nebo změněné. Tato verze obsahuje funkce pro obě platformy a byla vydána v únoru 2016.
 
@@ -536,7 +536,7 @@ Nebyly přidány následující nové funkce.
 </tr>
 <tr class="odd">
 <td>(EU) Hlášení množství v dalších jednotkách pro systém Intrastat pomocí nastavení převodu jednotky.</td>
-<td>Kód komodit v systému Intrastat obsahuje textové pole pro identifikaci dalších jednotek a na kartě **Produkt** se nachází pole identifikující další jednotky v kilogramech.</td>
+<td>Kód komodit v systému Intrastat obsahuje textové pole pro identifikaci dalších jednotek a na kartě<strong> Výrobek</strong> se nachází pole identifikující další jednotky v kilogramech.</td>
 <td>Další jednotky pro kód komodit systému Intrastat je vybrán ze seznamu jednotek. Množství dodatečných jednotek se počítá z nastavení převodu jednotky.</td>
 <td>To sjednocuje postup pro přepočet z jednotek transakce na dodatečné jednotky.</td>
 </tr>
@@ -569,7 +569,7 @@ Nebyly přidány následující nové funkce.
 |                                                                                                                            |                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                   |                                                                                                                                                         |
 |----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Co můžete udělat?**                                                                                                       | **Dynamics AX 2012**                                                                                                                                                                                                                                                                          | **Dynamics AX 7.0**                                                                                                                                                                                                                                                                                                                                               | **Proč je to důležité?**                                                                                                                              |
-| Může uživatele upozornit na to, že prodejní objednávka nebo výrobní zakázka nejsou připraveny k dodání k naplánovanému datu.                         | Upozornění, které jsou vytvořena na základě hlavního plánování, se nazývají *termínové zprávy*. *Termíny* jsou smlouvy mezi dvěma stranami nákupu nebo prodeje majetku za cenu, která je sjednána dnes (*termínová cena*), i když k dodání a platbě může dojít v budoucnu (*datum dodání)*. | *Termínové zprávy* a *data termínů* byly přejmenovány na *vypočtená zpoždění* a *zpožděná data*.                                                                                                                                                                                                                                                   | Pojmy používané v aplikaci AX 2012 byly nepřesné a vedly k nesprávným překladům.                                                               |
+| Může uživatele upozornit na to, že prodejní objednávka nebo výrobní zakázka nejsou připraveny k dodání k naplánovanému datu.                         | Upozornění, které jsou vytvořena na základě hlavního plánování, se nazývají *termínové zprávy*. *Termíny* jsou smlouvy mezi dvěma stranami nákupu nebo prodeje majetku za cenu, která je sjednána dnes (*termínová cena*), i když k dodání a platbě může dojít v budoucnu (*datum dodání*). | *Termínové zprávy* a *data termínů* byly přejmenovány na *vypočtená zpoždění* a *zpožděná data*.                                                                                                                                                                                                                                                   | Pojmy používané v aplikaci AX 2012 byly nepřesné a vedly k nesprávným překladům.                                                               |
 | Získání rychlého přehledu o stavu průběhu hlavního plánování, naléhavých plánovaných objednávkách a plánovaných objednávkách, které mají za následek zpoždění. | Informace jsou k dispozici, ale jsou roztříštěny v několika formulářích.                                                                                                                                                                                                                       | Pracovní prostor **Hlavní plánování** nabízí přehledné informace o dokončení posledního průběhu hlavního plánování a o tom, zda došlo k chybám, jaké jsou naléhavé plánované objednávky a které objednávky způsobují zpoždění.                                                                                                                                   | Výhodou pracovního prostoru je přehlednost. Relevantní informace jsou shromážděny a mohou pomoct s hlavním plánováním a zvýšením produktivity. |
 | Použití aplikace Excel k aktualizace prognóz poptávky.                                                                                      | Není k dispozici.                                                                                                                                                                                                                                                                                 | Při zadávání, aktualizaci a odstraňování prognóz poptávky můžete využít výhod bezproblémové integrace s aplikací Excel.                                                                                                                                                                                                                             | Je tím zvýšena efektivita a produktivita.                                                                                                          |
 | Umožňuje odhadovat budoucí poptávku a vytvářet prognózy poptávky na základě historických dat transakcí.                                  | V aplikaci Microsoft Dynamics AX 2012 R3 jsou k vytvoření předpovědi prognózy poptávky použity modely prognózy ze služby Microsoft SQL Server Analysis Service.                                                                                                                                                | Odhadování budoucí poptávky pomocí výkonu a rozšiřitelnosti cloudové služby Microsoft Azure Machine Learning. Snadno se používá a ve službě Machine Learning můžete modely prognóz rozšířit tak, aby splňovaly požadavky odběratelů. Služba provádí výběr nejlépe odpovídajícího modelu a nabízí klíčové indikátory výkonnosti (KPI), které lze použít k výpočtu přesnosti prognózy. | Generování přesnějších prognóz pomocí technik služby Machine Learning.                                                                              |
@@ -1081,7 +1081,7 @@ Nebyly přidány následující nové funkce.
 
 
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Novinky a změny](whats-new-changed.md)

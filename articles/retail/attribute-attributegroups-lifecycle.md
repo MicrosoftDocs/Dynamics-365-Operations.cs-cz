@@ -1,8 +1,9 @@
 ---
 title: "Atributy, skupiny atributů a jejich přidružení k různým maloobchodním entitám v aplikaci Finance and Operations"
+description: "Toto téma popisuje způsob použití atributů k poskytnutí způsobu popisu produktu a jeho vlastností prostřednictvím uživatelem definovaných polí."
 author: ashishmsft
 manager: AnnBe
-ms.date: 03/12/2018
+ms.date: 04/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -19,16 +20,16 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 53af4335146be6c163a6d84b60155e1a741c0be4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5e04b1f6ef58836eeac85be074e295e6d1f42c52
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="attributes-attribute-groups-and-their-associations-with-various-retail-entities-in-finance-and-operations"></a>Atributy, skupiny atributů a jejich přidružení k různým maloobchodním entitám v aplikaci Finance and Operations
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 *Atributy* poskytují způsob k dalšímu popisu produktu a jeho vlastností prostřednictvím uživatelem definovaných polí (jako například **Velikost paměti**, **Kapacita pevného disku**, **Je kompatibilní se standardem Energy Star** atd). V aplikaci Microsoft Dynamics 365 for Finance and Operations lze atributy přidružit k různým maloobchodním entitám, jako jsou kategorie produktů a maloobchodní sítě, a lze jim nastavit výchozí hodnoty. Produkty pak dědí atributy a výchozí hodnoty při přidružení ke kategorii produktu nebo maloobchodní síti. Výchozí hodnoty lze přepsat na úrovni jednotlivých produktů, na úrovni maloobchodní sítě nebo v maloobchodním katalogu.
  
@@ -47,7 +48,7 @@ Například typický televizní produkt může mít následující atributy.
 | LCD        | Připraveno na 3D                 | Ano nebo Ne                   | Ano           |
 |            | 3D k dispozici               | Ano nebo Ne                   | Žádný            |
 | Plazma     | Provozní teplota od      | 0–43 °C              | 32            |
-|            | Provozní teplota do        | 0–43 °C              | 1597           |
+|            | Provozní teplota do        | 0–43 °C              | 100           |
 | Projekční | Záruka | 6, 12 nebo 18 měsíců         | 12            |
 |            | Počet trubic    | 1–5                         | 3             |
 

@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: adbbb36da2bc1e9a2211c703823370571105ecab
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3988c437afda3d57e56a03264d3c1588af497920
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="formula-designer-in-electronic-reporting"></a>Návrhář vzorců v elektronickém výkaznictví
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak lze používat návrháře receptur v elektronickém výkaznictví. Při vytváření formátu pro určitý elektronický dokument pro elektronické výkaznictví můžete použít vzorce k převodu dat za účelem plnění požadavků na plnění a formátování daného dokumentu. Tyto vzorce připomínají vzorce aplikace Microsoft Excel. Ve vzorcích jsou podporovány různé typy funkcí: text, datum a čas, matematika, logika, informace, převod datových typů a další (funkce specifické pro danou obchodní doménu).
 
@@ -647,7 +647,7 @@ Příznak název měny pro tisk a parametry desetinných míst jsou analyzovány
 
 Elektronické výkaznictví umožňuje rozšířit seznam funkcí, které se používají ve výrazech elektronického výkaznictví. Je však vyžadováno určité technické úsilí. Další informace naleznete v tématu [Rozšíření seznamu funkcí elektronického vykazování](general-electronic-reporting-formulas-list-extension.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="additional-resources"></a>Další zdroje
 
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 

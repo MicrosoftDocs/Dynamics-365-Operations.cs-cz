@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6ac4c1afecb72d4007d830a9927bd3171ddd48ec
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5f1044e6731fd757532e34292109b9d81ca38719
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Plánování kanbanové úlohy pro lean manufacturing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V tomto článku jsou informace o vizuální kontrole plánování kanbanové úlohy a různých způsobech plánování kanbanových úloh.  
 
@@ -69,7 +69,7 @@ Kalendář, který je přiřazen k pracovní buňce definuje podle dnů nebo tý
 
 Stránka se seznamy **Plánování kanbanové úlohy** obsahuje okna s fakty zobrazující dostupná a rezervovaná období kapacity pro vybranou pracovní buňku. V závislosti na vybraném plánu období v modelu výrobního toku období zobrazí dny nebo týdny.
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 

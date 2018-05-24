@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
-ms.openlocfilehash: 6a0455c5d86f953e270501a7f1648f7700f717d0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 20eb67a341f462328bc73907fb3052b3405190d4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="demand-forecasting-overview"></a>Přehled prognózy poptávky
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Pomocí prognózy poptávky lze odhadnout nezávislé poptávky z prodejních objednávek a závislých požadavků v libovolném oddělovacím bodě objednávky odběratele. Rozšířená pravidla redukce prognózy poptávky nabízí ideální řešení pro hromadné přizpůsobení.
 
@@ -53,7 +53,7 @@ Do prognózy poptávky jsou implementovány tři hlavní motivy:
     -   Můžete si stáhnout experimenty s prognózou poptávky aplikace Finance and Operations, změnit je tak, aby odpovídaly vašim obchodním požadavkům, publikovat je jako webové služby pro platformu Azure, a použít je pro generování prognóz poptávky. Pokud jste si zakoupili předplatné aplikace Finance and Operations pro plánovač výroby na úrovni podnikového uživatele, jsou experimenty dostupné ke stažení.
     -   Můžete stáhnout všechny aktuálně dostupné pokusy předpovědi poptávky z adresy [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/). Zatímco experimenty s prognózou poptávky aplikace Finance and Operations jsou do aplikace Finance and Operations integrovány automaticky, experimenty stažené z [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/) musí zákazníci a partneři integrovat ručně. Používání experimentů z [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/) proto není tak přímočaré jako u experimentů s prognózou poptávky aplikace Finance and Operations. Kód experimentů je třeba upravit tak, aby používaly rozhraní API aplikace Finance and Operations.
     -   Můžete vytvořit vlastní pokusy v aplikaci Microsoft Azure Machine Learning Studio, publikovat je jako služby Azure a použít je pro generování prognóz poptávky.
-    -   Pokud nevyžadujete vysoký výkon, nebo nechcete-li zpracovat velké množství dat, můžete používat bezplatnou verzi služby Machine Learning. Doporučujeme vždy začínat od této verze, zejména během implementace a testování. Chcete-li dosáhnout vyššího výkonu a dalšího úložiště, můžete začít používat standardní verzi Machine Learning. Tato verze vyžaduje odběr služby Azure a zahrnuje dodatečné náklady. Podrobnosti o cenách produktu Machine Learning naleznete v tématu <http://aka.ms/machine-learning-price-info>.
+    -   Pokud nevyžadujete vysoký výkon, nebo nechcete-li zpracovat velké množství dat, můžete používat bezplatnou verzi služby Machine Learning. Doporučujeme vždy začínat od této verze, zejména během implementace a testování. Chcete-li dosáhnout vyššího výkonu a dalšího úložiště, můžete začít používat standardní verzi Machine Learning. Tato verze vyžaduje odběr služby Azure a zahrnuje dodatečné náklady. Podrobnosti strojovém učení naleznete v tématu <http://aka.ms/machine-learning-price-info>.
 -   **Snížení prognózy v libovolném z oddělovacích bodů** – prognóza poptávky v aplikaci Finance and Operations je založena na této funkci, která umožňuje prognózy závislé i nezávislé poptávky v libovolném oddělovacím bodě.
 
 ## <a name="basic-flow-in-demand-forecasting"></a>Základní tok v prognóze poptávky
@@ -72,7 +72,7 @@ Aplikaci Finance and Operations můžete použít k zobrazení a úpravě zák
 ## <a name="limitations"></a>Omezení
 Prognóza poptávky v aplikaci Finance and Operations je nástroj, který usnadňuje zákazníkům ve výrobním průmyslu vytváření prognostických procesů. Nabízí základní funkce řešení prognózy poptávky a je navržen tak, že lze snadno rozšířit. Prognóza poptávky nemusí být nejlepší pro zákazníky v oborech jako je maloobchod, velkoobchod, skladování, přeprava nebo jiné odborné služby.
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Nastavení prognózy poptávky](demand-forecasting-setup.md)

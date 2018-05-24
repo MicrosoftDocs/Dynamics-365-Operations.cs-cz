@@ -3,7 +3,7 @@ title: "Skupiny předmětů servisu"
 description: "Použití skupin objektů je vhodné při řazení a filtrování dat o objektech pro účely sestav a statistik."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/21/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: YuyuScheller
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 221b9dae7e83e7f4a535ac60f2a2011533d7861c
-ms.openlocfilehash: fa503ac82286099a0eafc7034d169e165b538e2c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2ab3ed8a8f36f980473b17b5dfed8cb3d0054253
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="service-object-groups"></a>Skupiny předmětů servisu 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Použití skupin objektů je vhodné při řazení a filtrování dat o objektech pro účely sestav a statistik. Můžete například seskupit předměty podle geografického umístění nebo typu.
 
@@ -48,6 +48,23 @@ Pomocí této metody seskupení můžete zobrazit typy předmětů, pro které v
 
 Odběratel volá s požadavkem na vytvoření servisní smlouvy pro klimatizační jednotku HIJ. Pro tento stroj již nemáte záznam. Nastavili jste však skupinu předmětů s názvem Klimatizační jednotky a přiřadili tuto skupinu ke všem předmětům klimatizačních jednotek. Proto můžete rychle vyhledávat a identifikovat všechny ostatní klimatizační jednotky a používat informace o šablonách z těchto předmětů, abyste vytvořili řádky servisní smlouvy pro HIJ. Použitím skupin předmětů tímto způsobem můžete rychle nastavit nové předměty a stanovit servisní úkoly služby, které je třeba na nich provést. 
 
+## <a name="create-service-object-groups"></a>Vytvoření skupin předmětů servisu
+
+Vytvoření skupin, kterým lze přiřazovat předměty servisu. Servisní předměty jsou skladové položky a další produkty, u kterých se provádějí servis. Vložením předmětů servisu do skupin můžete vytvářet sestavy pro podobné a související předměty servisu. Skupina předmětů servisu může například obsahovat dva předměty servisu: jeden předmět servisu je sada a druhý předmět servisu je služba umožňující nainstalovat sadu.
+
+Pro vytvoření skupin předmětů servisu postupujte takto:
+
+1. Klikněte na **Správa servisu > Nastavení > Předměty servisu > Skupiny předmětů servisu**.
+
+2. Kliknutím na možnost **Nový** vytvořte novou skupinu předmětů servisu.
+
+3. Zadejte pro skupinu předmětů servisu jedinečný název a volitelně také popis.
+
+Předměty servisu lze přiřadit ke skupině pomocí formuláře **Předměty servisu** . 
+
+## <a name="see-also"></a>Viz také
+
+[Tvorba předmětů servisu](create-service-objects.md)
 
 
 

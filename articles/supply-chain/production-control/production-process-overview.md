@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
+ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 779b27574a9d6d7e7aa6b71f468ba3cff8d4085a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8a12627db93b131450015539bb92ea4780518ed3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="production-process-overview"></a>Přehled výrobního procesu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma poskytuje přehled procesů výroby. Popisuje různé fáze výrobní zakázky, dávkové objednávky a kanbany od vytvoření objednávky po uzavření finančního období. 
 
@@ -78,7 +78,7 @@ Následující kroky ve výrobním cyklu mohou nastat pro všechny typy smíšen
 12. **Uzavření období** – některé zásady nákladového účetnictví, jako je například periodický průměr, náklady zpětného vyprázdnění, či metody FIFO a LIFO, vyžadují periodické aktivity pro uzávěrku zásob nebo fiskálního období. Obvykle se systém pokusí vytvořit sestavy všech materiálů a spotřeby zdrojů, a také provést opravy zásob a odpadu předtím, než je uzavřeno období. Toto oznámení se obvykle provádí pomocí deníků pohybů zásob nebo deníků úprav. Cílem je hodnocení ekonomické výkonnosti provozní jednotky za dané období. V některých případech při použití časově náročných výrobních objednávek, které pokrývají finanční období, se na konci období používají deníky výroby pro vykazování průběhu produkce a spotřeby zdrojů.
 
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Zpětná vazba z výroby](production-feedback.md)

@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e2125b3616310196b2c5ede0ddcaab24856ddc34
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d4da2ed8d61ffae3a4a4dc24793d82de22e86e59
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="sales-returns"></a>Prodejní vratky
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma obsahuje informace o procesu pro vratky. Obsahuje informace o zboží vraceném zákazníkem a o vlivu vracení na oceňování a na skladové množství zásob.
 
@@ -88,7 +88,7 @@ Po dokončení záhlaví vrácení můžete vytvořit řádky vrácení pomocí 
 -   Ručně zadejte údaje o zboží, množství a další informace pro každý řádek vrácení.
 -   Vytvoření řádku objednávky vrácení pomocí funkce **Najít prodejní objednávku**. Při vytváření objednávky vrácení doporučujeme používat tuto funkci. Funkce **Najít prodejní objednávku** založí odkaz z řádku objednávky vrácení na řádek vyfakturované prodejní objednávky a načte údaje řádku, jako například číslo zboží, množství, a hodnoty ceny, slevy a nákladů z řádku prodeje. Odkaz pomáhá zaručit, aby byl produkt po svém vrácení společnosti oceněn na stejnou hodnotu za jednotkové množství, za jakou byl prodáván. Odkaz také ověří, zda nejsou vytvořeny objednávky vracení pro množství přesahující množství prodané podle faktury.
 
-**Poznámka:** Řádky objednávky vrácení, které mají odkaz na prodejní objednávku, jsou zpracovány jako opravy nebo změny prodeje. Další informace naleznete v části „Zařazení do hlavní knihy“ dále v tomto tématu.
+>[Poznámka!] Řádky objednávky vrácení, které mají odkaz na prodejní objednávku, jsou zpracovány jako opravy nebo změny prodeje. Další informace naleznete v části „Zařazení do hlavní knihy“ dále v tomto tématu.
 
 ### <a name="charges"></a>Poplatky
 
@@ -193,15 +193,26 @@ Během procesu příchodu budou vrácení integrována s obecným postupem pro p
 
 ### <a name="identify-products-in-the-arrival-overview-list"></a>Identifikujte produkty v seznamu přehled příchodů
 
-Na stránce **Přehled příchodů** jsou uvedeny všechna plánovaná doručení příchodů. **Poznámka:** Doručení z objednávek vrácení musí být zpracováno odděleně od ostatních typů transakcí příchodů. Po identifikaci příchozího balíčku na stránce **přehled doručení** (například pomocí průvodního dokladu RMA) v podokně akcí klikněte na tlačítko **Zahájit příchod** k vytvoření a inicializaci deníku příchodů, který bude odpovídat danému příchodu.
+Na stránce **Přehled příchodů** jsou uvedeny všechna plánovaná doručení příchodů. 
+>[Poznámka!] Doručení z objednávek vrácení musí být zpracováno odděleně od ostatních typů transakcí příchodů. Po identifikaci příchozího balíčku na stránce **přehled doručení** (například pomocí průvodního dokladu RMA) v podokně akcí klikněte na tlačítko **Zahájit příchod** k vytvoření a inicializaci deníku příchodů, který bude odpovídat danému příchodu.
 
 ### <a name="edit-the-arrival-journal"></a>Upravte deník příchodů.
 
-Nastavením možnosti **Řízení karantény** na **Ano** můžete vytvořit karanténní příkaz pro řádek objednávky vrácení. Pokud byl řádek odeslán do karantény k inspekci, nemůžete zadat dispoziční kód. **Poznámka:** Jestliže nastavíte možnost **Řízení karantény** ve skupině skladových modelů položky na **Ano**, pak možnost **Řízení karantény** na stránce **řádky deníku** bude označena pro řádek deníku příchodů a nebude možno ji změnit. Když bude řádek odeslán do karantény, budete muset zadat příslušný karanténní sklad. Pokud řádek doručení není odeslán ke kontrole, musí pracovník skladu příjezdu zadat dispoziční kód přímo na řádek deníku doručení a poté zaúčtovat deník doručení. Jestliže stejný kód dispozice nemá být přiřazen celému množství řádku objednávky vrácení nebo jestliže nebylo obdrženo plné množství řádku, je nutné rozdělit řádek. Při rozdělení řádku deníku příchodů rozdělíte také řádek objednávky vrácení (**Řádek prodejů**) a vytvoříte nové ID šarže. Řádek můžete rozdělit také snížením množství na řádku deníku doručení. Při zaúčtování deníku je vytvořen nový řádek objednávky vrácení, který má stav **Očekávaný** pro zbývající množství. Řádek můžete také rozdělit kliknutím na **Funkce** &gt; **Rozdělit**.
+Nastavením možnosti **Řízení karantény** na **Ano** můžete vytvořit karanténní příkaz pro řádek objednávky vrácení. Pokud byl řádek odeslán do karantény k inspekci, nemůžete zadat dispoziční kód. 
+ 
+[Poznámka!] Jestliže nastavíte možnost **Řízení karantény** ve skupině skladových modelů položky na **Ano**, pak možnost **Řízení karantény** na stránce **řádky deníku** bude označena pro řádek deníku příchodů a nebude možno ji změnit. Když bude řádek odeslán do karantény, budete muset zadat příslušný karanténní sklad. 
+
+Pokud řádek doručení není odeslán ke kontrole, musí pracovník skladu příjezdu zadat dispoziční kód přímo na řádek deníku doručení a poté zaúčtovat deník doručení. Jestliže stejný kód dispozice nemá být přiřazen celému množství řádku objednávky vrácení nebo jestliže nebylo obdrženo plné množství řádku, je nutné rozdělit řádek. Při rozdělení řádku deníku příchodů rozdělíte také řádek objednávky vrácení (**Řádek prodejů**) a vytvoříte nové ID šarže. Řádek můžete rozdělit také snížením množství na řádku deníku doručení. Při zaúčtování deníku je vytvořen nový řádek objednávky vrácení, který má stav **Očekávaný** pro zbývající množství. Řádek můžete také rozdělit kliknutím na **Funkce** &gt; **Rozdělit**.
 
 ### <a name="process-the-quarantine-order"></a>Proces karanténního příkazu
 
-Jestliže budou vrácené produkty odeslány ke kontrole do karanténního skladu, veškeré další zpracování bude dokončeno v karanténní objednávce. Pro každý řádek vstupu odesílaný do karantény je vytvořen jeden karanténní příkaz. Dispoziční kód označuje výsledek procesu kontroly. Karanténní příkaz můžete rozdělit, stejně jako můžete rozdělit deník příchodů. Jestliže rozdělíte karanténní příkaz, způsobíte tím odpovídající rozdělení řádku objednávky vrácení. Po zadání kódu dispozice dokončete karanténní příkaz pomocí buďto funkce **Konec** nebo funkce **Nahlásit jako dokončené**. Vyberete-li **Nahlásit jako dokončené**, bude vytvořen nový příchod do určeného skladu. Pak můžete tento příchod zpracovat pomocí stránky **Přehled příchodů**. Jestliže příchod pochází z karanténního příkazu, nemůžete změnit dispoziční kód, který byl přiřazen při inspekci. Pokud karanténní příkaz dokončíte pomocí funkce **konec** funkce šarže bude automaticky zaregistrována. V některých případech může být zboží odesláno zpět z karantény na oddělení dodávek a příjmů. Inspektor karantény například nemusí vědět, kam má být zboží ve skladu uloženo. V tomto případě musí být aktualizován příslušný dodací list , by bylo možno řádně zaregistrovat a jednat podle uvedeného dispozičního kódu z důvodu karantény. Při registraci řádku vracení lze zákazníkovi zaslat potvrzení přijetí. Hlášení o **Potvrzení vrácení** se podobá dokladu objednávky vrácení. Hlášení o **Potvrzení vrácení** se nezapisuje do deníku ani jinak neregistruje do systému a není povinným krokem v procesu objednávky vrácení.
+Jestliže budou vrácené produkty odeslány ke kontrole do karanténního skladu, veškeré další zpracování bude dokončeno v karanténní objednávce. Pro každý řádek vstupu odesílaný do karantény je vytvořen jeden karanténní příkaz. Dispoziční kód označuje výsledek procesu kontroly. 
+
+Karanténní příkaz můžete rozdělit, stejně jako můžete rozdělit deník příchodů. Jestliže rozdělíte karanténní příkaz, způsobíte tím odpovídající rozdělení řádku objednávky vrácení. Po zadání kódu dispozice dokončete karanténní příkaz pomocí buďto funkce **Konec** nebo funkce **Nahlásit jako dokončené**. Vyberete-li **Nahlásit jako dokončené**, bude vytvořen nový příchod do určeného skladu. Pak můžete tento příchod zpracovat pomocí stránky **Přehled příchodů**. 
+
+Jestliže příchod pochází z karanténního příkazu, nemůžete změnit dispoziční kód, který byl přiřazen při inspekci. Pokud karanténní příkaz dokončíte pomocí funkce **konec** funkce šarže bude automaticky zaregistrována. V některých případech může být zboží odesláno zpět z karantény na oddělení dodávek a příjmů. Inspektor karantény například nemusí vědět, kam má být zboží ve skladu uloženo. V tomto případě musí být aktualizován příslušný dodací list , by bylo možno řádně zaregistrovat a jednat podle uvedeného dispozičního kódu z důvodu karantény. 
+
+Při registraci řádku vracení lze zákazníkovi zaslat potvrzení přijetí. Hlášení o **Potvrzení vrácení** se podobá dokladu objednávky vrácení. Hlášení o **Potvrzení vrácení** se nezapisuje do deníku ani jinak neregistruje do systému a není povinným krokem v procesu objednávky vrácení.
 
 ## <a name="replace-a-product"></a>Nahradit produkt
 Existují dvě metody pro správu náhradního produktu:
@@ -223,7 +234,9 @@ Pokud dodáváte zákazníkovi náhradní zboží a v objednávce vrácení pou
 
 ![Náhradní proces při použití dispozičního kódu](./media/SalesReturn05.png)
 
-Náhradní zboží bude doručeno pomocí nezávislé prodejní objednávky, náhradní prodejní objednávky. Tato prodejní objednávka je vytvářena při generování dodacího listu pro objednávku vrácení. Záhlaví objednávky používá informace od zákazníka, na které je odkazováno v hlavičce objednávky vrácení. Informace o řádku jsou shromažďovány z informací zadaných na stránce **Náhrada zboží**. Stránka **Náhrada zboží** musí být vyplněna pro řádky, které mají dispoziční akce, které začínají slovem "replace" ("nahradit"). Avšak ani množství ani totožnost náhradního zboží nebude ověřena ani omezena. Toto chování umožňuje případy, kdy zákazník požaduje stejné zboží, ale v jiné konfiguraci nebo velikosti a také případy, kdy zákazník chce úplně jiné zboží. Dle výchozího nastavení se shodné zboží zadává na stránce **náhrada zboží**. Můžete však vybrat jiné zboží, za předpokladu, že byla nastavena funkce. **Poznámka:** náhradní prodejní objednávku můžete po jejím vytvoření upravit enbo vymazat.
+Náhradní zboží bude doručeno pomocí nezávislé prodejní objednávky, náhradní prodejní objednávky. Tato prodejní objednávka je vytvářena při generování dodacího listu pro objednávku vrácení. Záhlaví objednávky používá informace od zákazníka, na které je odkazováno v hlavičce objednávky vrácení. Informace o řádku jsou shromažďovány z informací zadaných na stránce **Náhrada zboží**. Stránka **Náhrada zboží** musí být vyplněna pro řádky, které mají dispoziční akce, které začínají slovem "replace" ("nahradit"). Avšak ani množství ani totožnost náhradního zboží nebude ověřena ani omezena. Toto chování umožňuje případy, kdy zákazník požaduje stejné zboží, ale v jiné konfiguraci nebo velikosti a také případy, kdy zákazník chce úplně jiné zboží. Dle výchozího nastavení se shodné zboží zadává na stránce **náhrada zboží**. Můžete však vybrat jiné zboží, za předpokladu, že byla nastavena funkce. 
+
+>[Poznámka!] náhradní prodejní objednávku můžete po jejím vytvoření upravit enbo vymazat.
 
 ## <a name="generate-a-packing-slip"></a>Vytvořte dodací list
 Před přijetím vrácených položek na sklad musíte aktualizovat dodací list pro objednávku, do které toto zboží náleží. Stejně jako je proces aktualizace faktury aktualizací finanční transakce, proces aktualizace dodacího listu je fyzickou aktualizací skladového záznamu. Jinými slovy, tento proces potvrdí změny zásob. V případě vrácení jsou kroky přiřazené k dispoziční akci implementovány v průběhu aktualizace dodacího listu. Při generování dodacího listu dojde k následujícím událostem:
@@ -233,14 +246,19 @@ Před přijetím vrácených položek na sklad musíte aktualizovat dodací list
 -   Položky, které byly označeny dispoziční akcí **Vrátit zákazníkovi** budou přijaty a dodány odběrateli. Tyto položky nemají žádný čistý efekt na inventář.
 -   Bude vytvořena nová prodejní objednávka. Tato prodejní objednávka se zakládá na informacích na stránce **náhrada zboží**.
 
-Dodací list můžete vygenerovat pouze pro řádky, které mají stav vrácení dodacího listu **Registrovaný** a to pouze pro plné množství na řádku vrácení. Pokud má několik řádků na objednávce vrácení stav **Registrovaný**, můžete vygenerovat dodací list pro podmnožinu řádků odstraněním řádků ze stránky **Zaúčtovat dodací list**. Částečné dodávky jsou definovány v souvislosti s řádky objednávky vrácení, nikoli v souvislosti s odesláním objednávky vrácení. Pokud tedy obdržíte úplné množství uvedené na jednom řádku objednávky vrácení, ale nic z jiných řádků objednávky vrácení, pak tato dodávka není částečnou dodávkou. Pokud však řádek objednávky vrácení vyžaduje vrácení například deseti jednotek konkrétní položky, ale obdržíte pouze čtyři jednotky, pak jde o částečnou dodávku. Jestliže ne všechno očekávané vracené zboží dorazilo, můžete zásilku odložit stranou a vyčkat na příchod ostatku vráceného množství. Alternativně můžete zaregistrovat a zaúčtovat částečné množství. V rámci procesu účtování dodacích listů můžete volitelně přiřadit referenční číslo dodacího listu z přepravních dokumentů odběratele k řádkům objednávky. Toto přiřazení je nepovinné a má pouze informativní charakter. Nevytváří žádné aktualizace transakcí. Obecně můžete proces dodacího listu přeskočit a přejít přímo k fakturaci. Kroky, které byste provedli při generování dodacího listu, v tomto případě proběhnou při fakturaci.
+Dodací list můžete vygenerovat pouze pro řádky, které mají stav vrácení dodacího listu **Registrovaný** a to pouze pro plné množství na řádku vrácení. Pokud má několik řádků na objednávce vrácení stav **Registrovaný**, můžete vygenerovat dodací list pro podmnožinu řádků odstraněním řádků ze stránky **Zaúčtovat dodací list**. 
+
+Částečné dodávky jsou definovány v souvislosti s řádky objednávky vrácení, nikoli v souvislosti s odesláním objednávky vrácení. Pokud tedy obdržíte úplné množství uvedené na jednom řádku objednávky vrácení, ale nic z jiných řádků objednávky vrácení, pak tato dodávka není částečnou dodávkou. Pokud však řádek objednávky vrácení vyžaduje vrácení například deseti jednotek konkrétní položky, ale obdržíte pouze čtyři jednotky, pak jde o částečnou dodávku. Jestliže ne všechno očekávané vracené zboží dorazilo, můžete zásilku odložit stranou a vyčkat na příchod ostatku vráceného množství. Alternativně můžete zaregistrovat a zaúčtovat částečné množství. V rámci procesu účtování dodacích listů můžete volitelně přiřadit referenční číslo dodacího listu z přepravních dokumentů odběratele k řádkům objednávky. Toto přiřazení je nepovinné a má pouze informativní charakter. Nevytváří žádné aktualizace transakcí. 
+
+Obecně můžete proces dodacího listu přeskočit a přejít přímo k fakturaci. Kroky, které byste provedli při generování dodacího listu, v tomto případě proběhnou při fakturaci.
 
 ## <a name="generate-an-invoice"></a>Generovat fakturu
 I když stránka **Objednávka vrácení** obsahuje informace a akce, které jsou potřebné pro zpracování zvláštních logistických aspektů objednávky vracení, k dokončení procesu fakturace je nutné použít stránku **Prodejní objednávka**. Vaše organizace může pak fakturovat objednávky vrácení a prodejní objednávky současně a stejná osoba může proces fakturace podle potřeby dokončit. Chcete-li zobrazit objednávkky vracení ze stránky **Prodejní objednávka**, klikněte na odkaz na číslo prodejní objednávky, aby byla otevřena příslušná prodejní onbjednávka. Objednávku vrácení můžete najít také na stránce **Všechny prodejní objednávky**. Objednávky vrácení jsou prodejní objednávky, které mají typ objednávky **Vrácená objednávka**.
 
 ### <a name="credit-correction"></a>Úvěrové vyrovnání
 
-V rámci procesu fakturace ověřte správnost veškerých různých nákladů. Aby se ze zaúčtování hlavní knihy staly opravy (Storno), zvažte použití možnosti **Korekce přípisu** na kartě **Ostatní** na stránce **Odeslání faktury** při zaúčtování faktury nebo dobropisu. **Poznámka:** Dle výchozího nastavení bude volba **Korekce přípisu** aktivována tehdy, jestliže byla povolena možnost **Dobropis jako oprava** na stránce **Parametry pohledávek**. Doporučujeme Vám však neúčtovat vrácení se Stornem.
+V rámci procesu fakturace ověřte správnost veškerých různých nákladů. Aby se ze zaúčtování hlavní knihy staly opravy (Storno), zvažte použití možnosti **Korekce přípisu** na kartě **Ostatní** na stránce **Odeslání faktury** při zaúčtování faktury nebo dobropisu. 
+>[Poznámka!] Dle výchozího nastavení bude volba **Korekce přípisu** aktivována tehdy, jestliže byla povolena možnost **Dobropis jako oprava** na stránce **Parametry pohledávek**. Doporučujeme Vám však neúčtovat vrácení se Stornem.
 
 ## <a name="create-intercompany-return-orders"></a>Vytvořit mezipodnikové objednávky vrácení
 Objednávky vrácení lze dokončit mezi dvěma společnostmi v rámci organizace. Podporovány jsou následující scénáře:
@@ -294,7 +312,7 @@ Objednávka vrácení neodkazuje na fakturu odběratele. Vrácené zboží je ú
 
 ![Objednávka vrácení neodkazuje na fakturu odběratele.](./media/SalesReturn09.png)  
 
-**Poznámka:** hlavní cena zboží se používá jako výchozí hodnota pro parametr **Nákladová cena vrácení**. Implicitní cena se liší od nákladové ceny v době vydání zásob. Důsledkem tedy je, že vznikla ztráta 3. Kromě toho objednávka vrácení neobsahuje slevu, která byla poskytnuta zákazníkovi na prodejní objednávku. Proto dojde k přeplatku.
+>[Poznámka!] hlavní cena zboží se používá jako výchozí hodnota pro parametr **Nákladová cena vrácení**. Implicitní cena se liší od nákladové ceny v době vydání zásob. Důsledkem tedy je, že vznikla ztráta 3. Kromě toho objednávka vrácení neobsahuje slevu, která byla poskytnuta zákazníkovi na prodejní objednávku. Proto dojde k přeplatku.
 
 ### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Příklad 2: Pro objednávku vrácení byla vybrána korekce přípisu
 
@@ -302,7 +320,7 @@ Příklad 2 je stejný jako v příkladu 1, ale při generování faktury pro ob
 
 ![Objednávka vrácení, v níž byla vybrána korekce na straně Dal ](./media/SalesReturn10.png)  
 
-**Poznámka:** Účetní zápisy hlavní knihy jsou zadány jako záporné opravy.
+>[Poznámka!] Účetní zápisy hlavní knihy jsou zadány jako záporné opravy.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Příklad 3: Řádek objednávky vrácení je vytvořen pomocí funkce Najít prodejní objednávku
 
@@ -310,7 +328,7 @@ V tomto příkladu je řádek objednávky vrácení vytvořen pomocí funkce **
 
 ![Řádek objednávky vrácení vytvořen pomocí funkce Najít prodejní objednávku ](./media/SalesReturn11.png)  
 
-**Poznámka:** **Slevy** a **Nákladová cena vrácení** jsou správně nastaveny. Proto dojde k přesnému vzetí zpět faktury odběratele.
+>[Poznámka!] **Slevy** a **Nákladová cena vrácení** jsou správně nastaveny. Proto dojde k přesnému vzetí zpět faktury odběratele.
 
 
 

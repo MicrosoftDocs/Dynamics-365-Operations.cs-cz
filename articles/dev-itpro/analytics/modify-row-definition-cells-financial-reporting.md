@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3131173e10ff7eefeaca18285054ce2312d7ab57
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 23b8e0b51f63ecabc704a2fc5b3ebafe657b52f6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="modify-row-definition-cells"></a>Úprava buněk definice řádku
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek popisuje informace, které jsou nutné pro každou buňku v definici řádku ve finanční sestavě, a vysvětluje, jak tyto informace zadat. 
 
@@ -398,7 +398,7 @@ Můžete zadat rozsah hodnot segmentů nebo dimenzí. Výhodou zadání rozsahu 
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Rozsahy s více segmenty nebo dimenzemi
 
-Při zadání rozsahu kombinací více hodnot dimenzí se provádí porovnání rozsahu po jednotlivých dimenzích. Porovnání rozsahu nelze provést po znacích nebo částečných segmentech. Například rozsah **+Účet=\[5000:6000\], Oddělení=\[1000:2000\], Nákladové středisko=\[00\]** zahrnuje pouze účty, které odpovídají každému segmentu. V tomto případě první dimenze musí být v rozmezí od 5000 až 6000, druhá dimenze musí být v rozmezí 1000 až 2000 a poslední dimenze musí být 00. Například **+ účet =\[5100\], oddělení =\[1100\], nákladové středisko =\[01\]** není zahrnuto v sestavě, protože poslední segment je mimo zadaný rozsah. Pokud hodnota segmentu zahrnuje mezery, vložte ji do hranatých závorek (\[ \]). Následující hodnoty jsou platné pro čtyřmístný segment: **\[ 234\], \[123 \], \[1 34\]**. Hodnoty dimenze mají být zadávány do hranatých závorek (\[ \]) a návrhář sestav tyto závorky přidá za vás. Pokud rozsah segmentu více nebo více dimenzí obsahuje zástupné znaky (? nebo \*), bude určen horní a dolní konec celého násobného segmentu a potom budou zahrnuty koncové hodnoty a veškeré hodnoty mezi nimi. Pokud máte velký rozsah, například celý rozsah účtů od 40000 do 99999, zadejte platný počáteční účet a koncový účet, kdykoli je to možné. 
+Při zadání rozsahu kombinací více hodnot dimenzí se provádí porovnání rozsahu na základě ..\financial-dimensions\dimension-by-dimension. Porovnání rozsahu nelze provést po znacích nebo částečných segmentech. Například rozsah **+Účet=\[5000:6000\], Oddělení=\[1000:2000\], Nákladové středisko=\[00\]** zahrnuje pouze účty, které odpovídají každému segmentu. V tomto případě první dimenze musí být v rozmezí od 5000 až 6000, druhá dimenze musí být v rozmezí 1000 až 2000 a poslední dimenze musí být 00. Například **+ účet =\[5100\], oddělení =\[1100\], nákladové středisko =\[01\]** není zahrnuto v sestavě, protože poslední segment je mimo zadaný rozsah. Pokud hodnota segmentu zahrnuje mezery, vložte ji do hranatých závorek (\[ \]). Následující hodnoty jsou platné pro čtyřmístný segment: **\[ 234\], \[123 \], \[1 34\]**. Hodnoty dimenze mají být zadávány do hranatých závorek (\[ \]) a návrhář sestav tyto závorky přidá za vás. Pokud rozsah segmentu více nebo více dimenzí obsahuje zástupné znaky (? nebo \*), bude určen horní a dolní konec celého násobného segmentu a potom budou zahrnuty koncové hodnoty a veškeré hodnoty mezi nimi. Pokud máte velký rozsah, například celý rozsah účtů od 40000 do 99999, zadejte platný počáteční účet a koncový účet, kdykoli je to možné. 
 > [!Note] 
 > Návrhář sestav nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics ERP, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, nebo }. Můžete přidat ampersand (&) pouze při automatickém vytváření definic řádku pomocí dialogového okna **Vložit řádky z dimenzí**.
 
@@ -488,10 +488,10 @@ Sada hodnot dimenze je pojmenovaná skupina hodnot dimenze. Sada hodnot dimenze 
 1.  V Návrháři sestav otevřete definici řádků, sloupců nebo stromu, kterou chcete změnit.
 2.  V nabídce **Upravit** klikněte na tlačítko **Správa sad hodnot dimenzí**.
 3.  V dialogovém okně **Správa sad hodnot dimenzí** v poli **Dimenze** vyberte typ dimenze.
-4.  Vyberte sadu, která má být odebrána, a klikněte na tlačítko **Odstranit**. Kliknutím na tlačítko **Ano** trvale odstraňte sadu hodnot dimenze.
+4.  Vyberte sadu, kterou chcete odstranit, a klikněte na příkaz **Odstranit**. Kliknutím na tlačítko **Ano** se tato sada hodnot dimenze trvale odstraní.
 
 
-## <a name="see-also"></a>Viz také
+## <a name="additional-resources"></a>Další zdroje
 
 [Finanční výkaznictví](financial-reporting-intro.md)
 

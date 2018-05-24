@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c71d7632cfdafe48eee49c848982dfa85116df75
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 42ea3a6cf85802fc42c53111d17afbce042a6d44
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="generate-a-statistical-baseline-forecast"></a>Generování statistické základní prognózy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek obsahuje informace o parametrech a filtrech, které se používají při výpočtu prognózy poptávky. 
 
@@ -64,7 +64,7 @@ Vnitropodniková plánovací skupina, alokační klíče položky a dalších fi
 
 Pokud se prognóza nevygeneruje pro velkou sadu položek, ale například vždy jen pro jednu položku nebo jeden alokační klíč položky, bude pro dosažení lepšího výkonu nutné označit pole **Použít režim odpovědi na požadavek** na kartě **Hlavní plánování – nastavení – prognóza poptávky** - **Parametry tvorby prognóz poptávky - Azure Machine Learning**.
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Nastavení prognózy poptávky](demand-forecasting-setup.md)

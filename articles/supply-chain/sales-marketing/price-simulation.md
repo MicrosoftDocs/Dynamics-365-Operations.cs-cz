@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1db68ea5728cc417f0e70675d9074d5b054883da
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6df840de688975b9fa11b866361d88a730426bd0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="price-simulation"></a>Simulace ceny
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek obsahuje informace o simulaci cen pro nabídky. Simulace cen umožňuje vyhodnotit vliv srážek na budoucí prodejní ceny v průběhu nabídky, a to před potvrzením konkrétní ceny.
 
@@ -36,7 +36,7 @@ V rámci simulace ceny pro určitou nabídku je zobrazena nová celková částk
 
 Simulace ceny nezmění cenu v nabídce. Pokud je simulace ceny použita na celou nabídku je s ní v záhlaví nabídky nakládáno jako se speciální slevou. Vztahuje-li se simulace ceny na konkrétní položky, je s ní nakládáno jako se speciální slevou na řádcích nabídky. Prodejní jednotková cena na vytvořeném řádku nabídky se při použití simulace ceny nezmění. Namísto toho je použita procentuální hodnota slevy, která odpovídá snížení ceny řádku nabídky. Při použití simulace ceny jsou jednotková prodejní cena a procentuální hodnota slevy přeneseny na řádek nabídky nebo do záhlaví nabídky.  
 
-**Poznámka:** Při provádění simulace ceny je k vytvoření simulace použita pouze aktuální prodejní měna. Pokud však zobrazíte součty nabídky, zobrazí se kombinace měny společnosti a prodejní měny.  
+>[Poznámka!] Při provádění simulace ceny je k vytvoření simulace použita pouze aktuální prodejní měna. Pokud však zobrazíte součty nabídky, zobrazí se kombinace měny společnosti a prodejní měny.  
 
 Doplňkové položky, které jsou přidány na řádky nabídky, mohou aktivovat řádkové slevy nebo víceřádkové slevy. Také mohou aktivovat celkové slevy, které změní příspěvkové marže a příspěvkové poměry na řádcích nabídky nebo celou slevu.  
 

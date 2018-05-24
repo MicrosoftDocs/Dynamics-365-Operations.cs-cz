@@ -3,7 +3,7 @@ title: "Správa prodejní ceny v aplikaci Retail"
 description: "Toto téma popisuje koncepty pro vytváření a správu prodejních cen v aplikaci Microsoft Dynamics 365 for Retail."
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/27/2018
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -18,16 +18,16 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a7e6babe1bfec60ece4f84a77bbd838faf7274e0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="retail-sales-price-management"></a>Správa prodejní ceny v aplikaci Retail
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Toto téma poskytuje informace o procesu vytváření a správy prodejních cen v aplikaci Microsoft Dynamics 365 for Retail. zaměřuje se na koncepty, které jsou zahrnuty v tomto procesu, a na dopady různých možností konfigurace na prodejní ceny.
 
@@ -198,32 +198,6 @@ Microsoft SQL Server Express se často používá pro databáze kanálů z důvo
 Při nastavení prodejních cen v aplikaci Microsoft Dynamics 365, nezadáváte, zda hodnota ceny, kterou nastavujete, zahrnuje daň či nikoliv. Hodnotou je pouze cena. Nicméně nastavení **Cena včetně DPH** na maloobchodních kanálech vám umožňuje nakonfigurovat maloobchodní kanály tak, aby buď zahrnovaly nebo nezahrnovaly daň z ceny. Toto nastavení se nastavuje na kanálu a může se změnit i v jedné společnosti.
 
 Pokud pracujete s oběma typy zahrnuté a nezahrnuté daně, je velmi důležité správné nastavení ceny, vzhledem k tomu, že celková částka, kterou zákazník platí, se změní, pokud se změní nastavení **Cena včetně DPH** na kanálu.
-
-### <a name="effect-of-the-price-includes-sales-tax-setting-on-financial-postings"></a>Vliv nastavení možnosti Cena včetně DPH na finanční účtování
-Všechny částky, které jsou zaúčtovány do hlavní knihy pro účty příjmů a slev, jsou ovlivněny nastavením možnosti **Cena včetně DPH**. Následující příklad ukazuje, jak toto nastavení ovlivňuje finanční účtování.
-
-Příklad popisuje pouze účtování prodeje, protože nastavení **Cena včetně DPH** neovlivňuje účtování nákladů zásob.
-
-#### <a name="example"></a>Příklad
-V tomto příkladu jsou konfigurovány částky slevy tak, aby se účtovaly odděleně od výnosů.
-
-Prodáváte produkt za 100 USD, který má na daň ve výši 10 procent, a je použita sleva 5 %. Použijí se následující účty z ukázkových dat USRT:
-
-- **Výnos:** 401100
-- **Sleva:** 403200
-- **Daň:** 202100
-
-**Případ 1: Bez daně (označuje se též jako DPH)**
-
-- **Výnos:** 100 USD
-- **Výnos:** 5 USD
-- **Daň:** 9,5 USD (= 10 procent z 95 USD)
-
-**Případ 2: Včetně daně (označuje se též jako \[DPH\])**
-
-- **Výnos:** 90 USD
-- **Sleva:** 4,5 USD (= 5 procent z 90 USD)
-- **Daň:** 10 USD
 
 ## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>Rozdíly mezi maloobchodní cenou a cenou mimo maloobchod
 Jediný cenový modul se používá k výpočtu maloobchodní ceny ve všech kanálech: kontaktní středisko, maloobchod a online obchody. To umožňuje jednotné scénáře obchodování. 

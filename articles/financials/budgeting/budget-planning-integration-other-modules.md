@@ -19,16 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6db51f9fa180f0b8ce203fd2812c562b0201afa8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4a18190152b6e5ea520a81f1db2cf67ded652bbe
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="budget-planning-integration-with-other-modules"></a>Integrace plánování rozpočtu s jinými moduly
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  Plány rozpočtu lze vytvořit z několika různých zdrojů. Základní prvky periodického zpracování jsou stejné pro všechny zdroje. 
 
@@ -68,7 +68,7 @@ Možnost **Historie** na kartě **Cíl** umožňuje použití dat ze zdrojových
 
 Pole **Agregovat součet podle** v horní části stránky také určuje datum, které je použito. Toto pole je součet částek a volitelně nastaví datum platnosti na první den fiskálního období nebo fiskálního roku. 
 
-Mnoho polí na kartě <strong>Cíl</strong> lze upravit nebo je jen pro čtení – v závislosti na akci, kterou jste vybrali. Při změně z vytváření nového plánu rozpočtu na aktualizaci existujícího plánu pole <strong>Název plánu rozpočtu</strong> nebude k dispozici a pole, která se vztahují k výběru existujícího plánu, bude k dispozici. Na obou kartách <strong>Cíl</strong> i <strong>Zdroj** je pole **Hlavní kniha</strong> vždy k dispozici, protože hodnota vychází z vybraného procesu plánování rozpočtu. 
+Mnoho polí na kartě <strong>Cíl</strong> lze upravit nebo je jen pro čtení – v závislosti na akci, kterou jste vybrali. Při změně z vytváření nového plánu rozpočtu na aktualizaci existujícího plánu pole **Název plánu rozpočtu** nebude k dispozici a pole, která se vztahují k výběru existujícího plánu, bude k dispozici. Na obou kartách **Cíl** i **Zdroj** je pole **Hlavní kniha** vždy k dispozici, protože hodnota vychází z vybraného procesu plánování rozpočtu. 
 
 Pole **Třída rozpočtu** umožňuje nastavit řádky plánu rozpočtu jako výdajové transakce nebo transakce výnosů. Transakce výnosů se obvykle připíší na účet hlavní knihy a jsou tedy uloženy jako záporné. Obvykle se tyto transakce také zobrazí jako záporné částky v plánu rozpočtu. Přidáním třídy rozpočtu jako pole v rozvržení pro plán však můžete povolit výnosy, aby se zobrazily jako kladné množství.
 

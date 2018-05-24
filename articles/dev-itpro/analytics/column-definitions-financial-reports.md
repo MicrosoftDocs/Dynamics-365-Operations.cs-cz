@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 88570a8dc9da6f6a2b4d3a9499e1ea406f681451
-ms.openlocfilehash: 4608f43a3db9308881d4737e49df949190e3ede2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 18ae41c3c1b19edc2d56a7e3480890c8aea28054
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/14/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="column-definitions-in-financial-reports"></a>Definice sloupce ve finančních sestavách
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek obsahuje informace o definicích sloupce. Definice sloupce je součástí sestavy nebo stavebního bloku, který definuje obsah jednotlivých sloupců v sestavě. Stejně jako definice řádků lze základní definice sloupců použít u více sestav.
 
@@ -583,7 +583,7 @@ Můžete vytvořit sloupec, který zobrazuje všechny hodnoty v zadaném sloupc
 
 Částku v některém sloupci můžete vydělit zadaným počtem období. Například vzorec **B/Období** vydělí hodnotu ve sloupci B počtem období ve sloupci B. Pokud výpočet pokrývá více sloupců, zadejte počet období, který má být použit ve výpočtu. Například vzorec **(B+C)/Období** sečte částky ve sloupcích B a C a potom výslednou hodnotu vydělí hodnotou období.
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Definice řádku ve finančním výkaznictví](row-definitions-financial-reporting.md)

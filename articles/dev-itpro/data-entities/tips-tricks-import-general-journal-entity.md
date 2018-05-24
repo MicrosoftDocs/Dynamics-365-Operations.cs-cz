@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 688fa17072cb340d6d02be31528339fb98601825
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: eea226fae902c19d66aff83b7ee2786d1586ef39
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="best-practices-for-importing-vouchers-using-the-general-journal-entity"></a>Osvědčené postupy pro import dokladů pomocí entity obecného deníku
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma obsahuje tipy pro import dat do finančního deníku pomocí entity obecného deníku.  
 
@@ -57,7 +57,7 @@ Následující oddíly popisují účinek těchto nastavení, a také vysvětluj
 
 ### <a name="voucher-number"></a>Číslo dokladu
 
--   Při použití nastavení **Zpracování založené na sadě** u entitu obecného deníku je třeba uvádět číslo dokladu do importovaného souboru. Každá transakci ve finančním deníku je přiřazeno číslo dokladu, které je uvedeny v importovaném souboru, a to i v případě, že doklad není vyrovnán. Pokud chcete použít zpracování založené na sadě, ale chcete také použít číselnou řadu, která je definována pro čísla dokladů, byla vytvořena oprava hotfix pro verzi z února 2016. Číslo opravy hotfix je 3170316 a je k dispozici ke stažení na webu Lifecycle services (LCS). Další informace naleznete v tématu [Stažení oprav hotfix z webu Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md).
+-   Při použití nastavení **Zpracování založené na sadě** u entitu obecného deníku je třeba uvádět číslo dokladu do importovaného souboru. Každá transakci ve finančním deníku je přiřazeno číslo dokladu, které je uvedeny v importovaném souboru, a to i v případě, že doklad není vyrovnán. Pokud chcete použít zpracování založené na sadě, ale chcete také použít číselnou řadu, která je definována pro čísla dokladů, byla vytvořena oprava hotfix pro verzi z února 2016. Číslo opravy hotfix je 3170316 a je k dispozici ke stažení na webu Lifecycle services (LCS). Další informace naleznete v tématu [Stažení oprav hotfix z webu Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
     -   Chcete-li povolit tuto funkci, nastavte u názvu deníku, který se používá pro import, na možnost **Přidělení čísla při zaúčtování** na **Ano**.
     -   Číslo dokladu musí být i přesto definováno v importovaném souboru. Toto číslo však je dočasné a přepíše se čísel dokladu při zaúčtování deníku. Ujistěte se, že řádky deníku jsou seskupeny správně podle dočasného čísla dokladu. Například při zaúčtování jsou nalezeny tři řádky, které mají dočasný doklad číslo 1. Dočasné číslo dokladu pro všechny tři řádky je přepsáno dalším číslem v číselné řadě. Nejsou-li tyto tři řádky vyrovnané entity, doklad nebude zaúčtován. Dále v případě nalezení řádků, které mají dočasné číslo dokladu 2, je toto číslo přepsáno dalším číslem dokladu v číselné řadě, atd.
 

@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 825dba31a7093e9d9460f5aab59a96507dafeb8a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9768154e117ca09ae84c6a9c82d43000752c2b34
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="view-journal-entries-and-transactions"></a>Zobrazení položek deníku a transakcí
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 V tomto článku jsou vysvětleny různé způsoby zobrazení položek deníku a transakcí. 
 
@@ -54,9 +54,9 @@ Následující sestavy hlavní knihy slouží kromě finančních sestav k zobra
 -   **Původ transakce** – tato sestava transakcí zobrazí transakce podle deníku a podle transakce, účetnictví a vykazování měny. Také je zde uveden každý řádek deníku, který byl použit jako posun.
 
 
-## <a name="see-also"></a>Viz také
+## <a name="additional-resources"></a>Další zdroje
 - [Účetní zůstatky hlavní knihy](general-ledger-account-balances.md) 
-- [Průzkumník zdroje účetnictví](..\accounts-payable\accounting-source-explorer.md)
+- [Průzkumník zdroje účetnictví](../accounts-payable/accounting-source-explorer.md)
 - [Finanční výkaznictví](financial-reporting-getting-started.md)
 - [Zobrazení položek deníku](tasks/view-journal-entries-or-transactions.md)
 

@@ -20,16 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 703070ae85f504cf204244b2197732dc6849abd6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 40ac5108216fd6d9eb5cd6e76fefd66828a7da84
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="production-order-cost-analysis"></a>Analýza nákladů ve výrobní zakázce
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek obsahuje informace o analýze nákladů, kterou lze provést pro dokončené a aktuální výrobní zakázky. Můžete analyzovat odhadované náklady a skutečné náklady na stránce Kalkulace ceny nebo pomocí sestavy Odhad a výpočet nákladů. Můžete sledovat informace o odhadovaných a skutečných nákladech (a množství) jsou zobrazeny pro každou položku komponenty, operaci postupu a nepřímé náklady.
 
@@ -59,7 +59,7 @@ Samostatné sestavy poskytují informace o jednotlivých typech transakcí. Pomo
 -   **Dokončené položky v procesu**− V této sestavě jsou uvedeny aktuální výrobní zakázky a transakce označené jako dokončené k určenému datu transakce.
 
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Běžné zdroje výrobních odchylek](common-sources-of-production-variances.md)

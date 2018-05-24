@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a4eacafdf9b9e0eabe7fe599e679fca18c749733
+ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
+ms.openlocfilehash: b06abae184d07cd3b914caf74bdb16a7803919af
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
@@ -38,8 +38,7 @@ Obsah **Řízení nákladů** v Microsoft Power BI je určen pro skladové úče
 > [!Note]
 > Obsah **Řízení nákladů** Power BI popisovaný v tomto v tomto tématu se týká aplikace Dynamics 365 for Finance and Operations 8.0.
 > 
-> Sada obsahu Power BI **Řízení nákladů**, publikovaná na serveru PowerBI.com se již nepoužívá. Další informace o tomto odepsání uvádí [Sady obsahu Power BI publikované na PowerBI.com](../migration-upgrade/deprecated-features.md#power-bi-content-packs-published-to-powerbicom).
-
+> Sada obsahu Power BI **Řízení nákladů**, dostupná na serveru AppSource se již nepoužívá. Další informace o tomto odepsání uvádí [Sady obsahu Power BI dostupné na AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Tento obsah Power BI obsahuje kategorizovaný formát, který pomáhá sledovat výkon zásob a vizualizovat, jak jimi protékají náklady. Můžete získat manažerské informace, jako je například ukazatel obratu, počet dní, po který jsou zásoby na skladě, přesnost a "ABC-klasifikace" na preferované agregované úrovni (společnost, položka, skupina položek nebo webové stránky). Zpřístupněné informace lze použít také jako podrobný doplněk k finančnímu výkazu.
 

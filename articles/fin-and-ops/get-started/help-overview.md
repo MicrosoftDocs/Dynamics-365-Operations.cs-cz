@@ -19,16 +19,16 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 5adf73c1316f701b3b5e9b9a22fa5743ba1cc419
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2c02af887e662fd346d5e3e09cce755bfb58d520
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="help-system-overview"></a>Přehled systému nápovědy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma poskytuje přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations. Také je zde vysvětleno, jak můžete poskytnout vlastní dokumentaci a školení pro vaši organizaci. 
 
@@ -60,7 +60,7 @@ Primární zdroj dokumentace pro aplikaci Finance and Operations je web docs.mic
 
 -   **Přístup k nejaktuálnějšímu obsahu** – web nám poskytuje rychlejší a pružnější způsob vytváření, provedení a aktualizaci dokumentace k produktům. Díky tomu pomáhá zajistit, že budete mít přístup k aktuálním technickým informacím.
 -   **Obsah vytvořený odborníky** – web poskytuje lepší sadu dokumentace k produktu, kterou mohou vylepšovat členové komunity uvnitř i mimo aplikaci Microsoft.
--   **Přístup k různým typům obsahu** – web umožňuje rychlý přístup k různým typům obsahu o aplikaci Finance and Operations, například prezentacím Microsoft Office Mix, průvodcům záznamem úloh, videím a tématům.
+-   **Přístup k různým typům obsahu** – web umožňuje rychlý přístup k různým typům obsahu o aplikaci Finance and Operations, například průvodcům záznamem úloh, videím a tématům.
 -   **Obsah, který podporuje obchodní procesy** – web zahrnuje obsah založený na obchodní procesy, který využívá modul k modelování obchodních procesů (BPM) ve službě Microsoft Dynamics Lifecycle Services (LCS).
 
 ### <a name="searching-on-docsmicrosoftcom"></a>Vyhledávání na webu docs.microsoft.com
@@ -204,7 +204,7 @@ V následující tabulce jsou uvedeny naše weby. Naše weby s obsahem jsou uspo
 
 
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 [Systém nápovědy aplikace Finance and Operations (stručný přehled ke stažení)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 

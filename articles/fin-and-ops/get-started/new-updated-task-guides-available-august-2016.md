@@ -18,20 +18,20 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: 838dc40fb3fa2b0de7fa131850754c3674266d73
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c7fc274bb9d942e85012211b1a7a14873447e5f3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-august-2016"></a>Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma obsahuje nové nebo aktualizované průvodce úkolem vydané pro knihovnu Microsoft APQC Unified Library (srpen 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics AX. Nebyly vydány žádné nové knihovny Začínáme.
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Průvodci úkolem v knihovně APQC Unified Library pro Microsoft Dynamics AX (srpen 2016 – všechny jazyky)
+<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Průvodci úkolem v knihovně APQC Unified Library pro Microsoft Dynamics AX (srpen 2016 – všechny jazyky)
 ---------------------------------------------------------------------------------------------------
 
 Knihovna APQC Unified Library (srpen 2016 – všechny jazyky) obsahuje průvodce úkolem, kteří jsou určeni k použití pro nápovědu v aktualizaci 2 platformy Microsoft Dynamics AX (srpen 2016), aktualizaci Dynamics AX z května 2016 a vydání aplikace Microsoft Dynamics AX pro únor 2016. Další informace o těchto verzích najdete v tématu [Co je nového nebo co se změnilo](whats-new-changed.md). V této knihovně jsou k dispozici lokalizované verze průvodců záznamem úloh. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Začínáme s nápovědou](help-overview.md).
@@ -97,7 +97,7 @@ Knihovna APQC Unified Library (srpen 2016 – všechny jazyky) obsahuje průvodc
 
 
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Noví průvodci úkolem (únor 2016)](new-task-guides-available-february-2016.md)

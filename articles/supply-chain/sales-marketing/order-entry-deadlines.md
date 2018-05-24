@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 31308e64d4871a4d09540df16fdcd02cc83bd0be
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4f3905f364ea67eab226323fd3450ebed30e4735
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="order-entry-deadlines"></a>Konečné termíny zadání objednávek
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek poskytuje informace o konečných termínech objednávky. Konečný termín objednávky je časový interval přerušení, který určuje, zda je objednávka odběratele zpracována (a plněna), jako by byla přijata aktuálního dne nebo následujícího dne.
 
@@ -103,7 +103,7 @@ Následující tabulka obsahuje konečné termíny zadání objednávky pro pobo
 
 **Poznámka:** Pokud se používá úprava na letní čas, jsou termíny zadání objednávky upraveny odpovídajícím způsobem.
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Plány dodávek](delivery-schedules.md)

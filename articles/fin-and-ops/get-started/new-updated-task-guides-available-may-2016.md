@@ -18,20 +18,20 @@ ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c301f27504f7f1545608bb214a4f1b4d4cecc47f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 237ff2935ab8e2dee90bd716179b45c5fca455c3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-may-2016"></a>Noví nebo aktualizovaní průvodci úkolem (květen 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tento článek uvádí seznam nových nebo aktualizovaných průvodců úkolem vydaných pro knihovnu Microsoft APQC Unified Library (květen 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics AX. Nebyly vydány žádné nové knihovny Začínáme. 
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Průvodci úkolem v knihovně APQC Unified Library pro Microsoft Dynamics AX (květen 2016 – všechny jazyky)
+<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Průvodci úkolem v knihovně APQC Unified Library pro Microsoft Dynamics AX (květen 2016 – všechny jazyky)
 ------------------------------------------------------------------------------------------------
 
 Knihovna APQC Unified Library (květen 2016) obsahuje průvodce úkolem, kteří jsou určeni k použití pro nápovědu v aktualizaci aplikace Microsoft Dynamics AX pro květen 2016 a vydání aplikace Microsoft Dynamics AX pro únor 2016. Lokalizované verze průvodců úkolem vydaných v knihovně APQC Unified Library (únor 2016) jsou momentálně k dispozici v této knihovně. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Začínáme s nápovědou](help-overview.md). <strong>Poznámka:</strong> hvězdička (<strong>\</strong>*) vedle názvu řádku pro modelování podnikových procesů (BPM) označuje, že průvodce úkolem pro tento obchodní proces byl vytvořen pro aktualizaci Dynamics AX pro květen 2016 a není podporován v dřívějších verzích aplikace Microsoft Dynamics AX.
@@ -186,7 +186,7 @@ Knihovna APQC Unified Library (květen 2016) obsahuje průvodce úkolem, kteří
 |                  Nastavení omezení přepravy pro položku                   |     Globální     |
 |                <strong>\</strong>*Nastavení zásad práce ve skladu                 |     Globální     |
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Noví průvodci úkolem (únor 2016)](new-task-guides-available-february-2016.md)

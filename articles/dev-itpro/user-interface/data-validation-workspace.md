@@ -16,30 +16,28 @@ ms.assetid:
 ms.search.region: Global
 ms.author: bking
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: bbf4da5a33876973a376a0580fd553e15bd6febc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7046b687f99df32a3e1410c37c9a30ca285fa08f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="data-validation-workspace"></a>Pracovní prostor ověření dat
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma poskytuje přehled pracovního prostoru **Kontrolní seznam ověřování dat** a přidružené konfigurace.
-
-## <a name="data-validation-checklist-workspace"></a>Pracovní prostor kontrolního seznamu ověřování dat
 
 Pracovní prostor **Kontrolní seznam ověřování dat** umožňuje sledování procesů ověřování dat mezi společnostmi, oblastmi a osobami. Kontrolní seznam lze použít během nové implementace, po upgradu nebo po migraci. V závislosti na zobrazení pracovního prostoru **Kontrolní seznam ověřování dat** se zobrazí buď všechny úkoly a stavy pro projekt ověřování dat, nebo pouze úkoly, které vám byly přiřazeny.
 
 Nejprve je nutné vybrat projekt ověřování dat v horní části pracovního prostoru. Všechna data, která jsou zobrazena v pracovním prostoru, jsou pak filtrována podle vybraného projektu ověřování dat.
 
-### <a name="summary-tiles"></a>Dlaždice souhrnu
+## <a name="summary-tiles"></a>Dlaždice souhrnu
 
 Dlaždice **Souhrn** poskytují přehled procesu a indikátory vám pomohou udržet proces ověření dat podle plánu. Zobrazí se vám všechny zbývající úlohy, dokončené úlohy, probíhající úkoly a nezahájené úkoly procesu. Tyto informace jsou pro všechny společnosti, které jsou zahrnuté do vybraného projektu ověřování dat.
 
-### <a name="tasks-and-status-section"></a>Úkoly a výběr stavu
+## <a name="tasks-and-status-section"></a>Úkoly a výběr stavu
 
 V části **Úkoly a stav** se zobrazí celkový stav projektu ověřování dat různými způsoby: stav podle právnické osoby, oblasti a seznamu úloh. Můžete vybrat filtr pro zobrazení stavu pro konkrétní společnost. Každá karta stavu poskytuje rozpis podle procenta, které bylo dokončeno, a počtu úkolů, které zbývají.
 
@@ -52,11 +50,11 @@ Soubory, poznámky, obrázky a adresy URL můžete připojit k úkolu pomocí ak
 
 Možnost **Vyplnil/a** bude automaticky doplněna po dokončení úkolu jménem pracovníka, který úkol dokončil. Pokud je úkol označen jako dokončený, pole **Datum dokončení** je automaticky aktualizováno na aktuální datum a čas.
 
-### <a name="configure-data-validation-project-page"></a>Konfigurace stránky projektu ověřování dat
+## <a name="configure-data-validation-project-page"></a>Konfigurace stránky projektu ověřování dat
 
 Před použitím pracovního prostoru **Kontrolní seznam ověřování dat** je nutné nakonfigurovat proces s použitím stránky **Konfigurace stránky projektu ověřování dat**. (Klikněte na tlačítko **Pracovní prostory** \> **Kontrolní seznam ověřování dat** \> **Konfigurace projektu ověřování dat**.)
 
-### <a name="task-areas"></a>Oblasti úkolů
+## <a name="task-areas"></a>Oblasti úkolů
 
 Pomocí oblastí úkolů seskupte úkoly ověřování dat do logických oblastí vlastnictví ve vaší organizaci. Například závazky, pohledávky a hlavní kniha mohou být použity jako oblasti úkolu.
 

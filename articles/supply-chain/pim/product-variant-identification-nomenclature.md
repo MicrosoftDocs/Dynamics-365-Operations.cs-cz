@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 6a620f2a0105d578d419d3aac816c7d78fbf3e46
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3baf1d7313d8ff03ae5ece035b6f3641c0f1d707
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Názvosloví čísel a názvů variant produktu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak nastavit názvosloví pro čísla produktu, které nahradí opravený formát [základní produkt - konfigurace – velikost – barva – styl]. Nové názvosloví má cílený formát, který zahrnuje číslo základního produktu, rozměry aktivního produktu a textové oddělovače podle vašeho výběru. Můžete také vytvořit názvosloví pro názvy produktů. A konečně můžete také vytvořit názvosloví k identifikaci konfigurací, které jsou vytvořeny konfigurátorem produktu založeném na omezeních. Tato názvosloví můžou obsahovat atributy podle vašeho výběru.
 
@@ -192,7 +192,7 @@ V závislosti na názvosloví se systém může pokusit přiřadit nejedinečné
 
 Během jednoho kroku procesu konfigurace systém navrhne hodnotu konfigurace podle klasifikace. V tomto kroku můžete ručně změnit hodnotu konfigurace. Po uložení konfigurace systém zkontroluje, zda je hodnota konfigurace jedinečná. Není-li hodnota, kterou jste zadali jedinečná, zobrazí se chybová zpráva. Chcete-li uložit konfiguraci, musíte zadat jedinečnou hodnotu konfigurace.
 
-<a name="see-also"></a>Viz také
+<a name="additional-resources"></a>Další zdroje
 --------
 
 [Vytvoření názvosloví čísel produktů pro předdefinované varianty produktu](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)

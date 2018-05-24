@@ -3,7 +3,7 @@ title: "Integrace s aplikací Microsoft Dynamics 365 for Field Service"
 description: "Toto téma obsahuje přehled integrace s aplikací Microsoft Dynamics 365 for Field Service."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 04/10/2018
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: d32a4e376770fc73c79b94924d5ae062d201d84a
-ms.openlocfilehash: a224962152e80293f6cf3425dea74d73a283e31a
+ms.sourcegitcommit: 03a932652cdd93b2a5917d0fca72809d1648b678
+ms.openlocfilehash: b1acf0b64914a3199fcf44f8377e32b26f0af99e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/12/2018
+ms.lasthandoff: 04/25/2018
 
 ---
 
@@ -44,6 +44,12 @@ První fáze integrace mezi Field Service a Finance and Operations umožňuje sy
 - [Pracovní příkazy ve službě Field Service do prodejních objednávek v aplikaci Finance and Operations](field-service-work-order.md)
 - [Faktury v aplikaci Field Service na volné textové faktury ve Finance and Operations](field-service-invoice.md)
 
+Pokud se chcete podívat na příklad, jak můžete synchronizovat pracovní objednávku mezi aplikací Field Service a Finance and Operations, podívejte se na krátké video na YouTube:
+
+> [!Video https://www.youtube.com/embed/hAB4TDVMjxU]
+
+[Synchronizace pracovního příkazu mezi službou Field Service a aplikací Finance and Operations (video na YouTube)](https://youtu.be/hAB4TDVMjxU)
+
 ## <a name="system-requirements-for-finance-and-operations"></a>Systémové požadavky aplikaci Finance and Operations
 Integrace Field Service podporuje následující verze:
 
@@ -58,5 +64,5 @@ Chcete-li použít řešení integrace Field Service, je nutné nainstalovat ná
 
 - Dynamics 365 for Field Service verze 1612 (9.0.1.733) (DB 9.0.1.733) online nebo vyšší verze.
 - Řešení Prospect to Cash (P2C) pro Dynamics 365, verze 1.15.0.1 nebo novější. Řešení je k dispozici ke stažení na webech [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
-- Řešení integrace Field Service pro Dynamics 365, verze 1.0.0.0 nebo novější. Řešení je k dispozici ke stažení na webech AppSource. **(ČEKÁ NA VYDÁNÍ)**
+- Řešení integrace Field Service pro Dynamics 365, verze 1.0.0.0 nebo novější. Řešení je k dispozici ke stažení na webech [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.p2cfieldserviceintegration).
 
