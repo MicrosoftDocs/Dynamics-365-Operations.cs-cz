@@ -1,9 +1,9 @@
 ---
 title: Aplikace Microsoft Dynamics 365 for Talent
 description: "Aplikace Talent zjednodušuje mnoho rutinních administrativních úkolů a automatizuje řadu procesů souvisejících s pracovníky ve vaší organizaci. Mezi tyto procesy spadá udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn."
-author: rschloma
+author: josaw
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 06/04/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: db8b2e87ad020dac16ec74f2fea62e445c38e116
+ms.sourcegitcommit: bde68c9167e18cae6be4988865123d20274753c0
+ms.openlocfilehash: 9bc09a822f78b9792c2afdb0d297809edea7551a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/06/2018
 
 ---
 
@@ -42,6 +42,9 @@ Modul Talent lze použít k provádění těchto úkonů:
 + Hodnocení výkonu a implementace cílů pracovníka.
 + Nastavení, poskytování a analýza školení, která mají určitý program, semináře a průběh.
 
+Pusťte si video [Začínáme s aplikací Dynamics 365 for Talent](https://www.youtube.com/watch?v=6rg2ByadbN0) a seznamte se s aplikací Dynamics 365 for Talent.
+
+
 > [!NOTE] 
 > Aplikace Dynamics 365 for Talent úzce souvisí s modulem pro lidské zdroje v aplikaci Dynamics 365 for Finance and Operations. Stejné funkce se mohou objevit v obou produktech. Proto bude v tématech, která primárně souvisí s modulem Lidské zdroje, název produktu Dynamics 365 for Finance and Operations. V tématech, která primárně souvisí s aplikací Talent, pak bude název produktu Dynamics 365 for Talent. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
 
@@ -55,6 +58,8 @@ Při práci s modulem Talent se budete rozhodovat, jak nastavit strukturu organ
 -   [Nastavení parametrů lidských zdrojů mezi právnickými osobami](set-up-hr-parameters-across-legal-entities.md) 
 -   [Často kladené dotazy k akcím personálu](personnel-actions-faq.md)
 -   [Přehled pracovního volna a absencí](leave-absence-overview.md)
+-   [Používání aplikace Dynamics 365 for Talent: pracovní volno a absence (video)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
+-   [Správa pracovníků v aplikaci Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
 ## <a name="staffing-your-organization"></a>Správa zaměstnanců ve vaší organizaci
 
@@ -71,22 +76,25 @@ Můžete nastavit plány pro efektivní a spravedlivé řízení kompenzací, st
 -   [Proces kompenzace](process-compensation.md)
 -   [Vytvoření plánů fixní kompenzace](create-fixed-compensation-plans.md)
 -   [Vytvoření plánů variabilní kompenzace](create-variable-compensation-plans.md)
+-   [Správa kompenzací v aplikaci Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=lEw5oKopHDk)
 
-## <a name="develop-and-train-employees"></a>Vytvoření pracovních pozic zaměstnanců a jejich zaškolení
+## <a name="develop-and-train-employees"></a>Rozvoj a zaškolení zaměstnanců
 
 Abyste pomohli vašim zaměstnancům dosahovat jejich kariérních cílů za současného plnění důležitých firemních potřeb, můžete stanovovat cíle, vytvářet hodnocení výkonnosti a sledovat zpětnou vazbu. Pro rozvoj potřebných zaměstnaneckých dovedností můžete nastavovat instruktory, typy kurzů, popisy kurzů, agendy, cvičení a relace před přiřazením instruktora ke kurzu nebo registrací osoby do kurzu. Instruktoři musí již existovat jako pracovníci, uchazeči nebo kontakty.
 
 -   [Řízení výkonnosti](performance-management-overview.md)
 -   [Sladění dovedností zaměstnanců s potřebami společnosti](skills.md)
 -   [Správa školení prostřednictvím kurzů](courses.md)
+-   [Správa rozvoje zaměstnanců v aplikaci Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
-## <a name="create-and-maintain-benefits"></a>Vytvoření a správa výhod
+## <a name="create-and-maintain-benefits"></a>Vytvoření a správa zaměstnaneckých výhod
 
 Kromě kompenzací zaměstnanců skrze mzdy, platy a odměny můžete vyvíjet programy zaměstnaneckých výhod, jako je zdravotní pojištění a důchodové plány. Můžete také spravovat výhody, jako jsou například výpůjčky, ve kterých vaše společnost poskytuje svým zaměstnancům věci, jako jsou počítače nebo telefony, .
 
 -   [Definování a správa programu zaměstnaneckých výhod](manage-benefit-program.md)
 -   [Zásady způsobilosti k zaměstnaneckým výhodám](benefit-eligibility-policies.md)
--   [Spravovat položky půjčené zaměstnancům](loan-items.md)
+-   [Správa položek půjčených zaměstnancům](loan-items.md)
+-   [Správa zaměstnaneckých výhod v aplikaci Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Zachování bezpečnosti na pracovišti a dodržování předpisů
 
