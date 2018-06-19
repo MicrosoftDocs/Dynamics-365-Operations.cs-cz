@@ -28,6 +28,7 @@ ms.lasthandoff: 05/08/2018
 
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Upgrade procesů řízení skladu z aplikace Microsoft Dynamics AX 2012 na aplikaci Finance and Operations
 
+
 [!include [banner](../includes/banner.md)]
 
 Toto téma obsahuje přehled procesu upgradu aplikace Microsoft Dynamics AX 2012 R3 s modulem spuštění WMSII do modulu Microsoft Dynamics 365 for Finance and Operations.
