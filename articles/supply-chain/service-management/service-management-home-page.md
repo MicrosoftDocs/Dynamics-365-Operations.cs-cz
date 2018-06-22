@@ -1,28 +1,28 @@
 ---
 title: "Správa servisu"
 description: "Za pomoci správy servisu můžete sestavit servisní smlouvy a předplatné služeb, zpracování servisních zakázek, dotazů odběratelů a ke správě a analýze poskytování služeb odběratelům."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SMAServiceOrderTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
-ms.author: YuyuScheller
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 02cdf4615e2071f2b7de2e86b6f9e6637c6e5d8d
-ms.openlocfilehash: 236ab21b2d1c5a4e82270e5381d163e97437cb7f
+ms.sourcegitcommit: 80a3cb74279f72e8cb94f3a2c38230f409067a47
+ms.openlocfilehash: 89035687d87c674cca7fa5fd3126100c4c0ad892
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/24/2018
 
 ---
 
@@ -44,7 +44,7 @@ Můžete vytvořit servisní zakázky a spravovat tak informace o plánované a 
 
 4.  Všechny výdaje a poplatky za služby nebo opravy
 
-Odběratele mohou odeslat servisní požadavky z internetu pomocí podnikového portálu. Tyto požadavky můžete přijmout, zpracovat a zajistit jejich expedici. Po vytvoření servisní zakázky můžete prostřednictvím fází servisu sledovat průběh a stanovit pravidla, která určují, jaké akce budou povoleny v jednotlivých fázích. Po dokončení servisní zakázky se můžete od zakázky odhlásit, potvrdit tak její dokončení, a následně zaúčtovat objednávku a spustit proces fakturace.
+Servisní požadavky můžete přijmout, zpracovat a zajistit jejich expedici. Po vytvoření servisní zakázky můžete prostřednictvím fází servisu sledovat průběh a stanovit pravidla, která určují, jaké akce budou povoleny v jednotlivých fázích. Po dokončení servisní zakázky se můžete od zakázky odhlásit, potvrdit tak její dokončení, a následně zaúčtovat objednávku a spustit proces fakturace.
 
 Pomocí nástrojů pro vykazování můžete sledovat marže ze servisní objednávky a transakce za předplatné, a vytisknout popis práce a příjemky za práci.
 
@@ -56,47 +56,19 @@ Následující diagram znázorňuje vysoké úrovně obchodních procesů pro **
 
 ## <a name="service-management-at-a-glance"></a>Řízení služeb v kostce
 
-<table>
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Důležité úkoly</p></th>
-<th><p>Hlavní formuláře</p></th>
-<th><p>Oblíbené sestavy</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Plnění servisních smluv</a></p></td>
-<td><p><a href="https://technet.microsoft.com/en-us/library/aa617823(v=ax.60)">Servisní smlouvy (formulář)</a></p></td>
-<td><p><strong>Marže servisní zakázky</strong></p></td>
-</tr>
-<tr class="even">
-<td><p>Zpracování dotazů od odběratele</a></p></td>
-<td><p><a href="https://technet.microsoft.com/en-us/library/aa554361(v=ax.60)">Servisní zakázky (formulář)</a></p></td>
-<td><p><strong>Popis práce</strong></p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p><a href="https://technet.microsoft.com/en-us/library/hh242789(v=ax.60)">Expediční vývěska (formulář)</a></p></td>
-<td><p><strong>Transakce – předplatné</strong></p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p></p></td>
-<td><p><strong>Transakce poplatků předplatného</strong></p></td>
-</tr>
-</tbody>
-</table>
+|Důležité úkoly           | Primární stránky                         |Oblíbené sestavy              |
+|--------------------------|---------------------------------------|-----------------------------|
+|Plnění servisních smluv|Servisní smlouvy                     |Marže servisní zakázky         |
+|Zpracování dotazů od odběratele |Servisní zakázky                         |Popis práce             |
+|                          |Expediční vývěska                         |Transakce – předplatné   |
+|                          |                                       |Transakce poplatků předplatného|
 
 
 ## <a name="integration-of-service-management"></a>Integrace modulu Řízení služeb
 
-Řízení služeb lze integrovat s následujícími moduly v aplikaci Microsoft Dynamics 365 for Finance and Operations:
+Řízení služeb lze integrovat do těchto produktů v rámci modulů:
 
   - [Prodej a marketing](../sales-marketing/overview-sales-marketing.md)
-
   - [Lidské zdroje](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/index)
 
   

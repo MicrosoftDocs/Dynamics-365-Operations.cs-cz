@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e85b65e116b32adca09e46252d7d3bbe5101e1cf
+ms.sourcegitcommit: 6e4f89d86b64e0c8c76c15d3c2c1c00af353e9ca
+ms.openlocfilehash: e76b29cf6312959ee84c251d582310ce4822945f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/17/2018
 
 ---
 
@@ -45,11 +45,15 @@ Tato stránka obsahuje odkazy na relevantní dokumentaci týkající se nastaven
 [Nastavení možností zpracování objednávky](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>Konfigurace zpracování objednávky
-[Nastavení výstrah při podvodu](set-up-fraud-alerts.md)
-[ruční blokování objednávky](work-with-order-holds.md)
+[Nastavení výstrah u podvodů](set-up-fraud-alerts.md)
+
+[Ruční blokování objednávek](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>Konfigurace zpracování platby
 [Platební metody v kontaktním středisku](work-with-payments.md)
+
+## <a name="configure-delivery-modes"></a>Konfigurace způsobů dodání
+[Konfigurace způsobů dodání a poplatků call centra](configure-call-center-delivery.md)
 
 ## <a name="configure-direct-marketing"></a>Konfigurace přímého marketingu
 [Katalogy kontaktního střediska](call-center-catalogs.md)

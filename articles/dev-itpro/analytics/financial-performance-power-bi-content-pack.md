@@ -1,6 +1,6 @@
 ---
-title: "Obsah finanční výkonnosti Power BI"
-description: "Toto téma popisuje obsah Power BI pro finanční výkonnost."
+title: "Řešení PowerBI.com pro finanční výkon"
+description: "Toto téma popisuje řešení PowerBI.com pro finanční výkonnost."
 author: kweekley
 manager: AnnBe
 ms.date: 05/09/2018
@@ -18,26 +18,26 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: d062937d8d1cb7d8e4f4cc055eb4514fa56b4eab
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: b70d470da2160670848d2dca9c97f6d7a2d6cf60
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
-# <a name="financial-performance-power-bi-content"></a>Obsah finanční výkonnosti Power BI
+# <a name="financial-performance-powerbicom-solution"></a>Řešení PowerBI.com pro finanční výkon
 
 [!include [banner](../includes/banner.md)]
 
 > [!Note]
-> Tento balíček obsahu je zastaralý, jak je uvedeno v části [Balíčky obsahu Power BI dostupné v AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Toto řešení PowerBI.com je zastaralé, jak je zdokumentováno v části [Balíčky obsahu Power BI dostupné v AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-Toto téma popisuje obsah Microsoft Power BI **Finanční výkonnost**. Popisuje příslušné sestavy a řídicí panel a obsahuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
+Toto téma popisuje řešení PowerBI.com pro **finanční výkonnost**. Popisuje příslušné sestavy a řídicí panel a obsahuje informace o datovém modelu a entitách, které byly použity k sestavení řešení.
 
 ## <a name="main-account-setup"></a>Nastavení hlavního účtu
 Protože pro organizace je žádoucí, aby se závazky a částky výnosů zobrazovaly ve výkazech jako kladné částky, je důležité správně nastavit hlavní účty. Aby se tyto hlavní účty zobrazovaly jako kladné částky, musí být typ hlavního účtu nastaven na **Pasiva** nebo **Výnos**. Při použití těchto typů účtů se při vykazování pomocí nástroje Power BI změní znaménka a částky se zobrazí jako kladné.
 
-## <a name="dashboard-and-reports-that-are-included-in-the-power-bi-content"></a>Řídicí panely a výkazy, které jsou součástí obsahu Power BI
+## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>Řídicí panely a výkazy, které jsou součástí řešení PowerBI.com
 Řídicí panel obsahuje souhrnné dlaždice dat, která jsou založena na základních sestavách. Každá dlaždice obsahuje souhrnné informace pro aktuální rok v rámci všech společností v organizaci. Následuje několik příkladů dlaždic:
 
 - Hotovost
@@ -74,7 +74,7 @@ Každá z těchto dlaždic je podložena příslušnou sestavou. Tyto sestavy ob
 Grafy a dlaždice ve všech těchto sestavách můžete filtrovat a ukotvit na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
-Následující entity byly použity jako základ obsahu Power BI **Finanční výkonnost**:
+Následující entity byly použity jako základ řešení PowerBI.com **Finanční výkonnost**:
 
 **Agregované datové entity**
 

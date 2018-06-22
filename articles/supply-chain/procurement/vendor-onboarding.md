@@ -17,10 +17,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 325cf12345afcf531181f65a41d0e5262798c14f
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: f831d986d7b534bf030bee0fa0c5dcb97af03289
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -49,8 +49,7 @@ Následující tabulka zobrazuje kroky a role, které jsou zahrnuty v procesu.
 | Správce            | | | Vytvořte uživatele v aplikaci Finance and Operations a Microsoft Azure. | | | |
 | Kontaktní osoba dodavatele    | | | Odešlete e-mail kontaktní osobě. | Zaregistruje informace o dodavateli. | | |
 
-Pro rychlou demonstraci náborového procesu dodavatele se podívejte na toto krátké video na YouTube: 
-> [!Video https://www.youtube.com/embed/0KUc3AGaTKk]
+Pro rychlou ukázku náborového procesu dodavatele se podívejte na toto krátké video na YouTube: [Příjem nového dodavatele v aplikaci Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Import požadavků na registraci potenciálního dodavatele
 

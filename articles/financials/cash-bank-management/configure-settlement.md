@@ -1,16 +1,16 @@
 ---
 title: "Konfigurace vyrovnání"
-description: "To, jak a kdy jsou transakce vyrovnány, může být poměrně složité, proto je nutné pochopit a správně definovat parametry pro splnění požadavků společnosti. Tento článek popisuje parametry, které se používají k vyrovnání pro závazky i pohledávky."
+description: "To, jak a kdy jsou transakce vyrovnány, může být poměrně složité, proto je nutné pochopit a správně definovat parametry pro splnění požadavků společnosti. Toto téma popisuje parametry, které se používají k vyrovnání pro závazky i pohledávky."
 author: kweekley
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ed520ce3a67fab81da24b36b042152f530d75dd
+ms.sourcegitcommit: 66e2fdbf7038a2c15fb373d4f96cd6e6c4c87ea0
+ms.openlocfilehash: 1361bce94f6542112cf29e369f2238f211d0647e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-To, jak a kdy jsou transakce vyrovnány, může být poměrně složité, proto je nutné pochopit a správně definovat parametry pro splnění požadavků společnosti. Tento článek popisuje parametry, které se používají k vyrovnání pro závazky i pohledávky. 
+To, jak a kdy jsou transakce vyrovnány, může být poměrně složité, proto je nutné pochopit a správně definovat parametry pro splnění požadavků společnosti. Toto téma popisuje parametry, které se používají k vyrovnání pro závazky i pohledávky. 
 
 Následující parametry ovlivní způsob zpracování vyrovnání v aplikaci Microsoft Dynamics 365 for Finance and Operations. Vyrovnání je proces vyrovnání faktury podle platbou nebo dobropisem. Tyto parametry jsou umístěny v oblasti **Vyrovnání** stránek **Parametry pohledávek** a **Parametry závazků**.
 
@@ -58,7 +58,14 @@ Následující parametry ovlivní způsob zpracování vyrovnání v aplikaci Mi
 - **Určit prioritu vyrovnání (pouze pohledávky)** – nastavte možnost na hodnotu **Ano**, abyste aktivovali tlačítko **Označit podle priority** na stránkách **Zadat platby odběratele** a **Vyrovnat transakce**. Toto tlačítko umožňuje uživatelům přiřadit k transakcím předem stanovené pořadí vyrovnání.  Po použití pořadí vyrovnání na transakci lze upravit pořadí a přidělení platby před zaúčtováním.
 - **Použít prioritu pro automatické vyrovnání** – nastavte tuto možnost na **Ano**, chcete-li použít definované pořadí priority při automatickém vyrovnání transakcí. Toto pole je k dispozici pouze tehdy, pokud jsou volby **Určit prioritu vyrovnání** a **Automatické vyrovnání** nastaveny na hodnotu **Ano**.
 
+## <a name="fixed-dimensions-on-accounts-receivableaccounts-payable-main-accounts"></a>Pevné dimenze na hlavních účtech pohledávek/ závazků
 
+Když se na hlavním účtu pohledávek / závazků používají pevné dimenze, budou při procesu vyrovnání zaúčtovány další účetní záznamy a dvě další dodavatelské transakce. vyrovnání porovná účet hlavní knihy pohledávek a závazků z faktury a platby.  Když jsou platby a vyrovnání dokončeny dohromady, což je typický scénář, účetní zápis platby nebyla zaúčtován do hlavní knihy, pokud není dokončen také proces vyrovnání. Z důvodu pořadí zpracování událostí vyrovnání nedokáže určit skutečný účet hlavní knihy pohledávek/závazků z účetního zápisu platby v hlavní knize. Vyrovnání rekonstruuje, jaký účet hlavní knihy bude pro platbu určen. Toto číslo se stává problémem při použití pevné dimenze pro hlavní účet pohledávek a účet závazků.
 
+Aby bylo možné rekonstruovat účet hlavní knihy, je hlavní účet pohledávek a závazků načten z účetního profilu a finanční dimenze jsou načteny ze záznamu transakce dodavatele pro platbu, jak je definováno v deníku plateb. Pevné dimenze nejsou ve výchozím nastavení poslány do deníků plateb, ale namísto toho platí pro hlavní účet jako poslední krok procesu zaúčtování. V důsledku toho nebude hodnota pevné dimenze pravděpodobně obsažena v transakci dodavatele, pokud není dodána z jiného zdroje, jako je dodavatel. Rekonstruovaný účet nebude zahrnovat pevnou dimenzi. Zpracování vyrovnání určí, že musí být vytvořena položka vyrovnání, protože faktura byla zaúčtovaná s pevnou hodnotou dimenze a rekonstruovaný účet platby nebyl.  Jak vyrovnání pokračuje zaúčtováním upravující položky, použije se poslední krok při zaúčtování pevné dimenze. Přidáním pevné dimenze k vyrovnávací položce je zaúčtován s částkou Má dáti a Dal na stejný účet hlavní knihy. Vyrovnání nemůže vrátit zpět účetní položky.
 
+Abyste se vyhnuli dalším účetním položkám, straně Má dáti a Dal na stejném účtu hlavní knihy, měla by být vzata v úvahu následující zástupná řešení v závislosti na obchodních požadavcích. 
+
+-   Organizace často používají pevné dimenze k nulovému plnění a finanční dimenzi, která není požadována. Obvykle se jedná o případy pro rozvahové účty, jako jsou účty pohledávek a závazků. Účetní struktury lze použít pro nesledované finanční dimenze, které jsou obvykle vyplněny nulovými hodnotami.  Odebrání finanční dimenze pro rozvahové účty eliminuje nutnost použít pevné dimenze.
+-   Pokud vaše organizace vyžaduje pevné dimenze na hlavním účtu pohledávek/závazků, najděte způsob nastavení výchozí pevné dimenze pro platbu, tak, aby hodnota pevné dimenze byla uložena v transakci dodavatele pro platbu. To umožní systému obnovit hlavní účet pohledávek a závazků tak, aby zahrnoval hodnoty pevné dimenze. Hodnotu pevné dimenze lze definovat jako výchozí pro dodavatele nebo pro název deníku pro deník plateb.
 
