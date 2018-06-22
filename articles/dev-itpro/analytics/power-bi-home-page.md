@@ -1,9 +1,9 @@
 ---
-title: Obsah Power BI
-description: "V tomto tématu je uveden seznam obsahu Power BI, který je k dispozici a odkazuje na zdroje, které uvádějí podrobnější informace."
+title: "Řešení PowerBI.com"
+description: "V tomto tématu jsou popsána řešení PowerBI.com, která jsou k dispozici, a téma odkazuje na zdroje, které se o řešeních dozvíte více."
 author: sericks007
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,69 +19,49 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 43675cdeaa8498e38e7ab030b935293d71035ea0
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: 0aa9971226e5aa79cab85f098e098dbb789a1e2d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
-# <a name="power-bi-content"></a><span data-ttu-id="cabf1-103">Obsah Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-103">Power BI content</span></span>
-[!include [banner](../includes/banner.md)]
+# <a name="powerbicom-solutions"></a><span data-ttu-id="36ec6-103">Řešení PowerBI.com</span><span class="sxs-lookup"><span data-stu-id="36ec6-103">PowerBI.com solutions</span></span>
+<span data-ttu-id="36ec6-104">Následující řešení PowerBI.com jsou k dispozici v prostředí Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="36ec6-104">The following PowerBI.com solutions are available for Dynamics 365 for Finance and Operations environments.</span></span> 
 
-<span data-ttu-id="cabf1-104">V tomto tématu je uveden seznam obsahu Microsoft Power BI, který je k dispozici a odkazuje na zdroje, které uvádějí podrobnější informace.</span><span class="sxs-lookup"><span data-stu-id="cabf1-104">This topic lists the Microsoft Power BI content that is available and points you to resources where you can learn more about it.</span></span>
+## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a><span data-ttu-id="36ec6-105">PowerBI.com řešení, která jsou k dispozici ze služby Lifecycle Services (LCS)</span><span class="sxs-lookup"><span data-stu-id="36ec6-105">PowerBI.com solutions available from Lifecycle Services (LCS)</span></span>
 
-## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations"></a><span data-ttu-id="cabf1-105">Obsah Power BI pro aplikaci Dynamics 365 for Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="cabf1-105">Power BI content for Dynamics 365 for Finance and Operations</span></span>
-<span data-ttu-id="cabf1-106">Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, je k dispozici následující obsah Power BI:</span><span class="sxs-lookup"><span data-stu-id="cabf1-106">If you're using Microsoft Dynamics 365 for Finance and Operations, the following Power BI content is available:</span></span>
-
-- [<span data-ttu-id="cabf1-107">Obsah Power BI pro porovnání skutečné situace s rozpočtem</span><span class="sxs-lookup"><span data-stu-id="cabf1-107">Actual vs budget Power BI content</span></span>](ledger-budgets-power-bi.md)
-- [<span data-ttu-id="cabf1-108">Obsah zaměstnaneckých výhod v Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-108">Benefits Power BI content</span></span>](benefits-power-bi.md)
-- [<span data-ttu-id="cabf1-109">Obsah přehledu hotovosti v Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-109">Cash overview Power BI content</span></span>](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
-- [<span data-ttu-id="cabf1-110">Obsah přehledu CFO v Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-110">CFO overview Power BI content</span></span>](CFO-power-bi.md)
-- [<span data-ttu-id="cabf1-111">Obsah kompenzací v Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-111">Compensation Power BI content</span></span>](compensation-power-bi.md)
-- [<span data-ttu-id="cabf1-112">Obsah Power BI analýzy nákladového účetnictví</span><span class="sxs-lookup"><span data-stu-id="cabf1-112">Cost accounting analysis Power BI content</span></span>](cost-accounting-analysis-content-pack.md) 
-- [<span data-ttu-id="cabf1-113">Obsah správy nákladů v Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-113">Cost management Power BI content</span></span>](cost-management-content-pack.md)    
-- [<span data-ttu-id="cabf1-114">Obsah správy úvěru a inkasa v Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-114">Credit and collections management Power BI content</span></span>](../../financials/accounts-receivable/credit-collections-power-bi.md)
-- [<span data-ttu-id="cabf1-115">Obsah Power BI pro rozvoj zaměstnanců</span><span class="sxs-lookup"><span data-stu-id="cabf1-115">Employee development Power BI content</span></span>](employee-development-PBI.md) 
-- [<span data-ttu-id="cabf1-116">Obsah Power BI Finanční přehledy</span><span class="sxs-lookup"><span data-stu-id="cabf1-116">Financial insights Power BI content</span></span>](financial-insights.md)
-- [<span data-ttu-id="cabf1-117">Obsah finanční výkonnosti Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-117">Financial performance Power BI content</span></span>](financial-performance-power-bi-content-pack.md)
-- [<span data-ttu-id="cabf1-118">Obsah správy investičního majetku v Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-118">Fixed asset management Power BI content</span></span>](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
-- [<span data-ttu-id="cabf1-119">Obsah Power BI pro výuku</span><span class="sxs-lookup"><span data-stu-id="cabf1-119">Learning Power BI content</span></span>](learning-power-bi.md)
-- [<span data-ttu-id="cabf1-120">Obsah Power BI pro manažery školení</span><span class="sxs-lookup"><span data-stu-id="cabf1-120">Practice manager Power BI content</span></span>](practice-manager-power-bi.md)
-- [<span data-ttu-id="cabf1-121">Obsah výkonosti výroby v Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-121">Production performance Power BI content</span></span>](production-performance-power-bi.md)
-- [<span data-ttu-id="cabf1-122">Analýza obsahu Power BI výdajů na nákup</span><span class="sxs-lookup"><span data-stu-id="cabf1-122">Purchase spend analysis Power BI content</span></span>](purchase-content-pack-for-power-bi.md) 
-- [<span data-ttu-id="cabf1-123">Obsah Power BI pro nábor</span><span class="sxs-lookup"><span data-stu-id="cabf1-123">Recruiting Power BI content</span></span>](recruiting-analysis-power-bi-content-pack.md) 
-- [<span data-ttu-id="cabf1-124">Obsah výkonu prodeje a ziskovosti Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-124">Sales and profitability performance Power BI content</span></span>](sales-profitability-performance-content-pack.md)
-- [<span data-ttu-id="cabf1-125">Obsah spotřeby BI plateb dodavatele</span><span class="sxs-lookup"><span data-stu-id="cabf1-125">Vendor payments Power BI content</span></span>](../../financials/accounts-payable/Vendor-payments-workspace.md)
-- [<span data-ttu-id="cabf1-126">Obsah výkonu skladu v Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-126">Warehouse performance Power BI content</span></span>](warehouse-power-bi-content.md)
-- [<span data-ttu-id="cabf1-127">Obsah metriky pracovní síly Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-127">Workforce metrics Power BI content</span></span>](workforce-analysis-power-bi-content-pack.md)  
-
-## <a name="power-bi-content-for-dynamics-365-for-operations-version-1611"></a><span data-ttu-id="cabf1-128">Obsah Power BI content pro Dynamics 365 for Operations verze 1611</span><span class="sxs-lookup"><span data-stu-id="cabf1-128">Power BI content for Dynamics 365 for Operations version 1611</span></span>
-<span data-ttu-id="cabf1-129">Pokud používáte verzi Microsoft Dynamics 365 for Operations 1611, je k dispozici následující obsah Power BI.</span><span class="sxs-lookup"><span data-stu-id="cabf1-129">If you're using Microsoft Dynamics 365 for Operations version 1611, the following Power BI content is available:</span></span>
-
-- [<span data-ttu-id="cabf1-130">Obsah kompenzací a zaměstnaneckých výhod v Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-130">Compensation and benefits Power BI content</span></span>](compensation-and-benefits-analysis-power-bi-content-pack.md)   
-- [<span data-ttu-id="cabf1-131">Obsah Power BI analýzy nákladového účetnictví</span><span class="sxs-lookup"><span data-stu-id="cabf1-131">Cost accounting analysis Power BI content</span></span>](cost-accounting-analysis-content-pack.md) 
-- [<span data-ttu-id="cabf1-132">Obsah správy úvěru a inkasa v Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-132">Credit and collections management Power BI content</span></span>](../../financials/accounts-receivable/credit-collections-power-bi.md)
-- [<span data-ttu-id="cabf1-133">Obsah Power BI kompetencí a rozvoje zaměstnance</span><span class="sxs-lookup"><span data-stu-id="cabf1-133">Employee competencies and development Power BI content</span></span>](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
-- [<span data-ttu-id="cabf1-134">Obsah finanční výkonnosti Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-134">Financial performance Power BI content</span></span>](financial-performance-power-bi-content-pack.md)
-- [<span data-ttu-id="cabf1-135">Obsah organizačních školení Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-135">Organizational training Power BI content</span></span>](organizational-training-analysis-power-bi-content-pack.md) 
-- [<span data-ttu-id="cabf1-136">Obsah Power BI pro manažery školení</span><span class="sxs-lookup"><span data-stu-id="cabf1-136">Practice manager Power BI content</span></span>](practice-manager-power-bi.md)
-- [<span data-ttu-id="cabf1-137">Obsah výkonosti výroby v Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-137">Production performance Power BI content</span></span>](production-performance-power-bi.md)
-- [<span data-ttu-id="cabf1-138">Analýza obsahu Power BI výdajů na nákup</span><span class="sxs-lookup"><span data-stu-id="cabf1-138">Purchase spend analysis Power BI content</span></span>](purchase-content-pack-for-power-bi.md) 
-- [<span data-ttu-id="cabf1-139">Obsah Power BI pro nábor</span><span class="sxs-lookup"><span data-stu-id="cabf1-139">Recruiting Power BI content</span></span>](recruiting-analysis-power-bi-content-pack.md) 
-- [<span data-ttu-id="cabf1-140">Obsah výkonu prodeje a ziskovosti Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-140">Sales and profitability performance Power BI content</span></span>](sales-profitability-performance-content-pack.md)
-- [<span data-ttu-id="cabf1-141">Obsah výkonu skladu v Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-141">Warehouse performance Power BI content</span></span>](warehouse-power-bi-content.md)
-- [<span data-ttu-id="cabf1-142">Obsah metriky pracovní síly Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-142">Workforce metrics Power BI content</span></span>](workforce-analysis-power-bi-content-pack.md)  
-
-## <a name="power-bi-content-for-microsoft-dynamics-ax"></a><span data-ttu-id="cabf1-143">Obsah Power BI pro aplikaci Microsoft Dynamics AX</span><span class="sxs-lookup"><span data-stu-id="cabf1-143">Power BI content for Microsoft Dynamics AX</span></span>
-<span data-ttu-id="cabf1-144">Pokud používáte verzi Microsoft Dynamics AX 7.0 or Microsoft Dynamics AX 7.0.1, je k dispozici následující obsah Power BI.</span><span class="sxs-lookup"><span data-stu-id="cabf1-144">If you're using Microsoft Dynamics AX 7.0 or Microsoft Dynamics AX 7.0.1, the following Power BI content is available:</span></span>
+<span data-ttu-id="36ec6-106">Následující řešení PowerBI.com jsou k dispozici v knihovnách sdíleného majetku LCS.</span><span class="sxs-lookup"><span data-stu-id="36ec6-106">The following PowerBI.com solutions are available in the Shared assets library of LCS.</span></span> <span data-ttu-id="36ec6-107">Přečtěte si informace o verzi v knihovně sdíleného majetku, abyste si stáhli správnou verzi vašeho prostředí.</span><span class="sxs-lookup"><span data-stu-id="36ec6-107">Refer to the version information in the Shared assets library to download the correct version for your environment.</span></span> 
 
 > [!Note]
-> <span data-ttu-id="cabf1-145">Tyto balíčky obsahu jsou zastaralé, jak je uvedeno v části [Balíčky obsahu Power BI publikované na PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).</span><span class="sxs-lookup"><span data-stu-id="cabf1-145">These content packs have been deprecated as documented in [Power BI content packs published to PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).</span></span>
+> <span data-ttu-id="36ec6-108">Většina řešení PowerBI.com v následujícím seznamu jsou vložena do analytických pracovní prostorů v posledních verzích aplikace Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="36ec6-108">Most of the PowerBI.com solutions in the following list have been embedded in analytical workspaces in recent versions of Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="36ec6-109">Použití analytických pracovních prostorů eliminuje potřebu stahovat tato řešení z knihovny sdíleného majetku LCS.</span><span class="sxs-lookup"><span data-stu-id="36ec6-109">Using analytical workspaces eliminates the need to download these solutions from the Shared assets library in LCS.</span></span> <span data-ttu-id="36ec6-110">Téma v tomto seznamu určuje, kam byla tato PowerBI.com řešení integrována v aplikaci Finance and Operations, pokud byla.</span><span class="sxs-lookup"><span data-stu-id="36ec6-110">The topics in this list indicate where these PowerBI.com solutions have been embedded in Finance and Operations, where applicable.</span></span> 
 
-- [<span data-ttu-id="cabf1-146">Obsah správy nákladů v Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-146">Cost management Power BI content</span></span>](cost-management-content-pack.md)    
-- [<span data-ttu-id="cabf1-147">Obsah finanční výkonnosti Power BI</span><span class="sxs-lookup"><span data-stu-id="cabf1-147">Financial performance Power BI content</span></span>](financial-performance-power-bi-content-pack.md)
-- [<span data-ttu-id="cabf1-148">Obsah Power BI výkonnosti maloobchodní sítě</span><span class="sxs-lookup"><span data-stu-id="cabf1-148">Retail channel performance Power BI content</span></span>](retail-channel-performance-dashboard-power-bi-data.md) 
+- [<span data-ttu-id="36ec6-111">Skutečnost a rozpočet</span><span class="sxs-lookup"><span data-stu-id="36ec6-111">Actual vs budget</span></span>](ledger-budgets-power-bi.md)
+- [<span data-ttu-id="36ec6-112">Přehled hotovosti</span><span class="sxs-lookup"><span data-stu-id="36ec6-112">Cash overview</span></span>](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
+- [<span data-ttu-id="36ec6-113">Kompenzace a zaměstnanecké výhody</span><span class="sxs-lookup"><span data-stu-id="36ec6-113">Compensation and benefits</span></span>](compensation-and-benefits-analysis-power-bi-content-pack.md)   
+- [<span data-ttu-id="36ec6-114">Analýza nákladového účetnictví</span><span class="sxs-lookup"><span data-stu-id="36ec6-114">Cost accounting analysis</span></span>](cost-accounting-analysis-content-pack.md) 
+- [<span data-ttu-id="36ec6-115">Správa kreditu a inkasa</span><span class="sxs-lookup"><span data-stu-id="36ec6-115">Credit and collections management</span></span>](../../financials/accounts-receivable/credit-collections-power-bi.md)
+- [<span data-ttu-id="36ec6-116">Kompetence a rozvoj zaměstnance</span><span class="sxs-lookup"><span data-stu-id="36ec6-116">Employee competencies and development</span></span>](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
+- [<span data-ttu-id="36ec6-117">Finanční výkonnost</span><span class="sxs-lookup"><span data-stu-id="36ec6-117">Financial performance</span></span>](financial-performance-power-bi-content-pack.md)
+- [<span data-ttu-id="36ec6-118">Správa dlouhodobého majetku</span><span class="sxs-lookup"><span data-stu-id="36ec6-118">Fixed asset management</span></span>](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
+- [<span data-ttu-id="36ec6-119">Školení organizace</span><span class="sxs-lookup"><span data-stu-id="36ec6-119">Organizational training</span></span>](organizational-training-analysis-power-bi-content-pack.md) 
+- [<span data-ttu-id="36ec6-120">Manažer školení</span><span class="sxs-lookup"><span data-stu-id="36ec6-120">Practice manager</span></span>](practice-manager-power-bi.md)
+- [<span data-ttu-id="36ec6-121">Výkonnost výroby</span><span class="sxs-lookup"><span data-stu-id="36ec6-121">Production performance</span></span>](production-performance-power-bi.md)
+- [<span data-ttu-id="36ec6-122">Analýza nákupu a výdajů</span><span class="sxs-lookup"><span data-stu-id="36ec6-122">Purchase spend analysis</span></span>](purchase-content-pack-for-power-bi.md) 
+- [<span data-ttu-id="36ec6-123">Nábor</span><span class="sxs-lookup"><span data-stu-id="36ec6-123">Recruiting</span></span>](recruiting-analysis-power-bi-content-pack.md)
+- [<span data-ttu-id="36ec6-124">Výkon prodeje a ziskovosti</span><span class="sxs-lookup"><span data-stu-id="36ec6-124">Sales and profitability performance</span></span>](sales-profitability-performance-content-pack.md)
+- [<span data-ttu-id="36ec6-125">Platby dodavatelů</span><span class="sxs-lookup"><span data-stu-id="36ec6-125">Vendor payments</span></span>](../../financials/accounts-payable/Vendor-payments-workspace.md)
+- [<span data-ttu-id="36ec6-126">Výkonnost skladu</span><span class="sxs-lookup"><span data-stu-id="36ec6-126">Warehouse performance</span></span>](warehouse-power-bi-content.md)
+- [<span data-ttu-id="36ec6-127">Metriky zaměstnanců</span><span class="sxs-lookup"><span data-stu-id="36ec6-127">Workforce metrics</span></span>](workforce-analysis-power-bi-content-pack.md)  
 
+## <a name="powerbicom-solutions-available-from-appsource"></a><span data-ttu-id="36ec6-128">PowerBI.com řešení dostupná z AppSource</span><span class="sxs-lookup"><span data-stu-id="36ec6-128">PowerBI.com solutions available from AppSource</span></span>
 
+<span data-ttu-id="36ec6-129">Následující řešení PowerBI.com jsou dostupná z [Microsoft AppSource](https://appsource.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="36ec6-129">The following PowerBI.com solutions are available from [Microsoft AppSource](https://appsource.microsoft.com).</span></span>
+
+> [!Note]
+> <span data-ttu-id="36ec6-130">Tato řešení jsou zastaralá, jak je uvedeno v části [Balíčky obsahu Power BI dostupné v AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).</span><span class="sxs-lookup"><span data-stu-id="36ec6-130">These solutions have been deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).</span></span>
+
+- <span data-ttu-id="36ec6-131">Správa nákladů</span><span class="sxs-lookup"><span data-stu-id="36ec6-131">Cost management</span></span>    
+- [<span data-ttu-id="36ec6-132">Finanční výkonnost</span><span class="sxs-lookup"><span data-stu-id="36ec6-132">Financial performance</span></span>](financial-performance-power-bi-content-pack.md)
+- [<span data-ttu-id="36ec6-133">Výkonnost maloobchodního kanálu </span><span class="sxs-lookup"><span data-stu-id="36ec6-133">Retail channel performance</span></span>](retail-channel-performance-dashboard-power-bi-data.md) 
 

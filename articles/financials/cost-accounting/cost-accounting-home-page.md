@@ -19,38 +19,38 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: ad2648c402db8827d40c906b2f255862f6ed0e50
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 8f4a371664ceb7df9ac28cececc456bc73d655cb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
-# <a name="cost-accounting-home-page"></a><span data-ttu-id="b646b-103">Domovská stránka nákladového účetnictví</span><span class="sxs-lookup"><span data-stu-id="b646b-103">Cost accounting home page</span></span>
+# <a name="cost-accounting-home-page"></a><span data-ttu-id="b4ede-103">Domovská stránka nákladového účetnictví</span><span class="sxs-lookup"><span data-stu-id="b4ede-103">Cost accounting home page</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="learning-map"></a><span data-ttu-id="b646b-104">Mapa výuky</span><span class="sxs-lookup"><span data-stu-id="b646b-104">Learning map</span></span> 
+## <a name="learning-map"></a><span data-ttu-id="b4ede-104">Mapa výuky</span><span class="sxs-lookup"><span data-stu-id="b4ede-104">Learning map</span></span> 
 
-<span data-ttu-id="b646b-105">Následující mapa výuky zobrazuje hlavní koncepty a úkoly, které tvoří rámec modulu Nákladové účetnictví.</span><span class="sxs-lookup"><span data-stu-id="b646b-105">The following learning map shows the major concepts and tasks that make up the framework of the Cost accounting module.</span></span> <span data-ttu-id="b646b-106">Informace o způsobu použití tohoto modulu získáte kliknutím na odkazy v sekci [Rychlé odkazy](#quick-links).</span><span class="sxs-lookup"><span data-stu-id="b646b-106">Click the links in the [Quick links](#quick-links) section to learn how to use the module.</span></span>
+<span data-ttu-id="b4ede-105">Následující mapa výuky zobrazuje hlavní koncepty a úkoly, které tvoří rámec modulu Nákladové účetnictví.</span><span class="sxs-lookup"><span data-stu-id="b4ede-105">The following learning map shows the major concepts and tasks that make up the framework of the Cost accounting module.</span></span> <span data-ttu-id="b4ede-106">Informace o způsobu použití tohoto modulu získáte kliknutím na odkazy v sekci [Rychlé odkazy](#quick-links).</span><span class="sxs-lookup"><span data-stu-id="b4ede-106">Click the links in the [Quick links](#quick-links) section to learn how to use the module.</span></span>
 
-<span data-ttu-id="b646b-107">[![Mapa výuky pro nákladové účetnictví](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span><span class="sxs-lookup"><span data-stu-id="b646b-107">[![Learning map for cost accounting](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span></span>
+<span data-ttu-id="b4ede-107">[![Mapa výuky pro nákladové účetnictví](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span><span class="sxs-lookup"><span data-stu-id="b4ede-107">[![Learning map for cost accounting](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span></span>
 
-## <a name="quick-links"></a><span data-ttu-id="b646b-108">Rychlé odkazy</span><span class="sxs-lookup"><span data-stu-id="b646b-108">Quick links</span></span>
+## <a name="quick-links"></a><span data-ttu-id="b4ede-108">Rychlé odkazy</span><span class="sxs-lookup"><span data-stu-id="b4ede-108">Quick links</span></span>
 
 |      |   |
 |------|---|
-|  <span data-ttu-id="b646b-109">[Konfigurace základních entit (kurz elektronického vzdělávání)](https://mbspartner.microsoft.com/Home) (vyžaduje účet CustomerSource)</span><span class="sxs-lookup"><span data-stu-id="b646b-109">[Configure base entities (eLearning)](https://mbspartner.microsoft.com/Home) (requires CustomerSource account)</span></span>  |[<span data-ttu-id="b646b-110">Vytvořit dimenze</span><span class="sxs-lookup"><span data-stu-id="b646b-110">Create dimensions</span></span>](cost-elements.md)  |
-|  [<span data-ttu-id="b646b-111">Vytvoření hierarchie dimenzí</span><span class="sxs-lookup"><span data-stu-id="b646b-111">Create dimension hierarchy</span></span>](dimension-hierarchy.md)  |[<span data-ttu-id="b646b-112">Vytvoření základního nastavení</span><span class="sxs-lookup"><span data-stu-id="b646b-112">Create basic setup</span></span>](./tasks/define-cost-control-units.md)| 
-| [<span data-ttu-id="b646b-113">Definování základu přidělení</span><span class="sxs-lookup"><span data-stu-id="b646b-113">Define allocation base</span></span>](allocation-bases.md)|[<span data-ttu-id="b646b-114">Definovat zásady</span><span class="sxs-lookup"><span data-stu-id="b646b-114">Define policies</span></span>](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
-| [<span data-ttu-id="b646b-115">Zdroj dat a poskytovatel dat</span><span class="sxs-lookup"><span data-stu-id="b646b-115">Data source and data provider</span></span>](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [<span data-ttu-id="b646b-116">Zdroj dat a poskytovatel dat</span><span class="sxs-lookup"><span data-stu-id="b646b-116">Data source and data provider</span></span>](./tasks/process-trace-source-data.md)     | 
-|[<span data-ttu-id="b646b-117">Výpočet režijních nákladů</span><span class="sxs-lookup"><span data-stu-id="b646b-117">Overhead calculation</span></span>](overhead-calculation.md)  | [<span data-ttu-id="b646b-118">Analýzy a výkaznictví</span><span class="sxs-lookup"><span data-stu-id="b646b-118">Analysis and reporting</span></span>](cost-control-workspace.md)   |
+|  <span data-ttu-id="b4ede-109">[Konfigurace základních entit (kurz elektronického vzdělávání)](https://mbspartner.microsoft.com/Home) (vyžaduje účet CustomerSource)</span><span class="sxs-lookup"><span data-stu-id="b4ede-109">[Configure base entities (eLearning)](https://mbspartner.microsoft.com/Home) (requires CustomerSource account)</span></span>  |[<span data-ttu-id="b4ede-110">Vytvořit dimenze</span><span class="sxs-lookup"><span data-stu-id="b4ede-110">Create dimensions</span></span>](cost-elements.md)  |
+|  [<span data-ttu-id="b4ede-111">Vytvoření hierarchie dimenzí</span><span class="sxs-lookup"><span data-stu-id="b4ede-111">Create dimension hierarchy</span></span>](dimension-hierarchy.md)  |[<span data-ttu-id="b4ede-112">Vytvoření základního nastavení</span><span class="sxs-lookup"><span data-stu-id="b4ede-112">Create basic setup</span></span>](./tasks/define-cost-control-units.md)| 
+| [<span data-ttu-id="b4ede-113">Definování základu přidělení</span><span class="sxs-lookup"><span data-stu-id="b4ede-113">Define allocation base</span></span>](allocation-bases.md)|[<span data-ttu-id="b4ede-114">Definovat zásady</span><span class="sxs-lookup"><span data-stu-id="b4ede-114">Define policies</span></span>](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
+| [<span data-ttu-id="b4ede-115">Zdroj dat a poskytovatel dat</span><span class="sxs-lookup"><span data-stu-id="b4ede-115">Data source and data provider</span></span>](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [<span data-ttu-id="b4ede-116">Zdroj dat a poskytovatel dat</span><span class="sxs-lookup"><span data-stu-id="b4ede-116">Data source and data provider</span></span>](./tasks/process-trace-source-data.md)     | 
+|[<span data-ttu-id="b4ede-117">Výpočet režijních nákladů</span><span class="sxs-lookup"><span data-stu-id="b4ede-117">Overhead calculation</span></span>](overhead-calculation.md)  | [<span data-ttu-id="b4ede-118">Analýzy a výkaznictví</span><span class="sxs-lookup"><span data-stu-id="b4ede-118">Analysis and reporting</span></span>](cost-control-workspace.md)   |
 
-## <a name="get-started-videosbr"></a><span data-ttu-id="b646b-119">Videa Začínáme</span><span class="sxs-lookup"><span data-stu-id="b646b-119">Get started videos</span></span><br/>
+## <a name="get-started-videosbr"></a><span data-ttu-id="b4ede-119">Videa Začínáme</span><span class="sxs-lookup"><span data-stu-id="b4ede-119">Get started videos</span></span><br/>
 
 |  |  |                             |
 |------------------------|--------------------|-----------------------------|
-| <iframe width="100%"  src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>  | <iframe width="100%"  src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe>  |   <iframe width="100%" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>  |
+| [<span data-ttu-id="b4ede-120">Začínáme s nákladovým účetnictvím</span><span class="sxs-lookup"><span data-stu-id="b4ede-120">Get started with cost accounting</span></span>](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [<span data-ttu-id="b4ede-121">Mobilní pracovní prostor účtování nákladů</span><span class="sxs-lookup"><span data-stu-id="b4ede-121">Cost accounting mobile workspace</span></span>](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [<span data-ttu-id="b4ede-122">Použití aplikace Excel pro analýzy nákladového účetnictví</span><span class="sxs-lookup"><span data-stu-id="b4ede-122">Use Excel for cost accounting analysis</span></span>](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
 |  |  |                             |
 
 
