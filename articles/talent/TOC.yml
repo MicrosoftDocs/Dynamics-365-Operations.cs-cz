@@ -1,0 +1,84 @@
+- name: Vítá vás aplikace Dynamics 365 for Talent
+  href: index.md
+- name: Začínáme
+  href: talent-get-started.md
+  items:
+    - name: Systémové požadavky a zásady aktualizace
+      href: talent-versions-update-policy.md
+    - name: Zřízení Microsoft Dynamics 365 for Talent
+      href: provisioning-talent.md
+    - name: Odstranění prostředí Talent
+      href: remove-talent-environment.md
+    - name: Zřízení modulárních aplikací Microsoft Dynamics 365 for Talent
+      href: modular-app-tech-faq.md
+    - name: Rozšíření funkce Talent
+      href: extend-talent-functionality.md
+    - name: Přístup k funkcím náhledu v aplikaci Dynamics 365 for Talent
+      href: access-preview-feature.md
+- name: Vytvoření strategie lidských zdrojů
+  href: departments-jobs-positions.md
+  items:
+    - name: Nastavení komponent práce
+      href: create-job.md
+    - name: Vytvoření oddělení a jeho přidružení k hierarchii oddělení
+      href: create-department-add-department-hierarchy.md
+    - name: Nastavení parametrů lidských zdrojů mezi právnickými osobami
+      href: set-up-hr-parameters-across-legal-entities.md
+    - name: Nastavení parametrů lidských zdrojů pro konkrétní společnost
+      href: set-up-company-specific-hr-parameters.md
+    - name: Často kladené dotazy k akcím personálu
+      href: personnel-actions-faq.md
+    - name: Formalizace obchodních procesů
+      href: formalize-business-processes.md
+    - name: Správa informací o zaměstnanci pomocí workflowu
+      href: workflow-manage-employee-information.md
+    - name: Přehled pracovního volna a absencí
+      href: leave-absence-overview.md
+- name: Správa zaměstnanců ve vaší organizaci
+  items:
+    - name: Přehled aplikace Attract
+      href: attract-overview.md
+    - name: Přehled aplikace Onboard
+      href: create-onboarding-experience.md
+- name: Motivace zaměstnanců
+  items:
+    - name: Plány kompenzace
+      href: compensation-plans.md
+    - name: Vytvoření plánů fixní kompenzace
+      href: create-fixed-compensation-plans.md
+    - name: Vytvoření plánů variabilní kompenzace
+      href: create-variable-compensation-plans.md
+    - name: Proces kompenzace
+      href: process-compensation.md
+- name: Rozvoj a zaškolení zaměstnanců
+  items:
+    - name: Přehled řízení výkonnosti
+      href: performance-management-overview.md
+    - name: Vyrovnání dovedností zaměstnanců s obchodními potřebami
+      href: skills.md
+    - name: Nastavení školicích kurzů
+      href: courses.md
+- name: Vytvoření a správa zaměstnaneckých výhod
+  href: manage-benefit-program.md
+- name: "Zásady způsobilosti k\_zaměstnaneckým výhodám"
+  href: benefit-eligibility-policies.md
+  items:
+    - name: Správa položek půjčených zaměstnancům
+      href: loan-items.md
+- name: Shromáždění informací pomocí dotazníku
+  href: questionnaires.md
+  items:
+    - name: Návrh dotazníku
+      href: design-questionnaires.md
+    - name: Distribuce a vyplnění dotazníku
+      href: distribute-questionnaires.md
+    - name: Hodnocení výsledků dotazníku
+      href: evaluate-questionnaire-results.md
+- name: "Bezpečnost na pracovišti a\_dodržování předpisů (USA)"
+  items:
+    - name: Odpověď na požadavek personálních dat pomocí aplikace Talent
+      href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/talent/toc.json
+    - name: Ověřování zaměstnanců pomocí formuláře I-9
+      href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json
+    - name: Vyhovění normě ADA
+      href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json
