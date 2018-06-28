@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6f0257d6a16d3d53953e1fbbf023109425fa6844
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: f2aa55ae4258f5ef81456b92278415297c194d66
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -34,10 +34,7 @@ Aplikace Microsoft Dynamics 365 for Finance and Operations sice poskytuje rozsá
 
 Možnost přidat vlastní pole je k dispozici v aktualizaci platform update 13 a novější.
 
-Toto video ukazuje, jak je snadné přidat na stránku vlastní pole.
-
-
-> [!Video https://www.youtube.com/embed/gWSGZI9Vtnc]
+Toto video ukazuje, jak je snadné přidat vlastní pole na stránku: [Přidání vlastního pole v aplikaci Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
 ## <a name="creating-custom-fields"></a>Vytváření vlastních polí
 Poté, co jste identifikovali doplňující informace, které chcete v aplikaci sledovat, můžete vytvořit vlastní pole v příslušné tabulce a vystavit toto nové pole na stránce.   

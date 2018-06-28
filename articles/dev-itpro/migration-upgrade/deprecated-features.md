@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: c935b0c14f09b0a3a738266e4c9c577c96f0ea77
+ms.sourcegitcommit: 65101b5f0030a25973a584b68ec9697506868294
+ms.openlocfilehash: 6b954d1eedb7c7af1c9a5eda92aa1dd6132a19fa
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/30/2018
 
 ---
 
@@ -162,6 +162,18 @@ Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporu�
 
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise Edition červenec 2017 a aktualizací platform update 8
+
+### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Převod měny pro účetnictví a měny vykazování
+
+Převod měny pro účetnictví a měny vykazování byl zaveden se zavedením eura.
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Omezené použití a přidání funkce kopírování právnické osoby jako náhrady.      |
+| **Nahrazeno jinou funkcí?**   | Ne, ale byly přidány funkce Kopírovat právnickou osobu a Konfigurace, aby se usnadnilo přesunutí společnosti, která má zásadní požadavky na změnu. |
+| **Ovlivněné oblasti produktu**         | Správa financí     |
+| **Stav**                         | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.   |
+
 
 ### <a name="warehouse-mobile-devices-portal"></a>Portál skladu pro mobilní zařízení
 

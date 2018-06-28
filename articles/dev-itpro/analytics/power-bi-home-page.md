@@ -1,9 +1,9 @@
 ---
-title: Obsah Power BI
-description: "V tomto tématu je uveden seznam obsahu Power BI, který je k dispozici a odkazuje na zdroje, které uvádějí podrobnější informace."
+title: "Řešení PowerBI.com"
+description: "V tomto tématu jsou popsána řešení PowerBI.com, která jsou k dispozici, a téma odkazuje na zdroje, které se o řešeních dozvíte více."
 author: sericks007
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,69 +19,49 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2473fa408ae8884b8713198debfff489ff6e6c46
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: 0aa9971226e5aa79cab85f098e098dbb789a1e2d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
-# <a name="power-bi-content"></a>Obsah Power BI
-[!include [banner](../includes/banner.md)]
+# <a name="powerbicom-solutions"></a>Řešení PowerBI.com
+Následující řešení PowerBI.com jsou k dispozici v prostředí Dynamics 365 for Finance and Operations. 
 
-V tomto tématu je uveden seznam obsahu Microsoft Power BI, který je k dispozici a odkazuje na zdroje, které uvádějí podrobnější informace.
+## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a>PowerBI.com řešení, která jsou k dispozici ze služby Lifecycle Services (LCS)
 
-## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations"></a>Obsah Power BI pro aplikaci Dynamics 365 for Finance and Operations
-Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, je k dispozici následující obsah Power BI:
-
-- [Obsah Power BI pro porovnání skutečné situace s rozpočtem](ledger-budgets-power-bi.md)
-- [Obsah zaměstnaneckých výhod v Power BI](benefits-power-bi.md)
-- [Obsah přehledu hotovosti v Power BI](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
-- [Obsah přehledu CFO v Power BI](CFO-power-bi.md)
-- [Obsah kompenzací v Power BI](compensation-power-bi.md)
-- [Obsah Power BI analýzy nákladového účetnictví](cost-accounting-analysis-content-pack.md) 
-- [Obsah správy nákladů v Power BI](cost-management-content-pack.md)    
-- [Obsah správy úvěru a inkasa v Power BI](../../financials/accounts-receivable/credit-collections-power-bi.md)
-- [Obsah Power BI pro rozvoj zaměstnanců](employee-development-PBI.md) 
-- [Obsah Power BI Finanční přehledy](financial-insights.md)
-- [Obsah finanční výkonnosti Power BI](financial-performance-power-bi-content-pack.md)
-- [Obsah správy investičního majetku v Power BI](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
-- [Obsah Power BI pro výuku](learning-power-bi.md)
-- [Obsah Power BI pro manažery školení](practice-manager-power-bi.md)
-- [Obsah výkonosti výroby v Power BI](production-performance-power-bi.md)
-- [Analýza obsahu Power BI výdajů na nákup](purchase-content-pack-for-power-bi.md) 
-- [Obsah Power BI pro nábor](recruiting-analysis-power-bi-content-pack.md) 
-- [Obsah výkonu prodeje a ziskovosti Power BI](sales-profitability-performance-content-pack.md)
-- [Obsah spotřeby BI plateb dodavatele](../../financials/accounts-payable/Vendor-payments-workspace.md)
-- [Obsah výkonu skladu v Power BI](warehouse-power-bi-content.md)
-- [Obsah metriky pracovní síly Power BI](workforce-analysis-power-bi-content-pack.md)  
-
-## <a name="power-bi-content-for-dynamics-365-for-operations-version-1611"></a>Obsah Power BI content pro Dynamics 365 for Operations verze 1611
-Pokud používáte verzi Microsoft Dynamics 365 for Operations 1611, je k dispozici následující obsah Power BI.
-
-- [Obsah kompenzací a zaměstnaneckých výhod v Power BI](compensation-and-benefits-analysis-power-bi-content-pack.md)   
-- [Obsah Power BI analýzy nákladového účetnictví](cost-accounting-analysis-content-pack.md) 
-- [Obsah správy úvěru a inkasa v Power BI](../../financials/accounts-receivable/credit-collections-power-bi.md)
-- [Obsah Power BI kompetencí a rozvoje zaměstnance](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
-- [Obsah finanční výkonnosti Power BI](financial-performance-power-bi-content-pack.md)
-- [Obsah organizačních školení Power BI](organizational-training-analysis-power-bi-content-pack.md) 
-- [Obsah Power BI pro manažery školení](practice-manager-power-bi.md)
-- [Obsah výkonosti výroby v Power BI](production-performance-power-bi.md)
-- [Analýza obsahu Power BI výdajů na nákup](purchase-content-pack-for-power-bi.md) 
-- [Obsah Power BI pro nábor](recruiting-analysis-power-bi-content-pack.md) 
-- [Obsah výkonu prodeje a ziskovosti Power BI](sales-profitability-performance-content-pack.md)
-- [Obsah výkonu skladu v Power BI](warehouse-power-bi-content.md)
-- [Obsah metriky pracovní síly Power BI](workforce-analysis-power-bi-content-pack.md)  
-
-## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Obsah Power BI pro aplikaci Microsoft Dynamics AX
-Pokud používáte verzi Microsoft Dynamics AX 7.0 or Microsoft Dynamics AX 7.0.1, je k dispozici následující obsah Power BI.
+Následující řešení PowerBI.com jsou k dispozici v knihovnách sdíleného majetku LCS. Přečtěte si informace o verzi v knihovně sdíleného majetku, abyste si stáhli správnou verzi vašeho prostředí. 
 
 > [!Note]
-> Tyto balíčky obsahu jsou zastaralé, jak je uvedeno v části [Balíčky obsahu Power BI publikované na PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
+> Většina řešení PowerBI.com v následujícím seznamu jsou vložena do analytických pracovní prostorů v posledních verzích aplikace Dynamics 365 for Finance and Operations. Použití analytických pracovních prostorů eliminuje potřebu stahovat tato řešení z knihovny sdíleného majetku LCS. Téma v tomto seznamu určuje, kam byla tato PowerBI.com řešení integrována v aplikaci Finance and Operations, pokud byla. 
 
-- [Obsah správy nákladů v Power BI](cost-management-content-pack.md)    
-- [Obsah finanční výkonnosti Power BI](financial-performance-power-bi-content-pack.md)
-- [Obsah Power BI výkonnosti maloobchodní sítě](retail-channel-performance-dashboard-power-bi-data.md) 
+- [Skutečnost a rozpočet](ledger-budgets-power-bi.md)
+- [Přehled hotovosti](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
+- [Kompenzace a zaměstnanecké výhody](compensation-and-benefits-analysis-power-bi-content-pack.md)   
+- [Analýza nákladového účetnictví](cost-accounting-analysis-content-pack.md) 
+- [Správa kreditu a inkasa](../../financials/accounts-receivable/credit-collections-power-bi.md)
+- [Kompetence a rozvoj zaměstnance](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
+- [Finanční výkonnost](financial-performance-power-bi-content-pack.md)
+- [Správa dlouhodobého majetku](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
+- [Školení organizace](organizational-training-analysis-power-bi-content-pack.md) 
+- [Manažer školení](practice-manager-power-bi.md)
+- [Výkonnost výroby](production-performance-power-bi.md)
+- [Analýza nákupu a výdajů](purchase-content-pack-for-power-bi.md) 
+- [Nábor](recruiting-analysis-power-bi-content-pack.md)
+- [Výkon prodeje a ziskovosti](sales-profitability-performance-content-pack.md)
+- [Platby dodavatelů](../../financials/accounts-payable/Vendor-payments-workspace.md)
+- [Výkonnost skladu](warehouse-power-bi-content.md)
+- [Metriky zaměstnanců](workforce-analysis-power-bi-content-pack.md)  
 
+## <a name="powerbicom-solutions-available-from-appsource"></a>PowerBI.com řešení dostupná z AppSource
 
+Následující řešení PowerBI.com jsou dostupná z [Microsoft AppSource](https://appsource.microsoft.com).
+
+> [!Note]
+> Tato řešení jsou zastaralá, jak je uvedeno v části [Balíčky obsahu Power BI dostupné v AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+
+- Správa nákladů    
+- [Finanční výkonnost](financial-performance-power-bi-content-pack.md)
+- [Výkonnost maloobchodního kanálu ](retail-channel-performance-dashboard-power-bi-data.md) 
 

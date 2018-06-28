@@ -3,7 +3,7 @@ title: Videa pro Dynamics 365 for Finance and Operations
 description: "Tato stránka uvádí seznam postupů a technických videí vytvořených společností Microsoft, v souvislosti s aplikací Dynamics 365 for Finance and Operations a jsou k dispozici ve službě YouTube a na dalších webech."
 author: josaw1
 manager: AnnBe
-ms.date: 05/08/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1a7f95090f245af8a5520326954ce01747d71f17
+ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
+ms.openlocfilehash: 7783671baa66b9c8ab0bb2626555d5ccbfaa1fe9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/15/2018
 
 ---
 
@@ -81,6 +81,9 @@ Videa jsou seřazena podle funkcí, takže přejděte dolů, abyste viděli cel�
 
 #### <a name="office-integration"></a>Integrace s Office
 - [Vytvoření šablony aplikace Excel pro záhlaví a vzorce řádků v aplikaci Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
+
+#### <a name="organization-administration"></a>Správa organizace
+- [Správa dokumentů](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be)
 
 #### <a name="procurement-and-sourcing"></a>Zásobování a zdroje
 - [Schválení nákupních objednávek na mobilním zařízení](https://youtu.be/gZ-gOlJe7H8)

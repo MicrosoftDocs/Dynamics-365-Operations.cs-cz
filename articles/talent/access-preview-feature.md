@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2e5dd8f852ac1a6c2997a50a60f03db6adfd218c
-ms.openlocfilehash: 5500bfc1cdd1949d301ae82fad5506dfdbeb59f3
+ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
+ms.openlocfilehash: 63e0a52919e12c1f497e6809244939c6047826a7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/01/2018
+ms.lasthandoff: 05/15/2018
 
 ---
 
@@ -72,8 +72,6 @@ Nastavení **funkce náhledu** můžete použít v centru pro správu aplikace M
     > Zveřejněná pracovní místa se zobrazí pouze zákazníkům, kteří mají předplacený jeden nebo více produktů seznamu volných míst ve službě LinkedIn. Jinak zákazníci pracovní místo uvidí pouze v případě, že je explicitně hledají. Při zveřejnění pracovního místa na webu LinkedIn nastalo zpoždění. Po zveřejnění z aplikace Abstract může trvat několik hodin, než se pracovní místo objeví.
 
 - **Žádost uchazeče** – interní i externí uchazeči nyní mohou žádat o místa přímo ze stránky pracovních míst na kariérním webu.
-- **Hodnocení** – jako součást konfigurovatelného procesu náboru na konkrétní pracovní místo nebo při použití šablony pracovního místa mají uživatelé nyní přístup k novému typu aktivity **hodnocení**. Následně mohou použít aplikaci Project: "Gauge" v aplikaci Talent k vytvoření základního hodnocení, které lze zaslat zájemcům. Project: "Gauge" je k dispozici také ve veřejném náhledu. V budoucnu budou přidány další zprostředkovatelé.
-- **Projekt: "Gauge"** – Project: "Gauge" je aplikace systému Talent, která uživatelům umožňuje vytvořit jednoduché hodnocení nebo průzkumy aplikaci.
 - **Správa nabídek** – uživatelé mohou nyní vytvářet nabídkové dopisy ze šablony, které obsahují zástupné symboly. S tím, jak uživatelé procházejí fázemi nabídky, náboráři a manažeři pro zaměstnance mohou pomocí nástroje Nabídka připravit formální nabídku pro uchazeče pomocí šablon pro zaslání nabídek na interní schválení a nakonec odeslat nabídku zájemci k podpisu. Do nástroje Nabídka budou průběžně přidávány nové možnosti a funkce náhledu bude o tyto možnosti aktualizována, jak budeme připraveni je vydávat k náhledu.
 
 ### <a name="core-hr"></a>Základní lidské zdroje
@@ -90,7 +88,7 @@ Bez ohledu na to, zda je zpětná vazba kladná nebo záporná, chceme znát vá
     - [Nápady](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
     - [Základní lidské zdroje](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
 
-Neuvádějte ve zpětné vazbě nebo recenzích na produkty své osobní údaje (některé informace, které by vás mohly identifikovat). Shromážděné informace mohou být dále analyzovány a nebudou použity k odpovídání na žádosti v rámci platných zákonů o ochraně osobních údajů. Osobní údaje, které jsou získány samostatně v rámci těchto programů, se řídí [Prohlášením společnosti Microsoft o ochraně osobních údajů](https://privacy.microsoft.com/en-us/privacystatement).
+Neuvádějte ve zpětné vazbě nebo recenzích na produkty své osobní údaje (některé informace, které by vás mohly identifikovat). Shromážděné informace mohou být dále analyzovány a nebudou použity k odpovídání na žádosti v rámci platných zákonů o ochraně osobních údajů. Osobní údaje, které jsou získány samostatně v rámci těchto programů, se řídí [Prohlášením společnosti Microsoft o ochraně osobních údajů](https://privacy.microsoft.com/privacystatement).
 
 > [!TIP]
 > Toto téma si uložte do záložek a často se vracejte, abyste měli informace o nových funkcích náhledu, když je vydáme.

@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fc47f6cd9cfe4a850e0959bf89da086ca82f3b69
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: d58bab48c65bb891155af95c79738b019e5760bf
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
@@ -96,6 +96,9 @@ Nabídka **Opětovné seřazení** je k dispozici při výběru více entit. Mů
 
 #### <a name="sorting"></a>Třídění
 Použijte možnost **Seřadit podle** k zobrazení seznamu entit v sekvenčním pořadí.
+
+### <a name="truncating"></a>Zkrácení
+Pro projekty importu můžete zkrátit záznamy předchozích entit před importem. To je užitečné v případě, že je nutné importovat záznamy do čisté sady tabulek. Toto nastavení je ve výchozím nastavení vypnuté.
 
 ## <a name="validate-that-the-source-data-and-target-data-are-mapped-correctly"></a>Ověření, zda jsou zdrojová a cílová data správně namapována
 Mapování je funkce vztahující se jak k úloze importu, tak k úloze exportu.

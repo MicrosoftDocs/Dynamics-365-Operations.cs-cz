@@ -16,10 +16,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 0aecbb129b9545ebed1a797299b4379bbc6ca6b9
-ms.openlocfilehash: 1ed3bab2ec7357714123bc21356809cfa0dd5576
+ms.sourcegitcommit: 2b930050b415c111b4612b6d8f920f5c673b54da
+ms.openlocfilehash: 98a56021ea67623ee4dc1013913bc4b924c199fd
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 05/18/2018
 
 ---
 
@@ -82,6 +82,12 @@ Konstantní symboly jsou přiřazeny bankovním účtům a použity v prodejníc
 > Ve výchozím nastavení, pokud nastavíte specifický symbol pro bankovní účet, je zkopírován do výtisku formuláře faktury dodavatele. Konstantní symbol je také zobrazen na výtiscích faktur. 
 
 Bankovní symboly můžete nastavit na stránce **Bankovní konstantní symboly** (**Pokladna a banka** > **Nastavení** > **Konstantní symboly**). 
+
+## <a name="year-end-close"></a>Roční uzávěrka
+Existují jedinečné aspekty procesu roční uzávěrky a počátečních transakcí pro Českou republiku. Proces roční uzávěrky můžete nastavit následujícím způsobem: 
+- Účtování do různých účtů pro uzavření a otevření rozvahových účtů. 
+- Převod ročního výsledku zisků nebo ztrát do nově otevřeného roku na jiný účet.
+Další informace naleznete v tématu [roční uzávěrka pro Českou republiku a Maďarsko](emea-cze-hun-year-end.md).
 
 ## <a name="additional-resources"></a>Další zdroje
 - [Portál aplikace Microsoft Dynamics pro lokalizaci: sestava pro Českou republiku](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/CzechRepublic.html)

@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 838dc1e5867b8380823275aba5fc425003a54523
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 2bccabb033f5ba142b145e69930ce516aad596f2
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -43,8 +43,7 @@ Metoda, která se používá k uvolnění řádků kusovníku a řádků receptu
 - **Uvolnění řádků kusovníku a řádků receptury jako součást výrobní zakázky nebo dávkové objednávky** – v této metodě se řádky kusovníku a receptury pro výrobní zakázku nebo dávkovou objednávku uvolňují součást procesu uvolnění objednávky. Obvykle se během uvolnění výrobní zakázky nebo dávkové úlohy uvolňují výrobní úlohy dílenským pracovníkům a vytisknout se výrobní doklady. Během tohoto procesu se stav objednávky také změní na **Uvolněno**.
 - **Uvolnění řádků kusovníku receptury pomocí dávkové úlohy nebo jako ruční interakce** – v této metodě lze řádky kusovníku a receptury uvolnit pouze prostřednictvím dávkové úlohy **Automaticky uvolnit řádky kusovníku a receptury** nebo ruční interakcí. Chcete-li ručně uvolnit řádky kusovníku a řádky receptury, na stránce se seznamem výrobních zakázek nebo na stránce s podrobnostmi výrobních zakázek v podokně akcí zvolte **Uvolnit do skladu**.
 
-Chcete-li rychle ukázat, jak uvolnit kusovníky a řádky receptury do výroby pomocí dávkové úlohy, podívejte se na toto krátké video na YouTube:
-[!Video <https://www.youtube.com/embed/8urAJn50dQ8>]
+Chcete-li rychle ukázat, jak uvolnit kusovníky a řádky receptury do výroby pomocí dávkové úlohy, podívejte se na toto krátké video na YouTube: [Uvolnění výdeje výroby do skladu v dávkách](https://www.youtube.com/watch?v=8urAJn50dQ8).
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Uvolnění řádků kusovníku a receptury pomocí dávkové úlohy
 
@@ -85,8 +84,7 @@ Následující obrázek znázorňuje výrobní zakázku, která má dvě operace
 
 ![Příklad uvolnění materiálu podle čísla operace](media/two-operations.PNG)
 
-Chcete-li rychle ukázat, jak uvolnit materiál v poměru k množství hotových výrobků, podívejte se na toto krátké video na YouTube:
-[!Video <https://www.youtube.com/embed/Rm3ojAz6Zu0>]
+Pro rychlé ukázky vydání materiálu v poměru k množství dokončených výrobků se podívejte na toto krátké video YouTube: [Vylepšení procesu uvolnění výrobní zakázky v aplikaci Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=Rm3ojAz6Zu0)
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Uvolnění materiálu v poměru k množství dokončeného zboží
 

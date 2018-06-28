@@ -3,7 +3,7 @@ title: "Návrhář receptur v elektronickém výkaznictví"
 description: "Toto téma popisuje, jak lze používat návrháře receptur v elektronickém výkaznictví."
 author: NickSelin
 manager: AnnBe
-ms.date: 11/27/2017
+ms.date: 04/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3988c437afda3d57e56a03264d3c1588af497920
+ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
+ms.openlocfilehash: 8d8ab61b7aea84332120e6de9fc29a2a4c9598ca
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/25/2018
 
 ---
 
@@ -76,7 +76,7 @@ Navržený vzorec **ROUND (Intrastat.AmountMST 2)**, zaokrouhluje za běhu hodno
 
 Návrháře receptur elektronického výkaznictví lze použít k definování výrazu, který naformátuje data přijatá ze zdrojů dat, aby tato data bylo možné odeslat jako součást generovaného elektronického dokumentu: Můžete mít formátování, které je třeba použít jako typické pravidlo, které by mělo být znovu použito pro formát. V takovém případě můžete uvést toto formátování jednou v konfiguraci formátu jako pojmenovanou transformaci, která má výraz formátování. Tuto pojmenovanou transformaci lze potom propojit s mnoha komponentami formátu, kde výstup musí být formátován podle vytvořeného výrazu formátování.
 
-Následující obrázek znázorňuje návrh transformace tohoto typu. V tomto příkladu ořeže transformace **TrimmedString** vstupní data typu dat **Řetězec** odstraněním počáteční a koncové mezery. Itd vrátí hodnotu oříznutého řetězce.
+Následující obrázek znázorňuje návrh transformace tohoto typu. V tomto příkladu ořeže transformace **TrimmedString** vstupní data typu dat **Řetězec** odstraněním počáteční a koncové mezery. Vrátí hodnotu oříznutého řetězce.
 
 [![Transformace](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
 
@@ -217,13 +217,13 @@ V následující tabulce jsou popsány funkce pro manipulaci s daty, které lze 
 | NULLDATE () | Vrátí hodnotu data **null**. | |
 | NULLDATETIME () | Vrátí hodnotu data a času **null**. | |
 | DATETIMEFORMAT (datum a čas, formát) | Převede zadanou hodnotu data a času na řetězec v zadaném formátu. (Informace o podporovaných formátech: [standardní](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) a [vlastní](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** vrátí aktuální datum aplikačního serveru Finance and Operations, například 24. prosince 2015 jako **"24-12-2015"** na základě zadaného vlastního formátu. |
-| DATETIMEFORMAT (datum a čas, jazyková verze) | Převede zadanou hodnotu data a času na řetězec v zadaném formátu a [jazykové verzi](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Informace o podporovaných formátech viz [standardní](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) a [vlastní](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** vrátí aktuální datum aplikačního serveru Finance and Operations, například 24. prosince 2015, jako **"24.12.2015"**, na základě vybraného německého prostředí. |
+| DATETIMEFORMAT (datum a čas, jazyková verze) | Převede zadanou hodnotu data a času na řetězec v zadaném formátu a [jazykové verzi](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Informace o podporovaných formátech: [standardní](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) a [vlastní](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** vrátí aktuální datum aplikačního serveru Finance and Operations, například 24. prosince 2015, jako **"24.12.2015"**, na základě vybraného německého prostředí. |
 | SESSIONTODAY () | Vrátí aktuální datum relace aplikace Finance and Operations jako hodnotu data. | |
 | SESSIONNOW () | Vrátí aktuální datum a čas relace aplikace Finance and Operations jako hodnotu data a času. | |
 | DATEFORMAT (datum, formát) | Vrátí znázornění řetězce zadaného data v zadaném formátu. | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")**  vrátí aktuální datum aplikace Finance and Operations, například 24. prosince 2015 jako **"24-12-2015"** na základě zadaného vlastního formátu. |
-| DATEFORMAT (datum, formát, jazyková verze) | Převede zadanou hodnotu data na řetězec v zadaném formátu [jazykové verzi](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Informace o podporovaných formátech viz [standardní](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) a [vlastní](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** vrátí aktuální datum aplikace Finance and Operations, například 24. prosince 2015, jako **"24.12.2015"**, na základě vybraného německého prostředí. |
+| DATEFORMAT (datum, formát, jazyková verze) | Převede zadanou hodnotu data na řetězec v zadaném formátu [jazykové verzi](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Informace o podporovaných formátech: [standardní](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) a [vlastní](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** vrátí aktuální datum aplikace Finance and Operations, například 24. prosince 2015, jako **"24.12.2015"**, na základě vybraného německého prostředí. |
 | DAYOFYEAR (datum) | Vrátí celočíselnou reprezentaci počtu dní mezi 1. lednem a zadaným datem. | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** vrátí **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** vrátí **1**. |
-| DAYS (datum 1, datum 2) | Vrátí počet dní mezi prvním a druhým určeným datem. Vrátí kladnou hodnotu, pokud je první datum pozdější než druhé datum, vrátí **0** (nulu), když se první datum shoduje s druhým datem, nebo vrátí zápor nou hodnotu v opačném případě. | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** vrátí **-1**. |
+| DAYS (datum 1, datum 2) | Vrátí počet dní mezi prvním a druhým určeným datem. Vrátí kladnou hodnotu, pokud je první datum pozdější než druhé datum, vrátí **0** (nulu), když se první datum shoduje s druhým datem, nebo vrátí zápornou hodnotu, když je první datum dřívější než druhé. | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** vrátí **-1**. |
 
 ### <a name="data-conversion-functions"></a>Funkce převodu dat
 
@@ -238,113 +238,125 @@ V následující tabulce jsou popsány funkce pro manipulaci s daty, které lze 
 ### <a name="list-functions"></a>Funkce seznamu
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Funkce</th>
 <th>popis</th>
 <th>Příklad</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>SPLIT (vstup, délka)</td>
 <td>Rozdělí zadaný vstupní řetězec na dílčí řetězce, přičemž každý bude mít zadanou délku. Vrátí výsledek jako nový seznam.</td>
 <td><strong>SPLIT (&quot;abcd&quot;, 3)</strong> vrátí nový seznam obsahující dva záznamy, které mají pole <strong>STRING</strong>. Pole v prvním záznamu obsahuje text <strong>&quot;abc&quot;</strong> a pole v druhém záznamu obsahuje text <strong>&quot;d&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>SPLITLIST (seznam, počet)</td>
 <td>Rozdělí zadaný seznam na dávky, přičemž každá z nich obsahuje zadaný počet záznamů. Vrátí výsledek jako nový seznam dávek, který obsahuje následující prvky:
 <ul>
 <li>Dávky jako běžné seznamy (součást <strong>Value</strong>)</li>
 <li>Číslo aktuální dávky (součást <strong>BatchNumber</strong>)</li>
-</ul></td>
+</ul>
+</td>
 <td>V následujícím příkladu je datový zdroj <strong>Řádky</strong> vytvořen jako seznam záznamů ze tři záznamů. Tento seznam je rozdělen do dávek, z nichž každá obsahuje až dva záznamy.
 <p><a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></p>
 <p>Následující obrázek znázorňuje navržené rozvržení formátu. V tomto rozvržení formátu jsou vytvořeny vazby na datový zdroj <strong>Řádky</strong> za účelem vygenerování výstupu ve formátu XML. Tento výstup představuje jednotlivé uzly pro každou dávku a záznamy v ní.</p>
 <p><a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a></p>
 <p>Následující obrázek znázorňuje výsledek při spuštění navrženého formátu.</p>
-<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
+<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LIST (záznam 1 [, záznam 2, …])</td>
 <td>Vrátí nový seznam, který je vytvořený na základě zadaných argumentů.</td>
 <td><strong>LIST (model.MainData, model.OtherData)</strong> vrátí prázdný záznam, kde seznam polí obsahuje všechna pole seznamů záznamů <strong>MainData</strong> a <strong>OtherData</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LISTJOIN (seznam 1, seznam 2, …)</td>
 <td>Vrátí spojený seznam, který je vytvořený ze seznamů zadaných argumentů.</td>
 <td><strong>LISTJOIN (SPLIT (&quot;abc&quot;, 1), SPLIT (&quot;def&quot;, 1))</strong> vrátí seznam šesti záznamů, kde jedno pole datového typu <strong>STRING</strong> obsahuje jednotlivá písmena.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>ISEMPTY (seznam)</td>
 <td>Vrátí hodnotu <strong>TRUE</strong>, pokud zadaný seznam neobsahuje žádné prvky. V opačném případě vrátí hodnotu <strong>FALSE</strong>.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>EMPTYLIST (seznam)</td>
 <td>Vrátí prázdný seznam pomocí zadaného seznamu jako zdroje pro strukturu seznamu.</td>
 <td><strong>EMPTYLIST (SPLIT (&quot;abc&quot;, 1))</strong> vrátí nový prázdný seznam, který má stejnou strukturu jako seznam vrácený funkcí <strong>SPLIT</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>FIRST (seznam)</td>
 <td>Vrátí první záznam zadaného seznamu, pokud tento záznam není prázdný. V opačném bude vyvolána výjimka.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>FIRSTORNULL (seznam)</td>
 <td>Vrátí první záznam zadaného seznamu, pokud tento záznam není prázdný. V opačném vrátí záznam <strong>null</strong>.</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LISTOFFIRSTITEM (seznam)</td>
 <td>Vrátí seznam obsahující pouze první položku zadaného seznamu.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>ALLITEMS (cesta)</td>
-<td>Vrátí nový plochý seznam, který obsahuje všechny položky odpovídající zadané cestě. Cesta musí být definována jako platná cesta zdroje dat k prvku zdroje dat typu dat seznamu záznamů. Datové prvky, jako je cesta k řetězci, datum atd. by měly zobrazit chybu v době návrhu v tvůrci výrazů elektronického výkaznictví.</td>
+<td>Tato funkce je spuštěná jako výběr v paměti. Vrátí nový plochý seznam, který obsahuje všechny položky odpovídající zadané cestě. Cesta musí být definována jako platná cesta zdroje dat k prvku zdroje dat typu dat seznamu záznamů. Datové prvky, jako je cesta k řetězci, datum atd. by měly zobrazit chybu v době návrhu v tvůrci výrazů elektronického výkaznictví.</td>
 <td>Zadáte-li <strong>SPLIT(&quot;abcdef&quot; , 2)</strong> jako zdroj dat (DS), <strong>COUNT( ALLITEMS (DS.Value))</strong> vrátí <strong>3</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
+<td>ALLITEMSQUERY (cesta)</td>
+<td>Tato funkce je spuštěna jako připojený dotaz SQL. Vrátí nový plochý seznam, který obsahuje všechny položky odpovídající zadané cestě. Zadaná cesta musí být definována jako platná cesta zdroje dat k prvku zdroje dat typu dat seznamu záznamů a musí obsahovat nejméně jeden vztah. Datové prvky, jako je cesta k řetězci, datum atd. by měly zobrazit chybu v době návrhu v tvůrci výrazů elektronického výkaznictví.</td>
+<td>Definujte v mapování modelu následující zdroje dat:
+<ul>
+<li><strong>CustInv</strong> (typ <strong>Záznamy tabulky</strong>), která odkazuje na tabulku CustInvoiceTable</li> 
+<li><strong>FilteredInv</strong> (typ <strong>vypočítané pole</strong>), který obsahuje výraz <strong>FILTER (CustInv, CustInv.InvoiceAccount = &quot;US-001&quot;)</strong></li>
+<li><strong>JourLines</strong> (typ <strong>Vypočítané pole</strong>), which contains the expression <strong>ALLITEMSQUERY (FilteredInv.'&lt;Relations'.CustInvoiceJour.'&lt;Relations'.CustInvoiceTrans)</strong></li>
+</ul>
+<p>Při spuštění mapování modelu k volání zdroje dat <strong>JourLines</strong> se spustí příkaz SQL:</p>
+SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUSTINVOICETRANS T3 WHERE...
+</td>
+</tr>
+<tr>
 <td>ORDERBY (seznam [, výraz 1, výraz 2…])</td>
 <td>Vrátí zadaný seznam po seřazení podle zadaných argumentů. Tyto argumenty lze definovat jako výrazy.</td>
 <td>Jestliže je položka <strong>Vendor</strong> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <strong>ORDERBY (Vendors, Vendors.&#39;name()&#39;)</strong> vrátí seznam dodavatelů seřazených podle názvu ve vzestupném pořadí.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>REVERSE (seznam)</td>
 <td>Vrátí zadaný seznam v obráceném pořadí.</td>
 <td>Jestliže je položka <strong>Vendor</strong> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <strong>REVERSE (ORDERBY (Vendors, Vendors.'nam.&#39;name()&#39;)) )</strong> vrátí seznam dodavatelů seřazených podle názvu v sestupném pořadí.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>WHERE (seznam, podmínka)</td>
 <td>Vrátí zadaný seznam po vyfiltrování podle zadané podmínky. Zadaná podmínka se použije na seznam v paměti. Tímto způsobem se funkce <strong>WHERE</strong> liší od funkce <strong>FILTER</strong>.</td>
 <td>Jestliže je položka <strong>Dodavatel</strong> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <strong>WHERE(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> vrátí pouze seznam dodavatelů patřících do skupiny dodavatelů č. 40.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>ENUMERATE (seznam)</td>
 <td>Vrátí nový seznam, který se skládá z výčtových záznamů zadaného seznamu a poskytne následující prvky:
 <ul>
 <li>Zadané záznamy seznamu jako běžné seznamy (součást <strong>hodnota</strong>)</li>
 <li>Aktuální index záznamů (součást <strong>číslo</strong>)</li>
-</ul></td>
+</ul>
+</td>
 <td>Na následujícím obrázku je zdroj dat <strong>Enumerated</strong> vytvořen jako výčtový seznam záznamů dodavatelů ze zdroje dat <strong>Vendors</strong>, který odkazuje na tabulku VendTable.
 <p><a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a></p>
 <p>Následující obrázek znázorňuje formát. V tomto formátu jsou vytvořeny vazby za účelem vygenerování výstupu ve formátu XML. Tento výstup představuje jednotlivé dodavatel jako výčtové uzly.</p>
 <p><a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a></p>
 <p>Následující obrázek znázorňuje výsledek při spuštění navrženého formátu.</p>
-<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
+<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>COUNT (seznam)</td>
 <td>Vrátí počet záznamů v zadaném seznamu, pokud tento seznam není prázdný. V opačném případě vrátí hodnotu <strong>0</strong> (nula).</td>
 <td><strong>COUNT (SPLIT(&quot;abcd&quot; , 3))</strong> vrátí <strong>2</strong>, protože funkce <strong>SPLIT</strong> vytvoří seznam, který se skládá ze dvou záznamů.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LISTOFFIELDS (cesta)</td>
 <td>Vrátí seznam záznamů vytvořený z argumentu jednoho z následujících typů:
 <ul>
@@ -358,7 +370,8 @@ V následující tabulce jsou popsány funkce pro manipulaci s daty, které lze 
 <li>Štítek</li>
 <li>popis</li>
 </ul>
-Při běhu vrátí pole <strong>Popisek</strong> a <strong>Popis</strong> hodnoty založené na jazykovém nastavení formátu.</td>
+Při běhu vrátí pole <strong>Popisek</strong> a <strong>Popis</strong> hodnoty založené na jazykovém nastavení formátu.
+</td>
 <td>Na následujícím obrázku je výčet uveden v datovém modelu.
 <p><a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="Enumeration in a model" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a></p>
 <p>Následující obrázek znázorňuje tyto podrobnosti:</p>
@@ -372,10 +385,10 @@ Při běhu vrátí pole <strong>Popisek</strong> a <strong>Popis</strong> hodnot
 <p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
 <p>Následující obrázek znázorňuje výsledek při spuštění navrženého formátu.</p>
 <p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
-<blockquote>[!NOTE]<br>
-Přeložený text popisků a popisů je zadáván do výstupu formátu elektronického výkaznictví na základě nastavení jazyka nadřazených prvků formátu FILE a FOLDER.</blockquote></td>
+<blockquote>[!NOTE]<br>Přeložený text popisků a popisů je zadáván do výstupu formátu elektronického výkaznictví na základě nastavení jazyka nadřazených prvků formátu FILE a FOLDER.</blockquote>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LISTOFFIELDS (cesta, jazyk)</td>
 <td>Vrátí seznam záznamů vytvořený z argumentu, jako například výčet modelů, výčet formátů nebo kontejner. Vytvořený seznam obsahuje záznamy, které mají následující pole:
 <ul>
@@ -384,26 +397,27 @@ Přeložený text popisků a popisů je zadáván do výstupu formátu elektroni
 <li>popis</li>
 <li>Je přeloženo</li>
 </ul>
-<p>Při běhu vrátí pole <strong>Popisek</strong> a <strong>Popis</strong> hodnoty založené na jazykovém nastavení formátu a zadaném jazyku. Pole <strong>Je přeloženo</strong> označuje, že pole <strong>Popisek</strong> je přeloženo do určeného jazyka.</td>
+Při běhu vrátí pole <strong>Popisek</strong> a <strong>Popis</strong> hodnoty založené na jazykovém nastavení formátu a zadaném jazyku. Pole <strong>Je přeloženo</strong> označuje, že pole <strong>Popisek</strong> je přeloženo do určeného jazyka.
+</td>
 <td>Například použijete typ datového zdroje <strong>Vypočítané pole</strong> ke konfiguraci datových zdrojů <strong>enumType_de</strong> a <strong>enumType_deCH</strong> pro výčet datových modelů <strong>enumType</strong>:
 <ul>
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</li>
 <li>enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</li>
 </ul>
-V takovém případě můžete použít následující výraz k získání popisku hodnoty výčtu ve švýcarské němčině, pokud je tento překlad k dispozici. Není-li překlad do švýcarské němčiny k dispozici, je popisek v němčině: <strong>IF (není (enumType_deCH.IsTranslated) enumType_de. Popisek, enumType_deCH.Label)</strong>.</td>
+V takovém případě můžete použít následující výraz k získání popisku hodnoty výčtu ve švýcarské němčině, pokud je tento překlad k dispozici. Není-li překlad do švýcarské němčiny k dispozici, je popisek v němčině: <strong>IF (není (enumType_deCH.IsTranslated) enumType_de. Popisek, enumType_deCH.Label)</strong>.
+</td>
 </tr>
-<tr class="even">
+<tr>
 <td>STRINGJOIN (seznam, název pole, oddělovač)</td>
 <td>Vrátí řetězec, který se skládá ze zřetězených hodnot zadaného pole ze zadaného seznamu. Hodnoty jsou odděleny určeným oddělovačem.</td>
-
-<td>Pokud zadáte <strong>SPLIT(&quot;abc&quot; , 1)</strong> jako zdroj dat (DS), výraz <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> vrátí <strong>&quot;a</strong><strong>:b</strong><strong>:c&quot;</strong>.</td>
-
+<td>Pokud jako zdroj dat (DS) zadáte <strong>SPLIT(&quot;abc&quot; , 1)</strong>, <strong>STRINGJOIN (DS, DS.Value, &quot;-&quot;)</strong> vrátí <strong>&quot;a-b-c&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>SPLITLISTBYLIMIT (seznamu, hodnota limitu, zdroj limitu)</td>
-<td>Rozdělí zadaný seznam na nový seznam podřízených seznamů a vrátí výsledek v obsahu seznamu záznamů. Parametr hodnoty limitu určuje hodnotu limitu k rozdělení původního seznamu. Parametr zdroje limitu určuje krok, o který se celkový součet zvýší. Limit nebude použito na jednu položku z původního seznamu, když zdrojový limit překročí definovaný limit.</td>
-<td>Následující obrázek zobrazuje formát a zdroje dat, které se pro něj používají. 
+<td>Rozdělí zadaný seznam na nový seznam podřízených seznamů a vrátí výsledek v obsahu seznamu záznamů. Parametr <strong>hodnota limitu</strong> určuje hodnotu limitu k rozdělení původního seznamu. Parametr <strong>zdroj limitu</strong> určuje krok, o který se celkový součet zvýší. Limit nebude použito na jednu položku z původního seznamu, když zdrojový limit překročí definovaný limit.</td>
+<td>Následující obrázek znázorňuje formát. 
 <p><a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="Format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a></p>
+<p>Následující obrázek zobrazuje formát a zdroje dat, které se pro něj používají.</p>
 <p><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="Data sources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a></p>
 <p>Následující obrázek znázorňuje výsledek při spuštění formátu. V takovém případě je výstup prostý seznam položek komodit.</p>
 <p><a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="Output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a></p>
@@ -412,13 +426,13 @@ V takovém případě můžete použít následující výraz k získání popis
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>Následující obrázek znázorňuje výsledek při spuštění upraveného formátu.</p>
 <p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
-<blockquote>[!NOTE]<br>
-Limit není použit na poslední položku v původním seznamu, protože hodnota (11) zdroje limitu (hmotnost) překračuje definovaný limit (9). Použijte funkci <strong>WHERE</strong> nebo výraz <strong>Enabled</strong> odpovídajícího prvku formátu k ignorování (přeskočení) dílčích seznamů během generování sestavy podle potřeby.</blockquote></td>
+<blockquote>[!NOTE]<br>Limit není použit na poslední položku v původním seznamu, protože hodnota (11) zdroje limitu (hmotnost) překračuje definovaný limit (9). Použijte funkci <strong>WHERE</strong> nebo výraz <strong>Enabled</strong> odpovídajícího prvku formátu k ignorování (přeskočení) dílčích seznamů během generování sestavy podle potřeby.</blockquote>
+</td>
 </tr>
-<tr class="even">
+<tr>
 <td>FILTER (seznam, podmínka)</td>
 <td>Vrátí zadaný seznam po úpravě dotazu k filtrování podle zadané podmínky. Tato funkce se liší od funkce <strong>WHERE</strong>, protože zadaná podmínka je použita u jakéhokoli zdroje dat elektronického výkaznictví typu <strong>Záznamy tabulky</strong> na úrovni databáze. Seznam a podmínku lze definovat pomocí tabulek a relací.</td>
-  <td>Jestliže je položka <strong>Dodavatel</strong> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> vrátí pouze seznam dodavatelů patřících do skupiny dodavatelů č. 40. Pokud je <strong>Vendor</strong> nakonfigurován jako zdroj dat elektronického výkaznictví, který se vztahuje k tabulce <strong>VendTable</strong> a <strong>parmVendorBankGroup</strong> nakonfigurovaný jako zdroj elektronického výkaznictví vrací hodnotu v datovém typu řetězce, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong>  vrací seznam pouze těch dodavatelských účtů, které patří ke konkrétní bankovní skupině.</td>
+<td>Jestliže je položka <strong>Dodavatel</strong> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> vrátí pouze seznam dodavatelů patřících do skupiny dodavatelů č. 40. Pokud je <strong>Vendor</strong> nakonfigurován jako zdroj dat elektronického výkaznictví, který se vztahuje k tabulce <strong>VendTable</strong> a pokud je <strong>parmVendorBankGroup</strong> nakonfigurovaný jako zdroj dat elektronického výkaznictví, který vrací hodnotu v datovém typu <strong>String</strong>, pak příkaz <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> vrací seznam pouze těch dodavatelských účtů, které patří ke konkrétní bankovní skupině.</td>
 </tr>
 </tbody>
 </table>
@@ -441,9 +455,9 @@ Limit není použit na poslední položku v původním seznamu, protože hodnota
 | POWER (číslo, mocnina) | Vrátí výsledek umocnění zadaného kladného čísla pomocí zadané mocniny. | **POWER (10, 2)** vrátí hodnotu **100**. |
 | NUMBERVALUE (řetězec, oddělovač desetinných míst, oddělovač skupin číslic) | Převede zadaný řetězec na číslo. Zadaný oddělovač desetinných míst se použije mezi celým číslem a zlomkovou částí desetinného čísla. Zadaný oddělovač skupin číslic se použije jako oddělovač tisíců. | **NUMBERVALUE("1 234,56", ",", " ")** vrátí hodnotu **1234.56**. |
 | VALUE (řetězec) | Převede zadaný řetězec na číslo. Čárky a tečky (.) jsou považovány za oddělovače desetinných míst a úvodní spojovník (-) se používá jako záporné znaménko. Pokud jsou v zadaném řetězci obsaženy jiné než číselné znaky, bude vyvolána výjimka. | **VALUE ("1 234,56")** vyvolá výjimku. |
-| ROUND (číslo, desetinná čísla) | Vrátí zadané číslo, poté, co je zaokrouhleno na zadaný počet desetinných míst:<ul><li>Pokud je hodnota parametru desetinných míst vyšší než 0 (nula), zadané číslo je zaokrouhleno na tento počet desetinných míst.</li><li>Pokud je hodnota parametru desetinných míst **0** (nula), zadané číslo je zaokrouhleno na nejbližší celé číslo.</li><li>Pokud je hodnota parametru desetinných míst nižší než 0 (nula), zadané číslo je zaokrouhleno vlevo od oddělovače desetinných míst.</li></ul> | **ROUND (1200.767, 2)** zaokrouhlí na dvě desetinná místa a vrátí hodnotu **1200.77**. **ROUND (1200.767, -3)** zaokrouhlí na nejbližší násobek 1 000 a vrátí hodnotu **1000**. |
-| ROUNDDOWN (číslo, desetinná čísla) | Vrátí zadané číslo, poté, co je zaokrouhleno dolů na zadaný počet desetinných míst.<blockquote>[!NOTE]<br>Tato funkce se chová jako <strong>ROUND</strong>, ale vždy zaokrouhluje zadané číslo směrem dolů (směrem k nule).</blockquote> | **ROUNDDOWN (1200.767, 2)** zaokrouhlí směrem dolů na dvě desetinná místa a vrátí hodnotu **1200.76**. **ROUNDDOWN (1700.767, -3)** zaokrouhlí směrem dolů na nejbližší násobek 1 000 a vrátí hodnotu **1000**. |
-| ROUNDUP (číslo, desetinná čísla) | Vrátí zadané číslo, poté, co je zaokrouhleno nahoru na zadaný počet desetinných míst.<blockquote>[!NOTE]<br>Tato funkce se chová jako <strong>ROUND</strong>, ale vždy zaokrouhluje zadané číslo směrem nahoru (směrem od nuly).</blockquote> | **ROUNDUP (1200.763, 2)** zaokrouhlí směrem nahoru na dvě desetinná místa a vrátí hodnotu **1200.77**. **ROUNDUP (1200.767, -3)** zaokrouhlí směrem nahoru na nejbližší násobek 1 000 a vrátí hodnotu **2000**. |
+| ROUND (číslo, desetinná čísla) | Vrátí zadané číslo, poté, co je zaokrouhleno na zadaný počet desetinných míst:<ul><li>Pokud je hodnota parametru **desetinná místa** vyšší než 0 (nula), zadané číslo je zaokrouhleno na tento počet desetinných míst.</li><li>Pokud je hodnota parametru **desetinná místa** **0** (nula), zadané číslo je zaokrouhleno na nejbližší celé číslo.</li><li>Pokud je hodnota parametru **desetinná místa** nižší než 0 (nula), zadané číslo je zaokrouhleno vlevo od oddělovače desetinných míst.</li></ul> | **ROUND (1200.767, 2)** zaokrouhlí na dvě desetinná místa a vrátí hodnotu **1200.77**. **ROUND (1200.767, -3)** zaokrouhlí na nejbližší násobek 1 000 a vrátí hodnotu **1000**. |
+| ROUNDDOWN (číslo, desetinná čísla) | Vrátí zadané číslo, poté, co je zaokrouhleno dolů na zadaný počet desetinných míst.<blockquote>[!NOTE]<br>Tato funkce se chová jako **ROUND**, ale vždy zaokrouhluje zadané číslo směrem dolů (směrem k nule).</blockquote> | **ROUNDDOWN (1200.767, 2)** zaokrouhlí směrem dolů na dvě desetinná místa a vrátí hodnotu **1200.76**. **ROUNDDOWN (1700.767, -3)** zaokrouhlí směrem dolů na nejbližší násobek 1 000 a vrátí hodnotu **1000**. |
+| ROUNDUP (číslo, desetinná čísla) | Vrátí zadané číslo, poté, co je zaokrouhleno nahoru na zadaný počet desetinných míst.<blockquote>[!NOTE]<br>Tato funkce se chová jako **ROUND**, ale vždy zaokrouhluje zadané číslo směrem nahoru (směrem od nuly).</blockquote> | **ROUNDUP (1200.763, 2)** zaokrouhlí směrem nahoru na dvě desetinná místa a vrátí hodnotu **1200.77**. **ROUNDUP (1200.767, -3)** zaokrouhlí směrem nahoru na nejbližší násobek 1 000 a vrátí hodnotu **2000**. |
 
 ### <a name="data-conversion-functions"></a>Funkce převodu dat
 
@@ -460,87 +474,80 @@ Limit není použit na poslední položku v původním seznamu, protože hodnota
 
 | Funkce | popis | Příklad |
 |----------|-------------|---------|
-| NULLCONTAINER (seznam) | Vrátí záznam **null**, který má stejnou strukturu jako zadaný seznam záznamů nebo záznam.<blockquote>[!NOTE]<br>Tato funkce je zastaralá. Místo toho použijte <strong>EMPTYRECORD</strong>.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** vrátí nový prázdný záznam, který má stejnou strukturu jako seznam vrácený funkcí **SPLIT**. |
-| EMPTYRECORD (záznam) | Vrátí záznam **null**, který má stejnou strukturu jako zadaný seznam záznamů nebo záznam.<blockquote>[!NOTE]<br>Záznam <strong>null</strong> je záznam, kde všechna pole mají prázdnou hodnotu. Prázdná hodnota je <strong>0</strong> (nula) pro čísla, prázdný řetězec pro řetězce atd.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** vrátí nový prázdný záznam, který má stejnou strukturu jako seznam vrácený funkcí **SPLIT**. |
+| NULLCONTAINER (seznam) | Vrátí záznam **null**, který má stejnou strukturu jako zadaný seznam záznamů nebo záznam.<blockquote>[!NOTE]<br>Tato funkce je zastaralá. Místo toho použijte **EMPTYRECORD**.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** vrátí nový prázdný záznam, který má stejnou strukturu jako seznam vrácený funkcí **SPLIT**. |
+| EMPTYRECORD (záznam) | Vrátí záznam **null**, který má stejnou strukturu jako zadaný seznam záznamů nebo záznam.<blockquote>[!NOTE]<br>Záznam **null** je záznam, kde všechna pole mají prázdnou hodnotu. Prázdná hodnota je **0** (nula) pro čísla, prázdný řetězec pro řetězce atd.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** vrátí nový prázdný záznam, který má stejnou strukturu jako seznam vrácený funkcí **SPLIT**. |
 
 ### <a name="text-functions"></a>Textové funkce
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Funkce</th>
 <th>popis</th>
 <th>Příklad</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>UPPER (řetězec)</td>
 <td>Vrátí zadaný řetězec po převedení na velká písmena.</td>
 <td><strong>UPPER(&quot;Sample&quot;)</strong> vrátí <strong>&quot;SAMPLE&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LOWER (řetězec)</td>
 <td>Vrátí zadaný řetězec po převedení na malá písmena.</td>
 <td><strong>LOWER (&quot;Sample&quot;)</strong> vrátí <strong>&quot;sample&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LEFT (řetězec, počet znaků)</td>
 <td>Vrátí zadaný počet znaků od začátku zadaného řetězce.</td>
 <td><strong>LEFT (&quot;Sample&quot;, 3)</strong> vrátí <strong>&quot;Sam&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>RIGHT (řetězec, počet znaků)</td>
 <td>Vrátí zadaný počet znaků od konce zadaného řetězce.</td>
 <td><strong>RIGHT (&quot;Sample&quot;, 3)</strong> vrátí <strong>&quot;ple&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>MID (řetězec, počáteční pozice, počet znaků)</td>
 <td>Vrátí zadaný počet znaků ze zadaného řetězce, počínaje od zadané pozice.</td>
 <td><strong>MID (&quot;Sample&quot;, 2, 3)</strong> vrátí <strong>&quot;amp&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LEN (řetězec)</td>
 <td>Vrátí počet znaků v zadaném řetězci.</td>
 <td><strong>LEN (&quot;Sample&quot;)</strong> vrátí <strong>6</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>CHAR (číslo)</td>
 <td>Vrátí řetězec znaků, na který odkazuje zadané číslo ve znakové sadě Unicode.</td>
 <td><strong>CHAR (255)</strong> vrátí <strong>&quot;ÿ&quot;</strong>.
-<blockquote>[!NOTE]<br>
-Řetězec, který vrací tato funkce, závisí na kódování, které je vybráno v nadřazeném prvku formátu SOUBORU. Více informací o seznamu podporovaných kódování naleznete v tématu <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Třída kódování</a>.</blockquote>
+<blockquote>[!NOTE]<br>Řetězec, který vrací tato funkce, závisí na kódování, které je vybráno v nadřazeném prvku formátu SOUBORU. Více informací o seznamu podporovaných kódování naleznete v tématu <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Třída kódování</a>.</blockquote>
 </td>
 </tr>
-<tr class="even">
+<tr>
 <td>CONCATENATE (řetězec 1 [, řetězec 2…])</td>
 <td>Vrátí všechny zadané textové řetězce po jejich spojení do jednoho řetězce.</td>
 <td><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> vrátí <strong>&quot;abcdef&quot;</strong>.
-<blockquote>[!NOTE]<br>
-Výraz <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> vrátí též <strong>&quot;abcdef&quot;</strong>.</blockquote>
+<blockquote>[!NOTE]<br>Výraz <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> vrátí též <strong>&quot;abcdef&quot;</strong>.</blockquote>
 </td>
 </tr>
-<tr class="odd">
+<tr>
 <td>TRANSLATE (řetězec, vzor, náhrada)</td>
 <td>Vrátí zadaný řetězec po nahrazení všech výskytů znaků v zadaném řetězci vzoru za znaky na odpovídající pozici zadaného řetězce sloužícího jako náhrada.</td>
 <td><strong>TRANSLATE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;)</strong> nahradí vzorec <strong>&quot;cd&quot;</strong> řetězcem <strong>&quot;GH&quot;</strong> a vrátí <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>REPLACE (řetězec, vzor, náhrada, příznak regulérního výrazu)</td>
 <td>Pokud je zadaný příznak regulérního výrazu <strong>true</strong>, vrátí zadaný po úpravě použitím regulárního výrazu zadaného jako argument vzoru pro tuto funkci. Tento výraz slouží k vyhledání znaků, které je třeba nahradit. Znaky zadaného argumentu-náhrady jsou použity k nahrazení vyhledaných znaků. Pokud je zadaný příznak regulérního výrazu <strong>false</strong>, tato funkce se chová jako <strong>TRANSLATE</strong>.</td>
 <td><strong>REPLACE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, true)</strong> použije regulární výraz, ktreý odebere všechny nečíselné symboly a vrátí <strong>&quot;19234564971&quot;</strong>. <strong>REPLACE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> nahradí vzorec <strong>&quot;cd&quot;</strong> řetězcem <strong>&quot;GH&quot;</strong> a vrátí <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>TEXT (vstup)</td>
 <td>Vrátí zadaný vstup po převedení na textový řetězec naformátovaný podle nastavení národního prostředí serveru aktuální instance aplikace Finance and Operations. Co se týká hodnot typu <strong>real</strong>, převod řetězce je omezen na dvě desetinná místa.</td>
 <td>Jestliže je národní prostředí serveru Finance and Operations definováno jako <strong>EN-US</strong>, <strong>TEXT (NOW ())</strong> vrátí aktuální datum relace aplikace Finance and Operations, například 17. prosince 2015, jako textový řetězec <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong>. <strong>TEXT (1/3)</strong> vrátí <strong>&quot;0.33&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>FORMAT (řetězec 1 řetězce 2[, řetězec 3 ...])</td>
 <td>Vrátí zadaný řetězec po zformátování nahrazením všech výskytů <strong>%N</strong> <em>n-tým</em> argumentem. Argumenty jsou řetězce. Pokud pro parametr není zadán argument, parametr je vrácen jako <strong>&quot;%N&quot;</strong> v řetězci. Co se týká hodnot typu <strong>real</strong>, převod řetězce je omezen na dvě desetinná místa.</td>
 <td>Ná následujícím obrázku vrátí zdroj dat <strong>PaymentModel</strong> seznam záznamů odběratelů prostřednictvím součásti <strong>Customer</strong> a datum zpracování prostřednictvím pole <strong>ProcessingDate</strong>.
@@ -562,38 +569,39 @@ Výraz <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> vrátí též <str
 <p>FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;))</p>
 <p>Pokud je sestava zpracovávána pro odběratele <strong>Litware Retail</strong> 17. prosince 2015, v národním prostředí <strong>EN-US</strong> a jazyce <strong>EN-US</strong>, tento vzorec vrátí následující text, který může být uživateli nabídnut ve formě zprávy výjimky:</p>
 <p>&quot;Nic k tisku. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
-<p>Jestliže je stejná sestava zpracována pro odběratele <strong>Litware Retail</strong> 17. prosince 2015 v jazykové verzi <strong>DE</strong> a jazyce <strong>DE</strong>, tento vzorec vrátí následující text, který používá jiný formát data:</p>
-<p>&quot;Nichts zu drucken. Debitor &#39;Litware Retail&#39; wird für 17.12.2015 gesperrt.&quot;</p>
-<blockquote>[!NOTE]<br>
-Následující syntaxe je použita ve vzorcích elektronického výkaznictví pro popisky:
+<p>Jestliže je stejná sestava zpracována pro odběratele <strong>Litware Retail</strong> 17. prosince 2015 v jazykové verzi <strong>DE</strong> a jazyce <strong>DE</strong>, vzorec vrátí následující text, který používá jiný formát data:</p>
+<p>&quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
+<blockquote>[!NOTE]<br>Následující syntaxe je použita ve vzorcích elektronického výkaznictví pro popisky:
 <ul>
 <li><strong>Popisky ze zdrojů aplikace Finance and Operations:</strong> <strong>@&quot;X&quot;</strong>, kde X je ID popisku ve stromu aplikačních objektů (AOT)</li>
 <li><strong>Popisky, které se nachází v konfiguracích elektronického výkaznictví:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, kde X je ID popisku v konfiguraci elektronického výkaznictví.</li>
-</ul></blockquote></td>
+</ul>
+</blockquote>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>NUMBERFORMAT (číslo, formát)</td>
 <td>Vrátí znázornění řetězce zadaného čísla v zadaném formátu. (Informace o podporovaných formátech naleznete v tématu <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">standardní</a> a <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">vlastní</a>.) Spuštění této funkce v rámci určuje jazykovou verzi, která je použita k formátování čísla.</td>
 <td>Pro jazykovou verzi EN-US vrátí <strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> hodnotu <strong>&quot;45,00 %&quot;</strong>. <strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> vrátí hodnotu <strong>&quot;10&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>NUMERALSTOTEXT (číslo jazyk, měna, příznak názvu měny pro tisk, desetinná místa)</td>
-<td>Vrátí zadané číslo po vyslovení (převedení) na textové řetězce v zadaném jazyce. Kód jazyka je volitelný. Pokud je definován jako prázdný řetězec, použije se místo něj kód jazyka pro aktuální kontext. (Kód jazyka aktuálního kontext je definován pro generovaný soubor nebo složku). Kód měny je také volitelný. Pokud je definován jako prázdný řetězec, je použita měna společnosti.
-<blockquote>[!NOTE]<br>
-Příznak název měny pro tisk a parametry desetinných míst jsou analyzovány pouze pro následující jazykové kódy: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, and <strong>RU</strong>. Dále je příznak názvu měny pro tisk analyzován pouze pro společnosti používající aplikaci Finance and Operations s kontextem země nebo oblasti, který podporuje skloňování názvů měn.</blockquote></td>
+<td>Vrátí zadané číslo po vyslovení (převedení) na textové řetězce v zadaném jazyce. Kód jazyka je volitelný. Pokud je definován jako prázdný řetězec, použije se kód jazyka pro aktuální kontext. (Kód jazyka spuštěného kontextu je definován pro generovaný soubor nebo složku). Kód měny je také volitelný. Pokud je definován jako prázdný řetězec, je použita měna společnosti.
+<blockquote>[!NOTE]<br>Příznak <strong>název měny pro tisk</strong> a <strong>parametry desetinných míst</strong> jsou analyzovány pouze pro následující jazykové kódy: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> a <strong>RU</strong>. Dále je příznak <strong>názvu měny pro tisk</strong> analyzován pouze pro společnosti používající aplikaci Finance and Operations s kontextem země nebo oblasti, který podporuje skloňování názvů měn.</blockquote>
+</td>
 <td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> returns <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> vrátí <strong>&quot;Sto dwadzieścia&quot;</strong>. <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> vrátí <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>PADLEFT (řetězec, délka, odsazovací znaky)</td>
 <td>Vrátí řetězec určené délky, ve kterém je začátek určeného řetězce odsazen určenými znaky.</td>
 <td><strong>PADLEFT (&quot;1234&quot;, 10, &quot;&nbsp;&quot;)</strong> vrátí řetězec <strong>&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>TRIM (řetězec)</td>
 <td>Vrátí určený textový řetězec po příznutí počátečních a koncových mezer a po odebrání více mezer mezi slovy.</td>
 <td><strong>TRIM (&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ukázkový&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;)</strong> vrátí <strong>&quot;Ukázkový text&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>GETENUMVALUEBYNAME (cesta zdroje dat výčtu, text popisku hodnoty výčtu)</td>
 <td>Vrátí hodnotu zadaného zdroje dat výčtu podle zadaného textu popisku výčtu.</td>
 <td>Na následujícím obrázku je výčet <strong>ReportDirection</strong> uveden v datovém modelu. Pro hodnoty výčtu jsou definovány popisky.
@@ -603,7 +611,24 @@ Příznak název měny pro tisk a parametry desetinných míst jsou analyzovány
 <li>Výčet modelů <strong>ReportDirection</strong> je vložený do sestavy jako zdroj dat <strong>$Direction</strong>.</li>
 <li>Výraz elektronického výkaznictví <strong>$IsArrivals</strong> je určený k použití výčtu modelů jako parametr této funkce. Hodnota tohoto výrazu je <strong>TRUE</strong>.</li>
 </ul>
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></td>
+<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+</td>
+</tr>
+<tr>
+<td>GUIDVALUE (vstup)</td>
+<td>Převeďte zadaný vstup datového typu <strong>String</strong> na datovou položku datového typu <strong>GUID</strong>.</td>
+<td>Definujte v mapování modelu následující zdroje dat:
+<ul>
+<li><strong>myID</strong> (typ <strong>Vypočítané pole</strong>), které obsahuje výraz <strong>GUIDVALUE(&quot;AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0&quot;)</strong></li>
+<li><strong>Users</strong> (typ <strong>Záznamy tabulky</strong>), která odkazuje na tabulku UserInfo</li>
+</ul>
+Když jsou definovány tyto zdroje dat, můžete použít výraz jako <strong>FILTER (Users, Users.objectId = myID)</strong> k filtrování tabulky UserInfo podle pole <strong>objectId</strong> datového typu <strong>GUID</strong>.
+</td>
+</tr>
+<tr>
+<td>JSONVALUE (id, cesta)</td>
+<td>Analyzujte data ve formátu notace objektu JavaScript (JSON), který je přístupný ze zadané cesty k extrahování skalární hodnoty založené na zadaném ID.</td>
+<td>Zdroj dat <strong>$JsonField</strong> obsahuje následující data ve formátu JSON: <strong>{&quot;BuildNumber&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>. Pro tento zdroj dat </strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong> vrací hodnotu <strong>7.3.1234.1</strong> z datového typu <strong>String</strong>.</td>
 </tr>
 </tbody>
 </table>
@@ -613,7 +638,7 @@ Příznak název měny pro tisk a parametry desetinných míst jsou analyzovány
 | Funkce | popis | Příklad |
 |----------|-------------|---------|
 | TEXT (vstup) | Vrátí zadaný vstup po převedení na textový řetězec naformátovaný podle nastavení národního prostředí serveru aktuální instance aplikace Finance and Operations. Co se týká hodnot typu **real**, převod řetězce je omezen na dvě desetinná místa. | Jestliže je národní prostředí serveru Finance and Operations definováno jako **EN-US**, **TEXT (NOW ())** vrátí aktuální datum relace aplikace Finance and Operations, například 17. prosince 2015, jako textový řetězec **"12/17/2015 07:59:23 AM"**. **TEXT (1/3)** vrátí **"0.33"**. |
-| QRCODE (řetězec) | Vrátí obrázek QR kódu v binárním formátu base64 pro zadaný řetězec. | **QRCODE (“Ukázkový text”)** vrátí hodnotu **U2FtcGxlIHRleHQ=**. |
+| QRCODE (řetězec) | Vrátí obrázek QR (Quick Response) kódu v binárním formátu base64 pro zadaný řetězec. | **QRCODE (“Ukázkový text”)** vrátí hodnotu **U2FtcGxlIHRleHQ=**. |
 
 ### <a name="data-collection-functions"></a>Funkce shromažďování dat
 
@@ -631,11 +656,11 @@ Příznak název měny pro tisk a parametry desetinných míst jsou analyzovány
 | Funkce | popis | Příklad |
 |----------|-------------|---------|
 | CONVERTCURRENCY (částka, zdrojová měna, cílová měna, datum, společnost) | Převede zadanou peněžní částku ze zadané měny na zadanou měnu za použití nastavení zadané společnosti v aplikaci Finance and Operations k zadanému datu. | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** vrátí ekvivalent jednoho eura v amerických dolarech v aktuální den relace podle nastavení společnosti DEMF. |
-| ROUNDAMOUNT (číslo, desetinná místa, pravidlo zaokrouhlování) | Zaokrouhlí zadanou částku na zadaný počet bdesetinných míst podle zadaného pravidla zaokrouhlování.<blockquote>[!NOTE]<br>Pravidlo zaokrouhlování musí být zadáno jako hodnota výčtu <strong>RoundOffType</strong> aplikace Finance and Operations.</blockquote> | Pokud je parametr **model.RoundOff** nastaven na **Downward**, **3ROUNDAMOUNT (1000.787, 2, model.RoundOff)** vrátí hodnotu **1000.78**. Pokud je parametr **model.RoundOff** nastaven na hodnotu **Normal** nebo **Rounding-up**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** vrátí hodnotu **1000.79**. |
+| ROUNDAMOUNT (číslo, desetinná místa, pravidlo zaokrouhlování) | Zaokrouhlí zadanou částku na zadaný počet bdesetinných míst podle zadaného pravidla zaokrouhlování.<blockquote>[!NOTE]<br>Pravidlo zaokrouhlování musí být zadáno jako hodnota výčtu **RoundOffType** aplikace Finance and Operations.</blockquote> | Pokud je parametr **model.RoundOff** nastaven na **Downward**, **3ROUNDAMOUNT (1000.787, 2, model.RoundOff)** vrátí hodnotu **1000.78**. Pokud je parametr **model.RoundOff** nastaven na hodnotu **Normal** nebo **Rounding-up**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** vrátí hodnotu **1000.79**. |
 | CURCredRef (číslice) | Vrátí referenční údaj věřitele na základě číslic zadaného čísla faktury. | **CURCredRef ("VEND-200002")** vrátí hodnotu **"2200002"**. |
 | MOD\_97 (číslice) | Vrátí referenční údaj věřitele jako výraz MOD97 na základě číslic zadaného čísla faktury. | **MOD\_97 ("VEND-200002")** vrátí **"20000285"**. |
 | ISOCredRef (číslice) | Vrátí ISO údaj věřitele na základě číslic a abecedních symbolů zadaného čísla faktury.<blockquote>[!NOTE]<br>Chcete-li vyloučit z abecedy symboly, které jsou v souladu se standardem ISO, vstupní parametr musí být přeložen před jeho předáním této funkci.</blockquote> | **ISOCredRef ("VEND-200002")** vrátí hodnotu **"RF23VEND-200002"**. |
-| CN\_GBT\_AdditionalDimensionID (řetězec, číslo) | Získá ID další finanční dimenze. Dimenze jsou reprezentovány v tomto řetězci jako ID oddělená čárkou. V tomto řetězci čísla definují kód číselné řady požadované dimenze. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** vrací **"CC"**. |
+| CN\_GBT\_AdditionalDimensionID (řetězec, číslo) | Získá zadané ID další finanční dimenze. Dimenze jsou reprezentovány v parametru **řetězec** jako ID oddělená čárkou. Parametr **číslo** definuje kód sekvence požadované dimenze v řetězci. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** vrací **"CC"**. |
 | GetCurrentCompany () | Vrací textovou reprezentaci kódu právnické osoby (společnosti), ke které je uživatel momentálně přihlášen. | **GETCURRENTCOMPANY ()** vrátí hodnotu **USMF** u uživatele přihlášeného v aplikaci Finance and Operations ke společnosti **Contoso Entertainment System USA**. |
 | CH\_BANK\_MOD\_10 (číslice) | Vrátí odkaz věřitele jako výraz MOD10 na základě číslic zadaného čísla faktury. | **CH\_BANK\_MOD\_10 ("VEND-200002")** vrátí **3**. |
 | FA\_SUM (kód dlouhodobého majetku, kód modelu hodnoty, počáteční datum, koncové datum) | Vrátí připravený datový kontejner částky dlouhodobého majetku za období. | **FA\_SUM ("COMP-000001", "Current", Date1, Date2)** vrátí připravený datový kontejner dlouhodobého majetku **"COMP-000001"** s modelem hodnoty **"Current"** za období mezi **Date1** a **Date2**. |

@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fe8dd3136f14e182e261a4dce57eef0b1946d304
+ms.sourcegitcommit: d709a7f0e087178c0961c268a78a9206ea656bbc
+ms.openlocfilehash: ca32e74b8b9f35dd9a1a48f942766bce98c5ea4b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/31/2018
 
 ---
 
@@ -41,8 +41,8 @@ Při vytváření způsobu platby existuje pět funkcí metod platby, které lze
 
 | Funkce            | popis |
 |---------------------|-------------|
-| Normální              | Použijte funkci **Normální** na váš způsob platby při definování metod platby, jako je například hotovost nebo doklady. Když jsou tyto typy platby použité na prodejní objednávku v kontaktním středisku, jsou okamžitě zaúčtovány jako zálohy na účtu odběratele. Zálohový doklad se zaúčtuje do historie transakcí zákazníka, kde bude systematicky vyrovnán proti faktuře pro prodejní objednávku při vytváření faktur. |
-| Kontrola               | Použijte funkci **Šek** při definování nástroje bankovního šeku jako metody platby. Při použití tohoto typu platby na prodejní objednávku musí uživatel zadat číslo šeku zákazníka v rámci zpracování aplikace plateb. Platby šekem jsou vždy považovány při svém použití jako platby záloh. Co se týká platebí funkce **Normální**, tyto zálohové doklady budou systematicky vyrovnány proti fakturám, které jsou vytvořeny pro objednávku. |
+| Normální              | Použijte funkci **Normální** na váš způsob platby při definování metod platby, jako je například hotovost nebo doklady. Při použití tohoto typu plateb na prodejní objednávku v kontaktním středisku bude ve výchozím nastavení příznak **Záloha** nastaven na **Ano**.  To okamžitě zaúčtuje doklad o záloze na účet odběratele, jakmile je tato objednávka odeslána. Uživatelé mohou měnit příznak **Záloha** na **Ne**, pokud chtějí, aby platební doklad nebyl vytvořen až do zaúčtování faktury.  Zálohový doklad se zaúčtuje do historie transakcí zákazníka, kde bude systematicky vyrovnán proti faktuře pro prodejní objednávku. |
+| Kontrola               | Použijte funkci **Šek** při definování nástroje bankovního šeku jako metody platby. Při použití tohoto typu platby na prodejní objednávku musí uživatel zadat číslo šeku zákazníka v rámci zpracování aplikace plateb. Platby šekem se vždy považují jako zálohy, pokud jsou použity, a doklady o platbě se vytvoří okamžitě po odeslání objednávky. Tyto zálohové doklady budou systematicky vyrovnány proti fakturám, které jsou vytvořeny pro objednávku. |
 | Karty               | Typy plateb kartou představují všechny typy platby, které vyžadují zadání čísla karty, které bylo definováno pro platební kartu odběratele. Příklady zahrnují kreditní karty a dárkové poukazy. Při konfiguraci těchto typů plateb je třeba použít nabídku **Nastavení karty** pro definování ID karty, která jsou přidružena k této platební metodě. V době zadání objednávky mohou uživatelé určit, zda platby kartou budou předplaceny pomocí možnosti **Záloha**, která se zobrazí na stránce zadávání plateb. Pokud nepožaduje obchod zálohové platby, je typický postup skutečné platby kredfitní kartou procesem o dvou krocích, kdy je získána autorizace v době zadání objednávky a platba je pak vyrovnána a přijata z karty zákazníka v okamžiku fakturace. Pro platby dárkovým poukazem se doporučuje zálohy, protože zůstatek dárkového poukazu byy měl být snížen okamžitě, aby odběratel nemohl použít stejnou hodnotu někde jinde. |
 | Zákazník            | Funkce **Odběratel** u způsobu platby předpokládá, že platba bude použita na limit kreditu odběratele nebo bude převedena „na účet“. V aplikaci Retail může být odběrateli přiřazen limit úvěru, který lze ověřit v době zadání objednávky. Platby, které se provádí pomocí platební metody navázané na funkci **Odběratel** vytváří závazky proti účtu odběratele. Při fakturaci prodejní objednávky se poté zobrazí splatný zůstatek. V těchto situacích odběratelé obvykle posílají platbu podle stanovených podmínek. Popřípadě lze použít předchozí otevřený kreditní doklad na účtu odběratele pro vyrovnání splatného zůstatku. povšimněte si, že i když definujete tento způsob platby, nezobrazí se mezi možnostmi výběru platby v zadávání objednávek kontaktníhoho střediska, pokud není příznak **Povolit na účet** nastaven na záznamu odběratele pro odběratele, se kterým pracujete. Tento příznak se nachází na kartě **Výchozí nastavení plateb** záznamu odběratele. |
 | Úhrada – odebrat/plovoucí | Funkce **Úhrada – odebrat/plovoucí** se nepoužívá v kontaktním středisku. Je použitelná jen při definování metody platby, kterou používá aplikace pokladního místa v kanálu obchodu. |
