@@ -1014,6 +1014,8 @@
           href: deployment/apply-deployable-package-system.md
         - name: Instalace nasaditelného balíčku
           href: deployment/install-deployable-package.md
+        - name: Odinstalace balíčku
+          href: deployment/uninstall-deployable-package.md
         - name: Řešení potíží s použitím balíčku
           href: deployment/deployable-package-troubleshooting.md
 - name: 'Upgrady, aktualizace a opravy hotfix'
