@@ -1653,6 +1653,7 @@
                 - name: Roční uzávěrka
                   href: ../financials/localizations/emea-cze-hun-year-end.md
             - name: Dánsko
+              href: ../financials/localizations/denmark.md
               items:
                 - name: "Přiřazení formátu platebního dokladu k\_účtu odběratele"
                   href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
@@ -1684,6 +1685,7 @@
                 - name: Výkaz DPH
                   href: ../financials/localizations/emea-est-vat-statement-details.md
             - name: Francie
+              href: ../financials/localizations/france.md
               items:
                 - name: Veřejný sektor
                   items:
@@ -1760,6 +1762,7 @@
                 - name: Nastavení elektronického daňového přiznání
                   href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
             - name: Maďarsko
+              href: ../financials/localizations/hungary.md
               items:
                 - name: Výpočet směnného kurzu
                   href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
@@ -1774,6 +1777,7 @@
                 - name: Roční uzávěrka
                   href: ../financials/localizations/emea-cze-hun-year-end.md
             - name: Island
+              href: ../financials/localizations/iceland.md
               items:
                 - name: "Vytvoření účtu dodavatele a\_připojení kategorie prohlášení k\_faktuře"
                   href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
@@ -1784,6 +1788,7 @@
                 - name: "Aktualizace prohlášení k\_faktuře dodavatele a\_vygenerování sestavy"
                   href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
             - name: Itálie
+              href: ../financials/localizations/italy.md
               items:
                 - name: Podrobnosti výpisů DPH
                   href: ../financials/localizations/emea-ita-vat-statements-details.md
@@ -1806,6 +1811,7 @@
                 - name: Srážková daň
                   href: ../financials/localizations/emea-ita-withholding-tax.md
             - name: Lotyšsko
+              href: ../financials/localizations/latvia.md
               items:
                 - name: Účtování dlouhodobého majetku
                   href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
@@ -1818,6 +1824,7 @@
                 - name: Podrobnosti výpisu DPH
                   href: ../financials/localizations/emea-lva-vat-statement-details.md
             - name: Litva
+              href: ../financials/localizations/lithuania.md
               items:
                 - name: Výkaz dlouhodobého majetku (sestava)
                   href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
@@ -1828,12 +1835,14 @@
                 - name: Podrobnosti výpisu DPH
                   href: ../financials/localizations/emea-ltu-vat-statement-details.md
             - name: Nizozemsko
+              href: ../financials/localizations/netherlands.md
               items:
                 - name: Elektronické daňové přiznání (EVAT)
                   href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Integrace Semansys XBRL
                   href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
             - name: Norsko
+              href: ../financials/localizations/norway.md
               items:
                 - name: "Formáty plateb odběratelů a\_dodavatelů"
                   href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
@@ -1848,6 +1857,7 @@
                 - name: Pokyny k nasazení registračních pokladen
                   href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
             - name: Polsko
+              href: ../financials/localizations/poland.md
               items:
                 - name: Výpočet slev řádku z jednotkové ceny
                   href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
@@ -1870,6 +1880,7 @@
                 - name: Výkaz obratu
                   href: ../financials/localizations/emea-pol-turnover-balances-statement.md
             - name: Španělsko
+              href: ../financials/localizations/spain.md
               items:
                 - name: Použití hotovostních slev na faktuře
                   href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
@@ -1898,6 +1909,7 @@
                 - name: Speciální záznamy a počáteční stavy
                   href: ../financials/localizations/emea-esp-opening-sheets-spain.md
             - name: Švédsko
+              href: ../financials/localizations/sweden.md
               items:
                 - name: Export finančních informací pro auditory ve Švédsku
                   href: ../financials/localizations/emea-swe-sie-standard-report.md
@@ -1906,10 +1918,12 @@
                 - name: Registrační pokladny
                   href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
             - name: Švýcarsko
+              href: ../financials/localizations/switzerland.md
               items:
                 - name: Import plateb odběratelů v ESR
                   href: ../financials/localizations/emea-che-esr-customer-payments-import.md
             - name: Velká Británie
+              href: ../financials/localizations/united-kingdom.md
               items:
                 - name: 'Schéma pro obor stavebnictví '
                   href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
