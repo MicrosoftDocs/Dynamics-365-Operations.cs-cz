@@ -1,6 +1,6 @@
 ---
 title: "Formalizace obchodních procesů"
-description: "Funkce Obchodní proces vám umožňuje vytvořit šablonu obchodního procesu pro procesy, které je třeba dokončit v rámci vaší organizace."
+description: "Toto téma vysvětluje, jak můžete použít funkci obchodního procesu k vytvoření šablony obchodního procesu pro procesy, které je třeba dokončit v rámci vaší organizace."
 author: ShielaSogge
 manager: AnnBe
 ms.date: 01/09/2018
@@ -19,47 +19,60 @@ ms.author: ShielaS
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1b50a97f5e2fc94255ff71702faf91ab36e68eb4
+ms.sourcegitcommit: ee4035f3156a91faecdecba45289dbb1ca6e947a
+ms.openlocfilehash: fd538677d897c1e7d3103cd714c688373aab8d29
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 06/19/2018
 
 ---
 # <a name="formalize-business-processes"></a>Formalizace obchodních procesů
-Funkce Obchodní proces vám umožňuje vytvořit šablonu obchodního procesu pro procesy, které je třeba dokončit v rámci vaší organizace. Vaše společnost může například provést personální audit každého roku. Je možné vytvořit šablonu ke sledování všech úkolů, které audit obsahuje, chcete-li zajistit, aby všechny úlohy byly prováděny pokaždé, když je proces dokončen, a pokud je to nutné, aby bylo zajištěno, že jsou úlohy prováděny úlohy ve správném pořadí. Šablony lze znovu použít pro opakované procesy nebo zkopírovat pro použití jako výchozího bodu při vytváření nových šablon.
 
-Po vytvoření šablony lze proces spustit a sledovat v pracovním prostoru Podnikový proces.  Při spuštění obchodního procesu budou přiřazeny úlohy odpovídajícím osobám a budou obsahovat data splnění. Tyto komponenty popíšeme podrobně dále.
+[!include[banner](includes/banner.md)]
 
-## <a name="business-process-template"></a>Šablona obchodního procesu
-Šablona obchodního procesu uvádí skupinu úkolů, které tvoří obchodní proces. Obchodní procesy ve výchozím nastavení mohou vytvářet správci lidských zdrojů a asistenti ve výchozím nastavení.  To lze však upravit v konfiguraci zabezpečení úpravou funkčního oprávnění Udržovat obecné obchodní procesy.
+Funkce Obchodní proces vám umožňuje vytvořit šablonu obchodního procesu pro obchodní procesy, které je třeba dokončit v rámci vaší organizace. Vaše společnost například ukončuje audit lidských zdrojů každý rok. V takovém případě můžete vytvořit šablonu, která sleduje všechny úlohy, ze kterých se skládá proces auditu. Tato šablona pak může pomoci zajistit, aby všechny úlohy byly prováděny pokaždé, když se uskutečňuje audit. Dále pokud musí být úkoly dokončeny v určitém pořadí, šablona může pomoci zajistit, aby se provedly ve správném pořadí.
 
-Vlastníka procesu lze definovat pro každý proces. Vlastník procesu bude mít přehled o všech úlohách procesu a může opětovně přiřadit úkoly nebo změnit datum splatnosti.  Ředitel HR například může vytvořit šablonu obchodního procesu pro dávky revize.  Manažeři kompenzací a zaměstnaneckých výhod mohou být nastaveni jako vlastníci procesu tak, aby měli přehled úkolů, které je třeba dokončit jako součást revize.  Vlastník procesu nemůže vytvořit nebo odstranit aktivní obchodních procesů nebo šablony obchodních procesů.
+Šablony lze znovu použít pro opakující se procesy. Mohou být také zkopírovány a používány jako výchozí bod pro vytvoření nových šablon.
 
-## <a name="task"></a>Úkol
-Obchodní proces často obsahuje více úkolů. Některé úlohy lze dokončit v rámci aplikace Dynamics 365 for Talent[?], jako například kontrolu nabídky interních kurzů. V tomto případě by v poli Propojení úloh byla vybrána položka nabídky. Ostatní úlohy mohou zahrnovat revize nebo vyplňování formuláře na webové stránce. Volba adresy URL v poli Odkaz na úkol povolí webovou adresu, která má být zadána. Pro externí a interní weby můžete v tomto poli zadat adresy URL. Můžete také vytvořit úkoly pro aktivity, které provádíte ručně, například kontrolu přístupu všech struktur. V takovém případě není požadováno propojení úloh. Tato flexibilita vám umožňuje sledovat více druhů úloh v komplexním procesu.
+Po vytvoření šablony obchodního procesu lze obchodní proces spustit a sledovat v pracovním prostoru **Obchodní proces**. Při spuštění obchodního procesu jsou přiřazeny úlohy odpovídajícím osobám a obsahují data splnění.
 
-Úlohy lze přiřadit konkrétnímu pracovníkovi nebo pozici. Například správce odměňování a zaměstnaneckých výhod bude vždy osoba, která provádí přehled pojistného.   Při vytváření této úlohy vyberte pro tento typ přiřazení pozici a poté vyberte manažera kompenzací a zaměstnaneckých výhod ze seznamu pozic. Po spuštění procesu se přiřadí úloha k pracovníkovi, který je na pozici manažera kompenzací a zaměstnaneckých výhod. Můžete také přiřadit úkol konkrétnímu pracovníkovi výběrem možnosti Pracovník v poli Typ přiřazení a následným zvolením příslušné osoby.
+## <a name="business-process-templates"></a>Šablony obchodního procesu
+Šablona obchodního procesu uvádí skupinu úkolů, které tvoří obchodní proces. Obchodní procesy ve výchozím nastavení mohou vytvářet správci lidských zdrojů a asistenti ve výchozím nastavení. Můžete však změnit role, které mohou vytvořit obchodní procesy úpravou funkčního oprávnění **Udržovat obecné obchodní procesy** v konfiguraci zabezpečení.
 
-Data splnění úkolů závisí na cílovém datu zadaném na začátku procesu. Některé úlohy musí být dokončeny před cílovým datem a některé mohou být dokončeny po cílovém datu.  Při definování úkolu zadáte datum splatnosti, které je relativní k cílovému datu v posunu data splatnosti z cílového pole data. Předpokládejme například, že správce odměňování a zaměstnaneckých výhod musí provést kontrolu pojištění prémií 10 dní před dokončením auditu lidských zdrojů. Vytvořené úlohy mají datum splatnosti relativní vůči cílovému datu -10. Je-li proces zahájen 13. května, úloha bude mít datum splatnosti 3. května. Poznámka: Data splatnosti lze upravit také po zahájení procesu.
+Vlastníka procesu lze definovat pro každý obchodní proces. Vlastník procesu má přehled o všech úlohách procesu a může opětovně přiřadit úkoly nebo změnit datum splnění. Ředitel lidských zdrojů například vytvoří šablonu obchodního procesu pro revizi zaměstnaneckých výhod a určí manažera kompenzací a zaměstnaneckých výhod jako vlastníka procesu. Manažer kompenzací a zaměstnaneckých výhod má poté viditelnost do úkolů, které je třeba dokončit jako součást kontroly.
 
-Komplexní úkoly mohou vyžadovat více kroků, nebo aby jednotlivec prováděl úlohy pro poskytnutí dalších informací. Můžete přidat instrukce k úkolu a zahrnout k instrukcím formát RTF. Pokyny mohou poskytovat další informace o tom, jak má úkol dokončit osoba, která je přiřazena k jejímu dokončení.
+Vlastník procesu nemůže vytvořit nové obchodní procesy nebo šablony obchodních procesů, nebo odstranit aktivní obchodní procesy nebo šablony obchodních procesů.
 
-## <a name="starting-a-process"></a>Spuštění procesu
-Proces lze spustit v rámci šablony obchodního procesu volbou Spustit proces.  Při zahájení procesu budou vytvořeny úlohy pro vybrané pracovníky anebo pozice, definované v úlohách, které jsou zahrnuty v šabloně obchodních procesů. Každému úkolu bude také přiděleno datum splatnosti bude, přidáním nebo odebráním dnů posunu od cílového data (viz informace týkající se posunu dnů v části úkol). Aktivní obchodní procesy lze zobrazit v pracovním prostoru Obchodní procesy. 
+## <a name="tasks"></a>Úlohy
+Obchodní proces se často sklád z více úkolů. Některé úlohy, jako je například kontrola nabídek interních kurzů, lze dokončit v rámci aplikace Microsoft Dynamics 365 for Talent[?]. V tomto případě je možnost zvolena v poli **Odkaz na úkol**. Ostatní úlohy mohou zahrnovat revize nebo vyplňování stránek na webové stránce. V tomto případě je zvoleno **URL** v poli **Odkaz na úkol** a poté lze zadat webovou adresu. Pro externí a interní weby můžete zadat adresy URL. Můžete také vytvořit úkoly pro aktivity, které provádíte ručně, například kontrolu přístupu všech struktur. V takovém případě není požadován odkaz na úkol. Tato flexibilita vám umožňuje sledovat více druhů úloh v komplexním procesu.
+
+Úlohy lze přiřadit buď ke konkrétnímu pracovníkovi nebo pozici. Například manažer kompenzací a zaměstnaneckých výhod bude vždy osoba, která provádí kontrolu náhrad pojistného. Proto když vytvoříte tuto úlohu, vyberte **Pozice** v poli **Typ přiřazení** a poté zvolte **Manažer kompenzací a zaměstnaneckých výhod** v seznamu **Pozice**. Po spuštění obhodního procesu se přiřadí úloha k pracovníkovi, který je na pozici **Manažer kompenzací a zaměstnaneckých výhod**. Chcete-li přiřadit úkol konkrétnímu pracovníkovi, zvolte **Pracovník** v poli **Typ přiřazení** a poté vyberte příslušnou osobu.
+
+Data splnění úkolů závisí na cílovém datu zadaném na začátku obchodního procesu. Některé úlohy musí být dokončeny před cílovým datem a jiné úlohy mohou být dokončeny po cílovém datu. Při definování úkolu zadáte v poli **Posun data splatnosti od cílového data** datum splnění, které je relativní k cílovému datu. Například manažer kompenzací a zaměstnaneckých výhod musí provést kontrolu náhrad pojistného do 10 dní před dokončením auditu lidských zdrojů. V takovém případě úkol vytvořený pro kontrolu má hodnotu **Posun data splatnosti od cílového data** **-10**. Je-li obchodní proces zahájen 13. května, úloha má datum splnění 3. května.
+
+> [!NOTE]
+> Data splatnosti lze upravit také po zahájení obchodního procesu.
+
+Komplexní úkoly mohou vyžadovat více kroků, nebo osoby provádějící úlohy musí poskytnout další informace. Pro tyto situace lze přidat instrukce k úkolu. Pokyny mohou poskytovat osobě přiřazené k dokončení úlohy další informace o tom, jak úlohu dokončit. Do pokynů můžete dokonce zahrnout formátování RTF.
+
+## <a name="starting-a-business-process"></a>Spuštění obchodního procesu
+V šabloně obchodního procesu můžete spustit obchodní proces volbou **Spustit proces**. Při zahájení procesu jsou vytvořeny úlohy pro vybrané pracovníky anebo pozice, definované v úlohách, které jsou zahrnuty v šabloně. Každému úkolu bude také přiděleno datum splatnosti přidáním nebo odebráním počtu dnů posunu od cílového data, jak je vysvětleno v části Úlohy. Aktivní obchodní procesy lze zobrazit v pracovním prostoru **Obchodní procesy**.
 
 ## <a name="employee-self-service"></a>Samoobsluha pro zaměstnance
-Když je zaměstnanci přiřazen úkol, lze zobrazit jeho přiřazené úkoly na stránce samoobsluhy pro zaměstnance. Zaměstnanci, kteří mají přidělené úlohy obchodního procesu, mohou zobrazit úlohu, její popis, pokyny pro dokončení a jméno kontaktní osoby a mohou otevírat přidruženou stránku nebo webovou stránku Dynamics365 ze samoobslužné stránky Zaměstnanec. Úlohy lze označit jako probíhající, zrušené nebo dokončené.
+Po přiřazení úlohy zaměstnanci si ji může zaměstnanec zobrazit a všechny další přiřazené úlohy na stránce **Samoobsluha pro zaměstnance**. Pro každý úlohu obchodního procesu přiřazené zaměstnanci může tento zaměstnanec zobrazit jméno a popis úlohy, pokyny pro dokončení a jméno kontaktní osoby. Ze stránky **Samoobsluha pro zaměstnance** mohou zaměstnanci také otevřít přidruženou stránku aplikace Microsoft Dynamics 365 nebo přidruženou webovou stránku, a mohou označit probíhající, zrušené nebo dokončené úlohy.
 
-## <a name="business-process-workspace"></a>Šablona obchodního procesu
-Odborníci na personalistiku mohou zobrazovat aktivní obchodní procesy z pracovní plochy Obchodní proces. Pracovní prostor uvádí seznam všech aktivních procesů a úloh, které jsou přidružené ke každé úloze. Komplexní seznam úloh lze filtrovat podle data splatnosti. Na stránce se zobrazí také úlohy po termínu a úkoly konkrétně přiřazené k odborníkovi lidských zdrojů. Mohou též aktualizovat stav všech úloh a v případě potřeby opětovně přiřadit úlohy pro udržení postupu celkového obchodního procesu.
+## <a name="business-process-workspace"></a>Pracovní prostor obchodního procesu
+Odborníci na personalistiku mohou zobrazovat aktivní obchodní procesy v pracovním prostoru **Obchodní proces**. Tento pracovní prostor uvádí seznam všech aktivních procesů a úloh, které jsou přidružené ke každé úloze. Komplexní seznam úloh lze filtrovat podle data splatnosti. Pracovní prostor zobrazuje také úlohy po termínu a úkoly konkrétně přiřazené odborníkovi lidských zdrojů. Odborník lidských zdrojů může též aktualizovat stav všech úloh a v případě potřeby opětovně přiřadit úlohy pro udržení postupu celkového obchodního procesu.
 
 ## <a name="my-business-processes-workspace"></a>Pracovní prostor Moje obchodní procesy
-Vlastníci procesu mohou zobrazit aktivní obchodní procesy, které jim jsou přiřazeny z pracovního prostoru Můj obchodní proces. Pracovní prostor uvádí seznam všech aktivních procesů a přidružených úloh, které tento uživatel vlastní.  Komplexní seznam úloh lze filtrovat podle data splatnosti. Na stránce se zobrazí také úkoly konkrétně přiřazené vlastníkovi procesu. Vlastník procesu může také aktualizace stav všech úloh a také opětovně přiřadit všechny úlohy.
+Vlastníci procesu mohou zobrazit aktivní obchodní procesy, které jim jsou přiřazeny v pracovním prostoru **Můj obchodní proces**. Tento pracovní prostor uvádí seznam všech aktivních procesů, které tento uživatel vlastní, a přidružených úloh. Komplexní seznam úloh lze filtrovat podle data splatnosti. Pracovní prostor zobrazuje také úlohy konkrétně přiřazené vlastníkovi procesu. Vlastník procesu může také aktualizovat stav všech úloh a opětovně přiřadit jakoukoliv úlohu.
 
 ## <a name="navigating-business-processes"></a>Procházení obchodních procesů
-1. Chcete-li přidat šablonu obchodních procesů, přejděte na Obchodní procesy - odkazy - Správa obchdoních procesů.
-   - a.   Nyní vytvoříme novou šablonu.
-   - b.   Kopírování ze šablony zkopíruje vybranou šablonu do nové.
-   - c.   Spuštění procesu zahájí vybraný obchodní proces, přiřadí úlohy a vypočítá data splatnosti.  
-2. Chcete-li zobrazit aktivní procesy a přidružené úlohy, přejděte na pracovní prostor Obchodní procesy.
+Chcete-li vytvořit nebo kopírovat šablonu obchodního procesu, nebo spustot obchodní proces, přejděte na Obchodní procesy - odkazy – Správa obchodních procesů. Poté můžete provést následující akce:
+
+- Vyberte **Nová** pro vytvoření nové šablony obchodních procesů.
+- Zvolte **Kopírovat ze šablony**, chcete-li kopírovat vybranou šablonu do nové.
+- Zvolte **Spustit proces** pro spuštění vybraného obchodního procesu, přiřadění úlohy a vypočítání data splatnosti.
+
+Chcete-li zobrazit aktivní procesy a přidružené úlohy, otevřete pracovní prostor **Obchodní procesy**.
+
 

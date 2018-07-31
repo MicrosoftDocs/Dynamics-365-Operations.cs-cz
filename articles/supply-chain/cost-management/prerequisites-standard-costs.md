@@ -20,10 +20,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e63f2b4289b640e601492425331ea8f3804d139a
-ms.openlocfilehash: 4f505a2de89863d1a12d415795fdfb82b3557bc0
+ms.sourcegitcommit: 338e0847ea91ee2582df0aab3e31a97c4f24113e
+ms.openlocfilehash: 016eec12c31398beede7fdddc4548ec196ebd704
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -51,7 +51,7 @@ Před definováním pravidel zaúčtování položky povolte prostřednictvím s
 
 **4. Definujte parametry zásob, které odpovídají standardním nákladům.** 
 
--  Použijte kartu **Kusovníky** na stránce **Parametry zásob** s cílem definovat dva parametry řízení nákladů, které odpovídají standardním nákladům. 
+-  Použijte kartu **Skladové účetnictví** na stránce **Nastavení zásad skladového účetnictví > Parametry** s cílem definovat dva parametry řízení nákladů, které odpovídají standardním nákladům.
 
     -  V poli **Rozúčtování nákladů** vyberte možnost **Žádné** nebo **Dílčí hlavní kniha**. Vyberete-li **Dílčí hlavní kniha**, rozúčtování nákladů je *aktivní* rozúčtování nákladů. Aktivní rozúčtování nákladů je velmi důležité pro výpočet, zachování a zobrazení rozdělení nákladových skupin do segmentů napříč víceúrovňovou strukturou produktů pro standardní nákladové položky. Je-li rozúčtování nákladů aktivní, můžete vykázat a analyzovat zásoby, nedokončenou výrobu (NV) a náklady na prodané zboží (COGS) pro jednotlivé nákladové skupiny ve formátu s jednou úrovní, s více úrovněmi nebo v souhrnném formátu. Když je rozúčtování nákladů aktivní a aktivujete náklady na vyráběnou položku, segmentace nákladových skupin se uloží v záznamu nákladů položky. 
 

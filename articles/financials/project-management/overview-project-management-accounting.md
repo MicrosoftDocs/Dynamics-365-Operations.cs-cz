@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 404f7d2b050aba1532cae0955a9579e1c2f174e3
+ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
+ms.openlocfilehash: 46c8ecf8a6988c32d0202c631bef6901f467bb89
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -80,17 +80,37 @@ Prognózu můžete použít, má-li vaše organizace operační perspektivu a za
 ### <a name="create-projects"></a>Vytvořit projekty
 
 V aplikaci Microsoft Finance and Operations můžete vytvořit šest typů projektů. Každý typ projektu je nastaven jinak pro rozpoznávání výnosů a nákladů. Vybraný typ projektu závisí na jeho účelu. V následující tabulce je popsán typický příklad použití všech typů projektů.
-
-                                                                                                                                                                         |
-
-| Typ projektu      | Popis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Čas a materiál | V časových a materiálových projektech jsou odběrateli účtovány všechny náklady, které na projektu vzniknou. Tyto náklady zahrnují náklady za hodiny, výdaje, položky a poplatky.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Fixní cena       | Faktury v projektech s pevnou cenou se skládají z transakcí na účet. Projekt s pevnou cenou se fakturuje podle plánu účtování založeného na projektové smlouvě. Výnosy projektu s pevnou cenou je možné vypočítávat a zaúčtovávat v průběhu projektu použitím metody procentuální hodnoty dokončení. Alternativně výnosy je možné vypočítat a zaúčtovat po dokončení projektu použitím metody dokončené smlouvy. Společnosti často těží z používání hodnoty nedokončené výroby (NV) pro výpočet stupně dokončení projektu či skupiny projektů.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Investiční        | Investiční projekty jsou projekty, které nereprodukují okamžitý výdělek. Obvykle se používají pro dlouhodobé interní projekty, kde náklady musejí být kapitalizovány. Pro investiční projekt je možné zaznamenat pouze náklady položek, hodin a výdajů. Náklady u investičního projektu jsou sledovány a řízeny pomocí oceňovací funkce. Investiční projekty lze nastavit s volitelnou maximální kapitalizací. Během investičního projektu zaznamenáte jeho náklady na účtech NV, kde jsou uložené do dokončení projektu. Pokud je projekt vyřazen, převedete hodnotu NV přenesena do dlouhodobého majetku, účtu hlavní knihy nebo do nového projektu. Poznámka: Transakce investičních projektů, které nejsou zobrazeny na stránce **Zaúčtování nákladů**, **Časově rozlišené výnosy**, nebo **Vytvořit návrhy faktur**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Nákladový projekt      | Stejně jako v případě investičních projektů se nákladové projekty obvykle používají ke sledování interních projektů a lze pro ně zaznamenat pouze hodiny, výdaje a položky. Nákladové projekty ovšem obvykle trvají kratší dobu než investiční projekty. Navíc narozdíl od investiční projektů nelze nákladové projekty kapitalizovat do rozvahových účtů. Místo toho jejich transakce jsou zaúčtovány pouze na účty zisků a ztrát. **POZNÁMKA** Transakce v nákladových projektech se neprojeví na stránce **Zaúčtování nákladů**, **Časově rozlišené výnosy** nebo **Vytvořit návrhy faktur**. Vzhledem k tomu, že nákladové projekty jsou obvykle používány ke sledování interních projektů, nemusí být obvykle přidruženy k účtu odběratele. Jestliže nastavení vyžaduje vytvoření požadavků na zboží pro nákupní objednávky, musíte přidružit nákladový projekt k odběrateli. Toto přidružení je vyžadováno proto, že požadavky na položku jsou spravovány jako řádky prodejní objednávky a systém vyžaduje zadání odběratele. Toto nastavení však nebude vést k automatické tvorbě žádosti o zboží z nákupní objednávky. U nákladových projektů se nastavení **Vytvořit požadavky na položky** ignoruje. Pokud potřebujete požadavek na zboží u nákladového projektu, můžete ho vytvořit ručně za předpokladu, že odběratel je stále přidružen k projektu. |
-| Interní          | Interní projekty slouží ke sledování nákladů na projekt, který je interní pro vaši organizaci. Tento typ projektu může poskytnout nástroj plánování pro správu spotřeby prostředků. **Poznámka:** Transakce investičních projektů nejsou zobrazeny na stránce **Zaúčtování nákladů** nebo **Vytvořit návrhy faktur**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Čas              | Časové projekty se používají ke sledování času, který je přidružen s nefakturovatelnými a neproduktivními aktivitami, jako je například projekt pro zaznamenání nemocí pracovníků. Transakce v časových projektech nejsou zaúčtovány do hlavní knihy. Místo toho jsou zahrnuty do sestavy využití pracovníka. Do časových projektů lze zaznamenat pouze hodinové transakce. K registraci těchto hodin na projektu použijete deník hodin nebo časový rozvrh. Po zaregistrování hodin se zobrazí jako transakce projektu, ale bez odpovídajícího dokladu transakce. **Poznámka:** Transakce v časových projektech se neprojeví na stránce **Zaúčtování nákladů**, **2Časově rozlišené výnosy** nebo **Vytvořit návrhy faktur**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+                                                                                                            
+<table>
+  <tr>
+    <td>Typ projektu</th>
+    <td>Popis</th>
+  </tr>
+  <tr>
+    <td>Čas a materiál</td>
+    <td>V časových a materiálových projektech jsou odběrateli účtovány všechny náklady, které na projektu vzniknou. Tyto náklady zahrnují náklady za hodiny, výdaje, položky a poplatky.</td>
+  </tr>
+  <tr>
+    <td>Fixní cena</td>
+    <td>Faktury v projektech s pevnou cenou se skládají z transakcí na účet. Projekt s pevnou cenou se fakturuje podle plánu účtování založeného na projektové smlouvě. Výnosy projektu s pevnou cenou je možné vypočítávat a zaúčtovávat v průběhu projektu použitím metody procentuální hodnoty dokončení. Alternativně výnosy je možné vypočítat a zaúčtovat po dokončení projektu použitím metody dokončené smlouvy. Společnosti často těží z používání hodnoty nedokončené výroby (NV) pro výpočet stupně dokončení projektu či skupiny projektů.</td>
+  </tr>
+  <tr>
+    <td>Investiční</td>
+    <td>Investiční projekty jsou projekty, které nereprodukují okamžitý výdělek. Obvykle se používají pro dlouhodobé interní projekty, kde náklady musejí být kapitalizovány. Pro investiční projekt je možné zaznamenat pouze náklady položek, hodin a výdajů. Náklady u investičního projektu jsou sledovány a řízeny pomocí oceňovací funkce. Investiční projekty lze nastavit s volitelnou maximální kapitalizací. Během investičního projektu zaznamenáte jeho náklady na účtech NV, kde jsou uložené do dokončení projektu. Pokud je projekt vyřazen, převedete hodnotu NV přenesena do dlouhodobého majetku, účtu hlavní knihy nebo do nového projektu. <br></br> <strong>POZNÁMKA:</strong> Transakce investičních projektů nejsou zobrazeny na stránce <strong>Zaúčtování nákladů<strong>, <strong>Časově rozlišené výnosy</strong>, nebo <strong>Vytvořit návrhy faktur</strong>.</td>
+  </tr>
+  <tr>
+    <td>Nákladový projekt</td>
+    <td>Stejně jako v případě investičních projektů se nákladové projekty obvykle používají ke sledování interních projektů a lze pro ně zaznamenat pouze hodiny, výdaje a položky. Nákladové projekty ovšem obvykle trvají kratší dobu než investiční projekty. Navíc narozdíl od investiční projektů nelze nákladové projekty kapitalizovat do rozvahových účtů. Místo toho jejich transakce jsou zaúčtovány pouze na účty zisků a ztrát. <br></br> <strong>POZNÁMKA:</strong> Transakce v nákladových projektech se neprojeví na stránce <strong>Zaúčtování nákladů</strong>, <strong>Časově rozlišené výnosy</strong> nebo <strong>Vytvořit návrhy faktur</strong>. Vzhledem k tomu, že nákladové projekty jsou obvykle používány ke sledování interních projektů, nemusí být obvykle přidruženy k účtu odběratele. Jestliže nastavení vyžaduje vytvoření požadavků na zboží pro nákupní objednávky, musíte přidružit nákladový projekt k odběrateli. Toto přidružení je vyžadováno proto, že požadavky na položku jsou spravovány jako řádky prodejní objednávky a systém vyžaduje zadání odběratele. Toto nastavení však nebude vést k automatické tvorbě žádosti o zboží z nákupní objednávky. U nákladových projektů se nastavení <strong>Vytvořit požadavky na položky</strong> ignoruje. Pokud potřebujete požadavek na zboží u nákladového projektu, můžete ho vytvořit ručně za předpokladu, že odběratel je stále přidružen k projektu.</td>
+  </tr>
+  <tr>
+    <td>Interní</td>
+    <td>Interní projekty slouží ke sledování nákladů na projekt, který je interní pro vaši organizaci. Tento typ projektu může poskytnout nástroj plánování pro správu spotřeby prostředků. <br></br><strong>POZNÁMKA:<strong> Transakce investičních projektů nejsou zobrazeny na stránce <strong>Zaúčtování nákladů</strong> nebo <strong>Vytvořit návrhy faktur</strong>.</td>
+  </tr>
+  <tr>
+    <td>Čas</td>
+    <td>Časové projekty se používají ke sledování času, který je přidružen s nefakturovatelnými a neproduktivními aktivitami, jako je například projekt pro zaznamenání nemocí pracovníků. Transakce v časových projektech nejsou zaúčtovány do hlavní knihy. Místo toho jsou zahrnuty do sestavy využití pracovníka. Do časových projektů lze zaznamenat pouze hodinové transakce. K registraci těchto hodin na projektu použijete deník hodin nebo časový rozvrh. Po zaregistrování hodin se zobrazí jako transakce projektu, ale bez odpovídajícího dokladu transakce. <br></br><strong>POZNÁMKA:</strong> Transakce v časových projektech se neprojeví na stránce <strong>Zaúčtování nákladů</strong>, <strong>Časově rozlišené výnosy</strong>, nebo <strong>Vytvořit návrhy faktur</strong>.</td>
+  </tr>
+</table>
 
 
 ### <a name="assign-workers-categories-and-resources"></a>Přiřazení zaměstnanců, kategorií a prostředků
@@ -239,11 +259,12 @@ V následující tabulce jsou popsány metody pro výpočet nákladů na dokonč
 <li>Porovnejte transakce prognózy se skutečnými transakcemi.</li>
 <li>Zachovejte, snižte nebo zvyšte odhady pro další období.</li>
 </ol>
-Finance and Operations nesnižuje automaticky prognózované odhady. Je proto vhodné zachovat původní model prognózy projektu s pevnou cenou, aby se vytvořila základna pro srovnání při dokončení projektu. &gt; [!NOTE] &gt; Vyberete-li tuto metodu, použijte nejméně dva modely prognóz. Jeden model by měl obsahovat původní prognózy. Pro další model je třeba z jiného modelu zkopírovat transakce prognózy. Tato metoda je platná pouze pro projekty s pevnou cenou a pro investiční projekty.</td>
+Finance and Operations nesnižuje automaticky prognózované odhady. Je proto vhodné zachovat původní model prognózy projektu s pevnou cenou, aby se vytvořila základna pro srovnání při dokončení projektu. 
+<br></br> <strong>POZNÁMKA:</strong> Vyberete-li tuto metodu, použijte nejméně dva modely prognóz. Jeden model by měl obsahovat původní prognózy. Pro další model je třeba z jiného modelu zkopírovat transakce prognózy. Tato metoda je platná pouze pro projekty s pevnou cenou a pro investiční projekty.</td>
 </tr>
 <tr class="odd">
 <td>Zbývající rozpočet</td>
-<td>Tato metoda používá zbývající rozpočtový model pro výpočet nákladů na dokončení projektu. Pokud použijete tuto metodu, skutečné náklady a prognózy částek ve zbývajícím rozpočtovém modelu se sečtou. Výsledkem jsou celkové náklady. Než použijete tuto metodu, zbývající rozpočtový model se musí nastavit k odečítání transakcí podle skutečných transakcí, které jsou zaznamenány v systému. Na stránce <strong>Modely prognóz</strong> se ujistěte, že pole ve skupině <strong>Automatické snížení prognózy</strong> jsou označena. Zbývající rozpočet se obvykle zkopíruje z původního rozpočtu. Při zadávání transakcí se sníží transakce ve zbývajícím rozpočtu. Pokud v průběhu projektu zjistíte, že se musí upravit zbývající rozpočet, změňte transakce prognózy do zbývajícího rozpočtu. <strong>Poznámka:</strong> Tuto metodu je možné použít pouze v případě, že je model prognózy přiřazen k odhadu.</td>
+<td>Tato metoda používá zbývající rozpočtový model pro výpočet nákladů na dokončení projektu. Pokud použijete tuto metodu, skutečné náklady a prognózy částek ve zbývajícím rozpočtovém modelu se sečtou. Výsledkem jsou celkové náklady. Než použijete tuto metodu, zbývající rozpočtový model se musí nastavit k odečítání transakcí podle skutečných transakcí, které jsou zaznamenány v systému. Na stránce <strong>Modely prognóz</strong> se ujistěte, že pole ve skupině <strong>Automatické snížení prognózy</strong> jsou označena. Zbývající rozpočet se obvykle zkopíruje z původního rozpočtu. Při zadávání transakcí se sníží transakce ve zbývajícím rozpočtu. Pokud v průběhu projektu zjistíte, že se musí upravit zbývající rozpočet, změňte transakce prognózy do zbývajícího rozpočtu. <br></br> <strong>POZNÁMKA:</strong> Tuto metodu je možné použít pouze v případě, že je model prognózy přiřazen k odhadu.</td>
 </tr>
 <tr class="even">
 <td>Jako předchozí odhad</td>
@@ -318,11 +339,19 @@ Datum platby nákladů se nepočítá v pojistných dnech. Až je projekt dokon�
 
 Až jsou všechny faktury dodavatele a prodeje dokončeny, můžete zobrazit vztah mezi poli na stránce **Cashflow** a poli na stránce **Výkazy projektu**.
 
-| Stránka Cashflow | Stránka Výkazy projektu |
-|----------------|-------------------------|
-| Přírůstky hotovosti   | Výnosy                 |
-| Úbytky hotovosti  | Celkové náklady              |
-| Čistý cashflow | Hrubá marže            |
+:::row::: :::column:::
+        #### Cash flow page
+        - Cash inflows 
+        - Cash outflows
+        - Net cash flows
+    :::column-end:::
+    :::column:::
+        #### Project statements page
+        - Revenue
+        - Total cost
+        - Gross margin
+    :::column-end:::
+:::row-end:::
 
 ### <a name="review-costs"></a>Kontrola nákladů
 
@@ -409,8 +438,4 @@ Po výpočtu výkazu můžete zobrazit následující informace na různých kar
 -   **Spotřeba** – informace o spotřebě hodin, výdajů, položek a mzdových transakcí.
 -   **Faktura** – informace o fakturách a fakturaci na účet.
 -   **Hodinová sazba** – hodinové sazby za hodiny zaúčtované na účty výnosů a nákladů.
-
-
-
-
 
