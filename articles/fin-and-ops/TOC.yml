@@ -410,151 +410,6 @@
     - name: Správa financí
       href: ../financials/index.md
       items:
-        - name: Hlavní kniha
-          href: ../financials/general-ledger/general-ledger.md
-          items:
-            - name: Účty
-              items:
-                - name: Přehled časově rozlišených částek
-                  href: ../financials/general-ledger/accruals-overview.md
-                - name: Pravidla eliminace
-                  href: ../financials/general-ledger/elimination-rules.md
-                - name: Kombinace dimenzí a účtů
-                  href: ../financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
-                - name: Vyrovnané deníky pro mezijednotkové účetnictví
-                  href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
-                - name: Definice účtování
-                  href: ../financials/general-ledger/posting-definitions.md
-                - name: 'Příklady definice účtování '
-                  href: ../financials/general-ledger/example-posting-definitions.md
-                - name: Účetní zůstatky hlavní knihy
-                  href: ../financials/general-ledger/general-ledger-account-balances.md
-                - name: Definování finančních dimenzí
-                  href: ../financials/general-ledger/tasks/define-financial-dimensions.md
-                - name: Udržování výchozích šablon finančních dimenzí
-                  href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
-                - name: Vytvoření účetních struktur
-                  href: ../financials/general-ledger/tasks/create-account-structures.md
-                - name: Vytvoření schémat časového rozlišení
-                  href: ../financials/general-ledger/tasks/create-accrual-schemes.md
-                - name: "Vytvoření konsolidačních skupin a\_dalších konsolidačních účtů"
-                  href: ../financials/general-ledger/tasks/create-consolidation-groups.md
-                - name: Typy hlavního účtu
-                  href: ../financials/general-ledger/main-account-types.md
-                - name: Vytvoření hlavního účtu
-                  href: ../financials/general-ledger/tasks/create-main-account.md
-                - name: Plánování účetní osnovy
-                  href: ../financials/general-ledger/plan-chart-of-accounts.md
-                - name: Vyrovnání transakcí mezi účty hlavní knihy
-                  href: ../financials/general-ledger/tasks/settle-transactions-between-ledger-accounts.md
-                - name: Nastavení aliasu účtu hlavní knihy
-                  href: ../financials/general-ledger/tasks/set-up-ledger-account-alias.md
-                - name: Nastavení kategorií hlavního účtu
-                  href: ../financials/general-ledger/tasks/set-up-main-account-categories.md
-                - name: Průzkumník zdroje účetnictví
-                  href: ../financials/accounts-payable/accounting-source-explorer.md
-                - name: Rozúčtování
-                  href: ../financials/accounts-payable/accounting-distributions.md
-                - name: Zpracování přidělení
-                  href: ../financials/general-ledger/process-allocations.md
-                - name: Finanční dimenze
-                  href: ../financials/general-ledger/financial-dimensions.md
-                - name: Převod měn účetnictví nebo vykazování
-                  href: ../financials/general-ledger/convert-accounting-reporting-currencies.md
-                - name: Konsolidace skupin účtů a účtů
-                  href: ../financials/budgeting/consolidation-account-groups-consolidation-accounts.md
-                - name: Přehled konsolidace a vyloučení
-                  href: ../financials/budgeting/consolidation-elimination-overview.md
-                - name: 'Fiskální kalendáře, fiskální roky a období'
-                  href: ../financials/general-ledger/configure-account-structures.md
-                - name: Konfigurovat účetní struktury
-                  href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
-            - name: Deníky a hlavní knihy
-              items:
-                - name: Zpracování hlavního deníku
-                  href: ../financials/general-ledger/general-journal-processing.md
-                - name: Zaúčtování periodických deníků
-                  href: ../financials/general-ledger/tasks/post-periodic-journals.md
-                - name: Zpracování deníku přidělení hlavní knihy
-                  href: ../financials/general-ledger/tasks/process-ledger-allocation-journal.md
-                - name: Nastavení mezipodnikového účetnictví
-                  href: ../financials/general-ledger/intercompany-accounting-setup.md
-                - name: Pravidla přidělení hlavní knihy
-                  href: ../financials/general-ledger/ledger-allocation-rules.md
-                - name: Vytvoření rozšířených pravidel pro deníky
-                  href: ../financials/general-ledger/tasks/create-advanced-rules-journals.md
-                - name: "Vytvoření a\_přiřazení struktur rozšířeného pravidla"
-                  href: ../financials/general-ledger/tasks/create-assign-advanced-rule-structures.md
-                - name: Typy deníku hlavní knihy
-                  href: ../financials/general-ledger/ledger-journal-types.md
-                - name: "Vytváření a\_ověřování deníků"
-                  href: ../financials/general-ledger/tasks/create-validate-journals.md
-                - name: Zobrazení položek nebo transakcí deníku
-                  href: ../financials/general-ledger/tasks/view-journal-entries-or-transactions.md
-                - name: "Zobrazení souvisejícího mezipodnikového dokladu z\_deníku"
-                  href: ../financials/general-ledger/tasks/view-related-intercompany-voucher-journal.md
-                - name: Vytvoření položky deníku pomocí šablony
-                  href: ../financials/general-ledger/tasks/create-journal-entry-template.md
-                - name: Vytvoření transakcí časového rozlišení hlavní knihy
-                  href: ../financials/general-ledger/tasks/create-ledger-accrual-transactions.md
-                - name: Publikování řádek deníku a dokumentů z Excelu
-                  href: ../financials/general-ledger/open-lines-excel-journals-documents.md
-                - name: Zobrazení položek a transakcí
-                  href: ../financials/general-ledger/view-journal-entries-transactions.md
-                - name: Zapsání zaúčtovaných položek deníku do deníku
-                  href: ../financials/general-ledger/tasks/journalize-posted-journal-entries.md
-                - name: Přecenění měny v konsolidační společnosti
-                  href: ../financials/general-ledger/currency-revaluation-consolidation-company.md
-                - name: Přecenění cizí měny pro hlavní knihu
-                  href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
-                - name: Importovat směnné kurzy měn
-                  href: ../financials/general-ledger/import-currency-exchange-rates.md
-            - name: Závěrka období
-              items:
-                - name: Zavření hlavní knihy na konci období
-                  href: ../financials/general-ledger/close-general-ledger-at-period-end.md
-                - name: Pracovní prostor uzavření finančního období
-                  href: ../financials/general-ledger/financial-period-close-workspace.md
-                - name: Roční uzávěrka
-                  href: ../financials/general-ledger/year-end-close.md
-                - name: Uzavření fiskálního roku
-                  href: ../financials/general-ledger/tasks/close-fiscal-year.md
-                - name: Hromadné uzavření finančního období
-                  href: ../financials/general-ledger/tasks/mass-financial-period-close.md
-            - name: DPH
-              items:
-                - name: Přehled DPH
-                  href: ../financials/general-ledger/indirect-taxes-overview.md
-                - name: Sazby daně z prodeje na základě základu marže a metod výpočtu
-                  href: ../financials/general-ledger/marginal-base-field.md
-                - name: Platby DPH a pravidla zaokrouhlení
-                  href: ../financials/general-ledger/round-sales-tax-payments.md
-                - name: Metody výpočtu daně z prodeje v poli Zdroj
-                  href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
-                - name: Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
-                  href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
-                - name: "Výpočet a\_úprava DPH na faktuře dodavatele"
-                  href: ../financials/general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
-                - name: Vytvoření platby DPH
-                  href: ../financials/general-ledger/tasks/create-sales-tax-payment.md
-                - name: "Vytváření transakcí DPH v\_dokladech"
-                  href: ../financials/general-ledger/tasks/create-sales-tax-transactions-documents.md
-                - name: Nastavení účetních skupin hlavní knihy pro DPH
-                  href: ../financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
-                - name: Nastavení finančních úřadů
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-authorities.md
-                - name: Nastavit kódy DPH
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-codes.md
-                - name: "Nastavení skupin DPH a\_skupin DPH položky"
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
-                - name: Nastavení kódů vykazování DPH
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md
-                - name: Nastavení období vyrovnání DPH
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md
-                - name: Nastavení srážkové daně
-                  href: ../financials/general-ledger/tasks/set-up-withholding-tax.md
-                - name: Zobrazení zaúčtovaných transakcí DPH
-                  href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md
         - name: Závazky
           href: ../financials/accounts-payable/accounts-payable.md
           items:
@@ -662,6 +517,10 @@
               href: ../financials/accounts-receivable/sepa-direct-debit-mandate.md
             - name: 'Nastavení platební karty, autorizace a záznam'
               href: ../financials/accounts-receivable/credit-card-authorizations.md
+            - name: Vytvoření volné faktury
+              href: ../financials/accounts-receivable/create-free-text-invoice-new.md
+            - name: Vytvoření šablony volné faktury
+              href: ../financials/accounts-receivable/create-free-text-invoice-template-new.md
             - name: Oprava volné faktury
               href: ../financials/accounts-receivable/correct-free-text-invoice.md
             - name: Nastavení úrokových sazeb pro kód úroku
@@ -682,12 +541,6 @@
                   href: ../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
                 - name: Vytvoření posloupnosti upomínek
                   href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
-                - name: "Vytvoření zmocnění k\_přímému debetu pro odběratele"
-                  href: ../financials/accounts-receivable/tasks/create-direct-debit-mandate-customer.md
-                - name: Vytvoření volné faktury
-                  href: ../financials/accounts-receivable/tasks/create-free-text-invoice.md
-                - name: Vytvoření šablony volné faktury
-                  href: ../financials/accounts-receivable/tasks/create-free-text-invoice-template.md
                 - name: "Vytvoření kódu úroků s\_rozsahem"
                   href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
                 - name: Vytváření faktur prodejních objednávek
@@ -732,6 +585,31 @@
                   href: ../financials/accounts-receivable/reimburse-customers.md
                 - name: Platby částečných částek zákazníkům
                   href: ../financials/accounts-receivable/customer-payments-partial-amount.md
+        - name: Rozpočtování
+          href: ../financials/budgeting/budgeting-overview.md
+          items:
+            - name: 'Přehled plánování rozpočtu '
+              href: ../financials/budgeting/budget-planning-overview-configuration.md
+            - name: 'Přehled řízení rozpočtu '
+              href: ../financials/budgeting/budget-control-overview-configuration.md
+            - name: 'Přehled rozpočtování  '
+              href: ../financials/budgeting/basic-budgeting-overview-configuration.md
+            - name: Prognóza pozice
+              href: ../financials/budgeting/position-forecasting.md
+            - name: Dokumenty odůvodnění plánování rozpočtu
+              href: ../financials/budgeting/budget-planning-justification-docs.md
+            - name: Vytváření rozpočtů z účtů transakcí a souhrnných účtů
+              href: ../financials/budgeting/create-budget-transaction-accounts-total-accounts.md
+            - name: Šablony plánování rozpočtu pro Excel
+              href: ../financials/budgeting/budget-planning-excel-templates.md
+            - name: Odstraňování problémů s rozpočtováním pozice
+              href: ../financials/budgeting/position-budgeting-set-up-issues.md
+            - name: Plánování rozpočtu
+              href: ../financials/budgeting/budget-plan.md
+            - name: Přidělení dat pro plánování rozpočtu
+              href: ../financials/budgeting/budget-planning-data-allocation.md
+            - name: Integrace plánování rozpočtu s jinými moduly
+              href: ../financials/budgeting/budget-planning-integration-other-modules.md
         - name: Pokladna a banka
           href: ../financials/cash-bank-management/cash-bank-management.md
           items:
@@ -811,6 +689,112 @@
                   href: ../financials/cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
                 - name: Aktualizace složité entity bankovního deníku
                   href: ../financials/cash-bank-management/upgrade-bank-journal-composite-entity.md
+        - name: Nákladové účetnictví
+          href: ../financials/cost-accounting/cost-accounting-home-page.md
+          items:
+            - name: Terminologie týkající se účtování nákladů
+              href: ../financials/cost-accounting/terms-cost-accounting.md
+            - name: 'Fiskální kalendáře, fiskální roky a období'
+              href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
+            - name: Finanční dimenze
+              href: ../financials/general-ledger/financial-dimensions.md
+            - name: Účetní struktury
+              href: ../financials/general-ledger/Default-dimensions.md
+            - name: Vytvoření účetních struktur
+              href: ../financials/general-ledger/tasks/create-account-structures.md
+            - name: Přehled rozpočtování
+              href: ../financials/budgeting/basic-budgeting-overview-configuration.md
+            - name: Vytvoření dimenzí a import členů dimenze
+              href: ../financials/cost-accounting/cost-dimension.md
+            - name: Dimenze prvku nákladů
+              href: ../financials/cost-accounting/cost-elements.md
+            - name: Vytváření prvků nákladů
+              href: ../financials/cost-accounting/tasks/create-cost-elements.md
+            - name: Dimenze objektu nákladů
+              href: ../financials/cost-accounting/cost-objects.md
+            - name: Vytváření objektů nákladů
+              href: ../financials/cost-accounting/tasks/create-cost-objects.md
+            - name: Mapování členů dimenze prvků nákladů na společnou sadu členů dimenze
+              href: ../financials/cost-accounting/map-cost-elements-dimension-members.md
+            - name: Namapování dimenze prvku nákladů
+              href: ../financials/cost-accounting/tasks/map-cost-element-dimension.md
+            - name: Hierarchie dimenzí
+              href: ../financials/cost-accounting/dimension-hierarchy.md
+            - name: Vytvoření organizační hierarchie vykazování
+              href: ../financials/cost-accounting/tasks/create-an-organization-report-hierarchy.md
+            - name: Přístupová práva kontrolora objektu nákladů
+              href: ../financials/cost-accounting/access-rights-cost-object-controller.md
+            - name: Konfigurace přístupových práv pro kontrolora objektu nákladů
+              href: ../financials/cost-accounting/tasks/configure-access-rights-cost-object-controller.md
+            - name: Definování jednotek řízení nákladů
+              href: ../financials/cost-accounting/tasks/define-cost-control-units.md
+            - name: Vytvoření hlavní knihy nákladového účetnictví
+              href: ../financials/cost-accounting/tasks/create-cost-accounting-ledger.md
+            - name: "Členy statistické dimenze a\_šablony poskytovatelů statistických měření"
+              href: ../financials/cost-accounting/statistical-measure-provider-template.md
+            - name: Základy přidělení
+              href: ../financials/cost-accounting/allocation-bases.md
+            - name: "Vytvoření zásad přidělování nákladů a\_jejich přiřazení jednotce řízení nákladů"
+              href: ../financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md
+            - name: "Vytvoření zásad chování nákladů a\_jejich přiřazení jednotce řízení nákladů"
+              href: ../financials/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md
+            - name: "Vytvoření zásad distribuce nákladů a\_jejich přiřazení jednotce řízení nákladů"
+              href: ../financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md
+            - name: Vytvoření zásad shrnutí nákladů
+              href: ../financials/cost-accounting/tasks/create-cost-rollup-policy.md
+            - name: Správa zdroje dat pro hlavní knihu nákladového účetnictví
+              href: ../financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md
+            - name: "Zpracování a\_sledování zdrojových dat"
+              href: ../financials/cost-accounting/tasks/process-trace-source-data.md
+            - name: Výpočet režijních nákladů
+              href: ../financials/cost-accounting/overhead-calculation.md
+            - name: Zásady shrnutí nákladů a výpočet režijních nákladů
+              href: ../financials/cost-accounting/cost-rollup.md
+            - name: Konfigurace pracovního prostoru řízení nákladů
+              href: ../financials/cost-accounting/cost-control-workspace.md
+            - name: Konfigurace parametrů pracovního prostoru řízení nákladů
+              href: ../financials/cost-accounting/tasks/configure-cost-control-workspace-parameters.md
+            - name: Pochopení zabezpečení přístupového seznamu a RLS v Microsoft Power BI
+              href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
+            - name: Použití balíčku obsahu pro výkaznictví v Microsoft Power BI
+              href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
+            - name: Použití pracovního prostoru řízení nákladů pro mobilní aplikaci Finance and Operations
+              href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
+        - name: Správa výdajů
+          href: ../financials/expense-management/expense-management.md
+          items:
+            - name: Plánování správy výdajů
+              href: ../financials/expense-management/plan-expense-management.md
+            - name: Parametry správy výdajů
+              href: ../financials/expense-management/Expense-Management-Parameters.md
+            - name: Pracovnímu prostor správy výdajů
+              href: ../financials/expense-management/expense-management-mobile-workspace.md
+            - name: Nastavit workflowy pro správu výdajů
+              href: ../financials/expense-management/expense-workflows.md
+            - name: Workflow správy výdajů
+              href: ../financials/expense-management/expense-workflow.md
+            - name: Import a udržování transakce platební karty
+              href: ../financials/expense-management/import-credit-card.md
+            - name: Distribuce na sestavě výdajů
+              href: ../financials/expense-management/expense-report-distributions.md
+            - name: Mezipodnikové výdaje
+              href: ../financials/expense-management/intercompany-expense.md
+            - name: Zásady výdajů
+              href: ../financials/expense-management/travel-expense-policies.md
+            - name: Zobrazit sestavu výdajů
+              href: ../financials/expense-management/view-expense-report.md
+            - name: Zaúčtovat sestavu výdajů
+              href: ../financials/expense-management/post-expense.md
+            - name: Sestavy výdajů a více schvalovatelů
+              href: ../financials/expense-management/expense-report-multiple-approvers.md
+            - name: Vratka DPH ve správě výdajů
+              href: ../financials/expense-management/VAT-expense-report.md
+            - name: Pravidla denních diet
+              href: ../financials/expense-management/per-diem.md
+            - name: Cestovní žádanky
+              href: ../financials/expense-management/travel-req.md
+            - name: Osobní výdaje ve vyúčtování výdajů
+              href: ../financials/expense-management/personal-expenses.md
         - name: Dlouhodobý majetek
           href: ../financials/fixed-assets/fixed-assets.md
           items:
@@ -916,158 +900,157 @@
                   href: ../financials/fixed-assets/tasks/split-fixed-asset.md
                 - name: Převedení dlouhodobého majetku
                   href: ../financials/fixed-assets/tasks/transfer-fixed-asset.md
-        - name: Správa výdajů
-          href: ../financials/expense-management/expense-management.md
+        - name: Hlavní kniha
+          href: ../financials/general-ledger/general-ledger.md
           items:
-            - name: Plánování správy výdajů
-              href: ../financials/expense-management/plan-expense-management.md
-            - name: Parametry správy výdajů
-              href: ../financials/expense-management/Expense-Management-Parameters.md
-            - name: Pracovnímu prostor správy výdajů
-              href: ../financials/expense-management/expense-management-mobile-workspace.md
-            - name: Nastavit workflowy pro správu výdajů
-              href: ../financials/expense-management/expense-workflows.md
-            - name: Workflow správy výdajů
-              href: ../financials/expense-management/expense-workflow.md
-            - name: Import a udržování transakce platební karty
-              href: ../financials/expense-management/import-credit-card.md
-            - name: Distribuce na sestavě výdajů
-              href: ../financials/expense-management/expense-report-distributions.md
-            - name: Mezipodnikové výdaje
-              href: ../financials/expense-management/intercompany-expense.md
-            - name: Zásady výdajů
-              href: ../financials/expense-management/travel-expense-policies.md
-            - name: Zobrazit sestavu výdajů
-              href: ../financials/expense-management/view-expense-report.md
-            - name: Zaúčtovat sestavu výdajů
-              href: ../financials/expense-management/post-expense.md
-            - name: Sestavy výdajů a více schvalovatelů
-              href: ../financials/expense-management/expense-report-multiple-approvers.md
-            - name: Vratka DPH ve správě výdajů
-              href: ../financials/expense-management/VAT-expense-report.md
-            - name: Pravidla denních diet
-              href: ../financials/expense-management/per-diem.md
-            - name: Cestovní žádanky
-              href: ../financials/expense-management/travel-req.md
-            - name: Osobní výdaje ve vyúčtování výdajů
-              href: ../financials/expense-management/personal-expenses.md
-        - name: Rozpočtování
-          href: ../financials/budgeting/budgeting-overview.md
-          items:
-            - name: 'Přehled plánování rozpočtu '
-              href: ../financials/budgeting/budget-planning-overview-configuration.md
-            - name: 'Přehled řízení rozpočtu '
-              href: ../financials/budgeting/budget-control-overview-configuration.md
-            - name: 'Přehled rozpočtování  '
-              href: ../financials/budgeting/basic-budgeting-overview-configuration.md
-            - name: Prognóza pozice
-              href: ../financials/budgeting/position-forecasting.md
-            - name: Dokumenty odůvodnění plánování rozpočtu
-              href: ../financials/budgeting/budget-planning-justification-docs.md
-            - name: Vytváření rozpočtů z účtů transakcí a souhrnných účtů
-              href: ../financials/budgeting/create-budget-transaction-accounts-total-accounts.md
-            - name: Šablony plánování rozpočtu pro Excel
-              href: ../financials/budgeting/budget-planning-excel-templates.md
-            - name: Odstraňování problémů s rozpočtováním pozice
-              href: ../financials/budgeting/position-budgeting-set-up-issues.md
-            - name: Plánování rozpočtu
-              href: ../financials/budgeting/budget-plan.md
-            - name: Přidělení dat pro plánování rozpočtu
-              href: ../financials/budgeting/budget-planning-data-allocation.md
-            - name: Integrace plánování rozpočtu s jinými moduly
-              href: ../financials/budgeting/budget-planning-integration-other-modules.md
-        - name: Vykazování
-          href: ../financials/general-ledger/financial-reporting-getting-started.md
-          items:
-            - name: Finanční sestavy rozvah
-              href: ../financials/general-ledger/balance-sheet-financial-reports.md
-            - name: Generování finanční sestavu
-              href: ../dev-itpro/analytics/generate-financial-report.md?toc=/fin-and-ops/toc.json
-            - name: Finanční sestava výpisu příjmů
-              href: ../financials/general-ledger/income-statement-financial-report.md
-            - name: Finanční sestavy rozvahy
-              href: ../financials/general-ledger/trial-balance-financial-reports.md
-            - name: Zobrazit finanční sestavy
-              href: ../financials/general-ledger/view-financial-reports.md
-            - name: Návrhář sestav
-              href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
-        - name: Nákladové účetnictví
-          href: ../financials/cost-accounting/cost-accounting-home-page.md
-          items:
-            - name: Terminologie týkající se účtování nákladů
-              href: ../financials/cost-accounting/terms-cost-accounting.md
-            - name: 'Fiskální kalendáře, fiskální roky a období'
-              href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
-            - name: Finanční dimenze
-              href: ../financials/general-ledger/financial-dimensions.md
-            - name: Účetní struktury
-              href: ../financials/general-ledger/Default-dimensions.md
-            - name: Vytvoření účetních struktur
-              href: ../financials/general-ledger/tasks/create-account-structures.md
-            - name: Přehled rozpočtování
-              href: ../financials/budgeting/basic-budgeting-overview-configuration.md
-            - name: Vytvoření dimenzí a import členů dimenze
-              href: ../financials/cost-accounting/cost-dimension.md
-            - name: Dimenze prvku nákladů
-              href: ../financials/cost-accounting/cost-elements.md
-            - name: Vytváření prvků nákladů
-              href: ../financials/cost-accounting/tasks/create-cost-elements.md
-            - name: Dimenze objektu nákladů
-              href: ../financials/cost-accounting/cost-objects.md
-            - name: Vytváření objektů nákladů
-              href: ../financials/cost-accounting/tasks/create-cost-objects.md
-            - name: Mapování členů dimenze prvků nákladů na společnou sadu členů dimenze
-              href: ../financials/cost-accounting/map-cost-elements-dimension-members.md
-            - name: Namapování dimenze prvku nákladů
-              href: ../financials/cost-accounting/tasks/map-cost-element-dimension.md
-            - name: Hierarchie dimenzí
-              href: ../financials/cost-accounting/dimension-hierarchy.md
-            - name: Vytvoření organizační hierarchie vykazování
-              href: ../financials/cost-accounting/tasks/create-an-organization-report-hierarchy.md
-            - name: Přístupová práva kontrolora objektu nákladů
-              href: ../financials/cost-accounting/access-rights-cost-object-controller.md
-            - name: Konfigurace přístupových práv pro kontrolora objektu nákladů
-              href: ../financials/cost-accounting/tasks/configure-access-rights-cost-object-controller.md
-            - name: Definování jednotek řízení nákladů
-              href: ../financials/cost-accounting/tasks/define-cost-control-units.md
-            - name: Vytvoření hlavní knihy nákladového účetnictví
-              href: ../financials/cost-accounting/tasks/create-cost-accounting-ledger.md
-            - name: "Členy statistické dimenze a\_šablony poskytovatelů statistických měření"
-              href: ../financials/cost-accounting/statistical-measure-provider-template.md
-            - name: Základy přidělení
-              href: ../financials/cost-accounting/allocation-bases.md
-            - name: "Vytvoření zásad přidělování nákladů a\_jejich přiřazení jednotce řízení nákladů"
-              href: ../financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md
-            - name: "Vytvoření zásad chování nákladů a\_jejich přiřazení jednotce řízení nákladů"
-              href: ../financials/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md
-            - name: "Vytvoření zásad distribuce nákladů a\_jejich přiřazení jednotce řízení nákladů"
-              href: ../financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md
-            - name: Vytvoření zásad shrnutí nákladů
-              href: ../financials/cost-accounting/tasks/create-cost-rollup-policy.md
-            - name: Správa zdroje dat pro hlavní knihu nákladového účetnictví
-              href: ../financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md
-            - name: "Zpracování a\_sledování zdrojových dat"
-              href: ../financials/cost-accounting/tasks/process-trace-source-data.md
-            - name: Výpočet režijních nákladů
-              href: ../financials/cost-accounting/overhead-calculation.md
-            - name: Zásady shrnutí nákladů a výpočet režijních nákladů
-              href: ../financials/cost-accounting/cost-rollup.md
-            - name: Konfigurace pracovního prostoru řízení nákladů
-              href: ../financials/cost-accounting/cost-control-workspace.md
-            - name: Konfigurace parametrů pracovního prostoru řízení nákladů
-              href: ../financials/cost-accounting/tasks/configure-cost-control-workspace-parameters.md
-            - name: Pochopení zabezpečení přístupového seznamu a RLS v Microsoft Power BI
-              href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
-            - name: Použití balíčku obsahu pro výkaznictví v Microsoft Power BI
-              href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
-            - name: Použití pracovního prostoru řízení nákladů pro mobilní aplikaci Finance and Operations
-              href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
+            - name: Účty
+              items:
+                - name: Přehled časově rozlišených částek
+                  href: ../financials/general-ledger/accruals-overview.md
+                - name: Pravidla eliminace
+                  href: ../financials/general-ledger/elimination-rules.md
+                - name: Kombinace dimenzí a účtů
+                  href: ../financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
+                - name: Vyrovnané deníky pro mezijednotkové účetnictví
+                  href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
+                - name: Definice účtování
+                  href: ../financials/general-ledger/posting-definitions.md
+                - name: 'Příklady definice účtování '
+                  href: ../financials/general-ledger/example-posting-definitions.md
+                - name: Účetní zůstatky hlavní knihy
+                  href: ../financials/general-ledger/general-ledger-account-balances.md
+                - name: Definování finančních dimenzí
+                  href: ../financials/general-ledger/tasks/define-financial-dimensions.md
+                - name: Udržování výchozích šablon finančních dimenzí
+                  href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
+                - name: Vytvoření účetních struktur
+                  href: ../financials/general-ledger/tasks/create-account-structures.md
+                - name: Vytvoření schémat časového rozlišení
+                  href: ../financials/general-ledger/tasks/create-accrual-schemes.md
+                - name: "Vytvoření konsolidačních skupin a\_dalších konsolidačních účtů"
+                  href: ../financials/general-ledger/tasks/create-consolidation-groups.md
+                - name: Typy hlavního účtu
+                  href: ../financials/general-ledger/main-account-types.md
+                - name: Vytvoření hlavního účtu
+                  href: ../financials/general-ledger/tasks/create-main-account.md
+                - name: Plánování účetní osnovy
+                  href: ../financials/general-ledger/plan-chart-of-accounts.md
+                - name: Vyrovnání transakcí mezi účty hlavní knihy
+                  href: ../financials/general-ledger/tasks/settle-transactions-between-ledger-accounts.md
+                - name: Nastavení aliasu účtu hlavní knihy
+                  href: ../financials/general-ledger/tasks/set-up-ledger-account-alias.md
+                - name: Nastavení kategorií hlavního účtu
+                  href: ../financials/general-ledger/tasks/set-up-main-account-categories.md
+                - name: Průzkumník zdroje účetnictví
+                  href: ../financials/accounts-payable/accounting-source-explorer.md
+                - name: Rozúčtování
+                  href: ../financials/accounts-payable/accounting-distributions.md
+                - name: Zpracování přidělení
+                  href: ../financials/general-ledger/process-allocations.md
+                - name: Finanční dimenze
+                  href: ../financials/general-ledger/financial-dimensions.md
+                - name: Převod měn účetnictví nebo vykazování
+                  href: ../financials/general-ledger/convert-accounting-reporting-currencies.md
+                - name: Konsolidace skupin účtů a účtů
+                  href: ../financials/budgeting/consolidation-account-groups-consolidation-accounts.md
+                - name: Přehled konsolidace a vyloučení
+                  href: ../financials/budgeting/consolidation-elimination-overview.md
+                - name: 'Fiskální kalendáře, fiskální roky a období'
+                  href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
+                - name: Konfigurovat účetní struktury
+                  href: ../financials/general-ledger/configure-account-structures.md
+            - name: Deníky a hlavní knihy
+              items:
+                - name: Zpracování hlavního deníku
+                  href: ../financials/general-ledger/general-journal-processing.md
+                - name: Zaúčtování periodických deníků
+                  href: ../financials/general-ledger/tasks/post-periodic-journals.md
+                - name: Zpracování deníku přidělení hlavní knihy
+                  href: ../financials/general-ledger/tasks/process-ledger-allocation-journal.md
+                - name: Nastavení mezipodnikového účetnictví
+                  href: ../financials/general-ledger/intercompany-accounting-setup.md
+                - name: Pravidla přidělení hlavní knihy
+                  href: ../financials/general-ledger/ledger-allocation-rules.md
+                - name: Vytvoření rozšířených pravidel pro deníky
+                  href: ../financials/general-ledger/tasks/create-advanced-rules-journals.md
+                - name: "Vytvoření a\_přiřazení struktur rozšířeného pravidla"
+                  href: ../financials/general-ledger/tasks/create-assign-advanced-rule-structures.md
+                - name: Typy deníku hlavní knihy
+                  href: ../financials/general-ledger/ledger-journal-types.md
+                - name: "Vytváření a\_ověřování deníků"
+                  href: ../financials/general-ledger/tasks/create-validate-journals.md
+                - name: Zobrazení položek nebo transakcí deníku
+                  href: ../financials/general-ledger/tasks/view-journal-entries-or-transactions.md
+                - name: "Zobrazení souvisejícího mezipodnikového dokladu z\_deníku"
+                  href: ../financials/general-ledger/tasks/view-related-intercompany-voucher-journal.md
+                - name: Vytvoření položky deníku pomocí šablony
+                  href: ../financials/general-ledger/tasks/create-journal-entry-template.md
+                - name: Vytvoření transakcí časového rozlišení hlavní knihy
+                  href: ../financials/general-ledger/tasks/create-ledger-accrual-transactions.md
+                - name: Publikování řádek deníku a dokumentů z Excelu
+                  href: ../financials/general-ledger/open-lines-excel-journals-documents.md
+                - name: Zobrazení položek a transakcí
+                  href: ../financials/general-ledger/view-journal-entries-transactions.md
+                - name: Zapsání zaúčtovaných položek deníku do deníku
+                  href: ../financials/general-ledger/tasks/journalize-posted-journal-entries.md
+                - name: Přecenění měny v konsolidační společnosti
+                  href: ../financials/general-ledger/currency-revaluation-consolidation-company.md
+                - name: Přecenění cizí měny pro hlavní knihu
+                  href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
+                - name: Importovat směnné kurzy měn
+                  href: ../financials/general-ledger/import-currency-exchange-rates.md
+            - name: Závěrka období
+              items:
+                - name: Zavření hlavní knihy na konci období
+                  href: ../financials/general-ledger/close-general-ledger-at-period-end.md
+                - name: Pracovní prostor uzavření finančního období
+                  href: ../financials/general-ledger/financial-period-close-workspace.md
+                - name: Roční uzávěrka
+                  href: ../financials/general-ledger/year-end-close.md
+                - name: Uzavření fiskálního roku
+                  href: ../financials/general-ledger/tasks/close-fiscal-year.md
+                - name: Hromadné uzavření finančního období
+                  href: ../financials/general-ledger/tasks/mass-financial-period-close.md
+            - name: DPH
+              items:
+                - name: Přehled DPH
+                  href: ../financials/general-ledger/indirect-taxes-overview.md
+                - name: Sazby daně z prodeje na základě základu marže a metod výpočtu
+                  href: ../financials/general-ledger/marginal-base-field.md
+                - name: Platby DPH a pravidla zaokrouhlení
+                  href: ../financials/general-ledger/round-sales-tax-payments.md
+                - name: Metody výpočtu daně z prodeje v poli Zdroj
+                  href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+                - name: Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
+                  href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                - name: "Výpočet a\_úprava DPH na faktuře dodavatele"
+                  href: ../financials/general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                - name: Vytvoření platby DPH
+                  href: ../financials/general-ledger/tasks/create-sales-tax-payment.md
+                - name: "Vytváření transakcí DPH v\_dokladech"
+                  href: ../financials/general-ledger/tasks/create-sales-tax-transactions-documents.md
+                - name: Nastavení účetních skupin hlavní knihy pro DPH
+                  href: ../financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+                - name: Nastavení finančních úřadů
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-authorities.md
+                - name: Nastavit kódy DPH
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-codes.md
+                - name: "Nastavení skupin DPH a\_skupin DPH položky"
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+                - name: Nastavení kódů vykazování DPH
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                - name: Nastavení období vyrovnání DPH
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+                - name: Nastavení srážkové daně
+                  href: ../financials/general-ledger/tasks/set-up-withholding-tax.md
+                - name: Zobrazení zaúčtovaných transakcí DPH
+                  href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md
         - name: Veřejný sektor
           href: ../financials/public-sector/public-sector-functionality.md
           items:
             - name: Plán pro funkci veřejného sektoru
               href: ../financials/public-sector/plan-public-sector-functionality.md
-            - name: Účty k uhrazení ve veřejném sektoru
+            - name: Závazky ve veřejném sektoru
               href: ../financials/public-sector/accounts-payable-public-sector.md
               items:
                 - name: Kódy nákupní objednávky ve veřejném sektoru
@@ -1149,31 +1132,41 @@
                   href: ../financials/public-sector/tasks/set-up-fund-public-sector.md
                 - name: Nastavení klasifikace nákupních smluv ve veřejném sektoru
                   href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
-    - name: Finanční výkaznictví
-      href: ../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json
-      items:
-        - name: Generovat finanční sestavu
-          href: ../dev-itpro/analytics/generate-financial-report.md?toc=/fin-and-ops/toc.json
-        - name: Součásti finančních sestav
-          href: ../dev-itpro/analytics/financial-report-components.md?toc=/fin-and-ops/toc.json
-        - name: Návrhář sestav
-          href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
-        - name: Uživatelské předvolby
-          href: ../dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/fin-and-ops/toc.json
-        - name: Rozšířené možnosti formátování
-          href: ../dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/fin-and-ops/toc.json
-        - name: Organizování součástí sestav
-          href: ../dev-itpro/analytics/organize-components-report-designer.md?toc=/fin-and-ops/toc.json
-        - name: Definice sestavy
-          href: ../dev-itpro/analytics/design-financial-report-definitions.md?toc=/fin-and-ops/toc.json
-        - name: Definice řádku
-          href: ../dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/fin-and-ops/toc.json
-        - name: Definice sloupce
-          href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
-        - name: Úprava buněk definice řádku
-          href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
-        - name: Obnovení datového tržiště finančního vykazování po obnovení databáze
-          href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
+        - name: Finanční výkaznictví
+          href: ../financials/general-ledger/financial-reporting-getting-started.md
+          items:
+            - name: Přehled finančního výkaznictví
+              href: ../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json
+            - name: Součásti finančních sestav
+              href: ../dev-itpro/analytics/financial-report-components.md?toc=/fin-and-ops/toc.json
+            - name: Finanční sestavy rozvah
+              href: ../financials/general-ledger/balance-sheet-financial-reports.md
+            - name: Generovat finanční sestavu
+              href: ../dev-itpro/analytics/generate-financial-report.md?toc=/fin-and-ops/toc.json
+            - name: Finanční sestava výpisu příjmů
+              href: ../financials/general-ledger/income-statement-financial-report.md
+            - name: Finanční sestavy předvahy
+              href: ../financials/general-ledger/trial-balance-financial-reports.md
+            - name: Zobrazit finanční sestavy
+              href: ../financials/general-ledger/view-financial-reports.md
+            - name: Návrhář sestav
+              href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
+            - name: Uživatelské předvolby
+              href: ../dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/fin-and-ops/toc.json
+            - name: Rozšířené možnosti formátování
+              href: ../dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/fin-and-ops/toc.json
+            - name: Organizování součástí sestav
+              href: ../dev-itpro/analytics/organize-components-report-designer.md?toc=/fin-and-ops/toc.json
+            - name: Definice sestavy
+              href: ../dev-itpro/analytics/design-financial-report-definitions.md?toc=/fin-and-ops/toc.json
+            - name: Definice řádku
+              href: ../dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/fin-and-ops/toc.json
+            - name: Definice sloupce
+              href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
+            - name: Úprava buněk definice řádku
+              href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
+            - name: Obnovení datového tržiště finančního vykazování po obnovení databáze
+              href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
     - name: Lokalizace a funkce týkající se předpisů
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
@@ -1660,6 +1653,7 @@
                 - name: Roční uzávěrka
                   href: ../financials/localizations/emea-cze-hun-year-end.md
             - name: Dánsko
+              href: ../financials/localizations/denmark.md
               items:
                 - name: "Přiřazení formátu platebního dokladu k\_účtu odběratele"
                   href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
@@ -1691,6 +1685,7 @@
                 - name: Výkaz DPH
                   href: ../financials/localizations/emea-est-vat-statement-details.md
             - name: Francie
+              href: ../financials/localizations/france.md
               items:
                 - name: Veřejný sektor
                   items:
@@ -1767,6 +1762,7 @@
                 - name: Nastavení elektronického daňového přiznání
                   href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
             - name: Maďarsko
+              href: ../financials/localizations/hungary.md
               items:
                 - name: Výpočet směnného kurzu
                   href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
@@ -1781,6 +1777,7 @@
                 - name: Roční uzávěrka
                   href: ../financials/localizations/emea-cze-hun-year-end.md
             - name: Island
+              href: ../financials/localizations/iceland.md
               items:
                 - name: "Vytvoření účtu dodavatele a\_připojení kategorie prohlášení k\_faktuře"
                   href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
@@ -1791,6 +1788,7 @@
                 - name: "Aktualizace prohlášení k\_faktuře dodavatele a\_vygenerování sestavy"
                   href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
             - name: Itálie
+              href: ../financials/localizations/italy.md
               items:
                 - name: Podrobnosti výpisů DPH
                   href: ../financials/localizations/emea-ita-vat-statements-details.md
@@ -1813,6 +1811,7 @@
                 - name: Srážková daň
                   href: ../financials/localizations/emea-ita-withholding-tax.md
             - name: Lotyšsko
+              href: ../financials/localizations/latvia.md
               items:
                 - name: Účtování dlouhodobého majetku
                   href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
@@ -1825,6 +1824,7 @@
                 - name: Podrobnosti výpisu DPH
                   href: ../financials/localizations/emea-lva-vat-statement-details.md
             - name: Litva
+              href: ../financials/localizations/lithuania.md
               items:
                 - name: Výkaz dlouhodobého majetku (sestava)
                   href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
@@ -1835,12 +1835,14 @@
                 - name: Podrobnosti výpisu DPH
                   href: ../financials/localizations/emea-ltu-vat-statement-details.md
             - name: Nizozemsko
+              href: ../financials/localizations/netherlands.md
               items:
                 - name: Elektronické daňové přiznání (EVAT)
                   href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Integrace Semansys XBRL
                   href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
             - name: Norsko
+              href: ../financials/localizations/norway.md
               items:
                 - name: "Formáty plateb odběratelů a\_dodavatelů"
                   href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
@@ -1855,6 +1857,7 @@
                 - name: Pokyny k nasazení registračních pokladen
                   href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
             - name: Polsko
+              href: ../financials/localizations/poland.md
               items:
                 - name: Výpočet slev řádku z jednotkové ceny
                   href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
@@ -1877,6 +1880,7 @@
                 - name: Výkaz obratu
                   href: ../financials/localizations/emea-pol-turnover-balances-statement.md
             - name: Španělsko
+              href: ../financials/localizations/spain.md
               items:
                 - name: Použití hotovostních slev na faktuře
                   href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
@@ -1905,6 +1909,7 @@
                 - name: Speciální záznamy a počáteční stavy
                   href: ../financials/localizations/emea-esp-opening-sheets-spain.md
             - name: Švédsko
+              href: ../financials/localizations/sweden.md
               items:
                 - name: Export finančních informací pro auditory ve Švédsku
                   href: ../financials/localizations/emea-swe-sie-standard-report.md
@@ -1913,10 +1918,12 @@
                 - name: Registrační pokladny
                   href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
             - name: Švýcarsko
+              href: ../financials/localizations/switzerland.md
               items:
                 - name: Import plateb odběratelů v ESR
                   href: ../financials/localizations/emea-che-esr-customer-payments-import.md
             - name: Velká Británie
+              href: ../financials/localizations/united-kingdom.md
               items:
                 - name: 'Schéma pro obor stavebnictví '
                   href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
@@ -3994,5 +4001,3 @@
   href: ../dev-itpro/toc.yml
 - name: Dynamics 365 for Retail
   href: ../retail/toc.yml
-- name: Dynamics 365 for Talent
-  href: ../talent/toc.yml

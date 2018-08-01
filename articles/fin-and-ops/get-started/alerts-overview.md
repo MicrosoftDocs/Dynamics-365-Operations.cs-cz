@@ -3,7 +3,7 @@ title: "Přehled výstrah"
 description: "Toto téma poskytuje obecné informace o výstrahách v aplikaci Microsoft Dynamics 365 for Finance and Operations. Výstrahy lze používat k informování o událostech, které mají být sledovány během pracovního dne."
 author: tjvass
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,8 +27,6 @@ ms.lasthandoff: 04/13/2018
 # <a name="alerts-overview"></a>Přehled výstrah
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 ## <a name="about-alerts"></a>O výstrahách
 Výstrahy představují systém oznámení kritické události v aplikaci Microsoft Dynamics 365 for Finance and Operations. Výstrahy lze používat k informování o událostech, které mají být sledovány během pracovního dne. Můžete snadno vytvořit vlastní pravidla výstrah, abyste byli upozorněni na zpožděné dodávky, smazané objednávky, změny cen nebo jiné události, na které musíte reagovat.

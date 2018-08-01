@@ -3,7 +3,7 @@ title: "Synchronizace produktů přímo z aplikace Finance and Operations na pr
 description: "Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci produktů z aplikace Microsoft Dynamics 365 for Finance and Operations do aplikace Microsoft Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3ae50372edcd473f2288f8172b71eac33e24b636
+ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
+ms.openlocfilehash: 66506953790fd77c2105591d3211c76991eced08
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -78,7 +78,8 @@ Pole **Je externě spravován** pomáhá zajistit,, že se do aplikaci Finance a
 Externě spravované produkty jsou automaticky přidány k prvnímu platnému ceníku se stejnou měnou. Ceníky jsou uspořádány abecedně podle názvu. Jako cena v ceníku se používá prodejní cena produktu z aplikace Finance and Operations. Proto musí být v aplikaci Sales ceník pro každou prodejní měnu produktu v aplikaci Finance and Operations. Měna pro uvolněné prodejné produkty je nastavena na zúčtovací měnu v právnické osobě, z níž je exportován produkt.
 
 > [!NOTE]
-> Synchronizaci produktů se nezdaří, pokud neexistuje ceník se shodnou měnou.
+> - Synchronizaci produktů se nezdaří, pokud neexistuje ceník se shodnou měnou.
+> - Můžete kontrolovat použitý ceník s integrací pomocí mapování pricelevelid.name [výchozí ceník (název)] v projektu integrace dat. Vstup musí být pouze malými písmeny. Například výchozí hodnota pro ceník v aplikaci Sales s názvem 'Standardní' bude: Cílové pole: pricelevelid.name [Výchozí ceník (název)] a typ typu: [{"transformType": "Default", "defaultValue": "standard"}].
 
 ## <a name="preconditions-and-mapping-setup"></a>Nastavení mapování a předpokladů
 

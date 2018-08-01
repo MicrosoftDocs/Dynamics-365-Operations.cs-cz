@@ -1,16 +1,16 @@
 ---
 title: "Plánování rozpočtu"
-description: "Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Microsoft Dynamics 365 for Finance and Operations v oblasti Plánování rozpočtu. Tento seminář ukazuje příklad rychlé konfigurace modulu plánování rozpočtu a znázorňuje, jak lze provést plánování rozpočtu pomocí této konfigurace.  Tento seminář se zaměří na následujících obchodní procesy nebo úkoly -    - Vytvoření organizační hierarchie pro plánování rozpočtu a konfiguraci zabezpečení pro uživatele   - Definování scénářů plánu rozpočtu, sloupců plánu rozpočtu, rozvržení a šablon aplikace Excel   - Vytvoření a aktivace procesu plánování rozpočtu   - Vytvoření dokumentu plánu rozpočtu za použití skutečných hodnot z hlavní knihy   - Použití přidělení k úpravě dat dokumentu plánu rozpočtu   - Úprava dat dokumentu plánu rozpočtu v aplikaci Excel"
-author: twheeloc
+description: "Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Microsoft Dynamics 365 for Finance and Operations v oblasti Plánování rozpočtu. Tento seminář ukazuje příklad rychlé konfigurace modulu plánování rozpočtu a znázorňuje, jak lze provést plánování rozpočtu pomocí této konfigurace."
+author: ShylaThompson
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 59781da7681ece1c0c013f59e0d1a5d7efc51c3a
+ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
+ms.openlocfilehash: ac2e98dbbd45becf06e28b6ea4eb9d0ec15e30f6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -30,7 +30,13 @@ ms.lasthandoff: 03/26/2018
 
 [!include [banner](../includes/banner.md)]
 
-Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Microsoft Dynamics 365 for Finance and Operations v oblasti Plánování rozpočtu. Tento seminář ukazuje příklad rychlé konfigurace modulu plánování rozpočtu a znázorňuje, jak lze provést plánování rozpočtu pomocí této konfigurace.  Tento seminář se zaměří na následujících obchodní procesy nebo úkoly -    - Vytvoření organizační hierarchie pro plánování rozpočtu a konfiguraci zabezpečení pro uživatele   - Definování scénářů plánu rozpočtu, sloupců plánu rozpočtu, rozvržení a šablon aplikace Excel   - Vytvoření a aktivace procesu plánování rozpočtu   - Vytvoření dokumentu plánu rozpočtu za použití skutečných hodnot z hlavní knihy   - Použití přidělení k úpravě dat dokumentu plánu rozpočtu   - Úprava dat dokumentu plánu rozpočtu v aplikaci Excel 
+Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Microsoft Dynamics 365 for Finance and Operations v oblasti Plánování rozpočtu. Tento seminář ukazuje příklad rychlé konfigurace modulu plánování rozpočtu a znázorňuje, jak lze provést plánování rozpočtu pomocí této konfigurace.  Tento seminář se zaměřuje na následující obchodní procesy nebo úlohy:
+- Vytvoření organizační hierarchie pro plánování rozpočtu a konfigurace zabezpečení uživatele
+- Definování scénářů plánů rozpočtu, sloupců plánu rozpočtu, rozvržení a šablon aplikace Excel
+- Vytvoření a aktivace procesu plánování rozpočtu
+- Vytváření dokument plánu rozpočtu za použití skutečných hodnot z hlavní knihy
+- Použití přidělení pro úpravu dat dokumentu plánu rozpočtu
+- Úpravy dat dokumentu plánu rozpočtu v aplikaci Excel 
 
 <a name="prerequisites"></a>Požadavky 
 ------------------
@@ -104,8 +110,6 @@ Plánování rozpočtu používá zvláštní zásady zabezpečení pro konfigur
 2.5. Zvolte možnost „Udělit přístup ke specifickým organizacím”. Vyberte organizační hierarchii vytvořenou v prvním kroku. Vyberte finanční uzel a klikněte na tlačítko Udělit přístup s podřízenými organizacemi 
 
 ***Důležité!*** *Ujistěte se, že jste v kontextu právnické osoby DEMF při provádění tohoto úkolu, protože zabezpečení organizace se aplikuje za právnickou osobu* 
-
-[![Udělení přístupu](./media/screenshot14.png)](./media/screenshot14.png)
 
 ### <a name="task-3-create-scenarios"></a>Úkol 3: Vytvoření scénáře
 3.1. Přejděte do části Rozpočtování&gt;Nastavení &gt; Plánování rozpočtu &gt; Konfigurace plánování rozpočtu. Na stránce Scénáře si všimněte scénářů, které budeme později v tomto semináři používat: Skutečné hodnoty předchozího roku a Rozpočtováno 

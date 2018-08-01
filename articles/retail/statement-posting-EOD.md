@@ -17,10 +17,10 @@ ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 86b301833f3655f7172e2d38ddca4239be71760c
-ms.openlocfilehash: bcb4af426e5967643a1c438bb19495576ce51b63
+ms.sourcegitcommit: 4961ee7fcc56af0646e421c9e040e2129cc322c4
+ms.openlocfilehash: e6d6ede65764c0b35c9ce0985af0d9f2cd6653c0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/12/2018
 
 ---
 
@@ -58,6 +58,8 @@ Jako součást vylepšení funkce zaúčtování výkazu byly zavedeny tři nov�
 - **Je vyžadována deaktivace inventur** – při nastavení této možnosti na **Ano** proces zaúčtování výkazů pokračuje i v případě, že rozdíl mezi vypočítanou částkou a částkou transakce na výpisu je mimo prahovou hodnotu, která je definovaná v pevné záložce pro maloobchod **Výkaz**.
 
 Kromě toho bylo zavedeno pole **maximální počet paralelních výkazů** byl zaveden pole na pevné záložce **dávkové zpracování**. Toto pole definuje počet dávkových úloh, které by měly být spuštěny ve stejné době. V současné době musíte ručně nastavit hodnotu tohoto pole.
+
+S novým procesem zaúčtování je rovněž nutné definovat **Produkt dárkového poukazu** na pevné záložce **Dárkový poukaz** na kartě **Zaúčtování** stránky **Parametry maloobchodu**. To platí i v případě, že organizace nepoužívá žádné dárkové poukazy. 
 
 Všimněte si, že všechna nastavení a parametry související se zaúčtováním výkazu, která jsou definována v seznam maloobchodních obchodech a na stránce **Parametry Maloobchodu**, se vztahuje na zaúčtování funkci zlepšeného výkazu.
 
