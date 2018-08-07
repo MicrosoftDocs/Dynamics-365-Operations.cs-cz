@@ -1,7 +1,7 @@
 ---
 title: "Přehled převodů SEPA"
 description: "Tento článek poskytuje obecné informace o převodech kreditů ISO 20022, které zahrnují převody kreditů v jednotné oblasti pro platby v eurech a jakékoli další elektronické platby pro dodavatele. Převod SEPA je specifický typ platby v eurech od jedné společnosti nebo osoby pro jinou společnost nebo osobu. Toto téma také vysvětluje, jak nastavit a převést soubor platby platebního převodu."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

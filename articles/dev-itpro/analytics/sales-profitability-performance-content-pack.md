@@ -1,7 +1,7 @@
 ---
 title: "Obsah výkonu prodeje a ziskovosti Power BI"
 description: "Toto téma popisuje, co je součástí obsahu Power BI Prodej a ziskovost. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které jsou použity k sestavení obsahu."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article

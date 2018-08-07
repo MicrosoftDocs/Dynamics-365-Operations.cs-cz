@@ -1,7 +1,7 @@
 ---
 title: "Rozšířené odsouhlasení bankovního výpisu MT940 Import – Aktualizace kombinované datové entity"
 description: "Pořadové číslo musí být přidáno k importu bankovního výpisu entity pro podporu MT940 formátu."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, Developer
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 221594
 ms.assetid: dddc99ae-56ae-48df-856a-131079c17dcb

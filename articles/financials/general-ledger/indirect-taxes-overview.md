@@ -1,7 +1,7 @@
 ---
 title: "Přehled DPH"
 description: "Toto téma podává přehled o systému DPH. Vysvětluje prvky nastavení DPH a jejich společné fungování."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations, Retail
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d

@@ -1,7 +1,7 @@
 --- 
 title: "Nastavení skupin DPH a skupin DPH položky"
 description: "Tento záznam úkolu vás provede nastavením DPH a skupin prodejní daně položky."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/10/2015
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: vstehman
