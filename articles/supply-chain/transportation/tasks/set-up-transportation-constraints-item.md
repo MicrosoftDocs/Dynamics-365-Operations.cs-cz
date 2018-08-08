@@ -1,7 +1,7 @@
 --- 
 title: "Nastavení omezení přepravy pro položku"
 description: "Tento postup nastaví omezení přepravy a zabrání přepravě vybrané položky pomocí vybraného centra."
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/07/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 92ad8afe8eb2943377a1a130f466b0dd833b8015
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: c7a160ca2ba3de16fe2aefc736f6f1e0bbbd5af0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a><span data-ttu-id="06d70-103">Nastavení omezení přepravy pro položku</span><span class="sxs-lookup"><span data-stu-id="06d70-103">Set up transportation constraints for an item</span></span>

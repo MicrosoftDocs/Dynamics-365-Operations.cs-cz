@@ -1,7 +1,7 @@
 --- 
 title: "Nastavení směrnice skladového místa pro vyskladnění v rámci nákupní objednávky"
 description: "Tento postup popisuje nastavení jednoduché směrnice skladového místa."
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c868265b7a5b5e057b3f1354a81a472f1d6a5d4d
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 9ca4b3c2598a268c065011daff31296521faa918
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a><span data-ttu-id="5860e-103">Nastavení směrnice skladového místa pro vyskladnění v rámci nákupní objednávky</span><span class="sxs-lookup"><span data-stu-id="5860e-103">Set up a location directive for purchase order put-away</span></span>

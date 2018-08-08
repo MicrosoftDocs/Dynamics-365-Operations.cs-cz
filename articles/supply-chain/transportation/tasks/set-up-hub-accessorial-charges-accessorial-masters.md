@@ -1,7 +1,7 @@
 --- 
 title: "Nastavení nákladů na dodatečnou službu centra a hlavních dodatečných služeb"
 description: "Tento postup popisuje vytvoření hlavní dodatečnou služby pro centrum a použití této hlavní položky k vytvoření poplatků za dodatečnou službu centra."
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 61a506b3824fa220d052ca667199edac526c1cbc
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 9959c20f9a8fd07cbf0cfd76f7760b44d7b5cae1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="set-up-hub-accessorial-charges-and-accessorial-masters"></a><span data-ttu-id="7fd2b-103">Nastavení nákladů na dodatečnou službu centra a hlavních dodatečných služeb</span><span class="sxs-lookup"><span data-stu-id="7fd2b-103">Set up hub accessorial charges and accessorial masters</span></span>

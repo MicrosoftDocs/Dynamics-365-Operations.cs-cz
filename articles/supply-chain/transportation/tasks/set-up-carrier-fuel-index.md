@@ -1,7 +1,7 @@
 --- 
 title: "Nastavení indexu paliva dopravce"
 description: "Tato příručka popisuje vytváření oblast indexu paliva, indexu paliva a indexu paliva dopravce."
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3a6a02c2eca3cecc8b7519a5951a958aa5bc637b
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: b6f72de7ad54a2b2dc1bf40fd8cb86d8b055e2d1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="set-up-a-carrier-fuel-index"></a><span data-ttu-id="24f5f-103">Nastavení indexu paliva dopravce</span><span class="sxs-lookup"><span data-stu-id="24f5f-103">Set up a carrier fuel index</span></span>

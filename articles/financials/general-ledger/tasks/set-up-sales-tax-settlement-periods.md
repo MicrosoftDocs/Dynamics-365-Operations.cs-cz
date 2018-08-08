@@ -1,7 +1,7 @@
 --- 
 title: "Nastavit období vyrovnání DPH"
 description: "Období vyrovnání DPH obsahuje informace o intervalech období, pro které se musí DPH vykazovat a platit."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fcf4ebcb8a9c27961e250177d4254f28aaefc883
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: d30a3271114574d2776921fb31b360389a1b3466
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a><span data-ttu-id="29939-103">Nastavit období vyrovnání DPH</span><span class="sxs-lookup"><span data-stu-id="29939-103">Set up sales tax settlement periods</span></span>

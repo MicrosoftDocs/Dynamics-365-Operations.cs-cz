@@ -1,7 +1,7 @@
 --- 
 title: "Nastavení opakovaného přidělení zboží při krátkodobém vyskladnění"
 description: "Tato procedura ukazuje, jak umožnit pracovníkům skladu rychle najít alternativní umístění, pokud nejsou k dispozici dostatečné zásoby v umístění, do něhož byl nasměrován."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/14/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,10 +17,10 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: ed2be84abbdb7a04c6a87301da9a010eb5350969
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 99a4afb58f0c4beef818fd7c0a6a1837e00638d8
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="set-up-short-picking-item-reallocation"></a><span data-ttu-id="74dd7-103">Nastavení opakovaného přidělení zboží při krátkodobém vyskladnění</span><span class="sxs-lookup"><span data-stu-id="74dd7-103">Set up short picking item reallocation</span></span>
