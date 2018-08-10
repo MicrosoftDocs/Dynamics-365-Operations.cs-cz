@@ -1,7 +1,7 @@
 --- 
 title: "Vytváření transakcí DPH v dokladech"
 description: "DPH v dokumentech se vypočítá zadáním skupiny DPH a skupiny DPH položky na řádky dokladu."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: vstehman
