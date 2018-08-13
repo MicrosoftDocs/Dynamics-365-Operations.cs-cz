@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: af87f3f7c3fab9b6baecefbedcd855a764f31cbe
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -33,18 +33,18 @@ Toto téma popisuje, co je součástí obsahu **Analýza nákladového účetnic
 
 ## <a name="overview"></a>Přehled
 
-Obsah **Analýza nákladového účetnictví** v Power BI je určen pro kontrolory nákladů nebo jakoukoli osobu, která je odpovědná za provádění kontroly nákladů organizace. Zahrnuje klíčové metriky, jako jsou náklady, velikost a nákladové sazby podle skutečných nákladů, rozpočtových nákladů a nákladů pružného rozpočtu. Používá data transakce z modulu **Nákladové účetnictví** a poskytuje agregované zobrazení nákladů pro celou organizaci v jedné měně vykazování. Manažeři mohou data filtrovat podle objektů nákladů pro provádění kontroly nákladů jejich organizačních jednotek, a to i v případě, že organizace má několik právnických osob. 
+Obsah **Analýza nákladového účetnictví** v Power BI je určen pro kontrolory nákladů nebo jakoukoli osobu, která je odpovědná za provádění kontroly nákladů organizace. Zahrnuje klíčové metriky, jako jsou náklady, velikost a nákladové sazby podle skutečných nákladů, rozpočtových nákladů a nákladů pružného rozpočtu. Používá data transakce z modulu **Nákladové účetnictví** a poskytuje agregované zobrazení nákladů pro celou organizaci v jedné měně vykazování. Manažeři mohou data filtrovat podle objektů nákladů pro provádění kontroly nákladů jejich organizačních jednotek, a to i v případě, že organizace má několik právnických osob.
 
-Vzhledem k tomu, že obsah **Analýza nákladového účetnictví** zvýrazňuje rozdíly mezi skutečnými náklady a rozpočtovými náklady, mohou být manažeři upozorněni na pozitivní a negativní trendy pro jejich provozní jednotky. Manažeři mohou přejít k podrobnostem hierarchií prvků nákladů nebo jednotlivým prvků nákladů. Tímto způsobem mohou získat manažeři podrobný přehled o tom, jak došlo k odchylce nákladů, a následně provést účinné akce. 
+Vzhledem k tomu, že obsah **Analýza nákladového účetnictví** zvýrazňuje rozdíly mezi skutečnými náklady a rozpočtovými náklady, mohou být manažeři upozorněni na pozitivní a negativní trendy pro jejich provozní jednotky. Manažeři mohou přejít k podrobnostem hierarchií prvků nákladů nebo jednotlivým prvků nákladů. Tímto způsobem mohou získat manažeři podrobný přehled o tom, jak došlo k odchylce nákladů, a následně provést účinné akce.
 
-Obsah **Analýza nákladového účetnictví** umožní účetním analyzovat způsoby, jak náklady prochází přes objekty nákladů v celé organizaci. 
+Obsah **Analýza nákladového účetnictví** umožní účetním analyzovat způsoby, jak náklady prochází přes objekty nákladů v celé organizaci.
 
-Další informace o nákladovém účetnictví naleznete v tématu [Domovská stránka nákladového účetnictví](../../financials/cost-accounting/cost-accounting-home-page.md). 
+Další informace o nákladovém účetnictví naleznete v tématu [Domovská stránka nákladového účetnictví](../../financials/cost-accounting/cost-accounting-home-page.md).
 
 Definováním zabezpečení na úrovni přístupu v nákladovém účetnictví a jejím zkombinováním se zabezpečením na úrovni řádků v Power BI můžete povolit všem vlastníkům objektů nákladů přístup k obsahu **analýzy nákladového účetnictví** v Power BI. Všechna data ve vizualizaci budou poté vyfiltrována na základě úroveň přístupu, který je řízen v nákladovém účetnictví. Další informace o zabezpečení na úrovni přístupu a zabezpečení na úrovni řádku, naleznete v [Nastavení zabezpečení pro obsah nákladového účetnictví v Power BI](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Obsah **analýzy nákladového účetnictví** v Power BI naleznete v knihovně sdíleného majetku ve službě Microsoft Dynamics Lifecycle Services (LCS). Další informace o stažení obsahu a jeho implementaci ve vaší organizaci naleznete v tématu [Obsah Power BI v LCS od společnosti Microsoft a vašich partnerů](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/). 
+Obsah **analýzy nákladového účetnictví** v Power BI naleznete v knihovně sdíleného majetku ve službě Microsoft Dynamics Lifecycle Services (LCS). Další informace o stažení obsahu a jeho implementaci ve vaší organizaci naleznete v tématu [Obsah Power BI v LCS od společnosti Microsoft a vašich partnerů](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 
 <!--To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.-->
 
@@ -75,7 +75,7 @@ Obsah zahrnuje sadu stránek sestav. Každá stránka obsahuje sadu metrik, kter
 |                                  | Skutečné náklady podle názvu člena dimenze objektu nákladů a názvu člena dimenze prvku nákladů                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
-Následující data se používají k naplnění stránek sestavy v obsahu **Analýza nákladového účetnictví** v Power BI. Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Přehled integrace Power BI úložištěm entit](power-bi-integration-entity-store.md). 
+Následující data se používají k naplnění stránek sestavy v obsahu **Analýza nákladového účetnictví** v Power BI. Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Přehled integrace Power BI úložištěm entit](power-bi-integration-entity-store.md).
 
 Následujících klíčové měrné systémy agregace byly použity jako základ obsahu.
 
@@ -113,20 +113,18 @@ Následující tabulka zobrazuje, jak se používají klíčové měrné systém
 
 Následující klíčové dimenze se používají jako filtry k řezu měrných systémů agregace pro dosažení většího rozlišení a poskytnutí hlubších analytických poznatků.
 
-
-|               Celek               |                                                Příklady atributů                                                |
+| Celek                             | Příklady atributů                                                                                               |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-|      Hlavní knihy nákladového účetnictví       |                                                Hlavní kniha nákladového účetnictví                                                |
-|         Jednotky řízení nákladů         |                                                Název jednotky řízení nákladů                                                |
-|      Dimenze prvku nákladů       |     Název dimenze prvku nákladů, název člena dimenze prvku nákladů a popis člena dimenze prvku nákladů      |
-|       Dimenze objektu nákladů       |       Název dimenze objektu nákladů, název člena dimenze objektu nákladů a popis člena dimenze objektu nákladů        |
-|       Statistické dimenze       |       Název statistické dimenze, název člena statistické dimenze a popis člena statistické dimenze        |
-| Hierarchie dimenze objektu nákladů  |  Název hierarchie dimenze objektu nákladů, úroveň hierarchie dimenze objektu nákladů, stromová hierarchie dimenze objektu nákladů   |
+| Hlavní knihy nákladového účetnictví            | Hlavní kniha nákladového účetnictví                                                                                               |
+| Jednotky řízení nákladů                 | Název jednotky řízení nákladů                                                                                               |
+| Dimenze prvku nákladů            | Název dimenze prvku nákladů, název člena dimenze prvku nákladů a popis člena dimenze prvku nákladů          |
+| Dimenze objektu nákladů             | Název dimenze objektu nákladů, název člena dimenze objektu nákladů a popis člena dimenze objektu nákladů              |
+| Statistické dimenze             | Název statistické dimenze, název člena statistické dimenze a popis člena statistické dimenze              |
+| Hierarchie dimenze objektu nákladů  | Název hierarchie dimenze objektu nákladů, úroveň hierarchie dimenze objektu nákladů, stromová hierarchie dimenze objektu nákladů    |
 | Hierarchie dimenze prvku nákladů | Název hierarchie dimenze prvku nákladů, úroveň hierarchie dimenze prvku nákladů, stromová hierarchie dimenze prvku nákladů |
-| Hierarchie statistické dimenze  |  Název hierarchie statistické dimenze, úroveň hierarchie statistické dimenze, stromová hierarchie statistické dimenze   |
-|        Verze transakce        |                                                     Název verze                                                     |
-|          Fiskální kalendáře          |                                            Kalendář, Popis kalendáře                                            |
-|            Fiskální roky            |                                                    Kalendářní rok                                                     |
-|           Fiskální období           |                                                 Kalendářní roční období                                                 |
-
+| Hierarchie statistické dimenze  | Název hierarchie statistické dimenze, úroveň hierarchie statistické dimenze, stromová hierarchie statistické dimenze    |
+| Verze transakce               | Název verze                                                                                                         |
+| Fiskální kalendáře                   | Kalendář, Popis kalendáře                                                                                       |
+| Fiskální roky                       | Kalendářní rok                                                                                                        |
+| Fiskální období                     | Kalendářní roční období                                                                                                 |
 
