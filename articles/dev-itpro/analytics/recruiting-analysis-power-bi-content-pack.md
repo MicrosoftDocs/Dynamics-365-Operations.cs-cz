@@ -19,10 +19,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 63432fe5fe98b2c20ddbf9ebec6ac14b981f0106
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 2d8c0e0e52a8dba2a1ea5bf330cdea01e3cfb60d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 05/08/2018
 <span data-ttu-id="bbc24-105">Toto téma popisuje obsah **Nábor** v Microsoft Power BI.</span><span class="sxs-lookup"><span data-stu-id="bbc24-105">This topic describes the **Recruiting** Microsoft Power BI content.</span></span> <span data-ttu-id="bbc24-106">Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.</span><span class="sxs-lookup"><span data-stu-id="bbc24-106">It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.</span></span>
 
 ## <a name="accessing-the-power-bi-content"></a><span data-ttu-id="bbc24-107">Přístup k obsahu Power BI</span><span class="sxs-lookup"><span data-stu-id="bbc24-107">Accessing the Power BI content</span></span>
-<span data-ttu-id="bbc24-108">Obsah Power BI **Nábor** se zobrazí v pracovním prostoru **Řízení náboru**.</span><span class="sxs-lookup"><span data-stu-id="bbc24-108">The **Recruiting** Power BI content is shown in the **Recruitment management** workspace.</span></span> 
+<span data-ttu-id="bbc24-108">Obsah Power BI **Nábor** se zobrazí v pracovním prostoru **Řízení náboru**.</span><span class="sxs-lookup"><span data-stu-id="bbc24-108">The **Recruiting** Power BI content is shown in the **Recruitment management** workspace.</span></span>
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a><span data-ttu-id="bbc24-109">Sestavy a vizuální informace v pracovním prostoru řízení náboru</span><span class="sxs-lookup"><span data-stu-id="bbc24-109">Reports and visuals in the Recruitment management workspace</span></span>
 <span data-ttu-id="bbc24-110">Pracovní prostor **Řízení náboru** obsahuje kartu **Analýza**. Tato karta zahrnuje obsah Power BI Embedded pro nábor.</span><span class="sxs-lookup"><span data-stu-id="bbc24-110">The **Recruitment management** workspace contains an **Analytics** tab. This tab contains the embedded Power BI content for recruiting.</span></span> <span data-ttu-id="bbc24-111">Obsah je tvořen kartou Přehled a dalšími kartami, které obsahují podrobnosti.</span><span class="sxs-lookup"><span data-stu-id="bbc24-111">The content consists of an overview tab and additional tabs that contain details.</span></span> <span data-ttu-id="bbc24-112">Následující tabulka obsahuje popis daných sestav na jednotlivých kartách.</span><span class="sxs-lookup"><span data-stu-id="bbc24-112">The following table describes the reports on each tab.</span></span>
@@ -66,6 +66,4 @@ ms.lasthandoff: 05/08/2018
 | <span data-ttu-id="bbc24-163">Výkonnost</span><span class="sxs-lookup"><span data-stu-id="bbc24-163">Performance</span></span>          | <span data-ttu-id="bbc24-164">Ohodnocení, popis a model ohodnocení</span><span class="sxs-lookup"><span data-stu-id="bbc24-164">Rating, description, and rating model</span></span>                            | <span data-ttu-id="bbc24-165">Uchazeč, zaměstnaný uchazeč, uchazeč s výpovědí</span><span class="sxs-lookup"><span data-stu-id="bbc24-165">Applicant, Employed Applicant, Terminated Applicant</span></span> |
 | <span data-ttu-id="bbc24-166">Náborový projekt</span><span class="sxs-lookup"><span data-stu-id="bbc24-166">Recruitment Project</span></span>  | <span data-ttu-id="bbc24-167">Popis projektu, stavu projektu a volných míst</span><span class="sxs-lookup"><span data-stu-id="bbc24-167">Project description, project status, and openings</span></span>                | <span data-ttu-id="bbc24-168">Uchazeč, zaměstnaný uchazeč, uchazeč s výpovědí</span><span class="sxs-lookup"><span data-stu-id="bbc24-168">Applicant, Employed Applicant, Terminated Applicant</span></span> |
 | <span data-ttu-id="bbc24-169">Uchazeč po výpovědi</span><span class="sxs-lookup"><span data-stu-id="bbc24-169">Terminated Applicant</span></span> | <span data-ttu-id="bbc24-170">Vyřazení uchazeči, důvod, výkon a datum vyřazení</span><span class="sxs-lookup"><span data-stu-id="bbc24-170">Terminated applicants, reason, performance, and termination date</span></span> | <span data-ttu-id="bbc24-171">Společnost, Posun v kalendáři, Datum, Zeměpisná poloha, Demografické údaje, Pracovní místo, Média, Projekt náboru, Jméno uchazeče</span><span class="sxs-lookup"><span data-stu-id="bbc24-171">Company, Calendar Offset, Date, Geographic Location, Performance, Demographics, Employment, Media, Recruitment Project, Applicant Name</span></span> |
-
-
 
