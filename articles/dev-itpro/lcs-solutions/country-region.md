@@ -3,7 +3,7 @@ title: "Lokalizace a funkce týkající se předpisů"
 description: "Toto téma obsahuje seznam prostředků, které vám pomohou dozvědět se více o funkci specifické pro zemi/oblast."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/12/2018
+ms.date: 07/18/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 4485bd6442d186e5a6bac90e0a9041566e2e26d0
-ms.openlocfilehash: efa82abcd25101fc7be772c32e6c4fee7976d4bb
+ms.sourcegitcommit: 46165351f3c9048cfbecf25a1c49d8aeac1f3e1e
+ms.openlocfilehash: 787ce11701a9df951b38af5209206902d7c98019
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -147,33 +147,9 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 - [Vykazování DPH](../../financials/localizations/emea-vat-reporting.md)
 - [Zobrazení transakcí u vyrovnání](../../financials/localizations/emea-transactions-settlement-form.md)
 
-### <a name="france"></a>Francie
--   [Chronologické číslování faktur a dokladů](../../financials/localizations/emea-fra-chronological-invoices-vouchers.md)
--   [Derogační odpisování pro Francii](../../financials/localizations/emea-fra-derogatory-depreciation.md)
--   [Kódy NAF a čísla Siret](../../financials/localizations/emea-fra-naf-codes-siret-numbers.md)
--   [Penále pro platby odběratelů po splatnosti ve Francii](../../financials/localizations/emea-fra-apply-penalty-customer-payment-past-due.md)
--   [Tisk textu paušálního penále na faktuře odběratele](../../financials/localizations/emea-fra-print-lump-sum-recovery-text.md)
--   [RB/SL odpis](../../financials/localizations/emea-fra-rbsl-depreciation.md)
-
-#### <a name="public-sector"></a>Veřejný sektor
-   -   [Závazky ve veřejném sektoru](../../financials/localizations/emea-fra-commitments-public-sector.md)
-   -   [Mandats de paiement ve veřejném sektoru](../../financials/localizations/emea-fra-mandats-de-paiement.md)
-   -   [Zásobování a zdroje](../../financials/localizations/emea-fra-procurement-sourcing-public-sector.md)
-   -   [Účetnictví ve veřejném sektoru](../../financials/localizations/emea-fra-public-sector-accounting.md)
-   -   [Titres de recette](../../financials/localizations/emea-fra-titres-de-recette-public-sector.md)
-   -   [Blokování plateb faktur dodavatele](../../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md)
-
-### <a name="germany"></a>Německo
--   [Odpis dodatečných pořízení](../../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
--   [Soubor auditu pro Německo (GDPdU/GoBD)](../../financials/localizations/emea-deu-gdpdu-audit-data-export.md)
--   [Německá sestava seznamu deníku](../../financials/localizations/emea-deu-journal-list-report.md)
--   [Tisk samostatného štítku pro dobropisy z prodejů](../../financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md)
-
-### <a name="hungary"></a>Maďarsko
-
--   [Metody odpisu dlouhodobého majetku](../../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)    
--   [Přesun dlouhodobého majetku do zásob](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
--   [Nízkonákladový dlouhodobý majetek](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
+### <a name="francefinancialslocalizationsfrancemd"></a>[Francie](../../financials/localizations/france.md)
+### <a name="germanyfinancialslocalizationsgermanymd"></a>[Německo](../../financials/localizations/germany.md)
+### <a name="hungaryfinancialslocalizationshungarymd"></a>[Maďarsko](../../financials/localizations/hungary.md)
 
 ### <a name="india"></a>Indie
 
@@ -190,18 +166,7 @@ V následujících částech je seznam zdrojů podle země/oblasti.
     - [Často kladené dotazy týkající se prahových hodnot daní](../../financials/localizations/apac-ind-tax-thresholds.md)
     - [Rozšíření daňového modulu](../../financials/general-ledger/extend-tax-engine-configurations.md)
 
-### <a name="italy"></a>Itálie
-
--   [Sestava černé listiny pro Itálii](../../financials/localizations/emea-ita-black-list-report.md)
--   [Podrobnosti výkazů DPH](../../financials/localizations/emea-ita-vat-statements-details.md)
--   [Datum kompetence pro transakce](../../financials/localizations/emea-ita-competence-date.md)
--   [Ruční odpis dlouhodobého majetku](../../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
--   [Modello 770](../../financials/localizations/emea-ita-modello770.md)
--   [Ověření data dodacího listu na fakturách pro Itálii](../../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
--   [Knihy DPH pro Itálii](../../financials/localizations/emea-ita-fiscal-books.md)
--   [Rozdělení platby za faktury vydané orgánem veřejné správy](../../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
--   [Srážková daň](../../financials/localizations/emea-ita-withholding-tax.md)
-
+### <a name="italyfinancialslocalizationsitalymd"></a>[Itálie](../../financials/localizations/italy.md)
 ### <a name="japan"></a>Japonsko
 
 -  [Bankovní platby pokryté dodavateli](../../financials/localizations/apac-jpn-bank-payment-fees-vendors.md)
@@ -216,19 +181,8 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 -  [Zaplacení dodavateli formou směnky](../../financials/localizations/apac-jpn-endorse-bill-of-exchange.md)
 -  [Výpočet progresivní srážkové daně](../../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md)
 
-### <a name="latvia"></a>Lotyšsko
-
--   [Účetnictví dlouhodobého majetku pro daňové účely](../../financials/localizations/emea-lva-fixed-assets-accounting.md)
--   [Sledování změny umístění dlouhodobého majetku](../../financials/localizations/emea-lva-fixed-assets-location-fields-change.md)
--   [Číslování faktur a dodacích listů](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
--   [Sestava daně z přírodních zdrojů](../../financials/localizations/emea-lva-tax-natural-resources.md)
--   [Podrobnosti výkazu DPH](../../financials/localizations/emea-lva-vat-statement-details.md)
-
-### <a name="lithuania"></a>Litva
-
--   [Výkaz opravy dlouhodobého majetku](../../financials/localizations/emea-ltu-fixed-asset-repair-statement.md)
--   [Číslování faktur a dodacích listů](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
--   [Podrobnosti výpisu DPH](../../financials/localizations/emea-ltu-vat-statement-details.md)
+### <a name="latviafinancialslocalizationslatviamd"></a>[Lotyšsko](../../financials/localizations/latvia.md)
+### <a name="lithuaniafinancialslocalizationslithuaniamd"></a>[Litva](../../financials/localizations/lithuania.md)
 
 ### <a name="mexico"></a>Mexiko
 
@@ -242,29 +196,9 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 
 -   [Daň ze zboží a služeb (GST)](../../financials/localizations/apac-mys-gst.md)
 
-### <a name="netherlands"></a>Nizozemsko
-
--   [Termín vystavení faktury](../../financials/localizations/emea-invoice-issue-deadline.md)
-
-### <a name="norway"></a>Norsko
-
--   [Registrační pokladny pro Norsko](../../retail/localizations/emea-nor-cash-registers.md)
--   [Pokyny k nasazení registračních pokladen pro Norsko](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
--   [Formát importu Nets](../../financials/localizations/emea-nor-nets-import-format.md)
--   [Výpis DPH](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
-
-### <a name="poland"></a>Polsko
-
--   [Výpočet slev řádku z jednotkové ceny](../../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md)
--   [Poznámky k opravě](../../financials/localizations/emea-pol-correction-notes.md)
--   [Číslování duplikátů prodejních faktur](../../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md)
--   [Odpis dlouhodobého majetku](../../financials/localizations/emea-pol-fixed-assets-depreciation.md)
--   [Vyřazení dlouhodobého majetku](../../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md)
--   [Vratný obal](../../financials/localizations/emea-pol-returnable-packages.md)
--   [Sestavy DPH](../../financials/localizations/emea-pol-sales-tax-reports.md)
--   [Soubor standardního auditu (SAF)](../../financials/localizations/emea-pol-standard-audit-file-saf.md)
--   [Výkaz obratu a sald](../../financials/localizations/emea-pol-turnover-balances-statement.md)
-
+### <a name="netherlandsfinancialslocalizationsnetherlandsmd"></a>[Nizozemsko](../../financials/localizations/netherlands.md)
+### <a name="norwayfinancialslocalizationsnorwaymd"></a>[Norsko](../../financials/localizations/norway.md)
+### <a name="polandfinancialslocalizationspolandmd"></a>[Polsko](../../financials/localizations/poland.md)
 ### <a name="saudi-arabia"></a>Saúdská Arábie
 
 -   [Vykazování zakátu](../../financials/localizations/emea-sau-zakat-reporting.md)
@@ -273,29 +207,9 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 
 -   [Generování singapurské sestavy GST-05](../../financials/localizations/apac-sgp-generate-gst-05-report.md)
 
-### <a name="spain"></a>Španělsko
-
--   [Možnosti španělské směnky](../../financials/localizations/emea-esp-bill-of-exchange-options.md)
--   [U parametru faktury je použita platební sleva](../../financials/localizations/emea-esp-cash-discount-applied-invoice.md)
--   [Nerealizovaná DPH](../../financials/localizations/emea-esp-conditional-sales-tax.md)
--   [Skupiny přecenění dlouhodobého majetku](../../financials/localizations/emea-esp-fixed-asset-group-revaluation.md)
--   [DPH intrakomunitárního plnění](../../financials/localizations/emea-esp-intra-community-vat.md)
--   [Jednorázoví odběratelé](../../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md)
--   [Tisk šeků pomocí španělského rozvržení](../../financials/localizations/emea-esp-print-checks-with-spanish-layout.md)
--   [Možnosti španělské vlastní směnky](../../financials/localizations/emea-esp-promissory-note-options.md)
--   [Prodejní a nákupní cykly](../../financials/localizations/emea-esp-sales-purchase-cycle.md)
--   [Zvláštní položky a počáteční stavy](../../financials/localizations/emea-esp-opening-sheets-spain.md)
--   [Použití finančních údajů z fakturačního účtu](../../financials/localizations/emea-esp-fiscal-data-invoice-account.md)
-
-### <a name="sweden"></a>Švédsko
-
--   [Import formátů plateb pro Švédsko](../../financials/localizations/emea-swe-payment-formats-import.md)
--   [Registrační pokladny ve Švédsku](../../retail/localizations/emea-swe-cash-registers.md)
-
-### <a name="switzerland"></a>Švýcarsko
-
--   [Import plateb odběratelů ERS](../../financials/localizations/emea-che-esr-customer-payments-import.md)
-
+### <a name="spainfinancialslocalizationsspainmd"></a>[Španělsko](../../financials/localizations/spain.md)
+### <a name="swedenfinancialslocalizationsswedenmd"></a>[Švédsko](../../financials/localizations/sweden.md)
+### <a name="switzerlandfinancialslocalizationsswitzerlandmd"></a>[Švýcarsko](../../financials/localizations/switzerland.md)
 ### <a name="thailand"></a>Thajsko
 
 -   [Sestavy karet zásob](../../financials/localizations/apac-tha-stock-card-reports.md)
@@ -303,10 +217,7 @@ V následujících částech je seznam zdrojů podle země/oblasti.
 -   [Nerealizovaná DPH](../../financials/localizations/apac-tha-unrealized-vat.md)
 -   [Srážková daň](../../financials/localizations/apac-tha-withholding-tax.md)
 
-### <a name="united-kingdom"></a>Spojené království
-
--   [Schéma pro obor stavebnictví pro Spojené království](../../financials/localizations/emea-gbr-cis-construction-industry-scheme.md)
-
+### <a name="united-kingdomfinancialslocalizationsunited-kingdommd"></a>[Velká Británie](../../financials/localizations/united-kingdom.md)
 ### <a name="united-states"></a>Spojené státy
 
 -   [Formulář 1099 ve veřejném sektoru](../../financials/localizations/noam-usa-form-1099-public-sector.md)   

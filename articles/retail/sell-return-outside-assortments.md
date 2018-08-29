@@ -1,5 +1,5 @@
 ---
-title: "Prodej a návrat produktů, mimo sortiment"
+title: "Prodej a návrat produktů, které nejsou součástí sortimentu obchodu"
 description: "V aplikaci 365 Dynamics for Retail můžete prodávat a vracet produkty mimo sortiment"
 author: pdp1207
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 82b3076eba0d374c80e37572233cf7ba440cc65a
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 17981cef401085ad3af784950fff6260c2c6d9ee
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="sell-and-return-products-outside-of-an-assortment"></a>Prodej a návrat produktů, mimo sortiment
+# <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>Prodej a návrat produktů, které nejsou součástí sortimentu obchodu
 
 [!include [banner](includes/banner.md)]
 

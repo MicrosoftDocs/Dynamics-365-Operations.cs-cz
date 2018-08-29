@@ -1,5 +1,5 @@
 --- 
-title: "Úprava formátu pro generování dokumentů s daty aplikace"
+title: "Úprava formátů pro generování dokumentů s daty aplikace"
 description: "K dokončení kroků v tomto postupu musíte nejprve dokončit postup ER Generování dokumentů s aktualizací dat aplikace (část 3 - úprava modelu a mapování)."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6c7455e4293993f297aeede4d9d6a50f25ca6c07
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: a095d0326835b0ae7322d5d58307216ee828649e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="modify-format-to-generate-documents-with-application-data"></a>Úprava formátu pro generování dokumentů s daty aplikace
+# <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Úprava formátů pro generování dokumentů s daty aplikace
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

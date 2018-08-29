@@ -1,5 +1,5 @@
 ---
-title: Intelligence
+title: "Domovská stránka analytických nástrojů a vykazování"
 description: "Toto téma vás nasměruje na zdroje, které můžete použít, abyste se dozvěděli více o business intelligence a nástrojích pro vykazování v aplikaci Microsoft Dynamics 365 for Finance and Operations."
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 14a18681a98a2efbf6e3cfdbe77d282e74374c71
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: bd3704f3b51aad7292571e5c4e6de7b93cf9529f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="intelligence"></a>Intelligence
+# <a name="business-intelligence-bi-and-reporting-home-page"></a>Domovská stránka analytických nástrojů a vykazování
 
 [!include [banner](../includes/banner.md)]
 
@@ -43,13 +43,13 @@ Uživatelé mohou interagovat s daty kliknutím nebo klepnutím na vizuální pr
 
 ![Příklad Power BI v pracovním prostoru](./media/Power-BI-in-D365-Workspace.png)
 
- Další informace naleznete v následujících tématech:
+Další informace naleznete v následujících tématech:
 
- - [Embedded Power BI v pracovních prostorech](embed-power-bi-workspaces.md)
- - [Integrace služby Power BI Embedded](power-bi-embedded-integration.md)
- - [Přidání analýz do pracovního prostoru pomocí Power BI Embedded](add-analytics-tab-workspaces.md)
- - [Pomoc se zabezpečením analytických pracovních prostorů a sestav pomocí Power BI Embedded](secure-analytical-workspaces.md)
- - [Obsah Power BI pro aplikaci Finance and Operations](power-bi-home-page.md)
+- [Power BI Embedded v pracovních prostorech](embed-power-bi-workspaces.md)
+- [Integrace služby Power BI Embedded](power-bi-embedded-integration.md)
+- [Přidání analýz do pracovního prostoru pomocí Power BI Embedded](add-analytics-tab-workspaces.md)
+- [Pomoc se zabezpečením analytických pracovních prostorů a sestav pomocí Power BI Embedded](secure-analytical-workspaces.md)
+- [Obsah Power BI pro aplikaci Finance and Operations](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>Obchodní dokumenty a tisk
 Řešení vykazování se často používají pro zachycení a komunikování podrobností o obchodních transakcích. Proto musí být řešení vykazování schopno vyprodukovat fyzický projev obchodních dat pomocí existujících zařízení, jako jsou například síťové tiskárny. Příklady obchodních dokumentů zahrnují prodejní faktury, výpisy z účtu zákazníka a šeky.
@@ -58,7 +58,7 @@ Uživatelé mohou interagovat s daty kliknutím nebo klepnutím na vizuální pr
 
 Další informace naleznete v následujících tématech:
 
-- [Přehled služby vykazování dokumentů](document-reporting-services.md)
+- [Přehled služby Document Reporting Services](document-reporting-services.md)
 - [Tisk v aplikacích Finance and Operations](print-documents.md)
 - [Instalace agenta směrování dokumentu pro aktivaci zařízení síťové tiskárny](install-document-routing-agent.md)
 

@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
 ms.openlocfilehash: a64621c5310e5f68b9d6f1545bb39ce1519d71cf
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -33,16 +33,23 @@ Toto téma obsahuje seznam témat nápovědy a další zdroje pro funkce správy
 
 Vyberte oblast funkce, o které chcete získat informace.
 
-:::row::: :::column::: - [Závazky](accounts-payable/accounts-payable.md) 
+:::row:::
+    :::column:::
+        - [Závazky](accounts-payable/accounts-payable.md) 
         - [Pohledávky](accounts-receivable/accounts-receivable.md)
         - [Rozpočtování](budgeting/budgeting-overview.md) 
         - [Pokladna a banka](cash-bank-management/cash-bank-management.md)
-        - [Nákladové účetnictví](cost-accounting/cost-accounting-home-page.md) :::column-end::: :::column::: - [Správa výdajů](expense-management/expense-management.md)
+        - [Nákladové účetnictví](cost-accounting/cost-accounting-home-page.md)
+    :::column-end:::
+    :::column:::
+        - [Správa výdajů](expense-management/expense-management.md)
         - [Finanční výkaznictví](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Dlouhodobý majetek](fixed-assets/fixed-assets.md)
         - [Hlavní kniha](general-ledger/general-ledger.md) 
         - [Správa projektu](project-management/overview-project-management-accounting.md)
-        - [Veřejný sektor](public-sector/public-sector-functionality.md) :::column-end::: :::row-end:::
+        - [Veřejný sektor](public-sector/public-sector-functionality.md) 
+    :::column-end:::
+:::row-end:::
 
 
 ## <a name="additional-resources"></a>Další zdroje

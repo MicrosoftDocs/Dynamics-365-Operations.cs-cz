@@ -1,5 +1,5 @@
 --- 
-title: "Návrh konfigurací pro analýzu příchozích dokumentů pro aktualizace dat aplikace (ER)"
+title: "Návrh konfigurací elektronického výkaznictví pro analýzu příchozích dokumentů"
 description: "Kroky v tomto postupu popisují postup návrhu konfigurace elektronického vykazování k analýze příchozího elektronického dokumentu."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: 96c9397c6a83d61b679492f66f4aa6661f1f8621
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="design-configurations-to-parse-incoming-documents-for-application-data-updates-er"></a>Návrh konfigurací pro analýzu příchozích dokumentů pro aktualizace dat aplikace (ER)
+# <a name="design-er-configurations-to-parse-incoming-documents"></a>Návrh konfigurací elektronického výkaznictví pro analýzu příchozích dokumentů
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -30,7 +30,7 @@ Kroky v tomto postupu popisují postup návrhu konfigurace elektronického vykaz
 
 Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. 
 
-Tyto kroky lze dokončit za použití libovolné datové sady. Než začnete, stáhněte a uložte si soubory uvedené v tématu nápovědy "Analýza příchozích dokumentů pro aktualizaci dat aplikací (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Soubory jsou: EFSTA model.xml, EFSTA format.xml Response1.xml Response2.xml, Response3.xml, Response4.xml.
+Tyto kroky lze dokončit za použití libovolné datové sady. Než začnete, stáhněte a uložte soubory uvedené v tématu Analýza příchozích dokumentů pro aktualizaci dat aplikace (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Soubory jsou: EFSTA model.xml, EFSTA format.xml Response1.xml Response2.xml, Response3.xml, Response4.xml.
 
 1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
     * Ujistěte se, že poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako Aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu „Vytvoření poskytovatele konfigurace a jeho označení jako aktivního“.  

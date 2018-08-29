@@ -1,5 +1,5 @@
 ---
-title: "Domovská stránka mobilní aplikace"
+title: "Domovská stránka aplikace Dynamics 365 for Unified Operations Mobile"
 description: "Toto téma popisuje mobilní aplikaci Microsoft Dynamics 365 for Unified Operations a poskytuje odkazy na zdroje, které vám mohou pomoci ji implementovat ve vaší organizaci."
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f4736a7041c746350fa073bd58929c840f7689bf
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b9cdb2b2c2b5aaf7743cd2cd0dbfee6c602a5a46
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="mobile-app-home-page"></a>Domovská stránka mobilní aplikace
+# <a name="dynamics-365-for-unified-operations-mobile-app-home-page"></a>Domovská stránka aplikace Dynamics 365 for Unified Operations Mobile
 
 [!include [banner](../includes/banner.md)]
 

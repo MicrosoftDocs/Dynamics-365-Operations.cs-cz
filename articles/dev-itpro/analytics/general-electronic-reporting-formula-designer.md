@@ -19,14 +19,14 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: 8d8ab61b7aea84332120e6de9fc29a2a4c9598ca
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d3ac6ea7b104428f364385e1fd3ed221cae8498d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="formula-designer-in-electronic-reporting"></a>Návrhář vzorců v elektronickém výkaznictví
+# <a name="formula-designer-in-electronic-reporting-er"></a>Návrhář receptur v elektronickém výkaznictví
 
 [!include [banner](../includes/banner.md)]
 
@@ -385,7 +385,7 @@ Při běhu vrátí pole <strong>Popisek</strong> a <strong>Popis</strong> hodnot
 <p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
 <p>Následující obrázek znázorňuje výsledek při spuštění navrženého formátu.</p>
 <p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
-<blockquote>[!NOTE]<br>Přeložený text popisků a popisů je zadáván do výstupu formátu elektronického výkaznictví na základě nastavení jazyka nadřazených prvků formátu FILE a FOLDER.</blockquote>
+<blockquote>[!NOTE] Přeložený text popisků a popisů je zadáván do výstupu formátu elektronického výkaznictví na základě nastavení jazyka nadřazených prvků formátu FILE a FOLDER.</blockquote>
 </td>
 </tr>
 <tr>
@@ -426,7 +426,7 @@ V takovém případě můžete použít následující výraz k získání popis
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>Následující obrázek znázorňuje výsledek při spuštění upraveného formátu.</p>
 <p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
-<blockquote>[!NOTE]<br>Limit není použit na poslední položku v původním seznamu, protože hodnota (11) zdroje limitu (hmotnost) překračuje definovaný limit (9). Použijte funkci <strong>WHERE</strong> nebo výraz <strong>Enabled</strong> odpovídajícího prvku formátu k ignorování (přeskočení) dílčích seznamů během generování sestavy podle potřeby.</blockquote>
+<blockquote>[!NOTE] Limit není použit na poslední položku v původním seznamu, protože hodnota (11) zdroje limitu (hmotnost) překračuje definovaný limit (9). Použijte funkci <strong>WHERE</strong> nebo výraz <strong>Enabled</strong> odpovídajícího prvku formátu k ignorování (přeskočení) dílčích seznamů během generování sestavy podle potřeby.</blockquote>
 </td>
 </tr>
 <tr>
@@ -456,8 +456,8 @@ V takovém případě můžete použít následující výraz k získání popis
 | NUMBERVALUE (řetězec, oddělovač desetinných míst, oddělovač skupin číslic) | Převede zadaný řetězec na číslo. Zadaný oddělovač desetinných míst se použije mezi celým číslem a zlomkovou částí desetinného čísla. Zadaný oddělovač skupin číslic se použije jako oddělovač tisíců. | **NUMBERVALUE("1 234,56", ",", " ")** vrátí hodnotu **1234.56**. |
 | VALUE (řetězec) | Převede zadaný řetězec na číslo. Čárky a tečky (.) jsou považovány za oddělovače desetinných míst a úvodní spojovník (-) se používá jako záporné znaménko. Pokud jsou v zadaném řetězci obsaženy jiné než číselné znaky, bude vyvolána výjimka. | **VALUE ("1 234,56")** vyvolá výjimku. |
 | ROUND (číslo, desetinná čísla) | Vrátí zadané číslo, poté, co je zaokrouhleno na zadaný počet desetinných míst:<ul><li>Pokud je hodnota parametru **desetinná místa** vyšší než 0 (nula), zadané číslo je zaokrouhleno na tento počet desetinných míst.</li><li>Pokud je hodnota parametru **desetinná místa** **0** (nula), zadané číslo je zaokrouhleno na nejbližší celé číslo.</li><li>Pokud je hodnota parametru **desetinná místa** nižší než 0 (nula), zadané číslo je zaokrouhleno vlevo od oddělovače desetinných míst.</li></ul> | **ROUND (1200.767, 2)** zaokrouhlí na dvě desetinná místa a vrátí hodnotu **1200.77**. **ROUND (1200.767, -3)** zaokrouhlí na nejbližší násobek 1 000 a vrátí hodnotu **1000**. |
-| ROUNDDOWN (číslo, desetinná čísla) | Vrátí zadané číslo, poté, co je zaokrouhleno dolů na zadaný počet desetinných míst.<blockquote>[!NOTE]<br>Tato funkce se chová jako **ROUND**, ale vždy zaokrouhluje zadané číslo směrem dolů (směrem k nule).</blockquote> | **ROUNDDOWN (1200.767, 2)** zaokrouhlí směrem dolů na dvě desetinná místa a vrátí hodnotu **1200.76**. **ROUNDDOWN (1700.767, -3)** zaokrouhlí směrem dolů na nejbližší násobek 1 000 a vrátí hodnotu **1000**. |
-| ROUNDUP (číslo, desetinná čísla) | Vrátí zadané číslo, poté, co je zaokrouhleno nahoru na zadaný počet desetinných míst.<blockquote>[!NOTE]<br>Tato funkce se chová jako **ROUND**, ale vždy zaokrouhluje zadané číslo směrem nahoru (směrem od nuly).</blockquote> | **ROUNDUP (1200.763, 2)** zaokrouhlí směrem nahoru na dvě desetinná místa a vrátí hodnotu **1200.77**. **ROUNDUP (1200.767, -3)** zaokrouhlí směrem nahoru na nejbližší násobek 1 000 a vrátí hodnotu **2000**. |
+| ROUNDDOWN (číslo, desetinná čísla) | Vrátí zadané číslo, poté, co je zaokrouhleno dolů na zadaný počet desetinných míst.<blockquote>[!NOTE] Tato funkce se chová jako **ROUND**, ale vždy zaokrouhluje zadané číslo směrem dolů (směrem k nule).</blockquote> | **ROUNDDOWN (1200.767, 2)** zaokrouhlí směrem dolů na dvě desetinná místa a vrátí hodnotu **1200.76**. **ROUNDDOWN (1700.767, -3)** zaokrouhlí směrem dolů na nejbližší násobek 1 000 a vrátí hodnotu **1000**. |
+| ROUNDUP (číslo, desetinná čísla) | Vrátí zadané číslo, poté, co je zaokrouhleno nahoru na zadaný počet desetinných míst.<blockquote>[!NOTE] Tato funkce se chová jako **ROUND**, ale vždy zaokrouhluje zadané číslo směrem nahoru (směrem od nuly).</blockquote> | **ROUNDUP (1200.763, 2)** zaokrouhlí směrem nahoru na dvě desetinná místa a vrátí hodnotu **1200.77**. **ROUNDUP (1200.767, -3)** zaokrouhlí směrem nahoru na nejbližší násobek 1 000 a vrátí hodnotu **2000**. |
 
 ### <a name="data-conversion-functions"></a>Funkce převodu dat
 
@@ -474,8 +474,8 @@ V takovém případě můžete použít následující výraz k získání popis
 
 | Funkce | popis | Příklad |
 |----------|-------------|---------|
-| NULLCONTAINER (seznam) | Vrátí záznam **null**, který má stejnou strukturu jako zadaný seznam záznamů nebo záznam.<blockquote>[!NOTE]<br>Tato funkce je zastaralá. Místo toho použijte **EMPTYRECORD**.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** vrátí nový prázdný záznam, který má stejnou strukturu jako seznam vrácený funkcí **SPLIT**. |
-| EMPTYRECORD (záznam) | Vrátí záznam **null**, který má stejnou strukturu jako zadaný seznam záznamů nebo záznam.<blockquote>[!NOTE]<br>Záznam **null** je záznam, kde všechna pole mají prázdnou hodnotu. Prázdná hodnota je **0** (nula) pro čísla, prázdný řetězec pro řetězce atd.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** vrátí nový prázdný záznam, který má stejnou strukturu jako seznam vrácený funkcí **SPLIT**. |
+| NULLCONTAINER (seznam) | Vrátí záznam **null**, který má stejnou strukturu jako zadaný seznam záznamů nebo záznam.<blockquote>[!NOTE] Tato funkce je zastaralá. Místo toho použijte **EMPTYRECORD**.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** vrátí nový prázdný záznam, který má stejnou strukturu jako seznam vrácený funkcí **SPLIT**. |
+| EMPTYRECORD (záznam) | Vrátí záznam **null**, který má stejnou strukturu jako zadaný seznam záznamů nebo záznam.<blockquote>[!NOTE] Záznam **null** je záznam, kde všechna pole mají prázdnou hodnotu. Prázdná hodnota je **0** (nula) pro čísla, prázdný řetězec pro řetězce atd.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** vrátí nový prázdný záznam, který má stejnou strukturu jako seznam vrácený funkcí **SPLIT**. |
 
 ### <a name="text-functions"></a>Textové funkce
 
@@ -522,14 +522,14 @@ V takovém případě můžete použít následující výraz k získání popis
 <td>CHAR (číslo)</td>
 <td>Vrátí řetězec znaků, na který odkazuje zadané číslo ve znakové sadě Unicode.</td>
 <td><strong>CHAR (255)</strong> vrátí <strong>&quot;ÿ&quot;</strong>.
-<blockquote>[!NOTE]<br>Řetězec, který vrací tato funkce, závisí na kódování, které je vybráno v nadřazeném prvku formátu SOUBORU. Více informací o seznamu podporovaných kódování naleznete v tématu <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Třída kódování</a>.</blockquote>
+<blockquote>[!NOTE] Řetězec, který vrací tato funkce, závisí na kódování, které je vybráno v nadřazeném prvku formátu SOUBORU. Více informací o seznamu podporovaných kódování naleznete v tématu <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Třída kódování</a>.</blockquote>
 </td>
 </tr>
 <tr>
 <td>CONCATENATE (řetězec 1 [, řetězec 2…])</td>
 <td>Vrátí všechny zadané textové řetězce po jejich spojení do jednoho řetězce.</td>
 <td><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> vrátí <strong>&quot;abcdef&quot;</strong>.
-<blockquote>[!NOTE]<br>Výraz <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> vrátí též <strong>&quot;abcdef&quot;</strong>.</blockquote>
+<blockquote>[!NOTE] Výraz <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> vrátí též <strong>&quot;abcdef&quot;</strong>.</blockquote>
 </td>
 </tr>
 <tr>
@@ -571,7 +571,7 @@ V takovém případě můžete použít následující výraz k získání popis
 <p>&quot;Nic k tisku. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
 <p>Jestliže je stejná sestava zpracována pro odběratele <strong>Litware Retail</strong> 17. prosince 2015 v jazykové verzi <strong>DE</strong> a jazyce <strong>DE</strong>, vzorec vrátí následující text, který používá jiný formát data:</p>
 <p>&quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
-<blockquote>[!NOTE]<br>Následující syntaxe je použita ve vzorcích elektronického výkaznictví pro popisky:
+<blockquote>[!NOTE] Následující syntaxe je použita ve vzorcích elektronického výkaznictví pro popisky:
 <ul>
 <li><strong>Popisky ze zdrojů aplikace Finance and Operations:</strong> <strong>@&quot;X&quot;</strong>, kde X je ID popisku ve stromu aplikačních objektů (AOT)</li>
 <li><strong>Popisky, které se nachází v konfiguracích elektronického výkaznictví:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, kde X je ID popisku v konfiguraci elektronického výkaznictví.</li>
@@ -587,7 +587,7 @@ V takovém případě můžete použít následující výraz k získání popis
 <tr>
 <td>NUMERALSTOTEXT (číslo jazyk, měna, příznak názvu měny pro tisk, desetinná místa)</td>
 <td>Vrátí zadané číslo po vyslovení (převedení) na textové řetězce v zadaném jazyce. Kód jazyka je volitelný. Pokud je definován jako prázdný řetězec, použije se kód jazyka pro aktuální kontext. (Kód jazyka spuštěného kontextu je definován pro generovaný soubor nebo složku). Kód měny je také volitelný. Pokud je definován jako prázdný řetězec, je použita měna společnosti.
-<blockquote>[!NOTE]<br>Příznak <strong>název měny pro tisk</strong> a <strong>parametry desetinných míst</strong> jsou analyzovány pouze pro následující jazykové kódy: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> a <strong>RU</strong>. Dále je příznak <strong>názvu měny pro tisk</strong> analyzován pouze pro společnosti používající aplikaci Finance and Operations s kontextem země nebo oblasti, který podporuje skloňování názvů měn.</blockquote>
+<blockquote>[!NOTE] Příznak <strong>název měny pro tisk</strong> a <strong>parametry desetinných míst</strong> jsou analyzovány pouze pro následující jazykové kódy: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> a <strong>RU</strong>. Dále je příznak <strong>názvu měny pro tisk</strong> analyzován pouze pro společnosti používající aplikaci Finance and Operations s kontextem země nebo oblasti, který podporuje skloňování názvů měn.</blockquote>
 </td>
 <td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> returns <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> vrátí <strong>&quot;Sto dwadzieścia&quot;</strong>. <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> vrátí <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
@@ -656,10 +656,10 @@ Když jsou definovány tyto zdroje dat, můžete použít výraz jako <strong>FI
 | Funkce | popis | Příklad |
 |----------|-------------|---------|
 | CONVERTCURRENCY (částka, zdrojová měna, cílová měna, datum, společnost) | Převede zadanou peněžní částku ze zadané měny na zadanou měnu za použití nastavení zadané společnosti v aplikaci Finance and Operations k zadanému datu. | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** vrátí ekvivalent jednoho eura v amerických dolarech v aktuální den relace podle nastavení společnosti DEMF. |
-| ROUNDAMOUNT (číslo, desetinná místa, pravidlo zaokrouhlování) | Zaokrouhlí zadanou částku na zadaný počet bdesetinných míst podle zadaného pravidla zaokrouhlování.<blockquote>[!NOTE]<br>Pravidlo zaokrouhlování musí být zadáno jako hodnota výčtu **RoundOffType** aplikace Finance and Operations.</blockquote> | Pokud je parametr **model.RoundOff** nastaven na **Downward**, **3ROUNDAMOUNT (1000.787, 2, model.RoundOff)** vrátí hodnotu **1000.78**. Pokud je parametr **model.RoundOff** nastaven na hodnotu **Normal** nebo **Rounding-up**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** vrátí hodnotu **1000.79**. |
+| ROUNDAMOUNT (číslo, desetinná místa, pravidlo zaokrouhlování) | Zaokrouhlí zadanou částku na zadaný počet bdesetinných míst podle zadaného pravidla zaokrouhlování.<blockquote>[!NOTE] Pravidlo zaokrouhlování musí být zadáno jako hodnota výčtu **RoundOffType** aplikace Finance and Operations.</blockquote> | Pokud je parametr **model.RoundOff** nastaven na **Downward**, **3ROUNDAMOUNT (1000.787, 2, model.RoundOff)** vrátí hodnotu **1000.78**. Pokud je parametr **model.RoundOff** nastaven na hodnotu **Normal** nebo **Rounding-up**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** vrátí hodnotu **1000.79**. |
 | CURCredRef (číslice) | Vrátí referenční údaj věřitele na základě číslic zadaného čísla faktury. | **CURCredRef ("VEND-200002")** vrátí hodnotu **"2200002"**. |
 | MOD\_97 (číslice) | Vrátí referenční údaj věřitele jako výraz MOD97 na základě číslic zadaného čísla faktury. | **MOD\_97 ("VEND-200002")** vrátí **"20000285"**. |
-| ISOCredRef (číslice) | Vrátí ISO údaj věřitele na základě číslic a abecedních symbolů zadaného čísla faktury.<blockquote>[!NOTE]<br>Chcete-li vyloučit z abecedy symboly, které jsou v souladu se standardem ISO, vstupní parametr musí být přeložen před jeho předáním této funkci.</blockquote> | **ISOCredRef ("VEND-200002")** vrátí hodnotu **"RF23VEND-200002"**. |
+| ISOCredRef (číslice) | Vrátí ISO údaj věřitele na základě číslic a abecedních symbolů zadaného čísla faktury.<blockquote>[!NOTE] Chcete-li vyloučit z abecedy symboly, které jsou v souladu se standardem ISO, vstupní parametr musí být přeložen před jeho předáním této funkci.</blockquote> | **ISOCredRef ("VEND-200002")** vrátí hodnotu **"RF23VEND-200002"**. |
 | CN\_GBT\_AdditionalDimensionID (řetězec, číslo) | Získá zadané ID další finanční dimenze. Dimenze jsou reprezentovány v parametru **řetězec** jako ID oddělená čárkou. Parametr **číslo** definuje kód sekvence požadované dimenze v řetězci. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** vrací **"CC"**. |
 | GetCurrentCompany () | Vrací textovou reprezentaci kódu právnické osoby (společnosti), ke které je uživatel momentálně přihlášen. | **GETCURRENTCOMPANY ()** vrátí hodnotu **USMF** u uživatele přihlášeného v aplikaci Finance and Operations ke společnosti **Contoso Entertainment System USA**. |
 | CH\_BANK\_MOD\_10 (číslice) | Vrátí odkaz věřitele jako výraz MOD10 na základě číslic zadaného čísla faktury. | **CH\_BANK\_MOD\_10 ("VEND-200002")** vrátí **3**. |

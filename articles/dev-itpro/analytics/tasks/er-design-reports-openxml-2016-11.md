@@ -1,5 +1,5 @@
 --- 
-title: "Návrh konfigurace pro generování sestav ve formátu OpenXML pro elektronické výkaznictví (ER)"
+title: "Návrh konfigurací elektronického výkaznictví pro generování sestav ve formátu OpenXML"
 description: "Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci pro elektronické výkaznictví, která obsahuje šablonu pro generování elektronických dokladů ve formátu OPENXML."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
-ms.openlocfilehash: 09789957839097ba2898544102af908c198090c7
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b42cfe36c57a9526e585bbad0fcd31ff60b90397
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="design-a-configuration-for-generating-reports-in-openxml-format-for-electronic-reporting-er"></a>Návrh konfigurace pro generování sestav ve formátu OpenXML pro elektronické výkaznictví (ER)
+# <a name="design-er-configurations-to-generate-reports-in-openxml-format"></a>Návrh konfigurací elektronického výkaznictví pro generování sestav ve formátu OpenXML
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Použití rychlého importu/exportu"
+title: "Rychlý import a export"
 description: "Účel funkce Rychlý import / export je umožnit provádění importu a exportu za použití menšího počtu kroků."
 author: margoc
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: margoc
 ms.search.validFrom: 
 ms.dyn365.ops.version: AX 2012 R3 CU8
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 14b4a56a229a2e1eb15c29eb7a89a89ac31e58db
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 4f2edba4add691e9ad4c7829551c6f79b9804853
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Spuštění testovacího nástroj pro přenos dat (beta) pro Dynamics AX (AX 2012)
+# <a name="quick-import-export"></a>Rychlý import a export
 
 [!include [banner](../../includes/banner.md)]
 

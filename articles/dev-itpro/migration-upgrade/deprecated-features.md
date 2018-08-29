@@ -1,9 +1,9 @@
 ---
-title: "Zastaralé funkce"
+title: "Odstraněné nebo zastaralé funkce"
 description: "Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění."
 author: sericks007
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 08/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 65101b5f0030a25973a584b68ec9697506868294
-ms.openlocfilehash: 6b954d1eedb7c7af1c9a5eda92aa1dd6132a19fa
+ms.sourcegitcommit: 8a3c4ed8f3ed79ab0cb3e59076734877d270bd68
+ms.openlocfilehash: cd620dcdeb1cd5fd3a89be9ae31c4d35e29a03d0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/30/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -38,6 +38,9 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zast
 
 > [!Note]
 > Počínaje vydáním Dynamics 365 for Finance and Operations z července 2017 s aktualizací platform update 8 se uvádí typ nasazení pro každou odstraněnou nebo zastaralou funkci. Všechny předchozí verze uvedené v tomto tématu podporovaly cloudové nasazení.
+
+> [!Note]
+> Podrobné informace o objektech v aplikaci Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikace Finance and Operations.
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 a aktualizací platform update 15
 V této verzi nebyly odebrány ani odepsány žádné funkce. Aktualizace platformy 15 je kumulativní a obsahuje nové a změněné funkce aktualizace platformy 13, aktualizace platformy 14 a aktualizace platformy 15.

@@ -1,5 +1,5 @@
 ---
-title: "Výběr mezi Modern POS a Cloud POS"
+title: "Výběr mezi Retail Modern POS (MPOS) a Cloud POS"
 description: "Toto téma vysvětluje klíčové rozdíly mezi Retail Modern POS a Cloud POS. Také popisuje různé faktory, které prodejci implementující aplikaci Microsoft Dynamics 365 for Retail musí zvážit, aby mohli vytěžit pro své požadavky maximum."
 author: jblucher
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7eb15f9f73f4773d98160e1b0ec5ce74c159cdea
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: aff9485789a3c7cedcea1a66e233603332c143b2
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="choose-between-modern-pos-and-cloud-pos"></a>Výběr mezi Modern POS a Cloud POS
+# <a name="choose-between-retail-modern-pos-mpos-and-cloud-pos"></a>Výběr mezi Retail Modern POS (MPOS) a Cloud POS
 
 [!include [banner](includes/banner.md)]
 

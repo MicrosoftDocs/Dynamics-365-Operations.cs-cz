@@ -1,5 +1,5 @@
 --- 
-title: "Spuštění sestavy, která používá finanční dimenze jako zdroje dat​"
+title: "Spuštění sestav, které používají finanční dimenze jako zdroje dat"
 description: "Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) použití finančních dimenzí jako zdroje dat pro sestavy elektronického výkaznictví."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 47ba48461a1c502a93df416d1acac1e85a841079
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 6569f9b97d5d15bf74b8b3882bf4bab50970dd0f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="run-a-report-that-uses-financial-dimensions-as-a-data-source"></a>Spuštění sestavy, která používá finanční dimenze jako zdroje dat​
+# <a name="run-reports-that-use-financial-dimensions-as-data-sources"></a>Spuštění sestav, které používají finanční dimenze jako zdroje dat
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

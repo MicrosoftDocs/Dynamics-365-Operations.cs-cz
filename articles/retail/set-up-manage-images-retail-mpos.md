@@ -1,5 +1,5 @@
 ---
-title: "Nastavení a správa obrázků pro Retail Modern POS"
+title: "Nastavení a správa obrázků pro Retail Modern POS (MPOS)"
 description: "Tento článek vysvětluje postup, který je součástí nastavení a správy obrázků pro různé entity, které jsou obsaženy v modulu Retail Modern POS (MPOS)."
 author: athinesh99
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ed4a7044b577ed6af86f6803f6abd4f9b500b4e7
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: e364cf988cc80d53605fe88bf0dc1be6021c52e7
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Nastavení a správa obrázků pro Retail Modern POS
+# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Nastavení a správa obrázků pro Retail Modern POS (MPOS)
 
 [!include [banner](includes/banner.md)]
 
@@ -52,7 +52,7 @@ Obrázky zobrazené v Retail Modern POS (MPOS) musí být hostovány externě mi
 4.  Pro obrázky je formát názvu souboru pevně zakódován do názvu katalogu a nemůže být změněn. Z tohoto důvodu přejmenujte své obrázky, aby měly odpovídající katalogové názvy, abyste si zajistili, že je MPOS zpracovávají správně.
 5.  V poli **Přípona souboru** vyberte očekávané přípony názvu souboru, v závislosti na typu obrázku, které máte. Například pro ukázková data jsou katalogové obrázky nastaveny na příponu .jpg. (Obrázkové soubory také přejmenujte tak, aby měly katalogové názvy.)
 6.  Klikněte na tlačítko **OK**.
-7.  K ověření, zda šablony média pro obrázky byly uloženy správně, na stránce **Katalogové obrázky** klepněte znovu na **Definovat šablonu média**. K ověření šablony, aniž byste zavřeli dialogového okno **Definovat šablonu média** můžete použít pevnou záložku **Generovat adresy URL obrázku pro Excel**. Zkontrolujte vzhled adresy URL obrázku, ověřte, že adresa URL odpovídá standardu šablony, uvedenému výše. Dialogové okno **Definovat šablonu média** je nyní implicitně nastaven na cestu k obrázku pro všechny katalogové obrázky, které používají tuto běžnou cestu URL. Tato cesta URL se vztahuje na všechny katalogové obrázky do doby, než budou přepsány. První část cesty obrázku je převzata ze základní adresy URL média, které jste definovali v profilu kanálu. Zbývající část cesty je převzata z cesty, kterou jste definovali v šabloně média. Obě části jsou spojeny, aby poskytly úplnou adresu URL obrázku skladového místa. Například katalog v ukázkových datech je nazván Fabrikam Base Catalog. Název proto musí být Fabrikam Base Catalog.jpg, aby byl používán název katalogu a přípona souboru .jpg, která je nastavena do šablony. V takovém případě po zřetězení bude adresa URL https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg.
+7.  K ověření, zda šablony média pro obrázky byly uloženy správně, na stránce **Katalogové obrázky** klepněte znovu na **Definovat šablonu média**. K ověření šablony, aniž byste zavřeli dialogového okno **Definovat šablonu média** můžete použít pevnou záložku **Generovat adresy URL obrázku pro Excel**. Zkontrolujte vzhled adresy URL obrázku, ověřte, že adresa URL odpovídá standardu šablony, uvedenému výše. Dialogové okno **Definovat šablonu média** je nyní implicitně nastaven na cestu k obrázku pro všechny katalogové obrázky, které používají tuto běžnou cestu URL. Tato cesta URL se vztahuje na všechny katalogové obrázky do doby, než budou přepsány. První část cesty obrázku je převzata ze základní adresy URL média, které jste definovali v profilu kanálu. Zbývající část cesty je převzata z cesty, kterou jste definovali v šabloně média. Obě části jsou spojeny, aby poskytly úplnou adresu URL obrázku skladového místa. Například katalog v ukázkových datech je nazván Fabrikam Base Catalog. Název proto musí být Fabrikam Base Catalog.jpg, aby byl používán název katalogu a přípona souboru .jpg, která je nastavena do šablony. V tomto případě bude po zřetězení URL adresa https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg.
 8.  Spusťte úlohy synchronizace pro zadání nové šablony do databáze kanálů, aby MPOS mohl šablonu použít pro přístup k obrázkům.
 9.  Pokud chcete aktualizovat šablonu médií pro katalogové obrázky na straně kanálu média, je nutné spustit **Úloha katalogu1150** z **IT pro maloobchod** &gt; **Plán distribuce**.[![katalog1](./media/catalog1.png)](./media/catalog1.png)
 

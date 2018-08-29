@@ -1,5 +1,5 @@
 ---
-title: Konfigurovat online obchod
+title: Konfigurovat online obchody
 description: "Tento článek poskytuje odkazy na témata, která vám pomohou centrálně konfigurovat a spravovat online obchod."
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d87430ad92e60b7037b1ce4d2fbac7920322f0fb
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: d353baf67540b64168f29be3506d73e721e73523
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="configure-an-online-store"></a>Konfigurovat online obchod
+# <a name="configure-online-stores"></a>Konfigurovat online obchody
 
 [!include [banner](../includes/banner.md)]
 

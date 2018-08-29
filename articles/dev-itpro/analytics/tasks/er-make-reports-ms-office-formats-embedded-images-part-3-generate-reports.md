@@ -1,5 +1,5 @@
 --- 
-title: "Generování sestav ve formátech Microsoft Office s integrovanými obrázky"
+title: "Generování sestav ve formátech Office s integrovanými obrázky"
 description: "Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhnout konfigurace pro elektronické výkaznictví (ER) a vygenerovat tak elektronické dokumenty ve formátu MS Office (Excel nebo Word) s vloženými obrázky."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e2ab89857f4bf4844123508837c8faa504bc8839
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 5ef7ec2f8b5b7fdf456ebb71b863e620ae21e6b5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="generate-reports-in-microsoft-office-formats-with-embedded-images"></a>Generování sestav ve formátech Microsoft Office s integrovanými obrázky
+# <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Generování sestav ve formátech Office s integrovanými obrázky
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

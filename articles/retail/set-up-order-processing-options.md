@@ -1,5 +1,5 @@
 ---
-title: "Nastavení kanálu kontaktního střediska"
+title: "Nastavení kanálů kontaktního střediska"
 description: "Toto téma poskytuje informace o zpracování objednávek pro kontaktní střediska pomocí aplikace Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0d64a27aa8aed10c210ca3c2956dce67f8d634b8
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: d849279a642363d9cb591cd7a3b20c2883bb4a3b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="set-up-a-call-center-channel"></a>Nastavení kanálu kontaktního střediska
+# <a name="set-up-call-center-channels"></a>Nastavení kanálů kontaktního střediska
 
 [!include [banner](includes/banner.md)]
 

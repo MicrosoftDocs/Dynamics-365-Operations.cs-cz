@@ -1,5 +1,5 @@
 ---
-title: "Nastavení programu trvání pro kontaktní středisko"
+title: "Nastavení programů kontinuity pro kontaktní střediska"
 description: "Tento článek popisuje, jak lze nastavit program trvání pro kontaktní středisko."
 author: josaw1
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0fa2c5aaf6953eed75729017cca8cf3c2220e80d
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 9952785afd8e5d1877e96239ee23f9de1c332bcf
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="set-up-a-continuity-program-for-a-call-center"></a>Nastavení programu trvání pro kontaktní středisko
+# <a name="set-up-continuity-programs-for-call-centers"></a>Nastavení programů kontinuity pro kontaktní střediska
 
 [!include [banner](includes/banner.md)]
 

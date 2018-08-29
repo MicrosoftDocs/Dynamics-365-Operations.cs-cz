@@ -1,5 +1,5 @@
 --- 
-title: "Úprava modelu a mapování pro generování dokumentů s daty aplikace"
+title: "Úprava modelů a mapování pro generování dokumentů s daty aplikace"
 description: "K dokončení kroků v tomto postupu musíte nejprve dokončit postup ER Generování dokumentů s aktualizací dat aplikace (část 2 - generování dokumentů)."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c112b2895175bd23db313888ec1e964bdf5ed295
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 580f00faf6694dc2da476ffa75f995d9a24e0f8b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="modify-model-and-mapping-to-generate-documents-with-application-data"></a>Úprava modelu a mapování pro generování dokumentů s daty aplikace
+# <a name="modify-models-and-mappings-to-generate-documents-that-have-application-data"></a>Úprava modelů a mapování pro generování dokumentů s daty aplikace
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
