@@ -1,5 +1,5 @@
 ---
-title: "WebSearchAX vyřazeno"
+title: "Stránka WebSearchAX byla vyřazena"
 description: "Museli jsme vyřadit stránku WebSearchAX. Doporučujeme použít vyhledání na webu z vašeho oblíbeného vyhledávače pro její nahrazení."
 author: margoc
 manager: AnnBe
@@ -18,23 +18,23 @@ ms.author: margoc
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: AX 2012
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 59e45f504fbe484f3eb842e3d6a6bbfc4fe0e50f
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 8c2375ee1dec3e816dbec19130733ebb2aac0fc3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="websearchax-retired"></a><span data-ttu-id="39db0-104">WebSearchAX vyřazeno</span><span class="sxs-lookup"><span data-stu-id="39db0-104">WebSearchAX retired</span></span>
+# <a name="websearchax-page-has-been-retired"></a><span data-ttu-id="384ab-104">Stránka WebSearchAX byla vyřazena</span><span class="sxs-lookup"><span data-stu-id="384ab-104">WebSearchAX page has been retired</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="39db0-105">Museli jsme vyřadit stránku WebSearchAX.</span><span class="sxs-lookup"><span data-stu-id="39db0-105">We’ve had to retire the WebSearchAX page.</span></span> <span data-ttu-id="39db0-106">Doporučujeme použít vyhledání na webu z vašeho oblíbeného vyhledávače pro její nahrazení.</span><span class="sxs-lookup"><span data-stu-id="39db0-106">We recommend that you use site search from your favorite search engine to replace it.</span></span>  <span data-ttu-id="39db0-107">Například:</span><span class="sxs-lookup"><span data-stu-id="39db0-107">For example:</span></span> 
+<span data-ttu-id="384ab-105">Museli jsme vyřadit stránku WebSearchAX.</span><span class="sxs-lookup"><span data-stu-id="384ab-105">We’ve had to retire the WebSearchAX page.</span></span> <span data-ttu-id="384ab-106">Doporučujeme použít vyhledání na webu z vašeho oblíbeného vyhledávače pro její nahrazení.</span><span class="sxs-lookup"><span data-stu-id="384ab-106">We recommend that you use site search from your favorite search engine to replace it.</span></span>  <span data-ttu-id="384ab-107">Například:</span><span class="sxs-lookup"><span data-stu-id="384ab-107">For example:</span></span> 
 
-<span data-ttu-id="39db0-108">site:technet.microsoft.com dynamics ax 2012 "hledaný termín"</span><span class="sxs-lookup"><span data-stu-id="39db0-108">site:technet.microsoft.com dynamics ax 2012 "search term"</span></span>
+<span data-ttu-id="384ab-108">site:technet.microsoft.com dynamics ax 2012 "hledaný termín"</span><span class="sxs-lookup"><span data-stu-id="384ab-108">site:technet.microsoft.com dynamics ax 2012 "search term"</span></span>
 
-<span data-ttu-id="39db0-109">- nebo -</span><span class="sxs-lookup"><span data-stu-id="39db0-109">-or-</span></span>
+<span data-ttu-id="384ab-109">- nebo -</span><span class="sxs-lookup"><span data-stu-id="384ab-109">-or-</span></span>
 
-<span data-ttu-id="39db0-110">site:msdn.microsoft.com dynamics ax 2012 “hledaný termín”</span><span class="sxs-lookup"><span data-stu-id="39db0-110">site:msdn.microsoft.com dynamics ax 2012 “search term”</span></span>
+<span data-ttu-id="384ab-110">site:msdn.microsoft.com dynamics ax 2012 “hledaný termín”</span><span class="sxs-lookup"><span data-stu-id="384ab-110">site:msdn.microsoft.com dynamics ax 2012 “search term”</span></span>
 
 

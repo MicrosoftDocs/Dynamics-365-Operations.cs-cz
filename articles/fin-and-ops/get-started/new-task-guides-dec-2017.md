@@ -16,96 +16,96 @@ ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a6bec9c0e9b591f99a0c00e554c18a5ebe440859
-ms.openlocfilehash: 25ee17c98d1071129e212512d75883dccd32791f
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: fbf99e6c01101209bf9e2a213c8008f50e67ad68
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="new-or-updated-task-guides-december-2017"></a><span data-ttu-id="12194-104">Noví nebo aktualizovaní průvodci záznamem úloh (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-104">New or updated Task guides (December 2017)</span></span>
+# <a name="new-or-updated-task-guides-december-2017"></a><span data-ttu-id="3cae7-104">Noví nebo aktualizovaní průvodci záznamem úloh (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-104">New or updated task guides (December 2017)</span></span>
 
-<span data-ttu-id="12194-105">Toto téma obsahuje nové nebo aktualizované průvodce záznamem úloh vydané pro knihovnu Microsoft APQC Unified Library (prosinec 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics 365 for Operations.</span><span class="sxs-lookup"><span data-stu-id="12194-105">This topic lists the new or updated Task guides that were released to the Microsoft (December 2016 - all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations.</span></span>
+<span data-ttu-id="3cae7-105">Toto téma obsahuje nové nebo aktualizované průvodce záznamem úloh vydané pro knihovnu Microsoft APQC Unified Library (prosinec 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics 365 for Operations.</span><span class="sxs-lookup"><span data-stu-id="3cae7-105">This topic lists the new or updated Task guides that were released to the Microsoft (December 2016 - all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations.</span></span>
 
 
-<a name="new-task-guides"></a><span data-ttu-id="12194-106">Noví průvodci záznamem úloh</span><span class="sxs-lookup"><span data-stu-id="12194-106">New task guides</span></span>
+<a name="new-task-guides"></a><span data-ttu-id="3cae7-106">Noví průvodci záznamem úloh</span><span class="sxs-lookup"><span data-stu-id="3cae7-106">New task guides</span></span>
 ---------------
 
 <table>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-107">Vytváření sestav ER ve formátu MS Office s vloženými obrázky (část 1: nastavení parametrů)</span><span class="sxs-lookup"><span data-stu-id="12194-107">ER Make reports in MS Office formats with embedded images (Part 1: Set up parameters)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-107">Vytváření sestav ER ve formátu MS Office s vloženými obrázky (část 1: nastavení parametrů)</span><span class="sxs-lookup"><span data-stu-id="3cae7-107">ER Make reports in MS Office formats with embedded images (Part 1: Set up parameters)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-108">Přesunutí naplánovaných kanbanových úloh (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-108">Move scheduled Kanban jobs (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-108">Přesunutí naplánovaných kanbanových úloh (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-108">Move scheduled Kanban jobs (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-109">Správa životního cyklu produktu</span><span class="sxs-lookup"><span data-stu-id="12194-109">Manage product lifecycle state</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-109">Správa životního cyklu produktu</span><span class="sxs-lookup"><span data-stu-id="3cae7-109">Manage product lifecycle state</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-110">Vytvoření stavu životního cyklu produktu k vyloučení produktů z hlavního plánování (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-110">Create a product lifecycle state to exclude products from Master planning (December 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-110">Vytvoření stavu životního cyklu produktu k vyloučení produktů z hlavního plánování (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-110">Create a product lifecycle state to exclude products from Master planning (December 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-111">Nalezení zastaralých variant produktu a přiřazení stavu životního cyklu produktu (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-111">Find obsolete product variants and assign a product lifecycle state (December 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-111">Nalezení zastaralých variant produktu a přiřazení stavu životního cyklu produktu (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-111">Find obsolete product variants and assign a product lifecycle state (December 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-112">Přiřazení stavu životního cyklu produktu k uvolněnému hlavní produktu (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-112">Assign a product lifecycle state to a released product master (December 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-112">Přiřazení stavu životního cyklu produktu k uvolněnému hlavní produktu (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-112">Assign a product lifecycle state to a released product master (December 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-113">Přiřazení stavu životního cyklu produktu k uvolněnému hlavní produktu (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-113">Assign a product lifecycle state to a released product (December 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-113">Přiřazení stavu životního cyklu produktu k uvolněnému hlavní produktu (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-113">Assign a product lifecycle state to a released product (December 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-114">Vytvoření výchozího nového stavu životního cyklu produktu (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-114">Create a default product lifecycle state (December 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-114">Vytvoření výchozího nového stavu životního cyklu produktu (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-114">Create a default product lifecycle state (December 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-115">Vytvoření nového stavu životního cyklu produktu (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-115">Create a new product lifecycle state (December 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-115">Vytvoření nového stavu životního cyklu produktu (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-115">Create a new product lifecycle state (December 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-116">ER Navržení konfigurace pro import dat z externího souboru ve formátu CSV (aktualizace 7.3)</span><span class="sxs-lookup"><span data-stu-id="12194-116">ER Design a configuration to import data from an external file in CSV format (7.3 Update)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-116">ER Navržení konfigurace pro import dat z externího souboru ve formátu CSV (aktualizace 7.3)</span><span class="sxs-lookup"><span data-stu-id="3cae7-116">ER Design a configuration to import data from an external file in CSV format (7.3 Update)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-117">Výrazy návrhu ER pro volání metod aplikačních tříd s argumenty, jejichž hodnoty jsou definovány v době běhu (aktualizace 7.3)</span><span class="sxs-lookup"><span data-stu-id="12194-117">ER Design expressions to call methods of application classes with arguments the values of which are defined at run-time (7.3 Update)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-117">Výrazy návrhu ER pro volání metod aplikačních tříd s argumenty, jejichž hodnoty jsou definovány v době běhu (aktualizace 7.3)</span><span class="sxs-lookup"><span data-stu-id="3cae7-117">ER Design expressions to call methods of application classes with arguments the values of which are defined at run-time (7.3 Update)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-118">Vylepšení ER při analýze příchozích dokladů k aktualizaci dat aplikace (aktualizace 7.3)</span><span class="sxs-lookup"><span data-stu-id="12194-118">ER improvements in parsing incoming documents to update application data (7.3 Update)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-118">Vylepšení ER při analýze příchozích dokladů k aktualizaci dat aplikace (aktualizace 7.3)</span><span class="sxs-lookup"><span data-stu-id="3cae7-118">ER improvements in parsing incoming documents to update application data (7.3 Update)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-119">ER zlepšuje účinnost agregovaných výpočtů provedením na úrovni databáze (aktualizace 7.3)</span><span class="sxs-lookup"><span data-stu-id="12194-119">ER improves the efficiency of aggregate calculations by performing them on database level (7.3 Update)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-119">ER zlepšuje účinnost agregovaných výpočtů provedením na úrovni databáze (aktualizace 7.3)</span><span class="sxs-lookup"><span data-stu-id="3cae7-119">ER improves the efficiency of aggregate calculations by performing them on database level (7.3 Update)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-120">ER zlepšuje účinnost agregovaných výpočtů provedením na úrovni databáze (část 1: Příprava konfigurací)</span><span class="sxs-lookup"><span data-stu-id="12194-120">ER improves the efficiency of aggregate calculations by performing them on database level (Part 1: Prepare configurations)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-120">ER zlepšuje účinnost agregovaných výpočtů provedením na úrovni databáze (část 1: Příprava konfigurací)</span><span class="sxs-lookup"><span data-stu-id="3cae7-120">ER improves the efficiency of aggregate calculations by performing them on database level (Part 1: Prepare configurations)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-121">ER zlepšuje účinnost agregovaných výpočtů provedením na úrovni databáze (část 2: Návrh mapování modelu)</span><span class="sxs-lookup"><span data-stu-id="12194-121">ER improves the efficiency of aggregate calculations by performing them on database level (Part 2: Design model mapping)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-121">ER zlepšuje účinnost agregovaných výpočtů provedením na úrovni databáze (část 2: Návrh mapování modelu)</span><span class="sxs-lookup"><span data-stu-id="3cae7-121">ER improves the efficiency of aggregate calculations by performing them on database level (Part 2: Design model mapping)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-122">Nastavení parametrů pro výpočet počátečních mimořádných odpisů (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-122">Set up parameters to calculate depreciation (December 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-122">Nastavení parametrů pro výpočet počátečních mimořádných odpisů (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-122">Set up parameters to calculate depreciation (December 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-123">Nastavení odpisů skupiny majetku pro knihy odpisů (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-123">Set up asset group depreciation for depreciation books (December 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-123">Nastavení odpisů skupiny majetku pro knihy odpisů (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-123">Set up asset group depreciation for depreciation books (December 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-124">Nastavení fiskálního kalendáře podle dne (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-124">Set up a day-based fiscal calendar (December 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-124">Nastavení fiskálního kalendáře podle dne (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-124">Set up a day-based fiscal calendar (December 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-125">Definování typu směny a průmyslu pro knihy a připojení k dlouhodobému majetku (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-125">Define type of shift and industry for books and attach to fixed asset (December 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-125">Definování typu směny a průmyslu pro knihy a připojení k dlouhodobému majetku (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-125">Define type of shift and industry for books and attach to fixed asset (December 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-126">Definovat odpisové sazby směny (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-126">Define shift depreciation rates (December 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-126">Definovat odpisové sazby směny (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-126">Define shift depreciation rates (December 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-127">Vytvoření skupiny skladových modelů pro kapitálové položky (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-127">Create an inventory model group for capital items (December 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-127">Vytvoření skupiny skladových modelů pro kapitálové položky (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-127">Create an inventory model group for capital items (December 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-128">Připojení kalendáře podle dní ke knize dlouhodobého majetku (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-128">Attach a day-based calendar to a fixed asset book (December 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-128">Připojení kalendáře podle dní ke knize dlouhodobého majetku (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-128">Attach a day-based calendar to a fixed asset book (December 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-129">Převod kapitálového zboží do dlouhodobého majetku (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-129">IN-Transfer of capital items to the fixed asset (December 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-129">Převod kapitálového zboží do dlouhodobého majetku (prosinec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-129">IN-Transfer of capital items to the fixed asset (December 2017)</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<a name="task-guides-updated"></a><span data-ttu-id="12194-130">Aktualizovaní průvodci záznamem úloh</span><span class="sxs-lookup"><span data-stu-id="12194-130">Task Guides updated</span></span>
+<a name="task-guides-updated"></a><span data-ttu-id="3cae7-130">Aktualizovaní průvodci záznamem úloh</span><span class="sxs-lookup"><span data-stu-id="3cae7-130">Task Guides updated</span></span>
 -------------------
 
 <table>
@@ -114,937 +114,937 @@ ms.lasthandoff: 05/24/2018
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-131">Identifikování a nasazení nástrojů pro výběr kandidáta (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-131">Identify and deploy candidate selection tools (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-131">Identifikování a nasazení nástrojů pro výběr kandidáta (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-131">Identify and deploy candidate selection tools (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-132">Konfigurace standardních nákladů pro práci a výdaje (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-132">Configure standard costs for labor and expenses (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-132">Konfigurace standardních nákladů pro práci a výdaje (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-132">Configure standard costs for labor and expenses (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-133">Použití deníku pojistných zásob pro aktualizaci minimální disponibility (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-133">Use the safety stock journal to update minimum coverage (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-133">Použití deníku pojistných zásob pro aktualizaci minimální disponibility (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-133">Use the safety stock journal to update minimum coverage (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-134">Definování schopností prostředku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-134">Define resource capabilities (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-134">Definování schopností prostředku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-134">Define resource capabilities (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-135">Definování skupin prostředků diskrétní výroby (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-135">Define discrete manufacturing resource group (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-135">Definování skupin prostředků diskrétní výroby (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-135">Define discrete manufacturing resource group (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-136">Spolupráce s odběrateli interního dodavatelského řetězce (květen 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-136">Collaborate with internal supply chain customers (May 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-136">Spolupráce s odběrateli interního dodavatelského řetězce (květen 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-136">Collaborate with internal supply chain customers (May 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-137">Zobrazení výstupní plánované mezipodnikové poptávky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-137">View outbound planned intercompany demand (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-137">Zobrazení výstupní plánované mezipodnikové poptávky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-137">View outbound planned intercompany demand (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-138">Vytvoření nového rozvržení skladu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-138">Create a new warehouse layout (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-138">Vytvoření nového rozvržení skladu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-138">Create a new warehouse layout (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-139">Zadání a porovnání nabídek pro požadavek na nabídku a přidělení smlouvy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-139">Enter and compare RFQ bids and award contracts (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-139">Zadání a porovnání nabídek pro požadavek na nabídku a přidělení smlouvy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-139">Enter and compare RFQ bids and award contracts (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-140">Vytvoření požadavku na nabídku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-140">Create a request for quotation (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-140">Vytvoření požadavku na nabídku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-140">Create a request for quotation (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-141">Porovnání aktivních, odhadovaných a realizovaných nákladů u výrobní zakázky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-141">Compare active, estimated, and realized costs on a production order (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-141">Porovnání aktivních, odhadovaných a realizovaných nákladů u výrobní zakázky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-141">Compare active, estimated, and realized costs on a production order (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-142">Zobrazení aktuálního stavu NV u výrobní zakázky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-142">View current WIP status on a production order (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-142">Zobrazení aktuálního stavu NV u výrobní zakázky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-142">View current WIP status on a production order (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-143">Konfigurace fakturování mezipodnikového projektu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-143">Configure intercompany project invoicing (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-143">Konfigurace fakturování mezipodnikového projektu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-143">Configure intercompany project invoicing (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-144">Vytváření faktur prodejních objednávek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-144">Create sales order invoices (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-144">Vytváření faktur prodejních objednávek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-144">Create sales order invoices (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-145">Vytváření online kanálů a definování atributů kanálu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-145">Create online channels and define channel attributes (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-145">Vytváření online kanálů a definování atributů kanálu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-145">Create online channels and define channel attributes (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-146">Zaznamenání příjmu zboží na nákupní objednávce (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-146">Record the receipt of goods on the purchase order (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-146">Zaznamenání příjmu zboží na nákupní objednávce (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-146">Record the receipt of goods on the purchase order (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-147">Vytvoření nákupní objednávky projektu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-147">Create project purchase order (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-147">Vytvoření nákupní objednávky projektu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-147">Create project purchase order (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-148">Nastavení informací o zdrojích projektu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-148">Set up project resource information (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-148">Nastavení informací o zdrojích projektu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-148">Set up project resource information (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-149">Odesílání a schvalování revizí projektových rozpočtů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-149">Submit and approve project budget revisions (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-149">Odesílání a schvalování revizí projektových rozpočtů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-149">Submit and approve project budget revisions (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-150">Odesílání a schvalování rozpočtů projektů (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-150">Submit and approve project budgets (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-150">Odesílání a schvalování rozpočtů projektů (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-150">Submit and approve project budgets (November 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-151">Povolení tisku popisku registrační značky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-151">Enable license plate label printing (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-151">Povolení tisku popisku registrační značky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-151">Enable license plate label printing (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-152">Inicializace úrovní zásob ve skladu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-152">Initialize stock levels in the warehouse (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-152">Inicializace úrovní zásob ve skladu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-152">Initialize stock levels in the warehouse (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-153">Vytvoření smlouvy bankovního zařízení pro akreditiv (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-153">Create a bank facility agreement for a letter of credit (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-153">Vytvoření smlouvy bankovního zařízení pro akreditiv (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-153">Create a bank facility agreement for a letter of credit (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-154">Povolení procesu mezd pro čas a docházku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-154">Enable the payroll process for time and attendance (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-154">Povolení procesu mezd pro čas a docházku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-154">Enable the payroll process for time and attendance (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-155">Schválit a zaúčtovat rozvrhy projektu</span><span class="sxs-lookup"><span data-stu-id="12194-155">Approve and post project timesheets</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-155">Schválit a zaúčtovat rozvrhy projektu</span><span class="sxs-lookup"><span data-stu-id="3cae7-155">Approve and post project timesheets</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-156">Vytvoření účetních struktur (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-156">Create account structures (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-156">Vytvoření účetních struktur (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-156">Create account structures (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-157">Vytvoření hlavního účtu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-157">Create a main account (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-157">Vytvoření hlavního účtu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-157">Create a main account (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-158">Účtování periodických deníků (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-158">Post periodic journals (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-158">Účtování periodických deníků (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-158">Post periodic journals (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-159">Vytvoření a zobrazení schémat časového rozlišení (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-159">Create accrual schemes (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-159">Vytvoření a zobrazení schémat časového rozlišení (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-159">Create accrual schemes (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-160">Uzavření fiskálního roku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-160">Close the fiscal year (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-160">Uzavření fiskálního roku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-160">Close the fiscal year (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-161">Vytváření skupin oprávnění POS (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-161">Create POS permission groups (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-161">Vytváření skupin oprávnění POS (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-161">Create POS permission groups (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-162">Používání cross dockingu pro distribuci produktů z přijímacího skladu do obchodů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-162">Cross-dock products from receiving warehouse to stores (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-162">Používání cross dockingu pro distribuci produktů z přijímacího skladu do obchodů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-162">Cross-dock products from receiving warehouse to stores (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-163">Zadání produktů z distribučního centra do obchodu pomocí metody buyer's push (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-163">Push products from distribution center to store using buyer's push (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-163">Zadání produktů z distribučního centra do obchodu pomocí metody buyer's push (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-163">Push products from distribution center to store using buyer's push (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-164">Nastavení pravidel a parametrů pro cross docking a metodu buyer's push (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-164">Set up rules and parameters for cross docking and buyer's push (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-164">Nastavení pravidel a parametrů pro cross docking a metodu buyer's push (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-164">Set up rules and parameters for cross docking and buyer's push (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-165">Úpravy maloobchodních cen (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-165">Retail price adjustments (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-165">Úpravy maloobchodních cen (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-165">Retail price adjustments (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-166">Základní cena a obchodní smlouvy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-166">Base price and trade agreements (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-166">Základní cena a obchodní smlouvy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-166">Base price and trade agreements (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-167">Cenová pravidla kategorií pro vytváření obchodních smluv (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-167">Category pricing rules to create trade agreements (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-167">Cenová pravidla kategorií pro vytváření obchodních smluv (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-167">Category pricing rules to create trade agreements (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-168">Uvolnění produktu / základního produktu právnickým osobám (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-168">Release a product/product master to legal entities (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-168">Uvolnění produktu / základního produktu právnickým osobám (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-168">Release a product/product master to legal entities (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-169">Vytvoření základního produktu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-169">Create a product master (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-169">Vytvoření základního produktu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-169">Create a product master (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-170">Vytvoření produktu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-170">Create a product (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-170">Vytvoření produktu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-170">Create a product (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-171">Definování bodů věrnostních odměn (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-171">Define loyalty reward points (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-171">Definování bodů věrnostních odměn (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-171">Define loyalty reward points (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-172">Návrh vztahů mezi organizačními jednotkami (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-172">Design the relationships between organizational units (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-172">Návrh vztahů mezi organizačními jednotkami (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-172">Design the relationships between organizational units (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-173">ES-00016 Opravná fakturace</span><span class="sxs-lookup"><span data-stu-id="12194-173">ES-00016 Credit invoicing</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-173">ES-00016 Opravná fakturace</span><span class="sxs-lookup"><span data-stu-id="3cae7-173">ES-00016 Credit invoicing</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-174">EE-00004 Odkaz na původní fakturu (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-174">EE-00004 Original invoice reference (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-174">EE-00004 Odkaz na původní fakturu (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-174">EE-00004 Original invoice reference (July 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-175">Definování cyklické inventury (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-175">Define cycle counting (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-175">Definování cyklické inventury (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-175">Define cycle counting (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-176">Úprava úrovně zásob ve skladu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-176">Adjust stock levels in the warehouse (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-176">Úprava úrovně zásob ve skladu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-176">Adjust stock levels in the warehouse (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-177">Vypracování plánu kariérního postupu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-177">Develop succession plan (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-177">Vypracování plánu kariérního postupu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-177">Develop succession plan (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-178">Vytvoření a otevření požadavku na pozici (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-178">Develop and open job requisition (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-178">Vytvoření a otevření požadavku na pozici (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-178">Develop and open job requisition (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-179">Vývoj struktury platu/kompenzace a plánů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-179">Develop salary/compensation structure and plans (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-179">Vývoj struktury platu/kompenzace a plánů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-179">Develop salary/compensation structure and plans (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-180">Definování programu zaměstnaneckých výhod (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-180">Deliver employee benefits program (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-180">Definování programu zaměstnaneckých výhod (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-180">Deliver employee benefits program (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-181">Správa dovolené (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-181">Manage leave of absence (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-181">Správa dovolené (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-181">Manage leave of absence (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-182">Vygenerování plánu s omezeními (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-182">Generate a constrained plan (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-182">Vygenerování plánu s omezeními (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-182">Generate a constrained plan (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-183">Vytvoření provozního prostředku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-183">Create an operations resource (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-183">Vytvoření provozního prostředku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-183">Create an operations resource (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-184">NL-00010 Elektronická daňová přiznání (EVAT) (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-184">NL-00010 Electronic tax declarations (EVAT) (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-184">NL-00010 Elektronická daňová přiznání (EVAT) (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-184">NL-00010 Electronic tax declarations (EVAT) (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-185">JP-00027 Formulář 26 pro přiznání odepisovatelné daně (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-185">JP-00027 Form 26 for depreciable tax declaration (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-185">JP-00027 Formulář 26 pro přiznání odepisovatelné daně (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-185">JP-00027 Form 26 for depreciable tax declaration (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-186">DE-00003 El. přenos přiznání DPH (ELSTER) (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-186">DE-00003 Electronic transmission of VAT declaration (ELSTER) (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-186">DE-00003 El. přenos přiznání DPH (ELSTER) (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-186">DE-00003 Electronic transmission of VAT declaration (ELSTER) (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-187">Definování zásad auditu pro zdrojové dokumenty (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-187">Define audit policies for source documents (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-187">Definování zásad auditu pro zdrojové dokumenty (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-187">Define audit policies for source documents (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-188">Vytvoření plánu pro pracoviště (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-188">Create a plan for a site (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-188">Vytvoření plánu pro pracoviště (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-188">Create a plan for a site (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-189">Vytvoření plánu pro pracoviště (Průvodce záznamem úloh) (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-189">Create a schedule for a site (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-189">Vytvoření plánu pro pracoviště (Průvodce záznamem úloh) (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-189">Create a schedule for a site (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-190">Prozkoumání nebo vyřešení výjimek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-190">Research or resolve exceptions (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-190">Prozkoumání nebo vyřešení výjimek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-190">Research or resolve exceptions (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-191">Auditování faktur a klíčových dat pro závazky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-191">Audit invoices and key data in accounts payable (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-191">Auditování faktur a klíčových dat pro závazky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-191">Audit invoices and key data in accounts payable (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-192">FR-00018 Denní výpočet úroku pro prodlení a paušál ve faktuře a v upomínce (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-192">FR-00018 Daily interest calculation for late payment and lump sum in the invoice and collection letter (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-192">FR-00018 Denní výpočet úroku pro prodlení a paušál ve faktuře a v upomínce (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-192">FR-00018 Daily interest calculation for late payment and lump sum in the invoice and collection letter (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-193">EE-00015 Nástroj pro generování platební reference (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-193">EE-00015 Payment reference generation tool (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-193">EE-00015 Nástroj pro generování platební reference (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-193">EE-00015 Payment reference generation tool (November 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-194">MX-00010 E-fakturace – CFDI (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-194">MX-00010 E-invoicing CFDI (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-194">MX-00010 E-fakturace – CFDI (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-194">MX-00010 E-invoicing CFDI (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-195">MY-00005 Tisk daňové faktury (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-195">MY-00005 Print GST tax invoices (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-195">MY-00005 Tisk daňové faktury (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-195">MY-00005 Print GST tax invoices (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-196">MX-00007 ID registrace odběratele a další informace (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-196">MX-00007 Customer registration IDs and other information (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-196">MX-00007 ID registrace odběratele a další informace (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-196">MX-00007 Customer registration IDs and other information (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-197">NO-00002 Platba odběratele na základě ID platby (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-197">NO-00002 Customer payment based on payment ID (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-197">NO-00002 Platba odběratele na základě ID platby (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-197">NO-00002 Customer payment based on payment ID (November 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-198">CN-00010 Čínská hierarchie účtové osnovy (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-198">CN-00010 Chinese hierarchy of chart of accounts (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-198">CN-00010 Čínská hierarchie účtové osnovy (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-198">CN-00010 Chinese hierarchy of chart of accounts (November 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-199">JP-00005 Vstupní deník na stránce účtu T (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-199">JP-00005 Input journal in T account page (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-199">JP-00005 Vstupní deník na stránce účtu T (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-199">JP-00005 Input journal in T account page (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-200">HU-00001 Výpočet směnného kurzu (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-200">HU-00001 Exchange rate calculation (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-200">HU-00001 Výpočet směnného kurzu (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-200">HU-00001 Exchange rate calculation (November 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-201">CN-00004 Přidělení odpisů dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-201">CN-00004 Fixed asset depreciation allocation (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-201">CN-00004 Přidělení odpisů dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-201">CN-00004 Fixed asset depreciation allocation (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-202">DE-00002 Odpisy oprav u dodatečných pořízení za druhý rok (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-202">DE-00002 Depreciate adjustments for additional acquisitions in the second year (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-202">DE-00002 Odpisy oprav u dodatečných pořízení za druhý rok (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-202">DE-00002 Depreciate adjustments for additional acquisitions in the second year (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-203">FR-00002 Výpisy z účtu odběratele a dodavatele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-203">FR-00002 Customer and vendor account statements (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-203">FR-00002 Výpisy z účtu odběratele a dodavatele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-203">FR-00002 Customer and vendor account statements (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-204">NL-00003 Integrace Semansys XBRL (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-204">NL-00003 Semansys XBRL integration (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-204">NL-00003 Integrace Semansys XBRL (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-204">NL-00003 Semansys XBRL integration (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-205">BE-00011 BLWI (Zůstatek platby)</span><span class="sxs-lookup"><span data-stu-id="12194-205">BE-00011 BLWI (Payment balance)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-205">BE-00011 BLWI (Zůstatek platby)</span><span class="sxs-lookup"><span data-stu-id="3cae7-205">BE-00011 BLWI (Payment balance)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-206">MX-00020 Vytvoření mexického účetního výkazu elektronické hlavní knihy verze 1.1 (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-206">MX-00020 Produce electronic ledger accounting report version 1.1 (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-206">MX-00020 Vytvoření mexického účetního výkazu elektronické hlavní knihy verze 1.1 (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-206">MX-00020 Produce electronic ledger accounting report version 1.1 (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-207">MX-00008: ID registrace dodavatele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-207">MX-00008: Vendor registration IDs (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-207">MX-00008: ID registrace dodavatele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-207">MX-00008: Vendor registration IDs (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-208">IT-00002 Modello 770</span><span class="sxs-lookup"><span data-stu-id="12194-208">IT-00002 Modello 770</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-208">IT-00002 Modello 770</span><span class="sxs-lookup"><span data-stu-id="3cae7-208">IT-00002 Modello 770</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-209">MY-00004 Správa debetu a kreditu dodavatele pro daň GST (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-209">MY-00004 Manage vendor debit and credit for GST (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-209">MY-00004 Správa debetu a kreditu dodavatele pro daň GST (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-209">MY-00004 Manage vendor debit and credit for GST (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-210">MY-00007 Faktury vystavené odběratelem (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-210">MY-00007 Self-billed invoices (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-210">MY-00007 Faktury vystavené odběratelem (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-210">MY-00007 Self-billed invoices (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-211">CN-00016 Protokol operací uživatele podle čínského pracovní pravidla (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-211">CN-00016 User operation log by China working rule (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-211">CN-00016 Protokol operací uživatele podle čínského pracovní pravidla (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-211">CN-00016 User operation log by China working rule (November 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-212">BR-00057 Brazilská daň v prodejní nabídce (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-212">BR-00057 Tax in sales quotations (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-212">BR-00057 Brazilská daň v prodejní nabídce (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-212">BR-00057 Tax in sales quotations (July 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-213">BR-00031 Výpočet daně v nákupních nabídkách (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-213">BR-00031 Calculate tax on purchase quotations (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-213">BR-00031 Výpočet daně v nákupních nabídkách (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-213">BR-00031 Calculate tax on purchase quotations (July 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-214">BR-00080 Správa textů fiskálních dokumentů v dokumentech zásobování (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-214">BR-00080 Manage fiscal document text in procurement documents (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-214">BR-00080 Správa textů fiskálních dokumentů v dokumentech zásobování (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-214">BR-00080 Manage fiscal document text in procurement documents (July 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-215">BR-00038 Vystavení fiskálních dokumentů odběratele (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-215">BR-00038 Issue customer fiscal documents (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-215">BR-00038 Vystavení fiskálních dokumentů odběratele (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-215">BR-00038 Issue customer fiscal documents (July 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-216">BR-00084 Vystavení fiskálních dokumentů odběratele (služby) (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-216">BR-00084 Issue customer fiscal documents (services) (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-216">BR-00084 Vystavení fiskálních dokumentů odběratele (služby) (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-216">BR-00084 Issue customer fiscal documents (services) (July 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-217">BR-00085 Vystavení fiskálních dokumentů odběratele (dlouhodobý majetek) (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-217">BR-00085 Issue customer fiscal documents (fixed assets) (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-217">BR-00085 Vystavení fiskálních dokumentů odběratele (dlouhodobý majetek) (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-217">BR-00085 Issue customer fiscal documents (fixed assets) (July 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-218">BR-00086 Vystavení fiskálních dokumentů odběratele (projekt) (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-218">BR-00086 Issue customer fiscal documents (project) (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-218">BR-00086 Vystavení fiskálních dokumentů odběratele (projekt) (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-218">BR-00086 Issue customer fiscal documents (project) (July 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-219">BR-00087 Vystavení fiskálních dokumentů odběratele (pro koncové uživatele) (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-219">BR-00087 Issue customer fiscal documents (for end users) (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-219">BR-00087 Vystavení fiskálních dokumentů odběratele (pro koncové uživatele) (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-219">BR-00087 Issue customer fiscal documents (for end users) (July 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-220">BR-00088 Vystavení fiskálních dokumentů odběratele (pro odběratele SUFRAMA) (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-220">BR-00088 Issue customer fiscal documents (for SUFRAMA customers) (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-220">BR-00088 Vystavení fiskálních dokumentů odběratele (pro odběratele SUFRAMA) (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-220">BR-00088 Issue customer fiscal documents (for SUFRAMA customers) (July 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-221">BR-00050 Vedlejší náklady na volných fakturách (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-221">BR-00050 Miscellaneous charge on free text invoices (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-221">BR-00050 Vedlejší náklady na volných fakturách (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-221">BR-00050 Miscellaneous charge on free text invoices (July 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-222">BR-00053 NF-e 3.10 (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-222">BR-00053 NF-e 3.10 (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-222">BR-00053 NF-e 3.10 (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-222">BR-00053 NF-e 3.10 (July 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-223">BR-00058 Automatické předávání fiskálních dokumentů NF-e (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-223">BR-00058 Automatic transmission of NF-e fiscal documents (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-223">BR-00058 Automatické předávání fiskálních dokumentů NF-e (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-223">BR-00058 Automatic transmission of NF-e fiscal documents (July 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-224">BR-00042 Srážkové daně pro platby odběratelů (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-224">BR-00042 Withholding taxes on customers payments (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-224">BR-00042 Srážkové daně pro platby odběratelů (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-224">BR-00042 Withholding taxes on customers payments (July 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-225">BR-10016 Nefiskální operace (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-225">BR-10016 Non-fiscal operations (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-225">BR-10016 Nefiskální operace (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-225">BR-10016 Non-fiscal operations (July 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-226">BR-00076 Dluhopisy projektů (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-226">BR-00076 Project debit notes (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-226">BR-00076 Dluhopisy projektů (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-226">BR-00076 Project debit notes (July 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-227">BR-00067 Správa elektronických plateb pro platby dodavatelů (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-227">BR-00067 Electronic payment management for vendor payments (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-227">BR-00067 Správa elektronických plateb pro platby dodavatelů (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-227">BR-00067 Electronic payment management for vendor payments (July 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-228">BR-00061 Srážkové daně pro platby dodavatelů (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-228">BR-00061 Withholding taxes on vendors payments (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-228">BR-00061 Srážkové daně pro platby dodavatelů (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-228">BR-00061 Withholding taxes on vendors payments (July 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-229">BR-00024 Přijetí fiskálních dokumentů dodavatele (produkty) (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-229">BR-00024 Receive vendor fiscal document (products) (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-229">BR-00024 Přijetí fiskálních dokumentů dodavatele (produkty) (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-229">BR-00024 Receive vendor fiscal document (products) (July 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-230">BR-00082 Přijetí fiskálního dokumentu dodavatele (dlouhodobý majetek – dlouhodobě vratná daň ICMS) (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-230">BR-00082 Receive vendor fiscal document (fixed assets - ICMS long term recoverable) (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-230">BR-00082 Přijetí fiskálního dokumentu dodavatele (dlouhodobý majetek – dlouhodobě vratná daň ICMS) (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-230">BR-00082 Receive vendor fiscal document (fixed assets - ICMS long term recoverable) (July 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-231">BR-00014 Přijetí fiskálního dokumentu dodavatele (dlouhodobý majetek – dlouhodobě vratné daně PIS a COFINS) (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-231">BR-00014 Receive vendor fiscal document (fixed assets - PIS and COFINS long term recoverable) (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-231">BR-00014 Přijetí fiskálního dokumentu dodavatele (dlouhodobý majetek – dlouhodobě vratné daně PIS a COFINS) (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-231">BR-00014 Receive vendor fiscal document (fixed assets - PIS and COFINS long term recoverable) (July 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-232">BR-00033 Vystavení fiskálních dokumentů pro dodavatele (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-232">BR-00033 Issue fiscal document for vendors (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-232">BR-00033 Vystavení fiskálních dokumentů pro dodavatele (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-232">BR-00033 Issue fiscal document for vendors (July 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-233">BR-00002 Daňové atributy fiskálního subjektu (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-233">BR-00002 Fiscal establishment tax attributes (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-233">BR-00002 Daňové atributy fiskálního subjektu (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-233">BR-00002 Fiscal establishment tax attributes (July 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-234">BR-00009 Srážkové daně (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-234">BR-00009 Withholding taxes (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-234">BR-00009 Srážkové daně (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-234">BR-00009 Withholding taxes (July 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-235">BR-10005  Vyměření daně pro daň ISS (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-235">BR-10005 Tax assessment for ISS tax (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-235">BR-10005  Vyměření daně pro daň ISS (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-235">BR-10005 Tax assessment for ISS tax (July 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-236">BR-00071 Vystavení fiskálních dokumentů převodu daňového dobropisu ICMS (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-236">BR-00071 Issue ICMS tax credit transfer fiscal documents (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-236">BR-00071 Vystavení fiskálních dokumentů převodu daňového dobropisu ICMS (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-236">BR-00071 Issue ICMS tax credit transfer fiscal documents (July 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-237">BR-00072 Vystavení fiskálních dokumentů převodu daňového dobropisu ICMS (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-237">BR-00072 Issue ICMS tax credit fiscal documents (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-237">BR-00072 Vystavení fiskálních dokumentů převodu daňového dobropisu ICMS (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-237">BR-00072 Issue ICMS tax credit fiscal documents (July 2017)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-238">Zadávání prodejních smluv (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-238">Enter sales agreements (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-238">Zadávání prodejních smluv (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-238">Enter sales agreements (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-239">Správa blokování objednávek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-239">Manage order holds (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-239">Správa blokování objednávek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-239">Manage order holds (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-240">Vytvoření a úpravy prodejních objednávek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-240">Create sales orders (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-240">Vytvoření a úpravy prodejních objednávek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-240">Create sales orders (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-241">Vytvoření plánu dodávek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-241">Create delivery schedule (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-241">Vytvoření plánu dodávek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-241">Create delivery schedule (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-242">BR-00041 Dodací listy (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="12194-242">BR-00041 Delivery slips (July 2017)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-242">BR-00041 Dodací listy (červenec 2017)</span><span class="sxs-lookup"><span data-stu-id="3cae7-242">BR-00041 Delivery slips (July 2017)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-243">Definování finančních dimenzí (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-243">Define financial dimensions (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-243">Definování finančních dimenzí (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-243">Define financial dimensions (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-244">Vytvoření a přiřazení dokumentu vstupního snížení (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-244">Create and assign a reduction entry document (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-244">Vytvoření a přiřazení dokumentu vstupního snížení (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-244">Create and assign a reduction entry document (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-245">Pořízení dlouhodobého majetku a nárokování subvencí státního grantu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-245">Acquire a fixed asset and claim for the government grant subsidy (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-245">Pořízení dlouhodobého majetku a nárokování subvencí státního grantu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-245">Acquire a fixed asset and claim for the government grant subsidy (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-246">Odepsání dlouhodobého majetku se zaúčtovanou položkou snížení hodnoty (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-246">Depreciate fixed assets with reduction entry posted (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-246">Odepsání dlouhodobého majetku se zaúčtovanou položkou snížení hodnoty (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-246">Depreciate fixed assets with reduction entry posted (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-247">Vyřazení dlouhodobého majetku s položkou snížení hodnoty (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-247">Dispose of a fixed asset with reduction entry (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-247">Vyřazení dlouhodobého majetku s položkou snížení hodnoty (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-247">Dispose of a fixed asset with reduction entry (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-248">Vytvoření skupin jednotky CGU a jednotek generování hotovosti (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-248">Create CGU groups and cash generating units (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-248">Vytvoření skupin jednotky CGU a jednotek generování hotovosti (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-248">Create CGU groups and cash generating units (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-249">Přidělení zůstatkové hodnoty sdíleného majetku a nehmotného jmění k penězotvorným jednotkám (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-249">Allocate carrying amount of shared asset and goodwill to cash generating units (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-249">Přidělení zůstatkové hodnoty sdíleného majetku a nehmotného jmění k penězotvorným jednotkám (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-249">Allocate carrying amount of shared asset and goodwill to cash generating units (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-250">Vytvoření a potvrzení testu uznání (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-250">Create and confirm a recognition test (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-250">Vytvoření a potvrzení testu uznání (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-250">Create and confirm a recognition test (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-251">Návrh a zaúčtování částky snížení hodnoty pro penězotvornou jednotku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-251">Propose and post the impairment amount on a cash generating unit (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-251">Návrh a zaúčtování částky snížení hodnoty pro penězotvornou jednotku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-251">Propose and post the impairment amount on a cash generating unit (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-252">Vytvoření a přiřazení skupiny vybavení (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-252">Create and assign an equipment group (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-252">Vytvoření a přiřazení skupiny vybavení (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-252">Create and assign an equipment group (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-253">Vytvoření plánu zrychleného odpisování a jeho přiřazení knize (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-253">Create accelerated depreciation profile and assign it to book (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-253">Vytvoření plánu zrychleného odpisování a jeho přiřazení knize (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-253">Create accelerated depreciation profile and assign it to book (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-254">Konfigurace parametrů zrychleného odpisování a účetních profilů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-254">Configure accelerated depreciation parameters and posting profiles (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-254">Konfigurace parametrů zrychleného odpisování a účetních profilů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-254">Configure accelerated depreciation parameters and posting profiles (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-255">Návrh a zaúčtování zrychleného odpisování (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-255">Propose and post accelerated depreciation (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-255">Návrh a zaúčtování zrychleného odpisování (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-255">Propose and post accelerated depreciation (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-256">Vytvoření a přidružení zařízení (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-256">Create and associate a device (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-256">Vytvoření a přidružení zařízení (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-256">Create and associate a device (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-257">Vytvoření a přidružení hardwarové stanice (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-257">Create and associate a hardware station (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-257">Vytvoření a přidružení hardwarové stanice (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-257">Create and associate a hardware station (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-258">Samoobslužné stažení hardwarové stanice (květen 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-258">Perform self-service to download hardware station (May 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-258">Samoobslužné stažení hardwarové stanice (květen 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-258">Perform self-service to download hardware station (May 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-259">Vytvoření, výpočet a zaúčtování výkazu pro maloobchod (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-259">Create, calculate, and post a statement for a retail store (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-259">Vytvoření, výpočet a zaúčtování výkazu pro maloobchod (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-259">Create, calculate, and post a statement for a retail store (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-260">Konfigurace a spuštění úlohy pro výpočet výkazů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-260">Configure and run a job to calculate statements (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-260">Konfigurace a spuštění úlohy pro výpočet výkazů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-260">Configure and run a job to calculate statements (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-261">Konfigurace a spuštění úlohy pro zaúčtování výkazů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-261">Configure and run a job to post statements (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-261">Konfigurace a spuštění úlohy pro zaúčtování výkazů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-261">Configure and run a job to post statements (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-262">Zaúčtování online prodeje a plateb (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-262">Post online sales and payments (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-262">Zaúčtování online prodeje a plateb (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-262">Post online sales and payments (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-263">Nastavení a generování informací o splatnosti pohledávek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-263">Set up and generate accounts receivable aging information (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-263">Nastavení a generování informací o splatnosti pohledávek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-263">Set up and generate accounts receivable aging information (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-264">Zadání dat faktury do závazků s použitím faktury dodavatele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-264">Key invoice data into accounts payable using a vendor invoice (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-264">Zadání dat faktury do závazků s použitím faktury dodavatele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-264">Key invoice data into accounts payable using a vendor invoice (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-265">Vytvořit nový dlouhodobý majetek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-265">Create a fixed asset (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-265">Vytvořit nový dlouhodobý majetek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-265">Create a fixed asset (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-266">Nastavení daňových úřadů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-266">Set up sales tax authorities (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-266">Nastavení daňových úřadů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-266">Set up sales tax authorities (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-267">Nastavení období vyrovnání DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-267">Set up sales tax settlement periods (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-267">Nastavení období vyrovnání DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-267">Set up sales tax settlement periods (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-268">Nastavení účetních skupin pro DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-268">Set up ledger posting groups for sales tax (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-268">Nastavení účetních skupin pro DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-268">Set up ledger posting groups for sales tax (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-269">Nastavení kódů vykazování DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-269">Set up sales tax reporting codes (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-269">Nastavení kódů vykazování DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-269">Set up sales tax reporting codes (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-270">Nastavení kódů vykazování DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-270">Set up sales tax codes (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-270">Nastavení kódů vykazování DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-270">Set up sales tax codes (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-271">Nastavení skupin DPH a skupin DPH položky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-271">Set up sales tax groups and item sales tax groups (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-271">Nastavení skupin DPH a skupin DPH položky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-271">Set up sales tax groups and item sales tax groups (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-272">Nastavit skupiny srážkové daně (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-272">Set up withholding tax (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-272">Nastavit skupiny srážkové daně (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-272">Set up withholding tax (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-273">Vytvoření platby DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-273">Create a sales tax payment (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-273">Vytvoření platby DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-273">Create a sales tax payment (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-274">Vytváření transakcí DPH v dokladech (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-274">Create sales tax transactions on documents (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-274">Vytváření transakcí DPH v dokladech (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-274">Create sales tax transactions on documents (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-275">Výpočet a úprava DPH na faktuře dodavatele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-275">Calculate and adjust sales tax on a vendor invoice (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-275">Výpočet a úprava DPH na faktuře dodavatele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-275">Calculate and adjust sales tax on a vendor invoice (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-276">GB-00002 Nastavení skupin DPH položek pro stornovací poplatek DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-276">GB-00002 Set up sales tax groups for reverse charge VAT (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-276">GB-00002 Nastavení skupin DPH položek pro stornovací poplatek DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-276">GB-00002 Set up sales tax groups for reverse charge VAT (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-277">GB-00002 Nastavení skupin DPH položky pro stornovací poplatek DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-277">GB-00002 Set up item sales tax groups for reverse charge VAT (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-277">GB-00002 Nastavení skupin DPH položky pro stornovací poplatek DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-277">GB-00002 Set up item sales tax groups for reverse charge VAT (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-278">GB-00002 Nastavení skupin položek DPH stornovacího poplatku, parametrů a pravidel (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-278">GB-00002 Set up reverse charge VAT item groups, rules, and parameters (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-278">GB-00002 Nastavení skupin položek DPH stornovacího poplatku, parametrů a pravidel (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-278">GB-00002 Set up reverse charge VAT item groups, rules, and parameters (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-279">MX-00006 Nastavení kódů vykazování DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-279">MX-00006 Set up sales tax codes (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-279">MX-00006 Nastavení kódů vykazování DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-279">MX-00006 Set up sales tax codes (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-280">MX-00010 Nastavení parametrů pro elektronickou fakturu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-280">MX-00010 Set parameters for an electronic invoice (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-280">MX-00010 Nastavení parametrů pro elektronickou fakturu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-280">MX-00010 Set parameters for an electronic invoice (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-281">MX-00010 Dotazy a tisk elektronické faktury (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-281">MX-00010 Inquire and print an electronic invoice (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-281">MX-00010 Dotazy a tisk elektronické faktury (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-281">MX-00010 Inquire and print an electronic invoice (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-282">MX-00010 Zrušení elektronické faktury (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-282">MX-00010 Cancel an electronic invoice (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-282">MX-00010 Zrušení elektronické faktury (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-282">MX-00010 Cancel an electronic invoice (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-283">MX-00010 Zaúčtování volné faktury (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-283">MX-00010 Post a free text invoice (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-283">MX-00010 Zaúčtování volné faktury (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-283">MX-00010 Post a free text invoice (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-284">MY-00010 GST – generování souborů GAF v požadovaném formátu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-284">MY-00010 GST - Generate GAF files in the required format (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-284">MY-00010 GST – generování souborů GAF v požadovaném formátu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-284">MY-00010 GST - Generate GAF files in the required format (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-285">Zobrazení zaúčtovaných transakcí DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-285">View posted sales tax transactions (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-285">Zobrazení zaúčtovaných transakcí DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-285">View posted sales tax transactions (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-286">Definování nových pracovních míst (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-286">Define new jobs (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-286">Definování nových pracovních míst (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-286">Define new jobs (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-287">Konfigurace hlavních účtů pro zaúčtování povinnosti vyřazení majetku a sazeb slev na trhu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-287">Configure main accounts for asset retirement obligation posting and market discount rates (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-287">Konfigurace hlavních účtů pro zaúčtování povinnosti vyřazení majetku a sazeb slev na trhu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-287">Configure main accounts for asset retirement obligation posting and market discount rates (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-288">Nastavení dokumentů povinností vyřazení majetku a zadání částky povinnosti vyřazení majetku u dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-288">Set up asset retirement obligation documents and enter ARO amount on a fixed asset (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-288">Nastavení dokumentů povinností vyřazení majetku a zadání částky povinnosti vyřazení majetku u dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-288">Set up asset retirement obligation documents and enter ARO amount on a fixed asset (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-289">Pořízení dlouhodobého majetku s povinností vyřazení majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-289">Acquire a fixed asset with asset retirement obligations (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-289">Pořízení dlouhodobého majetku s povinností vyřazení majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-289">Acquire a fixed asset with asset retirement obligations (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-290">Odepsání a časové rozlišení úrokových výdajů pro povinnosti vyřazení majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-290">Depreciate and accrue the interest expense for asset retirement obligations (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-290">Odepsání a časové rozlišení úrokových výdajů pro povinnosti vyřazení majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-290">Depreciate and accrue the interest expense for asset retirement obligations (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-291">Úprava odhadu povinnosti vyřazení majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-291">Adjust an asset retirement obligation estimate (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-291">Úprava odhadu povinnosti vyřazení majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-291">Adjust an asset retirement obligation estimate (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-292">Povolení formátu souboru plateb JBA (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-292">Enable JBA payment file format (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-292">Povolení formátu souboru plateb JBA (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-292">Enable JBA payment file format (November 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-293">Vygenerování souboru plateb EFT ve formátu JBA (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-293">Generate an EFT payment file with JBA format (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-293">Vygenerování souboru plateb EFT ve formátu JBA (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-293">Generate an EFT payment file with JBA format (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-294">Import platby odběratele ve formátu souboru JBA (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-294">Import a customer payment with JBA file format (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-294">Import platby odběratele ve formátu souboru JBA (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-294">Import a customer payment with JBA file format (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-295">Zadání plánu odpisové sazby a přiřazení k odpisovému plánu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-295">Enter a depreciation rate schedule and associate to a depreciation profile (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-295">Zadání plánu odpisové sazby a přiřazení k odpisovému plánu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-295">Enter a depreciation rate schedule and associate to a depreciation profile (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-296">Konfigurace odpisového plánu a účetního profilu pro další odpisy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-296">Configure depreciation profile and posting profile for additional depreciation (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-296">Konfigurace odpisového plánu a účetního profilu pro další odpisy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-296">Configure depreciation profile and posting profile for additional depreciation (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-297">Vytvoření dlouhodobého majetku s dodatečnými odpisy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-297">Create a fixed asset with additional depreciation (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-297">Vytvoření dlouhodobého majetku s dodatečnými odpisy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-297">Create a fixed asset with additional depreciation (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-298">Návrh dodatečného odpisování (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-298">Propose additional depreciation (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-298">Návrh dodatečného odpisování (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-298">Propose additional depreciation (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-299">Konfigurace odpisového plánu a účetního profilu pro speciální odpisy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-299">Configure depreciation profile and posting profile for special depreciation (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-299">Konfigurace odpisového plánu a účetního profilu pro speciální odpisy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-299">Configure depreciation profile and posting profile for special depreciation (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-300">Vytvoření dlouhodobého majetku se zvláštním odpisovým plánem (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-300">Create a fixed asset with special depreciation profile (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-300">Vytvoření dlouhodobého majetku se zvláštním odpisovým plánem (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-300">Create a fixed asset with special depreciation profile (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-301">Návrh speciálního odpisování (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-301">Propose special depreciation (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-301">Návrh speciálního odpisování (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-301">Propose special depreciation (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-302">Vytvoření majetku s paušálními odpisy s použitím metody rovnoměrného dělení (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-302">Create lump-sum depreciation assets using equally-divided method (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-302">Vytvoření majetku s paušálními odpisy s použitím metody rovnoměrného dělení (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-302">Create lump-sum depreciation assets using equally-divided method (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-303">Změna metody odpisování pro jeden majetek v průběhu životnosti majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-303">Change the depreciation method during the asset life for one asset (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-303">Změna metody odpisování pro jeden majetek v průběhu životnosti majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-303">Change the depreciation method during the asset life for one asset (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-304">Změna metody odpisování pro knihu v průběhu životnosti majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-304">Change the depreciation method during the asset life for book (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-304">Změna metody odpisování pro knihu v průběhu životnosti majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-304">Change the depreciation method during the asset life for book (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-305">Vytvoření a potvrzení souhrnné faktury odběratele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-305">Create and confirm a customer consolidated invoice (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-305">Vytvoření a potvrzení souhrnné faktury odběratele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-305">Create and confirm a customer consolidated invoice (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-306">JP-00011 Opětovné otevření a úprava souhrnné faktury odběratele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-306">JP-00011 Reopen and edit a customer consolidated invoice (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-306">JP-00011 Opětovné otevření a úprava souhrnné faktury odběratele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-306">JP-00011 Reopen and edit a customer consolidated invoice (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-307">MY-00011 02 Generování dluhopisu odběratele pro prodeje projektu (pouze listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-307">MY-00011 02 Generate customer debit for project sales (November 2016 only)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-307">MY-00011 02 Generování dluhopisu odběratele pro prodeje projektu (pouze listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-307">MY-00011 02 Generate customer debit for project sales (November 2016 only)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-308">Změna způsobu odpisování pro více položek dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-308">Change depreciation conventions for multiple fixed assets (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-308">Změna způsobu odpisování pro více položek dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-308">Change depreciation conventions for multiple fixed assets (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-309">Rozdělení dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-309">Split a fixed asset (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-309">Rozdělení dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-309">Split a fixed asset (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-310">Vytvoření a získání majetku z modulu Závazky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-310">Create and acquire assets from accounts payable (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-310">Vytvoření a získání majetku z modulu Závazky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-310">Create and acquire assets from accounts payable (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-311">Nabídka pořízení dlouhodobého majetku (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-311">Propose fixed asset acquisitions (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-311">Nabídka pořízení dlouhodobého majetku (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-311">Propose fixed asset acquisitions (November 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-312">Vytvoření návrhu odpisování (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-312">Create depreciation proposal (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-312">Vytvoření návrhu odpisování (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-312">Create depreciation proposal (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-313">Vyřazení dlouhodobého majetku s použitím volné faktury (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-313">Dispose of a fixed asset using a free text invoice (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-313">Vyřazení dlouhodobého majetku s použitím volné faktury (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-313">Dispose of a fixed asset using a free text invoice (November 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-314">Převedení dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-314">Transfer a fixed asset (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-314">Převedení dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-314">Transfer a fixed asset (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-315">Nastavení účetních profilů dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-315">Set up fixed asset posting profiles (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-315">Nastavení účetních profilů dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-315">Set up fixed asset posting profiles (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-316">Nastavení a vytvoření odpisových plánů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-316">Set up and create depreciation profiles (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-316">Nastavení a vytvoření odpisových plánů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-316">Set up and create depreciation profiles (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-317">Nastavení knih odpisů (pouze květen 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-317">Set up depreciation books (May 2016 only)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-317">Nastavení knih odpisů (pouze květen 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-317">Set up depreciation books (May 2016 only)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-318">Nastavení počátečních mimořádných odpisů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-318">Set up bonus depreciation (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-318">Nastavení počátečních mimořádných odpisů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-318">Set up bonus depreciation (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-319">Zadání příslušenství dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-319">Enter an addition to a fixed asset (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-319">Zadání příslušenství dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-319">Enter an addition to a fixed asset (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-320">Přeřazení dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-320">Reclassify fixed assets (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-320">Přeřazení dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-320">Reclassify fixed assets (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-321">Nastavení oceňovacích modelů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-321">Set up value models (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-321">Nastavení oceňovacích modelů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-321">Set up value models (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-322">Nastavení skupin dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-322">Set up fixed asset groups (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-322">Nastavení skupin dlouhodobého majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-322">Set up fixed asset groups (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-323">GB-00002 Vytvoření nákupní objednávky obsahující položky, na které se vztahuje stornovací poplatek DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-323">GB-00002 Create a purchase order that includes items subject to reverse charge VAT (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-323">GB-00002 Vytvoření nákupní objednávky obsahující položky, na které se vztahuje stornovací poplatek DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-323">GB-00002 Create a purchase order that includes items subject to reverse charge VAT (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-324">GB-00002 Vytvoření prodejní objednávky obsahující položky, na které se vztahuje stornovací poplatek DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-324">GB-00002 Create a sales order that includes items subject to reverse charge VAT (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-324">GB-00002 Vytvoření prodejní objednávky obsahující položky, na které se vztahuje stornovací poplatek DPH (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-324">GB-00002 Create a sales order that includes items subject to reverse charge VAT (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-325">MY-00006 01 Nastavení klauzulí úlevy daně GST (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-325">MY-00006 01 Set up GST relief clauses (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-325">MY-00006 01 Nastavení klauzulí úlevy daně GST (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-325">MY-00006 01 Set up GST relief clauses (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-326">MY-00006 02 Tisk faktury odběratele GST s klauzulí úlevy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-326">MY-00006 02 Print GST customer invoices with a relief clause (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-326">MY-00006 02 Tisk faktury odběratele GST s klauzulí úlevy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-326">MY-00006 02 Print GST customer invoices with a relief clause (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-327">Kontrola dostupnosti zásob (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-327">Check the availability of stock (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-327">Kontrola dostupnosti zásob (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-327">Check the availability of stock (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-328">Nastavení objednávek kvality (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-328">Set up quality orders (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-328">Nastavení objednávek kvality (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-328">Set up quality orders (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-329">Zadání dat faktury do systému závazků s použitím evidence faktur (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-329">Key invoice data into the AP system using invoice pool (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-329">Zadání dat faktury do systému závazků s použitím evidence faktur (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-329">Key invoice data into the AP system using invoice pool (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-330">Nastavení ověření párování faktur závazků (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-330">Set up accounts payable invoice matching validation (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-330">Nastavení ověření párování faktur závazků (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-330">Set up accounts payable invoice matching validation (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-331">Zpracování deníku přidělení hlavní knihy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-331">Process ledger allocation journal (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-331">Zpracování deníku přidělení hlavní knihy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-331">Process ledger allocation journal (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-332">Udržování výchozích šablon finančních dimenzí (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-332">Maintain financial dimension default templates (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-332">Udržování výchozích šablon finančních dimenzí (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-332">Maintain financial dimension default templates (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-333">Vytvoření položky deníku pomocí šablony (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-333">Create a journal entry using a template (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-333">Vytvoření položky deníku pomocí šablony (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-333">Create a journal entry using a template (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-334">Vytváření a ověření deníků (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-334">Create and validate journals (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-334">Vytváření a ověření deníků (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-334">Create and validate journals (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-335">Uvolnění výrobní zakázky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-335">Release a production order (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-335">Uvolnění výrobní zakázky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-335">Release a production order (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-336">Vytvoření konsolidačních skupin a dalších konsolidačních účtů (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-336">Create consolidation groups and additional consolidation accounts (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-336">Vytvoření konsolidačních skupin a dalších konsolidačních účtů (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-336">Create consolidation groups and additional consolidation accounts (November 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-337">Nastavení kategorií hlavního účtu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-337">Set up main account categories (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-337">Nastavení kategorií hlavního účtu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-337">Set up main account categories (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-338">Nastavení aliasu účtu hlavní knihy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-338">Set up a ledger account alias (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-338">Nastavení aliasu účtu hlavní knihy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-338">Set up a ledger account alias (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-339">Vytvoření a přiřazení struktur rozšířeného pravidla (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-339">Create and assign advanced rule structures (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-339">Vytvoření a přiřazení struktur rozšířeného pravidla (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-339">Create and assign advanced rule structures (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-340">Zobrazení položek nebo transakcí deníku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-340">View journal entries or transactions (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-340">Zobrazení položek nebo transakcí deníku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-340">View journal entries or transactions (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-341">Vytvoření transakcí časového rozlišení hlavní knihy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-341">Create ledger accrual transactions (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-341">Vytvoření transakcí časového rozlišení hlavní knihy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-341">Create ledger accrual transactions (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-342">Stanovení platebních podmínek odběratele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-342">Establish customer payment terms (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-342">Stanovení platebních podmínek odběratele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-342">Establish customer payment terms (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-343">Stanovení způsobu platby odběratele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-343">Establish customer method of payment (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-343">Stanovení způsobu platby odběratele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-343">Establish customer method of payment (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-344">Stanovení poplatků odběratele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-344">Establish customer payment fees (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-344">Stanovení poplatků odběratele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-344">Establish customer payment fees (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-345">Platby záloh odběratele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-345">Deposit customer payments (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-345">Platby záloh odběratele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-345">Deposit customer payments (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-346">Definování platebních podmínek dodavatelů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-346">Define vendor payment terms (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-346">Definování platebních podmínek dodavatelů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-346">Define vendor payment terms (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-347">Definování platebních poplatků dodavatelů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-347">Define vendor payment fees (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-347">Definování platebních poplatků dodavatelů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-347">Define vendor payment fees (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-348">Dotazy na transakce související s povinností vyřazení majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-348">Inquire on asset retirement obligation-related transactions (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-348">Dotazy na transakce související s povinností vyřazení majetku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-348">Inquire on asset retirement obligation-related transactions (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-349">Definování procesů inventur zásob (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-349">Define inventory counting processes (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-349">Definování procesů inventur zásob (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-349">Define inventory counting processes (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-350">Zpracování úroků (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-350">Process interest (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-350">Zpracování úroků (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-350">Process interest (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-351">Vytvoření posloupnosti upomínek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-351">Create a collection letter sequence (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-351">Vytvoření posloupnosti upomínek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-351">Create a collection letter sequence (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-352">Vytvoření šablony volné faktury (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-352">Create a free text invoice template (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-352">Vytvoření šablony volné faktury (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-352">Create a free text invoice template (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-353">Generování a zaúčtování opakovaných volných faktur (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-353">Generate and post recurring free text invoices (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-353">Generování a zaúčtování opakovaných volných faktur (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-353">Generate and post recurring free text invoices (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-354">Vytvoření zmocnění k přímému debetu pro odběratele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-354">Create a direct debit mandate for a customer (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-354">Vytvoření zmocnění k přímému debetu pro odběratele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-354">Create a direct debit mandate for a customer (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-355">Vytvoření odpisového deníku pro odběratele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-355">Create a write off journal for a customer (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-355">Vytvoření odpisového deníku pro odběratele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-355">Create a write off journal for a customer (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-356">Přiřazení šablony volné faktury odběrateli (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-356">Assign a free text invoice template to a customer (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-356">Přiřazení šablony volné faktury odběrateli (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-356">Assign a free text invoice template to a customer (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-357">JP-00011 Nastavení konsolidovaných faktur pro pohledávky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-357">JP-00011 Set up consolidated invoices for accounts receivable (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-357">JP-00011 Nastavení konsolidovaných faktur pro pohledávky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-357">JP-00011 Set up consolidated invoices for accounts receivable (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-358">JP-00011 Nastavení odběratele a prodejní objednávky jako cíle souhrnné faktury (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-358">JP-00011 Set up a customer and sales order to be target of consolidated invoice (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-358">JP-00011 Nastavení odběratele a prodejní objednávky jako cíle souhrnné faktury (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-358">JP-00011 Set up a customer and sales order to be target of consolidated invoice (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-359">JP-00011 Vyrovnání souhrnných faktur odběratelů s použitím deníku plateb (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-359">JP-00011 Settle customer consolidated invoices by using a payment journal (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-359">JP-00011 Vyrovnání souhrnných faktur odběratelů s použitím deníku plateb (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-359">JP-00011 Settle customer consolidated invoices by using a payment journal (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-360">JP-00011 Vyrovnání souhrnných faktur odběratelů s použitím vyrovnávacích transakcí (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-360">JP-00011 Settle customer consolidated invoices by using settle transactions (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-360">JP-00011 Vyrovnání souhrnných faktur odběratelů s použitím vyrovnávacích transakcí (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-360">JP-00011 Settle customer consolidated invoices by using settle transactions (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-361">Registrace položek pro položky umožňující základní uskladnění s použitím deníku doručení zboží (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-361">Register items for a basic warehousing enabled item using an item arrival journal (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-361">Registrace položek pro položky umožňující základní uskladnění s použitím deníku doručení zboží (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-361">Register items for a basic warehousing enabled item using an item arrival journal (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-362">Import konfigurace převodu kreditu ve formátu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-362">Import ISO20022 credit transfer configuration (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-362">Import konfigurace převodu kreditu ve formátu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-362">Import ISO20022 credit transfer configuration (November 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-363">Nastavení způsobu platby pro převody kreditu ve formátu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-363">Set up method of payment for ISO20022 credit transfer (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-363">Nastavení způsobu platby pro převody kreditu ve formátu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-363">Set up method of payment for ISO20022 credit transfer (November 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-364">Nastavení dodavatelů a bankovních účtů dodavatelů pro převody kreditu ve formátu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-364">Set up vendors and vendor bank accounts for ISO20022 credit transfers (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-364">Nastavení dodavatelů a bankovních účtů dodavatelů pro převody kreditu ve formátu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-364">Set up vendors and vendor bank accounts for ISO20022 credit transfers (November 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-365">Nastavení bankovních účtů společnosti pro převody kreditu ve formátu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-365">Set up company bank accounts for ISO20022 credit transfers (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-365">Nastavení bankovních účtů společnosti pro převody kreditu ve formátu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-365">Set up company bank accounts for ISO20022 credit transfers (November 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-366">Vytváření a export plateb dodavatelů s použitím formátu platby ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-366">Create and export vendor payments using ISO20022 payment format (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-366">Vytváření a export plateb dodavatelů s použitím formátu platby ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-366">Create and export vendor payments using ISO20022 payment format (November 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-367">EUR-00012 Přijetí vstupního certifikátu EU (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-367">EUR-00012 Receive an EU entry certificate (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-367">EUR-00012 Přijetí vstupního certifikátu EU (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-367">EUR-00012 Receive an EU entry certificate (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-368">EUR-00012 Vydání vstupního certifikátu EU (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-368">EUR-00012 Issue an EU entry certificate (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-368">EUR-00012 Vydání vstupního certifikátu EU (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-368">EUR-00012 Issue an EU entry certificate (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-369">Import konfigurace přímého debetu ve formátu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-369">Import ISO20022 direct debit configuration (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-369">Import konfigurace přímého debetu ve formátu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-369">Import ISO20022 direct debit configuration (November 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-370">Nastavení způsobu platby pro přímý debet ve formátu ISO20022 (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-370">Set up method of payment for ISO20022 direct debit (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-370">Nastavení způsobu platby pro přímý debet ve formátu ISO20022 (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-370">Set up method of payment for ISO20022 direct debit (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-371">Nastavení bankovních účtů společnosti pro přímé debety ve formátu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-371">Set up company bank accounts for ISO20022 direct debits (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-371">Nastavení bankovních účtů společnosti pro přímé debety ve formátu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-371">Set up company bank accounts for ISO20022 direct debits (November 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-372">Nastavení bankovních účtů odběratelů a zákazníků pro přímé debety ve formátu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-372">Set up customers and customer bank accounts for ISO20022 direct debits (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-372">Nastavení bankovních účtů odběratelů a zákazníků pro přímé debety ve formátu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-372">Set up customers and customer bank accounts for ISO20022 direct debits (November 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-373">Nastavení prohlášení k faktuře pro dodavatele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-373">Set up an invoice declaration for vendors (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-373">Nastavení prohlášení k faktuře pro dodavatele (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-373">Set up an invoice declaration for vendors (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-374">Vytvoření účtu dodavatele a připojení kategorie prohlášení k faktuře (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-374">Create a vendor account and attach the invoice declaration (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-374">Vytvoření účtu dodavatele a připojení kategorie prohlášení k faktuře (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-374">Create a vendor account and attach the invoice declaration (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-375">Aktualizace prohlášení k faktuře dodavatele a vygenerování sestavy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-375">Update vendor invoice declarations and generate the report (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-375">Aktualizace prohlášení k faktuře dodavatele a vygenerování sestavy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-375">Update vendor invoice declarations and generate the report (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-376">Vytvoření poskytovatele konfigurace a jeho označení jako aktivního pro elektronické výkaznictví (ER) (pouze únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-376">Create a configuration provider and mark it as active for electronic reporting (ER) (February 2016 only)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-376">Vytvoření poskytovatele konfigurace a jeho označení jako aktivního pro elektronické výkaznictví (ER) (pouze únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-376">Create a configuration provider and mark it as active for electronic reporting (ER) (February 2016 only)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-377">Plánování kanbanových úloh (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-377">Schedule kanban jobs (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-377">Plánování kanbanových úloh (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-377">Schedule kanban jobs (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-378">Odebrání kanbanové úlohy z plánu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-378">Remove a kanban job from the schedule (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-378">Odebrání kanbanové úlohy z plánu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-378">Remove a kanban job from the schedule (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-379">Zápis zaměstnanců do plánu fixní kompenzace (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-379">Enroll employees in a fixed compensation plan (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-379">Zápis zaměstnanců do plánu fixní kompenzace (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-379">Enroll employees in a fixed compensation plan (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-380">Zápis zaměstnanců do plánu variabilní kompenzace (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-380">Enroll employees in a variable compensation plan (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-380">Zápis zaměstnanců do plánu variabilní kompenzace (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-380">Enroll employees in a variable compensation plan (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-381">Vytvoření nový projektu hromadného náboru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-381">Create a mass hire project (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-381">Vytvoření nový projektu hromadného náboru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-381">Create a mass hire project (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-382">Zapůjčení položek pracovníkovi (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-382">Loan items to a worker (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-382">Zapůjčení položek pracovníkovi (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-382">Loan items to a worker (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-383">Zadávání informací o pracovnících (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-383">Enter worker information (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-383">Zadávání informací o pracovnících (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-383">Enter worker information (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-384">Přijetí kandidáta prostřednictvím náboru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-384">Hire a candidate through recruiting (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-384">Přijetí kandidáta prostřednictvím náboru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-384">Hire a candidate through recruiting (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-385">Vytvoření více položek výpůjčky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-385">Create loan items (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-385">Vytvoření více položek výpůjčky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-385">Create loan items (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-386">Správa dat vypršení platnosti zaměstnaneckých výhod (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-386">Manage benefit expiration dates (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-386">Správa dat vypršení platnosti zaměstnaneckých výhod (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-386">Manage benefit expiration dates (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-387">Definování pravidel a zásad nároků na zaměstnanecké výhody (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-387">Define benefit eligibility rules and policies (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-387">Definování pravidel a zásad nároků na zaměstnanecké výhody (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-387">Define benefit eligibility rules and policies (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-388">Ruční zadávání dat o přihlášce a uchazeči (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-388">Enter applicant and application data manually (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-388">Ruční zadávání dat o přihlášce a uchazeči (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-388">Enter applicant and application data manually (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-389">Schválení záznamů doručených přihlášek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-389">Approve application inbox records (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-389">Schválení záznamů doručených přihlášek (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-389">Approve application inbox records (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-390">Správa šablon e-mailů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-390">Manage email templates (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-390">Správa šablon e-mailů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-390">Manage email templates (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-391">Analýza výsledků dotazníku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-391">Analyze questionnaire results (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-391">Analýza výsledků dotazníku (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-391">Analyze questionnaire results (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-392">Vytvoření dotazu s otevřeným koncem (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-392">Create an open-ended question (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-392">Vytvoření dotazu s otevřeným koncem (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-392">Create an open-ended question (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-393">Vytvoření a správa blokování zásob (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-393">Create and maintain inventory blocking (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-393">Vytvoření a správa blokování zásob (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-393">Create and maintain inventory blocking (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-394">Kontrola kvality zboží (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-394">Inspect the quality of goods (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-394">Kontrola kvality zboží (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-394">Inspect the quality of goods (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-395">Vytvoření základní prognózy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-395">Create a baseline forecast (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-395">Vytvoření základní prognózy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-395">Create a baseline forecast (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-396">Ruční úprava prognózy poptávky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-396">Modify a demand forecast manually (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-396">Ruční úprava prognózy poptávky (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-396">Modify a demand forecast manually (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-397">Příprava kanbanové úlohy procesu, když pro pracovní buňku nejsou k dispozici materiály (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-397">Prepare a process kanban job when materials are not available for the work cell (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-397">Příprava kanbanové úlohy procesu, když pro pracovní buňku nejsou k dispozici materiály (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-397">Prepare a process kanban job when materials are not available for the work cell (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-398">Příprava kanbanové úlohy procesu, když pro pracovní buňku jsou k dispozici materiály (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-398">Prepare a process kanban job when materials are available for the work cell (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-398">Příprava kanbanové úlohy procesu, když pro pracovní buňku jsou k dispozici materiály (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-398">Prepare a process kanban job when materials are available for the work cell (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-399">Přidání zásad výpočtu kanbanového množství ke kanbanovému pravidlu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-399">Add a kanban quantity calculation policy to a kanban rule (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-399">Přidání zásad výpočtu kanbanového množství ke kanbanovému pravidlu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-399">Add a kanban quantity calculation policy to a kanban rule (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-400">Vytvoření materiálového plánu pro vedlejší produkty</span><span class="sxs-lookup"><span data-stu-id="12194-400">Create a material plan for co-products</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-400">Vytvoření materiálového plánu pro vedlejší produkty</span><span class="sxs-lookup"><span data-stu-id="3cae7-400">Create a material plan for co-products</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-401">MX-00010 Zadání ID registrace daně pro právnické osoby (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-401">MX-00010 Enter tax registration IDs for legal entities (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-401">MX-00010 Zadání ID registrace daně pro právnické osoby (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-401">MX-00010 Enter tax registration IDs for legal entities (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-402">AU-00006 Přidání polí sestavy a generování BAS (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-402">AU-00006 Add report boxes and generate the BAS (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-402">AU-00006 Přidání polí sestavy a generování BAS (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-402">AU-00006 Add report boxes and generate the BAS (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-403">AU-00006 Nastavení kódů důvodů pro elektronické podpisy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-403">AU-00006 Set up reason codes for the BAS (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-403">AU-00006 Nastavení kódů důvodů pro elektronické podpisy (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-403">AU-00006 Set up reason codes for the BAS (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-404">Zaúčtování faktury projektu s platebním dokladem (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-404">Post a project invoice with a payment slip (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-404">Zaúčtování faktury projektu s platebním dokladem (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-404">Post a project invoice with a payment slip (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-405">Zaúčtování volné faktury s platebním dokladem (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-405">Post a free text invoice with a payment slip (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-405">Zaúčtování volné faktury s platebním dokladem (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-405">Post a free text invoice with a payment slip (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-406">Zaúčtování prodejní faktury s platebním dokladem (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-406">Post a sales invoice with a payment slip (November 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-406">Zaúčtování prodejní faktury s platebním dokladem (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-406">Post a sales invoice with a payment slip (November 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-407">MX-00020 Nastavení účtové osnovy pro právnickou osobu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-407">MX-00020 Set up the chart of accounts for a legal entity (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-407">MX-00020 Nastavení účtové osnovy pro právnickou osobu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-407">MX-00020 Set up the chart of accounts for a legal entity (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-408">Nastavení fondu ve veřejném sektoru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-408">Set up a fund in the public sector (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-408">Nastavení fondu ve veřejném sektoru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-408">Set up a fund in the public sector (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-409">Nastavení odvozené finanční hierarchie ve veřejném sektoru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-409">Set up a derived financial hierarchy in the public sector (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-409">Nastavení odvozené finanční hierarchie ve veřejném sektoru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-409">Set up a derived financial hierarchy in the public sector (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-410">Vytvoření položky rozšířeného účetnictví ve veřejném sektoru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-410">Create an advanced ledger entry in the public sector (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-410">Vytvoření položky rozšířeného účetnictví ve veřejném sektoru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-410">Create an advanced ledger entry in the public sector (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-411">Vytvoření titulní stránky a podpisové stránky pro sestavu plateb pro veřejný sektor (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-411">Create cover and signature pages for a payments report for the public sector (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-411">Vytvoření titulní stránky a podpisové stránky pro sestavu plateb pro veřejný sektor (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-411">Create cover and signature pages for a payments report for the public sector (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-412">Vytvoření jednorázového dodavatele a faktury ve veřejném sektoru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-412">Create a one-time vendor and invoice in the public sector (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-412">Vytvoření jednorázového dodavatele a faktury ve veřejném sektoru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-412">Create a one-time vendor and invoice in the public sector (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-413">Import a vytvoření více jednorázových dodavatelů a faktur ve veřejném sektoru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-413">Import and create multiple one-time vendors and invoices in the public sector (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-413">Import a vytvoření více jednorázových dodavatelů a faktur ve veřejném sektoru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-413">Import and create multiple one-time vendors and invoices in the public sector (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-414">Nastavení klasifikace nákupních smluv ve veřejném sektoru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-414">Set up purchase agreement classifications in the public sector (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-414">Nastavení klasifikace nákupních smluv ve veřejném sektoru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-414">Set up purchase agreement classifications in the public sector (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-415">Vytvoření předběžného rozpočtu pro veřejný sektor (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-415">Create a preliminary budget for public sector (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-415">Vytvoření předběžného rozpočtu pro veřejný sektor (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-415">Create a preliminary budget for public sector (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-416">Vytvoření původního rozpočtu a stornování předběžných položek rozpočtu ve veřejném sektoru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-416">Create an original budget and reverse preliminary budget entries in the public sector (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-416">Vytvoření původního rozpočtu a stornování předběžných položek rozpočtu ve veřejném sektoru (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-416">Create an original budget and reverse preliminary budget entries in the public sector (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-417">Nastavení hlavních dat pro zahrnutí odečitatelných výdajů pro více účtovacích vrstev (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-417">Set up master data for inclusion of deductible expenses for multiple posting layers (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-417">Nastavení hlavních dat pro zahrnutí odečitatelných výdajů pro více účtovacích vrstev (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-417">Set up master data for inclusion of deductible expenses for multiple posting layers (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-418">Udržování souborů hlavních dat dlouhodobého majetku pro odečitatelné výdaje (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-418">Maintain fixed asset master data files for deductible expenses (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-418">Udržování souborů hlavních dat dlouhodobého majetku pro odečitatelné výdaje (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-418">Maintain fixed asset master data files for deductible expenses (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-419">Pravidelné vyrovnání příliš velkých nebo příliš malých odpisů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-419">Periodic settlement of over and under depreciation (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-419">Pravidelné vyrovnání příliš velkých nebo příliš malých odpisů (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-419">Periodic settlement of over and under depreciation (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-420">Dotazy na odečitatelné výdaje (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-420">Inquire on deductible expenses (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-420">Dotazy na odečitatelné výdaje (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-420">Inquire on deductible expenses (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-421">JP-00004 Nastavení sestavy spotřební daně (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-421">JP-00004 Set up the consumption tax report (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-421">JP-00004 Nastavení sestavy spotřební daně (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-421">JP-00004 Set up the consumption tax report (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-422">JP-00004 Generování sestavy spotřební daně (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-422">JP-00004 Generate the consumption tax report (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-422">JP-00004 Generování sestavy spotřební daně (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-422">JP-00004 Generate the consumption tax report (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-423">EUR-00011 Nastavení souhrnného hlášení EU (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-423">EUR-00011 Set up EU sales list reporting (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-423">EUR-00011 Nastavení souhrnného hlášení EU (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-423">EUR-00011 Set up EU sales list reporting (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-424">GB-00009 – Nastavení parametrů pro dobropis u slevy za včasnou platbu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-424">GB-00009 Set up parameters for a credit note for prompt payment discount (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-424">GB-00009 – Nastavení parametrů pro dobropis u slevy za včasnou platbu (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-424">GB-00009 Set up parameters for a credit note for prompt payment discount (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-425">GB-00009 Vytvoření dobropisu pro slevu pro vyrovnání (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-425">GB-00009 Create a credit on the settlement discount (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-425">GB-00009 Vytvoření dobropisu pro slevu pro vyrovnání (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-425">GB-00009 Create a credit on the settlement discount (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-426">MX-00020 Zadání registračního ID RFC pro mexické bankovní účty (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-426">MX-00020 Specify the RFC registration ID for bank accounts (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-426">MX-00020 Zadání registračního ID RFC pro mexické bankovní účty (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-426">MX-00020 Specify the RFC registration ID for bank accounts (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-427">Vytvoření kanbanových pravidel pro pevné množství (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-427">Create fixed quantity kanban rules (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-427">Vytvoření kanbanových pravidel pro pevné množství (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-427">Create fixed quantity kanban rules (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-428">Vytvoření kanbanového pravidla události prodeje (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-428">Create a sales event kanban rule (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-428">Vytvoření kanbanového pravidla události prodeje (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-428">Create a sales event kanban rule (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-429">Vytvoření nových kanbanových pravidel duplikováním existujících kanbanových pravidel (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-429">Create new kanban rules by duplicating existing kanban rules (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-429">Vytvoření nových kanbanových pravidel duplikováním existujících kanbanových pravidel (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-429">Create new kanban rules by duplicating existing kanban rules (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-430">Vytváření aktivit procesu pro lean manufacturing (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-430">Create process activities for lean manufacturing (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-430">Vytváření aktivit procesu pro lean manufacturing (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-430">Create process activities for lean manufacturing (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-431">Vytváření aktivit převodu pro lean manufacturing (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-431">Create transfer activities for lean manufacturing (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-431">Vytváření aktivit převodu pro lean manufacturing (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-431">Create transfer activities for lean manufacturing (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-432">Ověření výrobního toku a verze (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-432">Validate a production flow and version (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-432">Ověření výrobního toku a verze (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-432">Validate a production flow and version (February 2016)</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-433">Vytvoření relace aktivity: následník (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-433">Create activity relation: Successor (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-433">Vytvoření relace aktivity: následník (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-433">Create activity relation: Successor (February 2016)</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="12194-434">Výpočet odpisů dlouhodobého majetku mezi právnickými osobami</span><span class="sxs-lookup"><span data-stu-id="12194-434">Calculate fixed asset depreciation across legal entities</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-434">Výpočet odpisů dlouhodobého majetku mezi právnickými osobami</span><span class="sxs-lookup"><span data-stu-id="3cae7-434">Calculate fixed asset depreciation across legal entities</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-435">Převádění materiálů s kanbanovými úlohami (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="12194-435">Transfer material with kanban jobs (February 2016)</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-435">Převádění materiálů s kanbanovými úlohami (únor 2016)</span><span class="sxs-lookup"><span data-stu-id="3cae7-435">Transfer material with kanban jobs (February 2016)</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<a name="bpm-lines-deleted"></a><span data-ttu-id="12194-436">Odstraněné řádky BPM</span><span class="sxs-lookup"><span data-stu-id="12194-436">BPM lines deleted</span></span>
+<a name="bpm-lines-deleted"></a><span data-ttu-id="3cae7-436">Odstraněné řádky BPM</span><span class="sxs-lookup"><span data-stu-id="3cae7-436">BPM lines deleted</span></span>
 -----------------
 
-<span data-ttu-id="12194-437">Při odstranění řádku BPM jsou odstraněni také všichni průvodci záznamem úloh, kteří byli spojeni s řádkem BPM.</span><span class="sxs-lookup"><span data-stu-id="12194-437">When a BPM line is deleted, any task guide that was associated with the BPM line is also deleted.</span></span>
+<span data-ttu-id="3cae7-437">Při odstranění řádku BPM jsou odstraněni také všichni průvodci záznamem úloh, kteří byli spojeni s řádkem BPM.</span><span class="sxs-lookup"><span data-stu-id="3cae7-437">When a BPM line is deleted, any task guide that was associated with the BPM line is also deleted.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="12194-438">Odstraněný řádek BPM</span><span class="sxs-lookup"><span data-stu-id="12194-438">Deleted BPM Line</span></span></th>
+<th align="left"><span data-ttu-id="3cae7-438">Odstraněný řádek BPM</span><span class="sxs-lookup"><span data-stu-id="3cae7-438">Deleted BPM Line</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="12194-439">Přesunutí naplánovaných kanbanových úloh</span><span class="sxs-lookup"><span data-stu-id="12194-439">Move scheduled kanban jobs</span></span></td>
+<td align="left"><span data-ttu-id="3cae7-439">Přesunutí naplánovaných kanbanových úloh</span><span class="sxs-lookup"><span data-stu-id="3cae7-439">Move scheduled kanban jobs</span></span></td>
 </tr>
 </tbody>
 </table>
