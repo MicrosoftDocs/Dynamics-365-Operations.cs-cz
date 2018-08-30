@@ -1,5 +1,5 @@
 --- 
-title: "Odeslání konfigurace do služby Lifecycle Services pro elektronické výkaznictví (ER)"
+title: "Odeslání konfigurací elektronického výkaznictví do služby Lifecycle Services"
 description: "Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci formátu pro elektronické výkaznictví a odeslat ji do služby Microsoft Lifecycle Services (LCS)."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3d9c2192bac8477e9c9376aab3e3b561da777569
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 6aa6bf7e08285d18210741ba6618878955009280
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="upload-a-configuration-into-lifecycle-services-for-electronic-reporting-er"></a>Odeslání konfigurace do služby Lifecycle Services pro elektronické výkaznictví (ER)
+# <a name="upload-electronic-reporting-configurations-into-lifecycle-services"></a>Odeslání konfigurací elektronického výkaznictví do služby Lifecycle Services
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

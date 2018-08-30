@@ -19,7 +19,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
 ms.openlocfilehash: 7e2a9297a417fb25384341dcabcafa41c50f8c84
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/22/2018
 - [Obsah přehledu CFO v Power BI](CFO-power-bi.md)
 - [Obsah kompenzací v Power BI](compensation-power-bi.md)
 - [Obsah Power BI analýzy nákladového účetnictví](cost-accounting-analysis-content-pack.md) 
-- [Obsah správy nákladů v Power BI](cost-management-content-pack.md)    
+- [Obsah správy nákladů v Power BI](cost-management-content-pack.md)
 - [Obsah správy úvěru a inkasa v Power BI](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Obsah Power BI pro rozvoj zaměstnanců](employee-development-PBI.md) 
 - [Obsah Power BI Finanční přehledy](financial-insights.md)
@@ -46,5 +46,5 @@ ms.lasthandoff: 05/22/2018
 - [Obsah výkonu prodeje a ziskovosti Power BI](sales-profitability-performance-content-pack.md)
 - [Obsah spotřeby BI plateb dodavatele](../../financials/accounts-payable/Vendor-payments-workspace.md)
 - [Obsah výkonu skladu v Power BI](warehouse-power-bi-content.md)
-- [Obsah metriky pracovní síly Power BI](workforce-analysis-power-bi-content-pack.md)  
+- [Obsah metriky pracovní síly Power BI](workforce-analysis-power-bi-content-pack.md)
 

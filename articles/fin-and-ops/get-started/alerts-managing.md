@@ -1,5 +1,5 @@
 ---
-title: "Vykonávání dávek pro výstrahy"
+title: "Dávkové zpracování výstrah"
 description: "Toto téma poskytuje informace o dávkovém zpracování výstrah v aplikaci Microsoft Dynamics 365 for Finance and Operations."
 author: tjvass
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
-ms.openlocfilehash: f4c874c148dc10ac658f659896009981962a5802
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 74db212b2086bd7c94825d8a52d9a8b86ea7b739
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="batch-processing-for-alerts"></a>Dávkové zpracování pro výstrahy
+# <a name="batch-processing-of-alerts"></a>Dávkové zpracování výstrah
 [!include [banner](../includes/banner.md)]
 
 Výstrahy jsou zpracovávány pomocí funkce dávkového zpracování v aplikaci Microsoft Dynamics 365 for Finance and Operations. Než mohou být výstrahy doručeny, musíte nastavit dávkové zpracování.

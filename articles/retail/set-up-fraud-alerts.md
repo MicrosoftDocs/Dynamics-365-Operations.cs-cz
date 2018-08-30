@@ -1,5 +1,5 @@
 ---
-title: "Nastavit upozornění na podvod"
+title: "Nastavení a práce s výstrahami u podvodů kontaktního střediska"
 description: "Toto téma vysvětluje, jak nastavit pravidla výstrahy pro zástupce z oddělení služeb zákazníkům zaměřené na potenciálně podvodné informace při zpracování objednávek. Můžete definovat zvláštní kódy, které jsou automaticky nebo ručně použity k blokování podezřelých objednávek."
 author: josaw1
 manager: AnnBe
@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e4f89d86b64e0c8c76c15d3c2c1c00af353e9ca
-ms.openlocfilehash: 2534e687623ab750f349287a762a354bc0fcf12b
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 6cca9e5b606f298d000354f6aeb01fbe2c8f2141
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 

@@ -1,5 +1,5 @@
 --- 
-title: "Správa konfigurací mapování modelu pro elektronické výkaznictví (ER)"
+title: "Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví"
 description: "Následující procedura vysvětluje, jak uživatel přiřazený k roli Správce systému nebo Návrhář elektronického výkaznictví může spravovat mapování modelu pro elektronické výkaznictví (ER) v samostatné konfiguraci ER."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 35fdc1e98897d449ce18fe38cc6b7896ca5c5278
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 24ca4124d190df94e7ca9ac31c2ea757fe9ff242
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="manage-model-mapping-configurations-for-electronic-reporting-er"></a>Správa konfigurací mapování modelu pro elektronické výkaznictví (ER)
+# <a name="manage-er-model-mapping-in-separate-er-configurations"></a>Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

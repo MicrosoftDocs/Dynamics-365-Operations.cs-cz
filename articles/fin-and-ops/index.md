@@ -18,14 +18,14 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e7e10768dd1e0a441842d5b13964f49153c35be3
-ms.openlocfilehash: cced03d29bb04182a3f5bae86c3bec6d3c086cde
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: edacf76866cf3e078e08dd6e5a69132d0eb15176
 ms.contentlocale: cs-cz
-ms.lasthandoff: 07/10/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="introduction-to-microsoft-dynamics-365-for-finance-and-operations"></a>Úvod do aplikace Microsoft Dynamics 365 for Finance and Operations
+# <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Dokumentace k aplikaci Microsoft Dynamics 365 for Finance and Operations
 [!include [banner](includes/banner.md)]
 
 Zjistěte, jak můžete pro svůj obchod využít Microsoft Dynamics 365 for Finance and Operations pomocí níže uvedených zdrojů. Naleznete tak skvělý obsah pro koncové uživatele, vývojáře a profesionály z oblasti IT. 
@@ -56,7 +56,7 @@ Velká část tohoto obsahu se též vztahuje na související produkty: Microso
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">Pohledávky</a></p>
 <p><a href="../financials/budgeting/budgeting-overview.md">Rozpočtování</a></p>
 <p><a href="../financials/cash-bank-management/cash-bank-management.md">Pokladna a banka</a></p>
-<p><a href="../financials/general-ledger/audit-policy-rules.md">Shoda s předpisy</a></p>
+<p><a href="../financials/general-ledger/audit-policy-rules.md">Dodržování předpisů</a></p>
 <p><a href="../financials/cost-accounting/cost-accounting-home-page.md">Nákladové účetnictví</a></p>
 <p><a href="../financials/fixed-assets/fixed-assets.md">Dlouhodobý majetek</a></p>
 <p><a href="../financials/general-ledger/general-ledger.md">Hlavní kniha</a></p>
@@ -105,7 +105,7 @@ Velká část tohoto obsahu se též vztahuje na související produkty: Microso
 
 <h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Správa</h3>
 <p><a href="../dev-itpro/deployment/cloud-deployment-overview.md">Cloudové nasazení</a></p>
-<p><a href="../dev-itpro/deployment/on-premises-deployment-landing-page.md">Nasazení on-premises</a></p>
+<p><a href="../dev-itpro/deployment/on-premises-deployment-landing-page.md">Místní nasazení</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrade</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Servis</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Data management framework</a></p>

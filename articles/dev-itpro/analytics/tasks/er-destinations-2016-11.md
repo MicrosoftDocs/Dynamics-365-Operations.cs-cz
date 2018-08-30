@@ -1,5 +1,5 @@
 --- 
-title: "Konfigurace místa určení pro elektronické výkaznictví (ER)"
+title: "Konfigurace místa určení pro výstup elektronického výkaznictví"
 description: "Tento postup ukazuje, jak nastavit a používat různé cíle pro výstupní součásti elektronického vykazování (ER), jako například složku nebo soubor."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: afe9d397872b9328b59f4036049ab53b3bba2aec
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 7c84464f426d6bedff092fd918fcabbc35600f3c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="configure-destinations-for-electronic-reporting-er"></a>Konfigurace místa určení pro elektronické výkaznictví (ER)
+# <a name="configure-destinations-for-electronic-reporting-er-output"></a>Konfigurace místa určení pro výstup elektronického výkaznictví
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

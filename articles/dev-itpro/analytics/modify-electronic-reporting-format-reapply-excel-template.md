@@ -1,5 +1,5 @@
 ---
-title: "Úprava formátu elektronického výkaznictví opětovným použitím šablony aplikace Microsoft Excel"
+title: "Úprava formátů elektronického výkaznictví opětovným použitím šablon aplikace Excel"
 description: "Toto téma poskytuje informace o tom, jak můžete upravit formát elektronického výkaznictví (ER), který se používá ke generování obchodních dokumentů opětovným použitím šablony aplikace Excel."
 author: NickSelin
 manager: AnnBe
@@ -19,13 +19,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: fca7fb75b965886c2ebc06b12940434f2ffc2543
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8707f7b184bb66648edd0e48672c5514a0a5caf1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="modify-an-electronic-reporting-format-by-reapplying-a-microsoft-excel-template"></a>Úprava formátu elektronického výkaznictví opětovným použitím šablony aplikace Microsoft Excel
+# <a name="modify-electronic-reporting-formats-by-reapplying-excel-templates"></a>Úprava formátů elektronického výkaznictví opětovným použitím šablon aplikace Excel
 
 [!include [banner](../includes/banner.md)]
 

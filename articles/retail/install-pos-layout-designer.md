@@ -1,5 +1,5 @@
 ---
-title: "Instalace návrháře rozložení Retail POS"
+title: "Instalace návrháře rozložení pokladního místa Retail (POS)"
 description: "Můžete použít předdefinovaného návrháře k navržení jiných rozložení Retail Modern POS (MPOS) a Cloud POS v režimu rozložení šířku nebo výšku, pro obchody, registrační pokladny, pokladníky a manažery."
 author: athinesh99
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 30adfefd5ec70ddce348dab2481d518875e01ff2
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 4c647f49101dcbbe7dd1feac2dd9aad5c6dd5bcc
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="install-the-retail-pos-layout-designer"></a>Instalace návrháře rozložení Retail POS
+# <a name="install-the-retail-point-of-sale-pos-layout-designer"></a>Instalace návrháře rozložení pokladního místa Retail (POS)
 
 [!include [banner](includes/banner.md)]
 

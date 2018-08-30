@@ -1,5 +1,5 @@
 ---
-title: Aplikace Microsoft Dynamics 365 for Talent
+title: "Vítá vás aplikace Dynamics 365 for Talent"
 description: "Aplikace Talent zjednodušuje mnoho rutinních administrativních úkolů a automatizuje řadu procesů souvisejících s pracovníky ve vaší organizaci. Mezi tyto procesy spadá udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn."
 author: josaw
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: bde68c9167e18cae6be4988865123d20274753c0
-ms.openlocfilehash: 9bc09a822f78b9792c2afdb0d297809edea7551a
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: e31cd1e0acc8f3ab450ec4acda62b88b189f036d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/06/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Vítá vás aplikace Microsoft Dynamics 365 for Talent
+# <a name="welcome-to-dynamics-365-for-talent"></a>Vítá vás aplikace Dynamics 365 for Talent
 
 [!include [banner](includes/banner.md)]
 
@@ -73,7 +73,7 @@ Dynamics 365 for Talent obsahuje aplikaci Attract, která vám pomůže identifi
 Můžete nastavit plány pro efektivní a spravedlivé řízení kompenzací, stejně jako správu položek, jako jsou počítače nebo telefony, které organizace poskytuje zaměstnancům. Je možné vytvářet pevné a variabilní plány kompenzace, jakož i definovat pravidla týkající se plánu kompenzace, která splňují kritéria pro tento plán.
 
 -   [Plány kompenzace](compensation-plans.md)
--   [Proces kompenzace](process-compensation.md)
+-   [Zpracování kompenzací](process-compensation.md)
 -   [Vytvoření plánů fixní kompenzace](create-fixed-compensation-plans.md)
 -   [Vytvoření plánů variabilní kompenzace](create-variable-compensation-plans.md)
 -   [Správa kompenzací v aplikaci Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=lEw5oKopHDk)
@@ -91,7 +91,7 @@ Abyste pomohli vašim zaměstnancům dosahovat jejich kariérních cílů za sou
 
 Kromě kompenzací zaměstnanců skrze mzdy, platy a odměny můžete vyvíjet programy zaměstnaneckých výhod, jako je zdravotní pojištění a důchodové plány. Můžete také spravovat výhody, jako jsou například výpůjčky, ve kterých vaše společnost poskytuje svým zaměstnancům věci, jako jsou počítače nebo telefony, .
 
--   [Definování a správa programu zaměstnaneckých výhod](manage-benefit-program.md)
+-   [Správa programu zaměstnaneckých výhod](manage-benefit-program.md)
 -   [Zásady způsobilosti k zaměstnaneckým výhodám](benefit-eligibility-policies.md)
 -   [Správa položek půjčených zaměstnancům](loan-items.md)
 -   [Správa zaměstnaneckých výhod v aplikaci Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=nUWkeJTad1o)

@@ -46,8 +46,6 @@ První fáze integrace mezi Field Service a Finance and Operations umožňuje sy
 
 Příklad synchronizace výrobního příkazu mezi Field Service a Finance and Operations uvádí krátké video na YouTube [Synchronizace výrobního příkazu mezi Dynamics 365 for Field Service a Finance and Operations](https://www.youtube.com/watch?v=hAB4TDVMjxU).
 
-[![](https://img.youtube.com/vi/hAB4TDVMjxU/0.jpg)](https://www.youtube.com/watch?v=hAB4TDVMjxU)
-
 ## <a name="system-requirements-for-finance-and-operations"></a>Systémové požadavky aplikaci Finance and Operations
 Integrace Field Service podporuje následující verze:
 

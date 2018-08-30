@@ -1,5 +1,5 @@
 --- 
-title: "Úprava a spuštění formátu k použití souborů pro správu dokumentů ve formátech výstupu"
+title: "Úprava a spuštění formátů k použití souborů pro správu dokumentů ve výstupu elektronického výkaznictví"
 description: "Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat formát elektronického výkaznictví (ER) k souborů správy dokumentů (příloh) ve výstupu elektronického výkaznictví."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b38f69fc169367aa56468b2c8f06b65fd1291c79
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 5effbecf98e633d07f9e5eb22d3df1a12967c1e4
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="modify-and-run-format-to-use-document-management-files-in-format-outputs"></a>Úprava a spuštění formátu k použití souborů pro správu dokumentů ve formátech výstupu
+# <a name="modify-and-run-formats-to-use-document-management-files-in-er-output"></a>Úprava a spuštění formátů k použití souborů pro správu dokumentů ve výstupu elektronického výkaznictví
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

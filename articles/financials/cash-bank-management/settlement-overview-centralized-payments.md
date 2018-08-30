@@ -1,16 +1,16 @@
 ---
 title: "Mezipodnikové účetnictví pro centralizované platby"
-description: "Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Tento způsob vylučuje nutnost zadávat stejné transakce do několika právnických osob a šetří čas tím, že zjednodušuje proces návrhů plateb, proces vyrovnání, úpravy otevřených a uzavřených transakcí u centralizovaných plateb."
+description: "Toto téma popisuje vyrovnání pro centralizované platby pro Microsoft Dynamics 365 for Finance and Operations."
 author: abruer
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustOpenTrans
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 222414
 ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
@@ -19,10 +19,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b76b141531acfc2d1d7553a3e7a13f165373921b
+ms.sourcegitcommit: fc5a65c299adbf86fb2f38dff1a9aaa36f7367fa
+ms.openlocfilehash: 1fecc9027d0df7b268a3241ea0f1797849db2d90
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -35,8 +35,8 @@ Organizace zahrnující více právnických osob mohou vytvářet a spravovat pl
 Když je u jedné právnické osoby zadána platba odběratele nebo dodavatele a je vyrovnána s fakturou zadanou v jiné právnické osobě, pro každou právnickou osobu se automaticky vygeneruje použitelné vyrovnání a kreditní a debetní transakce. Pro každou kombinaci faktury a platby v transakci je vytvořen záznam vyrovnání. Každému záznamu vyrovnání je přiřazeno nové číslo dokladu, které je založeno na číselné řadě platebních dokladů zadané na stránce **Parametry pohledávek** pro odběratele a na stránce **Parametry závazků** pro dodavatele. 
 
 Pokud dojde ke generování dalších záznamů vyrovnání pro platební slevy, přecenění cizí měny, haléřové rozdíly, přeplatky nebo nedoplatky, bude jim přiřazeno pozdější z dat platby nebo transakce faktury. Pokud k vyrovnání dojde po zaúčtování platby, bude pro záznamy vyrovnání použito datum zaúčtování vyrovnání zadané na stránce **Vyrovnání otevřených transakcí**.
-Typy zaúčtování, typy transakcí a výchozí popisy
-----------------------------------------------------------
+
+## <a name="posting-types-transaction-types-and-default-descriptions"></a>Typy zaúčtování, typy transakcí a výchozí popisy
 
 Mezipodnikové vyrovnání transakcí dokladu používá typ zaúčtování vyrovnání mezipodnikového odběratele a typy transakcí vyrovnání mezipodnikového dodavatele. Informace pro typ transakce můžete nastavit na stránce **Výchozí popisy**. 
 
@@ -50,8 +50,7 @@ Pro vyrovnání v rámci jedné společnosti a mezi společnostmi jsou k dispozi
 
 Výchozí popis můžete definovat také pro mezipodnikové doklady vyrovnání.
 
-<a name="currency-exchange-gains-or-losses"></a>Zisky nebo ztráty směnného kurzu
----------------------------------
+## <a name="currency-exchange-gains-or-losses"></a>Zisky nebo ztráty směnného kurzu
 
 Směnný kurz používaný pro transakce odběratele nebo dodavatele je uložen spolu s příslušnou transakcí. Realizované zisky nebo ztráty směnných kurzů jsou účtovány právnické osobě faktury nebo platby v závislosti na možnosti vybrané v poli **Zaúčtovat kurzový zisk nebo ztrátu** na stránce **Mezipodnikové účetnictví** pro právnickou osobu platby. V následujících příkladech jsou uvedeny tyto měny:
 -   Zúčtovací měna platby: EUR
@@ -59,7 +58,7 @@ Směnný kurz používaný pro transakce odběratele nebo dodavatele je uložen 
 -   Měna transakce platby: DKK
 -   Měna transakce faktury: CAD
 
-#### <a name="currency-calculations"></a>Kalkulace měny
+### <a name="currency-calculations"></a>Kalkulace měny
 
 Při vyrovnání faktury zadané v rámci jedné právnické osoby s platbou zadanou v rámci jiné právnické osoby dojde k převodu měny transakce platby (DKK) ve třech krocích:
 1.  Převod na zúčtovací měnu platby (EUR) podle směnných kurzů právnické osoby faktury platných k datu platby.
@@ -75,17 +74,15 @@ Po otevření stránky **Vyrovnat otevřené transakce** z deníku plateb, kam n
 
 Výsledná částka platby je při zavření stránky **Vyrovnat otevřené transakce** přenesena do řádek deníku plateb.
 
-#### <a name="posting-for-gain-or-loss-because-of-different-accounting-currencies"></a>Zaúčtování zisku nebo ztráty kvůli různým účtovacím měnám
+### <a name="posting-for-gain-or-loss-because-of-different-accounting-currencies"></a>Zaúčtování zisku nebo ztráty kvůli různým účtovacím měnám
 
 Pokud existuje kurzový zisk nebo ztráta, je zaúčtován zisk nebo ztráta právnické osobě, která je zadaná v poli **Zaúčtovat kurzový zisk nebo ztrátu** na stránce **Mezipodnikovém účetnictví** pro právnickou osobu platby. Částka zisku nebo ztráty je převedena na zúčtovací měnu právnické osoby, kde byla zaúčtována, podle směnného kurzu definovaného pro danou právnickou osobu.
 
-<a name="cash-discounts"></a>Platební slevy
---------------
+## <a name="cash-discounts"></a>Platební slevy
 
 Platební slevy generované během procesu vyrovnání mezi společnostmi jsou účtovány právnické osobě faktury nebo platby v závislosti na možnosti vybrané v poli **Zaúčtovat platební slevu** na stránce **Mezipodnikové účetnictví** pro právnickou osobu platby. Pro právnickou osobu faktury je generována odpovídající transakce vyrovnání.
 
-<a name="overpayments-and-underpayments"></a>Přeplatky a nedoplatky
-------------------------------
+## <a name="overpayments-and-underpayments"></a>Přeplatky a nedoplatky
 
 Tolerance přeplatků nebo nedoplatků a haléřových rozdílů jsou u přeplatků určovány na základě právnické osoby platby a u nedoplatků jsou určovány na základě právnické osoby faktury. Používaný účet je určen nastavením v poli **Správa platební slevy** na stránce **Parametry pohledávek** pro odběratele a **Správa platební slevy** na stránce **Parametry závazků** pro dodavatele.
 
@@ -112,9 +109,4 @@ U plateb dodavatelů transakce počátečního a koncového data splatnosti v pr
 
 ## <a name="withholding-tax"></a>Srážková daň
 Účet dodavatele, který je přidružený k faktuře, slouží k určení, zda se má vypočítat srážkovou daň. Pokud se srážková daň používá, je vypočteno v právnické osobě, která je přidružená k faktuře. Pokud právnické osoby používají různé měny, použije se směnný kurz z právnické osoby, která je přidružená k faktuře.
-
-
-
-
-
 

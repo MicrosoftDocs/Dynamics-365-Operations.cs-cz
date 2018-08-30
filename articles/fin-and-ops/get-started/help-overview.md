@@ -1,9 +1,9 @@
 ---
-title: "Přehled nápovědy"
+title: "Systém nápovědy pro aplikaci Finance and Operations"
 description: "Toto téma poskytuje přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations. Také je zde vysvětleno, jak můžete poskytnout vlastní dokumentaci a školení pro vaši organizaci."
 author: margoc
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,14 +19,14 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2c02af887e662fd346d5e3e09cce755bfb58d520
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: e1ffd9cb90b2ffac8f89885aac2f614e2ae3cb71
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="help-system-overview"></a>Přehled systému nápovědy
+# <a name="finance-and-operations-help-system"></a>Systém nápovědy pro aplikaci Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
@@ -82,27 +82,19 @@ Pro přihlášení k odběru kanálu RSS všech aktualizací obsahu Unified Oper
 [Kanál RSS](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### <a name="give-feedback"></a>Poskytnutí zpětné vazby 
-Máme rádi zpětnou vazbu uživatelů. Můžete buď komentovat nebo navrhovat změny našeho obsahu prostřednictvím GitHub.
+Máme rádi zpětnou vazbu uživatelů. Můžete buď komentovat nebo navrhovat změny našeho obsahu prostřednictvím GitHub. Další informace o našem systému zpětné vazby naleznete v tomto [příspěvku blogu](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-##### <a name="leave-us-a-comment"></a>Nechte nám komentář 
+##### <a name="leave-us-feedback"></a>Zanechte nám svůj názor 
 Máte-li nějakou zpětnou vazbu nebo otázky, nechte nám komentář v dolní části stránky.  
 
-1 Klikněte na **Komentáře** pro získání komentářů ve spodní části stránky.
+1. Klikněte na **Zpětná vazba** a dostanete se ke komentářům dole na stránce, a poté klikněte na buď na **Zpětná vazba k produktu**, nebo **Přihlášení za účelem poskytnutí zpětné vazby k dokumentaci**.
 
-![Poznámky](./media/comments.png)
+![Zpětná vazba](./media/comments.png)
 
-2 Začněte psát komentáře a potom klikněte na **Publikovat komentář**.
+2. Začněte psát komentáře a potom klikněte na **Odeslat zpětnou vazbu**.
 
-![Publikovat komentář](./media/before-signin.png)
+![Publikovat komentář](./media/feedback.png)
 
-3 Vyberte typ účtu, se kterým se chcete přihlásit:  
-Klikněte na některou z ikon vlevo, pokud chcete tento web propojit s existujícím účtem, jako je Twitter, Facebook nebo účet Microsoft. 
-
-Nebo 
-
-Vpravo zadejte e-mailovou adresu a nové heslo k vytvoření nového účtu pro dané místo. 
-
-![Možnosti přihlášení](./media/signin-options.png)
 
 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Navržení změny nebo přispění do obsahu prostřednictvím GitHub
@@ -115,7 +107,6 @@ Další informace naleznete v příručce našich přispěvatelů: https://githu
 
 > [!NOTE]
 > V současnosti budeme přijímat pouze příspěvky do našeho anglického úložiště.  
-> Nepřijímáme problémy reportované prostřednictvím GitHub--ujistěte se, že pro návrhy na obsah použijete požadavek na vložení. Zpětná vazba k produktům a funkcím se nejlépe spravuje pomocí portálu Dynamics 365 Ideas Portal: https://experience.dynamics.com/ideas/. 
 
 
 ## <a name="task-guides"></a>Průvodci záznamem úloh

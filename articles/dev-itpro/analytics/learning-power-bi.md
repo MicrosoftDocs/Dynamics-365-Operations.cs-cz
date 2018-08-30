@@ -65,5 +65,3 @@ Tato data se používají k vyplňování sestav v obsahu Power BI **Výuka**.
 | Jméno zaměstnance    | Křestní jméno, příjmení a celé jméno                             | Účastníci kurzu |
 | Titul zaměstnance   | Název a datum služebního věku                                         | Účastníci kurzu |
 
-
-

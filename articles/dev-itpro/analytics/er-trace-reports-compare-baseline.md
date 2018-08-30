@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
 ms.openlocfilehash: 1a598d0bd053c60c3f8df6b05ecb7ff15addfaa3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2018
 Můžete sledovat výsledky formátů ER, které generují odchozí elektronické dokumenty. Když je zapnuté generování trasování (parametr uživatele ER **Spustit v režimu ladění**), nový záznam sledování je generován v protokolu spuštění formátu pokaždé, když je spuštěna sestava ER. Následující údaje jsou uloženy v každém trasování, které je generováno:
 
 - Všechny výstrahy, které byly vytvořeny pravidly ověření
-- Všechny chyby, které byly vytvořeny pravidly ověření 
+- Všechny chyby, které byly vytvořeny pravidly ověření
 - Všechny vytvořené soubory, které jsou uloženy jako přílohy záznamu sledování
 
 Jednotlivé základní soubory aplikací můžete uložit pro libovolný formát ER. Soubory jsou považovány za základní, když popisují očekávané výsledky sestavy, které jsou spuštěny. Pokud je k dispozici základní soubor pro formát ER, který byl spuštěný při zapnutí generování sledování, sledování kromě dříve zmíněných detailů uloží výsledky porovnání generovaného elektronického dokumentu do základního souboru. Stačí jediné kliknutí a můžete získat také generovaný elektronický dokument a jeho základní soubor v jednom souboru ZIP. Pak můžete provést detailní srovnání pomocí externího nástroje, například Windiff.

@@ -1,5 +1,5 @@
 ---
-title: "Přehled doporučení přizpůsobeného produktu"
+title: "Přizpůsobená doporučení produktu"
 description: "Toto téma obsahuje informace o doporučení produktu v aplikaci Dynamics 365 for Retail, která lze zobrazit na zařízení pokladního místa (POS)."
 author: ashishmsft
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 006ea02d4fb10092fed82516f1d17d0da750c6a1
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 368468a1c1cd023862f1405dddf3a90574edce22
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="personalized-product-recommendations-overview"></a>Přehled doporučení přizpůsobeného produktu
+# <a name="personalized-product-recommendations"></a>Přizpůsobená doporučení produktu
 
 [!include [banner](includes/banner.md)]
 
