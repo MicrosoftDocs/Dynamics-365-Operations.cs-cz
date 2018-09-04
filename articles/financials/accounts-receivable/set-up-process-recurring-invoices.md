@@ -55,11 +55,13 @@ Zákazník může mít více šablon, které mají různé intervaly.
 
 ## <a name="generate-the-recurring-invoices"></a>Generování opakovaných faktur
 Na stránce **Opakované faktury** je úkol, který zpracovává šablony opakovaných faktur. Určete datum faktury a šablonu, ze které se mají faktury generovat. Faktury budou generovány a každé skupině zpracovaných faktur se přiřadí jedno ID opakování.
-Zaúčtování opakovaných volných faktur
+
+<a name="post-recurring-free-text-invoices"></a>Zaúčtování opakovaných volných faktur
 ---------------------------------
 
 Po vygenerování opakovaných faktur se ID opakování faktury objeví v zaúčtování úloh stránce **Opakované faktury**. Všechny faktury se stejným ID opakování si můžete prohlédnout kliknutím na odkaz. Během kontroly faktur podle ID opakování lze jednotlivé faktury odstranit. Nastavení opakování se u šablony odběratele obnoví, aby se mohla znovu generovat později. Zaúčtovat můžete jednu, více nebo všechny faktury pro ID opakování. Jsou-li workflowy povolené, je nutné před zaúčtováním faktury kliknout na tlačítko **Odeslat**.
-Tisk opakovaných volných faktur
+
+<a name="print-recurring-free-text-invoices"></a>Tisk opakovaných volných faktur
 ----------------------------------
 
 Po zaúčtování opakované faktury můžete faktury vytisknout ze stránky se seznamem volných faktur. Lze vytisknout vybrané faktury nebo vybrat rozsah faktur k tisku.
