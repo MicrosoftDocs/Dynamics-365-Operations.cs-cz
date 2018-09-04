@@ -3,7 +3,7 @@ title: Dokumentace k aplikaci Microsoft Dynamics 365 for Finance and Operations
 description: Dokumentace k aplikaci Microsoft Dynamics 365 for Finance and Operations.
 author: margoc
 manager: AnnBe
-ms.date: 03/02/2018
+ms.date: 08/30/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,14 +18,15 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: edacf76866cf3e078e08dd6e5a69132d0eb15176
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: ed8bc910b3bf5501d8abb07d50fc20955f306820
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a><span data-ttu-id="e046a-103">Dokumentace k aplikaci Microsoft Dynamics 365 for Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="e046a-103">Microsoft Dynamics 365 for Finance and Operations documentation</span></span>
+
 [!include [banner](includes/banner.md)]
 
 <span data-ttu-id="e046a-104">Zjistěte, jak můžete pro svůj obchod využít Microsoft Dynamics 365 for Finance and Operations pomocí níže uvedených zdrojů. Naleznete tak skvělý obsah pro koncové uživatele, vývojáře a profesionály z oblasti IT.</span><span class="sxs-lookup"><span data-stu-id="e046a-104">Learn how to make Microsoft Dynamics 365 for Finance and Operations work for your business, using the resources below to find great content for end users, developers, and IT professionals.</span></span> 
