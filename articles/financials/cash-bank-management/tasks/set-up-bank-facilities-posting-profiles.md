@@ -3,23 +3,24 @@ title: "Nastavení zařízení banky a zaúčtování profilů pro záruční l
 description: "Tato úloha vytvoří bankovní zařízení a účetní profil potřebný pro zpracování záruční listiny."
 author: kweekley
 manager: AnnBe
-ms.date: 02/10/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BankParameters, DefaultDashboard, BankDocumentSetup, BankDocumentPosting
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 4c36d938000fdb70fd4fbedb1e05b0c8a5350fac
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: b78f82b60ee72bb91a4dd4aa13776eb8b74d7367
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="set-up-bank-facilities-and-posting-profiles-for-letters-of-guarantee"></a><span data-ttu-id="2f9d1-103">Nastavení zařízení banky a zaúčtování profilů pro záruční listiny</span><span class="sxs-lookup"><span data-stu-id="2f9d1-103">Set up bank facilities and posting profiles for letters of guarantee</span></span>

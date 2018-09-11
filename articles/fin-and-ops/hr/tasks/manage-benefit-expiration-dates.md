@@ -3,23 +3,24 @@ title: "Správa dat vypršení platnosti zaměstnaneckých výhod"
 description: "Tento postup popisuje, jak můžete ukončit nebo prodloužit platnost zaměstnaneckých výhod a spravovat data přihlášení zaměstnanců, které jsou registrovaní pro zaměstnanecké výhody."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 06/10/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: HcmBenefit, HcmMassBenefitExpiration, HcmMassBenefitExpirationResults, HcmWorker, HcmWorkerEnrollment
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f6624db66a1ff6c227ab002692eea08406f38c59
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: a06022ba097341066c2b44ce8b14ac990a41a088
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="manage-benefit-expiration-dates"></a><span data-ttu-id="ac35d-103">Správa dat vypršení platnosti zaměstnaneckých výhod</span><span class="sxs-lookup"><span data-stu-id="ac35d-103">Manage benefit expiration dates</span></span>

@@ -1,2 +1,1 @@
-> [!NOTE]
-> <span data-ttu-id="c876c-101">Nebudeme přijímat úpravy tohoto tématu, protože je generováno z obchodního procesu v rámci služeb Lifecycle Services.</span><span class="sxs-lookup"><span data-stu-id="c876c-101">We will not be accepting edits to this topic, because it is generated from a business process in Lifecycle Services.</span></span>
+

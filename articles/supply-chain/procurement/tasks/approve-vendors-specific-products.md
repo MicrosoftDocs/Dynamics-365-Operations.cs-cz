@@ -3,23 +3,24 @@ title: "Schválení dodavatelů pro konkrétní produkty"
 description: "Tento postup popisuje způsob schválení dodavatelů pro určité produkty."
 author: mkirknel
 manager: AnnBe
-ms.date: 11/02/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: EcoResProductDetailsExtended, PdsApprovedVendorList, VendTable
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 7b4d9ff2b9831e78acae2090a8d2ad9e1178ae7a
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 1e6669d632d4f6228dcbe98d82258eb97a6b255f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="approve-vendors-for-specific-products"></a><span data-ttu-id="9f057-103">Schválení dodavatelů pro konkrétní produkty</span><span class="sxs-lookup"><span data-stu-id="9f057-103">Approve vendors for specific products</span></span>

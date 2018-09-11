@@ -1,26 +1,27 @@
----
+--- 
 title: "Inventura zásob ve skladu"
 description: "Tento postup vás provede procesem vytvoření a zaúčtování deníku inventury zásob za účelem spočítání specifického zboží v jednom umístění ve skladu."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventJournalCount, InventJournalCreate, HcmWorkerLookUp, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 5099e82aa3f0408cbfbf816a69c38c5d48989dd2
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: cff65842f9eefb4365aaec86822173c6cfd35473
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="count-inventory-in-a-warehouse"></a><span data-ttu-id="b8a26-103">Inventura zásob ve skladu</span><span class="sxs-lookup"><span data-stu-id="b8a26-103">Count inventory in a warehouse</span></span>
@@ -68,4 +69,5 @@ ms.lasthandoff: 08/07/2018
 1. <span data-ttu-id="b8a26-141">Klepněte na položku Zásoby.</span><span class="sxs-lookup"><span data-stu-id="b8a26-141">Click Inventory.</span></span>
 2. <span data-ttu-id="b8a26-142">Klikněte na Transakce.</span><span class="sxs-lookup"><span data-stu-id="b8a26-142">Click Transactions.</span></span>
     * <span data-ttu-id="b8a26-143">V tomto poli se zobrazí všechny související transakce vytvořené při zaúčtování deníku inventury zásob.</span><span class="sxs-lookup"><span data-stu-id="b8a26-143">Here you can see any related transactions that will be created when you post your inventory counting journal.</span></span>   
+
 
