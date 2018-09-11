@@ -1,31 +1,32 @@
 --- 
-title: "Nastavení pravidel a parametrů pro cross docking a metodu buyer's push"
+title: " Nastavení pravidel a parametrů pro cross docking a metodu buyer's push"
 description: "Tato procedura ukazuje postup vytváření pravidel doplnění."
 author: josaw1
 manager: AnnBe
-ms.date: 03/02/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: RetailReplenishmentRuleTable, RetailReplenishmentTreeLookup
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 08f047ab38aea4958da97d80d7d274644b735cd7
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: f3a20b7bf476cae854c7f7c86d89d73e44b6749b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 02/07/2018
 
 ---
-# <a name="set-up-rules-and-parameters-for-cross-docking-and-buyers-push"></a>Nastavení pravidel a parametrů pro cross docking a metodu buyer's push
+# <a name="set-up-rules-and-parameters-for-cross-docking-and-buyers-push"></a> Nastavení pravidel a parametrů pro cross docking a metodu buyer's push
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 Tato procedura ukazuje postup vytváření pravidel doplnění. Pravidla doplnění lze použít k řízení distribuce produktů do obchodů při použití metod cross docking a buyer´s push. Pravidla doplnění lze nastavit pro obchody a skupiny obchodů. Hmotnost definovaná pro jednotlivé řádky v pravidle bude určovat, jak bude množství produktů distribuováno mezi obchody při použití pravidel doplnění jako distribuční metody pro metodu cross docking a buyer´s push. Tato procedura používá ukázkovou společnost USRT.
 

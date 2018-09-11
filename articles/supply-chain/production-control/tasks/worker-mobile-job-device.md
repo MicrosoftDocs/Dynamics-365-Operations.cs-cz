@@ -3,19 +3,20 @@ title: "Konfigurace pracovníka s použitím mobilního pracovního zařízení
 description: "Tento postup popisuje způsob přiřazení správných rolí uživatelskému účtu pracovníka a následného povolení pracovníkovi provádět registrace v dílenském řízení."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: SysUserManagement, HcmWorker, JmgRegistrationSetupTouch, JmgRegistrationSetupAssignUsers
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
 ms.openlocfilehash: f9de2f79c68fead5ede714ff05bba97118874aad
@@ -68,4 +69,5 @@ Tento postup popisuje způsob přiřazení správných rolí uživatelskému ú�
 5. Klikněte na položku Upravit.
 6. V poli Výrobní jednotka lze nastavit výchozí filtr pro pracovníka. Tím bude zajištěno, že pouze výrobní práce pro vybrané výrobní jednotky se zobrazí v případě, že se pracovník přihlásí k zařízení.
 7. Zavřete stránku.
+
 

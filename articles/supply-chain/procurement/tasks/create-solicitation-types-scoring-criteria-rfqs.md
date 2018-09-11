@@ -3,18 +3,19 @@ title: "Vytvoření typů oslovení a kritérií hodnocení pro požadavky na n
 description: "Tato příručka popisuje způsob vytvoření typu oslovení a jeho přiřazení k metodě hodnocení."
 author: mkirknel
 manager: AnnBe
-ms.date: 08/23/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreateRFQCase, PurchRFQCaseTable, PurchRFQScoringRFQCaseCriteria, PurchRFQScoringCriteriaCopy
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 095855d552d228375635bdbaa9fca37c47a3b952
@@ -42,6 +43,7 @@ Tato příručka popisuje způsob vytvoření typu oslovení a jeho přiřazení
 1. Přejděte na Zásobování a zdroje > Požadavky na nabídky > Všechny požadavky na nabídky.
 2. Klikněte na položku Nová.
 3. V poli Typ oslovení vyberte typ oslovení, který jste právě vytvořili. 
+    *   
 4. Klikněte na tlačítko OK.
 5. Klikněte na Kritéria hodnocení.
     * Zobrazená kritéria hodnocení jsou ta z metody hodnocení, která je přidružena k typu oslovení. Na této stránce je možné přidat nebo odstranit kritérií. Dále je možné přidat nová kritéria kopírováním z jiné metody hodnocení.  

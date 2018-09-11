@@ -1,33 +1,34 @@
 --- 
-title: "Zadání produktů z distribučních center do obchodů pomocí metody buyer's push"
-description: "Tato procedura vás provede postupem, jak vytvořit a zpracovat buyer's push k distribuci produktů z jednoho skladové místa do jednoho nebo více obchodů."
+title: " Zadání produktů z distribučního centra do obchodu pomocí metody buyer's push"
+description: "Tato procedura vás provede postupem, jak vytvořit a zpracovat buyer´s push k distribuci produktů z jednoho skladové místa do jednoho nebo více obchodů."
 author: rubencdelgado
 manager: AnnBe
-ms.date: 02/17/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: RetailBuyersPush, InventLocationIdLookup, InventItemIdLookupSimple, RetailReplenishmentTreeLookup
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: ed47b4f052dab99dec058910e4b8558481b34e59
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: 9d9a5d4fdece1cfb573224bd54d96ccd281c0f09
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 02/07/2018
 
 ---
-# <a name="push-products-from-distribution-centers-to-stores-via-buyers-push"></a>Zadání produktů z distribučních center do obchodů pomocí metody buyer's push
+# <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a> Zadání produktů z distribučního centra do obchodu pomocí metody buyer's push
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
-Tato procedura vás provede postupem, jak vytvořit a zpracovat buyer's push k distribuci produktů z jednoho skladové místa do jednoho nebo více obchodů. Můžete definovat více konfigurací a nechat systém navrhovat, jak budou produkty distribuovány, nebo ručně zadat, kam budou produkty distribuovány a kolik jich bude distribuováno do jednotlivých obchodů. Tato procedura neobsahuje nastavení dat, která lze použít pro buyer's push, jako jsou například pravidla doplnění, organizační hierarchie a skladovací hmotnosti. Tato procedura používá ukázkovou společnost USRT.
+Tato procedura vás provede postupem, jak vytvořit a zpracovat buyer´s push k distribuci produktů z jednoho skladové místa do jednoho nebo více obchodů. Můžete definovat více konfigurací a nechat systém navrhovat, jak budou produkty distribuovány, nebo ručně zadat, kam budou produkty distribuovány a kolik jich bude distribuováno do jednotlivých obchodů. Tato procedura neobsahuje nastavení dat, která lze použít pro buyer´s push, jako jsou například pravidla doplnění, organizační hierarchie a skladovací hmotnosti. Tato procedura používá ukázkovou společnost USRT.
 
 1. Přejděte na možnost Buyer's push.
 2. Klikněte na položku Nová.
