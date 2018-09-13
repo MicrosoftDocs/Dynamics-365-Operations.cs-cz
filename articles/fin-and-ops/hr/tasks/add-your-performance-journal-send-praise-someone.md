@@ -3,7 +3,7 @@ title: "Přidávání informací do deníku výkonnosti a udělení pochvaly n�
 description: "Deník výkonnosti obsahuje informace, které se týkají toho, jak jste splnili své cíle nebo jak jste si vedli během období."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

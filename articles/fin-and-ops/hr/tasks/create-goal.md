@@ -3,7 +3,7 @@ title: "Vytvoření cíle"
 description: "Můžete vytvořit cíle, přidat aktivity k cílům, sledovat měrný systém a propojit cíle s kontrolou."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

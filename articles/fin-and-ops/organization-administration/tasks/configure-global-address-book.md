@@ -3,7 +3,7 @@ title: "Konfigurace globálního adresáře"
 description: "Tento postup slouží k nastavení výchozích hodnot a zásad zabezpečení pro globální adresář."
 author: kfend
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

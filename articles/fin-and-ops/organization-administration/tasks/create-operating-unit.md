@@ -3,7 +3,7 @@ title: "Vytvoření provozní jednotky"
 description: "Provozní jednotka je organizace, která se používá k rozdělení řízení ekonomických zdrojů a operačních procesů v podniku."
 author: sericks007
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

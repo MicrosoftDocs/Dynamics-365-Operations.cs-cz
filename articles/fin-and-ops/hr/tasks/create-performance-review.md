@@ -3,7 +3,7 @@ title: "Vytvoření kontroly výkonnosti"
 description: "Tato procedura ukazuje, jak vytvořit kontrolu výkonnosti, a popisuje účel pro každou část kontroly."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
