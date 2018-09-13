@@ -3,7 +3,7 @@ title: "Vytvoření kontroly výkonnosti"
 description: "Tato procedura ukazuje, jak vytvořit kontrolu výkonnosti, a popisuje účel pro každou část kontroly."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 2de4ec70f180bc1c320df4789c8f194e38438b04
+ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
+ms.openlocfilehash: 437a63159f0333434175acce081fa4ff417c334b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/13/2018
 
 ---
 # <a name="create-a-performance-review"></a><span data-ttu-id="3edba-103">Vytvoření kontroly výkonnosti</span><span class="sxs-lookup"><span data-stu-id="3edba-103">Create a performance review</span></span>
