@@ -44,11 +44,13 @@ Pokud chcete použít platební karty, musíte nastavit a aktivovat službu pro 
 
 ## <a name="adding-a-new-credit-card"></a>Přidání nové platební karty
 Můžete vytvořit nové záznamy kreditní karty na stránce Odběratelé pomocí polí Odběratel, Nastavení, Platební karta. Můžete také vytvořit záznamy kreditní karty při zadávání prodejních objednávek na stránce Prodejní objednávku pomocí polí Správa, Odběratel, Kreditní karta, Registrační pokladna.
-Přidání platební karty do prodejní objednávky
+
+<a name="adding-a-credit-card-to-a-sales-order"></a>Přidání platební karty do prodejní objednávky
 -------------------------------------
 
 Platební kartu lze přidat do prodejní objednávky výběrem platební karty ve vyhledávání platební karty na pevné záložce Cena a sleva na stránce Prodejní objednávky. Ke spuštění procesu ověření v podokně akcí na kartě Spravovat vyberte Kreditní karta a Ověřit.
-Autorizace platební karty
+
+<a name="authorizing-a-credit-card"></a>Autorizace platební karty
 -------------------------
 
 Při ověření dochází nejprve k ověření jména držitele karty a potom k potvrzení disponibilního zůstatku. V případě potřeby lze ověřit i hodnotu ověření platební karty a adresu držitele karty. Disponibilní zůstatek odběratele je snížen o částku faktury. Služba pro platby odešle informaci, zda byla kreditní karta přijata nebo odmítnuta. Při fakturaci prodejní objednávky je kreditní karta zatížena (zaznamenána) částkou faktury.
