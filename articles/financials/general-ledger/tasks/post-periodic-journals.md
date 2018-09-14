@@ -3,7 +3,7 @@ title: "Účtování periodických deníků"
 description: "Periodické deníky se někdy nazývají opakované deníky, protože částka, text a ostatní informace se opakují při každém získání periodického deníku."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: c84e9297b2a672600e71fcb614d80d9729a000d6
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: deae523d922e1d6a4f7bb05433e9b1568c9c1ee9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="post-periodic-journals"></a><span data-ttu-id="589e0-103">Účtování periodických deníků</span><span class="sxs-lookup"><span data-stu-id="589e0-103">Post periodic journals</span></span>

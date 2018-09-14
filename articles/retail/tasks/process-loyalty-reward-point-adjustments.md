@@ -3,7 +3,7 @@ title: " Zpracování úprav bodů věrnostních odměn"
 description: "Tato procedura demonstruje vyhledávání informace o věrnostní kartě a úpravu bodů věrnostních odměn."
 author: scott-tucker
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: e6ed175991f1a694254c25d031575c51e4d6d0f6
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 85aaa82bf56d55c69f39bab49682c79f51247251
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a><span data-ttu-id="b0af5-103"> Zpracování úprav bodů věrnostních odměn</span><span class="sxs-lookup"><span data-stu-id="b0af5-103">Process loyalty reward point adjustments</span></span>

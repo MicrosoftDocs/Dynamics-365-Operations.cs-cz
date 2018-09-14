@@ -3,7 +3,7 @@ title: " Základní cena a obchodní smlouvy"
 description: "Tato procedura vás provede postupem vytváření obchodních smluv prodejních cen specifických pro kanál."
 author: josaw1
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: ca0fe368068c6522a1d782ed8fa418cdbde7ec6a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 4830ac553318cfbb3cb74395d1662e74dff75290
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="base-price-and-trade-agreements"></a><span data-ttu-id="a0b6a-103"> Základní cena a obchodní smlouvy</span><span class="sxs-lookup"><span data-stu-id="a0b6a-103">Base price and trade agreements</span></span>

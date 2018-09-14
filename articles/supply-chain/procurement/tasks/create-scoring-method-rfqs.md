@@ -3,7 +3,7 @@ title: "Vytvoření metody hodnocení pro požadavky na nabídku"
 description: "Tato procedura popisuje způsob vytváření metody hodnocení."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 0235723e0e5668c53ca6f6ac79732502aeae551a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 98bcffdf63e20a0a620aa87b44449ce13a5df2fe
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-a-scoring-method-for-rfqs"></a><span data-ttu-id="dfe47-103">Vytvoření metody hodnocení pro požadavky na nabídku</span><span class="sxs-lookup"><span data-stu-id="dfe47-103">Create a scoring method for RFQs</span></span>
