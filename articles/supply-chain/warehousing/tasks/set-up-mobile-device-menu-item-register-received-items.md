@@ -3,7 +3,7 @@ title: "Nastavení položky nabídky na mobilním zařízení pro registraci př
 description: "Tato úloha je zaměřena na nastavení položky nabídky mobilního zařízení."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

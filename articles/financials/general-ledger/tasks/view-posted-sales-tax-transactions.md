@@ -3,7 +3,7 @@ title: "Zobrazit zaúčtované transakce DPH"
 description: "Můžete zobrazit transakce zaúčtovaného DPH z různých stránek v závislosti na tom, co chcete zobrazit."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Vytváření vlastností plánování pracovní doby"
 description: "Vlastnosti plánování pracovní doby se používají ke kategorizaci časových intervalů pracovní doby a definování nastavení, které musí operátoři brát v úvahu."
 author: sorenva
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

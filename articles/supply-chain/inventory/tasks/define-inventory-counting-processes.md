@@ -3,7 +3,7 @@ title: "Definování procesů inventur zásob"
 description: "Tento postup vás provede konfigurací základního inventurního procesu vytvořením inventurní skupiny a deníku inventur."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

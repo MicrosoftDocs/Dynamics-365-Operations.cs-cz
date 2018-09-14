@@ -3,7 +3,7 @@ title: "Nastavení šablony práce pro nákupní objednávky"
 description: "Tento postup se zaměřuje na nastavení jednoduché pracovní šablony pro použití při odložení doručených položek."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

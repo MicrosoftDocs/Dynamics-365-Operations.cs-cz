@@ -3,7 +3,7 @@ title: "Vytvoření konsolidačních skupin a dalších konsolidačních účt�
 description: "Tento postup popisuje, jak vytvořit skupinu konsolidačních účtů a poté do skupiny přidat účty."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Konfigurace adresářů"
 description: "Pomocí tohoto postupu a rozhodnutí, která byla provedena v tématu o plánování konfigurace globálního adresáře a dalších adresářů, nastavte další adresáře pro vaši organizaci."
 author: kfend
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

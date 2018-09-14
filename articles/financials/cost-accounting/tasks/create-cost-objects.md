@@ -3,7 +3,7 @@ title: "Vytváření objektů nákladů  "
 description: "Tato procedura popisuje, jak vytvořit objekty nákladů importováním finanční dimenze nákladového střediska aplikace Dynamics 365 for Finance and Operations, Enterprise edition v nákladovém účetnictví prostřednictvím datového konektoru."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

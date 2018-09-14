@@ -3,7 +3,7 @@ title: "Ruční úprava prognózy poptávky"
 description: "Tento postup popisuje postup úpravy prognózy pro položku."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

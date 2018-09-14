@@ -3,7 +3,7 @@ title: "Vytvořit nový produkt"
 description: "Tento úkol popisuje, jak vytvořit nový sdílený produkt."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

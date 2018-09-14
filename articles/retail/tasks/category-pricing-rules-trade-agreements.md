@@ -3,7 +3,7 @@ title: " Cenová pravidla kategorií pro vytváření obchodních smluv"
 description: "Tato procedura ukazuje, jak vytvořit obchodní smlouvy o prodejních cenách pomocí kategorizace cenových pravidel."
 author: scott-tucker
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

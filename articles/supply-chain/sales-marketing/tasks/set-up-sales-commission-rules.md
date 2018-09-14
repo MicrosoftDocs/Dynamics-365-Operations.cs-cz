@@ -3,7 +3,7 @@ title: "Nastavení pravidel prodejních provizí"
 description: "Tento postup popisuje, jak nastavit a povolit výpočet prodejní provize a sledování."
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

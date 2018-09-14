@@ -3,7 +3,7 @@ title: "Aktivace verze výrobního toku"
 description: "Než bude možné vytvořit kanbanové úlohy a zpracovat aktivity pro verzi výrobního toku, je třeba verzi aktivovat."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Registrace prodejních provizí"
 description: "Tento postup popisuje, jak jsou vypočítány a registrovány prodejní provize."
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

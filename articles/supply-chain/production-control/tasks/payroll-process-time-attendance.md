@@ -3,7 +3,7 @@ title: "Povolení procesu mezd pro čas a docházku"
 description: "Tento postup popisuje, jak povolit mzdový proces pro čas a docházku."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

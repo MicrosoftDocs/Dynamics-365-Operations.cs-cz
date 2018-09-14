@@ -3,7 +3,7 @@ title: "Uvolnění produktu / základního produktu právnickým osobám"
 description: "Tato procedura vás provede způsobem uvolnění produktu nebo základního produktu pro jednu nebo více právnických osob."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

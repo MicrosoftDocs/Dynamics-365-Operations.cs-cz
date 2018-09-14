@@ -3,7 +3,7 @@ title: "Udržování kusovníku pro model konfigurace produktu"
 description: "Spuštění této procedury vyžaduje stávající model konfigurace produktu."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

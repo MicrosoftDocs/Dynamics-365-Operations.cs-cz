@@ -3,7 +3,7 @@ title: "Registrace přihlášení a odhlášení řidiče k události"
 description: "Tato procedura ukazuje, jak registrovat přihlášení a odhlášení řidiče."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

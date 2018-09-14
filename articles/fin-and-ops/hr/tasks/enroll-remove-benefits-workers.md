@@ -3,7 +3,7 @@ title: "Registrace a odebrání zaměstnaneckých výhod pracovníků"
 description: "Tento postup ukazuje, jak jeden pracovník může být registrován do jedné nebo více zaměstnaneckých výhod, a také jak více pracovníků může být registrováno k zaměstnanecké výhodě."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

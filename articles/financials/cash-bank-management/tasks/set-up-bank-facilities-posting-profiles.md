@@ -3,7 +3,7 @@ title: "Nastavení zařízení banky a zaúčtování profilů pro záruční l
 description: "Tato úloha vytvoří bankovní zařízení a účetní profil potřebný pro zpracování záruční listiny."
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

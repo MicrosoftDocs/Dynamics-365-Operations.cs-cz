@@ -3,7 +3,7 @@ title: "Vytvoření prodejní objednávky pro konfigurovatelný produkt"
 description: "Tato procedura znázorňuje způsob použití šablony konfigurace pro produkt na prodejní objednávce."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

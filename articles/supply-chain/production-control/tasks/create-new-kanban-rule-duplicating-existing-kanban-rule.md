@@ -3,7 +3,7 @@ title: "Vytvoření nového kanbanového pravidla duplikováním existujícího 
 description: "Tento postup se zaměřuje na vytváření kopií existujícího kanbanového pravidla."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

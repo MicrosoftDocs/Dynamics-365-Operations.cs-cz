@@ -3,7 +3,7 @@ title: "Rozdělení dlouhodobého majetku"
 description: "Tento průvodce záznamem úloh rozdělí procento jedné knihy majetku na novou knihu majetku."
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

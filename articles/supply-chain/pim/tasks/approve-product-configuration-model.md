@@ -3,7 +3,7 @@ title: "Schválení modelu konfigurace produktu"
 description: "Spuštění této procedury vyžaduje, aby nejméně jeden model konfigurace produktu byl k dispozici."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

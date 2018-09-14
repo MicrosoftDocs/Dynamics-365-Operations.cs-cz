@@ -3,7 +3,7 @@ title: "Nastavení aliasu účtu hlavní knihy"
 description: "Tento postup popisuje, jak vytvořit alias účtu, který poskytuje zástupce pro zadání čísla účtu."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

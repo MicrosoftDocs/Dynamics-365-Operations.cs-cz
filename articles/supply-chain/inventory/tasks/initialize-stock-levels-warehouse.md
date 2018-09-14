@@ -3,7 +3,7 @@ title: "Inicializace úrovní zásob ve skladu"
 description: "Tento postup popisuje, jak manuálně aktualizovat zásoby na skladě pomocí deníku pohybu zásob."
 author: perlynne
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

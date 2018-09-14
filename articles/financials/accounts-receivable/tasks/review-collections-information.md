@@ -3,7 +3,7 @@ title: "Kontrola inkasních informací"
 description: "Tato procedura vás provede kontrolou informací inkasa společně s různými možnostmi nastavení a transakcemi inkasa."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

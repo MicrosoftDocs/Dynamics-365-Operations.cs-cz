@@ -3,7 +3,7 @@ title: " Vytvoření a přidružení zařízení"
 description: "Tato procedura vás provede vytvořením nového zařízení a jeho přidružením k registrační pokladně."
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

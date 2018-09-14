@@ -3,7 +3,7 @@ title: "Hlášení průběhu na mobilním pracovním zařízení"
 description: "Tento postup popisuje spuštění a hlášení průběhu výrobní úlohy v registračním formuláři úloh zařízení."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

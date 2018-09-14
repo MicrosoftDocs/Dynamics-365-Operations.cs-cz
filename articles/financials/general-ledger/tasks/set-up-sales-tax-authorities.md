@@ -3,7 +3,7 @@ title: "Nastavení daňových úřadů"
 description: "Finanční úřady jsou entity, pro které je třeba vykazovat a platit shromážděné DPH."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

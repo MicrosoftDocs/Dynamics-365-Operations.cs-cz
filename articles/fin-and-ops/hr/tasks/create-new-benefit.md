@@ -3,7 +3,7 @@ title: "Vytvořit novou zaměstnaneckou výhodu"
 description: "Tato úloha znázorňuje, jak vytvořit prvky zaměstnanecké výhody, které budou použity při vytváření nových zaměstnaneckých výhod."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

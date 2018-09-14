@@ -3,7 +3,7 @@ title: "Nastavení profilu přehledu doručení zboží"
 description: "Tento úkol je zaměřen na nastavení profilu přehledu doručení."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

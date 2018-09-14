@@ -3,7 +3,7 @@ title: "Ohlášení výrobní zakázky jako dokončené"
 description: "Tato procedura popisuje způsob nahlásit výrobní zakázky jako dokončenou."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Zobrazení nákladových položek pro objekt nákladů"
 description: "Tento postup popisuje způsob zobrazení záznamů nákladů pro objekt nákladů."
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: " Zpracování úprav bodů věrnostních odměn"
 description: "Tato procedura demonstruje vyhledávání informace o věrnostní kartě a úpravu bodů věrnostních odměn."
 author: scott-tucker
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

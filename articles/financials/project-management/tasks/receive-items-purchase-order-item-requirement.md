@@ -3,7 +3,7 @@ title: "Přijetí položek na nákupní objednávce z požadavku na položku"
 description: "Tento postup ukazuje, jak přijmout položky na nákupní objednávce z požadavku na položku."
 author: KimANelson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

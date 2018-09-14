@@ -3,7 +3,7 @@ title: "Zadání kódu GTIN pro produkt"
 description: "Kódy GTIN přiřazuje organizace GS1."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

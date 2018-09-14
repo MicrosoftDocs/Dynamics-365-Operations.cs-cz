@@ -3,7 +3,7 @@ title: "Naplánování události pro vytížení"
 description: "Tato procedura ukazuje, jak nastavit a naplánovat událostí překladiště pro vytížení."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

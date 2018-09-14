@@ -3,7 +3,7 @@ title: "Životní cyklus dávkové objednávky od vytvoření po spuštění"
 description: "Tento proces vás provede první částí životního cyklu dávkové objednávky."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

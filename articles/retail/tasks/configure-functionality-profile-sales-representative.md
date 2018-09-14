@@ -3,7 +3,7 @@ title: " Konfigurace funkčního profilu pro obchodní zástupce"
 description: "Tato procedura ukazuje, jak konfigurovat nastavení funkce profilu prodejny vztahující se na obchodní zástupce."
 author: jblucher
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

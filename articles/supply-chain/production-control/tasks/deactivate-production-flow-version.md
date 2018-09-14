@@ -3,7 +3,7 @@ title: "Deaktivace verze výrobního toku"
 description: "Když aktivní verze výrobního toku již není potřeba, je možné ji deaktivovat."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

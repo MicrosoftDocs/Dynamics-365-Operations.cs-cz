@@ -3,7 +3,7 @@ title: "Nastavení srážkové daně"
 description: "Srážková daň je daň uvalená na dodavatele, která nevytváří transakce prodejní daně."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

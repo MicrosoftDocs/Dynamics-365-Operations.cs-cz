@@ -3,7 +3,7 @@ title: "Definování konfiguračních skupin"
 description: "Tento postup popisuje definování konfiguračních skupin produktu vytvořením dvou skupin v ukázkových datech společnosti USMF."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

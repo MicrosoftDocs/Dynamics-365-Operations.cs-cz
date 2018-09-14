@@ -3,7 +3,7 @@ title: "Přidání omezení výrazu do modelu konfigurace produktu"
 description: "Tento postup popisuje, jak můžete přidat nový výraz omezení pro model konfigurace produktu."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

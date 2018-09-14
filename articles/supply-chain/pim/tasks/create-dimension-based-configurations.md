@@ -3,7 +3,7 @@ title: "Vytváření konfigurací založených na dimenzích"
 description: "Tento postup popisuje, jak definovat konfiguraci produktu založeného na dimenzích."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

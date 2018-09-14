@@ -3,7 +3,7 @@ title: "Registrace a zaúčtování postdatovaného šeku pro dodavatele"
 description: "Můžete si zaregistrovat podrobnosti postdatovaného šeku před vydáním šeku na dodavatele pomocí účetního dokladu."
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

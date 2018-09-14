@@ -3,7 +3,7 @@ title: "Vytvoření provozního prostředku"
 description: "Provozní prostředek provádí aktivity projektu nebo výrobního procesu."
 author: sorenva
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

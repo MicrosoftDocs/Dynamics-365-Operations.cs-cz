@@ -3,7 +3,7 @@ title: "Ověření výrobního toku a verze"
 description: "Tato procedura popisuje postup při vytvoření nového výrobního toku a první verze pro lean manufacturing."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

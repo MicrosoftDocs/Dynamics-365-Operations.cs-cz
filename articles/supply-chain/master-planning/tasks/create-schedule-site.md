@@ -3,7 +3,7 @@ title: "Vytvoření plánu pro pracoviště"
 description: "Tento postup popisuje způsob plánování výrobních zakázek, které nebyly dosud pro pracoviště zahájeny."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Vytváření komponent modelu produktu"
 description: "Modely konfigurace produktu založené na omezeních využívají komponenty jako stavební bloky pro vytvoření struktury modelu výrobku."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

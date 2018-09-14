@@ -3,7 +3,7 @@ title: "Nastavení upřednostňovaného časového pásma uživatele"
 description: "Následující postup vysvětluje, jak uživatel v roli správce systému může nastavit časové pásmo pro uživatele."
 author: pvillads
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

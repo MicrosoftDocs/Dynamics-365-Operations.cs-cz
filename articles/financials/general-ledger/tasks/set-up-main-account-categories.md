@@ -3,7 +3,7 @@ title: "Nastavení kategorií hlavního účtu"
 description: "Kategorie hlavního účtu se používají pro výchozí sestavy ve finančních výkazech a Power BI."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

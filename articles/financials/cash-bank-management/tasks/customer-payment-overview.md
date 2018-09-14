@@ -3,7 +3,7 @@ title: "Přehled plateb odběratele"
 description: "Tento průvodce záznamem úloh vás provede různými metodami zadání plateb odběratele."
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

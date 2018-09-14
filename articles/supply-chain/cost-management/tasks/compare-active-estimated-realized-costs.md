@@ -3,7 +3,7 @@ title: "Porovnání aktivních, odhadovaných a realizovaných nákladů u vý
 description: "Tento postup popisuje, jak zobrazit důvody pro vysoké výrobní odchylky pro výrobní zakázku."
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

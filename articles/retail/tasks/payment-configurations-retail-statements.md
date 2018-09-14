@@ -3,7 +3,7 @@ title: " Konfigurace plateb pro maloobchodní výkazy"
 description: "Tato procedura ukazuje konfigurace pro metody plateb maloobchodu, které ovlivní způsob pro vytváření a účtování výkazy maloobchodu."
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Schválení dodavatelů pro konkrétní produkty"
 description: "Tento postup popisuje způsob schválení dodavatelů pro určité produkty."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

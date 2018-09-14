@@ -3,7 +3,7 @@ title: "Nastavit informace o zraněních a onemocněních"
 description: "Zaměstnavatelé potřebují být informováni, když dojde ke zranění nebo onemocnění zaměstnance v důsledku nebezpečí na pracovišti."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

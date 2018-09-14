@@ -3,7 +3,7 @@ title: "Zobrazení výkazu zásob a ukazatele KPI podle objektů nákladů"
 description: "K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF."
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

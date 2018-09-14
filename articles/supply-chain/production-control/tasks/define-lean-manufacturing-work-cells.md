@@ -3,7 +3,7 @@ title: "Definování pracovních buněk pro lean manufacturing"
 description: "Pracovní buňka je konkrétní formulář skupin prostředků, které lze použít v aktivitách procesu lean manufacturing."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

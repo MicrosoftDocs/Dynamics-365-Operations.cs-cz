@@ -3,7 +3,7 @@ title: "Vytvoření typů oslovení a kritérií hodnocení pro požadavky na n
 description: "Tato příručka popisuje způsob vytvoření typu oslovení a jeho přiřazení k metodě hodnocení."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

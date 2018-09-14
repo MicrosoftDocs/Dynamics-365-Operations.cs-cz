@@ -3,7 +3,7 @@ title: "Změna nápisu nebo loga"
 description: "V následující proceduře je uveden postup, pomocí kterého mohou správci systému aktualizovat proužkovou reklamu nebo obrázek loga, které se zobrazí pro právnickou osobu."
 author: aneesmsft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

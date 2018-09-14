@@ -3,7 +3,7 @@ title: "Uzavření fiskálního roku"
 description: "Tato procedura vás provede procesem roční uzávěrky, která zůstatky převádí do nového fiskálního roku."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

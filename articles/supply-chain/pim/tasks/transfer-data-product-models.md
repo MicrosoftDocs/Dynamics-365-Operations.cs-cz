@@ -3,7 +3,7 @@ title: "Převedení dat pro modely produktu"
 description: "Export dat pro model konfigurace produktu vyžaduje, aby alespoň jeden model produktu byl k dispozici."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

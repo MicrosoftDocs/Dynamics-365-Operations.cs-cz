@@ -3,7 +3,7 @@ title: "Vytvoření smlouvy bankovního zařízení pro akreditiv"
 description: "Tato úloha vás provede vytvářením smlouvy bankovního zařízení pro zpracování akreditiv."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

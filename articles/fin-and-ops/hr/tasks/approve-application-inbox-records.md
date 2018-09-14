@@ -3,7 +3,7 @@ title: "Schválení záznamů doručených přihlášek"
 description: "Tento postup popisuje kontrolu přihlášek přijatých prostřednictvím samoobslužných stránek pro zaměstnance."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Zobrazení aktuálního stavu NV u výrobní zakázky"
 description: "Tato procedura ukazuje, jak u výrobní zakázky zobrazit výkaz nedokončené výroby."
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

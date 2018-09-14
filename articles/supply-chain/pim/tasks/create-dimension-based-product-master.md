@@ -3,7 +3,7 @@ title: "Vytvoření základního produktu založeného na dimenzích"
 description: "Tento postup popisuje, jak vytvořit nový základní produkt pomocí technologie konfigurace založené na dimenzích."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Definování modelů výrobních toků"
 description: "Modely výrobních toků popisují, jak je vypočtena a spravována kapacita pracovních buněk lean manufacturing."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

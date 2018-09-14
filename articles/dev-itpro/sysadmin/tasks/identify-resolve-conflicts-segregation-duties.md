@@ -3,7 +3,7 @@ title: "Identifikace a vyřešení konfliktů v dělení zodpovědnosti"
 description: "Můžete nastavit pravidla k oddělení úkolů, které musí být prováděny různými uživateli."
 author: maertenm
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

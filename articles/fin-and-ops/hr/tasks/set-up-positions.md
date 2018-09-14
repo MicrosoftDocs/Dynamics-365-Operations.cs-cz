@@ -3,7 +3,7 @@ title: Nastavit pozice
 description: "Pozice jsou důležitým prvkem nižší úrovně hierarchie organizace."
 author: DarinKramer
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

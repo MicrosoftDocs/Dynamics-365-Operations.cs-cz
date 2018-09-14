@@ -3,7 +3,7 @@ title: "Vytváření předdefinovaných variant produktů"
 description: "Tento postup vás provede vytvořením variant produktu pro základní produkt za pomoci kombinací dimenzí produktu."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

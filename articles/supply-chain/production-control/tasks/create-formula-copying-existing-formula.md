@@ -3,7 +3,7 @@ title: "Vytvoření receptury kopírováním z existující receptury"
 description: "Tento postup popisuje, jak rychle vytvořit novou recepturu zkopírování z některé existující receptury."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

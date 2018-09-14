@@ -3,7 +3,7 @@ title: "Zadávání informací o pracovnících"
 description: "Poté, co náborový pracovník vytvoří projekt hromadného zařazování zaměstnanců a generování pozic, je dalším krokem zadání informací o pracovníkovi pro osoby, které byly přijaty."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

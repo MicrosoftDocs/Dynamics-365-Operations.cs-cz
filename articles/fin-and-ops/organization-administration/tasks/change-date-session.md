@@ -3,7 +3,7 @@ title: "Změna data pro relaci"
 description: "Standardně se při zadávání a publikování položek deníku nebo zdrojových dokumentů používá aktuální datum."
 author: pvillads
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Vytvoření relace aktivity - následník"
 description: "Tok aktivit ve štíhlém výrobním toku je zaznamenán prostřednictvím vztahů aktivity."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

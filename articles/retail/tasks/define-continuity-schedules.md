@@ -3,7 +3,7 @@ title: " Definování plánů trvání"
 description: "Toto téma vás provede nastavením programu trvání (označovaném také jako opakované objednávky)."
 author: josaw1
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

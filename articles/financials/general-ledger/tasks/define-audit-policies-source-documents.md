@@ -3,7 +3,7 @@ title: "Definování zásad auditu pro zdrojové dokumenty"
 description: "Tento postup popisuje způsob nastavení a spuštění pravidel zásad auditu."
 author: ryansandness
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

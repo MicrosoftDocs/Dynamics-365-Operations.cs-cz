@@ -3,7 +3,7 @@ title: " Vytvoření a přidružení pokladen"
 description: "Tento postup demonstruje vytvoření pokladních míst."
 author: rubencdelgado
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Vytvoření nákupní objednávky s plánem dodávek"
 description: "Tento postup ukazuje, jak vytvořit plán dodávek pro nákupní objednávku."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

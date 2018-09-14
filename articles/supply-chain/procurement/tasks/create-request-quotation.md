@@ -3,7 +3,7 @@ title: "Vytvoření požadavku na nabídku"
 description: "Tato procedura popisuje způsob ručního vytváření požadavku na nabídku."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

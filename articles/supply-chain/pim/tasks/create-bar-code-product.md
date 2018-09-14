@@ -3,7 +3,7 @@ title: "Vytvoření čárového kódu pro produkt"
 description: "Tato procedura ukazuje, jak ručně vytvořit čárový kód pomocí čísla položky M0001 jako příklad."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
