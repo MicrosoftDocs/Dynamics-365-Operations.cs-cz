@@ -3,7 +3,7 @@ title: "Lokalizace a funkce týkající se předpisů"
 description: "Toto téma obsahuje seznam prostředků, které vám pomohou dozvědět se více o funkci specifické pro zemi/oblast."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/18/2018
+ms.date: 09/05/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 46165351f3c9048cfbecf25a1c49d8aeac1f3e1e
-ms.openlocfilehash: 787ce11701a9df951b38af5209206902d7c98019
+ms.sourcegitcommit: f64292a1b3726ea9b43f959a44c4ed2a1f392484
+ms.openlocfilehash: db18906739529e04710507ee9ff088540894171d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/05/2018
 
 ---
 
@@ -31,7 +31,11 @@ ms.lasthandoff: 08/08/2018
 
 Microsoft Dynamics 365 for Finance and Operations zahrnuje funkci pro zemi/oblast popsané v dokumentu [Průvodce dostupnosti lokalizace a překladů produktu](https://aka.ms/ax-availabilityguide). Tato funkce je povolena na základě primární adresy aktivní právnické osoby. 
 
-Toto téma obsahuje seznam prostředků, které vám pomohou dozvědět se více o řešeních, aktualizacích, výstrahách a funkcích specifických pro zemi/oblast. 
+Toto téma zahrnuje zdroje, které vám pomohou: 
+- získat více informací o řešeních specifických pro rozvojové země/oblasti
+- získat aktualizace specifické pro země/oblasti
+- odeslat a zkontrolovat regulační výstrahy
+- získat informace o tom, jak používat funkce specifické pro země/oblasti 
 
 ## <a name="developing-localized-solutions"></a>Vývoj lokalizovaných řešení
 Následující zdroje obsahují pokyny a informace, které mohou pomoci vývojářům a nezávislým výrobcům softwaru, kteří vytvářejí vlastní přizpůsobení specifické pro zemi/oblast nebo vytvářejí řešení pro zemi, kterou společnost Microsoft nepodporuje.
@@ -72,159 +76,50 @@ Průvodci záznamem úloh jsou k dispozici v podokně nápovědy k produktu a
 
 Průvodce záznamem úloh naleznete přechodem na stránku v aplikaci Microsoft Dynamics 365 for Finance and Operations a kliknutím na tlačítko Nápověda. Průvodci záznamem úloh používající takovou stránku, jsou uvedeni na seznamu v podokně nápovědy. Podokno nápovědy můžete také použít pro vyhledávání průvodců záznamem úloh podle názvu.
 
-Další informace naleznete v tématu [Průvodci záznamem úloh](../../fin-and-ops/get-started/help-overview.md#task-guides)..
+Další informace naleznete v tématu [Průvodci záznamem úloh](../../fin-and-ops/get-started/help-overview.md#task-guides).
 
 
-## <a name="countryregion-specific-help-topics"></a>Témata nápovědy specifická pro zemi/oblast
-V následujících částech je seznam zdrojů podle země/oblasti.
+## <a name="countryregion-specific-help-content"></a>Obsah nápovědy specifický pro zemi nebo oblast
+:::row:::
+    :::column:::
+        - [Austrálie](../../financials/localizations/australia.md)
+        - [Rakousko](../../financials/localizations/austria.md)
+        - [Belgie](../../financials/localizations/belgium.md)
+        - [Brazílie](../../financials/localizations/brazil.md)
+        - [Čína](../../financials/localizations/china.md)
+        - [Česká republika](../../financials/localizations/czech-republic.md)
+        - [Estonsko](../../financials/localizations/estonia.md)
+        - [Evropa](../../financials/localizations/europe.md)
+        - [Francie](../../financials/localizations/france.md)
+        - [Německo](../../financials/localizations/germany.md)
+    :::column-end:::
+    :::column:::
+        - [Maďarsko](../../financials/localizations/hungary.md)
+        - [Indie](../../financials/localizations/india.md)
+        - [Itálie](../../financials/localizations/italy.md)
+        - [Japonsko](../../financials/localizations/japan.md)
+        - [Lotyšsko](../../financials/localizations/latvia.md)
+        - [Litva](../../financials/localizations/lithuania.md)
+        - [Mexiko](../../financials/localizations/mexico.md)
+        - [Malajsie](../../financials/localizations/malaysia.md)
+        - [Nizozemí](../../financials/localizations/netherlands.md)
+        - [Norsko](../../financials/localizations/norway.md)
+    :::column-end:::
+    :::column:::
+        - [Polsko](../../financials/localizations/poland.md)
+        - [Saúdská Arábie](../../financials/localizations/saudi-arabia.md)
+        - [Singapur](../../financials/localizations/singapore.md)
+        - [Španělsko](../../financials/localizations/spain.md)
+        - [Švédsko](../../financials/localizations/sweden.md)
+        - [Švýcarsko](../../financials/localizations/switzerland.md)
+        - [Thajsko](../../financials/localizations/thailand.md)
+        - [Velká Británie](../../financials/localizations/united-kingdom.md)
+        - [Spojené státy](../../financials/localizations/united-states.md)
+    :::column-end:::
+:::row-end:::
 
-### <a name="australiafinancialslocalizationsaustraliamd"></a>[Austrálie](../../financials/localizations/australia.md)
-### <a name="austriafinancialslocalizationsaustriamd"></a>[Rakousko](../../financials/localizations/austria.md)
-### <a name="belgiumfinancialslocalizationsbelgiummd"></a>[Belgie](../../financials/localizations/belgium.md)
 
-### <a name="brazil"></a>Brazílie
 
--   [Dlouhodobý majetek CIAP](../../financials/localizations/latam-bra-ciap-fixed-asset.md)
--   [Konfigurace fiskálních knih](../../financials/localizations/latam-bra-configure-fiscal-books.md)
--   [Export a import transakcí pro konsolidaci hlavní knihy pro Brazílii](../../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md)
--   [Fiskální knihy](../../financials/localizations/latam-bra-fiscal-books.md)
--   [Zástupný text u fiskálních dokumentů](../../financials/localizations/latam-bra-fiscal-document-text-placeholders.md)
--   [Fiskální dokumenty](../../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md)
--   [Fiskální dokumenty daně ICMS](../../financials/localizations/latam-bra-icms-tax-fiscal-documents.md)
--   [Import a ověření dokumentů NF-e XML a souborů DANFE](../../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
--   [Import fiskálních dokumentů](../../financials/localizations/latam-bra-import-fiscal-documents.md)
--   [Deníky generované během procesu vracení elektronické platby](../../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md)
--   [Proces NF-e](../../financials/localizations/latam-bra-nf-e-process.md)
--   [Parametry pro právnické osoby](../../financials/localizations/latam-bra-legal-entity-parameters.md)
--   [Zpracování elektronických platebních úhrad pro Brazílii](../../financials/localizations/latam-bra-process-electronic-payment-remittances.md)
--   [Nákupní doplňkové fiskální dokumenty](../../financials/localizations/latam-bra-purchase-complementary-fiscal-documents.md)
--   [Odkazované fiskální dokumenty](../../financials/localizations/latam-bra-referenced-fiscal-documents.md)
--   [Prodejní doplňkové fiskální dokumenty](../../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md)
--   [Elektronický fiskální dokument služby](../../financials/localizations/latam-bra-service-electronic-fiscal-document.md)
--   [Nastavení, import a ověření dokumentů NF-e XML a DANFE](../../financials/localizations/latam-bra-set-up-import-nfe.md)
--   [Daňové atributy](../../financials/localizations/latam-bra-tax-attributes.md)
--   [Platby daně](../../financials/localizations/latam-bra-tax-payments.md)
--   [Daně](../../financials/localizations/latam-bra-calculate-taxes.md)
-
-### <a name="chinafinancialslocalizationschinamd"></a>[Čína](../../financials/localizations/china.md)
-### <a name="the-czech-republicfinancialslocalizationsczech-republicmd"></a>[Česká republika](../../financials/localizations/czech-republic.md)
-### <a name="estoniafinancialslocalizationsestoniamd"></a>[Estonsko](../../financials/localizations/estonia.md)
-
-### <a name="europe"></a>Evropa
-- [Držitelé zálohy](../../financials/localizations/emea-advance-holders.md)
-- [Transakce držitelů záloh](../../financials/localizations/emea-advance-holders-transactions.md)
-- [Rozšířená fakturace](../../financials/localizations/emea-advance-invoice.md)
-- [Odsouhlasení banky](../../financials/localizations/emea-bank-reconciliation.md)
-- [Opravná fakturace](../../financials/localizations/emea-corrective-invoice.md)
-- [Tvorba a účtování periodických deníků](../../financials/localizations/emea-create-post-periodic-journals.md)
-- [Úprava ID faktur na prodejních objednávkách](../../financials/localizations/emea-edit-invoice-id-sales-orders.md)
-- [Vstupní certifikáty EU](../../financials/localizations/emea-entry-certificates.md)
-- [Souhrnné hlášení EU](../../financials/localizations/emea-eu-sales-list.md)
-- [Vyrovnání kurzových rozdílů](../../financials/localizations/emea-exchange-rate-adjustments.md)
-- [Formáty souboru pro metody platby](../../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md)
-- [Vyřazení dlouhodobého majetku pro Estonsko a Litvu](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
-- [Import souborů ISO20022](../../financials/localizations/emea-ISO20022-file-formats.md)
-- [Intrastat](../../financials/localizations/emea-intrastat.md)
-- [Sestavy deníku zásob](../../financials/localizations/emea-set-up-report-inventory-journal-names.md)
-- [Číslování faktur a dodacích listů pro Lotyšsko a Litvu](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
-- [Koncová data vystavení faktury](../../financials/localizations/emea-invoice-issue-deadline.md)
-- [Normy OIOUBL](../../financials/localizations/emea-oioubl-standards-electronic-invoicing.md)
-- [Sestava platebních dokladů](../../financials/localizations/emea-eur-payment-slip-report-giro.md)
-- [Pokladní hotovost](../../financials/localizations/emea-petty-cash.md)
-- [Zaúčtování předpořízení dlouhodobého majetku](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
-- [PSČ](../../financials/localizations/emea-import-create-postal-codes-manually.md)
-- [ID registrace](../../financials/localizations/emea-registration-ids.md)
-- [Stornovací poplatky](../../financials/localizations/emea-reverse-charge.md)
-- [Přehled převodu kreditu SEPA](../../financials/accounts-payable/sepa-credit-transfer.md)
-- [Přehled přímého inkasa SEPA](../../financials/accounts-receivable/sepa-direct-debit-overview.md)
-- [Nastavení kompenzace odběratelů a dodavatelů](../../financials/localizations/emea-compensation-customer-vendor-transactions.md)
-- [Nastavení podepisujících uživatelů tištěných formulářů](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
-- [Záporné storno](../../financials/localizations/emea-storno.md)
-- [Daňové předpisy](../../financials/localizations/emea-tax-directives.md)
-- [Aktualizace zobrazení částek v sestavách a dokumentech](../../financials/localizations/emea-amount-printing-forms.md) 
-- [Směnný kurz DPH](../../financials/localizations/emea-vat-exchange-rate.md)
-- [Transakce v rejstříku DPH pro východní Evropu](../../financials/localizations/emea-vat-register-transactions.md)
-- [Vykazování DPH](../../financials/localizations/emea-vat-reporting.md)
-- [Zobrazení transakcí u vyrovnání](../../financials/localizations/emea-transactions-settlement-form.md)
-
-### <a name="francefinancialslocalizationsfrancemd"></a>[Francie](../../financials/localizations/france.md)
-### <a name="germanyfinancialslocalizationsgermanymd"></a>[Německo](../../financials/localizations/germany.md)
-### <a name="hungaryfinancialslocalizationshungarymd"></a>[Maďarsko](../../financials/localizations/hungary.md)
-
-### <a name="india"></a>Indie
-
-- [Dlouhodobý majetek](../../financials/localizations/apac-ind-fixed-assets.md)
-    - [Převod kapitálových položek do dlouhodobého majetku](../../financials/localizations/tasks/apac-ind-transfer-capital-items.md)
-    - [Připojení kalendáře podle dní ke knize dlouhodobého majetku](../../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md)
-    - [Nastavení parametrů pro výpočet odpisů](../../financials/localizations/tasks/apac-ind-set-up-depreciation.md)
-    - [Nastavení odpisu skupiny majetku pro knihy odpisů](../../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md)
-    - [Vytvoření skupiny skladových modelů pro kapitálové položky](../../financials/localizations/tasks/apac-ind-create-inventory-model-group.md)
-    - [Posuv výpočtu odpisů dlouhodobého majetku pro Indii](../../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md)
-    - [Definování typu směny a průmyslu pro knihy a připojení k dlouhodobému majetku](../../financials/localizations/tasks/apac-ind-books-shift-industry-types.md)
-- [Přehled daňového modulu](../../financials/general-ledger/tax-engine.md)
-    - [Integrace daňového modulu](../../financials/general-ledger/tax-engine-integration.md)
-    - [Často kladené dotazy týkající se prahových hodnot daní](../../financials/localizations/apac-ind-tax-thresholds.md)
-    - [Rozšíření daňového modulu](../../financials/general-ledger/extend-tax-engine-configurations.md)
-
-### <a name="italyfinancialslocalizationsitalymd"></a>[Itálie](../../financials/localizations/italy.md)
-### <a name="japan"></a>Japonsko
-
--  [Bankovní platby pokryté dodavateli](../../financials/localizations/apac-jpn-bank-payment-fees-vendors.md)
--  [Souhrnné faktury](../../financials/localizations/apac-jpn-consolidate-invoices.md)
--  [Pravidla přidělení pro dlouhodobý majetek](../../financials/localizations/apac-jpn-allocation-rules-fixed-assets.md)
--  [Rovnoměrně rozdělená metoda odpisů](../../financials/localizations/apac-jpn-equally-divided-depreciation-method.md)
--  [Odpisy dlouhodobého majetku](../../financials/localizations/apac-jpn-fixed-asset-depreciation.md)
--  [Správa snížení hodnoty dlouhodobého majetku na penězotvorných jednotkách (CGU)](../../financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit.md)
--  [Import PSČ](../../financials/localizations/apac-jpn-import-postal-codes.md)
--  [Nastavení povinnosti vyřazení majetku pro dlouhodobý majetek](../../financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets.md)
--  [Nastavení položek snížení hodnoty pro dlouhodobý majetek](../../financials/localizations/apac-jpn-reduction-entry-fixed-assets.md)
--  [Zaplacení dodavateli formou směnky](../../financials/localizations/apac-jpn-endorse-bill-of-exchange.md)
--  [Výpočet progresivní srážkové daně](../../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md)
-
-### <a name="latviafinancialslocalizationslatviamd"></a>[Lotyšsko](../../financials/localizations/latvia.md)
-### <a name="lithuaniafinancialslocalizationslithuaniamd"></a>[Litva](../../financials/localizations/lithuania.md)
-
-### <a name="mexico"></a>Mexiko
-
--   [Sestava prohlášení DIOT](../../financials/localizations/latam-mex-diot-declaration-statement.md)
--   [Výpisy účtování elektronické knihy](../../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md)
--   [Sestava prohlášení o úpravě inflace](../../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
--   [Sestava prohlášení ISR](../../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md)
--   [Elektronické faktury (CFDI)](../../financials/localizations/latam-mex-CFDI-electronic-invoices.md)
-
-### <a name="malaysia"></a>Malajsie
-
--   [Daň ze zboží a služeb (GST)](../../financials/localizations/apac-mys-gst.md)
-
-### <a name="netherlandsfinancialslocalizationsnetherlandsmd"></a>[Nizozemsko](../../financials/localizations/netherlands.md)
-### <a name="norwayfinancialslocalizationsnorwaymd"></a>[Norsko](../../financials/localizations/norway.md)
-### <a name="polandfinancialslocalizationspolandmd"></a>[Polsko](../../financials/localizations/poland.md)
-### <a name="saudi-arabia"></a>Saúdská Arábie
-
--   [Vykazování zakátu](../../financials/localizations/emea-sau-zakat-reporting.md)
-
-### <a name="singapore"></a>Singapur
-
--   [Generování singapurské sestavy GST-05](../../financials/localizations/apac-sgp-generate-gst-05-report.md)
-
-### <a name="spainfinancialslocalizationsspainmd"></a>[Španělsko](../../financials/localizations/spain.md)
-### <a name="swedenfinancialslocalizationsswedenmd"></a>[Švédsko](../../financials/localizations/sweden.md)
-### <a name="switzerlandfinancialslocalizationsswitzerlandmd"></a>[Švýcarsko](../../financials/localizations/switzerland.md)
-### <a name="thailand"></a>Thajsko
-
--   [Sestavy karet zásob](../../financials/localizations/apac-tha-stock-card-reports.md)
--   [Nahrazení nebo úprava daňové faktury pro Thajsko](../../financials/localizations/apac-tha-substitution-and-adjustment-invoices.md)
--   [Nerealizovaná DPH](../../financials/localizations/apac-tha-unrealized-vat.md)
--   [Srážková daň](../../financials/localizations/apac-tha-withholding-tax.md)
-
-### <a name="united-kingdomfinancialslocalizationsunited-kingdommd"></a>[Velká Británie](../../financials/localizations/united-kingdom.md)
-### <a name="united-states"></a>Spojené státy
-
--   [Formulář 1099 ve veřejném sektoru](../../financials/localizations/noam-usa-form-1099-public-sector.md)   
--   [Ověření formuláře I-9](../../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
--   [Vykazování 1099 na konci roku](../../financials/localizations/noam-usa-year-end-1099-reporting.md)
--   [Mzda](../../fin-and-ops/hr/localizations/noam-usa-payroll.md)
--   [Veřejný sektor](../../financials/public-sector/public-sector-functionality.md)
 
 
 

@@ -263,9 +263,9 @@
               href: extensibility/naming-guidelines-extensions.md
             - name: 'Rozvolnění omezení modelu, aby bylo možné provést refactoring nadměrných vrstev do rozšíření'
               href: extensibility/refactoring-over-layering.md
-        - name: Jak provést následující úkoly?
+        - name: Vytvoření rozšíření
           items:
-            - name: Přidání hodnot do enums
+            - name: Přidání hodnoty do výčtů
               href: extensibility/add-enum-value.md
             - name: Úprava rozšířených datových typů
               href: extensibility/modify-edt.md
@@ -311,15 +311,37 @@
               href: extensibility/maps-as-interfaces.md
             - name: Rozšíření map tabulek používaných pro správu verzí
               href: extensibility/maps-with-versioning.md
+        - name: Vytvoření rozšiřitelných řešení
+          items:
+            - name: "Zápis rozšiřitelného\_kódu"
+              href: extensibility/writing-extensible-code.md
+            - name: Třídy
+              href: extensibility/extensible-classes.md
+            - name: Metody
+              href: extensibility/extensible-methods.md
+            - name: Formuláře
+              href: extensibility/extensible-forms.md
+            - name: Rozšířené datové typy
+              href: extensibility/extensible-edts.md
+            - name: Rozšiřitelné výčty
+              href: extensibility/extensible-enums.md
+            - name: Delegáti
+              href: extensibility/extensible-code-delegates.md
+            - name: Tabulky
+              href: extensibility/extensible-tables.md
+            - name: Atributy rozšiřitelnosti pro metody
+              href: extensibility/extensibility-attributes.md
+            - name: Přerušení změn
+              href: extensibility/breaking-changes.md
     - name: Výkonnost
       items:
-        - name: Sledování pomocí analyzátoru sledování
+        - name: Sledování pomocí analyzátoru Trace
           href: perf-test/trace-trace-tutorial.md
         - name: Výkonové SDK a testování více uživatelů pomocí Visual Studio Online
           href: perf-test/perfsdk-tutorial.md
         - name: Výkonové SDK a testování více uživatelů v místních prostředích
           href: perf-test/perfsdk-tutorial-lbd.md
-        - name: Diagnostika problémů a analýza výkonnosti pomocí analyzátoru sledování
+        - name: Diagnostika problémů a analýza výkonnosti pomocí analyzátoru Trace
           href: perf-test/trace-parser.md
         - name: Časovač výkonu
           href: perf-test/performance-timer.md
@@ -1184,6 +1206,8 @@
       items:
         - name: Vytvoření pravidel pro poradce při optimalizaci
           href: sysadmin/create-rules-optimization-advisor.md
+    - name: Nahlásit výpadek výroby
+      href: lifecycle-services/report-production-outage.md
 - name: Lifecycle Services
   items:
     - name: Zdroje pro Lifecycle Services
@@ -1236,6 +1260,8 @@
       href: lifecycle-services/monitoring-diagnostics.md
     - name: Restart služeb prostředí
       href: lifecycle-services/restart-environment-services.md
+    - name: Nahlásit výpadek výroby
+      href: lifecycle-services/report-production-outage.md
     - name: Sledování přihlášení uživatelů
       href: lifecycle-services/user-logins.md
     - name: Knihovna majetku

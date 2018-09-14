@@ -153,10 +153,12 @@
       items:
         - name: Architektura Finance and Operations
           href: imp-lifecycle/architecture-overview.md
-        - name: Microsoft FastTrack pro Finance and Operations
+        - name: Microsoft FastTrack for Finance and Operations
           href: get-started/fasttrack-dynamics-365-overview.md
         - name: Nasazení projektu implementace
           href: imp-lifecycle/onboard.md
+        - name: Plánování prostředí
+          href: imp-lifecycle/environment-planning.md
         - name: Příprava pro ostré nasazení
           href: imp-lifecycle/prepare-go-live.md
         - name: Často kladené dotazy týkající se ostrého nasazení
@@ -354,7 +356,7 @@
                       href: ../financials/project-management/PSA-parameters.md?toc=/fin-and-ops/toc.json
                     - name: Synchronizace projektových smluv a projektů
                       href: ../financials/project-management/project-contracts-templates.md?toc=/fin-and-ops/toc.json
-                    - name: Synchronizovat projektových úloh
+                    - name: Synchronizace projektových úloh
                       href: ../financials/project-management/project-tasks-template.md?toc=/fin-and-ops/toc.json
                     - name: Synchronizace kategorií výdajů projektu
                       href: ../financials/project-management/project-categories-templates.md?toc=/fin-and-ops/toc.json
@@ -460,6 +462,8 @@
               href: ../financials/accounts-payable/set-up-generate-positive-pay-files.md
             - name: Výchozí protiúčty pro deníky faktur dodavatele a deníky schvalování faktur
               href: ../financials/accounts-payable/default-offset-accounts-vendor-invoice-journals.md
+            - name: Workflow dodavatele
+              href: ../financials/accounts-payable/vendor-workflow.md
             - name: Řešení nesrovnalostí během párování součtů faktur
               href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
               items:
@@ -475,12 +479,18 @@
               href: ../financials/accounts-payable/vendor-portal-invoicing-workspace.md
             - name: Automatizace faktur dodavatele
               href: ../financials/accounts-payable/vendor-invoice-automation.md
-            - name: Platby a vyrovnání
+            - name: Správa smlouvy zprostředkovatele
+              href: ../financials/accounts-payable/broker-contract.md
+            - name: "Správa smlouvy o\_licenčním poplatku"
+              href: ../financials/accounts-payable/royalty-contract.md
+            - name: "Platby a\_vyrovnání"
               items:
                 - name: Centralizované platby pro Závazky
                   href: ../financials/accounts-payable/centralized-payments-accounts-payable.md
                 - name: Konfigurace vyrovnání
                   href: ../financials/cash-bank-management/configure-settlement.md
+                - name: Přehled plateb dodavatele
+                  href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
                 - name: Pracovní prostor plateb dodavatelů
                   href: ../financials/accounts-payable/vendor-payments-workspace.md
                 - name: Stanovení křížového kurzu
@@ -513,6 +523,8 @@
                   href: ../financials/accounts-payable/take-discount-more-calculated-discount-vendor-payment.md
                 - name: Platby částečných částek dodavatelem
                   href: ../financials/accounts-payable/vendor-payments-partial-amount.md
+                - name: Stránka se seznamem transakcí dodavatele
+                  href: ../financials/accounts-payable/vendor-transaction-list-page.md
         - name: Pohledávky
           href: ../financials/accounts-receivable/accounts-receivable.md
           items:
@@ -522,6 +534,8 @@
               href: ../financials/accounts-receivable/accounts-receivables-set-up-overview.md
             - name: Nastavení kreditu a inkas
               href: ../financials/accounts-receivable/set-up-collections.md
+            - name: Kontrola inkasních informací
+              href: ../financials/accounts-receivable/tasks/review-collections-information.md
             - name: Nastavení a zpracování opakovaných faktur
               href: ../financials/accounts-receivable/set-up-process-recurring-invoices.md
             - name: Rozúčtování a položky dílčích hlavních knih deníku pro textové faktury
@@ -540,52 +554,54 @@
               href: ../financials/accounts-receivable/create-free-text-invoice-template-new.md
             - name: Oprava volné faktury
               href: ../financials/accounts-receivable/correct-free-text-invoice.md
+            - name: Přiřazení šablony volné faktury odběrateli
+              href: ../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
+            - name: "Generování a\_zaúčtování opakovaných volných faktur"
+              href: ../financials/accounts-receivable/tasks/post-recurring-free-text-invoices.md
+            - name: Vytváření faktur prodejních objednávek
+              href: ../financials/accounts-receivable/tasks/create-sales-order-invoices.md
             - name: Nastavení úrokových sazeb pro kód úroku
               href: ../financials/accounts-receivable/set-up-interest-rates-interest-code.md
             - name: 'Vzdát, obnovit nebo změnit úrokové poplatky'
               href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
+            - name: Zpracování úroků
+              href: ../financials/accounts-receivable/tasks/process-interest.md
+            - name: Nastavení zásad faktur dodavatele
+              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: "Zaznamenání faktury dodavatele a\_spárování s\_přijatým množstvím"
+              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Vytvoření faktury odběratele
               href: ../financials/accounts-receivable/configure-customer-invoices.md
+            - name: Vklad platby odběratele
+              href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
             - name: Stanovení platebních podmínek odběratele
               href: ../financials/general-ledger/tasks/establish-customer-payment-terms.md
+            - name: Stanovení způsobu platby odběratele
+              href: ../financials/accounts-receivable/tasks/establish-customer-method-payment.md
+            - name: Stanovení platebních poplatků odběratele
+              href: ../financials/accounts-receivable/tasks/establish-customer-payment-fees.md
             - name: Nastavení cizích směnek
               href: ../financials/accounts-receivable/set-up-bills-exchange.md
             - name: Uzavření účtu pohledávek
               href: ../financials/accounts-receivable/close-accounts-receivable.md
-            - name: Úkoly pohledávek
-              items:
-                - name: Přiřazení šablony volné faktury odběrateli
-                  href: ../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
-                - name: Vytvoření posloupnosti upomínek
-                  href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
-                - name: "Vytvoření kódu úroků s\_rozsahem"
-                  href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
-                - name: Vytváření faktur prodejních objednávek
-                  href: ../financials/accounts-receivable/tasks/create-sales-order-invoices.md
-                - name: Vytvoření odpisového deníku pro odběratele
-                  href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
-                - name: Vklad platby odběratele
-                  href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
-                - name: Stanovení způsobu platby odběratele
-                  href: ../financials/accounts-receivable/tasks/establish-customer-method-payment.md
-                - name: Stanovení platebních poplatků odběratele
-                  href: ../financials/accounts-receivable/tasks/establish-customer-payment-fees.md
-                - name: "Generování a\_zaúčtování opakovaných volných faktur"
-                  href: ../financials/accounts-receivable/tasks/post-recurring-free-text-invoices.md
-                - name: Zpracování upomínek
-                  href: ../financials/accounts-receivable/tasks/process-collection-letters.md
-                - name: Zpracování úroků
-                  href: ../financials/accounts-receivable/tasks/process-interest.md
-                - name: "Zaznamenání faktury dodavatele a\_spárování s\_přijatým množstvím"
-                  href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
-                - name: Kontrola inkasních informací
-                  href: ../financials/accounts-receivable/tasks/review-collections-information.md
-                - name: "Nastavení a\_generování informací o\_splatnosti pohledávek"
-                  href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-                - name: Nastavení zásad faktur dodavatele
-                  href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: Vytvoření posloupnosti upomínek
+              href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
+            - name: Zpracování upomínek
+              href: ../financials/accounts-receivable/tasks/process-collection-letters.md
+            - name: "Vytvoření zmocnění k\_přímému debetu pro odběratele"
+              href: ../financials/accounts-receivable/tasks/create-direct-debit-mandate-customer.md
+            - name: "Vytvoření kódu úroků s\_rozsahem"
+              href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
+            - name: Vytvoření odpisového deníku pro odběratele
+              href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
+            - name: "Nastavení a\_generování informací o\_splatnosti pohledávek"
+              href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Workflow odběratele
+              href: ../financials/accounts-receivable/customer-workflow.md
             - name: "Platby a\_vyrovnání"
               items:
+                - name: Přehled plateb odběratele
+                  href: ../financials/cash-bank-management/tasks/customer-payment-overview.md
                 - name: 'Použití jedné platby odběratele na úhradu několika faktur, které zasahují do více období slevy'
                   href: ../financials/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
                 - name: Centralizované platby pro pohledávky
@@ -602,12 +618,14 @@
                   href: ../financials/accounts-receivable/reimburse-customers.md
                 - name: Platby částečných částek zákazníkům
                   href: ../financials/accounts-receivable/customer-payments-partial-amount.md
+                - name: Stránka se seznamem transakcí odběratele
+                  href: ../financials/accounts-receivable/customer-transactions-list-page.md
         - name: Rozpočtování
           href: ../financials/budgeting/budgeting-overview.md
           items:
             - name: Přehled plánování rozpočtu
               href: ../financials/budgeting/budget-planning-overview-configuration.md
-            - name: Přehled řízení rozpočtu
+            - name: Přehled kontroly rozpočtu
               href: ../financials/budgeting/budget-control-overview-configuration.md
             - name: 'Přehled rozpočtování '
               href: ../financials/budgeting/basic-budgeting-overview-configuration.md
@@ -636,58 +654,54 @@
               href: ../financials/cash-bank-management/Bank-management-workspace.md
             - name: Platební slevy
               href: ../financials/cash-bank-management/cash-discounts.md
-            - name: Hotovostní slevy u přeplatků
+            - name: Platební slevy u přeplatků
               href: ../financials/cash-bank-management/cash-discount-handling-overpayments.md
+            - name: Správa ověření IBAN účtu
+              href: ../financials/cash-bank-management/iban-validation.md
             - name: Přehled vyrovnání
               href: ../financials/cash-bank-management/settlement-overview.md
             - name: Mezipodnikové účetnictví pro centralizované platby
               href: ../financials/cash-bank-management/settlement-overview-centralized-payments.md
             - name: Akreditivy
               href: ../financials/cash-bank-management/letters-of-credit.md
+            - name: Vytvoření smlouvy bankovního zařízení pro akreditiv
+              href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
+            - name: "Nastavení zařízení banky a\_zaúčtování profilů pro akreditiv"
+              href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
             - name: "Kolekce akreditivu a\_importu"
               href: ../financials/cash-bank-management/letters-of-credit-import-collections.md
+            - name: Export akreditivu
+              href: ../financials/cash-bank-management/tasks/export-letter-credit.md
+            - name: Import akreditivu
+              href: ../financials/cash-bank-management/tasks/import-letter-credit.md
             - name: Záruční listiny
               href: ../financials/cash-bank-management/letters-of-guarantee.md
+            - name: Transakce záruční listiny
+              href: ../financials/cash-bank-management/tasks/letter-guarantee-transaction.md
+            - name: Vytvoření smlouvy bankovního zařízení pro záruční listinu
+              href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
+            - name: "Nastavení zařízení banky a\_zaúčtování profilů pro záruční listiny"
+              href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
             - name: Postdatované šeky
               href: ../financials/cash-bank-management/postdated-checks.md
+            - name: Nastavení postdatovaných šeků
+              href: ../financials/cash-bank-management/tasks/set-up-postdated-checks.md
+            - name: "Registrace a\_zaúčtování postdatovaného šeku pro odběratele"
+              href: ../financials/cash-bank-management/tasks/register-post-postdated-check-customer.md
+            - name: "Registrace a\_zaúčtování postdatovaného šeku pro dodavatele"
+              href: ../financials/cash-bank-management/tasks/register-post-postdated-check-vendor.md
+            - name: Vyrovnání postdatovaného šeku od odběratele
+              href: ../financials/cash-bank-management/tasks/settle-postdated-check-customer.md
+            - name: Vyrovnání postdatovaného šeku pro dodavatele
+              href: ../financials/cash-bank-management/tasks/settle-postdated-check-vendor.md
             - name: Zálohové faktury a zálohy
               href: ../financials/accounts-payable/prepayments-invoices-vs-prepayments.md
-            - name: Práce s hotovostními slevami u přeplatků
+            - name: Práce s platebními slevami u přeplatků
               href: ../financials/cash-bank-management/cash-discount-handling-overpayments.md
             - name: Nastavení centralizovaných plateb
               href: ../financials/cash-bank-management/set-up-centralized-payments.md
             - name: Automatické vyrovnání a stanovení priorit
               href: ../financials/accounts-receivable/automatic-settlement-prioritization.md
-            - name: "Úkoly modulu Pokladna a\_banka"
-              items:
-                - name: Vytvoření smlouvy bankovního zařízení pro akreditiv
-                  href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
-                - name: Vytvoření smlouvy bankovního zařízení pro záruční listinu
-                  href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
-                - name: Přehled plateb odběratele
-                  href: ../financials/cash-bank-management/tasks/customer-payment-overview.md
-                - name: Export akreditivu
-                  href: ../financials/cash-bank-management/tasks/export-letter-credit.md
-                - name: Import akreditivu
-                  href: ../financials/cash-bank-management/tasks/import-letter-credit.md
-                - name: Transakce záruční listiny
-                  href: ../financials/cash-bank-management/tasks/letter-guarantee-transaction.md
-                - name: "Registrace a\_zaúčtování postdatovaného šeku pro odběratele"
-                  href: ../financials/cash-bank-management/tasks/register-post-postdated-check-customer.md
-                - name: "Registrace a\_zaúčtování postdatovaného šeku pro dodavatele"
-                  href: ../financials/cash-bank-management/tasks/register-post-postdated-check-vendor.md
-                - name: Vyrovnání postdatovaného šeku od odběratele
-                  href: ../financials/cash-bank-management/tasks/settle-postdated-check-customer.md
-                - name: Vyrovnání postdatovaného šeku pro dodavatele
-                  href: ../financials/cash-bank-management/tasks/settle-postdated-check-vendor.md
-                - name: "Nastavení zařízení banky a\_zaúčtování profilů pro záruční listiny"
-                  href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
-                - name: "Nastavení zařízení banky a\_zaúčtování profilů pro akreditiv"
-                  href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
-                - name: Nastavení postdatovaných šeků
-                  href: ../financials/cash-bank-management/tasks/set-up-postdated-checks.md
-                - name: Přehled plateb dodavatele
-                  href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
             - name: Rozšířené odsouhlasení banky
               items:
                 - name: Úlohy nastavení rozšířeného odsouhlasení banky
@@ -812,11 +826,19 @@
               href: ../financials/expense-management/per-diem.md
             - name: Cestovní žádanky
               href: ../financials/expense-management/travel-req.md
-            - name: Osobní výdaje ve vyúčtování výdajů
+            - name: Osobní výdaje v sestavě výdajů
               href: ../financials/expense-management/personal-expenses.md
         - name: Dlouhodobý majetek
           href: ../financials/fixed-assets/fixed-assets.md
           items:
+            - name: Vytvoření dlouhodobého majetku
+              href: ../financials/fixed-assets/tasks/create-fixed-asset.md
+            - name: Zadání příslušenství dlouhodobého majetku
+              href: ../financials/fixed-assets/tasks/enter-addition-fixed-asset.md
+            - name: Nabídka pořízení dlouhodobého majetku
+              href: ../financials/fixed-assets/tasks/propose-fixed-asset-acquisitions.md
+            - name: Přeřazení dlouhodobého majetku
+              href: ../financials/fixed-assets/tasks/reclassify-fixed-assets.md
             - name: Pracovní prostor dlouhodobého majetku
               href: ../financials/fixed-assets/fixed-asset-management-workspace.md
             - name: Sestava dopředného posunutí dlouhodobého majetku
@@ -833,10 +855,20 @@
               href: ../financials/fixed-assets/post-fixed-asset-transactions-posting-layers.md
             - name: Možnosti transakce dlouhodobého majetku
               href: ../financials/fixed-assets/enter-fixed-asset-transactions.md
+            - name: Převedení dlouhodobého majetku
+              href: ../financials/fixed-assets/tasks/transfer-fixed-asset.md
+            - name: Rozdělení dlouhodobého majetku
+              href: ../financials/fixed-assets/tasks/split-fixed-asset.md
+            - name: Nastavení skupin dlouhodobého majetku
+              href: ../financials/fixed-assets/tasks/set-up-fixed-asset-groups.md
+            - name: Změna skupiny dlouhodobého majetku
+              href: ../financials/fixed-assets/tasks/change-fixed-asset-group.md
             - name: Přepočet reprodukčních nákladů a pojistných částek pro skupiny dlouhodobého majetku
               href: ../financials/fixed-assets/recalculate-replacement-costs-insured-values-fixed-asset-groups.md
             - name: Účty zaúčtování dlouhodobého majetku
               href: ../financials/fixed-assets/fixed-asset-disposal-posting-accounts.md
+            - name: "Vyřazení dlouhodobého majetku s\_použitím volné faktury"
+              href: ../financials/fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
             - name: Hromadná aktualizace dlouhodobého majetku
               href: ../financials/fixed-assets/fixed-asset-mass-update.md
             - name: Pořízení majetku pomocí zásobování
@@ -845,13 +877,23 @@
               items:
                 - name: Nastavení dlouhodobého majetku
                   href: ../financials/fixed-assets/set-up-fixed-assets.md
+                - name: Nastavení účetních profilů dlouhodobého majetku
+                  href: ../financials/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
                 - name: Integrace dlouhodobého majetku
                   href: ../financials/fixed-assets/fixed-asset-integration.md
+                - name: "Vytvoření a\_získání majetku z\_modulu Závazky"
+                  href: ../financials/fixed-assets/tasks/create-acquire-assets-accounts-payable.md
+                - name: 'Nastavení knih odpisů '
+                  href: ../financials/fixed-assets/tasks/set-up-depreciation-books-2016-05.md
+                - name: "Nastavení a\_vytvoření odpisových plánů"
+                  href: ../financials/fixed-assets/tasks/set-up-depreciation-profiles.md
+                - name: Nastavení oceňovacích modelů
+                  href: ../financials/fixed-assets/tasks/set-up-value-models.md
             - name: Metody odpisování
               items:
                 - name: Způsoby odpisu
                   href: ../financials/fixed-assets/Fixed-asset-depreciation-conventions.md
-                - name: Degresivní odpis 125%
+                - name: Degresivní odpis 125 %
                   href: ../financials/fixed-assets/125-percent-reducing-balance-depreciation.md
                 - name: Degresivní odpis 150%
                   href: ../financials/fixed-assets/150-percent-reducing-balance-depreciation.md
@@ -861,18 +903,26 @@
                   href: ../financials/fixed-assets/200-percent-reducing-balance-depreciation.md
                 - name: Počáteční mimořádný odpis
                   href: ../financials/fixed-assets/bonus-depreciation.md
+                - name: Nastavení počátečních mimořádných odpisů
+                  href: ../financials/fixed-assets/tasks/set-up-bonus-depreciation.md
                 - name: Odpis spotřeby
                   href: ../financials/fixed-assets/consumption-depreciation.md
                 - name: Efekty odpisů se storny
                   href: ../financials/fixed-assets/depreciation-effects-reversals.md
                 - name: Odpisové metody a způsoby odpisu
                   href: ../financials/fixed-assets/depreciation-methods-conventions.md
+                - name: Vytvoření návrhu odpisování
+                  href: ../financials/fixed-assets/tasks/create-depreciation-proposal.md
                 - name: Odpis koeficientem
                   href: ../financials/fixed-assets/factor-depreciation.md
                 - name: Účty zaúčtování pořízení dlouhodobého majetku
                   href: ../financials/fixed-assets/fixed-asset-acquisition-posting-accounts.md
                 - name: Odpisy dlouhodobého majetku
                   href: ../financials/fixed-assets/fixed-asset-depreciation.md
+                - name: Výpočet odpisů dlouhodobého majetku mezi právnickými osobami
+                  href: ../financials/fixed-assets/tasks/calculate-fixed-asset-depreciation-legal-entities.md
+                - name: Změna způsobu odpisování pro více položek dlouhodobého majetku
+                  href: ../financials/fixed-assets/tasks/change-depreciation-conventions-multiple-fixed-assets.md
                 - name: Ruční odpis
                   href: ../financials/fixed-assets/manual-depreciation.md
                 - name: Degresivní odpis
@@ -883,44 +933,6 @@
                   href: ../financials/fixed-assets/straight-line-life-remaining-depreciation.md
                 - name: Lineární odpisování
                   href: ../financials/fixed-assets/straight-line-service-life-depreciation.md
-            - name: Úkoly dlouhodobého majetku
-              items:
-                - name: Výpočet odpisů dlouhodobého majetku mezi právnickými osobami
-                  href: ../financials/fixed-assets/tasks/calculate-fixed-asset-depreciation-legal-entities.md
-                - name: Změna způsobu odpisování pro více položek dlouhodobého majetku
-                  href: ../financials/fixed-assets/tasks/change-depreciation-conventions-multiple-fixed-assets.md
-                - name: Změna skupiny dlouhodobého majetku
-                  href: ../financials/fixed-assets/tasks/change-fixed-asset-group.md
-                - name: "Vytvoření a\_získání majetku z\_modulu Závazky"
-                  href: ../financials/fixed-assets/tasks/create-acquire-assets-accounts-payable.md
-                - name: Vytvoření návrhu odpisování
-                  href: ../financials/fixed-assets/tasks/create-depreciation-proposal.md
-                - name: Vytvoření dlouhodobého majetku
-                  href: ../financials/fixed-assets/tasks/create-fixed-asset.md
-                - name: "Vyřazení dlouhodobého majetku s\_použitím volné faktury"
-                  href: ../financials/fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
-                - name: Zadání příslušenství dlouhodobého majetku
-                  href: ../financials/fixed-assets/tasks/enter-addition-fixed-asset.md
-                - name: Nabídka pořízení dlouhodobého majetku
-                  href: ../financials/fixed-assets/tasks/propose-fixed-asset-acquisitions.md
-                - name: Přeřazení dlouhodobého majetku
-                  href: ../financials/fixed-assets/tasks/reclassify-fixed-assets.md
-                - name: Nastavení počátečních mimořádných odpisů
-                  href: ../financials/fixed-assets/tasks/set-up-bonus-depreciation.md
-                - name: 'Nastavení knih odpisů '
-                  href: ../financials/fixed-assets/tasks/set-up-depreciation-books-2016-05.md
-                - name: "Nastavení a\_vytvoření odpisových plánů"
-                  href: ../financials/fixed-assets/tasks/set-up-depreciation-profiles.md
-                - name: Nastavení skupin dlouhodobého majetku
-                  href: ../financials/fixed-assets/tasks/set-up-fixed-asset-groups.md
-                - name: Nastavení účetních profilů dlouhodobého majetku
-                  href: ../financials/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
-                - name: Nastavení oceňovacích modelů
-                  href: ../financials/fixed-assets/tasks/set-up-value-models.md
-                - name: Rozdělení dlouhodobého majetku
-                  href: ../financials/fixed-assets/tasks/split-fixed-asset.md
-                - name: Převedení dlouhodobého majetku
-                  href: ../financials/fixed-assets/tasks/transfer-fixed-asset.md
         - name: Hlavní kniha
           href: ../financials/general-ledger/general-ledger.md
           items:
@@ -948,7 +960,14 @@
                   href: ../financials/general-ledger/tasks/create-account-structures.md
                 - name: Vytvoření schémat časového rozlišení
                   href: ../financials/general-ledger/tasks/create-accrual-schemes.md
-                - name: "Vytvoření konsolidačních skupin a\_dalších konsolidačních účtů"
+                - name: Finanční konsolidace a převod měny
+                  href: ../financials/general-ledger/financial-consolidations-currency-translation.md
+                  items:
+                    - name: Konsolidovat online
+                      href: ../financials/general-ledger/consolidate-online.md
+                    - name: Generování konsolidovaných finančních výkazů
+                      href: ../financials/general-ledger/generating-consolidated-financial-statements.md
+                - name: "Vytvoření konsolidačních skupin a\_dalšího konsolidačního účtu"
                   href: ../financials/general-ledger/tasks/create-consolidation-groups.md
                 - name: Typy hlavního účtu
                   href: ../financials/general-ledger/main-account-types.md
@@ -1073,22 +1092,40 @@
           items:
             - name: Plán pro funkci veřejného sektoru
               href: ../financials/public-sector/plan-public-sector-functionality.md
+            - name: "Vytvoření titulní stránky a\_podpisové stránky pro sestavu plateb pro veřejný sektor"
+              href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
             - name: Závazky ve veřejném sektoru
               href: ../financials/public-sector/accounts-payable-public-sector.md
               items:
                 - name: Kódy nákupní objednávky ve veřejném sektoru
                   href: ../financials/public-sector/purchase-order-codes-public-sector.md
+                - name: "Vytvoření a\_přiřazení kódu obchodního partnera ve veřejném sektoru"
+                  href: ../financials/public-sector/tasks/create-assign-trading-partner-code-public-sector.md
                 - name: Definice účtování ve veřejném sektoru
                   href: ../financials/public-sector/posting-definitions-public-sector.md
-                - name: Plán pro jednorázové dodavatele ve veřejném sektoru
-                  href: ../financials/public-sector/plan-one-time-vendors-public-sector.md
                 - name: Jednorázoví dodavatelé ve veřejném sektoru
                   href: ../financials/public-sector/one-time-vendors-public-sector.md
+                - name: "Vytvoření jednorázového dodavatele a\_faktury ve veřejném sektoru"
+                  href: ../financials/public-sector/tasks/create-one-time-vendor-invoice-public-sector.md
+                - name: Vytvoření typu certifikátu dodavatele ve veřejném sektoru
+                  href: ../financials/public-sector/tasks/create-vendor-certification-type-public-sector.md
+                - name: "Import a\_vytvoření více jednorázových dodavatelů a\_faktur ve veřejném sektoru"
+                  href: ../financials/public-sector/tasks/import-multiple-one-time-vendors.md
+                - name: Plán pro jednorázové dodavatele ve veřejném sektoru
+                  href: ../financials/public-sector/plan-one-time-vendors-public-sector.md
+                - name: "Řízení přístupu k\_nákupním smlouvám ve veřejném sektoru"
+                  href: ../financials/public-sector/tasks/control-access-purchase-agreements-public-sector.md
+                - name: Nastavení klasifikace nákupních smluv ve veřejném sektoru
+                  href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
             - name: Pohledávky ve veřejném sektoru
               href: ../financials/public-sector/accounts-receivable-public-sector.md
               items:
                 - name: Účtovací klasifikace a účtovací kódy ve veřejném sektoru
                   href: ../financials/public-sector/billing-classifications-billing-codes-public-sector.md
+                - name: Vytvoření účtovací klasifikace ve veřejném sektoru
+                  href: ../financials/public-sector/tasks/create-billing-classification-public-sector.md
+                - name: Vytvoření účtovacího kódu ve veřejném sektoru
+                  href: ../financials/public-sector/tasks/create-billing-code-public-sector.md
                 - name: Priorita vyrovnání ve veřejném sektoru
                   href: ../financials/public-sector/settlement-priority-public-sector.md
                 - name: Volné faktury ve veřejném sektoru
@@ -1098,10 +1135,16 @@
             - name: Rozpočtování ve veřejném sektoru
               href: ../financials/public-sector/budgeting-public-sector.md
               items:
-                - name: Analýza rozpočtování ve veřejném sektoru
+                - name: "Vytvoření původního rozpočtu a\_stornování předběžných položek rozpočtu ve veřejném sektoru"
+                  href: ../financials/public-sector/tasks/create-original-budget.md
+                - name: Vytvoření předběžného rozpočtu pro veřejný sektor
+                  href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
+                - name: Analýza rozpočtu ve veřejném sektoru
                   href: ../financials/public-sector/budget-analysis-public-sector.md
                 - name: Předběžné rozpočty a rozdělení ve veřejném sektoru
                   href: ../financials/public-sector/preliminary-budgets-apportionments-public-sector.md
+                - name: Vytvoření závazku pro rezervaci rozpočtových prostředků pro veřejný sektor
+                  href: ../financials/public-sector/tasks/create-commitment-reserve-budget-funds-public-sector.md
             - name: Dlouhodobý majetek ve veřejném sektoru
               href: ../financials/public-sector/fixed-asset-public-sector.md
             - name: Hlavní kniha ve veřejném sektoru
@@ -1109,52 +1152,26 @@
               items:
                 - name: Pokročilé záznamy hlavní knihy ve veřejném sektoru
                   href: ../financials/public-sector/advanced-ledger-entries-public-sector.md
+                - name: Vytvoření pokročilého zadávání do hlavní knihy ve veřejném sektoru
+                  href: ../financials/public-sector/tasks/create-advanced-ledger-entry-public-sector.md
                 - name: Zpracování na konci roku ve veřejném sektoru
                   href: ../financials/public-sector/year-end-processing-public-sector.md
                 - name: Odvozené finanční hierarchie ve veřejném sektoru
                   href: ../financials/public-sector/derived-financial-hierarchies-public-sector.md
+                - name: Nastavení odvozené finanční hierarchie ve veřejném sektoru
+                  href: ../financials/public-sector/tasks/set-up-derived-financial-hierarchy-public-sector.md
             - name: Zásobování a zdroje ve veřejném sektoru
               href: ../financials/public-sector/procurement-sourcing-public-sector.md
             - name: Role zabezpečení ve veřejném sektoru
               href: ../financials/public-sector/security-roles-public-sector.md
             - name: Fondy ve veřejném sektoru
               href: ../financials/public-sector/funds-public-sector.md
-            - name: Úkoly veřejného sektoru
-              items:
-                - name: "Přidání typu certifikátu k\_dodavateli ve veřejném sektoru"
-                  href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
-                - name: "Řízení přístupu k\_nákupním smlouvám ve veřejném sektoru"
-                  href: ../financials/public-sector/tasks/control-access-purchase-agreements-public-sector.md
-                - name: Vytvoření položky rozšířeného účetnictví ve veřejném sektoru
-                  href: ../financials/public-sector/tasks/create-advanced-ledger-entry-public-sector.md
-                - name: "Vytvoření a\_přiřazení kódu obchodního partnera ve veřejném sektoru"
-                  href: ../financials/public-sector/tasks/create-assign-trading-partner-code-public-sector.md
-                - name: Vytvoření účtovací klasifikace ve veřejném sektoru
-                  href: ../financials/public-sector/tasks/create-billing-classification-public-sector.md
-                - name: Vytvoření účtovacího kódu ve veřejném sektoru
-                  href: ../financials/public-sector/tasks/create-billing-code-public-sector.md
-                - name: Vytvoření závazku pro rezervaci rozpočtových prostředků pro veřejný sektor
-                  href: ../financials/public-sector/tasks/create-commitment-reserve-budget-funds-public-sector.md
-                - name: "Vytvoření titulní stránky a\_podpisové stránky pro sestavu plateb pro veřejný sektor"
-                  href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
-                - name: Vytvoření typu fondu ve veřejném sektoru
-                  href: ../financials/public-sector/tasks/create-fund-type-public-sector.md
-                - name: "Vytvoření jednorázového dodavatele a\_faktury ve veřejném sektoru"
-                  href: ../financials/public-sector/tasks/create-one-time-vendor-invoice-public-sector.md
-                - name: "Vytvoření původního rozpočtu a\_stornování předběžných položek rozpočtu ve veřejném sektoru"
-                  href: ../financials/public-sector/tasks/create-original-budget.md
-                - name: Vytvoření předběžného rozpočtu pro veřejný sektor
-                  href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
-                - name: Vytvoření typu certifikátu dodavatele ve veřejném sektoru
-                  href: ../financials/public-sector/tasks/create-vendor-certification-type-public-sector.md
-                - name: "Import a\_vytvoření více jednorázových dodavatelů a\_faktur ve veřejném sektoru"
-                  href: ../financials/public-sector/tasks/import-multiple-one-time-vendors.md
-                - name: Nastavení odvozené finanční hierarchie ve veřejném sektoru
-                  href: ../financials/public-sector/tasks/set-up-derived-financial-hierarchy-public-sector.md
-                - name: Nastavení fondu ve veřejném sektoru
-                  href: ../financials/public-sector/tasks/set-up-fund-public-sector.md
-                - name: Nastavení klasifikace nákupních smluv ve veřejném sektoru
-                  href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
+            - name: Nastavení fondu ve veřejném sektoru
+              href: ../financials/public-sector/tasks/set-up-fund-public-sector.md
+            - name: Vytvoření typu fondu ve veřejném sektoru
+              href: ../financials/public-sector/tasks/create-fund-type-public-sector.md
+            - name: "Přidání typu certifikátu k\_dodavateli ve veřejném sektoru"
+              href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
         - name: Finanční výkaznictví
           href: ../financials/general-ledger/financial-reporting-getting-started.md
           items:
@@ -1193,311 +1210,315 @@
     - name: Lokalizace a funkce týkající se předpisů
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
-        - name: Asie a Tichomoří
+        - name: Austrálie
+          href: ../financials/localizations/australia.md
           items:
-            - name: Austrálie
-              href: ../financials/localizations/australia.md
+            - name: Výkaz podnikatelské činnosti (BAS)
+              href: ../financials/localizations/apac-aus-business-activity-statement.md
+            - name: Přidání polí sestavy a generování BAS
+              href: ../financials/localizations/tasks/add-bas-report-boxes.md
+            - name: Odpisy skupiny majetku s nízkou hodnotou
+              href: ../financials/localizations/apac-aus-low-value-pool-depreciation.md
+            - name: Nastavení kódů důvodů pro BAS
+              href: ../financials/localizations/tasks/set-up-reason-codes-australia-bas.md
+        - name: Rakousko
+          href: ../financials/localizations/austria.md
+          items:
+            - name: Půlroční způsob odpisů u dodatečných pořízení
+              href: ../financials/localizations/emea-aut-half-year-depreciation.md
+            - name: Poplatky za obalový materiál
+              href: ../financials/localizations/emea-aut-packing-material-fee-calculation.md
+            - name: Výkaz DPH
+              href: ../financials/localizations/emea-aut-vat-statement-details.md
+        - name: Belgie
+          href: ../financials/localizations/belgium.md
+          items:
+            - name: Bankovní výpis CODA
+              href: ../financials/localizations/emea-bel-coda-bank-statement-import.md
+            - name: Vytvoření a přenos transakcí do systému BLWI
+              href: ../financials/localizations/tasks/be-00011-create-transfer-blwi.md
+            - name: Daňové přiznání systému INTERVAT
+              href: ../financials/localizations/emea-bel-intervat-tax-declaration.md
+            - name: Sestavy odsouhlasení
+              href: ../financials/localizations/emea-bel-reconciliation-reports.md
+            - name: Nastavení vykazování zůstatku platby
+              href: ../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md
+            - name: Vytvoření a údržba PRODCOM
+              href: ../financials/localizations/emea-bel-prodcom-report.md
+        - name: Brazílie
+          href: ../financials/localizations/brazil.md
+          items:
+            - name: Rozsah lokalizace
+              href: ../financials/localizations/latam-bra-scope.md
+            - name: Fiskální knihy
+              href: ../financials/localizations/latam-bra-fiscal-books.md
               items:
-                - name: Výkaz podnikatelské činnosti (BAS)
-                  href: ../financials/localizations/apac-aus-business-activity-statement.md
-                - name: Přidání polí sestavy a generování BAS
-                  href: ../financials/localizations/tasks/add-bas-report-boxes.md
-                - name: Odpisy skupiny majetku s nízkou hodnotou
-                  href: ../financials/localizations/apac-aus-low-value-pool-depreciation.md
-                - name: Nastavení kódů důvodů pro BAS
-                  href: ../financials/localizations/tasks/set-up-reason-codes-australia-bas.md
-            - name: Čína
-              href: ../financials/localizations/china.md
+                - name: Konfigurace fiskálních knih
+                  href: ../financials/localizations/latam-bra-configure-fiscal-books.md
+                - name: ICMS daňové fiskální dokumenty
+                  href: ../financials/localizations/latam-bra-icms-tax-fiscal-documents.md
+                - name: Import fiskálních dokumentů
+                  href: ../financials/localizations/latam-bra-import-fiscal-documents.md
+                - name: Export a import transakcí právnické osoby z konsolidace hlavní knihy
+                  href: ../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md
+                - name: Import a ověření dokumentů NF-e XML a souborů DANFE
+                  href: ../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md
+                - name: Elektronický fiskální dokument služby využívající textové soubory
+                  href: ../financials/localizations/tasks/br00059-service-electronic-fiscal-document-text-files.md
+                - name: Zpracování elektronických platebních úhrad
+                  href: ../financials/localizations/latam-bra-process-electronic-payment-remittances.md
+                - name: Správa elektronických plateb pro platby dodavatelů
+                  href: ../financials/localizations/tasks/br-00067-electronic-payment-management-vendor-payments.md
+                - name: Fiskální dokumenty
+                  href: ../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md
+                - name: Zástupný text u fiskálních dokumentů
+                  href: ../financials/localizations/latam-bra-fiscal-document-text-placeholders.md
+                - name: Nastavení zdrojového textu fiskálních dokumentů
+                  href: ../financials/localizations/tasks/br-00001-2-set-up-fiscal-document-source-text.md
+                - name: "Správa textů fiskálních dokumentů v\_dokumentech zásobování"
+                  href: ../financials/localizations/tasks/br-00080-manage-fiscal-document-texts-procurement-documents.md
+                - name: Vystavení fiskálních dokumentů pro dodavatele
+                  href: ../financials/localizations/tasks/br-00033-issuing-fiscal-document-non-taxable-vendors.md
+                - name: Vystavení fiskálních dokumentů odběratele
+                  href: ../financials/localizations/tasks/br-00038-issuing-customer-fiscal-document.md
+                - name: Nákupní doplňkové fiskální dokumenty
+                  href: ../financials/localizations/latam-bra-purchase-complementary-fiscal-documents.md
+                - name: "Vytvoření a\_zaúčtování nákupního doplňkového fiskálního dokumentu"
+                  href: ../financials/localizations/tasks/br-00026-1-create-post-purchase-complementary-fiscal-document.md
+                - name: Zrušení nákupního doplňkového fiskálního dokumentu
+                  href: ../financials/localizations/tasks/br-00026-2-cancel-purchase-complementary-fiscal-document.md
+                - name: Odkazované fiskální dokumenty
+                  href: ../financials/localizations/latam-bra-referenced-fiscal-documents.md
+                - name: Přijetí fiskálních dokumentů dodavatele (produkty)
+                  href: ../financials/localizations/tasks/br-00024-receiving-vendor-fiscal-document-products.md
+                - name: "Přijetí fiskálních dokumentů dodavatele (dlouhodobý majetek – dlouhodobě vratné daně PIS a\_COFINS)"
+                  href: ../financials/localizations/tasks/br-00014-receiving-vendor-fiscal-document-fixed-assets-pis-cofins-long-term-recoverable.md
+                - name: Přijetí fiskálních dokumentů dodavatele (dlouhodobý majetek – dlouhodobě vratná daň ICMS)
+                  href: ../financials/localizations/tasks/br-00082-receiving-vendor-fiscal-document-fixed-assets-icms-long-term-recoverable.md
+                - name: Vystavení fiskálních dokumentů odběratele (služby)
+                  href: ../financials/localizations/tasks/br-00084-issuing-customer-fiscal-documents-services.md
+                - name: Vystavení fiskálních dokumentů odběratele (dlouhodobý majetek)
+                  href: ../financials/localizations/tasks/br-00085-issuing-customer-fiscal-documents-fixed-assets.md
+                - name: Vystavení fiskálních dokumentů odběratele (projekt)
+                  href: ../financials/localizations/tasks/br-00086-issuing-customer-fiscal-documents-project.md
+                - name: Vystavení fiskálních dokumentů odběratele (pro koncové uživatele)
+                  href: ../financials/localizations/tasks/br-00087-issuing-customer-fiscal-documents-end-user.md
+                - name: Vystavení fiskálních dokumentů odběratele (pro odběratele SUFRAMA)
+                  href: ../financials/localizations/tasks/br-00088-issuing-customer-fiscal-documents-suframa-customers.md
+                - name: Zrušení fiskálního dokumentu odběratele (projekt)
+                  href: ../financials/localizations/tasks/br-00092-cancel-customer-fiscal-document-project.md
+                - name: Prodejní doplňkové fiskální dokumenty
+                  href: ../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md
+                - name: "Vytvoření a\_zaúčtování prodejního doplňkového fiskálního dokumentu"
+                  href: ../financials/localizations/tasks/br-00052-1-create-post-sales-complementary-fiscal-documents.md
+                - name: Zrušení prodejního doplňkového fiskálního dokumentu
+                  href: ../financials/localizations/tasks/br-00052-2-cancel-sales-complementary-fiscal-document.md
+                - name: Elektronický fiskální dokument služby
+                  href: ../financials/localizations/latam-bra-service-electronic-fiscal-document.md
+                - name: Deníky generované během procesu vracení elektronické platby
+                  href: ../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md
+                - name: Dluhopisy projektů
+                  href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
+            - name: Proces NF-e
+              href: ../financials/localizations/latam-bra-nf-e-process.md
               items:
-                - name: Porovnání kusovníků
-                  href: ../financials/localizations/apac-chn-bom-comparison.md
-                - name: Čínská hierarchie účtové osnovy
-                  href: ../financials/localizations/tasks/china-hierarchy-chart-accounts.md
-                - name: Kontrola kontinuity čínského dokladu
-                  href: ../financials/localizations/tasks/chinese-voucher-continuity-check.md
-                - name: Čínské typy dokladu
-                  href: ../financials/localizations/apac-chn-vouchers.md
-                - name: Konfigurace integrace daní
-                  href: ../financials/localizations/apac-chn-tax-integration.md
-                - name: "Nastavení exportu integrace s\_čínským systémem Golden Tax"
-                  href: ../financials/localizations/tasks/golden-tax-integration-export-setup.md
+                - name: Automatické předávání fiskálních dokumentů NF-e
+                  href: ../financials/localizations/tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md
+                - name: "Generování e-mailů pro schválený dokument NF-e a\_připojení souborů DANFE PDF a\_souborů NF-e XML k\_e-mailům"
+                  href: ../financials/localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
+                - name: Certifikáty NF-e
+                  href: ../financials/localizations/latam-bra-nfe-certs.md
+                - name: 'Nastavení, import a ověření dokumentů NF-e XML a DANFE'
+                  href: ../financials/localizations/latam-bra-set-up-import-nfe.md
+                - name: Nastavení federálních parametrů NF-e
+                  href: ../financials/localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
+                - name: Nastavení parametrů NF-e pro fiskální subjekt
+                  href: ../financials/localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+            - name: Parametry pro právnické osoby
+              href: ../financials/localizations/latam-bra-legal-entity-parameters.md
+            - name: Nastavení parametrů právnické osoby
+              href: ../financials/localizations/tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md
+            - name: Pořízení dlouhodobého majetku CIAP
+              href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
+            - name: Vyřazení dlouhodobého majetku CIAP
+              href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
+            - name: Zadání transakce CIAP
+              href: ../financials/localizations/tasks/br-10020-1-enter-ciap-transaction.md
+            - name: Výpočet částky dobropisu CIAP
+              href: ../financials/localizations/tasks/br-10020-2-calculate-ciap-credit-amount.md
+            - name: "Zahrnutí dobropisu CIAP z\_předchozího období"
+              href: ../financials/localizations/tasks/br-10020-3-include-ciap-credit-from-previous-period.md
+            - name: Dodací listy
+              href: ../financials/localizations/tasks/br-00041-delivery-slip.md
+            - name: Nefiskální operace
+              href: ../financials/localizations/tasks/br-10016-non-fiscal-operations.md
+            - name: Vedlejší náklady na volných fakturách
+              href: ../financials/localizations/tasks/br-00050-miscellaneous-charge-free-text-invoice.md
+            - name: "Nastavení úroků a\_pokut pro platby dodavatelů"
+              href: ../financials/localizations/tasks/br-00065-1-set-up-interest-fines-vendor-payments.md
+            - name: "Výpočet úroků a\_pokut pro platby dodavatelů"
+              href: ../financials/localizations/tasks/br-00065-2-calculate-interest-fines-vendor-payments.md
+            - name: "Nastavení úroků a\_pokut pro platby odběratelů"
+              href: ../financials/localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
+            - name: "Výpočet úroků a\_pokut pro platby odběratelů"
+              href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
+            - name: Daně
+              href: ../financials/localizations/latam-bra-calculate-taxes.md
+              items:
+                - name: "Výpočet daně v\_nákupních nabídkách"
+                  href: ../financials/localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
+                - name: Vytvoření vyměření daně – ICMS
+                  href: ../financials/localizations/tasks/br-10001-4-create-tax-assessment-icms.md
+                - name: Vytvoření vyměření daně – daň IPI
+                  href: ../financials/localizations/tasks/br-10004-2-create-tax-assessment-ipi-tax.md
+                - name: "Vytvoření vyměření daně – daně PIS a\_COFINS"
+                  href: ../financials/localizations/tasks/br-10006-4-create-tax-assessment-pis-cofins-tax.md
+                - name: "Zadání a\_zaúčtování transakcí oprav daně"
+                  href: ../financials/localizations/tasks/br-10001-3-enter-post-tax-adjustment-transactions.md
+                - name: "Zadání transakcí oprav daní PIS a\_COFINS"
+                  href: ../financials/localizations/tasks/br-10006-3-enter-pis-cofins-tax-adjustment-transactions.md
+                - name: Daňové atributy fiskálního subjektu
+                  href: ../financials/localizations/tasks/br-00002-fiscal-establishment-tax-attributes.md
+                - name: Vystavení fiskálních dokumentů daňového dobropisu ICMS
+                  href: ../financials/localizations/tasks/br-00072-issuing-icms-tax-credit-fiscal-document.md
+                - name: Vystavení fiskálních dokumentů převodu daňového dobropisu ICMS
+                  href: ../financials/localizations/tasks/br-00071-issuing-icms-tax-credit-transfer-fiscal-document.md
+                - name: Nastavení kódů oprav pro daň ICMS
+                  href: ../financials/localizations/tasks/br-10001-1-set-up-adjustment-codes-icms-tax.md
+                - name: Nastavení kódů oprav pro daně ICMS ve fiskálních dokumentech
+                  href: ../financials/localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
+                - name: Nastavení kódů oprav pro daně IPI
+                  href: ../financials/localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
+                - name: "Daně PIS a\_COFINS z\_dlouhodobého majetku"
+                  href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
+                - name: "Nastavení kódů oprav pro daně PIS a\_COFINS"
+                  href: ../financials/localizations/tasks/br-10006-2-set-up-adjustment-codes-pis-cofins-taxes.md
+                - name: "Nastavení tabulek PIS a\_COFINS"
+                  href: ../financials/localizations/tasks/br-10006-1-set-up-pis-cofins-tables.md
+                - name: Vyměření daně pro daň ISS
+                  href: ../financials/localizations/tasks/br-10005-tax-assessment-iss-tax.md
+                - name: Daňové atributy
+                  href: ../financials/localizations/latam-bra-tax-attributes.md
+                - name: Platby daně
+                  href: ../financials/localizations/latam-bra-tax-payments.md
+                - name: "Daň v\_prodejní nabídce"
+                  href: ../financials/localizations/tasks/br-00057-brazilian-taxes-sales-quotation.md
+                - name: 'Srážkové daně '
+                  href: ../financials/localizations/tasks/br-00009-brazilian-withholding-taxes.md
+                - name: Srážkové daně pro platby odběratelů
+                  href: ../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md
+                - name: Srážkové daně pro platby dodavatelů
+                  href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
+        - name: Čína
+          href: ../financials/localizations/china.md
+          items:
+            - name: Porovnání kusovníků
+              href: ../financials/localizations/apac-chn-bom-comparison.md
+            - name: Čínská hierarchie účtové osnovy
+              href: ../financials/localizations/tasks/china-hierarchy-chart-accounts.md
+            - name: Kontrola kontinuity čínského dokladu
+              href: ../financials/localizations/tasks/chinese-voucher-continuity-check.md
+            - name: Čínské typy dokladu
+              href: ../financials/localizations/apac-chn-vouchers.md
+            - name: Konfigurace integrace daní
+              href: ../financials/localizations/apac-chn-tax-integration.md
+            - name: "Nastavení exportu integrace s\_čínským systémem Golden Tax"
+              href: ../financials/localizations/tasks/golden-tax-integration-export-setup.md
+            - name: Metody odpisu dlouhodobého majetku
+              href: ../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md
+            - name: Import čínské daňové entity Chinese Golden
+              href: ../financials/localizations/apac-chn-import-golden-tax-data-entity.md
+            - name: Průměrní měsíční model nákladů
+              href: ../financials/localizations/apac-chn-monthly-average-cost-model.md
+            - name: Zaúčtování hlavních účtů zásob podle pracoviště
+              href: ../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md
+            - name: "Zaúčtování dokladů z\_jiných modulů"
+              href: ../financials/localizations/tasks/post-vouchers-other-modules-like-sales-invoices.md
+            - name: "Zaúčtování dokladů z\_hlavního deníku"
+              href: ../financials/localizations/tasks/post-vouchers-general-journal.md
+            - name: Nastavení profilu základní daňové integrace pro Čínu
+              href: ../financials/localizations/tasks/set-up-basic-tax-integration-profile-china.md
+            - name: Nastavení čínských typů dokladů
+              href: ../financials/localizations/tasks/set-up-chinese-vouchers.md
+            - name: Nastavení přidělení odpisů dlouhodobého majetku
+              href: ../financials/localizations/tasks/fixed-asset-depreciation-allocation.md
+            - name: Zobrazení částek MD a Dal v účtech hlavní knihy
+              href: ../financials/localizations/apac-chn-negative-debits-credits.md
+            - name: Protokol uživatelských operací podle čínského pracovního pravidla
+              href: ../financials/localizations/tasks/user-operation-log-china-working-rule.md
+            - name: Nejčastější dotazy týkající se faktur odběratele s DPH
+              href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md
+        - name: Česká republika
+          href: ../financials/localizations/czech-republic.md
+          items:
+            - name: Dobropis na platební slevu
+              href: ../financials/localizations/emea-cze-credit-note-cash-discount.md
+            - name: Dlouhodobý majetek
+              items:
+                - name: Zaokrouhlení odpisování
+                  href: ../financials/localizations/emea-cze-depreciation-rounding.md
+                - name: Pololetní odpisy vyřazení dlouhodobého majetku
+                  href: ../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md
+                - name: Přerušení odpisování (svátky)
+                  href: ../financials/localizations/emea-cze-depreciation-suspension-holidays.md
                 - name: Metody odpisu dlouhodobého majetku
-                  href: ../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md
-                - name: Import čínské daňové entity Chinese Golden
-                  href: ../financials/localizations/apac-chn-import-golden-tax-data-entity.md
-                - name: Průměrní měsíční model nákladů
-                  href: ../financials/localizations/apac-chn-monthly-average-cost-model.md
-                - name: Zaúčtování hlavních účtů zásob podle pracoviště
-                  href: ../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md
-                - name: "Zaúčtování dokladů z\_jiných modulů"
-                  href: ../financials/localizations/tasks/post-vouchers-other-modules-like-sales-invoices.md
-                - name: "Zaúčtování dokladů z\_hlavního deníku"
-                  href: ../financials/localizations/tasks/post-vouchers-general-journal.md
-                - name: Nastavení profilu základní daňové integrace pro Čínu
-                  href: ../financials/localizations/tasks/set-up-basic-tax-integration-profile-china.md
-                - name: Nastavení čínských typů dokladů
-                  href: ../financials/localizations/tasks/set-up-chinese-vouchers.md
-                - name: Nastavení přidělení odpisů dlouhodobého majetku
-                  href: ../financials/localizations/tasks/fixed-asset-depreciation-allocation.md
-                - name: Zobrazení částek MD a Dal v účtech hlavní knihy
-                  href: ../financials/localizations/apac-chn-negative-debits-credits.md
-                - name: Protokol uživatelských operací podle čínského pracovního pravidla
-                  href: ../financials/localizations/tasks/user-operation-log-china-working-rule.md
-                - name: Nejčastější dotazy týkající se zákaznických faktur s DPH
-                  href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md
-            - name: Indie
-              href: ../financials/localizations/india.md
-              items:
-                - name: Dlouhodobý majetek
-                  href: ../financials/localizations/apac-ind-fixed-assets.md
-                  items:
-                    - name: Připojení kalendáře podle dní ke knize dlouhodobého majetku
-                      href: ../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md
-                    - name: Vypočítat posuv odpisů
-                      href: ../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md
-                    - name: Vytvoření skupiny skladových modelů pro kapitálové položky
-                      href: ../financials/localizations/tasks/apac-ind-create-inventory-model-group.md
-                    - name: Vytvoření a zaúčtování odpisů
-                      href: ../financials/localizations/apac-ind-calculate-post-depreciation.md
-                    - name: Definování typu směny a průmyslu pro knihy a připojení k dlouhodobému majetku
-                      href: ../financials/localizations/tasks/apac-ind-books-shift-industry-types.md
-                    - name: Stornování transakcí dlouhodobého majetku
-                      href: ../financials/localizations/apac-ind-reverse-fixed-assets-transactions.md
-                    - name: Výpočet posuvu odpisů
-                      href: ../financials/localizations/apac-ind-calculation-shift-depreciation.md
-                    - name: Nastavení fiskálního kalendáře podle dne
-                      href: ../financials/localizations/tasks/apac-ind-day-based-calendar.md
-                    - name: Nastavení parametrů pro výpočet odpisů
-                      href: ../financials/localizations/tasks/apac-ind-set-up-depreciation.md
-                    - name: Nastavení odpisu skupiny majetku pro knihy odpisů
-                      href: ../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md
-                    - name: Převod kapitálových položek do dlouhodobého majetku
-                      href: ../financials/localizations/tasks/apac-ind-transfer-capital-items.md
-                - name: Indická daň GST
-                  href: ../financials/localizations/apac-ind-gst.md
-                  items:
-                    - name: Referenční skupiny indické daně GST
-                      href: ../financials/localizations/apac-ind-gst-reference-groups.md
-                    - name: GST integrace pro registrační pokladny
-                      href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
-                - name: Pokyny k nasazení registračních pokladen
-                  href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
-                - name: Přehled daňového modulu
-                  href: ../financials/general-ledger/tax-engine.md
-                  items:
-                    - name: Integrace daňového modulu
-                      href: ../financials/general-ledger/tax-engine-integration.md
-                    - name: Rozšíření daňového modulu
-                      href: ../financials/general-ledger/extend-tax-engine-configurations.md
-                - name: Často kladené dotazy týkající se prahových hodnot daní
-                  href: ../financials/localizations/apac-ind-tax-thresholds.md
-            - name: Japonsko
-              href: ../financials/localizations/japan.md
-              items:
-                - name: "Pořízení dlouhodobého majetku a\_nárokování subvencí státního grantu"
-                  href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
-                - name: "Pořízení dlouhodobého majetku s\_povinností vyřazení majetku"
-                  href: ../financials/localizations/tasks/acquire-fixed-asset-asset-retirement-obligations.md
-                - name: Úprava odhadu povinnosti vyřazení majetku
-                  href: ../financials/localizations/tasks/adjustment-asset-retirement-obligation-estimate.md
-                - name: "Přidělení zůstatkové hodnoty sdíleného majetku a\_nehmotného jmění k\_penězotvorným jednotkám"
-                  href: ../financials/localizations/tasks/allocate-carrying-amount.md
-                - name: Pravidla přidělení
-                  href: ../financials/localizations/apac-jpn-allocation-rules-fixed-assets.md
-                - name: Bankovní platby pokryté dodavateli
-                  href: ../financials/localizations/apac-jpn-bank-payment-fees-vendors.md
-                - name: "Změna metody odpisování pro knihu v\_průběhu životnosti majetku"
-                  href: ../financials/localizations/tasks/change-depreciation-method-during-asset-life-book.md
-                - name: "Změna metody odpisování pro jeden majetek v\_průběhu životnosti majetku"
-                  href: ../financials/localizations/tasks/change-depreciation-method-during-asset-life-one-asset.md
-                - name: "Konfigurace parametrů zrychleného odpisování a\_účetních profilů"
-                  href: ../financials/localizations/tasks/accelerated-depreciation-posting-profiles.md
-                - name: "Konfigurace parametrů a\_nastavení souhrnné faktury pro závazky"
-                  href: ../financials/localizations/tasks/consolidated-invoice-parameters-setup-accounts-payable.md
-                - name: "Konfigurace odpisového plánu a\_účetního profilu pro další odpisy"
-                  href: ../financials/localizations/tasks/configure-depreciation-profile-posting.md
-                - name: "Konfigurace hlavních účtů pro zaúčtování povinnosti vyřazení majetku a\_sazeb slev na trhu"
-                  href: ../financials/localizations/tasks/configure-main-accounts-asset-retirement.md
-                - name: Souhrnné faktury
-                  href: ../financials/localizations/apac-jpn-consolidate-invoices.md
-                - name: "Vytvoření dlouhodobého majetku s\_dodatečnými odpisy"
-                  href: ../financials/localizations/tasks/create-fixed-asset-additional-depreciation.md
-                - name: Vytvoření dlouhodobého majetku se zvláštním odpisovým plánem
-                  href: ../financials/localizations/tasks/create-fixed-asset-special-depreciation-profile.md
-                - name: "Vytvoření dokumentu zrychleného odpisování a\_zadání dat o\_využití"
-                  href: ../financials/localizations/tasks/create-accelerated-depreciation-document-enter-usage-data.md
-                - name: "Vytvoření plánu zrychleného odpisování a\_jeho přiřazení knize"
-                  href: ../financials/localizations/tasks/create-accelerated-depreciation-profile-assign-it-book.md
-                - name: "Vytvoření a\_přiřazení dokumentu položky snížení hodnoty pro subvence státního grantu"
-                  href: ../financials/localizations/tasks/create-assign-reduction-document.md
-                - name: "Vytvoření a\_přiřazení skupiny vybavení"
-                  href: ../financials/localizations/tasks/create-assign-equipment-group.md
-                - name: "Vytvoření a\_potvrzení souhrnné faktury odběratele"
-                  href: ../financials/localizations/tasks/create-confirm-customer-consolidated-invoice.md
-                - name: "Vytvoření a\_potvrzení testu uznání"
-                  href: ../financials/localizations/tasks/create-confirm-recognition-test.md
-                - name: "Vytvoření a\_potvrzení souhrnné faktury dodavatele"
-                  href: ../financials/localizations/tasks/create-confirm-vendor-consolidated-invoice.md
-                - name: "Vytvoření skupiny jednotky CGU a\_penězotvorných jednotek"
-                  href: ../financials/localizations/tasks/create-cgu-group-cash-generating-units.md
-                - name: "Vytvoření majetku s\_paušálními odpisy s\_použitím metody rovnoměrného dělení"
-                  href: ../financials/localizations/tasks/create-lump-sum-depreciation-assets-equally-divided-method.md
-                - name: "Definování období nečinnosti majetku a\_ověření procesu odpisování"
-                  href: ../financials/localizations/tasks/define-asset-idle-period-validate-depreciation-process.md
-                - name: "Odepsání a\_časové rozlišení úrokových výdajů pro povinnosti vyřazení majetku"
-                  href: ../financials/localizations/tasks/depreciate-accrue-interest-expense.md
-                - name: Odepsání dlouhodobého majetku se zaúčtovanou položkou snížení hodnoty
-                  href: ../financials/localizations/tasks/depreciation-fixed-assets-reduction-entry-posted.md
-                - name: Odpis – FAQ
-                  href: ../financials/localizations/apac-jpn-fixed-asset-depreciation.md
-                - name: "Vyřazení dlouhodobého majetku s\_položkou snížení hodnoty"
-                  href: ../financials/localizations/tasks/dispose-fixed-asset-reduction-entry.md
-                - name: Povolení formátu souboru plateb JBA
-                  href: ../financials/localizations/tasks/jba-payment-file-format.md
-                - name: "Zadání plánu odpisové sazby a\_přiřazení k\_odpisovému plánu"
-                  href: ../financials/localizations/tasks/enter-depreciation-rate-schedule.md
-                - name: Rovnoměrně rozdělená metoda odpisů
-                  href: ../financials/localizations/apac-jpn-equally-divided-depreciation-method.md
-                - name: Formulář 26 pro přiznání odepisovatelné daně
-                  href: ../financials/localizations/tasks/jp-00027-form-26-depreciable-tax-declaration.md
-                - name: Vygenerování souboru plateb EFT ve formátu JBA
-                  href: ../financials/localizations/tasks/eft-payment-file-jba-format.md
-                - name: "Vygenerování a\_zaúčtování platebního poplatku"
-                  href: ../financials/localizations/tasks/post-payment-fee.md
-                - name: Vygenerování sestavy spotřební daně
-                  href: ../financials/localizations/tasks/japan-consumption-tax-report.md
-                - name: Účtování se snížením hodnoty v CGU
-                  href: ../financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit.md
-                - name: Účtování se snížením hodnoty
-                  href: ../financials/localizations/apac-jpn-impairment-accounting-fixed-assets.md
-                - name: Import platby odběratele ve formátu souboru JBA
-                  href: ../financials/localizations/tasks/import-customer-payment-jba-file-format.md
-                - name: Import PSČ
-                  href: ../financials/localizations/apac-jpn-import-postal-codes.md
-                - name: Zadávání deníku ve formátu T účtu
-                  href: ../financials/localizations/tasks/jp-00005-input-journal-t-account-form-japan.md
-                - name: "Dotazy na transakce související s\_povinností vyřazení majetku"
-                  href: ../financials/localizations/tasks/inquiries-asset-retirement-obligation.md
-                - name: Dotazy na odečitatelné výdaje
-                  href: ../financials/localizations/tasks/inquiry-deductible-expenses.md
-                - name: "Dotazy na platební poplatky v\_deníku"
-                  href: ../financials/localizations/tasks/inquiries-payment-fee-journal.md
-                - name: Udržování souborů hlavních dat dlouhodobého majetku pro odečitatelné výdaje
-                  href: ../financials/localizations/tasks/maintain-fixed-asset-master-data-files-deductible-expenses.md
-                - name: "Udržování ukazatelů snížení hodnoty u\_jednotlivých položek majetku"
-                  href: ../financials/localizations/tasks/maintain-impairment-indicators-individual-assets.md
-                - name: Zaplacení dodavateli formou směnky
-                  href: ../financials/localizations/apac-jpn-endorse-bill-of-exchange.md
-                - name: Uhrazení dodavatelské transakce formou zákazníkovy směnky
-                  href: ../financials/localizations/tasks/pay-vendor-transaction.md
-                - name: Pravidelné vyrovnání příliš velkých nebo příliš malých odpisů
-                  href: ../financials/localizations/tasks/periodic-settlement-over-under-depreciation.md
-                - name: Výpočet progresivní srážkové daně
-                  href: ../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md
-                - name: Návrh dodatečného odpisování
-                  href: ../financials/localizations/tasks/propose-additional-depreciation.md
-                - name: "Návrh a\_zaúčtování zrychleného odpisování"
-                  href: ../financials/localizations/tasks/propose-post-accelerated-depreciation.md
-                - name: "Návrh a\_zaúčtování částky snížení hodnoty v\_dávce"
-                  href: ../financials/localizations/tasks/propose-post-impairment-amount-batch.md
-                - name: "Návrh a\_zaúčtování částky snížení hodnoty s\_použitím deníku dlouhodobého majetku"
-                  href: ../financials/localizations/tasks/propose-post-impairment-amount-fixed-asset-journal.md
-                - name: "Návrh a\_zaúčtování částky snížení hodnoty pro penězotvornou jednotku"
-                  href: ../financials/localizations/tasks/propose-post-impairment-amount-cash-generating-unit.md
-                - name: Návrh zvláštního odpisování
-                  href: ../financials/localizations/tasks/propose-special-depreciation.md
-                - name: "Opětovné otevření a\_úprava souhrnné faktury odběratele"
-                  href: ../financials/localizations/tasks/reopen-edit-customer-consolidated-invoice.md
-                - name: "Opětovné otevření a\_úprava souhrnné faktury dodavatele"
-                  href: ../financials/localizations/tasks/reopen-edit-vendor-consolidated-invoice.md
-                - name: Stornování indosované cizí směnky
-                  href: ../financials/localizations/tasks/reverse-endorsed-bill-exchange.md
-                - name: "Spuštění testu uznání a\_výpočet částky snížení hodnoty pro jednotlivé položky majetku"
-                  href: ../financials/localizations/tasks/run-recognition-test-calculate.md
-                - name: "Nastavení odběratele a\_prodejní objednávky jako cíle souhrnné faktury"
-                  href: ../financials/localizations/tasks/set-up-customer-sales-order-target-consolidated-invoice.md
-                - name: Nastavit formát ARO
-                  href: ../financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets.md
-                - name: "Nastavení dokumentů povinností vyřazení majetku a\_zadání částky povinnosti vyřazení majetku u\_dlouhodobého majetku"
-                  href: ../financials/localizations/tasks/set-up-asset-retirement-obligation.md
-                - name: Nastavení souhrnných faktur
-                  href: ../financials/localizations/tasks/set-up-consolidated-invoices.md
-                - name: "Nastavení běžných parametrů a\_účetního profilu pro účtování se snížením hodnoty"
-                  href: ../financials/localizations/tasks/impairment-accounting.md
-                - name: Nastavení sestavy japonské spotřební daně
-                  href: ../financials/localizations/tasks/setup-japan-consumption-tax-report.md
-                - name: Nastavení platby pro Japonsko formou cizí směnky odběratele
-                  href: ../financials/localizations/tasks/setup-japan-payment-endorsing-customer-bill-exchange.md
-                - name: Nastavení hlavních dat pro zahrnutí odečitatelných výdajů pro více účtovacích vrstev
-                  href: ../financials/localizations/tasks/set-up-master-data-inclusion.md
-                - name: Nastavení platebního poplatku pro Japonsko
-                  href: ../financials/localizations/tasks/setup-payment-fee-japan.md
-                - name: Nastavení záznamů redukce
-                  href: ../financials/localizations/apac-jpn-reduction-entry-fixed-assets.md
-                - name: "Nastavení hlavních dat dodavatele a\_nákupní objednávky jako cíle pro souhrnnou fakturu"
-                  href: ../financials/localizations/tasks/vendor-master-po.md
-                - name: Vyrovnání indosované cizí směnky
-                  href: ../financials/localizations/tasks/settle-endorsed-bill-exchange.md
-                - name: "Vyrovnání souhrnných faktur odběratelů s\_použitím deníku plateb"
-                  href: ../financials/localizations/tasks/settle-customer-consolidated-invoices-payment-journal.md
-                - name: "Vyrovnání souhrnných faktur odběratelů s\_použitím vyrovnávacích transakcí"
-                  href: ../financials/localizations/tasks/settle-customer-consolidated-invoices-settle-transactions.md
-                - name: "Vyrovnání souhrnných faktur dodavatelů s\_použitím deníku plateb"
-                  href: ../financials/localizations/tasks/settle-vendor-consolidated-invoices-payment-journal.md
-                - name: "Vyrovnání souhrnných faktur dodavatelů s\_použitím vyrovnávacích transakcí"
-                  href: ../financials/localizations/tasks/settle-vendor-consolidated-invoices-settle-transactions.md
-                - name: Použití seznamu složení pro dlouhodobý majetek
-                  href: ../financials/localizations/tasks/use-assemble-list-fixed-asset.md
-                - name: Použití seznamu rozložení pro dlouhodobý majetek
-                  href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md
-            - name: Malajsie
-              href: ../financials/localizations/malaysia.md
-              items:
-                - name: Vygenerování dobropisu odběratele pro prodeje projektu
-                  href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
-                - name: Vygenerování dluhopisu odběratele pro prodeje projektu
-                  href: ../financials/localizations/tasks/my-00011-02-customer-debit-note-project-sales-2016-11.md
-                - name: Daň ze zboží a služeb (GST)
-                  href: ../financials/localizations/apac-mys-gst.md
-                - name: Daň GST - Generování souborů GAF v požadovaném formátu
-                  href: ../financials/localizations/tasks/my-00010-gst-gaf-files-required-format.md
-                - name: "Správa debetu a\_kreditu odběratele pro daň GST"
-                  href: ../financials/localizations/tasks/my-00003-manage-customer-debit-note-credit-note-gst.md
-                - name: "Správa debetu a\_kreditu dodavatele pro daň GST"
-                  href: ../financials/localizations/tasks/my-00004-manage-vendor-debit-note-credit-note-gst.md
-                - name: Tisk faktury odběratele daně GST s klauzulí úlevy
-                  href: ../financials/localizations/tasks/my-00006-02-print-gst-customer-invoices-relief-clause.md
-                - name: Tisk daňové faktury GST
-                  href: ../financials/localizations/tasks/my-00005-print-gst-tax-invoices.md
-                - name: Faktury vystavené odběratelem
-                  href: ../financials/localizations/tasks/my-00007-self-billed-invoices.md
-                - name: Nastavení klauzulí úlevy daně GST
-                  href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
-            - name: Singapur
-              href: ../financials/localizations/singapore.md
-              items:
-                - name: Generovat sestavu GST-05
-                  href: ../financials/localizations/apac-sgp-generate-gst-05-report.md
-            - name: Thajsko
-              href: ../financials/localizations/thailand.md
-              items:
-                - name: Sestavy karet zásob
-                  href: ../financials/localizations/apac-tha-stock-card-reports.md
-                - name: Nahrazení nebo úprava daňové faktury
-                  href: ../financials/localizations/apac-tha-substitution-and-adjustment-invoices.md
-                - name: Nerealizovaná DPH
-                  href: ../financials/localizations/apac-tha-unrealized-vat.md
-                - name: Srážková daň
-                  href: ../financials/localizations/apac-tha-withholding-tax.md
+                  href: ../financials/localizations/emea-cze-fixed-assets-depreciation.md
+                - name: Zaúčtování před-pořízení
+                  href: ../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md
+            - name: Účtování periodických deníků
+              href: ../financials/general-ledger/tasks/post-periodic-journals.md
+            - name: Nastavení podepisujících uživatelů tištěných formulářů
+              href: ../financials/localizations/emea-set-up-signers-for-printing-forms.md
+            - name: Rozdělení období v periodických denících
+              href: ../financials/localizations/emea-create-post-periodic-journals.md
+            - name: "Aktualizace zobrazení částek v\_sestavách a\_dokumentech"
+              href: ../financials/localizations/emea-amount-printing-forms.md
+            - name: Výkaz DPH
+              href: ../financials/localizations/emea-cze-vat-statement-details.md
+            - name: Roční uzávěrka
+              href: ../financials/localizations/emea-cze-hun-year-end.md
+        - name: Dánsko
+          href: ../financials/localizations/denmark.md
+          items:
+            - name: "Přiřazení formátu platebního dokladu k\_účtu odběratele"
+              href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
+            - name: "Vytvoření a\_zaúčtování faktury odběratele pro odběratele z\_veřejného sektoru"
+              href: ../financials/localizations/tasks/create-post-customer-invoice-public-sector-customer.md
+            - name: "Vytvoření a\_zaúčtování volné faktury odběratele pro odběratele z\_veřejného sektoru"
+              href: ../financials/localizations/tasks/create-post-free-text-invoice-public-sector-customer.md
+            - name: "Vytvoření a\_zaúčtování faktury projektu pro odběratele z\_veřejného sektoru"
+              href: ../financials/localizations/tasks/create-post-project-invoice-public-sector-customer.md
+            - name: Import konfigurací elektronické fakturace OIOUBL
+              href: ../financials/localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
+            - name: "Zaúčtování volné faktury s\_platebním dokladem"
+              href: ../financials/localizations/tasks/post-free-text-invoice-payment-slip.md
+            - name: "Zaúčtování faktury projektu s\_platebním dokladem"
+              href: ../financials/localizations/tasks/post-project-invoice-payment-slip.md
+            - name: "Zaúčtování prodejní faktury s\_platebním dokladem"
+              href: ../financials/localizations/tasks/post-sales-invoice-payment-slip.md
+            - name: Nastavení účtů odběratelů pro elektronickou fakturaci OIOUBL
+              href: ../financials/localizations/tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md
+            - name: Nastavení pro elektronickou fakturaci OIOUBL
+              href: ../financials/localizations/tasks/set-up-oioubl-electronic-invoicing.md
+            - name: Nastavení formátu platebního dokladu
+              href: ../financials/localizations/tasks/set-up-payment-slip-format.md
+        - name: Estonsko
+          href: ../financials/localizations/estonia.md
+          items:
+            - name: Požadavky na osobní informace
+              href: ../financials/localizations/emea-est-personal-info.md
+            - name: Výkaz DPH
+              href: ../financials/localizations/emea-est-vat-statement-details.md
         - name: Evropa
+          href: ../financials/localizations/europe.md
           items:
             - name: Držitelé zálohy
               href: ../financials/localizations/emea-advance-holders.md
               items:
                 - name: Transakce držitelů záloh
                   href: ../financials/localizations/emea-advance-holders-transactions.md
-            - name: Záloha pro zaměstnance (východní Evropa)
-              href: ../financials/localizations/tasks/advance-payment-employee.md
+                - name: Záloha pro zaměstnance (východní Evropa)
+                  href: ../financials/localizations/tasks/advance-payment-employee.md
             - name: Rozšířená fakturace
               href: ../financials/localizations/emea-advance-invoice.md
             - name: Odsouhlasení banky
@@ -1526,8 +1547,6 @@
               href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: Vygenerování dokladu převodu pro interní převod zásob
               href: ../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md
-            - name: Vygenerování prohlášení Intrastat EU
-              href: ../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md
             - name: Vygenerování sestavy souhrnného hlášení (EU)
               href: ../financials/localizations/tasks/eur-00011-eu-sales-list-report.md
             - name: Soubory ISO20022
@@ -1557,6 +1576,10 @@
               items:
                 - name: Převod transakcí do systému Intrastat
                   href: ../financials/localizations/tasks/transfer-transactions-intrastat.md
+                - name: Zadání adresy nakládky pro intrakomunitární transakci
+                  href: ../financials/localizations/tasks/eur-00002-specify-lading-address-intra-community.md
+                - name: Vygenerování prohlášení Intrastat EU
+                  href: ../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md
             - name: Sestavy deníku zásob
               href: ../financials/localizations/emea-set-up-report-inventory-journal-names.md
             - name: Koncová data vystavení faktury
@@ -1627,555 +1650,470 @@
                   href: ../financials/localizations/tasks/create-submit-vat-report.md
             - name: Zobrazení transakcí u vyrovnání
               href: ../financials/localizations/emea-transactions-settlement-form.md
-            - name: Rakousko
-              href: ../financials/localizations/austria.md
-              items:
-                - name: Půlroční způsob odpisů u dodatečných pořízení
-                  href: ../financials/localizations/emea-aut-half-year-depreciation.md
-                - name: Poplatky za obalový materiál
-                  href: ../financials/localizations/emea-aut-packing-material-fee-calculation.md
-                - name: Výkaz DPH
-                  href: ../financials/localizations/emea-aut-vat-statement-details.md
-            - name: Belgie
-              href: ../financials/localizations/belgium.md
-              items:
-                - name: Bankovní výpis CODA
-                  href: ../financials/localizations/emea-bel-coda-bank-statement-import.md
-                - name: Vytvoření a přenos transakcí do systému BLWI
-                  href: ../financials/localizations/tasks/be-00011-create-transfer-blwi.md
-                - name: Daňové přiznání systému INTERVAT
-                  href: ../financials/localizations/emea-bel-intervat-tax-declaration.md
-                - name: Sestavy odsouhlasení
-                  href: ../financials/localizations/emea-bel-reconciliation-reports.md
-                - name: 'Nastavení vykazování zůstatku platby '
-                  href: ../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md
-                - name: Vytvoření a údržba PRODCOM
-                  href: ../financials/localizations/emea-bel-prodcom-report.md
-            - name: Česká republika
-              href: ../financials/localizations/czech-republic.md
-              items:
-                - name: Dobropis na platební slevu
-                  href: ../financials/localizations/emea-cze-credit-note-cash-discount.md
-                - name: Dlouhodobý majetek
-                  items:
-                    - name: Zaokrouhlení odpisování
-                      href: ../financials/localizations/emea-cze-depreciation-rounding.md
-                    - name: Pololetní odpisy vyřazení dlouhodobého majetku
-                      href: ../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md
-                    - name: Přerušení odpisování (svátky)
-                      href: ../financials/localizations/emea-cze-depreciation-suspension-holidays.md
-                    - name: Metody odpisu dlouhodobého majetku
-                      href: ../financials/localizations/emea-cze-fixed-assets-depreciation.md
-                    - name: Zaúčtování před-pořízení
-                      href: ../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md
-                - name: Účtování periodických deníků
-                  href: ../financials/general-ledger/tasks/post-periodic-journals.md
-                - name: Nastavení podepisujících uživatelů tištěných formulářů
-                  href: ../financials/localizations/emea-set-up-signers-for-printing-forms.md
-                - name: Rozdělení období v periodických denících
-                  href: ../financials/localizations/emea-create-post-periodic-journals.md
-                - name: "Aktualizace zobrazení částek v\_sestavách a\_dokumentech"
-                  href: ../financials/localizations/emea-amount-printing-forms.md
-                - name: Výkaz DPH
-                  href: ../financials/localizations/emea-cze-vat-statement-details.md
-                - name: Roční uzávěrka
-                  href: ../financials/localizations/emea-cze-hun-year-end.md
-            - name: Dánsko
-              href: ../financials/localizations/denmark.md
-              items:
-                - name: "Přiřazení formátu platebního dokladu k\_účtu odběratele"
-                  href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
-                - name: "Vytvoření a\_zaúčtování faktury odběratele pro odběratele z\_veřejného sektoru"
-                  href: ../financials/localizations/tasks/create-post-customer-invoice-public-sector-customer.md
-                - name: "Vytvoření a\_zaúčtování volné faktury odběratele pro odběratele z\_veřejného sektoru"
-                  href: ../financials/localizations/tasks/create-post-free-text-invoice-public-sector-customer.md
-                - name: "Vytvoření a\_zaúčtování faktury projektu pro odběratele z\_veřejného sektoru"
-                  href: ../financials/localizations/tasks/create-post-project-invoice-public-sector-customer.md
-                - name: Import konfigurací elektronické fakturace OIOUBL
-                  href: ../financials/localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
-                - name: "Zaúčtování volné faktury s\_platebním dokladem"
-                  href: ../financials/localizations/tasks/post-free-text-invoice-payment-slip.md
-                - name: "Zaúčtování faktury projektu s\_platebním dokladem"
-                  href: ../financials/localizations/tasks/post-project-invoice-payment-slip.md
-                - name: "Zaúčtování prodejní faktury s\_platebním dokladem"
-                  href: ../financials/localizations/tasks/post-sales-invoice-payment-slip.md
-                - name: Nastavení účtů odběratelů pro elektronickou fakturaci OIOUBL
-                  href: ../financials/localizations/tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md
-                - name: Nastavení pro elektronickou fakturaci OIOUBL
-                  href: ../financials/localizations/tasks/set-up-oioubl-electronic-invoicing.md
-                - name: Nastavení formátu platebního dokladu
-                  href: ../financials/localizations/tasks/set-up-payment-slip-format.md
-            - name: Estonsko
-              href: ../financials/localizations/estonia.md
-              items:
-                - name: Požadavky na osobní informace
-                  href: ../financials/localizations/emea-est-personal-info.md
-                - name: Výkaz DPH
-                  href: ../financials/localizations/emea-est-vat-statement-details.md
-            - name: Francie
-              href: ../financials/localizations/france.md
-              items:
-                - name: Veřejný sektor
-                  items:
-                    - name: Účetnictví ve veřejném sektoru
-                      href: ../financials/localizations/emea-fra-public-sector-accounting.md
-                    - name: Závazky
-                      href: ../financials/localizations/emea-fra-commitments-public-sector.md
-                    - name: Mandats de paiement
-                      href: ../financials/localizations/emea-fra-mandats-de-paiement.md
-                    - name: "Zásobování a\_zdroje"
-                      href: ../financials/localizations/emea-fra-procurement-sourcing-public-sector.md
-                    - name: Titres de recette
-                      href: ../financials/localizations/emea-fra-titres-de-recette-public-sector.md
-                    - name: Blokování plateb faktur dodavatele
-                      href: ../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md
-                - name: "Schválení a\_zaúčtování vystavení cizí směnky"
-                  href: ../financials/localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md
-                - name: Chronologické doklady faktur
-                  href: ../financials/localizations/emea-fra-chronological-invoices-vouchers.md
-                - name: Vytvoření soubor standardního auditu pro Francii (FEC)
-                  href: ../financials/localizations/emea-fra-fec-audit-file.md
-                - name: "Výpisy z\_účtu odběratele a\_dodavatele"
-                  href: ../financials/localizations/tasks/fr-00002-customer-vendor-account-statements.md
-                - name: "Denní výpočet úroku pro prodlení a\_paušál ve faktuře a\_v\_upomínce"
-                  href: ../financials/localizations/tasks/fr-00018-daily-interest.md
-                - name: Derogační odpisy
-                  href: ../financials/localizations/emea-fra-derogatory-depreciation.md
-                - name: "Francouzské cizí směnky a\_vlastní směnky"
-                  href: ../financials/localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
-                - name: Kódy NAF a čísla SIRET (Francie)
-                  href: ../financials/localizations/emea-fra-naf-codes-siret-numbers.md
-                - name: "Nastavení kódů NAF a\_čísel SIRET"
-                  href: ../financials/localizations/tasks/fr-00003-naf-codes-siret-numbers.md
-                - name: Pokuty za zpožděné platby zákazníka
-                  href: ../financials/localizations/emea-fra-apply-penalty-customer-payment-past-due.md
-                - name: Zaúčtování deníku protestů cizích směnek
-                  href: ../financials/localizations/tasks/fr-00004-post-protest-draw-bill-exchange-journal.md
-                - name: Zaúčtování deníku opětovného vystavení cizích směnek
-                  href: ../financials/localizations/tasks/fr-00004-post-re-draw-bill-exchange-journal.md
-                - name: Tisk paušálního textu zobrazení na faktuře zákazníka
-                  href: ../financials/localizations/emea-fra-print-lump-sum-recovery-text.md
-                - name: Odpis RB/SL
-                  href: ../financials/localizations/emea-fra-rbsl-depreciation.md
-                - name: Nastavení metody platby
-                  href: ../financials/localizations/tasks/fr-00004-setup-method-payment.md
-                - name: Aktualizace způsobu platby pro odběratele
-                  href: ../financials/localizations/tasks/fr-00004-update-method-payment-customer.md
-                - name: Maloobchod
-                  items:
-                    - name: Registrační pokladny
-                      href: ../retail/localizations/emea-fra-cash-registers.md
-                    - name: Pokyny k nasazení registračních pokladen
-                      href: ../retail/localizations/emea-fra-deployment.md
-            - name: Německo
-              href: ../financials/localizations/germany.md
-              items:
-                - name: Další odpisy pořízení
-                  href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
-                - name: Soubor auditu
-                  href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
-                  items:
-                    - name: Přizpůsobení konfigurace souboru auditu
-                      href: ../financials/localizations/tasks/customize-german-audit-file-configuration.md
-                    - name: Vygenerování souboru auditu
-                      href: ../financials/localizations/tasks/german-audit-file.md
-                    - name: Import konfigurace souboru auditu
-                      href: ../financials/localizations/tasks/import-german-audit-file-configuration.md
-                - name: "Opravy odpisů u\_dodatečných pořízení za druhý rok"
-                  href: ../financials/localizations/tasks/de-00002-depreciation.md
-                - name: "Elektronický přenos přiznání k\_DPH (ELSTER)"
-                  href: ../financials/localizations/tasks/de-00003-electronic-transmission-elster.md
-                - name: Sestava seznamu deníku
-                  href: ../financials/localizations/emea-deu-journal-list-report.md
-                - name: Nastavit elektronická daňová přiznání
-                  href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
-            - name: Maďarsko
-              href: ../financials/localizations/hungary.md
-              items:
-                - name: Výpočet směnného kurzu
-                  href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
-                - name: Metody odpisu dlouhodobého majetku
-                  href: ../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md
-                - name: Dlouhodobý majetek s nízkými náklady
-                  href: ../financials/localizations/emea-hun-low-cost-fixed-assets.md
-                - name: Přesun dlouhodobého majetku do zásob
-                  href: ../financials/localizations/emea-hun-fixed-asset-to-inventory.md
-                - name: Doklady o refundaci daně
-                  href: ../financials/localizations/emea-hun-tax-reimbursement-docs.md
-                - name: Roční uzávěrka
-                  href: ../financials/localizations/emea-cze-hun-year-end.md
-            - name: Island
-              href: ../financials/localizations/iceland.md
-              items:
-                - name: "Vytvoření účtu dodavatele a\_připojení kategorie prohlášení k\_faktuře"
-                  href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
-                - name: "Nastavení prohlášení k\_faktuře pro dodavatele"
-                  href: ../financials/localizations/tasks/set-up-invoice-declaration-vendors.md
-                - name: Nastavení povinných platebních referencí
-                  href: ../financials/localizations/tasks/set-up-mandatory-payment-references.md
-                - name: "Aktualizace prohlášení k\_faktuře dodavatele a\_vygenerování sestavy"
-                  href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
-            - name: Itálie
-              href: ../financials/localizations/italy.md
-              items:
-                - name: Podrobnosti výpisů DPH
-                  href: ../financials/localizations/emea-ita-vat-statements-details.md
-                - name: Sestava černé listiny
-                  href: ../financials/localizations/emea-ita-black-list-report.md
-                - name: Datum kompetence
-                  href: ../financials/localizations/emea-ita-competence-date.md
-                - name: Odpisování dlouhodobého majetku
-                  href: ../financials/localizations/emea-ita-depreciation-of-fixed-assets.md
-                - name: Modello 770
-                  href: ../financials/localizations/emea-ita-modello770.md
-                - name: Ověření data dodacího listu na fakturách
-                  href: ../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md
-                - name: Zaúčtování a tisk dodacího listu s podrobnostmi dopravy
-                  href: ../financials/localizations/emea-ita-packing-slip.md
-                - name: Knihy DPH
-                  href: ../financials/localizations/emea-ita-fiscal-books.md
-                - name: Rozdělená platba za faktury vydané pro veřejnou správu
-                  href: ../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md
-                - name: Srážková daň
-                  href: ../financials/localizations/emea-ita-withholding-tax.md
-            - name: Lotyšsko
-              href: ../financials/localizations/latvia.md
-              items:
-                - name: Účtování dlouhodobého majetku
-                  href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
-                - name: Sledování změn umístění dlouhodobého majetku
-                  href: ../financials/localizations/emea-lva-fixed-assets-location-fields-change.md
-                - name: Číslování faktur a dodacích listů
-                  href: ../financials/localizations/emea-invoices-packing-slips-numbering.md
-                - name: Sestava daně z přírodních zdrojů
-                  href: ../financials/localizations/emea-lva-tax-natural-resources.md
-                - name: Podrobnosti výpisu DPH
-                  href: ../financials/localizations/emea-lva-vat-statement-details.md
-            - name: Litva
-              href: ../financials/localizations/lithuania.md
-              items:
-                - name: Výkaz dlouhodobého majetku (sestava)
-                  href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
-                - name: Vygenerování dokumentu převodu dlouhodobého majetku mezi sklady
-                  href: ../financials/localizations/tasks/lt-00003-fixed-asset-transfer.md
-                - name: Číslování faktur a dodacích listů
-                  href: ../financials/localizations/emea-invoices-packing-slips-numbering.md
-                - name: Podrobnosti výpisu DPH
-                  href: ../financials/localizations/emea-ltu-vat-statement-details.md
-            - name: Nizozemsko
-              href: ../financials/localizations/netherlands.md
-              items:
-                - name: Elektronické daňové přiznání (EVAT)
-                  href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
-                - name: Integrace Semansys XBRL
-                  href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
-            - name: Norsko
-              href: ../financials/localizations/norway.md
-              items:
-                - name: "Formáty plateb odběratelů a\_dodavatelů"
-                  href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
-                - name: Platba odběratele na základě ID platby
-                  href: ../financials/localizations/tasks/no-00002-customer-payment-based-payment-id.md
-                - name: Formát importu Nets
-                  href: ../financials/localizations/emea-nor-nets-import-format.md
-                - name: Výkaz DPH
-                  href: ../financials/localizations/emea-nor-sales-tax-payment-report.md
-                - name: Registrační pokladny
-                  href: ../retail/localizations/emea-nor-cash-registers.md?toc=/fin-and-ops/toc.json
-                - name: Pokyny k nasazení registračních pokladen
-                  href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
-            - name: Polsko
-              href: ../financials/localizations/poland.md
-              items:
-                - name: Výpočet slev řádku z jednotkové ceny
-                  href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
-                - name: Poznámky k opravě
-                  href: ../financials/localizations/emea-pol-correction-notes.md
-                - name: Duplikování číslování prodejních faktur
-                  href: ../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md
-                - name: Odpisy dlouhodobého majetku
-                  href: ../financials/localizations/emea-pol-fixed-assets-depreciation.md
-                - name: Rozšíření funkce disponibility investičního majetku
-                  href: ../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
-                - name: Vratný obal
-                  href: ../financials/localizations/emea-pol-returnable-packages.md
-                - name: Sestavy DPH
-                  href: ../financials/localizations/emea-pol-sales-tax-reports.md
-                - name: Soubor standardního auditu
-                  href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
-                - name: Úrok daně a volný úrok
-                  href: ../financials/localizations/emea-pol-interest-calculation.md
-                - name: Výkaz obratu
-                  href: ../financials/localizations/emea-pol-turnover-balances-statement.md
-            - name: Španělsko
-              href: ../financials/localizations/spain.md
-              items:
-                - name: Použití hotovostních slev na faktuře
-                  href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
-                - name: Možnosti cizí směnky
-                  href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
-                - name: Nerealizovaná DPH
-                  href: ../financials/localizations/emea-esp-conditional-sales-tax.md
-                - name: Opravná fakturace
-                  href: ../financials/localizations/tasks/emea-esp-credit-invoicing.md
-                - name: Účet faktury fiskálních dat
-                  href: ../financials/localizations/emea-esp-fiscal-data-invoice-account.md
-                - name: Přecenění skupiny dlouhodobého majetku
-                  href: ../financials/localizations/emea-esp-fixed-asset-group-revaluation.md
-                - name: DPH intrakomunitárního plnění
-                  href: ../financials/localizations/emea-esp-intra-community-vat.md
-                - name: Jednorázoví odběratelé
-                  href: ../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md
-                - name: Tisk šeků se španělským rozvržením
-                  href: ../financials/localizations/emea-esp-print-checks-with-spanish-layout.md
-                - name: Možnosti vlastní směnky
-                  href: ../financials/localizations/emea-esp-promissory-note-options.md
-                - name: Sestava 340
-                  href: ../financials/localizations/emea-esp-report-340.md
-                - name: Prodejní a nákupní cykly
-                  href: ../financials/localizations/emea-esp-sales-purchase-cycle.md
-                - name: Speciální záznamy a počáteční stavy
-                  href: ../financials/localizations/emea-esp-opening-sheets-spain.md
-            - name: Švédsko
-              href: ../financials/localizations/sweden.md
-              items:
-                - name: Export finančních informací pro auditory ve Švédsku
-                  href: ../financials/localizations/emea-swe-sie-standard-report.md
-                - name: Import formátů plateb
-                  href: ../financials/localizations/emea-swe-payment-formats-import.md
-                - name: Registrační pokladny
-                  href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
-            - name: Švýcarsko
-              href: ../financials/localizations/switzerland.md
-              items:
-                - name: Import plateb odběratelů v ESR
-                  href: ../financials/localizations/emea-che-esr-customer-payments-import.md
-            - name: Velká Británie
-              href: ../financials/localizations/united-kingdom.md
-              items:
-                - name: Schéma pro obor stavebnictví
-                  href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
-                - name: Vytvoření dobropisu pro slevu při vyrovnání
-                  href: ../financials/localizations/tasks/gb-00009-credit-note-settlement-discount.md
-                - name: 'Vytvoření nákupní objednávky obsahující položky, na které se vztahuje stornovací poplatek DPH'
-                  href: ../financials/localizations/tasks/purchase-order-reverse-charge-vat.md
-                - name: 'Vytvoření prodejní objednávky obsahující položky, na které se vztahuje stornovací poplatek DPH'
-                  href: ../financials/localizations/tasks/gb-00002-sales-order.md
-                - name: Nastavení skupin DPH položky pro stornovací poplatek DPH
-                  href: ../financials/localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
-                - name: "Nastavení skupin položek, pravidel a\_parametrů stornovacího poplatku DPH"
-                  href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-                - name: Nastavení skupin DPH pro stornovací poplatek DPH
-                  href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-        - name: Latinská Amerika
+        - name: Francie
+          href: ../financials/localizations/france.md
           items:
-            - name: Brazílie
-              href: ../financials/localizations/brazil.md
+            - name: Veřejný sektor
               items:
-                - name: Rozsah lokalizace
-                  href: ../financials/localizations/latam-bra-scope.md
-                - name: Fiskální knihy
-                  href: ../financials/localizations/latam-bra-fiscal-books.md
-                  items:
-                    - name: Konfigurace fiskálních knih
-                      href: ../financials/localizations/latam-bra-configure-fiscal-books.md
-                    - name: ICMS daňové fiskální dokumenty
-                      href: ../financials/localizations/latam-bra-icms-tax-fiscal-documents.md
-                    - name: Import fiskálních dokumentů
-                      href: ../financials/localizations/latam-bra-import-fiscal-documents.md
-                    - name: Export a import transakcí právnické osoby z konsolidace hlavní knihy
-                      href: ../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md
-                    - name: Import a ověření dokumentů NF-e XML a souborů DANFE
-                      href: ../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md
-                    - name: Zpracování elektronických platebních úhrad
-                      href: ../financials/localizations/latam-bra-process-electronic-payment-remittances.md
-                    - name: Fiskální dokumenty
-                      href: ../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md
-                    - name: Zástupný text u fiskálních dokumentů
-                      href: ../financials/localizations/latam-bra-fiscal-document-text-placeholders.md
-                    - name: Nákupní doplňkové fiskální dokumenty
-                      href: ../financials/localizations/latam-bra-purchase-complementary-fiscal-documents.md
-                    - name: Odkazované fiskální dokumenty
-                      href: ../financials/localizations/latam-bra-referenced-fiscal-documents.md
-                    - name: Prodejní doplňkové fiskální dokumenty
-                      href: ../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md
-                    - name: Elektronický fiskální dokument služby
-                      href: ../financials/localizations/latam-bra-service-electronic-fiscal-document.md
-                    - name: Deníky generované během procesu vracení elektronické platby
-                      href: ../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md
-                - name: Proces NF-e
-                  href: ../financials/localizations/latam-bra-nf-e-process.md
-                  items:
-                    - name: Automatické předávání fiskálních dokumentů NF-e
-                      href: ../financials/localizations/tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md
-                    - name: "Generování e-mailů pro schválený dokument NF-e a\_připojení souborů DANFE PDF a\_souborů NF-e XML k\_e-mailům"
-                      href: ../financials/localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
-                    - name: Certifikáty NF-e
-                      href: ../financials/localizations/latam-bra-nfe-certs.md
-                    - name: 'Nastavení, import a ověření dokumentů NF-e XML a DANFE'
-                      href: ../financials/localizations/latam-bra-set-up-import-nfe.md
-                    - name: Nastavení federálních parametrů NF-e
-                      href: ../financials/localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
-                    - name: Nastavení parametrů NF-e pro fiskální subjekt
-                      href: ../financials/localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
-                - name: Parametry pro právnické osoby
-                  href: ../financials/localizations/latam-bra-legal-entity-parameters.md
-                - name: Pořízení dlouhodobého majetku CIAP
-                  href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
-                - name: Vyřazení dlouhodobého majetku CIAP
-                  href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
-                - name: Daně
-                  href: ../financials/localizations/latam-bra-calculate-taxes.md
-                  items:
-                    - name: "Výpočet daně v\_nákupních nabídkách"
-                      href: ../financials/localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
-                    - name: Vytvoření vyměření daně – ICMS
-                      href: ../financials/localizations/tasks/br-10001-4-create-tax-assessment-icms.md
-                    - name: Vytvoření vyměření daně – daň IPI
-                      href: ../financials/localizations/tasks/br-10004-2-create-tax-assessment-ipi-tax.md
-                    - name: "Vytvoření vyměření daně – daně PIS a\_COFINS"
-                      href: ../financials/localizations/tasks/br-10006-4-create-tax-assessment-pis-cofins-tax.md
-                    - name: "Zadání a\_zaúčtování transakcí oprav daně"
-                      href: ../financials/localizations/tasks/br-10001-3-enter-post-tax-adjustment-transactions.md
-                    - name: "Zadání transakcí oprav daní PIS a\_COFINS"
-                      href: ../financials/localizations/tasks/br-10006-3-enter-pis-cofins-tax-adjustment-transactions.md
-                    - name: Daňové atributy fiskálního subjektu
-                      href: ../financials/localizations/tasks/br-00002-fiscal-establishment-tax-attributes.md
-                    - name: Vystavení fiskálních dokumentů daňového dobropisu ICMS
-                      href: ../financials/localizations/tasks/br-00072-issuing-icms-tax-credit-fiscal-document.md
-                    - name: Vystavení fiskálních dokumentů převodu daňového dobropisu ICMS
-                      href: ../financials/localizations/tasks/br-00071-issuing-icms-tax-credit-transfer-fiscal-document.md
-                    - name: Nastavení kódů oprav pro daň ICMS
-                      href: ../financials/localizations/tasks/br-10001-1-set-up-adjustment-codes-icms-tax.md
-                    - name: Nastavení kódů oprav pro daně ICMS ve fiskálních dokumentech
-                      href: ../financials/localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
-                    - name: Nastavení kódů oprav pro daně IPI
-                      href: ../financials/localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
-                    - name: "Nastavení kódů oprav pro daně PIS a\_COFINS"
-                      href: ../financials/localizations/tasks/br-10006-2-set-up-adjustment-codes-pis-cofins-taxes.md
-                    - name: "Nastavení tabulek PIS a\_COFINS"
-                      href: ../financials/localizations/tasks/br-10006-1-set-up-pis-cofins-tables.md
-                    - name: Vyměření daně pro daň ISS
-                      href: ../financials/localizations/tasks/br-10005-tax-assessment-iss-tax.md
-                    - name: Daňové atributy
-                      href: ../financials/localizations/latam-bra-tax-attributes.md
-                    - name: Platby daně
-                      href: ../financials/localizations/latam-bra-tax-payments.md
-                    - name: "Daň v\_prodejní nabídce"
-                      href: ../financials/localizations/tasks/br-00057-brazilian-taxes-sales-quotation.md
-                    - name: 'Srážkové daně '
-                      href: ../financials/localizations/tasks/br-00009-brazilian-withholding-taxes.md
-                    - name: Srážkové daně pro platby odběratelů
-                      href: ../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md
-                    - name: Srážkové daně pro platby dodavatelů
-                      href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
-                - name: Úkoly pro Brazílii
-                  items:
-                    - name: Nastavení parametrů právnické osoby
-                      href: ../financials/localizations/tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md
-                    - name: Nastavení zdrojového textu fiskálních dokumentů
-                      href: ../financials/localizations/tasks/br-00001-2-set-up-fiscal-document-source-text.md
-                    - name: "Přijetí fiskálních dokumentů dodavatele (dlouhodobý majetek – dlouhodobě vratné daně PIS a\_COFINS)"
-                      href: ../financials/localizations/tasks/br-00014-receiving-vendor-fiscal-document-fixed-assets-pis-cofins-long-term-recoverable.md
-                    - name: Přijetí fiskálních dokumentů dodavatele (produkty)
-                      href: ../financials/localizations/tasks/br-00024-receiving-vendor-fiscal-document-products.md
-                    - name: "Vytvoření a\_zaúčtování nákupního doplňkového fiskálního dokumentu"
-                      href: ../financials/localizations/tasks/br-00026-1-create-post-purchase-complementary-fiscal-document.md
-                    - name: Zrušení nákupního doplňkového fiskálního dokumentu
-                      href: ../financials/localizations/tasks/br-00026-2-cancel-purchase-complementary-fiscal-document.md
-                    - name: Vystavení fiskálních dokumentů pro dodavatele
-                      href: ../financials/localizations/tasks/br-00033-issuing-fiscal-document-non-taxable-vendors.md
-                    - name: Vystavení fiskálních dokumentů odběratele
-                      href: ../financials/localizations/tasks/br-00038-issuing-customer-fiscal-document.md
-                    - name: Dodací listy
-                      href: ../financials/localizations/tasks/br-00041-delivery-slip.md
-                    - name: Vedlejší náklady na volných fakturách
-                      href: ../financials/localizations/tasks/br-00050-miscellaneous-charge-free-text-invoice.md
-                    - name: "Vytvoření a\_zaúčtování prodejního doplňkového fiskálního dokumentu"
-                      href: ../financials/localizations/tasks/br-00052-1-create-post-sales-complementary-fiscal-documents.md
-                    - name: Zrušení prodejního doplňkového fiskálního dokumentu
-                      href: ../financials/localizations/tasks/br-00052-2-cancel-sales-complementary-fiscal-document.md
-                    - name: Elektronický fiskální dokument služby využívající textové soubory
-                      href: ../financials/localizations/tasks/br00059-service-electronic-fiscal-document-text-files.md
-                    - name: "Nastavení úroků a\_pokut pro platby dodavatelů"
-                      href: ../financials/localizations/tasks/br-00065-1-set-up-interest-fines-vendor-payments.md
-                    - name: "Výpočet úroků a\_pokut pro platby dodavatelů"
-                      href: ../financials/localizations/tasks/br-00065-2-calculate-interest-fines-vendor-payments.md
-                    - name: "Nastavení úroků a\_pokut pro platby odběratelů"
-                      href: ../financials/localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
-                    - name: "Výpočet úroků a\_pokut pro platby odběratelů"
-                      href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
-                    - name: Správa elektronických plateb pro platby dodavatelů
-                      href: ../financials/localizations/tasks/br-00067-electronic-payment-management-vendor-payments.md
-                    - name: Dluhopisy projektů
-                      href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
-                    - name: "Správa textů fiskálních dokumentů v\_dokumentech zásobování"
-                      href: ../financials/localizations/tasks/br-00080-manage-fiscal-document-texts-procurement-documents.md
-                    - name: Přijetí fiskálních dokumentů dodavatele (dlouhodobý majetek – dlouhodobě vratná daň ICMS)
-                      href: ../financials/localizations/tasks/br-00082-receiving-vendor-fiscal-document-fixed-assets-icms-long-term-recoverable.md
-                    - name: Vystavení fiskálních dokumentů odběratele (služby)
-                      href: ../financials/localizations/tasks/br-00084-issuing-customer-fiscal-documents-services.md
-                    - name: Vystavení fiskálních dokumentů odběratele (dlouhodobý majetek)
-                      href: ../financials/localizations/tasks/br-00085-issuing-customer-fiscal-documents-fixed-assets.md
-                    - name: Vystavení fiskálních dokumentů odběratele (projekt)
-                      href: ../financials/localizations/tasks/br-00086-issuing-customer-fiscal-documents-project.md
-                    - name: Vystavení fiskálních dokumentů odběratele (pro koncové uživatele)
-                      href: ../financials/localizations/tasks/br-00087-issuing-customer-fiscal-documents-end-user.md
-                    - name: Vystavení fiskálních dokumentů odběratele (pro odběratele SUFRAMA)
-                      href: ../financials/localizations/tasks/br-00088-issuing-customer-fiscal-documents-suframa-customers.md
-                    - name: Zrušení fiskálního dokumentu odběratele (projekt)
-                      href: ../financials/localizations/tasks/br-00092-cancel-customer-fiscal-document-project.md
-                    - name: Nefiskální operace
-                      href: ../financials/localizations/tasks/br-10016-non-fiscal-operations.md
-                    - name: Zadání transakce CIAP
-                      href: ../financials/localizations/tasks/br-10020-1-enter-ciap-transaction.md
-                    - name: Výpočet částky dobropisu CIAP
-                      href: ../financials/localizations/tasks/br-10020-2-calculate-ciap-credit-amount.md
-                    - name: "Zahrnutí dobropisu CIAP z\_předchozího období"
-                      href: ../financials/localizations/tasks/br-10020-3-include-ciap-credit-from-previous-period.md
-                    - name: "Daně PIS a\_COFINS z\_dlouhodobého majetku"
-                      href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
-            - name: Mexiko
-              href: ../financials/localizations/mexico.md
+                - name: Účetnictví ve veřejném sektoru
+                  href: ../financials/localizations/emea-fra-public-sector-accounting.md
+                - name: Závazky
+                  href: ../financials/localizations/emea-fra-commitments-public-sector.md
+                - name: Mandats de paiement
+                  href: ../financials/localizations/emea-fra-mandats-de-paiement.md
+                - name: "Zásobování a\_zdroje"
+                  href: ../financials/localizations/emea-fra-procurement-sourcing-public-sector.md
+                - name: Titres de recette
+                  href: ../financials/localizations/emea-fra-titres-de-recette-public-sector.md
+                - name: Blokování plateb faktur dodavatele
+                  href: ../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md
+            - name: "Schválení a\_zaúčtování vystavení cizí směnky"
+              href: ../financials/localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md
+            - name: Chronologické doklady faktur
+              href: ../financials/localizations/emea-fra-chronological-invoices-vouchers.md
+            - name: Vytvoření soubor standardního auditu pro Francii (FEC)
+              href: ../financials/localizations/emea-fra-fec-audit-file.md
+            - name: "Výpisy z\_účtu odběratele a\_dodavatele"
+              href: ../financials/localizations/tasks/fr-00002-customer-vendor-account-statements.md
+            - name: "Denní výpočet úroku pro prodlení a\_paušál ve faktuře a\_v\_upomínce"
+              href: ../financials/localizations/tasks/fr-00018-daily-interest.md
+            - name: Derogační odpisy
+              href: ../financials/localizations/emea-fra-derogatory-depreciation.md
+            - name: "Francouzské cizí směnky a\_vlastní směnky"
+              href: ../financials/localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
+            - name: Kódy NAF a čísla SIRET (Francie)
+              href: ../financials/localizations/emea-fra-naf-codes-siret-numbers.md
+            - name: "Nastavení kódů NAF a\_čísel SIRET"
+              href: ../financials/localizations/tasks/fr-00003-naf-codes-siret-numbers.md
+            - name: Pokuty za zpožděné platby zákazníka
+              href: ../financials/localizations/emea-fra-apply-penalty-customer-payment-past-due.md
+            - name: Zaúčtování deníku protestů cizích směnek
+              href: ../financials/localizations/tasks/fr-00004-post-protest-draw-bill-exchange-journal.md
+            - name: Zaúčtování deníku opětovného vystavení cizích směnek
+              href: ../financials/localizations/tasks/fr-00004-post-re-draw-bill-exchange-journal.md
+            - name: Tisk paušálního textu zobrazení na faktuře zákazníka
+              href: ../financials/localizations/emea-fra-print-lump-sum-recovery-text.md
+            - name: Odpis RB/SL
+              href: ../financials/localizations/emea-fra-rbsl-depreciation.md
+            - name: Nastavení metody platby
+              href: ../financials/localizations/tasks/fr-00004-setup-method-payment.md
+            - name: Aktualizace způsobu platby pro odběratele
+              href: ../financials/localizations/tasks/fr-00004-update-method-payment-customer.md
+            - name: Maloobchod
               items:
-                - name: Rozsah lokalizace
-                  href: ../financials/localizations/latam-mex-scope.md
-                - name: Sestava prohlášení o úpravě inflace
-                  href: ../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md
-                - name: Zrušení elektronické faktury
-                  href: ../financials/localizations/tasks/mx-00010-cancel-electronic-invoice.md
-                - name: Verze CFDI 3.3
-                  href: ../financials/localizations/latam-mex-cfdi-3-3.md
-                - name: "ID registrace odběratele a\_další informace"
-                  href: ../financials/localizations/tasks/mx-00007-customer-registration-ids-other-information.md
-                - name: Sestava prohlášení DIOT
-                  href: ../financials/localizations/latam-mex-diot-declaration-statement.md
-                - name: Elektronické faktury CFDI
-                  href: ../financials/localizations/tasks/mx-00010-e-invoicing-cfdi.md
-                - name: Elektronické faktury
-                  href: ../financials/localizations/latam-mex-CFDI-electronic-invoices.md
-                - name: Výpisy účtování elektronické knihy
-                  href: ../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md
-                - name: Zadání ID registrace daně pro mexické právnické osoby
-                  href: ../financials/localizations/tasks/mx-00010-enter-tax-registration-ids-mexican-legal-entities.md
-                - name: "Dotazy na elektronické faktury a\_jejich tisk"
-                  href: ../financials/localizations/tasks/mx-00010-inquire-print-electronic-invoice.md
-                - name: Sestava prohlášení ISR
-                  href: ../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md
-                - name: Zaúčtování volné faktury
-                  href: ../financials/localizations/tasks/mx-00010-post-free-text-invoice.md
-                - name: Vytvoření mexického účetního výkazu elektronické hlavní knihy verze 1.1
-                  href: ../financials/localizations/tasks/mx-00020-electronic-ledger.md
-                - name: Nastavení parametrů pro elektronickou fakturu
-                  href: ../financials/localizations/tasks/mx-00010-set-parameters-electronic-invoice.md
-                - name: Nastavení kódů DPH pro Mexiko
-                  href: ../financials/localizations/tasks/mx-00006-sales-tax-code.md
-                - name: "Nastavení účtové osnovy pro právnickou osobu v\_Mexiku"
-                  href: ../financials/localizations/tasks/mx-00020-chart-accounts-legal-entity-mexico.md
-                - name: Zadání registračního ID RFC pro mexické bankovní účty
-                  href: ../financials/localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
-                - name: ID registrace dodavatele
-                  href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
+                - name: Registrační pokladny
+                  href: ../retail/localizations/emea-fra-cash-registers.md
+                - name: Pokyny k nasazení registračních pokladen
+                  href: ../retail/localizations/emea-fra-deployment.md
+        - name: Německo
+          href: ../financials/localizations/germany.md
+          items:
+            - name: Další odpisy pořízení
+              href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
+            - name: Soubor auditu
+              href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
+              items:
+                - name: Přizpůsobení konfigurace souboru auditu
+                  href: ../financials/localizations/tasks/customize-german-audit-file-configuration.md
+                - name: Vygenerování souboru auditu
+                  href: ../financials/localizations/tasks/german-audit-file.md
+                - name: Import konfigurace souboru auditu
+                  href: ../financials/localizations/tasks/import-german-audit-file-configuration.md
+            - name: "Opravy odpisů u\_dodatečných pořízení za druhý rok"
+              href: ../financials/localizations/tasks/de-00002-depreciation.md
+            - name: "Elektronický přenos přiznání k\_DPH (ELSTER)"
+              href: ../financials/localizations/tasks/de-00003-electronic-transmission-elster.md
+            - name: Sestava seznamu deníku
+              href: ../financials/localizations/emea-deu-journal-list-report.md
+            - name: Nastavit elektronická daňová přiznání
+              href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
+        - name: Maďarsko
+          href: ../financials/localizations/hungary.md
+          items:
+            - name: Výpočet směnného kurzu
+              href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
+            - name: Metody odpisu dlouhodobého majetku
+              href: ../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md
+            - name: Dlouhodobý majetek s nízkými náklady
+              href: ../financials/localizations/emea-hun-low-cost-fixed-assets.md
+            - name: Přesun dlouhodobého majetku do zásob
+              href: ../financials/localizations/emea-hun-fixed-asset-to-inventory.md
+            - name: Doklady o refundaci daně
+              href: ../financials/localizations/emea-hun-tax-reimbursement-docs.md
+            - name: Roční uzávěrka
+              href: ../financials/localizations/emea-cze-hun-year-end.md
+        - name: Island
+          href: ../financials/localizations/iceland.md
+          items:
+            - name: "Vytvoření účtu dodavatele a\_připojení kategorie prohlášení k\_faktuře"
+              href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
+            - name: "Nastavení prohlášení k\_faktuře pro dodavatele"
+              href: ../financials/localizations/tasks/set-up-invoice-declaration-vendors.md
+            - name: Nastavení povinných platebních referencí
+              href: ../financials/localizations/tasks/set-up-mandatory-payment-references.md
+            - name: "Aktualizace prohlášení k\_faktuře dodavatele a\_vygenerování sestavy"
+              href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
+        - name: Indie
+          href: ../financials/localizations/india.md
+          items:
+            - name: Dlouhodobý majetek
+              href: ../financials/localizations/apac-ind-fixed-assets.md
+              items:
+                - name: Připojení kalendáře podle dní ke knize dlouhodobého majetku
+                  href: ../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md
+                - name: Vypočítat posuv odpisů
+                  href: ../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md
+                - name: Vytvoření skupiny skladových modelů pro kapitálové položky
+                  href: ../financials/localizations/tasks/apac-ind-create-inventory-model-group.md
+                - name: Vytvoření a zaúčtování odpisů
+                  href: ../financials/localizations/apac-ind-calculate-post-depreciation.md
+                - name: Definování typu směny a průmyslu pro knihy a připojení k dlouhodobému majetku
+                  href: ../financials/localizations/tasks/apac-ind-books-shift-industry-types.md
+                - name: Stornování transakcí dlouhodobého majetku
+                  href: ../financials/localizations/apac-ind-reverse-fixed-assets-transactions.md
+                - name: Výpočet posuvu odpisů
+                  href: ../financials/localizations/apac-ind-calculation-shift-depreciation.md
+                - name: Nastavení fiskálního kalendáře podle dne
+                  href: ../financials/localizations/tasks/apac-ind-day-based-calendar.md
+                - name: Nastavení parametrů pro výpočet odpisů
+                  href: ../financials/localizations/tasks/apac-ind-set-up-depreciation.md
+                - name: Nastavení odpisu skupiny majetku pro knihy odpisů
+                  href: ../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md
+                - name: Převod kapitálových položek do dlouhodobého majetku
+                  href: ../financials/localizations/tasks/apac-ind-transfer-capital-items.md
+            - name: Indická daň GST
+              href: ../financials/localizations/apac-ind-gst.md
+              items:
+                - name: Referenční skupiny indické daně GST
+                  href: ../financials/localizations/apac-ind-gst-reference-groups.md
+                - name: GST integrace pro registrační pokladny
+                  href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
+            - name: Pokyny k nasazení registračních pokladen
+              href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
+            - name: Přehled daňového modulu
+              href: ../financials/general-ledger/tax-engine.md
+              items:
+                - name: Integrace daňového modulu
+                  href: ../financials/general-ledger/tax-engine-integration.md
+                - name: Rozšíření daňového modulu
+                  href: ../financials/general-ledger/extend-tax-engine-configurations.md
+            - name: Často kladené dotazy týkající se prahových hodnot daní
+              href: ../financials/localizations/apac-ind-tax-thresholds.md
+        - name: Itálie
+          href: ../financials/localizations/italy.md
+          items:
+            - name: Podrobnosti výpisů DPH
+              href: ../financials/localizations/emea-ita-vat-statements-details.md
+            - name: Sestava černé listiny
+              href: ../financials/localizations/emea-ita-black-list-report.md
+            - name: Datum kompetence
+              href: ../financials/localizations/emea-ita-competence-date.md
+            - name: Odpisování dlouhodobého majetku
+              href: ../financials/localizations/emea-ita-depreciation-of-fixed-assets.md
+            - name: Modello 770
+              href: ../financials/localizations/emea-ita-modello770.md
+            - name: Ověření data dodacího listu na fakturách
+              href: ../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md
+            - name: Zaúčtování a tisk dodacího listu s podrobnostmi dopravy
+              href: ../financials/localizations/emea-ita-packing-slip.md
+            - name: Knihy DPH
+              href: ../financials/localizations/emea-ita-fiscal-books.md
+            - name: Rozdělená platba za faktury vydané pro veřejnou správu
+              href: ../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md
+            - name: Srážková daň
+              href: ../financials/localizations/emea-ita-withholding-tax.md
+        - name: Japonsko
+          href: ../financials/localizations/japan.md
+          items:
+            - name: "Pořízení dlouhodobého majetku a\_nárokování subvencí státního grantu"
+              href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
+            - name: "Pořízení dlouhodobého majetku s\_povinností vyřazení majetku"
+              href: ../financials/localizations/tasks/acquire-fixed-asset-asset-retirement-obligations.md
+            - name: Úprava odhadu povinnosti vyřazení majetku
+              href: ../financials/localizations/tasks/adjustment-asset-retirement-obligation-estimate.md
+            - name: "Přidělení zůstatkové hodnoty sdíleného majetku a\_nehmotného jmění k\_penězotvorným jednotkám"
+              href: ../financials/localizations/tasks/allocate-carrying-amount.md
+            - name: Pravidla přidělení
+              href: ../financials/localizations/apac-jpn-allocation-rules-fixed-assets.md
+            - name: Bankovní platby pokryté dodavateli
+              href: ../financials/localizations/apac-jpn-bank-payment-fees-vendors.md
+            - name: "Změna metody odpisování pro knihu v\_průběhu životnosti majetku"
+              href: ../financials/localizations/tasks/change-depreciation-method-during-asset-life-book.md
+            - name: "Změna metody odpisování pro jeden majetek v\_průběhu životnosti majetku"
+              href: ../financials/localizations/tasks/change-depreciation-method-during-asset-life-one-asset.md
+            - name: "Konfigurace parametrů zrychleného odpisování a\_účetních profilů"
+              href: ../financials/localizations/tasks/accelerated-depreciation-posting-profiles.md
+            - name: "Konfigurace parametrů a\_nastavení souhrnné faktury pro závazky"
+              href: ../financials/localizations/tasks/consolidated-invoice-parameters-setup-accounts-payable.md
+            - name: "Konfigurace odpisového plánu a\_účetního profilu pro další odpisy"
+              href: ../financials/localizations/tasks/configure-depreciation-profile-posting.md
+            - name: "Konfigurace hlavních účtů pro zaúčtování povinnosti vyřazení majetku a\_sazeb slev na trhu"
+              href: ../financials/localizations/tasks/configure-main-accounts-asset-retirement.md
+            - name: Souhrnné faktury
+              href: ../financials/localizations/apac-jpn-consolidate-invoices.md
+            - name: "Vytvoření dlouhodobého majetku s\_dodatečnými odpisy"
+              href: ../financials/localizations/tasks/create-fixed-asset-additional-depreciation.md
+            - name: Vytvoření dlouhodobého majetku se zvláštním odpisovým plánem
+              href: ../financials/localizations/tasks/create-fixed-asset-special-depreciation-profile.md
+            - name: "Vytvoření dokumentu zrychleného odpisování a\_zadání dat o\_využití"
+              href: ../financials/localizations/tasks/create-accelerated-depreciation-document-enter-usage-data.md
+            - name: "Vytvoření plánu zrychleného odpisování a\_jeho přiřazení knize"
+              href: ../financials/localizations/tasks/create-accelerated-depreciation-profile-assign-it-book.md
+            - name: "Vytvoření a\_přiřazení dokumentu položky snížení hodnoty pro subvence státního grantu"
+              href: ../financials/localizations/tasks/create-assign-reduction-document.md
+            - name: "Vytvoření a\_přiřazení skupiny vybavení"
+              href: ../financials/localizations/tasks/create-assign-equipment-group.md
+            - name: "Vytvoření a\_potvrzení souhrnné faktury odběratele"
+              href: ../financials/localizations/tasks/create-confirm-customer-consolidated-invoice.md
+            - name: "Vytvoření a\_potvrzení testu uznání"
+              href: ../financials/localizations/tasks/create-confirm-recognition-test.md
+            - name: "Vytvoření a\_potvrzení souhrnné faktury dodavatele"
+              href: ../financials/localizations/tasks/create-confirm-vendor-consolidated-invoice.md
+            - name: "Vytvoření skupiny jednotky CGU a\_penězotvorných jednotek"
+              href: ../financials/localizations/tasks/create-cgu-group-cash-generating-units.md
+            - name: "Vytvoření majetku s\_paušálními odpisy s\_použitím metody rovnoměrného dělení"
+              href: ../financials/localizations/tasks/create-lump-sum-depreciation-assets-equally-divided-method.md
+            - name: "Definování období nečinnosti majetku a\_ověření procesu odpisování"
+              href: ../financials/localizations/tasks/define-asset-idle-period-validate-depreciation-process.md
+            - name: "Odepsání a\_časové rozlišení úrokových výdajů pro povinnosti vyřazení majetku"
+              href: ../financials/localizations/tasks/depreciate-accrue-interest-expense.md
+            - name: Odepsání dlouhodobého majetku se zaúčtovanou položkou snížení hodnoty
+              href: ../financials/localizations/tasks/depreciation-fixed-assets-reduction-entry-posted.md
+            - name: Odpis – FAQ
+              href: ../financials/localizations/apac-jpn-fixed-asset-depreciation.md
+            - name: "Vyřazení dlouhodobého majetku s\_položkou snížení hodnoty"
+              href: ../financials/localizations/tasks/dispose-fixed-asset-reduction-entry.md
+            - name: Povolení formátu souboru plateb JBA
+              href: ../financials/localizations/tasks/jba-payment-file-format.md
+            - name: "Zadání plánu odpisové sazby a\_přiřazení k\_odpisovému plánu"
+              href: ../financials/localizations/tasks/enter-depreciation-rate-schedule.md
+            - name: Rovnoměrně rozdělená metoda odpisů
+              href: ../financials/localizations/apac-jpn-equally-divided-depreciation-method.md
+            - name: Formulář 26 pro přiznání odepisovatelné daně
+              href: ../financials/localizations/tasks/jp-00027-form-26-depreciable-tax-declaration.md
+            - name: Vygenerování souboru plateb EFT ve formátu JBA
+              href: ../financials/localizations/tasks/eft-payment-file-jba-format.md
+            - name: "Vygenerování a\_zaúčtování platebního poplatku"
+              href: ../financials/localizations/tasks/post-payment-fee.md
+            - name: Vygenerování sestavy spotřební daně
+              href: ../financials/localizations/tasks/japan-consumption-tax-report.md
+            - name: Účtování se snížením hodnoty v CGU
+              href: ../financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit.md
+            - name: Účtování se snížením hodnoty
+              href: ../financials/localizations/apac-jpn-impairment-accounting-fixed-assets.md
+            - name: Import platby odběratele ve formátu souboru JBA
+              href: ../financials/localizations/tasks/import-customer-payment-jba-file-format.md
+            - name: Import PSČ
+              href: ../financials/localizations/apac-jpn-import-postal-codes.md
+            - name: Zadávání deníku ve formátu T účtu
+              href: ../financials/localizations/tasks/jp-00005-input-journal-t-account-form-japan.md
+            - name: "Dotazy na transakce související s\_povinností vyřazení majetku"
+              href: ../financials/localizations/tasks/inquiries-asset-retirement-obligation.md
+            - name: Dotazy na odečitatelné výdaje
+              href: ../financials/localizations/tasks/inquiry-deductible-expenses.md
+            - name: "Dotazy na platební poplatky v\_deníku"
+              href: ../financials/localizations/tasks/inquiries-payment-fee-journal.md
+            - name: Udržování souborů hlavních dat dlouhodobého majetku pro odečitatelné výdaje
+              href: ../financials/localizations/tasks/maintain-fixed-asset-master-data-files-deductible-expenses.md
+            - name: "Udržování ukazatelů snížení hodnoty u\_jednotlivých položek majetku"
+              href: ../financials/localizations/tasks/maintain-impairment-indicators-individual-assets.md
+            - name: Zaplacení dodavateli formou směnky
+              href: ../financials/localizations/apac-jpn-endorse-bill-of-exchange.md
+            - name: Uhrazení dodavatelské transakce formou zákazníkovy směnky
+              href: ../financials/localizations/tasks/pay-vendor-transaction.md
+            - name: Pravidelné vyrovnání příliš velkých nebo příliš malých odpisů
+              href: ../financials/localizations/tasks/periodic-settlement-over-under-depreciation.md
+            - name: Výpočet progresivní srážkové daně
+              href: ../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md
+            - name: Návrh dodatečného odpisování
+              href: ../financials/localizations/tasks/propose-additional-depreciation.md
+            - name: "Návrh a\_zaúčtování zrychleného odpisování"
+              href: ../financials/localizations/tasks/propose-post-accelerated-depreciation.md
+            - name: "Návrh a\_zaúčtování částky snížení hodnoty v\_dávce"
+              href: ../financials/localizations/tasks/propose-post-impairment-amount-batch.md
+            - name: "Návrh a\_zaúčtování částky snížení hodnoty s\_použitím deníku dlouhodobého majetku"
+              href: ../financials/localizations/tasks/propose-post-impairment-amount-fixed-asset-journal.md
+            - name: "Návrh a\_zaúčtování částky snížení hodnoty pro penězotvornou jednotku"
+              href: ../financials/localizations/tasks/propose-post-impairment-amount-cash-generating-unit.md
+            - name: Návrh zvláštního odpisování
+              href: ../financials/localizations/tasks/propose-special-depreciation.md
+            - name: "Opětovné otevření a\_úprava souhrnné faktury odběratele"
+              href: ../financials/localizations/tasks/reopen-edit-customer-consolidated-invoice.md
+            - name: "Opětovné otevření a\_úprava souhrnné faktury dodavatele"
+              href: ../financials/localizations/tasks/reopen-edit-vendor-consolidated-invoice.md
+            - name: Stornování indosované cizí směnky
+              href: ../financials/localizations/tasks/reverse-endorsed-bill-exchange.md
+            - name: "Spuštění testu uznání a\_výpočet částky snížení hodnoty pro jednotlivé položky majetku"
+              href: ../financials/localizations/tasks/run-recognition-test-calculate.md
+            - name: "Nastavení odběratele a\_prodejní objednávky jako cíle souhrnné faktury"
+              href: ../financials/localizations/tasks/set-up-customer-sales-order-target-consolidated-invoice.md
+            - name: Nastavit formát ARO
+              href: ../financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets.md
+            - name: "Nastavení dokumentů povinností vyřazení majetku a\_zadání částky povinnosti vyřazení majetku u\_dlouhodobého majetku"
+              href: ../financials/localizations/tasks/set-up-asset-retirement-obligation.md
+            - name: Nastavení souhrnných faktur
+              href: ../financials/localizations/tasks/set-up-consolidated-invoices.md
+            - name: "Nastavení běžných parametrů a\_účetního profilu pro účtování se snížením hodnoty"
+              href: ../financials/localizations/tasks/impairment-accounting.md
+            - name: Nastavení sestavy japonské spotřební daně
+              href: ../financials/localizations/tasks/setup-japan-consumption-tax-report.md
+            - name: Nastavení platby pro Japonsko formou cizí směnky odběratele
+              href: ../financials/localizations/tasks/setup-japan-payment-endorsing-customer-bill-exchange.md
+            - name: Nastavení hlavních dat pro zahrnutí odečitatelných výdajů pro více účtovacích vrstev
+              href: ../financials/localizations/tasks/set-up-master-data-inclusion.md
+            - name: Nastavení platebního poplatku pro Japonsko
+              href: ../financials/localizations/tasks/setup-payment-fee-japan.md
+            - name: Nastavení záznamů redukce
+              href: ../financials/localizations/apac-jpn-reduction-entry-fixed-assets.md
+            - name: "Nastavení hlavních dat dodavatele a\_nákupní objednávky jako cíle pro souhrnnou fakturu"
+              href: ../financials/localizations/tasks/vendor-master-po.md
+            - name: Vyrovnání indosované cizí směnky
+              href: ../financials/localizations/tasks/settle-endorsed-bill-exchange.md
+            - name: "Vyrovnání souhrnných faktur odběratelů s\_použitím deníku plateb"
+              href: ../financials/localizations/tasks/settle-customer-consolidated-invoices-payment-journal.md
+            - name: "Vyrovnání souhrnných faktur odběratelů s\_použitím vyrovnávacích transakcí"
+              href: ../financials/localizations/tasks/settle-customer-consolidated-invoices-settle-transactions.md
+            - name: "Vyrovnání souhrnných faktur dodavatelů s\_použitím deníku plateb"
+              href: ../financials/localizations/tasks/settle-vendor-consolidated-invoices-payment-journal.md
+            - name: "Vyrovnání souhrnných faktur dodavatelů s\_použitím vyrovnávacích transakcí"
+              href: ../financials/localizations/tasks/settle-vendor-consolidated-invoices-settle-transactions.md
+            - name: Použití seznamu složení pro dlouhodobý majetek
+              href: ../financials/localizations/tasks/use-assemble-list-fixed-asset.md
+            - name: Použití seznamu rozložení pro dlouhodobý majetek
+              href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md
+        - name: Lotyšsko
+          href: ../financials/localizations/latvia.md
+          items:
+            - name: Účtování dlouhodobého majetku
+              href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
+            - name: Sledování změn umístění dlouhodobého majetku
+              href: ../financials/localizations/emea-lva-fixed-assets-location-fields-change.md
+            - name: Číslování faktur a dodacích listů
+              href: ../financials/localizations/emea-invoices-packing-slips-numbering.md
+            - name: Sestava daně z přírodních zdrojů
+              href: ../financials/localizations/emea-lva-tax-natural-resources.md
+            - name: Podrobnosti výpisu DPH
+              href: ../financials/localizations/emea-lva-vat-statement-details.md
+        - name: Litva
+          href: ../financials/localizations/lithuania.md
+          items:
+            - name: Výkaz dlouhodobého majetku (sestava)
+              href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
+            - name: Vygenerování dokumentu převodu dlouhodobého majetku mezi sklady
+              href: ../financials/localizations/tasks/lt-00003-fixed-asset-transfer.md
+            - name: Číslování faktur a dodacích listů
+              href: ../financials/localizations/emea-invoices-packing-slips-numbering.md
+            - name: Podrobnosti výpisu DPH
+              href: ../financials/localizations/emea-ltu-vat-statement-details.md
+        - name: Malajsie
+          href: ../financials/localizations/malaysia.md
+          items:
+            - name: Vygenerování dobropisu odběratele pro prodeje projektu
+              href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
+            - name: Vygenerování dluhopisu odběratele pro prodeje projektu
+              href: ../financials/localizations/tasks/my-00011-02-customer-debit-note-project-sales-2016-11.md
+            - name: Daň ze zboží a služeb (GST)
+              href: ../financials/localizations/apac-mys-gst.md
+            - name: Daň GST - Generování souborů GAF v požadovaném formátu
+              href: ../financials/localizations/tasks/my-00010-gst-gaf-files-required-format.md
+            - name: "Správa debetu a\_kreditu odběratele pro daň GST"
+              href: ../financials/localizations/tasks/my-00003-manage-customer-debit-note-credit-note-gst.md
+            - name: "Správa debetu a\_kreditu dodavatele pro daň GST"
+              href: ../financials/localizations/tasks/my-00004-manage-vendor-debit-note-credit-note-gst.md
+            - name: Tisk faktury odběratele daně GST s klauzulí úlevy
+              href: ../financials/localizations/tasks/my-00006-02-print-gst-customer-invoices-relief-clause.md
+            - name: Tisk daňové faktury GST
+              href: ../financials/localizations/tasks/my-00005-print-gst-tax-invoices.md
+            - name: Faktury vystavené odběratelem
+              href: ../financials/localizations/tasks/my-00007-self-billed-invoices.md
+            - name: Nastavení klauzulí úlevy daně GST
+              href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
+        - name: Mexiko
+          href: ../financials/localizations/mexico.md
+          items:
+            - name: Rozsah lokalizace
+              href: ../financials/localizations/latam-mex-scope.md
+            - name: Sestava prohlášení o úpravě inflace
+              href: ../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md
+            - name: Zrušení elektronické faktury
+              href: ../financials/localizations/tasks/mx-00010-cancel-electronic-invoice.md
+            - name: Verze CFDI 3.3
+              href: ../financials/localizations/latam-mex-cfdi-3-3.md
+            - name: "ID registrace odběratele a\_další informace"
+              href: ../financials/localizations/tasks/mx-00007-customer-registration-ids-other-information.md
+            - name: Sestava prohlášení DIOT
+              href: ../financials/localizations/latam-mex-diot-declaration-statement.md
+            - name: Elektronické faktury CFDI
+              href: ../financials/localizations/tasks/mx-00010-e-invoicing-cfdi.md
+            - name: Elektronické faktury
+              href: ../financials/localizations/latam-mex-CFDI-electronic-invoices.md
+            - name: Výpisy účtování elektronické knihy
+              href: ../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md
+            - name: Zadání ID registrace daně pro mexické právnické osoby
+              href: ../financials/localizations/tasks/mx-00010-enter-tax-registration-ids-mexican-legal-entities.md
+            - name: "Dotazy na elektronické faktury a\_jejich tisk"
+              href: ../financials/localizations/tasks/mx-00010-inquire-print-electronic-invoice.md
+            - name: Sestava prohlášení ISR
+              href: ../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md
+            - name: Zaúčtování volné faktury
+              href: ../financials/localizations/tasks/mx-00010-post-free-text-invoice.md
+            - name: Vytvoření mexického účetního výkazu elektronické hlavní knihy verze 1.1
+              href: ../financials/localizations/tasks/mx-00020-electronic-ledger.md
+            - name: Nastavení parametrů pro elektronickou fakturu
+              href: ../financials/localizations/tasks/mx-00010-set-parameters-electronic-invoice.md
+            - name: Nastavení kódů DPH pro Mexiko
+              href: ../financials/localizations/tasks/mx-00006-sales-tax-code.md
+            - name: "Nastavení účtové osnovy pro právnickou osobu v\_Mexiku"
+              href: ../financials/localizations/tasks/mx-00020-chart-accounts-legal-entity-mexico.md
+            - name: Zadání registračního ID RFC pro mexické bankovní účty
+              href: ../financials/localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
+            - name: ID registrace dodavatele
+              href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
+        - name: Nizozemsko
+          href: ../financials/localizations/netherlands.md
+          items:
+            - name: Elektronické daňové přiznání (EVAT)
+              href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
+            - name: Integrace Semansys XBRL
+              href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
+        - name: Norsko
+          href: ../financials/localizations/norway.md
+          items:
+            - name: "Formáty plateb odběratelů a\_dodavatelů"
+              href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
+            - name: Platba odběratele na základě ID platby
+              href: ../financials/localizations/tasks/no-00002-customer-payment-based-payment-id.md
+            - name: Formát importu Nets
+              href: ../financials/localizations/emea-nor-nets-import-format.md
+            - name: Výkaz DPH
+              href: ../financials/localizations/emea-nor-sales-tax-payment-report.md
+            - name: Registrační pokladny
+              href: ../retail/localizations/emea-nor-cash-registers.md?toc=/fin-and-ops/toc.json
+            - name: Pokyny k nasazení registračních pokladen
+              href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
+        - name: Polsko
+          href: ../financials/localizations/poland.md
+          items:
+            - name: Výpočet slev řádku z jednotkové ceny
+              href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
+            - name: Poznámky k opravě
+              href: ../financials/localizations/emea-pol-correction-notes.md
+            - name: Duplikování číslování prodejních faktur
+              href: ../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md
+            - name: Odpisy dlouhodobého majetku
+              href: ../financials/localizations/emea-pol-fixed-assets-depreciation.md
+            - name: Rozšíření funkce disponibility investičního majetku
+              href: ../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
+            - name: Vratný obal
+              href: ../financials/localizations/emea-pol-returnable-packages.md
+            - name: Sestavy DPH
+              href: ../financials/localizations/emea-pol-sales-tax-reports.md
+            - name: Soubor standardního auditu
+              href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
+            - name: Úrok daně a volný úrok
+              href: ../financials/localizations/emea-pol-interest-calculation.md
+            - name: Výkaz obratu
+              href: ../financials/localizations/emea-pol-turnover-balances-statement.md
         - name: Saúdská Arábie
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2183,6 +2121,82 @@
               href: ../financials/localizations/apac-sau-sales-tax.md
             - name: Vykazování zakátu pro Saúdskou Arábii
               href: ../financials/localizations/emea-sau-zakat-reporting.md
+        - name: Singapur
+          href: ../financials/localizations/singapore.md
+          items:
+            - name: Generovat sestavu GST-05
+              href: ../financials/localizations/apac-sgp-generate-gst-05-report.md
+        - name: Španělsko
+          href: ../financials/localizations/spain.md
+          items:
+            - name: Použití platebních slev na faktuře
+              href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
+            - name: Možnosti cizí směnky
+              href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
+            - name: Nerealizovaná DPH
+              href: ../financials/localizations/emea-esp-conditional-sales-tax.md
+            - name: Opravná fakturace
+              href: ../financials/localizations/tasks/emea-esp-credit-invoicing.md
+            - name: Účet faktury fiskálních dat
+              href: ../financials/localizations/emea-esp-fiscal-data-invoice-account.md
+            - name: Přecenění skupiny dlouhodobého majetku
+              href: ../financials/localizations/emea-esp-fixed-asset-group-revaluation.md
+            - name: DPH intrakomunitárního plnění
+              href: ../financials/localizations/emea-esp-intra-community-vat.md
+            - name: Jednorázoví odběratelé
+              href: ../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md
+            - name: Tisk šeků se španělským rozvržením
+              href: ../financials/localizations/emea-esp-print-checks-with-spanish-layout.md
+            - name: Možnosti vlastní směnky
+              href: ../financials/localizations/emea-esp-promissory-note-options.md
+            - name: Sestava 340
+              href: ../financials/localizations/emea-esp-report-340.md
+            - name: Prodejní a nákupní cykly
+              href: ../financials/localizations/emea-esp-sales-purchase-cycle.md
+            - name: Speciální záznamy a počáteční stavy
+              href: ../financials/localizations/emea-esp-opening-sheets-spain.md
+        - name: Švédsko
+          href: ../financials/localizations/sweden.md
+          items:
+            - name: Export finančních informací pro auditory ve Švédsku
+              href: ../financials/localizations/emea-swe-sie-standard-report.md
+            - name: Import formátů plateb
+              href: ../financials/localizations/emea-swe-payment-formats-import.md
+            - name: Registrační pokladny
+              href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
+        - name: Švýcarsko
+          href: ../financials/localizations/switzerland.md
+          items:
+            - name: Import plateb odběratelů v ESR
+              href: ../financials/localizations/emea-che-esr-customer-payments-import.md
+        - name: Thajsko
+          href: ../financials/localizations/thailand.md
+          items:
+            - name: Sestavy karet zásob
+              href: ../financials/localizations/apac-tha-stock-card-reports.md
+            - name: Nahrazení nebo úprava daňové faktury
+              href: ../financials/localizations/apac-tha-substitution-and-adjustment-invoices.md
+            - name: Neuplatněná DPH
+              href: ../financials/localizations/apac-tha-unrealized-vat.md
+            - name: Srážková daň
+              href: ../financials/localizations/apac-tha-withholding-tax.md
+        - name: Velká Británie
+          href: ../financials/localizations/united-kingdom.md
+          items:
+            - name: Schéma pro obor stavebnictví
+              href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
+            - name: Vytvoření dobropisu pro slevu při vyrovnání
+              href: ../financials/localizations/tasks/gb-00009-credit-note-settlement-discount.md
+            - name: 'Vytvoření nákupní objednávky obsahující položky, na které se vztahuje stornovací poplatek DPH'
+              href: ../financials/localizations/tasks/purchase-order-reverse-charge-vat.md
+            - name: 'Vytvoření prodejní objednávky obsahující položky, na které se vztahuje stornovací poplatek DPH'
+              href: ../financials/localizations/tasks/gb-00002-sales-order.md
+            - name: Nastavení skupin DPH položky pro stornovací poplatek DPH
+              href: ../financials/localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
+            - name: "Nastavení skupin položek, pravidel a\_parametrů stornovacího poplatku DPH"
+              href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
+            - name: Nastavení skupin DPH pro stornovací poplatek DPH
+              href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
         - name: Spojené státy
           href: ../financials/localizations/united-states.md
           items:
@@ -2195,26 +2209,68 @@
       items:
         - name: Vytvoření strategie lidských zdrojů
           items:
+            - name: Vytvořit cíle
+              href: hr/tasks/create-goal.md
             - name: 'Uspořádání zaměstnanců podle oddělení, prací a pozic'
               href: ../talent/departments-jobs-positions.md
             - name: Nastavení komponent práce
               href: ../talent/create-job.md
+            - name: Definování nových oddělení
+              href: hr/tasks/define-new-departments.md
+            - name: Definování nových prací
+              href: hr/tasks/define-new-jobs.md
             - name: Vytvoření oddělení a jeho přidružení k hierarchii oddělení
               href: ../talent/create-department-add-department-hierarchy.md
+            - name: "Vytvoření kalendářů a\_vygenerování pracovní doby"
+              href: hr/tasks/create-calendar-working-times.md
             - name: Nastavení parametrů lidských zdrojů mezi právnickými osobami
               href: ../talent/set-up-hr-parameters-across-legal-entities.md
             - name: Nastavení parametrů lidských zdrojů pro konkrétní společnost
               href: ../talent/set-up-company-specific-hr-parameters.md
             - name: Často kladené dotazy k akcím personálu
               href: ../talent/personnel-actions-faq.md
-            - name: Správa informací o zaměstnanci pomocí workflowu
+            - name: Správa informací o zaměstnanci pomocí workflow
               href: ../talent/workflow-manage-employee-information.md
+            - name: Úprava vztahů podřízenosti pro pozice
+              href: hr/tasks/modify-reporting-relationships-position.md
+            - name: Schválení záznamů doručených přihlášek
+              href: hr/tasks/approve-application-inbox-records.md
+            - name: "Zadávání informací o\_pracovnících"
+              href: hr/tasks/enter-worker-information.md
+            - name: Zapůjčení položek pracovníkům
+              href: hr/tasks/loan-item-worker.md
+            - name: Vytváření položek výpůjček
+              href: hr/tasks/create-loan-items.md
+            - name: Správa položek zapůjčených pracovníkům
+              href: ../talent/loan-items.md
+            - name: Vypracování plánu kariérního postupu
+              href: hr/tasks/develop-succession-plan.md
+            - name: Zadávání časových rozvrhů projektů
+              href: hr/tasks/enter-project-timesheets.md
+            - name: Správa šablon e-mailů
+              href: hr/tasks/manage-email-templates.md
+            - name: Správa pracovního volna
+              href: hr/tasks/manage-leave-absence.md
         - name: Nábor
           items:
             - name: Řízení náborových procesů
               href: hr/manage-recruiting-process.md
             - name: Projekty hromadného zařazení
               href: hr/mass-hire-projects.md
+            - name: Vytvoření projektů hromadného zařazení
+              href: hr/tasks/create-mass-hire-project.md
+            - name: "Ruční zadávání dat o\_přihlášce a\_uchazeči"
+              href: hr/tasks/enter-applicant-application-data-manually.md
+            - name: Vytvoření a otevření požadavků na práci
+              href: hr/tasks/develop-open-job-requisition.md
+            - name: Nastavení pozic
+              href: hr/tasks/set-up-positions.md
+            - name: Přijetí kandidátů prostřednictvím náboru
+              href: hr/tasks/hire-candidate-through-recruiting.md
+            - name: Najmutí existujícího zaměstnance prostřednictvím náboru
+              href: hr/tasks/hire-existing-employee-through-recruiting.md
+            - name: "Identifikování a\_nasazení nástrojů pro výběr kandidáta"
+              href: hr/tasks/identify-deploy-candidate-selection-tools.md
         - name: Motivace zaměstnanců
           items:
             - name: Plány kompenzace
@@ -2223,8 +2279,22 @@
               href: ../talent/create-fixed-compensation-plans.md
             - name: Vytvoření plánů variabilní kompenzace
               href: ../talent/create-variable-compensation-plans.md
+            - name: Definování procesů kompenzací a vypočítání výsledků
+              href: hr/tasks/define-compensation-process-calculate-results.md
             - name: Zpracování kompenzací
               href: ../talent/process-compensation.md
+            - name: Nastavení kompenzačních mřížek
+              href: hr/tasks/set-up-compensation-grids.md
+            - name: "Vývoj struktur platu/kompenzace a\_plánů"
+              href: hr/tasks/develop-salary-compensation-structure-plan.md
+            - name: "Přidávání informací do deníku výkonnosti a\_udělení pochvaly"
+              href: hr/tasks/add-your-performance-journal-send-praise-someone.md
+            - name: "Přihlášení zaměstnanců k\_plánu fixní kompenzace"
+              href: hr/tasks/enroll-employee-fixed-compensation-plan.md
+            - name: "Přihlášení zaměstnanců k\_plánu variabilní kompenzace"
+              href: hr/tasks/enroll-employee-variable-compensation-plan.md
+            - name: Vytvoření kontrol výkonnosti
+              href: hr/tasks/create-performance-review.md
         - name: Rozvoj a zaškolení zaměstnanců
           items:
             - name: Přehled řízení výkonnosti
@@ -2235,12 +2305,22 @@
               href: ../talent/courses.md
         - name: Vytvoření a správa zaměstnaneckých výhod
           items:
-            - name: Správa programu výhod
+            - name: Správa programu zaměstnaneckých výhod
               href: ../talent/manage-benefit-program.md
             - name: "Zásady způsobilosti k\_zaměstnaneckým výhodám"
               href: ../talent/benefit-eligibility-policies.md
-            - name: Spravovat položky půjčené zaměstnancům
-              href: ../talent/loan-items.md
+            - name: Proces nároku na zaměstnaneckou výhodu
+              href: hr/tasks/benefit-eligibility-process.md
+            - name: "Definování pravidel a\_zásad nároků na zaměstnanecké výhody"
+              href: hr/tasks/define-benefit-eligibility-rules-policies.md
+            - name: Definování programu zaměstnaneckých výhod
+              href: hr/tasks/deliver-employee-benefits-program.md
+            - name: Vytvoření nových zaměstnaneckých výhod
+              href: hr/tasks/create-new-benefit.md
+            - name: "Registrace pracovníků k zaměstnaneckým výhodám a\_odebrání zaměstnaneckých výhod"
+              href: hr/tasks/enroll-remove-benefits-workers.md
+            - name: Správa dat vypršení platnosti zaměstnaneckých výhod
+              href: hr/tasks/manage-benefit-expiration-dates.md
         - name: Shromáždění informací pomocí dotazníku
           items:
             - name: Dotazníky
@@ -2249,8 +2329,18 @@
               href: ../talent/design-questionnaires.md
             - name: Distribuce a vyplnění dotazníku
               href: ../talent/distribute-questionnaires.md
+            - name: "Distribuce dotazníků s\_použitím plánování"
+              href: hr/tasks/distribute-questionnaires-scheduling.md
             - name: Hodnocení výsledků dotazníku
               href: ../talent/evaluate-questionnaire-results.md
+            - name: Analýza výsledků dotazníku
+              href: hr/tasks/analyze-questionnaire-results.md
+            - name: "Vytvoření dotazů s\_otevřeným koncem"
+              href: hr/tasks/create-open-ended-question.md
+            - name: "Vytvoření dotazů s\_uzavřeným koncem"
+              href: hr/tasks/create-closed-ended-question.md
+            - name: Nastavení dotazů jako závislých na odpovědi na předcházející otázku
+              href: hr/tasks/make-question-dependent-answer-previous-question.md
         - name: "Bezpečnost na pracovišti a\_dodržování předpisů (USA)"
           items:
             - name: Ověření formuláře I-9
@@ -2263,6 +2353,10 @@
               href: hr/localizations/noam-usa-comply-ada.md
             - name: Správa přizpůsobení poskytovaných pracovníkům
               href: hr/localizations/tasks/manage-worker-accommodations.md
+            - name: Nastavení informací o zraněních a onemocněních
+              href: hr/tasks/set-up-injury-illness-information.md
+            - name: "Udržování informací o\_zraněních a\_onemocněních zaměstnanců"
+              href: hr/tasks/maintain-employee-injury-illness-information.md
         - name: "Mzdy v\_USA"
           href: hr/localizations/noam-usa-payroll.md
           items:
@@ -2331,88 +2425,6 @@
                   href: hr/localizations/noam-usa-payroll-data-updates.md
                 - name: Standardní mzdové sestavy
                   href: hr/localizations/noam-usa-generate-payroll-reports.md
-        - name: Úkoly lidských zdrojů
-          items:
-            - name: "Přidávání informací do deníku výkonnosti a\_udělení pochvaly"
-              href: hr/tasks/add-your-performance-journal-send-praise-someone.md
-            - name: Analýza výsledků dotazníku
-              href: hr/tasks/analyze-questionnaire-results.md
-            - name: Schválení záznamů doručených přihlášek
-              href: hr/tasks/approve-application-inbox-records.md
-            - name: Proces nároku na zaměstnaneckou výhodu
-              href: hr/tasks/benefit-eligibility-process.md
-            - name: "Vytvoření kalendářů a\_vygenerování pracovní doby"
-              href: hr/tasks/create-calendar-working-times.md
-            - name: "Vytvoření dotazů s\_uzavřeným koncem"
-              href: hr/tasks/create-closed-ended-question.md
-            - name: Vytvořit cíle
-              href: hr/tasks/create-goal.md
-            - name: Vytváření položek výpůjček
-              href: hr/tasks/create-loan-items.md
-            - name: Vytvoření projektů hromadného zařazení
-              href: hr/tasks/create-mass-hire-project.md
-            - name: Vytvoření nových zaměstnaneckých výhod
-              href: hr/tasks/create-new-benefit.md
-            - name: "Vytvoření dotazů s\_otevřeným koncem"
-              href: hr/tasks/create-open-ended-question.md
-            - name: Vytvoření kontrol výkonnosti
-              href: hr/tasks/create-performance-review.md
-            - name: "Definování pravidel a\_zásad nároků na zaměstnanecké výhody"
-              href: hr/tasks/define-benefit-eligibility-rules-policies.md
-            - name: Definování procesů kompenzací a vypočítání výsledků
-              href: hr/tasks/define-compensation-process-calculate-results.md
-            - name: Definování nových oddělení
-              href: hr/tasks/define-new-departments.md
-            - name: Definování nových prací
-              href: hr/tasks/define-new-jobs.md
-            - name: Definování programu zaměstnaneckých výhod
-              href: hr/tasks/deliver-employee-benefits-program.md
-            - name: Vytvoření a otevření požadavků na práci
-              href: hr/tasks/develop-open-job-requisition.md
-            - name: "Vývoj struktur platu/kompenzace a\_plánů"
-              href: hr/tasks/develop-salary-compensation-structure-plan.md
-            - name: Vypracování plánu kariérního postupu
-              href: hr/tasks/develop-succession-plan.md
-            - name: "Distribuce dotazníků s\_použitím plánování"
-              href: hr/tasks/distribute-questionnaires-scheduling.md
-            - name: "Přihlášení zaměstnanců k\_plánu fixní kompenzace"
-              href: hr/tasks/enroll-employee-fixed-compensation-plan.md
-            - name: "Přihlášení zaměstnanců k\_plánu variabilní kompenzace"
-              href: hr/tasks/enroll-employee-variable-compensation-plan.md
-            - name: "Registrace pracovníků k zaměstnaneckým výhodám a\_odebrání zaměstnaneckých výhod"
-              href: hr/tasks/enroll-remove-benefits-workers.md
-            - name: "Ruční zadávání dat o\_přihlášce a\_uchazeči"
-              href: hr/tasks/enter-applicant-application-data-manually.md
-            - name: Zadávání časových rozvrhů projektů
-              href: hr/tasks/enter-project-timesheets.md
-            - name: "Zadávání informací o\_pracovnících"
-              href: hr/tasks/enter-worker-information.md
-            - name: Přijetí kandidátů prostřednictvím náboru
-              href: hr/tasks/hire-candidate-through-recruiting.md
-            - name: Najmutí existujících zaměstnanců prostřednictvím náboru
-              href: hr/tasks/hire-existing-employee-through-recruiting.md
-            - name: "Identifikování a\_nasazení nástrojů pro výběr kandidáta"
-              href: hr/tasks/identify-deploy-candidate-selection-tools.md
-            - name: Zapůjčení položek pracovníkům
-              href: hr/tasks/loan-item-worker.md
-            - name: "Udržování informací o\_zraněních a\_onemocněních zaměstnanců"
-              href: hr/tasks/maintain-employee-injury-illness-information.md
-            - name: Nastavení dotazů jako závislých na odpovědi na předcházející otázku
-              href: hr/tasks/make-question-dependent-answer-previous-question.md
-            - name: Správa dat vypršení platnosti zaměstnaneckých výhod
-              href: hr/tasks/manage-benefit-expiration-dates.md
-            - name: Správa šablon e-mailů
-              href: hr/tasks/manage-email-templates.md
-            - name: Správa pracovního volna
-              href: hr/tasks/manage-leave-absence.md
-            - name: Úprava vztahů podřízenosti pro pozice
-              href: hr/tasks/modify-reporting-relationships-position.md
-            - name: Nastavení kompenzačních mřížek
-              href: hr/tasks/set-up-compensation-grids.md
-            - name: Nastavení informací o zraněních a onemocněních
-              href: hr/tasks/set-up-injury-illness-information.md
-            - name: Nastavení pozic
-              href: hr/tasks/set-up-positions.md
     - name: Intelligence
       href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
       items:
@@ -3635,6 +3647,8 @@
               href: ../supply-chain/sales-marketing/tasks/register-sales-commissions.md
             - name: Nastavení pravidel prodejních provizí
               href: ../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md
+        - name: Obchodní náhrady
+          href: ../supply-chain/sales-marketing/trade-allowance.md
     - name: Správa servisu
       href: ../supply-chain/service-management/service-management-home-page.md
       items:

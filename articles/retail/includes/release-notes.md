@@ -1,6 +1,6 @@
 > [!IMPORTANT]
-> **Oznámení poznámek k verzi the Dynamics 365 Spring '18**
+> **Oznámení poznámek k verzi Dynamics 365**
 >
-> Zajímáte se o nadcházející a nedávno uvedené funkce jakékoliv z nasích obchodních aplikací nebo platforem? 
+> Zajímáte se o nadcházející a nedávno uvedené funkce jakékoliv z našich obchodních aplikací nebo platforem? 
 > 
-> [Stáhněte si poznámki k verzi Spring '18](http://download.microsoft.com/download/1/C/0/1C0A4DB7-9CE8-4D25-AC7F-65579E713BA8/ReleaseNotes_Dynamics365_03192018.pdf) Popsali jsme všechny podrobnosti, od A až do Z, v jednom PDF, které můžete používat pro plánování. 
+> Zkontrolujte [Poznámky k verzi podnikových aplikací a platformy](https://go.microsoft.com/fwlink/?linkid=2010158). Popsali jsme všechny podrobnosti, od A až do Z, na jednom místě, které můžete používat pro plánování. V závislosti na verzi poznámek k verzi můžete zjistit nové služby a funkce, stejně jako funkce, které se chystají v dalších vydáních.
