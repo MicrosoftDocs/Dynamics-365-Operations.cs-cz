@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 5a950a100fd5e9026300ea08eb1a6311a8e63129
+ms.sourcegitcommit: 033c9bdfce0840e1af1c63708905aec6829bbe90
+ms.openlocfilehash: 7a1d3c73e4305375ddf356b93b9502b0255df99b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/13/2018
 
 ---
 
@@ -44,11 +44,13 @@ ms.lasthandoff: 08/07/2018
 
 ## <a name="adding-a-new-credit-card"></a><span data-ttu-id="d6ddd-117">Přidání nové platební karty</span><span class="sxs-lookup"><span data-stu-id="d6ddd-117">Adding a new credit card</span></span>
 <span data-ttu-id="d6ddd-118">Můžete vytvořit nové záznamy kreditní karty na stránce Odběratelé pomocí polí Odběratel, Nastavení, Platební karta.</span><span class="sxs-lookup"><span data-stu-id="d6ddd-118">You can create new credit card records on the Customers page by using Customer, Set up, Credit card.</span></span> <span data-ttu-id="d6ddd-119">Můžete také vytvořit záznamy kreditní karty při zadávání prodejních objednávek na stránce Prodejní objednávku pomocí polí Správa, Odběratel, Kreditní karta, Registrační pokladna.</span><span class="sxs-lookup"><span data-stu-id="d6ddd-119">You can also create credit card records when you enter sales orders on the Sales order page, by using Manage, Customer, Credit card, Register.</span></span>
-<span data-ttu-id="d6ddd-120">Přidání platební karty do prodejní objednávky</span><span class="sxs-lookup"><span data-stu-id="d6ddd-120">Adding a credit card to a sales order</span></span>
+
+<a name="adding-a-credit-card-to-a-sales-order"></a><span data-ttu-id="d6ddd-120">Přidání platební karty do prodejní objednávky</span><span class="sxs-lookup"><span data-stu-id="d6ddd-120">Adding a credit card to a sales order</span></span>
 -------------------------------------
 
 <span data-ttu-id="d6ddd-121">Platební kartu lze přidat do prodejní objednávky výběrem platební karty ve vyhledávání platební karty na pevné záložce Cena a sleva na stránce Prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="d6ddd-121">You can add a credit card to a sales order by selecting a credit card in the credit card lookup on the Price and discounts FastTab on the Sales order page.</span></span> <span data-ttu-id="d6ddd-122">Ke spuštění procesu ověření v podokně akcí na kartě Spravovat vyberte Kreditní karta a Ověřit.</span><span class="sxs-lookup"><span data-stu-id="d6ddd-122">To start the authorization process, on the Action Pane, on the Manage tab, select Credit card and Authorize.</span></span>
-<span data-ttu-id="d6ddd-123">Autorizace platební karty</span><span class="sxs-lookup"><span data-stu-id="d6ddd-123">Authorizing a credit card</span></span>
+
+<a name="authorizing-a-credit-card"></a><span data-ttu-id="d6ddd-123">Autorizace platební karty</span><span class="sxs-lookup"><span data-stu-id="d6ddd-123">Authorizing a credit card</span></span>
 -------------------------
 
 <span data-ttu-id="d6ddd-124">Při ověření dochází nejprve k ověření jména držitele karty a potom k potvrzení disponibilního zůstatku.</span><span class="sxs-lookup"><span data-stu-id="d6ddd-124">When a credit card is authorized, the card number and cardholder's name are verified, and the available credit balance is confirmed.</span></span> <span data-ttu-id="d6ddd-125">V případě potřeby lze ověřit i hodnotu ověření platební karty a adresu držitele karty.</span><span class="sxs-lookup"><span data-stu-id="d6ddd-125">Optionally, the card verification value and the cardholder’s address are verified.</span></span> <span data-ttu-id="d6ddd-126">Disponibilní zůstatek odběratele je snížen o částku faktury.</span><span class="sxs-lookup"><span data-stu-id="d6ddd-126">The customer's available credit balance is then reduced by the amount of the invoice.</span></span> <span data-ttu-id="d6ddd-127">Služba pro platby odešle informaci, zda byla kreditní karta přijata nebo odmítnuta.</span><span class="sxs-lookup"><span data-stu-id="d6ddd-127">The payment service sends information that the credit card has been approved or declined.</span></span> <span data-ttu-id="d6ddd-128">Při fakturaci prodejní objednávky je kreditní karta zatížena (zaznamenána) částkou faktury.</span><span class="sxs-lookup"><span data-stu-id="d6ddd-128">When the sales order is invoiced, the credit card is charged (captured) for the invoice amount.</span></span>
