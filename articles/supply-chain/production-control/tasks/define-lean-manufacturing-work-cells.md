@@ -3,24 +3,25 @@ title: "Definování pracovních buněk pro lean manufacturing"
 description: "Pracovní buňka je konkrétní formulář skupin prostředků, které lze použít v aktivitách procesu lean manufacturing."
 author: cvocph
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: WrkCtrResourceGroup, InventLocationIdLookup, UnitOfMeasureLookup, DimensionLookup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f060f084baab055a51e390f488ca2553bd997b92
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 1d2381c045f9f0f98b35912fa732f3627b038785
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="define-lean-manufacturing-work-cells"></a>Definování pracovních buněk pro lean manufacturing
@@ -56,7 +57,7 @@ Pracovní buňka je konkrétní formulář skupin prostředků, které lze použ
     * V několika výrobních tocích aktivity nebo řádcích výroby je toto často vstupním skladem následující pracovní buňky nebo prodejním či tranzitním skladem, kam produkty jsou obvykle převedeny po procesu výroby. Mějte na paměti při modelování procesů lean manufacturing, že přeprava je obvykle odpadní, jako vykazování přepravy.  
 16. Klikněte na odkaz na vybraném řádku v seznamu.
 17. V poli Výstupní umístění klepnutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-    * Ve výrobním toku s více aktivitami zpracování je toto často vstupním umístěním následující pracovní buňky.  
+    * Ve výrobním toku s více činnostmi zpracování je toto často vstupním umístěním následující pracovní buňky.  
 18. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 19. Klikněte na odkaz na vybraném řádku v seznamu.
 20. Rozbalte nebo sbalte oddíl Operace.

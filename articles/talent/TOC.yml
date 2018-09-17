@@ -6,6 +6,8 @@
       items:
         - name: Co je nového a co se změnilo
           items:
+            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (srpen 2018)
+              href: whats-new-talent-august2018.md
             - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (červenec 2018)
               href: whats-new-talent-july2018.md
         - name: Systémové požadavky a zásady aktualizace
@@ -16,8 +18,8 @@
           href: remove-talent-environment.md
         - name: Zřízení pro modulární aplikace Talent
           href: modular-app-tech-faq.md
-        - name: Rozšíření funkce Talent
-          href: extend-talent-functionality.md
+        - name: Integrace aplikací PowerApps
+          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Přístup k funkcím náhledu
           href: access-preview-feature.md
         - name: Konfigurace integrace mezd mezi aplikacemi Talent a Dayforce
@@ -70,7 +72,7 @@
     - name: "Zásady způsobilosti k\_zaměstnaneckým výhodám"
       href: benefit-eligibility-policies.md
       items:
-        - name: Správa položek zapůjčených zaměstnancům
+        - name: Správa položek zapůjčených pracovníkům
           href: loan-items.md
     - name: Shromáždění informací pomocí dotazníku
       href: questionnaires.md

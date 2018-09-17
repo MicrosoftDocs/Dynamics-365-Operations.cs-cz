@@ -99,8 +99,6 @@
       href: call-center-functionality.md
     - name: Katalogy kontaktního střediska
       href: call-center-catalogs.md
-    - name: Vytvoření katalogu kontaktního střediska
-      href: create-call-center-catalogs.md
     - name: Konfigurace způsobů dodání a poplatků
       href: configure-call-center-delivery.md
     - name: Nastavení a práce s výstrahami u podvodů
@@ -133,6 +131,8 @@
       href: MPOS-or-CPOS.md
     - name: Online a offline POS operace
       href: pos-operations.md
+    - name: Aktivace zařízení přizpůsobené aplikace Retail Modern POS
+      href: dev-itpro/retail-POS-activation-changes.md
     - name: Rozložení obrazovky ukázkových dat v MPOS a Cloud POS
       href: demo-data.md
     - name: Vyhledávání produktu a zákazníka v POS

@@ -3,23 +3,24 @@ title: "Vytvoření transakcí časového rozlišení hlavní knihy"
 description: "Tento průvodce úkoly vás provede generováním časově rozlišených transakcí hlavní knihy, které vycházejí z údajů schémat časového rozlišení."
 author: aprilolson
 manager: AnnBe
-ms.date: 10/26/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransAccrual, LedgerJournalTransAccrualTrans
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ef3cad6538d9efbd1c1881f4b7d771382d9b1ba8
-ms.openlocfilehash: a05f0777a14d627dc57ef4f4666abb6f92eee59a
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 368614ff447ae9f5cb6e74274558b92a0873ec7a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="create-ledger-accrual-transactions"></a>Vytvoření transakcí časového rozlišení hlavní knihy
@@ -33,7 +34,7 @@ Tento průvodce úkoly vás provede generováním časově rozlišených transak
 3. Klepnutím přejdete na odkaz v poli Číslo dávky deníku.
 4. Označte v seznamu vybraný řádek.
 5. Zadejte požadované hodnoty do pole Účet.
-    * V tomto příkladu definujeme výdaje pro pojištění. Stanou se částkou periodických výdajů.  
+    * V tomto příkladu definujeme výdaje pro pojištění. Bude přicházet částka periodických výdajů.  
 6. Zadejte nějakou hodnotu do pole Popis.
 7. Do pole Má dáti zadejte čísl.
 8. Zadejte požadované hodnoty do pole Protiúčet.
