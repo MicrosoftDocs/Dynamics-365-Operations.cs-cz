@@ -27,6 +27,8 @@ ms.lasthandoff: 08/08/2018
 
 # <a name="axerd-page-has-been-retired"></a>Stránka AxErd byla vyřazena
 
+[!include [banner](../includes/banner.md)]
+
 Bohužel jsme museli vyřadit webovou stránku AxErd, které poskytovala diagramy vztahů entit pro mnohé tabulky aplikace Microsoft Dynamics AX 2012. Podařilo se nám uložit zdrojový kód projektu a HTML soubory webové stránky do našeho úložiště GitHub: https://github.com/Microsoft/ax-2012-doc-tools
 
 HTML stránky jsou v úložišti na [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm)

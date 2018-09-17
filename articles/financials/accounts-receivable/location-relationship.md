@@ -28,6 +28,8 @@ ms.lasthandoff: 06/12/2018
 
 # <a name="add-location-roles-and-party-relationship-types"></a>Přidání rolí místa a typů vztahu strany 
 
+[!include [banner](../includes/banner.md)]
+
 ## <a name="add-location-roles"></a>Přidání rolí umístění
 
 Existují dva způsoby přidání nové role umístění adresy a kontaktních informací:

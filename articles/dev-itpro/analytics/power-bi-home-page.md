@@ -27,6 +27,9 @@ ms.lasthandoff: 08/08/2018
 ---
 
 # <a name="powerbicom-solutions-home-page"></a>Domovská stránka řešení PowerBI.com
+
+[!include [banner](../includes/banner.md)]
+
 Následující řešení PowerBI.com jsou k dispozici v prostředí Dynamics 365 for Finance and Operations.
 
 ## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a>PowerBI.com řešení, která jsou k dispozici ze služby Lifecycle Services (LCS)
