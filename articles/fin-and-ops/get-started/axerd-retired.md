@@ -18,14 +18,16 @@ ms.author: margoc
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: AX 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 5250a75655b23f1bc92b332a48dfec094af049cf
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: a3866e5993784c27fae272fe7eb781ab3e59e4c6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
 # <a name="axerd-page-has-been-retired"></a><span data-ttu-id="e6b61-104">Stránka AxErd byla vyřazena</span><span class="sxs-lookup"><span data-stu-id="e6b61-104">AxErd page has been retired</span></span>
+
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="e6b61-105">Bohužel jsme museli vyřadit webovou stránku AxErd, které poskytovala diagramy vztahů entit pro mnohé tabulky aplikace Microsoft Dynamics AX 2012.</span><span class="sxs-lookup"><span data-stu-id="e6b61-105">We’ve unfortunately had to retire the AxErd web page, which provided Entity relationship diagrams (ERDs) for many Microsoft Dynamics AX 2012 tables.</span></span> <span data-ttu-id="e6b61-106">Podařilo se nám uložit zdrojový kód projektu a HTML soubory webové stránky do našeho úložiště GitHub: https://github.com/Microsoft/ax-2012-doc-tools</span><span class="sxs-lookup"><span data-stu-id="e6b61-106">We've been able to post both the source code for the project, and the HTML files for the web page in a GitHub repo: https://github.com/Microsoft/ax-2012-doc-tools</span></span>
 

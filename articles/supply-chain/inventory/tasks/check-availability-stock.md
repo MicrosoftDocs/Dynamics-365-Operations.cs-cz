@@ -1,7 +1,7 @@
 --- 
 title: "Kontrola dostupnosti zásob"
 description: "Tento postup popisuje způsob kontroly množství na skladě a zásob fyzicky k dispozici pro určité číslo položky."
-author: 
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -17,10 +17,10 @@ ms.author:
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
-ms.openlocfilehash: 1a7c8309a121dc2adeb450d0a81f5b17820bca97
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: e1fc241ef281df522f89afa66e4faca3c91819cf
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 # <a name="check-the-availability-of-stock"></a><span data-ttu-id="7cb45-103">Kontrola dostupnosti zásob</span><span class="sxs-lookup"><span data-stu-id="7cb45-103">Check the availability of stock</span></span>
