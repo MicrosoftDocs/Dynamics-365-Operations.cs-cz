@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: a271887c4d2cfe4d0ee6518482dc4ebe407ebe56
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 185d1adc88a29bc3ae722ae2c6f0a2769428bce3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -63,8 +63,8 @@ Kontejner (záznam) představuje obchodní entitu modelu dat. Vlastnosti obchodn
 
 Jedna komponenta datového modelu může obsahovat několik hierarchií obchodních entit pro konkrétní doménu. Může také obsahovat mapování modelu, která podporují v operačním čase tok dat pro konkrétní sestavu. Hierarchie se mohou lišit podle jednotlivých záznamů, který byly vybrány jako kořen mapování modelu. Například datový model oblasti domény platby může podporovat následující mapování:
 
-- Společnost > Dodavatel > Transakce plateb domény závazků
-- Zákazník > Společnost > Transakce plateb domény pohledávek
+- Společnost \> Dodavatel \> Platební transakce domény závazků
+- Zákazník \> Společnost \> Platební transakce pohledávek domény
 
 Všimněte si, že obchodní entity (například společnost a platební transakce) jsou určeny jednou. Různá mapování je poté znovu využívají.
 
@@ -74,7 +74,7 @@ Mapování modelu, které podporuje odchozí elektronické dokumenty, má tyto f
 - Podporuje vstupní parametry uživatele lze definovat jako datové zdroje modelu dat, když je při spuštění nutné zadat některá data.
 - Podporuje transformaci dat aplikace Finance and Operations do požadovaných skupin. Umožňuje také filtrování, řazení a sčítání dat a připojování logických vypočítaných polí určených pomocí vzorců (podobně jako v aplikaci Microsoft Excel) jako na následujícím obrázku. Další informace najdete v tématu [Návrhář receptur elektronického výkaznictví](general-electronic-reporting-formula-designer.md).
 
-[![Návrhář receptur](./media/ER-overview-01.png)](./media/ER-overview-01.png) 
+[![Návrhář receptur](./media/ER-overview-01.png)](./media/ER-overview-01.png)
 
 Mapování modelu, které podporuje příchozí elektronické dokumenty, má tyto funkce:
 
@@ -175,7 +175,7 @@ Požadovaná úložiště **LCS projektu** lze registrovat pro jednotlivé posky
 ## <a name="supported-scenarios"></a>Podporované scénáře
 ### <a name="building-a-data-model"></a>Vytvoření datového modelu
 
-EV nabízí návrháře modelu, kterého můžete použít pro vytvoření modelu dat pro určité obchodní domény. Všechny obchodních entity specifické pro domény a a vztahy mezi nimi mohou být přítomné v datovém modelu jako hierarchická struktura. Následující obrázek znázorňuje příklad tohoto typu datového modelu (model dat pro doménu platby). 
+EV nabízí návrháře modelu, kterého můžete použít pro vytvoření modelu dat pro určité obchodní domény. Všechny obchodních entity specifické pro domény a a vztahy mezi nimi mohou být přítomné v datovém modelu jako hierarchická struktura. Následující obrázek znázorňuje příklad tohoto typu datového modelu (model dat pro doménu platby).
 
 [![Datový model domény platby](./media/ER-overview-04.png)](./media/ER-overview-04.png)
 
@@ -185,19 +185,18 @@ K seznámení se s tímto scénářem v podrobnostech si přehrajte průvodce ú
 
 Obsah datového modelu (štítky a popisy) lze přeložit do jiných jazyků, které aplikace Finance and Operations podporuje. Obsah datového modelu můžete chtít převést z následujících důvodů:
 
--   V době návrhu – aby byl obsah lépe srozumitelný pro návrháře formátů mluvící cizím jazykem, kteří budou data modelu používat k mapování dat komponent formátu.
--   V době spuštění – aby byl obsah lépe použitelný pro uživatele a zobrazoval výzvy, nápovědu týkající se parametrů a konfigurované zprávy ověření (chyby a upozornění) v preferovaném jazyce přihlášeného uživatele.
+- V době návrhu – aby byl obsah lépe srozumitelný pro návrháře formátů mluvící cizím jazykem, kteří budou data modelu používat k mapování dat komponent formátu.
+- V době spuštění – aby byl obsah lépe použitelný pro uživatele a zobrazoval výzvy, nápovědu týkající se parametrů a konfigurované zprávy ověření (chyby a upozornění) v preferovaném jazyce přihlášeného uživatele.
 
-Následující obrázek zobrazuje příklad toho, jak lze obsah datového modelu přeložit z angličtiny do japonštiny. 
+Následující obrázek zobrazuje příklad toho, jak lze obsah datového modelu přeložit z angličtiny do japonštiny.
 
 [![Obsah datového modelu v angličtině](./media/ER-overview-05.png)](./media/ER-overview-05.png)
 
 [![Obsah datového modelu přeložený do japonštiny](./media/ER-overview-06.png)](./media/ER-overview-06.png)
 
-
 ### <a name="configuring-data-model-mappings-for-outgoing-documents"></a>Konfigurace mapování datového modelu u odchozích dokumentů
 
-ER obsahuje modul návrháře mapování modelu, který umožňuje uživatelům mapovat datové modely, které jsou navrženy pro konkrétní zdroje dat aplikace Finance and Operations. Na základě mapování budou data importovány v operačním čase z vybraných datových zdrojů do datového modelu. Datový model se následně použije jako abstraktní zdroj dat formátů ER, které generují odchozí elektronické dokumenty. Následující obrázek popisuje příklad tohoto typu mapování modelu dat (mapování modelu **platebního převodu SEPA** datového modelu platební domény). 
+ER obsahuje modul návrháře mapování modelu, který umožňuje uživatelům mapovat datové modely, které jsou navrženy pro konkrétní zdroje dat aplikace Finance and Operations. Na základě mapování budou data importovány v operačním čase z vybraných datových zdrojů do datového modelu. Datový model se následně použije jako abstraktní zdroj dat formátů ER, které generují odchozí elektronické dokumenty. Následující obrázek popisuje příklad tohoto typu mapování modelu dat (mapování modelu **platebního převodu SEPA** datového modelu platební domény).
 
 [![Příklad mapování modelu dat](./media/ER-overview-07.png)](./media/ER-overview-07.png)
 
@@ -210,13 +209,13 @@ ER obsahuje modul návrháře mapování modelu, který umožňuje uživatelům 
 
 ### <a name="storing-a-designed-model-component-as-a-model-configuration"></a>Uložení navrženého modelu komponent jako konfigurace modelu
 
-ER může ukládat navržený datový model společně s přiřazenými mapováními dat jako konfiguraci modelu aktuální instance aplikace Finance and Operations. Následující obrázek znázorňuje příklad tohoto typu konfigurace datového modelu (konfigurace modelu dat pro doménu platby). 
+ER může ukládat navržený datový model společně s přiřazenými mapováními dat jako konfiguraci modelu aktuální instance aplikace Finance and Operations. Následující obrázek znázorňuje příklad tohoto typu konfigurace datového modelu (konfigurace modelu dat pro doménu platby).
 
 K seznámení se s tímto scénářem v podrobnostech si přehrajte průvodce úkolem **Elektronické vykazování – namapování datového modelu na vybrané zdroje dat** (součástí obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**).
 
 ### <a name="building-a-format-that-uses-a-data-model-as-a-base"></a>Vytvoření formátu využívajícího datového modelu jako základu
 
-ER podporuje modul návrháře formátů, pomocí kterého lze vytvořit formát elektronického dokumentu pro vybrané obchodní domény výběrem komponenty modelu jako základu. Stejný návrhář formátu EV nabízí schopnost mapování vytvořeného formátu pro výběr mapování modelu dat vybrané domény jako zdroje dat. Následující obrázek znázorňuje příklad tohoto typu formátu (konfigurace formátu, která podporuje formát platby **BACS** pro Spojené království). 
+ER podporuje modul návrháře formátů, pomocí kterého lze vytvořit formát elektronického dokumentu pro vybrané obchodní domény výběrem komponenty modelu jako základu. Stejný návrhář formátu EV nabízí schopnost mapování vytvořeného formátu pro výběr mapování modelu dat vybrané domény jako zdroje dat. Následující obrázek znázorňuje příklad tohoto typu formátu (konfigurace formátu, která podporuje formát platby **BACS** pro Spojené království).
 
 [![Příklad formátu využívajícího datový model jako základ](./media/ER-overview-09.png)](./media/ER-overview-09.png)
 
@@ -240,7 +239,7 @@ Abyste se podrobně seznámili s tímto postupem, přehrajte si průvodce zázn
 - [Šablona sestavy platby (SampleVendPaymDocReport.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 - [Vázaná šablona sestavy platby (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
-### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Vytvoření konfigurace pro import dat z příchozích elektronických dokumentů  
+### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Vytvoření konfigurace pro import dat z příchozích elektronických dokumentů
 Návrhář formátů ER lze použít k popisu elektronického dokumentu, který je součástí plánu pro import dat v textovém formátu nebo XML. Navržený formát slouží k analýze příchozího dokumentu. Návrhář mapování formátu ER lze použít k definování vazeb prvků navrženého formátu na model dat. Následující obrázky znázorňují příklad tohoto typu formátu a mapování formátu. V tomto příkladu jsou importovány bankovních výpisy NETS, které zahrnují informace o platbách dodavatelů v textovém formátu.
 
 [![ER-format-designer](./media/ER-overview-12.png)](./media/ER-overview-12.png)
@@ -260,7 +259,7 @@ ER umožňuje ukládat navržený formát společně s konfigurovanými mapová
 
 ### <a name="configuring-finance-and-operations-to-start-to-use-a-created-format-internally"></a>Konfigurace aplikace Finance and Operations k použití interně vytvořeného formátu
 
-V aplikaci Finance and Operations lze nakonfigurovat používání vytvořeného formátu pro generování elektronických sestav. Odkaz k vytvořené konfiguraci formátu by měl být definován ve specifických nastaveních určité domény. Například pokud chcete zahájit používání konfigurace formátu EV pro elektronické platby dodavatelů ve formátu BACS, na konfigurace formátu by se mělo odkazovat v určitém způsoby platby tak, jak je znázorněno na následujícím obrázku: 
+V aplikaci Finance and Operations lze nakonfigurovat používání vytvořeného formátu pro generování elektronických sestav. Odkaz k vytvořené konfiguraci formátu by měl být definován ve specifických nastaveních určité domény. Například pokud chcete zahájit používání konfigurace formátu EV pro elektronické platby dodavatelů ve formátu BACS, na konfigurace formátu by se mělo odkazovat v určitém způsoby platby tak, jak je znázorněno na následujícím obrázku:
 
 [![Konfigurace formátu BACS (UK)](./media/ER-overview-14.png)](./media/ER-overview-14.png)
 
@@ -367,15 +366,9 @@ EV podporuje schopnost automaticky přijmout změny poslední verze základní k
 |                                                  |                       | Prohlášení k faktuře dodavatele (IS)                   | Formát prohlášení k faktuře dodavatele pro Island                      |
 |                                                  |                       | Sestava prohlášení k faktuře dodavatele (IS)            | Sestava prohlášení k faktuře dodavatele pro Island                      |
 
-
-
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Požadavky na lokalizaci – vytvoření konfigurace elektronického výkaznictví](electronic-reporting-configuration.md)
 
 [Správa životního cyklu konfigurace elektronického vykazování](general-electronic-reporting-manage-configuration-lifecycle.md)
-
-
-
 

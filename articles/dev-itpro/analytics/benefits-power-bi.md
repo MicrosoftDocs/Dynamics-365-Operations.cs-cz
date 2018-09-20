@@ -17,10 +17,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 532834b377cfb8eda4902c387a850314302b22d8
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -39,13 +39,12 @@ Obsah **Zaměstnanecké výhody** v Power BI se zobrazuje v pracovním prostoru 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
 Sestavy, které jsou součástí obsahu **Zaměstnanecké výhody**, mají grafy a tabulky obsahující další informace. Následující tabulka obsahuje popis daných sestav.
 
-| Sestava                       | Obsah                                                                                       |
-|------------------------------|------------------------------------------------------------------------------------------------|
-| Přehled registrací k zaměstnaneckým výhodám  | Nejvíce a nejméně registrované plány, registrace podle skupiny zaměstnanců a vybrané možnosti zaměstnaneckých výhod |
-| Zaměstnanecké výhody            | Přihlášení zaměstnance podle vybrané zaměstnanecké výhody                                                        |
-                                                                                             
-Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+| Sestava                      | Obsah                                                                                       |
+|-----------------------------|------------------------------------------------------------------------------------------------|
+| Přehled registrací k zaměstnaneckým výhodám | Nejvíce a nejméně registrované plány, registrace podle skupiny zaměstnanců a vybrané možnosti zaměstnaneckých výhod |
+| Zaměstnanecké výhody           | Přihlášení zaměstnance podle vybrané zaměstnanecké výhody                                                        |
 
+Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
 Následující data se používají k vyplňování sestav v obsahu **Zaměstnanecké výhody** Power BI. Tato tabulka zobrazuje entity, na kterých je balíček obsahu založen.
@@ -72,6 +71,4 @@ Následující data se používají k vyplňování sestav v obsahu **Zaměstnan
 | Jméno zaměstnance            | Křestní jméno, příjmení a celé jméno                                                                       | Aktuální zaměstnanec, ukončený zaměstnanec, trend zaměstnance |
 | Titul zaměstnance           | Název a datum služebního věku                                                                                   | Aktuální zaměstnanec, ukončený zaměstnanec, trend zaměstnance |
 | Trend zaměstnance           | Pracovníci během času, počet zaměstnanců, společnost a pozice                                                        | Společnost, kompenzace, geografické umístění, jméno zaměstnance, nadřízený, posun kalendáře, datum, pracovní zařazení, demografické údaje, práce, zaměstnání, zaměstnanecké výhody |
-
-
 

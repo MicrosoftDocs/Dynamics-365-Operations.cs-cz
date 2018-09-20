@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 58653d6e991f1896673a07e3057bd516c74edd76
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: f68e89422e7124874004a20c2bae5809dcdfb099
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -48,7 +48,9 @@ Poznámka: Následující operace se vztahují na nejnovější verzi aplikace D
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
 | 707 | Aktivovat zařízení | Aktivujte aktuální zařízení tím, že umožníte ověřenému uživateli poskytnout informace o připojení a přiřadit ID zařízení a pokladny. | Ne | Ne | Ne | Ne | Ne |
 | 134 | Přidat umístění | Přidání předem vybraného umístění k transakci. Umístění vyberte na stránce **Vlastnosti tlačítka**. | Ano | Ano | Ne | Ano | Ne |
-| 135 | Přidat umístění ze seznamu | Přidejte umístění k transakci tak, že ji vyberete ze seznamu. | Ano | Ano | Ano | Ano | Ne |
+| 135 | Přidat umístění ze seznamu | Přidejte umístění k transakci tak, že ji vyberete ze seznamu. | Ano | Ano | Ano | Ano | Žádný |
+| 137 | Přidat umístění k odběrateli | Přidejte umístění k odběrateli na stránce **Podrobnosti odběratele**. | Žádný | Žádný | Žádný | Ano | Žádný |
+| 138 | Odstranit umístění od odběratele | Odstraňte umístění na stránce **Podrobnosti odběratele**. | Žádný | Žádný | Žádný | Ano | Žádný |
 | 643 | Přidat kód kupónu | Přidejte kupón zadáním jeho kódu do POS. | Ano | Ano | Ne | Ano | Ne |
 | 117 | Přidat věrnostní kartu | Vyzvěte uživatele k zadání čísla věrnostní karty, které budé přidáno do aktuální transakce. | Ano | Ano | Ne | Ano | Ne |
 | 136 | Přidat sériové číslo | Tato operace umožňuje uživateli specifikovat sériové číslo pro aktuálně vybraný produkt. | Ano | Ano | Ne | Ano | Ne |

@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 476b53d7e5a5ee764c23034344f375fff5db47e8
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: 8021e54fdd5c4c71c016e52801d3f2f627de761b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -38,7 +38,7 @@ Videa jsou seřazena podle funkcí, takže přejděte dolů, abyste viděli cel�
 
 #### <a name="data-integration"></a>Integrace dat
 - [Integrace zpeněžení potenciálního zákazníka](https://youtu.be/AVV9x5x-XCg) 
-- [Synchronizace pracovního příkazu mezi Dynamics 365 for Field Service a aplikací Finance and Operations](https://www.youtube.com/watch?v=hAB4TDVMjxU&t=2s)
+- [Synchronizace pracovního příkazu mezi Dynamics 365 for Field Service a aplikací Finance and Operations](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 #### <a name="data-management"></a>Správa dat
 - [Použití datových entit a balíčků dat v Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
@@ -61,6 +61,7 @@ Videa jsou seřazena podle funkcí, takže přejděte dolů, abyste viděli cel�
 
 #### <a name="intelligence"></a>Intelligence
 - [Přinesení vlastní databáze (BYOD) do Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Způsob použití obsahu správy nákladů Power BI v Dynamics 365.](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 #### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
 - [Knihovna aktiv v Lifecycle Services](https://www.youtube.com/watch?v=z-2xMRa1nOs)
@@ -93,6 +94,9 @@ Videa jsou seřazena podle funkcí, takže přejděte dolů, abyste viděli cel�
 - [Vyvážení dávky](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be)
 - [Vylepšení procesu uvolnění do produkčního prostředí](https://www.youtube.com/watch?v=Rm3ojAz6Zu0&feature=youtu.be)
 - [Vizuální plánování s Ganntovým diagramem pro výrobu a dávkové objednávky](https://youtu.be/BtbuShkGj4I)
+
+#### <a name="tax-engine"></a>Daňový modul
+- [Přehled daňového modulu](https://www.youtube.com/watch?v=jAFpEBOtNWI&feature=youtu.be)
 
 #### <a name="warehouse-management"></a>Řízení skladu
 - [Uvolnění výdeje výroby do skladu v dávkách](https://youtu.be/8urAJn50dQ8)

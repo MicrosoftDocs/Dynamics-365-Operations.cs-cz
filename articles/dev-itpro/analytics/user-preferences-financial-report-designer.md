@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 78b41010e4ab56675121ab5479cada37645e9ee3
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 5483a1d40907fab3ed3da8174f1dfb8a5bc86960
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -30,25 +30,24 @@ ms.lasthandoff: 08/08/2018
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek vysvětluje, jak nastavit uživatelské předvolby pro přizpůsobení interakce uživatelů v návrháři finančních sestav, a pro řízení výchozího prostředí po přihlášení. Můžete také určit, jak se zobrazí jednotlivé sestavy, knihovna sestav a výchozí umístění souborů. 
+Tento článek vysvětluje, jak nastavit uživatelské předvolby pro přizpůsobení interakce uživatelů v návrháři finančních sestav, a pro řízení výchozího prostředí po přihlášení. Můžete také určit, jak se zobrazí jednotlivé sestavy, knihovna sestav a výchozí umístění souborů.
 
-<a name="set-user-preferences"></a>Nastavení uživatelských předvoleb
---------------------
+## <a name="set-user-preferences"></a>Nastavení uživatelských předvoleb
 
-1.  V návrháři sestav v nabídce **Nástroje** klikněte na položku **Možnosti**.
-2.  V dialogovém okně **Možnosti** vyberte předvolby.
-3.  Klepněte na tlačítko **OK**.
+1. V návrháři sestav v nabídce **Nástroje** klikněte na položku **Možnosti**.
+2. V dialogovém okně **Možnosti** vyberte předvolby.
+3. Klepněte na tlačítko **OK**.
 
 ## <a name="options-dialog-box-options"></a>Možnosti dialogového okna Možnosti
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Možnost pro uživatele</th>
 <th>popis</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Při spuštění</td>
 <td>Vyberte, co chcete zobrazit po spuštění aplikace Návrhář sestav. Vyberte některou z následujících možností:
 <ul>
@@ -57,28 +56,22 @@ Tento článek vysvětluje, jak nastavit uživatelské předvolby pro přizpůso
 <li><strong>Zobrazit prázdné prostředí</strong> – otevře prázdné okno návrháře.</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Zobrazit potvrzení před ukončením aplikace Návrhář sestav</td>
 <td>Vyberte, zda chcete zobrazit upozornění při ukončení aplikace. Tato zpráva pomáhá zajistit, že program není ukončen neúmyslně.</td>
 </tr>
-<tr class="odd">
-<td>Automaticky používat podtržení buněk v záhlavích sloupců</td>
+<tr>
+<td>Automaticky použít podtržení buněk v záhlaví sloupců</td>
 <td>Určete, zda chcete vložit podtržení do buňky nového záhlaví sloupce.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Umístění souborů aplikace Management Reporter</td>
 <td>Určuje výchozí umístění souborů. Aplikace používá výchozí umístění při exportu skupin stavebních bloků.</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Finanční výkaznictví](financial-reporting-intro.md)
-
-
-
 

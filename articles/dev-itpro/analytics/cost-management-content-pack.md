@@ -20,10 +20,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: b06abae184d07cd3b914caf74bdb16a7803919af
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: caf1c13d48d1f8af5c88927ccb23118e99cb38e0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/09/2018
 
 Obsah **Řízení nákladů** v Microsoft Power BI je určen pro skladové účetní nebo osoby v rámci organizace, které zodpovídají za nebo se zabývají stavem zásob nebo nedokončenou výrobu (NV) nebo které jsou zodpovědné za nebo se zabývají analýzou odchylek standardních nákladů.
 
-> [!Note]
+> [!NOTE]
 > Obsah **Řízení nákladů** Power BI popisovaný v tomto v tomto tématu se týká aplikace Dynamics 365 for Finance and Operations 8.0.
 > 
 > Sada obsahu Power BI **Řízení nákladů**, dostupná na serveru AppSource se již nepoužívá. Další informace o tomto odepsání uvádí [Sady obsahu Power BI dostupné na AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
@@ -171,7 +171,7 @@ Následující tabulky poskytují přehled vizualizace v obsahu **správy nákla
 |                                         | 10 hlavních zdrojů s nepříznivou výrobní odchylkou  |
 |                                         | 10 hlavních zdrojů s příznivou výrobní odchylkou    |
 
-### <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
+## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
 
 Data z aplikace Microsoft Dynamics 365 for Finance and Operations se používají k vyplnění stránek sestavy obsahu Power BI **Řízení nákladů**. Tato data jsou reprezentována jako měrné systémy agregace, které jsou rozfázovány v úložišti entit, což je databáze serveru Microsoft SQL optimalizovaná pro analýzy. Další informace naleznete v tématu [Integrace Power BI úložištěm entit](power-bi-integration-entity-store.md).
 
@@ -188,26 +188,25 @@ Následující tabulka zobrazuje klíčová vypočítaná měření v obsahu Pow
 
 | Výměra                            | Výpočet |
 |------------------------------------|-------------|
-| Počáteční zůstatek                  | Počáteční zůstatek = [Koncový zůstatek]-[Čistá změna] |
-| Množství počátečního zůstatku             | Množství Počáteční zůstatek = [Množství Koncový zůstatek]-[Množství Čistá změna] |
-| Konečný zůstatek                     | Konečný zůstatek = (CALCULATE(SUM([Amount]) FILTER(ALL(FiscalCalendar), FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE])))) |
-| Množství Konečný zůstatek                | Množství koncového zůstatku = CALCULATE(SUM([QTY]), FILTER(ALL(FiscalCalendar),FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE]))) |
-| Změna netto                         | Změna čisté částky = SUM([AMOUNT]) |
-| Změna čistého množství                    | Změna čistého množství = SUM([QTY]) |
-| Ukazatel obratu zásob podle částky | Ukazatel obratu zásob podle částky = if(OR([Průměrný zůstatek zásob] \<= 0, [Prodané zásoby nebo spotřebované zboží] \>= 0), 0, ABS([Prodané zásoby nebo spotřebované zboží])/[Průměrný zůstatek zásob]) |
-| Průměrný zůstatek zásob          | Průměrný zůstatek zásob = (([konečný zůstatek] + [počáteční zůstatek]) / 2) |
-| Dny zásob na skladě             | Denní zásoby množství na skladě = 365 / CostObjectStatementEntries [ukazatel obratu zásob podle částky] |
-| Přesnost zásob                 | Přesnost zásob podle částky = IF([Konečný zůstatek] \<= 0, IF(OR([Spočítaná částka zásob] \<\> 0, [Konečný zůstatek] \< 0), 0, 1), MAX(0, ([Konečný zůstatek] - ABS([Spočítaná částka zásob]))/[Konečný zůstatek])) |
+| Počáteční zůstatek                  | Počáteční zůstatek = \[Koncový zůstatek\]-\[Čistá změna\] |
+| Množství počátečního zůstatku             | Množství Počáteční zůstatek = \[Množství Koncový zůstatek\]-\[Množství Čistá změna\] |
+| Konečný zůstatek                     | Konečný zůstatek = (CALCULATE(SUM(\[Amount\]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\])))) |
+| Množství Konečný zůstatek                | Množství koncového zůstatku = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
+| Změna netto                         | Čistá změna = SUM(\[AMOUNT\]) |
+| Změna čistého množství                    | Množství čisté změny = SUM(\[QTY\]) |
+| Ukazatel obratu zásob podle částky | Ukazatel obratu zásob podle částky = if(OR(\[Průměrný zůstatek zásob\] \<= 0, \[Prodané zásoby nebo spotřebované zboží\] \>= 0), 0, ABS(\[Prodané zásoby nebo spotřebované zboží\])/\[Průměrný zůstatek zásob\]) |
+| Průměrný zůstatek zásob          | Průměrný zůstatek zásob = ((\[konečný zůstatek\] + \[počáteční zůstatek\]) / 2) |
+| Dny zásob na skladě             | Denní zásoby množství na skladě = 365 / CostObjectStatementEntries\[Ukazatel obratu zásob podle částky\] |
+| Přesnost zásob                 | Přesnost zásob podle částky = IF(\[Konečný zůstatek\] \<= 0, IF(OR(\[Spočítaná částka zásob\] \<\> 0, \[Konečný zůstatek\] \< 0), 0, 1), MAX(0, (\[Konečný zůstatek\] - ABS(\[Spočítaná částka zásob\]))/\[Konečný zůstatek\])) |
 
 Následující tabulka uvádí klíčové dimenze, které se používají jako filtry k rozdělení agregovaných měření, aby bylo možné dosáhnout většího odstupňování a získat hlubší analytický přehled.
 
 
-|                         Celek                          |             Příklady atributů              |
+| Celek                                                  | Příklady atributů                          |
 |---------------------------------------------------------|-------------------------------------------------|
-|                        Produkty                         | Číslo produktu, název produktu, jednotka, skupiny zboží |
-| Hierarchie kategorií (přiřazeno role Řízení nákladů) |       Hierarchie kategorií, úroveň kategorie        |
-|                     Právnické osoby                      |               Jména právnické osoby                |
-|                    Fiskální kalendáře                     |  Fiskální kalendář, rok, čtvrtletí, období, měsíc  |
-|                          Pracoviště                           |        ID, název, adresa, stát, země        |
-
+| Produkty                                                | Číslo produktu, název produktu, jednotka, skupiny zboží |
+| Hierarchie kategorií (přiřazeno role Řízení nákladů) | Hierarchie kategorií, úroveň kategorie              |
+| Právnické osoby                                          | Jména právnické osoby                              |
+| Fiskální kalendáře                                        | Fiskální kalendář, rok, čtvrtletí, období, měsíc   |
+| Pracoviště                                                    | ID, název, adresa, stát, země               |
 

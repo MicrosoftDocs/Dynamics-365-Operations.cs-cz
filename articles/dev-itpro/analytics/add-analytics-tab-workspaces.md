@@ -16,10 +16,10 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d8cd3a6b3cbfa1219f0ebcf9d4d2132197167220
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 3f6b83166ba942e40e5e1f7c0ef9df40a44bfbc5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -54,7 +54,7 @@ Dříve než začnete, musíte vytvořit nebo získat sestavu Power BI, kterou v
 Tento postup slouží k přidání souboru .pbix jako artefaktů projektu Visual Studio.
 
 1. Vytvořte nový projekt v příslušném modelu.
-2. V Průzkumníku řešení vyberte projekt, klepněte pravým tlačítkem myši a poté vyberte **Přidat** > **Nová položka**.
+2. V Průzkumníku řešení vyberte projekt, klepněte pravým tlačítkem myši a poté vyberte **Přidat** \> **Nová položka**.
 3. V dialogovém okně **Přidat novou položku**, v části **Operační artefakty**, vyberte šablonu **Prostředek**.
 4. Zadejte název, který se použije k odkazování na sestavu v metadatech X ++ a klepněte na tlačítko **přidat**.
 
@@ -77,7 +77,7 @@ Pomocí následujícího postupu rozšířit definici formuláře pracovního pr
 
 1. Otevřete návrhář formuláře k rozšíření definice návrhu.
 2. V definici návrhu vyberte nejvyšší prvek označený **Návrhu | Vzor: Pracovní prostor operační**.
-3. Klepněte pravým tlačítkem myši a poté vyberte **Nová** > **Karta** pro přidání nového ovládacího prvku s názvem **FormTabControl1**.
+3. Klepněte pravým tlačítkem myši a poté vyberte **Nová** \> **Karta** pro přidání nového ovládacího prvku s názvem **FormTabControl1**.
 4. V návrháři formuláře vyberte **FormTabControl1**.
 5. Klepněte pravým tlačítkem myši a poté vyberte **Stránka Nová karta**. Tím přidáte novou kartu.
 6. Přejmenujte stránku karty, například na **Pracovní prostor**.
@@ -86,12 +86,12 @@ Pomocí následujícího postupu rozšířit definici formuláře pracovního pr
 9. Přejmenujte stránku karty, například na **Analýza**.
 10. V návrháři formuláře vyberte **Analýz (Stránka Karta)**.
 11. Nastavte vlastnost **Titulek** na **Analýza**.
-12. Klepněte pravým tlačítkem myši na ovládací prvek a poté vyberte **Nová** > **Skupina** pro přidání nové skupiny ovládacích prvků.
+12. Klepněte pravým tlačítkem myši na ovládací prvek a poté vyberte **Nová** \> **Skupina** pro přidání nové skupiny ovládacích prvků.
 13. Přejmenujte skupinu formuláře, například na **powerBIReportGroup**.
 14. V návrháři formuláře vyberte **PanoramaBody (karta)** a přetáhněte ovládací prvek na kartu **Pracovní prostor**.
 15. V definici návrhu vyberte nejvyšší prvek označený **Návrhu | Vzor: Pracovní prostor operační**.
 16. Klikněte pravým tlačítkem a vyberte **Odebrat vzor**.
-17. Znovu klikněte pravým tlačítkem a vyberte **Přidat vzor** > **Pracovní prostor s kartami**.
+17. Znovu klikněte pravým tlačítkem a vyberte **Přidat vzor** \> **Pracovní prostor s kartami**.
 18. Vytvořit nové sestavení pro ověření provedených změn.
 
 Následující obrázek znázorňuje, jak návrh vypadá poté, co tyto změny se projeví.
@@ -116,7 +116,7 @@ Pomocí těchto kroků přidejte obchodní logiku, která inicializuje ovládac�
     [Form] 
     public class FMClerkWorkspace extends FormRun
     {
-        private boolean initReportControl = true;     
+        private boolean initReportControl = true;
         protected void initAnalyticalReport()
         {
             if (!initReportControl)
@@ -126,11 +126,11 @@ Pomocí těchto kroků přidejte obchodní logiku, která inicializuje ovládac�
             // Note: secure entry point into the Workspace's Analytics report
             if (Global::hasMenuItemAccess(menuItemDisplayStr(FMClerkWorkspace), MenuItemType::Display))
             {
-                FMPBIWorkspaceController controller = new FMPBIWorkspaceController();
+                // initialize the PBI report control using shared helper
                 PBIReportHelper::initializeReportControl('FMPBIWorkspaces', powerBIReportGroup);
             }
             initReportControl = false;
-    }
+        }
         /// <summary>
         /// Initializes the form.
         /// </summary>
@@ -159,23 +159,22 @@ Tento oddíl obsahuje informace o pomocnících třídy, která se používá k 
 #### <a name="syntax"></a>Syntaxe
 ```
 public static void initializeReportControl(
-     str                 _resourceName,
-     FormGroupControl    _formGroupControl,
-     str                 _defaultPageName = '',
-     boolean             _showFilterPane = false,
-     boolean             _showNavPane = false,
-     List                _defaultFilters = new List(Types::Class))
+    str                 _resourceName,
+    FormGroupControl    _formGroupControl,
+    str                 _defaultPageName = '',
+    boolean             _showFilterPane = false,
+    boolean             _showNavPane = false,
+    List                _defaultFilters = new List(Types::Class))
 ```
 
 #### <a name="parameters"></a>Parametry
 
-|       Jméno       |                                                              popis                                                               |
-|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|   resourceName   |                                                    Název zdroje .pbix                                                      |
-| formGroupControl |                                    Ovládací prvek skupiny formuláře pro použití sestavy Power BI.                                     |
-| defaultPageName  |                                                         Výchozí název stránky.                                                         |
-|  showFilterPane  |   Logická hodnota, která určuje, zda má být podokno filtru zobrazené (<strong>true</strong>) nebo skryté (<strong>false</strong>).   |
-|   showNavPane    | Logická hodnota, která určuje, zda má být navigační podokno zobrazené (<strong>true</strong>) nebo skryté (<strong>false</strong>). |
-|  defaultFilters  |                                              Výchozí filtry pro sestavu Power BI.                                              |
-
+| Jméno             | popis                                                                                                  |
+|------------------|--------------------------------------------------------------------------------------------------------------|
+| resourceName     | Název zdroje .pbix                                                                               |
+| formGroupControl | Ovládací prvek skupiny formuláře pro použití sestavy Power BI.                                              |
+| defaultPageName  | Výchozí název stránky.                                                                                       |
+| showFilterPane   | Logická hodnota, která určuje, zda má být podokno filtru zobrazené (**true**) nebo skryté (**false**).     |
+| showNavPane      | Logická hodnota, která určuje, zda má být navigační podokno zobrazené (**true**) nebo skryté (**false**). |
+| defaultFilters   | Výchozí filtry pro sestavu Power BI.                                                                 |
 
