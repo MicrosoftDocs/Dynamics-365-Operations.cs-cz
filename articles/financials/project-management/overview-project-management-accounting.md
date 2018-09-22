@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: e927e45511c5e6c232457a76b2d1fab160fe0f5a
+ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.openlocfilehash: c21587499a68143d403760ad32bea65948d7fbc9
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/21/2018
 
 ---
 
@@ -35,7 +35,9 @@ ms.lasthandoff: 08/08/2018
 <span data-ttu-id="72337-105">Projektu je skupina aktivit sloužící k poskytování služby, produkci produktu nebo dosažení výsledků.</span><span class="sxs-lookup"><span data-stu-id="72337-105">A project is a group of activities that is designed to provide a service, produce a product, or achieve a result.</span></span> <span data-ttu-id="72337-106">Projekty spotřebovávají prostředky a generují finanční výsledky v podobě příjmů nebo majetku.</span><span class="sxs-lookup"><span data-stu-id="72337-106">Projects consume resources and generate financial results in the form of revenues or assets.</span></span>
 
 ## <a name="projects-across-industries"></a><span data-ttu-id="72337-107">Projekty napříč odvětvími</span><span class="sxs-lookup"><span data-stu-id="72337-107">Projects across industries</span></span>
-<span data-ttu-id="72337-108">Řízení projektu a funkce účetnictví lze použít v několika průmyslových odvětvích, jak je zachyceno v následujícím obrázku.</span><span class="sxs-lookup"><span data-stu-id="72337-108">The project management and accounting functionality can be used in multiple industries, as shown in the following illustration.</span></span> <span data-ttu-id="72337-109">[![Projekty napříč odvětvími](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg)</span><span class="sxs-lookup"><span data-stu-id="72337-109">[![Projects accross industries](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg)</span></span> 
+<span data-ttu-id="72337-108">Řízení projektu a funkce účetnictví lze použít v několika průmyslových odvětvích, jak je zachyceno v následujícím obrázku.</span><span class="sxs-lookup"><span data-stu-id="72337-108">The project management and accounting functionality can be used in multiple industries, as shown in the following illustration.</span></span>
+
+<span data-ttu-id="72337-109">[![Projekty napříč odvětvími](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg)</span><span class="sxs-lookup"><span data-stu-id="72337-109">[![Projects accross industries](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg)</span></span> 
 
 <span data-ttu-id="72337-110">V kontaktnímu středisku lze příkaz použít k popisu sady akcí, které jsou nutné při řešení volání.</span><span class="sxs-lookup"><span data-stu-id="72337-110">In a call center, a ticket can be used to describe the set of actions that are required to resolve a call.</span></span> <span data-ttu-id="72337-111">Konzultační společnosti, jako jsou například organizace pro management nebo technické konzultace nebo reklamní agentury, odkazují na svou činnost jako projekty.</span><span class="sxs-lookup"><span data-stu-id="72337-111">Consulting companies, such as management or technical consulting organizations or advertising agencies, refer to their activities as projects.</span></span> <span data-ttu-id="72337-112">V marketingu kampaň představuje sadu práce, která musí být dodána.</span><span class="sxs-lookup"><span data-stu-id="72337-112">In marketing, a campaign represents a set of work that must be delivered.</span></span> <span data-ttu-id="72337-113">V projektové výrobě se výrobní zakázka týká různých prací, které je třeba provést, aby bylo možné vyrábět hotové zboží.</span><span class="sxs-lookup"><span data-stu-id="72337-113">In project-based manufacturing, a production order relates the various work that must be done to produce some finished goods.</span></span> <span data-ttu-id="72337-114">Bez ohledu na označení tyto projekty zahrnují prostředky, kalendáře a náklady a funkce řízení projektu a účetnictví v aplikaci Microsoft Dynamics 365 for Finance and Operations vám mohou pomoci s plánováním, prováděním a analýzou těchto projektů.</span><span class="sxs-lookup"><span data-stu-id="72337-114">Whatever name is used for them, these projects involve resources, schedules, and costs, and the project management and accounting functionality in Microsoft Dynamics 365 for Finance and Operations can help with the planning, execution, and analysis of these projects.</span></span>
 

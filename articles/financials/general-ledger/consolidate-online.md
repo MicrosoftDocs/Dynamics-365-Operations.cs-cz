@@ -1,0 +1,100 @@
+---
+title: "Finanční konsolidace online"
+description: "Toto téma popisuje online finanční konsolidace v hlavní knize."
+author: aprilolson
+manager: AnnBe
+ms.date: 07/09/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: 
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: aolson
+ms.search.validFrom: 2018-5-31
+ms.dyn365.ops.version: 8.0.1
+ms.translationtype: HT
+ms.sourcegitcommit: 2a9ceb774a8f205e39abe6a12a0deb69dd4cb69b
+ms.openlocfilehash: fd29dc5f932c9cd274a42923e1ff659dd5d8e9d6
+ms.contentlocale: cs-cz
+ms.lasthandoff: 08/20/2018
+
+---
+
+# <a name="consolidate-online"></a><span data-ttu-id="0e270-103">Konsolidovat online</span><span class="sxs-lookup"><span data-stu-id="0e270-103">Consolidate online</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="0e270-104">Toto téma popisuje online finanční konsolidace v hlavní knize.</span><span class="sxs-lookup"><span data-stu-id="0e270-104">This topic describes online financial consolidations in General ledger.</span></span> <span data-ttu-id="0e270-105">Než si přečtete toto téma, seznamte se s tématem [Finanční konsolidace a převod měny](financial-consolidations-currency-translation.md).</span><span class="sxs-lookup"><span data-stu-id="0e270-105">Before you read this topic, be sure to read the [Financial consolidations and currency translation](financial-consolidations-currency-translation.md) topic.</span></span>
+
+<span data-ttu-id="0e270-106">Po dokončení nastavení zadejte podrobnosti konsolidace na stránce **Konsolidace [Online]**.</span><span class="sxs-lookup"><span data-stu-id="0e270-106">After you've completed your setup, you enter the details of the consolidation on the **Consolidate [Online]** page.</span></span> <span data-ttu-id="0e270-107">Po dokončení můžete kliknout na **OK** nebo **Dávka** pro zpracování konsolidace.</span><span class="sxs-lookup"><span data-stu-id="0e270-107">When you've finished, you can click **OK** or **Batch** to process the consolidation.</span></span>
+
+## <a name="criteria"></a><span data-ttu-id="0e270-108">Kritéria</span><span class="sxs-lookup"><span data-stu-id="0e270-108">Criteria</span></span>
+<span data-ttu-id="0e270-109">Na kartě **Kritéria** na stránce **Konsolidace [Online]** definujete účty, období a typ dat, která jsou konsolidována.</span><span class="sxs-lookup"><span data-stu-id="0e270-109">On the **Criteria** tab of the **Consolidate [Online]** page, you define the accounts, the periods, and the type of data that is being consolidated.</span></span>
+
+<span data-ttu-id="0e270-110">![Karta Kritéria](./media/criteria-consolidate-online.png "Karta kritéria")</span><span class="sxs-lookup"><span data-stu-id="0e270-110">![Criteria tab](./media/criteria-consolidate-online.png "Criteria tab")</span></span>
+
+<span data-ttu-id="0e270-111">Zde je vysvětlení různých polí na této kartě:</span><span class="sxs-lookup"><span data-stu-id="0e270-111">Here is an explanation of the various fields on this tab:</span></span>
+
+- <span data-ttu-id="0e270-112">**Popis** – Zadejte přesný popis pro období, které konsolidujete.</span><span class="sxs-lookup"><span data-stu-id="0e270-112">**Description** – Enter a precise description for the period that you're consolidating.</span></span>
+- <span data-ttu-id="0e270-113">**Hlavní účet** – Použijte pole v této části definování hlavních účtů, které budou zpracovány.</span><span class="sxs-lookup"><span data-stu-id="0e270-113">**Main account** – Use the fields in this section to define the main accounts that will be processed.</span></span>
+
+    - <span data-ttu-id="0e270-114">**Od** a **Do** – Určete rozsah účtů, které chcete zpracovat.</span><span class="sxs-lookup"><span data-stu-id="0e270-114">**From** and **To** – Specify a range of accounts to process.</span></span> <span data-ttu-id="0e270-115">Ponecháte-li tato pole prázdná, budou všechny účty ze všech společností přesunuty do konsolidované společnosti.</span><span class="sxs-lookup"><span data-stu-id="0e270-115">If you leave these fields blank, all accounts from all companies will be moved to the consolidation company.</span></span> <span data-ttu-id="0e270-116">Proto při konsolidaci čtyř společností, když má každá společnost jinou účtovou osnovy, všechny účty ze všech čtyř společností budou vytvořeny v konsolidační společnosti.</span><span class="sxs-lookup"><span data-stu-id="0e270-116">Therefore, if you're consolidating four companies, and each company has a different chart of accounts, all accounts from all four companies will be created in the consolidation company.</span></span>
+    - <span data-ttu-id="0e270-117">**Použít konsolidační účet** – Když nastavíte tuto možnost na hodnotu **Ano**, pole **Vybrat konsolidační účet z** bude k dispozici.</span><span class="sxs-lookup"><span data-stu-id="0e270-117">**Use consolidation account** – If you set this option to **Yes**, the **Select consolidation account from** field becomes available.</span></span> <span data-ttu-id="0e270-118">V tomto poli vyberte, zda mají být konsolidovány všechny účty na konsolidační účet, který je nastaven na stránce **Hlavní účty**, nebo zda chcete vybrat účet z jedné ze skupin konsolidačních účtů.</span><span class="sxs-lookup"><span data-stu-id="0e270-118">In this field, select whether all accounts should be consolidated to the consolidation account that is set on the **Main accounts** page, or whether you want to select the account from one of the consolidation account groups.</span></span>
+    - <span data-ttu-id="0e270-119">**Skupina konsolidačních účtů** – Vyberte skupinu, kterou chcete použít pro mapování hlavního účtu pro konsolidaci.</span><span class="sxs-lookup"><span data-stu-id="0e270-119">**Consolidation account group** – Select the group to use for the main account mapping for the consolidation.</span></span>
+
+- <span data-ttu-id="0e270-120">**Období konsolidace** – Použijte pole v této části k definování období konsolidace.</span><span class="sxs-lookup"><span data-stu-id="0e270-120">**Consolidation period** – Use the fields in this section to define the consolidation period.</span></span>
+
+    - <span data-ttu-id="0e270-121">**Od** a **Do** – Určete rozmezí dat pro konsolidaci.</span><span class="sxs-lookup"><span data-stu-id="0e270-121">**From** and **To** – Specify a range of dates for the consolidation.</span></span> <span data-ttu-id="0e270-122">Ponecháte-li tato pole prázdná, konsolidace bude zpracována za všechna období, která jsou definována v kalendáři hlavní knihy společnosti.</span><span class="sxs-lookup"><span data-stu-id="0e270-122">If you leave these fields blank, the consolidation will be processed for all periods that are defined in the ledger calendar for the company.</span></span> <span data-ttu-id="0e270-123">Nedoporučujeme ponechat tato pole prázdná.</span><span class="sxs-lookup"><span data-stu-id="0e270-123">We don't recommend that you leave these fields blank.</span></span>
+    - <span data-ttu-id="0e270-124">**Zahrnout skutečné částky** – Nastavte tuto možnost na **Ano** pro konsolidaci vašich skutečných dat.</span><span class="sxs-lookup"><span data-stu-id="0e270-124">**Include actual amounts** – Set this option to **Yes** to consolidate your actual data.</span></span>
+    - <span data-ttu-id="0e270-125">**Zahrnout rozpočtové částky** – Nastavte tuto možnost na **Ano** pro konsolidaci dat z registru rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="0e270-125">**Include budget amounts** – Set this option to **Yes** to consolidate data from the budget register.</span></span>
+    - <span data-ttu-id="0e270-126">**Znovu vytvořit zůstatky během procesu konsolidace** – Nedoporučujeme nastavit tuto možnost na **Ano**.</span><span class="sxs-lookup"><span data-stu-id="0e270-126">**Rebuild balances during consolidation** – We don't recommend that you set this option to **Yes**.</span></span> <span data-ttu-id="0e270-127">Místo toho znovu sestavte zůstatky jako samostatnou dávkovou úlohu.</span><span class="sxs-lookup"><span data-stu-id="0e270-127">Instead, rebuild balances as a separate batch job.</span></span>
+
+- <span data-ttu-id="0e270-128">**Rozpočtové modely** – Pokud jste vybrali konsolidaci dat rozpočtu, použijte pole v této části k definování rozpočtových modelů.</span><span class="sxs-lookup"><span data-stu-id="0e270-128">**Budget models** – If you've selected to consolidate budget data, use the fields in this section to define the budget models.</span></span>
+
+    - <span data-ttu-id="0e270-129">**Od** a **Do** – Určete rozsah modelů, které chcete použít.</span><span class="sxs-lookup"><span data-stu-id="0e270-129">**From** and **To** – Specify the range of models to use.</span></span>
+    - <span data-ttu-id="0e270-130">**Typ rozpočtové sazby** – Vyberte typ rozpočtové sazby, kterou chcete použít pro převod měny dat rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="0e270-130">**Budget rate type** – Select the type of budget rate to use for currency translation of budget data.</span></span>
+
+## <a name="financial-dimensions"></a><span data-ttu-id="0e270-131">Finanční dimenze</span><span class="sxs-lookup"><span data-stu-id="0e270-131">Financial dimensions</span></span>
+<span data-ttu-id="0e270-132">Na kartě **Finanční dimenze** definujete dimenze, které mají být zahrnuty v konsolidační společnosti.</span><span class="sxs-lookup"><span data-stu-id="0e270-132">On the **Financial dimensions** tab, you define the dimensions that should be included in the consolidation company.</span></span> <span data-ttu-id="0e270-133">Chcete-li vybrat dimenze, nastavte pole **Specifikace** na **dimenze** a pak definujte pořadí dimenze v konsolidační společnosti.</span><span class="sxs-lookup"><span data-stu-id="0e270-133">To select a dimension, set the **Specification** field to **Dimension**, and then define the order of the dimension in the consolidation company.</span></span>
+
+<span data-ttu-id="0e270-134">![Karta Finanční dimenze](./media/financial-dimensions-cons.png "karta Finanční dimenze")</span><span class="sxs-lookup"><span data-stu-id="0e270-134">![Financial dimensions tab](./media/financial-dimensions-cons.png "Financial dimensions tab")</span></span>
+
+<span data-ttu-id="0e270-135">Bez ohledu na pořadí, které definujete, bude **Hlavní účet** vždy prvním segmentem.</span><span class="sxs-lookup"><span data-stu-id="0e270-135">Regardless of the order that you define, **Main account** will always be the first segment.</span></span>
+
+## <a name="legal-entities"></a><span data-ttu-id="0e270-136">Právnické osoby</span><span class="sxs-lookup"><span data-stu-id="0e270-136">Legal entities</span></span>
+<span data-ttu-id="0e270-137">Na kartě **Právnické osoby** definujete společnosti, které mají být zahrnuty v konsolidační společnosti.</span><span class="sxs-lookup"><span data-stu-id="0e270-137">On the **Legal entities** tab, you define the companies that should be included in the consolidation company.</span></span> <span data-ttu-id="0e270-138">Můžete také definovat procento vlastnictví těchto společností.</span><span class="sxs-lookup"><span data-stu-id="0e270-138">You also define the ownership percentage of those companies.</span></span> <span data-ttu-id="0e270-139">Zadáte-li nižší než 100% vlastnictví, zadané procento bude zahrnuto do konsolidační společnosti.</span><span class="sxs-lookup"><span data-stu-id="0e270-139">If you specify less than 100-percent ownership, the specified percentage will be rolled up to the consolidation company.</span></span> <span data-ttu-id="0e270-140">Pro všechny rozdíly převodu se použije pole **Typ účtu pro rozdíly převodu** k výběru hlavního účtu z nastavení na stránce **Účty pro automatické transakce**.</span><span class="sxs-lookup"><span data-stu-id="0e270-140">For any translation differences, the **Account type for conversion differences** field is used to select the main account from the setup on the **Accounts for automatic transactions** page.</span></span>
+
+<span data-ttu-id="0e270-141">![Karta Právnické osoby](./media/legal-entities-cons.png "Karta Právnické osoby")</span><span class="sxs-lookup"><span data-stu-id="0e270-141">![Legal entities tab](./media/legal-entities-cons.png "Legal entities tab")</span></span>
+
+<span data-ttu-id="0e270-142">![Stránka Účty pro automatické transakce](./media/accounts%20for%20automatic%20(cons).png "Stránka Účty pro automatické transakce")</span><span class="sxs-lookup"><span data-stu-id="0e270-142">![Accounts for automatic transactions page](./media/accounts%20for%20automatic%20(cons).png "Accounts for automatic transactions page")</span></span>
+
+## <a name="elimination"></a><span data-ttu-id="0e270-143">Eliminace</span><span class="sxs-lookup"><span data-stu-id="0e270-143">Elimination</span></span>
+<span data-ttu-id="0e270-144">Na kartě **Eliminace** máte tři možnosti pro zpracování eliminací:</span><span class="sxs-lookup"><span data-stu-id="0e270-144">On the **Elimination** tab, you have three options for processing eliminations:</span></span>
+
+- <span data-ttu-id="0e270-145">Vyberte pravidlo eliminace a poté v poli **Možnosti návrhu** vyberte **Pouze návrh**.</span><span class="sxs-lookup"><span data-stu-id="0e270-145">Select the elimination rule, and then, in the **Proposal options** field, select **Proposal only**.</span></span> <span data-ttu-id="0e270-146">Tato možnost zpracuje eliminaci během procesu konsolidace, ale nezaúčtuje vše v jednom kroku.</span><span class="sxs-lookup"><span data-stu-id="0e270-146">This option will process the elimination during the consolidation process, but it won't post everything in one step.</span></span> <span data-ttu-id="0e270-147">Zaúčtovat deník můžete později.</span><span class="sxs-lookup"><span data-stu-id="0e270-147">You can post the journal later.</span></span>
+- <span data-ttu-id="0e270-148">Vyberte pravidlo eliminace a poté v poli **Možnosti návrhu** vyberte **Pouze zaúčtovat**.</span><span class="sxs-lookup"><span data-stu-id="0e270-148">Select the elimination rule, and then, in the **Proposal options** field, select **Post only**.</span></span> <span data-ttu-id="0e270-149">Tato možnost zpracuje eliminaci během procesu konsolidace a zaúčtuje vše v jednom kroku.</span><span class="sxs-lookup"><span data-stu-id="0e270-149">This option will process the elimination during the consolidation process and will post everything in one step.</span></span>
+- <span data-ttu-id="0e270-150">Spusťte návrh eliminace odděleně od procesu konsolidace pomocí deníku eliminace.</span><span class="sxs-lookup"><span data-stu-id="0e270-150">Run an elimination proposal separately from the consolidation process by using the elimination journal.</span></span>
+
+<span data-ttu-id="0e270-151">![Karta Eliminace](./media/elimination-cons-onl.png "Karta Eliminace")</span><span class="sxs-lookup"><span data-stu-id="0e270-151">![Elimination tab](./media/elimination-cons-onl.png "Elimination tab")</span></span>
+
+<span data-ttu-id="0e270-152">Další informace o eliminacích naleznete v tématu [Pravidla eliminace](./elimination-rules.md).</span><span class="sxs-lookup"><span data-stu-id="0e270-152">For more information about eliminations, see [Elimination rules](./elimination-rules.md).</span></span>
+
+## <a name="currency-translation"></a><span data-ttu-id="0e270-153">Převod měny</span><span class="sxs-lookup"><span data-stu-id="0e270-153">Currency translation</span></span>
+<span data-ttu-id="0e270-154">Na kartě **Převod měny** definujete právnickou osobu, účet a typ směnného kurzu a sazbu.</span><span class="sxs-lookup"><span data-stu-id="0e270-154">On the **Currency translation** tab, you define the legal entity, account and exchange rate type, and rate.</span></span> <span data-ttu-id="0e270-155">V poli **Použít směnný kurz z** jsou k dispozici tři možnosti:</span><span class="sxs-lookup"><span data-stu-id="0e270-155">Three options are available in the **Apply exchange rate from** field:</span></span>
+
+- <span data-ttu-id="0e270-156">**Datum konsolidace** – Datum konsolidace se použije k získání směnného kurzu.</span><span class="sxs-lookup"><span data-stu-id="0e270-156">**Consolidation date** – The date of the consolidation will be used to get the exchange rate.</span></span> <span data-ttu-id="0e270-157">Tento kurz je ekvivalentem místního kurzu nebo kurzu na konci měsíce.</span><span class="sxs-lookup"><span data-stu-id="0e270-157">This rate is equivalent to the spot or month-end rate.</span></span> <span data-ttu-id="0e270-158">Zobrazí se náhled kurzu, ale nelze ho upravovat.</span><span class="sxs-lookup"><span data-stu-id="0e270-158">You will see a preview of the rate, but you can't edit it.</span></span>
+- <span data-ttu-id="0e270-159">**Datum transakce** – Datum každé transakce se použije k výběru směnného kurzu.</span><span class="sxs-lookup"><span data-stu-id="0e270-159">**Transaction date** – The date of each transaction will be used to select an exchange rate.</span></span> <span data-ttu-id="0e270-160">Tato možnost se nejčastěji používá pro dlouhodobý majetek a obvykle se označuje jako historický kurz.</span><span class="sxs-lookup"><span data-stu-id="0e270-160">This option is most often used for fixed assets and is often referred to as a historical rate.</span></span> <span data-ttu-id="0e270-161">Nelze zobrazit náhled kurzu, protože existuje mnoho kurzů pro různé transakce v rozsahu účtu.</span><span class="sxs-lookup"><span data-stu-id="0e270-161">You can't see a preview of the rate, because there will be many rates for the various transactions in the account range.</span></span>
+- <span data-ttu-id="0e270-162">**Sazba definovaná uživatelem** – Když vyberete tuto možnost, můžete zadat směnný kurz, který chcete.</span><span class="sxs-lookup"><span data-stu-id="0e270-162">**User defined rate** – After you select this option, you can enter the exchange rate that you want.</span></span> <span data-ttu-id="0e270-163">Tato možnost může být užitečná pro průměrné směnné kurzy, nebo pokud konsolidujete proti pevnému směnnému kurzu.</span><span class="sxs-lookup"><span data-stu-id="0e270-163">This option can be useful for average exchange rates or if you're consolidating against a fixed exchange rate.</span></span>
+
+<span data-ttu-id="0e270-164">![Karta Převod měny](./media/currency-translation-cons-online.png "Karta Převod měny")</span><span class="sxs-lookup"><span data-stu-id="0e270-164">![Currency translation tab](./media/currency-translation-cons-online.png "Currency translation tab")</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="0e270-165">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="0e270-165">Additional resources</span></span>
+
+<span data-ttu-id="0e270-166">Další informace o konsolidaci a převodech měn naleznete v nadřazeném tématu [Finanční konsolidace a převod měny](./financial-consolidations-currency-translation.md).</span><span class="sxs-lookup"><span data-stu-id="0e270-166">For more information about consolidation and currency translations, see the parent topic of this topic, [Financial consolidations and currency translation](./financial-consolidations-currency-translation.md).</span></span>
+
+<span data-ttu-id="0e270-167">Další informace o scénářích, kde můžete vygenerovat konsolidační finanční výkazy naleznete v tématu [Generování konsolidovaných finančních výkazů](./generating-consolidated-financial-statements.md).</span><span class="sxs-lookup"><span data-stu-id="0e270-167">For information about scenarios where you might generate consolidate financial statements, see [Generate consolidated financial statements](./generating-consolidated-financial-statements.md).</span></span>
+
