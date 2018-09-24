@@ -19,10 +19,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 17b42ae7e177a42b732654f2952ec5fe35acb1a9
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 1bb4b55fd929c105c20a1d4b1086bbb7f07d5eb1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,34 +35,34 @@ Toto téma popisuje obsah Power BI **Metriky zaměstnanců**. Vysvětluje přís
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 Obsah **Metriky zaměstnanců** v Power BI se zobrazuje v pracovním prostoru **Správa pracovníků**, pokud používáte jeden z následujících produktů:
 
-- Microsoft Dynamics 365 for Finance and Operations 
+- Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriky, které jsou součástí obsahu Power BI
 V následující tabulce jsou uvedeny metriky, které jsou zobrazeny pro každou sestavu.
 
-| Sestava                                           | Metrika                                                                                                                                                                                                            |
-|--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nastavení osob                                   | Souhrn dalších sestav                                                                                                                           |
-| Analýza počtu osob ve společnosti, oddělení, umístění | Počet osob ve společnosti, počet osob podle oddělení, počet osob podle umístění a celkový počet osob                                                                                                                           |
-| Úloha analýzy počtu osob, krok, manažer            | Počet osob podle úkolu, počet osob podle kroku, počet osob podle manažera a celkový počet osob                                                                                                                                      |
-| Analýza trendů počtu osob                         | Počet osob tento rok versus minulý rok podle společnosti a postupný počet zaměstnanců za posledních 12 měsíců                                                                                                                        |
+| Sestava                                           | Metrika |
+|--------------------------------------------------|---------|
+| Nastavení osob                                   | Souhrn dalších sestav |
+| Analýza počtu osob ve společnosti, oddělení, umístění | Počet osob ve společnosti, počet osob podle oddělení, počet osob podle umístění a celkový počet osob |
+| Úloha analýzy počtu osob, krok, manažer            | Počet osob podle úkolu, počet osob podle kroku, počet osob podle manažera a celkový počet osob |
+| Analýza trendů počtu osob                         | Počet osob tento rok versus minulý rok podle společnosti a postupný počet zaměstnanců za posledních 12 měsíců |
 | Analýza FTE                                     | Celkový ekvivalent plného úvazku (FTE), celkem přiřazené FTE, FTE podle oddělení, FTE za posledních 12 měsíců, a FTE podle úlohy |
 | Demografické složení pracovní síly                           | Počet osob podle věku a pohlaví, počet osob podle etnického původu, počet zaměstnanců podle stavu veterána, počet osob podle rodinného stavu, počet studentů na plný úvazek, průměrná doba služby, průměrný věk, poměr počtu žen k počtu mužů mezi zaměstnanci a jazyky, jakými zaměstnanci hovoří |
-| Analýza pozice                                | Otevřené pozice podle oddělení, pozice otevřené k vyplnění, aktivní-neaktivní pozice a pozice podle oddělení                                                                                                   |
-| Analýza úbytku pracovních sil                               | Přirozené úbytky v tomto roce oproti minulého roku, odcházející zaměstnanci podle pohlaví a věku, průměrné funkční období odcházejících zaměstnanců, zaměstnanci, kteří odešli tento měsíc a zaměstnanci, kteří odcházejí, podle důvodů                                                                   |
-| Lidé podle oddělení                             | Zaměstnanci s osobním čísemo podle oddělení, pozice a přiřazení počátečního a koncového data                                                                                                                       |
-| Analýza odsloužené doby                               | Průměrné funkční období, průměrný počet let ve společnosti a seznam podle služebního věku                                                                                                                                                              |
-| Výročí zaměstnanců                           | Výročí tento měsíc, výročí příští měsíc, zaměstnanci podle odsloužených let a výročí, roky ve službě podle oddělení                                                                                                                                                                    |
-| Narozeniny zaměstnance                               | Narozeniny tento měsíc, narozeniny další měsíc, narozeniny zaměstnanců a narozeniny podle oddělení a měsíce                                                                                                                                                                    |
-| Projekty hromadného zařazení                               | Celkový počet projektů hromadného zařazení, projekty hromadného zařazení podle stavu, projekty hromadného zařazení podle oddělení a vlastníka, projekty hromadného zařazení podle úlohy a projekty hromadného zařazení                                                                                                                                                                    |
+| Analýza pozice                                | Otevřené pozice podle oddělení, pozice otevřené k vyplnění, aktivní-neaktivní pozice a pozice podle oddělení |
+| Analýza úbytku pracovních sil                               | Přirozené úbytky v tomto roce oproti minulého roku, odcházející zaměstnanci podle pohlaví a věku, průměrné funkční období odcházejících zaměstnanců, zaměstnanci, kteří odešli tento měsíc a zaměstnanci, kteří odcházejí, podle důvodů |
+| Lidé podle oddělení                             | Zaměstnanci s osobním čísemo podle oddělení, pozice a přiřazení počátečního a koncového data |
+| Analýza odsloužené doby                               | Průměrné funkční období, průměrný počet let ve společnosti a seznam podle služebního věku |
+| Výročí zaměstnanců                           | Výročí tento měsíc, výročí příští měsíc, zaměstnanci podle odsloužených let a výročí, roky ve službě podle oddělení |
+| Narozeniny zaměstnance                               | Narozeniny tento měsíc, narozeniny další měsíc, narozeniny zaměstnanců a narozeniny podle oddělení a měsíce |
+| Projekty hromadného zařazení                               | Celkový počet projektů hromadného zařazení, projekty hromadného zařazení podle stavu, projekty hromadného zařazení podle oddělení a vlastníka, projekty hromadného zařazení podle úlohy a projekty hromadného zařazení |
 
 Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 Nezapomeňte si stáhnout obsah **Metriky zaměstnanců** v Power BI, který se vztahuje k vámi používané verzi aplikace Microsoft Dynamics 365.
 
->[!NOTE]
->Soubory .pbix dostupné ve službě Lifecycle Services platí pouze pro aplikaci Finance and Operations.
+> [!NOTE]
+> Soubory .pbix dostupné ve službě Lifecycle Services platí pouze pro aplikaci Finance and Operations.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
 Následující tabulka zobrazuje entity, na kterých je obsah založen.
@@ -88,6 +88,4 @@ Následující tabulka zobrazuje entity, na kterých je obsah založen.
 | Trend zaměstnance           | Pracovníci během času, počet zaměstnanců, společnost a pozice                                 | Společnost, geografické umístění, jméno zaměstnance, nadřízený, posun kalendáře, datum, pracovní zařazení, demografické údaje, práce, zaměstnání |
 | Projekt hromadného zařazení        | Počet projektů hromadného zařazení, vlastník projektu a stav projektu                     | Společnost, řádek Hromadné zařazení |
 | Řádek hromadné zařazení           | Oddělení, typ zaměstnání a pozice                                           | Datum, pozice, projekt hromadného zařazení |
-
-
 

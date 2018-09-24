@@ -1,6 +1,6 @@
 --- 
 title: "Proces získání nároku na zaměstnaneckou výhodu"
-description: "Tento postup upravuje proces nároku na zaměstnanecké výhody."
+description: "Tento postup ukazuje, jak funguje proces nároku na zaměstnanecké výhody."
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
@@ -17,17 +17,17 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7c05c7613ee0d37d6bdfcb42f4e9611629d215bd
+ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
+ms.openlocfilehash: fe773bd2375b2dea8e13a57918ad584f83f61073
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 02/14/2018
 
 ---
 # <a name="benefit-eligibility-process"></a>Proces získání nároku na zaměstnaneckou výhodu
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup upravuje proces nároku na zaměstnanecké výhody. Výsledky se zobrazí po dokončení procesu. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
+Tento postup ukazuje, jak funguje proces nároku na zaměstnanecké výhody. Výsledky se zobrazí po dokončení procesu. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 
 1. Přejděte k nabídce Lidské zdroje > Výhody > Výhody.
 2. Vyhledejte na seznamu požadovaný záznam a vyberte ho.

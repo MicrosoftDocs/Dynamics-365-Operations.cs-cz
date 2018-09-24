@@ -17,10 +17,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: d59a7aef90ecef0cd947b833f1cce1e2372f3033
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 2bc4c409b831b78ef737a98ce985bf144853a454
 ms.contentlocale: cs-cz
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -43,7 +43,7 @@ Tento obsah Power BI také lze analyzuje výrobní odchylky. Výrobní odchylky 
 Obsah **Výkonnost výroby** v Power BI zahrnuje data, která pocházejí z výrobních zakázek a dávkových objednávek. Sestavy neobsahují data, která souvisí s kanbanovými výrobami.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Obsah Power BI **Výkonnost výroby** se zobrazí na stránce **Výkonnost výroby** (**Řízení výroby** > **Dotazy a sestavy** > **Analýza výkonnosti výroby** > **Výkonnost výroby**). 
+Obsah Power BI **Výkonnost výroby** se zobrazí na stránce **Výkonnost výroby** (**Řízení výroby** \> **Dotazy a sestavy** \> **Analýza výkonnosti výroby** \> **Výkonnost výroby**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriky, které jsou součástí obsahu Power BI
 
@@ -51,9 +51,9 @@ Obsah **Výkonnost výroby** v Power BI zahrnuje sadu stránek sestavy. Každá 
 
 Následující tabulka poskytuje přehled zahrnutých vizualizací.
 
-| Stránka sestavy                                | Grafy                                               | Dlaždice |
-|--------------------------------------------|------------------------------------------------------|-------|
-| Výkon výroby                     | <ul><li>Množství výroby podle data</li><li>Množství výroby podle produktu a skupiny položek</li><li>Množství plánované výroby podle data</li><li>Dolních 10 produktů podle včasného a plného dodání</li></ul> | <ul><li>Celkem objednávek</li><li>Včas a v plném rozsahu %</li><li>Neúplné v %</li><li>Včasné v %</li><li>Zpožděné v %</li></ul> |
+| Stránka sestavy                                | Grafy | Dlaždice |
+|--------------------------------------------|--------|-------|
+| Výkon výroby                     | <ul><li>Množství výroby podle data</li><li>Množství výroby podle produktu a skupiny položek</li><li>Množství plánované výroby podle data</li><li>Dolních 10 produktů podle včasného a plného dodání</li></ul> | <ul><li>Celkem objednávek</li><li>Včas a v plném %</li><li>Neúplné v %</li><li>Včasné v %</li><li>Zpožděné v %</li></ul> |
 | Vady podle produktu                         | <ul><li>Míra vad (ppm) dle data</li><li>Míra chyb (ppm) podle produktu a skupiny položek</li><li>Dosud vyrobené množství</li><li>10 hlavních produktů podle platné sazby</li></ul> | <ul><li>Míra vad (ppm)</li><li>Chybné množství</li><li>Celkové množství</li></ul> |
 | Trend vad podle produktu                   | Míra vad (ppm) podle vyrobeného množství | Míra vad (ppm) |
 | Vady podle zdrojů                        | <ul><li>Míra vad (ppm) podle data</li><li>Míra vad (ppm) podle zdroje a pracoviště</li><li>Míra vad (ppm) podle operace</li><li>Hlavních 10 zdrojů podle míry vad</li></ul> | Chybné množství |
@@ -88,35 +88,35 @@ Následující tabulka zobrazuje, jak se používají klíčové měrné systém
 
 | Výměra                  | Jak vypočítat míru |
 |--------------------------|-------------------------------|
-| Výrobní odchylka, v %   | SUMA('Výrobní odchylka'[Výrobní odchylka]) / SUMA('Výrobní odchylka'[Odhadované náklady]) |
+| Výrobní odchylka, v %   | SUMA('Výrobní odchylka'\[Výrobní odchylka\]) / SUMA('Výrobní odchylka'\[Odhadované náklady\]) |
 | Všechny plánované objednávky       | COUNTROWS('Plánovaná výrobní zakázka') |
-| Včasné                    | COUNTROWS(FILTER('Plánovaná výrobní zakázka', Plánovaná výrobní zakázka'[Plánované koncové datum] \< 'Plánovaná výrobní zakázka'[Datum požadavku])) |
-| Zpožděné                     | COUNTROWS(FILTER('Plánovaná výrobní zakázka', Plánovaná výrobní zakázka'[Plánované koncové datum] \> 'Plánovaná výrobní zakázka'[Datum požadavku])) |
-| Včas                  | COUNTROWS(FILTER('Plánovaná výrobní zakázka', Plánovaná výrobní zakázka'[Plánované koncové datum]= ' 'Plánovaná výrobní zakázka'[Datum požadavku])) |
-| Včas %                | IF ( 'Plánovaná výrobní zakázka'[Včas] \<\> 0, 'Plánovaná výrobní zakázka'[Včas], IF ('Plánovaná výrobní zakázka'[Všechny plánované zakázky] \<\> 0, 0, BLANK()) ) / 'Plánovaná výrobní zakázka'[Všechny plánované zakázky] |
-| Dokončené                | COUNTROWS(FILTER('Výrobní zakázka', 'Výrobní zakázka'[Je s RAF] = TRUE)) |
-| Míra vad (ppm)     | IF( 'Výrobní zakázka'[Celkové množství] = 0, BLANK(), (SUM('Výrobní zakázka'[Vadné množství]) / 'Výrobní zakázka'[Celkové množství]) \* 1000000) |
-| Zpožděné plnění termínů výroby  | 'Výrobní zakázka'[Pozdě \#] / 'Výrobní zakázka'[Dokončená] |
-| Včas a v plném rozsahu          | COUNTROWS(FILTER('Výrobní zakázka', 'Výrobní zakázka'[Je v plném rozsahu] = TRUE && 'Výrobní zakázka'[Je včas] = TRUE)) |
-| Včas \#                 | COUNTROWS(FILTER('Výrobní zakázka', 'Výrobní zakázka'[Je včas] = TRUE)) |
-| Včasné v %                  | IFERROR( IF('Výrobní zakázka'[Včas \#] \<\> 0, 'Výrobní zakázka'[Včas \#], IF('Výrobní zakázka'[Celkem zakázek] = 0, BLANK(), 0)) / 'Výrobní zakázka'[Celkem zakázek], BLANK()) |
-| Neúplné               | COUNTROWS(FILTER('Výrobní zakázka', 'Výrobní zakázka'[Je v plném rozsahu] = FALSE && 'Výrobní zakázka'[Je s RAF] = TRUE)) |
-| Neúplné v %             | IFERROR( IF('Výrobní zakázka'[Neúplné] \<\> 0, 'Výrobní zakázka'[Neúplné], IF('Výrobní zakázka'[Celkem zakázek] = 0, BLANK(), 0)) / 'Výrobní zakázka'[Celkem zakázek], BLANK()) |
-| Je zpožděno               | 'Výrobní zakázka'[Je s RAF] = TRUE && 'Výrobní zakázka'[Hodnota Zpoždění] = 1 |
-| Je včas                 | 'Výrobní zakázka'[Je s RAF] = TRUE && 'Výrobní zakázka'[Dny zpoždění] \< 0 |
-| Je v plném rozsahu               | 'Výrobní zakázka'[Dobré množství] \>= 'Výrobní zakázka'[Plánované množství] |
-| Je s RAF                | 'Výrobní zakázka'[Hodnota stavu výroby] = 5 \|\| 'Výrobní zakázka'[Hodnota stavu výroby] = 7 |
-| Zpoždění a v plném rozsahu           | COUNTROWS(FILTER('Výrobní zakázka', 'Výrobní zakázka'[Je v plném rozsahu] = TRUE && 'Výrobní zakázka'[Je zpožděna] = TRUE)) |
-| Zpožděné \#                  | COUNTROWS(FILTER('Výrobní zakázka', 'Výrobní zakázka'[Je zpožděná] = TRUE)) |
-| Zpožděné v %                   | IFERROR( IF('Výrobní zakázka'[Pozdě \#] \<\> 0, 'Výrobní zakázka'[Pozdě \#], IF('Výrobní zakázka'[Celkem zakázek] = 0, BLANK(), 0)) / 'Výrobní zakázka'[Celkem zakázek], BLANK()) |
-| Včas a v plném rozsahu        | COUNTROWS(FILTER('Výrobní zakázka', 'Výrobní zakázka'[Je plně realizovaná] = TRUE && 'Výrobní zakázka'[Je zpožděná] = FALSE && 'Výrobní zakázka'[Je včas] = FALSE)) |
-| Včas a v plném rozsahu %      | IFERROR( IF('Výrobní zakázka'[Včas a úplná] \<\> 0, 'Výrobní zakázka'[Včas a úplná], IF('Výrobní zakázka'[Dokončeno] = 0, BLANK(), 0)) / 'Výrobní zakázka'[Dokončeno], BLANK()) |
+| Včasné                    | COUNTROWS(FILTER('Plánovaná výrobní zakázka', Plánovaná výrobní zakázka'\[Plánované koncové datum\] \< 'Plánovaná výrobní zakázka'\[Datum požadavku\])) |
+| Zpožděné                     | COUNTROWS(FILTER('Plánovaná výrobní zakázka', Plánovaná výrobní zakázka'\[Plánované koncové datum\] \> 'Plánovaná výrobní zakázka'\[Datum požadavku\])) |
+| Včas                  | COUNTROWS(FILTER('Plánovaná výrobní zakázka', Plánovaná výrobní zakázka'\[Plánované koncové datum\] = 'Plánovaná výrobní zakázka'\[Datum požadavku\])) |
+| Včas %                | IF ( 'Plánovaná výrobní zakázka'\[Včas\] \<\> 0, 'Plánovaná výrobní zakázka'\[Včas\], IF ('Plánovaná výrobní zakázka'\[Všechny plánované zakázky\] \<\> 0, 0, BLANK()) ) / 'Plánovaná výrobní zakázka'\[Všechny plánované zakázky\] |
+| Dokončené                | COUNTROWS(FILTER('Výrobní zakázka', 'Výrobní zakázka'\[Je RAF'ed\] = TRUE)) |
+| Míra vad (ppm)     | IF( 'Výrobní zakázka'\[Celkové množství\] = 0, BLANK(), (SUM('Výrobní zakázka'\[Vadné množství\]) / 'Výrobní zakázka'\[Celkové množství\]) \* 1000000) |
+| Zpožděné plnění termínů výroby  | 'Výrobní zakázka'\[Pozd+ \#\] / 'Výrobní zakázka'\[Dokončená\] |
+| Včas a v plném rozsahu          | COUNTROWS(FILTER('Výrobní zakázka', 'Výrobní zakázka'\[Je v plném rozsahu\] = TRUE && 'Výrobní zakázka'\[Je včas\] = TRUE)) |
+| Včas \#                 | COUNTROWS(FILTER('Výrobní zakázka', 'Výrobní zakázka'\[Je včas\] = TRUE)) |
+| Včasné v %                  | IFERROR( IF('Výrobní zakázka'\[Včas \#\] \<\> 0, 'Výrobní zakázka'\[Včas \#\], IF('Výrobní zakázka'\[Celkem zakázek\] = 0, BLANK(), 0)) / 'Výrobní zakázka'\[Celkem zakázek\], BLANK()) |
+| Nedokončeno               | COUNTROWS(FILTER('Výrobní zakázka', 'Výrobní zakázka'\[Je v plném rozsahu\] = FALSE && 'Výrobní zakázka'\[Je s RAF\] = TRUE)) |
+| Neúplné v %             | IFERROR( IF('Výrobní zakázka'\[Neúplné\] \<\> 0, 'Výrobní zakázka'\[Neúplné\], IF('Výrobní zakázka'\[Celkem zakázek\] = 0, BLANK(), 0)) / 'Výrobní zakázka'\[Celkem zakázek\], BLANK()) |
+| Je zpožděno               | 'Výrobní zakázka'\[Je s RAF\] = TRUE && 'Výrobní zakázka'\[Hodnota Zpoždění\] = 1 |
+| Je včas                 | 'Výrobní zakázka'\[Je s RAF\] = TRUE && 'Výrobní zakázka'\[Dny zpoždění\] \< 0 |
+| Je v plném rozsahu               | 'Výrobní zakázka'\[Dobré množství\] \>= 'Výrobní zakázka'\[Plánované množství\] |
+| Je s RAF                | 'Výrobní zakázka'\[Hodnota stavu výroby\] = 5 \|\| 'Výrobní zakázka'\[Hodnota stavu výroby\] = 7 |
+| Zpoždění a v plném rozsahu           | COUNTROWS(FILTER('Výrobní zakázka', 'Výrobní zakázka'\[Je v plném rozsahu\] = TRUE && 'Výrobní zakázka'\[Je zpožděna\] = TRUE)) |
+| Zpožděné \#                  | COUNTROWS(FILTER('Výrobní zakázka', 'Výrobní zakázka'\[Je zpožděná\] = TRUE)) |
+| Zpožděné v %                   | IFERROR( IF('Výrobní zakázka''\[Pozdě \#\] \<\> 0, 'Výrobní zakázka'\[Pozdě \#\], IF('Výrobní zakázka'\[Celkem zakázek\] = 0, BLANK(), 0)) / 'Výrobní zakázka'\[Celkem zakázek\], BLANK()) |
+| Včas a v plném rozsahu        | COUNTROWS(FILTER('Výrobní zakázka', 'Výrobní zakázka'\[Je plně realizovaná\] = TRUE && 'Výrobní zakázka'\[Je zpožděná\] = FALSE && 'Výrobní zakázka'\[Je včas\] = FALSE)) |
+| Včas a v plném rozsahu %      | IFERROR( IF('Výrobní zakázka'\[Včas a úplná\] \<\> 0, 'Výrobní zakázka'\[Včas a úplná\], IF('Výrobní zakázka'\[Dokončeno\] = 0, BLANK(), 0)) / 'Výrobní zakázka'\[Dokončeno\], BLANK()) |
 | Celkem objednávek             | COUNTROWS('Výrobní zakázka') |
-| Celkové množství           | SUM('Výrobní zakázka'[Dobré množství]) + SUM(Výrobní zakázka'[Vadné množství]) |
-| Míra vad (ppm)        | IF( 'Transakce směrování'[Zpracované množství] = 0, BLANK(), (SUM('Transakce směrování'[Vadné množství]) / 'Transakce směrování'[Zpracované množství]) \* 1000000) |
-| Smíšený poměr závad (ppm) | IF( 'Transakce směrování'[Celkem kombinované množství] = 0, BLANK(), (SUM('Transakce směrování'[Vadné množství]) / 'Transakce směrování'[Celkem kombinované množství]) \* 1000000) |
-| Zpracované množství       | SUM('Transakce směrování'[Dobré množství]) + SUM('Transakce směrování'[Vadné množství]) |
-| Celkové kombinované množství     | SUM('Výrobní zakázka'[Dobré množství]) + SUM('Transakce směrování'[Vadné množství]) |
+| Celkové množství           | SUM('Výrobní zakázka'\[Dobré množství\]) + SUM(Výrobní zakázka'\[Vadné množství\]) |
+| Míra vad (ppm)        | IF( 'Transakce směrování'\[Zpracované množství\] = 0, BLANK(), (SUM('Transakce směrování'\[Vadné množství\]) / 'Transakce směrování'\[Zpracované množství\]) \* 1000000) |
+| Smíšený poměr závad (ppm) | IF( 'Transakce směrování'\[Celkem kombinované množství\] = 0, BLANK(), (SUM('Transakce směrování'\[Vadné množství\]) / 'Transakce směrování'\[Celkem kombinované množství\]) \* 1000000) |
+| Zpracované množství       | SUM('Transakce směrování'\[Dobré množství\]) + SUM('Transakce směrování'\[Vadné množství\]) |
+| Celkové kombinované množství     | SUM('Výrobní zakázka'\[Dobré množství\]) + SUM('Transakce směrování'\[Vadné množství\]) |
 
 Následující tabulka uvádí klíčové dimenze, které se používají jako filtry k rozdělení agregovaných měření, aby bylo možné dosáhnout většího odstupňování a získat hlubší analytický přehled.
 
@@ -130,6 +130,4 @@ Následující tabulka uvádí klíčové dimenze, které se používají jako f
 | Entity                  | ID a jméno                                                   |
 | Zdroje                 | ID prostředku, název prostředku, typ prostředku a skupiny prostředků |
 | Produkty                  | Číslo produktu, název produktu, ID položky a skupina položek         |
-
-
 

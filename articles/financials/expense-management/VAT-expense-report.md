@@ -26,6 +26,8 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="vat-recovery-in-expense-management"></a>Vratka DPH ve správě výdajů
 
+[!include [banner](../includes/banner.md)]
+
 Chcete-li získat refundaci za transakce s nárokem na vrácení daně z přidané hodnoty, musí společnost nebo organizace identifikovat, shromažďovat, ověřovat a odesílat přesné informace. Tento proces zahrnuje více úloh a podle velikosti společnosti může zahrnovat několik zaměstnanců nebo rolí.
 
 Chcete-li získat zpět DPH pomocí správy nákladů, musíte splnit následující předpoklady:

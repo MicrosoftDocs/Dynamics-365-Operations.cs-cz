@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 3aa27b3ac263c6c952de7e4b508f48f21ba489ad
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 301dccaf154c3c12bcc4d611a147cdef03b8f851
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -37,21 +37,21 @@ Konfigurace formátu pro Elektronické výkaznictví (EV) obvykle obsahuje alesp
 ## <a name="availability-and-general-prerequisites"></a>Dostupnost a obecné požadavky
 Funkce cíle elektronického výkaznictví není k dispozici ve verzi Microsoft Dynamics AX 7.0 (únor 2016). Proto je třeba nainstalovat Microsoft Dynamics 365 for Operations verzi 1611 (listopad 2016), abyste mohli použít všechny funkce, které jsou popsány v tomto tématu. Případně můžete nainstalovat jeden z následujících požadovaných softwarů. Upozorňujeme však, že tyto alternativy poskytují omezené možnosti cíle ER.
 
--   Aplikace Microsoft Dynamics AX verze 7.0.1 (květen 2016)
--   [Opravy hotfix pro aktualizace](https://fix.lcs.dynamics.com/issue/results/?q=3160213) správy cílů EV
+- Aplikace Microsoft Dynamics AX verze 7.0.1 (květen 2016)
+- [Opravy hotfix pro aktualizace](https://fix.lcs.dynamics.com/issue/results/?q=3160213) správy cílů EV
 
 Cíle můžete nastavit pouze pro konfigurace EV, které byly importovány, a u formátů, které jsou k dispozici na stránce **Konfigurace elektronického výkaznictví**.
 
 ## <a name="overview"></a>Přehled
 Funkce správy cílů EV je k dispozici v nabídce **Správa organizace** &gt; **Elektronické výkaznictví**. Zde můžete přepsat výchozí chování pro konfiguraci. Importované konfigurace zde nejsou zobrazeny, dokud neklepnete na tlačítko **Nový** a pak v poli **Odkaz** nevyberete konfiguraci, pro kterou chcete vytvořit nastavení cíle.
 
-[![Výběr konfigurace v poli Odkaz](./media/ger-destinations-2-1611-1024x574.jpg)](./media/ger-destinations-2-1611.jpg) 
+[![Výběr konfigurace v poli Odkaz](./media/ger-destinations-2-1611-1024x574.jpg)](./media/ger-destinations-2-1611.jpg)
 
-Poté, co jste vytvořili odkaz, můžete vytvořit cíl souboru pro každou složku nebo pro soubor. 
+Poté, co jste vytvořili odkaz, můžete vytvořit cíl souboru pro každou složku nebo pro soubor.
 
 [![Vytvoření cíle souboru](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-> [!NOTE] 
+> [!NOTE]
 > Můžete vytvořit jedno místo určení souboru pro každou komponentu výstupu ve stejném formátu, jako je složka nebo soubor vybraný v poli **Název souboru**. Poté lze povolit nebo zakázat jednotlivé cíle pro cíl souboru v dialogovém okně **Nastavení cíle**. Tlačítko **Nastavení** se používá k řízení všech cílů pro vybraný cíl souboru. V dialogovém okně **Nastavení cíle** lze ovládat samostatně každý cíl nastavením možnosti **Povoleno**.
 
 [![Dialogové okno Nastavení cíle](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
@@ -73,7 +73,7 @@ Po kliknutí na tlačítko **Upravit** u pole **Komu** nebo **Kopie** se zobraz�
 
 Vyberete-li typ **Správa tisku – e-mail**, můžete zadat pevné e-mailové adresy do pole **Komu**. Pro použití jiných než pevných e-mailových adres je nutné vybrat typ zdroje e-mailu pro cíl souboru. Podporovány jsou následující hodnoty: **Odběratel**, **Dodavatel**, **Potenciální zákazník**, **Kontakt**, **Konkurent**, **Pracovník**, **Uchazeč**, **Potenciální dodavatel** a **Zakázaný dodavatel**. Po výběru typu zdroje e-mailu použijte tlačítko vedle pole **E-mail – zdrojový účet** a otevřete formulář **Návrhář receptur**. Tento formulář můžete použít k připojení vzorce, který představuje účet vybrané strany do cílového umístění e-mailu.
 
-[![Konfigurace typu e-mailu správy tisku](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) 
+[![Konfigurace typu e-mailu správy tisku](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg)
 
 Všimněte si, že vzorce jsou specifické pro konfiguraci EV. V poli **Vzorec** zadejte odkaz specifický pro dokument pro stranu typu Odběratel nebo Dodavatel. Namísto zadávání můžete najít uzel zdroje dat, který reprezentuje účet odběratele nebo dodavatele, a kliknutím na tlačítko **Přidat zdroj dat** aktualizovat vzorec. Příklad: Pokud používáte konfiguraci „platební převod ISO 20022“, uzel představující účet dodavatele má tvar **'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID**. V opačném případě uložte řetězec zadáním libovolné hodnoty řetězce, jako například **DE-001**.
 
@@ -87,23 +87,27 @@ V dialogovém okně **E-mail - komu** klikněte na koš vedle pole **E-mail – 
 
 Použijte tento typ e-mailu, pokud má použitá konfigurace uzel ve zdrojích dat, které představují e-mailovou adresu. Zdroje dat a funkce můžete použít v návrháři receptur, abyste získali správně naformátovanou e-mailovou adresu.
 
-[![Přiřazení zdroje dat e-mailové adresy k cíli e-mailu](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg) 
+[![Přiřazení zdroje dat e-mailové adresy k cíli e-mailu](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg)
 
-**Poznámka:** Server SMTP (Simple Mail Transfer Protocol) musí být nakonfigurován a být dostupný. Váš server SMTP můžete určit v aplikaci Finance and Operations v nabídce **Správa systému** &gt; **Nastavení** &gt; **E-mail** &gt; **Parametry e-mailu**.
+> [!NOTE]
+> Server SMTP (Simple Mail Transfer Protocol) musí být nakonfigurován a být dostupný. Váš server SMTP můžete určit v aplikaci Finance and Operations v nabídce **Správa systému** &gt; **Nastavení** &gt; **E-mail** &gt; **Parametry e-mailu**.
 
 ### <a name="archive-destination"></a>Cíl archivace
 
 Tuto možnost můžete použít k odeslání výstupu do složky Microsoft SharePoint nebo Microsoft Azure Storage. Nastavením **Povoleno** na **Ano** dojde k odeslání výstupu do cíle, který je definován pro vybraný typ dokumentu. K dispozici pro výběr jsou pouze typy dokumentu, kde je skupina nastavena na **Soubor**. Typy dokumentů definujete v části **Správa organizace** &gt; **Správa dokumentů** &gt; **Typy dokumentů**. Konfigurace pro cíle EV je stejná, jako nastavení pro systém správy dokumentů.
 
-[![Stránka typu dokumentu](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
+[![Stránka typu dokumentu](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg)
 
-Umístění určuje, kde bude soubor uložen. Po povolení cíle **Archiv** lze výsledky spuštění konfigurace uložit do archivu úloh. Výsledky můžete zobrazit pod **Správa organizace** &gt; **Elektronické výkaznictví** &gt; **Archivované úlohy elektronického výkaznictví**. **Poznámka:** Můžete vybrat typ dokumentu pro archiv úloh v aplikaci Finance and Operations pod **Správa organizace** &gt; **Pracovní prostory** &gt; **Elektronické výkaznictví** &gt; **Parametry elektronického výkaznictví**.
+Umístění určuje, kde bude soubor uložen. Po povolení cíle **Archiv** lze výsledky spuštění konfigurace uložit do archivu úloh. Výsledky můžete zobrazit pod **Správa organizace** &gt; **Elektronické výkaznictví** &gt; **Archivované úlohy elektronického výkaznictví**.
+
+> [!NOTE]
+> Můžete vybrat typ dokumentu pro archiv úloh v aplikaci Finance and Operations pod **Správa organizace** &gt; **Pracovní prostory** &gt; **Elektronické výkaznictví** &gt; **Parametry elektronického výkaznictví**.
 
 #### <a name="sharepoint"></a>SharePoint
 
-Soubor můžete uložit do určené složky SharePoint. Výchozí server služby SharePoint určíte v možnostech **Správa organizace** &gt; **Správa dokumentů** &gt; **Parametry správy dokumentů** na kartě **SharePoint**. Po konfiguraci složky SharePoint ji můžete vybrat jako složku k uložení výstupu elektronického výkaznictví pro typ dokumentu. 
+Soubor můžete uložit do určené složky SharePoint. Výchozí server služby SharePoint určíte v možnostech **Správa organizace** &gt; **Správa dokumentů** &gt; **Parametry správy dokumentů** na kartě **SharePoint**. Po konfiguraci složky SharePoint ji můžete vybrat jako složku k uložení výstupu elektronického výkaznictví pro typ dokumentu.
 
-[![Výběr složky služby SharePoint](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg) 
+[![Výběr složky služby SharePoint](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg)
 
 #### <a name="azure-storage"></a>Úložiště Azure
 
@@ -119,7 +123,10 @@ Nastavíte-li **Povoleno** na **Ano**, vytvoří se náhled výstupu. Některé 
 
 ### <a name="power-bi-destination"></a>Cíl Power BI
 
-Nastavte **Povoleno** na **Ano** pro použití vaší konfigurace elektronického výkaznictví k uspořádání přenosu dat z instance aplikace Finance and for Operations do služeb Microsoft Power BI. Převedené soubory se ukládají na instanci serveru Microsoft SharePoint, který musí být konfigurován pro tento účel. Více informací získáte v části [Použití konfigurace elektronického výkaznictví k poskytnutí dat do Power BI z aplikace Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md) **Tip:** Chcete-li přepsat výchozí chování (tj. dialogové okno pro konfiguraci), můžete vytvořit odkaz cíle a cíl souboru pro součást hlavního výstupu, a potom zakázat všechny cíle.
+Nastavte **Povoleno** na **Ano** pro použití vaší konfigurace elektronického výkaznictví k uspořádání přenosu dat z instance aplikace Finance and for Operations do služeb Microsoft Power BI. Převedené soubory se ukládají na instanci serveru Microsoft SharePoint, který musí být konfigurován pro tento účel. Více informací získáte v části [Použití konfigurace elektronického výkaznictví k poskytnutí dat do Power BI z aplikace Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
+> [!TIP]
+> Chcete-li přepsat výchozí chování (tj. dialogové okno pro konfiguraci), můžete vytvořit odkaz cíle a cíl souboru pro součást hlavního výstupu, a potom zakázat všechny cíle.
 
 ## <a name="security-considerations"></a>Na co brát ohled při zabezpečení
 Pro cíle EV se používají dva typy oprávnění a povinností. Jeden typ ovládá schopnost udržovat celkové cíle, které jsou nakonfigurovány pro právnickou osobu (to znamená, že kontroluje přístup ke stránce **Cíle elektronického výkaznictví**). Druhý typ určuje, zda uživatel aplikace může přepsat v době běhu nastavení cíle, které upravil vývojář EV nebo funkční konzultant EV.
@@ -158,7 +165,4 @@ Nezbytným předpokladem je, že formát musí být k dispozici v konfiguracích
 ## <a name="additional-resources"></a>Další zdroje
 
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
-
-
-
 

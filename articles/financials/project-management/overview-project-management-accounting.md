@@ -35,7 +35,9 @@ Funkci řízení projektu a účetnictví lze použít v několika odvětvích k
 Projektu je skupina aktivit sloužící k poskytování služby, produkci produktu nebo dosažení výsledků. Projekty spotřebovávají prostředky a generují finanční výsledky v podobě příjmů nebo majetku.
 
 ## <a name="projects-across-industries"></a>Projekty napříč odvětvími
-Řízení projektu a funkce účetnictví lze použít v několika průmyslových odvětvích, jak je zachyceno v následujícím obrázku. [![Projekty napříč odvětvími](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
+Řízení projektu a funkce účetnictví lze použít v několika průmyslových odvětvích, jak je zachyceno v následujícím obrázku.
+
+[![Projekty napříč odvětvími](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
 V kontaktnímu středisku lze příkaz použít k popisu sady akcí, které jsou nutné při řešení volání. Konzultační společnosti, jako jsou například organizace pro management nebo technické konzultace nebo reklamní agentury, odkazují na svou činnost jako projekty. V marketingu kampaň představuje sadu práce, která musí být dodána. V projektové výrobě se výrobní zakázka týká různých prací, které je třeba provést, aby bylo možné vyrábět hotové zboží. Bez ohledu na označení tyto projekty zahrnují prostředky, kalendáře a náklady a funkce řízení projektu a účetnictví v aplikaci Microsoft Dynamics 365 for Finance and Operations vám mohou pomoci s plánováním, prováděním a analýzou těchto projektů.
 

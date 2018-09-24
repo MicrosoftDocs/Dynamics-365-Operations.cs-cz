@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: e1ffd9cb90b2ffac8f89885aac2f614e2ae3cb71
+ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
+ms.openlocfilehash: 3f18a5d7b7f7639b864f579b758005c7a30803a2
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -74,7 +74,7 @@ Obsah lze také vyhledat pomocí libovolného modulu pro vyhledávání. Pro dos
 Aplikace Finance and Operations, Retail a Talent sdílejí jednu tabulku obsahu na stránce s dokumenty, což umožňuje uživatelům zobrazit kontext tématu, na kterém se nacházejí. Je díky tomu také možné najít požadovaná témata pomocí filtrů nad tabulkou obsahu.
 
 ### <a name="follow-a-topic"></a>Sledování tématu
-Chcete-li sledovat téma, klikněte na tlačítko +Sledovat pod polem komentáře. Abyste mohli sledovat téma, musíte se přihlásit. Více informací naleznete v části [Nechte nám komentář](#leave-us-a-comment).  
+Chcete-li sledovat téma, klikněte na tlačítko +Sledovat pod polem komentáře. Abyste mohli sledovat téma, musíte se přihlásit. Více informací naleznete v části [Nechte nám zpětnou vazbu](#leave-us-feedback).  
 
 ### <a name="use-an-rss-feed"></a>Použití kanálu RSS
 Pro přihlášení k odběru kanálu RSS všech aktualizací obsahu Unified Operations použijte následující odkaz z prohlížeče, který podporuje kanály RSS, jako je například Internet Explorer, nebo správce kanálů RSS: 

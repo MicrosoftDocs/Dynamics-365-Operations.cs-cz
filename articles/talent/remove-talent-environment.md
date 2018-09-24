@@ -26,6 +26,8 @@ ms.lasthandoff: 08/08/2018
 ---
 # <a name="remove-talent-environments"></a>Odstranění prostředí Talent
 
+[!include [banner](includes/banner.md)]
+
 Toto téma vás provede procesem odstranění testovacího produkčního prostředí pro aplikaci Microsoft Dynamics 365 for Talent.
 
 ## <a name="removing-a-test-drive-environment"></a>Odstranění testovacího prostředí

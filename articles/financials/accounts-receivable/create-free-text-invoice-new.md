@@ -1,9 +1,9 @@
 --- 
-title: "Vytvořit volnou fakturu"
-description: "Tento článek ukazuje, jak vytvořit volnou fakturu."
+title: "Vytvoření volných faktur"
+description: "Toto téma vysvětluje, jak vytvořit volné faktury."
 author: mikefalkner
 manager: AnnBe
-ms.date: 05/29/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,64 +13,77 @@ ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: mfalkner
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2018-08-30
+ms.dyn365.ops.version: 8.0.4
 ms.translationtype: HT
-ms.sourcegitcommit: f69505f0c6137121cae92d42d052b244326c8436
-ms.openlocfilehash: 2a611bdd4dd97109709ed355eb80471e27413744
+ms.sourcegitcommit: f64292a1b3726ea9b43f959a44c4ed2a1f392484
+ms.openlocfilehash: f6ee6fda0b52b8af7c253b7d22e470345a8a421f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 06/28/2018
+ms.lasthandoff: 09/05/2018
 
 ---
 
-# <a name="create-a-free-text-invoice"></a>Vytvořit volnou fakturu
+# <a name="create-free-text-invoices"></a>Vytvoření volných faktur
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek ukazuje, jak vytvořit volnou fakturu. Pro tuto proceduru použijte ukázkovou společnost USMF.
+Toto téma vysvětluje, jak vytvořit volné faktury. Pro proceduru použijte ukázkovou společnost **USMF**.
 
 ## <a name="create-a-free-text-invoice"></a>Vytvořit volnou fakturu
 
-1. Přejděte na Pohledávky > Faktury > Všechny volné faktury.
-2. Klikněte na položku Nová.
-3. V poli Účet odběratele vyberte hodnotu.
-    * Jako výchozí účet faktury bude nastaven stejný účet, jaký byl použit pro účet odběratele.   
-    * Pokud nebyla faktura zaúčtována, počátečním účetním stavem je Zpracovává se.   
-    * Číslo faktury bude přiřazeno při zaúčtování faktury.  
-    * Pokud používáte zmocnění SEPA, ve zmocnění k přímému debetu bude při výběru účtu zákazníka automaticky vyplněno zmocnění.  
-4. Zadejte nějakou hodnotu do pole Popis.
-5. V poli Hlavní účet zadejte číslo účtu bez dimenze.
-    * Můžete také zadat jeden nebo více znaků pro hlavní účet a vyhledat účet pomocí vyhledávání. Dimenze zadáte později v této příručce.  
-6. Rozbalte pevnou záložku Podrobnosti řádku, aby bylo možné přidat dimenze do hlavního účtu.
-7. Klikněte na záložku Řádek finančních dimenzí.
-    * Dimenze jsou pouze pro vybraný řádek.    
-    * Skupina prodejní daně je vyplněna z údajů odběratele. Pokud odběratel nemá skupinu DPH, použije se skupina DPH z hlavního účtu.  
-    * Skupina DPH položek je vyplněna z hlavního účtu. Pokud hlavní účet nemá skupinu DPH položky, použije se skupina DPH položky z parametrů DPH hlavní knihy.    
-8. Zadejte číslo do pole Množství.
-    * Množství je volitelné.  
-9. Zadejte číslo do pole Jednotková cena.
-    * Jednotková cena je volitelná.  
-    * Částka se počítá jako součin množství a jednotkové ceny. Výpočet však lze přepsat a zadat vlastní částku.  
-10. Kliknutím na položku DPH si můžete zobrazit částku DPH, která byla pro fakturu vypočtena.
-    * Částky DPH si můžete prohlédnout na této stránce nebo je přepsat na záložce Úprava.  
-11. Klikněte na tlačítko OK.
-12. Klepněte na tlačítko Náklady, pokud chcete přidat náklady pro fakturu. 
-13. Zadejte hodnotu do pole Kód nákladů.
-14. Zadejte číslo do pole Hodnota nákladů.
+1. Přejděte na **Pohledávky \> Faktury \> Všechny volné faktury**.
+2. Vyberte možnost **Nový**.
+3. V poli **Účet odběratele** vyberte hodnotu.
+
+    * Ve výchozím nastavení se jako účet faktury použije účet, který je zvolen jako účet odběratele.
+    * Pokud nebyla faktura zaúčtována, počátečním účetním stavem je **Zpracovává se**.
+    * Číslo faktury bude přiřazeno při zaúčtování faktury.
+    * Pokud používáte zmocnění SEPA, bude při výběru účtu zákazníka automaticky vyplněno zmocnění.
+
+4. V poli **Popis** zadejte hodnotu.
+5. V poli **Hlavní účet** zadejte číslo účtu, které nemá dimenze. Dimenze zadáte později v tomto tématu.
+
+    Můžete také zadat jeden nebo více znaků pro hlavní účet a vyhledat účet pomocí vyhledávání.
+
+6. Zvolte pevnou záložku **Podrobnosti řádku**, aby bylo možné přidat dimenze do hlavního účtu.
+7. Zvolte karu **Řádek finančních dimenzí**.
+
+    * Dimenze jsou pouze pro vybraný řádek.
+    * Výchozí skupina DPH je vyplněna z odběratele. Pokud odběratel nemá skupinu DPH, použije se skupina DPH z hlavního účtu.
+    * Skupina DPH položek je vyplněna z hlavního účtu. Pokud hlavní účet nemá skupinu DPH položky, použije se skupina DPH položky určená v parametrech v hlavní knize.
+
+8. Volitelné: Zadejte číslo do pole **Množství**.
+9. Volitelné: Zadejte číslo do pole **Jednotková cena**.
+
+    Částka se počítá jako součin množství a jednotkové ceny. Výpočet však lze přepsat zadáním částky.
+
+10. Zvolte **DPH** pro zobrazení DPH, která bylo pro fakturu vypočtena.
+
+    Na této stránce můžete zobrazit částky DPH nebo je můžete přepsat na kartě **Úprava**.
+
+11. Vyberte **OK**.
+12. Zvolte **Náklady**, pokud chcete přidat náklady do faktury.
+13. Zadejte hodnotu do pole **Kód nákladů**.
+14. Zadejte číslo do pole **Hodnota nákladů**.
 15. Zavřete stránku.
-16. Kliknutím na položku Součty si můžete zobrazit podrobnosti a celkové částky souhrnné faktury.
-17. Klikněte na tlačítko Zavřít.
-18. Kliknutím na položku Zaúčtovat fakturu zaúčtujte. Před zaúčtováním je možné akci zrušit.
-    * Pokud chcete změnit časování tisku faktur: Vyberte možnost Aktuální pro tisk jednotlivých faktur při jejich aktualizaci, nebo vyberte Po pro tisk po aktualizaci všech faktur.  
-    * Pokud chcete změnit způsob, jak chcete kontrolovat úvěrový limit odběratele před zaúčtováním, můžete změnit typ limitu úvěru.  
-    * Pokud chcete vytisknout fakturu, vyberte možnost Ano.  
-    * Pokud chcete zaúčtovat fakturu, vyberte možnost Ano. Fakturu můžete vytisknout bez zaúčtování.  
-19. Klikněte na tlačítko OK.
+16. Zvolte **Součty** pro zobrazení podrobností a celkové částky souhrnné faktury.
+17. Vyberte **Zavřít**.
+18. Vyberte **Zaúčtovat** pro zaúčtování faktury. Stále budete mít možnost zrušení před skutečným účtováním.
+
+    * Můžete změnit časování tisku faktury. Výběrem **Aktuální** vytisknete jednotlivé faktury při aktualizaci. Výběrem **Po** vytisknete všechny faktury po aktualizaci.
+    * Pokud chcete změnit ověření limitu úvěru odběratele před zaúčtováním faktury, změňte hodnoty v **typ limitu úvěru** pole.
+    * Volbou možnosti **Ano** vytisknete fakturu.
+    * Volbou možnosti **Ano** zaúčtujete fakturu. Fakturu můžete vytisknout bez jejího zaúčtování.
+
+19. Vyberte **OK**.
 
 ## <a name="copy-lines"></a>Kopírovat řádky
-Chcete-li zkopírovat řádky volné faktury, vyberte jeden nebo více řádků a klikněte na Kopírovat vybrané řádky. Můžete určit počet kopií, které chcete vytvořit, a můžete také zkopírovat poznámky a přílohy. Můžete zkopírovat distribuce nebo umožnit jejich opětovné vytvoření při zaúčtování. Jakmile zkopírujete řádky, lze podle potřeby upravit informace. 
+Chcete-li zkopírovat řádky volné faktury, vyberte jeden nebo více řádků a zvolte **Kopírovat vybrané řádky**. Můžete určit počet kopií, které chcete vytvořit, a můžete také zkopírovat poznámky a přílohy. Můžete buď zkopírovat distribuce nebo umožnit jejich opětovné vytvoření při zaúčtování.
+
+Jakmile zkopírujete řádky, lze podle potřeby upravit informace.
 
 ## <a name="create-a-free-text-invoice-from-a-template"></a>Vytvoření volné faktury ze šablony
-Můžete vytvořit volnou fakturu ze šablony. Vyberete-li Nová ze šablony na kartě Faktura, můžete vybrat název šablony a účet odběratele pro novou volnou fakturu. Lze vybrat také výchozí hodnoty, jako jsou například platební podmínky a způsob platby od odběratele, nebo použít hodnoty, které byly uloženy se šablonou. Bude vytvořena nová volná faktura a můžete upravit hodnoty uvedené faktury. 
+Můžete vytvořit volnou fakturu ze šablony. Vyberete-li **Nová ze šablony** na kartě **Faktura**, můžete vybrat název šablony a účet odběratele pro novou volnou fakturu. Výchozí hodnoty, jako jsou například platební podmínky a způsob platby, lze automaticky vyplnit z odběratele, nebo můžete použít hodnoty, které byly uloženy v šabloně.
 
+Bude vytvořena nová volná faktura a můžete upravit hodnoty podle potřeby.
 

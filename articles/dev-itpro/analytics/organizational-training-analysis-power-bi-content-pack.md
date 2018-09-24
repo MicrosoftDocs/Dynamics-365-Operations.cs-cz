@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
-ms.openlocfilehash: 18567a3241fce02e17df368f544e545fad93e1d9
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 6c1855013dc449950877f8727a5453942aeb75de
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/23/2018
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje aplikaci Finance and Operations - Organizační obsah školení Power BI. 
+Toto téma popisuje aplikaci Finance and Operations - Organizační obsah školení Power BI.
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Sestavy, které jsou součástí balíčku obsahu
 Po připojení balíčku obsahu k datům z aplikace Finance and Operations zobrazí sestavy dat vaší organizace. Pokud jste aplikaci Microsoft Power BI nikdy předtím nepoužívali, vyhledejte si další informace v tématu [Řízená výuka pro Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Sestavy, které jsou součástí balíčku obsahu, mají grafy a tabulky obsahující další informace. Následující tabulka obsahuje popis daných sestav.
@@ -44,23 +44,19 @@ Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídi
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
 Data aplikace Finance and Operations se používají k naplnění sestav v balíčku obsahu organizačního školení. Následující tabulka zobrazuje entity, na kterých je balíček obsahu založen.
 
-| Celek                    | Obsah                                                         | Vztahy s jinými entitami                                                                                                                                                                  |
-|---------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Školení\_CalendarOffset  | Posuny kalendáře pro řez sestav                                | Školení\_Školení CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Školení\_Společnost         | Společnosti, podle kterých se filtrují sestavy                                   | Školení\_Školení CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Školení\_Kurz          | Kurz, popis, jméno školitele, umístění, místnosti a stav | Školení\_Školení CourseAgenda\_Školení CourseAttendees\_CourseSkill                                                                                                                             |
-| Školení\_CourseAgenda    | Agenda kurzu a počáteční a koncové časy                          | Školení\_Školení společnosti\_CalendarOffset Školení\_Datum školení\_Kurz                                                                                                                         |
-| Školení\_CourseAttendees | Název, stav, práce a datum registrace                         | Školení\_Školení společnosti\_CalendarOffset Školení\_Datum školení\_Demografické údaje školení\_Školení k zaměstnání\_Školicí kurz\_Školení WorkerName\_WorkerTitle Školení\_Školení k práci\_Pozice |
-| Školení\_CourseSkill     | Dovednost, typ dovednosti a úroveň                                     | Školení\_Kurz                                                                                                                                                                                   |
-| Školení\_Datum            | Dny, týdny, měsíce a roky                                   | Školení\_Školení CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Školení\_Demografické údaje    | Datum narození, pohlaví, etnický původ a rodinný stav         | Školení\_Školení CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Školení\_Zaměstnání      | Počáteční datum, koncové datum a datum přechodu                        | Školení\_Školení CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Školení\_Práce             | Funkce, typ a název                                        | Školení\_Školení CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Školení\_Pozice        | Pozice, titul a ekvivalent plného úvazku (FTE)                  | Školení\_Školení CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Školení\_WorkerName      | Křestní jméno, příjmení a celé jméno                             | Školení\_CourseAttendees                                                                                                                                                                          |
-| Školení\_WorkerTitle     | Název a datum služebního věku                                         | Školení\_CourseAttendees                                                                                                                                                                          |
-
-
-
-
+| Celek                    | Obsah                                                         | Vztahy s jinými entitami |
+|---------------------------|------------------------------------------------------------------|-----------------------------------|
+| Školení\_CalendarOffset  | Posuny kalendáře pro řez sestav                                | Training\_CourseAgenda, Training\_CourseAttendees |
+| Školení\_Společnost         | Společnosti, podle kterých se filtrují sestavy                                   | Training\_CourseAgenda, Training\_CourseAttendees |
+| Školení\_Kurz          | Kurz, popis, jméno školitele, umístění, místnosti a stav | Training\_CourseAgenda, Training\_CourseAttendees, Training\_CourseSkill |
+| Školení\_CourseAgenda    | Agenda kurzu a počáteční a koncové časy                          | Training\_Company, Training\_CalendarOffset, Training\_Date, Training\_Course |
+| Školení\_CourseAttendees | Název, stav, práce a datum registrace                         | Training\_Company, Training\_CalendarOffset, Training\_Date, Training\_Demographics, Training\_Employment, Training\_Course, Training\_WorkerName, Training\_WorkerTitle, Training\_Job, Training\_Position |
+| Školení\_CourseSkill     | Dovednost, typ dovednosti a úroveň                                     | Školení\_Kurz |
+| Školení\_Datum            | Dny, týdny, měsíce a roky                                   | Training\_CourseAgenda, Training\_CourseAttendees |
+| Školení\_Demografické údaje    | Datum narození, pohlaví, etnický původ a rodinný stav         | Training\_CourseAgenda, Training\_CourseAttendees |
+| Školení\_Zaměstnání      | Počáteční datum, koncové datum a datum přechodu                        | Training\_CourseAgenda, Training\_CourseAttendees |
+| Školení\_Práce             | Funkce, typ a název                                        | Training\_CourseAgenda, Training\_CourseAttendees |
+| Školení\_Pozice        | Pozice, titul a ekvivalent plného úvazku (FTE)                  | Training\_CourseAgenda, Training\_CourseAttendees |
+| Školení\_WorkerName      | Křestní jméno, příjmení a celé jméno                             | Školení\_CourseAttendees |
+| Školení\_WorkerTitle     | Název a datum služebního věku                                         | Školení\_CourseAttendees |
 

@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: b47c22576b3735fbc499c7ceed3f6a4637c2785c
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: b1dea07589b7fe953ec47b204441d044c19b5020
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -30,37 +30,35 @@ ms.lasthandoff: 08/08/2018
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o generování finančních sestav. 
+Toto téma obsahuje informace o generování finančních sestav.
 
 Chcete-li vygenerovat sestavu, otevřete definici sestavy a klikněte na tlačítko Generovat na panelu nástrojů. Otevře se okno Stav fronty sestav a označí umístění vaší sestavy ve frontě. Ve výchozím nastavení se generovaná sestava otevře ve Web Viewer.
 
 > [!NOTE]
 > Můžete generovat sestavy pouze do složek a umístění, k nimž máte oprávnění pro přístup.
 
-Následující tabulka vysvětluje dostupné možnosti pro generování sestav.
+Pro generování sestav jsou k dispozici následující možnosti:
 
-| Parametr                                                                                | 
-|---------------------------------------------------------------------------------------|
-| Nastavte plán pro generování sestavy nebo skupiny sestav automaticky              |   
-| Kontrolujte chybějící účty nebo data v sestavách a ověřujte přesnost sestav |   
+- Nastavte plán pro generování sestavy nebo skupiny sestav automaticky
+- Kontrolujte chybějící účty nebo data v sestavách a ověřujte přesnost sestav
 
 Při generování sestavy se používají možnosti, které jste zadali na kartě Definice sestavy. Karta Výstup a distribuce slouží k určení umístění knihovny sestav, což nabízí snadný způsob sdílení sestavy.
 
 ## <a name="generate-a-financial-report"></a>Generovat finanční sestavu
 
-Chcete-li generovat finanční sestavu pomocí aplikace Microsoft Dynamics 365 for Finance and Operations, přejděte na **Hlavní kniha** > **Dotazy a sestavy** > **Finanční sestavy**. 
-- Zvolte sestavu, kterou chcete generovat, a klikněte **Generovat**. 
+Chcete-li generovat finanční sestavu pomocí aplikace Microsoft Dynamics 365 for Finance and Operations, přejděte na **Hlavní kniha** \> **Dotazy a sestavy** \> **Finanční sestavy**.
+
+- Zvolte sestavu, kterou chcete generovat, a klikněte **Generovat**.
 - Vyplňte pole **Datum sestavy** a klikněte na tlačítko **OK**.
 
-  Po vygenerování sestavy bude sestava k dispozici pro zobrazení v oddílu **Sestavy**.
-  Sestavu můžete **Zobrazit** nebo **Odstranit**.
+Po vygenerování sestavy bude sestava k dispozici pro zobrazení v oddílu **Sestavy**.
 
+Sestavu můžete **Zobrazit** nebo **Odstranit**.
 
 Pro generování sestavy pomocí **návrháře sestav** otevřete definici sestavy a klepněte na tlačítko Generovat na panelu nástrojů. Otevře se okno Stav fronty sestav a označí umístění vaší sestavy ve frontě. Ve výchozím nastavení se generovaná sestava otevře ve Web Viewer.
 
 > [!NOTE]
 > Můžete generovat sestavy pouze do složek a umístění, k nimž máte oprávnění pro přístup.
-
 
 ## <a name="schedule-report-generation"></a>Plánování generování sestavy
 Mnohé společnosti používají základní sadu sestav, které se spouštějí v naplánovaných intervalech, aby byly v souladu s jejich obchodními procesy. Můžete naplánovat generování sestavy pravidelně, například denně, týdně, měsíčně nebo ročně. Může se jednat o jednu sestavu nebo skupinu sestav zahrnující několik společností. Pro všechny zadané společnosti, které pocházejí například z definice organizačního stromu, je nutné zadat přihlašovací údaje. Pokud přihlašovací údaje nejsou platné, sestava zobrazí pouze informace, pro přístup k nimž máte oprávnění, například pro společnost, ke které jste momentálně přihlášeni. Výstupní informace jsou nejprve přečteny ze skupiny sestav a poté z jednotlivých sestav.
@@ -70,45 +68,48 @@ Jak jsou plány sestav vytvářeny a ukládány, jsou zobrazovány v navigační
 > [!IMPORTANT]
 > Abyste mohli vytvářet, měnit a odstraňovat plány sestav, potřebujete roli návrháře nebo správce. Při spuštění sestavy jsou použity přihlašovací údaje uživatele, který plán vytvořil, k vygenerování sestavy.
 
-
 ### <a name="create-a-report-schedule"></a>Vytvoření plánu sestavy
 
-1.  V Návrháři sestav v nabídce Soubor klikněte na tlačítko Nový a vyberte možnost Plán sestavy. Zobrazí se dialogové okno Nový plán sestavy.
-2.  V části Nastavení vyberte jednotlivou sestavu nebo skupinu sestav k naplánování. Jsou dostupné pouze sestavy nebo skupiny sestav pro vybranou společnost nebo stavební blok, ke kterému jste právě přihlášeni.
-3.  Zaškrtnutím políčka Aktivní zapněte plán sestavy. Plán sestavy může aktivovat nebo deaktivovat pouze autor sestavy nebo správce.
-4.  Klikněte na tlačítko Oprávnění a zadejte přihlašovací údaje společnosti. Ve výchozím nastavení se použijí přihlašovací údaje pro společnost, ke které jste přihlášeni. Pokud jsou zahrnuty jiné společnosti (například v definicích organizačních stromů), vyberte možnost Používat samostatné přihlašovací údaje a zadejte přihlašovací údaje pro všechny další společnosti, které jsou zahrnuty do plánu sestavy. Můžete vybrat možnost Ověřování systému Windows nebo zadat uživatelské jméno a heslo pro každou společnost. Zaškrtnutím políčka Uložit přihlašovací údaje můžete uložit přihlašovací údaje pro tyto společnosti a pak kliknutím na tlačítko OK dialogové okno zavřít.
-5.  V části Četnost v poli Počátek opakování vyberte datum, kdy má být plán spuštěn. Ve výchozím nastavení se vybere aktuální systémové datum klientského počítače.
-6.  V poli Spustit sestavu v vyberte čas, kdy se má sestava spustit. Pokud zadáte čas před aktuálním systémovým časem, spustí se sestava v příští naplánované datum.
-7.  V oblasti Způsob opakování určete, jak často se má sestava spouštět. Ve výchozím nastavení je vybraná možnost Denně s hodnotou intervalu (dny) 1. Další možnosti zahrnují týdenní, měsíční a roční.
-8.  V oblasti Rozsah opakování vyberte, kdy má být generování sestavy ukončeno.
-    -   Bez koncového data – plán sestavy poběží neomezeně.
-    -   Nastavit počet výskytů – plán sestavy se spustí tolikrát, kolikrát zadáte, a poté se deaktivuje.
-    -   Konec do – plán sestavy se ukončí k zadanému datu.
+1. V Návrháři sestav v nabídce Soubor klikněte na tlačítko Nový a vyberte možnost Plán sestavy. Zobrazí se dialogové okno Nový plán sestavy.
+2. V části Nastavení vyberte jednotlivou sestavu nebo skupinu sestav k naplánování. Jsou dostupné pouze sestavy nebo skupiny sestav pro vybranou společnost nebo stavební blok, ke kterému jste právě přihlášeni.
+3. Zaškrtnutím políčka Aktivní zapněte plán sestavy. Plán sestavy může aktivovat nebo deaktivovat pouze autor sestavy nebo správce.
+4. Klikněte na tlačítko Oprávnění a zadejte přihlašovací údaje společnosti. Ve výchozím nastavení se použijí přihlašovací údaje pro společnost, ke které jste přihlášeni. Pokud jsou zahrnuty jiné společnosti (například v definicích organizačních stromů), vyberte možnost Používat samostatné přihlašovací údaje a zadejte přihlašovací údaje pro všechny další společnosti, které jsou zahrnuty do plánu sestavy. Můžete vybrat možnost Ověřování systému Windows nebo zadat uživatelské jméno a heslo pro každou společnost. Zaškrtnutím políčka Uložit přihlašovací údaje můžete uložit přihlašovací údaje pro tyto společnosti a pak kliknutím na tlačítko OK dialogové okno zavřít.
+5. V části Četnost v poli Počátek opakování vyberte datum, kdy má být plán spuštěn. Ve výchozím nastavení se vybere aktuální systémové datum klientského počítače.
+6. V poli Spustit sestavu v vyberte čas, kdy se má sestava spustit. Pokud zadáte čas před aktuálním systémovým časem, spustí se sestava v příští naplánované datum.
+7. V oblasti Způsob opakování určete, jak často se má sestava spouštět. Ve výchozím nastavení je vybraná možnost Denně s hodnotou intervalu (dny) 1. Další možnosti zahrnují týdenní, měsíční a roční.
+8. V oblasti Rozsah opakování vyberte, kdy má být generování sestavy ukončeno.
 
-9.  Klikněte na tlačítko Uložit na panelu nástrojů. V dialogovém okně Uložit jako zadejte jedinečný název a popis pro plán sestavy.
+    - Bez koncového data – plán sestavy poběží neomezeně.
+    - Nastavit počet výskytů – plán sestavy se spustí tolikrát, kolikrát zadáte, a poté se deaktivuje.
+    - Konec do – plán sestavy se ukončí k zadanému datu.
+
+9. Klikněte na tlačítko Uložit na panelu nástrojů. V dialogovém okně Uložit jako zadejte jedinečný název a popis pro plán sestavy.
 
 Abyste mohli zkopírovat plán sestavy, musíte mít roli návrháře nebo správce. I v případě, že správce upraví plán sestavy, sestava si zachová přihlašovací údaje uživatele, který ji vytvořil.
+
 ### <a name="copy-a-report-schedule"></a>Zkopírování plánu sestavy
 
-1.  V Návrháři sestav, klikněte na tlačítko Plány sestav v podokně navigace a otevřete plán sestavy ke zkopírování.
-2.  V nabídce Soubor klikněte na příkaz Uložit jako a pak v dialogovém okně Uložit jako zadejte nový název a popis plánu. Klikněte na tlačítko OK a nový plán se zobrazí v navigačním podokně.
-3.  Upravte pole a informace nového plánu podle potřeby a klikněte na tlačítko Uložit na panelu nástrojů nebo klikněte na tlačítko Uložit v nabídce Soubor.
+1. V Návrháři sestav, klikněte na tlačítko Plány sestav v podokně navigace a otevřete plán sestavy ke zkopírování.
+2. V nabídce Soubor klikněte na příkaz Uložit jako a pak v dialogovém okně Uložit jako zadejte nový název a popis plánu. Klikněte na tlačítko OK a nový plán se zobrazí v navigačním podokně.
+3. Upravte pole a informace nového plánu podle potřeby a klikněte na tlačítko Uložit na panelu nástrojů nebo klikněte na tlačítko Uložit v nabídce Soubor.
 
 Abyste mohli odstranit plán sestavy, musíte být vlastníkem plánu sestavy nebo mít úlohu správce.
+
 ### <a name="delete-a-report-schedule"></a>Odstranění plánu sestavy
 
-1.  V Návrháři sestav v navigačním podokně klikněte na tlačítko Plány sestav.
-2.  Vyberte plán sestavy, který chcete odstranit, a pak klikněte na tlačítko Odstranit nebo stiskněte klávesu DELETE.
-3.  V dialogovém okně pro ověření odstranění klikněte na tlačítko Ano. Plán sestavy se trvale odstraní. Pokud nemáte oprávnění k odstranění plánu, bude zobrazena zpráva a sestava nebude odstraněna.
+1. V Návrháři sestav v navigačním podokně klikněte na tlačítko Plány sestav.
+2. Vyberte plán sestavy, který chcete odstranit, a pak klikněte na tlačítko Odstranit nebo stiskněte klávesu DELETE.
+3. V dialogovém okně pro ověření odstranění klikněte na tlačítko Ano. Plán sestavy se trvale odstraní. Pokud nemáte oprávnění k odstranění plánu, bude zobrazena zpráva a sestava nebude odstraněna.
 
 ### <a name="credentials-and-report-schedules"></a>Přihlašovací údaje a plány sestav
 
 Pokud nezadáte přihlašovací údaje, které jsou vyžadovány u všech společností zahrnutých do sestav, při uložení plánu sestav obdržíte následující zprávu: „Je nutné zadat vaše přihlašovací údaje pro společnosti, které jsou obsaženy v tomto plánu sestavy. Klikněte na tlačítko Oprávnění a zadejte přihlašovací údaje.“
 
-Například Pavla se přihlásí ke společnosti A pomocí svého přihlašovacího jména a hesla. Vytvoří plán pro sestavu, která používá definici stromu výkaznictví ke shromažďování dat z více společností. Při uložení tohoto plánu sestavy je Petra vyzvána k zadání přihlašovacích údajů ostatních společností, které jsou zadány v definici organizačního stromu. Po vypršení platnosti vašich přihlašovacích údajů nebudou ovlivněné sestavy v plánu sestav generovány, dokud nebudou přihlašovací údaje aktualizovány. Zobrazí se zpráva ve frontě sestav informující o tom, že je nutné aktualizovat oprávnění. Provedená plánu sestavy se nezdaří, pokud nastane některá z následujících situací (kvůli vyžadovaným přihlašovacím údajům):
--   byla přidána nová společnost do stromu sestav pro jednotlivou sestavu;
--   Některá sestava ve skupině sestav byla změněna
--   Do skupiny sestav byla přidána nová sestava pro další společnost
+Petra se například přihlásí ke společnosti A pomocí svého přihlašovacího jména a hesla. Vytvoří plán pro sestavu, která používá definici stromu výkaznictví ke shromažďování dat z více společností. Při uložení tohoto plánu sestavy je Petra vyzvána k zadání přihlašovacích údajů ostatních společností, které jsou zadány v definici organizačního stromu. Po vypršení platnosti vašich přihlašovacích údajů nebudou ovlivněné sestavy v plánu sestav generovány, dokud nebudou přihlašovací údaje aktualizovány. Zobrazí se zpráva ve frontě sestav informující o tom, že je nutné aktualizovat oprávnění. Provedená plánu sestavy se nezdaří, pokud nastane některá z následujících situací (kvůli vyžadovaným přihlašovacím údajům):
+
+- byla přidána nová společnost do stromu sestav pro jednotlivou sestavu;
+- Některá sestava ve skupině sestav byla změněna
+- Do skupiny sestav byla přidána nová sestava pro další společnost
 
 Pokračujte kliknutím na tlačítko Oprávnění v dialogovém okně Plánování sestav a poté zadejte příslušné přihlašovací údaje.
 
@@ -125,22 +126,21 @@ Sestavy, které mají rozsahy hodnot, mají menší pravděpodobnost chybějíc�
 > [!NOTE]
 > Pokud byla přidána nová společnost, je nutné přidat novou společnost do stromů výkaznictví ve všech existujících sestavách, jinak společnost nebude zahrnuta do analýzy chybějících účtů.
 
-
 ### <a name="run-missing-account-analysis"></a>Spuštění analýzy chybějícího účtu
 
-1.  V Návrháři sestav klikněte na tlačítko Nástroje a potom na tlačítko Analýza chybějícího účtu.
-2.  V poli Filtr společností vyberte společnost, jejíž výsledky chcete vyfiltrovat. Pokud chcete zobrazit výsledky ze všech dostupných společností, vyberte možnost Vše (žádný filtr).
-3.  V poli Filtr dimenzí vyberte dimenzi, jejíž výsledky chcete vyfiltrovat. Pokud chcete zobrazit všechny informace ze všech dostupných dimenzí, vyberte možnost Vše (žádný filtr).
-4.  V poli Seskupit podle vyberte možnost pro řazení výsledků. Výsledky můžete řadit podle příslušného stavebního bloku nebo podle sad hodnot a dimenzí.
-5.  Projděte si zobrazené výsledky. Když vyberete položku v horním podokně, v dolním podokně se zobrazí další informace o výjimce. To zahrnuje související dimenze, hodnoty a sestavy.
-6.  Chcete-li otevřít ovlivněnou položku, klikněte na přidruženou ikonu zobrazenou v podokně seznamu nebo pravým tlačítkem myši klikněte na položku a vyberte možnost Otevřít. Lze vybrat více položek – stiskněte a podržte klávesu Ctrl a vyberte položky v dolním podokně.
-7.  Pokud je vrácena jakákoli hodnota, stavební blok či sestava, které nemají být zahrnuty do analýzy, klikněte pravým tlačítkem na položku a vyberte možnost Vyloučit nebo zaškrtněte políčko Vyloučit vedle položky k odstranění položky ze seznamu. Vyloučené položky nebudou zahrnuty při aktualizaci seznamu. Pokud chcete vybrat více položek, podržte při jejich výběru v dolním podokně klávesu CTRL. Chcete-li zobrazit všechny položky, včetně všech výsledků, které jste dříve z analýzy vyloučili, zaškrtněte políčko Zobrazit vyloučené stavební bloky a hodnoty a potom klikněte na tlačítko Aktualizovat.
-8.  Kliknutím na tlačítko Aktualizovat výjimky aktualizujete. Kliknutím na tlačítko Ano provedete úplnou aktualizaci všech výsledků. Kliknutím na tlačítko Ne provedete částečnou aktualizaci příslušných položek.
+1. V Návrháři sestav klikněte na tlačítko Nástroje a potom na tlačítko Analýza chybějícího účtu.
+2. V poli Filtr společností vyberte společnost, jejíž výsledky chcete vyfiltrovat. Pokud chcete zobrazit výsledky ze všech dostupných společností, vyberte možnost Vše (žádný filtr).
+3. V poli Filtr dimenzí vyberte dimenzi, jejíž výsledky chcete vyfiltrovat. Pokud chcete zobrazit všechny informace ze všech dostupných dimenzí, vyberte možnost Vše (žádný filtr).
+4. V poli Seskupit podle vyberte možnost pro řazení výsledků. Výsledky můžete řadit podle příslušného stavebního bloku nebo podle sad hodnot a dimenzí.
+5. Projděte si zobrazené výsledky. Když vyberete položku v horním podokně, v dolním podokně se zobrazí další informace o výjimce. To zahrnuje související dimenze, hodnoty a sestavy.
+6. Chcete-li otevřít ovlivněnou položku, klikněte na přidruženou ikonu zobrazenou v podokně seznamu nebo pravým tlačítkem myši klikněte na položku a vyberte možnost Otevřít. Lze vybrat více položek – stiskněte a podržte klávesu Ctrl a vyberte položky v dolním podokně.
+7. Pokud je vrácena jakákoli hodnota, stavební blok či sestava, které nemají být zahrnuty do analýzy, klikněte pravým tlačítkem na položku a vyberte možnost Vyloučit nebo zaškrtněte políčko Vyloučit vedle položky k odstranění položky ze seznamu. Vyloučené položky nebudou zahrnuty při aktualizaci seznamu. Pokud chcete vybrat více položek, podržte při jejich výběru v dolním podokně klávesu CTRL. Chcete-li zobrazit všechny položky, včetně všech výsledků, které jste dříve z analýzy vyloučili, zaškrtněte políčko Zobrazit vyloučené stavební bloky a hodnoty a potom klikněte na tlačítko Aktualizovat.
+8. Kliknutím na tlačítko Aktualizovat výjimky aktualizujete. Kliknutím na tlačítko Ano provedete úplnou aktualizaci všech výsledků. Kliknutím na tlačítko Ne provedete částečnou aktualizaci příslušných položek.
 
     > [!NOTE]
     > Formulář je automaticky aktualizován při otevření, pokud nebyl otevřen v posledních 15 minutách.
 
-9.  Po vyřešení potíží kliknutím na tlačítko OK dialogové okno zavřete.
+9. Po vyřešení potíží kliknutím na tlačítko OK dialogové okno zavřete.
 
 ## <a name="keyboard-shortcuts-for-missing-account-analysis"></a>Klávesové zkratky pro analýzu chybějícího účtu
 Po spuštění analýzy chybějícího účtu jsou k dispozici následující klávesové zkratky.
@@ -159,12 +159,9 @@ Po spuštění analýzy chybějícího účtu jsou k dispozici následující kl
 | Otevření vybrané definice řádku     | Ctrl+O                     |
 
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Finanční výkaznictví](financial-reporting-intro.md)
 
 [Rozhraní Návrháře sestav](report-designer-interface.md)
-
-
 

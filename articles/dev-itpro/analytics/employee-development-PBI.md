@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a451a3e936916c6bec750ddfbc2bf71fadb7c222
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 6b934b87cb5098641fba8c5b9214a0b2b6cde40d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -39,7 +39,7 @@ Sestavy, které jsou součástí obsahu Power BI **Rozvoj zaměstnance**, obsahu
 | Analýza úrovní dovedností zaměstnanců | Úrovně dovedností zaměstnanců podle oddělení, zaměstnanci podle úrovní a typů dovedností a nejnižší a nejvyšší úrovně podle dovednosti |
 | Profil dovedností                 | Profil dovedností vybraného zaměstnance |
 | Analýza dovedností                | Dovednosti podle typu a hodnocení |
-| Analýza hodnocení výkonnosti   | Zaměstnanci s nejnižším a nejvyšším hodnocením podle druhu práce, hodnocení zaměstnanců podle oddělení, zaměstnanci podle typu pozice a hodnocení a nejvyšší a nejnižší hodnocení podle umístění  |
+| Analýza hodnocení výkonnosti   | Zaměstnanci s nejnižším a nejvyšším hodnocením podle druhu práce, hodnocení zaměstnanců podle oddělení, zaměstnanci podle typu pozice a hodnocení a nejvyšší a nejnižší hodnocení podle umístění |
 | Analýza výkonnosti zaměstnanců | Hodnocení zaměstnanců u vybraného hodnocení podle manažera |
 
 Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
@@ -48,7 +48,7 @@ Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídi
 
 | Celek                   | Obsah                                                                                                   | Vztahy s jinými entitami |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| Posuny kalendáře          | Posuny kalendáře pro řez sestav                                                                          | Přiřazení k minulé pozici, trend pozice, trend zaměstnance, ukončený zaměstnanec 
+| Posuny kalendáře          | Posuny kalendáře pro řez sestav                                                                          | Přiřazení k minulé pozici, trend pozice, trend zaměstnance, ukončený zaměstnanec |
 | Společnost                  | Společnosti, podle kterých se filtrují sestavy                                                                             | Aktuální zaměstnanec, ukončený zaměstnanec, trend zaměstnance |
 | Aktuální pozice         | Pozice k aktuálnímu datu, ekvivalent k plnému úvazku, otevřené pozice a dlouhodobě otevřené pozice | Práce, pozice |
 | Aktuální zaměstnanec         | Pracovníci k aktuálnímu datu, věk a počet zaměstnanců                                                         | Společnost, geografické umístění, jméno zaměstnance, nadřízený, pracovní zařazení, demografické údaje, práce, zaměstnání, pozice |
@@ -65,10 +65,9 @@ Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídi
 | Jméno zaměstnance            | Křestní jméno, příjmení a celé jméno                                                                       | Aktuální pracovník, ukončený zaměstnanec, trend zaměstnance |
 | Titul zaměstnance           | Název a datum služebního věku                                                                                   | Aktuální zaměstnanec, ukončený zaměstnanec, trend zaměstnance |
 | Trend zaměstnance           | Pracovníci během času, počet zaměstnanců, společnost a pozice                                                        | Společnost, geografické umístění, jméno zaměstnance, nadřízený, posun kalendáře, datum, pracovní zařazení, demografické údaje, práce, zaměstnání |
-| Práce                      | Funkce, typ a název                                                                                      | Aktuální zaměstnanec, aktuální pozice, trend zaměstnance, upřednostňované dovednosti, minulá pozice, trend pozice, ukončený pracovní poměr |
+| Práce                      | Funkce, typ a název                                                                                  | Aktuální zaměstnanec, aktuální pozice, trend zaměstnance, upřednostňované dovednosti, minulá pozice, trend pozice, ukončený pracovní poměr |
 | Upřednostňovaná dovednost      | Důležitost, hodnocení, dovednost a úroveň dovedností                                                                 | Práce |
-| Analýza dovedností zaměstnanců  | Certifikace, úroveň, datum úrovně a dovednost                                                                    | Jméno zaměstnance, dovednost |  
+| Analýza dovedností zaměstnanců  | Certifikace, úroveň, datum úrovně a dovednost                                                                    | Jméno zaměstnance, dovednost |
 | Výkonnost              | Ohodnocení, popis a model ohodnocení                                                                      | Aktuální zaměstnanec, aktuální pozice, trend zaměstnance, upřednostňované dovednosti, minulá pozice, trend pozice, ukončený pracovní poměr |
-|  Dovednost                   | Dovednosti, typ dovedností a ohodnocení                                                                              | Analýza dovedností zaměstnanců, upřednostňovaná dovednost |                                                                                                                        
-
+| Dovednost                    | Dovednosti, typ dovedností a ohodnocení                                                                              | Analýza dovedností zaměstnanců, upřednostňovaná dovednost |
 

@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 44f017fc3460b83b730f2f7c909c6b88480dd918
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -42,7 +42,6 @@ Všechny částky v obsahu jsou zobrazeny v měně systému. Systémovou měnu m
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 
 Obsah Power BI **Manažer školení** se zobrazí v pracovním prostoru **Manažer školení**.
-
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
 
@@ -85,8 +84,7 @@ V následujících oddílech jsou popsána agregační měření, která se pou�
 
 | Klíčové měření agregace | Pole                                             | popis |
 |---------------------------|---------------------------------------------------|-------------|
-| Počet projektů        | COUNTA(ProjectAccountingCube\_Projects[PROJECTS]) | Počet dostupných projektů. |
-
+| Počet projektů        | COUNTA(ProjectAccountingCube\_Projects\[PROJECTS\]) | Počet dostupných projektů. |
 
 ### <a name="entity-projectaccountingcubeforecasts"></a>Entita: ProjectAccountingCube\_Forecasts
 **Zdroj dat:** ProjTransBudget
@@ -109,18 +107,16 @@ V následujících oddílech jsou popsána agregační měření, která se pou�
 
 | Klíčové měření agregace    | Pole | popis |
 |------------------------------|-------|-------------|
-| Index výkonnosti nákladů       | ProjectAccountingCube\_Projects[Získaná hodnota] ÷ ProjectAccountingCube\_Projects[Celkové skutečné náklady dokončených úkolů] | Výpočet celkové hodnoty vydělené celkovými skutečnými náklady. |
-| Index plánu výkonnosti   | ProjectAccountingCube\_Projects[získaná hodnota] / ProjectAccountingCube\_Projects[Celkové plánované náklady dokončených úkolů] | Výpočet celkové hodnoty vydělené celkovými skutečnými plánovanými náklady. |
-| Procento dokončené práce | Procento dokončené práce = ProjectAccountingCube\_Projects[Celkové skutečné náklady na dokončené úkoly] / (ProjectAccountingCube\_Projects[Celkové skutečné náklady na dokončené úkoly] + ProjectAccountingCube\_Projects[Celkové plánované náklady na projekt] - ProjectAccountingCube\_Projects[Celkové plánované náklady na dokončené úkoly]) | Celkové procento dokončené práce na základě celkových skutečných nákladů na dokončení úkolu a plánovaných nákladů projektu. |
-| Skutečný poměr fakturovatelných hodin  | ProjectAccountingCube\_Projects[Celkové skutečné fakturovatelné využité hodiny projektu] ÷ (ProjectAccountingCube\_Projects[Celkové skutečné fakturovatelné využité hodiny projektu] + ProjectAccountingCube\_Projects[Celkové skutečné fakturovatelné hodiny režie]) | Celkové skutečné fakturovatelné hodiny na základě využitých hodin a hodin režie. |
-| Získaná hodnota                 | ProjectAccountingCube\_Projects[Celkové plánované náklady na projekt] * ProjectAccountingCube\_Projects[Procento dokončené práce] | Celkové plánované náklady vydělené procentem dokončené práce. |
+| Index výkonnosti nákladů       | ProjectAccountingCube\_Projekty\[Získaná hodnota\] ÷ ProjectAccountingCube\_Projekty\[Celkové skutečné náklady dokončených úkolů\] | Výpočet celkové hodnoty vydělené celkovými skutečnými náklady. |
+| Index plánu výkonnosti   | ProjectAccountingCube\_Projekty\[Získaná hodnota\] ÷ ProjectAccountingCube\_Projekty\[Celkové plánované náklady dokončených úkolů\] | Výpočet celkové hodnoty vydělené celkovými skutečnými plánovanými náklady. |
+| Procento dokončené práce | Procento dokončené práce = ProjectAccountingCube\_Projekty\[Celkové skutečné náklady na dokončené úkoly\] ÷ (ProjectAccountingCube\_Projects\[Celkové skutečné náklady na dokončené úkoly\] + ProjectAccountingCube\_Projekty\[Celkové plánované náklady na projekt\] - ProjectAccountingCube\_Projekty\[Celkové plánované náklady na dokončené úkoly\]) | Celkové procento dokončené práce na základě celkových skutečných nákladů na dokončení úkolu a plánovaných nákladů projektu. |
+| Skutečný poměr fakturovatelných hodin  | ProjectAccountingCube\_Projekty\[Celkové skutečné fakturovatelné využité hodiny projektu\] ÷ (ProjectAccountingCube\_Projekty\[Celkové skutečné fakturovatelné využité hodiny projektu\] + ProjectAccountingCube\_Projekty\[Celkové skutečné fakturovatelné hodiny režie\]) | Celkové skutečné fakturovatelné hodiny na základě využitých hodin a hodin režie. |
+| Získaná hodnota                 | ProjectAccountingCube\_Projekty\[Celkové plánované náklady na projekt\] * ProjectAccountingCube\_Projekty\[Procento dokončené práce\] | Celkové plánované náklady vydělené procentem dokončené práce. |
 
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Entita: ProjectAccountingCube\_TotalEstimatedCosts 
 **Zdroj dat:** ProjTable
 
-
-|    Klíčové měření agregace    |        Pole        |                                          popis                                           |
-|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
+| Klíčové měření agregace       | Pole               | popis |
+|---------------------------------|---------------------|-------------|
 | Plánované náklady dokončené aktivity | Sum(TotalCostPrice) | Celková nákladová cena v odhadech pro všechny typy transakcí projektu s dokončenými úlohami. |
-
 

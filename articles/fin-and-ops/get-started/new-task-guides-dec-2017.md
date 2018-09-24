@@ -25,6 +25,8 @@ ms.lasthandoff: 08/08/2018
 
 # <a name="new-or-updated-task-guides-december-2017"></a>Noví nebo aktualizovaní průvodci záznamem úloh (prosinec 2017)
 
+[!include [banner](../includes/banner.md)]
+
 Toto téma obsahuje nové nebo aktualizované průvodce záznamem úloh vydané pro knihovnu Microsoft APQC Unified Library (prosinec 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics 365 for Operations.
 
 

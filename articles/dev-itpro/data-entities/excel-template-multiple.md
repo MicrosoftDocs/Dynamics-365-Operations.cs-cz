@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 5bc021ce9f0835f2eda310ef7818c9bc9be749f2
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 48239b48cbc24e34d74bbac36e8f827a15d7b840
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,7 +36,7 @@ Podíváme se na příklad, kde existuje jeden soubor aplikace Excel s listy naz
 
 Pokud přidáte druhou entitu **Sklady**, aniž byste opustili formulář **Přidat soubor**, vyhledávání listu vám umožní vybrat list **Sklady** bez nutnosti znovu odeslat soubor. Jediný důvod k odeslání nového souboru by byl ten, kdyby data **Sklady** byla v jiném souboru.
 
-![Více listů](./media/AddFileMultipleWorkSheets.png) 
+![Více listů](./media/AddFileMultipleWorkSheets.png)
 
 ## <a name="fix-worksheet-to-entity-mapping"></a>Opravení listu pro mapování entit
 
@@ -51,5 +51,4 @@ V případech, kdy musí být odeslána nová verze stejného nebo zcela nového
 ## <a name="upload-a-file-using-run-project"></a>Odeslání souboru pomocí spuštění projektu
 
 Můžete načíst soubor aplikace Excel při používání možnosti **Spustit projekt** pro provedení projektu importu. Musíte si dávat pozor, abyste odeslali pouze soubory, které mají stejné listy jako existující mapování na datových entitách v datovém projektu. Pokud není list nalezen v nově odeslaném souboru, systém zobrazí chybovou zprávu a zastaví import. Pokud u entity musí být změněno mapování na list, musí být nejprve aktualizováno mapování v datovém projektu z datového projektu předtím, než použijete soubor v možnosti **Spustit projekt**.
-
 

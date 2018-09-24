@@ -3,7 +3,7 @@ title: "Získání podpory pro aplikace Finance and Operations nebo Lifecycle Se
 description: "Tento článek vysvětluje, jak získat nápovědu k aplikaci Microsoft Dynamics 365 for Finance and Operations, nebo službě Microsoft Dynamics Lifecycle Services (LCS)."
 author: kfend
 manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 716c747957471ce2c4c919196b4fc2f9061ce6b6
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: 7061ee2e8b22d29381131815898902a482b7b730
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -54,7 +54,7 @@ Abyste získali podpora pro aplikaci Finance and Operations nebo LCS, použijte 
 <tbody>
 <tr class="odd">
 <td>Zeptejte se komunity.</td>
-<td>Přejděte na stránku <a href="http://go.microsoft.com/fwlink/?LinkId=221068"><span style="color: #0066cc;">Zeptat se komunity</span></a> a vyhledejte odpovědi na své otázky od komunity Dynamics.</td>
+<td>Přejděte na stránku <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">Komunita Dynamics 365 for Finance and Operations</span></a> a vyhledejte odpovědi na své otázky od komunity Dynamics.</td>
 </tr>
 <tr class="even">
 <td>Použijte nástroj Hledání problému.</td>

@@ -17,10 +17,10 @@ ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 04608cee8639258af1502830b60d4afd9e841e8a
+ms.sourcegitcommit: 4f4cb254ad2d4328e146f5dba471aafb21660986
+ms.openlocfilehash: 308f46ae4afef1eb88548bdebdf8215aabb87442
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/14/2018
 
 ---
 
@@ -183,7 +183,7 @@ Tato část vás provede následujícími obchodními procesy a používá fisk�
 ### <a name="register-an-automatically-posted-cod-payment-for-a-free-text-invoice-and-print-a-cash-receipt"></a>Registrace automaticky zaúčtované platby na dobírku pro volnou fakturu a tisk hotovostní příjemky
 
 1. Zvolte **Pohledávky** &gt; **Volné faktury** &gt; **Všechny volné faktury**.
-2. Vytvořte volnou fakturu. Více informací naleznete v tématu [Vytvoření volné faktury](../accounts-receivable/tasks/create-free-text-invoice.md).
+2. Vytvořte volnou fakturu. Více informací naleznete v tématu [Vytvoření volné faktury](../accounts-receivable/create-free-text-invoice-new.md). 
 3. Na pevné záložce **Platba** vyberte metodu platby, která je nastavena jako metoda platby pro registrační pokladnu.
 4. Vyberte platební podmínky, které jsou nastaveny pro platbu na dobírku.
 5. Zvolte **Zaúčtovat**.
