@@ -32,18 +32,18 @@ Aplikace Attract poskytuje možnosti správy procesu při přijímání nových 
 
 Attract poskytuje následující funkce:
 
-### <a name="attract-dashboard"></a>Řídicí panel Attract
+## <a name="attract-dashboard"></a>Řídicí panel Attract
 Na tomto místě si mohou členové náborového týmu zobrazovat podrobnosti úloh, kterých se účastní. Dále zde může náborový manažer nebo náborový pracovník přidat do aplikace Attract novou pracovní pozici, buď vytvořením jedné individuální práce, nebo importem více prací z tabulky aplikace Excel.
 
-### <a name="jobs"></a>Práce
+## <a name="jobs"></a>Práce
 Na stránce **úlohy** můžete zobrazit a upravit podrobnosti, jako je například popis práce a místo výkonu práce. Na stránce **Práce** se dává dohromady náborový tým a můžete zde přidat nebo změnit náborové pracovníky a tazatele na pohovoru v týmu. Nové kandidáty lze přidat na stránce **Práce** taktéž.
 
-### <a name="candidates"></a>Kandidáti
+## <a name="candidates"></a>Kandidáti
 Kandidáty lze přidávat k práci jednotlivě nebo je nahrávat ve větších počtech z tabulky aplikace Excel. Všichni kandidáti se v náborovém procesu týkajícím se každé práce automaticky přidají do první fáze s názvem Fáze žádosti. Zde lze zobrazit a spravovat všechny informace o žádosti kandidáta. Spolu s kontaktní údaji, jako jsou e-mailové adresy, telefonní čísla a odkazy na jejich účty sociálních médií zde můžete odesílat a zobrazovat další dokumenty. Pokud uchazeč poskytl odkaz na svůj profil služby LinkedIn a byla nastavena integrace služby LinkedIn (která vyžaduje LinkedIn licenci náborového pracovníka), zobrazí se profil kandidáta.
 
-### <a name="stages"></a>Fáze
+## <a name="stages"></a>Fáze
 Attract poskytuje předdefinovaný proces náboru, který obsahuje čtyři základní fáze: Žádost, Prověřování, Pohovor a Nabídka. Noví kandidáti začínají ve fázi žádosti, kde se revidují jejich životopisy, průvodní dopisy, portfolia a další dokumenty související se žádostí. Z této fáze se kandidát posune do fáze prověřování, kde je pozván na telefonní pohovor nebo video pohovor pomocí aplikace Skype. Náborový manažer a pracovník mohou o kandidátovi poskytnout zpětnou vazbu a posunout ho do další fáze. Osobní pohovory jsou pak naplánovány s dostupnými členy náborového týmu a lze je přizpůsobit buď na individuální pohovory nebo panelové pohovory různých délek trvání. Po ukončení pohovoru je týmem, který vedl pohovor, poskytnuta a zrevidována zpětná vazba. Vybraní kandidáti jsou přesunuti do poslední fáze, kde je učiněna nabídka a připravena k jejich kontrole a schválení. 
 
-### <a name="candidate-app"></a>Aplikace pro kandidáta
+## <a name="candidate-app"></a>Aplikace pro kandidáta
 Jakmile jsou kandidáti přidání k práci, obdrží e-mail s odkazem na získání aplikace. Tato webová aplikace poskytuje kandidátovi podrobnosti o práci. Je to současně nástroj pro komunikaci s náborovým týmem. Kandidáti mohou také odesílat informace o své dostupnosti pro pohovory.
 
