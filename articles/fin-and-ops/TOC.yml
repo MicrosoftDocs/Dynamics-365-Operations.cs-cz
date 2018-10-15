@@ -38,12 +38,18 @@
               href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
             - name: Zásady životního cyklu softwaru a vydání on-premises
               href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
+            - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
+              href: get-started/mainstream-support-ax-2009-2012.md
             - name: Odstraněné nebo zastaralé funkce
               href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
             - name: Odložené funkce AX 2012
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: Funkce neimplementované v nasazeních on-premises
               href: get-started/features-not-implemented-on-prem.md
+            - name: Finance and Operations verze 8.1 (říjen 2018)
+              href: get-started/whats-new-changed-8-1-October-2018.md
+            - name: Platform update 20 (září 2018)
+              href: get-started/whats-new-platform-update-20.md
             - name: Finance and Operations verze 8.0 (duben 2018)
               href: get-started/whats-new-changed-8-0-April-2018.md
             - name: Platform update 15 (březen 2018)
@@ -452,11 +458,15 @@
               items:
                 - name: Nastavení ověření párování faktur závazků
                   href: ../financials/accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
-            - name: Účetní distribuce a účetní položky dílčí hlavní knihy pro faktury dodavatele
+            - name: Rozúčtování a položky dílčí hlavní knihy pro faktury dodavatele
               href: ../financials/accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Párování faktur a mezipodnikové nákupní objednávky
               href: ../financials/accounts-payable/invoice-matching-intercompany-purchase-orders.md
-            - name: Přehled platné platby
+            - name: Nastavení zásad faktur dodavatele
+              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: "Zaznamenání faktury dodavatele a\_spárování s\_přijatým množstvím"
+              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
+            - name: Přehled kladné platby
               href: ../financials/accounts-payable/positive-pay-overview.md
             - name: Nastavení a generování souborů kladné platby
               href: ../financials/accounts-payable/set-up-generate-positive-pay-files.md
@@ -566,10 +576,6 @@
               href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
             - name: Zpracování úroků
               href: ../financials/accounts-receivable/tasks/process-interest.md
-            - name: Nastavení zásad faktur dodavatele
-              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
-            - name: "Zaznamenání faktury dodavatele a\_spárování s\_přijatým množstvím"
-              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Vytvoření faktury odběratele
               href: ../financials/accounts-receivable/configure-customer-invoices.md
             - name: Vklad platby odběratele
@@ -596,6 +602,8 @@
               href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: "Nastavení a\_generování informací o\_splatnosti pohledávek"
               href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Kopírování odběratelů pomocí sdílených číselných řad
+              href: ../financials/accounts-receivable/copy-customer.md
             - name: Workflow odběratele
               href: ../financials/accounts-receivable/customer-workflow.md
             - name: "Platby a\_vyrovnání"
@@ -1539,12 +1547,10 @@
               href: ../financials/localizations/emea-exchange-rate-adjustments.md
             - name: Formáty souboru pro způsoby platby
               href: ../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md
-            - name: Integrace fiskální služby (ESR)
+            - name: Integrace finanční služby (ESR)
               href: ../financials/localizations/emea-fiscal-service-integration.md
             - name: Vyřazení dlouhodobého majetku pro Estonsko a Litvu
               href: ../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md
-            - name: Přecenění cizí měny
-              href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: Vygenerování dokladu převodu pro interní převod zásob
               href: ../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md
             - name: Vygenerování sestavy souhrnného hlášení (EU)
@@ -2102,18 +2108,56 @@
               href: ../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md
             - name: Odpisy dlouhodobého majetku
               href: ../financials/localizations/emea-pol-fixed-assets-depreciation.md
-            - name: Rozšíření funkce disponibility investičního majetku
+            - name: Rozšíření funkce disponibility dlouhodobého majetku
               href: ../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
+            - name: Přecenění cizí měny
+              href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: Vratný obal
               href: ../financials/localizations/emea-pol-returnable-packages.md
             - name: Sestavy DPH
               href: ../financials/localizations/emea-pol-sales-tax-reports.md
-            - name: Soubor standardního auditu
+            - name: Standardní soubor auditu
               href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
             - name: Úrok daně a volný úrok
               href: ../financials/localizations/emea-pol-interest-calculation.md
             - name: Výkaz obratu
               href: ../financials/localizations/emea-pol-turnover-balances-statement.md
+        - name: Rusko
+          href: ../financials/localizations/russia.md
+          items:
+            - name: Držitelé zálohy
+              href: ../financials/localizations/rus-advance-holders.md
+              items:
+                - name: Vytvoření držitele zálohy
+                  href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
+                - name: Denní operace pro držitele záloh
+                  href: ../financials/localizations/rus-advance-holders-daily-operations.md
+            - name: Dlouhodobý majetek
+              items:
+                - name: Pořízení dlouhodobého majetku a jeho vložení do operace
+                  href: ../financials/localizations/rus-fixed-asset-acquisition.md
+                - name: Vytvoření a zaúčtování deníků rozpočtu pro pořízení dlouhodobého majetku
+                  href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
+                - name: Inventura dlouhodobého majetku
+                  href: ../financials/localizations/rus-fixed-assets-counting.md
+                - name: Přecenění měny dlouhodobého majetku
+                  href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+                - name: Částečná demontáž dlouhodobého majetku (likvidace)
+                  href: ../financials/localizations/rus-fixed-assets-disassembly.md
+            - name: Nastavení a zpracování platebních příkazů
+              href: ../financials/localizations/rus-payment-order-settings-processing.md
+            - name: Nastavení směnných kurzů transakce měny
+              href: ../financials/localizations/rus-exchange-difference.md
+            - name: Náhled transakcí hlavní knihy
+              href: ../financials/localizations/rus-ledger-transactions-preview.md
+            - name: Nastavení úředních osob
+              href: ../financials/localizations/rus-officials.md
+            - name: Nastavit bankovních účtů
+              href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
+            - name: DPH pro daňové poradce
+              href: ../financials/localizations/rus-tax-agent.md
+            - name: Nastavení řízení dimenze pro vyrovnání
+              href: ../financials/localizations/rus-transactions-settlement-date.md
         - name: Saúdská Arábie
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2133,6 +2177,8 @@
               href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
             - name: Možnosti cizí směnky
               href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
+            - name: Výpočet dat splatnosti a sestava s průměrným obdobím plateb
+              href: ../financials/localizations/emea-esp-invoice-due-dates.md
             - name: Nerealizovaná DPH
               href: ../financials/localizations/emea-esp-conditional-sales-tax.md
             - name: Opravná fakturace
@@ -2857,7 +2903,7 @@
               href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
             - name: Ruční úprava prognózy poptávky
               href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-    - name: Mobilní aplikace Dynamics 365 for Unified Operations
+    - name: Aplikace Dynamics 365 for Unified Operations Mobile
       href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
       items:
         - name: Dostupné mobilní pracovní prostory

@@ -3,26 +3,27 @@ title: "Vypracování plánu kariérního postupu"
 description: "Jak v průběhu času vaše organizace roste a vy zvažujete plánování následnictví, můžete chtít vyhledat osobu, která má podobné dovednosti, jako jiný uživatel."
 author: kherr75
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: HcmSkillMapping
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 006f3d4b30711651e389dd76f871de1214c158d1
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 63999252fa00ba474d1e40f696029973f746ba2c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="develop-a-succession-plan"></a>Vypracování plánu kariérního postupu
+# <a name="develop-succession-plan"></a>Vypracování plánu kariérního postupu
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -36,7 +37,7 @@ Jak v průběhu času vaše organizace roste a vy zvažujete plánování násle
 6. Klikněte na Načíst profil.
 7. Klikněte na možnost Osoba.
 8. V poli osoba zadejte jméno, nebo ji vyberte z rozevíracího seznamu.  Příklad: Cassie Hicks.
-9. Klikněte na tlačítko OK.
+9. Klepněte na tlačítko OK.
 10. Rozbalte pevnou záložku Certifikáty a prohlédněte si nebo upravte certifikáty, které jsou zahrnuty do mapování dovedností.
 11. Rozbalte pevnou záložku dovedností pro zobrazení nebo úpravu dovedností, které chcete zahrnout.
 12. Označte na seznamu první řádek.  Příklad: Účetnictví

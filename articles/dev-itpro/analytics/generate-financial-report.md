@@ -3,7 +3,7 @@ title: "Generovat finanční sestavy"
 description: "Toto téma obsahuje informace o generování finančních sestav."
 author: aprilolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 09/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: b1dea07589b7fe953ec47b204441d044c19b5020
+ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
+ms.openlocfilehash: 70fa1298c3af43f62b8fa0b833fa817f17858c47
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/27/2018
 
 ---
 
@@ -34,15 +34,12 @@ Toto téma obsahuje informace o generování finančních sestav.
 
 Chcete-li vygenerovat sestavu, otevřete definici sestavy a klikněte na tlačítko Generovat na panelu nástrojů. Otevře se okno Stav fronty sestav a označí umístění vaší sestavy ve frontě. Ve výchozím nastavení se generovaná sestava otevře ve Web Viewer.
 
-> [!NOTE]
-> Můžete generovat sestavy pouze do složek a umístění, k nimž máte oprávnění pro přístup.
-
 Pro generování sestav jsou k dispozici následující možnosti:
 
 - Nastavte plán pro generování sestavy nebo skupiny sestav automaticky
 - Kontrolujte chybějící účty nebo data v sestavách a ověřujte přesnost sestav
 
-Při generování sestavy se používají možnosti, které jste zadali na kartě Definice sestavy. Karta Výstup a distribuce slouží k určení umístění knihovny sestav, což nabízí snadný způsob sdílení sestavy.
+Při generování sestavy se používají možnosti, které jste zadali na kartě Definice sestavy.
 
 ## <a name="generate-a-financial-report"></a>Generovat finanční sestavu
 
@@ -56,9 +53,6 @@ Po vygenerování sestavy bude sestava k dispozici pro zobrazení v oddílu **Se
 Sestavu můžete **Zobrazit** nebo **Odstranit**.
 
 Pro generování sestavy pomocí **návrháře sestav** otevřete definici sestavy a klepněte na tlačítko Generovat na panelu nástrojů. Otevře se okno Stav fronty sestav a označí umístění vaší sestavy ve frontě. Ve výchozím nastavení se generovaná sestava otevře ve Web Viewer.
-
-> [!NOTE]
-> Můžete generovat sestavy pouze do složek a umístění, k nimž máte oprávnění pro přístup.
 
 ## <a name="schedule-report-generation"></a>Plánování generování sestavy
 Mnohé společnosti používají základní sadu sestav, které se spouštějí v naplánovaných intervalech, aby byly v souladu s jejich obchodními procesy. Můžete naplánovat generování sestavy pravidelně, například denně, týdně, měsíčně nebo ročně. Může se jednat o jednu sestavu nebo skupinu sestav zahrnující několik společností. Pro všechny zadané společnosti, které pocházejí například z definice organizačního stromu, je nutné zadat přihlašovací údaje. Pokud přihlašovací údaje nejsou platné, sestava zobrazí pouze informace, pro přístup k nimž máte oprávnění, například pro společnost, ke které jste momentálně přihlášeni. Výstupní informace jsou nejprve přečteny ze skupiny sestav a poté z jednotlivých sestav.

@@ -3,7 +3,7 @@ title: "Odstraněné nebo zastaralé funkce"
 description: "Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění."
 author: sericks007
 manager: AnnBe
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8a3c4ed8f3ed79ab0cb3e59076734877d270bd68
-ms.openlocfilehash: cd620dcdeb1cd5fd3a89be9ae31c4d35e29a03d0
+ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
+ms.openlocfilehash: ea24d6d63edc6f3bb1bf4a99d24d348af0d6cdbf
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
@@ -41,6 +41,52 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zast
 
 > [!Note]
 > Podrobné informace o objektech v aplikaci Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikace Finance and Operations.
+
+## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 a aktualizací platform update 20
+
+### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Pravidla dávkových převodů pro položky účtu dílčí hlavní knihy
+Režim synchronního převodu je zastaralý v parametrech hlavní knihy.  Tento režim je nahrazen pouze možnostmi Asynchronní a plánovaná dávka, které již existují jako možnosti pro převod. 
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Odstraňujeme synchronní možnost kvůli dopadu na výkon systému. |
+| **Nahrazeno jinou funkcí?**   | Asynchronní a plánovaná dávka jsou možnosti, které mají být použity místo synchronní možnosti.   |
+| **Ovlivněné oblasti produktu**         | Hlavní kniha, Závazky, Pohledávky, Zásobování, Výdaje    |
+| **Možnost nasazení**              | Všechna  |
+| **Stav**                         | Zastaralé - Plánovaná doba pro odstranění funkcionality je verze 10.0.|
+
+### <a name="electronic-reporting-for-russia"></a>Elektronické výkaznictví pro Rusko
+Funkce pro konfiguraci formátů souborů TXT a XML prohlášení. 
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Nahrazeno elektronickým výkaznictvím. |
+| **Nahrazeno jinou funkcí?**   | Ano. |
+| **Ovlivněné oblasti produktu**         | Hlavní kniha |
+| **Možnost nasazení**              | Všechna |
+| **Stav**                         | Odstraněno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20. |
+
+### <a name="financial-reports-generator-for-russia"></a>Generátor finančních sestav pro Rusko
+Nástroj pro nastavení shromažďování dat pro účetnictví a daňové sestavy a export dat do šablon sestavy XLS a DOC. Funkční části: jsou odstraněny export dat do šablon sestavy XLS , dotazy a pevné požadavky. 
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Odebrané části jsou nahrazeny elektronickým výkaznictvím. |
+| **Nahrazeno jinou funkcí?**   | Ano. Uživatelské rozhraní nastavení finančních sestav by mělo být použito pro nastavení pravidel shromažďování dat účty hlavní knihy a daňovými registry. Export dat do různých typů souborů, pevné požadavky a pravidla shromažďování dat podobná dotazům musí být nakonfigurovány v elektronickém výkaznictví. |
+| **Ovlivněné oblasti produktu**         | Hlavní kniha. |
+| **Možnost nasazení**              | Všechna |
+| **Stav**                         | Odstraněno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20. |
+
+### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integrování s externími poskytovateli pro odeslání elektronických sestav prostřednictvím komunikačních kanálů pro Rusko
+Funkce exportující generované elektronické soubory deklarací do složky pro další zasílání oficiálním poskytovatelům elektronického výkaznictví, stejně jako import stavu zpět.
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Nahrazeno konfigurovatelnou funkcí elektronických zpráv. |
+| **Nahrazeno jinou funkcí?**   | Ano.  |
+| **Ovlivněné oblasti produktu**         | Hlavní kniha, daň |
+| **Možnost nasazení**              | Všechna |
+| **Stav**                         | Odstraněno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20. |
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 a aktualizací platform update 15
 V této verzi nebyly odebrány ani odepsány žádné funkce. Aktualizace platformy 15 je kumulativní a obsahuje nové a změněné funkce aktualizace platformy 13, aktualizace platformy 14 a aktualizace platformy 15.

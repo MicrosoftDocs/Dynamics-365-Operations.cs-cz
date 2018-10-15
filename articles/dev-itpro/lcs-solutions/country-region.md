@@ -3,7 +3,7 @@ title: "Lokalizace a funkce týkající se předpisů"
 description: "Toto téma obsahuje seznam prostředků, které vám pomohou dozvědět se více o funkci specifické pro zemi/oblast."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/05/2018
+ms.date: 09/30/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f64292a1b3726ea9b43f959a44c4ed2a1f392484
-ms.openlocfilehash: db18906739529e04710507ee9ff088540894171d
+ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.openlocfilehash: e74ad4442e1b6851812f889e79f2fb09060fb87a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/05/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
@@ -102,11 +102,12 @@ Další informace naleznete v tématu [Průvodci záznamem úloh](../../fin-and-
         - [Litva](../../financials/localizations/lithuania.md)
         - [Mexiko](../../financials/localizations/mexico.md)
         - [Malajsie](../../financials/localizations/malaysia.md)
-        - [Nizozemí](../../financials/localizations/netherlands.md)
+        - [Nizozemsko](../../financials/localizations/netherlands.md)
         - [Norsko](../../financials/localizations/norway.md)
     :::column-end:::
     :::column:::
         - [Polsko](../../financials/localizations/poland.md)
+        - [Rusko](../../financials/localizations/russia.md)
         - [Saúdská Arábie](../../financials/localizations/saudi-arabia.md)
         - [Singapur](../../financials/localizations/singapore.md)
         - [Španělsko](../../financials/localizations/spain.md)

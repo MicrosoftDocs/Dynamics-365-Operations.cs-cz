@@ -3,7 +3,7 @@ title: "Domovská stránka místních nasazení"
 description: "Toto téma obsahuje informace a odkazy na obsah týkající se místních nasazení."
 author: kfend
 manager: AnnBe
-ms.date: 07/16/2018
+ms.date: 09/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: aba11ae99393eb0d8c3e1df2276faa95ad831d29
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: e65edc9d613c9898776e30ea5ab4104a3ce5b4c8
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 # <a name="on-premises-deployments-home-page"></a>Domovská stránka místních nasazení
@@ -59,6 +59,7 @@ Můžete nasadit Microsoft Dynamics 365 for Finance and Operations (on-premises)
 
 ## <a name="other-resources"></a>Další zdroje
 - [Řešení problémů aplikace Dynamics 365 for Finance and Operations on-premises](troubleshoot-on-prem.md)
+- [Místní diagnostika](on-premises-diagnostics.md)
 - [Funkce neimplementované v nasazeních on-premises](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Zastaralé funkce](../migration-upgrade/deprecated-features.md)
 - [Zásady životního cyklu softwaru a vydání on-premises](../migration-upgrade/on-prem-version-update-policy.md)

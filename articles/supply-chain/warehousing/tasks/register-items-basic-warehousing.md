@@ -1,29 +1,30 @@
 --- 
-title: "Registrace položek pro položky umožňující základní uskladnění s použitím deníku doručení zboží"
+title: "Registrace položek pro položky umožňující základní uskladnění pomocí deníku se záznamem doručení položek"
 description: "Tento postup popisuje, jak zaregistrovat položky pomocí deníku doručení položek, když použijete \"základní funkce skladu\" v modulu Řízení zásob."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: PurchTable, PurchCreateOrder, WMSJournalTable, WMSJournalCreate, PurchEditLines
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: c7148bd807ef29b0dd89204a0fbe9b8480095aba
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 5c53a38eb6afdf8d3cc1a316c8da5e84549ab60d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="register-items-for-a-basic-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrace položek pro položky umožňující základní uskladnění s použitím deníku doručení zboží
+# <a name="register-items-for-a-basic-warehousing-enabled-item-using-an-item-an-item-arrival-journal"></a>Registrace položek pro položky umožňující základní uskladnění pomocí deníku se záznamem doručení položek
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -34,7 +35,7 @@ Tento postup popisuje, jak zaregistrovat položky pomocí deníku doručení pol
 1. Přejděte do Řízení zásob > Položky deníku > Doručení položky > Doručení položky.
 2. Klikněte na položku Nová.
 3. Zadejte hodnotu do pole Název.
-    * Pokud používáte data USMF, můžete zadat „WHS“. Pokud používáte jiná data, deník s názvem, který zvolíte, musí mít následující vlastnosti: u možnosti Zkontrolovat výdejní skl. místo musí být nastavena hodnota Ne a u Řízení karantény musí být nastavena hodnota Ne.  
+    * Pokud používáte data USMF, můžete zadat „WHS“. Pokud používáte jiná data, deník s názvem, který zvolíte, musí mít následující vlastnosti: místo výdeje šeku musí být nastaveno na hodnotu Ne a u Řízení karantény musí být nastavena hodnota Ne.  
 4. Zadejte hodnotu do pole Dodací list.
     * Jedná se o ID dodacího listu z dodacího listu vydaného dodavatelem. Přidejte jedinečné číslo.  
 5. V poli Číslo vyberte nákupní objednávku.

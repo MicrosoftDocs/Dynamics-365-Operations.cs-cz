@@ -18,10 +18,10 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
-ms.openlocfilehash: 7061ee2e8b22d29381131815898902a482b7b730
+ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.openlocfilehash: 4ad96a3aa3ac80045345b839ea8a923884061aeb
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/29/2018
+ms.lasthandoff: 09/21/2018
 
 ---
 
@@ -31,8 +31,7 @@ ms.lasthandoff: 08/29/2018
 
 Tento článek vysvětluje, jak získat nápovědu k aplikaci Finance and Operations nebo službě Microsoft Dynamics Lifecycle Services (LCS). 
 
-<a name="contact-support"></a>Kontaktovat podporu
----------------
+## <a name="contact-support"></a>Kontaktovat podporu
 
 Použijte informace v tomto článku ke kontaktu společnosti Microsoft, pokud máte technické dotazy týkajících se aplikace Finance and Operations, nebo pokud budete potřebovat pomoc s přístupem ke službě Microsoft Dynamics Lifecycle Services.
 
@@ -89,8 +88,10 @@ Ohledně technických dotazů, které se vztahují k přihlášení a přístupu
 </tbody>
 </table>
 
-Další informace o nabídkách podpory pro aplikaci Microsoft Dynamics naleznete v tématu [Online podpora pro aplikace Microsoft Dynamics](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
 
-
+## <a name="additional-resources"></a>Další zdroje
+- [Získání podpory pro aplikaci Dynamics 365 for Retail](../../retail/retail-support.md)
+- [Získání podpory pro aplikaci Dynamics 365 for Talent](../../talent/talent-support.md)
+- Další informace o nabídkách podpory pro aplikaci Microsoft Dynamics naleznete v tématu [Online podpora pro aplikace Microsoft Dynamics](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
 
 
