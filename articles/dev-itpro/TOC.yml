@@ -9,7 +9,7 @@
   items:
     - name: Generování ukázkových pomocí datových balíčků
       href: data-entities/generate-demo-data-packages.md
-- name: Vývoj a vlastní nastavení pomocí aplikace Visual Studio
+- name: Vývoj a přizpůsobení
   href: dev-tools/developer-home-page.md
   items:
     - name: Zásobník aplikace a architektura serveru
@@ -27,7 +27,7 @@
           href: dev-tools/enable-development-machine.md
         - name: 'Časté dotazy k vývoji a vytváření virtuálních počítačů, které nepovolují přístup správce'
           href: sysadmin/VMs-no-admin-access.md
-        - name: Přejmenování místních prostředí pro přístup ke službám Visual Studio Team Services
+        - name: Přejmenování místních prostředí pro přístup k Azure DevOps
           href: migration-upgrade/vso-machine-renaming.md
         - name: Systémové požadavky na vývoj
           href: dev-tools/development-system-requirements.md
@@ -106,6 +106,8 @@
               href: dev-ref/xpp-variables-data-types.md
             - name: 'X++ příkazy, cykly a ošetření výjimek'
               href: dev-ref/xpp-statements-loops.md
+            - name: Chyba připojení SQL - výjimka X++
+              href: dev-ref/sql-connection-error.md
             - name: X++ operátory
               href: dev-ref/xpp-operators.md
             - name: X++ priorita operátorů
@@ -251,6 +253,10 @@
               href: extensibility/extensibility-changes-802.md
             - name: Změny rozšiřitelnosti – verze 8.0.3
               href: extensibility/extensibility-changes-803.md
+            - name: Změny rozšiřitelnosti – verze 8.0.4
+              href: extensibility/extensibility-changes-804.md
+            - name: Změny rozšiřitelnosti – verze 8.1
+              href: extensibility/extensibility-changes-81.md
         - name: Základy
           items:
             - name: Narušující přizpůsobení
@@ -916,6 +922,8 @@
           href: gdpr/gdpr-lcs.md
     - name: Pracovní prostor kontrolního seznamu ověřování dat
       href: user-interface/data-validation-workspace.md
+    - name: Popisy chyb správy dat
+      href: data-entities/dm-error-descriptions.md
 - name: Průběžné doručování
   href: dev-tools/continuous-delivery-home-page.md
   items:
@@ -1109,12 +1117,27 @@
               href: migration-upgrade/migrate-upgraded-cube-entity-store.md
             - name: Upgrade plánování rozpočtu
               href: migration-upgrade/upgrade-budget-planning.md
+    - name: Migrace dat z aplikace AX 2009 do aplikace Finance and Operations
+      href: migration-upgrade/data-migration-tool.md
+      items:
+        - name: Migrace AX 2009 - Instalace nástroje pro migraci dat
+          href: migration-upgrade/install-dmt.md
+        - name: Migrace AX 2009 - Generování map
+          href: migration-upgrade/generate-maps.md
+        - name: Migrace AX 2009 - Vytváření šablon
+          href: migration-upgrade/create-package-templates-dmt.md
+        - name: Migrace AX 2009 - Vytváření skupin migrace
+          href: migration-upgrade/create-definition.md
+        - name: Migrace AX 2009 - Export balíčků
+          href: migration-upgrade/ax2009-upgrade-export-package.md
+        - name: Migrace AX 2009 - Import balíčků
+          href: migration-upgrade/ax2009-upgrade-import-package.md
     - name: "Migrace a\_upgrade kódu"
       href: migration-upgrade/code-migration-home-page.md
       items:
         - name: Příprava na migraci kódu
           href: migration-upgrade/prepare-migration.md
-        - name: Konfigurace mapování Visual Studio Team Services
+        - name: Konfigurovat mapování Azure DevOps
           href: migration-upgrade/configure-vso-solution.md
         - name: Rozdělení modelů
           href: dev-tools/model-split.md
@@ -1124,6 +1147,8 @@
       items:
         - name: Proces přechodu na nejnovější aktualizaci
           href: migration-upgrade/upgrade-latest-update.md
+        - name: Aktualizace prostředí z verze 8.0 na 8.1
+          href: migration-upgrade/appupdate-80-81.md
         - name: Zásady životního cyklu softwaru a vydání cloudu
           href: migration-upgrade/versions-update-policy.md
         - name: Použití nejnovější aktualizace platformy na prostředí
@@ -1248,7 +1273,7 @@
       href: lifecycle-services/complete-tasks-bpm.md
     - name: Práce s diagramy aktivit v knihovnách BPM
       href: lifecycle-services/using-activity-diagrams.md
-    - name: Synchronizace knihoven BPM se službou Visual Studio Team Services
+    - name: Synchronizace knihoven BPM s Azure DevOps
       href: lifecycle-services/synchronize-bpm-vsts.md
     - name: Vytvoření knihoven akceptačního testování pomocí průvodců záznamem úloh a BPM
       href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
@@ -1264,8 +1289,12 @@
       href: lifecycle-services/report-production-outage.md
     - name: Sledování přihlášení uživatelů
       href: lifecycle-services/user-logins.md
-    - name: Knihovna majetku
+    - name: Knihovna prostředků
       href: lifecycle-services/asset-library.md
+    - name: Řešení problémů s výkonností pomocí nástrojů v LCS
+      href: lifecycle-services/performancetroubleshooting.md
+    - name: Návod pro dotazy
+      href: lifecycle-services/querycookbook.md
     - name: Microsoft Dynamics 365 Translation Service
       href: lifecycle-services/translation-service-overview.md
       items:

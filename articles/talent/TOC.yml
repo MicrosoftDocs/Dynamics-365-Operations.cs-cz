@@ -6,6 +6,14 @@
       items:
         - name: Co je nového a co se změnilo
           items:
+            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (1. října 2018)
+              href: whats-new-talent-october-01.md
+            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (24. září 2018)
+              href: whats-new-talent-september-24.md
+            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (17. září 2018)
+              href: whats-new-talent-september-17-2018.md
+            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (10. září 2018)
+              href: whats-new-talent-september-10.md
             - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (srpen 2018)
               href: whats-new-talent-august2018.md
             - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (červenec 2018)
@@ -20,10 +28,14 @@
           href: modular-app-tech-faq.md
         - name: Integrace aplikací PowerApps
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Přístup k funkcím náhledu
+        - name: Core HR a Common Data Service for Apps
+          href: CoreHREntities.md
+        - name: Přístup k funkcím Preview
           href: access-preview-feature.md
         - name: Konfigurace integrace mezd mezi aplikacemi Talent a Dayforce
           href: configure-payroll-integration.md
+        - name: Získání podpory pro Talent
+          href: talent-support.md
     - name: 'Uspořádání zaměstnanců pomocí oddělení, prací a pozic'
       href: departments-jobs-positions.md
       items:
@@ -41,8 +53,13 @@
           href: formalize-business-processes.md
         - name: Použití workflow ke správě informací o zaměstnanci
           href: workflow-manage-employee-information.md
-        - name: Správa pracovního volna a absencí
-          href: leave-absence-overview.md
+    - name: Správa pracovního volna a absencí
+      href: leave-absence-overview.md
+      items:
+        - name: Časové rozlišení volna na základě odpracovaných hodin
+          href: leave-accrue-hours-worked.md
+        - name: Kalendáře pracovní doby
+          href: working-time-calendars.md
     - name: Správa zaměstnanců ve vaší organizaci
       items:
         - name: Funkce a možnosti aplikace Attract
@@ -59,6 +76,8 @@
           href: create-variable-compensation-plans.md
         - name: Zpracování kompenzací
           href: process-compensation.md
+        - name: Nastavení komponent práce
+          href: create-job.md
     - name: Rozvoj a zaškolení zaměstnanců
       items:
         - name: Řízení výkonnosti

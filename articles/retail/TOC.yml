@@ -12,6 +12,8 @@
       href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
     - name: Možnosti nasazení
       href: dev-itpro/choose-deployment.md
+    - name: Získání podpory pro Retail
+      href: retail-support.md
 - name: Vysvětlení životního cyklu implementace
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
@@ -35,9 +37,9 @@
       href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md
     - name: Implementace více LCS projektů a produkčních prostředí na stejném klientovi služby Azure Active Directory
       href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
-    - name: Implementace projektů Retail v aplikaci Finance and Operations
+    - name: Implementace projektů v aplikaci Finance and Operations Retail
       href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-    - name: 'Nastavení nových prostředí, VSTS a větví pro projekty Retail'
+    - name: 'Nastavení nových prostředí, Azure DevOps a větví pro projekty Retail'
       href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
     - name: Aktualizace kódu a prostředí pro projekty Retail
       href: dev-itpro/updating-environments.md
@@ -305,6 +307,14 @@
       href: ../talent/create-job.md
 - name: Lokalizace a funkce týkající se předpisů
   items:
+    - name: Východní Evropa
+      items:
+        - name: Zálohové faktury pro Retail pro východní Evropu
+          href: localizations/emea-eeu-advance-invoices-for-retail.md
+        - name: Správa pokladní hotovosti pro Retail pro východní Evropu
+          href: localizations/emea-eeu-petty-cash-for-retail.md
+        - name: Faktury odběratele a vrácení prodejních objednávek ve východoevropských zemích v aplikaci Retail
+          href: localizations/emea-eeu-retail-invoices.md
     - name: Francie
       items:
         - name: Funkce registrační pokladny
@@ -313,10 +323,12 @@
           href: localizations/emea-fra-deployment.md
     - name: Indie
       items:
-        - name: Integrace daně ze zboží služeb pro registrační pokladny
+        - name: Integrace daně ze zboží služeb (GST) pro registrační pokladny
           href: localizations/apac-ind-cash-registers.md
         - name: Pokyny k nasazení registračních pokladen
           href: localizations/apac-ind-loc-deployment-guidelines.md
+        - name: Podpora pro upgrade a N-1 pro Indii
+          href: localizations/apac-ind-n-1-for-india.md
     - name: Norsko
       items:
         - name: Funkce registrační pokladny
