@@ -1,28 +1,29 @@
 --- 
-title: "Spuštění sestav, které používají finanční dimenze jako zdroje dat"
+title: "Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 4 - spuštění sestavy)"
 description: "Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) použití finančních dimenzí jako zdroje dat pro sestavy elektronického výkaznictví."
 author: NickSelin
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERSolutionTable, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 6569f9b97d5d15bf74b8b3882bf4bab50970dd0f
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 917eae141bbb8792f02d3323054e2a4096dae551
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="run-reports-that-use-financial-dimensions-as-data-sources"></a>Spuštění sestav, které používají finanční dimenze jako zdroje dat
+# <a name="er-use-financial-dimensions-as-a-data-source-part-4-run-the-report"></a>Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 4: spuštění sestavy)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -44,6 +45,6 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 9. Zadejte hodnotu 00057 do pole Kritéria.
 10. Klikněte na tlačítko OK.
 11. Klikněte na tlačítko OK.
-    * Prohlédněte si generovaný výstup. Všimněte si, že pro každou transakci vybrané dávky jsou uvedeny finanční dimenze z odpovídající sady dimenzí. Spusťte tuto sestavu a vyberte různé dimenze k ověření, že sestava nezávisí na počtu vybraných dimenzí nebo několika dimenzí nakonfigurovaných pro tuto instanci Dynamics 365 for Finance and Operations.  
+    * Prohlédněte si generovaný výstup. Všimněte si, že pro každou transakci vybrané dávky jsou uvedeny finanční dimenze z odpovídající sady dimenzí. Spusťte tuto sestavu a vyberte různé dimenze k ověření, že sestava není závisí na počtu vybraných dimenzí nebo několika dimenzí nakonfigurovaných pro tuto instanci Dynamics 365 for Finance and Operations, Enterprise Edition.  
 
 

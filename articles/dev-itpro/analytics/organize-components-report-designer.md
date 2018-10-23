@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: c9772d45cf9d9941dd8fe0de13ce624ea3aa3b53
+ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
+ms.openlocfilehash: 3f2b34cccfd84a9e4bb76e7a1da64e5cefa9982e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/27/2018
 
 ---
 
@@ -37,12 +37,9 @@ Můžete přejmenovat složky, sestavy, stavební bloky a jiné objekty v návrh
 ## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Přejmenování složky nebo stavebního bloku v Návrháři sestav
 V Návrháři sestav můžete přejmenovat složky, definice sestav, definice řádků, definice sloupců a definice organizačních stromů.
 
-> [!NOTE]
-> Při přejmenování stavebního bloku je nutné aktualizovat všechny definice sestavy, které používají daný stavební blok. Jinak nelze vytvořit novou sestavu.
+### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Přejmenování složky nebo stavebního bloku v Návrháři sestav
 
-### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Přejmenování složky nebo stavebního bloku v Návrháři sestav
-
-1. V Návrháři sestav můžete k vyhledání složky nebo objektu k přejmenování použít navigační podokno.
+1. V Návrháři sestav vyhledejte složku nebo objekt, který chcete přejmenovat, s použitím navigačního podokna.
 2. Klikněte pravým tlačítkem myši na objekt a poté klikněte na možnost **Přejmenovat**. Pole **Název** v podokně navigace se zpřístupní.
 3. Zadejte nový název a stiskněte klávesu Enter.
 4. Pokud je stavební blok definicí řádku, definicí sloupce nebo definicí stromu výkaznictví, je nutné aktualizovat další stavební bloky, které jsou k němu přidružené. Klikněte pravým tlačítkem myši na stavební blok, který jste přejmenovali v kroku 3, vyberte položku **Přidružení** a poté vyberte položku v seznamu k aktualizaci.

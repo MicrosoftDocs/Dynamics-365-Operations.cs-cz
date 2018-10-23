@@ -1,9 +1,9 @@
 ---
 title: "Nastavení mobilních zařízení pro práci ve skladu"
-description: "Tento článek popisuje způsob konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení."
+description: "Toto téma popisuje postup konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: bb0d6af3a17653ea33e3f84a416bda244a27507c
+ms.sourcegitcommit: 4c200c07ad576073ab5410b52ec237d31b2415d2
+ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 10/03/2018
 
 ---
 
@@ -30,9 +30,9 @@ ms.lasthandoff: 05/08/2018
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje způsob konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení.
+Toto téma popisuje postup konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení.
 
-**Poznámka:** Tento článek se vztahuje k funkcím v modulu Řízení skladu. Nevztahuje se na funkce v modulu Řízení zásob. Položky nabídky, které se objevují v nabídkách mobilního zařízení pro sklad jsou nastaveny na stránce **Položky nabídky mobilního zařízení**. Vzhledem k tomu, že položky nabídky mohou být umístěny do různých nabídek, je snadné nakonfigurovat struktury nabídky tak, aby byly zveřejněny konkrétním uživatelům pouze určité typy činností. Můžete konfigurovat položky nabídky tak, aby prováděly následující úlohy:
+**Poznámka:** Toto téma se vztahuje k funkcím v modulu Řízení skladu. Nevztahuje se na funkce v modulu Řízení zásob. Položky nabídky, které se objevují v nabídkách mobilního zařízení pro sklad jsou nastaveny na stránce **Položky nabídky mobilního zařízení**. Vzhledem k tomu, že položky nabídky mohou být umístěny do různých nabídek, je snadné nakonfigurovat struktury nabídky tak, aby byly zveřejněny konkrétním uživatelům pouze určité typy činností. Můžete konfigurovat položky nabídky tak, aby prováděly následující úlohy:
 
 -   Zpracování dotazu nebo provedení aktivity, jako je tisk štítku, generování registrační značky vozidla, spuštění výrobní zakázky nebo rychlé vyhledání informací o položkách ve skladovém místě.
 -   Vytvořte práci, která se provede prostřednictvím jiného procesu. Například přijetím položky pro nákupní objednávku můžete vytvořit pracovní vyskladnění pro jiného pracovníka.
@@ -193,7 +193,7 @@ Po provedení počáteční akce pro mobilním zařízení můžete nastavit pol
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurace položek nabídky ke zpracování existující práce
-Kromě nastavení položek nabídky pro vytvoření skladové práce můžete nastavit položky nabídky pro zpracování práce, která již byla vytvořena. Nastavte pole **Režim** na **Práce** a vyberte možnost **Použít stávající práci**. Některé další možnosti poté budou k dispozici na kartě **Hlavní**. Můžete řídit přístup k položce nabídky přiřazením některé pracovní třídy na pevné záložce **Pracovní třída**. Pracovní třídy definují práci, kterou položka nabídky může zpracovat. Pracovní třídu lze také použít pro přidělení přístupu k určitým uživatelským rolím nebo samostatnému zpracování pro různé typy operací. V následující tabulce jsou popsány možnosti, které jsou k dispozici.
+Kromě nastavení položek nabídky pro vytvoření skladové práce můžete nastavit položky nabídky pro zpracování práce, která již byla vytvořena. Nastavte pole **Režim** na **Práce** a vyberte možnost **Použít stávající práci**. Některé další možnosti poté budou k dispozici na kartě **Hlavní**. Můžete řídit přístup k položce nabídky přiřazením některé pracovní třídy na pevné záložce **Pracovní třída**. Pracovní třídy definují práci, kterou položka nabídky může zpracovat. Pracovní třídu lze také použít pro přidělení přístupu k určitým uživatelským rolím nebo samostatnému zpracování pro různé typy operací. V následující tabulce jsou popsány možnosti, které jsou k dispozici. Možnost lze vybrat pod polem **Řídí** na stránce **Položky nabídky mobilního zařízení**. 
 
 <table>
 
@@ -247,6 +247,10 @@ Tato možnost je užitečná například po připravení více palet k nákladu.
 <tr class="even">
 <td>Seskupení cyklické inventury</td>
 <td>Pracovník vybere zónu, fond práce nebo umístění a aplikace Microsoft Dynamics 365 for Finance and Operations přiřadí práci na základě tohoto výběru. Pokud vyberete tuto možnost, můžete také klepnout na tlačítko <strong>Cyklická inventura</strong> v podokně Akce a zadat další informace ke zobrazení nebo také určit počet opakování inventury, které pracovník musí provést v případě rozdílu v množství.</td>
+</tr>
+ <tr class="odd">
+<td>Nakládání přepravy</td>
+<td>Tato funkce umožňuje několika pracovníkům skladu naložit zásoby ze stejného nebo různých nákladů na stejný nákladní automobil s náklady, které jsou zcela nebo částečně expedovány.</td>
 </tr>
 </tbody>
 </table>
@@ -349,7 +353,7 @@ Následující tabulka obsahuje popis těchto možností.
 <td>Výběrem této možnosti povolíte pracovníkům kombinovat práci pro prodejní objednávku nebo vytížení do podoby jedné pracovní položky. Pracovník může práci provést pouze v případě prodejní objednávky nebo vytížení. Tato možnost je například užitečná v případě, kdy je nutno navýšit množství pro prodejní objednávku po vytvoření vytížení, dodávky a práce pro prodejní objednávku. Tato možnost je k dispozici, když položka nabídky používá existující práci, a práce je řízena uživatelem nebo systémem.</td>
 </tr>
 <tr class="even">
-<td>Žádné</td>
+<td>Vyskladnit nejstarší dávku</td>
 <td>Označte, pokud pracovník musí ve skladovém místě vyskladnit nejprve nejstarší dávku. Existují tyto možnosti:
 <ul>
 <li><strong>Poznámka</strong> – Pracovník může ve skladovém místě vyskladnit jakoukoli dávku. Pracovník neobdrží žádnou zprávu.</li>

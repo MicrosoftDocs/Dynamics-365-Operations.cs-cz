@@ -1,28 +1,29 @@
 --- 
-title: "Upgrade formátů přijetím nových základních verzí"
+title: "Elektronické výkaznictví - Upgrade formátu přijetím nové základní verze tohoto formátu"
 description: "Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může spravovat konfiguraci formátu pro elektronické výkaznictví."
 author: NickSelin
 manager: AnnBe
-ms.date: 02/06/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 7a14299c3bdcc33a4441d1cc096b198af4d4ae4c
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 040505f567b9db1a5987e4ada38d46f919440c96
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="upgrade-formats-by-adopting-new-base-versions"></a>Upgrade formátů přijetím nových základních verzí
+# <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>Elektronické výkaznictví - Upgrade formátu přijetím nové základní verze tohoto formátu
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -35,7 +36,7 @@ K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postup
 
 ## <a name="select-format-configuration-for-customization"></a>Výběr konfigurace formátu pro přizpůsobení
 1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
-    * V tomto příkladu bude vzorová společnost Litware, Inc. (`http://www.litware.com`) bude sloužit jako poskytovatel konfigurace, který podporuje konfiguraci formátu pro elektronické platby pro určitou zemi.  Vzorová společnost Proseware, Inc. (`http://www.proseware.com`) bude jednat jako příjemce konfigurace formátu, který Litware, Inc. poskytl. Proseware, Inc. používá formáty v určitých oblastech v zemi.  
+    * V tomto příkladu bude vzorová společnost Litware, Inc. (http://www.litware.com) bude sloužit jako poskytovatel konfigurace, který podporuje konfiguraci formátu pro elektronické platby pro určitou zemi.    Vzorová společnost Proseware, Inc. (http://www.proseware.com) bude jednat jako příjemce konfigurace formátu, který Litware, Inc. poskytl. Proseware, Inc. používá formáty v určitých oblastech v zemi.  
 2. Klikněte na Konfigurace výkaznictví.
 3. Klepněte na tlačítko Zobrazit filtry.
 4. Použijte následující filtry: Do pole „Název" zadejte hodnotu filtru BACS (Velká Británie – fiktivní) a použijte operátor filtru „začíná na"
@@ -46,7 +47,7 @@ K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postup
     * Verze formátu se stavem Dokončeno bude použita společností Proseware, Inc. pro přizpůsobení.  
 
 ## <a name="create-a-new-configuration-for-your-custom-format-of-electronic-document"></a>Vytvoření nové konfigurace pro vlastní formát elektronického dokumentu
-Proseware, Inc. přijala verzi 1.1 konfigurace BACS (Velká Británie – fiktivní), která obsahuje původní formát pro generování dokumentů elektronických plateb od společnosti Litware, Inc. v souladu se svým předplatným služby. Proseware, Inc. chce začít používat tuto konfiguraci jako standard pro svou zemi, ale pro splnění zvláštních místních požadavků jsou požadována některá přizpůsobení. Proseware, Inc. chce také udržovat možnost upgradu vlastního formátu ihned, jakmile je k dispozici její nová verze (se změnami pro soulad s novými požadavky specifickými pro zemi) od společnosti Litware, Inc. a chtějí provést tento upgrade s co nejnižší cenou.  Aby to bylo možné, Proseware, Inc., potřebuje vytvořit konfiguraci pomocí konfigurace Litware, Inc. BACS (Velká Británie – fiktivní) jako její základ.  
+    * Proseware, Inc. přijala verzi 1.1 konfigurace BACS (Velká Británie – fiktivní), která obsahuje původní formát pro generování dokumentů elektronických plateb od společnosti Litware, Inc. v souladu se svým předplatným služby. Proseware, Inc. chce začít používat tuto konfiguraci jako standard pro svou zemi, ale pro splnění zvláštních místních požadavků jsou požadována některá přizpůsobení. Proseware, Inc. chce také udržovat možnost upgradu vlastního formátu ihned, jakmile je k dispozici její nová verze (se změnami pro soulad s novými požadavky specifickými pro zemi) od společnosti Litware, Inc. a chtějí provést tento upgrade s co nejnižší cenou.  Aby to bylo možné, Proseware, Inc., potřebuje vytvořit konfiguraci pomocí konfigurace Litware, Inc. BACS (Velká Británie – fiktivní) jako její základ.  
 1. Zavřete stránku.
 2. Vyberte Proseware, Inc. a nastavte ji jako aktivního zprostředkovatele.
 3. Klikněte na možnost Nastavit jako aktivní.
@@ -107,13 +108,11 @@ Proseware, Inc. přijala verzi 1.1 konfigurace BACS (Velká Británie – fiktiv
     * Všimněte si, že je vytvořená konfigurace uložena jako dokončená verze 1.1.1. To znamená, že se jedná o 1. verzi vlastního formátu BACS (Velká Británie – fiktivní vlastní), která je založena na 1. verzi formátu BACS (Velká Británie – fiktivní), která je založena na 1. verzi datového modelu Platby (zjednodušený model).  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>Test vlastního formátu pro generování souborů plateb
-Postupujte podle kroků v postupu „Použití vytvořeného formátu pro generování elektronických dokumentů pro platby“ v rámci paralelní relace Dynamics 365 for Finance and Operations. Vyberte formát BACS (Velká Británie – fiktivní vlastní) v parametrech metody elektronické platby. Zkontrolujte, že vytvořený soubor platby obsahuje nedávno uvedený uzel XML představující kód IBAN v souladu s místními požadavky.  
+    * Postupujte podle kroků v postupu „Použití vytvořeného formátu pro generování elektronických dokumentů pro platby“ v rámci paralelní relace Dynamics 365 for Finance and Operations, edice Enterprise. Vyberte formát BACS (Velká Británie – fiktivní vlastní) v parametrech metody elektronické platby. Zkontrolujte, že vytvořený soubor platby obsahuje nedávno uvedený uzel XML představující kód IBAN v souladu s místními požadavky.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>Aktualizace existující konfigurace specifické pro zemi
-Litware, Inc. musí aktualizovat konfiguraci BACS (Velká Británie – fiktivní) a přijmout nové požadavky země, aby mohla spravovat formát elektronického dokumentu. Později se toto stane součástí nové verze této konfigurace, která bude nabízena odběratelům služby, včetně společnosti Proseware, Inc.  
-
-Ve skutečném procesu poskytování služeb lze každou novou verzi BACS (Velká Británie – fiktivní) importovat společností Proseware, Inc. z úložiště souborů LCS poskytovatele Litware, Inc. V tomto procesu budeme simulovat tento krok aktualizováním BACS (Velká Británie – fiktivní) jménem poskytovatele služby.
-
+    * Litware, Inc. musí aktualizovat konfiguraci BACS (Velká Británie – fiktivní) a přijmout nové požadavky země, aby mohla spravovat formát elektronického dokumentu. Později se toto stane součástí nové verze této konfigurace, která bude nabízena odběratelům služby, včetně společnosti Proseware, Inc.  
+    * Ve skutečném procesu poskytování služeb lze každou novou verzi BACS (Velká Británie – fiktivní) importovat společností Proseware, Inc. z úložiště souborů LCS poskytovatele Litware, Inc. V tomto procesu budeme simulovat tento krok aktualizováním BACS (Velká Británie – fiktivní) jménem poskytovatele služby.  
 1. Zavřete stránku.
 2. Vyberte poskytovatele Litware, Inc.
 3. Klikněte na možnost Nastavit jako aktivní.
@@ -123,12 +122,9 @@ Ve skutečném procesu poskytování služeb lze každou novou verzi BACS (Velk�
     * Verze návrhu vlastněná poskytovatelem Litware, Inc. BACS (Velká Británie – fiktivní) bude zvolena pro zavedení změn podporujících nové požadavky specifické pro zemi.  
 
 ## <a name="localize-the-base-format-of-the-electronic-document"></a>Lokalizace základního formátu elektronického dokumentu
-Předpokládejme, že existují nové požadavky specifické pro zemi, které má Litware podporovat:  
-- Hodnota kódu SWIFT banky věřitele v každé platební transakci.  
-- Limit 100 znaků pro délku textu s názvem dodavatele při generování souboru.  
- 
-Vyberte pracovní verzi požadované konfigurace pro zavedení požadovaných změn.  
-
+    * Předpokládejme, že existují nové požadavky specifické pro zemi, pro které musí Litware, Inc. zajistit soulad: - Hodnota kódu SWIFT banky příjemce platby v každé platební transakci.  - Limit 100 znaků pro délku textu s názvem dodavatele při generování souboru.  
+    * Nové požadavky specifické pro zemi  
+    * Vyberte pracovní verzi požadované konfigurace pro zavedení požadovaných změn.  
 1. Klikněte na možnost Návrhář.
 2. Klikněte na Rozbalit/sbalit.
 3. Klikněte na Rozbalit/sbalit.
@@ -159,7 +155,7 @@ Vyberte pracovní verzi požadované konfigurace pro zavedení požadovaných zm
 2. Zavřete stránku.
 
 ## <a name="change-the-status-of-the-current-version-of-the-base-format-configuration"></a>Změna stavu aktuální verze konfigurace základního formátu
-Změňte stav aktualizované konfigurace základní formátu z Návrh na Dokončeno, aby byla k dispozici pro generování platebních dokladů a aktualizace konfigurace formátu, které jsou od ní odvozeny.  
+    * Změňte stav aktualizované konfigurace základní formátu z Návrh na Dokončeno, aby byla k dispozici pro generování platebních dokladů a aktualizace konfigurace formátu, které jsou od ní odvozeny.  
 1. Klikněte na položku Změnit stav.
     * Všimněte si, že je aktuální verze vybrané konfigurace ve stavu Koncept.  
 2. Klikněte na tlačítko Dokončit.
@@ -168,8 +164,7 @@ Změňte stav aktualizované konfigurace základní formátu z Návrh na Dokonč
 5. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 
 ## <a name="change-the-base-version-for-the-custom-format-configuration"></a>Změna základní verze konfigurace vlastního formátu
-Proseware, Inc. je informován, že je k dispozici nová verze 1.2 konfigurace BACS (Velká Británie – fiktivní) pro generování dokumentů elektronických plateb podle naposledy ohlášených požadavků specifických pro zemi. Proseware, Inc. chce začít ji používat jako standard pro danou zemi.  Aby to bylo možné, Proseware, Inc. musí změnit základní verzi konfigurace pro vlastní konfiguraci BACS (Velká Británie – fiktivní vlastní). Namísto verze 1.1 BACS (Velká Británie – fiktivní) použije novou verzi 1.2.  
-
+    * Proseware, Inc. je informován, že je k dispozici nová verze 1.2 konfigurace BACS (Velká Británie – fiktivní) pro generování dokumentů elektronických plateb podle naposledy ohlášených požadavků specifických pro zemi. Proseware, Inc. chce začít ji používat jako standard pro danou zemi.  Aby to bylo možné, Proseware, Inc. musí změnit základní verzi konfigurace pro vlastní konfiguraci BACS (Velká Británie – fiktivní vlastní). Namísto verze 1.1 BACS (Velká Británie – fiktivní) použije novou verzi 1.2.  
 1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
 2. Vyberte Proseware, Inc. jako zprostředkovatele a označte ho jako aktivního.
 3. Klikněte na možnost Nastavit jako aktivní.
@@ -203,6 +198,6 @@ Proseware, Inc. je informován, že je k dispozici nová verze 1.2 konfigurace B
     * Všimněte si, že vytvořená konfigurace je uložena jako dokončená verze 1.2.2: 2. verze základního formátu BACS (Velká Británie – fiktivní vlastní), který je založen na 2. verzi základního formátu BACS (Velká Británie – fiktivní), která je založena na modelu dat 1. verze plateb (zjednodušený model).  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Test vlastního formátu pro generování souborů plateb
-Postupujte podle kroků v postupu „Použití vytvořeného formátu pro generování elektronických dokumentů pro platby“ v rámci paralelní relace Dynamics 365 for Finance and Operations. Vyberte vytvořený formát BACS (Velká Británie – fiktivní vlastní) v parametrech metody elektronické platby. Zkontrolujte, že vytvořený soubor platby obsahuje nedávno uvedený uzel XML společností by Proseware, Inc. představující kód účtu IBAN v souladu s místními požadavky. Soubor by rovněž měl obsahovat nedávno uvedených uzel XML uvedený společností Litware, Inc. představující bankovní kód SWIFT podle požadavků země.  
+    * Postupujte podle kroků v postupu „Použití vytvořeného formátu pro generování elektronických dokumentů pro platby“ v rámci paralelní relace Dynamics 365 for Finance and Operations, edice Enterprise. Vyberte vytvořený formát BACS (Velká Británie – fiktivní vlastní) v parametrech metody elektronické platby. Zkontrolujte, že vytvořený soubor platby obsahuje nedávno uvedený uzel XML společností by Proseware, Inc. představující kód účtu IBAN v souladu s místními požadavky. Soubor by rovněž měl obsahovat nedávno uvedených uzel XML uvedený společností Litware, Inc. představující bankovní kód SWIFT podle požadavků země.  
 
 

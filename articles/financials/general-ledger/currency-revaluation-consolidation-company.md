@@ -3,7 +3,7 @@ title: "Přecenění měny v konsolidační společnosti"
 description: "Toto téma popisuje, jak přecenit měnu v konsolidační společnosti."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: hminzner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 27059b0d2a781453a7594bdc430005df6ea5c167
+ms.sourcegitcommit: ad0083018d2734cb1e36cbf5f94105376c57cdf9
+ms.openlocfilehash: 76290564037ab6f5c7a1cd4508a819bd603e8148
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 10/02/2018
 
 ---
 
@@ -35,7 +35,7 @@ Při konsolidaci dat z jedné zúčtovací měny na jinou musíte spustit přece
 ## <a name="company-setup"></a>Nastavení společnosti
 -   **Zdrojová/provozní společnost (USMF)** – americké dolary (USD) se používají jako zúčtovací a vykazovací měna.
 -   **Konsolidovaná společnost (CON)** – euro (EUR) se používá jako zúčtovací a vykazovací měna.
-    -   **Realizovaný zisk **– účet hlavní knihy 801500
+    -   **Realizovaný zisk** – účet hlavní knihy 801500
     -   **Realizovaná ztráta** – účet hlavní knihy 801600
     -   **Nerealizovaný zisk** – účet hlavní knihy 801600
     -   **Nerealizovaná ztráta** – účet hlavní knihy 801400

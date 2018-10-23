@@ -3,13 +3,13 @@ title: "Zřízení aplikace Talent"
 description: "Toto téma vás povede procesem zřízení nového prostředí pro aplikaci Microsoft Dynamics 365 for Talent."
 author: rschloma
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 09/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: josaw
 ms.search.scope: Talent
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 2fc4119f3b33aa583274f4d823e296752cdde41d
+ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.openlocfilehash: d28ca1f9cf2bef73dc687a85592056cccc767da5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 # <a name="provision-talent"></a>Zřízení aplikace Talent
@@ -30,7 +30,7 @@ ms.lasthandoff: 08/08/2018
 
 Toto téma vás povede procesem zřízení nového produkčního prostředí pro aplikaci Microsoft Dynamics 365 for Talent. Toto téma předpokládá, že jste si zakoupili aplikaci Talent prostřednictvím poskytovatele cloudového řešení (CSP) nebo smlouvy o podnikové architektuře (EA). Pokud máte existující licenci pro Microsoft Dynamics 365, která obsahuje servisní plán aplikace Talent, a nedaří se vám provést kroky uvedené v tomto tématu, kontaktujte podporu.
 
-Pro začátek se musí globální správce má přihlásit do služby [Microsoft Dynamics Lifecycle Services](http://lcs.dynamics.com) (LCS) a vytvořit nový projekt Talent. Pokud vám v pořízení aplikace Talent nebrání problémy s licencí, není zapotřebí pomoc od zástupce služby Support or Dynamics Service Engineering (DSE).
+Pro začátek se musí globální správce má přihlásit do služby [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) a vytvořit nový projekt Talent. Pokud vám v pořízení aplikace Talent nebrání problémy s licencí, není zapotřebí pomoc od zástupce služby Support or Dynamics Service Engineering (DSE).
 
 ## <a name="create-an-lcs-project"></a>Vytvoření LCS projektu
 Pokud chcete použít ke správě svého prostředí Talent službu LCS, musíte nejprve vytvořit LCS projekt.
@@ -48,7 +48,6 @@ Po vytvoření LCS projektu můžete vytvořit zařadit aplikaci Talent do prost
 
 1. Ve svém LCS projektu vyberte dlaždici **Správa aplikace Talent**.
 2. Talent bude vždy zřízen do prostředí Microsoft PowerApps, aby byla možná integrace a rozšiřitelnost PowerApps. Než budete pokračovat, přečtěte si část Výběr prostředí PowerApps v tomto tématu. 
-3. Pokud ještě nemáte PowerApps prostředí, postupujte podle kroků v části „Vytvoření nového prostředí PowerApps (je-li to zapotřebí)“ tohoto tématu, než budete pokračovat.
 
     > [!NOTE]
     > K zobrazení existujících prostředí nebo vytváření nových prostředí musí být správce klienta zřizujícího aplikaci Talent přiřazen k licenci PowerApps P2. Pokud vaše organizace nemá PowerApps P2 licenci, můžete jednu získat ze svého CSP nebo ze [stránky s cenami PowerApps](https://powerapps.microsoft.com/en-us/pricing/).
@@ -78,11 +77,6 @@ Použijte následující pokyny při určování, do kterého prostředí PowerA
 4. Měly být zohledněny strategie integrace dat a testování, například: Sandbox, UAT, výroba. Proto doporučujeme zvážit různé implikace na vaše nasazení, protože není snadné později změnit, které prostředí Talent je namapováno na prostředí PowerApps.
 5. Následující prostředí PowerApps nelze použít pro aplikaci Talent a bude odfiltrováno ze seznamu voleb v rámci LCS:
  
-    **Prostředí CDS 2.0** CDS 2.0 budou veřejně k dispozici od 21. března 2018; systém Talent však ještě nepodporuje CDS 2.0. I když můpžete vytvářet a zobrazit databáze CDS 2.0 v centru správy PowerApps, nebude je možné použít v aplikaci Talent. Možnost použít prostředí CDS 2.0 v nasazeních aplikace Talent bude k dispozici k pozdějšímu datu.
-   
-   > [!Note]
-   > Chcete-li rozlišit mezi prostředími CDS 1.0 a CDS 2.0 na portálu správy, zvolte prostředí a podívejte se na **Podrobnosti**. Všechna prostředí CDS 2.0 odkazují na skutečnost, že "Můžete spravovat tato nastavení v centru pro správu Dynamics 365," odkazovat na verzi instance a nemít žádnou kartu Databáze. 
- 
    **Výchozí prostředí Power Apps** I když je každý klient automaticky vytvořen s výchozím prostředím PowerApps, nedoporučujeme je používat se systémem Talent, protože všichni uživatelé klientů mají přístup do prostředí PowerApps a mohou neúmyslně poškodit data výroby při testování a seznámení s integrací PowerApps nebo Flow.
    
    <strong>Testovací jednotka prostředí</strong> Prostředí nazvaná například "TestDrive – alias@domain' jsou vytvářena s dobou platnosti 60 dní a vyprší po uplynutí této doby, což způsobí, že prostředí bude odebráno automaticky.
@@ -91,42 +85,6 @@ Použijte následující pokyny při určování, do kterého prostředí PowerA
   
 6. Neexistuje žádná konkrétní akce k provedení po určení správného prostředí k použití. Pokračujte v procesu zajištění. 
  
-## <a name="create-a-new-powerapps-environment-if-required"></a>Vytvoření nového prostředí PowerApps prostředí (je-li požadováno)
-
-Spusťte skript PowerShell pro vytvoření nového prostředí PowerApps pro aplikaci Talent v kontextu správce klienta, který má licenci PowerApps Plan 2. Skript automatizuje následující kroky:
-
-
- + Vytvoření prostředí PowerApps
- + Vytvoření databáze CDS 1.0
- + Vymazat všechny ukázková data v databázi CD 1.0
-
-
-Při spuštění skriptu postupujte následujícím způsobem:
-
-1. Stáhněte soubor ProvisionCDSEnvironment.zip z následujícího umístění: [ProvisionCDSEnvironment scripts](https://go.microsoft.com/fwlink/?linkid=870436)  
-
-2. Ze složky stahování klepněte pravým tlačítkem myši na právě stažený soubor ProvisionCDSEnvironment.zip a vyberte **vlastnosti**.  Pokud se v dolní části dialogového okna Soubor pochází z jiného počítače a může být blokován pro ochranu tohoto počítače, zaškrtněte políčko **Odblokovat** a klepněte na tlačítko **použít** a pak **OK**.
-
-3. Rozbalte celý obsah souboru ProvisionCDSEnviroinment.zip soubor do složky jiné než kořenové.
-
-4. Spusťte program Windows PowerShell nebo Windows PowerShell ISE jako správce.
-
-   Navštivte téma [Nastavení zásad spouštění](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) a dozvíte se více informací o zásadách spouštění, aby bylo možné spouštět skripty. Doporučujeme použití příkazu Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process, ale postupujte podle zásad zabezpečení vaší společnosti a po dokončení zavřete okno PowerShell. 
-  
-5. V prostředí PowerShell přejděte do složky, kde jste rozbalili soubor, a spusťte následující příkaz, s nahrazením hodnot podle pokynů níže:
- 
-   ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
-
-    
-   **MyNewEnvironment** má být nahrazena názvem vašeho prostředí. Tento název se objeví v LCS a bude viditelný, když uživatel vybere prostředí Talent, které chce použít. 
-
-   **YourLocation** má být nahrazena jednou z podporovaných oblasteí pro Talent: unitedstates, evropa, austrálie. 
-
-   Volba **-Podrobné** je volitelná a poskytuje podrobné informace pro odeslání podpoře, když jsou zjištěny problémy.
-
-6. Pokračujte v procesu zajištění.
- 
-
 ## <a name="grant-access-to-the-environment"></a>Zřízení přístupu k prostředí
 Ve výchozím nastavení má k prostředí přístup globální správce, který ho vytvořil. Dalším uživatelům aplikace musí být explicitně udělen. Chcete-li udělit přístup, [přidáte uživatele](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) a [přiřadíte jim příslušné role](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) v prostředí Core HR. Globální správce, který nasadil aplikaci Talent, musí také spustit aplikaci Attract i Onboard k dokončení inicializace a povolit přístup pro ostatní uživatele klienta.  Dokud k tomu nedojde, ostatní uživatelé nebudou mít přístup do aplikací Attract a Onboard a získáte chyby narušení přístupu.
 

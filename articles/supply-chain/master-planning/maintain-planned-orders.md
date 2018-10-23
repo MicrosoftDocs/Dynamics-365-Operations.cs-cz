@@ -1,9 +1,9 @@
 ---
 title: "Spravovat plánované objednávky"
-description: "Tento článek obsahuje informace o postupu správy plánovaných objednávek. Popisuje, jak můžete aktualizovat stav plánovaných objednávek, upevnit je a zobrazit filtr plánovaných objednávek, které mají stejný stav, jako vybraná plánovaná objednávka."
+description: "Toto téma obsahuje informace o postupu správy plánovaných objednávek. Popisuje, jak můžete aktualizovat stav plánovaných objednávek, upevnit je a zobrazit filtr plánovaných objednávek, které mají stejný stav, jako vybraná plánovaná objednávka."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3d7afda9371b4d21e58f2e56de3d477b1c9950a1
+ms.sourcegitcommit: ad0083018d2734cb1e36cbf5f94105376c57cdf9
+ms.openlocfilehash: e0e3e86ae85b59b10dc8d9ca9b0130d218469118
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 10/02/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/08/2018
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek obsahuje informace o postupu správy plánovaných objednávek. Popisuje, jak můžete aktualizovat stav plánovaných objednávek, upevnit je a zobrazit filtr plánovaných objednávek, které mají stejný stav, jako vybraná plánovaná objednávka.
+Toto téma obsahuje informace o postupu správy plánovaných objednávek. Popisuje, jak můžete aktualizovat stav plánovaných objednávek, upevnit je a zobrazit filtr plánovaných objednávek, které mají stejný stav, jako vybraná plánovaná objednávka.
 
 Naplánované objednávky lze spravovat v pracovním prostoru **Hlavní plánování**, na seznamu **Plánovaná objednávka** nebo na seznamech **Plánované výrobní zakázky**, **Plánované nákupní objednávky** a **Plánovaný převod**. Pole **Stav** lze použít ke sledování průběhu. Používají se následující hodnoty:
 
@@ -45,7 +45,7 @@ Naplánované objednávky lze spravovat v pracovním prostoru **Hlavní plánov�
 -   Více plánovaných objednávek.
 -   Plánované objednávky vytvořené rozpadem na stránce **Rozpad**. Klikněte na možnost **Plánované objednávky**, vyberte plánovanou objednávku a klikněte na položku **Potvrdit**.
 
-Když je plánovaná objednávka potvrzena, přesune se do částí objednávek příslušného modulu. **Poznámka:** Můžete kliknout pravým tlačítkem na plánovanou objednávku s určitým stavem a pomocí filtru zobrazit ostatní objednávky se stejným stavem. Tato funkce je užitečná, pokud například chcete zobrazit všechny plánované objednávky, které mají stav **Schváleno**, abyste je mohli poté potvrdit.
+Když je plánovaná objednávka potvrzena, přesune se do částí objednávek příslušného modulu. 
 
 <a name="additional-resources"></a>Další zdroje
 --------

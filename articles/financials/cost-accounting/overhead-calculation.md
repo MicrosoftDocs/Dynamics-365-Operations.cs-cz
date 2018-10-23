@@ -3,7 +3,7 @@ title: "Výpočet režijních nákladů"
 description: "Toto téma popisuje typické procesy pro výpočet a přidělení režijních nákladů."
 author: AndersGirke
 manager: AnnBe
-ms.date: 04/20/2017
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 549e9b4b073a4e93dd3a1dd52dd6f43e7420a31b
+ms.sourcegitcommit: 12ae99c15bafcd9cc08b30903fe3f251f446b17d
+ms.openlocfilehash: 4de705324ac497cfb11fae3dadc6f57d038fd0b5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 10/05/2018
 
 ---
 
@@ -191,8 +191,7 @@ V některých případech je část nákladů s pevným poplatkem a zbývající
 </tbody>
 </table>
 
-Ohledně podrobných informací o chování nákladů nahlédněte do zásad chování nákladů. (Všimněte si, že toto téma ještě není dokončené, ale bud k dispozici již brzy.)
-
+Více informací naleznete v tématu [Vytvoření a přiřazení zásad chování nákladů k jednotce řízení nákladů](tasks/create-assign-cost-behavior-policy-cost-control-unit.md)
 ### <a name="step-2-process-the-cost-distribution-calculation"></a>Krok 2: Zpracování výpočtu distribuce nákladů
 
 Distribuce nákladů se používá k rozdělení nákladů z jednoho objektu nákladů na jeden nebo více dalších objektů nákladů použitím příslušného základu přidělení. Distribuce nákladů a přidělení nákladů se liší v tom, že k distribuci nákladů dochází vždy na úrovni primárního prvku nákladů původních nákladů.
@@ -430,7 +429,7 @@ Pevné náklady musí být distribuovány rovnoměrně k jednotlivých objektům
 </tbody>
 </table>
 
-Podrobné informace o základech distribuce a přidělení nákladů získáte v tématech Zásady distribuce nákladů a Základy přidělení. (Všimněte si, že toto téma ještě není dokončené, ale bud k dispozici již brzy.)
+Více informací naleznete v tématu [Vytvoření a přiřazení zásad distribuce nákladů k jednotce řízení nákladů](tasks/create-assign-cost-distribution-policy-cost-control-unit.md) 
 
 ### <a name="step-3-process-the-overhead-rate-calculation"></a>Krok 3: Zpracování výpočtu režijních nákladů
 
@@ -612,13 +611,13 @@ Následující tabulka zobrazuje výsledek při použití projektů lidských zd
 <td>10001</td>
 <td>Elektrické energie</td>
 <td>Variabilní náklady</td>
-<td>10,00</td>
+<td>10.00</td>
 <td>31. ledna 2017</td>
 </tr>
 </tbody>
 </table>
 
-Podrobné informace o zásadách sazby režijních nákladů najdete v tématech Zásady sazby režijních nákladů a Základy přidělení. (Všimněte si, že toto téma ještě není dokončené, ale bud k dispozici již brzy.)
+Další informace naleznete v tématu [Provedení výpočtu režijních nákladů](cost-rollup.md#perform-overhead-calculation).
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>Krok 4: Zpracování výpočtu přidělení nákladů
 
@@ -720,12 +719,13 @@ Objekt nákladů objektu CC004 Balení přispívá k několika objektům náklad
 <tr>
 <td>Prod 2</td>
 <td>Produkt 2</td>
-<td>15</td>
+<td>září</td>
 </tr>
 </tbody>
 </table>
 
-**Poznámka:** V aplikaci Finance and Operations lze odvodit statistická měření, jako je například výrobní doba spotřebovaná produktem, z datového zdroje. Podrobnější informace o poskytovatelích statistických měření získáte v tématu Šablony poskytovatelů statistického měření. (Všimněte si, že toto téma ještě není dokončeno, ale bude k dispozici brzy.) V následující tabulce jsou uvedeny výsledky použití HR služeb HR jako základu přidělení pro celkové náklady (pevné náklady a variabilní náklady).
+> [!NOTE]
+> V aplikaci Finance and Operations lze odvodit statistická měření, jako je například výrobní doba spotřebovaná produktem, z datového zdroje. Více informací naleznete v části [Šablona poskytovatele statistického měření](statistical-measure-provider-template.md#statistical-measure-provider-template). V následující tabulce je uveden výsledek při použití služeb HR jako základu přidělení pro celkové náklady (pevné náklady a variabilní náklady).
 
 <table>
 <thead>
@@ -1412,7 +1412,7 @@ Ve finančním účtování se náklady za elektřinu ve výši 10 000 zaúčtuj
 </table>
 
 > [!NOTE]
-> Toto téma popisuje, jak primární prvek nákladů, 10001 Elektřina, prochází přes objekty nákladů. Tyto režijní náklady tedy budou přiděleny na nejnižší úroveň v organizaci. Jinak řečeno, objekty nákladů na nejnižší úrovni ponesou náklady. Chcete-li vizuální tok nákladů mezi objekty nákladů, můžete použít pravidla zásad shrnutí nákladů pro vizualizaci jejich toků. Podrobnější informace naleznete v tématu Zásady shrnutí nákladů. (Všimněte si, že toto téma ještě není dokončené, ale bud k dispozici již brzy.)
+> Toto téma popisuje, jak primární prvek nákladů, 10001 Elektřina, prochází přes objekty nákladů. Tyto režijní náklady tedy budou přiděleny na nejnižší úroveň v organizaci. Jinak řečeno, objekty nákladů na nejnižší úrovni ponesou náklady. Chcete-li vizuální tok nákladů mezi objekty nákladů, můžete použít pravidla zásad shrnutí nákladů pro vizualizaci jejich toků. Podrobnější informace naleznete v tématu [Zásady shrnutí nákladů](cost-rollup.md).
 
 
 

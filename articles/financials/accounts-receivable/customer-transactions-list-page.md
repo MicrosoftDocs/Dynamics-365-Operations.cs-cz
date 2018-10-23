@@ -3,7 +3,7 @@ title: "Stránka se seznamem transakcí odběratele"
 description: "Toto téma obsahuje informace o stránce se seznamem transakcí odběratele pro aplikaci Microsoft Dynamics 365 for Finance and Operations."
 author: mikefalkner
 manager: aolson
-ms.date: 08/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,34 +17,85 @@ ms.author: mikefalkner
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 8.0.4
 ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
-ms.openlocfilehash: e828cb292ad48bb4690117b41589b25edcdf28bc
+ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.openlocfilehash: 79479f6949c52830918598583ee91dd85d2d7ac3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/31/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
-# <a name="customer-transaction-list-page"></a>Stránka se seznamem transakcí odběratele
+# <a name="customer-transactions-list-page"></a>Stránka se seznamem transakcí odběratele
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="view-settlements"></a>Zobrazit vyrovnání
 
-Karta **Zobrazit vyrovnání** v podokně akcí poskytuje rychlý přístup k historii vyrovnání a další informace o celé transakci vyrovnání. Můžete také zobrazit další transakce, které souvisejí s vybranou transakcí, ať už proto, že byly součástí stejného vyrovnání, nebo protože jsou to platby, které byly vytvořeny ve stejném deníku plateb.
+Tlačítko **Zobrazit vyrovnání** v podokně akcí poskytuje rychlý přístup k historii vyrovnání a další informace o celé transakci vyrovnání. Můžete také zobrazit další transakce, které souvisejí s vybranou transakcí, ať už proto, že byly součástí stejného vyrovnání, nebo protože jsou to platby, které byly vytvořeny ve stejném deníku plateb.
 
-1. Zvolte **Pohledávky \> Odběratelé**.
-2. Vyberte odběratele, který má transakce, a poté vyberte **Odběratel \> Transakce**.
-3. Vyberte transakci k prozkoumání.
-4. Zvolte kartu **Zobrazit vyrovnání** v podokně akcí.
+1. Zvolte **Pohledávky \> Všichni odběratelé**.
+2. Vyberte odběratele, který má transakce, a poté v podokně akcí na kartě **Odběratel** zvolte **Transakce**.
+3. Vyberte transakci pro průzkum a poté vyberte v podokně akcí **Zobrazit vyrovnání**.
 
-    Dialogové okno **Zobrazit vyrovnání** zobrazí vybrané transakce a všechny doklady, proti kterým proběhlo vyrovnání. Toto dialogové okno připomíná zobrazení historie vyrovnání, ale obsahuje všechny související dokumenty. 
+    Zobrazí se dialogové okno **Zobrazit vyrovnání** a ukáže vybrané transakce a všechny doklady, proti kterým proběhlo vyrovnání. Toto dialogové okno připomíná zobrazení historie vyrovnání, ale obsahuje všechny související dokumenty.
 
-5. Z tohoto dialogového okna můžete provádět různé úkoly. Vyberte jeden nebo více dokladů a pak vyberte některou z následujících nabídek:
+4. V tomto dialogovém okně můžete provádět různé úkoly. Vyberte jeden nebo více dokladů a pak vyberte některou z následujících tlačítek:
 
-   - **Zobrazit účetnictví** – Zobrazí se všechny doklady, které souvisí se zvolenými dokumenty. Zvolte **Zavřít** a zavřete dialogové okno.
-   - **Exportovat** – Exportujte vybrané doklady do aplikace Microsoft Excel.
-   - **Zobrazit související platby** -Zobrazí se všechny transakce deníku plateb, které byly vytvořeny v deníku plateb souvisejícím se zvoleným dokumentem. Kromě toho se zobrazí všechna vyrovnání, která souvisejí s těmito platbami. Popisek této nabídky se změní také na **Zobrazit vyrovnání**. Vyberte **Zobrazit vyrovnání**, chcete-li zobrazit pouze transakce, které byly zobrazeny při prvním otevření dialogového okna **Zobrazit vyrovnání**.
-    - **Vyrovnat transakce** – Tato nabídka se zobrazí v případě, že původní dokument, který byl vybrán, nebyl plně vyrovnán. Pokud ho zvolíte, zobrazí se dialogové okno **Vyrovnat transakce**, kde lze vybrat transakce pro vyrovnání.
-    - **Zrušit vyrovnání** – Tato nabídka se zobrazí v případě, že původní dokument, který byl vybrán, byl plně vyrovnán. Pokud ho zvolíte, zobrazí se dialogové okno **Zrušit vyrovnání**, kde je možné zrušit vyrovnání, která byla vytvořena pro tento dokument.
-    
+    - **Zobrazit související** -Zobrazí se všechny transakce deníku plateb, které byly vytvořeny v deníku plateb souvisejícím se zvoleným dokumentem. Kromě toho se zobrazí všechna vyrovnání, která souvisejí s těmito platbami. Při zobrazení souvisejících plateb se změní popisek tohoto tlačítka na **Zobrazit vyrovnání**. Vyberte **Zobrazit vyrovnání**, chcete-li zobrazit pouze transakce, které byly zobrazeny při prvním otevření dialogového okna **Zobrazit vyrovnání**.
+    - **Zobrazit historii** – Zobrazí historii vyrovnání pro doklady. Zvolte **Zavřít** a zavřete dialogové okno.
+    - **Zobrazit účetnictví** – Zobrazí se všechny doklady, které souvisí se zvolenými dokumenty. Zvolte **Zavřít** a zavřete dialogové okno.
+    - **Exportovat** – Exportujte vybrané doklady do aplikace Microsoft Excel.
+    - **Vyrovnat transakce** – Toto tlačítko se zobrazí pouze v případě, že původní dokument, který byl vybrán, nebyl plně vyrovnán. Pokud zvolíte toto tlačítko, zobrazí se dialogové okno **Vyrovnat transakce**, kde lze vybrat transakce pro vyrovnání.
+    - **Zrušit vyrovnání** – Toto tlačítko nabídka se zobrazí pouze v případě, že původní dokument, který byl vybrán, byl plně vyrovnán. Pokud zvolíte toto tlačítko, zobrazí se dialogové okno **Zrušit vyrovnání**, kde je možné zrušit vyrovnání, která byla vytvořena pro tento dokument.
+
+## <a name="global-transactions"></a>Globální transakce
+
+Na stránku odběratele bylo přidáno tlačítko **Globální transakce**. Toto tlačítko vám umožňuje zobrazit všechny transakce odběratele napříč všemi právnickými osobami. Stránka se seznamem **Transakce odběratele** zobrazí transakce pouze pro právnické osoby, ke kterým má uživatel přístup, na základě jeho nastavení zabezpečení.
+
+Stránka se seznamem zobrazí všechny transakce odběratele, které mají stejné ID strany jako odběratel, se kterým jste začali. Například pokud odběratel US-001 v jedné právnické osobě má stejné ID strany jako odběratel DE-001 v jiné právnické osobě, jsou zobrazeny všechny transakce pro obě ID odběratele.
+
+Nabídky na stránce se seznamem **Transakce odběratele** se liší v závislosti na právnické osobě pro transakci. Například pokud je funkce k dispozici pouze pro švýcarské právnické osoby, možnosti nabídky pro tuto funkci se zobrazí pouze při výběru švýcarské transakce.
+
+Chcete-li získat přístup k této funkci, postupujte takto.
+
+1. Zvolte **Pohledávky \> Všichni odběratelé**.
+2. Vyberte odběratele a poté v podokně akcí na kartě **Odběratel** ve skupině **Transakce** zvolte **Globální transakce**.
+
+## <a name="more-transaction-filters"></a>Další filtry transakcí 
+
+Filtr pro zobrazení otevřených transakcí byl nahrazen novým filtrem, který vám umožní zobrazit více kombinací transakcí. Následující možnosti jsou k dispozici v poli **Zobrazit**:
+
+- **Všechny** – Zobrazí všechny transakce pro zvolené odběratele (otevřené a zavřené).
+- **Uzavřené** – Zobrazuje pouze transakce, které byly plně vyrovnány a uzavřeny.
+- **Otevřené** – Zobrazuje pouze transakce, které nebyly plně vyrovnány.
+- **Otevřené ke dni** – Zobrazuje pouze transakce, které nebyly úplně vyrovnány k datu, které zadáte. Pokud vyberete tuto možnost, lze změnit datum, které je uvedeno vedle filtru. Transakce, které mají hodnotu **Poslední datum vyrovnání** po datu, které určíte, se zobrazí v seznamu i v případě, že tyto transakce jsou plně vyrovnány k aktuálnímu datu. Zůstatek však představuje zůstatky k aktuálnímu datu, nikoliv k vybranému datu.
+
+Byl také přidán filtr, který vám umožňuje skrýt transakce převodu měny. Stačí vybrat zaškrtávací políčko **Skrýt přecenění měny**.
+
+## <a name="more-easily-modify-due-dates-and-discount-dates"></a>Snadnější úprava dat splatnosti a dat slevy
+
+Data splatnosti a data slevy lze aktualizovat pro otevřené transakce odběratele. Ve vydání 8.1 bylo vylepšeno rozhraní. Nyní můžete přidat data splatnosti na stránku se seznamem **Transakce odběratele**. Kliknutím na datum splatnosti na stránce se sezamem **Transakce odběratele** lze rovněž změnit data splatnosti, data slevy, platební podmínky a podmínky platební slevy v dialogovém okně **Aktualizovat datum splatnosti a data platební slevy**.
+
+### <a name="activate-the-feature"></a>Aktivace funkce
+
+Chcete-li přidat data splatnosti na stránce se seznamem **Transakce odběratele** změnit nastavení platby pro transakci pomocí dialogového okna **Aktualizovat datum splatnosti a data platební slevy**, postupujte podle těchto kroků.
+
+1. Zvolte **Pohledávky \> Nastavení \> Parametry pohledávek**.
+2. Na kartě **Vyrovnání** nastavte možnost **Zobrazit data splatnosti a povolit úpravy** na **Ano**.
+3. Aby byla tato funkce povolena, byla přidána nová pole k transakcím odběratele. Tato pole se vyplní při dokončení nové transakce. Vyplní se rovněž tehdy, když otevřete dialogové okno **Aktualizovat datum splatnosti a data platební slevy**. Když nastavíte možnost **Zobrazit datum splatnosti a povolit úpravy** na **Ano**, zobrazí se dialogové okno **Aktualizovat informace o platbách**.  Pokud chcete aktualizovat existující transakce ihned, vyberte **Aktualizovat všechny existující transakce**. Pokud chcete vyplnit pole pouze pro nové transakce, vyberte **Pokračovat bez aktualizace**.
+
+Datum splatnosti je nyní přidáno na stránku se seznamem **Transakce odběratele** a můžete snadněji upravit datum splatnosti a datum platebních slev pro transakce.
+
+### <a name="modify-the-payment-settings"></a>Úprav nastavení plateb
+
+Stránka se seznamem **Transakce odběratele** zobrazí všechny transakce odběratele. Pokud vyberete datum splatnosti transakce, zobrazí se dialogové okno **Aktualizovat datum splatnosti a data platebních slev**. Toto dialogové okno zobrazí základní datum pro výpočet splatnosti výpočty a slevy, datum splatnosti, platební podmínky, podmínky platební slevy a data platební slevy.
+
+Při úpravě má každé pole jiný účinek na transakci:
+
+- **Upravit základní datum:** Datum splatnosti a data slevy se změní, jako kdyby základní datum bylo datem dokumentu.
+- **Upravit datum splatnosti:** Změní se pouze datum splatnosti.
+- **Upravit data slevy:** Změní se pouze data slevy.
+- **Upravit platební podmínky:** Změní se datum splatnosti na základě základního data a platebních podmínek.
+- **Upravit podmínky platební slevy:** Platební slevy se změní na základě základního data a podmínek platební slevy.
+
+Po dokončení úprav nastavení platby vyberte **Zavřít** pro uložení vašich změn.
 

@@ -3,7 +3,7 @@ title: "Držitelé zálohy"
 description: "Poznejte funkce držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations."
 author: LizaGolub
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: e6e295390ee42da4de2ae740ba7f04f3caee6234
-ms.openlocfilehash: 289e29d33ba9e3b96e03713d52565967ed2afcc1
+ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.openlocfilehash: 1fc13461ab166d8f20ea2f56f641c86c3172f33b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
@@ -34,12 +34,16 @@ Poznejte funkce držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance 
 *Držitel zálohy* je zaměstnanec společnosti, který je zodpovědný za částku výdajů, kterou poskytuje organizace. Pouze pracovník společnosti může být držitelem zálohy. Pokud dojde k pořízení, držitel zálohy nahlásí společnosti uskutečněné výdaje. Společnost refunduje zaměstnanci částku výdajů. Společnost kontroluje zůstatek pro každého držitele zálohy. Uživatelé v právnických osobách v Estonsku, Lotyšsku, Litvě, Polsku, České republice, Maďarsku a Rusku mohou reflektovat určité transakce doprovázející operace se zaměstnanci společnosti, kteří jsou odpovědní za částku výdajů poskytovanou organizací.
 
 ## <a name="set-up-an-advance-holder"></a>Nastavení držitele záloh
-Pokud chcete nastavit držitele zálohy, je třeba provést následující úkoly v daném pořadí.
-1.  Vytvořte skupiny držitelů záloh.
-2.  Nastavte účetní profil zaměstnance.
-3.  Nastavte parametry závazků.
-4.  Vytvořte specifické podmínky platby pro držitele zálohy.
-5.  Vytvořte držitele záloh.
+Tato část vás provede nastavením držitele zálohy. Ujistěte se, že dokončíte úkoly v této části v uvedeném pořadí.
+
+> [!div class="checklist"]
+> * 1. Vytvoření skupin držitelů záloh
+> * 2. Nastavení účetního profilu zaměstnance
+> * 3. Nastavení parametrů závazků
+> * 4. Vytvoření specifických podmínek platby pro držitele záloh
+> * 5. Vytvoření specifických podmínek platby pro držitele záloh
+> * 6. Vytvoření držitele zálohy
+
 
 ### <a name="advance-holder-groups"></a>Skupiny držitelů záloh
 
@@ -79,20 +83,32 @@ Pokud chcete, aby se projevily transakce držitele zálohy, musíte nastavit ná
 ### <a name="terms-of-payment-for-advance-holder"></a>Platební podmínky držitele zálohy
 
 Pro správné zaregistrování a zaúčtování nákupní objednávky prostřednictvím držitele zálohy je nutné použít podmínky platby, které byly nastaveny pomocí možnosti **Od držitele zálohy** nastavené na **True**.
-### <a name="create-an-advance-holder-creation"></a>Vytvoření držitelů záloh
 
-Před vytvořením držitele zálohy musí mít již nastavené pracovníky. Další informace naleznete v tématu [Zadání informací o pracovníkovi (průvodce záznamem úloh).](../../fin-and-ops/hr/tasks/enter-worker-information.md) Použijte stránku **Držitelé zálohy** k nastavení pracovníka jako držitele zálohy. Vyberte pracovníka, kterého chcete použít jako držitele zálohy, klikněte na možnost **Upravit** a potom nastavte možnost **Držitel zálohy** na **True**. Dále je nutné vyplnit následující pole.
+### <a name="create-an-advance-holder"></a>Vytvoření držitele zálohy
 
-|                |                                                                                             |
-|----------------|---------------------------------------------------------------------------------------------|
-| **Pole**      | **Popis**                                                                             |
-| **Skupina**      | Vyberte skupinu držitelů záloh.                                                             |
-| **Řada**     | Zadejte řadu dokladu, která slouží k ověření totožnosti držitele zálohy. |
-| **Číslo**     | Zadejte číslo dokladu, které slouží k ověření totožnosti držitele zálohy. |
-| **Datum vydání** | Vyberte nebo zadejte datum vydání dokumentu.                                                    |
-| **Vydal**  | Zadejte podrobnosti o orgánu nebo osobě, která dokument vydala.                       |
+Před vytvořením držitele zálohy musí mít již nastavené pracovníky. Další informace naleznete v tématu [Zadání informací o pracovníkovi (průvodce záznamem úloh).](../../fin-and-ops/hr/tasks/enter-worker-information.md) 
+
+1. Zvolte **Závazky** \> **Držitelé zálohy** \> **Držitelé zálohy**.
+
+    > [!NOTE]
+    > Nelze přidat nebo odstranit zaměstnance na stránce **Držitelé záloh**. Zaměstnanci musí být nejprve přijati v modulu **Lidské zdroje**. Na stránce **Účetní profil zaměstnance** můžete nastavit účetní profil zaměstnance, který se používá k účtování zůstatků držitelů záloh.
+
+2. Vyberte zaměstnance a poté zvolte **Upravit**.
+3. Na pevné záložce **Obecné** nastavte možnost **Držitel zálohy** na **Ano** pro označení, že zaměstnanec je držitelem zálohy.
+4. V poli **Skupina** vyberte skupinu držitele zálohy, ke které zaměstnanec patří.
+5. Do možnosti **Osobní doklad** zadejte podrobnosti identifikačního dokumentu.
+    - **Řady** -- Zadejte řadu dokladu, která slouží k ověření totožnosti držitele zálohy.
+    - **Číslo** -- Zadejte číslo dokladu, které slouží k ověření totožnosti držitele zálohy.
+    - **Datum vydání** -- Vyberte nebo zadejte datum vydání dokumentu.
+    - **Vydal** -- Zadejte podrobnosti o orgánu nebo osobě, která dokument vydala.
+6. Zvolte **Uložit** nebo zavřete stránku.
+
+> [!NOTE]
+> Pokud je možnost **Řazení držitelů záloh** nastavena na **Ano** na stránce **Parametry závazků**, držitelé záloh se zobrazí v horní části mřížky na stránce **Držitelé záloh**.
+
 
 ## <a name="advance-holder-inquiries-and-reports"></a>Dotazy a sestavy držitele zálohy
+
 ### <a name="advance-holder-transactions-inquiry"></a>Dotaz na transakce držitelů záloh
 
 Seznam transakcí držitele zálohy získáte kliknutím na tlačítko **Transakce** na stránce **Držitelé zálohy**. Chcete-li zobrazit transakce pro všechny držitele záloh nebo vytvořit konkrétní dotaz založený na transakcích držitelů záloh, klikněte na **Závazky**&gt;**Dotazy a sestavy**&gt;**Dotazy a sestavy držitelů záloh**&gt; Transakce. Kliknutím na možnost **Řádky** otevřete stránku **Transakce dokladu**.
@@ -143,6 +159,7 @@ Po zpracování deníku dokladů, pokud částka v poli **Převáděná částka
 ## <a name="additional-resources"></a>Další zdroje
 
 - [Záloha pro zaměstnance (východní Evropa)](tasks/advance-payment-employee.md)
+- [Držitelé záloh pro Rusko](rus-advance-holders.md)
 
 
 

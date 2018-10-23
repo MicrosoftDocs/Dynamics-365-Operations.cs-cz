@@ -16,10 +16,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
-ms.openlocfilehash: 9399df070d450b6eb89dc33ca47ddb77fe8e60b1
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 137fb8cae0766bed16b6b32d99e1d2c6c9f7b606
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace a odkazy na zdroje, které vám pomohou nastavit aplikaci Dynamics 365 for Finance and Operations pro právnické osoby s primární adresou v Brazílii. 
+Toto téma obsahuje informace a odkazy na zdroje, které vám pomohou nastavit aplikaci Dynamics 365 for Finance and Operations pro právnické osoby s primární adresou v Evropě. 
 
 - [Držitelé zálohy](emea-advance-holders.md)
  - [Transakce držitelů záloh](emea-advance-holders-transactions.md)
@@ -42,11 +42,9 @@ Toto téma obsahuje informace a odkazy na zdroje, které vám pomohou nastavit a
 - [Souhrnné hlášení EU](emea-eu-sales-list.md)
 - [Úpravy kurzů](emea-exchange-rate-adjustments.md)
 - [Formáty souboru pro způsoby platby](emea-select-file-formats-for-the-method-of-payments.md)
-- [Integrace fiskální služby (ESR)](emea-fiscal-service-integration.md)
+- [Integrace finanční služby (ESR)](emea-fiscal-service-integration.md)
 - [Vyřazení dlouhodobého majetku pro Estonsko a Litvu](emea-credit-note-reverse-fixed-asset-sale.md)
-- [Přecenění cizí měny](emea-foreign-currency-revaluation.md)
 - [Vygenerování dokladu převodu pro interní převod zásob](tasks/transfer-document-internal-inventory-transfer.md)
-- [Vygenerování prohlášení Intrastat EU](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Vygenerování sestavy souhrnného hlášení (EU)](tasks/eur-00011-eu-sales-list-report.md)
 - Soubory ISO20022
   - [Import souborů ISO20022](emea-ISO20022-file-formats.md)
@@ -61,6 +59,8 @@ Toto téma obsahuje informace a odkazy na zdroje, které vám pomohou nastavit a
   - [Vytváření a export plateb dodavatelů s použitím formátu platby ISO20022](tasks/create-export-vendor-payments-iso20022-payment-format.md)
 - [Intrastat](emea-intrastat.md)
   - [Převod transakcí do systému Intrastat](tasks/transfer-transactions-intrastat.md)
+  - [Zadání adresy nakládky pro intrakomunitární transakci](tasks/eur-00002-specify-lading-address-intra-community.md)
+  - [Vygenerování prohlášení Intrastat EU](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Sestavy deníku zásob](emea-set-up-report-inventory-journal-names.md)
 - [Koncová data vystavení faktury](emea-invoice-issue-deadline.md)
 - [Zpracování faktury](emea-invoice-processing.md)
@@ -82,8 +82,6 @@ Toto téma obsahuje informace a odkazy na zdroje, které vám pomohou nastavit a
 - [Nastavení souhrnného hlášení EU](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Nastavení formátu platebního dokladu pro faktury projektů](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Nastavení podepisujících uživatelů tištěných formulářů](emea-set-up-signers-for-printing-forms.md)
-- [Nastavení dokladů převodu pro pohyb zboží v rámci společnosti](tasks/set-up-transfer-documents-goods-movement-inside-company.md)
-- [Zadání adresy nakládky pro intrakomunitární transakci](tasks/eur-00002-specify-lading-address-intra-community.md)
 - [Záporné storno](emea-storno.md)
 - [Daňové předpisy](emea-tax-directives.md)
 - [Aktualizace způsobu zobrazování částek v sestavách a dokumentech](emea-amount-printing-forms.md)

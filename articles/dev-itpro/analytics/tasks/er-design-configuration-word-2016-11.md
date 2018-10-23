@@ -1,25 +1,26 @@
 --- 
 title: "Návrh konfigurací elektronického výkaznictví pro generování sestav ve formátu Word"
-description: "Následující kroky vysvětlují, jak uživatel v roli správce systému nebo vývojáře elektronického výkaznictví může nakonfigurovat formáty elektronického výkaznictví (ER) pro generování sestav v podobě souborů aplikace Microsoft Word."
+description: "Následující kroky vysvětlují, jak uživatel v roli správce systému nebo vývojáře elektronického výkaznictví může nakonfigurovat formáty elektronického výkaznictví pro generování sestav v podobě souborů aplikace Microsoft Word."
 author: NickSelin
 manager: AnnBe
-ms.date: 12/21/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: kfend
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 615ab4a4f932478b8b847112d4fed8310187f03b
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Návrh konfigurací elektronického výkaznictví pro generování sestav ve formátu Word
@@ -30,9 +31,9 @@ Následující kroky vysvětlují, jak uživatel v roli správce systému nebo v
 
 K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh s názvem „Vytvoření konfigurace ER pro generování sestav ve formátu OPENXML“. Předem musíte také stáhnout a uložit následující šablony pro vzorovou sestavu:
 
-[Šablona sestavy platby](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Šablona sestavy platby](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Vázaná šablona sestavy platby](https://go.microsoft.com/fwlink/?linkid=862266)
 
-[Vázaná šablona sestavy platby](https://go.microsoft.com/fwlink/?linkid=862266)
 
 Tato procedura je určena pro funkci, která byla přidána do aplikace Microsoft Dynamics 365 for Operations, verze 1611.
 
@@ -49,7 +50,7 @@ Tato procedura je určena pro funkci, která byla přidána do aplikace Microsof
 ## <a name="replace-the-excel-template-with-the-word-template"></a>Výměna šablony aplikace Excel za šablonu aplikace Word
     * V současné době se používá dokument Excel jako šablona pro generování výstupu ve formátu OPENXML. Budeme importovat šablonu sestavy ve formátu Word.  
 1. Klikněte na Přílohy.
-    * Nahraďte existující šablonu aplikace Excel za šablonu Word, kterou jste předtím stáhli, šablonu sestavy platby. Všimněte si, že tato šablona obsahuje pouze rozvržení dokumentu, který chceme generovat jako ER výstup.  
+    * Nahraďte existující šablonu aplikace Excel za šablonu Word s názvem SampleVendPaymDocReport.docx, kterou jste předtím stáhli. Všimněte si, že tato šablona obsahuje pouze rozvržení dokumentu, který chceme generovat jako ER výstup.  
 2. Klepněte na tlačítko Odstranit.
 3. Klepněte na tlačítko Ano.
 4. Klikněte na položku Nová.

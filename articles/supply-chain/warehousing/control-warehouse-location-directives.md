@@ -1,9 +1,9 @@
 ---
 title: "Řízení práce ve skladu pomocí šablon práce a směrnic skladového místa"
-description: "Tento článek popisuje způsob použití šablon práce a směrnic skladového místa k určení, jak a kde se práce ve skladu provádí."
+description: "Toto téma popisuje způsob použití šablon práce a směrnic skladového místa k určení, jak a kde se práce ve skladu provádí."
 author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 269631124e9cab89a85bf4ff6936f3cd5d1dab2a
+ms.sourcegitcommit: c4428613441424c81f4fd7dd92bbf842c62ce860
+ms.openlocfilehash: 74e7c36fb912f35252d6e40d17477ac2962cbc23
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 09/22/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje způsob použití šablon práce a směrnic skladového místa k určení, jak a kde se práce ve skladu provádí.
+Toto téma popisuje způsob použití šablon práce a směrnic skladového místa k určení, jak a kde se práce ve skladu provádí.
 
 Pokyny, které pracovníci skladu obdrží v mobilním zařízení, jsou určeny podle šablon práce, které nastavíte v aplikaci Microsoft Dynamics 365 for Finance and Operations k definování různých procesů a úloh ve skladu. Šablony práce určují způsob provedení práce pro každý skladový proces. Přiřazením směrnic skladového místa k šablonám práce můžete pomoci zajistit, že práce bude probíhat v určitých fyzických oblastech skladu.
 
@@ -58,12 +58,109 @@ Pro šablony práce lze nastavit dotaz, který určuje, kdy je použita konkrét
 
 Směrnice skladového místa mají další úroveň podrobností: *akce směrnice skladového místa*. Můžete určit více akcí směrnice skladového místa pro každý řádek. Pořadové číslo se znovu použije k určení pořadí, ve kterém jsou akce posuzovány. Na této úrovni můžete nastavit dotaz a definovat tak způsob vyhledání nejlepšího skladového místa ve skladu. Také můžete použít předdefinované nastavení **Strategie** a najít tak optimální skladové místo.
 
+## <a name="location-directives-configuration-details"></a>Podrobnosti konfigurace směrnic skladového místa 
+
+ ### <a name="sequence-number"></a>Pořadové číslo
+ 
+Toto číslo označuje pořadí, ve kterém je zpracována směrnice skladového místa pro vybraný typ objednávky. Je možné ho změnit pomocí možností **Přesunout nahoru** a **Přesunout dolů** v nabídce.
+ 
+ ### <a name="work-type"></a>Typ práce
+ 
+Jedná se o typ práce, která má být vykonávána. Typ práce, který je k dispozici, závisí na typu skladové transakce, který jste vybrali v poli **Typ pracovního příkazu**.
+-   **Vložit** - Typ práce **Vložit** znamená, že směrnice skladového místa najde nejvhodnější skladové místo pro umístění zásob přicházejících do systému, buď z přijetí, výroby nebo úprav zásob. Lze ho také použít k definování umístění do místa fáze nebo konečného místa expedice nákladové brány.
+-   **Vyskladnit** - Typ práce **Vyskladnit** znamená, že sklad nalezne nejvhodnější skladové místo, odkud fyzicky rezervovat zásoby (vytvoření práce). Vyskladnění lze dokončit (řádek práce vyskladnění lze uzavřít), i když práce není dokončena. Uživatele může dokončit fyzické vyskladnění, což je krok vyskladnění. Uživatel poté může provést zrušení z mobilního zařízení a dokončit práci později. Záhlaví práce je však uzavřeno, když je dokončeno koncové vložení. 
+-   **Inventura, Úpravy, Vlastní, Změna stavu zásob, Sestavení registrační značky vozidla, Tisk, Změna stavu, Zabalit do vnořených registračních značek** - Tyto možnosti se nepoužívají v žádném nastavení směrnic skladového místa. Jedná se o výčet, takže neexistuje žádné filtrování připojené k typu pracovního příkazu. 
+
+### <a name="directive-code"></a>Kód předpisu
+
+Vyberte kód předpisu, který se má přidružit k šabloně práce nebo šabloně doplnění. Ve formuláři **Kód směrnice** můžete vytvořit nové kódy, které lze použít pro propojení mezi šablonou práce, šablonou doplnění a směrnicí skladového místa. Tuto možnost můžete také použít pro vytvoření spojení mezi jakýmkoliv řádkem šablony práce a směrnicí skladového místa (jako je například nákladová brána nebo skladové místo fáze).
+
+Všimněte si, že pokud je nastaven kód při generování práce, systém nebude hledat směrnici skladového místa podle posloupnosti, nýbrž podle kódu směrnice. To znamená, že můžete být konkrétnější v použití typu šablony skladového místa pro určitý krok v šabloně práce, jako je například fázování materiálů. 
+
+### <a name="site"></a>Pracoviště
+
+Pracoviště je povinné pole, protože směrnice skladového místa vyžaduje pracoviště a sklad, pro které je platná. 
+
+### <a name="warehouse"></a>Sklad
+
+Sklad je povinné pole, protože směrnice skladového místa vyžaduje pracoviště a sklad, pro které je platná.
+
+### <a name="multiple-sku"></a>Více skladových jednotek
+
+To umožňuje více skladových jednotek (SKU) ve skladovém místě, jako je například nákladová brána. Vyberete-li **Více skladových jednotek**, skladové místo pro vložení bude určeno v práci (což je očekávané), ale bude možné pracovat pouze s vložením vícero položek (pokud práce zahrnuje rozdílné skladové jednotky k vyskladnění a vložení, nikoliv jedno vložení skladové jednotky). Nevyberete-li **Více skladových jednotek**, skladové místo pro vložení bude určeno pouze tehdy, pokud má vložení pouze jeden druh skladové jednotky. Pokud chcete použít obě akce, je nutné zadat dva řádky - jeden s povolenou možností více skladových jednotek a jeden se zakázanou možností více skladových jednotek. Tyto řádky musí mít stejnou strukturu a nastavení. Pro operace vložení je nutné mít směrnice skladového místa, které jsou identické, i když nerozlišujete mezi jednou a vícero skladovými jednotkami u ID práce. Rovněž je třeba nastavit vyskladnění, pokud máte objednávky s více než jednou položkou.
+
+### <a name="sequence-number"></a>Pořadové číslo
+
+Zadejte pořadí, ve kterém jsou zpracovány řádky předpisu skladového místa pro vybraný typ práce. Můžete také změnit pořadí v případě potřeby pomocí položek **Přesunout nahoru** a **Přesunout dolů**.
+
+### <a name="fromto-quantity"></a>Množství od/do
+
+Umožňuje určit rozsah množství pro případ, kdy je třeba zvolit pořadí střední mřížky. Určit rozsah množství od/do můžete v možnosti Množství v příslušné jednotce.
+
+### <a name="unit"></a>Jednotka
+
+Můžete zadat minimální a maximální množství, na které má být směrnice použita, a můžete určit, zda bude směrnice použita pouze pro specifickou skladovou jednotku. Pole jednotky na řádku se používá pouze pro vyhodnocení množství.
+
+Při kontrole, zda je použitelný řádek směrnice skladového místa, bude založeno na množství v příslušné jednotce zadané na řádku směrnice skladového místa. Vždy, když je dosaženo řádku směrnice skladového místa, systém se pokusí o převod jednotky poptávky na jednotku zadanou na řádku. Pokud měrná jednotka neexistuje, bude pokračovat na další řádek. 
+
+### <a name="locate-quantity"></a>Vyhledat množství
+
+Tato možnost slouží pouze pro vložení/vyhledání množství do skladu. Slouží pouze k typu práce vložení. Platné hodnoty jsou:
+
+-   **Množství registrační značky** – Při vyhodnocení, zda je množství v rámci rozsahů množství Od a Do, použijte množství na přijímané registrační značce.
+-   **Sjednocené množství** – Při vyhodnocení, zda je množství v rámci rozsahů množství Od a Do, použijte množství sjednocované během konkrétní transakce.
+-   **Zbývající množství** – Při vyhodnocení, zda je množství v rámci rozsahů množství Od a Do, použijte množství, které zbývá přijmout na řádku nákupní objednávky aktuálně vráceném se změnami.
+-   **Očekávané množství** – Při vyhodnocení, zda je množství v rámci rozsahů množství Od a Do, použijte celkové množství řádku nákupní objednávky bez ohledu na to, co již bylo přijato.
+
+### <a name="restrict-by-unit"></a>Omezit podle jednotky
+
+To umožňuje, aby byl řádek směrnice skladového místa konkrétně určen pro měrnou jednotku nebo více měrných jednotek. Při rezervaci množství, pokud chcete rezervovat palety pro určitou skupinu skladových míst, pak by pořadí střední mřížky omezilo tuto konkrétní posloupnost na PL tak, aby jakékoliv množství menší než jedna paleta nevybralo tuto číselnou řadu. Vyberte **Omezit podle jednotky** pro nastavení jednotek. Řádek můžete také omezit na více než jednu jednotku. Tato bude fungovat pouze pro směrnici skladového místa typu vyskladnění. 
+
+### <a name="round-up-to-unit"></a>Zaokrouhlit nahoru na jednotku
+
+Toto políčko souvisí s polem **Omezit podle jednotky**. Pokud je řádek směrnice skladového místa **Omezit podle jednotky** nastaven na pole, volba **Zaokrouhlit nahoru na jednotku** označuje, že práce vygenerovaná ze směrnice pro výdej suroviny musí být zaokrouhlena nahoru na násobek jedné manipulační jednotky (zadané v možnosti **Omezit podle jednotky**). Všimněte si, že to funguje pouze pro výdej suroviny a pouze se směrnicí skladového místa typu výdej.
+
+### <a name="locate-packing-qty"></a>Vyhledat množství balení
+
+Pokud je na prodejní objednávce , převodním příkazu nebo výrobní zakázce určeno množství balení, omezuje to systém pouze k výběru skladových míst s množstvím balení ve skladovém místě. Tato bude fungovat pouze pro směrnici skladového místa typu vyskladnění.
+
+### <a name="allow-split"></a>Povolit rozdělení
+
+To určuje, zda smí směrnice skladového místa rozdělit přijaté množství nebo množství, které je rezervováno napříč vícero místy skladu, nebo zda celé množství musí být umístěno na jedno místo nebo rezervováno z jediného místa za účelem vytvoření práce. 
+
+### <a name="sequence-number"></a>Pořadové číslo
+
+Toto číslo je pořadí, ve kterém je zpracována směrnice skladového místa pro vybraný typ práce. Pořadí můžete v případě potřeby změnit. Nicméně buďte opatrní při použití číselných řad, protože zpracování se vždy spustí podle pořadí. 
+
+### <a name="name"></a>Jméno
+
+Zadejte název akce směrnice skladového místa. Ujistěte se, že při určení názvu budete konkrétní.
+
+### <a name="fixed-location-usage"></a>Využití pevného skladového místa 
+
+-   **Pevná a ostatní skladová místa** - Tato směrnice skladového místa zváží všechna skladová místa.
+-   **Pouze pevná skladová místa pro produkt** – Směrnice skladového míst zváží pouze pevná skladová místa pro produkt.
+-   **Pouze pevná skladová místa pro variantu produktu** – Směrnice skladového míst zváží pouze pevná skladová místa pro variantu produktu.
+
+### <a name="allow-negative-inventory"></a>Povolit záporné zásoby
+
+Výběrem této možnosti můžete v zadaném skladovém umístění povolit záporné počty zásob ve směrnici skladového místa. 
+
+### <a name="batch-enabled"></a>Dávka povolena 
+
+Zvolte použití strategií dávek pro položky, které mají povolenou dávku. Pokud je dosaženo řádku, kde je možnost **Dávka povolena** nastavena bez položky dávky, zpracování bude pokračovat k dalšímu řádku akce. 
+
+### <a name="strategy"></a>Strategie
+
+-   **Konsolidovat** - Tato strategie se používá pro konsolidaci položek v konkrétním skladovém místě, když jsou podobné položky již k dispozici. Tato operace funguje pouze pro typ vložení směrnic skladového místa. Běžné nastavení pro vložení bude konsolidace na prvním řádku akce a poté na druhém řádku pokus o vložení bez konsolidace. Konsolidace zboží bude mít za následek efektivnější pozdější vyskladnění.
+-   **Párovat množství balení** - Tato strategie umožňuje ověřit, zda má výdejní skladové místo zadané množství balení. Tato operace bude fungovat pouze pro směrnici skladového místa typu vyskladnění. 
+-   **Rezervace dávky FEFO** - Tato strategie se používá, když se zásoby vyhledávají pomocí data vypršení platnosti dávky a jsou přiděleny pro rezervaci dávek. Tato strategie se dá použít pouze pro položky s povolenou dávkou. Tato operace funguje pouze pro směrnici skladového místa typu práce vyskladnění. 
+-   **Zaokrouhlit nahoru na úplnou registrační značku** - Tato strategie umožňuje zaokrouhlování skladového množství, aby odpovídalo množství registrační značky přiřazenému ke zboží k výdeji. Tuto strategii můžete použít pouze pro typ doplnění směrnice skladového místa typu Vyskladnění. 
+-   **Prázdné místo bez příchozí práce** - Tato strategie slouží k vyhledání prázdných míst. Sklad je považován za prázdný, pokud nemá žádné fyzických zásoby a neočekává příchozí práci. Tato strategie slouží pouze pro typ směrnice skladového místa Vložení. 
+
 ### <a name="example-of-the-use-of-location-directives"></a>Příklad použití směrnic skladového místa
 
-V tomto příkladu se zaměříme na proces nákupní objednávky, kde směrnice skladového místa musí vyhledat volnou kapacitu ve skladu pro skladové položky, které byly právě zaregistrovány na přijímacím překladišti. Nejprve se pokusíme vyhledat volnou kapacitu v rámci skladu konsolidací s existujícími zásobami na skladě. Není-li konsolidace možná, pak chceme najít prázdné skladové místo. 
+V tomto příkladu zvažte proces nákupní objednávky, kde směrnice skladového místa musí vyhledat volnou kapacitu ve skladu pro skladové položky, které byly právě zaregistrovány na přijímacím překladišti. Nejprve potřebujete vyhledat volnou kapacitu v rámci skladu konsolidací s existujícími zásobami na skladě. Není-li konsolidace možná, pak musíte najít prázdné skladové místo. 
 
-Pro tento scénář musíme definovat dvě akce směrnice skladového místa. První akce v číselné řadě musí používat strategii **Konsolidovat** a druhá strategii **Prázdné umístění s žádnou příchozí prací**. Pokud definujeme třetí akci pro zpracování scénáře přetečení, jsou možné dva výsledky v případě, že neexistuje žádná další kapacita ve skladu: práci lze vytvořit i v případě, že jsou definována žádná skladová místa, nebo může proces vytváření práce selhat. Výsledek je určen nastavením na stránce **Selhání směrnice skladového místa**, kde můžete rozhodnout, zda chcete vybrat možnost **Zastavit práci při selhání směrnice umístění** pro každý typ pořadí pracovních činností.
-
-
-
+Pro tento scénář musíte definovat dvě akce směrnice skladového místa. První akce v číselné řadě musí používat strategii **Konsolidovat** a druhá strategii **Prázdné umístění s žádnou příchozí prací**. Pokud definujete třetí akci pro zpracování scénáře přetečení, jsou možné dva výsledky v případě, že neexistuje žádná další kapacita ve skladu: práci lze vytvořit i v případě, že jsou definována žádná skladová místa, nebo může proces vytváření práce selhat. Výsledek je určen nastavením na stránce **Selhání směrnice skladového místa**, kde můžete rozhodnout, zda chcete vybrat možnost **Zastavit práci při selhání směrnice umístění** pro každý typ pořadí pracovních činností.
 

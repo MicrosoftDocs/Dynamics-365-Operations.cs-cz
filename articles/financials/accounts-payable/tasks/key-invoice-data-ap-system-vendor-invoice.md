@@ -1,28 +1,29 @@
 --- 
-title: "Zadání dat faktury do závazků s použitím faktury dodavatele"
+title: "Zadání dat faktur do systému závazků pomocí faktury dodavatele"
 description: "Tento průvodce záznamem úloh vám pomůže vytvořit fakturu dodavatele z nákupní objednávky a zobrazit si výsledky párování nákupní objednávky, příjemky a faktury (třícestné párování)."
 author: abruer
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines, VendEditInvoice, InventItemIdLookupSimple, VendInvoiceMatchingDetails
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 48535a283cbdfdc7343a20105b139c527cac85f4
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: e1d2e31a5de7cefd20996c18bf4771296a587997
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="key-invoice-data-into-accounts-payable-using-a-vendor-invoice"></a>Zadání dat faktury do závazků s použitím faktury dodavatele
+# <a name="key-invoice-data-in-ap-system-using-vendor-invoice"></a>Zadání dat faktur do systému závazků pomocí faktury dodavatele
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

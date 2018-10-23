@@ -3,7 +3,7 @@ title: "Přizpůsobení uživatelského prostředí"
 description: "Toto téma vysvětluje, jakým způsobem lze přizpůsobit aplikaci Microsoft Dynamics 365 for Finance and Operations."
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 05/24/2018
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 862bbf4d1d9b0dc2b6dc418ee766ed4dedef49fe
-ms.openlocfilehash: 8ad5bd607f08d4e0b266d86a96a0b7f3e352c4cd
+ms.sourcegitcommit: 7344f460fcb443a78b254e2387fbf5c9134bf674
+ms.openlocfilehash: 1860b603f789aabca1ca58848a88e11a6e08e31f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 
@@ -64,7 +64,7 @@ Různí lidé a společnosti mají jiný pohled na data, která jsou pro ně nej
 ### <a name="shortcut-menu-options"></a>Možnosti místní nabídky
 Místní nabídky umožňují několik způsobů explicitně změnit stránku, aby odpovídala vašim požadavkům, nebo požadavkům vaší společnosti. (Místní nabídka se také nazývá *nabídka pravého tlačítka myši* nebo *kontextové nabídka*.)
 
-Nejtypičtější a nejdůležitější změny, které lze na stránce provést, jsou k dispozici přímo jako možnosti místní nabídky. Například můžete přidat nebo skrýt sloupce v mřížce pouhým kliknutím pravým tlačítkem na záhlaví sloupce mřížky a pak vybrat **Přidat sloupce** nebo **Skrýt tento sloupec**.
+Nejtypičtější a nejdůležitější změny, které lze na stránce provést, jsou k dispozici přímo jako možnosti místní nabídky. Například od aktualizace Platform Update 17 můžete přidat nebo skrýt sloupce v mřížce pouhým kliknutím pravým tlačítkem na záhlaví sloupce mřížky a pak vybrat **Přidat sloupce** nebo **Skrýt tento sloupec**.
 
 Kromě toho jsou k dispozici základní typy explicitního přizpůsobení kliknutím pravým tlačítkem myši a následným výběrem **Přizpůsobit**. (Všimněte si, že ne všechny prvky na stránce mohou být přizpůsobeny.) Použijete-li tuto metodu přizpůsobení, zobrazí se okno Vlastnosti prvku.
 
@@ -81,27 +81,38 @@ Můžete použít okno vlastností pro individuální nastavení prvku následuj
 Okna vlastností mohou obsahovat další možnosti přizpůsobení, v závislosti na prvku. Například okno vlastností pro dlaždici umožňuje promítnout dlaždici do řídicího panelu a okno vlastnosti pro řídicí panel umožňuje vytvořit nový pracovní prostor na tomto řídicím panelu.
 
 ### <a name="the-personalization-toolbar"></a>Panel nástrojů individuálních nastavení
-Pokud chcete přesunout nebo skrýt prvky, nebo provést několik změn na stránce, můžete vybrat panel nástrojů **Přizpůsobení**. Chcete-li otevřít panel nástrojů **Přizpůsobení**, vyberte **Přizpůsobit tento formulář** v okně vlastnosti prvku. Můžete také vybrat **Přizpůsobit tento formulář** ve skupině **Přizpůsobit** na kartě **Možnosti** každého podokna akcí.
+Pokud chcete provést více změn stránky nebo provést změny, které nejsou k dispozici prostřednictvím dalších mechanismů (jako je například změnou uspořádání prvků), lze použít panel nástrojů **Individuální nastavení**. Chcete-li otevřít panel nástrojů **Přizpůsobení**, vyberte **Přizpůsobit tento formulář** v okně vlastnosti prvku. Můžete také vybrat **Přizpůsobit tento formulář** ve skupině **Přizpůsobit** na kartě **Možnosti** každého podokna akcí.
 
 [![Panel nástrojů individuálních nastavení](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-Když je panel nástrojů **Přizpůsobení** otevřený, stránka není interaktivní. Nelze zadat data nebo rozbalit nebo sbalit oddíly. Lze změnit pouze prvky, které tvoří stránku.
+#### <a name="navigating-the-page"></a>Navigace na stránce 
+Vaše možnosti navigace na stránce při otevření **Panelu nástrojů individuálních nastavení** závisí na verzi platformy, kterou používáte. 
 
+- Před aktualizací Platform update 19 je při otevření panelu nástrojů **individuálního nastavení** stránka pouze ke čtení (není možné nic zadat) a neinteraktivní (lze pouze provádět změny viditelných prvků na stránce). Pokud chcete provést změny prvků ve sbalené části nebo na jiné kartě, je třeba zavřít panel nástrojů **individuálního nastavení**, rozbalit část nebo přepnout na požadovanou kartu a poté znovu otevřít panel nástrojů **individuálního nastavení**.  
+
+- Od aktualizace Platform Update 19 je při otevření panelu nástrojů **individuálního nastavení** stránka stále pouze ke čtení, ale je mnohem interaktivnější. Konkrétně lze rozbalit nebo sbalit okno s fakty, přepnout karty a rozbalit nebo sbalit části, když je panel nástrojů **individuálního nastavení** otevřen, stejným způsobem jako je to na stránce obvyklé. Chcete-li použít změnu individuálního nastavení na sbalitelnou část nebo kartu, (jako například skrýt pevnou záložku), spustíte tlačítko, které se zobrazí vedle sbalitelné části nebo karty, když je na něm zaměřena klávesnice nebo na něj najedete kurzorem myši.  
+
+#### <a name="personalization-tools"></a>Nástroje individuálních nastavení
 Jsou k dispozici následující nástroje na panelu nástrojů **Přizpůsobení**:
 
 - Použijte nástroj **Vybrat** k výběru a změně vlastností prvku. Zvolte nástroj **Vybrat** a poté vyberte prvek, jehož vlastnosti chcete změnit. Při výběru prvku se otevře okno vlastností prvku a můžete upravit jakékoli vlastnosti pro daný prvek. Proces můžete opakovat pro další prvky, které je možné přizpůsobit na této stránce. Vzhledem k tomu, jakým způsobem jsou některé prvky používány, Finance a Operace vám nedovolí změnit některé z jejich vlastností. Proto při výběru prvku se můžete pravděpodobně setkat s tím, že některé vlastnosti nelze změnit. Nemůžete například skrýt pole, které je povinné.
-- Zvolte nástroj pro **Přesunutí**, pokud chcete přesunout prvek na jiné místo v rámci aktuální skupiny prvků. (Prvek nelze přesunout mimo nadřazenou skupinu). Zvolte nástroj **Přesunutí** a poté vyberte prvek, který chcete přesunout. Při výběru prvku Finance and Operations kontroluje stránku a určí, kdy lze přesunout prvek. Poté vytvoří řadu zón k přetažení. Když přetahujete prvek z aktuální skupiny, každá zóna k přetažení je zobrazena jako vybarvená a tučná oblast, kam lze prvek přetáhnout.
-- Chcete-li skrýt prvek na stránce, zvolte nástroj **Skrýt**. Zvolte nástroj **Skrýt** a poté vyberte prvek, který chcete skrýt. Když vyberete nástroj **Skrýt**, všechny prvky, které jsou nyní skryté, jsou viditelné a jsou zobrazeny v šedém kontejneru. Poté je lze zrušit jejich skrytí. Výběrem nástroje **Výběr** si můžete prohlédnout, jak bude vypadat stránka s vybranými skrytými prvky.
-- Použijte nástroj **Souhrn**, když chcete zobrazit v oddílu souhrnu pevné záložky prvek. Nástroj Souhrn platí pouze pro pole, která jsou obsažena na oddílu pevné záložky. Když vyberete nástroj **Souhrn**, všechna pole, která byla vybrána jako souhrnná pole, jsou zobrazena v šedém kontejneru. Lze interaktivně přidat pole na souhrn pevné záložky a odstranit pole ze souhrnu pevných záložek výběrem pole.
-- Použijte nástroj **Přeskočit**, chcete-li odebrat prvek z řady karet klávesnic na stránce. Když vyberete nástroj **Přeskočit**, všechny prvky, které jsou nyní přeskočené, jsou viditelné a jsou zobrazeny v šedém kontejneru. Můžete je pak znovu přidat do řady karet.
-- Zvolte nástroj **Upravit**, když chcete označit prvek jako upravitelný nebo neupravitelný. Když vyberete nástroj **Upravit**, všechny prvky, které jsou nyní neupravitelné, jsou viditelné a jsou zobrazeny v šedém kontejneru. Pak je můžete znovu udělat upravitelnými. Všimněte si, že některá pole jsou povinná a nelze je upravovat. Vedle těchto polí se zobrazí symbol visacího zámku.
-- Použijte tlačítko **Vložit** a zobrazíte seznam prvků, které lze vložit na stránku.
 
+- Zvolte nástroj pro **Přesunutí**, pokud chcete přesunout prvek na jiné místo v rámci aktuální skupiny prvků. (Prvek nelze přesunout mimo nadřazenou skupinu). Zvolte nástroj **Přesunutí** a poté vyberte prvek, který chcete přesunout. Při výběru prvku Finance and Operations kontroluje stránku a určí, kdy lze přesunout prvek. Poté vytvoří řadu zón k přetažení. Když přetahujete prvek z aktuální skupiny, každá zóna k přetažení je zobrazena jako vybarvená a tučná oblast, kam lze prvek přetáhnout.
+
+- Chcete-li skrýt prvek na stránce, zvolte nástroj **Skrýt**. Zvolte nástroj **Skrýt** a poté vyberte prvek, který chcete skrýt. Když vyberete nástroj **Skrýt**, všechny prvky, které jsou nyní skryté, jsou viditelné a jsou zobrazeny v šedém kontejneru. Poté je lze zrušit jejich skrytí. Výběrem nástroje **Výběr** si můžete prohlédnout, jak bude vypadat stránka s vybranými skrytými prvky.
+    - Od aktualizace Platform Update 18 můžete skrýt povinná pole a části, které obsahují povinná pole. To vám umožňuje vytvářet zjednodušené rozhraní, kde nejsou povinná pole převzatá obchodní logikou zobrazená. Skrytá povinná pole jsou rovněž dočasně viditelná,. když jsou při pokusu o uložení prázdná. 
+
+- Použijte nástroj **Souhrn**, když chcete zobrazit v oddílu souhrnu pevné záložky prvek. Nástroj Souhrn platí pouze pro pole, která jsou obsažena na oddílu pevné záložky. Když vyberete nástroj **Souhrn**, všechna pole, která byla vybrána jako souhrnná pole, jsou zobrazena v šedém kontejneru. Lze interaktivně přidat pole na souhrn pevné záložky a odstranit pole ze souhrnu pevných záložek výběrem pole.
+
+- Použijte nástroj **Přeskočit**, chcete-li odebrat prvek z řady karet klávesnic na stránce. Když vyberete nástroj **Přeskočit**, všechny prvky, které jsou nyní přeskočené, jsou viditelné a jsou zobrazeny v šedém kontejneru. Můžete je pak znovu přidat do řady karet.
+
+- Zvolte nástroj **Upravit**, když chcete označit prvek jako upravitelný nebo neupravitelný. Když vyberete nástroj **Upravit**, všechny prvky, které jsou nyní neupravitelné, jsou viditelné a jsou zobrazeny v šedém kontejneru. Pak je můžete znovu udělat upravitelnými. Všimněte si, že některá pole jsou povinná a nelze je upravovat. Vedle těchto polí se zobrazí symbol visacího zámku.
+
+- Použijte tlačítko **Vložit** a zobrazíte seznam prvků, které lze vložit na stránku.
     - Vyberte nástroj **Pole** pod možností **Vložit** pro přidání pole na stránku. Když použijete nástroj **Pole**, lze přidat pouze pole, která jsou součástí definice stránky, ale nejsou nyní zobrazeny na stránce. Informace o postupu při vytváření nových polí, které nejsou součástí aktuální definice stránky, naleznete v tématu [Vlastní pole](user-defined-fields.md). Po výběru nástroje **Pole** je nutné nejprve vybrat skupinu nebo oblast, kam chcete pole přidat. Dialogové okno zobrazí seznam polí souvisejících se zvolenou skupinou nebo oblastí. V dialogovém okně vyberte jedno nebo více polí pro přidání a zvolte **Vložit**. Chcete-li odebrat pole, které jste dříve přidali, opakujte proces, ale v dialogovém okně zrušte výběr pole.
     - Vyberte nástroj **PowerApp** pod možností **Vložit** a vložte aplikaci vytvořenou pomocí Microsoft PowerApps na stránce. Podrobné informace o tom, jak aplikace PowerApps vkládá na stránku, najdete v tématu [Vložit PowerApps](embed-power-apps.md).
 
 - Zvolte tlačítko **Správa** k zobrazení seznamu možností řízení týkající se všech individuálních nastavení pro aktuální stránku.
-
     - Zvolte **Vymazat**, pokud chcete obnovit výchozí nainstalovaný stav stránky. Vymaže všechna individuální nastavení na aktuální stránce. Neexistuje akce vrácení. Tuto možnost použijte pouze v případě, že jste si jisti, že chcete resetovat stránku.
     - Použijte možnost **Import** k načtení přizpůsobení ze souboru, který jste vy nebo někdo jiný dříve vytvořili pro tuto stránku. Všechna aktuální přizpůsobení stránky budou nahrazena individuálním nastavením z vybraného souboru.
     - Vyberte **Export** pro uložení vašeho přizpůsobení stránky do souboru. Individuální nastavení můžete sdílet s jinými uživateli. Tito uživatelé musí importovat soubor, který obsahuje vaše přizpůsobení stránky.
@@ -149,5 +160,5 @@ Když si přizpůsobíte nastavení dimenze zásob na stránce, zvažte nastaven
 
 Nastavení **Zobrazení dimenzí** platí pro všechny stránky a přepíše všechna individuální nastavení polí dimenze zásob na jednotlivých stránkách.
 
-Proto v předchozím příkladu, pokud nechcete, aby se zobrazil sloupec dimenze zásob čísla dávky, musíte tuto dimenzi vymazat jako součást volby **Zobrazení dimenzí** pro tabulku. Tato změna by nakonec neplatila pouze pro jednu konkrétní stránku, ale pro všechny stránky.
+V předchozím příkladu, pokud nechcete, aby se zobrazil sloupec dimenze zásob čísla dávky, musíte tuto dimenzi vymazat jako součást volby **Zobrazení dimenzí** pro tabulku. Tato změna by nakonec neplatila pouze pro jednu konkrétní stránku, ale pro všechny stránky.
 

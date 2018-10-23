@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
+ms.sourcegitcommit: e4c1f8c7435a901431286960581754e5b2820dad
+ms.openlocfilehash: 34e744884b4bae890d7990103ecc7157c6883869
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/03/2018
 
 ---
 
@@ -71,7 +71,7 @@ Konfigurace rozložení obrazovky určují akce, obsah a umístění ovládacíc
 
 ### <a name="assignment"></a>Přiřazení
 
-Rozložení obrazovky mohou být přiřazena na úrovni obchodu, registrační pokladny nebo uživatele. Přiřazení uživatele přepíše přiřazení registrační pokladny a obchodu a přiřazení registrační pokladny přepíše přiřazení obchodu. V jednoduchém případě, kde všichni uživatelé používají stejné rozvržení bez ohledu na registr nebo roli, lze rozvržení obrazovky nastavit pouze na úrovni obchodu. V případech, kde konkrétní registrační pokladny nebo uživatelé vyžadují speciální rozložení, lze jim je přiřadit.
+Rozložení obrazovky mohou být přiřazena na úrovni obchodu nebo uživatele. Přiřazení uživatele přepíše přiřazení registrační pokladny a obchodu a přiřazení registrační pokladny přepíše přiřazení obchodu. V jednoduchém případě, kde všichni uživatelé používají stejné rozvržení bez ohledu na registr nebo roli, lze rozvržení obrazovky nastavit pouze na úrovni obchodu. V případech, kde konkrétní registrační pokladny nebo uživatelé vyžadují speciální rozložení, lze jim je přiřadit.
 
 ### <a name="layout-sizes"></a>Velikosti rozvržení
 
