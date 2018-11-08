@@ -14,6 +14,8 @@
       href: dev-itpro/choose-deployment.md
     - name: Získání podpory pro Retail
       href: retail-support.md
+    - name: Často kladené dotazy k aktualizacím služby One Version
+      href: ../fin-and-ops/get-started/one-version.md
 - name: Vysvětlení životního cyklu implementace
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
@@ -143,10 +145,8 @@
       href: product-variants-POS.md
     - name: Hardwarová periferní zařízení
       items:
-        - name: Periferní zařízení Retail
+        - name: Maloobchodní periferní zařízení
           href: retail-peripherals-overview.md
-        - name: Hardwarová periferní zařízení POS testovaná společností Microsoft
-          href: microsoft-tested-pos-hardware-peripherals.md
         - name: Simulátor periferních zařízení Retail
           href: dev-itpro/retail-peripheral-simulator.md
         - name: Připojení periferních zařízení k POS.
@@ -229,7 +229,9 @@
       href: set-up-rfm-analysis.md
 - name: Úpravy slev a cen
   items:
-    - name: Správa prodejní ceny v aplikaci Retail
+    - name: Maloobchodní slevy
+      href: retail-discounts-overview.md
+    - name: Správa maloobchodní prodejní ceny
       href: price-management.md
     - name: Úpravy ceny a slevy
       href: price-adjustments-discounts.md
@@ -271,7 +273,7 @@
       href: ../supply-chain/pim/search-products-product-variants.md
 - name: Věrnostní program
   items:
-    - name: Nastavení zákaznických věrnostních programů
+    - name: Přehled věrnostního programu
       href: set-up-customer-loyalty-program.md
 - name: Zásoby
   items:
@@ -307,6 +309,8 @@
       href: ../talent/create-job.md
 - name: Lokalizace a funkce týkající se předpisů
   items:
+    - name: Fiskální integrace pro maloobchodní síť
+      href: localizations/fiscal-integration-for-retail-channel.md
     - name: Východní Evropa
       items:
         - name: Zálohové faktury pro Retail pro východní Evropu
@@ -315,6 +319,8 @@
           href: localizations/emea-eeu-petty-cash-for-retail.md
         - name: Faktury odběratele a vrácení prodejních objednávek ve východoevropských zemích v aplikaci Retail
           href: localizations/emea-eeu-retail-invoices.md
+        - name: 'Pokyny k nasazení registračních pokladen pro Českou republiku, Maďarsko a Polsko'
+          href: localizations/emea-eeu-deployment.md
     - name: Francie
       items:
         - name: Funkce registrační pokladny
@@ -329,6 +335,10 @@
           href: localizations/apac-ind-loc-deployment-guidelines.md
         - name: Podpora pro upgrade a N-1 pro Indii
           href: localizations/apac-ind-n-1-for-india.md
+    - name: Itálie
+      items:
+        - name: Integrace fiskální tiskárny
+          href: localizations/emea-ita-fpi-sample.md
     - name: Norsko
       items:
         - name: Funkce registrační pokladny
@@ -490,6 +500,8 @@
           href: dev-itpro/pos-custom-control.md
         - name: Přidání operací POS do rozvržení POS pomocí návrháře mřížek tlačítek
           href: dev-itpro/add-POS-operations.md
+        - name: Rozhraní API pro Retail POS
+          href: dev-itpro/POS-APIs.md
         - name: Rozšíření POS plateb
           href: dev-itpro/pos-payment-extension.md
         - name: Podpora pro externí dárkové poukazy

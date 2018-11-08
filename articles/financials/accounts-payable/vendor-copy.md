@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 4c27e0f75a45a2e4290ec4b6f72ee67d792449a0
+ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
+ms.openlocfilehash: 0c492cd76fc9742aa4cff8fe588541cb2c6f1863
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 10/11/2018
 
 ---
 
@@ -40,7 +40,7 @@ Pokud používáte ruční ID dodavatelů, můžete rovněž kopírovat dodavate
 
 ## <a name="copy-a-vendor"></a>Kopírovat dodavatele
 
-Chcete-li kopírovat dodavatele, zvolte **Nový** na stránce se seznamem **Všichni dodavatelé** a otevřete stránku **Všichni dodavatelé, nový záznam**. Povšimněte si, že ID nového dodavatele není přiřazeno ihned. Chování se liší od chování v předchozích verzích aplikace Microsoft Dynamics 365 for Finance and Operations. Protože jste ještě nezvolili skupinu dodavatelů, systém nemůže určit správnou číselnou řadu, která se má použít. Navíc nemůže určit, zda se pokoušíte vytvořit nového dodavatele nebo kopírovat dodavatele. Proto není ID dodavatele přiřazeno do té doby, než zvolíte **Uložit** ve spodní části stránky.
+Chcete-li kopírovat dodavatele, zvolte **Nový** na stránce se seznamem **Všichni dodavatelé**  a otevřete stránku **Všichni dodavatelé, nový záznam**. Povšimněte si, že ID nového dodavatele není přiřazeno ihned. Chování se liší od chování v předchozích verzích aplikace Microsoft Dynamics 365 for Finance and Operations. Protože jste ještě nezvolili skupinu dodavatelů, systém nemůže určit správnou číselnou řadu, která se má použít. Navíc nemůže určit, zda se pokoušíte vytvořit nového dodavatele nebo kopírovat dodavatele. Proto není ID dodavatele přiřazeno do té doby, než zvolíte **Uložit** ve spodní části stránky.
 
 Pokud vytváříte nového dodavatele, můžete pokračovat vyplněním všech polí, jako obvykle. Po dokončení a zvolení možnosti **Uložit** uvidíte, že ID dodavatele bylo přiřazeno automaticky. V případě ručních číselných řad uvidíte, že bylo použito vaše ruční ID dodavatele.
 
