@@ -1,11 +1,20 @@
-- name: Vítá vás aplikace Dynamics 365 for Talent
+- name: Dynamics 365 for Talent
   href: index.md
   items:
     - name: Začínáme
       href: talent-get-started.md
       items:
         - name: Co je nového a co se změnilo
+          href: whats-new.md
           items:
+            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (31. října 2018)
+              href: whats-new-talent-october-31.md
+            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (19. října 2018)
+              href: whats-new-talent-october-19.md
+            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (15. října 2018)
+              href: whats-new-talent-october-11.md
+            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (8. října 2018)
+              href: whats-new-talent-october-8.md
             - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (1. října 2018)
               href: whats-new-talent-october-01.md
             - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (24. září 2018)
@@ -30,6 +39,8 @@
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Core HR a Common Data Service for Apps
           href: CoreHREntities.md
+        - name: Integrace
+          href: talent-financeandoperations-integration.md
         - name: Přístup k funkcím Preview
           href: access-preview-feature.md
         - name: Konfigurace integrace mezd mezi aplikacemi Talent a Dayforce
@@ -64,6 +75,34 @@
       items:
         - name: Funkce a možnosti aplikace Attract
           href: attract-overview.md
+        - name: Tvorba šablony procesu v aplikaci Attract
+          href: Process-templates-Attract.md
+        - name: 'Vytvoření, schválení a zaúčtování úloh v aplikaci Attract'
+          href: Creating-jobs-Attract.md
+        - name: Zdroje se skupinami talentů
+          href: attract-talent-pools.md
+        - name: Zdroje pomocí LinkedIn Recruiter
+          href: attract-linked-in-recruiter.md
+        - name: Aktivity procesu náboru v aplikaci Attract
+          href: activities-attract.md
+        - name: Rozšiřitelnost
+          href: extensibility-attract.md
+        - name: Kariérní web a zkušenosti kandidátů
+          href: career-site.md
+        - name: Nastavení správy nabídek
+          href: offer-setup.md
+        - name: 'Vytvoření, schválení a podpis nabídek'
+          href: creating-offers.md
+        - name: Vytváření a správa šablon e-mailu
+          href: email-templates.md
+        - name: Vytváření sestav a analýzy
+          href: Reporting-Analytics-Attract.md
+        - name: Správa rolí a zabezpečení v aplikaci Attract
+          href: security-attract.md
+        - name: Nastavení pro správu v aplikaci Attract
+          href: Admin-Settings-Attract.md
+        - name: Chytrá doporučení
+          href: Intelligent-Recommendations.md
         - name: 'Vytvoření zaškolení, které zaujme'
           href: create-onboarding-experience.md
     - name: Motivace zaměstnanců
