@@ -25,6 +25,7 @@ ms.lasthandoff: 09/24/2018
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Vyřazení dlouhodobého majetku s použitím volné faktury
 
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tento postup popisuje vyřazení dlouhodobého majetku pomocí volné faktury.
 
