@@ -50,11 +50,12 @@ Následující typy workflowu jsou k dispozici pro modul Zásobování a zdroje.
 | Workflow přihlášky přidání dodavatele  | Vytvořte kontrolu a workflow schvalování pro přidání nových dodavatelů prostřednictvím oslovení dodavatele. |
 
 ## <a name="creating-a-workflow"></a>Vytvoření workflowu
+
 Chcete-li vytvořit workflow, přejděte do nabídky Zásobování a zdroje &gt; Nastavení &gt; Workflowy zásobování a zdrojů a vytvořte nový workflow tak, že vyberete požadovaný typ workflowu k vytvoření.  
 
 Na plátně workflowu můžete přetahovat prvky workflowu do návrháře a spojovat prvky do toku Prvky workflowu je třeba konfigurovat. Co se týká prvků workflowu pro schválení a úlohy, můžete nastavit, který účastník má provést akci.
-Typy účastníků
-----------------------
+
+## <a name="types-of-participants"></a>Typy účastníků
 
 Můžete přiřadit krok schválení k následujícím skupinám účastníků.
 
@@ -68,13 +69,12 @@ Můžete přiřadit krok schválení k následujícím skupinám účastníků.
 
 
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
-[Definování workflowů pracovních postupů pro nákupní žádanky](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+- [Definování workflowů pracovních postupů pro nákupní žádanky](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Workflow nákupního požadavku](purchase-requisitions-workflow.md)
+- [Workflow nákupního požadavku](purchase-requisitions-workflow.md)
 
-[Nabírání dodavatelů](vendor-onboarding.md)
+- [Nabírání dodavatelů](vendor-onboarding.md)
 
 
