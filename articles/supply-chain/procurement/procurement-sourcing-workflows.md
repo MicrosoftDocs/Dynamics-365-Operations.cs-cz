@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 06ab745d9df9b095b861cf7bc79aba6d1361eeb0
+ms.sourcegitcommit: cc995b474e86272b49629f97e1b4d4b4fb597b9d
+ms.openlocfilehash: d25ca64fb6a3fa7d7898ec68568703f3de7b1595
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 11/13/2018
 
 ---
 
@@ -50,11 +50,12 @@ ms.lasthandoff: 08/07/2018
 | <span data-ttu-id="15ebc-128">Workflow přihlášky přidání dodavatele</span><span class="sxs-lookup"><span data-stu-id="15ebc-128">Vendor add application workflow</span></span>  | <span data-ttu-id="15ebc-129">Vytvořte kontrolu a workflow schvalování pro přidání nových dodavatelů prostřednictvím oslovení dodavatele.</span><span class="sxs-lookup"><span data-stu-id="15ebc-129">Create review and approval workflows for adding new vendors via vendor requests.</span></span> |
 
 ## <a name="creating-a-workflow"></a><span data-ttu-id="15ebc-130">Vytvoření workflowu</span><span class="sxs-lookup"><span data-stu-id="15ebc-130">Creating a workflow</span></span>
+
 <span data-ttu-id="15ebc-131">Chcete-li vytvořit workflow, přejděte do nabídky Zásobování a zdroje &gt; Nastavení &gt; Workflowy zásobování a zdrojů a vytvořte nový workflow tak, že vyberete požadovaný typ workflowu k vytvoření.</span><span class="sxs-lookup"><span data-stu-id="15ebc-131">To create a workflow, go to Procurement and sourcing &gt; Setup &gt; Procurement and sourcing workflows and create a new workflow by selecting the type of workflow you want to create.</span></span>  
 
 <span data-ttu-id="15ebc-132">Na plátně workflowu můžete přetahovat prvky workflowu do návrháře a spojovat prvky do toku</span><span class="sxs-lookup"><span data-stu-id="15ebc-132">In the workflow canvas you can drag workflow elements into the designer and link the elements into a flow.</span></span> <span data-ttu-id="15ebc-133">Prvky workflowu je třeba konfigurovat.</span><span class="sxs-lookup"><span data-stu-id="15ebc-133">The workflow elements should be configured.</span></span> <span data-ttu-id="15ebc-134">Co se týká prvků workflowu pro schválení a úlohy, můžete nastavit, který účastník má provést akci.</span><span class="sxs-lookup"><span data-stu-id="15ebc-134">For approval and task workflow elements you can configure which participant should take action.</span></span>
-<span data-ttu-id="15ebc-135">Typy účastníků</span><span class="sxs-lookup"><span data-stu-id="15ebc-135">Types of participants</span></span>
-----------------------
+
+## <a name="types-of-participants"></a><span data-ttu-id="15ebc-135">Typy účastníků</span><span class="sxs-lookup"><span data-stu-id="15ebc-135">Types of participants</span></span>
 
 <span data-ttu-id="15ebc-136">Můžete přiřadit krok schválení k následujícím skupinám účastníků.</span><span class="sxs-lookup"><span data-stu-id="15ebc-136">You can assign an approval step to the following groups of participants.</span></span>
 
@@ -68,13 +69,12 @@ ms.lasthandoff: 08/07/2018
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="15ebc-149">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="15ebc-149">Additional resources</span></span>
---------
+## <a name="additional-resources"></a><span data-ttu-id="15ebc-149">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="15ebc-149">Additional resources</span></span>
 
-[<span data-ttu-id="15ebc-150">Definování workflowů pracovních postupů pro nákupní žádanky</span><span class="sxs-lookup"><span data-stu-id="15ebc-150">Defining business process workflows for purchase requisitions</span></span>](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+- [<span data-ttu-id="15ebc-150">Definování workflowů pracovních postupů pro nákupní žádanky</span><span class="sxs-lookup"><span data-stu-id="15ebc-150">Defining business process workflows for purchase requisitions</span></span>](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[<span data-ttu-id="15ebc-151">Workflow nákupního požadavku</span><span class="sxs-lookup"><span data-stu-id="15ebc-151">Purchase requisition workflow</span></span>](purchase-requisitions-workflow.md)
+- [<span data-ttu-id="15ebc-151">Workflow nákupního požadavku</span><span class="sxs-lookup"><span data-stu-id="15ebc-151">Purchase requisition workflow</span></span>](purchase-requisitions-workflow.md)
 
-[<span data-ttu-id="15ebc-152">Nabírání dodavatelů</span><span class="sxs-lookup"><span data-stu-id="15ebc-152">Onboarding vendors</span></span>](vendor-onboarding.md)
+- [<span data-ttu-id="15ebc-152">Nabírání dodavatelů</span><span class="sxs-lookup"><span data-stu-id="15ebc-152">Onboarding vendors</span></span>](vendor-onboarding.md)
 
 
