@@ -16,26 +16,26 @@ ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
-ms.openlocfilehash: e091aab70a98e0f4b96c41c1ee48926947539105
+ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
+ms.openlocfilehash: 19e0528b95952de8e5503c361efcfeca4c529caf
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/31/2018
+ms.lasthandoff: 10/12/2018
 
 ---
 
-# <a name="manage-international-bank-account-number-iban-account-validation"></a>Správa ověření mezinárodního čísla bankovního účtu (IBAN)
+# <a name="manage-international-bank-account-number-iban-validation"></a>Správa ověření mezinárodního čísla bankovního účtu (IBAN)
 
 [!include [banner](../includes/banner.md)]
 
 Ověření mezinárodního čísla bankovního účtu (IBAN) zvyšuje množství ověření, které se provádí při přidání čísla IBAN k bankovnímu účtu.
 
-Struktura čísla IBAN je uložena v aplikaci Microsoft Dynamics 365 for Finance and Operation a je automaticky načtena, když poprvé použijete IBAN na bankovní účty. Číslo bankovního účtu je součástí struktury definované pro číslo IBAN. Na základě této struktury se zobrazí upozornění, pokud pozice a délka čísla účtu v IBAN neodpovídají pozici, která je definována ve struktuře pro každou zemi nebo oblast.
+Informace o struktuře kódu IBAN je uložena v aplikaci Microsoft Dynamics 365 for Finance and Operations. Tyto informace se načtou automaticky, když použijete kód IBAN na bankovní účty poprvé. Obsahuje délku kódu IBAN počáteční pozice čísla bankovního účtu a směrového čísla, a délku čísla bankovního účtu a směrového čísla.
 
 ## <a name="set-up-iban-structures"></a>Nastavení struktur čísla IBAN
 
 1. Přejděte do **Pokladna a banka \> Nastavení \> IBAN struktury**.
 2. Všimněte si, že IBAN struktury pro každou zemi nebo oblast byly vytvořeny automaticky.
-3. Pokud potřebujete přizpůsobit struktury pro konkrétní zemi nebo region, můžete je upravit.
+3. Pokud chcete přizpůsobit struktury pro konkrétní zemi nebo region, můžete je upravit.
 4. Definice struktury budou částí každé nové verze. Lze použít nabídku **Resetovat struktury** pro načtení nejnovějších definic po každé aktualizaci.
 
 ## <a name="validate-the-iban-structure-in-a-bank-account"></a>Ověření IBAN struktury v bankovním účtu
@@ -44,7 +44,9 @@ Struktura čísla IBAN je uložena v aplikaci Microsoft Dynamics 365 for Finance
 2. Vytvořte bankovní účet.
 3. Na pevné kartě **Doplňkové informace** zadejte IBAN.
 
-    Pokud pozice a délka čísla účtu v IBAN neodpovídají pozici, která je definována ve struktuře pro každou zemi nebo oblast, zobrazí se upozornění. Nelze pokračovat, pokud délka čísla IBAN neodpovídá délce ve struktuře IBAN.
+    Pokud délka kódu IBAN neodpovídá délce, která je definována pro každou zemi nebo oblast, dostanete zprávu s upozorněním. Nelze pokračovat, pokud délka čísla IBAN neodpovídá délce určené ve struktuře IBAN.
 
-    Ověření také kontroluje, že číslo bankovního účtu odpovídá části IBAN, která představuje číslo bankovního účtu. Pokud číslo bankovního účtu neodpovídá, zobrazí se upozornění. Tato zpráva je pouze upozornění. Můžete pokračovat i v případě, že číslo bankovního účtu neodpovídá.
+    Ověření také kontroluje, že číslo bankovního účtu odpovídá části IBAN, která představuje číslo bankovního účtu. Pokud číslo bankovního účtu neodpovídá, dostanete zprávu s upozorněním. Tato zpráva je pouze upozornění. Můžete pokračovat i v případě, že číslo bankovního účtu neodpovídá.
+
+    Ověření také kontroluje, že číslo směrový kód banky odpovídá části IBAN, která představuje směrový kód banky. Směrový kód obsahuje číslo banky a často další pobočku banky. Pokud směrový kód neodpovídá, dostanete zprávu s upozorněním. Tato zpráva je pouze upozornění. Můžete pokračovat i v případě, že směrový kód neodpovídá.
 

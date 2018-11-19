@@ -3,7 +3,7 @@ title: "Novinky a změny"
 description: "Tato stránka obsahuje odkazy na témata, které můžete pomoci k získání informací o nových funkcích v nejnovější verzi aplikace Microsoft Dynamics 365 for Finance and Operations."
 author: josaw1
 manager: AnnBe
-ms.date: 08/27/2018
+ms.date: 11/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: ad0083018d2734cb1e36cbf5f94105376c57cdf9
-ms.openlocfilehash: 201068db3b1bd27438b16ff3f1f51f8a1eb972c5
+ms.sourcegitcommit: 9b72fe490601d474c54c8bee556719608f4379d3
+ms.openlocfilehash: cd5403a5ab5a4be06b5565528ced30fa0be3cee0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/02/2018
+ms.lasthandoff: 11/03/2018
 
 ---
 
@@ -61,6 +61,18 @@ V této tabulce jsou uvedeny hlavní verze aplikace. Více informací o měsíč
 <tbody>
 <tr class="even">
 </tr>
+<tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>8.1.2</td>
+<td>8.1.195  </td>
+<td>Listopad 2018</td>
+  <td><a href="whats-new-changed-8-1-2.md">Co je nového nebo co se změnilo v aplikaci Dynamics 365 for Finance and Operations, Verze 8.1.2 (listopad 2018)</a></td>
+<tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>8.1.1</td>
+<td>8.1.170  </td>
+<td>2018. říjen</td>
+  <td><a href="whats-new-changed-8-1-1.md">Co je nového nebo co se změnilo v aplikaci Dynamics 365 for Finance and Operations, Verze 8.1.1 (říjen 2018)</a></td>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8.1</td>
@@ -134,10 +146,22 @@ V této tabulce jsou uvedeny hlavní verze aplikace. Více informací o měsíč
 <tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Aktualizace platformy 22</td>
+<td>7.0.5095</td>
+<td>2018. říjen</td>
+<td><a href="whats-new-platform-update-22.md">Co je nového nebo co se změnilo v aktualizaci Dynamics 365 for Finance and Operations, Platform Update 22 (listopad 2018)</a></td><tbody><tr class="odd">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Aktualizace platformy 21</td>
+<td>7.0.5073</td>
+<td>2018. říjen</td>
+<td><a href="whats-new-platform-update-21.md">Co je nového nebo co se změnilo v aktualizaci Dynamics 365 for Finance and Operations, Platform Update 21 (říjen 2018)</a></td><tbody>
+<tr class="odd">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Aktualizace platformy 20</td>
 <td>7.0.5030</td>
 <td>Září 2018</td>
-<td><a href="whats-new-platform-update-20.md">Co je nového nebo co se změnilo v aktualizaci Dynamics 365 for Finance and Operations, Platform Update 20 (září 2018)</a></td><tbody>
+<td><a href="whats-new-platform-update-20.md">Co je nového nebo co se změnilo v aktualizaci Dynamics 365 for Finance and Operations, Platform Update 20 (září 2018)</a></td>
+<tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Aktualizace platformy 15</td>

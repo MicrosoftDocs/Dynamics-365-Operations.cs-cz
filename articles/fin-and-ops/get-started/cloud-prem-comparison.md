@@ -3,7 +3,7 @@ title: "Srovnání funkcí cloudu a on-premises"
 description: "Toto téma popisuje funkce, které jsou podporovány v cloudu a instalaci on-premises."
 author: robinarh
 manager: AnnBe
-ms.date: 03/05/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: b59921820f02e2ac026873ce45fdecd104fef544
-ms.openlocfilehash: 4354b9d55cc84f7c74020d95617c406dc5fb225c
+ms.sourcegitcommit: 53c0da5e9697deaf946ccd4fbcd2102faa62b195
+ms.openlocfilehash: bc2b8aafa28d3998e223891fa95e3fe8175349e6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/25/2018
+ms.lasthandoff: 11/02/2018
 
 ---
 
@@ -112,15 +112,12 @@ Následující tabulka uvádí oblasti produktu. Podpora cloudu a instalace on-p
 | Trace Parser a PerfTimer | | Ano | Žádný |
 | Upgradovat | | Ano | Ano |
 | | Upgradovat | Ano | Žádný |
-| | Upgrade a podpora předchozích verzí | Ano | Ne |
+| | Upgrade a podpora předchozích verzí | Ano | Žádný |
 | Vývoj sady Visual Studio |  | Ano | Ano |
 
 
-## <a name="dynamics-365-for-retail"></a>Dynamics 365 for Retail 
-
-| Plošný | Funkce | Cloudový | Místní|
-|---|---|---|---|
-| Všechny oblasti Retail | Všechny funkce Retail | Ano | Ne |
+### <a name="retail"></a>Retail 
+Pokud chcete zobrazit seznam maloobchodních možností, které jsou k dispozici v místním nasazení, přečtěte si téma [Možnosti, které jsou k dispozici v místním nasazení maloobchodu](../../retail/retail-onprem.md).
 
 ## <a name="dynamics-365-for-talent"></a>Dynamics 365 for Talent
 

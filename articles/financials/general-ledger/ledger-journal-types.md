@@ -1,9 +1,9 @@
 ---
-title: "Typy deníků hl. knihy"
-description: "Tento článek popisuje typy deníků, které lze nastavit pro finanční deníky. Na stránce **Názvy deníků** lze nastavit deníky, které můžete používat v aplikaci Microsoft Dynamics 365 for Finance and Operations."
+title: "Typy deníku hlavní knihy"
+description: "Toto téma popisuje typy deníků, které lze nastavit pro finanční deníky."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9f8fc40f199b83a9e0cb36ce905163c3ed547057
+ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
+ms.openlocfilehash: fff557d20a230922b5512aea9e49aa9993a694dd
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/26/2018
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje typy deníků, které lze nastavit pro finanční deníky. Na stránce **Názvy deníků** lze nastavit deníky, které můžete používat v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+Toto téma popisuje typy deníků, které lze nastavit pro finanční deníky. Na stránce **Názvy deníků** lze nastavit deníky, které můžete používat v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 
 | Typ deníku                      | Účel                       | Zadejte transakce na této stránce                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|
@@ -53,7 +53,8 @@ Tento článek popisuje typy deníků, které lze nastavit pro finanční deník
 | Vyplacení mezd              | Vydejte platby podle mzdových výkazů. V tomto deníku nelze ručně zadat transakce. Je nutné generovat mzdové výkazy a poté je odeslat k platbě.                                                                                                                                                              |                                                                |
 | Periodické                          | Vytvořte periodické transakce pro pravidelný deník.                                                                                                                                                                                                                                                                                                      | Periodické deníky                                              |
 | Zaúčtovat dlouhodobý majetek                 | Zaúčtujte transakce dlouhodobého majetku.                                                                                                                                                                                                                                                                                                                              | Dlouhodobý majetek                                                   |
-| Projekt – výdaje                | Vytvořte výdajové transakce projektu.                                                                                                                                                                                                                                                                                                                        | Výdaje                                                        |
+| Projekt – výdaje                | Vytvořte výdajové transakce projektu.                                                                                                                                                                                                                                                                                                                        | Expense                                                        |
+| Úprava měny vykazování     | Vytvořte úpravy v měně vykazování pro zůstatky účtů hlavní knihy.               | Deníky úprav měny vykazování                         |
 | Statistické transakce            | Vytvořte statistické transakce.                                                                                                                                                                                                                                                                                                                            |                                                                |
 | Bankovní převod dodavatele            | Vytvořte soubor úhrady vlastní směnky, který lze odeslat bance vaší společnosti.                                                                                                                                                                                                                                                                      | Deník úhrad                                             |
 | Úhrady dodavateli               | Vytvořte transakce úhrad dodavateli.                                                                                                                                                                                                                                                                                                                    | Deník plateb                                                |

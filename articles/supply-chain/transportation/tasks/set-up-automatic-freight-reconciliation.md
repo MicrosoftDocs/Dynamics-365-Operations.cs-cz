@@ -3,7 +3,7 @@ title: "Nastavení automatického odsouhlasení dopravného"
 description: "Tato procedura ukazuje, jak nastavit data pro automatické odsouhlasení dopravného."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 10/16/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 97f0c4d8fe06ab2fc252b9543cb688306214c79f
+ms.sourcegitcommit: d990efd7c929b15d57d64e850bc3308349abb978
+ms.openlocfilehash: b7772ad779495b36941a3dc86cc456d80a964467
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/17/2018
 
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Nastavení automatického odsouhlasení dopravného
@@ -36,7 +36,7 @@ Tato procedura ukazuje, jak nastavit data pro automatické odsouhlasení dopravn
     * Typ kusovníku dopravného definuje, jak by měly být spárovány účty za dopravné a faktury dopravce.  
 2. Klikněte na položku Nová.
 3. Zadejte hodnotu do pole Typ účtu dopravného.
-4. Do pole sestavení modulu zadejte "Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer".
+4. Do pole Sestavení modulu zadejte Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer.
     * Toto je standardní knihovna kódu modulu odpovídající řízení přepravy.  
 5. Do pole Třída modulu zadejte "Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer".
     * Toto je standardní třída modulu odpovídající řízení přepravy.  

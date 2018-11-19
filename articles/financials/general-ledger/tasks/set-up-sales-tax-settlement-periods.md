@@ -3,7 +3,7 @@ title: "Nastavit období vyrovnání DPH"
 description: "Období vyrovnání DPH obsahuje informace o intervalech období, pro které se musí DPH vykazovat a platit."
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 10/15/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: ab7d3a00a327f42a9f70c954d9b64a360a7f9163
+ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
+ms.openlocfilehash: 1087ed78e91b487ca7157bfdac1d72ae3f477875
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Nastavit období vyrovnání DPH
@@ -50,13 +50,15 @@ Tento úkol používá ukázkovou společnost USMF.
 12. Zadejte počet jednotek intervalu období pro každé období. Například čtvrtletí má 3 měsíce.
 13. Zaškrtněte nebo zrušte zaškrtnutí políčka Použít dávkové zpracování pro vyrovnání DPH.
     * Proces vyrovnání pro období vyrovnání lze zpracovat jako dávkovou úlohu na pozadí. Tato možnost je vhodná velký počet daňových transakcí v rámci intervalu období.  
-14. Rozbalte kartu Intervaly období.
-15. Klepněte na možnost Přidat.
-16. Označte v seznamu vybraný řádek.
-17. Zadejte datum do pole Od data.
-18. Do pole Do data zadejte datum.
-19. Klikněte na Nový interval období.
+14. Zaškrtněte nebo odškrtněte políčko Zabránit generování daňové transakce protiúčtu.
+    * Ve výchozím nastavení systém generuje daňové transakce protiúčtu během procesu vyrovnání, což může způsobit problémy s výkonností, pokud je v určitém časovém intervalu velký počet daňových transakcí. Zaškrtněte toto políčko, abyste zabránili generování daňové transakce protiúčtu.
+15. Rozbalte kartu Intervaly období.
+16. Klepněte na možnost Přidat.
+17. Označte v seznamu vybraný řádek.
+18. Zadejte datum do pole Od data.
+19. Do pole Do data zadejte datum.
+20. Klikněte na Nový interval období.
     * Po zadání prvního intervalu období lze vytvořit automaticky nová období. Můžete se vrátit a přidat nové intervaly období podle potřeby.  
-20. Zavřete stránku.
+21. Zavřete stránku.
 
 

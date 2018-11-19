@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: eb99f169ada2a227ebe8e64ee56bbb38cdfda4e0
+ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
+ms.openlocfilehash: cd738cafc97477182e574ee0f363fdcf1df7da7a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/22/2018
 
 ---
 
@@ -48,7 +48,8 @@ Nastavení **funkce náhledu** můžete použít v centru pro správu aplikace M
 1. Přihlaste se do aplikace Microsoft Dynamics 365 for Talent: Attract.
 2. V nabídce **Nastavení** (symbol ozubeného kola) v pravém horním rohu vyberte **nastavení pro správu**.
 3. Na kartě **správa funkcí** vyberte možnost vedle položky **náhled funkce**, aby se zbarvila modře.
-4. Aktualizujte prohlížeč tak, abyste viděli nové funkce. (Všichni uživatelé, kteří jsou již přihlášeni, uvidí funkce při příštím přihlášení, nebo mohou aktualizovat svůj prohlížeč, aby funkce viděli okamžitě.)
+4. Volitelně můžete ovládat konkrétní povolením/zakázáním konkrétních funkcí na této stránce.
+5. Aktualizujte prohlížeč tak, abyste viděli nové funkce. (Všichni uživatelé, kteří jsou již přihlášeni, uvidí funkce při příštím přihlášení, nebo mohou aktualizovat svůj prohlížeč, aby funkce viděli okamžitě.)
 
 #### <a name="core-hr"></a>Základní lidské zdroje
 
@@ -61,12 +62,11 @@ Nastavení **funkce náhledu** můžete použít v centru pro správu aplikace M
 
 ## <a name="features-that-are-currently-in-preview"></a>Funkce, které jsou aktuálně v náhledu
 
-### <a name="attract"></a>Attract
+### <a name="attract"></a>Upoutat
 
-- **Šablony práce** – nyní můžete vytvořit šablony procesu náboru. Uživatelé mohou přizpůsobit proces náboru na konkrétní pozici. Mohou však nyní vytvářet šablony procesu a poté vybrat vhodnou šablonu, když je konkrétní pozice vytvořena. Proto tato funkce pomáhá zjednodušit proces nastavení úlohy.
-- **Kariérní web** – Aktuální verze kariérního webu jenom uvádí všechna volná pracovní místa. Na tento web bude v budoucnu přidáno více možností. Pracovní místa lze označit jako interní nebo externí. Interní uživatelé, kteří se přihlásí k webu, uvidí interní i externí pracovní místa. Neinterní uživatelé a uživatelé, kteří nejsou registrovaní, však uvidí pouze externí pracovní místa.
-- **Zveřejnění pracovního místa** – nyní můžete zveřejnit pracovní místa na kariérním webu.
-- **Zveřejnění pracovního místa ve službě LinkedIn** – nyní můžete zveřejnit pracovní místa ve službě LinkedIn.
+- **Relevantní uchazeči o pozici** – náboráři a manažeři náboru se mohou snadno podívat, kteří uchazeči ze všech mohou být nejvhodnější pro danou pozici. Je uvedeno nejlepších 5 uchazečů na základě relevantnosti jejich životopisu/profilu vůči popisu práce.
+- **Relevantní pracovní pozice** – uchazeči nyní uvidí seznam dalších pracovních pozic, které jsou pro ně relevantní, na základě jejich životopisu/ profilu a popisů práce.  Aktuálně se zobrazuje uchazečům, jakmile zažádají o návrh dalších pracovních příležitostí.
+- **Podpora EEO/OFCCP** – nové typy aktivit umožňují použití předdefinovaného formuláře pro shromažďování údajů o rovných zaměstnaneckých příležitostech (EEO) a kanceláře programu kompatibility pro federální smlouvy (OFCCP) od uchazeče.  Tento formulář je předdefinovaný a nelze ho upravovat.
 
     > [!NOTE]
     > Zveřejněná pracovní místa se zobrazí pouze zákazníkům, kteří mají předplacený jeden nebo více produktů seznamu volných míst ve službě LinkedIn. Jinak zákazníci pracovní místo uvidí pouze v případě, že je explicitně hledají. Při zveřejnění pracovního místa na webu LinkedIn nastalo zpoždění. Po zveřejnění z aplikace Abstract může trvat několik hodin, než se pracovní místo objeví.

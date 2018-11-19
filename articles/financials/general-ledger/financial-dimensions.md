@@ -3,7 +3,7 @@ title: "Finanční dimenze"
 description: "Toto téma popisuje různé typy finančních dimenzí a způsob jejich nastavení."
 author: aprilolson
 manager: AnnBe
-ms.date: 08/24/2018
+ms.date: 10/26/2018
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
-ms.openlocfilehash: 9973d03de031ad2fa5647bb167c12b9231633a22
+ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
+ms.openlocfilehash: bda8b14b1752ca67fc4eeec6d6345dcf3968179d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 11/05/2018
 
 ---
 
@@ -51,9 +51,9 @@ Zde jsou uvedena některá omezení:
 
 ## <a name="custom-dimensions"></a>Vlastní dimenze
 
-Pokud chcete vytvořit hodnoty definované uživatelem, vyberte v poli **Použít hodnoty od** možnost **&lt;&nbsp;Vlastní dimenze&nbsp;&gt;**.
+Pokud chcete vytvořit hodnoty definované uživatelem, vyberte v poli **Použít hodnoty z** možnost **Vlastní dimenze**.
 
-Můžete také učit účetní masku pro omezení množství a typů informací, které lze zadat pro hodnoty dimenze. Můžete zadat znaky, které zůstanou u všech hodnot dimenze stejné, například písmena nebo spojovníky (-). Můžete také zadat znaky čísel (\#) a znak ampersand (&) jako zástupné symboly pro znaky, která se změní pokaždé, když je hodnota dimenze vytvořena. Použijte znak čísla (\#) jako zástupný symbol pro číslo a ampersand (&) jako zástupný symbol pro písmeno. Pole masky formátu je k dispozici pouze tehdy, pokud vyberete možnost **&lt;&nbsp;Vlastní dimenze&nbsp;&gt;** v poli **Použít hodnoty od**.
+Můžete také učit účetní masku pro omezení množství a typů informací, které lze zadat pro hodnoty dimenze. Můžete zadat znaky, které zůstanou u všech hodnot dimenze stejné, například písmena nebo spojovníky (-). Můžete také zadat znaky čísel (\#) a znak ampersand (&) jako zástupné symboly pro znaky, která se změní pokaždé, když je hodnota dimenze vytvořena. Použijte znak čísla (\#) jako zástupný symbol pro číslo a ampersand (&) jako zástupný symbol pro písmeno. Pole masky formátu je k dispozici pouze tehdy, pokud vyberete možnost **Vlastní dimenze** v poli **Použít hodnoty od**.
 
 **Příklad**
 
@@ -108,14 +108,30 @@ Můžete nastavit odvozené hodnoty na stránce dimenzí.
 
 Zadejte kombinace dimenzí, které by měly být odvozeny od dimenze v prvním sloupci. Například chcete-li použít nákladové středisko jako dimenzi, ze které je odvozené oddělení a místo, zadejte nákladové středisko 10, oddělení 20 a skladové místo 30. Poté když zadáte v hlavním záznamu nebo na stránce transakce nákladové středisko 10, oddělení 20 a místo 30 se zadají automaticky.
 
-Proces odvozené dimenze nepřepíše existující hodnoty pro odvozené dimenze. Například pokud zadáte nákladové středisko 10 a žádnou další dimenzi, jsou ve výchozím nastavení zadány oddělení 20 a místo 30. Změníte-li však nákladové středisko, již zřízené hodnoty se nezmění. Proto je možné vytvořit výchozí dimenze na hlavních záznamech a tyto dimenze se nezmění odvozenými dimenzemi.
+### <a name="overriding-existing-values-with-derived-dimensions"></a>Přepsání stávajících hodnot odvozenými dimenzemi
+ 
+Ve výchozím nastavení proces odvozené dimenze nepřepíše existující hodnoty pro odvozené dimenze. Například pokud zadáte nákladové středisko 10 a žádnou další dimenzi, jsou ve výchozím nastavení zadány oddělení 20 a místo 30. Změníte-li však nákladové středisko, již zřízené hodnoty se nezmění. Proto je možné vytvořit výchozí dimenze na hlavních záznamech a tyto dimenze se nezmění odvozenými dimenzemi.
+
+Můžete změnit chování odvozených dimenzí pro přepsání stávajících hodnot výběrem zaškrtávacího políčka **Nahradit stávající hodnoty dimenze odvozený hodnotami** na stránce **Odvozené dimenze**. Je-li toto políčko zaškrtnuto, můžete zadat dimenzi s hodnotami odvozené dimenze a tyto hodnoty odvozené dimenze přepíšou hodnoty, které již existují. V předchozím příkladu, pokud zadáte nákladové středisko 10 a žádnou další dimenzi, jsou ve výchozím nastavení zadány oddělení 20 a místo 30. Pokud však hodnoty byly již oddělení 50 a místo 60, nyní se změní hodnoty na oddělení 20 a místo 30.
+ 
+Odvozené dimenze s tímto nastavením automaticky nenahradí existující výchozí hodnoty dimenze, když jsou hodnoty dimenzí ve výchozím nastavení. Hodnoty dimenze budou přepsány pouze tehdy, pokud zadáte novou hodnotu dimenze na stránce a pokud existují odvozené hodnoty pro tuto dimenzi na této stránce.
+
+### <a name="preventing-changes-with-derived-dimensions"></a>Zabránění změnám s odvozenými dimenzemi
+ 
+Pokud používáte **Přidat segment "** na stránce **Odvozené dimenze** pro přidání segmentu jako odvozené dimenze, máte k dispozici možnost v dolní části stránky **Přidat segment**, která umožňuje zabránit změnám dimenze, když je na stránce odvozena. Ve výchozím nastavení je vypnutá, aby nebránila změnám hodnot odvozené dimenze. Změňte nastavení na **Ano**, pokud chcete zabránit změně dimenze poté, co byla odvozena. Například pokud je hodnota dimenze Oddělení odvozena z hodnoty dimenze nákladového střediska, nelze hodnotu oddělení změnit, pokud je možnost **Zabránit změnám** nastavena na **Ano**. 
+ 
+Nastavení nebrání změnám, pokud je hodnota dimenze platná, ale není uvedena v seznamu odvozených dimenzí. Například pokud je oddělení 20 odvozeno z nákladového střediska 10 a vy zadáte nákladové středisko 10, nebude pak možné upravit oddělení 20. Avšak pokud zadáte nákladové středisko 20 a to se nenachází v seznamu odvozených dimenzí pro nákladové středisko, můžete pak upravit hodnotu oddělení. 
+ 
+Ve všech případech hodnota účtu a hodnoty všech dimenzí budou stále ověřovány proti účetním strukturám po použití hodnot odvozených dimenzí. Pokud používáte odvozené dimenze a jejich ověření při použití na stránce se nezdaří, musíte změnit hodnoty odvozené dimenze na stránce odvozených dimenzí, než je bude možné použít v transakcích. 
+ 
+Pokud změníte dimenze na pevné záložce **Finanční dimenze**, dimenzi, která je označena k zabránění změnám, nebude možné upravovat. Pokud zadáváte účet a dimenze do ovládacího prvku segmentovaného zadávání na stránce, lze dimenze upravit. Avšak při přesunutí zvýraznění z ovládacího prvku segmentovaného zadávání a přesunutí do jiného pole nebo provedení akce budou účet a dimenze ověřeny proti seznamu odvozených dimenzí a účetních struktur, aby bylo zajištěno, že jste zadali příslušné hodnoty. 
 
 ### <a name="derived-dimensions-and-entities"></a>Odvozené dimenze a entity
 
 Segmenty odvozených dimenzí a hodnoty můžete nastavit pomocí entit.
 
 - Entita odvozených dimenzí nastavuje řídicí dimenze a segmenty, které se používají pro tyto dimenze.
-- Entita DerivedDimensionValue umožňuje importovat hodnoty, které by měly být odvozeny pro každou řídicí dimenzi.
+- Entita hodnoty odvozených dimenzí umožňuje importovat hodnoty, které by měly být odvozeny pro každou řídicí dimenzi.
 
 Při použití entitu pro import dat, pokud entita importuje dimenze, se použijí pravidla odvozené dimenze během importu, pokud entita konkrétně nepřepíše tyto dimenze.
 
