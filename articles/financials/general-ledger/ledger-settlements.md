@@ -27,7 +27,6 @@ ms.lasthandoff: 10/12/2018
 # <a name="ledger-settlements"></a>Vyrovnání hlavní knihy
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Vyrovnání hlavní knihy vám umožňují spárovat transakce Má dáti a Dal v hlavní knize, a označit je jako vyrovnané. Tímto způsobem můžete zajistit, že související transakce budou vyrovnány. Pokud byla provedena omylem, můžete také vyrovnání stornovat.
 
