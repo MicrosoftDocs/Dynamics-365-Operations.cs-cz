@@ -3,7 +3,7 @@ title: Jeden doklad
 description: "Jedno číslo dokladu pro finanční deníky (deník hlavní knihy, deník dlouhodobého majetku, deník platby dodavatele a tak dále) slouží k zadání více transakcí hlavní knihy v rámci jednoho dokladu."
 author: kweekley
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 11/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9f996131830f9bd4efd534143b3fb761c5ccc756
+ms.sourcegitcommit: 26ae31efe55eeaf6d09ef14112811ea8977bfb0a
+ms.openlocfilehash: 62c30ea748c49b0a3cfe544c7ba10eb52389c50a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 11/05/2018
 
 ---
 
@@ -30,154 +30,154 @@ ms.lasthandoff: 04/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-> [!NOTE]
->  Tato funkce bude k dispozici v aplikaci Dynamics 365 for Finance and Operations verze 8.0, která bude k dispozici ve vydání Spring '18.   
 
-<a name="what-is-one-voucher"></a>Co je Jeden doklad?
-======================
+## <a name="what-is-one-voucher"></a>Co je Jeden doklad?
 
-Existující funkce pro finanční deníky (deník hlavní knihy, deník dlouhodobého majetku, deník platby dodavatele a tak dále) slouží k zadání více transakcí hlavní knihy v rámci jednoho dokladu. Tuto funkci označujeme jako Jeden doklad. Můžete vytvořit Jeden doklad pomocí jedné z následujících metod:
+Existující funkce pro finanční deníky (deník hlavní knihy, deník dlouhodobého majetku, deník platby dodavatele a tak dále) slouží k zadání více transakcí dílčí hlavní knihy (odběratel, dodavatel, dlouhodobý majetek, projekt a banka) v kontextu jednoho dokladu. Microsoft nazývá tuto funkci jako *Jeden doklad*. Můžete vytvořit jediný doklad pomocí jedné z následujících metod:
 
--   Nastavte název deníku (**Hlavní kniha** \> **Nastavení deníku** \>**Názvy deníků**) tak, aby pole **Nový doklad** bylo nastaveno na **Pouze jedno číslo dokladu**. * Všechny řádky, které přidáte do deníku, jsou nyní zahrnuty na stejném dokladu. Vzhledem k tomu, že je každý řádek přidán do jednoho dokladu, doklad lze zadat pro více řádků dokladu, jako účet nebo protiúčet na stejném řádku nebo kombinaci.
+- Nastavte název deníku (**Hlavní kniha** \> **Nastavení deníku** \> **Názvy deníků**) tak, aby pole **Nový doklad** bylo nastaveno na **Pouze číslo jednoho dokladu**. Všechny řádky, které přidáte do deníku, jsou nyní zahrnuty ve stejném dokladu. Proto lze doklad zadat jako doklad s více řádky, jako účet nebo protiúčet na stejném řádku nebo jako kombinaci.
 
-[![Jeden řádek](./media/same-line.png)](./media/same-line.png)
- 
-> [!IMPORTANT] 
-> *  Nezapomeňte, že definice jednoho dokladu neobsahuje názvy deníků, které jsou nastaveny pouze jako **jedno číslo dokladu** a uživatel poté zadá doklad, který obsahuje pouze typy účtů hlavní knihy.  V tomto dokumentu 'Jeden doklad' znamená, že existuje jeden doklad, který obsahuje více než jednoho dodavatele, odběratele, banku, dlouhodobý majetek nebo projekt. 
+    [![Jeden řádek](./media/same-line.png)](./media/same-line.png)
 
--   Zadejte víceřádkový doklad, když neexistuje protiúčet.
+    > [!IMPORTANT]
+    > Definice jednoho dokladu **nepokrývá** případy, kde jsou názvy deníků nastaveny jako **Pouze číslo jednoho dokladu**, ale uživatel poté zadá doklad, který obsahuje pouze typy účtů hlavní knihy. V tomto tématu 'Jeden doklad' znamená, že existuje jediný doklad, který obsahuje více než jednoho dodavatele, odběratele, banku, dlouhodobý majetek nebo projekt.
 
-[![Víceřádkový doklad](./media/Multi-line.png)](./media/Multi-line.png)
+- Zadejte víceřádkový doklad, když neexistuje protiúčet.
 
--   Zadejte doklad, kde účet i protiúčet obsahují typ účtu dílčí knihy, jako například typ účtu, dodavatel/dodavatel, odběratel/odběratel, dodavatele/odběratel nebo banka/banka.
+    [![Víceřádkový doklad](./media/Multi-line.png)](./media/Multi-line.png)
 
-[![Doklad dílčí hlavní knihy](./media/subledger.png)](./media/subledger.png)
+- Zadejte doklad, kde účet i protiúčet obsahují typ účtu dílčí knihy, jako například **Dodavatel**/**Dodavatel**, **Odběratel**/**Odběratel**, **Dodavatel**/**Odběratel**, nebo **Banka**/**Banka**.
 
-<a name="issues-with-one-voucher"></a>Potíže s jedním číslem dokladu
-=======================
+    [![Doklad dílčí hlavní knihy](./media/subledger.png)](./media/subledger.png)
 
-Funkce Jeden doklad způsobuje problémy při vyrovnání, výpočtu daně, odsouhlasení dílčí hlavní knihy do hlavní knihy, finančním výkaznictví atd. (Další informace o problémech, které mohou nastat během vyrovnání, získáte v části [Jeden doklad s více záznamy odběratele nebo dodavatele](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records).) Správná práce a vykazování vyžaduje detaily transakce v těchto procesech a sestavách. Ačkoli některé scénáře mohou i nadále správně fungovat, na základě nastavení vaší organizace dochází k častým problémům při zadávání více transakcí v jednom dokladu.
+## <a name="issues-with-one-voucher"></a>Potíže s jedním číslem dokladu
+
+Funkce Jeden doklad způsobuje problémy při vyrovnání, výpočtu daně, stornu tranakce, odsouhlasení dílčí hlavní knihy do hlavní knihy, finančním výkaznictví atd. (Další informace o problémech, které mohou nastat během vyrovnání, získáte například v části [Jeden doklad s více záznamy odběratele nebo dodavatele](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records).) Správná práce a vykazování vyžaduje detaily transakce v těchto procesech a sestavách. Ačkoli některé scénáře mohou i nadále správně fungovat, v závislosti na nastavení vaší organizace dochází k častým problémům při zadávání více transakcí v jednom dokladu.
 
 Předpokládejme například, že zaúčtujete následující víceřádkový doklad:
 
 [![Příklad](./media/example.png)](./media/example.png)
 
-Poté vygenerujete sestavu **Výdaje podle dodavatele** v pracovním prostoru **Finanční přehledy**. Sestava seskupuje zůstatky výdajových účtů pod skupinou dodavatelů a dodavatelem. Při generování sestavy systém nedokáže určit, kterým skupinám dodavatelů/dodavatelům vznikly výdaje 250,00. Vzhledem k tomu, že nebyly nalezeny podrobnosti o transakcích, systém bude předpokládat, že celá hodnota 250,00 vznikla nalezením prvního dodavatele v dokladu. Částka 250,00, která je zahrnuta do zůstatku na hlavním účtu 600120, je pak uvedena pod touto skupinou dodavatelů/dodavatelem. Je velmi pravděpodobné, že první dodavatel v dokladu nebyl správný dodavatel, takže sestava je nesprávná.
+Poté vygenerujete sestavu **Výdaje podle dodavatele** v pracovním prostoru **Finanční přehledy**. V této sestavě jsou zůstatky výdajových účtů seskupeny podle skupiny dodavatelů a poté dodavatele. Když je sestava vygenerována, systém nedokáže určit, kterým skupinám dodavatelů/dodavatelům vznikly výdaje 250,00. Vzhledem k tomu, že nebyly nalezeny podrobnosti o transakcích, systém bude předpokládat, že celé výdaje 250,00 jdou na vrub prvnímu dodavateli nalezenému v dokladu. Proto je výdaj 250,00, který je zahrnut do zůstatku na hlavním účtu 600120, uveden pod touto skupinou dodavatelů/dodavatelem. Je však velmi pravděpodobné, že první dodavatel v dokladu není správný dodavatel. Sestava je tedy pravděpodobně nesprávná.
 
 [![Výdaj](./media/expenses.png)](./media/expenses.png)
 
-<a name="the-future-of-one-voucher"></a>Budoucnost funkce Jeden doklad
-=========================
+## <a name="the-future-of-one-voucher"></a>Budoucnost funkce Jeden doklad
 
-Z důvodu problémů, které byly uvedeny dříve, je funkce jednoho dokladu zastaralá. Protože však existují funkční mezery závislé na této funkci, funkce nezastarají najednou. Místo toho použijeme následující plán: 
+Z důvodu problémů, které byly zmíněny dříve, je funkce jednoho dokladu zastaralá. Protože však existují funkční mezery závislé na této funkci, funkce nezastarají všechny najednou. Místo toho se použije následující plán:
 
-- **Vydání z jara 2018** – Tato funkce bude ve výchozím nastavení vypnuta pomocí parametru hlavní knihy. Tuto funkci však můžete zapnout, pokud vaše organizace používá scénář, který spadá do mezer obchodního scénáře, které jsou uvedeny dále v tomto tématu.
+- **Verze Spring 2018** – Ve výchozím nastavení bude funkce vypnuta pomocí parametru **Povolit více transakcí v rámci jednoho dokladu** na kartě **Obecné** stránky **Parametry hlavní knihy**. Tuto funkci však můžete zapnout, pokud vaše organizace používá scénář, který spadá do jedné z funkčních mezer, které jsou uvedeny dále v tomto tématu.
 
-  -   Jestliže u odběratele figuruje obchodní scénáře, která nevyžaduje jeden doklad, nezapínejte funkci. Nebudeme opravovat chyby v oblastech, které byly identifikovány dále v tomto tématu, je-li tato funkce použita i v případě, že existuje jiné řešení.
+    - Pokud mají zákazníci obchodní scénář, který nevyžaduje jeden doklad, neměli by zapínat tuto funkci. Microsoft nebude opravovat chyby v oblastech, které jsou identifikovány dále v tomto tématu, je-li tato funkce použita i v případě, že existuje jiné řešení.
+    - Přestaňte používat Jeden doklad pro integrace do Microsoft Dynamics 365 for Finance and Operations, pokud není funkcionalita požadována pro jednu z funkčních mezer.
 
-  -   Přestaňte používat Jeden doklad pro integrace do Microsoft Dynamics 365 Finance and Operations, pokud není funkcionalita požadována pro jednu z funkčních mezer.
+- **Nejnovější verze** – Všechny funkční mezery budou doplněny. **Po zaplnění funkčních mezer a doručení nových funkcí bude trvat ještě minimálně rok, než bude funkce jednoho dokladu trvale vypnuta**, protože zákazníci a nezávislí dodavatelé softwaru (ISV) musí mít dostatek času reagovat na novou funkci. Musí například aktualizovat své obchodní procesy, entity a integrace.
 
-- **Verze z podzimu 2018 a novějších** – funkční mezery budou doplněny. Po vyplnění funkčních mezer bude funkce jednoho dokladu trvale vypnutá.
+> [!IMPORTANT]
+> Všimněte si, že možnost **pouze jedno číslo dokladu** **nebyla** odebrána z nastavení názvu deníku. Tato možnost je stále podporována, pokud doklad zahrnuje pouze typy účtů hlavní knihy. Odběratelé musí být opatrní, když toto nastavení používají, protože doklad se nezaúčtuje v případě, že používají **pouze jedno číslo dokladu**, ale poté zadají více než jednoho odběratele, dodavatele, banku, dlouhodobý majetek nebo projekt. Dále odběratelé také mohou zadat kombinaci typů účtů dílčí knihy, například platby v jednom dokladu, který obsahuje typy účtů **Dodavatel**/**Banka** .
 
-- > [!IMPORTANT]
-  > Všimněte si, že možnost **pouze jedno číslo dokladu** NEBYLA odebrána z nastavení názvu deníku.  Tato možnost je stále podporována, pokud doklad zahrnuje pouze typy účtů hlavní knihy.  Odběratelé musí být opatrní, když toto nastavení používají, protože doklad se nezaúčtuje v případě, že používají **pouze jedno číslo dokladu**, ale poté zadají více než jednoho odběratele, dodavatele, banku, dlouhodobý majetek nebo projekt.  Odběratelé také mohou zadat kombinaci typů účtů dílčí knihy, například platby v rámci jednoho dokladu, který obsahuje typy účtů dodavatele a banky.  
+## <a name="why-use-one-voucher"></a>Proč používat Jeden doklad?
 
-<a name="why-use-one-voucher"></a>Proč používat Jeden doklad?
-====================
+Na základě rozhovorů s odběrateli společnost Microsoft zkompilovala následující seznam scénářů, kde odběratelé používají funkci jednoho dokladu nebo důvodů, proč ho používali. Některé z těchto obchodních požadavků lze splnit pouze pomocí jednoho dokladu. Však mnoho scénářích však alternativy mohou plnit stejné obchodní požadavky.
 
-Na základě rozhovorů s odběrateli doporučujeme mít kompilován následující seznam scénářů, kde odběratelé používají funkci jednoho dokladu nebo důvodů, proč ho používali. Některé z těchto obchodních požadavků lze splnit pouze pomocí jednoho dokladu. Však mnoho scénářích však alternativy mohou plnit stejné obchodní požadavky.
+### <a name="scenarios-that-require-one-voucher"></a>Scénáře, které vyžadují jeden doklad
 
-<a name="scenarios-that-require-one-voucher"></a>Scénáře, které vyžadují jeden doklad
-----------------------------------
+Následujících scénářů lze dosáhnout pouze pomocí funkce jednoho dokladu. Pokud vaše organizace má některý z uvedených scénářů, je nutné povolit více transakcí, které mají být zadány do dokladu změnou nastavení parametru **Povolit více transakcí v rámci jednoho dokladu** na stránce **Parametry hlavní knihy**. Tyto funkční mezery budou vyplněny pomocí dalších funkcí v novějších verzích.
 
-Následujících scénářů lze dosáhnout pouze pomocí funkce jednoho dokladu. Tyto funkční mezery budou vyplněny pomocí dalších funkcí na podzim 2018 a v novějších verzích.
+### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Zaúčtování plateb dodavatelů v souhrnné formě na bankovní účet
 
--   **Zaúčtování plateb dodavatelů v souhrnné formě na bankovní účet**
+**Scénář** Organizace komunikuje seznam dodavatelů a částky do jeho banky a banka používá tento seznam pro platby dodavatelů jménem organizace. Banka zaúčtuje součet plateb jako jeden výběr na bankovním účtu.
 
-    -   Organizace komunikuje seznam dodavatelů a částky do jeho banky a banka používá tento seznam pro platby dodavatelů jménem organizace. Banka zaúčtuje součet plateb jako jeden výběr na bankovním účtu.
+Souhrnu plateb dodavatele je podporován pouze prostřednictvím jednoho dokladu. Každý dodavatel je zadán jako samostatný řádek pro udržování podrobností v dílčí hlavní knize závazků. Souhrnná částka všech plateb je však posunuta na jediný řádek pro bankovní účet. Zrušení se tedy zobrazí jako jedna souhrnná částka v dílčí knize banky.
 
->   Souhrnu plateb dodavatele je podporován pouze prostřednictvím jednoho dokladu. Každý dodavatel je zadán na samostatném řádku ke správě podrobností v dílčí hlavní knize splatných účtů, ale souhrnná částka všech plateb je odsazená pouze u jednoho řádku pro bankovní účet. Zrušení se tedy zobrazí jako jedna souhrnná částka v dílčí knize banky.
+**Scénář** Organizace vkládá platby odběratele nebo bankovní vklady plateb odběratele jménem organizace jako paušální částku a na bankovním účtu se zobrazí záloha po uložení.
 
--   Organizace vkládá platby odběratele nebo bankovní vklady plateb odběratele jménem organizace jako paušální částku a na bankovním účtu se zobrazí záloha po uložení.
+Souhrn plateb odběratele je obvykle podporován prostřednictvím funkce vkladu. Pokud ale používáte "překlenovací" metody platby, v tomto scénáři jsou podporovány pouze v rámci jednoho dokladu. Stejným způsobem, popsaným pro souhrn plateb dodavatele, se zadávají platby odběratele.
 
->   Souhrn plateb odběratele je obvykle podporován prostřednictvím funkce vkladu. Pokud ale používáte "překlenovací" metody platby, v tomto scénáři jsou podporovány pouze v rámci jednoho dokladu. Stejným způsobem, popsaným pro souhrn plateb dodavatele, se zadávají platby odběratele.
+### <a name="mechanism-to-group-transactions-from-a-business-event"></a>Mechanismus k seskupení transakcí z obchodní události
 
--   **Mechanismus k seskupení transakcí z obchodní události**
+**Scénář** Organizace má jednu obchodní událost, která spouští několik transakcí. Účetní oddělení však chce zobrazit účetní položky společně, aby bylo možné lépe provádět audit.
 
-    -   Organizace má jednu obchodní událost, která spouští několik transakcí. Účetní oddělení však chce zobrazit účetní položky společně, aby bylo možné lépe provádět audit.
+Pokud organizace musí zobrazit účetní položky z obchodní události společně, musí používat jedno číslo dokladu. 
 
->   Pokud organizace musí zobrazit účetní položky z obchodní události společně, musí používat jedno číslo dokladu. 
+### <a name="country-specific-features"></a>Funkce specifické pro zemi
 
-- **Funkce specifické pro zemi**
+**Scénář** Funkce jednoho správního dokumentu (SAD) pro Polsko aktuálně vyžaduje použití jednoho dokladu. Dokud nebude pro tuto funkci možnost seskupení k dispozici , je nutné nadále používat funkci jednoho dokladu. Mohou existovat další funkce specifické pro zemi, které vyžadují funkci jednoho dokladu.
 
-  -   Funkce jednoho správního dokumentu (SAD) pro Polsko aktuálně vyžaduje použití jednoho dokladu. Dokud nebude pro tuto funkci možnost seskupení k dispozici , je nutné nadále používat funkci jednoho dokladu. Mohou existovat další funkce specifické pro zemi, které vyžadují funkci jednoho dokladu.
-
-- **Zálohový doklad deníku zákazníka, který má daně na více řádcích**
-
-  -   Odběratel provede zálohu pro objednávku a řádky objednávky mají jiné daně, které musí být zaznamenány pro zálohu. Zálohová platba odběratele je jedna transakce simulující řádky objednávky, aby bylo možné zaznamenat příslušnou daň pro částku na každém řádku.
+### <a name="customer-prepayment-payment-journal-that-has-taxes-on-multiple-lines"></a>Zálohový doklad deníku zákazníka, který má daně na více řádcích
 
 V tomto případě je zákazník na jednom dokladu stejný vzhledem k tomu, že transakce simuluje řádky objednávky odběratele. Je nutné zadat zálohu do jednoho dokladu, protože výpočet daně musí být proveden na řádcích jedné platby provedené odběratelem.
 
--   **Údržba dlouhodobého majetku: opravný odpis, rozdělení majetku, výpočet odpisu pro vyřazení**
+### <a name="customer-reimbursement"></a>Refundace zákazníka
 
-Následujících transakce dlouhodobého majetku také vytvoří více transakcí v rámci jednoho dokladu:
--   Je provedeno další pořízení dlouhodobého majetku a je vypočten 'opravný' odpis.
--   Majetek je rozdělen.
--   Je povolen parametr k vypočtení odpisu pro vyřazení, a pak je majetek vyřazen.
+**Scénář** Odběratel provede zálohu pro objednávku a řádky objednávky mají jiné daně, které musí být zaznamenány pro zálohu. Zálohová platba odběratele je jedna transakce simulující řádky objednávky, aby bylo možné zaznamenat příslušnou daň pro částku na každém řádku.
 
-<a name="scenarios-that-dont-require-one-voucher"></a>Scénáře, které nevyžadují jeden doklad
-----------------------------------------
+Pokud je periodická úloha refundace spuštěna z modulu pohledávek, vytváří transakci pro přesun zůstatku od zákazníka k dodavateli. V tomto scénáři musí být použit jeden doklad pro refundaci zákazníka.
 
-Následujících scénářů lze dosáhnout pomocí jiných prostředků a neměly by používat Jeden doklad.
+### <a name="fixed-asset-maintenance-catch-up-depreciation-split-asset-calculate-depreciation-on-disposal"></a>Údržba dlouhodobého majetku: opravný odpis, rozdělení majetku, výpočet odpisu pro vyřazení
+Následujících transakce dlouhodobého majetku také vytvoří více transakcí v jedno dokladu:
 
--   **Zaúčtování plateb odběratelů v souhrnné formě na bankovní účet**
+- Je provedeno další pořízení dlouhodobého majetku a je vypočten 'opravný' odpis.
+- Majetek je rozdělen.
+- Je zapnutý parametr k vypočtení odpisu pro vyřazení, a pak je majetek vyřazen.
+- Datum uvedení majetku do služby je před datem pořízení. Z tohoto důvodu je zaúčtována oprava odpisu.
+
+### <a name="bills-of-exchange-and-promissory-notes"></a> Cizí směnky a vlastní směnky
+Cizí směnky a vlastní směnky vyžadují, aby byl použit jeden doklad, protože transakce přesouvají zůstatek zákazníka nebo dodavatele z jednoho účtu hlavní knihy pohledávek/závazků na jiný, na základě stavu platby.
+
+## <a name="scenarios-that-dont-require-one-voucher"></a>Scénáře, které nevyžadují jeden doklad
+
+Následujících scénářů lze dosáhnout pomocí jiných prostředků a neměly by používat funkci jednoho dokladu.
+
+### <a name="post-customer-payments-in-summary-form-to-the-bank-account"></a>Zaúčtování plateb odběratelů v souhrnné formě na bankovní účet
 
 Organizace vkládá platby odběratele nebo bankovní vklady plateb odběratele jménem organizace jako paušální částku a na bankovním účtu se zobrazí záloha po uložení.
 
 Souhrn plateb odběratele je podporován prostřednictvím funkce vkladou, když se u metody platby nepoužívá překlenování.
 
--   **Určování čistých částek**
+### <a name="netting"></a>Určování čistých částek
 
 V započtení jsou zůstatky dodavatelů a odběratelů vyrovnány s prodejními objednávkami vzájemně vzhledem k tomu, že dodavatel a odběratel představují stejnou stranu. Tento přístup minimalizuje výměnu peněz mezi organizací a stranou odběratele/dodavatele.
 
 Započtení lze provést zadáním zvýšení a snížení v samostatných dokladech a zaúčtování protiúčtu pro zúčtovací účet hlavní knihy.
 
--   **Zaúčtování souhrnu do hlavní knihy**
+### <a name="post-in-summary-to-the-general-ledger"></a>Zaúčtování souhrnu do hlavní knihy
 
-Organizace často chtějí účtovat do hlavní knihy souhrnně, aby se minimalizovalo množství dat. Organizace však ještě obvykle vyžadují zachování detaily transakce. Po zaúčtování v souhrnu pomocí jednoho dokladu nejsou známy detaily transakce a nelze je spravovat.
+Organizace často chtějí účtovat do hlavní knihy souhrnně, aby se minimalizovalo množství dat. Organizace však ještě obvykle vyžadují zachování podrobností transakce. Po zaúčtování v souhrnu pomocí jednoho dokladu nejsou známy detaily transakce a nelze je spravovat.
 
-   -   Vzhledem k tomu, že detaily transakce aktuálně nelze spravovat, doporučujeme nepoužívat jeden doklad pro zaúčtování v souhrnu.
-   -   Po odstranění podpory jednoho dokladu doporučujeme implementovat architekturu zdrojového dokumentu a účtování do deníků. Tyto architektury budou poté spravovat podrobnosti transakce a podporovat souhrny do hlavní knihy.
+- Vzhledem k tomu, že detaily transakce aktuálně nelze spravovat, doporučujeme organizacím **nepoužívat** jeden doklad pro zaúčtování v souhrnné formě.
+- Po odstranění podpory jednoho dokladu lze implementovat architekturu zdrojového dokumentu a účtování do deníků. Tyto architektury budou poté spravovat podrobnosti transakce a podporovat souhrny do hlavní knihy.
 
--   **Vyrovnání více nezaúčtovaných plateb na stejné faktuře**
+
+### <a name="settle-multiple-unposted-payments-to-the-same-invoice"></a>Vyrovnání více nezaúčtovaných plateb na stejné faktuře
 
 K tomuto scénáři obvykle dochází v maloobchodních organizacích, kde mohou odběratelé použít několik metod platby pro zaplacení nákupů. V tomto scénáři musí být organizace schopná zaznamenat více nezaúčtovaných plateb a vyrovnat je proti faktuře odběratele.
 
 Nové funkce, které byly přidány do aplikace Microsoft Dynamics 365 for Operations verze 1611 (listopad 2016) umožňují vypořádat více nezaúčtovaných plateb do vyrovnány u jedné faktury. Vícenásobné platby odběratele se již nezadávají v jednom dokladu.
 
--   **Import transakcí bankovního výpisu**
+### <a name="import-bank-statement-transactions"></a>Import transakcí bankovního výpisu
 
 Banky často platí a přijímají platby v zastoupení organizace, a tyto transakce se zaznamenávají v modulu Finance and Operations prostřednictvím souboru přijatého od banky. Organizace často chtějí seskupit tyto transakce pomocí čísla bankovního výpisu v souboru. Vzhledem k tomu, že každá transakce je zobrazena podrobně na bankovním výpisu, není požadována žádná sumarizace v dílčí knize banky.
 
 Transakce mohou být seskupeny pomocí dalších polí v deníku, jako je například samotné číslo dávky deníku nebo číslo dokumentu.
 
--   **Převod zůstatků**
 
-Může být potřeba, aby organizace převedla zůstatek z jednoho dodavatele na jiného dodavatele, buď protože došlo k chybě, nebo proto, že jiný dodavatel převzal zodpovědnost. Převody tohoto typu se také dějí pro typy účtu, jako jsou odběratelé a bankovní účty.
+### <a name="transfer-balances"></a>Převod zůstatků
 
-Převody zůstatků z jednoho účtu (dodavatele, odběratele, bankovního účtu a tak dále) na jiný účet a protiúčet lze provádět prostřednictvím samostatných dokladů, a vyrovnání lze zaúčtovat na zúčtovací účet hlavní knihy.
+Může být potřeba, aby organizace převedla zůstatek z jednoho dodavatele na jiného dodavatele, buď protože došlo k chybě, nebo proto, že jiný dodavatel převzal zodpovědnost. Převody tohoto typu se také dějí pro typy účtu, jako jsou **Zákazník** a **Banka**.
 
--   **Zadání počátečních zůstatků**
+Převody zůstatků z jednoho účtu (dodavatele, odběratele, banky a tak dále) na jiný účet a protiúčet lze provádět prostřednictvím samostatných dokladů, a vyrovnání lze zaúčtovat na zúčtovací účet hlavní knihy.
+
+### <a name="enter-beginning-balances"></a>Zadání počátečních zůstatků
 
 Organizace často zadávají počáteční zůstatky pro účty vedlejší knihy (dodavatelé, odběratelé, dlouhodobého majetku atd.) jako transakce s jedním číslem dokladu. Počáteční zůstatky pro každý účet vedlejší knihy lze zadat jako samostatné doklady a zaúčtovat rozdíl na zúčtovací účet hlavní knihy.
 
--   **Opravit účetní položky zaúčtovaného dokladu odběratele nebo dodavatele**
+### <a name="correct-the-accounting-entry-of-a-posted-customer-or-vendor-document"></a>Opravit účetní položky zaúčtovaného dokladu odběratele nebo dodavatele
 
 Může být nutné, aby organizace opravila účet závazků nebo pohledávek v hlavní knize pro účtování položky zaúčtované faktury, ale tuto fakturu nelze stornovat nebo opravit pomocí jiného mechanismu.
 
 Je-li nutné u pohledávek pro vybrané účty hlavní knihy splatných účtů provést opravu, je nutné provést úpravy přímo do účtu hlavní knihy. Úpravu nelze provést pomocí zaúčtování prostřednictvím odběratele nebo dodavatele. Tento přístup vyžaduje, aby byly provedeny úpravy během prostoje, aby účet hlavní knihy dočasně umožňoval ruční zadávání.
 
--   **Systém to umožňuje"**
+### <a name="the-system-allows-it"></a>Systém to umožňuje"
 
 Organizace často používají funkci jednoho dokladu pouze proto, že jim systém umožňuje používat je bez pochopení důsledků.
-

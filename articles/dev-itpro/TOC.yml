@@ -257,6 +257,10 @@
               href: extensibility/extensibility-changes-804.md
             - name: Změny rozšiřitelnosti – verze 8.1
               href: extensibility/extensibility-changes-81.md
+            - name: Změny rozšiřitelnosti – verze 8.1.1
+              href: extensibility/extensibility-changes-811.md
+            - name: Změny rozšiřitelnosti – verze 8.1.2
+              href: extensibility/extensibility-changes-812.md
         - name: Základy
           items:
             - name: Narušující přizpůsobení
@@ -303,8 +307,6 @@
               href: extensibility/change-caption-form.md
             - name: Úprava vlastností ovládacího prvku formuláře
               href: extensibility/modify-control-properties.md
-            - name: Změna popisků pomocí souborů rozšíření popisků
-              href: extensibility/change-label.md
             - name: Rozšíření rozsahu číselných řad
               href: extensibility/extend-number-sequence-scope.md
             - name: Přidání nových dimenzí zásob
@@ -317,6 +319,8 @@
               href: extensibility/maps-as-interfaces.md
             - name: Rozšíření map tabulek používaných pro správu verzí
               href: extensibility/maps-with-versioning.md
+            - name: Rozšíření přesnosti na desetinná místa pro zvolené datové typy
+              href: extensibility/decimal-point-precision.md
         - name: Vytvoření rozšiřitelných řešení
           items:
             - name: "Zápis rozšiřitelného\_kódu"
@@ -534,7 +538,7 @@
           href: user-interface/workspace-filter-group-subpattern.md
     - name: Rozšiřitelnost ovládacích prvků
       items:
-        - name: Vytvoření ovládacích prvků aextensible
+        - name: Vytvoření rozšířitelných ovládacích prvků
           href: user-interface/build-extensible-control.md
         - name: Klávesové zkratky pro rozšířitelné ovládací prvky
           href: user-interface/keyboard-shortcuts-controls.md
@@ -764,148 +768,12 @@
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
             - name: Typ ValueMetadata
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
-- name: Integrace dat
+- name: Obecné nařízení o ochraně osobních údajů (GDPR)
+  href: gdpr/gdpr-guide.md
   items:
-    - name: Zvolení strategie integrace dat (import/export)
-      href: data-entities/integration-overview.md
-    - name: Rozhraní API integrace dat
-      items:
-        - name: REST API balíčku správy dat
-          href: data-entities/data-management-api.md
-        - name: Koncové body služeb
-          href: data-entities/services-home-page.md
-          items:
-            - name: Řešení problému s ověřením služby
-              href: data-entities/troubleshoot-service-authentication.md
-        - name: OData
-          href: data-entities/odata.md
-        - name: Vlastní nasazení služby
-          href: data-entities/custom-services.md
-        - name: Opakované integrace
-          href: data-entities/recurring-integrations.md
-        - name: Testovací služby pomocí nástrojů třetích stran
-          href: data-entities/third-party-service-test.md
-    - name: Vývoj pro integraci
-      items:
-        - name: Správa dat a integrace pomocí datových entit
-          href: data-entities/data-management-integration-data-entity.md
-          items:
-            - name: Vývoj entit pro migraci dat
-              href: data-entities/develop-entity-for-data-migration.md
-            - name: Vývoj kombinovaných datových entit
-              href: data-entities/develop-composite-data-entities.md
-            - name: Konfigurace sdílení finančních dat mezi společnostmi
-              href: data-entities/tasks/configure-financial-cross-company-data-sharing.md
-            - name: Vytvoření šablon záznamu pro usnadnění zadávání dat
-              href: data-entities/tasks/create-record-template-facilitate-data-entry.md
-            - name: "Vytvoření záznamů s\_použitím šablon záznamu"
-              href: data-entities/tasks/use-record-template-new-record.md
-        - name: "Integrace dat s\_použitím služby Common Data Service"
-          href: data-entities/data-integration-cds.md
-          items:
-            - name: Konfigurace scénáře zpeněžení potenciálního zákazníka
-              href: ../supply-chain/sales-marketing/prospect-to-cash.md
-              items:
-                - name: "Synchronizace obchodních vztahů přímo z\_aplikace Sales na odběratele v\_aplikaci Finance and Operations"
-                  href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                - name: "Synchronizace produktů přímo z\_aplikace Finance and Operations na produkty v\_aplikaci Sales"
-                  href: ../supply-chain/sales-marketing/products-template-mapping-direct.md
-                - name: "Synchronizace kontaktů přímo z\_aplikace Sales na kontakty nebo odběratele v\_aplikaci Finance and Operations"
-                  href: ../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                - name: "Synchronizace hlaviček a\_řádků prodejních nabídek přímo z\_aplikace Sales do aplikace Finance and Operations"
-                  href: ../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                - name: Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Finance and Operations
-                  href: ../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                - name: "Synchronizace hlaviček a\_řádků prodejní faktury přímo z\_aplikace Finance and Operations do aplikace Sales"
-                  href: ../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-            - name: Konfigurace integrace se službou Field Service
-              href: ../supply-chain/sales-marketing/field-service.md
-              items:
-                - name: "Synchronizace produktů v\_aplikaci Finance and Operations do produktů ve službě Field Service"
-                  href: ../supply-chain/sales-marketing/field-service-product.md
-                - name: "Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v aplikaci\_Finance and Operations"
-                  href: ../supply-chain/sales-marketing/field-service-work-order.md
-                - name: "Synchronizace smluvních faktur ve službě Field Service do volných faktur v aplikaci\_Finance and Operations"
-                  href: ../supply-chain/sales-marketing/field-service-invoice.md
-            - name: Konfigurace integrace Project Service Automation
-              href: ../financials/project-management/PSA-integration.md?toc=/dev-itpro/toc.json
-              items:
-                - name: Parametry integrace Project Service Automation
-                  href: ../financials/project-management/PSA-parameters.md?toc=/dev-itpro/toc.json
-                - name: Synchronizace projektových smluv a projektů
-                  href: ../financials/project-management/project-contracts-templates.md?toc=/dev-itpro/toc.json
-                - name: Synchronizace projektových úloh
-                  href: ../financials/project-management/project-tasks-template.md?toc=/dev-itpro/toc.json
-                - name: Synchronizace kategorií výdajů projektu
-                  href: ../financials/project-management/project-categories-templates.md?toc=/dev-itpro/toc.json
-                - name: Synchronizace odhadů projektu do prognóz projektu
-                  href: ../financials/project-management/project-estimates-templates.md?toc=/dev-itpro/toc.json
-                - name: Synchronizace skutečných hodnot projektu do deníku integrace projektu
-                  href: ../financials/project-management/project-actuals-templates.md?toc=/dev-itpro/toc.json
-        - name: Spotřeba externích webových služeb
-          href: data-entities/consume-external-web-service.md
-- name: Správa dat
-  href: data-entities/data-entities-data-packages.md
-  items:
-    - name: Datové entity
-      href: data-entities/data-entities.md
-      items:
-        - name: Projekty dat konfigurace
-          href: data-entities/configuration-data-projects.md
-        - name: Balíčky dat konfigurace
-          href: data-entities/configuration-data-packages.md
-        - name: Zkopírování dat konfigurace mezi společnostmi
-          href: data-entities/copy-configuration.md
-        - name: Šablony dat konfigurací
-          href: data-entities/configuration-data-templates.md
-        - name: Šablony dat s více listy
-          href: data-entities/excel-template-multiple.md
-        - name: Povolení sledování změn pro entity
-          href: data-entities/entity-change-track.md
-        - name: Konfigurační klíče a datové entity
-          href: data-entities/config-key-entities.md
-        - name: Hledání informací o standardních datových entitách
-          href: data-entities/data-entities-report.md
-    - name: "Úlohy importu a\_exportu dat"
-      href: data-entities/data-import-export-job.md
-      items:
-        - name: Osvědčené postupy pro import dokladů pomocí entity hlavního deníku
-          href: data-entities/tips-tricks-import-general-journal-entity.md
-    - name: Vývoj pro datové entity
-      items:
-        - name: Návrh principů a osvědčených postupů pro datové entity
-          href: dev-tools/design-best-practices.md
-        - name: Vytváření nových datových entit
-          href: data-entities/build-consuming-data-entities.md
-        - name: Vlastnosti chování datových entit
-          href: data-entities/behavioral-properties-data-entities.md
-        - name: Vytváření vypočtených sloupců a virtuálních polí
-          href: data-entities/data-entity-computed-columns-virtual-fields.md
-        - name: Chování napříč společnostmi
-          href: data-entities/cross-company-behavior.md
-        - name: Kódy země/regionu a konfigurační klíče
-          href: data-entities/countryregion-codes-configuration-keys.md
-        - name: Vzory dědičnosti
-          href: data-entities/support-super-type-sub-type.md
-        - name: Pravidla průvodce datovými entitami
-          href: data-entities/data-entity-wizard-rules.md
-        - name: Vlastnosti metadat
-          href: data-entities/behavioral-properties-data-entities.md
-        - name: 'Ověření, výchozí hodnoty a nemapovaná pole'
-          href: data-entities/validations-defaults-unmapped-fields.md
-        - name: "Zabezpečení a\_datové entity"
-          href: data-entities/security-data-entities.md
-        - name: 'Vytvoření entit pouze ke čtení, které zveřejňují pouze finanční dimenze'
-          href: financial/read-only-entity-financial.md
-    - name: Použití vlastní databáze
-      href: analytics/export-entities-to-your-own-database.md
-    - name: Automatizace datové úlohy
-      href: data-entities/data-task-automation.md
     - name: Zdroje pro odpověď na požadavky na data GDPR
       href: gdpr/gdpr-home-page.md
       items:
-        - name: Průvodce GDPR pro Finance and Operations
-          href: gdpr/gdpr-guide.md
         - name: Klasifikace majetku
           href: gdpr/gdpr-asset-classification-values.md
         - name: Sestava vyhledávání osob
@@ -920,10 +788,6 @@
           href: gdpr/gdpr-ax2012.md
         - name: Požadavky na data GDPR pro LCS
           href: gdpr/gdpr-lcs.md
-    - name: Pracovní prostor kontrolního seznamu ověřování dat
-      href: user-interface/data-validation-workspace.md
-    - name: Popisy chyb správy dat
-      href: data-entities/dm-error-descriptions.md
 - name: Průběžné doručování
   href: dev-tools/continuous-delivery-home-page.md
   items:
@@ -1039,10 +903,12 @@
         - name: Nastavení a nasazení místních prostředí
           href: deployment/setup-deploy-on-premises-environments.md
           items:
-            - name: Nasazení místních prostředí na aktualizaci Platform update 12
+            - name: Nasazení místních prostředí (Platform update 12 a novější)
               href: deployment/setup-deploy-on-premises-pu12.md
-            - name: Nasazení místních prostředí na aktualizaci Platform update 8 a 11
+            - name: Nasazení místních prostředí (Platform update 8 a 11)
               href: deployment/setup-deploy-on-premises-pu8-pu11.md
+            - name: Instalační kroky pro komponenty maloobchodní sítě v místním prostředí
+              href: deployment/deploy-retail-onprem.md
         - name: Vývoj a nasazení vlastních modelů do místních prostředí
           href: deployment/develop-deploy-custom-models-on-premises.md
         - name: Konfigurace reverzní proxy pro místní prostředí
@@ -1161,6 +1027,8 @@
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: Aktualizace vývojových nástrojů
           href: dev-tools/update-development-tools.md
+        - name: Plánování a příprava pro kompilování kódu proti nejnovější aktualizaci
+          href: migration-upgrade/compile-considerations.md
     - name: Upgrade na nejnovější aktualizaci (místní)
       items:
         - name: Použití aktualizací na místní nasazení
@@ -1226,6 +1094,12 @@
           href: sysadmin/batch-server-overview.md
         - name: Vytvoření dávkových úloh
           href: sysadmin/tasks/create-batch-job.md
+        - name: Kopírování dávkové úlohy
+          href: sysadmin/copy-batch-job.md
+        - name: Aktivní období dávky
+          href: sysadmin/activeperiod.md
+        - name: Role zabezpečení správce dávky
+          href: sysadmin/runby.md
     - name: Poradce při optimalizaci
       href: sysadmin/optimization-advisor-overview.md
       items:

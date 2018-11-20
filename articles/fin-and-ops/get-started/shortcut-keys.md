@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
+ms.sourcegitcommit: 58551a26d9f3a55e8a6ab8b4ca0805aaca4a4c28
+ms.openlocfilehash: d9d3ace80e49b8dc29259c8c16925f474c9e74b3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/25/2018
 
 ---
 
@@ -192,7 +192,7 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Přidat/odstranit formulář jako oblíbený (se zaměřením na formulář v navigačním podokně)   | Shift+F                    |
 | Přesunutí do standardního podokna akcí                                              | Alt+M,A nebo Ctrl+F6         |
 | Přesun do podokna filtru (může zahrnovat jeho otevření)                        | Alt+M,F nebo Ctrl+F3         |
-| Přesun zaměření na obsah stránky (se zaměřením v navigačním seznamu)            | Alt+M,M nebo Ctrl+F3         |
+| Přesun zaměření na obsah stránky (se zaměřením v podokně filtru)                | Alt+M,M nebo Ctrl+F3         |
 | Přesun do navigačního seznamu na formuláři s podrobnostmi (může zahrnovat jeho otevření)    | Alt+M,S nebo Ctrl+F8         |
 | Přesun zaměření na obsah stránky (se zaměřením v navigačním seznamu)            | Alt+M,M nebo Ctrl+F8         |
 | Zavření seznamu navigace ve formuláři Podrobnosti (pokud je aktivní seznam navigace) | Esc                        |

@@ -31,9 +31,11 @@
               items:
                 - name: Zakoupení aplikace Finance and Operations (on-premises)
                   href: get-started/purchase-on-premises.md
-        - name: "Co je nového a\_co se změnilo"
+        - name: Co je nového a co se změnilo
           href: get-started/whats-new-changed.md
           items:
+            - name: Často kladené dotazy k aktualizacím služby One Version
+              href: get-started/one-version.md
             - name: Zásady životního cyklu softwaru a vydání cloudu
               href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
             - name: Zásady životního cyklu softwaru a vydání on-premises
@@ -46,8 +48,16 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: Funkce neimplementované v nasazeních on-premises
               href: get-started/features-not-implemented-on-prem.md
+            - name: Platform update 22 (listopad 2018)
+              href: get-started/whats-new-platform-update-22.md
+            - name: Finance and Operations verze 8.1.2 (listopad 2018)
+              href: get-started/whats-new-changed-8-1-2.md
+            - name: Finance and Operations verze 8.1.1 (říjen 2018)
+              href: get-started/whats-new-changed-8-1-1.md
             - name: Finance and Operations verze 8.1 (říjen 2018)
               href: get-started/whats-new-changed-8-1-October-2018.md
+            - name: Platform update 21 (říjen 2018)
+              href: get-started/whats-new-platform-update-21.md
             - name: Platform update 20 (září 2018)
               href: get-started/whats-new-platform-update-20.md
             - name: Finance and Operations verze 8.0 (duben 2018)
@@ -300,7 +310,7 @@
           href: ../dev-itpro/data-entities/integration-overview.md?toc=/fin-and-ops/toc.json
         - name: Rozhraní API integrace dat
           items:
-            - name: API balíčku správy dat
+            - name: REST API balíčku správy dat
               href: ../dev-itpro/data-entities/data-management-api.md?toc=/fin-and-ops/toc.json
             - name: Koncové body služeb
               href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
@@ -309,10 +319,12 @@
                   href: ../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/fin-and-ops/toc.json
             - name: OData
               href: ../dev-itpro/data-entities/odata.md?toc=/fin-and-ops/toc.json
-            - name: Vlastní služby
+            - name: Vlastní nasazení služby
               href: ../dev-itpro/data-entities/custom-services.md?toc=/fin-and-ops/toc.json
             - name: Opakované integrace
               href: ../dev-itpro/data-entities/recurring-integrations.md?toc=/fin-and-ops/toc.json
+            - name: Testovací služby pomocí nástrojů třetích stran
+              href: ../dev-itpro/data-entities/third-party-service-test.md
         - name: Vývoj pro integraci
           items:
             - name: "Integrace dat s\_použitím datových entit"
@@ -320,13 +332,13 @@
               items:
                 - name: Vývoj entity pro migraci dat
                   href: ../dev-itpro/data-entities/develop-entity-for-data-migration.md?toc=/fin-and-ops/toc.json
-                - name: Vývoj kombinované datové entity
+                - name: Vývoj kombinovaných datových entit
                   href: ../dev-itpro/data-entities/develop-composite-data-entities.md?toc=/fin-and-ops/toc.json
                 - name: Konfigurace sdílení finančních dat mezi společnostmi
                   href: ../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md?toc=/fin-and-ops/toc.json
-                - name: Vytvoření šablony záznamu pro usnadnění zadávání dat
+                - name: Vytvoření šablon záznamu pro usnadnění zadávání dat
                   href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
-                - name: "Vytvoření nového záznamu s\_použitím šablony záznamu"
+                - name: "Vytvoření záznamů s\_použitím šablon záznamu"
                   href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
             - name: "Integrace dat s\_použitím služby Common Data Service"
               href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
@@ -383,6 +395,8 @@
             - name: Zkopírování dat konfigurace mezi společnostmi nebo právnickými osobami
               href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Balíčky dat konfigurace
+                  href: ../dev-itpro/data-entities/configuration-data-packages.md
                 - name: Balíčky dat konfigurace (pouze vydání z července 2017)
                   href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
             - name: Šablony dat konfigurací
@@ -391,6 +405,10 @@
               href: ../dev-itpro/data-entities/entity-change-track.md?toc=/fin-and-ops/toc.json
             - name: Hledání informací o standardních datových entitách
               href: ../dev-itpro/data-entities/data-entities-report.md?toc=/fin-and-ops/toc.json
+            - name: Šablony dat s více listy
+              href: ../dev-itpro/data-entities/excel-template-multiple.md
+            - name: Povolení sledování změn pro entity
+              href: ../dev-itpro/data-entities/entity-change-track.md
             - name: Konfigurační klíče a datové entity
               href: ../dev-itpro/data-entities/config-key-entities.md?toc=/fin-and-ops/toc.json
             - name: Balíčky dat konfigurace
@@ -402,6 +420,8 @@
               href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/fin-and-ops/toc.json
         - name: Vývoj pro datové entity
           items:
+            - name: Návrh principů a osvědčených postupů pro datové entity
+              href: ../dev-itpro/dev-tools/design-best-practices.md
             - name: Vytváření nových datových entit
               href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/fin-and-ops/toc.json
             - name: Vlastnosti datových entit
@@ -424,12 +444,16 @@
               href: ../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json
             - name: Použití testovacích nástrojů služeb třetí strany
               href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/fin-and-ops/toc.json
+            - name: 'Vytvoření entit pouze ke čtení, které zveřejňují pouze finanční dimenze'
+              href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/fin-and-ops/toc.json
         - name: Použití vlastní databáze
           href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
         - name: Automatizace datové úlohy
           href: ../dev-itpro/data-entities/data-task-automation.md
-        - name: Pracovní prostor ověření dat
+        - name: Pracovní prostor kontrolního seznamu ověřování dat
           href: ../dev-itpro/user-interface/data-validation-workspace.md
+        - name: Popisy chyb správy dat
+          href: ../dev-itpro/data-entities/dm-error-descriptions.md
     - name: Správa financí
       href: ../financials/index.md
       items:
@@ -1007,11 +1031,13 @@
                   href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
                 - name: Konfigurovat účetní struktury
                   href: ../financials/general-ledger/configure-account-structures.md
+                - name: Duální měna
+                  href: ../financials/general-ledger/dual-currency.md
             - name: Deníky a hlavní knihy
               items:
                 - name: Zpracování hlavního deníku
                   href: ../financials/general-ledger/general-journal-processing.md
-                - name: Zaúčtování periodických deníků
+                - name: Účtování periodických deníků
                   href: ../financials/general-ledger/tasks/post-periodic-journals.md
                 - name: Zpracování deníku přidělení hlavní knihy
                   href: ../financials/general-ledger/tasks/process-ledger-allocation-journal.md
@@ -1049,6 +1075,8 @@
                   href: ../financials/general-ledger/import-currency-exchange-rates.md
                 - name: Jeden doklad
                   href: ../financials/general-ledger/one-voucher.md
+                - name: Vyrovnání hlavní knihy
+                  href: ../financials/general-ledger/ledger-settlements.md
             - name: Závěrka období
               items:
                 - name: Uzávěrka hlavní knihy na konci období
@@ -1799,6 +1827,10 @@
             - name: Přehled daňového modulu
               href: ../financials/general-ledger/tax-engine.md
               items:
+                - name: Importovat konfiguraci
+                  href: ../financials/general-ledger/tax-engine-import-configuration.md
+                - name: Použitelnost daňového modulu
+                  href: ../financials/general-ledger/tax-engine-applicability.md
                 - name: Integrace daňového modulu
                   href: ../financials/general-ledger/tax-engine-integration.md
                 - name: Rozšíření daňového modulu
@@ -2100,6 +2132,8 @@
         - name: Polsko
           href: ../financials/localizations/poland.md
           items:
+            - name: Aktivace záporného storna
+              href: ../financials/localizations/emea-pol-red-storno.md
             - name: Výpočet slev řádku z jednotkové ceny
               href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
             - name: Poznámky k opravě
@@ -2116,6 +2150,8 @@
               href: ../financials/localizations/emea-pol-returnable-packages.md
             - name: Sestavy DPH
               href: ../financials/localizations/emea-pol-sales-tax-reports.md
+            - name: Nastavení číselných řad podle skladu
+              href: ../financials/localizations/emea-pol-number-sequence-warehouses.md
             - name: Standardní soubor auditu
               href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
             - name: Úrok daně a volný úrok
@@ -2132,32 +2168,60 @@
                   href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
                 - name: Denní operace pro držitele záloh
                   href: ../financials/localizations/rus-advance-holders-daily-operations.md
+                - name: Sestavy záloh s kontrolou rozpočtu
+                  href: ../financials/localizations/rus-advance-holders-reports-dailyops.md
+                - name: Přecenění cizí měny pro držitele záloh
+                  href: ../financials/localizations/rus-advance-adjustment-parameters.md
+                - name: Sestavy držitelů záloh
+                  href: ../financials/localizations/rus-local-management-reports-primary-forms.md
+            - name: Banka
+              items:
+                - name: Nastavení bankovních účtů
+                  href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
+                - name: Nastavení a zpracování platebních příkazů
+                  href: ../financials/localizations/rus-payment-order-settings-processing.md
             - name: Dlouhodobý majetek
               items:
                 - name: Pořízení dlouhodobého majetku a jeho vložení do operace
                   href: ../financials/localizations/rus-fixed-asset-acquisition.md
+                - name: Registrace pořízení dlouhodobého majetku
+                  href: ../financials/localizations/rus-register-acquisition.md
                 - name: Vytvoření a zaúčtování deníků rozpočtu pro pořízení dlouhodobého majetku
                   href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
                 - name: Inventura dlouhodobého majetku
                   href: ../financials/localizations/rus-fixed-assets-counting.md
                 - name: Přecenění měny dlouhodobého majetku
                   href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+                - name: Přecenění nákladů a odpisů dlouhodobého majetku
+                  href: ../financials/localizations/rus-fixed-assets-revaluation.md
                 - name: Částečná demontáž dlouhodobého majetku (likvidace)
                   href: ../financials/localizations/rus-fixed-assets-disassembly.md
-            - name: Nastavení a zpracování platebních příkazů
-              href: ../financials/localizations/rus-payment-order-settings-processing.md
+                - name: 'Prodej, vyřazení a odpis majetku'
+                  href: ../financials/localizations/rus-sell-dispose-write-off-fixed-assets.md
+                - name: Nastavení umístění a číslování dlouhodobého majetku
+                  href: ../financials/localizations/rus-fixed-assets-locations-numbering.md
+                - name: Nastavení odpisu
+                  href: ../financials/localizations/rus-depreciation-setup.md
+                - name: Metody odpisování
+                  href: ../financials/localizations/rus-depreciation-methods.md
+                - name: Počáteční mimořádné odpisy
+                  href: ../financials/localizations/rus-bonus-depreciation.md
+                - name: Výpočet odpisů
+                  href: ../financials/localizations/rus-depreciation-calculation.md
+            - name: Divize společnosti
+              href: ../financials/localizations/rus-company-divisions.md
             - name: Nastavení směnných kurzů transakce měny
               href: ../financials/localizations/rus-exchange-difference.md
             - name: Náhled transakcí hlavní knihy
               href: ../financials/localizations/rus-ledger-transactions-preview.md
             - name: Nastavení úředních osob
               href: ../financials/localizations/rus-officials.md
-            - name: Nastavit bankovních účtů
-              href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
             - name: DPH pro daňové poradce
               href: ../financials/localizations/rus-tax-agent.md
             - name: Nastavení řízení dimenze pro vyrovnání
               href: ../financials/localizations/rus-transactions-settlement-date.md
+            - name: Faktury pro platbu
+              href: ../financials/localizations/rus-invoice-payment.md
         - name: Saúdská Arábie
           href: ../financials/localizations/saudi-arabia.md
           items:
