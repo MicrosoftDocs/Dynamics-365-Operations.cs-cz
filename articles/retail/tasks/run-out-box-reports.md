@@ -1,0 +1,70 @@
+--- 
+title: "Generování a spuštění předpřipravených sestav"
+description: "Použijte tohoto průvodce úkolem ke spuštění předem připravených sestav v centrále z jiných pracovních prostorů a dotazy a prodejní sestavy, které jsou umístěny pod Maloobchodní a velkoobchodní prodej."
+author: ashishmsft
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: RetailCategoryAndProductWorkspace, RetailOrgHierarchyTreeLookup, SrsReportViewerForm
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.search.industry: Retail
+ms.author: asharchw
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.translationtype: HT
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: b42f86fc243312d18654b1a048f9dffb29afd187
+ms.contentlocale: cs-cz
+ms.lasthandoff: 09/14/2018
+
+---
+# <a name="generate-and-run-out-of-box-reports"></a>Generování a spuštění předpřipravených sestav
+
+[!include[task guide banner](../includes/task-guide-banner.md)]
+
+Použijte tohoto průvodce úkolem ke spuštění předem připravených sestav v centrále z jiných pracovních prostorů a dotazy a prodejní sestavy, které jsou umístěny pod Maloobchodní a velkoobchodní prodej.
+
+
+
+K vytvoření tohoto záznamu jsou použita ukázková data společnosti USRT. Tento záznam je určen pro roli Správce systému.
+
+
+## <a name="launch-reports-from-workspaces"></a>Spuštění sestav z pracovních ploch
+1. Přejděte do nabídky Maloobchodní a velkoobchodní prodej > Produkty a kategorie > Správa kategorií a produktů.
+2. Kliknutím na šipku rozbalte nebo sbalte oddíl Sestavy.
+3. Klikněte na Sestava nejlepších produktů.
+4. Zadejte datum do pole Od data.
+5. Do pole Do data zadejte datum.
+6. V poli Kanál kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
+7. Ve stromovém zobrazení vyberte „Contoso Retail\Contoso Retail USA\Central\Houston“.
+    * Tím se zobrazí výchozí hierarchie organizace maloobchodu pro účely vykazování maloobchodu.   Přejděte do nabídky Správa organizace > Organizace > Účely organizační hierarchie, vyberte Vykazování maloobchodu a ověřte v poli Přiřazené hierarchie název hierarchie, u které je zaškrtnut Výchozí sloupec.      Jako součást ukázkových dat (použitých k záznamu tohoto úkolu) si můžete všimnout, že možnost Maloobchody podle regionu je výchozí organizační hierarchie pro účely maloobchodního vykazování.     
+8. Klikněte na tlačítko OK.
+9. Vyberte volbu v poli Zobrazení.
+10. Vyberte volbu v poli Podle.
+11. Klikněte na tlačítko OK.
+
+## <a name="launch-reports-from-the-inquiries-and-sales-reports-located-under-retail--commerce-app-link"></a>Sestavy spuštění z dotazů a sestav prodejů jsou umístěny v odkazu aplikace Maloobchodní a velkoobchodní prodej.
+1. Přejděte na Maloobchodní a velkoobchodní prodej > Dotazy a sestavy > Prodejní sestavy > Prodejní sestava kategorií.
+2. Zadejte datum do pole Od data.
+3. Do pole Do data zadejte datum.
+4. V poli Kanál kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
+5. Ve stromovém zobrazení vyberte „Contoso Retail\Contoso Retail USA\West\Seattle“.
+    * Tím se zobrazí výchozí hierarchie organizace maloobchodu pro účely vykazování maloobchodu.   Přejděte do nabídky Správa organizace > Organizace > Účely organizační hierarchie, vyberte Vykazování maloobchodu a ověřte v poli Přiřazené hierarchie název hierarchie, u které je zaškrtnut Výchozí sloupec.      Jako součást ukázkových dat (použitých k záznamu tohoto úkolu) si můžete všimnout, že možnost Maloobchody podle regionu je výchozí organizační hierarchie pro účely maloobchodního vykazování.     
+6. Klikněte na tlačítko OK.
+7. Klikněte na tlačítko OK.
+
+## <a name="export-an-hq-reports"></a>Exportujte sestavy HQ
+1. Přejděte na Maloobchodní a velkoobchodní prodej > Dotazy a sestavy > Prodejní sestavy > Sestava prodejů organizace.
+2. Zadejte datum do pole Od data.
+3. Do pole Do data zadejte datum.
+4. Klikněte na tlačítko OK.
+5. Klikněte na Exportovat.
+6. Klikněte na PDF.
+
+
