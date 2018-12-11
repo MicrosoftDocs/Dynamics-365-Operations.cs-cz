@@ -46,8 +46,12 @@
               href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
             - name: Odložené funkce AX 2012
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
-            - name: Funkce neimplementované v nasazeních on-premises
+            - name: Funkce neimplementované v místních nasazeních
               href: get-started/features-not-implemented-on-prem.md
+            - name: Finance and Operations verze 8.1.3 (prosinec 2018)
+              href: get-started/whats-new-changed-8-1-3.md
+            - name: Platform update 23 (prosinec 2018)
+              href: get-started/whats-new-platform-update-23.md
             - name: Platform update 22 (listopad 2018)
               href: get-started/whats-new-platform-update-22.md
             - name: Finance and Operations verze 8.1.2 (listopad 2018)
@@ -152,6 +156,8 @@
               href: get-started/help-overview.md
             - name: "Připojení k\_systému nápovědy"
               href: get-started/help-connect.md
+            - name: Připojení vlastního webu nápovědy
+              href: get-started/help-custom.md
             - name: Zobrazení a export popisů polí
               href: get-started/view-export-field-descriptions.md
             - name: Průvodci záznamem úloh a záznamník úloh
@@ -1243,6 +1249,8 @@
               href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
             - name: Resetování datového tržiště finančního výkaznictví
               href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
+        - name: Elektronické zprávy
+          href: ../financials/general-ledger/electronic-messaging.md
     - name: Lokalizace a funkce týkající se předpisů
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
@@ -2222,6 +2230,10 @@
               href: ../financials/localizations/rus-transactions-settlement-date.md
             - name: Faktury pro platbu
               href: ../financials/localizations/rus-invoice-payment.md
+            - name: Finanční výkaznictví
+              href: ../financials/localizations/rus-financial-reports.md
+            - name: Vytvoření knihy nákupu
+              href: ../financials/localizations/rus-sales-books-purchase-books.md
         - name: Saúdská Arábie
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2741,6 +2753,8 @@
                   href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
                 - name: "Import konfigurací z\_Lifecycle Services"
                   href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
+                - name: Import konfigurací elektronického výkaznictví ze služby RCS (Regulatory Configuration Services)
+                  href: ../dev-itpro/analytics/rcs-download-configurations.md
                 - name: "Stažení konfigurací z\_Lifecycle Services"
                   href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
                 - name: Import konfigurací
@@ -4149,7 +4163,9 @@
               href: ../supply-chain/warehousing/display-older-batches-within-warehouses.md
             - name: Vyskladnění nejstarší dávky na mobilním zařízení
               href: ../supply-chain/warehousing/pick-oldest-batch.md
-        - name: Upgrade a migrace
+            - name: Architektura průvodce procesem
+              href: ../supply-chain/warehousing/process-guide-framework.md
+        - name: "Upgrade a\_migrace"
           items:
             - name: "Upgrade procesů řízení skladu z\_aplikace Microsoft Dynamics AX 2012 na aplikaci Finance and Operations"
               href: ../supply-chain/warehousing/upgrade-migration-warehouse-management-processes.md

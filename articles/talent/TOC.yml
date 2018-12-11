@@ -4,9 +4,13 @@
     - name: Začínáme
       href: talent-get-started.md
       items:
-        - name: Co je nového a co se změnilo
+        - name: "Co je nového a\_co se změnilo"
           href: whats-new.md
           items:
+            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (27. listopadu 2018)
+              href: whats-new-talent-november-27.md
+            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (15. listopadu 2018)
+              href: whats-new-talent-november-15.md
             - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (31. října 2018)
               href: whats-new-talent-october-31.md
             - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (19. října 2018)
@@ -95,8 +99,6 @@
           href: creating-offers.md
         - name: Vytváření a správa šablon e-mailu
           href: email-templates.md
-        - name: Vytváření sestav a analýzy
-          href: Reporting-Analytics-Attract.md
         - name: Správa rolí a zabezpečení v aplikaci Attract
           href: security-attract.md
         - name: Nastavení pro správu v aplikaci Attract
@@ -266,3 +268,27 @@
           href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Vytvoření kontroly výkonnosti
           href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Řešení potíží s aplikací Talent
+      items:
+        - name: Analytické sestavy nejsou aktualizovány
+          href: analytic-reports-not-updated.md
+        - name: Nelze vytvořit prostředí v centru pro správu PowerApps
+          href: create-envi-powerapps-admin-ctr.md
+        - name: Odpojení klienta aplikace Talent
+          href: client-disconnects.md
+        - name: Způsob nakládání se zálohami databází
+          href: database-backups.md
+        - name: Zabránění zkrácení textu na hierarchii pozic a export do aplikace Visio
+          href: avoid-text-truncation-position-hierarchy-visio.md
+        - name: Spuštění procesu kompenzace
+          href: run-compensation-process.md
+        - name: Uložení průvodců záznamem úloh do LCS a jejich opětovné přehrání
+          href: save-play-task-guides-LCS.md
+        - name: Přístup k soukromým adresám podle role zabezpečení
+          href: security-roles-addresses.md
+        - name: Talent se neobjevuje mezi aplikacemi Microsoft Dynamics 365 (CDS1.0)
+          href: talent-not-in-home-CDS.md
+        - name: 'Uživatel má přístup k Core HR, ale nikoliv k aplikacím Onboard nebo Attract'
+          href: user-access-core-hr.md
+        - name: Možnosti vykazování v aplikaci Talent
+          href: talent-reporting-options.md
