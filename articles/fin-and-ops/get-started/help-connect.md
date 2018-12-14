@@ -3,7 +3,7 @@ title: "Připojení k systému nápovědy"
 description: "Toto téma popisuje součásti systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations a obsahuje přehled způsobu jejich propojení a shrnutí postupu vytvoření vlastní nápovědy."
 author: margoc
 manager: AnnBe
-ms.date: 09/11/2017
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a1449d44149f328f780f02e798c5200595557474
+ms.sourcegitcommit: 87ca6afe817d27de12479f1b7d8155d11d800233
+ms.openlocfilehash: a2ca5f5302751ad2c4ddc3c6921a8a9b6c2d57df
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -68,9 +68,19 @@ Přeložení průvodci úkolem byli poprvé vydání v knihovně APQC Unified Li
 > -   Pokud průvodce úkolem zatím nebyl přeložen, při otevření daného průvodce se zobrazí ve vybraném jazyce pouze některý text (text ovládacích prvků).
 
 ## <a name="creating-custom-help"></a>Vytváření vlastních nápověd
+Můžete použít průvodce záznamem úloh k vytvoření vlastní nápovědy, nebo připojit své webové stránky k panelu Nápověda. 
+
+### <a name="create-custom-help-with-task-guides"></a>Vytvoření vlastní nápovědy pomocí průvodců záznamem úloh
 Vlastní nápovědu pro aplikace Finance and Operations a Retail můžete vytvořit tak, že vytvoříte záznamy úloh, které odpovídají vaší implementaci, a uložíte je do knihovny obchodního procesu LCS. Pro aplikaci Talent nelze vlastní průvodce záznamem úloh vytvořit. 
 
 Pro partnery platí, že pokud knihovnu nastavíte jako podnikovou knihovnu a zahrnete ji do řešení, bude k dispozici vašim odběratelům. Můžete vytvořit také kopii sjednocené globální knihovny APQC a poté otevřít kopii z ní otevřít záznamy úloh, upravit je a uložit záznamy s provedenými změnami. Další informace naleznete v tématu [Vytvoření záznamu úkolu jako dokumentace nebo školení](../../dev-itpro/user-interface/task-recorder.md).
+
+### <a name="connect-a-custom-site"></a>Připojení vlastního webu
+Společnost Microsoft poskytla dokument white paper a vzorový kód, které popisují způsob vytvoření a připojení vlastního webu nápovědy k panelu Nápověda. Další informace naleznete zde: 
+- [Vytvoření vlastní nápovědy pro Finance and Operations (dokument white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
+- [Úložiště GitHub vlastní nápovědy](https://github.com/microsoft/dynamics356f-o-custom-help)
+
+
 
 <a name="additional-resources"></a>Další zdroje
 --------

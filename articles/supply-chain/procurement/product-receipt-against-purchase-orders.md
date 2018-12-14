@@ -1,9 +1,9 @@
 ---
-title: "Příjem produktů proti nákupním objednávkám"
-description: "Tento článek popisuje různé možnosti pro registraci produktů jako přijatých."
+title: "Příjemka produktu proti nákupním objednávkám"
+description: "Toto téma popisuje různé možnosti pro registraci produktů jako přijatých."
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,20 +19,20 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c227664da360f6f8d54b49f15e1b7160aa142ba9
+ms.sourcegitcommit: 09432d278c51301f8b01fef8cbd3353af75a88f3
+ms.openlocfilehash: fea28da19c0aa1e9083091d0693404e0d8cb173c
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
-# <a name="product-receipt-against-purchase-orders"></a>Příjem produktů proti nákupním objednávkám
+# <a name="product-receipt-against-purchase-orders"></a>Příjemka produktu proti nákupním objednávkám
 
 [!include [banner](../includes/banner.md)]
 
 [!include [retail name](../includes/retail-name.md)]
 
-Tento článek popisuje různé možnosti pro registraci produktů jako přijatých.
+Toto téma popisuje různé možnosti pro registraci produktů jako přijatých.
 
 Příjemka produktu je procesem zaznamenávání toho, že výrobky, které byly objednány, byly přijaty, a řádky nákupní objednávky tak mohou být zpracovány pro fakturaci. V některých případech produkty procházejí předběžnou registrací, kde jsou zaznamenány další informace od dodavatele před přijetím produktů. Po příchodu produktů jsou nejprve označeny jako **Registrované**. Produkty pak mohou projít dalším zpracováním, jako je řízení kvality, než budou nakonec označeny jako **Přijato**.
 
@@ -46,8 +46,6 @@ Produkty, které jsou přijaty ve skladu, mohou projít kontrolu kvality předt�
 
 ## <a name="product-receipt"></a>Příjemka produktu
 Nejčastěji se používá akce **Příjemka produktu** na stránce **Nákupní objednávky** k označení produktů jako **Přijato** v nákupní objednávce. Stránka **Zaúčtování příjemky produktu** má různé možnosti pro množství, které je zaúčtováno jako přijaté. Například můžete nastavit pole **Množství** na **Objednané množství** nebo **Množství nynějšího příjmu**. Případně pokud byl použit proces příjezdu do skladu, často se toto pole nastaví na hodnotu **Registrované množství**. Můžete upravit množství na každém řádku objednávky, který bude označen jako **Přijato**, a zohlednit tak případné nesrovnalosti, jako je nadměrná/nedostatečná dodávka. Během příjmu produktu je nutné zadat identifikátor příjemky produktu, což je obvykle odkaz na dodací list od dodavatele. Tento identifikátor je vyžadován pro účetnictví, protože umožňuje kontrolu a audity dodacích listů dodavatel proti přijatému zboží a zaúčtovaným zásobám nebo nákladům.  
-
-Pokud zaměstnanec objednal zboží pomocí nákupní žádanky, tento zaměstnanec může být vyzván, aby přijetí produktu sám potvrdil. Můžete konfigurovat toto chování pomocí pracovního postupu. Podmínky pracovního postupu můžete nakonfigurovat tak, aby odpovídaly vašemu obchodnímu procesu.  
 
 Nákupní objednávky lze vytvářet pro produkty, které nejsou určeny jako zásoby, ale jsou považovány za výdaje. Tato kategorie obsahuje řádky objednávky, kde jsou výrobky označeny jako **Není na skladě** podle jejich skupiny skladového modelu, a také řádků, které používají kategorie zásobování. V tomto případě zboží nemusí procházet registrací doručení a přijetím ve skladu. Místo toho se používá akce **Příjemka produktu** k zaznamenání příjmu přímo v nákupní objednávce, a příjem je založen na objednaném množství, nikoli na zaznamenaném množství.  
 

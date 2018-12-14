@@ -1,9 +1,9 @@
 ---
 title: "Systém nápovědy pro aplikaci Finance and Operations"
-description: "Toto téma poskytuje přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations. Také je zde vysvětleno, jak můžete poskytnout vlastní dokumentaci a školení pro vaši organizaci."
+description: "Toto téma poskytuje přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations."
 author: margoc
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 75be5c5f675885aececb8ac0b25e699882ea77ab
-ms.openlocfilehash: dc2a3d49041acf42814149eb71d4cc021bdad838
+ms.sourcegitcommit: 87ca6afe817d27de12479f1b7d8155d11d800233
+ms.openlocfilehash: dc057faf3cd08ea1c939d0cc35ae404bde59e514
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/17/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/17/2018
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations. Také je zde vysvětleno, jak můžete poskytnout vlastní dokumentaci a školení pro vaši organizaci. 
+Toto téma poskytuje přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations. 
 
 > [!NOTE] 
 > Tyto produkty spolu úzce souvisí: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail a Dynamics 365 for Talent. Stejné funkce se mohou objevovat ve všech třech produktech. U témat, která se vztahují především k aplikaci Retail, proto bude uveden název produktu Dynamics 365 for Retail; u témat souvisejících s aplikací Talent bude uveden název Dynamics 365 for Talent a u témat souvisejících se základním produktem bude uveden název Dynamics 365 for Finance and Operations. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
@@ -48,8 +48,6 @@ Aplikace Finance and Operations obsahuje systém nápovědy, který je založen 
 K nápovědě můžete přistupovat z podokna Nápověda u kteréhokoliv produktu, který používáte. Následující snímek obrazovky znázorňuje Finance and Operations.
 
 ![Podokno Nápověda](./media/help-pane-ops-task-guides.png)
-
-Toto téma popisuje systém nápovědy a vysvětluje, jak lze vytvořit vlastní dokumentaci a zdroje školení pro vaši organizaci.
 
 > [!IMPORTANT]
 > **Průvodci záznamem úloh** nejsou v současné době k dispozici pro Retail, nebo v podokně Nápověda pro Talent (několik průvodců záznamem úloh je k dispozici v podokně Začínáme pro Talent). Na webu docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) je k dispozic procesní nápověda pro aplikaci Retail i Talent.
@@ -83,7 +81,7 @@ Pro přihlášení k odběru kanálu RSS všech aktualizací obsahu Unified Oper
 ### <a name="give-feedback"></a>Poskytnutí zpětné vazby 
 Máme rádi zpětnou vazbu uživatelů. Můžete buď komentovat nebo navrhovat změny našeho obsahu prostřednictvím GitHub. Další informace o našem systému zpětné vazby naleznete v tomto [příspěvku blogu](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-##### <a name="leave-us-feedback"></a>Zanechte nám svůj názor 
+#### <a name="leave-us-feedback"></a>Zanechte nám svůj názor 
 Máte-li nějakou zpětnou vazbu nebo otázky, nechte nám komentář v dolní části stránky.  
 
 1. Klikněte na **Zpětná vazba** a dostanete se ke komentářům dole na stránce, a poté klikněte na buď na **Zpětná vazba k produktu**, nebo **Přihlášení za účelem poskytnutí zpětné vazby k dokumentaci**.
@@ -93,8 +91,6 @@ Máte-li nějakou zpětnou vazbu nebo otázky, nechte nám komentář v dolní �
 2. Začněte psát komentáře a potom klikněte na **Odeslat zpětnou vazbu**.
 
 ![Publikovat komentář](./media/feedback.png)
-
-
 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Navržení změny nebo přispění do obsahu prostřednictvím GitHub
 Chcete-li navrhnout změnu, musíte mít účet GitHub a podepsat licenční smlouvu přispěvatele.  Po odeslání požadavku na vložení zkontrolujeme navrhované změny. V případě potřeby je projednáme interně a ozveme se vám zpět.  
@@ -122,22 +118,7 @@ Chcete-li zažít řízenou interaktivní zkušenost, klikněte na možnost **Sp
 > [!IMPORTANT] 
 > Data, která zadáte při přehrávání průvodce záznamem úloh, jsou skutečná. Pokud jste ve výrobním prostředí, budou zadána data, která skutečně používáte.
 
-### <a name="it-all-begins-with-task-recorder"></a>Vše začíná v Záznamníku úkolů
-
-Průvodci úkolem se vytvoří pomocí Záznamníku úkolů. Při použití Záznamníku úloh jsou zaznamenány všechny akce, které provedete v uživatelském rozhraní aplikace Finance and Operations (například kliknutí na nabídky, změna nastavení a zadávání dat). Kroky, které zaznamenáte, jsou souhrnně označovány termínem záznam úkolu. Jak jsme vysvětlili v předchozím oddílu, lze zobrazit záznamy úloh v podokně Nápověda a přehrát jako průvodce úkolem. Existují však další možnosti, jak lze použít záznamy úloh:
-
--   **Uložení záznamu úkolu do BPM** – Lze uložit záznam úkolu na řádek v hierarchii knihovny BPM ve službě LCS. Při uložení záznamu úkol do BPM bude vygenerován vývojový diagram společně s kroky záznamu. 
-
-    > [!Note]
-    > Chcete-li zobrazit záznam úlohy v podokně Nápověda aplikace Finance and Operations a přehrát ho jako průvodce záznamem úlohy, musíte záznam uložit do knihovny BPM.
-    
--   **Uložení záznamů úkolů jako jako dokumentů Word** – Uložením záznamu úkolu jako dokumentu aplikace Microsoft Word můžete snadno vytvářet tisknutelné přepisy školení pro vaši organizaci.
-
-Další informace o průvodci záznamem úloh najdete v části [Záznamník úloh v aplikaci Finance and Operations](../../dev-itpro/user-interface/task-recorder.md).
-
-### <a name="creating-customized-task-recordings"></a>Vytvoření přizpůsobených záznamů úkolů
-
-Můžete vytvořit vlastní záznamy úkolů nebo můžete stáhnout a upravit záznam úkolu, který poskytuje společnost Microsoft. Proto můžete vytvořit upravenou nápovědu pro svou organizaci, které odpovídá konkrétní implementaci aplikace Finance and Operations. Chcete-li zobrazit záznam úlohy v podokně Nápověda aplikace Finance and Operations a přehrát ho jako průvodce záznamem úlohy, musíte záznam uložit do knihovny BPM ve službě LCS. Pro partnery platí, že pokud knihovnu nastavíte jako podnikovou knihovnu a zahrnete ji do řešení, bude k dispozici vašim odběratelům. Úplné pokyny viz [Vytváření dokumentace nebo školení pomocí záznamu úloh](../../dev-itpro/user-interface/task-recorder.md).
+Záznamník úloh můžete použít k vytvoření vlastního průvodce záznamem úloh. Další informace naleznete v tématu [Vytvoření dokumentace nebo školení pomocí záznamu úloh](../../dev-itpro/user-interface/task-recorder-training-docs.md).
 
 ## <a name="in-product-help"></a>Nápověda v produktu
 Chcete-li získat přístup k obsahu nápovědy v aplikaci Finance and Operations, klikněte na ikonu **Nápověda** (**?**) a vyberte možnost Nápověda nebo stiskněte klávesy Ctrl+Shift+?. V obou případech se otevře podokno Nápověda. Z podokna Nápověda můžete otevřít články nebo průvodce záznamem úloh. 
@@ -184,6 +165,11 @@ Poté, co dokončí správce systému tyto kroky, můžete otevřít podokno Ná
 Přeložení průvodci záznamem úloh jsou v knihovnách "Všechny jazyky" v názvu. Chcete-li v aplikaci Finance and Operations zobrazit lokalizovanou nápovědu k průvodci záznamem úloh, zkontrolujte, zda máte připojenou vhodnou knihovnu. Jazyk, ve kterém se průvodce záznamem úloh zobrazí, je řízen pro každého uživatele v jazykovém nastavení v části **Možnosti** &gt; **Předvolby**. 
 -   Pokud byl průvodce záznamem úloh přeložen, veškerý text Průvodce záznamem úloh se při otevření daného průvodce zobrazí ve vybraném jazyce.
 -   Pokud Průvodce záznamem úloh zatím nebyl přeložen, při otevření daného průvodce se zobrazí ve vybraném jazyce pouze některý text (text ovládacích prvků).
+
+## <a name="creating-custom-help"></a>Vytváření vlastních nápověd
+Můžete vytvořit nápovědu pro své uživatele pomocí vytvoření vlastních průvodců záznamem úloh, nebo připojením své vlastní webové stránky do panelu Nápověda. Další informace viz: 
+- [Postup vytvoření záznamu úloh pro použití jako dokumentace nebo školení](../../dev-itpro/user-interface/task-recorder.md).
+- [Vytvoření vlastní nápovědy pro Finance and Operations (dokument white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>Další zdroje
 

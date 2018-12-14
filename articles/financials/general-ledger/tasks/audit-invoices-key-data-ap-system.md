@@ -17,10 +17,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
-ms.openlocfilehash: 70a7a1f7d7a8221a72addfbee1d21f813df4eb46
+ms.sourcegitcommit: cc995b474e86272b49629f97e1b4d4b4fb597b9d
+ms.openlocfilehash: 946076d682a10becdc2c4a8baff7f52de7893119
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 # <a name="audit-invoices-and-key-data-in-ap-system"></a>Auditování faktur a klíčových dat v systému závazků
@@ -35,34 +35,31 @@ Tato procedura používá ukázkovou společnost USMF. Manažer závazků nebo o
 
 
 ## <a name="create-a-purchase-order"></a>Vytvoření nákupní objednávky
-1. Přejděte na Všechny nákupní objednávky.
-2. Klikněte na položku Nová.
-3. V poli Účet dodavatele kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-4. Zadejte hodnotu do pole Účet dodavatele.
-5. Klikněte na tlačítko OK.
-6. Klikněte na položku Přidat řádek.
-7. Zadejte hodnotu do pole Číslo zboží.
-8. V podokně akcí klikněte na položku Nákup.
-9. Klikněte na tlačítko Potvrdit.
+1. Přejděte na **Všechny nákupní objednávky**.
+2. Klepněte na možnost **Nový**.
+3. Zadejte hodnotu do pole **Účet dodavatele**.
+4. Klikněte na tlačítko **OK**.
+5. Klikněte na **Přidat řádek**.
+6. Zadejte hodnotu do pole **Číslo zboží**.
+7. V podokně akcí klikněte na možnost **Zakoupit**.
+8. Klikněte na tlačítko **Potvrdit**.
 
 ## <a name="post-a-product-receipt"></a>Zaúčtování příjemky produktu
-1. V podokně akcí klikněte na položku Přijmout.
-2. Klikněte na položku Příjemka produktu.
-3. Označte v seznamu vybraný řádek.
-4. Zadejte hodnotu do pole Příjemka produktu.
-5. Klikněte na tlačítko OK.
+1. V podokně akcí klikněte na možnost **Přijmout**.
+2. Klikněte na **Příjemka produktu**.
+3. Zadejte hodnotu do pole **Příjemka produktu**.
+4. Klikněte na tlačítko **OK**.
 
 ## <a name="record-and-match-a-vendor-invoice-to-a-product-receipt"></a>Zaznamenání a párování faktury dodavatele s příjemkou produktu
-1. V podokně akcí klikněte na položku Faktura.
-2. Klikněte na položku Faktura.
-3. Zadejte hodnotu do pole Číslo.
-4. Kliknutím na Výchozí od: Objednané množství otevřete dialogové okno.
-5. Vyberte volbu v poli Výchozí množství pro řádky.
-6. Klikněte na tlačítko OK.
-7. Klepněte na tlačítko Ano.
-8. Klikněte na Spárovat příjemky produktu.
-9. Klikněte na tlačítko OK.
-10. V podokně akcí klikněte na položku Přehled.
-11. Klikněte na položku Párování – podrobnosti.
+1. V podokně akcí klikněte na **Faktura > Faktura**.
+2. Zadejte hodnotu do pole **Číslo**.
+3. Kliknutím na **Výchozí od: Objednané množství** otevřete dialogové okno.
+4. Vyberte možnost v poli **Výchozí množství pro řádky**.
+5. Klikněte na tlačítko **OK**.
+6. Klepněte na tlačítko **Ano**.
+7. Klikněte na **Spárovat příjemky produktu**.
+8. Klikněte na tlačítko **OK**.
+9. V podokně akcí klikněte na položku **Přehled**.
+10. Klikněte na položku **Podrobnosti párování**.
 
 

@@ -3,7 +3,7 @@ title: "Instalace a konfigurace aplikace Microsoft Dynamics 365 for Finance and
 description: "Toto téma popisuje, jak nainstalovat a nakonfigurovat Microsoft Dynamics 365 for Finance and Operations – Warehousing."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 608543c9cfd93c4772e93089e1d174312d8b23a6
-ms.openlocfilehash: 411bb28668f5aa9d07774211814da4e9757ac43c
+ms.sourcegitcommit: 0967b10c2037c24c044f38c49b1b998f6771c66b
+ms.openlocfilehash: a1f3cb65e370154e8f3f94780ffb5cab223c85f8
 ms.contentlocale: cs-cz
-ms.lasthandoff: 03/06/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -74,13 +74,12 @@ Pokud chcete povolit interakci aplikace s konkrétním serverem Finance and Ope
 ## <a name="create-and-configure-a-user-account-in-finance-and-operations"></a>Vytvoření a konfigurace uživatelských účtů v aplikaci Finance and Operations
 Aby mohla aplikace Finance and Operations používat vaši aplikaci Azure AD, je nutné provést následující kroky konfigurace:
 
-1.  Ve službě Azure Active Directory pro aplikaci Finance and Operations vytvořte nový uživatelský účet. Účelem tohoto uživatelského účtu je zajištění přístupu ke konkrétní vlastní službě aplikace Warehousing, kterou zpřístupňuje server Finance and Operations. Po dokončení tohoto kroku budete mít uživatelská pověření WMDP, která sestávají z e-mailové adresy WMDP a hesla WMDP. Další informace o základních krocích přidání uživatelů do Azure AD a Finance and Operations najdete v tomto kurzu: [Přihlášení k předplatnému aplikace Finance and Operations](../../dev-itpro/dev-tools/sign-up-preview-subscription.md).
-2.  Vytvořte uživatele aplikace Finance and Operations, který odpovídá pověření uživatele aplikace Warehousing.
+1.  Vytvořte uživatele aplikace Finance and Operations, který odpovídá pověření uživatele aplikace Warehousing.
     1.  V aplikaci Finance and Operations vyberte položky **Správa systému** &gt; **Společné** &gt; **Uživatelé**.
     2.  Vytvořte nového uživatele.
     3.  Přiřaďte uživatele mobilního zařízení skladu, jak je znázorněno na následujícím snímku obrazovky. [![wh-09-add-user-security-role](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
 
-3.  Přidružte aplikaci služby Active Directory Azure uživateli aplikace Warehousing.
+2.  Přidružte aplikaci služby Active Directory Azure uživateli aplikace Warehousing.
     1.  V aplikaci Finance and Operations vyberte položky **Správa systému** &gt; **Nastavení** &gt; **Aplikace Azure Active Directory**.
     2.  Vytvořit nový řádek.
     3.  Zadejte **ID klienta** (získané v poslední části), zadejte jeho název a vyberte dříve vytvořeného uživatele. Doporučujeme označit všechna zařízení, abyste jim v případě ztráty mohli z této stránky snadno odebrat přístup k aplikaci Finance and Operations. [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)

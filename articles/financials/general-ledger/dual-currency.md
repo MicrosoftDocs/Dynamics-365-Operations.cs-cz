@@ -17,14 +17,16 @@ ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: c026a540fb7d30644d485b6a057c2c46bd7c091d
+ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
 # <a name="dual-currency"></a>Duální měna
+
+[!include [banner](../includes/banner.md)]
 
 Funkce, jež byla představena v aplikaci Microsoft Dynamics 365 for Finance and Operations verze 8.1 (říjen 2018) umožňuje změnu účelu zúčtovací měny a její použití jako druhé zúčtovací měny. Tato funkce je někdy označována jako *duální měna*. Změny pro duální měnu nelze vypnout pomocí konfiguračního klíče nebo parametru. Vzhledem k tomu, že se měna vykazování používá jako druhá zúčtovací měna, způsob výpočtu zúčtovací měny v logice zaúčtování byl změněn.
 
@@ -67,8 +69,8 @@ Následující moduly používají měnu vykazování jako druhou zúčtovací m
 
 - [Hlavní kniha](#general-ledger)
 - [Finanční výkaznictví](#financial-reporting)
-- [Závazky](#accounts-payable/accounts-receivable)
-- [Pohledávky](#accounts-payable/accounts-receivable)
+- [Závazky](#accounts-payable-and-accounts-receivable)
+- [Pohledávky](#accounts-payable-and-accounts-receivable)
 - [Pokladna a banka](#cash-and-bank-management)
 - [Dlouhodobý majetek](#fixed-assets)
 
@@ -90,7 +92,7 @@ Vylepšení modulu **Finanční vykazování** umožňuje zahrnout částky v m�
 
 Tato změna je k dispozici prostřednictvím nastavení **zobrazení měny** v definici sloupce. Vyberete-li **Měna vykazování z hlavní knihy**, nejsou částky ve sloupci převedeny. Namísto toho jsou vykázány přímo z hlavní knihy. Pokud chcete, aby se ve sloupci zobrazovaly převedené částky, vyberte možnost **Převést na XXXX**, kde *XXXX* je měna vykazování, která by se ve sloupci měla zobrazovat. V takovém případě budou částky v zúčtovací měně převedeny na vybranou měnu pomocí existující funkce převodu.
 
-### <a name="accounts-payableaccounts-receivable"></a>Pohledávky / Závazky
+### <a name="accounts-payable-and-accounts-receivable"></a>Pohledávky a závazky
 
 Moduly **Závazky** a **Pohledávky** již sledovaly částky v měně vykazování. Částky však nebyly zobrazena nebo použitý pro různé procesy. Byly provedeny tyto změny:
 

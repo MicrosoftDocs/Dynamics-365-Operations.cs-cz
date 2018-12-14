@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: f68e89422e7124874004a20c2bae5809dcdfb099
+ms.sourcegitcommit: c9f9368dc3e0fb4ed63250889016d6abe7d15a8c
+ms.openlocfilehash: 557e43c05f7015b04380f45fbd69f58a7250829a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -151,7 +151,8 @@ Poznámka: Následující operace se vztahují na nejnovější verzi aplikace D
 | 635 | Refundovat dopravné | Tato operace umožňuje uživateli refunovat dopravné u zrušené objednávky. | Ne | Ne | Ne | Ne | Ne |
 | 644 | Odebrat kód kupónu | Vyzvěte uživatele k odstranění kupónů jejich výběrem v seznamu kupónů, které jsou aktuálně přidruženy k transakci. | Ano | Ano | Ne | Ano | Ne |
 | 1057 | Znovu vytisknout Z | Znovu vytiskněte sestavu Z pro předchozí směnu nebo vybranou směnu. | Ano | Ano | Ano | Ne | Ne |
-| 1216 | Zadejte nové heslo | Tato operace umožní uživateli, který má oprávnění k obnovení hesla, resetovat heslo jiného zaměstnance pomocí dočasného hesla. | Ano | Ano | Ano | Ne | Ne |
+| 1216 | Zadejte nové heslo | Tato operace umožní uživateli, který má oprávnění k obnovení hesla, resetovat heslo jiného zaměstnance pomocí dočasného hesla. | Ano | Ano | Ano | Žádný | Žádný |
+| 1219 | Otevření URL adresy v POS | Tato operace umožňuje uživateli otevření adresy URL konfigurované správcem v pokladním místě. | Ano | Ano | Ano | Ano | Ne | 
 | 109 | Vrátit produkt | Provede vrácení jednotlivých produktů. Další naskenovaný produkt se zobrazí jako vracený produkt, který má záporné množství a cenu. | Ano | Ano | Ne | Ano | Ne |
 | 114 | Transakce vracení | Stornujte předchozí transakci podle jejího čísla příjemky pro vrácení některého nebo všech produktů. | Ano | Ano | Ano | Ano§ | Ne |
 | 1211 | Odvod do trezoru | Provede odvod do trezoru při přesunu peněz z pokladny do trezoru. | Ano | Ano | Ano | Ano | Ne |

@@ -47,14 +47,18 @@
       href: dev-itpro/updating-environments.md
     - name: Testování a problémy s výkonností
       href: dev-itpro/retail-implementation-testing-performance.md
+- name: Distribuovaná správa objednávek (DOM)
+  href: dom.md
 - name: Platby
   items:
     - name: Metody platby
       href: payment-methods.md
     - name: 'Nastavení platební karty, autorizace a záznam'
       href: ../financials/accounts-receivable/credit-card-authorizations.md
-    - name: Konfigurace nominálních hodnot hotovosti pro POS
+    - name: Konfigurace nominálních hodnot hotovosti pro pokladní místo
       href: cash-denominations.md
+    - name: Nastavení scénářů plateb faktur
+      href: payinvoice.md
     - name: Časté dotazy k platbám
       href: dev-itpro/payments-retail.md
 - name: Nákupní objednávky
@@ -213,6 +217,8 @@
       href: Order-fulfillment-POS-setup.md
     - name: Zobrazení oznámení o objednávkách v POS
       href: Notifications-POS.md
+- name: Konfigurace a zpracování výměny u vratek
+  href: orderexchanges.md
 - name: Monitorování a analýza
   items:
     - name: Monitorování výkonnosti prodeje a marží
@@ -235,6 +241,8 @@
       href: price-management.md
     - name: Úpravy ceny a slevy
       href: price-adjustments-discounts.md
+    - name: Uplatnit vícero maloobchodních slev na produkt
+      href: Apply-multiple-retail-discounts.md
     - name: Určení optimální kombinace překrývajících se slev
       href: optimal-combination-overlapping-discounts.md
     - name: Definování slev specifických pro kanál
@@ -488,6 +496,8 @@
       items:
         - name: Rozvržení obrazovky Retail POS
           href: pos-screen-layouts.md
+        - name: Otevřít URL adresu v POS
+          href: Open-URL-in-POS.md
         - name: Instalace návrháře rozložení POS
           href: install-pos-layout-designer.md
         - name: "Retail Modern POS v\_režimu offline"
@@ -508,6 +518,10 @@
           href: dev-itpro/gift-card.md
         - name: Vytvoření a použití brandingu na aplikaci Retail Experience
           href: dev-itpro/create-retail-experience-app.md
+        - name: Nastavení aplikace POS Hybrid na systémech Android a iOS
+          href: dev-itpro/hybridApp.md
+        - name: Přepsání obslužné rutiny POS
+          href: dev-itpro/pos-handler.md
     - name: Hardwarová stanice a rozšiřitelnost
       href: dev-itpro/hardware-station-extensibility.md
     - name: Rozšiřitelnost serveru Retail Server
@@ -562,9 +576,13 @@
           href: dev-itpro/payment-custom-error-messages.md
         - name: Vytvoření instalační služby systému Windows pro konektory platby
           href: dev-itpro/create-windows-installer-payment-connector.md
+        - name: Použití dat platby
+          href: payment-connector-data-fields.md
     - name: Retail SDK
       href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
+        - name: Nadcházející změny v Retail SDK
+          href: dev-itpro/UpcomingSDKChanges.md
         - name: Sloučení systémů sestavení pro Retail a Finance and Operations
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: Vzory rozšiřitelnosti sady Retail SDK

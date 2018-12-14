@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 185d1adc88a29bc3ae722ae2c6f0a2769428bce3
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: f27f228e48da653a9caf666f9053fe45a7c23745
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -164,13 +164,23 @@ Chcete-li zjistit, jak zaregistrovat nového poskytovatele ER, přehrajte si pr�
 
 #### <a name="repository"></a>Úložiště
 
-Úložiště EV obsahuje konfigurace EV. Aktuálně jsou podporovány dva typy úložišť ER: **provozní prostředky** a **projekty LCS**.
+Úložiště EV obsahuje konfigurace EV. Momentálně jsou podporovány čtyři typy úložišť elektronického vykazování: **Prostředky aplikace Operations**, **LCS projekt**, **Systém souborů** a **Regulační konfigurační služby (RCS)**.
 
 Úložiště typu **Provozní prostředky** poskytuje přístup k seznamu konfigurací, které společnost Microsoft jako poskytovatel konfigurace ER vydává v rámci řešení Finance and Operations. Tyto konfigurace lze importovat do aktuální instance aplikace Finance and Operations a používat pro elektronické sestavy. Můžete je používat i pro další lokalizace a přizpůsobení.
 
 Úložiště **projektu LCS** poskytuje přístup k seznamu konfigurací určitého projektu LCS (knihovny majetku projektu LCS), který byl vybrán ve fázi registrace úložiště. ER umožňuje odesílat sdílené konfigurace z aktuální instance aplikace Finance and Operations do určitého úložiště **projektu LCS**. Můžete také importovat konfigurace z úložiště **projektu LCS** do aktuální instance aplikace Finance and Operations.
 
-Požadovaná úložiště **LCS projektu** lze registrovat pro jednotlivé poskytovatele konfigurace jednotlivě z aktuální instance aplikace Finance and Operations. Každé úložiště může být určeno konkrétnímu poskytovateli konfigurace.
+Úložiště **Systém souborů** poskytuje přístup k seznamu konfigurací, které jsou umístěny jako soubory XML ve specifické složce místního systému souborů počítače, kde je hostována služba AOS. Požadovaná složka je vybrána při fázi registrace úložiště. Můžete importovat konfigurace z úložiště **Systém souborů** do aktuální instance aplikace Finance and Operations. Všimněte si, že tento typ úložiště je dostupný v následujících prostředích Dynamics 365 for Finance and Operations:
+- prostředí hostovaná v cloudu nasazená pro vývojářské účely (obsahující testovací modely přiložených sad)
+- prostředí nasazená místně (místní nebo lokální nasazení obchodních dat)
+
+Pro více podrobností navštivte stránku [Import konfigurace elektronického výkaznictví](/electronic-reporting-import-ger-configurations.md).
+
+Úložiště **Instance RCS** poskytuje přístup k seznamu konfigurací určité instance RCS, která byla vybrána ve fázi registrace úložiště. Elektronické výkaznictví vám umožňuje importovat dokončené nebo sdílené konfigurace z vybrané instance RCS do aktuální instance Finance and Operations a použité pro elektronické výkaznictví.
+
+Pro více podrobností navštivte stránku [Import konfigurací elektronického výkaznictví ze služby Regulatory Configuration Services](/rcs-download-configurations.md).
+
+Požadovaná úložiště **LCS projekt**, **Systém souborů** a **Regulatory Configuration Services (RCS)** lze registrovat pro jednotlivé poskytovatele konfigurace jednotlivě z aktuální instance aplikace Finance and Operations. Každé úložiště může být určeno konkrétnímu poskytovateli konfigurace.
 
 ## <a name="supported-scenarios"></a>Podporované scénáře
 ### <a name="building-a-data-model"></a>Vytvoření datového modelu

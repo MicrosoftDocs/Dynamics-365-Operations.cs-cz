@@ -3,7 +3,7 @@ title: "Domovská stránka Hlavního plánování"
 description: "Hlavní plánování umožňuje společnostem určit a vyvážit budoucí potřebu surovin a kapacit ke splnění cílů společnosti."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
-ms.openlocfilehash: 030579ac73d6333ac4ed55433b9679a58247c088
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -58,13 +58,13 @@ Následující mapa výuky zobrazuje hlavní koncepty a úkoly, které tvoří r
 
 ## <a name="quick-links"></a>Rychlé odkazy
 
-|      |   |
-|------|---|
-|        [Hlavní plány](master-plans.md)       |     [Vygenerování plánu s omezeními](./tasks/constrained-plan.md)  |
-| [Vytvoření materiálového plánu pro vedlejší produkty](./tasks/create-material-plan-co-products.md)   |  [Hlavní plánování a funkce více pracovišť](master-plan-multisite-functionality.md)  |
-| [Vytvoření mezipodnikového plánu](./tasks/create-intercompany-plan.md) | [Přehled prognózy poptávky](introduction-demand-forecasting.md)  | 
-|[Redukční klíče](reduction-keys.md)| [Základy hlavního plánování](https://mbspartner.microsoft.com/AX/CourseOverview/1275) (kurz elektronického vzdělávání) (vyžaduje účet CustomerSource)     |
-|  [Hlavní plánování pro zpracování výroby](https://mbspartner.microsoft.com/D365E/CourseOverview/1514) (kurz elektronického vzdělávání) (vyžaduje účet CustomerSource) | [Mezipodnikové hlavní plánování](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (kurz elektronického vzdělávání) (vyžaduje účet CustomerSource)|
+- [Hlavní plány](master-plans.md)  
+- [Vygenerování plánu s omezeními](./tasks/constrained-plan.md)
+- [Vytvoření materiálového plánu pro vedlejší produkty](./tasks/create-material-plan-co-products.md)
+- [Hlavní plánování a funkce více pracovišť](master-plan-multisite-functionality.md)
+- [Vytvoření mezipodnikového plánu](./tasks/create-intercompany-plan.md)
+- [Přehled prognózy poptávky](introduction-demand-forecasting.md)
+- [Redukční klíče](reduction-keys.md)
                                   
 ## <a name="additional-resources"></a>Další zdroje
 

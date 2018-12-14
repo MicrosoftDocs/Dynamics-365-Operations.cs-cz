@@ -3,7 +3,7 @@ title: "Odstraněné nebo zastaralé funkce"
 description: "Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění."
 author: sericks007
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 6750cfc62e2d151ddf760ff3dc36bab9c078b2d9
+ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
+ms.openlocfilehash: 8a3405c434e402af68e59950f1e4d1a31cbf2813
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -87,6 +87,19 @@ Funkce exportující generované elektronické soubory deklarací do složky pro
 | **Ovlivněné oblasti produktu**         | Hlavní kniha, daň |
 | **Možnost nasazení**              | Všechna |
 | **Stav**                         | Odstraněno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20. |
+
+
+### <a name="profit-tax-register-wizard"></a>Průvodce registrem daně ze zisku
+Funkce pro vytvoření šablony pro nové registry daně ze zisku. Tato funkce vytváří objekty X ++ pro nové registry, které jsou pak vytvořeny jako šablony s přidanou odpovídající výpočetní logikou.
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Funkce není kompatibilní s modelem rozšiřitelnosti Dynamics 365 for Finance and Operations. |
+| **Nahrazeno jinou funkcí?**   | Žádný |
+| **Ovlivněné oblasti produktu**         | Daň |
+| **Možnost nasazení**              | Všechna |
+| **Stav**                         | Odstraněno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20. |
+
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 a aktualizací platform update 15
 V této verzi nebyly odebrány ani odepsány žádné funkce. Aktualizace platformy 15 je kumulativní a obsahuje nové a změněné funkce aktualizace platformy 13, aktualizace platformy 14 a aktualizace platformy 15.
@@ -993,6 +1006,17 @@ Konfigurátor výrobku byl používán k dynamické konfiguraci položek z prode
 | **Nahrazeno jinou funkcí?**   | Ano. Konfigurace založená na omezeních byla uvedena v aplikaci Dynamics AX 2012, kde již byl oznámen odpis konfigurátoru výrobku v budoucích verzích. Technologie konfigurace založené na omezeních je zvolena na základních produktech k umožnění konfigurace. Další informace naleznete v tématu [Vytvoření modelu konfigurace produktu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
 | **Ovlivněné oblasti produktu**         | Řízení informací o produktech, Prodej a marketing  |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.      |
+
+### <a name="production-floor-app"></a>Aplikace Production Floor
+Jedná se o aplikaci pro tablety se systémem Windows 8.1 RT a Windows 8.1 Pro.
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Se změnou webového klienta je možné doručit podobnou funkci prostřednictvím nativního klienta Dynamics AX 7.0. Zařízení úkolového lístku poskytuje aplikaci Production Floor rozhraní, které je optimalizováno pro provedení dotykových zařízení a tabletů. |
+| **Nahrazeno jinou funkcí?**   | Ano. Zařízení úkolového lístku, které je nativní součástí Dynamics AX 7.0.                                                                           |
+| **Ovlivněné oblasti produktu**         | Řízení výroby                                                |
+| **Stav**                         | Zastaralé: Datum odstranění z obchodu Microsoft nebylo dosud stanoveno pro tuto funkci.                                                |
+
 
 ### <a name="rename-product-dimension"></a>Změnit název dimenze produktu
 
