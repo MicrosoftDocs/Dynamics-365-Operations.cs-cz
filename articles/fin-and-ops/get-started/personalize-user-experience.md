@@ -32,14 +32,16 @@ ms.lasthandoff: 09/28/2018
 
 Toto téma vysvětluje, jakým způsobem lze přizpůsobit aplikaci Microsoft Dynamics 365 for Finance and Operations.
 
-V aplikaci Finance and Operations existují tři základní třídy individuálních nastavení. 
+V aplikaci Finance and Operations existují tři základní třídy individuálních nastavení.
+
 - Individuální nastavení provedené na stránce nastavení. Mezi příklady patří barevný motiv a časové pásmo.
-- Individuální nastavení týkající se využití stránky, kterému se říká *implicitní*. Například aplikace Finance and Operations uchovává informace o šířce sloupců mřížky, upravíte-li je a rozbalíte a sbalíte stav pevné záložky. 
+- Individuální nastavení týkající se využití stránky, kterému se říká *implicitní*. Například aplikace Finance and Operations uchovává informace o šířce sloupců mřížky, upravíte-li je a rozbalíte a sbalíte stav pevné záložky.
 - Individuální nastavení, které uživatel provádí pro úpravu vzhledu stránky změnou způsobu zobrazení nebo působení prvku na stránce, často prostřednictvím interaktivního režimu individuálního nastavení. Tato individuální nastavení se nazývají *explicitní*. Uživatel může například přidat, skrýt nebo změnit pořadí prvků na stránce.
 
 Všechna individuální nastavení, která uživatel v aplikaci Finance and Operations udělá, jsou určena pouze pro daného uživatele, bez ohledu na typ individuálního nastavení nebo společnost, se kterými uživatel pracuje. Změny, které uživatel provede na stránce, neovlivní ostatní uživatelé v systému.
 
 ## <a name="system-wide-options-for-the-current-user"></a>Systémové možnosti pro aktuálního uživatele
+
 Stránka **Uživatelské možnosti** obsahuje několik systémových nastavení pro aktuálního uživatele. Chcete-li otevřít stránku **Uživatelské možnosti**, vyberte nabídku **Nastavení** (symbol ozubeného kola) na navigační panelu a pak vyberte **Uživatelské možnosti**. Stránka **Uživatelské možnosti** má čtyři karty, které obsahují různá uživatelské nastavení:
 
 - **Vizuální** - Vyberte barvu motivu a výchozí velikost prvků na svých stránkách.
@@ -48,6 +50,7 @@ Stránka **Uživatelské možnosti** obsahuje několik systémových nastavení 
 - **Workflow** – Vyberte možnosti týkající se workflowu.
 
 ## <a name="implicit-personalizations"></a>Implicitní individuální nastavení
+
 Implicitní individuální nastavení jsou ta přizpůsobení, která provádíte pouhou spoluprací s některými ovládací prvky, které pamatují jejich aktuální viditelný stav.
 
 - **Sloupce mřížky** - Šířku sloupce v mřížce můžete upravit výběrem na ukazateli velikosti vlevo nebo vpravo od záhlaví a jeho posunem doleva nebo doprava na požadovanou šířku sloupce. Finance and Operations ukládá šířku, kterou jste pro sloupec nastavili. Změní pak sloupec na tuto šířku pokaždé, když otevřete stránku, která obsahuje dané tuto mřížku.
@@ -59,9 +62,11 @@ Implicitní individuální nastavení jsou ta přizpůsobení, která provádít
 - **Navigační podokno** – Můžete otevřít *Navigační podokno* výběrem tlačítka **Nabídka** tlačítko v levé části každé stránky. (Tlačítku **Nabídka** se někdy říká *hamburger*, *hamburger nabídka*, nebo *hamburger tlačítko*.) Můžete připojit navigační podokno otevřené nebo ho můžete mít ve výchozím nastavení sbalené. Poté, co je připnuto navigační podokno otevřené, Finance and Operations ho zachová otevřené, dokud ho nesbalíte.
 
 ## <a name="explicit-personalizations"></a>Explicitní individuální nastavení
+
 Různí lidé a společnosti mají jiný pohled na data, která jsou pro ně nejdůležitější, nebo údaje, které nevyžadují pro způsob, jakým provozují svou firmu. V aplikaci Finance and Operations můžete si můžete ušít na míru způsob, jakým se informace uspořádají a jak s nimi budete nakládat. Můžete také určit, že některé informace mají být skryty. Tyto funkce jsou klíčem k osobní a produktivnímu rozhraní a jsou to příklady explicitního přizpůsobení. Explicitní individuální nastavení jsou taková, která provádíte explicitně s úmyslem změnit vzhled nebo chování prvku nebo stránky.
 
 ### <a name="shortcut-menu-options"></a>Možnosti místní nabídky
+
 Místní nabídky umožňují několik způsobů explicitně změnit stránku, aby odpovídala vašim požadavkům, nebo požadavkům vaší společnosti. (Místní nabídka se také nazývá *nabídka pravého tlačítka myši* nebo *kontextové nabídka*.)
 
 Nejtypičtější a nejdůležitější změny, které lze na stránce provést, jsou k dispozici přímo jako možnosti místní nabídky. Například od aktualizace Platform Update 17 můžete přidat nebo skrýt sloupce v mřížce pouhým kliknutím pravým tlačítkem na záhlaví sloupce mřížky a pak vybrat **Přidat sloupce** nebo **Skrýt tento sloupec**.
@@ -81,38 +86,39 @@ Můžete použít okno vlastností pro individuální nastavení prvku následuj
 Okna vlastností mohou obsahovat další možnosti přizpůsobení, v závislosti na prvku. Například okno vlastností pro dlaždici umožňuje promítnout dlaždici do řídicího panelu a okno vlastnosti pro řídicí panel umožňuje vytvořit nový pracovní prostor na tomto řídicím panelu.
 
 ### <a name="the-personalization-toolbar"></a>Panel nástrojů individuálních nastavení
+
 Pokud chcete provést více změn stránky nebo provést změny, které nejsou k dispozici prostřednictvím dalších mechanismů (jako je například změnou uspořádání prvků), lze použít panel nástrojů **Individuální nastavení**. Chcete-li otevřít panel nástrojů **Přizpůsobení**, vyberte **Přizpůsobit tento formulář** v okně vlastnosti prvku. Můžete také vybrat **Přizpůsobit tento formulář** ve skupině **Přizpůsobit** na kartě **Možnosti** každého podokna akcí.
 
 [![Panel nástrojů individuálních nastavení](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-#### <a name="navigating-the-page"></a>Navigace na stránce 
-Vaše možnosti navigace na stránce při otevření **Panelu nástrojů individuálních nastavení** závisí na verzi platformy, kterou používáte. 
+#### <a name="navigating-the-page"></a>Navigace na stránce
 
-- Před aktualizací Platform update 19 je při otevření panelu nástrojů **individuálního nastavení** stránka pouze ke čtení (není možné nic zadat) a neinteraktivní (lze pouze provádět změny viditelných prvků na stránce). Pokud chcete provést změny prvků ve sbalené části nebo na jiné kartě, je třeba zavřít panel nástrojů **individuálního nastavení**, rozbalit část nebo přepnout na požadovanou kartu a poté znovu otevřít panel nástrojů **individuálního nastavení**.  
+Vaše možnosti navigace na stránce při otevření **Panelu nástrojů individuálních nastavení** závisí na verzi platformy, kterou používáte.
 
-- Od aktualizace Platform Update 19 je při otevření panelu nástrojů **individuálního nastavení** stránka stále pouze ke čtení, ale je mnohem interaktivnější. Konkrétně lze rozbalit nebo sbalit okno s fakty, přepnout karty a rozbalit nebo sbalit části, když je panel nástrojů **individuálního nastavení** otevřen, stejným způsobem jako je to na stránce obvyklé. Chcete-li použít změnu individuálního nastavení na sbalitelnou část nebo kartu, (jako například skrýt pevnou záložku), spustíte tlačítko, které se zobrazí vedle sbalitelné části nebo karty, když je na něm zaměřena klávesnice nebo na něj najedete kurzorem myši.  
+- Před aktualizací Platform update 19 je při otevření panelu nástrojů **individuálního nastavení** stránka pouze ke čtení (není možné nic zadat) a neinteraktivní (lze pouze provádět změny viditelných prvků na stránce). Pokud chcete provést změny prvků ve sbalené části nebo na jiné kartě, je třeba zavřít panel nástrojů **individuálního nastavení**, rozbalit část nebo přepnout na požadovanou kartu a poté znovu otevřít panel nástrojů **individuálního nastavení**.
+
+- Od aktualizace Platform Update 19 je při otevření panelu nástrojů **individuálního nastavení** stránka stále pouze ke čtení, ale je mnohem interaktivnější. Konkrétně lze rozbalit nebo sbalit okno s fakty, přepnout karty a rozbalit nebo sbalit části, když je panel nástrojů **individuálního nastavení** otevřen, stejným způsobem jako je to na stránce obvyklé. Chcete-li použít změnu individuálního nastavení na sbalitelnou část nebo kartu, (jako například skrýt pevnou záložku), spustíte tlačítko, které se zobrazí vedle sbalitelné části nebo karty, když je na něm zaměřena klávesnice nebo na něj najedete kurzorem myši.
 
 #### <a name="personalization-tools"></a>Nástroje individuálních nastavení
+
 Jsou k dispozici následující nástroje na panelu nástrojů **Přizpůsobení**:
 
 - Použijte nástroj **Vybrat** k výběru a změně vlastností prvku. Zvolte nástroj **Vybrat** a poté vyberte prvek, jehož vlastnosti chcete změnit. Při výběru prvku se otevře okno vlastností prvku a můžete upravit jakékoli vlastnosti pro daný prvek. Proces můžete opakovat pro další prvky, které je možné přizpůsobit na této stránce. Vzhledem k tomu, jakým způsobem jsou některé prvky používány, Finance a Operace vám nedovolí změnit některé z jejich vlastností. Proto při výběru prvku se můžete pravděpodobně setkat s tím, že některé vlastnosti nelze změnit. Nemůžete například skrýt pole, které je povinné.
-
 - Zvolte nástroj pro **Přesunutí**, pokud chcete přesunout prvek na jiné místo v rámci aktuální skupiny prvků. (Prvek nelze přesunout mimo nadřazenou skupinu). Zvolte nástroj **Přesunutí** a poté vyberte prvek, který chcete přesunout. Při výběru prvku Finance and Operations kontroluje stránku a určí, kdy lze přesunout prvek. Poté vytvoří řadu zón k přetažení. Když přetahujete prvek z aktuální skupiny, každá zóna k přetažení je zobrazena jako vybarvená a tučná oblast, kam lze prvek přetáhnout.
-
 - Chcete-li skrýt prvek na stránce, zvolte nástroj **Skrýt**. Zvolte nástroj **Skrýt** a poté vyberte prvek, který chcete skrýt. Když vyberete nástroj **Skrýt**, všechny prvky, které jsou nyní skryté, jsou viditelné a jsou zobrazeny v šedém kontejneru. Poté je lze zrušit jejich skrytí. Výběrem nástroje **Výběr** si můžete prohlédnout, jak bude vypadat stránka s vybranými skrytými prvky.
-    - Od aktualizace Platform Update 18 můžete skrýt povinná pole a části, které obsahují povinná pole. To vám umožňuje vytvářet zjednodušené rozhraní, kde nejsou povinná pole převzatá obchodní logikou zobrazená. Skrytá povinná pole jsou rovněž dočasně viditelná,. když jsou při pokusu o uložení prázdná. 
+
+    - Od aktualizace Platform Update 18 můžete skrýt povinná pole a části, které obsahují povinná pole. To vám umožňuje vytvářet zjednodušené rozhraní, kde nejsou povinná pole převzatá obchodní logikou zobrazená. Skrytá povinná pole jsou rovněž dočasně viditelná,. když jsou při pokusu o uložení prázdná.
 
 - Použijte nástroj **Souhrn**, když chcete zobrazit v oddílu souhrnu pevné záložky prvek. Nástroj Souhrn platí pouze pro pole, která jsou obsažena na oddílu pevné záložky. Když vyberete nástroj **Souhrn**, všechna pole, která byla vybrána jako souhrnná pole, jsou zobrazena v šedém kontejneru. Lze interaktivně přidat pole na souhrn pevné záložky a odstranit pole ze souhrnu pevných záložek výběrem pole.
-
 - Použijte nástroj **Přeskočit**, chcete-li odebrat prvek z řady karet klávesnic na stránce. Když vyberete nástroj **Přeskočit**, všechny prvky, které jsou nyní přeskočené, jsou viditelné a jsou zobrazeny v šedém kontejneru. Můžete je pak znovu přidat do řady karet.
-
 - Zvolte nástroj **Upravit**, když chcete označit prvek jako upravitelný nebo neupravitelný. Když vyberete nástroj **Upravit**, všechny prvky, které jsou nyní neupravitelné, jsou viditelné a jsou zobrazeny v šedém kontejneru. Pak je můžete znovu udělat upravitelnými. Všimněte si, že některá pole jsou povinná a nelze je upravovat. Vedle těchto polí se zobrazí symbol visacího zámku.
-
 - Použijte tlačítko **Vložit** a zobrazíte seznam prvků, které lze vložit na stránku.
+
     - Vyberte nástroj **Pole** pod možností **Vložit** pro přidání pole na stránku. Když použijete nástroj **Pole**, lze přidat pouze pole, která jsou součástí definice stránky, ale nejsou nyní zobrazeny na stránce. Informace o postupu při vytváření nových polí, které nejsou součástí aktuální definice stránky, naleznete v tématu [Vlastní pole](user-defined-fields.md). Po výběru nástroje **Pole** je nutné nejprve vybrat skupinu nebo oblast, kam chcete pole přidat. Dialogové okno zobrazí seznam polí souvisejících se zvolenou skupinou nebo oblastí. V dialogovém okně vyberte jedno nebo více polí pro přidání a zvolte **Vložit**. Chcete-li odebrat pole, které jste dříve přidali, opakujte proces, ale v dialogovém okně zrušte výběr pole.
     - Vyberte nástroj **PowerApp** pod možností **Vložit** a vložte aplikaci vytvořenou pomocí Microsoft PowerApps na stránce. Podrobné informace o tom, jak aplikace PowerApps vkládá na stránku, najdete v tématu [Vložit PowerApps](embed-power-apps.md).
 
 - Zvolte tlačítko **Správa** k zobrazení seznamu možností řízení týkající se všech individuálních nastavení pro aktuální stránku.
+
     - Zvolte **Vymazat**, pokud chcete obnovit výchozí nainstalovaný stav stránky. Vymaže všechna individuální nastavení na aktuální stránce. Neexistuje akce vrácení. Tuto možnost použijte pouze v případě, že jste si jisti, že chcete resetovat stránku.
     - Použijte možnost **Import** k načtení přizpůsobení ze souboru, který jste vy nebo někdo jiný dříve vytvořili pro tuto stránku. Všechna aktuální přizpůsobení stránky budou nahrazena individuálním nastavením z vybraného souboru.
     - Vyberte **Export** pro uložení vašeho přizpůsobení stránky do souboru. Individuální nastavení můžete sdílet s jinými uživateli. Tito uživatelé musí importovat soubor, který obsahuje vaše přizpůsobení stránky.
@@ -122,6 +128,7 @@ Jsou k dispozici následující nástroje na panelu nástrojů **Přizpůsobení
 Když použijete panel nástrojů **Přizpůsobení**, operace ukládání jsou implicitní. Vaše individuální nastavení bude účinné ihned po jeho provedení a není nutné vybírat tlačítko **Uložit**. V některých případech se zobrazí ikona visacího zámku s prvkem pro výběr nástroje. Tento symbol označuje, že nemůžete změnit vlastnosti prvku, které se vztahují k vybranému nástroji, protože změny těchto vlastností zabrání tomu, aby stránka fungovala správně.
 
 ### <a name="adding-a-tile-list-or-link-to-a-workspace"></a>Přidání dlaždice, seznamu nebo odkazu do pracovního prostoru
+
 U některých stránek, které obsahují seznamy, je další funkce přizpůsobení k dispozici. Tlačítko **Přidat do pracovního prostoru** ve skupině **Přizpůsobit** na kartě **Možnosti** podokna akcí zobrazuje informace z aktuálního seznamu v konkrétním pracovním prostoru. Můžete zobrazit filtrované a seřazené zobrazení informací v pracovním prostoru nebo můžete zobrazit výchozí zobrazení. Můžete také určit, zda se informace se zobrazí v pracovním prostoru jako seznam, jako souhrnná dlaždice, která zobrazí počet položek v seznamu, nebo jako odkaz.
 
 [![Přidat na pracovní prostor](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
@@ -133,9 +140,11 @@ U některých stránek, které obsahují seznamy, je další funkce přizpůsobe
 Po přidání seznamu, dlaždice nebo odkazu do pracovního prostoru můžete otevřít pracovní prostor a uspořádat jeho prvky podle potřeby.
 
 ### <a name="adding-a-summary-from-a-workspace-to-a-dashboard"></a>Přidání souhrnu z pracovního prostoru do řídicího panelu
+
 Některé pracovní prostory obsahují dlaždice s početem (tzn. dlaždice s čísly na nich) a můžete také nechat dlaždice zobrazit na řídicím panelu. V pracovním prostoru klepněte pravým tlačítkem na dlaždici s počtem a vyberte **Přizpůsobit**. V okně vlastností dlaždice vyberte **Připnout na řídicí panel**. Příště, až budete otevírat (a aktualizovat) vybraný řídicí panel, zobrazí se vám tento počet pod navigační dlaždicí daného pracovního prostoru. Tento počet můžete vybrat pro přechod přímo na data, která reprezentuje.
 
 ### <a name="personalizing-your-dashboard"></a>Individuální nastavení řídicího panelu
+
 Řídicí panel je často první stránkou, která se zobrazí při otevření aplikace Finance and Operations. Řídicí panel lze přizpůsobit, aby zobrazil pouze dlaždice pracovního prostoru, které chcete zobrazit. Dlaždice můžete také uspořádat tak, aby byly v pořadí, v němž je chcete vidět, přejmenovat navigační dlaždice pracovního prostoru nebo přidat zcela nový pracovní prostor.
 
 Chcete-li přizpůsobit řídicí panel, klikněte pravým tlačítkem na libovolnou dlaždici, a pak vyberte **Přizpůsobit** pro otevření okna vlastností dlaždice.
@@ -145,6 +154,7 @@ Chcete-li přizpůsobit řídicí panel, klikněte pravým tlačítkem na libovo
 - Chcete-li vytvořit novou dlaždici pracovního prostoru, v okně vlastností vyberte **Přidat pracovní prostor**. V dolní části řídicího panelu se vytvoří nová dlaždice pracovního prostoru. Tuto novou dlaždici pracovního prostoru můžete přejmenovat, jak chcete. Můžete také přidat seznamy, odkazy a dlaždice do pracovního prostoru, jak je popsáno v části tématu [Přidání seznamů, odkazů nebo dlaždic do pracovního prostoru](personalize-user-experience.md#adding-a-tile-list-or-link-to-a-workspace).
 
 ## <a name="administration-of-personalization"></a>Správa přizpůsobení
+
 Poté, co jste přizpůsobili stránku, můžete svá individuální nastavení sdílet s dalšími uživateli prostřednictvím exportu přizpůsobené stránky. Pak můžete požádat ostatní uživatele, aby otevřeli přizpůsobenou stránku a importovali přizpůsobený soubor, který jste vytvořili. Případně můžete dát vaše přizpůsobení uživateli s oprávněními správce. Tento uživatel pak může použít soubor personalizace pro mnoho uživatelů najednou.
 
 Uživatelé, kteří mají oprávnění správce, také mohou spravovat přizpůsobení ostatních uživatelů na stránce **Nastavení přizpůsobení**. Tato stránka obsahuje čtyři karty:

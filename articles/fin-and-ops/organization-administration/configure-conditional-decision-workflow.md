@@ -34,24 +34,24 @@ Následně nakonfigurujte vlastnosti podmíněného rozhodnutí pomocí následu
 Podmíněné rozhodnutí je bod, ve kterém se workflow dělí na dvě větve. Pokud budete chtít nakonfigurovat podmíněné rozhodnutí v editoru workflowu, klikněte pravým tlačítkem myši na podmíněné rozhodnutí a kliknutím na tlačítko **Vlastnosti** otevřete formulář **Vlastnosti**.
 
 ## <a name="name-a-decision"></a>Pojmenování rozhodnutí
+
 Pomocí následujících kroků zadejte název podmíněného rozhodnutí.
-1.  V levém podokně klepněte na tlačítko **Základní nastavení**.
-2.  V poli **Název** zadejte jedinečný podmíněného rozhodnutí.
+
+1. V levém podokně klepněte na tlačítko **Základní nastavení**.
+2. V poli **Název** zadejte jedinečný podmíněného rozhodnutí.
 
 ## <a name="set-conditions"></a> Stanovení podmínek
+
 V tomto okamžiku systém určí, která větev se použije, vyhodnocením odeslaného dokumentu k určení, zda vyhovuje konkrétním podmínkám.
-1.  V levém podokně klepněte na tlačítko **Základní nastavení**.
-2.  Klikněte na možnost **Přidat podmínku**.
-3.  Zadání podmínky
-4.  Zadejte všechny další podmínky, pokud jsou požadovány.
-5.  Chcete-li ověřit, zda jsou zadané podmínky nastaveny správně, postupujte následovně:
-    1.  Klepnutím na tlačítko **Test** otevřete formulář **Podmínka testovacího workflowu**.
-    2.  Vyberte v oblasti **Ověřit podmínku** formuláře záznam.
-    3.  Klepněte na možnost **Test**. Systém záznam vyhodnotí a určí, zda odpovídá zadaným podmínkám.
-    4.  Kliknutím na tlačítko **OK** nebo **Zrušit** se vraťte do formuláře **Vlastnosti**.
 
+1. V levém podokně klepněte na tlačítko **Základní nastavení**.
+2. Klikněte na možnost **Přidat podmínku**.
+3. Zadání podmínky
+4. Zadejte všechny další podmínky, pokud jsou požadovány.
+5. Chcete-li ověřit, zda jsou zadané podmínky nastaveny správně, postupujte následovně:
 
-
-
-
+    1. Klepnutím na tlačítko **Test** otevřete formulář **Podmínka testovacího workflowu**.
+    2. Vyberte v oblasti **Ověřit podmínku** formuláře záznam.
+    3. Klepněte na možnost **Test**. Systém záznam vyhodnotí a určí, zda odpovídá zadaným podmínkám.
+    4. Kliknutím na tlačítko **OK** nebo **Zrušit** se vraťte do formuláře **Vlastnosti**.
 

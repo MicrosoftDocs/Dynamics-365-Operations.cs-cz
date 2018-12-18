@@ -34,11 +34,13 @@ Výstrahy představují systém oznámení kritické události v aplikaci Micros
 Při plánování podnikových zdrojů (ERP) existují některé typické scénáře, kde lze použít funkci výstrahy v modulu Finance and Operations. Několik příkladů:
 
 ### <a name="scenario-1-create-an-alert-rule-for-new-sales-orders"></a>Scénář 1: Vytvoření pravidla výstrahy pro nové prodejní objednávky
+
 1. Otevřete stránku **Všechny prodejní objednávky**.
 2. V podokně akcí na kartě **Možnosti** ve skupině **Sdílení** vyberte **vytvořit vlastní oznámení**.
 3. V dialogovém okně **vytvořit pravidlo výstrahy** na pevné záložce **Upozornit mě při** v poli **Událost** vyberte **Záznam byl vytvořen**.
 
 ### <a name="scenario-2-create-an-alert-rule-for-postponement-of-a-delivery-date"></a>Scénář 2: Vytvoření pravidla výstrahy pro odložení data doručení
+
 1. Otevřete stránku **Všechny nákupní objednávky**.
 2. Vyberte ID nákupní objednávky pro přístup k podrobnostem o nákupní objednávce.
 3. Rozbalte pevnou záložku **Záhlaví nákupní objednávky**.
@@ -49,6 +51,7 @@ Při plánování podnikových zdrojů (ERP) existují některé typické scén�
 Po ukončení dialogového okna **Vytvořit pravidlo výstrahy** se zobrazí vaše pravidlo zobrazí na stránce **Správa pravidel výstrah**. Můžete použít stránku **Správa pravidel výstrah** k aktualizaci existujících pravidel výstrah. Můžete například upravit aktivační události, aktualizovat události oznámení a aktualizovat data vypršení platnosti. Chcete-li otevřít stránku **Správa pravidel výstrah**, použijte tlačítko **Upozornit mě** na kartě **Možnosti** podokna akcí.
 
 ## <a name="what-occurs-when-an-alert-rule-is-created"></a>Co se stane, když se vytvoří pravidlo výstrahy?
+
 Při vytváření pravidel výstrah můžete přidružit k určitému poli předem definované události. Například nastane datum zadané v poli nebo se změní obsah pole. Rovněž je možné přiřadit událost záznamům na konkrétní stránce. Například je vytvořen záznam nebo odstraněn záznam.
 
 Vyskytne-li se u daného pole nebo u záznamu na stránce vybraná událost, odešle se vám výstraha. Například vytvoříte pravidlo, ve kterém přiřadíte **datum dodání** na řádek specifické nákupní objednávky s událostí **splatnost před určitou dobou**. Časový rámec nastavíte na pět dní. V tomto případě se výstraha odešle pět dnů po datu doručení tohoto řádku nákupní objednávky.
@@ -56,9 +59,11 @@ Vyskytne-li se u daného pole nebo u záznamu na stránce vybraná událost, ode
 Dále můžete upřesnit pravidla výstrah nastavením podmínek. Například můžete být informováni o nových nákupních objednávkách vytvořených pro konkrétní dodavatele.
 
 ## <a name="preparing-for-an-alert"></a>Příprava pro výstrahu
+
 Před nastavením pravidla výstrahy rozhodněte, kdy nebo za jakých situací chcete přijímat výstrahy. Pokud víte, o kterých událostech chcete být vyrozuměni, vyhledejte v aplikaci Finance and Operations stránku, kde se zobrazují data, která událost způsobila. Událost může být nadcházející datum nebo nastalá specifická změna. Musíte tedy vyhledat stránku, kde je zadáno datum, nebo kde se objevuje pole, které se změní, nebo nový záznam, který je vytvořen. Jakmile máte tyto informace k dispozici, můžete vytvořit pravidlo výstrahy.
 
 ## <a name="components-of-an-alert-rule"></a>Komponenty pravidla výstrahy
+
 Pravidlo výstrahy obsahuje pět komponent:
 
 - **Událost** – událost, která spouští pravidlo výstrahy, může být datum nebo nastalá specifická změna, ke které dochází. Události definujete na pevné záložce **Odeslat e-mailové výstrahy pro změny stavu úlohy** dialogového okna **vytvořit pravidlo výstrahy**.
@@ -71,5 +76,6 @@ Pravidlo výstrahy obsahuje pět komponent:
     > Tato možnost je omezen na správce organizace.
 
 ## <a name="email-notifications-from-alerts"></a>E-mailová oznámení z výstrah
+
 E-mailová oznámení z výstrah dosud nejsou povolena. To bude k dispozici v budoucí aktualizaci.
 
