@@ -18,10 +18,10 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 770796b42e79ad616b469e1dbf5149789bff0788
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 7eb6d743131937081ce83b31988d792185cb28b2
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -31,28 +31,29 @@ ms.lasthandoff: 08/08/2018
 
 <span data-ttu-id="f503a-104">Toto téma popisuje systém workflowu v aplikaci Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="f503a-104">This topic describes the workflow system in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
-<a name="what-is-workflow"></a><span data-ttu-id="f503a-105">Co je workflow?</span><span class="sxs-lookup"><span data-stu-id="f503a-105">What is workflow?</span></span>
------------------
+## <a name="what-is-workflow"></a><span data-ttu-id="f503a-105">Co je workflow?</span><span class="sxs-lookup"><span data-stu-id="f503a-105">What is workflow?</span></span>
 
 <span data-ttu-id="f503a-106">Termín *workflow* lze definovat dvěma způsoby: workflow jako systém a workflow jako obchodní proces.</span><span class="sxs-lookup"><span data-stu-id="f503a-106">The term *workflow* can be defined in two ways: as a system and as a business process.</span></span>
+
 ### <a name="workflow-is-a-system"></a><span data-ttu-id="f503a-107">Workflow je systém</span><span class="sxs-lookup"><span data-stu-id="f503a-107">Workflow is a system</span></span>
 
 <span data-ttu-id="f503a-108">Workflow je systém nainstalovaný s aplikací Finance and Operations a běží na aplikačním objektovém serveru (AOS).</span><span class="sxs-lookup"><span data-stu-id="f503a-108">Workflow is a system that is installed with Finance and Operations and runs on the Application Object Server (AOS).</span></span> <span data-ttu-id="f503a-109">Systém workflowu nabízí funkce, pomocí kterých lze vytvářet individuální workflowy nebo obchodní procesy.</span><span class="sxs-lookup"><span data-stu-id="f503a-109">The workflow system provides functionality that you can use to create individual workflows, or business processes.</span></span>
 
 ### <a name="workflow-is-a-business-process"></a><span data-ttu-id="f503a-110">Workflow je obchodní proces</span><span class="sxs-lookup"><span data-stu-id="f503a-110">Workflow is a business process</span></span>
 
-<span data-ttu-id="f503a-111">Workflow představuje obchodní proces.</span><span class="sxs-lookup"><span data-stu-id="f503a-111">A workflow represents a business process.</span></span> <span data-ttu-id="f503a-112">Definuje tok dokumentu nebo jeho procházení systémem zobrazením, kdo musí splnit úkol, provádět rozhodování nebo schválení dokumentu.</span><span class="sxs-lookup"><span data-stu-id="f503a-112">It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document.</span></span> <span data-ttu-id="f503a-113">Následující obrázek znázorňuje příklad workflowu pro sestavy výdajů.</span><span class="sxs-lookup"><span data-stu-id="f503a-113">For example, the following illustration shows a workflow for expense reports.</span></span> 
+<span data-ttu-id="f503a-111">Workflow představuje obchodní proces.</span><span class="sxs-lookup"><span data-stu-id="f503a-111">A workflow represents a business process.</span></span> <span data-ttu-id="f503a-112">Definuje tok dokumentu nebo jeho procházení systémem zobrazením, kdo musí splnit úkol, provádět rozhodování nebo schválení dokumentu.</span><span class="sxs-lookup"><span data-stu-id="f503a-112">It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document.</span></span> <span data-ttu-id="f503a-113">Následující obrázek znázorňuje příklad workflowu pro sestavy výdajů.</span><span class="sxs-lookup"><span data-stu-id="f503a-113">For example, the following illustration shows a workflow for expense reports.</span></span>
 
-![Workflow s prvky, které jsou přiřazeny uživatelům](./media/workflow_user.gif) 
+![Workflow s prvky, které jsou přiřazeny uživatelům](./media/workflow_user.gif)
 
 <span data-ttu-id="f503a-115">Abychom lépe pochopili tento workflow, předpokládejme, že Stanislav odešle vyúčtování výdajů s částkou 7 000 USD.</span><span class="sxs-lookup"><span data-stu-id="f503a-115">To better understand this workflow, suppose that Sam submits an expense report for USD 7,000.</span></span> <span data-ttu-id="f503a-116">V tomto scénáři musí Ivan zkontrolovat účtenky, které mu Stanislav předal.</span><span class="sxs-lookup"><span data-stu-id="f503a-116">In this scenario, Ivan must review the receipts that Sam routes to him.</span></span> <span data-ttu-id="f503a-117">Poté musí být vyúčtování výdajů schváleno Františkem a Šárkou.</span><span class="sxs-lookup"><span data-stu-id="f503a-117">Then Frank and Sue must approve the expense report.</span></span> <span data-ttu-id="f503a-118">Nyní předpokládejme, že Stanislav odešle vyúčtování výdajů s částkou 11 000 USD.</span><span class="sxs-lookup"><span data-stu-id="f503a-118">Now suppose that Sam submits an expense report for USD 11,000.</span></span> <span data-ttu-id="f503a-119">V tomto scénáři musí Ivan zkontrolovat účtenky a František, Šárka a Anna musí toto vyúčtování výdajů schválit.</span><span class="sxs-lookup"><span data-stu-id="f503a-119">In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.</span></span>
 
 ## <a name="benefits-of-using-the-workflow-system"></a><span data-ttu-id="f503a-120"> Výhody používání systému workflowu</span><span class="sxs-lookup"><span data-stu-id="f503a-120">Benefits of using the workflow system</span></span>
 
 <span data-ttu-id="f503a-121">Používání systému workflowu v organizaci má několik výhod:</span><span class="sxs-lookup"><span data-stu-id="f503a-121">There are several benefits of using the workflow system in your organization:</span></span>
--   <span data-ttu-id="f503a-122">**Konzistentní procesy:** – Můžete definovat schvalovací proces pro specifické dokumenty, například nákupní požadavky a vyúčtování výdajů.</span><span class="sxs-lookup"><span data-stu-id="f503a-122">**Consistent processes** – You can define how specific documents, such as purchase requisitions and expense reports, are processed.</span></span> <span data-ttu-id="f503a-123">Používáním systému workflowu lze zajistit, aby byly dokumenty zpracovávány a schvalovány jednotným a efektivním způsobem.</span><span class="sxs-lookup"><span data-stu-id="f503a-123">By using the workflow system, you ensure that documents are processed and approved in a consistent and efficient manner.</span></span>
--   <span data-ttu-id="f503a-124">**Viditelnost procesů:** – Můžete sledovat stav, historii a výkonnostní metriku instancí workflowu.</span><span class="sxs-lookup"><span data-stu-id="f503a-124">**Process visibility** – You can track the status, history, and performance metrics of workflow instances.</span></span> <span data-ttu-id="f503a-125">To umožňuje určit, zda je potřeba provést změny workflowu ke zvýšení efektivity.</span><span class="sxs-lookup"><span data-stu-id="f503a-125">This helps you determine whether changes should be made to the workflow to improve efficiency.</span></span>
--   <span data-ttu-id="f503a-126">**Centralizovaný seznam pracovních položek** – Uživatelé mohou zobrazit centralizovaný seznam pracovních položek k zobrazení úkolů workflowu a schválení, které mají přiřazeny.</span><span class="sxs-lookup"><span data-stu-id="f503a-126">**Centralized work list** – Users can view a centralized work list that displays the workflow tasks and approvals that are assigned to them.</span></span>
+
+- <span data-ttu-id="f503a-122">**Konzistentní procesy:** – Můžete definovat schvalovací proces pro specifické dokumenty, například nákupní požadavky a vyúčtování výdajů.</span><span class="sxs-lookup"><span data-stu-id="f503a-122">**Consistent processes** – You can define how specific documents, such as purchase requisitions and expense reports, are processed.</span></span> <span data-ttu-id="f503a-123">Používáním systému workflowu lze zajistit, aby byly dokumenty zpracovávány a schvalovány jednotným a efektivním způsobem.</span><span class="sxs-lookup"><span data-stu-id="f503a-123">By using the workflow system, you ensure that documents are processed and approved in a consistent and efficient manner.</span></span>
+- <span data-ttu-id="f503a-124">**Viditelnost procesů:** – Můžete sledovat stav, historii a výkonnostní metriku instancí workflowu.</span><span class="sxs-lookup"><span data-stu-id="f503a-124">**Process visibility** – You can track the status, history, and performance metrics of workflow instances.</span></span> <span data-ttu-id="f503a-125">To umožňuje určit, zda je potřeba provést změny workflowu ke zvýšení efektivity.</span><span class="sxs-lookup"><span data-stu-id="f503a-125">This helps you determine whether changes should be made to the workflow to improve efficiency.</span></span>
+- <span data-ttu-id="f503a-126">**Centralizovaný seznam pracovních položek** – Uživatelé mohou zobrazit centralizovaný seznam pracovních položek k zobrazení úkolů workflowu a schválení, které mají přiřazeny.</span><span class="sxs-lookup"><span data-stu-id="f503a-126">**Centralized work list** – Users can view a centralized work list that displays the workflow tasks and approvals that are assigned to them.</span></span>
 
 
 ## <a name="workflow-content"></a><span data-ttu-id="f503a-127">Obsah workflowu</span><span class="sxs-lookup"><span data-stu-id="f503a-127">Workflow content</span></span>
