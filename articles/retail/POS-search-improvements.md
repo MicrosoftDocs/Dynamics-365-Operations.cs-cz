@@ -66,7 +66,7 @@ Zkušenosti při hledání místních produktů jsou uživatelsky přívětivěj
 - Maloobchodníci mohou nyní nakonfigurovat vyhledávání produktů pro zobrazení návrhů vyhledávání, když uživatelé zadávají názvy produktů. Nové nastavení této funkce je k dispozici v profilu funkce POS pod skupinu s názvem **Vyhledávání produktu**. Toto nastavení se nazývá **Zobrazit návrhy vyhledávání při zadávání**. Tato funkce pomůže zaměstnancům rychle najít produkt, který hledají, protože nemusí ručně zadávat celé jméno.
 - Algoritmus vyhledávání produktu nyní hledá vyhledávané termíny ve vlastnosti produktu **Vyhledávání jména**.
 
-![Návrhy produktu](./media/Productsuggestions.png "Návrhy produktu")
+    ![Návrhy produktu](./media/Productsuggestions.png "Návrhy produktu")
 
 ## <a name="customer-search"></a>Hledat zákazníka
 

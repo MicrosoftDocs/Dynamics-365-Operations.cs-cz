@@ -40,6 +40,7 @@ Následující obrázek ukazuje vztahy mezi různými entitami, které tvoří k
 ![Entity rozložení obrazovky POS](../retail/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a>Vizuální profil
+
 Vizuální profily jsou přiřazeny registrům a určují vizuální prvky, které jsou specifické pro registrační pokladnu a sdílené mezi uživateli. Každý uživatel, který se přihlásí k registrační pokladně, bude mít stejný motiv, barvy a obrázky.
 
 ![Uvítací obrazovka POS se světlým motivem](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
@@ -55,6 +56,7 @@ Vizuální profily jsou přiřazeny registrům a určují vizuální prvky, kter
 - **Pozadí aplikace** - můžete určit obrázek pozadí, který bude použit namísto plné barvy motivu v celé aplikaci. Pokud jde o pozadí při přihlašování, velikost souboru by měla být co nejmenší.
 
 ## <a name="screen-layouts"></a>Rozložení obrazovky
+
 Konfigurace rozložení obrazovky určují akce, obsah a umístění ovládacích prvků uživatelského rozhraní na úvodní obrazovce POS a obrazovce **Transakce**.
 
 ![Zobrazení rozložení obrazovky POS](../retail/media/POS-Screen-Layout-View.png)
@@ -95,6 +97,7 @@ Při spuštění aplikace POS automaticky zvolí nejbližší velikost rozložen
 ![Velikosti rozvržení POS](../retail/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>Mřížky tlačítek
+
 Pro každou velikost rozvržení v rozvržení obrazovky můžete konfigurovat a přiřadit mřížky tlačítek pro úvodní obrazovku POS a obraovku **Transakce**. Mřížky tlačítek pro úvodní obrazovku jsou automaticky rozloženy zleva doprava od nejnižšího čísla (úvodní obrazovka 1) k nejvyššímu číslu.
 
 V úplném rozložení POS je umístění mřížky tlačítek určeno v návrháři rozložení obrazovky.
@@ -104,6 +107,7 @@ V kompaktním rozvržení POS jsou mřížky tlačítek automaticky rozvrženy o
 ![Mřížky tlačítek kompaktního rozvržení](../retail/media/Compact-View-Button-Grids.png)
 
 ### <a name="images"></a>Obrázky
+
 Pro každou velikost rozvržení na obrazovce rozvržění můžete určit obrázky, které mají být zahrnuty v uživatelském rozhraní POS. V úplném rozložení POS lze zadat jeden obrázek pro úvodní obrazovku. Tento obrázek se zobrazí jako první prvek uživatelského rozhraní vlevo. Na obrazovce **Transakce** lze použít obrázky jako obrázky karty nebo jako logo. Kompaktní rozvržení POS tyto obrázky nepoužívá.
 
 ### <a name="screen-layout-designer"></a>Návrhář rozložení obrazovky
@@ -141,11 +145,13 @@ Návrhář úplného rozložení umožňuje uživatelům přetáhnout ovladací 
     - **Vlastní ovládací prvek**- vlastní ovládací prvek funguje jako zástupce v rozvržení obrazovky a umožňuje vám rezervovat místo pro vlastní obsah. Vlastní ovládací prvek je dostupný pouze pro úplné rozložení.
 
 ### <a name="compact-layout-designer"></a>Návrhář kompaktního rozložení
+
 Stejně jako návrhář úplného rozvržení vám návrhář kompaktního rozložení umožňuje nakonfigurovat rozvržení obrazovky POS pro telefony a malé tablety. Nicméně v tomto případě je samotné rozložení pevné. Můžete konfigurovat ovládací prvky v roložení pravým tlačítkem myši a použitím nabídky zástupců. Nelze však použít operace uchopení a přetažení pro další obsah.
 
 ![Návrhář kompaktního rozložení](../retail/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a>Návrhář mřížky tlačítek
+
 Návrhář mřížky tlačítek vám umožňuje konfigurovat mřížky tlačítek, které lze použít na úvodní obrazovce POS a obrazovce **Transakce** pro úplné a kompaktní rozvržení. Stejnou mřížku tlačítek lze použít napříč rozvrženími a typy rozvržení. Stejně jako návrhář rozvržení obrazovky používá návrhář mřížky tlačítek technologii nasazení ClickOnce ke stažení, instalaci a spuštění nejnovější verze aplikace pokaždé, když k ní uživatel přistupuje. Je nutné zkontrolovat požadavky prohlížeče pro ClickOnce. Některé prohlížeče, jako je například Google Chrome, požadují rozšíření.
 
 ![Návrhář mřížky tlačítek](../retail/media/Button-Grid-Designer.png)

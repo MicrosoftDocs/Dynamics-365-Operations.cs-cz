@@ -36,6 +36,7 @@ Když vytvoříte prodejní objednávku, můžete vybrat způsob dodání v záh
 Retail obsahuje funkce, které umožňují uživatelům omezit způsoby dodání, které jsou platné pro konkrétní místa expedice, způsoby dodání, které lze použít v některém kanálu a způsoby dodání, které lze použít pro produkt. Náklady lze definovat také tak, aby byly přidány další poplatky do objednávky zákazníka na základě režimů doručení, které jsou vybrány pro prodejní objednávku a celkovou hodnotu objednávky.
 
 ## <a name="define-delivery-modes"></a>Definování režimů dodání
+
 Dříve než určíte dodání, které režimy dodání lze použít pro objednávky call centra a definujete přidružené náklady a pravidla, je nutné definovat způsoby dodání. Přejděte na **Prodej a marketing\> Nastavení \> Distribuce \> Způsoby dodání**. Nový způsob dodání vytvoříte kliknutím na položku **Nový**. Nebo vyberte existující režim dodání v seznamu a pak vyberte **upravit** k provedení změn.
 
 V poli **způsob dodání**, zadejte veškeré kombinace s alfanumerickými znaky založené na vašem obchodní požadavku. Poté můžete vybrat pole **popis** pro zadání dalších kontextu. Pole **Skupina nákladů** a **urychlené zpracování** jsou volitelná a budou vysvětlena podrobněji dále v tomto tématu.
@@ -47,11 +48,13 @@ Na pevné záložce **produkty** můžete určit, pro které produkty nebo kateg
 Na pevné záložce **Adresy** můžete určit, pro které země, regiony nebo státy lze režim dodání použít a pro které ne. Například objednávky, které jsou odesílány na Havajské ostrovy nebo Aljašku, nemají nárok na doručení po zemi. Proto by měly být tyto státy vyloučeny z jakéhokoli režimu dodání, který je spojen se službou pozemního dodání, ale jsou zahrnuty do jakéhokoli režimu dodání, který je spojený se službou leteckého dodání.
 
 ## <a name="validate-delivery-modes-for-a-call-center-order"></a>Ověření způsobů dodání pro objednávku kontaktního střediska
+
 Poté, co jsou definovány způsoby dodání, je nutné spustit dávkovou úlohu **zpracování způsobů dodání**. Tato úloha ke zpřístupní dostupné způsoby dodání, aby bylo možné je použit v procesech prodejní objednávky pro maloobchodní kanály. Aby bylo možné spustit úlohu **zpracování způsobů dodání**, přejděte na **maloobchod \> maloobchodní IT \> zpracování způsobů dodání**. Tento úkol by měl být spuštěn pokaždé, když jsou přidány nové způsoby dodání do maloobchodní sítě nebo jsou provedeny změny existujících vztahů režimu/kanálu dodání.
 
 Po spuštění dávkové úlohy **zpracování způsobů dodání** můžete přejít na **maloobchod \> kanály \> kontaktní střediska \> všechna kontaktní střediska**. Na stránce **všechna kontaktní střediscka** v podokně akcí na kartě **nastavení** vyberte **způsoby dodání**. Stránka **Způsoby dodání** uvádí všechny platné způsoby dodání pro vybraný kanál call centra. Chcete-li upravit existující způsoby dodání nebo přidat nové způsoby dodání, vyberte **Správa způsobů dodání**. Všimněte si, že úlohu **zpracování způsobů dodání** je nutné provést při každé změně.
 
 ## <a name="define-charges-for-delivery-services"></a>Definování nákladů na služby dodání
+
 Při vytváření prodejních objednávek pro odběratele může společnost chtít přidat náklady, které se vypočítávají automaticky podle způsobů dodání, které jsou vybrány pro objednávku. Tyto náklady lze konfigurovat tak, aby byly stejné pro všechny zákazníky a způsoby dodání. Případně se náklady mohou lišit v závislosti na odběrateli a způsobech dodání, které jsou vybrány pro prodejní objednávku.
 
 Pokud chcete definovat náklady, přejděte na **maloobchod \> nastavení kanálu \> náklady \> automatické náklady**. Vyberte **nový** pro přidání nových nákladů. Nebo vyberte existující položku a poté vyberte **upravit**.
@@ -73,6 +76,7 @@ Můžete vybrat kombinaci kategorie nákladů, v závislosti na požadavcích va
 ![Příklad kombinovaných vrstvených poplatků](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Použití způsobů dodání během zadání objednávky v kontaktním středisku
+
 Při vytvoření nové prodejní objednávky musí být zadána hodnota v poli **způsob dodání** na pevné záložce **dodání** záhlaví prodejní objednávky. Tato pole může být vyplněno automaticky podle výchozích hodnot ze záznamu odběratele.
 
 Způsob dodání, který je definován v záhlaví objednávky, je automaticky zkopírován do řádků prodejní objednávky při jejich vytváření. Nastavení způsobu dodání pro určitou položku řádku lze však změnit na kartě **dodání** v části **podrobnosti řádku** na stránce zadávání prodejní objednávky.
@@ -80,11 +84,13 @@ Způsob dodání, který je definován v záhlaví objednávky, je automaticky z
 Pokud vybraný způsob dodání pro vybraný produkt nebo adresu dodání, které jsou definovány pro objednávku nebo řádek objednávky, není platný, zobrazí se chybová zpráva. Potom je nutné vybrat způsob dodání, který byl definován pro tento produkt nebo konfiguraci adresy.
 
 ## <a name="calculation-of-delivery-charges-during-entry-of-order"></a>Výpočet nákladů na dodání během zadání objednávky
+
 Pokud je zapnuto nastavení **povolit dokončení objednávky** pro kontaktní středisko, dopravné bude automaticky vypočítáno pro prodejní objednávky, když uživatel vybere **Dokončit**. Tato zpráva se zobrazí v horní části stránky **souhrn prodejní objednávky**: "Vypočítané vrstvené náklady." Vypočtené náklady jsou přidány k hodnotě pole **prodeje celkem**. Na pevné záložce **částka** pole **náklady** zobrazuje celkovou částku všech nákladů, které byly vypočteny pro objednávku a řádky. Chcete-li zobrazit podrobnější rozdělení nákladů, vyberte **objednávka** na stránce **souhrn prodejní objednávky** a poté vyberte možnost **náklady** k zobrazení, přidání nebo úpravě nákladů. Všimněte si, že výpočet nákladů na dodání v záhlaví objednávky je založen na způsobu dodání, která je připojena k záhlaví. Náklady na dodání na úrovni řádku se vypočítávají podle způsobu dodání, nastaveného pro prodejní řádek. Jestliže se používá několik způsobů dodání na různých řádcích, více nákladů může být použito a sečteno. Celková částka je pak uvedenya v poli **náklady** na stránce **souhrn prodejní objednávky**.
 
 Pokud je nastavení **povolit dokončení objednávky** vypnuté, uživatelé musí ručně spustit výpočet nákladů. Na stránce **Prodejní objednávka** v podokně akcí na kartě **Prodej** ve skupině **Vypočítat** vyberte **Vrstvené náklady**. Zobrazí se zpráva "vypočítány vrstvené náklady". Pak můžete vybrat možnost **náklady** na kartě **Prodej**, abyste mohli zobrazit, upravit nebo odstranit vypočtené náklady.
 
 ## <a name="use-expedited-delivery-modes-on-call-center-orders"></a>Použití urychlených způsobů dodání u objednávek kontaktního střediska
+
 Volitelně můžete propojit kód urychleného zpracování u libovolného způsobu dodání, který konfigurujete. Tento kód se používá jako nástroj ke stanovení priority řazení a vykazování. Nezpůsobí aktuálně použití dalších poplatků pro objednávku. Chcete-li nastavit kódy urychleného zpracování, přejděte na **prodej a marketing \> nastavení \> distribuce \> kódy urychleného zpracování**.
 
 Například pro objednávky, které budou expedovány letecky další den, výdej je zapotřebí provést ze skladu do 13: 00 každý den. V takovém případě lze vytvořit kód urychleného zpracování a kód lze spojit s libovolným způsobem dodání další den, konfigurovaným v systému. Když se ve skladu vytvoří vlna výdeje, příslušný kód urychleného zpracování v poli **urychlené zpracování** lze použít jako filtr, aby byl běh výdeje jen pro objednávky, které mají způsob dodání spojený s tímto kódem.

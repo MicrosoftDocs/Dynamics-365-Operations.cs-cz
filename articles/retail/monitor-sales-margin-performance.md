@@ -35,21 +35,19 @@ Objem prodeje a marže lze sledovat v reálném čase pomocí aplikace Microsoft
 
 Jako součást aplikace Microsoft Dynamics 365 for Retail. mohou uživatelé sledovat objem prodejů marže v reálném čase napříč rozdílnou organizační hierarchií pro následující dimenze:
 
--   Produkty
--   Kategorie
--   Slevy
--   Roky jako časové období
--   Registry/terminály
--   Pracovníci/zaměstnanci
--   Zákazníci
--   Provozní jednotky
+- Produkty
+- Kategorie
+- Slevy
+- Roky jako časové období
+- Registry/terminály
+- Pracovníci/zaměstnanci
+- Zákazníci
+- Provozní jednotky
 
 Dále existují dvě jedinečné sestavy využívající strukturování hierarchické mřížky, které uživatelům umožňují sledovat objem prodeje a marže procházením podrobností z uzlu nejvyšší kategorie až po jednotlivé koncové uzly kategorie ve výchozí hierarchii kategorií maloobchodních produktů. Uživatelé mohou také procházet podrobnosti z nejvyšší provozní jednotky po jednotlivé kanály v organizační hierarchii, které jsou definovány jako výchozí hierarchie organizace pro účely hierarchie vykazování maloobchodu. Sestavy můžete otevřít z některého z následujících umístění:
 
--   Pracovní prostor **Řízení maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy**
--   Pracovní prostor **Správa kategorií a produktů** &gt; **Maloobchod** &gt; **Produkty a kategorie** &gt; **Řízení maloobchodu** &gt; **Sestavy**
--   Pracovní prostor **Správa cen a slev** &gt; **Maloobchod** &gt; **Tvorba cen a slevy** &gt; **Řízení maloobchodu** &gt; **Sestavy**
--   Oddíl **Dotazy a sestavy** &gt; **Maloobchod** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy**
-
-
+- Pracovní prostor **Řízení maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy**
+- Pracovní prostor **Správa kategorií a produktů** &gt; **Maloobchod** &gt; **Produkty a kategorie** &gt; **Řízení maloobchodu** &gt; **Sestavy**
+- Pracovní prostor **Správa cen a slev** &gt; **Maloobchod** &gt; **Tvorba cen a slevy** &gt; **Řízení maloobchodu** &gt; **Sestavy**
+- Oddíl **Dotazy a sestavy** &gt; **Maloobchod** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy**
 

@@ -31,20 +31,18 @@ ms.lasthandoff: 11/03/2017
 
 [!include [banner](includes/banner.md)]
 
-V aplikaci Microsoft Dynamics 365 for Retail máte možnost studovat ziskovost pro předních 10 produktů. 
+V aplikaci Microsoft Dynamics 365 for Retail máte možnost studovat ziskovost pro předních 10 produktů.
 
 V rámci aplikace Microsoft Dynamics 365 for Retail mohou uživatelé též studovat ziskovost nejlepších produktů (10 až 100) v rámci rozdílných úrovní organizační hierarchie na základě jednoho z následujících kritérií:
 
--   Prodejní částka
--   Množství
--   Marže hrubého zisku
--   Procento marže
+- Prodejní částka
+- Množství
+- Marže hrubého zisku
+- Procento marže
 
 Pro toto hodnocení lze použít sestavu **Nejlepší produkty**, která je ihned k dispozici po otevření některého z následujících umístění:
 
--   Pracovní prostor **Řízení maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava nejlepších produktů**
--   Pracovní prostor **Správa kategorií a produktů** &gt; **Maloobchod** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava nejlepších produktů**
--   Část **Dotazy a sestavy** &gt; **Maloobchod** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava nejlepších produktů**
-
-
+- Pracovní prostor **Řízení maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava nejlepších produktů**
+- Pracovní prostor **Správa kategorií a produktů** &gt; **Maloobchod** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava nejlepších produktů**
+- Část **Dotazy a sestavy** &gt; **Maloobchod** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava nejlepších produktů**
 

@@ -59,4 +59,3 @@ Tuto novou rozšířenou strukturu vlastností produktu můžete použít pro v�
 
 ![Dialogové okno Aktualizovat produkty](media/NewUpdateProductsEnhancedView.PNG)
 
-

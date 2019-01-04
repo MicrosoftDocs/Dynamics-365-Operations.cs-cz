@@ -42,25 +42,30 @@ Kromě podpory vytvoření objednávky modul kontaktního střediska také obsah
 Tato stránka obsahuje odkazy na relevantní dokumentaci týkající se nastavení, konfigurace a funkčního použití funkcí kontaktního střediska aplikace Dynamics 365 for Retail.
 
 ## <a name="configure-the-call-center"></a>Konfigurace parametrů kontaktního střediska.
+
 [Nastavení možností zpracování objednávky](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>Konfigurace zpracování objednávky
+
 [Nastavení výstrah u podvodů](set-up-fraud-alerts.md)
 
 [Ruční blokování objednávek](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>Konfigurace zpracování platby
+
 [Platební metody v kontaktním středisku](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a>Konfigurace způsobů dodání
+
 [Konfigurace způsobů dodání a poplatků call centra](configure-call-center-delivery.md)
 
 ## <a name="configure-direct-marketing"></a>Konfigurace přímého marketingu
+
 [Katalogy kontaktního střediska](call-center-catalogs.md)
 
 [Nastavení analýzy RFM](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a>Konfigurace programů trvání
-[Nastavení programu kontinuity pro kontaktní středisko](set-up-continuity-program.md)
 
+[Nastavení programu kontinuity pro kontaktní středisko](set-up-continuity-program.md)
 

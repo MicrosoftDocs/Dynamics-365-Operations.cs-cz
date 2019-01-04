@@ -32,6 +32,7 @@ ms.lasthandoff: 08/08/2018
 Toto téma poskytuje informace o procesu vytváření a správy prodejních cen v aplikaci Microsoft Dynamics 365 for Retail. zaměřuje se na koncepty, které jsou zahrnuty v tomto procesu, a na dopady různých možností konfigurace na prodejní ceny.
 
 ## <a name="terminology"></a>Terminologie
+
 V tomto tématu se používají následující termíny:
 
 | Termín | Definice, použití a poznámky |
@@ -42,6 +43,7 @@ V tomto tématu se používají následující termíny:
 | Nejlepší cena | Pokud se na produkt může uplatnit více než jedna cena nebo sleva, nejmenší částka ceny a/nebo největší částka slevy, která produkuje nejnižší možnou čistou částku, kterou musí zákazník zaplatit. V tomto tématu se koncept nejlepší ceny vždy vztahuje na „nejlepší cenu“. Tato nejlepší cena se liší od výčtové hodnoty **Nejlepší cena** pro souběžný režim slevy a neměla by se s tímto pojmem zaměňovat. |
 
 ## <a name="price-groups"></a>Cenové skupiny
+
 Cenové skupiny jsou centrem správy cen a slev v aplikaci Retail. Cenové skupiny slouží k přiřazení cen a slev k maloobchodním entitám (kanálům, katalogům, umístěním a věrnostním programům). Vzhledem k tomu, že se pro všechny ceny a slevy používají cenové skupiny, je velmi důležité, abyste naplánovali, jak je budete používat, než začnete.
 
 Cenová skupina je sama o sobě pouze název, popis, popřípadě priorita cenové kalkulace. Hlavním bodem týkajícím se cenových skupin, který je třeba mít na paměti, je to, že se používají ke správě vztahů N:N, které mají slevy a ceny s maloobchodními subjekty.
@@ -57,17 +59,20 @@ Jak ukazuje červená čárkovaná čára na obrázku, Retail podporuje základn
 Následující části poskytují více informací o maloobchodních entitách, které můžete použít pro stanovení odlišných cen při používání cenových skupin. Konfigurace cen a slev pro všechny tyto entity je dvoustupňový proces. Tyto kroky lze provést v libovolném pořadí. Nicméně logické pořadí je nejprve nastavit cenové skupiny na entitách, protože tento krok je pravděpodobně jednorázové nastavení, které se provede během implementace. Poté, když se vytvoří ceny a slevy, můžete nastavit cenové skupiny na těchto cenách a slevách individuálně.
 
 ### <a name="channels"></a>Kanály
+
 Pro oblast maloobchodu je typické mít různé ceny v různých kanálech. Dva hlavní faktory, které ovlivňují ceny specifické pro daný kanál, jsou náklady a místní tržní podmínky.
 
 - **Náklady** – čím dál je kanál od zdroje produktu, tím větší jsou náklady za skladování produktu. Například čerstvé produkty mají omezenou trvanlivost a zvláštní výrobní požadavky (např. vegetační období). Během zimy stojí čerstvý salát pravděpodobně více v severním klimatu než v jižních klimatech. Pokud nastavujete ceny pro kanály napříč velkou zeměpisnou oblastí, pravděpodobně budete chtít nastavit různé ceny v různých kanálech.
 - **Místní tržní podmínky** – obchod, který má přímého konkurenta přes ulici, bude mnohem cenově citlivější než obchod, který v blízkosti přímého konkurenta nemá.
- 
+
 ### <a name="affiliations"></a>Umístění
+
 Obecná definice umístění je napojení na skupinu nebo přidružení ke skupině. V aplikaci Retail jsou umístění skupinami odběratelů. Umístění jsou mnohem flexibilnějším nástrojem pro stanovení cen a slev pro zákazníky, než je základní koncept zákaznických skupin a skupin slev v aplikaci Microsoft Dynamics 365. Za prvé, umístění může být použito jak pro ceny, tak pro slevy, zatímco ceny mimo maloobchod mají odlišnou skupinu pro každý typ slevy a ceny. Dále může zákazník patřit k více umístěním, ale může patřit pouze k jedné cenové skupině každého typu mimo maloobchod. Konečně, ačkoli lze umístění nastavit tak, aby byla napojena na zákazníka, nemusí tomu tak být. Lze použít ad-hoc umístění ad pro anonymní odběratele v POS. Typickým příkladem slevy anonymní slevy umístění je sleva pro seniory nebo studenty, kde může odběratel získat slevu pouze tím, že ukáže členskou kartu skupiny.
 
 Ačkoli umístění jsou nejčastěji přidružena ke slevám, můžete je rovněž použít pro nastavení rozdíných cen. Například pokud maloobchodní prodejce prodává zaměstnanci, může chtít změnit prodejní cenu namísto uplatnění slevy na obvyklou cenu. Jako další příklad může prodejce, který prodává spotřebitelům i obchodním zákazníkům, nabídnout obchodním zákazníkům lepší ceny na základě jejich nákupního objemu. Umístění povolují oba tyto scénáře.
 
 ### <a name="loyalty-programs"></a>Věrnostní programy
+
 Co se týče cen a slev, věrnostní programy jsou v podstatě pouze umístěním se zvláštním názvem. Ceny i slevy mohou být nastaveny na věrnostní program, stejně jako mohou být stanoveny pro umístění. Způsob, jakým zákazníci získávají věrnostní ceny při transakci nebo objednávce, se však liší od způsobu, jakým získávají ceny umístění. Zákazníci mohou získat věrnostní ceny pouze v případě, že je k transakci přidána věrnostní karta. Když je k transakci přidána věrnostní karta, přidává se také věrnostní program. Věrnostní program pak umožňuje speciální ceny a slevy.
 
 Věrnostní programy mohou mít více úrovní a slevy se mohou lišit pro různé úrovně. Tímto způsobem mohou maloobchodníci dát častým zákazníkům větší odměny, aniž by museli ručně vkládat zákazníky do zvláštní skupiny.
@@ -75,14 +80,17 @@ Věrnostní programy mohou mít více úrovní a slevy se mohou lišit pro různ
 Věrnostní programy mají dodatečné funkce kromě cen a slev. Nicméně z pohledu cen a slev jsou stejné jako umístění.
 
 ### <a name="catalogs"></a>Katalogy
+
 Někteří maloobchodníci používají fyzické nebo virtuální katalogy k uvádění výrobků na trh a naceňují je pro zaměřené skupiny zákazníků. Jako součást svého obchodního modelu zaměřeného na marketing prostřednictvím katalogu mohou tito prodejci nastavit rozdílné ceny ve svých různých katalozích. Microsoft Dynamics 365 podporuje tuto funkci tím, že vám umožňuje definovat slevy a ceny specifické pro katalogy, stejně jako můžete definovat slevy specifické pro jednotlivé kanály nebo umístění. Při úpravě katalogu můžete přiřadit cenové skupiny ke katalogu, stejně jako je můžete přidružit k kanálu, umístění nebo věrnostnímu programu.
 
 ### <a name="best-practices-for-price-groups"></a>Doporučené postupy pro cenové skupiny
+
 Nepoužívejte cenovou skupinu pro více typů entit maloobchodu. Namísto toho použijte jednu sadu cenových skupin pro kanály, jinou sadu cenových skupin pro umístění nebo věrnostní programy, atd. Můžete použít předponu nebo příponu v názvu cenové skupiny pro vizuální seskupení různých typů cenových skupin, které používáte.
 
 Vyhněte se nastavování cenových skupin přímo na zákazníka. Použijte místo toho umístění. Tímto způsobem můžete přiřadit zákazníkům všechny typy cen a slev, a to nejen obchodní smlouvy s prodejní cenou.+
 
 ## <a name="pricing-priority"></a>Priorita cenové kalkulace
+
 Samotnou cenovou prioritou je pouze číslo a popis. Cenové priority lze aplikovat na cenové skupiny, nebo je lze aplikovat přímo na slevy. Při použití cenových priorit umožňují priority prodejci přepsat zásadu nejlepší ceny tím, že řídí pořadí, ve kterém se na produkty použijí ceny a slevy. Větší číslo cenové priority je vyhodnoceno před nižším číslem cenové priority. Navíc pokud se na jakémkoliv čísle priority nalezne cena nebo sleva, ignorují se všechny ceny nebo slevy s nižšími čísly priorit.
 
 Cena a sleva může pocházet ze dvou odlišných cenových priorit, neboť cenové priority se používají nezávisle na cenách a slevách.
@@ -96,6 +104,7 @@ Jak bylo popsáno v sekci Nejlepší cena v tomto tématu, maloobchodní cenový
 Nicméně funkce priority cen umožňuje maloobchodnímu prodejci vytvořit cenovou prioritu pro ceny obchodu, která je vyšší než cenová priorita regionálních cen. Maloobchodní prodejce může případně vytvořit priority cen pouze pro ceny obchodu a ponechat regionální ceny na výchozí prioritě cen, což je 0 (nula). Obě nastavení pomáhají zaručit, že ceny obchodu budou vždy používány před regionálními cenami.
 
 ### <a name="pricing-priority-example"></a>Příklad cenové priority
+
 Podívejme se na příklad, kdy ceny obchodu přepisují ostatní ceny.
 
 Národní maloobchodník nastavuje nejvíce cen podle regionu a má čtyři regiony: severovýchod, jihovýchod, středozápad a západ. Určil několik trhů s vysokými náklady, které mohou podporovat vyšší ceny. Tyto trhy jsou v New Yorku, Chicagu a oblasti San Francisco Bay.
@@ -117,6 +126,7 @@ Tričko se prodává za stejnou cenu (tedy 15 dolarů) v obchodech v Bostonu a M
 > Pro každou cenovou prioritu je zapotřebí úplné procházení logikou pro maloobchodní cenový modul. Proto abyste pomohli zachovat výkon výpočtu ceny a slevy, měli byste cenové priority používat střídmě.
 
 ## <a name="types-of-prices"></a>Typy cen
+
 V aplikaci Microsoft Dynamics 365 můžete nastavit cenu produktu na třech místech:
 
 - Přímo na produktu (základní cena)
@@ -126,7 +136,9 @@ V aplikaci Microsoft Dynamics 365 můžete nastavit cenu produktu na třech mís
 Základní cena a cena obchodní smlouvy jsou součástí základní aplikace Microsoft Dynamics 365 a jsou k dispozici i v případě, že nepoužíváte aplikaci Retail. Funkce úpravy cen je k dispozici pouze v aplikaci Retail. Další část obsahuje více informací o každé z těchto možností nastavení cen a vysvětluje, jak možnosti spolupracují.
 
 ## <a name="setting-prices"></a>Nastavení cen
+
 ### <a name="base-price"></a>Základní cena
+
 Nejjednodušší místo pro nastavení ceny produktu je přímo na výrobku. Hodnota, kterou nastavíte přímo na výrobku, se často označuje jako základní cena výrobku. Základní cenu nastavíte v poli **Cena** na kartě **Prodej** stránky **Podrobnosti o uvolněném produktu**. Zadaná hodnota je v měně společnosti. Ve výchozím nastavení je cena pro množství 1 měrné jednotky nastavené v poli **Jednotka** na kartě **Prodej**. Skutečná cena za jednotku výrobku je založena na měrné jednotce, množství ceny a měně.
 
 Pokud má výrobek pro každého jednu cenu, základní cena nabízí nejúčinnější způsob, jak spravovat cenu tohoto výrobku. Dokonce i když používáte obchodní smlouvy k nastavení cen, můžete také nastavit základní cenu na výrobku. Pokud pak nepoužijete obchodní smlouvu **Vše**, máte záložní cenu, která se používá, když se neaplikuje žádná obchodní smlouva.
@@ -136,9 +148,10 @@ Pokud se měna maloobchodního kanálu liší od měny společnosti, základní 
 Přestože cenová jednotka není běžným maloobchodním scénářem, maloobchodní cenový modul ji podporuje. Je-li cenová jednotka nastavena na hodnotu jinou než **0** (nula), cena za jednotku se rovná výpočtu Cena ÷ Cenová jednotka. Například pokud je cena produktu 10,00 USD a cenová jednotka je 50, cena za množství 1 je 0,20 USD (= 10,00 ÷ 50).
 
 ### <a name="sales-price-trade-agreement"></a>Obchodní smlouva s prodejní cenou
+
 Pomocí deníku obchodních dohod můžete pro každý produkt vytvářet obchodní smlouvy s prodejními cenami. V aplikaci Microsoft Dynamics 365 existují tři rozsahy odběratele pro obchodní smlouvy s prodejní cenou: **Tabulka**, **Skupina** a **Vše**. Rozsah odběratele určuje odběratele, na které se vztahuje daná obchodní smlouva s prodejní cenou.
 
-Obchodní smlouva s prodejní cenou **Tabulka** je pro jednoho odběratele, který je zadán přímo v obchodní smlouvě. Tento scénář není typickým maloobchodním scénářem vztahů mezi obchodními společnostmi a koncovými zákazníky (B2C). Pokud k němu však dojde, maloobchodní cenový modul použije obchodní smlouvy **Tabulka** při určování ceny. 
+Obchodní smlouva s prodejní cenou **Tabulka** je pro jednoho odběratele, který je zadán přímo v obchodní smlouvě. Tento scénář není typickým maloobchodním scénářem vztahů mezi obchodními společnostmi a koncovými zákazníky (B2C). Pokud k němu však dojde, maloobchodní cenový modul použije obchodní smlouvy **Tabulka** při určování ceny.
 
 Obchodní smlouva s prodejní cenou **Skupina** je typ, který se nejčastěji používá s funkcí Retail. Mimo Retail jsou obchodní smlouvy prodejní cenou **Skupina** pro jednoduchou skupinu odběratelů. V aplikaci Retail byl však koncept skupiny odběratelů rozšířen tak, aby byl obecnější maloobchodní cenovou skupinou. Cenovou skupinu lze napojit na maloobchodní síť, umístění, věrnostní program nebo katalog. Podrobné informace o cenových skupin naleznete v části "Cenových skupin" dříve v tomto tématu.
 
@@ -146,7 +159,8 @@ Obchodní smlouva s prodejní cenou **Skupina** je typ, který se nejčastěji p
 > Cena obchodní smlouvy se vždy použije před základní cenou.
 
 ### <a name="price-adjustment"></a>Úprava ceny
-Jako název naznačuje, úprava ceny slouží k úpravám ceny, která byla buď nastavena přímo na produktu nebo nastavena s použitím obchodní smlouvy. Úpravu ceny lze použít pouze ke snížení ceny, nikoliv k jejímu zvýšení. Úprava ceny je doporučeným způsobem pro maloobchodní prodejce k vytvoření, sledování a správě cenových srážek pro jejich produkty v průběhu času. 
+
+Jako název naznačuje, úprava ceny slouží k úpravám ceny, která byla buď nastavena přímo na produktu nebo nastavena s použitím obchodní smlouvy. Úpravu ceny lze použít pouze ke snížení ceny, nikoliv k jejímu zvýšení. Úprava ceny je doporučeným způsobem pro maloobchodní prodejce k vytvoření, sledování a správě cenových srážek pro jejich produkty v průběhu času.
 
 Existují tři typy úprav cen: snížení o procento, snížení o částku a cena. Na prodejní transakci se vždy uplatňuje úprava ceny typu snížení o procento nebo snížení o částku. Úprava ceny typu ceny se však uplatní pouze v případě, že upravená cena je nižší než cena, která byla stanovena pomocí základní ceny nebo obchodní smlouvy s cenou. Pokud je tedy cena, která je stanovena v úpravě ceny, vyšší než neupravená cena, není úprava ceny použita.
 
@@ -158,13 +172,14 @@ Jediná výjimka ze zásady nalezení nejlepší ceny pro zákazníka je možnos
 
 Maloobchodní cenový modul vrátí tři ceny pro každý produkt: základní cenu, cenu obchodní smlouvy a aktivní cenu.
 
-Základní cena je pouze vlastnost produktu a je stejná pro všechny všude. 
+Základní cena je pouze vlastnost produktu a je stejná pro všechny všude.
 
 Pokud je na obchodní smlouvě s prodejní cenou možnost **Najít další** nastavena na **Ano**, použije se jako cena obchodní smlouvy nejnižší cena nalezená pro použitelné obchodní smlouvy s prodejní cenou. Obchodní smlouvy lze nalézt pomocí cenových skupin nebo kódu účtu **VŠE**. Obchodní smlouvy lze také přiřadit přímo k odběrateli. Pokud je možnost **Najít další** nastavena na **Ne**, použije se první cena obchodní smlouvy, která je nalezena. Pokud nebyly nalezeny žádné obchodní smlouvy s prodejní cenou, nastaví se cena obchodní smlouvy na stejnou hodnotu jako je základní cena.
 
 Aktivní cena se vypočítá tak, že se vezme cena obchodní dohody a uplatní se největší cenová úprava, která se vztahuje na výrobek. Pokud nebudou nalezeny úpravy cen, nebo pokud vypočítaná aktivní cena je vyšší než cena obchodní smlouvy, je aktivní cena nastavena na shodnou s cenou obchodní smlouvy. Mějte na paměti, že cenu produktu nelze zvýšit pomocí úpravy ceny. Použitelné úpravy cen lze nalézt pouze pomocí cenových skupin, které jsou přiřazeny ke kanálu, katalogu, umístění nebo věrnostnímu programu.
 
 ## <a name="category-price-rules"></a>Cenová pravidla kategorie
+
 Funkce pravidel cen kategorií v aplikaci Retail vám poskytuje snadný způsob vytvoření nové obchodní smlouvy pro všechny produkty v kategorii. Tato funkce také umožňuje automaticky najít stávající obchodní smlouvy pro produkty v kategorii a nastavit jejich platnost.
 
 Když vyberete možnost vypršení platnosti stávajících obchodních smluv, systém vytvoří nový deník obchodních smluv pro produkty v kategorii, které mají aktivní obchodní smlouvu. Deník je však třeba ručně zaúčtovat. Kromě toho pravidla cen kategorie mohou nalézt stávající obchodní smlouvy pouze v případě, že používáte stejná cenová pravidla cena (pokud vytvoříte nové cenové pravidlo, které používá stejnou předchozí kategorii). Pokud nepoužíváte stejné pravidlo ceny, stávajícím obchodním smlouvám nevyprší platnost.
@@ -186,6 +201,7 @@ Ceny mohou být zvýšeny nebo sníženy pomocí polí **Pravidlo ceny** a **Zá
 Pro snadnou aktualizaci cen různých produktů z různých kategorií produktů můžete použít doplňkové kategorie produktů spolu s pravidly cen kategorií.
 
 ## <a name="best-practices"></a>Doporučené postupy
+
 Microsoft SQL Server Express se často používá pro databáze kanálů z důvodu nákladů (zdarma). Mějte na paměti, že SQL Server Express má omezení hardwaru a limity velikosti dat. Pokud neplánujete správně, můžete rychle odosáhnout limitů velikosti dat SQL Server Express. Tento předpoklad platí nejen pro ceny, ale i pro jiné oblasti produktu. Zde je několik doporučených postupů, které mohou pomoci snížit velikost vašich dat:
 
 - Pokud používáte obchodní smlouvy a vaše ceny se mění, měli byste nechat staré obchodní smlouvy vypršet nastavením koncového data. V průběhu času tento přístup pomáhá snížit počet obchodních smluv, které jsou uloženy v databázi kanálů. Pomáhá také snížit množství dat, s nimiž algoritmus výpočtu cen musí pracovat.
@@ -195,12 +211,14 @@ Microsoft SQL Server Express se často používá pro databáze kanálů z důvo
     Případně pokud ne každá hodnota dimenze vytváří různou cenu, můžete definovat jednu obchodní smlouvy pro základní produkt a ponechat všechny dimenze produktu prázdné. Pak definujte oddělenou obchodní smlouvu pro každou hodnotu dimenze, která vytváří odlišnou cenu. Například pokud má velikost XXL vyšší cenu, ale všechny další velikosti mají stejnou cenu, potřebujete pouze dvě obchodní smlouvy: jednu pro základní produkt a jednu pro velikost XXL.
 
 ## <a name="prices-that-include-tax-vs-prices-that-exclude-tax"></a>Ceny, které zahrnují daň, a ceny bez daně
+
 Při nastavení prodejních cen v aplikaci Microsoft Dynamics 365, nezadáváte, zda hodnota ceny, kterou nastavujete, zahrnuje daň či nikoliv. Hodnotou je pouze cena. Nicméně nastavení **Cena včetně DPH** na maloobchodních kanálech vám umožňuje nakonfigurovat maloobchodní kanály tak, aby buď zahrnovaly nebo nezahrnovaly daň z ceny. Toto nastavení se nastavuje na kanálu a může se změnit i v jedné společnosti.
 
 Pokud pracujete s oběma typy zahrnuté a nezahrnuté daně, je velmi důležité správné nastavení ceny, vzhledem k tomu, že celková částka, kterou zákazník platí, se změní, pokud se změní nastavení **Cena včetně DPH** na kanálu.
 
 ## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>Rozdíly mezi maloobchodní cenou a cenou mimo maloobchod
-Jediný cenový modul se používá k výpočtu maloobchodní ceny ve všech kanálech: kontaktní středisko, maloobchod a online obchody. To umožňuje jednotné scénáře obchodování. 
+
+Jediný cenový modul se používá k výpočtu maloobchodní ceny ve všech kanálech: kontaktní středisko, maloobchod a online obchody. To umožňuje jednotné scénáře obchodování.
 
 Maloobchodní ceny jsou určeny k práci s maloobchodními entitami namísto entit mimo maloobchod. Konkrétně je modul navržen pro nastavení cen podle obchodu, nikoli skladu.
 
