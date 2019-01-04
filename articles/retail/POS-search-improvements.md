@@ -19,10 +19,10 @@ ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 50b0cec27e343b3b6aba464a04c9883160ab263a
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 1fa38002377fac24a5f3e25bd5924ecb23fec70a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -66,7 +66,7 @@ ms.lasthandoff: 08/08/2018
 - <span data-ttu-id="10248-145">Maloobchodníci mohou nyní nakonfigurovat vyhledávání produktů pro zobrazení návrhů vyhledávání, když uživatelé zadávají názvy produktů.</span><span class="sxs-lookup"><span data-stu-id="10248-145">Retailers can now configure product search to show search suggestions as users type product names.</span></span> <span data-ttu-id="10248-146">Nové nastavení této funkce je k dispozici v profilu funkce POS pod skupinu s názvem **Vyhledávání produktu**.</span><span class="sxs-lookup"><span data-stu-id="10248-146">A new setting for this functionality is available in the POS functionality profile, in a group that is named **Product search**.</span></span> <span data-ttu-id="10248-147">Toto nastavení se nazývá **Zobrazit návrhy vyhledávání při zadávání**.</span><span class="sxs-lookup"><span data-stu-id="10248-147">The setting is named **Show search suggestions while typing**.</span></span> <span data-ttu-id="10248-148">Tato funkce pomůže zaměstnancům rychle najít produkt, který hledají, protože nemusí ručně zadávat celé jméno.</span><span class="sxs-lookup"><span data-stu-id="10248-148">This functionality can help employees quickly find the product that they are searching for, because they don't have to type the whole name manually.</span></span>
 - <span data-ttu-id="10248-149">Algoritmus vyhledávání produktu nyní hledá vyhledávané termíny ve vlastnosti produktu **Vyhledávání jména**.</span><span class="sxs-lookup"><span data-stu-id="10248-149">The product search algorithm now also searches for the searched terms in the **Search name** property of the product.</span></span>
 
-<span data-ttu-id="10248-150">![Návrhy produktu](./media/Productsuggestions.png "Návrhy produktu")</span><span class="sxs-lookup"><span data-stu-id="10248-150">![Product suggestions](./media/Productsuggestions.png "Product suggestions")</span></span>
+    <span data-ttu-id="10248-150">![Návrhy produktu](./media/Productsuggestions.png "Návrhy produktu")</span><span class="sxs-lookup"><span data-stu-id="10248-150">![Product suggestions](./media/Productsuggestions.png "Product suggestions")</span></span>
 
 ## <a name="customer-search"></a><span data-ttu-id="10248-151">Hledat zákazníka</span><span class="sxs-lookup"><span data-stu-id="10248-151">Customer search</span></span>
 

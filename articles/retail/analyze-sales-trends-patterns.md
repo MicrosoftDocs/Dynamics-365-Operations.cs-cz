@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 84d0eda16b4f3d8570d3594a06e6ddb7eb4717c9
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 7ea5efd1fcde233145e97aea30d312bbe70b20ac
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -35,15 +35,13 @@ ms.lasthandoff: 09/11/2018
 
 <span data-ttu-id="35ea3-105">Jako součást aplikace Dynamics 365 for Retail mohou uživatelé studovat prodejní trendy a vzorce v reálném čase napříč rozdílnými úrovněmi organizační hierarchie v rozsahu několika let, a to pomocí standardní sestavy **Sestava kanálu prodeje podle roku**.</span><span class="sxs-lookup"><span data-stu-id="35ea3-105">As part of Dynamics 365 for Retail, users can study sales trends and patterns in real time across different levels of the organization hierarchy over a period of years by using the out-of-box **Channel sales by year** report.</span></span> <span data-ttu-id="35ea3-106">Tuto sestavu můžete otevřít z některého z následujících umístění:</span><span class="sxs-lookup"><span data-stu-id="35ea3-106">You can open this report from any of the following locations:</span></span>
 
--   <span data-ttu-id="35ea3-107">Pracovní prostor **Řízení maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava kanálu prodeje podle roku**</span><span class="sxs-lookup"><span data-stu-id="35ea3-107">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel sales by year report**</span></span>
--   <span data-ttu-id="35ea3-108">Pracovní prostor **Finance maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Finance maloobchodu** &gt; **Sestavy** &gt; **Sestava kanálu prodeje podle roku**</span><span class="sxs-lookup"><span data-stu-id="35ea3-108">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel sales by year report**</span></span>
--   <span data-ttu-id="35ea3-109">Část **Dotazy a sestavy** &gt; **Maloobchod** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava kanálu prodeje podle roku**</span><span class="sxs-lookup"><span data-stu-id="35ea3-109">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel sales by year report**</span></span>
+- <span data-ttu-id="35ea3-107">Pracovní prostor **Řízení maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava kanálu prodeje podle roku**</span><span class="sxs-lookup"><span data-stu-id="35ea3-107">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel sales by year report**</span></span>
+- <span data-ttu-id="35ea3-108">Pracovní prostor **Finance maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Finance maloobchodu** &gt; **Sestavy** &gt; **Sestava kanálu prodeje podle roku**</span><span class="sxs-lookup"><span data-stu-id="35ea3-108">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel sales by year report**</span></span>
+- <span data-ttu-id="35ea3-109">Část **Dotazy a sestavy** &gt; **Maloobchod** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava kanálu prodeje podle roku**</span><span class="sxs-lookup"><span data-stu-id="35ea3-109">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel sales by year report**</span></span>
 
 <span data-ttu-id="35ea3-110">Uživatelé mohou také studovat prodejní trendy a vzorce v hodinovém grafu napříč rozdílnými úrovněmi organizační hierarchie v rozsahu určitého období, a to pomocí standardní sestavy **Sestava prodejního kanálu podle hodin**.</span><span class="sxs-lookup"><span data-stu-id="35ea3-110">Users can also study sales trends and patterns by hour across different levels of the organization hierarchy over a selected period by using the out-of-box **Channel sales by hour** report.</span></span> <span data-ttu-id="35ea3-111">Tuto sestavu můžete otevřít z některého z následujících umístění:</span><span class="sxs-lookup"><span data-stu-id="35ea3-111">You can open this report from any of the following locations:</span></span>
 
--   <span data-ttu-id="35ea3-112">Pracovní prostor **Řízení maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava kanálu prodeje podle hodin**</span><span class="sxs-lookup"><span data-stu-id="35ea3-112">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel sales by hour report**</span></span>
--   <span data-ttu-id="35ea3-113">Pracovní prostor **Finance maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Finance maloobchodu** &gt; **Sestavy** &gt; **Sestava kanálu prodeje podle hodin**</span><span class="sxs-lookup"><span data-stu-id="35ea3-113">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel sales by hour report**</span></span>
--   <span data-ttu-id="35ea3-114">Část **Dotazy a sestavy** &gt; **Maloobchod** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava kanálu prodeje podle hodin**</span><span class="sxs-lookup"><span data-stu-id="35ea3-114">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel sales by hour report**</span></span>
-
-
+- <span data-ttu-id="35ea3-112">Pracovní prostor **Řízení maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava kanálu prodeje podle hodin**</span><span class="sxs-lookup"><span data-stu-id="35ea3-112">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel sales by hour report**</span></span>
+- <span data-ttu-id="35ea3-113">Pracovní prostor **Finance maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Finance maloobchodu** &gt; **Sestavy** &gt; **Sestava kanálu prodeje podle hodin**</span><span class="sxs-lookup"><span data-stu-id="35ea3-113">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel sales by hour report**</span></span>
+- <span data-ttu-id="35ea3-114">Část **Dotazy a sestavy** &gt; **Maloobchod** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava kanálu prodeje podle hodin**</span><span class="sxs-lookup"><span data-stu-id="35ea3-114">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel sales by hour report**</span></span>
 

@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: dda9c8cb7f3da99fb2e7df0372e59769cfaf77d1
-ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 91d6e34c25710716788542dabb3bd7d935b2d4ab
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/13/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -40,6 +40,7 @@ ms.lasthandoff: 11/13/2018
 ![Entity rozložení obrazovky POS](../retail/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a><span data-ttu-id="26d6a-108">Vizuální profil</span><span class="sxs-lookup"><span data-stu-id="26d6a-108">Visual profile</span></span>
+
 <span data-ttu-id="26d6a-109">Vizuální profily jsou přiřazeny registrům a určují vizuální prvky, které jsou specifické pro registrační pokladnu a sdílené mezi uživateli.</span><span class="sxs-lookup"><span data-stu-id="26d6a-109">Visual profiles are assigned to registers, and they specify the visual elements that are register-specific and shared across users.</span></span> <span data-ttu-id="26d6a-110">Každý uživatel, který se přihlásí k registrační pokladně, bude mít stejný motiv, barvy a obrázky.</span><span class="sxs-lookup"><span data-stu-id="26d6a-110">Every user who signs in to the register sees the same theme, colors, and images.</span></span>
 
 ![Uvítací obrazovka POS se světlým motivem](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
@@ -55,6 +56,7 @@ ms.lasthandoff: 11/13/2018
 - <span data-ttu-id="26d6a-123">**Pozadí aplikace** - můžete určit obrázek pozadí, který bude použit namísto plné barvy motivu v celé aplikaci.</span><span class="sxs-lookup"><span data-stu-id="26d6a-123">**Application background** – You can specify a background image that is used instead of the solid theme color throughout the application.</span></span> <span data-ttu-id="26d6a-124">Pokud jde o pozadí při přihlašování, velikost souboru by měla být co nejmenší.</span><span class="sxs-lookup"><span data-stu-id="26d6a-124">As for login backgrounds, the file size should be kept as small as possible.</span></span>
 
 ## <a name="screen-layouts"></a><span data-ttu-id="26d6a-125">Rozložení obrazovky</span><span class="sxs-lookup"><span data-stu-id="26d6a-125">Screen layouts</span></span>
+
 <span data-ttu-id="26d6a-126">Konfigurace rozložení obrazovky určují akce, obsah a umístění ovládacích prvků uživatelského rozhraní na úvodní obrazovce POS a obrazovce **Transakce**.</span><span class="sxs-lookup"><span data-stu-id="26d6a-126">Screen layout configurations determine the actions, content, and placement of UI controls on the POS welcome screen and **Transaction** screen.</span></span>
 
 ![Zobrazení rozložení obrazovky POS](../retail/media/POS-Screen-Layout-View.png)
@@ -95,6 +97,7 @@ ms.lasthandoff: 11/13/2018
 ![Velikosti rozvržení POS](../retail/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a><span data-ttu-id="26d6a-163">Mřížky tlačítek</span><span class="sxs-lookup"><span data-stu-id="26d6a-163">Button grids</span></span>
+
 <span data-ttu-id="26d6a-164">Pro každou velikost rozvržení v rozvržení obrazovky můžete konfigurovat a přiřadit mřížky tlačítek pro úvodní obrazovku POS a obraovku **Transakce**.</span><span class="sxs-lookup"><span data-stu-id="26d6a-164">For each layout size in a screen layout, you can configure and assign button grids for the POS welcome screen and **Transaction** screen.</span></span> <span data-ttu-id="26d6a-165">Mřížky tlačítek pro úvodní obrazovku jsou automaticky rozloženy zleva doprava od nejnižšího čísla (úvodní obrazovka 1) k nejvyššímu číslu.</span><span class="sxs-lookup"><span data-stu-id="26d6a-165">Button grids for the welcome screen are automatically laid out from left to right, from the lowest number (Welcome screen 1) to the highest number.</span></span>
 
 <span data-ttu-id="26d6a-166">V úplném rozložení POS je umístění mřížky tlačítek určeno v návrháři rozložení obrazovky.</span><span class="sxs-lookup"><span data-stu-id="26d6a-166">In Full POS layouts, the placement of button grids is specified in the screen layout designer.</span></span>
@@ -104,6 +107,7 @@ ms.lasthandoff: 11/13/2018
 ![Mřížky tlačítek kompaktního rozvržení](../retail/media/Compact-View-Button-Grids.png)
 
 ### <a name="images"></a><span data-ttu-id="26d6a-170">Obrázky</span><span class="sxs-lookup"><span data-stu-id="26d6a-170">Images</span></span>
+
 <span data-ttu-id="26d6a-171">Pro každou velikost rozvržení na obrazovce rozvržění můžete určit obrázky, které mají být zahrnuty v uživatelském rozhraní POS.</span><span class="sxs-lookup"><span data-stu-id="26d6a-171">For each layout size in a screen layout, you can specify images to include in the POS UI.</span></span> <span data-ttu-id="26d6a-172">V úplném rozložení POS lze zadat jeden obrázek pro úvodní obrazovku.</span><span class="sxs-lookup"><span data-stu-id="26d6a-172">For Full POS layouts, a single image can be specified for the welcome screen.</span></span> <span data-ttu-id="26d6a-173">Tento obrázek se zobrazí jako první prvek uživatelského rozhraní vlevo.</span><span class="sxs-lookup"><span data-stu-id="26d6a-173">This image appears as the first UI element on the left.</span></span> <span data-ttu-id="26d6a-174">Na obrazovce **Transakce** lze použít obrázky jako obrázky karty nebo jako logo.</span><span class="sxs-lookup"><span data-stu-id="26d6a-174">On the **Transaction** screen, images can be used as tab images or as a logo.</span></span> <span data-ttu-id="26d6a-175">Kompaktní rozvržení POS tyto obrázky nepoužívá.</span><span class="sxs-lookup"><span data-stu-id="26d6a-175">Compact POS layouts don't use these images.</span></span>
 
 ### <a name="screen-layout-designer"></a><span data-ttu-id="26d6a-176">Návrhář rozložení obrazovky</span><span class="sxs-lookup"><span data-stu-id="26d6a-176">Screen layout designer</span></span>
@@ -141,11 +145,13 @@ ms.lasthandoff: 11/13/2018
     - <span data-ttu-id="26d6a-222">**Vlastní ovládací prvek**- vlastní ovládací prvek funguje jako zástupce v rozvržení obrazovky a umožňuje vám rezervovat místo pro vlastní obsah.</span><span class="sxs-lookup"><span data-stu-id="26d6a-222">**Custom control** – The custom control acts as a placeholder in the screen layout and lets you reserve space for custom content.</span></span> <span data-ttu-id="26d6a-223">Vlastní ovládací prvek je dostupný pouze pro úplné rozložení.</span><span class="sxs-lookup"><span data-stu-id="26d6a-223">The custom control is available only for Full layouts.</span></span>
 
 ### <a name="compact-layout-designer"></a><span data-ttu-id="26d6a-224">Návrhář kompaktního rozložení</span><span class="sxs-lookup"><span data-stu-id="26d6a-224">Compact layout designer</span></span>
+
 <span data-ttu-id="26d6a-225">Stejně jako návrhář úplného rozvržení vám návrhář kompaktního rozložení umožňuje nakonfigurovat rozvržení obrazovky POS pro telefony a malé tablety.</span><span class="sxs-lookup"><span data-stu-id="26d6a-225">Like the Full layout designer, the Compact layout designer lets you configure the POS screen layout for phones and small tablets.</span></span> <span data-ttu-id="26d6a-226">Nicméně v tomto případě je samotné rozložení pevné.</span><span class="sxs-lookup"><span data-stu-id="26d6a-226">However, in this case, the layout itself is fixed.</span></span> <span data-ttu-id="26d6a-227">Můžete konfigurovat ovládací prvky v roložení pravým tlačítkem myši a použitím nabídky zástupců.</span><span class="sxs-lookup"><span data-stu-id="26d6a-227">You can configure the controls in the layout by right-clicking and using the shortcut menu.</span></span> <span data-ttu-id="26d6a-228">Nelze však použít operace uchopení a přetažení pro další obsah.</span><span class="sxs-lookup"><span data-stu-id="26d6a-228">However, you can't use drag-and-drop operations for additional content.</span></span>
 
 ![Návrhář kompaktního rozložení](../retail/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a><span data-ttu-id="26d6a-230">Návrhář mřížky tlačítek</span><span class="sxs-lookup"><span data-stu-id="26d6a-230">Button grid designer</span></span>
+
 <span data-ttu-id="26d6a-231">Návrhář mřížky tlačítek vám umožňuje konfigurovat mřížky tlačítek, které lze použít na úvodní obrazovce POS a obrazovce **Transakce** pro úplné a kompaktní rozvržení.</span><span class="sxs-lookup"><span data-stu-id="26d6a-231">The button grid designer lets you configure button grids that can be used on the POS welcome screen and **Transaction** screen for both Full and Compact layouts.</span></span> <span data-ttu-id="26d6a-232">Stejnou mřížku tlačítek lze použít napříč rozvrženími a typy rozvržení.</span><span class="sxs-lookup"><span data-stu-id="26d6a-232">The same button grid can be used across layouts and layout types.</span></span> <span data-ttu-id="26d6a-233">Stejně jako návrhář rozvržení obrazovky používá návrhář mřížky tlačítek technologii nasazení ClickOnce ke stažení, instalaci a spuštění nejnovější verze aplikace pokaždé, když k ní uživatel přistupuje.</span><span class="sxs-lookup"><span data-stu-id="26d6a-233">Like the screen layout designer, the button grid designer uses the ClickOnce deployment technology to download, install, and start the latest version of the application every time that users access it.</span></span> <span data-ttu-id="26d6a-234">Je nutné zkontrolovat požadavky prohlížeče pro ClickOnce.</span><span class="sxs-lookup"><span data-stu-id="26d6a-234">Be sure to check the browser requirements for ClickOnce.</span></span> <span data-ttu-id="26d6a-235">Některé prohlížeče, jako je například Google Chrome, požadují rozšíření.</span><span class="sxs-lookup"><span data-stu-id="26d6a-235">Some browsers, such as Google Chrome, require extensions.</span></span>
 
 ![Návrhář mřížky tlačítek](../retail/media/Button-Grid-Designer.png)

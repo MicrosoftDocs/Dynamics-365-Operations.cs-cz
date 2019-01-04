@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 13e99ba3a706d49affa4fd8d0f63b7c2f51b24bc
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: e2b3591f6403542c79457d12ae850ad40d9253a1
 ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -35,21 +35,19 @@ ms.lasthandoff: 05/08/2018
 
 <span data-ttu-id="2c644-105">Jako součást aplikace Microsoft Dynamics 365 for Retail. mohou uživatelé sledovat objem prodejů marže v reálném čase napříč rozdílnou organizační hierarchií pro následující dimenze:</span><span class="sxs-lookup"><span data-stu-id="2c644-105">As part of Dynamics 365 for Retail, users can monitor sales and margin performance in real time across different levels of the organization hierarchy for the following dimensions:</span></span>
 
--   <span data-ttu-id="2c644-106">Produkty</span><span class="sxs-lookup"><span data-stu-id="2c644-106">Products</span></span>
--   <span data-ttu-id="2c644-107">Kategorie</span><span class="sxs-lookup"><span data-stu-id="2c644-107">Categories</span></span>
--   <span data-ttu-id="2c644-108">Slevy</span><span class="sxs-lookup"><span data-stu-id="2c644-108">Discounts</span></span>
--   <span data-ttu-id="2c644-109">Roky jako časové období</span><span class="sxs-lookup"><span data-stu-id="2c644-109">Years as time period</span></span>
--   <span data-ttu-id="2c644-110">Registry/terminály</span><span class="sxs-lookup"><span data-stu-id="2c644-110">Registers/terminals</span></span>
--   <span data-ttu-id="2c644-111">Pracovníci/zaměstnanci</span><span class="sxs-lookup"><span data-stu-id="2c644-111">Staff/employees</span></span>
--   <span data-ttu-id="2c644-112">Zákazníci</span><span class="sxs-lookup"><span data-stu-id="2c644-112">Customers</span></span>
--   <span data-ttu-id="2c644-113">Provozní jednotky</span><span class="sxs-lookup"><span data-stu-id="2c644-113">Operating units</span></span>
+- <span data-ttu-id="2c644-106">Produkty</span><span class="sxs-lookup"><span data-stu-id="2c644-106">Products</span></span>
+- <span data-ttu-id="2c644-107">Kategorie</span><span class="sxs-lookup"><span data-stu-id="2c644-107">Categories</span></span>
+- <span data-ttu-id="2c644-108">Slevy</span><span class="sxs-lookup"><span data-stu-id="2c644-108">Discounts</span></span>
+- <span data-ttu-id="2c644-109">Roky jako časové období</span><span class="sxs-lookup"><span data-stu-id="2c644-109">Years as time period</span></span>
+- <span data-ttu-id="2c644-110">Registry/terminály</span><span class="sxs-lookup"><span data-stu-id="2c644-110">Registers/terminals</span></span>
+- <span data-ttu-id="2c644-111">Pracovníci/zaměstnanci</span><span class="sxs-lookup"><span data-stu-id="2c644-111">Staff/employees</span></span>
+- <span data-ttu-id="2c644-112">Zákazníci</span><span class="sxs-lookup"><span data-stu-id="2c644-112">Customers</span></span>
+- <span data-ttu-id="2c644-113">Provozní jednotky</span><span class="sxs-lookup"><span data-stu-id="2c644-113">Operating units</span></span>
 
 <span data-ttu-id="2c644-114">Dále existují dvě jedinečné sestavy využívající strukturování hierarchické mřížky, které uživatelům umožňují sledovat objem prodeje a marže procházením podrobností z uzlu nejvyšší kategorie až po jednotlivé koncové uzly kategorie ve výchozí hierarchii kategorií maloobchodních produktů.</span><span class="sxs-lookup"><span data-stu-id="2c644-114">Additionally, two unique reports that take advantage of hierarchical grid structuring let users monitor sales and margin performance by drilling down from the top category node to individual leaf nodes of the category in the default retail product category hierarchy.</span></span> <span data-ttu-id="2c644-115">Uživatelé mohou také procházet podrobnosti z nejvyšší provozní jednotky po jednotlivé kanály v organizační hierarchii, které jsou definovány jako výchozí hierarchie organizace pro účely hierarchie vykazování maloobchodu.</span><span class="sxs-lookup"><span data-stu-id="2c644-115">Users can also drill-down from the top operating unit to an individual channel in the organization hierarchy that is defined as the default organization hierarchy for retail reporting hierarchy purposes.</span></span> <span data-ttu-id="2c644-116">Sestavy můžete otevřít z některého z následujících umístění:</span><span class="sxs-lookup"><span data-stu-id="2c644-116">You can open the reports from any of the following locations:</span></span>
 
--   <span data-ttu-id="2c644-117">Pracovní prostor **Řízení maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy**</span><span class="sxs-lookup"><span data-stu-id="2c644-117">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports**</span></span>
--   <span data-ttu-id="2c644-118">Pracovní prostor **Správa kategorií a produktů** &gt; **Maloobchod** &gt; **Produkty a kategorie** &gt; **Řízení maloobchodu** &gt; **Sestavy**</span><span class="sxs-lookup"><span data-stu-id="2c644-118">**Category and product management** workspace &gt; **Retail** &gt; **Product and categories** &gt; **Retail store management** &gt; **Reports**</span></span>
--   <span data-ttu-id="2c644-119">Pracovní prostor **Správa cen a slev** &gt; **Maloobchod** &gt; **Tvorba cen a slevy** &gt; **Řízení maloobchodu** &gt; **Sestavy**</span><span class="sxs-lookup"><span data-stu-id="2c644-119">**Pricing and discount management** workspace &gt; **Retail** &gt; **Pricing and discounts** &gt; **Retail store management** &gt; **Reports**</span></span>
--   <span data-ttu-id="2c644-120">Oddíl **Dotazy a sestavy** &gt; **Maloobchod** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy**</span><span class="sxs-lookup"><span data-stu-id="2c644-120">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports**</span></span>
-
-
+- <span data-ttu-id="2c644-117">Pracovní prostor **Řízení maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy**</span><span class="sxs-lookup"><span data-stu-id="2c644-117">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports**</span></span>
+- <span data-ttu-id="2c644-118">Pracovní prostor **Správa kategorií a produktů** &gt; **Maloobchod** &gt; **Produkty a kategorie** &gt; **Řízení maloobchodu** &gt; **Sestavy**</span><span class="sxs-lookup"><span data-stu-id="2c644-118">**Category and product management** workspace &gt; **Retail** &gt; **Product and categories** &gt; **Retail store management** &gt; **Reports**</span></span>
+- <span data-ttu-id="2c644-119">Pracovní prostor **Správa cen a slev** &gt; **Maloobchod** &gt; **Tvorba cen a slevy** &gt; **Řízení maloobchodu** &gt; **Sestavy**</span><span class="sxs-lookup"><span data-stu-id="2c644-119">**Pricing and discount management** workspace &gt; **Retail** &gt; **Pricing and discounts** &gt; **Retail store management** &gt; **Reports**</span></span>
+- <span data-ttu-id="2c644-120">Oddíl **Dotazy a sestavy** &gt; **Maloobchod** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy**</span><span class="sxs-lookup"><span data-stu-id="2c644-120">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports**</span></span>
 
