@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 3331b984693c58c6ee8c49b98ed7d3a8df5b79ff
-ms.openlocfilehash: 53c4b9a9c9dac1add7021d909b2c8900d11e5c0c
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: b7132dc9b3c78fa04fcfc38ea72b5678ad08deb2
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 # <a name="set-up-pay-invoice-scenarios"></a>Nastavení scénářů plateb faktur
@@ -30,21 +30,18 @@ ms.lasthandoff: 12/04/2018
 [!include [banner](includes/banner.md)]
 
 Funkcionalita Platba faktur v aplikaci Dynamics 365 for Retail byla rozšířena, aby podporovala:
+
 - Proplacení vícero faktur prodejní objednávky v jedné transakci POS
 - Platba různých typů faktur odběratele, včetně volných faktur, faktur na základě projektu a dobropisů.
 
-Chcete-li povolit tyto scénáře, je třeba nakonfigurovat funkční profil pro obchody podle níže uvedených pokynů.  
+Chcete-li povolit tyto scénáře, je třeba nakonfigurovat funkční profil pro obchody podle níže uvedených pokynů.
 
-1. Přejděte na **Maloobchod > Nastavení kanálu > Nastavení POS > Profily POS > Funkční profily** a zvolte profil, který je navázaný na obchody, u kterých chcete provést změny.
-
-1. Na kartě **Funkce** nakonfigurujte následující parametry podle potřeby.
+1. Přejděte na **Maloobchod \> Nastavení kanálu \> Nastavení POS \> Profily POS \> Funkční profily** a zvolte profil, který je navázaný na obchody, u kterých chcete provést změny.
+2. Na kartě **Funkce** nakonfigurujte následující parametry podle potřeby.
 
     - **Faktura prodejní objednávky** - Zvolte **Ano**, čímž povolíte uživateli zaplatit jednu nebo více faktur na základě prodejní objednávky v jedné transakci POS.
-
     - **Volná faktura** - Zvolte **Ano**, čímž povolíte uživateli zaplatit jednu nebo více volných faktur v jedné transakci POS.
-
     - **Faktura projektu** - Zvolte **Ano**, čímž povolíte uživateli zaplatit jednu nebo více faktur na základě projektu v jedné transakci POS.
-
     - **Dobropis prodejní objednávky** - Zvolte **Ano**, čímž povolíte uživateli vyrovnat více dobropisů na základě prodejní objednávky proti otevřeným fakturám nebo zpracovat refundaci zákazníkovi pro otevřený dobropis.
 
 > [!NOTE]

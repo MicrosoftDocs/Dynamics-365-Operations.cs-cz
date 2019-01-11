@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 08e939f87bc4a1769533b205bc5706648e1d1dce
+ms.sourcegitcommit: c093c9af7184d93b1200a8bcab16573f2bb4be09
+ms.openlocfilehash: 7a1e6c6e3a995ad745522d58960e850d72c2ee57
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -62,7 +62,7 @@ Když kopírujete odběratele, systém se pokusí uložit informace o novém odb
 
 ## <a name="copy-a-customer-by-using-tax-exempt-number-search-feature"></a>Kopírování odběratele pomocí funkce vyhledávání DIČ
 
-Můžete rovněž kopírovat dodavatele pomocí funkce Vyhledávání DIČ, která je ve skupině **Registrace** na kartě **Odběratel** v podokně akcí na stránce **Všichni odběratelé**. Zobrazené dialogové okno **Vyhledávání DIČ** ukazuje DIČ, ID odběratele, název odběratele a právnickou osobu, kde se používá ID osvobození od daně. Kopírovat odběratele můžete pouze tehdy, pokud je v právnické osobě, která není aktuální právnickou osobou. Po zvolení odběratele splňujícího toto kritérium pokračujte podle těchto kroků.
+Můžete rovněž kopírovat odběratele pomocí funkce Vyhledávání DIČ, která je ve skupině **Registrace** na kartě **Odběratel** v podokně akcí na stránce **Všichni odběratelé**. Zobrazené dialogové okno **Vyhledávání DIČ** ukazuje DIČ, ID odběratele, název odběratele a právnickou osobu, kde se používá ID osvobození od daně. Kopírovat odběratele můžete pouze tehdy, pokud je v právnické osobě, která není aktuální právnickou osobou. Po zvolení odběratele splňujícího toto kritérium pokračujte podle těchto kroků.
 
 1. Zobrazí se možnost **Kopírovat odběratele**. Ve výchozím nastavení je tato možnost nastavena na **Ne**. Chcete-li kopírovat odběratele do aktuální právnické osoby, nastavte možnost na **Ano**. 
 2. Zvolte **Zvolit**. Vytvoří se nový odběratel.
