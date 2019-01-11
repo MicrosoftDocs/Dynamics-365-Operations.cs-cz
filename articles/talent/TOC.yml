@@ -4,9 +4,13 @@
     - name: Začínáme
       href: talent-get-started.md
       items:
-        - name: "Co je nového a\_co se změnilo"
+        - name: Co je nového a co se změnilo
           href: whats-new.md
           items:
+            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (14. prosince 2018)
+              href: whats-new-talent-december-14.md
+            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (6. prosince 2018)
+              href: whats-new-talent-december-6.md
             - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (27. listopadu 2018)
               href: whats-new-talent-november-27.md
             - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (15. listopadu 2018)
@@ -71,6 +75,8 @@
     - name: Správa pracovního volna a absencí
       href: leave-absence-overview.md
       items:
+        - name: Koncepty pracovního volna a absence
+          href: leave-absence-concepts.md
         - name: Časové rozlišení volna na základě odpracovaných hodin
           href: leave-accrue-hours-worked.md
         - name: Kalendáře pracovní doby
@@ -128,10 +134,13 @@
         - name: Nastavení školicích kurzů
           href: courses.md
     - name: Definování a správa programu zaměstnaneckých výhod
-      href: manage-benefit-program.md
-    - name: "Zásady způsobilosti k\_zaměstnaneckým výhodám"
-      href: benefit-eligibility-policies.md
       items:
+        - name: Správa programu zaměstnaneckých výhod
+          href: manage-benefit-program.md
+        - name: "Zásady způsobilosti k\_zaměstnaneckým výhodám"
+          href: benefit-eligibility-policies.md
+        - name: "Generování sestav v\_rámci zákona Affordable Care Act"
+          href: generate-aca-reports.md
         - name: Správa položek zapůjčených pracovníkům
           href: loan-items.md
     - name: Shromáždění informací pomocí dotazníku
@@ -276,8 +285,6 @@
           href: create-envi-powerapps-admin-ctr.md
         - name: Odpojení klienta aplikace Talent
           href: client-disconnects.md
-        - name: Způsob nakládání se zálohami databází
-          href: database-backups.md
         - name: Zabránění zkrácení textu na hierarchii pozic a export do aplikace Visio
           href: avoid-text-truncation-position-hierarchy-visio.md
         - name: Spuštění procesu kompenzace

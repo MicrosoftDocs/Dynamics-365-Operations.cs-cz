@@ -261,6 +261,8 @@
               href: extensibility/extensibility-changes-811.md
             - name: Změny rozšiřitelnosti – verze 8.1.2
               href: extensibility/extensibility-changes-812.md
+            - name: Změny rozšiřitelnosti – verze 8.1.3
+              href: extensibility/extensibility-changes-813.md
         - name: Základy
           items:
             - name: Narušující přizpůsobení
@@ -883,12 +885,33 @@
       href: deployment/deploy-demo-environment.md
     - name: Cloudové nasazení
       items:
+        - name: Samoobslužné nasazení
+          href: deployment/infrastructure-stack.md
+          items:
+            - name: Nasazení nového prostředí
+              href: deployment/deployenvironment-newinfrastructure.md
+            - name: Často kladené dotazy k nasazení
+              href: deployment/deploymentFAQ.md
+            - name: Známé problémy se samoobslužným nasazením
+              href: deployment/known-issues-new-deployment-experience.md
+            - name: Operace údržby pro nasazení
+              href: deployment/maintenanceoperationsguide-newinfrastructure.md
+            - name: Aktualizace prostředí
+              href: deployment/updateenvironment-newinfrastructure.md
+            - name: Řešení potíží s prostředím nasazeným pomocí samoobslužného nasazení
+              href: deployment/troubleshoot-newinfrastructure.md
         - name: Dokončení zprovoznění služby Azure Resource Manager
           href: deployment/arm-onboarding.md
         - name: "Azure ExpressRoute a\_Finance and Operations"
           href: deployment/expressroute.md
         - name: Architektura Finance and Operations
           href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
+        - name: Použití aktualizací na cloudová prostředí
+          href: deployment/apply-deployable-package-system.md
+        - name: Použití aktualizací a rozšíření na komponenty kanálu Retail hostované v cloudu
+          href: deployment/Update-retail-channel.md
+        - name: Inicializace komponent kanálu Retail hostovaných v cloudu
+          href: deployment/Initialize-Retail-Channels.md
     - name: Místní nasazení
       href: deployment/on-premises-deployment-landing-page.md
       items:
@@ -931,8 +954,6 @@
       items:
         - name: Vytvoření nasaditelných balíčků modelů
           href: deployment/create-apply-deployable-package.md
-        - name: Použití aktualizací na cloudová prostředí
-          href: deployment/apply-deployable-package-system.md
         - name: Instalace nasaditelných balíčků z příkazového řádku
           href: deployment/install-deployable-package.md
         - name: Odinstalace balíčku
@@ -1015,14 +1036,12 @@
           href: migration-upgrade/upgrade-latest-update.md
         - name: Aktualizace prostředí z verze 8.0 na 8.1
           href: migration-upgrade/appupdate-80-81.md
-        - name: Zásady životního cyklu softwaru a vydání cloudu
+        - name: Zásady životního cyklu softwaru a cloudová vydání
           href: migration-upgrade/versions-update-policy.md
         - name: Použití nejnovější aktualizace platformy na prostředí
           href: migration-upgrade/upgrade-latest-platform-update.md
         - name: Upgrade platformy Dynamics AX na vydání ze srpna 2016
           href: migration-upgrade/update-platform-each-release.md
-        - name: Upgrade na prostředí sandbox
-          href: migration-upgrade/upgrade-sandbox-environment.md
         - name: 'Upgrade dat ve vývojovém, ukázkovém nebo sandbox prostředí'
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: Aktualizace vývojových nástrojů
