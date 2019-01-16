@@ -3,7 +3,7 @@ title: "Vytvoření, schválení a zveřejnění pracovích míst v aplikaci Att
 description: "Toto téma popisuje prvky pracovního místa v aplikaci Attract. Také vysvětluje, jakým způsobem vytvořit pracovní místo."
 author: josaw
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 12/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc6bf25d303d7d8de8002a923a080b90dcfbeab
-ms.openlocfilehash: af945042c150fff1a95cdb046f2a712cb2c2c061
+ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
+ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/24/2018
+ms.lasthandoff: 12/23/2018
 
 ---
 
@@ -75,7 +75,25 @@ Další informace o aktivitách, které lze přidat do procesu náboru, naleznet
 
 ## <a name="postings"></a>Zaúčtování
 
-Po aktivaci pracovního místa je lze zveřejnit. Pracovní místa může zveřejnit jen náborář a správce. Pracovní místo lze zveřejnit na webu Talent Careers (kariérní web systému Microsoft Dynamics 365 for Talent) nebo LinkedIn. Tým Attract průběžně pracuje na partnerství s agregátory výboru pro zakázky. Proto se tento bude průběžně rozšiřovat.
+Po aktivaci pracovního místa je lze zveřejnit. Pracovní místa může zveřejnit jen náborář a správce. Pracovní místo lze zveřejnit na webu Talent Careers (kariérní web systému Microsoft Dynamics 365 for Talent) nebo LinkedIn. 
+
+> [!NOTE]
+> Při publikování procesu ve službě LinkedIn je důležité všimnout si tří důležitých věcí.
+> 1. Pracovní nabídky publikované ve službě LinkedIn se publikují jako pracovní nabídky s omezeným výpisem. Nelze je propagovat na celém webu LinkedIn. Pokud chcete propagovat pracovní nabídky s omezeným výpisem ve službě LinkedIn z Attract, měli byste spolupracovat s LinkedIn a umožnit sbalení pracovní nabídky. Podrobnější informace získáte z následujících odkazů a může vám je poskytnout podpora společnosti LinkedIn.
+>
+>    [Omezené seznamy vs. prémiové nabídky volných míst ke sbalení pracovních nabídek](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
+>
+>    [Časté otázky týkající se sbalení pracovní nabídky](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
+>
+> 1. Při publikování pracovních nabídek ve službě LinkedIn Attract předá organizaci Microsoft 365 jméno u pracovní nabídky. LinkedIn propojí volná místa se společností na straně LinkedIn na základě předaného jména organizace. Pokud je vaše nabídka na webu LinkedIn spojená se špatnou společností, ověřte, zda název organizace Microsoft 365 odpovídá názvu společnosti ve službě LinkedIn.  
+>
+>    [Změna kontaktní adresy a další](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
+>
+>    Pokud máte po dokončení tohoto kroku potíže, obraťte se na podporu LinkedIn. 
+> 
+> 1. Může trvat až 24 hodin, než se nabídky volných míst publikované ve službě LinkedIn zobrazí uchazečům. Důvodem je současný proces dávkového publikování volných míst službou LinkedIn.
+
+Tým Attract průběžně pracuje na partnerství s agregátory vývěsky volných míst. Tento seznam se bude průběžně rozšiřovat.
 
 Další informace o nabídce volných pracovních míst naleznete v tématu [Funkce Kariérní web v aplikaci Attract](./career-site.md).
 

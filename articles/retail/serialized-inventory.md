@@ -17,10 +17,10 @@ ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 65e60f3e289bb68ea055548299d58bca42e84c02
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 17cd46ba9ee972c92db8950eea1cd258d67c2e92
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -28,8 +28,9 @@ ms.lasthandoff: 08/08/2018
 
 [!include [banner](includes/banner.md)]
 
-## <a name="overview"></a>Přehled 
-Na základě nastavení v modulu Retail headquarters lze produkty klasifikovat jako serializované nebo neserializované. Když jsou produkty serializovány, každé položce lze přiřadit jedinečné číslo, které pomáhá sledovat záruky, sledovat položky a potvrdit vlastnictví. I když možnost poskytovat sériová čísla pro serializované produkty existovala již v našem moderním/cloudovém pokladním místě (POS), byla přidána některé vylepšení usnadňující pokladníkům ušetřit čas a být produktivnější.  
+## <a name="overview"></a>Přehled
+
+Na základě nastavení v modulu Retail headquarters lze produkty klasifikovat jako serializované nebo neserializované. Když jsou produkty serializovány, každé položce lze přiřadit jedinečné číslo, které pomáhá sledovat záruky, sledovat položky a potvrdit vlastnictví. I když možnost poskytovat sériová čísla pro serializované produkty existovala již v našem moderním/cloudovém pokladním místě (POS), byla přidána některé vylepšení usnadňující pokladníkům ušetřit čas a být produktivnější.
 
 ## <a name="pos-improvements"></a>Vylepšení POS
 
@@ -37,9 +38,9 @@ Na základě nastavení v modulu Retail headquarters lze produkty klasifikovat j
 
     Pro každou serializovanou položku, kde bylo sériové číslo přeskočeno, se zobrazí komentář pod řádkem transakce. Tento komentář oznamuje, že pro položku nebylo zadáno sériové číslo. Pokladník tedy může rychle vyhledat položky, kterým chybí sériového čísla.
 
-    Nová operace **Přidat sériové číslo** také přidává sériové číslo k položkám, u kterých toto číslo chybí. Po zadání sériového čísla ho již nelze upravovat. Pokladník musí anulovat řádek a znovu přidat produkt. 
+    Nová operace **Přidat sériové číslo** také přidává sériové číslo k položkám, u kterých toto číslo chybí. Po zadání sériového čísla ho již nelze upravovat. Pokladník musí anulovat řádek a znovu přidat produkt.
     
-- **Sériová čísla nejsou povinná pro zadání objednávek odběratelů** – Objednávky odběratelů lze zadat do jednoho obchodu a provést jejich plnění z jiného obchodu. Pokladník, který zadává objednávku odběratele, nemusí zadat sériové číslo. Sériové číslo bude zadáno v průběhu kroku výdeje nebo vyskladnění. Sériové číslo však musí být zadáno pro všechny položky řádku, pro které je zvolen typ doručení **Provedení**. V opačném případě transakci nelze dokončit.    
+- **Sériová čísla nejsou povinná pro zadání objednávek odběratelů** – Objednávky odběratelů lze zadat do jednoho obchodu a provést jejich plnění z jiného obchodu. Pokladník, který zadává objednávku odběratele, nemusí zadat sériové číslo. Sériové číslo bude zadáno v průběhu kroku výdeje nebo vyskladnění. Sériové číslo však musí být zadáno pro všechny položky řádku, pro které je zvolen typ doručení **Provedení**. V opačném případě transakci nelze dokončit.
 - **Serializované produkty nejsou agregovány na obrazovce transakce** – Nastavení **Agregovat produkty** ve skupině polí **Terminál** na stránce **Funkční profil** umožňuje seskupovat stejné neserializované výrobky na obrazovce transakce. Při seskupení stejných produktů jsou lépe viditelné v mřížce transakcí. Nicméně vzhledem k tomu, že sériová čísla jsou zpravidla jedinečná a zaměstnanci obchodu nemusí zadávat sériová čísla až do okamžiku přechodu k pokladně, nastavení **Agregovat produkty** se nepoužívá pro serializované produkty. Proto serializované produkty nebude agregovány na obrazovce transakce, pokud zvolíte nastavení **Agregovat produkty**.
 - **Možnosti vyhledávání v denících podle sériového čísla** – deníky lze nyní prohledávat podle sériových čísel. Otevřete operaci Deníky a stiskněte tlačítko Rozšířené vyhledávání na panelu aplikací. Pomocí tlačítka Přidat filtr lze použít filtr také na vyhledávání sériových čísel.
 

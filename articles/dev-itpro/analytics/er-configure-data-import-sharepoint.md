@@ -3,13 +3,13 @@ title: Konfigurace importu dat z aplikace SharePoint
 description: "Toto téma vysvětluje postup při importu dat z aplikace Microsoft SharePoint."
 author: NickSelin
 manager: AnnBe
-ms.date: 05/21/2018
+ms.date: 11/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
@@ -18,17 +18,17 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 9f23f73e9a98fc50c622255bf6ed027c41ec8010
+ms.sourcegitcommit: 060c3dec71e2b953d9341c5b5c89e60925fda34d
+ms.openlocfilehash: 8053b0316c86c614b87b0e658dffade3a135f2cc
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurace importu dat z aplikace SharePoint
 
 [!include[banner](../includes/banner.md)]
 
-Při importu dat z příchozího souboru pomocí rozhraní elektronických sestav (ER) musíte konfigurovat formát ER, který podporuje import, a spustit mapování modelu typu **cíl**, který tento formát používá jako zdroj dat. Pokud chcete provést import dat, přejděte do souboru, který chcete importovat. Vstupní soubor může ručně vybrat uživatel. S novou možností ER podporovat import dat z aplikace Microsoft SharePoint tento proces lze konfigurovat jako bezobslužný. Konfigurace ER lze použít k provádění importu dat ze souborů, které jsou uloženy ve složkách Microsoft SharePoint. Toto téma vysvětluje, jak provedete import ze služby SharePoint do Microsoft Dynamics 365 for Finance and Operations. Tyto příklady používají transakcí dodavatele jako obchodní data.
+Při importu dat z příchozího souboru pomocí rozhraní elektronických sestav (ER) musíte konfigurovat formát ER, který podporuje import, a spustit mapování modelu typu **cíl**, který tento formát používá jako zdroj dat. Pokud chcete provést import dat, přejděte do souboru, který chcete importovat. Vstupní soubor může ručně vybrat uživatel. S novou možností ER podporovat import dat z aplikace Microsoft SharePoint lze tento proces konfigurovat jako bezobslužný. Konfigurace ER lze použít k provádění importu dat ze souborů, které jsou uloženy ve složkách Microsoft SharePoint. Toto téma vysvětluje, jak provedete import ze služby SharePoint do Microsoft Dynamics 365 for Finance and Operations. Tyto příklady používají transakcí dodavatele jako obchodní data.
 
 ## <a name="prerequisites"></a>Požadavky
 Pro dokončení příkladů v tomto tématu musíte mít následující přístup:
@@ -39,60 +39,65 @@ Pro dokončení příkladů v tomto tématu musíte mít následující přístu
     - Funkční konzultant elektronického výkaznictví
     - Správce systému
 
-- Přístup k instanci serveru SharePoint, který je konfigurován k použití s aplikací Finance and Operations
-- Konfigurace formátu a modelu ER pro platby 1099
+- Přístup k instanci serveru SharePoint, který je konfigurován k použití s aplikací Finance and Operations.
+- Konfigurace formátu a modelu ER pro platby 1099.
 
 ### <a name="create-required-er-configurations"></a>Vytvoření požadovaných konfigurací ER
-Přehrajte si průvodce záznamem úloh **ER Import dat ze souboru aplikace Microsoft Excel**, kteří jsou součástí obchodního procesu **7.5.4.3 Acquire/Develop IT service/solution components (10677)**. Tito průvodci záznamem úloh vás provedou procesem navrhování a použití konfigurací ER pro interaktivní import transakcí dodavatele z externích souborů aplikace Microsoft Excel. Další informace naleznete v tématu [analýza příchozích dokumentů do aplikace Microsoft Excel](parse-incoming-documents-excel.md). Nakonec budete mít:
+Přehrajte si průvodce záznamem úloh **ER Import dat ze souboru aplikace Microsoft Excel**, kteří jsou součástí obchodního procesu **7.5.4.3 Acquire/Develop IT service/solution components (10677)**. Tito průvodci záznamem úloh vás provedou procesem navrhování a použití konfigurací ER pro interaktivní import transakcí dodavatele z externích souborů aplikace Microsoft Excel. Další informace naleznete v tématu [analýza příchozích dokumentů do aplikace Microsoft Excel](parse-incoming-documents-excel.md). Po dokončení průvodců záznamem úloh, bude mít následující nastavení.
 
-- Konfigurace ER:
+#### <a name="er-configurations"></a>Konfigurace ER
 
-    - Konfigurace modelu ER, **model platby 1099**
-    - Konfigurace formátu ER **formát pro import transakcí dodavatelů z aplikace Excel**
+- Konfigurace modelu ER, **model platby 1099**
+- Konfigurace formátu ER **formát pro import transakcí dodavatelů z aplikace Excel**
 
-    [![Konfigurace ER pro import dat ze služby SharePoint](./media/GERImportFromSharePoint-01-Configurations.PNG)](./media/GERImportFromSharePoint-01-Configurations.PNG)
+![Konfigurace ER pro import dat ze služby SharePoint](./media/GERImportFromSharePoint-01-Configurations.PNG)
 
-- Ukázka vstupního souboru pro import dat:
+#### <a name="sample-of-the-incoming-file-for-data-import"></a>Ukázka vstupního souboru pro import dat:
 
-    - Soubor Excel **1099import data.xlsx**, s transakcemi dodavatele, které je nutné importovat do modulu Finance and Operations
+- Soubor Excel **1099import data.xlsx**, s transakcemi dodavatele, které je nutné importovat do modulu Finance and Operations.
 
-    [![Vzorový soubor aplikace Microsoft Excel pro import ze služby SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)](./media/GERImportFromSharePoint-02-Excel.PNG)
-
+![Vzorový soubor aplikace Microsoft Excel pro import ze služby SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)
+    
 > [!NOTE]
 > Formát pro import transakcí dodavatele je vybrán jako výchozí mapování modelu. Proto když spustíte mapování modelu **model platby 1099**, které je typu **Do cíle**, mapování modelu spustít tento formát pro import dat z externích souborů. Následně tato data použije k aktualizaci tabulek aplikace.
 
-## <a name="configure-document-management-parameters"></a>Konfigurace parametrů správy dokumentů
-1. Na stránce **Parametry správy dokumentů**, nakonfigurujte přístup k instanci serveru SharePoint, který bude používán ve společnosti, do které jste aktuálně přihlášení. V tomto příkladu je společnost USMF.
-2. Zkontrolujte připojení k instanci serveru SharePoint, abyste se ujistili, že máte udělen přístup.
+## <a name="configure-access-to-sharepoint-for-file-storage"></a>Konfigurace přístupu na web služby SharePoint pro uložení souboru
+Pokud chcete uložit elektronické soubory s výkazy do umístění ve službě SharePoint, musíte nakonfigurovat přístup k instanci serveru SharePoint, kterou bude používat aktuální společnost. V tomto příkladu je společnost USMF. Pokyny naleznete v tématu [Konfigurace úložiště služby SharePoint](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 
-    [![Nastavení správy dokumentů – server SharePoint](./media/GERImportFromSharePoint-03-SharePointSetup.png)](./media/GERImportFromSharePoint-03-SharePointSetup.png)
+1. Dokončete jednotlivé kroky v části [Konfigurovat úložiště služby SharePoint](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+2. Otevřete konfigurovanou stránku SharePoint.
+3. Vytvořte následující složky, do kterých lze uložit příchozí soubory elektronického vykazování:
 
-3. Otevřete konfigurovaný web služby SharePoint a vytvořte následující složky, kde jsou uloženy příchozí soubory:
+     - Zdroj importu souborů (hlavní) (Příklad ukazuje následující snímek obrazovky)
+     - Zdroj importu souborů (alternativní)
 
-    - Zdroj importu souborů (hlavní)
-    - Zdroj importu souborů (alternativní)
+    ![Zdroj importu souborů (hlavní)](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
 
-    [![Nastavení správy dokumentů – server SharePoint](./media/GERImportFromSharePoint-04-SharePointFolder1.png)](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
+4. (Volitelné) Vytvořte následující složky, do kterých lze uložit příchozí soubory po importu: 
 
-    [![Nastavení správy dokumentů – server SharePoint](./media/GERImportFromSharePoint-05-SharePointFolder2.png)](./media/GERImportFromSharePoint-05-SharePointFolder2.png)
+    - Složka archivu souborů - tato složka je určená pro úspěšně importované soubory.
+    - Složka s upozorněním na soubory - tato složka je určena pro soubory, které byly importovány s varováním.
+    - Složka chyb souborů - tato složka je určená pro neúspěšně importované soubory.
 
-4. V aplikaci Finance and Operations na stránce **Typy dokumentů** vytvořte následující typy dokumentu, které se použijí pro přístup ke složkám služby SharePoint, které jste právě vytvořili:
+4. V modulu Finance and Operations přejděte na **Správa organizace > Správa dokumentů > Typy dokumentů**.
+5. Vytvořte následující typy dokumentů, které budou použity pro přístup k složkám služby SharePoint, které jste právě vytvořili. Pokyny naleznete v tématu [Konfigurovat typy dokumentů](../../fin-and-ops/organization-administration/configure-document-management.md#configure-document-types).
 
-    - Hlavní SP
-    - Alternativní SP
+|Typ dokumentu        | Seskupit              | Místo konání      | Složka služby SharePoint      |
+|--------------------|--------------------|---------------|------------------------|
+|Hlavní SP             |Soubor                |SharePoint     |Zdroj importu souborů (hlavní)|
+|Alternativní SP             |Soubor                |SharePoint     |Zdroj importu souborů (alternativní)|
+|Archiv SP             |Soubor                |SharePoint     |Složka archivu souborů|
+|Upozornění SP             |Soubor                |SharePoint     |Složka k upozornění na soubory|
+|Chyba SP             |Soubor                |SharePoint     |Složka chyb souborů|
 
-5. Pro vytvořené typy dokumentů v poli **Skupina** zadejte **Soubor** a do pole **Umístění** zadejte **SharePoint**. Pak zadejte adresu složky služby SharePoint:
-
-    - Pro typ dokumentu **Hlavní SP**: zdroj importu souborů (hlavní)
-    - Pro typ dokumentu **Alternativní SP**: zdroj importu souborů (alternativní)
-
-    [![Nastavení služby SharePoint - nový typ dokumentu](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
+![Nastavení služby SharePoint - nový typ dokumentu](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
 
 ## <a name="configure-er-sources-for-the-er-format"></a>Konfigurace zdrojů ER pro formát ER
 1. Klikněte na **Správa organizace** \> **Elektronická sestava** \> **Úlohy elektronických sestav**.
 2. Na stránce **Zdroj elektronického výkaznictví** nakonfigurujte zdrojové soubory pro import dat pomocí konfigurovaného ER formátu.
 3. Definujte název masky souboru, aby byly importovány pouze soubory s příponou XLSX. Maska názvu souboru je volitelná a používá se pouze v případě, že byla definována. Můžete definovat pouze jednu masku pro každý formát ER.
-4. Vyberte obě složky serveru SharePoint, které jste předtím vytvořili.
+4. Pokud existuje spousta souborů k importu a není důležité pořadí při importu, změňte možnost **Seřadit soubory před importem** na **Neseřazovat**.
+5. Vyberte všechny složky serveru SharePoint, které jste předtím vytvořili.
 
     [![Nastavení zdroje souborů ER](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)
 
@@ -114,13 +119,13 @@ Lze rovněž otevřít stránku **stavy souboru pro zdroje** výběrem možnosti
 
     [![Obsah služby SharePoint - soubor aplikace Microsoft Excel pro import](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
 
-2. V modulu Finance and Operations na stránce **Stavy souboru pro zdroje** vyberte **aktualizovat** k obnovení stránky. Všimněte si, že je soubor aplikace Excel, který byl nahrán do služby SharePoint, se zobrazil v tomto formuláři se stavem **Připraven**. Jsou podporovány následující stavy:
+2. V modulu Finance and Operations na stránce **Stavy souboru pro zdroje** vyberte **aktualizovat** k obnovení stránky. Všimněte si, že soubor aplikace Excel, který byl nahrán do služby SharePoint, se zobrazil na této stránce se stavem **Připraven**. Jsou podporovány následující stavy:
 
     - **Připraveno** – přiřazené automaticky pro každý nový soubor ve složce služby SharePoint. Tento stav znamená, že je soubor připraven k importu.
     - **Import** – přiřazené automaticky sestavou ER, když soubor bude uzamčen procesem importu, aby se zabránilo jeho použití jinými postupy (pokud je jich mnoho spuštěno současně).
     - **Importované** – přiřazené automaticky podle vyúčtování ER po úspěšném dokončení importu souboru. Tento stav znamená, že importovaný soubor byl odstraněn ze zdroje konfigurovaných souborů (složka SharePoint).
     - **Neúspěšné** – přiřazené automaticky podle vyúčtování ER po dokončení importu souboru s chybami nebo výjimkami.
-    - **Blokování** – přiřazené ručně uživatelem v tomto formuláři. Tento stav znamená, že soubor nyní nebude importován. Tento stav slouží k odložení importu některých souborů.
+    - **Blokování** – přiřazené ručně uživatelem na této stránce. Tento stav znamená, že soubor nyní nebude importován. Tento stav slouží k odložení importu některých souborů.
 
     [![Stránka stavů souboru ER pro vybrané zdroje](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
 
@@ -136,13 +141,9 @@ Lze rovněž otevřít stránku **stavy souboru pro zdroje** výběrem možnosti
 
     [![Spustit mapování modelu ER](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
 
-4. Mapování modelu lze spustit bezobslužně v dávkovém režimu. V takovém případě pokaždé, když je dávka spuštěna v tomto formátu ER, je importován jeden soubor ze zdrojů konfigurovaného souboru. K implementaci spuštění této dávky použijte následující kód.
+4. Mapování modelu lze spustit bezobslužně v dávkovém režimu. V takovém případě pokaždé, když je dávka spuštěna v tomto formátu ER, je importován jeden soubor ze zdrojů konfigurovaného souboru.
 
-    ```
-    ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId().run()
-    ```
-
-    Po úspěšném importu souboru ze složky SharePoint, je soubor z této složce odstraněn.
+    Po úspěšném importování souboru ze složky SharePoint je soubor odstraněn z této složky a přesune se do složky pro úspěšně importované soubory nebo do složky pro importované soubory s upozorněními. V opačném případě se přesune do složky neúspěšných souborů nebo zůstává v této složce, pokud není složka pro neúspěšné soubory nastavená. 
 
 5. Zadejte ID dokladu, jako je například **V-00001**, a poté vyberte **OK**.
 
@@ -178,7 +179,7 @@ Lze rovněž otevřít stránku **stavy souboru pro zdroje** výběrem možnosti
 8. Vyberte **spustit** ke spuštění modifikovaného mapování modelu ER.
 9. Zadejte ID dokladu, jako je například **V-00002**, a poté vyberte **OK**.
 
-    Všimněte si, že informační protokol obsahuje upozornění informující, že uložení v souboru složky SharePoint obsahuje nesprávný účet dodavatele a nedá se importovat.
+    Všimněte si, že informační protokol obsahuje upozornění, že uložení v souboru složky SharePoint obsahuje nesprávný účet dodavatele a nedá se importovat.
 
     [![Spustit mapování modelu ER](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
 
@@ -186,10 +187,9 @@ Lze rovněž otevřít stránku **stavy souboru pro zdroje** výběrem možnosti
 
     [![Stránka stavů souboru ER pro vybrané zdroje](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)
 
-    Oddíl **Zdrojové protokoly pro formát importu** označuje, že při importu došlo k chybě a soubor je stále ve složce služby SharePoint (není zaškrtnuto políčko **Je odstran**). Pokud tento soubor opravíte ve službě SharePoint přidáním správného kódu dodavatele a následně změníte stav souboru ze **Selhání** na **Připraven** v oddílu **Protokol zdrojů pro formát importu**, můžete soubor znovu importovat.
+   Oddíl **Zdrojové protokoly pro formát importu** označuje, že při procesu importu došlo k chybě a soubor je stále ve složce Chybné soubory SharePoint (není zaškrtnuto políčko **Je odstraněn**). Pokud tento soubor opravíte ve službě SharePoint přidáním správného kódu dodavatele a následně ho přesunete do složky Zdroj importu souborů (hlavní), můžete soubor znovu importovat.
 
-11. Zkontrolujte složku **Zdroj importu souborů (hlavní)** složky služby SharePoint. Všimněte si, že soubor aplikace Excel, který nebyl importován, je stále v této složce.
-12. V modulu Finance and Operations vyberte **Závazky** \> **Pravidelné úkoly** \> **Daň 1099** \> **Vyrovnání dodavatele pro 1099**, zadejte vhodné hodnoty do polí **Od data** a **Do data** a pak vyberte **Ruční transakce 1099**.
+11. V modulu Finance and Operations vyberte **Závazky** \> **Pravidelné úkoly** \> **Daň 1099** \> **Vyrovnání dodavatele pro 1099**, zadejte vhodné hodnoty do polí **Od data** a **Do data** a pak vyberte **Ruční transakce 1099**.
 
     Pouze transakce pro doklad V-00001 jsou k dispozici. Žádné transakce pro doklad V-00002 nejsou k dispozici, i když byla nalezena chyba poslední importované transakce v souboru aplikace Excel.
 

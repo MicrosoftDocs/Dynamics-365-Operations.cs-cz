@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: c9f9368dc3e0fb4ed63250889016d6abe7d15a8c
-ms.openlocfilehash: 557e43c05f7015b04380f45fbd69f58a7250829a
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -42,7 +42,8 @@ Následující sloupce určují, kde lze operace vyvolat:
 - **Obrazovka transakce** – Operaci lze vyvolat z mřížek tlačítek POS, které jsou konfigurovány na obrazovce transakcí POS.
 - **Uvítací obrazovka** – Operaci lze vyvolat z mřížek tlačítek POS, které jsou konfigurovány na uvítací obrazovce POS.
 
-Poznámka: Následující operace se vztahují na nejnovější verzi aplikace Dynamics 365 for Retail. Některé operace se mohly změnit, nebo nemusí být k dispozici v předchozích verzích.
+> [!NOTE]
+> Následující operace se vztahují na nejnovější verzi aplikace Dynamics 365 for Retail. Některé operace se mohly změnit, nebo nemusí být k dispozici v předchozích verzích.
 
 | ID | Operace | popis | Mřížka tlačítek | Obrazovka transakce | Uvítací obrazovka | K dispozici offline | Specifické pro národní prostředí |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|

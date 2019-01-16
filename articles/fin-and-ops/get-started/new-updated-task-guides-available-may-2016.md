@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 237ff2935ab8e2dee90bd716179b45c5fca455c3
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: cf12f2dfb62645fc5d6886ef429441c48982d484
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -31,10 +31,12 @@ ms.lasthandoff: 08/08/2018
 
 Tento článek uvádí seznam nových nebo aktualizovaných průvodců úkolem vydaných pro knihovnu Microsoft APQC Unified Library (květen 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics AX. Nebyly vydány žádné nové knihovny Začínáme. 
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Průvodci úkolem v knihovně APQC Unified Library pro Microsoft Dynamics AX (květen 2016 – všechny jazyky)
-------------------------------------------------------------------------------------------------
+## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Průvodci úkolem v knihovně APQC Unified Library pro Microsoft Dynamics AX (květen 2016 – všechny jazyky)
 
-Knihovna APQC Unified Library (květen 2016) obsahuje průvodce úkolem, kteří jsou určeni k použití pro nápovědu v aktualizaci aplikace Microsoft Dynamics AX pro květen 2016 a vydání aplikace Microsoft Dynamics AX pro únor 2016. Lokalizované verze průvodců úkolem vydaných v knihovně APQC Unified Library (únor 2016) jsou momentálně k dispozici v této knihovně. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Začínáme s nápovědou](help-overview.md). <strong>Poznámka:</strong> hvězdička (<strong>\</strong>*) vedle názvu řádku pro modelování podnikových procesů (BPM) označuje, že průvodce úkolem pro tento obchodní proces byl vytvořen pro aktualizaci Dynamics AX pro květen 2016 a není podporován v dřívějších verzích aplikace Microsoft Dynamics AX.
+Knihovna APQC Unified Library (květen 2016) obsahuje průvodce úkolem, kteří jsou určeni k použití pro nápovědu v aktualizaci aplikace Microsoft Dynamics AX pro květen 2016 a vydání aplikace Microsoft Dynamics AX pro únor 2016. Lokalizované verze průvodců úkolem vydaných v knihovně APQC Unified Library (únor 2016) jsou momentálně k dispozici v této knihovně. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Začínáme s nápovědou](help-overview.md).
+
+> [!NOTE]
+> Hvězdička (\*) vedle názvu řádku pro modelování podnikových procesů (BPM) označuje, že průvodce úkolem pro tento obchodní proces byl vytvořen pro aktualizaci Dynamics AX pro květen 2016 a není podporován v dřívějších verzích aplikace Microsoft Dynamics AX.
 
 ### <a name="countryregion-functionality"></a>Funkce země nebo oblasti
 
@@ -62,15 +64,15 @@ Knihovna APQC Unified Library (květen 2016) obsahuje průvodce úkolem, kteří
 
 ### <a name="electronic-reporting"></a>Elektronické výkaznictví
 
-|                                  Řádek BPM                                  | Země / oblast |
+| Řádek BPM                                                                   | Země / oblast |
 |----------------------------------------------------------------------------|----------------|
-|                         Konfigurace cílů ER                          |     Globální     |
-|     Návrh konfigurace ER pro generování sestav ve formátu OPENXML     |     Globální     |
-| Generování elektronických dokumentů ER pro platby za použití konfigurace formátu |     Globální     |
-|             Import konfigurace ER ze služby Lifecycle Services              |     Globální     |
-|               <strong>\</strong>*Elektronické vykazování – volba poskytovatele služeb                |     Globální     |
-|   Upgrade formátu ER přijetím nové základní verze tohoto formátu    |     Globální     |
-|             Odeslání konfigurace ER do služby Lifecycle Services              |     Globální     |
+| Konfigurace cílů ER                                                  | Globální         |
+| Návrh konfigurace ER pro generování sestav ve formátu OPENXML         | Globální         |
+| Generování elektronických dokumentů ER pro platby za použití konfigurace formátu | Globální         |
+| Import konfigurace ER ze služby Lifecycle Services                          | Globální         |
+| \*Elektronické vykazování – volba poskytovatele služeb                                               | Globální         |
+| Upgrade formátu ER přijetím nové základní verze tohoto formátu      | Globální         |
+| Odeslání konfigurace ER do služby Lifecycle Services                          | Globální         |
 
 ### <a name="human-capital-management"></a>Správa lidského kapitálu
 
@@ -176,25 +178,21 @@ Knihovna APQC Unified Library (květen 2016) obsahuje průvodce úkolem, kteří
 
 ### <a name="warehouse-and-transportation"></a>Sklad a doprava
 
-|                                     Řádek BPM                                     | Země/oblast |
-|----------------------------------------------------------------------------------|----------------|
-|                            Konfigurace zpracování vlny                             |     Globální     |
-| <strong>\</strong>*Ohlášení za dokončené pro umístění bez řízení na základě registračních značek |     Globální     |
-|                      Vytvoření procesu doplnění metodou min/max                      |     Globální     |
-|                             Nastavení vytváření kontejnerů                              |     Globální     |
-|                              Nastavení ručního balení                               |     Globální     |
-|                  Nastavení omezení přepravy pro položku                   |     Globální     |
-|                <strong>\</strong>*Nastavení zásad práce ve skladu                 |     Globální     |
+|                                     Řádek BPM                    | Země nebo oblast |
+|-----------------------------------------------------------------|----------------|
+| Konfigurace zpracování vlny                                       | Globální         |
+| \*Ohlášení za dokončené pro umístění bez řízení na základě registračních značek | Globální         |
+| Vytvoření procesu doplnění metodou min/max                          | Globální         |
+| Nastavení vytváření kontejnerů                                         | Globální         |
+| Nastavení ručního balení                                           | Globální         |
+| Nastavení omezení přepravy pro položku                   | Globální         |
+| \*Nastavení zásad práce ve skladu                                 | Globální         |
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další prostředky
 
 [Noví průvodci úkolem (únor 2016)](new-task-guides-available-february-2016.md)
 
 [Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Noví nebo aktualizovaní dostupní průvodci úkolem (listopad 2016)](new-task-guides-november-2016.md)
-
-
-
 

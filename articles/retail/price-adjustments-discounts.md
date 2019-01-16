@@ -20,10 +20,10 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9220cc12abf7134d425e088939d20ea03239a75a
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 61ac8e5fbdc4d91bb5bc5372a7fb96633043473a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -33,19 +33,19 @@ ms.lasthandoff: 11/03/2017
 
 Tento článek obsahuje informace o úpravě ceny a slevách v aplikaci Microsoft Dynamics 365 for Retail.
 
-V aplikaci Microsoft Dynamics 365 for Retail můžete provádět úpravy ceny produktů a můžete také nastavit slevy, které budou použity pro položky řádku nebo transakce v pokladních místech (POS), a to v prodejní objednávce kontaktního střediska nebo online objednávce. Úpravy ceny i slevy lze propojit s cenovými skupinami. Pro úpravy ceny a slevy můžete určit jedno počáteční a koncové datum nebo opakované období, kód slevy a další atributy. Úpravy ceny a slevy lze použít pro produkty, varianty nebo kategorie. Pokud je pro produkt platná více než jedna sleva, odběratel může obdržet buď jednu ze slev nebo kombinovanou slevu, a to v závislosti na konfiguraci slevy. Aplikace Dynamics 365 for Retail automaticky použije slevu nebo kombinaci slevy, jež nabízí nejlepší cenu pro odběratele. Při nastavení úpravy ceny nebo slevy je nutné zkontrolovat, zda jsou cenové skupiny přiřazeny pro správné kanály, katalogy, umístění nebo věrnostní programy, u kterých mají být použity slevy. Dále, pokud potřebujete automaticky vygenerovat ID slevy, můžete před definováním nové slevy nebo úpravy ceny nastavit číselné řady na stránce **Parametry maloobchodu**. **Poznámka:** Úpravu ceny nebo slevu můžete odstranit. Dojde však ke ztrátě statistických údajů.
+V aplikaci Microsoft Dynamics 365 for Retail můžete provádět úpravy ceny produktů a můžete také nastavit slevy, které budou použity pro položky řádku nebo transakce v pokladních místech (POS), a to v prodejní objednávce kontaktního střediska nebo online objednávce. Úpravy ceny i slevy lze propojit s cenovými skupinami. Pro úpravy ceny a slevy můžete určit jedno počáteční a koncové datum nebo opakované období, kód slevy a další atributy. Úpravy ceny a slevy lze použít pro produkty, varianty nebo kategorie. Pokud je pro produkt platná více než jedna sleva, odběratel může obdržet buď jednu ze slev nebo kombinovanou slevu, a to v závislosti na konfiguraci slevy. Aplikace Dynamics 365 for Retail automaticky použije slevu nebo kombinaci slevy, jež nabízí nejlepší cenu pro odběratele. Při nastavení úpravy ceny nebo slevy je nutné zkontrolovat, zda jsou cenové skupiny přiřazeny pro správné kanály, katalogy, umístění nebo věrnostní programy, u kterých mají být použity slevy. Dále, pokud potřebujete automaticky vygenerovat ID slevy, můžete před definováním nové slevy nebo úpravy ceny nastavit číselné řady na stránce **Parametry maloobchodu**.
 
-### <a name="types-of-discounts"></a>Typy slev
+> [!NOTE]
+> Úpravu ceny nebo slevu můžete odstranit. Dojde však ke ztrátě statistických údajů.
+
+## <a name="types-of-discounts"></a>Typy slev
 
 Existují čtyři typy maloobchodních slev:
 
--   **Jednoduchá sleva** – jedno procento nebo částka.
--   **Množstevní sleva** – sleva, která se použije při zakoupení dvou nebo více produktů.
--   **Kombinační sleva** – sleva je uplatněna v případě, že se zakoupí určitá kombinace položek.
--   **Mezní sleva** – sleva, která se použije, když celková částka transakce je větší než zadaná částka.
+- **Jednoduchá sleva** – jedno procento nebo částka.
+- **Množstevní sleva** – sleva, která se použije při zakoupení dvou nebo více produktů.
+- **Kombinační sleva** – sleva je uplatněna v případě, že se zakoupí určitá kombinace položek.
+- **Mezní sleva** – sleva, která se použije, když celková částka transakce je větší než zadaná částka.
 
 Úpravy ceny i slevy lze propojit s cenovými skupinami. Skupiny cen lze pak přidružit s kanály, katalogy, umístěním a věrnostními programy.
-
-
-
 

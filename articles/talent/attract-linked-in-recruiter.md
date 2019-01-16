@@ -3,7 +3,7 @@ title: "Zajištění zdrojů pomocí LinkedIn Recruiter"
 description: "Toto téma obsahuje informace o používání strojového učení pro získání doporučení práce a uchazeče o práci."
 author: josaw
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc6bf25d303d7d8de8002a923a080b90dcfbeab
-ms.openlocfilehash: 106103e2c3d8f3d89aac5140174e5794da22536f
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/24/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -83,7 +83,12 @@ Poté, co správce systému Attract povolí možnosti programu LinkedIn Recruite
 
 V systému Attract můžete zobrazit profil LinkedIn uchazeče. Miniaplikace LinkedIn zobrazí profil uchazeče, když informace ATS odpovídá informacím o webu LinkedIn uživatelů.
 
-Pokud chcete zobrazit profil, přejděte na profil uchazeče z pracovní pozice nebo fondu talentů. V profilu uchazeče vyberte kartu **LinkedIn** a načte se miniaplikace profilu. Její pomocí určete zda se jedná o shodu. Pokud tomu tak není, najděte správnou osobu. Z této stránky lze také uložit uchazeče do projektů LinkedIn Recruiter.
+Pokud chcete zobrazit profil, přejděte na profil uchazeče z pracovní pozice nebo fondu talentů. V profilu uchazeče vyberte kartu **LinkedIn** a načte se miniaplikace profilu. Z této stránky lze také uložit uchazeče do projektů LinkedIn Recruiter.
+1. Pokud web LinkedIn nalezl shodu na základě e-mailu a ID člena LinkedIn (přesná shoda), zobrazí se profil uchazeče. Uživatel přesto má možnost připojit nebo odpojit profil.
+
+2. Pokud webu LinkedIn nemůže najít uchazeče na základě jeho e-mailu nebo ID člena, zobrazí seznam možných shod uchazečů na základě jména uchazeče a uživatel si může některou vybrat a propojit profil.  
+
+3. V případě, že web LinkedIn nemůže najít uchazeče podle jména, vrátí informaci, že nebyla nalezena shoda.
 
 ### <a name="1-click-export"></a>1-Klikněte na Exportovat. 
 
@@ -117,11 +122,14 @@ Pomocí systému LinkedIn Recruiter můžete sledovat, zda uchazeč žádal o ji
 
 6.  Výběrem karty **Poznámky** zobrazte poznámky, které byly zachyceny pro tohoto uchazeče v aplikaci Attract.
 
+> [!NOTE]
+> Údaje o uchazeči a žádosti se nebudou synchronizovat s programem LinkedIn Recruiter, pokud se uchazeč nedostal za fázi potenciálního zákazníka.
+
 ### <a name="inmail-history"></a>Historie InMail
 
 Historie webu LinkedIn InMail je v programu LinkedIn Recruiter dostupná s přístupem na úrovni smlouvy. Pokud tato možnost povolena, můžete zobrazit celou historii InMail s uchazečem. Můžete se také podívat, kdo další z vaší organizace si vyměňoval InMail s uchazečem, nemůžete však zobrazit zprávy, které si zasílali.
 
-Pokud chcete zobrazit historii InMail, přejděte na kartu **LinkedIn** a přejděte do spodní části stránky a zobrazte historii. Můžete zobrazit historii InMail pouze v případě, že uchazeč odpověděl na vaši žádost a rozhodl se nasdílet s vámi svůj profil ve službě LinkedIn. Zprávy z InMail se každých několik hodin synchronizují s aplikací Attract.
+Pokud chcete zobrazit historii InMail, přejděte na kartu **LinkedIn** a přejděte do spodní části stránky a zobrazte historii. POkud jste vedli diskusi s uchazečem, můžete zobrazit historii InMail. Zprávy z InMail se každých několik hodin synchronizují s aplikací Attract.
 
 ### <a name="notes-history"></a>Historie poznámek 
 
@@ -131,7 +139,7 @@ Pokud chcete zobrazit historii poznámek, přejděte na kartu **LinkedIn** a př
 
 ### <a name="inmail-stub-profile"></a>Profil InMail se zakázaným inzerováním
 
-Profil InMail se zakázaným inzerováním je v programu LinkedIn Recruiter dostupný s přístupem na úrovni smlouvy. Pokud uchazeči souhlasí se sdílením svých profilů LinkedIn s libovolným uživatelem ve vaší organizaci, můžete sledovat uchazeče v aplikaci Attract a pro každého uchazeče se vytvoří nový záznam uchazeče.
+Profil InMail se zakázaným inzerováním je v programu LinkedIn Recruiter dostupný s přístupem na úrovni smlouvy. Pokud uchazeči souhlasí se sdílením svých profilů LinkedIn s libovolným uživatelem ve vaší organizaci, můžete sledovat uchazeče v aplikaci Attract a pro každého uchazeče se vytvoří nový záznam uchazeče. Pokud uchazeč existuje v systému a má e-mailovou adresu nebo se rozhodl sdílet adresu s náborářem, můžete zobrazit jeho e-mailovou adresu.
 
 Chcete-li zobrazit seznam uchazečů, přejděte na **Fondy talentů**, aby se zobrazil fond talentů LinkedIn vytvořený systémem. Tento fond talentů obsahuje seznam uchazečů a jejich profily se zakázaným inzerováním z webu LinkedIn, zobrazující křestní jméno a příjmení uchazeče. ID e-mailu uchazeče se zobrazí, pokud uchazeč nastavil sdílení své e-mailové adresy.
 

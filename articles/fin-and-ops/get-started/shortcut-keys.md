@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 58551a26d9f3a55e8a6ab8b4ca0805aaca4a4c28
-ms.openlocfilehash: d9d3ace80e49b8dc29259c8c16925f474c9e74b3
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 497fdb303abb9fe94caa1ebc03da005b88a40e4b
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/25/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -29,36 +29,35 @@ ms.lasthandoff: 10/25/2018
 
 [!include [banner](../includes/banner.md)]
 
-Následující klávesové zkratky platí v celé aplikaci Dynamics 365 for Finance and Operations. 
+Následující klávesové zkratky platí v celé aplikaci Dynamics 365 for Finance and Operations.
 
-**Poznámka:** klávesové zkratky, jež jsou zde popsány, se vztahují na rozvržení klávesnice pro Spojené státy. Klávesy na klávesnicích s jiným rozvržením nemusí přesně odpovídat klávesám klávesnice pro USA.
+> [!NOTE]
+> Klávesové zkratky, jež jsou zde popsány, se vztahují na rozvržení klávesnice pro Spojené státy. Klávesy na klávesnicích s jiným rozvržením nemusí přesně odpovídat klávesám klávesnice pro USA.
 
 ## <a name="finding-a-shortcut"></a>Nalezení klávesových zkratek
-Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné klávesové zkratky přímo z uživatelského rozhraní. Stačí kliknout pravým tlačítkem na ovládací prvek a zvolit **Zobrazit klávesové zkratky**. Otevře se dialogové okno zobrazující klávesové zkratky, které lze použít podle toho, kde na stránce se nalézáte. 
 
+Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné klávesové zkratky přímo z uživatelského rozhraní. Stačí kliknout pravým tlačítkem na ovládací prvek a zvolit **Zobrazit klávesové zkratky**. Otevře se dialogové okno zobrazující klávesové zkratky, které lze použít podle toho, kde na stránce se nalézáte.
 
 ## <a name="action-shortcuts"></a>Zkratky akcí
 
-|                                                   |                                  |
-|---------------------------------------------------|----------------------------------|
-| **Akce**                                    | **Stisknout**                        |
-| Otevření hledání akce                                | Ctrl+’ nebo Alt+Q                  |
-| Přesunutí do standardního podokna akcí                  | Alt+M,A nebo Ctrl+F6               |
-| Otevření karty v podokně akcí nebo v nabídce           | Enter nebo Mezerník nebo Alt+šipka dolů |
-| Přesunutí k další nebo předchozí možnosti v nabídce            | Šipka nahoru nebo šipka dolů            |
-| Zavření karty v podokně akcí nebo nabídce          | Esc                              |
-| Simulace klepnutí pravým tlačítkem                            | Shift+F10                        |
-| Otevření kontextové nabídky Finance and Operations      | Ctrl+F10                         |
-| Stisk výchozího tlačítka ve formuláři nebo dialogovém okně   | Alt+Enter                        |
-| Klepnutí na tlačítko nebo dlaždici                            | Enter nebo Mezerník                   |
-| Zobrazení obnovených informací pro dlaždici s počtem         | ALT+Šipka nahoru                     |
-| Zobrazit aktuálně dostupné klávesové zkratky                | Alt+Shift+K                      |                              
+| Akce                                      | Stisknout                            |
+|-------------------------------------------------|----------------------------------|
+| Otevření hledání akce                              | Ctrl+’ nebo Alt+Q                  |
+| Přesunutí do standardního podokna akcí                | Alt+M,A nebo Ctrl+F6               |
+| Otevření karty v podokně akcí nebo v nabídce         | Enter nebo Mezerník nebo Alt+šipka dolů |
+| Přesunutí k další nebo předchozí možnosti v nabídce          | Šipka nahoru nebo šipka dolů            |
+| Zavření karty v podokně akcí nebo nabídce        | Esc                              |
+| Simulace klepnutí pravým tlačítkem                          | Shift+F10                        |
+| Otevření kontextové nabídky Finance and Operations    | Ctrl+F10                         |
+| Stisk výchozího tlačítka ve formuláři nebo dialogovém okně | Alt+Enter                        |
+| Klepnutí na tlačítko nebo dlaždici                          | Enter nebo Mezerník                   |
+| Zobrazení obnovených informací pro dlaždici s počtem       | ALT+Šipka nahoru                     |
+| Zobrazit aktuálně dostupné klávesové zkratky              | Alt+Shift+K                      |
 
 ## <a name="date-picker-shortcuts"></a>Zkratky pro výběr data
 
-|                                       |                                           |
+| Akce                            | Stisknout                                     |
 |---------------------------------------|-------------------------------------------|
-| **Akce**                        | **Stisknout**                                 |
 | Otevření výběru data                  | ALT+Šipka dolů                            |
 | Přechod mezi daty ve výběru data | CTRL+Šipka nahoru                           |
 | Přechod na další nebo předchozí měsíc       | Page down / Page up                       |
@@ -70,9 +69,8 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 
 ## <a name="factbox-shortcuts"></a>Zkratky pro okno s fakty
 
-|                                                                                 |                                           |
+| Akce                                                                      | Stisknout                                     |
 |---------------------------------------------------------------------------------|-------------------------------------------|
-| **Akce**                                                                  | **Stisknout**                                 |
 | Otevření okna s fakty (nebo aktivace okna s fakty, pokud je již otevřeno) | Alt+M,B nebo Ctrl+F2                        |
 | Zavření okna s fakty (pokud je aktivní okno s fakty)                         | Esc                                       |
 | Přesunutí na další nebo předchozí okno s fakty (pokud je aktivní okno s fakty)              | Alt+Shift+Šipka dolů a Alt+Shift+Šipka nahoru |
@@ -82,42 +80,39 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 
 ## <a name="filtering-shortcuts"></a>Zkratky pro filtrování
 
-|                                    |                          |
-|------------------------------------|--------------------------|
-| **Akce**                     | **Stisknout**                |
-| Otevření filtrování mřížky pro aktuální sloupec                        | Ctrl+G                   |
-| Zavření filtrování mřížky pro aktuální sloupec                       | Esc                      |
+| Akce                                                                                                          | Stisknout                    |
+|---------------------------------------------------------------------------------------------------------------------|--------------------------|
+| Otevření filtrování mřížky pro aktuální sloupec                                                                          | Ctrl+G                   |
+| Zavření filtrování mřížky pro aktuální sloupec                                                                         | Esc                      |
 | Otevření podokna Filtr (nebo změna aktivace mezi podoknem Filtr a hlavním formulářem, pokud je již podokno Filtr otevřeno) | Alt+M,F nebo Ctrl+F3       |
-| Zavření podokna Filtr (pokud je aktivní podokno Filtr)             | Esc                      |
-| Otevření pokročilého filtrování a řazení                                      | Ctrl+Shift+F3            | 
+| Zavření podokna Filtr (pokud je aktivní podokno Filtr)                                                               | Esc                      |
+| Otevření pokročilého filtrování a řazení                                                                                        | Ctrl+Shift+F3            |
 
 ## <a name="form-shortcuts"></a>Zkratky pro formulář
 
-|                                                     |                   |
-|-----------------------------------------------------|-------------------|
-| **Akce**                                      | **Stisknout**         |
-| Vytvořit nový záznam                                 | Alt+N             |
-| Odstranění záznamu                                     | Alt+Del nebo Alt+F9 |
-| Uložení záznamu                                         | Alt+S nebo Ctrl+S   |
-| Vrácení (obnovení)                                    | Ctrl+Shift+F5     |
-| Aktualizace dat                                        | Shift+F5          |
-| Přesunutí na viditelné první pole ve formuláři         | Alt+Shift+F       |
-| Přepnutí režimu úprav                                    | F2                |
-| Připojení dokumentu                                   | Ctrl+Shift+A      |
-| Export do aplikace Excel                                     | Ctrl+Shift+E      |
-| Přechod na předchozí záznam (mimo mřížku)        | Ctrl+šipka nahoru     |
-| Přechod na další záznam (mimo mřížku)            | Ctrl+šipka dolů   |
-| Přechod na první záznam (mimo mřížku)           | CTRL+HOME         |
-| Přechod na poslední záznam (mimo mřížku)            | CTRL+END          |
-| Zavření formuláře (kliknutí Zpět)                         | Esc               |
-| Zavření formuláře bez explicitního uložení                   | Shift+Esc         |
-| Zavření formuláře a odstranění neuložených změn       | Alt+Shift+Q       |
+| Akce                                    | Stisknout             |
+|-----------------------------------------------|-------------------|
+| Vytvořit nový záznam                           | Alt+N             |
+| Odstranění záznamu                               | Alt+Del nebo Alt+F9 |
+| Uložení záznamu                                   | Alt+S nebo Ctrl+S   |
+| Vrácení (obnovení)                              | Ctrl+Shift+F5     |
+| Aktualizace dat                                  | Shift+F5          |
+| Přesunutí na viditelné první pole ve formuláři   | Alt+Shift+F       |
+| Přepnutí režimu úprav                              | F2                |
+| Připojení dokumentu                             | Ctrl+Shift+A      |
+| Export do aplikace Excel                               | Ctrl+Shift+E      |
+| Přechod na předchozí záznam (mimo mřížku)  | Ctrl+šipka nahoru     |
+| Přechod na další záznam (mimo mřížku)      | Ctrl+šipka dolů   |
+| Přechod na první záznam (mimo mřížku)     | CTRL+HOME         |
+| Přechod na poslední záznam (mimo mřížku)      | CTRL+END          |
+| Zavření formuláře (kliknutí Zpět)                   | Esc               |
+| Zavření formuláře bez explicitního uložení             | Shift+Esc         |
+| Zavření formuláře a odstranění neuložených změn | Alt+Shift+Q       |
 
 ## <a name="form-navigation-shortcuts"></a>Zkratky pro formulář navigace
 
-|                                                     |                                              |
+| Akce                                          | Stisknout                                        |
 |-----------------------------------------------------|----------------------------------------------|
-| **Akce**                                      | **Stisknout**                                    |
 | Přechod na další nebo předchozí pole                     | Tab / Shift+Tab                              |
 | Přechod na další nebo předchozí kartu                       | Alt+Shift+Šipka vpravo a Alt+Shift+Šipka vlevo |
 | Přechod na &lt;ntou&gt; kartu                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
@@ -134,30 +129,28 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 
 ## <a name="grid-shortcuts"></a>Zkratky mřížky
 
-|                                                                                                                        |                                 |
+| Akce                                                                                                             | Stisknout                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| **Akce**                                                                                                         | **Stisknout**                       |
 | Přechod na další nebo předchozí sloupec                                                                                       | Tab / Shift+Tab                 |
 | Přechod na další nebo předchozí řádek                                                                                          | Šipka nahoru nebo šipka dolů           |
-| Přesunout na další/předchozí řádek bez výběru<br><br>**Poznámka:** Tato klávesová zkratka platí pouze pro vícenásobné výběry scénáře. | Ctrl+šipka nahoru nebo Ctrl+šipka dolů |
-| Zvolit/vymazat aktuální řádek<br><br>**Poznámka:** Tato klávesová zkratka platí pouze pro vícenásobné výběry scénáře.                    | Ctrl+Mezerník / Ctrl+kliknutí         |
-| Přidat další/předchozí řádek k vybrané sadě<br><br>**Poznámka:** Tato klávesová zkratka platí pouze pro vícenásobné výběry scénáře.   | Shift+Mezerník                     |
-| Přidat rozsah řádků k vybrané sadě<br><br>**Poznámka:** Tato klávesová zkratka platí pouze pro vícenásobné výběry scénáře.         | Shift+kliknutí                     |
+| Přesunout na další/předchozí řádek bez výběru<blockquote>[!NOTE] Tato klávesová zkratka platí pouze pro vícenásobné výběry scénáře.</blockquote> | Ctrl+šipka nahoru nebo Ctrl+šipka dolů |
+| Zvolit/vymazat aktuální řádek<blockquote>[!NOTE] Tato klávesová zkratka platí pouze pro vícenásobné výběry scénáře.</blockquote>                    | Ctrl+Mezerník / Ctrl+kliknutí         |
+| Přidat další/předchozí řádek k vybrané sadě<blockquote>[!NOTE] Tato klávesová zkratka platí pouze pro vícenásobné výběry scénáře.</blockquote>   | Shift+Mezerník                     |
+| Přidat rozsah řádků k vybrané sadě<blockquote>[!NOTE] Tato klávesová zkratka platí pouze pro vícenásobné výběry scénáře.</blockquote>         | Shift+kliknutí                     |
 | Přechod na další/předchozí stránku dat                                                                                   | Page up / Page down             |
 | Vytvořit do spodní části mřížky nový řádek                                                                             | Šipka dolů (z posledního řádku)  |
 | Vybrat nebo vymazat všechny řádky                                                                                               | Ctrl+Shift+M                    |
 | Přejít k prvnímu záznamu                                                                                               | CTRL+HOME                       |
 | Přejít k poslednímu záznamu                                                                                                | CTRL+END                        |
-| Spuštění výchozí akce v mřížce<br><br>**Poznámka:** Tato zkratka je povolena při zaměření na buňku obsahující hypertextový odkaz a všechny buňky v tomto sloupci mají hypertextové odkazy.                 | Zadat                           |
+| Spuštění výchozí akce v mřížce<blockquote>[!NOTE] Tato zkratka je povolena při zaměření na buňku obsahující hypertextový odkaz a všechny buňky v tomto sloupci mají hypertextové odkazy.</blockquote> | Zadat                           |
 | Přepnout výběr mezi vybraným řádkem a řádkem záhlaví                                                               | Alt+Shift+H                     |
 | Zvětšit/zmenšit aktuální sloupec (s výběrem v řádku záhlaví)                                                  | Šipka doprava / šipka doleva        |
 | Otevřít filtrování mřížky pro aktuální sloupec (s výběrem v řádku záhlaví)                                              | Zadat                           |
 
 ## <a name="input-control-shortcuts"></a>Zkratky pro ovládání vstupu
 
-|                                                                              |                               |
+| Akce                                                                   | Stisknout                         |
 |------------------------------------------------------------------------------|-------------------------------|
-| **Akce**                                                               | **Stisknout**                     |
 | Otevření hypertextového odkazu                                                           | Ctrl+Enter                    |
 | Zadání data relace do pole kalendářních dat                                       | D+Tab                         |
 | Zadání aktuálního data do pole kalendářních dat                                       | T+Tab                         |
@@ -171,17 +164,15 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 
 ## <a name="messaging-shortcuts"></a>Zkratky pro zasílání zpráv
 
-|                          |               |
+| Akce               | Stisknout         |
 |--------------------------|---------------|
-| **Akce**           | **Stisknout**     |
 | Přechod do centra zpráv | Ctrl+Shift+F7 |
 | Přechod na panel zpráv    | Ctrl+F7       |
 
 ## <a name="navigation-shortcuts"></a>Zkratky pro navigaci
 
-|                                                                               |                            |
+| Akce                                                                    | Stisknout                      |
 |-------------------------------------------------------------------------------|----------------------------|
-| **Akce**                                                                | **Stisknout**                  |
 | Přejít k řídicímu panelu                                                           | Alt+Shift+Home             |
 | Přejít k navigačnímu panelu                                                    | Alt+M,N nebo Alt+Shift+F1    |
 | Přechod na výběr společnosti                                                    | Ctrl+Shift+O               |
@@ -201,9 +192,8 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 
 ## <a name="personalization-shortcuts"></a>Individuální nastavení klávesových zkratek
 
-|                                                                                                                        |                                     |
+| Akce                                                                                                             | Stisknout                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| **Akce**                                                                                                         | **Stisknout**                           |
 | Převedení stránky do režimu přizpůsobení                                                                          | Ctrl+Shift+P                        |
 | Použití nástroje Výběr (v režimu přizpůsobení)                                                                     | s                                   |
 | Otevření vybraného dialogového okna rychlého přizpůsobení ovládacího prvku (při použití nástroje Výběr)                              | Mezerník nebo Enter                      |
@@ -230,9 +220,8 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 
 ## <a name="segmented-entry-shortcuts"></a>Zkratky pro segmentované zadání
 
-|                                                                                                                         |                                  |
+| Akce                                                                                                              | Stisknout                            |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **Akce**                                                                                                          | **Stisknout**                        |
 | Otevření rozevíracího seznamu (pokud je zavřen rozevírací seznam)                                                             | ALT+Šipka dolů                   |
 | Aktivace pole pro zadávání pro aktuální segment v rozevíracím seznamu (pokud je již rozevírací seznam otevřen) | ALT+Šipka dolů                   |
 | Zavření rozevíracího seznamu                                                                                                | ALT+Šipka nahoru                     |
@@ -244,5 +233,4 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Přechod nahoru a dolů o řádek ve vyhledávání                                                                                        | Šipka nahoru nebo šipka dolů            |
 | Přechod nahoru a dolů o stránku ve vyhledávání                                                                                       | Page up / Page down              |
 | Přechod na začátek/konec vyhledávání                                                                                    | Home/End                       |
-
 

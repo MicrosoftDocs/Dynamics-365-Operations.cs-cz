@@ -3,7 +3,7 @@ title: Aktivity v procesech
 description: "Toto téma obsahuje informace o různých typech aktivit, které lze použít v procesu náboru."
 author: 
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: ccd9e2d0ff1f7fb6825c6823936b4013b3054f5d
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: 4f59193991420fd9ec05a83049e569058bf81932
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -62,6 +62,10 @@ Aktivita pohovoru je volitelná. Tato aktivita obsahuje tři složky: dostupnost
 - Pokud chcete odeslat uchazečům e-mail s dotazem na dostupnost, nastavte možnost **Požadovat dostupnost uchazeče** na **Zapnuto**. Pokud nastavíte tuto možnost na **Vypnuto**, tento krok se v procesu náboru na pracovní pozici nezobrazí.
 - Pokud chcete živě streamovat nebo uskutečnit živý konferenční hovor pomocí Skypu pro firmy, nastavte hodnotu v poli **Online schůzka** na **Skype pro firmy**. Do žádosti o schůzku s pohovorem bude přidán správný odkaz **Připojit ke skypové schůzce**.
 - Pokud chcete odeslat uchazečům e-mail pro dokončení plánu, nastavte možnost **Odeslat uchazeči e-mail** na **Zapnuto**. Pokud tuto možnost nastavíte na **Vypnuto**, uchazeči obdrží plán pohovoru pouze v případě, že se přihlásí na portál pro uchazeče.
+
+>[!NOTE]
+> - Pro všechny pohovory 1:1 jsou připomenutí odesílána tazatelům každých 24 hodin, pokud nereagoval (přejetí nebo zamítnutí) na žádost o pohovor.
+> - Pro všechny panelové pohovory nejsou žádná automatizovaná připomenutí na reagování na žádost o pohovor. Pokud chcete připomenutí spustit ručně, upravte pohovor a použijte možnost **aktualizovat a odeslat** k odeslání žádosti zpět tazatelům.
 
 Součást Zpětná vazba komponenty umožňuje zadávat doporučení pro uchazeče. Mohou rovněž zadat jakékoli komentáře ke zpětné vazbě. Pokud zapnete možnost **Zdědit účastníky zpětné od náborového týmu**, budou do složky zpětné vazby automaticky zadáni náborář, manažer náboru a vedoucí pohovoru. Organizace mohou tazatelům povolit zobrazení zpětné vazby ostatních předtím, než odešlou vlastní zpětnou vazbu. Organizace může také povolit tazatelům úpravu zpětné vazby po odeslání.
 

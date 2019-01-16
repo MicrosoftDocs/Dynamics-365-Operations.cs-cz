@@ -3,7 +3,7 @@ title: "Elektronické vykazování – Vytvoření konfigurace formátu (listopa
 description: "Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit konfiguraci formátu pro elektronické výkaznictví."
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 11/27/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
-ms.openlocfilehash: 803ed4a1018d344f1b40fa1f2338fc066e784c3c
+ms.sourcegitcommit: 13469aad7fdcefb3a1706eec0527f29968e007eb
+ms.openlocfilehash: 10511fe5b936135471b522fc7152a54686a3be87
 ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>Elektronické vykazování – Vytvoření konfigurace formátu (listopad 2016)
@@ -31,151 +31,133 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo N�
 
 
 ## <a name="create-a-new-format-configuration"></a>Vytvoření nové konfigurace formátu
-1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
-2. Klikněte na Konfigurace výkaznictví.
-3. Ve stromovém zobrazení vyberte možnost „Platby (zjednodušený model)“.
-4. Kliknutím na možnost Vytvořit konfiguraci otevřete dialogové okno.
-5. V poli Nový zadejte "Formát založený na datovém modelu PaymentModel".
-6. Do pole Název zadejte „BACS (Velká Británie – fiktivní)“.
-    * BACS (Velká Británie – fiktivní)  
-7. Do pole Popis zadejte "Formát plateb dodavatele BACS (Velká Británie – fiktivní)".
-    * Formát plateb dodavatele BACS (Velká Británie – fiktivní)  
+1. Přejděte do části **Správa organizace > Pracovní prostory > Elektronické výkaznictví**.
+2. Klikněte na **Konfigurace výkaznictví**.
+3. Ve stromovém zobrazení vyberte možnost **Platby (zjednodušený model)**.
+4. Kliknutím na možnost **Vytvořit konfiguraci** otevřete dialogové okno.
+ > [!NOTE]
+ > Pokud se možnost **Vytvořit konfiguraci** nezobrazuje, musíte povolit režim návrhu na stránce **Parametry elektronického výkaznictví**. 
+5. V poli **Nový** zadejte **Formát založený na datovém modelu PaymentModel**.
+6. Do pole **Název** zadejte **BACS (Velká Británie – fiktivní)**.
+7. Do pole **Popis** zadejte **Formát plateb dodavatele BACS (Velká Británie – fiktivní)**.
     * Aktivní poskytovatel konfigurace se zadá automaticky v tomto poli. Tento zprostředkovatel bude moci udržovat tuto konfiguraci. Jiní poskytovatelé mohou použít tuto konfiguraci, ale nebudou moci ji spravovat.  
     * Lze definovat určitý formát elektronického dokumentu. Ponechejte toto pole prázdné, pokud chcete vybrat formát při spuštění.  
-8. V poli Definice datového modelu zadejte nebo vyberte hodnotu.
-9. Klepněte na možnost Vytvořit konfiguraci.
-    * Byla vytvořena nová konfigurace. Verzi konceptu lze použít k ukládání formát návrhu pro správu elektronických dokumentů.  
+8. V poli **Definice datového modelu** zadejte nebo vyberte hodnotu.
+9. Klepněte na možnost **Vytvořit konfiguraci**. Byla vytvořena nová konfigurace. Verzi konceptu lze použít k ukládání formát návrhu pro správu elektronických dokumentů.  
+ > [!NOTE]
+ > Pokud se možnost **Vytvořit konfiguraci** nezobrazuje, musíte povolit režim návrhu na stránce **Parametry elektronického výkaznictví**.
 
-## <a name="design-format-of-electronic-document"></a>Návrh formátu elektronického dokumentu
-1. Klikněte na možnost Návrhář.
-2. Klepnutím na možnost Přidat kořen otevřete dialogové okno.
-3. Ve stromovém zobrazení vyberte „Společné\Soubor“.
-4. Do pole Název zadejte „Xml“.
-    * XML  
-5. Zadejte hodnotu UTF-8 do pole Kódování.
-    * UTF-8  
-6. Klikněte na tlačítko OK.
-7. Klepnutím na možnost Přidat otevřete dialogové okno.
-8. Ve stromovém zobrazení vyberte „XML\Prvek“.
-9. Do pole Název zadejte „Zpráva“.
-    * Zpráva  
-10. Klikněte na tlačítko OK.
-11. Ve stromovém zobrazení vyberte 'Xml\Zpráva'.
-12. Klepněte na Přidat prvek.
-13. Do pole Název zadejte „ProcessingDate“.
-    * ProcessingDate  
-14. Klikněte na tlačítko OK.
-15. Klepněte na Přidat prvek.
-16. Do pole Název zadejte „MessageId“.
-    * MessageId  
-17. Klikněte na tlačítko OK.
-18. Klepněte na Přidat prvek.
-19. Do pole Název zadejte Platby.
-    * Platby  
-20. Klikněte na tlačítko OK.
-21. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby'.
-22. Klepněte na Přidat prvek.
-23. Do pole Název zadejte „Položka“.
-    * Zboží  
-24. Klikněte na tlačítko OK.
-25. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka'.
-26. Klepnutím na možnost Přidat otevřete dialogové okno.
-27. Ve stromovém zobrazení vyberte „XML\Atribut“.
-28. Do pole Název zadejte „Id“.
-    * ID  
-29. Klikněte na tlačítko OK.
-30. Klepnutím na možnost Přidat otevřete dialogové okno.
-31. Ve stromovém zobrazení vyberte „XML\Prvek“.
-32. Do pole Název zadejte „Dodavatel“.
-    * Dodavatel  
-33. Klikněte na tlačítko OK.
-34. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel'.
-35. Klepněte na Přidat prvek.
-36. Do pole Název zadejte název.
-    * Jméno  
-37. Klikněte na tlačítko OK.
-38. Klepněte na Přidat prvek.
-39. Do pole Název zadejte „Banka“.
-    * Banka  
-40. Klikněte na tlačítko OK.
-41. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel\Banka'.
-42. Klepněte na Přidat prvek.
-43. Do pole Název zadejte „RoutingNumber“.
-    * Směrový kód  
-44. Klikněte na tlačítko OK.
-45. Klepněte na Přidat prvek.
-46. Do pole Název zadejte „AccountNumber“.
-    * AccountNumber  
-47. Klikněte na tlačítko OK.
-48. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel'.
-49. Klepněte na tlačítko Kopírovat.
-50. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka'.
-51. Klepněte na tlačítko Vložit.
-52. Do pole Název zadejte „Plátce“.
-    * Plátce  
-53. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka'.
-54. Klepněte na Přidat prvek.
-55. Do pole Název zadejte Měna.
-    * Měna  
-56. Klikněte na tlačítko OK.
-57. Klepněte na Přidat prvek.
-58. Do pole Název zadejte Popis.
-    * popis  
-59. Klikněte na tlačítko OK.
-60. Klepněte na Přidat prvek.
-61. Do pole Název zadejte „TransDate“.
-    * TransDate  
-62. Klikněte na tlačítko OK.
-63. Klepněte na Přidat prvek.
-64. Do pole Název zadejte „Částka“.
-    * Množství  
-65. Klikněte na tlačítko OK.
+
+## <a name="design-the-format-of-an-electronic-document"></a>Návrh formátu elektronického dokumentu
+1. Klikněte na možnost **Návrhář**.
+2. Klepnutím na možnost **Přidat kořen** otevřete dialogové okno.
+3. Ve stromovém zobrazení vyberte **Společné\Soubor**.
+4. Do pole **Název** zadejte **Xml**.
+5. Zadejte hodnotu **UTF-8** do pole **Kódování**.
+6. Klikněte na tlačítko **OK**.
+7. Klikněte na položku **Přidat**.
+8. Ve stromovém zobrazení vyberte **XML\Element**.
+9. Do pole **Název** zadejte **Zpráva**.
+10. Klikněte na tlačítko **OK**.
+11. Ve stromovém zobrazení vyberte **Xml\Message**.
+12. Klepněte na **Přidat element**.
+13. Do pole **Název** napište **ProcessingDate**.
+14. Klikněte na tlačítko **OK**.
+15. Klepněte na **Přidat element**.
+16. Do pole Název napište **MessageId**.
+17. Klikněte na tlačítko **OK**.
+18. Klepněte na **Přidat element**.
+19. Do pole **Název** napište **Payments**.
+20. Klikněte na tlačítko **OK**.
+21. Ve stromové struktuře vyberte **Xml\Message\Payments**.
+22. Klepněte na **Přidat element**.
+23. Do pole **Název** napište **Item**.
+24. Klikněte na tlačítko **OK**.
+25. Ve stromové struktuře vyberte **Xml\Message\Payments\Item**.
+26. Klikněte na položku **Přidat**.
+27. Ve stromovém zobrazení vyberte **XML\Attribute**.
+28. Do pole Název zadejte **Id**.
+29. Klikněte na tlačítko **OK**.
+30. Klikněte na položku **Přidat**.
+31. Ve stromovém zobrazení vyberte **XML\Element**.
+32. Do pole Název zadejte **Vendor**.
+33. Klikněte na tlačítko **OK**.
+34. Ve stromové struktuře vyberte **Xml\Message\Payments\Item\Vendor**.
+35. Klepněte na **Přidat element**.
+36. Do pole Název zadejte **Name**.
+37. Klikněte na tlačítko **OK**.
+38. Klepněte na **Přidat element**.
+39. Do pole **Název** zadejte **Bank**.
+40. Klikněte na tlačítko **OK**.
+41. Ve stromové struktuře vyberte **Xml\Message\Payments\Item\Vendor\Bank**.
+42. Klepněte na **Přidat element**.
+43. Do pole **Název** zadejte **RoutingNumber**.
+44. Klikněte na tlačítko **OK**.
+45. Klepněte na **Přidat element**.
+46. Do pole **Název** zadejte **AccountNumber**.
+47. Klikněte na tlačítko **OK**.
+48. Ve stromové struktuře vyberte **Xml\Message\Payments\Item\Vendor**.
+49. Klepněte na tlačítko **Kopírovat**.
+50. Ve stromové struktuře vyberte **Xml\Message\Payments\Item**.
+51. Klepněte na tlačítko **Vložit**.
+52. Do pole **Název** zadejte **Payer**.
+53. Ve stromové struktuře vyberte **Xml\Message\Payments\Item**.
+54. Klepněte na **Přidat element**.
+55. Do pole **Název** zadejte **Currency**.
+56. Klikněte na tlačítko **OK**.
+57. Klepněte na **Přidat element**.
+58. Do pole **Název** zadejte **Description**.
+59. Klikněte na tlačítko **OK**.
+60. Klepněte na **Přidat element**.
+61. Do pole Název zadejte **TransDate**.
+62. Klikněte na tlačítko **OK**.
+63. Klepněte na **Přidat element**.
+64. Do pole Název zadejte **Amount**.
+65. Klikněte na tlačítko **OK**.
 
 ## <a name="prepare-format-components-for-mapping-to-data-model-elements"></a>Příprava součástí formátu pro mapování na prvky datového modelu
-1. Ve stromové struktuře vyberte 'Xml\Zpráva\ProcessingDate'.
-2. Klepnutím na možnost Přidat otevřete dialogové okno.
-3. Ve stromové struktuře vyberte 'Text\DateTime'.
-4. V poli Formát zadejte „rrrr-MM-dd“.
-    * yyyy-MM-dd  
-5. Klikněte na tlačítko OK.
-6. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\TransDate'.
-7. Klikněte na možnost Přidat datum a čas.
-8. V poli Formát zadejte „rrrr-MM-dd“.
-    * yyyy-MM-dd  
-9. V poli Typ data a času vyberte 'Datum'.
-10. Klikněte na tlačítko OK.
-11. Ve stromové struktuře vyberte 'Xml\Zpráva\MessageId'.
-12. Klepnutím na možnost Přidat otevřete dialogové okno.
-13. Ve stromovém zobrazení vyberte „Text\Řetězec“.
-14. Klepněte na tlačítko OK.
-15. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel\Název'.
-16. Klepněte na tlačítko Přidat řetězec.
-17. Klepněte na tlačítko OK.
-18. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel\Banka\RoutingNumber'.
-19. Klepněte na tlačítko Přidat řetězec.
-20. Klepněte na tlačítko OK.
-21. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Dodavatel\Banka\AccountNumber'.
-22. Klepněte na tlačítko Přidat řetězec.
-23. Klepněte na tlačítko OK.
-24. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Plátce\Název'.
-25. Klepněte na tlačítko Přidat řetězec.
-26. Klepněte na tlačítko OK.
-27. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Plátce\Banka\RoutingNumber'.
-28. Klepněte na tlačítko Přidat řetězec.
-29. Klepněte na tlačítko OK.
-30. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Plátce\Banka\AccountNumber'.
-31. Klepněte na tlačítko Přidat řetězec.
-32. Klepněte na tlačítko OK.
-33. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Měna'.
-34. Klepněte na tlačítko Přidat řetězec.
-35. Klepněte na tlačítko OK.
-36. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Popis'.
-37. Klepněte na tlačítko Přidat řetězec.
-38. Klepněte na tlačítko OK.
-39. Ve stromové struktuře vyberte 'Xml\Zpráva\Platby\Položka\Částka'.
-40. Klepněte na tlačítko Přidat řetězec.
-41. Klepněte na tlačítko OK.
-42. Klikněte na položku Uložit.
+1. Ve stromové struktuře vyberte **Xml\Message\ProcessingDate**.
+2. Kliknutím na **Přidat** otevřete dialogové okno pro přetažení.
+3. Ve stromové struktuře vyberte **Text\DateTime**.
+4. Do pole **Formát** zadejte **yyyy-MM-dd**.
+5. Klikněte na tlačítko **OK**.
+6. Ve stromové struktuře vyberte **Xml\Message\Payments\Item\TransDate**.
+7. Klikněte na možnost **Přidat DateTime**.
+8. Do pole **Formát** zadejte **yyyy-MM-dd**.
+9. V poli **DateTime** vyberte **Date**.
+10. Klikněte na tlačítko **OK**.
+11. Ve stromové struktuře vyberte **Xml\Message\MessageId**.
+12. Kliknutím na **Přidat** otevřete dialogové okno pro přetažení.
+13. Ve stromovém zobrazení vyberte **Text\String**.
+14. Klikněte na tlačítko **OK**.
+15. Ve stromové struktuře vyberte **Xml\Message\Payments\Item\Vendor\Name**.
+16. Klikněte na **Přidat řetězec**.
+17. Klikněte na tlačítko **OK**.
+18. Ve stromové struktuře vyberte **Xml\Message\Payments\Item\Vendor\Bank\RoutingNumber**.
+19. Klikněte na **Přidat řetězec**.
+20. Klikněte na tlačítko **OK**.
+21. Ve stromové struktuře vyberte **Xml\Message\Payments\Item\Vendor\Bank\AccountNumber**.
+22. Klikněte na **Přidat řetězec**.
+23. Klikněte na tlačítko **OK**.
+24. Ve stromové struktuře vyberte **Xml\Message\Payments\Item\Payer\Name**.
+25. Klikněte na **Přidat řetězec**.
+26. Klikněte na tlačítko **OK**.
+27. Ve stromové struktuře vyberte **Xml\Message\Payments\Item\Payer\Bank\RoutingNumber**.
+28. Klikněte na **Přidat řetězec**.
+29. Klikněte na tlačítko **OK**.
+30. Ve stromové struktuře vyberte **Xml\Message\Payments\Item\Payer\Bank\AccountNumber**.
+31. Klikněte na **Přidat řetězec**.
+32. Klikněte na tlačítko **OK**.
+33. Ve stromové struktuře vyberte **Xml\Message\Payments\Item\Currency**.
+34. Klikněte na **Přidat řetězec**.
+35. Klikněte na tlačítko **OK**.
+36. Ve stromové struktuře vyberte **Xml\Message\Payments\Item\Description**.
+37. Klikněte na **Přidat řetězec**.
+38. Klikněte na tlačítko **OK**.
+39. Ve stromové struktuře vyberte **Xml\Message\Payments\Item\Amount**.
+40. Klikněte na **Přidat řetězec**.
+41. Klikněte na tlačítko **OK**.
+42. Klikněte na tlačítko **Uložit**.
 43. Zavřete stránku.
 
 
