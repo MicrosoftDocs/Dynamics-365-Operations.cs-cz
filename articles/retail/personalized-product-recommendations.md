@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
-ms.openlocfilehash: 7925a37c595f5ffa040747462d3ea60a3da41858
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: d6706cbb7630aeb230bc9eb1c187397897c9de68
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/29/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -32,70 +32,66 @@ ms.lasthandoff: 08/29/2018
 [!include [banner](includes/banner.md)]
 
 > [!NOTE]
-> Aktuální verzi služby doporučení produktu odstraňujeme, protože předěláváme tuto funkci s lepším algoritmem a novějšími funkčnostmi orientovanými na maloobchod. Další informace naleznete v části [Odstraněné nebo zastaralé funkce](../dev-itpro/migration-upgrade/deprecated-features.md). 
+> Aktuální verzi služby doporučení produktu odstraňujeme, protože předěláváme tuto funkci s lepším algoritmem a novějšími funkčnostmi orientovanými na maloobchod. Další informace naleznete v části [Odstraněné nebo zastaralé funkce](../dev-itpro/migration-upgrade/deprecated-features.md).
 
 V aplikaci Dynamics 365 for Retail je možné zobrazit doporučení ohledně produktů v zařízení pokladního místa (POS). Doporučení jsou položky, které mohou zákazníky zajímat na základě jejich historie nákupů, položky v jejich seznamu požadovaných položek a položky, které jiní zákazníci nakoupili online nebo v kamenných obchodech. Pro maloobchody s velkým katalogy doporučení pomáhají s objevováním produktu. Vystavením produktů zaměřených na zájmy a nákupní zvyklosti zákazníka mohou doporučení produktu pomáhat maloobchodníkům navýšit prodeje a použít křížové prodeje a zlepšit udržení si zákazníka. V aplikaci Dynamics 365 for Retail jsou doporučení produktu podpořena kognitivní službou a službou Microsoft Azure machine learning.
 
-
-<a name="scenarios"></a>Scénáře
----------
+## <a name="scenarios"></a>Scénáře
 
 Doporučení produktu jsou povolena pro následující scénáře POS. Jsou k dispozici v Cloud POS nebo Modern POS (MPOS).
 
-1.  Na stránce **Podrobnosti o produktu**:
+1. Na stránce **Podrobnosti o produktu**:
 
--   Pokud obchod asociuje návštěvy se stránkou **Podrobnosti o produktu** při vyhledávání předchozích transakcí napříč různými kanály, modul doporučení navrhuje další položky, které budou pravděpodobně nakoupeny společně.
--   Pokud pracovník obchodu přidá zákazníka k transakci a poté navštíví stránku **Podrobnosti o produktu**, modul doporučení poskytne individuální doporučení prostřednictvím historie transakcí zákazníka.
+    - Pokud obchod asociuje návštěvy se stránkou **Podrobnosti o produktu** při vyhledávání předchozích transakcí napříč různými kanály, modul doporučení navrhuje další položky, které budou pravděpodobně nakoupeny společně.
+    - Pokud pracovník obchodu přidá zákazníka k transakci a poté navštíví stránku **Podrobnosti o produktu**, modul doporučení poskytne individuální doporučení prostřednictvím historie transakcí zákazníka.
 
-[![proddetails](./media/proddetails.png)](./media/proddetails.png)
+    [![proddetails](./media/proddetails.png)](./media/proddetails.png)
 
-2.  Na stránce **Transakce**:
+2. Na stránce **Transakce**:
 
--   Modul doporučení navrhuje položky na základě celého seznamu položek v košíku.
--   Pokud pracovník obchodu přidá zákazníka k transakci a, modul doporučení poskytne individuální doporučení prostřednictvím historie transakcí zákazníka a seznamu položek v košíku.
+    - Modul doporučení navrhuje položky na základě celého seznamu položek v košíku.
+    - Pokud pracovník obchodu přidá zákazníka k transakci a, modul doporučení poskytne individuální doporučení prostřednictvím historie transakcí zákazníka a seznamu položek v košíku.
 
-> [!NOTE]
-> Pokud chce maloobchodník zobrazit doporučení na stránce **Transakce**, musí aktualizovat rozložení obrazovky v Dynamics 365 for Retail. Ovládací prvek **Doporučení** musí být na stránce **Transakce**. [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    > [!NOTE]
+    > Pokud chce maloobchodník zobrazit doporučení na stránce **Transakce**, musí aktualizovat rozložení obrazovky v Dynamics 365 for Retail. Ovládací prvek **Doporučení** musí být na stránce **Transakce**.
 
-3.  Na stránce **Podrobnosti o zákazníkovi**:
-    -   Modul doporučení navrhuje položky na základě ID uživatele a položek na seznamu přání uživatele.
+    [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-[![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
+3. Na stránce **Podrobnosti o zákazníkovi**:
+
+    - Modul doporučení navrhuje položky na základě ID uživatele a položek na seznamu přání uživatele.
+
+    [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
 ## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Konfigurace aplikace Dynamics 365 for Retail na povolení doporučení POS
+
 Při nastavování doporučení produktu potřebujete provést tyto akce.
 
-1.  Ujistěte se, zda jste vybrali správnou **právnickou osobu**.
-2.  Přejděte na **Úložiště entit**, vyberte **Maloobchodní prodej** a poté klikněte na tlačítko **Aktualizovat**. Použijí se ukázková data (nebo vaše data) z vaší provozní databáze a přesunou se do úložiště entit.
-3.  Volitelné: Chcete-li zobrazit doporučení na obrazovce transakce, přejděte na **Rozvržení obrazovky**, zvolte rozložení obrazovky, spusťte **Návrhář rozvržení obrazovky**, a potom umístěte ovládací prvek **doporučení**, kam je třeba.
-
-4.  Přejděte na **Parametry maloobchodu**, vyberte **Strojové učení** a vyberte **Ano** v části **Povolit doporučení POS**.
-5.  Doporučení na POS zobrazíte spuštěním globální konfigurační úlohy **1110**. Aby se změny návrháře rozvržení obrazovky POS projevily, spusťte úlohu konfigurace kanálu **1070**.
+1. Ujistěte se, zda jste vybrali správnou **právnickou osobu**.
+2. Přejděte na **Úložiště entit**, vyberte **Maloobchodní prodej** a poté klikněte na tlačítko **Aktualizovat**. Použijí se ukázková data (nebo vaše data) z vaší provozní databáze a přesunou se do úložiště entit.
+3. Volitelné: Chcete-li zobrazit doporučení na obrazovce transakce, přejděte na **Rozvržení obrazovky**, zvolte rozložení obrazovky, spusťte **Návrhář rozvržení obrazovky**, a potom umístěte ovládací prvek **doporučení**, kam je třeba.
+4. Přejděte na **Parametry maloobchodu**, vyberte **Strojové učení** a vyberte **Ano** v části **Povolit doporučení POS**.
+5. Doporučení na POS zobrazíte spuštěním globální konfigurační úlohy **1110**. Aby se změny návrháře rozvržení obrazovky POS projevily, spusťte úlohu konfigurace kanálu **1070**.
 
 ## <a name="how-does-it-work"></a>Jak to funguje?
+
 Když aktualizujete **Úložiště entit**, proběhnou následující akce.
 
--   Data ve formátu vyžadovaném kognitivními službami je extrahováno z pracovní databáze Dynamics 365 for Retail a odesláno do úložiště entit.
--   Data používá Azure Data Factory (ADF) k vyčištění pomocí skriptů Hive v rámci aktivit ADF. Vyčištěná data jsou uložena do úložiště objektů blob.
--   Data z úložiště objektů blob použije rozhraní API kognitivních služeb k vyzkoušení modelu doporučení.
+- Data ve formátu vyžadovaném kognitivními službami je extrahováno z pracovní databáze Dynamics 365 for Retail a odesláno do úložiště entit.
+- Data používá Azure Data Factory (ADF) k vyčištění pomocí skriptů Hive v rámci aktivit ADF. Vyčištěná data jsou uložena do úložiště objektů blob.
+- Data z úložiště objektů blob použije rozhraní API kognitivních služeb k vyzkoušení modelu doporučení.
 
 Při zapnutí možnosti **Povolit doporučení** a spuštění úloh konfigurace jsou uplatněny následující akce.
 
--   Pověření a ID modelu jsou vybrána z rozhraní API a uložena do provozní databáze Dynamics 365 for Retail v souboru web.config pro AOS a také na maloobchodním serveru.
--   ID a pověření modelu jsou zpřístupněny CRT, aby bylo možné provést volání doporučení produktu z Cloud POS a MPOS.
+- Pověření a ID modelu jsou vybrána z rozhraní API a uložena do provozní databáze Dynamics 365 for Retail v souboru web.config pro AOS a také na maloobchodním serveru.
+- ID a pověření modelu jsou zpřístupněny CRT, aby bylo možné provést volání doporučení produktu z Cloud POS a MPOS.
 
-> ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Řešení problémů, když máte doporučení produktu již povolena 
-> - Přejděte na **Parametry maloobchodu** > **Strojové učení** > **Zakázat doporučení produktu** a spusťte **globální konfigurační úlohu [1110]**. Pokud nemůžete nalézt kartu **Strojové účení**, obraťte se na podporu Dynamics. 
-> 
-> - Pokud jste přidali **Řízení doporučení** na svou obrazovku transakcí pomocí nástroje **Návrhář rozložení obrazovky**, odstraňte ho také. 
+## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Řešení problémů, když máte doporučení produktu již povolena
 
+- Přejděte na **Parametry maloobchodu** \> **Strojové učení** \> **Zakázat doporučení produktu** a spusťte **globální konfigurační úlohu \[1110\]**. Pokud nemůžete nalézt kartu **Strojové účení**, obraťte se na podporu Dynamics.
+- Pokud jste přidali **Řízení doporučení** na svou obrazovku transakcí pomocí nástroje **Návrhář rozložení obrazovky**, odstraňte ho také.
 
-
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Přidání ovládacího prvku doporučení na stránku transakce na zařízení POS](add-recommendations-control-pos-screen.md)
-
-
-
 

@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 8dcba52526dd9dad1bd8b9753224f6386923f5a1
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: ba8fade84358c960dcfd1e8d9ffef1ffede34871
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -57,7 +57,7 @@ Po zadání a uložení informace o blokování může uživatele zavřít strá
 
 Pokud je příznak **Povolit dokončení objednávky** zapnutý v kanálu kontaktního střediska, platba nemusí být použita na objednávku, která je blokována. Naproti tomu, pro prodejní objednávku, která není blokována, uživatelé nemohou opustit stránku zadávání prodejní objednávky, dokud není platba aplikována. Samozřejmě bude vyžadována platba před uvolněním blokování objednávky.
 
-Dále mohou uživatelé kontaktního střediska provést manuální blokování proti podvodu na objednávkách , které jsou z nějakého důvodu podezřelé. Objednávky lze rovněž blokovat automaticky, pokud naplní aktivní kritéria a pravidla podvodu. Další informace o tomto typu blokování objednávky naleznete v tématu [Nastavení výstrah u podvodů](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+Dále mohou uživatelé kontaktního střediska provést manuální blokování proti podvodu na objednávkách , které jsou z nějakého důvodu podezřelé. Objednávky lze rovněž blokovat automaticky, pokud naplní aktivní kritéria a pravidla podvodu. Další informace o tomto typu blokování objednávky naleznete v tématu [Nastavení výstrah u podvodů](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>Zobrazení a správa objednávek, které jsou blokované
 

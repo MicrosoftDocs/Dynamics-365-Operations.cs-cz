@@ -3,7 +3,7 @@ title: "Generování sestav v rámci zákona Affordable Care Act"
 description: "Tato funkce má pomáhat zaměstnavatelům, kteří potřebují sledovat informace ve formulářích 1095-B a 1095-C v rámci zmocnění zaměstnavatele v kontextu zákona Affordable Care Act (ACA). Tato funkce je povolena pouze pro právnické osoby v USA."
 author: kherr75
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 25d2b8326bba69ac627f3fa7e05a6c850bd04c91
+ms.sourcegitcommit: f1456b91d6fc29ec65d0e9382d3f5f7682a8b516
+ms.openlocfilehash: 0ea2824093d33b9f233cd992399de22198bfc27a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/17/2018
 
 ---
 # <a name="generate-affordable-care-act-aca-reports"></a>Generování sestav v rámci zákona Affordable Care Act
@@ -54,7 +54,7 @@ Na stránce **Správce dat pokrytí rodinného příslušníka** můžete určit
 ## <a name="generate-1095b-and-1095c-forms"></a>Generování formulářů 1095-B a 1095-C
 Formuláře 109-B and 1095-C můžete vygenerovat i v aplikaci a rozeslat je všem zaměstnancům. V systému lze také elektronicky vygenerovat formuláře 1095-C a odpovídající soubory pro přenos 1094-C, které lze poslat na finanční úřad.  
 
-Při generování formuláře 1095-C zadejte příslušný kalendářní nebo daňový rok a uveďte, zda chcete vytisknout dvoustránkový nebo třístránkový formulář. Třístránkový formulář je nutný pouze v případě, že zaměstnavatel poskytoval pokrytí s vlastním pojištěním a zaměstnanec má více než šest pokrytých závislých osob (včetně sebe). Při generování dvoustránkového formuláře systém automaticky zjistí, zda má zaměstnanec více než šest pokrytých závislých osob, a nebude tohoto zaměstnance při generování formuláře zahrnovat. Kromě toho při generování třístránkového formuláře systém zahrne jen zaměstnance s více než šesti pokrytými závislými osobami.
+Při generování formuláře 1095 C zadejte příslušný daňový rok a označte, zda mají být nahrazena čísla sociálního pojištění. Při tisku formulářů 1095-C pro více než 500 zaměstnanců obdržíte více než jeden soubor PDF. Doporučuje se zvýšit **maximální velikost souboru** v okně **parametry správy dokumentů** na 150 MB.
 
 ## <a name="viewing-information"></a>Zobrazení informací
 Pomocí stránky **Pokrytí dostupné péče pro pracovníka** můžete zjistit, kteří zaměstnanci byli přiděleni k jednotlivým skupinám pokrytí, kteří zařazeni být nemusí a kteří přiřazeni nejsou.

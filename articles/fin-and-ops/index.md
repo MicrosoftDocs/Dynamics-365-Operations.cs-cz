@@ -51,7 +51,7 @@ Velká část tohoto obsahu se též vztahuje na související produkty: Microso
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Nábor projektu</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Příprava pro ostré nasazení</a></p>
-  
+
 <h3><a href="../financials/index.md">Správa financí</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Závazky</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">Pohledávky</a></p>
@@ -65,7 +65,7 @@ Velká část tohoto obsahu se též vztahuje na související produkty: Microso
 <p><a href="../financials/public-sector/public-sector-functionality.md">Veřejný sektor</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Funkce týkající se místních předpisů</a></p>
 
-<H3><a href="hr/hr-landing-page.md">Lidské zdroje</a></h3>
+<h3><a href="hr/hr-landing-page.md">Lidské zdroje</a></h3>
 <p><a href="../talent/manage-benefit-program.md">Zaměstnanecké výhody</a></p>
 <p><a href="../talent/performance-management-overview.md">Rozvoj a školení zaměstnanců</a></p>
 <p><a href="../talent/questionnaires.md">Dotazník</a></p>

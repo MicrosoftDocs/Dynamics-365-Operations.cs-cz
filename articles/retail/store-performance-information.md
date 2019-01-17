@@ -31,21 +31,19 @@ ms.lasthandoff: 11/03/2017
 
 [!include [banner](includes/banner.md)]
 
-Tento článek vysvětluje použití analýzy v paměti a v reálném čase pro přístup, prohlížení a získání přehledu o výkonu obchodu na základě vašich dat z aplikace Microsoft Dynamics 365 for Retail. 
+Tento článek vysvětluje použití analýzy v paměti a v reálném čase pro přístup, prohlížení a získání přehledu o výkonu obchodu na základě vašich dat z aplikace Microsoft Dynamics 365 for Retail.
 
 V rámci aplikace Microsoft Dynamics 365 for Retail mohou uživatelé studovat výkon v reálném čase v rámci rozdílných úrovní organizační hierarchie ve vybraném období otevřením sestavy **Souhrn kanálu** připravené okamžitě z některého z následujících umístění:
 
--   Pracovní prostor **Řízení maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava souhrnu kanálu**
--   Pracovní prostor **Finance maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Finance maloobchodu** &gt; **Sestavy** &gt; **Sestava souhrnu kanálu**
--   Část **Dotazy a sestavy** &gt; **Maloobchod** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava souhrnu kanálu**
+- Pracovní prostor **Řízení maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Řízení maloobchodu** &gt; **Sestavy** &gt; **Sestava souhrnu kanálu**
+- Pracovní prostor **Finance maloobchodu** &gt; **Maloobchod** &gt; **Kanály** &gt; **Finance maloobchodu** &gt; **Sestavy** &gt; **Sestava souhrnu kanálu**
+- Část **Dotazy a sestavy** &gt; **Maloobchod** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava souhrnu kanálu**
 
 Tato sestava poskytuje snímek následujícího souhrnu v rámci výkonnosti obchodu:
 
--   Souhrn hrubých prodejů
--   Souhrn typu úhrad
--   Souhrn daně
--   Souhrn přepisů ceny
--   Souhrn slev
-
-
+- Souhrn hrubých prodejů
+- Souhrn typu úhrad
+- Souhrn daně
+- Souhrn přepisů ceny
+- Souhrn slev
 

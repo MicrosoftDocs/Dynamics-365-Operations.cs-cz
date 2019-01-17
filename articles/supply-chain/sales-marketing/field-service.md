@@ -20,21 +20,23 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
-ms.openlocfilehash: cb21667021a32381fd8038e1c9f0182b05622e3d
+ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
+ms.openlocfilehash: 673ab2a101cee1a3dbbb1249f582d959cecc7f7f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/29/2018
+ms.lasthandoff: 12/23/2018
 
 ---
-
 
 # <a name="integration-with-microsoft-dynamics-365-for-field-service"></a>Integrace s aplikací Microsoft Dynamics 365 for Field Service
 
 [!include[banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations umožňuje synchronizaci obchodních procesů mezi aplikací Finance and Operations a Microsoft Dynamics 365 for Field Service. Scénáře integrace jsou konfigurovány s použitím rozsáhlých šablon integrátoru dat a Common Data Service (CDS) pro umožnění synchronizace obchodních procesů.
+Standardní šablony lze používat k vytváření projektů vlastní integrace, kde další standardní a vlastní pole a také entity, mohou být mapovány pro účely úpravy integrace a plnění konkrétních obchodních potřeb. 
 
-[![Synchronizace obchodních procesů mezi aplikacemi Finance a Operations and Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
+Integrace Field Service staví na současné funkci potenciálního zákazníka k hotovosti.
+
+![Synchronizace obchodních procesů mezi aplikacemi Finance and Operations a Field Service](./media/field-service-integration.png)
 
 První fáze integrace mezi  Field Service a Finance and Operations se zaměřuje na povolení pracovních příkazů a smluv ve Field Service pro fakturaci ve Finance and Operations. Podporovaný tok začíná ve Field Service, kde jsou informace z pracovních příkazů synchronizovány s Finance and Operations jako prodejní objednávky. V modulu Finance and Operations jsou prodejní objednávky fakturovány ke generování faktur. Kromě toho jsou informace z faktur smluv ve službě Field Service synchronizovány do aplikace Finance and Operations. Integrátor dat Microsoft Dynamics 365 synchronizuje data pomocí upravitelné projektů. Standardní šablony lze používat k vytváření projektů vlastní integrace, kde další standardní a vlastní pole a také entity, mohou být mapovány pro účely úpravy integrace a plnění konkrétních požadavků.
 
@@ -59,6 +61,41 @@ Chcete-li použít řešení integrace Field Service, je nutné nainstalovat ná
 ### <a name="microsoft-dynamics-365-for-field-service-90-or-later"></a>Microsoft Dynamics 365 for Field Service 9.0 or later
 
 - Dynamics 365 for Field Service verze 1612 (9.0.1.733) (DB 9.0.1.733) online nebo vyšší verze.
-- Řešení Prospect to Cash (P2C) pro Dynamics 365, verze 1.15.0.1 nebo novější. Řešení je k dispozici ke stažení na webech [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
-- Řešení integrace Field Service pro Dynamics 365, verze 1.0.0.0 nebo novější. Řešení je k dispozici ke stažení na webech [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.p2cfieldserviceintegration).
+- Řešení Prospect to Cash (P2C) pro Dynamics 365, verze 1.15.0.1 nebo novější. Řešení je k dispozici ke stažení na webech [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+- Řešení integrace Field Service pro Dynamics 365, verze 1.0.0.0 nebo novější. Řešení je k dispozici ke stažení na webech [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegration).
+
+# <a name="integration-with-microsoft-dynamics-365-for-field-service-including-inventory-and-project-information"></a>Integrace s aplikací Microsoft Dynamics 365 for Field Service, včetně informací o zásobách a projektu
+
+Další funkce v této druhé fázi se zaměřovala na to, aby technikům v terénu poskytovala přehled o skladových informacích z modulu Finance and Operations, a umožnila jim tak aktualizovat úrovně zásob a provádět převod materiálů. Kromě toho společnosti zajišťující instalaci nebo servis prodaného zboží budou využívat lepší kontrolu a viditelnost plného prodejního a servisního procesu s integrací z projektů.
+
+### <a name="functionality-includes-integration-of"></a>Funkce zahrnuje integraci následujících informací:
+- Informace o skladovacím místě
+- Informace o množství na skladě
+- Převody zásob
+- Úpravy zásob
+- Projekty aplikace Dynamics 365 for Finance and Operations spojené s pracovními příkazy aplikace Dynamics 365 for Field Service
+- Pracovní příkazy aplikace Dynamics 365 for Field Service s odkazem na projekty aplikace Dynamics 365 for Finance and Operations, toto číslo projektu použijte pro prodejní objednávku aplikace Dynamics 365 for Finance and Operation, aby bylo povoleno fakturování z projektu. 
+
+![Synchronizace obchodních procesů mezi aplikacemi Finance and Operations a Field Service](./media/FSv2overview.png)
+
+### <a name="the-second-phase-of-the-integration-between-field-service-and-finance-and-operations-enables-synchronization-with-the-following-templates"></a>Druhá fáze integrace mezi Field Service a Finance and Operations umožňuje synchronizaci s následujícími šablonami:
+- Sklady (Fin and Ops do Field Service) - Sklady z modulu Finance and Operations do Field Service [Pokročilý dotaz] 
+- Zásoby produktu (Fin and Ops to Field Service) - Informace na úrovni zásob z aplikace Finance and Operations do Field Service [Pokročilý dotaz] 
+- Úprava produktu (Field Service do Fin and Ops) - Úprava zásob z aplikace Field Service do Finance and Operations [Pokročilý dotaz] 
+- Převody zásob (Field Service do Fin and Ops) - převody zásob z aplikace Field Service do Finance and Operations [Pokročilý dotaz] 
+- Projekty (Fin and Ops do Field Service) - Seznam projektů z Finance and Operations do Field Service [Pokročilý dotaz] 
+- pracovní příkazy s projektem (Field Service do Fin and Ops) - Pracovní příkazy v Field Service do příkazů k prodeji ve Finance and Operations, s podporou projektu [Pokročilý dotaz] 
+- Produkty Field Service Products se skladovou jednotkou (Fin and Ops do Sales) - prodejné vydané produkty Finance and Operations pro Field Service, včetně skladové jednotky 
+
+## <a name="system-requirements-for-finance-and-operations"></a>Systémové požadavky aplikaci Finance and Operations
+Integrace Field Service podporuje následující verze:
+
+- Aplikace Dynamics 365 for Finance and Operations verze 8.1.2 (prosinec 2019) byla vydána v prosinci 2019 a má číslo sestavení aplikace 8.1.195 s aktualizací platformy 22 (7.0.5095). 
+
+## <a name="system-requirements-for-field-service"></a>Požadavky na systém pro Field Service
+Chcete-li použít řešení integrace Field Service, je nutné nainstalovat následující komponenty:
+
+- Field Service for Dynamics 365 (verze 8.2.0.286) nebo pozdější verze Dynamics 365 9.1.x - vydaná v listopadu 2018
+- Řešení Prospect to Cash (P2C) pro Dynamics 365, verze 1.15.0.1 nebo novější. Řešení je k dispozici ke stažení na webech [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+- Řešení 'Field Service Integration, Project and Inventory' pro Dynamics 365, verze 2.0.0.0 nebo novější. Řešení je k dispozici ke stažení na webech [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2).
 

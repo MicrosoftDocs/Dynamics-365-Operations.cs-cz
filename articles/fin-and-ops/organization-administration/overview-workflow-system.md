@@ -31,28 +31,29 @@ ms.lasthandoff: 08/08/2018
 
 Toto téma popisuje systém workflowu v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 
-<a name="what-is-workflow"></a>Co je workflow?
------------------
+## <a name="what-is-workflow"></a>Co je workflow?
 
 Termín *workflow* lze definovat dvěma způsoby: workflow jako systém a workflow jako obchodní proces.
+
 ### <a name="workflow-is-a-system"></a>Workflow je systém
 
 Workflow je systém nainstalovaný s aplikací Finance and Operations a běží na aplikačním objektovém serveru (AOS). Systém workflowu nabízí funkce, pomocí kterých lze vytvářet individuální workflowy nebo obchodní procesy.
 
 ### <a name="workflow-is-a-business-process"></a>Workflow je obchodní proces
 
-Workflow představuje obchodní proces. Definuje tok dokumentu nebo jeho procházení systémem zobrazením, kdo musí splnit úkol, provádět rozhodování nebo schválení dokumentu. Následující obrázek znázorňuje příklad workflowu pro sestavy výdajů. 
+Workflow představuje obchodní proces. Definuje tok dokumentu nebo jeho procházení systémem zobrazením, kdo musí splnit úkol, provádět rozhodování nebo schválení dokumentu. Následující obrázek znázorňuje příklad workflowu pro sestavy výdajů.
 
-![Workflow s prvky, které jsou přiřazeny uživatelům](./media/workflow_user.gif) 
+![Workflow s prvky, které jsou přiřazeny uživatelům](./media/workflow_user.gif)
 
 Abychom lépe pochopili tento workflow, předpokládejme, že Stanislav odešle vyúčtování výdajů s částkou 7 000 USD. V tomto scénáři musí Ivan zkontrolovat účtenky, které mu Stanislav předal. Poté musí být vyúčtování výdajů schváleno Františkem a Šárkou. Nyní předpokládejme, že Stanislav odešle vyúčtování výdajů s částkou 11 000 USD. V tomto scénáři musí Ivan zkontrolovat účtenky a František, Šárka a Anna musí toto vyúčtování výdajů schválit.
 
 ## <a name="benefits-of-using-the-workflow-system"></a> Výhody používání systému workflowu
 
 Používání systému workflowu v organizaci má několik výhod:
--   **Konzistentní procesy:** – Můžete definovat schvalovací proces pro specifické dokumenty, například nákupní požadavky a vyúčtování výdajů. Používáním systému workflowu lze zajistit, aby byly dokumenty zpracovávány a schvalovány jednotným a efektivním způsobem.
--   **Viditelnost procesů:** – Můžete sledovat stav, historii a výkonnostní metriku instancí workflowu. To umožňuje určit, zda je potřeba provést změny workflowu ke zvýšení efektivity.
--   **Centralizovaný seznam pracovních položek** – Uživatelé mohou zobrazit centralizovaný seznam pracovních položek k zobrazení úkolů workflowu a schválení, které mají přiřazeny.
+
+- **Konzistentní procesy:** – Můžete definovat schvalovací proces pro specifické dokumenty, například nákupní požadavky a vyúčtování výdajů. Používáním systému workflowu lze zajistit, aby byly dokumenty zpracovávány a schvalovány jednotným a efektivním způsobem.
+- **Viditelnost procesů:** – Můžete sledovat stav, historii a výkonnostní metriku instancí workflowu. To umožňuje určit, zda je potřeba provést změny workflowu ke zvýšení efektivity.
+- **Centralizovaný seznam pracovních položek** – Uživatelé mohou zobrazit centralizovaný seznam pracovních položek k zobrazení úkolů workflowu a schválení, které mají přiřazeny.
 
 
 ## <a name="workflow-content"></a>Obsah workflowu

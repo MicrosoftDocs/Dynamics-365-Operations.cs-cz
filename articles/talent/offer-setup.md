@@ -3,7 +3,7 @@ title: "Nastavení správy nabídek"
 description: "Toto téma popisuje, jak nastavit nabídky v aplikaci Talent."
 author: josaw
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: fa2f2f9f67562524961352a87a7db49992776e46
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: bb90f0a3c87c64a74ca63610105abfeb8223900a
 ms.contentlocale: cs-cz
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 # <a name="set-up-offer-management"></a>Nastavení správy nabídek 
@@ -105,7 +105,7 @@ Chcete-li odeslat soubor pravidel dat nabídky, postupujte takto.
 
 1.  Pokud se definovaný zástupný text nepoužívá v jiné šabloně dokumentu, můžete odstranit stávající odeslání sady pravidel.
 
->[!POZNÁMKY]
+>[!NOTE]
 > - Každý zástupný text může mít pouze jednu jedinečnou sadu sloupců, na které je závislý. Například pokud je **Roční mzda** závislá na **místu výkonu práce** a **úrovni**, nelze odeslat jinou sadu pravidel, kde **roční mzda** závisí na odlišné sadě sloupců.
 
 > - Můžete stáhnout vzorové sady pravidel dat nabídky na kartě **Ukázky** na stránce **Pravidla dat nabídky**.
@@ -136,7 +136,7 @@ Chcete-li vytvořit šablonu dokumentu nabídky, postupujte takto.
 
     - Použitím hashtagu k zástupnému textu dat nabídky přímo na pozici. Napište **\#** a poté začněte psát název zástupného textu dat nabídky. Možnosti se zobrazí v rozevíracím seznamu. Klikněte nebo stiskněte **Enter** pro vložení zástupného textu dat nabídky.
 
-    >[!POZNÁMKY]
+    >[!NOTE]
     > - Chcete-li přidružit zástupný text do šablony dokumentu nabídky, aniž byste odkryli jeho hodnotu kandidátovi, najeďte myší nad zástupný text dat nabídky a klikněte na ikonu **špendlíku**. To posune zástupný text do části **Připnutá data nabídky** šablony dokumentu nabídky. Pro odepnutí postupujte podle stejných kroků, ale v seznamu zástupných textů dat nabídky klikněte na **Odepnout**.
 
     > - Chcete-li zobrazit seznam aktivních zástupných textů dat nabídky, přepněte na kartu **Aktivní** v pravém podokně.
@@ -175,7 +175,7 @@ Balíčky nabídky jsou artefakty nabídky, které jsou sdíleny s kandidáty a 
 
 1.  Klikněte na možnost **Přidat šablonu**.
 
-    >[!POZNÁMKY]
+    >[!NOTE]
     > - Můžete zvolit vytvoření nové šablony nebo si vybrat jednu z již existujících šablon.
 
     > - Pokud si zvolíte přidání existující šablony, musíte se ujistit, že šablona dokumentu nabídky byla uložena, dokončena a označena jako aktivní.
@@ -198,8 +198,10 @@ Existuje několik částí procesu vytváření nabídky, které může konfigur
 
 - **Vypršení nabídky kandidátovi** -Jako správce můžete určit, zda mají všechny nabídky datum vypršení platnosti, a pokud ano, jaký by mě být výchozí posun pro datum vypršení platnosti. Můžete také nastavit, zda kandidáti mohou odmítnout nabídku.
 
-- **Elektronické podpisy** -V současné době je jediná dostupná možnost elektronického podpisu pro kandidáta ta, aby napsal své jméno do balíčku nabídky při jejím přijetí. Do budoucna zavedeme partnerské integrace s dalšími poskytovateli elektronického podpisu.
+- **Elektronické podpisy** -jako správce můžete také zvolit metodu, kterou mohou uchazeči používat k podepisování nabídek.
+    - Adobe Sign - všechny nabídky budou odeslány a podepisovány pomocí Adobe Sign. Každý autor nabídky, který ji publikuje, musí mít připojenou licenci aplikace Adobe Sign k aplikaci Attract. 
 
+    - ESign – Toto je výchozí možnost poskytovaná přímo po vybalení, kde může uživatel podepsat nabídku zadáním svého jména a iniciál.
 
 Další informace o procesu vytváření nabídky naleznete v tématu [Vytvoření, schválení a podepisování nabídek](./creating-offers.md).
 

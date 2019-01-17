@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: e40c558e03ef230fee6726994bc94979d40493c2
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -52,8 +52,8 @@ Pro každé skladové místo se rovněž zobrazují **Rezervovaná** a **Objedna
 
 Seznam skladových míst obsahuje dva typy entit:
 
-- **Maloobchody** – Seznam zobrazuje obchody, které jsou nakonfigurovány pomocí skupiny lokátoru obchodů pro aktuální obchod v modulu Retail headquarters. 
-- **Distribučních centra** – Různé typy distribučních center (například sklady) lze konfigurovat v aplikaci Microsoft Dynamics 365 for Retail. Seznam však zobrazuje informace o dostupnosti zásob pouze pro distribuční centra výchozího typu **Standardní**. 
+- **Maloobchody** – Seznam zobrazuje obchody, které jsou nakonfigurovány pomocí skupiny lokátoru obchodů pro aktuální obchod v modulu Retail headquarters.
+- **Distribučních centra** – Různé typy distribučních center (například sklady) lze konfigurovat v aplikaci Microsoft Dynamics 365 for Retail. Seznam však zobrazuje informace o dostupnosti zásob pouze pro distribuční centra výchozího typu **Standardní**.
 
     > [!NOTE]
     > Informace o dostupnosti zásob se nezobrazuje pro sklady typu **Tranzit**, **Karanténa** a **Zboží v postupu** pro pokladní místo.
@@ -86,7 +86,7 @@ V zobrazení **Matice založená na dimenzi** zahrnují buňky pro varianty prod
 | **0** (nula)                             | Varianta byla uvolněna do vybraného skladového místa, ale položka není k dispozici ve vybraném skladovém místě. Lze však provést další akce v buňce. (Tyto akce jsou popsány podrobněji dále v tomto tématu.) |
 | **není k dispozici** nebo neaktivní buňka              | Varianta nebyla uvolněna do vybraného skladového místa a nemůžete provést další akce v buňce. |
 
-Výběrem nové dimenze, kterou chcete použít, můžete také změnit pivot pro dimenze. 
+Výběrem nové dimenze, kterou chcete použít, můžete také změnit pivot pro dimenze.
 
 ![Změna pivotu](media/ChangePivot.png)
 
@@ -108,14 +108,12 @@ Dále lze provést v zobrazení **Matice založená na dimenzi** další akce pr
 
 Následující tabulka uvádí více informací o dalších dostupných akcích.
 
-
-|        Akce        |                                                                                                                    popis                                                                                                                    |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|       Prodat nyní       |                               Přidejte vybranou položka varianty k transakci a přesměrujte uživatele na obrazovku transakce. (Tato akce není k dispozici, když je zvoleným místem distribuční centrum.)                               |
-|   Vyzvednout z obchodu   |      Vytvořte objednávku odběratele pro variantu produktu, která bude vyzvednuta z vybraného umístění, a přesměrujte uživatele na obrazovku transakce. (Tato akce není k dispozici, když je zvoleným místem distribuční centrum.)       |
-|     Dodat produkt     |                                                 Vytvořte objednávku odběratele pro variantu produktu, která bude expedována z vybraného umístění, a přesměrujte uživatele na obrazovku transakce.                                                 |
-|     Dostupnost     |                                                                             Zobrazte informace o položkách dostupných pro slíbení pro vybranou kombinaci variant pro vybrané umístění.                                                                              |
-|  Zobrazit všechna místa  | Přepněte na standardní zobrazení vyhledávání zásob a zvýrazněte informace o dostupnosti zásob pro variantu položky napříč všemi obchody ve skupině lokátorů obchodů a distribučních centrech typu <strong>Standardní/Výchozí</strong>. |
-| Zobrazit podrobnosti produktu |                                                                         Přesměrujte uživatele na stránku <strong>Podrobnosti produktu</strong> přidruženého základního produktu.                                                                          |
-
+| Akce               | popis |
+|----------------------|-------------|
+| Prodat nyní             | Přidejte vybranou položka varianty k transakci a přesměrujte uživatele na obrazovku transakce. (Tato akce není k dispozici, když je zvoleným místem distribuční centrum.) |
+| Vyzvednout z obchodu     | Vytvořte objednávku odběratele pro variantu produktu, která bude vyzvednuta z vybraného umístění, a přesměrujte uživatele na obrazovku transakce. (Tato akce není k dispozici, když je zvoleným místem distribuční centrum.) |
+| Dodat produkt         | Vytvořte objednávku odběratele pro variantu produktu, která bude expedována z vybraného umístění, a přesměrujte uživatele na obrazovku transakce. |
+| Dostupnost         | Zobrazte informace o položkách dostupných pro slíbení pro vybranou kombinaci variant pro vybrané umístění. |
+| Zobrazit všechna místa   | Přepněte na standardní zobrazení vyhledávání zásob a zvýrazněte informace o dostupnosti zásob pro variantu položky napříč všemi obchody ve skupině lokátorů obchodů a distribučních centrech typu **Standardní/Výchozí**. |
+| Zobrazit podrobnosti produktu | Přesměrujte uživatele na stránku **Podrobnosti produktu** přidruženého základního produktu. |
 

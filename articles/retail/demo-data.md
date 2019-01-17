@@ -20,10 +20,10 @@ ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 41930e89a7cae5cdb84e728da47de3bc5de312ca
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 8fe0ea3e7715fcbebc3ed590c85ee399c6192584
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -41,7 +41,7 @@ Vzorová rozvržení obrazovky zahrnutá v ukázkových datech Retail poskytují
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Podrobný rozbor ID rozvržení obrazovky
 
-Chcete-li nalézt rozvržení obrazovky v aplikaci Retail, přejděte na **Retail** > **Nastavení kanálu** > **Nastavení POS** > **POS** > **Rozvržení obrazovky**.
+Chcete-li nalézt rozvržení obrazovky v aplikaci Retail, přejděte na **Retail** \> **Nastavení kanálu** \> **Nastavení POS** \> **POS** \> **Rozvržení obrazovky**.
 
 ![Stránky rozvržení obrazovky v aplikaci Retail](../retail/media/demo-screen-layouts-fig-2-1.png)
 
@@ -107,10 +107,8 @@ Následující tabulka zobrazuje velikosti rozvržení, které jsou k dispozici 
 
 \* Tyto dodatečné velikosti rozvržení jsou k dispozici pouze v rozvrženích Fabrikam a Adventure Works.
 
-
->[!TIP]
-> POS automaticky vybere velikost rozvržení, v závislosti na nejbližší velikosti, která je k dispozici pro rozlišení obrazovky aktuálního okna aplikace. Pokud chcete nalézt ID rozvržení obrazovky a rozlišení rozvržení, která jsou aktuálně používána v Retail Modern POS (MPOS) nebo v Retail Cloud POS (CPOS), otevřete stránku **Nastavení** a nahlédněte do části **Informace o relaci**. Můžete také vidět skutečné rozlišení okna vaší aktuální aplikace nebo rámce prohlížeče. Jakmile máte tyto informace, lze vyhledat zdroj obsahu rozvržení v aplikaci Retail přechodem na **Nastavení kanálu** > **Nastavení POS** > **POS** > **Rozvržení obrazovky**.
-
+> [!TIP]
+> POS automaticky vybere velikost rozvržení, v závislosti na nejbližší velikosti, která je k dispozici pro rozlišení obrazovky aktuálního okna aplikace. Pokud chcete nalézt ID rozvržení obrazovky a rozlišení rozvržení, která jsou aktuálně používána v Retail Modern POS (MPOS) nebo v Retail Cloud POS (CPOS), otevřete stránku **Nastavení** a nahlédněte do části **Informace o relaci**. Můžete také vidět skutečné rozlišení okna vaší aktuální aplikace nebo rámce prohlížeče. Jakmile máte tyto informace, lze vyhledat zdroj obsahu rozvržení v aplikaci Retail přechodem na **Nastavení kanálu** \> **Nastavení POS** \> **POS** \> **Rozvržení obrazovky**.
 
 ![Rozvržení obrazovky a rozlišení rozvržení/velikosti v aplikaci Retail a v POS](../retail/media/demo-screen-layouts-fig-3-1.png)
 
@@ -126,10 +124,8 @@ Každá fiktivní společnost je zacílena na jiný maloobchodní segment a obsa
 | Fabrikam        | Houston  | Móda        | Zelená  | Light |
 | Contoso         | Boston   | Elektronika    | Červená    | Tmavý  |
 
-
->[!NOTE]
+> [!NOTE]
 > Společnosti Adventure Works a Fabrikam jsou dvě přední značkové společnosti. Contoso je k dispozici, ale nebyla poskytnuta všechna rozvržení.
-
 
 Následující obrázky ukazují příklady uvítací stránky a stránky transakcí pro tři fiktivní společnosti.
 
@@ -153,28 +149,26 @@ Následující obrázky ukazují příklady uvítací stránky a stránky transa
 
 Pro různá rozvržení obrazovky byli zadáni uživatelé. Pomocí následující tabulky byste měli být schopni se dostat na jakoukoliv obrazovku. Pouze se přihlaste pomocí příslušného ID operátora.
 
-| Společnost         | ID rozvržení obrazovky | Osoba          | ID operátora           |
-|-----------------|------------------|---------------   |------------------------|
-| Adventure Works | A3MGR            | Manažer obchodu    | 000154, 000137, 000073 |
-| Adventure Works | A3CSH            | Pokladník          | 000150, 000175, 000165 |
-| Adventure Works | A3STK            | Pracovník skladu      | 000155, 000181, 000152 |
-| Fabrikam        | F3MGR            | Manažer obchodu    | 000160, 000168, 000163 |
-| Fabrikam        | F3CSH            | Pokladník          | 000161, 000113, 000114 |
-| Fabrikam        | F3STK            | Pracovník skladu      | 000164, 000112, 000123 |
-| Contoso         | C3MGR            | Manažer obchodu    | 000100, 000111         |
-| Contoso         | C3CSH            | Pokladník          | 000110, 000120         |
-| Contoso         | Nelze použít   | Pracovník skladu      | Nelze použít         |
+| Společnost         | ID rozvržení obrazovky | Osoba       | ID operátora           |
+|-----------------|------------------|---------------|------------------------|
+| Adventure Works | A3MGR            | Manažer obchodu | 000154, 000137, 000073 |
+| Adventure Works | A3CSH            | Pokladník       | 000150, 000175, 000165 |
+| Adventure Works | A3STK            | Pracovník skladu   | 000155, 000181, 000152 |
+| Fabrikam        | F3MGR            | Manažer obchodu | 000160, 000168, 000163 |
+| Fabrikam        | F3CSH            | Pokladník       | 000161, 000113, 000114 |
+| Fabrikam        | F3STK            | Pracovník skladu   | 000164, 000112, 000123 |
+| Contoso         | C3MGR            | Manažer obchodu | 000100, 000111         |
+| Contoso         | C3CSH            | Pokladník       | 000110, 000120         |
+| Contoso         | Nelze použít   | Pracovník skladu   | Nelze použít         |
 
-
->[!TIP]
+> [!TIP]
 > Abyste dosáhli nejlepších výsledků, aktivujte pokladnu v odpovídajícím umístění obchodu a nastavte společnosti na společnost osoby, kterou chcete použít při přihlášení. Tímto způsobem zajistíte, že vizuální profil a obrázky týkajíc se značky budou sjednoceny napříč uživatelskými možnostmi. Například pokud chcete zobrazit Fabrikam rozvržení pro pokladníka, musíte aktivovat pokladnu obchodu v Houstonu.
-
 
 <!-- Hiding until the content page is available on CustomerSource -->
 
 <!-- ## Reference icons and images -->
 
-<!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail > Channel setup > POS setup > POS > Images**. -->
+<!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail \> Channel setup \> POS setup \> POS \> Images**. -->
 
 <!-- ![Images in Dynamics 365 for Retail](../retail/media/demo-screen-layouts-fig-5-1.png) -->
 

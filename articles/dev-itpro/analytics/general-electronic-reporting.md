@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
-ms.openlocfilehash: f27f228e48da653a9caf666f9053fe45a7c23745
+ms.sourcegitcommit: 67dc5b5cdec797f19a742addd05c6002aa31cf15
+ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
 ms.contentlocale: cs-cz
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -174,11 +174,11 @@ Chcete-li zjistit, jak zaregistrovat nového poskytovatele ER, přehrajte si pr�
 - prostředí hostovaná v cloudu nasazená pro vývojářské účely (obsahující testovací modely přiložených sad)
 - prostředí nasazená místně (místní nebo lokální nasazení obchodních dat)
 
-Pro více podrobností navštivte stránku [Import konfigurace elektronického výkaznictví](/electronic-reporting-import-ger-configurations.md).
+Pro více podrobností navštivte stránku [Import konfigurace elektronického výkaznictví](./electronic-reporting-import-ger-configurations.md).
 
 Úložiště **Instance RCS** poskytuje přístup k seznamu konfigurací určité instance RCS, která byla vybrána ve fázi registrace úložiště. Elektronické výkaznictví vám umožňuje importovat dokončené nebo sdílené konfigurace z vybrané instance RCS do aktuální instance Finance and Operations a použité pro elektronické výkaznictví.
 
-Pro více podrobností navštivte stránku [Import konfigurací elektronického výkaznictví ze služby Regulatory Configuration Services](/rcs-download-configurations.md).
+Pro více podrobností navštivte stránku [Import konfigurací elektronického výkaznictví ze služby Regulatory Configuration Services](./rcs-download-configurations.md).
 
 Požadovaná úložiště **LCS projekt**, **Systém souborů** a **Regulatory Configuration Services (RCS)** lze registrovat pro jednotlivé poskytovatele konfigurace jednotlivě z aktuální instance aplikace Finance and Operations. Každé úložiště může být určeno konkrétnímu poskytovateli konfigurace.
 

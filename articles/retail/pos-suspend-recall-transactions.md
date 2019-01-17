@@ -1,0 +1,86 @@
+---
+title: "Pozastavení a obnovení transakce v POS"
+description: "Toto téma vysvětluje, jak mohou uživatelé pozastavit probíhající transakce a obnovit je později nebo v jiné registrační pokladně pomocí aplikace Microsoft Dynamics 365 for Retail."
+author: jblucher
+manager: AnnBe
+ms.date: 11/27/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+ms.custom: 261234
+ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: jeffbl
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+ms.translationtype: HT
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: ffb04609318c7de4b9ef729a8e03a7f9395806b8
+ms.contentlocale: cs-cz
+ms.lasthandoff: 01/04/2019
+
+---
+
+# <a name="suspend-and-resume-transactions-in-the-point-of-sale-pos"></a>Pozastavení a obnovení transakcí v pokladním místě (POS)
+
+[!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+
+Uživatelé pokladního místa mohou pozastavit probíhající transakce a následně je obnovit v jiné pokladně. Transakce jsou často pozastaveny, aby mohly rychle uvolnit registr pro jinou úlohu bez ztráty pokroku u aktuální transakce. Zaměstnanec prodejny například začne zpracovávat transakci zákazníka na mobilním zařízení, ale musí ji dokončit na pokladně, která má zásuvku s hotovostí. V takovém případě zaměstnanec obchodu může pozastavit transakci v mobilním zařízení a pak ji vyvolat a obnovit v registrační pokladně.
+
+## <a name="configure-suspend-and-resume-functionality"></a>Konfigurovat funkci pozastavení a obnovení
+
+### <a name="pos-operations"></a>Operace POS
+
+Dvě [operace POS](pos-operations.md) umožňují POS podporu scénářů pozastavení a pokračování. Tyto operace můžete přiřadit k [tlačítkům mřížky](pos-screen-layouts.md) na stránce transakce nebo na úvodní stránce.
+
+- 503: Pozastavit transakci
+- 504: Odvolat transakci
+
+### <a name="receipt-template"></a>Šablona příjmu
+
+POS lze konfigurovat tak, aby se po pozastavení transakce generoval vytištěný doklad. Tento doklad pak slouží k rychlé identifikaci a pozdějšímu odvolání transakce.
+
+Pokud chcete POS povolit tisk dokladu, musíte přidat formát potvrzení **pozastavení transakce** do profilu potvrzení v prodejně. Formát dokladu můžete navrhnout tak, aby obsahoval nebo vylučoval konkrétní detaily transakce. Formát může například obsahovat čárový kód podporující skenování.
+
+### <a name="receipt-numbering"></a>Číslování účtenek
+
+Stejně jako u ostatních typů transakcí POS, které generují tištěný doklad, můžete definovat číselnou sekvenci pozastavených transakcí v oddílu **Číslování dokladů** profilu funkce prodejny.
+
+### <a name="void-when-closing-shift"></a>Anulovat při uzávěrce směny
+
+Pomocí možnosti **Anulovat při zavření směny** můžete požadovat, aby uživatelé dokončili nebo anulovali jakékoli pozastavené transakce před uzavřením směny. Během operace **Zavřít směnu** POS vyzve uživatele k zobrazení nebo zrušení všech zbývajících pozastavených transakcí.
+
+## <a name="suspend-and-resume-a-transaction"></a>Pozastavení a obnovení transakce
+
+### <a name="suspend-a-transaction"></a>Pozastavení transakce
+
+Uživatelé, kteří mají dostatečná oprávnění a rozložení obrazovky zahrnující operaci **Pozastavit transakci**, mohou pozastavit transakci a později ji vyvolat v jiném registru.
+
+Transakce lze pozastavit, pouze pokud **neobsahují** následující typy řádků:
+
+- Aktivní řádky platby
+- Řádky dárkového poukazu (buď pro vydání dárkového poukazu nebo přidání k zůstatku dárkového poukazu)
+
+Pozastavená transakce nemá vliv na informace o prodeji nebo informace o dostupnosti zásob pro obchod.
+
+### <a name="resume-a-suspended-transaction"></a>Obnovení pozastavené transakce
+
+Pozastavené transakce může odvolat a obnovit každý uživatel, který má dostatečná oprávnění, a který má také rozvržení, které obsahuje operaci **odvolat transakci**.
+
+Pokud chcete rychle a snadno vyvolat pozastavenou transakci, naskenujte čárový kód na vytištěném dokladu při zobrazení seznamu transakcí z operace **Odvolat transakci**.
+
+### <a name="considerations-for-offline-mode"></a>Co je třeba zvážit pro režim offline
+
+- Jakákoli transakce, která je pozastavena při POS v online režimu, nemůže být obnovena v režimu offline, protože data nejsou synchronizovaná s offline databází.
+- Pokud pozastavíte transakci, když je POS v režimu offline, můžete ji odvolat v režimu offline za předpokladu, že POS nebyla převedena zpět režimu online od okamžiku pozastavení transakce. Po přepnutí POS zpět do režimu online se údaje o pozastavených transakcích přesunou do online databáze a jsou odebrány z offline databáze. Transakce lze tedy obnovit pouze v režimu online. Pokud přesunete POS zpět do režimu online, nebude možné pokračovat v této pozastavené transakci vzhledem k tomu, že již byly odebrány z offline databáze.
+
+### <a name="void-a-suspended-transaction"></a>Anulování pozastavené transakce
+
+Anulované transakce můžete zrušit tak, že transakci odvoláte a pak provedete operaci **Anulování transakce** nebo vyberete transakci v seznamu **Odvolat transakci** a na panelu aplikace vyberete **Anulovat**. Případně lze nakonfigurovat obchod tak, aby vyzval uživatele k anulování pozastavené transakce při uzavření směny.
+

@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c7fc274bb9d942e85012211b1a7a14873447e5f3
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 4fac04d1ea028bae9323b7961e64f3e49b74e482
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -31,8 +31,7 @@ ms.lasthandoff: 08/08/2018
 
 Toto téma obsahuje nové nebo aktualizované průvodce úkolem vydané pro knihovnu Microsoft APQC Unified Library (srpen 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics AX. Nebyly vydány žádné nové knihovny Začínáme.
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Průvodci úkolem v knihovně APQC Unified Library pro Microsoft Dynamics AX (srpen 2016 – všechny jazyky)
----------------------------------------------------------------------------------------------------
+## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Průvodci úkolem v knihovně APQC Unified Library pro Microsoft Dynamics AX (srpen 2016 – všechny jazyky)
 
 Knihovna APQC Unified Library (srpen 2016 – všechny jazyky) obsahuje průvodce úkolem, kteří jsou určeni k použití pro nápovědu v aktualizaci 2 platformy Microsoft Dynamics AX (srpen 2016), aktualizaci Dynamics AX z května 2016 a vydání aplikace Microsoft Dynamics AX pro únor 2016. Další informace o těchto verzích najdete v tématu [Co je nového nebo co se změnilo](whats-new-changed.md). V této knihovně jsou k dispozici lokalizované verze průvodců záznamem úloh. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Začínáme s nápovědou](help-overview.md).
 
@@ -95,17 +94,11 @@ Knihovna APQC Unified Library (srpen 2016 – všechny jazyky) obsahuje průvodc
 |-----------------------------------------------------------------------------|----------------|
 | Nastavení položky nabídky v mobilním zařízení pro dokončení práce typu Nákupní objednávka | Globální         |
 
-
-
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Noví průvodci úkolem (únor 2016)](new-task-guides-available-february-2016.md)
 
 [Noví nebo aktualizovaní průvodci úkolem (květen 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Noví nebo aktualizovaní dostupní průvodci úkolem (listopad 2016)](new-task-guides-november-2016.md)
-
-
-
 

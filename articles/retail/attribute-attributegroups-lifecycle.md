@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 918f8555bc3d2e4a79262b428d5c7ba278fa7409
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 08/08/2018
 [!include [banner](includes/banner.md)]
 
 *Atributy* poskytují způsob k dalšímu popisu produktu a jeho vlastností prostřednictvím uživatelem definovaných polí (jako například **Velikost paměti**, **Kapacita pevného disku**, **Je kompatibilní se standardem Energy Star** atd). V aplikaci Microsoft Dynamics 365 for Finance and Operations lze atributy přidružit k různým maloobchodním entitám, jako jsou kategorie produktů a maloobchodní sítě, a lze jim nastavit výchozí hodnoty. Produkty pak dědí atributy a výchozí hodnoty při přidružení ke kategorii produktu nebo maloobchodní síti. Výchozí hodnoty lze přepsat na úrovni jednotlivých produktů, na úrovni maloobchodní sítě nebo v maloobchodním katalogu.
- 
+
 Například typický televizní produkt může mít následující atributy.
 
 | Kategorie   | Atribut                | Přípustné hodnoty          | Výchozí hodnota |
@@ -48,9 +48,9 @@ Například typický televizní produkt může mít následující atributy.
 | LCD        | Připraveno na 3D                 | Ano nebo Ne                   | Ano           |
 |            | 3D k dispozici               | Ano nebo Ne                   | Žádný            |
 | Plazma     | Provozní teplota od      | 0–43 °C              | 32            |
-|            | Provozní teplota do        | 0–43 °C              | 100           |
+|            | Provozní teplota do        | 0–43 °C              | 1597           |
 | Projekční | Záruka | 6, 12 nebo 18 měsíců         | 12            |
-|            | Počet trubic    | 1–5                         | 3             |
+|            | Počet trubic: \#   | 1–5                         | 3             |
 
 ## <a name="attributes-and-attribute-types"></a>Atributy a typy atributů.
 
@@ -90,7 +90,7 @@ Atributy jsou založeny na *typech atributů*. Typ atributu určuje typ dat, kte
 
 Pro maloobchodní produkty lze nastavení metadat atributů přepsat na úrovni kanálu. Tuto funkci probereme později v tomto tématu.
 
-Jak si můžete povšimnout, stránka **Atributy** obsahuje možnosti, které souvisejí s metadaty atributů. Pod možností **Metadata atributů pro POS** jedna z možností s názvem **"Lze upřesnit"** ovlivňuje chování hodnot atributů v maloobchodním pokladním místě, nebo způsob, kterým systém zpracovává tyto hodnoty atributů. Pouze atributy, pro které můžete nastavit možnost **"Lze upřesnit"** na **"Ano"**, se ukáží pro upřesnění nebo filtrování produktů v maloobchodním pokladním místě.
+Jak si můžete povšimnout, stránka **Atributy** obsahuje možnosti, které souvisejí s metadaty atributů. Pod možností **Metadata atributů pro POS** jedna z možností s názvem **"Lze upřesnit"** ovlivňuje chování hodnot atributů v maloobchodním pokladním místě, nebo způsob, kterým systém zpracovává tyto hodnoty atributů. Pro upřesnění nebo filtrování produktů v Retail POS se zobrazí pouze atributy, pro které lze nastavit možnost **Lze upřesnit** na **Ano**.
 
 Zde jsou uvedeny zbývající možnosti metadat atributů na stárnce **Atributy**:
 
@@ -104,7 +104,7 @@ Zde jsou uvedeny zbývající možnosti metadat atributů na stárnce **Atributy
 
 Tyto možnosti byly původně určené k vylepšení funkce vyhledávání pro online poutače. Ačkoli aplikace Finance and Operations neobsahuje online poutače, obsahuje eCommerce Publishing Software Development Kit (SDK). Odběratele mohou použít tuto sadu SDK pro vložení produktů do libovolných vyhledávacích indexů. I když jsou data produktu importována, odběratelé by stále měli mít možnost rozlišit prohledávatelná dat, data, na která se lze dotazovat atd. Tímto způsobem mohou vytvářet optimální index, aby zajistili, že na indexu budou pouze atributy, které by tam měly *podle jejich názoru* být.
 
-Informace o účelu těchto zbývajících možností naleznete v tématu [Přehled schématu vyhledávání ve službě SharePoint Server 2013](https://technet.microsoft.com/en-us/library/jj219669.aspx).
+Informace o účelu těchto zbývajících možností naleznete v tématu [Přehled schématu vyhledávání ve službě SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Nastavení filtrů pro atributy
 
@@ -121,7 +121,7 @@ Stránka **Předvolby zobrazení filtru** obsahuje následující pole:
 - **Ovládání zobrazení** - K dispozici jsou následující možnosti:
 
     - **Seznam** – Tato možnost je k dispozici pro všechny typy atributů.
-    - **Rozsah** – Tato možnost je k dispozici pro následující typy atributů: **Měna**, **Desetinné číslo** a **Celé číslo**. 
+    - **Rozsah** – Tato možnost je k dispozici pro následující typy atributů: **Měna**, **Desetinné číslo** a **Celé číslo**.
     - **Posuvník** – Tato možnost je k dispozici pro následující typy atributů: **Měna**, **Desetinné číslo** a **Celé číslo**.
     - **Posuvník s panely** – Tato možnost je k dispozici pro následující typy atributů: **Měna**, **Desetinné číslo** a **Celé číslo**.
 
@@ -228,13 +228,13 @@ Výchozí hodnoty atributů lze přepsat na úrovni produktu pro jednotlivé vý
 5. Na pevné záložce **Produkty** vyberte požadovaný produkt a poté vyberte **Atributy** nad mřížkou produktu.
 6. Na následujících pevných záložkách aktualizujte hodnoty požadovaných atributů:
 
-   - Médium sdíleného produktu
-   - Sdílené atributy produktu
-   - Médium kanálu
-   - Atributy produktu kanálu
+    - Médium sdíleného produktu
+    - Sdílené atributy produktu
+    - Médium kanálu
+    - Atributy produktu kanálu
 
-     > [!NOTE]
-     > Pokud jsou vytvořeny sdílené atributy produktu a sdílená média produktu v aplikaci Finance and Operations, vztahují se na všechny maloobchodní produkty.
+    > [!NOTE]
+    > Pokud jsou vytvořeny sdílené atributy produktu a sdílená média produktu v aplikaci Finance and Operations, vztahují se na všechny maloobchodní produkty.
 
 ![Skupiny atributu produktu katalogu](media/CatalogProdAttrValues.png)
 
@@ -250,11 +250,11 @@ Výchozí hodnoty atributů lze přepsat na úrovni produktu pro jednotlivé vý
 
 5. Na následujících pevných záložkách aktualizujte hodnoty požadovaných atributů:
 
-   - Médium sdíleného produktu
-   - Sdílené atributy produktu
-   - Médium kanálu
-   - Atributy produktu kanálu
+    - Médium sdíleného produktu
+    - Sdílené atributy produktu
+    - Médium kanálu
+    - Atributy produktu kanálu
 
-     > [!NOTE]
-     > Pokud jsou vytvořeny sdílené atributy produktu a sdílená média produktu v aplikaci Finance and Operations, vztahují se na všechny maloobchodní produkty.
+    > [!NOTE]
+    > Pokud jsou vytvořeny sdílené atributy produktu a sdílená média produktu v aplikaci Finance and Operations, vztahují se na všechny maloobchodní produkty.
 

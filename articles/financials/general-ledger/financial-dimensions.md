@@ -3,7 +3,7 @@ title: "Finanční dimenze"
 description: "Toto téma popisuje různé typy finančních dimenzí a způsob jejich nastavení."
 author: aprilolson
 manager: AnnBe
-ms.date: 10/26/2018
+ms.date: 01/03/2019
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
-ms.openlocfilehash: bda8b14b1752ca67fc4eeec6d6345dcf3968179d
+ms.sourcegitcommit: 92d1f2997ca8ea1bd47dfe47d91bf7f6234833b0
+ms.openlocfilehash: 2fb325e143eff067e1c9d0f23a1f913fc2dc36f3
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/05/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -93,6 +93,8 @@ Můžete použít hodnoty z hlavních záznamů, jako například odběratele a 
 Tato funkce je řízena nastavením v dimenzi. Toto nastavení se jmenuje **Kopírování hodnot do této dimenze na každé nové vytvořené DimensionName**, kde **DimensionName** je název dimenze. Ve výchozím nastavení je tato funkce vypnutá. Lze ji však kdykoliv zapnout.
 
 Pokud pro dimenzi již existují záznamy, hlavní záznamy se aktualizují, když zapnete funkci. Stávající dokumenty a transakce však nebudou aktualizovány.
+
+Pokud použijete šablonu pro vytvoření hlavního záznamu, ujistěte se, že hodnota šablony základní dimenze není vyplněná. Pokud například vytváříte odběratele ze šablony, ujistěte se, že je dimenze odběratele v šabloně prázdná. Hodnota dimenze pro odběratele bude přednastavena z nového čísla zákazníka při vytvoření nového odběratele.  
 
 ## <a name="derived-dimensions"></a>Odvozené dimenze
 

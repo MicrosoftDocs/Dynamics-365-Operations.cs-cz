@@ -17,10 +17,10 @@ ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: d428da2a6fb8ce5d63c3373def879c9b32cfd492
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -59,11 +59,12 @@ Jako součást vylepšení funkce zaúčtování výkazu byly zavedeny tři nov�
 
 Kromě toho bylo zavedeno pole **maximální počet paralelních výkazů** byl zaveden pole na pevné záložce **dávkové zpracování**. Toto pole definuje počet dávkových úloh, které by měly být spuštěny ve stejné době. V současné době musíte ručně nastavit hodnotu tohoto pole.
 
-S novým procesem zaúčtování je rovněž nutné definovat **Produkt dárkového poukazu** na pevné záložce **Dárkový poukaz** na kartě **Zaúčtování** stránky **Parametry maloobchodu**. To platí i v případě, že organizace nepoužívá žádné dárkové poukazy. 
+S novým procesem zaúčtování je rovněž nutné definovat **Produkt dárkového poukazu** na pevné záložce **Dárkový poukaz** na kartě **Zaúčtování** stránky **Parametry maloobchodu**. To platí i v případě, že organizace nepoužívá žádné dárkové poukazy.
 
 Všimněte si, že všechna nastavení a parametry související se zaúčtováním výkazu, která jsou definována v seznam maloobchodních obchodech a na stránce **Parametry Maloobchodu**, se vztahuje na zaúčtování funkci zlepšeného výkazu.
 
 ## <a name="processing"></a>Zpracování
+
 Příkazy je možné vypočítávat a zaúčtovat v dávce pomocí položek nabídky **Počítat výkazy v dávce** a **dávkové Zaúčtování výkazů**. Výkazy lze alternativně ručně vypočítávat a zaúčtovat pomocí nabídky **maloobchodní výpisy**, která poskytuje vylepšené funkce zaúčtování výkazu.
 
 Proces a postup při výpočtu a zaúčtování výkazů v rámci dávky, jsou stejné jako u funkce zaúčtování výkazu ze starší verze. Významná vylepšení však byly provedeny v základním back-endovém zpracování výkazů. Tato zlepšení zajišťují, že je proces více pružný a poskytují lepší přehled o stavech a informace o chybách. Proto mohou uživatelé vyřešit hlavní příčinu chyb a poté pokračovat v procesu zaúčtování, aniž by to způsobilo poškození dat, a bez nutnosti oprav dat.
@@ -71,6 +72,7 @@ Proces a postup při výpočtu a zaúčtování výkazů v rámci dávky, jsou s
 Následující části popisují některá zásadní vylepšení pro výkazy maloobchodu a zaúčtovaných výkazů, která se zobrazí v uživatelském rozhraní.
 
 ### <a name="status-details"></a>Podrobnosti o stavu
+
 Byl zaveden nový model stavu v rutině zaúčtování výkazů v rámci procesů výpočtu a zaúčtování.
 
 Následující tabulka popisuje různé stavy a jejich pořadí během procesu výpočtu.
@@ -109,9 +111,11 @@ Každý stav v předchozích tabulkách je nezávislý a mezi stavy je vytvořen
 Kromě toho záhlaví oddíly druhého a třetího oddílu zobrazuje celkový stav příslušného procesu.
 
 ### <a name="event-logs"></a>Protokoly událostí
+
 Výkaz prochází různými operacemi (například vytvořit, vypočítat, vymazat a zaúčtovat) a více instancí stejné operace může být voláno během životního cyklu výkazu. Například po vytvoření a vypočítání výkazu ho uživatel může vymazat a vypočítávat znovu. Tlačítko **Protokoly událostí** ve skupině výkazů **Podrobnosti o spuštění** obsahuje úplný kontrolní záznam různých operací, které byly volány ve výkazu, společně s informacemi o tom, kdy byly tyto operace volány.
 
 ### <a name="aggregated-transactions"></a>Agregované transakce
+
 Během procesu zaúčtování jsou prodejní transakce seskupeny podle konfigurace. Tyto souhrnné transakce jsou v systému uloženy a slouží k vytváření prodejních objednávek. Každá souhrnná transakce agregační vytvoří jednu odpovídajících prodejní objednávky v systému. Souhrnné transakce můžete zobrazit pomocí tlačítka **Souhrnné transakce** ve skupině **Podrobnosti o spuštění** ve výkazu.
 
 Karta **Prodejní objednávky** souhrnné transakce uvádí následující informace:
@@ -136,11 +140,13 @@ Zobrazení souhrnné transakce poskytuje následující výhody:
 - Agregovaný soubor XML usnadňuje určit problémy při vytváření prodejní objednávky a fakturaci.
 
 ### <a name="journal-vouchers"></a>Doklady deníku
+
 Tlačítko **Doklady deníků** ve skupině **podrobnosti o spuštění** zobrazí všechny různé transakce dokladů vytvořené pro výkaz a které se vztahují ke slevám, účtům příjmů/výdajům, dárkovým kartám a tak dále.
 
 Program v současné době tato data zobrazuje pouze pro zaúčtované výkazy.
 
 ### <a name="payment-journals"></a>Deníky plateb
+
 Tlačítko **Deníky plateb** ve skupině výpisu **Podrobnosti o spuštění** zobrazuje všechny různé platební deníky, které jsou vytvořeny pro výkazy.
 
 Program v současné době tato data zobrazuje pouze pro zaúčtované výkazy.

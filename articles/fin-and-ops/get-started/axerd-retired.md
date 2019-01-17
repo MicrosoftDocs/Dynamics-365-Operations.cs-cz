@@ -18,10 +18,10 @@ ms.author: margoc
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: AX 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 5250a75655b23f1bc92b332a48dfec094af049cf
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 71c61764ca2dd79df110d257b61bd656804519ef
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -35,7 +35,5 @@ HTML stránky jsou v úložišti na [https://github.com/Microsoft/ax-2012-doc-to
 
 Popis toho, jak vytvořit své vlastní ERD, naleznete na [https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm](https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm)
 
-Řešení je v kořenu složky AxErd [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd). 
-
-
+Řešení je v kořenu složky AxErd [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd).
 

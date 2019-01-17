@@ -29,35 +29,38 @@ ms.lasthandoff: 08/08/2018
 
 [!include [banner](../includes/banner.md)]
 
-Mnoho polí v aplikaci Microsoft Dynamics 365 for Finance and Operations umožňuje snadné vyhledávání správných a požadovaných hodnot. Vyhledávání bylo několika způsoby vylepšeno – ovládací prvky jsou nyní užitečnější a uživatelé díky nim mohou být produktivnější. V tomto tématu se dozvíte o těchto nových funkcích a užitečných tipech k optimálnímu využití vyhledávání v systému.  
+Mnoho polí v aplikaci Microsoft Dynamics 365 for Finance and Operations umožňuje snadné vyhledávání správných a požadovaných hodnot. Vyhledávání bylo několika způsoby vylepšeno – ovládací prvky jsou nyní užitečnější a uživatelé díky nim mohou být produktivnější. V tomto tématu se dozvíte o těchto nových funkcích a užitečných tipech k optimálnímu využití vyhledávání v systému.
 
-<a name="responsive-lookups"></a>Lépe reagující vyhledávání
-------------------
+## <a name="responsive-lookups"></a>Lépe reagující vyhledávání
 
 V předchozích verzích aplikace Finance and Operations museli uživatelé při práci s ovládacími prvky vyhledávání provádět explicitní úkony, aby se otevřela rozevírací nabídka. K těmto úkonům patří zadání hvězdičky (\*) k filtrování podle aktuální hodnoty ovládacího prvku, kliknutí na tlačítko rozevíracího seznamu nebo použití klávesové zkratky **Alt**+**Šipka dolů**. Ovládací prvky vyhledávání byly upraveny následujícími způsoby, aby lépe vyhovovaly současné praxi při používání webu:
 
--   Rozevírací nabídky vyhledávání se nyní automaticky otevírají po krátké pauze při zadávání a jejich obsah se filtruje podle aktuální hodnoty vyhledávacího ovládacího prvku.
-    -   Původní chování – automatické otevření rozevíracího seznamu po zadání hvězdičky (\*) – se již nepoužívá.
--   Po otevření rozevírací nabídky vyhledávání se stane toto:
-    -   Kurzor zůstane ve vyhledávacím ovládacím prvku (místo přesunutí do rozevírací nabídky), abyste mohli hodnotu ovládacího prvku dále upravovat. Uživatel však stále může pomocí kláves **Šipka nahoru** a **Šipka dolů** měnit řádky v rozevírací nabídce a vybírat aktuální řádky klávesou Enter.
-    -   Obsah rozevírací nabídky bude reagovat na jakoukoli změnu hodnoty vyhledávacího ovládacího prvku.
+- Rozevírací nabídky vyhledávání se nyní automaticky otevírají po krátké pauze při zadávání a jejich obsah se filtruje podle aktuální hodnoty vyhledávacího ovládacího prvku.
 
-Jak příklad si uveďme vyhledávací pole s názvem **Město**. 
+    Původní chování – automatické otevření rozevíracího seznamu po zadání hvězdičky (\*) – se již nepoužívá.
 
-Pokud je výběr nastaven na pole **Město**, můžete začít hledat požadované město zadáním několika písmen, například „col“.  Jakmile přestanete psát, vyhledávání se automaticky otevře a zobrazí města začínající na „col“. 
+- Po otevření rozevírací nabídky vyhledávání se stane toto:
 
-[![typeaheadLookupExample](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png) 
+    - Kurzor zůstane ve vyhledávacím ovládacím prvku (místo přesunutí do rozevírací nabídky), abyste mohli hodnotu ovládacího prvku dále upravovat. Uživatel však stále může pomocí kláves **Šipka nahoru** a **Šipka dolů** měnit řádky v rozevírací nabídce a vybírat aktuální řádky klávesou Enter.
+    - Obsah rozevírací nabídky bude reagovat na jakoukoli změnu hodnoty vyhledávacího ovládacího prvku.
 
-V tomto okamžiku je kurzor stále ve vyhledávacím poli. Pokud budete pokračovat v psaní a zadáte hodnotu „colum“, obsahu vyhledávání se tomuto zadání automaticky přizpůsobí. 
+Jak příklad si uveďme vyhledávací pole s názvem **Město**.
 
-![updateFilterLookupExample](./media/updatefilterlookupexample.png) 
+Pokud je výběr nastaven na pole **Město**, můžete začít hledat požadované město zadáním několika písmen, například „col“. Jakmile přestanete psát, vyhledávání se automaticky otevře a zobrazí města začínající na „col“.
 
-I když je stále vybrán vyhledávací ovládací prvek, můžete pomocí kláves **Šipka nahoru** a **Šipka dolů** vybírat požadované řádky. Pokud stisknete klávesu **Enter**, zvýrazněný řádek se ve vyhledávání vybere a hodnota ovládacího prvku se aktualizuje. 
+[![typeaheadLookupExample](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
+
+V tomto okamžiku je kurzor stále ve vyhledávacím poli. Pokud budete pokračovat v psaní a zadáte hodnotu „colum“, obsahu vyhledávání se tomuto zadání automaticky přizpůsobí.
+
+![updateFilterLookupExample](./media/updatefilterlookupexample.png)
+
+I když je stále vybrán vyhledávací ovládací prvek, můžete pomocí kláves **Šipka nahoru** a **Šipka dolů** vybírat požadované řádky. Pokud stisknete klávesu **Enter**, zvýrazněný řádek se ve vyhledávání vybere a hodnota ovládacího prvku se aktualizuje.
 
 ![changingSelectionLookup](./media/changingselectionlookup.png)
 
 ## <a name="typing-in-more-than-ids"></a>Zadání dalších údajů kromě ID
-Při zadávání dat se uživatelé přirozeně snaží určit entity (například odběratele nebo dodavatele) pomocí názvu, nikoli identifikátorů, které tyto entity zastupují. V aktuální verzi aplikace Finance and Operations je nyní u mnoha (ale ne všech) funkcí vyhledávání možné kontextové zadávání dat. Díky této užitečné funkci může uživatel vyhledávat pomocí ID nebo odpovídajícího názvu. 
+
+Při zadávání dat se uživatelé přirozeně snaží určit entity (například odběratele nebo dodavatele) pomocí názvu, nikoli identifikátorů, které tyto entity zastupují. V aktuální verzi aplikace Finance and Operations je nyní u mnoha (ale ne všech) funkcí vyhledávání možné kontextové zadávání dat. Díky této užitečné funkci může uživatel vyhledávat pomocí ID nebo odpovídajícího názvu.
 
 Příkladem je pole **Účet odběratele** při vytváření prodejní objednávky. V tomto poli se zobrazuje **ID účtu** odběratele, ale uživatelé při tvorbě prodejních objednávek zadávají spíše **název účtu** než **ID účtu**, například „Forest Wholesales“ místo „US-003“.
 
@@ -70,18 +73,16 @@ Uživatel však může zadat také začátek **názvu účtu**. Pokud to udělá
 [![Kontextové vyhledávání při zadání jména odběratele](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
 ## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Rozšířené filtrování a řazení pomocí záhlaví sloupců mřížky
-Vylepšení vyhledávání popsaná v předchozích dvou částech značně zlepšují možnosti procházení řádků při vyhledávání typu „začíná na“, které se týká polí **ID** nebo **Název**. Existují však situace, ve kterých je k nalezení správného řádku nutné použít pokročilejší filtrování nebo řazení. V těchto případech musí uživatel použít možnosti filtrování a řazení v záhlavích sloupců mřížky vyhledávání. Jako příklad si uvedeme zaměstnance, který zadává řádek prodejní objednávky a potřebuje jako produkt najít správnou položku typu „cable“ (kabel). Pokud do pole **Číslo položky** zadá „cable“, správnou položku nenajde, protože žádné názvy produktů začínající na „cable“ neexistují. 
 
-![emptyitemlookup](./media/emptyitemlookup.png) 
+Vylepšení vyhledávání popsaná v předchozích dvou částech značně zlepšují možnosti procházení řádků při vyhledávání typu „začíná na“, které se týká polí **ID** nebo **Název**. Existují však situace, ve kterých je k nalezení správného řádku nutné použít pokročilejší filtrování nebo řazení. V těchto případech musí uživatel použít možnosti filtrování a řazení v záhlavích sloupců mřížky vyhledávání. Jako příklad si uvedeme zaměstnance, který zadává řádek prodejní objednávky a potřebuje jako produkt najít správnou položku typu „cable“ (kabel). Pokud do pole **Číslo položky** zadá „cable“, správnou položku nenajde, protože žádné názvy produktů začínající na „cable“ neexistují.
 
-Místo toho je třeba hodnotu ovládacího prvku vyhledávání vymazat, otevřít rozevírací nabídku vyhledávání a filtrovat ji pomocí záhlaví sloupce mřížky, jak je uvedeno níže. Možnosti filtrování a řazení lze zobrazit jednoduchým kliknutím (nebo klepnutím) na požadované záhlaví sloupce. Na klávesnici stačí stisknout podruhé zkratku **Alt**+**Šipka** **dolů** a přesunout tak výběr do rozevírací nabídky. Potom lze pomocí tabulátoru vybrat správný sloupec a stisknutím klávesové zkratky **Ctrl**+**G** otevřít rozevírací nabídku záhlaví sloupce mřížky. 
+![emptyitemlookup](./media/emptyitemlookup.png)
 
-[![gridfilteritemlookup](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png) 
+Místo toho je třeba hodnotu ovládacího prvku vyhledávání vymazat, otevřít rozevírací nabídku vyhledávání a filtrovat ji pomocí záhlaví sloupce mřížky, jak je uvedeno níže. Možnosti filtrování a řazení lze zobrazit jednoduchým kliknutím (nebo klepnutím) na požadované záhlaví sloupce. Na klávesnici stačí stisknout podruhé zkratku **Alt**+**Šipka** **dolů** a přesunout tak výběr do rozevírací nabídky. Potom lze pomocí tabulátoru vybrat správný sloupec a stisknutím klávesové zkratky **Ctrl**+**G** otevřít rozevírací nabídku záhlaví sloupce mřížky.
 
-Po použití filtru (viz následující obrázek) může uživatel najít a vybrat řádek jako obvykle. 
+[![gridfilteritemlookup](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
+
+Po použití filtru (viz následující obrázek) může uživatel najít a vybrat řádek jako obvykle.
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
-
-
-
 

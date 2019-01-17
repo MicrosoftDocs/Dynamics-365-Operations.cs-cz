@@ -16,10 +16,10 @@ ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a67b51ced4bea11be258aed359a758d88294beb1
-ms.openlocfilehash: bc48aa5ccf50705ef0c5087608798875953fe888
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: f88b485b0bdbf66532adff530e399bdd9d5b0ed5
 ms.contentlocale: cs-cz
-ms.lasthandoff: 11/05/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -41,7 +41,7 @@ Pro většinu uživatelů zahrnuje každodenní používání systému velké mn
 
 Každá stránka, ke které se přistupuje pomocí nabídky navigačního podokna, podokna nejvíce vlevo, je rovněž dostupná z pole **Vyhledávání**. Stisknutím kláves Alt + G přesunete výběr na pole **Vyhledávání** a pak můžete zadat název nebo popis stránky.
 
-![Zadaná hodnota "Bankovní účty" ve vyhledávacím poli](media/6d08b0be32808221023e2aa92d69fd70.png  "Zadaná hodnota \"Bankovní účty\" ve vyhledávacím poli")
+![Zadaná hodnota "Bankovní účty" ve vyhledávacím poli](media/6d08b0be32808221023e2aa92d69fd70.png "Zadaná hodnota \"Bankovní účty\" ve vyhledávacím poli")
 
 Další informace naleznete v tématu [Hledání za účelem navigace](navigation-search.md).
 
@@ -56,17 +56,17 @@ Ke každé akci, kterou nabízí stránka, se lze dostat z klávesnice pomocí p
 
 Chcete spustit akci **Protokol oznámení e-mailem**, která se zobrazí ve skupině **Oznámení e-mailem** na kartě **Prodejní objednávka** v podokně akcí.
 
-![Akce protokolu e-mailového oznámení v podokně akcí](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg  "Akce protokolu e-mailového oznámení v podokně akcí")
+![Akce protokolu e-mailového oznámení v podokně akcí](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "Akce protokolu e-mailového oznámení v podokně akcí")
 
 Jedna z možností je použití klávesnice. Stisknutím kombinace kláves Ctrl + F6 přesuňte výběr na podokno akcí a poté stiskněte opakovaně klávesu Tab, abyste se přesunuli přes všechny karty a akce až na výběr akce **Protokol oznámení e-mailem**.
 
 Můžete také spustit akci přímějším způsobem. Kdekoliv na stránce stiskněte kombinaci kláves Ctrl + apostrof a zobrazí se pole vyhledávání akcí.
 
-![Vyhledávací pole pro akce](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg  "Vyhledávací pole pro akce")
+![Vyhledávací pole pro akce](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Vyhledávací pole pro akce")
 
 V poli pro vyhledávání zadejte slova, která popisují akci. Tato akce vám bude k dispozici a lze ji spustit přímo. Například zadáním slov **e-mail**, **oznám** (částečné slovo), nebo **protokol**, je možné "přeskočit" na funkci protokolu oznámení e-mailem.
 
-![Zadaná hodnota "E-mail" ve vyhledávacím poli](media/image4.png "Zadaná hodnota \"E-mail\" ve vyhledávacím poli") 
+![Zadaná hodnota "E-mail" ve vyhledávacím poli](media/image4.png "Zadaná hodnota \"E-mail\" ve vyhledávacím poli")
 
 ![Zadaná hodnota "Oznámení" ve vyhledávacím poli](media/image5.png "Zadaná hodnota \"Oznámení\" ve vyhledávacím poli")
 
@@ -82,7 +82,7 @@ Při každodenním použití systému nejsou třeba k provádění typických ú
 
 Můžete však zjistit, že některá pole, která často používáte k provádění úloh, nejsou zahrnuta ve výchozí posloupnosti karet. V takovém případě, používáte-li Windows Narrator, můžete použít jeho akce klávesnice pro přístup k těmto polím a kontrole jejich obsahu. Případně je můžete zapnout možnost **Rozšířená posloupnost karet** na stránce **Možnosti**. Tato možnost učiní všechny upravitelná pole a pole jen pro čtení součástí posloupnosti karet. Poté můžete použít individuální nastavení stránky k vytvoření vlastní posloupnosti karet a vyloučit pole, která nemusí být součástí posloupnosti karet. Další informace o individuálním nastavení najdete v části [Přizpůsobení uživatelského prostředí](personalize-user-experience.md).
 
-![Možnost "Rozšířené pořadí na kartě"](media/8c0f12bbb3f26032997ef0ba95d89b6a.png  "Možnost \"Rozšířené pořadí na kartě\"")
+![Možnost "Rozšířené pořadí na kartě"](media/8c0f12bbb3f26032997ef0ba95d89b6a.png "Možnost \"Rozšířené pořadí na kartě\"")
 
 ## <a name="form-patterns"></a>Vzory formulářů
 

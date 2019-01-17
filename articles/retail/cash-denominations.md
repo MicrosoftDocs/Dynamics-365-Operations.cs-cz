@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: afc53754c3ff5b1afed2380369cf8280cfffc5e4
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 24775044e5a502a5615392a6a8c4030bdfafb0ab
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -34,11 +34,13 @@ ms.lasthandoff: 08/08/2018
 Nominální hodnoty hotovosti pro bankovky a mince lze definovat v účetním systému, aby je mohli používat pokladníci, zaměstnanci a manažeři v obchodě z POS. Tyto nominální hodnoty lze použít pro pomoc při inventuře hotovosti pro výkazy úhrad na konci dne nebo pro rychlé úhrady prodeje.
 
 ## <a name="define-denominations"></a>Definování nominálních hodnot
-Nominální hodnoty se nastavují na úrovni obchodu na stránce **Nastavit** > **Možnost výkazu hotovosti z vlastnosti obchodu**. 
+
+Nominální hodnoty se nastavují na úrovni obchodu na stránce **Nastavit** \> **Možnost výkazu hotovosti z vlastnosti** obchodu.
 
 ![nominální hodnoty hotovosti](./media/image1-denomination.png)
 
 Jak definovat nominální hodnotu:
+
 1. Klepněte na možnost **Nový**.
 1. Zadejte typ (mince nebo bankovka).
 1. Zadejte částku (hodnota).
@@ -46,9 +48,9 @@ Jak definovat nominální hodnotu:
 ![nominální hodnoty hotovosti](./media/image2-denomination.png)
 
 ## <a name="configure-the-functionality-profile"></a>Konfigurace funkčního profilu
+
 Při platbě hotovosti v POS může uživatel použít nominální hodnoty k rychlému zadání částky placené odběratelem. Ve funkčním profilu můžete nakonfigurovat dvě možnosti pro zobrazení nominálních hodnot v POS.
 
-**Větší nebo rovno splatné částce**: Ve výchozím nastavení POS zobrazí pouze nominálních hodnoty, které jsou větší než splatná částka, což umožňuje úhradu jedním dotykem. Pokud je například dlužná částka 7,5 USD, POS zobrazí následující nominální hodnoty: 10 USD, 20 USD, 50 USD a 100 USD. Dotyk jedné z těchto částek automaticky uhradí prodej za tuto částku. Bankovky 1 USD a 5 USD se nezobrazují, protože tyto částky jsou menší než částka k zaplacení.
-
-**Všechny nominální hodnoty**: Zvolte tuto možnost, aby se vždy zobrazily všechny nominální hodnoty v POS, bez ohledu částku k úhradě. To znamená, že uživatel může použít kombinaci bankovek k dosažení splatné částky. Například pokud je dlužná částka 25,00 USD, uživatel si může zvolit 20 USD a 5 USD k dokončení prodeje.
+- **Větší nebo rovno splatné částce** - Ve výchozím nastavení POS zobrazí pouze nominálních hodnoty, které jsou větší než splatná částka, což umožňuje úhradu jedním dotykem. Pokud je například dlužná částka 7,5 USD, POS zobrazí následující nominální hodnoty: 10 USD, 20 USD, 50 USD a 100 USD. Dotyk jedné z těchto částek automaticky uhradí prodej za tuto částku. Bankovky 1 USD a 5 USD se nezobrazují, protože tyto částky jsou menší než částka k zaplacení.
+- **Všechny nominální hodnoty** - Zvolte tuto možnost, aby se vždy zobrazily všechny nominální hodnoty v POS, bez ohledu částku k úhradě. To znamená, že uživatel může použít kombinaci bankovek k dosažení splatné částky. Například pokud je dlužná částka 25,00 USD, uživatel si může zvolit 20 USD a 5 USD k dokončení prodeje.
 

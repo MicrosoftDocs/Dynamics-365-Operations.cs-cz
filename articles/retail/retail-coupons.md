@@ -19,10 +19,10 @@ ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: c718a71ca270c67118a90456bac0cf182032d3db
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -32,13 +32,13 @@ ms.lasthandoff: 08/08/2018
 
 ## <a name="overview-of-coupons"></a>Přehled kupónů
 
-Kupóny jsou kódy a čárové kódy, které slouží k přidání maloobchodních slev do transakce. Každý kupón může mít několik kódů a všechny kódy můžou mít vlastní data účinnosti. 
+Kupóny jsou kódy a čárové kódy, které slouží k přidání maloobchodních slev do transakce. Každý kupón může mít několik kódů a všechny kódy můžou mít vlastní data účinnosti.
 
-Každý kupón se vztahuje k jedné maloobchodní slevě. Cenové skupiny, které jsou spojeny se slevou, definují zákazníky, kteří mohou použít kupón nebo kanály, kde je kupón platný. 
+Každý kupón se vztahuje k jedné maloobchodní slevě. Cenové skupiny, které jsou spojeny se slevou, definují zákazníky, kteří mohou použít kupón nebo kanály, kde je kupón platný.
 
 Kupóny v zásadě představují další ověření nad rámec maloobchodních slev. Kupón obsahuje kódy kupónu a čárové kódy, které jsou vyžadovány, spolu s rozsahy kalendářních dat pro tyto kódy. Kupón také poskytuje volitelné limity použití a vlastnosti definované zákazníkem. Sleva obsahuje sadu produktů, pro které kupón platný. Cenové skupiny pro slevu poskytují sadu zákazníků, kanálů nebo katalogů, pro které je kupón platný.
 
-Kupón vytvoříte tak, že vytvoříte slevu a kupón samostatně. Pak je spojíte výběrem slevy na stránce kupónu v aplikaci Microsoft Dynamics 365 for Retail. 
+Kupón vytvoříte tak, že vytvoříte slevu a kupón samostatně. Pak je spojíte výběrem slevy na stránce kupónu v aplikaci Microsoft Dynamics 365 for Retail.
 
 > [!NOTE]
 > Po té, co je kupón propojen se slevou, několik polí na stránce slevy v aplikaci Microsoft Dynamics 365 for Retail začne být jen pro čtení, vzhledem k tomu, že jsou spravovány nastavením kupónu. Tato pole zahrnují pole pro stav a standardní rozsahy dat.
@@ -54,25 +54,25 @@ Limite je vynucen na kód kupónu v kupónu. Jednorázový kupón, který má dv
 
 ## <a name="managing-coupons"></a>Správa kupónů
 
-Slevu a kupón musíte vytvořit samostatně. Pak je spojíte výběrem slevy na stránce kupónu. Po propojení kupónu se slevou několik polí na stránce slevy začne být jen pro čtení, vzhledem k tomu, že jsou spravována nastavením kupónu. Tato pole zahrnují pole pro stav a standardní rozsahy dat.  
+Slevu a kupón musíte vytvořit samostatně. Pak je spojíte výběrem slevy na stránce kupónu. Po propojení kupónu se slevou několik polí na stránce slevy začne být jen pro čtení, vzhledem k tomu, že jsou spravována nastavením kupónu. Tato pole zahrnují pole pro stav a standardní rozsahy dat.
 
 Kupóny v zásadě nyní představují další ověření nad rámec maloobchodních slev. Kupón obsahuje kódy kupónu a čárové kódy, které jsou vyžadovány, spolu s rozsahy kalendářních dat, limity použití a vlastnosti vyžadované zákazníkem. Sleva obsahuje sadu produktů, pro které kupón platný. Cenové skupiny slevy poskytují sadu zákazníků, kanálů nebo katalogů, pro které je kupón platný.
 
-## <a name="system-setup-for-coupons"></a>Nastavení systému pro kupóny 
+## <a name="system-setup-for-coupons"></a>Nastavení systému pro kupóny
 
-Před nastavením kupónu je nutné nakonfigurovat čárový kód kupónu a dvě číselné řady kupónu. 
+Před nastavením kupónu je nutné nakonfigurovat čárový kód kupónu a dvě číselné řady kupónu.
 
-1.  Na stránce **znaky masky** vytvořte nový znak masky pro kód kupónu. Vybrat můžete jakýkoli nepoužitý znak.
-2.  Na stránce **Nastavení masky čárového kódu** vytvořte novou masku čárového kódu. Nastavte pole **Typ** na hodnotu **Kupón**.
-3.  Na stránce **Nastavení čárového kódu** vytvořte nový čárový kód, který používá právě vytvořenou masku čárového kódu.
-4.  Na stránce **Číselné řady** vytvořte dva nové číselné řady. Jedna řada je určena pro ID kódu kupónu a druhá pro číslo kupónu. ID kupónu je jedinečný identifikátor pro každý kód kupónu pro kupón. Číslo kupónu je jedinečný identifikátor kupónu. Každý kupón může mít více kódů a čárových kódů, které ho aktivují.
+1. Na stránce **znaky masky** vytvořte nový znak masky pro kód kupónu. Vybrat můžete jakýkoli nepoužitý znak.
+2. Na stránce **Nastavení masky čárového kódu** vytvořte novou masku čárového kódu. Nastavte pole **Typ** na hodnotu **Kupón**.
+3. Na stránce **Nastavení čárového kódu** vytvořte nový čárový kód, který používá právě vytvořenou masku čárového kódu.
+4. Na stránce **Číselné řady** vytvořte dva nové číselné řady. Jedna řada je určena pro ID kódu kupónu a druhá pro číslo kupónu. ID kupónu je jedinečný identifikátor pro každý kód kupónu pro kupón. Číslo kupónu je jedinečný identifikátor kupónu. Každý kupón může mít více kódů a čárových kódů, které ho aktivují.
 
     > [!NOTE]
     > Pro obě číselné řady je nutné nastavit pole **Obor** na **Společnosti**. Ve většině případů byste měli automaticky generovat obě pořadová čísla.
 
-5.  Na stránce **Sdílené maloobchodní parametry** na kartě **Čárové kódy** vyberte čárový kód, který jste vytvořili dříve.
-6.  Na stránce **Sdílené maloobchodní parametry** na kartě **číselné řady** vyberte číselné řady, které jste vytvořili pro číslo kupónu a ID kódu kupónu
-7.  Nyní můžete otevřít stránku **Kupóny** stránky a vytvořit nové kupóny.
+5. Na stránce **Sdílené maloobchodní parametry** na kartě **Čárové kódy** vyberte čárový kód, který jste vytvořili dříve.
+6. Na stránce **Sdílené maloobchodní parametry** na kartě **číselné řady** vyberte číselné řady, které jste vytvořili pro číslo kupónu a ID kódu kupónu
+7. Nyní můžete otevřít stránku **Kupóny** stránky a vytvořit nové kupóny.
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Vliv částečných aktualizací na kupóny
 
