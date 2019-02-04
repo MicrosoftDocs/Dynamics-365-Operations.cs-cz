@@ -30,7 +30,6 @@ ms.lasthandoff: 08/08/2018
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 Oddělení, úlohy a pozice jsou organizační prvky, které jsou evidovány v rámci modulu Lidské zdroje. Toto téma obsahuje koncepční informace o těchto prvcích. 
 
