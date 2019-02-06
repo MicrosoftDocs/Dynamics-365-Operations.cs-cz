@@ -35,8 +35,10 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo N�
 2. Klikněte na **Konfigurace výkaznictví**.
 3. Ve stromovém zobrazení vyberte možnost **Platby (zjednodušený model)**.
 4. Kliknutím na možnost **Vytvořit konfiguraci** otevřete dialogové okno.
+
  > [!NOTE]
  > Pokud se možnost **Vytvořit konfiguraci** nezobrazuje, musíte povolit režim návrhu na stránce **Parametry elektronického výkaznictví**. 
+ 
 5. V poli **Nový** zadejte **Formát založený na datovém modelu PaymentModel**.
 6. Do pole **Název** zadejte **BACS (Velká Británie – fiktivní)**.
 7. Do pole **Popis** zadejte **Formát plateb dodavatele BACS (Velká Británie – fiktivní)**.
@@ -44,6 +46,7 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo N�
     * Lze definovat určitý formát elektronického dokumentu. Ponechejte toto pole prázdné, pokud chcete vybrat formát při spuštění.  
 8. V poli **Definice datového modelu** zadejte nebo vyberte hodnotu.
 9. Klepněte na možnost **Vytvořit konfiguraci**. Byla vytvořena nová konfigurace. Verzi konceptu lze použít k ukládání formát návrhu pro správu elektronických dokumentů.  
+
  > [!NOTE]
  > Pokud se možnost **Vytvořit konfiguraci** nezobrazuje, musíte povolit režim návrhu na stránce **Parametry elektronického výkaznictví**.
 
