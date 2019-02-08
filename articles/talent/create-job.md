@@ -19,10 +19,10 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: b40b81fc24086e73b54cfe0cb5e6a81ec5838ab5
+ms.sourcegitcommit: 901ab6e309754338925c34c2cbecb3b83a0b0452
+ms.openlocfilehash: 48787d1eb662322c726698573b27023ae9eed56f
 ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 02/07/2019
 
 ---
 
@@ -30,7 +30,6 @@ ms.lasthandoff: 08/08/2018
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 <span data-ttu-id="68e98-104">Toto téma popisuje rámcové prvky, které může práce obsahovat, a poskytuje příklady použití těchto prvků v organizaci.</span><span class="sxs-lookup"><span data-stu-id="68e98-104">This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization.</span></span> 
 
@@ -41,7 +40,7 @@ ms.lasthandoff: 08/08/2018
 ## <a name="job-titles"></a><span data-ttu-id="68e98-115">Názvy pracovních pozic</span><span class="sxs-lookup"><span data-stu-id="68e98-115">Job titles</span></span>
 <span data-ttu-id="68e98-116">Před vytvořením úloh musíte nastavit názvy pro tyto úlohy.</span><span class="sxs-lookup"><span data-stu-id="68e98-116">Before you create jobs, you must set up titles for those jobs.</span></span> <span data-ttu-id="68e98-117">Pozice dědí názvy úloh z úloh, ke kterým jsou pozice přiřazeny.</span><span class="sxs-lookup"><span data-stu-id="68e98-117">Positions inherit job titles from the jobs that the positions are associated with.</span></span> 
 
-<span data-ttu-id="68e98-118">Udržujte názvy pracovních pozic pomocí stránky **Pozice**, kterou lze otevřít pomocí funkce hledání.</span><span class="sxs-lookup"><span data-stu-id="68e98-118">Maintain job titles using the **Titles** page, which you can open by using the Search function.</span></span> <span data-ttu-id="68e98-119">Na stránce **Pozice** zadejte názvy, které budete používat pro vaše práce.</span><span class="sxs-lookup"><span data-stu-id="68e98-119">On the **Titles **page, enter the titles that you plan to use for your jobs.</span></span>
+<span data-ttu-id="68e98-118">Udržujte názvy pracovních pozic pomocí stránky **Pozice**, kterou lze otevřít pomocí funkce hledání.</span><span class="sxs-lookup"><span data-stu-id="68e98-118">Maintain job titles using the **Titles** page, which you can open by using the Search function.</span></span> <span data-ttu-id="68e98-119">Na stránce **Pozice** zadejte názvy, které budete používat pro vaše práce.</span><span class="sxs-lookup"><span data-stu-id="68e98-119">On the \*\*Titles \*\*page, enter the titles that you plan to use for your jobs.</span></span>
 
 ## <a name="job-types"></a><span data-ttu-id="68e98-120">Typ úloh</span><span class="sxs-lookup"><span data-stu-id="68e98-120">Job types</span></span>
 <span data-ttu-id="68e98-121">Používáte typy prací pro seskupení podobných pozic do kategorií.</span><span class="sxs-lookup"><span data-stu-id="68e98-121">You use job types to group similar jobs into categories.</span></span> <span data-ttu-id="68e98-122">Typy práce nejsou vyžadovány.</span><span class="sxs-lookup"><span data-stu-id="68e98-122">Job types aren't required.</span></span> <span data-ttu-id="68e98-123">Však pokud máte v úmyslu použít typy úloh při nastavování pravidel způsobilosti pro správu kompenzace, je třeba před nastavením úloh nastavit také typy úloh.</span><span class="sxs-lookup"><span data-stu-id="68e98-123">However, if you plan to use job types when you set up eligibility rules for compensation management, you should set up job types before you set up jobs.</span></span> <span data-ttu-id="68e98-124">Některé příklady typů prací jsou na plný úvazek a částečný úvazek, nebo plat a hodinové mzda.</span><span class="sxs-lookup"><span data-stu-id="68e98-124">Some examples of job types are full-time and part-time, or salary and hourly pay.</span></span> <span data-ttu-id="68e98-125">Typy práce udržujte pomocí stránky **Typy práce**.</span><span class="sxs-lookup"><span data-stu-id="68e98-125">You maintain job types by using the **Job types** page.</span></span> <span data-ttu-id="68e98-126">Zadejte název a stručný popis typu pozice na stránce **Typy práce**.</span><span class="sxs-lookup"><span data-stu-id="68e98-126">On the **Job types** page, enter a name and a brief description for the job type.</span></span> <span data-ttu-id="68e98-127">V poli **Stav osvobození** vyberte jednu z následujících možností pro označení stavu osvobození od zákona Fair Labor Standards Act (FLSA) pro práce, které mají tento typ práce:</span><span class="sxs-lookup"><span data-stu-id="68e98-127">In the **Exempt status** field, select one of the following options to indicate the Fair Labor Standards Act (FLSA) exempt status of jobs that have this job type:</span></span>
