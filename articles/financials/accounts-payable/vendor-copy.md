@@ -1,13 +1,13 @@
 ---
-title: "Kopírování dodavatelů pomocí sdílených číselných řad"
-description: "Toto téma vysvětluje, jak používat sdílené číselné řady pro kopírování dodavatele do jiné právnické osoby při zachování stejného ID dodavatele."
+title: Kopírování dodavatelů pomocí sdílených číselných řad
+description: Toto téma vysvětluje, jak používat sdílené číselné řady pro kopírování dodavatele do jiné právnické osoby při zachování stejného ID dodavatele.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTable
 audience: Application User
 ms.reviewer: shylaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 0c492cd76fc9742aa4cff8fe588541cb2c6f1863
-ms.contentlocale: cs-cz
-ms.lasthandoff: 10/11/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302035"
 ---
-
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>Kopírování dodavatelů pomocí sdílených číselných řad
 
 [!include [banner](../includes/banner.md)]
@@ -66,4 +65,3 @@ Můžete rovněž kopírovat dodavatele pomocí funkce Vyhledávání DIČ, kter
 
 1. Zobrazí se možnost **Kopírovat dodavatele**. Ve výchozím nastavení je tato možnost nastavena na **Ne**. Chcete-li kopírovat dodavatele do aktuální právnické osoby, nastavte možnost na **Ano**.
 2. Zvolte **Zvolit**. Vytvoří se nový dodavatel.
-

@@ -1,13 +1,13 @@
 ---
-title: "Domovská stránka Pohledávky"
-description: "Pohledávky lze použít při sledování faktur odběratelů a příchozích plateb."
+title: Domovská stránka Pohledávky
+description: Pohledávky lze použít při sledování faktur odběratelů a příchozích plateb.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 303d67c0b662e6c21cebb5aa10ed28555459522e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302029"
 ---
-
 # <a name="accounts-receivable-home-page"></a>Domovská stránka Pohledávky
 
 [!include [banner](../includes/banner.md)]
@@ -45,7 +44,7 @@ Modul Pohledávky lze použít při sledování faktur odběratelů a plateb př
 
 :::row:::
     :::column:::
-        - [Rozúčtování a položky dílčích hlavních knih deníku pro volné faktury](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+        - [Rozúčtování a položky dílčích hlavních knih deníku pro textové faktury](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
         - [Účetní profily odběratele](customer-posting-profiles.md)
         - [Nastavení platební karty, autorizace a záznam](credit-card-authorizations.md)
         - [Vytvoření faktury odběratele](configure-customer-invoices.md)
@@ -58,7 +57,7 @@ Modul Pohledávky lze použít při sledování faktur odběratelů a plateb př
         - [Vzdát, obnovit nebo změnit úrokové poplatky](waive-reinstate-reverse-interest-fees.md)
         - [Přehled přímého inkasa SEPA](sepa-direct-debit-overview.md)
         - [Nastavení zmocnění přímého inkasa SEPA](sepa-direct-debit-mandate.md)
-        - [Uzavření pohledávek](close-accounts-receivable.md)
+        - [Uzavření modulu Pohledávky](close-accounts-receivable.md)
     :::column-end:::
 :::row-end:::
 
@@ -80,7 +79,7 @@ Přijměte různé typy plateb od odběratelů, jako například cizí směnky, 
 :::row:::
     :::column:::
         - [Použití jedné platby odběratele na úhradu několika faktur, které zasahují do více období slevy](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
-        - [Centralizované platby pro pohledávky](centralized-payments-accounts-receivable.md)
+        - [Centralizované platby pro modul Pohledávky](centralized-payments-accounts-receivable.md)
         - [Vyrovnání částečné platby odběratele a konečné platby před datem slevy](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
         - [Vyrovnání částečné platby odběratele před datem slevy s konečnou platbou po datu slevy](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
     :::column-end:::
@@ -101,7 +100,7 @@ Přejděte na [Přehled Microsoft Dynamics 365](https://roadmap.dynamics.com/) a
 
 #### <a name="blogs"></a>Blogy
 
-Názory, novinky a jiné informace o modulu Pohledávky a jiných řešeních naleznete v [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
+Názory, novinky a jiné informace o modulu Pohledávky a jiných řešeních naleznete v blogu [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
 Existuje mnoho příspěvků o modulu Pohledávky na [blogu týmu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). I když některé z těchto příspěvků byly napsány pro předchozí verzi modulu pohledávky, stále se používají stejné koncepty. a postupy jsou podobné jako v aktuální verzi.
 
@@ -112,8 +111,7 @@ V aplikaci Finance and Operations je k dispozici další nápověda v podobě pr
 
 #### <a name="videos"></a>Videa
 
-Prohlédněte si instruktážní videa, která jsou nyní k dispozici na kanálu [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
+Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanálu Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 
 

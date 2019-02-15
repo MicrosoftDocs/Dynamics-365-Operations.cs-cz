@@ -1,29 +1,29 @@
 ---
-title: "Distribuovaná správa objednávek (DOM)"
-description: "Toto téma popisuje funkcionalitu distribuované správy objednávek v aplikaci Microsoft Dynamics 365 for Retail."
+title: Distribuovaná správa objednávek (DOM)
+description: Toto téma popisuje funkcionalitu distribuované správy objednávek v aplikaci Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 11/15/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 3331b984693c58c6ee8c49b98ed7d3a8df5b79ff
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 8f1b07243ec2d42e47073d8d90f00ea563020d82
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302021"
 ---
 # <a name="distributed-order-management-dom"></a>Distribuovaná správa objednávek (DOM)
 
@@ -64,7 +64,7 @@ Následující příklad ilustruje životní cyklus prodejní objednávky v syst
         1. Ve službě Microsoft Dynamics Lifecycle Services otevřete knihovnu sdíleného majetku, zvolte **Model** jako typ majetku a stáhněte soubor **DOM license**.
         2. Spusťte správce internetové informační služby společnosti Microsoft, klikněte pravým tlačítkem na **Web AOSService** a poté zvolte **Prozkoumat**. Otevře se okno průzkumníka Windows na **\<AOS service root\>\\webroot**. Poznamenejte si cestu \<AOS Service root\>, protože ji budete muset použít v dalším kroku.
         3. Zkopírujte konfigurační soubor do adresáře **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
-        4. Přejděte do klienta maloobchodní centrály a otevřete stránku **Parametry distribuované správy objednávek**. Na kartě **Řešitel** v poli **Typ řešitele** zvolte **Řešitel výroby** a potvrďte, že se nezobrazily žádné chybové zprávy.
+        4. Přejděte do klienta Retail Headquarters a otevřete stránku **Parametry distribuované správy objednávek**. Na kartě **Řešitel** v poli **Typ řešitele** zvolte **Řešitel výroby** a potvrďte, že se nezobrazily žádné chybové zprávy.
 
         > [!NOTE]
         > Zjednodušený řešitel je poskytnut proto, aby maloobchodníci mohli vyzkoušet funkci distribuované správy objednávek bez nasazení speciální licence. Organizace by neměly používat zjednodušeného řešitele v produkčních prostředích.
@@ -229,4 +229,3 @@ Při používání funkce distribuované správy objednávek je nutné vzít v �
 - Momentálně se distribuovaná správa objednávek dívá pouze na objednávky vytvořené z maloobchodní sítě. Prodejní objednávky jsou identifikovány jako maloobchodní prodejní objednávky, když je možnost **Maloobchodní prodej** nastavena na **Ano**.
 - Společnost Microsoft netestovala distribuovanou správu objednávek s rozšířenými funkcemi správy skladu. Zákazníci a partneři musí být obezřetní při určení toho, zda je distribuovaná správa objednávek kompatibilní s rozšířenými funkcemi správy skladu a jejich relevantními procesy.
 - Distribuovaná správa objednávek je k dispozic pouze v cloudové verzi aplikace Retail. Není podporována v místních nasazeních.
-

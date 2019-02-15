@@ -1,301 +1,330 @@
+items:
 - name: Dynamics 365 for Talent
   href: index.md
   items:
-    - name: Začínáme
-      href: talent-get-started.md
+  - name: Začínáme
+    href: talent-get-started.md
+    items:
+    - name: Co je nového a co se změnilo
+      href: whats-new.md
       items:
-        - name: Co je nového a co se změnilo
-          href: whats-new.md
-          items:
-            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (14. prosince 2018)
-              href: whats-new-talent-december-14.md
-            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (6. prosince 2018)
-              href: whats-new-talent-december-6.md
-            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (27. listopadu 2018)
-              href: whats-new-talent-november-27.md
-            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (15. listopadu 2018)
-              href: whats-new-talent-november-15.md
-            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (31. října 2018)
-              href: whats-new-talent-october-31.md
-            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (19. října 2018)
-              href: whats-new-talent-october-19.md
-            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (15. října 2018)
-              href: whats-new-talent-october-11.md
-            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (8. října 2018)
-              href: whats-new-talent-october-8.md
-            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (1. října 2018)
-              href: whats-new-talent-october-01.md
-            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (24. září 2018)
-              href: whats-new-talent-september-24.md
-            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (17. září 2018)
-              href: whats-new-talent-september-17-2018.md
-            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (10. září 2018)
-              href: whats-new-talent-september-10.md
-            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (srpen 2018)
-              href: whats-new-talent-august2018.md
-            - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (červenec 2018)
-              href: whats-new-talent-july2018.md
-        - name: Systémové požadavky a zásady aktualizace
-          href: talent-versions-update-policy.md
-        - name: Zřízení aplikace Talent
-          href: provisioning-talent.md
-        - name: Odstranění prostředí Talent
-          href: remove-talent-environment.md
-        - name: Zřízení pro modulární aplikace Talent
-          href: modular-app-tech-faq.md
-        - name: Integrace aplikací PowerApps
-          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Core HR a Common Data Service for Apps
-          href: CoreHREntities.md
-        - name: Integrace
-          href: talent-financeandoperations-integration.md
-        - name: Přístup k funkcím Preview
-          href: access-preview-feature.md
-        - name: Konfigurace integrace mezd mezi aplikacemi Talent a Dayforce
-          href: configure-payroll-integration.md
-        - name: Získání podpory pro Talent
-          href: talent-support.md
-    - name: 'Uspořádání zaměstnanců pomocí oddělení, prací a pozic'
-      href: departments-jobs-positions.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (31. ledna 2019)
+        href: whats-new-talent-january-29.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (23. ledna 2019)
+        href: whats-new-talent-january-23.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (17. ledna 2019)
+        href: whats-new-talent-january-17.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (11. ledna 2019)
+        href: whats-new-talent-january-11.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (14. prosince 2018)
+        href: whats-new-talent-december-14.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (6. prosince 2018)
+        href: whats-new-talent-december-6.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (27. listopadu 2018)
+        href: whats-new-talent-november-27.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (15. listopadu 2018)
+        href: whats-new-talent-november-15.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (31. října 2018)
+        href: whats-new-talent-october-31.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (19. října 2018)
+        href: whats-new-talent-october-19.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (15. října 2018)
+        href: whats-new-talent-october-11.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (8. října 2018)
+        href: whats-new-talent-october-8.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (1. října 2018)
+        href: whats-new-talent-october-01.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (24. září 2018)
+        href: whats-new-talent-september-24.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (17. září 2018)
+        href: whats-new-talent-september-17-2018.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (10. září 2018)
+        href: whats-new-talent-september-10.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (srpen 2018)
+        href: whats-new-talent-august2018.md
+      - name: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (červenec 2018)
+        href: whats-new-talent-july2018.md
+    - name: Systémové požadavky a zásady aktualizace
+      href: talent-versions-update-policy.md
+    - name: Zřízení aplikace Talent
+      href: provisioning-talent.md
+    - name: Odstranění prostředí Talent
+      href: remove-talent-environment.md
+    - name: Zřízení pro modulární aplikace Talent
+      href: modular-app-tech-faq.md
+    - name: Integrace aplikací PowerApps
+      href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Core HR a Common Data Service for Apps
+      href: CoreHREntities.md
+    - name: Přístup k funkcím Preview
+      href: access-preview-feature.md
+    - name: Získání podpory pro Talent
+      href: talent-support.md
+  - name: Uspořádání zaměstnanců pomocí oddělení, prací a pozic
+    href: departments-jobs-positions.md
+    items:
+    - name: Nastavení komponent práce
+      href: create-job.md
+    - name: Vytvoření oddělení a jejich přidružení k hierarchii oddělení
+      href: create-department-add-department-hierarchy.md
+    - name: Nastavení parametrů lidských zdrojů mezi právnickými osobami
+      href: set-up-hr-parameters-across-legal-entities.md
+    - name: Nastavení parametrů lidských zdrojů pro konkrétní společnost
+      href: set-up-company-specific-hr-parameters.md
+    - name: Často kladené dotazy k akcím personálu
+      href: personnel-actions-faq.md
+    - name: Formalizace obchodních procesů
+      href: formalize-business-processes.md
+    - name: Použití workflow ke správě informací o zaměstnanci
+      href: workflow-manage-employee-information.md
+  - name: Správa pracovního volna a absencí
+    href: leave-absence-overview.md
+    items:
+    - name: Koncepty pracovního volna a absence
+      href: leave-absence-concepts.md
+    - name: Časové rozlišení volna na základě odpracovaných hodin
+      href: leave-accrue-hours-worked.md
+    - name: Kalendáře pracovní doby
+      href: working-time-calendars.md
+  - name: Správa zaměstnanců ve vaší organizaci
+    items:
+    - name: Funkce a možnosti aplikace Attract
+      href: attract-overview.md
+    - name: Tvorba šablony procesu v aplikaci Attract
+      href: Process-templates-Attract.md
+    - name: Vytvoření, schválení a zaúčtování úloh v aplikaci Attract
+      href: Creating-jobs-Attract.md
+    - name: Zdroje se skupinami talentů
+      href: attract-talent-pools.md
+    - name: Zdroje pomocí LinkedIn Recruiter
+      href: attract-linked-in-recruiter.md
+    - name: Aktivity procesu náboru v aplikaci Attract
+      href: activities-attract.md
+    - name: Plánování pohovoru a zpětná vazba
+      href: interview-scheduling-feedback.md
+    - name: Rozšiřitelnost
+      href: extensibility-attract.md
+    - name: Kariérní web a zkušenosti kandidátů
+      href: career-site.md
+    - name: Nastavení správy nabídek
+      href: offer-setup.md
+    - name: Vytvoření, schválení a podpis nabídek
+      href: creating-offers.md
+    - name: Vytváření a správa šablon e-mailu
+      href: email-templates.md
+    - name: Správa rolí a zabezpečení v aplikaci Attract
+      href: security-attract.md
+    - name: Nastavení pro správu v aplikaci Attract
+      href: Admin-Settings-Attract.md
+    - name: Chytrá doporučení
+      href: Intelligent-Recommendations.md
+    - name: Vytvoření zaškolení, které zaujme
+      href: create-onboarding-experience.md
+    - name: Funkce doplňku komplexního náboru aplikace Attract
+      href: attract-comprehensive-hiring.md
+  - name: Motivace zaměstnanců
+    items:
+    - name: Plány kompenzace
+      href: compensation-plans.md
+    - name: Vytvoření plánů fixní kompenzace
+      href: create-fixed-compensation-plans.md
+    - name: Vytvoření plánů variabilní kompenzace
+      href: create-variable-compensation-plans.md
+    - name: Zpracování kompenzací
+      href: process-compensation.md
+    - name: Nastavení komponent práce
+      href: create-job.md
+  - name: Rozvoj a zaškolení zaměstnanců
+    items:
+    - name: Řízení výkonnosti
+      href: performance-management-overview.md
+    - name: Vyrovnání dovedností zaměstnanců s obchodními potřebami
+      href: skills.md
+    - name: Nastavení školicích kurzů
+      href: courses.md
+  - name: Definování a správa programu zaměstnaneckých výhod
+    items:
+    - name: Správa programu zaměstnaneckých výhod
+      href: manage-benefit-program.md
+    - name: Zásady způsobilosti k zaměstnaneckým výhodám
+      href: benefit-eligibility-policies.md
+    - name: Generování sestav v rámci zákona Affordable Care Act
+      href: generate-aca-reports.md
+    - name: Správa položek zapůjčených pracovníkům
+      href: loan-items.md
+  - name: Shromáždění informací pomocí dotazníku
+    href: questionnaires.md
+    items:
+    - name: Návrh dotazníků
+      href: design-questionnaires.md
+    - name: Distribuce a plánování dotazníků
+      href: distribute-questionnaires.md
+    - name: Zobrazení a vyhodnocení výsledků dotazníků
+      href: evaluate-questionnaire-results.md
+  - name: Bezpečnost na pracovišti a dodržování předpisů (USA)
+    items:
+    - name: Odpověď na požadavek personálních dat pomocí aplikace Talent
+      href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Ověřování zaměstnanců pomocí formuláře I-9
+      href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Shoda s normou ADA
+      href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/dynamics365/unified-operations/talent/toc.json
+  - name: Intelligence
+    items:
+    - name: Power BI Embedded v pracovních prostorech
+      href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
+  - name: Aplikace pro mobilní zařízení
+    items:
+    - name: Mobilní pracovní prostory
       items:
-        - name: Nastavení komponent práce
-          href: create-job.md
-        - name: Vytvoření oddělení a jejich přidružení k hierarchii oddělení
-          href: create-department-add-department-hierarchy.md
-        - name: Nastavení parametrů lidských zdrojů mezi právnickými osobami
-          href: set-up-hr-parameters-across-legal-entities.md
-        - name: Nastavení parametrů lidských zdrojů pro konkrétní společnost
-          href: set-up-company-specific-hr-parameters.md
-        - name: Často kladené dotazy k akcím personálu
-          href: personnel-actions-faq.md
-        - name: Formalizace obchodních procesů
-          href: formalize-business-processes.md
-        - name: Použití workflow ke správě informací o zaměstnanci
-          href: workflow-manage-employee-information.md
-    - name: Správa pracovního volna a absencí
-      href: leave-absence-overview.md
+      - name: Adresář společnosti
+        href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Můj tým
+        href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Publikování mobilního pracovního prostoru
+      href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+  - name: Integrace
+    items:
+    - name: Integrace do Dynamics 365 for Finance and Operations
+      href: talent-financeandoperations-integration.md
+    - name: Konfigurace integrace mezd mezi aplikacemi Talent a Dayforce
+      href: configure-payroll-integration.md
+    - name: Průvodce integrací dat pro Dynamics 365 for Talent
+      href: data-integration.md
+    - name: Často kladené otázky k integraci
+      href: talent-fo-integration.md
+  - name: Integrace s Office
+    items:
+    - name: Kurz integrace s Office
+      href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Použití doplňku Excel
+      href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Vytvoření zkušeností s otevíráním v Excelu
+      href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Řešení problémů s integrací s Office
+      href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+  - name: Správa organizace
+    items:
+    - name: Číselné řady
+      href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
       items:
-        - name: Koncepty pracovního volna a absence
-          href: leave-absence-concepts.md
-        - name: Časové rozlišení volna na základě odpracovaných hodin
-          href: leave-accrue-hours-worked.md
-        - name: Kalendáře pracovní doby
-          href: working-time-calendars.md
-    - name: Správa zaměstnanců ve vaší organizaci
+      - name: Nastavení číselných řad na jednotlivém základě
+        href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Nastavení číselných řad pomocí průvodce
+        href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Organizace a organizační hierarchie
+      href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/unified-operations/talent/toc.json
       items:
-        - name: Funkce a možnosti aplikace Attract
-          href: attract-overview.md
-        - name: Tvorba šablony procesu v aplikaci Attract
-          href: Process-templates-Attract.md
-        - name: 'Vytvoření, schválení a zaúčtování úloh v aplikaci Attract'
-          href: Creating-jobs-Attract.md
-        - name: Zdroje se skupinami talentů
-          href: attract-talent-pools.md
-        - name: Zdroje pomocí LinkedIn Recruiter
-          href: attract-linked-in-recruiter.md
-        - name: Aktivity procesu náboru v aplikaci Attract
-          href: activities-attract.md
-        - name: Rozšiřitelnost
-          href: extensibility-attract.md
-        - name: Kariérní web a zkušenosti kandidátů
-          href: career-site.md
-        - name: Nastavení správy nabídek
-          href: offer-setup.md
-        - name: 'Vytvoření, schválení a podpis nabídek'
-          href: creating-offers.md
-        - name: Vytváření a správa šablon e-mailu
-          href: email-templates.md
-        - name: Správa rolí a zabezpečení v aplikaci Attract
-          href: security-attract.md
-        - name: Nastavení pro správu v aplikaci Attract
-          href: Admin-Settings-Attract.md
-        - name: Chytrá doporučení
-          href: Intelligent-Recommendations.md
-        - name: 'Vytvoření zaškolení, které zaujme'
-          href: create-onboarding-experience.md
-    - name: Motivace zaměstnanců
+      - name: Plánování organizační hierarchie
+        href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Vytvoření organizační hierarchie
+        href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Vytvoření právnické osoby
+        href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Vytvoření provozní jednotky
+        href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Globální adresář
+      href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
       items:
-        - name: Plány kompenzace
-          href: compensation-plans.md
-        - name: Vytvoření plánů fixní kompenzace
-          href: create-fixed-compensation-plans.md
-        - name: Vytvoření plánů variabilní kompenzace
-          href: create-variable-compensation-plans.md
-        - name: Zpracování kompenzací
-          href: process-compensation.md
-        - name: Nastavení komponent práce
-          href: create-job.md
-    - name: Rozvoj a zaškolení zaměstnanců
+      - name: Plánování konfigurace globálního adresáře
+        href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Konfigurace globálního adresáře
+        href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Často kladené dotazy o adresáři
+        href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Workflow
+      href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/unified-operations/talent/toc.json
       items:
-        - name: Řízení výkonnosti
-          href: performance-management-overview.md
-        - name: Vyrovnání dovedností zaměstnanců s obchodními potřebami
-          href: skills.md
-        - name: Nastavení školicích kurzů
-          href: courses.md
-    - name: Definování a správa programu zaměstnaneckých výhod
+      - name: Prvky workflowu
+        href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Akce workflowu
+        href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Vytvoření workflow
+        href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+        items:
+        - name: Konfigurace vlastností workflow
+          href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Konfigurace ručního úkolu
+          href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Konfigurace automatizovaného úkolu
+          href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Konfigurace procesu schválení
+          href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Konfigurace kroku schválení
+          href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Konfigurace ručního rozhodnutí
+          href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Konfigurace podmíněného rozhodnutí
+          href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Konfigurace paralelní aktivity
+          href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Konfigurace paralelní větve
+          href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Konfigurace workflow položky řádku
+          href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Konfigurace dávkové úlohy zpracování zprávy
+        href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Delegování položek práce ve workflow
+        href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Zobrazit historii workflowu
+        href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Povolení pro uživatele přijímat e-mailové zprávy související s workflow
+        href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Výstrahy
+      href: ../fin-and-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
       items:
-        - name: Správa programu zaměstnaneckých výhod
-          href: manage-benefit-program.md
-        - name: "Zásady způsobilosti k\_zaměstnaneckým výhodám"
-          href: benefit-eligibility-policies.md
-        - name: "Generování sestav v\_rámci zákona Affordable Care Act"
-          href: generate-aca-reports.md
-        - name: Správa položek zapůjčených pracovníkům
-          href: loan-items.md
-    - name: Shromáždění informací pomocí dotazníku
-      href: questionnaires.md
+      - name: Vytvoření výstrah
+        href: ../fin-and-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Dávkové zpracování pro výstrahy
+        href: ../fin-and-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Správa případů
+      href: ../fin-and-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/talent/toc.json
       items:
-        - name: Návrh dotazníků
-          href: design-questionnaires.md
-        - name: Distribuce a plánování dotazníků
-          href: distribute-questionnaires.md
-        - name: Zobrazení a vyhodnocení výsledků dotazníků
-          href: evaluate-questionnaire-results.md
-    - name: "Bezpečnost na pracovišti a\_dodržování předpisů (USA)"
-      items:
-        - name: Odpověď na požadavek personálních dat pomocí aplikace Talent
-          href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Ověřování zaměstnanců pomocí formuláře I-9
-          href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Vyhovění normě ADA
-          href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Intelligence
-      items:
-        - name: Power BI Embedded v pracovních prostorech
-          href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Mobilní aplikace
-      items:
-        - name: Mobilní pracovní prostory
-          items:
-            - name: Adresář společnosti
-              href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Můj tým
-              href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Publikování mobilního pracovního prostoru
-          href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Integrace s Office
-      items:
-        - name: Kurz integrace s Office
-          href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Použití doplňku Excel
-          href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Vytvoření zkušeností s otevíráním v Excelu
-          href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Řešení problémů s integrací s Office
-          href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Správa organizace
-      items:
-        - name: Číselné řady
-          href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: Nastavení číselných řad na jednotlivém základě
-              href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Nastavení číselných řad pomocí průvodce
-              href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: "Organizace a\_organizační hierarchie"
-          href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: Plánování organizační hierarchie
-              href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Vytvoření organizační hierarchie
-              href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Vytvoření právnické osoby
-              href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Vytvoření provozní jednotky
-              href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Globální adresář
-          href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: Plánování konfigurace globálního adresáře
-              href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Konfigurace globálního adresáře
-              href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Často kladené dotazy o adresáři
-              href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Workflow
-          href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: Prvky workflowu
-              href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Akce workflowu
-              href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Vytvoření workflow
-              href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-              items:
-                - name: Konfigurace vlastností workflow
-                  href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Konfigurace ručního úkolu
-                  href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Konfigurace automatizovaného úkolu
-                  href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Konfigurace procesu schválení
-                  href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Konfigurace kroku schválení
-                  href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Konfigurace ručního rozhodnutí
-                  href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Konfigurace podmíněného rozhodnutí
-                  href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Konfigurace paralelní aktivity
-                  href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Konfigurace paralelní větve
-                  href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Konfigurace workflow položky řádku
-                  href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Konfigurace dávkové úlohy zpracování zprávy
-              href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Delegování položek práce ve workflow
-              href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Zobrazit historii workflowu
-              href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Povolení pro uživatele přijímat e-mailové zprávy související s workflow
-              href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Výstrahy
-          href: ../fin-and-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: Vytvoření výstrah
-              href: ../fin-and-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Dávkové zpracování pro výstrahy
-              href: ../fin-and-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Správa případů
-          href: ../fin-and-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: 'Konfigurace bezpečnosti případu, procesů a kategorií'
-              href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Konfigurace správy dokumentů
-          href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Konfigurace a odeslání e-mailu
-          href: ../fin-and-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Údaje data a času a časová pásma
-          href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Úkoly lidských zdrojů
-      items:
-        - name: "Přidávání informací do deníku výkonnosti a\_udělení pochvaly některému z\_uživatelů"
-          href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Vytvoření cíle
-          href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Vytvoření kontroly výkonnosti
-          href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Řešení potíží s aplikací Talent
-      items:
-        - name: Analytické sestavy nejsou aktualizovány
-          href: analytic-reports-not-updated.md
-        - name: Nelze vytvořit prostředí v centru pro správu PowerApps
-          href: create-envi-powerapps-admin-ctr.md
-        - name: Odpojení klienta aplikace Talent
-          href: client-disconnects.md
-        - name: Zabránění zkrácení textu na hierarchii pozic a export do aplikace Visio
-          href: avoid-text-truncation-position-hierarchy-visio.md
-        - name: Spuštění procesu kompenzace
-          href: run-compensation-process.md
-        - name: Uložení průvodců záznamem úloh do LCS a jejich opětovné přehrání
-          href: save-play-task-guides-LCS.md
-        - name: Přístup k soukromým adresám podle role zabezpečení
-          href: security-roles-addresses.md
-        - name: Talent se neobjevuje mezi aplikacemi Microsoft Dynamics 365 (CDS1.0)
-          href: talent-not-in-home-CDS.md
-        - name: 'Uživatel má přístup k Core HR, ale nikoliv k aplikacím Onboard nebo Attract'
-          href: user-access-core-hr.md
-        - name: Možnosti vykazování v aplikaci Talent
-          href: talent-reporting-options.md
+      - name: Konfigurace bezpečnosti případu, procesů a kategorií
+        href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Konfigurace správy dokumentů
+      href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Konfigurace a odeslání e-mailu
+      href: ../fin-and-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Údaje data a času a časová pásma
+      href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/dynamics365/unified-operations/talent/toc.json
+  - name: Úkoly lidských zdrojů
+    items:
+    - name: Přidávání informací do deníku výkonnosti a udělení pochvaly některému z uživatelů
+      href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Vytvoření cíle
+      href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Vytvoření kontroly výkonnosti
+      href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json
+  - name: Řešení potíží s aplikací Talent
+    items:
+    - name: Analytické sestavy nejsou aktualizovány
+      href: analytic-reports-not-updated.md
+    - name: Nelze vytvořit prostředí v centru pro správu PowerApps
+      href: create-envi-powerapps-admin-ctr.md
+    - name: Odpojení klienta aplikace Talent
+      href: client-disconnects.md
+    - name: Zabránění zkrácení textu na hierarchii pozic a export do aplikace Visio
+      href: avoid-text-truncation-position-hierarchy-visio.md
+    - name: Spuštění procesu kompenzace
+      href: run-compensation-process.md
+    - name: Uložení průvodců záznamem úloh do LCS a jejich opětovné přehrání
+      href: save-play-task-guides-LCS.md
+    - name: Přístup k soukromým adresám podle role zabezpečení
+      href: security-roles-addresses.md
+    - name: Talent se neobjevuje mezi aplikacemi Microsoft Dynamics 365 (CDS1.0)
+      href: talent-not-in-home-CDS.md
+    - name: Uživatel má přístup k Core HR, ale nikoliv k aplikacím Onboard nebo Attract
+      href: user-access-core-hr.md
+    - name: Možnosti vykazování v aplikaci Talent
+      href: talent-reporting-options.md
+    - name: Často kladené otázky k integraci
+      href: talent-FO-integration.md
+    - name: Uživatelé Azure Active Directory nenalezení v nástroji pro výběr osob
+      href: people-picker-user-not-found.md
+ms.openlocfilehash: 2e3035ec9aa71fd66cba7b394bf5007880646aca
+ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "374820"

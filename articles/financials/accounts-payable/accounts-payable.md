@@ -1,13 +1,13 @@
 ---
-title: "Domovská stránka Závazků"
-description: "Toto téma poskytuje přehled závazků."
+title: Domovská stránka Závazků
+description: Toto téma poskytuje přehled závazků.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 6cc7ee98b3fabb774339dd1fc027d38d00d8b31f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7bc09cbd108949b37ea1b2207fc3e0c6961abf4b
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302011"
 ---
-
 # <a name="accounts-payable-home-page"></a>Domovská stránka Závazků
 
 [!include [banner](../includes/banner.md)]
@@ -128,7 +127,7 @@ Přejděte na [Přehled Microsoft Dynamics 365](https://roadmap.dynamics.com/) a
 
 #### <a name="blogs"></a>Blogy
 
-Názory, novinky a jiné informace o modulu Závazky a jiných řešeních naleznete v [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
+Názory, novinky a jiné informace o modulu Závazky a jiných řešeních naleznete v blogu [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
 Existuje mnoho příspěvků o modulu Závazky na [blogu týmu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). Ačkoliv některé z těchto článků byly vytvořeny pro předchozí verzi modulu Závazky, stále se používají stejné koncepty a postupy jsou podobné jako v aktuální verzi.
 
@@ -139,8 +138,7 @@ V aplikaci Finance and Operations je k dispozici další nápověda v podobě pr
 
 #### <a name="videos"></a>Videa
 
-Prohlédněte si instruktážní videa, která jsou nyní k dispozici na kanálu [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
+Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanálu Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 
 

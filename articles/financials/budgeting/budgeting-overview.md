@@ -1,13 +1,13 @@
 ---
-title: "Domovská stránka Rozpočtování"
-description: "V tomto tématu najdete přehled o součástech funkce rozpočtování, rozpočtových nástrojích a možnostech vykazování v aplikaci Microsoft Dynamics 365 for Finance and Operations."
+title: Domovská stránka Rozpočtování
+description: V tomto tématu najdete přehled o součástech funkce rozpočtování, rozpočtových nástrojích a možnostech vykazování v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/09/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,15 +18,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 84321b78c9869a4920c3488373876bb56bcb3a29
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: efe348d9967ab7594afd22a3ebb4df76dc6607f8
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302025"
 ---
-
-# <a name="budgeting-home-page"></a>Domovská stránka Rozpočtování
+# <a name="budgeting-home-page"></a>Domovská stránka rozpočtování
 
 [!include [banner](../includes/banner.md)]
 
@@ -48,7 +47,7 @@ Velmi vyspělé organizace mohou vytvořit organizační kulturu, ve které se z
 -   [Plánování rozpočtu: Přehled a konfigurace](budget-planning-overview-configuration.md)
 -   [Prognóza pozice](position-forecasting.md)
 -   [Dokumenty odůvodnění plánování rozpočtu](budget-planning-justification-docs.md)
--   [Šablony aplikace Excel pro plánování rozpočtu](budget-planning-excel-templates.md)
+-   [Šablony Microsoft Excel pro plánování rozpočtu](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools-in-finance-and-operations"></a>Nástroje pro tvorbu rozpočtu v aplikaci Finance and Operations
 [![Nástroje pro rozpočtování](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
@@ -66,7 +65,6 @@ Informace o přenesení dat plánování z jiných modulů do plánů rozpočtu 
 V aplikaci Finance and Operations mohou uživatelé vytvářet plány rozpočtu buď přímo v klientovi aplikace Finance and Operations (pomocí přizpůsobitelné stránky dokumentu plánu rozpočtu) nebo prostřednictvím aplikace Excel. Excel obsahuje několik dalších funkcí. Můžete například použít externí data jako zdroj pro plán rozpočtu, provádět vlastní výpočty a používat kontingenční tabulky a grafy společnosti Microsoft. Většinu proměnných v procesu plánování rozpočtu lze konfigurovat. 
 
 Například můžete definovat, kdo provádí rozpočtování, co se rozpočtuje a jak proces vypadá. Přestože lze pro plánování rozpočtu použít Excel, aplikace Finance and Operations zůstává zachována jako autoritativní zdroj a pomáhá zabránit problémům kontroly rozpočtu. Periodické procesy lze použít k přenosu počátečních dat pro rozpočtování do plánu rozpočtu. Pro vytváření sestav nabízí aplikace Finance and Operations standardní sadu stránek s dotazy, které umožňují zobrazení a analýzu dat rozpočtování. K datům plánu rozpočtu lze přistupovat prostřednictvím aplikace Management Reporter a samostatné scénáře plánu rozpočtu lze zobrazit jako sloupce v sestavě aplikace Management Reporter.
-
 
 
 
